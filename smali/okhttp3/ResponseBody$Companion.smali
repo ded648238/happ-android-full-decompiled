@@ -1,6 +1,6 @@
 .class public final Lokhttp3/ResponseBody$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -31,18 +31,18 @@
         "toResponseBody",
         "",
         "([BLokhttp3/MediaType;)Lokhttp3/ResponseBody;",
-        "Ly60;",
-        "(Ly60;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;",
-        "Ls50;",
+        "Lo90;",
+        "(Lo90;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;",
+        "Lf80;",
         "",
         "contentLength",
-        "(Ls50;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;",
+        "(Lf80;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;",
         "asResponseBody",
         "content",
         "(Lokhttp3/MediaType;Ljava/lang/String;)Lokhttp3/ResponseBody;",
         "(Lokhttp3/MediaType;[B)Lokhttp3/ResponseBody;",
-        "(Lokhttp3/MediaType;Ly60;)Lokhttp3/ResponseBody;",
-        "(Lokhttp3/MediaType;JLs50;)Lokhttp3/ResponseBody;",
+        "(Lokhttp3/MediaType;Lo90;)Lokhttp3/ResponseBody;",
+        "(Lokhttp3/MediaType;JLf80;)Lokhttp3/ResponseBody;",
         "okhttp"
     }
     k = 0x1
@@ -65,7 +65,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -77,25 +77,7 @@
     return-void
 .end method
 
-.method public static synthetic create$default(Lokhttp3/ResponseBody$Companion;Ljava/lang/String;Lokhttp3/MediaType;ILjava/lang/Object;)Lokhttp3/ResponseBody;
-    .locals 0
-
-    and-int/lit8 p3, p3, 0x1
-
-    if-eqz p3, :cond_0
-
-    const/4 p2, 0x0
-
-    .line 19
-    :cond_0
-    invoke-virtual {p0, p1, p2}, Lokhttp3/ResponseBody$Companion;->create(Ljava/lang/String;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic create$default(Lokhttp3/ResponseBody$Companion;Ls50;Lokhttp3/MediaType;JILjava/lang/Object;)Lokhttp3/ResponseBody;
+.method public static synthetic create$default(Lokhttp3/ResponseBody$Companion;Lf80;Lokhttp3/MediaType;JILjava/lang/Object;)Lokhttp3/ResponseBody;
     .locals 0
 
     .line 1
@@ -124,7 +106,7 @@
     .line 11
     .line 12
     :cond_1
-    invoke-virtual {p0, p1, p2, p3, p4}, Lokhttp3/ResponseBody$Companion;->create(Ls50;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
+    invoke-virtual {p0, p1, p2, p3, p4}, Lokhttp3/ResponseBody$Companion;->create(Lf80;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
 
     .line 13
     .line 14
@@ -135,7 +117,25 @@
     return-object p0
 .end method
 
-.method public static synthetic create$default(Lokhttp3/ResponseBody$Companion;Ly60;Lokhttp3/MediaType;ILjava/lang/Object;)Lokhttp3/ResponseBody;
+.method public static synthetic create$default(Lokhttp3/ResponseBody$Companion;Ljava/lang/String;Lokhttp3/MediaType;ILjava/lang/Object;)Lokhttp3/ResponseBody;
+    .locals 0
+
+    and-int/lit8 p3, p3, 0x1
+
+    if-eqz p3, :cond_0
+
+    const/4 p2, 0x0
+
+    .line 19
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Lokhttp3/ResponseBody$Companion;->create(Ljava/lang/String;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic create$default(Lokhttp3/ResponseBody$Companion;Lo90;Lokhttp3/MediaType;ILjava/lang/Object;)Lokhttp3/ResponseBody;
     .locals 0
 
     and-int/lit8 p3, p3, 0x1
@@ -146,7 +146,7 @@
 
     .line 18
     :cond_0
-    invoke-virtual {p0, p1, p2}, Lokhttp3/ResponseBody$Companion;->create(Ly60;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
+    invoke-virtual {p0, p1, p2}, Lokhttp3/ResponseBody$Companion;->create(Lo90;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
 
     move-result-object p0
 
@@ -173,6 +173,19 @@
 
 
 # virtual methods
+.method public final create(Lf80;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
+    .locals 0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 73
+    new-instance p0, Lokhttp3/ResponseBody$Companion$asResponseBody$1;
+
+    invoke-direct {p0, p2, p3, p4, p1}, Lokhttp3/ResponseBody$Companion$asResponseBody$1;-><init>(Lokhttp3/MediaType;JLf80;)V
+
+    return-object p0
+.end method
+
 .method public final create(Ljava/lang/String;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
     .locals 4
 
@@ -182,7 +195,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lnh0;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lho0;->a:Ljava/nio/charset/Charset;
 
     .line 5
     .line 6
@@ -260,7 +273,7 @@
     .line 41
     :cond_1
     :goto_0
-    new-instance v1, Lf50;
+    new-instance v1, Ll70;
 
     .line 42
     .line 43
@@ -285,44 +298,73 @@
     move-result v3
 
     .line 54
-    invoke-virtual {v1, p1, v2, v3, v0}, Lf50;->M0(Ljava/lang/String;IILjava/nio/charset/Charset;)V
+    invoke-virtual {v1, p1, v2, v3, v0}, Ll70;->Z0(Ljava/lang/String;IILjava/nio/charset/Charset;)V
 
     .line 55
     .line 56
     .line 57
-    iget-wide v2, v1, Lf50;->R:J
+    iget-wide v2, v1, Ll70;->Y:J
 
     .line 58
     .line 59
-    invoke-virtual {p0, v1, p2, v2, v3}, Lokhttp3/ResponseBody$Companion;->create(Ls50;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
+    invoke-virtual {p0, v1, p2, v2, v3}, Lokhttp3/ResponseBody$Companion;->create(Lf80;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
 
     .line 60
     .line 61
     .line 62
-    move-result-object p1
+    move-result-object p0
 
     .line 63
-    return-object p1
+    return-object p0
 .end method
 
-.method public final create(Lokhttp3/MediaType;JLs50;)Lokhttp3/ResponseBody;
+.method public final create(Lo90;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
+    .locals 3
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 68
+    new-instance v0, Ll70;
+
+    .line 69
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 70
+    invoke-virtual {v0, p1}, Ll70;->C0(Lo90;)V
+
+    .line 71
+    invoke-virtual {p1}, Lo90;->e()I
+
+    move-result p1
+
+    int-to-long v1, p1
+
+    .line 72
+    invoke-virtual {p0, v0, p2, v1, v2}, Lokhttp3/ResponseBody$Companion;->create(Lf80;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final create(Lokhttp3/MediaType;JLf80;)Lokhttp3/ResponseBody;
     .locals 0
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 77
-    invoke-virtual {p0, p4, p1, p2, p3}, Lokhttp3/ResponseBody$Companion;->create(Ls50;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
+    invoke-virtual {p0, p4, p1, p2, p3}, Lokhttp3/ResponseBody$Companion;->create(Lf80;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final create(Lokhttp3/MediaType;Ljava/lang/String;)Lokhttp3/ResponseBody;
     .locals 0
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -330,29 +372,29 @@
     .line 74
     invoke-virtual {p0, p2, p1}, Lokhttp3/ResponseBody$Companion;->create(Ljava/lang/String;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
-.method public final create(Lokhttp3/MediaType;Ly60;)Lokhttp3/ResponseBody;
+.method public final create(Lokhttp3/MediaType;Lo90;)Lokhttp3/ResponseBody;
     .locals 0
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 76
-    invoke-virtual {p0, p2, p1}, Lokhttp3/ResponseBody$Companion;->create(Ly60;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
+    invoke-virtual {p0, p2, p1}, Lokhttp3/ResponseBody$Companion;->create(Lo90;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final create(Lokhttp3/MediaType;[B)Lokhttp3/ResponseBody;
     .locals 0
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -360,51 +402,9 @@
     .line 75
     invoke-virtual {p0, p2, p1}, Lokhttp3/ResponseBody$Companion;->create([BLokhttp3/MediaType;)Lokhttp3/ResponseBody;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
-.end method
-
-.method public final create(Ls50;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
-    .locals 1
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 73
-    new-instance v0, Lokhttp3/ResponseBody$Companion$asResponseBody$1;
-
-    invoke-direct {v0, p2, p3, p4, p1}, Lokhttp3/ResponseBody$Companion$asResponseBody$1;-><init>(Lokhttp3/MediaType;JLs50;)V
-
-    return-object v0
-.end method
-
-.method public final create(Ly60;Lokhttp3/MediaType;)Lokhttp3/ResponseBody;
-    .locals 3
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 68
-    new-instance v0, Lf50;
-
-    .line 69
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 70
-    invoke-virtual {v0, p1}, Lf50;->v0(Ly60;)V
-
-    .line 71
-    invoke-virtual {p1}, Ly60;->e()I
-
-    move-result p1
-
-    int-to-long v1, p1
-
-    .line 72
-    invoke-virtual {p0, v0, p2, v1, v2}, Lokhttp3/ResponseBody$Companion;->create(Ls50;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
-
-    move-result-object p1
-
-    return-object p1
+    return-object p0
 .end method
 
 .method public final create([BLokhttp3/MediaType;)Lokhttp3/ResponseBody;
@@ -413,7 +413,7 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 64
-    new-instance v0, Lf50;
+    new-instance v0, Ll70;
 
     .line 65
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -423,16 +423,16 @@
     .line 66
     array-length v2, p1
 
-    invoke-virtual {v0, p1, v1, v2}, Lf50;->write([BII)V
+    invoke-virtual {v0, p1, v1, v2}, Ll70;->write([BII)V
 
     .line 67
     array-length p1, p1
 
     int-to-long v1, p1
 
-    invoke-virtual {p0, v0, p2, v1, v2}, Lokhttp3/ResponseBody$Companion;->create(Ls50;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
+    invoke-virtual {p0, v0, p2, v1, v2}, Lokhttp3/ResponseBody$Companion;->create(Lf80;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method

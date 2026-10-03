@@ -1,6 +1,6 @@
 .class Lcom/google/gson/internal/bind/TypeAdapters$12;
 .super Lcom/google/gson/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -34,8 +34,8 @@
 
 
 # virtual methods
-.method public final b(Lr23;)Ljava/lang/Object;
-    .locals 5
+.method public final b(Lxi3;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
     new-instance v0, Ljava/util/ArrayList;
@@ -47,13 +47,13 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1}, Lr23;->C0()V
+    invoke-virtual {p1}, Lxi3;->N0()V
 
     .line 7
     .line 8
     .line 9
     :goto_0
-    invoke-virtual {p1}, Lr23;->hasNext()Z
+    invoke-virtual {p1}, Lxi3;->hasNext()Z
 
     .line 10
     .line 11
@@ -69,7 +69,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v1, p1}, Lcom/google/gson/b;->b(Lr23;)Ljava/lang/Object;
+    invoke-virtual {v1, p1}, Lcom/google/gson/b;->b(Lxi3;)Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -106,7 +106,7 @@
 
     .line 35
     :cond_0
-    invoke-virtual {p1}, Lr23;->y0()V
+    invoke-virtual {p1}, Lxi3;->J0()V
 
     .line 36
     .line 37
@@ -116,52 +116,52 @@
     .line 39
     .line 40
     .line 41
-    move-result p1
+    move-result p0
 
     .line 42
-    new-instance v1, Ljava/util/concurrent/atomic/AtomicLongArray;
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicLongArray;
 
     .line 43
     .line 44
-    invoke-direct {v1, p1}, Ljava/util/concurrent/atomic/AtomicLongArray;-><init>(I)V
+    invoke-direct {p1, p0}, Ljava/util/concurrent/atomic/AtomicLongArray;-><init>(I)V
 
     .line 45
     .line 46
     .line 47
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 48
     :goto_1
-    if-ge v2, p1, :cond_1
+    if-ge v1, p0, :cond_1
 
     .line 49
     .line 50
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     .line 51
     .line 52
     .line 53
-    move-result-object v3
+    move-result-object v2
 
     .line 54
-    check-cast v3, Ljava/lang/Long;
+    check-cast v2, Ljava/lang/Long;
 
     .line 55
     .line 56
-    invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
+    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
     .line 57
     .line 58
     .line 59
-    move-result-wide v3
+    move-result-wide v2
 
     .line 60
-    invoke-virtual {v1, v2, v3, v4}, Ljava/util/concurrent/atomic/AtomicLongArray;->set(IJ)V
+    invoke-virtual {p1, v1, v2, v3}, Ljava/util/concurrent/atomic/AtomicLongArray;->set(IJ)V
 
     .line 61
     .line 62
     .line 63
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     .line 64
     .line 65
@@ -169,10 +169,10 @@
 
     .line 66
     :cond_1
-    return-object v1
+    return-object p1
 .end method
 
-.method public final c(Lh43;Ljava/lang/Object;)V
+.method public final c(Lnk3;Ljava/lang/Object;)V
     .locals 4
 
     .line 1
@@ -180,7 +180,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lh43;->C0()V
+    invoke-virtual {p1}, Lnk3;->N0()V
 
     .line 4
     .line 5
@@ -221,7 +221,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v3, p1, v2}, Lcom/google/gson/b;->c(Lh43;Ljava/lang/Object;)V
+    invoke-virtual {v3, p1, v2}, Lcom/google/gson/b;->c(Lnk3;Ljava/lang/Object;)V
 
     .line 24
     .line 25
@@ -234,7 +234,7 @@
 
     .line 29
     :cond_0
-    invoke-virtual {p1}, Lh43;->y0()V
+    invoke-virtual {p1}, Lnk3;->J0()V
 
     .line 30
     .line 31

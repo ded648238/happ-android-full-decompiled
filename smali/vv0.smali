@@ -1,177 +1,136 @@
-.class public final Lvv0;
+.class public Lvv0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Lbx0;
+
+# static fields
+.field public static final synthetic b:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field private volatile synthetic _handled$volatile:I
 
-.field public final R:Lsw0;
+.field public final a:Ljava/lang/Throwable;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    const-class v0, Lvv0;
 
     .line 2
-    iput v0, p0, Lvv0;->Q:I
-
     .line 3
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v1, "_handled$volatile"
 
+    .line 4
     .line 5
+    invoke-static {v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
     .line 6
     .line 7
-    sget-object v0, Lpe1;->a:Lq41;
-
     .line 8
+    move-result-object v0
+
     .line 9
-    sget-object v0, Lpv3;->a:Lzd2;
+    sput-object v0, Lvv0;->b:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     .line 10
     .line 11
-    iput-object v0, p0, Lvv0;->R:Lsw0;
-
-    .line 12
-    .line 13
     return-void
 .end method
 
-.method public constructor <init>(Lsw0;)V
-    .locals 1
+.method public constructor <init>(Ljava/lang/Throwable;Z)V
+    .locals 0
 
-    const/4 v0, 0x0
-
-    iput v0, p0, Lvv0;->Q:I
-
-    .line 14
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
-    iput-object p1, p0, Lvv0;->R:Lsw0;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lvv0;->a:Ljava/lang/Throwable;
 
+    .line 5
+    .line 6
+    iput p2, p0, Lvv0;->_handled$volatile:I
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final getCoroutineContext()Lsw0;
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lvv0;->Q:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Lvv0;->R:Lsw0;
-
-    .line 7
-    .line 8
-    check-cast v0, Lzd2;
-
-    .line 9
-    .line 10
-    return-object v0
-
-    .line 11
-    :pswitch_0
-    iget-object v0, p0, Lvv0;->R:Lsw0;
-
-    .line 12
-    .line 13
-    return-object v0
-
-    .line 14
-    nop
-
-    .line 15
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     .line 1
-    iget v0, p0, Lvv0;->Q:I
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
     .line 8
     .line 9
-    move-result-object v0
+    move-result-object v1
 
     .line 10
-    return-object v0
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     .line 11
-    :pswitch_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 12
     .line 13
-    const-string v1, "CoroutineScope(coroutineContext="
+    move-result-object v1
 
     .line 14
-    .line 15
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 15
     .line 16
     .line 17
+    const/16 v1, 0x5b
+
     .line 18
-    iget-object v1, p0, Lvv0;->R:Lsw0;
-
     .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const/16 v1, 0x29
-
-    .line 24
-    .line 25
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    .line 20
+    .line 21
+    .line 22
+    iget-object p0, p0, Lvv0;->a:Ljava/lang/Throwable;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 25
     .line 26
     .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/16 p0, 0x5d
 
+    .line 28
     .line 29
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
     .line 30
     .line 31
-    move-result-object v0
-
     .line 32
-    return-object v0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 33
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    return-object p0
 .end method

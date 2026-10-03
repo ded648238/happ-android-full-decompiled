@@ -1,49 +1,48 @@
 .class public final Lgk4;
-.super Laz1;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final d:Lgk4;
+# instance fields
+.field public final a:Lxi2;
+
+.field public final b:Lsv0;
+
+.field public final c:Lc57;
+
+.field public final d:Lz31;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
-
-    .line 1
-    new-instance v0, Lgk4;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    const/4 v2, 0x3
-
-    .line 5
-    invoke-direct {v0, v1, v1, v2}, Laz1;-><init>(III)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, Lgk4;->d:Lgk4;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final d(Lvi0;Laq;Lgc6;Llf1;Lhk4;)V
+.method public constructor <init>(Lxi2;Lsv0;Lc57;Lz31;)V
     .locals 0
 
     .line 1
-    invoke-interface {p2}, Laq;->d()V
+    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Lgk4;->a:Lxi2;
+
+    .line 8
+    .line 9
+    iput-object p2, p0, Lgk4;->b:Lsv0;
+
+    .line 10
+    .line 11
+    iput-object p3, p0, Lgk4;->c:Lc57;
+
+    .line 12
+    .line 13
+    iput-object p4, p0, Lgk4;->d:Lz31;
+
+    .line 14
+    .line 15
     return-void
 .end method

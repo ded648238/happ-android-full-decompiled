@@ -18,62 +18,61 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowInsets;
-import defpackage.cz;
-import defpackage.eb5;
-import defpackage.fn;
-import defpackage.ft7;
-import defpackage.gk1;
-import defpackage.h85;
-import defpackage.hk1;
-import defpackage.hr2;
-import defpackage.ik1;
-import defpackage.in7;
-import defpackage.jk1;
-import defpackage.kd0;
-import defpackage.p3;
-import defpackage.qn7;
-import defpackage.r75;
-import defpackage.r91;
-import defpackage.yn7;
-import io.sentry.x1;
+import defpackage.cv5;
+import defpackage.eh0;
+import defpackage.g10;
+import defpackage.gs5;
+import defpackage.i60;
+import defpackage.io1;
+import defpackage.io8;
+import defpackage.ks1;
+import defpackage.ls1;
+import defpackage.ms1;
+import defpackage.ni8;
+import defpackage.ns1;
+import defpackage.p63;
+import defpackage.qr5;
+import defpackage.v3;
+import defpackage.xi8;
+import io.sentry.z1;
 import java.util.ArrayList;
 import java.util.WeakHashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class DrawerLayout extends ViewGroup {
-    public static final int[] u0 = {R.attr.colorPrimaryDark};
-    public static final int[] v0 = {R.attr.layout_gravity};
-    public static final boolean w0;
-    public float Q;
-    public final int R;
-    public int S;
-    public float T;
-    public final Paint U;
-    public final yn7 V;
-    public final yn7 W;
-    public final a a0;
-    public final a b0;
-    public int c0;
-    public boolean d0;
-    public boolean e0;
-    public int f0;
-    public int g0;
-    public int h0;
-    public int i0;
-    public boolean j0;
-    public ArrayList k0;
-    public float l0;
-    public float m0;
-    public Drawable n0;
-    public WindowInsets o0;
-    public boolean p0;
-    public final ArrayList q0;
-    public Rect r0;
-    public Matrix s0;
-    public final r91 t0;
+    public static final int[] D0 = {R.attr.colorPrimaryDark};
+    public static final int[] E0 = {R.attr.layout_gravity};
+    public static final boolean F0;
+    public Rect A0;
+    public Matrix B0;
+    public final io1 C0;
+    public float c0;
+    public final int d0;
+    public int e0;
+    public float f0;
+    public final Paint g0;
+    public final xi8 h0;
+    public final xi8 i0;
+    public final a j0;
+    public final a k0;
+    public int l0;
+    public boolean m0;
+    public boolean n0;
+    public int o0;
+    public int p0;
+    public int q0;
+    public int r0;
+    public boolean s0;
+    public ArrayList t0;
+    public float u0;
+    public float v0;
+    public Drawable w0;
+    public WindowInsets x0;
+    public boolean y0;
+    public final ArrayList z0;
 
-    /* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+    /* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
     public static class LayoutParams extends ViewGroup.MarginLayoutParams {
         public int a;
         public float b;
@@ -83,76 +82,74 @@ public class DrawerLayout extends ViewGroup {
         public LayoutParams(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
             this.a = 0;
-            TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, DrawerLayout.v0);
-            this.a = typedArrayObtainStyledAttributes.getInt(0, 0);
-            typedArrayObtainStyledAttributes.recycle();
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, DrawerLayout.E0);
+            this.a = obtainStyledAttributes.getInt(0, 0);
+            obtainStyledAttributes.recycle();
         }
     }
 
     static {
-        w0 = Build.VERSION.SDK_INT >= 29;
+        F0 = Build.VERSION.SDK_INT >= 29;
     }
 
     public DrawerLayout(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        new hk1(0);
-        this.S = -1728053248;
-        this.U = new Paint();
-        this.e0 = true;
-        this.f0 = 3;
-        this.g0 = 3;
-        this.h0 = 3;
-        this.i0 = 3;
-        this.t0 = new r91(4, this);
+        new ls1(0);
+        this.e0 = -1728053248;
+        this.g0 = new Paint();
+        this.n0 = true;
+        this.o0 = 3;
+        this.p0 = 3;
+        this.q0 = 3;
+        this.r0 = 3;
+        this.C0 = new io1(1, this);
         setDescendantFocusability(262144);
         float f = getResources().getDisplayMetrics().density;
-        this.R = (int) ((64.0f * f) + 0.5f);
+        this.d0 = (int) ((64.0f * f) + 0.5f);
         float f2 = f * 400.0f;
         a aVar = new a(this, 3);
-        this.a0 = aVar;
+        this.j0 = aVar;
         a aVar2 = new a(this, 5);
-        this.b0 = aVar2;
-        yn7 yn7Var = new yn7(getContext(), this, aVar);
-        yn7Var.b = (int) (yn7Var.b * 1.0f);
-        this.V = yn7Var;
-        yn7Var.q = 1;
-        yn7Var.n = f2;
-        aVar.b = yn7Var;
-        yn7 yn7Var2 = new yn7(getContext(), this, aVar2);
-        yn7Var2.b = (int) (1.0f * yn7Var2.b);
-        this.W = yn7Var2;
-        yn7Var2.q = 2;
-        yn7Var2.n = f2;
-        aVar2.b = yn7Var2;
+        this.k0 = aVar2;
+        xi8 xi8Var = new xi8(getContext(), this, aVar);
+        xi8Var.b = (int) (xi8Var.b * 1.0f);
+        this.h0 = xi8Var;
+        xi8Var.q = 1;
+        xi8Var.n = f2;
+        aVar.b = xi8Var;
+        xi8 xi8Var2 = new xi8(getContext(), this, aVar2);
+        xi8Var2.b = (int) (1.0f * xi8Var2.b);
+        this.i0 = xi8Var2;
+        xi8Var2.q = 2;
+        xi8Var2.n = f2;
+        aVar2.b = xi8Var2;
         setFocusableInTouchMode(true);
-        WeakHashMap weakHashMap = qn7.a;
+        WeakHashMap weakHashMap = ni8.a;
         setImportantForAccessibility(1);
-        qn7.q(this, new cz(this));
+        ni8.m(this, new g10(this));
         setMotionEventSplittingEnabled(false);
         if (getFitsSystemWindows()) {
-            setOnApplyWindowInsetsListener(new gk1());
+            setOnApplyWindowInsetsListener(new ks1());
             setSystemUiVisibility(1280);
-            TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(u0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(D0);
             try {
-                this.n0 = typedArrayObtainStyledAttributes.getDrawable(0);
-                typedArrayObtainStyledAttributes.recycle();
-            } catch (Throwable th) {
-                typedArrayObtainStyledAttributes.recycle();
-                throw th;
+                this.w0 = obtainStyledAttributes.getDrawable(0);
+            } finally {
+                obtainStyledAttributes.recycle();
             }
         }
-        TypedArray typedArrayObtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, eb5.DrawerLayout, i, 0);
+        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, cv5.DrawerLayout, i, 0);
         try {
-            if (typedArrayObtainStyledAttributes2.hasValue(eb5.DrawerLayout_elevation)) {
-                this.Q = typedArrayObtainStyledAttributes2.getDimension(eb5.DrawerLayout_elevation, 0.0f);
+            if (obtainStyledAttributes2.hasValue(cv5.DrawerLayout_elevation)) {
+                this.c0 = obtainStyledAttributes2.getDimension(cv5.DrawerLayout_elevation, 0.0f);
             } else {
-                this.Q = getResources().getDimension(h85.def_drawer_elevation);
+                this.c0 = getResources().getDimension(gs5.def_drawer_elevation);
             }
-            typedArrayObtainStyledAttributes2.recycle();
-            this.q0 = new ArrayList();
-        } catch (Throwable th2) {
-            typedArrayObtainStyledAttributes2.recycle();
-            throw th2;
+            obtainStyledAttributes2.recycle();
+            this.z0 = new ArrayList();
+        } catch (Throwable th) {
+            obtainStyledAttributes2.recycle();
+            throw th;
         }
     }
 
@@ -164,13 +161,13 @@ public class DrawerLayout extends ViewGroup {
         if (j(view)) {
             return (((LayoutParams) view.getLayoutParams()).d & 1) == 1;
         }
-        x1.m("View ", view, " is not a drawer");
+        z1.m("View ", view, " is not a drawer");
         return false;
     }
 
     public static boolean j(View view) {
         int i = ((LayoutParams) view.getLayoutParams()).a;
-        WeakHashMap weakHashMap = qn7.a;
+        WeakHashMap weakHashMap = ni8.a;
         int absoluteGravity = Gravity.getAbsoluteGravity(i, view.getLayoutDirection());
         return ((absoluteGravity & 3) == 0 && (absoluteGravity & 5) == 0) ? false : true;
     }
@@ -189,7 +186,7 @@ public class DrawerLayout extends ViewGroup {
         int i3 = 0;
         boolean z = false;
         while (true) {
-            arrayList2 = this.q0;
+            arrayList2 = this.z0;
             if (i3 >= childCount) {
                 break;
             }
@@ -216,73 +213,65 @@ public class DrawerLayout extends ViewGroup {
 
     @Override // android.view.ViewGroup
     public final void addView(View view, int i, ViewGroup.LayoutParams layoutParams) {
-        View childAt;
+        View view2;
         super.addView(view, i, layoutParams);
         int childCount = getChildCount();
         int i2 = 0;
         while (true) {
             if (i2 >= childCount) {
-                childAt = null;
+                view2 = null;
                 break;
             }
-            childAt = getChildAt(i2);
-            if ((((LayoutParams) childAt.getLayoutParams()).d & 1) == 1) {
+            view2 = getChildAt(i2);
+            if ((((LayoutParams) view2.getLayoutParams()).d & 1) == 1) {
                 break;
             } else {
                 i2++;
             }
         }
-        if (childAt != null || j(view)) {
-            WeakHashMap weakHashMap = qn7.a;
+        if (view2 != null || j(view)) {
+            WeakHashMap weakHashMap = ni8.a;
             view.setImportantForAccessibility(4);
         } else {
-            WeakHashMap weakHashMap2 = qn7.a;
+            WeakHashMap weakHashMap2 = ni8.a;
             view.setImportantForAccessibility(1);
         }
     }
 
     public final void b(View view) {
         if (!j(view)) {
-            x1.m("View ", view, " is not a sliding drawer");
+            z1.m("View ", view, " is not a sliding drawer");
             return;
         }
         LayoutParams layoutParams = (LayoutParams) view.getLayoutParams();
-        if (this.e0) {
+        if (this.n0) {
             layoutParams.b = 0.0f;
             layoutParams.d = 0;
         } else {
             layoutParams.d |= 4;
             if (a(view, 3)) {
-                this.V.r(view, -view.getWidth(), view.getTop());
+                this.h0.r(view, -view.getWidth(), view.getTop());
             } else {
-                this.W.r(view, getWidth(), view.getTop());
+                this.i0.r(view, getWidth(), view.getTop());
             }
         }
         invalidate();
     }
 
     public final void c(boolean z) {
-        boolean zR;
         int childCount = getChildCount();
         boolean z2 = false;
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
             LayoutParams layoutParams = (LayoutParams) childAt.getLayoutParams();
             if (j(childAt) && (!z || layoutParams.c)) {
-                int width = childAt.getWidth();
-                if (a(childAt, 3)) {
-                    int top = childAt.getTop();
-                    zR = this.V.r(childAt, -width, top);
-                } else {
-                    zR = this.W.r(childAt, getWidth(), childAt.getTop());
-                }
-                z2 |= zR;
+                z2 |= a(childAt, 3) ? this.h0.r(childAt, -childAt.getWidth(), childAt.getTop()) : this.i0.r(childAt, getWidth(), childAt.getTop());
                 layoutParams.c = false;
             }
         }
-        a aVar = this.a0;
+        a aVar = this.j0;
         aVar.d.removeCallbacks(aVar.c);
-        a aVar2 = this.b0;
+        a aVar2 = this.k0;
         aVar2.d.removeCallbacks(aVar2.c);
         if (z2) {
             invalidate();
@@ -297,21 +286,21 @@ public class DrawerLayout extends ViewGroup {
     @Override // android.view.View
     public final void computeScroll() {
         int childCount = getChildCount();
-        float fMax = 0.0f;
+        float f = 0.0f;
         for (int i = 0; i < childCount; i++) {
-            fMax = Math.max(fMax, ((LayoutParams) getChildAt(i).getLayoutParams()).b);
+            f = Math.max(f, ((LayoutParams) getChildAt(i).getLayoutParams()).b);
         }
-        this.T = fMax;
-        boolean zG = this.V.g();
-        boolean zG2 = this.W.g();
-        if (zG || zG2) {
-            WeakHashMap weakHashMap = qn7.a;
+        this.f0 = f;
+        boolean g = this.h0.g();
+        boolean g2 = this.i0.g();
+        if (g || g2) {
+            WeakHashMap weakHashMap = ni8.a;
             postInvalidateOnAnimation();
         }
     }
 
     public final View d(int i) {
-        WeakHashMap weakHashMap = qn7.a;
+        WeakHashMap weakHashMap = ni8.a;
         int absoluteGravity = Gravity.getAbsoluteGravity(i, getLayoutDirection()) & 7;
         int childCount = getChildCount();
         for (int i2 = 0; i2 < childCount; i2++) {
@@ -325,8 +314,8 @@ public class DrawerLayout extends ViewGroup {
 
     @Override // android.view.View
     public final boolean dispatchGenericMotionEvent(MotionEvent motionEvent) {
-        boolean zDispatchGenericMotionEvent;
-        if ((motionEvent.getSource() & 2) == 0 || motionEvent.getAction() == 10 || this.T <= 0.0f) {
+        boolean dispatchGenericMotionEvent;
+        if ((motionEvent.getSource() & 2) == 0 || motionEvent.getAction() == 10 || this.f0 <= 0.0f) {
             return super.dispatchGenericMotionEvent(motionEvent);
         }
         int childCount = getChildCount();
@@ -337,34 +326,34 @@ public class DrawerLayout extends ViewGroup {
         float y = motionEvent.getY();
         for (int i = childCount - 1; i >= 0; i--) {
             View childAt = getChildAt(i);
-            if (this.r0 == null) {
-                this.r0 = new Rect();
+            if (this.A0 == null) {
+                this.A0 = new Rect();
             }
-            childAt.getHitRect(this.r0);
-            if (this.r0.contains((int) x, (int) y) && !h(childAt)) {
+            childAt.getHitRect(this.A0);
+            if (this.A0.contains((int) x, (int) y) && !h(childAt)) {
                 if (childAt.getMatrix().isIdentity()) {
                     float scrollX = getScrollX() - childAt.getLeft();
                     float scrollY = getScrollY() - childAt.getTop();
                     motionEvent.offsetLocation(scrollX, scrollY);
-                    zDispatchGenericMotionEvent = childAt.dispatchGenericMotionEvent(motionEvent);
+                    dispatchGenericMotionEvent = childAt.dispatchGenericMotionEvent(motionEvent);
                     motionEvent.offsetLocation(-scrollX, -scrollY);
                 } else {
                     float scrollX2 = getScrollX() - childAt.getLeft();
                     float scrollY2 = getScrollY() - childAt.getTop();
-                    MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
-                    motionEventObtain.offsetLocation(scrollX2, scrollY2);
+                    MotionEvent obtain = MotionEvent.obtain(motionEvent);
+                    obtain.offsetLocation(scrollX2, scrollY2);
                     Matrix matrix = childAt.getMatrix();
                     if (!matrix.isIdentity()) {
-                        if (this.s0 == null) {
-                            this.s0 = new Matrix();
+                        if (this.B0 == null) {
+                            this.B0 = new Matrix();
                         }
-                        matrix.invert(this.s0);
-                        motionEventObtain.transform(this.s0);
+                        matrix.invert(this.B0);
+                        obtain.transform(this.B0);
                     }
-                    zDispatchGenericMotionEvent = childAt.dispatchGenericMotionEvent(motionEventObtain);
-                    motionEventObtain.recycle();
+                    dispatchGenericMotionEvent = childAt.dispatchGenericMotionEvent(obtain);
+                    obtain.recycle();
                 }
-                if (zDispatchGenericMotionEvent) {
+                if (dispatchGenericMotionEvent) {
                     return true;
                 }
             }
@@ -376,11 +365,11 @@ public class DrawerLayout extends ViewGroup {
     public final boolean drawChild(Canvas canvas, View view, long j) {
         Drawable background;
         int height = getHeight();
-        boolean zH = h(view);
+        boolean h = h(view);
         int width = getWidth();
-        int iSave = canvas.save();
+        int save = canvas.save();
         int i = 0;
-        if (zH) {
+        if (h) {
             int childCount = getChildCount();
             int i2 = 0;
             for (int i3 = 0; i3 < childCount; i3++) {
@@ -402,16 +391,16 @@ public class DrawerLayout extends ViewGroup {
             canvas.clipRect(i2, 0, width, getHeight());
             i = i2;
         }
-        boolean zDrawChild = super.drawChild(canvas, view, j);
-        canvas.restoreToCount(iSave);
-        float f = this.T;
-        if (f > 0.0f && zH) {
-            int i4 = this.S;
-            Paint paint = this.U;
+        boolean drawChild = super.drawChild(canvas, view, j);
+        canvas.restoreToCount(save);
+        float f = this.f0;
+        if (f > 0.0f && h) {
+            int i4 = this.e0;
+            Paint paint = this.g0;
             paint.setColor((((int) ((((-16777216) & i4) >>> 24) * f)) << 24) | (i4 & 16777215));
             canvas.drawRect(i, 0.0f, width, getHeight(), paint);
         }
-        return zDrawChild;
+        return drawChild;
     }
 
     public final View e() {
@@ -420,7 +409,7 @@ public class DrawerLayout extends ViewGroup {
             View childAt = getChildAt(i);
             if (j(childAt)) {
                 if (!j(childAt)) {
-                    x1.m("View ", childAt, " is not a drawer");
+                    z1.m("View ", childAt, " is not a drawer");
                     return null;
                 }
                 if (((LayoutParams) childAt.getLayoutParams()).b > 0.0f) {
@@ -433,45 +422,45 @@ public class DrawerLayout extends ViewGroup {
 
     public final int f(View view) {
         if (!j(view)) {
-            x1.m("View ", view, " is not a drawer");
+            z1.m("View ", view, " is not a drawer");
             return 0;
         }
         int i = ((LayoutParams) view.getLayoutParams()).a;
-        WeakHashMap weakHashMap = qn7.a;
+        WeakHashMap weakHashMap = ni8.a;
         int layoutDirection = getLayoutDirection();
         if (i == 3) {
-            int i2 = this.f0;
+            int i2 = this.o0;
             if (i2 != 3) {
                 return i2;
             }
-            int i3 = layoutDirection == 0 ? this.h0 : this.i0;
+            int i3 = layoutDirection == 0 ? this.q0 : this.r0;
             if (i3 != 3) {
                 return i3;
             }
         } else if (i == 5) {
-            int i4 = this.g0;
+            int i4 = this.p0;
             if (i4 != 3) {
                 return i4;
             }
-            int i5 = layoutDirection == 0 ? this.i0 : this.h0;
+            int i5 = layoutDirection == 0 ? this.r0 : this.q0;
             if (i5 != 3) {
                 return i5;
             }
         } else if (i == 8388611) {
-            int i6 = this.h0;
+            int i6 = this.q0;
             if (i6 != 3) {
                 return i6;
             }
-            int i7 = layoutDirection == 0 ? this.f0 : this.g0;
+            int i7 = layoutDirection == 0 ? this.o0 : this.p0;
             if (i7 != 3) {
                 return i7;
             }
         } else if (i == 8388613) {
-            int i8 = this.i0;
+            int i8 = this.r0;
             if (i8 != 3) {
                 return i8;
             }
-            int i9 = layoutDirection == 0 ? this.g0 : this.f0;
+            int i9 = layoutDirection == 0 ? this.p0 : this.o0;
             if (i9 != 3) {
                 return i9;
             }
@@ -481,7 +470,7 @@ public class DrawerLayout extends ViewGroup {
 
     public final int g(View view) {
         int i = ((LayoutParams) view.getLayoutParams()).a;
-        WeakHashMap weakHashMap = qn7.a;
+        WeakHashMap weakHashMap = ni8.a;
         return Gravity.getAbsoluteGravity(i, getLayoutDirection());
     }
 
@@ -512,20 +501,20 @@ public class DrawerLayout extends ViewGroup {
     }
 
     public float getDrawerElevation() {
-        return this.Q;
+        return this.c0;
     }
 
     public Drawable getStatusBarBackgroundDrawable() {
-        return this.n0;
+        return this.w0;
     }
 
     public final void k(View view) {
         if (!j(view)) {
-            x1.m("View ", view, " is not a sliding drawer");
+            z1.m("View ", view, " is not a sliding drawer");
             return;
         }
         LayoutParams layoutParams = (LayoutParams) view.getLayoutParams();
-        if (this.e0) {
+        if (this.n0) {
             layoutParams.b = 1.0f;
             layoutParams.d = 1;
             o(view, true);
@@ -533,40 +522,40 @@ public class DrawerLayout extends ViewGroup {
         } else {
             layoutParams.d |= 2;
             if (a(view, 3)) {
-                this.V.r(view, 0, view.getTop());
+                this.h0.r(view, 0, view.getTop());
             } else {
-                this.W.r(view, getWidth() - view.getWidth(), view.getTop());
+                this.i0.r(view, getWidth() - view.getWidth(), view.getTop());
             }
         }
         invalidate();
     }
 
     public final void l(int i, int i2) {
-        View viewD;
-        WeakHashMap weakHashMap = qn7.a;
+        View d;
+        WeakHashMap weakHashMap = ni8.a;
         int absoluteGravity = Gravity.getAbsoluteGravity(i2, getLayoutDirection());
         if (i2 == 3) {
-            this.f0 = i;
+            this.o0 = i;
         } else if (i2 == 5) {
-            this.g0 = i;
+            this.p0 = i;
         } else if (i2 == 8388611) {
-            this.h0 = i;
+            this.q0 = i;
         } else if (i2 == 8388613) {
-            this.i0 = i;
+            this.r0 = i;
         }
         if (i != 0) {
-            (absoluteGravity == 3 ? this.V : this.W).a();
+            (absoluteGravity == 3 ? this.h0 : this.i0).a();
         }
         if (i != 1) {
-            if (i == 2 && (viewD = d(absoluteGravity)) != null) {
-                k(viewD);
+            if (i == 2 && (d = d(absoluteGravity)) != null) {
+                k(d);
                 return;
             }
             return;
         }
-        View viewD2 = d(absoluteGravity);
-        if (viewD2 != null) {
-            b(viewD2);
+        View d2 = d(absoluteGravity);
+        if (d2 != null) {
+            b(d2);
         }
     }
 
@@ -577,22 +566,21 @@ public class DrawerLayout extends ViewGroup {
             return;
         }
         layoutParams.b = f;
-        ArrayList arrayList = this.k0;
-        if (arrayList == null || (size = arrayList.size() - 1) < 0) {
+        if (this.t0 == null || r2.size() - 1 < 0) {
             return;
         }
-        this.k0.get(size).getClass();
-        x1.l();
+        this.t0.get(size).getClass();
+        z1.l();
     }
 
     public final void n(View view) {
-        p3 p3Var = p3.n;
-        qn7.n(view, p3Var.a());
-        qn7.j(view, 0);
+        v3 v3Var = v3.m;
+        ni8.j(view, v3Var.a());
+        ni8.h(view, 0);
         if (!i(view) || f(view) == 2) {
             return;
         }
-        qn7.o(view, p3Var, null, this.t0);
+        ni8.k(view, v3Var, null, this.C0);
     }
 
     public final void o(View view, boolean z) {
@@ -600,10 +588,10 @@ public class DrawerLayout extends ViewGroup {
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
             if ((z || j(childAt)) && !(z && childAt == view)) {
-                WeakHashMap weakHashMap = qn7.a;
+                WeakHashMap weakHashMap = ni8.a;
                 childAt.setImportantForAccessibility(4);
             } else {
-                WeakHashMap weakHashMap2 = qn7.a;
+                WeakHashMap weakHashMap2 = ni8.a;
                 childAt.setImportantForAccessibility(1);
             }
         }
@@ -612,79 +600,102 @@ public class DrawerLayout extends ViewGroup {
     @Override // android.view.ViewGroup, android.view.View
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.e0 = true;
+        this.n0 = true;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        this.e0 = true;
+        this.n0 = true;
     }
 
     @Override // android.view.View
     public final void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if (!this.p0 || this.n0 == null) {
+        if (!this.y0 || this.w0 == null) {
             return;
         }
-        WindowInsets windowInsets = this.o0;
+        WindowInsets windowInsets = this.x0;
         int systemWindowInsetTop = windowInsets != null ? windowInsets.getSystemWindowInsetTop() : 0;
         if (systemWindowInsetTop > 0) {
-            this.n0.setBounds(0, 0, getWidth(), systemWindowInsetTop);
-            this.n0.draw(canvas);
+            this.w0.setBounds(0, 0, getWidth(), systemWindowInsetTop);
+            this.w0.draw(canvas);
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x0061  */
+    /* JADX WARN: Code restructure failed: missing block: B:7:0x001b, code lost:
+    
+        if (r0 != 3) goto L31;
+     */
     @Override // android.view.ViewGroup
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         boolean z;
-        View viewH;
+        View h;
+        float[] fArr;
+        float[] fArr2;
+        float[] fArr3;
+        float[] fArr4;
         int actionMasked = motionEvent.getActionMasked();
-        yn7 yn7Var = this.V;
-        boolean zQ = yn7Var.q(motionEvent) | this.W.q(motionEvent);
+        xi8 xi8Var = this.h0;
+        boolean q = xi8Var.q(motionEvent) | this.i0.q(motionEvent);
         if (actionMasked != 0) {
-            if (actionMasked == 1) {
-                c(true);
-                this.j0 = false;
-            } else if (actionMasked == 2) {
-                int length = yn7Var.d.length;
-                for (int i = 0; i < length; i++) {
-                    if ((yn7Var.k & (1 << i)) != 0) {
-                        float f = yn7Var.f[i] - yn7Var.d[i];
-                        float f2 = yn7Var.g[i] - yn7Var.e[i];
-                        float f3 = (f2 * f2) + (f * f);
-                        int i2 = yn7Var.b;
-                        if (f3 > i2 * i2) {
-                            a aVar = this.a0;
-                            aVar.d.removeCallbacks(aVar.c);
-                            a aVar2 = this.b0;
-                            aVar2.d.removeCallbacks(aVar2.c);
-                            break;
+            if (actionMasked != 1) {
+                if (actionMasked == 2) {
+                    float[] fArr5 = xi8Var.d;
+                    if (fArr5 != null) {
+                        int length = fArr5.length;
+                        int i = 0;
+                        while (true) {
+                            if (i >= length) {
+                                break;
+                            }
+                            if ((xi8Var.k & (1 << i)) != 0 && (fArr = xi8Var.d) != null && (fArr2 = xi8Var.e) != null && (fArr3 = xi8Var.f) != null && (fArr4 = xi8Var.g) != null) {
+                                float f = fArr3[i] - fArr[i];
+                                float f2 = fArr4[i] - fArr2[i];
+                                float f3 = (f2 * f2) + (f * f);
+                                int i2 = xi8Var.b;
+                                if (f3 > i2 * i2) {
+                                    a aVar = this.j0;
+                                    aVar.d.removeCallbacks(aVar.c);
+                                    a aVar2 = this.k0;
+                                    aVar2.d.removeCallbacks(aVar2.c);
+                                    break;
+                                }
+                            }
+                            i++;
                         }
                     }
                 }
-            } else if (actionMasked == 3) {
-                c(true);
-                this.j0 = false;
+                z = false;
             }
+            c(true);
+            this.s0 = false;
             z = false;
         } else {
             float x = motionEvent.getX();
             float y = motionEvent.getY();
-            this.l0 = x;
-            this.m0 = y;
-            z = this.T > 0.0f && (viewH = yn7Var.h((int) x, (int) y)) != null && h(viewH);
-            this.j0 = false;
+            this.u0 = x;
+            this.v0 = y;
+            z = this.f0 > 0.0f && (h = xi8Var.h((int) x, (int) y)) != null && h(h);
+            this.s0 = false;
         }
-        if (!zQ && !z) {
+        if (!q && !z) {
             int childCount = getChildCount();
-            for (int i3 = 0; i3 < childCount; i3++) {
-                if (!((LayoutParams) getChildAt(i3).getLayoutParams()).c) {
+            int i3 = 0;
+            while (true) {
+                if (i3 >= childCount) {
+                    if (this.s0) {
+                        break;
+                    }
+                    return false;
                 }
-            }
-            if (!this.j0) {
-                return false;
+                if (((LayoutParams) getChildAt(i3).getLayoutParams()).c) {
+                    break;
+                }
+                i3++;
             }
         }
         return true;
@@ -704,11 +715,11 @@ public class DrawerLayout extends ViewGroup {
         if (i != 4) {
             return super.onKeyUp(i, keyEvent);
         }
-        View viewE = e();
-        if (viewE != null && f(viewE) == 0) {
+        View e = e();
+        if (e != null && f(e) == 0) {
             c(false);
         }
-        return viewE != null;
+        return e != null;
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -716,10 +727,12 @@ public class DrawerLayout extends ViewGroup {
         WindowInsets rootWindowInsets;
         float f;
         int i5;
-        this.d0 = true;
+        boolean z2 = true;
+        this.m0 = true;
         int i6 = i3 - i;
         int childCount = getChildCount();
-        for (int i7 = 0; i7 < childCount; i7++) {
+        int i7 = 0;
+        while (i7 < childCount) {
             View childAt = getChildAt(i7);
             if (childAt.getVisibility() != 8) {
                 LayoutParams layoutParams = (LayoutParams) childAt.getLayoutParams();
@@ -735,65 +748,71 @@ public class DrawerLayout extends ViewGroup {
                         f = (measuredWidth + i5) / f2;
                     } else {
                         float f3 = measuredWidth;
-                        int i9 = i6 - ((int) (layoutParams.b * f3));
-                        f = (i6 - i9) / f3;
-                        i5 = i9;
+                        f = (i6 - r11) / f3;
+                        i5 = i6 - ((int) (layoutParams.b * f3));
                     }
-                    boolean z2 = f != layoutParams.b;
-                    int i10 = layoutParams.a & 112;
-                    if (i10 == 16) {
-                        int i11 = i4 - i2;
-                        int i12 = (i11 - measuredHeight) / 2;
-                        int i13 = ((ViewGroup.MarginLayoutParams) layoutParams).topMargin;
-                        if (i12 < i13) {
-                            i12 = i13;
+                    boolean z3 = f != layoutParams.b ? z2 : false;
+                    int i9 = layoutParams.a & 112;
+                    if (i9 == 16) {
+                        int i10 = i4 - i2;
+                        int i11 = (i10 - measuredHeight) / 2;
+                        int i12 = ((ViewGroup.MarginLayoutParams) layoutParams).topMargin;
+                        if (i11 < i12) {
+                            i11 = i12;
                         } else {
-                            int i14 = i12 + measuredHeight;
-                            int i15 = i11 - ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin;
-                            if (i14 > i15) {
-                                i12 = i15 - measuredHeight;
+                            int i13 = i11 + measuredHeight;
+                            int i14 = i10 - ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin;
+                            if (i13 > i14) {
+                                i11 = i14 - measuredHeight;
                             }
                         }
-                        childAt.layout(i5, i12, measuredWidth + i5, measuredHeight + i12);
-                    } else if (i10 != 80) {
-                        int i16 = ((ViewGroup.MarginLayoutParams) layoutParams).topMargin;
-                        childAt.layout(i5, i16, measuredWidth + i5, measuredHeight + i16);
+                        childAt.layout(i5, i11, measuredWidth + i5, measuredHeight + i11);
+                    } else if (i9 != 80) {
+                        int i15 = ((ViewGroup.MarginLayoutParams) layoutParams).topMargin;
+                        childAt.layout(i5, i15, measuredWidth + i5, measuredHeight + i15);
                     } else {
-                        int i17 = i4 - i2;
-                        childAt.layout(i5, (i17 - ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin) - childAt.getMeasuredHeight(), measuredWidth + i5, i17 - ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin);
+                        int i16 = i4 - i2;
+                        childAt.layout(i5, (i16 - ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin) - childAt.getMeasuredHeight(), measuredWidth + i5, i16 - ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin);
                     }
-                    if (z2) {
+                    if (z3) {
                         m(childAt, f);
                     }
-                    int i18 = layoutParams.b > 0.0f ? 0 : 4;
-                    if (childAt.getVisibility() != i18) {
-                        childAt.setVisibility(i18);
+                    int i17 = layoutParams.b > 0.0f ? 0 : 4;
+                    if (childAt.getVisibility() != i17) {
+                        childAt.setVisibility(i17);
                     }
                 }
             }
+            i7++;
+            z2 = true;
         }
-        if (w0 && (rootWindowInsets = getRootWindowInsets()) != null) {
-            hr2 hr2VarJ = ft7.g(null, rootWindowInsets).a.j();
-            yn7 yn7Var = this.V;
-            yn7Var.o = Math.max(yn7Var.p, hr2VarJ.a);
-            yn7 yn7Var2 = this.W;
-            yn7Var2.o = Math.max(yn7Var2.p, hr2VarJ.c);
+        if (F0 && (rootWindowInsets = getRootWindowInsets()) != null) {
+            p63 l = io8.g(null, rootWindowInsets).a.l();
+            xi8 xi8Var = this.h0;
+            xi8Var.o = Math.max(xi8Var.p, l.a);
+            xi8 xi8Var2 = this.i0;
+            xi8Var2.o = Math.max(xi8Var2.p, l.c);
         }
-        this.d0 = false;
-        this.e0 = false;
+        this.m0 = false;
+        this.n0 = false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x003a  */
+    /* JADX WARN: Removed duplicated region for block: B:11:0x0048  */
     @Override // android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final void onMeasure(int i, int i2) {
         boolean z;
+        int childCount;
+        int i3;
         int mode = View.MeasureSpec.getMode(i);
         int mode2 = View.MeasureSpec.getMode(i2);
         int size = View.MeasureSpec.getSize(i);
         int size2 = View.MeasureSpec.getSize(i2);
         if (mode != 1073741824 || mode2 != 1073741824) {
             if (!isInEditMode()) {
-                fn.r("DrawerLayout must be measured with MeasureSpec.EXACTLY.");
+                i60.p("DrawerLayout must be measured with MeasureSpec.EXACTLY.");
                 return;
             }
             if (mode == 0) {
@@ -804,102 +823,106 @@ public class DrawerLayout extends ViewGroup {
             }
         }
         setMeasuredDimension(size, size2);
-        if (this.o0 != null) {
-            WeakHashMap weakHashMap = qn7.a;
+        if (this.x0 != null) {
+            WeakHashMap weakHashMap = ni8.a;
             if (getFitsSystemWindows()) {
                 z = true;
-            } else {
-                z = false;
+                WeakHashMap weakHashMap2 = ni8.a;
+                int layoutDirection = getLayoutDirection();
+                childCount = getChildCount();
+                boolean z2 = false;
+                boolean z3 = false;
+                for (i3 = 0; i3 < childCount; i3++) {
+                    View childAt = getChildAt(i3);
+                    if (childAt.getVisibility() != 8) {
+                        LayoutParams layoutParams = (LayoutParams) childAt.getLayoutParams();
+                        if (z) {
+                            int absoluteGravity = Gravity.getAbsoluteGravity(layoutParams.a, layoutDirection);
+                            boolean fitsSystemWindows = childAt.getFitsSystemWindows();
+                            WindowInsets windowInsets = this.x0;
+                            if (fitsSystemWindows) {
+                                if (absoluteGravity == 3) {
+                                    windowInsets = windowInsets.replaceSystemWindowInsets(windowInsets.getSystemWindowInsetLeft(), windowInsets.getSystemWindowInsetTop(), 0, windowInsets.getSystemWindowInsetBottom());
+                                } else if (absoluteGravity == 5) {
+                                    windowInsets = windowInsets.replaceSystemWindowInsets(0, windowInsets.getSystemWindowInsetTop(), windowInsets.getSystemWindowInsetRight(), windowInsets.getSystemWindowInsetBottom());
+                                }
+                                childAt.dispatchApplyWindowInsets(windowInsets);
+                            } else {
+                                if (absoluteGravity == 3) {
+                                    windowInsets = windowInsets.replaceSystemWindowInsets(windowInsets.getSystemWindowInsetLeft(), windowInsets.getSystemWindowInsetTop(), 0, windowInsets.getSystemWindowInsetBottom());
+                                } else if (absoluteGravity == 5) {
+                                    windowInsets = windowInsets.replaceSystemWindowInsets(0, windowInsets.getSystemWindowInsetTop(), windowInsets.getSystemWindowInsetRight(), windowInsets.getSystemWindowInsetBottom());
+                                }
+                                ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin = windowInsets.getSystemWindowInsetLeft();
+                                ((ViewGroup.MarginLayoutParams) layoutParams).topMargin = windowInsets.getSystemWindowInsetTop();
+                                ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin = windowInsets.getSystemWindowInsetRight();
+                                ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin = windowInsets.getSystemWindowInsetBottom();
+                            }
+                        }
+                        if (h(childAt)) {
+                            childAt.measure(View.MeasureSpec.makeMeasureSpec((size - ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin) - ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin, 1073741824), View.MeasureSpec.makeMeasureSpec((size2 - ((ViewGroup.MarginLayoutParams) layoutParams).topMargin) - ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin, 1073741824));
+                        } else {
+                            if (!j(childAt)) {
+                                throw new IllegalStateException("Child " + childAt + " at index " + i3 + " does not have a valid layout_gravity - must be Gravity.LEFT, Gravity.RIGHT or Gravity.NO_GRAVITY");
+                            }
+                            float elevation = childAt.getElevation();
+                            float f = this.c0;
+                            if (elevation != f) {
+                                childAt.setElevation(f);
+                            }
+                            int g = g(childAt);
+                            int i4 = g & 7;
+                            boolean z4 = i4 == 3;
+                            if ((z4 && z2) || (!z4 && z3)) {
+                                throw new IllegalStateException(eh0.r(new StringBuilder("Child drawer has absolute gravity "), (g & 3) != 3 ? (g & 5) == 5 ? "RIGHT" : Integer.toHexString(i4) : "LEFT", " but this DrawerLayout already has a drawer view along that edge"));
+                            }
+                            if (z4) {
+                                z2 = true;
+                            } else {
+                                z3 = true;
+                            }
+                            childAt.measure(ViewGroup.getChildMeasureSpec(i, this.d0 + ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin + ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin, ((ViewGroup.MarginLayoutParams) layoutParams).width), ViewGroup.getChildMeasureSpec(i2, ((ViewGroup.MarginLayoutParams) layoutParams).topMargin + ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin, ((ViewGroup.MarginLayoutParams) layoutParams).height));
+                        }
+                    }
+                }
             }
-        } else {
-            z = false;
         }
-        WeakHashMap weakHashMap2 = qn7.a;
-        int layoutDirection = getLayoutDirection();
-        int childCount = getChildCount();
-        boolean z2 = false;
-        boolean z3 = false;
-        for (int i3 = 0; i3 < childCount; i3++) {
-            View childAt = getChildAt(i3);
-            if (childAt.getVisibility() != 8) {
-                LayoutParams layoutParams = (LayoutParams) childAt.getLayoutParams();
-                if (z) {
-                    int absoluteGravity = Gravity.getAbsoluteGravity(layoutParams.a, layoutDirection);
-                    boolean fitsSystemWindows = childAt.getFitsSystemWindows();
-                    WindowInsets windowInsetsReplaceSystemWindowInsets = this.o0;
-                    if (fitsSystemWindows) {
-                        if (absoluteGravity == 3) {
-                            windowInsetsReplaceSystemWindowInsets = windowInsetsReplaceSystemWindowInsets.replaceSystemWindowInsets(windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetLeft(), windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetTop(), 0, windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetBottom());
-                        } else if (absoluteGravity == 5) {
-                            windowInsetsReplaceSystemWindowInsets = windowInsetsReplaceSystemWindowInsets.replaceSystemWindowInsets(0, windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetTop(), windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetRight(), windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetBottom());
-                        }
-                        childAt.dispatchApplyWindowInsets(windowInsetsReplaceSystemWindowInsets);
-                    } else {
-                        if (absoluteGravity == 3) {
-                            windowInsetsReplaceSystemWindowInsets = windowInsetsReplaceSystemWindowInsets.replaceSystemWindowInsets(windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetLeft(), windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetTop(), 0, windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetBottom());
-                        } else if (absoluteGravity == 5) {
-                            windowInsetsReplaceSystemWindowInsets = windowInsetsReplaceSystemWindowInsets.replaceSystemWindowInsets(0, windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetTop(), windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetRight(), windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetBottom());
-                        }
-                        ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin = windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetLeft();
-                        ((ViewGroup.MarginLayoutParams) layoutParams).topMargin = windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetTop();
-                        ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin = windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetRight();
-                        ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin = windowInsetsReplaceSystemWindowInsets.getSystemWindowInsetBottom();
-                    }
-                }
-                if (h(childAt)) {
-                    childAt.measure(View.MeasureSpec.makeMeasureSpec((size - ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin) - ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin, 1073741824), View.MeasureSpec.makeMeasureSpec((size2 - ((ViewGroup.MarginLayoutParams) layoutParams).topMargin) - ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin, 1073741824));
-                } else {
-                    if (!j(childAt)) {
-                        throw new IllegalStateException("Child " + childAt + " at index " + i3 + " does not have a valid layout_gravity - must be Gravity.LEFT, Gravity.RIGHT or Gravity.NO_GRAVITY");
-                    }
-                    float fE = in7.e(childAt);
-                    float f = this.Q;
-                    if (fE != f) {
-                        in7.k(childAt, f);
-                    }
-                    int iG = g(childAt);
-                    int i4 = iG & 7;
-                    boolean z4 = i4 == 3;
-                    if ((z4 && z2) || (!z4 && z3)) {
-                        throw new IllegalStateException(kd0.z(new StringBuilder("Child drawer has absolute gravity "), (iG & 3) != 3 ? (iG & 5) == 5 ? "RIGHT" : Integer.toHexString(i4) : "LEFT", " but this DrawerLayout already has a drawer view along that edge"));
-                    }
-                    if (z4) {
-                        z2 = true;
-                    } else {
-                        z3 = true;
-                    }
-                    childAt.measure(ViewGroup.getChildMeasureSpec(i, this.R + ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin + ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin, ((ViewGroup.MarginLayoutParams) layoutParams).width), ViewGroup.getChildMeasureSpec(i2, ((ViewGroup.MarginLayoutParams) layoutParams).topMargin + ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin, ((ViewGroup.MarginLayoutParams) layoutParams).height));
-                }
-            }
+        z = false;
+        WeakHashMap weakHashMap22 = ni8.a;
+        int layoutDirection2 = getLayoutDirection();
+        childCount = getChildCount();
+        boolean z22 = false;
+        boolean z32 = false;
+        while (i3 < childCount) {
         }
     }
 
     @Override // android.view.View
     public final void onRestoreInstanceState(Parcelable parcelable) {
-        View viewD;
-        if (!(parcelable instanceof jk1)) {
+        View d;
+        if (!(parcelable instanceof ns1)) {
             super.onRestoreInstanceState(parcelable);
             return;
         }
-        jk1 jk1Var = (jk1) parcelable;
-        super.onRestoreInstanceState(jk1Var.Q);
-        int i = jk1Var.S;
-        if (i != 0 && (viewD = d(i)) != null) {
-            k(viewD);
+        ns1 ns1Var = (ns1) parcelable;
+        super.onRestoreInstanceState(ns1Var.X);
+        int i = ns1Var.Z;
+        if (i != 0 && (d = d(i)) != null) {
+            k(d);
         }
-        int i2 = jk1Var.T;
+        int i2 = ns1Var.c0;
         if (i2 != 3) {
             l(i2, 3);
         }
-        int i3 = jk1Var.U;
+        int i3 = ns1Var.d0;
         if (i3 != 3) {
             l(i3, 5);
         }
-        int i4 = jk1Var.V;
+        int i4 = ns1Var.e0;
         if (i4 != 3) {
             l(i4, 8388611);
         }
-        int i5 = jk1Var.W;
+        int i5 = ns1Var.f0;
         if (i5 != 3) {
             l(i5, 8388613);
         }
@@ -907,8 +930,8 @@ public class DrawerLayout extends ViewGroup {
 
     @Override // android.view.View
     public final Parcelable onSaveInstanceState() {
-        jk1 jk1Var = new jk1(super.onSaveInstanceState());
-        jk1Var.S = 0;
+        ns1 ns1Var = new ns1(super.onSaveInstanceState());
+        ns1Var.Z = 0;
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
             LayoutParams layoutParams = (LayoutParams) getChildAt(i).getLayoutParams();
@@ -916,32 +939,38 @@ public class DrawerLayout extends ViewGroup {
             boolean z = i2 == 1;
             boolean z2 = i2 == 2;
             if (z || z2) {
-                jk1Var.S = layoutParams.a;
+                ns1Var.Z = layoutParams.a;
                 break;
             }
         }
-        jk1Var.T = this.f0;
-        jk1Var.U = this.g0;
-        jk1Var.V = this.h0;
-        jk1Var.W = this.i0;
-        return jk1Var;
+        ns1Var.c0 = this.o0;
+        ns1Var.d0 = this.p0;
+        ns1Var.e0 = this.q0;
+        ns1Var.f0 = this.r0;
+        return ns1Var;
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x006e  */
+    /* JADX WARN: Code restructure failed: missing block: B:24:0x0069, code lost:
+    
+        if (f(r1) != 2) goto L27;
+     */
     @Override // android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final boolean onTouchEvent(MotionEvent motionEvent) {
-        boolean z;
-        View childAt;
-        yn7 yn7Var = this.V;
-        yn7Var.j(motionEvent);
-        this.W.j(motionEvent);
+        View view;
+        xi8 xi8Var = this.h0;
+        xi8Var.j(motionEvent);
+        this.i0.j(motionEvent);
         int action = motionEvent.getAction() & 255;
+        boolean z = false;
         if (action == 0) {
             float x = motionEvent.getX();
             float y = motionEvent.getY();
-            this.l0 = x;
-            this.m0 = y;
-            this.j0 = false;
+            this.u0 = x;
+            this.v0 = y;
+            this.s0 = false;
             return true;
         }
         if (action != 1) {
@@ -949,33 +978,35 @@ public class DrawerLayout extends ViewGroup {
                 return true;
             }
             c(true);
-            this.j0 = false;
+            this.s0 = false;
             return true;
         }
         float x2 = motionEvent.getX();
         float y2 = motionEvent.getY();
-        View viewH = yn7Var.h((int) x2, (int) y2);
-        if (viewH != null && h(viewH)) {
-            float f = x2 - this.l0;
-            float f2 = y2 - this.m0;
-            int i = yn7Var.b;
+        View h = xi8Var.h((int) x2, (int) y2);
+        if (h != null && h(h)) {
+            float f = x2 - this.u0;
+            float f2 = y2 - this.v0;
+            int i = xi8Var.b;
             if ((f2 * f2) + (f * f) < i * i) {
                 int childCount = getChildCount();
                 int i2 = 0;
                 while (true) {
                     if (i2 >= childCount) {
-                        childAt = null;
+                        view = null;
                         break;
                     }
-                    childAt = getChildAt(i2);
-                    if ((((LayoutParams) childAt.getLayoutParams()).d & 1) == 1) {
+                    view = getChildAt(i2);
+                    if ((((LayoutParams) view.getLayoutParams()).d & 1) == 1) {
                         break;
                     }
                     i2++;
                 }
-                z = childAt == null || f(childAt) == 2;
+                if (view != null) {
+                }
             }
         }
+        z = true;
         c(z);
         return true;
     }
@@ -990,31 +1021,31 @@ public class DrawerLayout extends ViewGroup {
 
     @Override // android.view.View, android.view.ViewParent
     public final void requestLayout() {
-        if (this.d0) {
+        if (this.m0) {
             return;
         }
         super.requestLayout();
     }
 
     public void setDrawerElevation(float f) {
-        this.Q = f;
+        this.c0 = f;
         for (int i = 0; i < getChildCount(); i++) {
             View childAt = getChildAt(i);
             if (j(childAt)) {
-                float f2 = this.Q;
-                WeakHashMap weakHashMap = qn7.a;
-                in7.k(childAt, f2);
+                float f2 = this.c0;
+                WeakHashMap weakHashMap = ni8.a;
+                childAt.setElevation(f2);
             }
         }
     }
 
     @Deprecated
-    public void setDrawerListener(ik1 ik1Var) {
-        if (ik1Var != null) {
-            if (this.k0 == null) {
-                this.k0 = new ArrayList();
+    public void setDrawerListener(ms1 ms1Var) {
+        if (ms1Var != null) {
+            if (this.t0 == null) {
+                this.t0 = new ArrayList();
             }
-            this.k0.add(ik1Var);
+            this.t0.add(ms1Var);
         }
     }
 
@@ -1024,22 +1055,22 @@ public class DrawerLayout extends ViewGroup {
     }
 
     public void setScrimColor(int i) {
-        this.S = i;
+        this.e0 = i;
         invalidate();
     }
 
     public void setStatusBarBackground(int i) {
-        this.n0 = i != 0 ? getContext().getDrawable(i) : null;
+        this.w0 = i != 0 ? getContext().getDrawable(i) : null;
         invalidate();
     }
 
     public void setStatusBarBackgroundColor(int i) {
-        this.n0 = new ColorDrawable(i);
+        this.w0 = new ColorDrawable(i);
         invalidate();
     }
 
     public void setStatusBarBackground(Drawable drawable) {
-        this.n0 = drawable;
+        this.w0 = drawable;
         invalidate();
     }
 
@@ -1053,6 +1084,6 @@ public class DrawerLayout extends ViewGroup {
     }
 
     public DrawerLayout(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, r75.drawerLayoutStyle);
+        this(context, attributeSet, qr5.drawerLayoutStyle);
     }
 }

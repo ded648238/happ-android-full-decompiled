@@ -1,6 +1,6 @@
 .class public interface abstract Lokhttp3/internal/io/FileSystem;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -19,14 +19,14 @@
         "",
         "Ljava/io/File;",
         "file",
-        "Lle6;",
+        "Ld27;",
         "source",
-        "(Ljava/io/File;)Lle6;",
-        "Lpb6;",
+        "(Ljava/io/File;)Ld27;",
+        "Lqy6;",
         "sink",
-        "(Ljava/io/File;)Lpb6;",
+        "(Ljava/io/File;)Lqy6;",
         "appendingSink",
-        "Lbh7;",
+        "Lr98;",
         "delete",
         "(Ljava/io/File;)V",
         "",
@@ -91,7 +91,7 @@
 
 
 # virtual methods
-.method public abstract appendingSink(Ljava/io/File;)Lpb6;
+.method public abstract appendingSink(Ljava/io/File;)Lqy6;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -126,7 +126,7 @@
     .end annotation
 .end method
 
-.method public abstract sink(Ljava/io/File;)Lpb6;
+.method public abstract sink(Ljava/io/File;)Lqy6;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -137,7 +137,7 @@
 .method public abstract size(Ljava/io/File;)J
 .end method
 
-.method public abstract source(Ljava/io/File;)Lle6;
+.method public abstract source(Ljava/io/File;)Ld27;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;

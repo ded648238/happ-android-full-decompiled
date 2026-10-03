@@ -1,6 +1,6 @@
 .class final Lokhttp3/internal/http1/Http1ExchangeCodec$UnknownLengthSource;
 .super Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -23,13 +23,13 @@
         "Lokhttp3/internal/http1/Http1ExchangeCodec;",
         "<init>",
         "(Lokhttp3/internal/http1/Http1ExchangeCodec;)V",
-        "Lf50;",
+        "Ll70;",
         "sink",
         "",
         "byteCount",
         "read",
-        "(Lf50;J)J",
-        "Lbh7;",
+        "(Ll70;J)J",
+        "Lr98;",
         "close",
         "()V",
         "",
@@ -122,7 +122,7 @@
     return-void
 .end method
 
-.method public read(Lf50;J)J
+.method public read(Ll70;J)J
     .locals 3
 
     .line 1
@@ -171,7 +171,7 @@
 
     .line 23
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->read(Lf50;J)J
+    invoke-super {p0, p1, p2, p3}, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->read(Ll70;J)J
 
     .line 24
     .line 25
@@ -207,11 +207,11 @@
 
     .line 39
     :cond_2
-    const-string p1, "closed"
+    const-string p0, "closed"
 
     .line 40
     .line 41
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -220,19 +220,19 @@
 
     .line 45
     :cond_3
-    const-string p1, "byteCount < 0: "
+    const-string p0, "byteCount < 0: "
 
     .line 46
     .line 47
-    invoke-static {p2, p3, p1}, Lp27;->m(JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p3, p0}, Leh0;->i(JLjava/lang/String;)Ljava/lang/String;
 
     .line 48
     .line 49
     .line 50
-    move-result-object p1
+    move-result-object p0
 
     .line 51
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 52
     .line 53

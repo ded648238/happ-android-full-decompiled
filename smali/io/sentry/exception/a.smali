@@ -1,16 +1,16 @@
 .class public final Lio/sentry/exception/a;
 .super Ljava/lang/RuntimeException;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Lio/sentry/protocol/o;
+.field public final X:Lio/sentry/protocol/o;
 
-.field public final R:Ljava/lang/Throwable;
+.field public final Y:Ljava/lang/Throwable;
 
-.field public final S:Ljava/lang/Thread;
+.field public final Z:Ljava/lang/Thread;
 
-.field public final T:Z
+.field public final c0:Z
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/sentry/exception/a;->Q:Lio/sentry/protocol/o;
+    iput-object p1, p0, Lio/sentry/exception/a;->X:Lio/sentry/protocol/o;
 
     .line 5
     .line 6
@@ -31,20 +31,20 @@
 
     .line 7
     .line 8
-    invoke-static {p2, p1}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    iput-object p2, p0, Lio/sentry/exception/a;->R:Ljava/lang/Throwable;
+    iput-object p2, p0, Lio/sentry/exception/a;->Y:Ljava/lang/Throwable;
 
     .line 12
     .line 13
-    iput-object p3, p0, Lio/sentry/exception/a;->S:Ljava/lang/Thread;
+    iput-object p3, p0, Lio/sentry/exception/a;->Z:Ljava/lang/Thread;
 
     .line 14
     .line 15
-    iput-boolean p4, p0, Lio/sentry/exception/a;->T:Z
+    iput-boolean p4, p0, Lio/sentry/exception/a;->c0:Z
 
     .line 16
     .line 17

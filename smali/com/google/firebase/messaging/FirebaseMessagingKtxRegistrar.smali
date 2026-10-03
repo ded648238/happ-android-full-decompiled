@@ -1,6 +1,6 @@
 .class public final Lcom/google/firebase/messaging/FirebaseMessagingKtxRegistrar;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lcom/google/firebase/components/ComponentRegistrar;
@@ -9,31 +9,47 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001\u00a8\u0006\u0002"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0004"
     }
     d2 = {
         "Lcom/google/firebase/messaging/FirebaseMessagingKtxRegistrar;",
         "Lcom/google/firebase/components/ComponentRegistrar;",
+        "<init>",
+        "()V",
         "com.google.firebase-firebase-messaging"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x8,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
 .end annotation
 
 
-# virtual methods
-.method public final getComponents()Ljava/util/List;
-    .locals 1
+# direct methods
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    sget-object v0, Lwn1;->Q:Lwn1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    return-object v0
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getComponents()Ljava/util/List;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lfw1;->X:Lfw1;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

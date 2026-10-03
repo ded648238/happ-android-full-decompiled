@@ -1,220 +1,278 @@
-.class public abstract synthetic Lj$/time/g;
+.class public final synthetic Lj$/time/g;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# static fields
-.field public static final synthetic a:[I
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public static synthetic a(Ljava/lang/String;)V
+    .locals 1
 
     .line 1
-    invoke-static {}, Lj$/time/temporal/a;->values()[Lj$/time/temporal/a;
+    new-instance v0, Lj$/time/DateTimeException;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    invoke-direct {v0, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
+    .line 4
     .line 5
-    array-length v0, v0
+    .line 6
+    throw v0
+.end method
+
+.method public static synthetic b(Ljava/lang/String;I)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj$/time/DateTimeException;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
-    new-array v0, v0, [I
-
     .line 7
     .line 8
-    sput-object v0, Lj$/time/g;->a:[I
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 9
     .line 10
-    :try_start_0
-    sget-object v1, Lj$/time/temporal/a;->NANOS:Lj$/time/temporal/a;
-
     .line 11
-    .line 12
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 12
     .line 13
     .line 14
+    move-result-object p0
+
     .line 15
-    move-result v1
+    invoke-direct {v0, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 16
-    const/4 v2, 0x1
-
     .line 17
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    .line 18
+    throw v0
+.end method
+
+.method public static synthetic c(Ljava/lang/String;ILjava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj$/time/DateTimeException;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
+
+    .line 18
+    invoke-direct {v0, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    throw v0
+.end method
+
+.method public static synthetic d(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj$/time/temporal/r;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    invoke-direct {v0, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    throw v0
+.end method
+
+.method public static synthetic e(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 7
+    .line 8
+    .line 9
+    const-string p0, ", actual: "
+
+    .line 10
+    .line 11
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 18
     .line 19
-    :catch_0
-    :try_start_1
-    sget-object v0, Lj$/time/g;->a:[I
-
     .line 20
+    move-result-object p0
+
     .line 21
-    sget-object v1, Lj$/time/temporal/a;->MICROS:Lj$/time/temporal/a;
+    new-instance p1, Ljava/lang/ClassCastException;
 
     .line 22
     .line 23
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {p1, p0}, Ljava/lang/ClassCastException;-><init>(Ljava/lang/String;)V
 
     .line 24
     .line 25
     .line 26
-    move-result v1
+    throw p1
+.end method
 
-    .line 27
-    const/4 v2, 0x2
+.method public static synthetic f(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
 
-    .line 28
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 29
-    .line 30
-    :catch_1
-    :try_start_2
-    sget-object v0, Lj$/time/g;->a:[I
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 31
-    .line 32
-    sget-object v1, Lj$/time/temporal/a;->MILLIS:Lj$/time/temporal/a;
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 33
-    .line 34
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 35
-    .line 36
-    .line 37
-    move-result v1
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 38
-    const/4 v2, 0x3
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 39
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
 
-    .line 40
-    .line 41
-    :catch_2
-    :try_start_3
-    sget-object v0, Lj$/time/g;->a:[I
+    .line 19
+    new-instance p1, Lj$/time/DateTimeException;
 
-    .line 42
-    .line 43
-    sget-object v1, Lj$/time/temporal/a;->SECONDS:Lj$/time/temporal/a;
+    .line 20
+    .line 21
+    invoke-direct {p1, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
-    .line 44
-    .line 45
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 22
+    .line 23
+    .line 24
+    throw p1
+.end method
 
-    .line 46
-    .line 47
-    .line 48
-    move-result v1
+.method public static synthetic g(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 2
 
-    .line 49
-    const/4 v2, 0x4
+    .line 1
+    new-instance v0, Lj$/time/DateTimeException;
 
-    .line 50
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    .line 2
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    .line 51
-    .line 52
-    :catch_3
-    :try_start_4
-    sget-object v0, Lj$/time/g;->a:[I
+    .line 4
+    .line 5
+    invoke-direct {v1, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 53
-    .line 54
-    sget-object v1, Lj$/time/temporal/a;->MINUTES:Lj$/time/temporal/a;
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 55
-    .line 56
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 57
-    .line 58
-    .line 59
-    move-result v1
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
 
-    .line 60
-    const/4 v2, 0x5
+    .line 15
+    invoke-direct {v0, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
-    .line 61
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 62
-    .line 63
-    :catch_4
-    :try_start_5
-    sget-object v0, Lj$/time/g;->a:[I
-
-    .line 64
-    .line 65
-    sget-object v1, Lj$/time/temporal/a;->HOURS:Lj$/time/temporal/a;
-
-    .line 66
-    .line 67
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 68
-    .line 69
-    .line 70
-    move-result v1
-
-    .line 71
-    const/4 v2, 0x6
-
-    .line 72
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 73
-    .line 74
-    :catch_5
-    :try_start_6
-    sget-object v0, Lj$/time/g;->a:[I
-
-    .line 75
-    .line 76
-    sget-object v1, Lj$/time/temporal/a;->HALF_DAYS:Lj$/time/temporal/a;
-
-    .line 77
-    .line 78
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 79
-    .line 80
-    .line 81
-    move-result v1
-
-    .line 82
-    const/4 v2, 0x7
-
-    .line 83
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    .line 84
-    .line 85
-    :catch_6
-    return-void
+    .line 16
+    .line 17
+    .line 18
+    throw v0
 .end method

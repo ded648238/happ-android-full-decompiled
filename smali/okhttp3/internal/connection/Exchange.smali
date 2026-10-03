@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/Exchange;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -30,7 +30,7 @@
         "(Lokhttp3/internal/connection/RealCall;Lokhttp3/EventListener;Lokhttp3/internal/connection/ExchangeFinder;Lokhttp3/internal/http/ExchangeCodec;)V",
         "Ljava/io/IOException;",
         "e",
-        "Lbh7;",
+        "Lr98;",
         "trackFailure",
         "(Ljava/io/IOException;)V",
         "Lokhttp3/Request;",
@@ -39,9 +39,9 @@
         "(Lokhttp3/Request;)V",
         "",
         "duplex",
-        "Lpb6;",
+        "Lqy6;",
         "createRequestBody",
-        "(Lokhttp3/Request;Z)Lpb6;",
+        "(Lokhttp3/Request;Z)Lqy6;",
         "flushRequest",
         "()V",
         "finishRequest",
@@ -191,7 +191,7 @@
 .end method
 
 .method private final trackFailure(Ljava/io/IOException;)V
-    .locals 2
+    .locals 1
 
     .line 1
     const/4 v0, 0x1
@@ -222,11 +222,11 @@
     move-result-object v0
 
     .line 15
-    iget-object v1, p0, Lokhttp3/internal/connection/Exchange;->call:Lokhttp3/internal/connection/RealCall;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->call:Lokhttp3/internal/connection/RealCall;
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1, p1}, Lokhttp3/internal/connection/RealConnection;->trackFailure$okhttp(Lokhttp3/internal/connection/RealCall;Ljava/io/IOException;)V
+    invoke-virtual {v0, p0, p1}, Lokhttp3/internal/connection/RealConnection;->trackFailure$okhttp(Lokhttp3/internal/connection/RealCall;Ljava/io/IOException;)V
 
     .line 18
     .line 19
@@ -338,21 +338,21 @@
     .line 43
     .line 44
     .line 45
-    move-result-object p1
+    move-result-object p0
 
     .line 46
-    return-object p1
+    return-object p0
 .end method
 
 .method public final cancel()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/Exchange;->codec:Lokhttp3/internal/http/ExchangeCodec;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->codec:Lokhttp3/internal/http/ExchangeCodec;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lokhttp3/internal/http/ExchangeCodec;->cancel()V
+    invoke-interface {p0}, Lokhttp3/internal/http/ExchangeCodec;->cancel()V
 
     .line 4
     .line 5
@@ -360,7 +360,7 @@
     return-void
 .end method
 
-.method public final createRequestBody(Lokhttp3/Request;Z)Lpb6;
+.method public final createRequestBody(Lokhttp3/Request;Z)Lqy6;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -416,7 +416,7 @@
 
     .line 25
     .line 26
-    invoke-interface {p2, p1, v0, v1}, Lokhttp3/internal/http/ExchangeCodec;->createRequestBody(Lokhttp3/Request;J)Lpb6;
+    invoke-interface {p2, p1, v0, v1}, Lokhttp3/internal/http/ExchangeCodec;->createRequestBody(Lokhttp3/Request;J)Lqy6;
 
     .line 27
     .line 28
@@ -428,7 +428,7 @@
 
     .line 31
     .line 32
-    invoke-direct {p2, p0, p1, v0, v1}, Lokhttp3/internal/connection/Exchange$RequestBodySink;-><init>(Lokhttp3/internal/connection/Exchange;Lpb6;J)V
+    invoke-direct {p2, p0, p1, v0, v1}, Lokhttp3/internal/connection/Exchange$RequestBodySink;-><init>(Lokhttp3/internal/connection/Exchange;Lqy6;J)V
 
     .line 33
     .line 34
@@ -566,62 +566,62 @@
 .end method
 
 .method public final getCall$okhttp()Lokhttp3/internal/connection/RealCall;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/Exchange;->call:Lokhttp3/internal/connection/RealCall;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->call:Lokhttp3/internal/connection/RealCall;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getConnection$okhttp()Lokhttp3/internal/connection/RealConnection;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/Exchange;->connection:Lokhttp3/internal/connection/RealConnection;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->connection:Lokhttp3/internal/connection/RealConnection;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getEventListener$okhttp()Lokhttp3/EventListener;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/Exchange;->eventListener:Lokhttp3/EventListener;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->eventListener:Lokhttp3/EventListener;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getFinder$okhttp()Lokhttp3/internal/connection/ExchangeFinder;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/Exchange;->finder:Lokhttp3/internal/connection/ExchangeFinder;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->finder:Lokhttp3/internal/connection/ExchangeFinder;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getHasFailure$okhttp()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/connection/Exchange;->hasFailure:Z
+    iget-boolean p0, p0, Lokhttp3/internal/connection/Exchange;->hasFailure:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final isCoalescedConnection$okhttp()Z
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/Exchange;->finder:Lokhttp3/internal/connection/ExchangeFinder;
@@ -652,66 +652,66 @@
     move-result-object v0
 
     .line 15
-    iget-object v1, p0, Lokhttp3/internal/connection/Exchange;->connection:Lokhttp3/internal/connection/RealConnection;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->connection:Lokhttp3/internal/connection/RealConnection;
 
     .line 16
     .line 17
-    invoke-virtual {v1}, Lokhttp3/internal/connection/RealConnection;->route()Lokhttp3/Route;
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealConnection;->route()Lokhttp3/Route;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v1
+    move-result-object p0
 
     .line 21
-    invoke-virtual {v1}, Lokhttp3/Route;->address()Lokhttp3/Address;
+    invoke-virtual {p0}, Lokhttp3/Route;->address()Lokhttp3/Address;
 
     .line 22
     .line 23
     .line 24
-    move-result-object v1
+    move-result-object p0
 
     .line 25
-    invoke-virtual {v1}, Lokhttp3/Address;->url()Lokhttp3/HttpUrl;
+    invoke-virtual {p0}, Lokhttp3/Address;->url()Lokhttp3/HttpUrl;
 
     .line 26
     .line 27
     .line 28
-    move-result-object v1
+    move-result-object p0
 
     .line 29
-    invoke-virtual {v1}, Lokhttp3/HttpUrl;->host()Ljava/lang/String;
+    invoke-virtual {p0}, Lokhttp3/HttpUrl;->host()Ljava/lang/String;
 
     .line 30
     .line 31
     .line 32
-    move-result-object v1
+    move-result-object p0
 
     .line 33
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 34
     .line 35
     .line 36
-    move-result v0
+    move-result p0
 
     .line 37
-    xor-int/lit8 v0, v0, 0x1
+    xor-int/lit8 p0, p0, 0x1
 
     .line 38
     .line 39
-    return v0
+    return p0
 .end method
 
 .method public final isDuplex$okhttp()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/connection/Exchange;->isDuplex:Z
+    iget-boolean p0, p0, Lokhttp3/internal/connection/Exchange;->isDuplex:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final newWebSocketStreams()Lokhttp3/internal/ws/RealWebSocket$Streams;
@@ -749,29 +749,29 @@
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    return-object v0
+    return-object p0
 .end method
 
 .method public final noNewExchangesOnConnection()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/Exchange;->codec:Lokhttp3/internal/http/ExchangeCodec;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->codec:Lokhttp3/internal/http/ExchangeCodec;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lokhttp3/internal/http/ExchangeCodec;->getConnection()Lokhttp3/internal/connection/RealConnection;
+    invoke-interface {p0}, Lokhttp3/internal/http/ExchangeCodec;->getConnection()Lokhttp3/internal/connection/RealConnection;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnection;->noNewExchanges$okhttp()V
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealConnection;->noNewExchanges$okhttp()V
 
     .line 8
     .line 9
@@ -853,7 +853,7 @@
 
     .line 19
     .line 20
-    invoke-interface {v3, p1}, Lokhttp3/internal/http/ExchangeCodec;->openResponseBodySource(Lokhttp3/Response;)Lle6;
+    invoke-interface {v3, p1}, Lokhttp3/internal/http/ExchangeCodec;->openResponseBodySource(Lokhttp3/Response;)Ld27;
 
     .line 21
     .line 22
@@ -865,7 +865,7 @@
 
     .line 25
     .line 26
-    invoke-direct {v3, p0, p1, v1, v2}, Lokhttp3/internal/connection/Exchange$ResponseBodySource;-><init>(Lokhttp3/internal/connection/Exchange;Lle6;J)V
+    invoke-direct {v3, p0, p1, v1, v2}, Lokhttp3/internal/connection/Exchange$ResponseBodySource;-><init>(Lokhttp3/internal/connection/Exchange;Ld27;J)V
 
     .line 27
     .line 28
@@ -874,16 +874,16 @@
 
     .line 30
     .line 31
-    new-instance v4, Lhc5;
+    new-instance v4, Liw5;
 
     .line 32
     .line 33
-    invoke-direct {v4, v3}, Lhc5;-><init>(Lle6;)V
+    invoke-direct {v4, v3}, Liw5;-><init>(Ld27;)V
 
     .line 34
     .line 35
     .line 36
-    invoke-direct {p1, v0, v1, v2, v4}, Lokhttp3/internal/http/RealResponseBody;-><init>(Ljava/lang/String;JLs50;)V
+    invoke-direct {p1, v0, v1, v2, v4}, Lokhttp3/internal/http/RealResponseBody;-><init>(Ljava/lang/String;JLf80;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -988,7 +988,7 @@
 .end method
 
 .method public final responseHeadersEnd(Lokhttp3/Response;)V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1000,11 +1000,11 @@
 
     .line 5
     .line 6
-    iget-object v1, p0, Lokhttp3/internal/connection/Exchange;->call:Lokhttp3/internal/connection/RealCall;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->call:Lokhttp3/internal/connection/RealCall;
 
     .line 7
     .line 8
-    invoke-virtual {v0, v1, p1}, Lokhttp3/EventListener;->responseHeadersEnd(Lokhttp3/Call;Lokhttp3/Response;)V
+    invoke-virtual {v0, p0, p1}, Lokhttp3/EventListener;->responseHeadersEnd(Lokhttp3/Call;Lokhttp3/Response;)V
 
     .line 9
     .line 10
@@ -1013,18 +1013,18 @@
 .end method
 
 .method public final responseHeadersStart()V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/Exchange;->eventListener:Lokhttp3/EventListener;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lokhttp3/internal/connection/Exchange;->call:Lokhttp3/internal/connection/RealCall;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->call:Lokhttp3/internal/connection/RealCall;
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, Lokhttp3/EventListener;->responseHeadersStart(Lokhttp3/Call;)V
+    invoke-virtual {v0, p0}, Lokhttp3/EventListener;->responseHeadersStart(Lokhttp3/Call;)V
 
     .line 6
     .line 7
@@ -1033,7 +1033,7 @@
 .end method
 
 .method public final trailers()Lokhttp3/Headers;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1041,19 +1041,19 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/Exchange;->codec:Lokhttp3/internal/http/ExchangeCodec;
+    iget-object p0, p0, Lokhttp3/internal/connection/Exchange;->codec:Lokhttp3/internal/http/ExchangeCodec;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lokhttp3/internal/http/ExchangeCodec;->trailers()Lokhttp3/Headers;
+    invoke-interface {p0}, Lokhttp3/internal/http/ExchangeCodec;->trailers()Lokhttp3/Headers;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final webSocketUpgradeFailed()V

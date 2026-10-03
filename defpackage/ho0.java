@@ -1,20 +1,28 @@
 package defpackage;
 
-import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
+import java.nio.charset.Charset;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class ho0 {
-    public static final /* synthetic */ AtomicIntegerFieldUpdater b = AtomicIntegerFieldUpdater.newUpdater(ho0.class, "_handled$volatile");
-    private volatile /* synthetic */ int _handled$volatile;
-    public final Throwable a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class ho0 {
+    public static final Charset a;
+    public static final Charset b;
+    public static final Charset c;
+    public static volatile Charset d;
+    public static volatile Charset e;
 
-    public ho0(Throwable th, boolean z) {
-        this.a = th;
-        this._handled$volatile = z ? 1 : 0;
-    }
-
-    public final String toString() {
-        return getClass().getSimpleName() + '[' + this.a + ']';
+    static {
+        Charset forName = Charset.forName("UTF-8");
+        forName.getClass();
+        a = forName;
+        Charset.forName("UTF-16").getClass();
+        Charset.forName("UTF-16BE").getClass();
+        Charset.forName("UTF-16LE").getClass();
+        Charset forName2 = Charset.forName("US-ASCII");
+        forName2.getClass();
+        b = forName2;
+        Charset forName3 = Charset.forName("ISO-8859-1");
+        forName3.getClass();
+        c = forName3;
     }
 }

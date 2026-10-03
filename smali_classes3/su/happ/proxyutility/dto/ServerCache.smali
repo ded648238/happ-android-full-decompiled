@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/ServerCache;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -11,7 +11,7 @@
     d2 = {
         "Lsu/happ/proxyutility/dto/ServerCache;",
         "",
-        "Lqd2;",
+        "Lsu/happ/proxyutility/domain/sub/GuId;",
         "guid",
         "Ljava/lang/String;",
         "d",
@@ -26,14 +26,14 @@
         "Lsu/happ/proxyutility/dto/ServerAffiliationInfo;",
         "b",
         "()Lsu/happ/proxyutility/dto/ServerAffiliationInfo;",
-        "f",
+        "setAffiliationInfo",
         "(Lsu/happ/proxyutility/dto/ServerAffiliationInfo;)V",
         "",
         "isSelected",
         "Z",
         "e",
         "()Z",
-        "g",
+        "f",
         "(Z)V",
         "app"
     }
@@ -95,7 +95,7 @@
     return-void
 .end method
 
-.method public static a(Lsu/happ/proxyutility/dto/ServerCache;Lsu/happ/proxyutility/dto/ServerConfig;Lsu/happ/proxyutility/dto/ServerAffiliationInfo;)Lsu/happ/proxyutility/dto/ServerCache;
+.method public static a(Lsu/happ/proxyutility/dto/ServerCache;Lsu/happ/proxyutility/dto/ServerConfig;Lsu/happ/proxyutility/dto/ServerAffiliationInfo;ZI)Lsu/happ/proxyutility/dto/ServerCache;
     .locals 2
 
     .line 1
@@ -103,76 +103,116 @@
 
     .line 2
     .line 3
-    iget-boolean v1, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
+    and-int/lit8 v1, p4, 0x2
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eqz v1, :cond_0
 
     .line 6
     .line 7
-    .line 8
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object p1, p0, Lsu/happ/proxyutility/dto/ServerCache;->config:Lsu/happ/proxyutility/dto/ServerConfig;
 
+    .line 8
     .line 9
+    :cond_0
+    and-int/lit8 v1, p4, 0x4
+
     .line 10
     .line 11
-    new-instance p0, Lsu/happ/proxyutility/dto/ServerCache;
+    if-eqz v1, :cond_1
 
     .line 12
     .line 13
-    invoke-direct {p0, v0, p1, p2, v1}, Lsu/happ/proxyutility/dto/ServerCache;-><init>(Ljava/lang/String;Lsu/happ/proxyutility/dto/ServerConfig;Lsu/happ/proxyutility/dto/ServerAffiliationInfo;Z)V
+    iget-object p2, p0, Lsu/happ/proxyutility/dto/ServerCache;->affiliationInfo:Lsu/happ/proxyutility/dto/ServerAffiliationInfo;
 
     .line 14
     .line 15
+    :cond_1
+    and-int/lit8 p4, p4, 0x8
+
     .line 16
+    .line 17
+    if-eqz p4, :cond_2
+
+    .line 18
+    .line 19
+    iget-boolean p3, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
+
+    .line 20
+    .line 21
+    :cond_2
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 28
+    .line 29
+    .line 30
+    new-instance p0, Lsu/happ/proxyutility/dto/ServerCache;
+
+    .line 31
+    .line 32
+    invoke-direct {p0, v0, p1, p2, p3}, Lsu/happ/proxyutility/dto/ServerCache;-><init>(Ljava/lang/String;Lsu/happ/proxyutility/dto/ServerConfig;Lsu/happ/proxyutility/dto/ServerAffiliationInfo;Z)V
+
+    .line 33
+    .line 34
+    .line 35
     return-object p0
 .end method
 
 
 # virtual methods
 .method public final b()Lsu/happ/proxyutility/dto/ServerAffiliationInfo;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/ServerCache;->affiliationInfo:Lsu/happ/proxyutility/dto/ServerAffiliationInfo;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/ServerCache;->affiliationInfo:Lsu/happ/proxyutility/dto/ServerAffiliationInfo;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final c()Lsu/happ/proxyutility/dto/ServerConfig;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/ServerCache;->config:Lsu/happ/proxyutility/dto/ServerConfig;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/ServerCache;->config:Lsu/happ/proxyutility/dto/ServerConfig;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final d()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/ServerCache;->guid:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/ServerCache;->guid:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final e()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -217,7 +257,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -241,7 +281,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -265,7 +305,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -281,7 +321,7 @@
 
     .line 46
     :cond_4
-    iget-boolean v1, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
 
     .line 47
     .line 48
@@ -289,7 +329,7 @@
 
     .line 49
     .line 50
-    if-eq v1, p1, :cond_5
+    if-eq p0, p1, :cond_5
 
     .line 51
     .line 52
@@ -300,25 +340,17 @@
     return v0
 .end method
 
-.method public final f(Lsu/happ/proxyutility/dto/ServerAffiliationInfo;)V
-    .locals 0
+.method public final f()V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/ServerCache;->affiliationInfo:Lsu/happ/proxyutility/dto/ServerAffiliationInfo;
+    const/4 v0, 0x1
 
     .line 2
+    iput-boolean v0, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
+
     .line 3
-    return-void
-.end method
-
-.method public final g(Z)V
-    .locals 0
-
-    .line 1
-    iput-boolean p1, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
-
-    .line 2
-    .line 3
+    .line 4
     return-void
 .end method
 
@@ -392,35 +424,26 @@
 
     .line 30
     .line 31
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
 
     .line 32
     .line 33
-    if-eqz v0, :cond_1
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 34
     .line 35
-    const/16 v0, 0x4cf
-
     .line 36
+    move-result p0
+
     .line 37
-    goto :goto_1
+    add-int/2addr p0, v1
 
     .line 38
-    :cond_1
-    const/16 v0, 0x4d5
-
-    .line 39
-    .line 40
-    :goto_1
-    add-int/2addr v1, v0
-
-    .line 41
-    return v1
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 6
+    .locals 5
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/dto/ServerCache;->guid:Ljava/lang/String;
@@ -435,24 +458,24 @@
 
     .line 6
     .line 7
-    iget-boolean v3, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/ServerCache;->isSelected:Z
 
     .line 8
     .line 9
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 10
     .line 11
-    const-string v5, "ServerCache(guid="
+    const-string v4, "ServerCache(guid="
 
     .line 12
     .line 13
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 17
     .line 18
@@ -461,12 +484,12 @@
 
     .line 20
     .line 21
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 25
     .line 26
@@ -475,12 +498,12 @@
 
     .line 28
     .line 29
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 30
     .line 31
     .line 32
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 33
     .line 34
@@ -489,32 +512,32 @@
 
     .line 36
     .line 37
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 41
     .line 42
     .line 43
-    const-string v0, ")"
+    const-string p0, ")"
 
     .line 44
     .line 45
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 46
     .line 47
     .line 48
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 49
     .line 50
     .line 51
-    move-result-object v0
+    move-result-object p0
 
     .line 52
-    return-object v0
+    return-object p0
 .end method

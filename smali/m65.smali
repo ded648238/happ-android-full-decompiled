@@ -1,195 +1,294 @@
-.class public final synthetic Lm65;
+.class public final Lm65;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lu72;
+.implements Landroid/os/Parcelable;
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lm65;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # instance fields
-.field public final synthetic Q:I
-
-.field public final synthetic R:J
-
-.field public final synthetic S:Lk27;
-
-.field public final synthetic T:Lu72;
-
-.field public final synthetic U:I
+.field public final X:Lqe2;
 
 
 # direct methods
-.method public synthetic constructor <init>(JLk27;Lu72;II)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iput p6, p0, Lm65;->Q:I
+    new-instance v0, Lj65;
 
     .line 2
     .line 3
-    iput-wide p1, p0, Lm65;->R:J
+    const/4 v1, 0x3
 
     .line 4
-    .line 5
-    iput-object p3, p0, Lm65;->S:Lk27;
+    invoke-direct {v0, v1}, Lj65;-><init>(I)V
 
+    .line 5
     .line 6
     .line 7
-    iput-object p4, p0, Lm65;->T:Lu72;
+    sput-object v0, Lm65;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 8
     .line 9
-    iput p5, p0, Lm65;->U:I
+    return-void
+.end method
 
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .locals 3
+
+    .line 1
+    new-instance v0, Lqe2;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    invoke-static {p1}, Lx3;->z(Landroid/os/Parcel;)Landroid/os/Parcelable;
+
+    .line 8
+    .line 9
     .line 10
+    move-result-object v2
+
     .line 11
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    check-cast v2, Landroid/app/Notification;
 
     .line 12
     .line 13
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
     .line 14
+    .line 15
+    .line 16
+    move-result p1
+
+    .line 17
+    invoke-direct {v0, v1, v2, p1}, Lqe2;-><init>(ILandroid/app/Notification;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    iput-object v0, p0, Lm65;->X:Lqe2;
+
+    .line 24
+    .line 25
+    return-void
+.end method
+
+.method public constructor <init>(Lqe2;)V
+    .locals 0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 26
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lm65;->X:Lqe2;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 16
+.method public final describeContents()I
+    .locals 0
 
     .line 1
-    move-object/from16 v0, p0
+    const/4 p0, 0x0
 
     .line 2
-    .line 3
-    iget v1, v0, Lm65;->Q:I
+    return p0
+.end method
 
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    sget-object v2, Lbh7;->a:Lbh7;
+    :cond_0
+    instance-of v1, p1, Lm65;
 
     .line 6
     .line 7
-    iget v3, v0, Lm65;->U:I
+    const/4 v2, 0x0
 
     .line 8
-    .line 9
-    packed-switch v1, :pswitch_data_0
+    if-nez v1, :cond_1
 
+    .line 9
     .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lm65;
+
+    .line 12
+    .line 13
+    iget-object p0, p0, Lm65;->X:Lqe2;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, Lm65;->X:Lqe2;
+
+    .line 16
+    .line 17
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    if-nez p0, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lm65;->X:Lqe2;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lqe2;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "ParcelableForegroundInfo(foregroundInfo="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object p0, p0, Lm65;->X:Lqe2;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 11
     .line 12
-    move-object/from16 v8, p1
-
     .line 13
+    const/16 p0, 0x29
+
     .line 14
-    check-cast v8, Luq0;
-
     .line 15
-    .line 16
-    move-object/from16 v1, p2
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    .line 16
     .line 17
     .line 18
-    check-cast v1, Ljava/lang/Integer;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 19
     .line 20
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 21
+    move-result-object p0
+
     .line 22
-    .line 23
-    or-int/lit8 v1, v3, 0x1
+    return-object p0
+.end method
 
-    .line 24
-    .line 25
-    invoke-static {v1}, Luy7;->X(I)I
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 1
 
-    .line 26
-    .line 27
-    .line 28
-    move-result v9
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 29
-    iget-wide v4, v0, Lm65;->R:J
+    .line 2
+    .line 3
+    .line 4
+    iget-object p0, p0, Lm65;->X:Lqe2;
 
-    .line 30
-    .line 31
-    iget-object v6, v0, Lm65;->S:Lk27;
+    .line 5
+    .line 6
+    iget v0, p0, Lqe2;->a:I
 
-    .line 32
-    .line 33
-    iget-object v7, v0, Lm65;->T:Lu72;
+    .line 7
+    .line 8
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 34
-    .line 35
-    invoke-static/range {v4 .. v9}, Lhp4;->d(JLk27;Lu72;Luq0;I)V
+    .line 9
+    .line 10
+    .line 11
+    iget-object v0, p0, Lqe2;->c:Landroid/app/Notification;
 
-    .line 36
-    .line 37
-    .line 38
-    return-object v2
+    .line 12
+    .line 13
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 39
-    :pswitch_0
-    move-object/from16 v14, p1
+    .line 14
+    .line 15
+    .line 16
+    iget p0, p0, Lqe2;->b:I
 
-    .line 40
-    .line 41
-    check-cast v14, Luq0;
+    .line 17
+    .line 18
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 42
-    .line 43
-    move-object/from16 v1, p2
-
-    .line 44
-    .line 45
-    check-cast v1, Ljava/lang/Integer;
-
-    .line 46
-    .line 47
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    .line 48
-    .line 49
-    .line 50
-    or-int/lit8 v1, v3, 0x1
-
-    .line 51
-    .line 52
-    invoke-static {v1}, Luy7;->X(I)I
-
-    .line 53
-    .line 54
-    .line 55
-    move-result v15
-
-    .line 56
-    iget-wide v10, v0, Lm65;->R:J
-
-    .line 57
-    .line 58
-    iget-object v12, v0, Lm65;->S:Lk27;
-
-    .line 59
-    .line 60
-    iget-object v13, v0, Lm65;->T:Lu72;
-
-    .line 61
-    .line 62
-    invoke-static/range {v10 .. v15}, Lf93;->c(JLk27;Lu72;Luq0;I)V
-
-    .line 63
-    .line 64
-    .line 65
-    return-object v2
-
-    .line 66
-    nop
-
-    .line 67
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 19
+    .line 20
+    .line 21
+    return-void
 .end method

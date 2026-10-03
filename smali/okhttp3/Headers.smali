@@ -1,10 +1,10 @@
 .class public final Lokhttp3/Headers;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Iterable;
-.implements Lr73;
+.implements Lxn3;
 
 
 # annotations
@@ -19,9 +19,9 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/lang/Iterable<",
-        "Ltn4;",
+        "Lw55;",
         ">;",
-        "Lr73;"
+        "Lxn3;"
     }
 .end annotation
 
@@ -32,7 +32,7 @@
     d2 = {
         "Lokhttp3/Headers;",
         "",
-        "Ltn4;",
+        "Lw55;",
         "",
         "",
         "namesAndValues",
@@ -115,7 +115,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/Headers$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/Headers$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -143,7 +143,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>([Ljava/lang/String;Lj31;)V
+.method public synthetic constructor <init>([Ljava/lang/String;Lib1;)V
     .locals 0
 
     .line 7
@@ -197,8 +197,8 @@
 
 # virtual methods
 .method public final -deprecated_size()I
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -207,10 +207,10 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public final byteCount()J
@@ -287,7 +287,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     .line 6
     .line 7
@@ -299,33 +299,33 @@
 
     .line 10
     .line 11
-    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result p0
 
     .line 15
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 16
     .line 17
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 18
-    return p1
+    return p0
 
     .line 19
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 20
-    return p1
+    return p0
 .end method
 
 .method public final get(Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -337,19 +337,19 @@
 
     .line 5
     .line 6
-    iget-object v1, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lokhttp3/Headers$Companion;->access$get(Lokhttp3/Headers$Companion;[Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0, p1}, Lokhttp3/Headers$Companion;->access$get(Lokhttp3/Headers$Companion;[Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 9
     .line 10
     .line 11
-    move-result-object p1
+    move-result-object p0
 
     .line 12
-    return-object p1
+    return-object p0
 .end method
 
 .method public final getDate(Ljava/lang/String;)Ljava/util/Date;
@@ -366,29 +366,29 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p1
+    move-result-object p0
 
     .line 8
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 9
     .line 10
-    invoke-static {p1}, Lokhttp3/internal/http/DatesKt;->toHttpDateOrNull(Ljava/lang/String;)Ljava/util/Date;
+    invoke-static {p0}, Lokhttp3/internal/http/DatesKt;->toHttpDateOrNull(Ljava/lang/String;)Ljava/util/Date;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    move-result-object p0
 
     .line 14
-    return-object p1
+    return-object p0
 
     .line 15
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return-object p1
+    return-object p0
 .end method
 
 .method public final getInstant(Ljava/lang/String;)Lj$/time/Instant;
@@ -405,48 +405,48 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p1
+    move-result-object p0
 
     .line 8
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 9
     .line 10
-    invoke-static {p1}, Lj$/util/DateRetargetClass;->toInstant(Ljava/util/Date;)Lj$/time/Instant;
+    invoke-static {p0}, Lj$/util/DateRetargetClass;->toInstant(Ljava/util/Date;)Lj$/time/Instant;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    move-result-object p0
 
     .line 14
-    return-object p1
+    return-object p0
 
     .line 15
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return-object p1
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public iterator()Ljava/util/Iterator;
@@ -455,7 +455,7 @@
         value = {
             "()",
             "Ljava/util/Iterator<",
-            "Ltn4;",
+            "Lw55;",
             ">;"
         }
     .end annotation
@@ -469,7 +469,7 @@
     move-result v0
 
     .line 5
-    new-array v1, v0, [Ltn4;
+    new-array v1, v0, [Lw55;
 
     .line 6
     .line 7
@@ -497,11 +497,11 @@
     move-result-object v4
 
     .line 18
-    new-instance v5, Ltn4;
+    new-instance v5, Lw55;
 
     .line 19
     .line 20
-    invoke-direct {v5, v3, v4}, Ltn4;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v5, v3, v4}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 21
     .line 22
@@ -518,23 +518,23 @@
 
     .line 28
     :cond_0
-    new-instance v0, Lp1;
+    new-instance p0, Lt1;
 
     .line 29
     .line 30
-    invoke-direct {v0, v1}, Lp1;-><init>([Ljava/lang/Object;)V
+    invoke-direct {p0, v1}, Lt1;-><init>([Ljava/lang/Object;)V
 
     .line 31
     .line 32
     .line 33
-    return-object v0
+    return-object p0
 .end method
 
 .method public final name(I)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     .line 2
     .line 3
@@ -542,11 +542,11 @@
 
     .line 4
     .line 5
-    aget-object p1, v0, p1
+    aget-object p0, p0, p1
 
     .line 6
     .line 7
-    return-object p1
+    return-object p0
 .end method
 
 .method public final names()Ljava/util/Set;
@@ -616,24 +616,24 @@
 
     .line 28
     :cond_0
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
     .line 29
     .line 30
     .line 31
-    move-result-object v0
+    move-result-object p0
 
     .line 32
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 33
     .line 34
     .line 35
-    return-object v0
+    return-object p0
 .end method
 
 .method public final newBuilder()Lokhttp3/Headers$Builder;
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Lokhttp3/Headers$Builder;
@@ -653,11 +653,11 @@
     move-result-object v1
 
     .line 10
-    iget-object v2, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     .line 11
     .line 12
-    invoke-static {v1, v2}, Lsm0;->j0(Ljava/util/List;[Ljava/lang/Object;)V
+    invoke-static {v1, p0}, Lyt0;->K0(Ljava/util/List;[Ljava/lang/Object;)V
 
     .line 13
     .line 14
@@ -666,21 +666,21 @@
 .end method
 
 .method public final size()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     .line 2
     .line 3
-    array-length v0, v0
+    array-length p0, p0
 
     .line 4
-    div-int/lit8 v0, v0, 0x2
+    div-int/lit8 p0, p0, 0x2
 
     .line 5
     .line 6
-    return v0
+    return p0
 .end method
 
 .method public final toMultimap()Ljava/util/Map;
@@ -922,17 +922,17 @@
     .line 49
     .line 50
     .line 51
-    move-result-object v0
+    move-result-object p0
 
     .line 52
-    return-object v0
+    return-object p0
 .end method
 
 .method public final value(I)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Headers;->namesAndValues:[Ljava/lang/String;
 
     .line 2
     .line 3
@@ -944,11 +944,11 @@
 
     .line 6
     .line 7
-    aget-object p1, v0, p1
+    aget-object p0, p0, p1
 
     .line 8
     .line 9
-    return-object p1
+    return-object p0
 .end method
 
 .method public final values(Ljava/lang/String;)Ljava/util/List;
@@ -1052,26 +1052,26 @@
 
     .line 41
     .line 42
-    invoke-static {v1}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 43
     .line 44
     .line 45
-    move-result-object p1
+    move-result-object p0
 
     .line 46
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 47
     .line 48
     .line 49
-    return-object p1
+    return-object p0
 
     .line 50
     :cond_3
-    sget-object p1, Lwn1;->Q:Lwn1;
+    sget-object p0, Lfw1;->X:Lfw1;
 
     .line 51
     .line 52
-    return-object p1
+    return-object p0
 .end method

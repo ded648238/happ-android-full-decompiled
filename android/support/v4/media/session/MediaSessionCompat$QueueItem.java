@@ -3,18 +3,19 @@ package android.support.v4.media.session;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.support.v4.media.MediaDescriptionCompat;
-import defpackage.u;
+import defpackage.c73;
+import defpackage.zv8;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class MediaSessionCompat$QueueItem implements Parcelable {
-    public static final Parcelable.Creator<MediaSessionCompat$QueueItem> CREATOR = new u(24);
-    public final MediaDescriptionCompat Q;
-    public final long R;
+    public static final Parcelable.Creator<MediaSessionCompat$QueueItem> CREATOR = new zv8(25);
+    public final MediaDescriptionCompat X;
+    public final long Y;
 
     public MediaSessionCompat$QueueItem(Parcel parcel) {
-        this.Q = MediaDescriptionCompat.CREATOR.createFromParcel(parcel);
-        this.R = parcel.readLong();
+        this.X = MediaDescriptionCompat.CREATOR.createFromParcel(parcel);
+        this.Y = parcel.readLong();
     }
 
     @Override // android.os.Parcelable
@@ -23,12 +24,15 @@ public final class MediaSessionCompat$QueueItem implements Parcelable {
     }
 
     public final String toString() {
-        return "MediaSession.QueueItem {Description=" + this.Q + ", Id=" + this.R + " }";
+        StringBuilder sb = new StringBuilder("MediaSession.QueueItem {Description=");
+        sb.append(this.X);
+        sb.append(", Id=");
+        return c73.f(this.Y, " }", sb);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        this.Q.writeToParcel(parcel, i);
-        parcel.writeLong(this.R);
+        this.X.writeToParcel(parcel, i);
+        parcel.writeLong(this.Y);
     }
 }

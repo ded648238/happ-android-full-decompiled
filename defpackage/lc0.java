@@ -1,6 +1,22 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class lc0 {
+import java.lang.reflect.Method;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class lc0 extends gc0 implements d60 {
+    public final Object f;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public lc0(Method method, Object obj) {
+        super(method, false, 4);
+        method.getClass();
+        this.f = obj;
+    }
+
+    @Override // defpackage.gc0, defpackage.yb0
+    public final Object d(Object[] objArr) {
+        e(objArr.length);
+        return h(this.f, objArr);
+    }
 }

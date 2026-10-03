@@ -1,20 +1,26 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class vb7 {
-    public static final /* synthetic */ int[] a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class vb7 implements yb7 {
+    public final String a;
 
-    static {
-        int[] iArr = new int[gf4.values().length];
-        try {
-            iArr[1] = 1;
-        } catch (NoSuchFieldError unused) {
+    public /* synthetic */ vb7(String str) {
+        this.a = str;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof vb7) {
+            return m93.h(this.a, ((vb7) obj).a);
         }
-        try {
-            iArr[2] = 2;
-        } catch (NoSuchFieldError unused2) {
-        }
-        a = iArr;
+        return false;
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode();
+    }
+
+    public final String toString() {
+        return c73.j("RouteProfileDetails(id=", this.a, ")");
     }
 }

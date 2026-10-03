@@ -1,69 +1,34 @@
 package defpackage;
 
-import android.R;
-import android.content.Context;
-import android.content.res.ColorStateList;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.RippleDrawable;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
-import com.google.android.material.textfield.MaterialAutoCompleteTextView;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class ez3 implements ji2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ fz3 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ez3 extends ArrayAdapter {
-    public ColorStateList Q;
-    public ColorStateList R;
-    public final /* synthetic */ MaterialAutoCompleteTextView S;
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ez3(MaterialAutoCompleteTextView materialAutoCompleteTextView, Context context, int i, String[] strArr) {
-        super(context, i, strArr);
-        this.S = materialAutoCompleteTextView;
-        a();
+    public /* synthetic */ ez3(fz3 fz3Var, int i) {
+        this.X = i;
+        this.Y = fz3Var;
     }
 
-    public final void a() {
-        ColorStateList colorStateList;
-        MaterialAutoCompleteTextView materialAutoCompleteTextView = this.S;
-        ColorStateList colorStateList2 = materialAutoCompleteTextView.e0;
-        ColorStateList colorStateList3 = null;
-        if (colorStateList2 != null) {
-            int[] iArr = {R.attr.state_pressed};
-            colorStateList = new ColorStateList(new int[][]{iArr, new int[0]}, new int[]{colorStateList2.getColorForState(iArr, 0), 0});
-        } else {
-            colorStateList = null;
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        int i = this.X;
+        fz3 fz3Var = this.Y;
+        switch (i) {
+            case 0:
+                qz3 qz3Var = fz3Var.o0.b;
+                return Float.valueOf((((u65) qz3Var.d0.b).k() * 500) + ((u65) qz3Var.d0.c).k());
+            case 1:
+                qz3 qz3Var2 = fz3Var.o0.b;
+                int k = ((u65) qz3Var2.d0.b).k();
+                int k2 = ((u65) qz3Var2.d0.c).k();
+                return Float.valueOf(qz3Var2.j() ? (k * 500) + k2 + 100.0f : (k * 500) + k2);
+            default:
+                qz3 qz3Var3 = fz3Var.o0.b;
+                int i2 = (int) (qz3Var3.d().o == y25.X ? qz3Var3.d().i() & 4294967295L : qz3Var3.d().i() >> 32);
+                qz3 qz3Var4 = fz3Var.o0.b;
+                return Float.valueOf(i2 - ((-qz3Var4.d().l) + qz3Var4.d().p));
         }
-        this.R = colorStateList;
-        if (materialAutoCompleteTextView.d0 != 0 && materialAutoCompleteTextView.e0 != null) {
-            int[] iArr2 = {R.attr.state_hovered, -16842919};
-            int[] iArr3 = {R.attr.state_selected, -16842919};
-            colorStateList3 = new ColorStateList(new int[][]{iArr3, iArr2, new int[0]}, new int[]{in0.b(materialAutoCompleteTextView.e0.getColorForState(iArr3, 0), materialAutoCompleteTextView.d0), in0.b(materialAutoCompleteTextView.e0.getColorForState(iArr2, 0), materialAutoCompleteTextView.d0), materialAutoCompleteTextView.d0});
-        }
-        this.Q = colorStateList3;
-    }
-
-    @Override // android.widget.ArrayAdapter, android.widget.Adapter
-    public final View getView(int i, View view, ViewGroup viewGroup) {
-        View view2 = super.getView(i, view, viewGroup);
-        if (view2 instanceof TextView) {
-            TextView textView = (TextView) view2;
-            MaterialAutoCompleteTextView materialAutoCompleteTextView = this.S;
-            Drawable rippleDrawable = null;
-            if (materialAutoCompleteTextView.getText().toString().contentEquals(textView.getText()) && materialAutoCompleteTextView.d0 != 0) {
-                ColorDrawable colorDrawable = new ColorDrawable(materialAutoCompleteTextView.d0);
-                if (this.R != null) {
-                    colorDrawable.setTintList(this.Q);
-                    rippleDrawable = new RippleDrawable(this.R, colorDrawable, null);
-                } else {
-                    rippleDrawable = colorDrawable;
-                }
-            }
-            textView.setBackground(rippleDrawable);
-        }
-        return view2;
     }
 }

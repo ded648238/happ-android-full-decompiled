@@ -1,434 +1,93 @@
 .class public final Ll30;
-.super Lh97;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final b:Lzo8;
+
+.field public static volatile c:Ll30;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
+.field public final a:Ljava/util/List;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;I)V
-    .locals 0
-
-    .line 1
-    iput p2, p0, Ll30;->a:I
-
-    .line 2
-    .line 3
-    iput-object p1, p0, Ll30;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-
-    .line 4
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Landroid/view/View;I)I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Ll30;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object p1, p0, Ll30;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-
-    .line 7
-    .line 8
-    check-cast p1, Lcom/google/android/material/sidesheet/SideSheetBehavior;
-
-    .line 9
-    .line 10
-    iget-object v0, p1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
-
-    .line 11
-    .line 12
-    invoke-virtual {v0}, Lyc4;->R()I
-
-    .line 13
-    .line 14
-    .line 15
-    move-result v0
-
-    .line 16
-    iget-object p1, p1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
-
-    .line 17
-    .line 18
-    invoke-virtual {p1}, Lyc4;->Q()I
-
-    .line 19
-    .line 20
-    .line 21
-    move-result p1
-
-    .line 22
-    invoke-static {p2, v0, p1}, Lub;->r(III)I
-
-    .line 23
-    .line 24
-    .line 25
-    move-result p1
-
-    .line 26
-    return p1
-
-    .line 27
-    :pswitch_0
-    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
-
-    .line 28
-    .line 29
-    .line 30
-    move-result p1
-
-    .line 31
-    return p1
-
-    .line 32
-    nop
-
-    .line 33
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final b(Landroid/view/View;I)I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Ll30;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p1}, Landroid/view/View;->getTop()I
-
-    .line 7
-    .line 8
-    .line 9
-    move-result p1
-
-    .line 10
-    return p1
-
-    .line 11
-    :pswitch_0
-    iget-object p1, p0, Ll30;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-
-    .line 12
-    .line 13
-    check-cast p1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
-
-    .line 14
-    .line 15
-    invoke-virtual {p1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->D()I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
-    invoke-virtual {p0}, Ll30;->e()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    invoke-static {p2, p1, v0}, Lub;->r(III)I
-
-    .line 24
-    .line 25
-    .line 26
-    move-result p1
-
-    .line 27
-    return p1
-
-    .line 28
-    nop
-
-    .line 29
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public d(Landroid/view/View;)I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Ll30;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-super {p0, p1}, Lh97;->d(Landroid/view/View;)I
-
-    .line 7
-    .line 8
-    .line 9
-    move-result p1
-
-    .line 10
-    return p1
-
-    .line 11
-    :pswitch_0
-    iget-object p1, p0, Ll30;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-
-    .line 12
-    .line 13
-    check-cast p1, Lcom/google/android/material/sidesheet/SideSheetBehavior;
-
-    .line 14
-    .line 15
-    iget v0, p1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->l:I
-
-    .line 16
-    .line 17
-    iget p1, p1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->o:I
-
-    .line 18
-    .line 19
-    add-int/2addr v0, p1
-
-    .line 20
-    return v0
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public e()I
+.method static constructor <clinit>()V
     .locals 2
 
     .line 1
-    iget v0, p0, Ll30;->a:I
+    new-instance v0, Lzo8;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/16 v1, 0x8
 
     .line 4
     .line 5
-    .line 6
-    invoke-super {p0}, Lh97;->e()I
+    invoke-direct {v0, v1}, Lzo8;-><init>(I)V
 
+    .line 6
     .line 7
     .line 8
+    sput-object v0, Ll30;->b:Lzo8;
+
     .line 9
-    move-result v0
-
     .line 10
-    return v0
-
-    .line 11
-    :pswitch_0
-    iget-object v0, p0, Ll30;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-
-    .line 12
-    .line 13
-    check-cast v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
-
-    .line 14
-    .line 15
-    sget v1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->j0:I
-
-    .line 16
-    .line 17
-    iget-boolean v1, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->I:Z
-
-    .line 18
-    .line 19
-    if-eqz v1, :cond_0
-
-    .line 20
-    .line 21
-    iget v0, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->V:I
-
-    .line 22
-    .line 23
-    goto :goto_0
-
-    .line 24
-    :cond_0
-    iget v0, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->G:I
-
-    .line 25
-    .line 26
-    :goto_0
-    return v0
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method
 
-.method public final j(I)V
-    .locals 3
+.method public constructor <init>()V
+    .locals 8
 
     .line 1
-    iget v0, p0, Ll30;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iget-object v1, p0, Ll30;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-
     .line 4
-    .line 5
-    const/4 v2, 0x1
+    const-string v6, "com.miui.powerkeeper"
 
+    .line 5
     .line 6
-    packed-switch v0, :pswitch_data_0
+    const-string v7, "com.zte.heartyservice"
 
     .line 7
     .line 8
-    .line 9
-    if-ne p1, v2, :cond_0
-
-    .line 10
-    .line 11
-    check-cast v1, Lcom/google/android/material/sidesheet/SideSheetBehavior;
-
-    .line 12
-    .line 13
-    iget-boolean p1, v1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->g:Z
-
-    .line 14
-    .line 15
-    if-eqz p1, :cond_0
-
-    .line 16
-    .line 17
-    invoke-virtual {v1, v2}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->w(I)V
-
-    .line 18
-    .line 19
-    .line 20
-    :cond_0
-    return-void
-
-    .line 21
-    :pswitch_0
-    if-ne p1, v2, :cond_1
-
-    .line 22
-    .line 23
-    check-cast v1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
-
-    .line 24
-    .line 25
-    iget-boolean p1, v1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->K:Z
-
-    .line 26
-    .line 27
-    if-eqz p1, :cond_1
-
-    .line 28
-    .line 29
-    invoke-virtual {v1, v2}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->K(I)V
-
-    .line 30
-    .line 31
-    .line 32
-    :cond_1
-    return-void
-
-    .line 33
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final k(Landroid/view/View;II)V
-    .locals 4
-
-    .line 1
-    iget v0, p0, Ll30;->a:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Ll30;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    check-cast v1, Lcom/google/android/material/sidesheet/SideSheetBehavior;
+    const-string v0, "com.htc.pitroad"
 
     .line 9
     .line 10
-    iget-object p3, v1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->q:Ljava/lang/ref/WeakReference;
+    const-string v1, "com.huawei.systemmanager"
 
     .line 11
     .line 12
-    if-eqz p3, :cond_0
+    const-string v2, "com.letv.android.letvsafe"
 
     .line 13
     .line 14
-    invoke-virtual {p3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    const-string v3, "com.meizu.safe"
 
     .line 15
     .line 16
-    .line 17
-    move-result-object p3
+    const-string v4, "com.coloros.oppoguardelf"
 
+    .line 17
     .line 18
-    check-cast p3, Landroid/view/View;
+    const-string v5, "com.samsung.android.lool"
 
     .line 19
     .line 20
-    goto :goto_0
+    filled-new-array/range {v0 .. v7}, [Ljava/lang/String;
 
     .line 21
-    :cond_0
-    const/4 p3, 0x0
-
     .line 22
-    :goto_0
-    if-eqz p3, :cond_1
-
     .line 23
+    move-result-object v0
+
     .line 24
-    invoke-virtual {p3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-static {v0}, Lut;->M([Ljava/lang/Object;)Ljava/util/List;
 
     .line 25
     .line 26
@@ -436,1029 +95,1714 @@
     move-result-object v0
 
     .line 28
-    check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
+    iput-object v0, p0, Ll30;->a:Ljava/util/List;
 
     .line 29
     .line 30
-    if-eqz v0, :cond_1
-
-    .line 31
-    .line 32
-    iget-object v2, v1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
-
-    .line 33
-    .line 34
-    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
-
-    .line 35
-    .line 36
-    .line 37
-    move-result v3
-
-    .line 38
-    invoke-virtual {p1}, Landroid/view/View;->getRight()I
-
-    .line 39
-    .line 40
-    .line 41
-    move-result p1
-
-    .line 42
-    invoke-virtual {v2, v0, v3, p1}, Lyc4;->X0(Landroid/view/ViewGroup$MarginLayoutParams;II)V
-
-    .line 43
-    .line 44
-    .line 45
-    invoke-virtual {p3, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 46
-    .line 47
-    .line 48
-    :cond_1
-    iget-object p1, v1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->v:Ljava/util/LinkedHashSet;
-
-    .line 49
-    .line 50
-    invoke-interface {p1}, Ljava/util/Set;->isEmpty()Z
-
-    .line 51
-    .line 52
-    .line 53
-    move-result p3
-
-    .line 54
-    if-nez p3, :cond_3
-
-    .line 55
-    .line 56
-    iget-object p3, v1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
-
-    .line 57
-    .line 58
-    invoke-virtual {p3, p2}, Lyc4;->w(I)F
-
-    .line 59
-    .line 60
-    .line 61
-    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object p1
-
-    .line 65
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 66
-    .line 67
-    .line 68
-    move-result p2
-
-    .line 69
-    if-nez p2, :cond_2
-
-    .line 70
-    .line 71
-    goto :goto_1
-
-    .line 72
-    :cond_2
-    invoke-static {p1}, Lxy4;->t(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
-
-    .line 73
-    .line 74
-    .line 75
-    move-result-object p1
-
-    .line 76
-    throw p1
-
-    .line 77
-    :cond_3
-    :goto_1
     return-void
-
-    .line 78
-    :pswitch_0
-    check-cast v1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
-
-    .line 79
-    .line 80
-    invoke-virtual {v1, p3}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->z(I)V
-
-    .line 81
-    .line 82
-    .line 83
-    return-void
-
-    .line 84
-    nop
-
-    .line 85
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method public final l(Landroid/view/View;FF)V
-    .locals 7
+.method public static a(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
+    .locals 1
 
     .line 1
-    iget v0, p0, Ll30;->a:I
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     .line 2
     .line 3
-    const/4 v1, 0x1
-
     .line 4
-    const/4 v2, 0x0
+    move-result v0
 
     .line 5
-    const/4 v3, 0x3
+    if-eqz v0, :cond_0
 
     .line 6
-    const/4 v4, 0x5
-
     .line 7
-    iget-object v5, p0, Ll30;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
+    goto :goto_0
 
     .line 8
-    .line 9
-    packed-switch v0, :pswitch_data_0
+    :cond_0
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
+    .line 9
     .line 10
     .line 11
+    move-result-object p1
+
     .line 12
-    check-cast v5, Lcom/google/android/material/sidesheet/SideSheetBehavior;
+    :cond_1
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 13
     .line 14
-    iget-object v0, v5, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
-
     .line 15
+    move-result v0
+
     .line 16
-    invoke-virtual {v0, p2}, Lyc4;->l0(F)Z
+    if-eqz v0, :cond_2
 
     .line 17
     .line 18
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    check-cast v0, Landroid/content/Intent;
+
+    .line 23
+    .line 24
+    invoke-static {p0, v0}, Lx3;->f(Lsu/happ/proxyutility/HappApplication;Landroid/content/Intent;)Ljava/util/List;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 29
+    .line 30
+    .line 31
     move-result v0
 
+    .line 32
+    if-nez v0, :cond_1
+
+    .line 33
+    .line 34
+    const/4 p0, 0x1
+
+    .line 35
+    return p0
+
+    .line 36
+    :cond_2
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 37
+    return p0
+.end method
+
+.method public static b(Ljava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroid/content/Intent;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v1, Landroid/content/ComponentName;
+
+    .line 7
+    .line 8
+    invoke-direct {v1, p0, p2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    .line 12
+    .line 13
+    .line 14
+    if-eqz p1, :cond_0
+
+    .line 15
+    .line 16
+    const/high16 p0, 0x10000000
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, p0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 19
     .line 20
-    if-eqz v0, :cond_0
+    .line 21
+    :cond_0
+    return-object v0
+.end method
+
+.method public static c(Ljava/lang/String;Z)Landroid/content/Intent;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/content/Intent;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0, p0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 7
+    .line 8
+    .line 9
+    if-eqz p1, :cond_0
+
+    .line 10
+    .line 11
+    const/high16 p0, 0x10000000
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, p0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 14
+    .line 15
+    .line 16
+    :cond_0
+    return-object v0
+.end method
+
+.method public static d(Lsu/happ/proxyutility/HappApplication;ZZ)Z
+    .locals 4
+
+    .line 1
+    :try_start_0
+    sget-object v0, Landroid/os/Build;->BRAND:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v1, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 16
+    .line 17
+    .line 18
+    const-string v1, "htc"
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 21
     .line 22
-    goto :goto_1
-
     .line 23
-    :cond_0
-    iget-object v0, v5, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
+    move-result v1
 
     .line 24
-    .line 25
-    invoke-virtual {v0, p1, p2}, Lyc4;->R0(Landroid/view/View;F)Z
+    if-eqz v1, :cond_0
 
+    .line 25
     .line 26
+    const-string v0, "com.htc.pitroad"
+
     .line 27
     .line 28
-    move-result v0
+    invoke-static {v0}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
 
     .line 29
-    if-eqz v0, :cond_1
-
     .line 30
     .line 31
-    iget-object v0, v5, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
+    move-result-object v1
 
     .line 32
-    .line 33
-    invoke-virtual {v0, p2, p3}, Lyc4;->A0(FF)Z
+    const-string v2, "com.htc.pitroad.landingpage.activity.LandingPageActivity"
 
+    .line 33
     .line 34
+    invoke-static {v0, p2, v2}, Ll30;->b(Ljava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
+
     .line 35
     .line 36
-    move-result p2
-
     .line 37
-    if-nez p2, :cond_3
+    move-result-object p2
 
     .line 38
-    .line 39
-    iget-object p2, v5, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
+    invoke-static {p2}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 39
     .line 40
     .line 41
-    invoke-virtual {p2, p1}, Lyc4;->w0(Landroid/view/View;)Z
+    move-result-object p2
 
     .line 42
+    invoke-static {p0, v1, p2, p1}, Ll30;->e(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;Ljava/util/List;Z)Z
+
     .line 43
     .line 44
-    move-result p2
-
     .line 45
-    if-eqz p2, :cond_4
+    move-result p0
 
     .line 46
+    return p0
+
     .line 47
-    goto :goto_0
+    :cond_0
+    const-string v1, "huawei"
 
     .line 48
-    :cond_1
-    cmpl-float v0, p2, v2
-
     .line 49
-    .line 50
-    if-eqz v0, :cond_2
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 50
     .line 51
     .line 52
-    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+    move-result v1
 
     .line 53
+    if-eqz v1, :cond_2
+
     .line 54
     .line 55
-    move-result p2
+    const-string v0, "huawei.intent.action.HSM_PROTECTED_APPS"
 
     .line 56
-    invoke-static {p3}, Ljava/lang/Math;->abs(F)F
-
     .line 57
+    invoke-static {v0, p2}, Ll30;->c(Ljava/lang/String;Z)Landroid/content/Intent;
+
     .line 58
     .line 59
-    move-result p3
-
     .line 60
-    cmpl-float p2, p2, p3
+    move-result-object p2
 
     .line 61
-    .line 62
-    if-lez p2, :cond_2
+    invoke-static {p2}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 62
     .line 63
     .line 64
-    goto :goto_0
+    move-result-object p2
 
     .line 65
-    :cond_2
-    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
+    if-eqz p1, :cond_1
 
     .line 66
     .line 67
+    invoke-static {p0, p2}, Ll30;->j(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
+
     .line 68
-    move-result p2
-
     .line 69
-    iget-object p3, v5, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
-
     .line 70
+    move-result p0
+
     .line 71
-    invoke-virtual {p3}, Lyc4;->O()I
+    return p0
 
     .line 72
+    :cond_1
+    invoke-static {p0, p2}, Ll30;->a(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
+
     .line 73
     .line 74
-    move-result p3
-
     .line 75
-    sub-int p3, p2, p3
+    move-result p0
 
     .line 76
+    return p0
+
     .line 77
-    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
+    :cond_2
+    const-string v1, "meizu"
 
     .line 78
     .line 79
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
     .line 80
-    move-result p3
-
     .line 81
-    iget-object v0, v5, Lcom/google/android/material/sidesheet/SideSheetBehavior;->a:Lyc4;
-
     .line 82
+    move-result v1
+
     .line 83
-    invoke-virtual {v0}, Lyc4;->P()I
+    const/4 v2, 0x1
 
     .line 84
+    if-eqz v1, :cond_5
+
     .line 85
     .line 86
-    move-result v0
+    const-string v0, "com.meizu.safe"
 
     .line 87
-    sub-int/2addr p2, v0
-
     .line 88
-    invoke-static {p2}, Ljava/lang/Math;->abs(I)I
+    invoke-static {v0}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
 
     .line 89
     .line 90
     .line 91
-    move-result p2
+    move-result-object v1
 
     .line 92
-    if-ge p3, p2, :cond_3
+    const-string v3, "com.meizu.safe.powerui.PowerAppPermissionActivity"
 
     .line 93
     .line 94
-    goto :goto_1
+    invoke-static {v0, p2, v3}, Ll30;->b(Ljava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
 
     .line 95
-    :cond_3
-    :goto_0
-    const/4 v3, 0x5
-
     .line 96
-    :cond_4
-    :goto_1
-    invoke-virtual {v5, p1, v3, v1}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->y(Landroid/view/View;IZ)V
-
     .line 97
+    move-result-object v0
+
     .line 98
+    invoke-static {v0}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
+
     .line 99
-    return-void
-
     .line 100
-    :pswitch_0
-    const/4 v0, 0x6
-
     .line 101
-    cmpg-float v6, p3, v2
+    move-result-object v0
 
     .line 102
-    .line 103
-    check-cast v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    invoke-static {p0, v1, v0, p1}, Ll30;->e(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;Ljava/util/List;Z)Z
 
+    .line 103
     .line 104
     .line 105
-    if-gez v6, :cond_6
+    move-result v0
 
     .line 106
+    if-nez v0, :cond_4
+
     .line 107
-    iget-boolean p2, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->b:Z
-
     .line 108
+    const-string v0, "com.meizu.power.PowerAppKilledNotification"
+
     .line 109
-    if-eqz p2, :cond_5
-
     .line 110
-    .line 111
-    goto/16 :goto_4
+    invoke-static {v0, p2}, Ll30;->c(Ljava/lang/String;Z)Landroid/content/Intent;
 
+    .line 111
     .line 112
     .line 113
-    :cond_5
-    invoke-virtual {p1}, Landroid/view/View;->getTop()I
+    move-result-object p2
 
     .line 114
+    invoke-static {p2}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
+
     .line 115
     .line 116
-    move-result p2
-
     .line 117
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+    move-result-object p2
 
     .line 118
+    if-eqz p1, :cond_3
+
     .line 119
     .line 120
-    iget p3, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->E:I
+    invoke-static {p0, p2}, Ll30;->j(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
 
     .line 121
     .line 122
-    if-le p2, p3, :cond_13
-
     .line 123
+    move-result p0
+
     .line 124
-    goto :goto_2
+    goto :goto_0
 
     .line 125
-    :cond_6
-    iget-boolean v6, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->I:Z
+    :cond_3
+    invoke-static {p0, p2}, Ll30;->a(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
 
     .line 126
     .line 127
-    if-eqz v6, :cond_c
-
     .line 128
+    move-result p0
+
     .line 129
-    invoke-virtual {v5, p1, p3}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->L(Landroid/view/View;F)Z
+    :goto_0
+    if-eqz p0, :cond_d
 
     .line 130
     .line 131
+    :cond_4
+    return v2
+
     .line 132
-    move-result v6
+    :cond_5
+    const-string v1, "oppo"
 
     .line 133
-    if-eqz v6, :cond_c
-
     .line 134
-    .line 135
-    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 135
     .line 136
     .line 137
+    move-result v1
+
     .line 138
-    move-result p2
+    if-eqz v1, :cond_6
 
     .line 139
-    invoke-static {p3}, Ljava/lang/Math;->abs(F)F
-
     .line 140
+    invoke-static {p0, p1, p2}, Ll30;->g(Lsu/happ/proxyutility/HappApplication;ZZ)Z
+
     .line 141
     .line 142
-    move-result v2
-
     .line 143
-    cmpg-float p2, p2, v2
+    move-result p0
 
     .line 144
+    return p0
+
     .line 145
-    if-gez p2, :cond_7
+    :cond_6
+    const-string v1, "samsung"
 
     .line 146
     .line 147
-    iget p2, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->d:I
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 148
     .line 149
-    int-to-float p2, p2
-
     .line 150
-    cmpl-float p2, p3, p2
+    move-result v1
 
     .line 151
+    if-eqz v1, :cond_7
+
     .line 152
-    if-gtz p2, :cond_8
-
     .line 153
-    .line 154
-    :cond_7
-    invoke-virtual {p1}, Landroid/view/View;->getTop()I
+    invoke-static {p0, p1, p2}, Ll30;->h(Lsu/happ/proxyutility/HappApplication;ZZ)Z
 
+    .line 154
     .line 155
     .line 156
+    move-result p0
+
     .line 157
-    move-result p2
+    return p0
 
     .line 158
-    iget p3, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->V:I
+    :cond_7
+    const-string v1, "xiaomi"
 
     .line 159
     .line 160
-    invoke-virtual {v5}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->D()I
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 161
     .line 162
     .line 163
-    move-result v2
+    move-result v1
 
     .line 164
-    add-int/2addr v2, p3
+    if-eqz v1, :cond_8
 
     .line 165
-    div-int/lit8 v2, v2, 0x2
-
     .line 166
+    move v1, v2
+
     .line 167
-    if-le p2, v2, :cond_9
+    goto :goto_1
 
     .line 168
-    .line 169
     :cond_8
-    const/4 v3, 0x5
+    const-string v1, "poco"
 
+    .line 169
     .line 170
-    goto/16 :goto_4
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 171
     .line 172
-    :cond_9
-    iget-boolean p2, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->b:Z
-
     .line 173
+    move-result v1
+
     .line 174
-    if-eqz p2, :cond_a
+    :goto_1
+    if-eqz v1, :cond_9
 
     .line 175
     .line 176
-    goto/16 :goto_4
+    goto :goto_2
 
     .line 177
-    .line 178
-    :cond_a
-    invoke-virtual {p1}, Landroid/view/View;->getTop()I
+    :cond_9
+    const-string v1, "redmi"
 
+    .line 178
     .line 179
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
     .line 180
     .line 181
-    move-result p2
-
     .line 182
-    invoke-virtual {v5}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->D()I
+    move-result v2
 
     .line 183
+    :goto_2
+    if-eqz v2, :cond_a
+
     .line 184
     .line 185
-    move-result p3
+    invoke-static {p0, p1, p2}, Ll30;->i(Lsu/happ/proxyutility/HappApplication;ZZ)Z
 
     .line 186
-    sub-int/2addr p2, p3
-
     .line 187
-    invoke-static {p2}, Ljava/lang/Math;->abs(I)I
-
     .line 188
+    move-result p0
+
     .line 189
+    return p0
+
     .line 190
-    move-result p2
+    :cond_a
+    const-string v1, "zte"
 
     .line 191
-    invoke-virtual {p1}, Landroid/view/View;->getTop()I
-
     .line 192
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
     .line 193
     .line 194
-    move-result p3
-
     .line 195
-    iget v2, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->E:I
+    move-result v1
 
     .line 196
-    .line 197
-    sub-int/2addr p3, v2
+    if-eqz v1, :cond_b
 
+    .line 197
     .line 198
-    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
+    const-string v0, "com.zte.heartyservice"
 
     .line 199
     .line 200
+    invoke-static {v0}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
+
     .line 201
-    move-result p3
-
     .line 202
-    if-ge p2, p3, :cond_b
-
     .line 203
+    move-result-object v1
+
     .line 204
-    goto/16 :goto_4
+    const-string v2, "com.zte.heartyservice.setting.ClearAppSettingsActivity"
 
     .line 205
     .line 206
-    :cond_b
-    :goto_2
-    const/4 v3, 0x6
+    invoke-static {v0, p2, v2}, Ll30;->b(Ljava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
 
     .line 207
-    goto :goto_4
-
     .line 208
-    :cond_c
-    const/4 v4, 0x4
-
     .line 209
-    cmpl-float v2, p3, v2
+    move-result-object p2
 
     .line 210
-    .line 211
-    if-eqz v2, :cond_10
+    invoke-static {p2}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 211
     .line 212
     .line 213
-    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+    move-result-object p2
 
     .line 214
+    invoke-static {p0, v1, p2, p1}, Ll30;->e(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;Ljava/util/List;Z)Z
+
     .line 215
     .line 216
-    move-result p2
-
     .line 217
-    invoke-static {p3}, Ljava/lang/Math;->abs(F)F
+    move-result p0
 
     .line 218
-    .line 219
-    .line 220
-    move-result p3
+    return p0
 
+    .line 219
+    :cond_b
+    const-string v1, "letv"
+
+    .line 220
     .line 221
-    cmpl-float p2, p2, p3
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 222
     .line 223
-    if-lez p2, :cond_d
-
     .line 224
+    move-result v0
+
     .line 225
-    goto :goto_3
+    if-eqz v0, :cond_c
 
     .line 226
-    :cond_d
-    iget-boolean p2, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->b:Z
-
     .line 227
+    const-string v0, "com.letv.android.letvsafe"
+
     .line 228
-    if-eqz p2, :cond_f
-
     .line 229
+    invoke-static {v0}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
+
     .line 230
-    :cond_e
-    const/4 v3, 0x4
-
     .line 231
-    goto :goto_4
-
     .line 232
-    :cond_f
-    invoke-virtual {p1}, Landroid/view/View;->getTop()I
+    move-result-object v1
 
     .line 233
+    const-string v2, "com.letv.android.letvsafe.BackgroundAppManageActivity"
+
     .line 234
     .line 235
-    move-result p2
+    invoke-static {v0, p2, v2}, Ll30;->b(Ljava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
 
     .line 236
-    iget p3, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->E:I
-
     .line 237
     .line 238
-    sub-int p3, p2, p3
+    move-result-object p2
 
     .line 239
-    .line 240
-    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
+    invoke-static {p2}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 240
     .line 241
     .line 242
+    move-result-object p2
+
     .line 243
-    move-result p3
+    invoke-static {p0, v1, p2, p1}, Ll30;->e(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;Ljava/util/List;Z)Z
 
     .line 244
-    iget v2, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->G:I
-
     .line 245
     .line 246
-    sub-int/2addr p2, v2
+    move-result p0
 
     .line 247
-    invoke-static {p2}, Ljava/lang/Math;->abs(I)I
+    return p0
 
     .line 248
+    :cond_c
+    invoke-static {p0, p1, p2}, Ll30;->f(Lsu/happ/proxyutility/HappApplication;ZZ)Z
+
     .line 249
     .line 250
-    move-result p2
-
     .line 251
-    if-ge p3, p2, :cond_e
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 252
+    return p0
+
     .line 253
-    goto :goto_2
+    :catch_0
+    :cond_d
+    const/4 p0, 0x0
 
     .line 254
-    :cond_10
-    :goto_3
-    invoke-virtual {p1}, Landroid/view/View;->getTop()I
-
-    .line 255
-    .line 256
-    .line 257
-    move-result p2
-
-    .line 258
-    iget-boolean p3, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->b:Z
-
-    .line 259
-    .line 260
-    if-eqz p3, :cond_11
-
-    .line 261
-    .line 262
-    iget p3, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->D:I
-
-    .line 263
-    .line 264
-    sub-int p3, p2, p3
-
-    .line 265
-    .line 266
-    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
-
-    .line 267
-    .line 268
-    .line 269
-    move-result p3
-
-    .line 270
-    iget v0, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->G:I
-
-    .line 271
-    .line 272
-    sub-int/2addr p2, v0
-
-    .line 273
-    invoke-static {p2}, Ljava/lang/Math;->abs(I)I
-
-    .line 274
-    .line 275
-    .line 276
-    move-result p2
-
-    .line 277
-    if-ge p3, p2, :cond_e
-
-    .line 278
-    .line 279
-    goto :goto_4
-
-    .line 280
-    :cond_11
-    iget p3, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->E:I
-
-    .line 281
-    .line 282
-    if-ge p2, p3, :cond_12
-
-    .line 283
-    .line 284
-    iget p3, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->G:I
-
-    .line 285
-    .line 286
-    sub-int p3, p2, p3
-
-    .line 287
-    .line 288
-    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
-
-    .line 289
-    .line 290
-    .line 291
-    move-result p3
-
-    .line 292
-    if-ge p2, p3, :cond_b
-
-    .line 293
-    .line 294
-    goto :goto_4
-
-    .line 295
-    :cond_12
-    sub-int p3, p2, p3
-
-    .line 296
-    .line 297
-    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
-
-    .line 298
-    .line 299
-    .line 300
-    move-result p3
-
-    .line 301
-    iget v2, v5, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->G:I
-
-    .line 302
-    .line 303
-    sub-int/2addr p2, v2
-
-    .line 304
-    invoke-static {p2}, Ljava/lang/Math;->abs(I)I
-
-    .line 305
-    .line 306
-    .line 307
-    move-result p2
-
-    .line 308
-    if-ge p3, p2, :cond_e
-
-    .line 309
-    .line 310
-    goto :goto_2
-
-    .line 311
-    :cond_13
-    :goto_4
-    invoke-virtual {v5, p1, v3, v1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->M(Landroid/view/View;IZ)V
-
-    .line 312
-    .line 313
-    .line 314
-    return-void
-
-    .line 315
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return p0
 .end method
 
-.method public final p(Landroid/view/View;I)Z
-    .locals 5
+.method public static e(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;Ljava/util/List;Z)Z
+    .locals 4
 
     .line 1
-    iget v0, p0, Ll30;->a:I
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     .line 2
     .line 3
-    const/4 v1, 0x1
-
     .line 4
-    iget-object v2, p0, Ll30;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
+    move-result v0
 
     .line 5
+    const/4 v1, 0x0
+
     .line 6
-    const/4 v3, 0x0
+    if-eqz v0, :cond_0
 
     .line 7
-    packed-switch v0, :pswitch_data_0
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    :cond_1
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    if-eqz v0, :cond_4
+
+    .line 18
+    .line 19
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    check-cast v0, Ljava/lang/String;
+
+    .line 24
+    .line 25
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v2
+
+    .line 29
+    invoke-virtual {v2, v1}, Landroid/content/pm/PackageManager;->getInstalledApplications(I)Ljava/util/List;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v2
+
+    .line 33
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v2
+
+    .line 40
+    :cond_2
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v3
+
+    .line 44
+    if-eqz v3, :cond_1
+
+    .line 45
+    .line 46
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v3
+
+    .line 50
+    check-cast v3, Landroid/content/pm/ApplicationInfo;
+
+    .line 51
+    .line 52
+    iget-object v3, v3, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+
+    .line 53
+    .line 54
+    invoke-static {v3, v0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 55
+    .line 56
+    .line 57
+    move-result v3
+
+    .line 58
+    if-eqz v3, :cond_2
+
+    .line 59
+    .line 60
+    if-eqz p3, :cond_3
+
+    .line 61
+    .line 62
+    invoke-static {p0, p2}, Ll30;->j(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
+
+    .line 63
+    .line 64
+    .line 65
+    move-result p0
+
+    .line 66
+    return p0
+
+    .line 67
+    :cond_3
+    invoke-static {p0, p2}, Ll30;->a(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
+
+    .line 68
+    .line 69
+    .line 70
+    move-result p0
+
+    .line 71
+    return p0
+
+    .line 72
+    :cond_4
+    :goto_0
+    return v1
+.end method
+
+.method public static f(Lsu/happ/proxyutility/HappApplication;ZZ)Z
+    .locals 2
+
+    .line 1
+    const-string v0, "power"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    check-cast v2, Lcom/google/android/material/sidesheet/SideSheetBehavior;
+    check-cast v0, Landroid/os/PowerManager;
 
     .line 11
     .line 12
-    iget p2, v2, Lcom/google/android/material/sidesheet/SideSheetBehavior;->h:I
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     .line 13
     .line 14
-    if-ne p2, v1, :cond_0
-
     .line 15
+    move-result-object v1
+
     .line 16
-    goto :goto_0
+    invoke-virtual {v0, v1}, Landroid/os/PowerManager;->isIgnoringBatteryOptimizations(Ljava/lang/String;)Z
 
     .line 17
-    :cond_0
-    iget-object p2, v2, Lcom/google/android/material/sidesheet/SideSheetBehavior;->p:Ljava/lang/ref/WeakReference;
-
     .line 18
     .line 19
-    if-eqz p2, :cond_1
+    move-result v0
 
     .line 20
-    .line 21
-    invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    if-nez v0, :cond_0
 
+    .line 21
     .line 22
+    const-string v0, "android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS"
+
     .line 23
     .line 24
-    move-result-object p2
+    invoke-static {v0, p2}, Ll30;->c(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 25
-    if-ne p2, p1, :cond_1
-
     .line 26
     .line 27
-    goto :goto_1
+    move-result-object p2
 
     .line 28
-    :cond_1
-    :goto_0
-    const/4 v1, 0x0
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 29
-    :goto_1
-    return v1
-
     .line 30
-    :pswitch_0
-    check-cast v2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    const-string v1, "package:"
 
     .line 31
     .line 32
-    iget v0, v2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->N:I
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 33
     .line 34
-    if-ne v0, v1, :cond_2
-
     .line 35
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
     .line 36
-    goto :goto_3
-
     .line 37
-    :cond_2
-    iget-boolean v4, v2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->f0:Z
-
     .line 38
+    move-result-object v1
+
     .line 39
-    if-eqz v4, :cond_3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 40
     .line 41
-    goto :goto_3
-
     .line 42
-    :cond_3
-    const/4 v4, 0x3
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 43
-    if-ne v0, v4, :cond_5
-
     .line 44
     .line 45
-    iget v0, v2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->d0:I
+    move-result-object v0
 
     .line 46
-    .line 47
-    if-ne v0, p2, :cond_5
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
+    .line 47
     .line 48
     .line 49
-    iget-object p2, v2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->Z:Ljava/lang/ref/WeakReference;
+    move-result-object v0
 
     .line 50
-    .line 51
-    if-eqz p2, :cond_4
+    invoke-virtual {p2, v0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
+    .line 51
     .line 52
     .line 53
-    invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    goto :goto_0
 
     .line 54
-    .line 55
-    .line 56
-    move-result-object p2
+    :cond_0
+    const/4 p2, 0x0
 
+    .line 55
+    :goto_0
+    if-eqz p2, :cond_2
+
+    .line 56
     .line 57
-    check-cast p2, Landroid/view/View;
+    invoke-static {p2}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
 
     .line 58
     .line 59
-    goto :goto_2
-
     .line 60
-    :cond_4
-    const/4 p2, 0x0
+    move-result-object p2
 
     .line 61
-    :goto_2
-    if-eqz p2, :cond_5
+    if-eqz p1, :cond_1
 
     .line 62
     .line 63
-    const/4 v0, -0x1
+    invoke-static {p0, p2}, Ll30;->j(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
 
     .line 64
-    invoke-virtual {p2, v0}, Landroid/view/View;->canScrollVertically(I)Z
-
     .line 65
     .line 66
+    move-result p0
+
     .line 67
-    move-result p2
+    return p0
 
     .line 68
-    if-eqz p2, :cond_5
+    :cond_1
+    invoke-static {p0, p2}, Ll30;->a(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
 
     .line 69
     .line 70
-    goto :goto_3
-
     .line 71
-    :cond_5
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+    move-result p0
 
     .line 72
+    return p0
+
+    .line 73
+    :cond_2
+    const/4 p0, 0x0
+
+    .line 74
+    return p0
+.end method
+
+.method public static g(Lsu/happ/proxyutility/HappApplication;ZZ)Z
+    .locals 4
+
+    .line 1
+    const-string v0, "com.coloros.oppoguardelf"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    const-string v2, "com.coloros.powermanager.fuelgaue.PowerConsumptionActivity"
+
+    .line 8
+    .line 9
+    invoke-static {v0, p2, v2}, Ll30;->b(Ljava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v2
+
+    .line 13
+    const-string v3, "com.coloros.powermanager.fuelgaue.PowerUsageModelActivity"
+
+    .line 14
+    .line 15
+    invoke-static {v0, p2, v3}, Ll30;->b(Ljava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p2
+
+    .line 19
+    filled-new-array {v2, p2}, [Landroid/content/Intent;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p2
+
+    .line 23
+    invoke-static {p2}, Lut;->M([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p2
+
+    .line 27
+    invoke-static {p0, v1, p2, p1}, Ll30;->e(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;Ljava/util/List;Z)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result p2
+
+    .line 31
+    const/4 v0, 0x1
+
+    .line 32
+    if-eqz p2, :cond_0
+
+    .line 33
+    .line 34
+    return v0
+
+    .line 35
+    :cond_0
+    const-string p2, "package:"
+
+    .line 36
+    .line 37
+    :try_start_0
+    new-instance v1, Landroid/content/Intent;
+
+    .line 38
+    .line 39
+    const-string v2, "android.settings.APPLICATION_DETAILS_SETTINGS"
+
+    .line 40
+    .line 41
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 42
+    .line 43
+    .line 44
+    const-string v2, "android.intent.category.DEFAULT"
+
+    .line 45
+    .line 46
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 47
+    .line 48
+    .line 49
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 50
+    .line 51
+    invoke-direct {v2, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 52
+    .line 53
+    .line 54
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object p2
+
+    .line 58
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object p2
+
+    .line 65
+    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object p2
+
+    .line 69
+    invoke-virtual {v1, p2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 70
+    .line 71
+    .line 72
+    if-eqz p1, :cond_1
+
     .line 73
     .line 74
-    iget-object p2, v2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->W:Ljava/lang/ref/WeakReference;
+    invoke-virtual {p0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     .line 75
     .line 76
-    if-eqz p2, :cond_6
-
     .line 77
+    return v0
+
     .line 78
-    invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    :cond_1
+    invoke-static {p0, v1}, Lx3;->f(Lsu/happ/proxyutility/HappApplication;Landroid/content/Intent;)Ljava/util/List;
 
     .line 79
     .line 80
     .line 81
-    move-result-object p2
+    move-result-object p0
 
     .line 82
-    if-ne p2, p1, :cond_6
+    invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
 
     .line 83
     .line 84
-    goto :goto_4
-
     .line 85
-    :cond_6
-    :goto_3
-    const/4 v1, 0x0
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 86
-    :goto_4
-    return v1
+    xor-int/2addr p0, v0
 
     .line 87
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return p0
+
+    .line 88
+    :catch_0
+    move-exception p0
+
+    .line 89
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 90
+    .line 91
+    .line 92
+    const/4 p0, 0x0
+
+    .line 93
+    return p0
+.end method
+
+.method public static h(Lsu/happ/proxyutility/HappApplication;ZZ)Z
+    .locals 4
+
+    .line 1
+    const-string v0, "com.samsung.android.sm.ACTION_BATTERY"
+
+    .line 2
+    .line 3
+    invoke-static {v0, p2}, Ll30;->c(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    if-eqz p1, :cond_0
+
+    .line 12
+    .line 13
+    invoke-static {p0, v0}, Ll30;->j(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :cond_0
+    invoke-static {p0, v0}, Ll30;->a(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    :goto_0
+    if-nez v0, :cond_2
+
+    .line 23
+    .line 24
+    const-string v0, "com.samsung.android.sm_cn"
+
+    .line 25
+    .line 26
+    const-string v1, "com.samsung.android.lool"
+
+    .line 27
+    .line 28
+    filled-new-array {v1, v0}, [Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    invoke-static {v0}, Lut;->M([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    const-string v2, "com.samsung.android.sm.ui.battery.BatteryActivity"
+
+    .line 37
+    .line 38
+    invoke-static {v1, p2, v2}, Ll30;->b(Ljava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v3
+
+    .line 42
+    invoke-static {v1, p2, v2}, Ll30;->b(Ljava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p2
+
+    .line 46
+    filled-new-array {v3, p2}, [Landroid/content/Intent;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p2
+
+    .line 50
+    invoke-static {p2}, Lut;->M([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p2
+
+    .line 54
+    invoke-static {p0, v0, p2, p1}, Ll30;->e(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;Ljava/util/List;Z)Z
+
+    .line 55
+    .line 56
+    .line 57
+    move-result p0
+
+    .line 58
+    if-eqz p0, :cond_1
+
+    .line 59
+    .line 60
+    goto :goto_1
+
+    .line 61
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 62
+    return p0
+
+    .line 63
+    :cond_2
+    :goto_1
+    const/4 p0, 0x1
+
+    .line 64
+    return p0
+.end method
+
+.method public static i(Lsu/happ/proxyutility/HappApplication;ZZ)Z
+    .locals 6
+
+    .line 1
+    const-string v0, "com.miui.powerkeeper"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v2
+
+    .line 11
+    new-instance v3, Lw55;
+
+    .line 12
+    .line 13
+    const-string v4, "package_name"
+
+    .line 14
+    .line 15
+    invoke-direct {v3, v4, v2}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v2
+
+    .line 22
+    iget v4, v2, Landroid/content/pm/ApplicationInfo;->labelRes:I
+
+    .line 23
+    .line 24
+    if-nez v4, :cond_0
+
+    .line 25
+    .line 26
+    iget-object v2, v2, Landroid/content/pm/ApplicationInfo;->nonLocalizedLabel:Ljava/lang/CharSequence;
+
+    .line 27
+    .line 28
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v2
+
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_0
+    invoke-virtual {p0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v2
+
+    .line 37
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    .line 39
+    .line 40
+    :goto_0
+    new-instance v4, Lw55;
+
+    .line 41
+    .line 42
+    const-string v5, "package_label"
+
+    .line 43
+    .line 44
+    invoke-direct {v4, v5, v2}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 45
+    .line 46
+    .line 47
+    filled-new-array {v3, v4}, [Lw55;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v2
+
+    .line 51
+    invoke-static {v2}, Luf4;->b0([Lw55;)Ljava/util/Map;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v2
+
+    .line 55
+    new-instance v3, Landroid/content/Intent;
+
+    .line 56
+    .line 57
+    invoke-direct {v3}, Landroid/content/Intent;-><init>()V
+
+    .line 58
+    .line 59
+    .line 60
+    new-instance v4, Landroid/content/ComponentName;
+
+    .line 61
+    .line 62
+    const-string v5, "com.miui.powerkeeper.ui.HiddenAppsConfigActivity"
+
+    .line 63
+    .line 64
+    invoke-direct {v4, v0, v5}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 65
+    .line 66
+    .line 67
+    invoke-virtual {v3, v4}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    .line 68
+    .line 69
+    .line 70
+    if-eqz p2, :cond_1
+
+    .line 71
+    .line 72
+    const/high16 p2, 0x10000000
+
+    .line 73
+    .line 74
+    invoke-virtual {v3, p2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 75
+    .line 76
+    .line 77
+    :cond_1
+    invoke-interface {v2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object p2
+
+    .line 81
+    invoke-interface {p2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object p2
+
+    .line 85
+    :goto_1
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 86
+    .line 87
+    .line 88
+    move-result v0
+
+    .line 89
+    if-eqz v0, :cond_2
+
+    .line 90
+    .line 91
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-object v0
+
+    .line 95
+    check-cast v0, Ljava/util/Map$Entry;
+
+    .line 96
+    .line 97
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object v2
+
+    .line 101
+    check-cast v2, Ljava/lang/String;
+
+    .line 102
+    .line 103
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 104
+    .line 105
+    .line 106
+    move-result-object v0
+
+    .line 107
+    check-cast v0, Ljava/lang/String;
+
+    .line 108
+    .line 109
+    invoke-virtual {v3, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 110
+    .line 111
+    .line 112
+    goto :goto_1
+
+    .line 113
+    :cond_2
+    invoke-static {v3}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object p2
+
+    .line 117
+    invoke-static {p0, v1, p2, p1}, Ll30;->e(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;Ljava/util/List;Z)Z
+
+    .line 118
+    .line 119
+    .line 120
+    move-result p0
+
+    .line 121
+    return p0
+.end method
+
+.method public static j(Lsu/happ/proxyutility/HappApplication;Ljava/util/List;)Z
+    .locals 2
+
+    .line 1
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    :cond_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_1
+
+    .line 10
+    .line 11
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, Landroid/content/Intent;
+
+    .line 16
+    .line 17
+    invoke-static {p0, v0}, Lx3;->f(Lsu/happ/proxyutility/HappApplication;Landroid/content/Intent;)Ljava/util/List;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v1
+
+    .line 21
+    invoke-interface {v1}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v1
+
+    .line 25
+    if-nez v1, :cond_0
+
+    .line 26
+    .line 27
+    :try_start_0
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 28
+    .line 29
+    .line 30
+    const/4 p0, 0x1
+
+    .line 31
+    return p0
+
+    .line 32
+    :catch_0
+    move-exception p0
+
+    .line 33
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 34
+    .line 35
+    .line 36
+    throw p0
+
+    .line 37
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 38
+    return p0
 .end method

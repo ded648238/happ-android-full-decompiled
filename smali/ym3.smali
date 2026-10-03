@@ -1,179 +1,183 @@
-.class public final synthetic Lym3;
+.class public abstract Lym3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:I
+# static fields
+.field public static final a:Lxm3;
 
-.field public final synthetic R:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public static final b:Lxm3;
 
-.field public final synthetic S:Lc90;
+.field public static final c:Lxm3;
 
-.field public final synthetic T:Lg72;
+.field public static final d:Lxm3;
+
+.field public static final e:Lxm3;
+
+.field public static final f:Lxm3;
+
+.field public static final g:Lxm3;
+
+.field public static final h:Lxm3;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/util/concurrent/atomic/AtomicBoolean;Lc90;Lg72;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iput p4, p0, Lym3;->Q:I
+    new-instance v0, Lxm3;
 
     .line 2
     .line 3
-    iput-object p1, p0, Lym3;->R:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v1, Lam3;->d0:Lam3;
 
     .line 4
     .line 5
-    iput-object p2, p0, Lym3;->S:Lc90;
+    invoke-direct {v0, v1}, Lxm3;-><init>(Lam3;)V
 
     .line 6
     .line 7
-    iput-object p3, p0, Lym3;->T:Lg72;
-
     .line 8
-    .line 9
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sput-object v0, Lym3;->a:Lxm3;
 
+    .line 9
     .line 10
+    new-instance v0, Lxm3;
+
     .line 11
     .line 12
+    sget-object v1, Lam3;->e0:Lam3;
+
+    .line 13
+    .line 14
+    invoke-direct {v0, v1}, Lxm3;-><init>(Lam3;)V
+
+    .line 15
+    .line 16
+    .line 17
+    sput-object v0, Lym3;->b:Lxm3;
+
+    .line 18
+    .line 19
+    new-instance v0, Lxm3;
+
+    .line 20
+    .line 21
+    sget-object v1, Lam3;->f0:Lam3;
+
+    .line 22
+    .line 23
+    invoke-direct {v0, v1}, Lxm3;-><init>(Lam3;)V
+
+    .line 24
+    .line 25
+    .line 26
+    sput-object v0, Lym3;->c:Lxm3;
+
+    .line 27
+    .line 28
+    new-instance v0, Lxm3;
+
+    .line 29
+    .line 30
+    sget-object v1, Lam3;->g0:Lam3;
+
+    .line 31
+    .line 32
+    invoke-direct {v0, v1}, Lxm3;-><init>(Lam3;)V
+
+    .line 33
+    .line 34
+    .line 35
+    sput-object v0, Lym3;->d:Lxm3;
+
+    .line 36
+    .line 37
+    new-instance v0, Lxm3;
+
+    .line 38
+    .line 39
+    sget-object v1, Lam3;->h0:Lam3;
+
+    .line 40
+    .line 41
+    invoke-direct {v0, v1}, Lxm3;-><init>(Lam3;)V
+
+    .line 42
+    .line 43
+    .line 44
+    sput-object v0, Lym3;->e:Lxm3;
+
+    .line 45
+    .line 46
+    new-instance v0, Lxm3;
+
+    .line 47
+    .line 48
+    sget-object v1, Lam3;->i0:Lam3;
+
+    .line 49
+    .line 50
+    invoke-direct {v0, v1}, Lxm3;-><init>(Lam3;)V
+
+    .line 51
+    .line 52
+    .line 53
+    sput-object v0, Lym3;->f:Lxm3;
+
+    .line 54
+    .line 55
+    new-instance v0, Lxm3;
+
+    .line 56
+    .line 57
+    sget-object v1, Lam3;->j0:Lam3;
+
+    .line 58
+    .line 59
+    invoke-direct {v0, v1}, Lxm3;-><init>(Lam3;)V
+
+    .line 60
+    .line 61
+    .line 62
+    sput-object v0, Lym3;->g:Lxm3;
+
+    .line 63
+    .line 64
+    new-instance v0, Lxm3;
+
+    .line 65
+    .line 66
+    sget-object v1, Lam3;->k0:Lam3;
+
+    .line 67
+    .line 68
+    invoke-direct {v0, v1}, Lxm3;-><init>(Lam3;)V
+
+    .line 69
+    .line 70
+    .line 71
+    sput-object v0, Lym3;->h:Lxm3;
+
+    .line 72
+    .line 73
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
+.method public final toString()Ljava/lang/String;
+    .locals 0
 
     .line 1
-    iget v0, p0, Lym3;->Q:I
+    invoke-static {p0}, Lan3;->v(Lym3;)Ljava/lang/String;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lym3;->T:Lg72;
-
     .line 4
+    move-result-object p0
+
     .line 5
-    iget-object v2, p0, Lym3;->S:Lc90;
-
-    .line 6
-    .line 7
-    iget-object v3, p0, Lym3;->R:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 8
-    .line 9
-    packed-switch v0, :pswitch_data_0
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
-
-    .line 13
-    .line 14
-    .line 15
-    move-result v0
-
-    .line 16
-    if-eqz v0, :cond_0
-
-    .line 17
-    .line 18
-    goto :goto_0
-
-    .line 19
-    :cond_0
-    :try_start_0
-    invoke-interface {v1}, Lg72;->invoke()Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v0
-
-    .line 23
-    invoke-virtual {v2, v0}, Lc90;->b(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 24
-    .line 25
-    .line 26
-    goto :goto_0
-
-    .line 27
-    :catchall_0
-    move-exception v0
-
-    .line 28
-    invoke-virtual {v2, v0}, Lc90;->c(Ljava/lang/Throwable;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    :goto_0
-    return-void
-
-    .line 32
-    :pswitch_0
-    invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
-
-    .line 33
-    .line 34
-    .line 35
-    move-result v0
-
-    .line 36
-    if-eqz v0, :cond_1
-
-    .line 37
-    .line 38
-    goto :goto_1
-
-    .line 39
-    :cond_1
-    :try_start_1
-    invoke-interface {v1}, Lg72;->invoke()Ljava/lang/Object;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
-
-    .line 43
-    invoke-virtual {v2, v0}, Lc90;->b(Ljava/lang/Object;)Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    .line 44
-    .line 45
-    .line 46
-    goto :goto_1
-
-    .line 47
-    :catchall_1
-    move-exception v0
-
-    .line 48
-    invoke-virtual {v2, v0}, Lc90;->c(Ljava/lang/Throwable;)Z
-
-    .line 49
-    .line 50
-    .line 51
-    :goto_1
-    return-void
-
-    .line 52
-    nop
-
-    .line 53
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p0
 .end method

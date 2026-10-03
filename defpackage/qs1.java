@@ -1,24 +1,45 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class qs1 {
-    public final int a;
-    public final String b;
-    public final int c;
-    public final int d;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.PathMeasure;
+import android.graphics.Rect;
 
-    public qs1(String str, int i, int i2) {
-        this.b = str;
-        this.a = i;
-        this.c = i2;
-        this.d = -1;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class qs1 {
+    public final y00 a;
+    public final Path b;
+    public final Path c;
+    public final PathMeasure d;
+    public final Matrix e;
+
+    public qs1(y00 y00Var) {
+        Path path = new Path();
+        this.b = path;
+        this.c = new Path();
+        this.d = new PathMeasure(path, false);
+        this.a = y00Var;
+        this.e = new Matrix();
     }
 
-    public qs1(String str, int i, int i2, int i3) {
-        this.b = str;
-        this.a = i;
-        this.c = i2;
-        this.d = i3;
+    public static float h(float[] fArr) {
+        return (float) Math.toDegrees(Math.atan2(fArr[1], fArr[0]));
     }
+
+    public abstract void a(Canvas canvas, Rect rect, float f, boolean z, boolean z2);
+
+    public abstract void b(int i, int i2, Canvas canvas, Paint paint);
+
+    public abstract void c(Canvas canvas, Paint paint, os1 os1Var, int i);
+
+    public abstract void d(Canvas canvas, Paint paint, float f, float f2, int i, int i2, int i3);
+
+    public abstract int e();
+
+    public abstract int f();
+
+    public abstract void g();
 }

@@ -1,6 +1,6 @@
 .class synthetic Lorg/conscrypt/metrics/StatsLogImpl$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -15,15 +15,17 @@
 
 
 # static fields
+.field static final synthetic $SwitchMap$org$conscrypt$CertBlocklistEntry$Origin:[I
+
 .field static final synthetic $SwitchMap$org$conscrypt$ct$LogStore$State:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 8
 
     .line 1
-    invoke-static {}, Lorg/conscrypt/ct/LogStore$State;->values()[Lorg/conscrypt/ct/LogStore$State;
+    invoke-static {}, Lorg/conscrypt/CertBlocklistEntry$Origin;->values()[Lorg/conscrypt/CertBlocklistEntry$Origin;
 
     .line 2
     .line 3
@@ -38,167 +40,326 @@
 
     .line 7
     .line 8
-    sput-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+    sput-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$CertBlocklistEntry$Origin:[I
 
     .line 9
     .line 10
-    :try_start_0
-    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->UNINITIALIZED:Lorg/conscrypt/ct/LogStore$State;
+    const/4 v1, 0x1
 
     .line 11
-    .line 12
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :try_start_0
+    sget-object v2, Lorg/conscrypt/CertBlocklistEntry$Origin;->SHA1_TEST:Lorg/conscrypt/CertBlocklistEntry$Origin;
 
+    .line 12
     .line 13
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
     .line 14
     .line 15
-    move-result v1
-
     .line 16
-    const/4 v2, 0x1
+    move-result v2
 
     .line 17
-    aput v2, v0, v1
+    aput v1, v0, v2
     :try_end_0
     .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 18
     .line 19
     :catch_0
-    :try_start_1
-    sget-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+    const/4 v0, 0x2
 
     .line 20
+    :try_start_1
+    sget-object v2, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$CertBlocklistEntry$Origin:[I
+
     .line 21
-    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->LOADED:Lorg/conscrypt/ct/LogStore$State;
-
     .line 22
-    .line 23
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    sget-object v3, Lorg/conscrypt/CertBlocklistEntry$Origin;->SHA1_BUILT_IN:Lorg/conscrypt/CertBlocklistEntry$Origin;
 
+    .line 23
     .line 24
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
     .line 25
     .line 26
-    move-result v1
-
     .line 27
-    const/4 v2, 0x2
+    move-result v3
 
     .line 28
-    aput v2, v0, v1
+    aput v0, v2, v3
     :try_end_1
     .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 29
     .line 30
     :catch_1
-    :try_start_2
-    sget-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
-
-    .line 31
-    .line 32
-    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->NOT_FOUND:Lorg/conscrypt/ct/LogStore$State;
-
-    .line 33
-    .line 34
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 35
-    .line 36
-    .line 37
-    move-result v1
-
-    .line 38
     const/4 v2, 0x3
 
+    .line 31
+    :try_start_2
+    sget-object v3, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$CertBlocklistEntry$Origin:[I
+
+    .line 32
+    .line 33
+    sget-object v4, Lorg/conscrypt/CertBlocklistEntry$Origin;->SHA1_FILE:Lorg/conscrypt/CertBlocklistEntry$Origin;
+
+    .line 34
+    .line 35
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v4
+
     .line 39
-    aput v2, v0, v1
+    aput v2, v3, v4
     :try_end_2
     .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 40
     .line 41
     :catch_2
-    :try_start_3
-    sget-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+    const/4 v3, 0x4
 
     .line 42
+    :try_start_3
+    sget-object v4, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$CertBlocklistEntry$Origin:[I
+
     .line 43
-    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->MALFORMED:Lorg/conscrypt/ct/LogStore$State;
-
     .line 44
-    .line 45
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    sget-object v5, Lorg/conscrypt/CertBlocklistEntry$Origin;->SHA256_TEST:Lorg/conscrypt/CertBlocklistEntry$Origin;
 
+    .line 45
     .line 46
+    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+
     .line 47
     .line 48
-    move-result v1
-
     .line 49
-    const/4 v2, 0x4
+    move-result v5
 
     .line 50
-    aput v2, v0, v1
+    aput v3, v4, v5
     :try_end_3
     .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 51
     .line 52
     :catch_3
-    :try_start_4
-    sget-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+    const/4 v4, 0x5
 
     .line 53
+    :try_start_4
+    sget-object v5, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$CertBlocklistEntry$Origin:[I
+
     .line 54
-    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->COMPLIANT:Lorg/conscrypt/ct/LogStore$State;
-
     .line 55
-    .line 56
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    sget-object v6, Lorg/conscrypt/CertBlocklistEntry$Origin;->SHA256_BUILT_IN:Lorg/conscrypt/CertBlocklistEntry$Origin;
 
+    .line 56
     .line 57
+    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
+
     .line 58
     .line 59
-    move-result v1
-
     .line 60
-    const/4 v2, 0x5
+    move-result v6
 
     .line 61
-    aput v2, v0, v1
+    aput v4, v5, v6
     :try_end_4
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
     .line 62
     .line 63
     :catch_4
-    :try_start_5
-    sget-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+    const/4 v5, 0x6
 
     .line 64
+    :try_start_5
+    sget-object v6, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$CertBlocklistEntry$Origin:[I
+
     .line 65
-    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->NON_COMPLIANT:Lorg/conscrypt/ct/LogStore$State;
-
     .line 66
-    .line 67
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    sget-object v7, Lorg/conscrypt/CertBlocklistEntry$Origin;->SHA256_FILE:Lorg/conscrypt/CertBlocklistEntry$Origin;
 
+    .line 67
     .line 68
+    invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
+
     .line 69
     .line 70
-    move-result v1
-
     .line 71
-    const/4 v2, 0x6
+    move-result v7
 
     .line 72
-    aput v2, v0, v1
+    aput v5, v6, v7
     :try_end_5
     .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
     .line 73
     .line 74
     :catch_5
+    invoke-static {}, Lorg/conscrypt/ct/LogStore$State;->values()[Lorg/conscrypt/ct/LogStore$State;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object v6
+
+    .line 78
+    array-length v6, v6
+
+    .line 79
+    new-array v6, v6, [I
+
+    .line 80
+    .line 81
+    sput-object v6, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+
+    .line 82
+    .line 83
+    :try_start_6
+    sget-object v7, Lorg/conscrypt/ct/LogStore$State;->UNINITIALIZED:Lorg/conscrypt/ct/LogStore$State;
+
+    .line 84
+    .line 85
+    invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
+
+    .line 86
+    .line 87
+    .line 88
+    move-result v7
+
+    .line 89
+    aput v1, v6, v7
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    .line 90
+    .line 91
+    :catch_6
+    :try_start_7
+    sget-object v1, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+
+    .line 92
+    .line 93
+    sget-object v6, Lorg/conscrypt/ct/LogStore$State;->LOADED:Lorg/conscrypt/ct/LogStore$State;
+
+    .line 94
+    .line 95
+    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
+
+    .line 96
+    .line 97
+    .line 98
+    move-result v6
+
+    .line 99
+    aput v0, v1, v6
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    .line 100
+    .line 101
+    :catch_7
+    :try_start_8
+    sget-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+
+    .line 102
+    .line 103
+    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->NOT_FOUND:Lorg/conscrypt/ct/LogStore$State;
+
+    .line 104
+    .line 105
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 106
+    .line 107
+    .line 108
+    move-result v1
+
+    .line 109
+    aput v2, v0, v1
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    .line 110
+    .line 111
+    :catch_8
+    :try_start_9
+    sget-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+
+    .line 112
+    .line 113
+    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->MALFORMED:Lorg/conscrypt/ct/LogStore$State;
+
+    .line 114
+    .line 115
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 116
+    .line 117
+    .line 118
+    move-result v1
+
+    .line 119
+    aput v3, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    .line 120
+    .line 121
+    :catch_9
+    :try_start_a
+    sget-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+
+    .line 122
+    .line 123
+    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->COMPLIANT:Lorg/conscrypt/ct/LogStore$State;
+
+    .line 124
+    .line 125
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 126
+    .line 127
+    .line 128
+    move-result v1
+
+    .line 129
+    aput v4, v0, v1
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+
+    .line 130
+    .line 131
+    :catch_a
+    :try_start_b
+    sget-object v0, Lorg/conscrypt/metrics/StatsLogImpl$1;->$SwitchMap$org$conscrypt$ct$LogStore$State:[I
+
+    .line 132
+    .line 133
+    sget-object v1, Lorg/conscrypt/ct/LogStore$State;->NON_COMPLIANT:Lorg/conscrypt/ct/LogStore$State;
+
+    .line 134
+    .line 135
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 136
+    .line 137
+    .line 138
+    move-result v1
+
+    .line 139
+    aput v5, v0, v1
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+
+    .line 140
+    .line 141
+    :catch_b
     return-void
 .end method

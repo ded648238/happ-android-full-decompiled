@@ -1,6 +1,6 @@
 .class public final Lj$/time/format/r;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -24,19 +24,19 @@
     .line 6
     .line 7
     .line 8
-    move-result-object p2
+    move-result-object p0
 
     .line 9
-    check-cast p2, Ljava/lang/String;
+    check-cast p0, Ljava/lang/String;
 
     .line 10
     .line 11
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     .line 12
     .line 13
     .line 14
-    move-result p2
+    move-result p0
 
     .line 15
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -59,8 +59,8 @@
     move-result p1
 
     .line 25
-    sub-int/2addr p2, p1
+    sub-int/2addr p0, p1
 
     .line 26
-    return p2
+    return p0
 .end method

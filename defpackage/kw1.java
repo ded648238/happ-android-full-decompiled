@@ -1,6 +1,18 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface kw1 extends fi {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class kw1 extends gk5 {
+    public final qw1 f0;
+
+    public kw1(qw1 qw1Var) {
+        super(qw1Var, -1, "Empty Process");
+        this.f0 = qw1Var;
+    }
+
+    @Override // defpackage.gk5
+    public final uv7 g(long j, String str, long j2) {
+        this.f0.getClass();
+        return qw1.e0;
+    }
 }

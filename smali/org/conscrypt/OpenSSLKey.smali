@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/OpenSSLKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -202,7 +202,7 @@
     move-exception p0
 
     .line 33
-    invoke-static {p0}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 34
     .line 35
@@ -341,7 +341,7 @@
     move-exception p0
 
     .line 57
-    invoke-static {p0}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 58
     .line 59
@@ -354,7 +354,7 @@
 
     .line 62
     .line 63
-    invoke-static {p0}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 64
     .line 65
@@ -667,7 +667,7 @@
     move-exception p0
 
     .line 46
-    invoke-static {p0}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 47
     .line 48
@@ -680,7 +680,7 @@
 
     .line 51
     .line 52
-    invoke-static {p0}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 53
     .line 54
@@ -982,7 +982,7 @@
 
     .line 37
     .line 38
-    invoke-static {p0}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 39
     .line 40
@@ -1101,7 +1101,7 @@
 
     .line 37
     .line 38
-    invoke-static {p0}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 39
     .line 40
@@ -1209,7 +1209,7 @@
 
     .line 34
     .line 35
-    invoke-static {p1, v0}, Lkd0;->v(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lw31;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 36
     .line 37
@@ -1392,7 +1392,7 @@
 
     .line 26
     :cond_2
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLKey;->ctx:Lorg/conscrypt/NativeRef$EVP_PKEY;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLKey;->ctx:Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 27
     .line 28
@@ -1404,15 +1404,15 @@
     move-result-object p1
 
     .line 32
-    invoke-static {v1, p1}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_cmp(Lorg/conscrypt/NativeRef$EVP_PKEY;Lorg/conscrypt/NativeRef$EVP_PKEY;)I
+    invoke-static {p0, p1}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_cmp(Lorg/conscrypt/NativeRef$EVP_PKEY;Lorg/conscrypt/NativeRef$EVP_PKEY;)I
 
     .line 33
     .line 34
     .line 35
-    move-result p1
+    move-result p0
 
     .line 36
-    if-ne p1, v0, :cond_3
+    if-ne p0, v0, :cond_3
 
     .line 37
     .line 38
@@ -1424,14 +1424,14 @@
 .end method
 
 .method public getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLKey;->ctx:Lorg/conscrypt/NativeRef$EVP_PKEY;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLKey;->ctx:Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPrivateKey()Ljava/security/PrivateKey;
@@ -1466,21 +1466,21 @@
 
     .line 52
     :cond_0
-    new-instance v0, Ljava/security/NoSuchAlgorithmException;
+    new-instance p0, Ljava/security/NoSuchAlgorithmException;
 
-    const-string v1, "unknown PKEY type"
+    const-string v0, "unknown PKEY type"
 
-    invoke-direct {v0, v1}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
 
-    throw v0
+    throw p0
 
     .line 53
     :cond_1
     invoke-static {p0}, Lorg/conscrypt/OpenSSLRSAPrivateKey;->getInstance(Lorg/conscrypt/OpenSSLKey;)Lorg/conscrypt/OpenSSLRSAPrivateKey;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPublicKey()Ljava/security/PublicKey;
@@ -1515,13 +1515,13 @@
 
     .line 52
     :cond_0
-    new-instance v0, Ljava/security/NoSuchAlgorithmException;
+    new-instance p0, Ljava/security/NoSuchAlgorithmException;
 
-    const-string v1, "unknown PKEY type"
+    const-string v0, "unknown PKEY type"
 
-    invoke-direct {v0, v1}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
 
-    throw v0
+    throw p0
 
     .line 53
     :cond_1
@@ -1533,42 +1533,42 @@
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLKey;->ctx:Lorg/conscrypt/NativeRef$EVP_PKEY;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLKey;->ctx:Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/NativeRef;->hashCode()I
+    invoke-virtual {p0}, Lorg/conscrypt/NativeRef;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public isHardwareBacked()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lorg/conscrypt/OpenSSLKey;->hardwareBacked:Z
+    iget-boolean p0, p0, Lorg/conscrypt/OpenSSLKey;->hardwareBacked:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isWrapped()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lorg/conscrypt/OpenSSLKey;->wrapped:Z
+    iget-boolean p0, p0, Lorg/conscrypt/OpenSSLKey;->wrapped:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

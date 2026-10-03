@@ -1,6 +1,6 @@
 .class public final Lio/sentry/internal/gestures/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -105,7 +105,7 @@
 
     .line 20
     .line 21
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 22
     .line 23
@@ -117,7 +117,7 @@
 
     .line 26
     .line 27
-    iget-object v0, p0, Lio/sentry/internal/gestures/b;->c:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/internal/gestures/b;->c:Ljava/lang/String;
 
     .line 28
     .line 29
@@ -125,98 +125,78 @@
 
     .line 30
     .line 31
-    invoke-static {v0, p1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 32
     .line 33
     .line 34
-    move-result p1
+    move-result p0
 
     .line 35
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 36
     .line 37
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 38
-    invoke-static {p1, p1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p0}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 39
     .line 40
     .line 41
-    move-result p1
+    move-result p0
 
     .line 42
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 43
     .line 44
     :goto_0
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 45
-    return p1
+    return p0
 
     .line 46
     :cond_2
     :goto_1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 47
-    return p1
+    return p0
 .end method
 
 .method public final hashCode()I
-    .locals 3
+    .locals 2
 
     .line 1
-    const/4 v0, 0x3
+    iget-object v0, p0, Lio/sentry/internal/gestures/b;->c:Ljava/lang/String;
 
     .line 2
-    new-array v0, v0, [Ljava/lang/Object;
-
     .line 3
-    .line 4
     const/4 v1, 0x0
 
+    .line 4
+    iget-object p0, p0, Lio/sentry/internal/gestures/b;->a:Ljava/lang/ref/WeakReference;
+
     .line 5
-    iget-object v2, p0, Lio/sentry/internal/gestures/b;->a:Ljava/lang/ref/WeakReference;
-
     .line 6
-    .line 7
-    aput-object v2, v0, v1
+    filled-new-array {p0, v0, v1}, [Ljava/lang/Object;
 
+    .line 7
     .line 8
     .line 9
-    const/4 v1, 0x1
+    move-result-object p0
 
     .line 10
-    iget-object v2, p0, Lio/sentry/internal/gestures/b;->c:Ljava/lang/String;
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     .line 11
     .line 12
-    aput-object v2, v0, v1
-
     .line 13
+    move-result p0
+
     .line 14
-    const/4 v1, 0x0
-
-    .line 15
-    const/4 v2, 0x2
-
-    .line 16
-    aput-object v1, v0, v2
-
-    .line 17
-    .line 18
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v0
-
-    .line 22
-    return v0
+    return p0
 .end method

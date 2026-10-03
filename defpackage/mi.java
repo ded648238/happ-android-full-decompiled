@@ -1,15 +1,37 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class mi {
-    public abstract float a(int i);
+import java.util.Map;
 
-    public abstract int b();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class mi extends ou3 implements xi2 {
+    public static final mi Y;
+    public static final mi Z;
+    public final /* synthetic */ int X;
 
-    public abstract mi c();
+    static {
+        int i = 2;
+        Y = new mi(i, 0);
+        Z = new mi(i, 1);
+    }
 
-    public abstract void d();
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ mi(int i, int i2) {
+        super(i);
+        this.X = i2;
+    }
 
-    public abstract void e(int i, float f);
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        switch (this.X) {
+            case 0:
+                long j = ((z73) obj).a;
+                long j2 = ((z73) obj2).a;
+                Map map = sl8.a;
+                return w97.H(0.0f, 400.0f, new z73(4294967297L), 1);
+            default:
+                sx1 sx1Var = (sx1) obj2;
+                return Boolean.valueOf(((sx1) obj) == sx1Var && sx1Var == sx1.Z);
+        }
+    }
 }

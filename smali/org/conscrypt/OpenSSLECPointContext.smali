@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/OpenSSLECPointContext;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -127,27 +127,27 @@
 
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
     .line 2
     .line 3
-    const-string v0, "OpenSSLECPointContext.equals is not defined."
+    const-string p1, "OpenSSLECPointContext.equals is not defined."
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method public getECPoint()Ljava/security/spec/ECPoint;
-    .locals 4
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/OpenSSLECPointContext;->group:Lorg/conscrypt/OpenSSLECGroupContext;
@@ -162,75 +162,75 @@
     move-result-object v0
 
     .line 7
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLECPointContext;->pointCtx:Lorg/conscrypt/NativeRef$EC_POINT;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECPointContext;->pointCtx:Lorg/conscrypt/NativeRef$EC_POINT;
 
     .line 8
     .line 9
-    invoke-static {v0, v1}, Lorg/conscrypt/NativeCrypto;->EC_POINT_get_affine_coordinates(Lorg/conscrypt/NativeRef$EC_GROUP;Lorg/conscrypt/NativeRef$EC_POINT;)[[B
+    invoke-static {v0, p0}, Lorg/conscrypt/NativeCrypto;->EC_POINT_get_affine_coordinates(Lorg/conscrypt/NativeRef$EC_GROUP;Lorg/conscrypt/NativeRef$EC_POINT;)[[B
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    new-instance v1, Ljava/math/BigInteger;
+    new-instance v0, Ljava/math/BigInteger;
 
     .line 14
     .line 15
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 16
-    aget-object v2, v0, v2
+    aget-object v1, p0, v1
 
     .line 17
     .line 18
-    invoke-direct {v1, v2}, Ljava/math/BigInteger;-><init>([B)V
+    invoke-direct {v0, v1}, Ljava/math/BigInteger;-><init>([B)V
 
     .line 19
     .line 20
     .line 21
-    new-instance v2, Ljava/math/BigInteger;
+    new-instance v1, Ljava/math/BigInteger;
 
     .line 22
     .line 23
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
     .line 24
-    aget-object v0, v0, v3
+    aget-object p0, p0, v2
 
     .line 25
     .line 26
-    invoke-direct {v2, v0}, Ljava/math/BigInteger;-><init>([B)V
+    invoke-direct {v1, p0}, Ljava/math/BigInteger;-><init>([B)V
 
     .line 27
     .line 28
     .line 29
-    new-instance v0, Ljava/security/spec/ECPoint;
+    new-instance p0, Ljava/security/spec/ECPoint;
 
     .line 30
     .line 31
-    invoke-direct {v0, v1, v2}, Ljava/security/spec/ECPoint;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+    invoke-direct {p0, v0, v1}, Ljava/security/spec/ECPoint;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
 
     .line 32
     .line 33
     .line 34
-    return-object v0
+    return-object p0
 .end method
 
 .method public getNativeRef()Lorg/conscrypt/NativeRef$EC_POINT;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLECPointContext;->pointCtx:Lorg/conscrypt/NativeRef$EC_POINT;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECPointContext;->pointCtx:Lorg/conscrypt/NativeRef$EC_POINT;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
@@ -238,8 +238,8 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method

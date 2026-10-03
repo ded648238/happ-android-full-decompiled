@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion$factory$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/platform/android/DeferredSocketAdapter$Factory;
@@ -65,7 +65,7 @@
 
 # virtual methods
 .method public create(Ljavax/net/ssl/SSLSocket;)Lokhttp3/internal/platform/android/SocketAdapter;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -73,7 +73,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->Companion:Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion;
+    sget-object p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->Companion:Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion;
 
     .line 5
     .line 6
@@ -85,19 +85,19 @@
     move-result-object p1
 
     .line 10
-    invoke-static {v0, p1}, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion;->access$build(Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion;Ljava/lang/Class;)Lokhttp3/internal/platform/android/AndroidSocketAdapter;
+    invoke-static {p0, p1}, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion;->access$build(Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion;Ljava/lang/Class;)Lokhttp3/internal/platform/android/AndroidSocketAdapter;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    move-result-object p0
 
     .line 14
-    return-object p1
+    return-object p0
 .end method
 
 .method public matchesSocket(Ljavax/net/ssl/SSLSocket;)Z
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -130,20 +130,20 @@
     .line 15
     .line 16
     .line 17
-    iget-object v1, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion$factory$1;->$packageName:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion$factory$1;->$packageName:Ljava/lang/String;
 
     .line 18
     .line 19
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 20
     .line 21
     .line 22
-    const/16 v1, 0x2e
+    const/16 p0, 0x2e
 
     .line 23
     .line 24
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 25
     .line 26
@@ -153,19 +153,19 @@
     .line 28
     .line 29
     .line 30
-    move-result-object v0
+    move-result-object p0
 
     .line 31
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 32
-    invoke-static {p1, v1, v0}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {p1, v0, p0}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 33
     .line 34
     .line 35
-    move-result p1
+    move-result p0
 
     .line 36
-    return p1
+    return p0
 .end method

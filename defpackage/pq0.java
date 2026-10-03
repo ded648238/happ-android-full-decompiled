@@ -1,32 +1,38 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class pq0 implements g72 {
-    public final /* synthetic */ int Q;
-    public final /* synthetic */ uq0 R;
+import java.io.Serializable;
 
-    public /* synthetic */ pq0(uq0 uq0Var, t74 t74Var) {
-        this.Q = 0;
-        this.R = uq0Var;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class pq0 implements Comparable, Serializable {
+    public String X;
+    public Class Y;
+    public int Z;
+
+    public pq0(Class cls) {
+        this.Y = cls;
+        String name = cls.getName();
+        this.X = name;
+        this.Z = name.hashCode();
     }
 
-    @Override // defpackage.g72
-    public final Object invoke() {
-        int i = this.Q;
-        uq0 uq0Var = this.R;
-        switch (i) {
-            case 0:
-                throw null;
-            case 1:
-                return uq0Var.m();
-            default:
-                return uq0Var.m();
+    @Override // java.lang.Comparable
+    public final int compareTo(Object obj) {
+        return this.X.compareTo(((pq0) obj).X);
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
         }
+        return obj != null && obj.getClass() == pq0.class && ((pq0) obj).Y == this.Y;
     }
 
-    public /* synthetic */ pq0(int i, uq0 uq0Var) {
-        this.Q = i;
-        this.R = uq0Var;
+    public final int hashCode() {
+        return this.Z;
+    }
+
+    public final String toString() {
+        return this.X;
     }
 }

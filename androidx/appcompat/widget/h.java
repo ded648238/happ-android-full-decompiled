@@ -5,127 +5,128 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
-import defpackage.h34;
-import defpackage.hm0;
-import defpackage.k24;
-import defpackage.p24;
-import defpackage.qm6;
+import androidx.appcompat.widget.Toolbar;
+import defpackage.ck4;
+import defpackage.fb7;
+import defpackage.gj4;
+import defpackage.lj4;
+import defpackage.nt0;
 import java.util.ArrayList;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class h implements h34 {
-    public k24 Q;
-    public p24 R;
-    public final /* synthetic */ Toolbar S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class h implements ck4 {
+    public gj4 X;
+    public lj4 Y;
+    public final /* synthetic */ Toolbar Z;
 
     public h(Toolbar toolbar) {
-        this.S = toolbar;
+        this.Z = toolbar;
     }
 
-    @Override // defpackage.h34
-    public final boolean c(qm6 qm6Var) {
+    @Override // defpackage.ck4
+    public final boolean b(fb7 fb7Var) {
         return false;
     }
 
-    @Override // defpackage.h34
-    public final boolean d() {
+    @Override // defpackage.ck4
+    public final boolean c() {
         return false;
     }
 
-    @Override // defpackage.h34
-    public final boolean e(p24 p24Var) {
-        Toolbar toolbar = this.S;
-        KeyEvent.Callback callback = toolbar.b0;
-        if (callback instanceof hm0) {
-            ((hm0) callback).onActionViewCollapsed();
+    @Override // defpackage.ck4
+    public final boolean e(lj4 lj4Var) {
+        Toolbar toolbar = this.Z;
+        KeyEvent.Callback callback = toolbar.k0;
+        if (callback instanceof nt0) {
+            ((nt0) callback).onActionViewCollapsed();
         }
-        toolbar.removeView(toolbar.b0);
-        toolbar.removeView(toolbar.a0);
-        toolbar.b0 = null;
-        ArrayList arrayList = toolbar.x0;
+        toolbar.removeView(toolbar.k0);
+        toolbar.removeView(toolbar.j0);
+        toolbar.k0 = null;
+        ArrayList arrayList = toolbar.G0;
         for (int size = arrayList.size() - 1; size >= 0; size--) {
             toolbar.addView((View) arrayList.get(size));
         }
         arrayList.clear();
-        this.R = null;
+        this.Y = null;
         toolbar.requestLayout();
-        p24Var.C = false;
-        p24Var.n.p(false);
+        lj4Var.C = false;
+        lj4Var.n.p(false);
         toolbar.v();
         return true;
     }
 
-    @Override // defpackage.h34
-    public final boolean h(p24 p24Var) {
-        Toolbar toolbar = this.S;
+    @Override // defpackage.ck4
+    public final boolean h(lj4 lj4Var) {
+        Toolbar toolbar = this.Z;
         toolbar.c();
-        ViewParent parent = toolbar.a0.getParent();
+        ViewParent parent = toolbar.j0.getParent();
         if (parent != toolbar) {
             if (parent instanceof ViewGroup) {
-                ((ViewGroup) parent).removeView(toolbar.a0);
+                ((ViewGroup) parent).removeView(toolbar.j0);
             }
-            toolbar.addView(toolbar.a0);
+            toolbar.addView(toolbar.j0);
         }
-        View actionView = p24Var.getActionView();
-        toolbar.b0 = actionView;
-        this.R = p24Var;
+        View actionView = lj4Var.getActionView();
+        toolbar.k0 = actionView;
+        this.Y = lj4Var;
         ViewParent parent2 = actionView.getParent();
         if (parent2 != toolbar) {
             if (parent2 instanceof ViewGroup) {
-                ((ViewGroup) parent2).removeView(toolbar.b0);
+                ((ViewGroup) parent2).removeView(toolbar.k0);
             }
-            Toolbar.LayoutParams layoutParamsH = Toolbar.h();
-            layoutParamsH.a = (toolbar.g0 & 112) | 8388611;
-            layoutParamsH.b = 2;
-            toolbar.b0.setLayoutParams(layoutParamsH);
-            toolbar.addView(toolbar.b0);
+            Toolbar.LayoutParams h = Toolbar.h();
+            h.a = (toolbar.p0 & 112) | 8388611;
+            h.b = 2;
+            toolbar.k0.setLayoutParams(h);
+            toolbar.addView(toolbar.k0);
         }
         for (int childCount = toolbar.getChildCount() - 1; childCount >= 0; childCount--) {
             View childAt = toolbar.getChildAt(childCount);
-            if (((Toolbar.LayoutParams) childAt.getLayoutParams()).b != 2 && childAt != toolbar.Q) {
+            if (((Toolbar.LayoutParams) childAt.getLayoutParams()).b != 2 && childAt != toolbar.c0) {
                 toolbar.removeViewAt(childCount);
-                toolbar.x0.add(childAt);
+                toolbar.G0.add(childAt);
             }
         }
         toolbar.requestLayout();
-        p24Var.C = true;
-        p24Var.n.p(false);
-        KeyEvent.Callback callback = toolbar.b0;
-        if (callback instanceof hm0) {
-            ((hm0) callback).onActionViewExpanded();
+        lj4Var.C = true;
+        lj4Var.n.p(false);
+        KeyEvent.Callback callback = toolbar.k0;
+        if (callback instanceof nt0) {
+            ((nt0) callback).onActionViewExpanded();
         }
         toolbar.v();
         return true;
     }
 
-    @Override // defpackage.h34
+    @Override // defpackage.ck4
     public final void i() {
-        if (this.R != null) {
-            k24 k24Var = this.Q;
-            if (k24Var != null) {
-                int size = k24Var.f.size();
+        if (this.Y != null) {
+            gj4 gj4Var = this.X;
+            if (gj4Var != null) {
+                int size = gj4Var.f.size();
                 for (int i = 0; i < size; i++) {
-                    if (this.Q.getItem(i) == this.R) {
+                    if (this.X.getItem(i) == this.Y) {
                         return;
                     }
                 }
             }
-            e(this.R);
+            e(this.Y);
         }
     }
 
-    @Override // defpackage.h34
-    public final void k(Context context, k24 k24Var) {
-        p24 p24Var;
-        k24 k24Var2 = this.Q;
-        if (k24Var2 != null && (p24Var = this.R) != null) {
-            k24Var2.d(p24Var);
+    @Override // defpackage.ck4
+    public final void k(Context context, gj4 gj4Var) {
+        lj4 lj4Var;
+        gj4 gj4Var2 = this.X;
+        if (gj4Var2 != null && (lj4Var = this.Y) != null) {
+            gj4Var2.d(lj4Var);
         }
-        this.Q = k24Var;
+        this.X = gj4Var;
     }
 
-    @Override // defpackage.h34
-    public final void a(k24 k24Var, boolean z) {
+    @Override // defpackage.ck4
+    public final void d(gj4 gj4Var, boolean z) {
     }
 }

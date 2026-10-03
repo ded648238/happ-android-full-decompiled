@@ -1,10 +1,10 @@
 .class public Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;
 .super Landroid/app/Activity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:Landroid/os/ResultReceiver;
+.field public X:Landroid/os/ResultReceiver;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     .line 5
     .line 6
-    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->Q:Landroid/os/ResultReceiver;
+    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->X:Landroid/os/ResultReceiver;
 
     .line 7
     .line 8
@@ -216,7 +216,7 @@
 
     .line 53
     .line 54
-    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->Q:Landroid/os/ResultReceiver;
+    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->X:Landroid/os/ResultReceiver;
 
     .line 55
     .line 56
@@ -243,7 +243,7 @@
 
     .line 66
     .line 67
-    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->Q:Landroid/os/ResultReceiver;
+    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->X:Landroid/os/ResultReceiver;
 
     .line 68
     .line 69
@@ -298,6 +298,8 @@
     .line 93
     .line 94
     move-result-object v3
+    :try_end_0
+    .catch Landroid/content/IntentSender$SendIntentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 95
     const/4 v7, 0x0
@@ -315,9 +317,10 @@
     move-object v2, p0
 
     .line 100
+    :try_start_1
     invoke-virtual/range {v2 .. v8}, Landroid/app/Activity;->startIntentSenderForResult(Landroid/content/IntentSender;ILandroid/content/Intent;III)V
-    :try_end_0
-    .catch Landroid/content/IntentSender$SendIntentException; {:try_start_0 .. :try_end_0} :catch_0
+    :try_end_1
+    .catch Landroid/content/IntentSender$SendIntentException; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 101
     .line 102
@@ -326,33 +329,34 @@
 
     .line 104
     :catch_0
-    nop
+    move-object v2, p0
 
     .line 105
-    iget-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->Q:Landroid/os/ResultReceiver;
+    :catch_1
+    iget-object p0, v2, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->X:Landroid/os/ResultReceiver;
 
     .line 106
     .line 107
-    if-eqz p1, :cond_3
+    if-eqz p0, :cond_3
 
     .line 108
     .line 109
-    new-instance v1, Landroid/os/Bundle;
+    new-instance p1, Landroid/os/Bundle;
 
     .line 110
     .line 111
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
 
     .line 112
     .line 113
     .line 114
-    invoke-virtual {p1, v0, v1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v0, p1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
 
     .line 115
     .line 116
     .line 117
     :cond_3
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v2}, Landroid/app/Activity;->finish()V
 
     .line 118
     .line 119
@@ -361,38 +365,41 @@
 
     .line 121
     :cond_4
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    move-object v2, p0
 
     .line 122
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
     .line 123
     .line 124
-    move-result-object p1
-
     .line 125
-    check-cast p1, Landroid/os/ResultReceiver;
+    move-result-object p0
 
     .line 126
-    .line 127
-    iput-object p1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->Q:Landroid/os/ResultReceiver;
+    check-cast p0, Landroid/os/ResultReceiver;
 
+    .line 127
     .line 128
+    iput-object p0, v2, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->X:Landroid/os/ResultReceiver;
+
     .line 129
+    .line 130
     return-void
 .end method
 
 .method public final onSaveInstanceState(Landroid/os/Bundle;)V
-    .locals 2
+    .locals 1
 
     .line 1
     const-string v0, "result_receiver"
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->Q:Landroid/os/ResultReceiver;
+    iget-object p0, p0, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->X:Landroid/os/ResultReceiver;
 
     .line 4
     .line 5
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+    invoke-virtual {p1, v0, p0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 6
     .line 7

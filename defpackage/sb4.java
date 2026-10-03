@@ -1,53 +1,61 @@
 package defpackage;
 
-import j$.util.Objects;
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.TreeMap;
+import android.widget.LinearLayout;
+import androidx.recyclerview.widget.RecyclerView;
+import su.happ.proxyutility.feature.main.MainActivity;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class sb4 {
-    public final LinkedHashMap a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class sb4 implements Runnable {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ MainActivity Y;
 
-    public sb4(tb4 tb4Var) {
-        Map map = tb4Var.a;
-        LinkedHashMap linkedHashMap = new LinkedHashMap();
-        for (Map.Entry entry : map.entrySet()) {
-            linkedHashMap.put(entry.getKey(), nm0.a1((Collection) entry.getValue()));
+    public /* synthetic */ sb4(MainActivity mainActivity, int i) {
+        this.X = i;
+        this.Y = mainActivity;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        int i = this.X;
+        MainActivity mainActivity = this.Y;
+        switch (i) {
+            case 0:
+                a6 a6Var = mainActivity.N0;
+                if (a6Var == null) {
+                    m93.a0("binding");
+                    throw null;
+                }
+                ((RecyclerView) a6Var.x0).setVisibility(8);
+                a6 a6Var2 = mainActivity.N0;
+                if (a6Var2 == null) {
+                    m93.a0("binding");
+                    throw null;
+                }
+                LinearLayout linearLayout = a6Var2.u0;
+                if (linearLayout != null) {
+                    linearLayout.setVisibility(8);
+                    return;
+                }
+                return;
+            default:
+                a6 a6Var3 = mainActivity.N0;
+                if (a6Var3 == null) {
+                    m93.a0("binding");
+                    throw null;
+                }
+                ((RecyclerView) a6Var3.x0).setVisibility(0);
+                a6 a6Var4 = mainActivity.N0;
+                if (a6Var4 == null) {
+                    m93.a0("binding");
+                    throw null;
+                }
+                LinearLayout linearLayout2 = a6Var4.u0;
+                if (linearLayout2 != null) {
+                    linearLayout2.setVisibility(0);
+                    return;
+                }
+                return;
         }
-        this.a = linkedHashMap;
-    }
-
-    public void a(l44... l44VarArr) {
-        for (l44 l44Var : l44VarArr) {
-            int i = l44Var.a;
-            int i2 = l44Var.b;
-            Integer numValueOf = Integer.valueOf(i);
-            LinkedHashMap linkedHashMap = this.a;
-            Object treeMap = linkedHashMap.get(numValueOf);
-            if (treeMap == null) {
-                treeMap = new TreeMap();
-                linkedHashMap.put(numValueOf, treeMap);
-            }
-            TreeMap treeMap2 = (TreeMap) treeMap;
-            if (treeMap2.containsKey(Integer.valueOf(i2))) {
-                Objects.toString(treeMap2.get(Integer.valueOf(i2)));
-                l44Var.toString();
-            }
-            treeMap2.put(Integer.valueOf(i2), l44Var);
-        }
-    }
-
-    public void b(String str) {
-        String lowerCase = "Cache-Control".toLowerCase(Locale.ROOT);
-        lowerCase.getClass();
-        this.a.put(lowerCase, ub.M(str));
-    }
-
-    public sb4() {
-        this.a = new LinkedHashMap();
     }
 }

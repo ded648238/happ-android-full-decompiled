@@ -1,6 +1,6 @@
-.class public final Lp56;
-.super Ltv3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lp56;
+.super Ljq4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -9,25 +9,77 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 5
 
     .line 1
     new-instance v0, Lp56;
 
     .line 2
     .line 3
-    const/16 v1, 0x1b
+    const-string v1, "getSubscriptionSendHwidEnabled()Ljava/lang/Boolean;"
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ltv3;-><init>(I)V
+    const/4 v2, 0x0
+
+    .line 6
+    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 7
+    .line 8
+    const-string v4, "subscriptionSendHwidEnabled"
+
+    .line 9
+    .line 10
+    invoke-direct {v0, v3, v4, v1, v2}, Ljq4;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v0, Lp56;->X:Lp56;
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final E(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    check-cast p2, Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
+    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->K2(Ljava/lang/Boolean;)V
 
     .line 6
     .line 7
     .line 8
-    sput-object v0, Lp56;->X:Lp56;
-
-    .line 9
-    .line 10
     return-void
+.end method
+
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->X0()Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
 .end method

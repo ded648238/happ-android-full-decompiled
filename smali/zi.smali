@@ -1,37 +1,58 @@
 .class public final Lzi;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Landroid/graphics/drawable/Drawable$ConstantState;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public a:Luc7;
+.field public a:Lqg8;
 
-.field public b:Ljava/lang/reflect/Method;
+.field public b:Landroid/animation/AnimatorSet;
 
-.field public c:Le21;
+.field public c:Ljava/util/ArrayList;
+
+.field public d:Lat;
 
 
-# direct methods
-.method public constructor <init>(Luc7;Ljava/lang/reflect/Method;Le21;)V
+# virtual methods
+.method public final getChangingConfigurations()I
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final newDrawable()Landroid/graphics/drawable/Drawable;
+    .locals 1
+
+    .line 1
+    new-instance p0, Ljava/lang/IllegalStateException;
 
     .line 2
     .line 3
+    const-string v0, "No constant state support for SDK < 24."
+
     .line 4
-    iput-object p1, p0, Lzi;->a:Luc7;
-
     .line 5
-    .line 6
-    iput-object p2, p0, Lzi;->b:Ljava/lang/reflect/Method;
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
-    iput-object p3, p0, Lzi;->c:Le21;
+    throw p0
+.end method
+
+.method public final newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
+    .locals 0
 
     .line 9
-    .line 10
-    return-void
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string p1, "No constant state support for SDK < 24."
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method

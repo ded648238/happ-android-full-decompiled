@@ -1,6 +1,6 @@
 .class public final Lokhttp3/ResponseBody$BomAwareReader;
 .super Ljava/io/Reader;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -20,12 +20,12 @@
     d2 = {
         "Lokhttp3/ResponseBody$BomAwareReader;",
         "Ljava/io/Reader;",
-        "Ls50;",
+        "Lf80;",
         "source",
         "Ljava/nio/charset/Charset;",
         "charset",
         "<init>",
-        "(Ls50;Ljava/nio/charset/Charset;)V",
+        "(Lf80;Ljava/nio/charset/Charset;)V",
         "",
         "cbuf",
         "",
@@ -33,10 +33,10 @@
         "len",
         "read",
         "([CII)I",
-        "Lbh7;",
+        "Lr98;",
         "close",
         "()V",
-        "Ls50;",
+        "Lf80;",
         "Ljava/nio/charset/Charset;",
         "",
         "closed",
@@ -62,11 +62,11 @@
 
 .field private delegate:Ljava/io/Reader;
 
-.field private final source:Ls50;
+.field private final source:Lf80;
 
 
 # direct methods
-.method public constructor <init>(Ls50;Ljava/nio/charset/Charset;)V
+.method public constructor <init>(Lf80;Ljava/nio/charset/Charset;)V
     .locals 0
 
     .line 1
@@ -85,7 +85,7 @@
     .line 8
     .line 9
     .line 10
-    iput-object p1, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Ls50;
+    iput-object p1, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lf80;
 
     .line 11
     .line 12
@@ -127,7 +127,7 @@
     .line 9
     .line 10
     .line 11
-    sget-object v0, Lbh7;->a:Lbh7;
+    sget-object v0, Lr98;->a:Lr98;
 
     .line 12
     .line 13
@@ -143,11 +143,11 @@
 
     .line 16
     .line 17
-    iget-object v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lf80;
 
     .line 18
     .line 19
-    invoke-interface {v0}, Ljava/io/Closeable;->close()V
+    invoke-interface {p0}, Ljava/io/Closeable;->close()V
 
     .line 20
     .line 21
@@ -190,11 +190,11 @@
 
     .line 13
     .line 14
-    iget-object v1, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lf80;
 
     .line 15
     .line 16
-    invoke-interface {v1}, Ls50;->H0()Ljava/io/InputStream;
+    invoke-interface {v1}, Lf80;->V0()Ljava/io/InputStream;
 
     .line 17
     .line 18
@@ -202,7 +202,7 @@
     move-result-object v1
 
     .line 20
-    iget-object v2, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Ls50;
+    iget-object v2, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lf80;
 
     .line 21
     .line 22
@@ -210,7 +210,7 @@
 
     .line 23
     .line 24
-    invoke-static {v2, v3}, Lokhttp3/internal/Util;->readBomAsCharset(Ls50;Ljava/nio/charset/Charset;)Ljava/nio/charset/Charset;
+    invoke-static {v2, v3}, Lokhttp3/internal/Util;->readBomAsCharset(Lf80;Ljava/nio/charset/Charset;)Ljava/nio/charset/Charset;
 
     .line 25
     .line 26
@@ -233,24 +233,24 @@
     .line 34
     .line 35
     .line 36
-    move-result p1
+    move-result p0
 
     .line 37
-    return p1
+    return p0
 
     .line 38
     :cond_1
-    const-string p1, "Stream closed"
+    const-string p0, "Stream closed"
 
     .line 39
     .line 40
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 41
     .line 42
     .line 43
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 44
-    return p1
+    return p0
 .end method

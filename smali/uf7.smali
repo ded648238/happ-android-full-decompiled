@@ -1,32 +1,22 @@
 .class public final Luf7;
-.super Leh6;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final b:Luf7;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# virtual methods
+.method public final serializer()Lvo3;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lvo3;"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Luf7;
+    sget-object p0, Ltf7;->a:Ltf7;
 
     .line 2
     .line 3
-    const/4 v1, -0x1
-
-    .line 4
-    invoke-direct {v0, v1}, Leh6;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, Luf7;->b:Luf7;
-
-    .line 8
-    .line 9
-    return-void
+    return-object p0
 .end method

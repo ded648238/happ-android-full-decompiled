@@ -1,12 +1,12 @@
 .class public final Lsu/happ/proxyutility/dto/DownloadFilesData;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\t\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\u0007\u0008\u0087\u0008\u0018\u00002\u00020\u0001R\u0017\u0010\u0003\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006R\u0017\u0010\u0008\u001a\u00020\u00078\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0008\u0010\t\u001a\u0004\u0008\n\u0010\u000bR\u0017\u0010\u000c\u001a\u00020\u00078\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000c\u0010\t\u001a\u0004\u0008\r\u0010\u000b\u00a8\u0006\u000e"
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\t\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\t\u0008\u0087\u0008\u0018\u00002\u00020\u0001R\u0017\u0010\u0003\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006R\u0017\u0010\u0008\u001a\u00020\u00078\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0008\u0010\t\u001a\u0004\u0008\n\u0010\u000bR\u0017\u0010\u000c\u001a\u00020\u00078\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000c\u0010\t\u001a\u0004\u0008\r\u0010\u000bR\u0017\u0010\u000e\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000e\u0010\u0004\u001a\u0004\u0008\u000f\u0010\u0006\u00a8\u0006\u0010"
     }
     d2 = {
         "Lsu/happ/proxyutility/dto/DownloadFilesData;",
@@ -22,6 +22,8 @@
         "b",
         "()Ljava/lang/String;",
         "url",
+        "d",
+        "rangeStart",
         "c",
         "app"
     }
@@ -44,36 +46,47 @@
 
 .field private final path:Ljava/lang/String;
 
+.field private final rangeStart:J
+
 .field private final url:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(JLjava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(JLjava/lang/String;Ljava/lang/String;J)V
     .locals 0
 
     .line 1
-    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
     .line 6
     .line 7
-    iput-wide p1, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->id:J
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 8
     .line 9
+    .line 10
+    iput-wide p1, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->id:J
+
+    .line 11
+    .line 12
     iput-object p3, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->path:Ljava/lang/String;
 
-    .line 10
-    .line 11
+    .line 13
+    .line 14
     iput-object p4, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->url:Ljava/lang/String;
 
-    .line 12
-    .line 13
+    .line 15
+    .line 16
+    iput-wide p5, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->rangeStart:J
+
+    .line 17
+    .line 18
     return-void
 .end method
 
@@ -91,25 +104,36 @@
 .end method
 
 .method public final b()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->path:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->path:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final c()Ljava/lang/String;
-    .locals 1
+.method public final c()J
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->url:Ljava/lang/String;
+    iget-wide v0, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->rangeStart:J
 
     .line 2
     .line 3
-    return-object v0
+    return-wide v0
+.end method
+
+.method public final d()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->url:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -174,7 +198,7 @@
 
     .line 25
     .line 26
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 27
     .line 28
@@ -194,19 +218,19 @@
 
     .line 34
     .line 35
-    iget-object p1, p1, Lsu/happ/proxyutility/dto/DownloadFilesData;->url:Ljava/lang/String;
+    iget-object v3, p1, Lsu/happ/proxyutility/dto/DownloadFilesData;->url:Ljava/lang/String;
 
     .line 36
     .line 37
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 38
     .line 39
     .line 40
-    move-result p1
+    move-result v1
 
     .line 41
-    if-nez p1, :cond_4
+    if-nez v1, :cond_4
 
     .line 42
     .line 43
@@ -214,71 +238,96 @@
 
     .line 44
     :cond_4
+    iget-wide v3, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->rangeStart:J
+
+    .line 45
+    .line 46
+    iget-wide p0, p1, Lsu/happ/proxyutility/dto/DownloadFilesData;->rangeStart:J
+
+    .line 47
+    .line 48
+    cmp-long p0, v3, p0
+
+    .line 49
+    .line 50
+    if-eqz p0, :cond_5
+
+    .line 51
+    .line 52
+    return v2
+
+    .line 53
+    :cond_5
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 4
+    .locals 3
 
     .line 1
     iget-wide v0, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->id:J
 
     .line 2
     .line 3
-    const/16 v2, 0x20
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
 
     .line 4
     .line 5
-    ushr-long v2, v0, v2
-
     .line 6
-    .line 7
-    xor-long/2addr v0, v2
-
-    .line 8
-    long-to-int v1, v0
-
-    .line 9
-    const/16 v0, 0x1f
-
-    .line 10
-    .line 11
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 12
-    .line 13
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->path:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-static {v1, v0, v2}, Lxy4;->p(IILjava/lang/String;)I
-
-    .line 16
-    .line 17
-    .line 18
     move-result v0
 
-    .line 19
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->url:Ljava/lang/String;
+    .line 7
+    const/16 v1, 0x1f
 
+    .line 8
+    .line 9
+    mul-int/2addr v0, v1
+
+    .line 10
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->path:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->url:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
+
+    .line 19
     .line 20
     .line 21
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    move-result v0
 
     .line 22
+    iget-wide v1, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->rangeStart:J
+
     .line 23
     .line 24
-    move-result v1
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
 
     .line 25
-    add-int/2addr v1, v0
-
     .line 26
-    return v1
+    .line 27
+    move-result p0
+
+    .line 28
+    add-int/2addr p0, v0
+
+    .line 29
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 6
+    .locals 7
 
     .line 1
     iget-wide v0, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->id:J
@@ -293,68 +342,76 @@
 
     .line 6
     .line 7
-    new-instance v4, Ljava/lang/StringBuilder;
+    iget-wide v4, p0, Lsu/happ/proxyutility/dto/DownloadFilesData;->rangeStart:J
 
     .line 8
     .line 9
-    const-string v5, "DownloadFilesData(id="
+    new-instance p0, Ljava/lang/StringBuilder;
 
     .line 10
     .line 11
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "DownloadFilesData(id="
 
     .line 12
     .line 13
-    .line 14
-    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {p0, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 14
     .line 15
     .line 16
-    .line 17
-    const-string v0, ", path="
+    invoke-virtual {p0, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
+    .line 17
     .line 18
     .line 19
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, ", path="
 
     .line 20
     .line 21
-    .line 22
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 22
     .line 23
     .line 24
-    .line 25
-    const-string v0, ", url="
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 25
     .line 26
     .line 27
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, ", url="
 
     .line 28
     .line 29
-    .line 30
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 30
     .line 31
     .line 32
-    .line 33
-    const-string v0, ")"
+    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 33
     .line 34
     .line 35
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, ", rangeStart="
 
     .line 36
     .line 37
-    .line 38
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 38
     .line 39
     .line 40
-    .line 41
-    move-result-object v0
+    const-string v0, ")"
 
+    .line 41
     .line 42
-    return-object v0
+    invoke-static {v4, v5, v0, p0}, Lc73;->f(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p0
+
+    .line 46
+    return-object p0
 .end method

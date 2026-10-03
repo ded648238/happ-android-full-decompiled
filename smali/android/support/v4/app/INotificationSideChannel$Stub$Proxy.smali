@@ -1,6 +1,6 @@
 .class Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/support/v4/app/INotificationSideChannel;
@@ -41,14 +41,14 @@
 
 # virtual methods
 .method public asBinder()Landroid/os/IBinder;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+    iget-object p0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public cancel(Ljava/lang/String;ILjava/lang/String;)V
@@ -93,20 +93,20 @@
     .line 17
     .line 18
     .line 19
-    iget-object p1, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+    iget-object p0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     .line 20
     .line 21
-    const/4 p2, 0x0
+    const/4 p1, 0x0
 
     .line 22
-    const/4 p3, 0x1
+    const/4 p2, 0x1
 
     .line 23
-    const/4 v1, 0x2
+    const/4 p3, 0x2
 
     .line 24
-    invoke-interface {p1, v1, v0, p2, p3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    invoke-interface {p0, p3, v0, p1, p2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -122,7 +122,7 @@
 
     .line 31
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 32
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
@@ -130,11 +130,11 @@
     .line 33
     .line 34
     .line 35
-    throw p1
+    throw p0
 .end method
 
 .method public cancelAll(Ljava/lang/String;)V
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -165,20 +165,20 @@
     .line 11
     .line 12
     .line 13
-    iget-object p1, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+    iget-object p0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     .line 14
     .line 15
-    const/4 v1, 0x0
+    const/4 p1, 0x0
 
     .line 16
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
     .line 17
-    const/4 v3, 0x3
+    const/4 v2, 0x3
 
     .line 18
-    invoke-interface {p1, v3, v0, v1, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    invoke-interface {p0, v2, v0, p1, v1}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -194,7 +194,7 @@
 
     .line 25
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 26
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
@@ -202,18 +202,18 @@
     .line 27
     .line 28
     .line 29
-    throw p1
+    throw p0
 .end method
 
 .method public getInterfaceDescriptor()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    sget-object v0, Landroid/support/v4/app/INotificationSideChannel;->DESCRIPTOR:Ljava/lang/String;
+    sget-object p0, Landroid/support/v4/app/INotificationSideChannel;->DESCRIPTOR:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public notify(Ljava/lang/String;ILjava/lang/String;Landroid/app/Notification;)V
@@ -261,22 +261,22 @@
     const/4 p1, 0x0
 
     .line 20
-    invoke-static {v0, p4, p1}, Landroid/support/v4/app/INotificationSideChannel$_Parcel;->access$100(Landroid/os/Parcel;Landroid/os/Parcelable;I)V
+    invoke-virtual {v0, p4, p1}, Landroid/os/Parcel;->writeTypedObject(Landroid/os/Parcelable;I)V
 
     .line 21
     .line 22
     .line 23
-    iget-object p1, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+    iget-object p0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     .line 24
     .line 25
-    const/4 p2, 0x0
+    const/4 p1, 0x0
 
     .line 26
-    const/4 p3, 0x1
+    const/4 p2, 0x1
 
     .line 27
-    invoke-interface {p1, p3, v0, p2, p3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    invoke-interface {p0, p2, v0, p1, p2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -292,7 +292,7 @@
 
     .line 34
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 35
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
@@ -300,5 +300,5 @@
     .line 36
     .line 37
     .line 38
-    throw p1
+    throw p0
 .end method

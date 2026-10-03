@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/ws/RealWebSocket$Close;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -22,18 +22,18 @@
         "",
         "",
         "code",
-        "Ly60;",
+        "Lo90;",
         "reason",
         "",
         "cancelAfterCloseMillis",
         "<init>",
-        "(ILy60;J)V",
+        "(ILo90;J)V",
         "I",
         "getCode",
         "()I",
-        "Ly60;",
+        "Lo90;",
         "getReason",
-        "()Ly60;",
+        "()Lo90;",
         "J",
         "getCancelAfterCloseMillis",
         "()J",
@@ -54,11 +54,11 @@
 
 .field private final code:I
 
-.field private final reason:Ly60;
+.field private final reason:Lo90;
 
 
 # direct methods
-.method public constructor <init>(ILy60;J)V
+.method public constructor <init>(ILo90;J)V
     .locals 0
 
     .line 1
@@ -71,7 +71,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->reason:Ly60;
+    iput-object p2, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->reason:Lo90;
 
     .line 7
     .line 8
@@ -96,23 +96,23 @@
 .end method
 
 .method public final getCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->code:I
+    iget p0, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->code:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public final getReason()Ly60;
-    .locals 1
+.method public final getReason()Lo90;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->reason:Ly60;
+    iget-object p0, p0, Lokhttp3/internal/ws/RealWebSocket$Close;->reason:Lo90;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

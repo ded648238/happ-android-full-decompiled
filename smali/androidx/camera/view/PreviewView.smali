@@ -1,36 +1,36 @@
 .class public final Landroidx/camera/view/PreviewView;
 .super Landroid/widget/FrameLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final synthetic f0:I
+.field public static final synthetic o0:I
 
 
 # instance fields
-.field public Q:Lpz4;
+.field public c0:Lwi5;
 
-.field public R:Lse4;
+.field public d0:Lew4;
 
-.field public final S:Landroidx/camera/view/ScreenFlashView;
+.field public final e0:Landroidx/camera/view/ScreenFlashView;
 
-.field public final T:Lnz4;
+.field public final f0:Lvi5;
 
-.field public U:Z
+.field public g0:Z
 
-.field public final V:Lq84;
+.field public final h0:Lsp4;
 
-.field public final W:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final i0:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field public final a0:Lsz4;
+.field public final j0:Lzi5;
 
-.field public b0:Lwc0;
+.field public k0:Lbh0;
 
-.field public final c0:Loz4;
+.field public final l0:Llm1;
 
-.field public final d0:Lof0;
+.field public final m0:Lim0;
 
-.field public final e0:Lov4;
+.field public final n0:La05;
 
 
 # direct methods
@@ -39,14 +39,14 @@
 
     const/4 v0, 0x0
 
-    .line 263
+    .line 245
     invoke-direct {p0, p1, p2, v0}, Landroidx/camera/view/PreviewView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 11
+    .locals 10
 
     .line 1
     const/4 v0, 0x0
@@ -57,15 +57,15 @@
     .line 3
     .line 4
     .line 5
-    sget-object v1, Lpz4;->R:Lpz4;
+    sget-object v1, Lwi5;->Y:Lwi5;
 
     .line 6
     .line 7
-    iput-object v1, p0, Landroidx/camera/view/PreviewView;->Q:Lpz4;
+    iput-object v1, p0, Landroidx/camera/view/PreviewView;->c0:Lwi5;
 
     .line 8
     .line 9
-    new-instance v1, Lnz4;
+    new-instance v1, Lvi5;
 
     .line 10
     .line 11
@@ -74,39 +74,39 @@
     .line 12
     .line 13
     .line 14
-    sget-object v2, Lqz4;->R:Lqz4;
+    sget-object v2, Lxi5;->Y:Lxi5;
 
     .line 15
     .line 16
-    iput-object v2, v1, Lnz4;->h:Lqz4;
+    iput-object v2, v1, Lvi5;->h:Lxi5;
 
     .line 17
     .line 18
-    iput-object v1, p0, Landroidx/camera/view/PreviewView;->T:Lnz4;
+    iput-object v1, p0, Landroidx/camera/view/PreviewView;->f0:Lvi5;
 
     .line 19
     .line 20
     const/4 v2, 0x1
 
     .line 21
-    iput-boolean v2, p0, Landroidx/camera/view/PreviewView;->U:Z
+    iput-boolean v2, p0, Landroidx/camera/view/PreviewView;->g0:Z
 
     .line 22
     .line 23
-    new-instance v3, Lq84;
+    new-instance v3, Lsp4;
 
     .line 24
     .line 25
-    sget-object v4, Lrz4;->Q:Lrz4;
+    sget-object v4, Lyi5;->X:Lyi5;
 
     .line 26
     .line 27
-    invoke-direct {v3, v4}, Lmn3;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v3, v4}, Lq44;-><init>(Ljava/lang/Object;)V
 
     .line 28
     .line 29
     .line 30
-    iput-object v3, p0, Landroidx/camera/view/PreviewView;->V:Lq84;
+    iput-object v3, p0, Landroidx/camera/view/PreviewView;->h0:Lsp4;
 
     .line 31
     .line 32
@@ -119,66 +119,66 @@
     .line 35
     .line 36
     .line 37
-    iput-object v3, p0, Landroidx/camera/view/PreviewView;->W:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object v3, p0, Landroidx/camera/view/PreviewView;->i0:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 38
     .line 39
-    new-instance v3, Lsz4;
+    new-instance v3, Lzi5;
 
     .line 40
     .line 41
-    invoke-direct {v3, v1}, Lsz4;-><init>(Lnz4;)V
+    invoke-direct {v3, v1}, Lzi5;-><init>(Lvi5;)V
 
     .line 42
     .line 43
     .line 44
-    iput-object v3, p0, Landroidx/camera/view/PreviewView;->a0:Lsz4;
+    iput-object v3, p0, Landroidx/camera/view/PreviewView;->j0:Lzi5;
 
     .line 45
     .line 46
-    new-instance v3, Loz4;
+    new-instance v3, Llm1;
 
     .line 47
     .line 48
-    invoke-direct {v3, p0}, Loz4;-><init>(Landroidx/camera/view/PreviewView;)V
+    invoke-direct {v3, v2, p0}, Llm1;-><init>(ILjava/lang/Object;)V
 
     .line 49
     .line 50
     .line 51
-    iput-object v3, p0, Landroidx/camera/view/PreviewView;->c0:Loz4;
+    iput-object v3, p0, Landroidx/camera/view/PreviewView;->l0:Llm1;
 
     .line 52
     .line 53
-    new-instance v3, Lof0;
+    new-instance v3, Lim0;
 
     .line 54
     .line 55
-    invoke-direct {v3, v2, p0}, Lof0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v2, p0}, Lim0;-><init>(ILjava/lang/Object;)V
 
     .line 56
     .line 57
     .line 58
-    iput-object v3, p0, Landroidx/camera/view/PreviewView;->d0:Lof0;
+    iput-object v3, p0, Landroidx/camera/view/PreviewView;->m0:Lim0;
 
     .line 59
     .line 60
-    new-instance v3, Lov4;
+    new-instance v2, La05;
 
     .line 61
     .line 62
-    const/4 v4, 0x3
+    const/4 v3, 0x5
 
     .line 63
-    invoke-direct {v3, v4, p0}, Lov4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, p0}, La05;-><init>(ILjava/lang/Object;)V
 
     .line 64
     .line 65
     .line 66
-    iput-object v3, p0, Landroidx/camera/view/PreviewView;->e0:Lov4;
+    iput-object v2, p0, Landroidx/camera/view/PreviewView;->n0:La05;
 
     .line 67
     .line 68
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 69
     .line 70
@@ -188,405 +188,373 @@
     .line 72
     .line 73
     .line 74
-    move-result-object v3
+    move-result-object v2
 
     .line 75
-    sget-object v4, Lza5;->PreviewView:[I
+    sget-object v3, Lxu5;->PreviewView:[I
 
     .line 76
     .line 77
-    invoke-virtual {v3, p2, v4, p3, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-virtual {v2, p2, v3, p3, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     .line 78
     .line 79
     .line 80
-    move-result-object v9
+    move-result-object v8
 
     .line 81
-    sget-object v7, Lza5;->PreviewView:[I
+    sget-object v6, Lxu5;->PreviewView:[I
 
     .line 82
     .line 83
-    move-object v5, p0
+    move-object v4, p0
 
     .line 84
-    move-object v6, p1
+    move-object v5, p1
 
     .line 85
-    move-object v8, p2
+    move-object v7, p2
 
     .line 86
-    move v10, p3
+    move v9, p3
 
     .line 87
-    invoke-static/range {v5 .. v10}, Lqn7;->p(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v4 .. v9}, Lni8;->l(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 88
     .line 89
     .line 90
     :try_start_0
-    sget p1, Lza5;->PreviewView_scaleType:I
+    sget p0, Lxu5;->PreviewView_scaleType:I
 
     .line 91
     .line 92
-    iget-object p2, v1, Lnz4;->h:Lqz4;
+    iget-object p1, v1, Lvi5;->h:Lxi5;
 
     .line 93
     .line 94
-    iget p2, p2, Lqz4;->Q:I
+    iget p1, p1, Lxi5;->X:I
 
     .line 95
     .line 96
-    invoke-virtual {v9, p1, p2}, Landroid/content/res/TypedArray;->getInteger(II)I
+    invoke-virtual {v8, p0, p1}, Landroid/content/res/TypedArray;->getInteger(II)I
 
     .line 97
     .line 98
     .line 99
-    move-result p1
+    move-result p0
 
     .line 100
-    invoke-static {}, Lqz4;->values()[Lqz4;
+    invoke-static {}, Lxi5;->values()[Lxi5;
 
     .line 101
     .line 102
     .line 103
-    move-result-object p2
+    move-result-object p1
 
     .line 104
-    array-length p3, p2
+    array-length p2, p1
 
     .line 105
-    const/4 v1, 0x0
+    move p3, v0
 
     .line 106
     :goto_0
-    if-ge v1, p3, :cond_4
+    if-ge p3, p2, :cond_4
 
     .line 107
     .line 108
-    aget-object v3, p2, v1
+    aget-object v1, p1, p3
 
     .line 109
     .line 110
-    iget v4, v3, Lqz4;->Q:I
+    iget v2, v1, Lxi5;->X:I
 
     .line 111
     .line 112
-    if-ne v4, p1, :cond_3
+    if-ne v2, p0, :cond_3
 
     .line 113
     .line 114
-    invoke-virtual {p0, v3}, Landroidx/camera/view/PreviewView;->setScaleType(Lqz4;)V
+    invoke-virtual {v4, v1}, Landroidx/camera/view/PreviewView;->setScaleType(Lxi5;)V
 
     .line 115
     .line 116
     .line 117
-    sget p1, Lza5;->PreviewView_implementationMode:I
+    sget p0, Lxu5;->PreviewView_implementationMode:I
 
     .line 118
     .line 119
-    invoke-virtual {v9, p1, v0}, Landroid/content/res/TypedArray;->getInteger(II)I
+    invoke-virtual {v8, p0, v0}, Landroid/content/res/TypedArray;->getInteger(II)I
 
     .line 120
     .line 121
     .line 122
-    move-result p1
+    move-result p0
 
     .line 123
-    invoke-static {}, Lpz4;->values()[Lpz4;
+    invoke-static {}, Lwi5;->values()[Lwi5;
 
     .line 124
     .line 125
     .line 126
-    move-result-object p2
+    move-result-object p1
 
     .line 127
-    array-length p3, p2
+    array-length p2, p1
 
     .line 128
     :goto_1
-    if-ge v0, p3, :cond_2
+    if-ge v0, p2, :cond_2
 
     .line 129
     .line 130
-    aget-object v1, p2, v0
+    aget-object p3, p1, v0
 
     .line 131
     .line 132
-    iget v3, v1, Lpz4;->Q:I
+    iget v1, p3, Lwi5;->X:I
 
     .line 133
     .line 134
-    if-ne v3, p1, :cond_1
+    if-ne v1, p0, :cond_1
 
     .line 135
     .line 136
-    invoke-virtual {p0, v1}, Landroidx/camera/view/PreviewView;->setImplementationMode(Lpz4;)V
+    invoke-virtual {v4, p3}, Landroidx/camera/view/PreviewView;->setImplementationMode(Lwi5;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 137
     .line 138
     .line 139
-    invoke-virtual {v9}, Landroid/content/res/TypedArray;->recycle()V
+    invoke-virtual {v8}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 140
     .line 141
     .line 142
-    new-instance p1, Ls27;
+    new-instance p0, Lp77;
 
     .line 143
     .line 144
-    new-instance p2, Lxi4;
+    new-instance p1, Lq05;
 
     .line 145
     .line 146
-    const/16 p3, 0xf
+    const/16 p2, 0xd
 
     .line 147
     .line 148
-    invoke-direct {p2, p3}, Lxi4;-><init>(I)V
+    invoke-direct {p1, p2}, Lq05;-><init>(I)V
 
     .line 149
     .line 150
     .line 151
-    invoke-static {v6}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
+    invoke-direct {p0, v5, p1}, Lp77;-><init>(Landroid/content/Context;Lq05;)V
 
     .line 152
     .line 153
     .line 154
-    move-result-object p2
+    invoke-virtual {v4}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     .line 155
-    invoke-virtual {p2}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
-
     .line 156
     .line 157
+    move-result-object p0
+
     .line 158
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+    if-nez p0, :cond_0
 
     .line 159
     .line 160
-    .line 161
-    new-instance p2, Landroid/view/GestureDetector;
+    invoke-virtual {v4}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 161
     .line 162
     .line 163
-    new-instance p3, Lu30;
+    move-result-object p0
 
     .line 164
-    .line 165
-    invoke-direct {p3, v2, p1}, Lu30;-><init>(ILjava/lang/Object;)V
+    const p1, 0x106000c
 
+    .line 165
     .line 166
     .line 167
-    .line 168
-    invoke-direct {p2, v6, p3}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getColor(I)I
 
+    .line 168
     .line 169
     .line 170
+    move-result p0
+
     .line 171
-    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v4, p0}, Landroid/view/View;->setBackgroundColor(I)V
 
     .line 172
     .line 173
     .line 174
-    move-result-object p1
+    :cond_0
+    new-instance p0, Landroidx/camera/view/ScreenFlashView;
 
     .line 175
-    if-nez p1, :cond_0
-
     .line 176
+    const/4 p1, 0x0
+
     .line 177
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-direct {p0, v5, p1}, Landroidx/camera/view/ScreenFlashView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 178
     .line 179
     .line 180
-    move-result-object p1
+    iput-object p0, v4, Landroidx/camera/view/PreviewView;->e0:Landroidx/camera/view/ScreenFlashView;
 
     .line 181
-    const p2, 0x106000c
-
     .line 182
+    new-instance p1, Landroid/widget/LinearLayout$LayoutParams;
+
     .line 183
     .line 184
-    invoke-static {p1, p2}, Lbv7;->A(Landroid/content/Context;I)I
+    const/4 p2, -0x1
 
     .line 185
+    invoke-direct {p1, p2, p2}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
     .line 186
     .line 187
-    move-result p1
-
     .line 188
-    invoke-virtual {p0, p1}, Landroid/view/View;->setBackgroundColor(I)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 189
     .line 190
     .line 191
-    :cond_0
-    new-instance p1, Landroidx/camera/view/ScreenFlashView;
-
-    .line 192
-    .line 193
-    const/4 p2, 0x0
-
-    .line 194
-    invoke-direct {p1, v6, p2}, Landroidx/camera/view/ScreenFlashView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    .line 195
-    .line 196
-    .line 197
-    iput-object p1, p0, Landroidx/camera/view/PreviewView;->S:Landroidx/camera/view/ScreenFlashView;
-
-    .line 198
-    .line 199
-    new-instance p2, Landroid/widget/LinearLayout$LayoutParams;
-
-    .line 200
-    .line 201
-    const/4 p3, -0x1
-
-    .line 202
-    invoke-direct {p2, p3, p3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
-
-    .line 203
-    .line 204
-    .line 205
-    invoke-virtual {p1, p2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 206
-    .line 207
-    .line 208
     return-void
 
-    .line 209
+    .line 192
     :catchall_0
     move-exception v0
 
-    .line 210
-    move-object p1, v0
+    .line 193
+    move-object p0, v0
 
-    .line 211
+    .line 194
     goto :goto_2
 
-    .line 212
+    .line 195
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
-    .line 213
-    .line 214
+    .line 196
+    .line 197
     goto :goto_1
 
-    .line 215
+    .line 198
     :cond_2
     :try_start_1
-    new-instance p2, Ljava/lang/IllegalArgumentException;
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
+    .line 199
+    .line 200
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    .line 201
+    .line 202
+    const-string p3, "Unknown implementation mode id "
+
+    .line 203
+    .line 204
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 205
+    .line 206
+    .line 207
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 208
+    .line 209
+    .line 210
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 211
+    .line 212
+    .line 213
+    move-result-object p0
+
+    .line 214
+    invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 215
     .line 216
     .line 217
-    new-instance p3, Ljava/lang/StringBuilder;
+    throw p1
 
     .line 218
-    .line 219
-    const-string v0, "Unknown implementation mode id "
+    :cond_3
+    add-int/lit8 p3, p3, 0x1
 
+    .line 219
     .line 220
+    goto :goto_0
+
     .line 221
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    :cond_4
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
     .line 222
     .line 223
-    .line 224
-    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
+    .line 224
     .line 225
+    const-string p3, "Unknown scale type id "
+
     .line 226
     .line 227
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 228
     .line 229
     .line 230
-    move-result-object p1
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 231
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
     .line 232
     .line 233
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 234
-    throw p2
-
     .line 235
-    :cond_3
-    add-int/lit8 v1, v1, 0x1
-
     .line 236
+    move-result-object p0
+
     .line 237
-    goto/16 :goto_0
+    invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 238
     .line 239
-    :cond_4
-    new-instance p2, Ljava/lang/IllegalArgumentException;
-
     .line 240
-    .line 241
-    new-instance p3, Ljava/lang/StringBuilder;
-
-    .line 242
-    .line 243
-    const-string v0, "Unknown scale type id "
-
-    .line 244
-    .line 245
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 246
-    .line 247
-    .line 248
-    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 249
-    .line 250
-    .line 251
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 252
-    .line 253
-    .line 254
-    move-result-object p1
-
-    .line 255
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 256
-    .line 257
-    .line 258
-    throw p2
+    throw p1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 259
+    .line 241
     :goto_2
-    invoke-virtual {v9}, Landroid/content/res/TypedArray;->recycle()V
+    invoke-virtual {v8}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 260
-    .line 261
-    .line 262
-    throw p1
+    .line 242
+    .line 243
+    .line 244
+    throw p0
 .end method
 
-.method public static b(Lmt6;Lpz4;)Z
+.method public static b(Lal7;Lwi5;)Z
     .locals 5
 
     .line 1
-    iget-object p0, p0, Lmt6;->d:Lyc0;
+    iget-object p0, p0, Lal7;->d:Ldh0;
 
     .line 2
     .line 3
-    invoke-interface {p0}, Lyc0;->n()Lwc0;
+    invoke-interface {p0}, Ldh0;->s()Lbh0;
 
     .line 4
     .line 5
@@ -594,7 +562,7 @@
     move-result-object p0
 
     .line 7
-    invoke-interface {p0}, Lwc0;->f()Ljava/lang/String;
+    invoke-interface {p0}, Lyg0;->l()Ljava/lang/String;
 
     .line 8
     .line 9
@@ -618,11 +586,11 @@
 
     .line 18
     .line 19
-    sget-object v1, Lfb1;->a:Lzp;
+    sget-object v1, Lkj1;->a:Lir5;
 
     .line 20
     .line 21
-    invoke-virtual {v1, v0}, Lzp;->e(Ljava/lang/Class;)Lh75;
+    invoke-virtual {v1, v0}, Lir5;->b(Ljava/lang/Class;)Lfr5;
 
     .line 22
     .line 23
@@ -644,11 +612,11 @@
 
     .line 30
     .line 31
-    sget-object v3, Lfb1;->a:Lzp;
+    sget-object v3, Lkj1;->a:Lir5;
 
     .line 32
     .line 33
-    invoke-virtual {v3, v0}, Lzp;->e(Ljava/lang/Class;)Lh75;
+    invoke-virtual {v3, v0}, Lir5;->b(Ljava/lang/Class;)Lfr5;
 
     .line 34
     .line 35
@@ -664,7 +632,7 @@
 
     .line 40
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 41
     goto :goto_1
@@ -672,7 +640,7 @@
     .line 42
     :cond_1
     :goto_0
-    const/4 v0, 0x1
+    move v0, v2
 
     .line 43
     :goto_1
@@ -724,7 +692,7 @@
 
     .line 64
     .line 65
-    invoke-static {p1, p0}, Li62;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lbh2;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 66
     .line 67
@@ -745,7 +713,7 @@
 .end method
 
 .method private getDisplayManager()Landroid/hardware/display/DisplayManager;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -753,71 +721,63 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 6
     .line 7
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 8
-    return-object v0
+    return-object p0
 
     .line 9
     :cond_0
-    invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+    const-string v0, "display"
 
     .line 10
     .line 11
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
     .line 12
-    move-result-object v0
-
     .line 13
-    const-string v1, "display"
-
     .line 14
+    move-result-object p0
+
     .line 15
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    check-cast p0, Landroid/hardware/display/DisplayManager;
 
     .line 16
     .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    check-cast v0, Landroid/hardware/display/DisplayManager;
-
-    .line 20
-    .line 21
-    return-object v0
+    return-object p0
 .end method
 
-.method private getScreenFlashInternal()Lsk2;
-    .locals 1
+.method private getScreenFlashInternal()Liy2;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->S:Landroidx/camera/view/ScreenFlashView;
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->e0:Landroidx/camera/view/ScreenFlashView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/camera/view/ScreenFlashView;->getScreenFlash()Lsk2;
+    invoke-virtual {p0}, Landroidx/camera/view/ScreenFlashView;->getScreenFlash()Liy2;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method private getViewPortScaleType()I
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getScaleType()Lqz4;
+    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getScaleType()Lxi5;
 
     .line 2
     .line 3
@@ -880,23 +840,23 @@
 
     .line 28
     .line 29
-    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getScaleType()Lqz4;
+    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getScaleType()Lxi5;
 
     .line 30
     .line 31
     .line 32
-    move-result-object v1
+    move-result-object p0
 
     .line 33
-    invoke-static {v1, v0}, Lfn;->k(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Li60;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 34
     .line 35
     .line 36
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 37
-    return v0
+    return p0
 
     .line 38
     :cond_1
@@ -905,21 +865,21 @@
 
     .line 39
     :cond_2
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 40
-    return v0
+    return p0
 .end method
 
-.method private setScreenFlashUiInfo(Lsk2;)V
+.method private setScreenFlashUiInfo(Liy2;)V
     .locals 0
 
     .line 1
-    const-string p1, "PreviewView"
+    const-string p0, "PreviewView"
 
     .line 2
     .line 3
-    invoke-static {p1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -930,15 +890,15 @@
 
 # virtual methods
 .method public final a()V
-    .locals 5
+    .locals 4
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->R:Lse4;
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->d0:Lew4;
 
     .line 5
     .line 6
@@ -946,7 +906,7 @@
 
     .line 7
     .line 8
-    iget-boolean v0, p0, Landroidx/camera/view/PreviewView;->U:Z
+    iget-boolean v0, p0, Landroidx/camera/view/PreviewView;->g0:Z
 
     .line 9
     .line 10
@@ -954,7 +914,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {p0}, Landroid/view/View;->getDisplay()Landroid/view/Display;
+    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getDefaultDisplay()Landroid/view/Display;
 
     .line 13
     .line 14
@@ -966,7 +926,7 @@
 
     .line 17
     .line 18
-    iget-object v1, p0, Landroidx/camera/view/PreviewView;->b0:Lwc0;
+    iget-object v1, p0, Landroidx/camera/view/PreviewView;->k0:Lbh0;
 
     .line 19
     .line 20
@@ -974,7 +934,7 @@
 
     .line 21
     .line 22
-    iget-object v2, p0, Landroidx/camera/view/PreviewView;->T:Lnz4;
+    iget-object v2, p0, Landroidx/camera/view/PreviewView;->f0:Lvi5;
 
     .line 23
     .line 24
@@ -986,7 +946,7 @@
     move-result v3
 
     .line 28
-    invoke-interface {v1, v3}, Lwc0;->g(I)I
+    invoke-interface {v1, v3}, Lyg0;->o(I)I
 
     .line 29
     .line 30
@@ -1002,7 +962,7 @@
     move-result v0
 
     .line 36
-    iget-boolean v3, v2, Lnz4;->g:Z
+    iget-boolean v3, v2, Lvi5;->g:Z
 
     .line 37
     .line 38
@@ -1014,27 +974,27 @@
 
     .line 41
     :cond_0
-    iput v1, v2, Lnz4;->c:I
+    iput v1, v2, Lvi5;->c:I
 
     .line 42
     .line 43
-    iput v0, v2, Lnz4;->e:I
+    iput v0, v2, Lvi5;->e:I
 
     .line 44
     .line 45
     :cond_1
     :goto_0
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->R:Lse4;
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->d0:Lew4;
 
     .line 46
     .line 47
-    invoke-virtual {v0}, Lse4;->h()V
+    invoke-virtual {v0}, Lew4;->h()V
 
     .line 48
     .line 49
     .line 50
     :cond_2
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->a0:Lsz4;
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->j0:Lzi5;
 
     .line 51
     .line 52
@@ -1068,7 +1028,7 @@
     .line 66
     .line 67
     .line 68
-    move-result v2
+    move-result p0
 
     .line 69
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1076,7 +1036,7 @@
     .line 70
     .line 71
     .line 72
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 73
     .line 74
@@ -1090,10 +1050,10 @@
     .line 77
     .line 78
     .line 79
-    move-result v3
+    move-result v2
 
     .line 80
-    if-eqz v3, :cond_4
+    if-eqz v2, :cond_4
 
     .line 81
     .line 82
@@ -1102,18 +1062,18 @@
     .line 83
     .line 84
     .line 85
-    move-result v3
+    move-result v2
 
     .line 86
-    if-eqz v3, :cond_4
+    if-eqz v2, :cond_4
 
     .line 87
     .line 88
-    iget-object v3, v0, Lsz4;->b:Landroid/graphics/Rect;
+    iget-object v2, v0, Lzi5;->b:Landroid/graphics/Rect;
 
     .line 89
     .line 90
-    if-nez v3, :cond_3
+    if-nez v2, :cond_3
 
     .line 91
     .line 92
@@ -1121,11 +1081,11 @@
 
     .line 93
     :cond_3
-    iget-object v4, v0, Lsz4;->a:Lnz4;
+    iget-object v3, v0, Lzi5;->a:Lvi5;
 
     .line 94
     .line 95
-    invoke-virtual {v4, v1, v2, v3}, Lnz4;->a(Landroid/util/Size;ILandroid/graphics/Rect;)V
+    invoke-virtual {v3, v1, p0, v2}, Lvi5;->a(Landroid/util/Size;ILandroid/graphics/Rect;)V
 
     .line 96
     .line 97
@@ -1137,7 +1097,7 @@
 
     .line 100
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 101
     goto :goto_2
@@ -1157,23 +1117,23 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 105
-    throw v1
+    throw p0
 .end method
 
 .method public getBitmap()Landroid/graphics/Bitmap;
-    .locals 8
+    .locals 7
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->R:Lse4;
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->d0:Lew4;
 
     .line 5
     .line 6
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 7
     .line 8
@@ -1181,308 +1141,369 @@
 
     .line 9
     :cond_0
-    iget-object v1, v0, Lse4;->c:Ljava/lang/Object;
+    iget-object v0, p0, Lew4;->c:Ljava/lang/Object;
 
     .line 10
     .line 11
-    check-cast v1, Landroid/widget/FrameLayout;
+    check-cast v0, Landroid/widget/FrameLayout;
 
     .line 12
     .line 13
-    invoke-virtual {v0}, Lse4;->d()Landroid/graphics/Bitmap;
+    invoke-virtual {p0}, Lew4;->d()Landroid/graphics/Bitmap;
 
     .line 14
     .line 15
     .line 16
-    move-result-object v2
+    move-result-object v1
 
     .line 17
-    if-nez v2, :cond_1
+    if-nez v1, :cond_1
 
     .line 18
     .line 19
     :goto_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
+    .line 20
+    return-object p0
+
+    .line 21
+    :cond_1
+    iget-object p0, p0, Lew4;->d:Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    check-cast p0, Lvi5;
+
+    .line 24
+    .line 25
+    new-instance v2, Landroid/util/Size;
+
+    .line 26
+    .line 27
+    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v3
+
+    .line 31
+    invoke-virtual {v0}, Landroid/view/View;->getHeight()I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v4
+
+    .line 35
+    invoke-direct {v2, v3, v4}, Landroid/util/Size;-><init>(II)V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutDirection()I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v0
+
+    .line 42
+    invoke-virtual {p0}, Lvi5;->f()Z
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v3
+
+    .line 46
+    if-nez v3, :cond_2
+
+    .line 47
+    .line 48
+    return-object v1
+
+    .line 49
+    :cond_2
+    invoke-virtual {p0}, Lvi5;->d()Landroid/graphics/Matrix;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v3
+
+    .line 53
+    invoke-virtual {p0, v0, v2}, Lvi5;->e(ILandroid/util/Size;)Landroid/graphics/RectF;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v0
+
+    .line 57
+    invoke-virtual {v2}, Landroid/util/Size;->getWidth()I
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v4
+
+    .line 61
+    invoke-virtual {v2}, Landroid/util/Size;->getHeight()I
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v2
+
+    .line 65
+    invoke-virtual {v1}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v5
+
+    .line 69
+    invoke-static {v4, v2, v5}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v2
+
+    .line 73
+    new-instance v4, Landroid/graphics/Canvas;
+
+    .line 74
+    .line 75
+    invoke-direct {v4, v2}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+
+    .line 76
+    .line 77
+    .line 78
+    new-instance v5, Landroid/graphics/Matrix;
+
+    .line 79
+    .line 80
+    invoke-direct {v5}, Landroid/graphics/Matrix;-><init>()V
+
+    .line 81
+    .line 82
+    .line 83
+    invoke-virtual {v5, v3}, Landroid/graphics/Matrix;->postConcat(Landroid/graphics/Matrix;)Z
+
+    .line 84
+    .line 85
+    .line 86
+    invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v3
+
+    .line 90
+    iget-object v6, p0, Lvi5;->a:Landroid/util/Size;
+
+    .line 91
+    .line 92
+    invoke-virtual {v6}, Landroid/util/Size;->getWidth()I
+
+    .line 93
+    .line 94
+    .line 95
+    move-result v6
+
+    .line 96
+    int-to-float v6, v6
+
+    .line 97
+    div-float/2addr v3, v6
+
+    .line 98
+    invoke-virtual {v0}, Landroid/graphics/RectF;->height()F
+
+    .line 99
+    .line 100
+    .line 101
+    move-result v6
+
+    .line 102
+    iget-object p0, p0, Lvi5;->a:Landroid/util/Size;
+
+    .line 103
+    .line 104
+    invoke-virtual {p0}, Landroid/util/Size;->getHeight()I
+
+    .line 105
+    .line 106
+    .line 107
+    move-result p0
+
+    .line 108
+    int-to-float p0, p0
+
+    .line 109
+    div-float/2addr v6, p0
+
+    .line 110
+    invoke-virtual {v5, v3, v6}, Landroid/graphics/Matrix;->postScale(FF)Z
+
+    .line 111
+    .line 112
+    .line 113
+    iget p0, v0, Landroid/graphics/RectF;->left:F
+
+    .line 114
+    .line 115
+    iget v0, v0, Landroid/graphics/RectF;->top:F
+
+    .line 116
+    .line 117
+    invoke-virtual {v5, p0, v0}, Landroid/graphics/Matrix;->postTranslate(FF)Z
+
+    .line 118
+    .line 119
+    .line 120
+    new-instance p0, Landroid/graphics/Paint;
+
+    .line 121
+    .line 122
+    const/4 v0, 0x7
+
+    .line 123
+    invoke-direct {p0, v0}, Landroid/graphics/Paint;-><init>(I)V
+
+    .line 124
+    .line 125
+    .line 126
+    invoke-virtual {v4, v1, v5, p0}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V
+
+    .line 127
+    .line 128
+    .line 129
+    return-object v2
+.end method
+
+.method public getController()Lvf0;
+    .locals 0
+
+    .line 1
+    invoke-static {}, Lxv7;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 p0, 0x0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public getDefaultDisplay()Landroid/view/Display;
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->getDisplay()Landroid/view/Display;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 p0, 0x0
+
+    .line 8
+    return-object p0
+
+    .line 9
+    :cond_0
+    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getDisplayManager()Landroid/hardware/display/DisplayManager;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    invoke-virtual {v0, v1}, Landroid/hardware/display/DisplayManager;->getDisplay(I)Landroid/view/Display;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    if-eqz v0, :cond_1
+
+    .line 19
     .line 20
     return-object v0
 
     .line 21
     :cond_1
-    iget-object v0, v0, Lse4;->d:Ljava/lang/Object;
+    invoke-virtual {p0}, Landroid/view/View;->getDisplay()Landroid/view/Display;
 
     .line 22
     .line 23
-    check-cast v0, Lnz4;
-
     .line 24
+    move-result-object p0
+
     .line 25
-    new-instance v3, Landroid/util/Size;
-
-    .line 26
-    .line 27
-    invoke-virtual {v1}, Landroid/view/View;->getWidth()I
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v4
-
-    .line 31
-    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v5
-
-    .line 35
-    invoke-direct {v3, v4, v5}, Landroid/util/Size;-><init>(II)V
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v1}, Landroid/view/View;->getLayoutDirection()I
-
-    .line 39
-    .line 40
-    .line 41
-    move-result v1
-
-    .line 42
-    invoke-virtual {v0}, Lnz4;->f()Z
-
-    .line 43
-    .line 44
-    .line 45
-    move-result v4
-
-    .line 46
-    if-nez v4, :cond_2
-
-    .line 47
-    .line 48
-    return-object v2
-
-    .line 49
-    :cond_2
-    invoke-virtual {v0}, Lnz4;->d()Landroid/graphics/Matrix;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v4
-
-    .line 53
-    invoke-virtual {v0, v3, v1}, Lnz4;->e(Landroid/util/Size;I)Landroid/graphics/RectF;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object v1
-
-    .line 57
-    invoke-virtual {v3}, Landroid/util/Size;->getWidth()I
-
-    .line 58
-    .line 59
-    .line 60
-    move-result v5
-
-    .line 61
-    invoke-virtual {v3}, Landroid/util/Size;->getHeight()I
-
-    .line 62
-    .line 63
-    .line 64
-    move-result v3
-
-    .line 65
-    invoke-virtual {v2}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v6
-
-    .line 69
-    invoke-static {v5, v3, v6}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v3
-
-    .line 73
-    new-instance v5, Landroid/graphics/Canvas;
-
-    .line 74
-    .line 75
-    invoke-direct {v5, v3}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
-
-    .line 76
-    .line 77
-    .line 78
-    new-instance v6, Landroid/graphics/Matrix;
-
-    .line 79
-    .line 80
-    invoke-direct {v6}, Landroid/graphics/Matrix;-><init>()V
-
-    .line 81
-    .line 82
-    .line 83
-    invoke-virtual {v6, v4}, Landroid/graphics/Matrix;->postConcat(Landroid/graphics/Matrix;)Z
-
-    .line 84
-    .line 85
-    .line 86
-    invoke-virtual {v1}, Landroid/graphics/RectF;->width()F
-
-    .line 87
-    .line 88
-    .line 89
-    move-result v4
-
-    .line 90
-    iget-object v7, v0, Lnz4;->a:Landroid/util/Size;
-
-    .line 91
-    .line 92
-    invoke-virtual {v7}, Landroid/util/Size;->getWidth()I
-
-    .line 93
-    .line 94
-    .line 95
-    move-result v7
-
-    .line 96
-    int-to-float v7, v7
-
-    .line 97
-    div-float/2addr v4, v7
-
-    .line 98
-    invoke-virtual {v1}, Landroid/graphics/RectF;->height()F
-
-    .line 99
-    .line 100
-    .line 101
-    move-result v7
-
-    .line 102
-    iget-object v0, v0, Lnz4;->a:Landroid/util/Size;
-
-    .line 103
-    .line 104
-    invoke-virtual {v0}, Landroid/util/Size;->getHeight()I
-
-    .line 105
-    .line 106
-    .line 107
-    move-result v0
-
-    .line 108
-    int-to-float v0, v0
-
-    .line 109
-    div-float/2addr v7, v0
-
-    .line 110
-    invoke-virtual {v6, v4, v7}, Landroid/graphics/Matrix;->postScale(FF)Z
-
-    .line 111
-    .line 112
-    .line 113
-    iget v0, v1, Landroid/graphics/RectF;->left:F
-
-    .line 114
-    .line 115
-    iget v1, v1, Landroid/graphics/RectF;->top:F
-
-    .line 116
-    .line 117
-    invoke-virtual {v6, v0, v1}, Landroid/graphics/Matrix;->postTranslate(FF)Z
-
-    .line 118
-    .line 119
-    .line 120
-    new-instance v0, Landroid/graphics/Paint;
-
-    .line 121
-    .line 122
-    const/4 v1, 0x7
-
-    .line 123
-    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
-
-    .line 124
-    .line 125
-    .line 126
-    invoke-virtual {v5, v2, v6, v0}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V
-
-    .line 127
-    .line 128
-    .line 129
-    return-object v3
+    return-object p0
 .end method
 
-.method public getController()Llc0;
-    .locals 1
+.method public getImplementationMode()Lwi5;
+    .locals 0
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public getImplementationMode()Lpz4;
-    .locals 1
-
-    .line 1
-    invoke-static {}, Lo37;->a()V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->Q:Lpz4;
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->c0:Lwi5;
 
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
-.method public getMeteringPointFactory()Lh44;
-    .locals 1
+.method public getMeteringPointFactory()Lcl4;
+    .locals 0
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->a0:Lsz4;
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->j0:Lzi5;
 
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
-.method public getOutputTransform()Lim4;
+.method public getOutputTransform()Lj45;
     .locals 7
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->T:Lnz4;
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->f0:Lvi5;
 
     .line 2
     .line 3
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 4
     .line 5
@@ -1524,7 +1545,7 @@
     move-result v3
 
     .line 24
-    invoke-virtual {v0, v2, v3}, Lnz4;->c(Landroid/util/Size;I)Landroid/graphics/Matrix;
+    invoke-virtual {v0, v3, v2}, Lvi5;->c(ILandroid/util/Size;)Landroid/graphics/Matrix;
 
     .line 25
     .line 26
@@ -1538,233 +1559,230 @@
 
     .line 29
     :catch_0
-    nop
-
-    .line 30
     move-object v2, v1
 
-    .line 31
+    .line 30
     :goto_0
-    iget-object v0, v0, Lnz4;->b:Landroid/graphics/Rect;
+    iget-object v0, v0, Lvi5;->b:Landroid/graphics/Rect;
 
+    .line 31
     .line 32
-    .line 33
     const-string v3, "PreviewView"
 
+    .line 33
     .line 34
-    .line 35
     if-eqz v2, :cond_3
 
+    .line 35
     .line 36
-    .line 37
     if-nez v0, :cond_0
 
+    .line 37
     .line 38
-    .line 39
     goto :goto_2
 
-    .line 40
+    .line 39
     :cond_0
-    sget-object v1, Lh77;->a:Landroid/graphics/RectF;
+    sget-object v1, Lsz7;->a:Landroid/graphics/RectF;
 
+    .line 40
     .line 41
-    .line 42
     new-instance v1, Landroid/graphics/RectF;
 
+    .line 42
     .line 43
-    .line 44
     invoke-direct {v1, v0}, Landroid/graphics/RectF;-><init>(Landroid/graphics/Rect;)V
 
+    .line 44
     .line 45
     .line 46
-    .line 47
     new-instance v4, Landroid/graphics/Matrix;
 
+    .line 47
     .line 48
-    .line 49
     invoke-direct {v4}, Landroid/graphics/Matrix;-><init>()V
 
+    .line 49
     .line 50
     .line 51
-    .line 52
-    sget-object v5, Lh77;->a:Landroid/graphics/RectF;
+    sget-object v5, Lsz7;->a:Landroid/graphics/RectF;
 
+    .line 52
     .line 53
-    .line 54
     sget-object v6, Landroid/graphics/Matrix$ScaleToFit;->FILL:Landroid/graphics/Matrix$ScaleToFit;
 
+    .line 54
     .line 55
-    .line 56
     invoke-virtual {v4, v5, v1, v6}, Landroid/graphics/Matrix;->setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
 
+    .line 56
     .line 57
     .line 58
-    .line 59
     invoke-virtual {v2, v4}, Landroid/graphics/Matrix;->preConcat(Landroid/graphics/Matrix;)Z
 
+    .line 59
     .line 60
     .line 61
+    iget-object v1, p0, Landroidx/camera/view/PreviewView;->d0:Lew4;
+
     .line 62
-    iget-object v1, p0, Landroidx/camera/view/PreviewView;->R:Lse4;
-
     .line 63
-    .line 64
-    instance-of v1, v1, Lb37;
+    instance-of v1, v1, Lfv7;
 
+    .line 64
     .line 65
-    .line 66
     if-eqz v1, :cond_1
 
+    .line 66
     .line 67
-    .line 68
     invoke-virtual {p0}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
 
+    .line 68
     .line 69
     .line 70
+    move-result-object p0
+
     .line 71
-    move-result-object v1
+    invoke-virtual {v2, p0}, Landroid/graphics/Matrix;->postConcat(Landroid/graphics/Matrix;)Z
 
     .line 72
-    invoke-virtual {v2, v1}, Landroid/graphics/Matrix;->postConcat(Landroid/graphics/Matrix;)Z
-
     .line 73
     .line 74
-    .line 75
     goto :goto_1
 
-    .line 76
+    .line 75
     :cond_1
     invoke-virtual {p0}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
 
+    .line 76
     .line 77
     .line 78
+    move-result-object p0
+
     .line 79
-    move-result-object v1
+    invoke-virtual {p0}, Landroid/graphics/Matrix;->isIdentity()Z
 
     .line 80
-    invoke-virtual {v1}, Landroid/graphics/Matrix;->isIdentity()Z
-
     .line 81
     .line 82
+    move-result p0
+
     .line 83
-    move-result v1
+    if-nez p0, :cond_2
 
     .line 84
-    if-nez v1, :cond_2
-
     .line 85
-    .line 86
-    invoke-static {v3}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 86
     .line 87
     .line 88
-    .line 89
     :cond_2
     :goto_1
-    new-instance v1, Lim4;
+    new-instance p0, Lj45;
 
+    .line 89
     .line 90
-    .line 91
-    new-instance v2, Landroid/util/Size;
+    new-instance v1, Landroid/util/Size;
 
+    .line 91
     .line 92
-    .line 93
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
+    .line 93
     .line 94
     .line 95
-    .line 96
-    move-result v3
+    move-result v2
 
-    .line 97
+    .line 96
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
+    .line 97
     .line 98
     .line 99
-    .line 100
     move-result v0
 
-    .line 101
-    invoke-direct {v2, v3, v0}, Landroid/util/Size;-><init>(II)V
+    .line 100
+    invoke-direct {v1, v2, v0}, Landroid/util/Size;-><init>(II)V
 
+    .line 101
     .line 102
     .line 103
-    .line 104
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 104
     .line 105
     .line 106
-    .line 107
-    return-object v1
+    return-object p0
 
-    .line 108
+    .line 107
     :cond_3
     :goto_2
-    invoke-static {v3}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 108
     .line 109
     .line 110
-    .line 111
     return-object v1
 .end method
 
-.method public getPreviewStreamState()Lmn3;
-    .locals 1
+.method public getPreviewStreamState()Lq44;
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lmn3;"
+            "Lq44;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->V:Lq84;
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->h0:Lsp4;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public getScaleType()Lqz4;
-    .locals 1
+.method public getScaleType()Lxi5;
+    .locals 0
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->T:Lnz4;
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->f0:Lvi5;
 
     .line 5
     .line 6
-    iget-object v0, v0, Lnz4;->h:Lqz4;
+    iget-object p0, p0, Lvi5;->h:Lxi5;
 
     .line 7
     .line 8
-    return-object v0
+    return-object p0
 .end method
 
-.method public getScreenFlash()Lsk2;
-    .locals 1
+.method public getScreenFlash()Liy2;
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getScreenFlashInternal()Lsk2;
+    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getScreenFlashInternal()Liy2;
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSensorToViewTransform()Landroid/graphics/Matrix;
-    .locals 5
+    .locals 4
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
@@ -1833,19 +1851,19 @@
     move-result v2
 
     .line 35
-    iget-object v3, p0, Landroidx/camera/view/PreviewView;->T:Lnz4;
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->f0:Lvi5;
 
     .line 36
     .line 37
-    invoke-virtual {v3}, Lnz4;->f()Z
+    invoke-virtual {p0}, Lvi5;->f()Z
 
     .line 38
     .line 39
     .line 40
-    move-result v4
+    move-result v3
 
     .line 41
-    if-nez v4, :cond_1
+    if-nez v3, :cond_1
 
     .line 42
     .line 43
@@ -1857,24 +1875,24 @@
 
     .line 45
     .line 46
-    iget-object v4, v3, Lnz4;->d:Landroid/graphics/Matrix;
+    iget-object v3, p0, Lvi5;->d:Landroid/graphics/Matrix;
 
     .line 47
     .line 48
-    invoke-direct {v1, v4}, Landroid/graphics/Matrix;-><init>(Landroid/graphics/Matrix;)V
+    invoke-direct {v1, v3}, Landroid/graphics/Matrix;-><init>(Landroid/graphics/Matrix;)V
 
     .line 49
     .line 50
     .line 51
-    invoke-virtual {v3, v0, v2}, Lnz4;->c(Landroid/util/Size;I)Landroid/graphics/Matrix;
+    invoke-virtual {p0, v2, v0}, Lvi5;->c(ILandroid/util/Size;)Landroid/graphics/Matrix;
 
     .line 52
     .line 53
     .line 54
-    move-result-object v0
+    move-result-object p0
 
     .line 55
-    invoke-virtual {v1, v0}, Landroid/graphics/Matrix;->postConcat(Landroid/graphics/Matrix;)Z
+    invoke-virtual {v1, p0}, Landroid/graphics/Matrix;->postConcat(Landroid/graphics/Matrix;)Z
 
     .line 56
     .line 57
@@ -1884,32 +1902,32 @@
     return-object v1
 .end method
 
-.method public getSurfaceProvider()Liz4;
-    .locals 1
+.method public getSurfaceProvider()Loi5;
+    .locals 0
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->e0:Lov4;
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->n0:La05;
 
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
-.method public getViewPort()Lcp7;
+.method public getViewPort()Lak8;
     .locals 3
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Landroid/view/View;->getDisplay()Landroid/view/Display;
+    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getDefaultDisplay()Landroid/view/Display;
 
     .line 5
     .line 6
@@ -1928,99 +1946,91 @@
 
     .line 12
     :cond_0
-    invoke-virtual {p0}, Landroid/view/View;->getDisplay()Landroid/view/Display;
+    invoke-virtual {v0}, Landroid/view/Display;->getRotation()I
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    invoke-static {}, Lxv7;->a()V
 
     .line 16
-    invoke-virtual {v0}, Landroid/view/Display;->getRotation()I
-
     .line 17
     .line 18
-    .line 19
-    invoke-static {}, Lo37;->a()V
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
+    .line 19
     .line 20
     .line 21
+    move-result v0
+
     .line 22
-    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+    if-eqz v0, :cond_2
 
     .line 23
     .line 24
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
     .line 25
+    .line 26
+    .line 27
     move-result v0
 
-    .line 26
-    if-eqz v0, :cond_2
-
-    .line 27
     .line 28
-    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+    if-nez v0, :cond_1
 
     .line 29
     .line 30
-    .line 31
-    move-result v0
-
-    .line 32
-    if-nez v0, :cond_1
-
-    .line 33
-    .line 34
     goto :goto_0
 
-    .line 35
+    .line 31
     :cond_1
     new-instance v0, Landroid/util/Rational;
 
-    .line 36
-    .line 37
+    .line 32
+    .line 33
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v1
+
+    .line 37
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     .line 38
     .line 39
     .line 40
-    move-result v1
+    move-result v2
 
     .line 41
-    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+    invoke-direct {v0, v1, v2}, Landroid/util/Rational;-><init>(II)V
 
     .line 42
     .line 43
     .line 44
-    move-result v2
-
-    .line 45
-    invoke-direct {v0, v1, v2}, Landroid/util/Rational;-><init>(II)V
-
-    .line 46
-    .line 47
-    .line 48
     invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getViewPortScaleType()I
 
-    .line 49
-    .line 50
-    .line 51
+    .line 45
+    .line 46
+    .line 47
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
 
+    .line 48
+    .line 49
+    .line 50
+    new-instance p0, Lak8;
+
+    .line 51
     .line 52
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 53
     .line 54
-    new-instance v0, Lcp7;
-
     .line 55
+    return-object p0
+
     .line 56
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 57
-    .line 58
-    .line 59
-    return-object v0
-
-    .line 60
     :cond_2
     :goto_0
     return-object v1
@@ -2030,100 +2040,113 @@
     .locals 3
 
     .line 1
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onAttachedToWindow()V
+    invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
     .line 2
     .line 3
     .line 4
-    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getDisplayManager()Landroid/hardware/display/DisplayManager;
+    invoke-virtual {p0}, Landroid/view/View;->isInEditMode()Z
 
     .line 5
     .line 6
     .line 7
-    move-result-object v0
+    move-result v0
 
     .line 8
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
     .line 9
     .line 10
-    goto :goto_0
+    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getDisplayManager()Landroid/hardware/display/DisplayManager;
 
     .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    if-nez v0, :cond_0
+
+    .line 15
+    .line 16
+    goto :goto_0
+
+    .line 17
     :cond_0
     new-instance v1, Landroid/os/Handler;
 
-    .line 12
-    .line 13
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v2
-
-    .line 17
-    invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
     .line 18
     .line 19
-    .line 20
-    iget-object v2, p0, Landroidx/camera/view/PreviewView;->c0:Loz4;
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
+    .line 20
     .line 21
     .line 22
-    invoke-virtual {v0, v2, v1}, Landroid/hardware/display/DisplayManager;->registerDisplayListener(Landroid/hardware/display/DisplayManager$DisplayListener;Landroid/os/Handler;)V
+    move-result-object v2
 
     .line 23
+    invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
     .line 24
     .line 25
-    :goto_0
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->d0:Lof0;
-
     .line 26
-    .line 27
-    invoke-virtual {p0, v0}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    iget-object v2, p0, Landroidx/camera/view/PreviewView;->l0:Llm1;
 
+    .line 27
     .line 28
+    invoke-virtual {v0, v2, v1}, Landroid/hardware/display/DisplayManager;->registerDisplayListener(Landroid/hardware/display/DisplayManager$DisplayListener;Landroid/os/Handler;)V
+
     .line 29
     .line 30
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->R:Lse4;
-
     .line 31
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->m0:Lim0;
+
     .line 32
-    if-eqz v0, :cond_1
-
     .line 33
-    .line 34
-    invoke-virtual {v0}, Lse4;->e()V
+    invoke-virtual {p0, v0}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
+    .line 34
     .line 35
     .line 36
-    .line 37
-    :cond_1
-    invoke-static {}, Lo37;->a()V
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->d0:Lew4;
 
+    .line 37
     .line 38
+    if-eqz v0, :cond_2
+
     .line 39
     .line 40
-    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getViewPort()Lcp7;
+    invoke-virtual {v0}, Lew4;->e()V
 
     .line 41
     .line 42
     .line 43
+    :cond_2
+    invoke-static {}, Lxv7;->a()V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getViewPort()Lak8;
+
+    .line 47
+    .line 48
+    .line 49
     return-void
 .end method
 
 .method public final onDetachedFromWindow()V
-    .locals 2
+    .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
+    invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->d0:Lof0;
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->m0:Lim0;
 
     .line 5
     .line 6
@@ -2132,7 +2155,7 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->R:Lse4;
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->d0:Lew4;
 
     .line 10
     .line 11
@@ -2140,60 +2163,74 @@
 
     .line 12
     .line 13
-    invoke-virtual {v0}, Lse4;->f()V
+    invoke-virtual {v0}, Lew4;->f()V
 
     .line 14
     .line 15
     .line 16
     :cond_0
-    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getDisplayManager()Landroid/hardware/display/DisplayManager;
+    invoke-virtual {p0}, Landroid/view/View;->isInEditMode()Z
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    move-result v0
 
     .line 20
-    if-nez v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 21
     .line 22
-    return-void
+    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getDisplayManager()Landroid/hardware/display/DisplayManager;
 
     .line 23
-    :cond_1
-    iget-object v1, p0, Landroidx/camera/view/PreviewView;->c0:Loz4;
-
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Landroid/hardware/display/DisplayManager;->unregisterDisplayListener(Landroid/hardware/display/DisplayManager$DisplayListener;)V
+    move-result-object v0
 
     .line 26
+    if-nez v0, :cond_1
+
     .line 27
     .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_1
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->l0:Llm1;
+
+    .line 30
+    .line 31
+    invoke-virtual {v0, p0}, Landroid/hardware/display/DisplayManager;->unregisterDisplayListener(Landroid/hardware/display/DisplayManager$DisplayListener;)V
+
+    .line 32
+    .line 33
+    .line 34
+    :cond_2
+    :goto_0
     return-void
 .end method
 
-.method public setController(Llc0;)V
+.method public setController(Lvf0;)V
     .locals 0
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 5
     .line 6
     .line 7
-    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getViewPort()Lcp7;
+    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getViewPort()Lak8;
 
     .line 8
     .line 9
     .line 10
-    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getScreenFlashInternal()Lsk2;
+    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getScreenFlashInternal()Liy2;
 
     .line 11
     .line 12
@@ -2201,7 +2238,7 @@
     move-result-object p1
 
     .line 14
-    invoke-direct {p0, p1}, Landroidx/camera/view/PreviewView;->setScreenFlashUiInfo(Lsk2;)V
+    invoke-direct {p0, p1}, Landroidx/camera/view/PreviewView;->setScreenFlashUiInfo(Liy2;)V
 
     .line 15
     .line 16
@@ -2209,36 +2246,36 @@
     return-void
 .end method
 
-.method public setImplementationMode(Lpz4;)V
+.method public setImplementationMode(Lwi5;)V
     .locals 0
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/camera/view/PreviewView;->Q:Lpz4;
+    iput-object p1, p0, Landroidx/camera/view/PreviewView;->c0:Lwi5;
 
     .line 5
     .line 6
     return-void
 .end method
 
-.method public setScaleType(Lqz4;)V
+.method public setScaleType(Lxi5;)V
     .locals 1
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->T:Lnz4;
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->f0:Lvi5;
 
     .line 5
     .line 6
-    iput-object p1, v0, Lnz4;->h:Lqz4;
+    iput-object p1, v0, Lvi5;->h:Lxi5;
 
     .line 7
     .line 8
@@ -2247,12 +2284,12 @@
     .line 9
     .line 10
     .line 11
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getViewPort()Lcp7;
+    invoke-virtual {p0}, Landroidx/camera/view/PreviewView;->getViewPort()Lak8;
 
     .line 15
     .line 16
@@ -2261,14 +2298,14 @@
 .end method
 
 .method public setScreenFlashOverlayColor(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->S:Landroidx/camera/view/ScreenFlashView;
+    iget-object p0, p0, Landroidx/camera/view/PreviewView;->e0:Landroidx/camera/view/ScreenFlashView;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroid/view/View;->setBackgroundColor(I)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setBackgroundColor(I)V
 
     .line 4
     .line 5
@@ -2280,12 +2317,12 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/PreviewView;->S:Landroidx/camera/view/ScreenFlashView;
+    iget-object v0, p0, Landroidx/camera/view/PreviewView;->e0:Landroidx/camera/view/ScreenFlashView;
 
     .line 5
     .line 6
@@ -2294,7 +2331,7 @@
     .line 7
     .line 8
     .line 9
-    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getScreenFlashInternal()Lsk2;
+    invoke-direct {p0}, Landroidx/camera/view/PreviewView;->getScreenFlashInternal()Liy2;
 
     .line 10
     .line 11
@@ -2302,7 +2339,7 @@
     move-result-object p1
 
     .line 13
-    invoke-direct {p0, p1}, Landroidx/camera/view/PreviewView;->setScreenFlashUiInfo(Lsk2;)V
+    invoke-direct {p0, p1}, Landroidx/camera/view/PreviewView;->setScreenFlashUiInfo(Liy2;)V
 
     .line 14
     .line 15

@@ -1,21 +1,16 @@
 package defpackage;
 
-import java.util.AbstractMap;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class v05 extends z82 {
+    public static final v05 d = new v05(0, 4, 1);
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class v05 extends AbstractMap.SimpleEntry {
-    public final /* synthetic */ w05 Q;
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public v05(w05 w05Var, s05 s05Var) {
-        super(s05Var.Q, s05Var.a());
-        this.Q = w05Var;
-    }
-
-    @Override // java.util.AbstractMap.SimpleEntry, java.util.Map.Entry
-    public final Object setValue(Object obj) {
-        this.Q.g(getKey(), obj, false);
-        return super.setValue(obj);
+    @Override // defpackage.z82
+    public final void d(up0 up0Var, wr wrVar, zz6 zz6Var, u61 u61Var, b25 b25Var) {
+        po4 po4Var = (po4) up0Var.i(2);
+        ky0 ky0Var = (ky0) up0Var.i(1);
+        ky0Var.m(po4Var);
+        by0.b("Could not resolve state for movable content");
+        ku0.k();
     }
 }

@@ -1,58 +1,58 @@
 .class public Landroidx/leanback/widget/SearchBar;
 .super Landroid/widget/RelativeLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final synthetic q0:I
+.field public static final synthetic z0:I
 
 
 # instance fields
-.field public Q:Landroidx/leanback/widget/SearchEditText;
+.field public c0:Landroidx/leanback/widget/SearchEditText;
 
-.field public R:Landroidx/leanback/widget/SpeechOrbView;
+.field public d0:Landroidx/leanback/widget/SpeechOrbView;
 
-.field public S:Landroid/widget/ImageView;
+.field public e0:Landroid/widget/ImageView;
 
-.field public T:Ljava/lang/String;
+.field public f0:Ljava/lang/String;
 
-.field public U:Ljava/lang/String;
+.field public g0:Ljava/lang/String;
 
-.field public V:Ljava/lang/String;
+.field public h0:Ljava/lang/String;
 
-.field public W:Landroid/graphics/drawable/Drawable;
+.field public i0:Landroid/graphics/drawable/Drawable;
 
-.field public final a0:Landroid/os/Handler;
+.field public final j0:Landroid/os/Handler;
 
-.field public final b0:Landroid/view/inputmethod/InputMethodManager;
-
-.field public c0:Z
-
-.field public d0:Landroid/graphics/drawable/Drawable;
-
-.field public final e0:I
-
-.field public final f0:I
-
-.field public final g0:I
-
-.field public final h0:I
-
-.field public final i0:I
-
-.field public final j0:I
-
-.field public k0:Landroid/speech/SpeechRecognizer;
+.field public final k0:Landroid/view/inputmethod/InputMethodManager;
 
 .field public l0:Z
 
-.field public m0:Landroid/media/SoundPool;
+.field public m0:Landroid/graphics/drawable/Drawable;
 
-.field public final n0:Landroid/util/SparseIntArray;
+.field public final n0:I
 
-.field public o0:Z
+.field public final o0:I
 
-.field public final p0:Landroid/content/Context;
+.field public final p0:I
+
+.field public final q0:I
+
+.field public final r0:I
+
+.field public final s0:I
+
+.field public t0:Landroid/speech/SpeechRecognizer;
+
+.field public u0:Z
+
+.field public v0:Landroid/media/SoundPool;
+
+.field public final w0:Landroid/util/SparseIntArray;
+
+.field public x0:Z
+
+.field public final y0:Landroid/content/Context;
 
 
 # direct methods
@@ -85,14 +85,14 @@
     .line 7
     .line 8
     .line 9
-    iput-object p2, p0, Landroidx/leanback/widget/SearchBar;->a0:Landroid/os/Handler;
+    iput-object p2, p0, Landroidx/leanback/widget/SearchBar;->j0:Landroid/os/Handler;
 
     .line 10
     .line 11
     const/4 p2, 0x0
 
     .line 12
-    iput-boolean p2, p0, Landroidx/leanback/widget/SearchBar;->c0:Z
+    iput-boolean p2, p0, Landroidx/leanback/widget/SearchBar;->l0:Z
 
     .line 13
     .line 14
@@ -105,15 +105,15 @@
     .line 17
     .line 18
     .line 19
-    iput-object p3, p0, Landroidx/leanback/widget/SearchBar;->n0:Landroid/util/SparseIntArray;
+    iput-object p3, p0, Landroidx/leanback/widget/SearchBar;->w0:Landroid/util/SparseIntArray;
 
     .line 20
     .line 21
-    iput-boolean p2, p0, Landroidx/leanback/widget/SearchBar;->o0:Z
+    iput-boolean p2, p0, Landroidx/leanback/widget/SearchBar;->x0:Z
 
     .line 22
     .line 23
-    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->p0:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->y0:Landroid/content/Context;
 
     .line 24
     .line 25
@@ -141,7 +141,7 @@
     move-result-object v0
 
     .line 37
-    sget v1, Lq95;->lb_search_bar:I
+    sget v1, Lqt5;->lb_search_bar:I
 
     .line 38
     .line 39
@@ -161,7 +161,7 @@
     move-result-object v0
 
     .line 47
-    sget v1, Li85;->lb_search_bar_height:I
+    sget v1, Lhs5;->lb_search_bar_height:I
 
     .line 48
     .line 49
@@ -213,7 +213,7 @@
 
     .line 74
     .line 75
-    iput-object p2, p0, Landroidx/leanback/widget/SearchBar;->T:Ljava/lang/String;
+    iput-object p2, p0, Landroidx/leanback/widget/SearchBar;->f0:Ljava/lang/String;
 
     .line 76
     .line 77
@@ -233,11 +233,11 @@
 
     .line 84
     .line 85
-    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->b0:Landroid/view/inputmethod/InputMethodManager;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/view/inputmethod/InputMethodManager;
 
     .line 86
     .line 87
-    sget p1, Lc85;->lb_search_bar_text_speech_mode:I
+    sget p1, Lbs5;->lb_search_bar_text_speech_mode:I
 
     .line 88
     .line 89
@@ -249,11 +249,11 @@
     move-result p1
 
     .line 93
-    iput p1, p0, Landroidx/leanback/widget/SearchBar;->f0:I
+    iput p1, p0, Landroidx/leanback/widget/SearchBar;->o0:I
 
     .line 94
     .line 95
-    sget p1, Lc85;->lb_search_bar_text:I
+    sget p1, Lbs5;->lb_search_bar_text:I
 
     .line 96
     .line 97
@@ -265,11 +265,11 @@
     move-result p1
 
     .line 101
-    iput p1, p0, Landroidx/leanback/widget/SearchBar;->e0:I
+    iput p1, p0, Landroidx/leanback/widget/SearchBar;->n0:I
 
     .line 102
     .line 103
-    sget p1, Lp95;->lb_search_bar_speech_mode_background_alpha:I
+    sget p1, Lpt5;->lb_search_bar_speech_mode_background_alpha:I
 
     .line 104
     .line 105
@@ -281,11 +281,11 @@
     move-result p1
 
     .line 109
-    iput p1, p0, Landroidx/leanback/widget/SearchBar;->j0:I
+    iput p1, p0, Landroidx/leanback/widget/SearchBar;->s0:I
 
     .line 110
     .line 111
-    sget p1, Lp95;->lb_search_bar_text_mode_background_alpha:I
+    sget p1, Lpt5;->lb_search_bar_text_mode_background_alpha:I
 
     .line 112
     .line 113
@@ -297,11 +297,11 @@
     move-result p1
 
     .line 117
-    iput p1, p0, Landroidx/leanback/widget/SearchBar;->i0:I
+    iput p1, p0, Landroidx/leanback/widget/SearchBar;->r0:I
 
     .line 118
     .line 119
-    sget p1, Lc85;->lb_search_bar_hint_speech_mode:I
+    sget p1, Lbs5;->lb_search_bar_hint_speech_mode:I
 
     .line 120
     .line 121
@@ -313,11 +313,11 @@
     move-result p1
 
     .line 125
-    iput p1, p0, Landroidx/leanback/widget/SearchBar;->h0:I
+    iput p1, p0, Landroidx/leanback/widget/SearchBar;->q0:I
 
     .line 126
     .line 127
-    sget p1, Lc85;->lb_search_bar_hint:I
+    sget p1, Lbs5;->lb_search_bar_hint:I
 
     .line 128
     .line 129
@@ -329,7 +329,7 @@
     move-result p1
 
     .line 133
-    iput p1, p0, Landroidx/leanback/widget/SearchBar;->g0:I
+    iput p1, p0, Landroidx/leanback/widget/SearchBar;->p0:I
 
     .line 134
     .line 135
@@ -342,7 +342,7 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->o0:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->x0:Z
 
     .line 2
     .line 3
@@ -372,7 +372,7 @@
     .line 14
     .line 15
     :cond_1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/speech/SpeechRecognizer;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->t0:Landroid/speech/SpeechRecognizer;
 
     .line 16
     .line 17
@@ -412,11 +412,11 @@
     const/4 v0, 0x1
 
     .line 33
-    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->o0:Z
+    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->x0:Z
 
     .line 34
     .line 35
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 36
     .line 37
@@ -464,7 +464,7 @@
     .line 59
     .line 60
     .line 61
-    iget-object v2, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/speech/SpeechRecognizer;
+    iget-object v2, p0, Landroidx/leanback/widget/SearchBar;->t0:Landroid/speech/SpeechRecognizer;
 
     .line 62
     .line 63
@@ -482,15 +482,15 @@
     .line 69
     .line 70
     .line 71
-    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->l0:Z
+    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->u0:Z
 
     .line 72
     .line 73
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/speech/SpeechRecognizer;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->t0:Landroid/speech/SpeechRecognizer;
 
     .line 74
     .line 75
-    invoke-virtual {v0, v1}, Landroid/speech/SpeechRecognizer;->startListening(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Landroid/speech/SpeechRecognizer;->startListening(Landroid/content/Intent;)V
 
     .line 76
     .line 77
@@ -499,11 +499,11 @@
 
     .line 79
     :cond_3
-    const-string v0, "android.permission.RECORD_AUDIO required for search"
+    const-string p0, "android.permission.RECORD_AUDIO required for search"
 
     .line 80
     .line 81
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 82
     .line 83
@@ -515,7 +515,7 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->o0:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->x0:Z
 
     .line 2
     .line 3
@@ -527,11 +527,11 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 7
     .line 8
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->T:Ljava/lang/String;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->f0:Ljava/lang/String;
 
     .line 9
     .line 10
@@ -540,11 +540,11 @@
     .line 11
     .line 12
     .line 13
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 14
     .line 15
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->U:Ljava/lang/String;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->g0:Ljava/lang/String;
 
     .line 16
     .line 17
@@ -556,11 +556,11 @@
     const/4 v0, 0x0
 
     .line 21
-    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->o0:Z
+    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->x0:Z
 
     .line 22
     .line 23
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/speech/SpeechRecognizer;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->t0:Landroid/speech/SpeechRecognizer;
 
     .line 24
     .line 25
@@ -573,7 +573,7 @@
 
     .line 28
     :cond_1
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->R:Landroidx/leanback/widget/SpeechOrbView;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroidx/leanback/widget/SpeechOrbView;
 
     .line 29
     .line 30
@@ -582,7 +582,7 @@
     .line 31
     .line 32
     .line 33
-    iget-boolean v1, p0, Landroidx/leanback/widget/SearchBar;->l0:Z
+    iget-boolean v1, p0, Landroidx/leanback/widget/SearchBar;->u0:Z
 
     .line 34
     .line 35
@@ -590,7 +590,7 @@
 
     .line 36
     .line 37
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/speech/SpeechRecognizer;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->t0:Landroid/speech/SpeechRecognizer;
 
     .line 38
     .line 39
@@ -599,19 +599,19 @@
     .line 40
     .line 41
     .line 42
-    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->l0:Z
+    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->u0:Z
 
     .line 43
     .line 44
     :cond_2
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/speech/SpeechRecognizer;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->t0:Landroid/speech/SpeechRecognizer;
 
     .line 45
     .line 46
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 47
-    invoke-virtual {v0, v1}, Landroid/speech/SpeechRecognizer;->setRecognitionListener(Landroid/speech/RecognitionListener;)V
+    invoke-virtual {p0, v0}, Landroid/speech/SpeechRecognizer;->setRecognitionListener(Landroid/speech/RecognitionListener;)V
 
     .line 48
     .line 49
@@ -620,7 +620,7 @@
 .end method
 
 .method public final c()V
-    .locals 5
+    .locals 3
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
@@ -631,7 +631,7 @@
     move-result-object v0
 
     .line 5
-    sget v1, Lba5;->lb_search_bar_hint:I
+    sget v1, Lbu5;->lb_search_bar_hint:I
 
     .line 6
     .line 7
@@ -643,7 +643,7 @@
     move-result-object v0
 
     .line 11
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->V:Ljava/lang/String;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->h0:Ljava/lang/String;
 
     .line 12
     .line 13
@@ -655,7 +655,7 @@
     move-result v1
 
     .line 17
-    iget-object v2, p0, Landroidx/leanback/widget/SearchBar;->R:Landroidx/leanback/widget/SpeechOrbView;
+    iget-object v2, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroidx/leanback/widget/SpeechOrbView;
 
     .line 18
     .line 19
@@ -671,139 +671,133 @@
     move-result v0
 
     .line 25
-    const/4 v1, 0x0
+    if-eqz v0, :cond_0
 
     .line 26
-    const/4 v2, 0x1
-
     .line 27
-    if-eqz v0, :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 28
     .line 29
-    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
     .line 30
-    .line 31
-    .line 32
     move-result-object v0
 
+    .line 31
+    sget v1, Lbu5;->lb_search_bar_hint_with_title_speech:I
+
+    .line 32
     .line 33
-    sget v3, Lba5;->lb_search_bar_hint_with_title_speech:I
+    iget-object v2, p0, Landroidx/leanback/widget/SearchBar;->h0:Ljava/lang/String;
 
     .line 34
     .line 35
-    iget-object v4, p0, Landroidx/leanback/widget/SearchBar;->V:Ljava/lang/String;
+    filled-new-array {v2}, [Ljava/lang/Object;
 
     .line 36
     .line 37
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 38
+    move-result-object v2
+
     .line 39
-    aput-object v4, v2, v1
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 40
     .line 41
-    invoke-virtual {v0, v3, v2}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
     .line 42
-    .line 43
-    .line 44
     move-result-object v0
 
-    .line 45
+    .line 43
     goto :goto_0
 
-    .line 46
+    .line 44
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
+    .line 45
+    .line 46
     .line 47
-    .line 48
-    .line 49
     move-result-object v0
 
+    .line 48
+    sget v1, Lbu5;->lb_search_bar_hint_with_title:I
+
+    .line 49
     .line 50
-    sget v3, Lba5;->lb_search_bar_hint_with_title:I
+    iget-object v2, p0, Landroidx/leanback/widget/SearchBar;->h0:Ljava/lang/String;
 
     .line 51
     .line 52
-    iget-object v4, p0, Landroidx/leanback/widget/SearchBar;->V:Ljava/lang/String;
+    filled-new-array {v2}, [Ljava/lang/Object;
 
     .line 53
     .line 54
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 55
+    move-result-object v2
+
     .line 56
-    aput-object v4, v2, v1
+    invoke-virtual {v0, v1, v2}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 57
     .line 58
-    invoke-virtual {v0, v3, v2}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
     .line 59
-    .line 60
-    .line 61
     move-result-object v0
 
-    .line 62
+    .line 60
     goto :goto_0
 
-    .line 63
+    .line 61
     :cond_1
     invoke-virtual {v2}, Landroid/view/View;->isFocused()Z
 
+    .line 62
+    .line 63
     .line 64
-    .line 65
-    .line 66
     move-result v1
 
-    .line 67
+    .line 65
     if-eqz v1, :cond_2
+
+    .line 66
+    .line 67
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 68
     .line 69
-    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
     .line 70
-    .line 71
-    .line 72
     move-result-object v0
 
+    .line 71
+    sget v1, Lbu5;->lb_search_bar_hint_speech:I
+
+    .line 72
     .line 73
-    sget v1, Lba5;->lb_search_bar_hint_speech:I
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     .line 74
     .line 75
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
     .line 76
-    .line 77
-    .line 78
     move-result-object v0
 
-    .line 79
+    .line 77
     :cond_2
     :goto_0
-    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->U:Ljava/lang/String;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->g0:Ljava/lang/String;
+
+    .line 78
+    .line 79
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 80
     .line 81
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    if-eqz p0, :cond_3
 
     .line 82
     .line 83
-    if-eqz v1, :cond_3
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setHint(Ljava/lang/CharSequence;)V
 
     .line 84
     .line 85
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setHint(Ljava/lang/CharSequence;)V
-
     .line 86
-    .line 87
-    .line 88
     :cond_3
     return-void
 .end method
@@ -812,7 +806,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->m0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
@@ -820,7 +814,7 @@
 
     .line 4
     .line 5
-    iget p1, p0, Landroidx/leanback/widget/SearchBar;->j0:I
+    iget p1, p0, Landroidx/leanback/widget/SearchBar;->s0:I
 
     .line 6
     .line 7
@@ -829,7 +823,7 @@
     .line 8
     .line 9
     .line 10
-    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->R:Landroidx/leanback/widget/SpeechOrbView;
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroidx/leanback/widget/SpeechOrbView;
 
     .line 11
     .line 12
@@ -841,11 +835,11 @@
     move-result p1
 
     .line 16
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 17
     .line 18
-    iget v1, p0, Landroidx/leanback/widget/SearchBar;->h0:I
+    iget v1, p0, Landroidx/leanback/widget/SearchBar;->q0:I
 
     .line 19
     .line 20
@@ -858,7 +852,7 @@
     .line 23
     .line 24
     .line 25
-    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 26
     .line 27
@@ -871,7 +865,7 @@
 
     .line 31
     :cond_0
-    iget p1, p0, Landroidx/leanback/widget/SearchBar;->f0:I
+    iget p1, p0, Landroidx/leanback/widget/SearchBar;->o0:I
 
     .line 32
     .line 33
@@ -880,7 +874,7 @@
     .line 34
     .line 35
     .line 36
-    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 37
     .line 38
@@ -893,7 +887,7 @@
 
     .line 42
     :cond_1
-    iget p1, p0, Landroidx/leanback/widget/SearchBar;->i0:I
+    iget p1, p0, Landroidx/leanback/widget/SearchBar;->r0:I
 
     .line 43
     .line 44
@@ -902,11 +896,11 @@
     .line 45
     .line 46
     .line 47
-    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 48
     .line 49
-    iget v0, p0, Landroidx/leanback/widget/SearchBar;->e0:I
+    iget v0, p0, Landroidx/leanback/widget/SearchBar;->n0:I
 
     .line 50
     .line 51
@@ -915,11 +909,11 @@
     .line 52
     .line 53
     .line 54
-    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 55
     .line 56
-    iget v0, p0, Landroidx/leanback/widget/SearchBar;->g0:I
+    iget v0, p0, Landroidx/leanback/widget/SearchBar;->p0:I
 
     .line 57
     .line 58
@@ -938,43 +932,43 @@
 .end method
 
 .method public getBadgeDrawable()Landroid/graphics/drawable/Drawable;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->W:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getHint()Ljava/lang/CharSequence;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->U:Ljava/lang/String;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->g0:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getTitle()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->V:Ljava/lang/String;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->h0:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final onAttachedToWindow()V
     .locals 6
 
     .line 1
-    invoke-super {p0}, Landroid/widget/RelativeLayout;->onAttachedToWindow()V
+    invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
     .line 2
     .line 3
@@ -997,23 +991,23 @@
     .line 10
     .line 11
     .line 12
-    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->m0:Landroid/media/SoundPool;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->v0:Landroid/media/SoundPool;
 
     .line 13
     .line 14
-    sget v0, Lw95;->lb_voice_failure:I
+    sget v0, Lwt5;->lb_voice_failure:I
 
     .line 15
     .line 16
-    sget v1, Lw95;->lb_voice_open:I
+    sget v1, Lwt5;->lb_voice_open:I
 
     .line 17
     .line 18
-    sget v4, Lw95;->lb_voice_no_input:I
+    sget v4, Lwt5;->lb_voice_no_input:I
 
     .line 19
     .line 20
-    sget v5, Lw95;->lb_voice_success:I
+    sget v5, Lwt5;->lb_voice_success:I
 
     .line 21
     .line 22
@@ -1037,11 +1031,11 @@
 
     .line 30
     .line 31
-    iget-object v4, p0, Landroidx/leanback/widget/SearchBar;->m0:Landroid/media/SoundPool;
+    iget-object v4, p0, Landroidx/leanback/widget/SearchBar;->v0:Landroid/media/SoundPool;
 
     .line 32
     .line 33
-    iget-object v5, p0, Landroidx/leanback/widget/SearchBar;->p0:Landroid/content/Context;
+    iget-object v5, p0, Landroidx/leanback/widget/SearchBar;->y0:Landroid/content/Context;
 
     .line 34
     .line 35
@@ -1053,7 +1047,7 @@
     move-result v4
 
     .line 39
-    iget-object v5, p0, Landroidx/leanback/widget/SearchBar;->n0:Landroid/util/SparseIntArray;
+    iget-object v5, p0, Landroidx/leanback/widget/SearchBar;->w0:Landroid/util/SparseIntArray;
 
     .line 40
     .line 41
@@ -1082,7 +1076,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->m0:Landroid/media/SoundPool;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->v0:Landroid/media/SoundPool;
 
     .line 5
     .line 6
@@ -1091,7 +1085,7 @@
     .line 7
     .line 8
     .line 9
-    invoke-super {p0}, Landroid/widget/RelativeLayout;->onDetachedFromWindow()V
+    invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 10
     .line 11
@@ -1103,12 +1097,12 @@
     .locals 4
 
     .line 1
-    invoke-super {p0}, Landroid/widget/RelativeLayout;->onFinishInflate()V
+    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 2
     .line 3
     .line 4
-    sget v0, Lv85;->lb_search_bar_items:I
+    sget v0, Lus5;->lb_search_bar_items:I
 
     .line 5
     .line 6
@@ -1132,11 +1126,11 @@
     move-result-object v0
 
     .line 16
-    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->m0:Landroid/graphics/drawable/Drawable;
 
     .line 17
     .line 18
-    sget v0, Lv85;->lb_search_text_editor:I
+    sget v0, Lus5;->lb_search_text_editor:I
 
     .line 19
     .line 20
@@ -1152,11 +1146,11 @@
 
     .line 25
     .line 26
-    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 27
     .line 28
-    sget v0, Lv85;->lb_search_bar_badge:I
+    sget v0, Lus5;->lb_search_bar_badge:I
 
     .line 29
     .line 30
@@ -1172,11 +1166,11 @@
 
     .line 35
     .line 36
-    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->S:Landroid/widget/ImageView;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->e0:Landroid/widget/ImageView;
 
     .line 37
     .line 38
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->W:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 39
     .line 40
@@ -1190,18 +1184,18 @@
     .line 44
     .line 45
     :cond_0
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 46
     .line 47
-    new-instance v1, Le16;
+    new-instance v1, Lum6;
 
     .line 48
     .line 49
     const/4 v2, 0x0
 
     .line 50
-    invoke-direct {v1, p0, v2}, Le16;-><init>(Landroid/view/ViewGroup;I)V
+    invoke-direct {v1, p0, v2}, Lum6;-><init>(Landroid/view/ViewGroup;I)V
 
     .line 51
     .line 52
@@ -1211,24 +1205,24 @@
     .line 54
     .line 55
     .line 56
-    new-instance v0, Lf16;
+    new-instance v0, Lvm6;
 
     .line 57
     .line 58
-    invoke-direct {v0, p0, v2}, Lf16;-><init>(Landroidx/leanback/widget/SearchBar;I)V
+    invoke-direct {v0, p0, v2}, Lvm6;-><init>(Landroidx/leanback/widget/SearchBar;I)V
 
     .line 59
     .line 60
     .line 61
-    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 62
     .line 63
-    new-instance v3, Luq2;
+    new-instance v3, La63;
 
     .line 64
     .line 65
-    invoke-direct {v3, p0, v0}, Luq2;-><init>(Landroidx/leanback/widget/SearchBar;Lf16;)V
+    invoke-direct {v3, p0, v0}, La63;-><init>(Landroidx/leanback/widget/SearchBar;Lvm6;)V
 
     .line 66
     .line 67
@@ -1238,11 +1232,11 @@
     .line 69
     .line 70
     .line 71
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 72
     .line 73
-    new-instance v1, Lir0;
+    new-instance v1, Lep4;
 
     .line 74
     .line 75
@@ -1250,25 +1244,25 @@
 
     .line 76
     .line 77
-    invoke-direct {v1, v3, p0}, Lir0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v3, p0}, Lep4;-><init>(ILjava/lang/Object;)V
 
     .line 78
     .line 79
     .line 80
-    invoke-virtual {v0, v1}, Landroidx/leanback/widget/SearchEditText;->setOnKeyboardDismissListener(Lj16;)V
+    invoke-virtual {v0, v1}, Landroidx/leanback/widget/SearchEditText;->setOnKeyboardDismissListener(Lzm6;)V
 
     .line 81
     .line 82
     .line 83
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 84
     .line 85
-    new-instance v1, Lg16;
+    new-instance v1, Lwm6;
 
     .line 86
     .line 87
-    invoke-direct {v1, p0, v2}, Lg16;-><init>(Landroid/view/ViewGroup;I)V
+    invoke-direct {v1, p0, v2}, Lwm6;-><init>(Landroid/view/ViewGroup;I)V
 
     .line 88
     .line 89
@@ -1278,7 +1272,7 @@
     .line 91
     .line 92
     .line 93
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 94
     .line 95
@@ -1291,7 +1285,7 @@
     .line 98
     .line 99
     .line 100
-    sget v0, Lv85;->lb_search_bar_speech_orb:I
+    sget v0, Lus5;->lb_search_bar_speech_orb:I
 
     .line 101
     .line 102
@@ -1307,18 +1301,18 @@
 
     .line 107
     .line 108
-    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->R:Landroidx/leanback/widget/SpeechOrbView;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroidx/leanback/widget/SpeechOrbView;
 
     .line 109
     .line 110
-    new-instance v1, Lm4;
+    new-instance v1, Lu4;
 
     .line 111
     .line 112
     const/4 v2, 0x4
 
     .line 113
-    invoke-direct {v1, v2, p0}, Lm4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lu4;-><init>(ILjava/lang/Object;)V
 
     .line 114
     .line 115
@@ -1328,18 +1322,18 @@
     .line 117
     .line 118
     .line 119
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->R:Landroidx/leanback/widget/SpeechOrbView;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroidx/leanback/widget/SpeechOrbView;
 
     .line 120
     .line 121
-    new-instance v1, Le16;
+    new-instance v1, Lum6;
 
     .line 122
     .line 123
     const/4 v2, 0x1
 
     .line 124
-    invoke-direct {v1, p0, v2}, Le16;-><init>(Landroid/view/ViewGroup;I)V
+    invoke-direct {v1, p0, v2}, Lum6;-><init>(Landroid/view/ViewGroup;I)V
 
     .line 125
     .line 126
@@ -1374,11 +1368,11 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->W:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->S:Landroid/widget/ImageView;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->e0:Landroid/widget/ImageView;
 
     .line 4
     .line 5
@@ -1391,7 +1385,7 @@
     .line 8
     .line 9
     .line 10
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->S:Landroid/widget/ImageView;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->e0:Landroid/widget/ImageView;
 
     .line 11
     .line 12
@@ -1402,7 +1396,7 @@
     const/4 p1, 0x0
 
     .line 15
-    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 16
     .line 17
@@ -1415,7 +1409,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 22
     .line 23
@@ -1428,7 +1422,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->R:Landroidx/leanback/widget/SpeechOrbView;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroidx/leanback/widget/SpeechOrbView;
 
     .line 2
     .line 3
@@ -1437,11 +1431,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Landroid/view/View;->setNextFocusDownId(I)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setNextFocusDownId(I)V
 
     .line 9
     .line 10
@@ -1449,26 +1443,26 @@
     return-void
 .end method
 
-.method public setPermissionListener(Li16;)V
+.method public setPermissionListener(Lym6;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public setSearchAffordanceColors(Ll16;)V
-    .locals 1
+.method public setSearchAffordanceColors(Lbn6;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->R:Landroidx/leanback/widget/SpeechOrbView;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroidx/leanback/widget/SpeechOrbView;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Landroidx/leanback/widget/SpeechOrbView;->setNotListeningOrbColors(Ll16;)V
+    invoke-virtual {p0, p1}, Landroidx/leanback/widget/SpeechOrbView;->setNotListeningOrbColors(Lbn6;)V
 
     .line 6
     .line 7
@@ -1477,19 +1471,19 @@
     return-void
 .end method
 
-.method public setSearchAffordanceColorsInListening(Ll16;)V
-    .locals 1
+.method public setSearchAffordanceColorsInListening(Lbn6;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->R:Landroidx/leanback/widget/SpeechOrbView;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchBar;->d0:Landroidx/leanback/widget/SpeechOrbView;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Landroidx/leanback/widget/SpeechOrbView;->setListeningOrbColors(Ll16;)V
+    invoke-virtual {p0, p1}, Landroidx/leanback/widget/SpeechOrbView;->setListeningOrbColors(Lbn6;)V
 
     .line 6
     .line 7
@@ -1498,7 +1492,7 @@
     return-void
 .end method
 
-.method public setSearchBarListener(Lh16;)V
+.method public setSearchBarListener(Lxm6;)V
     .locals 0
 
     .line 1
@@ -1514,7 +1508,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 5
     .line 6
@@ -1535,7 +1529,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->T:Ljava/lang/String;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->f0:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -1555,14 +1549,14 @@
 
     .line 10
     :cond_0
-    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->T:Ljava/lang/String;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->f0:Ljava/lang/String;
 
     .line 11
     .line 12
     return-void
 .end method
 
-.method public setSpeechRecognitionCallback(Lhf6;)V
+.method public setSpeechRecognitionCallback(Ld37;)V
     .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
@@ -1580,7 +1574,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/speech/SpeechRecognizer;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->t0:Landroid/speech/SpeechRecognizer;
 
     .line 5
     .line 6
@@ -1596,7 +1590,7 @@
     .line 10
     .line 11
     .line 12
-    iget-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->l0:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->u0:Z
 
     .line 13
     .line 14
@@ -1604,7 +1598,7 @@
 
     .line 15
     .line 16
-    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/speech/SpeechRecognizer;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchBar;->t0:Landroid/speech/SpeechRecognizer;
 
     .line 17
     .line 18
@@ -1616,12 +1610,12 @@
     const/4 v0, 0x0
 
     .line 22
-    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->l0:Z
+    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->u0:Z
 
     .line 23
     .line 24
     :cond_0
-    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/speech/SpeechRecognizer;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->t0:Landroid/speech/SpeechRecognizer;
 
     .line 25
     .line 26
@@ -1632,7 +1626,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->V:Ljava/lang/String;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchBar;->h0:Ljava/lang/String;
 
     .line 2
     .line 3

@@ -1,75 +1,58 @@
 .class public final Le04;
-.super Landroid/animation/AnimatorListenerAdapter;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lwf8;
 
 
 # instance fields
-.field public final synthetic a:Z
-
-.field public final synthetic b:I
-
-.field public final synthetic c:Lf04;
+.field public final a:Lmm7;
 
 
 # direct methods
-.method public constructor <init>(Lf04;ZI)V
-    .locals 0
+.method public constructor <init>(Lji2;)V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Le04;->c:Lf04;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-boolean p2, p0, Le04;->a:Z
-
     .line 4
+    new-instance v0, Lmm7;
+
     .line 5
-    iput p3, p0, Le04;->b:I
-
     .line 6
-    .line 7
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct {v0, p1}, Lmm7;-><init>(Lji2;)V
 
+    .line 7
     .line 8
     .line 9
+    iput-object v0, p0, Le04;->a:Lmm7;
+
     .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 3
+.method public final a(Lqa5;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-object p1, p0, Le04;->c:Lf04;
+    iget-object p0, p0, Le04;->a:Lmm7;
 
     .line 2
     .line 3
-    iget-object v0, p1, Lfz3;->b:Landroid/view/View;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
-    const/4 v1, 0x0
-
     .line 6
-    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
+    move-result-object p0
 
     .line 7
-    .line 8
-    .line 9
-    iget-boolean v0, p0, Le04;->a:Z
-
-    .line 10
-    .line 11
-    iget v2, p0, Le04;->b:I
-
-    .line 12
-    .line 13
-    invoke-virtual {p1, v1, v0, v2}, Lf04;->a(FZI)V
-
-    .line 14
-    .line 15
-    .line 16
-    return-void
+    return-object p0
 .end method

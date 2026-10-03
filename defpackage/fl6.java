@@ -1,31 +1,39 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class fl6 implements CharSequence {
-    public char[] Q;
-    public String R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class fl6 extends b1 implements k41 {
+    public final b31 e0;
 
-    @Override // java.lang.CharSequence
-    public final char charAt(int i) {
-        return this.Q[i];
+    public fl6(b31 b31Var, z31 z31Var) {
+        super(z31Var, true);
+        this.e0 = b31Var;
     }
 
-    @Override // java.lang.CharSequence
-    public final int length() {
-        return this.Q.length;
+    @Override // defpackage.ve3
+    public final boolean V() {
+        return true;
     }
 
-    @Override // java.lang.CharSequence
-    public final CharSequence subSequence(int i, int i2) {
-        return new String(this.Q, i, i2 - i);
-    }
-
-    @Override // java.lang.CharSequence
-    public final String toString() {
-        if (this.R == null) {
-            this.R = new String(this.Q);
+    @Override // defpackage.k41
+    public final k41 c() {
+        b31 b31Var = this.e0;
+        if (b31Var instanceof k41) {
+            return (k41) b31Var;
         }
-        return this.R;
+        return null;
+    }
+
+    @Override // defpackage.ve3
+    public void d(Object obj) {
+        em1.a(h71.C(this.e0), l93.N(obj));
+    }
+
+    @Override // defpackage.ve3
+    public void e(Object obj) {
+        this.e0.f(l93.N(obj));
+    }
+
+    public void t0() {
     }
 }

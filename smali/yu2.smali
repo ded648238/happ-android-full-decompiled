@@ -1,59 +1,42 @@
-.class public final Lyu2;
+.class public abstract Lyu2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public a:I
-
-.field public b:I
-
-.field public c:F
-
-.field public d:Z
-
-.field public final e:I
+# static fields
+.field public static final a:Lwy0;
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method static constructor <clinit>()V
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Luq2;
 
     .line 2
     .line 3
-    .line 4
-    const/4 v0, -0x1
+    const/16 v1, 0xb
 
+    .line 4
     .line 5
-    iput v0, p0, Lyu2;->a:I
+    invoke-direct {v0, v1}, Luq2;-><init>(I)V
 
     .line 6
     .line 7
-    const/4 v0, 0x0
-
     .line 8
-    iput v0, p0, Lyu2;->b:I
+    new-instance v1, Lwy0;
 
     .line 9
     .line 10
-    const/high16 v1, 0x42480000    # 50.0f
+    invoke-direct {v1, v0}, Lwy0;-><init>(Lji2;)V
 
     .line 11
     .line 12
-    iput v1, p0, Lyu2;->c:F
-
     .line 13
+    sput-object v1, Lyu2;->a:Lwy0;
+
     .line 14
-    iput-boolean v0, p0, Lyu2;->d:Z
-
     .line 15
-    .line 16
-    iput p1, p0, Lyu2;->e:I
-
-    .line 17
-    .line 18
     return-void
 .end method

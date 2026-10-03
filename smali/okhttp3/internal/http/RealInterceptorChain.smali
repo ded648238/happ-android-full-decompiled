@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http/RealInterceptorChain;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/Interceptor$Chain;
@@ -283,55 +283,55 @@
 
 # virtual methods
 .method public call()Lokhttp3/Call;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->call:Lokhttp3/internal/connection/RealCall;
+    iget-object p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->call:Lokhttp3/internal/connection/RealCall;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public connectTimeoutMillis()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->connectTimeoutMillis:I
+    iget p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->connectTimeoutMillis:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public connection()Lokhttp3/Connection;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->exchange:Lokhttp3/internal/connection/Exchange;
+    iget-object p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->exchange:Lokhttp3/internal/connection/Exchange;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->getConnection$okhttp()Lokhttp3/internal/connection/RealConnection;
+    invoke-virtual {p0}, Lokhttp3/internal/connection/Exchange;->getConnection$okhttp()Lokhttp3/internal/connection/RealConnection;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final copy$okhttp(ILokhttp3/internal/connection/Exchange;Lokhttp3/Request;III)Lokhttp3/internal/http/RealInterceptorChain;
@@ -382,69 +382,69 @@
 .end method
 
 .method public final getCall$okhttp()Lokhttp3/internal/connection/RealCall;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->call:Lokhttp3/internal/connection/RealCall;
+    iget-object p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->call:Lokhttp3/internal/connection/RealCall;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getConnectTimeoutMillis$okhttp()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->connectTimeoutMillis:I
+    iget p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->connectTimeoutMillis:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getExchange$okhttp()Lokhttp3/internal/connection/Exchange;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->exchange:Lokhttp3/internal/connection/Exchange;
+    iget-object p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->exchange:Lokhttp3/internal/connection/Exchange;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getReadTimeoutMillis$okhttp()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->readTimeoutMillis:I
+    iget p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->readTimeoutMillis:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getRequest$okhttp()Lokhttp3/Request;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->request:Lokhttp3/Request;
+    iget-object p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->request:Lokhttp3/Request;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getWriteTimeoutMillis$okhttp()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->writeTimeoutMillis:I
+    iget p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->writeTimeoutMillis:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public proceed(Lokhttp3/Request;)Lokhttp3/Response;
@@ -558,22 +558,22 @@
 
     .line 49
     .line 50
-    iget v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->index:I
+    iget p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->index:I
 
     .line 51
     .line 52
-    sub-int/2addr v0, v1
+    sub-int/2addr p0, v1
 
     .line 53
-    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 54
     .line 55
     .line 56
-    move-result-object p1
+    move-result-object p0
 
     .line 57
-    invoke-static {v4, p1, v3}, Len0;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v4, p0, v3}, Lku0;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 58
     .line 59
@@ -586,26 +586,26 @@
 
     .line 62
     .line 63
-    iget v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->index:I
+    iget p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->index:I
 
     .line 64
     .line 65
-    sub-int/2addr v0, v1
+    sub-int/2addr p0, v1
 
     .line 66
-    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 67
     .line 68
     .line 69
-    move-result-object p1
+    move-result-object p0
 
     .line 70
-    const-string v0, " must retain the same host and port"
+    const-string p1, " must retain the same host and port"
 
     .line 71
     .line 72
-    invoke-static {v4, p1, v0}, Len0;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v4, p0, p1}, Lku0;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 73
     .line 74
@@ -653,46 +653,46 @@
     .line 90
     .line 91
     .line 92
-    move-result-object p1
+    move-result-object p0
 
     .line 93
-    iget-object v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->interceptors:Ljava/util/List;
+    iget-object p1, v5, Lokhttp3/internal/http/RealInterceptorChain;->interceptors:Ljava/util/List;
 
     .line 94
     .line 95
-    iget v5, p0, Lokhttp3/internal/http/RealInterceptorChain;->index:I
+    iget v0, v5, Lokhttp3/internal/http/RealInterceptorChain;->index:I
 
     .line 96
     .line 97
-    invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 98
     .line 99
     .line 100
-    move-result-object v0
+    move-result-object p1
 
     .line 101
-    check-cast v0, Lokhttp3/Interceptor;
+    check-cast p1, Lokhttp3/Interceptor;
 
     .line 102
     .line 103
-    invoke-interface {v0, p1}, Lokhttp3/Interceptor;->intercept(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
+    invoke-interface {p1, p0}, Lokhttp3/Interceptor;->intercept(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
 
     .line 104
     .line 105
     .line 106
-    move-result-object v5
+    move-result-object v0
 
     .line 107
     const-string v6, "interceptor "
 
     .line 108
     .line 109
-    if-eqz v5, :cond_6
+    if-eqz v0, :cond_6
 
     .line 110
     .line 111
-    iget-object v7, p0, Lokhttp3/internal/http/RealInterceptorChain;->exchange:Lokhttp3/internal/connection/Exchange;
+    iget-object v7, v5, Lokhttp3/internal/http/RealInterceptorChain;->exchange:Lokhttp3/internal/connection/Exchange;
 
     .line 112
     .line 113
@@ -700,34 +700,34 @@
 
     .line 114
     .line 115
-    iget v7, p0, Lokhttp3/internal/http/RealInterceptorChain;->index:I
+    iget v7, v5, Lokhttp3/internal/http/RealInterceptorChain;->index:I
 
     .line 116
     .line 117
     add-int/2addr v7, v1
 
     .line 118
-    iget-object v8, p0, Lokhttp3/internal/http/RealInterceptorChain;->interceptors:Ljava/util/List;
+    iget-object v5, v5, Lokhttp3/internal/http/RealInterceptorChain;->interceptors:Ljava/util/List;
 
     .line 119
     .line 120
-    invoke-interface {v8}, Ljava/util/List;->size()I
+    invoke-interface {v5}, Ljava/util/List;->size()I
 
     .line 121
     .line 122
     .line 123
-    move-result v8
+    move-result v5
 
     .line 124
-    if-ge v7, v8, :cond_4
+    if-ge v7, v5, :cond_4
 
     .line 125
     .line 126
-    iget p1, p1, Lokhttp3/internal/http/RealInterceptorChain;->calls:I
+    iget p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->calls:I
 
     .line 127
     .line 128
-    if-ne p1, v1, :cond_3
+    if-ne p0, v1, :cond_3
 
     .line 129
     .line 130
@@ -735,7 +735,7 @@
 
     .line 131
     :cond_3
-    invoke-static {v4, v0, v3}, Len0;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v4, p1, v3}, Lku0;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 132
     .line 133
@@ -745,27 +745,27 @@
     .line 135
     :cond_4
     :goto_1
-    invoke-virtual {v5}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
+    invoke-virtual {v0}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
     .line 136
     .line 137
     .line 138
-    move-result-object p1
+    move-result-object p0
 
     .line 139
-    if-eqz p1, :cond_5
+    if-eqz p0, :cond_5
 
     .line 140
     .line 141
-    return-object v5
+    return-object v0
 
     .line 142
     :cond_5
-    const-string p1, " returned a response with no body"
+    const-string p0, " returned a response with no body"
 
     .line 143
     .line 144
-    invoke-static {v6, v0, p1}, Len0;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v6, p1, p0}, Lku0;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 145
     .line 146
@@ -774,55 +774,55 @@
 
     .line 148
     :cond_6
-    new-instance p1, Ljava/lang/NullPointerException;
+    new-instance p0, Ljava/lang/NullPointerException;
 
     .line 149
     .line 150
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 151
     .line 152
-    invoke-direct {v1, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 153
     .line 154
     .line 155
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 156
     .line 157
     .line 158
-    const-string v0, " returned null"
+    const-string p1, " returned null"
 
     .line 159
     .line 160
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 161
     .line 162
     .line 163
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 164
     .line 165
     .line 166
-    move-result-object v0
+    move-result-object p1
 
     .line 167
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
     .line 168
     .line 169
     .line 170
-    throw p1
+    throw p0
 
     .line 171
     :cond_7
-    const-string p1, "Check failed."
+    const-string p0, "Check failed."
 
     .line 172
     .line 173
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 174
     .line 175
@@ -831,25 +831,25 @@
 .end method
 
 .method public readTimeoutMillis()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->readTimeoutMillis:I
+    iget p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->readTimeoutMillis:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public request()Lokhttp3/Request;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->request:Lokhttp3/Request;
+    iget-object p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->request:Lokhttp3/Request;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public withConnectTimeout(ILjava/util/concurrent/TimeUnit;)Lokhttp3/Interceptor$Chain;
@@ -914,26 +914,26 @@
     .line 25
     .line 26
     .line 27
-    move-result-object p1
+    move-result-object p0
 
     .line 28
-    return-object p1
+    return-object p0
 
     .line 29
     :cond_0
-    const-string p1, "Timeouts can\'t be adjusted in a network interceptor"
+    const-string p0, "Timeouts can\'t be adjusted in a network interceptor"
 
     .line 30
     .line 31
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 32
     .line 33
     .line 34
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 35
-    return-object p1
+    return-object p0
 .end method
 
 .method public withReadTimeout(ILjava/util/concurrent/TimeUnit;)Lokhttp3/Interceptor$Chain;
@@ -998,26 +998,26 @@
     .line 25
     .line 26
     .line 27
-    move-result-object p1
+    move-result-object p0
 
     .line 28
-    return-object p1
+    return-object p0
 
     .line 29
     :cond_0
-    const-string p1, "Timeouts can\'t be adjusted in a network interceptor"
+    const-string p0, "Timeouts can\'t be adjusted in a network interceptor"
 
     .line 30
     .line 31
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 32
     .line 33
     .line 34
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 35
-    return-object p1
+    return-object p0
 .end method
 
 .method public withWriteTimeout(ILjava/util/concurrent/TimeUnit;)Lokhttp3/Interceptor$Chain;
@@ -1082,35 +1082,35 @@
     .line 25
     .line 26
     .line 27
-    move-result-object p1
+    move-result-object p0
 
     .line 28
-    return-object p1
+    return-object p0
 
     .line 29
     :cond_0
-    const-string p1, "Timeouts can\'t be adjusted in a network interceptor"
+    const-string p0, "Timeouts can\'t be adjusted in a network interceptor"
 
     .line 30
     .line 31
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 32
     .line 33
     .line 34
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 35
-    return-object p1
+    return-object p0
 .end method
 
 .method public writeTimeoutMillis()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http/RealInterceptorChain;->writeTimeoutMillis:I
+    iget p0, p0, Lokhttp3/internal/http/RealInterceptorChain;->writeTimeoutMillis:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

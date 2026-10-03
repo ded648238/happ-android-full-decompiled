@@ -1,440 +1,601 @@
-.class public abstract Lpf4;
+.class public final Lpf4;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/util/Map;
+.implements Lxn3;
 
 
-# static fields
-.field public static final a:Ljava/lang/String;
+# instance fields
+.field public final X:Lmq4;
+
+.field public Y:Ljy1;
+
+.field public Z:Ljy1;
+
+.field public c0:Lqd7;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lmq4;)V
+    .locals 0
 
     .line 1
-    const-wide/high16 v0, -0x8000000000000000L
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
-
     .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 5
     .line 6
-    move-result-object v0
-
     .line 7
-    const/4 v1, 0x1
+    iput-object p1, p0, Lpf4;->X:Lmq4;
 
     .line 8
-    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
     .line 9
-    .line 10
-    .line 11
-    const-wide v0, 0x7fffffffffffffffL
-
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    sput-object v0, Lpf4;->a:Ljava/lang/String;
-
-    .line 21
-    .line 22
-    const-string v0, "[+-]?[0-9]*[\\.]?[0-9]+([eE][+-]?[0-9]+)?"
-
-    .line 23
-    .line 24
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    .line 25
-    .line 26
-    .line 27
-    const-string v0, "[+-]?[0-9]+[\\.]"
-
-    .line 28
-    .line 29
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    .line 30
-    .line 31
-    .line 32
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;)J
-    .locals 10
+
+# virtual methods
+.method public final clear()V
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    const-string v0, "Operation is not supported for read-only collection"
 
+    .line 4
     .line 5
-    const/16 v1, 0x9
+    invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    if-gt v0, v1, :cond_11
+    .line 8
+    throw p0
+.end method
+
+.method public final compute(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final computeIfPresent(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final containsKey(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lpf4;->X:Lmq4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lmq4;->c(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final containsValue(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lpf4;->X:Lmq4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lmq4;->d(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final entrySet()Ljava/util/Set;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lpf4;->Y:Ljy1;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    new-instance v0, Ljy1;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Lpf4;->X:Lmq4;
+
+    .line 9
+    .line 10
+    const/4 v2, 0x0
+
+    .line 11
+    invoke-direct {v0, v1, v2}, Ljy1;-><init>(Lmq4;I)V
+
+    .line 12
+    .line 13
+    .line 14
+    iput-object v0, p0, Lpf4;->Y:Ljy1;
+
+    .line 15
+    .line 16
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p0, 0x1
+
+    .line 4
+    return p0
+
+    .line 5
+    :cond_0
+    if-eqz p1, :cond_2
+
+    .line 6
+    .line 7
+    const-class v0, Lpf4;
 
     .line 8
     .line 9
-    const/4 v0, 0x0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 10
-    invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    if-eq v0, v1, :cond_1
+
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_1
+    check-cast p1, Lpf4;
+
+    .line 17
+    .line 18
+    iget-object p0, p0, Lpf4;->X:Lmq4;
+
+    .line 19
+    .line 20
+    iget-object p1, p1, Lpf4;->X:Lmq4;
+
+    .line 21
+    .line 22
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result p0
+
+    .line 26
+    return p0
+
+    .line 27
+    :cond_2
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 28
+    return p0
+.end method
+
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lpf4;->X:Lmq4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lmq4;->g(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lpf4;->X:Lmq4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lmq4;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final isEmpty()Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lpf4;->X:Lmq4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lmq4;->i()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final keySet()Ljava/util/Set;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lpf4;->Z:Ljy1;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    new-instance v0, Ljy1;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Lpf4;->X:Lmq4;
+
+    .line 9
+    .line 10
+    const/4 v2, 0x1
+
+    .line 11
+    invoke-direct {v0, v1, v2}, Ljy1;-><init>(Lmq4;I)V
+
+    .line 12
+    .line 13
+    .line 14
+    iput-object v0, p0, Lpf4;->Z:Ljy1;
+
+    .line 15
+    .line 16
+    return-object v0
+.end method
+
+.method public final merge(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final putAll(Ljava/util/Map;)V
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final remove(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final remove(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 9
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Operation is not supported for read-only collection"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 9
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Operation is not supported for read-only collection"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final replaceAll(Ljava/util/function/BiFunction;)V
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final size()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lpf4;->X:Lmq4;
+
+    .line 2
+    .line 3
+    iget p0, p0, Lmq4;->e:I
+
+    .line 4
+    .line 5
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lpf4;->X:Lmq4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lmq4;->toString()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final values()Ljava/util/Collection;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lpf4;->c0:Lqd7;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    new-instance v0, Lqd7;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Lpf4;->X:Lmq4;
+
+    .line 9
+    .line 10
+    invoke-direct {v0, v1}, Lqd7;-><init>(Lmq4;)V
 
     .line 11
     .line 12
     .line 13
-    move-result v2
+    iput-object v0, p0, Lpf4;->c0:Lqd7;
 
     .line 14
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
     .line 15
-    .line 16
-    .line 17
-    move-result v3
-
-    .line 18
-    const/16 v4, 0x2d
-
-    .line 19
-    .line 20
-    const/4 v5, 0x1
-
-    .line 21
-    if-ne v2, v4, :cond_0
-
-    .line 22
-    .line 23
-    const/4 v0, 0x1
-
-    .line 24
-    :cond_0
-    const/4 v4, 0x2
-
-    .line 25
-    const/16 v6, 0xa
-
-    .line 26
-    .line 27
-    if-eqz v0, :cond_3
-
-    .line 28
-    .line 29
-    if-eq v3, v5, :cond_2
-
-    .line 30
-    .line 31
-    if-le v3, v6, :cond_1
-
-    .line 32
-    .line 33
-    goto :goto_0
-
-    .line 34
-    :cond_1
-    invoke-virtual {p0, v5}, Ljava/lang/String;->charAt(I)C
-
-    .line 35
-    .line 36
-    .line 37
-    move-result v2
-
-    .line 38
-    const/4 v5, 0x2
-
-    .line 39
-    goto :goto_1
-
-    .line 40
-    :cond_2
-    :goto_0
-    invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    .line 41
-    .line 42
-    .line 43
-    move-result p0
-
-    .line 44
-    goto/16 :goto_8
-
-    .line 45
-    .line 46
-    :cond_3
-    if-le v3, v1, :cond_4
-
-    .line 47
-    .line 48
-    invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    .line 49
-    .line 50
-    .line 51
-    move-result p0
-
-    .line 52
-    goto/16 :goto_8
-
-    .line 53
-    .line 54
-    :cond_4
-    :goto_1
-    const/16 v1, 0x39
-
-    .line 55
-    .line 56
-    if-gt v2, v1, :cond_f
-
-    .line 57
-    .line 58
-    const/16 v7, 0x30
-
-    .line 59
-    .line 60
-    if-ge v2, v7, :cond_5
-
-    .line 61
-    .line 62
-    goto :goto_7
-
-    .line 63
-    :cond_5
-    sub-int/2addr v2, v7
-
-    .line 64
-    if-ge v5, v3, :cond_9
-
-    .line 65
-    .line 66
-    add-int/lit8 v8, v5, 0x1
-
-    .line 67
-    .line 68
-    invoke-virtual {p0, v5}, Ljava/lang/String;->charAt(I)C
-
-    .line 69
-    .line 70
-    .line 71
-    move-result v9
-
-    .line 72
-    if-gt v9, v1, :cond_e
-
-    .line 73
-    .line 74
-    if-ge v9, v7, :cond_6
-
-    .line 75
-    .line 76
-    goto :goto_5
-
-    .line 77
-    :cond_6
-    mul-int/lit8 v2, v2, 0xa
-
-    .line 78
-    .line 79
-    sub-int/2addr v9, v7
-
-    .line 80
-    add-int/2addr v9, v2
-
-    .line 81
-    if-ge v8, v3, :cond_d
-
-    .line 82
-    .line 83
-    add-int/2addr v5, v4
-
-    .line 84
-    invoke-virtual {p0, v8}, Ljava/lang/String;->charAt(I)C
-
-    .line 85
-    .line 86
-    .line 87
-    move-result v2
-
-    .line 88
-    if-gt v2, v1, :cond_c
-
-    .line 89
-    .line 90
-    if-ge v2, v7, :cond_7
-
-    .line 91
-    .line 92
-    goto :goto_4
-
-    .line 93
-    :cond_7
-    mul-int/lit8 v9, v9, 0xa
-
-    .line 94
-    .line 95
-    sub-int/2addr v2, v7
-
-    .line 96
-    add-int/2addr v2, v9
-
-    .line 97
-    if-ge v5, v3, :cond_9
-
-    .line 98
-    .line 99
-    :goto_2
-    add-int/lit8 v4, v5, 0x1
-
-    .line 100
-    .line 101
-    invoke-virtual {p0, v5}, Ljava/lang/String;->charAt(I)C
-
-    .line 102
-    .line 103
-    .line 104
-    move-result v5
-
-    .line 105
-    if-gt v5, v1, :cond_b
-
-    .line 106
-    .line 107
-    if-ge v5, v7, :cond_8
-
-    .line 108
-    .line 109
-    goto :goto_3
-
-    .line 110
-    :cond_8
-    mul-int/lit8 v2, v2, 0xa
-
-    .line 111
-    .line 112
-    add-int/lit8 v5, v5, -0x30
-
-    .line 113
-    .line 114
-    add-int/2addr v2, v5
-
-    .line 115
-    if-lt v4, v3, :cond_a
-
-    .line 116
-    .line 117
-    :cond_9
-    move p0, v2
-
-    .line 118
-    goto :goto_6
-
-    .line 119
-    :cond_a
-    move v5, v4
-
-    .line 120
-    goto :goto_2
-
-    .line 121
-    :cond_b
-    :goto_3
-    invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    .line 122
-    .line 123
-    .line 124
-    move-result p0
-
-    .line 125
-    goto :goto_8
-
-    .line 126
-    :cond_c
-    :goto_4
-    invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    .line 127
-    .line 128
-    .line 129
-    move-result p0
-
-    .line 130
-    goto :goto_8
-
-    .line 131
-    :cond_d
-    move p0, v9
-
-    .line 132
-    goto :goto_6
-
-    .line 133
-    :cond_e
-    :goto_5
-    invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    .line 134
-    .line 135
-    .line 136
-    move-result p0
-
-    .line 137
-    goto :goto_8
-
-    .line 138
-    :goto_6
-    if-eqz v0, :cond_10
-
-    .line 139
-    .line 140
-    neg-int p0, p0
-
-    .line 141
-    goto :goto_8
-
-    .line 142
-    :cond_f
-    :goto_7
-    invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    .line 143
-    .line 144
-    .line 145
-    move-result p0
-
-    .line 146
-    :cond_10
-    :goto_8
-    int-to-long v0, p0
-
-    .line 147
-    return-wide v0
-
-    .line 148
-    :cond_11
-    invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
-
-    .line 149
-    .line 150
-    .line 151
-    move-result-wide v0
-
-    .line 152
-    return-wide v0
+    return-object v0
 .end method

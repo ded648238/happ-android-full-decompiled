@@ -1,20 +1,35 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class tx {
-    public static final /* synthetic */ tx[] Q = {new tx("PRESENT", 0), new tx("ABSENT", 1), new tx("PRESENT_OPTIONAL", 2), new tx("ABSENT_OPTIONAL", 3)};
+    public final long a;
+    public final ly b;
+    public final dx c;
 
-    /* JADX INFO: Fake field, exist only in values array */
-    tx EF5;
-
-    public static tx valueOf(String str) {
-        return (tx) Enum.valueOf(tx.class, str);
+    public tx(long j, ly lyVar, dx dxVar) {
+        this.a = j;
+        this.b = lyVar;
+        this.c = dxVar;
     }
 
-    public static tx[] values() {
-        return (tx[]) Q.clone();
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof tx)) {
+            return false;
+        }
+        tx txVar = (tx) obj;
+        return this.a == txVar.a && this.b.equals(txVar.b) && this.c.equals(txVar.c);
+    }
+
+    public final int hashCode() {
+        long j = this.a;
+        return this.c.hashCode() ^ ((((((int) ((j >>> 32) ^ j)) ^ 1000003) * 1000003) ^ this.b.hashCode()) * 1000003);
+    }
+
+    public final String toString() {
+        return "PersistedEvent{id=" + this.a + ", transportContext=" + this.b + ", event=" + this.c + "}";
     }
 }

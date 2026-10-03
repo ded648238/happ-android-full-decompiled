@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -55,7 +55,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -83,7 +83,7 @@
 .end method
 
 .method private final build(Ljava/lang/Class;)Lokhttp3/internal/platform/android/AndroidSocketAdapter;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -96,47 +96,47 @@
     .end annotation
 
     .line 1
-    move-object v0, p1
+    move-object p0, p1
 
     .line 2
     :goto_0
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 3
     .line 4
-    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     .line 5
     .line 6
     .line 7
-    move-result-object v1
+    move-result-object v0
 
     .line 8
-    const-string v2, "OpenSSLSocketImpl"
+    const-string v1, "OpenSSLSocketImpl"
 
     .line 9
     .line 10
-    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 11
     .line 12
     .line 13
-    move-result v1
+    move-result v0
 
     .line 14
-    if-nez v1, :cond_1
+    if-nez v0, :cond_1
 
     .line 15
     .line 16
-    invoke-virtual {v0}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    move-result-object p0
 
     .line 20
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 21
     .line 22
@@ -144,27 +144,27 @@
 
     .line 23
     :cond_0
-    const-string v0, "No OpenSSLSocketImpl superclass of socket of type "
+    const-string p0, "No OpenSSLSocketImpl superclass of socket of type "
 
     .line 24
     .line 25
-    invoke-static {p1, v0}, Lxy4;->x(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Lc73;->g(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
 
     .line 26
     .line 27
     .line 28
-    move-result-object p1
+    move-result-object p0
 
     .line 29
-    invoke-static {p1}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 30
     .line 31
     .line 32
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 33
-    return-object p1
+    return-object p0
 
     .line 34
     :cond_1
@@ -172,12 +172,12 @@
 
     .line 35
     .line 36
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 37
     .line 38
     .line 39
-    invoke-direct {p1, v0}, Lokhttp3/internal/platform/android/AndroidSocketAdapter;-><init>(Ljava/lang/Class;)V
+    invoke-direct {p1, p0}, Lokhttp3/internal/platform/android/AndroidSocketAdapter;-><init>(Ljava/lang/Class;)V
 
     .line 40
     .line 41
@@ -188,7 +188,7 @@
 
 # virtual methods
 .method public final factory(Ljava/lang/String;)Lokhttp3/internal/platform/android/DeferredSocketAdapter$Factory;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -196,20 +196,20 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion$factory$1;
+    new-instance p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion$factory$1;
 
     .line 5
     .line 6
-    invoke-direct {v0, p1}, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion$factory$1;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion$factory$1;-><init>(Ljava/lang/String;)V
 
     .line 7
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPlayProviderFactory()Lokhttp3/internal/platform/android/DeferredSocketAdapter$Factory;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-static {}, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->access$getPlayProviderFactory$cp()Lokhttp3/internal/platform/android/DeferredSocketAdapter$Factory;
@@ -217,8 +217,8 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method

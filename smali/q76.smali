@@ -1,31 +1,85 @@
-.class public final Lq76;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lq76;
+.super Ljq4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final a:Lfy2;
-
-.field public final b:Ljava/lang/Object;
+# static fields
+.field public static final X:Lq76;
 
 
 # direct methods
-.method public constructor <init>(Lfy2;Ljava/lang/Object;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lq76;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lq76;->a:Lfy2;
+    const-string v1, "getXrayTunMtu()Ljava/lang/Integer;"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    iput-object p2, p0, Lq76;->b:Ljava/lang/Object;
+    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 7
     .line 8
+    const-string v4, "xrayTunMtu"
+
+    .line 9
+    .line 10
+    invoke-direct {v0, v3, v4, v1, v2}, Ljq4;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v0, Lq76;->X:Lq76;
+
+    .line 14
+    .line 15
     return-void
+.end method
+
+
+# virtual methods
+.method public final E(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    check-cast p2, Ljava/lang/Integer;
+
+    .line 4
+    .line 5
+    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->S2(Ljava/lang/Integer;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->f1()Ljava/lang/Integer;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
 .end method

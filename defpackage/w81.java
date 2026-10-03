@@ -1,26 +1,17 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class w81 extends m81 implements u72 {
-    public final x81 Z;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface w81 extends lt8 {
+    Integer j();
 
-    public w81(x81 x81Var) {
-        this.Z = x81Var;
-    }
+    Integer n();
 
-    @Override // defpackage.u72
-    public final Object C(Object obj, Object obj2) {
-        return ((w81) this.Z.f0.getValue()).L(obj, obj2);
-    }
+    void o(Integer num);
 
-    @Override // defpackage.k81
-    public final y81 Q() {
-        return this.Z;
-    }
+    Integer q();
 
-    @Override // defpackage.i83
-    public final p83 f() {
-        return this.Z;
-    }
+    void t(Integer num);
+
+    void y(Integer num);
 }

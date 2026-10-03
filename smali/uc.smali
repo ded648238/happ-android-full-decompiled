@@ -1,83 +1,98 @@
-.class public final Luc;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Luc;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg72;
+.implements Lxi2;
 
 
 # instance fields
-.field public final synthetic Q:Lld1;
+.field public final synthetic X:Lh20;
 
-.field public final synthetic R:Lg72;
+.field public final synthetic Y:Ldn4;
 
-.field public final synthetic S:Lic1;
-
-.field public final synthetic T:Lte3;
+.field public final synthetic Z:J
 
 
 # direct methods
-.method public constructor <init>(Lld1;Lg72;Lic1;Lte3;)V
+.method public synthetic constructor <init>(Lh20;Ldn4;JI)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Luc;->Q:Lld1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p2, p0, Luc;->R:Lg72;
-
     .line 4
+    iput-object p1, p0, Luc;->X:Lh20;
+
     .line 5
-    iput-object p3, p0, Luc;->S:Lic1;
-
     .line 6
+    iput-object p2, p0, Luc;->Y:Ldn4;
+
     .line 7
-    iput-object p4, p0, Luc;->T:Lte3;
-
     .line 8
+    iput-wide p3, p0, Luc;->Z:J
+
     .line 9
-    const/4 p1, 0x0
-
     .line 10
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
-
-    .line 11
-    .line 12
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 4
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Luc;->S:Lic1;
+    move-object v4, p1
 
     .line 2
+    check-cast v4, Lrk2;
+
     .line 3
-    iget-object v1, p0, Luc;->T:Lte3;
-
     .line 4
+    check-cast p2, Ljava/lang/Integer;
+
     .line 5
-    iget-object v2, p0, Luc;->Q:Lld1;
-
     .line 6
-    .line 7
-    iget-object v3, p0, Luc;->R:Lg72;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 7
     .line 8
     .line 9
-    invoke-virtual {v2, v3, v0, v1}, Lld1;->g(Lg72;Lic1;Lte3;)V
+    const/16 p1, 0x181
 
     .line 10
     .line 11
-    .line 12
-    sget-object v0, Lbh7;->a:Lbh7;
+    invoke-static {p1}, Lku8;->S(I)I
 
+    .line 12
     .line 13
     .line 14
-    return-object v0
+    move-result v5
+
+    .line 15
+    iget-object v0, p0, Luc;->X:Lh20;
+
+    .line 16
+    .line 17
+    iget-object v1, p0, Luc;->Y:Ldn4;
+
+    .line 18
+    .line 19
+    iget-wide v2, p0, Luc;->Z:J
+
+    .line 20
+    .line 21
+    invoke-static/range {v0 .. v5}, Lyc;->a(Lh20;Ldn4;JLrk2;I)V
+
+    .line 22
+    .line 23
+    .line 24
+    sget-object p0, Lr98;->a:Lr98;
+
+    .line 25
+    .line 26
+    return-object p0
 .end method

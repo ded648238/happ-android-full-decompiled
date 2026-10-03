@@ -1,330 +1,288 @@
-.class public abstract synthetic Lcc5;
+.class public final Lcc5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:F
 
-.field public static final synthetic b:[I
+.field public final b:F
+
+.field public final c:F
+
+.field public final d:F
+
+.field public final e:F
+
+.field public final f:F
+
+.field public final g:F
+
+.field public final h:F
+
+.field public final i:F
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(FFFFFFFFF)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lm55;->values()[Lm55;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput p1, p0, Lcc5;->a:F
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput p4, p0, Lcc5;->b:F
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    iput p7, p0, Lcc5;->c:F
 
     .line 9
-    const/4 v2, 0x0
-
     .line 10
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    iput p2, p0, Lcc5;->d:F
 
     .line 11
     .line 12
-    :catch_0
-    const/4 v3, 0x2
+    iput p5, p0, Lcc5;->e:F
 
     .line 13
-    :try_start_1
-    aput v3, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 14
-    .line 15
-    :catch_1
-    const/4 v4, 0x3
+    iput p8, p0, Lcc5;->f:F
 
+    .line 15
     .line 16
-    :try_start_2
-    aput v4, v0, v3
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    iput p3, p0, Lcc5;->g:F
 
     .line 17
     .line 18
-    :catch_2
-    invoke-static {}, Lf55;->values()[Lf55;
+    iput p6, p0, Lcc5;->h:F
 
     .line 19
     .line 20
-    .line 21
-    move-result-object v0
+    iput p9, p0, Lcc5;->i:F
 
+    .line 21
     .line 22
-    array-length v0, v0
+    return-void
+.end method
+
+.method public static a(FFFFFFFF)Lcc5;
+    .locals 14
+
+    .line 1
+    sub-float v0, p0, p2
+
+    .line 2
+    .line 3
+    add-float v0, v0, p4
+
+    .line 4
+    .line 5
+    sub-float v0, v0, p6
+
+    .line 6
+    .line 7
+    sub-float v1, p1, p3
+
+    .line 8
+    .line 9
+    add-float v1, v1, p5
+
+    .line 10
+    .line 11
+    sub-float v1, v1, p7
+
+    .line 12
+    .line 13
+    const/4 v2, 0x0
+
+    .line 14
+    cmpl-float v3, v0, v2
+
+    .line 15
+    .line 16
+    if-nez v3, :cond_0
+
+    .line 17
+    .line 18
+    cmpl-float v2, v1, v2
+
+    .line 19
+    .line 20
+    if-nez v2, :cond_0
+
+    .line 21
+    .line 22
+    new-instance v3, Lcc5;
 
     .line 23
-    new-array v0, v0, [I
-
     .line 24
+    sub-float v4, p2, p0
+
     .line 25
-    :try_start_3
-    aput v1, v0, v2
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
     .line 26
+    sub-float v5, p4, p2
+
     .line 27
-    :catch_3
-    :try_start_4
-    aput v3, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
     .line 28
+    sub-float v7, p3, p1
+
     .line 29
-    :catch_4
-    :try_start_5
-    aput v4, v0, v3
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
     .line 30
-    .line 31
-    :catch_5
-    const/4 v5, 0x4
+    sub-float v8, p5, p3
 
+    .line 31
     .line 32
-    :try_start_6
-    aput v5, v0, v4
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+    const/4 v11, 0x0
 
     .line 33
-    .line 34
-    :catch_6
-    invoke-static {}, Lt55;->values()[Lt55;
+    const/high16 v12, 0x3f800000    # 1.0f
 
+    .line 34
     .line 35
+    const/4 v10, 0x0
+
     .line 36
+    move v6, p0
+
     .line 37
-    move-result-object v0
+    move v9, p1
 
     .line 38
-    array-length v0, v0
+    invoke-direct/range {v3 .. v12}, Lcc5;-><init>(FFFFFFFFF)V
 
     .line 39
-    new-array v0, v0, [I
-
     .line 40
     .line 41
-    :try_start_7
-    aput v1, v0, v2
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+    return-object v3
 
     .line 42
+    :cond_0
+    sub-float v2, p2, p4
+
     .line 43
-    :catch_7
-    :try_start_8
-    aput v3, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
     .line 44
+    sub-float v3, p6, p4
+
     .line 45
-    :catch_8
-    :try_start_9
-    aput v4, v0, v3
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
     .line 46
+    sub-float v4, p3, p5
+
     .line 47
-    :catch_9
-    sput-object v0, Lcc5;->a:[I
-
     .line 48
-    .line 49
-    invoke-static {}, Lm71;->values()[Lm71;
+    sub-float v5, p7, p5
 
+    .line 49
     .line 50
+    mul-float v6, v2, v5
+
     .line 51
     .line 52
-    move-result-object v0
+    mul-float v7, v3, v4
 
     .line 53
-    array-length v0, v0
-
     .line 54
-    new-array v0, v0, [I
+    sub-float/2addr v6, v7
 
     .line 55
+    mul-float/2addr v5, v0
+
     .line 56
-    :try_start_a
-    aput v1, v0, v2
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+    mul-float/2addr v3, v1
 
     .line 57
+    sub-float/2addr v5, v3
+
     .line 58
-    :catch_a
-    :try_start_b
-    aput v3, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+    div-float v11, v5, v6
 
     .line 59
     .line 60
-    :catch_b
-    :try_start_c
-    aput v4, v0, v3
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
+    mul-float/2addr v2, v1
 
     .line 61
+    mul-float/2addr v0, v4
+
     .line 62
-    :catch_c
-    sput-object v0, Lcc5;->b:[I
+    sub-float/2addr v2, v0
 
     .line 63
-    .line 64
-    invoke-static {}, Lh45;->values()[Lh45;
+    div-float v12, v2, v6
 
+    .line 64
     .line 65
+    new-instance v4, Lcc5;
+
     .line 66
     .line 67
-    move-result-object v0
+    sub-float v0, p2, p0
 
     .line 68
-    array-length v0, v0
-
     .line 69
-    new-array v0, v0, [I
+    mul-float v1, v11, p2
 
     .line 70
     .line 71
-    :try_start_d
-    aput v1, v0, v2
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
+    add-float v5, v1, v0
 
     .line 72
     .line 73
-    :catch_d
-    :try_start_e
-    aput v3, v0, v1
-    :try_end_e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
+    sub-float v0, p6, p0
 
     .line 74
     .line 75
-    :catch_e
-    :try_start_f
-    aput v4, v0, v3
-    :try_end_f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_f
+    mul-float v1, v12, p6
 
     .line 76
     .line 77
-    :catch_f
-    :try_start_10
-    aput v5, v0, v4
-    :try_end_10
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_10 .. :try_end_10} :catch_10
+    add-float v6, v1, v0
 
     .line 78
     .line 79
-    :catch_10
-    invoke-static {}, Li45;->values()[Li45;
+    sub-float v0, p3, p1
 
     .line 80
     .line 81
-    .line 82
-    move-result-object v0
+    mul-float v1, v11, p3
 
+    .line 82
     .line 83
-    array-length v0, v0
+    add-float v8, v1, v0
 
     .line 84
-    new-array v0, v0, [I
-
     .line 85
+    sub-float v0, p7, p1
+
     .line 86
-    :try_start_11
-    aput v1, v0, v2
-    :try_end_11
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_11
-
     .line 87
+    mul-float v1, v12, p7
+
     .line 88
-    :catch_11
-    :try_start_12
-    aput v3, v0, v1
-    :try_end_12
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_12 .. :try_end_12} :catch_12
-
     .line 89
+    add-float v9, v1, v0
+
     .line 90
-    :catch_12
-    :try_start_13
-    aput v4, v0, v3
-    :try_end_13
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_13 .. :try_end_13} :catch_13
-
     .line 91
-    .line 92
-    :catch_13
-    invoke-static {}, Ln45;->values()[Ln45;
+    const/high16 v13, 0x3f800000    # 1.0f
 
+    .line 92
     .line 93
+    move v7, p0
+
     .line 94
+    move v10, p1
+
     .line 95
-    move-result-object v0
+    invoke-direct/range {v4 .. v13}, Lcc5;-><init>(FFFFFFFFF)V
 
     .line 96
-    array-length v0, v0
-
     .line 97
-    new-array v0, v0, [I
-
     .line 98
-    .line 99
-    :try_start_14
-    aput v1, v0, v2
-    :try_end_14
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_14 .. :try_end_14} :catch_14
-
-    .line 100
-    .line 101
-    :catch_14
-    :try_start_15
-    aput v3, v0, v1
-    :try_end_15
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_15 .. :try_end_15} :catch_15
-
-    .line 102
-    .line 103
-    :catch_15
-    :try_start_16
-    aput v4, v0, v3
-    :try_end_16
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_16 .. :try_end_16} :catch_16
-
-    .line 104
-    .line 105
-    :catch_16
-    return-void
+    return-object v4
 .end method

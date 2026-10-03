@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/OpenSSLX509CertPath;
 .super Ljava/security/cert/CertPath;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -106,7 +106,7 @@
     move-result-object v1
 
     .line 30
-    invoke-static {v1}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 31
     .line 32
@@ -250,7 +250,7 @@
 
     .line 17
     .line 18
-    invoke-static {v0, p1}, Lkd0;->v(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lw31;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 19
     .line 20
@@ -951,7 +951,7 @@
 
     .line 56
     :cond_1
-    sget-object v0, Lorg/conscrypt/OpenSSLX509CertPath$1;->$SwitchMap$org$conscrypt$OpenSSLX509CertPath$Encoding:[I
+    sget-object p0, Lorg/conscrypt/OpenSSLX509CertPath$1;->$SwitchMap$org$conscrypt$OpenSSLX509CertPath$Encoding:[I
 
     .line 57
     .line 58
@@ -963,18 +963,18 @@
     move-result p1
 
     .line 62
-    aget p1, v0, p1
+    aget p0, p0, p1
 
     .line 63
     .line 64
-    if-eq p1, v3, :cond_3
+    if-eq p0, v3, :cond_3
 
     .line 65
     .line 66
-    const/4 v0, 0x2
+    const/4 p1, 0x2
 
     .line 67
-    if-ne p1, v0, :cond_2
+    if-ne p0, p1, :cond_2
 
     .line 68
     .line 69
@@ -983,27 +983,27 @@
     .line 70
     .line 71
     .line 72
-    move-result-object p1
+    move-result-object p0
 
     .line 73
-    return-object p1
+    return-object p0
 
     .line 74
     :cond_2
-    new-instance p1, Ljava/security/cert/CertificateEncodingException;
+    new-instance p0, Ljava/security/cert/CertificateEncodingException;
 
     .line 75
     .line 76
-    const-string v0, "Unknown encoding"
+    const-string p1, "Unknown encoding"
 
     .line 77
     .line 78
-    invoke-direct {p1, v0}, Ljava/security/cert/CertificateEncodingException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/cert/CertificateEncodingException;-><init>(Ljava/lang/String;)V
 
     .line 79
     .line 80
     .line 81
-    throw p1
+    throw p0
 
     .line 82
     :cond_3
@@ -1012,10 +1012,10 @@
     .line 83
     .line 84
     .line 85
-    move-result-object p1
+    move-result-object p0
 
     .line 86
-    return-object p1
+    return-object p0
 .end method
 
 .method public static getEncodingsIterator()Ljava/util/Iterator;
@@ -1048,7 +1048,7 @@
 
 # virtual methods
 .method public getCertificates()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1060,19 +1060,19 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLX509CertPath;->mCertificates:Ljava/util/List;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLX509CertPath;->mCertificates:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
@@ -1088,13 +1088,13 @@
 
     invoke-direct {p0, v0}, Lorg/conscrypt/OpenSSLX509CertPath;->getEncoded(Lorg/conscrypt/OpenSSLX509CertPath$Encoding;)[B
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded(Ljava/lang/String;)[B
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateEncodingException;
@@ -1111,29 +1111,29 @@
     .line 89
     invoke-direct {p0, v0}, Lorg/conscrypt/OpenSSLX509CertPath;->getEncoded(Lorg/conscrypt/OpenSSLX509CertPath$Encoding;)[B
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 
     .line 90
     :cond_0
-    new-instance v0, Ljava/security/cert/CertificateEncodingException;
+    new-instance p0, Ljava/security/cert/CertificateEncodingException;
 
-    const-string v1, "Invalid encoding: "
+    const-string v0, "Invalid encoding: "
 
     .line 91
-    invoke-static {v1, p1}, Lkd0;->v(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lw31;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     .line 92
-    invoke-direct {v0, p1}, Ljava/security/cert/CertificateEncodingException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/cert/CertificateEncodingException;-><init>(Ljava/lang/String;)V
 
-    throw v0
+    throw p0
 .end method
 
 .method public getEncodings()Ljava/util/Iterator;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1149,8 +1149,8 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method

@@ -1,189 +1,70 @@
-.class public abstract Ls61;
-.super Lya6;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Ls61;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# instance fields
+.field public final a:Lhi6;
+
+.field public final b:Ls61;
+
+
+# direct methods
+.method public constructor <init>(Lhi6;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p0, p0, Ls61;->b:Ls61;
+
+    .line 5
+    .line 6
+    iput-object p1, p0, Ls61;->a:Lhi6;
+
+    .line 7
+    .line 8
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract A0(Lya6;)Ls61;
-.end method
-
-.method public final L()Ljava/util/List;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Ls61;->y0()Lya6;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Lod3;->L()Ljava/util/List;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    return-object v0
-.end method
-
-.method public final O()Lb24;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Ls61;->y0()Lya6;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Lod3;->O()Lb24;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    return-object v0
-.end method
-
-.method public R()Lcb7;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Ls61;->y0()Lya6;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Lod3;->R()Lcb7;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    return-object v0
-.end method
-
-.method public final T()Lob7;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Ls61;->y0()Lya6;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Lod3;->T()Lob7;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    return-object v0
-.end method
-
-.method public f0()Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Ls61;->y0()Lya6;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Lod3;->f0()Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    return v0
-.end method
-
-.method public bridge synthetic r0(Lud3;)Lod3;
+.method public final a()Lbg0;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Ls61;->z0(Lud3;)Lya6;
+    iget-object p0, p0, Ls61;->a:Lhi6;
 
     .line 2
     .line 3
+    iget-object p0, p0, Lhi6;->c0:Ljava/lang/Object;
+
     .line 4
-    move-result-object p1
-
     .line 5
-    return-object p1
-.end method
+    check-cast p0, Lth0;
 
-.method public bridge synthetic u0(Lud3;)Lki7;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Ls61;->z0(Lud3;)Lya6;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public abstract y0()Lya6;
-.end method
-
-.method public z0(Lud3;)Lya6;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Ls61;->y0()Lya6;
-
-    .line 5
     .line 6
     .line 7
-    move-result-object p1
+    invoke-static {p0}, Lw97;->m(Ljava/lang/Object;)V
 
     .line 8
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 9
     .line 10
-    .line 11
-    invoke-virtual {p0, p1}, Ls61;->A0(Lya6;)Ls61;
+    invoke-virtual {p0}, Lth0;->b()Lbg0;
 
+    .line 11
     .line 12
     .line 13
+    move-result-object p0
+
     .line 14
-    move-result-object p1
+    invoke-static {p0}, Lw97;->m(Ljava/lang/Object;)V
 
     .line 15
-    return-object p1
+    .line 16
+    .line 17
+    return-object p0
 .end method

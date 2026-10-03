@@ -1,27 +1,24 @@
-.class public Luv4;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lsv4;
+.class public final Luv4;
+.super Lue1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Landroid/widget/Magnifier;
+.field public final synthetic Z:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/widget/Magnifier;)V
+.method public synthetic constructor <init>(Lyx6;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Luv4;->Z:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Luv4;->a:Landroid/widget/Magnifier;
+    invoke-direct {p0, p1}, Lue1;-><init>(Lyx6;)V
 
+    .line 4
     .line 5
     .line 6
     return-void
@@ -29,147 +26,90 @@
 
 
 # virtual methods
-.method public a(JJF)V
-    .locals 2
+.method public final p0()Z
+    .locals 0
 
     .line 1
-    iget-object p3, p0, Luv4;->a:Landroid/widget/Magnifier;
+    iget p0, p0, Luv4;->Z:I
 
     .line 2
     .line 3
-    const/16 p4, 0x20
+    packed-switch p0, :pswitch_data_0
 
     .line 4
     .line 5
-    shr-long p4, p1, p4
-
     .line 6
+    const/4 p0, 0x1
+
     .line 7
-    long-to-int p5, p4
+    return p0
 
     .line 8
-    invoke-static {p5}, Ljava/lang/Float;->intBitsToFloat(I)F
+    :pswitch_0
+    const/4 p0, 0x0
 
     .line 9
+    return p0
+
     .line 10
+    nop
+
     .line 11
-    move-result p4
-
-    .line 12
-    const-wide v0, 0xffffffffL
-
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    .line 17
-    and-long/2addr p1, v0
-
-    .line 18
-    long-to-int p2, p1
-
-    .line 19
-    invoke-static {p2}, Ljava/lang/Float;->intBitsToFloat(I)F
-
-    .line 20
-    .line 21
-    .line 22
-    move-result p1
-
-    .line 23
-    invoke-virtual {p3, p4, p1}, Landroid/widget/Magnifier;->show(FF)V
-
-    .line 24
-    .line 25
-    .line 26
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final b()V
+.method public final z0(Lyx6;)Lte1;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Luv4;->a:Landroid/widget/Magnifier;
+    iget p0, p0, Luv4;->Z:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/Magnifier;->dismiss()V
+    packed-switch p0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    return-void
-.end method
-
-.method public final c()J
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, Luv4;->a:Landroid/widget/Magnifier;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/widget/Magnifier;->getWidth()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    new-instance p0, Luv4;
 
     .line 7
-    iget-object v1, p0, Luv4;->a:Landroid/widget/Magnifier;
-
     .line 8
+    const/4 v0, 0x1
+
     .line 9
-    invoke-virtual {v1}, Landroid/widget/Magnifier;->getHeight()I
+    invoke-direct {p0, p1, v0}, Luv4;-><init>(Lyx6;I)V
 
     .line 10
     .line 11
     .line 12
-    move-result v1
+    return-object p0
 
     .line 13
-    int-to-long v2, v0
+    :pswitch_0
+    new-instance p0, Luv4;
 
     .line 14
-    const/16 v0, 0x20
-
     .line 15
+    const/4 v0, 0x0
+
     .line 16
-    shl-long/2addr v2, v0
+    invoke-direct {p0, p1, v0}, Luv4;-><init>(Lyx6;I)V
 
     .line 17
-    int-to-long v0, v1
-
     .line 18
-    const-wide v4, 0xffffffffL
-
     .line 19
+    return-object p0
+
     .line 20
+    nop
+
     .line 21
-    .line 22
-    .line 23
-    and-long/2addr v0, v4
-
-    .line 24
-    or-long/2addr v0, v2
-
-    .line 25
-    return-wide v0
-.end method
-
-.method public final d()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Luv4;->a:Landroid/widget/Magnifier;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/widget/Magnifier;->update()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

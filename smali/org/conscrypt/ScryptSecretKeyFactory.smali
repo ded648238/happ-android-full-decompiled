@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/ScryptSecretKeyFactory;
 .super Ljavax/crypto/SecretKeyFactorySpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,7 +26,7 @@
 .end method
 
 .method private getValue(Ljava/security/spec/KeySpec;Ljava/lang/String;)Ljava/lang/Object;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NoSuchMethodException;,
@@ -41,35 +41,35 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 6
-    invoke-virtual {v0, p2, v1}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {p0, p2, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p2
+    move-result-object p0
 
     .line 10
-    invoke-virtual {p2, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    move-result-object p0
 
     .line 14
-    return-object p1
+    return-object p0
 .end method
 
 
 # virtual methods
 .method public engineGenerateSecret(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;
-    .locals 8
+    .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/spec/InvalidKeySpecException;
@@ -94,7 +94,7 @@
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
     invoke-virtual {p1}, Lorg/conscrypt/ScryptKeySpec;->getSalt()[B
@@ -102,7 +102,7 @@
     .line 12
     .line 13
     .line 14
-    move-result-object v1
+    move-result-object v0
 
     .line 15
     invoke-virtual {p1}, Lorg/conscrypt/ScryptKeySpec;->getCostParameter()I
@@ -110,7 +110,7 @@
     .line 16
     .line 17
     .line 18
-    move-result v2
+    move-result v1
 
     .line 19
     invoke-virtual {p1}, Lorg/conscrypt/ScryptKeySpec;->getBlockSize()I
@@ -118,7 +118,7 @@
     .line 20
     .line 21
     .line 22
-    move-result v3
+    move-result v2
 
     .line 23
     invoke-virtual {p1}, Lorg/conscrypt/ScryptKeySpec;->getParallelizationParameter()I
@@ -126,7 +126,7 @@
     .line 24
     .line 25
     .line 26
-    move-result v4
+    move-result v3
 
     .line 27
     invoke-virtual {p1}, Lorg/conscrypt/ScryptKeySpec;->getKeyLength()I
@@ -137,20 +137,19 @@
     move-result p1
 
     .line 31
-    :goto_0
-    move v5, v4
-
-    .line 32
     move v4, v3
 
-    .line 33
+    .line 32
     move v3, v2
 
+    .line 33
+    move v2, v1
+
     .line 34
-    move-object v2, v1
+    move-object v1, v0
 
     .line 35
-    goto :goto_1
+    goto :goto_0
 
     .line 36
     :cond_0
@@ -268,14 +267,14 @@
     .line 91
     .line 92
     .line 93
-    move-result-object p1
+    move-result-object p0
 
     .line 94
-    check-cast p1, Ljava/lang/Integer;
+    check-cast p0, Ljava/lang/Integer;
 
     .line 95
     .line 96
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
     .line 97
     .line 98
@@ -285,100 +284,100 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 100
-    goto :goto_0
+    move-object p0, v0
 
     .line 101
-    :goto_1
-    rem-int/lit8 v1, p1, 0x8
+    :goto_0
+    rem-int/lit8 v0, p1, 0x8
 
     .line 102
     .line 103
-    if-nez v1, :cond_1
+    if-nez v0, :cond_1
 
     .line 104
     .line 105
-    new-instance v7, Lorg/conscrypt/ScryptSecretKeyFactory$ScryptKey;
+    new-instance v6, Lorg/conscrypt/ScryptSecretKeyFactory$ScryptKey;
 
     .line 106
     .line 107
-    new-instance v1, Ljava/lang/String;
+    new-instance v0, Ljava/lang/String;
 
     .line 108
     .line 109
-    invoke-direct {v1, v0}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v0, p0}, Ljava/lang/String;-><init>([C)V
 
     .line 110
     .line 111
     .line 112
-    sget-object v0, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
+    sget-object p0, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     .line 113
     .line 114
-    invoke-virtual {v1, v0}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+    invoke-virtual {v0, p0}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
     .line 115
     .line 116
     .line 117
-    move-result-object v1
+    move-result-object v0
 
     .line 118
-    div-int/lit8 v6, p1, 0x8
+    div-int/lit8 v5, p1, 0x8
 
     .line 119
     .line 120
-    invoke-static/range {v1 .. v6}, Lorg/conscrypt/NativeCrypto;->Scrypt_generate_key([B[BIIII)[B
+    invoke-static/range {v0 .. v5}, Lorg/conscrypt/NativeCrypto;->Scrypt_generate_key([B[BIIII)[B
 
     .line 121
     .line 122
     .line 123
-    move-result-object p1
+    move-result-object p0
 
     .line 124
-    invoke-direct {v7, p1}, Lorg/conscrypt/ScryptSecretKeyFactory$ScryptKey;-><init>([B)V
+    invoke-direct {v6, p0}, Lorg/conscrypt/ScryptSecretKeyFactory$ScryptKey;-><init>([B)V
 
     .line 125
     .line 126
     .line 127
-    return-object v7
+    return-object v6
 
     .line 128
     :cond_1
-    const-string p1, "Cannot produce fractional-byte outputs"
+    const-string p0, "Cannot produce fractional-byte outputs"
 
     .line 129
     .line 130
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 131
     .line 132
     .line 133
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 134
-    return-object p1
+    return-object p0
 
     .line 135
     :catch_0
     move-exception v0
 
     .line 136
-    move-object p1, v0
+    move-object p0, v0
 
     .line 137
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p1, Ljava/security/spec/InvalidKeySpecException;
 
     .line 138
     .line 139
-    const-string v1, "Not a valid scrypt KeySpec"
+    const-string v0, "Not a valid scrypt KeySpec"
 
     .line 140
     .line 141
-    invoke-direct {v0, v1, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, v0, p0}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 142
     .line 143
     .line 144
-    throw v0
+    throw p1
 .end method
 
 .method public engineGetKeySpec(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;
@@ -394,37 +393,37 @@
 
     .line 2
     .line 3
-    new-instance p1, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 4
     .line 5
-    const-string p2, "Null KeySpec"
+    const-string p1, "Null KeySpec"
 
     .line 6
     .line 7
-    invoke-direct {p1, p2}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 8
     .line 9
     .line 10
-    throw p1
+    throw p0
 
     .line 11
     :cond_0
-    new-instance p1, Lorg/conscrypt/ScryptSecretKeyFactory$NotImplementedException;
+    new-instance p0, Lorg/conscrypt/ScryptSecretKeyFactory$NotImplementedException;
 
     .line 12
     .line 13
-    invoke-direct {p1}, Lorg/conscrypt/ScryptSecretKeyFactory$NotImplementedException;-><init>()V
+    invoke-direct {p0}, Lorg/conscrypt/ScryptSecretKeyFactory$NotImplementedException;-><init>()V
 
     .line 14
     .line 15
     .line 16
-    throw p1
+    throw p0
 .end method
 
 .method public engineTranslateKey(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidKeyException;
@@ -436,31 +435,31 @@
 
     .line 2
     .line 3
-    new-instance p1, Ljava/security/InvalidKeyException;
+    new-instance p0, Ljava/security/InvalidKeyException;
 
     .line 4
     .line 5
-    const-string v0, "Null SecretKey"
+    const-string p1, "Null SecretKey"
 
     .line 6
     .line 7
-    invoke-direct {p1, v0}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
 
     .line 8
     .line 9
     .line 10
-    throw p1
+    throw p0
 
     .line 11
     :cond_0
-    new-instance p1, Lorg/conscrypt/ScryptSecretKeyFactory$NotImplementedException;
+    new-instance p0, Lorg/conscrypt/ScryptSecretKeyFactory$NotImplementedException;
 
     .line 12
     .line 13
-    invoke-direct {p1}, Lorg/conscrypt/ScryptSecretKeyFactory$NotImplementedException;-><init>()V
+    invoke-direct {p0}, Lorg/conscrypt/ScryptSecretKeyFactory$NotImplementedException;-><init>()V
 
     .line 14
     .line 15
     .line 16
-    throw p1
+    throw p0
 .end method

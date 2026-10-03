@@ -1,27 +1,24 @@
-.class public final synthetic Lyh;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Landroid/animation/ValueAnimator$DurationScaleChangeListener;
+.class public final Lyh;
+.super Landroid/graphics/drawable/Animatable2$AnimationCallback;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:Lzh;
+.field public final synthetic a:Lx00;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lzh;)V
+.method public constructor <init>(Lx00;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lyh;->a:Lx00;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lyh;->a:Lzh;
+    invoke-direct {p0}, Landroid/graphics/drawable/Animatable2$AnimationCallback;-><init>()V
 
+    .line 4
     .line 5
     .line 6
     return-void
@@ -29,21 +26,34 @@
 
 
 # virtual methods
-.method public final onChanged(F)V
-    .locals 1
+.method public final onAnimationEnd(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lyh;->a:Lzh;
+    iget-object p0, p0, Lyh;->a:Lx00;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lzh;->b:Lbi;
+    invoke-virtual {p0, p1}, Lx00;->a(Landroid/graphics/drawable/Drawable;)V
 
     .line 4
     .line 5
-    iput p1, v0, Lbi;->g:F
-
     .line 6
-    .line 7
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lyh;->a:Lx00;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lx00;->b(Landroid/graphics/drawable/Drawable;)V
+
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

@@ -1,40 +1,27 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class by2 {
-    public static final int a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class by2 implements ud8, uy2, iv7 {
+    public static final uw Y = new uw("camerax.core.imageAnalysis.backpressureStrategy", tx2.class, null);
+    public static final uw Z = new uw("camerax.core.imageAnalysis.imageQueueDepth", Integer.TYPE, null);
+    public static final uw c0 = new uw("camerax.core.imageAnalysis.imageReaderProxyProvider", dz2.class, null);
+    public static final uw d0 = new uw("camerax.core.imageAnalysis.outputImageFormat", wx2.class, null);
+    public static final uw e0 = new uw("camerax.core.imageAnalysis.onePixelShiftEnabled", Boolean.class, null);
+    public static final uw f0 = new uw("camerax.core.imageAnalysis.outputImageRotationEnabled", Boolean.class, null);
+    public final w25 X;
 
-    static {
-        int i;
-        String property = System.getProperty("java.version");
-        try {
-            String[] strArrSplit = property.split("[._]", 3);
-            i = Integer.parseInt(strArrSplit[0]);
-            if (i == 1 && strArrSplit.length > 1) {
-                i = Integer.parseInt(strArrSplit[1]);
-            }
-        } catch (NumberFormatException unused) {
-            i = -1;
-        }
-        if (i == -1) {
-            try {
-                StringBuilder sb = new StringBuilder();
-                for (int i2 = 0; i2 < property.length(); i2++) {
-                    char cCharAt = property.charAt(i2);
-                    if (!Character.isDigit(cCharAt)) {
-                        break;
-                    }
-                    sb.append(cCharAt);
-                }
-                i = Integer.parseInt(sb.toString());
-            } catch (NumberFormatException unused2) {
-                i = -1;
-            }
-        }
-        if (i == -1) {
-            i = 6;
-        }
-        a = i;
+    public by2(w25 w25Var) {
+        this.X = w25Var;
+    }
+
+    @Override // defpackage.aw5
+    public final jz0 k() {
+        return this.X;
+    }
+
+    @Override // defpackage.ry2
+    public final int l() {
+        return 35;
     }
 }

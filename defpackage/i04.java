@@ -1,55 +1,227 @@
 package defpackage;
 
-import android.R;
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import com.google.android.material.sidesheet.SideSheetBehavior;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class i04 {
-    public static final int[] a = {R.attr.theme, x75.theme};
-    public static final int[] b = {v75.materialThemeOverlay};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class i04 extends d06 {
+    public final /* synthetic */ int f;
+    public final SideSheetBehavior g;
 
-    public static Context a(Context context, AttributeSet attributeSet, int i, int i2) {
-        return b(context, attributeSet, i, i2, new int[0]);
+    public /* synthetic */ i04(SideSheetBehavior sideSheetBehavior, int i) {
+        this.f = i;
+        this.g = sideSheetBehavior;
     }
 
-    public static Context b(Context context, AttributeSet attributeSet, int i, int i2, int[] iArr) {
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, b, i, i2);
-        int[] iArr2 = {typedArrayObtainStyledAttributes.getResourceId(0, 0)};
-        typedArrayObtainStyledAttributes.recycle();
-        int i3 = iArr2[0];
-        boolean z = (context instanceof wv0) && ((wv0) context).a == i3;
-        if (i3 == 0 || z) {
-            return context;
+    @Override // defpackage.d06
+    public final int E(ViewGroup.MarginLayoutParams marginLayoutParams) {
+        switch (this.f) {
+            case 0:
+                return marginLayoutParams.leftMargin;
+            default:
+                return marginLayoutParams.rightMargin;
         }
-        wv0 wv0Var = new wv0(context, i3);
-        int length = iArr.length;
-        int[] iArr3 = new int[length];
-        if (iArr.length > 0) {
-            TypedArray typedArrayObtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, iArr, i, i2);
-            for (int i4 = 0; i4 < iArr.length; i4++) {
-                iArr3[i4] = typedArrayObtainStyledAttributes2.getResourceId(i4, 0);
-            }
-            typedArrayObtainStyledAttributes2.recycle();
+    }
+
+    @Override // defpackage.d06
+    public final int F() {
+        int i = this.f;
+        SideSheetBehavior sideSheetBehavior = this.g;
+        switch (i) {
+            case 0:
+                return Math.max(0, sideSheetBehavior.n + sideSheetBehavior.o);
+            default:
+                return Math.max(0, (sideSheetBehavior.m - sideSheetBehavior.l) - sideSheetBehavior.o);
         }
-        for (int i5 = 0; i5 < length; i5++) {
-            int i6 = iArr3[i5];
-            if (i6 != 0) {
-                wv0Var.getTheme().applyStyle(i6, true);
-            }
+    }
+
+    @Override // defpackage.d06
+    public final int G() {
+        int i = this.f;
+        SideSheetBehavior sideSheetBehavior = this.g;
+        switch (i) {
+            case 0:
+                return (-sideSheetBehavior.l) - sideSheetBehavior.o;
+            default:
+                return sideSheetBehavior.m;
         }
-        TypedArray typedArrayObtainStyledAttributes3 = context.obtainStyledAttributes(attributeSet, a);
-        int resourceId = typedArrayObtainStyledAttributes3.getResourceId(0, 0);
-        int resourceId2 = typedArrayObtainStyledAttributes3.getResourceId(1, 0);
-        typedArrayObtainStyledAttributes3.recycle();
-        if (resourceId == 0) {
-            resourceId = resourceId2;
+    }
+
+    @Override // defpackage.d06
+    public final int H() {
+        int i = this.f;
+        SideSheetBehavior sideSheetBehavior = this.g;
+        switch (i) {
+            case 0:
+                return sideSheetBehavior.o;
+            default:
+                return sideSheetBehavior.m;
         }
-        if (resourceId != 0) {
-            wv0Var.getTheme().applyStyle(resourceId, true);
+    }
+
+    @Override // defpackage.d06
+    public final int I() {
+        switch (this.f) {
+            case 0:
+                return -this.g.l;
+            default:
+                return F();
         }
-        return wv0Var;
+    }
+
+    @Override // defpackage.d06
+    public final int J(View view) {
+        int i = this.f;
+        SideSheetBehavior sideSheetBehavior = this.g;
+        switch (i) {
+            case 0:
+                return view.getRight() + sideSheetBehavior.o;
+            default:
+                return view.getLeft() - sideSheetBehavior.o;
+        }
+    }
+
+    @Override // defpackage.d06
+    public final int K(CoordinatorLayout coordinatorLayout) {
+        switch (this.f) {
+            case 0:
+                return coordinatorLayout.getLeft();
+            default:
+                return coordinatorLayout.getRight();
+        }
+    }
+
+    @Override // defpackage.d06
+    public final int L() {
+        switch (this.f) {
+            case 0:
+                return 1;
+            default:
+                return 0;
+        }
+    }
+
+    @Override // defpackage.d06
+    public final boolean P(float f) {
+        switch (this.f) {
+            case 0:
+                if (f > 0.0f) {
+                }
+                break;
+            default:
+                if (f < 0.0f) {
+                }
+                break;
+        }
+        return false;
+    }
+
+    @Override // defpackage.d06
+    public final boolean Q(View view) {
+        switch (this.f) {
+            case 0:
+                if (view.getRight() < (F() - G()) / 2) {
+                    break;
+                }
+                break;
+            default:
+                if (view.getLeft() > (F() + this.g.m) / 2) {
+                    break;
+                }
+                break;
+        }
+        return true;
+    }
+
+    @Override // defpackage.d06
+    public final boolean S(float f, float f2) {
+        switch (this.f) {
+            case 0:
+                if (Math.abs(f) <= Math.abs(f2) || Math.abs(f) <= 500.0f) {
+                }
+                break;
+            default:
+                if (Math.abs(f) <= Math.abs(f2) || Math.abs(f) <= 500.0f) {
+                }
+                break;
+        }
+        return false;
+    }
+
+    @Override // defpackage.d06
+    public final boolean X(View view, float f) {
+        int i = this.f;
+        SideSheetBehavior sideSheetBehavior = this.g;
+        switch (i) {
+            case 0:
+                if (Math.abs((f * sideSheetBehavior.k) + view.getLeft()) > 0.5f) {
+                    break;
+                }
+                break;
+            default:
+                if (Math.abs((f * sideSheetBehavior.k) + view.getRight()) > 0.5f) {
+                    break;
+                }
+                break;
+        }
+        return true;
+    }
+
+    @Override // defpackage.d06
+    public final void j0(ViewGroup.MarginLayoutParams marginLayoutParams, int i) {
+        switch (this.f) {
+            case 0:
+                marginLayoutParams.leftMargin = i;
+                break;
+            default:
+                marginLayoutParams.rightMargin = i;
+                break;
+        }
+    }
+
+    @Override // defpackage.d06
+    public final void k0(ViewGroup.MarginLayoutParams marginLayoutParams, int i, int i2) {
+        int i3 = this.f;
+        SideSheetBehavior sideSheetBehavior = this.g;
+        switch (i3) {
+            case 0:
+                if (i <= sideSheetBehavior.m) {
+                    marginLayoutParams.leftMargin = i2;
+                    break;
+                }
+                break;
+            default:
+                int i4 = sideSheetBehavior.m;
+                if (i <= i4) {
+                    marginLayoutParams.rightMargin = i4 - i;
+                    break;
+                }
+                break;
+        }
+    }
+
+    @Override // defpackage.d06
+    public final int l(ViewGroup.MarginLayoutParams marginLayoutParams) {
+        switch (this.f) {
+            case 0:
+                return marginLayoutParams.leftMargin;
+            default:
+                return marginLayoutParams.rightMargin;
+        }
+    }
+
+    @Override // defpackage.d06
+    public final float m(int i) {
+        switch (this.f) {
+            case 0:
+                float G = G();
+                return (i - G) / (F() - G);
+            default:
+                float f = this.g.m;
+                return (f - i) / (f - F());
+        }
     }
 }

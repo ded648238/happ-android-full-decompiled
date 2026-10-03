@@ -1,6 +1,6 @@
 .class abstract Lcom/github/luben/zstd/AutoCloseBase;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -112,11 +112,11 @@
 
     .line 21
     :cond_1
-    const-string v0, "Shared lock overflow"
+    const-string p0, "Shared lock overflow"
 
     .line 22
     .line 23
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 24
     .line 25
@@ -125,11 +125,11 @@
 
     .line 27
     :cond_2
-    const-string v0, "Closed"
+    const-string p0, "Closed"
 
     .line 28
     .line 29
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -270,11 +270,11 @@
 
     .line 18
     :cond_1
-    const-string v0, "Shared lock underflow"
+    const-string p0, "Shared lock underflow"
 
     .line 19
     .line 20
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 21
     .line 22
@@ -283,11 +283,11 @@
 
     .line 24
     :cond_2
-    const-string v0, "Closed"
+    const-string p0, "Closed"
 
     .line 25
     .line 26
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 27
     .line 28

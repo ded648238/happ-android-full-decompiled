@@ -1,151 +1,119 @@
-.class public abstract Lpv0;
+.class public final Lpv0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/util/Comparator;
 
 
-# static fields
-.field public static final a:Lv10;
-
-.field public static final b:I
-
-.field public static final c:F
-
-.field public static final d:F
-
-.field public static final e:F
-
-.field public static final f:F
-
-.field public static final g:F
-
-.field public static final h:J
-
-.field public static final i:Lu32;
-
-.field public static final j:J
-
-.field public static final k:J
+# instance fields
+.field public final X:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Z)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lhp5;->c0:Lv10;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sput-object v0, Lpv0;->a:Lv10;
+    .line 4
+    iput-boolean p1, p0, Lpv0;->X:Z
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 4
+
+    .line 1
+    check-cast p1, Landroid/util/Size;
+
+    .line 2
+    .line 3
+    check-cast p2, Landroid/util/Size;
 
     .line 4
     .line 5
-    const/4 v0, 0x5
+    invoke-virtual {p1}, Landroid/util/Size;->getWidth()I
 
     .line 6
-    sput v0, Lpv0;->b:I
-
     .line 7
     .line 8
-    const/high16 v0, 0x41400000    # 12.0f
+    move-result v0
 
     .line 9
+    int-to-long v0, v0
+
     .line 10
-    sput v0, Lpv0;->c:F
+    invoke-virtual {p1}, Landroid/util/Size;->getHeight()I
 
     .line 11
     .line 12
-    const/high16 v0, 0x41000000    # 8.0f
-
     .line 13
+    move-result p1
+
     .line 14
-    sput v0, Lpv0;->d:F
+    int-to-long v2, p1
 
     .line 15
+    mul-long/2addr v0, v2
+
     .line 16
-    const/high16 v1, 0x41c00000    # 24.0f
+    invoke-virtual {p2}, Landroid/util/Size;->getWidth()I
 
     .line 17
     .line 18
-    sput v1, Lpv0;->e:F
-
     .line 19
+    move-result p1
+
     .line 20
-    const/high16 v1, 0x3f800000    # 1.0f
+    int-to-long v2, p1
 
     .line 21
-    .line 22
-    sput v1, Lpv0;->f:F
+    invoke-virtual {p2}, Landroid/util/Size;->getHeight()I
 
+    .line 22
     .line 23
     .line 24
-    sput v0, Lpv0;->g:F
+    move-result p1
 
     .line 25
+    int-to-long p1, p1
+
     .line 26
-    const/16 v0, 0xe
+    mul-long/2addr v2, p1
 
     .line 27
+    sub-long/2addr v0, v2
+
     .line 28
-    invoke-static {v0}, Lv27;->f(I)J
+    invoke-static {v0, v1}, Ljava/lang/Long;->signum(J)I
 
     .line 29
     .line 30
     .line 31
-    move-result-wide v0
+    move-result p1
 
     .line 32
-    sput-wide v0, Lpv0;->h:J
+    iget-boolean p0, p0, Lpv0;->X:Z
 
     .line 33
     .line 34
-    sget-object v0, Lu32;->V:Lu32;
+    if-eqz p0, :cond_0
 
     .line 35
     .line 36
-    sput-object v0, Lpv0;->i:Lu32;
+    mul-int/lit8 p1, p1, -0x1
 
     .line 37
     .line 38
-    const/16 v0, 0x14
-
-    .line 39
-    .line 40
-    invoke-static {v0}, Lv27;->f(I)J
-
-    .line 41
-    .line 42
-    .line 43
-    move-result-wide v0
-
-    .line 44
-    sput-wide v0, Lpv0;->j:J
-
-    .line 45
-    .line 46
-    const v0, 0x3dcccccd    # 0.1f
-
-    .line 47
-    .line 48
-    .line 49
-    const-wide v1, 0x100000000L
-
-    .line 50
-    .line 51
-    .line 52
-    .line 53
-    .line 54
-    invoke-static {v0, v1, v2}, Lv27;->h(FJ)J
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-wide v0
-
-    .line 58
-    sput-wide v0, Lpv0;->k:J
-
-    .line 59
-    .line 60
-    return-void
+    :cond_0
+    return p1
 .end method

@@ -1,187 +1,74 @@
-.class public final enum Lh63;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lxs2;
-
-
-# static fields
-.field public static final enum R:Lh63;
-
-.field public static final enum S:Lh63;
-
-.field public static final enum T:Lh63;
-
-.field public static final synthetic U:[Lh63;
+.class public final Lh63;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:I
+.field public final a:Lvg;
+
+.field public final b:Lp7;
+
+.field public final c:Ljava/lang/Object;
+
+.field public final d:Lwq4;
+
+.field public e:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(Lvg;Lp7;)V
+    .locals 1
 
     .line 1
-    new-instance v0, Lh63;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "NONE"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, Lh63;->a:Lvg;
 
+    .line 5
     .line 6
-    invoke-direct {v0, v1, v2, v2}, Lh63;-><init>(Ljava/lang/String;II)V
+    iput-object p2, p0, Lh63;->b:Lp7;
 
     .line 7
     .line 8
+    new-instance p1, Ljava/lang/Object;
+
     .line 9
-    sput-object v0, Lh63;->R:Lh63;
-
     .line 10
-    .line 11
-    new-instance v1, Lh63;
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
+    .line 11
     .line 12
     .line 13
-    const-string v3, "INTERNAL_TO_CLASS_ID"
+    iput-object p1, p0, Lh63;->c:Ljava/lang/Object;
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    new-instance p1, Lwq4;
 
     .line 16
-    invoke-direct {v1, v3, v4, v4}, Lh63;-><init>(Ljava/lang/String;II)V
-
     .line 17
+    const/16 p2, 0x10
+
     .line 18
     .line 19
-    sput-object v1, Lh63;->S:Lh63;
+    new-array p2, p2, [Lmm8;
 
     .line 20
     .line 21
-    new-instance v3, Lh63;
+    const/4 v0, 0x0
 
     .line 22
-    .line 23
-    const-string v5, "DESC_TO_CLASS_ID"
+    invoke-direct {p1, v0, p2}, Lwq4;-><init>(I[Ljava/lang/Object;)V
 
+    .line 23
     .line 24
     .line 25
-    const/4 v6, 0x2
+    iput-object p1, p0, Lh63;->d:Lwq4;
 
     .line 26
-    invoke-direct {v3, v5, v6, v6}, Lh63;-><init>(Ljava/lang/String;II)V
-
     .line 27
-    .line 28
-    .line 29
-    sput-object v3, Lh63;->T:Lh63;
-
-    .line 30
-    .line 31
-    const/4 v5, 0x3
-
-    .line 32
-    new-array v5, v5, [Lh63;
-
-    .line 33
-    .line 34
-    aput-object v0, v5, v2
-
-    .line 35
-    .line 36
-    aput-object v1, v5, v4
-
-    .line 37
-    .line 38
-    aput-object v3, v5, v6
-
-    .line 39
-    .line 40
-    sput-object v5, Lh63;->U:[Lh63;
-
-    .line 41
-    .line 42
     return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, Lh63;->Q:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lh63;
-    .locals 1
-
-    .line 1
-    const-class v0, Lh63;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lh63;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lh63;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lh63;->U:[Lh63;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Lh63;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lh63;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lh63;->Q:I
-
-    .line 2
-    .line 3
-    return v0
 .end method

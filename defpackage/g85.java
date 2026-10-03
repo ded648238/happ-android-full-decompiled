@@ -1,27 +1,50 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class g85 {
-    public static int compat_button_inset_horizontal_material = 2131165286;
-    public static int compat_button_inset_vertical_material = 2131165287;
-    public static int compat_button_padding_horizontal_material = 2131165288;
-    public static int compat_button_padding_vertical_material = 2131165289;
-    public static int compat_control_corner_material = 2131165290;
-    public static int compat_notification_large_icon_max_height = 2131165291;
-    public static int compat_notification_large_icon_max_width = 2131165292;
-    public static int notification_action_icon_size = 2131166485;
-    public static int notification_action_text_size = 2131166486;
-    public static int notification_big_circle_margin = 2131166487;
-    public static int notification_content_margin_start = 2131166488;
-    public static int notification_large_icon_height = 2131166489;
-    public static int notification_large_icon_width = 2131166490;
-    public static int notification_main_column_padding_top = 2131166491;
-    public static int notification_media_narrow_margin = 2131166492;
-    public static int notification_right_icon_size = 2131166493;
-    public static int notification_right_side_padding_top = 2131166494;
-    public static int notification_small_icon_background_padding = 2131166495;
-    public static int notification_small_icon_size_as_large = 2131166496;
-    public static int notification_subtext_size = 2131166497;
-    public static int notification_top_pad = 2131166498;
-    public static int notification_top_pad_large_text = 2131166499;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class g85 extends p85 {
+    public final float c;
+    public final float d;
+    public final float e;
+    public final float f;
+    public final float g;
+    public final float h;
+
+    public g85(float f, float f2, float f3, float f4, float f5, float f6) {
+        super(2);
+        this.c = f;
+        this.d = f2;
+        this.e = f3;
+        this.f = f4;
+        this.g = f5;
+        this.h = f6;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof g85)) {
+            return false;
+        }
+        g85 g85Var = (g85) obj;
+        return Float.compare(this.c, g85Var.c) == 0 && Float.compare(this.d, g85Var.d) == 0 && Float.compare(this.e, g85Var.e) == 0 && Float.compare(this.f, g85Var.f) == 0 && Float.compare(this.g, g85Var.g) == 0 && Float.compare(this.h, g85Var.h) == 0;
+    }
+
+    public final int hashCode() {
+        return Float.hashCode(this.h) + eb7.c(eb7.c(eb7.c(eb7.c(Float.hashCode(this.c) * 31, this.d, 31), this.e, 31), this.f, 31), this.g, 31);
+    }
+
+    public final String toString() {
+        StringBuilder u = eh0.u("RelativeCurveTo(dx1=", this.c, ", dy1=", this.d, ", dx2=");
+        u.append(this.e);
+        u.append(", dy2=");
+        u.append(this.f);
+        u.append(", dx3=");
+        u.append(this.g);
+        u.append(", dy3=");
+        u.append(this.h);
+        u.append(")");
+        return u.toString();
+    }
 }

@@ -1,126 +1,154 @@
-.class public abstract Lzs0;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lzs0;
+.super Ljq8;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Ln84;
+# instance fields
+.field public final synthetic l0:I
+
+.field public final m0:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lfn0;->e:Lno5;
+    iput p1, p0, Lzs0;->l0:I
 
     .line 2
     .line 3
-    iget v1, v0, Lcn0;->c:I
+    iput-object p2, p0, Lzs0;->m0:Ljava/lang/Object;
 
     .line 4
     .line 5
-    shl-int/lit8 v2, v1, 0x6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
     .line 7
-    or-int/2addr v1, v2
-
     .line 8
-    new-instance v2, Lws0;
+    return-void
+.end method
+
+
+# virtual methods
+.method public final v()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lzs0;->l0:I
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lzs0;->m0:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    packed-switch v0, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    check-cast p0, [B
 
     .line 9
     .line 10
-    const/4 v3, 0x1
+    array-length p0, p0
 
     .line 11
-    invoke-direct {v2, v0, v0, v3}, Lys0;-><init>(Lcn0;Lcn0;I)V
+    return p0
 
     .line 12
+    :pswitch_0
+    check-cast p0, [I
+
     .line 13
     .line 14
-    iget v3, v0, Lcn0;->c:I
+    array-length p0, p0
 
     .line 15
+    return p0
+
     .line 16
-    sget-object v4, Lfn0;->x:Lgh4;
+    :pswitch_1
+    check-cast p0, [C
 
     .line 17
     .line 18
-    iget v5, v4, Lcn0;->c:I
+    array-length p0, p0
 
     .line 19
+    return p0
+
     .line 20
-    shl-int/lit8 v5, v5, 0x6
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final x(I)I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lzs0;->l0:I
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lzs0;->m0:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    packed-switch v0, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    check-cast p0, [B
+
+    .line 9
+    .line 10
+    aget-byte p0, p0, p1
+
+    .line 11
+    .line 12
+    and-int/lit16 p0, p0, 0xff
+
+    .line 13
+    .line 14
+    return p0
+
+    .line 15
+    :pswitch_0
+    check-cast p0, [I
+
+    .line 16
+    .line 17
+    aget p0, p0, p1
+
+    .line 18
+    .line 19
+    return p0
+
+    .line 20
+    :pswitch_1
+    check-cast p0, [C
 
     .line 21
     .line 22
-    or-int/2addr v5, v3
+    aget-char p0, p0, p1
 
     .line 23
-    new-instance v6, Lys0;
-
     .line 24
+    return p0
+
     .line 25
-    const/4 v7, 0x0
-
-    .line 26
-    invoke-direct {v6, v0, v4, v7}, Lys0;-><init>(Lcn0;Lcn0;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    iget v8, v4, Lcn0;->c:I
-
-    .line 30
-    .line 31
-    shl-int/lit8 v3, v3, 0x6
-
-    .line 32
-    .line 33
-    or-int/2addr v3, v8
-
-    .line 34
-    new-instance v8, Lys0;
-
-    .line 35
-    .line 36
-    invoke-direct {v8, v4, v0, v7}, Lys0;-><init>(Lcn0;Lcn0;I)V
-
-    .line 37
-    .line 38
-    .line 39
-    sget-object v0, Lds2;->a:Ln84;
-
-    .line 40
-    .line 41
-    new-instance v0, Ln84;
-
-    .line 42
-    .line 43
-    invoke-direct {v0}, Ln84;-><init>()V
-
-    .line 44
-    .line 45
-    .line 46
-    invoke-virtual {v0, v1, v2}, Ln84;->h(ILjava/lang/Object;)V
-
-    .line 47
-    .line 48
-    .line 49
-    invoke-virtual {v0, v5, v6}, Ln84;->h(ILjava/lang/Object;)V
-
-    .line 50
-    .line 51
-    .line 52
-    invoke-virtual {v0, v3, v8}, Ln84;->h(ILjava/lang/Object;)V
-
-    .line 53
-    .line 54
-    .line 55
-    sput-object v0, Lzs0;->a:Ln84;
-
-    .line 56
-    .line 57
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,15 +1,15 @@
 .class public final Lio/sentry/android/core/l;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
 
-.field public final synthetic R:Lio/sentry/android/core/e0;
+.field public final synthetic Y:Lio/sentry/android/core/e0;
 
 
 # direct methods
@@ -17,11 +17,11 @@
     .locals 0
 
     .line 1
-    iput p2, p0, Lio/sentry/android/core/l;->Q:I
+    iput p2, p0, Lio/sentry/android/core/l;->X:I
 
     .line 2
     .line 3
-    iput-object p1, p0, Lio/sentry/android/core/l;->R:Lio/sentry/android/core/e0;
+    iput-object p1, p0, Lio/sentry/android/core/l;->Y:Lio/sentry/android/core/e0;
 
     .line 4
     .line 5
@@ -36,10 +36,10 @@
 
 # virtual methods
 .method public final run()V
-    .locals 4
+    .locals 3
 
     .line 1
-    iget v0, p0, Lio/sentry/android/core/l;->Q:I
+    iget v0, p0, Lio/sentry/android/core/l;->X:I
 
     .line 2
     .line 3
@@ -47,7 +47,7 @@
 
     .line 4
     .line 5
-    iget-object v3, p0, Lio/sentry/android/core/l;->R:Lio/sentry/android/core/e0;
+    iget-object p0, p0, Lio/sentry/android/core/l;->Y:Lio/sentry/android/core/e0;
 
     .line 6
     .line 7
@@ -56,11 +56,11 @@
     .line 8
     .line 9
     .line 10
-    check-cast v3, Lio/sentry/android/core/o;
+    check-cast p0, Lio/sentry/android/core/o;
 
     .line 11
     .line 12
-    invoke-virtual {v3, v1, v2}, Lxw5;->c(J)V
+    invoke-virtual {p0, v1, v2}, Lio/sentry/logger/c;->c(J)V
 
     .line 13
     .line 14
@@ -69,11 +69,11 @@
 
     .line 16
     :pswitch_0
-    check-cast v3, Lio/sentry/android/core/m;
+    check-cast p0, Lio/sentry/android/core/m;
 
     .line 17
     .line 18
-    invoke-virtual {v3, v1, v2}, Lj44;->c(J)V
+    invoke-virtual {p0, v1, v2}, Lio/sentry/logger/c;->c(J)V
 
     .line 19
     .line 20

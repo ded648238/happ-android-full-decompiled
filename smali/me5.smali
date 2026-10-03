@@ -1,31 +1,16 @@
-.class public final Lme5;
+.class public interface abstract Lme5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/io/Serializable;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public Q:Z
-
-
-# virtual methods
-.method public final toString()Ljava/lang/String;
+# direct methods
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lme5;->Q:Z
+    sget-object v0, Lle5;->a:Lle5;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
+    return-void
 .end method

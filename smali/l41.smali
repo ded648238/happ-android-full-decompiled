@@ -1,80 +1,162 @@
-.class public final Ll41;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Ll41;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public a:I
+# static fields
+.field public static final enum X:Ll41;
 
-.field public b:Lci3;
+.field public static final enum Y:Ll41;
 
-.field public c:Z
+.field public static final enum Z:Ll41;
 
-.field public d:I
+.field public static final enum c0:Ll41;
 
-.field public e:F
+.field public static final synthetic d0:[Ll41;
 
 
 # direct methods
-.method public static a(Lsi3;Z)I
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    if-eqz p1, :cond_0
+    new-instance v0, Ll41;
 
     .line 2
     .line 3
-    iget-object p0, p0, Lsi3;->k:Ljava/util/List;
+    const-string v1, "DEFAULT"
 
     .line 4
     .line 5
-    invoke-static {p0}, Lnm0;->E0(Ljava/util/List;)Ljava/lang/Object;
+    const/4 v2, 0x0
 
     .line 6
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 7
     .line 8
-    move-result-object p0
-
     .line 9
-    check-cast p0, Lti3;
+    sput-object v0, Ll41;->X:Ll41;
 
     .line 10
     .line 11
-    iget p0, p0, Lti3;->a:I
+    new-instance v1, Ll41;
 
     .line 12
     .line 13
-    add-int/lit8 p0, p0, 0x1
+    const-string v2, "LAZY"
 
     .line 14
     .line 15
-    return p0
+    const/4 v3, 0x1
 
     .line 16
-    :cond_0
-    iget-object p0, p0, Lsi3;->k:Ljava/util/List;
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
-    invoke-static {p0}, Lnm0;->w0(Ljava/util/List;)Ljava/lang/Object;
-
     .line 19
+    sput-object v1, Ll41;->Y:Ll41;
+
     .line 20
     .line 21
-    move-result-object p0
+    new-instance v2, Ll41;
 
     .line 22
-    check-cast p0, Lti3;
-
     .line 23
-    .line 24
-    iget p0, p0, Lti3;->a:I
+    const-string v3, "ATOMIC"
 
+    .line 24
     .line 25
+    const/4 v4, 0x2
+
     .line 26
-    add-int/lit8 p0, p0, -0x1
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
-    return p0
+    .line 29
+    sput-object v2, Ll41;->Z:Ll41;
+
+    .line 30
+    .line 31
+    new-instance v3, Ll41;
+
+    .line 32
+    .line 33
+    const-string v4, "UNDISPATCHED"
+
+    .line 34
+    .line 35
+    const/4 v5, 0x3
+
+    .line 36
+    invoke-direct {v3, v4, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 37
+    .line 38
+    .line 39
+    sput-object v3, Ll41;->c0:Ll41;
+
+    .line 40
+    .line 41
+    filled-new-array {v0, v1, v2, v3}, [Ll41;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    sput-object v0, Ll41;->d0:[Ll41;
+
+    .line 46
+    .line 47
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Ll41;
+    .locals 1
+
+    .line 1
+    const-class v0, Ll41;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ll41;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Ll41;
+    .locals 1
+
+    .line 1
+    sget-object v0, Ll41;->d0:[Ll41;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Ll41;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

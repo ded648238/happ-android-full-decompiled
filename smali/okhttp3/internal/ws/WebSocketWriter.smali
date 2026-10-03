@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/ws/WebSocketWriter;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -16,7 +16,7 @@
         "Ljava/io/Closeable;",
         "",
         "isClient",
-        "Lr50;",
+        "Le80;",
         "sink",
         "Ljava/util/Random;",
         "random",
@@ -25,16 +25,16 @@
         "",
         "minimumDeflateSize",
         "<init>",
-        "(ZLr50;Ljava/util/Random;ZZJ)V",
+        "(ZLe80;Ljava/util/Random;ZZJ)V",
         "",
         "opcode",
-        "Ly60;",
+        "Lo90;",
         "payload",
-        "Lbh7;",
+        "Lr98;",
         "writeControlFrame",
-        "(ILy60;)V",
+        "(ILo90;)V",
         "writePing",
-        "(Ly60;)V",
+        "(Lo90;)V",
         "writePong",
         "code",
         "reason",
@@ -45,16 +45,16 @@
         "close",
         "()V",
         "Z",
-        "Lr50;",
+        "Le80;",
         "getSink",
-        "()Lr50;",
+        "()Le80;",
         "Ljava/util/Random;",
         "getRandom",
         "()Ljava/util/Random;",
         "J",
-        "Lf50;",
+        "Ll70;",
         "messageBuffer",
-        "Lf50;",
+        "Ll70;",
         "sinkBuffer",
         "writerClosed",
         "Lokhttp3/internal/ws/MessageDeflater;",
@@ -63,9 +63,9 @@
         "",
         "maskKey",
         "[B",
-        "Ld50;",
+        "Lj70;",
         "maskCursor",
-        "Ld50;",
+        "Lj70;",
         "okhttp"
     }
     k = 0x1
@@ -81,11 +81,11 @@
 # instance fields
 .field private final isClient:Z
 
-.field private final maskCursor:Ld50;
+.field private final maskCursor:Lj70;
 
 .field private final maskKey:[B
 
-.field private final messageBuffer:Lf50;
+.field private final messageBuffer:Ll70;
 
 .field private messageDeflater:Lokhttp3/internal/ws/MessageDeflater;
 
@@ -97,15 +97,15 @@
 
 .field private final random:Ljava/util/Random;
 
-.field private final sink:Lr50;
+.field private final sink:Le80;
 
-.field private final sinkBuffer:Lf50;
+.field private final sinkBuffer:Ll70;
 
 .field private writerClosed:Z
 
 
 # direct methods
-.method public constructor <init>(ZLr50;Ljava/util/Random;ZZJ)V
+.method public constructor <init>(ZLe80;Ljava/util/Random;ZZJ)V
     .locals 0
 
     .line 1
@@ -128,7 +128,7 @@
 
     .line 11
     .line 12
-    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->sink:Lr50;
+    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->sink:Le80;
 
     .line 13
     .line 14
@@ -148,7 +148,7 @@
 
     .line 21
     .line 22
-    new-instance p3, Lf50;
+    new-instance p3, Ll70;
 
     .line 23
     .line 24
@@ -157,11 +157,11 @@
     .line 25
     .line 26
     .line 27
-    iput-object p3, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Lf50;
+    iput-object p3, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Ll70;
 
     .line 28
     .line 29
-    invoke-interface {p2}, Lr50;->g()Lf50;
+    invoke-interface {p2}, Le80;->d()Ll70;
 
     .line 30
     .line 31
@@ -169,7 +169,7 @@
     move-result-object p2
 
     .line 33
-    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 34
     .line 35
@@ -203,25 +203,25 @@
 
     .line 46
     .line 47
-    new-instance p2, Ld50;
+    new-instance p2, Lj70;
 
     .line 48
     .line 49
-    invoke-direct {p2}, Ld50;-><init>()V
+    invoke-direct {p2}, Lj70;-><init>()V
 
     .line 50
     .line 51
     .line 52
     :cond_1
-    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Ld50;
+    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Lj70;
 
     .line 53
     .line 54
     return-void
 .end method
 
-.method private final writeControlFrame(ILy60;)V
-    .locals 6
+.method private final writeControlFrame(ILo90;)V
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -237,7 +237,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p2}, Ly60;->e()I
+    invoke-virtual {p2}, Lo90;->e()I
 
     .line 6
     .line 7
@@ -252,11 +252,11 @@
 
     .line 11
     .line 12
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
     .line 13
     .line 14
-    if-gtz v5, :cond_2
+    if-gtz v1, :cond_2
 
     .line 15
     .line 16
@@ -264,11 +264,11 @@
 
     .line 17
     .line 18
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 19
     .line 20
-    invoke-virtual {v1, p1}, Lf50;->x0(I)V
+    invoke-virtual {v1, p1}, Ll70;->G0(I)V
 
     .line 21
     .line 22
@@ -277,7 +277,7 @@
 
     .line 24
     .line 25
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 26
     .line 27
@@ -289,7 +289,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {v1, p1}, Lf50;->x0(I)V
+    invoke-virtual {v1, p1}, Ll70;->G0(I)V
 
     .line 32
     .line 33
@@ -312,7 +312,7 @@
     .line 42
     .line 43
     .line 44
-    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 45
     .line 46
@@ -336,7 +336,7 @@
     array-length v3, v1
 
     .line 56
-    invoke-virtual {p1, v1, v2, v3}, Lf50;->write([BII)V
+    invoke-virtual {p1, v1, v2, v3}, Ll70;->write([BII)V
 
     .line 57
     .line 58
@@ -345,24 +345,24 @@
 
     .line 60
     .line 61
-    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 62
     .line 63
-    iget-wide v0, p1, Lf50;->R:J
+    iget-wide v0, p1, Ll70;->Y:J
 
     .line 64
     .line 65
-    invoke-virtual {p1, p2}, Lf50;->v0(Ly60;)V
+    invoke-virtual {p1, p2}, Ll70;->C0(Lo90;)V
 
     .line 66
     .line 67
     .line 68
-    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 69
     .line 70
-    iget-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Ld50;
+    iget-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Lj70;
 
     .line 71
     .line 72
@@ -371,16 +371,16 @@
     .line 73
     .line 74
     .line 75
-    invoke-virtual {p1, p2}, Lf50;->M(Ld50;)Ld50;
+    invoke-virtual {p1, p2}, Ll70;->R(Lj70;)V
 
     .line 76
     .line 77
     .line 78
-    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Ld50;
+    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Lj70;
 
     .line 79
     .line 80
-    invoke-virtual {p1, v0, v1}, Ld50;->h(J)I
+    invoke-virtual {p1, v0, v1}, Lj70;->h(J)I
 
     .line 81
     .line 82
@@ -389,7 +389,7 @@
 
     .line 84
     .line 85
-    iget-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Ld50;
+    iget-object p2, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Lj70;
 
     .line 86
     .line 87
@@ -397,16 +397,16 @@
 
     .line 88
     .line 89
-    invoke-virtual {p1, p2, v0}, Lokhttp3/internal/ws/WebSocketProtocol;->toggleMask(Ld50;[B)V
+    invoke-virtual {p1, p2, v0}, Lokhttp3/internal/ws/WebSocketProtocol;->toggleMask(Lj70;[B)V
 
     .line 90
     .line 91
     .line 92
-    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Ld50;
+    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Lj70;
 
     .line 93
     .line 94
-    invoke-virtual {p1}, Ld50;->close()V
+    invoke-virtual {p1}, Lj70;->close()V
 
     .line 95
     .line 96
@@ -415,27 +415,27 @@
 
     .line 98
     :cond_0
-    invoke-virtual {v1, v0}, Lf50;->x0(I)V
+    invoke-virtual {v1, v0}, Ll70;->G0(I)V
 
     .line 99
     .line 100
     .line 101
-    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 102
     .line 103
-    invoke-virtual {p1, p2}, Lf50;->v0(Ly60;)V
+    invoke-virtual {p1, p2}, Ll70;->C0(Lo90;)V
 
     .line 104
     .line 105
     .line 106
     :cond_1
     :goto_0
-    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sink:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sink:Le80;
 
     .line 107
     .line 108
-    invoke-interface {p1}, Lr50;->flush()V
+    invoke-interface {p0}, Le80;->flush()V
 
     .line 109
     .line 110
@@ -444,11 +444,11 @@
 
     .line 112
     :cond_2
-    const-string p1, "Payload size must be less than or equal to 125"
+    const-string p0, "Payload size must be less than or equal to 125"
 
     .line 113
     .line 114
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 115
     .line 116
@@ -457,11 +457,11 @@
 
     .line 118
     :cond_3
-    const-string p1, "closed"
+    const-string p0, "closed"
 
     .line 119
     .line 120
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 121
     .line 122
@@ -472,18 +472,18 @@
 
 # virtual methods
 .method public close()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageDeflater:Lokhttp3/internal/ws/MessageDeflater;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageDeflater:Lokhttp3/internal/ws/MessageDeflater;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lokhttp3/internal/ws/MessageDeflater;->close()V
+    invoke-virtual {p0}, Lokhttp3/internal/ws/MessageDeflater;->close()V
 
     .line 6
     .line 7
@@ -493,28 +493,28 @@
 .end method
 
 .method public final getRandom()Ljava/util/Random;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->random:Ljava/util/Random;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketWriter;->random:Ljava/util/Random;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final getSink()Lr50;
-    .locals 1
+.method public final getSink()Le80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sink:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sink:Le80;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final writeClose(ILy60;)V
+.method public final writeClose(ILo90;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -523,7 +523,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Ly60;->T:Ly60;
+    sget-object v0, Lo90;->c0:Lo90;
 
     .line 2
     .line 3
@@ -550,7 +550,7 @@
     .line 13
     .line 14
     :cond_1
-    new-instance v0, Lf50;
+    new-instance v0, Ll70;
 
     .line 15
     .line 16
@@ -559,7 +559,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-virtual {v0, p1}, Lf50;->L0(I)V
+    invoke-virtual {v0, p1}, Ll70;->Y0(I)V
 
     .line 20
     .line 21
@@ -568,17 +568,17 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0, p2}, Lf50;->v0(Ly60;)V
+    invoke-virtual {v0, p2}, Ll70;->C0(Lo90;)V
 
     .line 25
     .line 26
     .line 27
     :cond_2
-    iget-wide p1, v0, Lf50;->R:J
+    iget-wide p1, v0, Ll70;->Y:J
 
     .line 28
     .line 29
-    invoke-virtual {v0, p1, p2}, Lf50;->o(J)Ly60;
+    invoke-virtual {v0, p1, p2}, Ll70;->s(J)Lo90;
 
     .line 30
     .line 31
@@ -595,7 +595,7 @@
 
     .line 36
     :try_start_0
-    invoke-direct {p0, p1, v0}, Lokhttp3/internal/ws/WebSocketWriter;->writeControlFrame(ILy60;)V
+    invoke-direct {p0, p1, v0}, Lokhttp3/internal/ws/WebSocketWriter;->writeControlFrame(ILo90;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -620,7 +620,7 @@
     throw p1
 .end method
 
-.method public final writeMessageFrame(ILy60;)V
+.method public final writeMessageFrame(ILo90;)V
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -642,11 +642,11 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Ll70;
 
     .line 9
     .line 10
-    invoke-virtual {v0, p2}, Lf50;->v0(Ly60;)V
+    invoke-virtual {v0, p2}, Ll70;->C0(Lo90;)V
 
     .line 11
     .line 12
@@ -663,7 +663,7 @@
 
     .line 18
     .line 19
-    invoke-virtual {p2}, Ly60;->e()I
+    invoke-virtual {p2}, Lo90;->e()I
 
     .line 20
     .line 21
@@ -712,11 +712,11 @@
     .line 42
     .line 43
     :cond_0
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Ll70;
 
     .line 44
     .line 45
-    invoke-virtual {p2, v0}, Lokhttp3/internal/ws/MessageDeflater;->deflate(Lf50;)V
+    invoke-virtual {p2, v0}, Lokhttp3/internal/ws/MessageDeflater;->deflate(Ll70;)V
 
     .line 46
     .line 47
@@ -726,19 +726,19 @@
     .line 49
     .line 50
     :cond_1
-    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Lf50;
+    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Ll70;
 
     .line 51
     .line 52
-    iget-wide p1, p1, Lf50;->R:J
+    iget-wide p1, p1, Ll70;->Y:J
 
     .line 53
     .line 54
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 55
     .line 56
-    invoke-virtual {v1, v0}, Lf50;->x0(I)V
+    invoke-virtual {v1, v0}, Ll70;->G0(I)V
 
     .line 57
     .line 58
@@ -762,7 +762,7 @@
 
     .line 67
     :cond_2
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 68
     :goto_0
@@ -770,25 +770,25 @@
 
     .line 69
     .line 70
-    cmp-long v4, p1, v2
+    cmp-long v2, p1, v2
 
     .line 71
     .line 72
-    iget-object v2, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 73
     .line 74
-    if-gtz v4, :cond_3
+    if-gtz v2, :cond_3
 
     .line 75
     .line 76
-    long-to-int v3, p1
+    long-to-int v2, p1
 
     .line 77
-    or-int/2addr v0, v3
+    or-int/2addr v0, v2
 
     .line 78
-    invoke-virtual {v2, v0}, Lf50;->x0(I)V
+    invoke-virtual {v3, v0}, Ll70;->G0(I)V
 
     .line 79
     .line 80
@@ -797,16 +797,16 @@
 
     .line 82
     :cond_3
-    const-wide/32 v3, 0xffff
+    const-wide/32 v4, 0xffff
 
     .line 83
     .line 84
     .line 85
-    cmp-long v5, p1, v3
+    cmp-long v2, p1, v4
 
     .line 86
     .line 87
-    if-gtz v5, :cond_4
+    if-gtz v2, :cond_4
 
     .line 88
     .line 89
@@ -814,19 +814,19 @@
 
     .line 90
     .line 91
-    invoke-virtual {v2, v0}, Lf50;->x0(I)V
+    invoke-virtual {v3, v0}, Ll70;->G0(I)V
 
     .line 92
     .line 93
     .line 94
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 95
     .line 96
     long-to-int v2, p1
 
     .line 97
-    invoke-virtual {v0, v2}, Lf50;->L0(I)V
+    invoke-virtual {v0, v2}, Ll70;->Y0(I)V
 
     .line 98
     .line 99
@@ -839,16 +839,16 @@
 
     .line 102
     .line 103
-    invoke-virtual {v2, v0}, Lf50;->x0(I)V
+    invoke-virtual {v3, v0}, Ll70;->G0(I)V
 
     .line 104
     .line 105
     .line 106
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 107
     .line 108
-    invoke-virtual {v0, p1, p2}, Lf50;->K0(J)V
+    invoke-virtual {v0, p1, p2}, Ll70;->X0(J)V
 
     .line 109
     .line 110
@@ -880,7 +880,7 @@
     .line 123
     .line 124
     .line 125
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 126
     .line 127
@@ -901,7 +901,7 @@
     array-length v3, v2
 
     .line 136
-    invoke-virtual {v0, v2, v1, v3}, Lf50;->write([BII)V
+    invoke-virtual {v0, v2, v1, v3}, Ll70;->write([BII)V
 
     .line 137
     .line 138
@@ -918,11 +918,11 @@
 
     .line 144
     .line 145
-    iget-object v2, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Lf50;
+    iget-object v2, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Ll70;
 
     .line 146
     .line 147
-    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Ld50;
+    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Lj70;
 
     .line 148
     .line 149
@@ -931,16 +931,16 @@
     .line 150
     .line 151
     .line 152
-    invoke-virtual {v2, v3}, Lf50;->M(Ld50;)Ld50;
+    invoke-virtual {v2, v3}, Ll70;->R(Lj70;)V
 
     .line 153
     .line 154
     .line 155
-    iget-object v2, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Ld50;
+    iget-object v2, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Lj70;
 
     .line 156
     .line 157
-    invoke-virtual {v2, v0, v1}, Ld50;->h(J)I
+    invoke-virtual {v2, v0, v1}, Lj70;->h(J)I
 
     .line 158
     .line 159
@@ -949,7 +949,7 @@
 
     .line 161
     .line 162
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Ld50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Lj70;
 
     .line 163
     .line 164
@@ -957,39 +957,39 @@
 
     .line 165
     .line 166
-    invoke-virtual {v0, v1, v2}, Lokhttp3/internal/ws/WebSocketProtocol;->toggleMask(Ld50;[B)V
+    invoke-virtual {v0, v1, v2}, Lokhttp3/internal/ws/WebSocketProtocol;->toggleMask(Lj70;[B)V
 
     .line 167
     .line 168
     .line 169
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Ld50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->maskCursor:Lj70;
 
     .line 170
     .line 171
-    invoke-virtual {v0}, Ld50;->close()V
+    invoke-virtual {v0}, Lj70;->close()V
 
     .line 172
     .line 173
     .line 174
     :cond_5
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sinkBuffer:Ll70;
 
     .line 175
     .line 176
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Lf50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketWriter;->messageBuffer:Ll70;
 
     .line 177
     .line 178
-    invoke-virtual {v0, v1, p1, p2}, Lf50;->write(Lf50;J)V
+    invoke-virtual {v0, v1, p1, p2}, Ll70;->write(Ll70;J)V
 
     .line 179
     .line 180
     .line 181
-    iget-object p1, p0, Lokhttp3/internal/ws/WebSocketWriter;->sink:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketWriter;->sink:Le80;
 
     .line 182
     .line 183
-    invoke-interface {p1}, Lr50;->q()Lr50;
+    invoke-interface {p0}, Le80;->u()Le80;
 
     .line 184
     .line 185
@@ -998,11 +998,11 @@
 
     .line 187
     :cond_6
-    const-string p1, "closed"
+    const-string p0, "closed"
 
     .line 188
     .line 189
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 190
     .line 191
@@ -1010,7 +1010,7 @@
     return-void
 .end method
 
-.method public final writePing(Ly60;)V
+.method public final writePing(Lo90;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1028,7 +1028,7 @@
 
     .line 5
     .line 6
-    invoke-direct {p0, v0, p1}, Lokhttp3/internal/ws/WebSocketWriter;->writeControlFrame(ILy60;)V
+    invoke-direct {p0, v0, p1}, Lokhttp3/internal/ws/WebSocketWriter;->writeControlFrame(ILo90;)V
 
     .line 7
     .line 8
@@ -1036,7 +1036,7 @@
     return-void
 .end method
 
-.method public final writePong(Ly60;)V
+.method public final writePong(Lo90;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1054,7 +1054,7 @@
 
     .line 5
     .line 6
-    invoke-direct {p0, v0, p1}, Lokhttp3/internal/ws/WebSocketWriter;->writeControlFrame(ILy60;)V
+    invoke-direct {p0, v0, p1}, Lokhttp3/internal/ws/WebSocketWriter;->writeControlFrame(ILo90;)V
 
     .line 7
     .line 8

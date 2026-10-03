@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/RealCall$AsyncCall;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +29,7 @@
         "(Lokhttp3/internal/connection/RealCall;Lokhttp3/Callback;)V",
         "Lokhttp3/internal/connection/RealCall;",
         "other",
-        "Lbh7;",
+        "Lr98;",
         "reuseCallsPerHostFrom",
         "(Lokhttp3/internal/connection/RealCall$AsyncCall;)V",
         "Ljava/util/concurrent/ExecutorService;",
@@ -185,22 +185,22 @@
     .line 26
     .line 27
     .line 28
-    move-result-object p1
+    move-result-object p0
 
     .line 29
-    invoke-virtual {p1}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     .line 30
     .line 31
     .line 32
-    move-result-object p1
+    move-result-object p0
 
     .line 33
-    const-string v1, " MUST NOT hold lock on "
+    const-string p1, " MUST NOT hold lock on "
 
     .line 34
     .line 35
-    invoke-static {p1, v1, v0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, p1, v0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 36
     .line 37
@@ -334,79 +334,79 @@
 .end method
 
 .method public final getCall()Lokhttp3/internal/connection/RealCall;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall$AsyncCall;->this$0:Lokhttp3/internal/connection/RealCall;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall$AsyncCall;->this$0:Lokhttp3/internal/connection/RealCall;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getCallsPerHost()Ljava/util/concurrent/atomic/AtomicInteger;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall$AsyncCall;->callsPerHost:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall$AsyncCall;->callsPerHost:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getHost()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall$AsyncCall;->this$0:Lokhttp3/internal/connection/RealCall;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall$AsyncCall;->this$0:Lokhttp3/internal/connection/RealCall;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/connection/RealCall;->getOriginalRequest()Lokhttp3/Request;
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealCall;->getOriginalRequest()Lokhttp3/Request;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
+    invoke-virtual {p0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    invoke-virtual {v0}, Lokhttp3/HttpUrl;->host()Ljava/lang/String;
+    invoke-virtual {p0}, Lokhttp3/HttpUrl;->host()Ljava/lang/String;
 
     .line 12
     .line 13
     .line 14
-    move-result-object v0
+    move-result-object p0
 
     .line 15
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getRequest()Lokhttp3/Request;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall$AsyncCall;->this$0:Lokhttp3/internal/connection/RealCall;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall$AsyncCall;->this$0:Lokhttp3/internal/connection/RealCall;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/connection/RealCall;->getOriginalRequest()Lokhttp3/Request;
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealCall;->getOriginalRequest()Lokhttp3/Request;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final reuseCallsPerHostFrom(Lokhttp3/internal/connection/RealCall$AsyncCall;)V
@@ -513,7 +513,7 @@
     move-result-object v2
 
     .line 42
-    invoke-virtual {v2}, Lms;->enter()V
+    invoke-virtual {v2}, Liu;->enter()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -580,7 +580,7 @@
 
     .line 68
     :catchall_0
-    move-exception v0
+    move-exception p0
 
     .line 69
     goto :goto_7
@@ -590,7 +590,7 @@
     move-exception v0
 
     .line 71
-    const/4 v2, 0x1
+    move v2, v6
 
     .line 72
     goto :goto_1
@@ -600,7 +600,7 @@
     move-exception v1
 
     .line 74
-    const/4 v2, 0x1
+    move v2, v6
 
     .line 75
     goto :goto_3
@@ -652,7 +652,7 @@
     .line 97
     .line 98
     .line 99
-    invoke-static {v2, v0}, Lxf5;->i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {v2, v0}, Lck3;->i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     .line 100
     .line 101
@@ -813,5 +813,5 @@
     .line 168
     .line 169
     .line 170
-    throw v0
+    throw p0
 .end method

@@ -4,10 +4,10 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
-import defpackage.ky1;
+import defpackage.k82;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class FitWindowsLinearLayout extends LinearLayout {
     public FitWindowsLinearLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -18,6 +18,6 @@ public class FitWindowsLinearLayout extends LinearLayout {
         return super.fitSystemWindows(rect);
     }
 
-    public void setOnFitSystemWindowsListener(ky1 ky1Var) {
+    public void setOnFitSystemWindowsListener(k82 k82Var) {
     }
 }

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/cache/DiskLruCache$Editor;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -25,18 +25,18 @@
         "entry",
         "<init>",
         "(Lokhttp3/internal/cache/DiskLruCache;Lokhttp3/internal/cache/DiskLruCache$Entry;)V",
-        "Lbh7;",
+        "Lr98;",
         "detach$okhttp",
         "()V",
         "detach",
         "",
         "index",
-        "Lle6;",
+        "Ld27;",
         "newSource",
-        "(I)Lle6;",
-        "Lpb6;",
+        "(I)Ld27;",
+        "Lqy6;",
         "newSink",
-        "(I)Lpb6;",
+        "(I)Lqy6;",
         "commit",
         "abort",
         "Lokhttp3/internal/cache/DiskLruCache$Entry;",
@@ -144,7 +144,7 @@
 
 # virtual methods
 .method public final abort()V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -180,7 +180,7 @@
     move-result-object v1
 
     .line 14
-    invoke-static {v1, p0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -204,7 +204,7 @@
 
     .line 25
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 26
     goto :goto_1
@@ -229,20 +229,20 @@
     .line 32
     :cond_1
     :try_start_1
-    const-string v1, "Check failed."
+    const-string p0, "Check failed."
 
     .line 33
     .line 34
-    new-instance v2, Ljava/lang/IllegalStateException;
+    new-instance v1, Ljava/lang/IllegalStateException;
 
     .line 35
     .line 36
-    invoke-direct {v2, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 37
     .line 38
     .line 39
-    throw v2
+    throw v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -251,7 +251,7 @@
     monitor-exit v0
 
     .line 41
-    throw v1
+    throw p0
 .end method
 
 .method public final commit()V
@@ -291,7 +291,7 @@
     move-result-object v1
 
     .line 14
-    invoke-static {v1, p0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -315,7 +315,7 @@
 
     .line 25
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 26
     goto :goto_1
@@ -337,20 +337,20 @@
     .line 31
     :cond_1
     :try_start_1
-    const-string v1, "Check failed."
+    const-string p0, "Check failed."
 
     .line 32
     .line 33
-    new-instance v2, Ljava/lang/IllegalStateException;
+    new-instance v1, Ljava/lang/IllegalStateException;
 
     .line 34
     .line 35
-    invoke-direct {v2, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 36
     .line 37
     .line 38
-    throw v2
+    throw v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -359,7 +359,7 @@
     monitor-exit v0
 
     .line 40
-    throw v1
+    throw p0
 .end method
 
 .method public final detach$okhttp()V
@@ -378,7 +378,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0, p0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 8
     .line 9
@@ -422,14 +422,14 @@
 
     .line 28
     :cond_0
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor;->entry:Lokhttp3/internal/cache/DiskLruCache$Entry;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor;->entry:Lokhttp3/internal/cache/DiskLruCache$Entry;
 
     .line 29
     .line 30
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
     .line 31
-    invoke-virtual {v0, v1}, Lokhttp3/internal/cache/DiskLruCache$Entry;->setZombie$okhttp(Z)V
+    invoke-virtual {p0, v0}, Lokhttp3/internal/cache/DiskLruCache$Entry;->setZombie$okhttp(Z)V
 
     .line 32
     .line 33
@@ -439,28 +439,28 @@
 .end method
 
 .method public final getEntry$okhttp()Lokhttp3/internal/cache/DiskLruCache$Entry;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor;->entry:Lokhttp3/internal/cache/DiskLruCache$Entry;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor;->entry:Lokhttp3/internal/cache/DiskLruCache$Entry;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getWritten$okhttp()[Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor;->written:[Z
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor;->written:[Z
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final newSink(I)Lpb6;
+.method public final newSink(I)Lqy6;
     .locals 3
 
     .line 1
@@ -492,7 +492,7 @@
     move-result-object v1
 
     .line 14
-    invoke-static {v1, p0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -504,11 +504,11 @@
 
     .line 19
     .line 20
-    new-instance p1, Lk20;
+    new-instance p0, Lo40;
 
     .line 21
     .line 22
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -518,7 +518,7 @@
     monitor-exit v0
 
     .line 26
-    return-object p1
+    return-object p0
 
     .line 27
     :cond_0
@@ -559,7 +559,7 @@
 
     .line 44
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 45
     goto :goto_1
@@ -602,7 +602,7 @@
     move-result-object v1
 
     .line 62
-    invoke-interface {v1, p1}, Lokhttp3/internal/io/FileSystem;->sink(Ljava/io/File;)Lpb6;
+    invoke-interface {v1, p1}, Lokhttp3/internal/io/FileSystem;->sink(Ljava/io/File;)Lqy6;
 
     .line 63
     .line 64
@@ -627,7 +627,7 @@
     .line 71
     .line 72
     .line 73
-    invoke-direct {v1, p1, v2}, Lokhttp3/internal/cache/FaultHidingSink;-><init>(Lpb6;Lj72;)V
+    invoke-direct {v1, p1, v2}, Lokhttp3/internal/cache/FaultHidingSink;-><init>(Lqy6;Lmi2;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -642,11 +642,11 @@
     .line 78
     :catch_0
     :try_start_4
-    new-instance p1, Lk20;
+    new-instance p0, Lo40;
 
     .line 79
     .line 80
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -656,25 +656,25 @@
     monitor-exit v0
 
     .line 84
-    return-object p1
+    return-object p0
 
     .line 85
     :cond_2
     :try_start_5
-    const-string p1, "Check failed."
+    const-string p0, "Check failed."
 
     .line 86
     .line 87
-    new-instance v1, Ljava/lang/IllegalStateException;
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 88
     .line 89
-    invoke-direct {v1, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 90
     .line 91
     .line 92
-    throw v1
+    throw p1
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
@@ -683,11 +683,11 @@
     monitor-exit v0
 
     .line 94
-    throw p1
+    throw p0
 .end method
 
-.method public final newSource(I)Lle6;
-    .locals 4
+.method public final newSource(I)Ld27;
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor;->this$0:Lokhttp3/internal/cache/DiskLruCache;
@@ -737,7 +737,7 @@
     move-result-object v1
 
     .line 23
-    invoke-static {v1, p0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 24
     .line 25
@@ -780,31 +780,31 @@
     move-result-object v1
 
     .line 42
-    iget-object v3, p0, Lokhttp3/internal/cache/DiskLruCache$Editor;->entry:Lokhttp3/internal/cache/DiskLruCache$Entry;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor;->entry:Lokhttp3/internal/cache/DiskLruCache$Entry;
 
     .line 43
     .line 44
-    invoke-virtual {v3}, Lokhttp3/internal/cache/DiskLruCache$Entry;->getCleanFiles$okhttp()Ljava/util/List;
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache$Entry;->getCleanFiles$okhttp()Ljava/util/List;
 
     .line 45
     .line 46
     .line 47
-    move-result-object v3
+    move-result-object p0
 
     .line 48
-    invoke-interface {v3, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 49
     .line 50
     .line 51
-    move-result-object p1
+    move-result-object p0
 
     .line 52
-    check-cast p1, Ljava/io/File;
+    check-cast p0, Ljava/io/File;
 
     .line 53
     .line 54
-    invoke-interface {v1, p1}, Lokhttp3/internal/io/FileSystem;->source(Ljava/io/File;)Lle6;
+    invoke-interface {v1, p0}, Lokhttp3/internal/io/FileSystem;->source(Ljava/io/File;)Ld27;
 
     .line 55
     .line 56
@@ -819,7 +819,7 @@
 
     .line 59
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 60
     goto :goto_2
@@ -843,20 +843,20 @@
     .line 65
     :cond_2
     :try_start_2
-    const-string p1, "Check failed."
+    const-string p0, "Check failed."
 
     .line 66
     .line 67
-    new-instance v1, Ljava/lang/IllegalStateException;
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 68
     .line 69
-    invoke-direct {v1, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 70
     .line 71
     .line 72
-    throw v1
+    throw p1
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -865,5 +865,5 @@
     monitor-exit v0
 
     .line 74
-    throw p1
+    throw p0
 .end method

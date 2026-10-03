@@ -1,9 +1,10 @@
 package androidx.recyclerview.widget;
 
 import android.view.View;
-import defpackage.en0;
-import defpackage.fn;
-import defpackage.qn7;
+import androidx.recyclerview.widget.RecyclerView;
+import defpackage.i60;
+import defpackage.ku0;
+import defpackage.ni8;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,8 +12,8 @@ import java.util.List;
 import java.util.WeakHashMap;
 import org.conscrypt.PSKKeyManager;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class l {
     public static final List t = Collections.EMPTY_LIST;
     public final View a;
@@ -39,7 +40,7 @@ public abstract class l {
         if (view != null) {
             this.a = view;
         } else {
-            fn.r("itemView may not be null");
+            i60.p("itemView may not be null");
             throw null;
         }
     }
@@ -83,7 +84,7 @@ public abstract class l {
         if ((this.j & 16) != 0) {
             return false;
         }
-        WeakHashMap weakHashMap = qn7.a;
+        WeakHashMap weakHashMap = ni8.a;
         return !this.a.hasTransientState();
     }
 
@@ -116,13 +117,13 @@ public abstract class l {
         this.c += i;
         View view = this.a;
         if (view.getLayoutParams() != null) {
-            ((RecyclerView.LayoutParams) view.getLayoutParams()).S = true;
+            ((RecyclerView.LayoutParams) view.getLayoutParams()).Z = true;
         }
     }
 
     public final void n() {
-        if (RecyclerView.t1 && k()) {
-            en0.l("Attempting to reset temp-detached ViewHolder: ", this, ". ViewHolders should be fully detached before resetting.");
+        if (RecyclerView.C1 && k()) {
+            ku0.l("Attempting to reset temp-detached ViewHolder: ", this, ". ViewHolders should be fully detached before resetting.");
             return;
         }
         this.j = 0;
@@ -149,7 +150,7 @@ public abstract class l {
         this.m = i2;
         if (i2 < 0) {
             this.m = 0;
-            if (RecyclerView.t1) {
+            if (RecyclerView.C1) {
                 throw new RuntimeException("isRecyclable decremented below 0: unmatched pair of setIsRecyable() calls for " + this);
             }
             toString();
@@ -158,7 +159,7 @@ public abstract class l {
         } else if (z && i2 == 0) {
             this.j &= -17;
         }
-        if (RecyclerView.u1) {
+        if (RecyclerView.D1) {
             toString();
         }
     }

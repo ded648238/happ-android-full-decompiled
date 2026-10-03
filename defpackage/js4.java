@@ -1,96 +1,112 @@
 package defpackage;
 
-import j$.util.Map;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.Function;
+import java.util.Arrays;
+import java.util.HashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class js4 extends ms4 implements pr0, mr0, Map {
-    public static final js4 T = new js4(s97.e, 0);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class js4 extends rq4 {
+    public final rq4 o;
+    public boolean p;
 
-    @Override // java.util.Map
-    public /* synthetic */ Object compute(Object obj, BiFunction biFunction) {
-        return Map.-CC.$default$compute(this, obj, biFunction);
+    public js4(long j, f17 f17Var, mi2 mi2Var, mi2 mi2Var2, rq4 rq4Var) {
+        super(j, f17Var, mi2Var, mi2Var2);
+        this.o = rq4Var;
+        rq4Var.k();
     }
 
-    @Override // java.util.Map
-    public /* synthetic */ Object computeIfAbsent(Object obj, Function function) {
-        return Map.-CC.$default$computeIfAbsent(this, obj, function);
-    }
-
-    @Override // java.util.Map
-    public /* synthetic */ Object computeIfPresent(Object obj, BiFunction biFunction) {
-        return Map.-CC.$default$computeIfPresent(this, obj, biFunction);
-    }
-
-    @Override // defpackage.ms4, java.util.Map
-    public final /* bridge */ boolean containsKey(Object obj) {
-        if (obj instanceof k65) {
-            return super.containsKey((k65) obj);
+    @Override // defpackage.rq4, defpackage.a17
+    public final void c() {
+        if (this.c) {
+            return;
         }
-        return false;
-    }
-
-    @Override // defpackage.u1, java.util.Map
-    public final /* bridge */ boolean containsValue(Object obj) {
-        if (obj instanceof dl7) {
-            return super.containsValue((dl7) obj);
+        super.c();
+        if (this.p) {
+            return;
         }
-        return false;
+        this.p = true;
+        this.o.l();
     }
 
-    @Override // java.util.Map
-    public /* synthetic */ void forEach(BiConsumer biConsumer) {
-        Map.-CC.$default$forEach(this, biConsumer);
-    }
-
-    public final js4 g(k65 k65Var, dl7 dl7Var) {
-        q7 q7VarU = this.Q.u(k65Var.hashCode(), 0, k65Var, dl7Var);
-        return q7VarU == null ? this : new js4((s97) q7VarU.S, this.R + q7VarU.R);
-    }
-
-    @Override // defpackage.ms4, java.util.Map
-    public final /* bridge */ Object get(Object obj) {
-        if (obj instanceof k65) {
-            return (dl7) super.get((k65) obj);
+    @Override // defpackage.rq4
+    public final yl0 w() {
+        js4 js4Var;
+        rq4 rq4Var = this.o;
+        if (rq4Var.m || rq4Var.c) {
+            return new c17(this);
         }
-        return null;
-    }
-
-    @Override // java.util.Map
-    public final /* bridge */ Object getOrDefault(Object obj, Object obj2) {
-        return !(obj instanceof k65) ? obj2 : (dl7) Map.-CC.$default$getOrDefault(this, (k65) obj, (dl7) obj2);
-    }
-
-    @Override // java.util.Map
-    public /* synthetic */ Object merge(Object obj, Object obj2, BiFunction biFunction) {
-        return Map.-CC.$default$merge(this, obj, obj2, biFunction);
-    }
-
-    @Override // java.util.Map
-    public /* synthetic */ Object putIfAbsent(Object obj, Object obj2) {
-        return Map.-CC.$default$putIfAbsent(this, obj, obj2);
-    }
-
-    @Override // java.util.Map
-    public /* synthetic */ boolean remove(Object obj, Object obj2) {
-        return Map.-CC.$default$remove(this, obj, obj2);
-    }
-
-    @Override // java.util.Map
-    public /* synthetic */ Object replace(Object obj, Object obj2) {
-        return Map.-CC.$default$replace(this, obj, obj2);
-    }
-
-    @Override // java.util.Map
-    public /* synthetic */ void replaceAll(BiFunction biFunction) {
-        Map.-CC.$default$replaceAll(this, biFunction);
-    }
-
-    @Override // java.util.Map
-    public /* synthetic */ boolean replace(Object obj, Object obj2, Object obj3) {
-        return Map.-CC.$default$replace(this, obj, obj2, obj3);
+        nq4 nq4Var = this.h;
+        long j = this.b;
+        HashMap b = nq4Var != null ? i17.b(rq4Var.g(), this, this.o.d()) : null;
+        Object obj = i17.c;
+        synchronized (obj) {
+            try {
+                i17.c(this);
+                if (nq4Var == null || nq4Var.d == 0) {
+                    js4Var = this;
+                    js4Var.a();
+                } else {
+                    js4Var = this;
+                    yl0 z = js4Var.z(this.o.g(), nq4Var, b, this.o.d());
+                    if (!z.equals(d17.n)) {
+                        return z;
+                    }
+                    nq4 x = js4Var.o.x();
+                    if (x != null) {
+                        x.j(nq4Var);
+                    } else {
+                        js4Var.o.B(nq4Var);
+                        js4Var.h = null;
+                    }
+                }
+                if (m93.q(js4Var.o.g(), j) < 0) {
+                    js4Var.o.v();
+                }
+                rq4 rq4Var2 = js4Var.o;
+                rq4Var2.r(rq4Var2.d().b(j).a(js4Var.j));
+                js4Var.o.A(j);
+                rq4 rq4Var3 = js4Var.o;
+                int i = js4Var.d;
+                js4Var.d = -1;
+                if (i >= 0) {
+                    int[] iArr = rq4Var3.k;
+                    iArr.getClass();
+                    int length = iArr.length;
+                    int[] copyOf = Arrays.copyOf(iArr, length + 1);
+                    copyOf[length] = i;
+                    rq4Var3.k = copyOf;
+                } else {
+                    rq4Var3.getClass();
+                }
+                rq4 rq4Var4 = js4Var.o;
+                f17 f17Var = js4Var.j;
+                rq4Var4.getClass();
+                synchronized (obj) {
+                    rq4Var4.j = rq4Var4.j.e(f17Var);
+                    rq4 rq4Var5 = js4Var.o;
+                    int[] iArr2 = js4Var.k;
+                    rq4Var5.getClass();
+                    if (iArr2.length != 0) {
+                        int[] iArr3 = rq4Var5.k;
+                        if (iArr3.length != 0) {
+                            int length2 = iArr3.length;
+                            int length3 = iArr2.length;
+                            int[] copyOf2 = Arrays.copyOf(iArr3, length2 + length3);
+                            System.arraycopy(iArr2, 0, copyOf2, length2, length3);
+                            iArr2 = copyOf2;
+                        }
+                        rq4Var5.k = iArr2;
+                    }
+                }
+                js4Var.m = true;
+                if (!js4Var.p) {
+                    js4Var.p = true;
+                    js4Var.o.l();
+                }
+                return d17.n;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/CloseGuard$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -45,7 +45,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -60,106 +60,100 @@
 
 # virtual methods
 .method public final get()Lokhttp3/internal/platform/android/CloseGuard;
-    .locals 7
+    .locals 4
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
     :try_start_0
-    const-string v1, "dalvik.system.CloseGuard"
+    const-string v0, "dalvik.system.CloseGuard"
 
     .line 3
     .line 4
-    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     .line 5
     .line 6
     .line 7
-    move-result-object v1
+    move-result-object v0
 
     .line 8
-    const-string v2, "get"
+    const-string v1, "get"
 
     .line 9
     .line 10
-    invoke-virtual {v1, v2, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v0, v1, p0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 11
     .line 12
     .line 13
-    move-result-object v2
+    move-result-object v1
 
     .line 14
-    const-string v3, "open"
+    const-string v2, "open"
 
     .line 15
     .line 16
-    const/4 v4, 0x1
+    const-class v3, Ljava/lang/String;
 
     .line 17
-    new-array v4, v4, [Ljava/lang/Class;
-
     .line 18
-    .line 19
-    const-class v5, Ljava/lang/String;
+    filled-new-array {v3}, [Ljava/lang/Class;
 
+    .line 19
     .line 20
     .line 21
-    const/4 v6, 0x0
+    move-result-object v3
 
     .line 22
-    aput-object v5, v4, v6
+    invoke-virtual {v0, v2, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 23
     .line 24
-    invoke-virtual {v1, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 25
-    .line 26
-    .line 27
-    move-result-object v3
+    move-result-object v2
 
+    .line 26
+    const-string v3, "warnIfOpen"
+
+    .line 27
     .line 28
-    const-string v4, "warnIfOpen"
+    invoke-virtual {v0, v3, p0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 29
     .line 30
-    invoke-virtual {v1, v4, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 31
-    .line 32
-    .line 33
-    move-result-object v0
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 32
+    move-object v0, p0
+
+    .line 33
+    move-object p0, v1
+
     .line 34
-    move-object v1, v0
-
-    .line 35
-    move-object v0, v2
-
-    .line 36
     goto :goto_0
 
-    .line 37
+    .line 35
     :catch_0
-    move-object v1, v0
+    move-object v0, p0
+
+    .line 36
+    move-object v2, v0
+
+    .line 37
+    :goto_0
+    new-instance v1, Lokhttp3/internal/platform/android/CloseGuard;
 
     .line 38
-    move-object v3, v1
-
     .line 39
-    :goto_0
-    new-instance v2, Lokhttp3/internal/platform/android/CloseGuard;
+    invoke-direct {v1, p0, v2, v0}, Lokhttp3/internal/platform/android/CloseGuard;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
 
     .line 40
     .line 41
-    invoke-direct {v2, v0, v3, v1}, Lokhttp3/internal/platform/android/CloseGuard;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
-
     .line 42
-    .line 43
-    .line 44
-    return-object v2
+    return-object v1
 .end method

@@ -1,19 +1,29 @@
 package defpackage;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+import android.graphics.Bitmap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Retention(RetentionPolicy.RUNTIME)
-public @interface kz2 {
-    jz2 creatorVisibility() default jz2.T;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class kz2 {
+    public static final b4 a = new b4(f08.a);
+    public static final b4 b = new b4(nf8.b);
+    public static final b4 c = new b4(null);
+    public static final b4 d;
+    public static final b4 e;
+    public static final b4 f;
+    public static final b4 g;
+    public static final b4 h;
 
-    jz2 fieldVisibility() default jz2.T;
+    static {
+        Boolean bool = Boolean.TRUE;
+        d = new b4(bool);
+        e = new b4(null);
+        f = new b4(bool);
+        g = new b4(bool);
+        h = new b4(Boolean.FALSE);
+    }
 
-    jz2 getterVisibility() default jz2.T;
-
-    jz2 isGetterVisibility() default jz2.T;
-
-    jz2 setterVisibility() default jz2.T;
+    public static final Bitmap.Config a(v25 v25Var) {
+        return (Bitmap.Config) w97.v(v25Var, b);
+    }
 }

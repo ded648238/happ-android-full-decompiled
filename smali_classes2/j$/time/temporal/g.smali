@@ -1,6 +1,6 @@
 .class public abstract enum Lj$/time/temporal/g;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lj$/time/temporal/TemporalField;
@@ -152,284 +152,7 @@
     .end array-data
 .end method
 
-.method public static G(Lj$/time/LocalDate;)I
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Lj$/time/LocalDate;->getYear()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfYear()I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    const/4 v2, 0x3
-
-    .line 10
-    if-gt v1, v2, :cond_0
-
-    .line 11
-    .line 12
-    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfWeek()Lj$/time/DayOfWeek;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p0
-
-    .line 16
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
-
-    .line 17
-    .line 18
-    .line 19
-    move-result p0
-
-    .line 20
-    sub-int/2addr v1, p0
-
-    .line 21
-    const/4 p0, -0x2
-
-    .line 22
-    if-ge v1, p0, :cond_1
-
-    .line 23
-    .line 24
-    add-int/lit8 v0, v0, -0x1
-
-    .line 25
-    .line 26
-    return v0
-
-    .line 27
-    :cond_0
-    const/16 v2, 0x16b
-
-    .line 28
-    .line 29
-    if-lt v1, v2, :cond_1
-
-    .line 30
-    .line 31
-    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfWeek()Lj$/time/DayOfWeek;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v3
-
-    .line 35
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v3
-
-    .line 39
-    sub-int/2addr v1, v2
-
-    .line 40
-    invoke-virtual {p0}, Lj$/time/LocalDate;->L()Z
-
-    .line 41
-    .line 42
-    .line 43
-    move-result p0
-
-    .line 44
-    sub-int/2addr v1, p0
-
-    .line 45
-    sub-int/2addr v1, v3
-
-    .line 46
-    if-ltz v1, :cond_1
-
-    .line 47
-    .line 48
-    add-int/lit8 v0, v0, 0x1
-
-    .line 49
-    .line 50
-    :cond_1
-    return v0
-.end method
-
-.method public static H(I)I
-    .locals 2
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    invoke-static {p0, v0, v0}, Lj$/time/LocalDate;->of(III)Lj$/time/LocalDate;
-
-    .line 3
-    .line 4
-    .line 5
-    move-result-object p0
-
-    .line 6
-    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfWeek()Lj$/time/DayOfWeek;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    sget-object v1, Lj$/time/DayOfWeek;->THURSDAY:Lj$/time/DayOfWeek;
-
-    .line 11
-    .line 12
-    if-eq v0, v1, :cond_1
-
-    .line 13
-    .line 14
-    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfWeek()Lj$/time/DayOfWeek;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    sget-object v1, Lj$/time/DayOfWeek;->WEDNESDAY:Lj$/time/DayOfWeek;
-
-    .line 19
-    .line 20
-    if-ne v0, v1, :cond_0
-
-    .line 21
-    .line 22
-    invoke-virtual {p0}, Lj$/time/LocalDate;->L()Z
-
-    .line 23
-    .line 24
-    .line 25
-    move-result p0
-
-    .line 26
-    if-eqz p0, :cond_0
-
-    .line 27
-    .line 28
-    goto :goto_0
-
-    .line 29
-    :cond_0
-    const/16 p0, 0x34
-
-    .line 30
-    .line 31
-    return p0
-
-    .line 32
-    :cond_1
-    :goto_0
-    const/16 p0, 0x35
-
-    .line 33
-    .line 34
-    return p0
-.end method
-
-.method public static I(Lj$/time/LocalDate;)Lj$/time/temporal/s;
-    .locals 4
-
-    .line 1
-    invoke-static {p0}, Lj$/time/temporal/g;->G(Lj$/time/LocalDate;)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    invoke-static {p0}, Lj$/time/temporal/g;->H(I)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p0
-
-    .line 9
-    int-to-long v0, p0
-
-    .line 10
-    const-wide/16 v2, 0x1
-
-    .line 11
-    .line 12
-    invoke-static {v2, v3, v0, v1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p0
-
-    .line 16
-    return-object p0
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lj$/time/temporal/g;
-    .locals 1
-
-    .line 1
-    const-class v0, Lj$/time/temporal/g;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lj$/time/temporal/g;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lj$/time/temporal/g;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/g;->b:[Lj$/time/temporal/g;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Lj$/time/temporal/g;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lj$/time/temporal/g;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public static z(Lj$/time/LocalDate;)I
+.method public static Q(Lj$/time/LocalDate;)I
     .locals 5
 
     .line 1
@@ -525,7 +248,7 @@
 
     .line 42
     .line 43
-    invoke-static {p0, v1}, Lj$/time/LocalDate;->O(II)Lj$/time/LocalDate;
+    invoke-static {p0, v1}, Lj$/time/LocalDate;->S(II)Lj$/time/LocalDate;
 
     .line 44
     .line 45
@@ -538,7 +261,7 @@
 
     .line 48
     .line 49
-    invoke-virtual {p0, v0, v1}, Lj$/time/LocalDate;->T(J)Lj$/time/LocalDate;
+    invoke-virtual {p0, v0, v1}, Lj$/time/LocalDate;->X(J)Lj$/time/LocalDate;
 
     .line 50
     .line 51
@@ -546,7 +269,7 @@
     move-result-object p0
 
     .line 53
-    invoke-static {p0}, Lj$/time/temporal/g;->I(Lj$/time/LocalDate;)Lj$/time/temporal/s;
+    invoke-static {p0}, Lj$/time/temporal/g;->T(Lj$/time/LocalDate;)Lj$/time/temporal/s;
 
     .line 54
     .line 55
@@ -594,7 +317,7 @@
 
     .line 73
     .line 74
-    invoke-virtual {p0}, Lj$/time/LocalDate;->L()Z
+    invoke-virtual {p0}, Lj$/time/LocalDate;->O()Z
 
     .line 75
     .line 76
@@ -618,24 +341,291 @@
     return v1
 .end method
 
-
-# virtual methods
-.method public synthetic i(Ljava/util/Map;Lj$/time/format/u;Lj$/time/format/v;)Lj$/time/temporal/TemporalAccessor;
-    .locals 0
+.method public static R(Lj$/time/LocalDate;)I
+    .locals 4
 
     .line 1
-    const/4 p1, 0x0
+    invoke-virtual {p0}, Lj$/time/LocalDate;->getYear()I
 
     .line 2
-    return-object p1
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfYear()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v1
+
+    .line 9
+    const/4 v2, 0x3
+
+    .line 10
+    if-gt v1, v2, :cond_0
+
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfWeek()Lj$/time/DayOfWeek;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result p0
+
+    .line 20
+    sub-int/2addr v1, p0
+
+    .line 21
+    const/4 p0, -0x2
+
+    .line 22
+    if-ge v1, p0, :cond_1
+
+    .line 23
+    .line 24
+    add-int/lit8 v0, v0, -0x1
+
+    .line 25
+    .line 26
+    return v0
+
+    .line 27
+    :cond_0
+    const/16 v2, 0x16b
+
+    .line 28
+    .line 29
+    if-lt v1, v2, :cond_1
+
+    .line 30
+    .line 31
+    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfWeek()Lj$/time/DayOfWeek;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v3
+
+    .line 35
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v3
+
+    .line 39
+    sub-int/2addr v1, v2
+
+    .line 40
+    invoke-virtual {p0}, Lj$/time/LocalDate;->O()Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p0
+
+    .line 44
+    sub-int/2addr v1, p0
+
+    .line 45
+    sub-int/2addr v1, v3
+
+    .line 46
+    if-ltz v1, :cond_1
+
+    .line 47
+    .line 48
+    add-int/lit8 v0, v0, 0x1
+
+    .line 49
+    .line 50
+    :cond_1
+    return v0
 .end method
 
-.method public final isDateBased()Z
-    .locals 1
+.method public static S(I)I
+    .locals 2
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    return v0
+    invoke-static {p0, v0, v0}, Lj$/time/LocalDate;->of(III)Lj$/time/LocalDate;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object p0
+
+    .line 6
+    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfWeek()Lj$/time/DayOfWeek;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    sget-object v1, Lj$/time/DayOfWeek;->THURSDAY:Lj$/time/DayOfWeek;
+
+    .line 11
+    .line 12
+    if-eq v0, v1, :cond_1
+
+    .line 13
+    .line 14
+    invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfWeek()Lj$/time/DayOfWeek;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    sget-object v1, Lj$/time/DayOfWeek;->WEDNESDAY:Lj$/time/DayOfWeek;
+
+    .line 19
+    .line 20
+    if-ne v0, v1, :cond_0
+
+    .line 21
+    .line 22
+    invoke-virtual {p0}, Lj$/time/LocalDate;->O()Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result p0
+
+    .line 26
+    if-eqz p0, :cond_0
+
+    .line 27
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_0
+    const/16 p0, 0x34
+
+    .line 30
+    .line 31
+    return p0
+
+    .line 32
+    :cond_1
+    :goto_0
+    const/16 p0, 0x35
+
+    .line 33
+    .line 34
+    return p0
+.end method
+
+.method public static T(Lj$/time/LocalDate;)Lj$/time/temporal/s;
+    .locals 4
+
+    .line 1
+    invoke-static {p0}, Lj$/time/temporal/g;->R(Lj$/time/LocalDate;)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    invoke-static {p0}, Lj$/time/temporal/g;->S(I)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p0
+
+    .line 9
+    int-to-long v0, p0
+
+    .line 10
+    const-wide/16 v2, 0x1
+
+    .line 11
+    .line 12
+    invoke-static {v2, v3, v0, v1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lj$/time/temporal/g;
+    .locals 1
+
+    .line 1
+    const-class v0, Lj$/time/temporal/g;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lj$/time/temporal/g;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lj$/time/temporal/g;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lj$/time/temporal/g;->b:[Lj$/time/temporal/g;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [Lj$/time/temporal/g;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lj$/time/temporal/g;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final isDateBased()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x1
+
+    .line 2
+    return p0
 .end method

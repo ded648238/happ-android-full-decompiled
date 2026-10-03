@@ -1,6 +1,6 @@
 .class public Landroidx/core/app/RemoteActionCompatParcelizer;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static read(Lvm7;)Landroidx/core/app/RemoteActionCompat;
+.method public static read(Lqh8;)Landroidx/core/app/RemoteActionCompat;
     .locals 5
 
     .line 1
@@ -36,7 +36,7 @@
     const/4 v2, 0x1
 
     .line 9
-    invoke-virtual {p0, v2}, Lvm7;->e(I)Z
+    invoke-virtual {p0, v2}, Lqh8;->e(I)Z
 
     .line 10
     .line 11
@@ -52,7 +52,7 @@
 
     .line 16
     :cond_0
-    invoke-virtual {p0}, Lvm7;->h()Lxm7;
+    invoke-virtual {p0}, Lqh8;->h()Lsh8;
 
     .line 17
     .line 18
@@ -76,7 +76,7 @@
     const/4 v3, 0x2
 
     .line 27
-    invoke-virtual {p0, v3}, Lvm7;->e(I)Z
+    invoke-virtual {p0, v3}, Lqh8;->e(I)Z
 
     .line 28
     .line 29
@@ -95,7 +95,7 @@
     move-object v1, p0
 
     .line 35
-    check-cast v1, Lwm7;
+    check-cast v1, Lrh8;
 
     .line 36
     .line 37
@@ -103,7 +103,7 @@
 
     .line 38
     .line 39
-    iget-object v1, v1, Lwm7;->e:Landroid/os/Parcel;
+    iget-object v1, v1, Lrh8;->e:Landroid/os/Parcel;
 
     .line 40
     .line 41
@@ -131,7 +131,7 @@
     const/4 v3, 0x3
 
     .line 52
-    invoke-virtual {p0, v3}, Lvm7;->e(I)Z
+    invoke-virtual {p0, v3}, Lqh8;->e(I)Z
 
     .line 53
     .line 54
@@ -150,7 +150,7 @@
     move-object v1, p0
 
     .line 60
-    check-cast v1, Lwm7;
+    check-cast v1, Lrh8;
 
     .line 61
     .line 62
@@ -158,7 +158,7 @@
 
     .line 63
     .line 64
-    iget-object v1, v1, Lwm7;->e:Landroid/os/Parcel;
+    iget-object v1, v1, Lrh8;->e:Landroid/os/Parcel;
 
     .line 65
     .line 66
@@ -186,7 +186,7 @@
     const/4 v3, 0x4
 
     .line 77
-    invoke-virtual {p0, v1, v3}, Lvm7;->g(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
+    invoke-virtual {p0, v1, v3}, Lqh8;->g(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
 
     .line 78
     .line 79
@@ -209,7 +209,7 @@
     const/4 v3, 0x5
 
     .line 88
-    invoke-virtual {p0, v3}, Lvm7;->e(I)Z
+    invoke-virtual {p0, v3}, Lqh8;->e(I)Z
 
     .line 89
     .line 90
@@ -231,11 +231,11 @@
     move-object v1, p0
 
     .line 97
-    check-cast v1, Lwm7;
+    check-cast v1, Lrh8;
 
     .line 98
     .line 99
-    iget-object v1, v1, Lwm7;->e:Landroid/os/Parcel;
+    iget-object v1, v1, Lrh8;->e:Landroid/os/Parcel;
 
     .line 100
     .line 101
@@ -251,14 +251,14 @@
 
     .line 106
     .line 107
-    const/4 v1, 0x1
+    move v1, v2
 
     .line 108
     goto :goto_3
 
     .line 109
     :cond_4
-    const/4 v1, 0x0
+    move v1, v4
 
     .line 110
     :goto_3
@@ -273,7 +273,7 @@
     const/4 v3, 0x6
 
     .line 115
-    invoke-virtual {p0, v3}, Lvm7;->e(I)Z
+    invoke-virtual {p0, v3}, Lqh8;->e(I)Z
 
     .line 116
     .line 117
@@ -292,11 +292,11 @@
 
     .line 123
     :cond_5
-    check-cast p0, Lwm7;
+    check-cast p0, Lrh8;
 
     .line 124
     .line 125
-    iget-object p0, p0, Lwm7;->e:Landroid/os/Parcel;
+    iget-object p0, p0, Lrh8;->e:Landroid/os/Parcel;
 
     .line 126
     .line 127
@@ -316,7 +316,7 @@
 
     .line 134
     :cond_6
-    const/4 v2, 0x0
+    move v2, v4
 
     .line 135
     :goto_4
@@ -327,7 +327,7 @@
     return-object v0
 .end method
 
-.method public static write(Landroidx/core/app/RemoteActionCompat;Lvm7;)V
+.method public static write(Landroidx/core/app/RemoteActionCompat;Lqh8;)V
     .locals 4
 
     .line 1
@@ -343,12 +343,12 @@
     const/4 v1, 0x1
 
     .line 7
-    invoke-virtual {p1, v1}, Lvm7;->i(I)V
+    invoke-virtual {p1, v1}, Lqh8;->i(I)V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {p1, v0}, Lvm7;->k(Lxm7;)V
+    invoke-virtual {p1, v0}, Lqh8;->k(Lsh8;)V
 
     .line 11
     .line 12
@@ -360,7 +360,7 @@
     const/4 v1, 0x2
 
     .line 16
-    invoke-virtual {p1, v1}, Lvm7;->i(I)V
+    invoke-virtual {p1, v1}, Lqh8;->i(I)V
 
     .line 17
     .line 18
@@ -368,11 +368,11 @@
     move-object v1, p1
 
     .line 20
-    check-cast v1, Lwm7;
+    check-cast v1, Lrh8;
 
     .line 21
     .line 22
-    iget-object v1, v1, Lwm7;->e:Landroid/os/Parcel;
+    iget-object v1, v1, Lrh8;->e:Landroid/os/Parcel;
 
     .line 23
     .line 24
@@ -391,7 +391,7 @@
     const/4 v3, 0x3
 
     .line 31
-    invoke-virtual {p1, v3}, Lvm7;->i(I)V
+    invoke-virtual {p1, v3}, Lqh8;->i(I)V
 
     .line 32
     .line 33
@@ -408,7 +408,7 @@
     const/4 v3, 0x4
 
     .line 40
-    invoke-virtual {p1, v3}, Lvm7;->i(I)V
+    invoke-virtual {p1, v3}, Lqh8;->i(I)V
 
     .line 41
     .line 42
@@ -425,7 +425,7 @@
     const/4 v2, 0x5
 
     .line 49
-    invoke-virtual {p1, v2}, Lvm7;->i(I)V
+    invoke-virtual {p1, v2}, Lqh8;->i(I)V
 
     .line 50
     .line 51
@@ -442,7 +442,7 @@
     const/4 v0, 0x6
 
     .line 58
-    invoke-virtual {p1, v0}, Lvm7;->i(I)V
+    invoke-virtual {p1, v0}, Lqh8;->i(I)V
 
     .line 59
     .line 60

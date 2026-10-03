@@ -1,30 +1,53 @@
 package defpackage;
 
-import java.io.File;
+import android.content.Context;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class di2 {
-    public final String a;
-    public final /* synthetic */ int b;
-    public final Comparable c;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class di2 implements sj7 {
+    public final Context X;
+    public final String Y;
+    public final c8 Z;
+    public final boolean c0;
+    public final boolean d0;
+    public final mm7 e0;
+    public boolean f0;
 
-    public di2(String str, Comparable comparable, int i) {
-        this.b = i;
-        this.a = str;
-        this.c = comparable;
+    public di2(Context context, String str, c8 c8Var, boolean z, boolean z2) {
+        context.getClass();
+        c8Var.getClass();
+        this.X = context;
+        this.Y = str;
+        this.Z = c8Var;
+        this.c0 = z;
+        this.d0 = z2;
+        this.e0 = new mm7(new yh2(0, this));
     }
 
-    public final String a() {
-        return this.a;
-    }
-
-    public String toString() {
-        switch (this.b) {
-            case 1:
-                return ((File) this.c).toString();
-            default:
-                return a();
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public final void close() {
+        mm7 mm7Var = this.e0;
+        if (mm7Var.c()) {
+            ((ci2) mm7Var.getValue()).close();
         }
+    }
+
+    @Override // defpackage.sj7
+    public final xh2 f0() {
+        return ((ci2) this.e0.getValue()).g(true);
+    }
+
+    @Override // defpackage.sj7
+    public final String getDatabaseName() {
+        return this.Y;
+    }
+
+    @Override // defpackage.sj7
+    public final void setWriteAheadLoggingEnabled(boolean z) {
+        mm7 mm7Var = this.e0;
+        if (mm7Var.c()) {
+            ((ci2) mm7Var.getValue()).setWriteAheadLoggingEnabled(z);
+        }
+        this.f0 = z;
     }
 }

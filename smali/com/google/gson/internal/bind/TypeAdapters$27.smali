@@ -1,6 +1,6 @@
 .class Lcom/google/gson/internal/bind/TypeAdapters$27;
 .super Lcom/google/gson/internal/bind/TypeAdapters$IntegerFieldsTypeAdapter;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -15,17 +15,17 @@
 
 # virtual methods
 .method public final d([J)Ljava/lang/Object;
-    .locals 8
+    .locals 7
 
     .line 1
     new-instance v0, Ljava/util/GregorianCalendar;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const/4 p0, 0x0
 
     .line 4
-    aget-wide v1, p1, v1
+    aget-wide v1, p1, p0
 
     .line 5
     .line 6
@@ -37,10 +37,10 @@
     move-result v1
 
     .line 10
-    const/4 v2, 0x1
+    const/4 p0, 0x1
 
     .line 11
-    aget-wide v2, p1, v2
+    aget-wide v2, p1, p0
 
     .line 12
     .line 13
@@ -52,10 +52,10 @@
     move-result v2
 
     .line 17
-    const/4 v3, 0x2
+    const/4 p0, 0x2
 
     .line 18
-    aget-wide v3, p1, v3
+    aget-wide v3, p1, p0
 
     .line 19
     .line 20
@@ -67,10 +67,10 @@
     move-result v3
 
     .line 24
-    const/4 v4, 0x3
+    const/4 p0, 0x3
 
     .line 25
-    aget-wide v4, p1, v4
+    aget-wide v4, p1, p0
 
     .line 26
     .line 27
@@ -82,10 +82,10 @@
     move-result v4
 
     .line 31
-    const/4 v5, 0x4
+    const/4 p0, 0x4
 
     .line 32
-    aget-wide v5, p1, v5
+    aget-wide v5, p1, p0
 
     .line 33
     .line 34
@@ -97,14 +97,14 @@
     move-result v5
 
     .line 38
-    const/4 v6, 0x5
+    const/4 p0, 0x5
 
     .line 39
-    aget-wide v6, p1, v6
+    aget-wide p0, p1, p0
 
     .line 40
     .line 41
-    invoke-static {v6, v7}, Lcom/google/gson/internal/bind/b;->b(J)I
+    invoke-static {p0, p1}, Lcom/google/gson/internal/bind/b;->b(J)I
 
     .line 42
     .line 43

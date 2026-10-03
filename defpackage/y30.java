@@ -1,10 +1,30 @@
 package defpackage;
 
-import android.app.Activity;
-import android.graphics.Rect;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class y30 {
+    public final float a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface y30 {
-    Rect u(Activity activity);
+    public y30(float f) {
+        this.a = f;
+    }
+
+    public final int a(int i, int i2) {
+        return Math.round((1.0f + this.a) * ((i2 - i) / 2.0f));
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof y30) && Float.compare(this.a, ((y30) obj).a) == 0;
+    }
+
+    public final int hashCode() {
+        return Float.hashCode(this.a);
+    }
+
+    public final String toString() {
+        return "Vertical(bias=" + this.a + ")";
+    }
 }

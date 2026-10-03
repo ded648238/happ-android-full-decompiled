@@ -1,88 +1,234 @@
-.class public abstract Lxv4;
-.super Ljava/util/concurrent/CancellationException;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lxv4;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ler6;
 
 
-# instance fields
-.field public final synthetic Q:I
+# static fields
+.field public static final a:Lxv4;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/String;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput p2, p0, Lxv4;->Q:I
+    new-instance v0, Lxv4;
 
     .line 2
     .line 3
-    invoke-direct {p0, p1}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
     .line 6
+    sput-object v0, Lxv4;->a:Lxv4;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final fillInStackTrace()Ljava/lang/Throwable;
-    .locals 1
+.method public final a()Ljava/lang/String;
+    .locals 0
 
     .line 1
-    iget v0, p0, Lxv4;->Q:I
+    const-string p0, "kotlin.Nothing"
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    return-object p0
+.end method
 
+.method public final d(Ljava/lang/String;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
     .line 4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
     .line 5
     .line 6
-    sget-object v0, Lva6;->S:[Ljava/lang/StackTraceElement;
+    const-string p1, "Descriptor for type `kotlin.Nothing` does not have elements"
 
     .line 7
     .line 8
-    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    return-object p0
+    throw p0
+.end method
 
+.method public final e()I
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p0, 0x1
+
+    .line 4
+    return p0
+
+    .line 5
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+.end method
+
+.method public final f(I)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string p1, "Descriptor for type `kotlin.Nothing` does not have elements"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final g(I)Ljava/util/List;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string p1, "Descriptor for type `kotlin.Nothing` does not have elements"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final h(I)Ler6;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string p1, "Descriptor for type `kotlin.Nothing` does not have elements"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    sget-object p0, Lna7;->m:Lna7;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lhc4;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    mul-int/lit8 p0, p0, 0x1f
+
+    .line 8
+    .line 9
+    const v0, -0x6c61e840
+
+    .line 10
+    .line 11
     .line 12
-    :pswitch_0
-    sget-object v0, Lxf5;->T:[Ljava/lang/StackTraceElement;
+    add-int/2addr p0, v0
 
     .line 13
-    .line 14
-    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
+    return p0
+.end method
 
-    .line 15
-    .line 16
-    .line 17
+.method public final j(I)Z
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string p1, "Descriptor for type `kotlin.Nothing` does not have elements"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final s()Lhc4;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lna7;->m:Lna7;
+
+    .line 2
+    .line 3
     return-object p0
+.end method
 
-    .line 18
-    :pswitch_1
-    sget-object v0, Lyc4;->e:[Ljava/lang/StackTraceElement;
+.method public final toString()Ljava/lang/String;
+    .locals 0
 
-    .line 19
-    .line 20
-    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
+    .line 1
+    const-string p0, "NothingSerialDescriptor"
 
-    .line 21
-    .line 22
-    .line 23
+    .line 2
+    .line 3
     return-object p0
-
-    .line 24
-    nop
-
-    .line 25
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

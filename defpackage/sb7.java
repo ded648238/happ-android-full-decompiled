@@ -1,12 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class sb7 extends i35 {
-    public static final sb7 Q = new sb7(oj0.class, "outerClassId", "getOuterClassId()Lorg/jetbrains/kotlin/name/ClassId;", 0);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class sb7 implements yb7 {
+    public static final sb7 a = new sb7();
 
-    @Override // defpackage.i35, defpackage.n83
-    public final Object get(Object obj) {
-        return ((oj0) obj).e();
+    public final boolean equals(Object obj) {
+        return this == obj || (obj instanceof sb7);
+    }
+
+    public final int hashCode() {
+        return -607221788;
+    }
+
+    public final String toString() {
+        return "ProfileShareError";
     }
 }

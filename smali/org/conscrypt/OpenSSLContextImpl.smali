@@ -1,6 +1,6 @@
 .class public abstract Lorg/conscrypt/OpenSSLContextImpl;
 .super Ljavax/net/ssl/SSLContextSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -137,7 +137,7 @@
     move-exception v0
 
     .line 35
-    move-object p1, v0
+    move-object p0, v0
 
     .line 36
     goto :goto_1
@@ -244,7 +244,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 83
-    throw p1
+    throw p0
 .end method
 
 .method public static getPreferred()Lorg/conscrypt/OpenSSLContextImpl;
@@ -266,139 +266,139 @@
 
 # virtual methods
 .method public engineCreateSSLEngine()Ljavax/net/ssl/SSLEngine;
-    .locals 2
+    .locals 1
 
     .line 32
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
 
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 33
-    invoke-virtual {v0}, Lorg/conscrypt/SSLParametersImpl;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->clone()Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p0
 
-    check-cast v0, Lorg/conscrypt/SSLParametersImpl;
-
-    const/4 v1, 0x0
-
-    .line 34
-    invoke-virtual {v0, v1}, Lorg/conscrypt/SSLParametersImpl;->setUseClientMode(Z)V
-
-    .line 35
-    new-instance v1, Lorg/conscrypt/ConscryptEngine;
-
-    invoke-direct {v1, v0}, Lorg/conscrypt/ConscryptEngine;-><init>(Lorg/conscrypt/SSLParametersImpl;)V
-
-    invoke-static {v1}, Lorg/conscrypt/Platform;->wrapEngine(Lorg/conscrypt/ConscryptEngine;)Ljavax/net/ssl/SSLEngine;
-
-    move-result-object v0
-
-    return-object v0
-
-    .line 36
-    :cond_0
-    const-string v0, "SSLContext is not initialized."
-
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    check-cast p0, Lorg/conscrypt/SSLParametersImpl;
 
     const/4 v0, 0x0
 
-    return-object v0
+    .line 34
+    invoke-virtual {p0, v0}, Lorg/conscrypt/SSLParametersImpl;->setUseClientMode(Z)V
+
+    .line 35
+    new-instance v0, Lorg/conscrypt/ConscryptEngine;
+
+    invoke-direct {v0, p0}, Lorg/conscrypt/ConscryptEngine;-><init>(Lorg/conscrypt/SSLParametersImpl;)V
+
+    invoke-static {v0}, Lorg/conscrypt/Platform;->wrapEngine(Lorg/conscrypt/ConscryptEngine;)Ljavax/net/ssl/SSLEngine;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 36
+    :cond_0
+    const-string p0, "SSLContext is not initialized."
+
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return-object p0
 .end method
 
 .method public engineCreateSSLEngine(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lorg/conscrypt/SSLParametersImpl;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->clone()Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    check-cast v0, Lorg/conscrypt/SSLParametersImpl;
+    check-cast p0, Lorg/conscrypt/SSLParametersImpl;
 
     .line 10
     .line 11
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 12
-    invoke-virtual {v0, v1}, Lorg/conscrypt/SSLParametersImpl;->setUseClientMode(Z)V
+    invoke-virtual {p0, v0}, Lorg/conscrypt/SSLParametersImpl;->setUseClientMode(Z)V
 
     .line 13
     .line 14
     .line 15
-    new-instance v1, Lorg/conscrypt/ConscryptEngine;
+    new-instance v0, Lorg/conscrypt/ConscryptEngine;
 
     .line 16
     .line 17
-    invoke-direct {v1, p1, p2, v0}, Lorg/conscrypt/ConscryptEngine;-><init>(Ljava/lang/String;ILorg/conscrypt/SSLParametersImpl;)V
+    invoke-direct {v0, p1, p2, p0}, Lorg/conscrypt/ConscryptEngine;-><init>(Ljava/lang/String;ILorg/conscrypt/SSLParametersImpl;)V
 
     .line 18
     .line 19
     .line 20
-    invoke-static {v1}, Lorg/conscrypt/Platform;->wrapEngine(Lorg/conscrypt/ConscryptEngine;)Ljavax/net/ssl/SSLEngine;
+    invoke-static {v0}, Lorg/conscrypt/Platform;->wrapEngine(Lorg/conscrypt/ConscryptEngine;)Ljavax/net/ssl/SSLEngine;
 
     .line 21
     .line 22
     .line 23
-    move-result-object p1
+    move-result-object p0
 
     .line 24
-    return-object p1
+    return-object p0
 
     .line 25
     :cond_0
-    const-string p1, "SSLContext is not initialized."
+    const-string p0, "SSLContext is not initialized."
 
     .line 26
     .line 27
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 28
     .line 29
     .line 30
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 31
-    return-object p1
+    return-object p0
 .end method
 
 .method public engineGetClientSessionContext()Ljavax/net/ssl/SSLSessionContext;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public engineGetServerSessionContext()Ljavax/net/ssl/SSLSessionContext;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public engineGetServerSocketFactory()Ljavax/net/ssl/SSLServerSocketFactory;
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
@@ -413,11 +413,11 @@
 
     .line 6
     .line 7
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
 
     .line 8
     .line 9
-    invoke-direct {v0, v1}, Lorg/conscrypt/OpenSSLServerSocketFactoryImpl;-><init>(Lorg/conscrypt/SSLParametersImpl;)V
+    invoke-direct {v0, p0}, Lorg/conscrypt/OpenSSLServerSocketFactoryImpl;-><init>(Lorg/conscrypt/SSLParametersImpl;)V
 
     .line 10
     .line 11
@@ -426,23 +426,23 @@
 
     .line 13
     :cond_0
-    const-string v0, "SSLContext is not initialized."
+    const-string p0, "SSLContext is not initialized."
 
     .line 14
     .line 15
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 16
     .line 17
     .line 18
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    return-object v0
+    return-object p0
 .end method
 
 .method public engineGetSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
@@ -457,11 +457,11 @@
 
     .line 6
     .line 7
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLContextImpl;->sslParameters:Lorg/conscrypt/SSLParametersImpl;
 
     .line 8
     .line 9
-    invoke-direct {v0, v1}, Lorg/conscrypt/OpenSSLSocketFactoryImpl;-><init>(Lorg/conscrypt/SSLParametersImpl;)V
+    invoke-direct {v0, p0}, Lorg/conscrypt/OpenSSLSocketFactoryImpl;-><init>(Lorg/conscrypt/SSLParametersImpl;)V
 
     .line 10
     .line 11
@@ -471,26 +471,26 @@
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    return-object v0
+    return-object p0
 
     .line 17
     :cond_0
-    const-string v0, "SSLContext is not initialized."
+    const-string p0, "SSLContext is not initialized."
 
     .line 18
     .line 19
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 20
     .line 21
     .line 22
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 23
-    return-object v0
+    return-object p0
 .end method
 
 .method public engineInit([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V

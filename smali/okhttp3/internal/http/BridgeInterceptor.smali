@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http/BridgeInterceptor;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/Interceptor;
@@ -65,7 +65,7 @@
 .end method
 
 .method private final cookieHeader(Ljava/util/List;)Ljava/lang/String;
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -77,11 +77,11 @@
     .end annotation
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance p0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 4
     .line 5
@@ -94,7 +94,7 @@
     move-result-object p1
 
     .line 10
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 11
     :goto_0
@@ -103,10 +103,10 @@
     .line 12
     .line 13
     .line 14
-    move-result v2
+    move-result v1
 
     .line 15
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
     .line 16
     .line 17
@@ -115,98 +115,98 @@
     .line 18
     .line 19
     .line 20
-    move-result-object v2
+    move-result-object v1
 
     .line 21
-    add-int/lit8 v3, v1, 0x1
+    add-int/lit8 v2, v0, 0x1
 
     .line 22
     .line 23
-    if-ltz v1, :cond_1
+    if-ltz v0, :cond_1
 
     .line 24
     .line 25
-    check-cast v2, Lokhttp3/Cookie;
+    check-cast v1, Lokhttp3/Cookie;
 
     .line 26
     .line 27
-    if-lez v1, :cond_0
+    if-lez v0, :cond_0
 
     .line 28
     .line 29
-    const-string v1, "; "
+    const-string v0, "; "
 
     .line 30
     .line 31
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 32
     .line 33
     .line 34
     :cond_0
-    invoke-virtual {v2}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+    invoke-virtual {v1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
 
     .line 35
     .line 36
     .line 37
-    move-result-object v1
+    move-result-object v0
 
     .line 38
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 39
     .line 40
     .line 41
-    const/16 v1, 0x3d
+    const/16 v0, 0x3d
 
     .line 42
     .line 43
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 44
     .line 45
     .line 46
-    invoke-virtual {v2}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+    invoke-virtual {v1}, Lokhttp3/Cookie;->value()Ljava/lang/String;
 
     .line 47
     .line 48
     .line 49
-    move-result-object v1
+    move-result-object v0
 
     .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 51
     .line 52
     .line 53
-    move v1, v3
+    move v0, v2
 
     .line 54
     goto :goto_0
 
     .line 55
     :cond_1
-    invoke-static {}, Lub;->V()V
+    invoke-static {}, Lut;->u0()V
 
     .line 56
     .line 57
     .line 58
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 59
-    throw p1
+    throw p0
 
     .line 60
     :cond_2
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 61
     .line 62
     .line 63
-    move-result-object p1
+    move-result-object p0
 
     .line 64
-    return-object p1
+    return-object p0
 .end method
 
 
@@ -299,15 +299,15 @@
     move-result-wide v7
 
     .line 41
-    const-string v2, "Transfer-Encoding"
+    cmp-long v2, v7, v3
 
     .line 42
     .line 43
-    cmp-long v9, v7, v3
+    const-string v9, "Transfer-Encoding"
 
     .line 44
     .line 45
-    if-eqz v9, :cond_1
+    if-eqz v2, :cond_1
 
     .line 46
     .line 47
@@ -316,15 +316,15 @@
     .line 48
     .line 49
     .line 50
-    move-result-object v7
+    move-result-object v2
 
     .line 51
-    invoke-virtual {v1, v6, v7}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
+    invoke-virtual {v1, v6, v2}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
 
     .line 52
     .line 53
     .line 54
-    invoke-virtual {v1, v2}, Lokhttp3/Request$Builder;->removeHeader(Ljava/lang/String;)Lokhttp3/Request$Builder;
+    invoke-virtual {v1, v9}, Lokhttp3/Request$Builder;->removeHeader(Ljava/lang/String;)Lokhttp3/Request$Builder;
 
     .line 55
     .line 56
@@ -333,11 +333,11 @@
 
     .line 58
     :cond_1
-    const-string v7, "chunked"
+    const-string v2, "chunked"
 
     .line 59
     .line 60
-    invoke-virtual {v1, v2, v7}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
+    invoke-virtual {v1, v9, v2}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
 
     .line 61
     .line 62
@@ -467,7 +467,7 @@
 
     .line 123
     :cond_5
-    const/4 v8, 0x0
+    move v8, v9
 
     .line 124
     :goto_1
@@ -563,7 +563,7 @@
     move-result-object p1
 
     .line 170
-    iget-object v1, p0, Lokhttp3/internal/http/BridgeInterceptor;->cookieJar:Lokhttp3/CookieJar;
+    iget-object p0, p0, Lokhttp3/internal/http/BridgeInterceptor;->cookieJar:Lokhttp3/CookieJar;
 
     .line 171
     .line 172
@@ -572,7 +572,7 @@
     .line 173
     .line 174
     .line 175
-    move-result-object v2
+    move-result-object v1
 
     .line 176
     invoke-virtual {p1}, Lokhttp3/Response;->headers()Lokhttp3/Headers;
@@ -580,10 +580,10 @@
     .line 177
     .line 178
     .line 179
-    move-result-object v7
+    move-result-object v2
 
     .line 180
-    invoke-static {v1, v2, v7}, Lokhttp3/internal/http/HttpHeaders;->receiveHeaders(Lokhttp3/CookieJar;Lokhttp3/HttpUrl;Lokhttp3/Headers;)V
+    invoke-static {p0, v1, v2}, Lokhttp3/internal/http/HttpHeaders;->receiveHeaders(Lokhttp3/CookieJar;Lokhttp3/HttpUrl;Lokhttp3/Headers;)V
 
     .line 181
     .line 182
@@ -593,45 +593,45 @@
     .line 184
     .line 185
     .line 186
-    move-result-object v1
+    move-result-object p0
 
     .line 187
-    invoke-virtual {v1, v0}, Lokhttp3/Response$Builder;->request(Lokhttp3/Request;)Lokhttp3/Response$Builder;
+    invoke-virtual {p0, v0}, Lokhttp3/Response$Builder;->request(Lokhttp3/Request;)Lokhttp3/Response$Builder;
 
     .line 188
     .line 189
     .line 190
-    move-result-object v0
+    move-result-object p0
 
     .line 191
     if-eqz v8, :cond_8
 
     .line 192
     .line 193
-    const-string v1, "Content-Encoding"
+    const-string v0, "Content-Encoding"
 
     .line 194
     .line 195
-    const/4 v2, 0x2
+    const/4 v1, 0x2
 
     .line 196
-    invoke-static {p1, v1, v10, v2, v10}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v0, v10, v1, v10}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     .line 197
     .line 198
     .line 199
-    move-result-object v7
+    move-result-object v2
 
     .line 200
-    invoke-virtual {v11, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     .line 201
     .line 202
     .line 203
-    move-result v7
+    move-result v2
 
     .line 204
-    if-eqz v7, :cond_8
+    if-eqz v2, :cond_8
 
     .line 205
     .line 206
@@ -640,10 +640,10 @@
     .line 207
     .line 208
     .line 209
-    move-result v7
+    move-result v2
 
     .line 210
-    if-eqz v7, :cond_8
+    if-eqz v2, :cond_8
 
     .line 211
     .line 212
@@ -652,26 +652,26 @@
     .line 213
     .line 214
     .line 215
-    move-result-object v7
+    move-result-object v2
 
     .line 216
-    if-eqz v7, :cond_8
+    if-eqz v2, :cond_8
 
     .line 217
     .line 218
-    new-instance v8, Lvd2;
+    new-instance v7, Lgq2;
 
     .line 219
     .line 220
-    invoke-virtual {v7}, Lokhttp3/ResponseBody;->source()Ls50;
+    invoke-virtual {v2}, Lokhttp3/ResponseBody;->source()Lf80;
 
     .line 221
     .line 222
     .line 223
-    move-result-object v7
+    move-result-object v2
 
     .line 224
-    invoke-direct {v8, v7}, Lvd2;-><init>(Lle6;)V
+    invoke-direct {v7, v2}, Lgq2;-><init>(Ld27;)V
 
     .line 225
     .line 226
@@ -681,47 +681,47 @@
     .line 228
     .line 229
     .line 230
-    move-result-object v7
+    move-result-object v2
 
     .line 231
-    invoke-virtual {v7}, Lokhttp3/Headers;->newBuilder()Lokhttp3/Headers$Builder;
+    invoke-virtual {v2}, Lokhttp3/Headers;->newBuilder()Lokhttp3/Headers$Builder;
 
     .line 232
     .line 233
     .line 234
-    move-result-object v7
+    move-result-object v2
 
     .line 235
-    invoke-virtual {v7, v1}, Lokhttp3/Headers$Builder;->removeAll(Ljava/lang/String;)Lokhttp3/Headers$Builder;
+    invoke-virtual {v2, v0}, Lokhttp3/Headers$Builder;->removeAll(Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
     .line 236
     .line 237
     .line 238
-    move-result-object v1
+    move-result-object v0
 
     .line 239
-    invoke-virtual {v1, v6}, Lokhttp3/Headers$Builder;->removeAll(Ljava/lang/String;)Lokhttp3/Headers$Builder;
+    invoke-virtual {v0, v6}, Lokhttp3/Headers$Builder;->removeAll(Ljava/lang/String;)Lokhttp3/Headers$Builder;
 
     .line 240
     .line 241
     .line 242
-    move-result-object v1
+    move-result-object v0
 
     .line 243
-    invoke-virtual {v1}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
+    invoke-virtual {v0}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
 
     .line 244
     .line 245
     .line 246
-    move-result-object v1
+    move-result-object v0
 
     .line 247
-    invoke-virtual {v0, v1}, Lokhttp3/Response$Builder;->headers(Lokhttp3/Headers;)Lokhttp3/Response$Builder;
+    invoke-virtual {p0, v0}, Lokhttp3/Response$Builder;->headers(Lokhttp3/Headers;)Lokhttp3/Response$Builder;
 
     .line 248
     .line 249
     .line 250
-    invoke-static {p1, v5, v10, v2, v10}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v5, v10, v1, v10}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     .line 251
     .line 252
@@ -729,37 +729,37 @@
     move-result-object p1
 
     .line 254
-    new-instance v1, Lokhttp3/internal/http/RealResponseBody;
+    new-instance v0, Lokhttp3/internal/http/RealResponseBody;
 
     .line 255
     .line 256
-    new-instance v2, Lhc5;
+    new-instance v1, Liw5;
 
     .line 257
     .line 258
-    invoke-direct {v2, v8}, Lhc5;-><init>(Lle6;)V
+    invoke-direct {v1, v7}, Liw5;-><init>(Ld27;)V
 
     .line 259
     .line 260
     .line 261
-    invoke-direct {v1, p1, v3, v4, v2}, Lokhttp3/internal/http/RealResponseBody;-><init>(Ljava/lang/String;JLs50;)V
+    invoke-direct {v0, p1, v3, v4, v1}, Lokhttp3/internal/http/RealResponseBody;-><init>(Ljava/lang/String;JLf80;)V
 
     .line 262
     .line 263
     .line 264
-    invoke-virtual {v0, v1}, Lokhttp3/Response$Builder;->body(Lokhttp3/ResponseBody;)Lokhttp3/Response$Builder;
+    invoke-virtual {p0, v0}, Lokhttp3/Response$Builder;->body(Lokhttp3/ResponseBody;)Lokhttp3/Response$Builder;
 
     .line 265
     .line 266
     .line 267
     :cond_8
-    invoke-virtual {v0}, Lokhttp3/Response$Builder;->build()Lokhttp3/Response;
+    invoke-virtual {p0}, Lokhttp3/Response$Builder;->build()Lokhttp3/Response;
 
     .line 268
     .line 269
     .line 270
-    move-result-object p1
+    move-result-object p0
 
     .line 271
-    return-object p1
+    return-object p0
 .end method

@@ -1,277 +1,124 @@
 .class public final Lqt;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lbg4;
-
-
-# static fields
-.field public static final a:Lqt;
-
-.field public static final b:Lbv1;
-
-.field public static final c:Lbv1;
-
-.field public static final d:Lbv1;
-
-.field public static final e:Lbv1;
-
-.field public static final f:Lbv1;
-
-.field public static final g:Lbv1;
-
-.field public static final h:Lbv1;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lqt;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lqt;->a:Lqt;
-
-    .line 7
-    .line 8
-    const-string v0, "eventTimeMs"
-
-    .line 9
-    .line 10
-    invoke-static {v0}, Lbv1;->a(Ljava/lang/String;)Lbv1;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
-
-    .line 14
-    sput-object v0, Lqt;->b:Lbv1;
-
-    .line 15
-    .line 16
-    const-string v0, "eventCode"
-
-    .line 17
-    .line 18
-    invoke-static {v0}, Lbv1;->a(Ljava/lang/String;)Lbv1;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    sput-object v0, Lqt;->c:Lbv1;
-
-    .line 23
-    .line 24
-    const-string v0, "eventUptimeMs"
-
-    .line 25
-    .line 26
-    invoke-static {v0}, Lbv1;->a(Ljava/lang/String;)Lbv1;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v0
-
-    .line 30
-    sput-object v0, Lqt;->d:Lbv1;
-
-    .line 31
-    .line 32
-    const-string v0, "sourceExtension"
-
-    .line 33
-    .line 34
-    invoke-static {v0}, Lbv1;->a(Ljava/lang/String;)Lbv1;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v0
-
-    .line 38
-    sput-object v0, Lqt;->e:Lbv1;
-
-    .line 39
-    .line 40
-    const-string v0, "sourceExtensionJsonProto3"
-
-    .line 41
-    .line 42
-    invoke-static {v0}, Lbv1;->a(Ljava/lang/String;)Lbv1;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object v0
-
-    .line 46
-    sput-object v0, Lqt;->f:Lbv1;
-
-    .line 47
-    .line 48
-    const-string v0, "timezoneOffsetSeconds"
-
-    .line 49
-    .line 50
-    invoke-static {v0}, Lbv1;->a(Ljava/lang/String;)Lbv1;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v0
-
-    .line 54
-    sput-object v0, Lqt;->g:Lbv1;
-
-    .line 55
-    .line 56
-    const-string v0, "networkConnectionInfo"
-
-    .line 57
-    .line 58
-    invoke-static {v0}, Lbv1;->a(Ljava/lang/String;)Lbv1;
-
-    .line 59
-    .line 60
-    .line 61
-    move-result-object v0
-
-    .line 62
-    sput-object v0, Lqt;->h:Lbv1;
-
-    .line 63
-    .line 64
-    return-void
-.end method
+.super Lst;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 3
+.method public final a(Ln30;)Lf58;
+    .locals 2
 
     .line 1
-    check-cast p1, Ltp3;
+    iget-object v0, p0, Lg58;->b:Ln30;
 
     .line 2
     .line 3
-    check-cast p2, Lcg4;
+    if-ne v0, p1, :cond_0
 
     .line 4
     .line 5
-    move-object v0, p1
+    return-object p0
 
     .line 6
-    check-cast v0, Llv;
+    :cond_0
+    new-instance v0, Lqt;
 
     .line 7
     .line 8
-    iget-wide v0, v0, Llv;->a:J
+    iget-object v1, p0, Lg58;->a:Lj48;
 
     .line 9
     .line 10
-    sget-object v2, Lqt;->b:Lbv1;
+    iget-object p0, p0, Lst;->e:Ljava/lang/String;
 
     .line 11
     .line 12
-    invoke-interface {p2, v2, v0, v1}, Lcg4;->e(Lbv1;J)Lcg4;
+    invoke-direct {v0, v1, p1, p0}, Lst;-><init>(Lj48;Ln30;Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    check-cast p1, Llv;
+    return-object v0
+.end method
 
-    .line 16
-    .line 17
-    iget-object v0, p1, Llv;->b:Ljava/lang/Integer;
+.method public final c()Lak3;
+    .locals 0
 
-    .line 18
-    .line 19
-    sget-object v1, Lqt;->c:Lbv1;
+    .line 1
+    sget-object p0, Lak3;->d0:Lak3;
 
-    .line 20
-    .line 21
-    invoke-interface {p2, v1, v0}, Lcg4;->a(Lbv1;Ljava/lang/Object;)Lcg4;
+    .line 2
+    .line 3
+    return-object p0
+.end method
 
-    .line 22
-    .line 23
-    .line 24
-    sget-object v0, Lqt;->d:Lbv1;
+.method public final g(Ln30;)Lpt;
+    .locals 2
 
-    .line 25
-    .line 26
-    iget-wide v1, p1, Llv;->c:J
+    .line 1
+    iget-object v0, p0, Lg58;->b:Ln30;
 
-    .line 27
-    .line 28
-    invoke-interface {p2, v0, v1, v2}, Lcg4;->e(Lbv1;J)Lcg4;
+    .line 2
+    .line 3
+    if-ne v0, p1, :cond_0
 
-    .line 29
-    .line 30
-    .line 31
-    sget-object v0, Lqt;->e:Lbv1;
+    .line 4
+    .line 5
+    return-object p0
 
-    .line 32
-    .line 33
-    iget-object v1, p1, Llv;->d:[B
+    .line 6
+    :cond_0
+    new-instance v0, Lqt;
 
-    .line 34
-    .line 35
-    invoke-interface {p2, v0, v1}, Lcg4;->a(Lbv1;Ljava/lang/Object;)Lcg4;
+    .line 7
+    .line 8
+    iget-object v1, p0, Lg58;->a:Lj48;
 
-    .line 36
-    .line 37
-    .line 38
-    sget-object v0, Lqt;->f:Lbv1;
+    .line 9
+    .line 10
+    iget-object p0, p0, Lst;->e:Ljava/lang/String;
 
-    .line 39
-    .line 40
-    iget-object v1, p1, Llv;->e:Ljava/lang/String;
+    .line 11
+    .line 12
+    invoke-direct {v0, v1, p1, p0}, Lst;-><init>(Lj48;Ln30;Ljava/lang/String;)V
 
-    .line 41
-    .line 42
-    invoke-interface {p2, v0, v1}, Lcg4;->a(Lbv1;Ljava/lang/Object;)Lcg4;
+    .line 13
+    .line 14
+    .line 15
+    return-object v0
+.end method
 
-    .line 43
-    .line 44
-    .line 45
-    sget-object v0, Lqt;->g:Lbv1;
+.method public final h(Ln30;)Lst;
+    .locals 2
 
-    .line 46
-    .line 47
-    iget-wide v1, p1, Llv;->f:J
+    .line 1
+    iget-object v0, p0, Lg58;->b:Ln30;
 
-    .line 48
-    .line 49
-    invoke-interface {p2, v0, v1, v2}, Lcg4;->e(Lbv1;J)Lcg4;
+    .line 2
+    .line 3
+    if-ne v0, p1, :cond_0
 
-    .line 50
-    .line 51
-    .line 52
-    sget-object v0, Lqt;->h:Lbv1;
+    .line 4
+    .line 5
+    return-object p0
 
-    .line 53
-    .line 54
-    iget-object p1, p1, Llv;->g:Llb4;
+    .line 6
+    :cond_0
+    new-instance v0, Lqt;
 
-    .line 55
-    .line 56
-    invoke-interface {p2, v0, p1}, Lcg4;->a(Lbv1;Ljava/lang/Object;)Lcg4;
+    .line 7
+    .line 8
+    iget-object v1, p0, Lg58;->a:Lj48;
 
-    .line 57
-    .line 58
-    .line 59
-    return-void
+    .line 9
+    .line 10
+    iget-object p0, p0, Lst;->e:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    invoke-direct {v0, v1, p1, p0}, Lst;-><init>(Lj48;Ln30;Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object v0
 .end method

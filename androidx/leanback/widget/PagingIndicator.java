@@ -16,115 +16,115 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
-import defpackage.c85;
-import defpackage.fg0;
-import defpackage.fn;
-import defpackage.gb5;
-import defpackage.i85;
-import defpackage.o85;
-import defpackage.pn4;
-import defpackage.qn7;
+import defpackage.bs5;
+import defpackage.ev5;
+import defpackage.hs5;
+import defpackage.i60;
+import defpackage.ni8;
+import defpackage.ns5;
+import defpackage.t55;
+import defpackage.zm0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class PagingIndicator extends View {
-    public static final DecelerateInterpolator p0 = new DecelerateInterpolator();
-    public static final fg0 q0;
-    public static final fg0 r0;
-    public static final fg0 s0;
-    public boolean Q;
-    public final int R;
-    public final int S;
-    public final int T;
-    public final int U;
-    public final int V;
-    public final int W;
-    public final int a0;
-    public pn4[] b0;
-    public int[] c0;
-    public int[] d0;
-    public int[] e0;
-    public int f0;
-    public int g0;
-    public int h0;
-    public int i0;
-    public final Paint j0;
-    public final Paint k0;
-    public Bitmap l0;
-    public Paint m0;
-    public final Rect n0;
-    public final float o0;
+    public static final zm0 A0;
+    public static final zm0 B0;
+    public static final DecelerateInterpolator y0 = new DecelerateInterpolator();
+    public static final zm0 z0;
+    public boolean c0;
+    public final int d0;
+    public final int e0;
+    public final int f0;
+    public final int g0;
+    public final int h0;
+    public final int i0;
+    public final int j0;
+    public t55[] k0;
+    public int[] l0;
+    public int[] m0;
+    public int[] n0;
+    public int o0;
+    public int p0;
+    public int q0;
+    public int r0;
+    public final Paint s0;
+    public final Paint t0;
+    public Bitmap u0;
+    public Paint v0;
+    public final Rect w0;
+    public final float x0;
 
     static {
         Class<Float> cls = Float.class;
-        q0 = new fg0(cls, "alpha", 12);
-        r0 = new fg0(cls, "diameter", 13);
-        s0 = new fg0(cls, "translation_x", 14);
+        z0 = new zm0(12, cls, "alpha");
+        A0 = new zm0(13, cls, "diameter");
+        B0 = new zm0(14, cls, "translation_x");
     }
 
     public PagingIndicator(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         AnimatorSet animatorSet = new AnimatorSet();
         Resources resources = getResources();
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, gb5.PagingIndicator, i, 0);
-        qn7.p(this, context, gb5.PagingIndicator, attributeSet, typedArrayObtainStyledAttributes, i);
-        int dimensionPixelOffset = typedArrayObtainStyledAttributes.getDimensionPixelOffset(gb5.PagingIndicator_lbDotRadius, getResources().getDimensionPixelOffset(i85.lb_page_indicator_dot_radius));
-        this.S = dimensionPixelOffset;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ev5.PagingIndicator, i, 0);
+        ni8.l(this, context, ev5.PagingIndicator, attributeSet, obtainStyledAttributes, i);
+        int dimensionPixelOffset = obtainStyledAttributes.getDimensionPixelOffset(ev5.PagingIndicator_lbDotRadius, getResources().getDimensionPixelOffset(hs5.lb_page_indicator_dot_radius));
+        this.e0 = dimensionPixelOffset;
         int i2 = dimensionPixelOffset * 2;
-        this.R = i2;
-        int dimensionPixelOffset2 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(gb5.PagingIndicator_arrowRadius, getResources().getDimensionPixelOffset(i85.lb_page_indicator_arrow_radius));
-        this.V = dimensionPixelOffset2;
+        this.d0 = i2;
+        int dimensionPixelOffset2 = obtainStyledAttributes.getDimensionPixelOffset(ev5.PagingIndicator_arrowRadius, getResources().getDimensionPixelOffset(hs5.lb_page_indicator_arrow_radius));
+        this.h0 = dimensionPixelOffset2;
         int i3 = dimensionPixelOffset2 * 2;
-        this.U = i3;
-        this.T = typedArrayObtainStyledAttributes.getDimensionPixelOffset(gb5.PagingIndicator_dotToDotGap, getResources().getDimensionPixelOffset(i85.lb_page_indicator_dot_gap));
-        this.W = typedArrayObtainStyledAttributes.getDimensionPixelOffset(gb5.PagingIndicator_dotToArrowGap, getResources().getDimensionPixelOffset(i85.lb_page_indicator_arrow_gap));
-        int color = typedArrayObtainStyledAttributes.getColor(gb5.PagingIndicator_dotBgColor, getResources().getColor(c85.lb_page_indicator_dot));
+        this.g0 = i3;
+        this.f0 = obtainStyledAttributes.getDimensionPixelOffset(ev5.PagingIndicator_dotToDotGap, getResources().getDimensionPixelOffset(hs5.lb_page_indicator_dot_gap));
+        this.i0 = obtainStyledAttributes.getDimensionPixelOffset(ev5.PagingIndicator_dotToArrowGap, getResources().getDimensionPixelOffset(hs5.lb_page_indicator_arrow_gap));
+        int color = obtainStyledAttributes.getColor(ev5.PagingIndicator_dotBgColor, getResources().getColor(bs5.lb_page_indicator_dot));
         Paint paint = new Paint(1);
-        this.j0 = paint;
+        this.s0 = paint;
         paint.setColor(color);
-        this.i0 = typedArrayObtainStyledAttributes.getColor(gb5.PagingIndicator_arrowBgColor, getResources().getColor(c85.lb_page_indicator_arrow_background));
-        if (this.m0 == null && typedArrayObtainStyledAttributes.hasValue(gb5.PagingIndicator_arrowColor)) {
-            setArrowColor(typedArrayObtainStyledAttributes.getColor(gb5.PagingIndicator_arrowColor, 0));
+        this.r0 = obtainStyledAttributes.getColor(ev5.PagingIndicator_arrowBgColor, getResources().getColor(bs5.lb_page_indicator_arrow_background));
+        if (this.v0 == null && obtainStyledAttributes.hasValue(ev5.PagingIndicator_arrowColor)) {
+            setArrowColor(obtainStyledAttributes.getColor(ev5.PagingIndicator_arrowColor, 0));
         }
-        typedArrayObtainStyledAttributes.recycle();
-        this.Q = resources.getConfiguration().getLayoutDirection() == 0;
-        int color2 = resources.getColor(c85.lb_page_indicator_arrow_shadow);
-        int dimensionPixelSize = resources.getDimensionPixelSize(i85.lb_page_indicator_arrow_shadow_radius);
-        this.a0 = dimensionPixelSize;
+        obtainStyledAttributes.recycle();
+        this.c0 = resources.getConfiguration().getLayoutDirection() == 0;
+        int color2 = resources.getColor(bs5.lb_page_indicator_arrow_shadow);
+        int dimensionPixelSize = resources.getDimensionPixelSize(hs5.lb_page_indicator_arrow_shadow_radius);
+        this.j0 = dimensionPixelSize;
         Paint paint2 = new Paint(1);
-        this.k0 = paint2;
-        float dimensionPixelSize2 = resources.getDimensionPixelSize(i85.lb_page_indicator_arrow_shadow_offset);
+        this.t0 = paint2;
+        float dimensionPixelSize2 = resources.getDimensionPixelSize(hs5.lb_page_indicator_arrow_shadow_offset);
         paint2.setShadowLayer(dimensionPixelSize, dimensionPixelSize2, dimensionPixelSize2, color2);
-        this.l0 = d();
-        this.n0 = new Rect(0, 0, this.l0.getWidth(), this.l0.getHeight());
+        this.u0 = d();
+        this.w0 = new Rect(0, 0, this.u0.getWidth(), this.u0.getHeight());
         float f = i3;
-        this.o0 = this.l0.getWidth() / f;
+        this.x0 = this.u0.getWidth() / f;
         AnimatorSet animatorSet2 = new AnimatorSet();
-        fg0 fg0Var = q0;
-        ObjectAnimator objectAnimatorOfFloat = ObjectAnimator.ofFloat((Object) null, fg0Var, 0.0f, 1.0f);
-        objectAnimatorOfFloat.setDuration(167L);
-        DecelerateInterpolator decelerateInterpolator = p0;
-        objectAnimatorOfFloat.setInterpolator(decelerateInterpolator);
+        zm0 zm0Var = z0;
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat((Object) null, zm0Var, 0.0f, 1.0f);
+        ofFloat.setDuration(167L);
+        DecelerateInterpolator decelerateInterpolator = y0;
+        ofFloat.setInterpolator(decelerateInterpolator);
         float f2 = i2;
-        fg0 fg0Var2 = r0;
-        ObjectAnimator objectAnimatorOfFloat2 = ObjectAnimator.ofFloat((Object) null, fg0Var2, f2, f);
-        objectAnimatorOfFloat2.setDuration(417L);
-        objectAnimatorOfFloat2.setInterpolator(decelerateInterpolator);
-        animatorSet2.playTogether(objectAnimatorOfFloat, objectAnimatorOfFloat2, c());
+        zm0 zm0Var2 = A0;
+        ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat((Object) null, zm0Var2, f2, f);
+        ofFloat2.setDuration(417L);
+        ofFloat2.setInterpolator(decelerateInterpolator);
+        animatorSet2.playTogether(ofFloat, ofFloat2, c());
         AnimatorSet animatorSet3 = new AnimatorSet();
-        ObjectAnimator objectAnimatorOfFloat3 = ObjectAnimator.ofFloat((Object) null, fg0Var, 1.0f, 0.0f);
-        objectAnimatorOfFloat3.setDuration(167L);
-        objectAnimatorOfFloat3.setInterpolator(decelerateInterpolator);
-        ObjectAnimator objectAnimatorOfFloat4 = ObjectAnimator.ofFloat((Object) null, fg0Var2, f, f2);
-        objectAnimatorOfFloat4.setDuration(417L);
-        objectAnimatorOfFloat4.setInterpolator(decelerateInterpolator);
-        animatorSet3.playTogether(objectAnimatorOfFloat3, objectAnimatorOfFloat4, c());
+        ObjectAnimator ofFloat3 = ObjectAnimator.ofFloat((Object) null, zm0Var, 1.0f, 0.0f);
+        ofFloat3.setDuration(167L);
+        ofFloat3.setInterpolator(decelerateInterpolator);
+        ObjectAnimator ofFloat4 = ObjectAnimator.ofFloat((Object) null, zm0Var2, f, f2);
+        ofFloat4.setDuration(417L);
+        ofFloat4.setInterpolator(decelerateInterpolator);
+        animatorSet3.playTogether(ofFloat3, ofFloat4, c());
         animatorSet.playTogether(animatorSet2, animatorSet3);
         setLayerType(1, null);
     }
 
     private int getDesiredHeight() {
-        return getPaddingBottom() + getPaddingTop() + this.U + this.a0;
+        return getPaddingBottom() + getPaddingTop() + this.g0 + this.j0;
     }
 
     private int getDesiredWidth() {
@@ -132,61 +132,60 @@ public class PagingIndicator extends View {
     }
 
     private int getRequiredWidth() {
-        return ((this.g0 - 3) * this.T) + (this.W * 2) + (this.S * 2);
+        return ((this.p0 - 3) * this.f0) + (this.i0 * 2) + (this.e0 * 2);
     }
 
     private void setSelectedPage(int i) {
-        if (i == this.h0) {
+        if (i == this.q0) {
             return;
         }
-        this.h0 = i;
+        this.q0 = i;
         a();
     }
 
     public final void a() {
         int i;
-        pn4[] pn4VarArr;
+        t55[] t55VarArr;
         int i2 = 0;
         while (true) {
-            i = this.h0;
-            pn4VarArr = this.b0;
-            float f = -1.0f;
+            i = this.q0;
+            t55VarArr = this.k0;
             if (i2 >= i) {
                 break;
             }
-            pn4VarArr[i2].b();
-            pn4 pn4Var = this.b0[i2];
+            t55VarArr[i2].b();
+            t55 t55Var = this.k0[i2];
             if (i2 != 0) {
-                f = 1.0f;
+                r3 = 1.0f;
             }
-            pn4Var.h = f;
-            pn4Var.d = this.d0[i2];
+            t55Var.h = r3;
+            t55Var.d = this.m0[i2];
             i2++;
         }
-        pn4 pn4Var2 = pn4VarArr[i];
-        pn4Var2.c = 0.0f;
-        pn4Var2.d = 0.0f;
-        PagingIndicator pagingIndicator = pn4Var2.j;
-        pn4Var2.e = pagingIndicator.U;
-        float f2 = pagingIndicator.V;
-        pn4Var2.f = f2;
-        pn4Var2.g = f2 * pagingIndicator.o0;
-        pn4Var2.a = 1.0f;
-        pn4Var2.a();
-        pn4[] pn4VarArr2 = this.b0;
-        int i3 = this.h0;
-        pn4 pn4Var3 = pn4VarArr2[i3];
-        pn4Var3.h = i3 <= 0 ? 1.0f : -1.0f;
-        pn4Var3.d = this.c0[i3];
+        t55 t55Var2 = t55VarArr[i];
+        t55Var2.c = 0.0f;
+        t55Var2.d = 0.0f;
+        PagingIndicator pagingIndicator = t55Var2.j;
+        t55Var2.e = pagingIndicator.g0;
+        float f = pagingIndicator.h0;
+        t55Var2.f = f;
+        t55Var2.g = f * pagingIndicator.x0;
+        t55Var2.a = 1.0f;
+        t55Var2.a();
+        t55[] t55VarArr2 = this.k0;
+        int i3 = this.q0;
+        t55 t55Var3 = t55VarArr2[i3];
+        t55Var3.h = i3 <= 0 ? 1.0f : -1.0f;
+        t55Var3.d = this.l0[i3];
         while (true) {
             i3++;
-            if (i3 >= this.g0) {
+            if (i3 >= this.p0) {
                 return;
             }
-            this.b0[i3].b();
-            pn4 pn4Var4 = this.b0[i3];
-            pn4Var4.h = 1.0f;
-            pn4Var4.d = this.e0[i3];
+            this.k0[i3].b();
+            t55 t55Var4 = this.k0[i3];
+            t55Var4.h = 1.0f;
+            t55Var4.d = this.n0[i3];
         }
     }
 
@@ -196,30 +195,30 @@ public class PagingIndicator extends View {
         int width = getWidth() - getPaddingRight();
         int requiredWidth = getRequiredWidth();
         int i = (paddingLeft + width) / 2;
-        int i2 = this.g0;
+        int i2 = this.p0;
         int[] iArr = new int[i2];
-        this.c0 = iArr;
+        this.l0 = iArr;
         int[] iArr2 = new int[i2];
-        this.d0 = iArr2;
+        this.m0 = iArr2;
         int[] iArr3 = new int[i2];
-        this.e0 = iArr3;
-        boolean z = this.Q;
-        int i3 = this.W;
-        int i4 = this.T;
+        this.n0 = iArr3;
+        boolean z = this.c0;
+        int i3 = this.i0;
+        int i4 = this.f0;
         int i5 = 1;
-        int i6 = this.S;
+        int i6 = this.e0;
         if (z) {
             int i7 = i - (requiredWidth / 2);
             iArr[0] = ((i7 + i6) - i4) + i3;
             iArr2[0] = i7 + i6;
             iArr3[0] = (i3 * 2) + ((i7 + i6) - (i4 * 2));
-            while (i5 < this.g0) {
-                int[] iArr4 = this.c0;
-                int[] iArr5 = this.d0;
+            while (i5 < this.p0) {
+                int[] iArr4 = this.l0;
+                int[] iArr5 = this.m0;
                 int i8 = i5 - 1;
                 iArr4[i5] = iArr5[i8] + i3;
                 iArr5[i5] = iArr5[i8] + i4;
-                this.e0[i5] = iArr4[i8] + i3;
+                this.n0[i5] = iArr4[i8] + i3;
                 i5++;
             }
         } else {
@@ -227,70 +226,70 @@ public class PagingIndicator extends View {
             iArr[0] = ((i9 - i6) + i4) - i3;
             iArr2[0] = i9 - i6;
             iArr3[0] = ((i4 * 2) + (i9 - i6)) - (i3 * 2);
-            while (i5 < this.g0) {
-                int[] iArr6 = this.c0;
-                int[] iArr7 = this.d0;
+            while (i5 < this.p0) {
+                int[] iArr6 = this.l0;
+                int[] iArr7 = this.m0;
                 int i10 = i5 - 1;
                 iArr6[i5] = iArr7[i10] - i3;
                 iArr7[i5] = iArr7[i10] - i4;
-                this.e0[i5] = iArr6[i10] - i3;
+                this.n0[i5] = iArr6[i10] - i3;
                 i5++;
             }
         }
-        this.f0 = paddingTop + this.V;
+        this.o0 = paddingTop + this.h0;
         a();
     }
 
     public final ObjectAnimator c() {
-        ObjectAnimator objectAnimatorOfFloat = ObjectAnimator.ofFloat((Object) null, s0, (-this.W) + this.T, 0.0f);
-        objectAnimatorOfFloat.setDuration(417L);
-        objectAnimatorOfFloat.setInterpolator(p0);
-        return objectAnimatorOfFloat;
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat((Object) null, B0, (-this.i0) + this.f0, 0.0f);
+        ofFloat.setDuration(417L);
+        ofFloat.setInterpolator(y0);
+        return ofFloat;
     }
 
     public final Bitmap d() {
-        Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(getResources(), o85.lb_ic_nav_arrow);
-        if (this.Q) {
-            return bitmapDecodeResource;
+        Bitmap decodeResource = BitmapFactory.decodeResource(getResources(), ns5.lb_ic_nav_arrow);
+        if (this.c0) {
+            return decodeResource;
         }
         Matrix matrix = new Matrix();
         matrix.preScale(-1.0f, 1.0f);
-        return Bitmap.createBitmap(bitmapDecodeResource, 0, 0, bitmapDecodeResource.getWidth(), bitmapDecodeResource.getHeight(), matrix, false);
+        return Bitmap.createBitmap(decodeResource, 0, 0, decodeResource.getWidth(), decodeResource.getHeight(), matrix, false);
     }
 
     public int[] getDotSelectedLeftX() {
-        return this.d0;
+        return this.m0;
     }
 
     public int[] getDotSelectedRightX() {
-        return this.e0;
+        return this.n0;
     }
 
     public int[] getDotSelectedX() {
-        return this.c0;
+        return this.l0;
     }
 
     public int getPageCount() {
-        return this.g0;
+        return this.p0;
     }
 
     @Override // android.view.View
     public final void onDraw(Canvas canvas) {
-        for (int i = 0; i < this.g0; i++) {
-            pn4 pn4Var = this.b0[i];
-            float f = pn4Var.d + pn4Var.c;
-            PagingIndicator pagingIndicator = pn4Var.j;
-            int i2 = pagingIndicator.f0;
-            Paint paint = pagingIndicator.k0;
-            canvas.drawCircle(f, i2, pn4Var.f, pagingIndicator.j0);
-            if (pn4Var.a > 0.0f) {
-                paint.setColor(pn4Var.b);
-                canvas.drawCircle(f, pagingIndicator.f0, pn4Var.f, paint);
-                Bitmap bitmap = pagingIndicator.l0;
-                Rect rect = pagingIndicator.n0;
-                float f2 = pn4Var.g;
-                float f3 = pagingIndicator.f0;
-                canvas.drawBitmap(bitmap, rect, new Rect((int) (f - f2), (int) (f3 - f2), (int) (f + f2), (int) (f3 + f2)), pagingIndicator.m0);
+        for (int i = 0; i < this.p0; i++) {
+            t55 t55Var = this.k0[i];
+            float f = t55Var.d + t55Var.c;
+            PagingIndicator pagingIndicator = t55Var.j;
+            int i2 = pagingIndicator.o0;
+            Paint paint = pagingIndicator.t0;
+            canvas.drawCircle(f, i2, t55Var.f, pagingIndicator.s0);
+            if (t55Var.a > 0.0f) {
+                paint.setColor(t55Var.b);
+                canvas.drawCircle(f, pagingIndicator.o0, t55Var.f, paint);
+                Bitmap bitmap = pagingIndicator.u0;
+                Rect rect = pagingIndicator.w0;
+                float f2 = t55Var.g;
+                float f3 = pagingIndicator.o0;
+                canvas.drawBitmap(bitmap, rect, new Rect((int) (f - f2), (int) (f3 - f2), (int) (f + f2), (int) (f3 + f2)), pagingIndicator.v0);
             }
         }
     }
@@ -318,13 +317,13 @@ public class PagingIndicator extends View {
     public final void onRtlPropertiesChanged(int i) {
         super.onRtlPropertiesChanged(i);
         boolean z = i == 0;
-        if (this.Q != z) {
-            this.Q = z;
-            this.l0 = d();
-            pn4[] pn4VarArr = this.b0;
-            if (pn4VarArr != null) {
-                for (pn4 pn4Var : pn4VarArr) {
-                    pn4Var.i = pn4Var.j.Q ? 1.0f : -1.0f;
+        if (this.c0 != z) {
+            this.c0 = z;
+            this.u0 = d();
+            t55[] t55VarArr = this.k0;
+            if (t55VarArr != null) {
+                for (t55 t55Var : t55VarArr) {
+                    t55Var.i = t55Var.j.c0 ? 1.0f : -1.0f;
                 }
             }
             b();
@@ -339,29 +338,29 @@ public class PagingIndicator extends View {
     }
 
     public void setArrowBackgroundColor(int i) {
-        this.i0 = i;
+        this.r0 = i;
     }
 
     public void setArrowColor(int i) {
-        if (this.m0 == null) {
-            this.m0 = new Paint();
+        if (this.v0 == null) {
+            this.v0 = new Paint();
         }
-        this.m0.setColorFilter(new PorterDuffColorFilter(i, PorterDuff.Mode.SRC_IN));
+        this.v0.setColorFilter(new PorterDuffColorFilter(i, PorterDuff.Mode.SRC_IN));
     }
 
     public void setDotBackgroundColor(int i) {
-        this.j0.setColor(i);
+        this.s0.setColor(i);
     }
 
     public void setPageCount(int i) {
         if (i <= 0) {
-            fn.r("The page count should be a positive integer");
+            i60.p("The page count should be a positive integer");
             return;
         }
-        this.g0 = i;
-        this.b0 = new pn4[i];
-        for (int i2 = 0; i2 < this.g0; i2++) {
-            this.b0[i2] = new pn4(this);
+        this.p0 = i;
+        this.k0 = new t55[i];
+        for (int i2 = 0; i2 < this.p0; i2++) {
+            this.k0[i2] = new t55(this);
         }
         b();
         setSelectedPage(0);

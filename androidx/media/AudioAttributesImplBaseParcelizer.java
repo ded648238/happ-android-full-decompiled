@@ -1,28 +1,28 @@
 package androidx.media;
 
-import defpackage.vm7;
+import defpackage.qh8;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class AudioAttributesImplBaseParcelizer {
-    public static AudioAttributesImplBase read(vm7 vm7Var) {
+    public static AudioAttributesImplBase read(qh8 qh8Var) {
         AudioAttributesImplBase audioAttributesImplBase = new AudioAttributesImplBase();
         audioAttributesImplBase.a = 0;
         audioAttributesImplBase.b = 0;
         audioAttributesImplBase.c = 0;
         audioAttributesImplBase.d = -1;
-        audioAttributesImplBase.a = vm7Var.f(0, 1);
-        audioAttributesImplBase.b = vm7Var.f(audioAttributesImplBase.b, 2);
-        audioAttributesImplBase.c = vm7Var.f(audioAttributesImplBase.c, 3);
-        audioAttributesImplBase.d = vm7Var.f(audioAttributesImplBase.d, 4);
+        audioAttributesImplBase.a = qh8Var.f(0, 1);
+        audioAttributesImplBase.b = qh8Var.f(audioAttributesImplBase.b, 2);
+        audioAttributesImplBase.c = qh8Var.f(audioAttributesImplBase.c, 3);
+        audioAttributesImplBase.d = qh8Var.f(audioAttributesImplBase.d, 4);
         return audioAttributesImplBase;
     }
 
-    public static void write(AudioAttributesImplBase audioAttributesImplBase, vm7 vm7Var) {
-        vm7Var.getClass();
-        vm7Var.j(audioAttributesImplBase.a, 1);
-        vm7Var.j(audioAttributesImplBase.b, 2);
-        vm7Var.j(audioAttributesImplBase.c, 3);
-        vm7Var.j(audioAttributesImplBase.d, 4);
+    public static void write(AudioAttributesImplBase audioAttributesImplBase, qh8 qh8Var) {
+        qh8Var.getClass();
+        qh8Var.j(audioAttributesImplBase.a, 1);
+        qh8Var.j(audioAttributesImplBase.b, 2);
+        qh8Var.j(audioAttributesImplBase.c, 3);
+        qh8Var.j(audioAttributesImplBase.d, 4);
     }
 }

@@ -1,15 +1,25 @@
 package defpackage;
 
-import android.view.View;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class op7 extends ep7 {
+    public final String b;
+    public final int c;
+    public final mi2 d;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class op7 {
-    public static float a(View view) {
-        return view.getTransitionAlpha();
+    public op7(Object obj, String str, int i, mi2 mi2Var) {
+        super(obj);
+        this.b = str;
+        this.c = i;
+        this.d = mi2Var;
     }
 
-    public static void b(View view, float f) {
-        view.setTransitionAlpha(f);
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("TextContextMenuItem(key=");
+        sb.append(this.a);
+        sb.append(", label=\"");
+        sb.append(this.b);
+        sb.append("\", leadingIcon=");
+        return eb7.l(sb, this.c, ')');
     }
 }

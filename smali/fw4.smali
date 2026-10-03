@@ -1,60 +1,67 @@
-.class public abstract Lfw4;
+.class public final Lfw4;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/io/Serializable;
 
 
-# static fields
-.field public static final a:Lli6;
-
-.field public static final b:Lpp0;
+# instance fields
+.field public final X:Ljava/lang/Throwable;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Ljava/lang/Throwable;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lv54;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/16 v1, 0xc
+    .line 4
+    iput-object p1, p0, Lfw4;->X:Ljava/lang/Throwable;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Notification=>Error:"
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lv54;-><init>(I)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    new-instance v1, Lli6;
+    iget-object p0, p0, Lfw4;->X:Ljava/lang/Throwable;
 
     .line 9
     .line 10
-    invoke-direct {v1, v0}, Lk65;-><init>(Lg72;)V
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    sput-object v1, Lfw4;->a:Lli6;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 14
     .line 15
-    new-instance v0, Lpp0;
-
     .line 16
+    move-result-object p0
+
     .line 17
-    const/4 v1, 0x2
-
-    .line 18
-    invoke-direct {v0, v1}, Lpp0;-><init>(I)V
-
-    .line 19
-    .line 20
-    .line 21
-    sput-object v0, Lfw4;->b:Lpp0;
-
-    .line 22
-    .line 23
-    return-void
+    return-object p0
 .end method

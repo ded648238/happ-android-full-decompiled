@@ -1,12 +1,18 @@
 .class public final Lio/sentry/ndk/NdkOptions;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
+.field private appHangTimeoutMillis:J
+
 .field private final dist:Ljava/lang/String;
 
 .field private final dsn:Ljava/lang/String;
+
+.field private enableAppHangTracking:Z
+
+.field private enableLogs:Z
 
 .field private final environment:Ljava/lang/String;
 
@@ -27,7 +33,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
-    .locals 1
+    .locals 3
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,159 +56,244 @@
 
     .line 10
     .line 11
-    iput-object p1, p0, Lio/sentry/ndk/NdkOptions;->dsn:Ljava/lang/String;
+    const/4 v0, 0x0
 
     .line 12
+    iput-boolean v0, p0, Lio/sentry/ndk/NdkOptions;->enableAppHangTracking:Z
+
     .line 13
+    .line 14
+    const-wide/16 v1, 0x1388
+
+    .line 15
+    .line 16
+    iput-wide v1, p0, Lio/sentry/ndk/NdkOptions;->appHangTimeoutMillis:J
+
+    .line 17
+    .line 18
+    iput-boolean v0, p0, Lio/sentry/ndk/NdkOptions;->enableLogs:Z
+
+    .line 19
+    .line 20
+    iput-object p1, p0, Lio/sentry/ndk/NdkOptions;->dsn:Ljava/lang/String;
+
+    .line 21
+    .line 22
     iput-boolean p2, p0, Lio/sentry/ndk/NdkOptions;->isDebug:Z
 
-    .line 14
-    .line 15
+    .line 23
+    .line 24
     iput-object p3, p0, Lio/sentry/ndk/NdkOptions;->outboxPath:Ljava/lang/String;
 
-    .line 16
-    .line 17
+    .line 25
+    .line 26
     iput-object p4, p0, Lio/sentry/ndk/NdkOptions;->release:Ljava/lang/String;
 
-    .line 18
-    .line 19
+    .line 27
+    .line 28
     iput-object p5, p0, Lio/sentry/ndk/NdkOptions;->environment:Ljava/lang/String;
 
-    .line 20
-    .line 21
+    .line 29
+    .line 30
     iput-object p6, p0, Lio/sentry/ndk/NdkOptions;->dist:Ljava/lang/String;
 
-    .line 22
-    .line 23
+    .line 31
+    .line 32
     iput p7, p0, Lio/sentry/ndk/NdkOptions;->maxBreadcrumbs:I
 
-    .line 24
-    .line 25
+    .line 33
+    .line 34
     iput-object p8, p0, Lio/sentry/ndk/NdkOptions;->sdkName:Ljava/lang/String;
 
-    .line 26
-    .line 27
+    .line 35
+    .line 36
     return-void
 .end method
 
 
 # virtual methods
-.method public getDist()Ljava/lang/String;
-    .locals 1
+.method public getAppHangTimeoutMillis()J
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/NdkOptions;->dist:Ljava/lang/String;
+    iget-wide v0, p0, Lio/sentry/ndk/NdkOptions;->appHangTimeoutMillis:J
 
     .line 2
     .line 3
-    return-object v0
+    return-wide v0
+.end method
+
+.method public getDist()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/ndk/NdkOptions;->dist:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
 .method public getDsn()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/NdkOptions;->dsn:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/NdkOptions;->dsn:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEnvironment()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/NdkOptions;->environment:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/NdkOptions;->environment:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getMaxBreadcrumbs()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lio/sentry/ndk/NdkOptions;->maxBreadcrumbs:I
+    iget p0, p0, Lio/sentry/ndk/NdkOptions;->maxBreadcrumbs:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getNdkHandlerStrategy()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/NdkOptions;->ndkHandlerStrategy:Lio/sentry/ndk/a;
+    iget-object p0, p0, Lio/sentry/ndk/NdkOptions;->ndkHandlerStrategy:Lio/sentry/ndk/a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/ndk/a;->getValue()I
+    invoke-virtual {p0}, Lio/sentry/ndk/a;->getValue()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public getOutboxPath()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/NdkOptions;->outboxPath:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/NdkOptions;->outboxPath:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getRelease()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/NdkOptions;->release:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/NdkOptions;->release:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSdkName()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/NdkOptions;->sdkName:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/NdkOptions;->sdkName:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getTracesSampleRate()F
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lio/sentry/ndk/NdkOptions;->tracesSampleRate:F
+    iget p0, p0, Lio/sentry/ndk/NdkOptions;->tracesSampleRate:F
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isDebug()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/ndk/NdkOptions;->isDebug:Z
+    iget-boolean p0, p0, Lio/sentry/ndk/NdkOptions;->isDebug:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
+.end method
+
+.method public isEnableAppHangTracking()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lio/sentry/ndk/NdkOptions;->enableAppHangTracking:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public isEnableLogs()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lio/sentry/ndk/NdkOptions;->enableLogs:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public setAppHangTimeoutMillis(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lio/sentry/ndk/NdkOptions;->appHangTimeoutMillis:J
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setEnableAppHangTracking(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lio/sentry/ndk/NdkOptions;->enableAppHangTracking:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setEnableLogs(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lio/sentry/ndk/NdkOptions;->enableLogs:Z
+
+    .line 2
+    .line 3
+    return-void
 .end method
 
 .method public setNdkHandlerStrategy(Lio/sentry/ndk/a;)V

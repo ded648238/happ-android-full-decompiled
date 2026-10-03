@@ -1,104 +1,72 @@
-.class public abstract synthetic Lat3;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lat3;
+.super Lmt3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Leo3;
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final c0:Lbt3;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lbt3;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->values()[Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
+    invoke-direct {p0}, Lmt3;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, Lat3;->c0:Lbt3;
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    return-void
+.end method
+
+
+# virtual methods
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lat3;->c0:Lbt3;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lbt3;->E(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object p0, Lr98;->a:Lr98;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->LAST_USED:Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
+    return-object p0
+.end method
 
-    .line 9
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+.method public final R()Ltt3;
+    .locals 0
 
-    .line 11
-    .line 12
-    .line 13
-    move-result v1
+    .line 1
+    iget-object p0, p0, Lat3;->c0:Lbt3;
 
-    .line 14
-    const/4 v2, 0x1
+    .line 2
+    .line 3
+    return-object p0
+.end method
 
-    .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+.method public final f()Luo3;
+    .locals 0
 
-    .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->LOWEST_DELAY:Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
+    .line 1
+    iget-object p0, p0, Lat3;->c0:Lbt3;
 
-    .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    const/4 v2, 0x2
-
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 25
-    .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->RANDOM:Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
-
-    .line 27
-    .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    const/4 v2, 0x3
-
-    .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 34
-    .line 35
-    :catch_2
-    sput-object v0, Lat3;->a:[I
-
-    .line 36
-    .line 37
-    return-void
+    .line 2
+    .line 3
+    return-object p0
 .end method

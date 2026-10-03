@@ -1,6 +1,6 @@
 .class public final Landroidx/recyclerview/widget/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -98,7 +98,7 @@
 
     .line 31
     .line 32
-    iget-object v6, v5, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Q:Landroidx/recyclerview/widget/l;
+    iget-object v6, v5, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->X:Landroidx/recyclerview/widget/l;
 
     .line 33
     .line 34
@@ -118,7 +118,7 @@
 
     .line 41
     :cond_0
-    iget-object v5, v5, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Q:Landroidx/recyclerview/widget/l;
+    iget-object v5, v5, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->X:Landroidx/recyclerview/widget/l;
 
     .line 42
     .line 43
@@ -141,90 +141,89 @@
 
     .line 51
     .line 52
-    mul-int v5, v5, v6
+    mul-int/2addr v5, v6
 
     .line 53
-    .line 54
     if-gez v5, :cond_1
 
+    .line 54
     .line 55
-    .line 56
     goto :goto_1
 
-    .line 57
+    .line 56
     :cond_1
     if-ge v5, v2, :cond_3
 
+    .line 57
     .line 58
-    .line 59
     move-object v1, v4
 
-    .line 60
+    .line 59
     if-nez v5, :cond_2
 
+    .line 60
     .line 61
-    .line 62
     goto :goto_2
 
-    .line 63
+    .line 62
     :cond_2
     move v2, v5
 
-    .line 64
+    .line 63
     :cond_3
     :goto_1
     add-int/lit8 v3, v3, 0x1
 
+    .line 64
     .line 65
-    .line 66
     goto :goto_0
 
-    .line 67
+    .line 66
     :cond_4
     :goto_2
     if-nez v1, :cond_5
 
+    .line 67
     .line 68
-    .line 69
     const/4 p1, -0x1
 
-    .line 70
+    .line 69
     iput p1, p0, Landroidx/recyclerview/widget/b;->d:I
 
+    .line 70
     .line 71
-    .line 72
     return-void
 
-    .line 73
+    .line 72
     :cond_5
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
+    .line 73
     .line 74
     .line 75
-    .line 76
     move-result-object p1
 
-    .line 77
+    .line 76
     check-cast p1, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
 
+    .line 77
     .line 78
-    .line 79
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Q:Landroidx/recyclerview/widget/l;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->X:Landroidx/recyclerview/widget/l;
 
+    .line 79
     .line 80
-    .line 81
     invoke-virtual {p1}, Landroidx/recyclerview/widget/l;->c()I
 
+    .line 81
     .line 82
     .line 83
-    .line 84
     move-result p1
 
-    .line 85
+    .line 84
     iput p1, p0, Landroidx/recyclerview/widget/b;->d:I
 
+    .line 85
     .line 86
-    .line 87
     return-void
 .end method
 
@@ -288,7 +287,7 @@
 
     .line 27
     .line 28
-    iget-object v3, v2, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Q:Landroidx/recyclerview/widget/l;
+    iget-object v3, v2, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->X:Landroidx/recyclerview/widget/l;
 
     .line 29
     .line 30
@@ -312,7 +311,7 @@
 
     .line 38
     .line 39
-    iget-object v2, v2, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Q:Landroidx/recyclerview/widget/l;
+    iget-object v2, v2, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->X:Landroidx/recyclerview/widget/l;
 
     .line 40
     .line 41
@@ -346,10 +345,10 @@
 
     .line 54
     :cond_2
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 55
-    return-object p1
+    return-object p0
 
     .line 56
     :cond_3

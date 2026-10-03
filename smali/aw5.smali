@@ -1,28 +1,192 @@
-.class public abstract Law5;
-.super Ltv5;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public interface abstract Law5;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljz0;
 
 
-# instance fields
-.field public n:Lyy4;
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 1
+# virtual methods
+.method public b(Luw;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ltv5;-><init>()V
+    invoke-interface {p0}, Law5;->k()Ljz0;
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    move-result-object p0
 
     .line 5
-    iput-object v0, p0, Law5;->n:Lyy4;
+    invoke-interface {p0, p1, p2}, Ljz0;->b(Luw;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method public c()Ljava/util/Set;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0}, Law5;->k()Ljz0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-interface {p0}, Ljz0;->c()Ljava/util/Set;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method public e(Luw;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0}, Law5;->k()Ljz0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-interface {p0, p1}, Ljz0;->e(Luw;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method public f(Luw;)Ljava/util/Set;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0}, Law5;->k()Ljz0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-interface {p0, p1}, Ljz0;->f(Luw;)Ljava/util/Set;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method public g(Luw;Liz0;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0}, Law5;->k()Ljz0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-interface {p0, p1, p2}, Ljz0;->g(Luw;Liz0;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method public h(Ljl0;)V
+    .locals 0
+
+    .line 1
+    invoke-interface {p0}, Law5;->k()Ljz0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-interface {p0, p1}, Ljz0;->h(Ljl0;)V
+
+    .line 6
+    .line 7
+    .line 8
     return-void
+.end method
+
+.method public i(Luw;)Z
+    .locals 0
+
+    .line 1
+    invoke-interface {p0}, Law5;->k()Ljz0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-interface {p0, p1}, Ljz0;->i(Luw;)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p0
+
+    .line 9
+    return p0
+.end method
+
+.method public j(Luw;)Liz0;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0}, Law5;->k()Ljz0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-interface {p0, p1}, Ljz0;->j(Luw;)Liz0;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method public abstract k()Ljz0;
 .end method

@@ -1,14 +1,14 @@
 .class public final Lio/sentry/android/core/performance/i;
 .super Lio/sentry/android/core/internal/gestures/j;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final R:Lwb0;
+.field public final Y:Lio/sentry/android/core/i1;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/Window$Callback;Lwb0;)V
+.method public constructor <init>(Landroid/view/Window$Callback;Lio/sentry/android/core/i1;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lio/sentry/android/core/performance/i;->R:Lwb0;
+    iput-object p2, p0, Lio/sentry/android/core/performance/i;->Y:Lio/sentry/android/core/i1;
 
     .line 5
     .line 6
@@ -27,7 +27,7 @@
 
 # virtual methods
 .method public final onContentChanged()V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lio/sentry/android/core/internal/gestures/j;->onContentChanged()V
@@ -35,11 +35,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lio/sentry/android/core/performance/i;->R:Lwb0;
+    iget-object p0, p0, Lio/sentry/android/core/performance/i;->Y:Lio/sentry/android/core/i1;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Lwb0;->run()V
+    invoke-virtual {p0}, Lio/sentry/android/core/i1;->run()V
 
     .line 7
     .line 8

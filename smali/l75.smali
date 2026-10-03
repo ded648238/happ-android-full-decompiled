@@ -1,42 +1,31 @@
-.class public abstract Ll75;
+.class public final Ll75;
 .super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static design_bottom_sheet_slide_in:I = 0x7f01001b
+# instance fields
+.field public final a:I
 
-.field public static design_bottom_sheet_slide_out:I = 0x7f01001c
+.field public final b:Lji2;
 
-.field public static design_snackbar_in:I = 0x7f01001d
 
-.field public static design_snackbar_out:I = 0x7f01001e
+# direct methods
+.method public constructor <init>(ILji2;)V
+    .locals 0
 
-.field public static linear_indeterminate_line1_head_interpolator:I = 0x7f010026
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static linear_indeterminate_line1_tail_interpolator:I = 0x7f010027
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Ll75;->a:I
 
-.field public static linear_indeterminate_line2_head_interpolator:I = 0x7f010028
+    .line 5
+    .line 6
+    iput-object p2, p0, Ll75;->b:Lji2;
 
-.field public static linear_indeterminate_line2_tail_interpolator:I = 0x7f010029
-
-.field public static m3_bottom_sheet_slide_in:I = 0x7f01002a
-
-.field public static m3_bottom_sheet_slide_out:I = 0x7f01002b
-
-.field public static m3_motion_fade_enter:I = 0x7f01002c
-
-.field public static m3_motion_fade_exit:I = 0x7f01002d
-
-.field public static m3_side_sheet_enter_from_left:I = 0x7f01002e
-
-.field public static m3_side_sheet_enter_from_right:I = 0x7f01002f
-
-.field public static m3_side_sheet_exit_to_left:I = 0x7f010030
-
-.field public static m3_side_sheet_exit_to_right:I = 0x7f010031
-
-.field public static mtrl_bottom_sheet_slide_in:I = 0x7f010032
-
-.field public static mtrl_bottom_sheet_slide_out:I = 0x7f010033
-
-.field public static mtrl_card_lowers_interpolator:I = 0x7f010034
+    .line 7
+    .line 8
+    return-void
+.end method

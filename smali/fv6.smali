@@ -1,10 +1,24 @@
-.class public interface abstract Lfv6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lfv6;
+.super Lhv6;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final B:Lev6;
+.field public static final h:Landroid/graphics/RectF;
+
+
+# instance fields
+.field public final b:F
+
+.field public final c:F
+
+.field public final d:F
+
+.field public final e:F
+
+.field public f:F
+
+.field public g:F
 
 
 # direct methods
@@ -12,13 +26,115 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lev6;->a:Lev6;
+    new-instance v0, Landroid/graphics/RectF;
 
     .line 2
     .line 3
-    sput-object v0, Lfv6;->B:Lev6;
+    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
     .line 4
     .line 5
+    .line 6
+    sput-object v0, Lfv6;->h:Landroid/graphics/RectF;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>(FFFF)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lhv6;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Lfv6;->b:F
+
+    .line 5
+    .line 6
+    iput p2, p0, Lfv6;->c:F
+
+    .line 7
+    .line 8
+    iput p3, p0, Lfv6;->d:F
+
+    .line 9
+    .line 10
+    iput p4, p0, Lfv6;->e:F
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/graphics/Matrix;Landroid/graphics/Path;)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lhv6;->a:Landroid/graphics/Matrix;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, v0}, Landroid/graphics/Matrix;->invert(Landroid/graphics/Matrix;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p2, v0}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iget v0, p0, Lfv6;->d:F
+
+    .line 10
+    .line 11
+    iget v1, p0, Lfv6;->e:F
+
+    .line 12
+    .line 13
+    sget-object v2, Lfv6;->h:Landroid/graphics/RectF;
+
+    .line 14
+    .line 15
+    iget v3, p0, Lfv6;->b:F
+
+    .line 16
+    .line 17
+    iget v4, p0, Lfv6;->c:F
+
+    .line 18
+    .line 19
+    invoke-virtual {v2, v3, v4, v0, v1}, Landroid/graphics/RectF;->set(FFFF)V
+
+    .line 20
+    .line 21
+    .line 22
+    iget v0, p0, Lfv6;->f:F
+
+    .line 23
+    .line 24
+    iget p0, p0, Lfv6;->g:F
+
+    .line 25
+    .line 26
+    const/4 v1, 0x0
+
+    .line 27
+    invoke-virtual {p2, v2, v0, p0, v1}, Landroid/graphics/Path;->arcTo(Landroid/graphics/RectF;FFZ)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {p2, p1}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
+
+    .line 31
+    .line 32
+    .line 33
     return-void
 .end method

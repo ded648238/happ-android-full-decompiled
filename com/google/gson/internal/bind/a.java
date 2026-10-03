@@ -1,22 +1,22 @@
 package com.google.gson.internal.bind;
 
-import defpackage.k31;
-import defpackage.wa7;
+import defpackage.j38;
+import defpackage.jb1;
 import java.util.Date;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class a {
-    public static final k31 b = new k31(Date.class);
+    public static final jb1 b = new jb1(Date.class);
     public final Class a;
 
     public a(Class cls) {
         this.a = cls;
     }
 
-    public final wa7 a(int i, int i2) {
+    public final j38 a(int i, int i2) {
         DefaultDateTypeAdapter defaultDateTypeAdapter = new DefaultDateTypeAdapter(this, i, i2);
-        wa7 wa7Var = b.a;
+        j38 j38Var = b.a;
         return new TypeAdapters$30(this.a, defaultDateTypeAdapter);
     }
 

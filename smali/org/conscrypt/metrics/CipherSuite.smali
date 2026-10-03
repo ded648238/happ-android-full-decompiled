@@ -1,6 +1,6 @@
 .class public final enum Lorg/conscrypt/metrics/CipherSuite;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -73,309 +73,117 @@
 
 # direct methods
 .method private static synthetic $values()[Lorg/conscrypt/metrics/CipherSuite;
-    .locals 3
+    .locals 26
 
     .line 1
-    const/16 v0, 0x19
+    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->UNKNOWN_CIPHER_SUITE:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 2
     .line 3
-    new-array v0, v0, [Lorg/conscrypt/metrics/CipherSuite;
+    sget-object v2, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 4
     .line 5
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->UNKNOWN_CIPHER_SUITE:Lorg/conscrypt/metrics/CipherSuite;
+    sget-object v3, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    sget-object v4, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 8
-    aput-object v1, v0, v2
-
     .line 9
+    sget-object v5, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
+
     .line 10
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
-
     .line 11
-    .line 12
-    const/4 v2, 0x1
+    sget-object v6, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
 
+    .line 12
     .line 13
-    aput-object v1, v0, v2
+    sget-object v7, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 14
     .line 15
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
+    sget-object v8, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_3DES_EDE_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 16
     .line 17
-    const/4 v2, 0x2
+    sget-object v9, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_AES_128_GCM_SHA256:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 18
-    aput-object v1, v0, v2
-
     .line 19
+    sget-object v10, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_AES_256_GCM_SHA384:Lorg/conscrypt/metrics/CipherSuite;
+
     .line 20
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
-
     .line 21
-    .line 22
-    const/4 v2, 0x3
+    sget-object v11, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:Lorg/conscrypt/metrics/CipherSuite;
 
+    .line 22
     .line 23
-    aput-object v1, v0, v2
+    sget-object v12, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 24
     .line 25
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
+    sget-object v13, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 26
     .line 27
-    const/4 v2, 0x4
+    sget-object v14, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 28
-    aput-object v1, v0, v2
-
     .line 29
+    sget-object v15, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:Lorg/conscrypt/metrics/CipherSuite;
+
     .line 30
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
-
     .line 31
-    .line 32
-    const/4 v2, 0x5
+    sget-object v16, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:Lorg/conscrypt/metrics/CipherSuite;
 
+    .line 32
     .line 33
-    aput-object v1, v0, v2
+    sget-object v17, Lorg/conscrypt/metrics/CipherSuite;->TLS_PSK_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 34
     .line 35
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
+    sget-object v18, Lorg/conscrypt/metrics/CipherSuite;->TLS_PSK_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 36
     .line 37
-    const/4 v2, 0x6
+    sget-object v19, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 38
-    aput-object v1, v0, v2
-
     .line 39
+    sget-object v20, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
+
     .line 40
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_3DES_EDE_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
-
     .line 41
-    .line 42
-    const/4 v2, 0x7
+    sget-object v21, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256:Lorg/conscrypt/metrics/CipherSuite;
 
+    .line 42
     .line 43
-    aput-object v1, v0, v2
+    sget-object v22, Lorg/conscrypt/metrics/CipherSuite;->TLS_AES_128_GCM_SHA256:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 44
     .line 45
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_AES_128_GCM_SHA256:Lorg/conscrypt/metrics/CipherSuite;
+    sget-object v23, Lorg/conscrypt/metrics/CipherSuite;->TLS_AES_256_GCM_SHA384:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 46
     .line 47
-    const/16 v2, 0x8
+    sget-object v24, Lorg/conscrypt/metrics/CipherSuite;->TLS_CHACHA20_POLY1305_SHA256:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 48
     .line 49
-    aput-object v1, v0, v2
+    sget-object v25, Lorg/conscrypt/metrics/CipherSuite;->TLS_CIPHER_FAILED:Lorg/conscrypt/metrics/CipherSuite;
 
     .line 50
     .line 51
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_RSA_WITH_AES_256_GCM_SHA384:Lorg/conscrypt/metrics/CipherSuite;
+    filled-new-array/range {v1 .. v25}, [Lorg/conscrypt/metrics/CipherSuite;
 
     .line 52
     .line 53
-    const/16 v2, 0x9
-
     .line 54
+    move-result-object v0
+
     .line 55
-    aput-object v1, v0, v2
-
-    .line 56
-    .line 57
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 58
-    .line 59
-    const/16 v2, 0xa
-
-    .line 60
-    .line 61
-    aput-object v1, v0, v2
-
-    .line 62
-    .line 63
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 64
-    .line 65
-    const/16 v2, 0xb
-
-    .line 66
-    .line 67
-    aput-object v1, v0, v2
-
-    .line 68
-    .line 69
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 70
-    .line 71
-    const/16 v2, 0xc
-
-    .line 72
-    .line 73
-    aput-object v1, v0, v2
-
-    .line 74
-    .line 75
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 76
-    .line 77
-    const/16 v2, 0xd
-
-    .line 78
-    .line 79
-    aput-object v1, v0, v2
-
-    .line 80
-    .line 81
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 82
-    .line 83
-    const/16 v2, 0xe
-
-    .line 84
-    .line 85
-    aput-object v1, v0, v2
-
-    .line 86
-    .line 87
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 88
-    .line 89
-    const/16 v2, 0xf
-
-    .line 90
-    .line 91
-    aput-object v1, v0, v2
-
-    .line 92
-    .line 93
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_PSK_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 94
-    .line 95
-    const/16 v2, 0x10
-
-    .line 96
-    .line 97
-    aput-object v1, v0, v2
-
-    .line 98
-    .line 99
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_PSK_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 100
-    .line 101
-    const/16 v2, 0x11
-
-    .line 102
-    .line 103
-    aput-object v1, v0, v2
-
-    .line 104
-    .line 105
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 106
-    .line 107
-    const/16 v2, 0x12
-
-    .line 108
-    .line 109
-    aput-object v1, v0, v2
-
-    .line 110
-    .line 111
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 112
-    .line 113
-    const/16 v2, 0x13
-
-    .line 114
-    .line 115
-    aput-object v1, v0, v2
-
-    .line 116
-    .line 117
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 118
-    .line 119
-    const/16 v2, 0x14
-
-    .line 120
-    .line 121
-    aput-object v1, v0, v2
-
-    .line 122
-    .line 123
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_AES_128_GCM_SHA256:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 124
-    .line 125
-    const/16 v2, 0x15
-
-    .line 126
-    .line 127
-    aput-object v1, v0, v2
-
-    .line 128
-    .line 129
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_AES_256_GCM_SHA384:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 130
-    .line 131
-    const/16 v2, 0x16
-
-    .line 132
-    .line 133
-    aput-object v1, v0, v2
-
-    .line 134
-    .line 135
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_CHACHA20_POLY1305_SHA256:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 136
-    .line 137
-    const/16 v2, 0x17
-
-    .line 138
-    .line 139
-    aput-object v1, v0, v2
-
-    .line 140
-    .line 141
-    sget-object v1, Lorg/conscrypt/metrics/CipherSuite;->TLS_CIPHER_FAILED:Lorg/conscrypt/metrics/CipherSuite;
-
-    .line 142
-    .line 143
-    const/16 v2, 0x18
-
-    .line 144
-    .line 145
-    aput-object v1, v0, v2
-
-    .line 146
-    .line 147
     return-object v0
 .end method
 
@@ -1141,12 +949,12 @@
 
 # virtual methods
 .method public getId()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/metrics/CipherSuite;->id:I
+    iget p0, p0, Lorg/conscrypt/metrics/CipherSuite;->id:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

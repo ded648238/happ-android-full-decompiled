@@ -1,74 +1,173 @@
-.class public abstract Lp95;
-.super Ljava/lang/Object;
+.class public final enum Lp95;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static lb_browse_headers_transition_delay:I = 0x7f0c000c
+.field public static final X:Lep4;
 
-.field public static lb_browse_headers_transition_duration:I = 0x7f0c000d
+.field public static final enum Y:Lp95;
 
-.field public static lb_browse_rows_anim_duration:I = 0x7f0c000e
+.field public static final enum Z:Lp95;
 
-.field public static lb_card_activated_animation_duration:I = 0x7f0c000f
+.field public static final enum c0:Lp95;
 
-.field public static lb_card_selected_animation_delay:I = 0x7f0c0010
+.field public static final synthetic d0:[Lp95;
 
-.field public static lb_card_selected_animation_duration:I = 0x7f0c0011
+.field public static final synthetic e0:Loy1;
 
-.field public static lb_details_description_body_max_lines:I = 0x7f0c0012
 
-.field public static lb_details_description_body_min_lines:I = 0x7f0c0013
+# direct methods
+.method static constructor <clinit>()V
+    .locals 5
 
-.field public static lb_details_description_subtitle_max_lines:I = 0x7f0c0014
+    .line 1
+    new-instance v0, Lp95;
 
-.field public static lb_details_description_title_max_lines:I = 0x7f0c0015
+    .line 2
+    .line 3
+    const-string v1, "OFF"
 
-.field public static lb_error_message_max_lines:I = 0x7f0c0016
+    .line 4
+    .line 5
+    const/4 v2, 0x0
 
-.field public static lb_guidedactions_item_animation_duration:I = 0x7f0c0017
+    .line 6
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-.field public static lb_guidedactions_item_description_min_lines:I = 0x7f0c0018
+    .line 7
+    .line 8
+    .line 9
+    sput-object v0, Lp95;->Y:Lp95;
 
-.field public static lb_guidedactions_item_title_max_lines:I = 0x7f0c0019
+    .line 10
+    .line 11
+    new-instance v1, Lp95;
 
-.field public static lb_guidedactions_item_title_min_lines:I = 0x7f0c001a
+    .line 12
+    .line 13
+    const-string v2, "ON"
 
-.field public static lb_guidedstep_activity_background_fade_duration_ms:I = 0x7f0c001b
+    .line 14
+    .line 15
+    const/4 v3, 0x1
 
-.field public static lb_onboarding_header_description_delay:I = 0x7f0c001c
+    .line 16
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-.field public static lb_onboarding_header_title_delay:I = 0x7f0c001d
+    .line 17
+    .line 18
+    .line 19
+    sput-object v1, Lp95;->Z:Lp95;
 
-.field public static lb_playback_bg_fade_in_ms:I = 0x7f0c001e
+    .line 20
+    .line 21
+    new-instance v2, Lp95;
 
-.field public static lb_playback_bg_fade_out_ms:I = 0x7f0c001f
+    .line 22
+    .line 23
+    const-string v3, "BYPASS"
 
-.field public static lb_playback_controls_fade_in_ms:I = 0x7f0c0020
+    .line 24
+    .line 25
+    const/4 v4, 0x2
 
-.field public static lb_playback_controls_fade_out_ms:I = 0x7f0c0021
+    .line 26
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-.field public static lb_playback_controls_show_time_ms:I = 0x7f0c0022
+    .line 27
+    .line 28
+    .line 29
+    sput-object v2, Lp95;->c0:Lp95;
 
-.field public static lb_playback_controls_tickle_timeout_ms:I = 0x7f0c0023
+    .line 30
+    .line 31
+    filled-new-array {v0, v1, v2}, [Lp95;
 
-.field public static lb_playback_description_fade_in_ms:I = 0x7f0c0024
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
 
-.field public static lb_playback_description_fade_out_ms:I = 0x7f0c0025
+    .line 35
+    sput-object v0, Lp95;->d0:[Lp95;
 
-.field public static lb_playback_rows_fade_delay_ms:I = 0x7f0c0026
+    .line 36
+    .line 37
+    new-instance v1, Loy1;
 
-.field public static lb_playback_rows_fade_in_ms:I = 0x7f0c0027
+    .line 38
+    .line 39
+    invoke-direct {v1, v0}, Loy1;-><init>([Ljava/lang/Enum;)V
 
-.field public static lb_playback_rows_fade_out_ms:I = 0x7f0c0028
+    .line 40
+    .line 41
+    .line 42
+    sput-object v1, Lp95;->e0:Loy1;
 
-.field public static lb_search_bar_speech_mode_background_alpha:I = 0x7f0c0029
+    .line 43
+    .line 44
+    new-instance v0, Lep4;
 
-.field public static lb_search_bar_text_mode_background_alpha:I = 0x7f0c002a
+    .line 45
+    .line 46
+    const/4 v1, 0x4
 
-.field public static lb_search_orb_pulse_duration_ms:I = 0x7f0c002b
+    .line 47
+    invoke-direct {v0, v1}, Lep4;-><init>(I)V
 
-.field public static lb_search_orb_scale_duration_ms:I = 0x7f0c002c
+    .line 48
+    .line 49
+    .line 50
+    sput-object v0, Lp95;->X:Lep4;
 
-.field public static slideEdgeEnd:I = 0x7f0c006d
+    .line 51
+    .line 52
+    return-void
+.end method
 
-.field public static slideEdgeStart:I = 0x7f0c006e
+.method public static valueOf(Ljava/lang/String;)Lp95;
+    .locals 1
+
+    .line 1
+    const-class v0, Lp95;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lp95;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lp95;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lp95;->d0:[Lp95;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lp95;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method

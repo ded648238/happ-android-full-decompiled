@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success$Creator;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -32,13 +32,13 @@
         0x4,
         0x0
     }
-    xi = 0x30
+    xi = 0x530
 .end annotation
 
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -51,28 +51,28 @@
     .line 5
     .line 6
     .line 7
-    move-result-wide v0
+    move-result-wide p0
 
     .line 8
-    new-instance p1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;
+    new-instance v0, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;
 
     .line 9
     .line 10
-    invoke-direct {p1, v0, v1}, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;-><init>(J)V
+    invoke-direct {v0, p0, p1}, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;-><init>(J)V
 
     .line 11
     .line 12
     .line 13
-    return-object p1
+    return-object v0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
     .line 1
-    new-array p1, p1, [Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;
+    new-array p0, p1, [Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;
 
     .line 2
     .line 3
-    return-object p1
+    return-object p0
 .end method

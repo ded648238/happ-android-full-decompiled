@@ -1,17 +1,21 @@
 .class public final Lil6;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ldj;
+.implements Liy2;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:Liy2;
+
+.field public final b:Ljava/lang/Object;
+
+.field public c:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(Liy2;)V
     .locals 0
 
     .line 1
@@ -20,111 +24,142 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lil6;->a:Ljava/lang/String;
+    iput-object p1, p0, Lil6;->a:Liy2;
 
     .line 5
     .line 6
+    new-instance p1, Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, Lil6;->b:Ljava/lang/Object;
+
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
+.method public final a()V
+    .locals 2
 
     .line 1
-    instance-of v0, p1, Lil6;
+    iget-object v0, p0, Lil6;->b:Ljava/lang/Object;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    monitor-enter v0
 
     .line 4
-    .line 5
-    goto :goto_0
+    :try_start_0
+    iget-boolean v1, p0, Lil6;->c:Z
 
+    .line 5
     .line 6
-    :cond_0
-    check-cast p1, Lil6;
+    if-eqz v1, :cond_1
 
     .line 7
     .line 8
-    iget-object p1, p1, Lil6;->a:Ljava/lang/String;
+    iget-object v1, p0, Lil6;->a:Liy2;
 
     .line 9
     .line 10
-    iget-object v0, p0, Lil6;->a:Ljava/lang/String;
+    if-eqz v1, :cond_0
 
     .line 11
     .line 12
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v1}, Liy2;->clear()V
 
     .line 13
     .line 14
     .line 15
-    move-result p1
+    goto :goto_0
 
     .line 16
-    if-nez p1, :cond_1
+    :catchall_0
+    move-exception p0
 
     .line 17
+    goto :goto_1
+
     .line 18
-    :goto_0
-    const/4 p1, 0x0
+    :cond_0
+    const-string v1, "ScreenFlashWrapper"
 
     .line 19
-    return p1
-
     .line 20
-    :cond_1
-    const/4 p1, 0x1
+    invoke-static {v1}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 21
-    return p1
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_1
+    const-string v1, "ScreenFlashWrapper"
+
+    .line 25
+    .line 26
+    invoke-static {v1}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    :goto_0
+    const/4 v1, 0x0
+
+    .line 30
+    iput-boolean v1, p0, Lil6;->c:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 31
+    .line 32
+    monitor-exit v0
+
+    .line 33
+    return-void
+
+    .line 34
+    :goto_1
+    monitor-exit v0
+
+    .line 35
+    throw p0
 .end method
 
-.method public final hashCode()I
-    .locals 1
+.method public final b()V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lil6;->a:Ljava/lang/String;
+    iget-object p0, p0, Lil6;->b:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    monitor-enter p0
 
     .line 4
-    .line 5
-    .line 6
-    move-result v0
+    monitor-exit p0
 
-    .line 7
-    return v0
+    .line 5
+    return-void
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public final clear()V
+    .locals 0
 
     .line 1
-    const-string v0, "StringAnnotation(value="
+    invoke-virtual {p0}, Lil6;->a()V
 
     .line 2
     .line 3
-    const/16 v1, 0x29
-
     .line 4
-    .line 5
-    iget-object v2, p0, Lil6;->a:Ljava/lang/String;
-
-    .line 6
-    .line 7
-    invoke-static {v1, v0, v2}, Lxy4;->u(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    return-object v0
+    return-void
 .end method

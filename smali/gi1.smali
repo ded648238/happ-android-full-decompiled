@@ -1,23 +1,409 @@
-.class public interface abstract Lgi1;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lgi1;
+.super Ldq0;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lfi1;
+
+
+# instance fields
+.field public final F0:Lln5;
+
+.field public final G0:Lqr4;
+
+.field public final H0:Lmh5;
+
+.field public final I0:Loh8;
+
+.field public final J0:Lqi1;
+
+
+# direct methods
+.method public constructor <init>(Lln4;Lp11;Lxl;ZILln5;Lqr4;Lmh5;Loh8;Lqi1;Le27;)V
+    .locals 7
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    if-eqz p5, :cond_1
+
+    .line 8
+    .line 9
+    invoke-virtual {p6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {p7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual/range {p9 .. p9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 19
+    .line 20
+    .line 21
+    if-nez p11, :cond_0
+
+    .line 22
+    .line 23
+    sget-object v0, Le27;->D:Lfp4;
+
+    .line 24
+    .line 25
+    move-object v6, v0
+
+    .line 26
+    move-object v1, p1
+
+    .line 27
+    move-object v2, p2
+
+    .line 28
+    move-object v3, p3
+
+    .line 29
+    move v4, p4
+
+    .line 30
+    move v5, p5
+
+    .line 31
+    move-object v0, p0
+
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_0
+    move-object/from16 v6, p11
+
+    .line 34
+    .line 35
+    move-object v0, p0
+
+    .line 36
+    move-object v1, p1
+
+    .line 37
+    move-object v2, p2
+
+    .line 38
+    move-object v3, p3
+
+    .line 39
+    move v4, p4
+
+    .line 40
+    move v5, p5
+
+    .line 41
+    :goto_0
+    invoke-direct/range {v0 .. v6}, Ldq0;-><init>(Lln4;Lp11;Lxl;ZILe27;)V
+
+    .line 42
+    .line 43
+    .line 44
+    iput-object p6, p0, Lgi1;->F0:Lln5;
+
+    .line 45
+    .line 46
+    iput-object p7, p0, Lgi1;->G0:Lqr4;
+
+    .line 47
+    .line 48
+    iput-object p8, p0, Lgi1;->H0:Lmh5;
+
+    .line 49
+    .line 50
+    move-object/from16 v1, p9
+
+    .line 51
+    .line 52
+    iput-object v1, p0, Lgi1;->I0:Loh8;
+
+    .line 53
+    .line 54
+    move-object/from16 v1, p10
+
+    .line 55
+    .line 56
+    iput-object v1, p0, Lgi1;->J0:Lqi1;
+
+    .line 57
+    .line 58
+    return-void
+
+    .line 59
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 60
+    throw v0
+.end method
 
 
 # virtual methods
-.method public abstract W(Lci1;)V
+.method public final bridge synthetic B0(ILxl;Lia1;Lnj2;Lpr4;Le27;)Lpj2;
+    .locals 0
+
+    .line 1
+    move-object p5, p3
+
+    .line 2
+    move p3, p1
+
+    .line 3
+    move-object p1, p5
+
+    .line 4
+    move-object p5, p4
+
+    .line 5
+    move-object p4, p2
+
+    .line 6
+    move-object p2, p5
+
+    .line 7
+    move-object p5, p6
+
+    .line 8
+    invoke-virtual/range {p0 .. p5}, Lgi1;->R0(Lia1;Lnj2;ILxl;Le27;)Lgi1;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    return-object p0
 .end method
 
-.method public abstract a0(Lci1;)V
+.method public final G()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
 .end method
 
-.method public abstract c0(Lci1;)V
+.method public final H()Lmh5;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lgi1;->H0:Lmh5;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
-.method public abstract n(Lci1;)V
+.method public final bridge synthetic K0(ILxl;Lia1;Lnj2;Lpr4;Le27;)Ldq0;
+    .locals 0
+
+    .line 1
+    move-object p5, p3
+
+    .line 2
+    move p3, p1
+
+    .line 3
+    move-object p1, p5
+
+    .line 4
+    move-object p5, p4
+
+    .line 5
+    move-object p4, p2
+
+    .line 6
+    move-object p2, p5
+
+    .line 7
+    move-object p5, p6
+
+    .line 8
+    invoke-virtual/range {p0 .. p5}, Lgi1;->R0(Lia1;Lnj2;ILxl;Le27;)Lgi1;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    return-object p0
 .end method
 
-.method public abstract r0(Lci1;)Z
+.method public final N()Lqr4;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lgi1;->G0:Lqr4;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
-.method public abstract x(Lci1;)V
+.method public final O()Lqi1;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lgi1;->J0:Lqi1;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final R0(Lia1;Lnj2;ILxl;Le27;)Lgi1;
+    .locals 12
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    if-eqz p3, :cond_0
+
+    .line 5
+    .line 6
+    invoke-virtual/range {p4 .. p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 7
+    .line 8
+    .line 9
+    new-instance v0, Lgi1;
+
+    .line 10
+    .line 11
+    move-object v1, p1
+
+    .line 12
+    check-cast v1, Lln4;
+
+    .line 13
+    .line 14
+    move-object v2, p2
+
+    .line 15
+    check-cast v2, Lp11;
+
+    .line 16
+    .line 17
+    iget-object v9, p0, Lgi1;->I0:Loh8;
+
+    .line 18
+    .line 19
+    iget-object v10, p0, Lgi1;->J0:Lqi1;
+
+    .line 20
+    .line 21
+    iget-boolean v4, p0, Ldq0;->E0:Z
+
+    .line 22
+    .line 23
+    iget-object v6, p0, Lgi1;->F0:Lln5;
+
+    .line 24
+    .line 25
+    iget-object v7, p0, Lgi1;->G0:Lqr4;
+
+    .line 26
+    .line 27
+    iget-object v8, p0, Lgi1;->H0:Lmh5;
+
+    .line 28
+    .line 29
+    move v5, p3
+
+    .line 30
+    move-object/from16 v3, p4
+
+    .line 31
+    .line 32
+    move-object/from16 v11, p5
+
+    .line 33
+    .line 34
+    invoke-direct/range {v0 .. v11}, Lgi1;-><init>(Lln4;Lp11;Lxl;ZILln5;Lqr4;Lmh5;Loh8;Lqi1;Le27;)V
+
+    .line 35
+    .line 36
+    .line 37
+    iget-boolean p0, p0, Lpj2;->w0:Z
+
+    .line 38
+    .line 39
+    iput-boolean p0, v0, Lpj2;->w0:Z
+
+    .line 40
+    .line 41
+    return-object v0
+
+    .line 42
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 43
+    throw p0
+.end method
+
+.method public final h()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final i()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final l()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final y()La2;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lgi1;->F0:Lln5;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

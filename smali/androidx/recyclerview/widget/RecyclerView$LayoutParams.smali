@@ -1,6 +1,6 @@
 .class public Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
 .super Landroid/view/ViewGroup$MarginLayoutParams;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public Q:Landroidx/recyclerview/widget/l;
+.field public X:Landroidx/recyclerview/widget/l;
 
-.field public final R:Landroid/graphics/Rect;
+.field public final Y:Landroid/graphics/Rect;
 
-.field public S:Z
+.field public Z:Z
 
-.field public T:Z
+.field public c0:Z
 
 
 # direct methods
@@ -36,17 +36,17 @@
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->R:Landroid/graphics/Rect;
+    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Y:Landroid/graphics/Rect;
 
     const/4 p1, 0x1
 
     .line 20
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->S:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Z:Z
 
     const/4 p1, 0x0
 
     .line 21
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->T:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->c0:Z
 
     return-void
 .end method
@@ -69,21 +69,21 @@
     .line 7
     .line 8
     .line 9
-    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->R:Landroid/graphics/Rect;
+    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Y:Landroid/graphics/Rect;
 
     .line 10
     .line 11
     const/4 p1, 0x1
 
     .line 12
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->S:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Z:Z
 
     .line 13
     .line 14
     const/4 p1, 0x0
 
     .line 15
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->T:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->c0:Z
 
     .line 16
     .line 17
@@ -101,17 +101,17 @@
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->R:Landroid/graphics/Rect;
+    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Y:Landroid/graphics/Rect;
 
     const/4 p1, 0x1
 
     .line 28
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->S:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Z:Z
 
     const/4 p1, 0x0
 
     .line 29
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->T:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->c0:Z
 
     return-void
 .end method
@@ -127,17 +127,17 @@
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->R:Landroid/graphics/Rect;
+    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Y:Landroid/graphics/Rect;
 
     const/4 p1, 0x1
 
     .line 24
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->S:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Z:Z
 
     const/4 p1, 0x0
 
     .line 25
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->T:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->c0:Z
 
     return-void
 .end method
@@ -153,17 +153,17 @@
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->R:Landroid/graphics/Rect;
+    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Y:Landroid/graphics/Rect;
 
     const/4 p1, 0x1
 
     .line 32
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->S:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Z:Z
 
     const/4 p1, 0x0
 
     .line 33
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->T:Z
+    iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->c0:Z
 
     return-void
 .end method

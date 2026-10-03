@@ -1,11 +1,11 @@
 .class public final Lokhttp3/RequestBody$Companion$toRequestBody$1;
 .super Lokhttp3/RequestBody;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/RequestBody$Companion;->create(Ly60;Lokhttp3/MediaType;)Lokhttp3/RequestBody;
+    value = Lokhttp3/RequestBody$Companion;->create(Lo90;Lokhttp3/MediaType;)Lokhttp3/RequestBody;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,11 +26,11 @@
         "",
         "contentLength",
         "()J",
-        "Lr50;",
+        "Le80;",
         "sink",
-        "Lbh7;",
+        "Lr98;",
         "writeTo",
-        "(Lr50;)V",
+        "(Le80;)V",
         "okhttp"
     }
     k = 0x1
@@ -46,11 +46,11 @@
 # instance fields
 .field final synthetic $contentType:Lokhttp3/MediaType;
 
-.field final synthetic $this_toRequestBody:Ly60;
+.field final synthetic $this_toRequestBody:Lo90;
 
 
 # direct methods
-.method public constructor <init>(Lokhttp3/MediaType;Ly60;)V
+.method public constructor <init>(Lokhttp3/MediaType;Lo90;)V
     .locals 0
 
     .line 1
@@ -58,7 +58,7 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Lokhttp3/RequestBody$Companion$toRequestBody$1;->$this_toRequestBody:Ly60;
+    iput-object p2, p0, Lokhttp3/RequestBody$Companion$toRequestBody$1;->$this_toRequestBody:Lo90;
 
     .line 4
     .line 5
@@ -76,37 +76,37 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lokhttp3/RequestBody$Companion$toRequestBody$1;->$this_toRequestBody:Ly60;
+    iget-object p0, p0, Lokhttp3/RequestBody$Companion$toRequestBody$1;->$this_toRequestBody:Lo90;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ly60;->e()I
+    invoke-virtual {p0}, Lo90;->e()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    int-to-long v0, v0
+    int-to-long v0, p0
 
     .line 8
     return-wide v0
 .end method
 
 .method public contentType()Lokhttp3/MediaType;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/RequestBody$Companion$toRequestBody$1;->$contentType:Lokhttp3/MediaType;
+    iget-object p0, p0, Lokhttp3/RequestBody$Companion$toRequestBody$1;->$contentType:Lokhttp3/MediaType;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public writeTo(Lr50;)V
-    .locals 1
+.method public writeTo(Le80;)V
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -114,11 +114,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/RequestBody$Companion$toRequestBody$1;->$this_toRequestBody:Ly60;
+    iget-object p0, p0, Lokhttp3/RequestBody$Companion$toRequestBody$1;->$this_toRequestBody:Lo90;
 
     .line 5
     .line 6
-    invoke-interface {p1, v0}, Lr50;->B0(Ly60;)Lr50;
+    invoke-interface {p1, p0}, Le80;->M0(Lo90;)Le80;
 
     .line 7
     .line 8

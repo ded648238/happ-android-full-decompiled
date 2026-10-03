@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSSLSignature;
 .super Ljava/security/SignatureSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -165,42 +165,42 @@
 
     .line 33
     .line 34
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLSignature;->engineType:Lorg/conscrypt/OpenSSLSignature$EngineType;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLSignature;->engineType:Lorg/conscrypt/OpenSSLSignature$EngineType;
 
     .line 35
     .line 36
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 37
     .line 38
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 39
     .line 40
     .line 41
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 42
     .line 43
     .line 44
-    const-string v0, " (not EC)"
+    const-string p0, " (not EC)"
 
     .line 45
     .line 46
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 47
     .line 48
     .line 49
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 50
     .line 51
     .line 52
-    move-result-object v0
+    move-result-object p0
 
     .line 53
-    invoke-direct {p1, v0}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
 
     .line 54
     .line 55
@@ -213,37 +213,37 @@
 
     .line 58
     .line 59
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLSignature;->engineType:Lorg/conscrypt/OpenSSLSignature$EngineType;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLSignature;->engineType:Lorg/conscrypt/OpenSSLSignature$EngineType;
 
     .line 60
     .line 61
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 62
     .line 63
-    const-string v2, "Key must be of type "
+    const-string v1, "Key must be of type "
 
     .line 64
     .line 65
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 66
     .line 67
     .line 68
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 69
     .line 70
     .line 71
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 72
     .line 73
     .line 74
-    move-result-object v0
+    move-result-object p0
 
     .line 75
-    invoke-direct {p1, v0}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
 
     .line 76
     .line 77
@@ -268,42 +268,42 @@
 
     .line 84
     .line 85
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLSignature;->engineType:Lorg/conscrypt/OpenSSLSignature$EngineType;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLSignature;->engineType:Lorg/conscrypt/OpenSSLSignature$EngineType;
 
     .line 86
     .line 87
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 88
     .line 89
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 90
     .line 91
     .line 92
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 93
     .line 94
     .line 95
-    const-string v0, " (not RSA)"
+    const-string p0, " (not RSA)"
 
     .line 96
     .line 97
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 98
     .line 99
     .line 100
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 101
     .line 102
     .line 103
-    move-result-object v0
+    move-result-object p0
 
     .line 104
-    invoke-direct {p1, v0}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
 
     .line 105
     .line 106
@@ -345,10 +345,10 @@
 
     .line 12
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 13
-    invoke-static {p1}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 14
     .line 15
@@ -489,10 +489,10 @@
     .end annotation
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object p1
+    return-object p0
 .end method
 
 .method public engineInitSign(Ljava/security/PrivateKey;)V
@@ -607,15 +607,15 @@
 
     .line 13
     :catch_0
-    invoke-static {v0}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {v0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 14
     .line 15
     .line 16
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    return-object v0
+    return-object p0
 
     .line 18
     :catchall_0
@@ -675,7 +675,7 @@
 .end method
 
 .method public engineUpdate(Ljava/nio/ByteBuffer;)V
-    .locals 6
+    .locals 5
 
     .line 1
     invoke-virtual {p1}, Ljava/nio/Buffer;->hasRemaining()Z
@@ -727,11 +727,11 @@
 
     .line 23
     .line 24
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 25
     .line 26
-    if-nez v4, :cond_2
+    if-nez v2, :cond_2
 
     .line 27
     .line 28
@@ -778,11 +778,11 @@
 
     .line 47
     .line 48
-    iget-boolean v5, p0, Lorg/conscrypt/OpenSSLSignature;->signing:Z
+    iget-boolean p0, p0, Lorg/conscrypt/OpenSSLSignature;->signing:Z
 
     .line 49
     .line 50
-    if-eqz v5, :cond_3
+    if-eqz p0, :cond_3
 
     .line 51
     .line 52
@@ -813,11 +813,11 @@
 
     .line 64
     :cond_4
-    const-string p1, "Negative remaining amount"
+    const-string p0, "Negative remaining amount"
 
     .line 65
     .line 66
-    invoke-static {p1}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 67
     .line 68
@@ -826,11 +826,11 @@
 
     .line 70
     :cond_5
-    const-string p1, "Negative position"
+    const-string p0, "Negative position"
 
     .line 71
     .line 72
-    invoke-static {p1}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 73
     .line 74
@@ -839,15 +839,15 @@
 .end method
 
 .method public engineUpdate([BII)V
-    .locals 2
+    .locals 1
 
     .line 76
     iget-object v0, p0, Lorg/conscrypt/OpenSSLSignature;->ctx:Lorg/conscrypt/NativeRef$EVP_MD_CTX;
 
     .line 77
-    iget-boolean v1, p0, Lorg/conscrypt/OpenSSLSignature;->signing:Z
+    iget-boolean p0, p0, Lorg/conscrypt/OpenSSLSignature;->signing:Z
 
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 78
     invoke-static {v0, p1, p2, p3}, Lorg/conscrypt/NativeCrypto;->EVP_DigestSignUpdate(Lorg/conscrypt/NativeRef$EVP_MD_CTX;[BII)V
@@ -908,7 +908,7 @@
 
     .line 15
     :catch_0
-    invoke-static {v0}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {v0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 16
     .line 17
@@ -955,7 +955,7 @@
 
     .line 32
     :catch_2
-    invoke-static {v0}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {v0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 33
     .line 34

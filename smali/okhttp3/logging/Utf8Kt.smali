@@ -1,6 +1,6 @@
 .class public final Lokhttp3/logging/Utf8Kt;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -9,10 +9,10 @@
         "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u001a\u0013\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u0000\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0004"
     }
     d2 = {
-        "Lf50;",
+        "Ll70;",
         "",
         "isProbablyUtf8",
-        "(Lf50;)Z",
+        "(Ll70;)Z",
         "okhttp-logging-interceptor"
     }
     k = 0x2
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method public static final isProbablyUtf8(Lf50;)Z
+.method public static final isProbablyUtf8(Ll70;)Z
     .locals 7
 
     .line 1
@@ -39,7 +39,7 @@
 
     .line 5
     :try_start_0
-    new-instance v4, Lf50;
+    new-instance v4, Ll70;
 
     .line 6
     .line 7
@@ -48,7 +48,7 @@
     .line 8
     .line 9
     .line 10
-    iget-wide v1, p0, Lf50;->R:J
+    iget-wide v1, p0, Ll70;->Y:J
 
     .line 11
     .line 12
@@ -79,12 +79,12 @@
     move-object v1, p0
 
     .line 23
-    invoke-virtual/range {v1 .. v6}, Lf50;->l(JLf50;J)V
+    invoke-virtual/range {v1 .. v6}, Ll70;->p(JLl70;J)V
 
     .line 24
     .line 25
     .line 26
-    const/4 p0, 0x0
+    move p0, v0
 
     .line 27
     :goto_1
@@ -96,7 +96,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {v4}, Lf50;->z()Z
+    invoke-virtual {v4}, Ll70;->G()Z
 
     .line 32
     .line 33
@@ -112,7 +112,7 @@
 
     .line 38
     :cond_1
-    invoke-virtual {v4}, Lf50;->k0()I
+    invoke-virtual {v4}, Ll70;->t0()I
 
     .line 39
     .line 40

@@ -1,6 +1,6 @@
 .class public abstract synthetic Lj$/time/n;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -11,7 +11,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 6
 
     .line 1
     invoke-static {}, Lj$/time/temporal/a;->values()[Lj$/time/temporal/a;
@@ -37,7 +37,7 @@
 
     .line 11
     :try_start_0
-    sget-object v2, Lj$/time/temporal/a;->MONTHS:Lj$/time/temporal/a;
+    sget-object v2, Lj$/time/temporal/a;->YEARS:Lj$/time/temporal/a;
 
     .line 12
     .line 13
@@ -64,7 +64,7 @@
 
     .line 21
     .line 22
-    sget-object v3, Lj$/time/temporal/a;->YEARS:Lj$/time/temporal/a;
+    sget-object v3, Lj$/time/temporal/a;->DECADES:Lj$/time/temporal/a;
 
     .line 23
     .line 24
@@ -91,7 +91,7 @@
 
     .line 32
     .line 33
-    sget-object v4, Lj$/time/temporal/a;->DECADES:Lj$/time/temporal/a;
+    sget-object v4, Lj$/time/temporal/a;->CENTURIES:Lj$/time/temporal/a;
 
     .line 34
     .line 35
@@ -110,221 +110,146 @@
     .line 40
     .line 41
     :catch_2
-    const/4 v3, 0x4
+    :try_start_3
+    sget-object v3, Lj$/time/n;->b:[I
 
     .line 42
-    :try_start_3
-    sget-object v4, Lj$/time/n;->b:[I
-
     .line 43
+    sget-object v4, Lj$/time/temporal/a;->MILLENNIA:Lj$/time/temporal/a;
+
     .line 44
-    sget-object v5, Lj$/time/temporal/a;->CENTURIES:Lj$/time/temporal/a;
-
     .line 45
-    .line 46
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
 
+    .line 46
     .line 47
     .line 48
+    move-result v4
+
     .line 49
-    move-result v5
+    const/4 v5, 0x4
 
     .line 50
-    aput v3, v4, v5
+    aput v5, v3, v4
     :try_end_3
     .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 51
     .line 52
     :catch_3
-    const/4 v4, 0x5
+    :try_start_4
+    sget-object v3, Lj$/time/n;->b:[I
 
     .line 53
-    :try_start_4
-    sget-object v5, Lj$/time/n;->b:[I
-
     .line 54
+    sget-object v4, Lj$/time/temporal/a;->ERAS:Lj$/time/temporal/a;
+
     .line 55
-    sget-object v6, Lj$/time/temporal/a;->MILLENNIA:Lj$/time/temporal/a;
-
     .line 56
-    .line 57
-    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
 
+    .line 57
     .line 58
     .line 59
+    move-result v4
+
     .line 60
-    move-result v6
+    const/4 v5, 0x5
 
     .line 61
-    aput v4, v5, v6
+    aput v5, v3, v4
     :try_end_4
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
     .line 62
     .line 63
     :catch_4
-    :try_start_5
-    sget-object v5, Lj$/time/n;->b:[I
+    invoke-static {}, Lj$/time/temporal/ChronoField;->values()[Lj$/time/temporal/ChronoField;
 
     .line 64
     .line 65
-    sget-object v6, Lj$/time/temporal/a;->ERAS:Lj$/time/temporal/a;
-
     .line 66
+    move-result-object v3
+
     .line 67
-    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
+    array-length v3, v3
 
     .line 68
+    new-array v3, v3, [I
+
     .line 69
     .line 70
-    move-result v6
+    sput-object v3, Lj$/time/n;->a:[I
 
     .line 71
-    const/4 v7, 0x6
-
     .line 72
-    aput v7, v5, v6
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+    :try_start_5
+    sget-object v4, Lj$/time/temporal/ChronoField;->YEAR_OF_ERA:Lj$/time/temporal/ChronoField;
 
     .line 73
     .line 74
-    :catch_5
-    invoke-static {}, Lj$/time/temporal/ChronoField;->values()[Lj$/time/temporal/ChronoField;
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
 
     .line 75
     .line 76
     .line 77
-    move-result-object v5
+    move-result v4
 
     .line 78
-    array-length v5, v5
+    aput v1, v3, v4
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
     .line 79
-    new-array v5, v5, [I
-
     .line 80
-    .line 81
-    sput-object v5, Lj$/time/n;->a:[I
-
-    .line 82
-    .line 83
+    :catch_5
     :try_start_6
-    sget-object v6, Lj$/time/temporal/ChronoField;->MONTH_OF_YEAR:Lj$/time/temporal/ChronoField;
+    sget-object v1, Lj$/time/n;->a:[I
 
+    .line 81
+    .line 82
+    sget-object v3, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
+
+    .line 83
     .line 84
-    .line 85
-    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
+    .line 85
     .line 86
     .line 87
-    .line 88
-    move-result v6
+    move-result v3
 
-    .line 89
-    aput v1, v5, v6
+    .line 88
+    aput v0, v1, v3
     :try_end_6
     .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
+    .line 89
     .line 90
-    .line 91
     :catch_6
     :try_start_7
-    sget-object v1, Lj$/time/n;->a:[I
+    sget-object v0, Lj$/time/n;->a:[I
 
+    .line 91
     .line 92
+    sget-object v1, Lj$/time/temporal/ChronoField;->ERA:Lj$/time/temporal/ChronoField;
+
     .line 93
-    sget-object v5, Lj$/time/temporal/ChronoField;->PROLEPTIC_MONTH:Lj$/time/temporal/ChronoField;
-
     .line 94
-    .line 95
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 95
     .line 96
     .line 97
-    .line 98
-    move-result v5
+    move-result v1
 
-    .line 99
-    aput v0, v1, v5
+    .line 98
+    aput v2, v0, v1
     :try_end_7
     .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
+    .line 99
     .line 100
-    .line 101
     :catch_7
-    :try_start_8
-    sget-object v0, Lj$/time/n;->a:[I
-
-    .line 102
-    .line 103
-    sget-object v1, Lj$/time/temporal/ChronoField;->YEAR_OF_ERA:Lj$/time/temporal/ChronoField;
-
-    .line 104
-    .line 105
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 106
-    .line 107
-    .line 108
-    move-result v1
-
-    .line 109
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    .line 110
-    .line 111
-    :catch_8
-    :try_start_9
-    sget-object v0, Lj$/time/n;->a:[I
-
-    .line 112
-    .line 113
-    sget-object v1, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
-
-    .line 114
-    .line 115
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 116
-    .line 117
-    .line 118
-    move-result v1
-
-    .line 119
-    aput v3, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    .line 120
-    .line 121
-    :catch_9
-    :try_start_a
-    sget-object v0, Lj$/time/n;->a:[I
-
-    .line 122
-    .line 123
-    sget-object v1, Lj$/time/temporal/ChronoField;->ERA:Lj$/time/temporal/ChronoField;
-
-    .line 124
-    .line 125
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 126
-    .line 127
-    .line 128
-    move-result v1
-
-    .line 129
-    aput v4, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    .line 130
-    .line 131
-    :catch_a
     return-void
 .end method

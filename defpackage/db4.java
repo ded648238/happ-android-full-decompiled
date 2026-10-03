@@ -1,6 +1,21 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface db4 {
+/* loaded from: classes3.dex */
+public final class db4 extends d31 {
+    public /* synthetic */ Object c0;
+    public int d0;
+    public final /* synthetic */ l e0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public db4(l lVar, b31 b31Var) {
+        super(b31Var);
+        this.e0 = lVar;
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.d0 |= Integer.MIN_VALUE;
+        return this.e0.a(null, this);
+    }
 }

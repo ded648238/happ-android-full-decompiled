@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/ScScannerActivity;
 .super Lsu/happ/proxyutility/ui/BaseActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,11 +26,11 @@
 
 
 # static fields
-.field public static final synthetic D0:I
+.field public static final synthetic O0:I
 
 
 # instance fields
-.field public final C0:Le6;
+.field public final N0:Lq6;
 
 
 # direct methods
@@ -43,32 +43,32 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, La6;
+    new-instance v0, Lm6;
 
     .line 5
     .line 6
     const/4 v1, 0x2
 
     .line 7
-    invoke-direct {v0, v1}, La6;-><init>(I)V
+    invoke-direct {v0, v1}, Lm6;-><init>(I)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v1, Lyx;
+    new-instance v1, Lv31;
 
     .line 11
     .line 12
-    const/16 v2, 0x10
+    const/16 v2, 0x16
 
     .line 13
     .line 14
-    invoke-direct {v1, v2, p0}, Lyx;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lv31;-><init>(ILjava/lang/Object;)V
 
     .line 15
     .line 16
     .line 17
-    invoke-virtual {p0, v1, v0}, Landroidx/activity/ComponentActivity;->k(Lw5;Lyu7;)Le6;
+    invoke-virtual {p0, v1, v0}, Landroidx/activity/ComponentActivity;->l(Li6;Lyl0;)Lq6;
 
     .line 18
     .line 19
@@ -76,7 +76,7 @@
     move-result-object v0
 
     .line 21
-    iput-object v0, p0, Lsu/happ/proxyutility/ui/ScScannerActivity;->C0:Le6;
+    iput-object v0, p0, Lsu/happ/proxyutility/ui/ScScannerActivity;->N0:Lq6;
 
     .line 22
     .line 23
@@ -86,7 +86,7 @@
 
 # virtual methods
 .method public final onCreate(Landroid/os/Bundle;)V
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-super {p0, p1}, Lsu/happ/proxyutility/ui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
@@ -94,7 +94,7 @@
     .line 2
     .line 3
     .line 4
-    sget p1, Lt95;->activity_none:I
+    sget p1, Ltt5;->activity_none:I
 
     .line 5
     .line 6
@@ -103,11 +103,11 @@
     .line 7
     .line 8
     .line 9
-    new-instance p1, Lov4;
+    new-instance p1, Lmh5;
 
     .line 10
     .line 11
-    invoke-direct {p1, p0}, Lov4;-><init>(Lsu/happ/proxyutility/ui/BaseActivity;)V
+    invoke-direct {p1, p0}, Lmh5;-><init>(Lsu/happ/proxyutility/ui/BaseActivity;)V
 
     .line 12
     .line 13
@@ -124,7 +124,7 @@
     move-result-object v0
 
     .line 20
-    invoke-virtual {p1, v0}, Lov4;->D([Ljava/lang/String;)Lqg4;
+    invoke-virtual {p1, v0}, Lmh5;->J([Ljava/lang/String;)Lby4;
 
     .line 21
     .line 22
@@ -132,32 +132,32 @@
     move-result-object p1
 
     .line 24
-    new-instance v0, Ls15;
+    new-instance v0, Lib6;
 
     .line 25
     .line 26
-    const/4 v1, 0x7
+    const/4 v1, 0x2
 
     .line 27
-    invoke-direct {v0, v1, p0}, Ls15;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lib6;-><init>(ILjava/lang/Object;)V
 
     .line 28
     .line 29
     .line 30
-    new-instance v1, Lyx;
+    new-instance p0, Lv31;
 
     .line 31
     .line 32
-    const/16 v2, 0x11
+    const/16 v1, 0x17
 
     .line 33
     .line 34
-    invoke-direct {v1, v2, v0}, Lyx;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v1, v0}, Lv31;-><init>(ILjava/lang/Object;)V
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {p1, v1}, Lqg4;->a(Lk4;)V
+    invoke-virtual {p1, p0}, Lby4;->a(Ls4;)V
 
     .line 38
     .line 39

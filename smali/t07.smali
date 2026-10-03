@@ -1,27 +1,28 @@
-.class public final synthetic Lt07;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg72;
+.class public final Lt07;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:J
+.field public synthetic c0:Ljava/lang/Object;
+
+.field public final synthetic d0:Lu07;
+
+.field public e0:I
 
 
 # direct methods
-.method public synthetic constructor <init>(J)V
+.method public constructor <init>(Lu07;Ld31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lt07;->d0:Lu07;
 
     .line 2
     .line 3
-    .line 4
-    iput-wide p1, p0, Lt07;->Q:J
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
     return-void
@@ -29,55 +30,55 @@
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    new-instance v0, Ls07;
+    iput-object p1, p0, Lt07;->c0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    new-instance v1, Lyw4;
+    iget p1, p0, Lt07;->e0:I
 
     .line 4
     .line 5
-    new-instance v2, Lcg7;
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
-    sget-object v3, Lwn1;->Q:Lwn1;
+    or-int/2addr p1, v0
 
     .line 8
+    iput p1, p0, Lt07;->e0:I
+
     .line 9
-    const/16 v4, 0x64
-
     .line 10
-    .line 11
-    invoke-direct {v2, v3, v3, v4}, Lcg7;-><init>(Ljava/util/List;Ljava/util/List;I)V
-
-    .line 12
-    .line 13
-    .line 14
     const/4 v3, 0x0
 
+    .line 11
+    const/4 v4, 0x0
+
+    .line 12
+    iget-object v0, p0, Lt07;->d0:Lu07;
+
+    .line 13
+    .line 14
+    const/4 v1, 0x0
+
     .line 15
-    invoke-direct {v1, v3, v2}, Lyw4;-><init>(Lt27;Lcg7;)V
+    const/4 v2, 0x0
 
     .line 16
-    .line 17
-    .line 18
-    const-string v2, ""
+    move-object v5, p0
 
+    .line 17
+    invoke-static/range {v0 .. v5}, Lu07;->b(Lu07;Lwl6;FFLr07;Ld31;)Ljava/lang/Object;
+
+    .line 18
     .line 19
     .line 20
-    iget-wide v3, p0, Lt07;->Q:J
+    move-result-object p0
 
     .line 21
-    .line 22
-    invoke-direct {v0, v2, v3, v4, v1}, Ls07;-><init>(Ljava/lang/String;JLyw4;)V
-
-    .line 23
-    .line 24
-    .line 25
-    return-object v0
+    return-object p0
 .end method

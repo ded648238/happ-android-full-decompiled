@@ -64,8 +64,8 @@
         <LinearLayout android:orientation="vertical" android:id="@id/ll_xray_tun_block" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
             <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_xray_tun_mtu" android:layout_width="match_parent" android:layout_height="1.0dp" />
             <su.happ.proxyutility.ui.foundation.component.HappInputField android:id="@id/if_xray_tun_mtu" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:description="@string/settings_mtu_info" app:hint="@string/mtu_default" app:title="@string/settings_xray_tun_mtu" />
+            <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_block_bindtodevice" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <su.happ.proxyutility.ui.foundation.component.HappToggleField android:id="@id/toggle_block_bindtodevice_enabled" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/title_pref_block_bindtodevice_enabled" />
         </LinearLayout>
     </LinearLayout>
-    <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_block_bindtodevice" android:layout_width="match_parent" android:layout_height="1.0dp" />
-    <su.happ.proxyutility.ui.foundation.component.HappToggleField android:id="@id/toggle_block_bindtodevice_enabled" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/title_pref_block_bindtodevice_enabled" />
 </LinearLayout>

@@ -1,14 +1,14 @@
 .class public final Landroidx/leanback/widget/c;
 .super Landroid/text/style/ReplacementSpan;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:I
+.field public final X:I
 
-.field public final R:I
+.field public final Y:I
 
-.field public final synthetic S:Landroidx/leanback/widget/StreamingTextView;
+.field public final synthetic Z:Landroidx/leanback/widget/StreamingTextView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/leanback/widget/c;->S:Landroidx/leanback/widget/StreamingTextView;
+    iput-object p1, p0, Landroidx/leanback/widget/c;->Z:Landroidx/leanback/widget/StreamingTextView;
 
     .line 2
     .line 3
@@ -25,11 +25,11 @@
     .line 4
     .line 5
     .line 6
-    iput p2, p0, Landroidx/leanback/widget/c;->Q:I
+    iput p2, p0, Landroidx/leanback/widget/c;->X:I
 
     .line 7
     .line 8
-    iput p3, p0, Landroidx/leanback/widget/c;->R:I
+    iput p3, p0, Landroidx/leanback/widget/c;->Y:I
 
     .line 9
     .line 10
@@ -77,11 +77,11 @@
     float-to-int v2, v2
 
     .line 18
-    iget-object v3, v0, Landroidx/leanback/widget/c;->S:Landroidx/leanback/widget/StreamingTextView;
+    iget-object v3, v0, Landroidx/leanback/widget/c;->Z:Landroidx/leanback/widget/StreamingTextView;
 
     .line 19
     .line 20
-    iget-object v4, v3, Landroidx/leanback/widget/StreamingTextView;->R:Landroid/graphics/Bitmap;
+    iget-object v4, v3, Landroidx/leanback/widget/StreamingTextView;->d0:Landroid/graphics/Bitmap;
 
     .line 21
     .line 22
@@ -127,22 +127,22 @@
 
     .line 41
     .line 42
-    const/4 v9, 0x1
+    move v9, v11
 
     .line 43
     goto :goto_0
 
     .line 44
     :cond_0
-    const/4 v9, 0x0
+    move v9, v10
 
     .line 45
     :goto_0
-    iget-object v12, v3, Landroidx/leanback/widget/StreamingTextView;->Q:Ljava/util/Random;
+    iget-object v12, v3, Landroidx/leanback/widget/StreamingTextView;->c0:Ljava/util/Random;
 
     .line 46
     .line 47
-    iget v13, v0, Landroidx/leanback/widget/c;->Q:I
+    iget v13, v0, Landroidx/leanback/widget/c;->X:I
 
     .line 48
     .line 49
@@ -167,14 +167,14 @@
 
     .line 58
     .line 59
-    iget v13, v0, Landroidx/leanback/widget/c;->R:I
+    iget v13, v0, Landroidx/leanback/widget/c;->Y:I
 
     .line 60
     .line 61
     add-int/2addr v13, v10
 
     .line 62
-    iget v14, v3, Landroidx/leanback/widget/StreamingTextView;->T:I
+    iget v14, v3, Landroidx/leanback/widget/StreamingTextView;->f0:I
 
     .line 63
     .line 64
@@ -232,7 +232,7 @@
     .line 84
     .line 85
     :goto_2
-    iget-object v13, v3, Landroidx/leanback/widget/StreamingTextView;->Q:Ljava/util/Random;
+    iget-object v13, v3, Landroidx/leanback/widget/StreamingTextView;->c0:Ljava/util/Random;
 
     .line 86
     .line 87
@@ -259,7 +259,7 @@
     .line 96
     .line 97
     .line 98
-    iget-object v13, v3, Landroidx/leanback/widget/StreamingTextView;->Q:Ljava/util/Random;
+    iget-object v13, v3, Landroidx/leanback/widget/StreamingTextView;->c0:Ljava/util/Random;
 
     .line 99
     .line 100
@@ -275,7 +275,7 @@
 
     .line 105
     .line 106
-    iget-object v13, v3, Landroidx/leanback/widget/StreamingTextView;->S:Landroid/graphics/Bitmap;
+    iget-object v13, v3, Landroidx/leanback/widget/StreamingTextView;->e0:Landroid/graphics/Bitmap;
 
     .line 107
     .line 108
@@ -303,7 +303,7 @@
 
     .line 119
     :cond_3
-    iget-object v13, v3, Landroidx/leanback/widget/StreamingTextView;->R:Landroid/graphics/Bitmap;
+    iget-object v13, v3, Landroidx/leanback/widget/StreamingTextView;->d0:Landroid/graphics/Bitmap;
 
     .line 120
     .line 121
@@ -354,11 +354,11 @@
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result p0
 
     .line 5
-    float-to-int p1, p1
+    float-to-int p0, p0
 
     .line 6
-    return p1
+    return p0
 .end method

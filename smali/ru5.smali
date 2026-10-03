@@ -1,24 +1,73 @@
-.class public final Lru5;
-.super Lyu5;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lru5;
+.super Ljava/lang/Object;
 
 
-# instance fields
-.field public o:Lcv5;
+# static fields
+.field public static RecyclerView:[I = null
 
-.field public p:Lcv5;
+.field public static RecyclerView_android_clipToPadding:I = 0x1
 
-.field public q:Lcv5;
+.field public static RecyclerView_android_descendantFocusability:I = 0x2
+
+.field public static RecyclerView_android_orientation:I = 0x0
+
+.field public static RecyclerView_fastScrollEnabled:I = 0x3
+
+.field public static RecyclerView_fastScrollHorizontalThumbDrawable:I = 0x4
+
+.field public static RecyclerView_fastScrollHorizontalTrackDrawable:I = 0x5
+
+.field public static RecyclerView_fastScrollVerticalThumbDrawable:I = 0x6
+
+.field public static RecyclerView_fastScrollVerticalTrackDrawable:I = 0x7
+
+.field public static RecyclerView_layoutManager:I = 0x8
+
+.field public static RecyclerView_reverseLayout:I = 0x9
+
+.field public static RecyclerView_spanCount:I = 0xa
+
+.field public static RecyclerView_stackFromEnd:I = 0xb
 
 
-# virtual methods
-.method public final o()Ljava/lang/String;
+# direct methods
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 1
-    const-string v0, "circle"
+    const/16 v0, 0xc
 
     .line 2
     .line 3
-    return-object v0
+    new-array v0, v0, [I
+
+    .line 4
+    .line 5
+    fill-array-data v0, :array_0
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lru5;->RecyclerView:[I
+
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :array_0
+    .array-data 4
+        0x10100c4
+        0x10100eb
+        0x10100f1
+        0x7f0402ac
+        0x7f0402ad
+        0x7f0402ae
+        0x7f0402af
+        0x7f0402b0
+        0x7f0403cc
+        0x7f04057f
+        0x7f0405f7
+        0x7f04060d
+    .end array-data
 .end method

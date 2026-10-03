@@ -1,6 +1,26 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ff7 extends RuntimeException {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ff7 extends d31 {
+    public String c0;
+    public String d0;
+    public mi2 e0;
+    public boolean f0;
+    public /* synthetic */ Object g0;
+    public final /* synthetic */ jf7 h0;
+    public int i0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ff7(jf7 jf7Var, d31 d31Var) {
+        super(d31Var);
+        this.h0 = jf7Var;
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.g0 = obj;
+        this.i0 |= Integer.MIN_VALUE;
+        return this.h0.b(null, null, null, this);
+    }
 }

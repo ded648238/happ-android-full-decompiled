@@ -1,35 +1,48 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum a64 {
-    TERMINATOR(new int[]{0, 0, 0}, 0),
-    NUMERIC(new int[]{10, 12, 14}, 1),
-    ALPHANUMERIC(new int[]{9, 11, 13}, 2),
-    STRUCTURED_APPEND(new int[]{0, 0, 0}, 3),
-    BYTE(new int[]{8, 16, 16}, 4),
-    ECI(new int[]{0, 0, 0}, 7),
-    KANJI(new int[]{8, 10, 12}, 8),
-    FNC1_FIRST_POSITION(new int[]{0, 0, 0}, 5),
-    FNC1_SECOND_POSITION(new int[]{0, 0, 0}, 9),
-    HANZI(new int[]{8, 10, 12}, 13);
+import java.util.Collections;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import okhttp3.HttpUrl;
 
-    public final int[] Q;
-    public final int R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class a64 {
+    public static final SortedMap c;
+    public static final a64 d;
+    public SortedMap a;
+    public String b;
 
-    a64(int[] iArr, int i) {
-        this.Q = iArr;
-        this.R = i;
+    static {
+        SortedMap unmodifiableSortedMap = Collections.unmodifiableSortedMap(new TreeMap());
+        c = unmodifiableSortedMap;
+        a64 a64Var = new a64();
+        d = a64Var;
+        a64Var.b = HttpUrl.FRAGMENT_ENCODE_SET;
+        a64Var.a = unmodifiableSortedMap;
+        new TreeMap().put('u', k98.g);
+        new TreeMap().put('u', k98.h);
     }
 
-    public final int a(pm7 pm7Var) {
-        char c;
-        int i = pm7Var.a;
-        if (i <= 9) {
-            c = 0;
-        } else {
-            c = i <= 26 ? (char) 1 : (char) 2;
+    public final i22 a(Character ch) {
+        return (i22) this.a.get(Character.valueOf(kp3.d0(ch.charValue())));
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        return this.Q[c];
+        if (obj instanceof a64) {
+            return this.b.equals(((a64) obj).b);
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return this.b.hashCode();
+    }
+
+    public final String toString() {
+        return this.b;
     }
 }

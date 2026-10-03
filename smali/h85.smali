@@ -1,50 +1,156 @@
-.class public abstract Lh85;
-.super Ljava/lang/Object;
+.class public final Lh85;
+.super Lp85;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static compat_button_inset_horizontal_material:I = 0x7f070066
+# instance fields
+.field public final c:F
 
-.field public static compat_button_inset_vertical_material:I = 0x7f070067
 
-.field public static compat_button_padding_horizontal_material:I = 0x7f070068
+# direct methods
+.method public constructor <init>(F)V
+    .locals 1
 
-.field public static compat_button_padding_vertical_material:I = 0x7f070069
+    .line 1
+    const/4 v0, 0x3
 
-.field public static compat_control_corner_material:I = 0x7f07006a
+    .line 2
+    invoke-direct {p0, v0}, Lp85;-><init>(I)V
 
-.field public static compat_notification_large_icon_max_height:I = 0x7f07006b
+    .line 3
+    .line 4
+    .line 5
+    iput p1, p0, Lh85;->c:F
 
-.field public static compat_notification_large_icon_max_width:I = 0x7f07006c
+    .line 6
+    .line 7
+    return-void
+.end method
 
-.field public static def_drawer_elevation:I = 0x7f07006d
 
-.field public static notification_action_icon_size:I = 0x7f070515
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
-.field public static notification_action_text_size:I = 0x7f070516
+    .line 1
+    const/4 v0, 0x1
 
-.field public static notification_big_circle_margin:I = 0x7f070517
+    .line 2
+    if-ne p0, p1, :cond_0
 
-.field public static notification_content_margin_start:I = 0x7f070518
+    .line 3
+    .line 4
+    return v0
 
-.field public static notification_large_icon_height:I = 0x7f070519
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lh85;
 
-.field public static notification_large_icon_width:I = 0x7f07051a
+    .line 6
+    .line 7
+    const/4 v2, 0x0
 
-.field public static notification_main_column_padding_top:I = 0x7f07051b
+    .line 8
+    if-nez v1, :cond_1
 
-.field public static notification_media_narrow_margin:I = 0x7f07051c
+    .line 9
+    .line 10
+    return v2
 
-.field public static notification_right_icon_size:I = 0x7f07051d
+    .line 11
+    :cond_1
+    check-cast p1, Lh85;
 
-.field public static notification_right_side_padding_top:I = 0x7f07051e
+    .line 12
+    .line 13
+    iget p0, p0, Lh85;->c:F
 
-.field public static notification_small_icon_background_padding:I = 0x7f07051f
+    .line 14
+    .line 15
+    iget p1, p1, Lh85;->c:F
 
-.field public static notification_small_icon_size_as_large:I = 0x7f070520
+    .line 16
+    .line 17
+    invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
 
-.field public static notification_subtext_size:I = 0x7f070521
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
 
-.field public static notification_top_pad:I = 0x7f070522
+    .line 21
+    if-eqz p0, :cond_2
 
-.field public static notification_top_pad_large_text:I = 0x7f070523
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lh85;->c:F
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "RelativeHorizontalTo(dx="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget p0, p0, Lh85;->c:F
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string p0, ")"
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+.end method

@@ -1,157 +1,169 @@
-.class public final Lio4;
+.class public abstract Lio4;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Landroid/os/Parcelable;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lio4;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final a:Li51;
 
+.field public static final b:Li51;
 
-# instance fields
-.field public final Q:Lez0;
+.field public static final c:Li51;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 8
 
     .line 1
-    new-instance v0, Lgo4;
+    new-instance v0, Li51;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const v1, 0x3e4ccccd    # 0.2f
 
     .line 4
-    invoke-direct {v0, v1}, Lgo4;-><init>(I)V
-
     .line 5
     .line 6
+    const/4 v2, 0x0
+
     .line 7
-    sput-object v0, Lio4;->CREATOR:Landroid/os/Parcelable$Creator;
+    const/high16 v3, 0x3f800000    # 1.0f
 
     .line 8
     .line 9
-    return-void
-.end method
+    invoke-direct {v0, v1, v2, v2, v3}, Li51;-><init>(FFFF)V
 
-.method public constructor <init>(Landroid/os/Parcel;)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p1}, Landroid/os/Parcel;->createByteArray()[B
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    if-eqz p1, :cond_0
-
-    .line 9
     .line 10
-    sget-object v0, Lez0;->b:Lez0;
-
     .line 11
     .line 12
-    invoke-static {p1}, Lyu7;->q([B)Lez0;
+    new-instance v0, Li51;
 
     .line 13
     .line 14
+    const v4, 0x3f4ccccd    # 0.8f
+
     .line 15
-    move-result-object p1
-
     .line 16
-    if-nez p1, :cond_1
-
     .line 17
-    .line 18
-    :cond_0
-    sget-object p1, Lez0;->b:Lez0;
+    const v5, 0x3e19999a    # 0.15f
 
+    .line 18
     .line 19
     .line 20
-    :cond_1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const v6, 0x3e99999a    # 0.3f
 
     .line 21
     .line 22
     .line 23
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0, v6, v2, v4, v5}, Li51;-><init>(FFFF)V
 
     .line 24
     .line 25
     .line 26
-    iput-object p1, p0, Lio4;->Q:Lez0;
+    sput-object v0, Lio4;->a:Li51;
 
     .line 27
     .line 28
-    return-void
-.end method
+    new-instance v0, Li51;
 
+    .line 29
+    .line 30
+    const v4, 0x3f333333    # 0.7f
 
-# virtual methods
-.method public final describeContents()I
-    .locals 1
+    .line 31
+    .line 32
+    .line 33
+    const v5, 0x3dcccccd    # 0.1f
 
-    .line 1
-    const/4 v0, 0x0
+    .line 34
+    .line 35
+    .line 36
+    const v7, 0x3d4ccccd    # 0.05f
 
-    .line 2
-    return v0
-.end method
+    .line 37
+    .line 38
+    .line 39
+    invoke-direct {v0, v7, v4, v5, v3}, Li51;-><init>(FFFF)V
 
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 1
+    .line 40
+    .line 41
+    .line 42
+    sput-object v0, Lio4;->b:Li51;
 
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 43
+    .line 44
+    new-instance v0, Li51;
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object p2, p0, Lio4;->Q:Lez0;
+    .line 45
+    .line 46
+    const v4, 0x3ecccccd    # 0.4f
 
-    .line 5
-    .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 47
+    .line 48
+    .line 49
+    invoke-direct {v0, v4, v2, v1, v3}, Li51;-><init>(FFFF)V
 
-    .line 7
-    .line 8
-    .line 9
-    sget-object v0, Lez0;->b:Lez0;
+    .line 50
+    .line 51
+    .line 52
+    new-instance v0, Li51;
 
-    .line 10
-    .line 11
-    invoke-static {p2}, Lyu7;->O(Lez0;)[B
+    .line 53
+    .line 54
+    invoke-direct {v0, v4, v2, v3, v3}, Li51;-><init>(FFFF)V
 
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p2
+    .line 55
+    .line 56
+    .line 57
+    new-instance v0, Li51;
 
-    .line 15
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByteArray([B)V
+    .line 58
+    .line 59
+    invoke-direct {v0, v2, v2, v1, v3}, Li51;-><init>(FFFF)V
 
-    .line 16
-    .line 17
-    .line 18
+    .line 60
+    .line 61
+    .line 62
+    new-instance v0, Li51;
+
+    .line 63
+    .line 64
+    invoke-direct {v0, v2, v2, v3, v3}, Li51;-><init>(FFFF)V
+
+    .line 65
+    .line 66
+    .line 67
+    new-instance v0, Li51;
+
+    .line 68
+    .line 69
+    invoke-direct {v0, v1, v2, v2, v3}, Li51;-><init>(FFFF)V
+
+    .line 70
+    .line 71
+    .line 72
+    sput-object v0, Lio4;->c:Li51;
+
+    .line 73
+    .line 74
+    new-instance v0, Li51;
+
+    .line 75
+    .line 76
+    invoke-direct {v0, v6, v2, v3, v3}, Li51;-><init>(FFFF)V
+
+    .line 77
+    .line 78
+    .line 79
+    new-instance v0, Li51;
+
+    .line 80
+    .line 81
+    invoke-direct {v0, v2, v2, v2, v3}, Li51;-><init>(FFFF)V
+
+    .line 82
+    .line 83
+    .line 84
     return-void
 .end method

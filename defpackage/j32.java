@@ -1,135 +1,98 @@
 package defpackage;
 
 import android.content.Context;
-import android.content.pm.PackageManager;
-import android.graphics.Typeface;
-import android.os.Build;
-import android.os.Trace;
-import java.util.List;
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import android.content.res.Resources;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.regex.Pattern;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class j32 {
-    public static final xr3 a = new xr3(16);
-    public static final ThreadPoolExecutor b;
-    public static final Object c;
-    public static final la6 d;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class j32 {
+    public final Context a;
+    public final int b = qs5.ic_glob;
+    public final b16 c = new b16("[🇦-🇿]{2}");
 
-    static {
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(0, 1, 10000L, TimeUnit.MILLISECONDS, new LinkedBlockingDeque(), new bh2(1));
-        threadPoolExecutor.allowCoreThreadTimeOut(true);
-        b = threadPoolExecutor;
-        c = new Object();
-        d = new la6(0);
+    public j32(Context context) {
+        this.a = context;
     }
 
-    public static String a(int i, List list) {
-        StringBuilder sb = new StringBuilder();
-        for (int i2 = 0; i2 < list.size(); i2++) {
-            sb.append(((e32) list.get(i2)).e);
-            sb.append("-");
-            sb.append(i);
-            if (i2 < list.size() - 1) {
-                sb.append(";");
+    /* JADX WARN: Removed duplicated region for block: B:24:0x00a5  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final w55 a(String str) {
+        String concat;
+        String str2;
+        str.getClass();
+        String obj = ea7.y1(str).toString();
+        int length = obj.length();
+        int i = this.b;
+        if (length >= 4) {
+            if8 if8Var = if8.a;
+            ArrayList arrayList = new ArrayList();
+            Iterator it = ea7.A1(obj, 4, 1, false).iterator();
+            while (it.hasNext()) {
+                String str3 = (String) it.next();
+                Pattern compile = Pattern.compile("(?:[🌀-🗿]|[🤀-🧿]|[😀-🙏]|[🚀-\u1f6ff]|[☀-⛿]️?|[✀-➿]️?|Ⓜ️?|[🇦-🇿]{1,2}|[🅰🅱🅾🅿🆎🆑-🆚]️?|[#*0-9]️?⃣|[↔-↙↩-↪]️?|[⬅-⬇⬛⬜⭐⭕]️?|[⤴⤵]️?|[〰〽]️?|[㊗㊙]️?|[🈁🈂🈚🈯🈲-🈺🉐🉑]️?|[‼⁉]️?|[▪▫▶◀◻-◾]️?|[©®]️?|[™ℹ]️?|🀄️?|🃏️?|[⌚⌛⌨⏏⏩-⏳⏸-⏺]️?)+");
+                compile.getClass();
+                str3.getClass();
+                if (compile.matcher(str3).matches()) {
+                    arrayList.add(str3);
+                }
             }
-        }
-        return sb.toString();
-    }
-
-    public static i32 b(String str, Context context, List list, int i) {
-        int i2;
-        Typeface typefaceC;
-        xr3 xr3Var = a;
-        Trace.beginSection(x67.f("getFontSync"));
-        try {
-            Typeface typeface = (Typeface) xr3Var.a(str);
-            if (typeface != null) {
-                i32 i32Var = new i32(typeface);
-                Trace.endSection();
-                return i32Var;
-            }
-            try {
-                gz1 gz1VarA = d32.a(context, list);
-                List list2 = gz1VarA.b;
-                int i3 = gz1VarA.a;
-                if (i3 == 0) {
-                    w32[] w32VarArr = (w32[]) list2.get(0);
-                    if (w32VarArr == null || w32VarArr.length == 0) {
-                        i2 = 1;
-                    } else {
-                        int length = w32VarArr.length;
-                        int i4 = 0;
-                        while (true) {
-                            if (i4 >= length) {
-                                i2 = 0;
-                                break;
-                            }
-                            int i5 = w32VarArr[i4].e;
-                            if (i5 != 0) {
-                                if (i5 >= 0) {
-                                    i2 = i5;
+            String str4 = (String) tt0.c1(arrayList);
+            if (str4 != null && str4.length() == 4 && this.c.c(str4)) {
+                b16 b16Var = z97.a;
+                if (str4.length() == 4) {
+                    int codePointAt = Character.codePointAt(str4, 0) - 127397;
+                    int codePointAt2 = Character.codePointAt(str4, 2) - 127397;
+                    if (Character.isValidCodePoint(codePointAt) && Character.isValidCodePoint(codePointAt2)) {
+                        char[] chars = Character.toChars(codePointAt);
+                        chars.getClass();
+                        String str5 = new String(chars);
+                        char[] chars2 = Character.toChars(codePointAt2);
+                        chars2.getClass();
+                        concat = str5.concat(new String(chars2));
+                        if (concat != null) {
+                            String[] iSOCountries = Locale.getISOCountries();
+                            iSOCountries.getClass();
+                            int length2 = iSOCountries.length;
+                            int i2 = 0;
+                            while (true) {
+                                if (i2 >= length2) {
+                                    str2 = null;
                                     break;
                                 }
-                                i2 = -3;
-                                break;
+                                str2 = iSOCountries[i2];
+                                if (m93.h(str2, concat)) {
+                                    break;
+                                }
+                                i2++;
                             }
-                            i4++;
+                            if (m93.h(str2, concat) || concat.equals("EU")) {
+                                Context context = this.a;
+                                Resources resources = context.getResources();
+                                String lowerCase = concat.toLowerCase(Locale.ROOT);
+                                lowerCase.getClass();
+                                int identifier = resources.getIdentifier("ic_".concat(lowerCase), "drawable", context.getPackageName());
+                                Integer valueOf = identifier != 0 ? Integer.valueOf(identifier) : null;
+                                int intValue = valueOf != null ? valueOf.intValue() : i;
+                                if (intValue != i) {
+                                    obj = la7.E0(obj, str4, HttpUrl.FRAGMENT_ENCODE_SET, false);
+                                }
+                                i = intValue;
+                            }
                         }
                     }
-                } else {
-                    if (i3 != 1) {
-                        i2 = -3;
-                        break;
-                    }
-                    i2 = -2;
                 }
-                if (i2 != 0) {
-                    i32 i32Var2 = new i32(i2);
-                    Trace.endSection();
-                    return i32Var2;
+                concat = null;
+                if (concat != null) {
                 }
-                if (list2.size() <= 1 || Build.VERSION.SDK_INT < 29) {
-                    w32[] w32VarArr2 = (w32[]) list2.get(0);
-                    l57 l57Var = md7.a;
-                    Trace.beginSection(x67.f("TypefaceCompat.createFromFontInfo"));
-                    try {
-                        typefaceC = md7.a.c(context, w32VarArr2, i);
-                        Trace.endSection();
-                    } catch (Throwable th) {
-                        Trace.endSection();
-                        throw th;
-                    }
-                } else {
-                    l57 l57Var2 = md7.a;
-                    Trace.beginSection(x67.f("TypefaceCompat.createFromFontInfoWithFallback"));
-                    try {
-                        typefaceC = md7.a.d(context, list2, i);
-                        Trace.endSection();
-                    } catch (Throwable th2) {
-                        Trace.endSection();
-                        throw th2;
-                    }
-                }
-                if (typefaceC == null) {
-                    i32 i32Var3 = new i32(-3);
-                    Trace.endSection();
-                    return i32Var3;
-                }
-                xr3Var.c(str, typefaceC);
-                i32 i32Var4 = new i32(typefaceC);
-                Trace.endSection();
-                return i32Var4;
-            } catch (PackageManager.NameNotFoundException unused) {
-                i32 i32Var5 = new i32(-1);
-                Trace.endSection();
-                return i32Var5;
             }
-        } catch (Throwable th3) {
-            Trace.endSection();
-            throw th3;
         }
+        return new w55(obj, Integer.valueOf(i));
     }
 }

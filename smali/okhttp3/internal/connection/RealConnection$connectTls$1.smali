@@ -1,9 +1,9 @@
 .class final Lokhttp3/internal/connection/RealConnection$connectTls$1;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lou3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg72;
+.implements Lji2;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe3;",
-        "Lg72;"
+        "Lou3;",
+        "Lji2;"
     }
 .end annotation
 
@@ -71,7 +71,7 @@
     const/4 p1, 0x0
 
     .line 8
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
+    invoke-direct {p0, p1}, Lou3;-><init>(I)V
 
     .line 9
     .line 10
@@ -82,18 +82,18 @@
 
 # virtual methods
 .method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 31
     invoke-virtual {p0}, Lokhttp3/internal/connection/RealConnection$connectTls$1;->invoke()Ljava/util/List;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final invoke()Ljava/util/List;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -133,33 +133,33 @@
     move-result-object v1
 
     .line 16
-    iget-object v2, p0, Lokhttp3/internal/connection/RealConnection$connectTls$1;->$address:Lokhttp3/Address;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealConnection$connectTls$1;->$address:Lokhttp3/Address;
 
     .line 17
     .line 18
-    invoke-virtual {v2}, Lokhttp3/Address;->url()Lokhttp3/HttpUrl;
+    invoke-virtual {p0}, Lokhttp3/Address;->url()Lokhttp3/HttpUrl;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v2
+    move-result-object p0
 
     .line 22
-    invoke-virtual {v2}, Lokhttp3/HttpUrl;->host()Ljava/lang/String;
+    invoke-virtual {p0}, Lokhttp3/HttpUrl;->host()Ljava/lang/String;
 
     .line 23
     .line 24
     .line 25
-    move-result-object v2
+    move-result-object p0
 
     .line 26
-    invoke-virtual {v0, v1, v2}, Lokhttp3/internal/tls/CertificateChainCleaner;->clean(Ljava/util/List;Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {v0, v1, p0}, Lokhttp3/internal/tls/CertificateChainCleaner;->clean(Ljava/util/List;Ljava/lang/String;)Ljava/util/List;
 
     .line 27
     .line 28
     .line 29
-    move-result-object v0
+    move-result-object p0
 
     .line 30
-    return-object v0
+    return-object p0
 .end method

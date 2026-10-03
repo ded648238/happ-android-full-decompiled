@@ -1,6 +1,6 @@
 .class final Lokhttp3/internal/http2/PushObserver$Companion$PushObserverCancel;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/http2/PushObserver;
@@ -37,14 +37,14 @@
         "last",
         "onHeaders",
         "(ILjava/util/List;Z)Z",
-        "Ls50;",
+        "Lf80;",
         "source",
         "byteCount",
         "onData",
-        "(ILs50;IZ)Z",
+        "(ILf80;IZ)Z",
         "Lokhttp3/internal/http2/ErrorCode;",
         "errorCode",
-        "Lbh7;",
+        "Lr98;",
         "onReset",
         "(ILokhttp3/internal/http2/ErrorCode;)V",
         "okhttp"
@@ -74,7 +74,7 @@
 
 
 # virtual methods
-.method public onData(ILs50;IZ)Z
+.method public onData(ILf80;IZ)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -88,18 +88,18 @@
     .line 2
     .line 3
     .line 4
-    int-to-long p3, p3
+    int-to-long p0, p3
 
     .line 5
-    invoke-interface {p2, p3, p4}, Ls50;->skip(J)V
+    invoke-interface {p2, p0, p1}, Lf80;->skip(J)V
 
     .line 6
     .line 7
     .line 8
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 9
-    return p1
+    return p0
 .end method
 
 .method public onHeaders(ILjava/util/List;Z)Z
@@ -119,10 +119,10 @@
     .line 2
     .line 3
     .line 4
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 5
-    return p1
+    return p0
 .end method
 
 .method public onRequest(ILjava/util/List;)Z
@@ -142,10 +142,10 @@
     .line 2
     .line 3
     .line 4
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 5
-    return p1
+    return p0
 .end method
 
 .method public onReset(ILokhttp3/internal/http2/ErrorCode;)V

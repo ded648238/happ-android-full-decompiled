@@ -1,32 +1,47 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class t32 {
-    public final int a;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
-    public final boolean equals(Object obj) {
-        if (obj instanceof t32) {
-            return this.a == ((t32) obj).a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class t32 {
+    public static final LinkedHashMap a;
+    public static final Map b;
+
+    static {
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        a = linkedHashMap;
+        b(l47.y, a("java.util.ArrayList", "java.util.LinkedList"));
+        b(l47.z, a("java.util.HashSet", "java.util.TreeSet", "java.util.LinkedHashSet"));
+        b(l47.A, a("java.util.HashMap", "java.util.TreeMap", "java.util.LinkedHashMap", "java.util.concurrent.ConcurrentHashMap", "java.util.concurrent.ConcurrentSkipListMap"));
+        jf2 jf2Var = new jf2("java.util.function.Function");
+        b(new nq0(jf2Var.b(), jf2Var.a.g()), a("java.util.function.UnaryOperator"));
+        jf2 jf2Var2 = new jf2("java.util.function.BiFunction");
+        b(new nq0(jf2Var2.b(), jf2Var2.a.g()), a("java.util.function.BinaryOperator"));
+        ArrayList arrayList = new ArrayList(linkedHashMap.size());
+        for (Map.Entry entry : linkedHashMap.entrySet()) {
+            arrayList.add(new w55(((nq0) entry.getKey()).a(), ((nq0) entry.getValue()).a()));
         }
-        return false;
+        b = uf4.h0(arrayList);
     }
 
-    public final int hashCode() {
-        return this.a;
+    public static ArrayList a(String... strArr) {
+        ArrayList arrayList = new ArrayList(strArr.length);
+        for (String str : strArr) {
+            jf2 jf2Var = new jf2(str);
+            arrayList.add(new nq0(jf2Var.b(), jf2Var.a.g()));
+        }
+        return arrayList;
     }
 
-    public final String toString() {
-        int i = this.a;
-        if (i == 0) {
-            return "None";
+    public static void b(nq0 nq0Var, ArrayList arrayList) {
+        Iterator it = arrayList.iterator();
+        while (it.hasNext()) {
+            Object next = it.next();
+            a.put(next, nq0Var);
         }
-        if (i == 1) {
-            return "Weight";
-        }
-        if (i == 2) {
-            return "Style";
-        }
-        return i == 65535 ? "All" : "Invalid";
     }
 }

@@ -1,6 +1,6 @@
 .class abstract Lorg/conscrypt/OpenSSLSignature$RSAPSSPadding;
 .super Lorg/conscrypt/OpenSSLSignature;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -92,11 +92,11 @@
     .line 8
     .line 9
     .line 10
-    iget v0, p0, Lorg/conscrypt/OpenSSLSignature$RSAPSSPadding;->saltSizeBytes:I
+    iget p0, p0, Lorg/conscrypt/OpenSSLSignature$RSAPSSPadding;->saltSizeBytes:I
 
     .line 11
     .line 12
-    invoke-static {p1, p2, v0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_CTX_set_rsa_pss_saltlen(JI)V
+    invoke-static {p1, p2, p0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_CTX_set_rsa_pss_saltlen(JI)V
 
     .line 13
     .line 14
@@ -160,7 +160,7 @@
     .line 26
     invoke-virtual {v0, v1}, Ljava/security/AlgorithmParameters;->init(Ljava/security/spec/AlgorithmParameterSpec;)V
     :try_end_0
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/security/spec/InvalidParameterSpecException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 27
@@ -173,28 +173,23 @@
     move-exception v0
 
     .line 31
-    goto :goto_0
+    move-object p0, v0
 
     .line 32
-    :catch_1
-    move-exception v0
+    new-instance v0, Ljava/security/ProviderException;
 
     .line 33
-    :goto_0
-    new-instance v1, Ljava/security/ProviderException;
-
     .line 34
+    const-string v1, "Failed to create PSS AlgorithmParameters"
+
     .line 35
-    const-string v2, "Failed to create PSS AlgorithmParameters"
-
     .line 36
-    .line 37
-    invoke-direct {v1, v2, v0}, Ljava/security/ProviderException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {v0, v1, p0}, Ljava/security/ProviderException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 37
     .line 38
     .line 39
-    .line 40
-    throw v1
+    throw v0
 .end method
 
 .method public final engineSetParameter(Ljava/security/spec/AlgorithmParameterSpec;)V
@@ -250,7 +245,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {v3, v0}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 24
     .line 25
@@ -274,7 +269,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 36
     .line 37
@@ -306,32 +301,32 @@
 
     .line 50
     :cond_0
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 51
     .line 52
-    const-string v1, "Unsupported MGF algorithm: "
+    const-string p1, "Unsupported MGF algorithm: "
 
     .line 53
     .line 54
-    const-string v2, ". Only MGF1 supported"
+    const-string v1, ". Only MGF1 supported"
 
     .line 55
     .line 56
-    invoke-static {v1, v0, v2}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0, v1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 57
     .line 58
     .line 59
-    move-result-object v0
+    move-result-object p1
 
     .line 60
-    invoke-direct {p1, v0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 61
     .line 62
     .line 63
-    throw p1
+    throw p0
 
     .line 64
     :cond_1
@@ -464,19 +459,19 @@
 
     .line 125
     :cond_3
-    new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 126
     .line 127
-    const-string v1, "Unsupported trailer field: "
+    const-string v0, "Unsupported trailer field: "
 
     .line 128
     .line 129
-    const-string v2, ". Only 1 supported"
+    const-string v1, ". Only 1 supported"
 
     .line 130
     .line 131
-    invoke-static {v1, p1, v2}, Lea0;->p(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     .line 132
     .line 133
@@ -484,69 +479,69 @@
     move-result-object p1
 
     .line 135
-    invoke-direct {v0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 136
     .line 137
     .line 138
-    throw v0
+    throw p0
 
     .line 139
     :cond_4
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 140
     .line 141
-    const-string v1, "Salt length must be non-negative: "
+    const-string p1, "Salt length must be non-negative: "
 
     .line 142
     .line 143
-    invoke-static {v0, v1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 144
     .line 145
     .line 146
-    move-result-object v0
+    move-result-object p1
 
     .line 147
-    invoke-direct {p1, v0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 148
     .line 149
     .line 150
-    throw p1
+    throw p0
 
     .line 151
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 152
-    new-instance v0, Ljava/security/ProviderException;
+    new-instance p1, Ljava/security/ProviderException;
 
     .line 153
     .line 154
-    const-string v2, "Failed to obtain EVP_MD for "
+    const-string v0, "Failed to obtain EVP_MD for "
 
     .line 155
     .line 156
-    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 157
     .line 158
     .line 159
-    move-result-object v1
+    move-result-object v0
 
     .line 160
-    invoke-direct {v0, v1, p1}, Ljava/security/ProviderException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, v0, p0}, Ljava/security/ProviderException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 161
     .line 162
     .line 163
-    throw v0
+    throw p1
 
     .line 164
     :cond_5
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 165
     .line 166
@@ -555,62 +550,62 @@
     .line 167
     .line 168
     .line 169
-    move-result-object v0
+    move-result-object p1
 
     .line 170
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 171
     .line 172
-    const-string v2, "Unsupported MGF1 digest algorithm: "
+    const-string v1, "Unsupported MGF1 digest algorithm: "
 
     .line 173
     .line 174
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 175
     .line 176
     .line 177
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 178
     .line 179
     .line 180
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 181
     .line 182
     .line 183
-    move-result-object v0
+    move-result-object p1
 
     .line 184
-    invoke-direct {p1, v0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 185
     .line 186
     .line 187
-    throw p1
+    throw p0
 
     .line 188
     :cond_6
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 189
     .line 190
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance p1, Ljava/lang/StringBuilder;
 
     .line 191
     .line 192
-    const-string v4, "Unsupported MGF parameters: "
+    const-string v3, "Unsupported MGF parameters: "
 
     .line 193
     .line 194
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 195
     .line 196
     .line 197
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 198
     .line 199
@@ -627,56 +622,56 @@
     move-result-object v0
 
     .line 206
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 207
     .line 208
     .line 209
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 210
     .line 211
     .line 212
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 213
     .line 214
     .line 215
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 216
     .line 217
     .line 218
-    move-result-object v0
+    move-result-object p1
 
     .line 219
-    invoke-direct {p1, v0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 220
     .line 221
     .line 222
-    throw p1
+    throw p0
 
     .line 223
     :cond_7
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 224
     .line 225
-    const-string v0, "Changing content digest algorithm not supported"
+    const-string p1, "Changing content digest algorithm not supported"
 
     .line 226
     .line 227
-    invoke-direct {p1, v0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 228
     .line 229
     .line 230
-    throw p1
+    throw p0
 
     .line 231
     :cond_8
-    new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 232
     .line 233
@@ -688,25 +683,25 @@
     move-result-object p1
 
     .line 237
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 238
     .line 239
-    const-string v2, "Unsupported content digest algorithm: "
+    const-string v1, "Unsupported content digest algorithm: "
 
     .line 240
     .line 241
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 242
     .line 243
     .line 244
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 245
     .line 246
     .line 247
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 248
     .line 249
@@ -714,33 +709,33 @@
     move-result-object p1
 
     .line 251
-    invoke-direct {v0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 252
     .line 253
     .line 254
-    throw v0
+    throw p0
 
     .line 255
     :cond_9
-    new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 256
     .line 257
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 258
     .line 259
-    const-string v4, "Unsupported parameter: "
+    const-string v3, "Unsupported parameter: "
 
     .line 260
     .line 261
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 262
     .line 263
     .line 264
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 265
     .line 266
@@ -757,22 +752,22 @@
     move-result-object p1
 
     .line 273
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 274
     .line 275
     .line 276
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 277
     .line 278
     .line 279
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 280
     .line 281
     .line 282
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 283
     .line 284
@@ -780,10 +775,10 @@
     move-result-object p1
 
     .line 286
-    invoke-direct {v0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 287
     .line 288
     .line 289
-    throw v0
+    throw p0
 .end method

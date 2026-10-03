@@ -1,15 +1,23 @@
 .class public final Lta3;
-.super Lra3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:S
+.field public a:I
+
+.field public b:I
+
+.field public c:F
+
+.field public d:Z
+
+.field public final e:I
 
 
 # direct methods
-.method public constructor <init>(S)V
-    .locals 0
+.method public constructor <init>(I)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -17,94 +25,35 @@
     .line 2
     .line 3
     .line 4
-    iput-short p1, p0, Lta3;->a:S
+    const/4 v0, -0x1
 
     .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-short v0, p0, Lta3;->a:S
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Lta3;
+    iput v0, p0, Lta3;->a:I
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    const/4 v0, 0x0
 
     .line 8
-    if-nez v1, :cond_1
+    iput v0, p0, Lta3;->b:I
 
     .line 9
     .line 10
-    return v2
+    const/high16 v1, 0x42480000    # 50.0f
 
     .line 11
-    :cond_1
-    check-cast p1, Lta3;
-
     .line 12
+    iput v1, p0, Lta3;->c:F
+
     .line 13
-    iget-short v1, p0, Lta3;->a:S
-
     .line 14
+    iput-boolean v0, p0, Lta3;->d:Z
+
     .line 15
-    iget-short p1, p1, Lta3;->a:S
-
     .line 16
+    iput p1, p0, Lta3;->e:I
+
     .line 17
-    if-eq v1, p1, :cond_2
-
     .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-short v0, p0, Lta3;->a:S
-
-    .line 2
-    .line 3
-    return v0
+    return-void
 .end method

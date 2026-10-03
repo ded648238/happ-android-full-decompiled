@@ -1,46 +1,34 @@
 package defpackage;
 
-import com.google.gson.internal.bind.JsonElementTypeAdapter;
-import java.io.IOException;
+import android.util.Size;
+import android.view.Surface;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class d03 {
-    public int a() {
-        throw new UnsupportedOperationException(getClass().getSimpleName());
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class d03 extends vd1 {
+    public final /* synthetic */ int n = 1;
+    public final Object o;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d03(al7 al7Var, Size size) {
+        super(34, size);
+        this.o = al7Var;
     }
 
-    public final gz2 b() {
-        if (this instanceof gz2) {
-            return (gz2) this;
+    @Override // defpackage.vd1
+    public final y34 f() {
+        int i = this.n;
+        Object obj = this.o;
+        switch (i) {
+            case 0:
+                return l93.C((Surface) obj);
+            default:
+                return ((al7) obj).f;
         }
-        i62.p(this, "Not a JSON Array: ");
-        return null;
     }
 
-    public final b23 c() {
-        if (this instanceof b23) {
-            return (b23) this;
-        }
-        i62.p(this, "Not a JSON Object: ");
-        return null;
-    }
-
-    public String d() {
-        throw new UnsupportedOperationException(getClass().getSimpleName());
-    }
-
-    public final String toString() {
-        try {
-            StringBuilder sb = new StringBuilder();
-            h43 h43Var = new h43(new gl6(sb));
-            h43Var.X = 1;
-            JsonElementTypeAdapter.a.getClass();
-            JsonElementTypeAdapter.f(this, h43Var);
-            return sb.toString();
-        } catch (IOException e) {
-            fn.j(e);
-            return null;
-        }
+    public d03(Surface surface, Size size, int i) {
+        super(i, size);
+        this.o = surface;
     }
 }

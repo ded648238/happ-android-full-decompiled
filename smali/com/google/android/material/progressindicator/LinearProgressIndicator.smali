@@ -1,6 +1,6 @@
 .class public Lcom/google/android/material/progressindicator/LinearProgressIndicator;
 .super Lcom/google/android/material/progressindicator/a;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final h0:I
+.field public static final s0:I
 
 
 # direct methods
@@ -20,11 +20,11 @@
     .locals 1
 
     .line 1
-    sget v0, Lna5;->Widget_MaterialComponents_LinearProgressIndicator:I
+    sget v0, Lnu5;->Widget_MaterialComponents_LinearProgressIndicator:I
 
     .line 2
     .line 3
-    sput v0, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->h0:I
+    sput v0, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->s0:I
 
     .line 4
     .line 5
@@ -35,7 +35,7 @@
     .locals 1
 
     .line 79
-    sget v0, Lv75;->linearProgressIndicatorStyle:I
+    sget v0, Lur5;->linearProgressIndicatorStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/progressindicator/LinearProgressIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -46,7 +46,7 @@
     .locals 2
 
     .line 1
-    sget v0, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->h0:I
+    sget v0, Lcom/google/android/material/progressindicator/LinearProgressIndicator;->s0:I
 
     .line 2
     .line 3
@@ -55,11 +55,11 @@
     .line 4
     .line 5
     .line 6
-    new-instance p1, Lal3;
+    new-instance p1, Ld24;
 
     .line 7
     .line 8
-    iget-object p2, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object p2, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 9
     .line 10
@@ -67,7 +67,7 @@
 
     .line 11
     .line 12
-    invoke-direct {p1, p2}, Lmk1;-><init>(Luy;)V
+    invoke-direct {p1, p2}, Lqs1;-><init>(Ly00;)V
 
     .line 13
     .line 14
@@ -76,7 +76,7 @@
 
     .line 16
     .line 17
-    iput p3, p1, Lal3;->f:F
+    iput p3, p1, Ld24;->f:F
 
     .line 18
     .line 19
@@ -84,20 +84,20 @@
 
     .line 20
     .line 21
-    new-instance v0, Llk1;
+    new-instance v0, Lps1;
 
     .line 22
     .line 23
-    invoke-direct {v0}, Llk1;-><init>()V
+    invoke-direct {v0}, Lps1;-><init>()V
 
     .line 24
     .line 25
     .line 26
-    new-instance v1, Llk1;
+    new-instance v1, Lps1;
 
     .line 27
     .line 28
-    invoke-direct {v1}, Llk1;-><init>()V
+    invoke-direct {v1}, Lps1;-><init>()V
 
     .line 29
     .line 30
@@ -107,7 +107,7 @@
     .line 32
     .line 33
     .line 34
-    iput-object p3, p1, Lal3;->o:Landroid/util/Pair;
+    iput-object p3, p1, Ld24;->o:Landroid/util/Pair;
 
     .line 35
     .line 36
@@ -119,11 +119,11 @@
     move-result-object p3
 
     .line 40
-    new-instance v0, Lbp2;
+    new-instance v0, Lt33;
 
     .line 41
     .line 42
-    iget v1, p2, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->o:I
+    iget v1, p2, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->q:I
 
     .line 43
     .line 44
@@ -131,11 +131,11 @@
 
     .line 45
     .line 46
-    new-instance v1, Lcl3;
+    new-instance v1, Lg24;
 
     .line 47
     .line 48
-    invoke-direct {v1, p2}, Lcl3;-><init>(Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;)V
+    invoke-direct {v1, p2}, Lg24;-><init>(Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;)V
 
     .line 49
     .line 50
@@ -144,17 +144,17 @@
 
     .line 52
     :cond_0
-    new-instance v1, Lel3;
+    new-instance v1, Li24;
 
     .line 53
     .line 54
-    invoke-direct {v1, p3, p2}, Lel3;-><init>(Landroid/content/Context;Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;)V
+    invoke-direct {v1, p3, p2}, Li24;-><init>(Landroid/content/Context;Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;)V
 
     .line 55
     .line 56
     .line 57
     :goto_0
-    invoke-direct {v0, p3, p2, p1, v1}, Lbp2;-><init>(Landroid/content/Context;Luy;Lmk1;Lk3;)V
+    invoke-direct {v0, p3, p2, p1, v1}, Lt33;-><init>(Landroid/content/Context;Ly00;Lqs1;Lq3;)V
 
     .line 58
     .line 59
@@ -172,11 +172,11 @@
     move-result-object p3
 
     .line 67
-    new-instance v0, Lcb1;
+    new-instance v0, Lhj1;
 
     .line 68
     .line 69
-    invoke-direct {v0, p3, p2, p1}, Lcb1;-><init>(Landroid/content/Context;Luy;Lmk1;)V
+    invoke-direct {v0, p3, p2, p1}, Lhj1;-><init>(Landroid/content/Context;Ly00;Lqs1;)V
 
     .line 70
     .line 71
@@ -189,7 +189,7 @@
     const/4 p1, 0x1
 
     .line 76
-    iput-boolean p1, p0, Lcom/google/android/material/progressindicator/a;->b0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/progressindicator/a;->l0:Z
 
     .line 77
     .line 78
@@ -198,27 +198,27 @@
 
 
 # virtual methods
-.method public final a(Landroid/content/Context;Landroid/util/AttributeSet;)Luy;
-    .locals 1
+.method public final a(Landroid/content/Context;Landroid/util/AttributeSet;)Ly00;
+    .locals 0
 
     .line 1
-    new-instance v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
+    new-instance p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
 .method public final c(IZ)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
@@ -230,7 +230,7 @@
 
     .line 6
     .line 7
-    iget v0, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->o:I
+    iget v0, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->q:I
 
     .line 8
     .line 9
@@ -263,98 +263,98 @@
 .end method
 
 .method public getIndeterminateAnimationType()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object p0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
-    check-cast v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
+    check-cast p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
 
     .line 4
     .line 5
-    iget v0, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->o:I
+    iget p0, p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->q:I
 
     .line 6
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public getIndicatorDirection()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object p0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
-    check-cast v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
+    check-cast p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
 
     .line 4
     .line 5
-    iget v0, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->p:I
+    iget p0, p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->r:I
 
     .line 6
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public getTrackInnerCornerRadius()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object p0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
-    check-cast v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
+    check-cast p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
 
     .line 4
     .line 5
-    iget v0, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->t:I
+    iget p0, p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->v:I
 
     .line 6
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public getTrackStopIndicatorPadding()Ljava/lang/Integer;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object p0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
-    check-cast v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
+    check-cast p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
 
     .line 4
     .line 5
-    iget-object v0, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->s:Ljava/lang/Integer;
+    iget-object p0, p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->u:Ljava/lang/Integer;
 
     .line 6
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getTrackStopIndicatorSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object p0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
-    check-cast v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
+    check-cast p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
 
     .line 4
     .line 5
-    iget v0, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->r:I
+    iget p0, p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->t:I
 
     .line 6
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final onLayout(ZIIII)V
@@ -366,7 +366,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object p1, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 5
     .line 6
@@ -384,7 +384,7 @@
 
     .line 11
     .line 12
-    iget p3, p3, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->p:I
+    iget p3, p3, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->r:I
 
     .line 13
     .line 14
@@ -414,7 +414,7 @@
 
     .line 25
     .line 26
-    iget p3, p3, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->p:I
+    iget p3, p3, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->r:I
 
     .line 27
     .line 28
@@ -431,10 +431,10 @@
     .line 32
     .line 33
     .line 34
-    move-result p3
+    move-result p0
 
     .line 35
-    if-nez p3, :cond_1
+    if-nez p0, :cond_1
 
     .line 36
     .line 37
@@ -442,14 +442,14 @@
 
     .line 38
     .line 39
-    iget p1, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->p:I
+    iget p0, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->r:I
 
     .line 40
     .line 41
-    const/4 p3, 0x3
+    const/4 p1, 0x3
 
     .line 42
-    if-ne p1, p3, :cond_1
+    if-ne p0, p1, :cond_1
 
     .line 43
     .line 44
@@ -462,7 +462,7 @@
     .line 46
     :cond_2
     :goto_0
-    iput-boolean p4, p2, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->q:Z
+    iput-boolean p4, p2, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->s:Z
 
     .line 47
     .line 48
@@ -517,7 +517,7 @@
     sub-int/2addr p2, p4
 
     .line 21
-    invoke-virtual {p0}, Lcom/google/android/material/progressindicator/a;->getIndeterminateDrawable()Lbp2;
+    invoke-virtual {p0}, Lcom/google/android/material/progressindicator/a;->getIndeterminateDrawable()Lt33;
 
     .line 22
     .line 23
@@ -538,19 +538,19 @@
     .line 30
     .line 31
     :cond_0
-    invoke-virtual {p0}, Lcom/google/android/material/progressindicator/a;->getProgressDrawable()Lcb1;
+    invoke-virtual {p0}, Lcom/google/android/material/progressindicator/a;->getProgressDrawable()Lhj1;
 
     .line 32
     .line 33
     .line 34
-    move-result-object p3
+    move-result-object p0
 
     .line 35
-    if-eqz p3, :cond_1
+    if-eqz p0, :cond_1
 
     .line 36
     .line 37
-    invoke-virtual {p3, p4, p4, p1, p2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+    invoke-virtual {p0, p4, p4, p1, p2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 38
     .line 39
@@ -563,7 +563,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
@@ -574,7 +574,7 @@
 
     .line 5
     .line 6
-    iget v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->o:I
+    iget v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->q:I
 
     .line 7
     .line 8
@@ -614,11 +614,11 @@
 
     .line 24
     :cond_1
-    const-string p1, "Cannot change indeterminate animation type while the progress indicator is show in indeterminate mode."
+    const-string p0, "Cannot change indeterminate animation type while the progress indicator is show in indeterminate mode."
 
     .line 25
     .line 26
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 27
     .line 28
@@ -635,7 +635,7 @@
 
     .line 32
     .line 33
-    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->o:I
+    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->q:I
 
     .line 34
     .line 35
@@ -655,7 +655,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {p0}, Lcom/google/android/material/progressindicator/a;->getIndeterminateDrawable()Lbp2;
+    invoke-virtual {p0}, Lcom/google/android/material/progressindicator/a;->getIndeterminateDrawable()Lt33;
 
     .line 44
     .line 45
@@ -663,7 +663,7 @@
     move-result-object p1
 
     .line 47
-    new-instance v1, Lcl3;
+    new-instance v1, Lg24;
 
     .line 48
     .line 49
@@ -671,16 +671,16 @@
 
     .line 50
     .line 51
-    invoke-direct {v1, v0}, Lcl3;-><init>(Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;)V
+    invoke-direct {v1, v0}, Lg24;-><init>(Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;)V
 
     .line 52
     .line 53
     .line 54
-    iput-object v1, p1, Lbp2;->e0:Lk3;
+    iput-object v1, p1, Lt33;->n0:Lq3;
 
     .line 55
     .line 56
-    iput-object p1, v1, Lk3;->a:Ljava/lang/Object;
+    iput-object p1, v1, Lq3;->a:Ljava/lang/Object;
 
     .line 57
     .line 58
@@ -688,7 +688,7 @@
 
     .line 59
     :cond_3
-    invoke-virtual {p0}, Lcom/google/android/material/progressindicator/a;->getIndeterminateDrawable()Lbp2;
+    invoke-virtual {p0}, Lcom/google/android/material/progressindicator/a;->getIndeterminateDrawable()Lt33;
 
     .line 60
     .line 61
@@ -696,7 +696,7 @@
     move-result-object p1
 
     .line 63
-    new-instance v1, Lel3;
+    new-instance v1, Li24;
 
     .line 64
     .line 65
@@ -712,16 +712,16 @@
 
     .line 70
     .line 71
-    invoke-direct {v1, v2, v0}, Lel3;-><init>(Landroid/content/Context;Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;)V
+    invoke-direct {v1, v2, v0}, Li24;-><init>(Landroid/content/Context;Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;)V
 
     .line 72
     .line 73
     .line 74
-    iput-object v1, p1, Lbp2;->e0:Lk3;
+    iput-object v1, p1, Lt33;->n0:Lq3;
 
     .line 75
     .line 76
-    iput-object p1, v1, Lk3;->a:Ljava/lang/Object;
+    iput-object p1, v1, Lq3;->a:Ljava/lang/Object;
 
     .line 77
     .line 78
@@ -748,15 +748,15 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object p0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 5
     .line 6
-    check-cast p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
+    check-cast p0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->d()V
+    invoke-virtual {p0}, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->d()V
 
     .line 9
     .line 10
@@ -768,7 +768,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
@@ -779,7 +779,7 @@
 
     .line 5
     .line 6
-    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->p:I
+    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->r:I
 
     .line 7
     .line 8
@@ -813,7 +813,7 @@
 
     .line 21
     .line 22
-    iget v0, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->p:I
+    iget v0, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->r:I
 
     .line 23
     .line 24
@@ -853,7 +853,7 @@
     .line 38
     :cond_2
     :goto_0
-    iput-boolean v2, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->q:Z
+    iput-boolean v2, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->s:Z
 
     .line 39
     .line 40
@@ -874,7 +874,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object p1, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 5
     .line 6
@@ -899,7 +899,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
@@ -910,7 +910,7 @@
 
     .line 5
     .line 6
-    iget v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->t:I
+    iget v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->v:I
 
     .line 7
     .line 8
@@ -935,7 +935,7 @@
 
     .line 16
     .line 17
-    iget v2, v2, Luy;->a:I
+    iget v2, v2, Ly00;->a:I
 
     .line 18
     .line 19
@@ -965,7 +965,7 @@
     move-result p1
 
     .line 31
-    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->t:I
+    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->v:I
 
     .line 32
     .line 33
@@ -979,7 +979,7 @@
     const/4 v1, 0x0
 
     .line 37
-    iput-boolean v1, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->v:Z
+    iput-boolean v1, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->x:Z
 
     .line 38
     .line 39
@@ -993,7 +993,7 @@
     const/4 v1, 0x1
 
     .line 43
-    iput-boolean v1, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->w:Z
+    iput-boolean v1, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->y:Z
 
     .line 44
     .line 45
@@ -1019,7 +1019,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
@@ -1030,7 +1030,7 @@
 
     .line 5
     .line 6
-    iget v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->u:F
+    iget v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->w:F
 
     .line 7
     .line 8
@@ -1061,7 +1061,7 @@
     move-result p1
 
     .line 21
-    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->u:F
+    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->w:F
 
     .line 22
     .line 23
@@ -1075,7 +1075,7 @@
     const/4 v1, 0x1
 
     .line 27
-    iput-boolean v1, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->v:Z
+    iput-boolean v1, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->x:Z
 
     .line 28
     .line 29
@@ -1086,7 +1086,7 @@
 
     .line 31
     .line 32
-    iput-boolean v1, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->w:Z
+    iput-boolean v1, p1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->y:Z
 
     .line 33
     .line 34
@@ -1112,7 +1112,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
@@ -1123,11 +1123,11 @@
 
     .line 5
     .line 6
-    iget-object v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->s:Ljava/lang/Integer;
+    iget-object v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->u:Ljava/lang/Integer;
 
     .line 7
     .line 8
-    invoke-static {v1, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 9
     .line 10
@@ -1143,7 +1143,7 @@
 
     .line 15
     .line 16
-    iput-object p1, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->s:Ljava/lang/Integer;
+    iput-object p1, v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->u:Ljava/lang/Integer;
 
     .line 17
     .line 18
@@ -1157,10 +1157,10 @@
 .end method
 
 .method public setTrackStopIndicatorSize(I)V
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->Q:Luy;
+    iget-object v0, p0, Lcom/google/android/material/progressindicator/a;->c0:Ly00;
 
     .line 2
     .line 3
@@ -1171,7 +1171,7 @@
 
     .line 5
     .line 6
-    iget v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->r:I
+    iget v1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->t:I
 
     .line 7
     .line 8
@@ -1186,43 +1186,24 @@
 
     .line 12
     .line 13
-    move-object v2, v0
+    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->t:I
 
     .line 14
-    check-cast v2, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
-
     .line 15
-    .line 16
-    iget v2, v2, Luy;->a:I
-
-    .line 17
-    .line 18
-    invoke-static {p1, v2}, Ljava/lang/Math;->min(II)I
-
-    .line 19
-    .line 20
-    .line 21
-    move-result p1
-
-    .line 22
-    iput p1, v1, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->r:I
-
-    .line 23
-    .line 24
     check-cast v0, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
 
-    .line 25
-    .line 26
+    .line 16
+    .line 17
     invoke-virtual {v0}, Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;->d()V
 
-    .line 27
-    .line 28
-    .line 29
+    .line 18
+    .line 19
+    .line 20
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/a;->invalidate()V
 
-    .line 30
-    .line 31
-    .line 32
+    .line 21
+    .line 22
+    .line 23
     :cond_0
     return-void
 .end method

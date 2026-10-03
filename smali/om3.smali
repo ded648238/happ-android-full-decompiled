@@ -1,177 +1,176 @@
-.class public final Lom3;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Lom3;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lk83;
+
+
+# static fields
+.field public static final enum Y:Lom3;
+
+.field public static final enum Z:Lom3;
+
+.field public static final enum c0:Lom3;
+
+.field public static final synthetic d0:[Lom3;
 
 
 # instance fields
-.field public final synthetic Q:I
-
-.field public final synthetic R:Landroidx/appcompat/widget/ListPopupWindow;
+.field public final X:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/appcompat/widget/ListPopupWindow;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    iput p2, p0, Lom3;->Q:I
+    new-instance v0, Lom3;
 
     .line 2
     .line 3
-    iput-object p1, p0, Lom3;->R:Landroidx/appcompat/widget/ListPopupWindow;
+    const-string v1, "NONE"
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x0
 
     .line 6
+    invoke-direct {v0, v1, v2, v2}, Lom3;-><init>(Ljava/lang/String;II)V
+
     .line 7
     .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lom3;->Q:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lom3;->R:Landroidx/appcompat/widget/ListPopupWindow;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v0, v1, Landroidx/appcompat/widget/ListPopupWindow;->S:Lsk1;
-
     .line 9
+    sput-object v0, Lom3;->Y:Lom3;
+
     .line 10
-    if-eqz v0, :cond_0
-
     .line 11
-    .line 12
-    invoke-virtual {v0}, Landroid/view/View;->isAttachedToWindow()Z
+    new-instance v1, Lom3;
 
+    .line 12
     .line 13
+    const-string v2, "INTERNAL_TO_CLASS_ID"
+
     .line 14
     .line 15
-    move-result v0
+    const/4 v3, 0x1
 
     .line 16
-    if-eqz v0, :cond_0
+    invoke-direct {v1, v2, v3, v3}, Lom3;-><init>(Ljava/lang/String;II)V
 
     .line 17
     .line 18
-    iget-object v0, v1, Landroidx/appcompat/widget/ListPopupWindow;->S:Lsk1;
-
     .line 19
-    .line 20
-    invoke-virtual {v0}, Landroid/widget/AdapterView;->getCount()I
+    sput-object v1, Lom3;->Z:Lom3;
 
+    .line 20
     .line 21
+    new-instance v2, Lom3;
+
     .line 22
     .line 23
-    move-result v0
+    const-string v3, "DESC_TO_CLASS_ID"
 
     .line 24
-    iget-object v2, v1, Landroidx/appcompat/widget/ListPopupWindow;->S:Lsk1;
-
     .line 25
+    const/4 v4, 0x2
+
     .line 26
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getChildCount()I
+    invoke-direct {v2, v3, v4, v4}, Lom3;-><init>(Ljava/lang/String;II)V
 
     .line 27
     .line 28
     .line 29
-    move-result v2
+    sput-object v2, Lom3;->c0:Lom3;
 
     .line 30
-    if-le v0, v2, :cond_0
-
     .line 31
-    .line 32
-    iget-object v0, v1, Landroidx/appcompat/widget/ListPopupWindow;->S:Lsk1;
+    filled-new-array {v0, v1, v2}, [Lom3;
 
+    .line 32
     .line 33
     .line 34
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
+    move-result-object v0
 
     .line 35
+    sput-object v0, Lom3;->d0:[Lom3;
+
     .line 36
     .line 37
-    move-result v0
-
-    .line 38
-    iget v2, v1, Landroidx/appcompat/widget/ListPopupWindow;->c0:I
-
-    .line 39
-    .line 40
-    if-gt v0, v2, :cond_0
-
-    .line 41
-    .line 42
-    iget-object v0, v1, Landroidx/appcompat/widget/ListPopupWindow;->p0:Landroid/widget/PopupWindow;
-
-    .line 43
-    .line 44
-    const/4 v2, 0x2
-
-    .line 45
-    invoke-virtual {v0, v2}, Landroid/widget/PopupWindow;->setInputMethodMode(I)V
-
-    .line 46
-    .line 47
-    .line 48
-    invoke-virtual {v1}, Landroidx/appcompat/widget/ListPopupWindow;->g()V
-
-    .line 49
-    .line 50
-    .line 51
-    :cond_0
     return-void
+.end method
 
-    .line 52
-    :pswitch_0
-    iget-object v0, v1, Landroidx/appcompat/widget/ListPopupWindow;->S:Lsk1;
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
 
-    .line 53
-    .line 54
-    if-eqz v0, :cond_1
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 55
-    .line 56
-    const/4 v1, 0x1
+    .line 2
+    .line 3
+    .line 4
+    iput p3, p0, Lom3;->X:I
 
-    .line 57
-    invoke-virtual {v0, v1}, Lsk1;->setListSelectionHidden(Z)V
-
-    .line 58
-    .line 59
-    .line 60
-    invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
-
-    .line 61
-    .line 62
-    .line 63
-    :cond_1
+    .line 5
+    .line 6
     return-void
+.end method
 
-    .line 64
-    nop
+.method public static valueOf(Ljava/lang/String;)Lom3;
+    .locals 1
 
-    .line 65
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    const-class v0, Lom3;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lom3;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lom3;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lom3;->d0:[Lom3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [Lom3;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lom3;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lom3;->X:I
+
+    .line 2
+    .line 3
+    return p0
 .end method

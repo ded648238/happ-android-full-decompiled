@@ -1,6 +1,6 @@
 .class public final Lio/sentry/android/core/internal/util/f;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lio/sentry/util/thread/a;
@@ -124,7 +124,7 @@
 
 # virtual methods
 .method public final a()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Lio/sentry/android/core/internal/util/f;->c()Z
@@ -132,18 +132,18 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 6
     .line 7
-    const-string v0, "main"
+    const-string p0, "main"
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
@@ -152,18 +152,18 @@
     .line 11
     .line 12
     .line 13
-    move-result-object v0
+    move-result-object p0
 
     .line 14
-    invoke-virtual {v0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public final b()J
@@ -175,17 +175,17 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    int-to-long v0, v0
+    int-to-long v0, p0
 
     .line 6
     return-wide v0
 .end method
 
 .method public final c()Z
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -193,10 +193,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-static {v0}, Lio/sentry/android/core/internal/util/f;->d(Ljava/lang/Thread;)J
+    invoke-static {p0}, Lio/sentry/android/core/internal/util/f;->d(Ljava/lang/Thread;)J
 
     .line 6
     .line 7
@@ -209,18 +209,18 @@
     .line 10
     .line 11
     .line 12
-    move-result-object v2
+    move-result-object p0
 
     .line 13
-    invoke-virtual {v2}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
+    invoke-virtual {p0}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
 
     .line 14
     .line 15
     .line 16
-    move-result-object v2
+    move-result-object p0
 
     .line 17
-    invoke-static {v2}, Lio/sentry/android/core/internal/util/f;->d(Ljava/lang/Thread;)J
+    invoke-static {p0}, Lio/sentry/android/core/internal/util/f;->d(Ljava/lang/Thread;)J
 
     .line 18
     .line 19
@@ -228,23 +228,23 @@
     move-result-wide v2
 
     .line 21
-    cmp-long v4, v2, v0
+    cmp-long p0, v2, v0
 
     .line 22
     .line 23
-    if-nez v4, :cond_0
+    if-nez p0, :cond_0
 
     .line 24
     .line 25
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 26
-    return v0
+    return p0
 
     .line 27
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 28
-    return v0
+    return p0
 .end method

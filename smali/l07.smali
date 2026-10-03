@@ -1,245 +1,217 @@
 .class public final Ll07;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Li02;
+.implements Ljava/util/Iterator;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public X:Z
 
-.field public final synthetic R:Lq07;
+.field public final Y:I
+
+.field public final synthetic Z:Lm07;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lq07;I)V
+.method public constructor <init>(Lm07;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Ll07;->Q:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p1, p0, Ll07;->R:Lq07;
-
     .line 4
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Ll07;->Z:Lm07;
 
+    .line 5
     .line 6
+    invoke-static {p1}, Lm07;->b(Lm07;)I
+
     .line 7
     .line 8
+    .line 9
+    move-result p1
+
+    .line 10
+    iput p1, p0, Ll07;->Y:I
+
+    .line 11
+    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final k(Ljava/lang/Object;Lyv0;)Ljava/lang/Object;
-    .locals 6
+.method public final a()V
+    .locals 4
 
     .line 1
-    iget p2, p0, Ll07;->Q:I
+    iget-object v0, p0, Ll07;->Z:Lm07;
 
     .line 2
     .line 3
-    iget-object v0, p0, Ll07;->R:Lq07;
+    invoke-static {v0}, Lm07;->c(Lm07;)I
 
     .line 4
     .line 5
-    sget-object v1, Lbh7;->a:Lbh7;
-
     .line 6
+    move-result v1
+
     .line 7
-    packed-switch p2, :pswitch_data_0
+    iget p0, p0, Ll07;->Y:I
 
     .line 8
     .line 9
-    .line 10
-    check-cast p1, Led5;
+    if-ne v1, p0, :cond_0
 
+    .line 10
     .line 11
+    return-void
+
     .line 12
-    if-eqz p1, :cond_3
+    :cond_0
+    new-instance v1, Ljava/util/ConcurrentModificationException;
 
     .line 13
     .line 14
-    iget-object p1, v0, Lq07;->f:Lt57;
+    invoke-static {v0}, Lm07;->d(Lm07;)I
 
     .line 15
     .line 16
-    iget-object p1, p1, Lt57;->a:Ley6;
-
     .line 17
+    move-result v0
+
     .line 18
-    const/4 p2, 0x0
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 19
-    if-eqz p1, :cond_2
-
     .line 20
+    const-string v3, "ModCount: "
+
     .line 21
-    iget-boolean v0, p1, Ld64;->d0:Z
-
     .line 22
-    .line 23
-    if-eqz v0, :cond_4
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 23
     .line 24
     .line 25
-    iget-object v0, p1, Ley6;->k0:Lng6;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
-    const/4 v2, 0x1
-
     .line 28
-    if-eqz v0, :cond_0
+    const-string v0, "; expected: "
 
     .line 29
     .line 30
-    invoke-virtual {v0}, Lty2;->h()Z
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
     .line 33
-    move-result v0
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 34
-    if-ne v0, v2, :cond_0
-
     .line 35
     .line 36
-    goto :goto_0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 37
-    :cond_0
-    sget-object v0, Lay6;->b:Ltr0;
-
     .line 38
     .line 39
-    invoke-static {p1, v0}, Luv3;->u(Lnr0;Lk65;)Ljava/lang/Object;
+    move-result-object p0
 
     .line 40
+    invoke-direct {v1, p0}, Ljava/util/ConcurrentModificationException;-><init>(Ljava/lang/String;)V
+
     .line 41
     .line 42
-    move-result-object v0
-
     .line 43
-    check-cast v0, Lzx6;
+    throw v1
+.end method
 
-    .line 44
-    .line 45
-    if-nez v0, :cond_1
+.method public final hasNext()Z
+    .locals 0
 
-    .line 46
-    .line 47
-    goto :goto_0
+    .line 1
+    iget-boolean p0, p0, Ll07;->X:Z
 
-    .line 48
-    :cond_1
-    invoke-virtual {p1}, Ld64;->u0()Lbx0;
+    .line 2
+    .line 3
+    xor-int/lit8 p0, p0, 0x1
 
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v3
+    .line 4
+    .line 5
+    return p0
+.end method
 
-    .line 52
-    new-instance v4, Lyb4;
+.method public final next()Ljava/lang/Object;
+    .locals 1
 
-    .line 53
-    .line 54
-    const/16 v5, 0x9
+    .line 1
+    iget-boolean v0, p0, Ll07;->X:Z
 
-    .line 55
-    .line 56
-    invoke-direct {v4, p1, v0, p2, v5}, Lyb4;-><init>(Ljava/lang/Object;Ljava/lang/Object;Lyv0;I)V
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
 
-    .line 57
-    .line 58
-    .line 59
-    sget-object v0, Lex0;->T:Lex0;
+    .line 4
+    .line 5
+    const/4 v0, 0x1
 
-    .line 60
-    .line 61
-    invoke-static {v3, p2, v0, v4, v2}, Lwj0;->X(Lbx0;Lsw0;Lex0;Lu72;I)Lng6;
+    .line 6
+    iput-boolean v0, p0, Ll07;->X:Z
 
-    .line 62
-    .line 63
-    .line 64
-    move-result-object p2
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Ll07;->a()V
 
-    .line 65
-    iput-object p2, p1, Ley6;->k0:Lng6;
+    .line 9
+    .line 10
+    .line 11
+    iget-object p0, p0, Ll07;->Z:Lm07;
 
-    .line 66
-    .line 67
-    goto :goto_0
+    .line 12
+    .line 13
+    iget-object p0, p0, Lm07;->Y:Ljava/lang/Object;
 
-    .line 68
-    :cond_2
-    const-string p1, "ToolbarRequester is not initialized."
+    .line 14
+    .line 15
+    return-object p0
 
-    .line 69
-    .line 70
-    invoke-static {p1}, Lcq2;->d(Ljava/lang/String;)Ljava/lang/Void;
+    .line 16
+    :cond_0
+    invoke-static {}, Li60;->a()V
 
-    .line 71
-    .line 72
-    .line 73
-    invoke-static {}, Len0;->k()V
+    .line 17
+    .line 18
+    .line 19
+    const/4 p0, 0x0
 
-    .line 74
-    .line 75
-    .line 76
-    move-object v1, p2
+    .line 20
+    return-object p0
+.end method
 
-    .line 77
-    goto :goto_0
+.method public final remove()V
+    .locals 0
 
-    .line 78
-    :cond_3
-    invoke-virtual {v0}, Lq07;->q()V
+    .line 1
+    invoke-virtual {p0}, Ll07;->a()V
 
-    .line 79
-    .line 80
-    .line 81
-    :cond_4
-    :goto_0
-    return-object v1
+    .line 2
+    .line 3
+    .line 4
+    iget-object p0, p0, Ll07;->Z:Lm07;
 
-    .line 82
-    :pswitch_0
-    check-cast p1, Lpy6;
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lm07;->clear()V
 
-    .line 83
-    .line 84
-    const/4 p1, 0x0
-
-    .line 85
-    invoke-virtual {v0, p1}, Lq07;->v(Z)V
-
-    .line 86
-    .line 87
-    .line 88
-    sget-object p1, Lo27;->Q:Lo27;
-
-    .line 89
-    .line 90
-    invoke-virtual {v0, p1}, Lq07;->w(Lo27;)V
-
-    .line 91
-    .line 92
-    .line 93
-    return-object v1
-
-    .line 94
-    nop
-
-    .line 95
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 7
+    .line 8
+    .line 9
+    return-void
 .end method

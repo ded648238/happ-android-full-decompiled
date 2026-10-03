@@ -1,71 +1,40 @@
 package defpackage;
 
-import java.util.Iterator;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class tk1 implements ji2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ ow3 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class tk1 implements Iterator, r73 {
-    public final /* synthetic */ int Q = 1;
-    public final Iterator R;
-    public int S;
-
-    public tk1(uk1 uk1Var) {
-        this.R = uk1Var.a.iterator();
-        this.S = uk1Var.b;
+    public /* synthetic */ tk1(ow3 ow3Var, int i) {
+        this.X = i;
+        this.Y = ow3Var;
     }
 
-    @Override // java.util.Iterator
-    public final boolean hasNext() {
-        int i = this.Q;
-        Iterator it = this.R;
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        nt2 nt2Var;
+        int i = this.X;
+        ow3 ow3Var = this.Y;
         switch (i) {
             case 0:
-                break;
+                return ((qj8) ow3Var.getValue()).c();
+            case 1:
+                qj8 qj8Var = (qj8) ow3Var.getValue();
+                nt2Var = qj8Var instanceof nt2 ? (nt2) qj8Var : null;
+                return nt2Var != null ? nt2Var.b() : u41.b;
+            case 2:
+                return ((qj8) ow3Var.getValue()).c();
+            case 3:
+                qj8 qj8Var2 = (qj8) ow3Var.getValue();
+                nt2Var = qj8Var2 instanceof nt2 ? (nt2) qj8Var2 : null;
+                return nt2Var != null ? nt2Var.b() : u41.b;
+            case 4:
+                return ((qj8) ow3Var.getValue()).c();
             default:
-                return it.hasNext();
+                qj8 qj8Var3 = (qj8) ow3Var.getValue();
+                nt2Var = qj8Var3 instanceof nt2 ? (nt2) qj8Var3 : null;
+                return nt2Var != null ? nt2Var.b() : u41.b;
         }
-        while (this.S > 0 && it.hasNext()) {
-            it.next();
-            this.S--;
-        }
-        return it.hasNext();
-    }
-
-    @Override // java.util.Iterator
-    public final Object next() {
-        int i = this.Q;
-        Iterator it = this.R;
-        switch (i) {
-            case 0:
-                break;
-            default:
-                int i2 = this.S;
-                this.S = i2 + 1;
-                if (i2 >= 0) {
-                    return new fp2(i2, it.next());
-                }
-                ub.V();
-                throw null;
-        }
-        while (this.S > 0 && it.hasNext()) {
-            it.next();
-            this.S--;
-        }
-        return it.next();
-    }
-
-    @Override // java.util.Iterator
-    public final void remove() {
-        switch (this.Q) {
-            case 0:
-                throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-            default:
-                throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-        }
-    }
-
-    public tk1(Iterator it) {
-        it.getClass();
-        this.R = it;
     }
 }

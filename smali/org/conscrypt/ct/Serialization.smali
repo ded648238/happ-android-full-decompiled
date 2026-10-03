@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/ct/Serialization;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -170,7 +170,7 @@
 
     .line 33
     .line 34
-    invoke-static {v0, v1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 35
     .line 36
@@ -550,7 +550,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1, p0}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 28
     .line 29
@@ -558,7 +558,7 @@
     move-result-object p0
 
     .line 31
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 32
     .line 33
@@ -593,7 +593,7 @@
     const/4 v0, 0x0
 
     .line 7
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 8
     :goto_0
@@ -640,7 +640,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1, v0}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 28
     .line 29
@@ -721,7 +721,7 @@
 .end method
 
 .method public static writeNumber(Ljava/io/OutputStream;JI)V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/conscrypt/ct/SerializationException;
@@ -753,11 +753,11 @@
 
     .line 12
     .line 13
-    cmp-long v2, p1, v0
+    cmp-long v0, p1, v0
 
     .line 14
     .line 15
-    if-gez v2, :cond_0
+    if-gez v0, :cond_0
 
     .line 16
     .line 17
@@ -843,112 +843,111 @@
 
     .line 57
     .line 58
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     .line 59
-    .line 60
     const-wide/16 v2, 0x40
 
+    .line 60
     .line 61
+    cmp-long v2, v0, v2
+
     .line 62
-    cmp-long v4, v0, v2
-
     .line 63
-    .line 64
-    if-gez v4, :cond_2
+    if-gez v2, :cond_2
 
+    .line 64
     .line 65
+    long-to-int v0, v0
+
     .line 66
-    long-to-int v1, v0
+    shr-long v0, p1, v0
 
     .line 67
-    shr-long v0, p1, v1
-
     .line 68
-    .line 69
     const-wide/16 v2, 0xff
 
+    .line 69
     .line 70
-    .line 71
     and-long/2addr v0, v2
 
+    .line 71
+    long-to-int v0, v0
+
     .line 72
-    long-to-int v1, v0
+    int-to-byte v0, v0
 
     .line 73
-    int-to-byte v0, v1
-
-    .line 74
     :try_start_0
     invoke-virtual {p0, v0}, Ljava/io/OutputStream;->write(I)V
 
+    .line 74
     .line 75
     .line 76
-    .line 77
     goto :goto_1
 
-    .line 78
+    .line 77
     :cond_2
     const/4 v0, 0x0
 
-    .line 79
+    .line 78
     invoke-virtual {p0, v0}, Ljava/io/OutputStream;->write(I)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 79
     .line 80
     .line 81
-    .line 82
     :goto_1
     add-int/lit8 p3, p3, -0x1
 
+    .line 82
     .line 83
-    .line 84
     goto :goto_0
 
-    .line 85
+    .line 84
     :catch_0
     move-exception p0
 
-    .line 86
+    .line 85
     new-instance p1, Lorg/conscrypt/ct/SerializationException;
 
+    .line 86
     .line 87
-    .line 88
     invoke-direct {p1, p0}, Lorg/conscrypt/ct/SerializationException;-><init>(Ljava/lang/Throwable;)V
 
+    .line 88
     .line 89
     .line 90
-    .line 91
     throw p1
 
-    .line 92
+    .line 91
     :cond_3
     return-void
 
-    .line 93
+    .line 92
     :cond_4
     new-instance p0, Lorg/conscrypt/ct/SerializationException;
 
+    .line 93
     .line 94
-    .line 95
     const-string p1, "Negative width: "
 
+    .line 95
     .line 96
-    .line 97
-    invoke-static {p3, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p1}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
+    .line 97
     .line 98
     .line 99
-    .line 100
     move-result-object p1
 
-    .line 101
+    .line 100
     invoke-direct {p0, p1}, Lorg/conscrypt/ct/SerializationException;-><init>(Ljava/lang/String;)V
 
+    .line 101
     .line 102
     .line 103
-    .line 104
     throw p0
 .end method
 

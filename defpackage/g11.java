@@ -1,15 +1,31 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface g11 extends i11 {
-    void d(hn4 hn4Var);
+import android.net.Uri;
 
-    void e(hn4 hn4Var);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class g11 {
+    public final Uri a;
+    public final boolean b;
 
-    void g(int i, int i2);
+    public g11(boolean z, Uri uri) {
+        this.a = uri;
+        this.b = z;
+    }
 
-    void l(hn4 hn4Var);
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!g11.class.equals(obj != null ? obj.getClass() : null)) {
+            return false;
+        }
+        obj.getClass();
+        g11 g11Var = (g11) obj;
+        return this.a.equals(g11Var.a) && this.b == g11Var.b;
+    }
 
-    void m(int i);
+    public final int hashCode() {
+        return Boolean.hashCode(this.b) + (this.a.hashCode() * 31);
+    }
 }

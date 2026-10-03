@@ -1,6 +1,6 @@
 .class public final Landroidx/room/MultiInstanceInvalidationService;
 .super Landroid/app/Service;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -17,8 +17,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x8,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -26,13 +26,13 @@
 
 
 # instance fields
-.field public Q:I
+.field public X:I
 
-.field public final R:Ljava/util/LinkedHashMap;
+.field public final Y:Ljava/util/LinkedHashMap;
 
-.field public final S:Lx74;
+.field public final Z:Lso4;
 
-.field public final T:Lw74;
+.field public final c0:Lro4;
 
 
 # direct methods
@@ -54,33 +54,33 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->R:Ljava/util/LinkedHashMap;
+    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->Y:Ljava/util/LinkedHashMap;
 
     .line 10
     .line 11
-    new-instance v0, Lx74;
+    new-instance v0, Lso4;
 
     .line 12
     .line 13
-    invoke-direct {v0, p0}, Lx74;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
+    invoke-direct {v0, p0}, Lso4;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
 
     .line 14
     .line 15
     .line 16
-    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->S:Lx74;
+    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->Z:Lso4;
 
     .line 17
     .line 18
-    new-instance v0, Lw74;
+    new-instance v0, Lro4;
 
     .line 19
     .line 20
-    invoke-direct {v0, p0}, Lw74;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
+    invoke-direct {v0, p0}, Lro4;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
 
     .line 21
     .line 22
     .line 23
-    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->T:Lw74;
+    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->c0:Lro4;
 
     .line 24
     .line 25
@@ -98,9 +98,9 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Landroidx/room/MultiInstanceInvalidationService;->T:Lw74;
+    iget-object p0, p0, Landroidx/room/MultiInstanceInvalidationService;->c0:Lro4;
 
     .line 5
     .line 6
-    return-object p1
+    return-object p0
 .end method

@@ -1,7 +1,9 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class wt5 {
-    public static final wt5 a = new wt5();
+/* loaded from: classes.dex */
+public abstract class wt5 {
+    public static int lb_voice_failure = 2131951617;
+    public static int lb_voice_no_input = 2131951618;
+    public static int lb_voice_open = 2131951619;
+    public static int lb_voice_success = 2131951620;
 }

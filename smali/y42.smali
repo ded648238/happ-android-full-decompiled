@@ -1,25 +1,18 @@
 .class public final Ly42;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Landroid/os/Parcelable;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Ly42;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final a:Ly42;
 
+.field public static final b:Ljava/io/File;
 
-# instance fields
-.field public final Q:Landroid/os/Bundle;
+.field public static c:I
+
+.field public static d:J
+
+.field public static e:Z
 
 
 # direct methods
@@ -27,99 +20,62 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lwd6;
+    new-instance v0, Ly42;
 
     .line 2
     .line 3
-    const/4 v1, 0x3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    invoke-direct {v0, v1}, Lwd6;-><init>(I)V
-
     .line 5
     .line 6
+    sput-object v0, Ly42;->a:Ly42;
+
     .line 7
-    sput-object v0, Ly42;->CREATOR:Landroid/os/Parcelable$Creator;
-
     .line 8
-    .line 9
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 18
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 19
-    iput-object p1, p0, Ly42;->Q:Landroid/os/Bundle;
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p1}, Landroid/os/Parcel;->readBundle()Landroid/os/Bundle;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    iput-object p1, p0, Ly42;->Q:Landroid/os/Bundle;
+    new-instance v0, Ljava/io/File;
 
     .line 9
     .line 10
-    if-eqz p2, :cond_0
+    const-string v1, "/proc/self/fd"
 
     .line 11
     .line 12
-    if-eqz p1, :cond_0
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 13
     .line 14
-    invoke-virtual {p1, p2}, Landroid/os/Bundle;->setClassLoader(Ljava/lang/ClassLoader;)V
-
     .line 15
+    sput-object v0, Ly42;->b:Ljava/io/File;
+
     .line 16
     .line 17
-    :cond_0
-    return-void
-.end method
+    const/16 v0, 0x1e
 
+    .line 18
+    .line 19
+    sput v0, Ly42;->c:I
 
-# virtual methods
-.method public final describeContents()I
-    .locals 1
+    .line 20
+    .line 21
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    .line 1
-    const/4 v0, 0x0
+    .line 22
+    .line 23
+    .line 24
+    move-result-wide v0
 
-    .line 2
-    return v0
-.end method
+    .line 25
+    sput-wide v0, Ly42;->d:J
 
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
+    .line 26
+    .line 27
+    const/4 v0, 0x1
 
-    .line 1
-    iget-object p2, p0, Ly42;->Q:Landroid/os/Bundle;
+    .line 28
+    sput-boolean v0, Ly42;->e:Z
 
-    .line 2
-    .line 3
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
-
-    .line 4
-    .line 5
-    .line 6
+    .line 29
+    .line 30
     return-void
 .end method

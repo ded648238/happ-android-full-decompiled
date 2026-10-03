@@ -1,18 +1,18 @@
-.class public Ltw5;
-.super Lj04;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Ltw5;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public W:F
+.field public final a:Lqx2;
 
-.field public X:F
+.field public final b:Ljava/util/Map;
 
-.field public final synthetic Y:Lxw5;
+.field public final c:J
 
 
 # direct methods
-.method public constructor <init>(Lxw5;FF)V
+.method public constructor <init>(Lqx2;Ljava/util/Map;J)V
     .locals 0
 
     .line 1
@@ -21,149 +21,17 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ltw5;->Y:Lxw5;
+    iput-object p1, p0, Ltw5;->a:Lqx2;
 
     .line 5
     .line 6
-    iput p2, p0, Ltw5;->W:F
+    iput-object p2, p0, Ltw5;->b:Ljava/util/Map;
 
     .line 7
     .line 8
-    iput p3, p0, Ltw5;->X:F
+    iput-wide p3, p0, Ltw5;->c:J
 
     .line 9
     .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public G(Ljava/lang/String;)V
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Ltw5;->Y:Lxw5;
-
-    .line 2
-    .line 3
-    iget-object v1, v0, Lxw5;->R:Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    check-cast v1, Landroid/graphics/Canvas;
-
-    .line 6
-    .line 7
-    invoke-virtual {v0}, Lxw5;->j0()Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v2
-
-    .line 11
-    if-eqz v2, :cond_1
-
-    .line 12
-    .line 13
-    iget-object v2, v0, Lxw5;->T:Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    check-cast v2, Lvw5;
-
-    .line 16
-    .line 17
-    iget-boolean v3, v2, Lvw5;->b:Z
-
-    .line 18
-    .line 19
-    if-eqz v3, :cond_0
-
-    .line 20
-    .line 21
-    iget v3, p0, Ltw5;->W:F
-
-    .line 22
-    .line 23
-    iget v4, p0, Ltw5;->X:F
-
-    .line 24
-    .line 25
-    iget-object v2, v2, Lvw5;->d:Landroid/graphics/Paint;
-
-    .line 26
-    .line 27
-    invoke-virtual {v1, p1, v3, v4, v2}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
-
-    .line 28
-    .line 29
-    .line 30
-    :cond_0
-    iget-object v2, v0, Lxw5;->T:Ljava/lang/Object;
-
-    .line 31
-    .line 32
-    check-cast v2, Lvw5;
-
-    .line 33
-    .line 34
-    iget-boolean v3, v2, Lvw5;->c:Z
-
-    .line 35
-    .line 36
-    if-eqz v3, :cond_1
-
-    .line 37
-    .line 38
-    iget v3, p0, Ltw5;->W:F
-
-    .line 39
-    .line 40
-    iget v4, p0, Ltw5;->X:F
-
-    .line 41
-    .line 42
-    iget-object v2, v2, Lvw5;->e:Landroid/graphics/Paint;
-
-    .line 43
-    .line 44
-    invoke-virtual {v1, p1, v3, v4, v2}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
-
-    .line 45
-    .line 46
-    .line 47
-    :cond_1
-    iget v1, p0, Ltw5;->W:F
-
-    .line 48
-    .line 49
-    iget-object v0, v0, Lxw5;->T:Ljava/lang/Object;
-
-    .line 50
-    .line 51
-    check-cast v0, Lvw5;
-
-    .line 52
-    .line 53
-    iget-object v0, v0, Lvw5;->d:Landroid/graphics/Paint;
-
-    .line 54
-    .line 55
-    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
-
-    .line 56
-    .line 57
-    .line 58
-    move-result p1
-
-    .line 59
-    add-float/2addr p1, v1
-
-    .line 60
-    iput p1, p0, Ltw5;->W:F
-
-    .line 61
-    .line 62
     return-void
 .end method

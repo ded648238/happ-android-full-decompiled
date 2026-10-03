@@ -1,11 +1,11 @@
 package androidx.recyclerview.widget;
 
-import defpackage.kg6;
+import defpackage.g47;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class m {
     public int[] a;
     public ArrayList b;
@@ -52,10 +52,10 @@ public final class m {
             return;
         }
         for (int size = arrayList.size() - 1; size >= 0; size--) {
-            kg6 kg6Var = (kg6) this.b.get(size);
-            int i4 = kg6Var.Q;
+            g47 g47Var = (g47) this.b.get(size);
+            int i4 = g47Var.X;
             if (i4 >= i) {
-                kg6Var.Q = i4 + i2;
+                g47Var.X = i4 + i2;
             }
         }
     }
@@ -76,13 +76,13 @@ public final class m {
             return;
         }
         for (int size = arrayList.size() - 1; size >= 0; size--) {
-            kg6 kg6Var = (kg6) this.b.get(size);
-            int i4 = kg6Var.Q;
+            g47 g47Var = (g47) this.b.get(size);
+            int i4 = g47Var.X;
             if (i4 >= i) {
                 if (i4 < i3) {
                     this.b.remove(size);
                 } else {
-                    kg6Var.Q = i4 - i2;
+                    g47Var.X = i4 - i2;
                 }
             }
         }

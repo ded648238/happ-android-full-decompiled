@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/OpenSSLRSAPrivateKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/security/interfaces/RSAPrivateKey;
@@ -200,7 +200,7 @@
     move-object p0, v0
 
     .line 51
-    invoke-static {p0}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 52
     .line 53
@@ -213,7 +213,7 @@
 
     .line 56
     .line 57
-    invoke-static {p0}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 58
     .line 59
@@ -226,7 +226,7 @@
 
     .line 62
     .line 63
-    invoke-static {p0}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 64
     .line 65
@@ -386,7 +386,7 @@
 
     .line 47
     .line 48
-    invoke-static {p0}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -399,7 +399,7 @@
 
     .line 53
     .line 54
-    invoke-static {p0}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 55
     .line 56
@@ -732,20 +732,20 @@
 
     .line 16
     :cond_0
-    new-instance p1, Ljava/io/NotSerializableException;
+    new-instance p0, Ljava/io/NotSerializableException;
 
     .line 17
     .line 18
-    const-string v0, "Hardware backed keys can not be serialized"
+    const-string p1, "Hardware backed keys can not be serialized"
 
     .line 19
     .line 20
-    invoke-direct {p1, v0}, Ljava/io/NotSerializableException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/NotSerializableException;-><init>(Ljava/lang/String;)V
 
     .line 21
     .line 22
     .line 23
-    throw p1
+    throw p0
 .end method
 
 
@@ -856,7 +856,7 @@
 
     .line 10
     .line 11
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 12
     .line 13
@@ -868,15 +868,15 @@
     move-result-object p1
 
     .line 17
-    invoke-virtual {v0, p1}, Lorg/conscrypt/OpenSSLKey;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Lorg/conscrypt/OpenSSLKey;->equals(Ljava/lang/Object;)Z
 
     .line 18
     .line 19
     .line 20
-    move-result p1
+    move-result p0
 
     .line 21
-    return p1
+    return p0
 
     .line 22
     :cond_1
@@ -941,10 +941,10 @@
     .line 51
     .line 52
     .line 53
-    move-result p1
+    move-result p0
 
     .line 54
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 55
     .line 56
@@ -964,7 +964,7 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
     invoke-virtual {p2}, Ljava/math/BigInteger;->toByteArray()[B
@@ -972,29 +972,29 @@
     .line 6
     .line 7
     .line 8
-    move-result-object p2
+    move-result-object p1
 
     .line 9
-    invoke-static {p1, p2}, Ljava/security/MessageDigest;->isEqual([B[B)Z
+    invoke-static {p0, p1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
 
     .line 10
     .line 11
     .line 12
-    move-result p1
+    move-result p0
 
     .line 13
-    return p1
+    return p0
 .end method
 
 .method public final getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "RSA"
+    const-string p0, "RSA"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getEncoded()[B
@@ -1017,72 +1017,72 @@
 
     .line 8
     .line 9
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 10
-    return-object v0
+    return-object p0
 
     .line 11
     :cond_0
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 12
     .line 13
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 14
     .line 15
     .line 16
-    move-result-object v0
+    move-result-object p0
 
     .line 17
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_private_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_private_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
 
     .line 18
     .line 19
     .line 20
-    move-result-object v0
+    move-result-object p0
 
     .line 21
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->isHardwareBacked()Z
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->isHardwareBacked()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 10
-    return-object v0
+    return-object p0
 
     .line 11
     :cond_0
-    const-string v0, "PKCS#8"
+    const-string p0, "PKCS#8"
 
     .line 12
     .line 13
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getModulus()Ljava/math/BigInteger;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/OpenSSLRSAPrivateKey;->ensureReadParams()V
@@ -1090,22 +1090,22 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->modulus:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->modulus:Ljava/math/BigInteger;
 
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
 .method public getOpenSSLKey()Lorg/conscrypt/OpenSSLKey;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPrivateExponent()Ljava/math/BigInteger;
@@ -1133,31 +1133,31 @@
     .line 10
     .line 11
     .line 12
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->privateExponent:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->privateExponent:Ljava/math/BigInteger;
 
     .line 13
     .line 14
-    return-object v0
+    return-object p0
 
     .line 15
     :cond_0
-    const-string v0, "Private exponent cannot be extracted"
+    const-string p0, "Private exponent cannot be extracted"
 
     .line 16
     .line 17
-    invoke-static {v0}, Lfn;->l(Ljava/lang/String;)V
+    invoke-static {p0}, Lra;->g(Ljava/lang/String;)V
 
     .line 18
     .line 19
     .line 20
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 21
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/OpenSSLRSAPrivateKey;->ensureReadParams()V
@@ -1181,11 +1181,11 @@
 
     .line 11
     .line 12
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->privateExponent:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->privateExponent:Ljava/math/BigInteger;
 
     .line 13
     .line 14
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 15
     .line 16
@@ -1193,18 +1193,18 @@
 
     .line 17
     .line 18
-    invoke-virtual {v1}, Ljava/math/BigInteger;->hashCode()I
+    invoke-virtual {p0}, Ljava/math/BigInteger;->hashCode()I
 
     .line 19
     .line 20
     .line 21
-    move-result v1
+    move-result p0
 
     .line 22
-    add-int/2addr v1, v0
+    add-int/2addr p0, v0
 
     .line 23
-    return v1
+    return p0
 
     .line 24
     :cond_0
@@ -1257,11 +1257,11 @@
 
     .line 20
     :cond_0
-    const-string p1, "privateExponent == null"
+    const-string p0, "privateExponent == null"
 
     .line 21
     .line 22
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 23
     .line 24
@@ -1318,11 +1318,11 @@
 
     .line 49
     :cond_3
-    const-string p1, "modulus == null"
+    const-string p0, "modulus == null"
 
     .line 50
     .line 51
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 52
     .line 53
@@ -1331,7 +1331,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1352,23 +1352,23 @@
     .line 9
     .line 10
     .line 11
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->modulus:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;->modulus:Ljava/math/BigInteger;
 
     .line 12
     .line 13
-    const/16 v2, 0x10
+    const/16 v1, 0x10
 
     .line 14
     .line 15
-    invoke-virtual {v1, v2}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v1
+    move-result-object p0
 
     .line 19
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 20
     .line 21
@@ -1378,8 +1378,8 @@
     .line 23
     .line 24
     .line 25
-    move-result-object v0
+    move-result-object p0
 
     .line 26
-    return-object v0
+    return-object p0
 .end method

@@ -1,50 +1,73 @@
 .class public final Lo26;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lq26;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public T:Lcu6;
-
-.field public synthetic U:Ljava/lang/Object;
-
-.field public V:I
-
-
-# virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+# direct methods
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lo26;->U:Ljava/lang/Object;
+    const-string v0, "HTML"
 
     .line 2
     .line 3
-    iget p1, p0, Lo26;->V:I
+    const/4 v1, 0x1
 
     .line 4
-    .line 5
-    const/high16 v0, -0x80000000
+    invoke-direct {p0, v0, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 5
     .line 6
     .line 7
-    or-int/2addr p1, v0
+    return-void
+.end method
 
+
+# virtual methods
+.method public final a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    const-string p0, "<"
+
+    .line 5
+    .line 6
+    const-string v0, "&lt;"
+
+    .line 7
     .line 8
-    iput p1, p0, Lo26;->V:I
+    const/4 v1, 0x0
 
     .line 9
+    invoke-static {p1, p0, v0, v1}, Lla7;->E0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+
     .line 10
-    const/4 p1, 0x0
-
     .line 11
-    invoke-static {p1, p0}, Lew0;->g(Lcu6;Lfy;)Ljava/lang/Object;
-
     .line 12
-    .line 13
-    .line 14
-    move-result-object p1
+    move-result-object p0
 
+    .line 13
+    const-string p1, ">"
+
+    .line 14
     .line 15
-    return-object p1
+    const-string v0, "&gt;"
+
+    .line 16
+    .line 17
+    invoke-static {p0, p1, v0, v1}, Lla7;->E0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p0
+
+    .line 21
+    return-object p0
 .end method

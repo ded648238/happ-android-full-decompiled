@@ -1,6 +1,6 @@
 .class public final Lio/sentry/android/core/anr/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -173,7 +173,7 @@
 
     .line 35
     :cond_3
-    const/4 v5, 0x0
+    move v5, v2
 
     .line 36
     :goto_0
@@ -233,12 +233,12 @@
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lio/sentry/android/core/anr/b;->d:I
+    iget p0, p0, Lio/sentry/android/core/anr/b;->d:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

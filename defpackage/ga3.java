@@ -1,26 +1,37 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ga3 extends za3 {
-    public final fa3 a;
+import su.happ.proxyutility.dto.AdditionalInfoCode;
 
-    public ga3(fa3 fa3Var) {
-        this.a = fa3Var;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class ga3 {
+    public static final fa3 Companion = new fa3();
+    public final AdditionalInfoCode a;
+
+    public /* synthetic */ ga3(int i, AdditionalInfoCode additionalInfoCode) {
+        if ((i & 1) == 0) {
+            this.a = null;
+        } else {
+            this.a = additionalInfoCode;
+        }
     }
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof ga3) && this.a.equals(((ga3) obj).a);
+        return (obj instanceof ga3) && m93.h(this.a, ((ga3) obj).a);
     }
 
     public final int hashCode() {
-        return this.a.hashCode();
+        AdditionalInfoCode additionalInfoCode = this.a;
+        if (additionalInfoCode == null) {
+            return 0;
+        }
+        return Integer.hashCode(additionalInfoCode.getValue());
     }
 
     public final String toString() {
-        return "AnnotationValue(" + this.a + ')';
+        return "JwtResponse(additionalInfoCode=" + this.a + ")";
     }
 }

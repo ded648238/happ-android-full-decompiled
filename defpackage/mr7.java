@@ -1,8 +1,33 @@
 package defpackage;
 
-import java.lang.ref.WeakReference;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class mr7 {
+    public final x30 a;
+    public final x30 b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class mr7 extends WeakReference {
+    public mr7() {
+        x30 x30Var = rt2.n0;
+        this.a = x30Var;
+        this.b = x30Var;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof mr7)) {
+            return false;
+        }
+        mr7 mr7Var = (mr7) obj;
+        return m93.h(this.a, mr7Var.a) && m93.h(this.b, mr7Var.b);
+    }
+
+    public final int hashCode() {
+        return Float.hashCode(this.b.a) + eb7.c(Boolean.hashCode(false) * 31, this.a.a, 31);
+    }
+
+    public final String toString() {
+        return "Attached(alwaysMinimize=false, minimizedAlignment=" + this.a + ", expandedAlignment=" + this.b + ')';
+    }
 }

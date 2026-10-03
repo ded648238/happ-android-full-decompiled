@@ -1,83 +1,84 @@
-.class public final synthetic Lmo0;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.class public final Lmo0;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public synthetic c0:Ljava/lang/Object;
 
-.field public final synthetic R:Landroidx/activity/ComponentActivity;
+.field public final synthetic d0:Lpo0;
+
+.field public e0:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/activity/ComponentActivity;I)V
+.method public constructor <init>(Lpo0;Ld31;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lmo0;->Q:I
+    iput-object p1, p0, Lmo0;->d0:Lpo0;
 
     .line 2
     .line 3
-    iput-object p1, p0, Lmo0;->R:Landroidx/activity/ComponentActivity;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    iget v0, p0, Lmo0;->Q:I
+    iput-object p1, p0, Lmo0;->c0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lmo0;->R:Landroidx/activity/ComponentActivity;
+    iget p1, p0, Lmo0;->e0:I
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    invoke-static {v1}, Landroidx/activity/ComponentActivity;->g(Landroidx/activity/ComponentActivity;)V
+    iput p1, p0, Lmo0;->e0:I
 
     .line 9
     .line 10
+    const/4 v3, 0x0
+
     .line 11
-    return-void
+    const/4 v4, 0x0
 
     .line 12
-    :pswitch_0
-    sget v0, Landroidx/activity/ComponentActivity;->j0:I
+    iget-object v0, p0, Lmo0;->d0:Lpo0;
 
     .line 13
     .line 14
-    invoke-virtual {v1}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    const/4 v1, 0x0
 
     .line 15
+    const/4 v5, 0x0
+
     .line 16
+    move-object v2, p0
+
     .line 17
-    return-void
+    invoke-virtual/range {v0 .. v5}, Lpo0;->a(Lzm;Ld31;Ljava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/SubscriptionItem;)Ljava/lang/Object;
 
     .line 18
-    nop
-
     .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 20
+    move-result-object p0
+
+    .line 21
+    return-object p0
 .end method

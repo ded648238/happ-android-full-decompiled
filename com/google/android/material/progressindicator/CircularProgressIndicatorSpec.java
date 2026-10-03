@@ -3,42 +3,45 @@ package com.google.android.material.progressindicator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import defpackage.c37;
-import defpackage.hc7;
-import defpackage.k85;
-import defpackage.uy;
-import defpackage.v75;
-import defpackage.va5;
+import defpackage.gv7;
+import defpackage.jf1;
+import defpackage.js5;
+import defpackage.ur5;
+import defpackage.uu5;
+import defpackage.y00;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class CircularProgressIndicatorSpec extends uy {
-    public int o;
-    public int p;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class CircularProgressIndicatorSpec extends y00 {
     public int q;
     public int r;
-    public final boolean s;
+    public int s;
+    public int t;
+    public final boolean u;
 
     /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public CircularProgressIndicatorSpec(Context context, AttributeSet attributeSet, int i) {
-        int i2 = CircularProgressIndicator.h0;
-        super(context, attributeSet, i, i2);
-        int dimensionPixelSize = context.getResources().getDimensionPixelSize(k85.mtrl_progress_circular_size_medium);
-        int dimensionPixelSize2 = context.getResources().getDimensionPixelSize(k85.mtrl_progress_circular_inset_medium);
-        int[] iArr = va5.CircularProgressIndicator;
-        c37.a(context, attributeSet, i, i2);
-        c37.b(context, attributeSet, iArr, i, i2, new int[0]);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr, i, i2);
-        this.o = typedArrayObtainStyledAttributes.getInt(va5.CircularProgressIndicator_indeterminateAnimationTypeCircular, 0);
-        this.p = Math.max(hc7.H(context, typedArrayObtainStyledAttributes, va5.CircularProgressIndicator_indicatorSize, dimensionPixelSize), this.a * 2);
-        this.q = hc7.H(context, typedArrayObtainStyledAttributes, va5.CircularProgressIndicator_indicatorInset, dimensionPixelSize2);
-        this.r = typedArrayObtainStyledAttributes.getInt(va5.CircularProgressIndicator_indicatorDirectionCircular, 0);
-        this.s = typedArrayObtainStyledAttributes.getBoolean(va5.CircularProgressIndicator_indeterminateTrackVisible, true);
-        typedArrayObtainStyledAttributes.recycle();
+        super(context, attributeSet, i, r4);
+        int i2 = CircularProgressIndicator.s0;
+        int dimensionPixelSize = context.getResources().getDimensionPixelSize(js5.mtrl_progress_circular_size_medium);
+        int dimensionPixelSize2 = context.getResources().getDimensionPixelSize(js5.mtrl_progress_circular_inset_medium);
+        int[] iArr = uu5.CircularProgressIndicator;
+        gv7.a(context, attributeSet, i, i2);
+        gv7.b(context, attributeSet, iArr, i, i2, new int[0]);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr, i, i2);
+        this.q = obtainStyledAttributes.getInt(uu5.CircularProgressIndicator_indeterminateAnimationTypeCircular, 0);
+        this.r = Math.max(jf1.z(context, obtainStyledAttributes, uu5.CircularProgressIndicator_indicatorSize, dimensionPixelSize), this.a * 2);
+        this.s = jf1.z(context, obtainStyledAttributes, uu5.CircularProgressIndicator_indicatorInset, dimensionPixelSize2);
+        this.t = obtainStyledAttributes.getInt(uu5.CircularProgressIndicator_indicatorDirectionCircular, 0);
+        this.u = obtainStyledAttributes.getBoolean(uu5.CircularProgressIndicator_indeterminateTrackVisible, true);
+        obtainStyledAttributes.recycle();
         d();
     }
 
     public CircularProgressIndicatorSpec(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, v75.circularProgressIndicatorStyle);
+        this(context, attributeSet, ur5.circularProgressIndicatorStyle);
     }
 }

@@ -1,66 +1,9 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+import java.util.ArrayList;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
 public abstract class q95 {
-    public static int lb_action_1_line = 2131624065;
-    public static int lb_action_2_lines = 2131624066;
-    public static int lb_background_window = 2131624067;
-    public static int lb_browse_fragment = 2131624068;
-    public static int lb_browse_title = 2131624069;
-    public static int lb_control_bar = 2131624070;
-    public static int lb_control_button_primary = 2131624071;
-    public static int lb_control_button_secondary = 2131624072;
-    public static int lb_details_description = 2131624073;
-    public static int lb_details_fragment = 2131624074;
-    public static int lb_details_overview = 2131624075;
-    public static int lb_divider = 2131624076;
-    public static int lb_error_fragment = 2131624077;
-    public static int lb_fullwidth_details_overview = 2131624078;
-    public static int lb_fullwidth_details_overview_logo = 2131624079;
-    public static int lb_guidance = 2131624080;
-    public static int lb_guidedactions = 2131624081;
-    public static int lb_guidedactions_datepicker_item = 2131624082;
-    public static int lb_guidedactions_item = 2131624083;
-    public static int lb_guidedbuttonactions = 2131624084;
-    public static int lb_guidedstep_background = 2131624085;
-    public static int lb_guidedstep_fragment = 2131624086;
-    public static int lb_header = 2131624087;
-    public static int lb_headers_fragment = 2131624088;
-    public static int lb_image_card_view = 2131624089;
-    public static int lb_image_card_view_themed_badge_left = 2131624090;
-    public static int lb_image_card_view_themed_badge_right = 2131624091;
-    public static int lb_image_card_view_themed_content = 2131624092;
-    public static int lb_image_card_view_themed_title = 2131624093;
-    public static int lb_list_row = 2131624094;
-    public static int lb_list_row_hovercard = 2131624095;
-    public static int lb_media_item_number_view_flipper = 2131624096;
-    public static int lb_media_list_header = 2131624097;
-    public static int lb_onboarding_fragment = 2131624098;
-    public static int lb_picker = 2131624099;
-    public static int lb_picker_column = 2131624100;
-    public static int lb_picker_item = 2131624101;
-    public static int lb_picker_separator = 2131624102;
-    public static int lb_pinpicker_item = 2131624103;
-    public static int lb_playback_controls = 2131624104;
-    public static int lb_playback_controls_row = 2131624105;
-    public static int lb_playback_fragment = 2131624106;
-    public static int lb_playback_now_playing_bars = 2131624107;
-    public static int lb_playback_transport_controls = 2131624108;
-    public static int lb_playback_transport_controls_row = 2131624109;
-    public static int lb_row_container = 2131624110;
-    public static int lb_row_header = 2131624111;
-    public static int lb_row_media_item = 2131624112;
-    public static int lb_row_media_item_action = 2131624113;
-    public static int lb_rows_fragment = 2131624114;
-    public static int lb_search_bar = 2131624115;
-    public static int lb_search_fragment = 2131624116;
-    public static int lb_search_orb = 2131624117;
-    public static int lb_section_header = 2131624118;
-    public static int lb_shadow = 2131624119;
-    public static int lb_speech_orb = 2131624120;
-    public static int lb_title_view = 2131624121;
-    public static int lb_vertical_grid = 2131624122;
-    public static int lb_vertical_grid_fragment = 2131624123;
-    public static int lb_video_surface = 2131624124;
-    public static int video_surface_fragment = 2131624222;
+    public static final ArrayList a = ut0.G0(ut.M(ut.M("ru.sberbankmobile", "ru.vtb24.mobilebanking.android", "ru.tinkoff.banking", "ru.alfabank.mobile.android", "ru.yoomoney.app", "ru.fns.lkfl", "ru.mw", "ru.fns.lkfl", "ru.mts.money", "com.idamob.tinkoff.android"), ut.M("ru.gosuslugi.cabinet", "ru.gosuslugi.goskey", "ru.rt.mams", "ru.gosuslugi.goskey", "ru.sigma.gisgkh"), ut.M("ru.yandex.searchplugin", "com.yandex.browser", "ru.yandex.yandexmaps", "ru.yandex.yandexnavi", "ru.yandex.taxi", "ru.yandex.market", "ru.yandex.music", "ru.yandex.weather", "ru.kinopoisk", "ru.kinopoisk.tv"), ut.M("com.vkontakte.android", "ru.vk.video", "ru.ok.android", "me.tamtam.com", "ru.dahl.messenger", "ru.mail.mailapp", "ru.mail.cloud", "ru.rt.mams", "ru.oneme.app"), ut.M("ru.ozon.app.android", "ru.wildberries.rabbit", "ru.kazanexpress.customer", "ru.goods.marketplace", "ru.eapteka.android", "com.avito.android", "ru.tander.magnit", "ru.samokat.app", "ru.kazanexpress.customer", "ru.goods.marketplace", "ru.eapteka.android", "com.avito.android", "ru.pyaterochka.app.browser", "ru.vk.store", "com.wildberries.ru", "com.bitrix24.android"), ut.M("ru.tele2.mytele2", "ru.mts.mymts", "ru.megafon.mlk", "beeline.vimpelcom.ru", "ru.rostel"), ut.M("ru.dublgis.maps", "ru.dublgis.dgismobile", "ru.ivi.client", "ru.mts.mtstv", "ru.mts.music", "ru.more.play", "com.vk.vkvideo")));
 }

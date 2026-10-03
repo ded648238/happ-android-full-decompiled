@@ -1,15 +1,38 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface zz1 {
-    float i();
+import android.hardware.camera2.CaptureResult;
 
-    float l(float f, long j);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class zz1 implements c36 {
+    public final /* synthetic */ sv0 X;
 
-    float p(float f, float f2, long j);
+    public zz1(sv0 sv0Var) {
+        this.X = sv0Var;
+    }
 
-    long t(float f);
-
-    float v(float f, float f2);
+    @Override // defpackage.c36
+    public final void Z(k36 k36Var, long j, wd wdVar) {
+        xd xdVar = (xd) wdVar.Z;
+        CaptureResult.Key key = CaptureResult.CONTROL_AE_STATE;
+        key.getClass();
+        xdVar.getClass();
+        Integer num = (Integer) xdVar.X.get(key);
+        CaptureResult.Key key2 = CaptureResult.CONTROL_AE_EXPOSURE_COMPENSATION;
+        key2.getClass();
+        xdVar.getClass();
+        Integer num2 = (Integer) xdVar.X.get(key2);
+        sv0 sv0Var = this.X;
+        if (num == null || num2 == null) {
+            if (num2 == null || num2.intValue() != 0) {
+                return;
+            }
+            sv0Var.W(0);
+            return;
+        }
+        int intValue = num.intValue();
+        if ((intValue == 2 || intValue == 3 || intValue == 4) && num2.intValue() == 0) {
+            sv0Var.W(0);
+        }
+    }
 }

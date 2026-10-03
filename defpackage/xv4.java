@@ -1,31 +1,62 @@
 package defpackage;
 
-import java.util.concurrent.CancellationException;
+import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class xv4 extends CancellationException {
-    public final /* synthetic */ int Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class xv4 implements er6 {
+    public static final xv4 a = new xv4();
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ xv4(String str, int i) {
-        super(str);
-        this.Q = i;
+    @Override // defpackage.er6
+    public final String a() {
+        return "kotlin.Nothing";
     }
 
-    @Override // java.lang.Throwable
-    public final Throwable fillInStackTrace() {
-        switch (this.Q) {
-            case 0:
-                setStackTrace(yc4.e);
-                break;
-            case 1:
-                setStackTrace(xf5.T);
-                break;
-            default:
-                setStackTrace(va6.S);
-                break;
-        }
-        return this;
+    @Override // defpackage.er6
+    public final int d(String str) {
+        str.getClass();
+        throw new IllegalStateException("Descriptor for type `kotlin.Nothing` does not have elements");
+    }
+
+    @Override // defpackage.er6
+    public final int e() {
+        return 0;
+    }
+
+    public final boolean equals(Object obj) {
+        return this == obj;
+    }
+
+    @Override // defpackage.er6
+    public final String f(int i) {
+        throw new IllegalStateException("Descriptor for type `kotlin.Nothing` does not have elements");
+    }
+
+    @Override // defpackage.er6
+    public final List g(int i) {
+        throw new IllegalStateException("Descriptor for type `kotlin.Nothing` does not have elements");
+    }
+
+    @Override // defpackage.er6
+    public final er6 h(int i) {
+        throw new IllegalStateException("Descriptor for type `kotlin.Nothing` does not have elements");
+    }
+
+    public final int hashCode() {
+        return (na7.m.hashCode() * 31) - 1818355776;
+    }
+
+    @Override // defpackage.er6
+    public final boolean j(int i) {
+        throw new IllegalStateException("Descriptor for type `kotlin.Nothing` does not have elements");
+    }
+
+    @Override // defpackage.er6
+    public final hc4 s() {
+        return na7.m;
+    }
+
+    public final String toString() {
+        return "NothingSerialDescriptor";
     }
 }

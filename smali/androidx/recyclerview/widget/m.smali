@@ -1,6 +1,6 @@
 .class public final Landroidx/recyclerview/widget/m;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -131,17 +131,17 @@
     .line 38
     .line 39
     .line 40
-    iget-object p1, p0, Landroidx/recyclerview/widget/m;->a:[I
+    iget-object p0, p0, Landroidx/recyclerview/widget/m;->a:[I
 
     .line 41
     .line 42
-    array-length v0, v0
+    array-length p1, v0
 
     .line 43
-    array-length v2, p1
+    array-length v0, p0
 
     .line 44
-    invoke-static {p1, v0, v2, v1}, Ljava/util/Arrays;->fill([IIII)V
+    invoke-static {p0, p1, v0, v1}, Ljava/util/Arrays;->fill([IIII)V
 
     .line 45
     .line 46
@@ -253,11 +253,11 @@
     move-result-object v1
 
     .line 47
-    check-cast v1, Lkg6;
+    check-cast v1, Lg47;
 
     .line 48
     .line 49
-    iget v2, v1, Lkg6;->Q:I
+    iget v2, v1, Lg47;->X:I
 
     .line 50
     .line 51
@@ -272,7 +272,7 @@
     add-int/2addr v2, p2
 
     .line 55
-    iput v2, v1, Lkg6;->Q:I
+    iput v2, v1, Lg47;->X:I
 
     .line 56
     .line 57
@@ -401,11 +401,11 @@
     move-result-object v2
 
     .line 50
-    check-cast v2, Lkg6;
+    check-cast v2, Lg47;
 
     .line 51
     .line 52
-    iget v3, v2, Lkg6;->Q:I
+    iget v3, v2, Lg47;->X:I
 
     .line 53
     .line 54
@@ -437,7 +437,7 @@
     sub-int/2addr v3, p2
 
     .line 66
-    iput v3, v2, Lkg6;->Q:I
+    iput v3, v2, Lg47;->X:I
 
     .line 67
     .line 68

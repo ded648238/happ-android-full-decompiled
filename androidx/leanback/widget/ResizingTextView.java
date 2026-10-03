@@ -7,35 +7,35 @@ import android.text.Layout;
 import android.util.AttributeSet;
 import android.view.ActionMode;
 import android.widget.TextView;
-import defpackage.b15;
-import defpackage.gb5;
+import defpackage.bv7;
+import defpackage.ev5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 class ResizingTextView extends TextView {
-    public final int Q;
-    public final int R;
-    public final boolean S;
-    public final int T;
-    public final int U;
-    public boolean V;
-    public int W;
-    public float a0;
-    public int b0;
-    public int c0;
+    public final int c0;
+    public final int d0;
+    public final boolean e0;
+    public final int f0;
+    public final int g0;
+    public boolean h0;
+    public int i0;
+    public float j0;
+    public int k0;
+    public int l0;
 
     public ResizingTextView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.V = false;
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, gb5.lbResizingTextView, i, 0);
+        this.h0 = false;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ev5.lbResizingTextView, i, 0);
         try {
-            this.Q = typedArrayObtainStyledAttributes.getInt(gb5.lbResizingTextView_resizeTrigger, 1);
-            this.R = typedArrayObtainStyledAttributes.getDimensionPixelSize(gb5.lbResizingTextView_resizedTextSize, -1);
-            this.S = typedArrayObtainStyledAttributes.getBoolean(gb5.lbResizingTextView_maintainLineSpacing, false);
-            this.T = typedArrayObtainStyledAttributes.getDimensionPixelOffset(gb5.lbResizingTextView_resizedPaddingAdjustmentTop, 0);
-            this.U = typedArrayObtainStyledAttributes.getDimensionPixelOffset(gb5.lbResizingTextView_resizedPaddingAdjustmentBottom, 0);
+            this.c0 = obtainStyledAttributes.getInt(ev5.lbResizingTextView_resizeTrigger, 1);
+            this.d0 = obtainStyledAttributes.getDimensionPixelSize(ev5.lbResizingTextView_resizedTextSize, -1);
+            this.e0 = obtainStyledAttributes.getBoolean(ev5.lbResizingTextView_maintainLineSpacing, false);
+            this.f0 = obtainStyledAttributes.getDimensionPixelOffset(ev5.lbResizingTextView_resizedPaddingAdjustmentTop, 0);
+            this.g0 = obtainStyledAttributes.getDimensionPixelOffset(ev5.lbResizingTextView_resizedPaddingAdjustmentBottom, 0);
         } finally {
-            typedArrayObtainStyledAttributes.recycle();
+            obtainStyledAttributes.recycle();
         }
     }
 
@@ -47,85 +47,93 @@ class ResizingTextView extends TextView {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0053  */
-    /* JADX WARN: Code duplicated, block: B:42:0x00cd A[PHI: r2
-      0x00cd: PHI (r2v6 boolean) = (r2v2 boolean), (r2v8 boolean) binds: [B:40:0x00ca, B:27:0x0097] A[DONT_GENERATE, DONT_INLINE]] */
+    /* JADX WARN: Removed duplicated region for block: B:14:0x0060  */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x00d8  */
+    /* JADX WARN: Removed duplicated region for block: B:31:? A[RETURN, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:33:0x009d  */
     @Override // android.widget.TextView, android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final void onMeasure(int i, int i2) {
         boolean z;
         int i3;
         boolean z2 = true;
-        if (!this.V) {
-            this.W = (int) getTextSize();
-            this.a0 = getLineSpacingExtra();
-            this.b0 = getPaddingTop();
-            this.c0 = getPaddingBottom();
-            this.V = true;
+        if (!this.h0) {
+            this.i0 = (int) getTextSize();
+            this.j0 = getLineSpacingExtra();
+            this.k0 = getPaddingTop();
+            this.l0 = getPaddingBottom();
+            this.h0 = true;
         }
         boolean z3 = false;
-        setTextSize(0, this.W);
-        setLineSpacing(this.a0, getLineSpacingMultiplier());
-        a(this.b0, this.c0);
+        setTextSize(0, this.i0);
+        setLineSpacing(this.j0, getLineSpacingMultiplier());
+        a(this.k0, this.l0);
         super.onMeasure(i, i2);
         Layout layout = getLayout();
-        if (layout == null || (this.Q & 1) <= 0) {
-            z = false;
-        } else {
+        if (layout != null && (this.c0 & 1) > 0) {
             int lineCount = layout.getLineCount();
             int maxLines = getMaxLines();
-            if (maxLines <= 1 || lineCount != maxLines) {
-                z = false;
-            } else {
+            if (maxLines > 1 && lineCount == maxLines) {
                 z = true;
+                int textSize = (int) getTextSize();
+                boolean z4 = this.e0;
+                int i4 = this.d0;
+                if (z) {
+                    if (i4 != -1 && textSize != (i3 = this.i0)) {
+                        setTextSize(0, i3);
+                        z3 = true;
+                    }
+                    if (z4) {
+                        float lineSpacingExtra = getLineSpacingExtra();
+                        float f = this.j0;
+                        if (lineSpacingExtra != f) {
+                            setLineSpacing(f, getLineSpacingMultiplier());
+                            z3 = true;
+                        }
+                    }
+                    if (getPaddingTop() != this.k0 || getPaddingBottom() != this.l0) {
+                        a(this.k0, this.l0);
+                    }
+                    z2 = z3;
+                } else {
+                    if (i4 != -1 && textSize != i4) {
+                        setTextSize(0, i4);
+                        z3 = true;
+                    }
+                    float f2 = (this.j0 + this.i0) - i4;
+                    if (z4 && getLineSpacingExtra() != f2) {
+                        setLineSpacing(f2, getLineSpacingMultiplier());
+                        z3 = true;
+                    }
+                    int i5 = this.k0 + this.f0;
+                    int i6 = this.l0 + this.g0;
+                    if (getPaddingTop() != i5 || getPaddingBottom() != i6) {
+                        a(i5, i6);
+                    }
+                    z2 = z3;
+                }
+                if (z2) {
+                    return;
+                }
+                super.onMeasure(i, i2);
+                return;
             }
         }
-        int textSize = (int) getTextSize();
-        boolean z4 = this.S;
-        int i4 = this.R;
+        z = false;
+        int textSize2 = (int) getTextSize();
+        boolean z42 = this.e0;
+        int i42 = this.d0;
         if (z) {
-            if (i4 != -1 && textSize != i4) {
-                setTextSize(0, i4);
-                z3 = true;
-            }
-            float f = (this.a0 + this.W) - i4;
-            if (z4 && getLineSpacingExtra() != f) {
-                setLineSpacing(f, getLineSpacingMultiplier());
-                z3 = true;
-            }
-            int i5 = this.b0 + this.T;
-            int i6 = this.c0 + this.U;
-            if (getPaddingTop() == i5 && getPaddingBottom() == i6) {
-                z2 = z3;
-            } else {
-                a(i5, i6);
-            }
-        } else {
-            if (i4 != -1 && textSize != (i3 = this.W)) {
-                setTextSize(0, i3);
-                z3 = true;
-            }
-            if (z4) {
-                float lineSpacingExtra = getLineSpacingExtra();
-                float f2 = this.a0;
-                if (lineSpacingExtra != f2) {
-                    setLineSpacing(f2, getLineSpacingMultiplier());
-                    z3 = true;
-                }
-            }
-            if (getPaddingTop() == this.b0 && getPaddingBottom() == this.c0) {
-                z2 = z3;
-            } else {
-                a(this.b0, this.c0);
-            }
         }
         if (z2) {
-            super.onMeasure(i, i2);
         }
     }
 
     @Override // android.widget.TextView
     public final void setCustomSelectionActionModeCallback(ActionMode.Callback callback) {
-        super.setCustomSelectionActionModeCallback(b15.X(callback, this));
+        super.setCustomSelectionActionModeCallback(bv7.l(callback, this));
     }
 
     public ResizingTextView(Context context, AttributeSet attributeSet) {

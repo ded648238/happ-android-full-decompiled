@@ -1,6 +1,6 @@
 .class public final enum Lj$/time/temporal/a;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lj$/time/temporal/q;
@@ -48,23 +48,23 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 35
+    .locals 20
 
     .line 1
-    new-instance v0, Lj$/time/temporal/a;
+    new-instance v1, Lj$/time/temporal/a;
 
     .line 2
     .line 3
-    const-wide/16 v1, 0x1
+    const-wide/16 v2, 0x1
 
     .line 4
     .line 5
-    invoke-static {v1, v2}, Lj$/time/Duration;->i(J)Lj$/time/Duration;
+    invoke-static {v2, v3}, Lj$/time/Duration;->C(J)Lj$/time/Duration;
 
     .line 6
     .line 7
     .line 8
-    const-string v3, "NANOS"
+    const-string v0, "NANOS"
 
     .line 9
     .line 10
@@ -75,16 +75,16 @@
 
     .line 12
     .line 13
-    invoke-direct {v0, v3, v4, v5}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v0, v4, v5}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 14
     .line 15
     .line 16
-    sput-object v0, Lj$/time/temporal/a;->NANOS:Lj$/time/temporal/a;
+    sput-object v1, Lj$/time/temporal/a;->NANOS:Lj$/time/temporal/a;
 
     .line 17
     .line 18
-    new-instance v3, Lj$/time/temporal/a;
+    new-instance v0, Lj$/time/temporal/a;
 
     .line 19
     .line 20
@@ -92,7 +92,7 @@
 
     .line 21
     .line 22
-    invoke-static {v5, v6}, Lj$/time/Duration;->i(J)Lj$/time/Duration;
+    invoke-static {v5, v6}, Lj$/time/Duration;->C(J)Lj$/time/Duration;
 
     .line 23
     .line 24
@@ -108,12 +108,12 @@
 
     .line 29
     .line 30
-    invoke-direct {v3, v5, v6, v7}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v5, v6, v7}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 31
     .line 32
     .line 33
-    sput-object v3, Lj$/time/temporal/a;->MICROS:Lj$/time/temporal/a;
+    sput-object v0, Lj$/time/temporal/a;->MICROS:Lj$/time/temporal/a;
 
     .line 34
     .line 35
@@ -121,28 +121,28 @@
 
     .line 36
     .line 37
-    const-wide/32 v7, 0xf4240
+    const-wide/32 v6, 0xf4240
 
     .line 38
     .line 39
     .line 40
-    invoke-static {v7, v8}, Lj$/time/Duration;->i(J)Lj$/time/Duration;
+    invoke-static {v6, v7}, Lj$/time/Duration;->C(J)Lj$/time/Duration;
 
     .line 41
     .line 42
     .line 43
-    const-string v7, "MILLIS"
+    const-string v6, "MILLIS"
 
     .line 44
     .line 45
-    const/4 v8, 0x2
+    const/4 v7, 0x2
 
     .line 46
-    const-string v9, "Millis"
+    const-string v8, "Millis"
 
     .line 47
     .line 48
-    invoke-direct {v5, v7, v8, v9}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v5, v6, v7, v8}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 49
     .line 50
@@ -151,641 +151,531 @@
 
     .line 52
     .line 53
-    new-instance v7, Lj$/time/temporal/a;
+    new-instance v6, Lj$/time/temporal/a;
 
     .line 54
     .line 55
-    invoke-static {v1, v2, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    invoke-static {v2, v3, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
     .line 56
     .line 57
     .line 58
-    const-string v1, "SECONDS"
+    const-string v2, "SECONDS"
 
     .line 59
     .line 60
-    const/4 v2, 0x3
+    const/4 v3, 0x3
 
     .line 61
-    const-string v9, "Seconds"
+    const-string v7, "Seconds"
 
     .line 62
     .line 63
-    invoke-direct {v7, v1, v2, v9}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v6, v2, v3, v7}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 64
     .line 65
     .line 66
-    sput-object v7, Lj$/time/temporal/a;->SECONDS:Lj$/time/temporal/a;
+    sput-object v6, Lj$/time/temporal/a;->SECONDS:Lj$/time/temporal/a;
 
     .line 67
     .line 68
-    new-instance v1, Lj$/time/temporal/a;
+    move-object v3, v5
 
     .line 69
+    new-instance v5, Lj$/time/temporal/a;
+
     .line 70
-    const-wide/16 v9, 0x3c
-
     .line 71
-    .line 72
-    invoke-static {v9, v10, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    const-wide/16 v7, 0x3c
 
+    .line 72
     .line 73
+    invoke-static {v7, v8, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
+
     .line 74
     .line 75
-    const-string v9, "MINUTES"
-
     .line 76
-    .line 77
-    const/4 v10, 0x4
+    const-string v2, "MINUTES"
 
+    .line 77
     .line 78
-    const-string v11, "Minutes"
+    const/4 v7, 0x4
 
     .line 79
-    .line 80
-    invoke-direct {v1, v9, v10, v11}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    const-string v8, "Minutes"
 
+    .line 80
     .line 81
+    invoke-direct {v5, v2, v7, v8}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
     .line 82
     .line 83
-    sput-object v1, Lj$/time/temporal/a;->MINUTES:Lj$/time/temporal/a;
-
     .line 84
-    .line 85
-    new-instance v9, Lj$/time/temporal/a;
+    sput-object v5, Lj$/time/temporal/a;->MINUTES:Lj$/time/temporal/a;
 
+    .line 85
     .line 86
+    move-object v2, v6
+
     .line 87
-    const-wide/16 v11, 0xe10
+    new-instance v6, Lj$/time/temporal/a;
 
     .line 88
     .line 89
-    invoke-static {v11, v12, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    const-wide/16 v7, 0xe10
 
     .line 90
     .line 91
-    .line 92
-    const-string v11, "HOURS"
+    invoke-static {v7, v8, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
+    .line 92
     .line 93
     .line 94
-    const/4 v12, 0x5
+    const-string v7, "HOURS"
 
     .line 95
-    const-string v13, "Hours"
-
     .line 96
+    const/4 v8, 0x5
+
     .line 97
-    invoke-direct {v9, v11, v12, v13}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    const-string v9, "Hours"
 
     .line 98
     .line 99
-    .line 100
-    sput-object v9, Lj$/time/temporal/a;->HOURS:Lj$/time/temporal/a;
+    invoke-direct {v6, v7, v8, v9}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 100
     .line 101
     .line 102
-    new-instance v11, Lj$/time/temporal/a;
+    sput-object v6, Lj$/time/temporal/a;->HOURS:Lj$/time/temporal/a;
 
     .line 103
     .line 104
-    const-wide/32 v13, 0xa8c0
+    new-instance v7, Lj$/time/temporal/a;
 
     .line 105
     .line 106
-    .line 107
-    invoke-static {v13, v14, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    const-wide/32 v8, 0xa8c0
 
+    .line 107
     .line 108
     .line 109
-    .line 110
-    const-string v13, "HALF_DAYS"
+    invoke-static {v8, v9, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
+    .line 110
     .line 111
     .line 112
-    const/4 v14, 0x6
+    const-string v8, "HALF_DAYS"
 
     .line 113
-    const-string v15, "HalfDays"
-
     .line 114
+    const/4 v9, 0x6
+
     .line 115
-    invoke-direct {v11, v13, v14, v15}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    const-string v10, "HalfDays"
 
     .line 116
     .line 117
-    .line 118
-    sput-object v11, Lj$/time/temporal/a;->HALF_DAYS:Lj$/time/temporal/a;
+    invoke-direct {v7, v8, v9, v10}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 118
     .line 119
     .line 120
-    new-instance v13, Lj$/time/temporal/a;
+    sput-object v7, Lj$/time/temporal/a;->HALF_DAYS:Lj$/time/temporal/a;
 
     .line 121
     .line 122
-    move-object v15, v3
+    new-instance v8, Lj$/time/temporal/a;
 
     .line 123
-    const/16 v16, 0x3
-
     .line 124
-    .line 125
-    const-wide/32 v2, 0x15180
+    const-wide/32 v9, 0x15180
 
+    .line 125
     .line 126
     .line 127
-    .line 128
-    invoke-static {v2, v3, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    invoke-static {v9, v10, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
+    .line 128
     .line 129
     .line 130
-    .line 131
-    const-string v2, "DAYS"
+    const-string v9, "DAYS"
 
+    .line 131
     .line 132
+    const/4 v10, 0x7
+
     .line 133
-    const/4 v3, 0x7
+    const-string v11, "Days"
 
     .line 134
-    const/16 v17, 0x1
-
     .line 135
-    .line 136
-    const-string v6, "Days"
+    invoke-direct {v8, v9, v10, v11}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 136
     .line 137
     .line 138
-    invoke-direct {v13, v2, v3, v6}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    sput-object v8, Lj$/time/temporal/a;->DAYS:Lj$/time/temporal/a;
 
     .line 139
     .line 140
+    new-instance v9, Lj$/time/temporal/a;
+
     .line 141
-    sput-object v13, Lj$/time/temporal/a;->DAYS:Lj$/time/temporal/a;
-
     .line 142
-    .line 143
-    new-instance v2, Lj$/time/temporal/a;
+    const-wide/32 v10, 0x93a80
 
+    .line 143
     .line 144
     .line 145
-    move-object/from16 v18, v9
+    invoke-static {v10, v11, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
     .line 146
     .line 147
-    const/4 v6, 0x2
-
     .line 148
-    const-wide/32 v8, 0x93a80
+    const-string v10, "WEEKS"
 
     .line 149
     .line 150
-    .line 151
-    invoke-static {v8, v9, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    const/16 v11, 0x8
 
+    .line 151
     .line 152
+    const-string v12, "Weeks"
+
     .line 153
     .line 154
-    const-string v8, "WEEKS"
+    invoke-direct {v9, v10, v11, v12}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 155
     .line 156
-    const/16 v9, 0x8
-
     .line 157
+    sput-object v9, Lj$/time/temporal/a;->WEEKS:Lj$/time/temporal/a;
+
     .line 158
-    const/16 v19, 0x7
-
     .line 159
+    new-instance v10, Lj$/time/temporal/a;
+
     .line 160
-    const-string v3, "Weeks"
-
     .line 161
-    .line 162
-    invoke-direct {v2, v8, v9, v3}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    const-wide/32 v11, 0x282072
 
+    .line 162
     .line 163
     .line 164
-    .line 165
-    sput-object v2, Lj$/time/temporal/a;->WEEKS:Lj$/time/temporal/a;
+    invoke-static {v11, v12, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
+    .line 165
     .line 166
     .line 167
-    new-instance v3, Lj$/time/temporal/a;
+    const-string v11, "MONTHS"
 
     .line 168
     .line 169
-    move-object v8, v7
+    const/16 v12, 0x9
 
     .line 170
-    const/16 v20, 0x2
-
     .line 171
-    .line 172
-    const-wide/32 v6, 0x282072
+    const-string v13, "Months"
 
+    .line 172
     .line 173
+    invoke-direct {v10, v11, v12, v13}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
     .line 174
     .line 175
-    invoke-static {v6, v7, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
-
     .line 176
+    sput-object v10, Lj$/time/temporal/a;->MONTHS:Lj$/time/temporal/a;
+
     .line 177
     .line 178
-    const-string v6, "MONTHS"
+    new-instance v11, Lj$/time/temporal/a;
 
     .line 179
     .line 180
-    const/16 v7, 0x9
+    const-wide/32 v12, 0x1e18558
 
     .line 181
     .line 182
-    const/16 v21, 0x8
-
     .line 183
-    .line 184
-    const-string v9, "Months"
+    invoke-static {v12, v13, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
+    .line 184
     .line 185
     .line 186
-    invoke-direct {v3, v6, v7, v9}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    const-string v12, "YEARS"
 
     .line 187
     .line 188
+    const/16 v13, 0xa
+
     .line 189
-    sput-object v3, Lj$/time/temporal/a;->MONTHS:Lj$/time/temporal/a;
-
     .line 190
+    const-string v14, "Years"
+
     .line 191
-    new-instance v6, Lj$/time/temporal/a;
-
     .line 192
+    invoke-direct {v11, v12, v13, v14}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
     .line 193
-    move-object v9, v8
-
     .line 194
-    const/16 v22, 0x9
-
     .line 195
-    .line 196
-    const-wide/32 v7, 0x1e18558
+    sput-object v11, Lj$/time/temporal/a;->YEARS:Lj$/time/temporal/a;
 
+    .line 196
     .line 197
+    new-instance v12, Lj$/time/temporal/a;
+
     .line 198
     .line 199
-    invoke-static {v7, v8, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    const-wide/32 v13, 0x12cf3570
 
     .line 200
     .line 201
     .line 202
-    const-string v7, "YEARS"
+    invoke-static {v13, v14, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
     .line 203
     .line 204
-    const/16 v8, 0xa
-
     .line 205
+    const-string v13, "DECADES"
+
     .line 206
-    const/16 v23, 0x4
-
     .line 207
+    const/16 v14, 0xb
+
     .line 208
-    const-string v10, "Years"
-
     .line 209
-    .line 210
-    invoke-direct {v6, v7, v8, v10}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    const-string v15, "Decades"
 
+    .line 210
     .line 211
+    invoke-direct {v12, v13, v14, v15}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
     .line 212
     .line 213
-    sput-object v6, Lj$/time/temporal/a;->YEARS:Lj$/time/temporal/a;
-
     .line 214
+    sput-object v12, Lj$/time/temporal/a;->DECADES:Lj$/time/temporal/a;
+
     .line 215
-    new-instance v7, Lj$/time/temporal/a;
-
     .line 216
-    .line 217
-    move-object v10, v9
+    new-instance v13, Lj$/time/temporal/a;
 
+    .line 217
     .line 218
-    const/16 v24, 0xa
+    const-wide v14, 0xbc181660L
 
     .line 219
     .line 220
-    const-wide/32 v8, 0x12cf3570
-
     .line 221
     .line 222
     .line 223
-    invoke-static {v8, v9, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    invoke-static {v14, v15, v4}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
     .line 224
     .line 225
     .line 226
-    const-string v8, "DECADES"
+    const-string v14, "CENTURIES"
 
     .line 227
     .line 228
-    const/16 v9, 0xb
+    const/16 v15, 0xc
 
     .line 229
     .line 230
-    const/16 v25, 0x5
+    const-string v4, "Centuries"
 
     .line 231
     .line 232
-    const-string v12, "Decades"
+    invoke-direct {v13, v14, v15, v4}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 233
     .line 234
-    invoke-direct {v7, v8, v9, v12}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
     .line 235
+    sput-object v13, Lj$/time/temporal/a;->CENTURIES:Lj$/time/temporal/a;
+
     .line 236
     .line 237
-    sput-object v7, Lj$/time/temporal/a;->DECADES:Lj$/time/temporal/a;
+    new-instance v14, Lj$/time/temporal/a;
 
     .line 238
     .line 239
-    new-instance v8, Lj$/time/temporal/a;
+    move-object v15, v0
 
     .line 240
+    move-object v4, v1
+
     .line 241
-    move-object v12, v10
+    const-wide v0, 0x758f0dfc0L
 
     .line 242
-    const/16 v26, 0xb
-
     .line 243
     .line 244
-    const-wide v9, 0xbc181660L
-
     .line 245
     .line 246
+    move-object/from16 v17, v2
+
     .line 247
     .line 248
+    const/4 v2, 0x0
+
     .line 249
-    invoke-static {v9, v10, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    invoke-static {v0, v1, v2}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
 
     .line 250
     .line 251
     .line 252
-    const-string v9, "CENTURIES"
+    const-string v0, "MILLENNIA"
 
     .line 253
     .line 254
-    const/16 v10, 0xc
+    const/16 v1, 0xd
 
     .line 255
     .line 256
-    const/16 v27, 0x6
+    const-string v2, "Millennia"
 
     .line 257
     .line 258
-    const-string v14, "Centuries"
+    invoke-direct {v14, v0, v1, v2}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 259
     .line 260
-    invoke-direct {v8, v9, v10, v14}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
     .line 261
+    sput-object v14, Lj$/time/temporal/a;->MILLENNIA:Lj$/time/temporal/a;
+
     .line 262
     .line 263
-    sput-object v8, Lj$/time/temporal/a;->CENTURIES:Lj$/time/temporal/a;
+    move-object v2, v15
 
     .line 264
+    new-instance v15, Lj$/time/temporal/a;
+
     .line 265
-    new-instance v9, Lj$/time/temporal/a;
-
     .line 266
+    const-wide v0, 0x701ce172277000L
+
     .line 267
-    move-object v14, v11
-
     .line 268
-    const/16 v28, 0xc
-
     .line 269
     .line 270
-    const-wide v10, 0x758f0dfc0L
-
     .line 271
+    move-object/from16 v18, v2
+
     .line 272
     .line 273
-    .line 274
-    .line 275
-    invoke-static {v10, v11, v4}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    const/4 v2, 0x0
 
+    .line 274
+    invoke-static {v0, v1, v2}, Lj$/time/Duration;->x(JI)Lj$/time/Duration;
+
+    .line 275
     .line 276
     .line 277
+    const-string v0, "ERAS"
+
     .line 278
-    const-string v10, "MILLENNIA"
-
     .line 279
+    const/16 v1, 0xe
+
     .line 280
-    const/16 v11, 0xd
-
     .line 281
+    const-string v2, "Eras"
+
     .line 282
-    const-string v4, "Millennia"
-
     .line 283
-    .line 284
-    invoke-direct {v9, v10, v11, v4}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v15, v0, v1, v2}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 284
     .line 285
     .line 286
+    sput-object v15, Lj$/time/temporal/a;->ERAS:Lj$/time/temporal/a;
+
     .line 287
-    sput-object v9, Lj$/time/temporal/a;->MILLENNIA:Lj$/time/temporal/a;
-
     .line 288
+    new-instance v0, Lj$/time/temporal/a;
+
     .line 289
-    new-instance v4, Lj$/time/temporal/a;
-
     .line 290
+    const-wide v1, 0x7fffffffffffffffL
+
     .line 291
-    move-object v10, v12
-
     .line 292
-    const/16 v30, 0xd
-
     .line 293
     .line 294
-    const-wide v11, 0x701ce172277000L
-
     .line 295
+    move-object/from16 v16, v3
+
     .line 296
     .line 297
+    move-object/from16 v19, v4
+
     .line 298
     .line 299
-    move-object/from16 v31, v0
+    const-wide/32 v3, 0x3b9ac9ff
 
     .line 300
     .line 301
-    const/4 v0, 0x0
-
     .line 302
-    invoke-static {v11, v12, v0}, Lj$/time/Duration;->h(JI)Lj$/time/Duration;
+    invoke-static {v1, v2, v3, v4}, Lj$/time/Duration;->ofSeconds(JJ)Lj$/time/Duration;
 
     .line 303
     .line 304
     .line 305
-    const-string v0, "ERAS"
+    const-string v1, "FOREVER"
 
     .line 306
     .line 307
-    const/16 v11, 0xe
+    const/16 v2, 0xf
 
     .line 308
     .line 309
-    const-string v12, "Eras"
+    const-string v3, "Forever"
 
     .line 310
     .line 311
-    invoke-direct {v4, v0, v11, v12}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 312
     .line 313
     .line 314
-    sput-object v4, Lj$/time/temporal/a;->ERAS:Lj$/time/temporal/a;
+    sput-object v0, Lj$/time/temporal/a;->FOREVER:Lj$/time/temporal/a;
 
     .line 315
     .line 316
-    new-instance v0, Lj$/time/temporal/a;
+    move-object/from16 v3, v16
 
     .line 317
     .line 318
-    const/16 v32, 0xe
+    move-object/from16 v4, v17
 
     .line 319
     .line 320
-    const-wide v11, 0x7fffffffffffffffL
+    move-object/from16 v2, v18
 
     .line 321
     .line 322
+    move-object/from16 v1, v19
+
     .line 323
     .line 324
+    move-object/from16 v16, v0
+
     .line 325
-    move-object/from16 v33, v1
-
     .line 326
-    .line 327
-    move-object/from16 v34, v2
+    filled-new-array/range {v1 .. v16}, [Lj$/time/temporal/a;
 
+    .line 327
     .line 328
     .line 329
-    const-wide/32 v1, 0x3b9ac9ff
+    move-result-object v0
 
     .line 330
+    sput-object v0, Lj$/time/temporal/a;->b:[Lj$/time/temporal/a;
+
     .line 331
     .line 332
-    invoke-static {v11, v12, v1, v2}, Lj$/time/Duration;->ofSeconds(JJ)Lj$/time/Duration;
-
-    .line 333
-    .line 334
-    .line 335
-    const-string v1, "FOREVER"
-
-    .line 336
-    .line 337
-    const/16 v2, 0xf
-
-    .line 338
-    .line 339
-    const-string v11, "Forever"
-
-    .line 340
-    .line 341
-    invoke-direct {v0, v1, v2, v11}, Lj$/time/temporal/a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    .line 342
-    .line 343
-    .line 344
-    sput-object v0, Lj$/time/temporal/a;->FOREVER:Lj$/time/temporal/a;
-
-    .line 345
-    .line 346
-    const/16 v1, 0x10
-
-    .line 347
-    .line 348
-    new-array v1, v1, [Lj$/time/temporal/a;
-
-    .line 349
-    .line 350
-    const/16 v29, 0x0
-
-    .line 351
-    .line 352
-    aput-object v31, v1, v29
-
-    .line 353
-    .line 354
-    aput-object v15, v1, v17
-
-    .line 355
-    .line 356
-    aput-object v5, v1, v20
-
-    .line 357
-    .line 358
-    aput-object v10, v1, v16
-
-    .line 359
-    .line 360
-    aput-object v33, v1, v23
-
-    .line 361
-    .line 362
-    aput-object v18, v1, v25
-
-    .line 363
-    .line 364
-    aput-object v14, v1, v27
-
-    .line 365
-    .line 366
-    aput-object v13, v1, v19
-
-    .line 367
-    .line 368
-    aput-object v34, v1, v21
-
-    .line 369
-    .line 370
-    aput-object v3, v1, v22
-
-    .line 371
-    .line 372
-    aput-object v6, v1, v24
-
-    .line 373
-    .line 374
-    aput-object v7, v1, v26
-
-    .line 375
-    .line 376
-    aput-object v8, v1, v28
-
-    .line 377
-    .line 378
-    aput-object v9, v1, v30
-
-    .line 379
-    .line 380
-    aput-object v4, v1, v32
-
-    .line 381
-    .line 382
-    aput-object v0, v1, v2
-
-    .line 383
-    .line 384
-    sput-object v1, Lj$/time/temporal/a;->b:[Lj$/time/temporal/a;
-
-    .line 385
-    .line 386
     return-void
 .end method
 
@@ -853,7 +743,7 @@
 
 
 # virtual methods
-.method public final g(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
+.method public final t(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
     .locals 0
 
     .line 1
@@ -862,19 +752,19 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    return-object p1
+    return-object p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lj$/time/temporal/a;->a:Ljava/lang/String;
+    iget-object p0, p0, Lj$/time/temporal/a;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

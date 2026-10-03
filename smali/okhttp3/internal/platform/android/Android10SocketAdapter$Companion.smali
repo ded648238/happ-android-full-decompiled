@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/Android10SocketAdapter$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -47,7 +47,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -62,7 +62,7 @@
 
 # virtual methods
 .method public final buildIfSupported()Lokhttp3/internal/platform/android/SocketAdapter;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Lokhttp3/internal/platform/android/Android10SocketAdapter$Companion;->isSupported()Z
@@ -70,73 +70,73 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 6
     .line 7
-    new-instance v0, Lokhttp3/internal/platform/android/Android10SocketAdapter;
+    new-instance p0, Lokhttp3/internal/platform/android/Android10SocketAdapter;
 
     .line 8
     .line 9
-    invoke-direct {v0}, Lokhttp3/internal/platform/android/Android10SocketAdapter;-><init>()V
+    invoke-direct {p0}, Lokhttp3/internal/platform/android/Android10SocketAdapter;-><init>()V
 
     .line 10
     .line 11
     .line 12
-    return-object v0
+    return-object p0
 
     .line 13
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 14
-    return-object v0
+    return-object p0
 .end method
 
 .method public final isSupported()Z
-    .locals 2
+    .locals 1
 
     .line 1
-    sget-object v0, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
+    sget-object p0, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/platform/Platform$Companion;->isAndroid()Z
+    invoke-virtual {p0}, Lokhttp3/internal/platform/Platform$Companion;->isAndroid()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget p0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 10
     .line 11
-    const/16 v1, 0x1d
+    const/16 v0, 0x1d
 
     .line 12
     .line 13
-    if-lt v0, v1, :cond_0
+    if-lt p0, v0, :cond_0
 
     .line 14
     .line 15
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 16
-    return v0
+    return p0
 
     .line 17
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return v0
+    return p0
 .end method

@@ -1,121 +1,162 @@
 package defpackage;
 
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Insets;
-import android.graphics.Outline;
-import android.graphics.Path;
-import android.graphics.Rect;
-import android.graphics.RectF;
-import android.graphics.drawable.Icon;
-import android.net.NetworkRequest;
-import android.net.NetworkSpecifier;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Vibrator;
-import android.os.ext.SdkExtensions;
-import android.view.DisplayCutout;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.accessibility.AccessibilityNodeInfo;
-import android.view.inputmethod.EditorInfo;
-import org.conscrypt.PSKKeyManager;
+import android.content.IntentFilter;
+import android.view.MenuItem;
+import java.util.ArrayList;
+import java.util.concurrent.CopyOnWriteArraySet;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class q3 {
-    public static Context a(Context context, String str) {
-        return context.createAttributionContext(str);
-    }
+    public Object a;
+    public Object b;
 
-    public static Icon b(Uri uri) {
-        return Icon.createWithAdaptiveBitmapContentUri(uri);
-    }
-
-    public static String c(Context context) {
-        return context.getAttributionTag();
-    }
-
-    public static Rect d(WindowManager windowManager) {
-        return windowManager.getCurrentWindowMetrics().getBounds();
-    }
-
-    public static NetworkSpecifier e(NetworkRequest networkRequest) {
-        return networkRequest.getNetworkSpecifier();
-    }
-
-    public static CharSequence f(AccessibilityNodeInfo accessibilityNodeInfo) {
-        return accessibilityNodeInfo.getStateDescription();
-    }
-
-    public static String g(z5 z5Var) {
-        if (z5Var instanceof y5) {
-            return "image/*";
+    public q3(int i, boolean z) {
+        switch (i) {
+            case 3:
+                this.a = ic4.g(1);
+                this.b = new sv0();
+                break;
+            case 4:
+            default:
+                this.b = new int[2];
+                break;
+            case 5:
+                this.a = new CopyOnWriteArraySet();
+                this.b = new CopyOnWriteArraySet();
+                break;
         }
-        if (z5Var instanceof x5) {
+    }
+
+    public static float j(int i, int i2, int i3) {
+        return l93.l((i - i2) / i3, 0.0f, 1.0f);
+    }
+
+    public void d(String str) {
+        ((CopyOnWriteArraySet) this.a).add(str);
+        ((CopyOnWriteArraySet) this.b).remove(str);
+    }
+
+    public abstract void e();
+
+    public void f() {
+        xo xoVar = (xo) this.a;
+        if (xoVar != null) {
+            try {
+                ((ap) this.b).j0.unregisterReceiver(xoVar);
+            } catch (IllegalArgumentException unused) {
+            }
+            this.a = null;
+        }
+    }
+
+    public abstract IntentFilter g();
+
+    public abstract int[] h(int i);
+
+    public abstract int i();
+
+    public MenuItem k(MenuItem menuItem) {
+        if (!(menuItem instanceof oj7)) {
+            return menuItem;
+        }
+        oj7 oj7Var = (oj7) menuItem;
+        if (((jx6) this.b) == null) {
+            this.b = new jx6(0);
+        }
+        MenuItem menuItem2 = (MenuItem) ((jx6) this.b).get(oj7Var);
+        if (menuItem2 != null) {
+            return menuItem2;
+        }
+        pj4 pj4Var = new pj4((Context) this.a, oj7Var);
+        ((jx6) this.b).put(oj7Var, pj4Var);
+        return pj4Var;
+    }
+
+    public int[] l(int i, int i2) {
+        if (i < 0 || i2 < 0 || i == i2) {
             return null;
         }
-        en0.d();
-        return null;
+        int[] iArr = (int[]) this.b;
+        iArr[0] = i;
+        iArr[1] = i2;
+        return iArr;
     }
 
-    public static Insets h(DisplayCutout displayCutout) {
-        return displayCutout.getWaterfallInsets();
-    }
-
-    public static boolean i(Context context) {
-        return Build.VERSION.SDK_INT >= 31 && ((Vibrator) context.getSystemService(Vibrator.class)).areAllPrimitivesSupported(1, 7, 2);
-    }
-
-    public static boolean j() {
-        int i = Build.VERSION.SDK_INT;
-        if (i >= 33) {
-            return true;
+    public String m() {
+        String str = (String) this.a;
+        if (str != null) {
+            return str;
         }
-        return i >= 30 && SdkExtensions.getExtensionVersion(30) >= 2;
+        m93.a0("text");
+        throw null;
     }
 
-    public static boolean k(Canvas canvas, float f, float f2, float f3, float f4) {
-        return canvas.quickReject(f, f2, f3, f4);
-    }
+    public abstract void n();
 
-    public static boolean l(Canvas canvas, Path path) {
-        return canvas.quickReject(path);
-    }
+    public abstract void o();
 
-    public static boolean m(Canvas canvas, RectF rectF) {
-        return canvas.quickReject(rectF);
-    }
+    public abstract int[] p(int i);
 
-    public static void n(Window window, boolean z) {
-        View decorView = window.getDecorView();
-        int systemUiVisibility = decorView.getSystemUiVisibility();
-        decorView.setSystemUiVisibility(z ? systemUiVisibility & (-257) : systemUiVisibility | PSKKeyManager.MAX_KEY_LENGTH_BYTES);
-        window.setDecorFitsSystemWindows(z);
-    }
+    public abstract void q(x00 x00Var);
 
-    public static void o(Window window, boolean z) {
-        window.setDecorFitsSystemWindows(z);
-    }
+    public abstract void r();
 
-    public static void p(View view) {
-        view.setImportantForContentCapture(1);
-    }
-
-    public static void q(EditorInfo editorInfo, CharSequence charSequence) {
-        editorInfo.setInitialSurroundingSubText(charSequence, 0);
-    }
-
-    public static void r(Outline outline, pp4 pp4Var) {
-        if (pp4Var instanceof ee) {
-            outline.setPath(((ee) pp4Var).a);
+    public void s(boolean z) {
+        CopyOnWriteArraySet copyOnWriteArraySet = (CopyOnWriteArraySet) this.b;
+        CopyOnWriteArraySet copyOnWriteArraySet2 = (CopyOnWriteArraySet) this.a;
+        if (z) {
+            copyOnWriteArraySet2.add("android.widget.ImageView");
+            copyOnWriteArraySet.remove("android.widget.ImageView");
         } else {
-            fn.l("Unable to obtain android.graphics.Path");
+            copyOnWriteArraySet.add("android.widget.ImageView");
+            copyOnWriteArraySet2.remove("android.widget.ImageView");
         }
     }
 
-    public static void s(AccessibilityNodeInfo accessibilityNodeInfo, CharSequence charSequence) {
-        accessibilityNodeInfo.setStateDescription(charSequence);
+    public void t(boolean z) {
+        CopyOnWriteArraySet copyOnWriteArraySet = (CopyOnWriteArraySet) this.b;
+        CopyOnWriteArraySet copyOnWriteArraySet2 = (CopyOnWriteArraySet) this.a;
+        if (z) {
+            copyOnWriteArraySet2.add("android.widget.TextView");
+            copyOnWriteArraySet.remove("android.widget.TextView");
+        } else {
+            copyOnWriteArraySet.add("android.widget.TextView");
+            copyOnWriteArraySet2.remove("android.widget.TextView");
+        }
+    }
+
+    public void u() {
+        f();
+        IntentFilter g = g();
+        if (g.countActions() == 0) {
+            return;
+        }
+        if (((xo) this.a) == null) {
+            this.a = new xo(this);
+        }
+        ((ap) this.b).j0.registerReceiver((xo) this.a, g);
+    }
+
+    public abstract void v();
+
+    public abstract void w();
+
+    public abstract void x();
+
+    public q3(int i) {
+        this.b = new ArrayList();
+        for (int i2 = 0; i2 < i; i2++) {
+            ((ArrayList) this.b).add(new os1());
+        }
+    }
+
+    public q3(Context context) {
+        this.a = context;
+    }
+
+    public q3(ap apVar) {
+        this.b = apVar;
     }
 }

@@ -1,39 +1,24 @@
 package defpackage;
 
-import android.window.OnBackInvokedCallback;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class yk extends kk {
+    public final ym2[] n0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class yk implements OnBackInvokedCallback {
-    public final /* synthetic */ int a;
-    public final /* synthetic */ Object b;
-
-    public /* synthetic */ yk(int i, Object obj) {
-        this.a = i;
-        this.b = obj;
+    public yk(d58 d58Var, ym2 ym2Var, ym2[] ym2VarArr) {
+        super(d58Var, ym2Var);
+        this.n0 = ym2VarArr;
     }
 
-    @Override // android.window.OnBackInvokedCallback
-    public final void onBackInvoked() {
-        switch (this.a) {
-            case 0:
-                g72 g72Var = (g72) this.b;
-                if (g72Var != null) {
-                    g72Var.invoke();
-                }
-                break;
-            case 1:
-                ((mn) this.b).D();
-                break;
-            case 2:
-                ((gz3) this.b).a();
-                break;
-            case 3:
-                ((lh4) this.b).invoke();
-                break;
-            default:
-                ((Runnable) this.b).run();
-                break;
-        }
+    public final pk J0(int i) {
+        r38 L0 = L0(i);
+        ym2[] ym2VarArr = this.n0;
+        return new pk(this, L0, this.l0, (ym2VarArr == null || i < 0 || i >= ym2VarArr.length) ? null : ym2VarArr[i], i);
     }
+
+    public abstract int K0();
+
+    public abstract r38 L0(int i);
+
+    public abstract Class M0(int i);
 }

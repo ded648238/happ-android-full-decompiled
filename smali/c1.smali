@@ -1,30 +1,27 @@
-.class public final Lc1;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lc1;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lx31;
 
 
 # instance fields
-.field public T:Lix5;
-
-.field public synthetic U:Ljava/lang/Object;
-
-.field public final synthetic V:Lvt0;
-
-.field public W:I
+.field public final X:Ly31;
 
 
 # direct methods
-.method public constructor <init>(Lvt0;Lyv0;)V
+.method public constructor <init>(Ly31;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lc1;->V:Lvt0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
-
     .line 4
+    iput-object p1, p0, Lc1;->X:Ly31;
+
     .line 5
     .line 6
     return-void
@@ -32,43 +29,73 @@
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final bridge B0(Lz31;)Lz31;
+    .locals 0
 
     .line 1
-    iput-object p1, p0, Lc1;->U:Ljava/lang/Object;
+    invoke-static {p0, p1}, Ljf1;->M(Lx31;Lz31;)Lz31;
 
     .line 2
     .line 3
-    iget p1, p0, Lc1;->W:I
-
     .line 4
+    move-result-object p0
+
     .line 5
-    const/high16 v0, -0x80000000
+    return-object p0
+.end method
 
-    .line 6
-    .line 7
-    or-int/2addr p1, v0
+.method public bridge G0(Ly31;)Lx31;
+    .locals 0
 
-    .line 8
-    iput p1, p0, Lc1;->W:I
+    .line 1
+    invoke-static {p0, p1}, Ljf1;->v(Lx31;Ly31;)Lx31;
 
-    .line 9
-    .line 10
-    iget-object p1, p0, Lc1;->V:Lvt0;
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
 
-    .line 11
-    .line 12
-    const/4 v0, 0x0
+    .line 5
+    return-object p0
+.end method
 
-    .line 13
-    invoke-virtual {p1, v0, p0}, Lvt0;->a(Li02;Lyv0;)Ljava/lang/Object;
+.method public final U(Lxi2;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
+    .line 1
+    invoke-interface {p1, p2, p0}, Lxi2;->H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 17
-    return-object p1
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public bridge Z(Ly31;)Lz31;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Ljf1;->K(Lx31;Ly31;)Lz31;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final getKey()Ly31;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lc1;->X:Ly31;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

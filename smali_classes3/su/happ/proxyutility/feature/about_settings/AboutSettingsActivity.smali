@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;
 .super Lsu/happ/proxyutility/ui/BaseActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,15 +26,15 @@
 
 
 # static fields
-.field public static final synthetic F0:I
+.field public static final synthetic Q0:I
 
 
 # instance fields
-.field public C0:Le5;
+.field public N0:Lq5;
 
-.field public final D0:Ll5;
+.field public final O0:Lv5;
 
-.field public final E0:Lzu6;
+.field public final P0:Lmm7;
 
 
 # direct methods
@@ -59,19 +59,19 @@
     .line 8
     .line 9
     .line 10
-    new-instance v1, Ll5;
+    new-instance v1, Lv5;
 
     .line 11
     .line 12
-    const-class v2, Lx;
+    const-class v2, Lv;
 
     .line 13
     .line 14
-    sget-object v3, Lhg5;->a:Lig5;
+    sget-object v3, Lp06;->a:Lq06;
 
     .line 15
     .line 16
-    invoke-virtual {v3, v2}, Lig5;->b(Ljava/lang/Class;)Lx63;
+    invoke-virtual {v3, v2}, Lq06;->b(Ljava/lang/Class;)Lgn3;
 
     .line 17
     .line 18
@@ -103,12 +103,12 @@
     .line 30
     .line 31
     .line 32
-    invoke-direct {v1, v2, v3, v0, v4}, Ll5;-><init>(Lx63;Lg72;Lg72;Lg72;)V
+    invoke-direct {v1, v2, v3, v0, v4}, Lv5;-><init>(Lgn3;Lji2;Lji2;Lji2;)V
 
     .line 33
     .line 34
     .line 35
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->D0:Ll5;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->O0:Lv5;
 
     .line 36
     .line 37
@@ -124,16 +124,16 @@
     .line 41
     .line 42
     .line 43
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 44
     .line 45
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 46
     .line 47
     .line 48
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->E0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->P0:Lmm7;
 
     .line 49
     .line 50
@@ -163,7 +163,7 @@
     move-result-object v1
 
     .line 10
-    sget v2, Lt95;->activity_about_settings:I
+    sget v2, Ltt5;->activity_about_settings:I
 
     .line 11
     .line 12
@@ -181,11 +181,11 @@
     move-result-object v1
 
     .line 18
-    sget v2, Ld95;->cl_about_block_3:I
+    sget v2, Let5;->cl_about_block_3:I
 
     .line 19
     .line 20
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 21
     .line 22
@@ -201,11 +201,11 @@
 
     .line 27
     .line 28
-    sget v2, Ld95;->divider_android_version:I
+    sget v2, Let5;->divider_android_version:I
 
     .line 29
     .line 30
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 31
     .line 32
@@ -221,11 +221,11 @@
 
     .line 37
     .line 38
-    sget v2, Ld95;->divider_email:I
+    sget v2, Let5;->divider_email:I
 
     .line 39
     .line 40
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 41
     .line 42
@@ -241,11 +241,11 @@
 
     .line 47
     .line 48
-    sget v2, Ld95;->divider_licenses:I
+    sget v2, Let5;->divider_licenses:I
 
     .line 49
     .line 50
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 51
     .line 52
@@ -261,11 +261,11 @@
 
     .line 57
     .line 58
-    sget v2, Ld95;->divider_model_name:I
+    sget v2, Let5;->divider_model_name:I
 
     .line 59
     .line 60
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 61
     .line 62
@@ -281,11 +281,11 @@
 
     .line 67
     .line 68
-    sget v2, Ld95;->divider_policy:I
+    sget v2, Let5;->divider_policy:I
 
     .line 69
     .line 70
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 71
     .line 72
@@ -301,11 +301,11 @@
 
     .line 77
     .line 78
-    sget v2, Ld95;->divider_terms:I
+    sget v2, Let5;->divider_terms:I
 
     .line 79
     .line 80
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 81
     .line 82
@@ -321,11 +321,11 @@
 
     .line 87
     .line 88
-    sget v2, Ld95;->divider_xray_version:I
+    sget v2, Let5;->divider_xray_version:I
 
     .line 89
     .line 90
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 91
     .line 92
@@ -341,11 +341,11 @@
 
     .line 97
     .line 98
-    sget v2, Ld95;->ff_libraries:I
+    sget v2, Let5;->ff_libraries:I
 
     .line 99
     .line 100
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 101
     .line 102
@@ -364,11 +364,11 @@
 
     .line 108
     .line 109
-    sget v2, Ld95;->ff_policy:I
+    sget v2, Let5;->ff_policy:I
 
     .line 110
     .line 111
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 112
     .line 113
@@ -387,11 +387,11 @@
 
     .line 119
     .line 120
-    sget v2, Ld95;->ff_terms:I
+    sget v2, Let5;->ff_terms:I
 
     .line 121
     .line 122
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 123
     .line 124
@@ -410,11 +410,11 @@
 
     .line 130
     .line 131
-    sget v2, Ld95;->if_android_version:I
+    sget v2, Let5;->if_android_version:I
 
     .line 132
     .line 133
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 134
     .line 135
@@ -433,11 +433,11 @@
 
     .line 141
     .line 142
-    sget v2, Ld95;->if_app_version:I
+    sget v2, Let5;->if_app_version:I
 
     .line 143
     .line 144
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 145
     .line 146
@@ -456,11 +456,11 @@
 
     .line 152
     .line 153
-    sget v2, Ld95;->if_email:I
+    sget v2, Let5;->if_email:I
 
     .line 154
     .line 155
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 156
     .line 157
@@ -479,11 +479,11 @@
 
     .line 163
     .line 164
-    sget v2, Ld95;->if_hwid:I
+    sget v2, Let5;->if_hwid:I
 
     .line 165
     .line 166
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 167
     .line 168
@@ -502,11 +502,11 @@
 
     .line 174
     .line 175
-    sget v2, Ld95;->if_model_name:I
+    sget v2, Let5;->if_model_name:I
 
     .line 176
     .line 177
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 178
     .line 179
@@ -525,11 +525,11 @@
 
     .line 185
     .line 186
-    sget v2, Ld95;->if_telegram:I
+    sget v2, Let5;->if_telegram:I
 
     .line 187
     .line 188
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 189
     .line 190
@@ -549,11 +549,11 @@
 
     .line 197
     .line 198
-    sget v2, Ld95;->if_xray_version:I
+    sget v2, Let5;->if_xray_version:I
 
     .line 199
     .line 200
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 201
     .line 202
@@ -573,11 +573,11 @@
 
     .line 209
     .line 210
-    sget v2, Ld95;->ll_about_block_1:I
+    sget v2, Let5;->ll_about_block_1:I
 
     .line 211
     .line 212
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 213
     .line 214
@@ -593,11 +593,11 @@
 
     .line 219
     .line 220
-    sget v2, Ld95;->ll_about_block_2:I
+    sget v2, Let5;->ll_about_block_2:I
 
     .line 221
     .line 222
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 223
     .line 224
@@ -613,11 +613,11 @@
 
     .line 229
     .line 230
-    sget v2, Ld95;->ll_main:I
+    sget v2, Let5;->ll_main:I
 
     .line 231
     .line 232
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 233
     .line 234
@@ -633,11 +633,11 @@
 
     .line 239
     .line 240
-    sget v2, Ld95;->scroll_view:I
+    sget v2, Let5;->scroll_view:I
 
     .line 241
     .line 242
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 243
     .line 244
@@ -657,11 +657,11 @@
 
     .line 251
     .line 252
-    sget v2, Ld95;->title_device:I
+    sget v2, Let5;->title_device:I
 
     .line 253
     .line 254
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 255
     .line 256
@@ -677,11 +677,11 @@
 
     .line 261
     .line 262
-    sget v2, Ld95;->title_links:I
+    sget v2, Let5;->title_links:I
 
     .line 263
     .line 264
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 265
     .line 266
@@ -697,11 +697,11 @@
 
     .line 271
     .line 272
-    sget v2, Ld95;->title_server:I
+    sget v2, Let5;->title_server:I
 
     .line 273
     .line 274
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 275
     .line 276
@@ -717,11 +717,11 @@
 
     .line 281
     .line 282
-    sget v2, Ld95;->toolbar:I
+    sget v2, Let5;->toolbar:I
 
     .line 283
     .line 284
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 285
     .line 286
@@ -741,7 +741,7 @@
 
     .line 293
     .line 294
-    new-instance v6, Le5;
+    new-instance v6, Lq5;
 
     .line 295
     .line 296
@@ -752,12 +752,12 @@
 
     .line 298
     .line 299
-    invoke-direct/range {v6 .. v19}, Le5;-><init>(Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Landroid/widget/ScrollView;Landroidx/appcompat/widget/Toolbar;)V
+    invoke-direct/range {v6 .. v19}, Lq5;-><init>(Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Landroid/widget/ScrollView;Landroidx/appcompat/widget/Toolbar;)V
 
     .line 300
     .line 301
     .line 302
-    iput-object v6, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    iput-object v6, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 303
     .line 304
@@ -766,7 +766,7 @@
     .line 305
     .line 306
     .line 307
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 308
     .line 309
@@ -778,785 +778,845 @@
 
     .line 312
     .line 313
-    iget-object v1, v1, Le5;->Q:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Lq5;->X:Ljava/lang/Object;
 
     .line 314
     .line 315
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast v1, Landroid/widget/LinearLayout;
 
     .line 316
     .line 317
-    .line 318
-    invoke-virtual {v0, v1}, Lsu/happ/proxyutility/ui/BaseActivity;->setBarsParams(Landroid/view/View;)V
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 318
     .line 319
     .line 320
-    .line 321
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    invoke-virtual {v0, v1}, Lsu/happ/proxyutility/ui/BaseActivity;->setBarsParams(Landroid/view/View;)V
 
+    .line 321
     .line 322
     .line 323
-    if-eqz v1, :cond_c
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 324
     .line 325
-    iget-object v1, v1, Le5;->c0:Landroidx/appcompat/widget/Toolbar;
+    if-eqz v1, :cond_c
 
     .line 326
     .line 327
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AppCompatActivity;->p(Landroidx/appcompat/widget/Toolbar;)V
+    iget-object v1, v1, Lq5;->l0:Ljava/lang/Object;
 
     .line 328
     .line 329
+    check-cast v1, Landroidx/appcompat/widget/Toolbar;
+
     .line 330
-    sget v1, Lx95;->about_title:I
-
     .line 331
-    .line 332
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AppCompatActivity;->q(Landroidx/appcompat/widget/Toolbar;)V
 
+    .line 332
     .line 333
     .line 334
-    .line 335
-    move-result-object v1
+    sget v1, Lxt5;->about_title:I
 
+    .line 335
     .line 336
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     .line 337
     .line 338
     .line 339
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->E0:Lzu6;
-
-    .line 340
-    .line 341
-    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
-
-    .line 342
-    .line 343
-    .line 344
     move-result-object v1
 
+    .line 340
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V
+
+    .line 341
+    .line 342
+    .line 343
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->P0:Lmm7;
+
+    .line 344
     .line 345
-    check-cast v1, Lq;
+    invoke-virtual {v1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 346
     .line 347
-    invoke-static {v1}, Lhc7;->o(Lxy0;)V
-
     .line 348
-    .line 349
-    .line 350
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->D0:Ll5;
-
-    .line 351
-    .line 352
-    invoke-virtual {v1}, Ll5;->getValue()Ljava/lang/Object;
-
-    .line 353
-    .line 354
-    .line 355
     move-result-object v1
 
+    .line 349
+    check-cast v1, Lp;
+
+    .line 350
+    .line 351
+    invoke-static {v1}, Lor4;->n(Ln61;)V
+
+    .line 352
+    .line 353
+    .line 354
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->O0:Lv5;
+
+    .line 355
     .line 356
-    check-cast v1, Lx;
+    invoke-virtual {v1}, Lv5;->getValue()Ljava/lang/Object;
 
     .line 357
     .line 358
-    iget-object v5, v1, Lx;->c:Lzu6;
-
     .line 359
+    move-result-object v1
+
     .line 360
-    invoke-virtual {v5}, Lzu6;->getValue()Ljava/lang/Object;
+    check-cast v1, Lv;
 
     .line 361
     .line 362
-    .line 363
-    move-result-object v5
+    iget-object v5, v1, Lv;->c:Lmm7;
 
+    .line 363
     .line 364
-    check-cast v5, Lne3;
+    invoke-virtual {v5}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 365
     .line 366
-    iget-object v5, v5, Lne3;->a:Lzu6;
-
     .line 367
+    move-result-object v5
+
     .line 368
-    invoke-virtual {v5}, Lzu6;->getValue()Ljava/lang/Object;
+    check-cast v5, Lav3;
 
     .line 369
     .line 370
-    .line 371
-    move-result-object v5
+    iget-object v5, v5, Lav3;->a:Lmm7;
 
+    .line 371
     .line 372
-    check-cast v5, Lqn3;
+    invoke-virtual {v5}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 373
     .line 374
-    iget-object v5, v5, Lqn3;->a:Lzu6;
-
     .line 375
+    move-result-object v5
+
     .line 376
-    invoke-virtual {v5}, Lzu6;->getValue()Ljava/lang/Object;
+    check-cast v5, Lv44;
 
     .line 377
     .line 378
-    .line 379
-    move-result-object v5
+    iget-object v5, v5, Lv44;->a:Lmm7;
 
+    .line 379
     .line 380
-    check-cast v5, Lyj6;
+    invoke-virtual {v5}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 381
     .line 382
+    .line 383
+    move-result-object v5
+
+    .line 384
+    check-cast v5, La87;
+
+    .line 385
+    .line 386
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 383
-    .line 384
-    .line 385
-    iget-object v5, v5, Lyj6;->a:Landroid/content/SharedPreferences;
-
-    .line 386
     .line 387
-    const-string v6, "current_provider_id"
-
     .line 388
     .line 389
-    invoke-interface {v5, v6, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    iget-object v5, v5, La87;->a:Landroid/content/SharedPreferences;
 
     .line 390
     .line 391
-    .line 392
-    move-result-object v5
+    const-string v6, "current_provider_id"
 
+    .line 392
     .line 393
-    if-eqz v5, :cond_0
+    invoke-interface {v5, v6, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 394
     .line 395
-    sget-object v6, Lsu/happ/proxyutility/dto/ProviderId;->Companion:Lsu/happ/proxyutility/dto/ProviderId$Companion;
-
     .line 396
+    move-result-object v5
+
     .line 397
-    goto :goto_0
+    if-eqz v5, :cond_0
 
     .line 398
-    :cond_0
-    move-object v5, v3
-
     .line 399
-    :goto_0
-    const-class v6, Lqn3;
+    sget-object v6, Lsu/happ/proxyutility/dto/ProviderId;->Companion:Lsu/happ/proxyutility/dto/ProviderId$Companion;
 
     .line 400
     .line 401
-    sget-object v7, Lhg5;->a:Lig5;
+    goto :goto_0
 
     .line 402
+    :cond_0
+    move-object v5, v3
+
     .line 403
-    invoke-virtual {v7, v6}, Lig5;->b(Ljava/lang/Class;)Lx63;
+    :goto_0
+    const-class v6, Lv44;
 
     .line 404
     .line 405
-    .line 406
-    move-result-object v6
+    sget-object v7, Lp06;->a:Lq06;
 
+    .line 406
     .line 407
-    invoke-interface {v6}, Lx63;->z()Ljava/lang/String;
+    invoke-virtual {v7, v6}, Lq06;->b(Ljava/lang/Class;)Lgn3;
 
     .line 408
     .line 409
     .line 410
-    iget-object v6, v1, Lx;->b:Lhy5;
+    move-result-object v6
 
     .line 411
-    .line 412
-    iget-object v1, v1, Lx;->d:Lfc5;
+    invoke-interface {v6}, Lgn3;->B()Ljava/lang/String;
 
+    .line 412
     .line 413
     .line 414
-    iget-object v1, v1, Lfc5;->Q:Ljh6;
+    iget-object v6, v1, Lv;->b:Lrj6;
 
     .line 415
     .line 416
-    invoke-virtual {v1}, Ljh6;->getValue()Ljava/lang/Object;
+    iget-object v1, v1, Lv;->d:Lgw5;
 
     .line 417
     .line 418
-    .line 419
-    move-result-object v1
+    iget-object v1, v1, Lgw5;->X:Lk57;
 
+    .line 419
     .line 420
-    check-cast v1, Lv;
+    invoke-virtual {v1}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 421
     .line 422
+    .line 423
+    move-result-object v1
+
+    .line 424
+    check-cast v1, Lt;
+
+    .line 425
+    .line 426
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 423
-    .line 424
-    .line 425
-    new-instance v1, Lv;
-
-    .line 426
     .line 427
-    invoke-direct {v1, v5}, Lv;-><init>(Ljava/lang/String;)V
-
     .line 428
     .line 429
-    .line 430
-    invoke-virtual {v6, v1}, Lhy5;->b(Ljava/lang/Object;)V
+    new-instance v1, Lt;
 
+    .line 430
     .line 431
+    invoke-direct {v1, v5}, Lt;-><init>(Ljava/lang/String;)V
+
     .line 432
     .line 433
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
-
     .line 434
-    .line 435
-    if-eqz v1, :cond_b
+    invoke-virtual {v6, v1}, Lrj6;->b(Ljava/lang/Object;)V
 
+    .line 435
     .line 436
     .line 437
-    iget-object v1, v1, Le5;->a0:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 438
     .line 439
-    invoke-static {}, Llibxray/Libxray;->getCoreVersion()Ljava/lang/String;
+    if-eqz v1, :cond_b
 
     .line 440
     .line 441
-    .line 442
-    move-result-object v5
+    iget-object v1, v1, Lq5;->j0:Ljava/lang/Object;
 
+    .line 442
     .line 443
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
 
     .line 444
     .line 445
-    .line 446
-    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
+    invoke-static {}, Llibxray/Libxray;->getCoreVersion()Ljava/lang/String;
 
+    .line 446
     .line 447
     .line 448
+    move-result-object v5
+
     .line 449
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 450
     .line 451
-    if-eqz v1, :cond_a
-
     .line 452
-    .line 453
-    iget-object v1, v1, Le5;->V:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
 
+    .line 453
     .line 454
     .line 455
-    const-string v5, "4.0.1(1581)"
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 456
     .line 457
-    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
+    if-eqz v1, :cond_a
 
     .line 458
     .line 459
+    iget-object v1, v1, Lq5;->e0:Ljava/lang/Object;
+
     .line 460
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
-
     .line 461
+    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+
     .line 462
-    if-eqz v1, :cond_9
-
     .line 463
+    const-string v5, "4.6.1(1683)"
+
     .line 464
-    iget-object v1, v1, Le5;->T:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
     .line 465
-    .line 466
-    new-instance v5, Lf;
+    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
 
+    .line 466
     .line 467
     .line 468
-    invoke-direct {v5, v0, v4}, Lf;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 469
     .line 470
-    .line 471
-    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    if-eqz v1, :cond_9
 
+    .line 471
     .line 472
+    iget-object v1, v1, Lq5;->c0:Ljava/lang/Object;
+
     .line 473
     .line 474
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 475
     .line 476
-    if-eqz v1, :cond_8
+    new-instance v5, Lf;
 
     .line 477
     .line 478
-    iget-object v1, v1, Le5;->R:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    invoke-direct {v5, v0, v4}, Lf;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
 
     .line 479
     .line 480
-    new-instance v5, Lf;
-
     .line 481
+    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
+
     .line 482
-    const/4 v6, 0x1
-
     .line 483
-    invoke-direct {v5, v0, v6}, Lf;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
-
     .line 484
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
+
     .line 485
     .line 486
-    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    if-eqz v1, :cond_8
 
     .line 487
     .line 488
+    iget-object v1, v1, Lq5;->Y:Ljava/lang/Object;
+
     .line 489
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
-
     .line 490
+    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+
     .line 491
-    if-eqz v1, :cond_7
-
     .line 492
-    .line 493
-    iget-object v1, v1, Le5;->S:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 494
-    .line 495
     new-instance v5, Lf;
+
+    .line 493
+    .line 494
+    const/4 v6, 0x1
+
+    .line 495
+    invoke-direct {v5, v0, v6}, Lf;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
 
     .line 496
     .line 497
-    const/4 v7, 0x2
-
     .line 498
-    invoke-direct {v5, v0, v7}, Lf;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
+    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 499
     .line 500
     .line 501
-    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 502
     .line 503
+    if-eqz v1, :cond_7
+
     .line 504
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
-
     .line 505
+    iget-object v1, v1, Lq5;->Z:Ljava/lang/Object;
+
     .line 506
-    if-eqz v1, :cond_6
-
     .line 507
+    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+
     .line 508
-    iget-object v1, v1, Le5;->W:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
-
     .line 509
-    .line 510
-    new-instance v5, Lg;
+    new-instance v5, Lf;
 
+    .line 510
     .line 511
+    const/4 v7, 0x2
+
     .line 512
-    invoke-direct {v5, v0, v4}, Lg;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
+    invoke-direct {v5, v0, v7}, Lf;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
 
     .line 513
     .line 514
     .line 515
-    invoke-virtual {v1, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 516
     .line 517
     .line 518
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 519
     .line 520
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_6
 
     .line 521
     .line 522
-    iget-object v1, v1, Le5;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+    iget-object v1, v1, Lq5;->f0:Ljava/lang/Object;
 
     .line 523
     .line 524
-    const-string v4, "t.me/happ_support_bot"
+    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
 
     .line 525
     .line 526
-    invoke-virtual {v1, v4}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
+    new-instance v5, Lg;
 
     .line 527
     .line 528
-    .line 529
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    invoke-direct {v5, v0, v4}, Lg;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
 
+    .line 529
     .line 530
     .line 531
-    if-eqz v1, :cond_4
+    invoke-virtual {v1, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 532
     .line 533
-    iget-object v1, v1, Le5;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
-
     .line 534
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
+
     .line 535
-    new-instance v4, Lg;
-
     .line 536
-    .line 537
-    invoke-direct {v4, v0, v6}, Lg;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
+    if-eqz v1, :cond_5
 
+    .line 537
     .line 538
+    iget-object v1, v1, Lq5;->i0:Ljava/lang/Object;
+
     .line 539
     .line 540
-    invoke-virtual {v1, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
 
     .line 541
     .line 542
+    const-string v4, "t.me/happ_support_bot"
+
     .line 543
-    sget-object v1, Lpk7;->a:Lpk7;
-
     .line 544
-    .line 545
-    invoke-static {v0}, Lpk7;->k(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v1, v4}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
 
+    .line 545
     .line 546
     .line 547
-    .line 548
-    move-result-object v1
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
+    .line 548
     .line 549
-    iget-object v4, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    if-eqz v1, :cond_4
 
     .line 550
     .line 551
-    if-eqz v4, :cond_3
+    iget-object v1, v1, Lq5;->i0:Ljava/lang/Object;
 
     .line 552
     .line 553
-    iget-object v4, v4, Le5;->U:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
 
     .line 554
     .line 555
-    sget-object v5, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
+    new-instance v4, Lg;
 
     .line 556
     .line 557
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v4, v0, v6}, Lg;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;I)V
 
     .line 558
     .line 559
     .line 560
-    invoke-virtual {v4, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
+    invoke-virtual {v1, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 561
     .line 562
     .line 563
-    iget-object v4, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    sget-object v1, Lif8;->a:Lif8;
 
     .line 564
     .line 565
-    if-eqz v4, :cond_2
+    invoke-static {v0}, Lif8;->j(Landroid/content/Context;)Ljava/lang/String;
 
     .line 566
     .line 567
-    iget-object v4, v4, Le5;->Y:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
-
     .line 568
+    move-result-object v1
+
     .line 569
-    sget-object v5, Landroid/os/Build;->MODEL:Ljava/lang/String;
+    iget-object v4, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 570
     .line 571
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eqz v4, :cond_3
 
     .line 572
     .line 573
-    .line 574
-    invoke-virtual {v4, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
+    iget-object v4, v4, Lq5;->d0:Ljava/lang/Object;
 
+    .line 574
     .line 575
+    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+
     .line 576
     .line 577
-    iget-object v4, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    sget-object v5, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
     .line 578
     .line 579
-    if-eqz v4, :cond_1
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 580
     .line 581
-    iget-object v2, v4, Le5;->X:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
-
     .line 582
-    .line 583
-    invoke-virtual {v2, v1}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
+    invoke-virtual {v4, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
 
+    .line 583
     .line 584
     .line 585
+    iget-object v4, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
+
     .line 586
-    iget-object v1, v0, Landroidx/core/app/ComponentActivity;->Q:Lkk3;
-
     .line 587
-    .line 588
-    invoke-static {v1}, Lyr;->C(Lkk3;)Lbk3;
+    if-eqz v4, :cond_2
 
+    .line 588
     .line 589
+    iget-object v4, v4, Lq5;->h0:Ljava/lang/Object;
+
     .line 590
     .line 591
-    move-result-object v1
+    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
 
     .line 592
-    new-instance v2, Lm;
-
     .line 593
-    .line 594
-    invoke-direct {v2, v0, v3, v6}, Lm;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;Lyv0;I)V
+    sget-object v5, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
+    .line 594
     .line 595
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 596
     .line 597
-    const/4 v4, 0x3
-
     .line 598
-    invoke-static {v1, v3, v2, v4}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-virtual {v4, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
 
     .line 599
     .line 600
     .line 601
-    return-void
+    iget-object v4, v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 602
-    :cond_1
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 603
+    if-eqz v4, :cond_1
+
     .line 604
     .line 605
-    throw v3
+    iget-object v2, v4, Lq5;->g0:Ljava/lang/Object;
 
     .line 606
-    :cond_2
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 607
+    check-cast v2, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+
     .line 608
     .line 609
-    throw v3
+    invoke-virtual {v2, v1}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
 
     .line 610
-    :cond_3
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 611
     .line 612
-    .line 613
-    throw v3
+    iget-object v1, v0, Landroidx/core/app/ComponentActivity;->X:Li14;
 
+    .line 613
     .line 614
-    :cond_4
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v1}, Lkp3;->y(Li14;)Ly04;
 
     .line 615
     .line 616
     .line 617
-    throw v3
+    move-result-object v1
 
     .line 618
-    :cond_5
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    new-instance v2, Lm;
 
     .line 619
     .line 620
+    invoke-direct {v2, v0, v3, v6}, Lm;-><init>(Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;Lb31;I)V
+
     .line 621
-    throw v3
-
     .line 622
-    :cond_6
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 623
+    const/4 v0, 0x3
+
     .line 624
+    invoke-static {v1, v3, v2, v0}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
+
     .line 625
-    throw v3
-
     .line 626
-    :cond_7
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 627
+    return-void
+
     .line 628
+    :cond_1
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
     .line 629
-    throw v3
-
     .line 630
-    :cond_8
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 631
+    throw v3
+
     .line 632
+    :cond_2
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
     .line 633
-    throw v3
-
     .line 634
-    :cond_9
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 635
+    throw v3
+
     .line 636
+    :cond_3
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
     .line 637
-    throw v3
-
     .line 638
-    :cond_a
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 639
+    throw v3
+
     .line 640
+    :cond_4
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
     .line 641
-    throw v3
-
     .line 642
-    :cond_b
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 643
+    throw v3
+
     .line 644
+    :cond_5
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
     .line 645
-    throw v3
-
     .line 646
-    :cond_c
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 647
+    throw v3
+
     .line 648
+    :cond_6
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
     .line 649
-    throw v3
-
     .line 650
-    :cond_d
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 651
-    .line 652
-    .line 653
     throw v3
 
+    .line 652
+    :cond_7
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 653
     .line 654
-    :cond_e
-    invoke-virtual {v1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
     .line 655
+    throw v3
+
     .line 656
+    :cond_8
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
     .line 657
-    move-result-object v1
-
     .line 658
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
-
     .line 659
+    throw v3
+
     .line 660
+    :cond_9
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
     .line 661
-    move-result-object v1
-
     .line 662
-    const-string v2, "Missing required view with ID: "
-
     .line 663
+    throw v3
+
     .line 664
-    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    :cond_a
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 665
     .line 666
     .line 667
-    move-result-object v1
+    throw v3
 
     .line 668
-    invoke-static {v1}, Len0;->g(Ljava/lang/String;)V
+    :cond_b
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 669
     .line 670
     .line 671
+    throw v3
+
+    .line 672
+    :cond_c
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 673
+    .line 674
+    .line 675
+    throw v3
+
+    .line 676
+    :cond_d
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 677
+    .line 678
+    .line 679
+    throw v3
+
+    .line 680
+    :cond_e
+    invoke-virtual {v1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 681
+    .line 682
+    .line 683
+    move-result-object v0
+
+    .line 684
+    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    .line 685
+    .line 686
+    .line 687
+    move-result-object v0
+
+    .line 688
+    const-string v1, "Missing required view with ID: "
+
+    .line 689
+    .line 690
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 691
+    .line 692
+    .line 693
+    move-result-object v0
+
+    .line 694
+    invoke-static {v0}, Lku0;->f(Ljava/lang/String;)V
+
+    .line 695
+    .line 696
+    .line 697
     return-void
 .end method
 
-.method public final t()Landroidx/appcompat/widget/Toolbar;
+.method public final u()Landroidx/appcompat/widget/Toolbar;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lq5;->l0:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    check-cast p0, Landroidx/appcompat/widget/Toolbar;
+
+    .line 8
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    const-string p0, "binding"
+
+    .line 11
+    .line 12
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    const/4 p0, 0x0
+
+    .line 16
+    throw p0
+.end method
+
+.method public final w()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->P0:Lmm7;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, v0, Le5;->c0:Landroidx/appcompat/widget/Toolbar;
-
-    .line 6
-    .line 7
-    return-object v0
-
-    .line 8
-    :cond_0
-    const-string v0, "binding"
-
-    .line 9
-    .line 10
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    const/4 v0, 0x0
-
-    .line 14
-    throw v0
-.end method
-
-.method public final v()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->E0:Lzu6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Lq;
+    check-cast p0, Lp;
 
     .line 8
     .line 9
-    iget-object v1, v0, Lq;->Q:Le5;
+    iget-object v0, p0, Lp;->X:Lq5;
 
     .line 10
     .line 11
-    iget-object v1, v1, Le5;->a0:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+    iget-object v0, v0, Lq5;->j0:Ljava/lang/Object;
 
     .line 12
     .line 13
-    invoke-virtual {v0, v1}, Lq;->a(Landroid/view/View;)Z
+    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
 
     .line 14
     .line 15
-    .line 16
-    move-result v0
+    invoke-virtual {p0, v0}, Lp;->a(Landroid/view/View;)Z
 
+    .line 16
     .line 17
-    return v0
+    .line 18
+    move-result p0
+
+    .line 19
+    return p0
 .end method

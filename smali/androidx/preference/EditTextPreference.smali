@@ -1,18 +1,18 @@
 .class public Landroidx/preference/EditTextPreference;
 .super Landroidx/preference/DialogPreference;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
 
-    .line 43
-    sget v0, Lt75;->editTextPreferenceStyle:I
+    .line 44
+    sget v0, Lsr5;->editTextPreferenceStyle:I
 
     const v1, 0x1010092
 
-    invoke-static {p1, v0, v1}, Ls47;->b(Landroid/content/Context;II)I
+    invoke-static {p1, v0, v1}, Ltw7;->d(Landroid/content/Context;II)I
 
     move-result v0
 
@@ -33,7 +33,7 @@
     .line 3
     .line 4
     .line 5
-    sget-object v1, Lra5;->EditTextPreference:[I
+    sget-object v1, Lqu5;->EditTextPreference:[I
 
     .line 6
     .line 7
@@ -45,7 +45,7 @@
     move-result-object p1
 
     .line 11
-    sget p2, Lra5;->EditTextPreference_useSimpleSummaryProvider:I
+    sget p2, Lqu5;->EditTextPreference_useSimpleSummaryProvider:I
 
     .line 12
     .line 13
@@ -69,7 +69,7 @@
 
     .line 22
     .line 23
-    sget-object p2, Lap0;->R:Lap0;
+    sget-object p2, Lm0;->Y:Lm0;
 
     .line 24
     .line 25
@@ -77,37 +77,38 @@
 
     .line 26
     .line 27
-    new-instance p2, Lap0;
+    new-instance p2, Lm0;
 
     .line 28
     .line 29
-    const/4 p3, 0x5
+    const/16 p3, 0x1c
 
     .line 30
-    invoke-direct {p2, p3}, Lap0;-><init>(I)V
-
     .line 31
+    invoke-direct {p2, p3, v0}, Lm0;-><init>(IZ)V
+
     .line 32
     .line 33
-    sput-object p2, Lap0;->R:Lap0;
-
     .line 34
+    sput-object p2, Lm0;->Y:Lm0;
+
     .line 35
-    :cond_0
-    sget-object p2, Lap0;->R:Lap0;
-
     .line 36
-    .line 37
-    iput-object p2, p0, Landroidx/preference/Preference;->W:Lcy4;
+    :cond_0
+    sget-object p2, Lm0;->Y:Lm0;
 
+    .line 37
     .line 38
+    iput-object p2, p0, Landroidx/preference/Preference;->f0:Lhh5;
+
     .line 39
+    .line 40
     :cond_1
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 40
     .line 41
     .line 42
+    .line 43
     return-void
 .end method
 
@@ -122,8 +123,8 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    return-object p1
+    return-object p0
 .end method

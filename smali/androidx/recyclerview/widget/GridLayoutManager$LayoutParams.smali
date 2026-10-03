@@ -1,6 +1,6 @@
 .class public Landroidx/recyclerview/widget/GridLayoutManager$LayoutParams;
 .super Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public U:I
+.field public d0:I
 
-.field public V:I
+.field public e0:I
 
 
 # direct methods
@@ -30,12 +30,12 @@
     const/4 p1, -0x1
 
     .line 12
-    iput p1, p0, Landroidx/recyclerview/widget/GridLayoutManager$LayoutParams;->U:I
+    iput p1, p0, Landroidx/recyclerview/widget/GridLayoutManager$LayoutParams;->d0:I
 
     const/4 p1, 0x0
 
     .line 13
-    iput p1, p0, Landroidx/recyclerview/widget/GridLayoutManager$LayoutParams;->V:I
+    iput p1, p0, Landroidx/recyclerview/widget/GridLayoutManager$LayoutParams;->e0:I
 
     return-void
 .end method
@@ -52,14 +52,14 @@
     const/4 p1, -0x1
 
     .line 5
-    iput p1, p0, Landroidx/recyclerview/widget/GridLayoutManager$LayoutParams;->U:I
+    iput p1, p0, Landroidx/recyclerview/widget/GridLayoutManager$LayoutParams;->d0:I
 
     .line 6
     .line 7
     const/4 p1, 0x0
 
     .line 8
-    iput p1, p0, Landroidx/recyclerview/widget/GridLayoutManager$LayoutParams;->V:I
+    iput p1, p0, Landroidx/recyclerview/widget/GridLayoutManager$LayoutParams;->e0:I
 
     .line 9
     .line 10

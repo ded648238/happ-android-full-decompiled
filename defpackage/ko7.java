@@ -1,14 +1,27 @@
 package defpackage;
 
-import android.graphics.Canvas;
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ko7 extends qj1 {
-    public final void dispatchGetDisplayList() {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ko7 extends s2 {
+    public static final Parcelable.Creator<ko7> CREATOR = new h47(10);
+    public final int X;
+    public List Y;
+
+    public ko7(int i, List list) {
+        this.X = i;
+        this.Y = list;
     }
 
-    @Override // android.view.ViewGroup, android.view.View
-    public final void dispatchDraw(Canvas canvas) {
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        int E0 = mu4.E0(parcel, 20293);
+        mu4.D0(parcel, 1, 4);
+        parcel.writeInt(this.X);
+        mu4.B0(parcel, 2, this.Y);
+        mu4.F0(parcel, E0);
     }
 }

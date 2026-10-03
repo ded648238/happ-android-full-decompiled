@@ -1,27 +1,19 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class te3 {
-    public static final te3 Q;
-    public static final te3 R;
-    public static final /* synthetic */ te3[] S;
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
-    static {
-        te3 te3Var = new te3("Ltr", 0);
-        Q = te3Var;
-        te3 te3Var2 = new te3("Rtl", 1);
-        R = te3Var2;
-        S = new te3[]{te3Var, te3Var2};
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class te3 extends tj2 implements yi2 {
+    public static final te3 X = new te3(3, ve3.class, "onAwaitInternalProcessResFunc", "onAwaitInternalProcessResFunc(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", 0);
 
-    public static te3 valueOf(String str) {
-        return (te3) Enum.valueOf(te3.class, str);
-    }
-
-    public static te3[] values() {
-        return (te3[]) S.clone();
+    @Override // defpackage.yi2
+    public final Object w(Object obj, Object obj2, Object obj3) {
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = ve3.X;
+        ((ve3) obj).getClass();
+        if (obj3 instanceof vv0) {
+            throw ((vv0) obj3).a;
+        }
+        return obj3;
     }
 }

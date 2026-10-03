@@ -1,32 +1,30 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class dy4 {
-    public final String a;
-    public final Long b;
+    public static final dy4 X;
+    public static final dy4 Y;
+    public static final dy4 Z;
+    public static final /* synthetic */ dy4[] c0;
 
-    public dy4(String str, Long l) {
-        this.a = str;
-        this.b = l;
+    static {
+        dy4 dy4Var = new dy4("NO_OP", 0);
+        X = dy4Var;
+        dy4 dy4Var2 = new dy4("ADD", 1);
+        Y = dy4Var2;
+        dy4 dy4Var3 = new dy4("REMOVE", 2);
+        Z = dy4Var3;
+        c0 = new dy4[]{dy4Var, dy4Var2, dy4Var3};
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof dy4)) {
-            return false;
-        }
-        dy4 dy4Var = (dy4) obj;
-        return this.a.equals(dy4Var.a) && this.b.equals(dy4Var.b);
+    public static dy4 valueOf(String str) {
+        return (dy4) Enum.valueOf(dy4.class, str);
     }
 
-    public final int hashCode() {
-        return this.b.hashCode() + (this.a.hashCode() * 31);
-    }
-
-    public final String toString() {
-        return "Preference(key=" + this.a + ", value=" + this.b + ')';
+    public static dy4[] values() {
+        return (dy4[]) c0.clone();
     }
 }

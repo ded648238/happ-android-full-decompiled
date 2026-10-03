@@ -1,29 +1,12 @@
-.class public final Lwt5;
+.class public abstract Lwt5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
 
 
 # static fields
-.field public static final a:Lwt5;
+.field public static lb_voice_failure:I = 0x7f130001
 
+.field public static lb_voice_no_input:I = 0x7f130002
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.field public static lb_voice_open:I = 0x7f130003
 
-    .line 1
-    new-instance v0, Lwt5;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lwt5;->a:Lwt5;
-
-    .line 7
-    .line 8
-    return-void
-.end method
+.field public static lb_voice_success:I = 0x7f130004

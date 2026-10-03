@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/OpenSSLRSAKeyFactory;
 .super Ljava/security/KeyFactorySpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
 # virtual methods
 .method public engineGeneratePrivate(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/spec/InvalidKeySpecException;
@@ -31,15 +31,15 @@
 
     .line 2
     .line 3
-    instance-of v0, p1, Ljava/security/spec/RSAPrivateCrtKeySpec;
+    instance-of p0, p1, Ljava/security/spec/RSAPrivateCrtKeySpec;
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 6
     .line 7
-    new-instance v0, Lorg/conscrypt/OpenSSLRSAPrivateCrtKey;
+    new-instance p0, Lorg/conscrypt/OpenSSLRSAPrivateCrtKey;
 
     .line 8
     .line 9
@@ -47,24 +47,24 @@
 
     .line 10
     .line 11
-    invoke-direct {v0, p1}, Lorg/conscrypt/OpenSSLRSAPrivateCrtKey;-><init>(Ljava/security/spec/RSAPrivateCrtKeySpec;)V
+    invoke-direct {p0, p1}, Lorg/conscrypt/OpenSSLRSAPrivateCrtKey;-><init>(Ljava/security/spec/RSAPrivateCrtKeySpec;)V
 
     .line 12
     .line 13
     .line 14
-    return-object v0
+    return-object p0
 
     .line 15
     :cond_0
-    instance-of v0, p1, Ljava/security/spec/RSAPrivateKeySpec;
+    instance-of p0, p1, Ljava/security/spec/RSAPrivateKeySpec;
 
     .line 16
     .line 17
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 18
     .line 19
-    new-instance v0, Lorg/conscrypt/OpenSSLRSAPrivateKey;
+    new-instance p0, Lorg/conscrypt/OpenSSLRSAPrivateKey;
 
     .line 20
     .line 21
@@ -72,20 +72,20 @@
 
     .line 22
     .line 23
-    invoke-direct {v0, p1}, Lorg/conscrypt/OpenSSLRSAPrivateKey;-><init>(Ljava/security/spec/RSAPrivateKeySpec;)V
+    invoke-direct {p0, p1}, Lorg/conscrypt/OpenSSLRSAPrivateKey;-><init>(Ljava/security/spec/RSAPrivateKeySpec;)V
 
     .line 24
     .line 25
     .line 26
-    return-object v0
+    return-object p0
 
     .line 27
     :cond_1
-    instance-of v0, p1, Ljava/security/spec/PKCS8EncodedKeySpec;
+    instance-of p0, p1, Ljava/security/spec/PKCS8EncodedKeySpec;
 
     .line 28
     .line 29
-    if-eqz v0, :cond_2
+    if-eqz p0, :cond_2
 
     .line 30
     .line 31
@@ -93,22 +93,22 @@
 
     .line 32
     .line 33
-    const/4 v0, 0x6
+    const/4 p0, 0x6
 
     .line 34
-    invoke-static {p1, v0}, Lorg/conscrypt/OpenSSLKey;->getPrivateKey(Ljava/security/spec/PKCS8EncodedKeySpec;I)Ljava/security/PrivateKey;
+    invoke-static {p1, p0}, Lorg/conscrypt/OpenSSLKey;->getPrivateKey(Ljava/security/spec/PKCS8EncodedKeySpec;I)Ljava/security/PrivateKey;
 
     .line 35
     .line 36
     .line 37
-    move-result-object p1
+    move-result-object p0
 
     .line 38
-    return-object p1
+    return-object p0
 
     .line 39
     :cond_2
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 40
     .line 41
@@ -128,11 +128,11 @@
     move-result-object p1
 
     .line 49
-    const-string v1, "Must use RSAPublicKeySpec or PKCS8EncodedKeySpec; was "
+    const-string v0, "Must use RSAPublicKeySpec or PKCS8EncodedKeySpec; was "
 
     .line 50
     .line 51
-    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 52
     .line 53
@@ -140,32 +140,32 @@
     move-result-object p1
 
     .line 55
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 56
     .line 57
     .line 58
-    throw v0
+    throw p0
 
     .line 59
     :cond_3
-    const-string p1, "keySpec == null"
+    const-string p0, "keySpec == null"
 
     .line 60
     .line 61
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 62
     .line 63
     .line 64
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 65
-    return-object p1
+    return-object p0
 .end method
 
 .method public engineGeneratePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/spec/InvalidKeySpecException;
@@ -177,15 +177,15 @@
 
     .line 2
     .line 3
-    instance-of v0, p1, Ljava/security/spec/RSAPublicKeySpec;
+    instance-of p0, p1, Ljava/security/spec/RSAPublicKeySpec;
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 6
     .line 7
-    new-instance v0, Lorg/conscrypt/OpenSSLRSAPublicKey;
+    new-instance p0, Lorg/conscrypt/OpenSSLRSAPublicKey;
 
     .line 8
     .line 9
@@ -193,20 +193,20 @@
 
     .line 10
     .line 11
-    invoke-direct {v0, p1}, Lorg/conscrypt/OpenSSLRSAPublicKey;-><init>(Ljava/security/spec/RSAPublicKeySpec;)V
+    invoke-direct {p0, p1}, Lorg/conscrypt/OpenSSLRSAPublicKey;-><init>(Ljava/security/spec/RSAPublicKeySpec;)V
 
     .line 12
     .line 13
     .line 14
-    return-object v0
+    return-object p0
 
     .line 15
     :cond_0
-    instance-of v0, p1, Ljava/security/spec/X509EncodedKeySpec;
+    instance-of p0, p1, Ljava/security/spec/X509EncodedKeySpec;
 
     .line 16
     .line 17
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 18
     .line 19
@@ -214,22 +214,22 @@
 
     .line 20
     .line 21
-    const/4 v0, 0x6
+    const/4 p0, 0x6
 
     .line 22
-    invoke-static {p1, v0}, Lorg/conscrypt/OpenSSLKey;->getPublicKey(Ljava/security/spec/X509EncodedKeySpec;I)Ljava/security/PublicKey;
+    invoke-static {p1, p0}, Lorg/conscrypt/OpenSSLKey;->getPublicKey(Ljava/security/spec/X509EncodedKeySpec;I)Ljava/security/PublicKey;
 
     .line 23
     .line 24
     .line 25
-    move-result-object p1
+    move-result-object p0
 
     .line 26
-    return-object p1
+    return-object p0
 
     .line 27
     :cond_1
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 28
     .line 29
@@ -249,11 +249,11 @@
     move-result-object p1
 
     .line 37
-    const-string v1, "Must use RSAPublicKeySpec or X509EncodedKeySpec; was "
+    const-string v0, "Must use RSAPublicKeySpec or X509EncodedKeySpec; was "
 
     .line 38
     .line 39
-    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 40
     .line 41
@@ -261,28 +261,28 @@
     move-result-object p1
 
     .line 43
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 44
     .line 45
     .line 46
-    throw v0
+    throw p0
 
     .line 47
     :cond_2
-    const-string p1, "keySpec == null"
+    const-string p0, "keySpec == null"
 
     .line 48
     .line 49
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 50
     .line 51
     .line 52
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 53
-    return-object p1
+    return-object p0
 .end method
 
 .method public engineGetKeySpec(Ljava/security/Key;Ljava/lang/Class;)Ljava/security/spec/KeySpec;
@@ -368,7 +368,7 @@
 
     .line 31
     .line 32
-    new-instance p2, Ljava/security/spec/RSAPublicKeySpec;
+    new-instance p0, Ljava/security/spec/RSAPublicKeySpec;
 
     .line 33
     .line 34
@@ -377,7 +377,7 @@
     .line 35
     .line 36
     .line 37
-    move-result-object v0
+    move-result-object p2
 
     .line 38
     invoke-interface {p1}, Ljava/security/interfaces/RSAPublicKey;->getPublicExponent()Ljava/math/BigInteger;
@@ -388,12 +388,12 @@
     move-result-object p1
 
     .line 42
-    invoke-direct {p2, v0, p1}, Ljava/security/spec/RSAPublicKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+    invoke-direct {p0, p2, p1}, Ljava/security/spec/RSAPublicKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
 
     .line 43
     .line 44
     .line 45
-    return-object p2
+    return-object p0
 
     .line 46
     :cond_0
@@ -467,47 +467,47 @@
     .line 80
     .line 81
     .line 82
-    move-result-object p1
+    move-result-object p0
 
     .line 83
-    check-cast p1, Ljava/security/interfaces/RSAPublicKey;
+    check-cast p0, Ljava/security/interfaces/RSAPublicKey;
 
     .line 84
     .line 85
-    new-instance p2, Ljava/security/spec/RSAPublicKeySpec;
+    new-instance p1, Ljava/security/spec/RSAPublicKeySpec;
 
     .line 86
     .line 87
-    invoke-interface {p1}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
 
     .line 88
     .line 89
     .line 90
-    move-result-object v0
+    move-result-object p2
 
     .line 91
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPublicKey;->getPublicExponent()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAPublicKey;->getPublicExponent()Ljava/math/BigInteger;
 
     .line 92
     .line 93
     .line 94
-    move-result-object p1
+    move-result-object p0
 
     .line 95
-    invoke-direct {p2, v0, p1}, Ljava/security/spec/RSAPublicKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+    invoke-direct {p1, p2, p0}, Ljava/security/spec/RSAPublicKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
 
     .line 96
     .line 97
     .line 98
-    return-object p2
+    return-object p1
 
     .line 99
     :cond_1
-    const-string p1, "Not a valid X.509 encoding"
+    const-string p0, "Not a valid X.509 encoding"
 
     .line 100
     .line 101
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 102
     .line 103
@@ -645,7 +645,7 @@
 
     .line 168
     .line 169
-    new-instance p2, Ljava/security/spec/RSAPrivateKeySpec;
+    new-instance p0, Ljava/security/spec/RSAPrivateKeySpec;
 
     .line 170
     .line 171
@@ -654,7 +654,7 @@
     .line 172
     .line 173
     .line 174
-    move-result-object v0
+    move-result-object p2
 
     .line 175
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateKey;->getPrivateExponent()Ljava/math/BigInteger;
@@ -665,12 +665,12 @@
     move-result-object p1
 
     .line 179
-    invoke-direct {p2, v0, p1}, Ljava/security/spec/RSAPrivateKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+    invoke-direct {p0, p2, p1}, Ljava/security/spec/RSAPrivateKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
 
     .line 180
     .line 181
     .line 182
-    return-object p2
+    return-object p0
 
     .line 183
     :cond_4
@@ -698,7 +698,7 @@
 
     .line 194
     .line 195
-    new-instance p2, Ljava/security/spec/RSAPrivateKeySpec;
+    new-instance p0, Ljava/security/spec/RSAPrivateKeySpec;
 
     .line 196
     .line 197
@@ -707,7 +707,7 @@
     .line 198
     .line 199
     .line 200
-    move-result-object v0
+    move-result-object p2
 
     .line 201
     invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateKey;->getPrivateExponent()Ljava/math/BigInteger;
@@ -718,12 +718,12 @@
     move-result-object p1
 
     .line 205
-    invoke-direct {p2, v0, p1}, Ljava/security/spec/RSAPrivateKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+    invoke-direct {p0, p2, p1}, Ljava/security/spec/RSAPrivateKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
 
     .line 206
     .line 207
     .line 208
-    return-object p2
+    return-object p0
 
     .line 209
     :cond_5
@@ -801,22 +801,22 @@
     .line 245
     .line 246
     .line 247
-    move-result-object p1
+    move-result-object p0
 
     .line 248
-    check-cast p1, Ljava/security/interfaces/RSAPrivateKey;
+    check-cast p0, Ljava/security/interfaces/RSAPrivateKey;
 
     .line 249
     .line 250
-    instance-of p2, p1, Ljava/security/interfaces/RSAPrivateCrtKey;
+    instance-of p1, p0, Ljava/security/interfaces/RSAPrivateCrtKey;
 
     .line 251
     .line 252
-    if-eqz p2, :cond_6
+    if-eqz p1, :cond_6
 
     .line 253
     .line 254
-    check-cast p1, Ljava/security/interfaces/RSAPrivateCrtKey;
+    check-cast p0, Ljava/security/interfaces/RSAPrivateCrtKey;
 
     .line 255
     .line 256
@@ -824,7 +824,7 @@
 
     .line 257
     .line 258
-    invoke-interface {p1}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
 
     .line 259
     .line 260
@@ -832,7 +832,7 @@
     move-result-object v1
 
     .line 262
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPublicExponent()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPublicExponent()Ljava/math/BigInteger;
 
     .line 263
     .line 264
@@ -840,7 +840,7 @@
     move-result-object v2
 
     .line 266
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateKey;->getPrivateExponent()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAPrivateKey;->getPrivateExponent()Ljava/math/BigInteger;
 
     .line 267
     .line 268
@@ -848,7 +848,7 @@
     move-result-object v3
 
     .line 270
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeP()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeP()Ljava/math/BigInteger;
 
     .line 271
     .line 272
@@ -856,7 +856,7 @@
     move-result-object v4
 
     .line 274
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeQ()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeQ()Ljava/math/BigInteger;
 
     .line 275
     .line 276
@@ -864,7 +864,7 @@
     move-result-object v5
 
     .line 278
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeExponentP()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeExponentP()Ljava/math/BigInteger;
 
     .line 279
     .line 280
@@ -872,7 +872,7 @@
     move-result-object v6
 
     .line 282
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeExponentQ()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPrimeExponentQ()Ljava/math/BigInteger;
 
     .line 283
     .line 284
@@ -880,7 +880,7 @@
     move-result-object v7
 
     .line 286
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getCrtCoefficient()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAPrivateCrtKey;->getCrtCoefficient()Ljava/math/BigInteger;
 
     .line 287
     .line 288
@@ -897,11 +897,11 @@
 
     .line 294
     :cond_6
-    const-string p1, "Encoded key is not an RSAPrivateCrtKey"
+    const-string p0, "Encoded key is not an RSAPrivateCrtKey"
 
     .line 295
     .line 296
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 297
     .line 298
@@ -910,7 +910,7 @@
 
     .line 300
     :cond_7
-    invoke-static {v6}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {v6}, Lq05;->l(Ljava/lang/String;)V
 
     .line 301
     .line 302
@@ -981,43 +981,43 @@
     .line 334
     .line 335
     .line 336
-    move-result-object p1
+    move-result-object p0
 
     .line 337
-    check-cast p1, Ljava/security/interfaces/RSAPrivateKey;
+    check-cast p0, Ljava/security/interfaces/RSAPrivateKey;
 
     .line 338
     .line 339
-    new-instance p2, Ljava/security/spec/RSAPrivateKeySpec;
+    new-instance p1, Ljava/security/spec/RSAPrivateKeySpec;
 
     .line 340
     .line 341
-    invoke-interface {p1}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
 
     .line 342
     .line 343
     .line 344
-    move-result-object v0
+    move-result-object p2
 
     .line 345
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateKey;->getPrivateExponent()Ljava/math/BigInteger;
+    invoke-interface {p0}, Ljava/security/interfaces/RSAPrivateKey;->getPrivateExponent()Ljava/math/BigInteger;
 
     .line 346
     .line 347
     .line 348
-    move-result-object p1
+    move-result-object p0
 
     .line 349
-    invoke-direct {p2, v0, p1}, Ljava/security/spec/RSAPrivateKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+    invoke-direct {p1, p2, p0}, Ljava/security/spec/RSAPrivateKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
 
     .line 350
     .line 351
     .line 352
-    return-object p2
+    return-object p1
 
     .line 353
     :cond_9
-    invoke-static {v6}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {v6}, Lq05;->l(Ljava/lang/String;)V
 
     .line 354
     .line 355
@@ -1026,7 +1026,7 @@
 
     .line 357
     :cond_a
-    const-string v4, "Key is not encodable"
+    const-string p0, "Key is not encodable"
 
     .line 358
     .line 359
@@ -1082,20 +1082,20 @@
 
     .line 384
     .line 385
-    new-instance p1, Ljava/security/spec/PKCS8EncodedKeySpec;
+    new-instance p0, Ljava/security/spec/PKCS8EncodedKeySpec;
 
     .line 386
     .line 387
-    invoke-direct {p1, p2}, Ljava/security/spec/PKCS8EncodedKeySpec;-><init>([B)V
+    invoke-direct {p0, p2}, Ljava/security/spec/PKCS8EncodedKeySpec;-><init>([B)V
 
     .line 388
     .line 389
     .line 390
-    return-object p1
+    return-object p0
 
     .line 391
     :cond_b
-    invoke-static {v4}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 392
     .line 393
@@ -1104,7 +1104,7 @@
 
     .line 395
     :cond_c
-    new-instance p2, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 396
     .line 397
@@ -1116,25 +1116,25 @@
     move-result-object p1
 
     .line 401
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 402
     .line 403
-    const-string v1, "Encoding type must be PKCS#8; was "
+    const-string v0, "Encoding type must be PKCS#8; was "
 
     .line 404
     .line 405
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 406
     .line 407
     .line 408
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 409
     .line 410
     .line 411
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 412
     .line 413
@@ -1142,12 +1142,12 @@
     move-result-object p1
 
     .line 415
-    invoke-direct {p2, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 416
     .line 417
     .line 418
-    throw p2
+    throw p0
 
     .line 419
     :cond_d
@@ -1203,20 +1203,20 @@
 
     .line 444
     .line 445
-    new-instance p1, Ljava/security/spec/X509EncodedKeySpec;
+    new-instance p0, Ljava/security/spec/X509EncodedKeySpec;
 
     .line 446
     .line 447
-    invoke-direct {p1, p2}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
+    invoke-direct {p0, p2}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
 
     .line 448
     .line 449
     .line 450
-    return-object p1
+    return-object p0
 
     .line 451
     :cond_e
-    invoke-static {v4}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 452
     .line 453
@@ -1225,7 +1225,7 @@
 
     .line 455
     :cond_f
-    new-instance p2, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 456
     .line 457
@@ -1237,25 +1237,25 @@
     move-result-object p1
 
     .line 461
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 462
     .line 463
-    const-string v1, "Encoding type must be X.509; was "
+    const-string v0, "Encoding type must be X.509; was "
 
     .line 464
     .line 465
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 466
     .line 467
     .line 468
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 469
     .line 470
     .line 471
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 472
     .line 473
@@ -1263,16 +1263,16 @@
     move-result-object p1
 
     .line 475
-    invoke-direct {p2, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 476
     .line 477
     .line 478
-    throw p2
+    throw p0
 
     .line 479
     :cond_10
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 480
     .line 481
@@ -1300,20 +1300,20 @@
     move-result-object p2
 
     .line 493
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 494
     .line 495
-    const-string v2, "Unsupported key type and key spec combination; key="
+    const-string v1, "Unsupported key type and key spec combination; key="
 
     .line 496
     .line 497
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 498
     .line 499
     .line 500
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 501
     .line 502
@@ -1322,17 +1322,17 @@
 
     .line 504
     .line 505
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 506
     .line 507
     .line 508
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 509
     .line 510
     .line 511
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 512
     .line 513
@@ -1340,20 +1340,20 @@
     move-result-object p1
 
     .line 515
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 516
     .line 517
     .line 518
-    throw v0
+    throw p0
 
     .line 519
     :cond_11
-    const-string p1, "Key must be a RSA key"
+    const-string p0, "Key must be a RSA key"
 
     .line 520
     .line 521
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 522
     .line 523
@@ -1362,11 +1362,11 @@
 
     .line 525
     :cond_12
-    const-string p1, "keySpec == null"
+    const-string p0, "keySpec == null"
 
     .line 526
     .line 527
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 528
     .line 529
@@ -1375,11 +1375,11 @@
 
     .line 531
     :cond_13
-    const-string p1, "key == null"
+    const-string p0, "key == null"
 
     .line 532
     .line 533
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 534
     .line 535
@@ -1466,22 +1466,22 @@
     .line 33
     .line 34
     .line 35
-    move-result-object p1
+    move-result-object p0
     :try_end_0
     .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 36
-    return-object p1
+    return-object p0
 
     .line 37
     :catch_0
     move-exception v0
 
     .line 38
-    move-object p1, v0
+    move-object p0, v0
 
     .line 39
-    invoke-static {p1}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 40
     .line 41
@@ -1581,22 +1581,22 @@
     .line 87
     .line 88
     .line 89
-    move-result-object p1
+    move-result-object p0
     :try_end_1
     .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 90
-    return-object p1
+    return-object p0
 
     .line 91
     :catch_1
     move-exception v0
 
     .line 92
-    move-object p1, v0
+    move-object p0, v0
 
     .line 93
-    invoke-static {p1}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 94
     .line 95
@@ -1648,22 +1648,22 @@
     .line 117
     .line 118
     .line 119
-    move-result-object p1
+    move-result-object p0
     :try_end_2
     .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 120
-    return-object p1
+    return-object p0
 
     .line 121
     :catch_2
     move-exception v0
 
     .line 122
-    move-object p1, v0
+    move-object p0, v0
 
     .line 123
-    invoke-static {p1}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 124
     .line 125
@@ -1735,22 +1735,22 @@
     .line 157
     .line 158
     .line 159
-    move-result-object p1
+    move-result-object p0
     :try_end_3
     .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 160
-    return-object p1
+    return-object p0
 
     .line 161
     :catch_3
     move-exception v0
 
     .line 162
-    move-object p1, v0
+    move-object p0, v0
 
     .line 163
-    invoke-static {p1}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 164
     .line 165
@@ -1759,7 +1759,7 @@
 
     .line 167
     :cond_4
-    invoke-static {v2}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {v2}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 168
     .line 169
@@ -1827,22 +1827,22 @@
     .line 199
     .line 200
     .line 201
-    move-result-object p1
+    move-result-object p0
     :try_end_4
     .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_4 .. :try_end_4} :catch_4
 
     .line 202
-    return-object p1
+    return-object p0
 
     .line 203
     :catch_4
     move-exception v0
 
     .line 204
-    move-object p1, v0
+    move-object p0, v0
 
     .line 205
-    invoke-static {p1}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 206
     .line 207
@@ -1851,7 +1851,7 @@
 
     .line 209
     :cond_6
-    invoke-static {v2}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {v2}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 210
     .line 211
@@ -1860,7 +1860,7 @@
 
     .line 213
     :cond_7
-    new-instance v0, Ljava/security/InvalidKeyException;
+    new-instance p0, Ljava/security/InvalidKeyException;
 
     .line 214
     .line 215
@@ -1880,11 +1880,11 @@
     move-result-object p1
 
     .line 223
-    const-string v1, "Key must be an RSA public or private key; was "
+    const-string v0, "Key must be an RSA public or private key; was "
 
     .line 224
     .line 225
-    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 226
     .line 227
@@ -1892,12 +1892,12 @@
     move-result-object p1
 
     .line 229
-    invoke-direct {v0, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
 
     .line 230
     .line 231
     .line 232
-    throw v0
+    throw p0
 
     .line 233
     :cond_8
@@ -1905,11 +1905,11 @@
 
     .line 234
     :cond_9
-    const-string p1, "key == null"
+    const-string p0, "key == null"
 
     .line 235
     .line 236
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 237
     .line 238

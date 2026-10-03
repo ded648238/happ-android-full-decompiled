@@ -1,6 +1,6 @@
 .class public final Lio/sentry/config/e;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lio/sentry/config/d;
@@ -30,7 +30,7 @@
 
     .line 7
     .line 8
-    invoke-static {p2, p1}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -55,8 +55,8 @@
 
 
 # virtual methods
-.method public final a()Ljava/util/Map;
-    .locals 6
+.method public final c()Ljava/util/Map;
+    .locals 5
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -76,7 +76,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0, v1, v2}, Lkd0;->z(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Leh0;->r(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 11
     .line 12
@@ -93,126 +93,126 @@
     .line 17
     .line 18
     .line 19
-    iget-object v2, p0, Lio/sentry/config/e;->b:Ljava/util/Properties;
+    iget-object p0, p0, Lio/sentry/config/e;->b:Ljava/util/Properties;
 
     .line 20
     .line 21
-    invoke-virtual {v2}, Ljava/util/Properties;->entrySet()Ljava/util/Set;
+    invoke-virtual {p0}, Ljava/util/Properties;->entrySet()Ljava/util/Set;
 
     .line 22
     .line 23
     .line 24
-    move-result-object v2
+    move-result-object p0
 
     .line 25
-    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     .line 26
     .line 27
     .line 28
-    move-result-object v2
+    move-result-object p0
 
     .line 29
     :cond_0
     :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 30
     .line 31
     .line 32
-    move-result v3
+    move-result v2
 
     .line 33
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_1
 
     .line 34
     .line 35
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 36
     .line 37
     .line 38
-    move-result-object v3
+    move-result-object v2
 
     .line 39
-    check-cast v3, Ljava/util/Map$Entry;
+    check-cast v2, Ljava/util/Map$Entry;
 
     .line 40
     .line 41
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     .line 42
     .line 43
     .line 44
-    move-result-object v4
+    move-result-object v3
 
     .line 45
-    instance-of v4, v4, Ljava/lang/String;
+    instance-of v3, v3, Ljava/lang/String;
 
     .line 46
     .line 47
-    if-eqz v4, :cond_0
+    if-eqz v3, :cond_0
 
     .line 48
     .line 49
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     .line 50
     .line 51
     .line 52
-    move-result-object v4
+    move-result-object v3
 
     .line 53
-    instance-of v4, v4, Ljava/lang/String;
+    instance-of v3, v3, Ljava/lang/String;
 
     .line 54
     .line 55
-    if-eqz v4, :cond_0
+    if-eqz v3, :cond_0
 
     .line 56
     .line 57
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     .line 58
     .line 59
     .line 60
-    move-result-object v4
+    move-result-object v3
 
     .line 61
-    check-cast v4, Ljava/lang/String;
+    check-cast v3, Ljava/lang/String;
 
     .line 62
     .line 63
-    invoke-virtual {v4, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {v3, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     .line 64
     .line 65
     .line 66
-    move-result v5
+    move-result v4
 
     .line 67
-    if-eqz v5, :cond_0
+    if-eqz v4, :cond_0
 
     .line 68
     .line 69
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     .line 70
     .line 71
     .line 72
-    move-result-object v3
+    move-result-object v2
 
     .line 73
-    check-cast v3, Ljava/lang/String;
+    check-cast v2, Ljava/lang/String;
 
     .line 74
     .line 75
-    invoke-static {v3}, Lio/sentry/util/n;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lio/sentry/util/q;->c(Ljava/lang/String;)Ljava/lang/String;
 
     .line 76
     .line 77
     .line 78
-    move-result-object v3
+    move-result-object v2
 
     .line 79
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -220,18 +220,18 @@
     .line 80
     .line 81
     .line 82
-    move-result v5
+    move-result v4
 
     .line 83
-    invoke-virtual {v4, v5}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {v3, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     .line 84
     .line 85
     .line 86
-    move-result-object v4
+    move-result-object v3
 
     .line 87
-    invoke-virtual {v1, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 88
     .line 89
@@ -278,25 +278,25 @@
     move-result-object p1
 
     .line 18
-    iget-object v0, p0, Lio/sentry/config/e;->b:Ljava/util/Properties;
+    iget-object p0, p0, Lio/sentry/config/e;->b:Ljava/util/Properties;
 
     .line 19
     .line 20
-    invoke-virtual {v0, p1}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     .line 21
     .line 22
     .line 23
-    move-result-object p1
+    move-result-object p0
 
     .line 24
-    invoke-static {p1}, Lio/sentry/util/n;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lio/sentry/util/q;->c(Ljava/lang/String;)Ljava/lang/String;
 
     .line 25
     .line 26
     .line 27
-    move-result-object p1
+    move-result-object p0
 
     .line 28
-    return-object p1
+    return-object p0
 .end method

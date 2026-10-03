@@ -1,15 +1,15 @@
 .class public final Lio/sentry/android/core/g0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroidx/lifecycle/DefaultLifecycleObserver;
 
 
 # instance fields
-.field public final Q:Lio/sentry/android/core/f0;
+.field public final X:Lio/sentry/android/core/f0;
 
-.field public final synthetic R:Lio/sentry/android/core/h0;
+.field public final synthetic Y:Lio/sentry/android/core/h0;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/sentry/android/core/g0;->R:Lio/sentry/android/core/h0;
+    iput-object p1, p0, Lio/sentry/android/core/g0;->Y:Lio/sentry/android/core/h0;
 
     .line 5
     .line 6
@@ -38,7 +38,7 @@
     .line 10
     .line 11
     .line 12
-    iput-object p1, p0, Lio/sentry/android/core/g0;->Q:Lio/sentry/android/core/f0;
+    iput-object p1, p0, Lio/sentry/android/core/g0;->X:Lio/sentry/android/core/f0;
 
     .line 13
     .line 14
@@ -47,59 +47,11 @@
 
 
 # virtual methods
-.method public final onCreate(Lik3;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final onDestroy(Lik3;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final onPause(Lik3;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final onResume(Lik3;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final onStart(Lik3;)V
+.method public final onStart(Lf14;)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lio/sentry/android/core/g0;->R:Lio/sentry/android/core/h0;
+    iget-object p1, p0, Lio/sentry/android/core/g0;->Y:Lio/sentry/android/core/h0;
 
     .line 2
     .line 3
@@ -107,48 +59,48 @@
 
     .line 4
     .line 5
-    iput-object v0, p1, Lio/sentry/android/core/h0;->T:Ljava/lang/Boolean;
+    iput-object v0, p1, Lio/sentry/android/core/h0;->c0:Ljava/lang/Boolean;
 
     .line 6
     .line 7
-    iget-object p1, p0, Lio/sentry/android/core/g0;->Q:Lio/sentry/android/core/f0;
+    iget-object p0, p0, Lio/sentry/android/core/g0;->X:Lio/sentry/android/core/f0;
 
     .line 8
     .line 9
-    invoke-virtual {p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     .line 10
     .line 11
     .line 12
-    move-result-object p1
+    move-result-object p0
 
     .line 13
     :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 14
     .line 15
     .line 16
-    move-result v0
+    move-result p1
 
     .line 17
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_0
 
     .line 18
     .line 19
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v0
+    move-result-object p1
 
     .line 23
-    check-cast v0, Lio/sentry/android/core/e0;
+    check-cast p1, Lio/sentry/android/core/e0;
 
     .line 24
     .line 25
-    invoke-interface {v0}, Lio/sentry/android/core/e0;->f()V
+    invoke-interface {p1}, Lio/sentry/android/core/e0;->g()V
 
     .line 26
     .line 27
@@ -160,11 +112,11 @@
     return-void
 .end method
 
-.method public final onStop(Lik3;)V
+.method public final onStop(Lf14;)V
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lio/sentry/android/core/g0;->R:Lio/sentry/android/core/h0;
+    iget-object p1, p0, Lio/sentry/android/core/g0;->Y:Lio/sentry/android/core/h0;
 
     .line 2
     .line 3
@@ -172,48 +124,48 @@
 
     .line 4
     .line 5
-    iput-object v0, p1, Lio/sentry/android/core/h0;->T:Ljava/lang/Boolean;
+    iput-object v0, p1, Lio/sentry/android/core/h0;->c0:Ljava/lang/Boolean;
 
     .line 6
     .line 7
-    iget-object p1, p0, Lio/sentry/android/core/g0;->Q:Lio/sentry/android/core/f0;
+    iget-object p0, p0, Lio/sentry/android/core/g0;->X:Lio/sentry/android/core/f0;
 
     .line 8
     .line 9
-    invoke-virtual {p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     .line 10
     .line 11
     .line 12
-    move-result-object p1
+    move-result-object p0
 
     .line 13
     :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 14
     .line 15
     .line 16
-    move-result v0
+    move-result p1
 
     .line 17
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_0
 
     .line 18
     .line 19
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v0
+    move-result-object p1
 
     .line 23
-    check-cast v0, Lio/sentry/android/core/e0;
+    check-cast p1, Lio/sentry/android/core/e0;
 
     .line 24
     .line 25
-    invoke-interface {v0}, Lio/sentry/android/core/e0;->h()V
+    invoke-interface {p1}, Lio/sentry/android/core/e0;->h()V
 
     .line 26
     .line 27

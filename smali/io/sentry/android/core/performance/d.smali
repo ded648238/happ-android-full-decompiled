@@ -1,6 +1,6 @@
 .class public final synthetic Lio/sentry/android/core/performance/d;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/MessageQueue$IdleHandler;
@@ -30,41 +30,20 @@
 
 # virtual methods
 .method public final queueIdle()Z
-    .locals 3
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/performance/d;->a:Lio/sentry/android/core/performance/g;
+    iget-object p0, p0, Lio/sentry/android/core/performance/d;->a:Lio/sentry/android/core/performance/g;
 
     .line 2
     .line 3
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+    invoke-static {p0}, Lio/sentry/android/core/performance/g;->a(Lio/sentry/android/core/performance/g;)V
 
     .line 4
     .line 5
     .line 6
-    move-result-wide v1
+    const/4 p0, 0x0
 
     .line 7
-    iput-wide v1, v0, Lio/sentry/android/core/performance/g;->S:J
-
-    .line 8
-    .line 9
-    iget-object v1, v0, Lio/sentry/android/core/performance/g;->f0:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 10
-    .line 11
-    const/4 v2, 0x0
-
-    .line 12
-    invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
-
-    .line 13
-    .line 14
-    .line 15
-    invoke-virtual {v0}, Lio/sentry/android/core/performance/g;->d()V
-
-    .line 16
-    .line 17
-    .line 18
-    return v2
+    return p0
 .end method

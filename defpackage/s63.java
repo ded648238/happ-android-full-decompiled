@@ -1,15 +1,43 @@
 package defpackage;
 
-import java.util.ArrayList;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class s63 extends cn4 implements l18 {
+    public fn8 n0;
+    public fn8 o0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class s63 implements hb3 {
-    public static final ib3 b = new ib3(hg5.a.b(s63.class));
-    public final ArrayList a = new ArrayList();
+    public s63() {
+        l82 l82Var = h31.g;
+        this.n0 = l82Var;
+        this.o0 = l82Var;
+    }
 
-    @Override // defpackage.hb3
-    public final ib3 c() {
-        return b;
+    @Override // defpackage.cn4
+    public void M0() {
+        m18.c(this, "androidx.compose.foundation.layout.ConsumedInsetsProvider", new r63(this, 1));
+        V0();
+    }
+
+    @Override // defpackage.cn4
+    public void N0() {
+        this.o0 = this.n0;
+        m18.e(this, "androidx.compose.foundation.layout.ConsumedInsetsProvider", new r63(this, 0));
+    }
+
+    @Override // defpackage.cn4
+    public final void O0() {
+        this.n0 = h31.g;
+    }
+
+    public abstract fn8 U0(fn8 fn8Var);
+
+    public void V0() {
+        this.o0 = U0(this.n0);
+        m18.e(this, "androidx.compose.foundation.layout.ConsumedInsetsProvider", new r63(this, 0));
+    }
+
+    @Override // defpackage.l18
+    public final Object o() {
+        return "androidx.compose.foundation.layout.ConsumedInsetsProvider";
     }
 }

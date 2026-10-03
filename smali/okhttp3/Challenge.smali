@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Challenge;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -233,7 +233,7 @@
 
     .line 69
     :cond_1
-    invoke-static {p1}, Lj$/util/DesugarCollections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     .line 70
     .line 71
@@ -256,7 +256,7 @@
 
 # virtual methods
 .method public final -deprecated_authParams()Ljava/util/Map;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -267,20 +267,20 @@
         }
     .end annotation
 
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_charset()Ljava/nio/charset/Charset;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -289,15 +289,15 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_realm()Ljava/lang/String;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -306,27 +306,27 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_scheme()Ljava/lang/String;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Challenge;->scheme:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Challenge;->scheme:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final authParams()Ljava/util/Map;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -338,72 +338,72 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final charset()Ljava/nio/charset/Charset;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
 
     .line 2
     .line 3
-    const-string v1, "charset"
+    const-string v0, "charset"
 
     .line 4
     .line 5
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    check-cast v0, Ljava/lang/String;
+    check-cast p0, Ljava/lang/String;
 
     .line 10
     .line 11
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 12
     .line 13
     :try_start_0
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+    invoke-static {p0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     .line 14
     .line 15
     .line 16
-    move-result-object v0
+    move-result-object p0
 
     .line 17
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 18
     .line 19
     .line 20
-    return-object v0
+    return-object p0
 
     .line 21
     :catch_0
     :cond_0
-    sget-object v0, Ljava/nio/charset/StandardCharsets;->ISO_8859_1:Ljava/nio/charset/Charset;
+    sget-object p0, Ljava/nio/charset/StandardCharsets;->ISO_8859_1:Ljava/nio/charset/Charset;
 
     .line 22
     .line 23
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 24
     .line 25
     .line 26
-    return-object v0
+    return-object p0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -430,7 +430,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 12
     .line 13
@@ -446,33 +446,33 @@
 
     .line 18
     .line 19
-    iget-object v0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
 
     .line 20
     .line 21
-    invoke-static {p1, v0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 22
     .line 23
     .line 24
-    move-result p1
+    move-result p0
 
     .line 25
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 26
     .line 27
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 28
-    return p1
+    return p0
 
     .line 29
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 30
-    return p1
+    return p0
 .end method
 
 .method public hashCode()I
@@ -491,7 +491,7 @@
 
     .line 6
     .line 7
-    invoke-static {v2, v1, v0}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v2, v1, v0}, Leb7;->e(IILjava/lang/String;)I
 
     .line 8
     .line 9
@@ -499,60 +499,60 @@
     move-result v0
 
     .line 11
-    iget-object v1, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
 
     .line 12
     .line 13
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     .line 14
     .line 15
     .line 16
-    move-result v1
+    move-result p0
 
     .line 17
-    add-int/2addr v1, v0
+    add-int/2addr p0, v0
 
     .line 18
-    return v1
+    return p0
 .end method
 
 .method public final realm()Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
 
     .line 2
     .line 3
-    const-string v1, "realm"
+    const-string v0, "realm"
 
     .line 4
     .line 5
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    check-cast v0, Ljava/lang/String;
+    check-cast p0, Ljava/lang/String;
 
     .line 10
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final scheme()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Challenge;->scheme:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Challenge;->scheme:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -586,11 +586,11 @@
     .line 14
     .line 15
     .line 16
-    iget-object v1, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Challenge;->authParams:Ljava/util/Map;
 
     .line 17
     .line 18
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 19
     .line 20
@@ -600,10 +600,10 @@
     .line 22
     .line 23
     .line 24
-    move-result-object v0
+    move-result-object p0
 
     .line 25
-    return-object v0
+    return-object p0
 .end method
 
 .method public final withCharset(Ljava/nio/charset/Charset;)Lokhttp3/Challenge;
@@ -619,7 +619,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0}, Lxy3;->t1(Ljava/util/Map;)Ljava/util/LinkedHashMap;
+    invoke-static {v0}, Luf4;->j0(Ljava/util/Map;)Ljava/util/LinkedHashMap;
 
     .line 7
     .line 8
@@ -653,11 +653,11 @@
 
     .line 23
     .line 24
-    iget-object v1, p0, Lokhttp3/Challenge;->scheme:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Challenge;->scheme:Ljava/lang/String;
 
     .line 25
     .line 26
-    invoke-direct {p1, v1, v0}, Lokhttp3/Challenge;-><init>(Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {p1, p0, v0}, Lokhttp3/Challenge;-><init>(Ljava/lang/String;Ljava/util/Map;)V
 
     .line 27
     .line 28

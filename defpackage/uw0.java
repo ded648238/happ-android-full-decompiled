@@ -1,81 +1,57 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class uw0 extends y0 implements qw0 {
-    public static final tw0 R = new tw0(ng2.T, new y3(18));
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
 
-    public uw0() {
-        super(ng2.T);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class uw0 implements yp5 {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ Object b;
+    public final /* synthetic */ Object c;
+
+    public /* synthetic */ uw0(int i, Object obj, Object obj2) {
+        this.a = i;
+        this.b = obj;
+        this.c = obj2;
     }
 
-    public abstract void I0(sw0 sw0Var, Runnable runnable);
-
-    public void J0(sw0 sw0Var, Runnable runnable) throws he1 {
-        je1.b(this, sw0Var, runnable);
-    }
-
-    public boolean K0(sw0 sw0Var) {
-        return !(this instanceof xf7);
-    }
-
-    public uw0 L0(int i) {
-        vs0.m(i);
-        return new sk3(this, i);
-    }
-
-    /* JADX WARN: Code restructure failed: missing block: B:11:0x001b, code lost:
-    
-        if (((defpackage.qw0) r3.Q.invoke(r2)) == null) goto L17;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:14:0x0020, code lost:
-    
-        if (defpackage.ng2.T == r3) goto L15;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:16:0x0024, code lost:
-    
-        return defpackage.un1.Q;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:17:0x0025, code lost:
-    
-        return r2;
-     */
-    @Override // defpackage.y0, defpackage.sw0
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
-    public final sw0 R(rw0 rw0Var) {
-        rw0Var.getClass();
-        if (rw0Var instanceof tw0) {
-            tw0 tw0Var = (tw0) rw0Var;
-            rw0 rw0Var2 = this.Q;
-            if (rw0Var2 != tw0Var) {
-                if (tw0Var.R != rw0Var2) {
-                    return this;
+    @Override // defpackage.yp5
+    public final Object get() {
+        ApplicationInfo applicationInfo;
+        Bundle bundle;
+        int i = this.a;
+        Object obj = this.c;
+        Object obj2 = this.b;
+        switch (i) {
+            case 0:
+                aw0 aw0Var = (aw0) obj;
+                return aw0Var.f.b(new v5(aw0Var, (vw0) obj2));
+            case 1:
+                return new ut2((Context) obj2, (String) obj);
+            default:
+                n62 n62Var = (n62) obj2;
+                String c = n62Var.c();
+                g71 g71Var = new g71();
+                Context createDeviceProtectedStorageContext = ((Context) obj).createDeviceProtectedStorageContext();
+                SharedPreferences sharedPreferences = createDeviceProtectedStorageContext.getSharedPreferences("com.google.firebase.common.prefs:".concat(c), 0);
+                boolean z = true;
+                if (sharedPreferences.contains("firebase_data_collection_default_enabled")) {
+                    z = sharedPreferences.getBoolean("firebase_data_collection_default_enabled", true);
+                } else {
+                    try {
+                        PackageManager packageManager = createDeviceProtectedStorageContext.getPackageManager();
+                        if (packageManager != null && (applicationInfo = packageManager.getApplicationInfo(createDeviceProtectedStorageContext.getPackageName(), 128)) != null && (bundle = applicationInfo.metaData) != null && bundle.containsKey("firebase_data_collection_default_enabled")) {
+                            z = applicationInfo.metaData.getBoolean("firebase_data_collection_default_enabled");
+                        }
+                    } catch (PackageManager.NameNotFoundException unused) {
+                    }
                 }
-            }
+                g71Var.a = z;
+                return g71Var;
         }
-    }
-
-    public String toString() {
-        return getClass().getSimpleName() + '@' + e21.y(this);
-    }
-
-    @Override // defpackage.y0, defpackage.sw0
-    public final qw0 v0(rw0 rw0Var) {
-        qw0 qw0Var;
-        rw0Var.getClass();
-        if (!(rw0Var instanceof tw0)) {
-            if (ng2.T == rw0Var) {
-                return this;
-            }
-            return null;
-        }
-        tw0 tw0Var = (tw0) rw0Var;
-        rw0 rw0Var2 = this.Q;
-        if ((rw0Var2 == tw0Var || tw0Var.R == rw0Var2) && (qw0Var = (qw0) tw0Var.Q.invoke(this)) != null) {
-            return qw0Var;
-        }
-        return null;
     }
 }

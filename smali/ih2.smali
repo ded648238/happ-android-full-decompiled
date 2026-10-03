@@ -1,70 +1,92 @@
 .class public final Lih2;
-.super Ld64;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ldp4;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public e0:Lu10;
+.field public a:I
+
+.field public b:Luf2;
+
+.field public c:Z
+
+.field public d:I
+
+.field public e:I
+
+.field public f:I
+
+.field public g:I
+
+.field public h:Ls04;
+
+.field public i:Ls04;
 
 
-# virtual methods
-.method public final s0(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+# direct methods
+.method public constructor <init>(ILuf2;)V
+    .locals 0
 
     .line 1
-    instance-of v0, p1, Ltt5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
-
     .line 4
+    iput p1, p0, Lih2;->a:I
+
     .line 5
-    check-cast p1, Ltt5;
-
     .line 6
-    .line 7
-    goto :goto_0
+    iput-object p2, p0, Lih2;->b:Luf2;
 
+    .line 7
     .line 8
-    :cond_0
     const/4 p1, 0x0
 
     .line 9
-    :goto_0
-    if-nez p1, :cond_1
+    iput-boolean p1, p0, Lih2;->c:Z
 
     .line 10
     .line 11
-    new-instance p1, Ltt5;
+    sget-object p1, Ls04;->d0:Ls04;
 
     .line 12
     .line 13
-    invoke-direct {p1}, Ltt5;-><init>()V
+    iput-object p1, p0, Lih2;->h:Ls04;
 
     .line 14
     .line 15
-    .line 16
-    :cond_1
-    iget-object v0, p0, Lih2;->e0:Lu10;
+    iput-object p1, p0, Lih2;->i:Ls04;
 
+    .line 16
     .line 17
+    return-void
+.end method
+
+.method public constructor <init>(ILuf2;I)V
+    .locals 0
+
     .line 18
-    new-instance v1, Lox0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 19
+    iput p1, p0, Lih2;->a:I
+
     .line 20
-    invoke-direct {v1, v0}, Lox0;-><init>(Lu10;)V
+    iput-object p2, p0, Lih2;->b:Luf2;
+
+    const/4 p1, 0x1
 
     .line 21
-    .line 22
-    .line 23
-    iput-object v1, p1, Ltt5;->c:Lox0;
+    iput-boolean p1, p0, Lih2;->c:Z
 
-    .line 24
-    .line 25
-    return-object p1
+    .line 22
+    sget-object p1, Ls04;->d0:Ls04;
+
+    iput-object p1, p0, Lih2;->h:Ls04;
+
+    .line 23
+    iput-object p1, p0, Lih2;->i:Ls04;
+
+    return-void
 .end method

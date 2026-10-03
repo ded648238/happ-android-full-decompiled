@@ -1,34 +1,44 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class es4 implements pw0 {
-    public final float a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class es4 {
+    public zs6 a;
+    public boolean b;
 
-    public es4(float f) {
-        this.a = f;
-        if (f < 0.0f || f > 100.0f) {
-            cq2.a("The percent should be in the range of [0, 100]");
+    public final void a() {
+        zs6 zs6Var = this.a;
+        if (zs6Var == null) {
+            i60.g("This input is not added to any dispatcher.");
+            return;
         }
-    }
-
-    @Override // defpackage.pw0
-    public final float a(long j, z61 z61Var) {
-        return (this.a / 100.0f) * rb6.b(j);
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+        if (!this.b) {
+            zs6Var.t(this, null);
         }
-        return (obj instanceof es4) && Float.compare(this.a, ((es4) obj).a) == 0;
+        fs4 fs4Var = (fs4) zs6Var.Z;
+        v31 v31Var = (v31) zs6Var.Y;
+        fs4Var.getClass();
+        if (equals(fs4Var.h) && -1 == fs4Var.g) {
+            bz4 bz4Var = fs4Var.f;
+            if (bz4Var == null) {
+                bz4Var = fs4Var.c(-1);
+            }
+            fs4Var.f = null;
+            fs4Var.g = 0;
+            fs4Var.h = null;
+            if (bz4Var == null) {
+                ((hz4) v31Var.Y).a.run();
+            } else {
+                bz4Var.d.b();
+            }
+            k57 k57Var = fs4Var.a;
+            gs4 gs4Var = gs4.i;
+            k57Var.getClass();
+            k57Var.n(null, gs4Var);
+        }
+        this.b = false;
     }
 
-    public final int hashCode() {
-        return Float.floatToIntBits(this.a);
-    }
-
-    public final String toString() {
-        return "CornerSize(size = " + this.a + "%)";
+    public void b(boolean z) {
     }
 }

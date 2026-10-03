@@ -1,49 +1,57 @@
 .class public final Liw4;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public synthetic T:Ljava/lang/Object;
+.field public final a:Landroid/content/ComponentName;
 
-.field public U:I
+.field public b:Z
+
+.field public c:Landroid/support/v4/app/INotificationSideChannel;
+
+.field public final d:Ljava/util/ArrayDeque;
+
+.field public e:I
 
 
-# virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+# direct methods
+.method public constructor <init>(Landroid/content/ComponentName;)V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Liw4;->T:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iget p1, p0, Liw4;->U:I
-
     .line 4
+    const/4 v0, 0x0
+
     .line 5
-    const/high16 v0, -0x80000000
+    iput-boolean v0, p0, Liw4;->b:Z
 
     .line 6
     .line 7
-    or-int/2addr p1, v0
+    new-instance v1, Ljava/util/ArrayDeque;
 
     .line 8
-    iput p1, p0, Liw4;->U:I
-
     .line 9
+    invoke-direct {v1}, Ljava/util/ArrayDeque;-><init>()V
+
     .line 10
-    const/4 p1, 0x0
-
     .line 11
-    invoke-static {p1, p1, p0}, Ljw4;->b(Lqm4;Lu72;Law0;)V
-
     .line 12
+    iput-object v1, p0, Liw4;->d:Ljava/util/ArrayDeque;
+
     .line 13
     .line 14
-    sget-object p1, Lcx0;->Q:Lcx0;
+    iput v0, p0, Liw4;->e:I
 
     .line 15
     .line 16
-    return-object p1
+    iput-object p1, p0, Liw4;->a:Landroid/content/ComponentName;
+
+    .line 17
+    .line 18
+    return-void
 .end method

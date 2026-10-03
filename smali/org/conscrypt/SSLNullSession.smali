@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/SSLNullSession;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lorg/conscrypt/ConscryptSession;
@@ -77,35 +77,35 @@
 
 # virtual methods
 .method public getApplicationBufferSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/16 v0, 0x4000
+    const/16 p0, 0x4000
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getApplicationProtocol()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
 .method public getCipherSuite()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "SSL_NULL_WITH_NULL_NULL"
+    const-string p0, "SSL_NULL_WITH_NULL_NULL"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getCreationTime()J
@@ -120,14 +120,14 @@
 .end method
 
 .method public getId()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    sget-object v0, Lorg/conscrypt/EmptyArray;->BYTE:[B
+    sget-object p0, Lorg/conscrypt/EmptyArray;->BYTE:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getLastAccessedTime()J
@@ -142,52 +142,52 @@
 .end method
 
 .method public getLocalCertificates()[Ljava/security/cert/Certificate;
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
 .method public getLocalPrincipal()Ljava/security/Principal;
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
 .method public getLocalSupportedSignatureAlgorithms()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    new-array v0, v0, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
     .line 3
     .line 4
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPacketBufferSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/16 v0, 0x4145
+    const/16 p0, 0x4145
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getPeerCertificateChain()[Ljavax/security/cert/X509Certificate;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -195,24 +195,24 @@
     .end annotation
 
     .line 1
-    new-instance v0, Ljavax/net/ssl/SSLPeerUnverifiedException;
+    new-instance p0, Ljavax/net/ssl/SSLPeerUnverifiedException;
 
     .line 2
     .line 3
-    const-string v1, "No peer certificate"
+    const-string v0, "No peer certificate"
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljavax/net/ssl/SSLPeerUnverifiedException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljavax/net/ssl/SSLPeerUnverifiedException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw v0
+    throw p0
 .end method
 
 .method public bridge synthetic getPeerCertificates()[Ljava/security/cert/Certificate;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -222,13 +222,13 @@
     .line 9
     invoke-virtual {p0}, Lorg/conscrypt/SSLNullSession;->getPeerCertificates()[Ljava/security/cert/X509Certificate;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerCertificates()[Ljava/security/cert/X509Certificate;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -236,44 +236,44 @@
     .end annotation
 
     .line 1
-    new-instance v0, Ljavax/net/ssl/SSLPeerUnverifiedException;
+    new-instance p0, Ljavax/net/ssl/SSLPeerUnverifiedException;
 
     .line 2
     .line 3
-    const-string v1, "No peer certificate"
+    const-string v0, "No peer certificate"
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljavax/net/ssl/SSLPeerUnverifiedException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljavax/net/ssl/SSLPeerUnverifiedException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw v0
+    throw p0
 .end method
 
 .method public getPeerHost()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerPort()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, -0x1
+    const/4 p0, -0x1
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public getPeerPrincipal()Ljava/security/Principal;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -281,80 +281,80 @@
     .end annotation
 
     .line 1
-    new-instance v0, Ljavax/net/ssl/SSLPeerUnverifiedException;
+    new-instance p0, Ljavax/net/ssl/SSLPeerUnverifiedException;
 
     .line 2
     .line 3
-    const-string v1, "No peer certificate"
+    const-string v0, "No peer certificate"
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljavax/net/ssl/SSLPeerUnverifiedException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljavax/net/ssl/SSLPeerUnverifiedException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw v0
+    throw p0
 .end method
 
 .method public getPeerSignedCertificateTimestamp()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    sget-object v0, Lorg/conscrypt/EmptyArray;->BYTE:[B
+    sget-object p0, Lorg/conscrypt/EmptyArray;->BYTE:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerSupportedSignatureAlgorithms()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    new-array v0, v0, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
     .line 3
     .line 4
-    return-object v0
+    return-object p0
 .end method
 
 .method public getProtocol()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "NONE"
+    const-string p0, "NONE"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getRequestedServerName()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSessionContext()Ljavax/net/ssl/SSLSessionContext;
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
 .method public getStatusResponses()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -364,18 +364,38 @@
     .end annotation
 
     .line 1
-    sget-object v0, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
+    sget-object p0, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getValue(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "All calls to this method should be intercepted by ExternalSession."
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public getValueNames()[Ljava/lang/String;
     .locals 1
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
@@ -383,32 +403,12 @@
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
-.end method
-
-.method public getValueNames()[Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    .line 2
-    .line 3
-    const-string v1, "All calls to this method should be intercepted by ExternalSession."
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw v0
+    throw p0
 .end method
 
 .method public invalidate()V
@@ -419,51 +419,51 @@
 .end method
 
 .method public isValid()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public putValue(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    const-string p2, "All calls to this method should be intercepted by ExternalSession."
+    const-string p1, "All calls to this method should be intercepted by ExternalSession."
 
     .line 4
     .line 5
-    invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method public removeValue(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    const-string v0, "All calls to this method should be intercepted by ExternalSession."
+    const-string p1, "All calls to this method should be intercepted by ExternalSession."
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method

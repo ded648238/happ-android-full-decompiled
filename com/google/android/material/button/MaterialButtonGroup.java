@@ -5,71 +5,91 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.content.res.XmlResourceParser;
 import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.Xml;
+import android.view.ContextThemeWrapper;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import defpackage.a04;
-import defpackage.b0;
-import defpackage.c37;
-import defpackage.co0;
-import defpackage.hg1;
-import defpackage.i04;
-import defpackage.j86;
-import defpackage.na5;
-import defpackage.nh6;
-import defpackage.oh6;
-import defpackage.ow0;
-import defpackage.ph6;
-import defpackage.qh6;
-import defpackage.rh6;
-import defpackage.va5;
+import defpackage.a05;
+import defpackage.gv7;
+import defpackage.hh4;
+import defpackage.i60;
+import defpackage.io1;
+import defpackage.js5;
+import defpackage.lg4;
+import defpackage.nu5;
+import defpackage.o57;
+import defpackage.p57;
+import defpackage.q57;
+import defpackage.r57;
+import defpackage.rv0;
+import defpackage.s57;
+import defpackage.t31;
+import defpackage.uu5;
+import defpackage.wu6;
+import defpackage.xu6;
+import defpackage.y;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.TreeMap;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class MaterialButtonGroup extends LinearLayout {
-    public static final int d0 = na5.Widget_Material3_MaterialButtonGroup;
-    public final ArrayList Q;
-    public final ArrayList R;
-    public final hg1 S;
-    public final co0 T;
-    public Integer[] U;
-    public nh6 V;
-    public ph6 W;
-    public int a0;
-    public rh6 b0;
-    public boolean c0;
+    public static final int n0 = nu5.Widget_Material3_MaterialButtonGroup;
+    public static final Object o0 = null;
+    public int c0;
+    public final ArrayList d0;
+    public final io1 e0;
+    public final rv0 f0;
+    public Integer[] g0;
+    public o57 h0;
+    public q57 i0;
+    public int j0;
+    public s57 k0;
+    public boolean l0;
+    public final ArrayList m0;
 
     /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public MaterialButtonGroup(Context context, AttributeSet attributeSet, int i) {
-        nh6 nh6VarB;
+        super(hh4.b(context, attributeSet, i, r5), attributeSet, i);
+        o57 b;
+        XmlResourceParser xml;
         int next;
-        rh6 rh6Var;
         int next2;
-        int i2 = d0;
-        super(i04.a(context, attributeSet, i, i2), attributeSet, i);
-        this.Q = new ArrayList();
-        this.R = new ArrayList();
-        this.S = new hg1(20, this);
-        this.T = new co0(1, this);
-        this.c0 = true;
+        int i2 = n0;
+        this.c0 = 0;
+        this.d0 = new ArrayList();
+        this.e0 = new io1(22, this);
+        this.f0 = new rv0(1, this);
+        this.l0 = true;
+        new HashMap();
+        new HashMap();
+        new ArrayList();
+        new ArrayList();
+        this.m0 = new ArrayList();
         Context context2 = getContext();
-        TypedArray typedArrayD = c37.d(context2, attributeSet, va5.MaterialButtonGroup, i, i2, new int[0]);
-        if (typedArrayD.hasValue(va5.MaterialButtonGroup_buttonSizeChange)) {
-            int resourceId = typedArrayD.getResourceId(va5.MaterialButtonGroup_buttonSizeChange, 0);
+        TypedArray d = gv7.d(context2, attributeSet, uu5.MaterialButtonGroup, i, i2, new int[0]);
+        if (d.hasValue(uu5.MaterialButtonGroup_buttonSizeChange)) {
+            int resourceId = d.getResourceId(uu5.MaterialButtonGroup_buttonSizeChange, 0);
+            s57 s57Var = null;
             if (resourceId != 0 && context2.getResources().getResourceTypeName(resourceId).equals("xml")) {
                 try {
-                    XmlResourceParser xml = context2.getResources().getXml(resourceId);
+                    xml = context2.getResources().getXml(resourceId);
                     try {
-                        rh6Var = new rh6();
-                        rh6Var.c = new int[10][];
-                        rh6Var.d = new a04[10];
-                        AttributeSet attributeSetAsAttributeSet = Xml.asAttributeSet(xml);
+                        s57 s57Var2 = new s57();
+                        s57Var2.c = new int[10][];
+                        s57Var2.d = new a05[10];
+                        AttributeSet asAttributeSet = Xml.asAttributeSet(xml);
                         do {
                             next2 = xml.next();
                             if (next2 == 2) {
@@ -80,49 +100,45 @@ public abstract class MaterialButtonGroup extends LinearLayout {
                             throw new XmlPullParserException("No start tag found");
                         }
                         if (xml.getName().equals("selector")) {
-                            rh6Var.a(context2, xml, attributeSetAsAttributeSet, context2.getTheme());
+                            s57Var2.a(context2, xml, asAttributeSet, context2.getTheme());
                         }
                         xml.close();
-                    } catch (Throwable th) {
-                        if (xml == null) {
-                            throw th;
-                        }
-                        try {
-                            xml.close();
-                            throw th;
-                        } catch (Throwable th2) {
-                            th.addSuppressed(th2);
-                            throw th;
-                        }
+                        s57Var = s57Var2;
+                    } finally {
                     }
                 } catch (Resources.NotFoundException | IOException | XmlPullParserException unused) {
-                    rh6Var = null;
                 }
-            } else {
-                rh6Var = null;
             }
-            this.b0 = rh6Var;
+            this.k0 = s57Var;
         }
-        if (typedArrayD.hasValue(va5.MaterialButtonGroup_shapeAppearance)) {
-            ph6 ph6VarB = ph6.b(context2, typedArrayD, va5.MaterialButtonGroup_shapeAppearance);
-            this.W = ph6VarB;
-            if (ph6VarB == null) {
-                oh6 oh6Var = new oh6(j86.a(context2, typedArrayD.getResourceId(va5.MaterialButtonGroup_shapeAppearance, 0), typedArrayD.getResourceId(va5.MaterialButtonGroup_shapeAppearanceOverlay, 0), new b0(0.0f)).b());
-                this.W = oh6Var.a != 0 ? new ph6(oh6Var) : null;
+        if (d.hasValue(uu5.MaterialButtonGroup_shapeAppearance)) {
+            q57 h = q57.h(context2, d, uu5.MaterialButtonGroup_shapeAppearance);
+            this.i0 = h;
+            if (h == null) {
+                int resourceId2 = d.getResourceId(uu5.MaterialButtonGroup_shapeAppearance, 0);
+                int resourceId3 = d.getResourceId(uu5.MaterialButtonGroup_shapeAppearanceOverlay, 0);
+                y yVar = new y(0.0f);
+                ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context2, resourceId2);
+                if (resourceId3 != 0) {
+                    contextThemeWrapper.getTheme().applyStyle(resourceId3, true);
+                }
+                this.i0 = new p57(xu6.h(contextThemeWrapper.obtainStyledAttributes(uu5.ShapeAppearance), yVar).b()).b();
             }
         }
-        if (typedArrayD.hasValue(va5.MaterialButtonGroup_innerCornerSize)) {
-            int i3 = va5.MaterialButtonGroup_innerCornerSize;
-            b0 b0Var = new b0(0.0f);
-            int resourceId2 = typedArrayD.getResourceId(i3, 0);
-            if (resourceId2 != 0 && context2.getResources().getResourceTypeName(resourceId2).equals("xml")) {
+        if (d.hasValue(uu5.MaterialButtonGroup_innerCornerSize)) {
+            int i3 = uu5.MaterialButtonGroup_innerCornerSize;
+            y yVar2 = new y(0.0f);
+            int resourceId4 = d.getResourceId(i3, 0);
+            if (resourceId4 == 0) {
+                b = o57.b(xu6.i(d, i3, yVar2));
+            } else if (context2.getResources().getResourceTypeName(resourceId4).equals("xml")) {
                 try {
-                    XmlResourceParser xml2 = context2.getResources().getXml(resourceId2);
+                    xml = context2.getResources().getXml(resourceId4);
                     try {
-                        nh6 nh6Var = new nh6();
-                        AttributeSet attributeSetAsAttributeSet2 = Xml.asAttributeSet(xml2);
+                        o57 o57Var = new o57();
+                        AttributeSet asAttributeSet2 = Xml.asAttributeSet(xml);
                         do {
-                            next = xml2.next();
+                            next = xml.next();
                             if (next == 2) {
                                 break;
                             }
@@ -130,41 +146,42 @@ public abstract class MaterialButtonGroup extends LinearLayout {
                         if (next != 2) {
                             throw new XmlPullParserException("No start tag found");
                         }
-                        if (xml2.getName().equals("selector")) {
-                            nh6Var.d(context2, xml2, attributeSetAsAttributeSet2, context2.getTheme());
+                        if (xml.getName().equals("selector")) {
+                            o57Var.d(context2, xml, asAttributeSet2, context2.getTheme());
                         }
-                        xml2.close();
-                        nh6VarB = nh6Var;
-                    } catch (Throwable th3) {
-                        if (xml2 == null) {
-                            throw th3;
-                        }
-                        try {
-                            xml2.close();
-                            throw th3;
-                        } catch (Throwable th4) {
-                            th3.addSuppressed(th4);
-                            throw th3;
-                        }
+                        xml.close();
+                        b = o57Var;
+                    } finally {
                     }
                 } catch (Resources.NotFoundException | IOException | XmlPullParserException unused2) {
-                    nh6VarB = nh6.b(b0Var);
+                    b = o57.b(yVar2);
                 }
             } else {
-                nh6VarB = nh6.b(j86.c(typedArrayD, i3, b0Var));
+                b = o57.b(xu6.i(d, i3, yVar2));
             }
-            this.V = nh6VarB;
+            this.h0 = b;
         }
-        this.a0 = typedArrayD.getDimensionPixelSize(va5.MaterialButtonGroup_android_spacing, 0);
+        this.j0 = d.getDimensionPixelSize(uu5.MaterialButtonGroup_android_spacing, 0);
         setChildrenDrawingOrderEnabled(true);
-        setEnabled(typedArrayD.getBoolean(va5.MaterialButtonGroup_android_enabled, true));
-        typedArrayD.recycle();
+        setEnabled(d.getBoolean(uu5.MaterialButtonGroup_android_enabled, true));
+        setOverflowMode(d.getInt(uu5.MaterialButtonGroup_overflowMode, 0));
+        getResources().getDimensionPixelOffset(js5.m3_btn_group_overflow_item_icon_horizontal_padding);
+        d.recycle();
+    }
+
+    public static LinearLayout.LayoutParams d(View view) {
+        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
+        return layoutParams instanceof LinearLayout.LayoutParams ? (LinearLayout.LayoutParams) layoutParams : new LayoutParams(layoutParams.width, layoutParams.height);
+    }
+
+    public static LayoutParams e(ViewGroup.LayoutParams layoutParams) {
+        return layoutParams instanceof LinearLayout.LayoutParams ? new LayoutParams((LinearLayout.LayoutParams) layoutParams) : layoutParams instanceof ViewGroup.MarginLayoutParams ? new LayoutParams((ViewGroup.MarginLayoutParams) layoutParams) : new LayoutParams(layoutParams);
     }
 
     private int getFirstVisibleChildIndex() {
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
-            if (c(i)) {
+            if (h(i)) {
                 return i;
             }
         }
@@ -173,7 +190,7 @@ public abstract class MaterialButtonGroup extends LinearLayout {
 
     private int getLastVisibleChildIndex() {
         for (int childCount = getChildCount() - 1; childCount >= 0; childCount--) {
-            if (c(childCount)) {
+            if (h(childCount)) {
                 return childCount;
             }
         }
@@ -186,171 +203,304 @@ public abstract class MaterialButtonGroup extends LinearLayout {
         }
     }
 
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0052  */
+    /* JADX WARN: Removed duplicated region for block: B:18:0x005e  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final void a() {
-        int iMin;
+        int i;
         int firstVisibleChildIndex = getFirstVisibleChildIndex();
         if (firstVisibleChildIndex == -1) {
             return;
         }
-        for (int i = firstVisibleChildIndex + 1; i < getChildCount(); i++) {
-            MaterialButton materialButton = (MaterialButton) getChildAt(i);
-            MaterialButton materialButton2 = (MaterialButton) getChildAt(i - 1);
-            if (this.a0 <= 0) {
-                iMin = Math.min(materialButton.getStrokeWidth(), materialButton2.getStrokeWidth());
-                materialButton.setShouldDrawSurfaceColorStroke(true);
-                materialButton2.setShouldDrawSurfaceColorStroke(true);
-            } else {
-                materialButton.setShouldDrawSurfaceColorStroke(false);
-                materialButton2.setShouldDrawSurfaceColorStroke(false);
-                iMin = 0;
+        for (int i2 = firstVisibleChildIndex + 1; i2 < getChildCount(); i2++) {
+            View childAt = getChildAt(i2);
+            View childAt2 = getChildAt(i2 - 1);
+            if ((childAt instanceof MaterialButton) && (childAt2 instanceof MaterialButton)) {
+                MaterialButton materialButton = (MaterialButton) childAt;
+                MaterialButton materialButton2 = (MaterialButton) childAt2;
+                if (this.j0 <= 0) {
+                    i = Math.min(materialButton.getStrokeWidth(), materialButton2.getStrokeWidth());
+                    materialButton.setShouldDrawSurfaceColorStroke(true);
+                    materialButton2.setShouldDrawSurfaceColorStroke(true);
+                    LinearLayout.LayoutParams d = d(childAt);
+                    if (getOrientation() != 0) {
+                        d.setMarginEnd(0);
+                        d.setMarginStart(this.j0 - i);
+                        d.topMargin = 0;
+                    } else {
+                        d.bottomMargin = 0;
+                        d.topMargin = this.j0 - i;
+                        d.setMarginStart(0);
+                    }
+                    childAt.setLayoutParams(d);
+                } else {
+                    materialButton.setShouldDrawSurfaceColorStroke(false);
+                    materialButton2.setShouldDrawSurfaceColorStroke(false);
+                }
             }
-            ViewGroup.LayoutParams layoutParams = materialButton.getLayoutParams();
-            LinearLayout.LayoutParams layoutParams2 = layoutParams instanceof LinearLayout.LayoutParams ? (LinearLayout.LayoutParams) layoutParams : new LinearLayout.LayoutParams(layoutParams.width, layoutParams.height);
-            if (getOrientation() == 0) {
-                layoutParams2.setMarginEnd(0);
-                layoutParams2.setMarginStart(this.a0 - iMin);
-                layoutParams2.topMargin = 0;
-            } else {
-                layoutParams2.bottomMargin = 0;
-                layoutParams2.topMargin = this.a0 - iMin;
-                layoutParams2.setMarginStart(0);
+            i = 0;
+            LinearLayout.LayoutParams d2 = d(childAt);
+            if (getOrientation() != 0) {
             }
-            materialButton.setLayoutParams(layoutParams2);
+            childAt.setLayoutParams(d2);
         }
         if (getChildCount() == 0 || firstVisibleChildIndex == -1) {
             return;
         }
-        LinearLayout.LayoutParams layoutParams3 = (LinearLayout.LayoutParams) ((MaterialButton) getChildAt(firstVisibleChildIndex)).getLayoutParams();
+        LinearLayout.LayoutParams d3 = d((MaterialButton) getChildAt(firstVisibleChildIndex));
         if (getOrientation() == 1) {
-            layoutParams3.topMargin = 0;
-            layoutParams3.bottomMargin = 0;
+            d3.topMargin = 0;
+            d3.bottomMargin = 0;
         } else {
-            layoutParams3.setMarginEnd(0);
-            layoutParams3.setMarginStart(0);
-            layoutParams3.leftMargin = 0;
-            layoutParams3.rightMargin = 0;
+            d3.setMarginEnd(0);
+            d3.setMarginStart(0);
+            d3.leftMargin = 0;
+            d3.rightMargin = 0;
         }
     }
 
     @Override // android.view.ViewGroup
     public void addView(View view, int i, ViewGroup.LayoutParams layoutParams) {
         if (view instanceof MaterialButton) {
-            d();
-            this.c0 = true;
-            super.addView(view, i, layoutParams);
+            i();
+            this.l0 = true;
+            int indexOfChild = indexOfChild(null);
+            if (indexOfChild < 0 || i != -1) {
+                super.addView(view, i, layoutParams);
+            } else {
+                super.addView(view, indexOfChild, layoutParams);
+            }
             MaterialButton materialButton = (MaterialButton) view;
             setGeneratedIdIfNeeded(materialButton);
-            materialButton.setOnPressedChangeListenerInternal(this.S);
-            this.Q.add(materialButton.getShapeAppearanceModel());
-            this.R.add(materialButton.getStateListShapeAppearanceModel());
+            materialButton.setOnPressedChangeListenerInternal(this.e0);
+            this.d0.add(materialButton.getShapeAppearance());
             materialButton.setEnabled(isEnabled());
         }
     }
 
     public final void b() {
-        MaterialButton materialButton;
-        MaterialButton materialButton2;
-        float fMax;
-        if (this.b0 == null || getChildCount() == 0) {
-            return;
-        }
         int firstVisibleChildIndex = getFirstVisibleChildIndex();
         int lastVisibleChildIndex = getLastVisibleChildIndex();
-        int iMin = Integer.MAX_VALUE;
-        for (int i = firstVisibleChildIndex; i <= lastVisibleChildIndex; i++) {
-            if (c(i)) {
-                int iMin2 = 0;
-                if (c(i) && this.b0 != null) {
-                    MaterialButton materialButton3 = (MaterialButton) getChildAt(i);
-                    rh6 rh6Var = this.b0;
-                    int width = materialButton3.getWidth();
-                    int i2 = -width;
-                    for (int i3 = 0; i3 < rh6Var.a; i3++) {
-                        qh6 qh6Var = (qh6) rh6Var.d[i3].R;
-                        int i4 = qh6Var.a;
-                        float f = qh6Var.b;
-                        if (i4 == 2) {
-                            fMax = Math.max(i2, f);
-                        } else {
-                            if (i4 == 1) {
-                                fMax = Math.max(i2, width * f);
-                            }
-                        }
-                        i2 = (int) fMax;
-                    }
-                    int iMax = Math.max(0, i2);
-                    int i5 = i - 1;
-                    while (true) {
-                        materialButton = null;
-                        if (i5 < 0) {
-                            materialButton2 = null;
-                            break;
-                        } else {
-                            if (c(i5)) {
-                                materialButton2 = (MaterialButton) getChildAt(i5);
-                                break;
-                            }
-                            i5--;
-                        }
-                    }
-                    int allowedWidthDecrease = materialButton2 == null ? 0 : materialButton2.getAllowedWidthDecrease();
-                    int childCount = getChildCount();
-                    for (int i6 = i + 1; i6 < childCount; i6++) {
-                        if (c(i6)) {
-                            materialButton = (MaterialButton) getChildAt(i6);
-                            break;
-                        }
-                    }
-                    iMin2 = Math.min(iMax, allowedWidthDecrease + (materialButton != null ? materialButton.getAllowedWidthDecrease() : 0));
-                }
-                if (i != firstVisibleChildIndex && i != lastVisibleChildIndex) {
-                    iMin2 /= 2;
-                }
-                iMin = Math.min(iMin, iMin2);
-            }
+        if (firstVisibleChildIndex == -1 || this.k0 == null) {
+            return;
         }
-        int i7 = firstVisibleChildIndex;
-        while (i7 <= lastVisibleChildIndex) {
-            if (c(i7)) {
-                ((MaterialButton) getChildAt(i7)).setSizeChange(this.b0);
-                ((MaterialButton) getChildAt(i7)).setWidthChangeMax((i7 == firstVisibleChildIndex || i7 == lastVisibleChildIndex) ? iMin : iMin * 2);
+        if (this.c0 != 2) {
+            c(firstVisibleChildIndex, lastVisibleChildIndex);
+            return;
+        }
+        int i = 0;
+        while (true) {
+            ArrayList arrayList = this.m0;
+            if (i >= arrayList.size()) {
+                return;
             }
-            i7++;
+            c(((Integer) arrayList.get(i)).intValue(), (i == arrayList.size() + (-1) ? getChildCount() : ((Integer) arrayList.get(i + 1)).intValue()) - 1);
+            i++;
         }
     }
 
-    public final boolean c(int i) {
-        return getChildAt(i).getVisibility() != 8;
+    public final void c(int i, int i2) {
+        float max;
+        if (i == i2) {
+            ((MaterialButton) getChildAt(i)).setWidthChangeDirection(lg4.X);
+            return;
+        }
+        int i3 = Integer.MAX_VALUE;
+        int i4 = i;
+        while (i4 <= i2) {
+            if (h(i4)) {
+                ((MaterialButton) getChildAt(i4)).setWidthChangeDirection(i4 == i ? lg4.Z : i4 == i2 ? lg4.Y : lg4.c0);
+                if (h(i4) && this.k0 != null) {
+                    MaterialButton materialButton = (MaterialButton) getChildAt(i4);
+                    s57 s57Var = this.k0;
+                    int width = materialButton.getWidth();
+                    int i5 = -width;
+                    for (int i6 = 0; i6 < s57Var.a; i6++) {
+                        r57 r57Var = (r57) s57Var.d[i6].Y;
+                        int i7 = r57Var.a;
+                        float f = r57Var.b;
+                        if (i7 == 2) {
+                            max = Math.max(i5, f);
+                        } else if (i7 == 1) {
+                            max = Math.max(i5, width * f);
+                        }
+                        i5 = (int) max;
+                    }
+                    int max2 = Math.max(0, i5);
+                    MaterialButton g = g(i4);
+                    int allowedWidthDecrease = g == null ? 0 : g.getAllowedWidthDecrease();
+                    MaterialButton f2 = f(i4);
+                    r4 = Math.min(max2, allowedWidthDecrease + (f2 != null ? f2.getAllowedWidthDecrease() : 0));
+                }
+                if (i4 != i && i4 != i2) {
+                    r4 /= 2;
+                }
+                i3 = Math.min(i3, r4);
+            }
+            i4++;
+        }
+        while (i <= i2) {
+            if (h(i)) {
+                MaterialButton materialButton2 = (MaterialButton) getChildAt(i);
+                materialButton2.setSizeChange(this.k0);
+                materialButton2.setWidthChangeMax(i3 * 2);
+            }
+            i++;
+        }
     }
 
-    public final void d() {
-        for (int i = 0; i < getChildCount(); i++) {
-            MaterialButton materialButton = (MaterialButton) getChildAt(i);
-            LinearLayout.LayoutParams layoutParams = materialButton.o0;
-            if (layoutParams != null) {
-                materialButton.setLayoutParams(layoutParams);
-                materialButton.o0 = null;
-                materialButton.l0 = -1.0f;
-            }
-        }
+    @Override // android.widget.LinearLayout, android.view.ViewGroup
+    public final boolean checkLayoutParams(ViewGroup.LayoutParams layoutParams) {
+        return layoutParams instanceof LayoutParams;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void dispatchDraw(Canvas canvas) {
-        TreeMap treeMap = new TreeMap(this.T);
+        TreeMap treeMap = new TreeMap(this.f0);
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
             treeMap.put((MaterialButton) getChildAt(i), Integer.valueOf(i));
         }
-        this.U = (Integer[]) treeMap.values().toArray(new Integer[0]);
+        this.g0 = (Integer[]) treeMap.values().toArray(new Integer[0]);
         super.dispatchDraw(canvas);
     }
 
-    public final void e() {
-        oh6 oh6Var;
+    public final MaterialButton f(int i) {
+        int childCount = getChildCount();
+        int i2 = i + 1;
+        while (true) {
+            if (i2 >= childCount) {
+                i2 = -1;
+                break;
+            }
+            if (h(i2)) {
+                break;
+            }
+            i2++;
+        }
+        ArrayList arrayList = this.m0;
+        if (!arrayList.isEmpty()) {
+            int i3 = 0;
+            while (i3 < arrayList.size()) {
+                int intValue = ((Integer) arrayList.get(i3)).intValue();
+                int intValue2 = i3 == arrayList.size() + (-1) ? childCount - 1 : ((Integer) arrayList.get(i3 + 1)).intValue() - 1;
+                if (i >= intValue && i <= intValue2 && (i2 < intValue || i2 > intValue2)) {
+                    return null;
+                }
+                i3++;
+            }
+        }
+        if (i2 == -1) {
+            return null;
+        }
+        return (MaterialButton) getChildAt(i2);
+    }
+
+    public final MaterialButton g(int i) {
+        int childCount = getChildCount();
+        int i2 = i - 1;
+        while (true) {
+            if (i2 < 0) {
+                i2 = -1;
+                break;
+            }
+            if (h(i2)) {
+                break;
+            }
+            i2--;
+        }
+        ArrayList arrayList = this.m0;
+        if (!arrayList.isEmpty()) {
+            int i3 = 0;
+            while (i3 < arrayList.size()) {
+                int intValue = ((Integer) arrayList.get(i3)).intValue();
+                int intValue2 = i3 == arrayList.size() + (-1) ? childCount : ((Integer) arrayList.get(i3 + 1)).intValue();
+                if (i >= intValue && i < intValue2 && (i2 < intValue || i2 >= intValue2)) {
+                    return null;
+                }
+                i3++;
+            }
+        }
+        if (i2 == -1) {
+            return null;
+        }
+        return (MaterialButton) getChildAt(i2);
+    }
+
+    @Override // android.widget.LinearLayout, android.view.ViewGroup
+    public final ViewGroup.LayoutParams generateDefaultLayoutParams() {
+        return new LayoutParams(-2, -2);
+    }
+
+    @Override // android.widget.LinearLayout, android.view.ViewGroup
+    public final ViewGroup.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
+        return new LayoutParams(getContext(), attributeSet);
+    }
+
+    public s57 getButtonSizeChange() {
+        return this.k0;
+    }
+
+    @Override // android.view.ViewGroup
+    public final int getChildDrawingOrder(int i, int i2) {
+        Integer[] numArr = this.g0;
+        return (numArr == null || i2 >= numArr.length) ? i2 : numArr[i2].intValue();
+    }
+
+    public t31 getInnerCornerSize() {
+        return this.h0.b;
+    }
+
+    public o57 getInnerCornerSizeStateList() {
+        return this.h0;
+    }
+
+    public Drawable getOverflowButtonIcon() {
+        throw null;
+    }
+
+    public int getOverflowMode() {
+        return this.c0;
+    }
+
+    public xu6 getShapeAppearance() {
+        q57 q57Var = this.i0;
+        if (q57Var == null) {
+            return null;
+        }
+        return q57Var.i();
+    }
+
+    public int getSpacing() {
+        return this.j0;
+    }
+
+    public q57 getStateListShapeAppearance() {
+        return this.i0;
+    }
+
+    public final boolean h(int i) {
+        return getChildAt(i).getVisibility() != 8;
+    }
+
+    public final void i() {
+        for (int i = 0; i < getChildCount(); i++) {
+            MaterialButton materialButton = (MaterialButton) getChildAt(i);
+            LinearLayout.LayoutParams layoutParams = materialButton.F0;
+            if (layoutParams != null) {
+                materialButton.setLayoutParams(layoutParams);
+                materialButton.F0 = null;
+                materialButton.C0 = -2.14748365E9f;
+            }
+        }
+    }
+
+    public final void j() {
         int i;
-        if (!(this.V == null && this.W == null) && this.c0) {
-            this.c0 = false;
+        if (!(this.h0 == null && this.i0 == null) && this.l0) {
+            this.l0 = false;
             int childCount = getChildCount();
             int firstVisibleChildIndex = getFirstVisibleChildIndex();
             int lastVisibleChildIndex = getLastVisibleChildIndex();
@@ -360,30 +510,12 @@ public abstract class MaterialButtonGroup extends LinearLayout {
                 if (materialButton.getVisibility() != 8) {
                     boolean z = i2 == firstVisibleChildIndex;
                     boolean z2 = i2 == lastVisibleChildIndex;
-                    ph6 ph6Var = this.W;
-                    if (ph6Var == null || (!z && !z2)) {
-                        ph6Var = (ph6) this.R.get(i2);
+                    wu6 wu6Var = this.i0;
+                    ArrayList arrayList = this.d0;
+                    if (wu6Var == null || (!z && !z2)) {
+                        wu6Var = (wu6) arrayList.get(i2);
                     }
-                    if (ph6Var == null) {
-                        oh6Var = new oh6((j86) this.Q.get(i2));
-                    } else {
-                        oh6 oh6Var2 = new oh6();
-                        int i3 = ph6Var.a;
-                        oh6Var2.a = i3;
-                        oh6Var2.b = ph6Var.b;
-                        int[][] iArr = ph6Var.c;
-                        int[][] iArr2 = new int[iArr.length][];
-                        oh6Var2.c = iArr2;
-                        j86[] j86VarArr = ph6Var.d;
-                        oh6Var2.d = new j86[j86VarArr.length];
-                        System.arraycopy(iArr, 0, iArr2, 0, i3);
-                        System.arraycopy(j86VarArr, 0, oh6Var2.d, 0, oh6Var2.a);
-                        oh6Var2.e = ph6Var.e;
-                        oh6Var2.f = ph6Var.f;
-                        oh6Var2.g = ph6Var.g;
-                        oh6Var2.h = ph6Var.h;
-                        oh6Var = oh6Var2;
-                    }
+                    p57 p57Var = !(wu6Var instanceof q57) ? new p57((xu6) arrayList.get(i2)) : ((q57) wu6Var).j();
                     boolean z3 = getOrientation() == 0;
                     boolean z4 = getLayoutDirection() == 1;
                     if (z3) {
@@ -392,7 +524,7 @@ public abstract class MaterialButtonGroup extends LinearLayout {
                             i |= 10;
                         }
                         if (z4) {
-                            i = ((i & 10) >> 1) | ((i & 5) << 1);
+                            i = ((i & 5) << 1) | ((i & 10) >> 1);
                         }
                     } else {
                         i = z ? 3 : 0;
@@ -400,80 +532,120 @@ public abstract class MaterialButtonGroup extends LinearLayout {
                             i |= 12;
                         }
                     }
-                    int i4 = ~i;
-                    nh6 nh6Var = this.V;
-                    if ((i4 | 1) == i4) {
-                        oh6Var.e = nh6Var;
+                    int i3 = ~i;
+                    o57 o57Var = this.h0;
+                    if ((i3 | 1) == i3) {
+                        p57Var.e = o57Var;
                     }
-                    if ((i4 | 2) == i4) {
-                        oh6Var.f = nh6Var;
+                    if ((i3 | 2) == i3) {
+                        p57Var.f = o57Var;
                     }
-                    if ((i4 | 4) == i4) {
-                        oh6Var.g = nh6Var;
+                    if ((i3 | 4) == i3) {
+                        p57Var.g = o57Var;
                     }
-                    if ((i4 | 8) == i4) {
-                        oh6Var.h = nh6Var;
+                    if ((i3 | 8) == i3) {
+                        p57Var.h = o57Var;
                     }
-                    ph6 ph6Var2 = oh6Var.a == 0 ? null : new ph6(oh6Var);
-                    if (ph6Var2.d()) {
-                        materialButton.setStateListShapeAppearanceModel(ph6Var2);
-                    } else {
-                        materialButton.setShapeAppearanceModel(ph6Var2.c());
+                    q57 b = p57Var.b();
+                    boolean f = b.f();
+                    xu6 xu6Var = b;
+                    if (!f) {
+                        xu6Var = b.i();
                     }
+                    materialButton.setShapeAppearance(xu6Var);
                 }
                 i2++;
             }
         }
     }
 
-    public rh6 getButtonSizeChange() {
-        return this.b0;
-    }
-
-    @Override // android.view.ViewGroup
-    public final int getChildDrawingOrder(int i, int i2) {
-        Integer[] numArr = this.U;
-        return (numArr == null || i2 >= numArr.length) ? i2 : numArr[i2].intValue();
-    }
-
-    public ow0 getInnerCornerSize() {
-        return this.V.b;
-    }
-
-    public nh6 getInnerCornerSizeStateList() {
-        return this.V;
-    }
-
-    public j86 getShapeAppearance() {
-        ph6 ph6Var = this.W;
-        if (ph6Var == null) {
-            return null;
-        }
-        return ph6Var.c();
-    }
-
-    public int getSpacing() {
-        return this.a0;
-    }
-
-    public ph6 getStateListShapeAppearance() {
-        return this.W;
-    }
-
     @Override // android.widget.LinearLayout, android.view.ViewGroup, android.view.View
     public final void onLayout(boolean z, int i, int i2, int i3, int i4) {
         super.onLayout(z, i, i2, i3, i4);
         if (z) {
-            d();
+            i();
             b();
         }
     }
 
     @Override // android.widget.LinearLayout, android.view.View
     public final void onMeasure(int i, int i2) {
-        e();
+        int i3;
         a();
+        if (this.c0 != 2) {
+            i3 = 0;
+        } else {
+            if (getOrientation() == 1) {
+                i60.p("The wrap overflow mode is not compatible to the vertical orientation.");
+                return;
+            }
+            if (View.MeasureSpec.getMode(i) == Integer.MIN_VALUE) {
+                i60.p("The wrap overflow mode is not compatible with wrap_content layout width.");
+                return;
+            }
+            ArrayList arrayList = this.m0;
+            arrayList.clear();
+            int size = View.MeasureSpec.getSize(i);
+            ArrayList arrayList2 = new ArrayList();
+            ArrayList arrayList3 = new ArrayList();
+            int i4 = 0;
+            int i5 = 0;
+            int i6 = 0;
+            for (int i7 = 0; i7 < getChildCount(); i7++) {
+                if (h(i7)) {
+                    View view = (MaterialButton) getChildAt(i7);
+                    measureChild(view, i, i2);
+                    int measuredWidth = view.getMeasuredWidth();
+                    int measuredHeight = view.getMeasuredHeight();
+                    if (measuredWidth > 0) {
+                        LinearLayout.LayoutParams d = d(view);
+                        if (i4 + measuredWidth + (arrayList2.isEmpty() ? 0 : this.j0) > size || arrayList2.isEmpty()) {
+                            if (!arrayList2.isEmpty()) {
+                                arrayList3.add(Integer.valueOf(i4));
+                            }
+                            i6 += i5 + (arrayList.isEmpty() ? 0 : this.j0);
+                            arrayList.add(Integer.valueOf(i7));
+                            d.setMarginStart(-i4);
+                            arrayList2.clear();
+                            i4 = 0;
+                            i5 = 0;
+                        }
+                        i4 += measuredWidth + (i4 == 0 ? 0 : this.j0);
+                        i5 = Math.max(i5, measuredHeight);
+                        arrayList2.add(Integer.valueOf(i7));
+                        d.topMargin += i6;
+                        view.setLayoutParams(d);
+                    }
+                }
+            }
+            arrayList3.add(Integer.valueOf(i4));
+            int intValue = ((Integer) Collections.max(arrayList3)).intValue();
+            int i8 = 0;
+            for (int i9 = 0; i9 < arrayList.size(); i9++) {
+                int intValue2 = ((Integer) arrayList.get(i9)).intValue();
+                int intValue3 = ((Integer) arrayList3.get(i9)).intValue();
+                MaterialButton materialButton = (MaterialButton) getChildAt(intValue2);
+                LinearLayout.LayoutParams d2 = d(materialButton);
+                int i10 = d2.gravity & 8388615;
+                int absoluteGravity = Gravity.getAbsoluteGravity(i10, getLayoutDirection());
+                int i11 = intValue - intValue3;
+                if (i10 != 8388611) {
+                    if (absoluteGravity == 1) {
+                        i11 /= 2;
+                    }
+                    d2.setMarginStart((d2.getMarginStart() + i11) - i8);
+                    materialButton.setLayoutParams(d2);
+                    i8 = i11;
+                }
+            }
+            i3 = getPaddingBottom() + getPaddingTop() + i6 + i5;
+        }
+        j();
         super.onMeasure(i, i2);
+        if (this.c0 != 2 || i3 == getMeasuredHeight()) {
+            return;
+        }
+        setMeasuredDimension(getMeasuredWidth(), i3);
     }
 
     @Override // android.view.ViewGroup
@@ -482,20 +654,19 @@ public abstract class MaterialButtonGroup extends LinearLayout {
         if (view instanceof MaterialButton) {
             ((MaterialButton) view).setOnPressedChangeListenerInternal(null);
         }
-        int iIndexOfChild = indexOfChild(view);
-        if (iIndexOfChild >= 0) {
-            this.Q.remove(iIndexOfChild);
-            this.R.remove(iIndexOfChild);
+        int indexOfChild = indexOfChild(view);
+        if (indexOfChild >= 0) {
+            this.d0.remove(indexOfChild);
         }
-        this.c0 = true;
-        e();
-        d();
+        this.l0 = true;
+        j();
+        i();
         a();
     }
 
-    public void setButtonSizeChange(rh6 rh6Var) {
-        if (this.b0 != rh6Var) {
-            this.b0 = rh6Var;
+    public void setButtonSizeChange(s57 s57Var) {
+        if (this.k0 != s57Var) {
+            this.k0 = s57Var;
             b();
             requestLayout();
             invalidate();
@@ -510,46 +681,96 @@ public abstract class MaterialButtonGroup extends LinearLayout {
         }
     }
 
-    public void setInnerCornerSize(ow0 ow0Var) {
-        this.V = nh6.b(ow0Var);
-        this.c0 = true;
-        e();
+    public void setInnerCornerSize(t31 t31Var) {
+        this.h0 = o57.b(t31Var);
+        this.l0 = true;
+        j();
         invalidate();
     }
 
-    public void setInnerCornerSizeStateList(nh6 nh6Var) {
-        this.V = nh6Var;
-        this.c0 = true;
-        e();
+    public void setInnerCornerSizeStateList(o57 o57Var) {
+        this.h0 = o57Var;
+        this.l0 = true;
+        j();
         invalidate();
     }
 
     @Override // android.widget.LinearLayout
     public void setOrientation(int i) {
         if (getOrientation() != i) {
-            this.c0 = true;
+            this.l0 = true;
         }
         super.setOrientation(i);
     }
 
-    public void setShapeAppearance(j86 j86Var) {
-        oh6 oh6Var = new oh6(j86Var);
-        this.W = oh6Var.a == 0 ? null : new ph6(oh6Var);
-        this.c0 = true;
-        e();
+    public void setOverflowButtonIcon(Drawable drawable) {
+        throw null;
+    }
+
+    public void setOverflowButtonIconResource(int i) {
+        throw null;
+    }
+
+    public void setOverflowMode(int i) {
+        if (this.c0 != i) {
+            this.c0 = i;
+            requestLayout();
+            invalidate();
+        }
+    }
+
+    public void setShapeAppearance(xu6 xu6Var) {
+        this.i0 = new p57(xu6Var).b();
+        this.l0 = true;
+        j();
         invalidate();
     }
 
     public void setSpacing(int i) {
-        this.a0 = i;
+        this.j0 = i;
         invalidate();
         requestLayout();
     }
 
-    public void setStateListShapeAppearance(ph6 ph6Var) {
-        this.W = ph6Var;
-        this.c0 = true;
-        e();
+    public void setStateListShapeAppearance(q57 q57Var) {
+        this.i0 = q57Var;
+        this.l0 = true;
+        j();
         invalidate();
+    }
+
+    @Override // android.widget.LinearLayout, android.view.ViewGroup
+    public final LinearLayout.LayoutParams generateDefaultLayoutParams() {
+        return new LayoutParams(-2, -2);
+    }
+
+    @Override // android.widget.LinearLayout, android.view.ViewGroup
+    public final /* bridge */ /* synthetic */ LinearLayout.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
+        return e(layoutParams);
+    }
+
+    @Override // android.widget.LinearLayout, android.view.ViewGroup
+    public final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
+        return e(layoutParams);
+    }
+
+    @Override // android.widget.LinearLayout, android.view.ViewGroup
+    public final LinearLayout.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
+        return new LayoutParams(getContext(), attributeSet);
+    }
+
+    /* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+    public static class LayoutParams extends LinearLayout.LayoutParams {
+        public LayoutParams(Context context, AttributeSet attributeSet) {
+            super(context, attributeSet);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, uu5.MaterialButtonGroup_Layout);
+            obtainStyledAttributes.getDrawable(uu5.MaterialButtonGroup_Layout_layout_overflowIcon);
+            obtainStyledAttributes.getText(uu5.MaterialButtonGroup_Layout_layout_overflowText);
+            obtainStyledAttributes.recycle();
+        }
+
+        public LayoutParams(int i, int i2) {
+            super(i, i2);
+        }
     }
 }

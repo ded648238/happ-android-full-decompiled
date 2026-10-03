@@ -1,78 +1,104 @@
 .class public final Ly97;
-.super Lt97;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lvo3;
 
 
-# instance fields
-.field public final U:Lus4;
+# static fields
+.field public static final a:Ly97;
+
+.field public static final b:Lfj5;
 
 
 # direct methods
-.method public constructor <init>(Lus4;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    const/4 v0, 0x1
+    new-instance v0, Ly97;
 
     .line 2
-    invoke-direct {p0, v0}, Lt97;-><init>(I)V
-
     .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
     .line 4
     .line 5
-    iput-object p1, p0, Ly97;->U:Lus4;
-
     .line 6
+    sput-object v0, Ly97;->a:Ly97;
+
     .line 7
+    .line 8
+    new-instance v0, Lfj5;
+
+    .line 9
+    .line 10
+    const-string v1, "kotlin.String"
+
+    .line 11
+    .line 12
+    sget-object v2, Ldj5;->r:Ldj5;
+
+    .line 13
+    .line 14
+    invoke-direct {v0, v1, v2}, Lfj5;-><init>(Ljava/lang/String;Ldj5;)V
+
+    .line 15
+    .line 16
+    .line 17
+    sput-object v0, Ly97;->b:Lfj5;
+
+    .line 18
+    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final next()Ljava/lang/Object;
-    .locals 4
+.method public final a(Lo97;Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Lt97;->T:I
+    check-cast p2, Ljava/lang/String;
 
     .line 2
     .line 3
-    add-int/lit8 v1, v0, 0x2
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
-    iput v1, p0, Lt97;->T:I
-
     .line 6
-    .line 7
-    new-instance v1, Lw84;
+    invoke-virtual {p1, p2}, Lo97;->t(Ljava/lang/String;)V
 
+    .line 7
     .line 8
     .line 9
-    iget-object v2, p0, Lt97;->R:[Ljava/lang/Object;
+    return-void
+.end method
 
-    .line 10
-    .line 11
-    aget-object v3, v2, v0
+.method public final b(Lua1;)Ljava/lang/Object;
+    .locals 0
 
-    .line 12
-    .line 13
-    add-int/lit8 v0, v0, 0x1
+    .line 1
+    invoke-interface {p1}, Lua1;->s()Ljava/lang/String;
 
-    .line 14
-    .line 15
-    aget-object v0, v2, v0
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
 
-    .line 16
-    .line 17
-    iget-object v2, p0, Ly97;->U:Lus4;
+    .line 5
+    return-object p0
+.end method
 
-    .line 18
-    .line 19
-    invoke-direct {v1, v2, v3, v0}, Lw84;-><init>(Lus4;Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final d()Ler6;
+    .locals 0
 
-    .line 20
-    .line 21
-    .line 22
-    return-object v1
+    .line 1
+    sget-object p0, Ly97;->b:Lfj5;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

@@ -1,13 +1,25 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ua {
-    public final ik3 a;
-    public final qy5 b;
+import android.hardware.camera2.CameraConstrainedHighSpeedCaptureSession;
+import android.os.Handler;
 
-    public ua(ik3 ik3Var, qy5 qy5Var) {
-        this.a = ik3Var;
-        this.b = qy5Var;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ua extends ta {
+    public final CameraConstrainedHighSpeedCaptureSession d0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ua(va vaVar, CameraConstrainedHighSpeedCaptureSession cameraConstrainedHighSpeedCaptureSession, ge0 ge0Var, Handler handler) {
+        super(vaVar, cameraConstrainedHighSpeedCaptureSession, ge0Var, handler);
+        vaVar.getClass();
+        ge0Var.getClass();
+        handler.getClass();
+        this.d0 = cameraConstrainedHighSpeedCaptureSession;
+    }
+
+    @Override // defpackage.ta, defpackage.ra8
+    public final Object G0(gn3 gn3Var) {
+        gn3Var.getClass();
+        return gn3Var.equals(p06.a.b(CameraConstrainedHighSpeedCaptureSession.class)) ? this.d0 : super.G0(gn3Var);
     }
 }

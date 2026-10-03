@@ -1,9 +1,9 @@
 .class final Lokhttp3/Handshake$Companion$handshake$1;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lou3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg72;
+.implements Lji2;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe3;",
-        "Lg72;"
+        "Lou3;",
+        "Lji2;"
     }
 .end annotation
 
@@ -76,7 +76,7 @@
     const/4 p1, 0x0
 
     .line 4
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
+    invoke-direct {p0, p1}, Lou3;-><init>(I)V
 
     .line 5
     .line 6
@@ -87,7 +87,7 @@
 
 # virtual methods
 .method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Lokhttp3/Handshake$Companion$handshake$1;->invoke()Ljava/util/List;
@@ -95,14 +95,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final invoke()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -113,7 +113,7 @@
     .end annotation
 
     .line 6
-    iget-object v0, p0, Lokhttp3/Handshake$Companion$handshake$1;->$peerCertificatesCopy:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Handshake$Companion$handshake$1;->$peerCertificatesCopy:Ljava/util/List;
 
-    return-object v0
+    return-object p0
 .end method

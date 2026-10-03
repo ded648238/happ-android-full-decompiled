@@ -1,114 +1,23 @@
-.class public final Lyh3;
+.class public interface abstract annotation Lyh3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lgh6;
+.implements Ljava/lang/annotation/Annotation;
 
 
-# instance fields
-.field public final Q:Lto4;
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation Lyh3;
+        value = Lnm5;
+    .end subannotation
+.end annotation
 
-.field public R:I
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public constructor <init>(I)V
-    .locals 3
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    div-int/lit8 v0, p1, 0x1e
-
-    .line 5
-    .line 6
-    mul-int/lit8 v0, v0, 0x1e
-
-    .line 7
-    .line 8
-    add-int/lit8 v1, v0, -0x64
-
-    .line 9
-    .line 10
-    const/4 v2, 0x0
-
-    .line 11
-    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/lit16 v0, v0, 0x82
-
-    .line 16
-    .line 17
-    invoke-static {v1, v0}, Lxf5;->n0(II)Lhs2;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
-    sget-object v1, Lmc2;->i0:Lmc2;
-
-    .line 22
-    .line 23
-    new-instance v2, Lto4;
-
-    .line 24
-    .line 25
-    invoke-direct {v2, v0, v1}, Lto4;-><init>(Ljava/lang/Object;Ltd6;)V
-
-    .line 26
-    .line 27
-    .line 28
-    iput-object v2, p0, Lyh3;->Q:Lto4;
-
-    .line 29
-    .line 30
-    iput p1, p0, Lyh3;->R:I
-
-    .line 31
-    .line 32
-    return-void
-.end method
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
 
 
 # virtual methods
-.method public final getValue()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lyh3;->Q:Lto4;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lto4;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhs2;
-
-    .line 8
-    .line 9
-    return-object v0
+.method public abstract value()Ljava/lang/Class;
 .end method

@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/NativeSslSession$Impl$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljavax/net/ssl/SSLSession;
@@ -41,49 +41,49 @@
 
 # virtual methods
 .method public getApplicationBufferSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public getCipherSuite()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/NativeSslSession$Impl;->getCipherSuite()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/NativeSslSession$Impl;->getCipherSuite()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getCreationTime()J
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lorg/conscrypt/NativeSslSession$Impl;->access$300(Lorg/conscrypt/NativeSslSession$Impl;)J
+    invoke-static {p0}, Lorg/conscrypt/NativeSslSession$Impl;->access$300(Lorg/conscrypt/NativeSslSession$Impl;)J
 
     .line 4
     .line 5
@@ -95,304 +95,304 @@
 .end method
 
 .method public getId()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/NativeSslSession$Impl;->getId()[B
+    invoke-virtual {p0}, Lorg/conscrypt/NativeSslSession$Impl;->getId()[B
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getLastAccessedTime()J
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public getLocalCertificates()[Ljava/security/cert/Certificate;
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public getLocalPrincipal()Ljava/security/Principal;
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public getPacketBufferSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public getPeerCertificateChain()[Ljavax/security/cert/X509Certificate;
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public getPeerCertificates()[Ljava/security/cert/Certificate;
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public getPeerHost()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/NativeSslSession$Impl;->getPeerHost()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/NativeSslSession$Impl;->getPeerHost()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerPort()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/NativeSslSession$Impl;->getPeerPort()I
+    invoke-virtual {p0}, Lorg/conscrypt/NativeSslSession$Impl;->getPeerPort()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public getPeerPrincipal()Ljava/security/Principal;
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public getProtocol()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/NativeSslSession$Impl;->getProtocol()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/NativeSslSession$Impl;->getProtocol()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSessionContext()Ljavax/net/ssl/SSLSessionContext;
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public getValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    throw p0
 .end method
 
 .method public getValueNames()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public invalidate()V
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    throw p0
 .end method
 
 .method public isValid()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl$1;->this$0:Lorg/conscrypt/NativeSslSession$Impl;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/NativeSslSession$Impl;->isValid()Z
+    invoke-virtual {p0}, Lorg/conscrypt/NativeSslSession$Impl;->isValid()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public putValue(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    throw p0
 .end method
 
 .method public removeValue(Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    throw p0
 .end method

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/RequestBody$Companion$asRequestBody$1;
 .super Lokhttp3/RequestBody;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,11 +26,11 @@
         "",
         "contentLength",
         "()J",
-        "Lr50;",
+        "Le80;",
         "sink",
-        "Lbh7;",
+        "Lr98;",
         "writeTo",
-        "(Lr50;)V",
+        "(Le80;)V",
         "okhttp"
     }
     k = 0x1
@@ -76,11 +76,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lokhttp3/RequestBody$Companion$asRequestBody$1;->$this_asRequestBody:Ljava/io/File;
+    iget-object p0, p0, Lokhttp3/RequestBody$Companion$asRequestBody$1;->$this_asRequestBody:Ljava/io/File;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/io/File;->length()J
+    invoke-virtual {p0}, Ljava/io/File;->length()J
 
     .line 4
     .line 5
@@ -92,18 +92,18 @@
 .end method
 
 .method public contentType()Lokhttp3/MediaType;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/RequestBody$Companion$asRequestBody$1;->$contentType:Lokhttp3/MediaType;
+    iget-object p0, p0, Lokhttp3/RequestBody$Companion$asRequestBody$1;->$contentType:Lokhttp3/MediaType;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public writeTo(Lr50;)V
-    .locals 3
+.method public writeTo(Le80;)V
+    .locals 2
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -111,46 +111,46 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/RequestBody$Companion$asRequestBody$1;->$this_asRequestBody:Ljava/io/File;
+    iget-object p0, p0, Lokhttp3/RequestBody$Companion$asRequestBody$1;->$this_asRequestBody:Ljava/io/File;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
     .line 8
     .line 9
-    new-instance v1, Lls;
+    new-instance v0, Lhu;
 
     .line 10
     .line 11
-    new-instance v2, Ljava/io/FileInputStream;
+    new-instance v1, Ljava/io/FileInputStream;
 
     .line 12
     .line 13
-    invoke-direct {v2, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    invoke-direct {v1, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
     .line 14
     .line 15
     .line 16
-    sget-object v0, Lo47;->NONE:Lo47;
+    sget-object p0, Lax7;->NONE:Lax7;
 
     .line 17
     .line 18
-    invoke-direct {v1, v2, v0}, Lls;-><init>(Ljava/io/InputStream;Lo47;)V
+    invoke-direct {v0, v1, p0}, Lhu;-><init>(Ljava/io/InputStream;Lax7;)V
 
     .line 19
     .line 20
     .line 21
     :try_start_0
-    invoke-interface {p1, v1}, Lr50;->G(Lle6;)J
+    invoke-interface {p1, v0}, Le80;->M(Ld27;)J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {v1}, Lls;->close()V
+    invoke-virtual {v0}, Lhu;->close()V
 
     .line 25
     .line 26
@@ -159,23 +159,23 @@
 
     .line 28
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 29
     :try_start_1
-    throw p1
+    throw p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 30
     :catchall_1
-    move-exception v0
+    move-exception p1
 
     .line 31
-    invoke-static {v1, p1}, Lzd7;->n(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v0, p0}, Lj68;->j(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 32
     .line 33
     .line 34
-    throw v0
+    throw p1
 .end method

@@ -8,45 +8,44 @@ import android.util.AttributeSet;
 import android.view.ActionMode;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.EditText;
-import defpackage.b15;
-import defpackage.o85;
+import defpackage.bv7;
+import defpackage.ns5;
 import java.util.Random;
 import java.util.regex.Pattern;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 abstract class StreamingTextView extends EditText {
-    public static final Pattern V = Pattern.compile("\\S+");
-    public static final b W = new b(Integer.class, "streamPosition");
-    public final Random Q;
-    public Bitmap R;
-    public Bitmap S;
-    public int T;
-    public ObjectAnimator U;
+    public static final Pattern h0 = Pattern.compile("\\S+");
+    public static final b i0 = new b(Integer.class, "streamPosition");
+    public final Random c0;
+    public Bitmap d0;
+    public Bitmap e0;
+    public int f0;
+    public ObjectAnimator g0;
 
     public StreamingTextView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.Q = new Random();
+        this.c0 = new Random();
     }
 
     public int getStreamPosition() {
-        return this.T;
+        return this.f0;
     }
 
     @Override // android.view.View
     public final void onFinishInflate() {
         super.onFinishInflate();
-        Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(getResources(), o85.lb_text_dot_one);
-        this.R = Bitmap.createScaledBitmap(bitmapDecodeResource, (int) (bitmapDecodeResource.getWidth() * 1.3f), (int) (bitmapDecodeResource.getHeight() * 1.3f), false);
-        Bitmap bitmapDecodeResource2 = BitmapFactory.decodeResource(getResources(), o85.lb_text_dot_two);
-        this.S = Bitmap.createScaledBitmap(bitmapDecodeResource2, (int) (bitmapDecodeResource2.getWidth() * 1.3f), (int) (bitmapDecodeResource2.getHeight() * 1.3f), false);
+        this.d0 = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), ns5.lb_text_dot_one), (int) (r0.getWidth() * 1.3f), (int) (r0.getHeight() * 1.3f), false);
+        this.e0 = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), ns5.lb_text_dot_two), (int) (r0.getWidth() * 1.3f), (int) (r0.getHeight() * 1.3f), false);
         SearchEditText searchEditText = (SearchEditText) this;
-        searchEditText.T = -1;
-        ObjectAnimator objectAnimator = searchEditText.U;
+        searchEditText.f0 = -1;
+        ObjectAnimator objectAnimator = searchEditText.g0;
         if (objectAnimator != null) {
             objectAnimator.cancel();
         }
-        searchEditText.setText("");
+        searchEditText.setText(HttpUrl.FRAGMENT_ENCODE_SET);
     }
 
     @Override // android.view.View
@@ -57,11 +56,11 @@ abstract class StreamingTextView extends EditText {
 
     @Override // android.widget.TextView
     public void setCustomSelectionActionModeCallback(ActionMode.Callback callback) {
-        super.setCustomSelectionActionModeCallback(b15.X(callback, this));
+        super.setCustomSelectionActionModeCallback(bv7.l(callback, this));
     }
 
     public void setStreamPosition(int i) {
-        this.T = i;
+        this.f0 = i;
         invalidate();
     }
 }

@@ -2,19 +2,19 @@ package android.support.v4.media.session;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.hj2;
-import defpackage.u;
+import defpackage.uw2;
+import defpackage.zv8;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class MediaSessionCompat$Token implements Parcelable {
-    public static final Parcelable.Creator<MediaSessionCompat$Token> CREATOR = new u(26);
-    public final Object Q;
-    public hj2 R;
+    public static final Parcelable.Creator<MediaSessionCompat$Token> CREATOR = new zv8(27);
+    public final Object X;
+    public uw2 Y;
 
-    public MediaSessionCompat$Token(Object obj, hj2 hj2Var) {
-        this.Q = obj;
-        this.R = hj2Var;
+    public MediaSessionCompat$Token(Object obj, uw2 uw2Var) {
+        this.X = obj;
+        this.Y = uw2Var;
     }
 
     @Override // android.os.Parcelable
@@ -29,8 +29,8 @@ public final class MediaSessionCompat$Token implements Parcelable {
         if (!(obj instanceof MediaSessionCompat$Token)) {
             return false;
         }
-        Object obj2 = ((MediaSessionCompat$Token) obj).Q;
-        Object obj3 = this.Q;
+        Object obj2 = ((MediaSessionCompat$Token) obj).X;
+        Object obj3 = this.X;
         if (obj3 == null) {
             return obj2 == null;
         }
@@ -41,7 +41,7 @@ public final class MediaSessionCompat$Token implements Parcelable {
     }
 
     public final int hashCode() {
-        Object obj = this.Q;
+        Object obj = this.X;
         if (obj == null) {
             return 0;
         }
@@ -50,6 +50,6 @@ public final class MediaSessionCompat$Token implements Parcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeParcelable((Parcelable) this.Q, i);
+        parcel.writeParcelable((Parcelable) this.X, i);
     }
 }

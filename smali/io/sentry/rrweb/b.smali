@@ -1,12 +1,12 @@
 .class public abstract Lio/sentry/rrweb/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:Lio/sentry/rrweb/c;
+.field public X:Lio/sentry/rrweb/c;
 
-.field public R:J
+.field public Y:J
 
 
 # direct methods
@@ -19,7 +19,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/sentry/rrweb/b;->Q:Lio/sentry/rrweb/c;
+    iput-object p1, p0, Lio/sentry/rrweb/b;->X:Lio/sentry/rrweb/c;
 
     .line 5
     .line 6
@@ -31,7 +31,7 @@
     move-result-wide v0
 
     .line 10
-    iput-wide v0, p0, Lio/sentry/rrweb/b;->R:J
+    iput-wide v0, p0, Lio/sentry/rrweb/b;->Y:J
 
     .line 11
     .line 12
@@ -74,11 +74,11 @@
 
     .line 12
     .line 13
-    iget-wide v3, p0, Lio/sentry/rrweb/b;->R:J
+    iget-wide v3, p0, Lio/sentry/rrweb/b;->Y:J
 
     .line 14
     .line 15
-    iget-wide v5, p1, Lio/sentry/rrweb/b;->R:J
+    iget-wide v5, p1, Lio/sentry/rrweb/b;->Y:J
 
     .line 16
     .line 17
@@ -90,15 +90,15 @@
 
     .line 20
     .line 21
-    iget-object v1, p0, Lio/sentry/rrweb/b;->Q:Lio/sentry/rrweb/c;
+    iget-object p0, p0, Lio/sentry/rrweb/b;->X:Lio/sentry/rrweb/c;
 
     .line 22
     .line 23
-    iget-object p1, p1, Lio/sentry/rrweb/b;->Q:Lio/sentry/rrweb/c;
+    iget-object p1, p1, Lio/sentry/rrweb/b;->X:Lio/sentry/rrweb/c;
 
     .line 24
     .line 25
-    if-ne v1, p1, :cond_2
+    if-ne p0, p1, :cond_2
 
     .line 26
     .line 27
@@ -110,14 +110,14 @@
 .end method
 
 .method public hashCode()I
-    .locals 4
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/sentry/rrweb/b;->Q:Lio/sentry/rrweb/c;
+    iget-object v0, p0, Lio/sentry/rrweb/b;->X:Lio/sentry/rrweb/c;
 
     .line 2
     .line 3
-    iget-wide v1, p0, Lio/sentry/rrweb/b;->R:J
+    iget-wide v1, p0, Lio/sentry/rrweb/b;->Y:J
 
     .line 4
     .line 5
@@ -126,37 +126,24 @@
     .line 6
     .line 7
     .line 8
-    move-result-object v1
+    move-result-object p0
 
     .line 9
-    const/4 v2, 0x2
+    filled-new-array {v0, p0}, [Ljava/lang/Object;
 
     .line 10
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 11
     .line 12
-    const/4 v3, 0x0
+    move-result-object p0
 
     .line 13
-    aput-object v0, v2, v3
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     .line 14
     .line 15
-    const/4 v0, 0x1
-
     .line 16
-    aput-object v1, v2, v0
+    move-result p0
 
     .line 17
-    .line 18
-    invoke-static {v2}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v0
-
-    .line 22
-    return v0
+    return p0
 .end method

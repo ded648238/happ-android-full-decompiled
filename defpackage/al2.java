@@ -1,12 +1,13 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface al2 extends zb5 {
-    public static final uu l = new uu("camerax.core.imageInput.inputFormat", Integer.TYPE, null);
-    public static final uu m = new uu("camerax.core.imageInput.inputDynamicRange", ll1.class, null);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class al2 implements Cloneable, ik4 {
+    public n90 X = n90.X;
 
-    ll1 d();
+    public abstract a2 b();
 
-    int k();
+    public abstract al2 d(ft0 ft0Var, n22 n22Var);
+
+    public abstract al2 e(hl2 hl2Var);
 }

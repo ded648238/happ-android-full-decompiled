@@ -1,83 +1,61 @@
 .class public final Lj75;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lcn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# static fields
-.field public static final b:Li75;
-
-.field public static final c:Lj75;
+# interfaces
+.implements Ll18;
+.implements Lxo6;
 
 
 # instance fields
-.field public final a:Lr94;
+.field public n0:Lym;
+
+.field public o0:Z
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+# virtual methods
+.method public final F0()Z
+    .locals 0
 
     .line 1
-    new-instance v0, Li75;
+    const/4 p0, 0x1
+
+    .line 2
+    return p0
+.end method
+
+.method public final g(Lgp6;)V
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lj75;->o0:Z
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    if-nez v0, :cond_0
 
     .line 4
-    const/4 v2, 0x0
-
     .line 5
-    invoke-direct {v0, v1, v2, v2}, Li75;-><init>(ZLjava/util/HashSet;Ljava/util/HashSet;)V
+    iget-object p0, p0, Lj75;->n0:Lym;
 
     .line 6
     .line 7
-    .line 8
-    sput-object v0, Lj75;->b:Li75;
+    invoke-virtual {p0, p1}, Lym;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 8
     .line 9
     .line 10
-    new-instance v0, Lj75;
-
-    .line 11
-    .line 12
-    invoke-direct {v0}, Lj75;-><init>()V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v0, Lj75;->c:Lj75;
-
-    .line 16
-    .line 17
+    :cond_0
     return-void
 .end method
 
-.method public constructor <init>()V
-    .locals 2
+.method public final o()Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object p0, Lan3;->n0:Lan3;
 
     .line 2
     .line 3
-    .line 4
-    new-instance v0, Lr94;
-
-    .line 5
-    .line 6
-    sget-object v1, Lj75;->b:Li75;
-
-    .line 7
-    .line 8
-    invoke-direct {v0, v1}, Lr94;-><init>(Ljava/lang/Object;)V
-
-    .line 9
-    .line 10
-    .line 11
-    iput-object v0, p0, Lj75;->a:Lr94;
-
-    .line 12
-    .line 13
-    return-void
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/ScryptSecretKeyFactory$ScryptKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljavax/crypto/SecretKey;
@@ -45,34 +45,34 @@
 
 # virtual methods
 .method public getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "SCRYPT"
+    const-string p0, "SCRYPT"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ScryptSecretKeyFactory$ScryptKey;->key:[B
+    iget-object p0, p0, Lorg/conscrypt/ScryptSecretKeyFactory$ScryptKey;->key:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "RAW"
+    const-string p0, "RAW"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

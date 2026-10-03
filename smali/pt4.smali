@@ -1,304 +1,250 @@
-.class public final Lpt4;
-.super Lc2;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lpt4;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final Q:[Ljava/lang/Object;
-
-.field public final R:[Ljava/lang/Object;
-
-.field public final S:I
-
-.field public final T:I
+# static fields
+.field public static final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>([Ljava/lang/Object;[Ljava/lang/Object;II)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const-string v0, "NetworkStateTracker"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lan3;->u(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static final a(Landroid/net/ConnectivityManager;Z)Lot4;
+    .locals 11
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_start_0
+    invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     .line 5
     .line 6
     .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
     .line 8
+    const/4 v1, 0x1
+
     .line 9
+    const/4 v2, 0x0
+
     .line 10
-    iput-object p1, p0, Lpt4;->Q:[Ljava/lang/Object;
+    if-eqz v0, :cond_0
 
     .line 11
     .line 12
-    iput-object p2, p0, Lpt4;->R:[Ljava/lang/Object;
+    invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
     .line 13
     .line 14
-    iput p3, p0, Lpt4;->S:I
-
     .line 15
+    move-result v3
+    :try_end_0
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 16
-    iput p4, p0, Lpt4;->T:I
+    if-eqz v3, :cond_0
 
     .line 17
     .line 18
-    invoke-virtual {p0}, Lpt4;->a()I
+    move v5, v1
 
     .line 19
+    goto :goto_0
+
     .line 20
+    :catch_0
+    move v9, p1
+
     .line 21
-    move-result p1
+    goto :goto_4
 
     .line 22
-    const/16 p2, 0x20
+    :cond_0
+    move v5, v2
 
     .line 23
-    .line 24
-    if-le p1, p2, :cond_0
+    :goto_0
+    :try_start_1
+    invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getActiveNetwork()Landroid/net/Network;
 
+    .line 24
     .line 25
     .line 26
-    return-void
+    move-result-object v3
 
     .line 27
-    :cond_0
-    invoke-virtual {p0}, Lpt4;->a()I
+    invoke-virtual {p0, v3}, Landroid/net/ConnectivityManager;->getNetworkCapabilities(Landroid/net/Network;)Landroid/net/NetworkCapabilities;
 
     .line 28
     .line 29
     .line 30
-    move-result p1
+    move-result-object v3
 
     .line 31
-    new-instance p2, Ljava/lang/StringBuilder;
+    if-eqz v3, :cond_1
 
     .line 32
     .line 33
-    const-string p3, "Trie-based persistent vector should have at least 33 elements, got "
+    const/16 v4, 0x10
 
     .line 34
     .line 35
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v3, v4}, Landroid/net/NetworkCapabilities;->hasCapability(I)Z
 
     .line 36
     .line 37
     .line 38
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result v3
+    :try_end_1
+    .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 39
+    move v6, v3
+
     .line 40
+    goto :goto_2
+
     .line 41
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :cond_1
+    :goto_1
+    move v6, v2
 
     .line 42
+    goto :goto_2
+
     .line 43
+    :catch_1
+    :try_start_2
+    invoke-static {}, Lan3;->l()Lan3;
+
     .line 44
-    move-result-object p1
-
     .line 45
-    new-instance p2, Ljava/lang/IllegalArgumentException;
-
     .line 46
+    move-result-object v3
+
     .line 47
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 48
     .line 49
     .line 50
-    move-result-object p1
+    goto :goto_1
 
     .line 51
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    :goto_2
+    invoke-virtual {p0}, Landroid/net/ConnectivityManager;->isActiveNetworkMetered()Z
 
     .line 52
     .line 53
     .line 54
-    throw p2
-.end method
+    move-result v7
 
+    .line 55
+    if-eqz v0, :cond_2
 
-# virtual methods
-.method public final a()I
-    .locals 1
+    .line 56
+    .line 57
+    invoke-virtual {v0}, Landroid/net/NetworkInfo;->isRoaming()Z
 
-    .line 1
-    iget v0, p0, Lpt4;->S:I
+    .line 58
+    .line 59
+    .line 60
+    move-result p0
 
-    .line 2
-    .line 3
-    return v0
-.end method
+    .line 61
+    if-nez p0, :cond_2
 
-.method public final b()Lrt4;
-    .locals 4
+    .line 62
+    .line 63
+    move v8, v1
 
-    .line 1
-    new-instance v0, Lrt4;
+    .line 64
+    goto :goto_3
 
-    .line 2
-    .line 3
-    iget-object v1, p0, Lpt4;->R:[Ljava/lang/Object;
+    .line 65
+    :cond_2
+    move v8, v2
 
-    .line 4
-    .line 5
-    iget v2, p0, Lpt4;->T:I
+    .line 66
+    :goto_3
+    new-instance v4, Lot4;
+    :try_end_2
+    .catch Ljava/lang/SecurityException; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 6
-    .line 7
-    iget-object v3, p0, Lpt4;->Q:[Ljava/lang/Object;
+    .line 67
+    .line 68
+    move v9, p1
 
-    .line 8
-    .line 9
-    invoke-direct {v0, p0, v3, v1, v2}, Lrt4;-><init>(Lc2;[Ljava/lang/Object;[Ljava/lang/Object;I)V
+    .line 69
+    :try_start_3
+    invoke-direct/range {v4 .. v9}, Lot4;-><init>(ZZZZZ)V
+    :try_end_3
+    .catch Ljava/lang/SecurityException; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 10
-    .line 11
-    .line 12
-    return-object v0
-.end method
+    .line 70
+    .line 71
+    .line 72
+    return-object v4
 
-.method public final get(I)Ljava/lang/Object;
-    .locals 3
+    .line 73
+    :catch_2
+    :goto_4
+    invoke-static {}, Lan3;->l()Lan3;
 
-    .line 1
-    iget v0, p0, Lpt4;->S:I
+    .line 74
+    .line 75
+    .line 76
+    move-result-object p0
 
-    .line 2
-    .line 3
-    invoke-static {p1, v0}, Lkz0;->s(II)V
+    .line 77
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
-    .line 5
-    .line 6
-    add-int/lit8 v0, v0, -0x1
+    .line 78
+    .line 79
+    .line 80
+    new-instance v5, Lot4;
 
-    .line 7
-    .line 8
-    and-int/lit8 v0, v0, -0x20
+    .line 81
+    .line 82
+    const/4 v8, 0x0
 
-    .line 9
-    .line 10
-    if-gt v0, p1, :cond_0
+    .line 83
+    move v10, v9
 
-    .line 11
-    .line 12
-    iget-object v0, p0, Lpt4;->R:[Ljava/lang/Object;
+    .line 84
+    const/4 v9, 0x1
 
-    .line 13
-    .line 14
-    goto :goto_1
+    .line 85
+    const/4 v6, 0x0
 
-    .line 15
-    :cond_0
-    iget-object v0, p0, Lpt4;->Q:[Ljava/lang/Object;
+    .line 86
+    const/4 v7, 0x0
 
-    .line 16
-    .line 17
-    iget v1, p0, Lpt4;->T:I
+    .line 87
+    invoke-direct/range {v5 .. v10}, Lot4;-><init>(ZZZZZ)V
 
-    .line 18
-    .line 19
-    :goto_0
-    if-lez v1, :cond_1
-
-    .line 20
-    .line 21
-    invoke-static {p1, v1}, Ln37;->c(II)I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v2
-
-    .line 25
-    aget-object v0, v0, v2
-
-    .line 26
-    .line 27
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 28
-    .line 29
-    .line 30
-    check-cast v0, [Ljava/lang/Object;
-
-    .line 31
-    .line 32
-    add-int/lit8 v1, v1, -0x5
-
-    .line 33
-    .line 34
-    goto :goto_0
-
-    .line 35
-    :cond_1
-    :goto_1
-    and-int/lit8 p1, p1, 0x1f
-
-    .line 36
-    .line 37
-    aget-object p1, v0, p1
-
-    .line 38
-    .line 39
-    return-object p1
-.end method
-
-.method public final listIterator(I)Ljava/util/ListIterator;
-    .locals 7
-
-    .line 1
-    iget v0, p0, Lpt4;->S:I
-
-    .line 2
-    .line 3
-    invoke-static {p1, v0}, Lkz0;->t(II)V
-
-    .line 4
-    .line 5
-    .line 6
-    new-instance v1, Ltt4;
-
-    .line 7
-    .line 8
-    iget v0, p0, Lpt4;->T:I
-
-    .line 9
-    .line 10
-    div-int/lit8 v0, v0, 0x5
-
-    .line 11
-    .line 12
-    add-int/lit8 v6, v0, 0x1
-
-    .line 13
-    .line 14
-    iget-object v2, p0, Lpt4;->Q:[Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    iget-object v3, p0, Lpt4;->R:[Ljava/lang/Object;
-
-    .line 17
-    .line 18
-    iget v5, p0, Lpt4;->S:I
-
-    .line 19
-    .line 20
-    move v4, p1
-
-    .line 21
-    invoke-direct/range {v1 .. v6}, Ltt4;-><init>([Ljava/lang/Object;[Ljava/lang/Object;III)V
-
-    .line 22
-    .line 23
-    .line 24
-    return-object v1
+    .line 88
+    .line 89
+    .line 90
+    return-object v5
 .end method

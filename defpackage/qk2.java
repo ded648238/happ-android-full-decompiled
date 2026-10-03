@@ -1,35 +1,41 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class qk2 {
-    public final int a;
+    public final /* synthetic */ int a;
+    public final /* synthetic */ Object b;
 
-    public final boolean equals(Object obj) {
-        if (obj instanceof qk2) {
-            return this.a == ((qk2) obj).a;
-        }
-        return false;
+    public /* synthetic */ qk2(int i, Object obj) {
+        this.a = i;
+        this.b = obj;
     }
 
-    public final int hashCode() {
-        return this.a;
-    }
-
-    public final String toString() {
+    public final void a() {
         int i = this.a;
-        if (i == 0) {
-            return "Argb8888";
+        Object obj = this.b;
+        switch (i) {
+            case 0:
+                rk2 rk2Var = (rk2) obj;
+                rk2Var.A--;
+                break;
+            default:
+                t17 t17Var = (t17) obj;
+                t17Var.k--;
+                break;
         }
-        if (i == 1) {
-            return "Alpha8";
+    }
+
+    public final void b() {
+        int i = this.a;
+        Object obj = this.b;
+        switch (i) {
+            case 0:
+                ((rk2) obj).A++;
+                break;
+            default:
+                ((t17) obj).k++;
+                break;
         }
-        if (i == 2) {
-            return "Rgb565";
-        }
-        if (i == 3) {
-            return "F16";
-        }
-        return i == 4 ? "Gpu" : "Unknown";
     }
 }

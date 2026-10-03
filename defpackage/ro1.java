@@ -1,89 +1,37 @@
 package defpackage;
 
-import android.content.Context;
-import android.view.View;
-import android.view.accessibility.AccessibilityEvent;
-import android.view.accessibility.AccessibilityManager;
-import android.widget.EditText;
-import com.google.android.material.internal.CheckableImageButton;
-import com.google.android.material.textfield.TextInputLayout;
+import java.util.Iterator;
+import su.happ.proxyutility.util.dnsttv.dto.enums.DnsTTLogType;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class ro1 {
-    public final TextInputLayout a;
-    public final qo1 b;
-    public final Context c;
-    public final CheckableImageButton d;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class ro1 extends d31 {
+    public byte[] c0;
+    public DnsTTLogType d0;
+    public Iterator e0;
+    public String f0;
+    public int g0;
+    public int h0;
+    public int i0;
+    public int j0;
+    public int k0;
+    public int l0;
+    public int m0;
+    public long n0;
+    public /* synthetic */ Object o0;
+    public final /* synthetic */ uo1 p0;
+    public int q0;
 
-    public ro1(qo1 qo1Var) {
-        this.a = qo1Var.Q;
-        this.b = qo1Var;
-        this.c = qo1Var.getContext();
-        this.d = qo1Var.W;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ro1(uo1 uo1Var, d31 d31Var) {
+        super(d31Var);
+        this.p0 = uo1Var;
     }
 
-    public int c() {
-        return 0;
-    }
-
-    public int d() {
-        return 0;
-    }
-
-    public View.OnFocusChangeListener e() {
-        return null;
-    }
-
-    public View.OnClickListener f() {
-        return null;
-    }
-
-    public View.OnFocusChangeListener g() {
-        return null;
-    }
-
-    public AccessibilityManager.TouchExplorationStateChangeListener h() {
-        return null;
-    }
-
-    public boolean i(int i) {
-        return true;
-    }
-
-    public boolean j() {
-        return this instanceof yk1;
-    }
-
-    public boolean k() {
-        return false;
-    }
-
-    public final void p() {
-        this.b.f(false);
-    }
-
-    public void a() {
-    }
-
-    public void b() {
-    }
-
-    public void q() {
-    }
-
-    public void r() {
-    }
-
-    public void l(EditText editText) {
-    }
-
-    public void m(u3 u3Var) {
-    }
-
-    public void n(AccessibilityEvent accessibilityEvent) {
-    }
-
-    public void o(boolean z) {
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.o0 = obj;
+        this.q0 |= Integer.MIN_VALUE;
+        return this.p0.c(null, null, this);
     }
 }

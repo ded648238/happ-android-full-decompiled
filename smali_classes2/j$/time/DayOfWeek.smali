@@ -1,6 +1,6 @@
 .class public final enum Lj$/time/DayOfWeek;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lj$/time/temporal/TemporalAccessor;
@@ -41,7 +41,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 15
+    .locals 9
 
     .line 1
     new-instance v0, Lj$/time/DayOfWeek;
@@ -68,14 +68,14 @@
 
     .line 12
     .line 13
-    const-string v3, "TUESDAY"
+    const-string v2, "TUESDAY"
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
@@ -84,161 +84,134 @@
 
     .line 20
     .line 21
-    new-instance v3, Lj$/time/DayOfWeek;
+    new-instance v2, Lj$/time/DayOfWeek;
 
     .line 22
     .line 23
-    const-string v5, "WEDNESDAY"
+    const-string v3, "WEDNESDAY"
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    const/4 v4, 0x2
 
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Lj$/time/DayOfWeek;->WEDNESDAY:Lj$/time/DayOfWeek;
+    sput-object v2, Lj$/time/DayOfWeek;->WEDNESDAY:Lj$/time/DayOfWeek;
 
     .line 30
     .line 31
-    new-instance v5, Lj$/time/DayOfWeek;
+    new-instance v3, Lj$/time/DayOfWeek;
 
     .line 32
     .line 33
-    const-string v7, "THURSDAY"
+    const-string v4, "THURSDAY"
 
     .line 34
     .line 35
-    const/4 v8, 0x3
+    const/4 v5, 0x3
 
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v4, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v5, Lj$/time/DayOfWeek;->THURSDAY:Lj$/time/DayOfWeek;
+    sput-object v3, Lj$/time/DayOfWeek;->THURSDAY:Lj$/time/DayOfWeek;
 
     .line 40
     .line 41
-    new-instance v7, Lj$/time/DayOfWeek;
+    new-instance v4, Lj$/time/DayOfWeek;
 
     .line 42
     .line 43
-    const-string v9, "FRIDAY"
+    const-string v5, "FRIDAY"
 
     .line 44
     .line 45
-    const/4 v10, 0x4
+    const/4 v6, 0x4
 
     .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v4, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 47
     .line 48
     .line 49
-    sput-object v7, Lj$/time/DayOfWeek;->FRIDAY:Lj$/time/DayOfWeek;
+    sput-object v4, Lj$/time/DayOfWeek;->FRIDAY:Lj$/time/DayOfWeek;
 
     .line 50
     .line 51
-    new-instance v9, Lj$/time/DayOfWeek;
+    new-instance v5, Lj$/time/DayOfWeek;
 
     .line 52
     .line 53
-    const-string v11, "SATURDAY"
+    const-string v6, "SATURDAY"
 
     .line 54
     .line 55
-    const/4 v12, 0x5
+    const/4 v7, 0x5
 
     .line 56
-    invoke-direct {v9, v11, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v6, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 57
     .line 58
     .line 59
-    sput-object v9, Lj$/time/DayOfWeek;->SATURDAY:Lj$/time/DayOfWeek;
+    sput-object v5, Lj$/time/DayOfWeek;->SATURDAY:Lj$/time/DayOfWeek;
 
     .line 60
     .line 61
-    new-instance v11, Lj$/time/DayOfWeek;
+    new-instance v6, Lj$/time/DayOfWeek;
 
     .line 62
     .line 63
-    const-string v13, "SUNDAY"
+    const-string v7, "SUNDAY"
 
     .line 64
     .line 65
-    const/4 v14, 0x6
+    const/4 v8, 0x6
 
     .line 66
-    invoke-direct {v11, v13, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v6, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 67
     .line 68
     .line 69
-    sput-object v11, Lj$/time/DayOfWeek;->SUNDAY:Lj$/time/DayOfWeek;
+    sput-object v6, Lj$/time/DayOfWeek;->SUNDAY:Lj$/time/DayOfWeek;
 
     .line 70
     .line 71
-    const/4 v13, 0x7
+    filled-new-array/range {v0 .. v6}, [Lj$/time/DayOfWeek;
 
     .line 72
-    new-array v13, v13, [Lj$/time/DayOfWeek;
-
     .line 73
     .line 74
-    aput-object v0, v13, v2
-
-    .line 75
-    .line 76
-    aput-object v1, v13, v4
-
-    .line 77
-    .line 78
-    aput-object v3, v13, v6
-
-    .line 79
-    .line 80
-    aput-object v5, v13, v8
-
-    .line 81
-    .line 82
-    aput-object v7, v13, v10
-
-    .line 83
-    .line 84
-    aput-object v9, v13, v12
-
-    .line 85
-    .line 86
-    aput-object v11, v13, v14
-
-    .line 87
-    .line 88
-    sput-object v13, Lj$/time/DayOfWeek;->b:[Lj$/time/DayOfWeek;
-
-    .line 89
-    .line 90
-    invoke-static {}, Lj$/time/DayOfWeek;->values()[Lj$/time/DayOfWeek;
-
-    .line 91
-    .line 92
-    .line 93
     move-result-object v0
 
-    .line 94
+    .line 75
+    sput-object v0, Lj$/time/DayOfWeek;->b:[Lj$/time/DayOfWeek;
+
+    .line 76
+    .line 77
+    invoke-static {}, Lj$/time/DayOfWeek;->values()[Lj$/time/DayOfWeek;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v0
+
+    .line 81
     sput-object v0, Lj$/time/DayOfWeek;->a:[Lj$/time/DayOfWeek;
 
-    .line 95
-    .line 96
+    .line 82
+    .line 83
     return-void
 .end method
 
-.method public static G(I)Lj$/time/DayOfWeek;
+.method public static t(I)Lj$/time/DayOfWeek;
     .locals 2
 
     .line 1
@@ -275,7 +248,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0, p0}, Lj$/time/f;->d(Ljava/lang/String;I)V
+    invoke-static {v0, p0}, Lj$/time/g;->b(Ljava/lang/String;I)V
 
     .line 16
     .line 17
@@ -334,65 +307,11 @@
 
 
 # virtual methods
-.method public final d(Lj$/time/temporal/TemporalField;)Z
+.method public final d(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    instance-of v0, p1, Lj$/time/temporal/ChronoField;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_WEEK:Lj$/time/temporal/ChronoField;
-
-    .line 6
-    .line 7
-    if-ne p1, v0, :cond_1
-
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :cond_0
-    if-eqz p1, :cond_1
-
-    .line 11
-    .line 12
-    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalField;->g(Lj$/time/temporal/TemporalAccessor;)Z
-
-    .line 13
-    .line 14
-    .line 15
-    move-result p1
-
-    .line 16
-    if-eqz p1, :cond_1
-
-    .line 17
-    .line 18
-    :goto_0
-    const/4 p1, 0x1
-
-    .line 19
-    return p1
-
-    .line 20
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 21
-    return p1
-.end method
-
-.method public final g(Lj$/time/temporal/TemporalField;)I
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_WEEK:Lj$/time/temporal/ChronoField;
+    sget-object v0, Lj$/time/temporal/p;->c:Lj$/time/e;
 
     .line 2
     .line 3
@@ -400,84 +319,26 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Lj$/time/DayOfWeek;->getValue()I
+    sget-object p0, Lj$/time/temporal/a;->DAYS:Lj$/time/temporal/a;
 
     .line 6
     .line 7
+    return-object p0
+
     .line 8
-    move-result p1
+    :cond_0
+    invoke-super {p0, p1}, Lj$/time/temporal/TemporalAccessor;->d(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
 
     .line 9
-    return p1
-
     .line 10
-    :cond_0
-    invoke-static {p0, p1}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
-
     .line 11
+    move-result-object p0
+
     .line 12
-    .line 13
-    move-result p1
-
-    .line 14
-    return p1
+    return-object p0
 .end method
 
-.method public getValue()I
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    add-int/lit8 v0, v0, 0x1
-
-    .line 6
-    .line 7
-    return v0
-.end method
-
-.method public final i(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_WEEK:Lj$/time/temporal/ChronoField;
-
-    .line 2
-    .line 3
-    if-ne p1, v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {p1}, Lj$/time/temporal/TemporalField;->l()Lj$/time/temporal/s;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p1
-
-    .line 9
-    return-object p1
-
-    .line 10
-    :cond_0
-    invoke-static {p0, p1}, Lj$/time/temporal/p;->d(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
-
-    .line 14
-    return-object p1
-.end method
-
-.method public final l(Lj$/time/temporal/l;)Lj$/time/temporal/l;
+.method public final f(Lj$/time/temporal/l;)Lj$/time/temporal/l;
     .locals 3
 
     .line 1
@@ -490,10 +351,10 @@
     .line 4
     .line 5
     .line 6
-    move-result v1
+    move-result p0
 
     .line 7
-    int-to-long v1, v1
+    int-to-long v1, p0
 
     .line 8
     invoke-interface {p1, v1, v2, v0}, Lj$/time/temporal/l;->b(JLj$/time/temporal/TemporalField;)Lj$/time/temporal/l;
@@ -501,14 +362,33 @@
     .line 9
     .line 10
     .line 11
-    move-result-object p1
+    move-result-object p0
 
     .line 12
-    return-object p1
+    return-object p0
 .end method
 
-.method public final x(Lj$/time/temporal/TemporalField;)J
-    .locals 2
+.method public getValue()I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    add-int/lit8 p0, p0, 0x1
+
+    .line 6
+    .line 7
+    return p0
+.end method
+
+.method public final h(Lj$/time/temporal/TemporalField;)I
+    .locals 1
 
     .line 1
     sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_WEEK:Lj$/time/temporal/ChronoField;
@@ -524,13 +404,102 @@
     .line 6
     .line 7
     .line 8
-    move-result p1
+    move-result p0
 
     .line 9
-    int-to-long v0, p1
+    return p0
 
     .line 10
-    return-wide v0
+    :cond_0
+    invoke-super {p0, p1}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p0
+
+    .line 14
+    return p0
+.end method
+
+.method public final i(Lj$/time/temporal/TemporalField;)Z
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Lj$/time/temporal/ChronoField;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    sget-object p0, Lj$/time/temporal/ChronoField;->DAY_OF_WEEK:Lj$/time/temporal/ChronoField;
+
+    .line 6
+    .line 7
+    if-ne p1, p0, :cond_1
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    if-eqz p1, :cond_1
+
+    .line 11
+    .line 12
+    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalField;->t(Lj$/time/temporal/TemporalAccessor;)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p0
+
+    .line 16
+    if-eqz p0, :cond_1
+
+    .line 17
+    .line 18
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 19
+    return p0
+
+    .line 20
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 21
+    return p0
+.end method
+
+.method public final k(Lj$/time/temporal/TemporalField;)J
+    .locals 1
+
+    .line 1
+    sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_WEEK:Lj$/time/temporal/ChronoField;
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lj$/time/DayOfWeek;->getValue()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p0
+
+    .line 9
+    int-to-long p0, p0
+
+    .line 10
+    return-wide p0
 
     .line 11
     :cond_0
@@ -542,27 +511,27 @@
 
     .line 14
     .line 15
-    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalField;->t(Lj$/time/temporal/TemporalAccessor;)J
+    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalField;->J(Lj$/time/temporal/TemporalAccessor;)J
 
     .line 16
     .line 17
     .line 18
-    move-result-wide v0
+    move-result-wide p0
 
     .line 19
-    return-wide v0
+    return-wide p0
 
     .line 20
     :cond_1
-    new-instance v0, Lj$/time/temporal/r;
+    new-instance p0, Lj$/time/temporal/r;
 
     .line 21
     .line 22
-    const-string v1, "Unsupported field: "
+    const-string v0, "Unsupported field: "
 
     .line 23
     .line 24
-    invoke-static {v1, p1}, Lj$/time/b;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lj$/time/c;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
 
     .line 25
     .line 26
@@ -570,19 +539,19 @@
     move-result-object p1
 
     .line 28
-    invoke-direct {v0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 29
     .line 30
     .line 31
-    throw v0
+    throw p0
 .end method
 
-.method public final z(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
+.method public final l(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
     .locals 1
 
     .line 1
-    sget-object v0, Lj$/time/temporal/p;->c:Lj$/time/e;
+    sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_WEEK:Lj$/time/temporal/ChronoField;
 
     .line 2
     .line 3
@@ -590,21 +559,25 @@
 
     .line 4
     .line 5
-    sget-object p1, Lj$/time/temporal/a;->DAYS:Lj$/time/temporal/a;
+    invoke-interface {p1}, Lj$/time/temporal/TemporalField;->F()Lj$/time/temporal/s;
 
     .line 6
     .line 7
-    return-object p1
-
     .line 8
-    :cond_0
-    invoke-static {p0, p1}, Lj$/time/temporal/p;->c(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
+    move-result-object p0
 
     .line 9
-    .line 10
-    .line 11
-    move-result-object p1
+    return-object p0
 
+    .line 10
+    :cond_0
+    invoke-super {p0, p1}, Lj$/time/temporal/TemporalAccessor;->l(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+
+    .line 11
     .line 12
-    return-object p1
+    .line 13
+    move-result-object p0
+
+    .line 14
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class public final Lio/sentry/android/ndk/SentryNdk;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -165,7 +165,7 @@
     .locals 10
 
     .line 1
-    invoke-virtual {p0}, Lio/sentry/m6;->getSdkVersion()Lio/sentry/protocol/u;
+    invoke-virtual {p0}, Lio/sentry/o6;->getSdkVersion()Lio/sentry/protocol/u;
 
     .line 2
     .line 3
@@ -185,11 +185,11 @@
 
     .line 10
     :cond_0
-    const-string v0, "8.46.0"
+    const-string v0, "8.57.0"
 
     .line 11
     .line 12
-    invoke-static {}, Lio/sentry/k5;->d()Lio/sentry/k5;
+    invoke-static {}, Lio/sentry/m5;->d()Lio/sentry/m5;
 
     .line 13
     .line 14
@@ -201,7 +201,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v1, v2, v0}, Lio/sentry/k5;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Lio/sentry/m5;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -236,7 +236,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {p0}, Lio/sentry/m6;->getDsn()Ljava/lang/String;
+    invoke-virtual {p0}, Lio/sentry/o6;->getDsn()Ljava/lang/String;
 
     .line 36
     .line 37
@@ -248,12 +248,12 @@
 
     .line 40
     .line 41
-    invoke-static {v2, v0}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v0}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 42
     .line 43
     .line 44
-    invoke-virtual {p0}, Lio/sentry/m6;->isDebug()Z
+    invoke-virtual {p0}, Lio/sentry/o6;->isDebug()Z
 
     .line 45
     .line 46
@@ -261,7 +261,7 @@
     move-result v3
 
     .line 48
-    invoke-virtual {p0}, Lio/sentry/m6;->getOutboxPath()Ljava/lang/String;
+    invoke-virtual {p0}, Lio/sentry/o6;->getOutboxPath()Ljava/lang/String;
 
     .line 49
     .line 50
@@ -273,12 +273,12 @@
 
     .line 53
     .line 54
-    invoke-static {v4, v0}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v0}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 55
     .line 56
     .line 57
-    invoke-virtual {p0}, Lio/sentry/m6;->getRelease()Ljava/lang/String;
+    invoke-virtual {p0}, Lio/sentry/o6;->getRelease()Ljava/lang/String;
 
     .line 58
     .line 59
@@ -286,7 +286,7 @@
     move-result-object v5
 
     .line 61
-    invoke-virtual {p0}, Lio/sentry/m6;->getEnvironment()Ljava/lang/String;
+    invoke-virtual {p0}, Lio/sentry/o6;->getEnvironment()Ljava/lang/String;
 
     .line 62
     .line 63
@@ -294,7 +294,7 @@
     move-result-object v6
 
     .line 65
-    invoke-virtual {p0}, Lio/sentry/m6;->getDist()Ljava/lang/String;
+    invoke-virtual {p0}, Lio/sentry/o6;->getDist()Ljava/lang/String;
 
     .line 66
     .line 67
@@ -302,7 +302,7 @@
     move-result-object v7
 
     .line 69
-    invoke-virtual {p0}, Lio/sentry/m6;->getMaxBreadcrumbs()I
+    invoke-virtual {p0}, Lio/sentry/o6;->getMaxBreadcrumbs()I
 
     .line 70
     .line 71
@@ -331,11 +331,11 @@
     move-result v0
 
     .line 84
-    sget-object v2, Lio/sentry/android/core/a1;->SENTRY_HANDLER_STRATEGY_DEFAULT:Lio/sentry/android/core/a1;
+    sget-object v2, Lio/sentry/android/core/e1;->SENTRY_HANDLER_STRATEGY_DEFAULT:Lio/sentry/android/core/e1;
 
     .line 85
     .line 86
-    invoke-virtual {v2}, Lio/sentry/android/core/a1;->getValue()I
+    invoke-virtual {v2}, Lio/sentry/android/core/e1;->getValue()I
 
     .line 87
     .line 88
@@ -360,11 +360,11 @@
 
     .line 98
     :cond_1
-    sget-object v2, Lio/sentry/android/core/a1;->SENTRY_HANDLER_STRATEGY_CHAIN_AT_START:Lio/sentry/android/core/a1;
+    sget-object v2, Lio/sentry/android/core/e1;->SENTRY_HANDLER_STRATEGY_CHAIN_AT_START:Lio/sentry/android/core/e1;
 
     .line 99
     .line 100
-    invoke-virtual {v2}, Lio/sentry/android/core/a1;->getValue()I
+    invoke-virtual {v2}, Lio/sentry/android/core/e1;->getValue()I
 
     .line 101
     .line 102
@@ -387,7 +387,7 @@
     .line 111
     :cond_2
     :goto_1
-    invoke-virtual {p0}, Lio/sentry/m6;->getTracesSampleRate()Ljava/lang/Double;
+    invoke-virtual {p0}, Lio/sentry/o6;->getTracesSampleRate()Ljava/lang/Double;
 
     .line 112
     .line 113
@@ -425,94 +425,120 @@
     .line 128
     .line 129
     :goto_2
-    invoke-static {v1}, Lio/sentry/ndk/SentryNdk;->init(Lio/sentry/ndk/NdkOptions;)V
+    invoke-virtual {p0}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableNdkAppHangTracking()Z
 
     .line 130
     .line 131
     .line 132
-    invoke-virtual {p0}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableScopeSync()Z
-
-    .line 133
-    .line 134
-    .line 135
     move-result v0
 
+    .line 133
+    invoke-virtual {v1, v0}, Lio/sentry/ndk/NdkOptions;->setEnableAppHangTracking(Z)V
+
+    .line 134
+    .line 135
     .line 136
-    if-eqz v0, :cond_4
+    invoke-virtual {p0}, Lio/sentry/android/core/SentryAndroidOptions;->getNdkAppHangTimeoutIntervalMillis()J
 
     .line 137
     .line 138
-    new-instance v0, Lio/sentry/android/ndk/b;
-
     .line 139
+    move-result-wide v2
+
     .line 140
-    invoke-direct {v0, p0}, Lio/sentry/android/ndk/b;-><init>(Lio/sentry/android/core/SentryAndroidOptions;)V
+    invoke-virtual {v1, v2, v3}, Lio/sentry/ndk/NdkOptions;->setAppHangTimeoutMillis(J)V
 
     .line 141
     .line 142
     .line 143
-    invoke-virtual {p0, v0}, Lio/sentry/m6;->addScopeObserver(Lio/sentry/c1;)V
+    invoke-static {v1}, Lio/sentry/ndk/SentryNdk;->init(Lio/sentry/ndk/NdkOptions;)V
 
     .line 144
     .line 145
     .line 146
-    :cond_4
-    new-instance v0, Lio/sentry/android/ndk/a;
+    invoke-virtual {p0}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableScopeSync()Z
 
     .line 147
     .line 148
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 149
-    .line 150
-    .line 151
-    invoke-virtual {p0, v0}, Lio/sentry/android/core/SentryAndroidOptions;->setDebugImagesLoader(Lio/sentry/android/core/u0;)V
+    move-result v0
 
+    .line 150
+    if-eqz v0, :cond_4
+
+    .line 151
     .line 152
+    new-instance v0, Lio/sentry/android/ndk/b;
+
     .line 153
     .line 154
-    return-void
+    invoke-direct {v0, p0}, Lio/sentry/android/ndk/b;-><init>(Lio/sentry/android/core/SentryAndroidOptions;)V
 
     .line 155
-    :cond_5
-    new-instance p0, Ljava/lang/IllegalStateException;
-
     .line 156
     .line 157
-    const-string v0, "Timeout waiting for Sentry NDK library to load"
+    invoke-virtual {p0, v0}, Lio/sentry/o6;->addScopeObserver(Lio/sentry/e1;)V
 
     .line 158
     .line 159
-    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 160
+    :cond_4
+    new-instance v0, Lio/sentry/android/ndk/a;
+
     .line 161
     .line 162
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 163
+    .line 164
+    .line 165
+    invoke-virtual {p0, v0}, Lio/sentry/android/core/SentryAndroidOptions;->setDebugImagesLoader(Lio/sentry/android/core/x0;)V
+
+    .line 166
+    .line 167
+    .line 168
+    return-void
+
+    .line 169
+    :cond_5
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 170
+    .line 171
+    const-string v0, "Timeout waiting for Sentry NDK library to load"
+
+    .line 172
+    .line 173
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 174
+    .line 175
+    .line 176
     throw p0
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 163
+    .line 177
     :catch_0
     move-exception v0
 
-    .line 164
+    .line 178
     move-object p0, v0
 
-    .line 165
+    .line 179
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 166
-    .line 167
+    .line 180
+    .line 181
     const-string v1, "Thread interrupted while waiting for NDK libs to be loaded"
 
-    .line 168
-    .line 169
+    .line 182
+    .line 183
     invoke-direct {v0, v1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 170
-    .line 171
-    .line 172
+    .line 184
+    .line 185
+    .line 186
     throw v0
 .end method
 

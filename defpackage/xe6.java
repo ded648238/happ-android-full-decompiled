@@ -1,23 +1,15 @@
 package defpackage;
 
-import android.view.ViewGroup;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface xe6 {
+    void a(int i, uh4 uh4Var, int[] iArr, int[] iArr2);
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class xe6 {
-    public boolean a;
-    public boolean b;
+    long b(int i, int i2, int i3, boolean z);
 
-    public abstract void a(ViewGroup viewGroup);
+    th4 e(kd5[] kd5VarArr, uh4 uh4Var, int[] iArr, int i, int i2);
 
-    public abstract void b(ViewGroup viewGroup);
+    int h(kd5 kd5Var);
 
-    public void c(bx bxVar, ViewGroup viewGroup) {
-        bxVar.getClass();
-        viewGroup.getClass();
-    }
-
-    public void d(ViewGroup viewGroup) {
-        viewGroup.getClass();
-    }
+    int j(kd5 kd5Var);
 }

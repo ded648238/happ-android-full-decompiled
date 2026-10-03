@@ -1,47 +1,22 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class w12 {
-    public final int a;
+    public final long a;
+    public final long b;
 
-    public static String a(int i) {
-        if (i == 1) {
-            return "Next";
+    public w12(long j, long j2) {
+        if (j2 == 0) {
+            this.a = 0L;
+            this.b = 1L;
+        } else {
+            this.a = j;
+            this.b = j2;
         }
-        if (i == 2) {
-            return "Previous";
-        }
-        if (i == 3) {
-            return "Left";
-        }
-        if (i == 4) {
-            return "Right";
-        }
-        if (i == 5) {
-            return "Up";
-        }
-        if (i == 6) {
-            return "Down";
-        }
-        if (i == 7) {
-            return "Enter";
-        }
-        return i == 8 ? "Exit" : "Invalid FocusDirection";
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj instanceof w12) {
-            return this.a == ((w12) obj).a;
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        return this.a;
     }
 
     public final String toString() {
-        return a(this.a);
+        return this.a + "/" + this.b;
     }
 }

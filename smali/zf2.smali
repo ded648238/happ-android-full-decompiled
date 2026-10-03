@@ -1,128 +1,220 @@
-.class public final synthetic Lzf2;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lzf2;
+.super Landroid/view/animation/AnimationSet;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lu72;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic Q:Z
+.field public final X:Landroid/view/ViewGroup;
 
-.field public final synthetic R:Ljava/lang/Enum;
+.field public final Y:Landroid/view/View;
 
-.field public final synthetic S:Ln31;
+.field public Z:Z
 
-.field public final synthetic T:Lba;
+.field public c0:Z
 
-.field public final synthetic U:Lj72;
-
-.field public final synthetic V:I
+.field public d0:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(ZLjava/lang/Enum;Ln31;Lba;Lj72;I)V
-    .locals 0
+.method public constructor <init>(Landroid/view/animation/Animation;Landroid/view/ViewGroup;Landroid/view/View;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
 
     .line 2
+    invoke-direct {p0, v0}, Landroid/view/animation/AnimationSet;-><init>(Z)V
+
     .line 3
     .line 4
-    iput-boolean p1, p0, Lzf2;->Q:Z
-
     .line 5
+    const/4 v0, 0x1
+
     .line 6
-    iput-object p2, p0, Lzf2;->R:Ljava/lang/Enum;
+    iput-boolean v0, p0, Lzf2;->d0:Z
 
     .line 7
     .line 8
-    iput-object p3, p0, Lzf2;->S:Ln31;
+    iput-object p2, p0, Lzf2;->X:Landroid/view/ViewGroup;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lzf2;->T:Lba;
+    iput-object p3, p0, Lzf2;->Y:Landroid/view/View;
 
     .line 11
     .line 12
-    iput-object p5, p0, Lzf2;->U:Lj72;
+    invoke-virtual {p0, p1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
     .line 13
     .line 14
-    iput p6, p0, Lzf2;->V:I
-
     .line 15
+    invoke-virtual {p2, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
     .line 16
+    .line 17
+    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+.method public final getTransformation(JLandroid/view/animation/Transformation;)Z
+    .locals 2
 
     .line 1
-    move-object v5, p1
+    const/4 v0, 0x1
 
     .line 2
-    check-cast v5, Luq0;
+    iput-boolean v0, p0, Lzf2;->d0:Z
 
     .line 3
     .line 4
-    check-cast p2, Ljava/lang/Integer;
+    iget-boolean v1, p0, Lzf2;->Z:Z
 
     .line 5
     .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eqz v1, :cond_0
 
     .line 7
     .line 8
+    iget-boolean p0, p0, Lzf2;->c0:Z
+
     .line 9
-    iget p1, p0, Lzf2;->V:I
+    .line 10
+    xor-int/2addr p0, v0
+
+    .line 11
+    return p0
+
+    .line 12
+    :cond_0
+    invoke-super {p0, p1, p2, p3}, Landroid/view/animation/AnimationSet;->getTransformation(JLandroid/view/animation/Transformation;)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p1
+
+    .line 16
+    if-nez p1, :cond_1
+
+    .line 17
+    .line 18
+    iput-boolean v0, p0, Lzf2;->Z:Z
+
+    .line 19
+    .line 20
+    iget-object p1, p0, Lzf2;->X:Landroid/view/ViewGroup;
+
+    .line 21
+    .line 22
+    invoke-static {p1, p0}, Lk05;->a(Landroid/view/View;Ljava/lang/Runnable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :cond_1
+    return v0
+.end method
+
+.method public final getTransformation(JLandroid/view/animation/Transformation;F)Z
+    .locals 2
+
+    const/4 v0, 0x1
+
+    .line 26
+    iput-boolean v0, p0, Lzf2;->d0:Z
+
+    .line 27
+    iget-boolean v1, p0, Lzf2;->Z:Z
+
+    if-eqz v1, :cond_0
+
+    .line 28
+    iget-boolean p0, p0, Lzf2;->c0:Z
+
+    xor-int/2addr p0, v0
+
+    return p0
+
+    .line 29
+    :cond_0
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/animation/Animation;->getTransformation(JLandroid/view/animation/Transformation;F)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    .line 30
+    iput-boolean v0, p0, Lzf2;->Z:Z
+
+    .line 31
+    iget-object p1, p0, Lzf2;->X:Landroid/view/ViewGroup;
+
+    invoke-static {p1, p0}, Lk05;->a(Landroid/view/View;Ljava/lang/Runnable;)V
+
+    :cond_1
+    return v0
+.end method
+
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lzf2;->Z:Z
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lzf2;->X:Landroid/view/ViewGroup;
+
+    .line 4
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    iget-boolean v0, p0, Lzf2;->d0:Z
+
+    .line 8
+    .line 9
+    if-eqz v0, :cond_0
 
     .line 10
     .line 11
-    or-int/lit8 p1, p1, 0x1
+    const/4 v0, 0x0
 
     .line 12
-    .line 13
-    invoke-static {p1}, Luy7;->X(I)I
+    iput-boolean v0, p0, Lzf2;->d0:Z
 
+    .line 13
     .line 14
+    invoke-virtual {v1, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
     .line 15
     .line 16
-    move-result v6
-
     .line 17
-    iget-boolean v0, p0, Lzf2;->Q:Z
+    return-void
 
     .line 18
+    :cond_0
+    iget-object v0, p0, Lzf2;->Y:Landroid/view/View;
+
     .line 19
-    iget-object v1, p0, Lzf2;->R:Ljava/lang/Enum;
-
     .line 20
-    .line 21
-    iget-object v2, p0, Lzf2;->S:Ln31;
+    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
 
+    .line 21
     .line 22
     .line 23
-    iget-object v3, p0, Lzf2;->T:Lba;
+    const/4 v0, 0x1
 
     .line 24
+    iput-boolean v0, p0, Lzf2;->c0:Z
+
     .line 25
-    iget-object v4, p0, Lzf2;->U:Lj72;
-
     .line 26
-    .line 27
-    invoke-static/range {v0 .. v6}, Lkz0;->c(ZLjava/lang/Enum;Ln31;Lba;Lj72;Luq0;I)V
-
-    .line 28
-    .line 29
-    .line 30
-    sget-object p1, Lbh7;->a:Lbh7;
-
-    .line 31
-    .line 32
-    return-object p1
+    return-void
 .end method

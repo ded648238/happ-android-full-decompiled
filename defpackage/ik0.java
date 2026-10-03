@@ -1,31 +1,46 @@
 package defpackage;
 
-import java.lang.reflect.Method;
+import androidx.work.impl.WorkDatabase;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ik0 {
-    public final int a;
-    public final Method b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class ik0 implements ji2 {
+    public final /* synthetic */ int X = 1;
+    public final /* synthetic */ String Y;
+    public final /* synthetic */ kq8 Z;
 
-    public ik0(int i, Method method) {
-        this.a = i;
-        this.b = method;
-        method.setAccessible(true);
+    public /* synthetic */ ik0(kq8 kq8Var, String str) {
+        this.Z = kq8Var;
+        this.Y = str;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        int i = this.X;
+        r98 r98Var = r98.a;
+        kq8 kq8Var = this.Z;
+        String str = this.Y;
+        switch (i) {
+            case 0:
+                WorkDatabase workDatabase = kq8Var.n0;
+                workDatabase.getClass();
+                workDatabase.o(new kk0(workDatabase, str, kq8Var, 1));
+                al6.b(kq8Var.m0, kq8Var.n0, kq8Var.p0);
+                break;
+            default:
+                str.getClass();
+                kq8Var.getClass();
+                WorkDatabase workDatabase2 = kq8Var.n0;
+                workDatabase2.getClass();
+                workDatabase2.o(new kk0(workDatabase2, str, kq8Var, 0));
+                al6.b(kq8Var.m0, workDatabase2, kq8Var.p0);
+                break;
         }
-        if (!(obj instanceof ik0)) {
-            return false;
-        }
-        ik0 ik0Var = (ik0) obj;
-        return this.a == ik0Var.a && this.b.getName().equals(ik0Var.b.getName());
+        return r98Var;
     }
 
-    public final int hashCode() {
-        return this.b.getName().hashCode() + (this.a * 31);
+    public /* synthetic */ ik0(String str, kq8 kq8Var) {
+        this.Y = str;
+        this.Z = kq8Var;
     }
 }

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
-.super Lms;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Liu;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -19,10 +19,10 @@
     }
     d2 = {
         "Lokhttp3/internal/http2/Http2Stream$StreamTimeout;",
-        "Lms;",
+        "Liu;",
         "<init>",
         "(Lokhttp3/internal/http2/Http2Stream;)V",
-        "Lbh7;",
+        "Lr98;",
         "timedOut",
         "()V",
         "Ljava/io/IOException;",
@@ -60,7 +60,7 @@
 
     .line 2
     .line 3
-    invoke-direct {p0}, Lms;-><init>()V
+    invoke-direct {p0}, Liu;-><init>()V
 
     .line 4
     .line 5
@@ -79,7 +79,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lms;->exit()Z
+    invoke-virtual {p0}, Liu;->exit()Z
 
     .line 2
     .line 3
@@ -103,25 +103,25 @@
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    throw v0
+    throw p0
 .end method
 
 .method public newTimeoutException(Ljava/io/IOException;)Ljava/io/IOException;
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/net/SocketTimeoutException;
+    new-instance p0, Ljava/net/SocketTimeoutException;
 
     .line 2
     .line 3
-    const-string v1, "timeout"
+    const-string v0, "timeout"
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/net/SocketTimeoutException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/SocketTimeoutException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -130,13 +130,13 @@
 
     .line 9
     .line 10
-    invoke-virtual {v0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 11
     .line 12
     .line 13
     :cond_0
-    return-object v0
+    return-object p0
 .end method
 
 .method public timedOut()V
@@ -156,19 +156,19 @@
     .line 6
     .line 7
     .line 8
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$StreamTimeout;->this$0:Lokhttp3/internal/http2/Http2Stream;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream$StreamTimeout;->this$0:Lokhttp3/internal/http2/Http2Stream;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Stream;->getConnection()Lokhttp3/internal/http2/Http2Connection;
+    invoke-virtual {p0}, Lokhttp3/internal/http2/Http2Stream;->getConnection()Lokhttp3/internal/http2/Http2Connection;
 
     .line 11
     .line 12
     .line 13
-    move-result-object v0
+    move-result-object p0
 
     .line 14
-    invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Connection;->sendDegradedPingLater$okhttp()V
+    invoke-virtual {p0}, Lokhttp3/internal/http2/Http2Connection;->sendDegradedPingLater$okhttp()V
 
     .line 15
     .line 16

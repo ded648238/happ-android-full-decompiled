@@ -1,14 +1,14 @@
 .class final Lokhttp3/internal/cache/DiskLruCache$newJournalWriter$faultHidingSink$1;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lou3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lj72;
+.implements Lmi2;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/internal/cache/DiskLruCache;->newJournalWriter()Lr50;
+    value = Lokhttp3/internal/cache/DiskLruCache;->newJournalWriter()Le80;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe3;",
-        "Lj72;"
+        "Lou3;",
+        "Lmi2;"
     }
 .end annotation
 
@@ -30,7 +30,7 @@
     d2 = {
         "Ljava/io/IOException;",
         "it",
-        "Lbh7;",
+        "Lr98;",
         "invoke",
         "(Ljava/io/IOException;)V",
         "<anonymous>"
@@ -60,7 +60,7 @@
     const/4 p1, 0x1
 
     .line 4
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
+    invoke-direct {p0, p1}, Lou3;-><init>(I)V
 
     .line 5
     .line 6
@@ -78,13 +78,13 @@
 
     invoke-virtual {p0, p1}, Lokhttp3/internal/cache/DiskLruCache$newJournalWriter$faultHidingSink$1;->invoke(Ljava/io/IOException;)V
 
-    sget-object p1, Lbh7;->a:Lbh7;
+    sget-object p0, Lr98;->a:Lr98;
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final invoke(Ljava/io/IOException;)V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -125,22 +125,22 @@
     .line 18
     .line 19
     .line 20
-    move-result-object v0
+    move-result-object p0
 
     .line 21
-    invoke-virtual {v0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     .line 22
     .line 23
     .line 24
-    move-result-object v0
+    move-result-object p0
 
     .line 25
-    const-string v1, " MUST hold lock on "
+    const-string v0, " MUST hold lock on "
 
     .line 26
     .line 27
-    invoke-static {v0, v1, p1}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, v0, p1}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 28
     .line 29
@@ -150,14 +150,14 @@
     .line 31
     :cond_1
     :goto_0
-    iget-object p1, p0, Lokhttp3/internal/cache/DiskLruCache$newJournalWriter$faultHidingSink$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$newJournalWriter$faultHidingSink$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 32
     .line 33
-    const/4 v0, 0x1
+    const/4 p1, 0x1
 
     .line 34
-    invoke-static {p1, v0}, Lokhttp3/internal/cache/DiskLruCache;->access$setHasJournalErrors$p(Lokhttp3/internal/cache/DiskLruCache;Z)V
+    invoke-static {p0, p1}, Lokhttp3/internal/cache/DiskLruCache;->access$setHasJournalErrors$p(Lokhttp3/internal/cache/DiskLruCache;Z)V
 
     .line 35
     .line 36

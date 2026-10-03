@@ -1,15 +1,31 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class d53 {
-    public static final yy1 a = az1.c();
-    public static final yy1 b;
-    public static final yy1 c;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class d53 implements jl2 {
+    public final /* synthetic */ vo3 a;
 
-    static {
-        yy1 yy1VarC = az1.c();
-        b = yy1VarC;
-        c = az1.b(yy1VarC);
+    public d53(vo3 vo3Var) {
+        this.a = vo3Var;
+    }
+
+    @Override // defpackage.vo3
+    public final void a(o97 o97Var, Object obj) {
+        throw new IllegalStateException("unsupported");
+    }
+
+    @Override // defpackage.vo3
+    public final Object b(ua1 ua1Var) {
+        throw new IllegalStateException("unsupported");
+    }
+
+    @Override // defpackage.jl2
+    public final vo3[] c() {
+        return new vo3[]{this.a};
+    }
+
+    @Override // defpackage.vo3
+    public final er6 d() {
+        throw new IllegalStateException("unsupported");
     }
 }

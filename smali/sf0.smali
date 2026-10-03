@@ -1,134 +1,59 @@
-.class public final Lsf0;
-.super Ltf0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public interface abstract Lsf0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic b:Lcom/google/android/material/carousel/CarouselLayoutManager;
+# static fields
+.field public static final a:Lrf0;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/carousel/CarouselLayoutManager;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lsf0;->b:Lcom/google/android/material/carousel/CarouselLayoutManager;
+    new-instance v0, Lrf0;
 
     .line 2
     .line 3
-    const/4 p1, 0x0
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    invoke-direct {p0, p1}, Ltf0;-><init>(I)V
-
     .line 5
     .line 6
+    sput-object v0, Lsf0;->a:Lrf0;
+
     .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lsf0;->b:Lcom/google/android/material/carousel/CarouselLayoutManager;
-
-    .line 2
-    .line 3
-    iget v1, v0, Landroidx/recyclerview/widget/j;->e0:I
-
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/j;->getPaddingBottom()I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    sub-int/2addr v1, v0
-
-    .line 10
-    return v1
+.method public abstract a()V
 .end method
 
-.method public final b()I
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
+.method public abstract b(Lbt6;)V
 .end method
 
-.method public final c()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsf0;->b:Lcom/google/android/material/carousel/CarouselLayoutManager;
-
-    .line 2
-    .line 3
-    iget v0, v0, Landroidx/recyclerview/widget/j;->d0:I
-
-    .line 4
-    .line 5
-    return v0
+.method public abstract c(Ljz0;)V
 .end method
 
-.method public final d()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lsf0;->b:Lcom/google/android/material/carousel/CarouselLayoutManager;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lcom/google/android/material/carousel/CarouselLayoutManager;->c1()Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v1
-
-    .line 7
-    if-eqz v1, :cond_0
-
-    .line 8
-    .line 9
-    iget v0, v0, Landroidx/recyclerview/widget/j;->d0:I
-
-    .line 10
-    .line 11
-    return v0
-
-    .line 12
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 13
-    return v0
+.method public abstract d(I)V
 .end method
 
-.method public final e()I
-    .locals 1
+.method public e(Liy2;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsf0;->b:Lcom/google/android/material/carousel/CarouselLayoutManager;
+    return-void
+.end method
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/j;->getPaddingTop()I
+.method public abstract f(Z)Ly34;
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+.method public abstract g()Ljz0;
+.end method
 
-    .line 7
-    return v0
+.method public abstract h()V
 .end method

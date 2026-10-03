@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/widget/CustomSpinner;
 .super Landroid/widget/Spinner;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -19,7 +19,7 @@
         "(Landroid/content/Context;Landroid/util/AttributeSet;)V",
         "",
         "position",
-        "Lbh7;",
+        "Lr98;",
         "setSelection",
         "(I)V",
         "Landroid/widget/AdapterView$OnItemSelectedListener;",
@@ -40,11 +40,11 @@
 
 
 # instance fields
-.field public Q:Landroid/widget/AdapterView$OnItemSelectedListener;
+.field public c0:Landroid/widget/AdapterView$OnItemSelectedListener;
 
-.field public R:Landroid/widget/AdapterView$OnItemSelectedListener;
+.field public d0:Landroid/widget/AdapterView$OnItemSelectedListener;
 
-.field public S:Z
+.field public e0:Z
 
 
 # direct methods
@@ -62,7 +62,7 @@
     .line 5
     .line 6
     .line 7
-    sget v0, Lr85;->bg_spinner_item_popup:I
+    sget v0, Lqs5;->bg_spinner_item_popup:I
 
     .line 8
     .line 9
@@ -84,7 +84,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-static {p1}, Ltr2;->r(Landroid/content/Context;)Z
+    invoke-static {p1}, Lf73;->y(Landroid/content/Context;)Z
 
     .line 20
     .line 21
@@ -97,7 +97,7 @@
     .line 24
     .line 25
     .line 26
-    sget-object v1, Lxa5;->CustomSpinner:[I
+    sget-object v1, Lwu5;->CustomSpinner:[I
 
     .line 27
     .line 28
@@ -117,7 +117,7 @@
     move-result-object p1
 
     .line 36
-    sget p2, Lxa5;->CustomSpinner_popupHeight:I
+    sget p2, Lwu5;->CustomSpinner_popupHeight:I
 
     .line 37
     .line 38
@@ -148,7 +148,7 @@
 
     .line 50
     .line 51
-    const/4 v2, 0x1
+    move v2, v0
 
     .line 52
     :cond_0
@@ -203,22 +203,22 @@
     .line 74
     .line 75
     .line 76
-    move-result-object v0
+    move-result-object p0
 
     .line 77
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 78
     .line 79
     .line 80
-    check-cast v0, Landroid/widget/ListPopupWindow;
+    check-cast p0, Landroid/widget/ListPopupWindow;
 
     .line 81
     .line 82
     float-to-int p2, p2
 
     .line 83
-    invoke-virtual {v0, p2}, Landroid/widget/ListPopupWindow;->setHeight(I)V
+    invoke-virtual {p0, p2}, Landroid/widget/ListPopupWindow;->setHeight(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -229,22 +229,22 @@
 
     .line 87
     :catchall_0
-    move-exception p2
+    move-exception p0
 
     .line 88
-    instance-of v0, p2, Ljava/lang/InterruptedException;
+    instance-of p2, p0, Ljava/lang/InterruptedException;
 
     .line 89
     .line 90
-    if-nez v0, :cond_2
+    if-nez p2, :cond_2
 
     .line 91
     .line 92
-    instance-of v0, p2, Ljava/util/concurrent/CancellationException;
+    instance-of p2, p0, Ljava/util/concurrent/CancellationException;
 
     .line 93
     .line 94
-    if-nez v0, :cond_2
+    if-nez p2, :cond_2
 
     .line 95
     .line 96
@@ -252,7 +252,7 @@
 
     .line 97
     :cond_2
-    throw p2
+    throw p0
 
     .line 98
     :cond_3
@@ -283,7 +283,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->S:Z
+    iget-boolean v0, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->e0:Z
 
     .line 2
     .line 3
@@ -298,11 +298,11 @@
     const/4 v0, 0x0
 
     .line 8
-    iput-boolean v0, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->S:Z
+    iput-boolean v0, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->e0:Z
 
     .line 9
     .line 10
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->Q:Landroid/widget/AdapterView$OnItemSelectedListener;
+    iget-object v0, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->c0:Landroid/widget/AdapterView$OnItemSelectedListener;
 
     .line 11
     .line 12
@@ -316,7 +316,7 @@
     .line 16
     .line 17
     :cond_0
-    invoke-super {p0, p1}, Landroid/widget/Spinner;->onWindowFocusChanged(Z)V
+    invoke-super {p0, p1}, Landroid/view/View;->onWindowFocusChanged(Z)V
 
     .line 18
     .line 19
@@ -331,11 +331,11 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->S:Z
+    iput-boolean v0, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->e0:Z
 
     .line 3
     .line 4
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->Q:Landroid/widget/AdapterView$OnItemSelectedListener;
+    iget-object v1, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->c0:Landroid/widget/AdapterView$OnItemSelectedListener;
 
     .line 5
     .line 6
@@ -370,59 +370,66 @@
     .line 19
     .line 20
     .line 21
-    :cond_0
-    iget-object v7, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->R:Landroid/widget/AdapterView$OnItemSelectedListener;
+    goto :goto_0
 
     .line 22
+    :cond_0
+    move-object v2, p0
+
     .line 23
-    if-eqz v7, :cond_1
+    :goto_0
+    iget-object v7, v2, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->d0:Landroid/widget/AdapterView$OnItemSelectedListener;
 
     .line 24
     .line 25
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getSelectedView()Landroid/view/View;
+    if-eqz v7, :cond_1
 
     .line 26
     .line 27
+    invoke-virtual {v2}, Landroid/widget/AdapterView;->getSelectedView()Landroid/view/View;
+
     .line 28
+    .line 29
+    .line 30
     move-result-object v9
 
-    .line 29
+    .line 31
     const/4 v10, -0x1
 
-    .line 30
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getSelectedItemId()J
-
-    .line 31
     .line 32
+    invoke-virtual {v2}, Landroid/widget/AdapterView;->getSelectedItemId()J
+
     .line 33
+    .line 34
+    .line 35
     move-result-wide v11
 
-    .line 34
-    move-object v8, p0
+    .line 36
+    move-object v8, v2
 
-    .line 35
+    .line 37
     invoke-interface/range {v7 .. v12}, Landroid/widget/AdapterView$OnItemSelectedListener;->onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
 
-    .line 36
-    .line 37
     .line 38
-    :cond_1
-    invoke-super {p0}, Landroid/widget/Spinner;->performClick()Z
-
     .line 39
     .line 40
-    .line 41
-    move-result v0
+    :cond_1
+    invoke-super {v2}, Landroid/widget/Spinner;->performClick()Z
 
+    .line 41
     .line 42
-    return v0
+    .line 43
+    move-result p0
+
+    .line 44
+    return p0
 .end method
 
 .method public setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->Q:Landroid/widget/AdapterView$OnItemSelectedListener;
+    iput-object p1, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->c0:Landroid/widget/AdapterView$OnItemSelectedListener;
 
     .line 2
     .line 3
@@ -433,7 +440,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->R:Landroid/widget/AdapterView$OnItemSelectedListener;
+    iput-object p1, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->d0:Landroid/widget/AdapterView$OnItemSelectedListener;
 
     .line 2
     .line 3
@@ -444,7 +451,7 @@
     .locals 7
 
     .line 1
-    invoke-super {p0, p1}, Landroid/widget/Spinner;->setSelection(I)V
+    invoke-super {p0, p1}, Landroid/widget/AdapterView;->setSelection(I)V
 
     .line 2
     .line 3
@@ -461,7 +468,7 @@
 
     .line 9
     .line 10
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->Q:Landroid/widget/AdapterView$OnItemSelectedListener;
+    iget-object v1, p0, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->c0:Landroid/widget/AdapterView$OnItemSelectedListener;
 
     .line 11
     .line 12

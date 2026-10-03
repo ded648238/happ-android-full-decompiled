@@ -1,12 +1,12 @@
 .class public final Lsu/happ/proxyutility/dto/VmessQRCode;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\u0008E\u0008\u0087\u0008\u0018\u00002\u00020\u0001R\"\u0010\u0003\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008R\"\u0010\t\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\t\u0010\u0004\u001a\u0004\u0008\n\u0010\u0006\"\u0004\u0008\u000b\u0010\u0008R\"\u0010\u000c\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000c\u0010\u0004\u001a\u0004\u0008\r\u0010\u0006\"\u0004\u0008\u000e\u0010\u0008R\"\u0010\u000f\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000f\u0010\u0004\u001a\u0004\u0008\u0010\u0010\u0006\"\u0004\u0008\u0011\u0010\u0008R\"\u0010\u0012\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0012\u0010\u0004\u001a\u0004\u0008\u0013\u0010\u0006\"\u0004\u0008\u0014\u0010\u0008R\"\u0010\u0015\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0015\u0010\u0004\u001a\u0004\u0008\u0016\u0010\u0006\"\u0004\u0008\u0003\u0010\u0008R\"\u0010\u0017\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0017\u0010\u0004\u001a\u0004\u0008\u0018\u0010\u0006\"\u0004\u0008\u0019\u0010\u0008R\"\u0010\u001a\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001a\u0010\u0004\u001a\u0004\u0008\u001b\u0010\u0006\"\u0004\u0008\u001c\u0010\u0008R\"\u0010\u001d\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001d\u0010\u0004\u001a\u0004\u0008\u001e\u0010\u0006\"\u0004\u0008\u001f\u0010\u0008R\"\u0010 \u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008 \u0010\u0004\u001a\u0004\u0008!\u0010\u0006\"\u0004\u0008\"\u0010\u0008R\"\u0010#\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008#\u0010\u0004\u001a\u0004\u0008$\u0010\u0006\"\u0004\u0008%\u0010\u0008R\"\u0010&\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008&\u0010\u0004\u001a\u0004\u0008\'\u0010\u0006\"\u0004\u0008(\u0010\u0008R\"\u0010)\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008)\u0010\u0004\u001a\u0004\u0008*\u0010\u0006\"\u0004\u0008+\u0010\u0008R\"\u0010,\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008,\u0010\u0004\u001a\u0004\u0008-\u0010\u0006\"\u0004\u0008.\u0010\u0008R\"\u0010/\u001a\u00020\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008/\u0010\u0004\u001a\u0004\u00080\u0010\u0006\"\u0004\u00081\u0010\u0008R$\u00102\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u00082\u0010\u0004\u001a\u0004\u00083\u0010\u0006\"\u0004\u00084\u0010\u0008R$\u00105\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u00085\u0010\u0004\u001a\u0004\u00086\u0010\u0006\"\u0004\u00087\u0010\u0008R$\u00108\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u00088\u0010\u0004\u001a\u0004\u00089\u0010\u0006\"\u0004\u0008:\u0010\u0008R$\u0010;\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008;\u0010\u0004\u001a\u0004\u0008<\u0010\u0006\"\u0004\u0008=\u0010\u0008R$\u0010>\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008>\u0010\u0004\u001a\u0004\u0008?\u0010\u0006\"\u0004\u0008@\u0010\u0008R$\u0010A\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008A\u0010\u0004\u001a\u0004\u0008B\u0010\u0006\"\u0004\u0008C\u0010\u0008R$\u0010D\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008D\u0010\u0004\u001a\u0004\u0008E\u0010\u0006\"\u0004\u0008F\u0010\u0008\u00a8\u0006G"
+        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\u0008H\u0008\u0087\u0008\u0018\u00002\u00020\u0001R\"\u0010\u0003\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008R\"\u0010\t\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\t\u0010\u0004\u001a\u0004\u0008\n\u0010\u0006\"\u0004\u0008\u000b\u0010\u0008R\"\u0010\u000c\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000c\u0010\u0004\u001a\u0004\u0008\r\u0010\u0006\"\u0004\u0008\u000e\u0010\u0008R\"\u0010\u000f\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000f\u0010\u0004\u001a\u0004\u0008\u0010\u0010\u0006\"\u0004\u0008\u0011\u0010\u0008R\"\u0010\u0012\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0012\u0010\u0004\u001a\u0004\u0008\u0013\u0010\u0006\"\u0004\u0008\u0014\u0010\u0008R\"\u0010\u0015\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0015\u0010\u0004\u001a\u0004\u0008\u0016\u0010\u0006\"\u0004\u0008\u0017\u0010\u0008R\"\u0010\u0018\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0018\u0010\u0004\u001a\u0004\u0008\u0019\u0010\u0006\"\u0004\u0008\u001a\u0010\u0008R\"\u0010\u001b\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001b\u0010\u0004\u001a\u0004\u0008\u001c\u0010\u0006\"\u0004\u0008\u001d\u0010\u0008R\"\u0010\u001e\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001e\u0010\u0004\u001a\u0004\u0008\u001f\u0010\u0006\"\u0004\u0008 \u0010\u0008R\"\u0010!\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008!\u0010\u0004\u001a\u0004\u0008\"\u0010\u0006\"\u0004\u0008#\u0010\u0008R\"\u0010$\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008$\u0010\u0004\u001a\u0004\u0008%\u0010\u0006\"\u0004\u0008&\u0010\u0008R\"\u0010\'\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\'\u0010\u0004\u001a\u0004\u0008(\u0010\u0006\"\u0004\u0008)\u0010\u0008R\"\u0010*\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008*\u0010\u0004\u001a\u0004\u0008+\u0010\u0006\"\u0004\u0008,\u0010\u0008R\"\u0010-\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008-\u0010\u0004\u001a\u0004\u0008.\u0010\u0006\"\u0004\u0008/\u0010\u0008R\"\u00100\u001a\u00020\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u00080\u0010\u0004\u001a\u0004\u00081\u0010\u0006\"\u0004\u00082\u0010\u0008R$\u00103\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u00083\u0010\u0004\u001a\u0004\u00084\u0010\u0006\"\u0004\u00085\u0010\u0008R$\u00106\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u00086\u0010\u0004\u001a\u0004\u00087\u0010\u0006\"\u0004\u00088\u0010\u0008R$\u00109\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u00089\u0010\u0004\u001a\u0004\u0008:\u0010\u0006\"\u0004\u0008;\u0010\u0008R$\u0010<\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008<\u0010\u0004\u001a\u0004\u0008=\u0010\u0006\"\u0004\u0008>\u0010\u0008R$\u0010?\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008?\u0010\u0004\u001a\u0004\u0008@\u0010\u0006\"\u0004\u0008\u0003\u0010\u0008R$\u0010A\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008A\u0010\u0004\u001a\u0004\u0008B\u0010\u0006\"\u0004\u0008C\u0010\u0008R$\u0010D\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008D\u0010\u0004\u001a\u0004\u0008E\u0010\u0006\"\u0004\u0008F\u0010\u0008R$\u0010G\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008G\u0010\u0004\u001a\u0004\u0008H\u0010\u0006\"\u0004\u0008I\u0010\u0008\u00a8\u0006J"
     }
     d2 = {
         "Lsu/happ/proxyutility/dto/VmessQRCode;",
@@ -16,70 +16,73 @@
         "Ljava/lang/String;",
         "getV",
         "()Ljava/lang/String;",
-        "O",
+        "P",
         "(Ljava/lang/String;)V",
         "ps",
         "n",
-        "I",
+        "J",
         "add",
         "a",
-        "t",
+        "u",
         "port",
         "m",
-        "H",
+        "I",
         "id",
         "g",
-        "B",
+        "C",
         "aid",
         "getAid",
+        "w",
         "scy",
         "o",
-        "J",
+        "K",
         "net",
         "h",
-        "C",
+        "D",
         "type",
         "s",
-        "N",
+        "O",
         "host",
         "f",
-        "A",
+        "B",
         "path",
         "j",
-        "E",
+        "F",
         "tls",
         "r",
-        "M",
+        "N",
         "sni",
         "q",
-        "L",
+        "M",
         "alpn",
         "c",
-        "w",
+        "x",
         "fp",
         "d",
-        "y",
+        "z",
         "pcs",
         "l",
-        "G",
+        "H",
         "pcn",
         "k",
-        "F",
+        "G",
+        "vcn",
+        "t",
+        "setVcn",
         "fragment",
         "e",
-        "z",
+        "A",
         "advancedFragment",
         "b",
-        "u",
         "noises",
         "i",
-        "D",
+        "E",
         "finalMask",
         "getFinalMask",
-        "x",
+        "y",
         "serverDescription",
         "p",
-        "K",
+        "L",
         "app"
     }
     k = 0x1
@@ -100,7 +103,7 @@
 .field private add:Ljava/lang/String;
 
 .field private advancedFragment:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         alternate = {
             "advancedfragment"
         }
@@ -113,13 +116,13 @@
 .field private alpn:Ljava/lang/String;
 
 .field private finalMask:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "fm"
     .end annotation
 .end field
 
 .field private fp:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         alternate = {
             "fingerprint"
         }
@@ -136,7 +139,7 @@
 .field private net:Ljava/lang/String;
 
 .field private noises:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "noises"
     .end annotation
 .end field
@@ -144,13 +147,13 @@
 .field private path:Ljava/lang/String;
 
 .field private pcn:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "pcn"
     .end annotation
 .end field
 
 .field private pcs:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "pcs"
     .end annotation
 .end field
@@ -162,7 +165,7 @@
 .field private scy:Ljava/lang/String;
 
 .field private serverDescription:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "serverDescription"
     .end annotation
 .end field
@@ -175,12 +178,18 @@
 
 .field private v:Ljava/lang/String;
 
+.field private vcn:Ljava/lang/String;
+    .annotation runtime Lpr6;
+        value = "vcn"
+    .end annotation
+.end field
+
 
 # direct methods
 .method public constructor <init>()V
     .locals 1
 
-    .line 54
+    .line 56
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lsu/happ/proxyutility/dto/VmessQRCode;-><init>(I)V
@@ -276,32 +285,47 @@
 
     .line 42
     .line 43
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->vcn:Ljava/lang/String;
 
     .line 44
     .line 45
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
 
     .line 46
     .line 47
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
 
     .line 48
     .line 49
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
 
     .line 50
     .line 51
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
 
     .line 52
     .line 53
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
+
+    .line 54
+    .line 55
     return-void
 .end method
 
 
 # virtual methods
 .method public final A(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final B(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -317,7 +341,7 @@
     return-void
 .end method
 
-.method public final B(Ljava/lang/String;)V
+.method public final C(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -328,7 +352,7 @@
     return-void
 .end method
 
-.method public final C(Ljava/lang/String;)V
+.method public final D(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -344,7 +368,7 @@
     return-void
 .end method
 
-.method public final D(Ljava/lang/String;)V
+.method public final E(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -355,7 +379,7 @@
     return-void
 .end method
 
-.method public final E(Ljava/lang/String;)V
+.method public final F(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -371,7 +395,7 @@
     return-void
 .end method
 
-.method public final F(Ljava/lang/String;)V
+.method public final G(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -382,7 +406,7 @@
     return-void
 .end method
 
-.method public final G(Ljava/lang/String;)V
+.method public final H(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -393,7 +417,7 @@
     return-void
 .end method
 
-.method public final H(Ljava/lang/String;)V
+.method public final I(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -404,7 +428,7 @@
     return-void
 .end method
 
-.method public final I(Ljava/lang/String;)V
+.method public final J(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -420,7 +444,7 @@
     return-void
 .end method
 
-.method public final J(Ljava/lang/String;)V
+.method public final K(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -431,7 +455,7 @@
     return-void
 .end method
 
-.method public final K(Ljava/lang/String;)V
+.method public final L(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -442,7 +466,7 @@
     return-void
 .end method
 
-.method public final L(Ljava/lang/String;)V
+.method public final M(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -453,7 +477,7 @@
     return-void
 .end method
 
-.method public final M(Ljava/lang/String;)V
+.method public final N(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -469,7 +493,7 @@
     return-void
 .end method
 
-.method public final N(Ljava/lang/String;)V
+.method public final O(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -485,7 +509,7 @@
     return-void
 .end method
 
-.method public final O()V
+.method public final P()V
     .locals 1
 
     .line 1
@@ -501,58 +525,58 @@
 .end method
 
 .method public final a()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->add:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->add:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final b()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final c()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->alpn:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->alpn:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final d()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fp:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fp:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final e()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -597,7 +621,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -621,7 +645,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -645,7 +669,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -669,7 +693,7 @@
 
     .line 49
     .line 50
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 51
     .line 52
@@ -693,7 +717,7 @@
 
     .line 60
     .line 61
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 62
     .line 63
@@ -717,7 +741,7 @@
 
     .line 71
     .line 72
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 73
     .line 74
@@ -741,7 +765,7 @@
 
     .line 82
     .line 83
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 84
     .line 85
@@ -765,7 +789,7 @@
 
     .line 93
     .line 94
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 95
     .line 96
@@ -789,7 +813,7 @@
 
     .line 104
     .line 105
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 106
     .line 107
@@ -813,7 +837,7 @@
 
     .line 115
     .line 116
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 117
     .line 118
@@ -837,7 +861,7 @@
 
     .line 126
     .line 127
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 128
     .line 129
@@ -861,7 +885,7 @@
 
     .line 137
     .line 138
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 139
     .line 140
@@ -885,7 +909,7 @@
 
     .line 148
     .line 149
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 150
     .line 151
@@ -909,7 +933,7 @@
 
     .line 159
     .line 160
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 161
     .line 162
@@ -933,7 +957,7 @@
 
     .line 170
     .line 171
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 172
     .line 173
@@ -957,7 +981,7 @@
 
     .line 181
     .line 182
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 183
     .line 184
@@ -981,7 +1005,7 @@
 
     .line 192
     .line 193
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 194
     .line 195
@@ -997,15 +1021,15 @@
 
     .line 200
     :cond_12
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
+    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->vcn:Ljava/lang/String;
 
     .line 201
     .line 202
-    iget-object v3, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
+    iget-object v3, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->vcn:Ljava/lang/String;
 
     .line 203
     .line 204
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 205
     .line 206
@@ -1021,15 +1045,15 @@
 
     .line 211
     :cond_13
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
+    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
 
     .line 212
     .line 213
-    iget-object v3, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
+    iget-object v3, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
 
     .line 214
     .line 215
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 216
     .line 217
@@ -1045,15 +1069,15 @@
 
     .line 222
     :cond_14
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
+    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
 
     .line 223
     .line 224
-    iget-object v3, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
+    iget-object v3, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
 
     .line 225
     .line 226
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 227
     .line 228
@@ -1069,15 +1093,15 @@
 
     .line 233
     :cond_15
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
+    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
 
     .line 234
     .line 235
-    iget-object v3, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
+    iget-object v3, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
 
     .line 236
     .line 237
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 238
     .line 239
@@ -1093,23 +1117,23 @@
 
     .line 244
     :cond_16
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
+    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
 
     .line 245
     .line 246
-    iget-object p1, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
+    iget-object v3, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
 
     .line 247
     .line 248
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 249
     .line 250
     .line 251
-    move-result p1
+    move-result v1
 
     .line 252
-    if-nez p1, :cond_17
+    if-nez v1, :cond_17
 
     .line 253
     .line 254
@@ -1117,40 +1141,64 @@
 
     .line 255
     :cond_17
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
+
+    .line 256
+    .line 257
+    iget-object p1, p1, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
+
+    .line 258
+    .line 259
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 260
+    .line 261
+    .line 262
+    move-result p0
+
+    .line 263
+    if-nez p0, :cond_18
+
+    .line 264
+    .line 265
+    return v2
+
+    .line 266
+    :cond_18
     return v0
 .end method
 
 .method public final f()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->host:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->host:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final g()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->id:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->id:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final h()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->net:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->net:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final hashCode()I
@@ -1173,524 +1221,547 @@
 
     .line 8
     .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 10
-    .line 11
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->ps:Ljava/lang/String;
 
+    .line 11
     .line 12
-    .line 13
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 13
     .line 14
     .line 15
-    .line 16
     move-result v0
 
-    .line 17
+    .line 16
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->add:Ljava/lang/String;
 
+    .line 17
     .line 18
-    .line 19
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     move-result v0
 
-    .line 23
+    .line 22
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->port:Ljava/lang/String;
 
+    .line 23
     .line 24
-    .line 25
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 25
     .line 26
     .line 27
-    .line 28
     move-result v0
 
-    .line 29
+    .line 28
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->id:Ljava/lang/String;
 
+    .line 29
     .line 30
-    .line 31
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 31
     .line 32
     .line 33
-    .line 34
     move-result v0
 
-    .line 35
+    .line 34
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->aid:Ljava/lang/String;
 
+    .line 35
     .line 36
-    .line 37
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 37
     .line 38
     .line 39
-    .line 40
     move-result v0
 
-    .line 41
+    .line 40
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->scy:Ljava/lang/String;
 
+    .line 41
     .line 42
-    .line 43
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 43
     .line 44
     .line 45
-    .line 46
     move-result v0
 
-    .line 47
+    .line 46
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->net:Ljava/lang/String;
 
+    .line 47
     .line 48
-    .line 49
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 49
     .line 50
     .line 51
-    .line 52
     move-result v0
 
-    .line 53
+    .line 52
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->type:Ljava/lang/String;
 
+    .line 53
     .line 54
-    .line 55
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 55
     .line 56
     .line 57
-    .line 58
     move-result v0
 
-    .line 59
+    .line 58
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->host:Ljava/lang/String;
 
+    .line 59
     .line 60
-    .line 61
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 61
     .line 62
     .line 63
-    .line 64
     move-result v0
 
-    .line 65
+    .line 64
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->path:Ljava/lang/String;
 
+    .line 65
     .line 66
-    .line 67
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 67
     .line 68
     .line 69
-    .line 70
     move-result v0
 
-    .line 71
+    .line 70
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->tls:Ljava/lang/String;
 
+    .line 71
     .line 72
-    .line 73
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 73
     .line 74
     .line 75
-    .line 76
     move-result v0
 
-    .line 77
+    .line 76
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->sni:Ljava/lang/String;
 
+    .line 77
     .line 78
-    .line 79
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 79
     .line 80
     .line 81
-    .line 82
     move-result v0
 
-    .line 83
+    .line 82
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->alpn:Ljava/lang/String;
 
+    .line 83
     .line 84
-    .line 85
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 85
     .line 86
     .line 87
-    .line 88
     move-result v0
 
-    .line 89
+    .line 88
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fp:Ljava/lang/String;
 
+    .line 89
     .line 90
-    .line 91
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 91
     .line 92
     .line 93
-    .line 94
     move-result v0
 
-    .line 95
+    .line 94
     iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->pcs:Ljava/lang/String;
 
+    .line 95
     .line 96
-    .line 97
     const/4 v3, 0x0
 
-    .line 98
+    .line 97
     if-nez v2, :cond_0
 
+    .line 98
     .line 99
-    .line 100
-    const/4 v2, 0x0
+    move v2, v3
 
-    .line 101
+    .line 100
     goto :goto_0
 
-    .line 102
+    .line 101
     :cond_0
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
+    .line 102
     .line 103
     .line 104
-    .line 105
     move-result v2
 
-    .line 106
+    .line 105
     :goto_0
     add-int/2addr v0, v2
 
+    .line 106
+    mul-int/2addr v0, v1
+
     .line 107
-    mul-int/lit8 v0, v0, 0x1f
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->pcn:Ljava/lang/String;
 
     .line 108
     .line 109
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->pcn:Ljava/lang/String;
+    if-nez v2, :cond_1
 
     .line 110
     .line 111
-    if-nez v2, :cond_1
+    move v2, v3
 
     .line 112
-    .line 113
-    const/4 v2, 0x0
-
-    .line 114
     goto :goto_1
 
-    .line 115
+    .line 113
     :cond_1
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
+    .line 114
+    .line 115
     .line 116
-    .line 117
-    .line 118
     move-result v2
 
-    .line 119
+    .line 117
     :goto_1
     add-int/2addr v0, v2
 
+    .line 118
+    mul-int/2addr v0, v1
+
+    .line 119
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->vcn:Ljava/lang/String;
+
     .line 120
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 121
-    .line 122
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
-
-    .line 123
-    .line 124
     if-nez v2, :cond_2
 
-    .line 125
-    .line 126
-    const/4 v2, 0x0
+    .line 122
+    .line 123
+    move v2, v3
 
-    .line 127
+    .line 124
     goto :goto_2
 
-    .line 128
+    .line 125
     :cond_2
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
-    .line 129
-    .line 130
-    .line 131
+    .line 126
+    .line 127
+    .line 128
     move-result v2
 
-    .line 132
+    .line 129
     :goto_2
     add-int/2addr v0, v2
 
+    .line 130
+    mul-int/2addr v0, v1
+
+    .line 131
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
+
+    .line 132
     .line 133
-    mul-int/lit8 v0, v0, 0x1f
+    if-nez v2, :cond_3
 
     .line 134
     .line 135
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
+    move v2, v3
 
     .line 136
-    .line 137
-    if-nez v2, :cond_3
-
-    .line 138
-    .line 139
-    const/4 v2, 0x0
-
-    .line 140
     goto :goto_3
 
-    .line 141
+    .line 137
     :cond_3
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
-    .line 142
-    .line 143
-    .line 144
+    .line 138
+    .line 139
+    .line 140
     move-result v2
 
-    .line 145
+    .line 141
     :goto_3
     add-int/2addr v0, v2
 
-    .line 146
-    mul-int/lit8 v0, v0, 0x1f
+    .line 142
+    mul-int/2addr v0, v1
 
-    .line 147
-    .line 148
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
+    .line 143
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
 
-    .line 149
-    .line 150
+    .line 144
+    .line 145
     if-nez v2, :cond_4
 
-    .line 151
-    .line 152
-    const/4 v2, 0x0
+    .line 146
+    .line 147
+    move v2, v3
 
-    .line 153
+    .line 148
     goto :goto_4
 
-    .line 154
+    .line 149
     :cond_4
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
-    .line 155
-    .line 156
-    .line 157
+    .line 150
+    .line 151
+    .line 152
     move-result v2
 
-    .line 158
+    .line 153
     :goto_4
     add-int/2addr v0, v2
 
-    .line 159
-    mul-int/lit8 v0, v0, 0x1f
+    .line 154
+    mul-int/2addr v0, v1
 
-    .line 160
-    .line 161
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
+    .line 155
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
 
-    .line 162
-    .line 163
+    .line 156
+    .line 157
     if-nez v2, :cond_5
 
-    .line 164
-    .line 165
-    const/4 v2, 0x0
+    .line 158
+    .line 159
+    move v2, v3
 
-    .line 166
+    .line 160
     goto :goto_5
 
-    .line 167
+    .line 161
     :cond_5
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
-    .line 168
-    .line 169
-    .line 170
+    .line 162
+    .line 163
+    .line 164
     move-result v2
 
-    .line 171
+    .line 165
     :goto_5
     add-int/2addr v0, v2
 
+    .line 166
+    mul-int/2addr v0, v1
+
+    .line 167
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
+
+    .line 168
+    .line 169
+    if-nez v2, :cond_6
+
+    .line 170
+    .line 171
+    move v2, v3
+
     .line 172
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 173
-    .line 174
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
-
-    .line 175
-    .line 176
-    if-nez v1, :cond_6
-
-    .line 177
-    .line 178
     goto :goto_6
 
-    .line 179
+    .line 173
     :cond_6
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 174
+    .line 175
+    .line 176
+    move-result v2
+
+    .line 177
+    :goto_6
+    add-int/2addr v0, v2
+
+    .line 178
+    mul-int/2addr v0, v1
+
+    .line 179
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
 
     .line 180
     .line 181
-    .line 182
-    move-result v3
+    if-nez p0, :cond_7
 
+    .line 182
     .line 183
-    :goto_6
-    add-int/2addr v0, v3
+    goto :goto_7
 
     .line 184
+    :cond_7
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
+
+    .line 185
+    .line 186
+    .line 187
+    move-result v3
+
+    .line 188
+    :goto_7
+    add-int/2addr v0, v3
+
+    .line 189
     return v0
 .end method
 
 .method public final i()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final j()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->path:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final k()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->pcn:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final l()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->pcs:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final m()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->port:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final n()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->ps:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final o()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->scy:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final p()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final q()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->sni:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final r()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->tls:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final s()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->type:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final t(Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->add:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-void
+    return-object p0
+.end method
+
+.method public final j()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->path:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final k()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->pcn:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final l()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->pcs:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final m()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->port:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final n()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->ps:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final o()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->scy:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final p()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final q()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->sni:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final r()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->tls:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final s()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->type:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final t()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->vcn:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -1781,7 +1852,7 @@
 
     .line 42
     .line 43
-    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
+    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->vcn:Ljava/lang/String;
 
     .line 44
     .line 45
@@ -1789,7 +1860,7 @@
 
     .line 46
     .line 47
-    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
+    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
 
     .line 48
     .line 49
@@ -1797,7 +1868,7 @@
 
     .line 50
     .line 51
-    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
+    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->advancedFragment:Ljava/lang/String;
 
     .line 52
     .line 53
@@ -1805,7 +1876,7 @@
 
     .line 54
     .line 55
-    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
+    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->noises:Ljava/lang/String;
 
     .line 56
     .line 57
@@ -1813,206 +1884,208 @@
 
     .line 58
     .line 59
-    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
+    iget-object v15, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->finalMask:Ljava/lang/String;
 
     .line 60
     .line 61
-    const-string v0, ", ps="
+    iget-object v0, v0, Lsu/happ/proxyutility/dto/VmessQRCode;->serverDescription:Ljava/lang/String;
 
     .line 62
     .line 63
-    move-object/from16 v23, v15
+    move-object/from16 p0, v0
 
     .line 64
     .line 65
-    const-string v15, ", add="
+    const-string v0, ", ps="
 
     .line 66
     .line 67
-    move-object/from16 v24, v13
+    move-object/from16 v23, v15
 
     .line 68
     .line 69
-    const-string v13, "VmessQRCode(v="
+    const-string v15, ", add="
 
     .line 70
     .line 71
-    invoke-static {v13, v1, v0, v2, v15}, Lmi2;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v24, v13
 
     .line 72
     .line 73
-    .line 74
-    move-result-object v0
+    const-string v13, "VmessQRCode(v="
 
+    .line 74
     .line 75
-    const-string v1, ", port="
+    invoke-static {v13, v1, v0, v2, v15}, Lw31;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 76
     .line 77
-    const-string v2, ", id="
-
     .line 78
+    move-result-object v0
+
     .line 79
-    invoke-static {v0, v3, v1, v4, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    const-string v1, ", port="
 
     .line 80
     .line 81
+    const-string v2, ", id="
+
     .line 82
-    const-string v1, ", aid="
-
     .line 83
-    .line 84
-    const-string v2, ", scy="
+    invoke-static {v0, v3, v1, v4, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 84
     .line 85
     .line 86
-    invoke-static {v0, v5, v1, v6, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    const-string v1, ", aid="
 
     .line 87
     .line 88
+    const-string v2, ", scy="
+
     .line 89
-    const-string v1, ", net="
-
     .line 90
-    .line 91
-    const-string v2, ", type="
+    invoke-static {v0, v5, v1, v6, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 91
     .line 92
     .line 93
-    invoke-static {v0, v7, v1, v8, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    const-string v1, ", net="
 
     .line 94
     .line 95
+    const-string v2, ", type="
+
     .line 96
-    const-string v1, ", host="
-
     .line 97
-    .line 98
-    const-string v2, ", path="
+    invoke-static {v0, v7, v1, v8, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 98
     .line 99
     .line 100
-    invoke-static {v0, v9, v1, v10, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    const-string v1, ", host="
 
     .line 101
     .line 102
+    const-string v2, ", path="
+
     .line 103
-    const-string v1, ", tls="
-
     .line 104
-    .line 105
-    const-string v2, ", sni="
+    invoke-static {v0, v9, v1, v10, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 105
     .line 106
     .line 107
-    invoke-static {v0, v11, v1, v12, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    const-string v1, ", tls="
 
     .line 108
     .line 109
+    const-string v2, ", sni="
+
     .line 110
-    const-string v1, ", alpn="
-
     .line 111
-    .line 112
-    const-string v2, ", fp="
+    invoke-static {v0, v11, v1, v12, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 112
     .line 113
     .line 114
-    move-object/from16 v3, v24
+    const-string v1, ", alpn="
 
     .line 115
     .line 116
-    invoke-static {v0, v3, v1, v14, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    const-string v2, ", fp="
 
     .line 117
     .line 118
+    move-object/from16 v3, v24
+
     .line 119
-    const-string v1, ", pcs="
-
     .line 120
-    .line 121
-    const-string v2, ", pcn="
+    invoke-static {v0, v3, v1, v14, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 121
     .line 122
     .line 123
-    move-object/from16 v3, v16
+    const-string v1, ", pcs="
 
     .line 124
     .line 125
-    move-object/from16 v4, v17
+    const-string v2, ", pcn="
 
     .line 126
     .line 127
-    invoke-static {v0, v3, v1, v4, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    move-object/from16 v3, v16
 
     .line 128
     .line 129
+    move-object/from16 v4, v17
+
     .line 130
-    const-string v1, ", fragment="
-
     .line 131
-    .line 132
-    const-string v2, ", advancedFragment="
+    invoke-static {v0, v3, v1, v4, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 132
     .line 133
     .line 134
-    move-object/from16 v3, v18
+    const-string v1, ", vcn="
 
     .line 135
     .line 136
-    move-object/from16 v4, v19
+    const-string v2, ", fragment="
 
     .line 137
     .line 138
-    invoke-static {v0, v3, v1, v4, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    move-object/from16 v3, v18
 
     .line 139
     .line 140
+    move-object/from16 v4, v19
+
     .line 141
-    const-string v1, ", noises="
-
     .line 142
-    .line 143
-    const-string v2, ", finalMask="
+    invoke-static {v0, v3, v1, v4, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 143
     .line 144
     .line 145
-    move-object/from16 v3, v20
+    const-string v1, ", advancedFragment="
 
     .line 146
     .line 147
-    move-object/from16 v4, v21
+    const-string v2, ", noises="
 
     .line 148
     .line 149
-    invoke-static {v0, v3, v1, v4, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    move-object/from16 v3, v20
 
     .line 150
     .line 151
+    move-object/from16 v4, v21
+
     .line 152
-    move-object/from16 v1, v22
-
     .line 153
-    .line 154
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v3, v1, v4, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 154
     .line 155
     .line 156
+    const-string v1, ", finalMask="
+
     .line 157
-    const-string v1, ", serverDescription="
-
     .line 158
-    .line 159
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ", serverDescription="
 
+    .line 159
     .line 160
+    move-object/from16 v3, v22
+
     .line 161
     .line 162
-    move-object/from16 v1, v23
+    move-object/from16 v4, v23
 
     .line 163
     .line 164
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v3, v1, v4, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 165
     .line 166
@@ -2021,23 +2094,33 @@
 
     .line 168
     .line 169
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v2, p0
 
     .line 170
     .line 171
-    .line 172
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v0, v2, v1}, Leh0;->r(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 172
     .line 173
     .line 174
-    .line 175
     move-result-object v0
 
-    .line 176
+    .line 175
     return-object v0
 .end method
 
 .method public final u(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->add:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final v(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -2048,7 +2131,7 @@
     return-void
 .end method
 
-.method public final v()V
+.method public final w()V
     .locals 1
 
     .line 1
@@ -2063,7 +2146,7 @@
     return-void
 .end method
 
-.method public final w(Ljava/lang/String;)V
+.method public final x(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -2074,7 +2157,7 @@
     return-void
 .end method
 
-.method public final x(Ljava/lang/String;)V
+.method public final y(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -2085,22 +2168,11 @@
     return-void
 .end method
 
-.method public final y(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fp:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
 .method public final z(Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fragment:Ljava/lang/String;
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/VmessQRCode;->fp:Ljava/lang/String;
 
     .line 2
     .line 3

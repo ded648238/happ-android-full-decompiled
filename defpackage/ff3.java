@@ -1,16 +1,15 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class ff3 {
-    public static final /* synthetic */ int[] a;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
-    static {
-        int[] iArr = new int[cf3.values().length];
-        try {
-            iArr[4] = 1;
-        } catch (NoSuchFieldError unused) {
-        }
-        a = iArr;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Retention(RetentionPolicy.RUNTIME)
+/* loaded from: classes.dex */
+public @interface ff3 {
+    df3[] attrs() default {};
+
+    boolean prepend() default false;
+
+    ef3[] props() default {};
 }

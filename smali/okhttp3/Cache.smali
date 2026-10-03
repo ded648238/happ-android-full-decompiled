@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Cache;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -45,7 +45,7 @@
         "put$okhttp",
         "(Lokhttp3/Response;)Lokhttp3/internal/cache/CacheRequest;",
         "put",
-        "Lbh7;",
+        "Lr98;",
         "remove$okhttp",
         "(Lokhttp3/Request;)V",
         "remove",
@@ -154,7 +154,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/Cache$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/Cache$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -278,28 +278,28 @@
 
 # virtual methods
 .method public final -deprecated_directory()Ljava/io/File;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->getDirectory()Ljava/io/File;
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->getDirectory()Ljava/io/File;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public close()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -307,11 +307,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->close()V
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->close()V
 
     .line 4
     .line 5
@@ -320,7 +320,7 @@
 .end method
 
 .method public final delete()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -328,11 +328,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->delete()V
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->delete()V
 
     .line 4
     .line 5
@@ -341,26 +341,26 @@
 .end method
 
 .method public final directory()Ljava/io/File;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->getDirectory()Ljava/io/File;
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->getDirectory()Ljava/io/File;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final evictAll()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -368,11 +368,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->evictAll()V
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->evictAll()V
 
     .line 4
     .line 5
@@ -381,7 +381,7 @@
 .end method
 
 .method public flush()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -389,11 +389,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->flush()V
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->flush()V
 
     .line 4
     .line 5
@@ -402,7 +402,7 @@
 .end method
 
 .method public final get$okhttp(Lokhttp3/Request;)Lokhttp3/Response;
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -434,21 +434,21 @@
 
     .line 15
     :try_start_0
-    iget-object v2, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 16
     .line 17
-    invoke-virtual {v2, v0}, Lokhttp3/internal/cache/DiskLruCache;->get(Ljava/lang/String;)Lokhttp3/internal/cache/DiskLruCache$Snapshot;
+    invoke-virtual {p0, v0}, Lokhttp3/internal/cache/DiskLruCache;->get(Ljava/lang/String;)Lokhttp3/internal/cache/DiskLruCache$Snapshot;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v0
+    move-result-object p0
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 21
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 22
     .line 23
@@ -457,37 +457,37 @@
     .line 24
     :cond_0
     :try_start_1
-    new-instance v2, Lokhttp3/Cache$Entry;
+    new-instance v0, Lokhttp3/Cache$Entry;
 
     .line 25
     .line 26
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 27
-    invoke-virtual {v0, v3}, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->getSource(I)Lle6;
+    invoke-virtual {p0, v2}, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->getSource(I)Ld27;
 
     .line 28
     .line 29
     .line 30
-    move-result-object v3
+    move-result-object v2
 
     .line 31
-    invoke-direct {v2, v3}, Lokhttp3/Cache$Entry;-><init>(Lle6;)V
+    invoke-direct {v0, v2}, Lokhttp3/Cache$Entry;-><init>(Ld27;)V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
     .line 32
     .line 33
     .line 34
-    invoke-virtual {v2, v0}, Lokhttp3/Cache$Entry;->response(Lokhttp3/internal/cache/DiskLruCache$Snapshot;)Lokhttp3/Response;
+    invoke-virtual {v0, p0}, Lokhttp3/Cache$Entry;->response(Lokhttp3/internal/cache/DiskLruCache$Snapshot;)Lokhttp3/Response;
 
     .line 35
     .line 36
     .line 37
-    move-result-object v0
+    move-result-object p0
 
     .line 38
-    invoke-virtual {v2, p1, v0}, Lokhttp3/Cache$Entry;->matches(Lokhttp3/Request;Lokhttp3/Response;)Z
+    invoke-virtual {v0, p1, p0}, Lokhttp3/Cache$Entry;->matches(Lokhttp3/Request;Lokhttp3/Response;)Z
 
     .line 39
     .line 40
@@ -499,19 +499,19 @@
 
     .line 43
     .line 44
-    invoke-virtual {v0}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
+    invoke-virtual {p0}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
     .line 45
     .line 46
     .line 47
-    move-result-object p1
+    move-result-object p0
 
     .line 48
-    if-eqz p1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 49
     .line 50
-    invoke-static {p1}, Lokhttp3/internal/Util;->closeQuietly(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lokhttp3/internal/Util;->closeQuietly(Ljava/io/Closeable;)V
 
     .line 51
     .line 52
@@ -521,11 +521,11 @@
 
     .line 54
     :cond_2
-    return-object v0
+    return-object p0
 
     .line 55
     :catch_0
-    invoke-static {v0}, Lokhttp3/internal/Util;->closeQuietly(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lokhttp3/internal/Util;->closeQuietly(Ljava/io/Closeable;)V
 
     .line 56
     .line 57
@@ -535,36 +535,36 @@
 .end method
 
 .method public final getCache$okhttp()Lokhttp3/internal/cache/DiskLruCache;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getWriteAbortCount$okhttp()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/Cache;->writeAbortCount:I
+    iget p0, p0, Lokhttp3/Cache;->writeAbortCount:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getWriteSuccessCount$okhttp()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/Cache;->writeSuccessCount:I
+    iget p0, p0, Lokhttp3/Cache;->writeSuccessCount:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final declared-synchronized hitCount()I
@@ -601,7 +601,7 @@
 .end method
 
 .method public final initialize()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -609,11 +609,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->initialize()V
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->initialize()V
 
     .line 4
     .line 5
@@ -622,33 +622,33 @@
 .end method
 
 .method public final isClosed()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->isClosed()Z
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->isClosed()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final maxSize()J
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->getMaxSize()J
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->getMaxSize()J
 
     .line 4
     .line 5
@@ -777,7 +777,7 @@
 
     .line 38
     .line 39
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -913,7 +913,7 @@
 .end method
 
 .method public final remove$okhttp(Lokhttp3/Request;)V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -926,11 +926,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 5
     .line 6
-    sget-object v1, Lokhttp3/Cache;->Companion:Lokhttp3/Cache$Companion;
+    sget-object v0, Lokhttp3/Cache;->Companion:Lokhttp3/Cache$Companion;
 
     .line 7
     .line 8
@@ -942,7 +942,7 @@
     move-result-object p1
 
     .line 12
-    invoke-virtual {v1, p1}, Lokhttp3/Cache$Companion;->key(Lokhttp3/HttpUrl;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lokhttp3/Cache$Companion;->key(Lokhttp3/HttpUrl;)Ljava/lang/String;
 
     .line 13
     .line 14
@@ -950,7 +950,7 @@
     move-result-object p1
 
     .line 16
-    invoke-virtual {v0, p1}, Lokhttp3/internal/cache/DiskLruCache;->remove(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lokhttp3/internal/cache/DiskLruCache;->remove(Ljava/lang/String;)Z
 
     .line 17
     .line 18
@@ -1022,11 +1022,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
+    iget-object p0, p0, Lokhttp3/Cache;->cache:Lokhttp3/internal/cache/DiskLruCache;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache;->size()J
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache;->size()J
 
     .line 4
     .line 5

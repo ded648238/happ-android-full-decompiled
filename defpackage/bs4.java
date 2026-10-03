@@ -1,14 +1,43 @@
 package defpackage;
 
-import su.happ.proxyutility.dto.AppInfo;
+import java.util.Comparator;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class bs4 extends i35 {
-    public static final bs4 Q = new bs4(AppInfo.class, "packageName", "getPackageName()Ljava/lang/String;", 0);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class bs4 implements Comparator {
+    public static final bs4 Y = new bs4(0);
+    public static final bs4 Z = new bs4(1);
+    public final /* synthetic */ int X;
 
-    @Override // defpackage.i35, defpackage.n83
-    public final Object get(Object obj) {
-        return ((AppInfo) obj).d();
+    public /* synthetic */ bs4(int i) {
+        this.X = i;
+    }
+
+    @Override // java.util.Comparator
+    public final int compare(Object obj, Object obj2) {
+        switch (this.X) {
+            case 0:
+                Comparable comparable = (Comparable) obj;
+                Comparable comparable2 = (Comparable) obj2;
+                comparable.getClass();
+                comparable2.getClass();
+                return comparable.compareTo(comparable2);
+            default:
+                Comparable comparable3 = (Comparable) obj;
+                Comparable comparable4 = (Comparable) obj2;
+                comparable3.getClass();
+                comparable4.getClass();
+                return comparable4.compareTo(comparable3);
+        }
+    }
+
+    @Override // java.util.Comparator
+    public final Comparator reversed() {
+        switch (this.X) {
+            case 0:
+                return Z;
+            default:
+                return Y;
+        }
     }
 }

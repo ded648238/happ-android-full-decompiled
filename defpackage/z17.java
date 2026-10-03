@@ -1,59 +1,50 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class z17 {
-    public static final long b = a27.a(0, 0);
-    public static final /* synthetic */ int c = 0;
-    public final long a;
+import android.os.Build;
+import android.view.View;
+import android.view.WindowInsets;
+import android.view.WindowInsetsController;
+import android.view.inputmethod.InputMethodManager;
+import java.util.concurrent.atomic.AtomicBoolean;
 
-    public /* synthetic */ z17(long j) {
-        this.a = j;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class z17 extends mh5 {
+    public View Z;
 
-    public static final boolean a(long j, long j2) {
-        return j == j2;
-    }
-
-    public static final boolean b(long j) {
-        return ((int) (j >> 32)) == ((int) (j & 4294967295L));
-    }
-
-    public static final int c(long j) {
-        return Math.max((int) (j >> 32), (int) (j & 4294967295L));
-    }
-
-    public static final int d(long j) {
-        return Math.min((int) (j >> 32), (int) (j & 4294967295L));
-    }
-
-    public static final boolean e(long j) {
-        return ((int) (j >> 32)) > ((int) (j & 4294967295L));
-    }
-
-    public static int f(long j) {
-        return (int) (j ^ (j >>> 32));
-    }
-
-    public static String g(long j) {
-        StringBuilder sb = new StringBuilder("TextRange(");
-        sb.append((int) (j >> 32));
-        sb.append(", ");
-        return ea0.s(sb, (int) (j & 4294967295L), ')');
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj instanceof z17) {
-            return this.a == ((z17) obj).a;
+    @Override // defpackage.mh5
+    public final void F() {
+        View view = this.Z;
+        WindowInsetsController windowInsetsController = view != null ? view.getWindowInsetsController() : null;
+        if (windowInsetsController == null) {
+            super.F();
+            return;
         }
-        return false;
+        final AtomicBoolean atomicBoolean = new AtomicBoolean(false);
+        WindowInsetsController.OnControllableInsetsChangedListener onControllableInsetsChangedListener = new WindowInsetsController.OnControllableInsetsChangedListener() { // from class: y17
+            @Override // android.view.WindowInsetsController.OnControllableInsetsChangedListener
+            public final void onControllableInsetsChanged(WindowInsetsController windowInsetsController2, int i) {
+                atomicBoolean.set((i & 8) != 0);
+            }
+        };
+        windowInsetsController.addOnControllableInsetsChangedListener(onControllableInsetsChangedListener);
+        if (!atomicBoolean.get() && view != null) {
+            ((InputMethodManager) view.getContext().getSystemService("input_method")).hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
+        windowInsetsController.removeOnControllableInsetsChangedListener(onControllableInsetsChangedListener);
+        windowInsetsController.hide(WindowInsets.Type.ime());
     }
 
-    public final int hashCode() {
-        return f(this.a);
-    }
-
-    public final String toString() {
-        return g(this.a);
+    @Override // defpackage.mh5
+    public final void L() {
+        View view = this.Z;
+        if (view != null && Build.VERSION.SDK_INT < 33) {
+            ((InputMethodManager) view.getContext().getSystemService("input_method")).isActive();
+        }
+        WindowInsetsController windowInsetsController = view != null ? view.getWindowInsetsController() : null;
+        if (windowInsetsController != null) {
+            windowInsetsController.show(WindowInsets.Type.ime());
+        }
+        super.L();
     }
 }

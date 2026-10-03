@@ -1,32 +1,46 @@
-.class public abstract Lek3;
+.class public interface abstract annotation Lek3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
 
 
-# static fields
-.field public static final a:Ljava/util/concurrent/atomic/AtomicBoolean;
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation Lek3;
+        defaultImpl = Lek3;
+        include = .enum Lak3;->X:Lak3;
+        property = ""
+        requireTypeIdForSubtypes = .enum Lp25;->Y:Lp25;
+        visible = false
+        writeTypeIdForDefaultImpl = .enum Lp25;->Y:Lp25;
+    .end subannotation
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# virtual methods
+.method public abstract defaultImpl()Ljava/lang/Class;
+.end method
 
-    .line 1
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+.method public abstract include()Lak3;
+.end method
 
-    .line 2
-    .line 3
-    const/4 v1, 0x0
+.method public abstract property()Ljava/lang/String;
+.end method
 
-    .line 4
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+.method public abstract requireTypeIdForSubtypes()Lp25;
+.end method
 
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, Lek3;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+.method public abstract use()Lbk3;
+.end method
 
-    .line 8
-    .line 9
-    return-void
+.method public abstract visible()Z
+.end method
+
+.method public abstract writeTypeIdForDefaultImpl()Lp25;
 .end method

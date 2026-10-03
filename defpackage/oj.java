@@ -1,23 +1,34 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum oj {
-    NO_ARGUMENTS(3),
-    /* JADX INFO: Fake field, exist only in values array */
-    UNLESS_EMPTY(2),
-    /* JADX INFO: Fake field, exist only in values array */
-    ALWAYS_PARENTHESIZED(true, true);
+import android.content.Context;
+import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.Choreographer;
+import java.util.Random;
+import su.happ.proxyutility.dto.XRayConfig;
 
-    public final boolean Q;
-    public final boolean R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class oj implements Choreographer.FrameCallback {
+    public final /* synthetic */ int X = 1;
+    public final /* synthetic */ Object Y;
 
-    /* synthetic */ oj(int i) {
-        this((i & 1) == 0, false);
+    @Override // android.view.Choreographer.FrameCallback
+    public final void doFrame(long j) {
+        int i = this.X;
+        Object obj = this.Y;
+        switch (i) {
+            case 0:
+                ((Runnable) obj).run();
+                break;
+            default:
+                (Build.VERSION.SDK_INT >= 28 ? jm.h(Looper.getMainLooper()) : new Handler(Looper.getMainLooper())).postDelayed(new po((Context) obj, 1), new Random().nextInt(Math.max(XRayConfig.OutboundBean.StreamSettingsBean.KcpSettingsBean.ttiMax, 1)) + 5000);
+                break;
+        }
     }
 
-    oj(boolean z, boolean z2) {
-        this.Q = z;
-        this.R = z2;
+    public /* synthetic */ oj(Runnable runnable) {
+        this.Y = runnable;
     }
 }

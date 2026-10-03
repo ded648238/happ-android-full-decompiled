@@ -1,55 +1,87 @@
 package defpackage;
 
-import android.view.FrameMetrics;
-import android.view.Window;
-import org.conscrypt.PSKKeyManager;
+import android.content.Context;
+import android.os.Build;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import libxray.Libxray;
+import libxray.XRayPoint;
+import su.happ.proxyutility.HappApplication;
+import su.happ.proxyutility.dto.XRayConfig;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class t62 implements Window.OnFrameMetricsAvailableListener {
-    public final /* synthetic */ u62 a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class t62 extends ll7 implements xi2 {
+    public final /* synthetic */ vy5 d0;
+    public final /* synthetic */ Map e0;
+    public final /* synthetic */ HashMap f0;
 
-    public t62(u62 u62Var) {
-        this.a = u62Var;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public t62(vy5 vy5Var, Map map, HashMap hashMap, b31 b31Var) {
+        super(2, b31Var);
+        this.d0 = vy5Var;
+        this.e0 = map;
+        this.f0 = hashMap;
     }
 
-    @Override // android.view.Window.OnFrameMetricsAvailableListener
-    public final void onFrameMetricsAvailable(Window window, FrameMetrics frameMetrics, int i) {
-        u62 u62Var = this.a;
-        if ((u62Var.R & 1) != 0) {
-            u62.r(u62Var.S[0], frameMetrics.getMetric(8));
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        return ((t62) n((b31) obj2, (i41) obj)).q(r98.a);
+    }
+
+    @Override // defpackage.g00
+    public final b31 n(b31 b31Var, Object obj) {
+        return new t62(this.d0, this.e0, this.f0, b31Var);
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x0082, code lost:
+    
+        if (((libxray.XRayPoint) r0.X).getIsRunning() == false) goto L23;
+     */
+    @Override // defpackage.g00
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Object q(Object obj) {
+        q48.f0(obj);
+        boolean z = false;
+        XRayPoint newXRayPoint = Libxray.newXRayPoint(new p77(21), Build.VERSION.SDK_INT >= 25);
+        vy5 vy5Var = this.d0;
+        vy5Var.X = newXRayPoint;
+        mm7 mm7Var = rs8.a;
+        HappApplication happApplication = HappApplication.I0;
+        Context applicationContext = h31.V().getApplicationContext();
+        applicationContext.getClass();
+        Map map = this.e0;
+        String h = XRayConfig.OutboundBean.StreamSettingsBean.TcpMasksBean.TcpMaskSettingBean.h(map);
+        if (h == null) {
+            h = "tlshello";
         }
-        u62 u62Var2 = this.a;
-        if ((u62Var2.R & 2) != 0) {
-            u62.r(u62Var2.S[1], frameMetrics.getMetric(1));
+        String e = XRayConfig.OutboundBean.StreamSettingsBean.TcpMasksBean.TcpMaskSettingBean.e(map);
+        if (e == null) {
+            e = "50-100";
         }
-        u62 u62Var3 = this.a;
-        if ((u62Var3.R & 4) != 0) {
-            u62.r(u62Var3.S[2], frameMetrics.getMetric(3));
+        String d = XRayConfig.OutboundBean.StreamSettingsBean.TcpMasksBean.TcpMaskSettingBean.d(map);
+        if (d == null) {
+            d = "10-20";
         }
-        u62 u62Var4 = this.a;
-        if ((u62Var4.R & 8) != 0) {
-            u62.r(u62Var4.S[3], frameMetrics.getMetric(4));
+        String g = XRayConfig.OutboundBean.StreamSettingsBean.TcpMasksBean.TcpMaskSettingBean.g(map);
+        if (g == null) {
+            g = "100-200";
         }
-        u62 u62Var5 = this.a;
-        if ((u62Var5.R & 16) != 0) {
-            u62.r(u62Var5.S[4], frameMetrics.getMetric(5));
+        LinkedHashMap c = XRayConfig.OutboundBean.StreamSettingsBean.TcpMasksBean.TcpMaskSettingBean.c(g, d, e, h);
+        List L = ut.L(new XRayConfig.OutboundBean.OutSettingsBean.NoisesBean(31, null, null, null));
+        HashMap hashMap = this.f0;
+        if (hashMap == null) {
+            hashMap = new HashMap();
         }
-        u62 u62Var6 = this.a;
-        if ((u62Var6.R & 64) != 0) {
-            u62.r(u62Var6.S[6], frameMetrics.getMetric(7));
+        ps8 h2 = rs8.h(applicationContext, c, L, hashMap);
+        if (h2.a) {
+            ((XRayPoint) vy5Var.X).coreRunLoop(h2.b);
         }
-        u62 u62Var7 = this.a;
-        if ((u62Var7.R & 32) != 0) {
-            u62.r(u62Var7.S[5], frameMetrics.getMetric(6));
-        }
-        u62 u62Var8 = this.a;
-        if ((u62Var8.R & 128) != 0) {
-            u62.r(u62Var8.S[7], frameMetrics.getMetric(0));
-        }
-        u62 u62Var9 = this.a;
-        if ((u62Var9.R & PSKKeyManager.MAX_KEY_LENGTH_BYTES) != 0) {
-            u62.r(u62Var9.S[8], frameMetrics.getMetric(2));
-        }
+        z = true;
+        return Boolean.valueOf(z);
     }
 }

@@ -1,24 +1,8 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class b91 implements g72 {
-    public final /* synthetic */ int Q;
-    public final d91 R;
+import android.os.Parcelable;
 
-    public /* synthetic */ b91(d91 d91Var, int i) {
-        this.Q = i;
-        this.R = d91Var;
-    }
-
-    @Override // defpackage.g72
-    public final Object invoke() {
-        int i = this.Q;
-        d91 d91Var = this.R;
-        switch (i) {
-            case 0:
-                return d91Var.P(d91Var.R);
-            default:
-                return d91Var;
-        }
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface b91 extends Parcelable {
 }

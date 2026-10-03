@@ -1,34 +1,255 @@
 .class public final Lmy5;
-.super Llo7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lokhttp3/Interceptor;
 
 
-# instance fields
-.field public final b:Ljava/util/LinkedHashMap;
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 1
+# virtual methods
+.method public final intercept(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Llo7;-><init>()V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/util/LinkedHashMap;
+    invoke-interface {p1}, Lokhttp3/Interceptor$Chain;->request()Lokhttp3/Request;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
-
     .line 7
-    .line 8
-    .line 9
-    iput-object v0, p0, Lmy5;->b:Ljava/util/LinkedHashMap;
+    move-result-object p0
 
+    .line 8
+    invoke-interface {p1, p0}, Lokhttp3/Interceptor$Chain;->proceed(Lokhttp3/Request;)Lokhttp3/Response;
+
+    .line 9
     .line 10
     .line 11
-    return-void
+    move-result-object p0
+
+    .line 12
+    const-string v0, "location"
+
+    .line 13
+    .line 14
+    const/4 v1, 0x0
+
+    .line 15
+    const/4 v2, 0x2
+
+    .line 16
+    invoke-static {p0, v0, v1, v2, v1}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    if-eqz v0, :cond_3
+
+    .line 21
+    .line 22
+    const/4 v3, 0x0
+
+    .line 23
+    const-string v4, "happ://"
+
+    .line 24
+    .line 25
+    invoke-static {v0, v3, v4}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v3
+
+    .line 29
+    if-eqz v3, :cond_3
+
+    .line 30
+    .line 31
+    sget-object v3, Ldr2;->a:Ldr2;
+
+    .line 32
+    .line 33
+    invoke-static {v0}, Lcb1;->b(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/EDeeplinkType;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v3
+
+    .line 37
+    if-nez v3, :cond_0
+
+    .line 38
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_0
+    invoke-static {v0, v4}, Lea7;->f1(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    invoke-static {v0, v3}, Lcb1;->c(Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/EDeeplinkType;)Ljava/lang/String;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v0
+
+    .line 48
+    sget-object v4, Lzq2;->a:[I
+
+    .line 49
+    .line 50
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v5
+
+    .line 54
+    aget v4, v4, v5
+
+    .line 55
+    .line 56
+    if-eq v4, v2, :cond_1
+
+    .line 57
+    .line 58
+    const/4 v2, 0x3
+
+    .line 59
+    if-eq v4, v2, :cond_1
+
+    .line 60
+    .line 61
+    const/4 v2, 0x4
+
+    .line 62
+    if-eq v4, v2, :cond_1
+
+    .line 63
+    .line 64
+    const/4 v2, 0x5
+
+    .line 65
+    if-eq v4, v2, :cond_1
+
+    .line 66
+    .line 67
+    const/4 v2, 0x6
+
+    .line 68
+    if-eq v4, v2, :cond_1
+
+    .line 69
+    .line 70
+    goto :goto_0
+
+    .line 71
+    :cond_1
+    invoke-static {v3}, Lcb1;->a(Lsu/happ/proxyutility/dto/enums/EDeeplinkType;)Lcx1;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v2
+
+    .line 75
+    if-eqz v2, :cond_2
+
+    .line 76
+    .line 77
+    invoke-static {v0, v2}, Lvq0;->F(Ljava/lang/String;Lcx1;)Ljava/lang/String;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v1
+
+    .line 81
+    :goto_0
+    move-object v0, v1
+
+    .line 82
+    goto :goto_1
+
+    .line 83
+    :cond_2
+    const-string p0, "Required value was null."
+
+    .line 84
+    .line 85
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 86
+    .line 87
+    .line 88
+    return-object v1
+
+    .line 89
+    :cond_3
+    :goto_1
+    if-nez v0, :cond_4
+
+    .line 90
+    .line 91
+    return-object p0
+
+    .line 92
+    :cond_4
+    invoke-interface {p1}, Lokhttp3/Interceptor$Chain;->request()Lokhttp3/Request;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object p0
+
+    .line 96
+    invoke-virtual {p0}, Lokhttp3/Request;->newBuilder()Lokhttp3/Request$Builder;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object p0
+
+    .line 100
+    invoke-virtual {p0, v0}, Lokhttp3/Request$Builder;->url(Ljava/lang/String;)Lokhttp3/Request$Builder;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object p0
+
+    .line 104
+    invoke-virtual {p0}, Lokhttp3/Request$Builder;->build()Lokhttp3/Request;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object p0
+
+    .line 108
+    invoke-interface {p1, p0}, Lokhttp3/Interceptor$Chain;->proceed(Lokhttp3/Request;)Lokhttp3/Response;
+
+    .line 109
+    .line 110
+    .line 111
+    move-result-object p0
+
+    .line 112
+    return-object p0
 .end method

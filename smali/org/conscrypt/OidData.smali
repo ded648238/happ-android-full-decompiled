@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/OidData;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -99,11 +99,11 @@
     .line 41
     .line 42
     .line 43
-    const-string v1, "1.2.840.113549.1.1.14"
+    const-string v1, "1.2.840.113549.1.1.10"
 
     .line 44
     .line 45
-    const-string v2, "SHA224withRSA"
+    const-string v2, "RSASSA-PSS"
 
     .line 46
     .line 47
@@ -112,11 +112,11 @@
     .line 48
     .line 49
     .line 50
-    const-string v1, "1.2.840.113549.1.1.11"
+    const-string v1, "1.2.840.113549.1.1.14"
 
     .line 51
     .line 52
-    const-string v2, "SHA256withRSA"
+    const-string v2, "SHA224withRSA"
 
     .line 53
     .line 54
@@ -125,11 +125,11 @@
     .line 55
     .line 56
     .line 57
-    const-string v1, "1.2.840.113549.1.1.12"
+    const-string v1, "1.2.840.113549.1.1.11"
 
     .line 58
     .line 59
-    const-string v2, "SHA384withRSA"
+    const-string v2, "SHA256withRSA"
 
     .line 60
     .line 61
@@ -138,11 +138,11 @@
     .line 62
     .line 63
     .line 64
-    const-string v1, "1.2.840.113549.1.1.13"
+    const-string v1, "1.2.840.113549.1.1.12"
 
     .line 65
     .line 66
-    const-string v2, "SHA512withRSA"
+    const-string v2, "SHA384withRSA"
 
     .line 67
     .line 68
@@ -151,11 +151,11 @@
     .line 69
     .line 70
     .line 71
-    const-string v1, "2.16.840.1.101.3.4.3.1"
+    const-string v1, "1.2.840.113549.1.1.13"
 
     .line 72
     .line 73
-    const-string v2, "SHA224withDSA"
+    const-string v2, "SHA512withRSA"
 
     .line 74
     .line 75
@@ -164,11 +164,11 @@
     .line 76
     .line 77
     .line 78
-    const-string v1, "2.16.840.1.101.3.4.3.2"
+    const-string v1, "2.16.840.1.101.3.4.3.1"
 
     .line 79
     .line 80
-    const-string v2, "SHA256withDSA"
+    const-string v2, "SHA224withDSA"
 
     .line 81
     .line 82
@@ -177,11 +177,11 @@
     .line 83
     .line 84
     .line 85
-    const-string v1, "1.2.840.10045.4.3.1"
+    const-string v1, "2.16.840.1.101.3.4.3.2"
 
     .line 86
     .line 87
-    const-string v2, "SHA224withECDSA"
+    const-string v2, "SHA256withDSA"
 
     .line 88
     .line 89
@@ -190,11 +190,11 @@
     .line 90
     .line 91
     .line 92
-    const-string v1, "1.2.840.10045.4.3.2"
+    const-string v1, "1.2.840.10045.4.3.1"
 
     .line 93
     .line 94
-    const-string v2, "SHA256withECDSA"
+    const-string v2, "SHA224withECDSA"
 
     .line 95
     .line 96
@@ -203,11 +203,11 @@
     .line 97
     .line 98
     .line 99
-    const-string v1, "1.2.840.10045.4.3.3"
+    const-string v1, "1.2.840.10045.4.3.2"
 
     .line 100
     .line 101
-    const-string v2, "SHA384withECDSA"
+    const-string v2, "SHA256withECDSA"
 
     .line 102
     .line 103
@@ -216,11 +216,11 @@
     .line 104
     .line 105
     .line 106
-    const-string v1, "1.2.840.10045.4.3.4"
+    const-string v1, "1.2.840.10045.4.3.3"
 
     .line 107
     .line 108
-    const-string v2, "SHA512withECDSA"
+    const-string v2, "SHA384withECDSA"
 
     .line 109
     .line 110
@@ -229,6 +229,71 @@
     .line 111
     .line 112
     .line 113
+    const-string v1, "1.2.840.10045.4.3.4"
+
+    .line 114
+    .line 115
+    const-string v2, "SHA512withECDSA"
+
+    .line 116
+    .line 117
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 118
+    .line 119
+    .line 120
+    const-string v1, "1.3.101.112"
+
+    .line 121
+    .line 122
+    const-string v2, "Ed25519"
+
+    .line 123
+    .line 124
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 125
+    .line 126
+    .line 127
+    const-string v1, "2.16.840.1.101.3.4.3.17"
+
+    .line 128
+    .line 129
+    const-string v2, "ML-DSA-44"
+
+    .line 130
+    .line 131
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 132
+    .line 133
+    .line 134
+    const-string v1, "2.16.840.1.101.3.4.3.18"
+
+    .line 135
+    .line 136
+    const-string v2, "ML-DSA-65"
+
+    .line 137
+    .line 138
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 139
+    .line 140
+    .line 141
+    const-string v1, "2.16.840.1.101.3.4.3.19"
+
+    .line 142
+    .line 143
+    const-string v2, "ML-DSA-87"
+
+    .line 144
+    .line 145
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 146
+    .line 147
+    .line 148
     return-void
 .end method
 

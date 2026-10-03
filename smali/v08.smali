@@ -1,569 +1,424 @@
-.class public final Lv08;
+.class public abstract Lv08;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg18;
-.implements Lpi4;
-.implements Lci4;
-.implements Lqh4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:I
+# static fields
+.field public static final a:Landroidx/transition/AutoTransition;
 
-.field public final R:Ljava/util/concurrent/Executor;
+.field public static final b:Ljava/lang/ThreadLocal;
 
-.field public final S:Ljava/lang/Object;
-
-.field public final T:Ljava/lang/Object;
+.field public static final c:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lbs6;Lm18;)V
-    .locals 1
-
-    const/4 v0, 0x4
-
-    iput v0, p0, Lv08;->Q:I
-
-    .line 22
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lv08;->R:Ljava/util/concurrent/Executor;
-
-    iput-object p2, p0, Lv08;->S:Ljava/lang/Object;
-
-    iput-object p3, p0, Lv08;->T:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lci4;)V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    iput v0, p0, Lv08;->Q:I
-
-    .line 20
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lv08;->S:Ljava/lang/Object;
-
-    iput-object p1, p0, Lv08;->R:Ljava/util/concurrent/Executor;
-
-    iput-object p2, p0, Lv08;->T:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lpi4;)V
-    .locals 1
-
-    const/4 v0, 0x3
-
-    iput v0, p0, Lv08;->Q:I
-
-    .line 21
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lv08;->S:Ljava/lang/Object;
-
-    iput-object p1, p0, Lv08;->R:Ljava/util/concurrent/Executor;
-
-    iput-object p2, p0, Lv08;->T:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lqh4;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    iput v0, p0, Lv08;->Q:I
-
-    .line 3
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    .line 6
-    .line 7
-    new-instance v0, Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    iput-object v0, p0, Lv08;->S:Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    iput-object p1, p0, Lv08;->R:Ljava/util/concurrent/Executor;
-
-    .line 15
-    .line 16
-    iput-object p2, p0, Lv08;->T:Ljava/lang/Object;
-
-    .line 17
-    .line 18
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/concurrent/Executor;Luh4;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Lv08;->Q:I
-
-    .line 19
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lv08;->S:Ljava/lang/Object;
-
-    iput-object p1, p0, Lv08;->R:Ljava/util/concurrent/Executor;
-
-    iput-object p2, p0, Lv08;->T:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method private final b(Lm18;)V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lv08;->S:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 5
-    iget-object v0, p0, Lv08;->R:Ljava/util/concurrent/Executor;
-
-    .line 6
-    .line 7
-    new-instance v1, Lg92;
-
-    .line 8
-    .line 9
-    const/16 v2, 0x13
-
-    .line 10
-    .line 11
-    const/4 v3, 0x0
-
-    .line 12
-    invoke-direct {v1, v2, p0, p1, v3}, Lg92;-><init>(ILjava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 13
-    .line 14
-    .line 15
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 16
-    .line 17
-    .line 18
-    return-void
-
-    .line 19
-    :catchall_0
-    move-exception p1
-
-    .line 20
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 21
-    throw p1
-.end method
-
-.method private final e(Lm18;)V
-    .locals 4
-
-    .line 1
-    invoke-virtual {p1}, Lm18;->i()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-nez v0, :cond_0
-
-    .line 6
-    .line 7
-    iget-boolean v0, p1, Lm18;->d:Z
-
-    .line 8
-    .line 9
-    if-nez v0, :cond_0
-
-    .line 10
-    .line 11
-    iget-object v0, p0, Lv08;->S:Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    monitor-enter v0
-
-    .line 14
-    :try_start_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 15
-    iget-object v0, p0, Lv08;->R:Ljava/util/concurrent/Executor;
-
-    .line 16
-    .line 17
-    new-instance v1, Lg92;
-
-    .line 18
-    .line 19
-    const/16 v2, 0x15
-
-    .line 20
-    .line 21
-    const/4 v3, 0x0
-
-    .line 22
-    invoke-direct {v1, v2, p0, p1, v3}, Lg92;-><init>(ILjava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-void
-
-    .line 29
-    :catchall_0
-    move-exception p1
-
-    .line 30
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 31
-    throw p1
-
-    .line 32
-    :cond_0
-    return-void
-.end method
-
-.method private final g(Lm18;)V
-    .locals 4
-
-    .line 1
-    invoke-virtual {p1}, Lm18;->i()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget-object v0, p0, Lv08;->S:Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    monitor-enter v0
-
-    .line 10
-    :try_start_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 11
-    iget-object v0, p0, Lv08;->R:Ljava/util/concurrent/Executor;
-
-    .line 12
-    .line 13
-    new-instance v1, Lg92;
-
-    .line 14
-    .line 15
-    const/16 v2, 0x16
-
-    .line 16
-    .line 17
-    const/4 v3, 0x0
-
-    .line 18
-    invoke-direct {v1, v2, p0, p1, v3}, Lg92;-><init>(ILjava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 22
-    .line 23
-    .line 24
-    return-void
-
-    .line 25
-    :catchall_0
-    move-exception p1
-
-    .line 26
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 27
-    throw p1
-
-    .line 28
-    :cond_0
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Lm18;)V
+.method static constructor <clinit>()V
     .locals 3
 
     .line 1
-    iget v0, p0, Lv08;->Q:I
+    new-instance v0, Landroidx/transition/AutoTransition;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0}, Landroidx/transition/Transition;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    new-instance v0, Lg92;
+    new-instance v1, Ljava/util/ArrayList;
 
     .line 7
     .line 8
-    const/16 v1, 0x18
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 9
     .line 10
-    const/4 v2, 0x0
-
     .line 11
-    invoke-direct {v0, v1, p0, p1, v2}, Lg92;-><init>(ILjava/lang/Object;Ljava/lang/Object;Z)V
+    iput-object v1, v0, Landroidx/transition/TransitionSet;->B0:Ljava/util/ArrayList;
 
     .line 12
     .line 13
+    const/4 v1, 0x0
+
     .line 14
-    iget-object p1, p0, Lv08;->R:Ljava/util/concurrent/Executor;
+    iput-boolean v1, v0, Landroidx/transition/TransitionSet;->E0:Z
 
     .line 15
     .line 16
-    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    iput v1, v0, Landroidx/transition/TransitionSet;->F0:I
 
     .line 17
     .line 18
-    .line 19
-    return-void
+    iput-boolean v1, v0, Landroidx/transition/TransitionSet;->C0:Z
 
+    .line 19
     .line 20
-    :pswitch_0
-    invoke-direct {p0, p1}, Lv08;->g(Lm18;)V
+    new-instance v1, Landroidx/transition/Fade;
 
     .line 21
     .line 22
+    const/4 v2, 0x2
+
     .line 23
-    return-void
+    invoke-direct {v1, v2}, Landroidx/transition/Fade;-><init>(I)V
 
     .line 24
-    :pswitch_1
-    invoke-direct {p0, p1}, Lv08;->e(Lm18;)V
-
     .line 25
     .line 26
+    invoke-virtual {v0, v1}, Landroidx/transition/TransitionSet;->K(Landroidx/transition/Transition;)V
+
     .line 27
-    return-void
-
     .line 28
-    :pswitch_2
-    invoke-direct {p0, p1}, Lv08;->b(Lm18;)V
-
     .line 29
+    new-instance v1, Landroidx/transition/ChangeBounds;
+
     .line 30
     .line 31
-    return-void
+    invoke-direct {v1}, Landroidx/transition/Transition;-><init>()V
 
     .line 32
-    :pswitch_3
-    iget-boolean p1, p1, Lm18;->d:Z
-
     .line 33
     .line 34
-    if-eqz p1, :cond_0
+    invoke-virtual {v0, v1}, Landroidx/transition/TransitionSet;->K(Landroidx/transition/Transition;)V
 
     .line 35
     .line 36
-    iget-object p1, p0, Lv08;->S:Ljava/lang/Object;
-
     .line 37
-    .line 38
-    monitor-enter p1
+    new-instance v1, Landroidx/transition/Fade;
 
+    .line 38
     .line 39
-    :try_start_0
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const/4 v2, 0x1
 
     .line 40
-    iget-object p1, p0, Lv08;->R:Ljava/util/concurrent/Executor;
+    invoke-direct {v1, v2}, Landroidx/transition/Fade;-><init>(I)V
 
     .line 41
     .line 42
-    new-instance v0, Lmz7;
+    .line 43
+    invoke-virtual {v0, v1}, Landroidx/transition/TransitionSet;->K(Landroidx/transition/Transition;)V
+
+    .line 44
+    .line 45
+    .line 46
+    sput-object v0, Lv08;->a:Landroidx/transition/AutoTransition;
+
+    .line 47
+    .line 48
+    new-instance v0, Ljava/lang/ThreadLocal;
+
+    .line 49
+    .line 50
+    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
+
+    .line 51
+    .line 52
+    .line 53
+    sput-object v0, Lv08;->b:Ljava/lang/ThreadLocal;
+
+    .line 54
+    .line 55
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 56
+    .line 57
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 58
+    .line 59
+    .line 60
+    sput-object v0, Lv08;->c:Ljava/util/ArrayList;
+
+    .line 61
+    .line 62
+    return-void
+.end method
+
+.method public static a(Landroid/view/ViewGroup;Landroidx/transition/Transition;)V
+    .locals 2
+
+    .line 1
+    sget-object v0, Lv08;->c:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    if-nez v1, :cond_3
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Landroid/view/View;->isLaidOut()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v1
+
+    .line 13
+    if-eqz v1, :cond_3
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    if-nez p1, :cond_0
+
+    .line 19
+    .line 20
+    sget-object p1, Lv08;->a:Landroidx/transition/AutoTransition;
+
+    .line 21
+    .line 22
+    :cond_0
+    invoke-virtual {p1}, Landroidx/transition/Transition;->i()Landroidx/transition/Transition;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    invoke-static {}, Lv08;->b()Lat;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    invoke-virtual {v0, p0}, Ljx6;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    check-cast v0, Ljava/util/ArrayList;
+
+    .line 35
+    .line 36
+    if-eqz v0, :cond_1
+
+    .line 37
+    .line 38
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v1
+
+    .line 42
+    if-lez v1, :cond_1
 
     .line 43
     .line 44
-    const/4 v1, 0x4
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 45
-    invoke-direct {v0, v1, p0}, Lmz7;-><init>(ILjava/lang/Object;)V
-
     .line 46
     .line 47
+    move-result-object v0
+
     .line 48
-    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 49
     .line 50
     .line 51
-    goto :goto_0
+    move-result v1
 
     .line 52
-    :catchall_0
-    move-exception v0
+    if-eqz v1, :cond_1
 
     .line 53
-    :try_start_1
-    monitor-exit p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
     .line 54
-    throw v0
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 55
-    :cond_0
-    :goto_0
-    return-void
-
     .line 56
-    nop
-
     .line 57
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
+    move-result-object v1
 
-.method public c(Ljava/lang/Object;)V
-    .locals 1
+    .line 58
+    check-cast v1, Landroidx/transition/Transition;
 
-    .line 1
-    iget-object v0, p0, Lv08;->T:Ljava/lang/Object;
+    .line 59
+    .line 60
+    invoke-virtual {v1, p0}, Landroidx/transition/Transition;->w(Landroid/view/View;)V
 
-    .line 2
-    .line 3
-    check-cast v0, Lm18;
+    .line 61
+    .line 62
+    .line 63
+    goto :goto_0
 
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1}, Lm18;->l(Ljava/lang/Object;)V
+    .line 64
+    :cond_1
+    const/4 v0, 0x1
 
-    .line 6
-    .line 7
-    .line 8
+    .line 65
+    invoke-virtual {p1, p0, v0}, Landroidx/transition/Transition;->g(Landroid/view/ViewGroup;Z)V
+
+    .line 66
+    .line 67
+    .line 68
+    sget v0, Lat5;->transition_current_scene:I
+
+    .line 69
+    .line 70
+    invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+
+    .line 71
+    .line 72
+    .line 73
+    move-result-object v0
+
+    .line 74
+    if-nez v0, :cond_2
+
+    .line 75
+    .line 76
+    const/4 v0, 0x0
+
+    .line 77
+    sget v1, Lat5;->transition_current_scene:I
+
+    .line 78
+    .line 79
+    invoke-virtual {p0, v1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 80
+    .line 81
+    .line 82
+    new-instance v0, Lu08;
+
+    .line 83
+    .line 84
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 85
+    .line 86
+    .line 87
+    iput-object p1, v0, Lu08;->X:Landroidx/transition/Transition;
+
+    .line 88
+    .line 89
+    iput-object p0, v0, Lu08;->Y:Landroid/view/ViewGroup;
+
+    .line 90
+    .line 91
+    invoke-virtual {p0, v0}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+
+    .line 92
+    .line 93
+    .line 94
+    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object p0
+
+    .line 98
+    invoke-virtual {p0, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+
+    .line 99
+    .line 100
+    .line 101
+    return-void
+
+    .line 102
+    :cond_2
+    invoke-static {}, Lio/sentry/z1;->l()V
+
+    .line 103
+    .line 104
+    .line 105
+    :cond_3
     return-void
 .end method
 
-.method public d()V
-    .locals 1
+.method public static b()Lat;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lv08;->T:Ljava/lang/Object;
+    sget-object v0, Lv08;->b:Ljava/lang/ThreadLocal;
 
     .line 2
     .line 3
-    check-cast v0, Lm18;
+    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lm18;->m()V
-
     .line 6
+    move-result-object v1
+
     .line 7
+    check-cast v1, Ljava/lang/ref/WeakReference;
+
     .line 8
-    return-void
-.end method
+    .line 9
+    if-eqz v1, :cond_0
 
-.method public f(Ljava/lang/Exception;)V
-    .locals 1
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
-    .line 1
-    iget-object v0, p0, Lv08;->T:Ljava/lang/Object;
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
 
-    .line 2
-    .line 3
-    check-cast v0, Lm18;
+    .line 15
+    check-cast v1, Lat;
 
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1}, Lm18;->k(Ljava/lang/Exception;)V
+    .line 16
+    .line 17
+    if-eqz v1, :cond_0
 
-    .line 6
-    .line 7
-    .line 8
-    return-void
+    .line 18
+    .line 19
+    return-object v1
+
+    .line 20
+    :cond_0
+    new-instance v1, Lat;
+
+    .line 21
+    .line 22
+    const/4 v2, 0x0
+
+    .line 23
+    invoke-direct {v1, v2}, Ljx6;-><init>(I)V
+
+    .line 24
+    .line 25
+    .line 26
+    new-instance v2, Ljava/lang/ref/WeakReference;
+
+    .line 27
+    .line 28
+    invoke-direct {v2, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v0, v2}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
+
+    .line 32
+    .line 33
+    .line 34
+    return-object v1
 .end method

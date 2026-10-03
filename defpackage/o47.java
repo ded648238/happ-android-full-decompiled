@@ -1,179 +1,225 @@
 package defpackage;
 
-import java.io.IOException;
-import java.io.InterruptedIOException;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Condition;
+import java.util.HashMap;
+import java.util.HashSet;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class o47 {
-    public static final n47 Companion = new n47();
-    public static final o47 NONE = new m47();
-    private volatile Object cancelMark;
-    private long deadlineNanoTime;
-    private boolean hasDeadline;
-    private long timeoutNanos;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class o47 {
+    public static final jf2 A;
+    public static final jf2 B;
+    public static final jf2 C;
+    public static final jf2 D;
+    public static final jf2 E;
+    public static final jf2 F;
+    public static final jf2 G;
+    public static final jf2 H;
+    public static final jf2 I;
+    public static final jf2 J;
+    public static final jf2 K;
+    public static final jf2 L;
+    public static final jf2 M;
+    public static final jf2 N;
+    public static final jf2 O;
+    public static final jf2 P;
+    public static final kf2 Q;
+    public static final nq0 R;
+    public static final nq0 S;
+    public static final nq0 T;
+    public static final nq0 U;
+    public static final nq0 V;
+    public static final jf2 W;
+    public static final jf2 X;
+    public static final jf2 Y;
+    public static final jf2 Z;
+    public static final jf2 a0;
+    public static final jf2 b0;
+    public static final jf2 c0;
+    public static final kf2 d;
+    public static final HashSet d0;
+    public static final kf2 e;
+    public static final HashSet e0;
+    public static final kf2 f;
+    public static final HashMap f0;
+    public static final kf2 g;
+    public static final HashMap g0;
+    public static final kf2 h;
+    public static final kf2 i;
+    public static final kf2 j;
+    public static final jf2 k;
+    public static final jf2 l;
+    public static final jf2 m;
+    public static final jf2 n;
+    public static final jf2 o;
+    public static final jf2 p;
+    public static final jf2 q;
+    public static final jf2 r;
+    public static final jf2 s;
+    public static final jf2 t;
+    public static final jf2 u;
+    public static final jf2 v;
+    public static final jf2 w;
+    public static final jf2 x;
+    public static final jf2 y;
+    public static final jf2 z;
+    public static final kf2 a = d("Any").a;
+    public static final kf2 b = d("Nothing").a;
+    public static final kf2 c = d("Cloneable").a;
 
-    public void awaitSignal(Condition condition) throws InterruptedIOException {
-        condition.getClass();
-        try {
-            boolean zHasDeadline = hasDeadline();
-            long jTimeoutNanos = timeoutNanos();
-            if (!zHasDeadline && jTimeoutNanos == 0) {
-                condition.await();
-                return;
-            }
-            if (zHasDeadline && jTimeoutNanos != 0) {
-                jTimeoutNanos = Math.min(jTimeoutNanos, deadlineNanoTime() - System.nanoTime());
-            } else if (zHasDeadline) {
-                jTimeoutNanos = deadlineNanoTime() - System.nanoTime();
-            }
-            if (jTimeoutNanos <= 0) {
-                throw new InterruptedIOException("timeout");
-            }
-            Object obj = this.cancelMark;
-            if (condition.awaitNanos(jTimeoutNanos) <= 0 && this.cancelMark == obj) {
-                throw new InterruptedIOException("timeout");
-            }
-        } catch (InterruptedException unused) {
-            Thread.currentThread().interrupt();
-            throw new InterruptedIOException("interrupted");
+    static {
+        d("Suppress");
+        d = d("Unit").a;
+        e = d("CharSequence").a;
+        f = d("String").a;
+        g = d("Array").a;
+        h = d("Boolean").a;
+        d("Char");
+        d("Byte");
+        d("Short");
+        d("Int");
+        d("Long");
+        d("Float");
+        d("Double");
+        i = d("Number").a;
+        j = d("Enum").a;
+        d("Function");
+        k = d("Throwable");
+        l = d("Comparable");
+        e("IntRange");
+        e("LongRange");
+        e("CharRange");
+        e("IntProgression");
+        e("LongProgression");
+        e("CharProgression");
+        m = d("Deprecated");
+        d("DeprecatedSinceKotlin");
+        n = d("DeprecationLevel");
+        o = d("ReplaceWith");
+        p = d("ExtensionFunctionType");
+        q = d("ContextFunctionTypeParams");
+        jf2 d2 = d("ParameterName");
+        r = d2;
+        ic4.V(d2);
+        s = d("Annotation");
+        jf2 a2 = a("Target");
+        t = a2;
+        ic4.V(a2);
+        u = a("AnnotationTarget");
+        v = a("AnnotationRetention");
+        jf2 a3 = a("Retention");
+        w = a3;
+        ic4.V(a3);
+        ic4.V(a("Repeatable"));
+        x = a("MustBeDocumented");
+        y = d("UnsafeVariance");
+        d("PublishedApi");
+        p47.o.a(pr4.e("AccessibleLateinitPropertyLiteral"));
+        jf2 jf2Var = new jf2("kotlin.internal.PlatformDependent");
+        z = jf2Var;
+        ic4.V(jf2Var);
+        d("IntroducedAt");
+        A = b("Iterator");
+        B = b("Iterable");
+        C = b("Collection");
+        D = b("List");
+        E = b("ListIterator");
+        F = b("Set");
+        jf2 b2 = b("Map");
+        G = b2;
+        H = b2.a(pr4.e("Entry"));
+        I = b("MutableIterator");
+        J = b("MutableIterable");
+        K = b("MutableCollection");
+        L = b("MutableList");
+        M = b("MutableListIterator");
+        N = b("MutableSet");
+        jf2 b3 = b("MutableMap");
+        O = b3;
+        P = b3.a(pr4.e("MutableEntry"));
+        Q = f("KClass");
+        f("KType");
+        f("KCallable");
+        f("KProperty0");
+        f("KProperty1");
+        f("KProperty2");
+        f("KMutableProperty0");
+        f("KMutableProperty1");
+        f("KMutableProperty2");
+        kf2 f2 = f("KProperty");
+        f("KMutableProperty");
+        R = ic4.V(f2.i());
+        f("KDeclarationContainer");
+        f("findAssociatedObject");
+        jf2 d3 = d("UByte");
+        jf2 d4 = d("UShort");
+        jf2 d5 = d("UInt");
+        jf2 d6 = d("ULong");
+        S = ic4.V(d3);
+        T = ic4.V(d4);
+        U = ic4.V(d5);
+        V = ic4.V(d6);
+        W = d("UByteArray");
+        X = d("UShortArray");
+        Y = d("UIntArray");
+        Z = d("ULongArray");
+        c("AtomicInt");
+        c("AtomicLong");
+        c("AtomicBoolean");
+        c("AtomicReference");
+        a0 = c("AtomicIntArray");
+        b0 = c("AtomicLongArray");
+        c0 = c("AtomicArray");
+        int length = hj5.values().length;
+        HashSet hashSet = new HashSet(length < 3 ? 3 : (length / 3) + length + 1);
+        for (hj5 hj5Var : hj5.values()) {
+            hashSet.add(hj5Var.X);
         }
-    }
-
-    public void cancel() {
-        this.cancelMark = new Object();
-    }
-
-    public o47 clearDeadline() {
-        this.hasDeadline = false;
-        return this;
-    }
-
-    public o47 clearTimeout() {
-        this.timeoutNanos = 0L;
-        return this;
-    }
-
-    public final o47 deadline(long j, TimeUnit timeUnit) {
-        timeUnit.getClass();
-        if (j > 0) {
-            return deadlineNanoTime(timeUnit.toNanos(j) + System.nanoTime());
+        d0 = hashSet;
+        int length2 = hj5.values().length;
+        HashSet hashSet2 = new HashSet(length2 < 3 ? 3 : (length2 / 3) + length2 + 1);
+        for (hj5 hj5Var2 : hj5.values()) {
+            hashSet2.add(hj5Var2.Y);
         }
-        mh7.c(p27.m(j, "duration <= 0: "));
-        return null;
+        e0 = hashSet2;
+        int length3 = hj5.values().length;
+        HashMap hashMap = new HashMap(length3 < 3 ? 3 : (length3 / 3) + length3 + 1);
+        for (hj5 hj5Var3 : hj5.values()) {
+            String b4 = hj5Var3.X.b();
+            b4.getClass();
+            hashMap.put(d(b4).a, hj5Var3);
+        }
+        f0 = hashMap;
+        int length4 = hj5.values().length;
+        HashMap hashMap2 = new HashMap(length4 >= 3 ? (length4 / 3) + length4 + 1 : 3);
+        for (hj5 hj5Var4 : hj5.values()) {
+            String b5 = hj5Var4.Y.b();
+            b5.getClass();
+            hashMap2.put(d(b5).a, hj5Var4);
+        }
+        g0 = hashMap2;
     }
 
-    public long deadlineNanoTime() {
-        if (this.hasDeadline) {
-            return this.deadlineNanoTime;
-        }
-        fn.s("No deadline");
-        return 0L;
+    public static jf2 a(String str) {
+        return p47.l.a(pr4.e(str));
     }
 
-    public boolean hasDeadline() {
-        return this.hasDeadline;
+    public static jf2 b(String str) {
+        return p47.m.a(pr4.e(str));
     }
 
-    public final <T> T intersectWith(o47 o47Var, g72 g72Var) {
-        o47Var.getClass();
-        g72Var.getClass();
-        long jTimeoutNanos = timeoutNanos();
-        n47 n47Var = Companion;
-        long jTimeoutNanos2 = o47Var.timeoutNanos();
-        long jTimeoutNanos3 = timeoutNanos();
-        n47Var.getClass();
-        if (jTimeoutNanos2 == 0 || (jTimeoutNanos3 != 0 && jTimeoutNanos2 >= jTimeoutNanos3)) {
-            jTimeoutNanos2 = jTimeoutNanos3;
-        }
-        TimeUnit timeUnit = TimeUnit.NANOSECONDS;
-        timeout(jTimeoutNanos2, timeUnit);
-        if (!hasDeadline()) {
-            if (o47Var.hasDeadline()) {
-                deadlineNanoTime(o47Var.deadlineNanoTime());
-            }
-            try {
-                return (T) g72Var.invoke();
-            } finally {
-                timeout(jTimeoutNanos, timeUnit);
-                if (o47Var.hasDeadline()) {
-                    clearDeadline();
-                }
-            }
-        }
-        long jDeadlineNanoTime = deadlineNanoTime();
-        if (o47Var.hasDeadline()) {
-            deadlineNanoTime(Math.min(deadlineNanoTime(), o47Var.deadlineNanoTime()));
-        }
-        try {
-            return (T) g72Var.invoke();
-        } finally {
-            timeout(jTimeoutNanos, timeUnit);
-            if (o47Var.hasDeadline()) {
-                deadlineNanoTime(jDeadlineNanoTime);
-            }
-        }
+    public static jf2 c(String str) {
+        return p47.p.a(pr4.e(str));
     }
 
-    public void throwIfReached() throws IOException {
-        if (Thread.currentThread().isInterrupted()) {
-            throw new InterruptedIOException("interrupted");
-        }
-        if (this.hasDeadline && this.deadlineNanoTime - System.nanoTime() <= 0) {
-            throw new InterruptedIOException("deadline reached");
-        }
+    public static jf2 d(String str) {
+        return p47.k.a(pr4.e(str));
     }
 
-    public o47 timeout(long j, TimeUnit timeUnit) {
-        timeUnit.getClass();
-        if (j >= 0) {
-            this.timeoutNanos = timeUnit.toNanos(j);
-            return this;
-        }
-        mh7.c(p27.m(j, "timeout < 0: "));
-        return null;
+    public static void e(String str) {
+        p47.n.a(pr4.e(str));
     }
 
-    public long timeoutNanos() {
-        return this.timeoutNanos;
-    }
-
-    public void waitUntilNotified(Object obj) throws InterruptedIOException {
-        obj.getClass();
-        try {
-            boolean zHasDeadline = hasDeadline();
-            long jTimeoutNanos = timeoutNanos();
-            if (!zHasDeadline && jTimeoutNanos == 0) {
-                obj.wait();
-                return;
-            }
-            long jNanoTime = System.nanoTime();
-            if (zHasDeadline && jTimeoutNanos != 0) {
-                jTimeoutNanos = Math.min(jTimeoutNanos, deadlineNanoTime() - jNanoTime);
-            } else if (zHasDeadline) {
-                jTimeoutNanos = deadlineNanoTime() - jNanoTime;
-            }
-            if (jTimeoutNanos <= 0) {
-                throw new InterruptedIOException("timeout");
-            }
-            Object obj2 = this.cancelMark;
-            long j = jTimeoutNanos / 1000000;
-            Long.signum(j);
-            obj.wait(j, (int) (jTimeoutNanos - (1000000 * j)));
-            if (System.nanoTime() - jNanoTime >= jTimeoutNanos && this.cancelMark == obj2) {
-                throw new InterruptedIOException("timeout");
-            }
-        } catch (InterruptedException unused) {
-            Thread.currentThread().interrupt();
-            throw new InterruptedIOException("interrupted");
-        }
-    }
-
-    public o47 deadlineNanoTime(long j) {
-        this.hasDeadline = true;
-        this.deadlineNanoTime = j;
-        return this;
+    public static final kf2 f(String str) {
+        return p47.i.a(pr4.e(str)).a;
     }
 }

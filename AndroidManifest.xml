@@ -122,24 +122,25 @@
         <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.routing.profile.RoutingProfileActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
         <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.about_settings.AboutSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
         <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.routing.sub.SubRoutingActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.subscription_properties.SubscriptionPropertiesActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
         <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.ui.ScSwitchActivity" android:process=":XRayDaemon" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar.Translucent" android:windowSoftInputMode="adjustPan"/>
-        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:label="@string/app_name" android:name="su.happ.proxyutility.service.XRayVpnService" android:permission="android.permission.BIND_VPN_SERVICE" android:process=":XRayDaemon" android:stopWithTask="false">
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="specialUse" android:label="@string/app_name" android:name="su.happ.proxyutility.service.XRayVpnService" android:permission="android.permission.BIND_VPN_SERVICE" android:process=":XRayDaemon" android:stopWithTask="false">
             <intent-filter>
                 <action android:name="android.net.VpnService"/>
             </intent-filter>
             <meta-data android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON" android:value="true"/>
             <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="vpn"/>
         </service>
-        <service android:exported="false" android:foregroundServiceType="dataSync" android:label="@string/app_name" android:name="su.happ.proxyutility.service.XRayProxyOnlyService" android:process=":XRayDaemon" android:stopWithTask="false">
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:label="@string/app_name" android:name="su.happ.proxyutility.service.XRayProxyOnlyService" android:process=":XRayDaemon" android:stopWithTask="false">
             <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="proxy"/>
         </service>
-        <service android:exported="false" android:foregroundServiceType="dataSync" android:label="@string/app_name" android:name="su.happ.proxyutility.service.XRayAntiFilterService" android:process=":XRayDaemon" android:stopWithTask="false">
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:label="@string/app_name" android:name="su.happ.proxyutility.service.XRayAntiFilterService" android:process=":XRayDaemon" android:stopWithTask="false">
             <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="proxy"/>
         </service>
-        <service android:exported="false" android:foregroundServiceType="dataSync" android:label="@string/app_name" android:name="su.happ.proxyutility.service.DownloadFilesService" android:process=":DownloadBackgroundDaemon" android:stopWithTask="false">
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:label="@string/app_name" android:name="su.happ.proxyutility.service.DownloadFilesService" android:stopWithTask="false">
             <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="proxy"/>
         </service>
-        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="dataSync" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="specialUse" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
         <service android:exported="false" android:name="su.happ.proxyutility.service.XRayTestService" android:process=":XRayDaemon"/>
         <service android:exported="false" android:name="androidx.work.multiprocess.RemoteWorkManagerService" android:process=":bg_process"/>
         <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":bg_process"/>
@@ -165,7 +166,7 @@
                 <action android:name="su.happ.proxyutility.receiver.SubscriptionUpdater.CANCEL_NOTIFICATION"/>
             </intent-filter>
         </receiver>
-        <service android:exported="true" android:foregroundServiceType="dataSync" android:icon="@drawable/ic_stat_name" android:label="@string/app_tile_name" android:name="su.happ.proxyutility.service.QSTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:process=":XRayDaemon">
+        <service android:exported="true" android:foregroundServiceType="specialUse" android:icon="@drawable/ic_stat_name" android:label="@string/app_tile_name" android:name="su.happ.proxyutility.service.QSTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:process=":XRayDaemon">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
@@ -205,49 +206,15 @@
             <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
         </service>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <provider android:authorities="su.happ.proxyutility.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
-        <provider android:authorities="su.happ.proxyutility.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
-        <provider android:authorities="su.happ.proxyutility.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
-        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
         <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
-        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
-            <intent-filter>
-                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
-                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
-            </intent-filter>
-        </receiver>
-        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
-            <intent-filter>
-                <action android:name="android.intent.action.BATTERY_OKAY"/>
-                <action android:name="android.intent.action.BATTERY_LOW"/>
-            </intent-filter>
-        </receiver>
-        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
-            <intent-filter>
-                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
-                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
-            </intent-filter>
-        </receiver>
-        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-            </intent-filter>
-        </receiver>
         <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <action android:name="android.intent.action.TIME_SET"/>
-                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
-            </intent-filter>
-        </receiver>
-        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
-            <intent-filter>
-                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
             </intent-filter>
         </receiver>
         <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
@@ -255,6 +222,8 @@
                 <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
             </intent-filter>
         </receiver>
+        <provider android:authorities="su.happ.proxyutility.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="su.happ.proxyutility.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
         <uses-library android:name="androidx.window.extensions" android:required="false"/>
         <uses-library android:name="androidx.window.sidecar" android:required="false"/>
         <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>

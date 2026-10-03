@@ -1,32 +1,32 @@
 .class public Landroidx/leanback/widget/HorizontalGridView;
-.super Loy;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lq00;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public I1:Z
+.field public R1:Z
 
-.field public J1:Z
+.field public S1:Z
 
-.field public final K1:Landroid/graphics/Paint;
+.field public final T1:Landroid/graphics/Paint;
 
-.field public L1:Landroid/graphics/Bitmap;
+.field public U1:Landroid/graphics/Bitmap;
 
-.field public M1:Landroid/graphics/LinearGradient;
+.field public V1:Landroid/graphics/LinearGradient;
 
-.field public N1:I
+.field public W1:I
 
-.field public O1:I
+.field public X1:I
 
-.field public P1:Landroid/graphics/Bitmap;
+.field public Y1:Landroid/graphics/Bitmap;
 
-.field public Q1:Landroid/graphics/LinearGradient;
+.field public Z1:Landroid/graphics/LinearGradient;
 
-.field public R1:I
+.field public a2:I
 
-.field public S1:I
+.field public b2:I
 
-.field public final T1:Landroid/graphics/Rect;
+.field public final c2:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -45,7 +45,7 @@
     .locals 6
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Loy;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, p3}, Lq00;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 2
     .line 3
@@ -59,7 +59,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object p3, p0, Landroidx/leanback/widget/HorizontalGridView;->K1:Landroid/graphics/Paint;
+    iput-object p3, p0, Landroidx/leanback/widget/HorizontalGridView;->T1:Landroid/graphics/Paint;
 
     .line 10
     .line 11
@@ -72,28 +72,28 @@
     .line 14
     .line 15
     .line 16
-    iput-object p3, p0, Landroidx/leanback/widget/HorizontalGridView;->T1:Landroid/graphics/Rect;
+    iput-object p3, p0, Landroidx/leanback/widget/HorizontalGridView;->c2:Landroid/graphics/Rect;
 
     .line 17
     .line 18
-    iget-object p3, p0, Loy;->C1:Landroidx/leanback/widget/GridLayoutManager;
+    iget-object p3, p0, Lq00;->L1:Landroidx/leanback/widget/GridLayoutManager;
 
     .line 19
     .line 20
     const/4 v0, 0x0
 
     .line 21
-    invoke-virtual {p3, v0}, Landroidx/leanback/widget/GridLayoutManager;->D1(I)V
+    invoke-virtual {p3, v0}, Landroidx/leanback/widget/GridLayoutManager;->C1(I)V
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {p0, p1, p2}, Loy;->u0(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-virtual {p0, p1, p2}, Lq00;->u0(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 25
     .line 26
     .line 27
-    sget-object p3, Lqa5;->lbHorizontalGridView:[I
+    sget-object p3, Lfv5;->lbHorizontalGridView:[I
 
     .line 28
     .line 29
@@ -105,7 +105,7 @@
     move-result-object v4
 
     .line 33
-    sget-object v2, Lqa5;->lbHorizontalGridView:[I
+    sget-object v2, Lfv5;->lbHorizontalGridView:[I
 
     .line 34
     .line 35
@@ -121,32 +121,32 @@
     move-object v3, p2
 
     .line 39
-    invoke-static/range {v0 .. v5}, Lqn7;->p(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v0 .. v5}, Lni8;->l(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 40
     .line 41
     .line 42
-    invoke-virtual {p0, v4}, Landroidx/leanback/widget/HorizontalGridView;->setRowHeight(Landroid/content/res/TypedArray;)V
+    invoke-virtual {v0, v4}, Landroidx/leanback/widget/HorizontalGridView;->setRowHeight(Landroid/content/res/TypedArray;)V
 
     .line 43
     .line 44
     .line 45
-    sget p1, Lqa5;->lbHorizontalGridView_numberOfRows:I
+    sget p0, Lfv5;->lbHorizontalGridView_numberOfRows:I
 
     .line 46
     .line 47
-    const/4 p2, 0x1
+    const/4 p1, 0x1
 
     .line 48
-    invoke-virtual {v4, p1, p2}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {v4, p0, p1}, Landroid/content/res/TypedArray;->getInt(II)I
 
     .line 49
     .line 50
     .line 51
-    move-result p1
+    move-result p0
 
     .line 52
-    invoke-virtual {p0, p1}, Landroidx/leanback/widget/HorizontalGridView;->setNumRows(I)V
+    invoke-virtual {v0, p0}, Landroidx/leanback/widget/HorizontalGridView;->setNumRows(I)V
 
     .line 53
     .line 54
@@ -156,38 +156,38 @@
     .line 56
     .line 57
     .line 58
-    invoke-virtual {p0}, Landroidx/leanback/widget/HorizontalGridView;->v0()V
+    invoke-virtual {v0}, Landroidx/leanback/widget/HorizontalGridView;->v0()V
 
     .line 59
     .line 60
     .line 61
-    new-instance p1, Landroid/graphics/Paint;
+    new-instance p0, Landroid/graphics/Paint;
 
     .line 62
     .line 63
-    invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
+    invoke-direct {p0}, Landroid/graphics/Paint;-><init>()V
 
     .line 64
     .line 65
     .line 66
-    iput-object p1, p0, Landroidx/leanback/widget/HorizontalGridView;->K1:Landroid/graphics/Paint;
+    iput-object p0, v0, Landroidx/leanback/widget/HorizontalGridView;->T1:Landroid/graphics/Paint;
 
     .line 67
     .line 68
-    new-instance p2, Landroid/graphics/PorterDuffXfermode;
+    new-instance p1, Landroid/graphics/PorterDuffXfermode;
 
     .line 69
     .line 70
-    sget-object p3, Landroid/graphics/PorterDuff$Mode;->DST_IN:Landroid/graphics/PorterDuff$Mode;
+    sget-object p2, Landroid/graphics/PorterDuff$Mode;->DST_IN:Landroid/graphics/PorterDuff$Mode;
 
     .line 71
     .line 72
-    invoke-direct {p2, p3}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
+    invoke-direct {p1, p2}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
 
     .line 73
     .line 74
     .line 75
-    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
+    invoke-virtual {p0, p1}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
     .line 76
     .line 77
@@ -199,7 +199,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->P1:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->Y1:Landroid/graphics/Bitmap;
 
     .line 2
     .line 3
@@ -215,7 +215,7 @@
     move-result v0
 
     .line 9
-    iget v1, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v1, p0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 10
     .line 11
@@ -223,7 +223,7 @@
 
     .line 12
     .line 13
-    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->P1:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->Y1:Landroid/graphics/Bitmap;
 
     .line 14
     .line 15
@@ -248,7 +248,7 @@
     .line 24
     .line 25
     :cond_0
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 26
     .line 27
@@ -272,23 +272,23 @@
     move-result-object v0
 
     .line 37
-    iput-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->P1:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->Y1:Landroid/graphics/Bitmap;
 
     .line 38
     .line 39
     :cond_1
-    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->P1:Landroid/graphics/Bitmap;
+    iget-object p0, p0, Landroidx/leanback/widget/HorizontalGridView;->Y1:Landroid/graphics/Bitmap;
 
     .line 40
     .line 41
-    return-object v0
+    return-object p0
 .end method
 
 .method private getTempBitmapLow()Landroid/graphics/Bitmap;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->L1:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->U1:Landroid/graphics/Bitmap;
 
     .line 2
     .line 3
@@ -304,7 +304,7 @@
     move-result v0
 
     .line 9
-    iget v1, p0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget v1, p0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 10
     .line 11
@@ -312,7 +312,7 @@
 
     .line 12
     .line 13
-    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->L1:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->U1:Landroid/graphics/Bitmap;
 
     .line 14
     .line 15
@@ -337,7 +337,7 @@
     .line 24
     .line 25
     :cond_0
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 26
     .line 27
@@ -361,16 +361,16 @@
     move-result-object v0
 
     .line 37
-    iput-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->L1:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->U1:Landroid/graphics/Bitmap;
 
     .line 38
     .line 39
     :cond_1
-    iget-object v0, p0, Landroidx/leanback/widget/HorizontalGridView;->L1:Landroid/graphics/Bitmap;
+    iget-object p0, p0, Landroidx/leanback/widget/HorizontalGridView;->U1:Landroid/graphics/Bitmap;
 
     .line 40
     .line 41
-    return-object v0
+    return-object p0
 .end method
 
 
@@ -387,7 +387,7 @@
 
     .line 4
     .line 5
-    iget-boolean v2, v0, Landroidx/leanback/widget/HorizontalGridView;->I1:Z
+    iget-boolean v2, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:Z
 
     .line 6
     .line 7
@@ -402,7 +402,7 @@
     .line 10
     .line 11
     :cond_0
-    const/4 v2, 0x0
+    move v2, v4
 
     .line 12
     goto :goto_1
@@ -417,7 +417,7 @@
     move-result v2
 
     .line 17
-    const/4 v5, 0x0
+    move v5, v4
 
     .line 18
     :goto_0
@@ -433,7 +433,7 @@
     move-result-object v6
 
     .line 24
-    iget-object v7, v0, Loy;->C1:Landroidx/leanback/widget/GridLayoutManager;
+    iget-object v7, v0, Lq00;->L1:Landroidx/leanback/widget/GridLayoutManager;
 
     .line 25
     .line 26
@@ -450,7 +450,7 @@
     move-result-object v7
 
     .line 33
-    check-cast v7, Led2;
+    check-cast v7, Lpp2;
 
     .line 34
     .line 35
@@ -467,7 +467,7 @@
     move-result v6
 
     .line 42
-    iget v7, v7, Led2;->U:I
+    iget v7, v7, Lpp2;->d0:I
 
     .line 43
     .line 44
@@ -482,7 +482,7 @@
     move-result v7
 
     .line 49
-    iget v8, v0, Landroidx/leanback/widget/HorizontalGridView;->O1:I
+    iget v8, v0, Landroidx/leanback/widget/HorizontalGridView;->X1:I
 
     .line 50
     .line 51
@@ -493,7 +493,7 @@
 
     .line 53
     .line 54
-    const/4 v2, 0x1
+    move v2, v3
 
     .line 55
     goto :goto_1
@@ -508,7 +508,7 @@
 
     .line 59
     :goto_1
-    iget-boolean v5, v0, Landroidx/leanback/widget/HorizontalGridView;->J1:Z
+    iget-boolean v5, v0, Landroidx/leanback/widget/HorizontalGridView;->S1:Z
 
     .line 60
     .line 61
@@ -517,7 +517,7 @@
     .line 62
     .line 63
     :cond_3
-    const/4 v3, 0x0
+    move v3, v4
 
     .line 64
     goto :goto_3
@@ -548,7 +548,7 @@
     move-result-object v6
 
     .line 76
-    iget-object v7, v0, Loy;->C1:Landroidx/leanback/widget/GridLayoutManager;
+    iget-object v7, v0, Lq00;->L1:Landroidx/leanback/widget/GridLayoutManager;
 
     .line 77
     .line 78
@@ -565,7 +565,7 @@
     move-result-object v7
 
     .line 85
-    check-cast v7, Led2;
+    check-cast v7, Lpp2;
 
     .line 86
     .line 87
@@ -582,7 +582,7 @@
     move-result v6
 
     .line 94
-    iget v7, v7, Led2;->W:I
+    iget v7, v7, Lpp2;->f0:I
 
     .line 95
     .line 96
@@ -608,7 +608,7 @@
     sub-int/2addr v7, v8
 
     .line 106
-    iget v8, v0, Landroidx/leanback/widget/HorizontalGridView;->S1:I
+    iget v8, v0, Landroidx/leanback/widget/HorizontalGridView;->b2:I
 
     .line 107
     .line 108
@@ -638,7 +638,7 @@
 
     .line 117
     .line 118
-    iput-object v5, v0, Landroidx/leanback/widget/HorizontalGridView;->L1:Landroid/graphics/Bitmap;
+    iput-object v5, v0, Landroidx/leanback/widget/HorizontalGridView;->U1:Landroid/graphics/Bitmap;
 
     .line 119
     .line 120
@@ -647,7 +647,7 @@
 
     .line 121
     .line 122
-    iput-object v5, v0, Landroidx/leanback/widget/HorizontalGridView;->P1:Landroid/graphics/Bitmap;
+    iput-object v5, v0, Landroidx/leanback/widget/HorizontalGridView;->Y1:Landroid/graphics/Bitmap;
 
     .line 123
     .line 124
@@ -669,7 +669,7 @@
 
     .line 132
     :cond_8
-    iget-boolean v6, v0, Landroidx/leanback/widget/HorizontalGridView;->I1:Z
+    iget-boolean v6, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:Z
 
     .line 133
     .line 134
@@ -685,14 +685,14 @@
     move-result v6
 
     .line 140
-    iget v7, v0, Landroidx/leanback/widget/HorizontalGridView;->O1:I
+    iget v7, v0, Landroidx/leanback/widget/HorizontalGridView;->X1:I
 
     .line 141
     .line 142
     sub-int/2addr v6, v7
 
     .line 143
-    iget v7, v0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget v7, v0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 144
     .line 145
@@ -703,11 +703,11 @@
 
     .line 147
     :cond_9
-    const/4 v6, 0x0
+    move v6, v4
 
     .line 148
     :goto_4
-    iget-boolean v7, v0, Landroidx/leanback/widget/HorizontalGridView;->J1:Z
+    iget-boolean v7, v0, Landroidx/leanback/widget/HorizontalGridView;->S1:Z
 
     .line 149
     .line 150
@@ -734,14 +734,14 @@
     sub-int/2addr v7, v8
 
     .line 161
-    iget v8, v0, Landroidx/leanback/widget/HorizontalGridView;->S1:I
+    iget v8, v0, Landroidx/leanback/widget/HorizontalGridView;->b2:I
 
     .line 162
     .line 163
     add-int/2addr v7, v8
 
     .line 164
-    iget v8, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v8, v0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 165
     .line 166
@@ -769,7 +769,7 @@
     move-result v8
 
     .line 176
-    iget-boolean v9, v0, Landroidx/leanback/widget/HorizontalGridView;->I1:Z
+    iget-boolean v9, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:Z
 
     .line 177
     .line 178
@@ -777,7 +777,7 @@
 
     .line 179
     .line 180
-    iget v9, v0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget v9, v0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 181
     .line 182
@@ -785,14 +785,14 @@
 
     .line 183
     :cond_b
-    const/4 v9, 0x0
+    move v9, v4
 
     .line 184
     :goto_6
     add-int/2addr v9, v6
 
     .line 185
-    iget-boolean v10, v0, Landroidx/leanback/widget/HorizontalGridView;->J1:Z
+    iget-boolean v10, v0, Landroidx/leanback/widget/HorizontalGridView;->S1:Z
 
     .line 186
     .line 187
@@ -800,7 +800,7 @@
 
     .line 188
     .line 189
-    iget v10, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v10, v0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 190
     .line 191
@@ -808,7 +808,7 @@
 
     .line 192
     :cond_c
-    const/4 v10, 0x0
+    move v10, v4
 
     .line 193
     :goto_7
@@ -848,7 +848,7 @@
     .line 211
     .line 212
     .line 213
-    iget-object v8, v0, Landroidx/leanback/widget/HorizontalGridView;->T1:Landroid/graphics/Rect;
+    iget-object v8, v0, Landroidx/leanback/widget/HorizontalGridView;->c2:Landroid/graphics/Rect;
 
     .line 214
     .line 215
@@ -868,7 +868,7 @@
 
     .line 222
     .line 223
-    iget-object v9, v0, Landroidx/leanback/widget/HorizontalGridView;->K1:Landroid/graphics/Paint;
+    iget-object v9, v0, Landroidx/leanback/widget/HorizontalGridView;->T1:Landroid/graphics/Paint;
 
     .line 224
     .line 225
@@ -879,7 +879,7 @@
 
     .line 227
     .line 228
-    iget v2, v0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget v2, v0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 229
     .line 230
@@ -913,7 +913,7 @@
     move-result v11
 
     .line 246
-    iget v13, v0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget v13, v0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 247
     .line 248
@@ -951,7 +951,7 @@
     .line 264
     .line 265
     .line 266
-    iget-object v11, v0, Landroidx/leanback/widget/HorizontalGridView;->M1:Landroid/graphics/LinearGradient;
+    iget-object v11, v0, Landroidx/leanback/widget/HorizontalGridView;->V1:Landroid/graphics/LinearGradient;
 
     .line 267
     .line 268
@@ -960,7 +960,7 @@
     .line 269
     .line 270
     .line 271
-    iget v11, v0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget v11, v0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 272
     .line 273
@@ -978,7 +978,7 @@
     int-to-float v11, v11
 
     .line 279
-    iget-object v14, v0, Landroidx/leanback/widget/HorizontalGridView;->K1:Landroid/graphics/Paint;
+    iget-object v14, v0, Landroidx/leanback/widget/HorizontalGridView;->T1:Landroid/graphics/Paint;
 
     .line 280
     .line 281
@@ -1017,7 +1017,7 @@
 
     .line 297
     .line 298
-    iget v13, v0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget v13, v0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 299
     .line 300
@@ -1048,7 +1048,7 @@
 
     .line 313
     .line 314
-    iget v2, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v2, v0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 315
     .line 316
@@ -1082,7 +1082,7 @@
     move-result v3
 
     .line 332
-    iget v6, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v6, v0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 333
     .line 334
@@ -1099,7 +1099,7 @@
     .line 339
     .line 340
     .line 341
-    iget v6, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v6, v0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 342
     .line 343
@@ -1128,7 +1128,7 @@
     .line 354
     .line 355
     .line 356
-    iget-object v3, v0, Landroidx/leanback/widget/HorizontalGridView;->Q1:Landroid/graphics/LinearGradient;
+    iget-object v3, v0, Landroidx/leanback/widget/HorizontalGridView;->Z1:Landroid/graphics/LinearGradient;
 
     .line 357
     .line 358
@@ -1137,7 +1137,7 @@
     .line 359
     .line 360
     .line 361
-    iget v3, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v3, v0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 362
     .line 363
@@ -1155,7 +1155,7 @@
     int-to-float v3, v3
 
     .line 369
-    iget-object v6, v0, Landroidx/leanback/widget/HorizontalGridView;->K1:Landroid/graphics/Paint;
+    iget-object v6, v0, Landroidx/leanback/widget/HorizontalGridView;->T1:Landroid/graphics/Paint;
 
     .line 370
     .line 371
@@ -1182,7 +1182,7 @@
 
     .line 381
     .line 382
-    iget v3, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v3, v0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 383
     .line 384
@@ -1207,20 +1207,20 @@
     .line 393
     .line 394
     .line 395
-    iget v2, v0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v0, v0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 396
     .line 397
-    sub-int/2addr v7, v2
+    sub-int/2addr v7, v0
 
     .line 398
-    neg-int v2, v7
+    neg-int v0, v7
 
     .line 399
-    int-to-float v2, v2
+    int-to-float v0, v0
 
     .line 400
-    invoke-virtual {v1, v2, v10}, Landroid/graphics/Canvas;->translate(FF)V
+    invoke-virtual {v1, v0, v10}, Landroid/graphics/Canvas;->translate(FF)V
 
     .line 401
     .line 402
@@ -1230,76 +1230,76 @@
 .end method
 
 .method public final getFadingLeftEdge()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->I1:Z
+    iget-boolean p0, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getFadingLeftEdgeLength()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget p0, p0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getFadingLeftEdgeOffset()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->O1:I
+    iget p0, p0, Landroidx/leanback/widget/HorizontalGridView;->X1:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getFadingRightEdge()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->J1:Z
+    iget-boolean p0, p0, Landroidx/leanback/widget/HorizontalGridView;->S1:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getFadingRightEdgeLength()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget p0, p0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getFadingRightEdgeOffset()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->S1:I
+    iget p0, p0, Landroidx/leanback/widget/HorizontalGridView;->b2:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final setFadingLeftEdge(Z)V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->I1:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:Z
 
     .line 2
     .line 3
@@ -1307,7 +1307,7 @@
 
     .line 4
     .line 5
-    iput-boolean p1, p0, Landroidx/leanback/widget/HorizontalGridView;->I1:Z
+    iput-boolean p1, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:Z
 
     .line 6
     .line 7
@@ -1318,7 +1318,7 @@
     const/4 p1, 0x0
 
     .line 10
-    iput-object p1, p0, Landroidx/leanback/widget/HorizontalGridView;->L1:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Landroidx/leanback/widget/HorizontalGridView;->U1:Landroid/graphics/Bitmap;
 
     .line 11
     .line 12
@@ -1341,7 +1341,7 @@
     .locals 9
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 2
     .line 3
@@ -1349,7 +1349,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iput p1, p0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 6
     .line 7
@@ -1361,7 +1361,7 @@
 
     .line 10
     .line 11
-    iget p1, p0, Landroidx/leanback/widget/HorizontalGridView;->N1:I
+    iget p1, p0, Landroidx/leanback/widget/HorizontalGridView;->W1:I
 
     .line 12
     .line 13
@@ -1393,7 +1393,7 @@
     .line 23
     .line 24
     .line 25
-    iput-object v1, p0, Landroidx/leanback/widget/HorizontalGridView;->M1:Landroid/graphics/LinearGradient;
+    iput-object v1, p0, Landroidx/leanback/widget/HorizontalGridView;->V1:Landroid/graphics/LinearGradient;
 
     .line 26
     .line 27
@@ -1404,7 +1404,7 @@
     const/4 p1, 0x0
 
     .line 29
-    iput-object p1, p0, Landroidx/leanback/widget/HorizontalGridView;->M1:Landroid/graphics/LinearGradient;
+    iput-object p1, p0, Landroidx/leanback/widget/HorizontalGridView;->V1:Landroid/graphics/LinearGradient;
 
     .line 30
     .line 31
@@ -1422,7 +1422,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->O1:I
+    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->X1:I
 
     .line 2
     .line 3
@@ -1430,7 +1430,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Landroidx/leanback/widget/HorizontalGridView;->O1:I
+    iput p1, p0, Landroidx/leanback/widget/HorizontalGridView;->X1:I
 
     .line 6
     .line 7
@@ -1447,7 +1447,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->J1:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->S1:Z
 
     .line 2
     .line 3
@@ -1455,7 +1455,7 @@
 
     .line 4
     .line 5
-    iput-boolean p1, p0, Landroidx/leanback/widget/HorizontalGridView;->J1:Z
+    iput-boolean p1, p0, Landroidx/leanback/widget/HorizontalGridView;->S1:Z
 
     .line 6
     .line 7
@@ -1466,7 +1466,7 @@
     const/4 p1, 0x0
 
     .line 10
-    iput-object p1, p0, Landroidx/leanback/widget/HorizontalGridView;->P1:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Landroidx/leanback/widget/HorizontalGridView;->Y1:Landroid/graphics/Bitmap;
 
     .line 11
     .line 12
@@ -1489,7 +1489,7 @@
     .locals 9
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 2
     .line 3
@@ -1497,7 +1497,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iput p1, p0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 6
     .line 7
@@ -1509,7 +1509,7 @@
 
     .line 10
     .line 11
-    iget p1, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:I
+    iget p1, p0, Landroidx/leanback/widget/HorizontalGridView;->a2:I
 
     .line 12
     .line 13
@@ -1541,7 +1541,7 @@
     .line 23
     .line 24
     .line 25
-    iput-object v1, p0, Landroidx/leanback/widget/HorizontalGridView;->Q1:Landroid/graphics/LinearGradient;
+    iput-object v1, p0, Landroidx/leanback/widget/HorizontalGridView;->Z1:Landroid/graphics/LinearGradient;
 
     .line 26
     .line 27
@@ -1552,7 +1552,7 @@
     const/4 p1, 0x0
 
     .line 29
-    iput-object p1, p0, Landroidx/leanback/widget/HorizontalGridView;->Q1:Landroid/graphics/LinearGradient;
+    iput-object p1, p0, Landroidx/leanback/widget/HorizontalGridView;->Z1:Landroid/graphics/LinearGradient;
 
     .line 30
     .line 31
@@ -1570,7 +1570,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->S1:I
+    iget v0, p0, Landroidx/leanback/widget/HorizontalGridView;->b2:I
 
     .line 2
     .line 3
@@ -1578,7 +1578,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Landroidx/leanback/widget/HorizontalGridView;->S1:I
+    iput p1, p0, Landroidx/leanback/widget/HorizontalGridView;->b2:I
 
     .line 6
     .line 7
@@ -1595,7 +1595,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Loy;->C1:Landroidx/leanback/widget/GridLayoutManager;
+    iget-object v0, p0, Lq00;->L1:Landroidx/leanback/widget/GridLayoutManager;
 
     .line 2
     .line 3
@@ -1603,7 +1603,7 @@
 
     .line 4
     .line 5
-    iput p1, v0, Landroidx/leanback/widget/GridLayoutManager;->K0:I
+    iput p1, v0, Landroidx/leanback/widget/GridLayoutManager;->T0:I
 
     .line 6
     .line 7
@@ -1621,7 +1621,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {}, Lxi4;->d()V
+    invoke-static {}, Lq05;->f()V
 
     .line 15
     .line 16
@@ -1633,9 +1633,9 @@
     .locals 1
 
     .line 20
-    iget-object v0, p0, Loy;->C1:Landroidx/leanback/widget/GridLayoutManager;
+    iget-object v0, p0, Lq00;->L1:Landroidx/leanback/widget/GridLayoutManager;
 
-    invoke-virtual {v0, p1}, Landroidx/leanback/widget/GridLayoutManager;->E1(I)V
+    invoke-virtual {v0, p1}, Landroidx/leanback/widget/GridLayoutManager;->D1(I)V
 
     .line 21
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->requestLayout()V
@@ -1647,7 +1647,7 @@
     .locals 2
 
     .line 1
-    sget v0, Lqa5;->lbHorizontalGridView_rowHeight:I
+    sget v0, Lfv5;->lbHorizontalGridView_rowHeight:I
 
     .line 2
     .line 3
@@ -1663,7 +1663,7 @@
 
     .line 8
     .line 9
-    sget v0, Lqa5;->lbHorizontalGridView_rowHeight:I
+    sget v0, Lfv5;->lbHorizontalGridView_rowHeight:I
 
     .line 10
     .line 11
@@ -1691,7 +1691,7 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->I1:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->R1:Z
 
     .line 2
     .line 3
@@ -1705,7 +1705,7 @@
 
     .line 6
     .line 7
-    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->J1:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/HorizontalGridView;->S1:Z
 
     .line 8
     .line 9

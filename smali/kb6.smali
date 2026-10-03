@@ -1,73 +1,150 @@
-.class public final Lkb6;
+.class public abstract synthetic Lkb6;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final a:Le64;
-
-.field public final b:Lip0;
-
-.field public final c:Lk27;
-
-.field public final d:Lk27;
-
-.field public final e:Lip0;
-
-.field public final f:Lip0;
-
-.field public final g:F
-
-.field public final h:Lhs7;
-
-.field public final i:Li67;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Le64;Lip0;Lk27;Lk27;Lip0;Lip0;FLhs7;Li67;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;->values()[Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lkb6;->a:Le64;
+    move-result-object v0
 
     .line 5
+    array-length v0, v0
+
     .line 6
-    iput-object p2, p0, Lkb6;->b:Lip0;
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    iput-object p3, p0, Lkb6;->c:Lk27;
+    :try_start_0
+    sget-object v1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;->SUCCESS:Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lkb6;->d:Lk27;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 11
     .line 12
-    iput-object p5, p0, Lkb6;->e:Lip0;
-
     .line 13
+    move-result v1
+
     .line 14
-    iput-object p6, p0, Lkb6;->f:Lip0;
+    const/4 v2, 0x1
 
     .line 15
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 16
-    iput p7, p0, Lkb6;->g:F
-
     .line 17
+    :catch_0
+    :try_start_1
+    sget-object v1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;->START:Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;
+
     .line 18
-    iput-object p8, p0, Lkb6;->h:Lhs7;
-
     .line 19
-    .line 20
-    iput-object p9, p0, Lkb6;->i:Li67;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 20
     .line 21
     .line 22
+    move-result v1
+
+    .line 23
+    const/4 v2, 0x2
+
+    .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 25
+    .line 26
+    :catch_1
+    :try_start_2
+    sget-object v1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;->PROGRESS:Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;
+
+    .line 27
+    .line 28
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    const/4 v2, 0x3
+
+    .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 34
+    .line 35
+    :catch_2
+    :try_start_3
+    sget-object v1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;->FAILURE:Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    const/4 v2, 0x4
+
+    .line 42
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 43
+    .line 44
+    :catch_3
+    :try_start_4
+    sget-object v1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;->LINK_NOT_CORRECT:Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFile;
+
+    .line 45
+    .line 46
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v1
+
+    .line 50
+    const/4 v2, 0x5
+
+    .line 51
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 52
+    .line 53
+    :catch_4
+    sput-object v0, Lkb6;->a:[I
+
+    .line 54
+    .line 55
     return-void
 .end method

@@ -1,17 +1,21 @@
 .class public final Lpa;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ldl0;
+.implements Lmy;
 
 
 # instance fields
-.field public final a:Lqa;
+.field public final a:Landroidx/compose/ui/platform/AndroidComposeView;
+
+.field public final b:Lsy;
+
+.field public final c:Landroid/view/autofill/AutofillId;
 
 
 # direct methods
-.method public constructor <init>(Lqa;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/AndroidComposeView;Lsy;)V
     .locals 0
 
     .line 1
@@ -20,82 +24,73 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lpa;->a:Lqa;
+    iput-object p1, p0, Lpa;->a:Landroidx/compose/ui/platform/AndroidComposeView;
 
     .line 5
     .line 6
-    return-void
-.end method
+    iput-object p2, p0, Lpa;->b:Lsy;
 
-
-# virtual methods
-.method public final a(Lbl0;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lpa;->a:Lqa;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, Lqa;->a:Landroid/content/ClipboardManager;
-
-    .line 4
-    .line 5
-    if-nez p1, :cond_1
-
-    .line 6
     .line 7
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 8
+    const/4 p2, 0x1
+
     .line 9
-    const/16 v1, 0x1c
+    invoke-virtual {p1, p2}, Landroid/view/View;->setImportantForAutofill(I)V
 
     .line 10
     .line 11
-    if-lt p1, v1, :cond_0
-
     .line 12
-    .line 13
-    invoke-static {v0}, Luk;->c(Landroid/content/ClipboardManager;)V
+    invoke-static {p1}, Lqz7;->b(Landroid/view/View;)Lqy;
 
+    .line 13
     .line 14
     .line 15
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    const-string p1, ""
-
-    .line 18
-    .line 19
-    invoke-static {p1, p1}, Landroid/content/ClipData;->newPlainText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/content/ClipData;
-
-    .line 20
-    .line 21
-    .line 22
     move-result-object p1
 
-    .line 23
-    invoke-virtual {v0, p1}, Landroid/content/ClipboardManager;->setPrimaryClip(Landroid/content/ClipData;)V
+    .line 16
+    if-eqz p1, :cond_0
 
-    .line 24
-    .line 25
-    .line 26
+    .line 17
+    .line 18
+    iget-object p1, p1, Lqy;->a:Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    check-cast p1, Landroid/view/autofill/AutofillId;
+
+    .line 21
+    .line 22
     goto :goto_0
 
-    .line 27
-    :cond_1
-    iget-object p1, p1, Lbl0;->a:Landroid/content/ClipData;
+    .line 23
+    :cond_0
+    const/4 p1, 0x0
 
+    .line 24
+    :goto_0
+    if-eqz p1, :cond_1
+
+    .line 25
+    .line 26
+    iput-object p1, p0, Lpa;->c:Landroid/view/autofill/AutofillId;
+
+    .line 27
     .line 28
+    return-void
+
     .line 29
-    invoke-virtual {v0, p1}, Landroid/content/ClipboardManager;->setPrimaryClip(Landroid/content/ClipData;)V
+    :cond_1
+    const-string p0, "Required value was null."
 
     .line 30
     .line 31
+    invoke-static {p0}, Lw31;->i(Ljava/lang/String;)Lwt3;
+
     .line 32
-    :goto_0
-    return-void
+    .line 33
+    .line 34
+    move-result-object p0
+
+    .line 35
+    throw p0
 .end method

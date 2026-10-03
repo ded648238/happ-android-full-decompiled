@@ -1,26 +1,34 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class i27 {
-    public int a;
+import java.util.Iterator;
 
-    public i27(int i) {
-        this.a = i;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class i27 implements my0, Iterable, xn3 {
+    public final wz6 X;
+    public final int Y;
+    public final i16 Z;
+
+    public i27(wz6 wz6Var, int i, tk2 tk2Var, i16 i16Var) {
+        this.X = wz6Var;
+        this.Y = i;
+        this.Z = i16Var;
     }
 
     public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+        if (!(obj instanceof i27)) {
+            return false;
         }
-        return (obj instanceof i27) && this.a == ((i27) obj).a;
+        i27 i27Var = (i27) obj;
+        return i27Var.Y == this.Y && i27Var.X == this.X && i27Var.Z.equals(this.Z);
     }
 
     public final int hashCode() {
-        return this.a;
+        return this.Z.hashCode() + ((this.X.hashCode() + (this.Y * 31)) * 31);
     }
 
-    public final String toString() {
-        return ea0.p("Line(start=", this.a, ")");
+    @Override // java.lang.Iterable
+    public final Iterator iterator() {
+        return new h27(this.X, this.Y, null, this.Z);
     }
 }

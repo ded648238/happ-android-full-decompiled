@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/AndroidLogHandler;
 .super Ljava/util/logging/Handler;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -15,7 +15,7 @@
         "()V",
         "Ljava/util/logging/LogRecord;",
         "record",
-        "Lbh7;",
+        "Lr98;",
         "publish",
         "(Ljava/util/logging/LogRecord;)V",
         "flush",
@@ -86,7 +86,7 @@
 .end method
 
 .method public publish(Ljava/util/logging/LogRecord;)V
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -94,7 +94,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lokhttp3/internal/platform/android/AndroidLog;->INSTANCE:Lokhttp3/internal/platform/android/AndroidLog;
+    sget-object p0, Lokhttp3/internal/platform/android/AndroidLog;->INSTANCE:Lokhttp3/internal/platform/android/AndroidLog;
 
     .line 5
     .line 6
@@ -103,10 +103,10 @@
     .line 7
     .line 8
     .line 9
-    move-result-object v1
+    move-result-object v0
 
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 11
     .line 12
@@ -116,7 +116,7 @@
     .line 14
     .line 15
     .line 16
-    move-result v2
+    move-result v1
 
     .line 17
     invoke-virtual {p1}, Ljava/util/logging/LogRecord;->getMessage()Ljava/lang/String;
@@ -124,10 +124,10 @@
     .line 18
     .line 19
     .line 20
-    move-result-object v3
+    move-result-object v2
 
     .line 21
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 22
     .line 23
@@ -140,7 +140,7 @@
     move-result-object p1
 
     .line 28
-    invoke-virtual {v0, v1, v2, v3, p1}, Lokhttp3/internal/platform/android/AndroidLog;->androidLog$okhttp(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {p0, v0, v1, v2, p1}, Lokhttp3/internal/platform/android/AndroidLog;->androidLog$okhttp(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
 
     .line 29
     .line 30

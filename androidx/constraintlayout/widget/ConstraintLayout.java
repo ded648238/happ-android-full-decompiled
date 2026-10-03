@@ -11,28 +11,28 @@ import android.util.SparseArray;
 import android.util.SparseIntArray;
 import android.view.View;
 import android.view.ViewGroup;
-import defpackage.an7;
-import defpackage.bb5;
-import defpackage.cg0;
-import defpackage.du0;
-import defpackage.h02;
-import defpackage.h71;
-import defpackage.hl3;
-import defpackage.ht0;
-import defpackage.i71;
-import defpackage.i96;
-import defpackage.it0;
-import defpackage.oh2;
-import defpackage.oz;
-import defpackage.qx;
-import defpackage.rv7;
-import defpackage.sg2;
-import defpackage.td2;
-import defpackage.ud2;
-import defpackage.ur7;
-import defpackage.uv3;
-import defpackage.yt0;
-import defpackage.zt0;
+import defpackage.dw6;
+import defpackage.e11;
+import defpackage.eq2;
+import defpackage.f11;
+import defpackage.fq2;
+import defpackage.hm0;
+import defpackage.j11;
+import defpackage.ka2;
+import defpackage.l24;
+import defpackage.mf1;
+import defpackage.nn3;
+import defpackage.p01;
+import defpackage.pq;
+import defpackage.q01;
+import defpackage.s10;
+import defpackage.uz;
+import defpackage.vh8;
+import defpackage.vm8;
+import defpackage.wm0;
+import defpackage.xt2;
+import defpackage.xu2;
+import defpackage.zu5;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -47,43 +47,43 @@ import org.conscrypt.metrics.ConscryptStatsLog;
 import org.xmlpull.v1.XmlPullParserException;
 import su.happ.proxyutility.dto.XRayConfig;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ConstraintLayout extends ViewGroup {
-    public static i96 i0;
-    public final SparseArray Q;
-    public final ArrayList R;
-    public final zt0 S;
-    public int T;
-    public int U;
-    public int V;
-    public int W;
-    public boolean a0;
-    public int b0;
-    public d c0;
-    public h71 d0;
-    public int e0;
-    public HashMap f0;
-    public final SparseArray g0;
-    public final b h0;
+    public static dw6 r0;
+    public final SparseArray c0;
+    public final ArrayList d0;
+    public final f11 e0;
+    public int f0;
+    public int g0;
+    public int h0;
+    public int i0;
+    public boolean j0;
+    public int k0;
+    public d l0;
+    public hm0 m0;
+    public int n0;
+    public HashMap o0;
+    public final SparseArray p0;
+    public final b q0;
 
     public ConstraintLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.Q = new SparseArray();
-        this.R = new ArrayList(4);
-        this.S = new zt0();
-        this.T = 0;
-        this.U = 0;
-        this.V = Integer.MAX_VALUE;
-        this.W = Integer.MAX_VALUE;
-        this.a0 = true;
-        this.b0 = 257;
-        this.c0 = null;
-        this.d0 = null;
-        this.e0 = -1;
-        this.f0 = new HashMap();
-        this.g0 = new SparseArray();
-        this.h0 = new b(this, this);
+        this.c0 = new SparseArray();
+        this.d0 = new ArrayList(4);
+        this.e0 = new f11();
+        this.f0 = 0;
+        this.g0 = 0;
+        this.h0 = Integer.MAX_VALUE;
+        this.i0 = Integer.MAX_VALUE;
+        this.j0 = true;
+        this.k0 = 257;
+        this.l0 = null;
+        this.m0 = null;
+        this.n0 = -1;
+        this.o0 = new HashMap();
+        this.p0 = new SparseArray();
+        this.q0 = new b(this, this);
         i(attributeSet, 0);
     }
 
@@ -153,24 +153,24 @@ public class ConstraintLayout extends ViewGroup {
         layoutParams.j0 = Integer.MIN_VALUE;
         layoutParams.k0 = Integer.MIN_VALUE;
         layoutParams.l0 = 0.5f;
-        layoutParams.p0 = new yt0();
+        layoutParams.p0 = new e11();
         return layoutParams;
     }
 
     private int getPaddingWidth() {
-        int iMax = Math.max(0, getPaddingRight()) + Math.max(0, getPaddingLeft());
-        int iMax2 = Math.max(0, getPaddingEnd()) + Math.max(0, getPaddingStart());
-        return iMax2 > 0 ? iMax2 : iMax;
+        int max = Math.max(0, getPaddingRight()) + Math.max(0, getPaddingLeft());
+        int max2 = Math.max(0, getPaddingEnd()) + Math.max(0, getPaddingStart());
+        return max2 > 0 ? max2 : max;
     }
 
-    public static i96 getSharedValues() {
-        if (i0 == null) {
-            i96 i96Var = new i96();
+    public static dw6 getSharedValues() {
+        if (r0 == null) {
+            dw6 dw6Var = new dw6();
             new SparseIntArray();
             new HashMap();
-            i0 = i96Var;
+            r0 = dw6Var;
         }
-        return i0;
+        return r0;
     }
 
     @Override // android.view.ViewGroup
@@ -182,7 +182,7 @@ public class ConstraintLayout extends ViewGroup {
     public void dispatchDraw(Canvas canvas) {
         Object tag;
         int size;
-        ArrayList arrayList = this.R;
+        ArrayList arrayList = this.d0;
         if (arrayList != null && (size = arrayList.size()) > 0) {
             for (int i = 0; i < size; i++) {
                 ((ConstraintHelper) arrayList.get(i)).getClass();
@@ -196,27 +196,26 @@ public class ConstraintLayout extends ViewGroup {
             for (int i2 = 0; i2 < childCount; i2++) {
                 View childAt = getChildAt(i2);
                 if (childAt.getVisibility() != 8 && (tag = childAt.getTag()) != null && (tag instanceof String)) {
-                    String[] strArrSplit = ((String) tag).split(",");
-                    if (strArrSplit.length == 4) {
-                        int i3 = Integer.parseInt(strArrSplit[0]);
-                        int i4 = Integer.parseInt(strArrSplit[1]);
-                        int i5 = Integer.parseInt(strArrSplit[2]);
-                        int i6 = (int) ((i3 / 1080.0f) * width);
-                        int i7 = (int) ((i4 / 1920.0f) * height);
-                        int i8 = (int) ((Integer.parseInt(strArrSplit[3]) / 1920.0f) * height);
+                    String[] split = ((String) tag).split(",");
+                    if (split.length == 4) {
+                        int parseInt = Integer.parseInt(split[0]);
+                        int parseInt2 = Integer.parseInt(split[1]);
+                        int parseInt3 = Integer.parseInt(split[2]);
+                        int i3 = (int) ((parseInt / 1080.0f) * width);
+                        int i4 = (int) ((parseInt2 / 1920.0f) * height);
                         Paint paint = new Paint();
                         paint.setColor(-65536);
-                        float f = i6;
-                        float f2 = i7;
-                        float f3 = i6 + ((int) ((i5 / 1080.0f) * width));
+                        float f = i3;
+                        float f2 = i4;
+                        float f3 = i3 + ((int) ((parseInt3 / 1080.0f) * width));
                         canvas.drawLine(f, f2, f3, f2, paint);
-                        float f4 = i7 + i8;
-                        canvas.drawLine(f3, f2, f3, f4, paint);
-                        canvas.drawLine(f3, f4, f, f4, paint);
-                        canvas.drawLine(f, f4, f, f2, paint);
+                        float parseInt4 = i4 + ((int) ((Integer.parseInt(split[3]) / 1920.0f) * height));
+                        canvas.drawLine(f3, f2, f3, parseInt4, paint);
+                        canvas.drawLine(f3, parseInt4, f, parseInt4, paint);
+                        canvas.drawLine(f, parseInt4, f, f2, paint);
                         paint.setColor(-16711936);
-                        canvas.drawLine(f, f2, f3, f4, paint);
-                        canvas.drawLine(f, f4, f3, f2, paint);
+                        canvas.drawLine(f, f2, f3, parseInt4, paint);
+                        canvas.drawLine(f, parseInt4, f3, f2, paint);
                     }
                 }
             }
@@ -225,7 +224,7 @@ public class ConstraintLayout extends ViewGroup {
 
     @Override // android.view.View
     public final void forceLayout() {
-        this.a0 = true;
+        this.j0 = true;
         super.forceLayout();
     }
 
@@ -240,58 +239,60 @@ public class ConstraintLayout extends ViewGroup {
     }
 
     public int getMaxHeight() {
-        return this.W;
+        return this.i0;
     }
 
     public int getMaxWidth() {
-        return this.V;
+        return this.h0;
     }
 
     public int getMinHeight() {
-        return this.U;
+        return this.g0;
     }
 
     public int getMinWidth() {
-        return this.T;
+        return this.f0;
     }
 
     public int getOptimizationLevel() {
-        return this.S.D0;
+        return this.e0.D0;
     }
 
     public String getSceneString() {
         int id;
         StringBuilder sb = new StringBuilder();
-        zt0 zt0Var = this.S;
-        if (zt0Var.j == null) {
+        f11 f11Var = this.e0;
+        if (f11Var.j == null) {
             int id2 = getId();
             if (id2 != -1) {
-                zt0Var.j = getContext().getResources().getResourceEntryName(id2);
+                f11Var.j = getContext().getResources().getResourceEntryName(id2);
             } else {
-                zt0Var.j = "parent";
+                f11Var.j = "parent";
             }
         }
-        if (zt0Var.h0 == null) {
-            zt0Var.h0 = zt0Var.j;
+        if (f11Var.h0 == null) {
+            f11Var.h0 = f11Var.j;
         }
-        for (yt0 yt0Var : zt0Var.q0) {
-            View view = yt0Var.f0;
+        Iterator it = f11Var.q0.iterator();
+        while (it.hasNext()) {
+            e11 e11Var = (e11) it.next();
+            View view = e11Var.f0;
             if (view != null) {
-                if (yt0Var.j == null && (id = view.getId()) != -1) {
-                    yt0Var.j = getContext().getResources().getResourceEntryName(id);
+                if (e11Var.j == null && (id = view.getId()) != -1) {
+                    e11Var.j = getContext().getResources().getResourceEntryName(id);
                 }
-                if (yt0Var.h0 == null) {
-                    yt0Var.h0 = yt0Var.j;
+                if (e11Var.h0 == null) {
+                    e11Var.h0 = e11Var.j;
                 }
             }
         }
-        zt0Var.n(sb);
+        f11Var.n(sb);
         return sb.toString();
     }
 
-    public final yt0 h(View view) {
+    public final e11 h(View view) {
         if (view == this) {
-            return this.S;
+            return this.e0;
         }
         if (view == null) {
             return null;
@@ -307,80 +308,84 @@ public class ConstraintLayout extends ViewGroup {
     }
 
     public final void i(AttributeSet attributeSet, int i) {
-        zt0 zt0Var = this.S;
-        zt0Var.f0 = this;
-        b bVar = this.h0;
-        zt0Var.u0 = bVar;
-        zt0Var.s0.h = bVar;
-        this.Q.put(getId(), this);
-        this.c0 = null;
+        f11 f11Var = this.e0;
+        f11Var.f0 = this;
+        b bVar = this.q0;
+        f11Var.u0 = bVar;
+        f11Var.s0.h = bVar;
+        this.c0.put(getId(), this);
+        this.l0 = null;
         if (attributeSet != null) {
-            TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, bb5.ConstraintLayout_Layout, i, 0);
-            int indexCount = typedArrayObtainStyledAttributes.getIndexCount();
+            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, zu5.ConstraintLayout_Layout, i, 0);
+            int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i2 = 0; i2 < indexCount; i2++) {
-                int index = typedArrayObtainStyledAttributes.getIndex(i2);
-                if (index == bb5.ConstraintLayout_Layout_android_minWidth) {
-                    this.T = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.T);
-                } else if (index == bb5.ConstraintLayout_Layout_android_minHeight) {
-                    this.U = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.U);
-                } else if (index == bb5.ConstraintLayout_Layout_android_maxWidth) {
-                    this.V = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.V);
-                } else if (index == bb5.ConstraintLayout_Layout_android_maxHeight) {
-                    this.W = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.W);
-                } else if (index == bb5.ConstraintLayout_Layout_layout_optimizationLevel) {
-                    this.b0 = typedArrayObtainStyledAttributes.getInt(index, this.b0);
-                } else if (index == bb5.ConstraintLayout_Layout_layoutDescription) {
-                    int resourceId = typedArrayObtainStyledAttributes.getResourceId(index, 0);
+                int index = obtainStyledAttributes.getIndex(i2);
+                if (index == zu5.ConstraintLayout_Layout_android_minWidth) {
+                    this.f0 = obtainStyledAttributes.getDimensionPixelOffset(index, this.f0);
+                } else if (index == zu5.ConstraintLayout_Layout_android_minHeight) {
+                    this.g0 = obtainStyledAttributes.getDimensionPixelOffset(index, this.g0);
+                } else if (index == zu5.ConstraintLayout_Layout_android_maxWidth) {
+                    this.h0 = obtainStyledAttributes.getDimensionPixelOffset(index, this.h0);
+                } else if (index == zu5.ConstraintLayout_Layout_android_maxHeight) {
+                    this.i0 = obtainStyledAttributes.getDimensionPixelOffset(index, this.i0);
+                } else if (index == zu5.ConstraintLayout_Layout_layout_optimizationLevel) {
+                    this.k0 = obtainStyledAttributes.getInt(index, this.k0);
+                } else if (index == zu5.ConstraintLayout_Layout_layoutDescription) {
+                    int resourceId = obtainStyledAttributes.getResourceId(index, 0);
                     if (resourceId != 0) {
                         try {
                             j(resourceId);
                         } catch (Resources.NotFoundException unused) {
-                            this.d0 = null;
+                            this.m0 = null;
                         }
                     }
-                } else if (index == bb5.ConstraintLayout_Layout_constraintSet) {
-                    int resourceId2 = typedArrayObtainStyledAttributes.getResourceId(index, 0);
+                } else if (index == zu5.ConstraintLayout_Layout_constraintSet) {
+                    int resourceId2 = obtainStyledAttributes.getResourceId(index, 0);
                     try {
                         d dVar = new d();
-                        this.c0 = dVar;
+                        this.l0 = dVar;
                         dVar.e(getContext(), resourceId2);
                     } catch (Resources.NotFoundException unused2) {
-                        this.c0 = null;
+                        this.l0 = null;
                     }
-                    this.e0 = resourceId2;
+                    this.n0 = resourceId2;
                 }
             }
-            typedArrayObtainStyledAttributes.recycle();
+            obtainStyledAttributes.recycle();
         }
-        zt0Var.D0 = this.b0;
-        hl3.q = zt0Var.W(512);
+        f11Var.D0 = this.k0;
+        l24.q = f11Var.W(512);
     }
 
     public final void j(int i) {
         String str;
         Context context = getContext();
-        h71 h71Var = new h71(13, false);
-        h71Var.R = new SparseArray();
-        h71Var.S = new SparseArray();
+        hm0 hm0Var = new hm0(7, false);
+        hm0Var.Y = new SparseArray();
+        hm0Var.Z = new SparseArray();
         XmlResourceParser xml = context.getResources().getXml(i);
         try {
-            ht0 ht0Var = null;
+            p01 p01Var = null;
             for (int eventType = xml.getEventType(); eventType != 1; eventType = xml.next()) {
                 if (eventType == 2) {
                     String name = xml.getName();
                     switch (name.hashCode()) {
                         case -1349929691:
                             if (name.equals("ConstraintSet")) {
-                                h71Var.l(context, xml);
+                                hm0Var.V(context, xml);
+                                break;
+                            } else {
+                                break;
                             }
-                            break;
                         case 80204913:
                             if (name.equals("State")) {
-                                ht0 ht0Var2 = new ht0(context, xml);
-                                ((SparseArray) h71Var.R).put(ht0Var2.b, ht0Var2);
-                                ht0Var = ht0Var2;
+                                p01 p01Var2 = new p01(context, xml);
+                                ((SparseArray) hm0Var.Y).put(p01Var2.b, p01Var2);
+                                p01Var = p01Var2;
+                                break;
+                            } else {
+                                break;
                             }
-                            break;
                         case 1382829617:
                             str = "StateSet";
                             name.equals(str);
@@ -391,7192 +396,583 @@ public class ConstraintLayout extends ViewGroup {
                             break;
                         case 1901439077:
                             if (name.equals("Variant")) {
-                                it0 it0Var = new it0(context, xml);
-                                if (ht0Var != null) {
-                                    ht0Var.a.add(it0Var);
+                                q01 q01Var = new q01(context, xml);
+                                if (p01Var != null) {
+                                    p01Var.a.add(q01Var);
+                                    break;
+                                } else {
+                                    break;
                                 }
+                            } else {
+                                break;
                             }
-                            break;
                     }
                 }
             }
         } catch (IOException | XmlPullParserException unused) {
         }
-        this.d0 = h71Var;
+        this.m0 = hm0Var;
     }
 
-    /* JADX WARN: Code duplicated, block: B:100:0x01d7 A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:101:0x01d9 A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:106:0x01e2  */
-    /* JADX WARN: Code duplicated, block: B:108:0x01f5  */
-    /* JADX WARN: Code duplicated, block: B:110:0x01fb  */
-    /* JADX WARN: Code duplicated, block: B:113:0x0204  */
-    /* JADX WARN: Code duplicated, block: B:117:0x0211 A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:161:0x030b  */
-    /* JADX WARN: Code duplicated, block: B:163:0x0329  */
-    /* JADX WARN: Code duplicated, block: B:165:0x032c  */
-    /* JADX WARN: Code duplicated, block: B:170:0x034e  */
-    /* JADX WARN: Code duplicated, block: B:179:0x036b  */
-    /* JADX WARN: Code duplicated, block: B:201:0x03a7  */
-    /* JADX WARN: Code duplicated, block: B:203:0x03b3  */
-    /* JADX WARN: Code duplicated, block: B:206:0x03bf A[LOOP:11: B:204:0x03b9->B:206:0x03bf, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:208:0x0402  */
-    /* JADX WARN: Code duplicated, block: B:211:0x0420  */
-    /* JADX WARN: Code duplicated, block: B:212:0x0427  */
-    /* JADX WARN: Code duplicated, block: B:214:0x042b  */
-    /* JADX WARN: Code duplicated, block: B:216:0x0435 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:217:0x0437  */
-    /* JADX WARN: Code duplicated, block: B:218:0x0439  */
-    /* JADX WARN: Code duplicated, block: B:220:0x043c  */
-    /* JADX WARN: Code duplicated, block: B:221:0x043e  */
-    /* JADX WARN: Code duplicated, block: B:223:0x0443  */
-    /* JADX WARN: Code duplicated, block: B:225:0x044b  */
-    /* JADX WARN: Code duplicated, block: B:231:0x0454  */
-    /* JADX WARN: Code duplicated, block: B:233:0x0465  */
-    /* JADX WARN: Code duplicated, block: B:235:0x0471  */
-    /* JADX WARN: Code duplicated, block: B:236:0x0476  */
-    /* JADX WARN: Code duplicated, block: B:254:0x04a6  */
-    /* JADX WARN: Code duplicated, block: B:260:0x04b2  */
-    /* JADX WARN: Code duplicated, block: B:262:0x04b5  */
-    /* JADX WARN: Code duplicated, block: B:27:0x00b3 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:286:0x04ea  */
-    /* JADX WARN: Code duplicated, block: B:289:0x04ee  */
-    /* JADX WARN: Code duplicated, block: B:28:0x00b5 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:293:0x0505 A[LOOP:4: B:292:0x0503->B:293:0x0505, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:296:0x0511  */
-    /* JADX WARN: Code duplicated, block: B:298:0x0514 A[LOOP:5: B:297:0x0512->B:298:0x0514, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:29:0x00b7  */
-    /* JADX WARN: Code duplicated, block: B:301:0x052a  */
-    /* JADX WARN: Code duplicated, block: B:303:0x052f  */
-    /* JADX WARN: Code duplicated, block: B:305:0x0536  */
-    /* JADX WARN: Code duplicated, block: B:307:0x0539  */
-    /* JADX WARN: Code duplicated, block: B:310:0x053f  */
-    /* JADX WARN: Code duplicated, block: B:311:0x0541  */
-    /* JADX WARN: Code duplicated, block: B:314:0x055a  */
-    /* JADX WARN: Code duplicated, block: B:316:0x0564  */
-    /* JADX WARN: Code duplicated, block: B:317:0x056c  */
-    /* JADX WARN: Code duplicated, block: B:319:0x058d  */
-    /* JADX WARN: Code duplicated, block: B:31:0x00ba  */
-    /* JADX WARN: Code duplicated, block: B:321:0x0592  */
-    /* JADX WARN: Code duplicated, block: B:326:0x05b4  */
-    /* JADX WARN: Code duplicated, block: B:328:0x05b9  */
-    /* JADX WARN: Code duplicated, block: B:32:0x00c4 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:337:0x05f1  */
-    /* JADX WARN: Code duplicated, block: B:339:0x05f5  */
-    /* JADX WARN: Code duplicated, block: B:33:0x00c6  */
-    /* JADX WARN: Code duplicated, block: B:341:0x05ff  */
-    /* JADX WARN: Code duplicated, block: B:345:0x0607  */
-    /* JADX WARN: Code duplicated, block: B:351:0x0615 A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:359:0x062c A[PHI: r17
-      0x062c: PHI (r17v8 int) = (r17v6 int), (r17v6 int), (r17v6 int), (r17v9 int) binds: [B:349:0x0612, B:358:0x062a, B:355:0x0625, B:344:0x0604] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:362:0x0647  */
-    /* JADX WARN: Code duplicated, block: B:365:0x065c  */
-    /* JADX WARN: Code duplicated, block: B:367:0x0661  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00cf  */
-    /* JADX WARN: Code duplicated, block: B:370:0x0680  */
-    /* JADX WARN: Code duplicated, block: B:372:0x0683  */
-    /* JADX WARN: Code duplicated, block: B:374:0x0686  */
-    /* JADX WARN: Code duplicated, block: B:376:0x068b  */
-    /* JADX WARN: Code duplicated, block: B:379:0x06aa  */
-    /* JADX WARN: Code duplicated, block: B:37:0x00d1 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:381:0x06ad  */
-    /* JADX WARN: Code duplicated, block: B:384:0x06b2  */
-    /* JADX WARN: Code duplicated, block: B:38:0x00d3  */
-    /* JADX WARN: Code duplicated, block: B:390:0x06ce A[LOOP:7: B:335:0x05ec->B:390:0x06ce, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:393:0x01cf A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:39:0x00da  */
-    /* JADX WARN: Code duplicated, block: B:405:0x039a A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:421:0x04f2 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:427:0x06d9 A[EDGE_INSN: B:427:0x06d9->B:391:0x06d9 BREAK  A[LOOP:7: B:335:0x05ec->B:390:0x06ce], SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:428:0x06d9 A[EDGE_INSN: B:428:0x06d9->B:391:0x06d9 BREAK  A[LOOP:7: B:335:0x05ec->B:390:0x06ce], SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:42:0x00ec  */
-    /* JADX WARN: Code duplicated, block: B:432:0x06b7 A[ADDED_TO_REGION, REMOVE, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:44:0x00f2  */
-    /* JADX WARN: Code duplicated, block: B:49:0x0122  */
-    /* JADX WARN: Code duplicated, block: B:50:0x0125  */
-    /* JADX WARN: Code duplicated, block: B:53:0x012d  */
-    /* JADX WARN: Code duplicated, block: B:54:0x0130  */
-    /* JADX WARN: Code duplicated, block: B:57:0x015a  */
-    /* JADX WARN: Code duplicated, block: B:61:0x0163  */
-    /* JADX WARN: Code duplicated, block: B:64:0x0168  */
-    /* JADX WARN: Code duplicated, block: B:66:0x016b  */
-    /* JADX WARN: Code duplicated, block: B:68:0x0184  */
-    /* JADX WARN: Code duplicated, block: B:70:0x0189  */
-    /* JADX WARN: Code duplicated, block: B:73:0x0190  */
-    /* JADX WARN: Code duplicated, block: B:74:0x0192  */
-    /* JADX WARN: Code duplicated, block: B:76:0x0195 A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:80:0x019f  */
-    /* JADX WARN: Code duplicated, block: B:83:0x01a6 A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:85:0x01ad  */
-    /* JADX WARN: Code duplicated, block: B:98:0x01cf A[PHI: r2 r12
-      0x01cf: PHI (r2v3 boolean) = (r2v2 boolean), (r2v68 boolean) binds: [B:63:0x0166, B:393:0x01cf] A[DONT_GENERATE, DONT_INLINE]
-      0x01cf: PHI (r12v9 int) = (r12v8 int), (r12v28 int) binds: [B:63:0x0166, B:393:0x01cf] A[DONT_GENERATE, DONT_INLINE]] */
-    public final void k(zt0 zt0Var, int i, int i2, int i3) {
-        int iMin;
-        int iMax;
-        int iMin2;
-        int iMax2;
+    /* JADX WARN: Removed duplicated region for block: B:106:0x036e  */
+    /* JADX WARN: Removed duplicated region for block: B:92:0x0351  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final void k(f11 f11Var, int i, int i2, int i3) {
         int i4;
-        int iQ;
-        i71 i71Var;
-        int[] iArr;
+        int max;
         int i5;
+        int max2;
         int i6;
-        int i7;
-        rv7 rv7Var;
-        zt0 zt0Var2;
-        ArrayList arrayList;
-        oz ozVar;
-        int size;
-        int iQ2;
-        int iK;
-        boolean zW;
+        char c;
         boolean z;
-        boolean z2;
+        int i7;
         int i8;
+        boolean z2;
+        s10 s10Var;
         int i9;
         boolean z3;
-        boolean z4;
-        oz ozVar2;
         int i10;
-        boolean zT;
-        int size2;
-        int[] iArr2;
-        boolean z5;
-        boolean z6;
-        int iMax3;
-        int iMax4;
         int i11;
-        boolean z7;
-        boolean z8;
+        boolean x;
+        s10 s10Var2;
+        boolean z4;
+        boolean z5;
+        s10 s10Var3;
+        boolean z6;
         int i12;
-        oz ozVar3;
-        boolean zA;
+        xu2 xu2Var;
+        vh8 vh8Var;
         int i13;
         int i14;
         int i15;
-        yt0 yt0Var;
         int i16;
-        int iQ3;
-        int iK2;
         int i17;
-        oz ozVar4;
-        int iQ4;
         int i18;
-        int iK3;
-        yt0 yt0Var2;
-        int iQ5;
-        int iK4;
-        boolean z9;
-        oz ozVar5;
-        int iQ6;
-        boolean z10;
-        int iK5;
-        int size3;
-        oz ozVar6;
         int i19;
-        ConstraintLayout constraintLayout;
-        int childCount;
-        ArrayList arrayList2;
-        int i20;
-        int size4;
-        int i21;
-        yt0 yt0Var3;
-        int iJ;
-        int i22;
-        boolean z11;
-        oh2 oh2Var;
-        an7 an7Var;
-        int iMin3;
-        int iMin4;
-        int i23;
-        zt0 zt0Var3;
-        int i24;
-        int i25;
-        boolean z12;
-        boolean z13;
-        int i26;
-        int i27;
-        int i28;
-        int i29;
-        boolean z14;
+        boolean z7;
         Iterator it;
-        boolean z15;
-        ur7 ur7Var;
-        int i30;
-        boolean z16;
-        yt0 yt0Var4;
-        int i31;
-        int[] iArr3;
-        boolean z17;
-        boolean z18;
-        boolean z19;
+        Iterator it2;
         int mode = View.MeasureSpec.getMode(i2);
-        int size5 = View.MeasureSpec.getSize(i2);
+        int size = View.MeasureSpec.getSize(i2);
         int mode2 = View.MeasureSpec.getMode(i3);
-        int size6 = View.MeasureSpec.getSize(i3);
-        int iMax5 = Math.max(0, getPaddingTop());
-        int iMax6 = Math.max(0, getPaddingBottom());
-        int i32 = iMax5 + iMax6;
+        int size2 = View.MeasureSpec.getSize(i3);
+        int max3 = Math.max(0, getPaddingTop());
+        int max4 = Math.max(0, getPaddingBottom());
+        int i20 = max3 + max4;
         int paddingWidth = getPaddingWidth();
-        b bVar = this.h0;
-        bVar.b = iMax5;
-        bVar.c = iMax6;
+        b bVar = this.q0;
+        bVar.b = max3;
+        bVar.c = max4;
         bVar.d = paddingWidth;
-        bVar.e = i32;
+        bVar.e = i20;
         bVar.f = i2;
         bVar.g = i3;
-        int iMax7 = Math.max(0, getPaddingStart());
-        int iMax8 = Math.max(0, getPaddingEnd());
-        int i33 = 1;
-        if (iMax7 <= 0 && iMax8 <= 0) {
-            iMax7 = Math.max(0, getPaddingLeft());
+        int max5 = Math.max(0, getPaddingStart());
+        int max6 = Math.max(0, getPaddingEnd());
+        int i21 = 1;
+        if (max5 <= 0 && max6 <= 0) {
+            max5 = Math.max(0, getPaddingLeft());
         } else if ((getContext().getApplicationInfo().flags & 4194304) != 0 && 1 == getLayoutDirection()) {
-            iMax7 = iMax8;
+            max5 = max6;
         }
-        int i34 = size5 - paddingWidth;
-        int i35 = size6 - i32;
-        int i36 = bVar.e;
-        int i37 = bVar.d;
-        int childCount2 = getChildCount();
-        if (mode == Integer.MIN_VALUE) {
-            if (childCount2 == 0) {
-                iMax = Math.max(0, this.T);
+        int i22 = size - paddingWidth;
+        int i23 = size2 - i20;
+        int i24 = bVar.e;
+        int i25 = bVar.d;
+        int childCount = getChildCount();
+        if (mode != Integer.MIN_VALUE) {
+            if (mode != 0) {
+                if (mode != 1073741824) {
+                    i4 = 0;
+                } else {
+                    i4 = Math.min(this.h0 - i25, i22);
+                    i21 = 1;
+                }
+            } else if (childCount == 0) {
+                max = Math.max(0, this.f0);
+                i4 = max;
+                i21 = 2;
             } else {
-                iMin = i34;
+                i4 = 0;
+                i21 = 2;
             }
-            i33 = 2;
-            if (mode2 != Integer.MIN_VALUE) {
-                if (childCount2 == 0) {
-                    iMax2 = Math.max(0, this.U);
-                } else {
-                    iMin2 = i35;
-                }
-                i4 = 2;
-                iQ = zt0Var.q();
-                i71Var = zt0Var.s0;
-                iArr = zt0Var.C;
-                i5 = iMin;
-                if (i5 == iQ) {
-                    i71Var.c = true;
-                } else {
-                    i71Var.c = true;
-                }
-                zt0Var.Y = 0;
-                zt0Var.Z = 0;
-                iArr[0] = this.V - i37;
-                iArr[1] = this.W - i36;
-                zt0Var.b0 = 0;
-                zt0Var.c0 = 0;
-                zt0Var.M(i33);
-                zt0Var.O(i5);
-                zt0Var.N(i4);
-                zt0Var.L(iMin2);
-                i6 = this.T - i37;
-                if (i6 < 0) {
-                    zt0Var.b0 = 0;
-                } else {
-                    zt0Var.b0 = i6;
-                }
-                i7 = this.U - i36;
-                if (i7 < 0) {
-                    zt0Var.c0 = 0;
-                } else {
-                    zt0Var.c0 = i7;
-                }
-                zt0Var.x0 = iMax7;
-                zt0Var.y0 = iMax5;
-                rv7Var = zt0Var.r0;
-                zt0Var2 = (zt0) rv7Var.T;
-                arrayList = (ArrayList) rv7Var.R;
-                ozVar = zt0Var.u0;
-                size = zt0Var.q0.size();
-                iQ2 = zt0Var.q();
-                iK = zt0Var.k();
-                zW = uv3.w(i, 128);
-                if (zW) {
-                    z = true;
-                } else {
-                    z = true;
-                }
-                if (z) {
-                    i30 = 0;
-                    while (true) {
-                        if (i30 < size) {
-                            z16 = z;
-                            yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                            i31 = i30;
-                            iArr3 = yt0Var4.p0;
-                            i8 = size;
-                            if (iArr3[0] == 3) {
-                                z17 = true;
-                            } else {
-                                z17 = false;
-                            }
-                            if (iArr3[1] == 3) {
-                                z18 = true;
-                            } else {
-                                z18 = false;
-                            }
-                            if (z17) {
-                                z19 = false;
-                            } else {
-                                z19 = false;
-                            }
-                            if (yt0Var4.x()) {
-                                i30 = i31 + 1;
-                                z = z16;
-                                size = i8;
-                            } else {
-                                i30 = i31 + 1;
-                                z = z16;
-                                size = i8;
-                            }
-                            i9 = 1073741824;
-                            z2 = false;
-                        } else {
-                            z2 = z;
-                            i8 = size;
-                            i9 = 1073741824;
-                        }
-                    }
-                } else {
-                    z2 = z;
-                    i8 = size;
-                    i9 = 1073741824;
-                }
-                z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-                if (z3) {
-                    iMin3 = Math.min(iArr[0], i34);
-                    iMin4 = Math.min(iArr[1], i35);
-                    i23 = 1073741824;
-                    if (mode == 1073741824) {
-                        if (zt0Var.q() != iMin3) {
-                            zt0Var.O(iMin3);
-                            i71Var.b = true;
-                        }
-                        i23 = 1073741824;
-                    }
-                    if (mode2 == i23) {
-                        zt0Var.L(iMin4);
-                        i71Var.b = true;
-                    }
-                    if (mode == i23) {
-                        z4 = z3;
-                        ozVar2 = ozVar;
-                        zt0Var3 = (zt0) i71Var.d;
-                        if (i71Var.b) {
-                            for (yt0 yt0Var5 : zt0Var3.q0) {
-                                yt0Var5.h();
-                                yt0Var5.a = false;
-                                oh2 oh2Var2 = yt0Var5.d;
-                                oh2Var2.e.j = false;
-                                oh2Var2.g = false;
-                                oh2Var2.n();
-                                an7 an7Var2 = yt0Var5.e;
-                                an7Var2.e.j = false;
-                                an7Var2.g = false;
-                                an7Var2.m();
-                            }
-                            i24 = 0;
-                            zt0Var3.h();
-                            zt0Var3.a = false;
-                            oh2 oh2Var3 = zt0Var3.d;
-                            oh2Var3.e.j = false;
-                            oh2Var3.g = false;
-                            oh2Var3.n();
-                            an7 an7Var3 = zt0Var3.e;
-                            an7Var3.e.j = false;
-                            an7Var3.g = false;
-                            an7Var3.m();
-                            i71Var.c();
-                        } else {
-                            i24 = 0;
-                        }
-                        i71Var.b((zt0) i71Var.e);
-                        zt0Var3.Y = i24;
-                        zt0Var3.Z = i24;
-                        zt0Var3.d.h.d(i24);
-                        zt0Var3.e.h.d(i24);
-                        i25 = 1073741824;
-                        if (mode == 1073741824) {
-                            zT = zt0Var.T(i24, zW);
-                            i10 = 1;
-                        } else {
-                            i10 = 0;
-                            zT = true;
-                        }
-                        if (mode2 == 1073741824) {
-                            zT &= zt0Var.T(1, zW);
-                            i10++;
-                        }
-                    } else {
-                        z4 = z3;
-                        ozVar2 = ozVar;
-                        zt0Var3 = (zt0) i71Var.d;
-                        if (i71Var.b) {
-                            while (r2.hasNext()) {
-                                yt0Var5.h();
-                                yt0Var5.a = false;
-                                oh2 oh2Var4 = yt0Var5.d;
-                                oh2Var4.e.j = false;
-                                oh2Var4.g = false;
-                                oh2Var4.n();
-                                an7 an7Var4 = yt0Var5.e;
-                                an7Var4.e.j = false;
-                                an7Var4.g = false;
-                                an7Var4.m();
-                            }
-                            i24 = 0;
-                            zt0Var3.h();
-                            zt0Var3.a = false;
-                            oh2 oh2Var5 = zt0Var3.d;
-                            oh2Var5.e.j = false;
-                            oh2Var5.g = false;
-                            oh2Var5.n();
-                            an7 an7Var5 = zt0Var3.e;
-                            an7Var5.e.j = false;
-                            an7Var5.g = false;
-                            an7Var5.m();
-                            i71Var.c();
-                        } else {
-                            i24 = 0;
-                        }
-                        i71Var.b((zt0) i71Var.e);
-                        zt0Var3.Y = i24;
-                        zt0Var3.Z = i24;
-                        zt0Var3.d.h.d(i24);
-                        zt0Var3.e.h.d(i24);
-                        i25 = 1073741824;
-                        if (mode == 1073741824) {
-                            zT = zt0Var.T(i24, zW);
-                            i10 = 1;
-                        } else {
-                            i10 = 0;
-                            zT = true;
-                        }
-                        if (mode2 == 1073741824) {
-                            zT &= zt0Var.T(1, zW);
-                            i10++;
-                        }
-                    }
-                    if (zT) {
-                        if (mode == i25) {
-                            z12 = true;
-                        } else {
-                            z12 = false;
-                        }
-                        if (mode2 == i25) {
-                            z13 = true;
-                        } else {
-                            z13 = false;
-                        }
-                        zt0Var.P(z12, z13);
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    i10 = 0;
-                    zT = false;
-                }
-                if (zT) {
-                }
-                int i38 = zt0Var.D0;
-                if (i8 > 0) {
-                    size3 = zt0Var.q0.size();
-                    boolean zW2 = zt0Var.W(64);
-                    ozVar6 = zt0Var.u0;
-                    i19 = 0;
-                    while (i19 < size3) {
-                        yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                        if (!(yt0Var3 instanceof td2)) {
-                            i22 = size3;
-                        } else {
-                            iJ = yt0Var3.j(0);
-                            int iJ2 = yt0Var3.j(1);
-                            i22 = size3;
-                            if (iJ == 3) {
-                                z11 = false;
-                            } else {
-                                z11 = false;
-                            }
-                            if (z11) {
-                            }
-                            if (z11) {
-                                rv7Var.A(0, ozVar6, yt0Var3);
-                            }
-                        }
-                        i19++;
-                        size3 = i22;
-                    }
-                    constraintLayout = ((b) ozVar6).a;
-                    childCount = constraintLayout.getChildCount();
-                    arrayList2 = constraintLayout.R;
-                    for (i20 = 0; i20 < childCount; i20++) {
-                        constraintLayout.getChildAt(i20);
-                    }
-                    size4 = arrayList2.size();
-                    if (size4 > 0) {
-                        for (i21 = 0; i21 < size4; i21++) {
-                            ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                        }
-                    }
-                }
-                rv7Var.L(zt0Var);
-                size2 = arrayList.size();
-                if (i8 > 0) {
-                    rv7Var.J(zt0Var, 0, iQ2, iK);
-                }
-                if (size2 > 0) {
-                    iArr2 = zt0Var.p0;
-                    if (iArr2[0] == 2) {
-                        z5 = true;
-                    } else {
-                        z5 = false;
-                    }
-                    if (iArr2[1] == 2) {
-                        z6 = true;
-                    } else {
-                        z6 = false;
-                    }
-                    iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                    iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                    i11 = 0;
-                    z7 = false;
-                    while (i11 < size2) {
-                        yt0Var2 = (yt0) arrayList.get(i11);
-                        if (yt0Var2 instanceof h02) {
-                            iQ5 = yt0Var2.q();
-                            iK4 = yt0Var2.k();
-                            z9 = z6;
-                            ozVar5 = ozVar2;
-                            boolean zA2 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                            iQ6 = yt0Var2.q();
-                            z10 = zA2;
-                            iK5 = yt0Var2.k();
-                            if (iQ6 != iQ5) {
-                                yt0Var2.O(iQ6);
-                                if (z5) {
-                                    iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                                }
-                                z10 = true;
-                            }
-                            if (iK5 != iK4) {
-                                yt0Var2.L(iK5);
-                                if (z9) {
-                                    iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                                }
-                                z10 = true;
-                            }
-                            z7 = z10 | ((h02) yt0Var2).y0;
-                        } else {
-                            z9 = z6;
-                            ozVar5 = ozVar2;
-                        }
-                        i11++;
-                        ozVar2 = ozVar5;
-                        z6 = z9;
-                    }
-                    z8 = z6;
-                    i12 = 0;
-                    while (true) {
-                        ozVar3 = ozVar2;
-                        if (i12 < 2) {
-                            break;
-                            break;
-                        }
-                        zA = z7;
-                        i13 = 0;
-                        while (i13 < size2) {
-                            yt0Var = (yt0) arrayList.get(i13);
-                            if (yt0Var instanceof sg2) {
-                                i16 = size2;
-                                if (yt0Var.g0 == 8) {
-                                    ozVar4 = ozVar3;
-                                    i18 = i12;
-                                    i17 = i13;
-                                } else {
-                                    iQ3 = yt0Var.q();
-                                    iK2 = yt0Var.k();
-                                    i17 = i13;
-                                    int i39 = yt0Var.a0;
-                                    zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                    ozVar4 = ozVar3;
-                                    iQ4 = yt0Var.q();
-                                    i18 = i12;
-                                    iK3 = yt0Var.k();
-                                    if (iQ4 != iQ3) {
-                                        yt0Var.O(iQ4);
-                                        if (!z5) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (iK3 != iK2) {
-                                        yt0Var.L(iK3);
-                                        if (!z8) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (!yt0Var.E) {
-                                    }
-                                }
-                            } else {
-                                i16 = size2;
-                                if (yt0Var.g0 == 8) {
-                                    ozVar4 = ozVar3;
-                                    i18 = i12;
-                                    i17 = i13;
-                                } else {
-                                    iQ3 = yt0Var.q();
-                                    iK2 = yt0Var.k();
-                                    i17 = i13;
-                                    int i310 = yt0Var.a0;
-                                    zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                    ozVar4 = ozVar3;
-                                    iQ4 = yt0Var.q();
-                                    i18 = i12;
-                                    iK3 = yt0Var.k();
-                                    if (iQ4 != iQ3) {
-                                        yt0Var.O(iQ4);
-                                        if (!z5) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (iK3 != iK2) {
-                                        yt0Var.L(iK3);
-                                        if (!z8) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (!yt0Var.E) {
-                                    }
-                                }
-                            }
-                            i13 = i17 + 1;
-                            size2 = i16;
-                            i12 = i18;
-                            ozVar3 = ozVar4;
-                        }
-                        i14 = size2;
-                        ozVar2 = ozVar3;
-                        i15 = i12;
-                        if (zA) {
-                            break;
-                            break;
-                        }
-                        int i40 = i15 + 1;
-                        rv7Var.J(zt0Var, i40, iQ2, iK);
-                        i12 = i40;
-                        size2 = i14;
-                        z7 = false;
-                    }
-                }
-                zt0Var.D0 = i38;
-                hl3.q = zt0Var.W(512);
-            }
-            if (mode2 != 0) {
-                if (mode2 != 1073741824) {
-                    i4 = 1;
-                } else {
-                    iMin2 = Math.min(this.W - i36, i35);
-                    i4 = 1;
-                }
-                iQ = zt0Var.q();
-                i71Var = zt0Var.s0;
-                iArr = zt0Var.C;
-                i5 = iMin;
-                if (i5 == iQ) {
-                    i71Var.c = true;
-                } else {
-                    i71Var.c = true;
-                }
-                zt0Var.Y = 0;
-                zt0Var.Z = 0;
-                iArr[0] = this.V - i37;
-                iArr[1] = this.W - i36;
-                zt0Var.b0 = 0;
-                zt0Var.c0 = 0;
-                zt0Var.M(i33);
-                zt0Var.O(i5);
-                zt0Var.N(i4);
-                zt0Var.L(iMin2);
-                i6 = this.T - i37;
-                if (i6 < 0) {
-                    zt0Var.b0 = 0;
-                } else {
-                    zt0Var.b0 = i6;
-                }
-                i7 = this.U - i36;
-                if (i7 < 0) {
-                    zt0Var.c0 = 0;
-                } else {
-                    zt0Var.c0 = i7;
-                }
-                zt0Var.x0 = iMax7;
-                zt0Var.y0 = iMax5;
-                rv7Var = zt0Var.r0;
-                zt0Var2 = (zt0) rv7Var.T;
-                arrayList = (ArrayList) rv7Var.R;
-                ozVar = zt0Var.u0;
-                size = zt0Var.q0.size();
-                iQ2 = zt0Var.q();
-                iK = zt0Var.k();
-                zW = uv3.w(i, 128);
-                if (zW) {
-                    z = true;
-                } else {
-                    z = true;
-                }
-                if (z) {
-                    i30 = 0;
-                    while (true) {
-                        if (i30 < size) {
-                            z16 = z;
-                            yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                            i31 = i30;
-                            iArr3 = yt0Var4.p0;
-                            i8 = size;
-                            if (iArr3[0] == 3) {
-                                z17 = true;
-                            } else {
-                                z17 = false;
-                            }
-                            if (iArr3[1] == 3) {
-                                z18 = true;
-                            } else {
-                                z18 = false;
-                            }
-                            if (z17) {
-                                z19 = false;
-                            } else {
-                                z19 = false;
-                            }
-                            if (yt0Var4.x()) {
-                                i30 = i31 + 1;
-                                z = z16;
-                                size = i8;
-                            } else {
-                                i30 = i31 + 1;
-                                z = z16;
-                                size = i8;
-                            }
-                            i9 = 1073741824;
-                            z2 = false;
-                        } else {
-                            z2 = z;
-                            i8 = size;
-                            i9 = 1073741824;
-                        }
-                    }
-                } else {
-                    z2 = z;
-                    i8 = size;
-                    i9 = 1073741824;
-                }
-                z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-                if (z3) {
-                    iMin3 = Math.min(iArr[0], i34);
-                    iMin4 = Math.min(iArr[1], i35);
-                    i23 = 1073741824;
-                    if (mode == 1073741824) {
-                        if (zt0Var.q() != iMin3) {
-                            zt0Var.O(iMin3);
-                            i71Var.b = true;
-                        }
-                        i23 = 1073741824;
-                    }
-                    if (mode2 == i23) {
-                        zt0Var.L(iMin4);
-                        i71Var.b = true;
-                    }
-                    if (mode == i23) {
-                        z4 = z3;
-                        ozVar2 = ozVar;
-                        zt0Var3 = (zt0) i71Var.d;
-                        if (i71Var.b) {
-                            while (r2.hasNext()) {
-                                yt0Var5.h();
-                                yt0Var5.a = false;
-                                oh2 oh2Var6 = yt0Var5.d;
-                                oh2Var6.e.j = false;
-                                oh2Var6.g = false;
-                                oh2Var6.n();
-                                an7 an7Var6 = yt0Var5.e;
-                                an7Var6.e.j = false;
-                                an7Var6.g = false;
-                                an7Var6.m();
-                            }
-                            i24 = 0;
-                            zt0Var3.h();
-                            zt0Var3.a = false;
-                            oh2 oh2Var7 = zt0Var3.d;
-                            oh2Var7.e.j = false;
-                            oh2Var7.g = false;
-                            oh2Var7.n();
-                            an7 an7Var7 = zt0Var3.e;
-                            an7Var7.e.j = false;
-                            an7Var7.g = false;
-                            an7Var7.m();
-                            i71Var.c();
-                        } else {
-                            i24 = 0;
-                        }
-                        i71Var.b((zt0) i71Var.e);
-                        zt0Var3.Y = i24;
-                        zt0Var3.Z = i24;
-                        zt0Var3.d.h.d(i24);
-                        zt0Var3.e.h.d(i24);
-                        i25 = 1073741824;
-                        if (mode == 1073741824) {
-                            zT = zt0Var.T(i24, zW);
-                            i10 = 1;
-                        } else {
-                            i10 = 0;
-                            zT = true;
-                        }
-                        if (mode2 == 1073741824) {
-                            zT &= zt0Var.T(1, zW);
-                            i10++;
-                        }
-                    } else {
-                        z4 = z3;
-                        ozVar2 = ozVar;
-                        zt0Var3 = (zt0) i71Var.d;
-                        if (i71Var.b) {
-                            while (r2.hasNext()) {
-                                yt0Var5.h();
-                                yt0Var5.a = false;
-                                oh2 oh2Var8 = yt0Var5.d;
-                                oh2Var8.e.j = false;
-                                oh2Var8.g = false;
-                                oh2Var8.n();
-                                an7 an7Var8 = yt0Var5.e;
-                                an7Var8.e.j = false;
-                                an7Var8.g = false;
-                                an7Var8.m();
-                            }
-                            i24 = 0;
-                            zt0Var3.h();
-                            zt0Var3.a = false;
-                            oh2 oh2Var9 = zt0Var3.d;
-                            oh2Var9.e.j = false;
-                            oh2Var9.g = false;
-                            oh2Var9.n();
-                            an7 an7Var9 = zt0Var3.e;
-                            an7Var9.e.j = false;
-                            an7Var9.g = false;
-                            an7Var9.m();
-                            i71Var.c();
-                        } else {
-                            i24 = 0;
-                        }
-                        i71Var.b((zt0) i71Var.e);
-                        zt0Var3.Y = i24;
-                        zt0Var3.Z = i24;
-                        zt0Var3.d.h.d(i24);
-                        zt0Var3.e.h.d(i24);
-                        i25 = 1073741824;
-                        if (mode == 1073741824) {
-                            zT = zt0Var.T(i24, zW);
-                            i10 = 1;
-                        } else {
-                            i10 = 0;
-                            zT = true;
-                        }
-                        if (mode2 == 1073741824) {
-                            zT &= zt0Var.T(1, zW);
-                            i10++;
-                        }
-                    }
-                    if (zT) {
-                        if (mode == i25) {
-                            z12 = true;
-                        } else {
-                            z12 = false;
-                        }
-                        if (mode2 == i25) {
-                            z13 = true;
-                        } else {
-                            z13 = false;
-                        }
-                        zt0Var.P(z12, z13);
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    i10 = 0;
-                    zT = false;
-                }
-                if (zT) {
-                }
-                int i311 = zt0Var.D0;
-                if (i8 > 0) {
-                    size3 = zt0Var.q0.size();
-                    boolean zW3 = zt0Var.W(64);
-                    ozVar6 = zt0Var.u0;
-                    i19 = 0;
-                    while (i19 < size3) {
-                        yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                        if (!(yt0Var3 instanceof td2)) {
-                            i22 = size3;
-                        } else {
-                            iJ = yt0Var3.j(0);
-                            int iJ3 = yt0Var3.j(1);
-                            i22 = size3;
-                            if (iJ == 3) {
-                                z11 = false;
-                            } else {
-                                z11 = false;
-                            }
-                            if (z11) {
-                            }
-                            if (z11) {
-                                rv7Var.A(0, ozVar6, yt0Var3);
-                            }
-                        }
-                        i19++;
-                        size3 = i22;
-                    }
-                    constraintLayout = ((b) ozVar6).a;
-                    childCount = constraintLayout.getChildCount();
-                    arrayList2 = constraintLayout.R;
-                    while (i20 < childCount) {
-                        constraintLayout.getChildAt(i20);
-                    }
-                    size4 = arrayList2.size();
-                    if (size4 > 0) {
-                        while (i21 < size4) {
-                            ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                        }
-                    }
-                }
-                rv7Var.L(zt0Var);
-                size2 = arrayList.size();
-                if (i8 > 0) {
-                    rv7Var.J(zt0Var, 0, iQ2, iK);
-                }
-                if (size2 > 0) {
-                    iArr2 = zt0Var.p0;
-                    if (iArr2[0] == 2) {
-                        z5 = true;
-                    } else {
-                        z5 = false;
-                    }
-                    if (iArr2[1] == 2) {
-                        z6 = true;
-                    } else {
-                        z6 = false;
-                    }
-                    iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                    iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                    i11 = 0;
-                    z7 = false;
-                    while (i11 < size2) {
-                        yt0Var2 = (yt0) arrayList.get(i11);
-                        if (yt0Var2 instanceof h02) {
-                            z9 = z6;
-                            ozVar5 = ozVar2;
-                        } else {
-                            iQ5 = yt0Var2.q();
-                            iK4 = yt0Var2.k();
-                            z9 = z6;
-                            ozVar5 = ozVar2;
-                            boolean zA3 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                            iQ6 = yt0Var2.q();
-                            z10 = zA3;
-                            iK5 = yt0Var2.k();
-                            if (iQ6 != iQ5) {
-                                yt0Var2.O(iQ6);
-                                if (z5) {
-                                    iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                                }
-                                z10 = true;
-                            }
-                            if (iK5 != iK4) {
-                                yt0Var2.L(iK5);
-                                if (z9) {
-                                    iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                                }
-                                z10 = true;
-                            }
-                            z7 = z10 | ((h02) yt0Var2).y0;
-                        }
-                        i11++;
-                        ozVar2 = ozVar5;
-                        z6 = z9;
-                    }
-                    z8 = z6;
-                    i12 = 0;
-                    while (true) {
-                        ozVar3 = ozVar2;
-                        if (i12 < 2) {
-                            break;
-                            break;
-                        }
-                        zA = z7;
-                        i13 = 0;
-                        while (i13 < size2) {
-                            yt0Var = (yt0) arrayList.get(i13);
-                            if (yt0Var instanceof sg2) {
-                                i16 = size2;
-                                if (yt0Var.g0 == 8) {
-                                    ozVar4 = ozVar3;
-                                    i18 = i12;
-                                    i17 = i13;
-                                } else {
-                                    iQ3 = yt0Var.q();
-                                    iK2 = yt0Var.k();
-                                    i17 = i13;
-                                    int i312 = yt0Var.a0;
-                                    zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                    ozVar4 = ozVar3;
-                                    iQ4 = yt0Var.q();
-                                    i18 = i12;
-                                    iK3 = yt0Var.k();
-                                    if (iQ4 != iQ3) {
-                                        yt0Var.O(iQ4);
-                                        if (!z5) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (iK3 != iK2) {
-                                        yt0Var.L(iK3);
-                                        if (!z8) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (!yt0Var.E) {
-                                    }
-                                }
-                            } else {
-                                i16 = size2;
-                                if (yt0Var.g0 == 8) {
-                                    ozVar4 = ozVar3;
-                                    i18 = i12;
-                                    i17 = i13;
-                                } else {
-                                    iQ3 = yt0Var.q();
-                                    iK2 = yt0Var.k();
-                                    i17 = i13;
-                                    int i313 = yt0Var.a0;
-                                    zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                    ozVar4 = ozVar3;
-                                    iQ4 = yt0Var.q();
-                                    i18 = i12;
-                                    iK3 = yt0Var.k();
-                                    if (iQ4 != iQ3) {
-                                        yt0Var.O(iQ4);
-                                        if (!z5) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (iK3 != iK2) {
-                                        yt0Var.L(iK3);
-                                        if (!z8) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (!yt0Var.E) {
-                                    }
-                                }
-                            }
-                            i13 = i17 + 1;
-                            size2 = i16;
-                            i12 = i18;
-                            ozVar3 = ozVar4;
-                        }
-                        i14 = size2;
-                        ozVar2 = ozVar3;
-                        i15 = i12;
-                        if (zA) {
-                            break;
-                            break;
-                        }
-                        int i41 = i15 + 1;
-                        rv7Var.J(zt0Var, i41, iQ2, iK);
-                        i12 = i41;
-                        size2 = i14;
-                        z7 = false;
-                    }
-                }
-                zt0Var.D0 = i311;
-                hl3.q = zt0Var.W(512);
-            }
-            if (childCount2 == 0) {
-                iMax2 = Math.max(0, this.U);
-            } else {
-                i4 = 2;
-            }
-            iMin2 = 0;
-            iQ = zt0Var.q();
-            i71Var = zt0Var.s0;
-            iArr = zt0Var.C;
-            i5 = iMin;
-            if (i5 == iQ) {
-                i71Var.c = true;
-            } else {
-                i71Var.c = true;
-            }
-            zt0Var.Y = 0;
-            zt0Var.Z = 0;
-            iArr[0] = this.V - i37;
-            iArr[1] = this.W - i36;
-            zt0Var.b0 = 0;
-            zt0Var.c0 = 0;
-            zt0Var.M(i33);
-            zt0Var.O(i5);
-            zt0Var.N(i4);
-            zt0Var.L(iMin2);
-            i6 = this.T - i37;
-            if (i6 < 0) {
-                zt0Var.b0 = 0;
-            } else {
-                zt0Var.b0 = i6;
-            }
-            i7 = this.U - i36;
-            if (i7 < 0) {
-                zt0Var.c0 = 0;
-            } else {
-                zt0Var.c0 = i7;
-            }
-            zt0Var.x0 = iMax7;
-            zt0Var.y0 = iMax5;
-            rv7Var = zt0Var.r0;
-            zt0Var2 = (zt0) rv7Var.T;
-            arrayList = (ArrayList) rv7Var.R;
-            ozVar = zt0Var.u0;
-            size = zt0Var.q0.size();
-            iQ2 = zt0Var.q();
-            iK = zt0Var.k();
-            zW = uv3.w(i, 128);
-            if (zW) {
-                z = true;
-            } else {
-                z = true;
-            }
-            if (z) {
-                i30 = 0;
-                while (true) {
-                    if (i30 < size) {
-                        z16 = z;
-                        yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                        i31 = i30;
-                        iArr3 = yt0Var4.p0;
-                        i8 = size;
-                        if (iArr3[0] == 3) {
-                            z17 = true;
-                        } else {
-                            z17 = false;
-                        }
-                        if (iArr3[1] == 3) {
-                            z18 = true;
-                        } else {
-                            z18 = false;
-                        }
-                        if (z17) {
-                            z19 = false;
-                        } else {
-                            z19 = false;
-                        }
-                        if (yt0Var4.x()) {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        } else {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        }
-                        i9 = 1073741824;
-                        z2 = false;
-                    } else {
-                        z2 = z;
-                        i8 = size;
-                        i9 = 1073741824;
-                    }
-                }
-            } else {
-                z2 = z;
-                i8 = size;
-                i9 = 1073741824;
-            }
-            z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-            if (z3) {
-                iMin3 = Math.min(iArr[0], i34);
-                iMin4 = Math.min(iArr[1], i35);
-                i23 = 1073741824;
-                if (mode == 1073741824) {
-                    if (zt0Var.q() != iMin3) {
-                        zt0Var.O(iMin3);
-                        i71Var.b = true;
-                    }
-                    i23 = 1073741824;
-                }
-                if (mode2 == i23) {
-                    zt0Var.L(iMin4);
-                    i71Var.b = true;
-                }
-                if (mode == i23) {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var10 = yt0Var5.d;
-                            oh2Var10.e.j = false;
-                            oh2Var10.g = false;
-                            oh2Var10.n();
-                            an7 an7Var10 = yt0Var5.e;
-                            an7Var10.e.j = false;
-                            an7Var10.g = false;
-                            an7Var10.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var11 = zt0Var3.d;
-                        oh2Var11.e.j = false;
-                        oh2Var11.g = false;
-                        oh2Var11.n();
-                        an7 an7Var11 = zt0Var3.e;
-                        an7Var11.e.j = false;
-                        an7Var11.g = false;
-                        an7Var11.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var12 = yt0Var5.d;
-                            oh2Var12.e.j = false;
-                            oh2Var12.g = false;
-                            oh2Var12.n();
-                            an7 an7Var12 = yt0Var5.e;
-                            an7Var12.e.j = false;
-                            an7Var12.g = false;
-                            an7Var12.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var13 = zt0Var3.d;
-                        oh2Var13.e.j = false;
-                        oh2Var13.g = false;
-                        oh2Var13.n();
-                        an7 an7Var13 = zt0Var3.e;
-                        an7Var13.e.j = false;
-                        an7Var13.g = false;
-                        an7Var13.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                }
-                if (zT) {
-                    if (mode == i25) {
-                        z12 = true;
-                    } else {
-                        z12 = false;
-                    }
-                    if (mode2 == i25) {
-                        z13 = true;
-                    } else {
-                        z13 = false;
-                    }
-                    zt0Var.P(z12, z13);
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                i10 = 0;
-                zT = false;
-            }
-            if (zT) {
-            }
-            int i314 = zt0Var.D0;
-            if (i8 > 0) {
-                size3 = zt0Var.q0.size();
-                boolean zW4 = zt0Var.W(64);
-                ozVar6 = zt0Var.u0;
-                i19 = 0;
-                while (i19 < size3) {
-                    yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                    if (!(yt0Var3 instanceof td2)) {
-                        i22 = size3;
-                    } else {
-                        iJ = yt0Var3.j(0);
-                        int iJ4 = yt0Var3.j(1);
-                        i22 = size3;
-                        if (iJ == 3) {
-                            z11 = false;
-                        } else {
-                            z11 = false;
-                        }
-                        if (z11) {
-                        }
-                        if (z11) {
-                            rv7Var.A(0, ozVar6, yt0Var3);
-                        }
-                    }
-                    i19++;
-                    size3 = i22;
-                }
-                constraintLayout = ((b) ozVar6).a;
-                childCount = constraintLayout.getChildCount();
-                arrayList2 = constraintLayout.R;
-                while (i20 < childCount) {
-                    constraintLayout.getChildAt(i20);
-                }
-                size4 = arrayList2.size();
-                if (size4 > 0) {
-                    while (i21 < size4) {
-                        ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                    }
-                }
-            }
-            rv7Var.L(zt0Var);
-            size2 = arrayList.size();
-            if (i8 > 0) {
-                rv7Var.J(zt0Var, 0, iQ2, iK);
-            }
-            if (size2 > 0) {
-                iArr2 = zt0Var.p0;
-                if (iArr2[0] == 2) {
-                    z5 = true;
-                } else {
-                    z5 = false;
-                }
-                if (iArr2[1] == 2) {
-                    z6 = true;
-                } else {
-                    z6 = false;
-                }
-                iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                i11 = 0;
-                z7 = false;
-                while (i11 < size2) {
-                    yt0Var2 = (yt0) arrayList.get(i11);
-                    if (yt0Var2 instanceof h02) {
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                    } else {
-                        iQ5 = yt0Var2.q();
-                        iK4 = yt0Var2.k();
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                        boolean zA4 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                        iQ6 = yt0Var2.q();
-                        z10 = zA4;
-                        iK5 = yt0Var2.k();
-                        if (iQ6 != iQ5) {
-                            yt0Var2.O(iQ6);
-                            if (z5) {
-                                iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                            }
-                            z10 = true;
-                        }
-                        if (iK5 != iK4) {
-                            yt0Var2.L(iK5);
-                            if (z9) {
-                                iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                            }
-                            z10 = true;
-                        }
-                        z7 = z10 | ((h02) yt0Var2).y0;
-                    }
-                    i11++;
-                    ozVar2 = ozVar5;
-                    z6 = z9;
-                }
-                z8 = z6;
-                i12 = 0;
-                while (true) {
-                    ozVar3 = ozVar2;
-                    if (i12 < 2) {
-                        break;
-                        break;
-                    }
-                    zA = z7;
-                    i13 = 0;
-                    while (i13 < size2) {
-                        yt0Var = (yt0) arrayList.get(i13);
-                        if (yt0Var instanceof sg2) {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i315 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        } else {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i316 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        }
-                        i13 = i17 + 1;
-                        size2 = i16;
-                        i12 = i18;
-                        ozVar3 = ozVar4;
-                    }
-                    i14 = size2;
-                    ozVar2 = ozVar3;
-                    i15 = i12;
-                    if (zA) {
-                        break;
-                        break;
-                    }
-                    int i42 = i15 + 1;
-                    rv7Var.J(zt0Var, i42, iQ2, iK);
-                    i12 = i42;
-                    size2 = i14;
-                    z7 = false;
-                }
-            }
-            zt0Var.D0 = i314;
-            hl3.q = zt0Var.W(512);
-            iMin2 = iMax2;
-            i4 = 2;
-            iQ = zt0Var.q();
-            i71Var = zt0Var.s0;
-            iArr = zt0Var.C;
-            i5 = iMin;
-            if (i5 == iQ) {
-                i71Var.c = true;
-            } else {
-                i71Var.c = true;
-            }
-            zt0Var.Y = 0;
-            zt0Var.Z = 0;
-            iArr[0] = this.V - i37;
-            iArr[1] = this.W - i36;
-            zt0Var.b0 = 0;
-            zt0Var.c0 = 0;
-            zt0Var.M(i33);
-            zt0Var.O(i5);
-            zt0Var.N(i4);
-            zt0Var.L(iMin2);
-            i6 = this.T - i37;
-            if (i6 < 0) {
-                zt0Var.b0 = 0;
-            } else {
-                zt0Var.b0 = i6;
-            }
-            i7 = this.U - i36;
-            if (i7 < 0) {
-                zt0Var.c0 = 0;
-            } else {
-                zt0Var.c0 = i7;
-            }
-            zt0Var.x0 = iMax7;
-            zt0Var.y0 = iMax5;
-            rv7Var = zt0Var.r0;
-            zt0Var2 = (zt0) rv7Var.T;
-            arrayList = (ArrayList) rv7Var.R;
-            ozVar = zt0Var.u0;
-            size = zt0Var.q0.size();
-            iQ2 = zt0Var.q();
-            iK = zt0Var.k();
-            zW = uv3.w(i, 128);
-            if (zW) {
-                z = true;
-            } else {
-                z = true;
-            }
-            if (z) {
-                i30 = 0;
-                while (true) {
-                    if (i30 < size) {
-                        z16 = z;
-                        yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                        i31 = i30;
-                        iArr3 = yt0Var4.p0;
-                        i8 = size;
-                        if (iArr3[0] == 3) {
-                            z17 = true;
-                        } else {
-                            z17 = false;
-                        }
-                        if (iArr3[1] == 3) {
-                            z18 = true;
-                        } else {
-                            z18 = false;
-                        }
-                        if (z17) {
-                            z19 = false;
-                        } else {
-                            z19 = false;
-                        }
-                        if (yt0Var4.x()) {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        } else {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        }
-                        i9 = 1073741824;
-                        z2 = false;
-                    } else {
-                        z2 = z;
-                        i8 = size;
-                        i9 = 1073741824;
-                    }
-                }
-            } else {
-                z2 = z;
-                i8 = size;
-                i9 = 1073741824;
-            }
-            z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-            if (z3) {
-                iMin3 = Math.min(iArr[0], i34);
-                iMin4 = Math.min(iArr[1], i35);
-                i23 = 1073741824;
-                if (mode == 1073741824) {
-                    if (zt0Var.q() != iMin3) {
-                        zt0Var.O(iMin3);
-                        i71Var.b = true;
-                    }
-                    i23 = 1073741824;
-                }
-                if (mode2 == i23) {
-                    zt0Var.L(iMin4);
-                    i71Var.b = true;
-                }
-                if (mode == i23) {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var14 = yt0Var5.d;
-                            oh2Var14.e.j = false;
-                            oh2Var14.g = false;
-                            oh2Var14.n();
-                            an7 an7Var14 = yt0Var5.e;
-                            an7Var14.e.j = false;
-                            an7Var14.g = false;
-                            an7Var14.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var15 = zt0Var3.d;
-                        oh2Var15.e.j = false;
-                        oh2Var15.g = false;
-                        oh2Var15.n();
-                        an7 an7Var15 = zt0Var3.e;
-                        an7Var15.e.j = false;
-                        an7Var15.g = false;
-                        an7Var15.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var16 = yt0Var5.d;
-                            oh2Var16.e.j = false;
-                            oh2Var16.g = false;
-                            oh2Var16.n();
-                            an7 an7Var16 = yt0Var5.e;
-                            an7Var16.e.j = false;
-                            an7Var16.g = false;
-                            an7Var16.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var17 = zt0Var3.d;
-                        oh2Var17.e.j = false;
-                        oh2Var17.g = false;
-                        oh2Var17.n();
-                        an7 an7Var17 = zt0Var3.e;
-                        an7Var17.e.j = false;
-                        an7Var17.g = false;
-                        an7Var17.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                }
-                if (zT) {
-                    if (mode == i25) {
-                        z12 = true;
-                    } else {
-                        z12 = false;
-                    }
-                    if (mode2 == i25) {
-                        z13 = true;
-                    } else {
-                        z13 = false;
-                    }
-                    zt0Var.P(z12, z13);
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                i10 = 0;
-                zT = false;
-            }
-            if (zT) {
-            }
-            int i317 = zt0Var.D0;
-            if (i8 > 0) {
-                size3 = zt0Var.q0.size();
-                boolean zW5 = zt0Var.W(64);
-                ozVar6 = zt0Var.u0;
-                i19 = 0;
-                while (i19 < size3) {
-                    yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                    if (!(yt0Var3 instanceof td2)) {
-                        i22 = size3;
-                    } else {
-                        iJ = yt0Var3.j(0);
-                        int iJ5 = yt0Var3.j(1);
-                        i22 = size3;
-                        if (iJ == 3) {
-                            z11 = false;
-                        } else {
-                            z11 = false;
-                        }
-                        if (z11) {
-                        }
-                        if (z11) {
-                            rv7Var.A(0, ozVar6, yt0Var3);
-                        }
-                    }
-                    i19++;
-                    size3 = i22;
-                }
-                constraintLayout = ((b) ozVar6).a;
-                childCount = constraintLayout.getChildCount();
-                arrayList2 = constraintLayout.R;
-                while (i20 < childCount) {
-                    constraintLayout.getChildAt(i20);
-                }
-                size4 = arrayList2.size();
-                if (size4 > 0) {
-                    while (i21 < size4) {
-                        ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                    }
-                }
-            }
-            rv7Var.L(zt0Var);
-            size2 = arrayList.size();
-            if (i8 > 0) {
-                rv7Var.J(zt0Var, 0, iQ2, iK);
-            }
-            if (size2 > 0) {
-                iArr2 = zt0Var.p0;
-                if (iArr2[0] == 2) {
-                    z5 = true;
-                } else {
-                    z5 = false;
-                }
-                if (iArr2[1] == 2) {
-                    z6 = true;
-                } else {
-                    z6 = false;
-                }
-                iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                i11 = 0;
-                z7 = false;
-                while (i11 < size2) {
-                    yt0Var2 = (yt0) arrayList.get(i11);
-                    if (yt0Var2 instanceof h02) {
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                    } else {
-                        iQ5 = yt0Var2.q();
-                        iK4 = yt0Var2.k();
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                        boolean zA5 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                        iQ6 = yt0Var2.q();
-                        z10 = zA5;
-                        iK5 = yt0Var2.k();
-                        if (iQ6 != iQ5) {
-                            yt0Var2.O(iQ6);
-                            if (z5) {
-                                iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                            }
-                            z10 = true;
-                        }
-                        if (iK5 != iK4) {
-                            yt0Var2.L(iK5);
-                            if (z9) {
-                                iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                            }
-                            z10 = true;
-                        }
-                        z7 = z10 | ((h02) yt0Var2).y0;
-                    }
-                    i11++;
-                    ozVar2 = ozVar5;
-                    z6 = z9;
-                }
-                z8 = z6;
-                i12 = 0;
-                while (true) {
-                    ozVar3 = ozVar2;
-                    if (i12 < 2) {
-                        break;
-                        break;
-                    }
-                    zA = z7;
-                    i13 = 0;
-                    while (i13 < size2) {
-                        yt0Var = (yt0) arrayList.get(i13);
-                        if (yt0Var instanceof sg2) {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i318 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        } else {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i319 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        }
-                        i13 = i17 + 1;
-                        size2 = i16;
-                        i12 = i18;
-                        ozVar3 = ozVar4;
-                    }
-                    i14 = size2;
-                    ozVar2 = ozVar3;
-                    i15 = i12;
-                    if (zA) {
-                        break;
-                        break;
-                    }
-                    int i43 = i15 + 1;
-                    rv7Var.J(zt0Var, i43, iQ2, iK);
-                    i12 = i43;
-                    size2 = i14;
-                    z7 = false;
-                }
-            }
-            zt0Var.D0 = i317;
-            hl3.q = zt0Var.W(512);
+        } else if (childCount == 0) {
+            max = Math.max(0, this.f0);
+            i4 = max;
+            i21 = 2;
+        } else {
+            i4 = i22;
+            i21 = 2;
         }
-        if (mode != 0) {
-            if (mode == 1073741824) {
-                iMin = Math.min(this.V - i37, i34);
-                i33 = 1;
-            }
-            if (mode2 != Integer.MIN_VALUE) {
-                if (childCount2 == 0) {
-                    iMax2 = Math.max(0, this.U);
-                } else {
-                    iMin2 = i35;
-                }
-                i4 = 2;
-                iQ = zt0Var.q();
-                i71Var = zt0Var.s0;
-                iArr = zt0Var.C;
-                i5 = iMin;
-                if (i5 == iQ) {
-                    i71Var.c = true;
-                } else {
-                    i71Var.c = true;
-                }
-                zt0Var.Y = 0;
-                zt0Var.Z = 0;
-                iArr[0] = this.V - i37;
-                iArr[1] = this.W - i36;
-                zt0Var.b0 = 0;
-                zt0Var.c0 = 0;
-                zt0Var.M(i33);
-                zt0Var.O(i5);
-                zt0Var.N(i4);
-                zt0Var.L(iMin2);
-                i6 = this.T - i37;
-                if (i6 < 0) {
-                    zt0Var.b0 = 0;
-                } else {
-                    zt0Var.b0 = i6;
-                }
-                i7 = this.U - i36;
-                if (i7 < 0) {
-                    zt0Var.c0 = 0;
-                } else {
-                    zt0Var.c0 = i7;
-                }
-                zt0Var.x0 = iMax7;
-                zt0Var.y0 = iMax5;
-                rv7Var = zt0Var.r0;
-                zt0Var2 = (zt0) rv7Var.T;
-                arrayList = (ArrayList) rv7Var.R;
-                ozVar = zt0Var.u0;
-                size = zt0Var.q0.size();
-                iQ2 = zt0Var.q();
-                iK = zt0Var.k();
-                zW = uv3.w(i, 128);
-                if (zW) {
-                    z = true;
-                } else {
-                    z = true;
-                }
-                if (z) {
-                    i30 = 0;
-                    while (true) {
-                        if (i30 < size) {
-                            z16 = z;
-                            yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                            i31 = i30;
-                            iArr3 = yt0Var4.p0;
-                            i8 = size;
-                            if (iArr3[0] == 3) {
-                                z17 = true;
-                            } else {
-                                z17 = false;
-                            }
-                            if (iArr3[1] == 3) {
-                                z18 = true;
-                            } else {
-                                z18 = false;
-                            }
-                            if (z17) {
-                                z19 = false;
-                            } else {
-                                z19 = false;
-                            }
-                            if (yt0Var4.x()) {
-                                i30 = i31 + 1;
-                                z = z16;
-                                size = i8;
-                            } else {
-                                i30 = i31 + 1;
-                                z = z16;
-                                size = i8;
-                            }
-                            i9 = 1073741824;
-                            z2 = false;
-                        } else {
-                            z2 = z;
-                            i8 = size;
-                            i9 = 1073741824;
-                        }
-                    }
-                } else {
-                    z2 = z;
-                    i8 = size;
-                    i9 = 1073741824;
-                }
-                z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-                if (z3) {
-                    iMin3 = Math.min(iArr[0], i34);
-                    iMin4 = Math.min(iArr[1], i35);
-                    i23 = 1073741824;
-                    if (mode == 1073741824) {
-                        if (zt0Var.q() != iMin3) {
-                            zt0Var.O(iMin3);
-                            i71Var.b = true;
-                        }
-                        i23 = 1073741824;
-                    }
-                    if (mode2 == i23) {
-                        zt0Var.L(iMin4);
-                        i71Var.b = true;
-                    }
-                    if (mode == i23) {
-                        z4 = z3;
-                        ozVar2 = ozVar;
-                        zt0Var3 = (zt0) i71Var.d;
-                        if (i71Var.b) {
-                            while (r2.hasNext()) {
-                                yt0Var5.h();
-                                yt0Var5.a = false;
-                                oh2 oh2Var18 = yt0Var5.d;
-                                oh2Var18.e.j = false;
-                                oh2Var18.g = false;
-                                oh2Var18.n();
-                                an7 an7Var18 = yt0Var5.e;
-                                an7Var18.e.j = false;
-                                an7Var18.g = false;
-                                an7Var18.m();
-                            }
-                            i24 = 0;
-                            zt0Var3.h();
-                            zt0Var3.a = false;
-                            oh2 oh2Var19 = zt0Var3.d;
-                            oh2Var19.e.j = false;
-                            oh2Var19.g = false;
-                            oh2Var19.n();
-                            an7 an7Var19 = zt0Var3.e;
-                            an7Var19.e.j = false;
-                            an7Var19.g = false;
-                            an7Var19.m();
-                            i71Var.c();
-                        } else {
-                            i24 = 0;
-                        }
-                        i71Var.b((zt0) i71Var.e);
-                        zt0Var3.Y = i24;
-                        zt0Var3.Z = i24;
-                        zt0Var3.d.h.d(i24);
-                        zt0Var3.e.h.d(i24);
-                        i25 = 1073741824;
-                        if (mode == 1073741824) {
-                            zT = zt0Var.T(i24, zW);
-                            i10 = 1;
-                        } else {
-                            i10 = 0;
-                            zT = true;
-                        }
-                        if (mode2 == 1073741824) {
-                            zT &= zt0Var.T(1, zW);
-                            i10++;
-                        }
-                    } else {
-                        z4 = z3;
-                        ozVar2 = ozVar;
-                        zt0Var3 = (zt0) i71Var.d;
-                        if (i71Var.b) {
-                            while (r2.hasNext()) {
-                                yt0Var5.h();
-                                yt0Var5.a = false;
-                                oh2 oh2Var110 = yt0Var5.d;
-                                oh2Var110.e.j = false;
-                                oh2Var110.g = false;
-                                oh2Var110.n();
-                                an7 an7Var110 = yt0Var5.e;
-                                an7Var110.e.j = false;
-                                an7Var110.g = false;
-                                an7Var110.m();
-                            }
-                            i24 = 0;
-                            zt0Var3.h();
-                            zt0Var3.a = false;
-                            oh2 oh2Var111 = zt0Var3.d;
-                            oh2Var111.e.j = false;
-                            oh2Var111.g = false;
-                            oh2Var111.n();
-                            an7 an7Var111 = zt0Var3.e;
-                            an7Var111.e.j = false;
-                            an7Var111.g = false;
-                            an7Var111.m();
-                            i71Var.c();
-                        } else {
-                            i24 = 0;
-                        }
-                        i71Var.b((zt0) i71Var.e);
-                        zt0Var3.Y = i24;
-                        zt0Var3.Z = i24;
-                        zt0Var3.d.h.d(i24);
-                        zt0Var3.e.h.d(i24);
-                        i25 = 1073741824;
-                        if (mode == 1073741824) {
-                            zT = zt0Var.T(i24, zW);
-                            i10 = 1;
-                        } else {
-                            i10 = 0;
-                            zT = true;
-                        }
-                        if (mode2 == 1073741824) {
-                            zT &= zt0Var.T(1, zW);
-                            i10++;
-                        }
-                    }
-                    if (zT) {
-                        if (mode == i25) {
-                            z12 = true;
-                        } else {
-                            z12 = false;
-                        }
-                        if (mode2 == i25) {
-                            z13 = true;
-                        } else {
-                            z13 = false;
-                        }
-                        zt0Var.P(z12, z13);
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    i10 = 0;
-                    zT = false;
-                }
-                if (zT) {
-                }
-                int i3110 = zt0Var.D0;
-                if (i8 > 0) {
-                    size3 = zt0Var.q0.size();
-                    boolean zW6 = zt0Var.W(64);
-                    ozVar6 = zt0Var.u0;
-                    i19 = 0;
-                    while (i19 < size3) {
-                        yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                        if (!(yt0Var3 instanceof td2)) {
-                            i22 = size3;
-                        } else {
-                            iJ = yt0Var3.j(0);
-                            int iJ6 = yt0Var3.j(1);
-                            i22 = size3;
-                            if (iJ == 3) {
-                                z11 = false;
-                            } else {
-                                z11 = false;
-                            }
-                            if (z11) {
-                            }
-                            if (z11) {
-                                rv7Var.A(0, ozVar6, yt0Var3);
-                            }
-                        }
-                        i19++;
-                        size3 = i22;
-                    }
-                    constraintLayout = ((b) ozVar6).a;
-                    childCount = constraintLayout.getChildCount();
-                    arrayList2 = constraintLayout.R;
-                    while (i20 < childCount) {
-                        constraintLayout.getChildAt(i20);
-                    }
-                    size4 = arrayList2.size();
-                    if (size4 > 0) {
-                        while (i21 < size4) {
-                            ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                        }
-                    }
-                }
-                rv7Var.L(zt0Var);
-                size2 = arrayList.size();
-                if (i8 > 0) {
-                    rv7Var.J(zt0Var, 0, iQ2, iK);
-                }
-                if (size2 > 0) {
-                    iArr2 = zt0Var.p0;
-                    if (iArr2[0] == 2) {
-                        z5 = true;
-                    } else {
-                        z5 = false;
-                    }
-                    if (iArr2[1] == 2) {
-                        z6 = true;
-                    } else {
-                        z6 = false;
-                    }
-                    iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                    iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                    i11 = 0;
-                    z7 = false;
-                    while (i11 < size2) {
-                        yt0Var2 = (yt0) arrayList.get(i11);
-                        if (yt0Var2 instanceof h02) {
-                            z9 = z6;
-                            ozVar5 = ozVar2;
-                        } else {
-                            iQ5 = yt0Var2.q();
-                            iK4 = yt0Var2.k();
-                            z9 = z6;
-                            ozVar5 = ozVar2;
-                            boolean zA6 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                            iQ6 = yt0Var2.q();
-                            z10 = zA6;
-                            iK5 = yt0Var2.k();
-                            if (iQ6 != iQ5) {
-                                yt0Var2.O(iQ6);
-                                if (z5) {
-                                    iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                                }
-                                z10 = true;
-                            }
-                            if (iK5 != iK4) {
-                                yt0Var2.L(iK5);
-                                if (z9) {
-                                    iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                                }
-                                z10 = true;
-                            }
-                            z7 = z10 | ((h02) yt0Var2).y0;
-                        }
-                        i11++;
-                        ozVar2 = ozVar5;
-                        z6 = z9;
-                    }
-                    z8 = z6;
-                    i12 = 0;
-                    while (true) {
-                        ozVar3 = ozVar2;
-                        if (i12 < 2) {
-                            break;
-                            break;
-                        }
-                        zA = z7;
-                        i13 = 0;
-                        while (i13 < size2) {
-                            yt0Var = (yt0) arrayList.get(i13);
-                            if (yt0Var instanceof sg2) {
-                                i16 = size2;
-                                if (yt0Var.g0 == 8) {
-                                    ozVar4 = ozVar3;
-                                    i18 = i12;
-                                    i17 = i13;
-                                } else {
-                                    iQ3 = yt0Var.q();
-                                    iK2 = yt0Var.k();
-                                    i17 = i13;
-                                    int i3111 = yt0Var.a0;
-                                    zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                    ozVar4 = ozVar3;
-                                    iQ4 = yt0Var.q();
-                                    i18 = i12;
-                                    iK3 = yt0Var.k();
-                                    if (iQ4 != iQ3) {
-                                        yt0Var.O(iQ4);
-                                        if (!z5) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (iK3 != iK2) {
-                                        yt0Var.L(iK3);
-                                        if (!z8) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (!yt0Var.E) {
-                                    }
-                                }
-                            } else {
-                                i16 = size2;
-                                if (yt0Var.g0 == 8) {
-                                    ozVar4 = ozVar3;
-                                    i18 = i12;
-                                    i17 = i13;
-                                } else {
-                                    iQ3 = yt0Var.q();
-                                    iK2 = yt0Var.k();
-                                    i17 = i13;
-                                    int i3112 = yt0Var.a0;
-                                    zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                    ozVar4 = ozVar3;
-                                    iQ4 = yt0Var.q();
-                                    i18 = i12;
-                                    iK3 = yt0Var.k();
-                                    if (iQ4 != iQ3) {
-                                        yt0Var.O(iQ4);
-                                        if (!z5) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (iK3 != iK2) {
-                                        yt0Var.L(iK3);
-                                        if (!z8) {
-                                        }
-                                        zA = true;
-                                    }
-                                    if (!yt0Var.E) {
-                                    }
-                                }
-                            }
-                            i13 = i17 + 1;
-                            size2 = i16;
-                            i12 = i18;
-                            ozVar3 = ozVar4;
-                        }
-                        i14 = size2;
-                        ozVar2 = ozVar3;
-                        i15 = i12;
-                        if (zA) {
-                            break;
-                            break;
-                        }
-                        int i44 = i15 + 1;
-                        rv7Var.J(zt0Var, i44, iQ2, iK);
-                        i12 = i44;
-                        size2 = i14;
-                        z7 = false;
-                    }
-                }
-                zt0Var.D0 = i3110;
-                hl3.q = zt0Var.W(512);
-            }
+        if (mode2 != Integer.MIN_VALUE) {
             if (mode2 != 0) {
-                if (mode2 != 1073741824) {
-                    i4 = 1;
-                } else {
-                    iMin2 = Math.min(this.W - i36, i35);
-                    i4 = 1;
-                }
-                iQ = zt0Var.q();
-                i71Var = zt0Var.s0;
-                iArr = zt0Var.C;
-                i5 = iMin;
-                if (i5 == iQ || iMin2 != zt0Var.k()) {
-                    i71Var.c = true;
-                }
-                zt0Var.Y = 0;
-                zt0Var.Z = 0;
-                iArr[0] = this.V - i37;
-                iArr[1] = this.W - i36;
-                zt0Var.b0 = 0;
-                zt0Var.c0 = 0;
-                zt0Var.M(i33);
-                zt0Var.O(i5);
-                zt0Var.N(i4);
-                zt0Var.L(iMin2);
-                i6 = this.T - i37;
-                if (i6 < 0) {
-                    zt0Var.b0 = 0;
-                } else {
-                    zt0Var.b0 = i6;
-                }
-                i7 = this.U - i36;
-                if (i7 < 0) {
-                    zt0Var.c0 = 0;
-                } else {
-                    zt0Var.c0 = i7;
-                }
-                zt0Var.x0 = iMax7;
-                zt0Var.y0 = iMax5;
-                rv7Var = zt0Var.r0;
-                zt0Var2 = (zt0) rv7Var.T;
-                arrayList = (ArrayList) rv7Var.R;
-                ozVar = zt0Var.u0;
-                size = zt0Var.q0.size();
-                iQ2 = zt0Var.q();
-                iK = zt0Var.k();
-                zW = uv3.w(i, 128);
-                if (zW || uv3.w(i, 64)) {
-                    z = true;
-                } else {
+                i5 = mode2 != 1073741824 ? 0 : Math.min(this.i0 - i24, i23);
+                i6 = 1;
+            } else if (childCount == 0) {
+                max2 = Math.max(0, this.g0);
+                i5 = max2;
+                i6 = 2;
+            } else {
+                i5 = 0;
+                i6 = 2;
+            }
+        } else if (childCount == 0) {
+            max2 = Math.max(0, this.g0);
+            i5 = max2;
+            i6 = 2;
+        } else {
+            i5 = i23;
+            i6 = 2;
+        }
+        int q = f11Var.q();
+        mf1 mf1Var = f11Var.s0;
+        int[] iArr = f11Var.C;
+        int i26 = i4;
+        if (i26 == q && i5 == f11Var.k()) {
+            c = 1;
+        } else {
+            mf1Var.c = true;
+            c = 1;
+        }
+        f11Var.Y = 0;
+        f11Var.Z = 0;
+        iArr[0] = this.h0 - i25;
+        iArr[c] = this.i0 - i24;
+        f11Var.b0 = 0;
+        f11Var.c0 = 0;
+        f11Var.M(i21);
+        f11Var.O(i26);
+        f11Var.N(i6);
+        f11Var.L(i5);
+        int i27 = this.f0 - i25;
+        if (i27 < 0) {
+            f11Var.b0 = 0;
+        } else {
+            f11Var.b0 = i27;
+        }
+        int i28 = this.g0 - i24;
+        if (i28 < 0) {
+            f11Var.c0 = 0;
+        } else {
+            f11Var.c0 = i28;
+        }
+        f11Var.x0 = max5;
+        f11Var.y0 = max3;
+        pq pqVar = f11Var.r0;
+        f11 f11Var2 = (f11) pqVar.c0;
+        ArrayList arrayList = (ArrayList) pqVar.Y;
+        s10 s10Var4 = f11Var.u0;
+        int size3 = f11Var.q0.size();
+        int q2 = f11Var.q();
+        int k = f11Var.k();
+        boolean w = nn3.w(i, 128);
+        boolean z8 = w || nn3.w(i, 64);
+        if (z8) {
+            int i29 = 0;
+            while (i29 < size3) {
+                boolean z9 = z8;
+                e11 e11Var = (e11) f11Var.q0.get(i29);
+                i7 = size3;
+                int[] iArr2 = e11Var.p0;
+                int i30 = i29;
+                boolean z10 = (iArr2[0] == 3) && (iArr2[1] == 3) && e11Var.W > 0.0f;
+                if ((e11Var.x() && z10) || ((e11Var.y() && z10) || (e11Var instanceof ka2) || e11Var.x() || e11Var.y())) {
+                    i8 = 1073741824;
                     z = false;
-                }
-                if (z) {
-                    i30 = 0;
-                    while (true) {
-                        if (i30 < size) {
-                            z16 = z;
-                            yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                            i31 = i30;
-                            iArr3 = yt0Var4.p0;
-                            i8 = size;
-                            if (iArr3[0] == 3) {
-                                z17 = true;
-                            } else {
-                                z17 = false;
-                            }
-                            if (iArr3[1] == 3) {
-                                z18 = true;
-                            } else {
-                                z18 = false;
-                            }
-                            if (z17 || !z18 || yt0Var4.W <= 0.0f) {
-                                z19 = false;
-                            } else {
-                                z19 = true;
-                            }
-                            if ((yt0Var4.x() || !z19) && !((yt0Var4.y() && z19) || (yt0Var4 instanceof h02) || yt0Var4.x() || yt0Var4.y())) {
-                                i30 = i31 + 1;
-                                z = z16;
-                                size = i8;
-                            } else {
-                                i9 = 1073741824;
-                                z2 = false;
-                            }
-                        } else {
-                            z2 = z;
-                            i8 = size;
-                            i9 = 1073741824;
-                        }
-                    }
+                    break;
                 } else {
-                    z2 = z;
-                    i8 = size;
-                    i9 = 1073741824;
+                    i29 = i30 + 1;
+                    z8 = z9;
+                    size3 = i7;
                 }
-                z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-                if (z3) {
-                    iMin3 = Math.min(iArr[0], i34);
-                    iMin4 = Math.min(iArr[1], i35);
-                    i23 = 1073741824;
-                    if (mode == 1073741824) {
-                        if (zt0Var.q() != iMin3) {
-                            zt0Var.O(iMin3);
-                            i71Var.b = true;
-                        }
-                        i23 = 1073741824;
+            }
+        }
+        z = z8;
+        i7 = size3;
+        i8 = 1073741824;
+        boolean z11 = z & ((mode == i8 && mode2 == i8) || w);
+        if (z11) {
+            int min = Math.min(iArr[0], i22);
+            int min2 = Math.min(iArr[1], i23);
+            int i31 = 1073741824;
+            if (mode == 1073741824) {
+                if (f11Var.q() != min) {
+                    f11Var.O(min);
+                    mf1Var.b = true;
+                }
+                i31 = 1073741824;
+            }
+            if (mode2 == i31 && f11Var.k() != min2) {
+                f11Var.L(min2);
+                mf1Var.b = true;
+            }
+            if (mode == i31 && mode2 == i31) {
+                ArrayList arrayList2 = (ArrayList) mf1Var.f;
+                f11 f11Var3 = (f11) mf1Var.d;
+                if (mf1Var.b || mf1Var.c) {
+                    Iterator it3 = f11Var3.q0.iterator();
+                    while (it3.hasNext()) {
+                        e11 e11Var2 = (e11) it3.next();
+                        e11Var2.h();
+                        e11Var2.a = false;
+                        e11Var2.d.n();
+                        e11Var2.e.m();
+                        z11 = z11;
                     }
-                    if (mode2 == i23 && zt0Var.k() != iMin4) {
-                        zt0Var.L(iMin4);
-                        i71Var.b = true;
-                    }
-                    if (mode == i23 || mode2 != i23) {
-                        z4 = z3;
-                        ozVar2 = ozVar;
-                        zt0Var3 = (zt0) i71Var.d;
-                        if (i71Var.b) {
-                            while (r2.hasNext()) {
-                                yt0Var5.h();
-                                yt0Var5.a = false;
-                                oh2 oh2Var112 = yt0Var5.d;
-                                oh2Var112.e.j = false;
-                                oh2Var112.g = false;
-                                oh2Var112.n();
-                                an7 an7Var112 = yt0Var5.e;
-                                an7Var112.e.j = false;
-                                an7Var112.g = false;
-                                an7Var112.m();
-                            }
-                            i24 = 0;
-                            zt0Var3.h();
-                            zt0Var3.a = false;
-                            oh2 oh2Var113 = zt0Var3.d;
-                            oh2Var113.e.j = false;
-                            oh2Var113.g = false;
-                            oh2Var113.n();
-                            an7 an7Var113 = zt0Var3.e;
-                            an7Var113.e.j = false;
-                            an7Var113.g = false;
-                            an7Var113.m();
-                            i71Var.c();
-                        } else {
-                            i24 = 0;
-                        }
-                        i71Var.b((zt0) i71Var.e);
-                        zt0Var3.Y = i24;
-                        zt0Var3.Z = i24;
-                        zt0Var3.d.h.d(i24);
-                        zt0Var3.e.h.d(i24);
-                        i25 = 1073741824;
-                        if (mode == 1073741824) {
-                            zT = zt0Var.T(i24, zW);
-                            i10 = 1;
-                        } else {
-                            i10 = 0;
-                            zT = true;
-                        }
-                        if (mode2 == 1073741824) {
-                            zT &= zt0Var.T(1, zW);
-                            i10++;
-                        }
-                    } else {
-                        ArrayList<ur7> arrayList3 = (ArrayList) i71Var.f;
-                        zt0 zt0Var4 = (zt0) i71Var.d;
-                        if (i71Var.b || i71Var.c) {
-                            for (yt0 yt0Var6 : zt0Var4.q0) {
-                                yt0Var6.h();
-                                yt0Var6.a = false;
-                                yt0Var6.d.n();
-                                yt0Var6.e.m();
-                                z3 = z3;
-                            }
-                            z4 = z3;
-                            zt0Var4.h();
-                            i26 = 0;
-                            zt0Var4.a = false;
-                            zt0Var4.d.n();
-                            zt0Var4.e.m();
-                            i71Var.c = false;
-                        } else {
-                            z4 = z3;
-                            i26 = 0;
-                        }
-                        i71Var.b((zt0) i71Var.e);
-                        zt0Var4.Y = i26;
-                        int[] iArr4 = zt0Var4.p0;
-                        zt0Var4.Z = i26;
-                        int iJ7 = zt0Var4.j(i26);
-                        int iJ8 = zt0Var4.j(1);
-                        if (i71Var.b) {
-                            i71Var.c();
-                        }
-                        int iR = zt0Var4.r();
-                        int iS = zt0Var4.s();
-                        ozVar2 = ozVar;
-                        zt0Var4.d.h.d(iR);
-                        zt0Var4.e.h.d(iS);
-                        i71Var.g();
-                        if (iJ7 == 2 || iJ8 == 2) {
-                            if (zW) {
-                                Iterator it2 = arrayList3.iterator();
-                                while (it2.hasNext()) {
-                                    if (!((ur7) it2.next()).k()) {
-                                        zW = false;
-                                        break;
-                                    }
-                                }
-                            }
-                            if (zW && iJ7 == 2) {
-                                zt0Var4.M(1);
-                                zt0Var4.O(i71Var.d(zt0Var4, 0));
-                                zt0Var4.d.e.d(zt0Var4.q());
-                            }
-                            if (zW && iJ8 == 2) {
-                                i27 = 1;
-                                zt0Var4.N(1);
-                                zt0Var4.L(i71Var.d(zt0Var4, 1));
-                                zt0Var4.e.e.d(zt0Var4.k());
-                            }
-                            i28 = iArr4[0];
-                            if (i28 != i27 || i28 == 4) {
-                                int iQ7 = zt0Var4.q() + iR;
-                                zt0Var4.d.i.d(iQ7);
-                                zt0Var4.d.e.d(iQ7 - iR);
-                                i71Var.g();
-                                i29 = iArr4[1];
-                                if (i29 != 1 || i29 == 4) {
-                                    int iK6 = zt0Var4.k() + iS;
-                                    zt0Var4.e.i.d(iK6);
-                                    zt0Var4.e.e.d(iK6 - iS);
-                                }
-                                i71Var.g();
-                                z14 = true;
-                            } else {
-                                z14 = false;
-                            }
-                            for (ur7 ur7Var2 : arrayList3) {
-                                if (ur7Var2.b == zt0Var4 || ur7Var2.g) {
-                                    ur7Var2.e();
-                                }
-                            }
-                            it = arrayList3.iterator();
-                            while (true) {
-                                if (it.hasNext()) {
-                                    z15 = true;
+                    z2 = z11;
+                    f11Var3.h();
+                    i15 = 0;
+                    f11Var3.a = false;
+                    f11Var3.d.n();
+                    f11Var3.e.m();
+                    mf1Var.c = false;
+                } else {
+                    z2 = z11;
+                    i15 = 0;
+                }
+                mf1Var.b((f11) mf1Var.e);
+                f11Var3.Y = i15;
+                int[] iArr3 = f11Var3.p0;
+                f11Var3.Z = i15;
+                int j = f11Var3.j(i15);
+                int j2 = f11Var3.j(1);
+                if (mf1Var.b) {
+                    mf1Var.c();
+                }
+                int r = f11Var3.r();
+                int s = f11Var3.s();
+                s10Var = s10Var4;
+                f11Var3.d.h.d(r);
+                f11Var3.e.h.d(s);
+                mf1Var.g();
+                if (j == 2 || j2 == 2) {
+                    if (w) {
+                        Iterator it4 = arrayList2.iterator();
+                        while (true) {
+                            if (it4.hasNext()) {
+                                if (!((vm8) it4.next()).k()) {
+                                    w = false;
                                     break;
                                 }
-                                ur7Var = (ur7) it.next();
-                                if (!z14 || ur7Var.b != zt0Var4) {
-                                    if (ur7Var.h.j || ((!ur7Var.i.j && !(ur7Var instanceof ud2)) || (!ur7Var.e.j && !(ur7Var instanceof cg0) && !(ur7Var instanceof ud2)))) {
-                                        z15 = false;
-                                        break;
-                                    }
-                                }
-                            }
-                            zt0Var4.M(iJ7);
-                            zt0Var4.N(iJ8);
-                            zT = z15;
-                            i10 = 2;
-                            i25 = 1073741824;
-                        } else {
-                            iR = iR;
-                        }
-                        i27 = 1;
-                        i28 = iArr4[0];
-                        if (i28 != i27) {
-                            int iQ8 = zt0Var4.q() + iR;
-                            zt0Var4.d.i.d(iQ8);
-                            zt0Var4.d.e.d(iQ8 - iR);
-                            i71Var.g();
-                            i29 = iArr4[1];
-                            if (i29 != 1) {
-                                int iK7 = zt0Var4.k() + iS;
-                                zt0Var4.e.i.d(iK7);
-                                zt0Var4.e.e.d(iK7 - iS);
                             } else {
-                                int iK8 = zt0Var4.k() + iS;
-                                zt0Var4.e.i.d(iK8);
-                                zt0Var4.e.e.d(iK8 - iS);
-                            }
-                            i71Var.g();
-                            z14 = true;
-                        } else {
-                            int iQ9 = zt0Var4.q() + iR;
-                            zt0Var4.d.i.d(iQ9);
-                            zt0Var4.d.e.d(iQ9 - iR);
-                            i71Var.g();
-                            i29 = iArr4[1];
-                            if (i29 != 1) {
-                                int iK9 = zt0Var4.k() + iS;
-                                zt0Var4.e.i.d(iK9);
-                                zt0Var4.e.e.d(iK9 - iS);
-                            } else {
-                                int iK10 = zt0Var4.k() + iS;
-                                zt0Var4.e.i.d(iK10);
-                                zt0Var4.e.e.d(iK10 - iS);
-                            }
-                            i71Var.g();
-                            z14 = true;
-                        }
-                        while (r6.hasNext()) {
-                            if (ur7Var2.b == zt0Var4) {
-                            }
-                            ur7Var2.e();
-                        }
-                        it = arrayList3.iterator();
-                        while (true) {
-                            if (it.hasNext()) {
-                                z15 = true;
                                 break;
                             }
-                            ur7Var = (ur7) it.next();
-                            if (!z14) {
-                            }
-                            if (ur7Var.h.j) {
-                            }
-                            z15 = false;
-                            break;
-                        }
-                        zt0Var4.M(iJ7);
-                        zt0Var4.N(iJ8);
-                        zT = z15;
-                        i10 = 2;
-                        i25 = 1073741824;
-                    }
-                    if (zT) {
-                        if (mode == i25) {
-                            z12 = true;
-                        } else {
-                            z12 = false;
-                        }
-                        if (mode2 == i25) {
-                            z13 = true;
-                        } else {
-                            z13 = false;
-                        }
-                        zt0Var.P(z12, z13);
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    i10 = 0;
-                    zT = false;
-                }
-                if (zT || i10 != 2) {
-                    int i3113 = zt0Var.D0;
-                    if (i8 > 0) {
-                        size3 = zt0Var.q0.size();
-                        boolean zW7 = zt0Var.W(64);
-                        ozVar6 = zt0Var.u0;
-                        i19 = 0;
-                        while (i19 < size3) {
-                            yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                            if (!(yt0Var3 instanceof td2) || (yt0Var3 instanceof qx) || yt0Var3.F || (zW7 && (oh2Var = yt0Var3.d) != null && (an7Var = yt0Var3.e) != null && oh2Var.e.j && an7Var.e.j)) {
-                                i22 = size3;
-                            } else {
-                                iJ = yt0Var3.j(0);
-                                int iJ9 = yt0Var3.j(1);
-                                i22 = size3;
-                                if (iJ == 3 || yt0Var3.r == 1 || iJ9 != 3 || yt0Var3.s == 1) {
-                                    z11 = false;
-                                } else {
-                                    z11 = true;
-                                }
-                                if (z11 && zt0Var.W(1) && !(yt0Var3 instanceof h02)) {
-                                    if (iJ == 3 && yt0Var3.r == 0 && iJ9 != 3 && !yt0Var3.x()) {
-                                        z11 = true;
-                                    }
-                                    if (iJ9 == 3 && yt0Var3.s == 0 && iJ != 3 && !yt0Var3.x()) {
-                                        z11 = true;
-                                    }
-                                    if ((iJ == 3 || iJ9 == 3) && yt0Var3.W > 0.0f) {
-                                        z11 = true;
-                                    }
-                                }
-                                if (z11) {
-                                    rv7Var.A(0, ozVar6, yt0Var3);
-                                }
-                            }
-                            i19++;
-                            size3 = i22;
-                        }
-                        constraintLayout = ((b) ozVar6).a;
-                        childCount = constraintLayout.getChildCount();
-                        arrayList2 = constraintLayout.R;
-                        while (i20 < childCount) {
-                            constraintLayout.getChildAt(i20);
-                        }
-                        size4 = arrayList2.size();
-                        if (size4 > 0) {
-                            while (i21 < size4) {
-                                ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                            }
                         }
                     }
-                    rv7Var.L(zt0Var);
-                    size2 = arrayList.size();
-                    if (i8 > 0) {
-                        rv7Var.J(zt0Var, 0, iQ2, iK);
+                    if (w && j == 2) {
+                        f11Var3.M(1);
+                        i16 = s;
+                        f11Var3.O(mf1Var.d(f11Var3, 0));
+                        f11Var3.d.e.d(f11Var3.q());
+                    } else {
+                        i16 = s;
                     }
-                    if (size2 > 0) {
-                        iArr2 = zt0Var.p0;
-                        if (iArr2[0] == 2) {
-                            z5 = true;
+                    if (w && j2 == 2) {
+                        i17 = 1;
+                        f11Var3.N(1);
+                        f11Var3.L(mf1Var.d(f11Var3, 1));
+                        f11Var3.e.e.d(f11Var3.k());
+                        i18 = iArr3[0];
+                        if (i18 != i17 || i18 == 4) {
+                            int q3 = f11Var3.q() + r;
+                            f11Var3.d.i.d(q3);
+                            f11Var3.d.e.d(q3 - r);
+                            mf1Var.g();
+                            i19 = iArr3[1];
+                            if (i19 != 1 || i19 == 4) {
+                                int k2 = f11Var3.k() + i16;
+                                f11Var3.e.i.d(k2);
+                                f11Var3.e.e.d(k2 - i16);
+                            }
+                            mf1Var.g();
+                            z7 = true;
                         } else {
-                            z5 = false;
-                        }
-                        if (iArr2[1] == 2) {
-                            z6 = true;
-                        } else {
-                            z6 = false;
-                        }
-                        iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                        iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                        i11 = 0;
-                        z7 = false;
-                        while (i11 < size2) {
-                            yt0Var2 = (yt0) arrayList.get(i11);
-                            if (yt0Var2 instanceof h02) {
-                                z9 = z6;
-                                ozVar5 = ozVar2;
-                            } else {
-                                iQ5 = yt0Var2.q();
-                                iK4 = yt0Var2.k();
-                                z9 = z6;
-                                ozVar5 = ozVar2;
-                                boolean zA7 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                                iQ6 = yt0Var2.q();
-                                z10 = zA7;
-                                iK5 = yt0Var2.k();
-                                if (iQ6 != iQ5) {
-                                    yt0Var2.O(iQ6);
-                                    if (z5 && yt0Var2.r() + yt0Var2.U > iMax3) {
-                                        iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                                    }
-                                    z10 = true;
-                                }
-                                if (iK5 != iK4) {
-                                    yt0Var2.L(iK5);
-                                    if (z9 && yt0Var2.s() + yt0Var2.V > iMax4) {
-                                        iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                                    }
-                                    z10 = true;
-                                }
-                                z7 = z10 | ((h02) yt0Var2).y0;
-                            }
-                            i11++;
-                            ozVar2 = ozVar5;
-                            z6 = z9;
-                        }
-                        z8 = z6;
-                        i12 = 0;
-                        while (true) {
-                            ozVar3 = ozVar2;
-                            if (i12 < 2) {
-                                break;
-                            }
-                            zA = z7;
-                            i13 = 0;
-                            while (i13 < size2) {
-                                yt0Var = (yt0) arrayList.get(i13);
-                                if (((yt0Var instanceof sg2) || (yt0Var instanceof h02)) && !(yt0Var instanceof td2)) {
-                                    i16 = size2;
-                                    if (yt0Var.g0 == 8 && ((!z4 || !yt0Var.d.e.j || !yt0Var.e.e.j) && !(yt0Var instanceof h02))) {
-                                        iQ3 = yt0Var.q();
-                                        iK2 = yt0Var.k();
-                                        i17 = i13;
-                                        int i3114 = yt0Var.a0;
-                                        zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                        ozVar4 = ozVar3;
-                                        iQ4 = yt0Var.q();
-                                        i18 = i12;
-                                        iK3 = yt0Var.k();
-                                        if (iQ4 != iQ3) {
-                                            yt0Var.O(iQ4);
-                                            if (!z5 && yt0Var.r() + yt0Var.U > iMax3) {
-                                                iMax3 = Math.max(iMax3, yt0Var.i(4).e() + yt0Var.r() + yt0Var.U);
-                                            }
-                                            zA = true;
-                                        }
-                                        if (iK3 != iK2) {
-                                            yt0Var.L(iK3);
-                                            if (!z8 && yt0Var.s() + yt0Var.V > iMax4) {
-                                                iMax4 = Math.max(iMax4, yt0Var.i(5).e() + yt0Var.s() + yt0Var.V);
-                                            }
-                                            zA = true;
-                                        }
-                                        if (!yt0Var.E && i3114 != yt0Var.a0) {
-                                            zA = true;
-                                        }
-                                    }
-                                    i13 = i17 + 1;
-                                    size2 = i16;
-                                    i12 = i18;
-                                    ozVar3 = ozVar4;
-                                } else {
-                                    i16 = size2;
-                                }
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                                i13 = i17 + 1;
-                                size2 = i16;
-                                i12 = i18;
-                                ozVar3 = ozVar4;
-                            }
-                            i14 = size2;
-                            ozVar2 = ozVar3;
-                            i15 = i12;
-                            if (zA) {
-                                break;
-                            }
-                            int i45 = i15 + 1;
-                            rv7Var.J(zt0Var, i45, iQ2, iK);
-                            i12 = i45;
-                            size2 = i14;
                             z7 = false;
                         }
-                    }
-                    zt0Var.D0 = i3113;
-                    hl3.q = zt0Var.W(512);
-                }
-                return;
-            }
-            if (childCount2 == 0) {
-                iMax2 = Math.max(0, this.U);
-            } else {
-                i4 = 2;
-            }
-            iMin2 = 0;
-            iQ = zt0Var.q();
-            i71Var = zt0Var.s0;
-            iArr = zt0Var.C;
-            i5 = iMin;
-            if (i5 == iQ) {
-                i71Var.c = true;
-            } else {
-                i71Var.c = true;
-            }
-            zt0Var.Y = 0;
-            zt0Var.Z = 0;
-            iArr[0] = this.V - i37;
-            iArr[1] = this.W - i36;
-            zt0Var.b0 = 0;
-            zt0Var.c0 = 0;
-            zt0Var.M(i33);
-            zt0Var.O(i5);
-            zt0Var.N(i4);
-            zt0Var.L(iMin2);
-            i6 = this.T - i37;
-            if (i6 < 0) {
-                zt0Var.b0 = 0;
-            } else {
-                zt0Var.b0 = i6;
-            }
-            i7 = this.U - i36;
-            if (i7 < 0) {
-                zt0Var.c0 = 0;
-            } else {
-                zt0Var.c0 = i7;
-            }
-            zt0Var.x0 = iMax7;
-            zt0Var.y0 = iMax5;
-            rv7Var = zt0Var.r0;
-            zt0Var2 = (zt0) rv7Var.T;
-            arrayList = (ArrayList) rv7Var.R;
-            ozVar = zt0Var.u0;
-            size = zt0Var.q0.size();
-            iQ2 = zt0Var.q();
-            iK = zt0Var.k();
-            zW = uv3.w(i, 128);
-            if (zW) {
-                z = true;
-            } else {
-                z = true;
-            }
-            if (z) {
-                i30 = 0;
-                while (true) {
-                    if (i30 < size) {
-                        z16 = z;
-                        yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                        i31 = i30;
-                        iArr3 = yt0Var4.p0;
-                        i8 = size;
-                        if (iArr3[0] == 3) {
-                            z17 = true;
-                        } else {
-                            z17 = false;
-                        }
-                        if (iArr3[1] == 3) {
-                            z18 = true;
-                        } else {
-                            z18 = false;
-                        }
-                        if (z17) {
-                            z19 = false;
-                        } else {
-                            z19 = false;
-                        }
-                        if (yt0Var4.x()) {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        } else {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        }
-                        i9 = 1073741824;
-                        z2 = false;
-                    } else {
-                        z2 = z;
-                        i8 = size;
-                        i9 = 1073741824;
-                    }
-                }
-            } else {
-                z2 = z;
-                i8 = size;
-                i9 = 1073741824;
-            }
-            z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-            if (z3) {
-                iMin3 = Math.min(iArr[0], i34);
-                iMin4 = Math.min(iArr[1], i35);
-                i23 = 1073741824;
-                if (mode == 1073741824) {
-                    if (zt0Var.q() != iMin3) {
-                        zt0Var.O(iMin3);
-                        i71Var.b = true;
-                    }
-                    i23 = 1073741824;
-                }
-                if (mode2 == i23) {
-                    zt0Var.L(iMin4);
-                    i71Var.b = true;
-                }
-                if (mode == i23) {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var114 = yt0Var5.d;
-                            oh2Var114.e.j = false;
-                            oh2Var114.g = false;
-                            oh2Var114.n();
-                            an7 an7Var114 = yt0Var5.e;
-                            an7Var114.e.j = false;
-                            an7Var114.g = false;
-                            an7Var114.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var115 = zt0Var3.d;
-                        oh2Var115.e.j = false;
-                        oh2Var115.g = false;
-                        oh2Var115.n();
-                        an7 an7Var115 = zt0Var3.e;
-                        an7Var115.e.j = false;
-                        an7Var115.g = false;
-                        an7Var115.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var116 = yt0Var5.d;
-                            oh2Var116.e.j = false;
-                            oh2Var116.g = false;
-                            oh2Var116.n();
-                            an7 an7Var116 = yt0Var5.e;
-                            an7Var116.e.j = false;
-                            an7Var116.g = false;
-                            an7Var116.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var117 = zt0Var3.d;
-                        oh2Var117.e.j = false;
-                        oh2Var117.g = false;
-                        oh2Var117.n();
-                        an7 an7Var117 = zt0Var3.e;
-                        an7Var117.e.j = false;
-                        an7Var117.g = false;
-                        an7Var117.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                }
-                if (zT) {
-                    if (mode == i25) {
-                        z12 = true;
-                    } else {
-                        z12 = false;
-                    }
-                    if (mode2 == i25) {
-                        z13 = true;
-                    } else {
-                        z13 = false;
-                    }
-                    zt0Var.P(z12, z13);
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                i10 = 0;
-                zT = false;
-            }
-            if (zT) {
-            }
-            int i3115 = zt0Var.D0;
-            if (i8 > 0) {
-                size3 = zt0Var.q0.size();
-                boolean zW8 = zt0Var.W(64);
-                ozVar6 = zt0Var.u0;
-                i19 = 0;
-                while (i19 < size3) {
-                    yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                    if (!(yt0Var3 instanceof td2)) {
-                        i22 = size3;
-                    } else {
-                        iJ = yt0Var3.j(0);
-                        int iJ10 = yt0Var3.j(1);
-                        i22 = size3;
-                        if (iJ == 3) {
-                            z11 = false;
-                        } else {
-                            z11 = false;
-                        }
-                        if (z11) {
-                        }
-                        if (z11) {
-                            rv7Var.A(0, ozVar6, yt0Var3);
-                        }
-                    }
-                    i19++;
-                    size3 = i22;
-                }
-                constraintLayout = ((b) ozVar6).a;
-                childCount = constraintLayout.getChildCount();
-                arrayList2 = constraintLayout.R;
-                while (i20 < childCount) {
-                    constraintLayout.getChildAt(i20);
-                }
-                size4 = arrayList2.size();
-                if (size4 > 0) {
-                    while (i21 < size4) {
-                        ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                    }
-                }
-            }
-            rv7Var.L(zt0Var);
-            size2 = arrayList.size();
-            if (i8 > 0) {
-                rv7Var.J(zt0Var, 0, iQ2, iK);
-            }
-            if (size2 > 0) {
-                iArr2 = zt0Var.p0;
-                if (iArr2[0] == 2) {
-                    z5 = true;
-                } else {
-                    z5 = false;
-                }
-                if (iArr2[1] == 2) {
-                    z6 = true;
-                } else {
-                    z6 = false;
-                }
-                iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                i11 = 0;
-                z7 = false;
-                while (i11 < size2) {
-                    yt0Var2 = (yt0) arrayList.get(i11);
-                    if (yt0Var2 instanceof h02) {
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                    } else {
-                        iQ5 = yt0Var2.q();
-                        iK4 = yt0Var2.k();
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                        boolean zA8 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                        iQ6 = yt0Var2.q();
-                        z10 = zA8;
-                        iK5 = yt0Var2.k();
-                        if (iQ6 != iQ5) {
-                            yt0Var2.O(iQ6);
-                            if (z5) {
-                                iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
+                        it = arrayList2.iterator();
+                        while (it.hasNext()) {
+                            vm8 vm8Var = (vm8) it.next();
+                            if (vm8Var.b != f11Var3 || vm8Var.g) {
+                                vm8Var.e();
                             }
-                            z10 = true;
                         }
-                        if (iK5 != iK4) {
-                            yt0Var2.L(iK5);
-                            if (z9) {
-                                iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
+                        it2 = arrayList2.iterator();
+                        while (it2.hasNext()) {
+                            vm8 vm8Var2 = (vm8) it2.next();
+                            if (z7 || vm8Var2.b != f11Var3) {
+                                if (!vm8Var2.h.j || ((!vm8Var2.i.j && !(vm8Var2 instanceof fq2)) || (!vm8Var2.e.j && !(vm8Var2 instanceof wm0) && !(vm8Var2 instanceof fq2)))) {
+                                    z3 = false;
+                                    break;
+                                }
                             }
-                            z10 = true;
                         }
-                        z7 = z10 | ((h02) yt0Var2).y0;
+                        z3 = true;
+                        f11Var3.M(j);
+                        f11Var3.N(j2);
+                        i9 = 2;
+                        i14 = 1073741824;
                     }
-                    i11++;
-                    ozVar2 = ozVar5;
-                    z6 = z9;
+                } else {
+                    i16 = s;
                 }
-                z8 = z6;
-                i12 = 0;
-                while (true) {
-                    ozVar3 = ozVar2;
-                    if (i12 < 2) {
-                        break;
-                        break;
+                i17 = 1;
+                i18 = iArr3[0];
+                if (i18 != i17) {
+                }
+                int q32 = f11Var3.q() + r;
+                f11Var3.d.i.d(q32);
+                f11Var3.d.e.d(q32 - r);
+                mf1Var.g();
+                i19 = iArr3[1];
+                if (i19 != 1) {
+                }
+                int k22 = f11Var3.k() + i16;
+                f11Var3.e.i.d(k22);
+                f11Var3.e.e.d(k22 - i16);
+                mf1Var.g();
+                z7 = true;
+                it = arrayList2.iterator();
+                while (it.hasNext()) {
+                }
+                it2 = arrayList2.iterator();
+                while (it2.hasNext()) {
+                }
+                z3 = true;
+                f11Var3.M(j);
+                f11Var3.N(j2);
+                i9 = 2;
+                i14 = 1073741824;
+            } else {
+                z2 = z11;
+                s10Var = s10Var4;
+                f11 f11Var4 = (f11) mf1Var.d;
+                if (mf1Var.b) {
+                    Iterator it5 = f11Var4.q0.iterator();
+                    while (it5.hasNext()) {
+                        e11 e11Var3 = (e11) it5.next();
+                        e11Var3.h();
+                        e11Var3.a = false;
+                        xu2 xu2Var2 = e11Var3.d;
+                        xu2Var2.e.j = false;
+                        xu2Var2.g = false;
+                        xu2Var2.n();
+                        vh8 vh8Var2 = e11Var3.e;
+                        vh8Var2.e.j = false;
+                        vh8Var2.g = false;
+                        vh8Var2.m();
                     }
-                    zA = z7;
                     i13 = 0;
-                    while (i13 < size2) {
-                        yt0Var = (yt0) arrayList.get(i13);
-                        if (yt0Var instanceof sg2) {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i3116 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        } else {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i3117 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        }
-                        i13 = i17 + 1;
-                        size2 = i16;
-                        i12 = i18;
-                        ozVar3 = ozVar4;
-                    }
-                    i14 = size2;
-                    ozVar2 = ozVar3;
-                    i15 = i12;
-                    if (zA) {
-                        break;
-                        break;
-                    }
-                    int i46 = i15 + 1;
-                    rv7Var.J(zt0Var, i46, iQ2, iK);
-                    i12 = i46;
-                    size2 = i14;
-                    z7 = false;
-                }
-            }
-            zt0Var.D0 = i3115;
-            hl3.q = zt0Var.W(512);
-            iMin2 = iMax2;
-            i4 = 2;
-            iQ = zt0Var.q();
-            i71Var = zt0Var.s0;
-            iArr = zt0Var.C;
-            i5 = iMin;
-            if (i5 == iQ) {
-                i71Var.c = true;
-            } else {
-                i71Var.c = true;
-            }
-            zt0Var.Y = 0;
-            zt0Var.Z = 0;
-            iArr[0] = this.V - i37;
-            iArr[1] = this.W - i36;
-            zt0Var.b0 = 0;
-            zt0Var.c0 = 0;
-            zt0Var.M(i33);
-            zt0Var.O(i5);
-            zt0Var.N(i4);
-            zt0Var.L(iMin2);
-            i6 = this.T - i37;
-            if (i6 < 0) {
-                zt0Var.b0 = 0;
-            } else {
-                zt0Var.b0 = i6;
-            }
-            i7 = this.U - i36;
-            if (i7 < 0) {
-                zt0Var.c0 = 0;
-            } else {
-                zt0Var.c0 = i7;
-            }
-            zt0Var.x0 = iMax7;
-            zt0Var.y0 = iMax5;
-            rv7Var = zt0Var.r0;
-            zt0Var2 = (zt0) rv7Var.T;
-            arrayList = (ArrayList) rv7Var.R;
-            ozVar = zt0Var.u0;
-            size = zt0Var.q0.size();
-            iQ2 = zt0Var.q();
-            iK = zt0Var.k();
-            zW = uv3.w(i, 128);
-            if (zW) {
-                z = true;
-            } else {
-                z = true;
-            }
-            if (z) {
-                i30 = 0;
-                while (true) {
-                    if (i30 < size) {
-                        z16 = z;
-                        yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                        i31 = i30;
-                        iArr3 = yt0Var4.p0;
-                        i8 = size;
-                        if (iArr3[0] == 3) {
-                            z17 = true;
-                        } else {
-                            z17 = false;
-                        }
-                        if (iArr3[1] == 3) {
-                            z18 = true;
-                        } else {
-                            z18 = false;
-                        }
-                        if (z17) {
-                            z19 = false;
-                        } else {
-                            z19 = false;
-                        }
-                        if (yt0Var4.x()) {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        } else {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        }
-                        i9 = 1073741824;
-                        z2 = false;
-                    } else {
-                        z2 = z;
-                        i8 = size;
-                        i9 = 1073741824;
-                    }
-                }
-            } else {
-                z2 = z;
-                i8 = size;
-                i9 = 1073741824;
-            }
-            z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-            if (z3) {
-                iMin3 = Math.min(iArr[0], i34);
-                iMin4 = Math.min(iArr[1], i35);
-                i23 = 1073741824;
-                if (mode == 1073741824) {
-                    if (zt0Var.q() != iMin3) {
-                        zt0Var.O(iMin3);
-                        i71Var.b = true;
-                    }
-                    i23 = 1073741824;
-                }
-                if (mode2 == i23) {
-                    zt0Var.L(iMin4);
-                    i71Var.b = true;
-                }
-                if (mode == i23) {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var118 = yt0Var5.d;
-                            oh2Var118.e.j = false;
-                            oh2Var118.g = false;
-                            oh2Var118.n();
-                            an7 an7Var118 = yt0Var5.e;
-                            an7Var118.e.j = false;
-                            an7Var118.g = false;
-                            an7Var118.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var119 = zt0Var3.d;
-                        oh2Var119.e.j = false;
-                        oh2Var119.g = false;
-                        oh2Var119.n();
-                        an7 an7Var119 = zt0Var3.e;
-                        an7Var119.e.j = false;
-                        an7Var119.g = false;
-                        an7Var119.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
+                    f11Var4.h();
+                    f11Var4.a = false;
+                    xu2 xu2Var3 = f11Var4.d;
+                    xu2Var3.e.j = false;
+                    xu2Var3.g = false;
+                    xu2Var3.n();
+                    vh8 vh8Var3 = f11Var4.e;
+                    vh8Var3.e.j = false;
+                    vh8Var3.g = false;
+                    vh8Var3.m();
+                    mf1Var.c();
                 } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var1110 = yt0Var5.d;
-                            oh2Var1110.e.j = false;
-                            oh2Var1110.g = false;
-                            oh2Var1110.n();
-                            an7 an7Var1110 = yt0Var5.e;
-                            an7Var1110.e.j = false;
-                            an7Var1110.g = false;
-                            an7Var1110.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var1111 = zt0Var3.d;
-                        oh2Var1111.e.j = false;
-                        oh2Var1111.g = false;
-                        oh2Var1111.n();
-                        an7 an7Var1111 = zt0Var3.e;
-                        an7Var1111.e.j = false;
-                        an7Var1111.g = false;
-                        an7Var1111.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                }
-                if (zT) {
-                    if (mode == i25) {
-                        z12 = true;
-                    } else {
-                        z12 = false;
-                    }
-                    if (mode2 == i25) {
-                        z13 = true;
-                    } else {
-                        z13 = false;
-                    }
-                    zt0Var.P(z12, z13);
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                i10 = 0;
-                zT = false;
-            }
-            if (zT) {
-            }
-            int i3118 = zt0Var.D0;
-            if (i8 > 0) {
-                size3 = zt0Var.q0.size();
-                boolean zW9 = zt0Var.W(64);
-                ozVar6 = zt0Var.u0;
-                i19 = 0;
-                while (i19 < size3) {
-                    yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                    if (!(yt0Var3 instanceof td2)) {
-                        i22 = size3;
-                    } else {
-                        iJ = yt0Var3.j(0);
-                        int iJ11 = yt0Var3.j(1);
-                        i22 = size3;
-                        if (iJ == 3) {
-                            z11 = false;
-                        } else {
-                            z11 = false;
-                        }
-                        if (z11) {
-                        }
-                        if (z11) {
-                            rv7Var.A(0, ozVar6, yt0Var3);
-                        }
-                    }
-                    i19++;
-                    size3 = i22;
-                }
-                constraintLayout = ((b) ozVar6).a;
-                childCount = constraintLayout.getChildCount();
-                arrayList2 = constraintLayout.R;
-                while (i20 < childCount) {
-                    constraintLayout.getChildAt(i20);
-                }
-                size4 = arrayList2.size();
-                if (size4 > 0) {
-                    while (i21 < size4) {
-                        ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                    }
-                }
-            }
-            rv7Var.L(zt0Var);
-            size2 = arrayList.size();
-            if (i8 > 0) {
-                rv7Var.J(zt0Var, 0, iQ2, iK);
-            }
-            if (size2 > 0) {
-                iArr2 = zt0Var.p0;
-                if (iArr2[0] == 2) {
-                    z5 = true;
-                } else {
-                    z5 = false;
-                }
-                if (iArr2[1] == 2) {
-                    z6 = true;
-                } else {
-                    z6 = false;
-                }
-                iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                i11 = 0;
-                z7 = false;
-                while (i11 < size2) {
-                    yt0Var2 = (yt0) arrayList.get(i11);
-                    if (yt0Var2 instanceof h02) {
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                    } else {
-                        iQ5 = yt0Var2.q();
-                        iK4 = yt0Var2.k();
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                        boolean zA9 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                        iQ6 = yt0Var2.q();
-                        z10 = zA9;
-                        iK5 = yt0Var2.k();
-                        if (iQ6 != iQ5) {
-                            yt0Var2.O(iQ6);
-                            if (z5) {
-                                iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                            }
-                            z10 = true;
-                        }
-                        if (iK5 != iK4) {
-                            yt0Var2.L(iK5);
-                            if (z9) {
-                                iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                            }
-                            z10 = true;
-                        }
-                        z7 = z10 | ((h02) yt0Var2).y0;
-                    }
-                    i11++;
-                    ozVar2 = ozVar5;
-                    z6 = z9;
-                }
-                z8 = z6;
-                i12 = 0;
-                while (true) {
-                    ozVar3 = ozVar2;
-                    if (i12 < 2) {
-                        break;
-                        break;
-                    }
-                    zA = z7;
                     i13 = 0;
-                    while (i13 < size2) {
-                        yt0Var = (yt0) arrayList.get(i13);
-                        if (yt0Var instanceof sg2) {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i3119 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        } else {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i31110 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        }
-                        i13 = i17 + 1;
-                        size2 = i16;
-                        i12 = i18;
-                        ozVar3 = ozVar4;
-                    }
-                    i14 = size2;
-                    ozVar2 = ozVar3;
-                    i15 = i12;
-                    if (zA) {
-                        break;
-                        break;
-                    }
-                    int i47 = i15 + 1;
-                    rv7Var.J(zt0Var, i47, iQ2, iK);
-                    i12 = i47;
-                    size2 = i14;
-                    z7 = false;
+                }
+                mf1Var.b((f11) mf1Var.e);
+                f11Var4.Y = i13;
+                f11Var4.Z = i13;
+                f11Var4.d.h.d(i13);
+                f11Var4.e.h.d(i13);
+                i14 = 1073741824;
+                if (mode == 1073741824) {
+                    z3 = f11Var.T(i13, w);
+                    i9 = 1;
+                } else {
+                    i9 = 0;
+                    z3 = true;
+                }
+                if (mode2 == 1073741824) {
+                    z3 &= f11Var.T(1, w);
+                    i9++;
                 }
             }
-            zt0Var.D0 = i3118;
-            hl3.q = zt0Var.W(512);
-        }
-        if (childCount2 == 0) {
-            iMax = Math.max(0, this.T);
-        } else {
-            i33 = 2;
-        }
-        iMin = 0;
-        if (mode2 != Integer.MIN_VALUE) {
-            if (childCount2 == 0) {
-                iMax2 = Math.max(0, this.U);
-            } else {
-                iMin2 = i35;
-            }
-            i4 = 2;
-            iQ = zt0Var.q();
-            i71Var = zt0Var.s0;
-            iArr = zt0Var.C;
-            i5 = iMin;
-            if (i5 == iQ) {
-                i71Var.c = true;
-            } else {
-                i71Var.c = true;
-            }
-            zt0Var.Y = 0;
-            zt0Var.Z = 0;
-            iArr[0] = this.V - i37;
-            iArr[1] = this.W - i36;
-            zt0Var.b0 = 0;
-            zt0Var.c0 = 0;
-            zt0Var.M(i33);
-            zt0Var.O(i5);
-            zt0Var.N(i4);
-            zt0Var.L(iMin2);
-            i6 = this.T - i37;
-            if (i6 < 0) {
-                zt0Var.b0 = 0;
-            } else {
-                zt0Var.b0 = i6;
-            }
-            i7 = this.U - i36;
-            if (i7 < 0) {
-                zt0Var.c0 = 0;
-            } else {
-                zt0Var.c0 = i7;
-            }
-            zt0Var.x0 = iMax7;
-            zt0Var.y0 = iMax5;
-            rv7Var = zt0Var.r0;
-            zt0Var2 = (zt0) rv7Var.T;
-            arrayList = (ArrayList) rv7Var.R;
-            ozVar = zt0Var.u0;
-            size = zt0Var.q0.size();
-            iQ2 = zt0Var.q();
-            iK = zt0Var.k();
-            zW = uv3.w(i, 128);
-            if (zW) {
-                z = true;
-            } else {
-                z = true;
-            }
-            if (z) {
-                i30 = 0;
-                while (true) {
-                    if (i30 < size) {
-                        z16 = z;
-                        yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                        i31 = i30;
-                        iArr3 = yt0Var4.p0;
-                        i8 = size;
-                        if (iArr3[0] == 3) {
-                            z17 = true;
-                        } else {
-                            z17 = false;
-                        }
-                        if (iArr3[1] == 3) {
-                            z18 = true;
-                        } else {
-                            z18 = false;
-                        }
-                        if (z17) {
-                            z19 = false;
-                        } else {
-                            z19 = false;
-                        }
-                        if (yt0Var4.x()) {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        } else {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        }
-                        i9 = 1073741824;
-                        z2 = false;
-                    } else {
-                        z2 = z;
-                        i8 = size;
-                        i9 = 1073741824;
-                    }
-                }
-            } else {
-                z2 = z;
-                i8 = size;
-                i9 = 1073741824;
-            }
-            z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
             if (z3) {
-                iMin3 = Math.min(iArr[0], i34);
-                iMin4 = Math.min(iArr[1], i35);
-                i23 = 1073741824;
-                if (mode == 1073741824) {
-                    if (zt0Var.q() != iMin3) {
-                        zt0Var.O(iMin3);
-                        i71Var.b = true;
-                    }
-                    i23 = 1073741824;
-                }
-                if (mode2 == i23) {
-                    zt0Var.L(iMin4);
-                    i71Var.b = true;
-                }
-                if (mode == i23) {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var1112 = yt0Var5.d;
-                            oh2Var1112.e.j = false;
-                            oh2Var1112.g = false;
-                            oh2Var1112.n();
-                            an7 an7Var1112 = yt0Var5.e;
-                            an7Var1112.e.j = false;
-                            an7Var1112.g = false;
-                            an7Var1112.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var1113 = zt0Var3.d;
-                        oh2Var1113.e.j = false;
-                        oh2Var1113.g = false;
-                        oh2Var1113.n();
-                        an7 an7Var1113 = zt0Var3.e;
-                        an7Var1113.e.j = false;
-                        an7Var1113.g = false;
-                        an7Var1113.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var1114 = yt0Var5.d;
-                            oh2Var1114.e.j = false;
-                            oh2Var1114.g = false;
-                            oh2Var1114.n();
-                            an7 an7Var1114 = yt0Var5.e;
-                            an7Var1114.e.j = false;
-                            an7Var1114.g = false;
-                            an7Var1114.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var1115 = zt0Var3.d;
-                        oh2Var1115.e.j = false;
-                        oh2Var1115.g = false;
-                        oh2Var1115.n();
-                        an7 an7Var1115 = zt0Var3.e;
-                        an7Var1115.e.j = false;
-                        an7Var1115.g = false;
-                        an7Var1115.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                }
-                if (zT) {
-                    if (mode == i25) {
-                        z12 = true;
-                    } else {
-                        z12 = false;
-                    }
-                    if (mode2 == i25) {
-                        z13 = true;
-                    } else {
-                        z13 = false;
-                    }
-                    zt0Var.P(z12, z13);
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                i10 = 0;
-                zT = false;
+                f11Var.P(mode == i14, mode2 == i14);
             }
-            if (zT) {
-            }
-            int i31111 = zt0Var.D0;
-            if (i8 > 0) {
-                size3 = zt0Var.q0.size();
-                boolean zW10 = zt0Var.W(64);
-                ozVar6 = zt0Var.u0;
-                i19 = 0;
-                while (i19 < size3) {
-                    yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                    if (!(yt0Var3 instanceof td2)) {
-                        i22 = size3;
-                    } else {
-                        iJ = yt0Var3.j(0);
-                        int iJ12 = yt0Var3.j(1);
-                        i22 = size3;
-                        if (iJ == 3) {
-                            z11 = false;
-                        } else {
-                            z11 = false;
-                        }
-                        if (z11) {
-                        }
-                        if (z11) {
-                            rv7Var.A(0, ozVar6, yt0Var3);
-                        }
-                    }
-                    i19++;
-                    size3 = i22;
-                }
-                constraintLayout = ((b) ozVar6).a;
-                childCount = constraintLayout.getChildCount();
-                arrayList2 = constraintLayout.R;
-                while (i20 < childCount) {
-                    constraintLayout.getChildAt(i20);
-                }
-                size4 = arrayList2.size();
-                if (size4 > 0) {
-                    while (i21 < size4) {
-                        ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                    }
-                }
-            }
-            rv7Var.L(zt0Var);
-            size2 = arrayList.size();
-            if (i8 > 0) {
-                rv7Var.J(zt0Var, 0, iQ2, iK);
-            }
-            if (size2 > 0) {
-                iArr2 = zt0Var.p0;
-                if (iArr2[0] == 2) {
-                    z5 = true;
-                } else {
-                    z5 = false;
-                }
-                if (iArr2[1] == 2) {
-                    z6 = true;
-                } else {
-                    z6 = false;
-                }
-                iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                i11 = 0;
-                z7 = false;
-                while (i11 < size2) {
-                    yt0Var2 = (yt0) arrayList.get(i11);
-                    if (yt0Var2 instanceof h02) {
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                    } else {
-                        iQ5 = yt0Var2.q();
-                        iK4 = yt0Var2.k();
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                        boolean zA10 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                        iQ6 = yt0Var2.q();
-                        z10 = zA10;
-                        iK5 = yt0Var2.k();
-                        if (iQ6 != iQ5) {
-                            yt0Var2.O(iQ6);
-                            if (z5) {
-                                iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                            }
-                            z10 = true;
-                        }
-                        if (iK5 != iK4) {
-                            yt0Var2.L(iK5);
-                            if (z9) {
-                                iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                            }
-                            z10 = true;
-                        }
-                        z7 = z10 | ((h02) yt0Var2).y0;
-                    }
-                    i11++;
-                    ozVar2 = ozVar5;
-                    z6 = z9;
-                }
-                z8 = z6;
-                i12 = 0;
-                while (true) {
-                    ozVar3 = ozVar2;
-                    if (i12 < 2) {
-                        break;
-                        break;
-                    }
-                    zA = z7;
-                    i13 = 0;
-                    while (i13 < size2) {
-                        yt0Var = (yt0) arrayList.get(i13);
-                        if (yt0Var instanceof sg2) {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i31112 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        } else {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i31113 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        }
-                        i13 = i17 + 1;
-                        size2 = i16;
-                        i12 = i18;
-                        ozVar3 = ozVar4;
-                    }
-                    i14 = size2;
-                    ozVar2 = ozVar3;
-                    i15 = i12;
-                    if (zA) {
-                        break;
-                        break;
-                    }
-                    int i48 = i15 + 1;
-                    rv7Var.J(zt0Var, i48, iQ2, iK);
-                    i12 = i48;
-                    size2 = i14;
-                    z7 = false;
-                }
-            }
-            zt0Var.D0 = i31111;
-            hl3.q = zt0Var.W(512);
-        }
-        if (mode2 != 0) {
-            if (mode2 != 1073741824) {
-                i4 = 1;
-            } else {
-                iMin2 = Math.min(this.W - i36, i35);
-                i4 = 1;
-            }
-            iQ = zt0Var.q();
-            i71Var = zt0Var.s0;
-            iArr = zt0Var.C;
-            i5 = iMin;
-            if (i5 == iQ) {
-                i71Var.c = true;
-            } else {
-                i71Var.c = true;
-            }
-            zt0Var.Y = 0;
-            zt0Var.Z = 0;
-            iArr[0] = this.V - i37;
-            iArr[1] = this.W - i36;
-            zt0Var.b0 = 0;
-            zt0Var.c0 = 0;
-            zt0Var.M(i33);
-            zt0Var.O(i5);
-            zt0Var.N(i4);
-            zt0Var.L(iMin2);
-            i6 = this.T - i37;
-            if (i6 < 0) {
-                zt0Var.b0 = 0;
-            } else {
-                zt0Var.b0 = i6;
-            }
-            i7 = this.U - i36;
-            if (i7 < 0) {
-                zt0Var.c0 = 0;
-            } else {
-                zt0Var.c0 = i7;
-            }
-            zt0Var.x0 = iMax7;
-            zt0Var.y0 = iMax5;
-            rv7Var = zt0Var.r0;
-            zt0Var2 = (zt0) rv7Var.T;
-            arrayList = (ArrayList) rv7Var.R;
-            ozVar = zt0Var.u0;
-            size = zt0Var.q0.size();
-            iQ2 = zt0Var.q();
-            iK = zt0Var.k();
-            zW = uv3.w(i, 128);
-            if (zW) {
-                z = true;
-            } else {
-                z = true;
-            }
-            if (z) {
-                i30 = 0;
-                while (true) {
-                    if (i30 < size) {
-                        z16 = z;
-                        yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                        i31 = i30;
-                        iArr3 = yt0Var4.p0;
-                        i8 = size;
-                        if (iArr3[0] == 3) {
-                            z17 = true;
-                        } else {
-                            z17 = false;
-                        }
-                        if (iArr3[1] == 3) {
-                            z18 = true;
-                        } else {
-                            z18 = false;
-                        }
-                        if (z17) {
-                            z19 = false;
-                        } else {
-                            z19 = false;
-                        }
-                        if (yt0Var4.x()) {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        } else {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        }
-                        i9 = 1073741824;
-                        z2 = false;
-                    } else {
-                        z2 = z;
-                        i8 = size;
-                        i9 = 1073741824;
-                    }
-                }
-            } else {
-                z2 = z;
-                i8 = size;
-                i9 = 1073741824;
-            }
-            z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-            if (z3) {
-                iMin3 = Math.min(iArr[0], i34);
-                iMin4 = Math.min(iArr[1], i35);
-                i23 = 1073741824;
-                if (mode == 1073741824) {
-                    if (zt0Var.q() != iMin3) {
-                        zt0Var.O(iMin3);
-                        i71Var.b = true;
-                    }
-                    i23 = 1073741824;
-                }
-                if (mode2 == i23) {
-                    zt0Var.L(iMin4);
-                    i71Var.b = true;
-                }
-                if (mode == i23) {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var1116 = yt0Var5.d;
-                            oh2Var1116.e.j = false;
-                            oh2Var1116.g = false;
-                            oh2Var1116.n();
-                            an7 an7Var1116 = yt0Var5.e;
-                            an7Var1116.e.j = false;
-                            an7Var1116.g = false;
-                            an7Var1116.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var1117 = zt0Var3.d;
-                        oh2Var1117.e.j = false;
-                        oh2Var1117.g = false;
-                        oh2Var1117.n();
-                        an7 an7Var1117 = zt0Var3.e;
-                        an7Var1117.e.j = false;
-                        an7Var1117.g = false;
-                        an7Var1117.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var1118 = yt0Var5.d;
-                            oh2Var1118.e.j = false;
-                            oh2Var1118.g = false;
-                            oh2Var1118.n();
-                            an7 an7Var1118 = yt0Var5.e;
-                            an7Var1118.e.j = false;
-                            an7Var1118.g = false;
-                            an7Var1118.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var1119 = zt0Var3.d;
-                        oh2Var1119.e.j = false;
-                        oh2Var1119.g = false;
-                        oh2Var1119.n();
-                        an7 an7Var1119 = zt0Var3.e;
-                        an7Var1119.e.j = false;
-                        an7Var1119.g = false;
-                        an7Var1119.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                }
-                if (zT) {
-                    if (mode == i25) {
-                        z12 = true;
-                    } else {
-                        z12 = false;
-                    }
-                    if (mode2 == i25) {
-                        z13 = true;
-                    } else {
-                        z13 = false;
-                    }
-                    zt0Var.P(z12, z13);
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                i10 = 0;
-                zT = false;
-            }
-            if (zT) {
-            }
-            int i31114 = zt0Var.D0;
-            if (i8 > 0) {
-                size3 = zt0Var.q0.size();
-                boolean zW11 = zt0Var.W(64);
-                ozVar6 = zt0Var.u0;
-                i19 = 0;
-                while (i19 < size3) {
-                    yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                    if (!(yt0Var3 instanceof td2)) {
-                        i22 = size3;
-                    } else {
-                        iJ = yt0Var3.j(0);
-                        int iJ13 = yt0Var3.j(1);
-                        i22 = size3;
-                        if (iJ == 3) {
-                            z11 = false;
-                        } else {
-                            z11 = false;
-                        }
-                        if (z11) {
-                        }
-                        if (z11) {
-                            rv7Var.A(0, ozVar6, yt0Var3);
-                        }
-                    }
-                    i19++;
-                    size3 = i22;
-                }
-                constraintLayout = ((b) ozVar6).a;
-                childCount = constraintLayout.getChildCount();
-                arrayList2 = constraintLayout.R;
-                while (i20 < childCount) {
-                    constraintLayout.getChildAt(i20);
-                }
-                size4 = arrayList2.size();
-                if (size4 > 0) {
-                    while (i21 < size4) {
-                        ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                    }
-                }
-            }
-            rv7Var.L(zt0Var);
-            size2 = arrayList.size();
-            if (i8 > 0) {
-                rv7Var.J(zt0Var, 0, iQ2, iK);
-            }
-            if (size2 > 0) {
-                iArr2 = zt0Var.p0;
-                if (iArr2[0] == 2) {
-                    z5 = true;
-                } else {
-                    z5 = false;
-                }
-                if (iArr2[1] == 2) {
-                    z6 = true;
-                } else {
-                    z6 = false;
-                }
-                iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                i11 = 0;
-                z7 = false;
-                while (i11 < size2) {
-                    yt0Var2 = (yt0) arrayList.get(i11);
-                    if (yt0Var2 instanceof h02) {
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                    } else {
-                        iQ5 = yt0Var2.q();
-                        iK4 = yt0Var2.k();
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                        boolean zA11 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                        iQ6 = yt0Var2.q();
-                        z10 = zA11;
-                        iK5 = yt0Var2.k();
-                        if (iQ6 != iQ5) {
-                            yt0Var2.O(iQ6);
-                            if (z5) {
-                                iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                            }
-                            z10 = true;
-                        }
-                        if (iK5 != iK4) {
-                            yt0Var2.L(iK5);
-                            if (z9) {
-                                iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                            }
-                            z10 = true;
-                        }
-                        z7 = z10 | ((h02) yt0Var2).y0;
-                    }
-                    i11++;
-                    ozVar2 = ozVar5;
-                    z6 = z9;
-                }
-                z8 = z6;
-                i12 = 0;
-                while (true) {
-                    ozVar3 = ozVar2;
-                    if (i12 < 2) {
-                        break;
-                        break;
-                    }
-                    zA = z7;
-                    i13 = 0;
-                    while (i13 < size2) {
-                        yt0Var = (yt0) arrayList.get(i13);
-                        if (yt0Var instanceof sg2) {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i31115 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        } else {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i31116 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        }
-                        i13 = i17 + 1;
-                        size2 = i16;
-                        i12 = i18;
-                        ozVar3 = ozVar4;
-                    }
-                    i14 = size2;
-                    ozVar2 = ozVar3;
-                    i15 = i12;
-                    if (zA) {
-                        break;
-                        break;
-                    }
-                    int i49 = i15 + 1;
-                    rv7Var.J(zt0Var, i49, iQ2, iK);
-                    i12 = i49;
-                    size2 = i14;
-                    z7 = false;
-                }
-            }
-            zt0Var.D0 = i31114;
-            hl3.q = zt0Var.W(512);
-        }
-        if (childCount2 == 0) {
-            iMax2 = Math.max(0, this.U);
         } else {
-            i4 = 2;
+            z2 = z11;
+            s10Var = s10Var4;
+            i9 = 0;
+            z3 = false;
         }
-        iMin2 = 0;
-        iQ = zt0Var.q();
-        i71Var = zt0Var.s0;
-        iArr = zt0Var.C;
-        i5 = iMin;
-        if (i5 == iQ) {
-            i71Var.c = true;
-        } else {
-            i71Var.c = true;
+        if (z3 && i9 == 2) {
+            return;
         }
-        zt0Var.Y = 0;
-        zt0Var.Z = 0;
-        iArr[0] = this.V - i37;
-        iArr[1] = this.W - i36;
-        zt0Var.b0 = 0;
-        zt0Var.c0 = 0;
-        zt0Var.M(i33);
-        zt0Var.O(i5);
-        zt0Var.N(i4);
-        zt0Var.L(iMin2);
-        i6 = this.T - i37;
-        if (i6 < 0) {
-            zt0Var.b0 = 0;
-        } else {
-            zt0Var.b0 = i6;
+        int i32 = f11Var.D0;
+        if (i7 > 0) {
+            int size4 = f11Var.q0.size();
+            boolean W = f11Var.W(64);
+            s10 s10Var5 = f11Var.u0;
+            int i33 = 0;
+            while (i33 < size4) {
+                e11 e11Var4 = (e11) f11Var.q0.get(i33);
+                if ((e11Var4 instanceof eq2) || (e11Var4 instanceof uz) || e11Var4.F || (W && (xu2Var = e11Var4.d) != null && (vh8Var = e11Var4.e) != null && xu2Var.e.j && vh8Var.e.j)) {
+                    i12 = size4;
+                } else {
+                    int j3 = e11Var4.j(0);
+                    int j4 = e11Var4.j(1);
+                    i12 = size4;
+                    boolean z12 = j3 == 3 && e11Var4.r != 1 && j4 == 3 && e11Var4.s != 1;
+                    if (!z12 && f11Var.W(1) && !(e11Var4 instanceof ka2)) {
+                        if (j3 == 3 && e11Var4.r == 0 && j4 != 3 && !e11Var4.x()) {
+                            z12 = true;
+                        }
+                        if (j4 == 3 && e11Var4.s == 0 && j3 != 3 && !e11Var4.x()) {
+                            z12 = true;
+                        }
+                        if ((j3 == 3 || j4 == 3) && e11Var4.W > 0.0f) {
+                            z12 = true;
+                        }
+                    }
+                    if (!z12) {
+                        pqVar.x(0, s10Var5, e11Var4);
+                    }
+                }
+                i33++;
+                size4 = i12;
+            }
+            ConstraintLayout constraintLayout = ((b) s10Var5).a;
+            int childCount2 = constraintLayout.getChildCount();
+            ArrayList arrayList3 = constraintLayout.d0;
+            for (int i34 = 0; i34 < childCount2; i34++) {
+                constraintLayout.getChildAt(i34);
+            }
+            int size5 = arrayList3.size();
+            if (size5 > 0) {
+                for (int i35 = 0; i35 < size5; i35++) {
+                    ((ConstraintHelper) arrayList3.get(i35)).getClass();
+                }
+            }
         }
-        i7 = this.U - i36;
-        if (i7 < 0) {
-            zt0Var.c0 = 0;
-        } else {
-            zt0Var.c0 = i7;
+        pqVar.F(f11Var);
+        int size6 = arrayList.size();
+        if (i7 > 0) {
+            pqVar.E(f11Var, 0, q2, k);
         }
-        zt0Var.x0 = iMax7;
-        zt0Var.y0 = iMax5;
-        rv7Var = zt0Var.r0;
-        zt0Var2 = (zt0) rv7Var.T;
-        arrayList = (ArrayList) rv7Var.R;
-        ozVar = zt0Var.u0;
-        size = zt0Var.q0.size();
-        iQ2 = zt0Var.q();
-        iK = zt0Var.k();
-        zW = uv3.w(i, 128);
-        if (zW) {
-            z = true;
-        } else {
-            z = true;
-        }
-        if (z) {
-            i30 = 0;
+        if (size6 > 0) {
+            int[] iArr4 = f11Var.p0;
+            boolean z13 = iArr4[0] == 2;
+            boolean z14 = iArr4[1] == 2;
+            int max7 = Math.max(f11Var.q(), f11Var2.b0);
+            int max8 = Math.max(f11Var.k(), f11Var2.c0);
+            int i36 = 0;
+            boolean z15 = false;
+            while (i36 < size6) {
+                e11 e11Var5 = (e11) arrayList.get(i36);
+                if (e11Var5 instanceof ka2) {
+                    int q4 = e11Var5.q();
+                    int k3 = e11Var5.k();
+                    z4 = z14;
+                    z5 = z13;
+                    s10Var3 = s10Var;
+                    boolean x2 = z15 | pqVar.x(1, s10Var3, e11Var5);
+                    int q5 = e11Var5.q();
+                    int k4 = e11Var5.k();
+                    if (q5 != q4) {
+                        e11Var5.O(q5);
+                        if (z5 && e11Var5.r() + e11Var5.U > max7) {
+                            max7 = Math.max(max7, e11Var5.i(4).e() + e11Var5.r() + e11Var5.U);
+                        }
+                        z6 = true;
+                    } else {
+                        z6 = x2;
+                    }
+                    if (k4 != k3) {
+                        e11Var5.L(k4);
+                        if (z4 && e11Var5.s() + e11Var5.V > max8) {
+                            max8 = Math.max(max8, e11Var5.i(5).e() + e11Var5.s() + e11Var5.V);
+                        }
+                        z6 = true;
+                    }
+                    z15 = ((ka2) e11Var5).y0 | z6;
+                } else {
+                    z4 = z14;
+                    z5 = z13;
+                    s10Var3 = s10Var;
+                }
+                i36++;
+                s10Var = s10Var3;
+                z13 = z5;
+                z14 = z4;
+            }
+            boolean z16 = z14;
+            boolean z17 = z13;
+            int i37 = 0;
             while (true) {
-                if (i30 < size) {
-                    z16 = z;
-                    yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                    i31 = i30;
-                    iArr3 = yt0Var4.p0;
-                    i8 = size;
-                    if (iArr3[0] == 3) {
-                        z17 = true;
-                    } else {
-                        z17 = false;
-                    }
-                    if (iArr3[1] == 3) {
-                        z18 = true;
-                    } else {
-                        z18 = false;
-                    }
-                    if (z17) {
-                        z19 = false;
-                    } else {
-                        z19 = false;
-                    }
-                    if (yt0Var4.x()) {
-                        i30 = i31 + 1;
-                        z = z16;
-                        size = i8;
-                    } else {
-                        i30 = i31 + 1;
-                        z = z16;
-                        size = i8;
-                    }
-                    i9 = 1073741824;
-                    z2 = false;
-                } else {
-                    z2 = z;
-                    i8 = size;
-                    i9 = 1073741824;
-                }
-            }
-        } else {
-            z2 = z;
-            i8 = size;
-            i9 = 1073741824;
-        }
-        z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-        if (z3) {
-            iMin3 = Math.min(iArr[0], i34);
-            iMin4 = Math.min(iArr[1], i35);
-            i23 = 1073741824;
-            if (mode == 1073741824) {
-                if (zt0Var.q() != iMin3) {
-                    zt0Var.O(iMin3);
-                    i71Var.b = true;
-                }
-                i23 = 1073741824;
-            }
-            if (mode2 == i23) {
-                zt0Var.L(iMin4);
-                i71Var.b = true;
-            }
-            if (mode == i23) {
-                z4 = z3;
-                ozVar2 = ozVar;
-                zt0Var3 = (zt0) i71Var.d;
-                if (i71Var.b) {
-                    while (r2.hasNext()) {
-                        yt0Var5.h();
-                        yt0Var5.a = false;
-                        oh2 oh2Var11110 = yt0Var5.d;
-                        oh2Var11110.e.j = false;
-                        oh2Var11110.g = false;
-                        oh2Var11110.n();
-                        an7 an7Var11110 = yt0Var5.e;
-                        an7Var11110.e.j = false;
-                        an7Var11110.g = false;
-                        an7Var11110.m();
-                    }
-                    i24 = 0;
-                    zt0Var3.h();
-                    zt0Var3.a = false;
-                    oh2 oh2Var11111 = zt0Var3.d;
-                    oh2Var11111.e.j = false;
-                    oh2Var11111.g = false;
-                    oh2Var11111.n();
-                    an7 an7Var11111 = zt0Var3.e;
-                    an7Var11111.e.j = false;
-                    an7Var11111.g = false;
-                    an7Var11111.m();
-                    i71Var.c();
-                } else {
-                    i24 = 0;
-                }
-                i71Var.b((zt0) i71Var.e);
-                zt0Var3.Y = i24;
-                zt0Var3.Z = i24;
-                zt0Var3.d.h.d(i24);
-                zt0Var3.e.h.d(i24);
-                i25 = 1073741824;
-                if (mode == 1073741824) {
-                    zT = zt0Var.T(i24, zW);
-                    i10 = 1;
-                } else {
-                    i10 = 0;
-                    zT = true;
-                }
-                if (mode2 == 1073741824) {
-                    zT &= zt0Var.T(1, zW);
-                    i10++;
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                zt0Var3 = (zt0) i71Var.d;
-                if (i71Var.b) {
-                    while (r2.hasNext()) {
-                        yt0Var5.h();
-                        yt0Var5.a = false;
-                        oh2 oh2Var11112 = yt0Var5.d;
-                        oh2Var11112.e.j = false;
-                        oh2Var11112.g = false;
-                        oh2Var11112.n();
-                        an7 an7Var11112 = yt0Var5.e;
-                        an7Var11112.e.j = false;
-                        an7Var11112.g = false;
-                        an7Var11112.m();
-                    }
-                    i24 = 0;
-                    zt0Var3.h();
-                    zt0Var3.a = false;
-                    oh2 oh2Var11113 = zt0Var3.d;
-                    oh2Var11113.e.j = false;
-                    oh2Var11113.g = false;
-                    oh2Var11113.n();
-                    an7 an7Var11113 = zt0Var3.e;
-                    an7Var11113.e.j = false;
-                    an7Var11113.g = false;
-                    an7Var11113.m();
-                    i71Var.c();
-                } else {
-                    i24 = 0;
-                }
-                i71Var.b((zt0) i71Var.e);
-                zt0Var3.Y = i24;
-                zt0Var3.Z = i24;
-                zt0Var3.d.h.d(i24);
-                zt0Var3.e.h.d(i24);
-                i25 = 1073741824;
-                if (mode == 1073741824) {
-                    zT = zt0Var.T(i24, zW);
-                    i10 = 1;
-                } else {
-                    i10 = 0;
-                    zT = true;
-                }
-                if (mode2 == 1073741824) {
-                    zT &= zt0Var.T(1, zW);
-                    i10++;
-                }
-            }
-            if (zT) {
-                if (mode == i25) {
-                    z12 = true;
-                } else {
-                    z12 = false;
-                }
-                if (mode2 == i25) {
-                    z13 = true;
-                } else {
-                    z13 = false;
-                }
-                zt0Var.P(z12, z13);
-            }
-        } else {
-            z4 = z3;
-            ozVar2 = ozVar;
-            i10 = 0;
-            zT = false;
-        }
-        if (zT) {
-        }
-        int i31117 = zt0Var.D0;
-        if (i8 > 0) {
-            size3 = zt0Var.q0.size();
-            boolean zW12 = zt0Var.W(64);
-            ozVar6 = zt0Var.u0;
-            i19 = 0;
-            while (i19 < size3) {
-                yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                if (!(yt0Var3 instanceof td2)) {
-                    i22 = size3;
-                } else {
-                    iJ = yt0Var3.j(0);
-                    int iJ14 = yt0Var3.j(1);
-                    i22 = size3;
-                    if (iJ == 3) {
-                        z11 = false;
-                    } else {
-                        z11 = false;
-                    }
-                    if (z11) {
-                    }
-                    if (z11) {
-                        rv7Var.A(0, ozVar6, yt0Var3);
-                    }
-                }
-                i19++;
-                size3 = i22;
-            }
-            constraintLayout = ((b) ozVar6).a;
-            childCount = constraintLayout.getChildCount();
-            arrayList2 = constraintLayout.R;
-            while (i20 < childCount) {
-                constraintLayout.getChildAt(i20);
-            }
-            size4 = arrayList2.size();
-            if (size4 > 0) {
-                while (i21 < size4) {
-                    ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                }
-            }
-        }
-        rv7Var.L(zt0Var);
-        size2 = arrayList.size();
-        if (i8 > 0) {
-            rv7Var.J(zt0Var, 0, iQ2, iK);
-        }
-        if (size2 > 0) {
-            iArr2 = zt0Var.p0;
-            if (iArr2[0] == 2) {
-                z5 = true;
-            } else {
-                z5 = false;
-            }
-            if (iArr2[1] == 2) {
-                z6 = true;
-            } else {
-                z6 = false;
-            }
-            iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-            iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-            i11 = 0;
-            z7 = false;
-            while (i11 < size2) {
-                yt0Var2 = (yt0) arrayList.get(i11);
-                if (yt0Var2 instanceof h02) {
-                    z9 = z6;
-                    ozVar5 = ozVar2;
-                } else {
-                    iQ5 = yt0Var2.q();
-                    iK4 = yt0Var2.k();
-                    z9 = z6;
-                    ozVar5 = ozVar2;
-                    boolean zA12 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                    iQ6 = yt0Var2.q();
-                    z10 = zA12;
-                    iK5 = yt0Var2.k();
-                    if (iQ6 != iQ5) {
-                        yt0Var2.O(iQ6);
-                        if (z5) {
-                            iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                        }
-                        z10 = true;
-                    }
-                    if (iK5 != iK4) {
-                        yt0Var2.L(iK5);
-                        if (z9) {
-                            iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                        }
-                        z10 = true;
-                    }
-                    z7 = z10 | ((h02) yt0Var2).y0;
-                }
-                i11++;
-                ozVar2 = ozVar5;
-                z6 = z9;
-            }
-            z8 = z6;
-            i12 = 0;
-            while (true) {
-                ozVar3 = ozVar2;
-                if (i12 < 2) {
-                    break;
+                s10 s10Var6 = s10Var;
+                if (i37 >= 2) {
                     break;
                 }
-                zA = z7;
-                i13 = 0;
-                while (i13 < size2) {
-                    yt0Var = (yt0) arrayList.get(i13);
-                    if (yt0Var instanceof sg2) {
-                        i16 = size2;
-                        if (yt0Var.g0 == 8) {
-                            ozVar4 = ozVar3;
-                            i18 = i12;
-                            i17 = i13;
-                        } else {
-                            iQ3 = yt0Var.q();
-                            iK2 = yt0Var.k();
-                            i17 = i13;
-                            int i31118 = yt0Var.a0;
-                            zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                            ozVar4 = ozVar3;
-                            iQ4 = yt0Var.q();
-                            i18 = i12;
-                            iK3 = yt0Var.k();
-                            if (iQ4 != iQ3) {
-                                yt0Var.O(iQ4);
-                                if (!z5) {
-                                }
-                                zA = true;
-                            }
-                            if (iK3 != iK2) {
-                                yt0Var.L(iK3);
-                                if (!z8) {
-                                }
-                                zA = true;
-                            }
-                            if (!yt0Var.E) {
-                            }
-                        }
+                int i38 = 0;
+                while (i38 < size6) {
+                    e11 e11Var6 = (e11) arrayList.get(i38);
+                    if (((e11Var6 instanceof xt2) && !(e11Var6 instanceof ka2)) || (e11Var6 instanceof eq2) || e11Var6.g0 == 8 || ((z2 && e11Var6.d.e.j && e11Var6.e.e.j) || (e11Var6 instanceof ka2))) {
+                        i10 = size6;
+                        s10Var2 = s10Var6;
+                        i11 = i38;
+                        x = z15;
                     } else {
-                        i16 = size2;
-                        if (yt0Var.g0 == 8) {
-                            ozVar4 = ozVar3;
-                            i18 = i12;
-                            i17 = i13;
-                        } else {
-                            iQ3 = yt0Var.q();
-                            iK2 = yt0Var.k();
-                            i17 = i13;
-                            int i31119 = yt0Var.a0;
-                            zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                            ozVar4 = ozVar3;
-                            iQ4 = yt0Var.q();
-                            i18 = i12;
-                            iK3 = yt0Var.k();
-                            if (iQ4 != iQ3) {
-                                yt0Var.O(iQ4);
-                                if (!z5) {
-                                }
-                                zA = true;
+                        int q6 = e11Var6.q();
+                        int k5 = e11Var6.k();
+                        i10 = size6;
+                        int i39 = e11Var6.a0;
+                        i11 = i38;
+                        x = pqVar.x(i37 == 1 ? 2 : 1, s10Var6, e11Var6) | z15;
+                        int q7 = e11Var6.q();
+                        s10Var2 = s10Var6;
+                        int k6 = e11Var6.k();
+                        if (q7 != q6) {
+                            e11Var6.O(q7);
+                            if (z17 && e11Var6.r() + e11Var6.U > max7) {
+                                max7 = Math.max(max7, e11Var6.i(4).e() + e11Var6.r() + e11Var6.U);
                             }
-                            if (iK3 != iK2) {
-                                yt0Var.L(iK3);
-                                if (!z8) {
-                                }
-                                zA = true;
+                            x = true;
+                        }
+                        if (k6 != k5) {
+                            e11Var6.L(k6);
+                            if (z16 && e11Var6.s() + e11Var6.V > max8) {
+                                max8 = Math.max(max8, e11Var6.i(5).e() + e11Var6.s() + e11Var6.V);
                             }
-                            if (!yt0Var.E) {
-                            }
+                            x = true;
+                        }
+                        if (e11Var6.E && i39 != e11Var6.a0) {
+                            x = true;
                         }
                     }
-                    i13 = i17 + 1;
-                    size2 = i16;
-                    i12 = i18;
-                    ozVar3 = ozVar4;
+                    z15 = x;
+                    s10Var6 = s10Var2;
+                    i38 = i11 + 1;
+                    size6 = i10;
                 }
-                i14 = size2;
-                ozVar2 = ozVar3;
-                i15 = i12;
-                if (zA) {
-                    break;
+                int i40 = size6;
+                s10Var = s10Var6;
+                if (!z15) {
                     break;
                 }
-                int i410 = i15 + 1;
-                rv7Var.J(zt0Var, i410, iQ2, iK);
-                i12 = i410;
-                size2 = i14;
-                z7 = false;
+                i37++;
+                pqVar.E(f11Var, i37, q2, k);
+                size6 = i40;
+                z15 = false;
             }
         }
-        zt0Var.D0 = i31117;
-        hl3.q = zt0Var.W(512);
-        iMin2 = iMax2;
-        i4 = 2;
-        iQ = zt0Var.q();
-        i71Var = zt0Var.s0;
-        iArr = zt0Var.C;
-        i5 = iMin;
-        if (i5 == iQ) {
-            i71Var.c = true;
-        } else {
-            i71Var.c = true;
-        }
-        zt0Var.Y = 0;
-        zt0Var.Z = 0;
-        iArr[0] = this.V - i37;
-        iArr[1] = this.W - i36;
-        zt0Var.b0 = 0;
-        zt0Var.c0 = 0;
-        zt0Var.M(i33);
-        zt0Var.O(i5);
-        zt0Var.N(i4);
-        zt0Var.L(iMin2);
-        i6 = this.T - i37;
-        if (i6 < 0) {
-            zt0Var.b0 = 0;
-        } else {
-            zt0Var.b0 = i6;
-        }
-        i7 = this.U - i36;
-        if (i7 < 0) {
-            zt0Var.c0 = 0;
-        } else {
-            zt0Var.c0 = i7;
-        }
-        zt0Var.x0 = iMax7;
-        zt0Var.y0 = iMax5;
-        rv7Var = zt0Var.r0;
-        zt0Var2 = (zt0) rv7Var.T;
-        arrayList = (ArrayList) rv7Var.R;
-        ozVar = zt0Var.u0;
-        size = zt0Var.q0.size();
-        iQ2 = zt0Var.q();
-        iK = zt0Var.k();
-        zW = uv3.w(i, 128);
-        if (zW) {
-            z = true;
-        } else {
-            z = true;
-        }
-        if (z) {
-            i30 = 0;
-            while (true) {
-                if (i30 < size) {
-                    z16 = z;
-                    yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                    i31 = i30;
-                    iArr3 = yt0Var4.p0;
-                    i8 = size;
-                    if (iArr3[0] == 3) {
-                        z17 = true;
-                    } else {
-                        z17 = false;
-                    }
-                    if (iArr3[1] == 3) {
-                        z18 = true;
-                    } else {
-                        z18 = false;
-                    }
-                    if (z17) {
-                        z19 = false;
-                    } else {
-                        z19 = false;
-                    }
-                    if (yt0Var4.x()) {
-                        i30 = i31 + 1;
-                        z = z16;
-                        size = i8;
-                    } else {
-                        i30 = i31 + 1;
-                        z = z16;
-                        size = i8;
-                    }
-                    i9 = 1073741824;
-                    z2 = false;
-                } else {
-                    z2 = z;
-                    i8 = size;
-                    i9 = 1073741824;
-                }
-            }
-        } else {
-            z2 = z;
-            i8 = size;
-            i9 = 1073741824;
-        }
-        z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-        if (z3) {
-            iMin3 = Math.min(iArr[0], i34);
-            iMin4 = Math.min(iArr[1], i35);
-            i23 = 1073741824;
-            if (mode == 1073741824) {
-                if (zt0Var.q() != iMin3) {
-                    zt0Var.O(iMin3);
-                    i71Var.b = true;
-                }
-                i23 = 1073741824;
-            }
-            if (mode2 == i23) {
-                zt0Var.L(iMin4);
-                i71Var.b = true;
-            }
-            if (mode == i23) {
-                z4 = z3;
-                ozVar2 = ozVar;
-                zt0Var3 = (zt0) i71Var.d;
-                if (i71Var.b) {
-                    while (r2.hasNext()) {
-                        yt0Var5.h();
-                        yt0Var5.a = false;
-                        oh2 oh2Var11114 = yt0Var5.d;
-                        oh2Var11114.e.j = false;
-                        oh2Var11114.g = false;
-                        oh2Var11114.n();
-                        an7 an7Var11114 = yt0Var5.e;
-                        an7Var11114.e.j = false;
-                        an7Var11114.g = false;
-                        an7Var11114.m();
-                    }
-                    i24 = 0;
-                    zt0Var3.h();
-                    zt0Var3.a = false;
-                    oh2 oh2Var11115 = zt0Var3.d;
-                    oh2Var11115.e.j = false;
-                    oh2Var11115.g = false;
-                    oh2Var11115.n();
-                    an7 an7Var11115 = zt0Var3.e;
-                    an7Var11115.e.j = false;
-                    an7Var11115.g = false;
-                    an7Var11115.m();
-                    i71Var.c();
-                } else {
-                    i24 = 0;
-                }
-                i71Var.b((zt0) i71Var.e);
-                zt0Var3.Y = i24;
-                zt0Var3.Z = i24;
-                zt0Var3.d.h.d(i24);
-                zt0Var3.e.h.d(i24);
-                i25 = 1073741824;
-                if (mode == 1073741824) {
-                    zT = zt0Var.T(i24, zW);
-                    i10 = 1;
-                } else {
-                    i10 = 0;
-                    zT = true;
-                }
-                if (mode2 == 1073741824) {
-                    zT &= zt0Var.T(1, zW);
-                    i10++;
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                zt0Var3 = (zt0) i71Var.d;
-                if (i71Var.b) {
-                    while (r2.hasNext()) {
-                        yt0Var5.h();
-                        yt0Var5.a = false;
-                        oh2 oh2Var11116 = yt0Var5.d;
-                        oh2Var11116.e.j = false;
-                        oh2Var11116.g = false;
-                        oh2Var11116.n();
-                        an7 an7Var11116 = yt0Var5.e;
-                        an7Var11116.e.j = false;
-                        an7Var11116.g = false;
-                        an7Var11116.m();
-                    }
-                    i24 = 0;
-                    zt0Var3.h();
-                    zt0Var3.a = false;
-                    oh2 oh2Var11117 = zt0Var3.d;
-                    oh2Var11117.e.j = false;
-                    oh2Var11117.g = false;
-                    oh2Var11117.n();
-                    an7 an7Var11117 = zt0Var3.e;
-                    an7Var11117.e.j = false;
-                    an7Var11117.g = false;
-                    an7Var11117.m();
-                    i71Var.c();
-                } else {
-                    i24 = 0;
-                }
-                i71Var.b((zt0) i71Var.e);
-                zt0Var3.Y = i24;
-                zt0Var3.Z = i24;
-                zt0Var3.d.h.d(i24);
-                zt0Var3.e.h.d(i24);
-                i25 = 1073741824;
-                if (mode == 1073741824) {
-                    zT = zt0Var.T(i24, zW);
-                    i10 = 1;
-                } else {
-                    i10 = 0;
-                    zT = true;
-                }
-                if (mode2 == 1073741824) {
-                    zT &= zt0Var.T(1, zW);
-                    i10++;
-                }
-            }
-            if (zT) {
-                if (mode == i25) {
-                    z12 = true;
-                } else {
-                    z12 = false;
-                }
-                if (mode2 == i25) {
-                    z13 = true;
-                } else {
-                    z13 = false;
-                }
-                zt0Var.P(z12, z13);
-            }
-        } else {
-            z4 = z3;
-            ozVar2 = ozVar;
-            i10 = 0;
-            zT = false;
-        }
-        if (zT) {
-        }
-        int i311110 = zt0Var.D0;
-        if (i8 > 0) {
-            size3 = zt0Var.q0.size();
-            boolean zW13 = zt0Var.W(64);
-            ozVar6 = zt0Var.u0;
-            i19 = 0;
-            while (i19 < size3) {
-                yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                if (!(yt0Var3 instanceof td2)) {
-                    i22 = size3;
-                } else {
-                    iJ = yt0Var3.j(0);
-                    int iJ15 = yt0Var3.j(1);
-                    i22 = size3;
-                    if (iJ == 3) {
-                        z11 = false;
-                    } else {
-                        z11 = false;
-                    }
-                    if (z11) {
-                    }
-                    if (z11) {
-                        rv7Var.A(0, ozVar6, yt0Var3);
-                    }
-                }
-                i19++;
-                size3 = i22;
-            }
-            constraintLayout = ((b) ozVar6).a;
-            childCount = constraintLayout.getChildCount();
-            arrayList2 = constraintLayout.R;
-            while (i20 < childCount) {
-                constraintLayout.getChildAt(i20);
-            }
-            size4 = arrayList2.size();
-            if (size4 > 0) {
-                while (i21 < size4) {
-                    ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                }
-            }
-        }
-        rv7Var.L(zt0Var);
-        size2 = arrayList.size();
-        if (i8 > 0) {
-            rv7Var.J(zt0Var, 0, iQ2, iK);
-        }
-        if (size2 > 0) {
-            iArr2 = zt0Var.p0;
-            if (iArr2[0] == 2) {
-                z5 = true;
-            } else {
-                z5 = false;
-            }
-            if (iArr2[1] == 2) {
-                z6 = true;
-            } else {
-                z6 = false;
-            }
-            iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-            iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-            i11 = 0;
-            z7 = false;
-            while (i11 < size2) {
-                yt0Var2 = (yt0) arrayList.get(i11);
-                if (yt0Var2 instanceof h02) {
-                    z9 = z6;
-                    ozVar5 = ozVar2;
-                } else {
-                    iQ5 = yt0Var2.q();
-                    iK4 = yt0Var2.k();
-                    z9 = z6;
-                    ozVar5 = ozVar2;
-                    boolean zA13 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                    iQ6 = yt0Var2.q();
-                    z10 = zA13;
-                    iK5 = yt0Var2.k();
-                    if (iQ6 != iQ5) {
-                        yt0Var2.O(iQ6);
-                        if (z5) {
-                            iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                        }
-                        z10 = true;
-                    }
-                    if (iK5 != iK4) {
-                        yt0Var2.L(iK5);
-                        if (z9) {
-                            iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                        }
-                        z10 = true;
-                    }
-                    z7 = z10 | ((h02) yt0Var2).y0;
-                }
-                i11++;
-                ozVar2 = ozVar5;
-                z6 = z9;
-            }
-            z8 = z6;
-            i12 = 0;
-            while (true) {
-                ozVar3 = ozVar2;
-                if (i12 < 2) {
-                    break;
-                    break;
-                }
-                zA = z7;
-                i13 = 0;
-                while (i13 < size2) {
-                    yt0Var = (yt0) arrayList.get(i13);
-                    if (yt0Var instanceof sg2) {
-                        i16 = size2;
-                        if (yt0Var.g0 == 8) {
-                            ozVar4 = ozVar3;
-                            i18 = i12;
-                            i17 = i13;
-                        } else {
-                            iQ3 = yt0Var.q();
-                            iK2 = yt0Var.k();
-                            i17 = i13;
-                            int i311111 = yt0Var.a0;
-                            zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                            ozVar4 = ozVar3;
-                            iQ4 = yt0Var.q();
-                            i18 = i12;
-                            iK3 = yt0Var.k();
-                            if (iQ4 != iQ3) {
-                                yt0Var.O(iQ4);
-                                if (!z5) {
-                                }
-                                zA = true;
-                            }
-                            if (iK3 != iK2) {
-                                yt0Var.L(iK3);
-                                if (!z8) {
-                                }
-                                zA = true;
-                            }
-                            if (!yt0Var.E) {
-                            }
-                        }
-                    } else {
-                        i16 = size2;
-                        if (yt0Var.g0 == 8) {
-                            ozVar4 = ozVar3;
-                            i18 = i12;
-                            i17 = i13;
-                        } else {
-                            iQ3 = yt0Var.q();
-                            iK2 = yt0Var.k();
-                            i17 = i13;
-                            int i311112 = yt0Var.a0;
-                            zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                            ozVar4 = ozVar3;
-                            iQ4 = yt0Var.q();
-                            i18 = i12;
-                            iK3 = yt0Var.k();
-                            if (iQ4 != iQ3) {
-                                yt0Var.O(iQ4);
-                                if (!z5) {
-                                }
-                                zA = true;
-                            }
-                            if (iK3 != iK2) {
-                                yt0Var.L(iK3);
-                                if (!z8) {
-                                }
-                                zA = true;
-                            }
-                            if (!yt0Var.E) {
-                            }
-                        }
-                    }
-                    i13 = i17 + 1;
-                    size2 = i16;
-                    i12 = i18;
-                    ozVar3 = ozVar4;
-                }
-                i14 = size2;
-                ozVar2 = ozVar3;
-                i15 = i12;
-                if (zA) {
-                    break;
-                    break;
-                }
-                int i411 = i15 + 1;
-                rv7Var.J(zt0Var, i411, iQ2, iK);
-                i12 = i411;
-                size2 = i14;
-                z7 = false;
-            }
-        }
-        zt0Var.D0 = i311110;
-        hl3.q = zt0Var.W(512);
-        iMin = iMax;
-        i33 = 2;
-        if (mode2 != Integer.MIN_VALUE) {
-            if (childCount2 == 0) {
-                iMax2 = Math.max(0, this.U);
-            } else {
-                iMin2 = i35;
-            }
-            i4 = 2;
-            iQ = zt0Var.q();
-            i71Var = zt0Var.s0;
-            iArr = zt0Var.C;
-            i5 = iMin;
-            if (i5 == iQ) {
-                i71Var.c = true;
-            } else {
-                i71Var.c = true;
-            }
-            zt0Var.Y = 0;
-            zt0Var.Z = 0;
-            iArr[0] = this.V - i37;
-            iArr[1] = this.W - i36;
-            zt0Var.b0 = 0;
-            zt0Var.c0 = 0;
-            zt0Var.M(i33);
-            zt0Var.O(i5);
-            zt0Var.N(i4);
-            zt0Var.L(iMin2);
-            i6 = this.T - i37;
-            if (i6 < 0) {
-                zt0Var.b0 = 0;
-            } else {
-                zt0Var.b0 = i6;
-            }
-            i7 = this.U - i36;
-            if (i7 < 0) {
-                zt0Var.c0 = 0;
-            } else {
-                zt0Var.c0 = i7;
-            }
-            zt0Var.x0 = iMax7;
-            zt0Var.y0 = iMax5;
-            rv7Var = zt0Var.r0;
-            zt0Var2 = (zt0) rv7Var.T;
-            arrayList = (ArrayList) rv7Var.R;
-            ozVar = zt0Var.u0;
-            size = zt0Var.q0.size();
-            iQ2 = zt0Var.q();
-            iK = zt0Var.k();
-            zW = uv3.w(i, 128);
-            if (zW) {
-                z = true;
-            } else {
-                z = true;
-            }
-            if (z) {
-                i30 = 0;
-                while (true) {
-                    if (i30 < size) {
-                        z16 = z;
-                        yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                        i31 = i30;
-                        iArr3 = yt0Var4.p0;
-                        i8 = size;
-                        if (iArr3[0] == 3) {
-                            z17 = true;
-                        } else {
-                            z17 = false;
-                        }
-                        if (iArr3[1] == 3) {
-                            z18 = true;
-                        } else {
-                            z18 = false;
-                        }
-                        if (z17) {
-                            z19 = false;
-                        } else {
-                            z19 = false;
-                        }
-                        if (yt0Var4.x()) {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        } else {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        }
-                        i9 = 1073741824;
-                        z2 = false;
-                    } else {
-                        z2 = z;
-                        i8 = size;
-                        i9 = 1073741824;
-                    }
-                }
-            } else {
-                z2 = z;
-                i8 = size;
-                i9 = 1073741824;
-            }
-            z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-            if (z3) {
-                iMin3 = Math.min(iArr[0], i34);
-                iMin4 = Math.min(iArr[1], i35);
-                i23 = 1073741824;
-                if (mode == 1073741824) {
-                    if (zt0Var.q() != iMin3) {
-                        zt0Var.O(iMin3);
-                        i71Var.b = true;
-                    }
-                    i23 = 1073741824;
-                }
-                if (mode2 == i23) {
-                    zt0Var.L(iMin4);
-                    i71Var.b = true;
-                }
-                if (mode == i23) {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var11118 = yt0Var5.d;
-                            oh2Var11118.e.j = false;
-                            oh2Var11118.g = false;
-                            oh2Var11118.n();
-                            an7 an7Var11118 = yt0Var5.e;
-                            an7Var11118.e.j = false;
-                            an7Var11118.g = false;
-                            an7Var11118.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var11119 = zt0Var3.d;
-                        oh2Var11119.e.j = false;
-                        oh2Var11119.g = false;
-                        oh2Var11119.n();
-                        an7 an7Var11119 = zt0Var3.e;
-                        an7Var11119.e.j = false;
-                        an7Var11119.g = false;
-                        an7Var11119.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var111110 = yt0Var5.d;
-                            oh2Var111110.e.j = false;
-                            oh2Var111110.g = false;
-                            oh2Var111110.n();
-                            an7 an7Var111110 = yt0Var5.e;
-                            an7Var111110.e.j = false;
-                            an7Var111110.g = false;
-                            an7Var111110.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var111111 = zt0Var3.d;
-                        oh2Var111111.e.j = false;
-                        oh2Var111111.g = false;
-                        oh2Var111111.n();
-                        an7 an7Var111111 = zt0Var3.e;
-                        an7Var111111.e.j = false;
-                        an7Var111111.g = false;
-                        an7Var111111.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                }
-                if (zT) {
-                    if (mode == i25) {
-                        z12 = true;
-                    } else {
-                        z12 = false;
-                    }
-                    if (mode2 == i25) {
-                        z13 = true;
-                    } else {
-                        z13 = false;
-                    }
-                    zt0Var.P(z12, z13);
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                i10 = 0;
-                zT = false;
-            }
-            if (zT) {
-            }
-            int i311113 = zt0Var.D0;
-            if (i8 > 0) {
-                size3 = zt0Var.q0.size();
-                boolean zW14 = zt0Var.W(64);
-                ozVar6 = zt0Var.u0;
-                i19 = 0;
-                while (i19 < size3) {
-                    yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                    if (!(yt0Var3 instanceof td2)) {
-                        i22 = size3;
-                    } else {
-                        iJ = yt0Var3.j(0);
-                        int iJ16 = yt0Var3.j(1);
-                        i22 = size3;
-                        if (iJ == 3) {
-                            z11 = false;
-                        } else {
-                            z11 = false;
-                        }
-                        if (z11) {
-                        }
-                        if (z11) {
-                            rv7Var.A(0, ozVar6, yt0Var3);
-                        }
-                    }
-                    i19++;
-                    size3 = i22;
-                }
-                constraintLayout = ((b) ozVar6).a;
-                childCount = constraintLayout.getChildCount();
-                arrayList2 = constraintLayout.R;
-                while (i20 < childCount) {
-                    constraintLayout.getChildAt(i20);
-                }
-                size4 = arrayList2.size();
-                if (size4 > 0) {
-                    while (i21 < size4) {
-                        ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                    }
-                }
-            }
-            rv7Var.L(zt0Var);
-            size2 = arrayList.size();
-            if (i8 > 0) {
-                rv7Var.J(zt0Var, 0, iQ2, iK);
-            }
-            if (size2 > 0) {
-                iArr2 = zt0Var.p0;
-                if (iArr2[0] == 2) {
-                    z5 = true;
-                } else {
-                    z5 = false;
-                }
-                if (iArr2[1] == 2) {
-                    z6 = true;
-                } else {
-                    z6 = false;
-                }
-                iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                i11 = 0;
-                z7 = false;
-                while (i11 < size2) {
-                    yt0Var2 = (yt0) arrayList.get(i11);
-                    if (yt0Var2 instanceof h02) {
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                    } else {
-                        iQ5 = yt0Var2.q();
-                        iK4 = yt0Var2.k();
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                        boolean zA14 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                        iQ6 = yt0Var2.q();
-                        z10 = zA14;
-                        iK5 = yt0Var2.k();
-                        if (iQ6 != iQ5) {
-                            yt0Var2.O(iQ6);
-                            if (z5) {
-                                iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                            }
-                            z10 = true;
-                        }
-                        if (iK5 != iK4) {
-                            yt0Var2.L(iK5);
-                            if (z9) {
-                                iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                            }
-                            z10 = true;
-                        }
-                        z7 = z10 | ((h02) yt0Var2).y0;
-                    }
-                    i11++;
-                    ozVar2 = ozVar5;
-                    z6 = z9;
-                }
-                z8 = z6;
-                i12 = 0;
-                while (true) {
-                    ozVar3 = ozVar2;
-                    if (i12 < 2) {
-                        break;
-                        break;
-                    }
-                    zA = z7;
-                    i13 = 0;
-                    while (i13 < size2) {
-                        yt0Var = (yt0) arrayList.get(i13);
-                        if (yt0Var instanceof sg2) {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i311114 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        } else {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i311115 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        }
-                        i13 = i17 + 1;
-                        size2 = i16;
-                        i12 = i18;
-                        ozVar3 = ozVar4;
-                    }
-                    i14 = size2;
-                    ozVar2 = ozVar3;
-                    i15 = i12;
-                    if (zA) {
-                        break;
-                        break;
-                    }
-                    int i412 = i15 + 1;
-                    rv7Var.J(zt0Var, i412, iQ2, iK);
-                    i12 = i412;
-                    size2 = i14;
-                    z7 = false;
-                }
-            }
-            zt0Var.D0 = i311113;
-            hl3.q = zt0Var.W(512);
-        }
-        if (mode2 != 0) {
-            if (mode2 != 1073741824) {
-                i4 = 1;
-            } else {
-                iMin2 = Math.min(this.W - i36, i35);
-                i4 = 1;
-            }
-            iQ = zt0Var.q();
-            i71Var = zt0Var.s0;
-            iArr = zt0Var.C;
-            i5 = iMin;
-            if (i5 == iQ) {
-                i71Var.c = true;
-            } else {
-                i71Var.c = true;
-            }
-            zt0Var.Y = 0;
-            zt0Var.Z = 0;
-            iArr[0] = this.V - i37;
-            iArr[1] = this.W - i36;
-            zt0Var.b0 = 0;
-            zt0Var.c0 = 0;
-            zt0Var.M(i33);
-            zt0Var.O(i5);
-            zt0Var.N(i4);
-            zt0Var.L(iMin2);
-            i6 = this.T - i37;
-            if (i6 < 0) {
-                zt0Var.b0 = 0;
-            } else {
-                zt0Var.b0 = i6;
-            }
-            i7 = this.U - i36;
-            if (i7 < 0) {
-                zt0Var.c0 = 0;
-            } else {
-                zt0Var.c0 = i7;
-            }
-            zt0Var.x0 = iMax7;
-            zt0Var.y0 = iMax5;
-            rv7Var = zt0Var.r0;
-            zt0Var2 = (zt0) rv7Var.T;
-            arrayList = (ArrayList) rv7Var.R;
-            ozVar = zt0Var.u0;
-            size = zt0Var.q0.size();
-            iQ2 = zt0Var.q();
-            iK = zt0Var.k();
-            zW = uv3.w(i, 128);
-            if (zW) {
-                z = true;
-            } else {
-                z = true;
-            }
-            if (z) {
-                i30 = 0;
-                while (true) {
-                    if (i30 < size) {
-                        z16 = z;
-                        yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                        i31 = i30;
-                        iArr3 = yt0Var4.p0;
-                        i8 = size;
-                        if (iArr3[0] == 3) {
-                            z17 = true;
-                        } else {
-                            z17 = false;
-                        }
-                        if (iArr3[1] == 3) {
-                            z18 = true;
-                        } else {
-                            z18 = false;
-                        }
-                        if (z17) {
-                            z19 = false;
-                        } else {
-                            z19 = false;
-                        }
-                        if (yt0Var4.x()) {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        } else {
-                            i30 = i31 + 1;
-                            z = z16;
-                            size = i8;
-                        }
-                        i9 = 1073741824;
-                        z2 = false;
-                    } else {
-                        z2 = z;
-                        i8 = size;
-                        i9 = 1073741824;
-                    }
-                }
-            } else {
-                z2 = z;
-                i8 = size;
-                i9 = 1073741824;
-            }
-            z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-            if (z3) {
-                iMin3 = Math.min(iArr[0], i34);
-                iMin4 = Math.min(iArr[1], i35);
-                i23 = 1073741824;
-                if (mode == 1073741824) {
-                    if (zt0Var.q() != iMin3) {
-                        zt0Var.O(iMin3);
-                        i71Var.b = true;
-                    }
-                    i23 = 1073741824;
-                }
-                if (mode2 == i23) {
-                    zt0Var.L(iMin4);
-                    i71Var.b = true;
-                }
-                if (mode == i23) {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var111112 = yt0Var5.d;
-                            oh2Var111112.e.j = false;
-                            oh2Var111112.g = false;
-                            oh2Var111112.n();
-                            an7 an7Var111112 = yt0Var5.e;
-                            an7Var111112.e.j = false;
-                            an7Var111112.g = false;
-                            an7Var111112.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var111113 = zt0Var3.d;
-                        oh2Var111113.e.j = false;
-                        oh2Var111113.g = false;
-                        oh2Var111113.n();
-                        an7 an7Var111113 = zt0Var3.e;
-                        an7Var111113.e.j = false;
-                        an7Var111113.g = false;
-                        an7Var111113.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                } else {
-                    z4 = z3;
-                    ozVar2 = ozVar;
-                    zt0Var3 = (zt0) i71Var.d;
-                    if (i71Var.b) {
-                        while (r2.hasNext()) {
-                            yt0Var5.h();
-                            yt0Var5.a = false;
-                            oh2 oh2Var111114 = yt0Var5.d;
-                            oh2Var111114.e.j = false;
-                            oh2Var111114.g = false;
-                            oh2Var111114.n();
-                            an7 an7Var111114 = yt0Var5.e;
-                            an7Var111114.e.j = false;
-                            an7Var111114.g = false;
-                            an7Var111114.m();
-                        }
-                        i24 = 0;
-                        zt0Var3.h();
-                        zt0Var3.a = false;
-                        oh2 oh2Var111115 = zt0Var3.d;
-                        oh2Var111115.e.j = false;
-                        oh2Var111115.g = false;
-                        oh2Var111115.n();
-                        an7 an7Var111115 = zt0Var3.e;
-                        an7Var111115.e.j = false;
-                        an7Var111115.g = false;
-                        an7Var111115.m();
-                        i71Var.c();
-                    } else {
-                        i24 = 0;
-                    }
-                    i71Var.b((zt0) i71Var.e);
-                    zt0Var3.Y = i24;
-                    zt0Var3.Z = i24;
-                    zt0Var3.d.h.d(i24);
-                    zt0Var3.e.h.d(i24);
-                    i25 = 1073741824;
-                    if (mode == 1073741824) {
-                        zT = zt0Var.T(i24, zW);
-                        i10 = 1;
-                    } else {
-                        i10 = 0;
-                        zT = true;
-                    }
-                    if (mode2 == 1073741824) {
-                        zT &= zt0Var.T(1, zW);
-                        i10++;
-                    }
-                }
-                if (zT) {
-                    if (mode == i25) {
-                        z12 = true;
-                    } else {
-                        z12 = false;
-                    }
-                    if (mode2 == i25) {
-                        z13 = true;
-                    } else {
-                        z13 = false;
-                    }
-                    zt0Var.P(z12, z13);
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                i10 = 0;
-                zT = false;
-            }
-            if (zT) {
-            }
-            int i311116 = zt0Var.D0;
-            if (i8 > 0) {
-                size3 = zt0Var.q0.size();
-                boolean zW15 = zt0Var.W(64);
-                ozVar6 = zt0Var.u0;
-                i19 = 0;
-                while (i19 < size3) {
-                    yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                    if (!(yt0Var3 instanceof td2)) {
-                        i22 = size3;
-                    } else {
-                        iJ = yt0Var3.j(0);
-                        int iJ17 = yt0Var3.j(1);
-                        i22 = size3;
-                        if (iJ == 3) {
-                            z11 = false;
-                        } else {
-                            z11 = false;
-                        }
-                        if (z11) {
-                        }
-                        if (z11) {
-                            rv7Var.A(0, ozVar6, yt0Var3);
-                        }
-                    }
-                    i19++;
-                    size3 = i22;
-                }
-                constraintLayout = ((b) ozVar6).a;
-                childCount = constraintLayout.getChildCount();
-                arrayList2 = constraintLayout.R;
-                while (i20 < childCount) {
-                    constraintLayout.getChildAt(i20);
-                }
-                size4 = arrayList2.size();
-                if (size4 > 0) {
-                    while (i21 < size4) {
-                        ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                    }
-                }
-            }
-            rv7Var.L(zt0Var);
-            size2 = arrayList.size();
-            if (i8 > 0) {
-                rv7Var.J(zt0Var, 0, iQ2, iK);
-            }
-            if (size2 > 0) {
-                iArr2 = zt0Var.p0;
-                if (iArr2[0] == 2) {
-                    z5 = true;
-                } else {
-                    z5 = false;
-                }
-                if (iArr2[1] == 2) {
-                    z6 = true;
-                } else {
-                    z6 = false;
-                }
-                iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-                iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-                i11 = 0;
-                z7 = false;
-                while (i11 < size2) {
-                    yt0Var2 = (yt0) arrayList.get(i11);
-                    if (yt0Var2 instanceof h02) {
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                    } else {
-                        iQ5 = yt0Var2.q();
-                        iK4 = yt0Var2.k();
-                        z9 = z6;
-                        ozVar5 = ozVar2;
-                        boolean zA15 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                        iQ6 = yt0Var2.q();
-                        z10 = zA15;
-                        iK5 = yt0Var2.k();
-                        if (iQ6 != iQ5) {
-                            yt0Var2.O(iQ6);
-                            if (z5) {
-                                iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                            }
-                            z10 = true;
-                        }
-                        if (iK5 != iK4) {
-                            yt0Var2.L(iK5);
-                            if (z9) {
-                                iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                            }
-                            z10 = true;
-                        }
-                        z7 = z10 | ((h02) yt0Var2).y0;
-                    }
-                    i11++;
-                    ozVar2 = ozVar5;
-                    z6 = z9;
-                }
-                z8 = z6;
-                i12 = 0;
-                while (true) {
-                    ozVar3 = ozVar2;
-                    if (i12 < 2) {
-                        break;
-                        break;
-                    }
-                    zA = z7;
-                    i13 = 0;
-                    while (i13 < size2) {
-                        yt0Var = (yt0) arrayList.get(i13);
-                        if (yt0Var instanceof sg2) {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i311117 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        } else {
-                            i16 = size2;
-                            if (yt0Var.g0 == 8) {
-                                ozVar4 = ozVar3;
-                                i18 = i12;
-                                i17 = i13;
-                            } else {
-                                iQ3 = yt0Var.q();
-                                iK2 = yt0Var.k();
-                                i17 = i13;
-                                int i311118 = yt0Var.a0;
-                                zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                                ozVar4 = ozVar3;
-                                iQ4 = yt0Var.q();
-                                i18 = i12;
-                                iK3 = yt0Var.k();
-                                if (iQ4 != iQ3) {
-                                    yt0Var.O(iQ4);
-                                    if (!z5) {
-                                    }
-                                    zA = true;
-                                }
-                                if (iK3 != iK2) {
-                                    yt0Var.L(iK3);
-                                    if (!z8) {
-                                    }
-                                    zA = true;
-                                }
-                                if (!yt0Var.E) {
-                                }
-                            }
-                        }
-                        i13 = i17 + 1;
-                        size2 = i16;
-                        i12 = i18;
-                        ozVar3 = ozVar4;
-                    }
-                    i14 = size2;
-                    ozVar2 = ozVar3;
-                    i15 = i12;
-                    if (zA) {
-                        break;
-                        break;
-                    }
-                    int i413 = i15 + 1;
-                    rv7Var.J(zt0Var, i413, iQ2, iK);
-                    i12 = i413;
-                    size2 = i14;
-                    z7 = false;
-                }
-            }
-            zt0Var.D0 = i311116;
-            hl3.q = zt0Var.W(512);
-        }
-        if (childCount2 == 0) {
-            iMax2 = Math.max(0, this.U);
-        } else {
-            i4 = 2;
-        }
-        iMin2 = 0;
-        iQ = zt0Var.q();
-        i71Var = zt0Var.s0;
-        iArr = zt0Var.C;
-        i5 = iMin;
-        if (i5 == iQ) {
-            i71Var.c = true;
-        } else {
-            i71Var.c = true;
-        }
-        zt0Var.Y = 0;
-        zt0Var.Z = 0;
-        iArr[0] = this.V - i37;
-        iArr[1] = this.W - i36;
-        zt0Var.b0 = 0;
-        zt0Var.c0 = 0;
-        zt0Var.M(i33);
-        zt0Var.O(i5);
-        zt0Var.N(i4);
-        zt0Var.L(iMin2);
-        i6 = this.T - i37;
-        if (i6 < 0) {
-            zt0Var.b0 = 0;
-        } else {
-            zt0Var.b0 = i6;
-        }
-        i7 = this.U - i36;
-        if (i7 < 0) {
-            zt0Var.c0 = 0;
-        } else {
-            zt0Var.c0 = i7;
-        }
-        zt0Var.x0 = iMax7;
-        zt0Var.y0 = iMax5;
-        rv7Var = zt0Var.r0;
-        zt0Var2 = (zt0) rv7Var.T;
-        arrayList = (ArrayList) rv7Var.R;
-        ozVar = zt0Var.u0;
-        size = zt0Var.q0.size();
-        iQ2 = zt0Var.q();
-        iK = zt0Var.k();
-        zW = uv3.w(i, 128);
-        if (zW) {
-            z = true;
-        } else {
-            z = true;
-        }
-        if (z) {
-            i30 = 0;
-            while (true) {
-                if (i30 < size) {
-                    z16 = z;
-                    yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                    i31 = i30;
-                    iArr3 = yt0Var4.p0;
-                    i8 = size;
-                    if (iArr3[0] == 3) {
-                        z17 = true;
-                    } else {
-                        z17 = false;
-                    }
-                    if (iArr3[1] == 3) {
-                        z18 = true;
-                    } else {
-                        z18 = false;
-                    }
-                    if (z17) {
-                        z19 = false;
-                    } else {
-                        z19 = false;
-                    }
-                    if (yt0Var4.x()) {
-                        i30 = i31 + 1;
-                        z = z16;
-                        size = i8;
-                    } else {
-                        i30 = i31 + 1;
-                        z = z16;
-                        size = i8;
-                    }
-                    i9 = 1073741824;
-                    z2 = false;
-                } else {
-                    z2 = z;
-                    i8 = size;
-                    i9 = 1073741824;
-                }
-            }
-        } else {
-            z2 = z;
-            i8 = size;
-            i9 = 1073741824;
-        }
-        z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-        if (z3) {
-            iMin3 = Math.min(iArr[0], i34);
-            iMin4 = Math.min(iArr[1], i35);
-            i23 = 1073741824;
-            if (mode == 1073741824) {
-                if (zt0Var.q() != iMin3) {
-                    zt0Var.O(iMin3);
-                    i71Var.b = true;
-                }
-                i23 = 1073741824;
-            }
-            if (mode2 == i23) {
-                zt0Var.L(iMin4);
-                i71Var.b = true;
-            }
-            if (mode == i23) {
-                z4 = z3;
-                ozVar2 = ozVar;
-                zt0Var3 = (zt0) i71Var.d;
-                if (i71Var.b) {
-                    while (r2.hasNext()) {
-                        yt0Var5.h();
-                        yt0Var5.a = false;
-                        oh2 oh2Var111116 = yt0Var5.d;
-                        oh2Var111116.e.j = false;
-                        oh2Var111116.g = false;
-                        oh2Var111116.n();
-                        an7 an7Var111116 = yt0Var5.e;
-                        an7Var111116.e.j = false;
-                        an7Var111116.g = false;
-                        an7Var111116.m();
-                    }
-                    i24 = 0;
-                    zt0Var3.h();
-                    zt0Var3.a = false;
-                    oh2 oh2Var111117 = zt0Var3.d;
-                    oh2Var111117.e.j = false;
-                    oh2Var111117.g = false;
-                    oh2Var111117.n();
-                    an7 an7Var111117 = zt0Var3.e;
-                    an7Var111117.e.j = false;
-                    an7Var111117.g = false;
-                    an7Var111117.m();
-                    i71Var.c();
-                } else {
-                    i24 = 0;
-                }
-                i71Var.b((zt0) i71Var.e);
-                zt0Var3.Y = i24;
-                zt0Var3.Z = i24;
-                zt0Var3.d.h.d(i24);
-                zt0Var3.e.h.d(i24);
-                i25 = 1073741824;
-                if (mode == 1073741824) {
-                    zT = zt0Var.T(i24, zW);
-                    i10 = 1;
-                } else {
-                    i10 = 0;
-                    zT = true;
-                }
-                if (mode2 == 1073741824) {
-                    zT &= zt0Var.T(1, zW);
-                    i10++;
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                zt0Var3 = (zt0) i71Var.d;
-                if (i71Var.b) {
-                    while (r2.hasNext()) {
-                        yt0Var5.h();
-                        yt0Var5.a = false;
-                        oh2 oh2Var111118 = yt0Var5.d;
-                        oh2Var111118.e.j = false;
-                        oh2Var111118.g = false;
-                        oh2Var111118.n();
-                        an7 an7Var111118 = yt0Var5.e;
-                        an7Var111118.e.j = false;
-                        an7Var111118.g = false;
-                        an7Var111118.m();
-                    }
-                    i24 = 0;
-                    zt0Var3.h();
-                    zt0Var3.a = false;
-                    oh2 oh2Var111119 = zt0Var3.d;
-                    oh2Var111119.e.j = false;
-                    oh2Var111119.g = false;
-                    oh2Var111119.n();
-                    an7 an7Var111119 = zt0Var3.e;
-                    an7Var111119.e.j = false;
-                    an7Var111119.g = false;
-                    an7Var111119.m();
-                    i71Var.c();
-                } else {
-                    i24 = 0;
-                }
-                i71Var.b((zt0) i71Var.e);
-                zt0Var3.Y = i24;
-                zt0Var3.Z = i24;
-                zt0Var3.d.h.d(i24);
-                zt0Var3.e.h.d(i24);
-                i25 = 1073741824;
-                if (mode == 1073741824) {
-                    zT = zt0Var.T(i24, zW);
-                    i10 = 1;
-                } else {
-                    i10 = 0;
-                    zT = true;
-                }
-                if (mode2 == 1073741824) {
-                    zT &= zt0Var.T(1, zW);
-                    i10++;
-                }
-            }
-            if (zT) {
-                if (mode == i25) {
-                    z12 = true;
-                } else {
-                    z12 = false;
-                }
-                if (mode2 == i25) {
-                    z13 = true;
-                } else {
-                    z13 = false;
-                }
-                zt0Var.P(z12, z13);
-            }
-        } else {
-            z4 = z3;
-            ozVar2 = ozVar;
-            i10 = 0;
-            zT = false;
-        }
-        if (zT) {
-        }
-        int i311119 = zt0Var.D0;
-        if (i8 > 0) {
-            size3 = zt0Var.q0.size();
-            boolean zW16 = zt0Var.W(64);
-            ozVar6 = zt0Var.u0;
-            i19 = 0;
-            while (i19 < size3) {
-                yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                if (!(yt0Var3 instanceof td2)) {
-                    i22 = size3;
-                } else {
-                    iJ = yt0Var3.j(0);
-                    int iJ18 = yt0Var3.j(1);
-                    i22 = size3;
-                    if (iJ == 3) {
-                        z11 = false;
-                    } else {
-                        z11 = false;
-                    }
-                    if (z11) {
-                    }
-                    if (z11) {
-                        rv7Var.A(0, ozVar6, yt0Var3);
-                    }
-                }
-                i19++;
-                size3 = i22;
-            }
-            constraintLayout = ((b) ozVar6).a;
-            childCount = constraintLayout.getChildCount();
-            arrayList2 = constraintLayout.R;
-            while (i20 < childCount) {
-                constraintLayout.getChildAt(i20);
-            }
-            size4 = arrayList2.size();
-            if (size4 > 0) {
-                while (i21 < size4) {
-                    ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                }
-            }
-        }
-        rv7Var.L(zt0Var);
-        size2 = arrayList.size();
-        if (i8 > 0) {
-            rv7Var.J(zt0Var, 0, iQ2, iK);
-        }
-        if (size2 > 0) {
-            iArr2 = zt0Var.p0;
-            if (iArr2[0] == 2) {
-                z5 = true;
-            } else {
-                z5 = false;
-            }
-            if (iArr2[1] == 2) {
-                z6 = true;
-            } else {
-                z6 = false;
-            }
-            iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-            iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-            i11 = 0;
-            z7 = false;
-            while (i11 < size2) {
-                yt0Var2 = (yt0) arrayList.get(i11);
-                if (yt0Var2 instanceof h02) {
-                    z9 = z6;
-                    ozVar5 = ozVar2;
-                } else {
-                    iQ5 = yt0Var2.q();
-                    iK4 = yt0Var2.k();
-                    z9 = z6;
-                    ozVar5 = ozVar2;
-                    boolean zA16 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                    iQ6 = yt0Var2.q();
-                    z10 = zA16;
-                    iK5 = yt0Var2.k();
-                    if (iQ6 != iQ5) {
-                        yt0Var2.O(iQ6);
-                        if (z5) {
-                            iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                        }
-                        z10 = true;
-                    }
-                    if (iK5 != iK4) {
-                        yt0Var2.L(iK5);
-                        if (z9) {
-                            iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                        }
-                        z10 = true;
-                    }
-                    z7 = z10 | ((h02) yt0Var2).y0;
-                }
-                i11++;
-                ozVar2 = ozVar5;
-                z6 = z9;
-            }
-            z8 = z6;
-            i12 = 0;
-            while (true) {
-                ozVar3 = ozVar2;
-                if (i12 < 2) {
-                    break;
-                    break;
-                }
-                zA = z7;
-                i13 = 0;
-                while (i13 < size2) {
-                    yt0Var = (yt0) arrayList.get(i13);
-                    if (yt0Var instanceof sg2) {
-                        i16 = size2;
-                        if (yt0Var.g0 == 8) {
-                            ozVar4 = ozVar3;
-                            i18 = i12;
-                            i17 = i13;
-                        } else {
-                            iQ3 = yt0Var.q();
-                            iK2 = yt0Var.k();
-                            i17 = i13;
-                            int i3111110 = yt0Var.a0;
-                            zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                            ozVar4 = ozVar3;
-                            iQ4 = yt0Var.q();
-                            i18 = i12;
-                            iK3 = yt0Var.k();
-                            if (iQ4 != iQ3) {
-                                yt0Var.O(iQ4);
-                                if (!z5) {
-                                }
-                                zA = true;
-                            }
-                            if (iK3 != iK2) {
-                                yt0Var.L(iK3);
-                                if (!z8) {
-                                }
-                                zA = true;
-                            }
-                            if (!yt0Var.E) {
-                            }
-                        }
-                    } else {
-                        i16 = size2;
-                        if (yt0Var.g0 == 8) {
-                            ozVar4 = ozVar3;
-                            i18 = i12;
-                            i17 = i13;
-                        } else {
-                            iQ3 = yt0Var.q();
-                            iK2 = yt0Var.k();
-                            i17 = i13;
-                            int i3111111 = yt0Var.a0;
-                            zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                            ozVar4 = ozVar3;
-                            iQ4 = yt0Var.q();
-                            i18 = i12;
-                            iK3 = yt0Var.k();
-                            if (iQ4 != iQ3) {
-                                yt0Var.O(iQ4);
-                                if (!z5) {
-                                }
-                                zA = true;
-                            }
-                            if (iK3 != iK2) {
-                                yt0Var.L(iK3);
-                                if (!z8) {
-                                }
-                                zA = true;
-                            }
-                            if (!yt0Var.E) {
-                            }
-                        }
-                    }
-                    i13 = i17 + 1;
-                    size2 = i16;
-                    i12 = i18;
-                    ozVar3 = ozVar4;
-                }
-                i14 = size2;
-                ozVar2 = ozVar3;
-                i15 = i12;
-                if (zA) {
-                    break;
-                    break;
-                }
-                int i414 = i15 + 1;
-                rv7Var.J(zt0Var, i414, iQ2, iK);
-                i12 = i414;
-                size2 = i14;
-                z7 = false;
-            }
-        }
-        zt0Var.D0 = i311119;
-        hl3.q = zt0Var.W(512);
-        iMin2 = iMax2;
-        i4 = 2;
-        iQ = zt0Var.q();
-        i71Var = zt0Var.s0;
-        iArr = zt0Var.C;
-        i5 = iMin;
-        if (i5 == iQ) {
-            i71Var.c = true;
-        } else {
-            i71Var.c = true;
-        }
-        zt0Var.Y = 0;
-        zt0Var.Z = 0;
-        iArr[0] = this.V - i37;
-        iArr[1] = this.W - i36;
-        zt0Var.b0 = 0;
-        zt0Var.c0 = 0;
-        zt0Var.M(i33);
-        zt0Var.O(i5);
-        zt0Var.N(i4);
-        zt0Var.L(iMin2);
-        i6 = this.T - i37;
-        if (i6 < 0) {
-            zt0Var.b0 = 0;
-        } else {
-            zt0Var.b0 = i6;
-        }
-        i7 = this.U - i36;
-        if (i7 < 0) {
-            zt0Var.c0 = 0;
-        } else {
-            zt0Var.c0 = i7;
-        }
-        zt0Var.x0 = iMax7;
-        zt0Var.y0 = iMax5;
-        rv7Var = zt0Var.r0;
-        zt0Var2 = (zt0) rv7Var.T;
-        arrayList = (ArrayList) rv7Var.R;
-        ozVar = zt0Var.u0;
-        size = zt0Var.q0.size();
-        iQ2 = zt0Var.q();
-        iK = zt0Var.k();
-        zW = uv3.w(i, 128);
-        if (zW) {
-            z = true;
-        } else {
-            z = true;
-        }
-        if (z) {
-            i30 = 0;
-            while (true) {
-                if (i30 < size) {
-                    z16 = z;
-                    yt0Var4 = (yt0) zt0Var.q0.get(i30);
-                    i31 = i30;
-                    iArr3 = yt0Var4.p0;
-                    i8 = size;
-                    if (iArr3[0] == 3) {
-                        z17 = true;
-                    } else {
-                        z17 = false;
-                    }
-                    if (iArr3[1] == 3) {
-                        z18 = true;
-                    } else {
-                        z18 = false;
-                    }
-                    if (z17) {
-                        z19 = false;
-                    } else {
-                        z19 = false;
-                    }
-                    if (yt0Var4.x()) {
-                        i30 = i31 + 1;
-                        z = z16;
-                        size = i8;
-                    } else {
-                        i30 = i31 + 1;
-                        z = z16;
-                        size = i8;
-                    }
-                    i9 = 1073741824;
-                    z2 = false;
-                } else {
-                    z2 = z;
-                    i8 = size;
-                    i9 = 1073741824;
-                }
-            }
-        } else {
-            z2 = z;
-            i8 = size;
-            i9 = 1073741824;
-        }
-        z3 = z2 & ((mode != i9 && mode2 == i9) || zW);
-        if (z3) {
-            iMin3 = Math.min(iArr[0], i34);
-            iMin4 = Math.min(iArr[1], i35);
-            i23 = 1073741824;
-            if (mode == 1073741824) {
-                if (zt0Var.q() != iMin3) {
-                    zt0Var.O(iMin3);
-                    i71Var.b = true;
-                }
-                i23 = 1073741824;
-            }
-            if (mode2 == i23) {
-                zt0Var.L(iMin4);
-                i71Var.b = true;
-            }
-            if (mode == i23) {
-                z4 = z3;
-                ozVar2 = ozVar;
-                zt0Var3 = (zt0) i71Var.d;
-                if (i71Var.b) {
-                    while (r2.hasNext()) {
-                        yt0Var5.h();
-                        yt0Var5.a = false;
-                        oh2 oh2Var1111110 = yt0Var5.d;
-                        oh2Var1111110.e.j = false;
-                        oh2Var1111110.g = false;
-                        oh2Var1111110.n();
-                        an7 an7Var1111110 = yt0Var5.e;
-                        an7Var1111110.e.j = false;
-                        an7Var1111110.g = false;
-                        an7Var1111110.m();
-                    }
-                    i24 = 0;
-                    zt0Var3.h();
-                    zt0Var3.a = false;
-                    oh2 oh2Var1111111 = zt0Var3.d;
-                    oh2Var1111111.e.j = false;
-                    oh2Var1111111.g = false;
-                    oh2Var1111111.n();
-                    an7 an7Var1111111 = zt0Var3.e;
-                    an7Var1111111.e.j = false;
-                    an7Var1111111.g = false;
-                    an7Var1111111.m();
-                    i71Var.c();
-                } else {
-                    i24 = 0;
-                }
-                i71Var.b((zt0) i71Var.e);
-                zt0Var3.Y = i24;
-                zt0Var3.Z = i24;
-                zt0Var3.d.h.d(i24);
-                zt0Var3.e.h.d(i24);
-                i25 = 1073741824;
-                if (mode == 1073741824) {
-                    zT = zt0Var.T(i24, zW);
-                    i10 = 1;
-                } else {
-                    i10 = 0;
-                    zT = true;
-                }
-                if (mode2 == 1073741824) {
-                    zT &= zt0Var.T(1, zW);
-                    i10++;
-                }
-            } else {
-                z4 = z3;
-                ozVar2 = ozVar;
-                zt0Var3 = (zt0) i71Var.d;
-                if (i71Var.b) {
-                    while (r2.hasNext()) {
-                        yt0Var5.h();
-                        yt0Var5.a = false;
-                        oh2 oh2Var1111112 = yt0Var5.d;
-                        oh2Var1111112.e.j = false;
-                        oh2Var1111112.g = false;
-                        oh2Var1111112.n();
-                        an7 an7Var1111112 = yt0Var5.e;
-                        an7Var1111112.e.j = false;
-                        an7Var1111112.g = false;
-                        an7Var1111112.m();
-                    }
-                    i24 = 0;
-                    zt0Var3.h();
-                    zt0Var3.a = false;
-                    oh2 oh2Var1111113 = zt0Var3.d;
-                    oh2Var1111113.e.j = false;
-                    oh2Var1111113.g = false;
-                    oh2Var1111113.n();
-                    an7 an7Var1111113 = zt0Var3.e;
-                    an7Var1111113.e.j = false;
-                    an7Var1111113.g = false;
-                    an7Var1111113.m();
-                    i71Var.c();
-                } else {
-                    i24 = 0;
-                }
-                i71Var.b((zt0) i71Var.e);
-                zt0Var3.Y = i24;
-                zt0Var3.Z = i24;
-                zt0Var3.d.h.d(i24);
-                zt0Var3.e.h.d(i24);
-                i25 = 1073741824;
-                if (mode == 1073741824) {
-                    zT = zt0Var.T(i24, zW);
-                    i10 = 1;
-                } else {
-                    i10 = 0;
-                    zT = true;
-                }
-                if (mode2 == 1073741824) {
-                    zT &= zt0Var.T(1, zW);
-                    i10++;
-                }
-            }
-            if (zT) {
-                if (mode == i25) {
-                    z12 = true;
-                } else {
-                    z12 = false;
-                }
-                if (mode2 == i25) {
-                    z13 = true;
-                } else {
-                    z13 = false;
-                }
-                zt0Var.P(z12, z13);
-            }
-        } else {
-            z4 = z3;
-            ozVar2 = ozVar;
-            i10 = 0;
-            zT = false;
-        }
-        if (zT) {
-        }
-        int i3111112 = zt0Var.D0;
-        if (i8 > 0) {
-            size3 = zt0Var.q0.size();
-            boolean zW17 = zt0Var.W(64);
-            ozVar6 = zt0Var.u0;
-            i19 = 0;
-            while (i19 < size3) {
-                yt0Var3 = (yt0) zt0Var.q0.get(i19);
-                if (!(yt0Var3 instanceof td2)) {
-                    i22 = size3;
-                } else {
-                    iJ = yt0Var3.j(0);
-                    int iJ19 = yt0Var3.j(1);
-                    i22 = size3;
-                    if (iJ == 3) {
-                        z11 = false;
-                    } else {
-                        z11 = false;
-                    }
-                    if (z11) {
-                    }
-                    if (z11) {
-                        rv7Var.A(0, ozVar6, yt0Var3);
-                    }
-                }
-                i19++;
-                size3 = i22;
-            }
-            constraintLayout = ((b) ozVar6).a;
-            childCount = constraintLayout.getChildCount();
-            arrayList2 = constraintLayout.R;
-            while (i20 < childCount) {
-                constraintLayout.getChildAt(i20);
-            }
-            size4 = arrayList2.size();
-            if (size4 > 0) {
-                while (i21 < size4) {
-                    ((ConstraintHelper) arrayList2.get(i21)).getClass();
-                }
-            }
-        }
-        rv7Var.L(zt0Var);
-        size2 = arrayList.size();
-        if (i8 > 0) {
-            rv7Var.J(zt0Var, 0, iQ2, iK);
-        }
-        if (size2 > 0) {
-            iArr2 = zt0Var.p0;
-            if (iArr2[0] == 2) {
-                z5 = true;
-            } else {
-                z5 = false;
-            }
-            if (iArr2[1] == 2) {
-                z6 = true;
-            } else {
-                z6 = false;
-            }
-            iMax3 = Math.max(zt0Var.q(), zt0Var2.b0);
-            iMax4 = Math.max(zt0Var.k(), zt0Var2.c0);
-            i11 = 0;
-            z7 = false;
-            while (i11 < size2) {
-                yt0Var2 = (yt0) arrayList.get(i11);
-                if (yt0Var2 instanceof h02) {
-                    z9 = z6;
-                    ozVar5 = ozVar2;
-                } else {
-                    iQ5 = yt0Var2.q();
-                    iK4 = yt0Var2.k();
-                    z9 = z6;
-                    ozVar5 = ozVar2;
-                    boolean zA17 = z7 | rv7Var.A(1, ozVar5, yt0Var2);
-                    iQ6 = yt0Var2.q();
-                    z10 = zA17;
-                    iK5 = yt0Var2.k();
-                    if (iQ6 != iQ5) {
-                        yt0Var2.O(iQ6);
-                        if (z5) {
-                            iMax3 = Math.max(iMax3, yt0Var2.i(4).e() + yt0Var2.r() + yt0Var2.U);
-                        }
-                        z10 = true;
-                    }
-                    if (iK5 != iK4) {
-                        yt0Var2.L(iK5);
-                        if (z9) {
-                            iMax4 = Math.max(iMax4, yt0Var2.i(5).e() + yt0Var2.s() + yt0Var2.V);
-                        }
-                        z10 = true;
-                    }
-                    z7 = z10 | ((h02) yt0Var2).y0;
-                }
-                i11++;
-                ozVar2 = ozVar5;
-                z6 = z9;
-            }
-            z8 = z6;
-            i12 = 0;
-            while (true) {
-                ozVar3 = ozVar2;
-                if (i12 < 2) {
-                    break;
-                    break;
-                }
-                zA = z7;
-                i13 = 0;
-                while (i13 < size2) {
-                    yt0Var = (yt0) arrayList.get(i13);
-                    if (yt0Var instanceof sg2) {
-                        i16 = size2;
-                        if (yt0Var.g0 == 8) {
-                            ozVar4 = ozVar3;
-                            i18 = i12;
-                            i17 = i13;
-                        } else {
-                            iQ3 = yt0Var.q();
-                            iK2 = yt0Var.k();
-                            i17 = i13;
-                            int i3111113 = yt0Var.a0;
-                            zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                            ozVar4 = ozVar3;
-                            iQ4 = yt0Var.q();
-                            i18 = i12;
-                            iK3 = yt0Var.k();
-                            if (iQ4 != iQ3) {
-                                yt0Var.O(iQ4);
-                                if (!z5) {
-                                }
-                                zA = true;
-                            }
-                            if (iK3 != iK2) {
-                                yt0Var.L(iK3);
-                                if (!z8) {
-                                }
-                                zA = true;
-                            }
-                            if (!yt0Var.E) {
-                            }
-                        }
-                    } else {
-                        i16 = size2;
-                        if (yt0Var.g0 == 8) {
-                            ozVar4 = ozVar3;
-                            i18 = i12;
-                            i17 = i13;
-                        } else {
-                            iQ3 = yt0Var.q();
-                            iK2 = yt0Var.k();
-                            i17 = i13;
-                            int i3111114 = yt0Var.a0;
-                            zA |= rv7Var.A(i12 == 1 ? 2 : 1, ozVar3, yt0Var);
-                            ozVar4 = ozVar3;
-                            iQ4 = yt0Var.q();
-                            i18 = i12;
-                            iK3 = yt0Var.k();
-                            if (iQ4 != iQ3) {
-                                yt0Var.O(iQ4);
-                                if (!z5) {
-                                }
-                                zA = true;
-                            }
-                            if (iK3 != iK2) {
-                                yt0Var.L(iK3);
-                                if (!z8) {
-                                }
-                                zA = true;
-                            }
-                            if (!yt0Var.E) {
-                            }
-                        }
-                    }
-                    i13 = i17 + 1;
-                    size2 = i16;
-                    i12 = i18;
-                    ozVar3 = ozVar4;
-                }
-                i14 = size2;
-                ozVar2 = ozVar3;
-                i15 = i12;
-                if (zA) {
-                    break;
-                    break;
-                }
-                int i415 = i15 + 1;
-                rv7Var.J(zt0Var, i415, iQ2, iK);
-                i12 = i415;
-                size2 = i14;
-                z7 = false;
-            }
-        }
-        zt0Var.D0 = i3111112;
-        hl3.q = zt0Var.W(512);
+        f11Var.D0 = i32;
+        l24.q = f11Var.W(512);
     }
 
-    public final void l(yt0 yt0Var, LayoutParams layoutParams, SparseArray sparseArray, int i, int i2) {
-        View view = (View) this.Q.get(i);
-        yt0 yt0Var2 = (yt0) sparseArray.get(i);
-        if (yt0Var2 == null || view == null || !(view.getLayoutParams() instanceof LayoutParams)) {
+    public final void l(e11 e11Var, LayoutParams layoutParams, SparseArray sparseArray, int i, int i2) {
+        View view = (View) this.c0.get(i);
+        e11 e11Var2 = (e11) sparseArray.get(i);
+        if (e11Var2 == null || view == null || !(view.getLayoutParams() instanceof LayoutParams)) {
             return;
         }
         layoutParams.c0 = true;
@@ -7585,27 +981,27 @@ public class ConstraintLayout extends ViewGroup {
             layoutParams2.c0 = true;
             layoutParams2.p0.E = true;
         }
-        yt0Var.i(6).b(yt0Var2.i(i2), layoutParams.D, layoutParams.C, true);
-        yt0Var.E = true;
-        yt0Var.i(3).j();
-        yt0Var.i(5).j();
+        e11Var.i(6).b(e11Var2.i(i2), layoutParams.D, layoutParams.C, true);
+        e11Var.E = true;
+        e11Var.i(3).j();
+        e11Var.i(5).j();
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public void onLayout(boolean z, int i, int i2, int i3, int i4) {
         int childCount = getChildCount();
-        boolean zIsInEditMode = isInEditMode();
+        boolean isInEditMode = isInEditMode();
         for (int i5 = 0; i5 < childCount; i5++) {
             View childAt = getChildAt(i5);
             LayoutParams layoutParams = (LayoutParams) childAt.getLayoutParams();
-            yt0 yt0Var = layoutParams.p0;
-            if (childAt.getVisibility() != 8 || layoutParams.d0 || layoutParams.e0 || zIsInEditMode) {
-                int iR = yt0Var.r();
-                int iS = yt0Var.s();
-                childAt.layout(iR, iS, yt0Var.q() + iR, yt0Var.k() + iS);
+            e11 e11Var = layoutParams.p0;
+            if (childAt.getVisibility() != 8 || layoutParams.d0 || layoutParams.e0 || isInEditMode) {
+                int r = e11Var.r();
+                int s = e11Var.s();
+                childAt.layout(r, s, e11Var.q() + r, e11Var.k() + s);
             }
         }
-        ArrayList arrayList = this.R;
+        ArrayList arrayList = this.d0;
         int size = arrayList.size();
         if (size > 0) {
             for (int i6 = 0; i6 < size; i6++) {
@@ -7614,600 +1010,709 @@ public class ConstraintLayout extends ViewGroup {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:114:0x01d5  */
-    /* JADX WARN: Code duplicated, block: B:214:0x0404  */
-    /* JADX WARN: Code duplicated, block: B:217:0x040c  */
-    /* JADX WARN: Code duplicated, block: B:291:0x052f  */
+    /* JADX WARN: Removed duplicated region for block: B:281:0x0334  */
+    /* JADX WARN: Removed duplicated region for block: B:288:0x036a  */
+    /* JADX WARN: Removed duplicated region for block: B:294:0x03b7  */
+    /* JADX WARN: Removed duplicated region for block: B:300:0x03f6  */
+    /* JADX WARN: Removed duplicated region for block: B:304:0x041f  */
+    /* JADX WARN: Removed duplicated region for block: B:307:0x0427  */
+    /* JADX WARN: Removed duplicated region for block: B:308:0x0401  */
+    /* JADX WARN: Removed duplicated region for block: B:315:0x03d4  */
+    /* JADX WARN: Removed duplicated region for block: B:321:0x038c  */
+    /* JADX WARN: Removed duplicated region for block: B:327:0x034c  */
     @Override // android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public void onMeasure(int i, int i2) {
         boolean z;
         int i3;
         boolean z2;
-        yt0 yt0Var;
-        yt0 yt0Var2;
+        e11 e11Var;
         int i4;
-        yt0 yt0Var3;
+        e11 e11Var2;
         int i5;
         int i6;
-        yt0 yt0Var4;
-        yt0 yt0Var5;
-        LayoutParams layoutParams;
-        yt0 yt0Var6;
-        float f;
         int i7;
+        e11 e11Var3;
         int i8;
-        float fAbs;
         int i9;
+        int i10;
+        int i11;
+        int i12;
+        e11 e11Var4;
+        int i13;
+        int i14;
+        e11 e11Var5;
+        LayoutParams layoutParams;
+        int i15;
+        e11 e11Var6;
+        float f;
+        int i16;
+        int i17;
+        int i18;
+        int i19;
+        int i20;
+        float parseFloat;
+        int i21;
+        char c;
         SparseArray sparseArray;
         ArrayList arrayList;
+        ArrayList arrayList2;
+        SparseArray sparseArray2;
         String str;
-        int iF;
-        yt0 yt0Var7;
+        int f2;
+        int i22;
+        String resourceName;
+        int id;
+        e11 e11Var7;
         ConstraintLayout constraintLayout = this;
-        boolean z3 = constraintLayout.a0;
-        constraintLayout.a0 = z3;
-        int i10 = 0;
+        boolean z3 = constraintLayout.j0;
+        constraintLayout.j0 = z3;
+        int i23 = 1;
+        int i24 = 0;
         if (!z3) {
             int childCount = constraintLayout.getChildCount();
-            for (int i11 = 0; i11 < childCount; i11++) {
-                if (constraintLayout.getChildAt(i11).isLayoutRequested()) {
-                    constraintLayout.a0 = true;
+            int i25 = 0;
+            while (true) {
+                if (i25 >= childCount) {
                     break;
                 }
+                if (constraintLayout.getChildAt(i25).isLayoutRequested()) {
+                    constraintLayout.j0 = true;
+                    break;
+                }
+                i25++;
             }
         }
         boolean z4 = (constraintLayout.getContext().getApplicationInfo().flags & 4194304) != 0 && 1 == constraintLayout.getLayoutDirection();
-        zt0 zt0Var = constraintLayout.S;
-        zt0Var.v0 = z4;
-        if (constraintLayout.a0) {
-            constraintLayout.a0 = false;
+        f11 f11Var = constraintLayout.e0;
+        f11Var.v0 = z4;
+        if (constraintLayout.j0) {
+            constraintLayout.j0 = false;
             int childCount2 = constraintLayout.getChildCount();
-            int i12 = 0;
+            int i26 = 0;
             while (true) {
-                if (i12 >= childCount2) {
+                if (i26 >= childCount2) {
                     z = false;
                     break;
                 } else {
-                    if (constraintLayout.getChildAt(i12).isLayoutRequested()) {
+                    if (constraintLayout.getChildAt(i26).isLayoutRequested()) {
                         z = true;
                         break;
                     }
-                    i12++;
+                    i26++;
                 }
             }
             if (z) {
-                boolean zIsInEditMode = constraintLayout.isInEditMode();
+                boolean isInEditMode = constraintLayout.isInEditMode();
                 int childCount3 = constraintLayout.getChildCount();
-                for (int i13 = 0; i13 < childCount3; i13++) {
-                    yt0 yt0VarH = constraintLayout.h(constraintLayout.getChildAt(i13));
-                    if (yt0VarH != null) {
-                        yt0VarH.C();
+                for (int i27 = 0; i27 < childCount3; i27++) {
+                    e11 h = constraintLayout.h(constraintLayout.getChildAt(i27));
+                    if (h != null) {
+                        h.C();
                     }
                 }
-                SparseArray sparseArray2 = constraintLayout.Q;
-                if (zIsInEditMode) {
-                    for (int i14 = 0; i14 < childCount3; i14++) {
-                        View childAt = constraintLayout.getChildAt(i14);
+                SparseArray sparseArray3 = constraintLayout.c0;
+                if (isInEditMode) {
+                    int i28 = 0;
+                    while (i28 < childCount3) {
+                        View childAt = constraintLayout.getChildAt(i28);
                         try {
-                            String resourceName = constraintLayout.getResources().getResourceName(childAt.getId());
-                            Integer numValueOf = Integer.valueOf(childAt.getId());
+                            resourceName = constraintLayout.getResources().getResourceName(childAt.getId());
+                            Integer valueOf = Integer.valueOf(childAt.getId());
                             if (resourceName != null) {
+                                i22 = i23;
                                 try {
-                                    if (constraintLayout.f0 == null) {
-                                        constraintLayout.f0 = new HashMap();
+                                    if (constraintLayout.o0 == null) {
+                                        constraintLayout.o0 = new HashMap();
                                     }
-                                    int iIndexOf = resourceName.indexOf("/");
-                                    constraintLayout.f0.put(iIndexOf != -1 ? resourceName.substring(iIndexOf + 1) : resourceName, numValueOf);
+                                    int indexOf = resourceName.indexOf("/");
+                                    constraintLayout.o0.put(indexOf != -1 ? resourceName.substring(indexOf + 1) : resourceName, valueOf);
                                 } catch (Resources.NotFoundException unused) {
                                 }
+                            } else {
+                                i22 = i23;
                             }
-                            int iIndexOf2 = resourceName.indexOf(47);
-                            if (iIndexOf2 != -1) {
-                                resourceName = resourceName.substring(iIndexOf2 + 1);
+                            int indexOf2 = resourceName.indexOf(47);
+                            if (indexOf2 != -1) {
+                                resourceName = resourceName.substring(indexOf2 + 1);
                             }
-                            int id = childAt.getId();
-                            if (id != 0) {
-                                View viewFindViewById = (View) sparseArray2.get(id);
-                                if (viewFindViewById == null && (viewFindViewById = constraintLayout.findViewById(id)) != null && viewFindViewById != constraintLayout && viewFindViewById.getParent() == constraintLayout) {
-                                    constraintLayout.onViewAdded(viewFindViewById);
-                                }
-                                yt0Var7 = viewFindViewById == constraintLayout ? zt0Var : viewFindViewById == null ? null : ((LayoutParams) viewFindViewById.getLayoutParams()).p0;
-                            }
-                            yt0Var7.h0 = resourceName;
+                            id = childAt.getId();
                         } catch (Resources.NotFoundException unused2) {
+                            i22 = i23;
                         }
+                        if (id != 0) {
+                            View view = (View) sparseArray3.get(id);
+                            if (view == null && (view = constraintLayout.findViewById(id)) != null && view != constraintLayout && view.getParent() == constraintLayout) {
+                                constraintLayout.onViewAdded(view);
+                            }
+                            if (view != constraintLayout) {
+                                e11Var7 = view == null ? null : ((LayoutParams) view.getLayoutParams()).p0;
+                                e11Var7.h0 = resourceName;
+                                i28++;
+                                i23 = i22;
+                            }
+                        }
+                        e11Var7 = f11Var;
+                        e11Var7.h0 = resourceName;
+                        i28++;
+                        i23 = i22;
                     }
                 }
-                if (constraintLayout.e0 != -1) {
-                    for (int i15 = 0; i15 < childCount3; i15++) {
-                        constraintLayout.getChildAt(i15).getId();
+                int i29 = i23;
+                if (constraintLayout.n0 != -1) {
+                    for (int i30 = 0; i30 < childCount3; i30++) {
+                        constraintLayout.getChildAt(i30).getId();
                     }
                 }
-                d dVar = constraintLayout.c0;
+                d dVar = constraintLayout.l0;
                 if (dVar != null) {
                     dVar.a(constraintLayout);
                 }
-                zt0Var.q0.clear();
-                ArrayList arrayList2 = constraintLayout.R;
-                int size = arrayList2.size();
+                f11Var.q0.clear();
+                ArrayList arrayList3 = constraintLayout.d0;
+                int size = arrayList3.size();
                 if (size > 0) {
-                    int i16 = 0;
-                    while (i16 < size) {
-                        ConstraintHelper constraintHelper = (ConstraintHelper) arrayList2.get(i16);
-                        HashMap map = constraintHelper.W;
+                    int i31 = 0;
+                    while (i31 < size) {
+                        ConstraintHelper constraintHelper = (ConstraintHelper) arrayList3.get(i31);
+                        HashMap hashMap = constraintHelper.i0;
                         if (constraintHelper.isInEditMode()) {
-                            constraintHelper.setIds(constraintHelper.U);
+                            constraintHelper.setIds(constraintHelper.g0);
                         }
-                        sg2 sg2Var = constraintHelper.T;
-                        if (sg2Var == null) {
-                            sparseArray = sparseArray2;
-                            arrayList = arrayList2;
+                        xt2 xt2Var = constraintHelper.f0;
+                        if (xt2Var == null) {
+                            sparseArray = sparseArray3;
+                            arrayList = arrayList3;
                         } else {
-                            sg2Var.r0 = i10;
-                            Arrays.fill(sg2Var.q0, (Object) null);
-                            int i17 = 0;
-                            while (i17 < constraintHelper.R) {
-                                int i18 = constraintHelper.Q[i17];
-                                View view = (View) sparseArray2.get(i18);
-                                if (view == null && (iF = constraintHelper.f(constraintLayout, (str = (String) map.get(Integer.valueOf(i18))))) != 0) {
-                                    constraintHelper.Q[i17] = iF;
-                                    map.put(Integer.valueOf(iF), str);
-                                    view = (View) sparseArray2.get(iF);
+                            xt2Var.r0 = i24;
+                            Arrays.fill(xt2Var.q0, (Object) null);
+                            int i32 = i24;
+                            while (i32 < constraintHelper.d0) {
+                                int i33 = constraintHelper.c0[i32];
+                                View view2 = (View) sparseArray3.get(i33);
+                                if (view2 != null || (f2 = constraintHelper.f(constraintLayout, (str = (String) hashMap.get(Integer.valueOf(i33))))) == 0) {
+                                    arrayList2 = arrayList3;
+                                } else {
+                                    arrayList2 = arrayList3;
+                                    constraintHelper.c0[i32] = f2;
+                                    hashMap.put(Integer.valueOf(f2), str);
+                                    view2 = (View) sparseArray3.get(f2);
                                 }
-                                View view2 = view;
-                                if (view2 != null) {
-                                    sg2 sg2Var2 = constraintHelper.T;
-                                    yt0 yt0VarH2 = constraintLayout.h(view2);
-                                    sg2Var2.getClass();
-                                    if (yt0VarH2 != sg2Var2 && yt0VarH2 != null) {
-                                        int i19 = sg2Var2.r0 + 1;
-                                        yt0[] yt0VarArr = sg2Var2.q0;
-                                        if (i19 > yt0VarArr.length) {
-                                            sg2Var2.q0 = (yt0[]) Arrays.copyOf(yt0VarArr, yt0VarArr.length * 2);
+                                View view3 = view2;
+                                if (view3 != null) {
+                                    xt2 xt2Var2 = constraintHelper.f0;
+                                    e11 h2 = constraintLayout.h(view3);
+                                    xt2Var2.getClass();
+                                    if (h2 != xt2Var2 && h2 != null) {
+                                        int i34 = xt2Var2.r0 + 1;
+                                        sparseArray2 = sparseArray3;
+                                        e11[] e11VarArr = xt2Var2.q0;
+                                        if (i34 > e11VarArr.length) {
+                                            xt2Var2.q0 = (e11[]) Arrays.copyOf(e11VarArr, e11VarArr.length * 2);
                                         }
-                                        yt0[] yt0VarArr2 = sg2Var2.q0;
-                                        int i20 = sg2Var2.r0;
-                                        yt0VarArr2[i20] = yt0VarH2;
-                                        sg2Var2.r0 = i20 + 1;
+                                        e11[] e11VarArr2 = xt2Var2.q0;
+                                        int i35 = xt2Var2.r0;
+                                        e11VarArr2[i35] = h2;
+                                        xt2Var2.r0 = i35 + 1;
+                                        i32++;
+                                        sparseArray3 = sparseArray2;
+                                        arrayList3 = arrayList2;
                                     }
                                 }
-                                i17++;
-                                sparseArray2 = sparseArray2;
-                                arrayList2 = arrayList2;
+                                sparseArray2 = sparseArray3;
+                                i32++;
+                                sparseArray3 = sparseArray2;
+                                arrayList3 = arrayList2;
                             }
-                            sparseArray = sparseArray2;
-                            arrayList = arrayList2;
-                            constraintHelper.T.S();
+                            sparseArray = sparseArray3;
+                            arrayList = arrayList3;
+                            constraintHelper.f0.S();
                         }
-                        i16++;
-                        sparseArray2 = sparseArray;
-                        arrayList2 = arrayList;
-                        i10 = 0;
+                        i31++;
+                        sparseArray3 = sparseArray;
+                        arrayList3 = arrayList;
+                        i24 = 0;
                     }
                 }
-                for (int i21 = 0; i21 < childCount3; i21++) {
-                    constraintLayout.getChildAt(i21);
+                int i36 = 2;
+                for (int i37 = 0; i37 < childCount3; i37++) {
+                    constraintLayout.getChildAt(i37);
                 }
-                SparseArray sparseArray3 = constraintLayout.g0;
-                sparseArray3.clear();
-                sparseArray3.put(0, zt0Var);
-                sparseArray3.put(constraintLayout.getId(), zt0Var);
-                for (int i22 = 0; i22 < childCount3; i22++) {
-                    View childAt2 = constraintLayout.getChildAt(i22);
-                    sparseArray3.put(childAt2.getId(), constraintLayout.h(childAt2));
+                SparseArray sparseArray4 = constraintLayout.p0;
+                sparseArray4.clear();
+                sparseArray4.put(0, f11Var);
+                sparseArray4.put(constraintLayout.getId(), f11Var);
+                for (int i38 = 0; i38 < childCount3; i38++) {
+                    View childAt2 = constraintLayout.getChildAt(i38);
+                    sparseArray4.put(childAt2.getId(), constraintLayout.h(childAt2));
                 }
-                int i23 = 0;
-                while (i23 < childCount3) {
-                    View childAt3 = constraintLayout.getChildAt(i23);
-                    yt0 yt0VarH3 = constraintLayout.h(childAt3);
-                    if (yt0VarH3 == null) {
-                        i3 = i23;
-                        z2 = z;
-                    } else {
+                int i39 = 0;
+                while (i39 < childCount3) {
+                    View childAt3 = constraintLayout.getChildAt(i39);
+                    e11 h3 = constraintLayout.h(childAt3);
+                    if (h3 != null) {
                         LayoutParams layoutParams2 = (LayoutParams) childAt3.getLayoutParams();
-                        zt0Var.q0.add(yt0VarH3);
-                        yt0 yt0Var8 = yt0VarH3.T;
-                        if (yt0Var8 != null) {
-                            ((zt0) yt0Var8).q0.remove(yt0VarH3);
-                            yt0VarH3.C();
+                        f11Var.q0.add(h3);
+                        e11 e11Var8 = h3.T;
+                        if (e11Var8 != null) {
+                            ((f11) e11Var8).q0.remove(h3);
+                            h3.C();
                         }
-                        yt0VarH3.T = zt0Var;
+                        h3.T = f11Var;
                         layoutParams2.a();
-                        yt0VarH3.g0 = childAt3.getVisibility();
-                        yt0VarH3.f0 = childAt3;
+                        h3.g0 = childAt3.getVisibility();
+                        h3.f0 = childAt3;
                         if (childAt3 instanceof ConstraintHelper) {
-                            ((ConstraintHelper) childAt3).h(yt0VarH3, zt0Var.v0);
+                            ((ConstraintHelper) childAt3).h(h3, f11Var.v0);
                         }
                         if (layoutParams2.d0) {
-                            td2 td2Var = (td2) yt0VarH3;
-                            int i24 = layoutParams2.m0;
-                            int i25 = layoutParams2.n0;
-                            float f2 = layoutParams2.o0;
-                            if (f2 != -1.0f) {
-                                if (f2 > -1.0f) {
-                                    td2Var.q0 = f2;
-                                    td2Var.r0 = -1;
-                                    td2Var.s0 = -1;
+                            eq2 eq2Var = (eq2) h3;
+                            int i40 = layoutParams2.m0;
+                            int i41 = layoutParams2.n0;
+                            float f3 = layoutParams2.o0;
+                            if (f3 == -1.0f) {
+                                c = 65535;
+                                if (i40 != -1) {
+                                    if (i40 > -1) {
+                                        eq2Var.q0 = -1.0f;
+                                        eq2Var.r0 = i40;
+                                        eq2Var.s0 = -1;
+                                    }
+                                } else if (i41 != -1 && i41 > -1) {
+                                    eq2Var.q0 = -1.0f;
+                                    eq2Var.r0 = -1;
+                                    eq2Var.s0 = i41;
                                 }
-                            } else if (i24 != -1) {
-                                if (i24 > -1) {
-                                    td2Var.q0 = -1.0f;
-                                    td2Var.r0 = i24;
-                                    td2Var.s0 = -1;
-                                }
-                            } else if (i25 != -1 && i25 > -1) {
-                                td2Var.q0 = -1.0f;
-                                td2Var.r0 = -1;
-                                td2Var.s0 = i25;
+                                i3 = i39;
+                                z2 = z;
+                                i18 = i36;
+                            } else if (f3 > -1.0f) {
+                                eq2Var.q0 = f3;
+                                c = 65535;
+                                eq2Var.r0 = -1;
+                                eq2Var.s0 = -1;
+                                i3 = i39;
+                                z2 = z;
+                                i18 = i36;
                             }
-                            i3 = i23;
-                            z2 = z;
                         } else {
-                            int i26 = layoutParams2.f0;
-                            int i27 = layoutParams2.g0;
-                            int i28 = layoutParams2.h0;
-                            int i29 = layoutParams2.i0;
-                            int i30 = layoutParams2.j0;
-                            int i31 = layoutParams2.k0;
-                            i3 = i23;
-                            float f3 = layoutParams2.l0;
-                            int i32 = layoutParams2.p;
+                            int i42 = layoutParams2.f0;
+                            int i43 = layoutParams2.g0;
+                            int i44 = layoutParams2.h0;
+                            int i45 = layoutParams2.i0;
+                            int i46 = layoutParams2.j0;
+                            int i47 = layoutParams2.k0;
+                            i3 = i39;
+                            float f4 = layoutParams2.l0;
+                            int i48 = layoutParams2.p;
                             z2 = z;
-                            if (i32 != -1) {
-                                yt0 yt0Var9 = (yt0) sparseArray3.get(i32);
-                                if (yt0Var9 != null) {
-                                    float f4 = layoutParams2.r;
-                                    yt0VarH3.v(7, 7, layoutParams2.q, 0, yt0Var9);
-                                    yt0VarH3.D = f4;
+                            if (i48 != -1) {
+                                e11 e11Var9 = (e11) sparseArray4.get(i48);
+                                if (e11Var9 != null) {
+                                    float f5 = layoutParams2.r;
+                                    h3.v(7, 7, layoutParams2.q, 0, e11Var9);
+                                    h3.D = f5;
                                 }
                                 constraintLayout = this;
-                                yt0Var6 = yt0VarH3;
+                                e11Var6 = h3;
                                 layoutParams = layoutParams2;
-                                i4 = 2;
-                                i5 = 4;
+                                i8 = 4;
+                                i7 = 2;
                             } else {
-                                if (i26 != -1) {
-                                    yt0 yt0Var10 = (yt0) sparseArray3.get(i26);
-                                    if (yt0Var10 != null) {
-                                        yt0Var = yt0VarH3;
-                                        yt0Var.v(2, 2, ((ViewGroup.MarginLayoutParams) layoutParams2).leftMargin, i30, yt0Var10);
+                                if (i42 != -1) {
+                                    e11 e11Var10 = (e11) sparseArray4.get(i42);
+                                    if (e11Var10 != null) {
+                                        e11Var = h3;
+                                        i4 = 2;
+                                        e11Var.v(2, 2, ((ViewGroup.MarginLayoutParams) layoutParams2).leftMargin, i46, e11Var10);
                                     } else {
-                                        yt0Var = yt0VarH3;
+                                        e11Var = h3;
+                                        i4 = 2;
                                     }
                                 } else {
-                                    yt0Var = yt0VarH3;
-                                    if (i27 != -1 && (yt0Var2 = (yt0) sparseArray3.get(i27)) != null) {
-                                        yt0Var.v(2, 4, ((ViewGroup.MarginLayoutParams) layoutParams2).leftMargin, i30, yt0Var2);
-                                    }
-                                }
-                                if (i28 != -1) {
-                                    yt0 yt0Var11 = (yt0) sparseArray3.get(i28);
-                                    if (yt0Var11 != null) {
-                                        yt0Var.v(4, 2, ((ViewGroup.MarginLayoutParams) layoutParams2).rightMargin, i31, yt0Var11);
-                                    }
+                                    e11Var = h3;
                                     i4 = 2;
-                                } else {
-                                    i4 = 2;
-                                    if (i29 != -1 && (yt0Var3 = (yt0) sparseArray3.get(i29)) != null) {
-                                        yt0Var.v(4, 4, ((ViewGroup.MarginLayoutParams) layoutParams2).rightMargin, i31, yt0Var3);
-                                    }
-                                }
-                                i5 = 4;
-                                int i33 = layoutParams2.i;
-                                if (i33 != -1) {
-                                    yt0 yt0Var12 = (yt0) sparseArray3.get(i33);
-                                    if (yt0Var12 != null) {
-                                        yt0Var.v(3, 3, ((ViewGroup.MarginLayoutParams) layoutParams2).topMargin, layoutParams2.x, yt0Var12);
-                                    }
-                                    i6 = -1;
-                                } else {
-                                    int i34 = layoutParams2.j;
-                                    i6 = -1;
-                                    if (i34 != -1 && (yt0Var4 = (yt0) sparseArray3.get(i34)) != null) {
-                                        yt0Var.v(3, 5, ((ViewGroup.MarginLayoutParams) layoutParams2).topMargin, layoutParams2.x, yt0Var4);
-                                    }
-                                }
-                                int i35 = layoutParams2.k;
-                                if (i35 != i6) {
-                                    yt0 yt0Var13 = (yt0) sparseArray3.get(i35);
-                                    if (yt0Var13 != null) {
-                                        yt0Var.v(5, 3, ((ViewGroup.MarginLayoutParams) layoutParams2).bottomMargin, layoutParams2.z, yt0Var13);
-                                    }
-                                } else {
-                                    int i36 = layoutParams2.l;
-                                    if (i36 != i6 && (yt0Var5 = (yt0) sparseArray3.get(i36)) != null) {
-                                        yt0Var.v(5, 5, ((ViewGroup.MarginLayoutParams) layoutParams2).bottomMargin, layoutParams2.z, yt0Var5);
-                                    }
-                                }
-                                layoutParams = layoutParams2;
-                                int i37 = layoutParams.m;
-                                if (i37 != -1) {
-                                    constraintLayout = this;
-                                    yt0Var6 = yt0Var;
-                                    constraintLayout.l(yt0Var6, layoutParams, sparseArray3, i37, 6);
-                                } else {
-                                    int i38 = layoutParams.n;
-                                    if (i38 != -1) {
-                                        constraintLayout = this;
-                                        yt0Var6 = yt0Var;
-                                        constraintLayout.l(yt0Var6, layoutParams, sparseArray3, i38, 3);
-                                    } else {
-                                        int i39 = layoutParams.o;
-                                        constraintLayout = this;
-                                        yt0Var6 = yt0Var;
-                                        if (i39 != -1) {
-                                            constraintLayout.l(yt0Var6, layoutParams, sparseArray3, i39, 5);
+                                    if (i43 != -1 && (e11Var2 = (e11) sparseArray4.get(i43)) != null) {
+                                        e11Var.v(2, 4, ((ViewGroup.MarginLayoutParams) layoutParams2).leftMargin, i46, e11Var2);
+                                        i5 = 2;
+                                        i6 = 4;
+                                        if (i44 == -1) {
+                                            e11 e11Var11 = (e11) sparseArray4.get(i44);
+                                            if (e11Var11 != null) {
+                                                e11Var.v(i6, i5, ((ViewGroup.MarginLayoutParams) layoutParams2).rightMargin, i47, e11Var11);
+                                            }
+                                            i7 = i5;
+                                        } else {
+                                            i7 = i5;
+                                            if (i45 != -1 && (e11Var3 = (e11) sparseArray4.get(i45)) != null) {
+                                                e11Var.v(i6, i6, ((ViewGroup.MarginLayoutParams) layoutParams2).rightMargin, i47, e11Var3);
+                                            }
+                                        }
+                                        i8 = i6;
+                                        i9 = layoutParams2.i;
+                                        if (i9 == -1) {
+                                            e11 e11Var12 = (e11) sparseArray4.get(i9);
+                                            if (e11Var12 != null) {
+                                                i16 = 3;
+                                                e11Var.v(3, 3, ((ViewGroup.MarginLayoutParams) layoutParams2).topMargin, layoutParams2.x, e11Var12);
+                                            } else {
+                                                i16 = 3;
+                                            }
+                                            i11 = i16;
+                                            i12 = 5;
+                                            i10 = -1;
+                                        } else {
+                                            int i49 = layoutParams2.j;
+                                            i10 = -1;
+                                            if (i49 == -1 || (e11Var4 = (e11) sparseArray4.get(i49)) == null) {
+                                                i11 = 3;
+                                                i12 = 5;
+                                            } else {
+                                                e11Var.v(3, 5, ((ViewGroup.MarginLayoutParams) layoutParams2).topMargin, layoutParams2.x, e11Var4);
+                                                i11 = 3;
+                                                i12 = 5;
+                                            }
+                                        }
+                                        i13 = layoutParams2.k;
+                                        if (i13 == i10) {
+                                            e11 e11Var13 = (e11) sparseArray4.get(i13);
+                                            if (e11Var13 != null) {
+                                                int i50 = i11;
+                                                e11Var.v(i12, i50, ((ViewGroup.MarginLayoutParams) layoutParams2).bottomMargin, layoutParams2.z, e11Var13);
+                                                i14 = i50;
+                                            } else {
+                                                i14 = i11;
+                                            }
+                                        } else {
+                                            i14 = i11;
+                                            int i51 = layoutParams2.l;
+                                            if (i51 != i10 && (e11Var5 = (e11) sparseArray4.get(i51)) != null) {
+                                                e11Var.v(i12, i12, ((ViewGroup.MarginLayoutParams) layoutParams2).bottomMargin, layoutParams2.z, e11Var5);
+                                            }
+                                        }
+                                        layoutParams = layoutParams2;
+                                        i15 = layoutParams.m;
+                                        if (i15 == -1) {
+                                            constraintLayout = this;
+                                            e11Var6 = e11Var;
+                                            constraintLayout.l(e11Var6, layoutParams, sparseArray4, i15, 6);
+                                        } else {
+                                            int i52 = layoutParams.n;
+                                            if (i52 != -1) {
+                                                constraintLayout = this;
+                                                e11Var6 = e11Var;
+                                                constraintLayout.l(e11Var6, layoutParams, sparseArray4, i52, i14);
+                                            } else {
+                                                int i53 = layoutParams.o;
+                                                constraintLayout = this;
+                                                e11Var6 = e11Var;
+                                                int i54 = i12;
+                                                if (i53 != -1) {
+                                                    constraintLayout.l(e11Var6, layoutParams, sparseArray4, i53, i54);
+                                                }
+                                                if (f4 >= 0.0f) {
+                                                    e11Var6.d0 = f4;
+                                                }
+                                                f = layoutParams.F;
+                                                if (f >= 0.0f) {
+                                                    e11Var6.e0 = f;
+                                                }
+                                            }
+                                        }
+                                        if (f4 >= 0.0f) {
+                                        }
+                                        f = layoutParams.F;
+                                        if (f >= 0.0f) {
                                         }
                                     }
-                                    if (f3 >= 0.0f) {
-                                        yt0Var6.d0 = f3;
-                                    }
-                                    f = layoutParams.F;
-                                    if (f >= 0.0f) {
-                                        yt0Var6.e0 = f;
-                                    }
                                 }
-                                if (f3 >= 0.0f) {
-                                    yt0Var6.d0 = f3;
+                                i5 = i4;
+                                i6 = 4;
+                                if (i44 == -1) {
+                                }
+                                i8 = i6;
+                                i9 = layoutParams2.i;
+                                if (i9 == -1) {
+                                }
+                                i13 = layoutParams2.k;
+                                if (i13 == i10) {
+                                }
+                                layoutParams = layoutParams2;
+                                i15 = layoutParams.m;
+                                if (i15 == -1) {
+                                }
+                                if (f4 >= 0.0f) {
                                 }
                                 f = layoutParams.F;
                                 if (f >= 0.0f) {
-                                    yt0Var6.e0 = f;
                                 }
                             }
-                            if (zIsInEditMode && ((i9 = layoutParams.T) != -1 || layoutParams.U != -1)) {
-                                int i40 = layoutParams.U;
-                                yt0Var6.Y = i9;
-                                yt0Var6.Z = i40;
+                            if (isInEditMode && ((i21 = layoutParams.T) != -1 || layoutParams.U != -1)) {
+                                int i55 = layoutParams.U;
+                                e11Var6.Y = i21;
+                                e11Var6.Z = i55;
                             }
                             if (layoutParams.a0) {
-                                yt0Var6.M(1);
-                                yt0Var6.O(((ViewGroup.MarginLayoutParams) layoutParams).width);
+                                e11Var6.M(i29);
+                                e11Var6.O(((ViewGroup.MarginLayoutParams) layoutParams).width);
                                 if (((ViewGroup.MarginLayoutParams) layoutParams).width == -2) {
-                                    yt0Var6.M(2);
+                                    e11Var6.M(i36);
                                 }
                             } else if (((ViewGroup.MarginLayoutParams) layoutParams).width == -1) {
                                 if (layoutParams.W) {
-                                    yt0Var6.M(3);
+                                    e11Var6.M(3);
                                 } else {
-                                    yt0Var6.M(4);
+                                    e11Var6.M(4);
                                 }
-                                yt0Var6.i(i4).g = ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin;
-                                yt0Var6.i(i5).g = ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin;
+                                e11Var6.i(i7).g = ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin;
+                                e11Var6.i(i8).g = ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin;
                             } else {
-                                yt0Var6.M(3);
-                                yt0Var6.O(0);
+                                e11Var6.M(3);
+                                e11Var6.O(0);
                             }
                             if (layoutParams.b0) {
-                                yt0Var6.N(1);
-                                yt0Var6.L(((ViewGroup.MarginLayoutParams) layoutParams).height);
+                                i17 = -1;
+                                e11Var6.N(1);
+                                e11Var6.L(((ViewGroup.MarginLayoutParams) layoutParams).height);
                                 if (((ViewGroup.MarginLayoutParams) layoutParams).height == -2) {
-                                    yt0Var6.N(2);
+                                    e11Var6.N(2);
                                 }
-                            } else if (((ViewGroup.MarginLayoutParams) layoutParams).height == -1) {
-                                if (layoutParams.X) {
-                                    yt0Var6.N(3);
-                                } else {
-                                    yt0Var6.N(4);
-                                }
-                                yt0Var6.i(3).g = ((ViewGroup.MarginLayoutParams) layoutParams).topMargin;
-                                yt0Var6.i(5).g = ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin;
                             } else {
-                                yt0Var6.N(3);
-                                yt0Var6.L(0);
+                                i17 = -1;
+                                if (((ViewGroup.MarginLayoutParams) layoutParams).height == -1) {
+                                    if (layoutParams.X) {
+                                        e11Var6.N(3);
+                                    } else {
+                                        e11Var6.N(4);
+                                    }
+                                    e11Var6.i(3).g = ((ViewGroup.MarginLayoutParams) layoutParams).topMargin;
+                                    e11Var6.i(5).g = ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin;
+                                } else {
+                                    e11Var6.N(3);
+                                    e11Var6.L(0);
+                                }
                             }
                             String str2 = layoutParams.G;
                             if (str2 == null || str2.length() == 0) {
-                                yt0Var6.W = 0.0f;
+                                e11Var6.W = 0.0f;
                             } else {
                                 int length = str2.length();
-                                int iIndexOf3 = str2.indexOf(44);
-                                if (iIndexOf3 <= 0 || iIndexOf3 >= length - 1) {
-                                    i7 = 0;
-                                    i8 = -1;
+                                int indexOf3 = str2.indexOf(44);
+                                if (indexOf3 <= 0 || indexOf3 >= length - 1) {
+                                    i19 = i17;
+                                    i20 = 0;
                                 } else {
-                                    String strSubstring = str2.substring(0, iIndexOf3);
-                                    i8 = strSubstring.equalsIgnoreCase("W") ? 0 : strSubstring.equalsIgnoreCase("H") ? 1 : -1;
-                                    i7 = iIndexOf3 + 1;
+                                    String substring = str2.substring(0, indexOf3);
+                                    i19 = substring.equalsIgnoreCase("W") ? 0 : substring.equalsIgnoreCase("H") ? 1 : i17;
+                                    i20 = indexOf3 + 1;
                                 }
-                                int iIndexOf4 = str2.indexOf(58);
-                                if (iIndexOf4 < 0 || iIndexOf4 >= length - 1) {
-                                    String strSubstring2 = str2.substring(i7);
-                                    if (strSubstring2.length() > 0) {
-                                        fAbs = Float.parseFloat(strSubstring2);
-                                    } else {
-                                        fAbs = 0.0f;
+                                int indexOf4 = str2.indexOf(58);
+                                if (indexOf4 < 0 || indexOf4 >= length - 1) {
+                                    String substring2 = str2.substring(i20);
+                                    if (substring2.length() > 0) {
+                                        parseFloat = Float.parseFloat(substring2);
                                     }
+                                    parseFloat = 0.0f;
                                 } else {
-                                    String strSubstring3 = str2.substring(i7, iIndexOf4);
-                                    String strSubstring4 = str2.substring(iIndexOf4 + 1);
-                                    if (strSubstring3.length() <= 0 || strSubstring4.length() <= 0) {
-                                        fAbs = 0.0f;
-                                    } else {
+                                    String substring3 = str2.substring(i20, indexOf4);
+                                    String substring4 = str2.substring(indexOf4 + 1);
+                                    if (substring3.length() > 0 && substring4.length() > 0) {
                                         try {
-                                            float f5 = Float.parseFloat(strSubstring3);
-                                            float f6 = Float.parseFloat(strSubstring4);
-                                            if (f5 <= 0.0f || f6 <= 0.0f) {
-                                                fAbs = 0.0f;
-                                            } else {
-                                                fAbs = i8 == 1 ? Math.abs(f6 / f5) : Math.abs(f5 / f6);
+                                            float parseFloat2 = Float.parseFloat(substring3);
+                                            float parseFloat3 = Float.parseFloat(substring4);
+                                            if (parseFloat2 > 0.0f && parseFloat3 > 0.0f) {
+                                                parseFloat = i19 == 1 ? Math.abs(parseFloat3 / parseFloat2) : Math.abs(parseFloat2 / parseFloat3);
                                             }
                                         } catch (NumberFormatException unused3) {
                                         }
                                     }
+                                    parseFloat = 0.0f;
                                 }
-                                if (fAbs > 0.0f) {
-                                    yt0Var6.W = fAbs;
-                                    yt0Var6.X = i8;
+                                if (parseFloat > 0.0f) {
+                                    e11Var6.W = parseFloat;
+                                    e11Var6.X = i19;
                                 }
                             }
-                            float f7 = layoutParams.H;
-                            float[] fArr = yt0Var6.k0;
-                            fArr[0] = f7;
+                            float f6 = layoutParams.H;
+                            float[] fArr = e11Var6.k0;
+                            fArr[0] = f6;
+                            i29 = 1;
                             fArr[1] = layoutParams.I;
-                            yt0Var6.i0 = layoutParams.J;
-                            yt0Var6.j0 = layoutParams.K;
-                            int i41 = layoutParams.Z;
-                            if (i41 >= 0 && i41 <= 3) {
-                                yt0Var6.q = i41;
+                            e11Var6.i0 = layoutParams.J;
+                            e11Var6.j0 = layoutParams.K;
+                            int i56 = layoutParams.Z;
+                            if (i56 >= 0 && i56 <= 3) {
+                                e11Var6.q = i56;
                             }
-                            int i42 = layoutParams.L;
-                            int i43 = layoutParams.N;
-                            int i44 = layoutParams.P;
-                            float f8 = layoutParams.R;
-                            yt0Var6.r = i42;
-                            yt0Var6.u = i43;
-                            if (i44 == Integer.MAX_VALUE) {
-                                i44 = 0;
+                            int i57 = layoutParams.L;
+                            int i58 = layoutParams.N;
+                            int i59 = layoutParams.P;
+                            float f7 = layoutParams.R;
+                            e11Var6.r = i57;
+                            e11Var6.u = i58;
+                            if (i59 == Integer.MAX_VALUE) {
+                                i59 = 0;
                             }
-                            yt0Var6.v = i44;
-                            yt0Var6.w = f8;
-                            if (f8 > 0.0f && f8 < 1.0f && i42 == 0) {
-                                yt0Var6.r = 2;
+                            e11Var6.v = i59;
+                            e11Var6.w = f7;
+                            if (f7 > 0.0f && f7 < 1.0f && i57 == 0) {
+                                e11Var6.r = 2;
                             }
-                            int i45 = layoutParams.M;
-                            int i46 = layoutParams.O;
-                            int i47 = layoutParams.Q;
-                            float f9 = layoutParams.S;
-                            yt0Var6.s = i45;
-                            yt0Var6.x = i46;
-                            if (i47 == Integer.MAX_VALUE) {
-                                i47 = 0;
+                            int i60 = layoutParams.M;
+                            int i61 = layoutParams.O;
+                            int i62 = layoutParams.Q;
+                            float f8 = layoutParams.S;
+                            e11Var6.s = i60;
+                            e11Var6.x = i61;
+                            if (i62 == Integer.MAX_VALUE) {
+                                i62 = 0;
                             }
-                            yt0Var6.y = i47;
-                            yt0Var6.z = f9;
-                            if (f9 > 0.0f && f9 < 1.0f && i45 == 0) {
-                                yt0Var6.s = 2;
+                            e11Var6.y = i62;
+                            e11Var6.z = f8;
+                            if (f8 <= 0.0f || f8 >= 1.0f || i60 != 0) {
+                                i18 = 2;
+                            } else {
+                                i18 = 2;
+                                e11Var6.s = 2;
                             }
                         }
+                        i39 = i3 + 1;
+                        i36 = i18;
+                        z = z2;
                     }
-                    i23 = i3 + 1;
+                    i3 = i39;
+                    z2 = z;
+                    i18 = i36;
+                    i39 = i3 + 1;
+                    i36 = i18;
                     z = z2;
                 }
             }
             if (z) {
-                zt0Var.r0.L(zt0Var);
+                f11Var.r0.F(f11Var);
             }
         }
-        zt0Var.w0.getClass();
-        constraintLayout.k(zt0Var, constraintLayout.b0, i, i2);
-        int iQ = zt0Var.q();
-        int iK = zt0Var.k();
-        boolean z5 = zt0Var.E0;
-        boolean z6 = zt0Var.F0;
-        b bVar = constraintLayout.h0;
-        int i48 = bVar.e;
-        int iResolveSizeAndState = View.resolveSizeAndState(iQ + bVar.d, i, 0);
-        int iResolveSizeAndState2 = View.resolveSizeAndState(iK + i48, i2, 0) & 16777215;
-        int iMin = Math.min(constraintLayout.V, iResolveSizeAndState & 16777215);
-        int iMin2 = Math.min(constraintLayout.W, iResolveSizeAndState2);
+        f11Var.w0.getClass();
+        constraintLayout.k(f11Var, constraintLayout.k0, i, i2);
+        int q = f11Var.q();
+        int k = f11Var.k();
+        boolean z5 = f11Var.E0;
+        boolean z6 = f11Var.F0;
+        b bVar = constraintLayout.q0;
+        int i63 = bVar.e;
+        int resolveSizeAndState = View.resolveSizeAndState(q + bVar.d, i, 0);
+        int resolveSizeAndState2 = View.resolveSizeAndState(k + i63, i2, 0) & 16777215;
+        int min = Math.min(constraintLayout.h0, resolveSizeAndState & 16777215);
+        int min2 = Math.min(constraintLayout.i0, resolveSizeAndState2);
         if (z5) {
-            iMin |= Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+            min |= Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
         }
         if (z6) {
-            iMin2 |= Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
+            min2 |= Http2Connection.OKHTTP_CLIENT_WINDOW_SIZE;
         }
-        constraintLayout.setMeasuredDimension(iMin, iMin2);
+        constraintLayout.setMeasuredDimension(min, min2);
     }
 
     @Override // android.view.ViewGroup
     public final void onViewAdded(View view) {
         super.onViewAdded(view);
-        yt0 yt0VarH = h(view);
-        if ((view instanceof Guideline) && !(yt0VarH instanceof td2)) {
+        e11 h = h(view);
+        if ((view instanceof Guideline) && !(h instanceof eq2)) {
             LayoutParams layoutParams = (LayoutParams) view.getLayoutParams();
-            td2 td2Var = new td2();
-            layoutParams.p0 = td2Var;
+            eq2 eq2Var = new eq2();
+            layoutParams.p0 = eq2Var;
             layoutParams.d0 = true;
-            td2Var.S(layoutParams.V);
+            eq2Var.S(layoutParams.V);
         }
         if (view instanceof ConstraintHelper) {
             ConstraintHelper constraintHelper = (ConstraintHelper) view;
             constraintHelper.i();
             ((LayoutParams) view.getLayoutParams()).e0 = true;
-            ArrayList arrayList = this.R;
+            ArrayList arrayList = this.d0;
             if (!arrayList.contains(constraintHelper)) {
                 arrayList.add(constraintHelper);
             }
         }
-        this.Q.put(view.getId(), view);
-        this.a0 = true;
+        this.c0.put(view.getId(), view);
+        this.j0 = true;
     }
 
     @Override // android.view.ViewGroup
     public void onViewRemoved(View view) {
         super.onViewRemoved(view);
-        this.Q.remove(view.getId());
-        yt0 yt0VarH = h(view);
-        this.S.q0.remove(yt0VarH);
-        yt0VarH.C();
-        this.R.remove(view);
-        this.a0 = true;
+        this.c0.remove(view.getId());
+        e11 h = h(view);
+        this.e0.q0.remove(h);
+        h.C();
+        this.d0.remove(view);
+        this.j0 = true;
     }
 
     @Override // android.view.View, android.view.ViewParent
     public final void requestLayout() {
-        this.a0 = true;
+        this.j0 = true;
         super.requestLayout();
     }
 
     public void setConstraintSet(d dVar) {
-        this.c0 = dVar;
+        this.l0 = dVar;
     }
 
     @Override // android.view.View
     public void setId(int i) {
         int id = getId();
-        SparseArray sparseArray = this.Q;
+        SparseArray sparseArray = this.c0;
         sparseArray.remove(id);
         super.setId(i);
         sparseArray.put(getId(), this);
     }
 
     public void setMaxHeight(int i) {
-        if (i == this.W) {
+        if (i == this.i0) {
             return;
         }
-        this.W = i;
+        this.i0 = i;
         requestLayout();
     }
 
     public void setMaxWidth(int i) {
-        if (i == this.V) {
+        if (i == this.h0) {
             return;
         }
-        this.V = i;
+        this.h0 = i;
         requestLayout();
     }
 
     public void setMinHeight(int i) {
-        if (i == this.U) {
+        if (i == this.g0) {
             return;
         }
-        this.U = i;
+        this.g0 = i;
         requestLayout();
     }
 
     public void setMinWidth(int i) {
-        if (i == this.T) {
+        if (i == this.f0) {
             return;
         }
-        this.T = i;
+        this.f0 = i;
         requestLayout();
     }
 
-    public void setOnConstraintsChanged(du0 du0Var) {
-        h71 h71Var = this.d0;
-        if (h71Var != null) {
-            h71Var.getClass();
+    public void setOnConstraintsChanged(j11 j11Var) {
+        hm0 hm0Var = this.m0;
+        if (hm0Var != null) {
+            hm0Var.getClass();
         }
     }
 
     public void setOptimizationLevel(int i) {
-        this.b0 = i;
-        zt0 zt0Var = this.S;
-        zt0Var.D0 = i;
-        hl3.q = zt0Var.W(512);
+        this.k0 = i;
+        f11 f11Var = this.e0;
+        f11Var.D0 = i;
+        l24.q = f11Var.W(512);
     }
 
     @Override // android.view.ViewGroup
@@ -8222,25 +1727,25 @@ public class ConstraintLayout extends ViewGroup {
 
     public ConstraintLayout(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.Q = new SparseArray();
-        this.R = new ArrayList(4);
-        this.S = new zt0();
-        this.T = 0;
-        this.U = 0;
-        this.V = Integer.MAX_VALUE;
-        this.W = Integer.MAX_VALUE;
-        this.a0 = true;
-        this.b0 = 257;
-        this.c0 = null;
-        this.d0 = null;
-        this.e0 = -1;
-        this.f0 = new HashMap();
-        this.g0 = new SparseArray();
-        this.h0 = new b(this, this);
+        this.c0 = new SparseArray();
+        this.d0 = new ArrayList(4);
+        this.e0 = new f11();
+        this.f0 = 0;
+        this.g0 = 0;
+        this.h0 = Integer.MAX_VALUE;
+        this.i0 = Integer.MAX_VALUE;
+        this.j0 = true;
+        this.k0 = 257;
+        this.l0 = null;
+        this.m0 = null;
+        this.n0 = -1;
+        this.o0 = new HashMap();
+        this.p0 = new SparseArray();
+        this.q0 = new b(this, this);
         i(attributeSet, i);
     }
 
-    /* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+    /* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
     public static class LayoutParams extends ViewGroup.MarginLayoutParams {
         public int A;
         public int B;
@@ -8299,7 +1804,7 @@ public class ConstraintLayout extends ViewGroup {
         public int o;
         public float o0;
         public int p;
-        public yt0 p0;
+        public e11 p0;
         public int q;
         public float r;
         public int s;
@@ -8377,280 +1882,324 @@ public class ConstraintLayout extends ViewGroup {
             this.j0 = Integer.MIN_VALUE;
             this.k0 = Integer.MIN_VALUE;
             this.l0 = 0.5f;
-            this.p0 = new yt0();
-            TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, bb5.ConstraintLayout_Layout);
-            int indexCount = typedArrayObtainStyledAttributes.getIndexCount();
+            this.p0 = new e11();
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, zu5.ConstraintLayout_Layout);
+            int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
-                int index = typedArrayObtainStyledAttributes.getIndex(i);
+                int index = obtainStyledAttributes.getIndex(i);
                 int i2 = a.a.get(index);
                 switch (i2) {
                     case 1:
-                        this.V = typedArrayObtainStyledAttributes.getInt(index, this.V);
+                        this.V = obtainStyledAttributes.getInt(index, this.V);
                         break;
                     case 2:
-                        int resourceId = typedArrayObtainStyledAttributes.getResourceId(index, this.p);
+                        int resourceId = obtainStyledAttributes.getResourceId(index, this.p);
                         this.p = resourceId;
                         if (resourceId == -1) {
-                            this.p = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.p = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 3:
-                        this.q = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.q);
+                        this.q = obtainStyledAttributes.getDimensionPixelSize(index, this.q);
                         break;
                     case 4:
-                        float f = typedArrayObtainStyledAttributes.getFloat(index, this.r) % 360.0f;
+                        float f = obtainStyledAttributes.getFloat(index, this.r) % 360.0f;
                         this.r = f;
                         if (f < 0.0f) {
                             this.r = (360.0f - f) % 360.0f;
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 5:
-                        this.a = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.a);
+                        this.a = obtainStyledAttributes.getDimensionPixelOffset(index, this.a);
                         break;
                     case 6:
-                        this.b = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.b);
+                        this.b = obtainStyledAttributes.getDimensionPixelOffset(index, this.b);
                         break;
                     case 7:
-                        this.c = typedArrayObtainStyledAttributes.getFloat(index, this.c);
+                        this.c = obtainStyledAttributes.getFloat(index, this.c);
                         break;
                     case 8:
-                        int resourceId2 = typedArrayObtainStyledAttributes.getResourceId(index, this.e);
+                        int resourceId2 = obtainStyledAttributes.getResourceId(index, this.e);
                         this.e = resourceId2;
                         if (resourceId2 == -1) {
-                            this.e = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.e = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 9:
-                        int resourceId3 = typedArrayObtainStyledAttributes.getResourceId(index, this.f);
+                        int resourceId3 = obtainStyledAttributes.getResourceId(index, this.f);
                         this.f = resourceId3;
                         if (resourceId3 == -1) {
-                            this.f = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.f = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 10:
-                        int resourceId4 = typedArrayObtainStyledAttributes.getResourceId(index, this.g);
+                        int resourceId4 = obtainStyledAttributes.getResourceId(index, this.g);
                         this.g = resourceId4;
                         if (resourceId4 == -1) {
-                            this.g = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.g = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 11:
-                        int resourceId5 = typedArrayObtainStyledAttributes.getResourceId(index, this.h);
+                        int resourceId5 = obtainStyledAttributes.getResourceId(index, this.h);
                         this.h = resourceId5;
                         if (resourceId5 == -1) {
-                            this.h = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.h = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case FileClientSessionCache.MAX_SIZE /* 12 */:
-                        int resourceId6 = typedArrayObtainStyledAttributes.getResourceId(index, this.i);
+                        int resourceId6 = obtainStyledAttributes.getResourceId(index, this.i);
                         this.i = resourceId6;
                         if (resourceId6 == -1) {
-                            this.i = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.i = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 13:
-                        int resourceId7 = typedArrayObtainStyledAttributes.getResourceId(index, this.j);
+                        int resourceId7 = obtainStyledAttributes.getResourceId(index, this.j);
                         this.j = resourceId7;
                         if (resourceId7 == -1) {
-                            this.j = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.j = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 14:
-                        int resourceId8 = typedArrayObtainStyledAttributes.getResourceId(index, this.k);
+                        int resourceId8 = obtainStyledAttributes.getResourceId(index, this.k);
                         this.k = resourceId8;
                         if (resourceId8 == -1) {
-                            this.k = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.k = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 15:
-                        int resourceId9 = typedArrayObtainStyledAttributes.getResourceId(index, this.l);
+                        int resourceId9 = obtainStyledAttributes.getResourceId(index, this.l);
                         this.l = resourceId9;
                         if (resourceId9 == -1) {
-                            this.l = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.l = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case WebSocketProtocol.B0_FLAG_RSV3 /* 16 */:
-                        int resourceId10 = typedArrayObtainStyledAttributes.getResourceId(index, this.m);
+                        int resourceId10 = obtainStyledAttributes.getResourceId(index, this.m);
                         this.m = resourceId10;
                         if (resourceId10 == -1) {
-                            this.m = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.m = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 17:
-                        int resourceId11 = typedArrayObtainStyledAttributes.getResourceId(index, this.s);
+                        int resourceId11 = obtainStyledAttributes.getResourceId(index, this.s);
                         this.s = resourceId11;
                         if (resourceId11 == -1) {
-                            this.s = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.s = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 18:
-                        int resourceId12 = typedArrayObtainStyledAttributes.getResourceId(index, this.t);
+                        int resourceId12 = obtainStyledAttributes.getResourceId(index, this.t);
                         this.t = resourceId12;
                         if (resourceId12 == -1) {
-                            this.t = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.t = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 19:
-                        int resourceId13 = typedArrayObtainStyledAttributes.getResourceId(index, this.u);
+                        int resourceId13 = obtainStyledAttributes.getResourceId(index, this.u);
                         this.u = resourceId13;
                         if (resourceId13 == -1) {
-                            this.u = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.u = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case 20:
-                        int resourceId14 = typedArrayObtainStyledAttributes.getResourceId(index, this.v);
+                        int resourceId14 = obtainStyledAttributes.getResourceId(index, this.v);
                         this.v = resourceId14;
                         if (resourceId14 == -1) {
-                            this.v = typedArrayObtainStyledAttributes.getInt(index, -1);
+                            this.v = obtainStyledAttributes.getInt(index, -1);
+                            break;
+                        } else {
+                            break;
                         }
-                        break;
                     case XRayConfig.OutboundBean.StreamSettingsBean.KcpSettingsBean.mtuMin /* 21 */:
-                        this.w = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.w);
+                        this.w = obtainStyledAttributes.getDimensionPixelSize(index, this.w);
                         break;
                     case 22:
-                        this.x = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.x);
+                        this.x = obtainStyledAttributes.getDimensionPixelSize(index, this.x);
                         break;
                     case 23:
-                        this.y = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.y);
+                        this.y = obtainStyledAttributes.getDimensionPixelSize(index, this.y);
                         break;
                     case 24:
-                        this.z = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.z);
+                        this.z = obtainStyledAttributes.getDimensionPixelSize(index, this.z);
                         break;
                     case 25:
-                        this.A = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.A);
+                        this.A = obtainStyledAttributes.getDimensionPixelSize(index, this.A);
                         break;
                     case 26:
-                        this.B = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.B);
+                        this.B = obtainStyledAttributes.getDimensionPixelSize(index, this.B);
                         break;
                     case 27:
-                        this.W = typedArrayObtainStyledAttributes.getBoolean(index, this.W);
+                        this.W = obtainStyledAttributes.getBoolean(index, this.W);
                         break;
                     case DnsRecordCodec.TYPE_AAAA /* 28 */:
-                        this.X = typedArrayObtainStyledAttributes.getBoolean(index, this.X);
+                        this.X = obtainStyledAttributes.getBoolean(index, this.X);
                         break;
                     case 29:
-                        this.E = typedArrayObtainStyledAttributes.getFloat(index, this.E);
+                        this.E = obtainStyledAttributes.getFloat(index, this.E);
                         break;
                     case XRayConfig.OutboundBean.StreamSettingsBean.QuicParamsBean.DEFAULT_MAX_IDLE_TIMEOUT /* 30 */:
-                        this.F = typedArrayObtainStyledAttributes.getFloat(index, this.F);
+                        this.F = obtainStyledAttributes.getFloat(index, this.F);
                         break;
                     case 31:
-                        this.L = typedArrayObtainStyledAttributes.getInt(index, 0);
+                        this.L = obtainStyledAttributes.getInt(index, 0);
                         break;
                     case 32:
-                        this.M = typedArrayObtainStyledAttributes.getInt(index, 0);
+                        this.M = obtainStyledAttributes.getInt(index, 0);
                         break;
                     case 33:
                         try {
-                            this.N = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.N);
+                            this.N = obtainStyledAttributes.getDimensionPixelSize(index, this.N);
+                            break;
                         } catch (Exception unused) {
-                            if (typedArrayObtainStyledAttributes.getInt(index, this.N) == -2) {
+                            if (obtainStyledAttributes.getInt(index, this.N) == -2) {
                                 this.N = -2;
+                                break;
+                            } else {
+                                break;
                             }
                         }
-                        break;
                     case 34:
                         try {
-                            this.P = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.P);
+                            this.P = obtainStyledAttributes.getDimensionPixelSize(index, this.P);
+                            break;
                         } catch (Exception unused2) {
-                            if (typedArrayObtainStyledAttributes.getInt(index, this.P) == -2) {
+                            if (obtainStyledAttributes.getInt(index, this.P) == -2) {
                                 this.P = -2;
+                                break;
+                            } else {
+                                break;
                             }
                         }
-                        break;
                     case 35:
-                        this.R = Math.max(0.0f, typedArrayObtainStyledAttributes.getFloat(index, this.R));
+                        this.R = Math.max(0.0f, obtainStyledAttributes.getFloat(index, this.R));
                         this.L = 2;
                         break;
                     case 36:
                         try {
-                            this.O = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.O);
+                            this.O = obtainStyledAttributes.getDimensionPixelSize(index, this.O);
+                            break;
                         } catch (Exception unused3) {
-                            if (typedArrayObtainStyledAttributes.getInt(index, this.O) == -2) {
+                            if (obtainStyledAttributes.getInt(index, this.O) == -2) {
                                 this.O = -2;
+                                break;
+                            } else {
+                                break;
                             }
                         }
-                        break;
                     case 37:
                         try {
-                            this.Q = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.Q);
+                            this.Q = obtainStyledAttributes.getDimensionPixelSize(index, this.Q);
+                            break;
                         } catch (Exception unused4) {
-                            if (typedArrayObtainStyledAttributes.getInt(index, this.Q) == -2) {
+                            if (obtainStyledAttributes.getInt(index, this.Q) == -2) {
                                 this.Q = -2;
+                                break;
+                            } else {
+                                break;
                             }
                         }
-                        break;
                     case 38:
-                        this.S = Math.max(0.0f, typedArrayObtainStyledAttributes.getFloat(index, this.S));
+                        this.S = Math.max(0.0f, obtainStyledAttributes.getFloat(index, this.S));
                         this.M = 2;
                         break;
                     default:
                         switch (i2) {
                             case 44:
-                                d.h(this, typedArrayObtainStyledAttributes.getString(index));
+                                d.h(this, obtainStyledAttributes.getString(index));
                                 break;
                             case 45:
-                                this.H = typedArrayObtainStyledAttributes.getFloat(index, this.H);
+                                this.H = obtainStyledAttributes.getFloat(index, this.H);
                                 break;
                             case 46:
-                                this.I = typedArrayObtainStyledAttributes.getFloat(index, this.I);
+                                this.I = obtainStyledAttributes.getFloat(index, this.I);
                                 break;
                             case ConscryptStatsLog.TLS_HANDSHAKE_REPORTED__CIPHER_SUITE__TLS_RSA_WITH_AES_128_CBC_SHA /* 47 */:
-                                this.J = typedArrayObtainStyledAttributes.getInt(index, 0);
+                                this.J = obtainStyledAttributes.getInt(index, 0);
                                 break;
                             case 48:
-                                this.K = typedArrayObtainStyledAttributes.getInt(index, 0);
+                                this.K = obtainStyledAttributes.getInt(index, 0);
                                 break;
                             case 49:
-                                this.T = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.T);
+                                this.T = obtainStyledAttributes.getDimensionPixelOffset(index, this.T);
                                 break;
                             case 50:
-                                this.U = typedArrayObtainStyledAttributes.getDimensionPixelOffset(index, this.U);
+                                this.U = obtainStyledAttributes.getDimensionPixelOffset(index, this.U);
                                 break;
                             case 51:
-                                this.Y = typedArrayObtainStyledAttributes.getString(index);
+                                this.Y = obtainStyledAttributes.getString(index);
                                 break;
                             case 52:
-                                int resourceId15 = typedArrayObtainStyledAttributes.getResourceId(index, this.n);
+                                int resourceId15 = obtainStyledAttributes.getResourceId(index, this.n);
                                 this.n = resourceId15;
                                 if (resourceId15 == -1) {
-                                    this.n = typedArrayObtainStyledAttributes.getInt(index, -1);
+                                    this.n = obtainStyledAttributes.getInt(index, -1);
+                                    break;
+                                } else {
+                                    break;
                                 }
-                                break;
                             case ConscryptStatsLog.TLS_HANDSHAKE_REPORTED__CIPHER_SUITE__TLS_RSA_WITH_AES_256_CBC_SHA /* 53 */:
-                                int resourceId16 = typedArrayObtainStyledAttributes.getResourceId(index, this.o);
+                                int resourceId16 = obtainStyledAttributes.getResourceId(index, this.o);
                                 this.o = resourceId16;
                                 if (resourceId16 == -1) {
-                                    this.o = typedArrayObtainStyledAttributes.getInt(index, -1);
+                                    this.o = obtainStyledAttributes.getInt(index, -1);
+                                    break;
+                                } else {
+                                    break;
                                 }
-                                break;
                             case 54:
-                                this.D = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.D);
+                                this.D = obtainStyledAttributes.getDimensionPixelSize(index, this.D);
                                 break;
                             case 55:
-                                this.C = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, this.C);
+                                this.C = obtainStyledAttributes.getDimensionPixelSize(index, this.C);
                                 break;
                             default:
                                 switch (i2) {
                                     case WebSocketProtocol.B0_FLAG_RSV1 /* 64 */:
-                                        d.g(this, typedArrayObtainStyledAttributes, index, 0);
+                                        d.g(this, obtainStyledAttributes, index, 0);
                                         break;
                                     case HpkeSuite.KEM_MLKEM_768 /* 65 */:
-                                        d.g(this, typedArrayObtainStyledAttributes, index, 1);
+                                        d.g(this, obtainStyledAttributes, index, 1);
                                         break;
                                     case HpkeSuite.KEM_MLKEM_1024 /* 66 */:
-                                        this.Z = typedArrayObtainStyledAttributes.getInt(index, this.Z);
+                                        this.Z = obtainStyledAttributes.getInt(index, this.Z);
                                         break;
                                     case 67:
-                                        this.d = typedArrayObtainStyledAttributes.getBoolean(index, this.d);
+                                        this.d = obtainStyledAttributes.getBoolean(index, this.d);
                                         break;
                                 }
-                                break;
                         }
-                        break;
                 }
             }
-            typedArrayObtainStyledAttributes.recycle();
+            obtainStyledAttributes.recycle();
             a();
         }
 
@@ -8692,23 +2241,23 @@ public class ConstraintLayout extends ViewGroup {
             this.d0 = true;
             this.a0 = true;
             this.b0 = true;
-            if (!(this.p0 instanceof td2)) {
-                this.p0 = new td2();
+            if (!(this.p0 instanceof eq2)) {
+                this.p0 = new eq2();
             }
-            ((td2) this.p0).S(this.V);
+            ((eq2) this.p0).S(this.V);
         }
 
-        /* JADX WARN: Code duplicated, block: B:16:0x004a  */
-        /* JADX WARN: Code duplicated, block: B:19:0x0051  */
-        /* JADX WARN: Code duplicated, block: B:22:0x0058  */
-        /* JADX WARN: Code duplicated, block: B:25:0x005e  */
-        /* JADX WARN: Code duplicated, block: B:28:0x0064  */
-        /* JADX WARN: Code duplicated, block: B:37:0x007a  */
-        /* JADX WARN: Code duplicated, block: B:38:0x0082 A[DONT_INVERT] */
-        /* JADX WARN: Code duplicated, block: B:39:0x0084  */
-        /* JADX WARN: Code duplicated, block: B:40:0x008b A[DONT_INVERT] */
-        /* JADX WARN: Code duplicated, block: B:41:0x008d  */
+        /* JADX WARN: Removed duplicated region for block: B:11:0x004a  */
+        /* JADX WARN: Removed duplicated region for block: B:14:0x0051  */
+        /* JADX WARN: Removed duplicated region for block: B:17:0x0058  */
+        /* JADX WARN: Removed duplicated region for block: B:20:0x005e  */
+        /* JADX WARN: Removed duplicated region for block: B:23:0x0064  */
+        /* JADX WARN: Removed duplicated region for block: B:32:0x007a  */
+        /* JADX WARN: Removed duplicated region for block: B:33:0x0082  */
         @Override // android.view.ViewGroup.MarginLayoutParams, android.view.ViewGroup.LayoutParams
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+        */
         public final void resolveLayoutDirection(int i) {
             int i2;
             int i3;
@@ -8741,80 +2290,61 @@ public class ConstraintLayout extends ViewGroup {
                     int i11 = this.t;
                     if (i11 != -1) {
                         this.i0 = i11;
-                    } else {
-                        i2 = this.u;
-                        if (i2 != -1) {
-                            this.g0 = i2;
-                            z = true;
-                        }
-                        i3 = this.v;
-                        if (i3 != -1) {
-                            this.f0 = i3;
-                            z = true;
-                        }
-                        i4 = this.A;
-                        if (i4 != Integer.MIN_VALUE) {
-                            this.k0 = i4;
-                        }
-                        i5 = this.B;
-                        if (i5 != Integer.MIN_VALUE) {
-                            this.j0 = i5;
-                        }
-                        if (z) {
-                            this.l0 = 1.0f - f;
-                        }
-                        if (this.d0 && this.V == 1 && this.d) {
-                            if (f2 != -1.0f) {
-                                this.o0 = 1.0f - f2;
-                                this.m0 = -1;
-                                this.n0 = -1;
-                            } else if (i8 != -1) {
-                                this.n0 = i8;
-                                this.m0 = -1;
-                                this.o0 = -1.0f;
-                            } else if (i9 != -1) {
-                                this.m0 = i9;
-                                this.n0 = -1;
-                                this.o0 = -1.0f;
-                            }
+                    }
+                    i2 = this.u;
+                    if (i2 != -1) {
+                        this.g0 = i2;
+                        z = true;
+                    }
+                    i3 = this.v;
+                    if (i3 != -1) {
+                        this.f0 = i3;
+                        z = true;
+                    }
+                    i4 = this.A;
+                    if (i4 != Integer.MIN_VALUE) {
+                        this.k0 = i4;
+                    }
+                    i5 = this.B;
+                    if (i5 != Integer.MIN_VALUE) {
+                        this.j0 = i5;
+                    }
+                    if (z) {
+                        this.l0 = 1.0f - f;
+                    }
+                    if (this.d0 && this.V == 1 && this.d) {
+                        if (f2 == -1.0f) {
+                            this.o0 = 1.0f - f2;
+                            this.m0 = -1;
+                            this.n0 = -1;
+                        } else if (i8 != -1) {
+                            this.n0 = i8;
+                            this.m0 = -1;
+                            this.o0 = -1.0f;
+                        } else if (i9 != -1) {
+                            this.m0 = i9;
+                            this.n0 = -1;
+                            this.o0 = -1.0f;
                         }
                     }
                 }
                 z = true;
                 i2 = this.u;
                 if (i2 != -1) {
-                    this.g0 = i2;
-                    z = true;
                 }
                 i3 = this.v;
                 if (i3 != -1) {
-                    this.f0 = i3;
-                    z = true;
                 }
                 i4 = this.A;
                 if (i4 != Integer.MIN_VALUE) {
-                    this.k0 = i4;
                 }
                 i5 = this.B;
                 if (i5 != Integer.MIN_VALUE) {
-                    this.j0 = i5;
                 }
                 if (z) {
-                    this.l0 = 1.0f - f;
                 }
                 if (this.d0) {
-                    if (f2 != -1.0f) {
-                        this.o0 = 1.0f - f2;
-                        this.m0 = -1;
-                        this.n0 = -1;
-                    } else if (i8 != -1) {
-                        this.n0 = i8;
-                        this.m0 = -1;
-                        this.o0 = -1.0f;
-                    } else if (i9 != -1) {
-                        this.m0 = i9;
-                        this.n0 = -1;
-                        this.o0 = -1.0f;
+                    if (f2 == -1.0f) {
                     }
                 }
             } else {
@@ -8944,7 +2474,7 @@ public class ConstraintLayout extends ViewGroup {
             this.j0 = Integer.MIN_VALUE;
             this.k0 = Integer.MIN_VALUE;
             this.l0 = 0.5f;
-            this.p0 = new yt0();
+            this.p0 = new e11();
             if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
                 ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
                 ((ViewGroup.MarginLayoutParams) this).leftMargin = marginLayoutParams.leftMargin;

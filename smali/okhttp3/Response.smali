@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Response;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -85,7 +85,7 @@
         "-deprecated_sentRequestAtMillis",
         "()J",
         "-deprecated_receivedResponseAtMillis",
-        "Lbh7;",
+        "Lr98;",
         "close",
         "()V",
         "toString",
@@ -264,21 +264,21 @@
 
 # virtual methods
 .method public final -deprecated_body()Lokhttp3/ResponseBody;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
+    iget-object p0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_cacheControl()Lokhttp3/CacheControl;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -287,119 +287,119 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_cacheResponse()Lokhttp3/Response;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->cacheResponse:Lokhttp3/Response;
+    iget-object p0, p0, Lokhttp3/Response;->cacheResponse:Lokhttp3/Response;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_code()I
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget v0, p0, Lokhttp3/Response;->code:I
+    iget p0, p0, Lokhttp3/Response;->code:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_handshake()Lokhttp3/Handshake;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->handshake:Lokhttp3/Handshake;
+    iget-object p0, p0, Lokhttp3/Response;->handshake:Lokhttp3/Handshake;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_headers()Lokhttp3/Headers;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_message()Ljava/lang/String;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->message:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Response;->message:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_networkResponse()Lokhttp3/Response;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->networkResponse:Lokhttp3/Response;
+    iget-object p0, p0, Lokhttp3/Response;->networkResponse:Lokhttp3/Response;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_priorResponse()Lokhttp3/Response;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->priorResponse:Lokhttp3/Response;
+    iget-object p0, p0, Lokhttp3/Response;->priorResponse:Lokhttp3/Response;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_protocol()Lokhttp3/Protocol;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->protocol:Lokhttp3/Protocol;
+    iget-object p0, p0, Lokhttp3/Response;->protocol:Lokhttp3/Protocol;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_receivedResponseAtMillis()J
     .locals 2
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -411,21 +411,21 @@
 .end method
 
 .method public final -deprecated_request()Lokhttp3/Request;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
+    iget-object p0, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_sentRequestAtMillis()J
     .locals 2
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -437,14 +437,14 @@
 .end method
 
 .method public final body()Lokhttp3/ResponseBody;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
+    iget-object p0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final cacheControl()Lokhttp3/CacheControl;
@@ -484,18 +484,18 @@
 .end method
 
 .method public final cacheResponse()Lokhttp3/Response;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->cacheResponse:Lokhttp3/Response;
+    iget-object p0, p0, Lokhttp3/Response;->cacheResponse:Lokhttp3/Response;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final challenges()Ljava/util/List;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -510,35 +510,35 @@
 
     .line 2
     .line 3
-    iget v1, p0, Lokhttp3/Response;->code:I
+    iget p0, p0, Lokhttp3/Response;->code:I
 
     .line 4
     .line 5
-    const/16 v2, 0x191
+    const/16 v1, 0x191
 
     .line 6
     .line 7
-    if-eq v1, v2, :cond_1
+    if-eq p0, v1, :cond_1
 
     .line 8
     .line 9
-    const/16 v2, 0x197
+    const/16 v1, 0x197
 
     .line 10
     .line 11
-    if-eq v1, v2, :cond_0
+    if-eq p0, v1, :cond_0
 
     .line 12
     .line 13
-    sget-object v0, Lwn1;->Q:Lwn1;
+    sget-object p0, Lfw1;->X:Lfw1;
 
     .line 14
     .line 15
-    return-object v0
+    return-object p0
 
     .line 16
     :cond_0
-    const-string v1, "Proxy-Authenticate"
+    const-string p0, "Proxy-Authenticate"
 
     .line 17
     .line 18
@@ -546,35 +546,35 @@
 
     .line 19
     :cond_1
-    const-string v1, "WWW-Authenticate"
+    const-string p0, "WWW-Authenticate"
 
     .line 20
     .line 21
     :goto_0
-    invoke-static {v0, v1}, Lokhttp3/internal/http/HttpHeaders;->parseChallenges(Lokhttp3/Headers;Ljava/lang/String;)Ljava/util/List;
+    invoke-static {v0, p0}, Lokhttp3/internal/http/HttpHeaders;->parseChallenges(Lokhttp3/Headers;Ljava/lang/String;)Ljava/util/List;
 
     .line 22
     .line 23
     .line 24
-    move-result-object v0
+    move-result-object p0
 
     .line 25
-    return-object v0
+    return-object p0
 .end method
 
 .method public close()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
+    iget-object p0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lokhttp3/ResponseBody;->close()V
+    invoke-virtual {p0}, Lokhttp3/ResponseBody;->close()V
 
     .line 6
     .line 7
@@ -583,11 +583,11 @@
 
     .line 9
     :cond_0
-    const-string v0, "response is not eligible for a body and must not be closed"
+    const-string p0, "response is not eligible for a body and must not be closed"
 
     .line 10
     .line 11
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -596,36 +596,36 @@
 .end method
 
 .method public final code()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/Response;->code:I
+    iget p0, p0, Lokhttp3/Response;->code:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final exchange()Lokhttp3/internal/connection/Exchange;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->exchange:Lokhttp3/internal/connection/Exchange;
+    iget-object p0, p0, Lokhttp3/Response;->exchange:Lokhttp3/internal/connection/Exchange;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final handshake()Lokhttp3/Handshake;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->handshake:Lokhttp3/Handshake;
+    iget-object p0, p0, Lokhttp3/Response;->handshake:Lokhttp3/Handshake;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final header(Ljava/lang/String;)Ljava/lang/String;
@@ -640,13 +640,13 @@
 
     invoke-static {p0, p1, v0, v1, v0}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final header(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -654,19 +654,19 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Lokhttp3/Headers;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lokhttp3/Headers;->get(Ljava/lang/String;)Ljava/lang/String;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    if-nez p1, :cond_0
+    if-nez p0, :cond_0
 
     .line 11
     .line 12
@@ -674,11 +674,11 @@
 
     .line 13
     :cond_0
-    return-object p1
+    return-object p0
 .end method
 
 .method public final headers(Ljava/lang/String;)Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -696,71 +696,71 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Lokhttp3/Headers;->values(Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {p0, p1}, Lokhttp3/Headers;->values(Ljava/lang/String;)Ljava/util/List;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public final headers()Lokhttp3/Headers;
-    .locals 1
+    .locals 0
 
     .line 11
-    iget-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final isRedirect()Z
-    .locals 2
+    .locals 1
 
     .line 1
-    iget v0, p0, Lokhttp3/Response;->code:I
+    iget p0, p0, Lokhttp3/Response;->code:I
 
     .line 2
     .line 3
-    const/16 v1, 0x133
+    const/16 v0, 0x133
 
     .line 4
     .line 5
-    if-eq v0, v1, :cond_0
+    if-eq p0, v0, :cond_0
 
     .line 6
     .line 7
-    const/16 v1, 0x134
+    const/16 v0, 0x134
 
     .line 8
     .line 9
-    if-eq v0, v1, :cond_0
+    if-eq p0, v0, :cond_0
 
     .line 10
     .line 11
-    packed-switch v0, :pswitch_data_0
+    packed-switch p0, :pswitch_data_0
 
     .line 12
     .line 13
     .line 14
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 15
-    return v0
+    return p0
 
     .line 16
     :cond_0
     :pswitch_0
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 17
-    return v0
+    return p0
 
     .line 18
     nop
@@ -776,62 +776,62 @@
 .end method
 
 .method public final isSuccessful()Z
-    .locals 3
+    .locals 2
 
     .line 1
-    iget v0, p0, Lokhttp3/Response;->code:I
+    iget p0, p0, Lokhttp3/Response;->code:I
 
     .line 2
     .line 3
-    const/16 v1, 0xc8
+    const/16 v0, 0xc8
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 6
-    if-gt v1, v0, :cond_0
+    if-gt v0, p0, :cond_0
 
     .line 7
     .line 8
-    const/16 v1, 0x12c
+    const/16 v0, 0x12c
 
     .line 9
     .line 10
-    if-ge v0, v1, :cond_0
+    if-ge p0, v0, :cond_0
 
     .line 11
     .line 12
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    return v2
+    return v1
 .end method
 
 .method public final message()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->message:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Response;->message:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final networkResponse()Lokhttp3/Response;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->networkResponse:Lokhttp3/Response;
+    iget-object p0, p0, Lokhttp3/Response;->networkResponse:Lokhttp3/Response;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final newBuilder()Lokhttp3/Response$Builder;
@@ -851,7 +851,7 @@
 .end method
 
 .method public final peekBody(J)Lokhttp3/ResponseBody;
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -868,7 +868,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {v0}, Lokhttp3/ResponseBody;->source()Ls50;
+    invoke-virtual {v0}, Lokhttp3/ResponseBody;->source()Lf80;
 
     .line 7
     .line 8
@@ -876,7 +876,7 @@
     move-result-object v0
 
     .line 10
-    invoke-interface {v0}, Ls50;->peek()Lhc5;
+    invoke-interface {v0}, Lf80;->peek()Liw5;
 
     .line 11
     .line 12
@@ -884,7 +884,7 @@
     move-result-object v0
 
     .line 14
-    new-instance v1, Lf50;
+    new-instance v1, Ll70;
 
     .line 15
     .line 16
@@ -893,16 +893,16 @@
     .line 17
     .line 18
     .line 19
-    invoke-virtual {v0, p1, p2}, Lhc5;->request(J)Z
+    invoke-virtual {v0, p1, p2}, Liw5;->request(J)Z
 
     .line 20
     .line 21
     .line 22
-    iget-object v2, v0, Lhc5;->R:Lf50;
+    iget-object v2, v0, Liw5;->Y:Ll70;
 
     .line 23
     .line 24
-    iget-wide v2, v2, Lf50;->R:J
+    iget-wide v2, v2, Ll70;->Y:J
 
     .line 25
     .line 26
@@ -919,15 +919,15 @@
 
     .line 31
     .line 32
-    cmp-long v4, p1, v2
+    cmp-long v2, p1, v2
 
     .line 33
     .line 34
-    if-lez v4, :cond_1
+    if-lez v2, :cond_1
 
     .line 35
     .line 36
-    invoke-virtual {v0, v1, p1, p2}, Lhc5;->read(Lf50;J)J
+    invoke-virtual {v0, v1, p1, p2}, Liw5;->read(Ll70;J)J
 
     .line 37
     .line 38
@@ -939,11 +939,11 @@
 
     .line 41
     .line 42
-    cmp-long v6, v2, v4
+    cmp-long v4, v2, v4
 
     .line 43
     .line 44
-    if-eqz v6, :cond_0
+    if-eqz v4, :cond_0
 
     .line 45
     .line 46
@@ -954,16 +954,16 @@
 
     .line 48
     :cond_0
-    new-instance p1, Ljava/io/EOFException;
+    new-instance p0, Ljava/io/EOFException;
 
     .line 49
     .line 50
-    invoke-direct {p1}, Ljava/io/EOFException;-><init>()V
+    invoke-direct {p0}, Ljava/io/EOFException;-><init>()V
 
     .line 51
     .line 52
     .line 53
-    throw p1
+    throw p0
 
     .line 54
     :cond_1
@@ -971,53 +971,53 @@
 
     .line 55
     .line 56
-    iget-object p2, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
+    iget-object p0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
     .line 57
     .line 58
-    invoke-virtual {p2}, Lokhttp3/ResponseBody;->contentType()Lokhttp3/MediaType;
+    invoke-virtual {p0}, Lokhttp3/ResponseBody;->contentType()Lokhttp3/MediaType;
 
     .line 59
     .line 60
     .line 61
-    move-result-object p2
+    move-result-object p0
 
     .line 62
-    iget-wide v2, v1, Lf50;->R:J
+    iget-wide v2, v1, Ll70;->Y:J
 
     .line 63
     .line 64
-    invoke-virtual {p1, v1, p2, v2, v3}, Lokhttp3/ResponseBody$Companion;->create(Ls50;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
+    invoke-virtual {p1, v1, p0, v2, v3}, Lokhttp3/ResponseBody$Companion;->create(Lf80;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
 
     .line 65
     .line 66
     .line 67
-    move-result-object p1
+    move-result-object p0
 
     .line 68
-    return-object p1
+    return-object p0
 .end method
 
 .method public final priorResponse()Lokhttp3/Response;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->priorResponse:Lokhttp3/Response;
+    iget-object p0, p0, Lokhttp3/Response;->priorResponse:Lokhttp3/Response;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final protocol()Lokhttp3/Protocol;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->protocol:Lokhttp3/Protocol;
+    iget-object p0, p0, Lokhttp3/Response;->protocol:Lokhttp3/Protocol;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final receivedResponseAtMillis()J
@@ -1032,14 +1032,14 @@
 .end method
 
 .method public final request()Lokhttp3/Request;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
+    iget-object p0, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final sentRequestAtMillis()J
@@ -1124,28 +1124,28 @@
     .line 36
     .line 37
     .line 38
-    iget-object v1, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
+    iget-object p0, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
 
     .line 39
     .line 40
-    invoke-virtual {v1}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
+    invoke-virtual {p0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
 
     .line 41
     .line 42
     .line 43
-    move-result-object v1
+    move-result-object p0
 
     .line 44
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 45
     .line 46
     .line 47
-    const/16 v1, 0x7d
+    const/16 p0, 0x7d
 
     .line 48
     .line 49
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 50
     .line 51
@@ -1155,14 +1155,14 @@
     .line 53
     .line 54
     .line 55
-    move-result-object v0
+    move-result-object p0
 
     .line 56
-    return-object v0
+    return-object p0
 .end method
 
 .method public final trailers()Lokhttp3/Headers;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1170,37 +1170,37 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response;->exchange:Lokhttp3/internal/connection/Exchange;
+    iget-object p0, p0, Lokhttp3/Response;->exchange:Lokhttp3/internal/connection/Exchange;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lokhttp3/internal/connection/Exchange;->trailers()Lokhttp3/Headers;
+    invoke-virtual {p0}, Lokhttp3/internal/connection/Exchange;->trailers()Lokhttp3/Headers;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const-string v0, "trailers not available"
+    const-string p0, "trailers not available"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return-object v0
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/PeerInfoProvider$2;
 .super Lorg/conscrypt/PeerInfoProvider;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -44,34 +44,34 @@
 
 # virtual methods
 .method public getHostname()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/PeerInfoProvider$2;->val$host:Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/PeerInfoProvider$2;->val$host:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getHostnameOrIP()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/PeerInfoProvider$2;->val$host:Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/PeerInfoProvider$2;->val$host:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPort()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/PeerInfoProvider$2;->val$port:I
+    iget p0, p0, Lorg/conscrypt/PeerInfoProvider$2;->val$port:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

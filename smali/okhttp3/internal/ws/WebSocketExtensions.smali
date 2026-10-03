@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/ws/WebSocketExtensions;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -88,7 +88,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/ws/WebSocketExtensions$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/ws/WebSocketExtensions$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -103,7 +103,7 @@
 .method public constructor <init>()V
     .locals 9
 
-    .line 53
+    .line 44
     const/16 v7, 0x3f
 
     const/4 v8, 0x0
@@ -122,7 +122,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v8}, Lokhttp3/internal/ws/WebSocketExtensions;-><init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZILj31;)V
+    invoke-direct/range {v0 .. v8}, Lokhttp3/internal/ws/WebSocketExtensions;-><init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZILib1;)V
 
     return-void
 .end method
@@ -130,31 +130,31 @@
 .method public constructor <init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZ)V
     .locals 0
 
-    .line 46
+    .line 37
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 47
+    .line 38
     iput-boolean p1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->perMessageDeflate:Z
 
-    .line 48
+    .line 39
     iput-object p2, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientMaxWindowBits:Ljava/lang/Integer;
 
-    .line 49
+    .line 40
     iput-boolean p3, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientNoContextTakeover:Z
 
-    .line 50
+    .line 41
     iput-object p4, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverMaxWindowBits:Ljava/lang/Integer;
 
-    .line 51
+    .line 42
     iput-boolean p5, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverNoContextTakeover:Z
 
-    .line 52
+    .line 43
     iput-boolean p6, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZILj31;)V
+.method public synthetic constructor <init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZILib1;)V
     .locals 2
 
     .line 1
@@ -169,7 +169,7 @@
 
     .line 5
     .line 6
-    const/4 p1, 0x0
+    move p1, v0
 
     .line 7
     :cond_0
@@ -196,7 +196,7 @@
 
     .line 16
     .line 17
-    const/4 p3, 0x0
+    move p3, v0
 
     .line 18
     :cond_2
@@ -220,7 +220,7 @@
 
     .line 26
     .line 27
-    const/4 p5, 0x0
+    move p5, v0
 
     .line 28
     :cond_4
@@ -232,44 +232,15 @@
 
     .line 31
     .line 32
-    const/4 p7, 0x0
+    move p6, v0
 
     .line 33
-    :goto_0
-    move p6, p5
+    :cond_5
+    invoke-direct/range {p0 .. p6}, Lokhttp3/internal/ws/WebSocketExtensions;-><init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZ)V
 
     .line 34
-    move-object p5, p4
-
     .line 35
-    move p4, p3
-
     .line 36
-    move-object p3, p2
-
-    .line 37
-    move p2, p1
-
-    .line 38
-    move-object p1, p0
-
-    .line 39
-    goto :goto_1
-
-    .line 40
-    :cond_5
-    move p7, p6
-
-    .line 41
-    goto :goto_0
-
-    .line 42
-    :goto_1
-    invoke-direct/range {p1 .. p7}, Lokhttp3/internal/ws/WebSocketExtensions;-><init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZ)V
-
-    .line 43
-    .line 44
-    .line 45
     return-void
 .end method
 
@@ -390,103 +361,85 @@
 
 # virtual methods
 .method public final component1()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->perMessageDeflate:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->perMessageDeflate:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final component2()Ljava/lang/Integer;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientMaxWindowBits:Ljava/lang/Integer;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientMaxWindowBits:Ljava/lang/Integer;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final component3()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientNoContextTakeover:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientNoContextTakeover:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final component4()Ljava/lang/Integer;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverMaxWindowBits:Ljava/lang/Integer;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverMaxWindowBits:Ljava/lang/Integer;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final component5()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverNoContextTakeover:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverNoContextTakeover:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final component6()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final copy(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZ)Lokhttp3/internal/ws/WebSocketExtensions;
-    .locals 7
+    .locals 0
 
     .line 1
-    new-instance v0, Lokhttp3/internal/ws/WebSocketExtensions;
+    new-instance p0, Lokhttp3/internal/ws/WebSocketExtensions;
 
     .line 2
     .line 3
-    move v1, p1
+    invoke-direct/range {p0 .. p6}, Lokhttp3/internal/ws/WebSocketExtensions;-><init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZ)V
 
     .line 4
-    move-object v2, p2
-
     .line 5
-    move v3, p3
-
     .line 6
-    move-object v4, p4
-
-    .line 7
-    move v5, p5
-
-    .line 8
-    move v6, p6
-
-    .line 9
-    invoke-direct/range {v0 .. v6}, Lokhttp3/internal/ws/WebSocketExtensions;-><init>(ZLjava/lang/Integer;ZLjava/lang/Integer;ZZ)V
-
-    .line 10
-    .line 11
-    .line 12
-    return-object v0
+    return-object p0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -547,7 +500,7 @@
 
     .line 23
     .line 24
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
@@ -587,7 +540,7 @@
 
     .line 41
     .line 42
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 43
     .line 44
@@ -619,7 +572,7 @@
 
     .line 56
     :cond_6
-    iget-boolean v1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
 
     .line 57
     .line 58
@@ -627,7 +580,7 @@
 
     .line 59
     .line 60
-    if-eq v1, p1, :cond_7
+    if-eq p0, p1, :cond_7
 
     .line 61
     .line 62
@@ -653,7 +606,7 @@
 
     .line 5
     .line 6
-    const/4 v0, 0x1
+    move v0, v1
 
     .line 7
     :cond_0
@@ -672,7 +625,7 @@
 
     .line 13
     .line 14
-    const/4 v2, 0x0
+    move v2, v3
 
     .line 15
     goto :goto_0
@@ -703,7 +656,7 @@
 
     .line 26
     .line 27
-    const/4 v2, 0x1
+    move v2, v1
 
     .line 28
     :cond_2
@@ -750,7 +703,7 @@
 
     .line 46
     .line 47
-    const/4 v2, 0x1
+    move v2, v1
 
     .line 48
     :cond_4
@@ -761,11 +714,11 @@
 
     .line 50
     .line 51
-    iget-boolean v2, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
 
     .line 52
     .line 53
-    if-eqz v2, :cond_5
+    if-eqz p0, :cond_5
 
     .line 54
     .line 55
@@ -773,7 +726,7 @@
 
     .line 56
     :cond_5
-    move v1, v2
+    move v1, p0
 
     .line 57
     :goto_2
@@ -791,23 +744,23 @@
 
     .line 2
     .line 3
-    iget-boolean p1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientNoContextTakeover:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->clientNoContextTakeover:Z
 
     .line 4
     .line 5
-    return p1
+    return p0
 
     .line 6
     :cond_0
-    iget-boolean p1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverNoContextTakeover:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->serverNoContextTakeover:Z
 
     .line 7
     .line 8
-    return p1
+    return p0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -913,21 +866,21 @@
     .line 56
     .line 57
     .line 58
-    iget-boolean v1, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketExtensions;->unknownValues:Z
 
     .line 59
     .line 60
-    const/16 v2, 0x29
+    const/16 v1, 0x29
 
     .line 61
     .line 62
-    invoke-static {v0, v1, v2}, Lp27;->o(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, p0, v1}, Leb7;->m(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 63
     .line 64
     .line 65
-    move-result-object v0
+    move-result-object p0
 
     .line 66
-    return-object v0
+    return-object p0
 .end method

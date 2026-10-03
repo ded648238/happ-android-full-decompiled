@@ -1,45 +1,22 @@
 package defpackage;
 
-import java.util.Arrays;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class fo1 extends d31 {
+    public /* synthetic */ Object c0;
+    public final /* synthetic */ go1 d0;
+    public int e0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class fo1 {
-    public final jo1 a;
-    public final byte[] b;
-
-    public fo1(jo1 jo1Var, byte[] bArr) {
-        if (jo1Var == null) {
-            en0.g("encoding is null");
-            throw null;
-        }
-        if (bArr == null) {
-            en0.g("bytes is null");
-            throw null;
-        }
-        this.a = jo1Var;
-        this.b = bArr;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public fo1(go1 go1Var, d31 d31Var) {
+        super(d31Var);
+        this.d0 = go1Var;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof fo1)) {
-            return false;
-        }
-        fo1 fo1Var = (fo1) obj;
-        if (this.a.equals(fo1Var.a)) {
-            return Arrays.equals(this.b, fo1Var.b);
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        return ((this.a.hashCode() ^ 1000003) * 1000003) ^ Arrays.hashCode(this.b);
-    }
-
-    public final String toString() {
-        return "EncodedPayload{encoding=" + this.a + ", bytes=[...]}";
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.e0 |= Integer.MIN_VALUE;
+        return this.d0.f(null, null, this);
     }
 }

@@ -1,103 +1,136 @@
-.class public final Lfl6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public Lfl6;
+.super Lb1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/lang/CharSequence;
+.implements Lk41;
 
 
 # instance fields
-.field public Q:[C
+.field public final e0:Lb31;
 
-.field public R:Ljava/lang/String;
+
+# direct methods
+.method public constructor <init>(Lb31;Lz31;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-direct {p0, p2, v0}, Lb1;-><init>(Lz31;Z)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput-object p1, p0, Lfl6;->e0:Lb31;
+
+    .line 6
+    .line 7
+    return-void
+.end method
 
 
 # virtual methods
-.method public final charAt(I)C
+.method public final V()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x1
+
+    .line 2
+    return p0
+.end method
+
+.method public final c()Lk41;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lfl6;->Q:[C
+    iget-object p0, p0, Lfl6;->e0:Lb31;
 
     .line 2
     .line 3
-    aget-char p1, v0, p1
+    instance-of v0, p0, Lk41;
 
     .line 4
     .line 5
-    return p1
-.end method
-
-.method public final length()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lfl6;->Q:[C
-
-    .line 2
-    .line 3
-    array-length v0, v0
-
-    .line 4
-    return v0
-.end method
-
-.method public final subSequence(II)Ljava/lang/CharSequence;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/String;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lfl6;->Q:[C
-
-    .line 4
-    .line 5
-    sub-int/2addr p2, p1
-
-    .line 6
-    invoke-direct {v0, v1, p1, p2}, Ljava/lang/String;-><init>([CII)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lfl6;->R:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    new-instance v0, Ljava/lang/String;
+    if-eqz v0, :cond_0
 
     .line 6
     .line 7
-    iget-object v1, p0, Lfl6;->Q:[C
+    check-cast p0, Lk41;
 
     .line 8
     .line 9
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>([C)V
+    return-object p0
 
     .line 10
-    .line 11
-    .line 12
-    iput-object v0, p0, Lfl6;->R:Ljava/lang/String;
+    :cond_0
+    const/4 p0, 0x0
 
+    .line 11
+    return-object p0
+.end method
+
+.method public d(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lfl6;->e0:Lb31;
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Lh71;->C(Lb31;)Lb31;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-static {p1}, Ll93;->N(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-static {p0, p1}, Lem1;->a(Lb31;Ljava/lang/Object;)V
+
+    .line 12
     .line 13
     .line 14
-    :cond_0
-    iget-object v0, p0, Lfl6;->R:Ljava/lang/String;
+    return-void
+.end method
 
-    .line 15
-    .line 16
-    return-object v0
+.method public e(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lfl6;->e0:Lb31;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Ll93;->N(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-interface {p0, p1}, Lb31;->f(Ljava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public t0()V
+    .locals 0
+
+    .line 1
+    return-void
 .end method

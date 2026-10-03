@@ -1,19 +1,19 @@
-.class public final Leh;
+.class public final synthetic Leh;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lr04;
+.implements Ljava/util/concurrent/ThreadFactory;
 
 
 # instance fields
-.field public final a:Lvh;
+.field public final synthetic a:I
 
-.field public b:Z
+.field public final synthetic b:Lfh;
 
 
 # direct methods
-.method public constructor <init>(Lvh;)V
+.method public synthetic constructor <init>(ILfh;)V
     .locals 0
 
     .line 1
@@ -22,674 +22,93 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Leh;->a:Lvh;
+    iput p1, p0, Leh;->a:I
 
     .line 5
     .line 6
+    iput-object p2, p0, Leh;->b:Lfh;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Lt04;Ljava/util/List;J)Ls04;
-    .locals 7
+.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    .locals 3
 
     .line 1
-    new-instance v0, Ljava/util/ArrayList;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    invoke-interface {p2}, Ljava/util/List;->size()I
+    :goto_0
+    iget v1, p0, Leh;->a:I
 
+    .line 3
     .line 4
+    const/16 v2, 0xa
+
     .line 5
     .line 6
-    move-result v1
+    if-ge v0, v2, :cond_1
 
     .line 7
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
-
     .line 8
+    sget-object v2, Lgh;->a:[I
+
     .line 9
     .line 10
-    invoke-interface {p2}, Ljava/util/Collection;->size()I
+    aget v2, v2, v0
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    if-lt v1, v2, :cond_0
 
+    .line 13
     .line 14
-    const/4 v2, 0x0
+    add-int/lit8 v2, v0, 0x1
 
     .line 15
-    const/4 v3, 0x0
-
     .line 16
-    const/4 v4, 0x0
-
-    .line 17
-    :goto_0
-    if-ge v2, v1, :cond_0
-
-    .line 18
-    .line 19
-    invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v5
-
-    .line 23
-    check-cast v5, Lm04;
-
-    .line 24
-    .line 25
-    invoke-interface {v5, p3, p4}, Lm04;->n(J)Lbv4;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v5
-
-    .line 29
-    iget v6, v5, Lbv4;->Q:I
-
-    .line 30
-    .line 31
-    invoke-static {v3, v6}, Ljava/lang/Math;->max(II)I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v3
-
-    .line 35
-    iget v6, v5, Lbv4;->R:I
-
-    .line 36
-    .line 37
-    invoke-static {v4, v6}, Ljava/lang/Math;->max(II)I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v4
-
-    .line 41
-    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 42
-    .line 43
-    .line 44
-    add-int/lit8 v2, v2, 0x1
-
-    .line 45
-    .line 46
-    goto :goto_0
-
-    .line 47
-    :cond_0
-    invoke-interface {p1}, Llt2;->P()Z
-
-    .line 48
-    .line 49
-    .line 50
-    move-result p2
-
-    .line 51
-    const-wide p3, 0xffffffffL
-
-    .line 52
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    const/16 v1, 0x20
-
-    .line 57
-    .line 58
-    iget-object v2, p0, Leh;->a:Lvh;
-
-    .line 59
-    .line 60
-    if-eqz p2, :cond_1
-
-    .line 61
-    .line 62
-    const/4 p2, 0x1
-
-    .line 63
-    iput-boolean p2, p0, Leh;->b:Z
-
-    .line 64
-    .line 65
-    iget-object p2, v2, Lvh;->a:Lto4;
-
-    .line 66
-    .line 67
-    int-to-long v5, v3
-
-    .line 68
-    shl-long v1, v5, v1
-
-    .line 69
-    .line 70
-    int-to-long v5, v4
-
-    .line 71
-    and-long/2addr p3, v5
-
-    .line 72
-    or-long/2addr p3, v1
-
-    .line 73
-    new-instance v1, Lms2;
-
-    .line 74
-    .line 75
-    invoke-direct {v1, p3, p4}, Lms2;-><init>(J)V
-
-    .line 76
-    .line 77
-    .line 78
-    invoke-virtual {p2, v1}, Lto4;->setValue(Ljava/lang/Object;)V
-
-    .line 79
-    .line 80
-    .line 81
     goto :goto_1
 
-    .line 82
+    .line 17
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
     :cond_1
-    iget-boolean p2, p0, Leh;->b:Z
-
-    .line 83
-    .line 84
-    if-nez p2, :cond_2
-
-    .line 85
-    .line 86
-    iget-object p2, v2, Lvh;->a:Lto4;
-
-    .line 87
-    .line 88
-    int-to-long v5, v3
-
-    .line 89
-    shl-long v1, v5, v1
-
-    .line 90
-    .line 91
-    int-to-long v5, v4
-
-    .line 92
-    and-long/2addr p3, v5
-
-    .line 93
-    or-long/2addr p3, v1
-
-    .line 94
-    new-instance v1, Lms2;
-
-    .line 95
-    .line 96
-    invoke-direct {v1, p3, p4}, Lms2;-><init>(J)V
-
-    .line 97
-    .line 98
-    .line 99
-    invoke-virtual {p2, v1}, Lto4;->setValue(Ljava/lang/Object;)V
-
-    .line 100
-    .line 101
-    .line 102
-    :cond_2
     :goto_1
-    new-instance p2, Lvc;
+    new-instance v0, Ldh;
 
-    .line 103
-    .line 104
-    const/4 p3, 0x2
-
-    .line 105
-    invoke-direct {p2, p3, v0}, Lvc;-><init>(ILjava/util/ArrayList;)V
-
-    .line 106
-    .line 107
-    .line 108
-    sget-object p3, Lxn1;->Q:Lxn1;
-
-    .line 109
-    .line 110
-    invoke-interface {p1, v3, v4, p3, p2}, Lt04;->S(IILjava/util/Map;Lj72;)Ls04;
-
-    .line 111
-    .line 112
-    .line 113
-    move-result-object p1
-
-    .line 114
-    return-object p1
-.end method
-
-.method public final e(Landroidx/compose/ui/node/NodeCoordinator;Ljava/util/List;I)I
-    .locals 3
-
-    .line 1
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    return v0
-
-    .line 9
-    :cond_0
-    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p1
-
-    .line 13
-    check-cast p1, Lm04;
-
-    .line 14
-    .line 15
-    invoke-interface {p1, p3}, Lm04;->j(I)I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
-    .line 20
     .line 21
     .line 22
-    move-result v0
+    invoke-direct {v0, v1, p1}, Ldh;-><init>(ILjava/lang/Runnable;)V
 
     .line 23
-    const/4 v1, 0x1
-
     .line 24
-    sub-int/2addr v0, v1
-
     .line 25
-    if-gt v1, v0, :cond_2
+    iget-object p0, p0, Leh;->b:Lfh;
 
     .line 26
     .line 27
-    :goto_0
-    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lfh;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
 
     .line 28
     .line 29
     .line 30
-    move-result-object v2
+    move-result-object p0
 
     .line 31
-    check-cast v2, Lm04;
+    invoke-virtual {p0, v2}, Ljava/lang/Thread;->setPriority(I)V
 
     .line 32
     .line 33
-    invoke-interface {v2, p3}, Lm04;->j(I)I
-
     .line 34
-    .line 35
-    .line 36
-    move-result v2
-
-    .line 37
-    if-le v2, p1, :cond_1
-
-    .line 38
-    .line 39
-    move p1, v2
-
-    .line 40
-    :cond_1
-    if-eq v1, v0, :cond_2
-
-    .line 41
-    .line 42
-    add-int/lit8 v1, v1, 0x1
-
-    .line 43
-    .line 44
-    goto :goto_0
-
-    .line 45
-    :cond_2
-    return p1
-.end method
-
-.method public final f(Landroidx/compose/ui/node/NodeCoordinator;Ljava/util/List;I)I
-    .locals 3
-
-    .line 1
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    return v0
-
-    .line 9
-    :cond_0
-    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p1
-
-    .line 13
-    check-cast p1, Lm04;
-
-    .line 14
-    .line 15
-    invoke-interface {p1, p3}, Lm04;->I(I)I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    const/4 v1, 0x1
-
-    .line 24
-    sub-int/2addr v0, v1
-
-    .line 25
-    if-gt v1, v0, :cond_2
-
-    .line 26
-    .line 27
-    :goto_0
-    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v2
-
-    .line 31
-    check-cast v2, Lm04;
-
-    .line 32
-    .line 33
-    invoke-interface {v2, p3}, Lm04;->I(I)I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v2
-
-    .line 37
-    if-le v2, p1, :cond_1
-
-    .line 38
-    .line 39
-    move p1, v2
-
-    .line 40
-    :cond_1
-    if-eq v1, v0, :cond_2
-
-    .line 41
-    .line 42
-    add-int/lit8 v1, v1, 0x1
-
-    .line 43
-    .line 44
-    goto :goto_0
-
-    .line 45
-    :cond_2
-    return p1
-.end method
-
-.method public final g(Landroidx/compose/ui/node/NodeCoordinator;Ljava/util/List;I)I
-    .locals 3
-
-    .line 1
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    return v0
-
-    .line 9
-    :cond_0
-    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p1
-
-    .line 13
-    check-cast p1, Lm04;
-
-    .line 14
-    .line 15
-    invoke-interface {p1, p3}, Lm04;->k(I)I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    const/4 v1, 0x1
-
-    .line 24
-    sub-int/2addr v0, v1
-
-    .line 25
-    if-gt v1, v0, :cond_2
-
-    .line 26
-    .line 27
-    :goto_0
-    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v2
-
-    .line 31
-    check-cast v2, Lm04;
-
-    .line 32
-    .line 33
-    invoke-interface {v2, p3}, Lm04;->k(I)I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v2
-
-    .line 37
-    if-le v2, p1, :cond_1
-
-    .line 38
-    .line 39
-    move p1, v2
-
-    .line 40
-    :cond_1
-    if-eq v1, v0, :cond_2
-
-    .line 41
-    .line 42
-    add-int/lit8 v1, v1, 0x1
-
-    .line 43
-    .line 44
-    goto :goto_0
-
-    .line 45
-    :cond_2
-    return p1
-.end method
-
-.method public final j(Landroidx/compose/ui/node/NodeCoordinator;Ljava/util/List;I)I
-    .locals 3
-
-    .line 1
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    return v0
-
-    .line 9
-    :cond_0
-    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p1
-
-    .line 13
-    check-cast p1, Lm04;
-
-    .line 14
-    .line 15
-    invoke-interface {p1, p3}, Lm04;->a(I)I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    const/4 v1, 0x1
-
-    .line 24
-    sub-int/2addr v0, v1
-
-    .line 25
-    if-gt v1, v0, :cond_2
-
-    .line 26
-    .line 27
-    :goto_0
-    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v2
-
-    .line 31
-    check-cast v2, Lm04;
-
-    .line 32
-    .line 33
-    invoke-interface {v2, p3}, Lm04;->a(I)I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v2
-
-    .line 37
-    if-le v2, p1, :cond_1
-
-    .line 38
-    .line 39
-    move p1, v2
-
-    .line 40
-    :cond_1
-    if-eq v1, v0, :cond_2
-
-    .line 41
-    .line 42
-    add-int/lit8 v1, v1, 0x1
-
-    .line 43
-    .line 44
-    goto :goto_0
-
-    .line 45
-    :cond_2
-    return p1
+    return-object p0
 .end method

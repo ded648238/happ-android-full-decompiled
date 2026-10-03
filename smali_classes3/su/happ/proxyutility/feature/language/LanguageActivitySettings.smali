@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;
 .super Lsu/happ/proxyutility/ui/BaseActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,19 +26,19 @@
 
 
 # static fields
-.field public static final synthetic H0:I
+.field public static final synthetic S0:I
 
 
 # instance fields
-.field public C0:Lrv7;
+.field public N0:Lpq;
 
-.field public final D0:Ll5;
+.field public final O0:Lv5;
 
-.field public final E0:Lzu6;
+.field public final P0:Lmm7;
 
-.field public final F0:Lzu6;
+.field public final Q0:Lmm7;
 
-.field public final G0:Lzu6;
+.field public final R0:Lmm7;
 
 
 # direct methods
@@ -51,31 +51,31 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lfe3;
+    new-instance v0, Lsu3;
 
     .line 5
     .line 6
     const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v0, p0, v1}, Lfe3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
+    invoke-direct {v0, p0, v1}, Lsu3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v2, Ll5;
+    new-instance v2, Lv5;
 
     .line 11
     .line 12
-    const-class v3, Lme3;
+    const-class v3, Lzu3;
 
     .line 13
     .line 14
-    sget-object v4, Lhg5;->a:Lig5;
+    sget-object v4, Lp06;->a:Lq06;
 
     .line 15
     .line 16
-    invoke-virtual {v4, v3}, Lig5;->b(Ljava/lang/Class;)Lx63;
+    invoke-virtual {v4, v3}, Lq06;->b(Ljava/lang/Class;)Lgn3;
 
     .line 17
     .line 18
@@ -83,116 +83,115 @@
     move-result-object v3
 
     .line 20
-    new-instance v4, Lfe3;
+    new-instance v4, Lsu3;
 
     .line 21
     .line 22
     const/4 v5, 0x1
 
     .line 23
-    invoke-direct {v4, p0, v5}, Lfe3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
+    invoke-direct {v4, p0, v5}, Lsu3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
 
     .line 24
     .line 25
     .line 26
-    new-instance v6, Lfe3;
+    new-instance v6, Lsu3;
 
     .line 27
     .line 28
     const/4 v7, 0x2
 
     .line 29
-    invoke-direct {v6, p0, v7}, Lfe3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
+    invoke-direct {v6, p0, v7}, Lsu3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
 
     .line 30
     .line 31
     .line 32
-    invoke-direct {v2, v3, v4, v0, v6}, Ll5;-><init>(Lx63;Lg72;Lg72;Lg72;)V
+    invoke-direct {v2, v3, v4, v0, v6}, Lv5;-><init>(Lgn3;Lji2;Lji2;Lji2;)V
 
     .line 33
     .line 34
     .line 35
-    iput-object v2, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->D0:Ll5;
+    iput-object v2, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->O0:Lv5;
 
     .line 36
     .line 37
-    new-instance v0, Lan2;
+    new-instance v0, Lig3;
 
     .line 38
     .line 39
-    const/16 v2, 0xe
+    const/4 v2, 0x3
 
     .line 40
-    .line 41
-    invoke-direct {v0, v2}, Lan2;-><init>(I)V
+    invoke-direct {v0, v2}, Lig3;-><init>(I)V
 
+    .line 41
     .line 42
     .line 43
+    new-instance v2, Lmm7;
+
     .line 44
-    new-instance v2, Lzu6;
-
     .line 45
-    .line 46
-    invoke-direct {v2, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v2, v0}, Lmm7;-><init>(Lji2;)V
 
+    .line 46
     .line 47
     .line 48
+    iput-object v2, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->P0:Lmm7;
+
     .line 49
-    iput-object v2, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->E0:Lzu6;
-
     .line 50
+    new-instance v0, Lqu3;
+
     .line 51
-    new-instance v0, Lde3;
-
     .line 52
-    .line 53
-    invoke-direct {v0, p0, v1}, Lde3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
+    invoke-direct {v0, p0, v1}, Lqu3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
 
+    .line 53
     .line 54
     .line 55
+    new-instance v1, Lmm7;
+
     .line 56
-    new-instance v1, Lzu6;
-
     .line 57
-    .line 58
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
+    .line 58
     .line 59
     .line 60
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->Q0:Lmm7;
+
     .line 61
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->F0:Lzu6;
-
     .line 62
+    new-instance v0, Lqu3;
+
     .line 63
-    new-instance v0, Lde3;
-
     .line 64
-    .line 65
-    invoke-direct {v0, p0, v5}, Lde3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
+    invoke-direct {v0, p0, v5}, Lqu3;-><init>(Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;I)V
 
+    .line 65
     .line 66
     .line 67
+    new-instance v1, Lmm7;
+
     .line 68
-    new-instance v1, Lzu6;
-
     .line 69
-    .line 70
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
+    .line 70
     .line 71
     .line 72
-    .line 73
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->G0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->R0:Lmm7;
 
+    .line 73
     .line 74
-    .line 75
     return-void
 .end method
 
 
 # virtual methods
 .method public final onCreate(Landroid/os/Bundle;)V
-    .locals 12
+    .locals 10
 
     .line 1
     invoke-super {p0, p1}, Lsu/happ/proxyutility/ui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
@@ -208,7 +207,7 @@
     move-result-object p1
 
     .line 8
-    sget v0, Lt95;->activity_language_settings:I
+    sget v0, Ltt5;->activity_language_settings:I
 
     .line 9
     .line 10
@@ -226,11 +225,11 @@
     move-result-object p1
 
     .line 16
-    sget v0, Ld95;->cl_main:I
+    sget v0, Let5;->cl_main:I
 
     .line 17
     .line 18
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 19
     .line 20
@@ -246,11 +245,11 @@
 
     .line 25
     .line 26
-    sget v0, Ld95;->rv_language:I
+    sget v0, Let5;->rv_language:I
 
     .line 27
     .line 28
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 29
     .line 30
@@ -266,11 +265,11 @@
 
     .line 35
     .line 36
-    sget v0, Ld95;->title_category:I
+    sget v0, Let5;->title_category:I
 
     .line 37
     .line 38
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 39
     .line 40
@@ -286,11 +285,11 @@
 
     .line 45
     .line 46
-    sget v0, Ld95;->toolbar:I
+    sget v0, Let5;->toolbar:I
 
     .line 47
     .line 48
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 49
     .line 50
@@ -306,7 +305,7 @@
 
     .line 55
     .line 56
-    new-instance v0, Lrv7;
+    new-instance v0, Lpq;
 
     .line 57
     .line 58
@@ -317,12 +316,12 @@
     const/4 v5, 0x3
 
     .line 61
-    invoke-direct {v0, p1, v3, v4, v5}, Lrv7;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v0, p1, v3, v4, v5}, Lpq;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 62
     .line 63
     .line 64
-    iput-object v0, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->C0:Lrv7;
+    iput-object v0, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->N0:Lpq;
 
     .line 65
     .line 66
@@ -331,11 +330,11 @@
     .line 67
     .line 68
     .line 69
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->G0:Lzu6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->R0:Lmm7;
 
     .line 70
     .line 71
-    invoke-virtual {p1}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 72
     .line 73
@@ -343,16 +342,16 @@
     move-result-object p1
 
     .line 75
-    check-cast p1, Lee3;
+    check-cast p1, Lru3;
 
     .line 76
     .line 77
-    invoke-static {p1}, Lhc7;->o(Lxy0;)V
+    invoke-static {p1}, Lor4;->n(Ln61;)V
 
     .line 78
     .line 79
     .line 80
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->C0:Lrv7;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->N0:Lpq;
 
     .line 81
     .line 82
@@ -364,7 +363,7 @@
 
     .line 85
     .line 86
-    iget-object p1, p1, Lrv7;->R:Ljava/lang/Object;
+    iget-object p1, p1, Lpq;->Y:Ljava/lang/Object;
 
     .line 87
     .line 88
@@ -382,7 +381,7 @@
     .line 94
     .line 95
     .line 96
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->C0:Lrv7;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->N0:Lpq;
 
     .line 97
     .line 98
@@ -390,7 +389,7 @@
 
     .line 99
     .line 100
-    iget-object p1, p1, Lrv7;->T:Ljava/lang/Object;
+    iget-object p1, p1, Lpq;->c0:Ljava/lang/Object;
 
     .line 101
     .line 102
@@ -398,12 +397,12 @@
 
     .line 103
     .line 104
-    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->p(Landroidx/appcompat/widget/Toolbar;)V
+    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->q(Landroidx/appcompat/widget/Toolbar;)V
 
     .line 105
     .line 106
     .line 107
-    sget p1, Lx95;->title_language:I
+    sget p1, Lxt5;->title_language:I
 
     .line 108
     .line 109
@@ -420,7 +419,7 @@
     .line 114
     .line 115
     .line 116
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->C0:Lrv7;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->N0:Lpq;
 
     .line 117
     .line 118
@@ -428,7 +427,7 @@
 
     .line 119
     .line 120
-    iget-object p1, p1, Lrv7;->S:Ljava/lang/Object;
+    iget-object p1, p1, Lpq;->Z:Ljava/lang/Object;
 
     .line 121
     .line 122
@@ -436,11 +435,11 @@
 
     .line 123
     .line 124
-    iget-object v3, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->F0:Lzu6;
+    iget-object v3, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->Q0:Lmm7;
 
     .line 125
     .line 126
-    invoke-virtual {v3}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 127
     .line 128
@@ -448,7 +447,7 @@
     move-result-object v4
 
     .line 130
-    check-cast v4, Lje3;
+    check-cast v4, Lwu3;
 
     .line 131
     .line 132
@@ -457,7 +456,7 @@
     .line 133
     .line 134
     .line 135
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->C0:Lrv7;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->N0:Lpq;
 
     .line 136
     .line 137
@@ -465,7 +464,7 @@
 
     .line 138
     .line 139
-    iget-object p1, p1, Lrv7;->S:Ljava/lang/Object;
+    iget-object p1, p1, Lpq;->Z:Ljava/lang/Object;
 
     .line 140
     .line 141
@@ -477,10 +476,10 @@
 
     .line 144
     .line 145
-    const/4 v4, 0x1
+    const/4 v1, 0x1
 
     .line 146
-    invoke-direct {v0, v4}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(I)V
 
     .line 147
     .line 148
@@ -490,7 +489,7 @@
     .line 150
     .line 151
     .line 152
-    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 153
     .line 154
@@ -498,7 +497,7 @@
     move-result-object p1
 
     .line 156
-    sget v0, Ln75;->language_select:I
+    sget v0, Lmr5;->language_select:I
 
     .line 157
     .line 158
@@ -515,7 +514,7 @@
     .line 163
     .line 164
     .line 165
-    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 166
     .line 167
@@ -523,11 +522,11 @@
     move-result-object v0
 
     .line 169
-    sget v4, Ln75;->language_select_value:I
+    sget v1, Lmr5;->language_select_value:I
 
     .line 170
     .line 171
-    invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
     .line 172
     .line 173
@@ -540,118 +539,118 @@
     .line 176
     .line 177
     .line 178
-    iget-object v4, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->E0:Lzu6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->P0:Lmm7;
 
     .line 179
     .line 180
-    invoke-virtual {v4}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 181
     .line 182
     .line 183
-    move-result-object v4
+    move-result-object p0
 
     .line 184
-    check-cast v4, Lcom/tencent/mmkv/MMKV;
+    check-cast p0, Lcom/tencent/mmkv/MMKV;
 
     .line 185
     .line 186
-    const-string v5, "pref_language"
+    const-string v1, "pref_language"
 
     .line 187
     .line 188
-    invoke-virtual {v4, v5}, Lcom/tencent/mmkv/MMKV;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/tencent/mmkv/MMKV;->i(Ljava/lang/String;)Ljava/lang/String;
 
     .line 189
     .line 190
     .line 191
-    move-result-object v4
+    move-result-object p0
 
     .line 192
-    if-nez v4, :cond_0
+    if-nez p0, :cond_0
 
     .line 193
     .line 194
-    aget-object v4, v0, v2
+    aget-object p0, v0, v2
 
     .line 195
     .line 196
     :cond_0
-    invoke-virtual {v3}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 197
     .line 198
     .line 199
-    move-result-object v3
+    move-result-object v1
 
     .line 200
-    check-cast v3, Lje3;
+    check-cast v1, Lwu3;
 
     .line 201
     .line 202
-    new-instance v5, Ljava/util/ArrayList;
+    new-instance v3, Ljava/util/ArrayList;
 
     .line 203
     .line 204
-    array-length v6, v0
+    array-length v4, v0
 
     .line 205
-    invoke-direct {v5, v6}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 206
     .line 207
     .line 208
-    array-length v6, v0
+    array-length v4, v0
 
     .line 209
-    const/4 v7, 0x0
+    move v5, v2
 
     .line 210
     :goto_0
-    if-ge v2, v6, :cond_1
+    if-ge v2, v4, :cond_1
 
     .line 211
     .line 212
-    aget-object v8, v0, v2
+    aget-object v6, v0, v2
 
     .line 213
     .line 214
-    add-int/lit8 v9, v7, 0x1
+    add-int/lit8 v7, v5, 0x1
 
     .line 215
     .line 216
-    new-instance v10, Lsu/happ/proxyutility/dto/LanguageData;
+    new-instance v8, Lsu/happ/proxyutility/dto/LanguageData;
 
     .line 217
     .line 218
-    aget-object v7, p1, v7
+    aget-object v5, p1, v5
 
     .line 219
     .line 220
-    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 221
     .line 222
     .line 223
-    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 224
     .line 225
     .line 226
-    invoke-static {v4, v8}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, v6}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 227
     .line 228
     .line 229
-    move-result v11
+    move-result v9
 
     .line 230
-    invoke-direct {v10, v7, v11, v8}, Lsu/happ/proxyutility/dto/LanguageData;-><init>(Ljava/lang/String;ZLjava/lang/String;)V
+    invoke-direct {v8, v5, v9, v6}, Lsu/happ/proxyutility/dto/LanguageData;-><init>(Ljava/lang/String;ZLjava/lang/String;)V
 
     .line 231
     .line 232
     .line 233
-    invoke-virtual {v5, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 234
     .line 235
@@ -660,23 +659,23 @@
 
     .line 237
     .line 238
-    move v7, v9
+    move v5, v7
 
     .line 239
     goto :goto_0
 
     .line 240
     :cond_1
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 241
     .line 242
     .line 243
-    iget-object p1, v3, Lje3;->h:Lhs;
+    iget-object p0, v1, Lwu3;->h:Ldu;
 
     .line 244
     .line 245
-    invoke-virtual {p1, v5, v1}, Lhs;->b(Ljava/util/List;Lf92;)V
+    invoke-virtual {p0, v3}, Ldu;->b(Ljava/util/List;)V
 
     .line 246
     .line 247
@@ -685,7 +684,7 @@
 
     .line 249
     :cond_2
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 250
     .line 251
@@ -694,7 +693,7 @@
 
     .line 253
     :cond_3
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 254
     .line 255
@@ -703,7 +702,7 @@
 
     .line 257
     :cond_4
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 258
     .line 259
@@ -712,7 +711,7 @@
 
     .line 261
     :cond_5
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 262
     .line 263
@@ -726,30 +725,30 @@
     .line 266
     .line 267
     .line 268
-    move-result-object p1
+    move-result-object p0
 
     .line 269
-    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
 
     .line 270
     .line 271
     .line 272
-    move-result-object p1
+    move-result-object p0
 
     .line 273
-    const-string v0, "Missing required view with ID: "
+    const-string p1, "Missing required view with ID: "
 
     .line 274
     .line 275
-    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 276
     .line 277
     .line 278
-    move-result-object p1
+    move-result-object p0
 
     .line 279
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 280
     .line 281
@@ -757,97 +756,97 @@
     return-void
 .end method
 
-.method public final t()Landroidx/appcompat/widget/Toolbar;
-    .locals 1
+.method public final u()Landroidx/appcompat/widget/Toolbar;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->C0:Lrv7;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->N0:Lpq;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lrv7;->T:Ljava/lang/Object;
+    iget-object p0, p0, Lpq;->c0:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v0, Landroidx/appcompat/widget/Toolbar;
+    check-cast p0, Landroidx/appcompat/widget/Toolbar;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 13
+    .line 14
+    .line 15
+    const/4 p0, 0x0
+
+    .line 16
+    throw p0
+.end method
+
+.method public final w()Z
+    .locals 2
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->R0:Lmm7;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lru3;
+
+    .line 8
+    .line 9
+    iget-object p0, p0, Lru3;->X:Lpq;
+
+    .line 10
+    .line 11
+    iget-object p0, p0, Lpq;->Z:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    check-cast p0, Landroidx/recyclerview/widget/RecyclerView;
+
     .line 14
     .line 15
     const/4 v0, 0x0
 
     .line 16
-    throw v0
-.end method
-
-.method public final v()Z
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/language/LanguageActivitySettings;->G0:Lzu6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lee3;
-
-    .line 8
-    .line 9
-    iget-object v0, v0, Lee3;->Q:Lrv7;
-
-    .line 10
-    .line 11
-    iget-object v0, v0, Lrv7;->S:Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 14
-    .line 15
-    const/4 v1, 0x0
-
-    .line 16
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->I(I)Landroidx/recyclerview/widget/l;
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->I(I)Landroidx/recyclerview/widget/l;
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    move-result-object p0
 
     .line 20
-    instance-of v2, v0, Lie3;
+    instance-of v1, p0, Lvu3;
 
     .line 21
     .line 22
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
     .line 23
     .line 24
-    check-cast v0, Lie3;
+    check-cast p0, Lvu3;
 
     .line 25
     .line 26
@@ -855,41 +854,41 @@
 
     .line 27
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 28
     :goto_0
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 29
     .line 30
-    return v1
+    return v0
 
     .line 31
     :cond_1
-    iget-object v0, v0, Lie3;->v:Lhg1;
+    iget-object p0, p0, Lvu3;->v:Lio1;
 
     .line 32
     .line 33
-    iget-object v0, v0, Lhg1;->R:Ljava/lang/Object;
+    iget-object p0, p0, Lio1;->Y:Ljava/lang/Object;
 
     .line 34
     .line 35
-    check-cast v0, Lbv2;
+    check-cast p0, Lwa3;
 
     .line 36
     .line 37
-    iget-object v0, v0, Lbv2;->S:Landroidx/constraintlayout/widget/ConstraintLayout;
+    iget-object p0, p0, Lwa3;->Z:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 38
     .line 39
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
 
     .line 40
     .line 41
     .line 42
-    move-result v0
+    move-result p0
 
     .line 43
-    return v0
+    return p0
 .end method

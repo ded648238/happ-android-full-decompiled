@@ -1,40 +1,49 @@
 package defpackage;
 
-import android.util.SparseArray;
-import java.util.HashMap;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class h05 extends td7 {
+    public final td7 d0;
+    public final ii2 e0;
+    public boolean f0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class h05 {
-    public static final SparseArray a = new SparseArray();
-    public static final HashMap b;
+    public h05(td7 td7Var, ii2 ii2Var) {
+        this.d0 = td7Var;
+        this.e0 = ii2Var;
+    }
 
-    static {
-        HashMap map = new HashMap();
-        b = map;
-        map.put(d05.Q, 0);
-        map.put(d05.R, 1);
-        map.put(d05.S, 2);
-        for (d05 d05Var : map.keySet()) {
-            a.append(((Integer) b.get(d05Var)).intValue(), d05Var);
+    @Override // defpackage.fy4
+    public final void b() {
+        if (this.f0) {
+            return;
+        }
+        this.d0.b();
+    }
+
+    @Override // defpackage.td7
+    public final void f(mk5 mk5Var) {
+        this.d0.f(mk5Var);
+    }
+
+    @Override // defpackage.fy4
+    public final void onError(Throwable th) {
+        if (this.f0) {
+            mf6.b(th);
+        } else {
+            this.f0 = true;
+            this.d0.onError(th);
         }
     }
 
-    public static int a(d05 d05Var) {
-        Integer num = (Integer) b.get(d05Var);
-        if (num != null) {
-            return num.intValue();
+    @Override // defpackage.fy4
+    public final void onNext(Object obj) {
+        try {
+            this.d0.onNext(this.e0.a(obj));
+        } catch (Throwable th) {
+            m93.X(th);
+            c();
+            tz4.a(obj, th);
+            onError(th);
         }
-        i62.p(d05Var, "PriorityMapping is missing known Priority value ");
-        return 0;
-    }
-
-    public static d05 b(int i) {
-        d05 d05Var = (d05) a.get(i);
-        if (d05Var != null) {
-            return d05Var;
-        }
-        fn.r(xy4.v(i, "Unknown Priority for value "));
-        return null;
     }
 }

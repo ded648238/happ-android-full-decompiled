@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSslEdDsaPrivateKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/security/PrivateKey;
@@ -52,7 +52,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 14
     .line 15
@@ -87,105 +87,101 @@
     return-void
 
     .line 30
-    :catch_0
-    move-exception p1
-
-    .line 31
-    goto :goto_0
-
-    .line 32
     :cond_0
     invoke-virtual {p1}, Ljava/security/spec/EncodedKeySpec;->getFormat()Ljava/lang/String;
 
+    .line 31
+    .line 32
     .line 33
-    .line 34
-    .line 35
     move-result-object v0
 
-    .line 36
+    .line 34
     const-string v1, "PKCS#8"
+
+    .line 35
+    .line 36
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 37
     .line 38
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 39
-    .line 40
-    .line 41
     move-result v0
 
-    .line 42
+    .line 40
     if-eqz v0, :cond_1
+
+    .line 41
+    .line 42
+    invoke-virtual {p1}, Ljava/security/spec/EncodedKeySpec;->getEncoded()[B
 
     .line 43
     .line 44
-    invoke-virtual {p1}, Ljava/security/spec/EncodedKeySpec;->getEncoded()[B
-
     .line 45
-    .line 46
-    .line 47
     move-result-object p1
 
-    .line 48
+    .line 46
     invoke-static {p1}, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->getOpenSslKeyFromPkcS8([B)Lorg/conscrypt/OpenSSLKey;
 
+    .line 47
+    .line 48
     .line 49
-    .line 50
-    .line 51
     move-result-object p1
 
-    .line 52
+    .line 50
     iput-object p1, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
-    .line 53
-    .line 54
+    .line 51
+    .line 52
     return-void
 
-    .line 55
+    .line 53
     :cond_1
-    new-instance p1, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
+
+    .line 54
+    .line 55
+    const-string p1, "Encoding must be in PKCS#8 or raw format"
 
     .line 56
     .line 57
-    const-string v0, "Encoding must be in PKCS#8 or raw format"
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 58
     .line 59
-    invoke-direct {p1, v0}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
-
     .line 60
-    .line 61
-    .line 62
-    throw p1
+    throw p0
     :try_end_0
     .catch Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 61
+    :catch_0
+    move-exception p0
+
+    .line 62
+    new-instance p1, Ljava/security/spec/InvalidKeySpecException;
+
     .line 63
-    :goto_0
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
-
     .line 64
-    .line 65
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {p1, p0}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/Throwable;)V
 
+    .line 65
     .line 66
     .line 67
-    .line 68
-    throw v0
+    throw p1
 .end method
 
 .method public constructor <init>([B)V
     .locals 1
 
-    .line 69
+    .line 68
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 70
+    .line 69
     iput-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->privateKeyBytes:[B
 
-    .line 71
+    .line 70
     :try_start_0
     invoke-static {p1}, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->getOpenSslKeyFromRaw([B)Lorg/conscrypt/OpenSSLKey;
 
@@ -198,14 +194,14 @@
     return-void
 
     :catch_0
-    move-exception p1
+    move-exception p0
 
-    .line 72
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    .line 71
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
 
-    throw v0
+    throw p1
 .end method
 
 .method private static getOpenSslKeyFromPkcS8([B)Lorg/conscrypt/OpenSSLKey;
@@ -283,7 +279,7 @@
 .end method
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -327,23 +323,23 @@
 
     .line 16
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 17
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
     .line 18
     .line 19
-    const-string v1, "Parsing raw key failed"
+    const-string v0, "Parsing raw key failed"
 
     .line 20
     .line 21
-    invoke-direct {v0, v1, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 22
     .line 23
     .line 24
-    throw v0
+    throw p1
 .end method
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
@@ -425,10 +421,10 @@
 
     .line 2
     .line 3
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 4
-    return p1
+    return p0
 
     .line 5
     :cond_0
@@ -440,10 +436,10 @@
 
     .line 8
     .line 9
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 10
-    return p1
+    return p0
 
     .line 11
     :cond_1
@@ -456,7 +452,7 @@
     .line 14
     .line 15
     .line 16
-    move-result-object v0
+    move-result-object p0
 
     .line 17
     invoke-virtual {p1}, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->getRaw()[B
@@ -467,146 +463,146 @@
     move-result-object p1
 
     .line 21
-    invoke-static {v0, p1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
+    invoke-static {p0, p1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
 
     .line 22
     .line 23
     .line 24
-    move-result p1
+    move-result p0
 
     .line 25
-    return p1
+    return p0
 .end method
 
 .method public getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "1.3.101.112"
+    const-string p0, "1.3.101.112"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_private_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_private_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 15
     .line 16
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 17
     .line 18
     .line 19
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 20
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "PKCS#8"
+    const-string p0, "PKCS#8"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getOpenSSLKey()Lorg/conscrypt/OpenSSLKey;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getRaw()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_get_raw_private_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_get_raw_private_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 15
     .line 16
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 17
     .line 18
     .line 19
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 20
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->getRaw()[B
@@ -614,41 +610,41 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([B)I
 
     .line 6
     .line 7
     .line 8
-    move-result v0
+    move-result p0
 
     .line 9
-    return v0
+    return p0
 .end method
 
 .method public isDestroyed()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslEdDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 4
     .line 5
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 6
-    return v0
+    return p0
 
     .line 7
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 8
-    return v0
+    return p0
 .end method

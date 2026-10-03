@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/concurrent/TaskQueue;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -27,16 +27,16 @@
         "task",
         "",
         "delayNanos",
-        "Lbh7;",
+        "Lr98;",
         "schedule",
         "(Lokhttp3/internal/concurrent/Task;J)V",
         "Lkotlin/Function0;",
         "block",
-        "(Ljava/lang/String;JLg72;)V",
+        "(Ljava/lang/String;JLji2;)V",
         "",
         "cancelable",
         "execute",
-        "(Ljava/lang/String;JZLg72;)V",
+        "(Ljava/lang/String;JZLji2;)V",
         "Ljava/util/concurrent/CountDownLatch;",
         "idleLatch",
         "()Ljava/util/concurrent/CountDownLatch;",
@@ -157,7 +157,7 @@
     return-void
 .end method
 
-.method public static synthetic execute$default(Lokhttp3/internal/concurrent/TaskQueue;Ljava/lang/String;JZLg72;ILjava/lang/Object;)V
+.method public static synthetic execute$default(Lokhttp3/internal/concurrent/TaskQueue;Ljava/lang/String;JZLji2;ILjava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -200,7 +200,7 @@
 
     .line 19
     .line 20
-    invoke-direct {p6, p1, p4, p5}, Lokhttp3/internal/concurrent/TaskQueue$execute$1;-><init>(Ljava/lang/String;ZLg72;)V
+    invoke-direct {p6, p1, p4, p5}, Lokhttp3/internal/concurrent/TaskQueue$execute$1;-><init>(Ljava/lang/String;ZLji2;)V
 
     .line 21
     .line 22
@@ -213,7 +213,7 @@
     return-void
 .end method
 
-.method public static synthetic schedule$default(Lokhttp3/internal/concurrent/TaskQueue;Ljava/lang/String;JLg72;ILjava/lang/Object;)V
+.method public static synthetic schedule$default(Lokhttp3/internal/concurrent/TaskQueue;Ljava/lang/String;JLji2;ILjava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -244,7 +244,7 @@
 
     .line 14
     .line 15
-    invoke-direct {p5, p1, p4}, Lokhttp3/internal/concurrent/TaskQueue$schedule$2;-><init>(Ljava/lang/String;Lg72;)V
+    invoke-direct {p5, p1, p4}, Lokhttp3/internal/concurrent/TaskQueue$schedule$2;-><init>(Ljava/lang/String;Lji2;)V
 
     .line 16
     .line 17
@@ -323,7 +323,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 23
     .line 24
@@ -368,7 +368,7 @@
 
     .line 41
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 42
     goto :goto_2
@@ -386,7 +386,7 @@
     monitor-exit v0
 
     .line 46
-    throw v1
+    throw p0
 .end method
 
 .method public final cancelAllAndDecide$okhttp()Z
@@ -543,7 +543,7 @@
     .line 72
     .line 73
     .line 74
-    const/4 v2, 0x1
+    move v2, v1
 
     .line 75
     :cond_2
@@ -558,14 +558,14 @@
     return v2
 .end method
 
-.method public final execute(Ljava/lang/String;JZLg72;)V
+.method public final execute(Ljava/lang/String;JZLji2;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "JZ",
-            "Lg72;",
+            "Lji2;",
             ")V"
         }
     .end annotation
@@ -585,7 +585,7 @@
 
     .line 8
     .line 9
-    invoke-direct {v0, p1, p4, p5}, Lokhttp3/internal/concurrent/TaskQueue$execute$1;-><init>(Ljava/lang/String;ZLg72;)V
+    invoke-direct {v0, p1, p4, p5}, Lokhttp3/internal/concurrent/TaskQueue$execute$1;-><init>(Ljava/lang/String;ZLji2;)V
 
     .line 10
     .line 11
@@ -599,29 +599,29 @@
 .end method
 
 .method public final getActiveTask$okhttp()Lokhttp3/internal/concurrent/Task;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskQueue;->activeTask:Lokhttp3/internal/concurrent/Task;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskQueue;->activeTask:Lokhttp3/internal/concurrent/Task;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getCancelActiveTask$okhttp()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/concurrent/TaskQueue;->cancelActiveTask:Z
+    iget-boolean p0, p0, Lokhttp3/internal/concurrent/TaskQueue;->cancelActiveTask:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getFutureTasks$okhttp()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -632,26 +632,26 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskQueue;->futureTasks:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskQueue;->futureTasks:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getName$okhttp()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskQueue;->name:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskQueue;->name:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getScheduledTasks()Ljava/util/List;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -670,16 +670,16 @@
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Lokhttp3/internal/concurrent/TaskQueue;->futureTasks:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskQueue;->futureTasks:Ljava/util/List;
 
     .line 5
     .line 6
-    invoke-static {v1}, Lnm0;->Z0(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {p0}, Ltt0;->F1(Ljava/lang/Iterable;)Ljava/util/List;
 
     .line 7
     .line 8
     .line 9
-    move-result-object v1
+    move-result-object p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -687,39 +687,39 @@
     monitor-exit v0
 
     .line 11
-    return-object v1
+    return-object p0
 
     .line 12
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 13
     monitor-exit v0
 
     .line 14
-    throw v1
+    throw p0
 .end method
 
 .method public final getShutdown$okhttp()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/concurrent/TaskQueue;->shutdown:Z
+    iget-boolean p0, p0, Lokhttp3/internal/concurrent/TaskQueue;->shutdown:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getTaskRunner$okhttp()Lokhttp3/internal/concurrent/TaskRunner;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskQueue;->taskRunner:Lokhttp3/internal/concurrent/TaskRunner;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskQueue;->taskRunner:Lokhttp3/internal/concurrent/TaskRunner;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final idleLatch()Ljava/util/concurrent/CountDownLatch;
@@ -761,11 +761,11 @@
 
     .line 16
     .line 17
-    new-instance v1, Ljava/util/concurrent/CountDownLatch;
+    new-instance p0, Ljava/util/concurrent/CountDownLatch;
 
     .line 18
     .line 19
-    invoke-direct {v1, v2}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+    invoke-direct {p0, v2}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -775,11 +775,11 @@
     monitor-exit v0
 
     .line 23
-    return-object v1
+    return-object p0
 
     .line 24
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 25
     goto :goto_0
@@ -808,7 +808,7 @@
     .line 35
     .line 36
     .line 37
-    move-result-object v1
+    move-result-object p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -816,7 +816,7 @@
     monitor-exit v0
 
     .line 39
-    return-object v1
+    return-object p0
 
     .line 40
     :cond_1
@@ -875,7 +875,7 @@
     .line 65
     .line 66
     .line 67
-    move-result-object v1
+    move-result-object p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -883,7 +883,7 @@
     monitor-exit v0
 
     .line 69
-    return-object v1
+    return-object p0
 
     .line 70
     :cond_3
@@ -928,7 +928,7 @@
     .line 89
     .line 90
     .line 91
-    move-result-object v1
+    move-result-object p0
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -936,24 +936,24 @@
     monitor-exit v0
 
     .line 93
-    return-object v1
+    return-object p0
 
     .line 94
     :goto_0
     monitor-exit v0
 
     .line 95
-    throw v1
+    throw p0
 .end method
 
-.method public final schedule(Ljava/lang/String;JLg72;)V
+.method public final schedule(Ljava/lang/String;JLji2;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "J",
-            "Lg72;",
+            "Lji2;",
             ")V"
         }
     .end annotation
@@ -965,7 +965,7 @@
     .line 82
     new-instance v0, Lokhttp3/internal/concurrent/TaskQueue$schedule$2;
 
-    invoke-direct {v0, p1, p4}, Lokhttp3/internal/concurrent/TaskQueue$schedule$2;-><init>(Ljava/lang/String;Lg72;)V
+    invoke-direct {v0, p1, p4}, Lokhttp3/internal/concurrent/TaskQueue$schedule$2;-><init>(Ljava/lang/String;Lji2;)V
 
     invoke-virtual {p0, v0, p2, p3}, Lokhttp3/internal/concurrent/TaskQueue;->schedule(Lokhttp3/internal/concurrent/Task;J)V
 
@@ -1052,7 +1052,7 @@
 
     .line 37
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 38
     goto :goto_1
@@ -1106,16 +1106,16 @@
     .line 59
     .line 60
     :cond_2
-    new-instance p1, Ljava/util/concurrent/RejectedExecutionException;
+    new-instance p0, Ljava/util/concurrent/RejectedExecutionException;
 
     .line 61
     .line 62
-    invoke-direct {p1}, Ljava/util/concurrent/RejectedExecutionException;-><init>()V
+    invoke-direct {p0}, Ljava/util/concurrent/RejectedExecutionException;-><init>()V
 
     .line 63
     .line 64
     .line 65
-    throw p1
+    throw p0
 
     .line 66
     :cond_3
@@ -1156,11 +1156,11 @@
     monitor-exit v0
 
     .line 81
-    throw p1
+    throw p0
 .end method
 
 .method public final scheduleAndDecide$okhttp(Lokhttp3/internal/concurrent/Task;JZ)Z
-    .locals 10
+    .locals 9
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1227,11 +1227,11 @@
     move-result-wide v7
 
     .line 33
-    cmp-long v9, v7, v2
+    cmp-long v7, v7, v2
 
     .line 34
     .line 35
-    if-gtz v9, :cond_1
+    if-gtz v7, :cond_1
 
     .line 36
     .line 37
@@ -1421,7 +1421,7 @@
     move-result-object p4
 
     .line 129
-    const/4 v2, 0x0
+    move v2, v5
 
     .line 130
     :goto_1
@@ -1460,11 +1460,11 @@
     sub-long/2addr v3, v0
 
     .line 147
-    cmp-long v7, v3, p2
+    cmp-long v3, v3, p2
 
     .line 148
     .line 149
-    if-lez v7, :cond_5
+    if-lez v3, :cond_5
 
     .line 150
     .line 151
@@ -1480,7 +1480,7 @@
 
     .line 155
     :cond_6
-    const/4 v2, -0x1
+    move v2, v6
 
     .line 156
     :goto_2
@@ -1501,11 +1501,11 @@
 
     .line 164
     :cond_7
-    iget-object p2, p0, Lokhttp3/internal/concurrent/TaskQueue;->futureTasks:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskQueue;->futureTasks:Ljava/util/List;
 
     .line 165
     .line 166
-    invoke-interface {p2, v2, p1}, Ljava/util/List;->add(ILjava/lang/Object;)V
+    invoke-interface {p0, v2, p1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 167
     .line 168
@@ -1514,10 +1514,10 @@
 
     .line 170
     .line 171
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 172
-    return p1
+    return p0
 
     .line 173
     :cond_8
@@ -1605,7 +1605,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 23
     .line 24
@@ -1657,7 +1657,7 @@
 
     .line 44
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 45
     goto :goto_2
@@ -1675,16 +1675,16 @@
     monitor-exit v0
 
     .line 49
-    throw v1
+    throw p0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskQueue;->name:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskQueue;->name:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

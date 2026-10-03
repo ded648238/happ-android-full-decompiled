@@ -1,14 +1,14 @@
-# Happ Android 4.0.1 — FULL Decompiled Sources
+# Happ Android 4.6.1 — FULL Decompiled Sources
 
-**Полная декомпиляция** Happ Android v4.0.1 (`su.happ.proxyutility`, versionCode 1581)
-из APK: https://github.com/Happ-proxy/happ-android/releases/tag/4.0.1
+**Полная декомпиляция** Happ Android v4.6.1 (`su.happ.proxyutility`, versionCode 1683)
+из APK: https://github.com/Happ-proxy/happ-android/releases/tag/4.6.1
 
-## Что внутри (22377 файлов)
+## Что внутри
 
 | Каталог | Кол-во | Описание |
 |---|---|---|
-| `su/`, `defpackage/`, `libxray/`, ... | 9625 .java | jadx 1.5.6 (`--show-bad-code`) — Java-исходники всех 3 dex |
-| `smali/` | 11583 .smali | baksmali (apktool) — 100% классов, включая те, что jadx не смог |
+| `su/`, `defpackage/`, `libxray/`, ... | 11023 .java | jadx 1.5.1 (`--show-bad-code`) + CFR-патчи 2 битых Parcelable.Creator — Java-исходники всех 3 dex |
+| `smali/` | 12079 .smali | baksmali (apktool) — 100% классов, включая те, что jadx не смог |
 | `res/` | — | Все ресурсы: 986 строк, 80+ языков, цвета, стили, drawable |
 | `AndroidManifest.xml` | — | Полный манифест (40+ activity, сервисы, deep links) |
 | `xray_config.json` / `xray_config_with_tun.json` | — | Дефолтные Xray-конфиги |
@@ -16,11 +16,11 @@
 
 ## Ключевые классы (Java, читаемые)
 
-- `su/happ/proxyutility/dto/XRayConfig.java` — **4544 строки**, полная модель Xray-конфига:
+- `su/happ/proxyutility/dto/XRayConfig.java` — **5016 строк**, полная модель Xray-конфига:
   все протоколы (VMess/VLESS/SS/SOCKS/Trojan/WG/Hysteria2), все транспорты
   (WS, gRPC, KCP, QUIC, XHTTP, HTTPupgrade, TCP-masks), masquerade, observatory,
   burst observatory, fakedns, routing balancer, mux, sockopt
-- `su/happ/proxyutility/service/XRayVpnService.java` — **1311 строк**, VPN-сервис:
+- `su/happ/proxyutility/service/XRayVpnService.java` — **779 строк**, VPN-сервис:
   TUN (MTU 1500, 10.0.0.1/30), DNS, per-app (getConnectionOwnerUid), socks/http auth,
   proxy sharing, silent-режим
 - `su/happ/proxyutility/dto/SubscriptionItem.java` — модель подписки (HWID, статус EXTRA)
@@ -54,9 +54,9 @@
 ## Сборка APK
 
 Репозиторий готов к сборке через apktool 3.0.3. Все фиксы уже применены:
-- `res/values-v34/colors.xml` — приватные `@android:color/*` заменены на hex
-- `AndroidManifest.xml` — `foregroundServiceType` исправлен на `dataSync`
-- `smali/su/happ/proxyutility/HappApplication.smali` — anti-tamper патч (no1.g() и x0 reset → nop)
+- `res/values-v34/colors.xml` — в 4.6.1 правки НЕ нужны (system_* цвета принимает aapt2 из apktool 3.0.3)
+- `AndroidManifest.xml` — `foregroundServiceType="specialUse"` оставлен как есть (принимается)
+- `smali/su/happ/proxyutility/HappApplication.smali` — anti-tamper патч (dx1.e() wipe ключей и K0 reset → nop)
 
 ### Быстрая сборка
 
@@ -90,6 +90,6 @@ apksigner sign --ks /tmp/happ.keystore --ks-pass pass:happ123 --key-pass pass:ha
 
 - Проект закрытый, исходников авторы не публикуют — это reverse engineering.
 - Go-ядро (`libgojni.so`, 34MB) — бинарник, исходников нет (gomobile bind).
-- Декомпиляция: jadx 1.5.6 + apktool 3.0.3 (baksmali).
+- Декомпиляция: jadx 1.5.1 + CFR (для 2 файлов с JADX ERROR) + apktool 3.0.3 (baksmali).
 - Структура: `smali/` (classes.dex), `smali_classes2/` (classes2.dex), `smali_classes3/` (classes3.dex).
-- Java-исходники (jadx) в каталогах `su/`, `defpackage/`, `com/`, `androidx/` и др. — для чтения, не участвуют в сборке.
+- Java-исходники (jadx) в каталогах `su/`, `defpackage/`, `com/`, `androidx/`, `coil3/` и др. — для чтения, не участвуют в сборке.

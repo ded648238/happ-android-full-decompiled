@@ -1,63 +1,84 @@
 package defpackage;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.GenericArrayType;
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-import java.lang.reflect.WildcardType;
 import java.util.ArrayList;
-import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class nf5 extends mf5 implements wx2 {
-    public final Method a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class nf5 {
+    public final long a;
+    public final long b;
+    public final long c;
+    public final long d;
+    public final boolean e;
+    public final float f;
+    public final int g;
+    public final boolean h;
+    public final ArrayList i;
+    public final long j;
+    public final float k;
+    public final long l;
+    public final long m;
 
-    public nf5(Method method) {
-        method.getClass();
-        this.a = method;
+    public nf5(long j, long j2, long j3, long j4, boolean z, float f, int i, boolean z2, ArrayList arrayList, long j5, float f2, long j6, long j7) {
+        this.a = j;
+        this.b = j2;
+        this.c = j3;
+        this.d = j4;
+        this.e = z;
+        this.f = f;
+        this.g = i;
+        this.h = z2;
+        this.i = arrayList;
+        this.j = j5;
+        this.k = f2;
+        this.l = j6;
+        this.m = j7;
     }
 
-    @Override // defpackage.mf5
-    public final Member b() {
-        return this.a;
-    }
-
-    public final rf5 f() {
-        Type genericReturnType = this.a.getGenericReturnType();
-        genericReturnType.getClass();
-        boolean z = genericReturnType instanceof Class;
-        if (z) {
-            Class cls = (Class) genericReturnType;
-            if (cls.isPrimitive()) {
-                return new pf5(cls);
-            }
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        if ((genericReturnType instanceof GenericArrayType) || (z && ((Class) genericReturnType).isArray())) {
-            return new ye5(genericReturnType);
+        if (!(obj instanceof nf5)) {
+            return false;
         }
-        return genericReturnType instanceof WildcardType ? new uf5((WildcardType) genericReturnType) : new gf5(genericReturnType);
+        nf5 nf5Var = (nf5) obj;
+        return ih4.y(this.a, nf5Var.a) && this.b == nf5Var.b && ky4.b(this.c, nf5Var.c) && ky4.b(this.d, nf5Var.d) && this.e == nf5Var.e && Float.compare(this.f, nf5Var.f) == 0 && this.g == nf5Var.g && this.h == nf5Var.h && this.i.equals(nf5Var.i) && ky4.b(this.j, nf5Var.j) && Float.compare(this.k, nf5Var.k) == 0 && ky4.b(this.l, nf5Var.l) && ky4.b(this.m, nf5Var.m);
     }
 
-    public final List g() {
-        Method method = this.a;
-        Type[] genericParameterTypes = method.getGenericParameterTypes();
-        genericParameterTypes.getClass();
-        Annotation[][] parameterAnnotations = method.getParameterAnnotations();
-        parameterAnnotations.getClass();
-        return d(genericParameterTypes, parameterAnnotations, method.isVarArgs());
+    public final int hashCode() {
+        return Long.hashCode(this.m) + w31.e(eb7.c(w31.e((this.i.hashCode() + eb7.f(this.h, eh0.d(this.g, eb7.c(eb7.f(this.e, w31.e(w31.e(w31.e(Long.hashCode(this.a) * 31, 31, this.b), 31, this.c), 31, this.d), 31), this.f, 31), 31), 31)) * 31, 31, this.j), this.k, 31), 31, this.l);
     }
 
-    @Override // defpackage.wx2
-    public final ArrayList getTypeParameters() {
-        TypeVariable<Method>[] typeParameters = this.a.getTypeParameters();
-        typeParameters.getClass();
-        ArrayList arrayList = new ArrayList(typeParameters.length);
-        for (TypeVariable<Method> typeVariable : typeParameters) {
-            arrayList.add(new sf5(typeVariable));
-        }
-        return arrayList;
+    public final String toString() {
+        String Z = ih4.Z(this.a);
+        String h = ky4.h(this.c);
+        String h2 = ky4.h(this.d);
+        String a = sf5.a(this.g);
+        String h3 = ky4.h(this.j);
+        String h4 = ky4.h(this.l);
+        String h5 = ky4.h(this.m);
+        StringBuilder sb = new StringBuilder("PointerInputEventData(id=");
+        sb.append(Z);
+        sb.append(", uptime=");
+        sb.append(this.b);
+        eh0.y(sb, ", positionOnScreen=", h, ", position=", h2);
+        sb.append(", down=");
+        sb.append(this.e);
+        sb.append(", pressure=");
+        sb.append(this.f);
+        sb.append(", type=");
+        sb.append(a);
+        sb.append(", activeHover=");
+        sb.append(this.h);
+        sb.append(", historical=");
+        sb.append(this.i);
+        sb.append(", scrollDelta=");
+        sb.append(h3);
+        sb.append(", scaleGestureFactor=");
+        sb.append(this.k);
+        sb.append(", panGestureOffset=");
+        sb.append(h4);
+        return c73.k(sb, ", originalEventPosition=", h5, ")");
     }
 }

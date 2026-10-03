@@ -1,177 +1,71 @@
-.class public abstract Lmb6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lmb6;
+.super Ld31;
 
 
-# static fields
-.field public static final synthetic a:Ljava/util/concurrent/atomic/AtomicReference;
+# instance fields
+.field public synthetic c0:Ljava/lang/Object;
+
+.field public d0:I
+
+.field public final synthetic e0:Lya2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lya2;Lb31;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object p1, p0, Lmb6;->e0:Lya2;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
     .line 4
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
-
     .line 5
     .line 6
-    .line 7
-    sput-object v0, Lmb6;->a:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 8
-    .line 9
     return-void
 .end method
 
-.method public static final a(Landroid/content/Context;)Lnc5;
-    .locals 5
+
+# virtual methods
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    sget-object v0, Lmb6;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object p1, p0, Lmb6;->c0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+    iget p1, p0, Lmb6;->d0:I
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v1
+    const/high16 v0, -0x80000000
 
+    .line 6
     .line 7
-    instance-of v2, v1, Lnc5;
+    or-int/2addr p1, v0
 
     .line 8
-    .line 9
-    const/4 v3, 0x0
+    iput p1, p0, Lmb6;->d0:I
 
+    .line 9
     .line 10
-    if-eqz v2, :cond_0
+    iget-object p1, p0, Lmb6;->e0:Lya2;
 
     .line 11
     .line 12
-    check-cast v1, Lnc5;
+    const/4 v0, 0x0
 
     .line 13
+    invoke-virtual {p1, v0, p0}, Lya2;->a(Lla2;Lb31;)Ljava/lang/Object;
+
     .line 14
-    goto :goto_0
-
     .line 15
-    :cond_0
-    move-object v1, v3
-
     .line 16
-    :goto_0
-    if-nez v1, :cond_5
+    move-result-object p0
 
     .line 17
-    .line 18
-    :goto_1
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v2
-
-    .line 22
-    instance-of v1, v2, Lnc5;
-
-    .line 23
-    .line 24
-    if-eqz v1, :cond_1
-
-    .line 25
-    .line 26
-    move-object v1, v2
-
-    .line 27
-    check-cast v1, Lnc5;
-
-    .line 28
-    .line 29
-    move-object v4, v3
-
-    .line 30
-    move-object v3, v1
-
-    .line 31
-    goto :goto_2
-
-    .line 32
-    :cond_1
-    if-nez v3, :cond_2
-
-    .line 33
-    .line 34
-    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v1
-
-    .line 38
-    sget-object v3, Lob6;->a:Lt3;
-
-    .line 39
-    .line 40
-    invoke-static {v1}, Lnb6;->a(Landroid/content/Context;)Lnc5;
-
-    .line 41
-    .line 42
-    .line 43
-    move-result-object v3
-
-    .line 44
-    :cond_2
-    move-object v4, v3
-
-    .line 45
-    :cond_3
-    :goto_2
-    invoke-virtual {v0, v2, v3}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v1
-
-    .line 49
-    if-eqz v1, :cond_4
-
-    .line 50
-    .line 51
-    return-object v3
-
-    .line 52
-    :cond_4
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v1
-
-    .line 56
-    if-eq v1, v2, :cond_3
-
-    .line 57
-    .line 58
-    move-object v3, v4
-
-    .line 59
-    goto :goto_1
-
-    .line 60
-    :cond_5
-    return-object v1
+    return-object p0
 .end method

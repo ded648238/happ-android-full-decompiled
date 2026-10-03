@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -236,36 +236,36 @@
 
 # virtual methods
 .method public final a()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->brutalDown:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->brutalDown:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final b()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->brutalUp:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->brutalUp:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final c()Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean$UdpHopBean;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->udpHop:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean$UdpHopBean;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->udpHop:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean$UdpHopBean;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final d(Ljava/lang/String;)V
@@ -332,7 +332,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -356,7 +356,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -380,7 +380,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -404,7 +404,7 @@
 
     .line 49
     .line 50
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 51
     .line 52
@@ -428,7 +428,7 @@
 
     .line 60
     .line 61
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 62
     .line 63
@@ -452,7 +452,7 @@
 
     .line 71
     .line 72
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 73
     .line 74
@@ -476,7 +476,7 @@
 
     .line 82
     .line 83
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 84
     .line 85
@@ -500,7 +500,7 @@
 
     .line 93
     .line 94
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 95
     .line 96
@@ -524,7 +524,7 @@
 
     .line 104
     .line 105
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 106
     .line 107
@@ -548,7 +548,7 @@
 
     .line 115
     .line 116
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 117
     .line 118
@@ -572,7 +572,7 @@
 
     .line 126
     .line 127
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 128
     .line 129
@@ -596,7 +596,7 @@
 
     .line 137
     .line 138
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 139
     .line 140
@@ -620,7 +620,7 @@
 
     .line 148
     .line 149
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 150
     .line 151
@@ -636,7 +636,7 @@
 
     .line 156
     :cond_e
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->maxIncomingStreams:Ljava/lang/Integer;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->maxIncomingStreams:Ljava/lang/Integer;
 
     .line 157
     .line 158
@@ -644,15 +644,15 @@
 
     .line 159
     .line 160
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 161
     .line 162
     .line 163
-    move-result p1
+    move-result p0
 
     .line 164
-    if-nez p1, :cond_f
+    if-nez p0, :cond_f
 
     .line 165
     .line 166
@@ -689,7 +689,7 @@
 
     .line 5
     .line 6
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 7
     goto :goto_0
@@ -717,7 +717,7 @@
 
     .line 17
     .line 18
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 19
     goto :goto_1
@@ -748,7 +748,7 @@
 
     .line 30
     .line 31
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 32
     goto :goto_2
@@ -779,7 +779,7 @@
 
     .line 43
     .line 44
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 45
     goto :goto_3
@@ -810,7 +810,7 @@
 
     .line 56
     .line 57
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 58
     goto :goto_4
@@ -841,7 +841,7 @@
 
     .line 69
     .line 70
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 71
     goto :goto_5
@@ -872,7 +872,7 @@
 
     .line 82
     .line 83
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 84
     goto :goto_6
@@ -903,7 +903,7 @@
 
     .line 95
     .line 96
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 97
     goto :goto_7
@@ -934,7 +934,7 @@
 
     .line 108
     .line 109
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 110
     goto :goto_8
@@ -965,7 +965,7 @@
 
     .line 121
     .line 122
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 123
     goto :goto_9
@@ -996,7 +996,7 @@
 
     .line 134
     .line 135
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 136
     goto :goto_a
@@ -1027,7 +1027,7 @@
 
     .line 147
     .line 148
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 149
     goto :goto_b
@@ -1058,7 +1058,7 @@
 
     .line 160
     .line 161
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 162
     goto :goto_c
@@ -1081,11 +1081,11 @@
 
     .line 169
     .line 170
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->maxIncomingStreams:Ljava/lang/Integer;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->maxIncomingStreams:Ljava/lang/Integer;
 
     .line 171
     .line 172
-    if-nez v2, :cond_d
+    if-nez p0, :cond_d
 
     .line 173
     .line 174
@@ -1093,7 +1093,7 @@
 
     .line 175
     :cond_d
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     .line 176
     .line 177
@@ -1109,7 +1109,7 @@
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 17
+    .locals 16
 
     .line 1
     move-object/from16 v0, p0
@@ -1168,27 +1168,27 @@
 
     .line 28
     .line 29
-    iget-object v14, v0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->maxIncomingStreams:Ljava/lang/Integer;
+    iget-object v0, v0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$QuicParamsBean;->maxIncomingStreams:Ljava/lang/Integer;
 
     .line 30
     .line 31
-    const-string v15, ", bbrProfile="
+    const-string v14, ", bbrProfile="
 
     .line 32
     .line 33
-    const-string v0, ", debug="
+    const-string v15, ", debug="
 
     .line 34
     .line 35
-    move-object/from16 v16, v14
+    move-object/from16 p0, v0
 
     .line 36
     .line 37
-    const-string v14, "QuicParamsBean(congestion="
+    const-string v0, "QuicParamsBean(congestion="
 
     .line 38
     .line 39
-    invoke-static {v14, v1, v15, v2, v0}, Lmi2;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1, v14, v2, v15}, Lw31;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 40
     .line 41
@@ -1350,7 +1350,7 @@
     .line 129
     .line 130
     .line 131
-    move-object/from16 v1, v16
+    move-object/from16 v1, p0
 
     .line 132
     .line 133

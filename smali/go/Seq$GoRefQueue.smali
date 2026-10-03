@@ -1,6 +1,6 @@
 .class Lgo/Seq$GoRefQueue;
 .super Ljava/lang/ref/ReferenceQueue;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -53,7 +53,7 @@
     .line 7
     .line 8
     .line 9
-    invoke-static {v0}, Lj$/util/DesugarCollections;->synchronizedCollection(Ljava/util/Collection;)Ljava/util/Collection;
+    invoke-static {v0}, Ljava/util/Collections;->synchronizedCollection(Ljava/util/Collection;)Ljava/util/Collection;
 
     .line 10
     .line 11
@@ -83,19 +83,19 @@
     .line 23
     .line 24
     .line 25
-    const/4 v1, 0x1
+    const/4 p0, 0x1
 
     .line 26
-    invoke-virtual {v0, v1}, Ljava/lang/Thread;->setDaemon(Z)V
+    invoke-virtual {v0, p0}, Ljava/lang/Thread;->setDaemon(Z)V
 
     .line 27
     .line 28
     .line 29
-    const-string v1, "GoRefQueue Finalizer Thread"
+    const-string p0, "GoRefQueue Finalizer Thread"
 
     .line 30
     .line 31
-    invoke-virtual {v0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
+    invoke-virtual {v0, p0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
     .line 32
     .line 33

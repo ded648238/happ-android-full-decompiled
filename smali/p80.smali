@@ -1,102 +1,51 @@
-.class public final synthetic Lp80;
+.class public final Lp80;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/util/function/IntToDoubleFunction;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic a:[D
+# static fields
+.field public static final synthetic a:Lp80;
 
-.field public final synthetic b:[D
-
-.field public final synthetic c:[D
-
-.field public final synthetic d:D
+.field public static final b:Low3;
 
 
 # direct methods
-.method public synthetic constructor <init>([D[D[DD)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lp80;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lp80;->a:[D
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Lp80;->b:[D
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lp80;->c:[D
-
-    .line 9
-    .line 10
-    iput-wide p4, p0, Lp80;->d:D
-
-    .line 11
-    .line 12
-    return-void
-.end method
-
-
-# virtual methods
-.method public final applyAsDouble(I)D
-    .locals 9
-
-    .line 1
-    iget-object v0, p0, Lp80;->a:[D
-
-    .line 2
-    .line 3
-    aget-wide v1, v0, p1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    iget-object v0, p0, Lp80;->b:[D
-
     .line 6
+    sput-object v0, Lp80;->a:Lp80;
+
     .line 7
-    aget-wide v3, v0, p1
-
     .line 8
+    sget-object v0, Ld04;->X:Ld04;
+
     .line 9
-    iget-object v0, p0, Lp80;->c:[D
-
     .line 10
-    .line 11
-    aget-wide v5, v0, p1
+    sget-object v1, Loy;->Z:Loy;
 
+    .line 11
     .line 12
+    invoke-static {v0, v1}, Lvq0;->T(Ld04;Lji2;)Low3;
+
     .line 13
-    iget-wide v7, p0, Lp80;->d:D
-
     .line 14
     .line 15
-    mul-double v5, v5, v7
+    move-result-object v0
 
     .line 16
+    sput-object v0, Lp80;->b:Low3;
+
     .line 17
-    add-double/2addr v5, v3
-
     .line 18
-    invoke-static {v5, v6}, Lq80;->h(D)D
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-wide v3
-
-    .line 22
-    mul-double v3, v3, v1
-
-    .line 23
-    .line 24
-    return-wide v3
+    return-void
 .end method

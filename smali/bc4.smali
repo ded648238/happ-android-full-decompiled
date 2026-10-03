@@ -1,348 +1,315 @@
-.class public final Lbc4;
+.class public final synthetic Lbc4;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lji2;
 
 
 # instance fields
-.field public final a:Z
+.field public final synthetic X:I
 
-.field public final b:Z
-
-.field public final c:Z
-
-.field public final d:Z
+.field public final synthetic Y:Lsu/happ/proxyutility/feature/main/MainViewModel;
 
 
 # direct methods
-.method public constructor <init>(ZZZZ)V
+.method public synthetic constructor <init>(Lsu/happ/proxyutility/feature/main/MainViewModel;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lbc4;->X:I
 
     .line 2
     .line 3
+    iput-object p1, p0, Lbc4;->Y:Lsu/happ/proxyutility/feature/main/MainViewModel;
+
     .line 4
-    iput-boolean p1, p0, Lbc4;->a:Z
-
     .line 5
-    .line 6
-    iput-boolean p2, p0, Lbc4;->b:Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
     .line 7
     .line 8
-    iput-boolean p3, p0, Lbc4;->c:Z
-
-    .line 9
-    .line 10
-    iput-boolean p4, p0, Lbc4;->d:Z
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final invoke()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, Lbc4;->X:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    iget-object p0, p0, Lbc4;->Y:Lsu/happ/proxyutility/feature/main/MainViewModel;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, Lbc4;
+    packed-switch v0, :pswitch_data_0
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/main/MainViewModel;->i:Lmm7;
 
     .line 9
     .line 10
-    return v2
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 11
-    :cond_1
-    check-cast p1, Lbc4;
-
     .line 12
     .line 13
-    iget-boolean v1, p0, Lbc4;->a:Z
+    move-result-object p0
 
     .line 14
+    check-cast p0, Lx28;
+
     .line 15
-    iget-boolean v3, p1, Lbc4;->a:Z
-
     .line 16
-    .line 17
-    if-eq v1, v3, :cond_2
+    iget-object p0, p0, Lx28;->c:Lgw5;
 
+    .line 17
     .line 18
+    return-object p0
+
     .line 19
-    return v2
+    :pswitch_0
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/main/MainViewModel;->t()Lsp4;
 
     .line 20
-    :cond_2
-    iget-boolean v1, p0, Lbc4;->b:Z
-
     .line 21
     .line 22
-    iget-boolean v3, p1, Lbc4;->b:Z
+    move-result-object p0
 
     .line 23
+    new-instance v0, Lm54;
+
     .line 24
-    if-eq v1, v3, :cond_3
-
     .line 25
-    .line 26
-    return v2
+    const/16 v1, 0xe
 
+    .line 26
     .line 27
-    :cond_3
-    iget-boolean v1, p0, Lbc4;->c:Z
+    invoke-direct {v0, v1}, Lm54;-><init>(I)V
 
     .line 28
     .line 29
-    iget-boolean v3, p1, Lbc4;->c:Z
-
     .line 30
-    .line 31
-    if-eq v1, v3, :cond_4
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 31
     .line 32
     .line 33
-    return v2
+    iget-object v1, p0, Lq44;->e:Ljava/lang/Object;
 
     .line 34
-    :cond_4
-    iget-boolean v1, p0, Lbc4;->d:Z
-
     .line 35
+    sget-object v2, Lq44;->k:Ljava/lang/Object;
+
     .line 36
-    iget-boolean p1, p1, Lbc4;->d:Z
-
     .line 37
+    if-eq v1, v2, :cond_0
+
     .line 38
-    if-eq v1, p1, :cond_5
-
     .line 39
+    new-instance v1, Lki4;
+
     .line 40
-    return v2
-
     .line 41
-    :cond_5
-    return v0
-.end method
+    invoke-virtual {p0}, Lq44;->d()Ljava/lang/Object;
 
-.method public final hashCode()I
-    .locals 4
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v2
 
-    .line 1
-    iget-boolean v0, p0, Lbc4;->a:Z
+    .line 45
+    invoke-virtual {v0, v2}, Lm54;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
-    .line 3
-    const/16 v1, 0x4d5
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v2
 
-    .line 4
-    .line 5
-    const/16 v2, 0x4cf
+    .line 49
+    invoke-direct {v1, v2}, Lq44;-><init>(Ljava/lang/Object;)V
 
-    .line 6
-    .line 7
-    if-eqz v0, :cond_0
+    .line 50
+    .line 51
+    .line 52
+    new-instance v2, Laj6;
 
-    .line 8
-    .line 9
-    const/16 v0, 0x4cf
+    .line 53
+    .line 54
+    invoke-direct {v2}, Laj6;-><init>()V
 
-    .line 10
-    .line 11
+    .line 55
+    .line 56
+    .line 57
+    iput-object v2, v1, Lki4;->l:Laj6;
+
+    .line 58
+    .line 59
     goto :goto_0
 
-    .line 12
+    .line 60
     :cond_0
-    const/16 v0, 0x4d5
+    new-instance v1, Lki4;
 
-    .line 13
-    .line 14
+    .line 61
+    .line 62
+    invoke-direct {v1}, Lq44;-><init>()V
+
+    .line 63
+    .line 64
+    .line 65
+    new-instance v2, Laj6;
+
+    .line 66
+    .line 67
+    invoke-direct {v2}, Laj6;-><init>()V
+
+    .line 68
+    .line 69
+    .line 70
+    iput-object v2, v1, Lki4;->l:Laj6;
+
+    .line 71
+    .line 72
     :goto_0
-    mul-int/lit8 v0, v0, 0x1f
+    new-instance v2, Lf57;
 
-    .line 15
-    .line 16
-    iget-boolean v3, p0, Lbc4;->b:Z
+    .line 73
+    .line 74
+    const/16 v3, 0xb
 
-    .line 17
-    .line 18
-    if-eqz v3, :cond_1
+    .line 75
+    .line 76
+    invoke-direct {v2, v3, v1, v0}, Lf57;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
-    .line 19
-    .line 20
-    const/16 v3, 0x4cf
+    .line 77
+    .line 78
+    .line 79
+    new-instance v0, Lyb4;
 
-    .line 21
-    .line 22
-    goto :goto_1
+    .line 80
+    .line 81
+    const/4 v3, 0x3
 
-    .line 23
-    :cond_1
-    const/16 v3, 0x4d5
+    .line 82
+    invoke-direct {v0, v3, v2}, Lyb4;-><init>(ILmi2;)V
 
-    .line 24
-    .line 25
-    :goto_1
-    add-int/2addr v0, v3
+    .line 83
+    .line 84
+    .line 85
+    new-instance v2, Lji4;
 
-    .line 26
-    mul-int/lit8 v0, v0, 0x1f
+    .line 86
+    .line 87
+    invoke-direct {v2, p0, v0}, Lji4;-><init>(Lsp4;Lyb4;)V
 
-    .line 27
-    .line 28
-    iget-boolean v3, p0, Lbc4;->c:Z
+    .line 88
+    .line 89
+    .line 90
+    iget-object v3, v1, Lki4;->l:Laj6;
 
-    .line 29
-    .line 30
+    .line 91
+    .line 92
+    invoke-virtual {v3, p0, v2}, Laj6;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object v3
+
+    .line 96
+    check-cast v3, Lji4;
+
+    .line 97
+    .line 98
     if-eqz v3, :cond_2
 
-    .line 31
-    .line 32
-    const/16 v3, 0x4cf
+    .line 99
+    .line 100
+    iget-object v4, v3, Lji4;->b:Lyb4;
 
-    .line 33
-    .line 34
+    .line 101
+    .line 102
+    if-ne v4, v0, :cond_1
+
+    .line 103
+    .line 104
+    goto :goto_1
+
+    .line 105
+    :cond_1
+    const-string p0, "This source was already added with the different observer"
+
+    .line 106
+    .line 107
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 108
+    .line 109
+    .line 110
+    const/4 v1, 0x0
+
+    .line 111
     goto :goto_2
 
-    .line 35
+    .line 112
     :cond_2
-    const/16 v3, 0x4d5
-
-    .line 36
-    .line 37
-    :goto_2
-    add-int/2addr v0, v3
-
-    .line 38
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 39
-    .line 40
-    iget-boolean v3, p0, Lbc4;->d:Z
-
-    .line 41
-    .line 42
+    :goto_1
     if-eqz v3, :cond_3
 
-    .line 43
-    .line 44
-    const/16 v1, 0x4cf
+    .line 113
+    .line 114
+    goto :goto_2
 
-    .line 45
-    .line 46
+    .line 115
     :cond_3
-    add-int/2addr v0, v1
+    iget v0, v1, Lq44;->c:I
 
-    .line 47
-    return v0
-.end method
+    .line 116
+    .line 117
+    if-lez v0, :cond_4
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+    .line 118
+    .line 119
+    invoke-virtual {p0, v2}, Lq44;->f(Lgy4;)V
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 120
+    .line 121
+    .line 122
+    :cond_4
+    :goto_2
+    return-object v1
 
-    .line 2
-    .line 3
-    const-string v1, "NetworkState(isConnected="
+    .line 123
+    :pswitch_1
+    const/4 v0, 0x0
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 124
+    invoke-virtual {p0, v0}, Lsu/happ/proxyutility/feature/main/MainViewModel;->D(Z)V
 
-    .line 6
-    .line 7
-    .line 8
-    iget-boolean v1, p0, Lbc4;->a:Z
+    .line 125
+    .line 126
+    .line 127
+    sget-object p0, Lr98;->a:Lr98;
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    .line 128
+    .line 129
+    return-object p0
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", isValidated="
+    .line 130
+    nop
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-boolean v1, p0, Lbc4;->b:Z
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", isMetered="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-boolean v1, p0, Lbc4;->c:Z
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", isNotRoaming="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-boolean v1, p0, Lbc4;->d:Z
-
-    .line 39
-    .line 40
-    const/16 v2, 0x29
-
-    .line 41
-    .line 42
-    invoke-static {v0, v1, v2}, Lp27;->o(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object v0
-
-    .line 46
-    return-object v0
+    .line 131
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

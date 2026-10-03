@@ -1,26 +1,26 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum z35 implements xs2 {
-    CLASS(0),
-    INTERFACE(1),
-    ENUM_CLASS(2),
-    /* JADX INFO: Fake field, exist only in values array */
-    ENUM_ENTRY(3),
-    ANNOTATION_CLASS(4),
-    /* JADX INFO: Fake field, exist only in values array */
-    OBJECT(5),
-    COMPANION_OBJECT(6);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class z35 {
+    public final Object a;
 
-    public final int Q;
-
-    z35(int i) {
-        this.Q = i;
+    public final boolean equals(Object obj) {
+        if (obj instanceof z35) {
+            return m93.h(this.a, ((z35) obj).a);
+        }
+        return false;
     }
 
-    @Override // defpackage.xs2
-    public final int a() {
-        return this.Q;
+    public final int hashCode() {
+        Object obj = this.a;
+        if (obj == null) {
+            return 0;
+        }
+        return obj.hashCode();
+    }
+
+    public final String toString() {
+        return "OutputResult(result=" + this.a + ')';
     }
 }

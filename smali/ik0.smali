@@ -1,170 +1,195 @@
-.class public final Lik0;
+.class public final synthetic Lik0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lji2;
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic X:I
 
-.field public final b:Ljava/lang/reflect/Method;
+.field public final synthetic Y:Ljava/lang/String;
+
+.field public final synthetic Z:Lkq8;
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/reflect/Method;)V
-    .locals 0
+.method public synthetic constructor <init>(Ljava/lang/String;Lkq8;)V
+    .locals 1
 
-    .line 1
+    .line 12
+    const/4 v0, 0x1
+
+    iput v0, p0, Lik0;->X:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lik0;->Y:Ljava/lang/String;
+
+    iput-object p2, p0, Lik0;->Z:Lkq8;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkq8;Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
     .line 2
+    iput v0, p0, Lik0;->X:I
+
     .line 3
     .line 4
-    iput p1, p0, Lik0;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
     .line 6
-    iput-object p2, p0, Lik0;->b:Ljava/lang/reflect/Method;
-
     .line 7
-    .line 8
-    const/4 p1, 0x1
+    iput-object p1, p0, Lik0;->Z:Lkq8;
 
+    .line 8
     .line 9
-    invoke-virtual {p2, p1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    iput-object p2, p0, Lik0;->Y:Ljava/lang/String;
 
     .line 10
     .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
+.method public final invoke()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    if-ne p0, p1, :cond_0
+    iget v0, p0, Lik0;->X:I
 
     .line 2
     .line 3
-    goto :goto_0
+    sget-object v1, Lr98;->a:Lr98;
 
     .line 4
-    :cond_0
-    instance-of v0, p1, Lik0;
-
     .line 5
+    iget-object v2, p0, Lik0;->Z:Lkq8;
+
     .line 6
-    if-nez v0, :cond_1
-
     .line 7
-    .line 8
-    goto :goto_1
+    iget-object p0, p0, Lik0;->Y:Ljava/lang/String;
 
+    .line 8
     .line 9
-    :cond_1
-    check-cast p1, Lik0;
+    packed-switch v0, :pswitch_data_0
 
     .line 10
     .line 11
-    iget v0, p0, Lik0;->a:I
-
     .line 12
-    .line 13
-    iget v1, p1, Lik0;->a:I
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 13
     .line 14
     .line 15
-    if-ne v0, v1, :cond_2
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 16
     .line 17
-    iget-object v0, p0, Lik0;->b:Ljava/lang/reflect/Method;
-
     .line 18
-    .line 19
-    invoke-virtual {v0}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+    iget-object v0, v2, Lkq8;->n0:Landroidx/work/impl/WorkDatabase;
 
+    .line 19
     .line 20
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 21
     .line 22
-    move-result-object v0
-
     .line 23
-    iget-object p1, p1, Lik0;->b:Ljava/lang/reflect/Method;
+    new-instance v3, Lkk0;
 
     .line 24
     .line 25
-    invoke-virtual {p1}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+    const/4 v4, 0x0
 
     .line 26
+    invoke-direct {v3, v0, p0, v2, v4}, Lkk0;-><init>(Landroidx/work/impl/WorkDatabase;Ljava/lang/String;Lkq8;I)V
+
     .line 27
     .line 28
-    move-result-object p1
-
     .line 29
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Lba6;->o(Ljava/lang/Runnable;)V
 
     .line 30
     .line 31
     .line 32
-    move-result p1
+    iget-object p0, v2, Lkq8;->m0:Lnz0;
 
     .line 33
-    if-eqz p1, :cond_2
-
     .line 34
-    .line 35
-    :goto_0
-    const/4 p1, 0x1
+    iget-object v2, v2, Lkq8;->p0:Ljava/util/List;
 
+    .line 35
     .line 36
-    return p1
+    invoke-static {p0, v0, v2}, Lal6;->b(Lnz0;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
 
     .line 37
-    :cond_2
-    :goto_1
-    const/4 p1, 0x0
-
     .line 38
-    return p1
-.end method
+    .line 39
+    return-object v1
 
-.method public final hashCode()I
-    .locals 2
+    .line 40
+    :pswitch_0
+    iget-object v0, v2, Lkq8;->n0:Landroidx/work/impl/WorkDatabase;
 
-    .line 1
-    iget v0, p0, Lik0;->a:I
+    .line 41
+    .line 42
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 2
-    .line 3
-    mul-int/lit8 v0, v0, 0x1f
+    .line 43
+    .line 44
+    .line 45
+    new-instance v3, Lkk0;
 
-    .line 4
-    .line 5
-    iget-object v1, p0, Lik0;->b:Ljava/lang/reflect/Method;
+    .line 46
+    .line 47
+    const/4 v4, 0x1
 
-    .line 6
-    .line 7
-    invoke-virtual {v1}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+    .line 48
+    invoke-direct {v3, v0, p0, v2, v4}, Lkk0;-><init>(Landroidx/work/impl/WorkDatabase;Ljava/lang/String;Lkq8;I)V
 
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v1
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {v0, v3}, Lba6;->o(Ljava/lang/Runnable;)V
 
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    .line 52
+    .line 53
+    .line 54
+    iget-object p0, v2, Lkq8;->m0:Lnz0;
 
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
+    .line 55
+    .line 56
+    iget-object v0, v2, Lkq8;->n0:Landroidx/work/impl/WorkDatabase;
 
-    .line 15
-    add-int/2addr v1, v0
+    .line 57
+    .line 58
+    iget-object v2, v2, Lkq8;->p0:Ljava/util/List;
 
-    .line 16
-    return v1
+    .line 59
+    .line 60
+    invoke-static {p0, v0, v2}, Lal6;->b(Lnz0;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
+
+    .line 61
+    .line 62
+    .line 63
+    return-object v1
+
+    .line 64
+    nop
+
+    .line 65
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

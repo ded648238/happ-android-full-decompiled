@@ -1,69 +1,42 @@
 .class public final Lp07;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public synthetic T:Ljava/lang/Object;
+.field public final a:Ljava/lang/ref/WeakReference;
 
-.field public final synthetic U:Lq07;
+.field public b:I
 
-.field public V:I
+.field public c:Z
 
 
 # direct methods
-.method public constructor <init>(Lq07;Law0;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lp07;->U:Lq07;
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
+.method public constructor <init>(ILh10;)V
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lp07;->T:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iget p1, p0, Lp07;->V:I
-
     .line 4
+    new-instance v0, Ljava/lang/ref/WeakReference;
+
     .line 5
-    const/high16 v0, -0x80000000
-
     .line 6
+    invoke-direct {v0, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
     .line 7
-    or-int/2addr p1, v0
-
     .line 8
-    iput p1, p0, Lp07;->V:I
-
     .line 9
+    iput-object v0, p0, Lp07;->a:Ljava/lang/ref/WeakReference;
+
     .line 10
-    iget-object p1, p0, Lp07;->U:Lq07;
-
     .line 11
+    iput p1, p0, Lp07;->b:I
+
     .line 12
-    invoke-virtual {p1, p0}, Lq07;->x(Law0;)Ljava/lang/Object;
-
     .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    return-object p1
+    return-void
 .end method

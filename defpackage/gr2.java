@@ -1,48 +1,23 @@
 package defpackage;
 
-import android.R;
-import android.app.Dialog;
-import android.graphics.Rect;
-import android.graphics.RectF;
-import android.os.Build;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewConfiguration;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class gr2 extends d31 {
+    public /* synthetic */ Object c0;
+    public final /* synthetic */ hr2 d0;
+    public int e0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class gr2 implements View.OnTouchListener {
-    public final Dialog Q;
-    public final int R;
-    public final int S;
-    public final int T;
-
-    public gr2(Dialog dialog, Rect rect) {
-        this.Q = dialog;
-        this.R = rect.left;
-        this.S = rect.top;
-        this.T = ViewConfiguration.get(dialog.getContext()).getScaledWindowTouchSlop();
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public gr2(hr2 hr2Var, d31 d31Var) {
+        super(d31Var);
+        this.d0 = hr2Var;
     }
 
-    @Override // android.view.View.OnTouchListener
-    public final boolean onTouch(View view, MotionEvent motionEvent) {
-        View viewFindViewById = view.findViewById(R.id.content);
-        int left = viewFindViewById.getLeft() + this.R;
-        int width = viewFindViewById.getWidth() + left;
-        int top = viewFindViewById.getTop() + this.S;
-        if (new RectF(left, top, width, viewFindViewById.getHeight() + top).contains(motionEvent.getX(), motionEvent.getY())) {
-            return false;
-        }
-        MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
-        if (motionEvent.getAction() == 1) {
-            motionEventObtain.setAction(4);
-        }
-        if (Build.VERSION.SDK_INT < 28) {
-            motionEventObtain.setAction(0);
-            float f = (-this.T) - 1;
-            motionEventObtain.setLocation(f, f);
-        }
-        view.performClick();
-        return this.Q.onTouchEvent(motionEventObtain);
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.e0 |= Integer.MIN_VALUE;
+        Object a = this.d0.a(this);
+        return a == j41.X ? a : new d86(a);
     }
 }

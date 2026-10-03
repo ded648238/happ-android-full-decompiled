@@ -1,151 +1,189 @@
-.class public final enum Lvx2;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lvx2;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final enum Q:Lvx2;
-
-.field public static final enum R:Lvx2;
-
-.field public static final enum S:Lvx2;
-
-.field public static final synthetic T:[Lvx2;
+.field public static final a:Lby2;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 5
 
     .line 1
-    new-instance v0, Lvx2;
+    new-instance v0, Landroid/util/Size;
 
     .line 2
     .line 3
-    const-string v1, "INFLEXIBLE"
+    const/16 v1, 0x280
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/16 v2, 0x1e0
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
+    invoke-direct {v0, v1, v2}, Landroid/util/Size;-><init>(II)V
+
     .line 8
     .line 9
-    sput-object v0, Lvx2;->Q:Lvx2;
-
     .line 10
+    sget-object v1, Lrt2;->q0:Lrt2;
+
     .line 11
-    new-instance v1, Lvx2;
-
     .line 12
+    new-instance v2, Lw36;
+
     .line 13
-    const-string v3, "FLEXIBLE_UPPER_BOUND"
-
     .line 14
-    .line 15
-    const/4 v4, 0x1
+    sget-object v3, Laz6;->b:Landroid/util/Size;
 
+    .line 15
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v3}, Lw36;-><init>(Landroid/util/Size;)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v1, Lvx2;->R:Lvx2;
+    new-instance v3, Lv36;
 
     .line 20
     .line 21
-    new-instance v3, Lvx2;
+    invoke-direct {v3, v1, v2}, Lv36;-><init>(Lrt2;Lw36;)V
 
     .line 22
     .line 23
-    const-string v5, "FLEXIBLE_LOWER_BOUND"
-
     .line 24
-    .line 25
-    const/4 v6, 0x2
+    new-instance v1, Lux2;
 
+    .line 25
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v2, 0x0
 
     .line 27
+    invoke-direct {v1, v2}, Lux2;-><init>(I)V
+
     .line 28
     .line 29
-    sput-object v3, Lvx2;->S:Lvx2;
-
     .line 30
-    .line 31
-    const/4 v5, 0x3
+    sget-object v4, Luy2;->v:Luw;
 
+    .line 31
     .line 32
-    new-array v5, v5, [Lvx2;
+    iget-object v1, v1, Lux2;->Y:Leq4;
 
     .line 33
     .line 34
-    aput-object v0, v5, v2
+    invoke-virtual {v1, v4, v0}, Leq4;->y(Luw;Ljava/lang/Object;)V
 
     .line 35
     .line 36
-    aput-object v1, v5, v4
-
     .line 37
-    .line 38
-    aput-object v3, v5, v6
+    sget-object v0, Lud8;->M:Luw;
 
+    .line 38
     .line 39
+    const/4 v4, 0x1
+
     .line 40
-    sput-object v5, Lvx2;->T:[Lvx2;
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 41
     .line 42
+    .line 43
+    move-result-object v4
+
+    .line 44
+    invoke-virtual {v1, v0, v4}, Leq4;->y(Luw;Ljava/lang/Object;)V
+
+    .line 45
+    .line 46
+    .line 47
+    sget-object v0, Luy2;->q:Luw;
+
+    .line 48
+    .line 49
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v2
+
+    .line 53
+    invoke-virtual {v1, v0, v2}, Leq4;->y(Luw;Ljava/lang/Object;)V
+
+    .line 54
+    .line 55
+    .line 56
+    sget-object v0, Luy2;->y:Luw;
+
+    .line 57
+    .line 58
+    invoke-virtual {v1, v0, v3}, Leq4;->y(Luw;Ljava/lang/Object;)V
+
+    .line 59
+    .line 60
+    .line 61
+    sget-object v0, Lrt1;->d:Lrt1;
+
+    .line 62
+    .line 63
+    invoke-virtual {v0, v0}, Lrt1;->equals(Ljava/lang/Object;)Z
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v2
+
+    .line 67
+    if-eqz v2, :cond_0
+
+    .line 68
+    .line 69
+    sget-object v2, Lry2;->p:Luw;
+
+    .line 70
+    .line 71
+    invoke-virtual {v1, v2, v0}, Leq4;->y(Luw;Ljava/lang/Object;)V
+
+    .line 72
+    .line 73
+    .line 74
+    new-instance v0, Lby2;
+
+    .line 75
+    .line 76
+    invoke-static {v1}, Lw25;->a(Ljz0;)Lw25;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v1
+
+    .line 80
+    invoke-direct {v0, v1}, Lby2;-><init>(Lw25;)V
+
+    .line 81
+    .line 82
+    .line 83
+    sput-object v0, Lvx2;->a:Lby2;
+
+    .line 84
+    .line 85
     return-void
-.end method
 
-.method public static valueOf(Ljava/lang/String;)Lvx2;
-    .locals 1
+    .line 86
+    :cond_0
+    const-string v0, "ImageAnalysis currently only supports SDR"
 
-    .line 1
-    const-class v0, Lvx2;
+    .line 87
+    .line 88
+    invoke-static {v0}, Lra;->g(Ljava/lang/String;)V
 
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lvx2;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lvx2;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lvx2;->T:[Lvx2;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lvx2;
-
-    .line 8
-    .line 9
-    return-object v0
+    .line 89
+    .line 90
+    .line 91
+    return-void
 .end method

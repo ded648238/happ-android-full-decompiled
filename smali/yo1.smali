@@ -1,62 +1,24 @@
 .class public final Lyo1;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/RuntimeException;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public T:Lso1;
-
-.field public U:Lml2;
-
-.field public V:Lbl4;
-
-.field public W:Lbr1;
-
-.field public X:Ljava/util/List;
-
-.field public Y:I
-
-.field public Z:I
-
-.field public synthetic a0:Ljava/lang/Object;
-
-.field public b0:I
-
-
-# virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iput-object p1, p0, Lyo1;->a0:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    iget p1, p0, Lyo1;->b0:I
-
-    .line 4
-    .line 5
-    const/high16 v0, -0x80000000
-
-    .line 6
-    .line 7
-    or-int/2addr p1, v0
-
-    .line 8
-    iput p1, p0, Lyo1;->b0:I
-
-    .line 9
-    .line 10
-    const/4 p1, 0x0
-
-    .line 11
-    invoke-static {p1, p1, p1, p1, p0}, Lf93;->f0(Lso1;Lml2;Lbl4;Lbr1;Law0;)Lso1;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    return-object p1
-.end method
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00060\u0001j\u0002`\u0002\u00a8\u0006\u0003"
+    }
+    d2 = {
+        "Lyo1;",
+        "Ljava/lang/RuntimeException;",
+        "Lkotlin/RuntimeException;",
+        "camera-camera2-pipe"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation

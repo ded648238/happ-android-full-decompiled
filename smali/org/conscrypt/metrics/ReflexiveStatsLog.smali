@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/metrics/ReflexiveStatsLog;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -27,7 +27,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-static {}, Lorg/conscrypt/metrics/ReflexiveStatsLog;->initStatsLogClass()Ljava/lang/Class;
@@ -58,33 +58,27 @@
 
     .line 14
     .line 15
-    const/4 v3, 0x1
+    const-string v3, "write"
 
     .line 16
-    new-array v3, v3, [Ljava/lang/Class;
-
     .line 17
+    filled-new-array {v1}, [Ljava/lang/Class;
+
     .line 18
-    const/4 v4, 0x0
-
     .line 19
-    aput-object v1, v3, v4
-
     .line 20
+    move-result-object v1
+
     .line 21
-    const-string v1, "write"
+    invoke-direct {v2, v0, v3, v1}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
 
     .line 22
     .line 23
-    invoke-direct {v2, v0, v1, v3}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
-
     .line 24
-    .line 25
-    .line 26
     sput-object v2, Lorg/conscrypt/metrics/ReflexiveStatsLog;->write:Lorg/conscrypt/metrics/OptionalMethod;
 
-    .line 27
-    .line 28
+    .line 25
+    .line 26
     return-void
 .end method
 
@@ -173,7 +167,7 @@
 .end method
 
 .method public static write(Lorg/conscrypt/metrics/ReflexiveStatsEvent;)V
-    .locals 3
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent;->getStatsEvent()Ljava/lang/Object;
@@ -192,25 +186,19 @@
 
     .line 8
     .line 9
-    const/4 v1, 0x1
+    filled-new-array {p0}, [Ljava/lang/Object;
 
     .line 10
-    new-array v1, v1, [Ljava/lang/Object;
-
     .line 11
     .line 12
-    const/4 v2, 0x0
+    move-result-object p0
 
     .line 13
-    aput-object p0, v1, v2
+    invoke-virtual {v0, p0}, Lorg/conscrypt/metrics/OptionalMethod;->invokeStatic([Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Lorg/conscrypt/metrics/OptionalMethod;->invokeStatic([Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 16
-    .line 17
-    .line 18
     :cond_0
     return-void
 .end method

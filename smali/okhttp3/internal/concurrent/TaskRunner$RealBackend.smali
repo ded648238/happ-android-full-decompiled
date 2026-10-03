@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/concurrent/TaskRunner$RealBackend;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/concurrent/TaskRunner$Backend;
@@ -29,7 +29,7 @@
         "(Ljava/util/concurrent/ThreadFactory;)V",
         "Lokhttp3/internal/concurrent/TaskRunner;",
         "taskRunner",
-        "Lbh7;",
+        "Lr98;",
         "beforeTask",
         "(Lokhttp3/internal/concurrent/TaskRunner;)V",
         "",
@@ -155,7 +155,7 @@
 .end method
 
 .method public coordinatorWait(Lokhttp3/internal/concurrent/TaskRunner;J)V
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -177,56 +177,55 @@
 
     .line 8
     .line 9
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     .line 10
-    .line 11
     sub-long v0, p2, v0
 
+    .line 11
     .line 12
-    .line 13
     const-wide/16 v4, 0x0
 
+    .line 13
     .line 14
+    cmp-long p0, v2, v4
+
     .line 15
-    cmp-long v6, v2, v4
-
     .line 16
+    if-gtz p0, :cond_1
+
     .line 17
-    if-gtz v6, :cond_1
-
     .line 18
+    cmp-long p0, p2, v4
+
     .line 19
-    cmp-long v6, p2, v4
-
     .line 20
-    .line 21
-    if-lez v6, :cond_0
+    if-lez p0, :cond_0
 
+    .line 21
     .line 22
-    .line 23
     goto :goto_0
 
-    .line 24
+    .line 23
     :cond_0
     return-void
 
-    .line 25
+    .line 24
     :cond_1
     :goto_0
-    long-to-int p2, v0
+    long-to-int p0, v0
+
+    .line 25
+    invoke-virtual {p1, v2, v3, p0}, Ljava/lang/Object;->wait(JI)V
 
     .line 26
-    invoke-virtual {p1, v2, v3, p2}, Ljava/lang/Object;->wait(JI)V
-
     .line 27
     .line 28
-    .line 29
     return-void
 .end method
 
 .method public execute(Ljava/lang/Runnable;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -234,11 +233,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskRunner$RealBackend;->executor:Ljava/util/concurrent/ThreadPoolExecutor;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskRunner$RealBackend;->executor:Ljava/util/concurrent/ThreadPoolExecutor;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/ThreadPoolExecutor;->execute(Ljava/lang/Runnable;)V
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/ThreadPoolExecutor;->execute(Ljava/lang/Runnable;)V
 
     .line 7
     .line 8
@@ -262,14 +261,14 @@
 .end method
 
 .method public final shutdown()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskRunner$RealBackend;->executor:Ljava/util/concurrent/ThreadPoolExecutor;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskRunner$RealBackend;->executor:Ljava/util/concurrent/ThreadPoolExecutor;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/ThreadPoolExecutor;->shutdown()V
+    invoke-virtual {p0}, Ljava/util/concurrent/ThreadPoolExecutor;->shutdown()V
 
     .line 4
     .line 5

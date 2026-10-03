@@ -1,57 +1,42 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class c85 {
-    public static int lb_action_text_color = 2131099769;
-    public static int lb_background_protection = 2131099770;
-    public static int lb_basic_card_bg_color = 2131099771;
-    public static int lb_basic_card_content_text_color = 2131099772;
-    public static int lb_basic_card_info_bg_color = 2131099773;
-    public static int lb_basic_card_title_text_color = 2131099774;
-    public static int lb_browse_header_color = 2131099775;
-    public static int lb_browse_header_description_color = 2131099776;
-    public static int lb_browse_title_color = 2131099777;
-    public static int lb_control_button_color = 2131099778;
-    public static int lb_control_button_text = 2131099779;
-    public static int lb_default_brand_color = 2131099780;
-    public static int lb_default_brand_color_dark = 2131099781;
-    public static int lb_default_search_color = 2131099782;
-    public static int lb_default_search_icon_color = 2131099783;
-    public static int lb_details_description_body_color = 2131099784;
-    public static int lb_details_description_color = 2131099785;
-    public static int lb_details_overview_bg_color = 2131099786;
-    public static int lb_error_background_color_opaque = 2131099787;
-    public static int lb_error_background_color_translucent = 2131099788;
-    public static int lb_error_message = 2131099789;
-    public static int lb_grey = 2131099790;
-    public static int lb_guidedactions_background = 2131099791;
-    public static int lb_guidedactions_background_dark = 2131099792;
-    public static int lb_guidedactions_item_unselected_text_color = 2131099793;
-    public static int lb_list_item_unselected_text_color = 2131099794;
-    public static int lb_media_background_color = 2131099795;
-    public static int lb_page_indicator_arrow_background = 2131099796;
-    public static int lb_page_indicator_arrow_shadow = 2131099797;
-    public static int lb_page_indicator_dot = 2131099798;
-    public static int lb_playback_background_progress_color = 2131099799;
-    public static int lb_playback_controls_background_dark = 2131099800;
-    public static int lb_playback_controls_background_light = 2131099801;
-    public static int lb_playback_controls_time_text_color = 2131099802;
-    public static int lb_playback_icon_highlight_no_theme = 2131099803;
-    public static int lb_playback_media_row_highlight_color = 2131099804;
-    public static int lb_playback_media_row_separator_highlight_color = 2131099805;
-    public static int lb_playback_now_playing_bar_color = 2131099806;
-    public static int lb_playback_progress_color_no_theme = 2131099807;
-    public static int lb_playback_progress_secondary_color_no_theme = 2131099808;
-    public static int lb_playback_secondary_progress_color = 2131099809;
-    public static int lb_search_bar_hint = 2131099810;
-    public static int lb_search_bar_hint_speech_mode = 2131099811;
-    public static int lb_search_bar_text = 2131099812;
-    public static int lb_search_bar_text_speech_mode = 2131099813;
-    public static int lb_search_plate_hint_text_color = 2131099814;
-    public static int lb_speech_orb_not_recording = 2131099815;
-    public static int lb_speech_orb_not_recording_icon = 2131099816;
-    public static int lb_speech_orb_not_recording_pulsed = 2131099817;
-    public static int lb_speech_orb_recording = 2131099818;
-    public static int lb_tv_white = 2131099819;
-    public static int lb_view_dim_mask_color = 2131099820;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class c85 extends p85 {
+    public final float c;
+    public final float d;
+    public final float e;
+    public final float f;
+
+    public c85(float f, float f2, float f3, float f4) {
+        super(1);
+        this.c = f;
+        this.d = f2;
+        this.e = f3;
+        this.f = f4;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof c85)) {
+            return false;
+        }
+        c85 c85Var = (c85) obj;
+        return Float.compare(this.c, c85Var.c) == 0 && Float.compare(this.d, c85Var.d) == 0 && Float.compare(this.e, c85Var.e) == 0 && Float.compare(this.f, c85Var.f) == 0;
+    }
+
+    public final int hashCode() {
+        return Float.hashCode(this.f) + eb7.c(eb7.c(Float.hashCode(this.c) * 31, this.d, 31), this.e, 31);
+    }
+
+    public final String toString() {
+        StringBuilder u = eh0.u("QuadTo(x1=", this.c, ", y1=", this.d, ", x2=");
+        u.append(this.e);
+        u.append(", y2=");
+        u.append(this.f);
+        u.append(")");
+        return u.toString();
+    }
 }

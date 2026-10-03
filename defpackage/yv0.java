@@ -1,9 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface yv0 {
-    void e(Object obj);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class yv0 implements pw0 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ Object Y;
 
-    sw0 n();
+    public /* synthetic */ yv0(int i, Object obj) {
+        this.X = i;
+        this.Y = obj;
+    }
+
+    @Override // defpackage.pw0
+    public final Object b(v5 v5Var) {
+        int i = this.X;
+        return this.Y;
+    }
 }

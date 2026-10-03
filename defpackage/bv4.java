@@ -1,56 +1,33 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class bv4 {
-    public int Q;
-    public int R;
-    public long S = 0;
-    public long T = cv4.a;
-    public long U = 0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class bv4 {
+    public final wq4 a = new wq4(0, new ru4[16]);
+    public final dq4 b = new dq4(10);
 
-    public abstract int J(g8 g8Var);
-
-    public int L() {
-        return (int) (this.S & 4294967295L);
-    }
-
-    public int R() {
-        return (int) (this.S >> 32);
-    }
-
-    public final void T() {
-        this.Q = xf5.o((int) (this.S >> 32), cu0.j(this.T), cu0.h(this.T));
-        int iO = xf5.o((int) (this.S & 4294967295L), cu0.i(this.T), cu0.g(this.T));
-        this.R = iO;
-        int i = this.Q;
-        long j = this.S;
-        this.U = (((long) ((i - ((int) (j >> 32))) / 2)) << 32) | (4294967295L & ((long) ((iO - ((int) (j & 4294967295L))) / 2)));
-    }
-
-    public abstract void V(long j, float f, j72 j72Var);
-
-    public void W(long j, float f, rc2 rc2Var) {
-        V(j, f, null);
-    }
-
-    public final void X(long j) {
-        if (ms2.a(this.S, j)) {
-            return;
+    public boolean a(k84 k84Var, gv3 gv3Var, hm0 hm0Var, boolean z) {
+        wq4 wq4Var = this.a;
+        Object[] objArr = wq4Var.X;
+        int i = wq4Var.Z;
+        boolean z2 = false;
+        for (int i2 = 0; i2 < i; i2++) {
+            z2 = ((ru4) objArr[i2]).a(k84Var, gv3Var, hm0Var, z) || z2;
         }
-        this.S = j;
-        T();
+        return z2;
     }
 
-    public final void Z(long j) {
-        if (cu0.b(this.T, j)) {
-            return;
+    public void b(hm0 hm0Var) {
+        wq4 wq4Var = this.a;
+        int i = wq4Var.Z;
+        while (true) {
+            i--;
+            if (-1 >= i) {
+                return;
+            }
+            if (((ru4) wq4Var.X[i]).d.Y == 0) {
+                wq4Var.k(i);
+            }
         }
-        this.T = j;
-        T();
-    }
-
-    public Object s() {
-        return null;
     }
 }

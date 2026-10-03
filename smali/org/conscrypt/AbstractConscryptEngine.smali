@@ -1,6 +1,6 @@
 .class abstract Lorg/conscrypt/AbstractConscryptEngine;
 .super Ljavax/net/ssl/SSLEngine;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -32,19 +32,11 @@
 .method public abstract getApplicationProtocols()[Ljava/lang/String;
 .end method
 
-.method public abstract getChannelId()[B
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljavax/net/ssl/SSLException;
-        }
-    .end annotation
-.end method
-
 .method public abstract getHandshakeApplicationProtocol()Ljava/lang/String;
 .end method
 
 .method public final getHandshakeSession()Ljavax/net/ssl/SSLSession;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/AbstractConscryptEngine;->handshakeSession()Ljavax/net/ssl/SSLSession;
@@ -52,10 +44,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public abstract getHostname()Ljava/lang/String;
@@ -85,10 +77,7 @@
 .method public abstract setBufferAllocator(Lorg/conscrypt/BufferAllocator;)V
 .end method
 
-.method public abstract setChannelIdEnabled(Z)V
-.end method
-
-.method public abstract setChannelIdPrivateKey(Ljava/security/PrivateKey;)V
+.method public abstract setEchConfigList([B)V
 .end method
 
 .method public abstract setHandshakeListener(Lorg/conscrypt/HandshakeListener;)V

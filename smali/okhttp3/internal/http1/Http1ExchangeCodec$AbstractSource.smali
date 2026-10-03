@@ -1,9 +1,9 @@
 .class abstract Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lle6;
+.implements Ld27;
 
 
 # annotations
@@ -22,25 +22,25 @@
     }
     d2 = {
         "Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;",
-        "Lle6;",
+        "Ld27;",
         "<init>",
         "(Lokhttp3/internal/http1/Http1ExchangeCodec;)V",
-        "Lo47;",
+        "Lax7;",
         "timeout",
-        "()Lo47;",
-        "Lf50;",
+        "()Lax7;",
+        "Ll70;",
         "sink",
         "",
         "byteCount",
         "read",
-        "(Lf50;J)J",
-        "Lbh7;",
+        "(Ll70;J)J",
+        "Lr98;",
         "responseBodyComplete",
         "()V",
-        "Lq42;",
-        "Lq42;",
+        "Lhf2;",
+        "Lhf2;",
         "getTimeout",
-        "()Lq42;",
+        "()Lhf2;",
         "",
         "closed",
         "Z",
@@ -65,7 +65,7 @@
 
 .field final synthetic this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
-.field private final timeout:Lq42;
+.field private final timeout:Lhf2;
 
 
 # direct methods
@@ -87,11 +87,11 @@
     .line 4
     .line 5
     .line 6
-    new-instance v0, Lq42;
+    new-instance v0, Lhf2;
 
     .line 7
     .line 8
-    invoke-static {p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSource$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Ls50;
+    invoke-static {p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSource$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lf80;
 
     .line 9
     .line 10
@@ -99,7 +99,7 @@
     move-result-object p1
 
     .line 12
-    invoke-interface {p1}, Lle6;->timeout()Lo47;
+    invoke-interface {p1}, Ld27;->timeout()Lax7;
 
     .line 13
     .line 14
@@ -107,12 +107,12 @@
     move-result-object p1
 
     .line 16
-    invoke-direct {v0, p1}, Lq42;-><init>(Lo47;)V
+    invoke-direct {v0, p1}, Lhf2;-><init>(Lax7;)V
 
     .line 17
     .line 18
     .line 19
-    iput-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->timeout:Lq42;
+    iput-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->timeout:Lhf2;
 
     .line 20
     .line 21
@@ -130,28 +130,28 @@
 .end method
 
 .method public final getClosed()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->closed:Z
+    iget-boolean p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->closed:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public final getTimeout()Lq42;
-    .locals 1
+.method public final getTimeout()Lhf2;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->timeout:Lq42;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->timeout:Lhf2;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public read(Lf50;J)J
+.method public read(Ll70;J)J
     .locals 1
 
     .line 1
@@ -165,7 +165,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSource$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Ls50;
+    invoke-static {v0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSource$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lf80;
 
     .line 7
     .line 8
@@ -173,17 +173,17 @@
     move-result-object v0
 
     .line 10
-    invoke-interface {v0, p1, p2, p3}, Lle6;->read(Lf50;J)J
+    invoke-interface {v0, p1, p2, p3}, Ld27;->read(Ll70;J)J
 
     .line 11
     .line 12
     .line 13
-    move-result-wide p1
+    move-result-wide p0
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 14
-    return-wide p1
+    return-wide p0
 
     .line 15
     :catch_0
@@ -265,20 +265,20 @@
 
     .line 21
     .line 22
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->timeout:Lq42;
+    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->timeout:Lhf2;
 
     .line 23
     .line 24
-    invoke-static {v2, v0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$detachTimeout(Lokhttp3/internal/http1/Http1ExchangeCodec;Lq42;)V
+    invoke-static {v2, v0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$detachTimeout(Lokhttp3/internal/http1/Http1ExchangeCodec;Lhf2;)V
 
     .line 25
     .line 26
     .line 27
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
     .line 28
     .line 29
-    invoke-static {v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$setState$p(Lokhttp3/internal/http1/Http1ExchangeCodec;I)V
+    invoke-static {p0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$setState$p(Lokhttp3/internal/http1/Http1ExchangeCodec;I)V
 
     .line 30
     .line 31
@@ -287,7 +287,7 @@
 
     .line 33
     :cond_1
-    const-string v0, "state: "
+    const-string p0, "state: "
 
     .line 34
     .line 35
@@ -296,10 +296,10 @@
     .line 36
     .line 37
     .line 38
-    move-result v1
+    move-result v0
 
     .line 39
-    invoke-static {v1, v0}, Len0;->e(ILjava/lang/String;)V
+    invoke-static {v0, p0}, Lku0;->e(ILjava/lang/String;)V
 
     .line 40
     .line 41
@@ -318,13 +318,13 @@
     return-void
 .end method
 
-.method public timeout()Lo47;
-    .locals 1
+.method public timeout()Lax7;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->timeout:Lq42;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$AbstractSource;->timeout:Lhf2;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

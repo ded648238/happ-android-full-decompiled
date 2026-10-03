@@ -1,6 +1,6 @@
 .class public final enum Lj$/time/temporal/e;
 .super Lj$/time/temporal/g;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -25,120 +25,7 @@
 
 
 # virtual methods
-.method public final g(Lj$/time/temporal/TemporalAccessor;)Z
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
-
-    .line 2
-    .line 3
-    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->d(Lj$/time/temporal/TemporalField;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-eqz v0, :cond_0
-
-    .line 8
-    .line 9
-    sget-object v0, Lj$/time/temporal/i;->a:Lj$/time/temporal/g;
-
-    .line 10
-    .line 11
-    invoke-static {p1}, Lj$/com/android/tools/r8/a;->v(Lj$/time/temporal/TemporalAccessor;)Lj$/time/chrono/k;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    sget-object v0, Lj$/time/chrono/r;->c:Lj$/time/chrono/r;
-
-    .line 16
-    .line 17
-    invoke-interface {p1, v0}, Lj$/time/chrono/k;->equals(Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    if-eqz p1, :cond_0
-
-    .line 22
-    .line 23
-    const/4 p1, 0x1
-
-    .line 24
-    return p1
-
-    .line 25
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 26
-    return p1
-.end method
-
-.method public final h(Lj$/time/temporal/TemporalAccessor;)Lj$/time/temporal/s;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0, p1}, Lj$/time/temporal/e;->g(Lj$/time/temporal/TemporalAccessor;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    invoke-static {p1}, Lj$/time/LocalDate;->I(Lj$/time/temporal/TemporalAccessor;)Lj$/time/LocalDate;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    invoke-static {p1}, Lj$/time/temporal/g;->I(Lj$/time/LocalDate;)Lj$/time/temporal/s;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    return-object p1
-
-    .line 16
-    :cond_0
-    new-instance p1, Lj$/time/temporal/r;
-
-    .line 17
-    .line 18
-    const-string v0, "Unsupported field: WeekOfWeekBasedYear"
-
-    .line 19
-    .line 20
-    invoke-direct {p1, v0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
-
-    .line 21
-    .line 22
-    .line 23
-    throw p1
-.end method
-
-.method public final i(Ljava/util/Map;Lj$/time/format/u;Lj$/time/format/v;)Lj$/time/temporal/TemporalAccessor;
+.method public final C(Ljava/util/Map;Lj$/time/format/u;Lj$/time/format/v;)Lj$/time/temporal/TemporalAccessor;
     .locals 16
 
     .line 1
@@ -202,7 +89,7 @@
     .line 29
     .line 30
     :cond_0
-    invoke-interface {v3}, Lj$/time/temporal/TemporalField;->l()Lj$/time/temporal/s;
+    invoke-interface {v3}, Lj$/time/temporal/TemporalField;->F()Lj$/time/temporal/s;
 
     .line 31
     .line 32
@@ -254,7 +141,7 @@
 
     .line 55
     .line 56
-    invoke-static/range {p2 .. p2}, Lj$/com/android/tools/r8/a;->v(Lj$/time/temporal/TemporalAccessor;)Lj$/time/chrono/k;
+    invoke-static/range {p2 .. p2}, Lj$/time/chrono/k;->o(Lj$/time/temporal/TemporalAccessor;)Lj$/time/chrono/k;
 
     .line 57
     .line 58
@@ -331,7 +218,7 @@
 
     .line 92
     .line 93
-    invoke-virtual {v4, v14, v15}, Lj$/time/LocalDate;->S(J)Lj$/time/LocalDate;
+    invoke-virtual {v4, v14, v15}, Lj$/time/LocalDate;->W(J)Lj$/time/LocalDate;
 
     .line 94
     .line 95
@@ -358,7 +245,7 @@
 
     .line 103
     .line 104
-    invoke-static {v6, v7, v12, v13}, Lj$/com/android/tools/r8/a;->D(JJ)J
+    invoke-static {v6, v7, v12, v13}, Ljava/lang/Math;->subtractExact(JJ)J
 
     .line 105
     .line 106
@@ -369,7 +256,7 @@
     div-long/2addr v14, v12
 
     .line 109
-    invoke-virtual {v4, v14, v15}, Lj$/time/LocalDate;->S(J)Lj$/time/LocalDate;
+    invoke-virtual {v4, v14, v15}, Lj$/time/LocalDate;->W(J)Lj$/time/LocalDate;
 
     .line 110
     .line 111
@@ -392,7 +279,7 @@
     .line 118
     :cond_2
     :goto_1
-    invoke-static {v8, v9, v10, v11}, Lj$/com/android/tools/r8/a;->D(JJ)J
+    invoke-static {v8, v9, v10, v11}, Ljava/lang/Math;->subtractExact(JJ)J
 
     .line 119
     .line 120
@@ -400,7 +287,7 @@
     move-result-wide v8
 
     .line 122
-    invoke-virtual {v4, v8, v9}, Lj$/time/LocalDate;->S(J)Lj$/time/LocalDate;
+    invoke-virtual {v4, v8, v9}, Lj$/time/LocalDate;->W(J)Lj$/time/LocalDate;
 
     .line 123
     .line 124
@@ -408,7 +295,7 @@
     move-result-object v2
 
     .line 126
-    invoke-virtual {v2, v6, v7, v5}, Lj$/time/LocalDate;->V(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
+    invoke-virtual {v2, v6, v7, v5}, Lj$/time/LocalDate;->Z(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
 
     .line 127
     .line 128
@@ -469,7 +356,7 @@
 
     .line 154
     .line 155
-    invoke-static {v4}, Lj$/time/temporal/g;->I(Lj$/time/LocalDate;)Lj$/time/temporal/s;
+    invoke-static {v4}, Lj$/time/temporal/g;->T(Lj$/time/LocalDate;)Lj$/time/temporal/s;
 
     .line 156
     .line 157
@@ -486,7 +373,7 @@
 
     .line 163
     :cond_5
-    invoke-virtual {v0}, Lj$/time/temporal/e;->l()Lj$/time/temporal/s;
+    invoke-virtual {v0}, Lj$/time/temporal/e;->F()Lj$/time/temporal/s;
 
     .line 164
     .line 165
@@ -504,7 +391,7 @@
     sub-long/2addr v8, v10
 
     .line 171
-    invoke-virtual {v4, v8, v9}, Lj$/time/LocalDate;->S(J)Lj$/time/LocalDate;
+    invoke-virtual {v4, v8, v9}, Lj$/time/LocalDate;->W(J)Lj$/time/LocalDate;
 
     .line 172
     .line 173
@@ -515,7 +402,7 @@
     int-to-long v6, v6
 
     .line 176
-    invoke-virtual {v2, v6, v7, v5}, Lj$/time/LocalDate;->V(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
+    invoke-virtual {v2, v6, v7, v5}, Lj$/time/LocalDate;->Z(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
 
     .line 177
     .line 178
@@ -543,11 +430,11 @@
 
     .line 190
     :cond_7
-    const-string v1, "Resolve requires IsoChronology"
+    const-string v0, "Resolve requires IsoChronology"
 
     .line 191
     .line 192
-    invoke-static {v1}, Lj$/time/f;->j(Ljava/lang/String;)V
+    invoke-static {v0}, Lj$/time/g;->a(Ljava/lang/String;)V
 
     .line 193
     .line 194
@@ -557,7 +444,7 @@
     return-object v7
 .end method
 
-.method public final l()Lj$/time/temporal/s;
+.method public final F()Lj$/time/temporal/s;
     .locals 4
 
     .line 1
@@ -574,83 +461,72 @@
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
-.method public final t(Lj$/time/temporal/TemporalAccessor;)J
-    .locals 2
+.method public final J(Lj$/time/temporal/TemporalAccessor;)J
+    .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Lj$/time/temporal/e;->g(Lj$/time/temporal/TemporalAccessor;)Z
+    invoke-virtual {p0, p1}, Lj$/time/temporal/e;->t(Lj$/time/temporal/TemporalAccessor;)Z
 
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 6
     .line 7
-    invoke-static {p1}, Lj$/time/LocalDate;->I(Lj$/time/temporal/TemporalAccessor;)Lj$/time/LocalDate;
+    invoke-static {p1}, Lj$/time/LocalDate;->C(Lj$/time/temporal/TemporalAccessor;)Lj$/time/LocalDate;
 
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
 
     .line 11
-    invoke-static {p1}, Lj$/time/temporal/g;->z(Lj$/time/LocalDate;)I
+    invoke-static {p0}, Lj$/time/temporal/g;->Q(Lj$/time/LocalDate;)I
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result p0
 
     .line 15
-    int-to-long v0, p1
+    int-to-long p0, p0
 
     .line 16
-    return-wide v0
+    return-wide p0
 
     .line 17
     :cond_0
-    new-instance p1, Lj$/time/temporal/r;
+    new-instance p0, Lj$/time/temporal/r;
 
     .line 18
     .line 19
-    const-string v0, "Unsupported field: WeekOfWeekBasedYear"
+    const-string p1, "Unsupported field: WeekOfWeekBasedYear"
 
     .line 20
     .line 21
-    invoke-direct {p1, v0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 22
     .line 23
     .line 24
-    throw p1
+    throw p0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    const-string v0, "WeekOfWeekBasedYear"
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final x(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
+.method public final O(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lj$/time/temporal/e;->l()Lj$/time/temporal/s;
+    invoke-virtual {p0}, Lj$/time/temporal/e;->F()Lj$/time/temporal/s;
 
     .line 2
     .line 3
@@ -663,7 +539,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0, p1}, Lj$/time/temporal/e;->t(Lj$/time/temporal/TemporalAccessor;)J
+    invoke-virtual {p0, p1}, Lj$/time/temporal/e;->J(Lj$/time/temporal/TemporalAccessor;)J
 
     .line 9
     .line 10
@@ -671,7 +547,7 @@
     move-result-wide v0
 
     .line 12
-    invoke-static {p2, p3, v0, v1}, Lj$/com/android/tools/r8/a;->D(JJ)J
+    invoke-static {p2, p3, v0, v1}, Ljava/lang/Math;->subtractExact(JJ)J
 
     .line 13
     .line 14
@@ -679,17 +555,141 @@
     move-result-wide p2
 
     .line 16
-    sget-object v0, Lj$/time/temporal/a;->WEEKS:Lj$/time/temporal/a;
+    sget-object p0, Lj$/time/temporal/a;->WEEKS:Lj$/time/temporal/a;
 
     .line 17
     .line 18
-    invoke-interface {p1, p2, p3, v0}, Lj$/time/temporal/l;->c(JLj$/time/temporal/q;)Lj$/time/temporal/l;
+    invoke-interface {p1, p2, p3, p0}, Lj$/time/temporal/l;->c(JLj$/time/temporal/q;)Lj$/time/temporal/l;
 
     .line 19
     .line 20
     .line 21
-    move-result-object p1
+    move-result-object p0
 
     .line 22
-    return-object p1
+    return-object p0
+.end method
+
+.method public final t(Lj$/time/temporal/TemporalAccessor;)Z
+    .locals 0
+
+    .line 1
+    sget-object p0, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
+
+    .line 2
+    .line 3
+    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalAccessor;->i(Lj$/time/temporal/TemporalField;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    if-eqz p0, :cond_0
+
+    .line 8
+    .line 9
+    sget-object p0, Lj$/time/temporal/i;->a:Lj$/time/temporal/g;
+
+    .line 10
+    .line 11
+    invoke-static {p1}, Lj$/time/chrono/k;->o(Lj$/time/temporal/TemporalAccessor;)Lj$/time/chrono/k;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    sget-object p1, Lj$/time/chrono/r;->c:Lj$/time/chrono/r;
+
+    .line 16
+    .line 17
+    invoke-interface {p0, p1}, Lj$/time/chrono/k;->equals(Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    if-eqz p0, :cond_0
+
+    .line 22
+    .line 23
+    const/4 p0, 0x1
+
+    .line 24
+    return p0
+
+    .line 25
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 26
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    const-string p0, "WeekOfWeekBasedYear"
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final x(Lj$/time/temporal/TemporalAccessor;)Lj$/time/temporal/s;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lj$/time/temporal/e;->t(Lj$/time/temporal/TemporalAccessor;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    if-eqz p0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-static {p1}, Lj$/time/LocalDate;->C(Lj$/time/temporal/TemporalAccessor;)Lj$/time/LocalDate;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    invoke-static {p0}, Lj$/time/temporal/g;->T(Lj$/time/LocalDate;)Lj$/time/temporal/s;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    return-object p0
+
+    .line 16
+    :cond_0
+    new-instance p0, Lj$/time/temporal/r;
+
+    .line 17
+    .line 18
+    const-string p1, "Unsupported field: WeekOfWeekBasedYear"
+
+    .line 19
+    .line 20
+    invoke-direct {p0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    throw p0
 .end method

@@ -1,20 +1,55 @@
-.class public final synthetic Lme2;
+.class public final Lme2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lu72;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:F
+.field public final a:Landroid/net/Uri;
 
-.field public final synthetic R:F
+.field public final b:I
+
+.field public final c:I
+
+.field public final d:Z
+
+.field public final e:Ljava/lang/String;
+
+.field public final f:I
 
 
 # direct methods
-.method public synthetic constructor <init>(FF)V
+.method public constructor <init>(Landroid/net/Uri;IIZLjava/lang/String;I)V
     .locals 0
+
+    .line 39
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 40
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 41
+    iput-object p1, p0, Lme2;->a:Landroid/net/Uri;
+
+    .line 42
+    iput p2, p0, Lme2;->b:I
+
+    .line 43
+    iput p3, p0, Lme2;->c:I
+
+    .line 44
+    iput-boolean p4, p0, Lme2;->d:Z
+
+    .line 45
+    iput-object p5, p0, Lme2;->e:Ljava/lang/String;
+
+    .line 46
+    iput p6, p0, Lme2;->f:I
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -22,120 +57,73 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Lme2;->Q:F
+    new-instance v0, Landroid/net/Uri$Builder;
 
     .line 5
     .line 6
-    iput p2, p0, Lme2;->R:F
+    invoke-direct {v0}, Landroid/net/Uri$Builder;-><init>()V
 
     .line 7
     .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    check-cast p1, Luq0;
-
-    .line 2
-    .line 3
-    check-cast p2, Ljava/lang/Integer;
-
-    .line 4
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p2
-
     .line 9
-    and-int/lit8 v0, p2, 0x3
+    const-string v1, "systemfont"
 
     .line 10
     .line 11
-    const/4 v1, 0x2
+    invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     .line 12
-    const/4 v2, 0x0
-
     .line 13
-    const/4 v3, 0x1
-
     .line 14
-    if-eq v0, v1, :cond_0
+    move-result-object v0
 
     .line 15
+    invoke-virtual {v0, p1}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
     .line 16
-    const/4 v0, 0x1
-
     .line 17
-    goto :goto_0
-
     .line 18
-    :cond_0
-    const/4 v0, 0x0
+    move-result-object p1
 
     .line 19
-    :goto_0
-    and-int/2addr p2, v3
+    invoke-virtual {p1}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
     .line 20
-    invoke-virtual {p1, p2, v0}, Luq0;->N(IZ)Z
-
     .line 21
     .line 22
+    move-result-object p1
+
     .line 23
-    move-result p2
+    iput-object p1, p0, Lme2;->a:Landroid/net/Uri;
 
     .line 24
-    if-eqz p2, :cond_1
-
     .line 25
+    const/4 p1, 0x0
+
     .line 26
-    sget-object p2, Lb64;->Q:Lb64;
+    iput p1, p0, Lme2;->b:I
 
     .line 27
     .line 28
-    iget v0, p0, Lme2;->Q:F
+    const/16 v0, 0x190
 
     .line 29
     .line 30
-    iget v1, p0, Lme2;->R:F
+    iput v0, p0, Lme2;->c:I
 
     .line 31
     .line 32
-    invoke-static {p2, v0, v1}, Landroidx/compose/foundation/layout/c;->i(Le64;FF)Le64;
+    iput-boolean p1, p0, Lme2;->d:Z
 
     .line 33
     .line 34
-    .line 35
-    move-result-object p2
+    iput-object p2, p0, Lme2;->e:Ljava/lang/String;
 
+    .line 35
     .line 36
-    invoke-static {p2, p1, v2}, Le40;->a(Le64;Luq0;I)V
+    iput p1, p0, Lme2;->f:I
 
     .line 37
     .line 38
-    .line 39
-    goto :goto_1
-
-    .line 40
-    :cond_1
-    invoke-virtual {p1}, Luq0;->Q()V
-
-    .line 41
-    .line 42
-    .line 43
-    :goto_1
-    sget-object p1, Lbh7;->a:Lbh7;
-
-    .line 44
-    .line 45
-    return-object p1
+    return-void
 .end method

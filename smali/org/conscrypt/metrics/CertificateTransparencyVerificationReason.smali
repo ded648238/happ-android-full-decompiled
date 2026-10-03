@@ -1,6 +1,6 @@
 .class public final enum Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -20,6 +20,10 @@
 
 .field public static final enum DOMAIN_OPT_IN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
 
+.field public static final enum DRY_RUN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+
+.field public static final enum SDK_TARGET_DEFAULT_ENABLED:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+
 .field public static final enum UNKNOWN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
 
 
@@ -29,54 +33,42 @@
 
 # direct methods
 .method private static synthetic $values()[Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
-    .locals 3
+    .locals 5
 
     .line 1
-    const/4 v0, 0x3
+    sget-object v0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->UNKNOWN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
 
     .line 2
-    new-array v0, v0, [Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
-
     .line 3
+    sget-object v1, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->APP_OPT_IN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+
     .line 4
-    sget-object v1, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->UNKNOWN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
+    sget-object v2, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->DOMAIN_OPT_IN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
 
+    .line 6
     .line 7
-    aput-object v1, v0, v2
+    sget-object v3, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->SDK_TARGET_DEFAULT_ENABLED:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
 
     .line 8
     .line 9
-    sget-object v1, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->APP_OPT_IN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+    sget-object v4, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->DRY_RUN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
 
     .line 10
     .line 11
-    const/4 v2, 0x1
+    filled-new-array {v0, v1, v2, v3, v4}, [Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
 
     .line 12
-    aput-object v1, v0, v2
-
     .line 13
     .line 14
-    sget-object v1, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->DOMAIN_OPT_IN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+    move-result-object v0
 
     .line 15
-    .line 16
-    const/4 v2, 0x2
-
-    .line 17
-    aput-object v1, v0, v2
-
-    .line 18
-    .line 19
     return-object v0
 .end method
 
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 5
 
     .line 1
     new-instance v0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
@@ -103,17 +95,17 @@
 
     .line 12
     .line 13
-    const/4 v1, 0x1
+    const-string v1, "APP_OPT_IN"
 
     .line 14
-    const/4 v2, 0x3
-
     .line 15
-    const-string v3, "APP_OPT_IN"
+    const/4 v2, 0x1
 
     .line 16
+    const/4 v3, 0x3
+
     .line 17
-    invoke-direct {v0, v3, v1, v2}, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v2, v3}, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;-><init>(Ljava/lang/String;II)V
 
     .line 18
     .line 19
@@ -126,17 +118,17 @@
 
     .line 23
     .line 24
-    const/4 v1, 0x2
+    const-string v1, "DOMAIN_OPT_IN"
 
     .line 25
-    const/4 v2, 0x4
-
     .line 26
-    const-string v3, "DOMAIN_OPT_IN"
+    const/4 v2, 0x2
 
     .line 27
+    const/4 v4, 0x4
+
     .line 28
-    invoke-direct {v0, v3, v1, v2}, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v2, v4}, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;-><init>(Ljava/lang/String;II)V
 
     .line 29
     .line 30
@@ -145,18 +137,55 @@
 
     .line 32
     .line 33
-    invoke-static {}, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->$values()[Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+    new-instance v0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
 
     .line 34
     .line 35
-    .line 36
-    move-result-object v0
+    const-string v1, "SDK_TARGET_DEFAULT_ENABLED"
 
+    .line 36
     .line 37
-    sput-object v0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->$VALUES:[Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+    invoke-direct {v0, v1, v3, v2}, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;-><init>(Ljava/lang/String;II)V
 
     .line 38
     .line 39
+    .line 40
+    sput-object v0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->SDK_TARGET_DEFAULT_ENABLED:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+
+    .line 41
+    .line 42
+    new-instance v0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+
+    .line 43
+    .line 44
+    const-string v1, "DRY_RUN"
+
+    .line 45
+    .line 46
+    const/4 v2, 0x5
+
+    .line 47
+    invoke-direct {v0, v1, v4, v2}, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;-><init>(Ljava/lang/String;II)V
+
+    .line 48
+    .line 49
+    .line 50
+    sput-object v0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->DRY_RUN:Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+
+    .line 51
+    .line 52
+    invoke-static {}, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->$values()[Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v0
+
+    .line 56
+    sput-object v0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->$VALUES:[Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;
+
+    .line 57
+    .line 58
     return-void
 .end method
 
@@ -230,12 +259,12 @@
 
 # virtual methods
 .method public getId()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->id:I
+    iget p0, p0, Lorg/conscrypt/metrics/CertificateTransparencyVerificationReason;->id:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

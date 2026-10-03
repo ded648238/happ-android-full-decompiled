@@ -1,26 +1,17 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ew {
-    public final ft6 a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ew implements mx4 {
+    public static final ew a = new ew();
+    public static final r42 b = new r42("currentCacheSizeBytes", w31.t(w31.s(np5.class, new ju(1))));
+    public static final r42 c = new r42("maxCacheSizeBytes", w31.t(w31.s(np5.class, new ju(2))));
 
-    public ew(ft6 ft6Var) {
-        this.a = ft6Var;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        return (obj instanceof ew) && this.a == ((ew) obj).a;
-    }
-
-    public final int hashCode() {
-        return this.a.hashCode() ^ (-721379959);
-    }
-
-    public final String toString() {
-        return "Event{eventCode=0, surfaceOutput=" + this.a + "}";
+    @Override // defpackage.vw1
+    public final void a(Object obj, Object obj2) {
+        y77 y77Var = (y77) obj;
+        nx4 nx4Var = (nx4) obj2;
+        nx4Var.e(b, y77Var.a);
+        nx4Var.e(c, y77Var.b);
     }
 }

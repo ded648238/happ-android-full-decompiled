@@ -3,44 +3,44 @@ package androidx.leanback.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import defpackage.oy;
-import defpackage.qa5;
-import defpackage.qn7;
-import defpackage.xi4;
+import defpackage.fv5;
+import defpackage.ni8;
+import defpackage.q00;
+import defpackage.q05;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class VerticalGridView extends oy {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class VerticalGridView extends q00 {
     public VerticalGridView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.C1.D1(1);
+        this.L1.C1(1);
         u0(context, attributeSet);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, qa5.lbVerticalGridView);
-        qn7.p(this, context, qa5.lbVerticalGridView, attributeSet, typedArrayObtainStyledAttributes, 0);
-        setColumnWidth(typedArrayObtainStyledAttributes);
-        setNumColumns(typedArrayObtainStyledAttributes.getInt(qa5.lbVerticalGridView_numberOfColumns, 1));
-        typedArrayObtainStyledAttributes.recycle();
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, fv5.lbVerticalGridView);
+        ni8.l(this, context, fv5.lbVerticalGridView, attributeSet, obtainStyledAttributes, 0);
+        setColumnWidth(obtainStyledAttributes);
+        setNumColumns(obtainStyledAttributes.getInt(fv5.lbVerticalGridView_numberOfColumns, 1));
+        obtainStyledAttributes.recycle();
     }
 
     public void setColumnWidth(TypedArray typedArray) {
-        if (typedArray.peekValue(qa5.lbVerticalGridView_columnWidth) != null) {
-            setColumnWidth(typedArray.getLayoutDimension(qa5.lbVerticalGridView_columnWidth, 0));
+        if (typedArray.peekValue(fv5.lbVerticalGridView_columnWidth) != null) {
+            setColumnWidth(typedArray.getLayoutDimension(fv5.lbVerticalGridView_columnWidth, 0));
         }
     }
 
     public void setNumColumns(int i) {
-        GridLayoutManager gridLayoutManager = this.C1;
+        GridLayoutManager gridLayoutManager = this.L1;
         if (i >= 0) {
-            gridLayoutManager.K0 = i;
+            gridLayoutManager.T0 = i;
             requestLayout();
         } else {
             gridLayoutManager.getClass();
-            xi4.d();
+            q05.f();
         }
     }
 
     public void setColumnWidth(int i) {
-        this.C1.E1(i);
+        this.L1.D1(i);
         requestLayout();
     }
 

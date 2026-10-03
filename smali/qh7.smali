@@ -1,150 +1,90 @@
-.class public abstract Lqh7;
+.class public final Lqh7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lrh7;
 
 
 # static fields
-.field public static final a:Lsun/misc/Unsafe;
-
-.field public static final b:Z
+.field public static final a:Lqh7;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 1
 
     .line 1
-    const-string v0, "rx.unsafe-disable"
+    new-instance v0, Lqh7;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    sput-object v0, Lqh7;->a:Lqh7;
 
     .line 7
-    const/4 v1, 0x1
-
     .line 8
-    if-eqz v0, :cond_0
-
-    .line 9
-    .line 10
-    const/4 v0, 0x1
-
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 13
-    :goto_0
-    sput-boolean v0, Lqh7;->b:Z
-
-    .line 14
-    .line 15
-    const/4 v0, 0x0
-
-    .line 16
-    :try_start_0
-    const-class v2, Lsun/misc/Unsafe;
-
-    .line 17
-    .line 18
-    const-string v3, "theUnsafe"
-
-    .line 19
-    .line 20
-    invoke-virtual {v2, v3}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v2
-
-    .line 24
-    invoke-virtual {v2, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
-
-    .line 25
-    .line 26
-    .line 27
-    invoke-virtual {v2, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v1
-
-    .line 31
-    check-cast v1, Lsun/misc/Unsafe;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 32
-    .line 33
-    move-object v0, v1
-
-    .line 34
-    :catchall_0
-    sput-object v0, Lqh7;->a:Lsun/misc/Unsafe;
-
-    .line 35
-    .line 36
     return-void
 .end method
 
-.method public static a(Ljava/lang/Class;Ljava/lang/String;)J
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of p0, p1, Lqh7;
+
+    .line 6
+    .line 7
+    if-nez p0, :cond_1
+
+    .line 8
+    .line 9
+    const/4 p0, 0x0
+
+    .line 10
+    return p0
+
+    .line 11
+    :cond_1
+    return v0
+.end method
+
+.method public final hashCode()I
     .locals 0
 
     .line 1
-    :try_start_0
-    invoke-virtual {p0, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    const p0, -0x212beaf6
 
     .line 2
     .line 3
     .line 4
-    move-result-object p0
+    return p0
+.end method
 
-    .line 5
-    sget-object p1, Lqh7;->a:Lsun/misc/Unsafe;
+.method public final toString()Ljava/lang/String;
+    .locals 0
 
-    .line 6
-    .line 7
-    invoke-virtual {p1, p0}, Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J
+    .line 1
+    const-string p0, "Wait"
 
-    .line 8
-    .line 9
-    .line 10
-    move-result-wide p0
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 11
-    return-wide p0
-
-    .line 12
-    :catch_0
-    move-exception p0
-
-    .line 13
-    new-instance p1, Ljava/lang/InternalError;
-
-    .line 14
-    .line 15
-    invoke-direct {p1}, Ljava/lang/InternalError;-><init>()V
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {p1, p0}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
-
-    .line 19
-    .line 20
-    .line 21
-    throw p1
+    .line 2
+    .line 3
+    return-object p0
 .end method

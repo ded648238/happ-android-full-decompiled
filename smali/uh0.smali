@@ -1,94 +1,112 @@
-.class public final Luh0;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Luh0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public T:Lhl;
+# static fields
+.field public static final a:Lrk4;
 
-.field public U:Ljava/lang/String;
+.field public static final b:Lrk4;
 
-.field public V:Ljava/lang/String;
-
-.field public W:Lsu/happ/proxyutility/dto/SubscriptionItem;
-
-.field public X:Ljava/lang/String;
-
-.field public synthetic Y:Ljava/lang/Object;
-
-.field public final synthetic Z:Lvh0;
-
-.field public a0:I
+.field public static final c:Lrk4;
 
 
 # direct methods
-.method public constructor <init>(Lvh0;Law0;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput-object p1, p0, Luh0;->Z:Lvh0;
+    sget-object v0, Lrk4;->c:Ljava/util/HashMap;
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
+    sget-object v0, Lp06;->a:Lq06;
 
     .line 4
     .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
-
-    .line 1
-    iput-object p1, p0, Luh0;->Y:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    iget p1, p0, Luh0;->a0:I
-
-    .line 4
-    .line 5
-    const/high16 v0, -0x80000000
+    const-class v1, Ljava/lang/Integer;
 
     .line 6
     .line 7
-    or-int/2addr p1, v0
+    invoke-virtual {v0, v1}, Lq06;->b(Ljava/lang/Class;)Lgn3;
 
     .line 8
-    iput p1, p0, Luh0;->a0:I
-
     .line 9
     .line 10
-    const/4 v4, 0x0
+    move-result-object v1
 
     .line 11
-    const/4 v5, 0x0
+    const-string v2, "androidx.camera.camera2.pipe.extensionMode"
 
     .line 12
-    iget-object v0, p0, Luh0;->Z:Lvh0;
-
     .line 13
+    invoke-static {v1, v2}, Lor4;->r(Lgn3;Ljava/lang/String;)Lrk4;
+
     .line 14
-    const/4 v1, 0x0
-
     .line 15
-    const/4 v3, 0x0
-
     .line 16
-    move-object v2, p0
+    move-result-object v1
 
     .line 17
-    invoke-virtual/range {v0 .. v5}, Lvh0;->b(Lhl;Law0;Ljava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/SubscriptionItem;)Ljava/lang/Object;
+    sput-object v1, Luh0;->a:Lrk4;
 
     .line 18
     .line 19
-    .line 20
-    move-result-object p1
+    const-class v1, Ljava/lang/Object;
 
+    .line 20
     .line 21
-    return-object p1
+    invoke-virtual {v0, v1}, Lq06;->b(Ljava/lang/Class;)Lgn3;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    const-string v2, "androidx.camera.camera2.pipe.captureRequestTag"
+
+    .line 26
+    .line 27
+    invoke-static {v1, v2}, Lor4;->r(Lgn3;Ljava/lang/String;)Lrk4;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v1
+
+    .line 31
+    sput-object v1, Luh0;->b:Lrk4;
+
+    .line 32
+    .line 33
+    const-class v1, Ljava/lang/Boolean;
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Lq06;->b(Ljava/lang/Class;)Lgn3;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v0
+
+    .line 39
+    const-string v1, "androidx.camera.camera2.pipe.ignore3ARequiredParameters"
+
+    .line 40
+    .line 41
+    invoke-static {v0, v1}, Lor4;->r(Lgn3;Ljava/lang/String;)Lrk4;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    sput-object v0, Luh0;->c:Lrk4;
+
+    .line 46
+    .line 47
+    return-void
 .end method

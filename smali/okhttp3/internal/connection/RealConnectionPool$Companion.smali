@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/RealConnectionPool$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -47,7 +47,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -75,8 +75,8 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p1
+    move-result-object p0
 
     .line 8
-    return-object p1
+    return-object p0
 .end method

@@ -1,41 +1,21 @@
 package defpackage;
 
-import java.util.Set;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class wv implements mx4 {
+    public static final wv a = new wv();
+    public static final r42 b = new r42("window", w31.t(w31.s(np5.class, new ju(1))));
+    public static final r42 c = new r42("logSourceMetrics", w31.t(w31.s(np5.class, new ju(2))));
+    public static final r42 d = new r42("globalMetrics", w31.t(w31.s(np5.class, new ju(3))));
+    public static final r42 e = new r42("appNamespace", w31.t(w31.s(np5.class, new ju(4))));
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class wv {
-    public final long a;
-    public final long b;
-    public final Set c;
-
-    public wv(long j, long j2, Set set) {
-        this.a = j;
-        this.b = j2;
-        this.c = set;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof wv) {
-            wv wvVar = (wv) obj;
-            if (this.a == wvVar.a && this.b == wvVar.b && this.c.equals(wvVar.c)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        long j = this.a;
-        int i = (((int) (j ^ (j >>> 32))) ^ 1000003) * 1000003;
-        long j2 = this.b;
-        return this.c.hashCode() ^ ((i ^ ((int) (j2 ^ (j2 >>> 32)))) * 1000003);
-    }
-
-    public final String toString() {
-        return "ConfigValue{delta=" + this.a + ", maxAllowedDelay=" + this.b + ", flags=" + this.c + "}";
+    @Override // defpackage.vw1
+    public final void a(Object obj, Object obj2) {
+        ds0 ds0Var = (ds0) obj;
+        nx4 nx4Var = (nx4) obj2;
+        nx4Var.a(b, ds0Var.a);
+        nx4Var.a(c, ds0Var.b);
+        nx4Var.a(d, ds0Var.c);
+        nx4Var.a(e, ds0Var.d);
     }
 }

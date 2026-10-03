@@ -1,61 +1,129 @@
 package defpackage;
 
-import java.io.Serializable;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Member;
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class xi extends va6 implements Serializable {
-    public final transient uc7 Y;
-    public final transient rb2 Z;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class xi implements sh4 {
+    public final jj a;
+    public boolean b;
 
-    public xi(uc7 uc7Var, rb2 rb2Var) {
-        this.Y = uc7Var;
-        this.Z = rb2Var;
+    public xi(jj jjVar) {
+        this.a = jjVar;
     }
 
-    public abstract Class Y();
-
-    public String Z() {
-        return Y().getName() + "#" + E();
-    }
-
-    public abstract Member a0();
-
-    public abstract Object b0(Object obj);
-
-    public final boolean c0(Class cls) {
-        HashMap map;
-        rb2 rb2Var = this.Z;
-        if (rb2Var == null || (map = (HashMap) rb2Var.R) == null) {
-            return false;
+    @Override // defpackage.sh4
+    public final th4 c(uh4 uh4Var, List list, long j) {
+        x65 x65Var = this.a.a;
+        ArrayList arrayList = new ArrayList(list.size());
+        int size = list.size();
+        int i = 0;
+        int i2 = 0;
+        for (int i3 = 0; i3 < size; i3++) {
+            kd5 o = ((nh4) list.get(i3)).o(j);
+            i = Math.max(i, o.X);
+            i2 = Math.max(i2, o.Y);
+            arrayList.add(o);
         }
-        return map.containsKey(cls);
+        if (uh4Var.b0()) {
+            this.b = true;
+            x65Var.setValue(new z73((i2 & 4294967295L) | (i << 32)));
+        } else if (!this.b) {
+            x65Var.setValue(new z73((i2 & 4294967295L) | (i << 32)));
+        }
+        return uh4Var.f0(i, i2, gw1.X, new hi(1, arrayList));
     }
 
-    public final boolean d0(Class[] clsArr) {
-        rb2 rb2Var = this.Z;
-        if (rb2Var == null || ((HashMap) rb2Var.R) == null) {
-            return false;
+    @Override // defpackage.sh4
+    public final int d(wu4 wu4Var, List list, int i) {
+        if (list.isEmpty()) {
+            return 0;
         }
-        for (Class cls : clsArr) {
-            if (((HashMap) rb2Var.R).containsKey(cls)) {
-                return true;
+        int a = ((nh4) list.get(0)).a(i);
+        int i2 = 1;
+        int size = list.size() - 1;
+        if (1 <= size) {
+            while (true) {
+                int a2 = ((nh4) list.get(i2)).a(i);
+                if (a2 > a) {
+                    a = a2;
+                }
+                if (i2 == size) {
+                    break;
+                }
+                i2++;
             }
         }
-        return false;
+        return a;
     }
 
-    public abstract va6 e0(rb2 rb2Var);
-
-    @Override // defpackage.va6
-    public final Annotation w(Class cls) {
-        rb2 rb2Var = this.Z;
-        if (rb2Var == null) {
-            return null;
+    @Override // defpackage.sh4
+    public final int f(wu4 wu4Var, List list, int i) {
+        if (list.isEmpty()) {
+            return 0;
         }
-        return rb2Var.a(cls);
+        int k = ((nh4) list.get(0)).k(i);
+        int i2 = 1;
+        int size = list.size() - 1;
+        if (1 <= size) {
+            while (true) {
+                int k2 = ((nh4) list.get(i2)).k(i);
+                if (k2 > k) {
+                    k = k2;
+                }
+                if (i2 == size) {
+                    break;
+                }
+                i2++;
+            }
+        }
+        return k;
+    }
+
+    @Override // defpackage.sh4
+    public final int g(wu4 wu4Var, List list, int i) {
+        if (list.isEmpty()) {
+            return 0;
+        }
+        int L = ((nh4) list.get(0)).L(i);
+        int i2 = 1;
+        int size = list.size() - 1;
+        if (1 <= size) {
+            while (true) {
+                int L2 = ((nh4) list.get(i2)).L(i);
+                if (L2 > L) {
+                    L = L2;
+                }
+                if (i2 == size) {
+                    break;
+                }
+                i2++;
+            }
+        }
+        return L;
+    }
+
+    @Override // defpackage.sh4
+    public final int i(wu4 wu4Var, List list, int i) {
+        if (list.isEmpty()) {
+            return 0;
+        }
+        int m = ((nh4) list.get(0)).m(i);
+        int i2 = 1;
+        int size = list.size() - 1;
+        if (1 <= size) {
+            while (true) {
+                int m2 = ((nh4) list.get(i2)).m(i);
+                if (m2 > m) {
+                    m = m2;
+                }
+                if (i2 == size) {
+                    break;
+                }
+                i2++;
+            }
+        }
+        return m;
     }
 }

@@ -1,304 +1,157 @@
-.class public abstract synthetic Lio/sentry/y1;
+.class public final synthetic Lio/sentry/y1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lio/sentry/b2;
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final synthetic X:I
+
+.field public final synthetic Y:Lio/sentry/j2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(Lio/sentry/h2;Lio/sentry/j2;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lio/sentry/vendor/gson/stream/b;->values()[Lio/sentry/vendor/gson/stream/b;
+    const/4 p1, 0x1
+
+    .line 2
+    iput p1, p0, Lio/sentry/y1;->X:I
+
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p2, p0, Lio/sentry/y1;->Y:Lio/sentry/j2;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lio/sentry/j2;I)V
+    .locals 0
+
+    .line 10
+    iput p2, p0, Lio/sentry/y1;->X:I
+
+    iput-object p1, p0, Lio/sentry/y1;->Y:Lio/sentry/j2;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b()Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    iget v0, p0, Lio/sentry/y1;->X:I
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    iget-object p0, p0, Lio/sentry/y1;->Y:Lio/sentry/j2;
 
+    .line 4
     .line 5
-    array-length v0, v0
+    packed-switch v0, :pswitch_data_0
 
     .line 6
-    new-array v0, v0, [I
-
     .line 7
     .line 8
-    sput-object v0, Lio/sentry/y1;->a:[I
+    invoke-virtual {p0}, Lio/sentry/j2;->m()Z
 
     .line 9
     .line 10
-    :try_start_0
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->BEGIN_ARRAY:Lio/sentry/vendor/gson/stream/b;
-
     .line 11
+    move-result p0
+
     .line 12
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 13
     .line 14
     .line 15
-    move-result v1
+    move-result-object p0
 
     .line 16
-    const/4 v2, 0x1
+    return-object p0
 
     .line 17
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    :pswitch_0
+    invoke-virtual {p0}, Lio/sentry/j2;->nextDouble()D
 
     .line 18
     .line 19
-    :catch_0
-    :try_start_1
-    sget-object v0, Lio/sentry/y1;->a:[I
-
     .line 20
+    move-result-wide v0
+
     .line 21
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->END_ARRAY:Lio/sentry/vendor/gson/stream/b;
+    double-to-int p0, v0
 
     .line 22
+    int-to-double v2, p0
+
     .line 23
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    cmpl-double v2, v2, v0
 
     .line 24
     .line 25
-    .line 26
-    move-result v1
+    if-nez v2, :cond_0
 
+    .line 26
     .line 27
-    const/4 v2, 0x2
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 28
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 29
     .line 30
-    :catch_1
-    :try_start_2
-    sget-object v0, Lio/sentry/y1;->a:[I
+    move-result-object p0
 
     .line 31
+    goto :goto_0
+
     .line 32
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->BEGIN_OBJECT:Lio/sentry/vendor/gson/stream/b;
+    :cond_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 33
     .line 34
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
     .line 35
+    move-result-object p0
+
     .line 36
+    :goto_0
+    return-object p0
+
     .line 37
-    move-result v1
+    :pswitch_1
+    invoke-virtual {p0}, Lio/sentry/j2;->r()Ljava/lang/String;
 
     .line 38
-    const/4 v2, 0x3
-
     .line 39
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
     .line 40
+    move-result-object p0
+
     .line 41
-    :catch_2
-    :try_start_3
-    sget-object v0, Lio/sentry/y1;->a:[I
+    return-object p0
 
     .line 42
+    nop
+
     .line 43
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->END_OBJECT:Lio/sentry/vendor/gson/stream/b;
-
-    .line 44
-    .line 45
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v1
-
-    .line 49
-    const/4 v2, 0x4
-
-    .line 50
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 51
-    .line 52
-    :catch_3
-    :try_start_4
-    sget-object v0, Lio/sentry/y1;->a:[I
-
-    .line 53
-    .line 54
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->NAME:Lio/sentry/vendor/gson/stream/b;
-
-    .line 55
-    .line 56
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v1
-
-    .line 60
-    const/4 v2, 0x5
-
-    .line 61
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 62
-    .line 63
-    :catch_4
-    :try_start_5
-    sget-object v0, Lio/sentry/y1;->a:[I
-
-    .line 64
-    .line 65
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->STRING:Lio/sentry/vendor/gson/stream/b;
-
-    .line 66
-    .line 67
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 68
-    .line 69
-    .line 70
-    move-result v1
-
-    .line 71
-    const/4 v2, 0x6
-
-    .line 72
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 73
-    .line 74
-    :catch_5
-    :try_start_6
-    sget-object v0, Lio/sentry/y1;->a:[I
-
-    .line 75
-    .line 76
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->NUMBER:Lio/sentry/vendor/gson/stream/b;
-
-    .line 77
-    .line 78
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 79
-    .line 80
-    .line 81
-    move-result v1
-
-    .line 82
-    const/4 v2, 0x7
-
-    .line 83
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    .line 84
-    .line 85
-    :catch_6
-    :try_start_7
-    sget-object v0, Lio/sentry/y1;->a:[I
-
-    .line 86
-    .line 87
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->BOOLEAN:Lio/sentry/vendor/gson/stream/b;
-
-    .line 88
-    .line 89
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 90
-    .line 91
-    .line 92
-    move-result v1
-
-    .line 93
-    const/16 v2, 0x8
-
-    .line 94
-    .line 95
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    .line 96
-    .line 97
-    :catch_7
-    :try_start_8
-    sget-object v0, Lio/sentry/y1;->a:[I
-
-    .line 98
-    .line 99
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->NULL:Lio/sentry/vendor/gson/stream/b;
-
-    .line 100
-    .line 101
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 102
-    .line 103
-    .line 104
-    move-result v1
-
-    .line 105
-    const/16 v2, 0x9
-
-    .line 106
-    .line 107
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    .line 108
-    .line 109
-    :catch_8
-    :try_start_9
-    sget-object v0, Lio/sentry/y1;->a:[I
-
-    .line 110
-    .line 111
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->END_DOCUMENT:Lio/sentry/vendor/gson/stream/b;
-
-    .line 112
-    .line 113
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 114
-    .line 115
-    .line 116
-    move-result v1
-
-    .line 117
-    const/16 v2, 0xa
-
-    .line 118
-    .line 119
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    .line 120
-    .line 121
-    :catch_9
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

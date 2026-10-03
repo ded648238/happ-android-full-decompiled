@@ -1,21 +1,13 @@
 package defpackage;
 
-import java.util.HashMap;
+import android.view.View;
+import android.view.Window;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class pu1 extends qx5 {
-    public final HashMap U = new HashMap();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class pu1 {
+    public abstract void b(vm7 vm7Var, vm7 vm7Var2, Window window, View view, boolean z, boolean z2);
 
-    @Override // defpackage.qx5
-    public final nx5 a(Object obj) {
-        return (nx5) this.U.get(obj);
-    }
-
-    @Override // defpackage.qx5
-    public final Object b(Object obj) {
-        Object objB = super.b(obj);
-        this.U.remove(obj);
-        return objB;
+    public void a(Window window) {
     }
 }

@@ -1,167 +1,111 @@
 .class public final Lhf7;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/lang/Comparable;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:S
+.field public c0:Ljava/lang/String;
+
+.field public d0:Lji2;
+
+.field public e0:Lmi2;
+
+.field public f0:Lmi2;
+
+.field public g0:Lyi2;
+
+.field public h0:Lsu/happ/proxyutility/dto/SubscriptionItem;
+
+.field public i0:Z
+
+.field public j0:Z
+
+.field public k0:I
+
+.field public synthetic l0:Ljava/lang/Object;
+
+.field public final synthetic m0:Ljf7;
+
+.field public n0:I
 
 
 # direct methods
-.method public synthetic constructor <init>(S)V
+.method public constructor <init>(Ljf7;Ld31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lhf7;->m0:Ljf7;
 
     .line 2
     .line 3
-    .line 4
-    iput-short p1, p0, Lhf7;->Q:S
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
     return-void
 .end method
 
-.method public static a(S)Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    const v0, 0xffff
-
-    .line 2
-    .line 3
-    .line 4
-    and-int/2addr p0, v0
-
-    .line 5
-    invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p0
-
-    .line 9
-    return-object p0
-.end method
-
 
 # virtual methods
-.method public final synthetic compareTo(Ljava/lang/Object;)I
-    .locals 2
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    check-cast p1, Lhf7;
+    iput-object p1, p0, Lhf7;->l0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget-short p1, p1, Lhf7;->Q:S
+    iget p1, p0, Lhf7;->n0:I
 
     .line 4
     .line 5
-    iget-short v0, p0, Lhf7;->Q:S
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
-    const v1, 0xffff
+    or-int/2addr p1, v0
 
     .line 8
-    .line 9
-    .line 10
-    and-int/2addr v0, v1
-
-    .line 11
-    and-int/2addr p1, v1
-
-    .line 12
-    invoke-static {v0, p1}, Lrt2;->j(II)I
-
-    .line 13
-    .line 14
-    .line 15
-    move-result p1
-
-    .line 16
-    return p1
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    instance-of v0, p1, Lhf7;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    check-cast p1, Lhf7;
-
-    .line 7
-    .line 8
-    iget-short p1, p1, Lhf7;->Q:S
+    iput p1, p0, Lhf7;->n0:I
 
     .line 9
     .line 10
-    iget-short v0, p0, Lhf7;->Q:S
+    const/4 v6, 0x0
 
     .line 11
+    const/4 v7, 0x0
+
     .line 12
-    if-eq v0, p1, :cond_1
+    iget-object v0, p0, Lhf7;->m0:Ljf7;
 
     .line 13
     .line 14
-    :goto_0
-    const/4 p1, 0x0
+    const/4 v1, 0x0
 
     .line 15
-    return p1
+    const/4 v2, 0x0
 
     .line 16
-    :cond_1
-    const/4 p1, 0x1
+    const/4 v3, 0x0
 
     .line 17
-    return p1
-.end method
+    const/4 v4, 0x0
 
-.method public final hashCode()I
-    .locals 1
+    .line 18
+    const/4 v5, 0x0
 
-    .line 1
-    iget-short v0, p0, Lhf7;->Q:S
+    .line 19
+    move-object v8, p0
 
-    .line 2
-    .line 3
-    return v0
-.end method
+    .line 20
+    invoke-virtual/range {v0 .. v8}, Ljf7;->d(Ljava/lang/String;ZLjava/lang/String;Lji2;Lmi2;Lmi2;Lyi2;Ld31;)Ljava/lang/Object;
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p0
 
-    .line 1
-    iget-short v0, p0, Lhf7;->Q:S
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lhf7;->a(S)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
+    .line 24
+    return-object p0
 .end method

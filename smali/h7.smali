@@ -1,254 +1,201 @@
-.class public final synthetic Lh7;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class final Lh7;
+.super Ljn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Ljava/lang/Runnable;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljn4;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001\u00a8\u0006\u0003"
+    }
+    d2 = {
+        "Lh7;",
+        "Ljn4;",
+        "Li7;",
+        "foundation"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final X:Lmp7;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
-
-    .line 8
-    iput p1, p0, Lh7;->Q:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Lve0;)V
+.method public constructor <init>(Lmp7;)V
     .locals 0
 
     .line 1
-    const/4 p1, 0x3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, Lh7;->Q:I
-
     .line 3
     .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lh7;->X:Lmp7;
 
     .line 5
     .line 6
-    .line 7
-    return-void
-.end method
-
-.method private final a()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final b()V
-    .locals 0
-
-    .line 1
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 7
+.method public final a()Lcn4;
+    .locals 3
 
     .line 1
-    iget v0, p0, Lh7;->Q:I
+    new-instance v0, Li7;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0}, Lje1;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    :pswitch_0
-    return-void
+    iget-object p0, p0, Lh7;->X:Lmp7;
 
     .line 7
-    :pswitch_1
-    sget-object v0, Landroidx/compose/ui/platform/AndroidComposeView;->B1:Lb94;
-
     .line 8
-    .line 9
-    monitor-enter v0
+    iput-object p0, v0, Li7;->p0:Lmp7;
 
+    .line 9
     .line 10
-    :try_start_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    new-instance p0, Lg7;
 
     .line 11
     .line 12
-    iget-object v2, v0, Lb94;->a:[Ljava/lang/Object;
+    new-instance v1, Lw0;
 
     .line 13
     .line 14
-    iget v3, v0, Lb94;->b:I
+    const/4 v2, 0x2
 
     .line 15
+    invoke-direct {v1, v2, v0}, Lw0;-><init>(ILjava/lang/Object;)V
+
     .line 16
-    const/4 v4, 0x0
-
     .line 17
-    const/16 v5, 0x1e
-
     .line 18
-    .line 19
-    if-ge v1, v5, :cond_1
+    invoke-direct {p0}, Lcn4;-><init>()V
 
+    .line 19
     .line 20
     .line 21
-    :goto_0
-    if-ge v4, v3, :cond_2
+    iput-object v1, p0, Lg7;->n0:Lw0;
 
     .line 22
     .line 23
-    :try_start_1
-    aget-object v1, v2, v4
+    invoke-virtual {v0, p0}, Lje1;->U0(Lie1;)Lie1;
 
     .line 24
     .line 25
-    check-cast v1, Landroidx/compose/ui/platform/AndroidComposeView;
-
     .line 26
-    .line 27
-    invoke-virtual {v1}, Landroidx/compose/ui/platform/AndroidComposeView;->getShowLayoutBounds()Z
+    return-object v0
+.end method
 
-    .line 28
-    .line 29
-    .line 30
-    move-result v5
+.method public final c(Lcn4;)V
+    .locals 0
 
-    .line 31
-    sget-object v6, Landroidx/compose/ui/platform/AndroidComposeView;->y1:Ljava/lang/Class;
+    .line 1
+    check-cast p1, Li7;
 
-    .line 32
-    .line 33
-    invoke-static {}, Lff0;->G()Z
+    .line 2
+    .line 3
+    iget-object p0, p0, Lh7;->X:Lmp7;
 
-    .line 34
-    .line 35
-    .line 36
-    move-result v6
+    .line 4
+    .line 5
+    iput-object p0, p1, Li7;->p0:Lmp7;
 
-    .line 37
-    invoke-virtual {v1, v6}, Landroidx/compose/ui/platform/AndroidComposeView;->setShowLayoutBounds(Z)V
+    .line 6
+    .line 7
+    return-void
+.end method
 
-    .line 38
-    .line 39
-    .line 40
-    invoke-virtual {v1}, Landroidx/compose/ui/platform/AndroidComposeView;->getShowLayoutBounds()Z
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
-    .line 41
-    .line 42
-    .line 43
-    move-result v6
+    .line 1
+    if-ne p0, p1, :cond_0
 
-    .line 44
-    if-eq v5, v6, :cond_0
-
-    .line 45
-    .line 46
-    invoke-virtual {v1}, Landroidx/compose/ui/platform/AndroidComposeView;->getRoot()Landroidx/compose/ui/node/LayoutNode;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object v1
-
-    .line 50
-    invoke-static {v1}, Landroidx/compose/ui/platform/AndroidComposeView;->l(Landroidx/compose/ui/node/LayoutNode;)V
-
-    .line 51
-    .line 52
-    .line 53
-    :cond_0
-    add-int/lit8 v4, v4, 0x1
-
-    .line 54
-    .line 55
-    goto :goto_0
-
-    .line 56
-    :catchall_0
-    move-exception v1
-
-    .line 57
-    goto :goto_2
-
-    .line 58
-    :cond_1
-    :goto_1
-    if-ge v4, v3, :cond_2
-
-    .line 59
-    .line 60
-    aget-object v1, v2, v4
-
-    .line 61
-    .line 62
-    check-cast v1, Landroidx/compose/ui/platform/AndroidComposeView;
-
-    .line 63
-    .line 64
-    invoke-virtual {v1}, Landroidx/compose/ui/platform/AndroidComposeView;->getRoot()Landroidx/compose/ui/node/LayoutNode;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object v1
-
-    .line 68
-    invoke-static {v1}, Landroidx/compose/ui/platform/AndroidComposeView;->l(Landroidx/compose/ui/node/LayoutNode;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 69
-    .line 70
-    .line 71
-    add-int/lit8 v4, v4, 0x1
-
-    .line 72
-    .line 73
+    .line 2
+    .line 3
     goto :goto_1
 
-    .line 74
+    .line 4
+    :cond_0
+    instance-of v0, p1, Lh7;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, Lh7;
+
+    .line 10
+    .line 11
+    iget-object p1, p1, Lh7;->X:Lmp7;
+
+    .line 12
+    .line 13
+    iget-object p0, p0, Lh7;->X:Lmp7;
+
+    .line 14
+    .line 15
+    if-eq p0, p1, :cond_2
+
+    .line 16
+    .line 17
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 18
+    return p0
+
+    .line 19
     :cond_2
-    monitor-exit v0
+    :goto_1
+    const/4 p0, 0x1
 
-    .line 75
-    return-void
+    .line 20
+    return p0
+.end method
 
-    .line 76
-    :goto_2
-    monitor-exit v0
+.method public final hashCode()I
+    .locals 0
 
-    .line 77
-    throw v1
+    .line 1
+    iget-object p0, p0, Lh7;->X:Lmp7;
 
-    .line 78
-    :pswitch_2
-    sget v0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/AlarmManagerSchedulerBroadcastReceiver;->a:I
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
-    .line 79
-    .line 80
-    return-void
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
 
-    .line 81
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 7
+    return p0
 .end method

@@ -1,119 +1,164 @@
-.class public final enum Lyk0;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lyk0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final enum Q:Lyk0;
+.field public static final f:Luw;
 
-.field public static final synthetic R:[Lyk0;
+
+# instance fields
+.field public final a:Ljava/util/ArrayList;
+
+.field public final b:Lw25;
+
+.field public final c:I
+
+.field public final d:Ljava/util/List;
+
+.field public final e:Lpn7;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 4
 
     .line 1
-    new-instance v0, Lyk0;
+    new-instance v0, Luw;
 
     .line 2
     .line 3
-    const-string v1, "UNKNOWN"
+    const-string v1, "camerax.core.captureConfig.rotation"
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
-    .line 8
-    .line 9
-    new-instance v1, Lyk0;
+    const/4 v3, 0x0
 
+    .line 8
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+
+    .line 9
     .line 10
     .line 11
-    const-string v3, "ANDROID_FIREBASE"
+    const-class v0, Ljava/lang/Integer;
 
     .line 12
     .line 13
-    const/4 v4, 0x1
+    new-instance v1, Luw;
 
     .line 14
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 15
+    const-string v2, "camerax.core.captureConfig.jpegQuality"
+
     .line 16
     .line 17
-    sput-object v1, Lyk0;->Q:Lyk0;
+    invoke-direct {v1, v2, v0, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
     .line 18
     .line 19
-    const/4 v3, 0x2
-
     .line 20
-    new-array v3, v3, [Lyk0;
+    new-instance v0, Luw;
 
     .line 21
     .line 22
-    aput-object v0, v3, v2
+    const-string v1, "camerax.core.captureConfig.resolvedFrameRate"
 
     .line 23
     .line 24
-    aput-object v1, v3, v4
+    const-class v2, Landroid/util/Range;
 
     .line 25
     .line 26
-    sput-object v3, Lyk0;->R:[Lyk0;
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
     .line 27
     .line 28
+    .line 29
+    sput-object v0, Lyk0;->f:Luw;
+
+    .line 30
+    .line 31
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lyk0;
-    .locals 1
+.method public constructor <init>(Ljava/util/ArrayList;Lw25;ILjava/util/ArrayList;Lpn7;)V
+    .locals 0
 
     .line 1
-    const-class v0, Lyk0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
     .line 4
+    iput-object p1, p0, Lyk0;->a:Ljava/util/ArrayList;
+
     .line 5
     .line 6
-    move-result-object p0
+    iput-object p2, p0, Lyk0;->b:Lw25;
 
     .line 7
-    check-cast p0, Lyk0;
-
     .line 8
+    iput p3, p0, Lyk0;->c:I
+
     .line 9
-    return-object p0
+    .line 10
+    invoke-static {p4}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p1
+
+    .line 14
+    iput-object p1, p0, Lyk0;->d:Ljava/util/List;
+
+    .line 15
+    .line 16
+    iput-object p5, p0, Lyk0;->e:Lpn7;
+
+    .line 17
+    .line 18
+    return-void
 .end method
 
-.method public static values()[Lyk0;
-    .locals 1
+
+# virtual methods
+.method public final a()Landroid/util/Range;
+    .locals 2
 
     .line 1
-    sget-object v0, Lyk0;->R:[Lyk0;
+    sget-object v0, Lyk0;->f:Luw;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, [Lyk0;->clone()Ljava/lang/Object;
+    sget-object v1, Ldy;->h:Landroid/util/Range;
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    iget-object p0, p0, Lyk0;->b:Lw25;
 
+    .line 6
     .line 7
-    check-cast v0, [Lyk0;
+    invoke-virtual {p0, v0, v1}, Lw25;->b(Luw;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9
-    return-object v0
+    .line 10
+    move-result-object p0
+
+    .line 11
+    check-cast p0, Landroid/util/Range;
+
+    .line 12
+    .line 13
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    return-object p0
 .end method

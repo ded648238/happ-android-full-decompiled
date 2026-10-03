@@ -1,6 +1,6 @@
 .class public final Lokhttp3/dnsoverhttps/DnsOverHttps$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -86,7 +86,7 @@
 .end method
 
 .method private final buildBootstrapClient(Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;)Lokhttp3/Dns;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->getBootstrapDnsHosts$okhttp_dnsoverhttps()Ljava/util/List;
@@ -94,14 +94,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 6
     .line 7
-    new-instance v1, Lokhttp3/dnsoverhttps/BootstrapDns;
+    new-instance v0, Lokhttp3/dnsoverhttps/BootstrapDns;
 
     .line 8
     .line 9
@@ -126,12 +126,12 @@
     move-result-object p1
 
     .line 20
-    invoke-direct {v1, p1, v0}, Lokhttp3/dnsoverhttps/BootstrapDns;-><init>(Ljava/lang/String;Ljava/util/List;)V
+    invoke-direct {v0, p1, p0}, Lokhttp3/dnsoverhttps/BootstrapDns;-><init>(Ljava/lang/String;Ljava/util/List;)V
 
     .line 21
     .line 22
     .line 23
-    return-object v1
+    return-object v0
 
     .line 24
     :cond_0
@@ -140,16 +140,16 @@
     .line 25
     .line 26
     .line 27
-    move-result-object p1
+    move-result-object p0
 
     .line 28
-    return-object p1
+    return-object p0
 .end method
 
 
 # virtual methods
 .method public final getDNS_MESSAGE()Lokhttp3/MediaType;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-static {}, Lokhttp3/dnsoverhttps/DnsOverHttps;->access$getDNS_MESSAGE$cp()Lokhttp3/MediaType;
@@ -157,14 +157,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final isPrivateHost$okhttp_dnsoverhttps(Ljava/lang/String;)Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -172,39 +172,39 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->Companion:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;
+    sget-object p0, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->Companion:Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;->get()Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
+    invoke-virtual {p0}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase$Companion;->get()Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;
 
     .line 7
     .line 8
     .line 9
-    move-result-object v0
+    move-result-object p0
 
     .line 10
-    invoke-virtual {v0, p1}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->getEffectiveTldPlusOne(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lokhttp3/internal/publicsuffix/PublicSuffixDatabase;->getEffectiveTldPlusOne(Ljava/lang/String;)Ljava/lang/String;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    move-result-object p0
 
     .line 14
-    if-nez p1, :cond_0
+    if-nez p0, :cond_0
 
     .line 15
     .line 16
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 17
-    return p1
+    return p0
 
     .line 18
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    return p1
+    return p0
 .end method

@@ -1,30 +1,17 @@
 package defpackage;
 
-import su.happ.proxyutility.dto.enums.EPingType;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ju4 extends cz {
+    public yh2 a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class ju4 {
-    public static final /* synthetic */ int[] a;
+    @Override // defpackage.cz
+    public final void a() {
+        this.a = null;
+    }
 
-    static {
-        int[] iArr = new int[EPingType.values().length];
-        try {
-            iArr[EPingType.VIA_PROXY_GET.ordinal()] = 1;
-        } catch (NoSuchFieldError unused) {
-        }
-        try {
-            iArr[EPingType.VIA_PROXY_HEAD.ordinal()] = 2;
-        } catch (NoSuchFieldError unused2) {
-        }
-        try {
-            iArr[EPingType.TCP.ordinal()] = 3;
-        } catch (NoSuchFieldError unused3) {
-        }
-        try {
-            iArr[EPingType.ICMP.ordinal()] = 4;
-        } catch (NoSuchFieldError unused4) {
-        }
-        a = iArr;
+    @Override // defpackage.cz
+    public final void b(Throwable th) {
+        throw th;
     }
 }

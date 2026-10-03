@@ -1,21 +1,46 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ep1 extends be3 implements j72 {
-    public final /* synthetic */ boolean Q;
-    public final /* synthetic */ g72 R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ep1 implements xp5 {
+    public static final Object Z = new Object();
+    public volatile m32 X;
+    public volatile Object Y;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ep1(g72 g72Var, boolean z) {
-        super(1);
-        this.Q = z;
-        this.R = g72Var;
+    public static xp5 a(m32 m32Var) {
+        if (m32Var instanceof ep1) {
+            return m32Var;
+        }
+        ep1 ep1Var = new ep1();
+        ep1Var.Y = Z;
+        ep1Var.X = m32Var;
+        return ep1Var;
     }
 
-    @Override // defpackage.j72
-    public final Object invoke(Object obj) {
-        ((go5) obj).c(!this.Q && ((Boolean) this.R.invoke()).booleanValue());
-        return bh7.a;
+    @Override // defpackage.xp5
+    public final Object get() {
+        Object obj;
+        Object obj2 = this.Y;
+        Object obj3 = Z;
+        if (obj2 != obj3) {
+            return obj2;
+        }
+        synchronized (this) {
+            try {
+                obj = this.Y;
+                if (obj == obj3) {
+                    obj = this.X.get();
+                    Object obj4 = this.Y;
+                    if (obj4 != obj3 && obj4 != obj) {
+                        throw new IllegalStateException("Scoped provider was invoked recursively returning different results: " + obj4 + " & " + obj + ". This is likely due to a circular dependency.");
+                    }
+                    this.Y = obj;
+                    this.X = null;
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+        return obj;
     }
 }

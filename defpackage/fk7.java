@@ -1,50 +1,77 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class fk7 {
-    public static final dk7 a;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 
-    static {
-        a = (ai7.e && ai7.d && !da.a()) ? new dk7(1) : new dk7(0);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class fk7 {
+    public final ArrayList a = new ArrayList();
+
+    public static void b(ArrayList arrayList, int i, int[] iArr, int i2) {
+        if (i2 >= iArr.length) {
+            arrayList.add((int[]) iArr.clone());
+            return;
+        }
+        for (int i3 = 0; i3 < i; i3++) {
+            int i4 = 0;
+            while (true) {
+                if (i4 >= i2) {
+                    iArr[i2] = i3;
+                    b(arrayList, i, iArr, i2 + 1);
+                    break;
+                } else if (i3 == iArr[i4]) {
+                    break;
+                } else {
+                    i4++;
+                }
+            }
+        }
     }
 
-    public static int a(String str) {
-        int length = str.length();
-        int i = 0;
-        int i2 = 0;
-        while (i2 < length && str.charAt(i2) < 128) {
-            i2++;
+    public final void a(jk7 jk7Var) {
+        this.a.add(jk7Var);
+    }
+
+    public final List c(ArrayList arrayList) {
+        j97 j97Var;
+        j97 j97Var2;
+        j97 j97Var3;
+        if (arrayList.isEmpty()) {
+            return new ArrayList();
         }
-        int i3 = length;
-        while (i2 < length) {
-            char cCharAt = str.charAt(i2);
-            if (cCharAt >= 2048) {
-                int length2 = str.length();
-                while (i2 < length2) {
-                    char cCharAt2 = str.charAt(i2);
-                    if (cCharAt2 < 2048) {
-                        i += (127 - cCharAt2) >>> 31;
-                    } else {
-                        i += 2;
-                        if (55296 <= cCharAt2 && cCharAt2 <= 57343) {
-                            if (Character.codePointAt(str, i2) < 65536) {
-                                throw new ek7(i2, length2);
-                            }
-                            i2++;
-                        }
+        int size = arrayList.size();
+        ArrayList arrayList2 = this.a;
+        if (size != arrayList2.size()) {
+            return null;
+        }
+        int size2 = arrayList2.size();
+        ArrayList arrayList3 = new ArrayList();
+        b(arrayList3, size2, new int[size2], 0);
+        jk7[] jk7VarArr = new jk7[arrayList.size()];
+        Iterator it = arrayList3.iterator();
+        while (it.hasNext()) {
+            int[] iArr = (int[]) it.next();
+            boolean z = true;
+            for (int i = 0; i < arrayList2.size(); i++) {
+                if (iArr[i] < arrayList.size()) {
+                    jk7 jk7Var = (jk7) arrayList2.get(i);
+                    jk7 jk7Var2 = (jk7) arrayList.get(iArr[i]);
+                    jk7Var.getClass();
+                    jk7Var2.getClass();
+                    z &= jk7Var2.b.X <= jk7Var.b.X && jk7Var2.a == jk7Var.a && ((j97Var = jk7Var.c) == (j97Var2 = j97.DEFAULT) || (j97Var3 = jk7Var2.c) == j97Var2 || j97Var3 == j97Var);
+                    if (!z) {
+                        break;
                     }
-                    i2++;
+                    jk7VarArr[iArr[i]] = (jk7) arrayList2.get(i);
                 }
-                i3 += i;
-                break;
             }
-            i3 += (127 - cCharAt) >>> 31;
-            i2++;
+            if (z) {
+                return Arrays.asList(jk7VarArr);
+            }
         }
-        if (i3 >= length) {
-            return i3;
-        }
-        throw new IllegalArgumentException("UTF-8 length does not fit in int: " + (((long) i3) + 4294967296L));
+        return null;
     }
 }

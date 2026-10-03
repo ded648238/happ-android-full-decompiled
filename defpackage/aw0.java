@@ -1,40 +1,48 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class aw0 extends fy {
-    public final sw0 R;
-    public transient yv0 S;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
-    public aw0(yv0 yv0Var) {
-        this(yv0Var, yv0Var != null ? yv0Var.n() : null);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class aw0 {
+    public final String a;
+    public final Set b;
+    public final Set c;
+    public final int d;
+    public final int e;
+    public final pw0 f;
+    public final Set g;
+
+    public aw0(String str, Set set, Set set2, int i, int i2, pw0 pw0Var, Set set3) {
+        this.a = str;
+        this.b = Collections.unmodifiableSet(set);
+        this.c = Collections.unmodifiableSet(set2);
+        this.d = i;
+        this.e = i2;
+        this.f = pw0Var;
+        this.g = Collections.unmodifiableSet(set3);
     }
 
-    @Override // defpackage.yv0
-    public sw0 n() {
-        sw0 sw0Var = this.R;
-        sw0Var.getClass();
-        return sw0Var;
+    public static zv0 a(er5 er5Var) {
+        return new zv0(er5Var, new er5[0]);
     }
 
-    @Override // defpackage.fy
-    public void x() {
-        yv0 yv0Var = this.S;
-        if (yv0Var != null && yv0Var != this) {
-            qw0 qw0VarV0 = n().v0(ng2.T);
-            qw0VarV0.getClass();
-            ie1 ie1Var = (ie1) yv0Var;
-            ie1Var.k();
-            ie0 ie0VarM = ie1Var.m();
-            if (ie0VarM != null) {
-                ie0VarM.p();
-            }
+    public static aw0 b(Object obj, Class cls, Class... clsArr) {
+        HashSet hashSet = new HashSet();
+        HashSet hashSet2 = new HashSet();
+        HashSet hashSet3 = new HashSet();
+        hashSet.add(er5.a(cls));
+        for (Class cls2 : clsArr) {
+            vx6.m(cls2, "Null interface");
+            hashSet.add(er5.a(cls2));
         }
-        this.S = go0.R;
+        return new aw0(null, new HashSet(hashSet), new HashSet(hashSet2), 0, 0, new yv0(1, obj), hashSet3);
     }
 
-    public aw0(yv0 yv0Var, sw0 sw0Var) {
-        super(yv0Var);
-        this.R = sw0Var;
+    public final String toString() {
+        return "Component<" + Arrays.toString(this.b.toArray()) + ">{" + this.d + ", type=" + this.e + ", deps=" + Arrays.toString(this.c.toArray()) + "}";
     }
 }

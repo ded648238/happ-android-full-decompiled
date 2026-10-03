@@ -1,77 +1,49 @@
 package defpackage;
 
-import java.io.Closeable;
-import java.io.RandomAccessFile;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.Arrays;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class c53 implements Closeable {
-    public boolean Q;
-    public int R;
-    public final ReentrantLock S = new ReentrantLock();
-    public final RandomAccessFile T;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class c53 extends df5 {
+    public final boolean l;
 
-    public c53(RandomAccessFile randomAccessFile) {
-        this.T = randomAccessFile;
+    public c53(String str, jl2 jl2Var) {
+        super(str, jl2Var, 1);
+        this.l = true;
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public final void close() {
-        ReentrantLock reentrantLock = this.S;
-        reentrantLock.lock();
-        try {
-            if (this.Q) {
-                reentrantLock.unlock();
-                return;
-            }
-            this.Q = true;
-            if (this.R != 0) {
-                reentrantLock.unlock();
-                return;
-            }
-            reentrantLock.unlock();
-            synchronized (this) {
-                this.T.close();
-            }
-        } catch (Throwable th) {
-            reentrantLock.unlock();
-            throw th;
+    @Override // defpackage.df5
+    public final boolean equals(Object obj) {
+        int i;
+        if (this == obj) {
+            return true;
         }
+        if (obj instanceof c53) {
+            er6 er6Var = (er6) obj;
+            if (this.a.equals(er6Var.a())) {
+                c53 c53Var = (c53) obj;
+                if (c53Var.l && Arrays.equals((er6[]) this.j.getValue(), (er6[]) c53Var.j.getValue())) {
+                    int e = er6Var.e();
+                    int i2 = this.c;
+                    if (i2 == e) {
+                        for (0; i < i2; i + 1) {
+                            i = (m93.h(h(i).a(), er6Var.h(i).a()) && m93.h(h(i).s(), er6Var.h(i).s())) ? i + 1 : 0;
+                        }
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 
-    public final jv1 f(long j) {
-        ReentrantLock reentrantLock = this.S;
-        reentrantLock.lock();
-        try {
-            if (this.Q) {
-                throw new IllegalStateException("closed");
-            }
-            this.R++;
-            reentrantLock.unlock();
-            return new jv1(this, j);
-        } catch (Throwable th) {
-            reentrantLock.unlock();
-            throw th;
-        }
+    @Override // defpackage.df5
+    public final int hashCode() {
+        return super.hashCode() * 31;
     }
 
-    public final long size() {
-        long length;
-        ReentrantLock reentrantLock = this.S;
-        reentrantLock.lock();
-        try {
-            if (this.Q) {
-                throw new IllegalStateException("closed");
-            }
-            reentrantLock.unlock();
-            synchronized (this) {
-                length = this.T.length();
-            }
-            return length;
-        } catch (Throwable th) {
-            reentrantLock.unlock();
-            throw th;
-        }
+    @Override // defpackage.er6
+    public final boolean i() {
+        return this.l;
     }
 }

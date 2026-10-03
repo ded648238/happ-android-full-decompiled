@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -23,15 +23,15 @@
         "",
         "type",
         "Ljava/lang/String;",
-        "e",
+        "getType",
         "()Ljava/lang/String;",
         "setType",
         "(Ljava/lang/String;)V",
         "rand",
-        "c",
+        "b",
         "setRand",
         "randRange",
-        "d",
+        "c",
         "setRandRange",
         "delay",
         "a",
@@ -39,7 +39,7 @@
         "Ljava/io/Serializable;",
         "packet",
         "Ljava/io/Serializable;",
-        "b",
+        "getPacket",
         "()Ljava/io/Serializable;",
         "setPacket",
         "(Ljava/io/Serializable;)V",
@@ -180,58 +180,36 @@
 
 # virtual methods
 .method public final a()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->delay:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->delay:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final b()Ljava/io/Serializable;
-    .locals 1
+.method public final b()Ljava/lang/String;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->packet:Ljava/io/Serializable;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->rand:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final c()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->rand:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->randRange:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public final d()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->randRange:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final e()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->type:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -276,7 +254,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -300,7 +278,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -324,7 +302,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -348,7 +326,7 @@
 
     .line 49
     .line 50
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 51
     .line 52
@@ -364,7 +342,7 @@
 
     .line 57
     :cond_5
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->packet:Ljava/io/Serializable;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->packet:Ljava/io/Serializable;
 
     .line 58
     .line 59
@@ -372,15 +350,15 @@
 
     .line 60
     .line 61
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 62
     .line 63
     .line 64
-    move-result p1
+    move-result p0
 
     .line 65
-    if-nez p1, :cond_6
+    if-nez p0, :cond_6
 
     .line 66
     .line 67
@@ -406,7 +384,7 @@
 
     .line 5
     .line 6
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 7
     goto :goto_0
@@ -434,7 +412,7 @@
 
     .line 17
     .line 18
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 19
     goto :goto_1
@@ -465,7 +443,7 @@
 
     .line 30
     .line 31
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 32
     goto :goto_2
@@ -496,7 +474,7 @@
 
     .line 43
     .line 44
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 45
     goto :goto_3
@@ -519,11 +497,11 @@
 
     .line 52
     .line 53
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->packet:Ljava/io/Serializable;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->packet:Ljava/io/Serializable;
 
     .line 54
     .line 55
-    if-nez v2, :cond_4
+    if-nez p0, :cond_4
 
     .line 56
     .line 57
@@ -531,7 +509,7 @@
 
     .line 58
     :cond_4
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     .line 59
     .line 60
@@ -547,7 +525,7 @@
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 8
+    .locals 7
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->type:Ljava/lang/String;
@@ -566,23 +544,23 @@
 
     .line 8
     .line 9
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->packet:Ljava/io/Serializable;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$NoisesBean;->packet:Ljava/io/Serializable;
 
     .line 10
     .line 11
-    const-string v5, ", rand="
+    const-string v4, ", rand="
 
     .line 12
     .line 13
-    const-string v6, ", randRange="
+    const-string v5, ", randRange="
 
     .line 14
     .line 15
-    const-string v7, "NoisesBean(type="
+    const-string v6, "NoisesBean(type="
 
     .line 16
     .line 17
-    invoke-static {v7, v0, v5, v1, v6}, Lmi2;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v6, v0, v4, v1, v5}, Lw31;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 18
     .line 19
@@ -594,25 +572,25 @@
 
     .line 22
     .line 23
-    const-string v5, ", packet="
+    const-string v4, ", packet="
 
     .line 24
     .line 25
-    invoke-static {v0, v2, v1, v3, v5}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2, v1, v3, v4}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 26
     .line 27
     .line 28
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 29
     .line 30
     .line 31
-    const-string v1, ")"
+    const-string p0, ")"
 
     .line 32
     .line 33
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 34
     .line 35
@@ -622,8 +600,8 @@
     .line 37
     .line 38
     .line 39
-    move-result-object v0
+    move-result-object p0
 
     .line 40
-    return-object v0
+    return-object p0
 .end method

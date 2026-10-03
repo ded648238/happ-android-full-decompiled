@@ -1,6 +1,6 @@
 .class public Lokhttp3/internal/platform/android/AndroidSocketAdapter;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/platform/android/SocketAdapter;
@@ -36,7 +36,7 @@
         "",
         "Lokhttp3/Protocol;",
         "protocols",
-        "Lbh7;",
+        "Lr98;",
         "configureTlsExtensions",
         "(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V",
         "getSelectedProtocol",
@@ -101,7 +101,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/platform/android/AndroidSocketAdapter$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -130,7 +130,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/Class;)V
-    .locals 4
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -156,120 +156,114 @@
 
     .line 8
     .line 9
-    const/4 v0, 0x1
+    sget-object v0, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
     .line 10
-    new-array v1, v0, [Ljava/lang/Class;
-
     .line 11
+    filled-new-array {v0}, [Ljava/lang/Class;
+
     .line 12
-    const/4 v2, 0x0
-
     .line 13
-    sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
-
     .line 14
+    move-result-object v0
+
     .line 15
-    aput-object v3, v1, v2
+    const-string v1, "setUseSessionTickets"
 
     .line 16
     .line 17
-    const-string v3, "setUseSessionTickets"
+    invoke-virtual {p1, v1, v0}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 18
     .line 19
-    invoke-virtual {p1, v3, v1}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 20
+    move-result-object v0
+
     .line 21
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 22
-    move-result-object v1
-
     .line 23
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 24
+    iput-object v0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->setUseSessionTickets:Ljava/lang/reflect/Method;
+
     .line 25
     .line 26
-    iput-object v1, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->setUseSessionTickets:Ljava/lang/reflect/Method;
+    const-class v0, Ljava/lang/String;
 
     .line 27
     .line 28
-    new-array v1, v0, [Ljava/lang/Class;
+    filled-new-array {v0}, [Ljava/lang/Class;
 
     .line 29
     .line 30
-    const-class v3, Ljava/lang/String;
-
     .line 31
+    move-result-object v0
+
     .line 32
-    aput-object v3, v1, v2
+    const-string v1, "setHostname"
 
     .line 33
     .line 34
-    const-string v3, "setHostname"
+    invoke-virtual {p1, v1, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 35
     .line 36
-    invoke-virtual {p1, v3, v1}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 37
-    .line 38
-    .line 39
-    move-result-object v1
+    move-result-object v0
 
+    .line 38
+    iput-object v0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->setHostname:Ljava/lang/reflect/Method;
+
+    .line 39
     .line 40
-    iput-object v1, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->setHostname:Ljava/lang/reflect/Method;
+    const-string v0, "getAlpnSelectedProtocol"
 
     .line 41
     .line 42
-    const-string v1, "getAlpnSelectedProtocol"
+    const/4 v1, 0x0
 
     .line 43
+    invoke-virtual {p1, v0, v1}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
     .line 44
-    const/4 v3, 0x0
-
     .line 45
-    invoke-virtual {p1, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 46
-    .line 47
-    .line 48
-    move-result-object v1
+    move-result-object v0
 
+    .line 47
+    iput-object v0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->getAlpnSelectedProtocol:Ljava/lang/reflect/Method;
+
+    .line 48
     .line 49
-    iput-object v1, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->getAlpnSelectedProtocol:Ljava/lang/reflect/Method;
+    const-class v0, [B
 
     .line 50
     .line 51
-    new-array v0, v0, [Ljava/lang/Class;
+    filled-new-array {v0}, [Ljava/lang/Class;
 
     .line 52
     .line 53
-    const-class v1, [B
-
     .line 54
+    move-result-object v0
+
     .line 55
-    aput-object v1, v0, v2
+    const-string v1, "setAlpnProtocols"
 
     .line 56
     .line 57
-    const-string v1, "setAlpnProtocols"
+    invoke-virtual {p1, v1, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 58
     .line 59
-    invoke-virtual {p1, v1, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 60
-    .line 61
-    .line 62
     move-result-object p1
 
-    .line 63
+    .line 61
     iput-object p1, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->setAlpnProtocols:Ljava/lang/reflect/Method;
 
-    .line 64
-    .line 65
+    .line 62
+    .line 63
     return-void
 .end method
 
@@ -287,7 +281,7 @@
 
 # virtual methods
 .method public configureTlsExtensions(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V
-    .locals 5
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -328,125 +322,107 @@
 
     .line 14
     .line 15
-    const/4 v1, 0x1
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 16
-    new-array v2, v1, [Ljava/lang/Object;
-
     .line 17
-    .line 18
-    sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    filled-new-array {v1}, [Ljava/lang/Object;
 
+    .line 18
     .line 19
     .line 20
-    const/4 v4, 0x0
+    move-result-object v1
 
     .line 21
-    aput-object v3, v2, v4
+    invoke-virtual {v0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 22
     .line 23
-    invoke-virtual {v0, p1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 24
+    if-eqz p2, :cond_0
+
     .line 25
     .line 26
-    if-eqz p2, :cond_0
+    iget-object v0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->setHostname:Ljava/lang/reflect/Method;
 
     .line 27
     .line 28
-    iget-object v0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->setHostname:Ljava/lang/reflect/Method;
+    filled-new-array {p2}, [Ljava/lang/Object;
 
     .line 29
     .line 30
-    new-array v2, v1, [Ljava/lang/Object;
-
     .line 31
+    move-result-object p2
+
     .line 32
-    aput-object p2, v2, v4
+    invoke-virtual {v0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 33
     .line 34
-    invoke-virtual {v0, p1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 35
+    :cond_0
+    iget-object p0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->setAlpnProtocols:Ljava/lang/reflect/Method;
+
     .line 36
     .line 37
-    goto :goto_0
+    sget-object p2, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
 
     .line 38
-    :catch_0
-    move-exception p1
-
     .line 39
-    goto :goto_1
+    invoke-virtual {p2, p3}, Lokhttp3/internal/platform/Platform$Companion;->concatLengthPrefixed(Ljava/util/List;)[B
 
     .line 40
-    :catch_1
-    move-exception p1
-
     .line 41
-    goto :goto_2
-
     .line 42
-    :cond_0
-    :goto_0
-    iget-object p2, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->setAlpnProtocols:Ljava/lang/reflect/Method;
+    move-result-object p2
 
     .line 43
-    .line 44
-    sget-object v0, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
+    filled-new-array {p2}, [Ljava/lang/Object;
 
+    .line 44
     .line 45
     .line 46
-    invoke-virtual {v0, p3}, Lokhttp3/internal/platform/Platform$Companion;->concatLengthPrefixed(Ljava/util/List;)[B
+    move-result-object p2
 
     .line 47
-    .line 48
-    .line 49
-    move-result-object p3
-
-    .line 50
-    new-array v0, v1, [Ljava/lang/Object;
-
-    .line 51
-    .line 52
-    aput-object p3, v0, v4
-
-    .line 53
-    .line 54
-    invoke-virtual {p2, p1, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 55
-    .line 56
-    .line 57
+    .line 48
+    .line 49
+    .line 50
     return-void
+
+    .line 51
+    :catch_0
+    move-exception p0
+
+    .line 52
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
+
+    .line 53
+    .line 54
+    .line 55
+    return-void
+
+    .line 56
+    :catch_1
+    move-exception p0
+
+    .line 57
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 58
-    :goto_1
-    invoke-static {p1}, Lfn;->j(Ljava/lang/Object;)V
-
     .line 59
     .line 60
-    .line 61
-    return-void
-
-    .line 62
-    :goto_2
-    invoke-static {p1}, Lfn;->j(Ljava/lang/Object;)V
-
-    .line 63
-    .line 64
-    .line 65
     :cond_1
     return-void
 .end method
 
 .method public getSelectedProtocol(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -474,35 +450,35 @@
     .line 12
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->getAlpnSelectedProtocol:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->getAlpnSelectedProtocol:Ljava/lang/reflect/Method;
 
     .line 13
     .line 14
-    invoke-virtual {v0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
     .line 16
     .line 17
-    move-result-object p1
+    move-result-object p0
 
     .line 18
-    check-cast p1, [B
+    check-cast p0, [B
 
     .line 19
     .line 20
-    if-eqz p1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 21
     .line 22
-    new-instance v0, Ljava/lang/String;
+    new-instance p1, Ljava/lang/String;
 
     .line 23
     .line 24
-    sget-object v2, Lnh0;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lho0;->a:Ljava/nio/charset/Charset;
 
     .line 25
     .line 26
-    invoke-direct {v0, p1, v2}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+    invoke-direct {p1, p0, v0}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
@@ -510,18 +486,18 @@
     .line 27
     .line 28
     .line 29
-    return-object v0
+    return-object p1
 
     .line 30
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 31
     goto :goto_0
 
     .line 32
     :catch_1
-    move-exception p1
+    move-exception p0
 
     .line 33
     goto :goto_1
@@ -532,47 +508,47 @@
 
     .line 35
     :goto_0
-    invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
+    invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     .line 36
     .line 37
     .line 38
-    move-result-object v0
+    move-result-object p1
 
     .line 39
-    instance-of v2, v0, Ljava/lang/NullPointerException;
+    instance-of v0, p1, Ljava/lang/NullPointerException;
 
     .line 40
     .line 41
-    if-eqz v2, :cond_2
+    if-eqz v0, :cond_2
 
     .line 42
     .line 43
-    check-cast v0, Ljava/lang/NullPointerException;
+    check-cast p1, Ljava/lang/NullPointerException;
 
     .line 44
     .line 45
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 46
     .line 47
     .line 48
-    move-result-object v0
+    move-result-object p1
 
     .line 49
-    const-string v2, "ssl == null"
+    const-string v0, "ssl == null"
 
     .line 50
     .line 51
-    invoke-static {v0, v2}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 52
     .line 53
     .line 54
-    move-result v0
+    move-result p1
 
     .line 55
-    if-eqz v0, :cond_2
+    if-eqz p1, :cond_2
 
     .line 56
     .line 57
@@ -580,7 +556,7 @@
 
     .line 58
     :cond_2
-    invoke-static {p1}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 59
     .line 60
@@ -589,7 +565,7 @@
 
     .line 62
     :goto_1
-    invoke-static {p1}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 63
     .line 64
@@ -598,26 +574,26 @@
 .end method
 
 .method public isSupported()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    sget-object v0, Lokhttp3/internal/platform/AndroidPlatform;->Companion:Lokhttp3/internal/platform/AndroidPlatform$Companion;
+    sget-object p0, Lokhttp3/internal/platform/AndroidPlatform;->Companion:Lokhttp3/internal/platform/AndroidPlatform$Companion;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/platform/AndroidPlatform$Companion;->isSupported()Z
+    invoke-virtual {p0}, Lokhttp3/internal/platform/AndroidPlatform$Companion;->isSupported()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public matchesSocket(Ljavax/net/ssl/SSLSocket;)Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -625,19 +601,19 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->sslSocketClass:Ljava/lang/Class;
+    iget-object p0, p0, Lokhttp3/internal/platform/android/AndroidSocketAdapter;->sslSocketClass:Ljava/lang/Class;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     .line 7
     .line 8
     .line 9
-    move-result p1
+    move-result p0
 
     .line 10
-    return p1
+    return p0
 .end method
 
 .method public matchesSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)Z
@@ -649,10 +625,10 @@
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result p0
 
     .line 5
-    return p1
+    return p0
 .end method
 
 .method public trustManager(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
@@ -664,8 +640,8 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    return-object p1
+    return-object p0
 .end method

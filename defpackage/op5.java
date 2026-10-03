@@ -1,151 +1,80 @@
 package defpackage;
 
-import android.content.res.ColorStateList;
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.Outline;
-import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffColorFilter;
-import android.graphics.Rect;
-import android.graphics.RectF;
-import android.graphics.drawable.Drawable;
+import io.sentry.z1;
+import java.util.concurrent.ConcurrentHashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class op5 extends Drawable {
-    public float a;
-    public final Paint b;
-    public final RectF c;
-    public final Rect d;
-    public float e;
-    public ColorStateList h;
-    public PorterDuffColorFilter i;
-    public ColorStateList j;
-    public boolean f = false;
-    public boolean g = true;
-    public PorterDuff.Mode k = PorterDuff.Mode.SRC_IN;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class op5 {
+    public static final op5 c = new op5();
+    public final ConcurrentHashMap b = new ConcurrentHashMap();
+    public final ym2 a = new ym2(1);
 
-    public op5(ColorStateList colorStateList, float f) {
-        this.a = f;
-        Paint paint = new Paint(5);
-        this.b = paint;
-        colorStateList = colorStateList == null ? ColorStateList.valueOf(0) : colorStateList;
-        this.h = colorStateList;
-        paint.setColor(colorStateList.getColorForState(getState(), this.h.getDefaultColor()));
-        this.c = new RectF();
-        this.d = new Rect();
-    }
-
-    public final PorterDuffColorFilter a(ColorStateList colorStateList, PorterDuff.Mode mode) {
-        if (colorStateList == null || mode == null) {
+    public final bl6 a(Class cls) {
+        q22 q22Var;
+        bl6 w;
+        Class cls2;
+        n83.a(cls, "messageType");
+        ConcurrentHashMap concurrentHashMap = this.b;
+        bl6 bl6Var = (bl6) concurrentHashMap.get(cls);
+        if (bl6Var != null) {
+            return bl6Var;
+        }
+        ym2 ym2Var = this.a;
+        ym2Var.getClass();
+        Class cls3 = el6.a;
+        if (!il2.class.isAssignableFrom(cls) && (cls2 = el6.a) != null && !cls2.isAssignableFrom(cls)) {
+            i60.p("Message classes must extend GeneratedMessage or GeneratedMessageLite");
             return null;
         }
-        return new PorterDuffColorFilter(colorStateList.getColorForState(getState(), 0), mode);
-    }
-
-    public final void b(Rect rect) {
-        if (rect == null) {
-            rect = getBounds();
-        }
-        float f = rect.left;
-        float f2 = rect.top;
-        float f3 = rect.right;
-        float f4 = rect.bottom;
-        RectF rectF = this.c;
-        rectF.set(f, f2, f3, f4);
-        Rect rect2 = this.d;
-        rect2.set(rect);
-        if (this.f) {
-            rect2.inset((int) Math.ceil(pp5.a(this.e, this.a, this.g)), (int) Math.ceil(pp5.b(this.e, this.a, this.g)));
-            rectF.set(rect2);
-        }
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void draw(Canvas canvas) {
-        boolean z;
-        PorterDuffColorFilter porterDuffColorFilter = this.i;
-        Paint paint = this.b;
-        if (porterDuffColorFilter == null || paint.getColorFilter() != null) {
-            z = false;
+        ov5 a = ((ze4) ym2Var.Y).a(cls);
+        if ((a.d & 2) == 2) {
+            if (il2.class.isAssignableFrom(cls)) {
+                w = new lk4(el6.c, r22.a, a.a);
+            } else {
+                u98 u98Var = el6.b;
+                q22 q22Var2 = r22.b;
+                if (q22Var2 == null) {
+                    i60.g("Protobuf runtime is not correctly loaded.");
+                    return null;
+                }
+                w = new lk4(u98Var, q22Var2, a.a);
+            }
+        } else if (il2.class.isAssignableFrom(cls)) {
+            du4 du4Var = eu4.b;
+            j34 j34Var = k34.b;
+            w98 w98Var = el6.c;
+            q22 q22Var3 = w31.B(a.a()) != 1 ? r22.a : null;
+            lf4 lf4Var = mf4.b;
+            if (!(a instanceof ov5)) {
+                int[] iArr = kk4.n;
+                z1.l();
+                return null;
+            }
+            w = kk4.w(a, du4Var, j34Var, w98Var, q22Var3, lf4Var);
         } else {
-            paint.setColorFilter(this.i);
-            z = true;
+            du4 du4Var2 = eu4.a;
+            j34 j34Var2 = k34.a;
+            u98 u98Var2 = el6.b;
+            if (w31.B(a.a()) != 1) {
+                q22 q22Var4 = r22.b;
+                if (q22Var4 == null) {
+                    i60.g("Protobuf runtime is not correctly loaded.");
+                    return null;
+                }
+                q22Var = q22Var4;
+            } else {
+                q22Var = null;
+            }
+            lf4 lf4Var2 = mf4.a;
+            if (!(a instanceof ov5)) {
+                int[] iArr2 = kk4.n;
+                z1.l();
+                return null;
+            }
+            w = kk4.w(a, du4Var2, j34Var2, u98Var2, q22Var, lf4Var2);
         }
-        RectF rectF = this.c;
-        float f = this.a;
-        canvas.drawRoundRect(rectF, f, f, paint);
-        if (z) {
-            paint.setColorFilter(null);
-        }
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final int getOpacity() {
-        return -3;
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void getOutline(Outline outline) {
-        outline.setRoundRect(this.d, this.a);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final boolean isStateful() {
-        ColorStateList colorStateList = this.j;
-        if (colorStateList != null && colorStateList.isStateful()) {
-            return true;
-        }
-        ColorStateList colorStateList2 = this.h;
-        return (colorStateList2 != null && colorStateList2.isStateful()) || super.isStateful();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void onBoundsChange(Rect rect) {
-        super.onBoundsChange(rect);
-        b(rect);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final boolean onStateChange(int[] iArr) {
-        PorterDuff.Mode mode;
-        ColorStateList colorStateList = this.h;
-        int colorForState = colorStateList.getColorForState(iArr, colorStateList.getDefaultColor());
-        Paint paint = this.b;
-        boolean z = colorForState != paint.getColor();
-        if (z) {
-            paint.setColor(colorForState);
-        }
-        ColorStateList colorStateList2 = this.j;
-        if (colorStateList2 == null || (mode = this.k) == null) {
-            return z;
-        }
-        this.i = a(colorStateList2, mode);
-        return true;
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setAlpha(int i) {
-        this.b.setAlpha(i);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setColorFilter(ColorFilter colorFilter) {
-        this.b.setColorFilter(colorFilter);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setTintList(ColorStateList colorStateList) {
-        this.j = colorStateList;
-        this.i = a(colorStateList, this.k);
-        invalidateSelf();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setTintMode(PorterDuff.Mode mode) {
-        this.k = mode;
-        this.i = a(this.j, mode);
-        invalidateSelf();
+        bl6 bl6Var2 = (bl6) concurrentHashMap.putIfAbsent(cls, w);
+        return bl6Var2 != null ? bl6Var2 : w;
     }
 }

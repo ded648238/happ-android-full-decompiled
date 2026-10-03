@@ -1,41 +1,34 @@
 package defpackage;
 
-import java.util.Iterator;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class vq {
+    public static final vq c = new vq(jo.c, jo.d);
+    public final long a;
+    public final long b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class vq implements Iterator, Iterable {
-    public final Object[] Q;
-    public int R = 0;
-
-    public vq(Object[] objArr) {
-        this.Q = objArr;
+    public vq(long j, long j2) {
+        this.a = j;
+        this.b = j2;
     }
 
-    @Override // java.util.Iterator
-    public final boolean hasNext() {
-        return this.R < this.Q.length;
-    }
-
-    @Override // java.util.Iterator
-    public final Object next() {
-        int i = this.R;
-        Object[] objArr = this.Q;
-        if (i < objArr.length) {
-            this.R = i + 1;
-            return objArr[i];
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        fn.p();
-        return null;
+        if (!(obj instanceof vq)) {
+            return false;
+        }
+        vq vqVar = (vq) obj;
+        return au0.c(this.a, vqVar.a) && au0.c(this.b, vqVar.b);
     }
 
-    @Override // java.util.Iterator
-    public final void remove() {
-        throw new UnsupportedOperationException();
+    public final int hashCode() {
+        int i = au0.h;
+        return Long.hashCode(this.b) + (Long.hashCode(this.a) * 31);
     }
 
-    @Override // java.lang.Iterable
-    public final Iterator iterator() {
-        return this;
+    public final String toString() {
+        return eh0.o("AppRadioButtonColors(enabled=", au0.i(this.a), ", disabled=", au0.i(this.b), ")");
     }
 }

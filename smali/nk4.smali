@@ -1,216 +1,186 @@
-.class public final Lnk4;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Lnk4;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lpg4;
+.implements Ljp5;
+
+
+# static fields
+.field public static final enum Y:Lnk4;
+
+.field public static final enum Z:Lnk4;
+
+.field public static final synthetic c0:[Lnk4;
 
 
 # instance fields
-.field public final Q:I
-
-.field public final R:I
+.field public final X:I
 
 
 # direct methods
-.method public constructor <init>(II)V
+.method static constructor <clinit>()V
+    .locals 6
+
+    .line 1
+    new-instance v0, Lnk4;
+
+    .line 2
+    .line 3
+    const-string v1, "UNKNOWN"
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    invoke-direct {v0, v1, v2, v2}, Lnk4;-><init>(Ljava/lang/String;II)V
+
+    .line 7
+    .line 8
+    .line 9
+    new-instance v1, Lnk4;
+
+    .line 10
+    .line 11
+    const-string v2, "DATA_MESSAGE"
+
+    .line 12
+    .line 13
+    const/4 v3, 0x1
+
+    .line 14
+    invoke-direct {v1, v2, v3, v3}, Lnk4;-><init>(Ljava/lang/String;II)V
+
+    .line 15
+    .line 16
+    .line 17
+    sput-object v1, Lnk4;->Y:Lnk4;
+
+    .line 18
+    .line 19
+    new-instance v2, Lnk4;
+
+    .line 20
+    .line 21
+    const-string v3, "TOPIC"
+
+    .line 22
+    .line 23
+    const/4 v4, 0x2
+
+    .line 24
+    invoke-direct {v2, v3, v4, v4}, Lnk4;-><init>(Ljava/lang/String;II)V
+
+    .line 25
+    .line 26
+    .line 27
+    new-instance v3, Lnk4;
+
+    .line 28
+    .line 29
+    const-string v4, "DISPLAY_NOTIFICATION"
+
+    .line 30
+    .line 31
+    const/4 v5, 0x3
+
+    .line 32
+    invoke-direct {v3, v4, v5, v5}, Lnk4;-><init>(Ljava/lang/String;II)V
+
+    .line 33
+    .line 34
+    .line 35
+    sput-object v3, Lnk4;->Z:Lnk4;
+
+    .line 36
+    .line 37
+    filled-new-array {v0, v1, v2, v3}, [Lnk4;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    sput-object v0, Lnk4;->c0:[Lnk4;
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
     .line 3
     .line 4
-    if-lez p1, :cond_1
+    iput p3, p0, Lnk4;->X:I
 
     .line 5
     .line 6
-    if-lez p2, :cond_0
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lnk4;
+    .locals 1
+
+    .line 1
+    const-class v0, Lnk4;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
     .line 7
+    check-cast p0, Lnk4;
+
     .line 8
-    iput p1, p0, Lnk4;->Q:I
-
     .line 9
-    .line 10
-    iput p2, p0, Lnk4;->R:I
+    return-object p0
+.end method
 
-    .line 11
-    .line 12
-    return-void
+.method public static values()[Lnk4;
+    .locals 1
 
-    .line 13
-    :cond_0
-    const-string p1, "skip must be greater than 0"
+    .line 1
+    sget-object v0, Lnk4;->c0:[Lnk4;
 
-    .line 14
-    .line 15
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [Lnk4;->clone()Ljava/lang/Object;
 
-    .line 16
-    .line 17
-    .line 18
-    const/4 p1, 0x0
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 19
-    throw p1
+    .line 7
+    check-cast v0, [Lnk4;
 
-    .line 20
-    :cond_1
-    const-string p1, "count must be greater than 0"
-
-    .line 21
-    .line 22
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
-
-    .line 23
-    .line 24
-    .line 25
-    const/4 p1, 0x0
-
-    .line 26
-    throw p1
+    .line 8
+    .line 9
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final a()I
+    .locals 0
 
     .line 1
-    check-cast p1, Lcp6;
+    iget p0, p0, Lnk4;->X:I
 
     .line 2
     .line 3
-    iget v0, p0, Lnk4;->R:I
-
-    .line 4
-    .line 5
-    iget v1, p0, Lnk4;->Q:I
-
-    .line 6
-    .line 7
-    if-ne v0, v1, :cond_0
-
-    .line 8
-    .line 9
-    new-instance v0, Ljk4;
-
-    .line 10
-    .line 11
-    invoke-direct {v0, p1, v1}, Ljk4;-><init>(Lcp6;I)V
-
-    .line 12
-    .line 13
-    .line 14
-    iget-object v1, p1, Lcp6;->Q:Lcr0;
-
-    .line 15
-    .line 16
-    invoke-virtual {v1, v0}, Lcr0;->b(Lep6;)V
-
-    .line 17
-    .line 18
-    .line 19
-    new-instance v1, La04;
-
-    .line 20
-    .line 21
-    const/4 v2, 0x6
-
-    .line 22
-    invoke-direct {v1, v2, v0}, La04;-><init>(ILjava/lang/Object;)V
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-virtual {p1, v1}, Lcp6;->f(Li15;)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-object v0
-
-    .line 29
-    :cond_0
-    if-le v0, v1, :cond_1
-
-    .line 30
-    .line 31
-    new-instance v2, Lmk4;
-
-    .line 32
-    .line 33
-    invoke-direct {v2, p1, v1, v0}, Lmk4;-><init>(Lcp6;II)V
-
-    .line 34
-    .line 35
-    .line 36
-    iget-object v0, p1, Lcp6;->Q:Lcr0;
-
-    .line 37
-    .line 38
-    invoke-virtual {v0, v2}, Lcr0;->b(Lep6;)V
-
-    .line 39
-    .line 40
-    .line 41
-    new-instance v0, Lkk4;
-
-    .line 42
-    .line 43
-    const/4 v1, 0x1
-
-    .line 44
-    invoke-direct {v0, v2, v1}, Lkk4;-><init>(Lcp6;I)V
-
-    .line 45
-    .line 46
-    .line 47
-    invoke-virtual {p1, v0}, Lcp6;->f(Li15;)V
-
-    .line 48
-    .line 49
-    .line 50
-    return-object v2
-
-    .line 51
-    :cond_1
-    new-instance v2, Llk4;
-
-    .line 52
-    .line 53
-    invoke-direct {v2, p1, v1, v0}, Llk4;-><init>(Lcp6;II)V
-
-    .line 54
-    .line 55
-    .line 56
-    iget-object v0, p1, Lcp6;->Q:Lcr0;
-
-    .line 57
-    .line 58
-    invoke-virtual {v0, v2}, Lcr0;->b(Lep6;)V
-
-    .line 59
-    .line 60
-    .line 61
-    new-instance v0, Lkk4;
-
-    .line 62
-    .line 63
-    const/4 v1, 0x0
-
-    .line 64
-    invoke-direct {v0, v2, v1}, Lkk4;-><init>(Lcp6;I)V
-
-    .line 65
-    .line 66
-    .line 67
-    invoke-virtual {p1, v0}, Lcp6;->f(Li15;)V
-
-    .line 68
-    .line 69
-    .line 70
-    return-object v2
+    return p0
 .end method

@@ -1,306 +1,224 @@
-.class public Lgy;
-.super Lfc1;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lgy;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# annotations
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0017\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0004"
-    }
-    d2 = {
-        "Lgy;",
-        "Lfc1;",
-        "<init>",
-        "()V",
-        "app"
-    }
-    k = 0x1
-    mv = {
-        0x2,
-        0x4,
-        0x0
-    }
-    xi = 0x30
-.end annotation
+# instance fields
+.field public final a:I
+
+.field public final b:Landroid/view/Surface;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(ILandroid/view/Surface;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lfc1;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
+    iput p1, p0, Lgy;->a:I
+
+    .line 5
+    .line 6
+    if-eqz p2, :cond_0
+
+    .line 7
+    .line 8
+    iput-object p2, p0, Lgy;->b:Landroid/view/Surface;
+
+    .line 9
+    .line 10
     return-void
+
+    .line 11
+    :cond_0
+    const-string p0, "Null surface"
+
+    .line 12
+    .line 13
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    const/4 p0, 0x0
+
+    .line 17
+    throw p0
 .end method
 
 
 # virtual methods
-.method public F()V
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
     .line 1
-    invoke-super {p0}, Lfc1;->F()V
+    if-ne p1, p0, :cond_0
 
     .line 2
     .line 3
+    goto :goto_0
+
     .line 4
-    iget-object v0, p0, Lfc1;->Z0:Landroid/app/Dialog;
+    :cond_0
+    instance-of v0, p1, Lgy;
 
     .line 5
     .line 6
-    const/4 v1, 0x1
+    if-eqz v0, :cond_1
 
     .line 7
-    if-eqz v0, :cond_0
-
     .line 8
-    .line 9
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCancelable(Z)V
+    check-cast p1, Lgy;
 
+    .line 9
     .line 10
+    iget v0, p0, Lgy;->a:I
+
     .line 11
     .line 12
-    :cond_0
-    iget-object v0, p0, Lfc1;->Z0:Landroid/app/Dialog;
+    iget v1, p1, Lgy;->a:I
 
     .line 13
     .line 14
-    if-eqz v0, :cond_1
+    if-ne v0, v1, :cond_1
 
     .line 15
     .line 16
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    iget-object p0, p0, Lgy;->b:Landroid/view/Surface;
 
     .line 17
     .line 18
-    .line 19
-    move-result-object v0
+    iget-object p1, p1, Lgy;->b:Landroid/view/Surface;
 
+    .line 19
     .line 20
-    if-eqz v0, :cond_1
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 21
     .line 22
-    invoke-static {v0, v1}, Lr27;->c(Landroid/view/Window;Z)V
-
     .line 23
+    move-result p0
+
     .line 24
+    if-eqz p0, :cond_1
+
     .line 25
-    invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
-
     .line 26
+    :goto_0
+    const/4 p0, 0x1
+
     .line 27
+    return p0
+
     .line 28
-    move-result-object v1
-
-    .line 29
-    const/16 v2, 0x51
-
-    .line 30
-    .line 31
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->gravity:I
-
-    .line 32
-    .line 33
-    const/4 v2, -0x1
-
-    .line 34
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->width:I
-
-    .line 35
-    .line 36
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->height:I
-
-    .line 37
-    .line 38
-    invoke-virtual {v0, v1}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
-
-    .line 39
-    .line 40
-    .line 41
     :cond_1
-    invoke-virtual {p0}, Lz42;->h()Landroidx/fragment/app/FragmentActivity;
+    const/4 p0, 0x0
 
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v0
-
-    .line 45
-    instance-of v1, v0, Lsu/happ/proxyutility/ui/BaseActivity;
-
-    .line 46
-    .line 47
-    if-eqz v1, :cond_2
-
-    .line 48
-    .line 49
-    check-cast v0, Lsu/happ/proxyutility/ui/BaseActivity;
-
-    .line 50
-    .line 51
-    goto :goto_0
-
-    .line 52
-    :cond_2
-    const/4 v0, 0x0
-
-    .line 53
-    :goto_0
-    if-eqz v0, :cond_3
-
-    .line 54
-    .line 55
-    iget-object v0, p0, Lz42;->x0:Landroid/view/View;
-
-    .line 56
-    .line 57
-    if-eqz v0, :cond_3
-
-    .line 58
-    .line 59
-    new-instance v1, Lfn;
-
-    .line 60
-    .line 61
-    const/16 v2, 0x9
-
-    .line 62
-    .line 63
-    invoke-direct {v1, v2, p0}, Lfn;-><init>(ILjava/lang/Object;)V
-
-    .line 64
-    .line 65
-    .line 66
-    sget-object v2, Lqn7;->a:Ljava/util/WeakHashMap;
-
-    .line 67
-    .line 68
-    invoke-static {v0, v1}, Lin7;->l(Landroid/view/View;Lih4;)V
-
-    .line 69
-    .line 70
-    .line 71
-    :cond_3
-    return-void
+    .line 29
+    return p0
 .end method
 
-.method public w(Landroid/content/Context;)V
+.method public final hashCode()I
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget v0, p0, Lgy;->a:I
 
     .line 2
     .line 3
-    .line 4
-    new-instance v0, Landroid/content/res/Configuration;
+    const v1, 0xf4243
 
+    .line 4
     .line 5
     .line 6
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    xor-int/2addr v0, v1
 
     .line 7
-    .line 8
-    .line 9
-    move-result-object v1
+    mul-int/2addr v0, v1
 
+    .line 8
+    iget-object p0, p0, Lgy;->b:Landroid/view/Surface;
+
+    .line 9
     .line 10
-    if-eqz v1, :cond_0
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     .line 11
     .line 12
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
     .line 13
+    move-result p0
+
+    .line 14
+    xor-int/2addr p0, v0
+
+    .line 15
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Result{resultCode="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, Lgy;->a:I
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", surface="
+
     .line 14
     .line 15
-    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
-    goto :goto_0
-
     .line 17
-    :cond_0
-    const/4 v1, 0x0
-
     .line 18
-    :goto_0
-    invoke-direct {v0, v1}, Landroid/content/res/Configuration;-><init>(Landroid/content/res/Configuration;)V
+    iget-object p0, p0, Lgy;->b:Landroid/view/Surface;
 
     .line 19
     .line 20
-    .line 21
-    const/high16 v1, 0x3f800000    # 1.0f
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 21
     .line 22
     .line 23
-    iput v1, v0, Landroid/content/res/Configuration;->fontScale:F
+    const-string p0, "}"
 
     .line 24
     .line 25
-    invoke-virtual {p1, v0}, Landroid/content/Context;->createConfigurationContext(Landroid/content/res/Configuration;)Landroid/content/Context;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
     .line 28
-    move-result-object p1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
-    invoke-super {p0, p1}, Lfc1;->w(Landroid/content/Context;)V
-
     .line 30
     .line 31
+    move-result-object p0
+
     .line 32
-    return-void
-.end method
-
-.method public final x(Landroid/os/Bundle;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lfc1;->x(Landroid/os/Bundle;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lz42;->K()Landroidx/fragment/app/FragmentActivity;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->i()Lph4;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
-
-    .line 12
-    new-instance v0, Lt0;
-
-    .line 13
-    .line 14
-    const/4 v1, 0x4
-
-    .line 15
-    invoke-direct {v0, v1, p0}, Lt0;-><init>(ILjava/lang/Object;)V
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-static {p1, p0, v0}, Lji2;->h(Lph4;Lik3;Lj72;)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
+    return-object p0
 .end method

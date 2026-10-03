@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -20,7 +20,7 @@
         "<init>",
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
         "Landroidx/coordinatorlayout/widget/CoordinatorLayout;",
-        "Q",
+        "c0",
         "Landroidx/coordinatorlayout/widget/CoordinatorLayout;",
         "getHost",
         "()Landroidx/coordinatorlayout/widget/CoordinatorLayout;",
@@ -38,7 +38,7 @@
 
 
 # instance fields
-.field public final Q:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+.field public final c0:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
 
 # direct methods
@@ -94,7 +94,7 @@
     move-result-object p1
 
     .line 20
-    sget p2, Lt95;->snackbar_host:I
+    sget p2, Ltt5;->snackbar_host:I
 
     .line 21
     .line 22
@@ -106,7 +106,7 @@
     .line 24
     .line 25
     .line 26
-    sget p1, Ld95;->snackbar_host:I
+    sget p1, Let5;->snackbar_host:I
 
     .line 27
     .line 28
@@ -127,7 +127,7 @@
 
     .line 36
     .line 37
-    iput-object p1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;->Q:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+    iput-object p1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;->c0:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     .line 38
     .line 39
@@ -137,12 +137,12 @@
 
 # virtual methods
 .method public final getHost()Landroidx/coordinatorlayout/widget/CoordinatorLayout;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;->Q:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;->c0:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

@@ -1,14 +1,29 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class hg6 extends rf4 {
-    public int U;
-    public int V;
+import android.graphics.Matrix;
+import java.util.ArrayList;
+import java.util.List;
 
-    public hg6(int i, int i2) {
-        super(i, 2);
-        this.U = i2;
-        this.V = 0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class hg6 extends gh6 implements eh6 {
+    public List h = new ArrayList();
+    public Boolean i;
+    public Matrix j;
+    public int k;
+    public String l;
+
+    @Override // defpackage.eh6
+    public final void e(ih6 ih6Var) {
+        if (ih6Var instanceof zg6) {
+            this.h.add(ih6Var);
+            return;
+        }
+        throw new ii6("Gradient elements cannot contain " + ih6Var + " elements.");
+    }
+
+    @Override // defpackage.eh6
+    public final List g() {
+        return this.h;
     }
 }

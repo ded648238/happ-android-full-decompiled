@@ -1,94 +1,117 @@
 .class public final synthetic Lue0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
 
-.field public final synthetic R:Lre0;
+.field public final synthetic Y:Lpj0;
+
+.field public final synthetic Z:Landroid/hardware/camera2/CameraCaptureSession;
+
+.field public final synthetic c0:Landroid/hardware/camera2/CaptureRequest;
+
+.field public final synthetic d0:Landroid/hardware/camera2/CaptureResult;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lre0;I)V
+.method public synthetic constructor <init>(Lpj0;Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lue0;->Q:I
+    iput p5, p0, Lue0;->X:I
 
     .line 2
     .line 3
-    iput-object p1, p0, Lue0;->R:Lre0;
+    iput-object p1, p0, Lue0;->Y:Lpj0;
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lue0;->Z:Landroid/hardware/camera2/CameraCaptureSession;
 
     .line 6
     .line 7
+    iput-object p3, p0, Lue0;->c0:Landroid/hardware/camera2/CaptureRequest;
+
     .line 8
+    .line 9
+    iput-object p4, p0, Lue0;->d0:Landroid/hardware/camera2/CaptureResult;
+
+    .line 10
+    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 2
+    .locals 4
 
     .line 1
-    iget v0, p0, Lue0;->Q:I
+    iget v0, p0, Lue0;->X:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Lue0;->R:Lre0;
+    iget-object v1, p0, Lue0;->d0:Landroid/hardware/camera2/CaptureResult;
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    iget-object v2, p0, Lue0;->c0:Landroid/hardware/camera2/CaptureRequest;
 
     .line 6
     .line 7
-    .line 8
-    invoke-virtual {v1}, Lre0;->k()V
+    iget-object v3, p0, Lue0;->Z:Landroid/hardware/camera2/CameraCaptureSession;
 
+    .line 8
     .line 9
+    iget-object p0, p0, Lue0;->Y:Lpj0;
+
     .line 10
     .line 11
-    return-void
+    packed-switch v0, :pswitch_data_0
 
     .line 12
-    :pswitch_0
-    if-eqz v1, :cond_0
-
     .line 13
     .line 14
-    invoke-virtual {v1}, Lre0;->k()V
+    iget-object p0, p0, Lpj0;->a:Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
 
     .line 15
     .line 16
+    invoke-virtual {p0, v3, v2, v1}, Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;->onCaptureProgressed(Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
+
     .line 17
-    :cond_0
-    return-void
-
     .line 18
-    :pswitch_1
-    invoke-virtual {v1}, Lre0;->k()V
-
     .line 19
-    .line 20
-    .line 21
     return-void
 
+    .line 20
+    :pswitch_0
+    iget-object p0, p0, Lpj0;->a:Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
+
+    .line 21
     .line 22
-    nop
+    invoke-virtual {p0, v3, v2, v1}, Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;->onCaptureProgressed(Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
 
     .line 23
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    nop
+
+    .line 27
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

@@ -1,14 +1,28 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ar3 {
-    public static final ar3 c = new ar3(4611686018427387903L, true);
-    public final long a;
-    public final long b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ar3 extends xq3 {
+    public final String a;
 
-    public ar3(long j, boolean z) {
-        this.a = j / 10;
-        this.b = j % 10;
+    public ar3(String str) {
+        str.getClass();
+        this.a = str;
+    }
+
+    @Override // defpackage.xq3
+    public final Object a() {
+        return this.a;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof ar3) && m93.h(this.a, ((ar3) obj).a);
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode();
     }
 }

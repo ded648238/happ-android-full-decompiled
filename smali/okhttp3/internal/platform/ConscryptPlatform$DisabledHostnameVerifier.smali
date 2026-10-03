@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/ConscryptPlatform$DisabledHostnameVerifier;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lorg/conscrypt/ConscryptHostnameVerifier;
@@ -89,17 +89,17 @@
     .locals 0
 
     .line 1
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 2
-    return p1
+    return p0
 .end method
 
 .method public verify([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z
     .locals 0
 
     .line 3
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
-    return p1
+    return p0
 .end method

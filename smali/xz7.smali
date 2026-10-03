@@ -1,143 +1,57 @@
 .class public final Lxz7;
-.super Ln2;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lxz7;",
-            ">;"
-        }
-    .end annotation
-.end field
+# interfaces
+.implements Luq6;
 
 
 # instance fields
-.field public final Q:I
+.field public final a:Luq6;
 
-.field public final R:Los0;
-
-.field public final S:Le08;
+.field public final b:Lmi2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Ltp6;
-
-    .line 2
-    .line 3
-    const/16 v1, 0xa
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ltp6;-><init>(I)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, Lxz7;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-.method public constructor <init>(ILos0;Le08;)V
+.method public constructor <init>(Luq6;Lmi2;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Lxz7;->Q:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
     .line 6
-    iput-object p2, p0, Lxz7;->R:Los0;
-
     .line 7
-    .line 8
-    iput-object p3, p0, Lxz7;->S:Le08;
+    iput-object p1, p0, Lxz7;->a:Luq6;
 
+    .line 8
     .line 9
+    iput-object p2, p0, Lxz7;->b:Lmi2;
+
     .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 3
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
 
     .line 1
-    const/16 v0, 0x4f45
+    new-instance v0, Lwz7;
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lyc4;->g1(Landroid/os/Parcel;I)I
+    invoke-direct {v0, p0}, Lwz7;-><init>(Lxz7;)V
 
     .line 4
     .line 5
     .line 6
-    move-result v0
-
-    .line 7
-    const/4 v1, 0x4
-
-    .line 8
-    const/4 v2, 0x1
-
-    .line 9
-    invoke-static {p1, v2, v1}, Lyc4;->i1(Landroid/os/Parcel;II)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget v1, p0, Lxz7;->Q:I
-
-    .line 13
-    .line 14
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 15
-    .line 16
-    .line 17
-    const/4 v1, 0x2
-
-    .line 18
-    iget-object v2, p0, Lxz7;->R:Los0;
-
-    .line 19
-    .line 20
-    invoke-static {p1, v1, v2, p2}, Lyc4;->c1(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
-
-    .line 21
-    .line 22
-    .line 23
-    const/4 v1, 0x3
-
-    .line 24
-    iget-object v2, p0, Lxz7;->S:Le08;
-
-    .line 25
-    .line 26
-    invoke-static {p1, v1, v2, p2}, Lyc4;->c1(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-static {p1, v0}, Lyc4;->h1(Landroid/os/Parcel;I)V
-
-    .line 30
-    .line 31
-    .line 32
-    return-void
+    return-object v0
 .end method

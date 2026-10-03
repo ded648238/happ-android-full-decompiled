@@ -1,17 +1,45 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface jv5 {
-    void a(float f, float f2, float f3, float f4);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class jv5 implements xi2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ boolean Y;
+    public final /* synthetic */ dn4 Z;
+    public final /* synthetic */ boolean c0;
+    public final /* synthetic */ int d0;
+    public final /* synthetic */ ui2 e0;
+    public final /* synthetic */ Object f0;
 
-    void b(float f, float f2);
+    public /* synthetic */ jv5(boolean z, ui2 ui2Var, dn4 dn4Var, boolean z2, Object obj, int i, int i2) {
+        this.X = i2;
+        this.Y = z;
+        this.e0 = ui2Var;
+        this.Z = dn4Var;
+        this.c0 = z2;
+        this.f0 = obj;
+        this.d0 = i;
+    }
 
-    void c(float f, float f2, float f3, float f4, float f5, float f6);
-
-    void close();
-
-    void d(float f, float f2, float f3, boolean z, boolean z2, float f4, float f5);
-
-    void e(float f, float f2);
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        int i = this.X;
+        r98 r98Var = r98.a;
+        int i2 = this.d0;
+        Object obj3 = this.f0;
+        ui2 ui2Var = this.e0;
+        switch (i) {
+            case 0:
+                ((Integer) obj2).getClass();
+                int S = ku8.S(i2 | 1);
+                n75.d(this.Y, (ji2) ui2Var, this.Z, this.c0, (iv5) obj3, (rk2) obj, S);
+                break;
+            default:
+                ((Integer) obj2).getClass();
+                int S2 = ku8.S(i2 | 1);
+                fm7.a(this.Y, (mi2) ui2Var, this.Z, this.c0, (cm7) obj3, (rk2) obj, S2);
+                break;
+        }
+        return r98Var;
+    }
 }

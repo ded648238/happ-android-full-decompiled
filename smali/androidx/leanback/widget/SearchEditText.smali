@@ -1,10 +1,10 @@
 .class public Landroidx/leanback/widget/SearchEditText;
 .super Landroidx/leanback/widget/StreamingTextView;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public a0:Lj16;
+.field public j0:Lzm6;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 1
 
     .line 1
-    sget v0, Lma5;->TextAppearance_Leanback_SearchTextEdit:I
+    sget v0, Lmu5;->TextAppearance_Leanback_SearchTextEdit:I
 
     .line 2
     .line 3
@@ -54,7 +54,7 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Landroidx/leanback/widget/SearchEditText;->a0:Lj16;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchEditText;->j0:Lzm6;
 
     .line 9
     .line 10
@@ -62,11 +62,11 @@
 
     .line 11
     .line 12
-    new-instance v0, Lwm1;
+    new-instance v0, Ldv1;
 
     .line 13
     .line 14
-    invoke-direct {v0, p0}, Lwm1;-><init>(Landroidx/leanback/widget/SearchEditText;)V
+    invoke-direct {v0, p0}, Ldv1;-><init>(Landroidx/leanback/widget/SearchEditText;)V
 
     .line 15
     .line 16
@@ -77,15 +77,15 @@
     .line 19
     .line 20
     :cond_0
-    invoke-super {p0, p1, p2}, Landroid/widget/EditText;->onKeyPreIme(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Landroid/view/View;->onKeyPreIme(ILandroid/view/KeyEvent;)Z
 
     .line 21
     .line 22
     .line 23
-    move-result p1
+    move-result p0
 
     .line 24
-    return p1
+    return p0
 .end method
 
 .method public bridge synthetic setCustomSelectionActionModeCallback(Landroid/view/ActionMode$Callback;)V
@@ -125,11 +125,11 @@
     return-void
 .end method
 
-.method public setOnKeyboardDismissListener(Lj16;)V
+.method public setOnKeyboardDismissListener(Lzm6;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/leanback/widget/SearchEditText;->a0:Lj16;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchEditText;->j0:Lzm6;
 
     .line 2
     .line 3

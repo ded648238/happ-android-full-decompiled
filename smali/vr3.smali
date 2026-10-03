@@ -1,196 +1,161 @@
 .class public final Lvr3;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg72;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:Lwr3;
+.field public a:I
 
-.field public final synthetic R:Lqm4;
+.field public final b:Ljava/util/ArrayList;
 
-.field public final synthetic S:J
+.field public final c:Ljava/util/ArrayList;
+
+.field public final d:Ljava/util/ArrayList;
+
+.field public final e:Ljava/util/LinkedHashMap;
 
 
 # direct methods
-.method public constructor <init>(Lwr3;Lqm4;J)V
+.method public constructor <init>(ILjava/lang/String;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lvr3;->Q:Lwr3;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lvr3;->R:Lqm4;
-
     .line 4
-    .line 5
-    iput-wide p3, p0, Lvr3;->S:J
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 5
     .line 6
     .line 7
-    const/4 p1, 0x0
-
-    .line 8
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lvr3;->Q:Lwr3;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, Lwr3;->V:Ljf3;
-
-    .line 4
-    .line 5
-    iget-object v1, v0, Ljf3;->a:Landroidx/compose/ui/node/LayoutNode;
-
-    .line 6
-    .line 7
-    invoke-static {v1}, Lw33;->F(Landroidx/compose/ui/node/LayoutNode;)Z
+    iput p1, p0, Lvr3;->a:I
 
     .line 8
     .line 9
-    .line 10
-    move-result v1
+    new-instance p1, Ljava/util/ArrayList;
 
+    .line 10
     .line 11
-    const/4 v2, 0x0
+    const/4 p2, 0x0
 
     .line 12
-    if-nez v1, :cond_0
+    invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 13
     .line 14
-    iget-boolean v1, v0, Ljf3;->c:Z
-
     .line 15
+    iput-object p1, p0, Lvr3;->b:Ljava/util/ArrayList;
+
     .line 16
-    if-nez v1, :cond_0
-
     .line 17
-    .line 18
-    invoke-virtual {v0}, Ljf3;->a()Landroidx/compose/ui/node/NodeCoordinator;
+    new-instance p1, Ljava/util/ArrayList;
 
+    .line 18
     .line 19
+    invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
+
     .line 20
     .line 21
-    move-result-object v1
-
     .line 22
-    iget-object v1, v1, Landroidx/compose/ui/node/NodeCoordinator;->g0:Landroidx/compose/ui/node/NodeCoordinator;
+    iput-object p1, p0, Lvr3;->c:Ljava/util/ArrayList;
 
     .line 23
     .line 24
-    if-eqz v1, :cond_1
+    new-instance p1, Ljava/util/ArrayList;
 
     .line 25
     .line 26
-    invoke-virtual {v1}, Landroidx/compose/ui/node/NodeCoordinator;->F0()Lrr3;
+    invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 27
     .line 28
     .line 29
-    move-result-object v1
+    iput-object p1, p0, Lvr3;->d:Ljava/util/ArrayList;
 
     .line 30
-    if-eqz v1, :cond_1
-
     .line 31
+    new-instance p1, Ljava/util/LinkedHashMap;
+
     .line 32
-    iget-object v2, v1, Lpr3;->b0:Lqr3;
-
     .line 33
+    invoke-direct {p1, p2}, Ljava/util/LinkedHashMap;-><init>(I)V
+
     .line 34
-    goto :goto_0
-
     .line 35
-    :cond_0
-    invoke-virtual {v0}, Ljf3;->a()Landroidx/compose/ui/node/NodeCoordinator;
-
     .line 36
+    iput-object p1, p0, Lvr3;->e:Ljava/util/LinkedHashMap;
+
     .line 37
     .line 38
-    move-result-object v1
+    sget-object p0, Lvk4;->a:Luk4;
 
     .line 39
-    iget-object v1, v1, Landroidx/compose/ui/node/NodeCoordinator;->g0:Landroidx/compose/ui/node/NodeCoordinator;
-
     .line 40
-    .line 41
-    if-eqz v1, :cond_1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 41
     .line 42
     .line 43
-    iget-object v2, v1, Lpr3;->b0:Lqr3;
+    invoke-static {}, Luk4;->a()Ljava/util/List;
 
     .line 44
     .line 45
-    :cond_1
-    :goto_0
-    if-nez v2, :cond_2
-
     .line 46
+    move-result-object p0
+
     .line 47
-    iget-object v1, p0, Lvr3;->R:Lqm4;
+    new-instance p1, Ljava/util/ArrayList;
 
     .line 48
     .line 49
-    invoke-interface {v1}, Lqm4;->getPlacementScope()Lav4;
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     .line 50
     .line 51
     .line 52
-    move-result-object v2
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 53
-    :cond_2
-    invoke-virtual {v0}, Ljf3;->a()Landroidx/compose/ui/node/NodeCoordinator;
-
     .line 54
     .line 55
+    move-result-object p0
+
     .line 56
-    move-result-object v0
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 57
-    invoke-virtual {v0}, Landroidx/compose/ui/node/NodeCoordinator;->F0()Lrr3;
-
     .line 58
     .line 59
+    move-result p1
+
     .line 60
-    move-result-object v0
+    if-eqz p1, :cond_0
 
     .line 61
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 62
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 63
     .line 64
-    iget-wide v3, p0, Lvr3;->S:J
-
     .line 65
+    move-result-object p1
+
     .line 66
-    invoke-static {v2, v0, v3, v4}, Lav4;->g(Lav4;Lbv4;J)V
+    check-cast p1, Lvk4;
 
     .line 67
     .line 68
-    .line 69
-    sget-object v0, Lbh7;->a:Lbh7;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 69
     .line 70
     .line 71
-    return-object v0
+    goto :goto_0
+
+    .line 72
+    :cond_0
+    return-void
 .end method

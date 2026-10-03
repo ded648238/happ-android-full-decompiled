@@ -1,6 +1,6 @@
 .class public abstract Lokhttp3/WebSocketListener;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -17,16 +17,16 @@
         "webSocket",
         "Lokhttp3/Response;",
         "response",
-        "Lbh7;",
+        "Lr98;",
         "onOpen",
         "(Lokhttp3/WebSocket;Lokhttp3/Response;)V",
         "",
         "text",
         "onMessage",
         "(Lokhttp3/WebSocket;Ljava/lang/String;)V",
-        "Ly60;",
+        "Lo90;",
         "bytes",
-        "(Lokhttp3/WebSocket;Ly60;)V",
+        "(Lokhttp3/WebSocket;Lo90;)V",
         "",
         "code",
         "reason",
@@ -126,7 +126,7 @@
     return-void
 .end method
 
-.method public onMessage(Lokhttp3/WebSocket;Ly60;)V
+.method public onMessage(Lokhttp3/WebSocket;Lo90;)V
     .locals 0
 
     .line 1

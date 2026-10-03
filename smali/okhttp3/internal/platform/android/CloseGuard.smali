@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/CloseGuard;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -65,7 +65,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/platform/android/CloseGuard$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/platform/android/CloseGuard$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -104,7 +104,7 @@
 
 # virtual methods
 .method public final createAndOpen(Ljava/lang/String;)Ljava/lang/Object;
-    .locals 5
+    .locals 2
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -132,46 +132,40 @@
     move-result-object v0
 
     .line 13
-    iget-object v2, p0, Lokhttp3/internal/platform/android/CloseGuard;->openMethod:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lokhttp3/internal/platform/android/CloseGuard;->openMethod:Ljava/lang/reflect/Method;
 
     .line 14
     .line 15
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 16
     .line 17
     .line 18
-    const/4 v3, 0x1
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 19
-    new-array v3, v3, [Ljava/lang/Object;
-
     .line 20
     .line 21
-    const/4 v4, 0x0
+    move-result-object p1
 
     .line 22
-    aput-object p1, v3, v4
-
-    .line 23
-    .line 24
-    invoke-virtual {v2, v0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 23
+    .line 24
     .line 25
-    .line 26
-    .line 27
     return-object v0
 
-    .line 28
+    .line 26
     :catch_0
     :cond_0
     return-object v1
 .end method
 
 .method public final warnIfOpen(Ljava/lang/Object;)Z
-    .locals 2
+    .locals 1
 
     .line 1
     if-eqz p1, :cond_0
@@ -179,35 +173,35 @@
     .line 2
     .line 3
     :try_start_0
-    iget-object v0, p0, Lokhttp3/internal/platform/android/CloseGuard;->warnIfOpenMethod:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lokhttp3/internal/platform/android/CloseGuard;->warnIfOpenMethod:Ljava/lang/reflect/Method;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
     .line 7
     .line 8
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 9
-    invoke-virtual {v0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 10
     .line 11
     .line 12
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 13
-    return p1
+    return p0
 
     .line 14
     :catch_0
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 15
-    return p1
+    return p0
 .end method

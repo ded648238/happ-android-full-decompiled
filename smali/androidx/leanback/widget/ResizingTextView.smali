@@ -1,28 +1,28 @@
 .class Landroidx/leanback/widget/ResizingTextView;
 .super Landroid/widget/TextView;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:I
+.field public final c0:I
 
-.field public final R:I
+.field public final d0:I
 
-.field public final S:Z
+.field public final e0:Z
 
-.field public final T:I
+.field public final f0:I
 
-.field public final U:I
+.field public final g0:I
 
-.field public V:Z
+.field public h0:Z
 
-.field public W:I
+.field public i0:I
 
-.field public a0:F
+.field public j0:F
 
-.field public b0:I
+.field public k0:I
 
-.field public c0:I
+.field public l0:I
 
 
 # direct methods
@@ -49,11 +49,11 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-boolean v0, p0, Landroidx/leanback/widget/ResizingTextView;->V:Z
+    iput-boolean v0, p0, Landroidx/leanback/widget/ResizingTextView;->h0:Z
 
     .line 6
     .line 7
-    sget-object v1, Lgb5;->lbResizingTextView:[I
+    sget-object v1, Lev5;->lbResizingTextView:[I
 
     .line 8
     .line 9
@@ -66,7 +66,7 @@
 
     .line 13
     :try_start_0
-    sget p2, Lgb5;->lbResizingTextView_resizeTrigger:I
+    sget p2, Lev5;->lbResizingTextView_resizeTrigger:I
 
     .line 14
     .line 15
@@ -81,11 +81,11 @@
     move-result p2
 
     .line 20
-    iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->Q:I
+    iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->c0:I
 
     .line 21
     .line 22
-    sget p2, Lgb5;->lbResizingTextView_resizedTextSize:I
+    sget p2, Lev5;->lbResizingTextView_resizedTextSize:I
 
     .line 23
     .line 24
@@ -100,11 +100,11 @@
     move-result p2
 
     .line 29
-    iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->R:I
+    iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->d0:I
 
     .line 30
     .line 31
-    sget p2, Lgb5;->lbResizingTextView_maintainLineSpacing:I
+    sget p2, Lev5;->lbResizingTextView_maintainLineSpacing:I
 
     .line 32
     .line 33
@@ -116,11 +116,11 @@
     move-result p2
 
     .line 37
-    iput-boolean p2, p0, Landroidx/leanback/widget/ResizingTextView;->S:Z
+    iput-boolean p2, p0, Landroidx/leanback/widget/ResizingTextView;->e0:Z
 
     .line 38
     .line 39
-    sget p2, Lgb5;->lbResizingTextView_resizedPaddingAdjustmentTop:I
+    sget p2, Lev5;->lbResizingTextView_resizedPaddingAdjustmentTop:I
 
     .line 40
     .line 41
@@ -132,11 +132,11 @@
     move-result p2
 
     .line 45
-    iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->T:I
+    iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->f0:I
 
     .line 46
     .line 47
-    sget p2, Lgb5;->lbResizingTextView_resizedPaddingAdjustmentBottom:I
+    sget p2, Lev5;->lbResizingTextView_resizedPaddingAdjustmentBottom:I
 
     .line 48
     .line 49
@@ -148,7 +148,7 @@
     move-result p2
 
     .line 53
-    iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->U:I
+    iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->g0:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -163,7 +163,7 @@
 
     .line 59
     :catchall_0
-    move-exception p2
+    move-exception p0
 
     .line 60
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
@@ -171,7 +171,7 @@
     .line 61
     .line 62
     .line 63
-    throw p2
+    throw p0
 .end method
 
 
@@ -245,7 +245,7 @@
     .locals 7
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/ResizingTextView;->V:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/ResizingTextView;->h0:Z
 
     .line 2
     .line 3
@@ -267,7 +267,7 @@
     float-to-int v0, v0
 
     .line 11
-    iput v0, p0, Landroidx/leanback/widget/ResizingTextView;->W:I
+    iput v0, p0, Landroidx/leanback/widget/ResizingTextView;->i0:I
 
     .line 12
     .line 13
@@ -279,7 +279,7 @@
     move-result v0
 
     .line 17
-    iput v0, p0, Landroidx/leanback/widget/ResizingTextView;->a0:F
+    iput v0, p0, Landroidx/leanback/widget/ResizingTextView;->j0:F
 
     .line 18
     .line 19
@@ -291,7 +291,7 @@
     move-result v0
 
     .line 23
-    iput v0, p0, Landroidx/leanback/widget/ResizingTextView;->b0:I
+    iput v0, p0, Landroidx/leanback/widget/ResizingTextView;->k0:I
 
     .line 24
     .line 25
@@ -303,16 +303,16 @@
     move-result v0
 
     .line 29
-    iput v0, p0, Landroidx/leanback/widget/ResizingTextView;->c0:I
+    iput v0, p0, Landroidx/leanback/widget/ResizingTextView;->l0:I
 
     .line 30
     .line 31
-    iput-boolean v1, p0, Landroidx/leanback/widget/ResizingTextView;->V:Z
+    iput-boolean v1, p0, Landroidx/leanback/widget/ResizingTextView;->h0:Z
 
     .line 32
     .line 33
     :cond_0
-    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->W:I
+    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->i0:I
 
     .line 34
     .line 35
@@ -327,7 +327,7 @@
     .line 38
     .line 39
     .line 40
-    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->a0:F
+    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->j0:F
 
     .line 41
     .line 42
@@ -344,11 +344,11 @@
     .line 47
     .line 48
     .line 49
-    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->b0:I
+    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->k0:I
 
     .line 50
     .line 51
-    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->c0:I
+    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->l0:I
 
     .line 52
     .line 53
@@ -374,7 +374,7 @@
 
     .line 64
     .line 65
-    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->Q:I
+    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->c0:I
 
     .line 66
     .line 67
@@ -409,14 +409,14 @@
 
     .line 81
     .line 82
-    const/4 v0, 0x1
+    move v0, v1
 
     .line 83
     goto :goto_0
 
     .line 84
     :cond_1
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 85
     :goto_0
@@ -431,14 +431,14 @@
     float-to-int v3, v3
 
     .line 90
-    iget-boolean v4, p0, Landroidx/leanback/widget/ResizingTextView;->S:Z
+    iget-boolean v4, p0, Landroidx/leanback/widget/ResizingTextView;->e0:Z
 
     .line 91
     .line 92
     const/4 v5, -0x1
 
     .line 93
-    iget v6, p0, Landroidx/leanback/widget/ResizingTextView;->R:I
+    iget v6, p0, Landroidx/leanback/widget/ResizingTextView;->d0:I
 
     .line 94
     .line 95
@@ -462,15 +462,15 @@
     .line 103
     .line 104
     .line 105
-    const/4 v2, 0x1
+    move v2, v1
 
     .line 106
     :cond_2
-    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->a0:F
+    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->j0:F
 
     .line 107
     .line 108
-    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->W:I
+    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->i0:I
 
     .line 109
     .line 110
@@ -519,26 +519,26 @@
     .line 129
     .line 130
     .line 131
-    const/4 v2, 0x1
+    move v2, v1
 
     .line 132
     :cond_3
-    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->b0:I
+    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->k0:I
 
     .line 133
     .line 134
-    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->T:I
+    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->f0:I
 
     .line 135
     .line 136
     add-int/2addr v0, v3
 
     .line 137
-    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->c0:I
+    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->l0:I
 
     .line 138
     .line 139
-    iget v4, p0, Landroidx/leanback/widget/ResizingTextView;->U:I
+    iget v4, p0, Landroidx/leanback/widget/ResizingTextView;->g0:I
 
     .line 140
     .line 141
@@ -583,7 +583,7 @@
 
     .line 159
     .line 160
-    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->W:I
+    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->i0:I
 
     .line 161
     .line 162
@@ -599,7 +599,7 @@
     .line 166
     .line 167
     .line 168
-    const/4 v2, 0x1
+    move v2, v1
 
     .line 169
     :cond_6
@@ -615,7 +615,7 @@
     move-result v0
 
     .line 175
-    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->a0:F
+    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->j0:F
 
     .line 176
     .line 177
@@ -640,7 +640,7 @@
     .line 186
     .line 187
     .line 188
-    const/4 v2, 0x1
+    move v2, v1
 
     .line 189
     :cond_7
@@ -652,7 +652,7 @@
     move-result v0
 
     .line 193
-    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->b0:I
+    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->k0:I
 
     .line 194
     .line 195
@@ -668,7 +668,7 @@
     move-result v0
 
     .line 201
-    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->c0:I
+    iget v3, p0, Landroidx/leanback/widget/ResizingTextView;->l0:I
 
     .line 202
     .line 203
@@ -688,11 +688,11 @@
     .line 208
     :cond_9
     :goto_1
-    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->b0:I
+    iget v0, p0, Landroidx/leanback/widget/ResizingTextView;->k0:I
 
     .line 209
     .line 210
-    iget v2, p0, Landroidx/leanback/widget/ResizingTextView;->c0:I
+    iget v2, p0, Landroidx/leanback/widget/ResizingTextView;->l0:I
 
     .line 211
     .line 212
@@ -719,7 +719,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p0}, Lb15;->X(Landroid/view/ActionMode$Callback;Landroid/widget/TextView;)Landroid/view/ActionMode$Callback;
+    invoke-static {p1, p0}, Lbv7;->l(Landroid/view/ActionMode$Callback;Landroid/widget/TextView;)Landroid/view/ActionMode$Callback;
 
     .line 2
     .line 3

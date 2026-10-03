@@ -1,6 +1,6 @@
 .class public final Lokhttp3/FormBody$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -78,7 +78,7 @@
 
     const/4 v1, 0x1
 
-    invoke-direct {p0, v0, v1, v0}, Lokhttp3/FormBody$Builder;-><init>(Ljava/nio/charset/Charset;ILj31;)V
+    invoke-direct {p0, v0, v1, v0}, Lokhttp3/FormBody$Builder;-><init>(Ljava/nio/charset/Charset;ILib1;)V
 
     return-void
 .end method
@@ -125,7 +125,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/nio/charset/Charset;ILj31;)V
+.method public synthetic constructor <init>(Ljava/nio/charset/Charset;ILib1;)V
     .locals 0
 
     and-int/lit8 p2, p2, 0x1
@@ -348,7 +348,7 @@
 .end method
 
 .method public final build()Lokhttp3/FormBody;
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Lokhttp3/FormBody;
@@ -359,11 +359,11 @@
 
     .line 4
     .line 5
-    iget-object v2, p0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
 
     .line 6
     .line 7
-    invoke-direct {v0, v1, v2}, Lokhttp3/FormBody;-><init>(Ljava/util/List;Ljava/util/List;)V
+    invoke-direct {v0, v1, p0}, Lokhttp3/FormBody;-><init>(Ljava/util/List;Ljava/util/List;)V
 
     .line 8
     .line 9

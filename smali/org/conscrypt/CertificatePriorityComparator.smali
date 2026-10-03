@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/CertificatePriorityComparator;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -290,7 +290,7 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
     invoke-interface {p2}, Ljava/security/Key;->getAlgorithm()Ljava/lang/String;
@@ -298,55 +298,55 @@
     .line 6
     .line 7
     .line 8
-    move-result-object p2
+    move-result-object p1
 
     .line 9
-    invoke-virtual {p1, p2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {p0, p1}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 10
     .line 11
     .line 12
-    move-result p2
+    move-result p1
 
     .line 13
-    if-eqz p2, :cond_0
+    if-eqz p1, :cond_0
 
     .line 14
     .line 15
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return p1
+    return p0
 
     .line 17
     :cond_0
-    const-string p2, "EC"
+    const-string p1, "EC"
 
     .line 18
     .line 19
-    invoke-virtual {p2, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {p0, p1}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 20
     .line 21
     .line 22
-    move-result p1
+    move-result p0
 
     .line 23
-    if-eqz p1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 24
     .line 25
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 26
-    return p1
+    return p0
 
     .line 27
     :cond_1
-    const/4 p1, -0x1
+    const/4 p0, -0x1
 
     .line 28
-    return p1
+    return p0
 .end method
 
 .method private compareKeySize(Ljava/security/PublicKey;Ljava/security/PublicKey;)I
@@ -369,7 +369,7 @@
     move-result-object v1
 
     .line 9
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 10
     .line 11
@@ -394,36 +394,36 @@
     .line 20
     .line 21
     .line 22
-    move-result p2
+    move-result p0
 
     .line 23
-    sub-int/2addr p1, p2
+    sub-int/2addr p1, p0
 
     .line 24
     return p1
 
     .line 25
     :cond_0
-    const-string p1, "Keys are not of the same type"
+    const-string p0, "Keys are not of the same type"
 
     .line 26
     .line 27
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 28
     .line 29
     .line 30
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 31
-    return p1
+    return p0
 .end method
 
 .method private compareSignatureAlgorithm(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)I
-    .locals 1
+    .locals 0
 
     .line 1
-    sget-object v0, Lorg/conscrypt/CertificatePriorityComparator;->ALGORITHM_OID_PRIORITY_MAP:Ljava/util/Map;
+    sget-object p0, Lorg/conscrypt/CertificatePriorityComparator;->ALGORITHM_OID_PRIORITY_MAP:Ljava/util/Map;
 
     .line 2
     .line 3
@@ -435,7 +435,7 @@
     move-result-object p1
 
     .line 7
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -455,15 +455,15 @@
     move-result-object p2
 
     .line 17
-    invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 18
     .line 19
     .line 20
-    move-result-object p2
+    move-result-object p0
 
     .line 21
-    check-cast p2, Ljava/lang/Integer;
+    check-cast p0, Ljava/lang/Integer;
 
     .line 22
     .line 23
@@ -476,21 +476,21 @@
     .line 26
     .line 27
     :cond_0
-    if-nez p2, :cond_1
+    if-nez p0, :cond_1
 
     .line 28
     .line 29
-    sget-object p2, Lorg/conscrypt/CertificatePriorityComparator;->PRIORITY_UNKNOWN:Ljava/lang/Integer;
+    sget-object p0, Lorg/conscrypt/CertificatePriorityComparator;->PRIORITY_UNKNOWN:Ljava/lang/Integer;
 
     .line 30
     .line 31
     :cond_1
-    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
     .line 32
     .line 33
     .line 34
-    move-result p2
+    move-result p0
 
     .line 35
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
@@ -501,10 +501,10 @@
     move-result p1
 
     .line 39
-    sub-int/2addr p2, p1
+    sub-int/2addr p0, p1
 
     .line 40
-    return p2
+    return p0
 .end method
 
 .method private compareStrength(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)I
@@ -564,21 +564,21 @@
     .line 24
     .line 25
     .line 26
-    move-result p1
+    move-result p0
 
     .line 27
-    return p1
+    return p0
 .end method
 
 .method private getKeySize(Ljava/security/PublicKey;)I
-    .locals 1
+    .locals 0
 
     .line 1
-    instance-of v0, p1, Ljava/security/interfaces/ECPublicKey;
+    instance-of p0, p1, Ljava/security/interfaces/ECPublicKey;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
@@ -591,42 +591,42 @@
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
 
     .line 11
-    invoke-virtual {p1}, Ljava/security/spec/ECParameterSpec;->getCurve()Ljava/security/spec/EllipticCurve;
+    invoke-virtual {p0}, Ljava/security/spec/ECParameterSpec;->getCurve()Ljava/security/spec/EllipticCurve;
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result-object p0
 
     .line 15
-    invoke-virtual {p1}, Ljava/security/spec/EllipticCurve;->getField()Ljava/security/spec/ECField;
+    invoke-virtual {p0}, Ljava/security/spec/EllipticCurve;->getField()Ljava/security/spec/ECField;
 
     .line 16
     .line 17
     .line 18
-    move-result-object p1
+    move-result-object p0
 
     .line 19
-    invoke-interface {p1}, Ljava/security/spec/ECField;->getFieldSize()I
+    invoke-interface {p0}, Ljava/security/spec/ECField;->getFieldSize()I
 
     .line 20
     .line 21
     .line 22
-    move-result p1
+    move-result p0
 
     .line 23
-    return p1
+    return p0
 
     .line 24
     :cond_0
-    instance-of v0, p1, Ljava/security/interfaces/RSAPublicKey;
+    instance-of p0, p1, Ljava/security/interfaces/RSAPublicKey;
 
     .line 25
     .line 26
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 27
     .line 28
@@ -639,18 +639,18 @@
     .line 31
     .line 32
     .line 33
-    move-result-object p1
+    move-result-object p0
 
     .line 34
-    invoke-virtual {p1}, Ljava/math/BigInteger;->bitLength()I
+    invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
 
     .line 35
     .line 36
     .line 37
-    move-result p1
+    move-result p0
 
     .line 38
-    return p1
+    return p0
 
     .line 39
     :cond_1
@@ -659,38 +659,38 @@
     .line 40
     .line 41
     .line 42
-    move-result-object p1
+    move-result-object p0
 
     .line 43
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     .line 44
     .line 45
     .line 46
-    move-result-object p1
+    move-result-object p0
 
     .line 47
-    const-string v0, "Unsupported public key type: "
+    const-string p1, "Unsupported public key type: "
 
     .line 48
     .line 49
-    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 50
     .line 51
     .line 52
-    move-result-object p1
+    move-result-object p0
 
     .line 53
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 54
     .line 55
     .line 56
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 57
-    return p1
+    return p0
 .end method
 
 
@@ -705,9 +705,9 @@
 
     invoke-virtual {p0, p1, p2}, Lorg/conscrypt/CertificatePriorityComparator;->compare(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)I
 
-    move-result p1
+    move-result p0
 
-    return p1
+    return p0
 .end method
 
 .method public compare(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)I
@@ -770,17 +770,17 @@
 
     .line 28
     .line 29
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 30
-    return p1
+    return p0
 
     .line 31
     :cond_0
-    const/4 p1, -0x1
+    const/4 p0, -0x1
 
     .line 32
-    return p1
+    return p0
 
     .line 33
     :cond_1
@@ -789,14 +789,14 @@
     .line 34
     .line 35
     .line 36
-    move-result v0
+    move-result p0
 
     .line 37
-    if-eqz v0, :cond_2
+    if-eqz p0, :cond_2
 
     .line 38
     .line 39
-    return v0
+    return p0
 
     .line 40
     :cond_2
@@ -805,7 +805,7 @@
     .line 41
     .line 42
     .line 43
-    move-result-object v0
+    move-result-object p0
 
     .line 44
     invoke-virtual {p2}, Ljava/security/cert/X509Certificate;->getNotAfter()Ljava/util/Date;
@@ -813,22 +813,22 @@
     .line 45
     .line 46
     .line 47
-    move-result-object v1
+    move-result-object v0
 
     .line 48
-    invoke-virtual {v1, v0}, Ljava/util/Date;->compareTo(Ljava/util/Date;)I
+    invoke-virtual {v0, p0}, Ljava/util/Date;->compareTo(Ljava/util/Date;)I
 
     .line 49
     .line 50
     .line 51
-    move-result v0
+    move-result p0
 
     .line 52
-    if-eqz v0, :cond_3
+    if-eqz p0, :cond_3
 
     .line 53
     .line 54
-    return v0
+    return p0
 
     .line 55
     :cond_3
@@ -837,7 +837,7 @@
     .line 56
     .line 57
     .line 58
-    move-result-object p1
+    move-result-object p0
 
     .line 59
     invoke-virtual {p2}, Ljava/security/cert/X509Certificate;->getNotBefore()Ljava/util/Date;
@@ -845,16 +845,16 @@
     .line 60
     .line 61
     .line 62
-    move-result-object p2
+    move-result-object p1
 
     .line 63
-    invoke-virtual {p2, p1}, Ljava/util/Date;->compareTo(Ljava/util/Date;)I
+    invoke-virtual {p1, p0}, Ljava/util/Date;->compareTo(Ljava/util/Date;)I
 
     .line 64
     .line 65
     .line 66
-    move-result p1
+    move-result p0
 
     .line 67
-    return p1
+    return p0
 .end method

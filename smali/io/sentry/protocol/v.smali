@@ -1,29 +1,29 @@
 .class public final Lio/sentry/protocol/v;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # instance fields
-.field public Q:Ljava/lang/String;
+.field public X:Ljava/lang/String;
 
-.field public R:Ljava/lang/String;
+.field public Y:Ljava/lang/String;
 
-.field public S:Ljava/lang/String;
+.field public Z:Ljava/lang/String;
 
-.field public T:Ljava/lang/Long;
+.field public c0:Ljava/lang/Long;
 
-.field public U:Lio/sentry/protocol/c0;
+.field public d0:Lio/sentry/protocol/c0;
 
-.field public V:Lio/sentry/protocol/o;
+.field public e0:Lio/sentry/protocol/o;
 
-.field public W:Ljava/util/HashMap;
+.field public f0:Ljava/util/HashMap;
 
 
 # virtual methods
-.method public final serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 3
 
     .line 1
@@ -36,7 +36,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lio/sentry/protocol/v;->Q:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/v;->X:Ljava/lang/String;
 
     .line 7
     .line 8
@@ -53,7 +53,7 @@
     .line 13
     .line 14
     .line 15
-    iget-object v0, p0, Lio/sentry/protocol/v;->Q:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/v;->X:Ljava/lang/String;
 
     .line 16
     .line 17
@@ -63,7 +63,7 @@
     .line 19
     .line 20
     :cond_0
-    iget-object v0, p0, Lio/sentry/protocol/v;->R:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/v;->Y:Ljava/lang/String;
 
     .line 21
     .line 22
@@ -80,7 +80,7 @@
     .line 27
     .line 28
     .line 29
-    iget-object v0, p0, Lio/sentry/protocol/v;->R:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/v;->Y:Ljava/lang/String;
 
     .line 30
     .line 31
@@ -90,7 +90,7 @@
     .line 33
     .line 34
     :cond_1
-    iget-object v0, p0, Lio/sentry/protocol/v;->S:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/v;->Z:Ljava/lang/String;
 
     .line 35
     .line 36
@@ -107,7 +107,7 @@
     .line 41
     .line 42
     .line 43
-    iget-object v0, p0, Lio/sentry/protocol/v;->S:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/v;->Z:Ljava/lang/String;
 
     .line 44
     .line 45
@@ -117,7 +117,7 @@
     .line 47
     .line 48
     :cond_2
-    iget-object v0, p0, Lio/sentry/protocol/v;->T:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/v;->c0:Ljava/lang/Long;
 
     .line 49
     .line 50
@@ -134,7 +134,7 @@
     .line 55
     .line 56
     .line 57
-    iget-object v0, p0, Lio/sentry/protocol/v;->T:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/v;->c0:Ljava/lang/Long;
 
     .line 58
     .line 59
@@ -144,7 +144,7 @@
     .line 61
     .line 62
     :cond_3
-    iget-object v0, p0, Lio/sentry/protocol/v;->U:Lio/sentry/protocol/c0;
+    iget-object v0, p0, Lio/sentry/protocol/v;->d0:Lio/sentry/protocol/c0;
 
     .line 63
     .line 64
@@ -161,7 +161,7 @@
     .line 69
     .line 70
     .line 71
-    iget-object v0, p0, Lio/sentry/protocol/v;->U:Lio/sentry/protocol/c0;
+    iget-object v0, p0, Lio/sentry/protocol/v;->d0:Lio/sentry/protocol/c0;
 
     .line 72
     .line 73
@@ -171,7 +171,7 @@
     .line 75
     .line 76
     :cond_4
-    iget-object v0, p0, Lio/sentry/protocol/v;->V:Lio/sentry/protocol/o;
+    iget-object v0, p0, Lio/sentry/protocol/v;->e0:Lio/sentry/protocol/o;
 
     .line 77
     .line 78
@@ -188,7 +188,7 @@
     .line 83
     .line 84
     .line 85
-    iget-object v0, p0, Lio/sentry/protocol/v;->V:Lio/sentry/protocol/o;
+    iget-object v0, p0, Lio/sentry/protocol/v;->e0:Lio/sentry/protocol/o;
 
     .line 86
     .line 87
@@ -198,7 +198,7 @@
     .line 89
     .line 90
     :cond_5
-    iget-object v0, p0, Lio/sentry/protocol/v;->W:Ljava/util/HashMap;
+    iget-object v0, p0, Lio/sentry/protocol/v;->f0:Ljava/util/HashMap;
 
     .line 91
     .line 92
@@ -247,11 +247,11 @@
 
     .line 113
     .line 114
-    iget-object v2, p0, Lio/sentry/protocol/v;->W:Ljava/util/HashMap;
+    iget-object v2, p0, Lio/sentry/protocol/v;->f0:Ljava/util/HashMap;
 
     .line 115
     .line 116
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/HashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->a(Ljava/util/HashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 117
     .line 118

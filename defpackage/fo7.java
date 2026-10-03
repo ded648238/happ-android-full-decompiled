@@ -1,14 +1,13 @@
 package defpackage;
 
-import android.view.ViewParent;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class fo7 implements Runnable {
+    public long X;
+    public boolean Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class fo7 extends q82 implements j72 {
-    public static final fo7 Q = new fo7(1, ViewParent.class, "getParent", "getParent()Landroid/view/ViewParent;", 0);
-
-    @Override // defpackage.j72
-    public final Object invoke(Object obj) {
-        return ((ViewParent) obj).getParent();
+    public fo7(long j, boolean z) {
+        this.X = j;
+        this.Y = z;
     }
 }

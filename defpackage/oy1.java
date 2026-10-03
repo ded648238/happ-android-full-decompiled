@@ -1,43 +1,66 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class oy1 extends bv4 {
-    public final /* synthetic */ int V;
+import java.io.Serializable;
+import java.util.RandomAccess;
 
-    public oy1(int i, int i2, int i3) {
-        this.V = i3;
-        switch (i3) {
-            case 1:
-                X((((long) i2) & 4294967295L) | (((long) i) << 32));
-                break;
-            case 2:
-                X((((long) i2) & 4294967295L) | (((long) i) << 32));
-                break;
-            default:
-                X((((long) i2) & 4294967295L) | (((long) i) << 32));
-                break;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class oy1 extends w1 implements my1, RandomAccess, Serializable {
+    public final Enum[] X;
+
+    public oy1(Enum[] enumArr) {
+        enumArr.getClass();
+        this.X = enumArr;
+    }
+
+    @Override // defpackage.x0
+    public final int a() {
+        return this.X.length;
+    }
+
+    @Override // defpackage.x0, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        if (!(obj instanceof Enum)) {
+            return false;
         }
+        Enum r3 = (Enum) obj;
+        return ((Enum) kt.A0(r3.ordinal(), this.X)) == r3;
     }
 
-    @Override // defpackage.bv4
-    public final int J(g8 g8Var) {
-        switch (this.V) {
+    @Override // java.util.List
+    public final Object get(int i) {
+        Enum[] enumArr = this.X;
+        int length = enumArr.length;
+        if (i >= 0 && i < length) {
+            return enumArr[i];
         }
-        return Integer.MIN_VALUE;
+        q05.t(eb7.j("index: ", i, length, ", size: "));
+        return null;
     }
 
-    @Override // defpackage.bv4
-    public final void V(long j, float f, j72 j72Var) {
-        int i = this.V;
+    @Override // defpackage.w1, java.util.List
+    public final int indexOf(Object obj) {
+        if (!(obj instanceof Enum)) {
+            return -1;
+        }
+        Enum r3 = (Enum) obj;
+        int ordinal = r3.ordinal();
+        if (((Enum) kt.A0(ordinal, this.X)) == r3) {
+            return ordinal;
+        }
+        return -1;
     }
 
-    private final void a0(long j, float f, j72 j72Var) {
-    }
-
-    private final void b0(long j, float f, j72 j72Var) {
-    }
-
-    private final void c0(long j, float f, j72 j72Var) {
+    @Override // defpackage.w1, java.util.List
+    public final int lastIndexOf(Object obj) {
+        if (!(obj instanceof Enum)) {
+            return -1;
+        }
+        Enum r3 = (Enum) obj;
+        int ordinal = r3.ordinal();
+        if (((Enum) kt.A0(ordinal, this.X)) == r3) {
+            return ordinal;
+        }
+        return -1;
     }
 }

@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/ConscryptEngineSocket$SSLOutputStream;
 .super Ljava/io/OutputStream;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -161,11 +161,11 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLOutputStream;->socketOutputStream:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLOutputStream;->socketOutputStream:Ljava/io/OutputStream;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
+    invoke-virtual {p0}, Ljava/io/OutputStream;->flush()V
 
     .line 12
     .line 13
@@ -316,7 +316,7 @@
 
     .line 50
     :cond_1
-    new-instance p1, Ljavax/net/ssl/SSLException;
+    new-instance p0, Ljavax/net/ssl/SSLException;
 
     .line 51
     .line 52
@@ -325,41 +325,41 @@
     .line 53
     .line 54
     .line 55
-    move-result-object v0
+    move-result-object p1
 
     .line 56
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 57
     .line 58
-    const-string v2, "Unexpected engine result "
+    const-string v1, "Unexpected engine result "
 
     .line 59
     .line 60
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 61
     .line 62
     .line 63
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 64
     .line 65
     .line 66
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 67
     .line 68
     .line 69
-    move-result-object v0
+    move-result-object p1
 
     .line 70
-    invoke-direct {p1, v0}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
 
     .line 71
     .line 72
     .line 73
-    throw p1
+    throw p0
 
     .line 74
     :cond_2
@@ -447,20 +447,20 @@
 
     .line 114
     :cond_3
-    new-instance p1, Ljava/net/SocketException;
+    new-instance p0, Ljava/net/SocketException;
 
     .line 115
     .line 116
-    const-string v0, "Socket closed"
+    const-string p1, "Socket closed"
 
     .line 117
     .line 118
-    invoke-direct {p1, v0}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
 
     .line 119
     .line 120
     .line 121
-    throw p1
+    throw p0
 
     .line 122
     :cond_4
@@ -487,20 +487,20 @@
 
     .line 133
     :cond_5
-    new-instance p1, Ljavax/net/ssl/SSLException;
+    new-instance p0, Ljavax/net/ssl/SSLException;
 
     .line 134
     .line 135
-    const-string v0, "Engine did not read the correct number of bytes"
+    const-string p1, "Engine did not read the correct number of bytes"
 
     .line 136
     .line 137
-    invoke-direct {p1, v0}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
 
     .line 138
     .line 139
     .line 140
-    throw p1
+    throw p0
 
     .line 141
     :cond_6
@@ -516,32 +516,32 @@
     move-result v0
 
     .line 147
-    iget-object v1, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLOutputStream;->target:Ljava/nio/ByteBuffer;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLOutputStream;->target:Ljava/nio/ByteBuffer;
 
     .line 148
     .line 149
-    invoke-virtual {v1}, Ljava/nio/Buffer;->position()I
+    invoke-virtual {p0}, Ljava/nio/Buffer;->position()I
 
     .line 150
     .line 151
     .line 152
-    move-result v1
+    move-result p0
 
     .line 153
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 154
     .line 155
-    const-string v3, "Engine bytesProduced "
+    const-string v2, "Engine bytesProduced "
 
     .line 156
     .line 157
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 158
     .line 159
     .line 160
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 161
     .line 162
@@ -550,25 +550,25 @@
 
     .line 164
     .line 165
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 166
     .line 167
     .line 168
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 169
     .line 170
     .line 171
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 172
     .line 173
     .line 174
-    move-result-object v0
+    move-result-object p0
 
     .line 175
-    invoke-direct {p1, v0}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
 
     .line 176
     .line 177
@@ -577,7 +577,7 @@
 .end method
 
 .method private writeToSocket()V
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -605,19 +605,19 @@
 
     .line 10
     .line 11
-    iget-object v3, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLOutputStream;->target:Ljava/nio/ByteBuffer;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLOutputStream;->target:Ljava/nio/ByteBuffer;
 
     .line 12
     .line 13
-    invoke-virtual {v3}, Ljava/nio/Buffer;->limit()I
+    invoke-virtual {p0}, Ljava/nio/Buffer;->limit()I
 
     .line 14
     .line 15
     .line 16
-    move-result v3
+    move-result p0
 
     .line 17
-    invoke-virtual {v0, v1, v2, v3}, Ljava/io/OutputStream;->write([BII)V
+    invoke-virtual {v0, v1, v2, p0}, Ljava/io/OutputStream;->write([BII)V
 
     .line 18
     .line 19
@@ -628,7 +628,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -636,11 +636,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLOutputStream;->this$0:Lorg/conscrypt/ConscryptEngineSocket;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLOutputStream;->this$0:Lorg/conscrypt/ConscryptEngineSocket;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ConscryptEngineSocket;->close()V
+    invoke-virtual {p0}, Lorg/conscrypt/ConscryptEngineSocket;->close()V
 
     .line 4
     .line 5
@@ -649,7 +649,7 @@
 .end method
 
 .method public flush()V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -686,7 +686,7 @@
 
     .line 14
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 15
     monitor-exit v0
@@ -694,7 +694,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 16
-    throw v1
+    throw p0
 .end method
 
 .method public write(I)V
@@ -752,7 +752,7 @@
 
     .line 21
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 22
     monitor-exit v0
@@ -760,7 +760,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 23
-    throw p1
+    throw p0
 .end method
 
 .method public write([B)V
@@ -795,13 +795,13 @@
     return-void
 
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    throw p1
+    throw p0
 .end method
 
 .method public write([BII)V
@@ -836,11 +836,11 @@
     return-void
 
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    throw p1
+    throw p0
 .end method

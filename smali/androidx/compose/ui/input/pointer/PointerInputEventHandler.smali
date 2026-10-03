@@ -1,6 +1,6 @@
 .class public interface abstract Landroidx/compose/ui/input/pointer/PointerInputEventHandler;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -11,16 +11,16 @@
     d2 = {
         "Landroidx/compose/ui/input/pointer/PointerInputEventHandler;",
         "",
-        "Lbx4;",
-        "Lbh7;",
+        "Lqf5;",
+        "Lr98;",
         "invoke",
-        "(Lbx4;Lyv0;)Ljava/lang/Object;",
-        "ui_release"
+        "(Lqf5;Lb31;)Ljava/lang/Object;",
+        "ui"
     }
     k = 0x1
     mv = {
         0x2,
-        0x0,
+        0x1,
         0x0
     }
     xi = 0x30
@@ -28,12 +28,12 @@
 
 
 # virtual methods
-.method public abstract invoke(Lbx4;Lyv0;)Ljava/lang/Object;
+.method public abstract invoke(Lqf5;Lb31;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbx4;",
-            "Lyv0;",
+            "Lqf5;",
+            "Lb31;",
             ")",
             "Ljava/lang/Object;"
         }

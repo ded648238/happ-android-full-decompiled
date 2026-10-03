@@ -1,19 +1,25 @@
 package defpackage;
 
-import java.util.Iterator;
-import java.util.LinkedHashMap;
+import android.text.Layout;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ro7 {
-    public final LinkedHashMap a = new LinkedHashMap();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class ro7 {
+    public static final Layout.Alignment a;
+    public static final Layout.Alignment b;
 
-    public final void a() {
-        LinkedHashMap linkedHashMap = this.a;
-        Iterator it = linkedHashMap.values().iterator();
-        while (it.hasNext()) {
-            ((lo7) it.next()).b();
+    static {
+        Layout.Alignment[] values = Layout.Alignment.values();
+        Layout.Alignment alignment = Layout.Alignment.ALIGN_NORMAL;
+        Layout.Alignment alignment2 = alignment;
+        for (Layout.Alignment alignment3 : values) {
+            if (m93.h(alignment3.name(), "ALIGN_LEFT")) {
+                alignment = alignment3;
+            } else if (m93.h(alignment3.name(), "ALIGN_RIGHT")) {
+                alignment2 = alignment3;
+            }
         }
-        linkedHashMap.clear();
+        a = alignment;
+        b = alignment2;
     }
 }

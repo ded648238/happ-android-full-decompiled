@@ -1,212 +1,78 @@
 .class public final Lbg5;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Ljava/lang/Class;
+.field public c0:Lfg5;
 
-.field public final b:Lsv;
+.field public d0:Llz7;
+
+.field public e0:Lzz0;
+
+.field public synthetic f0:Ljava/lang/Object;
+
+.field public final synthetic g0:Lfg5;
+
+.field public h0:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;Lsv;)V
+.method public constructor <init>(Lfg5;Ld31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lbg5;->g0:Lfg5;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lbg5;->a:Ljava/lang/Class;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Lbg5;->b:Lsv;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lbg5;->a:Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    const/16 v1, 0x2e
-
-    .line 8
-    .line 9
-    const/16 v2, 0x2f
-
-    .line 10
-    .line 11
-    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v0
-
-    .line 15
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 16
-    .line 17
-    .line 18
-    const-string v1, ".class"
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v0
-
-    .line 24
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    instance-of v0, p1, Lbg5;
+    iput-object p1, p0, Lbg5;->f0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    iget p1, p0, Lbg5;->h0:I
 
     .line 4
     .line 5
-    check-cast p1, Lbg5;
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
-    iget-object p1, p1, Lbg5;->a:Ljava/lang/Class;
+    or-int/2addr p1, v0
 
     .line 8
-    .line 9
-    iget-object v0, p0, Lbg5;->a:Ljava/lang/Class;
-
-    .line 10
-    .line 11
-    invoke-static {v0, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result p1
-
-    .line 15
-    if-eqz p1, :cond_0
-
-    .line 16
-    .line 17
-    const/4 p1, 0x1
-
-    .line 18
-    return p1
-
-    .line 19
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 20
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lbg5;->a:Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    const-class v1, Lbg5;
-
-    .line 7
-    .line 8
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    iput p1, p0, Lbg5;->h0:I
 
     .line 9
     .line 10
-    .line 11
-    move-result-object v1
+    iget-object p1, p0, Lbg5;->g0:Lfg5;
 
+    .line 11
     .line 12
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v0, 0x0
 
     .line 13
+    invoke-virtual {p1, v0, p0}, Lfg5;->e(Llz7;Ld31;)Ljava/lang/Object;
+
     .line 14
     .line 15
-    const-string v1, ": "
-
     .line 16
+    move-result-object p0
+
     .line 17
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 18
-    .line 19
-    .line 20
-    iget-object v1, p0, Lbg5;->a:Ljava/lang/Class;
-
-    .line 21
-    .line 22
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    return-object v0
+    return-object p0
 .end method

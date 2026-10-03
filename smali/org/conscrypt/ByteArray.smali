@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/ByteArray;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -48,10 +48,10 @@
 
     .line 2
     .line 3
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 4
-    return p1
+    return p0
 
     .line 5
     :cond_0
@@ -90,7 +90,7 @@
 
     .line 20
     :cond_2
-    iget-object v0, p0, Lorg/conscrypt/ByteArray;->bytes:[B
+    iget-object p0, p0, Lorg/conscrypt/ByteArray;->bytes:[B
 
     .line 21
     .line 22
@@ -98,24 +98,24 @@
 
     .line 23
     .line 24
-    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([B[B)Z
+    invoke-static {p0, p1}, Ljava/util/Arrays;->equals([B[B)Z
 
     .line 25
     .line 26
     .line 27
-    move-result p1
+    move-result p0
 
     .line 28
-    return p1
+    return p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/ByteArray;->hashCode:I
+    iget p0, p0, Lorg/conscrypt/ByteArray;->hashCode:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

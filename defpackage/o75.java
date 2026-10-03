@@ -1,17 +1,16 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class o75 {
-    public static int cardBackgroundColor = 2130968767;
-    public static int cardCornerRadius = 2130968768;
-    public static int cardElevation = 2130968769;
-    public static int cardMaxElevation = 2130968772;
-    public static int cardPreventCornerOverlap = 2130968773;
-    public static int cardUseCompatPadding = 2130968775;
-    public static int cardViewStyle = 2130968776;
-    public static int contentPadding = 2130969032;
-    public static int contentPaddingBottom = 2130969033;
-    public static int contentPaddingLeft = 2130969035;
-    public static int contentPaddingRight = 2130969036;
-    public static int contentPaddingTop = 2130969038;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class o75 {
+    public final Object a;
+    public final r75 b;
+    public final int c;
+
+    public o75(o31 o31Var, r75 r75Var, int i) {
+        r75Var.getClass();
+        this.a = o31Var;
+        this.b = r75Var;
+        this.c = i;
+    }
 }

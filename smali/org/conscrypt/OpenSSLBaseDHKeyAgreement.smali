@@ -1,6 +1,6 @@
 .class public abstract Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;
 .super Ljavax/crypto/KeyAgreementSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -42,14 +42,14 @@
 .end method
 
 .method private checkCompleted()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mResult:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mResult:[B
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
@@ -57,11 +57,11 @@
 
     .line 6
     :cond_0
-    const-string v0, "Key agreement not completed"
+    const-string p0, "Key agreement not completed"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -236,51 +236,51 @@
 
     .line 51
     .line 52
-    iget v0, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mExpectedResultLength:I
+    iget p0, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mExpectedResultLength:I
 
     .line 53
     .line 54
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 55
     .line 56
-    const-string v2, "Engine produced a longer than expected result. Expected: "
+    const-string v1, "Engine produced a longer than expected result. Expected: "
 
     .line 57
     .line 58
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 59
     .line 60
     .line 61
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 62
     .line 63
     .line 64
-    const-string v0, ", actual: "
+    const-string p0, ", actual: "
 
     .line 65
     .line 66
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 67
     .line 68
     .line 69
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 70
     .line 71
     .line 72
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 73
     .line 74
     .line 75
-    move-result-object p1
+    move-result-object p0
 
     .line 76
-    invoke-direct {p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     .line 77
     .line 78
@@ -289,11 +289,11 @@
 
     .line 80
     :cond_2
-    const-string p1, "Engine returned -1"
+    const-string p0, "Engine returned -1"
 
     .line 81
     .line 82
-    invoke-static {p1}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 83
     .line 84
@@ -302,7 +302,7 @@
 
     .line 86
     :cond_3
-    new-instance p2, Ljava/security/InvalidKeyException;
+    new-instance p0, Ljava/security/InvalidKeyException;
 
     .line 87
     .line 88
@@ -314,25 +314,25 @@
     move-result-object p1
 
     .line 92
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 93
     .line 94
-    const-string v1, "Not a public key: "
+    const-string v0, "Not a public key: "
 
     .line 95
     .line 96
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 97
     .line 98
     .line 99
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 100
     .line 101
     .line 102
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 103
     .line 104
@@ -340,20 +340,20 @@
     move-result-object p1
 
     .line 106
-    invoke-direct {p2, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
 
     .line 107
     .line 108
     .line 109
-    throw p2
+    throw p0
 
     .line 110
     :cond_4
-    const-string p1, "key == null"
+    const-string p0, "key == null"
 
     .line 111
     .line 112
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 113
     .line 114
@@ -362,11 +362,11 @@
 
     .line 116
     :cond_5
-    const-string p1, "DH only has one phase"
+    const-string p0, "DH only has one phase"
 
     .line 117
     .line 118
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 119
     .line 120
@@ -375,11 +375,11 @@
 
     .line 122
     :cond_6
-    const-string p1, "Not initialized"
+    const-string p0, "Not initialized"
 
     .line 123
     .line 124
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 125
     .line 126
@@ -429,14 +429,14 @@
     .line 14
     .line 15
     .line 16
-    iget-object p1, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mResult:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mResult:[B
 
     .line 17
     .line 18
-    array-length p1, p1
+    array-length p0, p0
 
     .line 19
-    return p1
+    return p0
 
     .line 20
     :cond_0
@@ -444,54 +444,54 @@
 
     .line 21
     .line 22
-    iget-object p2, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mResult:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mResult:[B
 
     .line 23
     .line 24
-    array-length p2, p2
+    array-length p0, p0
 
     .line 25
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
-    const-string v2, "Needed: "
+    const-string v1, "Needed: "
 
     .line 28
     .line 29
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 30
     .line 31
     .line 32
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 33
     .line 34
     .line 35
-    const-string p2, ", available: "
+    const-string p0, ", available: "
 
     .line 36
     .line 37
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 41
     .line 42
     .line 43
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 44
     .line 45
     .line 46
-    move-result-object p2
+    move-result-object p0
 
     .line 47
-    invoke-direct {p1, p2}, Lorg/conscrypt/ShortBufferWithoutStackTraceException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Lorg/conscrypt/ShortBufferWithoutStackTraceException;-><init>(Ljava/lang/String;)V
 
     .line 48
     .line 49
@@ -500,7 +500,7 @@
 .end method
 
 .method public engineGenerateSecret(Ljava/lang/String;)Ljavax/crypto/SecretKey;
-    .locals 2
+    .locals 1
 
     .line 53
     invoke-direct {p0}, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->checkCompleted()V
@@ -510,27 +510,27 @@
 
     invoke-virtual {p0}, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->engineGenerateSecret()[B
 
-    move-result-object v1
+    move-result-object p0
 
-    invoke-direct {v0, v1, p1}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
     return-object v0
 .end method
 
 .method public engineGenerateSecret()[B
-    .locals 1
+    .locals 0
 
     .line 51
     invoke-direct {p0}, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->checkCompleted()V
 
     .line 52
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mResult:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;->mResult:[B
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public engineInit(Ljava/security/Key;Ljava/security/SecureRandom;)V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidKeyException;
@@ -582,7 +582,7 @@
 
     .line 22
     :cond_0
-    new-instance p2, Ljava/security/InvalidKeyException;
+    new-instance p0, Ljava/security/InvalidKeyException;
 
     .line 23
     .line 24
@@ -594,25 +594,25 @@
     move-result-object p1
 
     .line 28
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 29
     .line 30
-    const-string v1, "Not a private key: "
+    const-string v0, "Not a private key: "
 
     .line 31
     .line 32
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 33
     .line 34
     .line 35
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 36
     .line 37
     .line 38
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 39
     .line 40
@@ -620,20 +620,20 @@
     move-result-object p1
 
     .line 42
-    invoke-direct {p2, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
 
     .line 43
     .line 44
     .line 45
-    throw p2
+    throw p0
 
     .line 46
     :cond_1
-    const-string p1, "key == null"
+    const-string p0, "key == null"
 
     .line 47
     .line 48
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -659,13 +659,13 @@
 
     .line 53
     :cond_0
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
-    const-string p2, "No algorithm parameters supported"
+    const-string p1, "No algorithm parameters supported"
 
-    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
-    throw p1
+    throw p0
 .end method
 
 .method public abstract getOutputSize(Ljava/lang/Object;)I

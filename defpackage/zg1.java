@@ -1,32 +1,26 @@
 package defpackage;
 
-import java.util.Arrays;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class zg1 extends pg1 implements xi2 {
+    public final ah1 i0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class zg1 extends uz4 {
-    public double[] a;
-    public int b;
-
-    @Override // defpackage.uz4
-    public final Object a() {
-        return Arrays.copyOf(this.a, this.b);
+    public zg1(ah1 ah1Var) {
+        this.i0 = ah1Var;
     }
 
-    @Override // defpackage.uz4
-    public final void b(int i) {
-        double[] dArr = this.a;
-        if (dArr.length < i) {
-            int length = dArr.length * 2;
-            if (i < length) {
-                i = length;
-            }
-            this.a = Arrays.copyOf(dArr, i);
-        }
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        return ((zg1) this.i0.o0.getValue()).P(obj, obj2);
     }
 
-    @Override // defpackage.uz4
-    public final int d() {
-        return this.b;
+    @Override // defpackage.ng1
+    public final bh1 U() {
+        return this.i0;
+    }
+
+    @Override // defpackage.no3
+    public final uo3 f() {
+        return this.i0;
     }
 }

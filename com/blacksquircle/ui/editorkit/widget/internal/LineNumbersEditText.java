@@ -5,39 +5,40 @@ import android.text.SpannableStringBuilder;
 import android.util.AttributeSet;
 import android.widget.Toast;
 import com.blacksquircle.ui.editorkit.widget.TextProcessor;
-import defpackage.i27;
-import defpackage.j27;
-import defpackage.sr1;
-import defpackage.xy4;
+import defpackage.nu7;
+import defpackage.ou7;
+import defpackage.u02;
+import defpackage.w31;
 import java.util.ArrayList;
 import java.util.Iterator;
 import kotlin.Metadata;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0006\b&\u0018\u00002\u00020\u0001B'\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\r\u001a\u00020\f2\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\r\u0010\u000eR*\u0010\u0017\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000f8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u0011\u0010\u0012\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R*\u0010\u001b\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000f8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u0018\u0010\u0012\u001a\u0004\b\u0019\u0010\u0014\"\u0004\b\u001a\u0010\u0016R\u0017\u0010!\u001a\u00020\u001c8\u0006¢\u0006\f\n\u0004\b\u001d\u0010\u001e\u001a\u0004\b\u001f\u0010 ¨\u0006\""}, d2 = {"Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;", "Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "", "text", "Lbh7;", "setTextContent", "(Ljava/lang/CharSequence;)V", "", "value", "V", "Z", "getSoftKeyboard", "()Z", "setSoftKeyboard", "(Z)V", "softKeyboard", "W", "getReadOnly", "setReadOnly", "readOnly", "Lj27;", "a0", "Lj27;", "getStructure", "()Lj27;", "structure", "editorkit_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0006\b&\u0018\u00002\u00020\u0001B'\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\r\u001a\u00020\f2\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\r\u0010\u000eR*\u0010\u0017\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000f8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u0011\u0010\u0012\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R*\u0010\u001b\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000f8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\u0018\u0010\u0012\u001a\u0004\b\u0019\u0010\u0014\"\u0004\b\u001a\u0010\u0016R\u0017\u0010!\u001a\u00020\u001c8\u0006¢\u0006\f\n\u0004\b\u001d\u0010\u001e\u001a\u0004\b\u001f\u0010 ¨\u0006\""}, d2 = {"Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;", "Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", HttpUrl.FRAGMENT_ENCODE_SET, "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", HttpUrl.FRAGMENT_ENCODE_SET, "text", "Lr98;", "setTextContent", "(Ljava/lang/CharSequence;)V", HttpUrl.FRAGMENT_ENCODE_SET, "value", "h0", "Z", "getSoftKeyboard", "()Z", "setSoftKeyboard", "(Z)V", "softKeyboard", "i0", "getReadOnly", "setReadOnly", "readOnly", "Lou7;", "j0", "Lou7;", "getStructure", "()Lou7;", "structure", "editorkit_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+/* loaded from: classes.dex */
 public abstract class LineNumbersEditText extends ScrollableEditText {
 
-    /* JADX INFO: renamed from: V, reason: from kotlin metadata */
+    /* renamed from: h0, reason: from kotlin metadata */
     public boolean softKeyboard;
 
-    /* JADX INFO: renamed from: W, reason: from kotlin metadata */
+    /* renamed from: i0, reason: from kotlin metadata */
     public boolean readOnly;
 
-    /* JADX INFO: renamed from: a0, reason: from kotlin metadata */
-    public final j27 structure;
-    public final sr1 b0;
-    public int c0;
-    public int d0;
-    public CharSequence e0;
+    /* renamed from: j0, reason: from kotlin metadata */
+    public final ou7 structure;
+    public final u02 k0;
+    public int l0;
+    public int m0;
+    public CharSequence n0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LineNumbersEditText(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         context.getClass();
-        this.structure = new j27(new SpannableStringBuilder());
-        this.b0 = new sr1(2, this);
-        this.e0 = "";
+        this.structure = new ou7(new SpannableStringBuilder());
+        this.k0 = new u02(2, this);
+        this.n0 = HttpUrl.FRAGMENT_ENCODE_SET;
         setGravity(8388659);
         setInputType(655361);
     }
@@ -46,62 +47,62 @@ public abstract class LineNumbersEditText extends ScrollableEditText {
         if (i < 0) {
             i = 0;
         }
-        j27 j27Var = this.structure;
-        SpannableStringBuilder spannableStringBuilder = j27Var.a;
-        SpannableStringBuilder spannableStringBuilder2 = j27Var.a;
-        ArrayList arrayList = j27Var.b;
+        ou7 ou7Var = this.structure;
+        SpannableStringBuilder spannableStringBuilder = ou7Var.a;
+        SpannableStringBuilder spannableStringBuilder2 = ou7Var.a;
+        ArrayList arrayList = ou7Var.b;
         if (i2 > spannableStringBuilder.length()) {
             i2 = spannableStringBuilder2.length();
         }
         int length = charSequence.length() - (i2 - i);
-        int iB = j27Var.b(i);
+        int b = ou7Var.b(i);
         for (int i3 = i; i3 < i2; i3++) {
             if (spannableStringBuilder2.charAt(i3) == '\n') {
-                int i4 = 1 + iB;
+                int i4 = 1 + b;
                 TextProcessor textProcessor = (TextProcessor) this;
-                j27 j27Var2 = textProcessor.structure;
+                ou7 ou7Var2 = textProcessor.structure;
                 if (i4 != 0) {
-                    j27Var2.b.remove(i4);
+                    ou7Var2.b.remove(i4);
                 } else {
-                    j27Var2.getClass();
+                    ou7Var2.getClass();
                 }
-                Iterator it = textProcessor.u0.iterator();
+                Iterator it = textProcessor.D0.iterator();
                 if (it.hasNext()) {
-                    throw xy4.t(it);
+                    throw w31.j(it);
                 }
             }
         }
-        int iB2 = j27Var.b(i) + 1;
-        if (1 <= iB2 && iB2 < arrayList.size()) {
-            while (iB2 < arrayList.size()) {
-                int iA = j27Var.a(iB2) + length;
-                if (iB2 <= 0 || iA > 0) {
-                    ((i27) arrayList.get(iB2)).a = iA;
+        int b2 = ou7Var.b(i) + 1;
+        if (1 <= b2 && b2 < arrayList.size()) {
+            while (b2 < arrayList.size()) {
+                int a = ou7Var.a(b2) + length;
+                if (b2 <= 0 || a > 0) {
+                    ((nu7) arrayList.get(b2)).a = a;
                 } else {
-                    if (iB2 != 0) {
-                        arrayList.remove(iB2);
+                    if (b2 != 0) {
+                        arrayList.remove(b2);
                     }
-                    iB2--;
+                    b2--;
                 }
-                iB2++;
+                b2++;
             }
         }
         int length2 = charSequence.length();
         for (int i5 = 0; i5 < length2; i5++) {
             if (charSequence.charAt(i5) == '\n') {
                 int i6 = i + i5;
-                int iB3 = j27Var.b(i6) + 1;
+                int b3 = ou7Var.b(i6) + 1;
                 int i7 = i6 + 1;
                 TextProcessor textProcessor2 = (TextProcessor) this;
-                j27 j27Var3 = textProcessor2.structure;
-                if (iB3 != 0) {
-                    j27Var3.b.add(iB3, new i27(i7));
+                ou7 ou7Var3 = textProcessor2.structure;
+                if (b3 != 0) {
+                    ou7Var3.b.add(b3, new nu7(i7));
                 } else {
-                    j27Var3.getClass();
+                    ou7Var3.getClass();
                 }
-                Iterator it2 = textProcessor2.u0.iterator();
+                Iterator it2 = textProcessor2.D0.iterator();
                 if (it2.hasNext()) {
-                    throw xy4.t(it2);
+                    throw w31.j(it2);
                 }
             }
         }
@@ -116,7 +117,7 @@ public abstract class LineNumbersEditText extends ScrollableEditText {
         return this.softKeyboard;
     }
 
-    public final j27 getStructure() {
+    public final ou7 getStructure() {
         return this.structure;
     }
 
@@ -132,19 +133,19 @@ public abstract class LineNumbersEditText extends ScrollableEditText {
     }
 
     public void setTextContent(CharSequence text) {
-        j27 j27Var = this.structure;
+        ou7 ou7Var = this.structure;
         text.getClass();
-        sr1 sr1Var = this.b0;
-        removeTextChangedListener(sr1Var);
+        u02 u02Var = this.k0;
+        removeTextChangedListener(u02Var);
         try {
             setText(text);
-            a(0, j27Var.a.length(), text);
+            a(0, ou7Var.a.length(), text);
         } catch (Throwable th) {
             th.printStackTrace();
-            setText("");
-            a(0, j27Var.a.length(), "");
+            setText(HttpUrl.FRAGMENT_ENCODE_SET);
+            a(0, ou7Var.a.length(), HttpUrl.FRAGMENT_ENCODE_SET);
             Toast.makeText(getContext(), th.getMessage(), 1).show();
         }
-        addTextChangedListener(sr1Var);
+        addTextChangedListener(u02Var);
     }
 }

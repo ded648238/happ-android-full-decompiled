@@ -1,6 +1,6 @@
 .class public abstract Lorg/conscrypt/OpenSSLEvpCipher;
 .super Lorg/conscrypt/OpenSSLCipher;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -91,7 +91,7 @@
 
 # virtual methods
 .method public doFinalInternal([BII)I
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/crypto/IllegalBlockSizeException;,
@@ -138,16 +138,16 @@
 
     .line 16
     .line 17
-    iget-object p3, p0, Lorg/conscrypt/OpenSSLEvpCipher;->cipherCtx:Lorg/conscrypt/NativeRef$EVP_CIPHER_CTX;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLEvpCipher;->cipherCtx:Lorg/conscrypt/NativeRef$EVP_CIPHER_CTX;
 
     .line 18
     .line 19
-    invoke-static {p3, p1, p2}, Lorg/conscrypt/NativeCrypto;->EVP_CipherFinal_ex(Lorg/conscrypt/NativeRef$EVP_CIPHER_CTX;[BI)I
+    invoke-static {p0, p1, p2}, Lorg/conscrypt/NativeCrypto;->EVP_CipherFinal_ex(Lorg/conscrypt/NativeRef$EVP_CIPHER_CTX;[BI)I
 
     .line 20
     .line 21
     .line 22
-    move-result p1
+    move-result p0
 
     .line 23
     goto :goto_0
@@ -158,81 +158,73 @@
 
     .line 25
     .line 26
-    iget-object v2, p0, Lorg/conscrypt/OpenSSLEvpCipher;->cipherCtx:Lorg/conscrypt/NativeRef$EVP_CIPHER_CTX;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLEvpCipher;->cipherCtx:Lorg/conscrypt/NativeRef$EVP_CIPHER_CTX;
 
     .line 27
     .line 28
-    invoke-static {v2, p3, v1}, Lorg/conscrypt/NativeCrypto;->EVP_CipherFinal_ex(Lorg/conscrypt/NativeRef$EVP_CIPHER_CTX;[BI)I
+    invoke-static {p0, p3, v1}, Lorg/conscrypt/NativeCrypto;->EVP_CipherFinal_ex(Lorg/conscrypt/NativeRef$EVP_CIPHER_CTX;[BI)I
 
     .line 29
     .line 30
     .line 31
-    move-result v2
+    move-result p0
 
     .line 32
-    if-gt v2, v0, :cond_3
+    if-gt p0, v0, :cond_3
 
     .line 33
     .line 34
-    if-lez v2, :cond_2
+    if-lez p0, :cond_2
 
     .line 35
     .line 36
-    invoke-static {p3, v1, p1, p2, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {p3, v1, p1, p2, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 37
     .line 38
     .line 39
     :cond_2
-    move p1, v2
+    :goto_0
+    add-int/2addr p0, p2
 
     .line 40
-    :goto_0
-    add-int/2addr p1, p2
+    sub-int/2addr p0, p2
 
     .line 41
-    invoke-direct {p0}, Lorg/conscrypt/OpenSSLEvpCipher;->reset()V
+    return p0
 
     .line 42
-    .line 43
-    .line 44
-    sub-int/2addr p1, p2
-
-    .line 45
-    return p1
-
-    .line 46
     :cond_3
     new-instance p1, Lorg/conscrypt/ShortBufferWithoutStackTraceException;
 
+    .line 43
+    .line 44
+    const-string p2, "buffer is too short: "
+
+    .line 45
+    .line 46
+    const-string p3, " > "
+
     .line 47
     .line 48
-    const-string p2, "buffer is too short: "
+    invoke-static {p2, p0, v0, p3}, Leb7;->j(Ljava/lang/String;IILjava/lang/String;)Ljava/lang/String;
 
     .line 49
     .line 50
-    const-string p3, " > "
-
     .line 51
+    move-result-object p0
+
     .line 52
-    invoke-static {p2, v2, v0, p3}, Lxy4;->y(Ljava/lang/String;IILjava/lang/String;)Ljava/lang/String;
+    invoke-direct {p1, p0}, Lorg/conscrypt/ShortBufferWithoutStackTraceException;-><init>(Ljava/lang/String;)V
 
     .line 53
     .line 54
     .line 55
-    move-result-object p2
-
-    .line 56
-    invoke-direct {p1, p2}, Lorg/conscrypt/ShortBufferWithoutStackTraceException;-><init>(Ljava/lang/String;)V
-
-    .line 57
-    .line 58
-    .line 59
     throw p1
 .end method
 
 .method public engineDoFinal([BII[BI)I
-    .locals 8
+    .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/crypto/ShortBufferException;,
@@ -241,62 +233,141 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
 
     if-eqz p4, :cond_1
 
-    .line 56
+    .line 79
+    :try_start_0
     invoke-virtual {p0, p3}, Lorg/conscrypt/OpenSSLEvpCipher;->getOutputSizeForFinal(I)I
 
-    move-result v7
+    move-result v9
+    :try_end_0
+    .catch Ljavax/crypto/ShortBufferException; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     if-lez p3, :cond_0
 
-    move-object v1, p0
+    move-object v3, p0
 
-    move-object v2, p1
+    move-object v4, p1
 
-    move v3, p2
+    move v5, p2
 
-    move v4, p3
+    move v6, p3
 
-    move-object v5, p4
+    move-object v7, p4
 
-    move v6, p5
+    move v8, p5
 
-    .line 57
-    invoke-virtual/range {v1 .. v7}, Lorg/conscrypt/OpenSSLEvpCipher;->updateInternal([BII[BII)I
+    .line 80
+    :try_start_1
+    invoke-virtual/range {v3 .. v9}, Lorg/conscrypt/OpenSSLEvpCipher;->updateInternal([BII[BII)I
 
-    move-result v0
+    move-result p0
 
-    add-int p5, v6, v0
+    add-int p5, v8, p0
 
-    sub-int/2addr v7, v0
+    sub-int/2addr v9, p0
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception v0
+
+    :goto_0
+    move-object p0, v0
+
+    move v1, v2
+
+    goto :goto_4
+
+    :catch_0
+    move-exception v0
+
+    :goto_1
+    move-object p0, v0
+
+    goto :goto_3
+
+    :cond_0
+    move-object v3, p0
+
+    move-object v7, p4
+
+    move v8, p5
+
+    move p0, v1
+
+    .line 81
+    :goto_2
+    invoke-virtual {v3, v7, p5, v9}, Lorg/conscrypt/OpenSSLEvpCipher;->doFinalInternal([BII)I
+
+    move-result p1
+    :try_end_1
+    .catch Ljavax/crypto/ShortBufferException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    add-int/2addr p0, p1
+
+    .line 82
+    invoke-direct {v3}, Lorg/conscrypt/OpenSSLEvpCipher;->reset()V
+
+    return p0
+
+    :catchall_1
+    move-exception v0
+
+    move-object v3, p0
 
     goto :goto_0
 
-    :cond_0
-    move-object v5, p4
+    :catch_1
+    move-exception v0
 
-    move v6, p5
+    move-object v3, p0
 
-    .line 58
-    :goto_0
-    invoke-virtual {p0, v5, p5, v7}, Lorg/conscrypt/OpenSSLEvpCipher;->doFinalInternal([BII)I
+    goto :goto_1
 
-    move-result p1
-
-    add-int/2addr p1, v0
-
-    return p1
-
-    .line 59
     :cond_1
+    move-object v3, p0
+
+    .line 83
+    :try_start_2
+    new-instance p0, Ljava/lang/NullPointerException;
+
     const-string p1, "output == null"
 
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
-    return v0
+    throw p0
+    :try_end_2
+    .catch Ljavax/crypto/ShortBufferException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 84
+    :goto_3
+    :try_start_3
+    throw p0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    :catchall_2
+    move-exception v0
+
+    move-object p0, v0
+
+    :goto_4
+    if-eqz v1, :cond_2
+
+    .line 85
+    invoke-direct {v3}, Lorg/conscrypt/OpenSSLEvpCipher;->reset()V
+
+    .line 86
+    :cond_2
+    throw p0
 .end method
 
 .method public engineDoFinal([BII)[B
@@ -309,6 +380,7 @@
     .end annotation
 
     .line 1
+    :try_start_0
     invoke-virtual {p0, p3}, Lorg/conscrypt/OpenSSLEvpCipher;->getOutputSizeForFinal(I)I
 
     .line 2
@@ -318,6 +390,8 @@
 
     .line 5
     new-array v5, v7, [B
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 6
     .line 7
@@ -347,106 +421,172 @@
     move v4, p3
 
     .line 17
-    :try_start_0
+    :try_start_1
     invoke-virtual/range {v1 .. v7}, Lorg/conscrypt/OpenSSLEvpCipher;->updateInternal([BII[BII)I
 
     .line 18
     .line 19
     .line 20
-    move-result p1
-    :try_end_0
-    .catch Ljavax/crypto/ShortBufferException; {:try_start_0 .. :try_end_0} :catch_0
+    move-result p0
+    :try_end_1
+    .catch Ljavax/crypto/ShortBufferException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 21
     goto :goto_1
 
     .line 22
-    :catch_0
+    :catchall_0
     move-exception v0
 
     .line 23
-    move-object p1, v0
+    :goto_0
+    move-object p0, v0
 
     .line 24
-    invoke-static {v8, p1}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
+    goto :goto_2
 
     .line 25
+    :catch_0
+    move-exception v0
+
     .line 26
+    move-object p0, v0
+
     .line 27
-    :goto_0
-    const/4 p1, 0x0
+    :try_start_2
+    new-instance p1, Ljava/lang/RuntimeException;
 
     .line 28
-    return-object p1
-
     .line 29
-    :cond_0
-    const/4 p1, 0x0
+    invoke-direct {p1, v8, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 30
-    :goto_1
-    sub-int p2, v7, p1
-
     .line 31
     .line 32
-    :try_start_1
-    invoke-virtual {p0, v5, p1, p2}, Lorg/conscrypt/OpenSSLEvpCipher;->doFinalInternal([BII)I
+    throw p1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 33
+    :cond_0
+    move-object v1, p0
+
     .line 34
+    move p0, v0
+
     .line 35
-    move-result p2
-    :try_end_1
-    .catch Ljavax/crypto/ShortBufferException; {:try_start_1 .. :try_end_1} :catch_1
+    :goto_1
+    sub-int p1, v7, p0
 
     .line 36
-    add-int/2addr p1, p2
-
     .line 37
-    if-ne p1, v7, :cond_1
+    :try_start_3
+    invoke-virtual {v1, v5, p0, p1}, Lorg/conscrypt/OpenSSLEvpCipher;->doFinalInternal([BII)I
 
     .line 38
     .line 39
-    return-object v5
-
     .line 40
-    :cond_1
-    if-nez p1, :cond_2
+    move-result p1
+    :try_end_3
+    .catch Ljavax/crypto/ShortBufferException; {:try_start_3 .. :try_end_3} :catch_1
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 41
+    add-int/2addr p0, p1
+
     .line 42
-    sget-object p1, Lorg/conscrypt/EmptyArray;->BYTE:[B
+    if-ne p0, v7, :cond_1
 
     .line 43
     .line 44
-    return-object p1
+    invoke-direct {v1}, Lorg/conscrypt/OpenSSLEvpCipher;->reset()V
 
     .line 45
-    :cond_2
-    invoke-static {v5, v0, p1}, Ljava/util/Arrays;->copyOfRange([BII)[B
-
     .line 46
     .line 47
+    return-object v5
+
     .line 48
-    move-result-object p1
+    :cond_1
+    if-nez p0, :cond_2
 
     .line 49
-    return-object p1
-
     .line 50
-    :catch_1
-    move-exception v0
+    :try_start_4
+    sget-object p0, Lorg/conscrypt/EmptyArray;->BYTE:[B
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 51
-    move-object p1, v0
-
     .line 52
-    invoke-static {v8, p1}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {v1}, Lorg/conscrypt/OpenSSLEvpCipher;->reset()V
 
     .line 53
     .line 54
     .line 55
+    return-object p0
+
+    .line 56
+    :cond_2
+    :try_start_5
+    invoke-static {v5, v0, p0}, Ljava/util/Arrays;->copyOfRange([BII)[B
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object p0
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    .line 60
+    invoke-direct {v1}, Lorg/conscrypt/OpenSSLEvpCipher;->reset()V
+
+    .line 61
+    .line 62
+    .line 63
+    return-object p0
+
+    .line 64
+    :catch_1
+    move-exception v0
+
+    .line 65
+    move-object p0, v0
+
+    .line 66
+    :try_start_6
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    .line 67
+    .line 68
+    invoke-direct {p1, v8, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 69
+    .line 70
+    .line 71
+    throw p1
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
+
+    .line 72
+    :catchall_1
+    move-exception v0
+
+    .line 73
+    move-object v1, p0
+
+    .line 74
     goto :goto_0
+
+    .line 75
+    :goto_2
+    invoke-direct {v1}, Lorg/conscrypt/OpenSSLEvpCipher;->reset()V
+
+    .line 76
+    .line 77
+    .line 78
+    throw p0
 .end method
 
 .method public engineInitInternal([BLjava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V
@@ -514,11 +654,11 @@
 
     .line 25
     .line 26
-    cmp-long v4, v2, v0
+    cmp-long v0, v2, v0
 
     .line 27
     .line 28
-    if-eqz v4, :cond_a
+    if-eqz v0, :cond_a
 
     .line 29
     .line 30
@@ -584,42 +724,42 @@
 
     .line 59
     .line 60
-    iget-object p2, p0, Lorg/conscrypt/OpenSSLCipher;->mode:Lorg/conscrypt/OpenSSLCipher$Mode;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLCipher;->mode:Lorg/conscrypt/OpenSSLCipher$Mode;
 
     .line 61
     .line 62
-    new-instance p3, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 63
     .line 64
-    const-string v0, "IV must be specified in "
+    const-string p3, "IV must be specified in "
 
     .line 65
     .line 66
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 67
     .line 68
     .line 69
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 70
     .line 71
     .line 72
-    invoke-virtual {p3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 73
     .line 74
     .line 75
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 76
     .line 77
     .line 78
-    move-result-object p2
+    move-result-object p0
 
     .line 79
-    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 80
     .line 81
@@ -644,42 +784,42 @@
 
     .line 89
     .line 90
-    iget-object p2, p0, Lorg/conscrypt/OpenSSLCipher;->mode:Lorg/conscrypt/OpenSSLCipher$Mode;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLCipher;->mode:Lorg/conscrypt/OpenSSLCipher$Mode;
 
     .line 91
     .line 92
-    new-instance p3, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 93
     .line 94
-    const-string v0, "IV not used in "
+    const-string p3, "IV not used in "
 
     .line 95
     .line 96
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 97
     .line 98
     .line 99
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 100
     .line 101
     .line 102
-    invoke-virtual {p3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 103
     .line 104
     .line 105
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 106
     .line 107
     .line 108
-    move-result-object p2
+    move-result-object p0
 
     .line 109
-    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 110
     .line 111
@@ -704,48 +844,48 @@
 
     .line 119
     :cond_6
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 120
     .line 121
-    const-string p3, "expected IV length of "
+    const-string p1, "expected IV length of "
 
     .line 122
     .line 123
-    const-string v1, " but was "
+    const-string p3, " but was "
 
     .line 124
     .line 125
-    invoke-static {p3, v0, v1}, Lkd0;->A(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, v0, p3}, Lc73;->n(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 126
     .line 127
     .line 128
-    move-result-object p3
+    move-result-object p1
 
     .line 129
     array-length p2, p2
 
     .line 130
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 131
     .line 132
     .line 133
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 134
     .line 135
     .line 136
-    move-result-object p2
+    move-result-object p1
 
     .line 137
-    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 138
     .line 139
     .line 140
-    throw p1
+    throw p0
 
     .line 141
     :cond_7
@@ -866,7 +1006,7 @@
 
     .line 194
     :cond_9
-    const/4 p2, 0x0
+    move p2, v0
 
     .line 195
     :goto_4
@@ -913,24 +1053,24 @@
 
     .line 214
     .line 215
-    iget-object p3, p0, Lorg/conscrypt/OpenSSLCipher;->mode:Lorg/conscrypt/OpenSSLCipher$Mode;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLCipher;->mode:Lorg/conscrypt/OpenSSLCipher$Mode;
 
     .line 216
     .line 217
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance p3, Ljava/lang/StringBuilder;
 
     .line 218
     .line 219
-    const-string v1, "Cannot find name for key length = "
+    const-string v0, "Cannot find name for key length = "
 
     .line 220
     .line 221
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 222
     .line 223
     .line 224
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 225
     .line 226
@@ -939,25 +1079,25 @@
 
     .line 228
     .line 229
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 230
     .line 231
     .line 232
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 233
     .line 234
     .line 235
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 236
     .line 237
     .line 238
-    move-result-object p2
+    move-result-object p0
 
     .line 239
-    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 240
     .line 241
@@ -1052,7 +1192,7 @@
 
     .line 36
     :cond_2
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 37
     :goto_0
@@ -1092,15 +1232,15 @@
     add-int/2addr p1, v0
 
     .line 53
-    iget v0, p0, Lorg/conscrypt/OpenSSLEvpCipher;->modeBlockSize:I
+    iget p0, p0, Lorg/conscrypt/OpenSSLEvpCipher;->modeBlockSize:I
 
     .line 54
     .line 55
-    rem-int v0, p1, v0
+    rem-int p0, p1, p0
 
     .line 56
     .line 57
-    sub-int/2addr p1, v0
+    sub-int/2addr p1, p0
 
     .line 58
     return p1
@@ -1115,10 +1255,10 @@
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result p0
 
     .line 5
-    return p1
+    return p0
 .end method
 
 .method public updateInternal([BII[BII)I
@@ -1188,19 +1328,19 @@
     move p1, p6
 
     .line 24
-    new-instance p2, Lorg/conscrypt/ShortBufferWithoutStackTraceException;
+    new-instance p0, Lorg/conscrypt/ShortBufferWithoutStackTraceException;
 
     .line 25
     .line 26
-    const-string p3, "output buffer too small during update: "
+    const-string p2, "output buffer too small during update: "
 
     .line 27
     .line 28
-    const-string p4, " < "
+    const-string p3, " < "
 
     .line 29
     .line 30
-    invoke-static {p3, v0, p1, p4}, Lxy4;->y(Ljava/lang/String;IILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v0, p1, p3}, Leb7;->j(Ljava/lang/String;IILjava/lang/String;)Ljava/lang/String;
 
     .line 31
     .line 32
@@ -1208,10 +1348,10 @@
     move-result-object p1
 
     .line 34
-    invoke-direct {p2, p1}, Lorg/conscrypt/ShortBufferWithoutStackTraceException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lorg/conscrypt/ShortBufferWithoutStackTraceException;-><init>(Ljava/lang/String;)V
 
     .line 35
     .line 36
     .line 37
-    throw p2
+    throw p0
 .end method

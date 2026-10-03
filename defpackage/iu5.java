@@ -1,6 +1,9 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class iu5 {
+/* loaded from: classes.dex */
+public abstract class iu5 {
+    public static int Base_CardView = 2132082711;
+    public static int CardView = 2132083002;
+    public static int CardView_Dark = 2132083003;
+    public static int CardView_Light = 2132083004;
 }

@@ -1,7 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class c66 {
-    public abstract a33 a(eb7 eb7Var);
+import su.happ.proxyutility.dto.MetaParams;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class c66 extends jq4 {
+    public static final c66 X = new c66(MetaParams.class, "perAppProxyMode", "getPerAppProxyMode()Lsu/happ/proxyutility/util/enums/PerAppProxyMode;", 0);
+
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((MetaParams) obj).b2((p95) obj2);
+    }
+
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return ((MetaParams) obj).getPerAppProxyMode();
+    }
 }

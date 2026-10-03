@@ -1,27 +1,30 @@
 .class public final Lon1;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lso2;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Z
+.field public c0:Ljava/util/LinkedHashMap;
+
+.field public synthetic d0:Ljava/lang/Object;
+
+.field public final synthetic e0:Lrt2;
+
+.field public f0:I
 
 
 # direct methods
-.method public constructor <init>(Z)V
+.method public constructor <init>(Lrt2;Ld31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lon1;->e0:Lrt2;
 
     .line 2
     .line 3
-    .line 4
-    iput-boolean p1, p0, Lon1;->Q:Z
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
     return-void
@@ -29,76 +32,55 @@
 
 
 # virtual methods
-.method public final h()Z
-    .locals 1
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    iget-boolean v0, p0, Lon1;->Q:Z
+    iput-object p1, p0, Lon1;->d0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    return v0
-.end method
-
-.method public final i()Ljd4;
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return-object v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Empty{"
+    iget p1, p0, Lon1;->f0:I
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    iget-boolean v1, p0, Lon1;->Q:Z
+    iput p1, p0, Lon1;->f0:I
 
     .line 9
     .line 10
-    if-eqz v1, :cond_0
+    const/4 v3, 0x0
 
     .line 11
+    const/4 v4, 0x0
+
     .line 12
-    const-string v1, "Active"
+    iget-object v0, p0, Lon1;->e0:Lrt2;
 
     .line 13
     .line 14
-    goto :goto_0
+    const/4 v1, 0x0
 
     .line 15
-    :cond_0
-    const-string v1, "New"
+    const/4 v2, 0x0
 
     .line 16
+    move-object v5, p0
+
     .line 17
-    :goto_0
-    const/16 v2, 0x7d
+    invoke-virtual/range {v0 .. v5}, Lrt2;->n(Ljava/util/List;Ljava/lang/String;ILcn1;Ld31;)Ljava/lang/Object;
 
     .line 18
     .line 19
-    invoke-static {v0, v1, v2}, Lmi2;->r(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
-
     .line 20
-    .line 21
-    .line 22
-    move-result-object v0
+    move-result-object p0
 
-    .line 23
-    return-object v0
+    .line 21
+    return-object p0
 .end method

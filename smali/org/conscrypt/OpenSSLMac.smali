@@ -1,6 +1,6 @@
 .class public abstract Lorg/conscrypt/OpenSSLMac;
 .super Ljavax/crypto/MacSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -96,14 +96,14 @@
 .end method
 
 .method public engineGetMacLength()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/OpenSSLMac;->size:I
+    iget p0, p0, Lorg/conscrypt/OpenSSLMac;->size:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public engineInit(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
@@ -159,31 +159,31 @@
 
     .line 20
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 21
-    new-instance p2, Ljava/security/InvalidKeyException;
+    new-instance p1, Ljava/security/InvalidKeyException;
 
     .line 22
     .line 23
-    const-string v0, "invalid key"
+    const-string p2, "invalid key"
 
     .line 24
     .line 25
-    invoke-direct {p2, v0, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, p2, p0}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 26
     .line 27
     .line 28
-    throw p2
+    throw p1
 
     .line 29
     :cond_0
-    const-string p1, "key cannot be encoded"
+    const-string p0, "key cannot be encoded"
 
     .line 30
     .line 31
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 32
     .line 33
@@ -192,28 +192,28 @@
 
     .line 35
     :cond_1
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 36
     .line 37
-    const-string p2, "unknown parameter type"
+    const-string p1, "unknown parameter type"
 
     .line 38
     .line 39
-    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 40
     .line 41
     .line 42
-    throw p1
+    throw p0
 
     .line 43
     :cond_2
-    const-string p1, "key must be a SecretKey"
+    const-string p0, "key must be a SecretKey"
 
     .line 44
     .line 45
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 46
     .line 47
@@ -221,28 +221,56 @@
     return-void
 .end method
 
-.method public engineReset()V
+.method public declared-synchronized engineReset()V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lorg/conscrypt/OpenSSLMac;->initialized:Z
+    monitor-enter p0
 
     .line 2
+    :try_start_0
+    iget-boolean v0, p0, Lorg/conscrypt/OpenSSLMac;->initialized:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 3
+    .line 4
     if-nez v0, :cond_0
 
-    .line 4
     .line 5
-    return-void
-
     .line 6
-    :cond_0
-    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLMac;->resetContext()V
+    monitor-exit p0
 
     .line 7
-    .line 8
-    .line 9
     return-void
+
+    .line 8
+    :cond_0
+    :try_start_1
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLMac;->resetContext()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 9
+    .line 10
+    .line 11
+    monitor-exit p0
+
+    .line 12
+    return-void
+
+    .line 13
+    :catchall_0
+    move-exception v0
+
+    .line 14
+    :try_start_2
+    monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 15
+    throw v0
 .end method
 
 .method public engineUpdate(B)V
@@ -316,11 +344,11 @@
 
     .line 23
     .line 24
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 25
     .line 26
-    if-nez v4, :cond_2
+    if-nez v2, :cond_2
 
     .line 27
     .line 28
@@ -380,11 +408,11 @@
 
     .line 54
     :cond_3
-    const-string p1, "Negative remaining amount"
+    const-string p0, "Negative remaining amount"
 
     .line 55
     .line 56
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 57
     .line 58
@@ -393,11 +421,11 @@
 
     .line 60
     :cond_4
-    const-string p1, "Negative position"
+    const-string p0, "Negative position"
 
     .line 61
     .line 62
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 63
     .line 64

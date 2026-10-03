@@ -1,70 +1,44 @@
-.class public abstract Lol2;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lol2;
+.super Lxm7;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Lt3;
+# instance fields
+.field public final f:Ljava/lang/String;
 
-.field public static final b:Lt3;
-
-.field public static final c:Lt3;
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lt3;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "GET"
-
     .line 4
-    .line 5
-    invoke-direct {v0, v1}, Lt3;-><init>(Ljava/lang/Object;)V
+    iput-object p1, p0, Lol2;->f:Ljava/lang/String;
 
+    .line 5
     .line 6
+    iput-object p2, p0, Lol2;->g:Ljava/lang/String;
+
     .line 7
     .line 8
-    sput-object v0, Lol2;->a:Lt3;
-
-    .line 9
-    .line 10
-    new-instance v0, Lt3;
-
-    .line 11
-    .line 12
-    sget-object v1, Ltb4;->b:Ltb4;
-
-    .line 13
-    .line 14
-    invoke-direct {v0, v1}, Lt3;-><init>(Ljava/lang/Object;)V
-
-    .line 15
-    .line 16
-    .line 17
-    sput-object v0, Lol2;->b:Lt3;
-
-    .line 18
-    .line 19
-    new-instance v0, Lt3;
-
-    .line 20
-    .line 21
-    const/4 v1, 0x0
-
-    .line 22
-    invoke-direct {v0, v1}, Lt3;-><init>(Ljava/lang/Object;)V
-
-    .line 23
-    .line 24
-    .line 25
-    sput-object v0, Lol2;->c:Lt3;
-
-    .line 26
-    .line 27
     return-void
+.end method
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lol2;->g:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class public final enum Lio/sentry/vendor/gson/stream/b;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -29,129 +29,57 @@
 
 # direct methods
 .method private static synthetic $values()[Lio/sentry/vendor/gson/stream/b;
-    .locals 3
+    .locals 10
 
     .line 1
-    const/16 v0, 0xa
+    sget-object v0, Lio/sentry/vendor/gson/stream/b;->BEGIN_ARRAY:Lio/sentry/vendor/gson/stream/b;
 
     .line 2
     .line 3
-    new-array v0, v0, [Lio/sentry/vendor/gson/stream/b;
+    sget-object v1, Lio/sentry/vendor/gson/stream/b;->END_ARRAY:Lio/sentry/vendor/gson/stream/b;
 
     .line 4
     .line 5
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->BEGIN_ARRAY:Lio/sentry/vendor/gson/stream/b;
+    sget-object v2, Lio/sentry/vendor/gson/stream/b;->BEGIN_OBJECT:Lio/sentry/vendor/gson/stream/b;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    sget-object v3, Lio/sentry/vendor/gson/stream/b;->END_OBJECT:Lio/sentry/vendor/gson/stream/b;
 
     .line 8
-    aput-object v1, v0, v2
-
     .line 9
+    sget-object v4, Lio/sentry/vendor/gson/stream/b;->NAME:Lio/sentry/vendor/gson/stream/b;
+
     .line 10
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->END_ARRAY:Lio/sentry/vendor/gson/stream/b;
-
     .line 11
-    .line 12
-    const/4 v2, 0x1
+    sget-object v5, Lio/sentry/vendor/gson/stream/b;->STRING:Lio/sentry/vendor/gson/stream/b;
 
+    .line 12
     .line 13
-    aput-object v1, v0, v2
+    sget-object v6, Lio/sentry/vendor/gson/stream/b;->NUMBER:Lio/sentry/vendor/gson/stream/b;
 
     .line 14
     .line 15
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->BEGIN_OBJECT:Lio/sentry/vendor/gson/stream/b;
+    sget-object v7, Lio/sentry/vendor/gson/stream/b;->BOOLEAN:Lio/sentry/vendor/gson/stream/b;
 
     .line 16
     .line 17
-    const/4 v2, 0x2
+    sget-object v8, Lio/sentry/vendor/gson/stream/b;->NULL:Lio/sentry/vendor/gson/stream/b;
 
     .line 18
-    aput-object v1, v0, v2
-
     .line 19
+    sget-object v9, Lio/sentry/vendor/gson/stream/b;->END_DOCUMENT:Lio/sentry/vendor/gson/stream/b;
+
     .line 20
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->END_OBJECT:Lio/sentry/vendor/gson/stream/b;
-
     .line 21
+    filled-new-array/range {v0 .. v9}, [Lio/sentry/vendor/gson/stream/b;
+
     .line 22
-    const/4 v2, 0x3
-
     .line 23
-    aput-object v1, v0, v2
-
     .line 24
+    move-result-object v0
+
     .line 25
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->NAME:Lio/sentry/vendor/gson/stream/b;
-
-    .line 26
-    .line 27
-    const/4 v2, 0x4
-
-    .line 28
-    aput-object v1, v0, v2
-
-    .line 29
-    .line 30
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->STRING:Lio/sentry/vendor/gson/stream/b;
-
-    .line 31
-    .line 32
-    const/4 v2, 0x5
-
-    .line 33
-    aput-object v1, v0, v2
-
-    .line 34
-    .line 35
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->NUMBER:Lio/sentry/vendor/gson/stream/b;
-
-    .line 36
-    .line 37
-    const/4 v2, 0x6
-
-    .line 38
-    aput-object v1, v0, v2
-
-    .line 39
-    .line 40
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->BOOLEAN:Lio/sentry/vendor/gson/stream/b;
-
-    .line 41
-    .line 42
-    const/4 v2, 0x7
-
-    .line 43
-    aput-object v1, v0, v2
-
-    .line 44
-    .line 45
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->NULL:Lio/sentry/vendor/gson/stream/b;
-
-    .line 46
-    .line 47
-    const/16 v2, 0x8
-
-    .line 48
-    .line 49
-    aput-object v1, v0, v2
-
-    .line 50
-    .line 51
-    sget-object v1, Lio/sentry/vendor/gson/stream/b;->END_DOCUMENT:Lio/sentry/vendor/gson/stream/b;
-
-    .line 52
-    .line 53
-    const/16 v2, 0x9
-
-    .line 54
-    .line 55
-    aput-object v1, v0, v2
-
-    .line 56
-    .line 57
     return-object v0
 .end method
 

@@ -1,6 +1,6 @@
 .class final Lokhttp3/Dns$Companion$DnsSystem;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/Dns;
@@ -57,7 +57,7 @@
 
 # virtual methods
 .method public lookup(Ljava/lang/String;)Ljava/util/List;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -81,40 +81,40 @@
     .line 5
     .line 6
     .line 7
-    move-result-object v0
+    move-result-object p0
 
     .line 8
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 9
     .line 10
     .line 11
-    invoke-static {v0}, Lor;->E0([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lkt;->P0([Ljava/lang/Object;)Ljava/util/List;
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 15
-    return-object p1
+    return-object p0
 
     .line 16
     :catch_0
-    move-exception v0
+    move-exception p0
 
     .line 17
-    new-instance v1, Ljava/net/UnknownHostException;
+    new-instance v0, Ljava/net/UnknownHostException;
 
     .line 18
     .line 19
-    const-string v2, "Broken system behaviour for dns lookup of "
+    const-string v1, "Broken system behaviour for dns lookup of "
 
     .line 20
     .line 21
-    invoke-virtual {v2, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 22
     .line 23
@@ -122,15 +122,15 @@
     move-result-object p1
 
     .line 25
-    invoke-direct {v1, p1}, Ljava/net/UnknownHostException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Ljava/net/UnknownHostException;-><init>(Ljava/lang/String;)V
 
     .line 26
     .line 27
     .line 28
-    invoke-virtual {v1, v0}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {v0, p0}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 29
     .line 30
     .line 31
-    throw v1
+    throw v0
 .end method

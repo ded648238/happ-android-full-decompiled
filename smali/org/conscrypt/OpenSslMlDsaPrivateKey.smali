@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSslMlDsaPrivateKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/security/PrivateKey;
@@ -76,11 +76,11 @@
 
     .line 26
     :cond_0
-    const-string p1, "Invalid key type"
+    const-string p0, "Invalid key type"
 
     .line 27
     .line 28
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 29
     .line 30
@@ -115,16 +115,16 @@
     return-void
 
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 36
-    new-instance p2, Ljava/lang/IllegalArgumentException;
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    const-string v0, "Invalid key"
+    const-string p2, "Invalid key"
 
-    invoke-direct {p2, v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, p2, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    throw p2
+    throw p1
 .end method
 
 .method private static encodeSeed([BLorg/conscrypt/MlDsaAlgorithm;)[B
@@ -222,7 +222,7 @@
 
     .line 42
     .line 43
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 44
     .line 45
@@ -318,7 +318,7 @@
 
     .line 36
     .line 37
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -601,23 +601,23 @@
 
     .line 42
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 43
-    new-instance v1, Ljava/io/IOException;
+    new-instance p1, Ljava/io/IOException;
 
     .line 44
     .line 45
-    invoke-direct {v1, v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, v0, p0}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 46
     .line 47
     .line 48
-    throw v1
+    throw p1
 
     .line 49
     :cond_0
-    invoke-static {v0}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {v0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -767,7 +767,7 @@
     .line 24
     .line 25
     .line 26
-    move-result-object v1
+    move-result-object p0
 
     .line 27
     invoke-virtual {p1}, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->getSeed()[B
@@ -778,15 +778,15 @@
     move-result-object p1
 
     .line 31
-    invoke-static {v1, p1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
+    invoke-static {p0, p1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
 
     .line 32
     .line 33
     .line 34
-    move-result p1
+    move-result p0
 
     .line 35
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 36
     .line 37
@@ -798,145 +798,145 @@
 .end method
 
 .method public getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "ML-DSA"
+    const-string p0, "ML-DSA"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_private_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_private_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 15
     .line 16
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 17
     .line 18
     .line 19
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 20
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "PKCS#8"
+    const-string p0, "PKCS#8"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getMlDsaAlgorithm()Lorg/conscrypt/MlDsaAlgorithm;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->algorithm:Lorg/conscrypt/MlDsaAlgorithm;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->algorithm:Lorg/conscrypt/MlDsaAlgorithm;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getOpenSSLKey()Lorg/conscrypt/OpenSSLKey;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSeed()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_get_private_seed(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_get_private_seed(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 15
     .line 16
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 17
     .line 18
     .line 19
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 20
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->getEncoded()[B
@@ -944,41 +944,41 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([B)I
 
     .line 6
     .line 7
     .line 8
-    move-result v0
+    move-result p0
 
     .line 9
-    return v0
+    return p0
 .end method
 
 .method public isDestroyed()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlDsaPrivateKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 4
     .line 5
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 6
-    return v0
+    return p0
 
     .line 7
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 8
-    return v0
+    return p0
 .end method

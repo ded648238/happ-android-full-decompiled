@@ -1,45 +1,24 @@
 package defpackage;
 
-import java.io.Serializable;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class tn4 {
+    public static final /* synthetic */ tn4[] X;
+    public static final /* synthetic */ oy1 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class tn4 implements Serializable {
-    public final Object Q;
-    public final Object R;
-
-    public tn4(Object obj, Object obj2) {
-        this.Q = obj;
-        this.R = obj2;
+    static {
+        tn4[] tn4VarArr = {new tn4("JANUARY", 0), new tn4("FEBRUARY", 1), new tn4("MARCH", 2), new tn4("APRIL", 3), new tn4("MAY", 4), new tn4("JUNE", 5), new tn4("JULY", 6), new tn4("AUGUST", 7), new tn4("SEPTEMBER", 8), new tn4("OCTOBER", 9), new tn4("NOVEMBER", 10), new tn4("DECEMBER", 11)};
+        X = tn4VarArr;
+        Y = new oy1(tn4VarArr);
     }
 
-    public final Object a() {
-        return this.Q;
+    public static tn4 valueOf(String str) {
+        return (tn4) Enum.valueOf(tn4.class, str);
     }
 
-    public final Object b() {
-        return this.R;
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof tn4)) {
-            return false;
-        }
-        tn4 tn4Var = (tn4) obj;
-        return rt2.f(this.Q, tn4Var.Q) && rt2.f(this.R, tn4Var.R);
-    }
-
-    public final int hashCode() {
-        Object obj = this.Q;
-        int iHashCode = (obj == null ? 0 : obj.hashCode()) * 31;
-        Object obj2 = this.R;
-        return iHashCode + (obj2 != null ? obj2.hashCode() : 0);
-    }
-
-    public final String toString() {
-        return "(" + this.Q + ", " + this.R + ')';
+    public static tn4[] values() {
+        return (tn4[]) X.clone();
     }
 }

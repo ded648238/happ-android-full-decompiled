@@ -1,42 +1,26 @@
-.class public abstract Lkr0;
+.class public interface abstract Lkr0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ll58;
 
 
-# static fields
-.field public static final a:Lli6;
+# virtual methods
+.method public abstract B0(Lby6;Lby6;)Lcb8;
+.end method
 
+.method public abstract H(Lbu3;)Lyx6;
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public abstract f()Lhs3;
+.end method
 
-    .line 1
-    new-instance v0, Lw;
+.method public abstract g(Lk96;)Lyx6;
+.end method
 
-    .line 2
-    .line 3
-    const/16 v1, 0x1d
+.method public abstract h(Ls92;)Lyx6;
+.end method
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Lw;-><init>(I)V
-
-    .line 6
-    .line 7
-    .line 8
-    new-instance v1, Lli6;
-
-    .line 9
-    .line 10
-    invoke-direct {v1, v0}, Lk65;-><init>(Lg72;)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v1, Lkr0;->a:Lli6;
-
-    .line 14
-    .line 15
-    return-void
+.method public abstract i(Ls92;)Lyx6;
 .end method

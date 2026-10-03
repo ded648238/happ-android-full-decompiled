@@ -1,374 +1,381 @@
 .class public final Lar;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Ljava/util/Iterator;
-.implements Lr73;
+
+# static fields
+.field public static final c:Lar;
+
+.field public static final d:Lar;
 
 
 # instance fields
-.field public Q:I
+.field public final a:Lf24;
 
-.field public R:I
-
-.field public S:Z
-
-.field public final synthetic T:I
-
-.field public final synthetic U:Ljava/lang/Object;
+.field public final b:J
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 0
-
-    .line 26
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 27
-    iput p1, p0, Lar;->Q:I
-
-    return-void
-.end method
-
-.method public constructor <init>(Lfr;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    iput p2, p0, Lar;->T:I
+    new-instance v0, Lar;
 
     .line 2
     .line 3
-    packed-switch p2, :pswitch_data_0
+    sget-wide v1, Ljo;->p:J
 
     .line 4
     .line 5
+    new-instance v3, Lau0;
+
     .line 6
-    iput-object p1, p0, Lar;->U:Ljava/lang/Object;
-
     .line 7
-    .line 8
-    iget p1, p1, Lla6;->S:I
+    invoke-direct {v3, v1, v2}, Lau0;-><init>(J)V
 
+    .line 8
     .line 9
     .line 10
-    invoke-direct {p0, p1}, Lar;-><init>(I)V
+    sget-wide v1, Ljo;->q:J
 
     .line 11
     .line 12
-    .line 13
-    return-void
+    new-instance v4, Lau0;
 
+    .line 13
     .line 14
-    :pswitch_0
-    iput-object p1, p0, Lar;->U:Ljava/lang/Object;
+    invoke-direct {v4, v1, v2}, Lau0;-><init>(J)V
 
     .line 15
     .line 16
-    iget p1, p1, Lla6;->S:I
-
     .line 17
-    .line 18
-    invoke-direct {p0, p1}, Lar;-><init>(I)V
+    filled-new-array {v3, v4}, [Lau0;
 
+    .line 18
     .line 19
     .line 20
+    move-result-object v1
+
     .line 21
-    return-void
+    invoke-static {v1}, Lut;->M([Ljava/lang/Object;)Ljava/util/List;
 
     .line 22
-    nop
-
     .line 23
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public constructor <init>(Llr;)V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    iput v0, p0, Lar;->T:I
-
-    .line 23
-    iput-object p1, p0, Lar;->U:Ljava/lang/Object;
-
     .line 24
-    iget p1, p1, Llr;->S:I
+    move-result-object v1
 
     .line 25
-    invoke-direct {p0, p1}, Lar;-><init>(I)V
+    invoke-static {v1}, Lzo8;->o(Ljava/util/List;)Lf24;
 
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    sget-wide v2, Ljo;->t:J
+
+    .line 30
+    .line 31
+    invoke-direct {v0, v1, v2, v3}, Lar;-><init>(Lf24;J)V
+
+    .line 32
+    .line 33
+    .line 34
+    sput-object v0, Lar;->c:Lar;
+
+    .line 35
+    .line 36
+    new-instance v0, Lar;
+
+    .line 37
+    .line 38
+    sget-wide v1, Ljo;->r:J
+
+    .line 39
+    .line 40
+    new-instance v3, Lau0;
+
+    .line 41
+    .line 42
+    invoke-direct {v3, v1, v2}, Lau0;-><init>(J)V
+
+    .line 43
+    .line 44
+    .line 45
+    sget-wide v1, Ljo;->s:J
+
+    .line 46
+    .line 47
+    new-instance v4, Lau0;
+
+    .line 48
+    .line 49
+    invoke-direct {v4, v1, v2}, Lau0;-><init>(J)V
+
+    .line 50
+    .line 51
+    .line 52
+    filled-new-array {v3, v4}, [Lau0;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v1
+
+    .line 56
+    invoke-static {v1}, Lut;->M([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v1
+
+    .line 60
+    invoke-static {v1}, Lzo8;->o(Ljava/util/List;)Lf24;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v1
+
+    .line 64
+    sget-wide v2, Ljo;->u:J
+
+    .line 65
+    .line 66
+    invoke-direct {v0, v1, v2, v3}, Lar;-><init>(Lf24;J)V
+
+    .line 67
+    .line 68
+    .line 69
+    sput-object v0, Lar;->d:Lar;
+
+    .line 70
+    .line 71
+    return-void
+.end method
+
+.method public constructor <init>(Lf24;J)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lar;->a:Lf24;
+
+    .line 5
+    .line 6
+    iput-wide p2, p0, Lar;->b:J
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final hasNext()Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
     .line 1
-    iget v0, p0, Lar;->R:I
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    iget v1, p0, Lar;->Q:I
+    goto :goto_1
 
     .line 4
+    :cond_0
+    instance-of v0, p1, Lar;
+
     .line 5
-    if-ge v0, v1, :cond_0
-
     .line 6
-    .line 7
-    const/4 v0, 0x1
+    if-nez v0, :cond_1
 
+    .line 7
     .line 8
-    return v0
+    goto :goto_0
 
     .line 9
-    :cond_0
-    const/4 v0, 0x0
+    :cond_1
+    check-cast p1, Lar;
 
     .line 10
-    return v0
-.end method
+    .line 11
+    iget-object v0, p0, Lar;->a:Lf24;
 
-.method public final next()Ljava/lang/Object;
-    .locals 3
+    .line 12
+    .line 13
+    iget-object v1, p1, Lar;->a:Lf24;
 
-    .line 1
-    invoke-virtual {p0}, Lar;->hasNext()Z
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Lf24;->equals(Ljava/lang/Object;)Z
 
-    .line 2
-    .line 3
-    .line 4
+    .line 16
+    .line 17
+    .line 18
     move-result v0
 
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget v0, p0, Lar;->R:I
-
-    .line 8
-    .line 9
-    iget v1, p0, Lar;->T:I
-
-    .line 10
-    .line 11
-    iget-object v2, p0, Lar;->U:Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    packed-switch v1, :pswitch_data_0
-
-    .line 14
-    .line 15
-    .line 16
-    check-cast v2, Llr;
-
-    .line 17
-    .line 18
-    iget-object v1, v2, Llr;->R:[Ljava/lang/Object;
-
     .line 19
-    .line 20
-    aget-object v0, v1, v0
+    if-nez v0, :cond_2
 
+    .line 20
     .line 21
-    .line 22
     goto :goto_0
+
+    .line 22
+    :cond_2
+    iget-wide v0, p0, Lar;->b:J
 
     .line 23
-    :pswitch_0
-    check-cast v2, Lfr;
-
     .line 24
-    .line 25
-    invoke-virtual {v2, v0}, Lla6;->j(I)Ljava/lang/Object;
+    iget-wide p0, p1, Lar;->b:J
 
+    .line 25
     .line 26
+    invoke-static {v0, v1, p0, p1}, Lau0;->c(JJ)Z
+
     .line 27
     .line 28
-    move-result-object v0
-
     .line 29
-    goto :goto_0
+    move-result p0
 
     .line 30
-    :pswitch_1
-    check-cast v2, Lfr;
+    if-nez p0, :cond_3
 
     .line 31
     .line 32
-    invoke-virtual {v2, v0}, Lla6;->g(I)Ljava/lang/Object;
+    :goto_0
+    const/4 p0, 0x0
 
     .line 33
+    return p0
+
     .line 34
+    :cond_3
+    :goto_1
+    const/4 p0, 0x1
+
     .line 35
-    move-result-object v0
-
-    .line 36
-    :goto_0
-    iget v1, p0, Lar;->R:I
-
-    .line 37
-    .line 38
-    const/4 v2, 0x1
-
-    .line 39
-    add-int/2addr v1, v2
-
-    .line 40
-    iput v1, p0, Lar;->R:I
-
-    .line 41
-    .line 42
-    iput-boolean v2, p0, Lar;->S:Z
-
-    .line 43
-    .line 44
-    return-object v0
-
-    .line 45
-    :cond_0
-    invoke-static {}, Lfn;->p()V
-
-    .line 46
-    .line 47
-    .line 48
-    const/4 v0, 0x0
-
-    .line 49
-    return-object v0
-
-    .line 50
-    nop
-
-    .line 51
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return p0
 .end method
 
-.method public final remove()V
+.method public final hashCode()I
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lar;->S:Z
+    iget-object v0, p0, Lar;->a:Lf24;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-virtual {v0}, Lf24;->hashCode()I
 
     .line 4
     .line 5
-    iget v0, p0, Lar;->R:I
-
     .line 6
+    move-result v0
+
     .line 7
-    add-int/lit8 v0, v0, -0x1
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 8
     .line 9
-    iput v0, p0, Lar;->R:I
+    sget v1, Lau0;->h:I
 
     .line 10
     .line 11
-    iget v1, p0, Lar;->T:I
+    iget-wide v1, p0, Lar;->b:J
 
     .line 12
     .line 13
-    iget-object v2, p0, Lar;->U:Ljava/lang/Object;
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
 
     .line 14
     .line 15
-    packed-switch v1, :pswitch_data_0
-
     .line 16
+    move-result p0
+
+    .line 17
+    add-int/2addr p0, v0
+
+    .line 18
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    iget-wide v0, p0, Lar;->b:J
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Lau0;->i(J)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 8
+    .line 9
+    const-string v2, "AppSnackbarColors(backgroundGradient="
+
+    .line 10
+    .line 11
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object p0, p0, Lar;->a:Lf24;
+
+    .line 15
+    .line 16
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 17
     .line 18
-    check-cast v2, Llr;
-
     .line 19
-    .line 20
-    invoke-virtual {v2, v0}, Llr;->a(I)Ljava/lang/Object;
+    const-string p0, ", divider="
 
+    .line 20
     .line 21
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 22
     .line 23
-    goto :goto_0
-
     .line 24
-    :pswitch_0
-    check-cast v2, Lfr;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 25
     .line 26
-    invoke-virtual {v2, v0}, Lla6;->h(I)Ljava/lang/Object;
-
     .line 27
+    const-string p0, ")"
+
     .line 28
     .line 29
-    goto :goto_0
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 30
-    :pswitch_1
-    check-cast v2, Lfr;
-
     .line 31
     .line 32
-    invoke-virtual {v2, v0}, Lla6;->h(I)Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 33
     .line 34
     .line 35
-    :goto_0
-    iget v0, p0, Lar;->Q:I
+    move-result-object p0
 
     .line 36
-    .line 37
-    add-int/lit8 v0, v0, -0x1
-
-    .line 38
-    .line 39
-    iput v0, p0, Lar;->Q:I
-
-    .line 40
-    .line 41
-    const/4 v0, 0x0
-
-    .line 42
-    iput-boolean v0, p0, Lar;->S:Z
-
-    .line 43
-    .line 44
-    return-void
-
-    .line 45
-    :cond_0
-    const-string v0, "Call next() before removing an element."
-
-    .line 46
-    .line 47
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
-
-    .line 48
-    .line 49
-    .line 50
-    return-void
-
-    .line 51
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object p0
 .end method

@@ -1,95 +1,29 @@
 .class public final Lsl7;
-.super Ltl7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Laf1;
+.implements Lb31;
 
 
 # instance fields
-.field public final a:Landroid/graphics/Matrix;
+.field public final synthetic X:Ltl7;
 
-.field public final b:Ljava/util/ArrayList;
+.field public final Y:Lnk0;
 
-.field public c:F
+.field public Z:Lnk0;
 
-.field public d:F
+.field public c0:Lff5;
 
-.field public e:F
+.field public final d0:Ldw1;
 
-.field public f:F
-
-.field public g:F
-
-.field public h:F
-
-.field public i:F
-
-.field public final j:Landroid/graphics/Matrix;
-
-.field public k:Ljava/lang/String;
+.field public final synthetic e0:Ltl7;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
-
-    .line 235
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 236
-    new-instance v0, Landroid/graphics/Matrix;
-
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
-
-    iput-object v0, p0, Lsl7;->a:Landroid/graphics/Matrix;
-
-    .line 237
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lsl7;->b:Ljava/util/ArrayList;
-
-    const/4 v0, 0x0
-
-    .line 238
-    iput v0, p0, Lsl7;->c:F
-
-    .line 239
-    iput v0, p0, Lsl7;->d:F
-
-    .line 240
-    iput v0, p0, Lsl7;->e:F
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    .line 241
-    iput v1, p0, Lsl7;->f:F
-
-    .line 242
-    iput v1, p0, Lsl7;->g:F
-
-    .line 243
-    iput v0, p0, Lsl7;->h:F
-
-    .line 244
-    iput v0, p0, Lsl7;->i:F
-
-    .line 245
-    new-instance v0, Landroid/graphics/Matrix;
-
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
-
-    iput-object v0, p0, Lsl7;->j:Landroid/graphics/Matrix;
-
-    const/4 v0, 0x0
-
-    .line 246
-    iput-object v0, p0, Lsl7;->k:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lsl7;Lfr;)V
-    .locals 7
+.method public constructor <init>(Ltl7;Lnk0;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -97,989 +31,983 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroid/graphics/Matrix;
+    iput-object p1, p0, Lsl7;->e0:Ltl7;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+    iput-object p1, p0, Lsl7;->X:Ltl7;
 
     .line 7
     .line 8
+    iput-object p2, p0, Lsl7;->Y:Lnk0;
+
     .line 9
-    iput-object v0, p0, Lsl7;->a:Landroid/graphics/Matrix;
-
     .line 10
+    sget-object p1, Lff5;->Y:Lff5;
+
     .line 11
-    new-instance v0, Ljava/util/ArrayList;
-
     .line 12
-    .line 13
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    iput-object p1, p0, Lsl7;->c0:Lff5;
 
+    .line 13
     .line 14
+    sget-object p1, Ldw1;->X:Ldw1;
+
     .line 15
     .line 16
-    iput-object v0, p0, Lsl7;->b:Ljava/util/ArrayList;
+    iput-object p1, p0, Lsl7;->d0:Ldw1;
 
     .line 17
     .line 18
-    const/4 v0, 0x0
-
-    .line 19
-    iput v0, p0, Lsl7;->c:F
-
-    .line 20
-    .line 21
-    iput v0, p0, Lsl7;->d:F
-
-    .line 22
-    .line 23
-    iput v0, p0, Lsl7;->e:F
-
-    .line 24
-    .line 25
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    .line 26
-    .line 27
-    iput v1, p0, Lsl7;->f:F
-
-    .line 28
-    .line 29
-    iput v1, p0, Lsl7;->g:F
-
-    .line 30
-    .line 31
-    iput v0, p0, Lsl7;->h:F
-
-    .line 32
-    .line 33
-    iput v0, p0, Lsl7;->i:F
-
-    .line 34
-    .line 35
-    new-instance v2, Landroid/graphics/Matrix;
-
-    .line 36
-    .line 37
-    invoke-direct {v2}, Landroid/graphics/Matrix;-><init>()V
-
-    .line 38
-    .line 39
-    .line 40
-    iput-object v2, p0, Lsl7;->j:Landroid/graphics/Matrix;
-
-    .line 41
-    .line 42
-    const/4 v3, 0x0
-
-    .line 43
-    iput-object v3, p0, Lsl7;->k:Ljava/lang/String;
-
-    .line 44
-    .line 45
-    iget v4, p1, Lsl7;->c:F
-
-    .line 46
-    .line 47
-    iput v4, p0, Lsl7;->c:F
-
-    .line 48
-    .line 49
-    iget v4, p1, Lsl7;->d:F
-
-    .line 50
-    .line 51
-    iput v4, p0, Lsl7;->d:F
-
-    .line 52
-    .line 53
-    iget v4, p1, Lsl7;->e:F
-
-    .line 54
-    .line 55
-    iput v4, p0, Lsl7;->e:F
-
-    .line 56
-    .line 57
-    iget v4, p1, Lsl7;->f:F
-
-    .line 58
-    .line 59
-    iput v4, p0, Lsl7;->f:F
-
-    .line 60
-    .line 61
-    iget v4, p1, Lsl7;->g:F
-
-    .line 62
-    .line 63
-    iput v4, p0, Lsl7;->g:F
-
-    .line 64
-    .line 65
-    iget v4, p1, Lsl7;->h:F
-
-    .line 66
-    .line 67
-    iput v4, p0, Lsl7;->h:F
-
-    .line 68
-    .line 69
-    iget v4, p1, Lsl7;->i:F
-
-    .line 70
-    .line 71
-    iput v4, p0, Lsl7;->i:F
-
-    .line 72
-    .line 73
-    iget-object v4, p1, Lsl7;->k:Ljava/lang/String;
-
-    .line 74
-    .line 75
-    iput-object v4, p0, Lsl7;->k:Ljava/lang/String;
-
-    .line 76
-    .line 77
-    if-eqz v4, :cond_0
-
-    .line 78
-    .line 79
-    invoke-virtual {p2, v4, p0}, Lla6;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 80
-    .line 81
-    .line 82
-    :cond_0
-    iget-object v4, p1, Lsl7;->j:Landroid/graphics/Matrix;
-
-    .line 83
-    .line 84
-    invoke-virtual {v2, v4}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
-
-    .line 85
-    .line 86
-    .line 87
-    iget-object p1, p1, Lsl7;->b:Ljava/util/ArrayList;
-
-    .line 88
-    .line 89
-    const/4 v2, 0x0
-
-    .line 90
-    :goto_0
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
-
-    .line 91
-    .line 92
-    .line 93
-    move-result v4
-
-    .line 94
-    if-ge v2, v4, :cond_5
-
-    .line 95
-    .line 96
-    invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 97
-    .line 98
-    .line 99
-    move-result-object v4
-
-    .line 100
-    instance-of v5, v4, Lsl7;
-
-    .line 101
-    .line 102
-    if-eqz v5, :cond_1
-
-    .line 103
-    .line 104
-    check-cast v4, Lsl7;
-
-    .line 105
-    .line 106
-    iget-object v5, p0, Lsl7;->b:Ljava/util/ArrayList;
-
-    .line 107
-    .line 108
-    new-instance v6, Lsl7;
-
-    .line 109
-    .line 110
-    invoke-direct {v6, v4, p2}, Lsl7;-><init>(Lsl7;Lfr;)V
-
-    .line 111
-    .line 112
-    .line 113
-    invoke-virtual {v5, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 114
-    .line 115
-    .line 116
-    goto :goto_2
-
-    .line 117
-    :cond_1
-    instance-of v5, v4, Lrl7;
-
-    .line 118
-    .line 119
-    if-eqz v5, :cond_2
-
-    .line 120
-    .line 121
-    new-instance v5, Lrl7;
-
-    .line 122
-    .line 123
-    check-cast v4, Lrl7;
-
-    .line 124
-    .line 125
-    invoke-direct {v5, v4}, Lul7;-><init>(Lul7;)V
-
-    .line 126
-    .line 127
-    .line 128
-    iput v0, v5, Lrl7;->e:F
-
-    .line 129
-    .line 130
-    iput v1, v5, Lrl7;->g:F
-
-    .line 131
-    .line 132
-    iput v1, v5, Lrl7;->h:F
-
-    .line 133
-    .line 134
-    iput v0, v5, Lrl7;->i:F
-
-    .line 135
-    .line 136
-    iput v1, v5, Lrl7;->j:F
-
-    .line 137
-    .line 138
-    iput v0, v5, Lrl7;->k:F
-
-    .line 139
-    .line 140
-    sget-object v6, Landroid/graphics/Paint$Cap;->BUTT:Landroid/graphics/Paint$Cap;
-
-    .line 141
-    .line 142
-    iput-object v6, v5, Lrl7;->l:Landroid/graphics/Paint$Cap;
-
-    .line 143
-    .line 144
-    sget-object v6, Landroid/graphics/Paint$Join;->MITER:Landroid/graphics/Paint$Join;
-
-    .line 145
-    .line 146
-    iput-object v6, v5, Lrl7;->m:Landroid/graphics/Paint$Join;
-
-    .line 147
-    .line 148
-    const/high16 v6, 0x40800000    # 4.0f
-
-    .line 149
-    .line 150
-    iput v6, v5, Lrl7;->n:F
-
-    .line 151
-    .line 152
-    iget-object v6, v4, Lrl7;->d:Ltq;
-
-    .line 153
-    .line 154
-    iput-object v6, v5, Lrl7;->d:Ltq;
-
-    .line 155
-    .line 156
-    iget v6, v4, Lrl7;->e:F
-
-    .line 157
-    .line 158
-    iput v6, v5, Lrl7;->e:F
-
-    .line 159
-    .line 160
-    iget v6, v4, Lrl7;->g:F
-
-    .line 161
-    .line 162
-    iput v6, v5, Lrl7;->g:F
-
-    .line 163
-    .line 164
-    iget-object v6, v4, Lrl7;->f:Ltq;
-
-    .line 165
-    .line 166
-    iput-object v6, v5, Lrl7;->f:Ltq;
-
-    .line 167
-    .line 168
-    iget v6, v4, Lul7;->c:I
-
-    .line 169
-    .line 170
-    iput v6, v5, Lul7;->c:I
-
-    .line 171
-    .line 172
-    iget v6, v4, Lrl7;->h:F
-
-    .line 173
-    .line 174
-    iput v6, v5, Lrl7;->h:F
-
-    .line 175
-    .line 176
-    iget v6, v4, Lrl7;->i:F
-
-    .line 177
-    .line 178
-    iput v6, v5, Lrl7;->i:F
-
-    .line 179
-    .line 180
-    iget v6, v4, Lrl7;->j:F
-
-    .line 181
-    .line 182
-    iput v6, v5, Lrl7;->j:F
-
-    .line 183
-    .line 184
-    iget v6, v4, Lrl7;->k:F
-
-    .line 185
-    .line 186
-    iput v6, v5, Lrl7;->k:F
-
-    .line 187
-    .line 188
-    iget-object v6, v4, Lrl7;->l:Landroid/graphics/Paint$Cap;
-
-    .line 189
-    .line 190
-    iput-object v6, v5, Lrl7;->l:Landroid/graphics/Paint$Cap;
-
-    .line 191
-    .line 192
-    iget-object v6, v4, Lrl7;->m:Landroid/graphics/Paint$Join;
-
-    .line 193
-    .line 194
-    iput-object v6, v5, Lrl7;->m:Landroid/graphics/Paint$Join;
-
-    .line 195
-    .line 196
-    iget v4, v4, Lrl7;->n:F
-
-    .line 197
-    .line 198
-    iput v4, v5, Lrl7;->n:F
-
-    .line 199
-    .line 200
-    goto :goto_1
-
-    .line 201
-    :cond_2
-    instance-of v5, v4, Lql7;
-
-    .line 202
-    .line 203
-    if-eqz v5, :cond_4
-
-    .line 204
-    .line 205
-    new-instance v5, Lql7;
-
-    .line 206
-    .line 207
-    check-cast v4, Lql7;
-
-    .line 208
-    .line 209
-    invoke-direct {v5, v4}, Lul7;-><init>(Lul7;)V
-
-    .line 210
-    .line 211
-    .line 212
-    :goto_1
-    iget-object v4, p0, Lsl7;->b:Ljava/util/ArrayList;
-
-    .line 213
-    .line 214
-    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 215
-    .line 216
-    .line 217
-    iget-object v4, v5, Lul7;->b:Ljava/lang/String;
-
-    .line 218
-    .line 219
-    if-eqz v4, :cond_3
-
-    .line 220
-    .line 221
-    invoke-virtual {p2, v4, v5}, Lla6;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 222
-    .line 223
-    .line 224
-    :cond_3
-    :goto_2
-    add-int/lit8 v2, v2, 0x1
-
-    .line 225
-    .line 226
-    goto/16 :goto_0
-
-    .line 227
-    .line 228
-    :cond_4
-    const-string p1, "Unknown object in the tree!"
-
-    .line 229
-    .line 230
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
-
-    .line 231
-    .line 232
-    .line 233
-    throw v3
-
-    .line 234
-    :cond_5
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Z
-    .locals 4
+.method public final B0(J)J
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    iget-object p0, p0, Lsl7;->X:Ltl7;
 
     .line 2
-    const/4 v1, 0x0
-
     .line 3
-    :goto_0
-    iget-object v2, p0, Lsl7;->b:Ljava/util/ArrayList;
+    invoke-interface {p0, p1, p2}, Laf1;->B0(J)J
 
     .line 4
     .line 5
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
     .line 6
+    move-result-wide p0
+
     .line 7
-    .line 8
-    move-result v3
-
-    .line 9
-    if-ge v1, v3, :cond_1
-
-    .line 10
-    .line 11
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v2
-
-    .line 15
-    check-cast v2, Ltl7;
-
-    .line 16
-    .line 17
-    invoke-virtual {v2}, Ltl7;->a()Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v2
-
-    .line 21
-    if-eqz v2, :cond_0
-
-    .line 22
-    .line 23
-    const/4 v0, 0x1
-
-    .line 24
-    return v0
-
-    .line 25
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    .line 26
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :cond_1
-    return v0
+    return-wide p0
 .end method
 
-.method public final b([I)Z
-    .locals 4
+.method public final D0(J)F
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    iget-object p0, p0, Lsl7;->X:Ltl7;
 
     .line 2
-    const/4 v1, 0x0
-
     .line 3
-    :goto_0
-    iget-object v2, p0, Lsl7;->b:Ljava/util/ArrayList;
+    invoke-interface {p0, p1, p2}, Laf1;->D0(J)F
 
     .line 4
     .line 5
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
     .line 6
+    move-result p0
+
     .line 7
-    .line 8
-    move-result v3
-
-    .line 9
-    if-ge v0, v3, :cond_0
-
-    .line 10
-    .line 11
-    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v2
-
-    .line 15
-    check-cast v2, Ltl7;
-
-    .line 16
-    .line 17
-    invoke-virtual {v2, p1}, Ltl7;->b([I)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v2
-
-    .line 21
-    or-int/2addr v1, v2
-
-    .line 22
-    add-int/lit8 v0, v0, 0x1
-
-    .line 23
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_0
-    return v1
+    return p0
 .end method
 
-.method public final c()V
-    .locals 4
+.method public final O(F)J
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsl7;->j:Landroid/graphics/Matrix;
+    iget-object p0, p0, Lsl7;->X:Ltl7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/graphics/Matrix;->reset()V
+    invoke-interface {p0, p1}, Laf1;->O(F)J
 
     .line 4
     .line 5
     .line 6
-    iget v1, p0, Lsl7;->d:F
+    move-result-wide p0
 
     .line 7
+    return-wide p0
+.end method
+
+.method public final S(I)F
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsl7;->X:Ltl7;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1}, Laf1;->S(I)F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final W(F)F
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsl7;->X:Ltl7;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ltl7;->getDensity()F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    div-float/2addr p1, p0
+
     .line 8
-    neg-float v1, v1
+    return p1
+.end method
+
+.method public final Z()F
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsl7;->X:Ltl7;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ltl7;->Z()F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final a(Lff5;Lg00;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lnk0;
+
+    .line 2
+    .line 3
+    invoke-static {p2}, Lh71;->C(Lb31;)Lb31;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p2
+
+    .line 7
+    const/4 v1, 0x1
+
+    .line 8
+    invoke-direct {v0, v1, p2}, Lnk0;-><init>(ILb31;)V
 
     .line 9
-    iget v2, p0, Lsl7;->e:F
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Lnk0;->u()V
+
+    .line 12
+    .line 13
+    .line 14
+    iput-object p1, p0, Lsl7;->c0:Lff5;
+
+    .line 15
+    .line 16
+    iput-object v0, p0, Lsl7;->Z:Lnk0;
+
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Lnk0;->r()Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+.end method
+
+.method public final b()J
+    .locals 9
+
+    .line 1
+    iget-object p0, p0, Lsl7;->e0:Ltl7;
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Lut;->e0(Lie1;)Landroidx/compose/ui/node/LayoutNode;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iget-object v0, v0, Landroidx/compose/ui/node/LayoutNode;->y0:Lqi8;
+
+    .line 8
+    .line 9
+    invoke-interface {v0}, Lqi8;->d()J
 
     .line 10
     .line 11
-    neg-float v2, v2
-
     .line 12
-    invoke-virtual {v0, v1, v2}, Landroid/graphics/Matrix;->postTranslate(FF)Z
+    move-result-wide v0
 
     .line 13
+    invoke-interface {p0, v0, v1}, Laf1;->B0(J)J
+
     .line 14
     .line 15
-    iget v1, p0, Lsl7;->f:F
-
     .line 16
+    move-result-wide v0
+
     .line 17
-    iget v2, p0, Lsl7;->g:F
+    iget-wide v2, p0, Ltl7;->w0:J
 
     .line 18
     .line 19
-    invoke-virtual {v0, v1, v2}, Landroid/graphics/Matrix;->postScale(FF)Z
+    const/16 p0, 0x20
 
     .line 20
     .line 21
-    .line 22
-    iget v1, p0, Lsl7;->c:F
+    shr-long v4, v0, p0
 
+    .line 22
     .line 23
+    long-to-int v4, v4
+
     .line 24
-    const/4 v2, 0x0
+    invoke-static {v4}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 25
-    invoke-virtual {v0, v1, v2, v2}, Landroid/graphics/Matrix;->postRotate(FFF)Z
-
     .line 26
     .line 27
+    move-result v4
+
     .line 28
-    iget v1, p0, Lsl7;->h:F
+    shr-long v5, v2, p0
 
     .line 29
     .line 30
-    iget v2, p0, Lsl7;->d:F
+    long-to-int v5, v5
 
     .line 31
+    int-to-float v5, v5
+
     .line 32
-    add-float/2addr v1, v2
+    sub-float/2addr v4, v5
 
     .line 33
-    iget v2, p0, Lsl7;->i:F
+    const/4 v5, 0x0
 
     .line 34
-    .line 35
-    iget v3, p0, Lsl7;->e:F
+    invoke-static {v5, v4}, Ljava/lang/Math;->max(FF)F
 
+    .line 35
     .line 36
     .line 37
-    add-float/2addr v2, v3
+    move-result v4
 
     .line 38
-    invoke-virtual {v0, v1, v2}, Landroid/graphics/Matrix;->postTranslate(FF)Z
+    const/high16 v6, 0x40000000    # 2.0f
 
     .line 39
     .line 40
+    div-float/2addr v4, v6
+
     .line 41
-    return-void
+    const-wide v7, 0xffffffffL
+
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    and-long/2addr v0, v7
+
+    .line 47
+    long-to-int v0, v0
+
+    .line 48
+    invoke-static {v0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v0
+
+    .line 52
+    and-long v1, v2, v7
+
+    .line 53
+    .line 54
+    long-to-int v1, v1
+
+    .line 55
+    int-to-float v1, v1
+
+    .line 56
+    sub-float/2addr v0, v1
+
+    .line 57
+    invoke-static {v5, v0}, Ljava/lang/Math;->max(FF)F
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v0
+
+    .line 61
+    div-float/2addr v0, v6
+
+    .line 62
+    invoke-static {v4}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v1
+
+    .line 66
+    int-to-long v1, v1
+
+    .line 67
+    invoke-static {v0}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v0
+
+    .line 71
+    int-to-long v3, v0
+
+    .line 72
+    shl-long v0, v1, p0
+
+    .line 73
+    .line 74
+    and-long v2, v3, v7
+
+    .line 75
+    .line 76
+    or-long/2addr v0, v2
+
+    .line 77
+    return-wide v0
 .end method
 
-.method public getGroupName()Ljava/lang/String;
-    .locals 1
+.method public final c()Lqi8;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsl7;->k:Ljava/lang/String;
+    iget-object p0, p0, Lsl7;->e0:Ltl7;
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public getLocalMatrix()Landroid/graphics/Matrix;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsl7;->j:Landroid/graphics/Matrix;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public getPivotX()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lsl7;->d:F
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public getPivotY()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lsl7;->e:F
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public getRotation()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lsl7;->c:F
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public getScaleX()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lsl7;->f:F
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public getScaleY()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lsl7;->g:F
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public getTranslateX()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lsl7;->h:F
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public getTranslateY()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lsl7;->i:F
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public setPivotX(F)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lsl7;->d:F
-
-    .line 2
-    .line 3
-    cmpl-float v0, p1, v0
+    invoke-static {p0}, Lut;->e0(Lie1;)Landroidx/compose/ui/node/LayoutNode;
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    move-result-object p0
+
     .line 7
-    iput p1, p0, Lsl7;->d:F
+    iget-object p0, p0, Landroidx/compose/ui/node/LayoutNode;->y0:Lqi8;
 
     .line 8
     .line 9
-    invoke-virtual {p0}, Lsl7;->c()V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    return-void
+    return-object p0
 .end method
 
-.method public setPivotY(F)V
-    .locals 1
+.method public final d(JLxi2;Lg00;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget v0, p0, Lsl7;->e:F
+    instance-of v0, p4, Lql7;
 
     .line 2
     .line 3
-    cmpl-float v0, p1, v0
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
+    move-object v0, p4
 
     .line 6
+    check-cast v0, Lql7;
+
     .line 7
-    iput p1, p0, Lsl7;->e:F
-
     .line 8
-    .line 9
-    invoke-virtual {p0}, Lsl7;->c()V
+    iget v1, v0, Lql7;->f0:I
 
+    .line 9
     .line 10
+    const/high16 v2, -0x80000000
+
     .line 11
     .line 12
+    and-int v3, v1, v2
+
+    .line 13
+    .line 14
+    if-eqz v3, :cond_0
+
+    .line 15
+    .line 16
+    sub-int/2addr v1, v2
+
+    .line 17
+    iput v1, v0, Lql7;->f0:I
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
     :cond_0
-    return-void
+    new-instance v0, Lql7;
+
+    .line 21
+    .line 22
+    invoke-direct {v0, p0, p4}, Lql7;-><init>(Lsl7;Lg00;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    iget-object p4, v0, Lql7;->d0:Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    iget v1, v0, Lql7;->f0:I
+
+    .line 28
+    .line 29
+    const/4 v2, 0x1
+
+    .line 30
+    if-eqz v1, :cond_2
+
+    .line 31
+    .line 32
+    if-ne v1, v2, :cond_1
+
+    .line 33
+    .line 34
+    iget-object p0, v0, Lql7;->c0:Lk47;
+
+    .line 35
+    .line 36
+    :try_start_0
+    invoke-static {p4}, Lq48;->f0(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 37
+    .line 38
+    .line 39
+    goto :goto_1
+
+    .line 40
+    :catchall_0
+    move-exception v0
+
+    .line 41
+    move-object p1, v0
+
+    .line 42
+    goto :goto_2
+
+    .line 43
+    :cond_1
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 44
+    .line 45
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    const/4 p0, 0x0
+
+    .line 49
+    return-object p0
+
+    .line 50
+    :cond_2
+    invoke-static {p4}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 51
+    .line 52
+    .line 53
+    const-wide/16 v3, 0x0
+
+    .line 54
+    .line 55
+    cmp-long p4, p1, v3
+
+    .line 56
+    .line 57
+    if-gtz p4, :cond_3
+
+    .line 58
+    .line 59
+    iget-object p4, p0, Lsl7;->Z:Lnk0;
+
+    .line 60
+    .line 61
+    if-eqz p4, :cond_3
+
+    .line 62
+    .line 63
+    new-instance v1, Lgf5;
+
+    .line 64
+    .line 65
+    invoke-direct {v1, p1, p2}, Lgf5;-><init>(J)V
+
+    .line 66
+    .line 67
+    .line 68
+    new-instance v3, Lc86;
+
+    .line 69
+    .line 70
+    invoke-direct {v3, v1}, Lc86;-><init>(Ljava/lang/Throwable;)V
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-virtual {p4, v3}, Lnk0;->f(Ljava/lang/Object;)V
+
+    .line 74
+    .line 75
+    .line 76
+    :cond_3
+    iget-object p4, p0, Lsl7;->e0:Ltl7;
+
+    .line 77
+    .line 78
+    invoke-virtual {p4}, Lcn4;->I0()Li41;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object p4
+
+    .line 82
+    new-instance v3, Lfd0;
+
+    .line 83
+    .line 84
+    const/4 v8, 0x3
+
+    .line 85
+    const/4 v7, 0x0
+
+    .line 86
+    move-object v6, p0
+
+    .line 87
+    move-wide v4, p1
+
+    .line 88
+    invoke-direct/range {v3 .. v8}, Lfd0;-><init>(JLjava/lang/Object;Lb31;I)V
+
+    .line 89
+    .line 90
+    .line 91
+    const/4 p0, 0x3
+
+    .line 92
+    invoke-static {p4, v7, v7, v3, p0}, Ld01;->G(Li41;Lz31;Ll41;Lxi2;I)Lk47;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object p0
+
+    .line 96
+    :try_start_1
+    iput-object p0, v0, Lql7;->c0:Lk47;
+
+    .line 97
+    .line 98
+    iput v2, v0, Lql7;->f0:I
+
+    .line 99
+    .line 100
+    invoke-interface {p3, v6, v0}, Lxi2;->H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object p4
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 104
+    sget-object p1, Lj41;->X:Lj41;
+
+    .line 105
+    .line 106
+    if-ne p4, p1, :cond_4
+
+    .line 107
+    .line 108
+    return-object p1
+
+    .line 109
+    :cond_4
+    :goto_1
+    sget-object p1, Lhk0;->X:Lhk0;
+
+    .line 110
+    .line 111
+    invoke-interface {p0, p1}, Lfe3;->m(Ljava/util/concurrent/CancellationException;)V
+
+    .line 112
+    .line 113
+    .line 114
+    return-object p4
+
+    .line 115
+    :goto_2
+    sget-object p2, Lhk0;->X:Lhk0;
+
+    .line 116
+    .line 117
+    invoke-interface {p0, p2}, Lfe3;->m(Ljava/util/concurrent/CancellationException;)V
+
+    .line 118
+    .line 119
+    .line 120
+    throw p1
 .end method
 
-.method public setRotation(F)V
-    .locals 1
+.method public final f(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    iget v0, p0, Lsl7;->c:F
+    iget-object v0, p0, Lsl7;->e0:Ltl7;
 
     .line 2
     .line 3
-    cmpl-float v0, p1, v0
+    iget-object v1, v0, Ltl7;->t0:Lwq4;
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
+    monitor-enter v1
 
     .line 6
+    :try_start_0
+    iget-object v0, v0, Ltl7;->s0:Lwq4;
+
     .line 7
-    iput p1, p0, Lsl7;->c:F
-
     .line 8
-    .line 9
-    invoke-virtual {p0}, Lsl7;->c()V
+    invoke-virtual {v0, p0}, Lwq4;->j(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 9
     .line 10
     .line 11
+    monitor-exit v1
+
     .line 12
-    :cond_0
+    iget-object p0, p0, Lsl7;->Y:Lnk0;
+
+    .line 13
+    .line 14
+    invoke-virtual {p0, p1}, Lnk0;->f(Ljava/lang/Object;)V
+
+    .line 15
+    .line 16
+    .line 17
     return-void
+
+    .line 18
+    :catchall_0
+    move-exception p0
+
+    .line 19
+    monitor-exit v1
+
+    .line 20
+    throw p0
 .end method
 
-.method public setScaleX(F)V
-    .locals 1
+.method public final g(JLxi2;Lg00;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget v0, p0, Lsl7;->f:F
+    instance-of v0, p4, Lrl7;
 
     .line 2
     .line 3
-    cmpl-float v0, p1, v0
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
+    move-object v0, p4
 
     .line 6
+    check-cast v0, Lrl7;
+
     .line 7
-    iput p1, p0, Lsl7;->f:F
-
     .line 8
-    .line 9
-    invoke-virtual {p0}, Lsl7;->c()V
+    iget v1, v0, Lrl7;->e0:I
 
+    .line 9
     .line 10
+    const/high16 v2, -0x80000000
+
     .line 11
     .line 12
+    and-int v3, v1, v2
+
+    .line 13
+    .line 14
+    if-eqz v3, :cond_0
+
+    .line 15
+    .line 16
+    sub-int/2addr v1, v2
+
+    .line 17
+    iput v1, v0, Lrl7;->e0:I
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
     :cond_0
-    return-void
+    new-instance v0, Lrl7;
+
+    .line 21
+    .line 22
+    invoke-direct {v0, p0, p4}, Lrl7;-><init>(Lsl7;Lg00;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    iget-object p4, v0, Lrl7;->c0:Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    iget v1, v0, Lrl7;->e0:I
+
+    .line 28
+    .line 29
+    const/4 v2, 0x0
+
+    .line 30
+    const/4 v3, 0x1
+
+    .line 31
+    if-eqz v1, :cond_2
+
+    .line 32
+    .line 33
+    if-ne v1, v3, :cond_1
+
+    .line 34
+    .line 35
+    :try_start_0
+    invoke-static {p4}, Lq48;->f0(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Lgf5; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 36
+    .line 37
+    .line 38
+    return-object p4
+
+    .line 39
+    :cond_1
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 40
+    .line 41
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 42
+    .line 43
+    .line 44
+    return-object v2
+
+    .line 45
+    :cond_2
+    invoke-static {p4}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 46
+    .line 47
+    .line 48
+    :try_start_1
+    iput v3, v0, Lrl7;->e0:I
+
+    .line 49
+    .line 50
+    invoke-virtual {p0, p1, p2, p3, v0}, Lsl7;->d(JLxi2;Lg00;)Ljava/lang/Object;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p0
+    :try_end_1
+    .catch Lgf5; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 54
+    sget-object p1, Lj41;->X:Lj41;
+
+    .line 55
+    .line 56
+    if-ne p0, p1, :cond_3
+
+    .line 57
+    .line 58
+    return-object p1
+
+    .line 59
+    :cond_3
+    return-object p0
+
+    .line 60
+    :catch_0
+    return-object v2
 .end method
 
-.method public setScaleY(F)V
-    .locals 1
+.method public final g0(F)F
+    .locals 0
 
     .line 1
-    iget v0, p0, Lsl7;->g:F
+    iget-object p0, p0, Lsl7;->X:Ltl7;
 
     .line 2
     .line 3
-    cmpl-float v0, p1, v0
+    invoke-virtual {p0}, Ltl7;->getDensity()F
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    move-result p0
+
     .line 7
-    iput p1, p0, Lsl7;->g:F
+    mul-float/2addr p0, p1
 
     .line 8
-    .line 9
-    invoke-virtual {p0}, Lsl7;->c()V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    return-void
+    return p0
 .end method
 
-.method public setTranslateX(F)V
-    .locals 1
+.method public final getDensity()F
+    .locals 0
 
     .line 1
-    iget v0, p0, Lsl7;->h:F
+    iget-object p0, p0, Lsl7;->X:Ltl7;
 
     .line 2
     .line 3
-    cmpl-float v0, p1, v0
+    invoke-virtual {p0}, Ltl7;->getDensity()F
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    move-result p0
+
     .line 7
-    iput p1, p0, Lsl7;->h:F
-
-    .line 8
-    .line 9
-    invoke-virtual {p0}, Lsl7;->c()V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    return-void
+    return p0
 .end method
 
-.method public setTranslateY(F)V
-    .locals 1
+.method public final q(F)J
+    .locals 0
 
     .line 1
-    iget v0, p0, Lsl7;->i:F
+    iget-object p0, p0, Lsl7;->X:Ltl7;
 
     .line 2
     .line 3
-    cmpl-float v0, p1, v0
+    invoke-interface {p0, p1}, Laf1;->q(F)J
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    move-result-wide p0
+
     .line 7
-    iput p1, p0, Lsl7;->i:F
+    return-wide p0
+.end method
 
-    .line 8
-    .line 9
-    invoke-virtual {p0}, Lsl7;->c()V
+.method public final r(J)J
+    .locals 0
 
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    return-void
+    .line 1
+    iget-object p0, p0, Lsl7;->X:Ltl7;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1, p2}, Laf1;->r(J)J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide p0
+
+    .line 7
+    return-wide p0
+.end method
+
+.method public final s()Lz31;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsl7;->d0:Ldw1;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final v0(F)I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsl7;->X:Ltl7;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1}, Laf1;->v0(F)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final z(J)F
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsl7;->X:Ltl7;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1, p2}, Laf1;->z(J)F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
 .end method

@@ -1,24 +1,10 @@
-.class public abstract Lba2;
-.super Lr03;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lba2;
+.super Lcj5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final X:I
-
-
-# instance fields
-.field public final R:Lzf4;
-
-.field public S:I
-
-.field public final T:Llj2;
-
-.field public U:Z
-
-.field public V:Lkx6;
-
-.field public W:Z
+.field public static final c:Lba2;
 
 
 # direct methods
@@ -26,359 +12,215 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lq03;->Y:Lq03;
+    new-instance v0, Lba2;
 
     .line 2
     .line 3
-    iget v0, v0, Lq03;->R:I
+    sget-object v1, Lea2;->a:Lea2;
 
     .line 4
     .line 5
-    sget-object v1, Lq03;->X:Lq03;
+    invoke-direct {v0, v1}, Lcj5;-><init>(Lvo3;)V
 
     .line 6
     .line 7
-    iget v1, v1, Lq03;->R:I
-
     .line 8
-    .line 9
-    or-int/2addr v0, v1
-
-    .line 10
-    sget-object v1, Lq03;->a0:Lq03;
-
-    .line 11
-    .line 12
-    iget v1, v1, Lq03;->R:I
-
-    .line 13
-    .line 14
-    or-int/2addr v0, v1
-
-    .line 15
-    sput v0, Lba2;->X:I
-
-    .line 16
-    .line 17
-    return-void
-.end method
-
-.method public constructor <init>(ILlj2;Lzf4;)V
-    .locals 2
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p1, p0, Lba2;->S:I
-
-    .line 5
-    .line 6
-    iput-object p3, p0, Lba2;->R:Lzf4;
-
-    .line 7
-    .line 8
-    iput-object p2, p0, Lba2;->T:Llj2;
+    sput-object v0, Lba2;->c:Lba2;
 
     .line 9
     .line 10
-    sget-object p2, Lq03;->a0:Lq03;
-
-    .line 11
-    .line 12
-    invoke-virtual {p2, p1}, Lq03;->a(I)Z
-
-    .line 13
-    .line 14
-    .line 15
-    move-result p2
-
-    .line 16
-    const/4 p3, 0x0
-
-    .line 17
-    if-eqz p2, :cond_0
-
-    .line 18
-    .line 19
-    new-instance p2, Lfv7;
-
-    .line 20
-    .line 21
-    invoke-direct {p2, p0}, Lfv7;-><init>(Lba2;)V
-
-    .line 22
-    .line 23
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_0
-    move-object p2, p3
-
-    .line 26
-    :goto_0
-    new-instance v0, Lkx6;
-
-    .line 27
-    .line 28
-    const/4 v1, 0x0
-
-    .line 29
-    invoke-direct {v0, v1, p3, p2}, Lkx6;-><init>(ILkx6;Lfv7;)V
-
-    .line 30
-    .line 31
-    .line 32
-    iput-object v0, p0, Lba2;->V:Lkx6;
-
-    .line 33
-    .line 34
-    sget-object p2, Lq03;->Y:Lq03;
-
-    .line 35
-    .line 36
-    invoke-virtual {p2, p1}, Lq03;->a(I)Z
-
-    .line 37
-    .line 38
-    .line 39
-    move-result p1
-
-    .line 40
-    iput-boolean p1, p0, Lba2;->U:Z
-
-    .line 41
-    .line 42
     return-void
 .end method
 
 
 # virtual methods
-.method public final Q0(Ljava/math/BigDecimal;)Ljava/lang/String;
-    .locals 4
+.method public final h(Ljava/lang/Object;)I
+    .locals 0
 
     .line 1
-    const/16 v0, 0x270f
+    check-cast p1, [F
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v1
+    array-length p0, p1
 
     .line 7
-    sget-object v2, Lq03;->Z:Lq03;
+    return p0
+.end method
 
+.method public final j(Ldy0;ILjava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    check-cast p3, Laa2;
+
+    .line 2
+    .line 3
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p0, p0, Lcj5;->b:Lbj5;
+
+    .line 7
     .line 8
-    .line 9
-    iget v3, p0, Lba2;->S:I
+    invoke-interface {p1, p0, p2}, Ldy0;->h(Lbj5;I)F
 
+    .line 9
     .line 10
     .line 11
-    invoke-virtual {v2, v3}, Lq03;->a(I)Z
+    move-result p0
 
     .line 12
+    invoke-static {p3}, Laj5;->c(Laj5;)V
+
     .line 13
     .line 14
-    move-result v2
-
     .line 15
-    if-eqz v2, :cond_1
+    iget-object p1, p3, Laa2;->a:[F
 
     .line 16
     .line 17
-    invoke-virtual {p1}, Ljava/math/BigDecimal;->scale()I
+    iget p2, p3, Laa2;->b:I
 
     .line 18
     .line 19
-    .line 20
-    move-result v2
+    add-int/lit8 v0, p2, 0x1
 
+    .line 20
     .line 21
-    const/16 v3, -0x270f
+    iput v0, p3, Laa2;->b:I
 
     .line 22
     .line 23
-    if-lt v2, v3, :cond_0
+    aput p0, p1, p2
 
     .line 24
     .line 25
-    if-gt v2, v0, :cond_0
-
-    .line 26
-    .line 27
-    invoke-virtual {p1}, Ljava/math/BigDecimal;->toPlainString()Ljava/lang/String;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object p1
-
-    .line 31
-    return-object p1
-
-    .line 32
-    :cond_0
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p1
-
-    .line 36
-    const/4 v0, 0x3
-
-    .line 37
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 38
-    .line 39
-    const/4 v2, 0x0
-
-    .line 40
-    aput-object p1, v0, v2
-
-    .line 41
-    .line 42
-    const/4 p1, 0x1
-
-    .line 43
-    aput-object v1, v0, p1
-
-    .line 44
-    .line 45
-    const/4 p1, 0x2
-
-    .line 46
-    aput-object v1, v0, p1
-
-    .line 47
-    .line 48
-    const-string p1, "Attempt to write plain `java.math.BigDecimal` (see JsonGenerator.Feature.WRITE_BIGDECIMAL_AS_PLAIN) with illegal scale (%d): needs to be between [-%d, %d]"
-
-    .line 49
-    .line 50
-    invoke-static {p1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object p1
-
-    .line 54
-    invoke-virtual {p0, p1}, Lr03;->f(Ljava/lang/String;)V
-
-    .line 55
-    .line 56
-    .line 57
-    const/4 p1, 0x0
-
-    .line 58
-    throw p1
-
-    .line 59
-    :cond_1
-    invoke-virtual {p1}, Ljava/math/BigDecimal;->toString()Ljava/lang/String;
-
-    .line 60
-    .line 61
-    .line 62
-    move-result-object p1
-
-    .line 63
-    return-object p1
+    return-void
 .end method
 
-.method public abstract R0(Ljava/lang/String;)V
-.end method
-
-.method public close()V
-    .locals 1
+.method public final k(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lba2;->W:Z
+    check-cast p1, [F
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
-    iget-object v0, p0, Lba2;->T:Llj2;
-
     .line 6
-    .line 7
-    invoke-virtual {v0}, Llj2;->close()V
+    new-instance p0, Laa2;
 
+    .line 7
     .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 9
     .line 10
-    const/4 v0, 0x1
-
     .line 11
-    iput-boolean v0, p0, Lba2;->W:Z
+    iput-object p1, p0, Laa2;->a:[F
 
     .line 12
     .line 13
-    :cond_0
-    return-void
+    array-length p1, p1
+
+    .line 14
+    iput p1, p0, Laa2;->b:I
+
+    .line 15
+    .line 16
+    const/16 p1, 0xa
+
+    .line 17
+    .line 18
+    invoke-virtual {p0, p1}, Laa2;->b(I)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-object p0
 .end method
 
-.method public final i(Ljava/lang/Object;)V
-    .locals 1
+.method public final n()Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lba2;->V:Lkx6;
+    const/4 p0, 0x0
+
+    .line 2
+    new-array p0, p0, [F
+
+    .line 3
+    .line 4
+    return-object p0
+.end method
+
+.method public final o(Lo97;Ljava/lang/Object;I)V
+    .locals 3
+
+    .line 1
+    check-cast p2, [F
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
-    iput-object p1, v0, Lkx6;->j:Ljava/lang/Object;
-
     .line 6
-    .line 7
-    :cond_0
-    return-void
-.end method
-
-.method public final l(Lq03;)Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lba2;->S:I
-
-    .line 2
-    .line 3
-    iget p1, p1, Lq03;->R:I
-
-    .line 4
-    .line 5
-    and-int/2addr p1, v0
-
-    .line 6
-    if-eqz p1, :cond_0
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
     .line 8
-    const/4 p1, 0x1
-
     .line 9
-    return p1
+    const/4 v0, 0x0
 
     .line 10
-    :cond_0
-    const/4 p1, 0x0
+    :goto_0
+    if-ge v0, p3, :cond_0
 
     .line 11
-    return p1
+    .line 12
+    aget v1, p2, v0
+
+    .line 13
+    .line 14
+    iget-object v2, p0, Lcj5;->b:Lbj5;
+
+    .line 15
+    .line 16
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {p1, v2, v0}, Lo97;->g(Ler6;I)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p1, v1}, Lo97;->h(F)V
+
+    .line 23
+    .line 24
+    .line 25
+    add-int/lit8 v0, v0, 0x1
+
+    .line 26
+    .line 27
+    goto :goto_0
+
+    .line 28
+    :cond_0
+    return-void
 .end method

@@ -1,11 +1,25 @@
 package defpackage;
 
-import android.view.RenderNode;
+import android.os.Build;
+import java.util.Locale;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class ci5 {
-    public static void a(RenderNode renderNode) {
-        renderNode.destroyDisplayListData();
+    public static final bi5 a;
+
+    static {
+        bi5 bi5Var;
+        String str = Build.FINGERPRINT;
+        if (str != null) {
+            String lowerCase = str.toLowerCase(Locale.ROOT);
+            lowerCase.getClass();
+            if (lowerCase.equals("robolectric")) {
+                bi5Var = new bi5();
+                a = bi5Var;
+            }
+        }
+        bi5Var = null;
+        a = bi5Var;
     }
 }

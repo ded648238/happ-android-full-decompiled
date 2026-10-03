@@ -1,6 +1,6 @@
 .class public interface abstract Lokhttp3/Call;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Cloneable;
@@ -28,7 +28,7 @@
         "()Lokhttp3/Response;",
         "Lokhttp3/Callback;",
         "responseCallback",
-        "Lbh7;",
+        "Lr98;",
         "enqueue",
         "(Lokhttp3/Callback;)V",
         "cancel",
@@ -37,9 +37,9 @@
         "isExecuted",
         "()Z",
         "isCanceled",
-        "Lo47;",
+        "Lax7;",
         "timeout",
-        "()Lo47;",
+        "()Lax7;",
         "clone",
         "()Lokhttp3/Call;",
         "Factory",
@@ -82,5 +82,5 @@
 .method public abstract request()Lokhttp3/Request;
 .end method
 
-.method public abstract timeout()Lo47;
+.method public abstract timeout()Lax7;
 .end method

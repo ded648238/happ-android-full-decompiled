@@ -1,10 +1,30 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class qm1 {
-    public abstract void b();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class qm1 implements l16 {
+    public final mi2 X;
+    public rm1 Y;
 
-    public void a() {
+    public qm1(mi2 mi2Var) {
+        this.X = mi2Var;
+    }
+
+    @Override // defpackage.l16
+    public final void b() {
+        rm1 rm1Var = this.Y;
+        if (rm1Var != null) {
+            rm1Var.a();
+        }
+        this.Y = null;
+    }
+
+    @Override // defpackage.l16
+    public final void c() {
+        this.Y = (rm1) this.X.invoke(kc.Z);
+    }
+
+    @Override // defpackage.l16
+    public final void a() {
     }
 }

@@ -1,93 +1,118 @@
-.class public final Lqk6;
-.super Llo7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Lqk6;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final b:Lzu6;
+# static fields
+.field public static final enum X:Lqk6;
 
-.field public final c:Ljh6;
+.field public static final enum Y:Lqk6;
 
-.field public final d:Lfc5;
+.field public static final synthetic Z:[Lqk6;
 
 
 # direct methods
-.method public constructor <init>()V
+.method static constructor <clinit>()V
     .locals 4
 
     .line 1
-    invoke-direct {p0}, Llo7;-><init>()V
+    new-instance v0, Lqk6;
 
     .line 2
     .line 3
-    .line 4
-    new-instance v0, Lak6;
+    const-string v1, "FILL"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    const/4 v1, 0x6
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 7
-    invoke-direct {v0, v1}, Lak6;-><init>(I)V
-
     .line 8
     .line 9
+    sput-object v0, Lqk6;->X:Lqk6;
+
     .line 10
-    new-instance v1, Lzu6;
-
     .line 11
-    .line 12
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    new-instance v1, Lqk6;
 
+    .line 12
     .line 13
+    const-string v2, "FIT"
+
     .line 14
     .line 15
-    iput-object v1, p0, Lqk6;->b:Lzu6;
+    const/4 v3, 0x1
 
     .line 16
-    .line 17
-    new-instance v0, Lpk6;
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 17
     .line 18
     .line 19
-    sget-object v1, Ljc6;->R:Ljc6;
+    sput-object v1, Lqk6;->Y:Lqk6;
 
     .line 20
     .line 21
-    const/4 v2, 0x0
+    filled-new-array {v0, v1}, [Lqk6;
 
     .line 22
-    const/4 v3, 0x0
-
     .line 23
-    invoke-direct {v0, v1, v2, v2, v3}, Lpk6;-><init>(Lc2;ZILjava/lang/String;)V
-
     .line 24
+    move-result-object v0
+
     .line 25
+    sput-object v0, Lqk6;->Z:[Lqk6;
+
     .line 26
-    invoke-static {v0}, Lkh6;->a(Ljava/lang/Object;)Ljh6;
-
     .line 27
-    .line 28
-    .line 29
-    move-result-object v0
-
-    .line 30
-    iput-object v0, p0, Lqk6;->c:Ljh6;
-
-    .line 31
-    .line 32
-    invoke-static {v0}, Lf93;->l(Ljh6;)Lfc5;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
-    iput-object v0, p0, Lqk6;->d:Lfc5;
-
-    .line 37
-    .line 38
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lqk6;
+    .locals 1
+
+    .line 1
+    const-class v0, Lqk6;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lqk6;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lqk6;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lqk6;->Z:[Lqk6;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lqk6;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

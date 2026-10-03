@@ -1,47 +1,69 @@
 .class public final Led0;
-.super Ldd0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# virtual methods
-.method public final f()Ljava/util/Set;
-    .locals 2
+# instance fields
+.field public synthetic c0:Ljava/lang/Object;
+
+.field public final synthetic d0:Lgd0;
+
+.field public e0:I
+
+
+# direct methods
+.method public constructor <init>(Lgd0;Ld31;)V
+    .locals 0
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lh71;->R:Ljava/lang/Object;
+    iput-object p1, p0, Led0;->d0:Lgd0;
 
     .line 2
     .line 3
-    check-cast v0, Landroid/hardware/camera2/CameraManager;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Landroid/hardware/camera2/CameraManager;->getConcurrentCameraIds()Ljava/util/Set;
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Led0;->c0:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    iget p1, p0, Led0;->e0:I
+
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    move-result-object v0
-    :try_end_0
-    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_0
+    iput p1, p0, Led0;->e0:I
 
     .line 9
-    return-object v0
-
     .line 10
-    :catch_0
-    move-exception v0
+    iget-object p1, p0, Led0;->d0:Lgd0;
 
     .line 11
-    new-instance v1, Lmb0;
-
     .line 12
-    .line 13
-    invoke-direct {v1, v0}, Lmb0;-><init>(Landroid/hardware/camera2/CameraAccessException;)V
+    invoke-virtual {p1, p0}, Lgd0;->c(Ld31;)Ljava/lang/Object;
 
+    .line 13
     .line 14
     .line 15
+    move-result-object p0
+
     .line 16
-    throw v1
+    return-object p0
 .end method

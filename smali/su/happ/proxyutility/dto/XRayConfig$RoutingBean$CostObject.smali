@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean$CostObject;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -61,7 +61,7 @@
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+    .locals 5
 
     .line 1
     const/4 v0, 0x1
@@ -118,7 +118,7 @@
 
     .line 23
     .line 24
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
@@ -138,19 +138,19 @@
 
     .line 32
     .line 33
-    iget-wide v5, p1, Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean$CostObject;->value:D
+    iget-wide p0, p1, Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean$CostObject;->value:D
 
     .line 34
     .line 35
-    invoke-static {v3, v4, v5, v6}, Ljava/lang/Double;->compare(DD)I
+    invoke-static {v3, v4, p0, p1}, Ljava/lang/Double;->compare(DD)I
 
     .line 36
     .line 37
     .line 38
-    move-result p1
+    move-result p0
 
     .line 39
-    if-eqz p1, :cond_4
+    if-eqz p0, :cond_4
 
     .line 40
     .line 41
@@ -162,84 +162,60 @@
 .end method
 
 .method public final hashCode()I
-    .locals 5
+    .locals 3
 
     .line 1
     iget-boolean v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean$CostObject;->regexp:Z
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 4
     .line 5
-    const/16 v0, 0x4cf
-
     .line 6
+    move-result v0
+
     .line 7
-    goto :goto_0
+    const/16 v1, 0x1f
 
     .line 8
-    :cond_0
-    const/16 v0, 0x4d5
-
     .line 9
+    mul-int/2addr v0, v1
+
     .line 10
-    :goto_0
-    const/16 v1, 0x1f
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean$CostObject;->match:Ljava/lang/String;
 
     .line 11
     .line 12
-    mul-int/lit8 v0, v0, 0x1f
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
     .line 13
     .line 14
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean$CostObject;->match:Ljava/lang/String;
-
     .line 15
+    move-result v0
+
     .line 16
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    iget-wide v1, p0, Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean$CostObject;->value:D
 
     .line 17
     .line 18
+    invoke-static {v1, v2}, Ljava/lang/Double;->hashCode(D)I
+
     .line 19
-    move-result v0
-
     .line 20
-    iget-wide v1, p0, Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean$CostObject;->value:D
-
     .line 21
+    move-result p0
+
     .line 22
-    invoke-static {v1, v2}, Ljava/lang/Double;->doubleToLongBits(D)J
+    add-int/2addr p0, v0
 
     .line 23
-    .line 24
-    .line 25
-    move-result-wide v1
-
-    .line 26
-    const/16 v3, 0x20
-
-    .line 27
-    .line 28
-    ushr-long v3, v1, v3
-
-    .line 29
-    .line 30
-    xor-long/2addr v1, v3
-
-    .line 31
-    long-to-int v2, v1
-
-    .line 32
-    add-int/2addr v0, v2
-
-    .line 33
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 6
+    .locals 5
 
     .line 1
     iget-boolean v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean$CostObject;->regexp:Z
@@ -254,20 +230,20 @@
 
     .line 6
     .line 7
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance p0, Ljava/lang/StringBuilder;
 
     .line 8
     .line 9
-    const-string v5, "CostObject(regexp="
+    const-string v4, "CostObject(regexp="
 
     .line 10
     .line 11
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 15
     .line 16
@@ -276,12 +252,12 @@
 
     .line 18
     .line 19
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 20
     .line 21
     .line 22
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 23
     .line 24
@@ -290,12 +266,12 @@
 
     .line 26
     .line 27
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 28
     .line 29
     .line 30
-    invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
@@ -304,18 +280,18 @@
 
     .line 34
     .line 35
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 36
     .line 37
     .line 38
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 39
     .line 40
     .line 41
-    move-result-object v0
+    move-result-object p0
 
     .line 42
-    return-object v0
+    return-object p0
 .end method

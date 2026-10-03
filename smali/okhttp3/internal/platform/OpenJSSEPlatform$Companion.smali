@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/OpenJSSEPlatform$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -48,7 +48,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -63,7 +63,7 @@
 
 # virtual methods
 .method public final buildIfSupported()Lokhttp3/internal/platform/OpenJSSEPlatform;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Lokhttp3/internal/platform/OpenJSSEPlatform$Companion;->isSupported()Z
@@ -71,34 +71,34 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 6
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    new-instance v0, Lokhttp3/internal/platform/OpenJSSEPlatform;
+    new-instance p0, Lokhttp3/internal/platform/OpenJSSEPlatform;
 
     .line 9
     .line 10
-    invoke-direct {v0, v1}, Lokhttp3/internal/platform/OpenJSSEPlatform;-><init>(Lj31;)V
+    invoke-direct {p0, v0}, Lokhttp3/internal/platform/OpenJSSEPlatform;-><init>(Lib1;)V
 
     .line 11
     .line 12
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    return-object v1
+    return-object v0
 .end method
 
 .method public final isSupported()Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-static {}, Lokhttp3/internal/platform/OpenJSSEPlatform;->access$isSupported$cp()Z
@@ -106,8 +106,8 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method

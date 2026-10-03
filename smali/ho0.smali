@@ -1,130 +1,85 @@
-.class public Lho0;
+.class public abstract Lho0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final synthetic b:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+.field public static final a:Ljava/nio/charset/Charset;
 
+.field public static final b:Ljava/nio/charset/Charset;
 
-# instance fields
-.field private volatile synthetic _handled$volatile:I
+.field public static final c:Ljava/nio/charset/Charset;
 
-.field public final a:Ljava/lang/Throwable;
+.field public static volatile d:Ljava/nio/charset/Charset;
+
+.field public static volatile e:Ljava/nio/charset/Charset;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    const-class v0, Lho0;
+    const-string v0, "UTF-8"
 
     .line 2
     .line 3
-    const-string v1, "_handled$volatile"
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
-
     .line 6
-    .line 7
-    .line 8
     move-result-object v0
 
-    .line 9
-    sput-object v0, Lho0;->b:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
-
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/Throwable;Z)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lho0;->a:Ljava/lang/Throwable;
-
-    .line 5
-    .line 6
-    iput p2, p0, Lho0;->_handled$volatile:I
-
     .line 7
-    .line 8
-    return-void
-.end method
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-
-# virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 7
     .line 8
     .line 9
-    move-result-object v1
-
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    sput-object v0, Lho0;->a:Ljava/nio/charset/Charset;
 
     .line 11
     .line 12
-    .line 13
-    move-result-object v1
+    const-string v0, "UTF-16"
 
+    .line 13
     .line 14
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     .line 15
     .line 16
     .line 17
-    const/16 v1, 0x5b
+    move-result-object v0
 
     .line 18
-    .line 19
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 19
     .line 20
     .line 21
+    const-string v0, "UTF-16BE"
+
     .line 22
-    iget-object v1, p0, Lho0;->a:Ljava/lang/Throwable;
-
     .line 23
-    .line 24
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
+    .line 24
     .line 25
     .line 26
+    move-result-object v0
+
     .line 27
-    const/16 v1, 0x5d
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 28
     .line 29
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
     .line 30
+    const-string v0, "UTF-16LE"
+
     .line 31
     .line 32
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     .line 33
     .line 34
@@ -132,5 +87,52 @@
     move-result-object v0
 
     .line 36
-    return-object v0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    .line 38
+    .line 39
+    const-string v0, "US-ASCII"
+
+    .line 40
+    .line 41
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 46
+    .line 47
+    .line 48
+    sput-object v0, Lho0;->b:Ljava/nio/charset/Charset;
+
+    .line 49
+    .line 50
+    const-string v0, "ISO-8859-1"
+
+    .line 51
+    .line 52
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v0
+
+    .line 56
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 57
+    .line 58
+    .line 59
+    sput-object v0, Lho0;->c:Ljava/nio/charset/Charset;
+
+    .line 60
+    .line 61
+    return-void
 .end method

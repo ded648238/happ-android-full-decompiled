@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSslXwingPublicKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/security/PublicKey;
@@ -163,10 +163,10 @@
 
     .line 40
     .line 41
-    array-length p1, p1
+    array-length p0, p1
 
     .line 42
-    if-ne p1, v4, :cond_0
+    if-ne p0, v4, :cond_0
 
     .line 43
     .line 44
@@ -174,7 +174,7 @@
 
     .line 45
     :cond_0
-    invoke-static {v3}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {v3}, Lq05;->l(Ljava/lang/String;)V
 
     .line 46
     .line 47
@@ -183,11 +183,11 @@
 
     .line 49
     :cond_1
-    const-string p1, "Invalid X-Wing X.509 key preamble"
+    const-string p0, "Invalid X-Wing X.509 key preamble"
 
     .line 50
     .line 51
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 52
     .line 53
@@ -208,7 +208,7 @@
 
     .line 60
     .line 61
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {p1, v1}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 62
     .line 63
@@ -235,7 +235,7 @@
 
     .line 73
     :cond_3
-    invoke-static {v3}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {v3}, Lq05;->l(Ljava/lang/String;)V
 
     .line 74
     .line 75
@@ -244,11 +244,11 @@
 
     .line 77
     :cond_4
-    const-string p1, "Encoding must be in raw format"
+    const-string p0, "Encoding must be in raw format"
 
     .line 78
     .line 79
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 80
     .line 81
@@ -282,59 +282,59 @@
 
     .line 86
     :cond_0
-    const-string p1, "Invalid key size"
+    const-string p0, "Invalid key size"
 
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    throw p1
+    throw p0
 .end method
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    const-string v0, "serialization not supported"
+    const-string p1, "serialization not supported"
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    const-string v0, "serialization not supported"
+    const-string p1, "serialization not supported"
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/OpenSslXwingPublicKey;->raw:[B
@@ -352,18 +352,18 @@
 
     .line 7
     .line 8
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 9
-    return p1
+    return p0
 
     .line 10
     :cond_0
-    instance-of v2, p1, Lorg/conscrypt/OpenSslXwingPublicKey;
+    instance-of p0, p1, Lorg/conscrypt/OpenSslXwingPublicKey;
 
     .line 11
     .line 12
-    if-nez v2, :cond_1
+    if-nez p0, :cond_1
 
     .line 13
     .line 14
@@ -375,27 +375,27 @@
 
     .line 16
     .line 17
-    iget-object p1, p1, Lorg/conscrypt/OpenSslXwingPublicKey;->raw:[B
+    iget-object p0, p1, Lorg/conscrypt/OpenSslXwingPublicKey;->raw:[B
 
     .line 18
     .line 19
-    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([B[B)Z
+    invoke-static {v0, p0}, Ljava/util/Arrays;->equals([B[B)Z
 
     .line 20
     .line 21
     .line 22
-    move-result p1
+    move-result p0
 
     .line 23
-    return p1
+    return p0
 
     .line 24
     :cond_2
-    const-string p1, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 25
     .line 26
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 27
     .line 28
@@ -404,148 +404,148 @@
 .end method
 
 .method public getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "XWING"
+    const-string p0, "XWING"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslXwingPublicKey;->raw:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslXwingPublicKey;->raw:[B
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    sget-object v1, Lorg/conscrypt/OpenSslXwingPublicKey;->x509Preamble:[B
+    sget-object v0, Lorg/conscrypt/OpenSslXwingPublicKey;->x509Preamble:[B
 
     .line 6
     .line 7
-    invoke-static {v1, v0}, Lorg/conscrypt/ArrayUtils;->concat([B[B)[B
+    invoke-static {v0, p0}, Lorg/conscrypt/ArrayUtils;->concat([B[B)[B
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 
     .line 12
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 13
     .line 14
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "X.509"
+    const-string p0, "X.509"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getRaw()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslXwingPublicKey;->raw:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslXwingPublicKey;->raw:[B
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, [B->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, [B->clone()Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    check-cast v0, [B
+    check-cast p0, [B
 
     .line 10
     .line 11
-    return-object v0
+    return-object p0
 
     .line 12
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 13
     .line 14
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslXwingPublicKey;->raw:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslXwingPublicKey;->raw:[B
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([B)I
 
     .line 6
     .line 7
     .line 8
-    move-result v0
+    move-result p0
 
     .line 9
-    return v0
+    return p0
 
     .line 10
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return v0
+    return p0
 .end method

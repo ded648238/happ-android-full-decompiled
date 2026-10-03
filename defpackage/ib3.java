@@ -1,27 +1,29 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ib3 {
-    public final x63 a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class ib3 {
+    public static final Integer a;
 
-    public ib3(x63 x63Var) {
-        x63Var.getClass();
-        this.a = x63Var;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj instanceof ib3) {
-            return rt2.f(this.a, ((ib3) obj).a);
+    static {
+        Integer num;
+        Object obj;
+        Integer num2 = null;
+        try {
+            obj = Class.forName("android.os.Build$VERSION").getField("SDK_INT").get(null);
+        } catch (Throwable unused) {
         }
-        return false;
-    }
-
-    public final int hashCode() {
-        return this.a.hashCode();
-    }
-
-    public final String toString() {
-        return vs0.L(this.a).getName();
+        if (obj instanceof Integer) {
+            num = (Integer) obj;
+            if (num != null && num.intValue() > 0) {
+                num2 = num;
+            }
+            a = num2;
+        }
+        num = null;
+        if (num != null) {
+            num2 = num;
+        }
+        a = num2;
     }
 }

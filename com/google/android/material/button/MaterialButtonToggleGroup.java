@@ -9,17 +9,17 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.RadioButton;
 import android.widget.ToggleButton;
-import com.google.android.material.timepicker.f;
-import defpackage.b0;
-import defpackage.c37;
-import defpackage.cz;
-import defpackage.i04;
-import defpackage.na5;
-import defpackage.nh6;
-import defpackage.qn7;
-import defpackage.s3;
-import defpackage.v75;
-import defpackage.va5;
+import com.google.android.material.timepicker.e;
+import defpackage.a4;
+import defpackage.g10;
+import defpackage.gv7;
+import defpackage.hh4;
+import defpackage.ni8;
+import defpackage.nu5;
+import defpackage.o57;
+import defpackage.ur5;
+import defpackage.uu5;
+import defpackage.y;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -28,38 +28,41 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class MaterialButtonToggleGroup extends MaterialButtonGroup {
-    public static final int k0 = na5.Widget_MaterialComponents_MaterialButtonToggleGroup;
-    public final LinkedHashSet e0;
-    public boolean f0;
-    public boolean g0;
-    public boolean h0;
-    public final int i0;
-    public HashSet j0;
+    public static final int v0 = nu5.Widget_MaterialComponents_MaterialButtonToggleGroup;
+    public final LinkedHashSet p0;
+    public boolean q0;
+    public boolean r0;
+    public boolean s0;
+    public final int t0;
+    public HashSet u0;
 
     /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public MaterialButtonToggleGroup(Context context, AttributeSet attributeSet, int i) {
-        int i2 = k0;
-        super(i04.a(context, attributeSet, i, i2), attributeSet, i);
-        this.e0 = new LinkedHashSet();
-        this.f0 = false;
-        this.j0 = new HashSet();
-        TypedArray typedArrayD = c37.d(getContext(), attributeSet, va5.MaterialButtonToggleGroup, i, i2, new int[0]);
-        setSingleSelection(typedArrayD.getBoolean(va5.MaterialButtonToggleGroup_singleSelection, false));
-        this.i0 = typedArrayD.getResourceId(va5.MaterialButtonToggleGroup_checkedButton, -1);
-        this.h0 = typedArrayD.getBoolean(va5.MaterialButtonToggleGroup_selectionRequired, false);
-        if (this.V == null) {
-            this.V = nh6.b(new b0(0.0f));
+        super(hh4.b(context, attributeSet, i, r4), attributeSet, i);
+        int i2 = v0;
+        this.p0 = new LinkedHashSet();
+        this.q0 = false;
+        this.u0 = new HashSet();
+        TypedArray d = gv7.d(getContext(), attributeSet, uu5.MaterialButtonToggleGroup, i, i2, new int[0]);
+        setSingleSelection(d.getBoolean(uu5.MaterialButtonToggleGroup_singleSelection, false));
+        this.t0 = d.getResourceId(uu5.MaterialButtonToggleGroup_checkedButton, -1);
+        this.s0 = d.getBoolean(uu5.MaterialButtonToggleGroup_selectionRequired, false);
+        if (this.h0 == null) {
+            this.h0 = o57.b(new y(0.0f));
         }
-        setEnabled(typedArrayD.getBoolean(va5.MaterialButtonToggleGroup_android_enabled, true));
-        typedArrayD.recycle();
+        setEnabled(d.getBoolean(uu5.MaterialButtonToggleGroup_android_enabled, true));
+        d.recycle();
         setImportantForAccessibility(1);
     }
 
     private String getChildrenA11yClassName() {
-        return (this.g0 ? RadioButton.class : ToggleButton.class).getName();
+        return (this.r0 ? RadioButton.class : ToggleButton.class).getName();
     }
 
     private int getVisibleButtonCount() {
@@ -85,18 +88,36 @@ public class MaterialButtonToggleGroup extends MaterialButtonGroup {
             super.addView(view, i, layoutParams);
             MaterialButton materialButton = (MaterialButton) view;
             setupButtonChild(materialButton);
-            f(materialButton.getId(), materialButton.h0);
-            qn7.q(materialButton, new cz(5, this));
+            k(materialButton.getId(), materialButton.x0);
+            ni8.m(materialButton, new g10(5, this));
         }
     }
 
-    public final void f(int i, boolean z) {
+    public int getCheckedButtonId() {
+        if (!this.r0 || this.u0.isEmpty()) {
+            return -1;
+        }
+        return ((Integer) this.u0.iterator().next()).intValue();
+    }
+
+    public List<Integer> getCheckedButtonIds() {
+        ArrayList arrayList = new ArrayList();
+        for (int i = 0; i < getChildCount(); i++) {
+            int id = ((MaterialButton) getChildAt(i)).getId();
+            if (this.u0.contains(Integer.valueOf(id))) {
+                arrayList.add(Integer.valueOf(id));
+            }
+        }
+        return arrayList;
+    }
+
+    public final void k(int i, boolean z) {
         if (i == -1) {
             return;
         }
-        HashSet hashSet = new HashSet(this.j0);
+        HashSet hashSet = new HashSet(this.u0);
         if (z && !hashSet.contains(Integer.valueOf(i))) {
-            if (this.g0 && !hashSet.isEmpty()) {
+            if (this.r0 && !hashSet.isEmpty()) {
                 hashSet.clear();
             }
             hashSet.add(Integer.valueOf(i));
@@ -104,77 +125,59 @@ public class MaterialButtonToggleGroup extends MaterialButtonGroup {
             if (z || !hashSet.contains(Integer.valueOf(i))) {
                 return;
             }
-            if (!this.h0 || hashSet.size() > 1) {
+            if (!this.s0 || hashSet.size() > 1) {
                 hashSet.remove(Integer.valueOf(i));
             }
         }
-        g(hashSet);
+        l(hashSet);
     }
 
-    public final void g(Set set) {
-        HashSet hashSet = this.j0;
-        this.j0 = new HashSet(set);
+    public final void l(Set set) {
+        HashSet hashSet = this.u0;
+        this.u0 = new HashSet(set);
         for (int i = 0; i < getChildCount(); i++) {
             int id = ((MaterialButton) getChildAt(i)).getId();
-            boolean zContains = set.contains(Integer.valueOf(id));
-            View viewFindViewById = findViewById(id);
-            if (viewFindViewById instanceof MaterialButton) {
-                this.f0 = true;
-                ((MaterialButton) viewFindViewById).setChecked(zContains);
-                this.f0 = false;
+            boolean contains = set.contains(Integer.valueOf(id));
+            View findViewById = findViewById(id);
+            if (findViewById instanceof MaterialButton) {
+                this.q0 = true;
+                ((MaterialButton) findViewById).setChecked(contains);
+                this.q0 = false;
             }
             if (hashSet.contains(Integer.valueOf(id)) != set.contains(Integer.valueOf(id))) {
                 set.contains(Integer.valueOf(id));
-                Iterator it = this.e0.iterator();
+                Iterator it = this.p0.iterator();
                 while (it.hasNext()) {
-                    ((f) it.next()).a();
+                    ((e) it.next()).a();
                 }
             }
         }
         invalidate();
     }
 
-    public int getCheckedButtonId() {
-        if (!this.g0 || this.j0.isEmpty()) {
-            return -1;
-        }
-        return ((Integer) this.j0.iterator().next()).intValue();
-    }
-
-    public List<Integer> getCheckedButtonIds() {
-        ArrayList arrayList = new ArrayList();
-        for (int i = 0; i < getChildCount(); i++) {
-            int id = ((MaterialButton) getChildAt(i)).getId();
-            if (this.j0.contains(Integer.valueOf(id))) {
-                arrayList.add(Integer.valueOf(id));
-            }
-        }
-        return arrayList;
-    }
-
     @Override // android.view.View
     public final void onFinishInflate() {
         super.onFinishInflate();
-        int i = this.i0;
+        int i = this.t0;
         if (i != -1) {
-            g(Collections.singleton(Integer.valueOf(i)));
+            l(Collections.singleton(Integer.valueOf(i)));
         }
     }
 
     @Override // android.view.View
     public final void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
         super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
-        accessibilityNodeInfo.setCollectionInfo((AccessibilityNodeInfo.CollectionInfo) s3.a(1, getVisibleButtonCount(), this.g0 ? 1 : 2).a);
+        accessibilityNodeInfo.setCollectionInfo((AccessibilityNodeInfo.CollectionInfo) a4.a(1, getVisibleButtonCount(), this.r0 ? 1 : 2).X);
     }
 
     public void setSelectionRequired(boolean z) {
-        this.h0 = z;
+        this.s0 = z;
     }
 
     public void setSingleSelection(boolean z) {
-        if (this.g0 != z) {
-            this.g0 = z;
-            g(new HashSet());
+        if (this.r0 != z) {
+            this.r0 = z;
+            l(new HashSet());
         }
         String childrenA11yClassName = getChildrenA11yClassName();
         for (int i = 0; i < getChildCount(); i++) {
@@ -187,6 +190,6 @@ public class MaterialButtonToggleGroup extends MaterialButtonGroup {
     }
 
     public MaterialButtonToggleGroup(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, v75.materialButtonToggleGroupStyle);
+        this(context, attributeSet, ur5.materialButtonToggleGroupStyle);
     }
 }

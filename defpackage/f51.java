@@ -1,19 +1,38 @@
 package defpackage;
 
-import android.animation.AnimatorSet;
+import java.security.Permission;
+import java.util.HashSet;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class f51 {
-    public static final f51 a = new f51();
+/* loaded from: classes.dex */
+public final class f51 extends Permission {
+    public final HashSet X;
 
-    public final void a(AnimatorSet animatorSet) {
-        animatorSet.getClass();
-        animatorSet.reverse();
+    public f51(String str) {
+        super(str);
+        HashSet hashSet = new HashSet();
+        this.X = hashSet;
+        hashSet.add(str);
     }
 
-    public final void b(AnimatorSet animatorSet, long j) {
-        animatorSet.getClass();
-        animatorSet.setCurrentPlayTime(j);
+    public final boolean equals(Object obj) {
+        return (obj instanceof f51) && this.X.equals(((f51) obj).X);
+    }
+
+    @Override // java.security.Permission
+    public final String getActions() {
+        return this.X.toString();
+    }
+
+    public final int hashCode() {
+        return this.X.hashCode();
+    }
+
+    @Override // java.security.Permission
+    public final boolean implies(Permission permission) {
+        if (!(permission instanceof f51)) {
+            return false;
+        }
+        f51 f51Var = (f51) permission;
+        return getName().equals(f51Var.getName()) || this.X.containsAll(f51Var.X);
     }
 }

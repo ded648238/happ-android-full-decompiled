@@ -1,20 +1,51 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class ra3 extends za3 {
-    public abstract Object a();
+import android.os.Handler;
+import android.os.Looper;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-    public final String toString() {
-        String string;
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append('(');
-        if (this instanceof ua3) {
-            string = "\"" + ((Object) ((ua3) this).a) + '\"';
-        } else {
-            string = a().toString();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ra3 implements Executor {
+    public static volatile ra3 Z;
+    public final /* synthetic */ int X;
+    public final Object Y;
+
+    public ra3(int i) {
+        this.X = i;
+        switch (i) {
+            case 2:
+                uv8 uv8Var = new uv8(Looper.getMainLooper());
+                Looper.getMainLooper();
+                this.Y = uv8Var;
+                break;
+            default:
+                this.Y = Executors.newFixedThreadPool(2, new eg0(2));
+                break;
         }
-        return mi2.r(sb, string, ')');
+    }
+
+    @Override // java.util.concurrent.Executor
+    public final void execute(Runnable runnable) {
+        int i = this.X;
+        Object obj = this.Y;
+        switch (i) {
+            case 0:
+                ((ExecutorService) obj).execute(runnable);
+                break;
+            case 1:
+                ((Handler) ((qn6) obj).c0).post(runnable);
+                break;
+            default:
+                ((uv8) obj).post(runnable);
+                break;
+        }
+    }
+
+    public ra3(qn6 qn6Var) {
+        this.X = 1;
+        this.Y = qn6Var;
     }
 }

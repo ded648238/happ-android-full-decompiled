@@ -1,22 +1,24 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class c15 {
-    public final int a;
+import java.util.ArrayList;
 
-    public c15(int i) {
-        this.a = i;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class c15 extends z82 {
+    public static final c15 d = new c15(0, 1, 1);
 
-    public final boolean equals(Object obj) {
-        if (obj instanceof c15) {
-            return this.a == ((c15) obj).a;
+    @Override // defpackage.z82
+    public final void d(up0 up0Var, wr wrVar, zz6 zz6Var, u61 u61Var, b25 b25Var) {
+        wq4 wq4Var;
+        zw5 zw5Var = (zw5) up0Var.i(0);
+        mq4 mq4Var = (mq4) u61Var.i;
+        if (mq4Var == null || ((t85) mq4Var.g(zw5Var)) == null) {
+            return;
         }
-        return false;
-    }
-
-    public final int hashCode() {
-        return this.a;
+        ArrayList arrayList = (ArrayList) u61Var.j;
+        if (arrayList != null && (wq4Var = (wq4) arrayList.remove(arrayList.size() - 1)) != null) {
+            u61Var.e = wq4Var;
+        }
+        mq4Var.k(zw5Var);
     }
 }

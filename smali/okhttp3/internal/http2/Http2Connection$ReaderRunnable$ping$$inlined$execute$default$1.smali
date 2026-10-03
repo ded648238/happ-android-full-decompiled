@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$ping$$inlined$execute$default$1;
 .super Lokhttp3/internal/concurrent/Task;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -70,7 +70,7 @@
 
 # virtual methods
 .method public runOnce()J
-    .locals 4
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$ping$$inlined$execute$default$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
@@ -81,14 +81,14 @@
 
     .line 4
     .line 5
-    iget v2, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$ping$$inlined$execute$default$1;->$payload2$inlined:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$ping$$inlined$execute$default$1;->$payload2$inlined:I
 
     .line 6
     .line 7
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
     .line 8
-    invoke-virtual {v0, v3, v1, v2}, Lokhttp3/internal/http2/Http2Connection;->writePing(ZII)V
+    invoke-virtual {v0, v2, v1, p0}, Lokhttp3/internal/http2/Http2Connection;->writePing(ZII)V
 
     .line 9
     .line 10

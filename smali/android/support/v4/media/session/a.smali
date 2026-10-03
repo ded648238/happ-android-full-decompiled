@@ -1,6 +1,6 @@
-.class public Landroid/support/v4/media/session/a;
+.class public abstract Landroid/support/v4/media/session/a;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -68,7 +68,7 @@
 
     .line 26
     .line 27
-    iget-object v0, p2, Landroid/support/v4/media/session/MediaSessionCompat$Token;->Q:Ljava/lang/Object;
+    iget-object v0, p2, Landroid/support/v4/media/session/MediaSessionCompat$Token;->X:Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -89,7 +89,7 @@
 
     .line 37
     .line 38
-    iget-object p1, p2, Landroid/support/v4/media/session/MediaSessionCompat$Token;->R:Lhj2;
+    iget-object p1, p2, Landroid/support/v4/media/session/MediaSessionCompat$Token;->Y:Luw2;
 
     .line 39
     .line 40
@@ -118,15 +118,15 @@
     .line 51
     .line 52
     .line 53
-    iput-object v0, p1, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver;->Q:Ljava/lang/ref/WeakReference;
+    iput-object v0, p1, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver;->X:Ljava/lang/ref/WeakReference;
 
     .line 54
     .line 55
-    const-string v0, "android.support.v4.media.session.command.GET_EXTRA_BINDER"
+    const-string p0, "android.support.v4.media.session.command.GET_EXTRA_BINDER"
 
     .line 56
     .line 57
-    invoke-virtual {v1, v0, p2, p1}, Landroid/media/session/MediaController;->sendCommand(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/ResultReceiver;)V
+    invoke-virtual {v1, p0, p2, p1}, Landroid/media/session/MediaController;->sendCommand(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/ResultReceiver;)V
 
     .line 58
     .line 59

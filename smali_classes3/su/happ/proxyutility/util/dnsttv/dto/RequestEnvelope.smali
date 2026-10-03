@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -517,10 +517,10 @@
     and-long/2addr v5, v7
 
     .line 129
-    long-to-int v6, v5
+    long-to-int v5, v5
 
     .line 130
-    int-to-byte v5, v6
+    int-to-byte v5, v5
 
     .line 131
     invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -547,10 +547,10 @@
     and-long/2addr v5, v7
 
     .line 143
-    long-to-int v6, v5
+    long-to-int v5, v5
 
     .line 144
-    int-to-byte v5, v6
+    int-to-byte v5, v5
 
     .line 145
     invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -577,10 +577,10 @@
     and-long/2addr v5, v7
 
     .line 157
-    long-to-int v6, v5
+    long-to-int v5, v5
 
     .line 158
-    int-to-byte v5, v6
+    int-to-byte v5, v5
 
     .line 159
     invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -607,10 +607,10 @@
     and-long/2addr v5, v7
 
     .line 171
-    long-to-int v6, v5
+    long-to-int v5, v5
 
     .line 172
-    int-to-byte v5, v6
+    int-to-byte v5, v5
 
     .line 173
     invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -637,10 +637,10 @@
     and-long/2addr v5, v7
 
     .line 185
-    long-to-int v6, v5
+    long-to-int v5, v5
 
     .line 186
-    int-to-byte v5, v6
+    int-to-byte v5, v5
 
     .line 187
     invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -667,10 +667,10 @@
     and-long/2addr v5, v7
 
     .line 199
-    long-to-int v6, v5
+    long-to-int v5, v5
 
     .line 200
-    int-to-byte v5, v6
+    int-to-byte v5, v5
 
     .line 201
     invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -697,10 +697,10 @@
     and-long/2addr v5, v7
 
     .line 213
-    long-to-int v6, v5
+    long-to-int v5, v5
 
     .line 214
-    int-to-byte v5, v6
+    int-to-byte v5, v5
 
     .line 215
     invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -719,10 +719,10 @@
     and-long/2addr v3, v7
 
     .line 223
-    long-to-int v4, v3
+    long-to-int v3, v3
 
     .line 224
-    int-to-byte v3, v4
+    int-to-byte v3, v3
 
     .line 225
     invoke-static {v3}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -805,7 +805,7 @@
     .line 263
     .line 264
     .line 265
-    sget-object v3, Lpk7;->a:Lpk7;
+    sget-object v3, Lif8;->a:Lif8;
 
     .line 266
     .line 267
@@ -813,7 +813,7 @@
 
     .line 268
     .line 269
-    invoke-static {v3}, Lpk7;->t(Ljava/lang/String;)[B
+    invoke-static {v3}, Lif8;->r(Ljava/lang/String;)[B
 
     .line 270
     .line 271
@@ -891,7 +891,7 @@
 
     .line 308
     .line 309
-    invoke-static {v3}, Lpk7;->t(Ljava/lang/String;)[B
+    invoke-static {v3}, Lif8;->r(Ljava/lang/String;)[B
 
     .line 310
     .line 311
@@ -1039,34 +1039,34 @@
     .line 381
     .line 382
     .line 383
-    move-result v0
+    move-result p0
 
     .line 384
-    const-string v1, "pids list exceeds 255 entries (got "
+    const-string v0, "pids list exceeds 255 entries (got "
 
     .line 385
     .line 386
-    const-string v2, ")"
+    const-string v1, ")"
 
     .line 387
     .line 388
-    invoke-static {v1, v0, v2}, Lea0;->p(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0, v1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     .line 389
     .line 390
     .line 391
-    move-result-object v0
+    move-result-object p0
 
     .line 392
-    invoke-static {v0}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 393
     .line 394
     .line 395
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 396
-    return-object v0
+    return-object p0
 
     .line 397
     :cond_5
@@ -1129,32 +1129,32 @@
     .line 425
     .line 426
     .line 427
-    iget-object v1, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->tid:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->tid:Ljava/lang/String;
 
     .line 428
     .line 429
-    if-eqz v1, :cond_8
+    if-eqz p0, :cond_8
 
     .line 430
     .line 431
-    sget-object v3, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
+    sget-object v1, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     .line 432
     .line 433
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 434
     .line 435
     .line 436
-    invoke-virtual {v1, v3}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+    invoke-virtual {p0, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
     .line 437
     .line 438
     .line 439
-    move-result-object v1
+    move-result-object p0
 
     .line 440
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 441
     .line 442
@@ -1163,12 +1163,12 @@
 
     .line 444
     :cond_8
-    new-array v1, v0, [B
+    new-array p0, v0, [B
 
     .line 445
     .line 446
     :goto_6
-    invoke-static {v2, v1}, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Companion;->b(Ljava/util/ArrayList;[B)V
+    invoke-static {v2, p0}, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Companion;->b(Ljava/util/ArrayList;[B)V
 
     .line 447
     .line 448
@@ -1178,10 +1178,10 @@
     .line 450
     .line 451
     .line 452
-    move-result v1
+    move-result p0
 
     .line 453
-    new-array v1, v1, [B
+    new-array p0, p0, [B
 
     .line 454
     .line 455
@@ -1190,69 +1190,69 @@
     .line 456
     .line 457
     .line 458
-    move-result-object v2
+    move-result-object v1
 
     .line 459
     :goto_7
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 460
     .line 461
     .line 462
-    move-result v3
+    move-result v2
 
     .line 463
-    if-eqz v3, :cond_9
+    if-eqz v2, :cond_9
 
     .line 464
     .line 465
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 466
     .line 467
     .line 468
-    move-result-object v3
+    move-result-object v2
 
     .line 469
-    check-cast v3, Ljava/lang/Number;
+    check-cast v2, Ljava/lang/Number;
 
     .line 470
     .line 471
-    invoke-virtual {v3}, Ljava/lang/Number;->byteValue()B
+    invoke-virtual {v2}, Ljava/lang/Number;->byteValue()B
 
     .line 472
     .line 473
     .line 474
-    move-result v3
+    move-result v2
 
     .line 475
-    add-int/lit8 v4, v0, 0x1
+    add-int/lit8 v3, v0, 0x1
 
     .line 476
     .line 477
-    aput-byte v3, v1, v0
+    aput-byte v2, p0, v0
 
     .line 478
     .line 479
-    move v0, v4
+    move v0, v3
 
     .line 480
     goto :goto_7
 
     .line 481
     :cond_9
-    return-object v1
+    return-object p0
 .end method
 
 .method public final b()Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->url:Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
+    iget-object p0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->url:Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -1381,7 +1381,7 @@
 
     .line 58
     .line 59
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 60
     .line 61
@@ -1401,7 +1401,7 @@
 
     .line 68
     .line 69
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 70
     .line 71
@@ -1421,7 +1421,7 @@
 
     .line 78
     .line 79
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 80
     .line 81
@@ -1441,7 +1441,7 @@
 
     .line 88
     .line 89
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 90
     .line 91
@@ -1461,7 +1461,7 @@
 
     .line 98
     .line 99
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 100
     .line 101
@@ -1481,7 +1481,7 @@
 
     .line 108
     .line 109
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 110
     .line 111
@@ -1501,7 +1501,7 @@
 
     .line 118
     .line 119
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 120
     .line 121
@@ -1533,7 +1533,7 @@
 
     .line 134
     .line 135
-    iget-object v1, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->domainHash:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->domainHash:Ljava/lang/String;
 
     .line 136
     .line 137
@@ -1541,15 +1541,15 @@
 
     .line 138
     .line 139
-    invoke-static {v1, p1}, Lzl6;->X(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-static {p0, p1}, Lla7;->y0(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 140
     .line 141
     .line 142
-    move-result p1
+    move-result p0
 
     .line 143
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 144
     .line 145
@@ -1580,340 +1580,327 @@
 
     .line 8
     .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 10
-    .line 11
     iget v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->apiMajor:I
 
+    .line 11
     .line 12
-    .line 13
     add-int/2addr v0, v2
 
+    .line 13
+    mul-int/2addr v0, v1
+
     .line 14
-    mul-int/lit8 v0, v0, 0x1f
+    iget v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->apiMinor:I
 
     .line 15
     .line 16
-    iget v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->apiMinor:I
+    add-int/2addr v0, v2
 
     .line 17
+    mul-int/2addr v0, v1
+
     .line 18
-    add-int/2addr v0, v2
-
-    .line 19
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 20
-    .line 21
     iget v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->appMajor:I
 
-    .line 22
-    .line 23
+    .line 19
+    .line 20
     add-int/2addr v0, v2
 
+    .line 21
+    mul-int/2addr v0, v1
+
+    .line 22
+    iget v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->appMinor:I
+
+    .line 23
     .line 24
-    mul-int/lit8 v0, v0, 0x1f
+    add-int/2addr v0, v2
 
     .line 25
+    mul-int/2addr v0, v1
+
     .line 26
-    iget v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->appMinor:I
+    iget v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->appPatch:I
 
     .line 27
     .line 28
     add-int/2addr v0, v2
 
     .line 29
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 30
-    .line 31
-    iget v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->appPatch:I
-
-    .line 32
-    .line 33
-    add-int/2addr v0, v2
-
-    .line 34
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 35
-    .line 36
     iget-object v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->url:Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
 
-    .line 37
-    .line 38
+    .line 31
+    .line 32
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v2
+
+    .line 36
+    add-int/2addr v2, v0
+
+    .line 37
+    mul-int/2addr v2, v1
+
+    .line 38
+    iget-object v0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->subExpire:Ljava/lang/Long;
 
     .line 39
     .line 40
+    const/4 v3, 0x0
+
     .line 41
-    move-result v2
+    if-eqz v0, :cond_0
 
     .line 42
-    add-int/2addr v2, v0
-
     .line 43
-    mul-int/lit8 v2, v2, 0x1f
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 44
     .line 45
-    iget-object v0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->subExpire:Ljava/lang/Long;
-
     .line 46
-    .line 47
-    const/4 v3, 0x0
-
-    .line 48
-    if-eqz v0, :cond_0
-
-    .line 49
-    .line 50
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 51
-    .line 52
-    .line 53
     move-result v0
 
-    .line 54
+    .line 47
     goto :goto_0
 
-    .line 55
+    .line 48
     :cond_0
-    const/4 v0, 0x0
+    move v0, v3
 
-    .line 56
+    .line 49
     :goto_0
     add-int/2addr v2, v0
 
+    .line 50
+    mul-int/2addr v2, v1
+
+    .line 51
+    iget-object v0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->osVersion:Ljava/lang/String;
+
+    .line 52
+    .line 53
+    invoke-static {v2, v1, v0}, Leb7;->e(IILjava/lang/String;)I
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v0
+
     .line 57
-    mul-int/lit8 v2, v2, 0x1f
+    iget-object v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->bundleId:Ljava/lang/String;
 
     .line 58
     .line 59
-    iget-object v0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->osVersion:Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
     .line 60
     .line 61
-    invoke-static {v2, v1, v0}, Lxy4;->p(IILjava/lang/String;)I
-
     .line 62
-    .line 63
-    .line 64
     move-result v0
 
+    .line 63
+    iget-object v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->deviceModel:Ljava/lang/String;
+
+    .line 64
     .line 65
-    iget-object v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->bundleId:Ljava/lang/String;
+    if-eqz v2, :cond_1
 
     .line 66
     .line 67
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 68
     .line 69
     .line 70
-    move-result v0
-
-    .line 71
-    iget-object v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->deviceModel:Ljava/lang/String;
-
-    .line 72
-    .line 73
-    if-eqz v2, :cond_1
-
-    .line 74
-    .line 75
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    .line 76
-    .line 77
-    .line 78
     move-result v2
 
-    .line 79
+    .line 71
     goto :goto_1
 
-    .line 80
+    .line 72
     :cond_1
-    const/4 v2, 0x0
+    move v2, v3
 
-    .line 81
+    .line 73
     :goto_1
     add-int/2addr v0, v2
 
-    .line 82
-    mul-int/lit8 v0, v0, 0x1f
+    .line 74
+    mul-int/2addr v0, v1
 
-    .line 83
-    .line 84
+    .line 75
     iget-object v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->pids:Ljava/util/List;
 
-    .line 85
-    .line 86
+    .line 76
+    .line 77
     if-eqz v2, :cond_2
 
-    .line 87
-    .line 88
+    .line 78
+    .line 79
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    .line 89
-    .line 90
-    .line 91
+    .line 80
+    .line 81
+    .line 82
     move-result v2
 
-    .line 92
+    .line 83
     goto :goto_2
 
-    .line 93
+    .line 84
     :cond_2
-    const/4 v2, 0x0
+    move v2, v3
 
-    .line 94
+    .line 85
     :goto_2
     add-int/2addr v0, v2
 
-    .line 95
-    mul-int/lit8 v0, v0, 0x1f
+    .line 86
+    mul-int/2addr v0, v1
 
-    .line 96
-    .line 97
+    .line 87
     iget-object v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->iid:Ljava/lang/String;
 
-    .line 98
-    .line 99
+    .line 88
+    .line 89
     if-eqz v2, :cond_3
 
-    .line 100
-    .line 101
+    .line 90
+    .line 91
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    .line 102
-    .line 103
-    .line 104
+    .line 92
+    .line 93
+    .line 94
     move-result v2
 
-    .line 105
+    .line 95
     goto :goto_3
 
-    .line 106
+    .line 96
     :cond_3
-    const/4 v2, 0x0
+    move v2, v3
 
-    .line 107
+    .line 97
     :goto_3
     add-int/2addr v0, v2
 
-    .line 108
-    mul-int/lit8 v0, v0, 0x1f
+    .line 98
+    mul-int/2addr v0, v1
 
-    .line 109
-    .line 110
+    .line 99
     iget-object v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->tid:Ljava/lang/String;
 
-    .line 111
-    .line 112
+    .line 100
+    .line 101
     if-eqz v2, :cond_4
 
-    .line 113
-    .line 114
+    .line 102
+    .line 103
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    .line 115
-    .line 116
-    .line 117
+    .line 104
+    .line 105
+    .line 106
     move-result v3
 
-    .line 118
+    .line 107
     :cond_4
     add-int/2addr v0, v3
 
-    .line 119
-    mul-int/lit8 v0, v0, 0x1f
+    .line 108
+    mul-int/2addr v0, v1
 
-    .line 120
-    .line 121
+    .line 109
     iget-object v2, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->hwid:Ljava/lang/String;
 
-    .line 122
-    .line 123
-    sget-object v3, Lnh0;->a:Ljava/nio/charset/Charset;
+    .line 110
+    .line 111
+    sget-object v3, Lho0;->a:Ljava/nio/charset/Charset;
 
-    .line 124
-    .line 125
+    .line 112
+    .line 113
     invoke-virtual {v2, v3}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
-    .line 126
-    .line 127
-    .line 128
+    .line 114
+    .line 115
+    .line 116
     move-result-object v2
 
-    .line 129
+    .line 117
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 130
-    .line 131
-    .line 132
+    .line 118
+    .line 119
+    .line 120
     invoke-static {v2}, Ljava/util/Arrays;->hashCode([B)I
 
-    .line 133
-    .line 134
-    .line 135
+    .line 121
+    .line 122
+    .line 123
     move-result v2
 
-    .line 136
+    .line 124
     add-int/2addr v2, v0
 
+    .line 125
+    mul-int/2addr v2, v1
+
+    .line 126
+    iget-object p0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->domainHash:Ljava/lang/String;
+
+    .line 127
+    .line 128
+    if-eqz p0, :cond_5
+
+    .line 129
+    .line 130
+    invoke-virtual {p0, v3}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    .line 131
+    .line 132
+    .line 133
+    move-result-object p0
+
+    .line 134
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 135
+    .line 136
     .line 137
-    mul-int/lit8 v2, v2, 0x1f
+    goto :goto_4
 
     .line 138
+    :cond_5
+    const/4 p0, 0x0
+
     .line 139
-    iget-object v0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->domainHash:Ljava/lang/String;
+    :goto_4
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([B)I
 
     .line 140
     .line 141
-    if-eqz v0, :cond_5
-
     .line 142
+    move-result p0
+
     .line 143
-    invoke-virtual {v0, v3}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+    add-int/2addr p0, v2
 
     .line 144
-    .line 145
-    .line 146
-    move-result-object v0
-
-    .line 147
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 148
-    .line 149
-    .line 150
-    goto :goto_4
-
-    .line 151
-    :cond_5
-    const/4 v0, 0x0
-
-    .line 152
-    :goto_4
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
-
-    .line 153
-    .line 154
-    .line 155
-    move-result v0
-
-    .line 156
-    add-int/2addr v0, v2
-
-    .line 157
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 18
+    .locals 17
 
     .line 1
     move-object/from16 v0, p0
@@ -1980,11 +1967,11 @@
 
     .line 32
     .line 33
-    move-object/from16 v16, v15
+    iget-object v0, v0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->tid:Ljava/lang/String;
 
     .line 34
     .line 35
-    iget-object v15, v0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope;->tid:Ljava/lang/String;
+    move-object/from16 p0, v0
 
     .line 36
     .line 37
@@ -1992,7 +1979,7 @@
 
     .line 38
     .line 39
-    move-object/from16 v17, v15
+    move-object/from16 v16, v15
 
     .line 40
     .line 41
@@ -2033,187 +2020,137 @@
     .line 60
     .line 61
     .line 62
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v1, ", appMajor="
 
     .line 63
     .line 64
+    const-string v2, ", appMinor="
+
     .line 65
-    const-string v1, ", appMajor="
-
     .line 66
-    .line 67
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v3, v1, v4, v2}, Lc73;->t(Ljava/lang/StringBuilder;ILjava/lang/String;ILjava/lang/String;)V
 
+    .line 67
     .line 68
     .line 69
-    .line 70
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v1, ", appPatch="
 
+    .line 70
     .line 71
+    const-string v2, ", url="
+
     .line 72
     .line 73
-    const-string v1, ", appMinor="
+    invoke-static {v0, v5, v1, v6, v2}, Lc73;->t(Ljava/lang/StringBuilder;ILjava/lang/String;ILjava/lang/String;)V
 
     .line 74
     .line 75
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 76
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 77
     .line 78
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 79
+    const-string v1, ", subExpire="
+
     .line 80
     .line 81
-    const-string v1, ", appPatch="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 82
     .line 83
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 84
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 85
     .line 86
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 87
+    const-string v1, ", osVersion="
+
     .line 88
     .line 89
-    const-string v1, ", url="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 90
     .line 91
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 92
+    const-string v1, ", hwid="
+
     .line 93
     .line 94
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, ", bundleId="
 
     .line 95
     .line 96
-    .line 97
-    const-string v1, ", subExpire="
+    invoke-static {v0, v9, v1, v10, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 97
     .line 98
     .line 99
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, ", deviceModel="
 
     .line 100
     .line 101
-    .line 102
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, ", domainHash="
 
+    .line 102
     .line 103
+    invoke-static {v0, v11, v1, v12, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
     .line 104
     .line 105
-    const-string v1, ", osVersion="
-
     .line 106
-    .line 107
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 107
     .line 108
     .line 109
+    const-string v1, ", pids="
+
     .line 110
-    const-string v1, ", hwid="
-
     .line 111
-    .line 112
-    const-string v2, ", bundleId="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 112
     .line 113
     .line 114
-    invoke-static {v0, v9, v1, v10, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 115
     .line 116
     .line 117
-    const-string v1, ", deviceModel="
+    const-string v1, ", iid="
 
     .line 118
     .line 119
-    const-string v2, ", domainHash="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 120
     .line 121
-    invoke-static {v0, v11, v1, v12, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
     .line 122
+    const-string v1, ", tid="
+
     .line 123
     .line 124
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ")"
 
     .line 125
     .line 126
+    move-object/from16 v4, p0
+
     .line 127
-    const-string v1, ", pids="
-
     .line 128
-    .line 129
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v3, v16
 
+    .line 129
     .line 130
+    invoke-static {v0, v3, v1, v4, v2}, Leh0;->s(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
     .line 131
     .line 132
-    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 133
-    .line 134
-    .line 135
-    const-string v1, ", iid="
-
-    .line 136
-    .line 137
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 138
-    .line 139
-    .line 140
-    move-object/from16 v1, v16
-
-    .line 141
-    .line 142
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 143
-    .line 144
-    .line 145
-    const-string v1, ", tid="
-
-    .line 146
-    .line 147
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 148
-    .line 149
-    .line 150
-    move-object/from16 v1, v17
-
-    .line 151
-    .line 152
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 153
-    .line 154
-    .line 155
-    const-string v1, ")"
-
-    .line 156
-    .line 157
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 158
-    .line 159
-    .line 160
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 161
-    .line 162
-    .line 163
     move-result-object v0
 
-    .line 164
+    .line 134
     return-object v0
 .end method

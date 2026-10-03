@@ -1,35 +1,61 @@
 .class public final Lwp3;
-.super Ldd7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lck3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ldd7<",
-        "Ljava/util/List<",
-        "+",
-        "Lsu/happ/proxyutility/dto/LogFileInfo;",
-        ">;>;"
-    }
-.end annotation
+# static fields
+.field public static final q:Ljava/util/regex/Pattern;
 
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\u0008\n\u0018\u00002\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00020\u0001\u00a8\u0006\u0004"
-    }
-    d2 = {
-        "Lwp3;",
-        "Ldd7;",
-        "",
-        "Lsu/happ/proxyutility/dto/LogFileInfo;",
-        "app"
-    }
-    k = 0x1
-    mv = {
-        0x2,
-        0x4,
-        0x0
-    }
-    xi = 0x30
-.end annotation
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    const-string v0, "([a-zA-Z]{2}|[0-9]{3})[zZ]{4}"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    sput-object v0, Lwp3;->q:Ljava/util/regex/Pattern;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final H(Ljava/lang/String;)Z
+    .locals 0
+
+    .line 1
+    sget-object p0, Lwp3;->q:Ljava/util/regex/Pattern;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-virtual {p0}, Ljava/util/regex/Matcher;->matches()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method

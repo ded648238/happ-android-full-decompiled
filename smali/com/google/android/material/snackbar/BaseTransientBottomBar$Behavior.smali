@@ -1,6 +1,6 @@
 .class public Lcom/google/android/material/snackbar/BaseTransientBottomBar$Behavior;
 .super Lcom/google/android/material/behavior/SwipeDismissBehavior;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field public final i:Lrb5;
+.field public final i:Lym2;
 
 
 # direct methods
@@ -27,83 +27,90 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lrb5;
+    new-instance v0, Lym2;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/16 v1, 0xb
 
     .line 7
     .line 8
+    const/4 v2, 0x0
+
     .line 9
-    const/4 v1, 0x0
+    invoke-direct {v0, v1, v2}, Lym2;-><init>(IZ)V
 
     .line 10
-    const v2, 0x3dcccccd    # 0.1f
-
     .line 11
     .line 12
+    const/4 v1, 0x0
+
     .line 13
-    invoke-static {v1, v2}, Ljava/lang/Math;->max(FF)F
+    const v2, 0x3dcccccd    # 0.1f
 
     .line 14
     .line 15
     .line 16
-    move-result v2
+    invoke-static {v1, v2}, Ljava/lang/Math;->max(FF)F
 
     .line 17
-    const/high16 v3, 0x3f800000    # 1.0f
-
     .line 18
     .line 19
-    invoke-static {v2, v3}, Ljava/lang/Math;->min(FF)F
-
-    .line 20
-    .line 21
-    .line 22
     move-result v2
 
-    .line 23
-    iput v2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->f:F
+    .line 20
+    const/high16 v3, 0x3f800000    # 1.0f
 
+    .line 21
+    .line 22
+    invoke-static {v2, v3}, Ljava/lang/Math;->min(FF)F
+
+    .line 23
     .line 24
     .line 25
-    const v2, 0x3f19999a    # 0.6f
+    move-result v2
 
     .line 26
+    iput v2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->f:F
+
     .line 27
     .line 28
-    invoke-static {v1, v2}, Ljava/lang/Math;->max(FF)F
+    const v2, 0x3f19999a    # 0.6f
 
     .line 29
     .line 30
     .line 31
-    move-result v1
+    invoke-static {v1, v2}, Ljava/lang/Math;->max(FF)F
 
     .line 32
-    invoke-static {v1, v3}, Ljava/lang/Math;->min(FF)F
-
     .line 33
     .line 34
-    .line 35
     move-result v1
 
-    .line 36
-    iput v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->g:F
+    .line 35
+    invoke-static {v1, v3}, Ljava/lang/Math;->min(FF)F
 
+    .line 36
     .line 37
     .line 38
-    const/4 v1, 0x0
+    move-result v1
 
     .line 39
-    iput v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->e:I
+    iput v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->g:F
 
     .line 40
     .line 41
-    iput-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$Behavior;->i:Lrb5;
+    const/4 v1, 0x0
 
     .line 42
+    iput v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->e:I
+
     .line 43
+    .line 44
+    iput-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$Behavior;->i:Lym2;
+
+    .line 45
+    .line 46
     return-void
 .end method
 
@@ -113,7 +120,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$Behavior;->i:Lrb5;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$Behavior;->i:Lym2;
 
     .line 2
     .line 3
@@ -152,7 +159,7 @@
 
     .line 19
     :cond_0
-    invoke-static {}, Lf76;->v()Lf76;
+    invoke-static {}, Lqn6;->f()Lqn6;
 
     .line 20
     .line 21
@@ -160,15 +167,15 @@
     move-result-object v1
 
     .line 23
-    iget-object v0, v0, Lrb5;->Q:Ljava/lang/Object;
+    iget-object v0, v0, Lym2;->Y:Ljava/lang/Object;
 
     .line 24
     .line 25
-    check-cast v0, Ldz;
+    check-cast v0, Lh10;
 
     .line 26
     .line 27
-    invoke-virtual {v1, v0}, Lf76;->B(Ldz;)V
+    invoke-virtual {v1, v0}, Lqn6;->n(Lh10;)V
 
     .line 28
     .line 29
@@ -211,7 +218,7 @@
 
     .line 46
     .line 47
-    invoke-static {}, Lf76;->v()Lf76;
+    invoke-static {}, Lqn6;->f()Lqn6;
 
     .line 48
     .line 49
@@ -219,15 +226,15 @@
     move-result-object v1
 
     .line 51
-    iget-object v0, v0, Lrb5;->Q:Ljava/lang/Object;
+    iget-object v0, v0, Lym2;->Y:Ljava/lang/Object;
 
     .line 52
     .line 53
-    check-cast v0, Ldz;
+    check-cast v0, Lh10;
 
     .line 54
     .line 55
-    invoke-virtual {v1, v0}, Lf76;->A(Ldz;)V
+    invoke-virtual {v1, v0}, Lqn6;->m(Lh10;)V
 
     .line 56
     .line 57
@@ -239,28 +246,28 @@
     .line 59
     .line 60
     .line 61
-    move-result p1
+    move-result p0
 
     .line 62
-    return p1
+    return p0
 .end method
 
 .method public final v(Landroid/view/View;)Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$Behavior;->i:Lrb5;
+    iget-object p0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$Behavior;->i:Lym2;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    instance-of p1, p1, Lfz;
+    instance-of p0, p1, Lj10;
 
     .line 7
     .line 8
-    return p1
+    return p0
 .end method

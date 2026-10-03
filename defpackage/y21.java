@@ -1,11 +1,114 @@
 package defpackage;
 
-import android.view.Window;
+import android.content.Context;
+import android.content.ContextWrapper;
+import android.content.res.AssetManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Build;
+import android.view.LayoutInflater;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface y21 {
-    void setWindowCallback(Window.Callback callback);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class y21 extends ContextWrapper {
+    public static Configuration f;
+    public int a;
+    public Resources.Theme b;
+    public LayoutInflater c;
+    public Configuration d;
+    public Resources e;
 
-    void setWindowTitle(CharSequence charSequence);
+    public y21(Context context, int i) {
+        super(context);
+        this.a = i;
+    }
+
+    public final void a(Configuration configuration) {
+        if (this.e != null) {
+            i60.g("getResources() or getAssets() has already been called");
+        } else if (this.d == null) {
+            this.d = new Configuration(configuration);
+        } else {
+            i60.g("Override configuration has already been set");
+        }
+    }
+
+    @Override // android.content.ContextWrapper
+    public final void attachBaseContext(Context context) {
+        super.attachBaseContext(context);
+    }
+
+    public final void b() {
+        if (this.b == null) {
+            this.b = getResources().newTheme();
+            Resources.Theme theme = getBaseContext().getTheme();
+            if (theme != null) {
+                this.b.setTo(theme);
+            }
+        }
+        this.b.applyStyle(this.a, true);
+    }
+
+    @Override // android.content.ContextWrapper, android.content.Context
+    public final AssetManager getAssets() {
+        return getResources().getAssets();
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:11:0x0022, code lost:
+    
+        if (r0.equals(defpackage.y21.f) != false) goto L15;
+     */
+    @Override // android.content.ContextWrapper, android.content.Context
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Resources getResources() {
+        if (this.e == null) {
+            Configuration configuration = this.d;
+            if (configuration != null) {
+                if (Build.VERSION.SDK_INT >= 26) {
+                    if (f == null) {
+                        Configuration configuration2 = new Configuration();
+                        configuration2.fontScale = 0.0f;
+                        f = configuration2;
+                    }
+                }
+                this.e = createConfigurationContext(this.d).getResources();
+            }
+            this.e = super.getResources();
+        }
+        return this.e;
+    }
+
+    @Override // android.content.ContextWrapper, android.content.Context
+    public final Object getSystemService(String str) {
+        if (!"layout_inflater".equals(str)) {
+            return getBaseContext().getSystemService(str);
+        }
+        if (this.c == null) {
+            this.c = LayoutInflater.from(getBaseContext()).cloneInContext(this);
+        }
+        return this.c;
+    }
+
+    @Override // android.content.ContextWrapper, android.content.Context
+    public final Resources.Theme getTheme() {
+        Resources.Theme theme = this.b;
+        if (theme != null) {
+            return theme;
+        }
+        if (this.a == 0) {
+            this.a = pu5.Theme_AppCompat_Light;
+        }
+        b();
+        return this.b;
+    }
+
+    @Override // android.content.ContextWrapper, android.content.Context
+    public final void setTheme(int i) {
+        if (this.a != i) {
+            this.a = i;
+            b();
+        }
+    }
 }

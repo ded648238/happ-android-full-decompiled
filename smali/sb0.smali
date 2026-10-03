@@ -1,203 +1,323 @@
-.class public final enum Lsb0;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lsb0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final enum Q:Lsb0;
+# instance fields
+.field public a:Ljava/lang/Object;
 
-.field public static final enum R:Lsb0;
+.field public b:Lwb0;
 
-.field public static final enum S:Lsb0;
+.field public c:Lz36;
 
-.field public static final enum T:Lsb0;
-
-.field public static final enum U:Lsb0;
-
-.field public static final synthetic V:[Lsb0;
+.field public d:Z
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 11
+# virtual methods
+.method public final a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lsb0;
+    iget-object p0, p0, Lsb0;->c:Lz36;
 
     .line 2
     .line 3
-    const-string v1, "UNKNOWN"
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    invoke-virtual {p0, p1, p2}, Lr2;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public final b(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lsb0;->d:Z
+
+    .line 3
+    .line 4
+    iget-object v1, p0, Lsb0;->b:Lwb0;
+
+    .line 5
+    .line 6
+    if-eqz v1, :cond_0
 
     .line 7
     .line 8
+    iget-object v1, v1, Lwb0;->Y:Lvb0;
+
     .line 9
-    sput-object v0, Lsb0;->Q:Lsb0;
-
     .line 10
-    .line 11
-    new-instance v1, Lsb0;
+    invoke-virtual {v1, p1}, Lr2;->j(Ljava/lang/Object;)Z
 
+    .line 11
     .line 12
     .line 13
-    const-string v3, "INACTIVE"
+    move-result p1
 
     .line 14
-    .line 15
-    const/4 v4, 0x1
+    if-eqz p1, :cond_0
 
+    .line 15
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    goto :goto_0
 
     .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lsb0;->R:Lsb0;
+    :cond_0
+    const/4 v0, 0x0
 
+    .line 18
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 19
     .line 20
+    const/4 p1, 0x0
+
     .line 21
-    new-instance v3, Lsb0;
+    iput-object p1, p0, Lsb0;->a:Ljava/lang/Object;
 
     .line 22
     .line 23
-    const-string v5, "METERING"
+    iput-object p1, p0, Lsb0;->b:Lwb0;
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    iput-object p1, p0, Lsb0;->c:Lz36;
 
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 27
+    :cond_1
+    return v0
+.end method
+
+.method public final c()V
+    .locals 2
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lsb0;->d:Z
+
+    .line 3
+    .line 4
+    iget-object v1, p0, Lsb0;->b:Lwb0;
+
+    .line 5
+    .line 6
+    if-eqz v1, :cond_0
+
+    .line 7
+    .line 8
+    iget-object v1, v1, Lwb0;->Y:Lvb0;
+
+    .line 9
+    .line 10
+    invoke-virtual {v1, v0}, Lr2;->cancel(Z)Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    if-eqz v0, :cond_0
+
+    .line 15
+    .line 16
+    const/4 v0, 0x0
+
+    .line 17
+    iput-object v0, p0, Lsb0;->a:Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    iput-object v0, p0, Lsb0;->b:Lwb0;
+
+    .line 20
+    .line 21
+    iput-object v0, p0, Lsb0;->c:Lz36;
+
+    .line 22
+    .line 23
+    :cond_0
+    return-void
+.end method
+
+.method public final d(Ljava/lang/Throwable;)Z
+    .locals 2
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lsb0;->d:Z
+
+    .line 3
+    .line 4
+    iget-object v1, p0, Lsb0;->b:Lwb0;
+
+    .line 5
+    .line 6
+    if-eqz v1, :cond_0
+
+    .line 7
+    .line 8
+    iget-object v1, v1, Lwb0;->Y:Lvb0;
+
+    .line 9
+    .line 10
+    invoke-virtual {v1, p1}, Lr2;->k(Ljava/lang/Throwable;)Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    if-eqz p1, :cond_0
+
+    .line 15
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 18
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 19
+    .line 20
+    const/4 p1, 0x0
+
+    .line 21
+    iput-object p1, p0, Lsb0;->a:Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    iput-object p1, p0, Lsb0;->b:Lwb0;
+
+    .line 24
+    .line 25
+    iput-object p1, p0, Lsb0;->c:Lz36;
+
+    .line 26
+    .line 27
+    :cond_1
+    return v0
+.end method
+
+.method public final finalize()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lsb0;->b:Lwb0;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v1, v0, Lwb0;->Y:Lvb0;
+
+    .line 6
+    .line 7
+    invoke-virtual {v1}, Lr2;->isDone()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    if-nez v1, :cond_0
+
+    .line 12
+    .line 13
+    new-instance v1, Ltb0;
+
+    .line 14
+    .line 15
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    const-string v3, "The completer object was garbage collected - this future would otherwise never complete. The tag was: "
+
+    .line 18
+    .line 19
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    iget-object v3, p0, Lsb0;->a:Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 28
     .line 29
-    sput-object v3, Lsb0;->S:Lsb0;
-
     .line 30
+    move-result-object v2
+
     .line 31
-    new-instance v5, Lsb0;
+    invoke-direct {v1, v2}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
     .line 32
     .line 33
-    const-string v7, "CONVERGED"
-
     .line 34
+    invoke-virtual {v0, v1}, Lwb0;->b(Ljava/lang/Throwable;)Z
+
     .line 35
-    const/4 v8, 0x3
-
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 37
+    :cond_0
+    iget-boolean v0, p0, Lsb0;->d:Z
+
     .line 38
     .line 39
-    sput-object v5, Lsb0;->T:Lsb0;
+    if-nez v0, :cond_1
 
     .line 40
     .line 41
-    new-instance v7, Lsb0;
+    iget-object p0, p0, Lsb0;->c:Lz36;
 
     .line 42
     .line 43
-    const-string v9, "LOCKED"
+    if-eqz p0, :cond_1
 
     .line 44
     .line 45
-    const/4 v10, 0x4
+    const/4 v0, 0x0
 
     .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {p0, v0}, Lr2;->j(Ljava/lang/Object;)Z
 
     .line 47
     .line 48
     .line 49
-    sput-object v7, Lsb0;->U:Lsb0;
-
-    .line 50
-    .line 51
-    const/4 v9, 0x5
-
-    .line 52
-    new-array v9, v9, [Lsb0;
-
-    .line 53
-    .line 54
-    aput-object v0, v9, v2
-
-    .line 55
-    .line 56
-    aput-object v1, v9, v4
-
-    .line 57
-    .line 58
-    aput-object v3, v9, v6
-
-    .line 59
-    .line 60
-    aput-object v5, v9, v8
-
-    .line 61
-    .line 62
-    aput-object v7, v9, v10
-
-    .line 63
-    .line 64
-    sput-object v9, Lsb0;->V:[Lsb0;
-
-    .line 65
-    .line 66
+    :cond_1
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lsb0;
-    .locals 1
-
-    .line 1
-    const-class v0, Lsb0;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lsb0;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lsb0;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lsb0;->V:[Lsb0;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Lsb0;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lsb0;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

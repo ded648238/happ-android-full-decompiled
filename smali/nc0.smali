@@ -1,195 +1,162 @@
-.class public Lnc0;
-.super Ldv7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lnc0;
+.super Lgc0;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ld60;
 
 
-# virtual methods
-.method public s(Lp76;)V
-    .locals 5
+# instance fields
+.field public final f:Z
+
+.field public final g:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/reflect/Method;ZLjava/lang/Object;)V
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Ldv7;->R:Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/lang/reflect/Method;->getGenericParameterTypes()[Ljava/lang/reflect/Type;
 
     .line 2
     .line 3
-    check-cast v0, Landroid/hardware/camera2/CameraDevice;
-
     .line 4
+    move-result-object v0
+
     .line 5
-    invoke-static {v0, p1}, Ldv7;->q(Landroid/hardware/camera2/CameraDevice;Lp76;)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
     .line 7
     .line 8
-    new-instance v1, Lac0;
+    array-length v1, v0
 
     .line 9
+    const/4 v2, 0x0
+
     .line 10
-    iget-object p1, p1, Lp76;->a:Lo76;
+    const/4 v3, 0x1
 
     .line 11
-    .line 12
-    invoke-interface {p1}, Lo76;->c()Ljava/util/concurrent/Executor;
+    if-gt v1, v3, :cond_0
 
+    .line 12
     .line 13
+    new-array v0, v2, [Ljava/lang/reflect/Type;
+
     .line 14
     .line 15
-    move-result-object v2
+    goto :goto_0
 
     .line 16
-    invoke-interface {p1}, Lo76;->e()Landroid/hardware/camera2/CameraCaptureSession$StateCallback;
+    :cond_0
+    array-length v1, v0
 
     .line 17
+    invoke-static {v0, v3, v1}, Lkt;->r0([Ljava/lang/Object;II)[Ljava/lang/Object;
+
     .line 18
     .line 19
-    move-result-object v3
-
     .line 20
-    invoke-direct {v1, v2, v3}, Lac0;-><init>(Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;)V
+    move-result-object v0
 
     .line 21
+    :goto_0
+    check-cast v0, [Ljava/lang/reflect/Type;
+
     .line 22
     .line 23
-    invoke-interface {p1}, Lo76;->f()Ljava/util/List;
+    invoke-direct {p0, p1, v2, v0}, Lgc0;-><init>(Ljava/lang/reflect/Method;Z[Ljava/lang/reflect/Type;)V
 
     .line 24
     .line 25
     .line 26
-    move-result-object v2
+    iput-boolean p2, p0, Lnc0;->f:Z
 
     .line 27
-    invoke-static {v2}, Ldv7;->M(Ljava/util/List;)Ljava/util/ArrayList;
+    .line 28
+    iput-object p3, p0, Lnc0;->g:Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d([Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    array-length v0, p1
+
+    .line 2
+    invoke-virtual {p0, v0}, Lpc0;->e(I)V
+
+    .line 3
+    .line 4
+    .line 5
+    new-instance v0, Lur;
+
+    .line 6
+    .line 7
+    const/4 v1, 0x2
+
+    .line 8
+    invoke-direct {v0, v1}, Lur;-><init>(I)V
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object v1, p0, Lnc0;->g:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Lur;->c(Ljava/lang/Object;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v0, p1}, Lur;->e(Ljava/lang/Object;)V
+
+    .line 17
+    .line 18
+    .line 19
+    iget-object p1, v0, Lur;->b:Ljava/util/ArrayList;
+
+    .line 20
+    .line 21
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v0
+
+    .line 25
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 28
     .line 29
     .line 30
-    move-result-object v2
+    move-result-object p1
 
     .line 31
-    iget-object v3, p0, Ldv7;->S:Ljava/lang/Object;
+    const/4 v0, 0x0
 
     .line 32
-    .line 33
-    check-cast v3, Lqc0;
+    invoke-virtual {p0, v0, p1}, Lgc0;->h(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 33
     .line 34
     .line 35
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object p0
 
     .line 36
-    .line 37
-    .line 38
-    iget-object v3, v3, Lqc0;->a:Landroid/os/Handler;
-
-    .line 39
-    .line 40
-    invoke-interface {p1}, Lo76;->b()Lmq2;
-
-    .line 41
-    .line 42
-    .line 43
-    move-result-object v4
-
-    .line 44
-    if-eqz v4, :cond_0
-
-    .line 45
-    .line 46
-    :try_start_0
-    iget-object p1, v4, Lmq2;->a:Ljq2;
-
-    .line 47
-    .line 48
-    iget-object p1, p1, Ljq2;->a:Landroid/hardware/camera2/params/InputConfiguration;
-
-    .line 49
-    .line 50
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 51
-    .line 52
-    .line 53
-    invoke-virtual {v0, p1, v2, v1, v3}, Landroid/hardware/camera2/CameraDevice;->createReprocessableCaptureSession(Landroid/hardware/camera2/params/InputConfiguration;Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V
-
-    .line 54
-    .line 55
-    .line 56
-    return-void
-
-    .line 57
-    :catch_0
-    move-exception p1
-
-    .line 58
-    goto :goto_0
-
-    .line 59
-    :cond_0
-    invoke-interface {p1}, Lo76;->d()I
-
-    .line 60
-    .line 61
-    .line 62
-    move-result p1
-
-    .line 63
-    const/4 v4, 0x1
-
-    .line 64
-    if-ne p1, v4, :cond_1
-
-    .line 65
-    .line 66
-    invoke-virtual {v0, v2, v1, v3}, Landroid/hardware/camera2/CameraDevice;->createConstrainedHighSpeedCaptureSession(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V
-    :try_end_0
-    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 67
-    .line 68
-    .line 69
-    return-void
-
-    .line 70
-    :cond_1
-    :try_start_1
-    invoke-virtual {v0, v2, v1, v3}, Landroid/hardware/camera2/CameraDevice;->createCaptureSession(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V
-    :try_end_1
-    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 71
-    .line 72
-    .line 73
-    return-void
-
-    .line 74
-    :catch_1
-    move-exception p1
-
-    .line 75
-    :try_start_2
-    new-instance v0, Lmb0;
-
-    .line 76
-    .line 77
-    invoke-direct {v0, p1}, Lmb0;-><init>(Landroid/hardware/camera2/CameraAccessException;)V
-
-    .line 78
-    .line 79
-    .line 80
-    throw v0
-    :try_end_2
-    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_2 .. :try_end_2} :catch_0
-
-    .line 81
-    :goto_0
-    new-instance v0, Lmb0;
-
-    .line 82
-    .line 83
-    invoke-direct {v0, p1}, Lmb0;-><init>(Landroid/hardware/camera2/CameraAccessException;)V
-
-    .line 84
-    .line 85
-    .line 86
-    throw v0
+    return-object p0
 .end method

@@ -1,84 +1,250 @@
-.class public final synthetic Lt91;
-.super Lq82;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lj72;
+.class public abstract Lt91;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final Q:Lt91;
+.field public static final Companion:Lk91;
+
+.field public static final a:Lo91;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 3
 
     .line 1
-    new-instance v0, Lt91;
+    new-instance v0, Lk91;
 
     .line 2
     .line 3
-    const-string v4, "declaresDefaultValue()Z"
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    const/4 v5, 0x0
-
     .line 6
-    const/4 v1, 0x1
+    sput-object v0, Lt91;->Companion:Lk91;
 
     .line 7
-    const-class v2, Lil7;
-
     .line 8
+    new-instance v0, Ls91;
+
     .line 9
-    const-string v3, "declaresDefaultValue"
-
     .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lq82;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    const-wide/16 v1, 0x1
 
+    .line 11
     .line 12
+    invoke-direct {v0, v1, v2}, Ls91;-><init>(J)V
+
     .line 13
     .line 14
-    sput-object v0, Lt91;->Q:Lt91;
-
     .line 15
+    const/16 v1, 0x3e8
+
     .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ls91;->b(I)Ls91;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    invoke-virtual {v0, v1}, Ls91;->b(I)Ls91;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    invoke-virtual {v0, v1}, Ls91;->b(I)Ls91;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    const/16 v1, 0x3c
+
+    .line 30
+    .line 31
+    invoke-virtual {v0, v1}, Ls91;->b(I)Ls91;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    invoke-virtual {v0, v1}, Ls91;->b(I)Ls91;
+
+    .line 36
+    .line 37
+    .line 38
+    new-instance v0, Lo91;
+
+    .line 39
+    .line 40
+    const/4 v1, 0x1
+
+    .line 41
+    invoke-direct {v0, v1}, Lo91;-><init>(I)V
+
+    .line 42
+    .line 43
+    .line 44
+    sput-object v0, Lt91;->a:Lo91;
+
+    .line 45
+    .line 46
+    new-instance v0, Lo91;
+
+    .line 47
+    .line 48
+    const/4 v2, 0x7
+
+    .line 49
+    invoke-static {v1, v2}, Ljava/lang/Math;->multiplyExact(II)I
+
+    .line 50
+    .line 51
+    .line 52
+    move-result v2
+
+    .line 53
+    invoke-direct {v0, v2}, Lo91;-><init>(I)V
+
+    .line 54
+    .line 55
+    .line 56
+    new-instance v0, Lq91;
+
+    .line 57
+    .line 58
+    invoke-direct {v0, v1}, Lq91;-><init>(I)V
+
+    .line 59
+    .line 60
+    .line 61
+    new-instance v0, Lq91;
+
+    .line 62
+    .line 63
+    const/4 v2, 0x3
+
+    .line 64
+    invoke-static {v1, v2}, Ljava/lang/Math;->multiplyExact(II)I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v2
+
+    .line 68
+    invoke-direct {v0, v2}, Lq91;-><init>(I)V
+
+    .line 69
+    .line 70
+    .line 71
+    new-instance v0, Lq91;
+
+    .line 72
+    .line 73
+    const/16 v2, 0xc
+
+    .line 74
+    .line 75
+    invoke-static {v1, v2}, Ljava/lang/Math;->multiplyExact(II)I
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v1
+
+    .line 79
+    invoke-direct {v0, v1}, Lq91;-><init>(I)V
+
+    .line 80
+    .line 81
+    .line 82
+    new-instance v0, Lq91;
+
+    .line 83
+    .line 84
+    const/16 v2, 0x64
+
+    .line 85
+    .line 86
+    invoke-static {v1, v2}, Ljava/lang/Math;->multiplyExact(II)I
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v1
+
+    .line 90
+    invoke-direct {v0, v1}, Lq91;-><init>(I)V
+
+    .line 91
+    .line 92
+    .line 93
     return-void
 .end method
 
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public static a(ILjava/lang/String;)Ljava/lang/String;
+    .locals 1
 
     .line 1
-    check-cast p1, Lil7;
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, v0, :cond_0
+
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p1}, Lil7;->D0()Z
+    return-object p1
 
+    .line 5
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 6
     .line 7
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 8
     .line 9
-    move-result p1
-
     .line 10
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    const/16 p0, 0x2d
 
     .line 14
-    return-object p1
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p0
+
+    .line 25
+    return-object p0
 .end method

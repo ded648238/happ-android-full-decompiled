@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSSLAeadCipherAES$GCM;
 .super Lorg/conscrypt/OpenSSLAeadCipherAES;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -41,7 +41,7 @@
 
 # virtual methods
 .method public checkSupportedMode(Lorg/conscrypt/OpenSSLCipher$Mode;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;
@@ -49,11 +49,11 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lorg/conscrypt/OpenSSLCipher$Mode;->GCM:Lorg/conscrypt/OpenSSLCipher$Mode;
+    sget-object p0, Lorg/conscrypt/OpenSSLCipher$Mode;->GCM:Lorg/conscrypt/OpenSSLCipher$Mode;
 
     .line 2
     .line 3
-    if-ne p1, v0, :cond_0
+    if-ne p1, p0, :cond_0
 
     .line 4
     .line 5
@@ -61,24 +61,24 @@
 
     .line 6
     :cond_0
-    new-instance p1, Ljava/security/NoSuchAlgorithmException;
+    new-instance p0, Ljava/security/NoSuchAlgorithmException;
 
     .line 7
     .line 8
-    const-string v0, "Mode must be GCM"
+    const-string p1, "Mode must be GCM"
 
     .line 9
     .line 10
-    invoke-direct {p1, v0}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
 
     .line 11
     .line 12
     .line 13
-    throw p1
+    throw p0
 .end method
 
 .method public getEVP_AEAD(I)J
-    .locals 2
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidKeyException;
@@ -86,11 +86,11 @@
     .end annotation
 
     .line 1
-    const/16 v0, 0x10
+    const/16 p0, 0x10
 
     .line 2
     .line 3
-    if-ne p1, v0, :cond_0
+    if-ne p1, p0, :cond_0
 
     .line 4
     .line 5
@@ -99,18 +99,18 @@
     .line 6
     .line 7
     .line 8
-    move-result-wide v0
+    move-result-wide p0
 
     .line 9
-    return-wide v0
+    return-wide p0
 
     .line 10
     :cond_0
-    const/16 v0, 0x20
+    const/16 p0, 0x20
 
     .line 11
     .line 12
-    if-ne p1, v0, :cond_1
+    if-ne p1, p0, :cond_1
 
     .line 13
     .line 14
@@ -119,33 +119,33 @@
     .line 15
     .line 16
     .line 17
-    move-result-wide v0
+    move-result-wide p0
 
     .line 18
-    return-wide v0
+    return-wide p0
 
     .line 19
     :cond_1
-    const-string v0, "Unexpected key length: "
+    const-string p0, "Unexpected key length: "
 
     .line 20
     .line 21
-    invoke-static {p1, v0}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 22
     .line 23
     .line 24
-    move-result-object p1
+    move-result-object p0
 
     .line 25
-    invoke-static {p1}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 26
     .line 27
     .line 28
-    const-wide/16 v0, 0x0
+    const-wide/16 p0, 0x0
 
     .line 29
     .line 30
-    return-wide v0
+    return-wide p0
 .end method

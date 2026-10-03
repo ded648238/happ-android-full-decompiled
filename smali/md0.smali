@@ -1,1272 +1,1195 @@
-.class public final Lmd0;
+.class public final synthetic Lmd0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lji2;
 
 
 # instance fields
-.field public final a:Ljava/lang/StringBuilder;
+.field public final synthetic X:I
 
-.field public final b:Ljava/lang/Object;
-
-.field public c:I
-
-.field public final d:Lka0;
-
-.field public final e:Ljava/util/HashMap;
-
-.field public f:I
+.field public final synthetic Y:Lnd0;
 
 
 # direct methods
-.method public constructor <init>(Lka0;)V
-    .locals 2
+.method public synthetic constructor <init>(Lnd0;I)V
+    .locals 0
 
     .line 1
+    iput p2, p0, Lmd0;->X:I
+
+    .line 2
+    .line 3
+    iput-object p1, p0, Lmd0;->Y:Lnd0;
+
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 7
-    .line 8
-    .line 9
-    iput-object v0, p0, Lmd0;->a:Ljava/lang/StringBuilder;
-
-    .line 10
-    .line 11
-    new-instance v0, Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 14
-    .line 15
-    .line 16
-    iput-object v0, p0, Lmd0;->b:Ljava/lang/Object;
-
-    .line 17
-    .line 18
-    new-instance v1, Ljava/util/HashMap;
-
-    .line 19
-    .line 20
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    .line 21
-    .line 22
-    .line 23
-    iput-object v1, p0, Lmd0;->e:Ljava/util/HashMap;
-
-    .line 24
-    .line 25
-    const/4 v1, 0x1
-
-    .line 26
-    iput v1, p0, Lmd0;->c:I
-
-    .line 27
-    .line 28
-    monitor-enter v0
-
-    .line 29
-    :try_start_0
-    iput-object p1, p0, Lmd0;->d:Lka0;
-
-    .line 30
-    .line 31
-    iget p1, p0, Lmd0;->c:I
-
-    .line 32
-    .line 33
-    iput p1, p0, Lmd0;->f:I
-
-    .line 34
-    .line 35
-    monitor-exit v0
-
-    .line 36
-    return-void
-
-    .line 37
-    :catchall_0
-    move-exception p1
-
-    .line 38
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 39
-    throw p1
-.end method
-
-.method public static c(Lwa0;Lxc0;)V
-    .locals 2
-
-    .line 1
-    invoke-static {}, Lx67;->c()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
     .line 6
     .line 7
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 8
-    .line 9
-    const-string v1, "CX:State["
-
-    .line 10
-    .line 11
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 15
-    .line 16
-    .line 17
-    const-string p0, "]"
-
-    .line 18
-    .line 19
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object p0
-
-    .line 26
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result p1
-
-    .line 30
-    invoke-static {p1, p0}, Lx67;->d(ILjava/lang/String;)V
-
-    .line 31
-    .line 32
-    .line 33
-    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Lld0;
-    .locals 4
+.method public final invoke()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    iget-object v0, p0, Lmd0;->e:Ljava/util/HashMap;
+    iget v0, p0, Lmd0;->X:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+    const/16 v1, 0x1c
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v1
+    const-string v2, "Camera-"
 
+    .line 6
     .line 7
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    sget-object v3, Lfw1;->X:Lfw1;
 
     .line 8
     .line 9
-    .line 10
-    move-result-object v1
+    sget-object v4, Low1;->X:Low1;
 
+    .line 10
     .line 11
+    iget-object p0, p0, Lmd0;->Y:Lnd0;
+
+    .line 12
+    .line 13
+    packed-switch v0, :pswitch_data_0
+
+    .line 14
+    .line 15
+    .line 16
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 17
+    .line 18
+    if-ge v0, v1, :cond_0
+
+    .line 19
+    .line 20
+    goto :goto_1
+
+    .line 21
     :cond_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v2
-
-    .line 15
-    if-eqz v2, :cond_1
-
-    .line 16
-    .line 17
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v2
-
-    .line 21
-    check-cast v2, Llb0;
+    :try_start_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 22
     .line 23
-    invoke-interface {v2}, Llb0;->a()Lwc0;
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 24
     .line 25
     .line 26
-    move-result-object v3
+    iget-object v1, p0, Lnd0;->X:Ljava/lang/String;
 
     .line 27
-    check-cast v3, Lwc0;
-
     .line 28
-    .line 29
-    invoke-interface {v3}, Lwc0;->b()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 29
     .line 30
     .line 31
-    .line 32
-    move-result-object v3
+    const-string v1, "#availableSessionKeys"
 
+    .line 32
     .line 33
-    invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 34
     .line 35
     .line 36
-    move-result v3
-
-    .line 37
-    if-eqz v3, :cond_0
-
-    .line 38
-    .line 39
-    invoke-virtual {v0, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object p1
-
-    .line 43
-    check-cast p1, Lld0;
-
-    .line 44
-    .line 45
-    return-object p1
-
-    .line 46
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 47
-    return-object p1
-.end method
-
-.method public final b()V
-    .locals 14
-
-    .line 1
-    const-string v0, "CameraStateRegistry"
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lw33;->D(Ljava/lang/String;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v1
-
-    .line 7
-    const/4 v2, 0x2
-
-    .line 8
-    const/4 v3, 0x1
-
-    .line 9
-    const-string v4, "-------------------------------------------------------------------\n"
-
-    .line 10
-    .line 11
-    const-string v5, "%-45s%-22s\n"
-
-    .line 12
-    .line 13
-    const/4 v6, 0x0
-
-    .line 14
-    iget-object v7, p0, Lmd0;->a:Ljava/lang/StringBuilder;
-
-    .line 15
-    .line 16
-    if-eqz v1, :cond_0
-
-    .line 17
-    .line 18
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->setLength(I)V
-
-    .line 19
-    .line 20
-    .line 21
-    const-string v1, "Recalculating open cameras:\n"
-
-    .line 22
-    .line 23
-    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 24
-    .line 25
-    .line 26
-    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    .line 27
-    .line 28
-    new-array v8, v2, [Ljava/lang/Object;
-
-    .line 29
-    .line 30
-    const-string v9, "Camera"
-
-    .line 31
-    .line 32
-    aput-object v9, v8, v6
-
-    .line 33
-    .line 34
-    const-string v9, "State"
-
-    .line 35
-    .line 36
-    aput-object v9, v8, v3
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 37
     .line 38
-    invoke-static {v1, v5, v8}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
     .line 39
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/AssertionError; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 40
+    :try_start_1
+    invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
+
     .line 41
-    move-result-object v1
-
     .line 42
-    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 43
+    iget-object p0, p0, Lnd0;->Y:Landroid/hardware/camera2/CameraCharacteristics;
+
     .line 44
     .line 45
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0}, Ljm;->n(Landroid/hardware/camera2/CameraCharacteristics;)Ljava/util/List;
 
     .line 46
     .line 47
     .line 48
-    :cond_0
-    iget-object v1, p0, Lmd0;->e:Ljava/util/HashMap;
+    move-result-object p0
 
     .line 49
-    .line 50
-    invoke-virtual {v1}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
+    if-nez p0, :cond_1
 
+    .line 50
     .line 51
+    goto :goto_0
+
     .line 52
+    :cond_1
+    move-object v3, p0
+
     .line 53
-    move-result-object v1
+    :goto_0
+    invoke-static {v3}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
 
     .line 54
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
     .line 55
     .line 56
+    move-result-object p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 57
-    move-result-object v1
+    :try_start_2
+    invoke-static {}, Landroid/os/Trace;->endSection()V
 
     .line 58
-    const/4 v8, 0x0
-
     .line 59
-    :cond_1
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
     .line 60
+    move-object v4, p0
+
     .line 61
+    goto :goto_1
+
     .line 62
-    move-result v9
+    :catchall_0
+    move-exception p0
 
     .line 63
-    if-eqz v9, :cond_4
+    invoke-static {}, Landroid/os/Trace;->endSection()V
 
     .line 64
     .line 65
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 66
+    throw p0
+    :try_end_2
+    .catch Ljava/lang/AssertionError; {:try_start_2 .. :try_end_2} :catch_0
+
     .line 67
+    :catch_0
+    :goto_1
+    return-object v4
+
     .line 68
-    move-result-object v9
+    :pswitch_0
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 69
-    check-cast v9, Ljava/util/Map$Entry;
-
     .line 70
-    .line 71
-    invoke-static {v0}, Lw33;->D(Ljava/lang/String;)Z
+    const/16 v1, 0x23
 
+    .line 71
     .line 72
+    if-ge v0, v1, :cond_2
+
     .line 73
     .line 74
-    move-result v10
+    goto :goto_3
 
     .line 75
-    if-eqz v10, :cond_3
+    :cond_2
+    :try_start_3
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 76
     .line 77
-    invoke-interface {v9}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 78
     .line 79
     .line 80
-    move-result-object v10
+    iget-object v1, p0, Lnd0;->X:Ljava/lang/String;
 
     .line 81
-    check-cast v10, Lld0;
-
     .line 82
-    .line 83
-    iget-object v10, v10, Lld0;->a:Lxc0;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 83
     .line 84
     .line 85
-    if-eqz v10, :cond_2
+    const-string v1, "#getAvailableSessionCharacteristicsKeys"
 
     .line 86
     .line 87
-    invoke-interface {v9}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 88
     .line 89
     .line 90
-    move-result-object v10
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 91
-    check-cast v10, Lld0;
-
     .line 92
     .line 93
-    iget-object v10, v10, Lld0;->a:Lxc0;
+    move-result-object v0
+    :try_end_3
+    .catch Ljava/lang/AssertionError; {:try_start_3 .. :try_end_3} :catch_1
 
     .line 94
-    .line 95
-    invoke-virtual {v10}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    :try_start_4
+    invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
+    .line 95
     .line 96
     .line 97
-    .line 98
-    move-result-object v10
+    iget-object p0, p0, Lnd0;->Y:Landroid/hardware/camera2/CameraCharacteristics;
 
+    .line 98
     .line 99
-    goto :goto_1
+    invoke-static {p0}, Ltm;->c(Landroid/hardware/camera2/CameraCharacteristics;)Ljava/util/List;
 
     .line 100
-    :cond_2
-    const-string v10, "UNKNOWN"
-
     .line 101
     .line 102
-    :goto_1
-    sget-object v11, Ljava/util/Locale;->US:Ljava/util/Locale;
+    move-result-object p0
 
     .line 103
-    .line 104
-    invoke-interface {v9}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    if-nez p0, :cond_3
 
+    .line 104
     .line 105
+    goto :goto_2
+
     .line 106
+    :cond_3
+    move-object v3, p0
+
     .line 107
-    move-result-object v12
+    :goto_2
+    invoke-static {v3}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
 
     .line 108
-    check-cast v12, Llb0;
-
     .line 109
     .line 110
-    invoke-virtual {v12}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    move-result-object p0
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     .line 111
+    :try_start_5
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
     .line 112
     .line 113
-    move-result-object v12
-
     .line 114
-    new-array v13, v2, [Ljava/lang/Object;
+    move-object v4, p0
 
     .line 115
+    goto :goto_3
+
     .line 116
-    aput-object v12, v13, v6
+    :catchall_1
+    move-exception p0
 
     .line 117
-    .line 118
-    aput-object v10, v13, v3
+    invoke-static {}, Landroid/os/Trace;->endSection()V
 
+    .line 118
     .line 119
     .line 120
-    invoke-static {v11, v5, v13}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    throw p0
+    :try_end_5
+    .catch Ljava/lang/AssertionError; {:try_start_5 .. :try_end_5} :catch_1
 
     .line 121
-    .line 122
-    .line 123
-    move-result-object v10
+    :catch_1
+    :goto_3
+    return-object v4
 
+    .line 122
+    :pswitch_1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 123
     .line 124
-    invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-ge v0, v1, :cond_4
 
     .line 125
     .line 126
+    goto :goto_5
+
     .line 127
-    :cond_3
-    invoke-interface {v9}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    :cond_4
+    :try_start_6
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 128
     .line 129
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 130
-    move-result-object v9
-
     .line 131
-    check-cast v9, Lld0;
-
     .line 132
+    iget-object v1, p0, Lnd0;->X:Ljava/lang/String;
+
     .line 133
-    iget-object v9, v9, Lld0;->a:Lxc0;
-
     .line 134
-    .line 135
-    if-eqz v9, :cond_1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 135
     .line 136
     .line 137
-    iget-boolean v9, v9, Lxc0;->Q:Z
+    const-string v1, "#availablePhysicalCameraRequestKeys"
 
     .line 138
     .line 139
-    if-eqz v9, :cond_1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 140
     .line 141
-    add-int/lit8 v8, v8, 0x1
-
     .line 142
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 143
-    goto :goto_0
-
     .line 144
-    :cond_4
-    invoke-static {v0}, Lw33;->D(Ljava/lang/String;)Z
-
     .line 145
+    move-result-object v0
+    :try_end_6
+    .catch Ljava/lang/AssertionError; {:try_start_6 .. :try_end_6} :catch_2
+
     .line 146
+    :try_start_7
+    invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
+
     .line 147
-    move-result v1
-
     .line 148
-    if-eqz v1, :cond_5
-
     .line 149
-    .line 150
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object p0, p0, Lnd0;->Y:Landroid/hardware/camera2/CameraCharacteristics;
 
+    .line 150
     .line 151
+    invoke-static {p0}, Ljm;->m(Landroid/hardware/camera2/CameraCharacteristics;)Ljava/util/List;
+
     .line 152
     .line 153
-    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
-
     .line 154
+    move-result-object p0
+
     .line 155
-    iget v1, p0, Lmd0;->c:I
+    if-nez p0, :cond_5
 
     .line 156
     .line 157
-    new-instance v2, Ljava/lang/StringBuilder;
+    goto :goto_4
 
     .line 158
+    :cond_5
+    move-object v3, p0
+
     .line 159
-    const-string v3, "Open count: "
+    :goto_4
+    invoke-static {v3}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
 
     .line 160
     .line 161
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 162
-    .line 163
-    .line 164
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p0
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
+    .line 163
+    :try_start_8
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 164
     .line 165
     .line 166
+    move-object v4, p0
+
     .line 167
-    const-string v3, " (Max allowed: "
+    goto :goto_5
 
     .line 168
+    :catchall_2
+    move-exception p0
+
     .line 169
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {}, Landroid/os/Trace;->endSection()V
 
     .line 170
     .line 171
     .line 172
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    throw p0
+    :try_end_8
+    .catch Ljava/lang/AssertionError; {:try_start_8 .. :try_end_8} :catch_2
 
     .line 173
+    :catch_2
+    :goto_5
+    return-object v4
+
     .line 174
+    :pswitch_2
+    iget-object v0, p0, Lnd0;->X:Ljava/lang/String;
+
     .line 175
-    const-string v1, ")"
-
     .line 176
-    .line 177
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 177
     .line 178
+    if-ge v2, v1, :cond_6
+
     .line 179
     .line 180
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    goto :goto_8
 
     .line 181
+    :cond_6
+    :try_start_9
+    new-instance v1, Ljava/lang/StringBuilder;
+
     .line 182
     .line 183
-    move-result-object v1
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 184
-    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 185
     .line 186
-    .line 187
-    invoke-static {v0}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 187
     .line 188
     .line 189
+    move-result-object v2
+
     .line 190
-    :cond_5
-    iget v0, p0, Lmd0;->c:I
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 191
     .line 192
-    sub-int/2addr v0, v8
-
     .line 193
-    invoke-static {v0, v6}, Ljava/lang/Math;->max(II)I
+    const-string v2, "#physicalCameraIds"
 
     .line 194
     .line 195
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 196
-    move-result v0
-
     .line 197
-    iput v0, p0, Lmd0;->f:I
-
     .line 198
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 199
-    return-void
-.end method
-
-.method public final d(Lwa0;)Z
-    .locals 11
-
-    .line 1
-    const-string v0, "tryOpenCamera("
-
-    .line 2
-    .line 3
-    const-string v1, " --> "
-
-    .line 4
-    .line 5
-    iget-object v2, p0, Lmd0;->b:Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    monitor-enter v2
-
-    .line 8
-    :try_start_0
-    iget-object v3, p0, Lmd0;->e:Ljava/util/HashMap;
-
-    .line 9
-    .line 10
-    invoke-virtual {v3, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v3
-
-    .line 14
-    check-cast v3, Lld0;
-
-    .line 15
-    .line 16
-    const-string v4, "Camera must first be registered with registerCamera()"
-
-    .line 17
-    .line 18
-    invoke-static {v3, v4}, Lhp4;->t(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 19
-    .line 20
-    .line 21
-    const-string v4, "CameraStateRegistry"
-
-    .line 22
-    .line 23
-    invoke-static {v4}, Lw33;->D(Ljava/lang/String;)Z
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v4
-
-    .line 27
-    const/4 v5, 0x1
-
-    .line 28
-    const/4 v6, 0x0
-
-    .line 29
-    if-eqz v4, :cond_1
-
-    .line 30
-    .line 31
-    iget-object v4, p0, Lmd0;->a:Ljava/lang/StringBuilder;
-
-    .line 32
-    .line 33
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->setLength(I)V
-
-    .line 34
-    .line 35
-    .line 36
-    iget-object v4, p0, Lmd0;->a:Ljava/lang/StringBuilder;
-
-    .line 37
-    .line 38
-    sget-object v7, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    .line 39
-    .line 40
-    iget v7, p0, Lmd0;->f:I
-
-    .line 41
-    .line 42
-    iget-object v8, v3, Lld0;->a:Lxc0;
-
-    .line 43
-    .line 44
-    if-eqz v8, :cond_0
-
-    .line 45
-    .line 46
-    iget-boolean v8, v8, Lxc0;->Q:Z
-
-    .line 47
-    .line 48
-    if-eqz v8, :cond_0
-
-    .line 49
-    .line 50
-    const/4 v8, 0x1
-
-    .line 51
-    goto :goto_0
-
-    .line 52
-    :catchall_0
-    move-exception p1
-
-    .line 53
-    goto/16 :goto_5
-
-    .line 54
-    .line 55
-    :cond_0
-    const/4 v8, 0x0
-
-    .line 56
-    :goto_0
-    iget-object v9, v3, Lld0;->a:Lxc0;
-
-    .line 57
-    .line 58
-    new-instance v10, Ljava/lang/StringBuilder;
-
-    .line 59
-    .line 60
-    invoke-direct {v10, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 61
-    .line 62
-    .line 63
-    invoke-virtual {v10, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 64
-    .line 65
-    .line 66
-    const-string v0, ") [Available Cameras: "
-
-    .line 67
-    .line 68
-    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 69
-    .line 70
-    .line 71
-    invoke-virtual {v10, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 72
-    .line 73
-    .line 74
-    const-string v0, ", Already Open: "
-
-    .line 75
-    .line 76
-    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 77
-    .line 78
-    .line 79
-    invoke-virtual {v10, v8}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 80
-    .line 81
-    .line 82
-    const-string v0, " (Previous state: "
-
-    .line 83
-    .line 84
-    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 85
-    .line 86
-    .line 87
-    invoke-virtual {v10, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 88
-    .line 89
-    .line 90
-    const-string v0, ")]"
-
-    .line 91
-    .line 92
-    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 93
-    .line 94
-    .line 95
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-object v0
-
-    .line 99
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 100
-    .line 101
-    .line 102
-    :cond_1
-    iget v0, p0, Lmd0;->f:I
-
-    .line 103
-    .line 104
-    if-gtz v0, :cond_4
-
-    .line 105
-    .line 106
-    iget-object v0, v3, Lld0;->a:Lxc0;
-
-    .line 107
-    .line 108
-    if-eqz v0, :cond_2
-
-    .line 109
-    .line 110
-    iget-boolean v0, v0, Lxc0;->Q:Z
-
-    .line 111
-    .line 112
-    if-eqz v0, :cond_2
-
-    .line 113
-    .line 114
-    const/4 v0, 0x1
-
-    .line 115
-    goto :goto_1
-
-    .line 116
-    :cond_2
-    const/4 v0, 0x0
-
-    .line 117
-    :goto_1
-    if-eqz v0, :cond_3
-
-    .line 118
-    .line 119
-    goto :goto_2
-
-    .line 120
-    :cond_3
-    const/4 v5, 0x0
-
-    .line 121
-    goto :goto_3
-
-    .line 122
-    :cond_4
-    :goto_2
-    sget-object v0, Lxc0;->W:Lxc0;
-
-    .line 123
-    .line 124
-    iput-object v0, v3, Lld0;->a:Lxc0;
-
-    .line 125
-    .line 126
-    invoke-static {p1, v0}, Lmd0;->c(Lwa0;Lxc0;)V
-
-    .line 127
-    .line 128
-    .line 129
-    :goto_3
-    const-string p1, "CameraStateRegistry"
-
-    .line 130
-    .line 131
-    invoke-static {p1}, Lw33;->D(Ljava/lang/String;)Z
-
-    .line 132
-    .line 133
-    .line 134
-    move-result p1
-
-    .line 135
-    if-eqz p1, :cond_6
-
-    .line 136
-    .line 137
-    iget-object p1, p0, Lmd0;->a:Ljava/lang/StringBuilder;
-
-    .line 138
-    .line 139
-    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    .line 140
-    .line 141
-    if-eqz v5, :cond_5
-
-    .line 142
-    .line 143
-    const-string v0, "SUCCESS"
-
-    .line 144
-    .line 145
-    goto :goto_4
-
-    .line 146
-    :cond_5
-    const-string v0, "FAIL"
-
-    .line 147
-    .line 148
-    :goto_4
-    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 149
-    .line 150
-    .line 151
-    move-result-object v0
-
-    .line 152
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 153
-    .line 154
-    .line 155
-    const-string p1, "CameraStateRegistry"
-
-    .line 156
-    .line 157
-    invoke-static {p1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 158
-    .line 159
-    .line 160
-    :cond_6
-    if-eqz v5, :cond_7
-
-    .line 161
-    .line 162
-    invoke-virtual {p0}, Lmd0;->b()V
-
-    .line 163
-    .line 164
-    .line 165
-    :cond_7
-    monitor-exit v2
-
-    .line 166
-    return v5
-
-    .line 167
-    :goto_5
-    monitor-exit v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 168
-    throw p1
-.end method
-
-.method public final e(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lmd0;->b:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iget-object v1, p0, Lmd0;->d:Lka0;
-
-    .line 5
-    .line 6
-    iget v1, v1, Lka0;->S:I
-
-    .line 7
-    .line 8
-    const/4 v2, 0x2
-
-    .line 9
-    const/4 v3, 0x1
-
-    .line 10
-    if-eq v1, v2, :cond_0
-
-    .line 11
-    .line 12
-    monitor-exit v0
-
-    .line 13
-    return v3
-
-    .line 14
-    :catchall_0
-    move-exception p1
-
-    .line 15
-    goto :goto_7
-
-    .line 16
-    :cond_0
-    invoke-virtual {p0, p1}, Lmd0;->a(Ljava/lang/String;)Lld0;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object p1
-
-    .line 20
-    const/4 v1, 0x0
-
-    .line 21
-    if-eqz p1, :cond_1
-
-    .line 22
-    .line 23
-    iget-object p1, p1, Lld0;->a:Lxc0;
-
-    .line 24
-    .line 25
-    goto :goto_0
-
-    .line 26
-    :cond_1
-    move-object p1, v1
-
-    .line 27
-    :goto_0
-    if-eqz p2, :cond_2
-
-    .line 28
-    .line 29
-    invoke-virtual {p0, p2}, Lmd0;->a(Ljava/lang/String;)Lld0;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object p2
-
-    .line 33
-    goto :goto_1
-
-    .line 34
-    :cond_2
-    move-object p2, v1
-
-    .line 35
-    :goto_1
-    if-eqz p2, :cond_3
-
-    .line 36
-    .line 37
-    iget-object v1, p2, Lld0;->a:Lxc0;
-
-    .line 38
-    .line 39
-    :cond_3
-    sget-object p2, Lxc0;->X:Lxc0;
-
-    .line 40
-    .line 41
-    invoke-virtual {p2, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 42
-    .line 43
-    .line 44
+    .line 200
+    .line 201
+    move-result-object v1
+    :try_end_9
+    .catch Ljava/lang/AssertionError; {:try_start_9 .. :try_end_9} :catch_4
+    .catch Ljava/lang/NullPointerException; {:try_start_9 .. :try_end_9} :catch_3
+
+    .line 202
+    :try_start_a
+    invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
+
+    .line 203
+    .line 204
+    .line 205
+    iget-object p0, p0, Lnd0;->Y:Landroid/hardware/camera2/CameraCharacteristics;
+
+    .line 206
+    .line 207
+    invoke-static {p0}, Ljm;->v(Landroid/hardware/camera2/CameraCharacteristics;)Ljava/util/Set;
+
+    .line 208
+    .line 209
+    .line 210
+    move-result-object p0
+
+    .line 211
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 212
+    .line 213
+    .line 214
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 215
+    .line 216
+    .line 217
+    check-cast p0, Ljava/lang/Iterable;
+
+    .line 218
+    .line 219
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 220
+    .line 221
+    const/16 v2, 0xa
+
+    .line 222
+    .line 223
+    invoke-static {p0, v2}, Lut0;->F0(Ljava/lang/Iterable;I)I
+
+    .line 224
+    .line 225
+    .line 226
     move-result v2
 
-    .line 45
-    const/4 v4, 0x0
+    .line 227
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 46
-    if-nez v2, :cond_5
+    .line 228
+    .line 229
+    .line 230
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    .line 47
-    .line 48
-    sget-object v2, Lxc0;->Y:Lxc0;
+    .line 231
+    .line 232
+    .line 233
+    move-result-object p0
 
-    .line 49
-    .line 50
-    invoke-virtual {v2, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    .line 234
+    :goto_6
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 51
-    .line 52
-    .line 53
-    move-result p1
+    .line 235
+    .line 236
+    .line 237
+    move-result v2
 
-    .line 54
-    if-eqz p1, :cond_4
+    .line 238
+    if-eqz v2, :cond_7
 
-    .line 55
-    .line 56
-    goto :goto_2
+    .line 239
+    .line 240
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 57
-    :cond_4
-    const/4 p1, 0x0
+    .line 241
+    .line 242
+    .line 243
+    move-result-object v2
 
-    .line 58
-    goto :goto_3
+    .line 244
+    check-cast v2, Ljava/lang/String;
 
-    .line 59
-    :cond_5
-    :goto_2
-    const/4 p1, 0x1
+    .line 245
+    .line 246
+    invoke-static {v2}, Lwg0;->a(Ljava/lang/String;)V
 
-    .line 60
-    :goto_3
-    invoke-virtual {p2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    .line 247
+    .line 248
+    .line 249
+    new-instance v3, Lwg0;
 
-    .line 61
-    .line 62
-    .line 63
-    move-result p2
+    .line 250
+    .line 251
+    invoke-direct {v3, v2}, Lwg0;-><init>(Ljava/lang/String;)V
 
-    .line 64
-    if-nez p2, :cond_7
+    .line 252
+    .line 253
+    .line 254
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 65
-    .line 66
-    sget-object p2, Lxc0;->Y:Lxc0;
-
-    .line 67
-    .line 68
-    invoke-virtual {p2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 69
-    .line 70
-    .line 71
-    move-result p2
-
-    .line 72
-    if-eqz p2, :cond_6
-
-    .line 73
-    .line 74
-    goto :goto_4
-
-    .line 75
-    :cond_6
-    const/4 p2, 0x0
-
-    .line 76
-    goto :goto_5
-
-    .line 77
-    :cond_7
-    :goto_4
-    const/4 p2, 0x1
-
-    .line 78
-    :goto_5
-    if-eqz p1, :cond_8
-
-    .line 79
-    .line 80
-    if-eqz p2, :cond_8
-
-    .line 81
-    .line 82
+    .line 255
+    .line 256
+    .line 257
     goto :goto_6
 
-    .line 83
-    :cond_8
-    const/4 v3, 0x0
+    .line 258
+    :catchall_3
+    move-exception p0
 
-    .line 84
-    :goto_6
-    monitor-exit v0
+    .line 259
+    goto :goto_7
 
-    .line 85
-    return v3
+    .line 260
+    :cond_7
+    invoke-static {v1}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
 
-    .line 86
+    .line 261
+    .line 262
+    .line 263
+    move-result-object p0
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_3
+
+    .line 264
+    :try_start_b
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 265
+    .line 266
+    .line 267
+    move-object v4, p0
+
+    .line 268
+    goto :goto_8
+
+    .line 269
     :goto_7
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-static {}, Landroid/os/Trace;->endSection()V
 
-    .line 87
-    throw p1
+    .line 270
+    .line 271
+    .line 272
+    throw p0
+    :try_end_b
+    .catch Ljava/lang/AssertionError; {:try_start_b .. :try_end_b} :catch_4
+    .catch Ljava/lang/NullPointerException; {:try_start_b .. :try_end_b} :catch_3
+
+    .line 273
+    :catch_3
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 274
+    .line 275
+    .line 276
+    goto :goto_8
+
+    .line 277
+    :catch_4
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 278
+    .line 279
+    .line 280
+    :goto_8
+    return-object v4
+
+    .line 281
+    :pswitch_3
+    iget-object v0, p0, Lnd0;->X:Ljava/lang/String;
+
+    .line 282
+    .line 283
+    :try_start_c
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 284
+    .line 285
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 286
+    .line 287
+    .line 288
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 289
+    .line 290
+    .line 291
+    move-result-object v2
+
+    .line 292
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 293
+    .line 294
+    .line 295
+    const-string v2, "#availableCaptureResultKeys"
+
+    .line 296
+    .line 297
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 298
+    .line 299
+    .line 300
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 301
+    .line 302
+    .line 303
+    move-result-object v1
+    :try_end_c
+    .catch Ljava/lang/AssertionError; {:try_start_c .. :try_end_c} :catch_5
+
+    .line 304
+    :try_start_d
+    invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
+
+    .line 305
+    .line 306
+    .line 307
+    iget-object p0, p0, Lnd0;->Y:Landroid/hardware/camera2/CameraCharacteristics;
+
+    .line 308
+    .line 309
+    invoke-virtual {p0}, Landroid/hardware/camera2/CameraCharacteristics;->getAvailableCaptureResultKeys()Ljava/util/List;
+
+    .line 310
+    .line 311
+    .line 312
+    move-result-object p0
+
+    .line 313
+    if-nez p0, :cond_8
+
+    .line 314
+    .line 315
+    goto :goto_9
+
+    .line 316
+    :cond_8
+    move-object v3, p0
+
+    .line 317
+    :goto_9
+    invoke-static {v3}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
+
+    .line 318
+    .line 319
+    .line 320
+    move-result-object p0
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_4
+
+    .line 321
+    :try_start_e
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 322
+    .line 323
+    .line 324
+    move-object v4, p0
+
+    .line 325
+    goto :goto_a
+
+    .line 326
+    :catchall_4
+    move-exception p0
+
+    .line 327
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 328
+    .line 329
+    .line 330
+    throw p0
+    :try_end_e
+    .catch Ljava/lang/AssertionError; {:try_start_e .. :try_end_e} :catch_5
+
+    .line 331
+    :catch_5
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 332
+    .line 333
+    .line 334
+    :goto_a
+    return-object v4
+
+    .line 335
+    :pswitch_4
+    iget-object v0, p0, Lnd0;->X:Ljava/lang/String;
+
+    .line 336
+    .line 337
+    :try_start_f
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 338
+    .line 339
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 340
+    .line 341
+    .line 342
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 343
+    .line 344
+    .line 345
+    move-result-object v2
+
+    .line 346
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 347
+    .line 348
+    .line 349
+    const-string v2, "#availableCaptureRequestKeys"
+
+    .line 350
+    .line 351
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 352
+    .line 353
+    .line 354
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 355
+    .line 356
+    .line 357
+    move-result-object v1
+    :try_end_f
+    .catch Ljava/lang/AssertionError; {:try_start_f .. :try_end_f} :catch_6
+
+    .line 358
+    :try_start_10
+    invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
+
+    .line 359
+    .line 360
+    .line 361
+    iget-object p0, p0, Lnd0;->Y:Landroid/hardware/camera2/CameraCharacteristics;
+
+    .line 362
+    .line 363
+    invoke-virtual {p0}, Landroid/hardware/camera2/CameraCharacteristics;->getAvailableCaptureRequestKeys()Ljava/util/List;
+
+    .line 364
+    .line 365
+    .line 366
+    move-result-object p0
+
+    .line 367
+    if-nez p0, :cond_9
+
+    .line 368
+    .line 369
+    goto :goto_b
+
+    .line 370
+    :cond_9
+    move-object v3, p0
+
+    .line 371
+    :goto_b
+    invoke-static {v3}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
+
+    .line 372
+    .line 373
+    .line 374
+    move-result-object p0
+    :try_end_10
+    .catchall {:try_start_10 .. :try_end_10} :catchall_5
+
+    .line 375
+    :try_start_11
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 376
+    .line 377
+    .line 378
+    move-object v4, p0
+
+    .line 379
+    goto :goto_c
+
+    .line 380
+    :catchall_5
+    move-exception p0
+
+    .line 381
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 382
+    .line 383
+    .line 384
+    throw p0
+    :try_end_11
+    .catch Ljava/lang/AssertionError; {:try_start_11 .. :try_end_11} :catch_6
+
+    .line 385
+    :catch_6
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 386
+    .line 387
+    .line 388
+    :goto_c
+    return-object v4
+
+    .line 389
+    :pswitch_5
+    iget-object v0, p0, Lnd0;->X:Ljava/lang/String;
+
+    .line 390
+    .line 391
+    :try_start_12
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 392
+    .line 393
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 394
+    .line 395
+    .line 396
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 397
+    .line 398
+    .line 399
+    move-result-object v2
+
+    .line 400
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 401
+    .line 402
+    .line 403
+    const-string v2, "#keys"
+
+    .line 404
+    .line 405
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 406
+    .line 407
+    .line 408
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 409
+    .line 410
+    .line 411
+    move-result-object v1
+    :try_end_12
+    .catch Ljava/lang/AssertionError; {:try_start_12 .. :try_end_12} :catch_7
+
+    .line 412
+    :try_start_13
+    invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
+
+    .line 413
+    .line 414
+    .line 415
+    iget-object p0, p0, Lnd0;->Y:Landroid/hardware/camera2/CameraCharacteristics;
+
+    .line 416
+    .line 417
+    invoke-virtual {p0}, Landroid/hardware/camera2/CameraCharacteristics;->getKeys()Ljava/util/List;
+
+    .line 418
+    .line 419
+    .line 420
+    move-result-object p0
+
+    .line 421
+    if-nez p0, :cond_a
+
+    .line 422
+    .line 423
+    goto :goto_d
+
+    .line 424
+    :cond_a
+    move-object v3, p0
+
+    .line 425
+    :goto_d
+    invoke-static {v3}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
+
+    .line 426
+    .line 427
+    .line 428
+    move-result-object p0
+    :try_end_13
+    .catchall {:try_start_13 .. :try_end_13} :catchall_6
+
+    .line 429
+    :try_start_14
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 430
+    .line 431
+    .line 432
+    move-object v4, p0
+
+    .line 433
+    goto :goto_e
+
+    .line 434
+    :catchall_6
+    move-exception p0
+
+    .line 435
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 436
+    .line 437
+    .line 438
+    throw p0
+    :try_end_14
+    .catch Ljava/lang/AssertionError; {:try_start_14 .. :try_end_14} :catch_7
+
+    .line 439
+    :catch_7
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 440
+    .line 441
+    .line 442
+    :goto_e
+    return-object v4
+
+    .line 443
+    :pswitch_6
+    iget-object v0, p0, Lnd0;->X:Ljava/lang/String;
+
+    .line 444
+    .line 445
+    :try_start_15
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 446
+    .line 447
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 448
+    .line 449
+    .line 450
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 451
+    .line 452
+    .line 453
+    move-result-object v2
+
+    .line 454
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 455
+    .line 456
+    .line 457
+    const-string v2, "#supportedExtensions"
+
+    .line 458
+    .line 459
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 460
+    .line 461
+    .line 462
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 463
+    .line 464
+    .line 465
+    move-result-object v1
+    :try_end_15
+    .catch Ljava/lang/AssertionError; {:try_start_15 .. :try_end_15} :catch_8
+
+    .line 466
+    :try_start_16
+    invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
+
+    .line 467
+    .line 468
+    .line 469
+    iget-object p0, p0, Lnd0;->Z:Lje0;
+
+    .line 470
+    .line 471
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 472
+    .line 473
+    .line 474
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 475
+    .line 476
+    const/16 v2, 0x1f
+
+    .line 477
+    .line 478
+    if-lt v1, v2, :cond_b
+
+    .line 479
+    .line 480
+    invoke-virtual {p0, v0}, Lje0;->e(Ljava/lang/String;)Landroid/hardware/camera2/CameraExtensionCharacteristics;
+
+    .line 481
+    .line 482
+    .line 483
+    move-result-object p0
+
+    .line 484
+    invoke-static {p0}, Loc;->p(Landroid/hardware/camera2/CameraExtensionCharacteristics;)Ljava/util/List;
+
+    .line 485
+    .line 486
+    .line 487
+    move-result-object p0
+
+    .line 488
+    invoke-static {p0}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
+
+    .line 489
+    .line 490
+    .line 491
+    move-result-object p0
+    :try_end_16
+    .catchall {:try_start_16 .. :try_end_16} :catchall_7
+
+    .line 492
+    goto :goto_f
+
+    .line 493
+    :cond_b
+    move-object p0, v4
+
+    .line 494
+    :goto_f
+    :try_start_17
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 495
+    .line 496
+    .line 497
+    move-object v4, p0
+
+    .line 498
+    goto :goto_10
+
+    .line 499
+    :catchall_7
+    move-exception p0
+
+    .line 500
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    .line 501
+    .line 502
+    .line 503
+    throw p0
+    :try_end_17
+    .catch Ljava/lang/AssertionError; {:try_start_17 .. :try_end_17} :catch_8
+
+    .line 504
+    :catch_8
+    invoke-static {v0}, Lwg0;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 505
+    .line 506
+    .line 507
+    :goto_10
+    return-object v4
+
+    .line 508
+    nop
+
+    .line 509
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

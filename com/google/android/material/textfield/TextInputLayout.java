@@ -40,336 +40,336 @@ import android.widget.TextView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.transition.Fade;
 import com.google.android.material.internal.CheckableImageButton;
-import defpackage.av2;
-import defpackage.b0;
-import defpackage.b04;
-import defpackage.b15;
-import defpackage.b17;
-import defpackage.bv7;
-import defpackage.c17;
-import defpackage.c37;
-import defpackage.c95;
-import defpackage.d04;
-import defpackage.d17;
-import defpackage.d85;
-import defpackage.db;
-import defpackage.dk1;
-import defpackage.e17;
-import defpackage.e21;
-import defpackage.ee0;
-import defpackage.f92;
-import defpackage.fi6;
-import defpackage.fn;
-import defpackage.ga5;
-import defpackage.gi6;
-import defpackage.hc7;
-import defpackage.hi;
-import defpackage.hk1;
-import defpackage.hm1;
-import defpackage.i04;
-import defpackage.im0;
-import defpackage.in0;
-import defpackage.j26;
-import defpackage.j30;
-import defpackage.j86;
-import defpackage.jp2;
-import defpackage.jx6;
-import defpackage.jy6;
-import defpackage.k30;
-import defpackage.k85;
-import defpackage.kd0;
-import defpackage.kp2;
-import defpackage.n87;
-import defpackage.na5;
-import defpackage.o5;
-import defpackage.ow0;
-import defpackage.oy0;
-import defpackage.pa5;
-import defpackage.po1;
-import defpackage.py0;
-import defpackage.q71;
-import defpackage.qn;
-import defpackage.qn7;
-import defpackage.qo1;
-import defpackage.qy0;
-import defpackage.rb2;
-import defpackage.tp5;
-import defpackage.ub;
-import defpackage.v75;
-import defpackage.va5;
-import defpackage.va6;
-import defpackage.wg6;
-import defpackage.x75;
-import defpackage.xf5;
-import defpackage.y10;
-import defpackage.yc4;
-import defpackage.yk1;
-import defpackage.yr;
-import defpackage.yx;
-import defpackage.zd7;
-import io.sentry.x1;
+import defpackage.a61;
+import defpackage.aq7;
+import defpackage.b40;
+import defpackage.bh4;
+import defpackage.co6;
+import defpackage.cs5;
+import defpackage.ct1;
+import defpackage.ct5;
+import defpackage.d01;
+import defpackage.eh0;
+import defpackage.ep;
+import defpackage.et7;
+import defpackage.f73;
+import defpackage.ft7;
+import defpackage.g26;
+import defpackage.g43;
+import defpackage.gt7;
+import defpackage.gu5;
+import defpackage.gv7;
+import defpackage.gx1;
+import defpackage.h31;
+import defpackage.h67;
+import defpackage.h71;
+import defpackage.hh4;
+import defpackage.hs1;
+import defpackage.ht7;
+import defpackage.hx1;
+import defpackage.i60;
+import defpackage.it7;
+import defpackage.jf1;
+import defpackage.jq8;
+import defpackage.js5;
+import defpackage.lk0;
+import defpackage.ls1;
+import defpackage.ni8;
+import defpackage.nu5;
+import defpackage.ot0;
+import defpackage.ou0;
+import defpackage.pu5;
+import defpackage.q50;
+import defpackage.qu1;
+import defpackage.r50;
+import defpackage.t31;
+import defpackage.t47;
+import defpackage.tb;
+import defpackage.ur5;
+import defpackage.ut;
+import defpackage.uu5;
+import defpackage.v08;
+import defpackage.vf1;
+import defpackage.vj;
+import defpackage.vk7;
+import defpackage.wa6;
+import defpackage.wr5;
+import defpackage.xu6;
+import defpackage.y;
+import defpackage.y5;
+import defpackage.y51;
+import defpackage.yl0;
+import defpackage.ym2;
+import defpackage.z51;
+import defpackage.zg4;
+import defpackage.zo7;
+import io.sentry.z1;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Locale;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class TextInputLayout extends LinearLayout implements ViewTreeObserver.OnGlobalLayoutListener {
-    public static final int t1 = na5.Widget_Design_TextInputLayout;
-    public static final int[][] u1 = {new int[]{R.attr.state_pressed}, new int[0]};
-    public d04 A0;
-    public StateListDrawable B0;
-    public boolean C0;
-    public d04 D0;
-    public d04 E0;
-    public j86 F0;
-    public boolean G0;
-    public final int H0;
-    public int I0;
-    public int J0;
-    public int K0;
-    public int L0;
-    public int M0;
-    public int N0;
-    public int O0;
-    public final Rect P0;
-    public final FrameLayout Q;
-    public final Rect Q0;
-    public final wg6 R;
-    public final RectF R0;
-    public final qo1 S;
-    public Typeface S0;
-    public final int T;
-    public ColorDrawable T0;
-    public EditText U;
+    public static final int C1 = nu5.Widget_Design_TextInputLayout;
+    public static final int[][] D1 = {new int[]{R.attr.state_pressed}, new int[0]};
+    public Fade A0;
+    public boolean A1;
+    public ColorStateList B0;
+    public boolean B1;
+    public ColorStateList C0;
+    public ColorStateList D0;
+    public ColorStateList E0;
+    public boolean F0;
+    public CharSequence G0;
+    public boolean H0;
+    public bh4 I0;
+    public bh4 J0;
+    public StateListDrawable K0;
+    public boolean L0;
+    public bh4 M0;
+    public bh4 N0;
+    public xu6 O0;
+    public boolean P0;
+    public final int Q0;
+    public int R0;
+    public int S0;
+    public int T0;
     public int U0;
-    public CharSequence V;
-    public final LinkedHashSet V0;
-    public int W;
-    public ColorDrawable W0;
+    public int V0;
+    public int W0;
     public int X0;
-    public Drawable Y0;
-    public ColorStateList Z0;
-    public int a0;
-    public ColorStateList a1;
-    public int b0;
-    public int b1;
-    public int c0;
-    public int c1;
-    public final kp2 d0;
+    public final Rect Y0;
+    public final Rect Z0;
+    public final RectF a1;
+    public Typeface b1;
+    public final FrameLayout c0;
+    public ColorDrawable c1;
+    public final t47 d0;
     public int d1;
-    public boolean e0;
-    public ColorStateList e1;
-    public int f0;
-    public int f1;
-    public boolean g0;
+    public final hx1 e0;
+    public final LinkedHashSet e1;
+    public final int f0;
+    public ColorDrawable f1;
+    public EditText g0;
     public int g1;
-    public d17 h0;
-    public int h1;
-    public AppCompatTextView i0;
-    public int i1;
+    public CharSequence h0;
+    public Drawable h1;
+    public int i0;
+    public ColorStateList i1;
     public int j0;
-    public int j1;
+    public ColorStateList j1;
     public int k0;
     public int k1;
-    public CharSequence l0;
-    public boolean l1;
-    public boolean m0;
-    public final im0 m1;
-    public AppCompatTextView n0;
-    public boolean n1;
-    public ColorStateList o0;
-    public boolean o1;
-    public int p0;
-    public ValueAnimator p1;
-    public Fade q0;
-    public boolean q1;
-    public Fade r0;
-    public boolean r1;
-    public ColorStateList s0;
-    public boolean s1;
-    public ColorStateList t0;
-    public ColorStateList u0;
-    public ColorStateList v0;
-    public boolean w0;
-    public CharSequence x0;
-    public boolean y0;
-    public d04 z0;
+    public int l0;
+    public int l1;
+    public final g43 m0;
+    public int m1;
+    public boolean n0;
+    public ColorStateList n1;
+    public int o0;
+    public int o1;
+    public boolean p0;
+    public int p1;
+    public ht7 q0;
+    public int q1;
+    public AppCompatTextView r0;
+    public int r1;
+    public int s0;
+    public int s1;
+    public int t0;
+    public int t1;
+    public CharSequence u0;
+    public boolean u1;
+    public boolean v0;
+    public final ot0 v1;
+    public AppCompatTextView w0;
+    public boolean w1;
+    public ColorStateList x0;
+    public boolean x1;
+    public int y0;
+    public ValueAnimator y1;
+    public Fade z0;
+    public boolean z1;
 
     /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public TextInputLayout(Context context, AttributeSet attributeSet, int i) {
-        int i2 = t1;
-        super(i04.a(context, attributeSet, i, i2), attributeSet, i);
-        this.W = -1;
-        this.a0 = -1;
-        this.b0 = -1;
-        this.c0 = -1;
-        this.d0 = new kp2(this);
-        this.h0 = new j26(12);
-        this.P0 = new Rect();
-        this.Q0 = new Rect();
-        this.R0 = new RectF();
-        this.V0 = new LinkedHashSet();
-        im0 im0Var = new im0(this);
-        this.m1 = im0Var;
-        this.s1 = false;
+        super(hh4.b(context, attributeSet, i, r5), attributeSet, i);
+        int i2 = C1;
+        this.i0 = -1;
+        this.j0 = -1;
+        this.k0 = -1;
+        this.l0 = -1;
+        this.m0 = new g43(this);
+        this.q0 = new co6(12);
+        this.Y0 = new Rect();
+        this.Z0 = new Rect();
+        this.a1 = new RectF();
+        this.e1 = new LinkedHashSet();
+        ot0 ot0Var = new ot0(this);
+        this.v1 = ot0Var;
+        this.B1 = false;
         Context context2 = getContext();
         setOrientation(1);
         setWillNotDraw(false);
         setAddStatesFromChildren(true);
         FrameLayout frameLayout = new FrameLayout(context2);
-        this.Q = frameLayout;
+        this.c0 = frameLayout;
         frameLayout.setAddStatesFromChildren(true);
-        LinearInterpolator linearInterpolator = hi.a;
-        im0Var.R = linearInterpolator;
-        im0Var.j(false);
-        im0Var.Q = linearInterpolator;
-        im0Var.j(false);
-        if (im0Var.g != 8388659) {
-            im0Var.g = 8388659;
-            im0Var.j(false);
+        LinearInterpolator linearInterpolator = vj.a;
+        ot0Var.R = linearInterpolator;
+        ot0Var.j(false);
+        ot0Var.Q = linearInterpolator;
+        ot0Var.j(false);
+        if (ot0Var.g != 8388659) {
+            ot0Var.g = 8388659;
+            ot0Var.j(false);
         }
-        int[] iArr = va5.TextInputLayout;
-        int[] iArr2 = {va5.TextInputLayout_counterTextAppearance, va5.TextInputLayout_counterOverflowTextAppearance, va5.TextInputLayout_errorTextAppearance, va5.TextInputLayout_helperTextTextAppearance, va5.TextInputLayout_hintTextAppearance};
-        c37.a(context2, attributeSet, i, i2);
-        c37.b(context2, attributeSet, iArr, i, i2, iArr2);
-        TypedArray typedArrayObtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, iArr, i, i2);
-        av2 av2Var = new av2(context2, typedArrayObtainStyledAttributes);
-        wg6 wg6Var = new wg6(this, av2Var);
-        this.R = wg6Var;
-        this.w0 = typedArrayObtainStyledAttributes.getBoolean(va5.TextInputLayout_hintEnabled, true);
-        setHint(typedArrayObtainStyledAttributes.getText(va5.TextInputLayout_android_hint));
-        this.o1 = typedArrayObtainStyledAttributes.getBoolean(va5.TextInputLayout_hintAnimationEnabled, true);
-        this.n1 = typedArrayObtainStyledAttributes.getBoolean(va5.TextInputLayout_expandedHintEnabled, true);
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_android_minEms)) {
-            setMinEms(typedArrayObtainStyledAttributes.getInt(va5.TextInputLayout_android_minEms, -1));
-        } else if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_android_minWidth)) {
-            setMinWidth(typedArrayObtainStyledAttributes.getDimensionPixelSize(va5.TextInputLayout_android_minWidth, -1));
+        int[] iArr = uu5.TextInputLayout;
+        int[] iArr2 = {uu5.TextInputLayout_counterTextAppearance, uu5.TextInputLayout_counterOverflowTextAppearance, uu5.TextInputLayout_errorTextAppearance, uu5.TextInputLayout_helperTextTextAppearance, uu5.TextInputLayout_hintTextAppearance};
+        gv7.a(context2, attributeSet, i, i2);
+        gv7.b(context2, attributeSet, iArr, i, i2, iArr2);
+        TypedArray obtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, iArr, i, i2);
+        vk7 vk7Var = new vk7(context2, obtainStyledAttributes);
+        t47 t47Var = new t47(this, vk7Var);
+        this.d0 = t47Var;
+        this.F0 = obtainStyledAttributes.getBoolean(uu5.TextInputLayout_hintEnabled, true);
+        setHint(obtainStyledAttributes.getText(uu5.TextInputLayout_android_hint));
+        this.x1 = obtainStyledAttributes.getBoolean(uu5.TextInputLayout_hintAnimationEnabled, true);
+        this.w1 = obtainStyledAttributes.getBoolean(uu5.TextInputLayout_expandedHintEnabled, true);
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_android_minEms)) {
+            setMinEms(obtainStyledAttributes.getInt(uu5.TextInputLayout_android_minEms, -1));
+        } else if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_android_minWidth)) {
+            setMinWidth(obtainStyledAttributes.getDimensionPixelSize(uu5.TextInputLayout_android_minWidth, -1));
         }
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_android_maxEms)) {
-            setMaxEms(typedArrayObtainStyledAttributes.getInt(va5.TextInputLayout_android_maxEms, -1));
-        } else if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_android_maxWidth)) {
-            setMaxWidth(typedArrayObtainStyledAttributes.getDimensionPixelSize(va5.TextInputLayout_android_maxWidth, -1));
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_android_maxEms)) {
+            setMaxEms(obtainStyledAttributes.getInt(uu5.TextInputLayout_android_maxEms, -1));
+        } else if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_android_maxWidth)) {
+            setMaxWidth(obtainStyledAttributes.getDimensionPixelSize(uu5.TextInputLayout_android_maxWidth, -1));
         }
-        this.F0 = j86.b(context2, attributeSet, i, i2).b();
-        this.H0 = context2.getResources().getDimensionPixelOffset(k85.mtrl_textinput_box_label_cutout_padding);
-        this.J0 = typedArrayObtainStyledAttributes.getDimensionPixelOffset(va5.TextInputLayout_boxCollapsedPaddingTop, 0);
-        this.T = getResources().getDimensionPixelSize(k85.m3_multiline_hint_filled_text_extra_space);
-        this.L0 = typedArrayObtainStyledAttributes.getDimensionPixelSize(va5.TextInputLayout_boxStrokeWidth, context2.getResources().getDimensionPixelSize(k85.mtrl_textinput_box_stroke_width_default));
-        this.M0 = typedArrayObtainStyledAttributes.getDimensionPixelSize(va5.TextInputLayout_boxStrokeWidthFocused, context2.getResources().getDimensionPixelSize(k85.mtrl_textinput_box_stroke_width_focused));
-        this.K0 = this.L0;
-        float dimension = typedArrayObtainStyledAttributes.getDimension(va5.TextInputLayout_boxCornerRadiusTopStart, -1.0f);
-        float dimension2 = typedArrayObtainStyledAttributes.getDimension(va5.TextInputLayout_boxCornerRadiusTopEnd, -1.0f);
-        float dimension3 = typedArrayObtainStyledAttributes.getDimension(va5.TextInputLayout_boxCornerRadiusBottomEnd, -1.0f);
-        float dimension4 = typedArrayObtainStyledAttributes.getDimension(va5.TextInputLayout_boxCornerRadiusBottomStart, -1.0f);
-        o5 o5VarF = this.F0.f();
+        this.O0 = xu6.g(context2, attributeSet, i, i2).b();
+        this.Q0 = context2.getResources().getDimensionPixelOffset(js5.mtrl_textinput_box_label_cutout_padding);
+        this.S0 = obtainStyledAttributes.getDimensionPixelOffset(uu5.TextInputLayout_boxCollapsedPaddingTop, 0);
+        this.f0 = getResources().getDimensionPixelSize(js5.m3_multiline_hint_filled_text_extra_space);
+        this.U0 = obtainStyledAttributes.getDimensionPixelSize(uu5.TextInputLayout_boxStrokeWidth, context2.getResources().getDimensionPixelSize(js5.mtrl_textinput_box_stroke_width_default));
+        this.V0 = obtainStyledAttributes.getDimensionPixelSize(uu5.TextInputLayout_boxStrokeWidthFocused, context2.getResources().getDimensionPixelSize(js5.mtrl_textinput_box_stroke_width_focused));
+        this.T0 = this.U0;
+        float dimension = obtainStyledAttributes.getDimension(uu5.TextInputLayout_boxCornerRadiusTopStart, -1.0f);
+        float dimension2 = obtainStyledAttributes.getDimension(uu5.TextInputLayout_boxCornerRadiusTopEnd, -1.0f);
+        float dimension3 = obtainStyledAttributes.getDimension(uu5.TextInputLayout_boxCornerRadiusBottomEnd, -1.0f);
+        float dimension4 = obtainStyledAttributes.getDimension(uu5.TextInputLayout_boxCornerRadiusBottomStart, -1.0f);
+        y5 k = this.O0.k();
         if (dimension >= 0.0f) {
-            o5VarF.U = new b0(dimension);
+            k.d0 = new y(dimension);
         }
         if (dimension2 >= 0.0f) {
-            o5VarF.V = new b0(dimension2);
+            k.e0 = new y(dimension2);
         }
         if (dimension3 >= 0.0f) {
-            o5VarF.W = new b0(dimension3);
+            k.f0 = new y(dimension3);
         }
         if (dimension4 >= 0.0f) {
-            o5VarF.X = new b0(dimension4);
+            k.g0 = new y(dimension4);
         }
-        this.F0 = o5VarF.b();
-        ColorStateList colorStateListE = hc7.E(context2, av2Var, va5.TextInputLayout_boxBackgroundColor);
-        if (colorStateListE != null) {
-            int defaultColor = colorStateListE.getDefaultColor();
-            this.f1 = defaultColor;
-            this.O0 = defaultColor;
-            if (colorStateListE.isStateful()) {
-                this.g1 = colorStateListE.getColorForState(new int[]{-16842910}, -1);
-                this.h1 = colorStateListE.getColorForState(new int[]{R.attr.state_focused, R.attr.state_enabled}, -1);
-                this.i1 = colorStateListE.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, -1);
+        this.O0 = k.b();
+        ColorStateList w = jf1.w(context2, vk7Var, uu5.TextInputLayout_boxBackgroundColor);
+        if (w != null) {
+            int defaultColor = w.getDefaultColor();
+            this.o1 = defaultColor;
+            this.X0 = defaultColor;
+            if (w.isStateful()) {
+                this.p1 = w.getColorForState(new int[]{-16842910}, -1);
+                this.q1 = w.getColorForState(new int[]{R.attr.state_focused, R.attr.state_enabled}, -1);
+                this.r1 = w.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, -1);
             } else {
-                this.h1 = this.f1;
-                ColorStateList colorStateListB = bv7.B(context2, d85.mtrl_filled_background_color);
-                this.g1 = colorStateListB.getColorForState(new int[]{-16842910}, -1);
-                this.i1 = colorStateListB.getColorForState(new int[]{R.attr.state_hovered}, -1);
+                this.q1 = this.o1;
+                ColorStateList u = jq8.u(context2, cs5.mtrl_filled_background_color);
+                this.p1 = u.getColorForState(new int[]{-16842910}, -1);
+                this.r1 = u.getColorForState(new int[]{R.attr.state_hovered}, -1);
             }
         } else {
-            this.O0 = 0;
-            this.f1 = 0;
-            this.g1 = 0;
-            this.h1 = 0;
-            this.i1 = 0;
+            this.X0 = 0;
+            this.o1 = 0;
+            this.p1 = 0;
+            this.q1 = 0;
+            this.r1 = 0;
         }
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_android_textColorHint)) {
-            ColorStateList colorStateListQ = av2Var.q(va5.TextInputLayout_android_textColorHint);
-            this.a1 = colorStateListQ;
-            this.Z0 = colorStateListQ;
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_android_textColorHint)) {
+            ColorStateList d = vk7Var.d(uu5.TextInputLayout_android_textColorHint);
+            this.j1 = d;
+            this.i1 = d;
         }
-        ColorStateList colorStateListE2 = hc7.E(context2, av2Var, va5.TextInputLayout_boxStrokeColor);
-        this.d1 = typedArrayObtainStyledAttributes.getColor(va5.TextInputLayout_boxStrokeColor, 0);
-        this.b1 = bv7.A(context2, d85.mtrl_textinput_default_box_stroke_color);
-        this.j1 = bv7.A(context2, d85.mtrl_textinput_disabled_color);
-        this.c1 = bv7.A(context2, d85.mtrl_textinput_hovered_box_stroke_color);
-        if (colorStateListE2 != null) {
-            setBoxStrokeColorStateList(colorStateListE2);
+        ColorStateList w2 = jf1.w(context2, vk7Var, uu5.TextInputLayout_boxStrokeColor);
+        this.m1 = obtainStyledAttributes.getColor(uu5.TextInputLayout_boxStrokeColor, 0);
+        this.k1 = context2.getColor(cs5.mtrl_textinput_default_box_stroke_color);
+        this.s1 = context2.getColor(cs5.mtrl_textinput_disabled_color);
+        this.l1 = context2.getColor(cs5.mtrl_textinput_hovered_box_stroke_color);
+        if (w2 != null) {
+            setBoxStrokeColorStateList(w2);
         }
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_boxStrokeErrorColor)) {
-            setBoxStrokeErrorColor(hc7.E(context2, av2Var, va5.TextInputLayout_boxStrokeErrorColor));
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_boxStrokeErrorColor)) {
+            setBoxStrokeErrorColor(jf1.w(context2, vk7Var, uu5.TextInputLayout_boxStrokeErrorColor));
         }
-        if (typedArrayObtainStyledAttributes.getResourceId(va5.TextInputLayout_hintTextAppearance, -1) != -1) {
-            setHintTextAppearance(typedArrayObtainStyledAttributes.getResourceId(va5.TextInputLayout_hintTextAppearance, 0));
+        if (obtainStyledAttributes.getResourceId(uu5.TextInputLayout_hintTextAppearance, -1) != -1) {
+            setHintTextAppearance(obtainStyledAttributes.getResourceId(uu5.TextInputLayout_hintTextAppearance, 0));
         }
-        this.u0 = av2Var.q(va5.TextInputLayout_cursorColor);
-        this.v0 = av2Var.q(va5.TextInputLayout_cursorErrorColor);
-        int resourceId = typedArrayObtainStyledAttributes.getResourceId(va5.TextInputLayout_errorTextAppearance, 0);
-        CharSequence text = typedArrayObtainStyledAttributes.getText(va5.TextInputLayout_errorContentDescription);
-        int i3 = typedArrayObtainStyledAttributes.getInt(va5.TextInputLayout_errorAccessibilityLiveRegion, 1);
-        boolean z = typedArrayObtainStyledAttributes.getBoolean(va5.TextInputLayout_errorEnabled, false);
-        int resourceId2 = typedArrayObtainStyledAttributes.getResourceId(va5.TextInputLayout_helperTextTextAppearance, 0);
-        boolean z2 = typedArrayObtainStyledAttributes.getBoolean(va5.TextInputLayout_helperTextEnabled, false);
-        CharSequence text2 = typedArrayObtainStyledAttributes.getText(va5.TextInputLayout_helperText);
-        int resourceId3 = typedArrayObtainStyledAttributes.getResourceId(va5.TextInputLayout_placeholderTextAppearance, 0);
-        CharSequence text3 = typedArrayObtainStyledAttributes.getText(va5.TextInputLayout_placeholderText);
-        boolean z3 = typedArrayObtainStyledAttributes.getBoolean(va5.TextInputLayout_counterEnabled, false);
-        setCounterMaxLength(typedArrayObtainStyledAttributes.getInt(va5.TextInputLayout_counterMaxLength, -1));
-        this.k0 = typedArrayObtainStyledAttributes.getResourceId(va5.TextInputLayout_counterTextAppearance, 0);
-        this.j0 = typedArrayObtainStyledAttributes.getResourceId(va5.TextInputLayout_counterOverflowTextAppearance, 0);
-        setBoxBackgroundMode(typedArrayObtainStyledAttributes.getInt(va5.TextInputLayout_boxBackgroundMode, 0));
+        this.D0 = vk7Var.d(uu5.TextInputLayout_cursorColor);
+        this.E0 = vk7Var.d(uu5.TextInputLayout_cursorErrorColor);
+        int resourceId = obtainStyledAttributes.getResourceId(uu5.TextInputLayout_errorTextAppearance, 0);
+        CharSequence text = obtainStyledAttributes.getText(uu5.TextInputLayout_errorContentDescription);
+        int i3 = obtainStyledAttributes.getInt(uu5.TextInputLayout_errorAccessibilityLiveRegion, 1);
+        boolean z = obtainStyledAttributes.getBoolean(uu5.TextInputLayout_errorEnabled, false);
+        int resourceId2 = obtainStyledAttributes.getResourceId(uu5.TextInputLayout_helperTextTextAppearance, 0);
+        boolean z2 = obtainStyledAttributes.getBoolean(uu5.TextInputLayout_helperTextEnabled, false);
+        CharSequence text2 = obtainStyledAttributes.getText(uu5.TextInputLayout_helperText);
+        int resourceId3 = obtainStyledAttributes.getResourceId(uu5.TextInputLayout_placeholderTextAppearance, 0);
+        CharSequence text3 = obtainStyledAttributes.getText(uu5.TextInputLayout_placeholderText);
+        boolean z3 = obtainStyledAttributes.getBoolean(uu5.TextInputLayout_counterEnabled, false);
+        setCounterMaxLength(obtainStyledAttributes.getInt(uu5.TextInputLayout_counterMaxLength, -1));
+        this.t0 = obtainStyledAttributes.getResourceId(uu5.TextInputLayout_counterTextAppearance, 0);
+        this.s0 = obtainStyledAttributes.getResourceId(uu5.TextInputLayout_counterOverflowTextAppearance, 0);
+        setBoxBackgroundMode(obtainStyledAttributes.getInt(uu5.TextInputLayout_boxBackgroundMode, 0));
         setErrorContentDescription(text);
         setErrorAccessibilityLiveRegion(i3);
-        setCounterOverflowTextAppearance(this.j0);
+        setCounterOverflowTextAppearance(this.s0);
         setHelperTextTextAppearance(resourceId2);
         setErrorTextAppearance(resourceId);
-        setCounterTextAppearance(this.k0);
+        setCounterTextAppearance(this.t0);
         setPlaceholderText(text3);
         setPlaceholderTextAppearance(resourceId3);
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_errorTextColor)) {
-            setErrorTextColor(av2Var.q(va5.TextInputLayout_errorTextColor));
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_errorTextColor)) {
+            setErrorTextColor(vk7Var.d(uu5.TextInputLayout_errorTextColor));
         }
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_helperTextTextColor)) {
-            setHelperTextColor(av2Var.q(va5.TextInputLayout_helperTextTextColor));
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_helperTextTextColor)) {
+            setHelperTextColor(vk7Var.d(uu5.TextInputLayout_helperTextTextColor));
         }
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_hintTextColor)) {
-            setHintTextColor(av2Var.q(va5.TextInputLayout_hintTextColor));
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_hintTextColor)) {
+            setHintTextColor(vk7Var.d(uu5.TextInputLayout_hintTextColor));
         }
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_counterTextColor)) {
-            setCounterTextColor(av2Var.q(va5.TextInputLayout_counterTextColor));
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_counterTextColor)) {
+            setCounterTextColor(vk7Var.d(uu5.TextInputLayout_counterTextColor));
         }
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_counterOverflowTextColor)) {
-            setCounterOverflowTextColor(av2Var.q(va5.TextInputLayout_counterOverflowTextColor));
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_counterOverflowTextColor)) {
+            setCounterOverflowTextColor(vk7Var.d(uu5.TextInputLayout_counterOverflowTextColor));
         }
-        if (typedArrayObtainStyledAttributes.hasValue(va5.TextInputLayout_placeholderTextColor)) {
-            setPlaceholderTextColor(av2Var.q(va5.TextInputLayout_placeholderTextColor));
+        if (obtainStyledAttributes.hasValue(uu5.TextInputLayout_placeholderTextColor)) {
+            setPlaceholderTextColor(vk7Var.d(uu5.TextInputLayout_placeholderTextColor));
         }
-        qo1 qo1Var = new qo1(this, av2Var);
-        this.S = qo1Var;
-        boolean z4 = typedArrayObtainStyledAttributes.getBoolean(va5.TextInputLayout_android_enabled, true);
-        setHintMaxLines(typedArrayObtainStyledAttributes.getInt(va5.TextInputLayout_hintMaxLines, 1));
-        av2Var.H();
+        hx1 hx1Var = new hx1(this, vk7Var);
+        this.e0 = hx1Var;
+        boolean z4 = obtainStyledAttributes.getBoolean(uu5.TextInputLayout_android_enabled, true);
+        setHintMaxLines(obtainStyledAttributes.getInt(uu5.TextInputLayout_hintMaxLines, 1));
+        vk7Var.l();
         setImportantForAccessibility(2);
         if (Build.VERSION.SDK_INT >= 26) {
             setImportantForAutofill(1);
         }
-        frameLayout.addView(wg6Var);
-        frameLayout.addView(qo1Var);
+        frameLayout.addView(t47Var);
+        frameLayout.addView(hx1Var);
         addView(frameLayout);
         setEnabled(z4);
         setHelperTextEnabled(z2);
@@ -379,51 +379,50 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private Drawable getEditTextBoxBackground() {
-        EditText editText = this.U;
+        EditText editText = this.g0;
         if (!(editText instanceof AutoCompleteTextView) || editText.getInputType() != 0) {
-            return this.z0;
+            return this.I0;
         }
-        int iY = va6.y(this.U, x75.colorControlHighlight);
-        int i = this.I0;
-        int[][] iArr = u1;
+        EditText editText2 = this.g0;
+        int p0 = h31.p0(editText2.getContext(), d01.R(editText2, wr5.colorControlHighlight));
+        int i = this.R0;
+        int[][] iArr = D1;
         if (i != 2) {
             if (i != 1) {
                 return null;
             }
-            d04 d04Var = this.z0;
-            int i2 = this.O0;
-            return new RippleDrawable(new ColorStateList(iArr, new int[]{va6.L(iY, 0.1f, i2), i2}), d04Var, d04Var);
+            bh4 bh4Var = this.I0;
+            int i2 = this.X0;
+            return new RippleDrawable(new ColorStateList(iArr, new int[]{h31.g0(p0, 0.1f, i2), i2}), bh4Var, bh4Var);
         }
         Context context = getContext();
-        d04 d04Var2 = this.z0;
-        TypedValue typedValueJ0 = xf5.j0(v75.colorSurface, context, "TextInputLayout");
-        int i3 = typedValueJ0.resourceId;
-        int iA = i3 != 0 ? bv7.A(context, i3) : typedValueJ0.data;
-        d04 d04Var3 = new d04(d04Var2.R.a);
-        int iL = va6.L(iY, 0.1f, iA);
-        d04Var3.q(new ColorStateList(iArr, new int[]{iL, 0}));
-        d04Var3.setTint(iA);
-        ColorStateList colorStateList = new ColorStateList(iArr, new int[]{iL, iA});
-        d04 d04Var4 = new d04(d04Var2.R.a);
-        d04Var4.setTint(-1);
-        return new LayerDrawable(new Drawable[]{new RippleDrawable(colorStateList, d04Var3, d04Var4), d04Var2});
+        bh4 bh4Var2 = this.I0;
+        int p02 = h31.p0(context, d01.Q(ur5.colorSurface, context, "TextInputLayout"));
+        bh4 bh4Var3 = new bh4(bh4Var2.k());
+        int g0 = h31.g0(p0, 0.1f, p02);
+        bh4Var3.t(new ColorStateList(iArr, new int[]{g0, 0}));
+        bh4Var3.setTint(p02);
+        ColorStateList colorStateList = new ColorStateList(iArr, new int[]{g0, p02});
+        bh4 bh4Var4 = new bh4(bh4Var2.k());
+        bh4Var4.setTint(-1);
+        return new LayerDrawable(new Drawable[]{new RippleDrawable(colorStateList, bh4Var3, bh4Var4), bh4Var2});
     }
 
     private Drawable getOrCreateFilledDropDownMenuBackground() {
-        if (this.B0 == null) {
+        if (this.K0 == null) {
             StateListDrawable stateListDrawable = new StateListDrawable();
-            this.B0 = stateListDrawable;
+            this.K0 = stateListDrawable;
             stateListDrawable.addState(new int[]{R.attr.state_above_anchor}, getOrCreateOutlinedDropDownMenuBackground());
-            this.B0.addState(new int[0], h(false));
+            this.K0.addState(new int[0], h(false));
         }
-        return this.B0;
+        return this.K0;
     }
 
     private Drawable getOrCreateOutlinedDropDownMenuBackground() {
-        if (this.A0 == null) {
-            this.A0 = h(true);
+        if (this.J0 == null) {
+            this.J0 = h(true);
         }
-        return this.A0;
+        return this.J0;
     }
 
     public static void m(ViewGroup viewGroup, boolean z) {
@@ -438,80 +437,80 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private void setEditText(EditText editText) {
-        if (this.U != null) {
-            fn.r("We already have an EditText, can only have one");
+        if (this.g0 != null) {
+            i60.p("We already have an EditText, can only have one");
             return;
         }
         getEndIconMode();
-        this.U = editText;
-        int i = this.W;
+        this.g0 = editText;
+        int i = this.i0;
         if (i != -1) {
             setMinEms(i);
         } else {
-            setMinWidth(this.b0);
+            setMinWidth(this.k0);
         }
-        int i2 = this.a0;
+        int i2 = this.j0;
         if (i2 != -1) {
             setMaxEms(i2);
         } else {
-            setMaxWidth(this.c0);
+            setMaxWidth(this.l0);
         }
-        this.C0 = false;
+        this.L0 = false;
         k();
-        setTextInputAccessibilityDelegate(new c17(this));
-        Typeface typeface = this.U.getTypeface();
-        im0 im0Var = this.m1;
-        im0Var.n(typeface);
-        float textSize = this.U.getTextSize();
-        if (im0Var.h != textSize) {
-            im0Var.h = textSize;
-            im0Var.j(false);
+        setTextInputAccessibilityDelegate(new gt7(this));
+        Typeface typeface = this.g0.getTypeface();
+        ot0 ot0Var = this.v1;
+        ot0Var.n(typeface);
+        float textSize = this.g0.getTextSize();
+        if (ot0Var.h != textSize) {
+            ot0Var.h = textSize;
+            ot0Var.j(false);
         }
-        float letterSpacing = this.U.getLetterSpacing();
-        if (im0Var.X != letterSpacing) {
-            im0Var.X = letterSpacing;
-            im0Var.j(false);
+        float letterSpacing = this.g0.getLetterSpacing();
+        if (ot0Var.X != letterSpacing) {
+            ot0Var.X = letterSpacing;
+            ot0Var.j(false);
         }
-        int gravity = this.U.getGravity();
+        int gravity = this.g0.getGravity();
         int i3 = (gravity & (-113)) | 48;
-        if (im0Var.g != i3) {
-            im0Var.g = i3;
-            im0Var.j(false);
+        if (ot0Var.g != i3) {
+            ot0Var.g = i3;
+            ot0Var.j(false);
         }
-        if (im0Var.f != gravity) {
-            im0Var.f = gravity;
-            im0Var.j(false);
+        if (ot0Var.f != gravity) {
+            ot0Var.f = gravity;
+            ot0Var.j(false);
         }
-        this.k1 = editText.getMinimumHeight();
-        this.U.addTextChangedListener(new b17(this, editText));
-        if (this.Z0 == null) {
-            this.Z0 = this.U.getHintTextColors();
+        this.t1 = editText.getMinimumHeight();
+        this.g0.addTextChangedListener(new ft7(this, editText));
+        if (this.i1 == null) {
+            this.i1 = this.g0.getHintTextColors();
         }
-        if (this.w0) {
-            if (TextUtils.isEmpty(this.x0)) {
-                CharSequence hint = this.U.getHint();
-                this.V = hint;
+        if (this.F0) {
+            if (TextUtils.isEmpty(this.G0)) {
+                CharSequence hint = this.g0.getHint();
+                this.h0 = hint;
                 setHint(hint);
-                this.U.setHint((CharSequence) null);
+                this.g0.setHint((CharSequence) null);
             }
-            this.y0 = true;
+            this.H0 = true;
         }
         if (Build.VERSION.SDK_INT >= 29) {
             r();
         }
-        if (this.i0 != null) {
-            p(this.U.getText());
+        if (this.r0 != null) {
+            p(this.g0.getText());
         }
         t();
-        this.d0.b();
-        this.R.bringToFront();
-        qo1 qo1Var = this.S;
-        qo1Var.bringToFront();
-        Iterator it = this.V0.iterator();
+        this.m0.b();
+        this.d0.bringToFront();
+        hx1 hx1Var = this.e0;
+        hx1Var.bringToFront();
+        Iterator it = this.e1.iterator();
         while (it.hasNext()) {
-            ((po1) it.next()).a(this);
+            ((gx1) it.next()).a(this);
         }
-        qo1Var.m();
+        hx1Var.n();
         if (!isEnabled()) {
             editText.setEnabled(false);
         }
@@ -519,52 +518,52 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private void setHintInternal(CharSequence charSequence) {
-        if (TextUtils.equals(charSequence, this.x0)) {
+        if (TextUtils.equals(charSequence, this.G0)) {
             return;
         }
-        this.x0 = charSequence;
-        im0 im0Var = this.m1;
-        if (charSequence == null || !TextUtils.equals(im0Var.B, charSequence)) {
-            im0Var.B = charSequence;
-            im0Var.C = null;
-            im0Var.j(false);
+        this.G0 = charSequence;
+        ot0 ot0Var = this.v1;
+        if (charSequence == null || !TextUtils.equals(ot0Var.B, charSequence)) {
+            ot0Var.B = charSequence;
+            ot0Var.C = null;
+            ot0Var.j(false);
         }
-        if (this.l1) {
+        if (this.u1) {
             return;
         }
         l();
     }
 
     private void setPlaceholderTextEnabled(boolean z) {
-        if (this.m0 == z) {
+        if (this.v0 == z) {
             return;
         }
-        AppCompatTextView appCompatTextView = this.n0;
+        AppCompatTextView appCompatTextView = this.w0;
         if (!z) {
             if (appCompatTextView != null) {
                 appCompatTextView.setVisibility(8);
             }
-            this.n0 = null;
+            this.w0 = null;
         } else if (appCompatTextView != null) {
-            this.Q.addView(appCompatTextView);
-            this.n0.setVisibility(0);
+            this.c0.addView(appCompatTextView);
+            this.w0.setVisibility(0);
         }
-        this.m0 = z;
+        this.v0 = z;
     }
 
     public final void a() {
-        if (this.U == null || this.I0 != 1) {
+        if (this.g0 == null || this.R0 != 1) {
             return;
         }
         if (getHintMaxLines() != 1) {
-            EditText editText = this.U;
-            editText.setPaddingRelative(editText.getPaddingStart(), (int) (this.m1.f() + this.T), this.U.getPaddingEnd(), getResources().getDimensionPixelSize(k85.material_filled_edittext_font_1_3_padding_bottom));
+            EditText editText = this.g0;
+            editText.setPaddingRelative(editText.getPaddingStart(), (int) (this.v1.f() + this.f0), this.g0.getPaddingEnd(), getResources().getDimensionPixelSize(js5.material_filled_edittext_font_1_3_padding_bottom));
         } else if (getContext().getResources().getConfiguration().fontScale >= 2.0f) {
-            EditText editText2 = this.U;
-            editText2.setPaddingRelative(editText2.getPaddingStart(), getResources().getDimensionPixelSize(k85.material_filled_edittext_font_2_0_padding_top), this.U.getPaddingEnd(), getResources().getDimensionPixelSize(k85.material_filled_edittext_font_2_0_padding_bottom));
-        } else if (hc7.L(getContext())) {
-            EditText editText3 = this.U;
-            editText3.setPaddingRelative(editText3.getPaddingStart(), getResources().getDimensionPixelSize(k85.material_filled_edittext_font_1_3_padding_top), this.U.getPaddingEnd(), getResources().getDimensionPixelSize(k85.material_filled_edittext_font_1_3_padding_bottom));
+            EditText editText2 = this.g0;
+            editText2.setPaddingRelative(editText2.getPaddingStart(), getResources().getDimensionPixelSize(js5.material_filled_edittext_font_2_0_padding_top), this.g0.getPaddingEnd(), getResources().getDimensionPixelSize(js5.material_filled_edittext_font_2_0_padding_bottom));
+        } else if (jf1.H(getContext())) {
+            EditText editText3 = this.g0;
+            editText3.setPaddingRelative(editText3.getPaddingStart(), getResources().getDimensionPixelSize(js5.material_filled_edittext_font_1_3_padding_top), this.g0.getPaddingEnd(), getResources().getDimensionPixelSize(js5.material_filled_edittext_font_1_3_padding_bottom));
         }
     }
 
@@ -576,7 +575,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
         FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(layoutParams);
         layoutParams2.gravity = (layoutParams2.gravity & (-113)) | 16;
-        FrameLayout frameLayout = this.Q;
+        FrameLayout frameLayout = this.c0;
         frameLayout.addView(view, layoutParams2);
         frameLayout.setLayoutParams(layoutParams);
         v();
@@ -584,50 +583,49 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public final void b(float f) {
-        im0 im0Var = this.m1;
-        if (im0Var.b == f) {
+        ot0 ot0Var = this.v1;
+        if (ot0Var.b == f) {
             return;
         }
-        if (this.p1 == null) {
+        if (this.y1 == null) {
             ValueAnimator valueAnimator = new ValueAnimator();
-            this.p1 = valueAnimator;
-            valueAnimator.setInterpolator(va6.V(getContext(), v75.motionEasingEmphasizedInterpolator, hi.b));
-            this.p1.setDuration(va6.U(getContext(), v75.motionDurationMedium4, 167));
-            this.p1.addUpdateListener(new j30(3, this));
+            this.y1 = valueAnimator;
+            valueAnimator.setInterpolator(ut.i0(getContext(), ur5.motionEasingEmphasizedInterpolator, vj.b));
+            this.y1.setDuration(ut.h0(getContext(), ur5.motionDurationMedium4, 167));
+            this.y1.addUpdateListener(new q50(3, this));
         }
-        this.p1.setFloatValues(im0Var.b, f);
-        this.p1.start();
+        this.y1.setFloatValues(ot0Var.b, f);
+        this.y1.start();
     }
 
     public final void c() {
         int i;
         int i2;
-        d04 d04Var = this.z0;
-        if (d04Var == null) {
+        bh4 bh4Var = this.I0;
+        if (bh4Var == null) {
             return;
         }
-        j86 j86Var = d04Var.R.a;
-        j86 j86Var2 = this.F0;
-        if (j86Var != j86Var2) {
-            d04Var.setShapeAppearanceModel(j86Var2);
+        xu6 k = bh4Var.k();
+        xu6 xu6Var = this.O0;
+        if (k != xu6Var) {
+            this.I0.setShapeAppearanceModel(xu6Var);
         }
-        if (this.I0 == 2 && (i = this.K0) > -1 && (i2 = this.N0) != 0) {
-            d04 d04Var2 = this.z0;
-            d04Var2.R.k = i;
-            d04Var2.invalidateSelf();
-            d04Var2.v(ColorStateList.valueOf(i2));
+        if (this.R0 == 2 && (i = this.T0) > -1 && (i2 = this.W0) != 0) {
+            bh4 bh4Var2 = this.I0;
+            bh4Var2.A(i);
+            bh4Var2.y(ColorStateList.valueOf(i2));
         }
-        int iB = this.O0;
-        if (this.I0 == 1) {
-            iB = in0.b(this.O0, va6.x(getContext(), v75.colorSurface, 0));
+        int i3 = this.X0;
+        if (this.R0 == 1) {
+            i3 = ou0.b(this.X0, h31.X(getContext(), ur5.colorSurface, 0));
         }
-        this.O0 = iB;
-        this.z0.q(ColorStateList.valueOf(iB));
-        d04 d04Var3 = this.D0;
-        if (d04Var3 != null && this.E0 != null) {
-            if (this.K0 > -1 && this.N0 != 0) {
-                d04Var3.q(this.U.isFocused() ? ColorStateList.valueOf(this.b1) : ColorStateList.valueOf(this.N0));
-                this.E0.q(ColorStateList.valueOf(this.N0));
+        this.X0 = i3;
+        this.I0.t(ColorStateList.valueOf(i3));
+        bh4 bh4Var3 = this.M0;
+        if (bh4Var3 != null && this.N0 != null) {
+            if (this.T0 > -1 && this.W0 != 0) {
+                bh4Var3.t(this.g0.isFocused() ? ColorStateList.valueOf(this.k1) : ColorStateList.valueOf(this.W0));
+                this.N0.t(ColorStateList.valueOf(this.W0));
             }
             invalidate();
         }
@@ -635,18 +633,18 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public final Rect d(Rect rect) {
-        if (this.U == null) {
-            x1.h();
+        if (this.g0 == null) {
+            z1.g();
             return null;
         }
         boolean z = getLayoutDirection() == 1;
         int i = rect.bottom;
-        Rect rect2 = this.Q0;
+        Rect rect2 = this.Z0;
         rect2.bottom = i;
-        int i2 = this.I0;
+        int i2 = this.R0;
         if (i2 == 1) {
             rect2.left = i(rect.left, z);
-            rect2.top = rect.top + this.J0;
+            rect2.top = rect.top + this.S0;
             rect2.right = j(rect.right, z);
             return rect2;
         }
@@ -657,175 +655,183 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             rect2.right = j(rect.right, z);
             return rect2;
         }
-        rect2.left = this.U.getPaddingLeft() + i3;
+        rect2.left = this.g0.getPaddingLeft() + i3;
         rect2.top = rect.top - e();
-        rect2.right = rect.right - this.U.getPaddingRight();
+        rect2.right = rect.right - this.g0.getPaddingRight();
         return rect2;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void dispatchProvideAutofillStructure(ViewStructure viewStructure, int i) {
-        EditText editText = this.U;
+        EditText editText = this.g0;
         if (editText == null) {
             super.dispatchProvideAutofillStructure(viewStructure, i);
             return;
         }
-        if (this.V != null) {
-            boolean z = this.y0;
-            this.y0 = false;
+        if (this.h0 != null) {
+            boolean z = this.H0;
+            this.H0 = false;
             CharSequence hint = editText.getHint();
-            this.U.setHint(this.V);
+            this.g0.setHint(this.h0);
             try {
                 super.dispatchProvideAutofillStructure(viewStructure, i);
                 return;
             } finally {
-                this.U.setHint(hint);
-                this.y0 = z;
+                this.g0.setHint(hint);
+                this.H0 = z;
             }
         }
         viewStructure.setAutofillId(getAutofillId());
         onProvideAutofillStructure(viewStructure, i);
         onProvideAutofillVirtualStructure(viewStructure, i);
-        FrameLayout frameLayout = this.Q;
+        FrameLayout frameLayout = this.c0;
         viewStructure.setChildCount(frameLayout.getChildCount());
         for (int i2 = 0; i2 < frameLayout.getChildCount(); i2++) {
             View childAt = frameLayout.getChildAt(i2);
-            ViewStructure viewStructureNewChild = viewStructure.newChild(i2);
-            childAt.dispatchProvideAutofillStructure(viewStructureNewChild, i);
-            if (childAt == this.U) {
-                viewStructureNewChild.setHint(getHint());
+            ViewStructure newChild = viewStructure.newChild(i2);
+            childAt.dispatchProvideAutofillStructure(newChild, i);
+            if (childAt == this.g0) {
+                newChild.setHint(getHint());
             }
         }
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void dispatchRestoreInstanceState(SparseArray sparseArray) {
-        this.r1 = true;
+        this.A1 = true;
         super.dispatchRestoreInstanceState(sparseArray);
-        this.r1 = false;
+        this.A1 = false;
     }
 
     @Override // android.view.View
     public final void draw(Canvas canvas) {
-        d04 d04Var;
+        bh4 bh4Var;
         super.draw(canvas);
-        boolean z = this.w0;
-        im0 im0Var = this.m1;
+        boolean z = this.F0;
+        ot0 ot0Var = this.v1;
         if (z) {
-            TextPaint textPaint = im0Var.O;
-            RectF rectF = im0Var.e;
-            int iSave = canvas.save();
-            if (im0Var.C != null && rectF.width() > 0.0f && rectF.height() > 0.0f) {
-                textPaint.setTextSize(im0Var.G);
-                float f = im0Var.q;
-                float f2 = im0Var.r;
-                float f3 = im0Var.F;
+            TextPaint textPaint = ot0Var.O;
+            RectF rectF = ot0Var.e;
+            int save = canvas.save();
+            if (ot0Var.C != null && rectF.width() > 0.0f && rectF.height() > 0.0f) {
+                textPaint.setTextSize(ot0Var.G);
+                float f = ot0Var.q;
+                float f2 = ot0Var.r;
+                float f3 = ot0Var.F;
                 if (f3 != 1.0f) {
                     canvas.scale(f3, f3, f, f2);
                 }
-                if ((im0Var.e0 > 1 || im0Var.f0 > 1) && !im0Var.D && im0Var.o()) {
-                    float lineStart = im0Var.q - im0Var.Z.getLineStart(0);
+                if ((ot0Var.e0 > 1 || ot0Var.f0 > 1) && !ot0Var.D && ot0Var.o()) {
+                    float lineStart = ot0Var.q - ot0Var.Z.getLineStart(0);
                     int alpha = textPaint.getAlpha();
                     canvas.translate(lineStart, f2);
                     float f4 = alpha;
-                    textPaint.setAlpha((int) (im0Var.c0 * f4));
+                    textPaint.setAlpha((int) (ot0Var.c0 * f4));
                     int i = Build.VERSION.SDK_INT;
                     if (i >= 31) {
-                        textPaint.setShadowLayer(im0Var.H, im0Var.I, im0Var.J, va6.r(im0Var.K, textPaint.getAlpha()));
+                        textPaint.setShadowLayer(ot0Var.H, ot0Var.I, ot0Var.J, h31.y(ot0Var.K, textPaint.getAlpha()));
                     }
-                    im0Var.Z.draw(canvas);
-                    textPaint.setAlpha((int) (im0Var.b0 * f4));
+                    ot0Var.Z.draw(canvas);
+                    textPaint.setAlpha((int) (ot0Var.b0 * f4));
                     if (i >= 31) {
-                        textPaint.setShadowLayer(im0Var.H, im0Var.I, im0Var.J, va6.r(im0Var.K, textPaint.getAlpha()));
+                        textPaint.setShadowLayer(ot0Var.H, ot0Var.I, ot0Var.J, h31.y(ot0Var.K, textPaint.getAlpha()));
                     }
-                    int lineBaseline = im0Var.Z.getLineBaseline(0);
-                    CharSequence charSequence = im0Var.d0;
+                    int lineBaseline = ot0Var.Z.getLineBaseline(0);
+                    CharSequence charSequence = ot0Var.d0;
                     float f5 = lineBaseline;
                     canvas.drawText(charSequence, 0, charSequence.length(), 0.0f, f5, textPaint);
                     if (i >= 31) {
-                        textPaint.setShadowLayer(im0Var.H, im0Var.I, im0Var.J, im0Var.K);
+                        textPaint.setShadowLayer(ot0Var.H, ot0Var.I, ot0Var.J, ot0Var.K);
                     }
-                    String strTrim = im0Var.d0.toString().trim();
-                    if (strTrim.endsWith("…")) {
-                        strTrim = strTrim.substring(0, strTrim.length() - 1);
+                    String trim = ot0Var.d0.toString().trim();
+                    if (trim.endsWith("…")) {
+                        trim = trim.substring(0, trim.length() - 1);
                     }
-                    String str = strTrim;
+                    String str = trim;
                     textPaint.setAlpha(alpha);
-                    canvas.drawText(str, 0, Math.min(im0Var.Z.getLineEnd(0), str.length()), 0.0f, f5, (Paint) textPaint);
+                    canvas.drawText(str, 0, Math.min(ot0Var.Z.getLineEnd(0), str.length()), 0.0f, f5, (Paint) textPaint);
                     canvas = canvas;
                 } else {
                     canvas.translate(f, f2);
-                    im0Var.Z.draw(canvas);
+                    ot0Var.Z.draw(canvas);
                 }
-                canvas.restoreToCount(iSave);
+                canvas.restoreToCount(save);
             }
         }
-        if (this.E0 == null || (d04Var = this.D0) == null) {
+        if (this.N0 == null || (bh4Var = this.M0) == null) {
             return;
         }
-        d04Var.draw(canvas);
-        if (this.U.isFocused()) {
-            Rect bounds = this.E0.getBounds();
-            Rect bounds2 = this.D0.getBounds();
-            float f6 = im0Var.b;
-            int iCenterX = bounds2.centerX();
-            bounds.left = hi.c(iCenterX, f6, bounds2.left);
-            bounds.right = hi.c(iCenterX, f6, bounds2.right);
-            this.E0.draw(canvas);
+        bh4Var.draw(canvas);
+        if (this.g0.isFocused()) {
+            Rect bounds = this.N0.getBounds();
+            Rect bounds2 = this.M0.getBounds();
+            float f6 = ot0Var.b;
+            int centerX = bounds2.centerX();
+            bounds.left = vj.c(centerX, f6, bounds2.left);
+            bounds.right = vj.c(centerX, f6, bounds2.right);
+            this.N0.draw(canvas);
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:16:0x002f  */
+    /* JADX WARN: Removed duplicated region for block: B:14:0x0034  */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x004d  */
     @Override // android.view.ViewGroup, android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final void drawableStateChanged() {
         boolean z;
         ColorStateList colorStateList;
-        if (this.q1) {
+        if (this.z1) {
             return;
         }
-        this.q1 = true;
+        this.z1 = true;
         super.drawableStateChanged();
         int[] drawableState = getDrawableState();
-        im0 im0Var = this.m1;
-        if (im0Var != null) {
-            im0Var.M = drawableState;
-            ColorStateList colorStateList2 = im0Var.k;
-            if ((colorStateList2 == null || !colorStateList2.isStateful()) && ((colorStateList = im0Var.j) == null || !colorStateList.isStateful())) {
-                z = false;
-            } else {
-                im0Var.j(false);
+        ot0 ot0Var = this.v1;
+        if (ot0Var != null) {
+            ot0Var.M = drawableState;
+            ColorStateList colorStateList2 = ot0Var.k;
+            if ((colorStateList2 != null && colorStateList2.isStateful()) || ((colorStateList = ot0Var.j) != null && colorStateList.isStateful())) {
+                ot0Var.j(false);
                 z = true;
+                if (this.g0 != null) {
+                    w(isLaidOut() && isEnabled(), false);
+                }
+                t();
+                z();
+                if (z) {
+                    invalidate();
+                }
+                this.z1 = false;
             }
-        } else {
-            z = false;
         }
-        if (this.U != null) {
-            w(isLaidOut() && isEnabled(), false);
+        z = false;
+        if (this.g0 != null) {
         }
         t();
         z();
         if (z) {
-            invalidate();
         }
-        this.q1 = false;
+        this.z1 = false;
     }
 
     public final int e() {
-        if (this.w0) {
-            int i = this.I0;
-            im0 im0Var = this.m1;
+        if (this.F0) {
+            int i = this.R0;
+            ot0 ot0Var = this.v1;
             if (i == 0) {
-                return (int) im0Var.f();
+                return (int) ot0Var.f();
             }
             if (i == 2) {
                 if (getHintMaxLines() == 1) {
-                    return (int) (im0Var.f() / 2.0f);
+                    return (int) (ot0Var.f() / 2.0f);
                 }
-                float f = im0Var.f();
-                TextPaint textPaint = im0Var.P;
-                textPaint.setTextSize(im0Var.i);
-                textPaint.setTypeface(im0Var.s);
-                textPaint.setLetterSpacing(im0Var.W);
+                float f = ot0Var.f();
+                TextPaint textPaint = ot0Var.P;
+                textPaint.setTextSize(ot0Var.i);
+                textPaint.setTypeface(ot0Var.s);
+                textPaint.setLetterSpacing(ot0Var.W);
                 return Math.max(0, (int) (f - ((-textPaint.ascent()) / 2.0f)));
             }
         }
@@ -834,167 +840,167 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     public final Fade f() {
         Fade fade = new Fade();
-        fade.S = va6.U(getContext(), v75.motionDurationShort2, 87);
-        fade.T = va6.V(getContext(), v75.motionEasingLinearInterpolator, hi.a);
+        fade.Z = ut.h0(getContext(), ur5.motionDurationShort2, 87);
+        fade.c0 = ut.i0(getContext(), ur5.motionEasingLinearInterpolator, vj.a);
         return fade;
     }
 
     public final boolean g() {
-        return this.w0 && !TextUtils.isEmpty(this.x0) && (this.z0 instanceof qy0);
+        return this.F0 && !TextUtils.isEmpty(this.G0) && (this.I0 instanceof a61);
     }
 
     @Override // android.widget.LinearLayout, android.view.View
     public int getBaseline() {
-        EditText editText = this.U;
+        EditText editText = this.g0;
         if (editText == null) {
             return super.getBaseline();
         }
         return e() + getPaddingTop() + editText.getBaseline();
     }
 
-    public d04 getBoxBackground() {
-        int i = this.I0;
+    public bh4 getBoxBackground() {
+        int i = this.R0;
         if (i == 1 || i == 2) {
-            return this.z0;
+            return this.I0;
         }
-        x1.h();
+        z1.g();
         return null;
     }
 
     public int getBoxBackgroundColor() {
-        return this.O0;
+        return this.X0;
     }
 
     public int getBoxBackgroundMode() {
-        return this.I0;
+        return this.R0;
     }
 
     public int getBoxCollapsedPaddingTop() {
-        return this.J0;
+        return this.S0;
     }
 
     public float getBoxCornerRadiusBottomEnd() {
         int layoutDirection = getLayoutDirection();
-        j86 j86Var = this.F0;
-        RectF rectF = this.R0;
-        return layoutDirection == 1 ? j86Var.h.a(rectF) : j86Var.g.a(rectF);
+        xu6 xu6Var = this.O0;
+        RectF rectF = this.a1;
+        return layoutDirection == 1 ? xu6Var.h.a(rectF) : xu6Var.g.a(rectF);
     }
 
     public float getBoxCornerRadiusBottomStart() {
         int layoutDirection = getLayoutDirection();
-        j86 j86Var = this.F0;
-        RectF rectF = this.R0;
-        return layoutDirection == 1 ? j86Var.g.a(rectF) : j86Var.h.a(rectF);
+        xu6 xu6Var = this.O0;
+        RectF rectF = this.a1;
+        return layoutDirection == 1 ? xu6Var.g.a(rectF) : xu6Var.h.a(rectF);
     }
 
     public float getBoxCornerRadiusTopEnd() {
         int layoutDirection = getLayoutDirection();
-        j86 j86Var = this.F0;
-        RectF rectF = this.R0;
-        return layoutDirection == 1 ? j86Var.e.a(rectF) : j86Var.f.a(rectF);
+        xu6 xu6Var = this.O0;
+        RectF rectF = this.a1;
+        return layoutDirection == 1 ? xu6Var.e.a(rectF) : xu6Var.f.a(rectF);
     }
 
     public float getBoxCornerRadiusTopStart() {
         int layoutDirection = getLayoutDirection();
-        j86 j86Var = this.F0;
-        RectF rectF = this.R0;
-        return layoutDirection == 1 ? j86Var.f.a(rectF) : j86Var.e.a(rectF);
+        xu6 xu6Var = this.O0;
+        RectF rectF = this.a1;
+        return layoutDirection == 1 ? xu6Var.f.a(rectF) : xu6Var.e.a(rectF);
     }
 
     public int getBoxStrokeColor() {
-        return this.d1;
+        return this.m1;
     }
 
     public ColorStateList getBoxStrokeErrorColor() {
-        return this.e1;
+        return this.n1;
     }
 
     public int getBoxStrokeWidth() {
-        return this.L0;
+        return this.U0;
     }
 
     public int getBoxStrokeWidthFocused() {
-        return this.M0;
+        return this.V0;
     }
 
     public int getCounterMaxLength() {
-        return this.f0;
+        return this.o0;
     }
 
     public CharSequence getCounterOverflowDescription() {
         AppCompatTextView appCompatTextView;
-        if (this.e0 && this.g0 && (appCompatTextView = this.i0) != null) {
+        if (this.n0 && this.p0 && (appCompatTextView = this.r0) != null) {
             return appCompatTextView.getContentDescription();
         }
         return null;
     }
 
     public ColorStateList getCounterOverflowTextColor() {
-        return this.t0;
+        return this.C0;
     }
 
     public ColorStateList getCounterTextColor() {
-        return this.s0;
+        return this.B0;
     }
 
     public ColorStateList getCursorColor() {
-        return this.u0;
+        return this.D0;
     }
 
     public ColorStateList getCursorErrorColor() {
-        return this.v0;
+        return this.E0;
     }
 
     public ColorStateList getDefaultHintTextColor() {
-        return this.Z0;
+        return this.i1;
     }
 
     public EditText getEditText() {
-        return this.U;
+        return this.g0;
     }
 
     public CharSequence getEndIconContentDescription() {
-        return this.S.W.getContentDescription();
+        return this.e0.i0.getContentDescription();
     }
 
     public Drawable getEndIconDrawable() {
-        return this.S.W.getDrawable();
+        return this.e0.i0.getDrawable();
     }
 
     public int getEndIconMinSize() {
-        return this.S.f0;
+        return this.e0.o0;
     }
 
     public int getEndIconMode() {
-        return this.S.b0;
+        return this.e0.k0;
     }
 
     public ImageView.ScaleType getEndIconScaleType() {
-        return this.S.g0;
+        return this.e0.p0;
     }
 
     public CheckableImageButton getEndIconView() {
-        return this.S.W;
+        return this.e0.i0;
     }
 
     public CharSequence getError() {
-        kp2 kp2Var = this.d0;
-        if (kp2Var.q) {
-            return kp2Var.p;
+        g43 g43Var = this.m0;
+        if (g43Var.q) {
+            return g43Var.p;
         }
         return null;
     }
 
     public int getErrorAccessibilityLiveRegion() {
-        return this.d0.t;
+        return this.m0.t;
     }
 
     public CharSequence getErrorContentDescription() {
-        return this.d0.s;
+        return this.m0.s;
     }
 
     public int getErrorCurrentTextColors() {
-        AppCompatTextView appCompatTextView = this.d0.r;
+        AppCompatTextView appCompatTextView = this.m0.r;
         if (appCompatTextView != null) {
             return appCompatTextView.getCurrentTextColor();
         }
@@ -1002,19 +1008,19 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public Drawable getErrorIconDrawable() {
-        return this.S.S.getDrawable();
+        return this.e0.e0.getDrawable();
     }
 
     public CharSequence getHelperText() {
-        kp2 kp2Var = this.d0;
-        if (kp2Var.x) {
-            return kp2Var.w;
+        g43 g43Var = this.m0;
+        if (g43Var.x) {
+            return g43Var.w;
         }
         return null;
     }
 
     public int getHelperTextCurrentTextColor() {
-        AppCompatTextView appCompatTextView = this.d0.y;
+        AppCompatTextView appCompatTextView = this.m0.y;
         if (appCompatTextView != null) {
             return appCompatTextView.getCurrentTextColor();
         }
@@ -1022,246 +1028,232 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public CharSequence getHint() {
-        if (this.w0) {
-            return this.x0;
+        if (this.F0) {
+            return this.G0;
         }
         return null;
     }
 
     public final float getHintCollapsedTextHeight() {
-        return this.m1.f();
+        return this.v1.f();
     }
 
     public final int getHintCurrentCollapsedTextColor() {
-        im0 im0Var = this.m1;
-        return im0Var.g(im0Var.k);
+        ot0 ot0Var = this.v1;
+        return ot0Var.g(ot0Var.k);
     }
 
     public int getHintMaxLines() {
-        return this.m1.e0;
+        return this.v1.e0;
     }
 
     public ColorStateList getHintTextColor() {
-        return this.a1;
+        return this.j1;
     }
 
-    public d17 getLengthCounter() {
-        return this.h0;
+    public ht7 getLengthCounter() {
+        return this.q0;
     }
 
     public int getMaxEms() {
-        return this.a0;
+        return this.j0;
     }
 
     public int getMaxWidth() {
-        return this.c0;
+        return this.l0;
     }
 
     public int getMinEms() {
-        return this.W;
+        return this.i0;
     }
 
     public int getMinWidth() {
-        return this.b0;
+        return this.k0;
     }
 
     @Deprecated
     public CharSequence getPasswordVisibilityToggleContentDescription() {
-        return this.S.W.getContentDescription();
+        return this.e0.i0.getContentDescription();
     }
 
     @Deprecated
     public Drawable getPasswordVisibilityToggleDrawable() {
-        return this.S.W.getDrawable();
+        return this.e0.i0.getDrawable();
     }
 
     public CharSequence getPlaceholderText() {
-        if (this.m0) {
-            return this.l0;
+        if (this.v0) {
+            return this.u0;
         }
         return null;
     }
 
     public int getPlaceholderTextAppearance() {
-        return this.p0;
+        return this.y0;
     }
 
     public ColorStateList getPlaceholderTextColor() {
-        return this.o0;
+        return this.x0;
     }
 
     public CharSequence getPrefixText() {
-        return this.R.S;
+        return this.d0.e0;
     }
 
     public ColorStateList getPrefixTextColor() {
-        return this.R.R.getTextColors();
+        return this.d0.d0.getTextColors();
     }
 
     public TextView getPrefixTextView() {
-        return this.R.R;
+        return this.d0.d0;
     }
 
-    public j86 getShapeAppearanceModel() {
-        return this.F0;
+    public xu6 getShapeAppearanceModel() {
+        return this.O0;
     }
 
     public CharSequence getStartIconContentDescription() {
-        return this.R.T.getContentDescription();
+        return this.d0.f0.getContentDescription();
     }
 
     public Drawable getStartIconDrawable() {
-        return this.R.T.getDrawable();
+        return this.d0.f0.getDrawable();
     }
 
     public int getStartIconMinSize() {
-        return this.R.W;
+        return this.d0.i0;
     }
 
     public ImageView.ScaleType getStartIconScaleType() {
-        return this.R.a0;
+        return this.d0.j0;
     }
 
     public CharSequence getSuffixText() {
-        return this.S.i0;
+        return this.e0.r0;
     }
 
     public ColorStateList getSuffixTextColor() {
-        return this.S.j0.getTextColors();
+        return this.e0.s0.getTextColors();
     }
 
     public TextView getSuffixTextView() {
-        return this.S.j0;
+        return this.e0.s0;
     }
 
     public Typeface getTypeface() {
-        return this.S0;
+        return this.b1;
     }
 
-    public final d04 h(boolean z) {
-        float dimensionPixelOffset = getResources().getDimensionPixelOffset(k85.mtrl_shape_corner_size_small_component);
+    public final bh4 h(boolean z) {
+        float dimensionPixelOffset = getResources().getDimensionPixelOffset(js5.mtrl_shape_corner_size_small_component);
         float f = z ? dimensionPixelOffset : 0.0f;
-        EditText editText = this.U;
-        float popupElevation = editText instanceof MaterialAutoCompleteTextView ? ((MaterialAutoCompleteTextView) editText).getPopupElevation() : getResources().getDimensionPixelOffset(k85.m3_comp_outlined_autocomplete_menu_container_elevation);
-        int dimensionPixelOffset2 = getResources().getDimensionPixelOffset(k85.mtrl_exposed_dropdown_menu_popup_vertical_padding);
-        tp5 tp5Var = new tp5();
-        tp5 tp5Var2 = new tp5();
-        tp5 tp5Var3 = new tp5();
-        tp5 tp5Var4 = new tp5();
+        EditText editText = this.g0;
+        float popupElevation = editText instanceof MaterialAutoCompleteTextView ? ((MaterialAutoCompleteTextView) editText).getPopupElevation() : getResources().getDimensionPixelOffset(js5.m3_comp_outlined_autocomplete_menu_container_elevation);
+        int dimensionPixelOffset2 = getResources().getDimensionPixelOffset(js5.mtrl_exposed_dropdown_menu_popup_vertical_padding);
+        wa6 wa6Var = new wa6();
+        wa6 wa6Var2 = new wa6();
+        wa6 wa6Var3 = new wa6();
+        wa6 wa6Var4 = new wa6();
         int i = 0;
-        hm1 hm1Var = new hm1(i);
-        hm1 hm1Var2 = new hm1(i);
-        hm1 hm1Var3 = new hm1(i);
-        hm1 hm1Var4 = new hm1(i);
-        b0 b0Var = new b0(f);
-        b0 b0Var2 = new b0(f);
-        b0 b0Var3 = new b0(dimensionPixelOffset);
-        b0 b0Var4 = new b0(dimensionPixelOffset);
-        j86 j86Var = new j86();
-        j86Var.a = tp5Var;
-        j86Var.b = tp5Var2;
-        j86Var.c = tp5Var3;
-        j86Var.d = tp5Var4;
-        j86Var.e = b0Var;
-        j86Var.f = b0Var2;
-        j86Var.g = b0Var4;
-        j86Var.h = b0Var3;
-        j86Var.i = hm1Var;
-        j86Var.j = hm1Var2;
-        j86Var.k = hm1Var3;
-        j86Var.l = hm1Var4;
-        EditText editText2 = this.U;
+        qu1 qu1Var = new qu1(i);
+        qu1 qu1Var2 = new qu1(i);
+        qu1 qu1Var3 = new qu1(i);
+        qu1 qu1Var4 = new qu1(i);
+        y yVar = new y(f);
+        y yVar2 = new y(f);
+        y yVar3 = new y(dimensionPixelOffset);
+        y yVar4 = new y(dimensionPixelOffset);
+        xu6 xu6Var = new xu6();
+        xu6Var.a = wa6Var;
+        xu6Var.b = wa6Var2;
+        xu6Var.c = wa6Var3;
+        xu6Var.d = wa6Var4;
+        xu6Var.e = yVar;
+        xu6Var.f = yVar2;
+        xu6Var.g = yVar4;
+        xu6Var.h = yVar3;
+        xu6Var.i = qu1Var;
+        xu6Var.j = qu1Var2;
+        xu6Var.k = qu1Var3;
+        xu6Var.l = qu1Var4;
+        EditText editText2 = this.g0;
         ColorStateList dropDownBackgroundTintList = editText2 instanceof MaterialAutoCompleteTextView ? ((MaterialAutoCompleteTextView) editText2).getDropDownBackgroundTintList() : null;
         Context context = getContext();
         if (dropDownBackgroundTintList == null) {
-            Paint paint = d04.u0;
-            TypedValue typedValueJ0 = xf5.j0(v75.colorSurface, context, d04.class.getSimpleName());
-            int i2 = typedValueJ0.resourceId;
-            dropDownBackgroundTintList = ColorStateList.valueOf(i2 != 0 ? bv7.A(context, i2) : typedValueJ0.data);
+            Paint paint = bh4.D0;
+            dropDownBackgroundTintList = ColorStateList.valueOf(h31.p0(context, d01.Q(ur5.colorSurface, context, bh4.class.getSimpleName())));
         }
-        d04 d04Var = new d04();
-        d04Var.m(context);
-        d04Var.q(dropDownBackgroundTintList);
-        d04Var.p(popupElevation);
-        d04Var.setShapeAppearanceModel(j86Var);
-        b04 b04Var = d04Var.R;
-        if (b04Var.h == null) {
-            b04Var.h = new Rect();
+        bh4 bh4Var = new bh4();
+        bh4Var.p(context);
+        bh4Var.t(dropDownBackgroundTintList);
+        bh4Var.s(popupElevation);
+        bh4Var.setShapeAppearanceModel(xu6Var);
+        zg4 zg4Var = bh4Var.Y;
+        if (zg4Var.h == null) {
+            zg4Var.h = new Rect();
         }
-        d04Var.R.h.set(0, dimensionPixelOffset2, 0, dimensionPixelOffset2);
-        d04Var.invalidateSelf();
-        return d04Var;
+        bh4Var.Y.h.set(0, dimensionPixelOffset2, 0, dimensionPixelOffset2);
+        bh4Var.invalidateSelf();
+        return bh4Var;
     }
 
     public final int i(int i, boolean z) {
-        int compoundPaddingLeft;
-        if (z || getPrefixText() == null) {
-            compoundPaddingLeft = (!z || getSuffixText() == null) ? this.U.getCompoundPaddingLeft() : this.S.c();
-        } else {
-            compoundPaddingLeft = this.R.a();
-        }
-        return compoundPaddingLeft + i;
+        return ((z || getPrefixText() == null) ? (!z || getSuffixText() == null) ? this.g0.getCompoundPaddingLeft() : this.e0.c() : this.d0.a()) + i;
     }
 
     public final int j(int i, boolean z) {
-        int compoundPaddingRight;
-        if (z || getSuffixText() == null) {
-            compoundPaddingRight = (!z || getPrefixText() == null) ? this.U.getCompoundPaddingRight() : this.R.a();
-        } else {
-            compoundPaddingRight = this.S.c();
-        }
-        return i - compoundPaddingRight;
+        return i - ((z || getSuffixText() == null) ? (!z || getPrefixText() == null) ? this.g0.getCompoundPaddingRight() : this.d0.a() : this.e0.c());
     }
 
     public final void k() {
-        int i = this.I0;
+        int i = this.R0;
         if (i == 0) {
-            this.z0 = null;
-            this.D0 = null;
-            this.E0 = null;
+            this.I0 = null;
+            this.M0 = null;
+            this.N0 = null;
         } else if (i == 1) {
-            this.z0 = new d04(this.F0);
-            this.D0 = new d04();
-            this.E0 = new d04();
+            this.I0 = new bh4(this.O0);
+            this.M0 = new bh4();
+            this.N0 = new bh4();
         } else {
             if (i != 2) {
-                fn.r(kd0.y(new StringBuilder(), this.I0, " is illegal; only @BoxBackgroundMode constants are supported."));
+                i60.p(eh0.p(new StringBuilder(), this.R0, " is illegal; only @BoxBackgroundMode constants are supported."));
                 return;
             }
-            if (!this.w0 || (this.z0 instanceof qy0)) {
-                this.z0 = new d04(this.F0);
+            if (!this.F0 || (this.I0 instanceof a61)) {
+                this.I0 = new bh4(this.O0);
             } else {
-                j86 j86Var = this.F0;
-                int i2 = qy0.x0;
-                if (j86Var == null) {
-                    j86Var = new j86();
+                xu6 xu6Var = this.O0;
+                int i2 = a61.G0;
+                if (xu6Var == null) {
+                    xu6Var = new xu6();
                 }
-                oy0 oy0Var = new oy0(j86Var, new RectF());
-                py0 py0Var = new py0(oy0Var);
-                py0Var.w0 = oy0Var;
-                this.z0 = py0Var;
+                y51 y51Var = new y51(xu6Var, new RectF());
+                z51 z51Var = new z51(y51Var);
+                z51Var.F0 = y51Var;
+                this.I0 = z51Var;
             }
-            this.D0 = null;
-            this.E0 = null;
+            this.M0 = null;
+            this.N0 = null;
         }
         u();
         z();
-        if (this.I0 == 1) {
+        if (this.R0 == 1) {
             if (getContext().getResources().getConfiguration().fontScale >= 2.0f) {
-                this.J0 = getResources().getDimensionPixelSize(k85.material_font_2_0_box_collapsed_padding_top);
-            } else if (hc7.L(getContext())) {
-                this.J0 = getResources().getDimensionPixelSize(k85.material_font_1_3_box_collapsed_padding_top);
+                this.S0 = getResources().getDimensionPixelSize(js5.material_font_2_0_box_collapsed_padding_top);
+            } else if (jf1.H(getContext())) {
+                this.S0 = getResources().getDimensionPixelSize(js5.material_font_1_3_box_collapsed_padding_top);
             }
         }
         a();
-        if (this.I0 != 0) {
+        if (this.R0 != 0) {
             v();
         }
-        EditText editText = this.U;
+        EditText editText = this.g0;
         if (editText instanceof AutoCompleteTextView) {
             AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) editText;
             if (autoCompleteTextView.getDropDownBackground() == null) {
-                int i3 = this.I0;
+                int i3 = this.R0;
                 if (i3 == 2) {
                     autoCompleteTextView.setDropDownBackgroundDrawable(getOrCreateOutlinedDropDownMenuBackground());
                 } else if (i3 == 1) {
@@ -1271,108 +1263,104 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:44:0x008d  */
-    /* JADX WARN: Code duplicated, block: B:51:0x00c6  */
-    /* JADX WARN: Code duplicated, block: B:52:0x00cc  */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x00c5  */
+    /* JADX WARN: Removed duplicated region for block: B:33:0x00cb  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final void l() {
         float f;
         float f2;
         float f3;
         RectF rectF;
         float f4;
-        float lineWidth;
         int i;
         float f5;
         int i2;
         if (g()) {
-            int width = this.U.getWidth();
-            int gravity = this.U.getGravity();
-            im0 im0Var = this.m1;
-            boolean zC = im0Var.c(im0Var.B);
-            im0Var.D = zC;
-            Rect rect = im0Var.d;
+            int width = this.g0.getWidth();
+            int gravity = this.g0.getGravity();
+            ot0 ot0Var = this.v1;
+            boolean c = ot0Var.c(ot0Var.B);
+            ot0Var.D = c;
+            Rect rect = ot0Var.d;
             if (gravity != 17 && (gravity & 7) != 1) {
                 if ((gravity & 8388613) == 8388613 || (gravity & 5) == 5) {
-                    if (zC) {
+                    if (c) {
                         i2 = rect.left;
                         f3 = i2;
                     } else {
                         f = rect.right;
-                        f2 = im0Var.a0;
+                        f2 = ot0Var.a0;
                     }
-                } else if (zC) {
+                } else if (c) {
                     f = rect.right;
-                    f2 = im0Var.a0;
+                    f2 = ot0Var.a0;
                 } else {
                     i2 = rect.left;
                     f3 = i2;
                 }
-                float fMax = Math.max(f3, rect.left);
-                rectF = this.R0;
-                rectF.left = fMax;
+                float max = Math.max(f3, rect.left);
+                rectF = this.a1;
+                rectF.left = max;
                 rectF.top = rect.top;
                 if (gravity != 17 || (gravity & 7) == 1) {
-                    f4 = (width / 2.0f) + (im0Var.a0 / 2.0f);
+                    f4 = (width / 2.0f) + (ot0Var.a0 / 2.0f);
                 } else if ((gravity & 8388613) == 8388613 || (gravity & 5) == 5) {
-                    if (im0Var.D) {
-                        f5 = im0Var.a0;
-                        f4 = f5 + fMax;
+                    if (ot0Var.D) {
+                        f5 = ot0Var.a0;
+                        f4 = f5 + max;
                     } else {
                         i = rect.right;
                         f4 = i;
                     }
-                } else if (im0Var.D) {
+                } else if (ot0Var.D) {
                     i = rect.right;
                     f4 = i;
                 } else {
-                    f5 = im0Var.a0;
-                    f4 = f5 + fMax;
+                    f5 = ot0Var.a0;
+                    f4 = f5 + max;
                 }
                 rectF.right = Math.min(f4, rect.right);
-                rectF.bottom = im0Var.f() + rect.top;
-                if (im0Var.Z != null && !im0Var.o()) {
-                    StaticLayout staticLayout = im0Var.Z;
-                    lineWidth = (im0Var.i / im0Var.h) * staticLayout.getLineWidth(staticLayout.getLineCount() - 1);
-                    if (im0Var.D) {
-                        rectF.left = rectF.right - lineWidth;
-                    } else {
+                rectF.bottom = ot0Var.f() + rect.top;
+                if (ot0Var.Z != null && !ot0Var.o()) {
+                    StaticLayout staticLayout = ot0Var.Z;
+                    float lineWidth = (ot0Var.i / ot0Var.h) * staticLayout.getLineWidth(staticLayout.getLineCount() - 1);
+                    if (ot0Var.D) {
                         rectF.right = rectF.left + lineWidth;
+                    } else {
+                        rectF.left = rectF.right - lineWidth;
                     }
                 }
                 if (rectF.width() > 0.0f || rectF.height() <= 0.0f) {
                 }
                 float f6 = rectF.left;
-                float f7 = this.H0;
+                float f7 = this.Q0;
                 rectF.left = f6 - f7;
                 rectF.right += f7;
-                rectF.offset(-getPaddingLeft(), ((-getPaddingTop()) - (rectF.height() / 2.0f)) + this.K0);
+                rectF.offset(-getPaddingLeft(), ((-getPaddingTop()) - (rectF.height() / 2.0f)) + this.T0);
                 rectF.top = 0.0f;
-                qy0 qy0Var = (qy0) this.z0;
-                qy0Var.getClass();
-                qy0Var.A(rectF.left, rectF.top, rectF.right, rectF.bottom);
+                a61 a61Var = (a61) this.I0;
+                a61Var.getClass();
+                a61Var.F(rectF.left, rectF.top, rectF.right, rectF.bottom);
                 return;
             }
             f = width / 2.0f;
-            f2 = im0Var.a0 / 2.0f;
+            f2 = ot0Var.a0 / 2.0f;
             f3 = f - f2;
-            float fMax2 = Math.max(f3, rect.left);
-            rectF = this.R0;
-            rectF.left = fMax2;
+            float max2 = Math.max(f3, rect.left);
+            rectF = this.a1;
+            rectF.left = max2;
             rectF.top = rect.top;
             if (gravity != 17) {
-                f4 = (width / 2.0f) + (im0Var.a0 / 2.0f);
-            } else {
-                f4 = (width / 2.0f) + (im0Var.a0 / 2.0f);
             }
+            f4 = (width / 2.0f) + (ot0Var.a0 / 2.0f);
             rectF.right = Math.min(f4, rect.right);
-            rectF.bottom = im0Var.f() + rect.top;
-            if (im0Var.Z != null) {
-                StaticLayout staticLayout2 = im0Var.Z;
-                lineWidth = (im0Var.i / im0Var.h) * staticLayout2.getLineWidth(staticLayout2.getLineCount() - 1);
-                if (im0Var.D) {
-                    rectF.left = rectF.right - lineWidth;
-                } else {
-                    rectF.right = rectF.left + lineWidth;
+            rectF.bottom = ot0Var.f() + rect.top;
+            if (ot0Var.Z != null) {
+                StaticLayout staticLayout2 = ot0Var.Z;
+                float lineWidth2 = (ot0Var.i / ot0Var.h) * staticLayout2.getLineWidth(staticLayout2.getLineCount() - 1);
+                if (ot0Var.D) {
                 }
             }
             if (rectF.width() > 0.0f) {
@@ -1382,143 +1370,143 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     public final void n(AppCompatTextView appCompatTextView, int i) {
         try {
-            b15.R(appCompatTextView, i);
-            if (Build.VERSION.SDK_INT < 23 || appCompatTextView.getTextColors().getDefaultColor() != -65281) {
+            appCompatTextView.setTextAppearance(i);
+            if (appCompatTextView.getTextColors().getDefaultColor() != -65281) {
                 return;
             }
         } catch (Exception unused) {
         }
-        b15.R(appCompatTextView, pa5.TextAppearance_AppCompat_Caption);
-        appCompatTextView.setTextColor(bv7.A(getContext(), d85.design_error));
+        appCompatTextView.setTextAppearance(pu5.TextAppearance_AppCompat_Caption);
+        appCompatTextView.setTextColor(getContext().getColor(cs5.design_error));
     }
 
     public final boolean o() {
-        kp2 kp2Var = this.d0;
-        return (kp2Var.o != 1 || kp2Var.r == null || TextUtils.isEmpty(kp2Var.p)) ? false : true;
+        g43 g43Var = this.m0;
+        return (g43Var.o != 1 || g43Var.r == null || TextUtils.isEmpty(g43Var.p)) ? false : true;
     }
 
     @Override // android.view.View
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        this.m1.i(configuration);
+        this.v1.i(configuration);
     }
 
     @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
     public final void onGlobalLayout() {
-        int iMax;
-        qo1 qo1Var = this.S;
-        qo1Var.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+        int max;
+        hx1 hx1Var = this.e0;
+        hx1Var.getViewTreeObserver().removeOnGlobalLayoutListener(this);
         boolean z = false;
-        this.s1 = false;
-        if (this.U != null && this.U.getMeasuredHeight() < (iMax = Math.max(qo1Var.getMeasuredHeight(), this.R.getMeasuredHeight()))) {
-            this.U.setMinimumHeight(iMax);
+        this.B1 = false;
+        if (this.g0 != null && this.g0.getMeasuredHeight() < (max = Math.max(hx1Var.getMeasuredHeight(), this.d0.getMeasuredHeight()))) {
+            this.g0.setMinimumHeight(max);
             z = true;
         }
-        boolean zS = s();
-        if (z || zS) {
-            this.U.post(new f92(19, this));
+        boolean s = s();
+        if (z || s) {
+            this.g0.post(new g26(12, this));
         }
     }
 
     @Override // android.widget.LinearLayout, android.view.ViewGroup, android.view.View
     public final void onLayout(boolean z, int i, int i2, int i3, int i4) {
-        float fDescent;
+        float descent;
         int i5;
         int compoundPaddingTop;
         super.onLayout(z, i, i2, i3, i4);
-        EditText editText = this.U;
+        EditText editText = this.g0;
         if (editText != null) {
-            ThreadLocal threadLocal = q71.a;
+            ThreadLocal threadLocal = vf1.a;
             int width = editText.getWidth();
             int height = editText.getHeight();
-            Rect rect = this.P0;
+            Rect rect = this.Y0;
             rect.set(0, 0, width, height);
-            q71.b(this, editText, rect);
-            d04 d04Var = this.D0;
-            if (d04Var != null) {
+            vf1.b(this, editText, rect);
+            bh4 bh4Var = this.M0;
+            if (bh4Var != null) {
                 int i6 = rect.bottom;
-                d04Var.setBounds(rect.left, i6 - this.L0, rect.right, i6);
+                bh4Var.setBounds(rect.left, i6 - this.U0, rect.right, i6);
             }
-            d04 d04Var2 = this.E0;
-            if (d04Var2 != null) {
+            bh4 bh4Var2 = this.N0;
+            if (bh4Var2 != null) {
                 int i7 = rect.bottom;
-                d04Var2.setBounds(rect.left, i7 - this.M0, rect.right, i7);
+                bh4Var2.setBounds(rect.left, i7 - this.V0, rect.right, i7);
             }
-            if (this.w0) {
-                float textSize = this.U.getTextSize();
-                im0 im0Var = this.m1;
-                float f = im0Var.h;
-                TextPaint textPaint = im0Var.P;
+            if (this.F0) {
+                float textSize = this.g0.getTextSize();
+                ot0 ot0Var = this.v1;
+                float f = ot0Var.h;
+                TextPaint textPaint = ot0Var.P;
                 if (f != textSize) {
-                    im0Var.h = textSize;
-                    im0Var.j(false);
+                    ot0Var.h = textSize;
+                    ot0Var.j(false);
                 }
-                int gravity = this.U.getGravity();
+                int gravity = this.g0.getGravity();
                 int i8 = (gravity & (-113)) | 48;
-                if (im0Var.g != i8) {
-                    im0Var.g = i8;
-                    im0Var.j(false);
+                if (ot0Var.g != i8) {
+                    ot0Var.g = i8;
+                    ot0Var.j(false);
                 }
-                if (im0Var.f != gravity) {
-                    im0Var.f = gravity;
-                    im0Var.j(false);
+                if (ot0Var.f != gravity) {
+                    ot0Var.f = gravity;
+                    ot0Var.j(false);
                 }
-                Rect rectD = d(rect);
-                int i9 = rectD.left;
-                int i10 = rectD.top;
-                int i11 = rectD.right;
-                int i12 = rectD.bottom;
-                Rect rect2 = im0Var.d;
+                Rect d = d(rect);
+                int i9 = d.left;
+                int i10 = d.top;
+                int i11 = d.right;
+                int i12 = d.bottom;
+                Rect rect2 = ot0Var.d;
                 if (rect2.left != i9 || rect2.top != i10 || rect2.right != i11 || rect2.bottom != i12) {
                     rect2.set(i9, i10, i11, i12);
-                    im0Var.N = true;
+                    ot0Var.N = true;
                 }
-                if (this.U == null) {
-                    x1.h();
+                if (this.g0 == null) {
+                    z1.g();
                     return;
                 }
                 if (getHintMaxLines() == 1) {
-                    textPaint.setTextSize(im0Var.h);
-                    textPaint.setTypeface(im0Var.v);
-                    textPaint.setLetterSpacing(im0Var.X);
-                    fDescent = -textPaint.ascent();
+                    textPaint.setTextSize(ot0Var.h);
+                    textPaint.setTypeface(ot0Var.v);
+                    textPaint.setLetterSpacing(ot0Var.X);
+                    descent = -textPaint.ascent();
                 } else {
-                    textPaint.setTextSize(im0Var.h);
-                    textPaint.setTypeface(im0Var.v);
-                    textPaint.setLetterSpacing(im0Var.X);
-                    fDescent = im0Var.l * (textPaint.descent() + (-textPaint.ascent()));
+                    textPaint.setTextSize(ot0Var.h);
+                    textPaint.setTypeface(ot0Var.v);
+                    textPaint.setLetterSpacing(ot0Var.X);
+                    descent = ot0Var.l * (textPaint.descent() + (-textPaint.ascent()));
                 }
-                int compoundPaddingLeft = this.U.getCompoundPaddingLeft() + rect.left;
-                Rect rect3 = this.Q0;
+                int compoundPaddingLeft = this.g0.getCompoundPaddingLeft() + rect.left;
+                Rect rect3 = this.Z0;
                 rect3.left = compoundPaddingLeft;
-                if (this.I0 != 1 || this.U.getMinLines() > 1) {
-                    if (this.I0 != 0 || getHintMaxLines() == 1) {
+                if (this.R0 != 1 || this.g0.getMinLines() > 1) {
+                    if (this.R0 != 0 || getHintMaxLines() == 1) {
                         i5 = 0;
                     } else {
-                        textPaint.setTextSize(im0Var.h);
-                        textPaint.setTypeface(im0Var.v);
-                        textPaint.setLetterSpacing(im0Var.X);
+                        textPaint.setTextSize(ot0Var.h);
+                        textPaint.setTypeface(ot0Var.v);
+                        textPaint.setLetterSpacing(ot0Var.X);
                         i5 = (int) ((-textPaint.ascent()) / 2.0f);
                     }
-                    compoundPaddingTop = (this.U.getCompoundPaddingTop() + rect.top) - i5;
+                    compoundPaddingTop = (this.g0.getCompoundPaddingTop() + rect.top) - i5;
                 } else {
-                    compoundPaddingTop = (int) (rect.centerY() - (fDescent / 2.0f));
+                    compoundPaddingTop = (int) (rect.centerY() - (descent / 2.0f));
                 }
                 rect3.top = compoundPaddingTop;
-                rect3.right = rect.right - this.U.getCompoundPaddingRight();
-                int compoundPaddingBottom = (this.I0 != 1 || this.U.getMinLines() > 1) ? rect.bottom - this.U.getCompoundPaddingBottom() : (int) (rect3.top + fDescent);
+                rect3.right = rect.right - this.g0.getCompoundPaddingRight();
+                int compoundPaddingBottom = (this.R0 != 1 || this.g0.getMinLines() > 1) ? rect.bottom - this.g0.getCompoundPaddingBottom() : (int) (rect3.top + descent);
                 rect3.bottom = compoundPaddingBottom;
                 int i13 = rect3.left;
                 int i14 = rect3.top;
                 int i15 = rect3.right;
-                Rect rect4 = im0Var.c;
-                if (rect4.left != i13 || rect4.top != i14 || rect4.right != i15 || rect4.bottom != compoundPaddingBottom || true != im0Var.k0) {
+                Rect rect4 = ot0Var.c;
+                if (rect4.left != i13 || rect4.top != i14 || rect4.right != i15 || rect4.bottom != compoundPaddingBottom || true != ot0Var.k0) {
                     rect4.set(i13, i14, i15, compoundPaddingBottom);
-                    im0Var.N = true;
-                    im0Var.k0 = true;
+                    ot0Var.N = true;
+                    ot0Var.k0 = true;
                 }
-                im0Var.j(false);
-                if (!g() || this.l1) {
+                ot0Var.j(false);
+                if (!g() || this.u1) {
                     return;
                 }
                 l();
@@ -1531,102 +1519,98 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         float f;
         EditText editText;
         super.onMeasure(i, i2);
-        boolean z = this.s1;
-        qo1 qo1Var = this.S;
+        boolean z = this.B1;
+        hx1 hx1Var = this.e0;
         if (!z) {
-            qo1Var.getViewTreeObserver().addOnGlobalLayoutListener(this);
-            this.s1 = true;
+            hx1Var.getViewTreeObserver().addOnGlobalLayoutListener(this);
+            this.B1 = true;
         }
-        if (this.n0 != null && (editText = this.U) != null) {
-            this.n0.setGravity(editText.getGravity());
-            this.n0.setPadding(this.U.getCompoundPaddingLeft(), this.U.getCompoundPaddingTop(), this.U.getCompoundPaddingRight(), this.U.getCompoundPaddingBottom());
+        if (this.w0 != null && (editText = this.g0) != null) {
+            this.w0.setGravity(editText.getGravity());
+            this.w0.setPadding(this.g0.getCompoundPaddingLeft(), this.g0.getCompoundPaddingTop(), this.g0.getCompoundPaddingRight(), this.g0.getCompoundPaddingBottom());
         }
-        qo1Var.m();
+        hx1Var.n();
         if (getHintMaxLines() == 1) {
             return;
         }
-        int measuredWidth = (this.U.getMeasuredWidth() - this.U.getCompoundPaddingLeft()) - this.U.getCompoundPaddingRight();
-        im0 im0Var = this.m1;
-        TextPaint textPaint = im0Var.P;
-        textPaint.setTextSize(im0Var.i);
-        textPaint.setTypeface(im0Var.s);
-        textPaint.setLetterSpacing(im0Var.W);
+        int measuredWidth = (this.g0.getMeasuredWidth() - this.g0.getCompoundPaddingLeft()) - this.g0.getCompoundPaddingRight();
+        ot0 ot0Var = this.v1;
+        TextPaint textPaint = ot0Var.P;
+        textPaint.setTextSize(ot0Var.i);
+        textPaint.setTypeface(ot0Var.s);
+        textPaint.setLetterSpacing(ot0Var.W);
         float f2 = measuredWidth;
-        im0Var.i0 = im0Var.e(im0Var.f0, textPaint, im0Var.B, (im0Var.i / im0Var.h) * f2, im0Var.D).getHeight();
-        textPaint.setTextSize(im0Var.h);
-        textPaint.setTypeface(im0Var.v);
-        textPaint.setLetterSpacing(im0Var.X);
-        im0Var.j0 = im0Var.e(im0Var.e0, textPaint, im0Var.B, f2, im0Var.D).getHeight();
-        EditText editText2 = this.U;
-        ThreadLocal threadLocal = q71.a;
+        ot0Var.i0 = ot0Var.e(ot0Var.f0, textPaint, ot0Var.B, (ot0Var.i / ot0Var.h) * f2, ot0Var.D).getHeight();
+        textPaint.setTextSize(ot0Var.h);
+        textPaint.setTypeface(ot0Var.v);
+        textPaint.setLetterSpacing(ot0Var.X);
+        ot0Var.j0 = ot0Var.e(ot0Var.e0, textPaint, ot0Var.B, f2, ot0Var.D).getHeight();
+        EditText editText2 = this.g0;
+        ThreadLocal threadLocal = vf1.a;
         int width = editText2.getWidth();
         int height = editText2.getHeight();
-        Rect rect = this.P0;
+        Rect rect = this.Y0;
+        int i3 = 0;
         rect.set(0, 0, width, height);
-        q71.b(this, editText2, rect);
-        Rect rectD = d(rect);
-        int i3 = rectD.left;
-        int i4 = rectD.top;
-        int i5 = rectD.right;
-        int i6 = rectD.bottom;
-        Rect rect2 = im0Var.d;
-        if (rect2.left != i3 || rect2.top != i4 || rect2.right != i5 || rect2.bottom != i6) {
-            rect2.set(i3, i4, i5, i6);
-            im0Var.N = true;
+        vf1.b(this, editText2, rect);
+        Rect d = d(rect);
+        int i4 = d.left;
+        int i5 = d.top;
+        int i6 = d.right;
+        int i7 = d.bottom;
+        Rect rect2 = ot0Var.d;
+        if (rect2.left != i4 || rect2.top != i5 || rect2.right != i6 || rect2.bottom != i7) {
+            rect2.set(i4, i5, i6, i7);
+            ot0Var.N = true;
         }
         v();
         a();
-        if (this.U == null) {
+        if (this.g0 == null) {
             return;
         }
-        int i7 = im0Var.j0;
-        if (i7 != -1) {
-            f = i7;
+        int i8 = ot0Var.j0;
+        if (i8 != -1) {
+            f = i8;
         } else {
-            TextPaint textPaint2 = im0Var.P;
-            textPaint2.setTextSize(im0Var.h);
-            textPaint2.setTypeface(im0Var.v);
-            textPaint2.setLetterSpacing(im0Var.X);
+            TextPaint textPaint2 = ot0Var.P;
+            textPaint2.setTextSize(ot0Var.h);
+            textPaint2.setTypeface(ot0Var.v);
+            textPaint2.setLetterSpacing(ot0Var.X);
             f = -textPaint2.ascent();
         }
-        float height2 = 0.0f;
-        if (this.l0 != null) {
+        if (this.u0 != null) {
             TextPaint textPaint3 = new TextPaint(129);
-            textPaint3.set(this.n0.getPaint());
-            textPaint3.setTextSize(this.n0.getTextSize());
-            textPaint3.setTypeface(this.n0.getTypeface());
-            textPaint3.setLetterSpacing(this.n0.getLetterSpacing());
-            try {
-                gi6 gi6Var = new gi6(this.l0, textPaint3, measuredWidth);
-                gi6Var.k = getLayoutDirection() == 1;
-                gi6Var.j = true;
-                float lineSpacingExtra = this.n0.getLineSpacingExtra();
-                float lineSpacingMultiplier = this.n0.getLineSpacingMultiplier();
-                gi6Var.g = lineSpacingExtra;
-                gi6Var.h = lineSpacingMultiplier;
-                gi6Var.m = new yx(23, this);
-                height2 = gi6Var.a().getHeight() + (this.I0 == 1 ? im0Var.f() + this.J0 + this.T : 0.0f);
-            } catch (fi6 e) {
-                e.getCause().getMessage();
-            }
+            textPaint3.set(this.w0.getPaint());
+            textPaint3.setTextSize(this.w0.getTextSize());
+            textPaint3.setTypeface(this.w0.getTypeface());
+            textPaint3.setLetterSpacing(this.w0.getLetterSpacing());
+            h67 h67Var = new h67(this.u0, textPaint3, measuredWidth);
+            h67Var.k = getLayoutDirection() == 1;
+            h67Var.j = true;
+            float lineSpacingExtra = this.w0.getLineSpacingExtra();
+            float lineSpacingMultiplier = this.w0.getLineSpacingMultiplier();
+            h67Var.g = lineSpacingExtra;
+            h67Var.h = lineSpacingMultiplier;
+            h67Var.m = new et7(i3, this);
+            r3 = (this.R0 == 1 ? ot0Var.f() + this.S0 + this.f0 : 0.0f) + h67Var.a().getHeight();
         }
-        float fMax = Math.max(f, height2);
-        if (this.U.getMeasuredHeight() < fMax) {
-            this.U.setMinimumHeight(Math.round(fMax));
+        float max = Math.max(f, r3);
+        if (this.g0.getMeasuredHeight() < max) {
+            this.g0.setMinimumHeight(Math.round(max));
         }
     }
 
     @Override // android.view.View
     public final void onRestoreInstanceState(Parcelable parcelable) {
-        if (!(parcelable instanceof e17)) {
+        if (!(parcelable instanceof it7)) {
             super.onRestoreInstanceState(parcelable);
             return;
         }
-        e17 e17Var = (e17) parcelable;
-        super.onRestoreInstanceState(e17Var.Q);
-        setError(e17Var.S);
-        if (e17Var.T) {
-            post(new db(23, this));
+        it7 it7Var = (it7) parcelable;
+        super.onRestoreInstanceState(it7Var.X);
+        setError(it7Var.Z);
+        if (it7Var.c0) {
+            post(new tb(21, this));
         }
         requestLayout();
     }
@@ -1635,80 +1619,80 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public final void onRtlPropertiesChanged(int i) {
         super.onRtlPropertiesChanged(i);
         boolean z = i == 1;
-        if (z != this.G0) {
-            ow0 ow0Var = this.F0.e;
-            RectF rectF = this.R0;
-            float fA = ow0Var.a(rectF);
-            float fA2 = this.F0.f.a(rectF);
-            float fA3 = this.F0.h.a(rectF);
-            float fA4 = this.F0.g.a(rectF);
-            j86 j86Var = this.F0;
-            e21 e21Var = j86Var.a;
-            e21 e21Var2 = j86Var.b;
-            e21 e21Var3 = j86Var.d;
-            e21 e21Var4 = j86Var.c;
-            hm1 hm1Var = new hm1(0);
-            hm1 hm1Var2 = new hm1(0);
-            hm1 hm1Var3 = new hm1(0);
-            hm1 hm1Var4 = new hm1(0);
-            b0 b0Var = new b0(fA2);
-            b0 b0Var2 = new b0(fA);
-            b0 b0Var3 = new b0(fA4);
-            b0 b0Var4 = new b0(fA3);
-            j86 j86Var2 = new j86();
-            j86Var2.a = e21Var2;
-            j86Var2.b = e21Var;
-            j86Var2.c = e21Var3;
-            j86Var2.d = e21Var4;
-            j86Var2.e = b0Var;
-            j86Var2.f = b0Var2;
-            j86Var2.g = b0Var4;
-            j86Var2.h = b0Var3;
-            j86Var2.i = hm1Var;
-            j86Var2.j = hm1Var2;
-            j86Var2.k = hm1Var3;
-            j86Var2.l = hm1Var4;
-            this.G0 = z;
-            setShapeAppearanceModel(j86Var2);
+        if (z != this.P0) {
+            t31 t31Var = this.O0.e;
+            RectF rectF = this.a1;
+            float a = t31Var.a(rectF);
+            float a2 = this.O0.f.a(rectF);
+            float a3 = this.O0.h.a(rectF);
+            float a4 = this.O0.g.a(rectF);
+            xu6 xu6Var = this.O0;
+            d01 d01Var = xu6Var.a;
+            d01 d01Var2 = xu6Var.b;
+            d01 d01Var3 = xu6Var.d;
+            d01 d01Var4 = xu6Var.c;
+            qu1 qu1Var = new qu1(0);
+            qu1 qu1Var2 = new qu1(0);
+            qu1 qu1Var3 = new qu1(0);
+            qu1 qu1Var4 = new qu1(0);
+            y yVar = new y(a2);
+            y yVar2 = new y(a);
+            y yVar3 = new y(a4);
+            y yVar4 = new y(a3);
+            xu6 xu6Var2 = new xu6();
+            xu6Var2.a = d01Var2;
+            xu6Var2.b = d01Var;
+            xu6Var2.c = d01Var3;
+            xu6Var2.d = d01Var4;
+            xu6Var2.e = yVar;
+            xu6Var2.f = yVar2;
+            xu6Var2.g = yVar4;
+            xu6Var2.h = yVar3;
+            xu6Var2.i = qu1Var;
+            xu6Var2.j = qu1Var2;
+            xu6Var2.k = qu1Var3;
+            xu6Var2.l = qu1Var4;
+            this.P0 = z;
+            setShapeAppearanceModel(xu6Var2);
         }
     }
 
     @Override // android.view.View
     public final Parcelable onSaveInstanceState() {
-        e17 e17Var = new e17(super.onSaveInstanceState());
+        it7 it7Var = new it7(super.onSaveInstanceState());
         if (o()) {
-            e17Var.S = getError();
+            it7Var.Z = getError();
         }
-        qo1 qo1Var = this.S;
-        e17Var.T = qo1Var.b0 != 0 && qo1Var.W.T;
-        return e17Var;
+        hx1 hx1Var = this.e0;
+        it7Var.c0 = hx1Var.k0 != 0 && hx1Var.i0.f0;
+        return it7Var;
     }
 
     public final void p(Editable editable) {
-        ((j26) this.h0).getClass();
+        ((co6) this.q0).getClass();
         int length = editable != null ? editable.length() : 0;
-        boolean z = this.g0;
-        int i = this.f0;
+        boolean z = this.p0;
+        int i = this.o0;
         if (i == -1) {
-            this.i0.setText(String.valueOf(length));
-            this.i0.setContentDescription(null);
-            this.g0 = false;
+            this.r0.setText(String.valueOf(length));
+            this.r0.setContentDescription(null);
+            this.p0 = false;
         } else {
-            this.g0 = length > i;
+            this.p0 = length > i;
             Context context = getContext();
-            this.i0.setContentDescription(context.getString(this.g0 ? ga5.character_counter_overflowed_content_description : ga5.character_counter_content_description, Integer.valueOf(length), Integer.valueOf(this.f0)));
-            if (z != this.g0) {
+            this.r0.setContentDescription(context.getString(this.p0 ? gu5.character_counter_overflowed_content_description : gu5.character_counter_content_description, Integer.valueOf(length), Integer.valueOf(this.o0)));
+            if (z != this.p0) {
                 q();
             }
-            String str = y10.b;
-            y10 y10Var = TextUtils.getLayoutDirectionFromLocale(Locale.getDefault()) == 1 ? y10.e : y10.d;
-            AppCompatTextView appCompatTextView = this.i0;
-            String string = getContext().getString(ga5.character_counter_pattern, Integer.valueOf(length), Integer.valueOf(this.f0));
-            y10Var.getClass();
-            k30 k30Var = jy6.a;
-            appCompatTextView.setText(string != null ? y10Var.c(string).toString() : null);
+            String str = b40.b;
+            b40 b40Var = TextUtils.getLayoutDirectionFromLocale(Locale.getDefault()) == 1 ? b40.e : b40.d;
+            AppCompatTextView appCompatTextView = this.r0;
+            String string = getContext().getString(gu5.character_counter_pattern, Integer.valueOf(length), Integer.valueOf(this.o0));
+            b40Var.getClass();
+            r50 r50Var = aq7.a;
+            appCompatTextView.setText(string != null ? b40Var.c(string).toString() : null);
         }
-        if (this.U == null || z == this.g0) {
+        if (this.g0 == null || z == this.p0) {
             return;
         }
         w(false, false);
@@ -1719,232 +1703,293 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public final void q() {
         ColorStateList colorStateList;
         ColorStateList colorStateList2;
-        AppCompatTextView appCompatTextView = this.i0;
+        AppCompatTextView appCompatTextView = this.r0;
         if (appCompatTextView != null) {
-            n(appCompatTextView, this.g0 ? this.j0 : this.k0);
-            if (!this.g0 && (colorStateList2 = this.s0) != null) {
-                this.i0.setTextColor(colorStateList2);
+            n(appCompatTextView, this.p0 ? this.s0 : this.t0);
+            if (!this.p0 && (colorStateList2 = this.B0) != null) {
+                this.r0.setTextColor(colorStateList2);
             }
-            if (!this.g0 || (colorStateList = this.t0) == null) {
+            if (!this.p0 || (colorStateList = this.C0) == null) {
                 return;
             }
-            this.i0.setTextColor(colorStateList);
+            this.r0.setTextColor(colorStateList);
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0012  */
     public final void r() {
         ColorStateList colorStateList;
-        ColorStateList colorStateListValueOf = this.u0;
-        if (colorStateListValueOf == null) {
+        ColorStateList colorStateList2 = this.D0;
+        if (colorStateList2 == null) {
             Context context = getContext();
-            TypedValue typedValueG0 = xf5.g0(context, x75.colorControlActivated);
-            if (typedValueG0 != null) {
-                int i = typedValueG0.resourceId;
+            TypedValue N = d01.N(context.getTheme(), wr5.colorControlActivated);
+            if (N != null) {
+                int i = N.resourceId;
                 if (i != 0) {
-                    colorStateListValueOf = bv7.B(context, i);
+                    colorStateList2 = jq8.u(context, i);
                 } else {
-                    int i2 = typedValueG0.data;
+                    int i2 = N.data;
                     if (i2 != 0) {
-                        colorStateListValueOf = ColorStateList.valueOf(i2);
-                    } else {
-                        colorStateListValueOf = null;
+                        colorStateList2 = ColorStateList.valueOf(i2);
                     }
                 }
-            } else {
-                colorStateListValueOf = null;
             }
+            colorStateList2 = null;
         }
-        EditText editText = this.U;
+        EditText editText = this.g0;
         if (editText == null || editText.getTextCursorDrawable() == null) {
             return;
         }
-        Drawable drawableMutate = yr.e0(this.U.getTextCursorDrawable()).mutate();
-        if ((o() || (this.i0 != null && this.g0)) && (colorStateList = this.v0) != null) {
-            colorStateListValueOf = colorStateList;
+        Drawable mutate = this.g0.getTextCursorDrawable().mutate();
+        if ((o() || (this.r0 != null && this.p0)) && (colorStateList = this.E0) != null) {
+            colorStateList2 = colorStateList;
         }
-        drawableMutate.setTintList(colorStateListValueOf);
+        mutate.setTintList(colorStateList2);
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x005f  */
-    /* JADX WARN: Code duplicated, block: B:23:0x0063  */
-    /* JADX WARN: Code duplicated, block: B:25:0x0078  */
+    /* JADX WARN: Removed duplicated region for block: B:17:0x0085  */
+    /* JADX WARN: Removed duplicated region for block: B:36:0x00ac  */
+    /* JADX WARN: Removed duplicated region for block: B:38:0x00bd  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x00dc  */
+    /* JADX WARN: Removed duplicated region for block: B:46:0x00f5  */
+    /* JADX WARN: Removed duplicated region for block: B:49:0x0107  */
+    /* JADX WARN: Removed duplicated region for block: B:51:0x00af  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final boolean s() {
         boolean z;
-        if (this.U == null) {
+        hx1 hx1Var;
+        Drawable[] compoundDrawablesRelative;
+        ColorDrawable colorDrawable;
+        Drawable drawable;
+        ColorDrawable colorDrawable2;
+        if (this.g0 == null) {
             return false;
         }
         CheckableImageButton checkableImageButton = null;
         boolean z2 = true;
         if (getStartIconDrawable() != null || (getPrefixText() != null && getPrefixTextView().getVisibility() == 0)) {
-            wg6 wg6Var = this.R;
-            if (wg6Var.getMeasuredWidth() > 0) {
-                int measuredWidth = wg6Var.getMeasuredWidth() - this.U.getPaddingLeft();
-                if (this.T0 == null || this.U0 != measuredWidth) {
-                    ColorDrawable colorDrawable = new ColorDrawable();
-                    this.T0 = colorDrawable;
-                    this.U0 = measuredWidth;
-                    colorDrawable.setBounds(0, 0, measuredWidth, 1);
+            t47 t47Var = this.d0;
+            if (t47Var.getMeasuredWidth() > 0) {
+                int max = Math.max(0, t47Var.getMeasuredWidth() - this.g0.getPaddingLeft());
+                if (this.c1 == null || this.d1 != max) {
+                    ColorDrawable colorDrawable3 = new ColorDrawable();
+                    this.c1 = colorDrawable3;
+                    this.d1 = max;
+                    colorDrawable3.setBounds(0, 0, max, 1);
                 }
-                Drawable[] compoundDrawablesRelative = this.U.getCompoundDrawablesRelative();
-                Drawable drawable = compoundDrawablesRelative[0];
-                ColorDrawable colorDrawable2 = this.T0;
-                if (drawable != colorDrawable2) {
-                    this.U.setCompoundDrawablesRelative(colorDrawable2, compoundDrawablesRelative[1], compoundDrawablesRelative[2], compoundDrawablesRelative[3]);
+                Drawable[] compoundDrawablesRelative2 = this.g0.getCompoundDrawablesRelative();
+                Drawable drawable2 = compoundDrawablesRelative2[0];
+                ColorDrawable colorDrawable4 = this.c1;
+                if (drawable2 != colorDrawable4) {
+                    this.g0.setCompoundDrawablesRelative(colorDrawable4, compoundDrawablesRelative2[1], compoundDrawablesRelative2[2], compoundDrawablesRelative2[3]);
                     z = true;
-                } else {
-                    z = false;
+                    hx1Var = this.e0;
+                    if ((!hx1Var.e() || ((hx1Var.k0 != 0 && hx1Var.d()) || hx1Var.r0 != null)) && hx1Var.getMeasuredWidth() > 0) {
+                        int measuredWidth = hx1Var.s0.getMeasuredWidth() - this.g0.getPaddingRight();
+                        if (!hx1Var.e()) {
+                            checkableImageButton = hx1Var.e0;
+                        } else if (hx1Var.k0 != 0 && hx1Var.d()) {
+                            checkableImageButton = hx1Var.i0;
+                        }
+                        if (checkableImageButton != null) {
+                            measuredWidth = ((ViewGroup.MarginLayoutParams) checkableImageButton.getLayoutParams()).getMarginStart() + checkableImageButton.getMeasuredWidth() + measuredWidth;
+                        }
+                        int max2 = Math.max(0, measuredWidth);
+                        compoundDrawablesRelative = this.g0.getCompoundDrawablesRelative();
+                        colorDrawable = this.f1;
+                        if (colorDrawable == null && this.g1 != max2) {
+                            this.g1 = max2;
+                            colorDrawable.setBounds(0, 0, max2, 1);
+                            this.g0.setCompoundDrawablesRelative(compoundDrawablesRelative[0], compoundDrawablesRelative[1], this.f1, compoundDrawablesRelative[3]);
+                            return true;
+                        }
+                        if (colorDrawable == null) {
+                            ColorDrawable colorDrawable5 = new ColorDrawable();
+                            this.f1 = colorDrawable5;
+                            this.g1 = max2;
+                            colorDrawable5.setBounds(0, 0, max2, 1);
+                        }
+                        drawable = compoundDrawablesRelative[2];
+                        colorDrawable2 = this.f1;
+                        if (drawable != colorDrawable2) {
+                            this.h1 = drawable;
+                            this.g0.setCompoundDrawablesRelative(compoundDrawablesRelative[0], compoundDrawablesRelative[1], colorDrawable2, compoundDrawablesRelative[3]);
+                            return true;
+                        }
+                    } else if (this.f1 != null) {
+                        Drawable[] compoundDrawablesRelative3 = this.g0.getCompoundDrawablesRelative();
+                        if (compoundDrawablesRelative3[2] == this.f1) {
+                            this.g0.setCompoundDrawablesRelative(compoundDrawablesRelative3[0], compoundDrawablesRelative3[1], this.h1, compoundDrawablesRelative3[3]);
+                        } else {
+                            z2 = z;
+                        }
+                        this.f1 = null;
+                        return z2;
+                    }
+                    return z;
                 }
-            } else if (this.T0 != null) {
-                Drawable[] compoundDrawablesRelative2 = this.U.getCompoundDrawablesRelative();
-                this.U.setCompoundDrawablesRelative(null, compoundDrawablesRelative2[1], compoundDrawablesRelative2[2], compoundDrawablesRelative2[3]);
-                this.T0 = null;
-                z = true;
-            } else {
                 z = false;
+                hx1Var = this.e0;
+                if (hx1Var.e()) {
+                }
+                int measuredWidth2 = hx1Var.s0.getMeasuredWidth() - this.g0.getPaddingRight();
+                if (!hx1Var.e()) {
+                }
+                if (checkableImageButton != null) {
+                }
+                int max22 = Math.max(0, measuredWidth2);
+                compoundDrawablesRelative = this.g0.getCompoundDrawablesRelative();
+                colorDrawable = this.f1;
+                if (colorDrawable == null) {
+                }
+                if (colorDrawable == null) {
+                }
+                drawable = compoundDrawablesRelative[2];
+                colorDrawable2 = this.f1;
+                if (drawable != colorDrawable2) {
+                }
+                return z;
             }
-        } else if (this.T0 != null) {
-            Drawable[] compoundDrawablesRelative3 = this.U.getCompoundDrawablesRelative();
-            this.U.setCompoundDrawablesRelative(null, compoundDrawablesRelative3[1], compoundDrawablesRelative3[2], compoundDrawablesRelative3[3]);
-            this.T0 = null;
-            z = true;
-        } else {
-            z = false;
         }
-        qo1 qo1Var = this.S;
-        if ((qo1Var.e() || ((qo1Var.b0 != 0 && qo1Var.d()) || qo1Var.i0 != null)) && qo1Var.getMeasuredWidth() > 0) {
-            int measuredWidth2 = qo1Var.j0.getMeasuredWidth() - this.U.getPaddingRight();
-            if (qo1Var.e()) {
-                checkableImageButton = qo1Var.S;
-            } else if (qo1Var.b0 != 0 && qo1Var.d()) {
-                checkableImageButton = qo1Var.W;
+        if (this.c1 != null) {
+            Drawable[] compoundDrawablesRelative4 = this.g0.getCompoundDrawablesRelative();
+            this.g0.setCompoundDrawablesRelative(null, compoundDrawablesRelative4[1], compoundDrawablesRelative4[2], compoundDrawablesRelative4[3]);
+            this.c1 = null;
+            z = true;
+            hx1Var = this.e0;
+            if (hx1Var.e()) {
+            }
+            int measuredWidth22 = hx1Var.s0.getMeasuredWidth() - this.g0.getPaddingRight();
+            if (!hx1Var.e()) {
             }
             if (checkableImageButton != null) {
-                measuredWidth2 = ((ViewGroup.MarginLayoutParams) checkableImageButton.getLayoutParams()).getMarginStart() + checkableImageButton.getMeasuredWidth() + measuredWidth2;
             }
-            Drawable[] compoundDrawablesRelative4 = this.U.getCompoundDrawablesRelative();
-            ColorDrawable colorDrawable3 = this.W0;
-            if (colorDrawable3 != null && this.X0 != measuredWidth2) {
-                this.X0 = measuredWidth2;
-                colorDrawable3.setBounds(0, 0, measuredWidth2, 1);
-                this.U.setCompoundDrawablesRelative(compoundDrawablesRelative4[0], compoundDrawablesRelative4[1], this.W0, compoundDrawablesRelative4[3]);
-                return true;
+            int max222 = Math.max(0, measuredWidth22);
+            compoundDrawablesRelative = this.g0.getCompoundDrawablesRelative();
+            colorDrawable = this.f1;
+            if (colorDrawable == null) {
             }
-            if (colorDrawable3 == null) {
-                ColorDrawable colorDrawable4 = new ColorDrawable();
-                this.W0 = colorDrawable4;
-                this.X0 = measuredWidth2;
-                colorDrawable4.setBounds(0, 0, measuredWidth2, 1);
+            if (colorDrawable == null) {
             }
-            Drawable drawable2 = compoundDrawablesRelative4[2];
-            ColorDrawable colorDrawable5 = this.W0;
-            if (drawable2 != colorDrawable5) {
-                this.Y0 = drawable2;
-                this.U.setCompoundDrawablesRelative(compoundDrawablesRelative4[0], compoundDrawablesRelative4[1], colorDrawable5, compoundDrawablesRelative4[3]);
-                return true;
+            drawable = compoundDrawablesRelative[2];
+            colorDrawable2 = this.f1;
+            if (drawable != colorDrawable2) {
             }
-        } else if (this.W0 != null) {
-            Drawable[] compoundDrawablesRelative5 = this.U.getCompoundDrawablesRelative();
-            if (compoundDrawablesRelative5[2] == this.W0) {
-                this.U.setCompoundDrawablesRelative(compoundDrawablesRelative5[0], compoundDrawablesRelative5[1], this.Y0, compoundDrawablesRelative5[3]);
-            } else {
-                z2 = z;
-            }
-            this.W0 = null;
-            return z2;
+            return z;
+        }
+        z = false;
+        hx1Var = this.e0;
+        if (hx1Var.e()) {
+        }
+        int measuredWidth222 = hx1Var.s0.getMeasuredWidth() - this.g0.getPaddingRight();
+        if (!hx1Var.e()) {
+        }
+        if (checkableImageButton != null) {
+        }
+        int max2222 = Math.max(0, measuredWidth222);
+        compoundDrawablesRelative = this.g0.getCompoundDrawablesRelative();
+        colorDrawable = this.f1;
+        if (colorDrawable == null) {
+        }
+        if (colorDrawable == null) {
+        }
+        drawable = compoundDrawablesRelative[2];
+        colorDrawable2 = this.f1;
+        if (drawable != colorDrawable2) {
         }
         return z;
     }
 
     public void setBoxBackgroundColor(int i) {
-        if (this.O0 != i) {
-            this.O0 = i;
-            this.f1 = i;
-            this.h1 = i;
-            this.i1 = i;
+        if (this.X0 != i) {
+            this.X0 = i;
+            this.o1 = i;
+            this.q1 = i;
+            this.r1 = i;
             c();
         }
     }
 
     public void setBoxBackgroundColorResource(int i) {
-        setBoxBackgroundColor(bv7.A(getContext(), i));
+        setBoxBackgroundColor(getContext().getColor(i));
     }
 
     public void setBoxBackgroundColorStateList(ColorStateList colorStateList) {
         int defaultColor = colorStateList.getDefaultColor();
-        this.f1 = defaultColor;
-        this.O0 = defaultColor;
-        this.g1 = colorStateList.getColorForState(new int[]{-16842910}, -1);
-        this.h1 = colorStateList.getColorForState(new int[]{R.attr.state_focused, R.attr.state_enabled}, -1);
-        this.i1 = colorStateList.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, -1);
+        this.o1 = defaultColor;
+        this.X0 = defaultColor;
+        this.p1 = colorStateList.getColorForState(new int[]{-16842910}, -1);
+        this.q1 = colorStateList.getColorForState(new int[]{R.attr.state_focused, R.attr.state_enabled}, -1);
+        this.r1 = colorStateList.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, -1);
         c();
     }
 
     public void setBoxBackgroundMode(int i) {
-        if (i == this.I0) {
+        if (i == this.R0) {
             return;
         }
-        this.I0 = i;
-        if (this.U != null) {
+        this.R0 = i;
+        if (this.g0 != null) {
             k();
         }
     }
 
     public void setBoxCollapsedPaddingTop(int i) {
-        this.J0 = i;
+        this.S0 = i;
     }
 
     public void setBoxCornerFamily(int i) {
-        o5 o5VarF = this.F0.f();
-        ow0 ow0Var = this.F0.e;
-        o5VarF.Q = zd7.u(i);
-        o5VarF.U = ow0Var;
-        ow0 ow0Var2 = this.F0.f;
-        o5VarF.R = zd7.u(i);
-        o5VarF.V = ow0Var2;
-        ow0 ow0Var3 = this.F0.h;
-        o5VarF.T = zd7.u(i);
-        o5VarF.X = ow0Var3;
-        ow0 ow0Var4 = this.F0.g;
-        o5VarF.S = zd7.u(i);
-        o5VarF.W = ow0Var4;
-        this.F0 = o5VarF.b();
+        y5 k = this.O0.k();
+        t31 t31Var = this.O0.e;
+        k.X = h71.t(i);
+        k.d0 = t31Var;
+        t31 t31Var2 = this.O0.f;
+        k.Y = h71.t(i);
+        k.e0 = t31Var2;
+        t31 t31Var3 = this.O0.h;
+        k.c0 = h71.t(i);
+        k.g0 = t31Var3;
+        t31 t31Var4 = this.O0.g;
+        k.Z = h71.t(i);
+        k.f0 = t31Var4;
+        this.O0 = k.b();
         c();
     }
 
     public void setBoxStrokeColor(int i) {
-        if (this.d1 != i) {
-            this.d1 = i;
+        if (this.m1 != i) {
+            this.m1 = i;
             z();
         }
     }
 
     public void setBoxStrokeColorStateList(ColorStateList colorStateList) {
         if (colorStateList.isStateful()) {
-            this.b1 = colorStateList.getDefaultColor();
-            this.j1 = colorStateList.getColorForState(new int[]{-16842910}, -1);
-            this.c1 = colorStateList.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, -1);
-            this.d1 = colorStateList.getColorForState(new int[]{R.attr.state_focused, R.attr.state_enabled}, -1);
-        } else if (this.d1 != colorStateList.getDefaultColor()) {
-            this.d1 = colorStateList.getDefaultColor();
+            this.k1 = colorStateList.getDefaultColor();
+            this.s1 = colorStateList.getColorForState(new int[]{-16842910}, -1);
+            this.l1 = colorStateList.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, -1);
+            this.m1 = colorStateList.getColorForState(new int[]{R.attr.state_focused, R.attr.state_enabled}, -1);
+        } else if (this.m1 != colorStateList.getDefaultColor()) {
+            this.m1 = colorStateList.getDefaultColor();
         }
         z();
     }
 
     public void setBoxStrokeErrorColor(ColorStateList colorStateList) {
-        if (this.e1 != colorStateList) {
-            this.e1 = colorStateList;
+        if (this.n1 != colorStateList) {
+            this.n1 = colorStateList;
             z();
         }
     }
 
     public void setBoxStrokeWidth(int i) {
-        this.L0 = i;
+        this.U0 = i;
         z();
     }
 
     public void setBoxStrokeWidthFocused(int i) {
-        this.M0 = i;
+        this.V0 = i;
         z();
     }
 
@@ -1957,95 +2002,95 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setCounterEnabled(boolean z) {
-        if (this.e0 != z) {
-            kp2 kp2Var = this.d0;
+        if (this.n0 != z) {
+            g43 g43Var = this.m0;
             if (z) {
                 AppCompatTextView appCompatTextView = new AppCompatTextView(getContext(), null);
-                this.i0 = appCompatTextView;
-                appCompatTextView.setId(c95.textinput_counter);
-                Typeface typeface = this.S0;
+                this.r0 = appCompatTextView;
+                appCompatTextView.setId(ct5.textinput_counter);
+                Typeface typeface = this.b1;
                 if (typeface != null) {
-                    this.i0.setTypeface(typeface);
+                    this.r0.setTypeface(typeface);
                 }
-                this.i0.setMaxLines(1);
-                kp2Var.a(this.i0, 2);
-                ((ViewGroup.MarginLayoutParams) this.i0.getLayoutParams()).setMarginStart(getResources().getDimensionPixelOffset(k85.mtrl_textinput_counter_margin_start));
+                this.r0.setMaxLines(1);
+                g43Var.a(this.r0, 2);
+                ((ViewGroup.MarginLayoutParams) this.r0.getLayoutParams()).setMarginStart(getResources().getDimensionPixelOffset(js5.mtrl_textinput_counter_margin_start));
                 q();
-                if (this.i0 != null) {
-                    EditText editText = this.U;
+                if (this.r0 != null) {
+                    EditText editText = this.g0;
                     p(editText != null ? editText.getText() : null);
                 }
             } else {
-                kp2Var.g(this.i0, 2);
-                this.i0 = null;
+                g43Var.g(this.r0, 2);
+                this.r0 = null;
             }
-            this.e0 = z;
+            this.n0 = z;
         }
     }
 
     public void setCounterMaxLength(int i) {
-        if (this.f0 != i) {
+        if (this.o0 != i) {
             if (i > 0) {
-                this.f0 = i;
+                this.o0 = i;
             } else {
-                this.f0 = -1;
+                this.o0 = -1;
             }
-            if (!this.e0 || this.i0 == null) {
+            if (!this.n0 || this.r0 == null) {
                 return;
             }
-            EditText editText = this.U;
+            EditText editText = this.g0;
             p(editText == null ? null : editText.getText());
         }
     }
 
     public void setCounterOverflowTextAppearance(int i) {
-        if (this.j0 != i) {
-            this.j0 = i;
+        if (this.s0 != i) {
+            this.s0 = i;
             q();
         }
     }
 
     public void setCounterOverflowTextColor(ColorStateList colorStateList) {
-        if (this.t0 != colorStateList) {
-            this.t0 = colorStateList;
+        if (this.C0 != colorStateList) {
+            this.C0 = colorStateList;
             q();
         }
     }
 
     public void setCounterTextAppearance(int i) {
-        if (this.k0 != i) {
-            this.k0 = i;
+        if (this.t0 != i) {
+            this.t0 = i;
             q();
         }
     }
 
     public void setCounterTextColor(ColorStateList colorStateList) {
-        if (this.s0 != colorStateList) {
-            this.s0 = colorStateList;
+        if (this.B0 != colorStateList) {
+            this.B0 = colorStateList;
             q();
         }
     }
 
     public void setCursorColor(ColorStateList colorStateList) {
-        if (this.u0 != colorStateList) {
-            this.u0 = colorStateList;
+        if (this.D0 != colorStateList) {
+            this.D0 = colorStateList;
             r();
         }
     }
 
     public void setCursorErrorColor(ColorStateList colorStateList) {
-        if (this.v0 != colorStateList) {
-            this.v0 = colorStateList;
-            if (o() || (this.i0 != null && this.g0)) {
+        if (this.E0 != colorStateList) {
+            this.E0 = colorStateList;
+            if (o() || (this.r0 != null && this.p0)) {
                 r();
             }
         }
     }
 
     public void setDefaultHintTextColor(ColorStateList colorStateList) {
-        this.Z0 = colorStateList;
-        this.a1 = colorStateList;
-        if (this.U != null) {
+        this.i1 = colorStateList;
+        this.j1 = colorStateList;
+        if (this.g0 != null) {
             w(false, false);
         }
     }
@@ -2057,100 +2102,96 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setEndIconActivated(boolean z) {
-        this.S.W.setActivated(z);
+        this.e0.i0.setActivated(z);
     }
 
     public void setEndIconCheckable(boolean z) {
-        this.S.W.setCheckable(z);
+        this.e0.i0.setCheckable(z);
     }
 
     public void setEndIconContentDescription(int i) {
-        qo1 qo1Var = this.S;
-        CharSequence text = i != 0 ? qo1Var.getResources().getText(i) : null;
-        CheckableImageButton checkableImageButton = qo1Var.W;
-        if (checkableImageButton.getContentDescription() != text) {
-            checkableImageButton.setContentDescription(text);
-        }
+        hx1 hx1Var = this.e0;
+        hx1Var.g(i != 0 ? hx1Var.getResources().getText(i) : null);
     }
 
     public void setEndIconDrawable(int i) {
-        qo1 qo1Var = this.S;
-        Drawable drawableY = i != 0 ? ub.y(qo1Var.getContext(), i) : null;
-        TextInputLayout textInputLayout = qo1Var.Q;
-        CheckableImageButton checkableImageButton = qo1Var.W;
-        checkableImageButton.setImageDrawable(drawableY);
-        if (drawableY != null) {
-            yc4.j(textInputLayout, checkableImageButton, qo1Var.d0, qo1Var.e0);
-            yc4.L0(textInputLayout, checkableImageButton, qo1Var.d0);
+        hx1 hx1Var = this.e0;
+        Drawable u = i != 0 ? yl0.u(hx1Var.getContext(), i) : null;
+        TextInputLayout textInputLayout = hx1Var.c0;
+        CheckableImageButton checkableImageButton = hx1Var.i0;
+        checkableImageButton.setImageDrawable(u);
+        if (u != null) {
+            f73.c(textInputLayout, checkableImageButton, hx1Var.m0, hx1Var.n0);
+            f73.E(textInputLayout, checkableImageButton, hx1Var.m0);
         }
     }
 
     public void setEndIconMinSize(int i) {
-        qo1 qo1Var = this.S;
+        hx1 hx1Var = this.e0;
         if (i < 0) {
-            qo1Var.getClass();
-            fn.r("endIconSize cannot be less than 0");
-        } else if (i != qo1Var.f0) {
-            qo1Var.f0 = i;
-            CheckableImageButton checkableImageButton = qo1Var.W;
+            hx1Var.getClass();
+            i60.p("endIconSize cannot be less than 0");
+        } else if (i != hx1Var.o0) {
+            hx1Var.o0 = i;
+            CheckableImageButton checkableImageButton = hx1Var.i0;
             checkableImageButton.setMinimumWidth(i);
             checkableImageButton.setMinimumHeight(i);
-            CheckableImageButton checkableImageButton2 = qo1Var.S;
+            CheckableImageButton checkableImageButton2 = hx1Var.e0;
             checkableImageButton2.setMinimumWidth(i);
             checkableImageButton2.setMinimumHeight(i);
         }
     }
 
     public void setEndIconMode(int i) {
-        this.S.g(i);
+        this.e0.h(i);
     }
 
     public void setEndIconOnClickListener(View.OnClickListener onClickListener) {
-        qo1 qo1Var = this.S;
-        CheckableImageButton checkableImageButton = qo1Var.W;
-        View.OnLongClickListener onLongClickListener = qo1Var.h0;
+        hx1 hx1Var = this.e0;
+        CheckableImageButton checkableImageButton = hx1Var.i0;
+        View.OnLongClickListener onLongClickListener = hx1Var.q0;
         checkableImageButton.setOnClickListener(onClickListener);
-        yc4.P0(checkableImageButton, onLongClickListener);
+        f73.V(checkableImageButton, onLongClickListener);
     }
 
     public void setEndIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
-        qo1 qo1Var = this.S;
-        qo1Var.h0 = onLongClickListener;
-        CheckableImageButton checkableImageButton = qo1Var.W;
+        hx1 hx1Var = this.e0;
+        hx1Var.q0 = onLongClickListener;
+        CheckableImageButton checkableImageButton = hx1Var.i0;
         checkableImageButton.setOnLongClickListener(onLongClickListener);
-        yc4.P0(checkableImageButton, onLongClickListener);
+        f73.V(checkableImageButton, onLongClickListener);
     }
 
     public void setEndIconScaleType(ImageView.ScaleType scaleType) {
-        qo1 qo1Var = this.S;
-        qo1Var.g0 = scaleType;
-        qo1Var.W.setScaleType(scaleType);
-        qo1Var.S.setScaleType(scaleType);
+        hx1 hx1Var = this.e0;
+        hx1Var.p0 = scaleType;
+        hx1Var.i0.setScaleType(scaleType);
+        hx1Var.e0.setScaleType(scaleType);
     }
 
     public void setEndIconTintList(ColorStateList colorStateList) {
-        qo1 qo1Var = this.S;
-        if (qo1Var.d0 != colorStateList) {
-            qo1Var.d0 = colorStateList;
-            yc4.j(qo1Var.Q, qo1Var.W, colorStateList, qo1Var.e0);
+        hx1 hx1Var = this.e0;
+        if (hx1Var.m0 != colorStateList) {
+            hx1Var.m0 = colorStateList;
+            f73.c(hx1Var.c0, hx1Var.i0, colorStateList, hx1Var.n0);
         }
     }
 
     public void setEndIconTintMode(PorterDuff.Mode mode) {
-        qo1 qo1Var = this.S;
-        if (qo1Var.e0 != mode) {
-            qo1Var.e0 = mode;
-            yc4.j(qo1Var.Q, qo1Var.W, qo1Var.d0, mode);
+        hx1 hx1Var = this.e0;
+        if (hx1Var.n0 != mode) {
+            hx1Var.n0 = mode;
+            f73.c(hx1Var.c0, hx1Var.i0, hx1Var.m0, mode);
         }
     }
 
     public void setEndIconVisible(boolean z) {
-        this.S.h(z);
+        this.e0.i(z);
     }
 
     public void setError(CharSequence charSequence) {
-        kp2 kp2Var = this.d0;
-        if (!kp2Var.q) {
+        g43 g43Var = this.m0;
+        if (!g43Var.q) {
             if (TextUtils.isEmpty(charSequence)) {
                 return;
             } else {
@@ -2158,140 +2199,140 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             }
         }
         if (TextUtils.isEmpty(charSequence)) {
-            kp2Var.f();
+            g43Var.f();
             return;
         }
-        kp2Var.c();
-        kp2Var.p = charSequence;
-        kp2Var.r.setText(charSequence);
-        int i = kp2Var.n;
+        g43Var.c();
+        g43Var.p = charSequence;
+        g43Var.r.setText(charSequence);
+        int i = g43Var.n;
         if (i != 1) {
-            kp2Var.o = 1;
+            g43Var.o = 1;
         }
-        kp2Var.i(kp2Var.h(kp2Var.r, charSequence), i, kp2Var.o);
+        g43Var.i(g43Var.h(g43Var.r, charSequence), i, g43Var.o);
     }
 
     public void setErrorAccessibilityLiveRegion(int i) {
-        kp2 kp2Var = this.d0;
-        kp2Var.t = i;
-        AppCompatTextView appCompatTextView = kp2Var.r;
+        g43 g43Var = this.m0;
+        g43Var.t = i;
+        AppCompatTextView appCompatTextView = g43Var.r;
         if (appCompatTextView != null) {
             appCompatTextView.setAccessibilityLiveRegion(i);
         }
     }
 
     public void setErrorContentDescription(CharSequence charSequence) {
-        kp2 kp2Var = this.d0;
-        kp2Var.s = charSequence;
-        AppCompatTextView appCompatTextView = kp2Var.r;
+        g43 g43Var = this.m0;
+        g43Var.s = charSequence;
+        AppCompatTextView appCompatTextView = g43Var.r;
         if (appCompatTextView != null) {
             appCompatTextView.setContentDescription(charSequence);
         }
     }
 
     public void setErrorEnabled(boolean z) {
-        kp2 kp2Var = this.d0;
-        TextInputLayout textInputLayout = kp2Var.h;
-        if (kp2Var.q == z) {
+        g43 g43Var = this.m0;
+        TextInputLayout textInputLayout = g43Var.h;
+        if (g43Var.q == z) {
             return;
         }
-        kp2Var.c();
+        g43Var.c();
         if (z) {
-            AppCompatTextView appCompatTextView = new AppCompatTextView(kp2Var.g, null);
-            kp2Var.r = appCompatTextView;
-            appCompatTextView.setId(c95.textinput_error);
-            kp2Var.r.setTextAlignment(5);
-            Typeface typeface = kp2Var.B;
+            AppCompatTextView appCompatTextView = new AppCompatTextView(g43Var.g, null);
+            g43Var.r = appCompatTextView;
+            appCompatTextView.setId(ct5.textinput_error);
+            g43Var.r.setTextAlignment(5);
+            Typeface typeface = g43Var.B;
             if (typeface != null) {
-                kp2Var.r.setTypeface(typeface);
+                g43Var.r.setTypeface(typeface);
             }
-            int i = kp2Var.u;
-            kp2Var.u = i;
-            AppCompatTextView appCompatTextView2 = kp2Var.r;
+            int i = g43Var.u;
+            g43Var.u = i;
+            AppCompatTextView appCompatTextView2 = g43Var.r;
             if (appCompatTextView2 != null) {
-                kp2Var.h.n(appCompatTextView2, i);
+                g43Var.h.n(appCompatTextView2, i);
             }
-            ColorStateList colorStateList = kp2Var.v;
-            kp2Var.v = colorStateList;
-            AppCompatTextView appCompatTextView3 = kp2Var.r;
+            ColorStateList colorStateList = g43Var.v;
+            g43Var.v = colorStateList;
+            AppCompatTextView appCompatTextView3 = g43Var.r;
             if (appCompatTextView3 != null && colorStateList != null) {
                 appCompatTextView3.setTextColor(colorStateList);
             }
-            CharSequence charSequence = kp2Var.s;
-            kp2Var.s = charSequence;
-            AppCompatTextView appCompatTextView4 = kp2Var.r;
+            CharSequence charSequence = g43Var.s;
+            g43Var.s = charSequence;
+            AppCompatTextView appCompatTextView4 = g43Var.r;
             if (appCompatTextView4 != null) {
                 appCompatTextView4.setContentDescription(charSequence);
             }
-            int i2 = kp2Var.t;
-            kp2Var.t = i2;
-            AppCompatTextView appCompatTextView5 = kp2Var.r;
+            int i2 = g43Var.t;
+            g43Var.t = i2;
+            AppCompatTextView appCompatTextView5 = g43Var.r;
             if (appCompatTextView5 != null) {
                 appCompatTextView5.setAccessibilityLiveRegion(i2);
             }
-            kp2Var.r.setVisibility(4);
-            kp2Var.a(kp2Var.r, 0);
+            g43Var.r.setVisibility(4);
+            g43Var.a(g43Var.r, 0);
         } else {
-            kp2Var.f();
-            kp2Var.g(kp2Var.r, 0);
-            kp2Var.r = null;
+            g43Var.f();
+            g43Var.g(g43Var.r, 0);
+            g43Var.r = null;
             textInputLayout.t();
             textInputLayout.z();
         }
-        kp2Var.q = z;
+        g43Var.q = z;
     }
 
     public void setErrorIconDrawable(int i) {
-        qo1 qo1Var = this.S;
-        qo1Var.i(i != 0 ? ub.y(qo1Var.getContext(), i) : null);
-        yc4.L0(qo1Var.Q, qo1Var.S, qo1Var.T);
+        hx1 hx1Var = this.e0;
+        hx1Var.j(i != 0 ? yl0.u(hx1Var.getContext(), i) : null);
+        f73.E(hx1Var.c0, hx1Var.e0, hx1Var.f0);
     }
 
     public void setErrorIconOnClickListener(View.OnClickListener onClickListener) {
-        qo1 qo1Var = this.S;
-        CheckableImageButton checkableImageButton = qo1Var.S;
-        View.OnLongClickListener onLongClickListener = qo1Var.V;
+        hx1 hx1Var = this.e0;
+        CheckableImageButton checkableImageButton = hx1Var.e0;
+        View.OnLongClickListener onLongClickListener = hx1Var.h0;
         checkableImageButton.setOnClickListener(onClickListener);
-        yc4.P0(checkableImageButton, onLongClickListener);
+        f73.V(checkableImageButton, onLongClickListener);
     }
 
     public void setErrorIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
-        qo1 qo1Var = this.S;
-        qo1Var.V = onLongClickListener;
-        CheckableImageButton checkableImageButton = qo1Var.S;
+        hx1 hx1Var = this.e0;
+        hx1Var.h0 = onLongClickListener;
+        CheckableImageButton checkableImageButton = hx1Var.e0;
         checkableImageButton.setOnLongClickListener(onLongClickListener);
-        yc4.P0(checkableImageButton, onLongClickListener);
+        f73.V(checkableImageButton, onLongClickListener);
     }
 
     public void setErrorIconTintList(ColorStateList colorStateList) {
-        qo1 qo1Var = this.S;
-        if (qo1Var.T != colorStateList) {
-            qo1Var.T = colorStateList;
-            yc4.j(qo1Var.Q, qo1Var.S, colorStateList, qo1Var.U);
+        hx1 hx1Var = this.e0;
+        if (hx1Var.f0 != colorStateList) {
+            hx1Var.f0 = colorStateList;
+            f73.c(hx1Var.c0, hx1Var.e0, colorStateList, hx1Var.g0);
         }
     }
 
     public void setErrorIconTintMode(PorterDuff.Mode mode) {
-        qo1 qo1Var = this.S;
-        if (qo1Var.U != mode) {
-            qo1Var.U = mode;
-            yc4.j(qo1Var.Q, qo1Var.S, qo1Var.T, mode);
+        hx1 hx1Var = this.e0;
+        if (hx1Var.g0 != mode) {
+            hx1Var.g0 = mode;
+            f73.c(hx1Var.c0, hx1Var.e0, hx1Var.f0, mode);
         }
     }
 
     public void setErrorTextAppearance(int i) {
-        kp2 kp2Var = this.d0;
-        kp2Var.u = i;
-        AppCompatTextView appCompatTextView = kp2Var.r;
+        g43 g43Var = this.m0;
+        g43Var.u = i;
+        AppCompatTextView appCompatTextView = g43Var.r;
         if (appCompatTextView != null) {
-            kp2Var.h.n(appCompatTextView, i);
+            g43Var.h.n(appCompatTextView, i);
         }
     }
 
     public void setErrorTextColor(ColorStateList colorStateList) {
-        kp2 kp2Var = this.d0;
-        kp2Var.v = colorStateList;
-        AppCompatTextView appCompatTextView = kp2Var.r;
+        g43 g43Var = this.m0;
+        g43Var.v = colorStateList;
+        AppCompatTextView appCompatTextView = g43Var.r;
         if (appCompatTextView == null || colorStateList == null) {
             return;
         }
@@ -2299,39 +2340,39 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setExpandedHintEnabled(boolean z) {
-        if (this.n1 != z) {
-            this.n1 = z;
+        if (this.w1 != z) {
+            this.w1 = z;
             w(false, false);
         }
     }
 
     public void setHelperText(CharSequence charSequence) {
-        boolean zIsEmpty = TextUtils.isEmpty(charSequence);
-        kp2 kp2Var = this.d0;
-        if (zIsEmpty) {
-            if (kp2Var.x) {
+        boolean isEmpty = TextUtils.isEmpty(charSequence);
+        g43 g43Var = this.m0;
+        if (isEmpty) {
+            if (g43Var.x) {
                 setHelperTextEnabled(false);
                 return;
             }
             return;
         }
-        if (!kp2Var.x) {
+        if (!g43Var.x) {
             setHelperTextEnabled(true);
         }
-        kp2Var.c();
-        kp2Var.w = charSequence;
-        kp2Var.y.setText(charSequence);
-        int i = kp2Var.n;
+        g43Var.c();
+        g43Var.w = charSequence;
+        g43Var.y.setText(charSequence);
+        int i = g43Var.n;
         if (i != 2) {
-            kp2Var.o = 2;
+            g43Var.o = 2;
         }
-        kp2Var.i(kp2Var.h(kp2Var.y, charSequence), i, kp2Var.o);
+        g43Var.i(g43Var.h(g43Var.y, charSequence), i, g43Var.o);
     }
 
     public void setHelperTextColor(ColorStateList colorStateList) {
-        kp2 kp2Var = this.d0;
-        kp2Var.A = colorStateList;
-        AppCompatTextView appCompatTextView = kp2Var.y;
+        g43 g43Var = this.m0;
+        g43Var.A = colorStateList;
+        AppCompatTextView appCompatTextView = g43Var.y;
         if (appCompatTextView == null || colorStateList == null) {
             return;
         }
@@ -2339,58 +2380,57 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setHelperTextEnabled(boolean z) {
-        kp2 kp2Var = this.d0;
-        TextInputLayout textInputLayout = kp2Var.h;
-        if (kp2Var.x == z) {
+        g43 g43Var = this.m0;
+        TextInputLayout textInputLayout = g43Var.h;
+        if (g43Var.x == z) {
             return;
         }
-        kp2Var.c();
+        g43Var.c();
         if (z) {
-            AppCompatTextView appCompatTextView = new AppCompatTextView(kp2Var.g, null);
-            kp2Var.y = appCompatTextView;
-            appCompatTextView.setId(c95.textinput_helper_text);
-            kp2Var.y.setTextAlignment(5);
-            Typeface typeface = kp2Var.B;
+            AppCompatTextView appCompatTextView = new AppCompatTextView(g43Var.g, null);
+            g43Var.y = appCompatTextView;
+            appCompatTextView.setId(ct5.textinput_helper_text);
+            g43Var.y.setTextAlignment(5);
+            Typeface typeface = g43Var.B;
             if (typeface != null) {
-                kp2Var.y.setTypeface(typeface);
+                g43Var.y.setTypeface(typeface);
             }
-            kp2Var.y.setVisibility(4);
-            kp2Var.y.setAccessibilityLiveRegion(1);
-            int i = kp2Var.z;
-            kp2Var.z = i;
-            AppCompatTextView appCompatTextView2 = kp2Var.y;
+            g43Var.y.setVisibility(4);
+            g43Var.y.setImportantForAccessibility(2);
+            int i = g43Var.z;
+            g43Var.z = i;
+            AppCompatTextView appCompatTextView2 = g43Var.y;
             if (appCompatTextView2 != null) {
-                b15.R(appCompatTextView2, i);
+                appCompatTextView2.setTextAppearance(i);
             }
-            ColorStateList colorStateList = kp2Var.A;
-            kp2Var.A = colorStateList;
-            AppCompatTextView appCompatTextView3 = kp2Var.y;
+            ColorStateList colorStateList = g43Var.A;
+            g43Var.A = colorStateList;
+            AppCompatTextView appCompatTextView3 = g43Var.y;
             if (appCompatTextView3 != null && colorStateList != null) {
                 appCompatTextView3.setTextColor(colorStateList);
             }
-            kp2Var.a(kp2Var.y, 1);
-            kp2Var.y.setAccessibilityDelegate(new jp2(kp2Var));
+            g43Var.a(g43Var.y, 1);
         } else {
-            kp2Var.c();
-            int i2 = kp2Var.n;
+            g43Var.c();
+            int i2 = g43Var.n;
             if (i2 == 2) {
-                kp2Var.o = 0;
+                g43Var.o = 0;
             }
-            kp2Var.i(kp2Var.h(kp2Var.y, ""), i2, kp2Var.o);
-            kp2Var.g(kp2Var.y, 1);
-            kp2Var.y = null;
+            g43Var.i(g43Var.h(g43Var.y, HttpUrl.FRAGMENT_ENCODE_SET), i2, g43Var.o);
+            g43Var.g(g43Var.y, 1);
+            g43Var.y = null;
             textInputLayout.t();
             textInputLayout.z();
         }
-        kp2Var.x = z;
+        g43Var.x = z;
     }
 
     public void setHelperTextTextAppearance(int i) {
-        kp2 kp2Var = this.d0;
-        kp2Var.z = i;
-        AppCompatTextView appCompatTextView = kp2Var.y;
+        g43 g43Var = this.m0;
+        g43Var.z = i;
+        AppCompatTextView appCompatTextView = g43Var.y;
         if (appCompatTextView != null) {
-            b15.R(appCompatTextView, i);
+            appCompatTextView.setTextAppearance(i);
         }
     }
 
@@ -2399,106 +2439,106 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setHintAnimationEnabled(boolean z) {
-        this.o1 = z;
+        this.x1 = z;
     }
 
     public void setHintEnabled(boolean z) {
-        if (z != this.w0) {
-            this.w0 = z;
+        if (z != this.F0) {
+            this.F0 = z;
             if (z) {
-                CharSequence hint = this.U.getHint();
+                CharSequence hint = this.g0.getHint();
                 if (!TextUtils.isEmpty(hint)) {
-                    if (TextUtils.isEmpty(this.x0)) {
+                    if (TextUtils.isEmpty(this.G0)) {
                         setHint(hint);
                     }
-                    this.U.setHint((CharSequence) null);
+                    this.g0.setHint((CharSequence) null);
                 }
-                this.y0 = true;
+                this.H0 = true;
             } else {
-                this.y0 = false;
-                if (!TextUtils.isEmpty(this.x0) && TextUtils.isEmpty(this.U.getHint())) {
-                    this.U.setHint(this.x0);
+                this.H0 = false;
+                if (!TextUtils.isEmpty(this.G0) && TextUtils.isEmpty(this.g0.getHint())) {
+                    this.g0.setHint(this.G0);
                 }
                 setHintInternal(null);
             }
-            if (this.U != null) {
+            if (this.g0 != null) {
                 v();
             }
         }
     }
 
     public void setHintMaxLines(int i) {
-        im0 im0Var = this.m1;
-        if (i != im0Var.f0) {
-            im0Var.f0 = i;
-            im0Var.j(false);
+        ot0 ot0Var = this.v1;
+        if (i != ot0Var.f0) {
+            ot0Var.f0 = i;
+            ot0Var.j(false);
         }
-        if (i != im0Var.e0) {
-            im0Var.e0 = i;
-            im0Var.j(false);
+        if (i != ot0Var.e0) {
+            ot0Var.e0 = i;
+            ot0Var.j(false);
         }
         requestLayout();
     }
 
     public void setHintTextAppearance(int i) {
-        im0 im0Var = this.m1;
-        TextInputLayout textInputLayout = im0Var.a;
-        jx6 jx6Var = new jx6(textInputLayout.getContext(), i);
-        ColorStateList colorStateList = jx6Var.k;
+        ot0 ot0Var = this.v1;
+        TextInputLayout textInputLayout = ot0Var.a;
+        zo7 zo7Var = new zo7(textInputLayout.getContext(), i);
+        ColorStateList colorStateList = zo7Var.k;
         if (colorStateList != null) {
-            im0Var.k = colorStateList;
+            ot0Var.k = colorStateList;
         }
-        float f = jx6Var.l;
+        float f = zo7Var.l;
         if (f != 0.0f) {
-            im0Var.i = f;
+            ot0Var.i = f;
         }
-        ColorStateList colorStateList2 = jx6Var.a;
+        ColorStateList colorStateList2 = zo7Var.a;
         if (colorStateList2 != null) {
-            im0Var.V = colorStateList2;
+            ot0Var.V = colorStateList2;
         }
-        im0Var.T = jx6Var.f;
-        im0Var.U = jx6Var.g;
-        im0Var.S = jx6Var.h;
-        im0Var.W = jx6Var.j;
-        ee0 ee0Var = im0Var.z;
-        if (ee0Var != null) {
-            ee0Var.Z = true;
+        ot0Var.T = zo7Var.f;
+        ot0Var.U = zo7Var.g;
+        ot0Var.S = zo7Var.h;
+        ot0Var.W = zo7Var.j;
+        lk0 lk0Var = ot0Var.z;
+        if (lk0Var != null) {
+            lk0Var.e0 = true;
         }
-        rb2 rb2Var = new rb2(21, im0Var);
-        jx6Var.a();
-        im0Var.z = new ee0(rb2Var, jx6Var.p);
-        jx6Var.b(textInputLayout.getContext(), im0Var.z);
-        im0Var.j(false);
-        this.a1 = im0Var.k;
-        if (this.U != null) {
+        ym2 ym2Var = new ym2(18, ot0Var);
+        zo7Var.a();
+        ot0Var.z = new lk0(ym2Var, zo7Var.p);
+        zo7Var.b(textInputLayout.getContext(), ot0Var.z);
+        ot0Var.j(false);
+        this.j1 = ot0Var.k;
+        if (this.g0 != null) {
             w(false, false);
             v();
         }
     }
 
     public void setHintTextColor(ColorStateList colorStateList) {
-        if (this.a1 != colorStateList) {
-            if (this.Z0 == null) {
-                im0 im0Var = this.m1;
-                if (im0Var.k != colorStateList) {
-                    im0Var.k = colorStateList;
-                    im0Var.j(false);
+        if (this.j1 != colorStateList) {
+            if (this.i1 == null) {
+                ot0 ot0Var = this.v1;
+                if (ot0Var.k != colorStateList) {
+                    ot0Var.k = colorStateList;
+                    ot0Var.j(false);
                 }
             }
-            this.a1 = colorStateList;
-            if (this.U != null) {
+            this.j1 = colorStateList;
+            if (this.g0 != null) {
                 w(false, false);
             }
         }
     }
 
-    public void setLengthCounter(d17 d17Var) {
-        this.h0 = d17Var;
+    public void setLengthCounter(ht7 ht7Var) {
+        this.q0 = ht7Var;
     }
 
     public void setMaxEms(int i) {
-        this.a0 = i;
-        EditText editText = this.U;
+        this.j0 = i;
+        EditText editText = this.g0;
         if (editText == null || i == -1) {
             return;
         }
@@ -2506,8 +2546,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setMaxWidth(int i) {
-        this.c0 = i;
-        EditText editText = this.U;
+        this.l0 = i;
+        EditText editText = this.g0;
         if (editText == null || i == -1) {
             return;
         }
@@ -2519,8 +2559,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setMinEms(int i) {
-        this.W = i;
-        EditText editText = this.U;
+        this.i0 = i;
+        EditText editText = this.g0;
         if (editText == null || i == -1) {
             return;
         }
@@ -2528,8 +2568,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setMinWidth(int i) {
-        this.b0 = i;
-        EditText editText = this.U;
+        this.k0 = i;
+        EditText editText = this.g0;
         if (editText == null || i == -1) {
             return;
         }
@@ -2542,81 +2582,81 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     @Deprecated
     public void setPasswordVisibilityToggleContentDescription(int i) {
-        qo1 qo1Var = this.S;
-        qo1Var.W.setContentDescription(i != 0 ? qo1Var.getResources().getText(i) : null);
+        hx1 hx1Var = this.e0;
+        hx1Var.i0.setContentDescription(i != 0 ? hx1Var.getResources().getText(i) : null);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleDrawable(int i) {
-        qo1 qo1Var = this.S;
-        qo1Var.W.setImageDrawable(i != 0 ? ub.y(qo1Var.getContext(), i) : null);
+        hx1 hx1Var = this.e0;
+        hx1Var.i0.setImageDrawable(i != 0 ? yl0.u(hx1Var.getContext(), i) : null);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleEnabled(boolean z) {
-        qo1 qo1Var = this.S;
-        if (z && qo1Var.b0 != 1) {
-            qo1Var.g(1);
+        hx1 hx1Var = this.e0;
+        if (z && hx1Var.k0 != 1) {
+            hx1Var.h(1);
         } else if (z) {
-            qo1Var.getClass();
+            hx1Var.getClass();
         } else {
-            qo1Var.g(0);
+            hx1Var.h(0);
         }
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleTintList(ColorStateList colorStateList) {
-        qo1 qo1Var = this.S;
-        qo1Var.d0 = colorStateList;
-        yc4.j(qo1Var.Q, qo1Var.W, colorStateList, qo1Var.e0);
+        hx1 hx1Var = this.e0;
+        hx1Var.m0 = colorStateList;
+        f73.c(hx1Var.c0, hx1Var.i0, colorStateList, hx1Var.n0);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleTintMode(PorterDuff.Mode mode) {
-        qo1 qo1Var = this.S;
-        qo1Var.e0 = mode;
-        yc4.j(qo1Var.Q, qo1Var.W, qo1Var.d0, mode);
+        hx1 hx1Var = this.e0;
+        hx1Var.n0 = mode;
+        f73.c(hx1Var.c0, hx1Var.i0, hx1Var.m0, mode);
     }
 
     public void setPlaceholderText(CharSequence charSequence) {
-        if (this.n0 == null) {
+        if (this.w0 == null) {
             AppCompatTextView appCompatTextView = new AppCompatTextView(getContext(), null);
-            this.n0 = appCompatTextView;
-            appCompatTextView.setId(c95.textinput_placeholder);
-            this.n0.setImportantForAccessibility(1);
-            this.n0.setAccessibilityLiveRegion(1);
-            Fade fadeF = f();
-            this.q0 = fadeF;
-            fadeF.R = 67L;
-            this.r0 = f();
-            setPlaceholderTextAppearance(this.p0);
-            setPlaceholderTextColor(this.o0);
-            qn7.q(this.n0, new hk1(5));
+            this.w0 = appCompatTextView;
+            appCompatTextView.setId(ct5.textinput_placeholder);
+            this.w0.setImportantForAccessibility(1);
+            this.w0.setAccessibilityLiveRegion(1);
+            Fade f = f();
+            this.z0 = f;
+            f.Y = 67L;
+            this.A0 = f();
+            setPlaceholderTextAppearance(this.y0);
+            setPlaceholderTextColor(this.x0);
+            ni8.m(this.w0, new ls1(5));
         }
         if (TextUtils.isEmpty(charSequence)) {
             setPlaceholderTextEnabled(false);
         } else {
-            if (!this.m0) {
+            if (!this.v0) {
                 setPlaceholderTextEnabled(true);
             }
-            this.l0 = charSequence;
+            this.u0 = charSequence;
         }
-        EditText editText = this.U;
+        EditText editText = this.g0;
         x(editText != null ? editText.getText() : null);
     }
 
     public void setPlaceholderTextAppearance(int i) {
-        this.p0 = i;
-        AppCompatTextView appCompatTextView = this.n0;
+        this.y0 = i;
+        AppCompatTextView appCompatTextView = this.w0;
         if (appCompatTextView != null) {
-            b15.R(appCompatTextView, i);
+            appCompatTextView.setTextAppearance(i);
         }
     }
 
     public void setPlaceholderTextColor(ColorStateList colorStateList) {
-        if (this.o0 != colorStateList) {
-            this.o0 = colorStateList;
-            AppCompatTextView appCompatTextView = this.n0;
+        if (this.x0 != colorStateList) {
+            this.x0 = colorStateList;
+            AppCompatTextView appCompatTextView = this.w0;
             if (appCompatTextView == null || colorStateList == null) {
                 return;
             }
@@ -2625,32 +2665,32 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setPrefixText(CharSequence charSequence) {
-        wg6 wg6Var = this.R;
-        wg6Var.getClass();
-        wg6Var.S = TextUtils.isEmpty(charSequence) ? null : charSequence;
-        wg6Var.R.setText(charSequence);
-        wg6Var.e();
+        t47 t47Var = this.d0;
+        t47Var.getClass();
+        t47Var.e0 = TextUtils.isEmpty(charSequence) ? null : charSequence;
+        t47Var.d0.setText(charSequence);
+        t47Var.f();
     }
 
     public void setPrefixTextAppearance(int i) {
-        b15.R(this.R.R, i);
+        this.d0.d0.setTextAppearance(i);
     }
 
     public void setPrefixTextColor(ColorStateList colorStateList) {
-        this.R.R.setTextColor(colorStateList);
+        this.d0.d0.setTextColor(colorStateList);
     }
 
-    public void setShapeAppearanceModel(j86 j86Var) {
-        d04 d04Var = this.z0;
-        if (d04Var == null || d04Var.R.a == j86Var) {
+    public void setShapeAppearanceModel(xu6 xu6Var) {
+        bh4 bh4Var = this.I0;
+        if (bh4Var == null || bh4Var.k() == xu6Var) {
             return;
         }
-        this.F0 = j86Var;
+        this.O0 = xu6Var;
         c();
     }
 
     public void setStartIconCheckable(boolean z) {
-        this.R.T.setCheckable(z);
+        this.d0.f0.setCheckable(z);
     }
 
     public void setStartIconContentDescription(int i) {
@@ -2658,104 +2698,104 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setStartIconDrawable(int i) {
-        setStartIconDrawable(i != 0 ? ub.y(getContext(), i) : null);
+        setStartIconDrawable(i != 0 ? yl0.u(getContext(), i) : null);
     }
 
     public void setStartIconMinSize(int i) {
-        wg6 wg6Var = this.R;
+        t47 t47Var = this.d0;
         if (i < 0) {
-            wg6Var.getClass();
-            fn.r("startIconSize cannot be less than 0");
-        } else if (i != wg6Var.W) {
-            wg6Var.W = i;
-            CheckableImageButton checkableImageButton = wg6Var.T;
+            t47Var.getClass();
+            i60.p("startIconSize cannot be less than 0");
+        } else if (i != t47Var.i0) {
+            t47Var.i0 = i;
+            CheckableImageButton checkableImageButton = t47Var.f0;
             checkableImageButton.setMinimumWidth(i);
             checkableImageButton.setMinimumHeight(i);
         }
     }
 
     public void setStartIconOnClickListener(View.OnClickListener onClickListener) {
-        wg6 wg6Var = this.R;
-        CheckableImageButton checkableImageButton = wg6Var.T;
-        View.OnLongClickListener onLongClickListener = wg6Var.b0;
+        t47 t47Var = this.d0;
+        CheckableImageButton checkableImageButton = t47Var.f0;
+        View.OnLongClickListener onLongClickListener = t47Var.k0;
         checkableImageButton.setOnClickListener(onClickListener);
-        yc4.P0(checkableImageButton, onLongClickListener);
+        f73.V(checkableImageButton, onLongClickListener);
     }
 
     public void setStartIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
-        wg6 wg6Var = this.R;
-        wg6Var.b0 = onLongClickListener;
-        CheckableImageButton checkableImageButton = wg6Var.T;
+        t47 t47Var = this.d0;
+        t47Var.k0 = onLongClickListener;
+        CheckableImageButton checkableImageButton = t47Var.f0;
         checkableImageButton.setOnLongClickListener(onLongClickListener);
-        yc4.P0(checkableImageButton, onLongClickListener);
+        f73.V(checkableImageButton, onLongClickListener);
     }
 
     public void setStartIconScaleType(ImageView.ScaleType scaleType) {
-        wg6 wg6Var = this.R;
-        wg6Var.a0 = scaleType;
-        wg6Var.T.setScaleType(scaleType);
+        t47 t47Var = this.d0;
+        t47Var.j0 = scaleType;
+        t47Var.f0.setScaleType(scaleType);
     }
 
     public void setStartIconTintList(ColorStateList colorStateList) {
-        wg6 wg6Var = this.R;
-        if (wg6Var.U != colorStateList) {
-            wg6Var.U = colorStateList;
-            yc4.j(wg6Var.Q, wg6Var.T, colorStateList, wg6Var.V);
+        t47 t47Var = this.d0;
+        if (t47Var.g0 != colorStateList) {
+            t47Var.g0 = colorStateList;
+            f73.c(t47Var.c0, t47Var.f0, colorStateList, t47Var.h0);
         }
     }
 
     public void setStartIconTintMode(PorterDuff.Mode mode) {
-        wg6 wg6Var = this.R;
-        if (wg6Var.V != mode) {
-            wg6Var.V = mode;
-            yc4.j(wg6Var.Q, wg6Var.T, wg6Var.U, mode);
+        t47 t47Var = this.d0;
+        if (t47Var.h0 != mode) {
+            t47Var.h0 = mode;
+            f73.c(t47Var.c0, t47Var.f0, t47Var.g0, mode);
         }
     }
 
     public void setStartIconVisible(boolean z) {
-        this.R.c(z);
+        this.d0.d(z);
     }
 
     public void setSuffixText(CharSequence charSequence) {
-        qo1 qo1Var = this.S;
-        qo1Var.getClass();
-        qo1Var.i0 = TextUtils.isEmpty(charSequence) ? null : charSequence;
-        qo1Var.j0.setText(charSequence);
-        qo1Var.n();
+        hx1 hx1Var = this.e0;
+        hx1Var.getClass();
+        hx1Var.r0 = TextUtils.isEmpty(charSequence) ? null : charSequence;
+        hx1Var.s0.setText(charSequence);
+        hx1Var.o();
     }
 
     public void setSuffixTextAppearance(int i) {
-        b15.R(this.S.j0, i);
+        this.e0.s0.setTextAppearance(i);
     }
 
     public void setSuffixTextColor(ColorStateList colorStateList) {
-        this.S.j0.setTextColor(colorStateList);
+        this.e0.s0.setTextColor(colorStateList);
     }
 
-    public void setTextInputAccessibilityDelegate(c17 c17Var) {
-        EditText editText = this.U;
+    public void setTextInputAccessibilityDelegate(gt7 gt7Var) {
+        EditText editText = this.g0;
         if (editText != null) {
-            qn7.q(editText, c17Var);
+            ni8.m(editText, gt7Var);
         }
     }
 
     public void setTypeface(Typeface typeface) {
-        if (typeface != this.S0) {
-            this.S0 = typeface;
-            this.m1.n(typeface);
-            kp2 kp2Var = this.d0;
-            if (typeface != kp2Var.B) {
-                kp2Var.B = typeface;
-                AppCompatTextView appCompatTextView = kp2Var.r;
+        if (typeface != this.b1) {
+            this.b1 = typeface;
+            this.v1.n(typeface);
+            g43 g43Var = this.m0;
+            if (typeface != g43Var.B) {
+                g43Var.B = typeface;
+                AppCompatTextView appCompatTextView = g43Var.r;
                 if (appCompatTextView != null) {
                     appCompatTextView.setTypeface(typeface);
                 }
-                AppCompatTextView appCompatTextView2 = kp2Var.y;
+                AppCompatTextView appCompatTextView2 = g43Var.y;
                 if (appCompatTextView2 != null) {
                     appCompatTextView2.setTypeface(typeface);
                 }
             }
-            AppCompatTextView appCompatTextView3 = this.i0;
+            AppCompatTextView appCompatTextView3 = this.r0;
             if (appCompatTextView3 != null) {
                 appCompatTextView3.setTypeface(typeface);
             }
@@ -2765,40 +2805,40 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public final void t() {
         Drawable background;
         AppCompatTextView appCompatTextView;
-        EditText editText = this.U;
-        if (editText == null || this.I0 != 0 || (background = editText.getBackground()) == null) {
+        EditText editText = this.g0;
+        if (editText == null || this.R0 != 0 || (background = editText.getBackground()) == null) {
             return;
         }
-        int[] iArr = dk1.a;
-        Drawable drawableMutate = background.mutate();
+        int[] iArr = hs1.a;
+        Drawable mutate = background.mutate();
         if (o()) {
-            drawableMutate.setColorFilter(qn.c(getErrorCurrentTextColors(), PorterDuff.Mode.SRC_IN));
-        } else if (this.g0 && (appCompatTextView = this.i0) != null) {
-            drawableMutate.setColorFilter(qn.c(appCompatTextView.getCurrentTextColor(), PorterDuff.Mode.SRC_IN));
+            mutate.setColorFilter(ep.c(getErrorCurrentTextColors(), PorterDuff.Mode.SRC_IN));
+        } else if (this.p0 && (appCompatTextView = this.r0) != null) {
+            mutate.setColorFilter(ep.c(appCompatTextView.getCurrentTextColor(), PorterDuff.Mode.SRC_IN));
         } else {
-            yr.s(drawableMutate);
-            this.U.refreshDrawableState();
+            mutate.clearColorFilter();
+            this.g0.refreshDrawableState();
         }
     }
 
     public final void u() {
-        EditText editText = this.U;
-        if (editText == null || this.z0 == null) {
+        EditText editText = this.g0;
+        if (editText == null || this.I0 == null) {
             return;
         }
-        if ((this.C0 || editText.getBackground() == null) && this.I0 != 0) {
-            this.U.setBackground(getEditTextBoxBackground());
-            this.C0 = true;
+        if ((this.L0 || editText.getBackground() == null) && this.R0 != 0) {
+            this.g0.setBackground(getEditTextBoxBackground());
+            this.L0 = true;
         }
     }
 
     public final void v() {
-        if (this.I0 != 1) {
-            FrameLayout frameLayout = this.Q;
+        if (this.R0 != 1) {
+            FrameLayout frameLayout = this.c0;
             LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) frameLayout.getLayoutParams();
-            int iE = e();
-            if (iE != layoutParams.topMargin) {
-                layoutParams.topMargin = iE;
+            int e = e();
+            if (e != layoutParams.topMargin) {
+                layoutParams.topMargin = e;
                 frameLayout.requestLayout();
             }
         }
@@ -2807,119 +2847,119 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public final void w(boolean z, boolean z2) {
         ColorStateList colorStateList;
         AppCompatTextView appCompatTextView;
-        boolean zIsEnabled = isEnabled();
-        EditText editText = this.U;
+        boolean isEnabled = isEnabled();
+        EditText editText = this.g0;
         boolean z3 = (editText == null || TextUtils.isEmpty(editText.getText())) ? false : true;
-        EditText editText2 = this.U;
+        EditText editText2 = this.g0;
         boolean z4 = editText2 != null && editText2.hasFocus();
-        ColorStateList colorStateList2 = this.Z0;
-        im0 im0Var = this.m1;
+        ColorStateList colorStateList2 = this.i1;
+        ot0 ot0Var = this.v1;
         if (colorStateList2 != null) {
-            im0Var.k(colorStateList2);
+            ot0Var.k(colorStateList2);
         }
-        if (!zIsEnabled) {
-            ColorStateList colorStateList3 = this.Z0;
-            int colorForState = this.j1;
+        if (!isEnabled) {
+            ColorStateList colorStateList3 = this.i1;
+            int i = this.s1;
             if (colorStateList3 != null) {
-                colorForState = colorStateList3.getColorForState(new int[]{-16842910}, colorForState);
+                i = colorStateList3.getColorForState(new int[]{-16842910}, i);
             }
-            im0Var.k(ColorStateList.valueOf(colorForState));
+            ot0Var.k(ColorStateList.valueOf(i));
         } else if (o()) {
-            AppCompatTextView appCompatTextView2 = this.d0.r;
-            im0Var.k(appCompatTextView2 != null ? appCompatTextView2.getTextColors() : null);
-        } else if (this.g0 && (appCompatTextView = this.i0) != null) {
-            im0Var.k(appCompatTextView.getTextColors());
-        } else if (z4 && (colorStateList = this.a1) != null && im0Var.k != colorStateList) {
-            im0Var.k = colorStateList;
-            im0Var.j(false);
+            AppCompatTextView appCompatTextView2 = this.m0.r;
+            ot0Var.k(appCompatTextView2 != null ? appCompatTextView2.getTextColors() : null);
+        } else if (this.p0 && (appCompatTextView = this.r0) != null) {
+            ot0Var.k(appCompatTextView.getTextColors());
+        } else if (z4 && (colorStateList = this.j1) != null && ot0Var.k != colorStateList) {
+            ot0Var.k = colorStateList;
+            ot0Var.j(false);
         }
-        qo1 qo1Var = this.S;
-        wg6 wg6Var = this.R;
-        if (z3 || !this.n1 || (isEnabled() && z4)) {
-            if (z2 || this.l1) {
-                ValueAnimator valueAnimator = this.p1;
+        hx1 hx1Var = this.e0;
+        t47 t47Var = this.d0;
+        if (z3 || !this.w1 || (isEnabled() && z4)) {
+            if (z2 || this.u1) {
+                ValueAnimator valueAnimator = this.y1;
                 if (valueAnimator != null && valueAnimator.isRunning()) {
-                    this.p1.cancel();
+                    this.y1.cancel();
                 }
-                if (z && this.o1) {
+                if (z && this.x1) {
                     b(1.0f);
                 } else {
-                    im0Var.m(1.0f);
+                    ot0Var.m(1.0f);
                 }
-                this.l1 = false;
+                this.u1 = false;
                 if (g()) {
                     l();
                 }
-                EditText editText3 = this.U;
+                EditText editText3 = this.g0;
                 x(editText3 != null ? editText3.getText() : null);
-                wg6Var.c0 = false;
-                wg6Var.e();
-                qo1Var.k0 = false;
-                qo1Var.n();
+                t47Var.l0 = false;
+                t47Var.f();
+                hx1Var.t0 = false;
+                hx1Var.o();
                 return;
             }
             return;
         }
-        if (z2 || !this.l1) {
-            ValueAnimator valueAnimator2 = this.p1;
+        if (z2 || !this.u1) {
+            ValueAnimator valueAnimator2 = this.y1;
             if (valueAnimator2 != null && valueAnimator2.isRunning()) {
-                this.p1.cancel();
+                this.y1.cancel();
             }
-            if (z && this.o1) {
+            if (z && this.x1) {
                 b(0.0f);
             } else {
-                im0Var.m(0.0f);
+                ot0Var.m(0.0f);
             }
-            if (g() && !((qy0) this.z0).w0.s.isEmpty() && g()) {
-                ((qy0) this.z0).A(0.0f, 0.0f, 0.0f, 0.0f);
+            if (g() && !((a61) this.I0).F0.s.isEmpty() && g()) {
+                ((a61) this.I0).F(0.0f, 0.0f, 0.0f, 0.0f);
             }
-            this.l1 = true;
-            AppCompatTextView appCompatTextView3 = this.n0;
-            if (appCompatTextView3 != null && this.m0) {
+            this.u1 = true;
+            AppCompatTextView appCompatTextView3 = this.w0;
+            if (appCompatTextView3 != null && this.v0) {
                 appCompatTextView3.setText((CharSequence) null);
-                n87.a(this.Q, this.r0);
-                this.n0.setVisibility(4);
+                v08.a(this.c0, this.A0);
+                this.w0.setVisibility(4);
             }
-            wg6Var.c0 = true;
-            wg6Var.e();
-            qo1Var.k0 = true;
-            qo1Var.n();
+            t47Var.l0 = true;
+            t47Var.f();
+            hx1Var.t0 = true;
+            hx1Var.o();
         }
     }
 
     public final void x(Editable editable) {
-        ((j26) this.h0).getClass();
+        ((co6) this.q0).getClass();
         int length = editable != null ? editable.length() : 0;
-        FrameLayout frameLayout = this.Q;
-        if (length != 0 || this.l1) {
-            AppCompatTextView appCompatTextView = this.n0;
-            if (appCompatTextView == null || !this.m0) {
+        FrameLayout frameLayout = this.c0;
+        if (length != 0 || this.u1) {
+            AppCompatTextView appCompatTextView = this.w0;
+            if (appCompatTextView == null || !this.v0) {
                 return;
             }
             appCompatTextView.setText((CharSequence) null);
-            n87.a(frameLayout, this.r0);
-            this.n0.setVisibility(4);
+            v08.a(frameLayout, this.A0);
+            this.w0.setVisibility(4);
             return;
         }
-        if (this.n0 == null || !this.m0 || TextUtils.isEmpty(this.l0)) {
+        if (this.w0 == null || !this.v0 || TextUtils.isEmpty(this.u0)) {
             return;
         }
-        this.n0.setText(this.l0);
-        n87.a(frameLayout, this.q0);
-        this.n0.setVisibility(0);
-        this.n0.bringToFront();
+        this.w0.setText(this.u0);
+        v08.a(frameLayout, this.z0);
+        this.w0.setVisibility(0);
+        this.w0.bringToFront();
     }
 
     public final void y(boolean z, boolean z2) {
-        int defaultColor = this.e1.getDefaultColor();
-        int colorForState = this.e1.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, defaultColor);
-        int colorForState2 = this.e1.getColorForState(new int[]{R.attr.state_activated, R.attr.state_enabled}, defaultColor);
+        int defaultColor = this.n1.getDefaultColor();
+        int colorForState = this.n1.getColorForState(new int[]{R.attr.state_hovered, R.attr.state_enabled}, defaultColor);
+        int colorForState2 = this.n1.getColorForState(new int[]{R.attr.state_activated, R.attr.state_enabled}, defaultColor);
         if (z) {
-            this.N0 = colorForState2;
+            this.W0 = colorForState2;
         } else if (z2) {
-            this.N0 = colorForState;
+            this.W0 = colorForState;
         } else {
-            this.N0 = defaultColor;
+            this.W0 = defaultColor;
         }
     }
 
@@ -2927,135 +2967,136 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         AppCompatTextView appCompatTextView;
         EditText editText;
         EditText editText2;
-        if (this.z0 == null || this.I0 == 0) {
+        if (this.I0 == null || this.R0 == 0) {
             return;
         }
-        boolean z = false;
-        boolean z2 = isFocused() || ((editText2 = this.U) != null && editText2.hasFocus());
-        if (isHovered() || ((editText = this.U) != null && editText.isHovered())) {
-            z = true;
-        }
+        boolean z = isFocused() || ((editText2 = this.g0) != null && editText2.hasFocus());
+        boolean z2 = isHovered() || ((editText = this.g0) != null && editText.isHovered());
         if (!isEnabled()) {
-            this.N0 = this.j1;
+            this.W0 = this.s1;
         } else if (o()) {
-            if (this.e1 != null) {
-                y(z2, z);
+            if (this.n1 != null) {
+                y(z, z2);
             } else {
-                this.N0 = getErrorCurrentTextColors();
+                this.W0 = getErrorCurrentTextColors();
             }
-        } else if (!this.g0 || (appCompatTextView = this.i0) == null) {
-            if (z2) {
-                this.N0 = this.d1;
-            } else if (z) {
-                this.N0 = this.c1;
+        } else if (!this.p0 || (appCompatTextView = this.r0) == null) {
+            if (z) {
+                this.W0 = this.m1;
+            } else if (z2) {
+                this.W0 = this.l1;
             } else {
-                this.N0 = this.b1;
+                this.W0 = this.k1;
             }
-        } else if (this.e1 != null) {
-            y(z2, z);
+        } else if (this.n1 != null) {
+            y(z, z2);
         } else {
-            this.N0 = appCompatTextView.getCurrentTextColor();
+            this.W0 = appCompatTextView.getCurrentTextColor();
         }
         if (Build.VERSION.SDK_INT >= 29) {
             r();
         }
-        qo1 qo1Var = this.S;
-        TextInputLayout textInputLayout = qo1Var.Q;
-        CheckableImageButton checkableImageButton = qo1Var.W;
-        TextInputLayout textInputLayout2 = qo1Var.Q;
-        qo1Var.l();
-        yc4.L0(textInputLayout2, qo1Var.S, qo1Var.T);
-        yc4.L0(textInputLayout2, checkableImageButton, qo1Var.d0);
-        if (qo1Var.b() instanceof yk1) {
+        hx1 hx1Var = this.e0;
+        TextInputLayout textInputLayout = hx1Var.c0;
+        CheckableImageButton checkableImageButton = hx1Var.i0;
+        TextInputLayout textInputLayout2 = hx1Var.c0;
+        hx1Var.m();
+        f73.E(textInputLayout2, hx1Var.e0, hx1Var.f0);
+        f73.E(textInputLayout2, checkableImageButton, hx1Var.m0);
+        if (hx1Var.b() instanceof ct1) {
             if (!textInputLayout.o() || checkableImageButton.getDrawable() == null) {
-                yc4.j(textInputLayout, checkableImageButton, qo1Var.d0, qo1Var.e0);
+                f73.c(textInputLayout, checkableImageButton, hx1Var.m0, hx1Var.n0);
             } else {
-                Drawable drawableMutate = yr.e0(checkableImageButton.getDrawable()).mutate();
-                drawableMutate.setTint(textInputLayout.getErrorCurrentTextColors());
-                checkableImageButton.setImageDrawable(drawableMutate);
+                Drawable mutate = checkableImageButton.getDrawable().mutate();
+                mutate.setTint(textInputLayout.getErrorCurrentTextColors());
+                checkableImageButton.setImageDrawable(mutate);
             }
         }
-        wg6 wg6Var = this.R;
-        yc4.L0(wg6Var.Q, wg6Var.T, wg6Var.U);
-        if (this.I0 == 2) {
-            int i = this.K0;
-            if (z2 && isEnabled()) {
-                this.K0 = this.M0;
+        t47 t47Var = this.d0;
+        f73.E(t47Var.c0, t47Var.f0, t47Var.g0);
+        if (this.R0 == 2) {
+            int i = this.T0;
+            if (z && isEnabled()) {
+                this.T0 = this.V0;
             } else {
-                this.K0 = this.L0;
+                this.T0 = this.U0;
             }
-            if (this.K0 != i && g() && !this.l1) {
+            if (this.T0 != i && g() && !this.u1) {
                 if (g()) {
-                    ((qy0) this.z0).A(0.0f, 0.0f, 0.0f, 0.0f);
+                    ((a61) this.I0).F(0.0f, 0.0f, 0.0f, 0.0f);
                 }
                 l();
             }
         }
-        if (this.I0 == 1) {
+        if (this.R0 == 1) {
             if (!isEnabled()) {
-                this.O0 = this.g1;
-            } else if (z && !z2) {
-                this.O0 = this.i1;
-            } else if (z2) {
-                this.O0 = this.h1;
+                this.X0 = this.p1;
+            } else if (z2 && !z) {
+                this.X0 = this.r1;
+            } else if (z) {
+                this.X0 = this.q1;
             } else {
-                this.O0 = this.f1;
+                this.X0 = this.o1;
             }
         }
         c();
+        if (getEndIconMode() == 3) {
+            EditText editText3 = this.g0;
+            if ((editText3 instanceof AutoCompleteTextView) && editText3.getInputType() == 0) {
+                getEndIconView().setFocusable(false);
+                getEndIconView().setClickable(false);
+            } else {
+                getEndIconView().setFocusable(true);
+                getEndIconView().setClickable(true);
+            }
+        }
     }
 
     public void setHint(CharSequence charSequence) {
-        if (this.w0) {
+        if (this.F0) {
             setHintInternal(charSequence);
             sendAccessibilityEvent(2048);
         }
     }
 
     public void setStartIconContentDescription(CharSequence charSequence) {
-        CheckableImageButton checkableImageButton = this.R.T;
-        if (checkableImageButton.getContentDescription() != charSequence) {
-            checkableImageButton.setContentDescription(charSequence);
-        }
+        this.d0.b(charSequence);
     }
 
     public void setStartIconDrawable(Drawable drawable) {
-        this.R.b(drawable);
+        this.d0.c(drawable);
+    }
+
+    public void setEndIconContentDescription(CharSequence charSequence) {
+        this.e0.g(charSequence);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleContentDescription(CharSequence charSequence) {
-        this.S.W.setContentDescription(charSequence);
+        this.e0.i0.setContentDescription(charSequence);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleDrawable(Drawable drawable) {
-        this.S.W.setImageDrawable(drawable);
-    }
-
-    public void setEndIconContentDescription(CharSequence charSequence) {
-        CheckableImageButton checkableImageButton = this.S.W;
-        if (checkableImageButton.getContentDescription() != charSequence) {
-            checkableImageButton.setContentDescription(charSequence);
-        }
+        this.e0.i0.setImageDrawable(drawable);
     }
 
     public void setErrorIconDrawable(Drawable drawable) {
-        this.S.i(drawable);
+        this.e0.j(drawable);
     }
 
     public void setEndIconDrawable(Drawable drawable) {
-        qo1 qo1Var = this.S;
-        TextInputLayout textInputLayout = qo1Var.Q;
-        CheckableImageButton checkableImageButton = qo1Var.W;
+        hx1 hx1Var = this.e0;
+        TextInputLayout textInputLayout = hx1Var.c0;
+        CheckableImageButton checkableImageButton = hx1Var.i0;
         checkableImageButton.setImageDrawable(drawable);
         if (drawable != null) {
-            yc4.j(textInputLayout, checkableImageButton, qo1Var.d0, qo1Var.e0);
-            yc4.L0(textInputLayout, checkableImageButton, qo1Var.d0);
+            f73.c(textInputLayout, checkableImageButton, hx1Var.m0, hx1Var.n0);
+            f73.E(textInputLayout, checkableImageButton, hx1Var.m0);
         }
     }
 
     public TextInputLayout(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, v75.textInputStyle);
+        this(context, attributeSet, ur5.textInputStyle);
     }
 }

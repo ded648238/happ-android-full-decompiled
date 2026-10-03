@@ -1,28 +1,42 @@
-.class public abstract Lo75;
+.class public final Lo75;
 .super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static cardBackgroundColor:I = 0x7f0400bf
+# instance fields
+.field public final a:Ljava/lang/Object;
 
-.field public static cardCornerRadius:I = 0x7f0400c0
+.field public final b:Lr75;
 
-.field public static cardElevation:I = 0x7f0400c1
+.field public final c:I
 
-.field public static cardMaxElevation:I = 0x7f0400c4
 
-.field public static cardPreventCornerOverlap:I = 0x7f0400c5
+# direct methods
+.method public constructor <init>(Lo31;Lr75;I)V
+    .locals 0
 
-.field public static cardUseCompatPadding:I = 0x7f0400c7
+    .line 1
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-.field public static cardViewStyle:I = 0x7f0400c8
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static contentPadding:I = 0x7f0401c8
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Lo75;->a:Ljava/lang/Object;
 
-.field public static contentPaddingBottom:I = 0x7f0401c9
+    .line 8
+    .line 9
+    iput-object p2, p0, Lo75;->b:Lr75;
 
-.field public static contentPaddingLeft:I = 0x7f0401cb
+    .line 10
+    .line 11
+    iput p3, p0, Lo75;->c:I
 
-.field public static contentPaddingRight:I = 0x7f0401cc
-
-.field public static contentPaddingTop:I = 0x7f0401ce
+    .line 12
+    .line 13
+    return-void
+.end method

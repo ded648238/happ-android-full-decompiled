@@ -12,29 +12,29 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.Process;
 import dalvik.annotation.optimization.FastNative;
-import defpackage.fn;
-import defpackage.j26;
-import defpackage.kd0;
-import defpackage.lo4;
-import defpackage.uk;
-import defpackage.yr3;
-import defpackage.zr3;
+import defpackage.b94;
+import defpackage.c73;
+import defpackage.c94;
+import defpackage.co6;
+import defpackage.i60;
+import defpackage.jm;
+import defpackage.p65;
 import java.util.Arrays;
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import okhttp3.HttpUrl;
 import su.happ.proxyutility.HappApplication;
 import su.happ.proxyutility.domain.routing.entity.SubRoutingState;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class MMKV implements SharedPreferences, SharedPreferences.Editor {
     public static final EnumMap a;
     public static final EnumMap b;
-    public static final yr3[] c;
+    public static final b94[] c;
     public static final HashSet d;
     public static String e;
     public static boolean f;
@@ -42,23 +42,23 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
     private final long nativeHandle;
 
     static {
-        EnumMap enumMap = new EnumMap(zr3.class);
+        EnumMap enumMap = new EnumMap(c94.class);
         a = enumMap;
-        enumMap.put(zr3.Q, 0);
-        enumMap.put(zr3.R, 1);
-        EnumMap enumMap2 = new EnumMap(yr3.class);
+        enumMap.put((EnumMap) c94.X, (c94) 0);
+        enumMap.put((EnumMap) c94.Y, (c94) 1);
+        EnumMap enumMap2 = new EnumMap(b94.class);
         b = enumMap2;
-        yr3 yr3Var = yr3.Q;
-        enumMap2.put(yr3Var, 0);
-        yr3 yr3Var2 = yr3.R;
-        enumMap2.put(yr3Var2, 1);
-        yr3 yr3Var3 = yr3.S;
-        enumMap2.put(yr3Var3, 2);
-        yr3 yr3Var4 = yr3.T;
-        enumMap2.put(yr3Var4, 3);
-        yr3 yr3Var5 = yr3.U;
-        enumMap2.put(yr3Var5, 4);
-        c = new yr3[]{yr3Var, yr3Var2, yr3Var3, yr3Var4, yr3Var5};
+        b94 b94Var = b94.X;
+        enumMap2.put((EnumMap) b94Var, (b94) 0);
+        b94 b94Var2 = b94.Y;
+        enumMap2.put((EnumMap) b94Var2, (b94) 1);
+        b94 b94Var3 = b94.Z;
+        enumMap2.put((EnumMap) b94Var3, (b94) 2);
+        b94 b94Var4 = b94.c0;
+        enumMap2.put((EnumMap) b94Var4, (b94) 3);
+        b94 b94Var5 = b94.d0;
+        enumMap2.put((EnumMap) b94Var5, (b94) 4);
+        c = new b94[]{b94Var, b94Var2, b94Var3, b94Var4, b94Var5};
         d = new HashSet();
         e = null;
         f = true;
@@ -155,12 +155,6 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     private static native void jniInitialize(String str, String str2, int i, boolean z);
 
-    public static void l() {
-        synchronized (d) {
-            f = true;
-        }
-    }
-
     private static void mmkvLogImp(int i, String str, int i2, String str2, String str3) {
         c[i].ordinal();
     }
@@ -174,10 +168,10 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
         StringBuilder sb = new StringBuilder("Recover strategic for ");
         sb.append(str);
         sb.append(" is ");
-        zr3 zr3Var = zr3.Q;
-        sb.append(zr3Var);
-        w(yr3.R, sb.toString());
-        Integer num = (Integer) a.get(zr3Var);
+        c94 c94Var = c94.X;
+        sb.append(c94Var);
+        v(b94.Y, sb.toString());
+        Integer num = (Integer) a.get(c94Var);
         if (num == null) {
             return 0;
         }
@@ -188,10 +182,10 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
         StringBuilder sb = new StringBuilder("Recover strategic for ");
         sb.append(str);
         sb.append(" is ");
-        zr3 zr3Var = zr3.Q;
-        sb.append(zr3Var);
-        w(yr3.R, sb.toString());
-        Integer num = (Integer) a.get(zr3Var);
+        c94 c94Var = c94.X;
+        sb.append(c94Var);
+        v(b94.Y, sb.toString());
+        Integer num = (Integer) a.get(c94Var);
         if (num == null) {
             return 0;
         }
@@ -199,6 +193,23 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
     }
 
     public static native int pageSize();
+
+    public static void r(HappApplication happApplication) {
+        String str = happApplication.getFilesDir().getAbsolutePath() + "/mmkv";
+        if ((happApplication.getApplicationInfo().flags & 2) == 0) {
+            synchronized (d) {
+                f = false;
+            }
+        } else {
+            synchronized (d) {
+                f = true;
+            }
+        }
+        String absolutePath = happApplication.getCacheDir().getAbsolutePath();
+        System.loadLibrary("mmkv");
+        jniInitialize(str, absolutePath, 1, false);
+        e = str;
+    }
 
     public static native boolean removeStorage(String str, String str2);
 
@@ -208,19 +219,112 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     public static native boolean restoreOneMMKVFromDirectory(String str, String str2, String str3);
 
-    public static void s(HappApplication happApplication) {
-        String str = happApplication.getFilesDir().getAbsolutePath() + "/mmkv";
-        if ((happApplication.getApplicationInfo().flags & 2) == 0) {
-            synchronized (d) {
-                f = false;
-            }
-        } else {
-            l();
+    /* JADX WARN: Removed duplicated region for block: B:23:0x007f  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static MMKV s(Context context, String str, int i, int i2, String str2) {
+        String str3;
+        MMKV mmkv;
+        int i3;
+        String str4;
+        ComponentName componentName;
+        PackageManager packageManager;
+        ProviderInfo providerInfo;
+        if (e == null) {
+            i60.g("You should Call MMKV.initialize() first.");
+            return null;
         }
-        String absolutePath = happApplication.getCacheDir().getAbsolutePath();
-        System.loadLibrary("mmkv");
-        jniInitialize(str, absolutePath, 1, false);
-        e = str;
+        int myPid = Process.myPid();
+        Uri uri = MMKVContentProvider.X;
+        if (myPid == Process.myPid()) {
+            str3 = jm.p(context);
+        } else {
+            ActivityManager activityManager = (ActivityManager) context.getSystemService("activity");
+            if (activityManager != null) {
+                for (ActivityManager.RunningAppProcessInfo runningAppProcessInfo : activityManager.getRunningAppProcesses()) {
+                    if (runningAppProcessInfo.pid == myPid) {
+                        str3 = runningAppProcessInfo.processName;
+                        break;
+                    }
+                }
+            }
+            str3 = HttpUrl.FRAGMENT_ENCODE_SET;
+        }
+        b94 b94Var = b94.c0;
+        if (str3 == null || str3.length() == 0) {
+            v(b94Var, "process name detect fail, try again later");
+            i60.g("process name detect fail, try again later");
+            return null;
+        }
+        boolean contains = str3.contains(":");
+        b94 b94Var2 = b94.Y;
+        if (contains) {
+            Uri uri2 = MMKVContentProvider.X;
+            if (uri2 == null) {
+                if (context != null) {
+                    try {
+                        componentName = new ComponentName(context, MMKVContentProvider.class.getName());
+                        packageManager = context.getPackageManager();
+                    } catch (Exception e2) {
+                        e2.printStackTrace();
+                    }
+                    if (packageManager != null && (providerInfo = packageManager.getProviderInfo(componentName, 0)) != null) {
+                        str4 = providerInfo.authority;
+                        if (str4 != null) {
+                            uri2 = Uri.parse("content://".concat(str4));
+                            MMKVContentProvider.X = uri2;
+                        }
+                    }
+                    str4 = null;
+                    if (str4 != null) {
+                    }
+                }
+                uri2 = null;
+            }
+            if (uri2 == null) {
+                v(b94Var, "MMKVContentProvider has invalid authority");
+                i60.g("MMKVContentProvider has invalid authority");
+                return null;
+            }
+            v(b94Var2, "getting parcelable mmkv in process, Uri = " + uri2);
+            Bundle bundle = new Bundle();
+            bundle.putInt("KEY_SIZE", i);
+            bundle.putInt("KEY_MODE", i2);
+            if (str2 != null) {
+                bundle.putString("KEY_CRYPT", str2);
+            }
+            Bundle call = context.getContentResolver().call(uri2, "mmkvFromAshmemID", str, bundle);
+            if (call != null) {
+                call.setClassLoader(p65.class.getClassLoader());
+                p65 p65Var = (p65) call.getParcelable("KEY");
+                if (p65Var != null) {
+                    int i4 = p65Var.Y;
+                    if (i4 < 0 || (i3 = p65Var.Z) < 0) {
+                        mmkv = null;
+                    } else {
+                        String str5 = p65Var.X;
+                        long mMKVWithAshmemFD = getMMKVWithAshmemFD(str5, i4, i3, p65Var.c0);
+                        if (mMKVWithAshmemFD == 0) {
+                            co6.i(c73.j("Fail to create an ashmem MMKV instance [", str5, "] in JNI"));
+                            return null;
+                        }
+                        mmkv = new MMKV(mMKVWithAshmemFD);
+                    }
+                    if (mmkv != null) {
+                        v(b94Var2, mmkv.mmapID() + " fd = " + mmkv.ashmemFD() + ", meta fd = " + mmkv.ashmemMetaFD());
+                        return mmkv;
+                    }
+                }
+            }
+        }
+        v(b94Var2, "getting mmkv in main process");
+        long mMKVWithIDAndSize = getMMKVWithIDAndSize(str, i, i2 | 8, str2);
+        if (mMKVWithIDAndSize != 0) {
+            return new MMKV(mMKVWithIDAndSize);
+        }
+        i60.g(c73.j("Fail to create an Ashmem MMKV instance [", str, "]"));
+        return null;
     }
 
     private static native void setCallbackHandler(boolean z, boolean z2);
@@ -231,124 +335,14 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     private native void sync(boolean z);
 
-    /* JADX WARN: Code duplicated, block: B:26:0x005a  */
-    public static MMKV t(Context context, String str, int i, int i2, String str2) {
-        String strK;
-        MMKV mmkv;
-        int i3;
-        String str3;
-        ProviderInfo providerInfo;
+    public static MMKV t(String str, String str2) {
         if (e == null) {
-            fn.s("You should Call MMKV.initialize() first.");
-            return null;
-        }
-        int iMyPid = Process.myPid();
-        Uri uri = MMKVContentProvider.Q;
-        if (iMyPid != Process.myPid()) {
-            ActivityManager activityManager = (ActivityManager) context.getSystemService("activity");
-            if (activityManager == null) {
-                strK = "";
-                break;
-            }
-            Iterator<ActivityManager.RunningAppProcessInfo> it = activityManager.getRunningAppProcesses().iterator();
-            while (true) {
-                if (!it.hasNext()) {
-                    strK = "";
-                    break;
-                }
-                ActivityManager.RunningAppProcessInfo next = it.next();
-                if (next.pid == iMyPid) {
-                    strK = next.processName;
-                    break;
-                }
-            }
-        } else {
-            strK = uk.k(context);
-        }
-        yr3 yr3Var = yr3.T;
-        if (strK == null || strK.length() == 0) {
-            w(yr3Var, "process name detect fail, try again later");
-            fn.s("process name detect fail, try again later");
-            return null;
-        }
-        boolean zContains = strK.contains(":");
-        yr3 yr3Var2 = yr3.R;
-        if (zContains) {
-            Uri uri2 = MMKVContentProvider.Q;
-            if (uri2 == null) {
-                if (context == null) {
-                    uri2 = null;
-                } else {
-                    try {
-                        ComponentName componentName = new ComponentName(context, MMKVContentProvider.class.getName());
-                        PackageManager packageManager = context.getPackageManager();
-                        str3 = (packageManager == null || (providerInfo = packageManager.getProviderInfo(componentName, 0)) == null) ? null : providerInfo.authority;
-                    } catch (Exception e2) {
-                        e2.printStackTrace();
-                    }
-                    if (str3 == null) {
-                        uri2 = null;
-                    } else {
-                        uri2 = Uri.parse("content://".concat(str3));
-                        MMKVContentProvider.Q = uri2;
-                    }
-                }
-            }
-            if (uri2 == null) {
-                w(yr3Var, "MMKVContentProvider has invalid authority");
-                fn.s("MMKVContentProvider has invalid authority");
-                return null;
-            }
-            w(yr3Var2, "getting parcelable mmkv in process, Uri = " + uri2);
-            Bundle bundle = new Bundle();
-            bundle.putInt("KEY_SIZE", i);
-            bundle.putInt("KEY_MODE", i2);
-            if (str2 != null) {
-                bundle.putString("KEY_CRYPT", str2);
-            }
-            Bundle bundleCall = context.getContentResolver().call(uri2, "mmkvFromAshmemID", str, bundle);
-            if (bundleCall != null) {
-                bundleCall.setClassLoader(lo4.class.getClassLoader());
-                lo4 lo4Var = (lo4) bundleCall.getParcelable("KEY");
-                if (lo4Var != null) {
-                    int i4 = lo4Var.R;
-                    if (i4 < 0 || (i3 = lo4Var.S) < 0) {
-                        mmkv = null;
-                    } else {
-                        String str4 = lo4Var.Q;
-                        long mMKVWithAshmemFD = getMMKVWithAshmemFD(str4, i4, i3, lo4Var.T);
-                        if (mMKVWithAshmemFD == 0) {
-                            j26.j(kd0.E("Fail to create an ashmem MMKV instance [", str4, "] in JNI"));
-                            return null;
-                        }
-                        mmkv = new MMKV(mMKVWithAshmemFD);
-                    }
-                    if (mmkv != null) {
-                        w(yr3Var2, mmkv.mmapID() + " fd = " + mmkv.ashmemFD() + ", meta fd = " + mmkv.ashmemMetaFD());
-                        return mmkv;
-                    }
-                }
-            }
-        }
-        w(yr3Var2, "getting mmkv in main process");
-        long mMKVWithIDAndSize = getMMKVWithIDAndSize(str, i, i2 | 8, str2);
-        if (mMKVWithIDAndSize != 0) {
-            return new MMKV(mMKVWithIDAndSize);
-        }
-        fn.s(kd0.E("Fail to create an Ashmem MMKV instance [", str, "]"));
-        return null;
-    }
-
-    private native long totalSize(long j);
-
-    public static MMKV u(String str, String str2) {
-        if (e == null) {
-            fn.s("You should Call MMKV.initialize() first.");
+            i60.g("You should Call MMKV.initialize() first.");
             return null;
         }
         long mMKVWithID = getMMKVWithID(str, 2, str2, null, 0L);
         if (mMKVWithID == 0) {
-            j26.j(kd0.E("Fail to create an MMKV instance [", str, "] in JNI"));
+            co6.i(c73.j("Fail to create an MMKV instance [", str, "] in JNI"));
             return null;
         }
         if (!f) {
@@ -370,20 +364,21 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
         return new MMKV(mMKVWithID);
     }
 
-    public static void v() {
+    private native long totalSize(long j);
+
+    public static void u() {
         setLogLevel(4);
+    }
+
+    public static void v(b94 b94Var, String str) {
+        StackTraceElement stackTraceElement = Thread.currentThread().getStackTrace()[r0.length - 1];
+        Integer num = (Integer) b.get(b94Var);
+        mmkvLogImp(num == null ? 0 : num.intValue(), stackTraceElement.getFileName(), stackTraceElement.getLineNumber(), stackTraceElement.getMethodName(), str);
     }
 
     private native int valueSize(long j, String str, boolean z);
 
     public static native String version();
-
-    public static void w(yr3 yr3Var, String str) {
-        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-        StackTraceElement stackTraceElement = stackTrace[stackTrace.length - 1];
-        Integer num = (Integer) b.get(yr3Var);
-        mmkvLogImp(num == null ? 0 : num.intValue(), stackTraceElement.getFileName(), stackTraceElement.getLineNumber(), stackTraceElement.getMethodName(), str);
-    }
 
     private native int writeValueToNB(long j, String str, long j2, int i);
 
@@ -498,41 +493,35 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     public final Parcelable h(String str) {
         Parcelable.Creator creator;
-        byte[] bArrDecodeBytes = decodeBytes(this.nativeHandle, str);
-        if (bArrDecodeBytes == null) {
+        byte[] decodeBytes = decodeBytes(this.nativeHandle, str);
+        if (decodeBytes == null) {
             return null;
         }
-        Parcel parcelObtain = Parcel.obtain();
-        parcelObtain.unmarshall(bArrDecodeBytes, 0, bArrDecodeBytes.length);
-        parcelObtain.setDataPosition(0);
+        Parcel obtain = Parcel.obtain();
+        obtain.unmarshall(decodeBytes, 0, decodeBytes.length);
+        obtain.setDataPosition(0);
         try {
-            try {
-                String string = SubRoutingState.class.toString();
-                HashMap map = g;
-                synchronized (map) {
-                    try {
-                        creator = (Parcelable.Creator) map.get(string);
-                        if (creator == null && (creator = (Parcelable.Creator) SubRoutingState.class.getField("CREATOR").get(null)) != null) {
-                            map.put(string, creator);
-                        }
-                    } catch (Throwable th) {
-                        throw th;
+            String cls = SubRoutingState.class.toString();
+            HashMap hashMap = g;
+            synchronized (hashMap) {
+                try {
+                    creator = (Parcelable.Creator) hashMap.get(cls);
+                    if (creator == null && (creator = (Parcelable.Creator) SubRoutingState.class.getField("CREATOR").get(null)) != null) {
+                        hashMap.put(cls, creator);
                     }
+                } catch (Throwable th) {
+                    throw th;
                 }
-                if (creator != null) {
-                    Parcelable parcelable = (Parcelable) creator.createFromParcel(parcelObtain);
-                    parcelObtain.recycle();
-                    return parcelable;
-                }
-                throw new Exception("Parcelable protocol requires a non-null static Parcelable.Creator object called CREATOR on class " + string);
-            } catch (Exception e2) {
-                w(yr3.T, e2.toString());
-                parcelObtain.recycle();
-                return null;
             }
-        } catch (Throwable th2) {
-            parcelObtain.recycle();
-            throw th2;
+            if (creator != null) {
+                return (Parcelable) creator.createFromParcel(obtain);
+            }
+            throw new Exception("Parcelable protocol requires a non-null static Parcelable.Creator object called CREATOR on class " + cls);
+        } catch (Exception e2) {
+            v(b94.c0, e2.toString());
+            return null;
+        } finally {
+            obtain.recycle();
         }
     }
 
@@ -545,11 +534,11 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
     }
 
     public final Set k(String str, Set set) {
-        String[] strArrDecodeStringSet = decodeStringSet(this.nativeHandle, str);
-        if (strArrDecodeStringSet != null) {
+        String[] decodeStringSet = decodeStringSet(this.nativeHandle, str);
+        if (decodeStringSet != null) {
             try {
                 Set set2 = (Set) HashSet.class.newInstance();
-                set2.addAll(Arrays.asList(strArrDecodeStringSet));
+                set2.addAll(Arrays.asList(decodeStringSet));
                 return set2;
             } catch (IllegalAccessException | InstantiationException unused) {
             }
@@ -557,28 +546,32 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
         return set;
     }
 
+    public final void l(int i, String str) {
+        encodeInt(this.nativeHandle, str, i);
+    }
+
     public native void lock();
 
-    public final void m(int i, String str) {
-        encodeInt(this.nativeHandle, str, i);
+    public final void m(long j, String str) {
+        encodeLong(this.nativeHandle, str, j);
     }
 
     public native String mmapID();
 
-    public final void n(long j, String str) {
-        encodeLong(this.nativeHandle, str, j);
-    }
-
-    public final void o(String str, Set set) {
+    public final void n(String str, Set set) {
         encodeSet(this.nativeHandle, str, set == null ? null : (String[]) set.toArray(new String[0]));
     }
 
-    public final void p(String str, SubRoutingState subRoutingState) {
-        Parcel parcelObtain = Parcel.obtain();
-        subRoutingState.writeToParcel(parcelObtain, 0);
-        byte[] bArrMarshall = parcelObtain.marshall();
-        parcelObtain.recycle();
-        encodeBytes(this.nativeHandle, str, bArrMarshall);
+    public final void o(String str, SubRoutingState subRoutingState) {
+        Parcel obtain = Parcel.obtain();
+        subRoutingState.writeToParcel(obtain, 0);
+        byte[] marshall = obtain.marshall();
+        obtain.recycle();
+        encodeBytes(this.nativeHandle, str, marshall);
+    }
+
+    public final void p(String str, boolean z) {
+        encodeBool(this.nativeHandle, str, z);
     }
 
     @Override // android.content.SharedPreferences.Editor
@@ -613,16 +606,12 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     @Override // android.content.SharedPreferences.Editor
     public final SharedPreferences.Editor putStringSet(String str, Set set) {
-        o(str, set);
+        n(str, set);
         return this;
     }
 
     public final boolean q(String str, String str2) {
         return encodeString(this.nativeHandle, str, str2);
-    }
-
-    public final boolean r(String str, boolean z) {
-        return encodeBool(this.nativeHandle, str, z);
     }
 
     public native boolean reKey(String str);
@@ -649,6 +638,10 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
     @Override // android.content.SharedPreferences
     public final void unregisterOnSharedPreferenceChangeListener(SharedPreferences.OnSharedPreferenceChangeListener onSharedPreferenceChangeListener) {
         throw new UnsupportedOperationException("Intentionally Not implement in MMKV");
+    }
+
+    public final void w() {
+        sync(true);
     }
 
     @Override // android.content.SharedPreferences

@@ -1,27 +1,15 @@
 .class public final Lq32;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lo32;
+.super Lus7;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:[F
-
-.field public final b:[F
+.field public final synthetic h0:Landroidx/leanback/transition/FadeAndShortSlide;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Landroidx/leanback/transition/FadeAndShortSlide;)V
     .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public constructor <init>([F[F)V
-    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,313 +17,139 @@
     .line 2
     .line 3
     .line 4
-    array-length v0, p1
+    iput-object p1, p0, Lq32;->h0:Landroidx/leanback/transition/FadeAndShortSlide;
 
     .line 5
-    array-length v1, p2
-
     .line 6
-    if-ne v0, v1, :cond_0
-
-    .line 7
-    .line 8
-    array-length v0, p1
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    iput-object p1, p0, Lq32;->a:[F
-
-    .line 12
-    .line 13
-    iput-object p2, p0, Lq32;->b:[F
-
-    .line 14
-    .line 15
     return-void
-
-    .line 16
-    :cond_0
-    const-string p1, "Array lengths must match and be nonzero"
-
-    .line 17
-    .line 18
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
-
-    .line 19
-    .line 20
-    .line 21
-    const/4 p1, 0x0
-
-    .line 22
-    throw p1
 .end method
 
 
 # virtual methods
-.method public final a(F)F
-    .locals 2
+.method public final K(Landroidx/leanback/transition/FadeAndShortSlide;Landroid/view/ViewGroup;Landroid/view/View;[I)F
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lq32;->b:[F
+    const/4 v0, 0x1
 
     .line 2
+    aget v1, p4, v0
+
     .line 3
-    iget-object v1, p0, Lq32;->a:[F
-
     .line 4
-    .line 5
-    invoke-static {p1, v0, v1}, Lir0;->b(F[F[F)F
+    invoke-virtual {p3}, Landroid/view/View;->getHeight()I
 
+    .line 5
     .line 6
     .line 7
+    move-result v2
+
     .line 8
-    move-result p1
+    div-int/lit8 v2, v2, 0x2
 
     .line 9
-    return p1
-.end method
+    .line 10
+    add-int/2addr v2, v1
 
-.method public final b(F)F
-    .locals 2
+    .line 11
+    invoke-virtual {p2, p4}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 1
-    iget-object v0, p0, Lq32;->a:[F
+    .line 12
+    .line 13
+    .line 14
+    iget-object p0, p0, Lq32;->h0:Landroidx/leanback/transition/FadeAndShortSlide;
 
-    .line 2
-    .line 3
-    iget-object v1, p0, Lq32;->b:[F
+    .line 15
+    .line 16
+    invoke-virtual {p0}, Landroid/transition/Transition;->getEpicenter()Landroid/graphics/Rect;
 
-    .line 4
-    .line 5
-    invoke-static {p1, v0, v1}, Lir0;->b(F[F[F)F
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
 
-    .line 6
-    .line 7
-    .line 8
-    move-result p1
+    .line 20
+    if-nez p0, :cond_0
 
-    .line 9
-    return p1
-.end method
+    .line 21
+    .line 22
+    aget p0, p4, v0
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
+    .line 23
+    .line 24
+    invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
-    .line 1
-    if-ne p0, p1, :cond_0
+    .line 25
+    .line 26
+    .line 27
+    move-result p4
 
-    .line 2
-    .line 3
+    .line 28
+    div-int/lit8 p4, p4, 0x2
+
+    .line 29
+    .line 30
+    add-int/2addr p4, p0
+
+    .line 31
     goto :goto_0
 
-    .line 4
+    .line 32
     :cond_0
-    if-nez p1, :cond_1
-
-    .line 5
-    .line 6
-    goto :goto_1
-
-    .line 7
-    :cond_1
-    instance-of v0, p1, Lq32;
-
-    .line 8
-    .line 9
-    if-nez v0, :cond_2
-
-    .line 10
-    .line 11
-    goto :goto_1
-
-    .line 12
-    :cond_2
-    check-cast p1, Lq32;
-
-    .line 13
-    .line 14
-    iget-object v0, p1, Lq32;->a:[F
-
-    .line 15
-    .line 16
-    iget-object v1, p0, Lq32;->a:[F
-
-    .line 17
-    .line 18
-    invoke-static {v1, v0}, Ljava/util/Arrays;->equals([F[F)Z
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v0
-
-    .line 22
-    if-eqz v0, :cond_3
-
-    .line 23
-    .line 24
-    iget-object v0, p0, Lq32;->b:[F
-
-    .line 25
-    .line 26
-    iget-object p1, p1, Lq32;->b:[F
-
-    .line 27
-    .line 28
-    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([F[F)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-eqz p1, :cond_3
+    invoke-virtual {p0}, Landroid/graphics/Rect;->centerY()I
 
     .line 33
     .line 34
+    .line 35
+    move-result p4
+
+    .line 36
     :goto_0
-    const/4 p1, 0x1
-
-    .line 35
-    return p1
-
-    .line 36
-    :cond_3
-    :goto_1
-    const/4 p1, 0x0
+    if-ge v2, p4, :cond_1
 
     .line 37
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lq32;->a:[F
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([F)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-object v1, p0, Lq32;->b:[F
-
-    .line 10
-    .line 11
-    invoke-static {v1}, Ljava/util/Arrays;->hashCode([F)I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "FontScaleConverter{fromSpValues="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lq32;->a:[F
-
-    .line 9
-    .line 10
-    invoke-static {v1}, Ljava/util/Arrays;->toString([F)Ljava/lang/String;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v1
-
-    .line 14
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 15
-    .line 16
-    .line 17
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 18
-    .line 19
-    .line 20
-    const-string v1, ", toDpValues="
-
-    .line 21
-    .line 22
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 23
-    .line 24
-    .line 25
-    iget-object v1, p0, Lq32;->b:[F
-
-    .line 26
-    .line 27
-    invoke-static {v1}, Ljava/util/Arrays;->toString([F)Ljava/lang/String;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v1
-
-    .line 31
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 32
-    .line 33
-    .line 34
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 35
-    .line 36
-    .line 37
-    const/16 v1, 0x7d
-
     .line 38
-    .line 39
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p3}, Landroid/view/View;->getTranslationY()F
 
+    .line 39
     .line 40
     .line 41
+    move-result p0
+
     .line 42
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, p2}, Landroidx/leanback/transition/FadeAndShortSlide;->b(Landroid/view/ViewGroup;)F
 
     .line 43
     .line 44
     .line 45
-    move-result-object v0
+    move-result p1
 
     .line 46
-    return-object v0
+    sub-float/2addr p0, p1
+
+    .line 47
+    return p0
+
+    .line 48
+    :cond_1
+    invoke-virtual {p3}, Landroid/view/View;->getTranslationY()F
+
+    .line 49
+    .line 50
+    .line 51
+    move-result p0
+
+    .line 52
+    invoke-virtual {p1, p2}, Landroidx/leanback/transition/FadeAndShortSlide;->b(Landroid/view/ViewGroup;)F
+
+    .line 53
+    .line 54
+    .line 55
+    move-result p1
+
+    .line 56
+    add-float/2addr p1, p0
+
+    .line 57
+    return p1
 .end method

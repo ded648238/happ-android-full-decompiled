@@ -15,216 +15,217 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import defpackage.ba5;
-import defpackage.c85;
-import defpackage.e16;
-import defpackage.f16;
-import defpackage.fn;
-import defpackage.g16;
-import defpackage.h16;
-import defpackage.hf6;
-import defpackage.i16;
-import defpackage.i85;
-import defpackage.ir0;
-import defpackage.l16;
-import defpackage.m4;
-import defpackage.p95;
-import defpackage.q95;
-import defpackage.uq2;
-import defpackage.v85;
-import defpackage.w95;
+import defpackage.a63;
+import defpackage.bn6;
+import defpackage.bs5;
+import defpackage.bu5;
+import defpackage.d37;
+import defpackage.ep4;
+import defpackage.hs5;
+import defpackage.i60;
+import defpackage.pt5;
+import defpackage.qt5;
+import defpackage.u4;
+import defpackage.um6;
+import defpackage.us5;
+import defpackage.vm6;
+import defpackage.wm6;
+import defpackage.wt5;
+import defpackage.xm6;
+import defpackage.ym6;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class SearchBar extends RelativeLayout {
-    public static final /* synthetic */ int q0 = 0;
-    public SearchEditText Q;
-    public SpeechOrbView R;
-    public ImageView S;
-    public String T;
-    public String U;
-    public String V;
-    public Drawable W;
-    public final Handler a0;
-    public final InputMethodManager b0;
-    public boolean c0;
-    public Drawable d0;
-    public final int e0;
-    public final int f0;
-    public final int g0;
-    public final int h0;
-    public final int i0;
-    public final int j0;
-    public SpeechRecognizer k0;
+    public static final /* synthetic */ int z0 = 0;
+    public SearchEditText c0;
+    public SpeechOrbView d0;
+    public ImageView e0;
+    public String f0;
+    public String g0;
+    public String h0;
+    public Drawable i0;
+    public final Handler j0;
+    public final InputMethodManager k0;
     public boolean l0;
-    public SoundPool m0;
-    public final SparseIntArray n0;
-    public boolean o0;
-    public final Context p0;
+    public Drawable m0;
+    public final int n0;
+    public final int o0;
+    public final int p0;
+    public final int q0;
+    public final int r0;
+    public final int s0;
+    public SpeechRecognizer t0;
+    public boolean u0;
+    public SoundPool v0;
+    public final SparseIntArray w0;
+    public boolean x0;
+    public final Context y0;
 
     public SearchBar(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.a0 = new Handler();
-        this.c0 = false;
-        this.n0 = new SparseIntArray();
-        this.o0 = false;
-        this.p0 = context;
+        this.j0 = new Handler();
+        this.l0 = false;
+        this.w0 = new SparseIntArray();
+        this.x0 = false;
+        this.y0 = context;
         Resources resources = getResources();
-        LayoutInflater.from(getContext()).inflate(q95.lb_search_bar, (ViewGroup) this, true);
-        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, getResources().getDimensionPixelSize(i85.lb_search_bar_height));
+        LayoutInflater.from(getContext()).inflate(qt5.lb_search_bar, (ViewGroup) this, true);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, getResources().getDimensionPixelSize(hs5.lb_search_bar_height));
         layoutParams.addRule(10, -1);
         setLayoutParams(layoutParams);
         setBackgroundColor(0);
         setClipChildren(false);
-        this.T = "";
-        this.b0 = (InputMethodManager) context.getSystemService("input_method");
-        this.f0 = resources.getColor(c85.lb_search_bar_text_speech_mode);
-        this.e0 = resources.getColor(c85.lb_search_bar_text);
-        this.j0 = resources.getInteger(p95.lb_search_bar_speech_mode_background_alpha);
-        this.i0 = resources.getInteger(p95.lb_search_bar_text_mode_background_alpha);
-        this.h0 = resources.getColor(c85.lb_search_bar_hint_speech_mode);
-        this.g0 = resources.getColor(c85.lb_search_bar_hint);
+        this.f0 = HttpUrl.FRAGMENT_ENCODE_SET;
+        this.k0 = (InputMethodManager) context.getSystemService("input_method");
+        this.o0 = resources.getColor(bs5.lb_search_bar_text_speech_mode);
+        this.n0 = resources.getColor(bs5.lb_search_bar_text);
+        this.s0 = resources.getInteger(pt5.lb_search_bar_speech_mode_background_alpha);
+        this.r0 = resources.getInteger(pt5.lb_search_bar_text_mode_background_alpha);
+        this.q0 = resources.getColor(bs5.lb_search_bar_hint_speech_mode);
+        this.p0 = resources.getColor(bs5.lb_search_bar_hint);
     }
 
     public final void a() {
-        if (this.o0) {
+        if (this.x0) {
             return;
         }
         if (!hasFocus()) {
             requestFocus();
         }
-        if (this.k0 == null) {
+        if (this.t0 == null) {
             return;
         }
         if (getContext().checkCallingOrSelfPermission("android.permission.RECORD_AUDIO") != 0) {
-            fn.s("android.permission.RECORD_AUDIO required for search");
+            i60.g("android.permission.RECORD_AUDIO required for search");
             return;
         }
-        this.o0 = true;
-        this.Q.setText("");
+        this.x0 = true;
+        this.c0.setText(HttpUrl.FRAGMENT_ENCODE_SET);
         Intent intent = new Intent("android.speech.action.RECOGNIZE_SPEECH");
         intent.putExtra("android.speech.extra.LANGUAGE_MODEL", "free_form");
         intent.putExtra("android.speech.extra.PARTIAL_RESULTS", true);
-        this.k0.setRecognitionListener(new a(this));
-        this.l0 = true;
-        this.k0.startListening(intent);
+        this.t0.setRecognitionListener(new a(this));
+        this.u0 = true;
+        this.t0.startListening(intent);
     }
 
     public final void b() {
-        if (this.o0) {
-            this.Q.setText(this.T);
-            this.Q.setHint(this.U);
-            this.o0 = false;
-            if (this.k0 == null) {
+        if (this.x0) {
+            this.c0.setText(this.f0);
+            this.c0.setHint(this.g0);
+            this.x0 = false;
+            if (this.t0 == null) {
                 return;
             }
-            this.R.c();
-            if (this.l0) {
-                this.k0.cancel();
-                this.l0 = false;
+            this.d0.c();
+            if (this.u0) {
+                this.t0.cancel();
+                this.u0 = false;
             }
-            this.k0.setRecognitionListener(null);
+            this.t0.setRecognitionListener(null);
         }
     }
 
     public final void c() {
-        String string = getResources().getString(ba5.lb_search_bar_hint);
-        boolean zIsEmpty = TextUtils.isEmpty(this.V);
-        SpeechOrbView speechOrbView = this.R;
-        if (!zIsEmpty) {
-            string = speechOrbView.isFocused() ? getResources().getString(ba5.lb_search_bar_hint_with_title_speech, this.V) : getResources().getString(ba5.lb_search_bar_hint_with_title, this.V);
+        String string = getResources().getString(bu5.lb_search_bar_hint);
+        boolean isEmpty = TextUtils.isEmpty(this.h0);
+        SpeechOrbView speechOrbView = this.d0;
+        if (!isEmpty) {
+            string = speechOrbView.isFocused() ? getResources().getString(bu5.lb_search_bar_hint_with_title_speech, this.h0) : getResources().getString(bu5.lb_search_bar_hint_with_title, this.h0);
         } else if (speechOrbView.isFocused()) {
-            string = getResources().getString(ba5.lb_search_bar_hint_speech);
+            string = getResources().getString(bu5.lb_search_bar_hint_speech);
         }
-        this.U = string;
-        SearchEditText searchEditText = this.Q;
+        this.g0 = string;
+        SearchEditText searchEditText = this.c0;
         if (searchEditText != null) {
             searchEditText.setHint(string);
         }
     }
 
     public final void d(boolean z) {
-        Drawable drawable = this.d0;
+        Drawable drawable = this.m0;
         if (z) {
-            drawable.setAlpha(this.j0);
-            boolean zIsFocused = this.R.isFocused();
-            SearchEditText searchEditText = this.Q;
-            int i = this.h0;
-            if (zIsFocused) {
+            drawable.setAlpha(this.s0);
+            boolean isFocused = this.d0.isFocused();
+            SearchEditText searchEditText = this.c0;
+            int i = this.q0;
+            if (isFocused) {
                 searchEditText.setTextColor(i);
-                this.Q.setHintTextColor(i);
+                this.c0.setHintTextColor(i);
             } else {
-                searchEditText.setTextColor(this.f0);
-                this.Q.setHintTextColor(i);
+                searchEditText.setTextColor(this.o0);
+                this.c0.setHintTextColor(i);
             }
         } else {
-            drawable.setAlpha(this.i0);
-            this.Q.setTextColor(this.e0);
-            this.Q.setHintTextColor(this.g0);
+            drawable.setAlpha(this.r0);
+            this.c0.setTextColor(this.n0);
+            this.c0.setHintTextColor(this.p0);
         }
         c();
     }
 
     public Drawable getBadgeDrawable() {
-        return this.W;
+        return this.i0;
     }
 
     public CharSequence getHint() {
-        return this.U;
+        return this.g0;
     }
 
     public String getTitle() {
-        return this.V;
+        return this.h0;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.m0 = new SoundPool(2, 1, 0);
-        int[] iArr = {w95.lb_voice_failure, w95.lb_voice_open, w95.lb_voice_no_input, w95.lb_voice_success};
+        this.v0 = new SoundPool(2, 1, 0);
+        int[] iArr = {wt5.lb_voice_failure, wt5.lb_voice_open, wt5.lb_voice_no_input, wt5.lb_voice_success};
         for (int i = 0; i < 4; i++) {
             int i2 = iArr[i];
-            this.n0.put(i2, this.m0.load(this.p0, i2, 1));
+            this.w0.put(i2, this.v0.load(this.y0, i2, 1));
         }
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void onDetachedFromWindow() {
         b();
-        this.m0.release();
+        this.v0.release();
         super.onDetachedFromWindow();
     }
 
     @Override // android.view.View
     public final void onFinishInflate() {
         super.onFinishInflate();
-        this.d0 = ((RelativeLayout) findViewById(v85.lb_search_bar_items)).getBackground();
-        this.Q = (SearchEditText) findViewById(v85.lb_search_text_editor);
-        ImageView imageView = (ImageView) findViewById(v85.lb_search_bar_badge);
-        this.S = imageView;
-        Drawable drawable = this.W;
+        this.m0 = ((RelativeLayout) findViewById(us5.lb_search_bar_items)).getBackground();
+        this.c0 = (SearchEditText) findViewById(us5.lb_search_text_editor);
+        ImageView imageView = (ImageView) findViewById(us5.lb_search_bar_badge);
+        this.e0 = imageView;
+        Drawable drawable = this.i0;
         if (drawable != null) {
             imageView.setImageDrawable(drawable);
         }
-        this.Q.setOnFocusChangeListener(new e16(this, 0));
-        this.Q.addTextChangedListener(new uq2(this, new f16(this, 0)));
-        this.Q.setOnKeyboardDismissListener(new ir0(25, this));
-        this.Q.setOnEditorActionListener(new g16(this, 0));
-        this.Q.setPrivateImeOptions("escapeNorth,voiceDismiss");
-        SpeechOrbView speechOrbView = (SpeechOrbView) findViewById(v85.lb_search_bar_speech_orb);
-        this.R = speechOrbView;
-        speechOrbView.setOnOrbClickedListener(new m4(4, this));
-        this.R.setOnFocusChangeListener(new e16(this, 1));
+        this.c0.setOnFocusChangeListener(new um6(this, 0));
+        this.c0.addTextChangedListener(new a63(this, new vm6(this, 0)));
+        this.c0.setOnKeyboardDismissListener(new ep4(25, this));
+        this.c0.setOnEditorActionListener(new wm6(this, 0));
+        this.c0.setPrivateImeOptions("escapeNorth,voiceDismiss");
+        SpeechOrbView speechOrbView = (SpeechOrbView) findViewById(us5.lb_search_bar_speech_orb);
+        this.d0 = speechOrbView;
+        speechOrbView.setOnOrbClickedListener(new u4(4, this));
+        this.d0.setOnFocusChangeListener(new um6(this, 1));
         d(hasFocus());
         c();
     }
 
     public void setBadgeDrawable(Drawable drawable) {
-        this.W = drawable;
-        ImageView imageView = this.S;
+        this.i0 = drawable;
+        ImageView imageView = this.e0;
         if (imageView != null) {
             imageView.setImageDrawable(drawable);
-            ImageView imageView2 = this.S;
+            ImageView imageView2 = this.e0;
             if (drawable != null) {
                 imageView2.setVisibility(0);
             } else {
@@ -235,63 +236,63 @@ public class SearchBar extends RelativeLayout {
 
     @Override // android.view.View
     public void setNextFocusDownId(int i) {
-        this.R.setNextFocusDownId(i);
-        this.Q.setNextFocusDownId(i);
+        this.d0.setNextFocusDownId(i);
+        this.c0.setNextFocusDownId(i);
     }
 
-    public void setSearchAffordanceColors(l16 l16Var) {
-        SpeechOrbView speechOrbView = this.R;
+    public void setSearchAffordanceColors(bn6 bn6Var) {
+        SpeechOrbView speechOrbView = this.d0;
         if (speechOrbView != null) {
-            speechOrbView.setNotListeningOrbColors(l16Var);
+            speechOrbView.setNotListeningOrbColors(bn6Var);
         }
     }
 
-    public void setSearchAffordanceColorsInListening(l16 l16Var) {
-        SpeechOrbView speechOrbView = this.R;
+    public void setSearchAffordanceColorsInListening(bn6 bn6Var) {
+        SpeechOrbView speechOrbView = this.d0;
         if (speechOrbView != null) {
-            speechOrbView.setListeningOrbColors(l16Var);
+            speechOrbView.setListeningOrbColors(bn6Var);
         }
     }
 
     public void setSearchQuery(String str) {
         b();
-        this.Q.setText(str);
+        this.c0.setText(str);
         setSearchQueryInternal(str);
     }
 
     public void setSearchQueryInternal(String str) {
-        if (TextUtils.equals(this.T, str)) {
+        if (TextUtils.equals(this.f0, str)) {
             return;
         }
-        this.T = str;
+        this.f0 = str;
     }
 
     public void setSpeechRecognizer(SpeechRecognizer speechRecognizer) {
         b();
-        SpeechRecognizer speechRecognizer2 = this.k0;
+        SpeechRecognizer speechRecognizer2 = this.t0;
         if (speechRecognizer2 != null) {
             speechRecognizer2.setRecognitionListener(null);
-            if (this.l0) {
-                this.k0.cancel();
-                this.l0 = false;
+            if (this.u0) {
+                this.t0.cancel();
+                this.u0 = false;
             }
         }
-        this.k0 = speechRecognizer;
+        this.t0 = speechRecognizer;
     }
 
     public void setTitle(String str) {
-        this.V = str;
+        this.h0 = str;
         c();
     }
 
-    public void setPermissionListener(i16 i16Var) {
+    public void setPermissionListener(ym6 ym6Var) {
     }
 
-    public void setSearchBarListener(h16 h16Var) {
+    public void setSearchBarListener(xm6 xm6Var) {
     }
 
     @Deprecated
-    public void setSpeechRecognitionCallback(hf6 hf6Var) {
+    public void setSpeechRecognitionCallback(d37 d37Var) {
     }
 
     public SearchBar(Context context, AttributeSet attributeSet) {

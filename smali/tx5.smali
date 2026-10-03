@@ -1,267 +1,414 @@
-.class public abstract synthetic Ltx5;
+.class public abstract Ltx5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final synthetic a:Lsun/misc/Unsafe;
+# instance fields
+.field public a:Lmx5;
+
+.field public b:Ljava/util/ArrayList;
+
+.field public c:J
+
+.field public d:J
+
+.field public e:J
+
+.field public f:J
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
+.method public static b(Landroidx/recyclerview/widget/l;)V
+    .locals 2
 
     .line 1
-    invoke-static {}, Ltx5;->b()Lsun/misc/Unsafe;
+    iget v0, p0, Landroidx/recyclerview/widget/l;->j:I
 
     .line 2
     .line 3
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/l;->g()Z
+
     .line 4
-    move-result-object v0
-
     .line 5
-    sput-object v0, Ltx5;->a:Lsun/misc/Unsafe;
-
     .line 6
+    move-result v1
+
     .line 7
+    if-eqz v1, :cond_0
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    and-int/lit8 v0, v0, 0x4
+
+    .line 11
+    .line 12
+    if-nez v0, :cond_1
+
+    .line 13
+    .line 14
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/l;->b()I
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_1
+    :goto_0
     return-void
 .end method
 
-.method public static synthetic a(Lsun/misc/Unsafe;Ljava/lang/Object;JLqw6;)Ljava/lang/Object;
-    .locals 6
 
-    .line 1
-    :goto_0
-    invoke-virtual {p0, p1, p2, p3}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v4
-
-    .line 5
-    move-object v0, p0
-
-    .line 6
-    move-object v1, p1
-
-    .line 7
-    move-wide v2, p2
-
-    .line 8
-    move-object v5, p4
-
-    .line 9
-    invoke-virtual/range {v0 .. v5}, Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 10
-    .line 11
-    .line 12
-    move-result p0
-
-    .line 13
-    if-eqz p0, :cond_0
-
-    .line 14
-    .line 15
-    return-object v4
-
-    .line 16
-    :cond_0
-    move-object p0, v0
-
-    .line 17
-    move-object p1, v1
-
-    .line 18
-    move-wide p2, v2
-
-    .line 19
-    move-object p4, v5
-
-    .line 20
-    goto :goto_0
+# virtual methods
+.method public abstract a(Landroidx/recyclerview/widget/l;Landroidx/recyclerview/widget/l;Lv90;Lv90;)Z
 .end method
 
-.method public static synthetic b()Lsun/misc/Unsafe;
-    .locals 8
+.method public final c(Landroidx/recyclerview/widget/l;)V
+    .locals 9
 
     .line 1
-    const/4 v0, 0x0
+    iget-object p0, p0, Ltx5;->a:Lmx5;
 
     .line 2
-    :try_start_0
-    const-class v1, Lsun/misc/Unsafe;
-
     .line 3
+    if-eqz p0, :cond_8
+
     .line 4
-    const-string v2, "theUnsafe"
-
     .line 5
+    iget-object p0, p0, Lmx5;->a:Landroidx/recyclerview/widget/RecyclerView;
+
     .line 6
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
     .line 7
+    const/4 v0, 0x1
+
     .line 8
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/l;->o(Z)V
+
     .line 9
-    move-result-object v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 10
-    goto :goto_2
-
     .line 11
-    :catch_0
-    move-exception v1
+    iget-object v1, p1, Landroidx/recyclerview/widget/l;->a:Landroid/view/View;
 
     .line 12
-    const-class v2, Lsun/misc/Unsafe;
-
     .line 13
+    iget-object v2, p1, Landroidx/recyclerview/widget/l;->h:Landroidx/recyclerview/widget/l;
+
     .line 14
-    invoke-virtual {v2}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
-
     .line 15
-    .line 16
-    .line 17
-    move-result-object v2
+    const/4 v3, 0x0
 
+    .line 16
+    if-eqz v2, :cond_0
+
+    .line 17
     .line 18
-    array-length v3, v2
+    iget-object v2, p1, Landroidx/recyclerview/widget/l;->i:Landroidx/recyclerview/widget/l;
 
     .line 19
-    const/4 v4, 0x0
-
     .line 20
-    :goto_0
-    if-ge v4, v3, :cond_1
+    if-nez v2, :cond_0
 
     .line 21
     .line 22
-    aget-object v5, v2, v4
+    iput-object v3, p1, Landroidx/recyclerview/widget/l;->h:Landroidx/recyclerview/widget/l;
 
     .line 23
     .line 24
-    invoke-virtual {v5}, Ljava/lang/reflect/Field;->getModifiers()I
+    :cond_0
+    iput-object v3, p1, Landroidx/recyclerview/widget/l;->i:Landroidx/recyclerview/widget/l;
 
     .line 25
     .line 26
-    .line 27
-    move-result v6
+    iget v2, p1, Landroidx/recyclerview/widget/l;->j:I
 
+    .line 27
     .line 28
-    invoke-static {v6}, Ljava/lang/reflect/Modifier;->isStatic(I)Z
+    and-int/lit8 v2, v2, 0x10
 
     .line 29
     .line 30
-    .line 31
-    move-result v6
+    if-eqz v2, :cond_1
 
+    .line 31
     .line 32
-    if-eqz v6, :cond_0
+    goto/16 :goto_4
 
     .line 33
     .line 34
-    const-class v6, Lsun/misc/Unsafe;
+    :cond_1
+    iget-object v2, p0, Landroidx/recyclerview/widget/RecyclerView;->e0:Landroidx/recyclerview/widget/k;
 
     .line 35
     .line 36
-    invoke-virtual {v5}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->p0()V
 
     .line 37
     .line 38
     .line 39
-    move-result-object v7
+    iget-object v3, p0, Landroidx/recyclerview/widget/RecyclerView;->h0:Lxk0;
 
     .line 40
-    invoke-virtual {v6, v7}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
-
     .line 41
+    iget-object v4, v3, Lxk0;->d0:Ljava/lang/Object;
+
     .line 42
     .line 43
-    move-result v6
+    check-cast v4, Ljp0;
 
     .line 44
-    if-eqz v6, :cond_0
-
     .line 45
-    .line 46
-    goto :goto_1
+    iget-object v5, v3, Lxk0;->c0:Ljava/lang/Object;
 
+    .line 46
     .line 47
-    :cond_0
-    add-int/lit8 v4, v4, 0x1
+    check-cast v5, Lmx5;
 
     .line 48
     .line 49
-    goto :goto_0
+    iget v6, v3, Lxk0;->Z:I
 
     .line 50
-    :cond_1
-    move-object v5, v0
-
     .line 51
-    :goto_1
-    if-nez v5, :cond_2
+    const/4 v7, 0x0
 
     .line 52
-    .line 53
-    move-object v1, v5
+    if-ne v6, v0, :cond_3
 
+    .line 53
     .line 54
-    :goto_2
-    const/4 v2, 0x1
+    iget-object v0, v3, Lxk0;->e0:Ljava/lang/Object;
 
     .line 55
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
-
     .line 56
+    check-cast v0, Landroid/view/View;
+
     .line 57
     .line 58
-    :try_start_1
-    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    if-ne v0, v1, :cond_2
 
     .line 59
     .line 60
+    :goto_0
+    move v0, v7
+
     .line 61
-    move-result-object v1
+    goto :goto_2
 
     .line 62
-    check-cast v1, Lsun/misc/Unsafe;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    :cond_2
+    const-string p0, "Cannot call removeViewIfHidden within removeView(At) for a different view"
 
     .line 63
     .line 64
-    return-object v1
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 65
-    :catch_1
-    move-exception v1
-
     .line 66
-    invoke-static {v1}, Li62;->o(Ljava/lang/Throwable;)V
-
     .line 67
+    return-void
+
     .line 68
+    :cond_3
+    const/4 v8, 0x2
+
     .line 69
-    return-object v0
+    if-eq v6, v8, :cond_7
 
     .line 70
-    :cond_2
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
     .line 71
+    :try_start_0
+    iput v8, v3, Lxk0;->Z:I
+
     .line 72
-    const-string v2, "Couldn\'t find the Unsafe"
-
     .line 73
-    .line 74
-    invoke-direct {v0, v2, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    iget-object v6, v5, Lmx5;->a:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 74
     .line 75
+    invoke-virtual {v6, v1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
+
     .line 76
     .line 77
-    throw v0
+    .line 78
+    move-result v6
+
+    .line 79
+    const/4 v8, -0x1
+
+    .line 80
+    if-ne v6, v8, :cond_4
+
+    .line 81
+    .line 82
+    invoke-virtual {v3, v1}, Lxk0;->t(Landroid/view/View;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 83
+    .line 84
+    .line 85
+    :goto_1
+    iput v7, v3, Lxk0;->Z:I
+
+    .line 86
+    .line 87
+    goto :goto_2
+
+    .line 88
+    :catchall_0
+    move-exception p0
+
+    .line 89
+    goto :goto_3
+
+    .line 90
+    :cond_4
+    :try_start_1
+    invoke-virtual {v4, v6}, Ljp0;->e(I)Z
+
+    .line 91
+    .line 92
+    .line 93
+    move-result v8
+
+    .line 94
+    if-eqz v8, :cond_5
+
+    .line 95
+    .line 96
+    invoke-virtual {v4, v6}, Ljp0;->h(I)Z
+
+    .line 97
+    .line 98
+    .line 99
+    invoke-virtual {v3, v1}, Lxk0;->t(Landroid/view/View;)V
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-virtual {v5, v6}, Lmx5;->c(I)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 103
+    .line 104
+    .line 105
+    goto :goto_1
+
+    .line 106
+    :cond_5
+    iput v7, v3, Lxk0;->Z:I
+
+    .line 107
+    .line 108
+    goto :goto_0
+
+    .line 109
+    :goto_2
+    if-eqz v0, :cond_6
+
+    .line 110
+    .line 111
+    invoke-static {v1}, Landroidx/recyclerview/widget/RecyclerView;->N(Landroid/view/View;)Landroidx/recyclerview/widget/l;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object v3
+
+    .line 115
+    invoke-virtual {v2, v3}, Landroidx/recyclerview/widget/k;->m(Landroidx/recyclerview/widget/l;)V
+
+    .line 116
+    .line 117
+    .line 118
+    invoke-virtual {v2, v3}, Landroidx/recyclerview/widget/k;->j(Landroidx/recyclerview/widget/l;)V
+
+    .line 119
+    .line 120
+    .line 121
+    sget-boolean v2, Landroidx/recyclerview/widget/RecyclerView;->D1:Z
+
+    .line 122
+    .line 123
+    if-eqz v2, :cond_6
+
+    .line 124
+    .line 125
+    invoke-static {v1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 126
+    .line 127
+    .line 128
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 129
+    .line 130
+    .line 131
+    :cond_6
+    xor-int/lit8 v2, v0, 0x1
+
+    .line 132
+    .line 133
+    invoke-virtual {p0, v2}, Landroidx/recyclerview/widget/RecyclerView;->r0(Z)V
+
+    .line 134
+    .line 135
+    .line 136
+    if-nez v0, :cond_8
+
+    .line 137
+    .line 138
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/l;->k()Z
+
+    .line 139
+    .line 140
+    .line 141
+    move-result p1
+
+    .line 142
+    if-eqz p1, :cond_8
+
+    .line 143
+    .line 144
+    invoke-virtual {p0, v1, v7}, Landroidx/recyclerview/widget/RecyclerView;->removeDetachedView(Landroid/view/View;Z)V
+
+    .line 145
+    .line 146
+    .line 147
+    return-void
+
+    .line 148
+    :goto_3
+    iput v7, v3, Lxk0;->Z:I
+
+    .line 149
+    .line 150
+    throw p0
+
+    .line 151
+    :cond_7
+    const-string p0, "Cannot call removeViewIfHidden within removeViewIfHidden"
+
+    .line 152
+    .line 153
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 154
+    .line 155
+    .line 156
+    :cond_8
+    :goto_4
+    return-void
+.end method
+
+.method public abstract d(Landroidx/recyclerview/widget/l;)V
+.end method
+
+.method public abstract e()V
+.end method
+
+.method public abstract f()Z
 .end method

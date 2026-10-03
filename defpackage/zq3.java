@@ -1,11 +1,27 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class zq3 {
-    public static final /* synthetic */ int a = 0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class zq3 extends xq3 {
+    public final short a;
 
-    static {
-        new s84(0);
+    public zq3(short s) {
+        this.a = s;
+    }
+
+    @Override // defpackage.xq3
+    public final Object a() {
+        return Short.valueOf(this.a);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof zq3) && this.a == ((zq3) obj).a;
+    }
+
+    public final int hashCode() {
+        return Short.hashCode(this.a);
     }
 }

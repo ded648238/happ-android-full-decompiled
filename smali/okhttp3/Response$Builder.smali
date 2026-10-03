@@ -1,6 +1,6 @@
 .class public Lokhttp3/Response$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -62,7 +62,7 @@
         "receivedResponseAtMillis",
         "Lokhttp3/internal/connection/Exchange;",
         "deferredTrailers",
-        "Lbh7;",
+        "Lr98;",
         "initExchange$okhttp",
         "(Lokhttp3/internal/connection/Exchange;)V",
         "initExchange",
@@ -389,10 +389,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    if-nez p1, :cond_0
+    if-nez p0, :cond_0
 
     .line 8
     .line 9
@@ -400,11 +400,11 @@
 
     .line 10
     :cond_0
-    const-string p1, "priorResponse.body != null"
+    const-string p0, "priorResponse.body != null"
 
     .line 11
     .line 12
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -414,7 +414,7 @@
 .end method
 
 .method private final checkSupportResponse(Ljava/lang/String;Lokhttp3/Response;)V
-    .locals 1
+    .locals 0
 
     .line 1
     if-eqz p2, :cond_4
@@ -426,10 +426,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    if-nez v0, :cond_3
+    if-nez p0, :cond_3
 
     .line 8
     .line 9
@@ -438,10 +438,10 @@
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    if-nez v0, :cond_2
+    if-nez p0, :cond_2
 
     .line 14
     .line 15
@@ -450,10 +450,10 @@
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    move-result-object p0
 
     .line 19
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 20
     .line 21
@@ -462,10 +462,10 @@
     .line 22
     .line 23
     .line 24
-    move-result-object p2
+    move-result-object p0
 
     .line 25
-    if-nez p2, :cond_0
+    if-nez p0, :cond_0
 
     .line 26
     .line 27
@@ -473,19 +473,19 @@
 
     .line 28
     :cond_0
-    const-string p2, ".priorResponse != null"
+    const-string p0, ".priorResponse != null"
 
     .line 29
     .line 30
-    invoke-static {p1, p2}, Lp27;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->k(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 31
     .line 32
     .line 33
-    move-result-object p1
+    move-result-object p0
 
     .line 34
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 35
     .line 36
@@ -494,19 +494,19 @@
 
     .line 38
     :cond_1
-    const-string p2, ".cacheResponse != null"
+    const-string p0, ".cacheResponse != null"
 
     .line 39
     .line 40
-    invoke-static {p1, p2}, Lp27;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->k(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 41
     .line 42
     .line 43
-    move-result-object p1
+    move-result-object p0
 
     .line 44
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 45
     .line 46
@@ -515,19 +515,19 @@
 
     .line 48
     :cond_2
-    const-string p2, ".networkResponse != null"
+    const-string p0, ".networkResponse != null"
 
     .line 49
     .line 50
-    invoke-static {p1, p2}, Lp27;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->k(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 51
     .line 52
     .line 53
-    move-result-object p1
+    move-result-object p0
 
     .line 54
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 55
     .line 56
@@ -536,19 +536,19 @@
 
     .line 58
     :cond_3
-    const-string p2, ".body != null"
+    const-string p0, ".body != null"
 
     .line 59
     .line 60
-    invoke-static {p1, p2}, Lp27;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->k(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 61
     .line 62
     .line 63
-    move-result-object p1
+    move-result-object p0
 
     .line 64
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 65
     .line 66
@@ -597,162 +597,173 @@
 .end method
 
 .method public build()Lokhttp3/Response;
-    .locals 17
+    .locals 16
 
     .line 1
     move-object/from16 v0, p0
 
     .line 2
     .line 3
-    iget v5, v0, Lokhttp3/Response$Builder;->code:I
+    iget v4, v0, Lokhttp3/Response$Builder;->code:I
 
     .line 4
     .line 5
     const/4 v1, 0x0
 
     .line 6
-    if-ltz v5, :cond_3
+    if-ltz v4, :cond_3
 
     .line 7
     .line 8
-    iget-object v2, v0, Lokhttp3/Response$Builder;->request:Lokhttp3/Request;
+    move-object v2, v1
 
     .line 9
+    iget-object v1, v0, Lokhttp3/Response$Builder;->request:Lokhttp3/Request;
+
     .line 10
-    if-eqz v2, :cond_2
-
     .line 11
-    .line 12
-    iget-object v3, v0, Lokhttp3/Response$Builder;->protocol:Lokhttp3/Protocol;
+    if-eqz v1, :cond_2
 
+    .line 12
     .line 13
+    move-object v3, v2
+
     .line 14
-    if-eqz v3, :cond_1
+    iget-object v2, v0, Lokhttp3/Response$Builder;->protocol:Lokhttp3/Protocol;
 
     .line 15
     .line 16
-    iget-object v4, v0, Lokhttp3/Response$Builder;->message:Ljava/lang/String;
+    move-object v5, v3
 
     .line 17
+    if-eqz v2, :cond_1
+
     .line 18
-    if-eqz v4, :cond_0
-
     .line 19
+    iget-object v3, v0, Lokhttp3/Response$Builder;->message:Ljava/lang/String;
+
     .line 20
-    iget-object v6, v0, Lokhttp3/Response$Builder;->handshake:Lokhttp3/Handshake;
-
     .line 21
+    if-eqz v3, :cond_0
+
     .line 22
-    iget-object v1, v0, Lokhttp3/Response$Builder;->headers:Lokhttp3/Headers$Builder;
-
     .line 23
-    .line 24
-    invoke-virtual {v1}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
+    iget-object v5, v0, Lokhttp3/Response$Builder;->handshake:Lokhttp3/Handshake;
 
+    .line 24
     .line 25
+    iget-object v6, v0, Lokhttp3/Response$Builder;->headers:Lokhttp3/Headers$Builder;
+
     .line 26
     .line 27
-    move-result-object v7
+    invoke-virtual {v6}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
 
     .line 28
-    iget-object v8, v0, Lokhttp3/Response$Builder;->body:Lokhttp3/ResponseBody;
-
     .line 29
     .line 30
-    iget-object v9, v0, Lokhttp3/Response$Builder;->networkResponse:Lokhttp3/Response;
+    move-result-object v6
 
     .line 31
+    iget-object v7, v0, Lokhttp3/Response$Builder;->body:Lokhttp3/ResponseBody;
+
     .line 32
-    iget-object v10, v0, Lokhttp3/Response$Builder;->cacheResponse:Lokhttp3/Response;
-
     .line 33
+    iget-object v8, v0, Lokhttp3/Response$Builder;->networkResponse:Lokhttp3/Response;
+
     .line 34
-    iget-object v11, v0, Lokhttp3/Response$Builder;->priorResponse:Lokhttp3/Response;
-
     .line 35
+    iget-object v9, v0, Lokhttp3/Response$Builder;->cacheResponse:Lokhttp3/Response;
+
     .line 36
-    iget-wide v12, v0, Lokhttp3/Response$Builder;->sentRequestAtMillis:J
-
     .line 37
+    iget-object v10, v0, Lokhttp3/Response$Builder;->priorResponse:Lokhttp3/Response;
+
     .line 38
-    iget-wide v14, v0, Lokhttp3/Response$Builder;->receivedResponseAtMillis:J
-
     .line 39
+    iget-wide v11, v0, Lokhttp3/Response$Builder;->sentRequestAtMillis:J
+
     .line 40
-    iget-object v1, v0, Lokhttp3/Response$Builder;->exchange:Lokhttp3/internal/connection/Exchange;
-
     .line 41
+    iget-wide v13, v0, Lokhttp3/Response$Builder;->receivedResponseAtMillis:J
+
     .line 42
-    move-object/from16 v16, v1
-
     .line 43
+    iget-object v15, v0, Lokhttp3/Response$Builder;->exchange:Lokhttp3/internal/connection/Exchange;
+
     .line 44
-    new-instance v1, Lokhttp3/Response;
-
     .line 45
-    .line 46
-    invoke-direct/range {v1 .. v16}, Lokhttp3/Response;-><init>(Lokhttp3/Request;Lokhttp3/Protocol;Ljava/lang/String;ILokhttp3/Handshake;Lokhttp3/Headers;Lokhttp3/ResponseBody;Lokhttp3/Response;Lokhttp3/Response;Lokhttp3/Response;JJLokhttp3/internal/connection/Exchange;)V
+    new-instance v0, Lokhttp3/Response;
 
+    .line 46
     .line 47
+    invoke-direct/range {v0 .. v15}, Lokhttp3/Response;-><init>(Lokhttp3/Request;Lokhttp3/Protocol;Ljava/lang/String;ILokhttp3/Handshake;Lokhttp3/Headers;Lokhttp3/ResponseBody;Lokhttp3/Response;Lokhttp3/Response;Lokhttp3/Response;JJLokhttp3/internal/connection/Exchange;)V
+
     .line 48
     .line 49
-    return-object v1
-
     .line 50
-    :cond_0
-    const-string v2, "message == null"
+    return-object v0
 
     .line 51
-    .line 52
-    invoke-static {v2}, Lfn;->s(Ljava/lang/String;)V
+    :cond_0
+    const-string v0, "message == null"
 
+    .line 52
     .line 53
+    invoke-static {v0}, Li60;->g(Ljava/lang/String;)V
+
     .line 54
     .line 55
-    return-object v1
-
     .line 56
-    :cond_1
-    const-string v2, "protocol == null"
+    return-object v5
 
     .line 57
-    .line 58
-    invoke-static {v2}, Lfn;->s(Ljava/lang/String;)V
+    :cond_1
+    const-string v0, "protocol == null"
 
+    .line 58
     .line 59
+    invoke-static {v0}, Li60;->g(Ljava/lang/String;)V
+
     .line 60
     .line 61
-    return-object v1
-
     .line 62
-    :cond_2
-    const-string v2, "request == null"
+    return-object v5
 
     .line 63
+    :cond_2
+    move-object v5, v2
+
     .line 64
-    invoke-static {v2}, Lfn;->s(Ljava/lang/String;)V
+    const-string v0, "request == null"
 
     .line 65
     .line 66
+    invoke-static {v0}, Li60;->g(Ljava/lang/String;)V
+
     .line 67
-    return-object v1
-
     .line 68
-    :cond_3
-    const-string v2, "code < 0: "
-
     .line 69
+    return-object v5
+
     .line 70
-    iget v3, v0, Lokhttp3/Response$Builder;->code:I
+    :cond_3
+    move-object v5, v1
 
     .line 71
-    .line 72
-    invoke-static {v3, v2}, Lxi4;->p(ILjava/lang/String;)V
+    const-string v1, "code < 0: "
 
+    .line 72
     .line 73
+    iget v0, v0, Lokhttp3/Response$Builder;->code:I
+
     .line 74
     .line 75
-    return-object v1
+    invoke-static {v0, v1}, Lq05;->r(ILjava/lang/String;)V
+
+    .line 76
+    .line 77
+    .line 78
+    return-object v5
 .end method
 
 .method public cacheResponse(Lokhttp3/Response;)Lokhttp3/Response$Builder;
@@ -787,113 +798,113 @@
 .end method
 
 .method public final getBody$okhttp()Lokhttp3/ResponseBody;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->body:Lokhttp3/ResponseBody;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->body:Lokhttp3/ResponseBody;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getCacheResponse$okhttp()Lokhttp3/Response;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->cacheResponse:Lokhttp3/Response;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->cacheResponse:Lokhttp3/Response;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getCode$okhttp()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/Response$Builder;->code:I
+    iget p0, p0, Lokhttp3/Response$Builder;->code:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getExchange$okhttp()Lokhttp3/internal/connection/Exchange;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->exchange:Lokhttp3/internal/connection/Exchange;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->exchange:Lokhttp3/internal/connection/Exchange;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getHandshake$okhttp()Lokhttp3/Handshake;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->handshake:Lokhttp3/Handshake;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->handshake:Lokhttp3/Handshake;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getHeaders$okhttp()Lokhttp3/Headers$Builder;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->headers:Lokhttp3/Headers$Builder;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->headers:Lokhttp3/Headers$Builder;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getMessage$okhttp()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->message:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->message:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getNetworkResponse$okhttp()Lokhttp3/Response;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->networkResponse:Lokhttp3/Response;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->networkResponse:Lokhttp3/Response;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPriorResponse$okhttp()Lokhttp3/Response;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->priorResponse:Lokhttp3/Response;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->priorResponse:Lokhttp3/Response;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getProtocol$okhttp()Lokhttp3/Protocol;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->protocol:Lokhttp3/Protocol;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->protocol:Lokhttp3/Protocol;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getReceivedResponseAtMillis$okhttp()J
@@ -908,14 +919,14 @@
 .end method
 
 .method public final getRequest$okhttp()Lokhttp3/Request;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Response$Builder;->request:Lokhttp3/Request;
+    iget-object p0, p0, Lokhttp3/Response$Builder;->request:Lokhttp3/Request;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getSentRequestAtMillis$okhttp()J

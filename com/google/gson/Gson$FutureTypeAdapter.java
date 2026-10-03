@@ -1,32 +1,32 @@
 package com.google.gson;
 
 import com.google.gson.internal.bind.SerializationDelegatingTypeAdapter;
-import defpackage.fn;
-import defpackage.h43;
-import defpackage.r23;
+import defpackage.i60;
+import defpackage.nk3;
+import defpackage.xi3;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 class Gson$FutureTypeAdapter<T> extends SerializationDelegatingTypeAdapter<T> {
     public b a = null;
 
     @Override // com.google.gson.b
-    public final Object b(r23 r23Var) {
+    public final Object b(xi3 xi3Var) {
         b bVar = this.a;
         if (bVar != null) {
-            return bVar.b(r23Var);
+            return bVar.b(xi3Var);
         }
-        fn.s("Adapter for type with cyclic dependency has been used before dependency has been resolved");
+        i60.g("Adapter for type with cyclic dependency has been used before dependency has been resolved");
         return null;
     }
 
     @Override // com.google.gson.b
-    public final void c(h43 h43Var, Object obj) {
+    public final void c(nk3 nk3Var, Object obj) {
         b bVar = this.a;
         if (bVar != null) {
-            bVar.c(h43Var, obj);
+            bVar.c(nk3Var, obj);
         } else {
-            fn.s("Adapter for type with cyclic dependency has been used before dependency has been resolved");
+            i60.g("Adapter for type with cyclic dependency has been used before dependency has been resolved");
         }
     }
 
@@ -36,7 +36,7 @@ class Gson$FutureTypeAdapter<T> extends SerializationDelegatingTypeAdapter<T> {
         if (bVar != null) {
             return bVar;
         }
-        fn.s("Adapter for type with cyclic dependency has been used before dependency has been resolved");
+        i60.g("Adapter for type with cyclic dependency has been used before dependency has been resolved");
         return null;
     }
 }

@@ -1,11 +1,11 @@
 package defpackage;
 
-import java.lang.reflect.Field;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ag5 {
+    public final int a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface ag5 extends gc3, p83, vf5 {
-    String a();
-
-    Field t();
+    public ag5(int i) {
+        this.a = i;
+    }
 }

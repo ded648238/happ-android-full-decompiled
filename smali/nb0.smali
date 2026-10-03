@@ -1,33 +1,24 @@
-.class public abstract Lnb0;
+.class public interface abstract Lnb0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Llb0;
+.implements Lmi4;
 
 
 # virtual methods
-.method public a(I)V
-    .locals 0
-
-    .line 1
-    return-void
+.method public abstract W(Lln4;Lym4;Lzh1;)Lnb0;
 .end method
 
-.method public b(ILtb0;)V
-    .locals 0
-
-    .line 1
-    return-void
+.method public abstract a()Lnb0;
 .end method
 
-.method public c(ILkv6;)V
-    .locals 0
-
-    .line 1
-    return-void
+.method public abstract f0(Ljava/util/Collection;)V
 .end method
 
-.method public d(I)V
-    .locals 0
+.method public abstract r()Ljava/util/Collection;
+.end method
 
-    .line 1
-    return-void
+.method public abstract s()I
 .end method

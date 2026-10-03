@@ -1,103 +1,71 @@
 .class public final Lfd6;
-.super Ltd5;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
 
 
 # instance fields
-.field public a:Z
+.field public synthetic c0:Ljava/lang/Object;
 
-.field public final synthetic b:Lon4;
+.field public d0:I
+
+.field public final synthetic e0:Lvc0;
 
 
 # direct methods
-.method public constructor <init>(Lon4;)V
+.method public constructor <init>(Lvc0;Lb31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lfd6;->e0:Lvc0;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lfd6;->b:Lon4;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
-    const/4 p1, 0x0
-
-    .line 7
-    iput-boolean p1, p0, Lfd6;->a:Z
-
-    .line 8
-    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)V
-    .locals 0
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    if-nez p1, :cond_0
+    iput-object p1, p0, Lfd6;->c0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget-boolean p1, p0, Lfd6;->a:Z
+    iget p1, p0, Lfd6;->d0:I
 
     .line 4
     .line 5
-    if-eqz p1, :cond_0
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
-    const/4 p1, 0x0
+    or-int/2addr p1, v0
 
     .line 8
-    iput-boolean p1, p0, Lfd6;->a:Z
+    iput p1, p0, Lfd6;->d0:I
 
     .line 9
     .line 10
-    iget-object p1, p0, Lfd6;->b:Lon4;
+    iget-object p1, p0, Lfd6;->e0:Lvc0;
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Lon4;->h()V
+    const/4 v0, 0x0
 
     .line 13
+    invoke-virtual {p1, v0, p0}, Lvc0;->k(Ljava/lang/Object;Lb31;)Ljava/lang/Object;
+
     .line 14
     .line 15
-    :cond_0
-    return-void
-.end method
+    .line 16
+    move-result-object p0
 
-.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
-    .locals 0
-
-    .line 1
-    if-nez p2, :cond_1
-
-    .line 2
-    .line 3
-    if-eqz p3, :cond_0
-
-    .line 4
-    .line 5
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    return-void
-
-    .line 7
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    .line 8
-    iput-boolean p1, p0, Lfd6;->a:Z
-
-    .line 9
-    .line 10
-    return-void
+    .line 17
+    return-object p0
 .end method

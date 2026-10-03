@@ -1,14 +1,29 @@
 package defpackage;
 
-import android.view.textclassifier.TextClassificationManager;
-import android.view.textclassifier.TextClassifier;
-import android.widget.TextView;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class go {
+    public static final go b = new go(au0.b(0.3f, au0.c));
+    public static final go c = new go(au0.b(0.3f, au0.b));
+    public final long a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class go {
-    public static TextClassifier a(TextView textView) {
-        TextClassificationManager textClassificationManager = (TextClassificationManager) textView.getContext().getSystemService(TextClassificationManager.class);
-        return textClassificationManager != null ? textClassificationManager.getTextClassifier() : TextClassifier.NO_OP;
+    public go(long j) {
+        this.a = j;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof go) && au0.c(this.a, ((go) obj).a);
+    }
+
+    public final int hashCode() {
+        int i = au0.h;
+        return Long.hashCode(this.a);
+    }
+
+    public final String toString() {
+        return c73.j("AppBottomSheetColors(dragHandle=", au0.i(this.a), ")");
     }
 }

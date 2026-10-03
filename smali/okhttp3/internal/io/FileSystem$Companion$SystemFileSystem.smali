@@ -1,6 +1,6 @@
 .class final Lokhttp3/internal/io/FileSystem$Companion$SystemFileSystem;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/io/FileSystem;
@@ -27,14 +27,14 @@
         "()V",
         "Ljava/io/File;",
         "file",
-        "Lle6;",
+        "Ld27;",
         "source",
-        "(Ljava/io/File;)Lle6;",
-        "Lpb6;",
+        "(Ljava/io/File;)Ld27;",
+        "Lqy6;",
         "sink",
-        "(Ljava/io/File;)Lpb6;",
+        "(Ljava/io/File;)Lqy6;",
         "appendingSink",
-        "Lbh7;",
+        "Lr98;",
         "delete",
         "(Ljava/io/File;)V",
         "",
@@ -79,8 +79,8 @@
 
 
 # virtual methods
-.method public appendingSink(Ljava/io/File;)Lpb6;
-    .locals 4
+.method public appendingSink(Ljava/io/File;)Lqy6;
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -93,40 +93,40 @@
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 5
     :try_start_0
-    new-instance v1, Ljava/io/FileOutputStream;
+    new-instance v0, Ljava/io/FileOutputStream;
 
     .line 6
     .line 7
-    invoke-direct {v1, p1, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
+    invoke-direct {v0, p1, p0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v2, Lks;
+    new-instance v1, Lgu;
 
     .line 11
     .line 12
-    new-instance v3, Lo47;
+    new-instance v2, Lax7;
 
     .line 13
     .line 14
-    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     .line 15
     .line 16
     .line 17
-    invoke-direct {v2, v0, v1, v3}, Lks;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, v0, v2}, Lgu;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 18
     .line 19
     .line 20
-    return-object v2
+    return-object v1
 
     .line 21
     :catch_0
@@ -135,37 +135,37 @@
     .line 22
     .line 23
     .line 24
-    move-result-object v1
+    move-result-object v0
 
     .line 25
-    invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
+    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     .line 26
     .line 27
     .line 28
-    new-instance v1, Ljava/io/FileOutputStream;
+    new-instance v0, Ljava/io/FileOutputStream;
 
     .line 29
     .line 30
-    invoke-direct {v1, p1, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
+    invoke-direct {v0, p1, p0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
 
     .line 31
     .line 32
     .line 33
-    new-instance p1, Lks;
+    new-instance p1, Lgu;
 
     .line 34
     .line 35
-    new-instance v2, Lo47;
+    new-instance v1, Lax7;
 
     .line 36
     .line 37
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     .line 38
     .line 39
     .line 40
-    invoke-direct {p1, v0, v1, v2}, Lks;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p1, p0, v0, v1}, Lgu;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 41
     .line 42
@@ -174,7 +174,7 @@
 .end method
 
 .method public delete(Ljava/io/File;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -192,10 +192,10 @@
     .line 5
     .line 6
     .line 7
-    move-result v0
+    move-result p0
 
     .line 8
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 9
     .line 10
@@ -204,10 +204,10 @@
     .line 11
     .line 12
     .line 13
-    move-result v0
+    move-result p0
 
     .line 14
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 15
     .line 16
@@ -215,11 +215,11 @@
 
     .line 17
     :cond_0
-    const-string v0, "failed to delete "
+    const-string p0, "failed to delete "
 
     .line 18
     .line 19
-    invoke-static {p1, v0}, Lmh7;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lao8;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 20
     .line 21
@@ -308,11 +308,11 @@
 
     .line 34
     :cond_1
-    const-string p1, "failed to delete "
+    const-string p0, "failed to delete "
 
     .line 35
     .line 36
-    invoke-static {v2, p1}, Lmh7;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, p0}, Lao8;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 37
     .line 38
@@ -322,11 +322,11 @@
 
     .line 40
     :cond_3
-    const-string v0, "not a readable directory: "
+    const-string p0, "not a readable directory: "
 
     .line 41
     .line 42
-    invoke-static {p1, v0}, Lmh7;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lao8;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 43
     .line 44
@@ -348,14 +348,14 @@
     .line 5
     .line 6
     .line 7
-    move-result p1
+    move-result p0
 
     .line 8
-    return p1
+    return p0
 .end method
 
 .method public rename(Ljava/io/File;Ljava/io/File;)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -383,10 +383,10 @@
     .line 11
     .line 12
     .line 13
-    move-result v0
+    move-result p0
 
     .line 14
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 15
     .line 16
@@ -394,24 +394,24 @@
 
     .line 17
     :cond_0
-    new-instance v0, Ljava/io/IOException;
+    new-instance p0, Ljava/io/IOException;
 
     .line 18
     .line 19
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 20
     .line 21
-    const-string v2, "failed to rename "
+    const-string v1, "failed to rename "
 
     .line 22
     .line 23
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 24
     .line 25
     .line 26
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 27
     .line 28
@@ -420,17 +420,17 @@
 
     .line 30
     .line 31
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 32
     .line 33
     .line 34
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 38
     .line 39
@@ -438,16 +438,16 @@
     move-result-object p1
 
     .line 41
-    invoke-direct {v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 42
     .line 43
     .line 44
-    throw v0
+    throw p0
 .end method
 
-.method public sink(Ljava/io/File;)Lpb6;
-    .locals 5
+.method public sink(Ljava/io/File;)Lqy6;
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -460,43 +460,43 @@
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 5
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 6
     :try_start_0
-    new-instance v2, Ljava/io/FileOutputStream;
+    new-instance v1, Ljava/io/FileOutputStream;
 
     .line 7
     .line 8
-    invoke-direct {v2, p1, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
+    invoke-direct {v1, p1, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
 
     .line 9
     .line 10
     .line 11
-    new-instance v3, Lks;
+    new-instance v2, Lgu;
 
     .line 12
     .line 13
-    new-instance v4, Lo47;
+    new-instance v3, Lax7;
 
     .line 14
     .line 15
-    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
 
     .line 16
     .line 17
     .line 18
-    invoke-direct {v3, v0, v2, v4}, Lks;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, p0, v1, v3}, Lgu;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 19
     .line 20
     .line 21
-    return-object v3
+    return-object v2
 
     .line 22
     :catch_0
@@ -505,37 +505,37 @@
     .line 23
     .line 24
     .line 25
-    move-result-object v2
+    move-result-object v1
 
     .line 26
-    invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
+    invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
 
     .line 27
     .line 28
     .line 29
-    new-instance v2, Ljava/io/FileOutputStream;
+    new-instance v1, Ljava/io/FileOutputStream;
 
     .line 30
     .line 31
-    invoke-direct {v2, p1, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
+    invoke-direct {v1, p1, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
 
     .line 32
     .line 33
     .line 34
-    new-instance p1, Lks;
+    new-instance p1, Lgu;
 
     .line 35
     .line 36
-    new-instance v1, Lo47;
+    new-instance v0, Lax7;
 
     .line 37
     .line 38
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 39
     .line 40
     .line 41
-    invoke-direct {p1, v0, v2, v1}, Lks;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p1, p0, v1, v0}, Lgu;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 42
     .line 43
@@ -544,7 +544,7 @@
 .end method
 
 .method public size(Ljava/io/File;)J
-    .locals 2
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -557,14 +557,14 @@
     .line 5
     .line 6
     .line 7
-    move-result-wide v0
+    move-result-wide p0
 
     .line 8
-    return-wide v0
+    return-wide p0
 .end method
 
-.method public source(Ljava/io/File;)Lle6;
-    .locals 2
+.method public source(Ljava/io/File;)Ld27;
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -577,38 +577,38 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lls;
+    new-instance p0, Lhu;
 
     .line 5
     .line 6
-    new-instance v1, Ljava/io/FileInputStream;
+    new-instance v0, Ljava/io/FileInputStream;
 
     .line 7
     .line 8
-    invoke-direct {v1, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    invoke-direct {v0, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
     .line 9
     .line 10
     .line 11
-    sget-object p1, Lo47;->NONE:Lo47;
+    sget-object p1, Lax7;->NONE:Lax7;
 
     .line 12
     .line 13
-    invoke-direct {v0, v1, p1}, Lls;-><init>(Ljava/io/InputStream;Lo47;)V
+    invoke-direct {p0, v0, p1}, Lhu;-><init>(Ljava/io/InputStream;Lax7;)V
 
     .line 14
     .line 15
     .line 16
-    return-object v0
+    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "FileSystem.SYSTEM"
+    const-string p0, "FileSystem.SYSTEM"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

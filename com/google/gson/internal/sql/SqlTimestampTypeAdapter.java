@@ -1,24 +1,24 @@
 package com.google.gson.internal.sql;
 
 import com.google.gson.b;
-import defpackage.dd7;
-import defpackage.h43;
-import defpackage.r23;
-import defpackage.wa7;
+import defpackage.j38;
+import defpackage.m58;
+import defpackage.nk3;
+import defpackage.xi3;
 import java.sql.Timestamp;
 import java.util.Date;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 class SqlTimestampTypeAdapter extends b {
-    public static final wa7 b = new wa7() { // from class: com.google.gson.internal.sql.SqlTimestampTypeAdapter.1
-        @Override // defpackage.wa7
-        public final b a(com.google.gson.a aVar, dd7 dd7Var) {
-            if (dd7Var.a != Timestamp.class) {
+    public static final j38 b = new j38() { // from class: com.google.gson.internal.sql.SqlTimestampTypeAdapter.1
+        @Override // defpackage.j38
+        public final b a(com.google.gson.a aVar, m58 m58Var) {
+            if (m58Var.a != Timestamp.class) {
                 return null;
             }
             aVar.getClass();
-            return new SqlTimestampTypeAdapter(aVar.e(new dd7(Date.class)));
+            return new SqlTimestampTypeAdapter(aVar.e(new m58(Date.class)));
         }
     };
     public final b a;
@@ -28,8 +28,8 @@ class SqlTimestampTypeAdapter extends b {
     }
 
     @Override // com.google.gson.b
-    public final Object b(r23 r23Var) {
-        Date date = (Date) this.a.b(r23Var);
+    public final Object b(xi3 xi3Var) {
+        Date date = (Date) this.a.b(xi3Var);
         if (date != null) {
             return new Timestamp(date.getTime());
         }
@@ -37,7 +37,7 @@ class SqlTimestampTypeAdapter extends b {
     }
 
     @Override // com.google.gson.b
-    public final void c(h43 h43Var, Object obj) {
-        this.a.c(h43Var, (Timestamp) obj);
+    public final void c(nk3 nk3Var, Object obj) {
+        this.a.c(nk3Var, (Timestamp) obj);
     }
 }

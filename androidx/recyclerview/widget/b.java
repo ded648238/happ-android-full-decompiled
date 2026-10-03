@@ -1,10 +1,11 @@
 package androidx.recyclerview.widget;
 
 import android.view.View;
+import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class b {
     public boolean a;
     public int b;
@@ -20,41 +21,41 @@ public final class b {
     public boolean l;
 
     public final void a(View view) {
-        int iC;
+        int c;
         int size = this.k.size();
         View view2 = null;
         int i = Integer.MAX_VALUE;
         for (int i2 = 0; i2 < size; i2++) {
             View view3 = ((l) this.k.get(i2)).a;
             RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) view3.getLayoutParams();
-            if (view3 != view && !layoutParams.Q.i() && (iC = (layoutParams.Q.c() - this.d) * this.e) >= 0 && iC < i) {
+            if (view3 != view && !layoutParams.X.i() && (c = (layoutParams.X.c() - this.d) * this.e) >= 0 && c < i) {
                 view2 = view3;
-                if (iC == 0) {
+                if (c == 0) {
                     break;
                 } else {
-                    i = iC;
+                    i = c;
                 }
             }
         }
         if (view2 == null) {
             this.d = -1;
         } else {
-            this.d = ((RecyclerView.LayoutParams) view2.getLayoutParams()).Q.c();
+            this.d = ((RecyclerView.LayoutParams) view2.getLayoutParams()).X.c();
         }
     }
 
     public final View b(k kVar) {
         List list = this.k;
         if (list == null) {
-            View viewD = kVar.d(this.d);
+            View d = kVar.d(this.d);
             this.d += this.e;
-            return viewD;
+            return d;
         }
         int size = list.size();
         for (int i = 0; i < size; i++) {
             View view = ((l) this.k.get(i)).a;
             RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) view.getLayoutParams();
-            if (!layoutParams.Q.i() && this.d == layoutParams.Q.c()) {
+            if (!layoutParams.X.i() && this.d == layoutParams.X.c()) {
                 a(view);
                 return view;
             }

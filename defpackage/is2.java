@@ -1,61 +1,42 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class is2 {
-    public static final is2 e = new is2(0, 0, 0, 0);
-    public final int a;
-    public final int b;
-    public final int c;
-    public final int d;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class is2 implements xi2 {
+    public final /* synthetic */ int X = 1;
+    public final /* synthetic */ boolean Y;
+    public final /* synthetic */ dn4 Z;
+    public final /* synthetic */ Object c0;
 
-    public is2(int i, int i2, int i3, int i4) {
-        this.a = i;
-        this.b = i2;
-        this.c = i3;
-        this.d = i4;
+    public /* synthetic */ is2(int i, ji2 ji2Var, dn4 dn4Var, boolean z) {
+        this.Y = z;
+        this.c0 = ji2Var;
+        this.Z = dn4Var;
     }
 
-    public final long a() {
-        int iD = (d() / 2) + this.a;
-        return (((long) ((b() / 2) + this.b)) & 4294967295L) | (((long) iD) << 32);
-    }
-
-    public final int b() {
-        return this.d - this.b;
-    }
-
-    public final long c() {
-        return (((long) this.a) << 32) | (((long) this.b) & 4294967295L);
-    }
-
-    public final int d() {
-        return this.c - this.a;
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        int i = this.X;
+        r98 r98Var = r98.a;
+        dn4 dn4Var = this.Z;
+        Object obj3 = this.c0;
+        boolean z = this.Y;
+        switch (i) {
+            case 0:
+                ((Integer) obj2).getClass();
+                vx6.d((String) obj3, z, dn4Var, (rk2) obj, ku8.S(1));
+                break;
+            default:
+                ((Integer) obj2).getClass();
+                w97.f(ku8.S(1), (ji2) obj3, (rk2) obj, dn4Var, z);
+                break;
         }
-        if (!(obj instanceof is2)) {
-            return false;
-        }
-        is2 is2Var = (is2) obj;
-        return this.a == is2Var.a && this.b == is2Var.b && this.c == is2Var.c && this.d == is2Var.d;
+        return r98Var;
     }
 
-    public final int hashCode() {
-        return (((((this.a * 31) + this.b) * 31) + this.c) * 31) + this.d;
-    }
-
-    public final String toString() {
-        StringBuilder sb = new StringBuilder("IntRect.fromLTRB(");
-        sb.append(this.a);
-        sb.append(", ");
-        sb.append(this.b);
-        sb.append(", ");
-        sb.append(this.c);
-        sb.append(", ");
-        return ea0.s(sb, this.d, ')');
+    public /* synthetic */ is2(String str, boolean z, dn4 dn4Var, int i) {
+        this.c0 = str;
+        this.Y = z;
+        this.Z = dn4Var;
     }
 }

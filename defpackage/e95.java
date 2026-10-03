@@ -1,83 +1,205 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class e95 {
-    public static int action_bar = 2131427394;
-    public static int action_bar_activity_content = 2131427395;
-    public static int action_bar_container = 2131427396;
-    public static int action_bar_root = 2131427397;
-    public static int action_bar_spinner = 2131427398;
-    public static int action_bar_subtitle = 2131427399;
-    public static int action_bar_title = 2131427400;
-    public static int action_context_bar = 2131427402;
-    public static int action_menu_divider = 2131427408;
-    public static int action_menu_presenter = 2131427409;
-    public static int action_mode_bar = 2131427410;
-    public static int action_mode_bar_stub = 2131427411;
-    public static int action_mode_close_button = 2131427412;
-    public static int activity_chooser_view_content = 2131427416;
-    public static int add = 2131427417;
-    public static int alertTitle = 2131427422;
-    public static int buttonPanel = 2131427522;
-    public static int checkbox = 2131427542;
-    public static int checked = 2131427544;
-    public static int content = 2131427677;
-    public static int contentPanel = 2131427678;
-    public static int custom = 2131427698;
-    public static int customPanel = 2131427699;
-    public static int decor_content_parent = 2131427707;
-    public static int default_activity_button = 2131427708;
-    public static int edit_query = 2131427853;
-    public static int expand_activities_button = 2131427907;
-    public static int expanded_menu = 2131427908;
-    public static int group_divider = 2131427995;
-    public static int home = 2131428031;
-    public static int icon = 2131428040;
-    public static int image = 2131428113;
-    public static int listMode = 2131428203;
-    public static int list_item = 2131428204;
-    public static int message = 2131428313;
-    public static int multiply = 2131428346;
-    public static int none = 2131428364;
-    public static int normal = 2131428365;
-    public static int off = 2131428371;
-    public static int on = 2131428372;
-    public static int parentPanel = 2131428406;
-    public static int progress_circular = 2131428441;
-    public static int progress_horizontal = 2131428442;
-    public static int radio = 2131428444;
-    public static int screen = 2131428490;
-    public static int scrollIndicatorDown = 2131428492;
-    public static int scrollIndicatorUp = 2131428493;
-    public static int scrollView = 2131428494;
-    public static int search_badge = 2131428501;
-    public static int search_bar = 2131428502;
-    public static int search_button = 2131428503;
-    public static int search_close_btn = 2131428504;
-    public static int search_edit_frame = 2131428505;
-    public static int search_go_btn = 2131428506;
-    public static int search_mag_icon = 2131428507;
-    public static int search_plate = 2131428509;
-    public static int search_src_text = 2131428510;
-    public static int search_voice_btn = 2131428512;
-    public static int select_dialog_listview = 2131428517;
-    public static int shortcut = 2131428540;
-    public static int spacer = 2131428575;
-    public static int split_action_bar = 2131428601;
-    public static int src_atop = 2131428607;
-    public static int src_in = 2131428608;
-    public static int src_over = 2131428609;
-    public static int submenuarrow = 2131428628;
-    public static int submit_area = 2131428629;
-    public static int tabMode = 2131428638;
-    public static int textSpacerNoButtons = 2131428657;
-    public static int textSpacerNoTitle = 2131428658;
-    public static int title = 2131428680;
-    public static int titleDividerNoCustom = 2131428681;
-    public static int title_template = 2131428717;
-    public static int topPanel = 2131428764;
-    public static int unchecked = 2131428904;
-    public static int uniform = 2131428905;
-    public static int up = 2131428907;
-    public static int wrap_content = 2131428931;
+import su.happ.proxyutility.feature.proxy.PerAppProxyActivity;
+import su.happ.proxyutility.ui.foundation.component.HappTextView;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class e95 extends ll7 implements xi2 {
+    public final /* synthetic */ int d0;
+    public /* synthetic */ Object e0;
+    public final /* synthetic */ PerAppProxyActivity f0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ e95(PerAppProxyActivity perAppProxyActivity, b31 b31Var, int i) {
+        super(2, b31Var);
+        this.d0 = i;
+        this.f0 = perAppProxyActivity;
+    }
+
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        int i = this.d0;
+        r98 r98Var = r98.a;
+        switch (i) {
+            case 0:
+                ((e95) n((b31) obj2, (p95) obj)).q(r98Var);
+                break;
+            default:
+                ((e95) n((b31) obj2, (v95) obj)).q(r98Var);
+                break;
+        }
+        return r98Var;
+    }
+
+    @Override // defpackage.g00
+    public final b31 n(b31 b31Var, Object obj) {
+        int i = this.d0;
+        PerAppProxyActivity perAppProxyActivity = this.f0;
+        switch (i) {
+            case 0:
+                e95 e95Var = new e95(perAppProxyActivity, b31Var, 0);
+                e95Var.e0 = obj;
+                return e95Var;
+            default:
+                e95 e95Var2 = new e95(perAppProxyActivity, b31Var, 1);
+                e95Var2.e0 = obj;
+                return e95Var2;
+        }
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        String string;
+        int i = this.d0;
+        r98 r98Var = r98.a;
+        PerAppProxyActivity perAppProxyActivity = this.f0;
+        Object obj2 = this.e0;
+        switch (i) {
+            case 0:
+                p95 p95Var = (p95) obj2;
+                q48.f0(obj);
+                b6 b6Var = perAppProxyActivity.N0;
+                if (b6Var == null) {
+                    m93.a0("binding");
+                    throw null;
+                }
+                b6Var.f0.setVisibility(8);
+                b6 b6Var2 = perAppProxyActivity.N0;
+                if (b6Var2 == null) {
+                    m93.a0("binding");
+                    throw null;
+                }
+                b6Var2.g0.setVisibility(8);
+                b6 b6Var3 = perAppProxyActivity.N0;
+                if (b6Var3 == null) {
+                    m93.a0("binding");
+                    throw null;
+                }
+                b6Var3.Y.setVisibility(8);
+                int ordinal = p95Var.ordinal();
+                if (ordinal == 0) {
+                    b6 b6Var4 = perAppProxyActivity.N0;
+                    if (b6Var4 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    ih4.X(b6Var4.e0, vr5.settingsCategory);
+                    b6 b6Var5 = perAppProxyActivity.N0;
+                    if (b6Var5 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    b6Var5.f0.setVisibility(0);
+                    b6 b6Var6 = perAppProxyActivity.N0;
+                    if (b6Var6 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    ih4.X((HappTextView) b6Var6.o0, vr5.settingsTextDescription);
+                    b6 b6Var7 = perAppProxyActivity.N0;
+                    if (b6Var7 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    ih4.X(b6Var7.Z, vr5.settingsTextDescription);
+                } else if (ordinal == 1) {
+                    b6 b6Var8 = perAppProxyActivity.N0;
+                    if (b6Var8 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    ih4.X((HappTextView) b6Var8.o0, vr5.settingsCategory);
+                    b6 b6Var9 = perAppProxyActivity.N0;
+                    if (b6Var9 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    b6Var9.g0.setVisibility(0);
+                    b6 b6Var10 = perAppProxyActivity.N0;
+                    if (b6Var10 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    ih4.X(b6Var10.e0, vr5.settingsTextDescription);
+                    b6 b6Var11 = perAppProxyActivity.N0;
+                    if (b6Var11 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    ih4.X(b6Var11.Z, vr5.settingsTextDescription);
+                } else {
+                    if (ordinal != 2) {
+                        ku0.d();
+                        return null;
+                    }
+                    b6 b6Var12 = perAppProxyActivity.N0;
+                    if (b6Var12 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    ih4.X(b6Var12.Z, vr5.settingsCategory);
+                    b6 b6Var13 = perAppProxyActivity.N0;
+                    if (b6Var13 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    b6Var13.Y.setVisibility(0);
+                    b6 b6Var14 = perAppProxyActivity.N0;
+                    if (b6Var14 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    ih4.X((HappTextView) b6Var14.o0, vr5.settingsTextDescription);
+                    b6 b6Var15 = perAppProxyActivity.N0;
+                    if (b6Var15 == null) {
+                        m93.a0("binding");
+                        throw null;
+                    }
+                    ih4.X(b6Var15.e0, vr5.settingsTextDescription);
+                }
+                b6 b6Var16 = perAppProxyActivity.N0;
+                if (b6Var16 == null) {
+                    m93.a0("binding");
+                    throw null;
+                }
+                HappTextView happTextView = b6Var16.d0;
+                int ordinal2 = p95Var.ordinal();
+                if (ordinal2 == 0) {
+                    string = perAppProxyActivity.getString(xt5.per_app_proxy_description_off);
+                } else if (ordinal2 == 1) {
+                    string = perAppProxyActivity.getString(xt5.per_app_proxy_description_on);
+                } else {
+                    if (ordinal2 != 2) {
+                        ku0.d();
+                        return null;
+                    }
+                    string = perAppProxyActivity.getString(xt5.per_app_proxy_description_bypass);
+                }
+                happTextView.setText(string);
+                return r98Var;
+            default:
+                v95 v95Var = (v95) obj2;
+                q48.f0(obj);
+                int i2 = PerAppProxyActivity.S0;
+                if (v95Var instanceof u95) {
+                    ku8.M(perAppProxyActivity, xt5.warning_settings_after_tunnel_restart);
+                    return r98Var;
+                }
+                if (v95Var instanceof s95) {
+                    String string2 = perAppProxyActivity.getString(xt5.per_app_proxy_google_apps_total, Integer.valueOf(((s95) v95Var).a));
+                    string2.getClass();
+                    ku8.P(perAppProxyActivity, string2);
+                    return r98Var;
+                }
+                if (!(v95Var instanceof t95)) {
+                    ku0.d();
+                    return null;
+                }
+                String string3 = perAppProxyActivity.getString(xt5.per_app_proxy_spy_apps_total, Integer.valueOf(((t95) v95Var).a));
+                string3.getClass();
+                ku8.P(perAppProxyActivity, string3);
+                return r98Var;
+        }
+    }
 }

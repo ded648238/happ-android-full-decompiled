@@ -1,6 +1,6 @@
 .class public Lj$/time/format/k;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -93,7 +93,7 @@
     const/4 v0, 0x0
 
     .line 2
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 3
     :goto_0
@@ -250,10 +250,10 @@
     .line 74
     .line 75
     .line 76
-    move-result p1
+    move-result p0
 
     .line 77
-    return p1
+    return p0
 
     .line 78
     :cond_2
@@ -400,17 +400,17 @@
 
     .line 2
     .line 3
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 4
-    return p1
+    return p0
 
     .line 5
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 6
-    return p1
+    return p0
 .end method
 
 .method public final c(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/lang/String;
@@ -445,10 +445,10 @@
 
     .line 14
     .line 15
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return-object p1
+    return-object p0
 
     .line 17
     :cond_0
@@ -539,27 +539,27 @@
     .line 57
     .line 58
     .line 59
-    iget-object p1, p0, Lj$/time/format/k;->b:Ljava/lang/String;
+    iget-object p0, p0, Lj$/time/format/k;->b:Ljava/lang/String;
 
     .line 60
     .line 61
-    return-object p1
+    return-object p0
 .end method
 
 .method public d(Ljava/lang/String;Ljava/lang/String;Lj$/time/format/k;)Lj$/time/format/k;
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Lj$/time/format/k;
+    new-instance p0, Lj$/time/format/k;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2, p3}, Lj$/time/format/k;-><init>(Ljava/lang/String;Ljava/lang/String;Lj$/time/format/k;)V
+    invoke-direct {p0, p1, p2, p3}, Lj$/time/format/k;-><init>(Ljava/lang/String;Ljava/lang/String;Lj$/time/format/k;)V
 
     .line 4
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
 .method public e(Ljava/lang/CharSequence;II)Z
@@ -587,10 +587,10 @@
     .line 10
     .line 11
     .line 12
-    move-result p1
+    move-result p0
 
     .line 13
-    return p1
+    return p0
 
     .line 14
     :cond_0
@@ -616,7 +616,7 @@
 
     .line 23
     :cond_1
-    const/4 p3, 0x0
+    move p3, v1
 
     .line 24
     :goto_0
@@ -685,8 +685,8 @@
 
     .line 53
     :cond_3
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 54
-    return p1
+    return p0
 .end method

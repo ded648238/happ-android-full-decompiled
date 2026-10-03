@@ -1,37 +1,53 @@
 .class public final Lor0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final synthetic a:Lor0;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final b:Ljs4;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Les2;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Lor0;->a:I
+
+    .line 13
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 14
+    iput-object p1, p0, Lor0;->b:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lkd7;)V
     .locals 1
 
     .line 1
-    new-instance v0, Lor0;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput v0, p0, Lor0;->a:I
 
+    .line 3
     .line 4
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 5
     .line 6
-    sput-object v0, Lor0;->a:Lor0;
-
     .line 7
-    .line 8
-    sget-object v0, Ljs4;->T:Ljs4;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 8
     .line 9
     .line 10
-    sput-object v0, Lor0;->b:Ljs4;
+    iput-object p1, p0, Lor0;->b:Ljava/lang/Object;
 
     .line 11
     .line 12

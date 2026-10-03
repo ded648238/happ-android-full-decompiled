@@ -9,53 +9,54 @@ import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 import android.view.ViewOutlineProvider;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import defpackage.oi0;
-import defpackage.wa5;
+import defpackage.pp0;
+import defpackage.vu5;
 import kotlin.Metadata;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b?\b\u0016\u0018\u00002\u00020\u0001B\u0019\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007J\u0017\u0010\u000b\u001a\u00020\n2\u0006\u0010\t\u001a\u00020\bH\u0016¢\u0006\u0004\b\u000b\u0010\fJ\u0019\u0010\u000f\u001a\u00020\n2\b\u0010\u000e\u001a\u0004\u0018\u00010\rH\u0016¢\u0006\u0004\b\u000f\u0010\u0010J\u0017\u0010\u0013\u001a\u00020\n2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b\u0013\u0010\u0014J\u0017\u0010\u0016\u001a\u00020\n2\u0006\u0010\u0015\u001a\u00020\u0011H\u0016¢\u0006\u0004\b\u0016\u0010\u0014J\u000f\u0010\u0017\u001a\u00020\rH\u0017¢\u0006\u0004\b\u0017\u0010\u0018R$\u0010 \u001a\u0004\u0018\u00010\u00198\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u001a\u0010\u001b\u001a\u0004\b\u001c\u0010\u001d\"\u0004\b\u001e\u0010\u001fR*\u0010'\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\"\u0010#\u001a\u0004\b$\u0010%\"\u0004\b&\u0010\u0014R*\u0010+\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b(\u0010#\u001a\u0004\b)\u0010%\"\u0004\b*\u0010\u0014R*\u0010/\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b,\u0010#\u001a\u0004\b-\u0010%\"\u0004\b.\u0010\u0014R*\u00103\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b0\u0010#\u001a\u0004\b1\u0010%\"\u0004\b2\u0010\u0014R*\u00107\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b4\u0010#\u001a\u0004\b5\u0010%\"\u0004\b6\u0010\u0014R*\u0010;\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b8\u0010#\u001a\u0004\b9\u0010%\"\u0004\b:\u0010\u0014R*\u0010?\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b<\u0010#\u001a\u0004\b=\u0010%\"\u0004\b>\u0010\u0014R0\u0010E\u001a\u0004\u0018\u00010\b2\n\b\u0001\u0010!\u001a\u0004\u0018\u00010\b8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b@\u0010A\u001a\u0004\bB\u0010C\"\u0004\b\u000b\u0010DR*\u0010I\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\bF\u0010#\u001a\u0004\bG\u0010%\"\u0004\bH\u0010\u0014R,\u0010O\u001a\u00020\b2\b\b\u0001\u0010!\u001a\u00020\b8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\bJ\u0010K\u001a\u0004\bL\u0010M\"\u0004\bN\u0010\fR*\u0010S\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\bP\u0010#\u001a\u0004\bQ\u0010%\"\u0004\bR\u0010\u0014R*\u0010W\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\bT\u0010#\u001a\u0004\bU\u0010%\"\u0004\bV\u0010\u0014¨\u0006X"}, d2 = {"Lcom/tistory/zladnrms/roundablelayout/RoundableLayout;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "", "color", "Lbh7;", "setBackgroundColor", "(I)V", "Landroid/view/ViewOutlineProvider;", "provider", "setOutlineProvider", "(Landroid/view/ViewOutlineProvider;)V", "", "elevation", "setElevation", "(F)V", "translationZ", "setTranslationZ", "getOutlineProvider", "()Landroid/view/ViewOutlineProvider;", "Landroid/graphics/Path;", "j0", "Landroid/graphics/Path;", "getPath", "()Landroid/graphics/Path;", "setPath", "(Landroid/graphics/Path;)V", "path", "value", "k0", "F", "getCornerLeftTop", "()F", "setCornerLeftTop", "cornerLeftTop", "l0", "getCornerRightTop", "setCornerRightTop", "cornerRightTop", "m0", "getCornerLeftBottom", "setCornerLeftBottom", "cornerLeftBottom", "n0", "getCornerRightBottom", "setCornerRightBottom", "cornerRightBottom", "o0", "getCornerLeftSide", "setCornerLeftSide", "cornerLeftSide", "p0", "getCornerRightSide", "setCornerRightSide", "cornerRightSide", "q0", "getCornerAll", "setCornerAll", "cornerAll", "r0", "Ljava/lang/Integer;", "getBackgroundColor", "()Ljava/lang/Integer;", "(Ljava/lang/Integer;)V", "backgroundColor", "s0", "getStrokeLineWidth", "setStrokeLineWidth", "strokeLineWidth", "t0", "I", "getStrokeLineColor", "()I", "setStrokeLineColor", "strokeLineColor", "u0", "getDashLineGap", "setDashLineGap", "dashLineGap", "v0", "getDashLineWidth", "setDashLineWidth", "dashLineWidth", "library_release"}, k = 1, mv = {1, 4, 0})
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b?\b\u0016\u0018\u00002\u00020\u0001B\u0019\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007J\u0017\u0010\u000b\u001a\u00020\n2\u0006\u0010\t\u001a\u00020\bH\u0016¢\u0006\u0004\b\u000b\u0010\fJ\u0019\u0010\u000f\u001a\u00020\n2\b\u0010\u000e\u001a\u0004\u0018\u00010\rH\u0016¢\u0006\u0004\b\u000f\u0010\u0010J\u0017\u0010\u0013\u001a\u00020\n2\u0006\u0010\u0012\u001a\u00020\u0011H\u0016¢\u0006\u0004\b\u0013\u0010\u0014J\u0017\u0010\u0016\u001a\u00020\n2\u0006\u0010\u0015\u001a\u00020\u0011H\u0016¢\u0006\u0004\b\u0016\u0010\u0014J\u000f\u0010\u0017\u001a\u00020\rH\u0017¢\u0006\u0004\b\u0017\u0010\u0018R$\u0010 \u001a\u0004\u0018\u00010\u00198\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u001a\u0010\u001b\u001a\u0004\b\u001c\u0010\u001d\"\u0004\b\u001e\u0010\u001fR*\u0010'\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b\"\u0010#\u001a\u0004\b$\u0010%\"\u0004\b&\u0010\u0014R*\u0010+\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b(\u0010#\u001a\u0004\b)\u0010%\"\u0004\b*\u0010\u0014R*\u0010/\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b,\u0010#\u001a\u0004\b-\u0010%\"\u0004\b.\u0010\u0014R*\u00103\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b0\u0010#\u001a\u0004\b1\u0010%\"\u0004\b2\u0010\u0014R*\u00107\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b4\u0010#\u001a\u0004\b5\u0010%\"\u0004\b6\u0010\u0014R*\u0010;\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b8\u0010#\u001a\u0004\b9\u0010%\"\u0004\b:\u0010\u0014R*\u0010?\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b<\u0010#\u001a\u0004\b=\u0010%\"\u0004\b>\u0010\u0014R0\u0010E\u001a\u0004\u0018\u00010\b2\n\b\u0001\u0010!\u001a\u0004\u0018\u00010\b8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\b@\u0010A\u001a\u0004\bB\u0010C\"\u0004\b\u000b\u0010DR*\u0010I\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\bF\u0010#\u001a\u0004\bG\u0010%\"\u0004\bH\u0010\u0014R,\u0010O\u001a\u00020\b2\b\b\u0001\u0010!\u001a\u00020\b8\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\bJ\u0010K\u001a\u0004\bL\u0010M\"\u0004\bN\u0010\fR*\u0010S\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\bP\u0010#\u001a\u0004\bQ\u0010%\"\u0004\bR\u0010\u0014R*\u0010W\u001a\u00020\u00112\u0006\u0010!\u001a\u00020\u00118\u0006@FX\u0086\u000e¢\u0006\u0012\n\u0004\bT\u0010#\u001a\u0004\bU\u0010%\"\u0004\bV\u0010\u0014¨\u0006X"}, d2 = {"Lcom/tistory/zladnrms/roundablelayout/RoundableLayout;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", HttpUrl.FRAGMENT_ENCODE_SET, "color", "Lr98;", "setBackgroundColor", "(I)V", "Landroid/view/ViewOutlineProvider;", "provider", "setOutlineProvider", "(Landroid/view/ViewOutlineProvider;)V", HttpUrl.FRAGMENT_ENCODE_SET, "elevation", "setElevation", "(F)V", "translationZ", "setTranslationZ", "getOutlineProvider", "()Landroid/view/ViewOutlineProvider;", "Landroid/graphics/Path;", "s0", "Landroid/graphics/Path;", "getPath", "()Landroid/graphics/Path;", "setPath", "(Landroid/graphics/Path;)V", "path", "value", "t0", "F", "getCornerLeftTop", "()F", "setCornerLeftTop", "cornerLeftTop", "u0", "getCornerRightTop", "setCornerRightTop", "cornerRightTop", "v0", "getCornerLeftBottom", "setCornerLeftBottom", "cornerLeftBottom", "w0", "getCornerRightBottom", "setCornerRightBottom", "cornerRightBottom", "x0", "getCornerLeftSide", "setCornerLeftSide", "cornerLeftSide", "y0", "getCornerRightSide", "setCornerRightSide", "cornerRightSide", "z0", "getCornerAll", "setCornerAll", "cornerAll", "A0", "Ljava/lang/Integer;", "getBackgroundColor", "()Ljava/lang/Integer;", "(Ljava/lang/Integer;)V", "backgroundColor", "B0", "getStrokeLineWidth", "setStrokeLineWidth", "strokeLineWidth", "C0", "I", "getStrokeLineColor", "()I", "setStrokeLineColor", "strokeLineColor", "D0", "getDashLineGap", "setDashLineGap", "dashLineGap", "E0", "getDashLineWidth", "setDashLineWidth", "dashLineWidth", "library_release"}, k = 1, mv = {1, 4, 0})
+/* loaded from: classes.dex */
 public class RoundableLayout extends ConstraintLayout {
 
-    /* JADX INFO: renamed from: j0, reason: from kotlin metadata */
-    public Path path;
-
-    /* JADX INFO: renamed from: k0, reason: from kotlin metadata */
-    public float cornerLeftTop;
-
-    /* JADX INFO: renamed from: l0, reason: from kotlin metadata */
-    public float cornerRightTop;
-
-    /* JADX INFO: renamed from: m0, reason: from kotlin metadata */
-    public float cornerLeftBottom;
-
-    /* JADX INFO: renamed from: n0, reason: from kotlin metadata */
-    public float cornerRightBottom;
-
-    /* JADX INFO: renamed from: o0, reason: from kotlin metadata */
-    public float cornerLeftSide;
-
-    /* JADX INFO: renamed from: p0, reason: from kotlin metadata */
-    public float cornerRightSide;
-
-    /* JADX INFO: renamed from: q0, reason: from kotlin metadata */
-    public float cornerAll;
-
-    /* JADX INFO: renamed from: r0, reason: from kotlin metadata */
+    /* renamed from: A0, reason: from kotlin metadata */
     public Integer backgroundColor;
 
-    /* JADX INFO: renamed from: s0, reason: from kotlin metadata */
+    /* renamed from: B0, reason: from kotlin metadata */
     public float strokeLineWidth;
 
-    /* JADX INFO: renamed from: t0, reason: from kotlin metadata */
+    /* renamed from: C0, reason: from kotlin metadata */
     public int strokeLineColor;
 
-    /* JADX INFO: renamed from: u0, reason: from kotlin metadata */
+    /* renamed from: D0, reason: from kotlin metadata */
     public float dashLineGap;
 
-    /* JADX INFO: renamed from: v0, reason: from kotlin metadata */
+    /* renamed from: E0, reason: from kotlin metadata */
     public float dashLineWidth;
+
+    /* renamed from: s0, reason: from kotlin metadata */
+    public Path path;
+
+    /* renamed from: t0, reason: from kotlin metadata */
+    public float cornerLeftTop;
+
+    /* renamed from: u0, reason: from kotlin metadata */
+    public float cornerRightTop;
+
+    /* renamed from: v0, reason: from kotlin metadata */
+    public float cornerLeftBottom;
+
+    /* renamed from: w0, reason: from kotlin metadata */
+    public float cornerRightBottom;
+
+    /* renamed from: x0, reason: from kotlin metadata */
+    public float cornerLeftSide;
+
+    /* renamed from: y0, reason: from kotlin metadata */
+    public float cornerRightSide;
+
+    /* renamed from: z0, reason: from kotlin metadata */
+    public float cornerAll;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public RoundableLayout(Context context, AttributeSet attributeSet) {
@@ -63,20 +64,20 @@ public class RoundableLayout extends ConstraintLayout {
         context.getClass();
         attributeSet.getClass();
         this.strokeLineColor = -1;
-        TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, wa5.RoundableLayout);
-        setCornerLeftTop(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_cornerLeftTop, 0));
-        setCornerRightTop(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_cornerRightTop, 0));
-        setCornerLeftBottom(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_cornerLeftBottom, 0));
-        setCornerRightBottom(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_cornerRightBottom, 0));
-        setBackgroundColor(Integer.valueOf(typedArrayObtainStyledAttributes.getColor(wa5.RoundableLayout_backgroundColor, -1)));
-        setStrokeLineWidth(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_strokeLineWidth, 0));
-        setStrokeLineColor(typedArrayObtainStyledAttributes.getColor(wa5.RoundableLayout_strokeLineColor, -16777216));
-        setDashLineWidth(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_dashLineWidth, 0));
-        setDashLineGap(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_dashLineGap, 0));
-        setCornerLeftSide(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_cornerLeftSide, 0));
-        setCornerRightSide(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_cornerRightSide, 0));
-        setCornerAll(typedArrayObtainStyledAttributes.getDimensionPixelSize(wa5.RoundableLayout_cornerAll, 0));
-        typedArrayObtainStyledAttributes.recycle();
+        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, vu5.RoundableLayout);
+        setCornerLeftTop(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_cornerLeftTop, 0));
+        setCornerRightTop(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_cornerRightTop, 0));
+        setCornerLeftBottom(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_cornerLeftBottom, 0));
+        setCornerRightBottom(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_cornerRightBottom, 0));
+        setBackgroundColor(Integer.valueOf(obtainStyledAttributes.getColor(vu5.RoundableLayout_backgroundColor, -1)));
+        setStrokeLineWidth(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_strokeLineWidth, 0));
+        setStrokeLineColor(obtainStyledAttributes.getColor(vu5.RoundableLayout_strokeLineColor, -16777216));
+        setDashLineWidth(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_dashLineWidth, 0));
+        setDashLineGap(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_dashLineGap, 0));
+        setCornerLeftSide(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_cornerLeftSide, 0));
+        setCornerRightSide(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_cornerRightSide, 0));
+        setCornerAll(obtainStyledAttributes.getDimensionPixelSize(vu5.RoundableLayout_cornerAll, 0));
+        obtainStyledAttributes.recycle();
     }
 
     @Override // androidx.constraintlayout.widget.ConstraintLayout, android.view.ViewGroup, android.view.View
@@ -158,7 +159,7 @@ public class RoundableLayout extends ConstraintLayout {
 
     @Override // android.view.View
     public ViewOutlineProvider getOutlineProvider() {
-        return new oi0(this, 1);
+        return new pp0(this, 1);
     }
 
     public final Path getPath() {

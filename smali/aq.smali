@@ -1,32 +1,43 @@
-.class public interface abstract Laq;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Laq;
+.super Lzp;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# instance fields
+.field public final synthetic f0:Landroidx/appcompat/widget/AppCompatTextView;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/appcompat/widget/AppCompatTextView;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Laq;->f0:Landroidx/appcompat/widget/AppCompatTextView;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lzp;-><init>(Landroidx/appcompat/widget/AppCompatTextView;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract a(ILjava/lang/Object;)V
-.end method
+.method public final D(IF)V
+    .locals 0
 
-.method public abstract b(Ljava/lang/Object;)V
-.end method
+    .line 1
+    iget-object p0, p0, Laq;->f0:Landroidx/appcompat/widget/AppCompatTextView;
 
-.method public abstract d()V
-.end method
+    .line 2
+    .line 3
+    invoke-static {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatTextView;->g(Landroidx/appcompat/widget/AppCompatTextView;IF)V
 
-.method public abstract f(III)V
-.end method
-
-.method public abstract g(II)V
-.end method
-
-.method public abstract i()V
-.end method
-
-.method public abstract j(ILjava/lang/Object;)V
-.end method
-
-.method public abstract k()V
-.end method
-
-.method public abstract l(Lu72;Ljava/lang/Object;)V
+    .line 4
+    .line 5
+    .line 6
+    return-void
 .end method

@@ -1,20 +1,14 @@
 .class public final Lu5;
-.super Lxn7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ls5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final e0:Landroid/util/SparseIntArray;
+.field public static final r0:Landroid/util/SparseIntArray;
 
 
 # instance fields
-.field public final a0:Landroid/widget/RelativeLayout;
-
-.field public final b0:Landroid/widget/RelativeLayout;
-
-.field public final c0:Landroidx/appcompat/widget/Toolbar;
-
-.field public d0:J
+.field public q0:J
 
 
 # direct methods
@@ -31,11 +25,11 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lu5;->e0:Landroid/util/SparseIntArray;
+    sput-object v0, Lu5;->r0:Landroid/util/SparseIntArray;
 
     .line 7
     .line 8
-    sget v1, Ld95;->toolbar:I
+    sget v1, Let5;->ll_root:I
 
     .line 9
     .line 10
@@ -47,7 +41,7 @@
     .line 12
     .line 13
     .line 14
-    sget v1, Ld95;->ll_main:I
+    sget v1, Let5;->toolbar:I
 
     .line 15
     .line 16
@@ -59,7 +53,7 @@
     .line 18
     .line 19
     .line 20
-    sget v1, Ld95;->title_category:I
+    sget v1, Let5;->ll_main:I
 
     .line 21
     .line 22
@@ -71,7 +65,7 @@
     .line 24
     .line 25
     .line 26
-    sget v1, Ld95;->rl_reset_user_settings:I
+    sget v1, Let5;->ll_ip_address:I
 
     .line 27
     .line 28
@@ -83,7 +77,7 @@
     .line 30
     .line 31
     .line 32
-    sget v1, Ld95;->tv_reset_user_settings:I
+    sget v1, Let5;->et_ip_address:I
 
     .line 33
     .line 34
@@ -95,7 +89,7 @@
     .line 36
     .line 37
     .line 38
-    sget v1, Ld95;->tv_reset_user_settings_description:I
+    sget v1, Let5;->btn_add:I
 
     .line 39
     .line 40
@@ -107,7 +101,7 @@
     .line 42
     .line 43
     .line 44
-    sget v1, Ld95;->rl_reset_settings:I
+    sget v1, Let5;->rv_ip_addresses:I
 
     .line 45
     .line 46
@@ -119,7 +113,7 @@
     .line 48
     .line 49
     .line 50
-    sget v1, Ld95;->tv_reset_settings:I
+    sget v1, Let5;->snackbar_host_root:I
 
     .line 51
     .line 52
@@ -132,35 +126,22 @@
     .line 55
     .line 56
     .line 57
-    sget v1, Ld95;->tv_reset_settings_description:I
-
-    .line 58
-    .line 59
-    const/16 v2, 0x9
-
-    .line 60
-    .line 61
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    .line 62
-    .line 63
-    .line 64
     return-void
 .end method
 
 .method public constructor <init>(Landroid/view/View;)V
-    .locals 6
+    .locals 10
 
     .line 1
-    const/16 v0, 0xa
+    sget-object v0, Lu5;->r0:Landroid/util/SparseIntArray;
 
     .line 2
     .line 3
-    sget-object v1, Lu5;->e0:Landroid/util/SparseIntArray;
+    const/16 v1, 0x9
 
     .line 4
     .line 5
-    invoke-static {p1, v0, v1}, Lxn7;->e(Landroid/view/View;ILandroid/util/SparseIntArray;)[Ljava/lang/Object;
+    invoke-static {p1, v1, v0}, Lvi8;->e(Landroid/view/View;ILandroid/util/SparseIntArray;)[Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -168,192 +149,195 @@
     move-result-object v0
 
     .line 9
-    const/4 v1, 0x2
+    const/4 v1, 0x6
 
     .line 10
     aget-object v1, v0, v1
 
     .line 11
     .line 12
-    check-cast v1, Landroid/widget/LinearLayout;
+    move-object v4, v1
 
     .line 13
-    .line 14
-    const/4 v1, 0x7
+    check-cast v4, Landroidx/appcompat/widget/AppCompatImageButton;
 
+    .line 14
     .line 15
-    aget-object v1, v0, v1
+    const/4 v1, 0x5
 
     .line 16
-    .line 17
-    check-cast v1, Landroid/widget/RelativeLayout;
+    aget-object v1, v0, v1
 
+    .line 17
     .line 18
+    move-object v5, v1
+
     .line 19
-    const/4 v2, 0x4
+    check-cast v5, Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 20
-    aget-object v2, v0, v2
-
     .line 21
+    const/4 v1, 0x4
+
     .line 22
-    check-cast v2, Landroid/widget/RelativeLayout;
+    aget-object v1, v0, v1
 
     .line 23
     .line 24
-    const/4 v3, 0x3
+    check-cast v1, Landroid/widget/LinearLayout;
 
     .line 25
-    aget-object v3, v0, v3
-
     .line 26
+    const/4 v1, 0x3
+
     .line 27
-    check-cast v3, Lsu/happ/proxyutility/ui/foundation/component/HappSettingsTitle;
+    aget-object v1, v0, v1
 
     .line 28
     .line 29
-    const/4 v3, 0x1
+    check-cast v1, Landroid/widget/LinearLayout;
 
     .line 30
-    aget-object v3, v0, v3
-
     .line 31
+    const/4 v1, 0x1
+
     .line 32
-    check-cast v3, Landroidx/appcompat/widget/Toolbar;
+    aget-object v1, v0, v1
 
     .line 33
     .line 34
-    const/16 v4, 0x8
+    move-object v6, v1
 
     .line 35
-    .line 36
-    aget-object v4, v0, v4
+    check-cast v6, Landroid/widget/LinearLayout;
 
+    .line 36
     .line 37
+    const/4 v1, 0x7
+
     .line 38
-    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    aget-object v1, v0, v1
 
     .line 39
     .line 40
-    const/16 v4, 0x9
+    move-object v7, v1
 
     .line 41
+    check-cast v7, Landroid/view/View;
+
     .line 42
-    aget-object v4, v0, v4
-
     .line 43
+    const/16 v1, 0x8
+
     .line 44
-    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDescription;
-
     .line 45
-    .line 46
-    const/4 v4, 0x5
+    aget-object v1, v0, v1
 
+    .line 46
     .line 47
-    aget-object v4, v0, v4
+    move-object v8, v1
 
     .line 48
-    .line 49
-    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    check-cast v8, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
 
+    .line 49
     .line 50
+    const/4 v1, 0x2
+
     .line 51
-    const/4 v4, 0x6
+    aget-object v1, v0, v1
 
     .line 52
-    aget-object v4, v0, v4
-
     .line 53
+    move-object v9, v1
+
     .line 54
-    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDescription;
+    check-cast v9, Landroidx/appcompat/widget/Toolbar;
 
     .line 55
     .line 56
-    const/4 v4, 0x0
+    move-object v2, p0
 
     .line 57
-    const/4 v5, 0x0
+    move-object v3, p1
 
     .line 58
-    invoke-direct {p0, v4, p1, v5}, Lxn7;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
+    invoke-direct/range {v2 .. v9}, Ls5;-><init>(Landroid/view/View;Landroidx/appcompat/widget/AppCompatImageButton;Lsu/happ/proxyutility/ui/foundation/component/HappEditText;Landroid/widget/LinearLayout;Landroid/view/View;Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;Landroidx/appcompat/widget/Toolbar;)V
 
     .line 59
     .line 60
     .line 61
-    iput-object v1, p0, Lu5;->a0:Landroid/widget/RelativeLayout;
+    const-wide/16 p0, -0x1
 
     .line 62
     .line 63
-    iput-object v2, p0, Lu5;->b0:Landroid/widget/RelativeLayout;
+    iput-wide p0, v2, Lu5;->q0:J
 
     .line 64
     .line 65
-    iput-object v3, p0, Lu5;->c0:Landroidx/appcompat/widget/Toolbar;
+    const/4 p0, 0x0
 
     .line 66
+    aget-object p0, v0, p0
+
     .line 67
-    const-wide/16 v1, -0x1
-
     .line 68
-    .line 69
-    iput-wide v1, p0, Lu5;->d0:J
+    check-cast p0, Landroid/widget/RelativeLayout;
 
+    .line 69
     .line 70
+    const/4 p1, 0x0
+
     .line 71
-    aget-object v0, v0, v5
+    invoke-virtual {p0, p1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 72
     .line 73
-    check-cast v0, Landroid/widget/LinearLayout;
-
     .line 74
-    .line 75
-    invoke-virtual {v0, v4}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v2, v3}, Lvi8;->g(Landroid/view/View;)V
 
+    .line 75
     .line 76
     .line 77
+    monitor-enter v2
+
     .line 78
-    invoke-virtual {p0, p1}, Lxn7;->h(Landroid/view/View;)V
+    const-wide/16 p0, 0x1
 
     .line 79
     .line 80
-    .line 81
-    monitor-enter p0
-
-    .line 82
-    const-wide/16 v0, 0x1
-
-    .line 83
-    .line 84
     :try_start_0
-    iput-wide v0, p0, Lu5;->d0:J
+    iput-wide p0, v2, Lu5;->q0:J
 
-    .line 85
-    .line 86
-    monitor-exit p0
+    .line 81
+    .line 82
+    monitor-exit v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 87
-    invoke-virtual {p0}, Lxn7;->g()V
+    .line 83
+    invoke-virtual {v2}, Lvi8;->f()V
 
-    .line 88
-    .line 89
-    .line 90
+    .line 84
+    .line 85
+    .line 86
     return-void
 
-    .line 91
+    .line 87
     :catchall_0
-    move-exception p1
+    move-exception v0
 
-    .line 92
+    .line 88
+    move-object p0, v0
+
+    .line 89
     :try_start_1
-    monitor-exit p0
+    monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 93
-    throw p1
+    .line 90
+    throw p0
 .end method
 
 
@@ -370,7 +354,7 @@
     .line 3
     .line 4
     :try_start_0
-    iput-wide v0, p0, Lu5;->d0:J
+    iput-wide v0, p0, Lu5;->q0:J
 
     .line 5
     .line 6
@@ -393,14 +377,14 @@
 .end method
 
 .method public final b()Z
-    .locals 5
+    .locals 4
 
     .line 1
     monitor-enter p0
 
     .line 2
     :try_start_0
-    iget-wide v0, p0, Lu5;->d0:J
+    iget-wide v0, p0, Lu5;->q0:J
 
     .line 3
     .line 4
@@ -408,11 +392,11 @@
 
     .line 5
     .line 6
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 7
     .line 8
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
     .line 9
     .line 10
@@ -436,10 +420,10 @@
     monitor-exit p0
 
     .line 16
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    return v0
+    return p0
 
     .line 18
     :goto_0

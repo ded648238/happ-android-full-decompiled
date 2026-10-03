@@ -1,74 +1,91 @@
 .class public final La90;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Laj5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public T:Lk15;
+.field public a:[B
 
-.field public synthetic U:Ljava/lang/Object;
-
-.field public final synthetic V:Lb90;
-
-.field public W:I
-
-
-# direct methods
-.method public constructor <init>(Lb90;Law0;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, La90;->V:Lb90;
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
+.field public b:I
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iput-object p1, p0, La90;->U:Ljava/lang/Object;
+    iget-object v0, p0, La90;->a:[B
 
     .line 2
     .line 3
-    iget p1, p0, La90;->W:I
+    iget p0, p0, La90;->b:I
 
     .line 4
     .line 5
-    const/high16 v0, -0x80000000
+    invoke-static {v0, p0}, Ljava/util/Arrays;->copyOf([BI)[B
 
     .line 6
     .line 7
-    or-int/2addr p1, v0
-
     .line 8
-    iput p1, p0, La90;->W:I
+    move-result-object p0
 
     .line 9
-    .line 10
-    iget-object p1, p0, La90;->V:Lb90;
+    return-object p0
+.end method
 
+.method public final b(I)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, La90;->a:[B
+
+    .line 2
+    .line 3
+    array-length v1, v0
+
+    .line 4
+    if-ge v1, p1, :cond_1
+
+    .line 5
+    .line 6
+    array-length v1, v0
+
+    .line 7
+    mul-int/lit8 v1, v1, 0x2
+
+    .line 8
+    .line 9
+    if-ge p1, v1, :cond_0
+
+    .line 10
     .line 11
+    move p1, v1
+
     .line 12
-    const/4 v0, 0x0
+    :cond_0
+    invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([BI)[B
 
     .line 13
-    invoke-virtual {p1, v0, p0}, Lb90;->c(Lk15;Lyv0;)Ljava/lang/Object;
-
     .line 14
     .line 15
-    .line 16
     move-result-object p1
 
+    .line 16
+    iput-object p1, p0, La90;->a:[B
+
     .line 17
-    return-object p1
+    .line 18
+    :cond_1
+    return-void
+.end method
+
+.method public final d()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, La90;->b:I
+
+    .line 2
+    .line 3
+    return p0
 .end method

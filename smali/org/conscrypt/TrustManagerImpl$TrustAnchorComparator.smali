@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/TrustManagerImpl$TrustAnchorComparator;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -84,13 +84,13 @@
 
     invoke-virtual {p0, p1, p2}, Lorg/conscrypt/TrustManagerImpl$TrustAnchorComparator;->compare(Ljava/security/cert/TrustAnchor;Ljava/security/cert/TrustAnchor;)I
 
-    move-result p1
+    move-result p0
 
-    return p1
+    return p0
 .end method
 
 .method public compare(Ljava/security/cert/TrustAnchor;Ljava/security/cert/TrustAnchor;)I
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/security/cert/TrustAnchor;->getTrustedCert()Ljava/security/cert/X509Certificate;
@@ -98,7 +98,7 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
     invoke-virtual {p2}, Ljava/security/cert/TrustAnchor;->getTrustedCert()Ljava/security/cert/X509Certificate;
@@ -106,20 +106,20 @@
     .line 6
     .line 7
     .line 8
-    move-result-object p2
+    move-result-object p1
 
     .line 9
-    sget-object v0, Lorg/conscrypt/TrustManagerImpl$TrustAnchorComparator;->CERT_COMPARATOR:Lorg/conscrypt/CertificatePriorityComparator;
+    sget-object p2, Lorg/conscrypt/TrustManagerImpl$TrustAnchorComparator;->CERT_COMPARATOR:Lorg/conscrypt/CertificatePriorityComparator;
 
     .line 10
     .line 11
-    invoke-virtual {v0, p1, p2}, Lorg/conscrypt/CertificatePriorityComparator;->compare(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)I
+    invoke-virtual {p2, p0, p1}, Lorg/conscrypt/CertificatePriorityComparator;->compare(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)I
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result p0
 
     .line 15
-    return p1
+    return p0
 .end method

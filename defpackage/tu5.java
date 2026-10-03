@@ -1,17 +1,86 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class tu5 extends zv5 {
-    public static final tu5 R = new tu5(-16777216);
-    public static final tu5 S = new tu5(0);
-    public final int Q;
+import android.R;
 
-    public tu5(int i) {
-        this.Q = i;
-    }
-
-    public final String toString() {
-        return String.format("#%08x", Integer.valueOf(this.Q));
-    }
+/* loaded from: classes.dex */
+public abstract class tu5 {
+    public static int ColorStateListItem_alpha = 3;
+    public static int ColorStateListItem_android_alpha = 1;
+    public static int ColorStateListItem_android_color = 0;
+    public static int ColorStateListItem_android_lStar = 2;
+    public static int ColorStateListItem_lStar = 4;
+    public static int FlexboxLayout_Layout_layout_alignSelf = 0;
+    public static int FlexboxLayout_Layout_layout_flexBasisPercent = 1;
+    public static int FlexboxLayout_Layout_layout_flexGrow = 2;
+    public static int FlexboxLayout_Layout_layout_flexShrink = 3;
+    public static int FlexboxLayout_Layout_layout_maxHeight = 4;
+    public static int FlexboxLayout_Layout_layout_maxWidth = 5;
+    public static int FlexboxLayout_Layout_layout_minHeight = 6;
+    public static int FlexboxLayout_Layout_layout_minWidth = 7;
+    public static int FlexboxLayout_Layout_layout_order = 8;
+    public static int FlexboxLayout_Layout_layout_wrapBefore = 9;
+    public static int FlexboxLayout_alignContent = 0;
+    public static int FlexboxLayout_alignItems = 1;
+    public static int FlexboxLayout_dividerDrawable = 2;
+    public static int FlexboxLayout_dividerDrawableHorizontal = 3;
+    public static int FlexboxLayout_dividerDrawableVertical = 4;
+    public static int FlexboxLayout_flexDirection = 5;
+    public static int FlexboxLayout_flexWrap = 6;
+    public static int FlexboxLayout_justifyContent = 7;
+    public static int FlexboxLayout_maxLine = 8;
+    public static int FlexboxLayout_showDivider = 9;
+    public static int FlexboxLayout_showDividerHorizontal = 10;
+    public static int FlexboxLayout_showDividerVertical = 11;
+    public static int FontFamilyFont_android_font = 0;
+    public static int FontFamilyFont_android_fontStyle = 2;
+    public static int FontFamilyFont_android_fontVariationSettings = 4;
+    public static int FontFamilyFont_android_fontWeight = 1;
+    public static int FontFamilyFont_android_ttcIndex = 3;
+    public static int FontFamilyFont_font = 5;
+    public static int FontFamilyFont_fontStyle = 6;
+    public static int FontFamilyFont_fontVariationSettings = 7;
+    public static int FontFamilyFont_fontWeight = 8;
+    public static int FontFamilyFont_ttcIndex = 9;
+    public static int FontFamily_fontProviderAuthority = 0;
+    public static int FontFamily_fontProviderCerts = 1;
+    public static int FontFamily_fontProviderFallbackQuery = 2;
+    public static int FontFamily_fontProviderFetchStrategy = 3;
+    public static int FontFamily_fontProviderFetchTimeout = 4;
+    public static int FontFamily_fontProviderPackage = 5;
+    public static int FontFamily_fontProviderQuery = 6;
+    public static int FontFamily_fontProviderSystemFontFamily = 7;
+    public static int GradientColorItem_android_color = 0;
+    public static int GradientColorItem_android_offset = 1;
+    public static int GradientColor_android_centerColor = 7;
+    public static int GradientColor_android_centerX = 3;
+    public static int GradientColor_android_centerY = 4;
+    public static int GradientColor_android_endColor = 1;
+    public static int GradientColor_android_endX = 10;
+    public static int GradientColor_android_endY = 11;
+    public static int GradientColor_android_gradientRadius = 5;
+    public static int GradientColor_android_startColor = 0;
+    public static int GradientColor_android_startX = 8;
+    public static int GradientColor_android_startY = 9;
+    public static int GradientColor_android_tileMode = 6;
+    public static int GradientColor_android_type = 2;
+    public static int RecyclerView_android_clipToPadding = 1;
+    public static int RecyclerView_android_descendantFocusability = 2;
+    public static int RecyclerView_android_orientation = 0;
+    public static int RecyclerView_fastScrollEnabled = 3;
+    public static int RecyclerView_fastScrollHorizontalThumbDrawable = 4;
+    public static int RecyclerView_fastScrollHorizontalTrackDrawable = 5;
+    public static int RecyclerView_fastScrollVerticalThumbDrawable = 6;
+    public static int RecyclerView_fastScrollVerticalTrackDrawable = 7;
+    public static int RecyclerView_layoutManager = 8;
+    public static int RecyclerView_reverseLayout = 9;
+    public static int RecyclerView_spanCount = 10;
+    public static int RecyclerView_stackFromEnd = 11;
+    public static int[] ColorStateListItem = {R.attr.color, R.attr.alpha, R.attr.lStar, su.happ.proxyutility.R.attr.alpha, su.happ.proxyutility.R.attr.lStar};
+    public static int[] FlexboxLayout = {su.happ.proxyutility.R.attr.alignContent, su.happ.proxyutility.R.attr.alignItems, su.happ.proxyutility.R.attr.dividerDrawable, su.happ.proxyutility.R.attr.dividerDrawableHorizontal, su.happ.proxyutility.R.attr.dividerDrawableVertical, su.happ.proxyutility.R.attr.flexDirection, su.happ.proxyutility.R.attr.flexWrap, su.happ.proxyutility.R.attr.justifyContent, su.happ.proxyutility.R.attr.maxLine, su.happ.proxyutility.R.attr.showDivider, su.happ.proxyutility.R.attr.showDividerHorizontal, su.happ.proxyutility.R.attr.showDividerVertical};
+    public static int[] FlexboxLayout_Layout = {su.happ.proxyutility.R.attr.layout_alignSelf, su.happ.proxyutility.R.attr.layout_flexBasisPercent, su.happ.proxyutility.R.attr.layout_flexGrow, su.happ.proxyutility.R.attr.layout_flexShrink, su.happ.proxyutility.R.attr.layout_maxHeight, su.happ.proxyutility.R.attr.layout_maxWidth, su.happ.proxyutility.R.attr.layout_minHeight, su.happ.proxyutility.R.attr.layout_minWidth, su.happ.proxyutility.R.attr.layout_order, su.happ.proxyutility.R.attr.layout_wrapBefore};
+    public static int[] FontFamily = {su.happ.proxyutility.R.attr.fontProviderAuthority, su.happ.proxyutility.R.attr.fontProviderCerts, su.happ.proxyutility.R.attr.fontProviderFallbackQuery, su.happ.proxyutility.R.attr.fontProviderFetchStrategy, su.happ.proxyutility.R.attr.fontProviderFetchTimeout, su.happ.proxyutility.R.attr.fontProviderPackage, su.happ.proxyutility.R.attr.fontProviderQuery, su.happ.proxyutility.R.attr.fontProviderSystemFontFamily};
+    public static int[] FontFamilyFont = {R.attr.font, R.attr.fontWeight, R.attr.fontStyle, R.attr.ttcIndex, R.attr.fontVariationSettings, su.happ.proxyutility.R.attr.font, su.happ.proxyutility.R.attr.fontStyle, su.happ.proxyutility.R.attr.fontVariationSettings, su.happ.proxyutility.R.attr.fontWeight, su.happ.proxyutility.R.attr.ttcIndex};
+    public static int[] GradientColor = {R.attr.startColor, R.attr.endColor, R.attr.type, R.attr.centerX, R.attr.centerY, R.attr.gradientRadius, R.attr.tileMode, R.attr.centerColor, R.attr.startX, R.attr.startY, R.attr.endX, R.attr.endY};
+    public static int[] GradientColorItem = {R.attr.color, R.attr.offset};
+    public static int[] RecyclerView = {R.attr.orientation, R.attr.clipToPadding, R.attr.descendantFocusability, su.happ.proxyutility.R.attr.fastScrollEnabled, su.happ.proxyutility.R.attr.fastScrollHorizontalThumbDrawable, su.happ.proxyutility.R.attr.fastScrollHorizontalTrackDrawable, su.happ.proxyutility.R.attr.fastScrollVerticalThumbDrawable, su.happ.proxyutility.R.attr.fastScrollVerticalTrackDrawable, su.happ.proxyutility.R.attr.layoutManager, su.happ.proxyutility.R.attr.reverseLayout, su.happ.proxyutility.R.attr.spanCount, su.happ.proxyutility.R.attr.stackFromEnd};
 }

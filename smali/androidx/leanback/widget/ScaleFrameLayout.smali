@@ -1,14 +1,14 @@
 .class public Landroidx/leanback/widget/ScaleFrameLayout;
 .super Landroid/widget/FrameLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:F
+.field public c0:F
 
-.field public R:F
+.field public d0:F
 
-.field public S:F
+.field public e0:F
 
 
 # direct methods
@@ -36,15 +36,15 @@
 
     .line 5
     .line 6
-    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->Q:F
+    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->c0:F
 
     .line 7
     .line 8
-    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->R:F
+    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->d0:F
 
     .line 9
     .line 10
-    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->S:F
+    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->e0:F
 
     .line 11
     .line 12
@@ -57,12 +57,12 @@
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
+    invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
     .line 2
     .line 3
     .line 4
-    iget p2, p0, Landroidx/leanback/widget/ScaleFrameLayout;->S:F
+    iget p2, p0, Landroidx/leanback/widget/ScaleFrameLayout;->e0:F
 
     .line 5
     .line 6
@@ -71,11 +71,11 @@
     .line 7
     .line 8
     .line 9
-    iget p2, p0, Landroidx/leanback/widget/ScaleFrameLayout;->S:F
+    iget p0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->e0:F
 
     .line 10
     .line 11
-    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleY(F)V
+    invoke-virtual {p1, p0}, Landroid/view/View;->setScaleY(F)V
 
     .line 12
     .line 13
@@ -87,7 +87,7 @@
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/FrameLayout;->addViewInLayout(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;Z)Z
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/ViewGroup;->addViewInLayout(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;Z)Z
 
     .line 2
     .line 3
@@ -99,7 +99,7 @@
 
     .line 6
     .line 7
-    iget p3, p0, Landroidx/leanback/widget/ScaleFrameLayout;->S:F
+    iget p3, p0, Landroidx/leanback/widget/ScaleFrameLayout;->e0:F
 
     .line 8
     .line 9
@@ -108,11 +108,11 @@
     .line 10
     .line 11
     .line 12
-    iget p3, p0, Landroidx/leanback/widget/ScaleFrameLayout;->S:F
+    iget p0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->e0:F
 
     .line 13
     .line 14
-    invoke-virtual {p1, p3}, Landroid/view/View;->setScaleY(F)V
+    invoke-virtual {p1, p0}, Landroid/view/View;->setScaleY(F)V
 
     .line 15
     .line 16
@@ -187,7 +187,7 @@
 
     .line 29
     :goto_0
-    iget v5, v0, Landroidx/leanback/widget/ScaleFrameLayout;->Q:F
+    iget v5, v0, Landroidx/leanback/widget/ScaleFrameLayout;->c0:F
 
     .line 30
     .line 31
@@ -195,11 +195,11 @@
 
     .line 32
     .line 33
-    const/high16 v7, 0x3f000000    # 0.5f
+    cmpl-float v5, v5, v6
 
     .line 34
     .line 35
-    cmpl-float v5, v5, v6
+    const/high16 v7, 0x3f000000    # 0.5f
 
     .line 36
     .line 37
@@ -215,7 +215,7 @@
     move-result v5
 
     .line 43
-    iget v8, v0, Landroidx/leanback/widget/ScaleFrameLayout;->Q:F
+    iget v8, v0, Landroidx/leanback/widget/ScaleFrameLayout;->c0:F
 
     .line 44
     .line 45
@@ -306,7 +306,7 @@
     move-result v9
 
     .line 81
-    iget v10, v0, Landroidx/leanback/widget/ScaleFrameLayout;->R:F
+    iget v10, v0, Landroidx/leanback/widget/ScaleFrameLayout;->d0:F
 
     .line 82
     .line 83
@@ -326,7 +326,7 @@
     move-result v6
 
     .line 91
-    iget v10, v0, Landroidx/leanback/widget/ScaleFrameLayout;->R:F
+    iget v10, v0, Landroidx/leanback/widget/ScaleFrameLayout;->d0:F
 
     .line 92
     .line 93
@@ -720,7 +720,7 @@
     .locals 4
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->Q:F
+    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->c0:F
 
     .line 2
     .line 3
@@ -736,7 +736,7 @@
 
     .line 8
     .line 9
-    iget v3, p0, Landroidx/leanback/widget/ScaleFrameLayout;->R:F
+    iget v3, p0, Landroidx/leanback/widget/ScaleFrameLayout;->d0:F
 
     .line 10
     .line 11
@@ -811,7 +811,7 @@
 
     .line 41
     :goto_1
-    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->R:F
+    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->d0:F
 
     .line 42
     .line 43
@@ -880,50 +880,48 @@
     int-to-float p1, p1
 
     .line 72
-    iget p2, p0, Landroidx/leanback/widget/ScaleFrameLayout;->Q:F
+    iget p2, p0, Landroidx/leanback/widget/ScaleFrameLayout;->c0:F
 
     .line 73
     .line 74
-    mul-float p1, p1, p2
+    mul-float/2addr p1, p2
 
     .line 75
-    .line 76
     add-float/2addr p1, v3
 
-    .line 77
+    .line 76
     float-to-int p1, p1
 
-    .line 78
+    .line 77
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
+    .line 78
     .line 79
     .line 80
-    .line 81
     move-result p2
 
-    .line 82
+    .line 81
     int-to-float p2, p2
 
+    .line 82
+    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->d0:F
+
     .line 83
-    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->R:F
-
     .line 84
-    .line 85
-    mul-float p2, p2, v0
+    mul-float/2addr p2, v0
 
-    .line 86
-    .line 87
+    .line 85
     add-float/2addr p2, v3
 
-    .line 88
+    .line 86
     float-to-int p2, p2
 
-    .line 89
+    .line 87
     invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
+    .line 88
+    .line 89
     .line 90
-    .line 91
-    .line 92
     return-void
 .end method
 
@@ -931,7 +929,7 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->S:F
+    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->e0:F
 
     .line 2
     .line 3
@@ -943,7 +941,7 @@
 
     .line 6
     .line 7
-    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->S:F
+    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->e0:F
 
     .line 8
     .line 9
@@ -1004,23 +1002,23 @@
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    throw p0
 .end method
 
 .method public setLayoutScaleX(F)V
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->Q:F
+    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->c0:F
 
     .line 2
     .line 3
@@ -1032,7 +1030,7 @@
 
     .line 6
     .line 7
-    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->Q:F
+    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->c0:F
 
     .line 8
     .line 9
@@ -1049,7 +1047,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->R:F
+    iget v0, p0, Landroidx/leanback/widget/ScaleFrameLayout;->d0:F
 
     .line 2
     .line 3
@@ -1061,7 +1059,7 @@
 
     .line 6
     .line 7
-    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->R:F
+    iput p1, p0, Landroidx/leanback/widget/ScaleFrameLayout;->d0:F
 
     .line 8
     .line 9

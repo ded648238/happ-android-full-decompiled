@@ -1,59 +1,54 @@
 package defpackage;
 
-import android.os.Build;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import java.util.List;
+import androidx.compose.ui.node.LayoutNode;
+import java.util.Comparator;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class qf {
-    public final rf a;
-    public final nf b;
-    public final nf c;
-    public final View d;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class qf implements Comparator {
+    public final /* synthetic */ int X;
 
-    public qf(rf rfVar, nf nfVar, nf nfVar2, View view) {
-        this.a = rfVar;
-        this.b = nfVar;
-        this.c = nfVar2;
-        this.d = view;
+    public /* synthetic */ qf(int i) {
+        this.X = i;
     }
 
-    public final boolean a(Menu menu) {
-        int i;
-        px6 px6Var = (px6) this.b.invoke();
-        int i2 = 0;
-        if (rt2.f(px6Var, null)) {
-            return false;
-        }
-        menu.clear();
-        List list = px6Var.a;
-        int size = list.size();
-        int i3 = 1;
-        int i4 = 1;
-        for (int i5 = 0; i5 < size; i5++) {
-            ox6 ox6Var = (ox6) list.get(i5);
-            if (ox6Var instanceof xx6) {
-                i = i3 + 1;
-                xx6 xx6Var = (xx6) ox6Var;
-                MenuItem menuItemAdd = menu.add(i4, i3, i3, xx6Var.b);
-                menuItemAdd.setShowAsAction(2);
-                menuItemAdd.setOnMenuItemClickListener(new pf(i2, xx6Var, this));
-            } else {
-                if (ox6Var instanceof dy6) {
-                    if (Build.VERSION.SDK_INT >= 28) {
-                        i = i3 + 1;
-                        dy6 dy6Var = (dy6) ox6Var;
-                        uk.b(menu, i3, this.d.getContext(), dy6Var.b, dy6Var.c);
-                    }
-                } else if (ox6Var instanceof by6) {
-                    i4++;
+    @Override // java.util.Comparator
+    public final int compare(Object obj, Object obj2) {
+        switch (this.X) {
+            case 0:
+                return m93.p(((nj5) obj2).a, ((nj5) obj).a);
+            case 1:
+                byte[] bArr = (byte[]) obj;
+                byte[] bArr2 = (byte[]) obj2;
+                if (bArr.length != bArr2.length) {
+                    return bArr.length - bArr2.length;
                 }
-            }
-            i3 = i;
+                for (int i = 0; i < bArr.length; i++) {
+                    byte b = bArr[i];
+                    byte b2 = bArr2[i];
+                    if (b != b2) {
+                        return b - b2;
+                    }
+                }
+                return 0;
+            case 2:
+                return m93.p(((ka3) obj).b, ((ka3) obj2).b);
+            case 3:
+                u73 u73Var = (u73) obj;
+                u73 u73Var2 = (u73) obj2;
+                return (u73Var.Y - u73Var.X) - (u73Var2.Y - u73Var2.X);
+            case 4:
+                LayoutNode layoutNode = (LayoutNode) obj;
+                LayoutNode layoutNode2 = (LayoutNode) obj2;
+                float f = layoutNode.E0.p.E0;
+                float f2 = layoutNode2.E0.p.E0;
+                return f == f2 ? m93.p(layoutNode.x(), layoutNode2.x()) : Float.compare(f, f2);
+            case 5:
+                return m93.p(((nz3) obj).a, ((nz3) obj2).a);
+            case 6:
+                return ((uw) obj).a.compareTo(((uw) obj2).a);
+            default:
+                return ((Number) hp6.b.H(obj, obj2)).intValue();
         }
-        return true;
     }
 }

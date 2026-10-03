@@ -1,38 +1,42 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class nt implements bg4 {
-    public static final nt a = new nt();
-    public static final bv1 b = bv1.a("sdkVersion");
-    public static final bv1 c = bv1.a("model");
-    public static final bv1 d = bv1.a("hardware");
-    public static final bv1 e = bv1.a("device");
-    public static final bv1 f = bv1.a("product");
-    public static final bv1 g = bv1.a("osBuild");
-    public static final bv1 h = bv1.a("manufacturer");
-    public static final bv1 i = bv1.a("fingerprint");
-    public static final bv1 j = bv1.a("locale");
-    public static final bv1 k = bv1.a("country");
-    public static final bv1 l = bv1.a("mccMnc");
-    public static final bv1 m = bv1.a("applicationBuild");
+import android.widget.LinearLayout;
+import java.util.Iterator;
 
-    @Override // defpackage.ho1
-    public final void a(Object obj, Object obj2) {
-        oa oaVar = (oa) obj;
-        cg4 cg4Var = (cg4) obj2;
-        cg4Var.a(b, ((ju) oaVar).a);
-        ju juVar = (ju) oaVar;
-        cg4Var.a(c, juVar.b);
-        cg4Var.a(d, juVar.c);
-        cg4Var.a(e, juVar.d);
-        cg4Var.a(f, juVar.e);
-        cg4Var.a(g, juVar.f);
-        cg4Var.a(h, juVar.g);
-        cg4Var.a(i, juVar.h);
-        cg4Var.a(j, juVar.i);
-        cg4Var.a(k, juVar.j);
-        cg4Var.a(l, juVar.k);
-        cg4Var.a(m, juVar.l);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class nt implements uq6 {
+    public final /* synthetic */ int a;
+    public final Object b;
+
+    public /* synthetic */ nt(int i, Object obj) {
+        this.a = i;
+        this.b = obj;
+    }
+
+    @Override // defpackage.uq6
+    public final Iterator iterator() {
+        int i = this.a;
+        Object obj = this.b;
+        switch (i) {
+            case 0:
+                return new t1((Object[]) obj);
+            case 1:
+                return ((Iterable) obj).iterator();
+            case 2:
+                return new n24(this);
+            case 3:
+                return nn3.V((xi2) obj);
+            case 4:
+                return (Iterator) obj;
+            case 5:
+                return new yq6(0, obj);
+            case 6:
+                return new m24((String) obj);
+            case 7:
+                return new ll2(this);
+            default:
+                return new t1(7, (LinearLayout) obj);
+        }
     }
 }

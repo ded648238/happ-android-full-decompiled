@@ -1,226 +1,452 @@
 .class public final Lg6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lvi8;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Lbn7;
+
+# static fields
+.field public static final n0:Landroid/util/SparseIntArray;
 
 
 # instance fields
-.field public final Q:Landroid/widget/RelativeLayout;
-
-.field public final R:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-.field public final S:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-.field public final T:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-.field public final U:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;
-
-.field public final V:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;
-
-.field public final W:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-.field public final X:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
-
-.field public final Y:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
-
-.field public final Z:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
-
-.field public final a0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
-
-.field public final b0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
-
-.field public final c0:Landroid/widget/ImageView;
-
-.field public final d0:Landroid/widget/ImageView;
-
-.field public final e0:Landroid/widget/LinearLayout;
-
-.field public final f0:Landroid/widget/LinearLayout;
-
-.field public final g0:Landroid/widget/LinearLayout;
-
-.field public final h0:Landroid/widget/LinearLayout;
-
-.field public final i0:Landroid/widget/LinearLayout;
-
 .field public final j0:Landroid/widget/RelativeLayout;
 
-.field public final k0:Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
+.field public final k0:Landroid/widget/RelativeLayout;
 
-.field public final l0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+.field public final l0:Landroidx/appcompat/widget/Toolbar;
 
-.field public final m0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
-
-.field public final n0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
-
-.field public final o0:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsTitle;
-
-.field public final p0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
-
-.field public final q0:Landroidx/appcompat/widget/Toolbar;
-
-.field public final r0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
-
-.field public final s0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
-
-.field public final t0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
-
-.field public final u0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
-
-.field public final v0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+.field public m0:J
 
 
 # direct methods
-.method public constructor <init>(Landroid/widget/RelativeLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/RelativeLayout;Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSettingsTitle;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Landroidx/appcompat/widget/Toolbar;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Landroid/util/SparseIntArray;
 
     .line 2
-    iput-object p1, p0, Lg6;->Q:Landroid/widget/RelativeLayout;
-
     .line 3
-    iput-object p2, p0, Lg6;->R:Landroidx/constraintlayout/widget/ConstraintLayout;
+    invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
     .line 4
-    iput-object p3, p0, Lg6;->S:Landroidx/constraintlayout/widget/ConstraintLayout;
-
     .line 5
-    iput-object p4, p0, Lg6;->T:Landroidx/constraintlayout/widget/ConstraintLayout;
-
     .line 6
-    iput-object p5, p0, Lg6;->U:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;
+    sput-object v0, Lg6;->n0:Landroid/util/SparseIntArray;
 
     .line 7
-    iput-object p6, p0, Lg6;->V:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;
-
     .line 8
-    iput-object p7, p0, Lg6;->W:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    sget v1, Let5;->toolbar:I
 
     .line 9
-    iput-object p8, p0, Lg6;->X:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
-
     .line 10
-    iput-object p9, p0, Lg6;->Y:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    const/4 v2, 0x1
 
     .line 11
-    iput-object p10, p0, Lg6;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     .line 12
-    iput-object p11, p0, Lg6;->a0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
-
     .line 13
-    iput-object p12, p0, Lg6;->b0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
-
     .line 14
-    iput-object p13, p0, Lg6;->c0:Landroid/widget/ImageView;
+    sget v1, Let5;->ll_main:I
 
     .line 15
-    iput-object p14, p0, Lg6;->d0:Landroid/widget/ImageView;
-
     .line 16
-    iput-object p15, p0, Lg6;->e0:Landroid/widget/LinearLayout;
-
-    move-object/from16 p1, p16
+    const/4 v2, 0x2
 
     .line 17
-    iput-object p1, p0, Lg6;->f0:Landroid/widget/LinearLayout;
-
-    move-object/from16 p1, p17
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     .line 18
-    iput-object p1, p0, Lg6;->g0:Landroid/widget/LinearLayout;
-
-    move-object/from16 p1, p18
-
     .line 19
-    iput-object p1, p0, Lg6;->h0:Landroid/widget/LinearLayout;
-
-    move-object/from16 p1, p19
-
     .line 20
-    iput-object p1, p0, Lg6;->i0:Landroid/widget/LinearLayout;
-
-    move-object/from16 p1, p20
+    sget v1, Let5;->title_category:I
 
     .line 21
-    iput-object p1, p0, Lg6;->j0:Landroid/widget/RelativeLayout;
-
-    move-object/from16 p1, p21
-
     .line 22
-    iput-object p1, p0, Lg6;->k0:Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
-
-    move-object/from16 p1, p22
+    const/4 v2, 0x3
 
     .line 23
-    iput-object p1, p0, Lg6;->l0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
-
-    move-object/from16 p1, p23
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     .line 24
-    iput-object p1, p0, Lg6;->m0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
-
-    move-object/from16 p1, p24
-
     .line 25
-    iput-object p1, p0, Lg6;->n0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
-
-    move-object/from16 p1, p25
-
     .line 26
-    iput-object p1, p0, Lg6;->o0:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsTitle;
-
-    move-object/from16 p1, p26
+    sget v1, Let5;->rl_reset_user_settings:I
 
     .line 27
-    iput-object p1, p0, Lg6;->p0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
-
-    move-object/from16 p1, p27
-
     .line 28
-    iput-object p1, p0, Lg6;->q0:Landroidx/appcompat/widget/Toolbar;
-
-    move-object/from16 p1, p28
+    const/4 v2, 0x4
 
     .line 29
-    iput-object p1, p0, Lg6;->r0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
-
-    move-object/from16 p1, p29
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     .line 30
-    iput-object p1, p0, Lg6;->s0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
-
-    move-object/from16 p1, p30
-
     .line 31
-    iput-object p1, p0, Lg6;->t0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
-
-    move-object/from16 p1, p31
-
     .line 32
-    iput-object p1, p0, Lg6;->u0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
-
-    move-object/from16 p1, p32
+    sget v1, Let5;->tv_reset_user_settings:I
 
     .line 33
-    iput-object p1, p0, Lg6;->v0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    .line 34
+    const/4 v2, 0x5
 
+    .line 35
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    .line 36
+    .line 37
+    .line 38
+    sget v1, Let5;->tv_reset_user_settings_description:I
+
+    .line 39
+    .line 40
+    const/4 v2, 0x6
+
+    .line 41
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    .line 42
+    .line 43
+    .line 44
+    sget v1, Let5;->rl_reset_settings:I
+
+    .line 45
+    .line 46
+    const/4 v2, 0x7
+
+    .line 47
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    .line 48
+    .line 49
+    .line 50
+    sget v1, Let5;->tv_reset_settings:I
+
+    .line 51
+    .line 52
+    const/16 v2, 0x8
+
+    .line 53
+    .line 54
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    .line 55
+    .line 56
+    .line 57
+    sget v1, Let5;->tv_reset_settings_description:I
+
+    .line 58
+    .line 59
+    const/16 v2, 0x9
+
+    .line 60
+    .line 61
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    .line 62
+    .line 63
+    .line 64
     return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;)V
+    .locals 6
+
+    .line 1
+    const/16 v0, 0xa
+
+    .line 2
+    .line 3
+    sget-object v1, Lg6;->n0:Landroid/util/SparseIntArray;
+
+    .line 4
+    .line 5
+    invoke-static {p1, v0, v1}, Lvi8;->e(Landroid/view/View;ILandroid/util/SparseIntArray;)[Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    const/4 v1, 0x2
+
+    .line 10
+    aget-object v1, v0, v1
+
+    .line 11
+    .line 12
+    check-cast v1, Landroid/widget/LinearLayout;
+
+    .line 13
+    .line 14
+    const/4 v1, 0x7
+
+    .line 15
+    aget-object v1, v0, v1
+
+    .line 16
+    .line 17
+    check-cast v1, Landroid/widget/RelativeLayout;
+
+    .line 18
+    .line 19
+    const/4 v2, 0x4
+
+    .line 20
+    aget-object v2, v0, v2
+
+    .line 21
+    .line 22
+    check-cast v2, Landroid/widget/RelativeLayout;
+
+    .line 23
+    .line 24
+    const/4 v3, 0x3
+
+    .line 25
+    aget-object v3, v0, v3
+
+    .line 26
+    .line 27
+    check-cast v3, Lsu/happ/proxyutility/ui/foundation/component/HappSettingsTitle;
+
+    .line 28
+    .line 29
+    const/4 v3, 0x1
+
+    .line 30
+    aget-object v3, v0, v3
+
+    .line 31
+    .line 32
+    check-cast v3, Landroidx/appcompat/widget/Toolbar;
+
+    .line 33
+    .line 34
+    const/16 v4, 0x8
+
+    .line 35
+    .line 36
+    aget-object v4, v0, v4
+
+    .line 37
+    .line 38
+    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+
+    .line 39
+    .line 40
+    const/16 v4, 0x9
+
+    .line 41
+    .line 42
+    aget-object v4, v0, v4
+
+    .line 43
+    .line 44
+    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDescription;
+
+    .line 45
+    .line 46
+    const/4 v4, 0x5
+
+    .line 47
+    aget-object v4, v0, v4
+
+    .line 48
+    .line 49
+    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+
+    .line 50
+    .line 51
+    const/4 v4, 0x6
+
+    .line 52
+    aget-object v4, v0, v4
+
+    .line 53
+    .line 54
+    check-cast v4, Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDescription;
+
+    .line 55
+    .line 56
+    const/4 v4, 0x0
+
+    .line 57
+    const/4 v5, 0x0
+
+    .line 58
+    invoke-direct {p0, v4, p1, v5}, Lvi8;-><init>(ILandroid/view/View;Ljava/lang/Object;)V
+
+    .line 59
+    .line 60
+    .line 61
+    iput-object v1, p0, Lg6;->j0:Landroid/widget/RelativeLayout;
+
+    .line 62
+    .line 63
+    iput-object v2, p0, Lg6;->k0:Landroid/widget/RelativeLayout;
+
+    .line 64
+    .line 65
+    iput-object v3, p0, Lg6;->l0:Landroidx/appcompat/widget/Toolbar;
+
+    .line 66
+    .line 67
+    const-wide/16 v1, -0x1
+
+    .line 68
+    .line 69
+    iput-wide v1, p0, Lg6;->m0:J
+
+    .line 70
+    .line 71
+    aget-object v0, v0, v4
+
+    .line 72
+    .line 73
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    .line 74
+    .line 75
+    invoke-virtual {v0, v5}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    .line 76
+    .line 77
+    .line 78
+    invoke-virtual {p0, p1}, Lvi8;->g(Landroid/view/View;)V
+
+    .line 79
+    .line 80
+    .line 81
+    monitor-enter p0
+
+    .line 82
+    const-wide/16 v0, 0x1
+
+    .line 83
+    .line 84
+    :try_start_0
+    iput-wide v0, p0, Lg6;->m0:J
+
+    .line 85
+    .line 86
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 87
+    invoke-virtual {p0}, Lvi8;->f()V
+
+    .line 88
+    .line 89
+    .line 90
+    return-void
+
+    .line 91
+    :catchall_0
+    move-exception p1
+
+    .line 92
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 93
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final getRoot()Landroid/view/View;
-    .locals 1
+.method public final a()V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lg6;->Q:Landroid/widget/RelativeLayout;
+    monitor-enter p0
 
     .line 2
+    const-wide/16 v0, 0x0
+
     .line 3
-    return-object v0
+    .line 4
+    :try_start_0
+    iput-wide v0, p0, Lg6;->m0:J
+
+    .line 5
+    .line 6
+    monitor-exit p0
+
+    .line 7
+    return-void
+
+    .line 8
+    :catchall_0
+    move-exception v0
+
+    .line 9
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 10
+    throw v0
+.end method
+
+.method public final b()Z
+    .locals 4
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-wide v0, p0, Lg6;->m0:J
+
+    .line 3
+    .line 4
+    const-wide/16 v2, 0x0
+
+    .line 5
+    .line 6
+    cmp-long v0, v0, v2
+
+    .line 7
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    const/4 v0, 0x1
+
+    .line 11
+    monitor-exit p0
+
+    .line 12
+    return v0
+
+    .line 13
+    :catchall_0
+    move-exception v0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    monitor-exit p0
+
+    .line 16
+    const/4 p0, 0x0
+
+    .line 17
+    return p0
+
+    .line 18
+    :goto_0
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 19
+    throw v0
 .end method

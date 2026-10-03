@@ -1,51 +1,25 @@
 .class public final Lwk3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+# instance fields
+.field public final a:Lpn4;
+
+
+# direct methods
+.method public constructor <init>(Lpn4;)V
     .locals 0
 
     .line 1
-    instance-of p1, p1, Lwk3;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    if-nez p1, :cond_0
-
     .line 4
+    iput-object p1, p0, Lwk3;->a:Lpn4;
+
     .line 5
-    const/4 p1, 0x0
-
     .line 6
-    return p1
-
-    .line 7
-    :cond_0
-    const/4 p1, 0x1
-
-    .line 8
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    const-string v0, "Mode(value=0)"
-
-    .line 2
-    .line 3
-    return-object v0
+    return-void
 .end method

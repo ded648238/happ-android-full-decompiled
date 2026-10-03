@@ -4,18 +4,18 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.ListView;
-import defpackage.hb5;
+import defpackage.gv5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class AlertController$RecycleListView extends ListView {
-    public final int Q;
-    public final int R;
+    public final int c0;
+    public final int d0;
 
     public AlertController$RecycleListView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, hb5.RecycleListView);
-        this.R = typedArrayObtainStyledAttributes.getDimensionPixelOffset(hb5.RecycleListView_paddingBottomNoButtons, -1);
-        this.Q = typedArrayObtainStyledAttributes.getDimensionPixelOffset(hb5.RecycleListView_paddingTopNoTitle, -1);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, gv5.RecycleListView);
+        this.d0 = obtainStyledAttributes.getDimensionPixelOffset(gv5.RecycleListView_paddingBottomNoButtons, -1);
+        this.c0 = obtainStyledAttributes.getDimensionPixelOffset(gv5.RecycleListView_paddingTopNoTitle, -1);
     }
 }

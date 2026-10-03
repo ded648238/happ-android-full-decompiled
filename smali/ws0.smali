@@ -1,12 +1,29 @@
 .class public final Lws0;
-.super Lys0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# virtual methods
-.method public final a(J)J
-    .locals 0
+# static fields
+.field public static final a:Lws0;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    return-wide p1
+    new-instance v0, Lws0;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lws0;->a:Lws0;
+
+    .line 7
+    .line 8
+    return-void
 .end method

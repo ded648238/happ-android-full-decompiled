@@ -1,30 +1,34 @@
 package defpackage;
 
-import java.util.Iterator;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class rn1 extends tn1 {
+    public final String a;
+    public final Throwable b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class rn1 extends er {
-    public static final rn1 Q = new rn1();
-
-    @Override // defpackage.er
-    public final int a() {
-        return 0;
+    public rn1(String str, Throwable th) {
+        this.a = str;
+        this.b = th;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    @Override // defpackage.er
-    public final void b(int i, qk qkVar) {
-        throw new IllegalStateException();
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof rn1)) {
+            return false;
+        }
+        rn1 rn1Var = (rn1) obj;
+        return this.a.equals(rn1Var.a) && m93.h(this.b, rn1Var.b);
     }
 
-    @Override // defpackage.er
-    public final /* bridge */ /* synthetic */ Object get(int i) {
-        return null;
+    public final int hashCode() {
+        int hashCode = this.a.hashCode() * 31;
+        Throwable th = this.b;
+        return hashCode + (th == null ? 0 : th.hashCode());
     }
 
-    @Override // defpackage.er, java.lang.Iterable
-    public final Iterator iterator() {
-        return new qn1();
+    public final String toString() {
+        return "Failure(errorMessage=" + this.a + ", exception=" + this.b + ")";
     }
 }

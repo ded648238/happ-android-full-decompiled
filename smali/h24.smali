@@ -1,473 +1,178 @@
 .class public final Lh24;
-.super Landroid/widget/BaseAdapter;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Lk24;
+.field public final synthetic a:I
 
-.field public R:I
-
-.field public S:Z
-
-.field public final T:Z
-
-.field public final U:Landroid/view/LayoutInflater;
-
-.field public final V:I
+.field public final synthetic b:Li24;
 
 
 # direct methods
-.method public constructor <init>(Lk24;Landroid/view/LayoutInflater;ZI)V
-    .locals 1
+.method public synthetic constructor <init>(Li24;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
+    iput p2, p0, Lh24;->a:I
 
     .line 2
     .line 3
-    .line 4
-    const/4 v0, -0x1
+    iput-object p1, p0, Lh24;->b:Li24;
 
+    .line 4
     .line 5
-    iput v0, p0, Lh24;->R:I
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     .line 6
     .line 7
-    iput-boolean p3, p0, Lh24;->T:Z
-
     .line 8
-    .line 9
-    iput-object p2, p0, Lh24;->U:Landroid/view/LayoutInflater;
-
-    .line 10
-    .line 11
-    iput-object p1, p0, Lh24;->Q:Lk24;
-
-    .line 12
-    .line 13
-    iput p4, p0, Lh24;->V:I
-
-    .line 14
-    .line 15
-    invoke-virtual {p0}, Lh24;->a()V
-
-    .line 16
-    .line 17
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 5
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lh24;->Q:Lk24;
+    iget v0, p0, Lh24;->a:I
 
     .line 2
     .line 3
-    iget-object v1, v0, Lk24;->v:Lp24;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    if-eqz v1, :cond_1
-
     .line 6
-    .line 7
-    invoke-virtual {v0}, Lk24;->i()V
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationEnd(Landroid/animation/Animator;)V
 
+    .line 7
     .line 8
     .line 9
+    return-void
+
     .line 10
-    iget-object v0, v0, Lk24;->j:Ljava/util/ArrayList;
+    :pswitch_0
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationEnd(Landroid/animation/Animator;)V
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
     .line 13
+    iget-object p0, p0, Lh24;->b:Li24;
+
     .line 14
     .line 15
-    move-result v2
+    invoke-virtual {p0}, Li24;->e()V
 
     .line 16
-    const/4 v3, 0x0
-
     .line 17
-    :goto_0
-    if-ge v3, v2, :cond_1
-
     .line 18
-    .line 19
-    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    iget-object p1, p0, Li24;->j:Lx00;
 
+    .line 19
     .line 20
+    if-eqz p1, :cond_0
+
     .line 21
     .line 22
-    move-result-object v4
+    iget-object p0, p0, Lq3;->a:Ljava/lang/Object;
 
     .line 23
-    check-cast v4, Lp24;
-
     .line 24
+    check-cast p0, Lt33;
+
     .line 25
-    if-ne v4, v1, :cond_0
-
     .line 26
-    .line 27
-    iput v3, p0, Lh24;->R:I
+    invoke-virtual {p1, p0}, Lx00;->a(Landroid/graphics/drawable/Drawable;)V
 
+    .line 27
     .line 28
     .line 29
+    :cond_0
     return-void
 
     .line 30
-    :cond_0
-    add-int/lit8 v3, v3, 0x1
+    nop
 
     .line 31
-    .line 32
-    goto :goto_0
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    .line 33
-    :cond_1
-    const/4 v0, -0x1
+.method public onAnimationRepeat(Landroid/animation/Animator;)V
+    .locals 2
 
-    .line 34
-    iput v0, p0, Lh24;->R:I
+    .line 1
+    iget v0, p0, Lh24;->a:I
 
-    .line 35
-    .line 36
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationRepeat(Landroid/animation/Animator;)V
+
+    .line 7
+    .line 8
+    .line 9
     return-void
-.end method
 
-.method public final b(I)Lp24;
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lh24;->T:Z
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lh24;->Q:Lk24;
-
-    .line 4
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    invoke-virtual {v1}, Lk24;->i()V
-
-    .line 8
-    .line 9
     .line 10
-    iget-object v0, v1, Lk24;->j:Ljava/util/ArrayList;
+    :pswitch_0
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationRepeat(Landroid/animation/Animator;)V
 
     .line 11
     .line 12
-    goto :goto_0
-
     .line 13
-    :cond_0
-    invoke-virtual {v1}, Lk24;->l()Ljava/util/ArrayList;
+    iget-object p0, p0, Lh24;->b:Li24;
 
     .line 14
     .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    :goto_0
-    iget v1, p0, Lh24;->R:I
-
-    .line 18
-    .line 19
-    if-ltz v1, :cond_1
-
-    .line 20
-    .line 21
-    if-lt p1, v1, :cond_1
-
-    .line 22
-    .line 23
-    add-int/lit8 p1, p1, 0x1
-
-    .line 24
-    .line 25
-    :cond_1
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object p1
-
-    .line 29
-    check-cast p1, Lp24;
-
-    .line 30
-    .line 31
-    return-object p1
-.end method
-
-.method public final getCount()I
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lh24;->T:Z
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lh24;->Q:Lk24;
-
-    .line 4
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    invoke-virtual {v1}, Lk24;->i()V
-
-    .line 8
-    .line 9
-    .line 10
-    iget-object v0, v1, Lk24;->j:Ljava/util/ArrayList;
-
-    .line 11
-    .line 12
-    goto :goto_0
-
-    .line 13
-    :cond_0
-    invoke-virtual {v1}, Lk24;->l()Ljava/util/ArrayList;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    :goto_0
-    iget v1, p0, Lh24;->R:I
-
-    .line 18
-    .line 19
-    if-gez v1, :cond_1
-
-    .line 20
-    .line 21
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v0
-
-    .line 25
-    return v0
-
-    .line 26
-    :cond_1
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v0
-
-    .line 30
-    add-int/lit8 v0, v0, -0x1
-
-    .line 31
-    .line 32
-    return v0
-.end method
-
-.method public final bridge synthetic getItem(I)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Lh24;->b(I)Lp24;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final getItemId(I)J
-    .locals 2
-
-    .line 1
-    int-to-long v0, p1
-
-    .line 2
-    return-wide v0
-.end method
-
-.method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 5
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    if-nez p2, :cond_0
-
-    .line 3
-    .line 4
-    iget-object p2, p0, Lh24;->U:Landroid/view/LayoutInflater;
-
-    .line 5
-    .line 6
-    iget v1, p0, Lh24;->V:I
-
-    .line 7
-    .line 8
-    invoke-virtual {p2, v1, p3, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p2
-
-    .line 12
-    :cond_0
-    invoke-virtual {p0, p1}, Lh24;->b(I)Lp24;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p3
+    iget p1, p0, Li24;->g:I
 
     .line 16
-    iget p3, p3, Lp24;->b:I
-
     .line 17
-    .line 18
-    add-int/lit8 v1, p1, -0x1
-
-    .line 19
-    .line 20
-    if-ltz v1, :cond_1
-
-    .line 21
-    .line 22
-    invoke-virtual {p0, v1}, Lh24;->b(I)Lp24;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v1
-
-    .line 26
-    iget v1, v1, Lp24;->b:I
-
-    .line 27
-    .line 28
-    goto :goto_0
-
-    .line 29
-    :cond_1
-    move v1, p3
-
-    .line 30
-    :goto_0
-    move-object v2, p2
-
-    .line 31
-    check-cast v2, Landroidx/appcompat/view/menu/ListMenuItemView;
-
-    .line 32
-    .line 33
-    iget-object v3, p0, Lh24;->Q:Lk24;
-
-    .line 34
-    .line 35
-    invoke-virtual {v3}, Lk24;->m()Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v3
-
-    .line 39
-    const/4 v4, 0x1
-
-    .line 40
-    if-eqz v3, :cond_2
-
-    .line 41
-    .line 42
-    if-eq p3, v1, :cond_2
-
-    .line 43
-    .line 44
     const/4 v0, 0x1
 
-    .line 45
-    :cond_2
-    invoke-virtual {v2, v0}, Landroidx/appcompat/view/menu/ListMenuItemView;->setGroupDividerEnabled(Z)V
+    .line 18
+    add-int/2addr p1, v0
 
-    .line 46
-    .line 47
-    .line 48
-    move-object p3, p2
+    .line 19
+    iget-object v1, p0, Li24;->f:Lcom/google/android/material/progressindicator/LinearProgressIndicatorSpec;
 
-    .line 49
-    check-cast p3, Li34;
+    .line 20
+    .line 21
+    iget-object v1, v1, Ly00;->e:[I
 
-    .line 50
-    .line 51
-    iget-boolean v0, p0, Lh24;->S:Z
+    .line 22
+    .line 23
+    array-length v1, v1
 
-    .line 52
-    .line 53
-    if-eqz v0, :cond_3
+    .line 24
+    rem-int/2addr p1, v1
 
-    .line 54
-    .line 55
-    invoke-virtual {v2, v4}, Landroidx/appcompat/view/menu/ListMenuItemView;->setForceShowIcon(Z)V
+    .line 25
+    iput p1, p0, Li24;->g:I
 
-    .line 56
-    .line 57
-    .line 58
-    :cond_3
-    invoke-virtual {p0, p1}, Lh24;->b(I)Lp24;
+    .line 26
+    .line 27
+    iput-boolean v0, p0, Li24;->h:Z
 
-    .line 59
-    .line 60
-    .line 61
-    move-result-object p1
-
-    .line 62
-    invoke-interface {p3, p1}, Li34;->c(Lp24;)V
-
-    .line 63
-    .line 64
-    .line 65
-    return-object p2
-.end method
-
-.method public final notifyDataSetChanged()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lh24;->a()V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-super {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
-
-    .line 5
-    .line 6
-    .line 7
+    .line 28
+    .line 29
     return-void
+
+    .line 30
+    nop
+
+    .line 31
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,6 +1,6 @@
 .class public Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;
 .super Ljava/io/FilterOutputStream;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -49,10 +49,10 @@
     move-result-wide v0
 
     .line 8
-    long-to-int v1, v0
+    long-to-int v0, v0
 
     .line 9
-    sput v1, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
+    sput v0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
 
     .line 10
     .line 11
@@ -76,7 +76,7 @@
 .end method
 
 .method public constructor <init>(Ljava/io/OutputStream;I)V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -89,9 +89,9 @@
     invoke-direct {p0, p1, v0}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;-><init>(Ljava/io/OutputStream;Lcom/github/luben/zstd/BufferPool;)V
 
     .line 47
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-wide p0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
-    invoke-static {v0, v1, p2}, Lcom/github/luben/zstd/Zstd;->setCompressionLevel(JI)I
+    invoke-static {p0, p1, p2}, Lcom/github/luben/zstd/Zstd;->setCompressionLevel(JI)I
 
     return-void
 .end method
@@ -203,15 +203,15 @@
     invoke-direct {p0, p1, p2}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;-><init>(Ljava/io/OutputStream;Lcom/github/luben/zstd/BufferPool;)V
 
     .line 45
-    iget-wide p1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-wide p0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
-    invoke-static {p1, p2, p3}, Lcom/github/luben/zstd/Zstd;->setCompressionLevel(JI)I
+    invoke-static {p0, p1, p3}, Lcom/github/luben/zstd/Zstd;->setCompressionLevel(JI)I
 
     return-void
 .end method
 
 .method private close(Z)V
-    .locals 7
+    .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -234,46 +234,46 @@
     const/4 v0, 0x1
 
     .line 7
-    :try_start_0
-    iget-boolean v1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameStarted:Z
+    const/4 v1, 0x0
 
     .line 8
-    .line 9
-    const/4 v2, 0x0
+    :try_start_0
+    iget-boolean v2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameStarted:Z
 
+    .line 9
     .line 10
-    if-nez v1, :cond_2
+    const/4 v3, 0x0
 
     .line 11
+    if-nez v2, :cond_2
+
     .line 12
-    iget-wide v3, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
-
     .line 13
-    .line 14
-    invoke-direct {p0, v3, v4}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->resetCStream(J)I
+    iget-wide v4, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 14
     .line 15
+    invoke-direct {p0, v4, v5}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->resetCStream(J)J
+
     .line 16
     .line 17
-    move-result v1
-
     .line 18
-    int-to-long v3, v1
+    move-result-wide v4
 
     .line 19
-    invoke-static {v3, v4}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+    invoke-static {v4, v5}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
 
     .line 20
     .line 21
     .line 22
-    move-result v1
+    move-result v2
 
     .line 23
-    if-nez v1, :cond_1
+    if-nez v2, :cond_1
 
     .line 24
     .line 25
-    iput-boolean v2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iput-boolean v3, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 26
     .line 27
@@ -292,7 +292,7 @@
 
     .line 31
     .line 32
-    invoke-direct {p1, v3, v4}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
+    invoke-direct {p1, v4, v5}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
     .line 33
     .line 34
@@ -302,186 +302,227 @@
     .line 36
     :cond_2
     :goto_0
-    iget-boolean v1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 37
     .line 38
-    if-nez v1, :cond_5
+    if-nez v2, :cond_5
 
     .line 39
     .line 40
     :cond_3
-    iget-wide v3, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-wide v4, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
     .line 41
     .line 42
-    iget-object v1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
+    iget-object v2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
 
     .line 43
     .line 44
-    sget v5, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
+    sget v6, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
 
     .line 45
     .line 46
-    invoke-direct {p0, v3, v4, v1, v5}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->endStream(J[BI)I
+    invoke-direct {p0, v4, v5, v2, v6}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->endStream(J[BI)J
 
     .line 47
     .line 48
     .line 49
-    move-result v1
+    move-result-wide v4
 
     .line 50
-    int-to-long v3, v1
+    invoke-static {v4, v5}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
 
     .line 51
-    invoke-static {v3, v4}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 52
     .line 53
+    move-result v2
+
     .line 54
-    move-result v5
+    if-nez v2, :cond_4
 
     .line 55
-    if-nez v5, :cond_4
-
     .line 56
+    iget-object v2, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
+
     .line 57
-    iget-object v3, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
-
     .line 58
+    iget-object v6, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
+
     .line 59
-    iget-object v4, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
-
     .line 60
-    .line 61
-    iget-wide v5, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstPos:J
+    iget-wide v7, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstPos:J
 
+    .line 61
     .line 62
+    long-to-int v7, v7
+
     .line 63
-    long-to-int v6, v5
+    invoke-virtual {v2, v6, v3, v7}, Ljava/io/OutputStream;->write([BII)V
 
     .line 64
-    invoke-virtual {v3, v4, v2, v6}, Ljava/io/OutputStream;->write([BII)V
-
     .line 65
     .line 66
+    const-wide/16 v6, 0x0
+
     .line 67
-    if-gtz v1, :cond_3
-
     .line 68
-    .line 69
-    goto :goto_1
+    cmp-long v2, v4, v6
 
+    .line 69
     .line 70
-    :cond_4
-    new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
+    if-gtz v2, :cond_3
 
     .line 71
     .line 72
-    invoke-direct {p1, v3, v4}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
+    goto :goto_1
 
     .line 73
+    :cond_4
+    new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
+
     .line 74
     .line 75
-    throw p1
+    invoke-direct {p1, v4, v5}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
     .line 76
+    .line 77
+    .line 78
+    throw p1
+
+    .line 79
     :cond_5
     :goto_1
     if-eqz p1, :cond_6
 
-    .line 77
-    .line 78
+    .line 80
+    .line 81
     iget-object p1, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
-    .line 79
-    .line 80
+    .line 82
+    .line 83
     invoke-virtual {p1}, Ljava/io/OutputStream;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 81
-    .line 82
-    .line 83
-    :cond_6
-    iput-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
-
     .line 84
     .line 85
-    iget-object p1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->bufferPool:Lcom/github/luben/zstd/BufferPool;
-
     .line 86
+    :cond_6
+    iget-object p1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->active_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+
     .line 87
-    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstByteBuffer:Ljava/nio/ByteBuffer;
-
     .line 88
-    .line 89
-    invoke-interface {p1, v0}, Lcom/github/luben/zstd/BufferPool;->release(Ljava/nio/ByteBuffer;)V
+    if-eqz p1, :cond_7
 
+    .line 89
     .line 90
+    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
     .line 91
     .line 92
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
-
     .line 93
+    iput-object v1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->active_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+
     .line 94
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->freeCStream(J)I
-
     .line 95
-    .line 96
-    .line 97
-    return-void
-
-    .line 98
-    :goto_2
+    :cond_7
     iput-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
+    .line 96
+    .line 97
+    iget-object p1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->bufferPool:Lcom/github/luben/zstd/BufferPool;
+
+    .line 98
     .line 99
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstByteBuffer:Ljava/nio/ByteBuffer;
+
     .line 100
-    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->bufferPool:Lcom/github/luben/zstd/BufferPool;
-
     .line 101
-    .line 102
-    iget-object v1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstByteBuffer:Ljava/nio/ByteBuffer;
+    invoke-interface {p1, v0}, Lcom/github/luben/zstd/BufferPool;->release(Ljava/nio/ByteBuffer;)V
 
+    .line 102
     .line 103
     .line 104
-    invoke-interface {v0, v1}, Lcom/github/luben/zstd/BufferPool;->release(Ljava/nio/ByteBuffer;)V
+    iget-wide p0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
     .line 105
     .line 106
-    .line 107
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    invoke-static {p0, p1}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->freeCStream(J)J
 
+    .line 107
     .line 108
     .line 109
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->freeCStream(J)I
+    return-void
 
     .line 110
+    :goto_2
+    iget-object v2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->active_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+
     .line 111
     .line 112
+    if-eqz v2, :cond_8
+
+    .line 113
+    .line 114
+    invoke-virtual {v2}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 115
+    .line 116
+    .line 117
+    iput-object v1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->active_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+
+    .line 118
+    .line 119
+    :cond_8
+    iput-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
+
+    .line 120
+    .line 121
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->bufferPool:Lcom/github/luben/zstd/BufferPool;
+
+    .line 122
+    .line 123
+    iget-object v1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstByteBuffer:Ljava/nio/ByteBuffer;
+
+    .line 124
+    .line 125
+    invoke-interface {v0, v1}, Lcom/github/luben/zstd/BufferPool;->release(Ljava/nio/ByteBuffer;)V
+
+    .line 126
+    .line 127
+    .line 128
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+
+    .line 129
+    .line 130
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->freeCStream(J)J
+
+    .line 131
+    .line 132
+    .line 133
     throw p1
 .end method
 
-.method private native compressStream(J[BI[BI)I
+.method private native compressStream(J[BI[BI)J
 .end method
 
 .method private static native createCStream()J
 .end method
 
-.method private native endStream(J[BI)I
+.method private native endStream(J[BI)J
 .end method
 
-.method private native flushStream(J[BI)I
+.method private native flushStream(J[BI)J
 .end method
 
-.method private static native freeCStream(J)I
+.method private static native freeCStream(J)J
 .end method
 
 .method public static native recommendedCOutSize()J
 .end method
 
-.method private native resetCStream(J)I
+.method private native resetCStream(J)J
 .end method
 
 
@@ -498,13 +539,13 @@
 
     const/4 v0, 0x1
 
-    .line 113
+    .line 134
     :try_start_0
     invoke-direct {p0, v0}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->close(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 114
+    .line 135
     monitor-exit p0
 
     return-void
@@ -563,7 +604,7 @@
 .end method
 
 .method public declared-synchronized flush()V
-    .locals 6
+    .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -595,223 +636,229 @@
 
     .line 11
     .line 12
-    const/4 v1, 0x0
+    const-wide/16 v1, 0x0
 
     .line 13
-    if-eqz v0, :cond_2
-
     .line 14
+    const/4 v3, 0x0
+
     .line 15
-    :cond_0
-    iget-wide v2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    if-eqz v0, :cond_2
 
     .line 16
     .line 17
-    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
+    :cond_0
+    iget-wide v4, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
     .line 18
     .line 19
-    sget v4, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
 
     .line 20
     .line 21
-    invoke-direct {p0, v2, v3, v0, v4}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->endStream(J[BI)I
+    sget v6, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
 
     .line 22
     .line 23
+    invoke-direct {p0, v4, v5, v0, v6}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->endStream(J[BI)J
+
     .line 24
-    move-result v0
-
     .line 25
-    int-to-long v2, v0
-
     .line 26
-    invoke-static {v2, v3}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+    move-result-wide v4
 
     .line 27
+    invoke-static {v4, v5}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
     .line 28
     .line 29
-    move-result v4
-
     .line 30
-    if-nez v4, :cond_1
+    move-result v0
 
     .line 31
+    if-nez v0, :cond_1
+
     .line 32
-    iget-object v2, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
-
     .line 33
+    iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
+
     .line 34
-    iget-object v3, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
-
     .line 35
+    iget-object v6, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
+
     .line 36
-    iget-wide v4, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstPos:J
-
     .line 37
-    .line 38
-    long-to-int v5, v4
+    iget-wide v7, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstPos:J
 
+    .line 38
     .line 39
-    invoke-virtual {v2, v3, v1, v5}, Ljava/io/OutputStream;->write([BII)V
+    long-to-int v7, v7
 
     .line 40
+    invoke-virtual {v0, v6, v3, v7}, Ljava/io/OutputStream;->write([BII)V
+
     .line 41
     .line 42
-    if-gtz v0, :cond_0
-
     .line 43
-    .line 44
-    const/4 v0, 0x1
+    cmp-long v0, v4, v1
 
+    .line 44
     .line 45
-    iput-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    if-gtz v0, :cond_0
 
     .line 46
     .line 47
-    goto :goto_0
+    const/4 v0, 0x1
 
     .line 48
+    iput-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+
+    .line 49
+    .line 50
+    goto :goto_0
+
+    .line 51
     :catchall_0
     move-exception v0
 
-    .line 49
+    .line 52
     goto :goto_2
 
-    .line 50
+    .line 53
     :cond_1
     new-instance v0, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 51
-    .line 52
-    invoke-direct {v0, v2, v3}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
-
-    .line 53
     .line 54
     .line 55
-    throw v0
+    invoke-direct {v0, v4, v5}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
     .line 56
-    :cond_2
-    iget-wide v2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
-
     .line 57
     .line 58
-    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
+    throw v0
 
     .line 59
+    :cond_2
+    iget-wide v4, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+
     .line 60
-    sget v4, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
-
     .line 61
-    .line 62
-    invoke-direct {p0, v2, v3, v0, v4}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->flushStream(J[BI)I
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
 
+    .line 62
     .line 63
+    sget v6, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
+
     .line 64
     .line 65
-    move-result v0
+    invoke-direct {p0, v4, v5, v0, v6}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->flushStream(J[BI)J
 
     .line 66
-    int-to-long v2, v0
-
     .line 67
-    invoke-static {v2, v3}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 68
+    move-result-wide v4
+
     .line 69
+    invoke-static {v4, v5}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
     .line 70
-    move-result v4
-
     .line 71
-    if-nez v4, :cond_3
-
     .line 72
+    move-result v0
+
     .line 73
-    iget-object v2, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
+    if-nez v0, :cond_3
 
     .line 74
     .line 75
-    iget-object v3, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
+    iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     .line 76
     .line 77
-    iget-wide v4, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstPos:J
+    iget-object v6, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
 
     .line 78
     .line 79
-    long-to-int v5, v4
+    iget-wide v7, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstPos:J
 
     .line 80
-    invoke-virtual {v2, v3, v1, v5}, Ljava/io/OutputStream;->write([BII)V
-
     .line 81
-    .line 82
-    .line 83
-    if-gtz v0, :cond_2
+    long-to-int v7, v7
 
+    .line 82
+    invoke-virtual {v0, v6, v3, v7}, Ljava/io/OutputStream;->write([BII)V
+
+    .line 83
     .line 84
     .line 85
-    :goto_0
-    iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
+    cmp-long v0, v4, v1
 
     .line 86
     .line 87
-    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
+    if-gtz v0, :cond_2
 
     .line 88
     .line 89
-    .line 90
-    goto :goto_1
+    :goto_0
+    iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
+    .line 90
     .line 91
-    :cond_3
-    new-instance v0, Lcom/github/luben/zstd/ZstdIOException;
+    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
 
     .line 92
     .line 93
-    invoke-direct {v0, v2, v3}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
-
     .line 94
+    goto :goto_1
+
     .line 95
+    :cond_3
+    new-instance v0, Lcom/github/luben/zstd/ZstdIOException;
+
     .line 96
+    .line 97
+    invoke-direct {v0, v4, v5}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
+
+    .line 98
+    .line 99
+    .line 100
     throw v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 97
+    .line 101
     :cond_4
     :goto_1
     monitor-exit p0
 
-    .line 98
+    .line 102
     return-void
 
-    .line 99
+    .line 103
     :cond_5
     :try_start_1
     new-instance v0, Ljava/io/IOException;
 
-    .line 100
-    .line 101
-    const-string v1, "StreamClosed"
-
-    .line 102
-    .line 103
-    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
     .line 104
     .line 105
+    const-string v1, "StreamClosed"
+
     .line 106
+    .line 107
+    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 108
+    .line 109
+    .line 110
     throw v0
 
-    .line 107
+    .line 111
     :goto_2
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 108
+    .line 112
     throw v0
 .end method
 
@@ -828,93 +875,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionChainLog(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionChainLog(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -931,93 +1003,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionChecksums(JZ)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionChecksums(JZ)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -1096,97 +1193,160 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_5
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->loadFastDictCompress(JLcom/github/luben/zstd/ZstdDictCompress;)I
+    if-eqz v0, :cond_4
 
     .line 9
     .line 10
-    .line 11
-    move-result v0
+    if-eqz p1, :cond_0
 
+    .line 11
     .line 12
-    int-to-long v0, v0
+    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->acquireSharedLock()V
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    goto :goto_0
+
     .line 16
-    move-result v2
+    :catchall_0
+    move-exception p1
 
     .line 17
-    if-nez v2, :cond_0
+    goto :goto_1
 
     .line 18
+    :cond_0
+    :goto_0
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+
     .line 19
+    .line 20
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->loadFastDictCompress(JLcom/github/luben/zstd/ZstdDictCompress;)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v0
+
+    .line 24
+    int-to-long v0, v0
+
+    .line 25
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v2
+
+    .line 29
+    if-eqz v2, :cond_2
+
+    .line 30
+    .line 31
+    if-eqz p1, :cond_1
+
+    .line 32
+    .line 33
+    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 34
+    .line 35
+    .line 36
+    :cond_1
+    new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
+
+    .line 37
+    .line 38
+    invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
+
+    .line 39
+    .line 40
+    .line 41
+    throw p1
+
+    .line 42
+    :cond_2
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->active_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+
+    .line 43
+    .line 44
+    if-eqz v0, :cond_3
+
+    .line 45
+    .line 46
+    invoke-virtual {v0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_3
     iput-object p1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->active_dict:Lcom/github/luben/zstd/ZstdDictCompress;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 20
-    .line 21
+    .line 50
+    .line 51
     monitor-exit p0
 
-    .line 22
+    .line 52
     return-object p0
 
-    .line 23
-    :catchall_0
-    move-exception p1
-
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_0
+    .line 53
+    :cond_4
     :try_start_1
-    new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
-
-    .line 26
-    .line 27
-    invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
-
-    .line 28
-    .line 29
-    .line 30
-    throw p1
-
-    .line 31
-    :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 32
-    .line 33
+    .line 54
+    .line 55
     const-string v0, "Change of parameter on initialized stream"
 
-    .line 34
-    .line 35
+    .line 56
+    .line 57
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 36
-    .line 37
-    .line 38
+    .line 58
+    .line 59
+    .line 60
     throw p1
 
-    .line 39
-    :goto_0
+    .line 61
+    :cond_5
+    new-instance p1, Ljava/io/IOException;
+
+    .line 62
+    .line 63
+    const-string v0, "StreamClosed"
+
+    .line 64
+    .line 65
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    throw p1
+
+    .line 69
+    :goto_1
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 40
+    .line 70
     throw p1
 .end method
 
@@ -1200,13 +1360,18 @@
 
     monitor-enter p0
 
-    .line 41
+    .line 71
     :try_start_0
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
+
+    if-nez v0, :cond_2
+
+    .line 72
     iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     if-eqz v0, :cond_1
 
-    .line 42
+    .line 73
     iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
     array-length v2, p1
@@ -1217,7 +1382,7 @@
 
     int-to-long v0, p1
 
-    .line 43
+    .line 74
     invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
 
     move-result p1
@@ -1226,12 +1391,12 @@
 
     if-nez p1, :cond_0
 
-    .line 44
+    .line 75
     monitor-exit p0
 
     return-object p0
 
-    .line 45
+    .line 76
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
@@ -1245,7 +1410,7 @@
 
     goto :goto_0
 
-    .line 46
+    .line 77
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -1255,7 +1420,17 @@
 
     throw p1
 
-    .line 47
+    .line 78
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    const-string v0, "StreamClosed"
+
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 79
     :goto_0
     monitor-exit p0
     :try_end_1
@@ -1277,93 +1452,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionHashLog(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionHashLog(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -1380,93 +1580,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionJobSize(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionJobSize(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -1483,93 +1708,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionLevel(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionLevel(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -1586,93 +1836,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionLong(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionLong(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -1689,93 +1964,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionMinMatch(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionMinMatch(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -1792,93 +2092,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionOverlapLog(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionOverlapLog(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -1895,93 +2220,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionSearchLog(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionSearchLog(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -1998,93 +2348,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionStrategy(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionStrategy(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -2101,93 +2476,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionTargetLength(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionTargetLength(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -2204,93 +2604,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionWindowLog(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionWindowLog(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -2307,93 +2732,118 @@
 
     .line 2
     :try_start_0
-    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->isClosed:Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_2
 
     .line 5
     .line 6
-    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
+    iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
     .line 7
     .line 8
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionWorkers(JI)I
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    move-result p1
+    iget-wide v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
+    .line 11
     .line 12
-    int-to-long v0, p1
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/Zstd;->setCompressionWorkers(JI)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
-
     .line 14
     .line 15
+    move-result p1
+
     .line 16
+    int-to-long v0, p1
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+
+    .line 18
+    .line 19
+    .line 20
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 17
+    .line 21
     if-nez p1, :cond_0
 
-    .line 18
-    .line 19
+    .line 22
+    .line 23
     monitor-exit p0
 
-    .line 20
+    .line 24
     return-object p0
 
-    .line 21
+    .line 25
     :cond_0
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 22
-    .line 23
+    .line 26
+    .line 27
     invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 24
-    .line 25
-    .line 26
+    .line 28
+    .line 29
+    .line 30
     throw p1
 
-    .line 27
+    .line 31
     :catchall_0
     move-exception p1
 
-    .line 28
+    .line 32
     goto :goto_0
 
-    .line 29
+    .line 33
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 30
-    .line 31
-    const-string v0, "Change of parameter on initialized stream"
-
-    .line 32
-    .line 33
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 34
     .line 35
+    const-string v0, "Change of parameter on initialized stream"
+
     .line 36
+    .line 37
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
     throw p1
 
-    .line 37
+    .line 41
+    :cond_2
+    new-instance p1, Ljava/io/IOException;
+
+    .line 42
+    .line 43
+    const-string v0, "StreamClosed"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
     :goto_0
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 38
+    .line 50
     throw p1
 .end method
 
@@ -2409,14 +2859,14 @@
 
     const/4 v0, 0x1
 
-    .line 152
+    .line 163
     new-array v1, v0, [B
 
     const/4 v2, 0x0
 
     aput-byte p1, v1, v2
 
-    .line 153
+    .line 164
     invoke-virtual {p0, v1, v2, v0}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->write([BII)V
 
     return-void
@@ -2466,6 +2916,8 @@
     .line 15
     .line 16
     iget-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 17
     .line 18
@@ -2476,293 +2928,335 @@
 
     .line 20
     .line 21
+    :try_start_1
     iget-wide v2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
     .line 22
     .line 23
-    invoke-direct {p0, v2, v3}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->resetCStream(J)I
+    invoke-direct {p0, v2, v3}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->resetCStream(J)J
 
     .line 24
     .line 25
     .line 26
-    move-result v0
+    move-result-wide v2
 
     .line 27
-    int-to-long v2, v0
-
-    .line 28
     invoke-static {v2, v3}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
 
+    .line 28
     .line 29
     .line 30
-    .line 31
     move-result v0
 
-    .line 32
+    .line 31
     if-nez v0, :cond_0
 
+    .line 32
     .line 33
-    .line 34
     iput-boolean v1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameClosed:Z
 
+    .line 34
     .line 35
-    .line 36
     const/4 v0, 0x1
 
-    .line 37
+    .line 36
     iput-boolean v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->frameStarted:Z
 
+    .line 37
     .line 38
-    .line 39
     goto :goto_0
 
-    .line 40
+    .line 39
     :catchall_0
     move-exception v0
 
-    .line 41
+    .line 40
     move-object p1, v0
 
+    .line 41
+    move-object v2, p0
+
     .line 42
-    goto :goto_2
+    goto/16 :goto_4
 
     .line 43
+    .line 44
     :cond_0
     new-instance p1, Lcom/github/luben/zstd/ZstdIOException;
 
-    .line 44
     .line 45
+    .line 46
     invoke-direct {p1, v2, v3}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
-    .line 46
     .line 47
     .line 48
-    throw p1
-
     .line 49
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 50
     :cond_1
     :goto_0
     add-int v8, p2, p3
 
-    .line 50
     .line 51
+    .line 52
     int-to-long p2, p2
 
-    .line 52
+    .line 53
+    :try_start_2
     iput-wide p2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->srcPos:J
 
-    .line 53
     .line 54
+    .line 55
     :goto_1
     iget-wide p2, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->srcPos:J
 
-    .line 55
     .line 56
+    .line 57
     int-to-long v2, v8
 
-    .line 57
-    cmp-long v0, p2, v2
-
     .line 58
-    .line 59
-    if-gez v0, :cond_4
+    cmp-long p2, p2, v2
 
+    .line 59
     .line 60
+    if-gez p2, :cond_4
+
     .line 61
+    .line 62
     iget-wide v3, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->stream:J
 
-    .line 62
     .line 63
+    .line 64
     iget-object v5, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
 
-    .line 64
     .line 65
-    sget v6, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
-
     .line 66
+    sget v6, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstSize:I
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
     .line 67
+    .line 68
     move-object v2, p0
 
-    .line 68
+    .line 69
     move-object v7, p1
 
-    .line 69
-    invoke-direct/range {v2 .. v8}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->compressStream(J[BI[BI)I
-
     .line 70
+    :try_start_3
+    invoke-direct/range {v2 .. v8}, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->compressStream(J[BI[BI)J
+
     .line 71
     .line 72
-    move-result p1
-
     .line 73
-    int-to-long p1, p1
+    move-result-wide p0
 
     .line 74
-    invoke-static {p1, p2}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
+    invoke-static {p0, p1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
 
     .line 75
     .line 76
     .line 77
-    move-result p3
+    move-result p2
 
     .line 78
-    if-nez p3, :cond_3
+    if-nez p2, :cond_3
 
     .line 79
     .line 80
-    iget-wide p1, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstPos:J
+    iget-wide p0, v2, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dstPos:J
 
     .line 81
     .line 82
-    const-wide/16 v2, 0x0
+    const-wide/16 p2, 0x0
 
     .line 83
     .line 84
-    cmp-long p3, p1, v2
+    cmp-long p2, p0, p2
 
     .line 85
     .line 86
-    if-lez p3, :cond_2
+    if-lez p2, :cond_2
 
     .line 87
     .line 88
-    iget-object p3, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
+    iget-object p2, v2, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     .line 89
     .line 90
-    iget-object v0, p0, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
+    iget-object p3, v2, Lcom/github/luben/zstd/ZstdOutputStreamNoFinalizer;->dst:[B
 
     .line 91
     .line 92
-    long-to-int p2, p1
+    long-to-int p0, p0
 
     .line 93
-    invoke-virtual {p3, v0, v1, p2}, Ljava/io/OutputStream;->write([BII)V
+    invoke-virtual {p2, p3, v1, p0}, Ljava/io/OutputStream;->write([BII)V
 
     .line 94
     .line 95
     .line 96
-    :cond_2
-    move-object p1, v7
+    goto :goto_3
 
     .line 97
-    goto :goto_1
+    :catchall_1
+    move-exception v0
 
     .line 98
-    :cond_3
-    new-instance p3, Lcom/github/luben/zstd/ZstdIOException;
+    :goto_2
+    move-object p1, v0
 
     .line 99
+    goto :goto_4
+
     .line 100
-    invoke-direct {p3, p1, p2}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
+    :cond_2
+    :goto_3
+    move-object p0, v2
 
     .line 101
+    move-object p1, v7
+
     .line 102
+    goto :goto_1
+
     .line 103
-    throw p3
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :cond_3
+    new-instance p2, Lcom/github/luben/zstd/ZstdIOException;
 
     .line 104
-    :cond_4
-    monitor-exit p0
-
     .line 105
-    return-void
+    invoke-direct {p2, p0, p1}, Lcom/github/luben/zstd/ZstdIOException;-><init>(J)V
 
     .line 106
-    :cond_5
-    :try_start_1
-    new-instance p1, Ljava/io/IOException;
-
     .line 107
     .line 108
-    const-string p2, "StreamClosed"
+    throw p2
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     .line 109
+    :catchall_2
+    move-exception v0
+
     .line 110
-    invoke-direct {p1, p2}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+    move-object v2, p0
 
     .line 111
+    goto :goto_2
+
     .line 112
+    :cond_4
+    move-object v2, p0
+
     .line 113
-    throw p1
+    monitor-exit v2
 
     .line 114
-    :cond_6
-    move-object v7, p1
+    return-void
 
     .line 115
-    new-instance p1, Ljava/lang/IndexOutOfBoundsException;
+    :cond_5
+    move-object v2, p0
 
     .line 116
+    :try_start_4
+    new-instance p0, Ljava/io/IOException;
+
     .line 117
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 118
-    .line 119
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string p1, "StreamClosed"
 
+    .line 119
     .line 120
+    invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
     .line 121
     .line 122
-    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 123
+    throw p0
+
     .line 124
+    :cond_6
+    move-object v2, p0
+
     .line 125
-    const-string p3, " from offset "
+    move-object v7, p1
 
     .line 126
-    .line 127
-    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
+    .line 127
     .line 128
+    new-instance p1, Ljava/lang/StringBuilder;
+
     .line 129
     .line 130
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 131
     .line 132
     .line 133
-    const-string p2, " in buffer of size "
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 134
     .line 135
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 136
+    const-string p3, " from offset "
+
     .line 137
     .line 138
-    array-length p2, v7
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 139
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 140
     .line 141
-    .line 142
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 142
     .line 143
     .line 144
-    .line 145
-    move-result-object p2
+    const-string p2, " in buffer of size "
 
+    .line 145
     .line 146
-    invoke-direct {p1, p2}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 147
     .line 148
     .line 149
-    throw p1
+    array-length p2, v7
 
     .line 150
-    :goto_2
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 151
+    .line 152
+    .line 153
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object p1
+
+    .line 157
+    invoke-direct {p0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    .line 158
+    .line 159
+    .line 160
+    throw p0
+
+    .line 161
+    :goto_4
+    monitor-exit v2
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+
+    .line 162
     throw p1
 .end method

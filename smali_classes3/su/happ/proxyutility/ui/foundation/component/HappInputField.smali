@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -20,7 +20,7 @@
         "<init>",
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
         "res",
-        "Lbh7;",
+        "Lr98;",
         "setTitle",
         "(I)V",
         "setTitleColor",
@@ -64,19 +64,19 @@
 
 
 # static fields
-.field public static final synthetic V:I
+.field public static final synthetic h0:I
 
 
 # instance fields
-.field public final Q:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+.field public final c0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
-.field public final R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+.field public final d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
-.field public final S:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+.field public final e0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
-.field public final T:Landroid/widget/ImageView;
+.field public final f0:Landroid/widget/ImageView;
 
-.field public U:Z
+.field public g0:Z
 
 
 # direct methods
@@ -87,7 +87,7 @@
 
     const/4 v0, 0x0
 
-    .line 154
+    .line 151
     invoke-direct {p0, p1, p2, v0}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -133,7 +133,7 @@
     move-result-object v0
 
     .line 21
-    sget v1, Lt95;->happ_input_field:I
+    sget v1, Ltt5;->happ_input_field:I
 
     .line 22
     .line 23
@@ -142,7 +142,7 @@
     .line 24
     .line 25
     .line 26
-    sget v0, Ld95;->tv_input_field:I
+    sget v0, Let5;->tv_input_field:I
 
     .line 27
     .line 28
@@ -163,11 +163,11 @@
 
     .line 36
     .line 37
-    iput-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->Q:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    iput-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
     .line 38
     .line 39
-    sget v0, Ld95;->et_input_field:I
+    sget v0, Let5;->et_input_field:I
 
     .line 40
     .line 41
@@ -188,11 +188,11 @@
 
     .line 49
     .line 50
-    iput-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iput-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 51
     .line 52
-    sget v1, Ld95;->tv_input_description:I
+    sget v1, Let5;->tv_input_description:I
 
     .line 53
     .line 54
@@ -213,11 +213,11 @@
 
     .line 62
     .line 63
-    iput-object v1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->S:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    iput-object v1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
     .line 64
     .line 65
-    sget v1, Ld95;->ic_copy:I
+    sget v1, Let5;->ic_copy:I
 
     .line 66
     .line 67
@@ -238,7 +238,7 @@
 
     .line 75
     .line 76
-    iput-object v1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->T:Landroid/widget/ImageView;
+    iput-object v1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->f0:Landroid/widget/ImageView;
 
     .line 77
     .line 78
@@ -246,7 +246,7 @@
 
     .line 79
     .line 80
-    sget-object v1, Lxa5;->HappInputField:[I
+    sget-object v1, Lwu5;->HappInputField:[I
 
     .line 81
     .line 82
@@ -263,153 +263,148 @@
     .line 87
     .line 88
     .line 89
-    new-instance v1, Lj9;
+    new-instance v1, Lqr2;
 
     .line 90
     .line 91
-    const/16 v2, 0x13
+    const/4 v2, 0x0
 
     .line 92
-    .line 93
-    invoke-direct {v1, v2, p0, p1}, Lj9;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, p0, p1}, Lqr2;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
+    .line 93
     .line 94
     .line 95
-    .line 96
-    invoke-static {p2, v1}, Ll47;->h(Landroid/content/res/TypedArray;Lj72;)V
+    invoke-static {p2, v1}, Lbw7;->d(Landroid/content/res/TypedArray;Lmi2;)V
 
+    .line 96
     .line 97
     .line 98
-    .line 99
     :cond_0
-    iget-boolean p2, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->U:Z
+    iget-boolean p2, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->g0:Z
 
+    .line 99
     .line 100
-    .line 101
     if-eqz p2, :cond_1
 
+    .line 101
     .line 102
+    new-instance p2, Lw0;
+
     .line 103
-    new-instance p2, Lt0;
-
     .line 104
+    const/16 v1, 0x1d
+
     .line 105
-    const/16 v1, 0xf
-
     .line 106
-    .line 107
-    invoke-direct {p2, v1, p0}, Lt0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, v1, p0}, Lw0;-><init>(ILjava/lang/Object;)V
 
+    .line 107
     .line 108
     .line 109
-    .line 110
-    invoke-virtual {p0, p2}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {p0, p2}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
+    .line 110
     .line 111
     .line 112
-    .line 113
     :cond_1
-    new-instance p2, Lhg1;
+    new-instance p2, Lp51;
 
+    .line 113
     .line 114
+    const/4 v1, 0x3
+
     .line 115
-    const/16 v1, 0xc
+    invoke-direct {p2, v1, p0}, Lp51;-><init>(ILjava/lang/Object;)V
 
     .line 116
     .line 117
-    invoke-direct {p2, v1, p0}, Lhg1;-><init>(ILjava/lang/Object;)V
-
     .line 118
+    invoke-static {v0, p2}, Lmu4;->r0(Landroid/view/View;Lo61;)V
+
     .line 119
     .line 120
-    invoke-static {v0, p2}, Lzd7;->c0(Landroid/view/View;Lyy0;)V
-
     .line 121
+    new-instance p2, Lpr0;
+
     .line 122
     .line 123
-    new-instance p2, Lqk0;
-
-    .line 124
-    .line 125
     const/4 v0, 0x6
 
-    .line 126
-    invoke-direct {p2, v0, p0}, Lqk0;-><init>(ILjava/lang/Object;)V
+    .line 124
+    invoke-direct {p2, v0, p0}, Lpr0;-><init>(ILjava/lang/Object;)V
 
+    .line 125
+    .line 126
     .line 127
-    .line 128
-    .line 129
     invoke-virtual {p0, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 128
+    .line 129
     .line 130
+    iget-boolean p2, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->g0:Z
+
     .line 131
     .line 132
-    iget-boolean p2, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->U:Z
+    if-eqz p2, :cond_2
 
     .line 133
     .line 134
-    if-eqz p2, :cond_2
+    new-instance p2, Lwk1;
 
     .line 135
     .line 136
-    new-instance p2, Ldd1;
+    invoke-direct {p2, v1, p0, p1}, Lwk1;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 137
     .line 138
-    const/4 v0, 0x3
-
     .line 139
-    invoke-direct {p2, v0, p0, p1}, Ldd1;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {p0, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 140
     .line 141
     .line 142
-    invoke-virtual {p0, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    :cond_2
+    new-instance p2, Lpr2;
 
     .line 143
     .line 144
-    .line 145
-    :cond_2
-    new-instance p2, Lff2;
+    invoke-direct {p2, p0, p1, p3}, Lpr2;-><init>(Landroid/widget/LinearLayout;Landroid/content/Context;I)V
 
+    .line 145
     .line 146
     .line 147
-    invoke-direct {p2, p0, p1, p3}, Lff2;-><init>(Landroid/widget/LinearLayout;Landroid/content/Context;I)V
+    invoke-virtual {p0, p2}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     .line 148
     .line 149
     .line 150
-    invoke-virtual {p0, p2}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
-
-    .line 151
-    .line 152
-    .line 153
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lj72;)V
+.method public final a(Lmi2;)V
     .locals 2
 
     .line 1
-    new-instance v0, Lsr1;
+    new-instance v0, Lu02;
 
     .line 2
     .line 3
     const/4 v1, 0x1
 
     .line 4
-    invoke-direct {v0, v1, p1}, Lsr1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, Lu02;-><init>(ILjava/lang/Object;)V
 
     .line 5
     .line 6
     .line 7
-    iget-object p1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 8
     .line 9
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 10
     .line 11
@@ -418,171 +413,171 @@
 .end method
 
 .method public final getDescription()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->S:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getFilters()[Landroid/text/InputFilter;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getFilters()[Landroid/text/InputFilter;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getFilters()[Landroid/text/InputFilter;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getHint()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getHint()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getHint()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getText()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatEditText;->getText()Landroid/text/Editable;
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatEditText;->getText()Landroid/text/Editable;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
     goto :goto_0
 
     .line 14
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 15
     :goto_0
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 16
     .line 17
-    const-string v0, ""
+    const-string p0, ""
 
     .line 18
     .line 19
     :cond_1
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getTitle()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->Q:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final setDescription(I)V
-    .locals 1
+    .locals 0
 
     .line 14
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->S:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
 
 .method public final setDescription(Ljava/lang/String;)V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -593,16 +588,16 @@
     const/4 v0, 0x0
 
     .line 5
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->S:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
     .line 6
     .line 7
-    invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 11
     .line 12
@@ -611,7 +606,7 @@
 .end method
 
 .method public final setFilters([Landroid/text/InputFilter;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -619,11 +614,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
 
     .line 7
     .line 8
@@ -632,18 +627,18 @@
 .end method
 
 .method public final setHint(I)V
-    .locals 1
+    .locals 0
 
     .line 10
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setHint(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setHint(I)V
 
     return-void
 .end method
 
 .method public final setHint(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -651,11 +646,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setHint(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setHint(Ljava/lang/CharSequence;)V
 
     .line 7
     .line 8
@@ -664,14 +659,14 @@
 .end method
 
 .method public final setInputEnabled(Z)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
     .line 4
     .line 5
@@ -680,12 +675,12 @@
 .end method
 
 .method public final setText(I)V
-    .locals 1
+    .locals 0
 
     .line 61
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
@@ -699,7 +694,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 5
     .line 6
@@ -756,7 +751,7 @@
 
     .line 29
     :cond_2
-    invoke-static {p1}, Lkl6;->y(Ljava/lang/String;)Landroid/text/Editable;
+    invoke-static {p1}, Lw97;->N(Ljava/lang/String;)Landroid/text/Editable;
 
     .line 30
     .line 31
@@ -784,7 +779,7 @@
 
     .line 42
     .line 43
-    iget-boolean p1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->U:Z
+    iget-boolean p1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->g0:Z
 
     .line 44
     .line 45
@@ -799,7 +794,7 @@
 
     .line 49
     :cond_3
-    const/4 p1, 0x0
+    move p1, v0
 
     .line 50
     :goto_1
@@ -816,11 +811,11 @@
     .line 54
     .line 55
     :goto_2
-    iget-object p1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->T:Landroid/widget/ImageView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->f0:Landroid/widget/ImageView;
 
     .line 56
     .line 57
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 58
     .line 59
@@ -829,18 +824,18 @@
 .end method
 
 .method public final setTitle(I)V
-    .locals 1
+    .locals 0
 
     .line 10
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->Q:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
 
 .method public final setTitle(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -848,11 +843,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->Q:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 7
     .line 8
@@ -861,14 +856,14 @@
 .end method
 
 .method public final setTitleColor(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->Q:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Ltv3;->W(Landroid/widget/TextView;I)V
+    invoke-static {p0, p1}, Lih4;->X(Landroid/widget/TextView;I)V
 
     .line 4
     .line 5

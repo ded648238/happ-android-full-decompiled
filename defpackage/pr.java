@@ -1,92 +1,22 @@
 package defpackage;
 
-import java.util.RandomAccess;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class pr extends d31 {
+    public /* synthetic */ Object c0;
+    public final /* synthetic */ rr d0;
+    public int e0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class pr extends s1 implements RandomAccess {
-    public final /* synthetic */ int[] Q;
-
-    public pr(int[] iArr) {
-        this.Q = iArr;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public pr(rr rrVar, d31 d31Var) {
+        super(d31Var);
+        this.d0 = rrVar;
     }
 
-    @Override // defpackage.u0
-    public final int a() {
-        return this.Q.length;
-    }
-
-    /* JADX WARN: Code duplicated, block: B:13:0x001d A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:15:0x001f A[RETURN] */
-    @Override // defpackage.u0, java.util.Collection, java.util.List
-    public final boolean contains(Object obj) {
-        if (!(obj instanceof Integer)) {
-            return false;
-        }
-        int iIntValue = ((Number) obj).intValue();
-        int[] iArr = this.Q;
-        int length = iArr.length;
-        int i = 0;
-        while (i < length) {
-            if (iIntValue == iArr[i]) {
-                if (i >= 0) {
-                    return true;
-                }
-                return false;
-            }
-            i++;
-        }
-        i = -1;
-        if (i >= 0) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // java.util.List
-    public final Object get(int i) {
-        return Integer.valueOf(this.Q[i]);
-    }
-
-    @Override // defpackage.s1, java.util.List
-    public final int indexOf(Object obj) {
-        if (!(obj instanceof Integer)) {
-            return -1;
-        }
-        int iIntValue = ((Number) obj).intValue();
-        int[] iArr = this.Q;
-        int length = iArr.length;
-        for (int i = 0; i < length; i++) {
-            if (iIntValue == iArr[i]) {
-                return i;
-            }
-        }
-        return -1;
-    }
-
-    @Override // defpackage.u0, java.util.Collection
-    public final boolean isEmpty() {
-        return this.Q.length == 0;
-    }
-
-    @Override // defpackage.s1, java.util.List
-    public final int lastIndexOf(Object obj) {
-        if (obj instanceof Integer) {
-            int iIntValue = ((Number) obj).intValue();
-            int[] iArr = this.Q;
-            int length = iArr.length - 1;
-            if (length >= 0) {
-                while (true) {
-                    int i = length - 1;
-                    if (iIntValue == iArr[length]) {
-                        return length;
-                    }
-                    if (i >= 0) {
-                        length = i;
-                    }
-                }
-            }
-        }
-        return -1;
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.e0 |= Integer.MIN_VALUE;
+        return this.d0.d(this);
     }
 }

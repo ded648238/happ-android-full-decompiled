@@ -1,61 +1,80 @@
 .class public final Ls31;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lcn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lrz1;
+.implements Lxo6;
 
 
 # instance fields
-.field public a:Lg21;
+.field public n0:Z
+
+.field public final o0:Z
+
+.field public p0:Lmi2;
 
 
 # direct methods
-.method public constructor <init>(Lg21;)V
+.method public constructor <init>(ZZLmi2;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcn4;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ls31;->a:Lg21;
+    iput-boolean p1, p0, Ls31;->n0:Z
 
     .line 5
     .line 6
+    iput-boolean p2, p0, Ls31;->o0:Z
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Ls31;->p0:Lmi2;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ll06;FLwt6;)Ljava/lang/Object;
-    .locals 3
+.method public final F0()Z
+    .locals 0
 
     .line 1
-    sget-object v0, Landroidx/compose/foundation/gestures/a;->e:Lbe1;
+    iget-boolean p0, p0, Ls31;->n0:Z
 
     .line 2
     .line 3
-    new-instance v1, Lr31;
+    return p0
+.end method
+
+.method public final L()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Ls31;->o0:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final g(Lgp6;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ls31;->p0:Lmi2;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    invoke-direct {v1, p2, p0, p1, v2}, Lr31;-><init>(FLs31;Ll06;Lyv0;)V
-
-    .line 7
-    .line 8
-    .line 9
-    invoke-static {v0, v1, p3}, Lwj0;->w0(Lsw0;Lu72;Lyv0;)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p1
-
-    .line 13
-    return-object p1
+    return-void
 .end method

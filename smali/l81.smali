@@ -1,165 +1,77 @@
 .class public final Ll81;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Lg72;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public c0:Lty5;
 
-.field public final R:Lm81;
+.field public synthetic d0:Ljava/lang/Object;
+
+.field public final synthetic e0:Ln81;
+
+.field public f0:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lm81;I)V
+.method public constructor <init>(Ln81;Ld31;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Ll81;->Q:I
+    iput-object p1, p0, Ll81;->e0:Ln81;
 
     .line 2
     .line 3
-    iput-object p1, p0, Ll81;->R:Lm81;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 3
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget v0, p0, Ll81;->Q:I
+    iput-object p1, p0, Ll81;->d0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget-object v1, p0, Ll81;->R:Lm81;
+    iget p1, p0, Ll81;->f0:I
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    const/4 v0, 0x1
+    iput p1, p0, Ll81;->f0:I
 
     .line 9
-    invoke-static {v1, v0}, Lw33;->f(Lk81;Z)Lh90;
-
     .line 10
+    const/4 p1, 0x0
+
     .line 11
+    const/4 v0, 0x0
+
     .line 12
-    move-result-object v0
+    iget-object v1, p0, Ll81;->e0:Ln81;
 
     .line 13
-    return-object v0
-
     .line 14
-    :pswitch_0
-    invoke-virtual {v1}, Lk81;->Q()Ly81;
+    invoke-virtual {v1, p1, v0, p0}, Ln81;->j(Ljava/lang/Object;ZLd31;)Ljava/lang/Object;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    invoke-virtual {v0}, Ly81;->Q()Lb35;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    invoke-interface {v0}, Lb35;->b()Le35;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    if-nez v0, :cond_0
-
-    .line 27
-    .line 28
-    invoke-virtual {v1}, Lk81;->Q()Ly81;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
-
-    .line 32
-    invoke-virtual {v0}, Ly81;->Q()Lb35;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
-    sget-object v2, Lkv6;->R:Llk;
-
-    .line 37
-    .line 38
-    invoke-static {v0, v2}, Lrt2;->n(Lb35;Lmk;)Le35;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v0
-
-    .line 42
-    invoke-virtual {v1}, Lk81;->Q()Ly81;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object v1
-
-    .line 46
-    invoke-virtual {v1}, Ly81;->Q()Lb35;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object v1
-
-    .line 50
-    invoke-interface {v1}, Lal7;->c()Lod3;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v1
-
-    .line 54
-    invoke-virtual {v0, v1}, Le35;->F0(Lod3;)V
-
-    .line 55
-    .line 56
-    .line 57
-    :cond_0
-    return-object v0
-
-    .line 58
-    nop
-
-    .line 59
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p0
 .end method

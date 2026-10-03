@@ -6,42 +6,42 @@ import android.util.SparseArray;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import defpackage.i85;
+import defpackage.hs5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ThumbsBar extends LinearLayout {
-    public int Q;
-    public final int R;
-    public final int S;
-    public final int T;
-    public final int U;
-    public int V;
-    public boolean W;
+    public int c0;
+    public final int d0;
+    public final int e0;
+    public final int f0;
+    public final int g0;
+    public int h0;
+    public boolean i0;
 
     public ThumbsBar(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.Q = -1;
+        this.c0 = -1;
         new SparseArray();
-        this.W = false;
-        this.R = context.getResources().getDimensionPixelSize(i85.lb_playback_transport_thumbs_width);
-        this.S = context.getResources().getDimensionPixelSize(i85.lb_playback_transport_thumbs_height);
-        this.U = context.getResources().getDimensionPixelSize(i85.lb_playback_transport_hero_thumbs_width);
-        this.T = context.getResources().getDimensionPixelSize(i85.lb_playback_transport_hero_thumbs_height);
-        this.V = context.getResources().getDimensionPixelSize(i85.lb_playback_transport_thumbs_margin);
+        this.i0 = false;
+        this.d0 = context.getResources().getDimensionPixelSize(hs5.lb_playback_transport_thumbs_width);
+        this.e0 = context.getResources().getDimensionPixelSize(hs5.lb_playback_transport_thumbs_height);
+        this.g0 = context.getResources().getDimensionPixelSize(hs5.lb_playback_transport_hero_thumbs_width);
+        this.f0 = context.getResources().getDimensionPixelSize(hs5.lb_playback_transport_hero_thumbs_height);
+        this.h0 = context.getResources().getDimensionPixelSize(hs5.lb_playback_transport_thumbs_margin);
     }
 
     public final void a() {
         int i;
         int i2;
-        while (getChildCount() > this.Q) {
+        while (getChildCount() > this.c0) {
             removeView(getChildAt(getChildCount() - 1));
         }
         while (true) {
             int childCount = getChildCount();
-            int i3 = this.Q;
-            i = this.S;
-            i2 = this.R;
+            int i3 = this.c0;
+            i = this.e0;
+            i2 = this.d0;
             if (childCount >= i3) {
                 break;
             } else {
@@ -53,8 +53,8 @@ public class ThumbsBar extends LinearLayout {
             View childAt = getChildAt(i4);
             LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) childAt.getLayoutParams();
             if (heroIndex == i4) {
-                layoutParams.width = this.T;
-                layoutParams.height = this.U;
+                layoutParams.width = this.f0;
+                layoutParams.height = this.g0;
             } else {
                 layoutParams.width = i2;
                 layoutParams.height = i;
@@ -77,17 +77,17 @@ public class ThumbsBar extends LinearLayout {
         childAt.layout(width, getPaddingTop(), measuredWidth, childAt.getMeasuredHeight() + getPaddingTop());
         int measuredHeight = (childAt.getMeasuredHeight() / 2) + getPaddingTop();
         for (int i5 = heroIndex - 1; i5 >= 0; i5--) {
-            int i6 = width - this.V;
+            int i6 = width - this.h0;
             View childAt2 = getChildAt(i5);
             childAt2.layout(i6 - childAt2.getMeasuredWidth(), measuredHeight - (childAt2.getMeasuredHeight() / 2), i6, (childAt2.getMeasuredHeight() / 2) + measuredHeight);
             width = i6 - childAt2.getMeasuredWidth();
         }
         while (true) {
             heroIndex++;
-            if (heroIndex >= this.Q) {
+            if (heroIndex >= this.c0) {
                 return;
             }
-            int i7 = measuredWidth + this.V;
+            int i7 = measuredWidth + this.h0;
             View childAt3 = getChildAt(heroIndex);
             childAt3.layout(i7, measuredHeight - (childAt3.getMeasuredHeight() / 2), childAt3.getMeasuredWidth() + i7, (childAt3.getMeasuredHeight() / 2) + measuredHeight);
             measuredWidth = i7 + childAt3.getMeasuredWidth();
@@ -98,32 +98,31 @@ public class ThumbsBar extends LinearLayout {
     public final void onMeasure(int i, int i2) {
         super.onMeasure(i, i2);
         int measuredWidth = getMeasuredWidth();
-        if (this.W) {
+        if (this.i0) {
             return;
         }
-        int i3 = measuredWidth - this.T;
-        int i4 = this.R + this.V;
-        int i5 = ((i3 + i4) - 1) / i4;
-        if (i5 < 2) {
-            i5 = 2;
-        } else if ((i5 & 1) != 0) {
-            i5++;
+        int i3 = measuredWidth - this.f0;
+        int i4 = ((i3 + r3) - 1) / (this.d0 + this.h0);
+        if (i4 < 2) {
+            i4 = 2;
+        } else if ((i4 & 1) != 0) {
+            i4++;
         }
-        int i6 = i5 + 1;
-        if (this.Q != i6) {
-            this.Q = i6;
+        int i5 = i4 + 1;
+        if (this.c0 != i5) {
+            this.c0 = i5;
             a();
         }
     }
 
     public void setNumberOfThumbs(int i) {
-        this.W = true;
-        this.Q = i;
+        this.i0 = true;
+        this.c0 = i;
         a();
     }
 
     public void setThumbSpace(int i) {
-        this.V = i;
+        this.h0 = i;
         requestLayout();
     }
 

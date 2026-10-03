@@ -1,44 +1,31 @@
-.class public abstract La08;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final La08;
+.super Landroidx/transition/PathMotion;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:I
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# virtual methods
+.method public final a(FFFF)Landroid/graphics/Path;
+    .locals 0
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    new-instance p0, Landroid/graphics/Path;
 
     .line 2
     .line 3
-    const/16 v1, 0x1f
+    invoke-direct {p0}, Landroid/graphics/Path;-><init>()V
 
     .line 4
     .line 5
-    if-lt v0, v1, :cond_0
-
     .line 6
-    .line 7
-    const/high16 v0, 0x2000000
+    invoke-virtual {p0, p1, p2}, Landroid/graphics/Path;->moveTo(FF)V
 
+    .line 7
     .line 8
     .line 9
-    goto :goto_0
+    invoke-virtual {p0, p3, p4}, Landroid/graphics/Path;->lineTo(FF)V
 
     .line 10
-    :cond_0
-    const/4 v0, 0x0
-
     .line 11
-    :goto_0
-    sput v0, La08;->a:I
-
     .line 12
-    .line 13
-    return-void
+    return-object p0
 .end method

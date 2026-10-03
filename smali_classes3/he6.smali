@@ -1,117 +1,138 @@
-.class public final synthetic Lhe6;
+.class public abstract synthetic Lhe6;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg72;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:I
-
-.field public final synthetic R:Lf76;
-
-.field public final synthetic S:Lje6;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lf76;Lje6;I)V
-    .locals 0
-
-    .line 1
-    iput p3, p0, Lhe6;->Q:I
-
-    .line 2
-    .line 3
-    iput-object p1, p0, Lhe6;->R:Lf76;
-
-    .line 4
-    .line 5
-    iput-object p2, p0, Lhe6;->S:Lje6;
-
-    .line 6
-    .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 8
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
+.method static constructor <clinit>()V
     .locals 4
 
     .line 1
-    iget v0, p0, Lhe6;->Q:I
+    invoke-static {}, Lsm2;->values()[Lsm2;
 
     .line 2
     .line 3
-    sget-object v1, Lbh7;->a:Lbh7;
-
     .line 4
+    move-result-object v0
+
     .line 5
-    iget-object v2, p0, Lhe6;->S:Lje6;
+    array-length v0, v0
 
     .line 6
-    .line 7
-    iget-object v3, p0, Lhe6;->R:Lf76;
+    new-array v0, v0, [I
 
+    .line 7
     .line 8
+    const/4 v1, 0x0
+
     .line 9
-    packed-switch v0, :pswitch_data_0
+    const/4 v2, 0x1
 
     .line 10
+    :try_start_0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 11
     .line 12
-    iget-object v0, v3, Lf76;->T:Ljava/lang/Object;
+    :catch_0
+    const/4 v1, 0x2
 
     .line 13
+    :try_start_1
+    aput v1, v0, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
     .line 14
-    check-cast v0, Landroidx/appcompat/widget/AppCompatImageView;
-
     .line 15
-    .line 16
-    iget-object v2, v2, Lje6;->f:Landroid/graphics/drawable/Drawable;
+    :catch_1
+    invoke-static {}, Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;->values()[Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;
 
+    .line 16
     .line 17
     .line 18
-    invoke-virtual {v0, v2}, Landroidx/appcompat/widget/AppCompatImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    move-result-object v0
 
     .line 19
-    .line 20
-    .line 21
-    return-object v1
+    array-length v0, v0
 
+    .line 20
+    new-array v0, v0, [I
+
+    .line 21
     .line 22
-    :pswitch_0
-    iget-object v0, v3, Lf76;->T:Ljava/lang/Object;
+    :try_start_2
+    sget-object v3, Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;->PROXY:Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;
 
     .line 23
     .line 24
-    check-cast v0, Landroidx/appcompat/widget/AppCompatImageView;
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
     .line 25
     .line 26
-    iget-object v2, v2, Lje6;->f:Landroid/graphics/drawable/Drawable;
-
     .line 27
+    move-result v3
+
     .line 28
-    invoke-virtual {v0, v2}, Landroidx/appcompat/widget/AppCompatImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    aput v2, v0, v3
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 29
     .line 30
-    .line 31
-    return-object v1
+    :catch_2
+    :try_start_3
+    sget-object v2, Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;->DIRECT:Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;
 
+    .line 31
     .line 32
-    nop
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
     .line 33
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 34
+    .line 35
+    move-result v2
+
+    .line 36
+    aput v1, v0, v2
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 37
+    .line 38
+    :catch_3
+    :try_start_4
+    sget-object v1, Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;->BLOCK:Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;
+
+    .line 39
+    .line 40
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v1
+
+    .line 44
+    const/4 v2, 0x3
+
+    .line 45
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 46
+    .line 47
+    :catch_4
+    sput-object v0, Lhe6;->a:[I
+
+    .line 48
+    .line 49
+    return-void
 .end method

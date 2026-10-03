@@ -1,51 +1,28 @@
 package defpackage;
 
-import android.database.DataSetObserver;
-import androidx.appcompat.widget.ListPopupWindow;
+/* loaded from: classes.dex */
+public final class cy0 implements mi2 {
+    public final /* synthetic */ int X;
+    public final jf2 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class cy0 extends DataSetObserver {
-    public final /* synthetic */ int a;
-    public final /* synthetic */ Object b;
-
-    public /* synthetic */ cy0(int i, Object obj) {
-        this.a = i;
-        this.b = obj;
+    public /* synthetic */ cy0(jf2 jf2Var, int i) {
+        this.X = i;
+        this.Y = jf2Var;
     }
 
-    @Override // android.database.DataSetObserver
-    public final void onChanged() {
-        int i = this.a;
-        Object obj = this.b;
+    @Override // defpackage.mi2
+    public final Object invoke(Object obj) {
+        int i = this.X;
+        jf2 jf2Var = this.Y;
         switch (i) {
             case 0:
-                es6 es6Var = (es6) obj;
-                es6Var.Q = true;
-                es6Var.notifyDataSetChanged();
-                break;
+                xl xlVar = (xl) obj;
+                xlVar.getClass();
+                return xlVar.p(jf2Var);
             default:
-                ListPopupWindow listPopupWindow = (ListPopupWindow) obj;
-                if (listPopupWindow.p0.isShowing()) {
-                    listPopupWindow.g();
-                }
-                break;
-        }
-    }
-
-    @Override // android.database.DataSetObserver
-    public final void onInvalidated() {
-        int i = this.a;
-        Object obj = this.b;
-        switch (i) {
-            case 0:
-                es6 es6Var = (es6) obj;
-                es6Var.Q = false;
-                es6Var.notifyDataSetInvalidated();
-                break;
-            default:
-                ((ListPopupWindow) obj).dismiss();
-                break;
+                jf2 jf2Var2 = (jf2) obj;
+                jf2Var2.getClass();
+                return Boolean.valueOf(!jf2Var2.a.c() && jf2Var2.b().equals(jf2Var));
         }
     }
 }

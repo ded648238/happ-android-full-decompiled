@@ -1,261 +1,184 @@
 .class public final Lkb3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final c:Lsh3;
 
 
 # instance fields
-.field public a:I
+.field public final a:Ljava/lang/String;
 
 .field public final b:Ljava/lang/String;
 
-.field public final c:Ljava/util/ArrayList;
-
-.field public d:Lob3;
-
-.field public final e:Ljava/util/ArrayList;
-
-.field public final f:Ljava/util/ArrayList;
-
-.field public final g:Ljava/util/ArrayList;
-
-.field public h:Lob3;
-
-.field public final i:Ljava/util/ArrayList;
-
-.field public final j:Ljava/util/LinkedHashMap;
-
-.field public final k:Ljava/util/ArrayList;
-
-.field public final l:Ljava/util/ArrayList;
-
 
 # direct methods
-.method public constructor <init>(ILjava/lang/String;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v0, Ltx6;
 
     .line 2
     .line 3
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Ltx6;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    .line 7
-    iput p1, p0, Lkb3;->a:I
+    new-instance v1, Lpt2;
 
+    .line 7
     .line 8
+    const/4 v2, 0x1
+
     .line 9
-    iput-object p2, p0, Lkb3;->b:Ljava/lang/String;
+    invoke-direct {v1, v2}, Lpt2;-><init>(I)V
 
     .line 10
     .line 11
-    new-instance p1, Ljava/util/ArrayList;
-
     .line 12
-    .line 13
-    const/4 p2, 0x0
+    const-class v2, Lv85;
 
+    .line 13
     .line 14
-    invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-virtual {v0, v2, v1}, Ltx6;->a(Ljava/lang/Class;Ltx7;)V
 
     .line 15
     .line 16
     .line 17
-    iput-object p1, p0, Lkb3;->c:Ljava/util/ArrayList;
+    new-instance v1, Lpt2;
 
     .line 18
     .line 19
-    new-instance p1, Ljava/util/ArrayList;
+    const/4 v2, 0x0
 
     .line 20
-    .line 21
-    invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v1, v2}, Lpt2;-><init>(I)V
 
+    .line 21
     .line 22
     .line 23
+    const-class v2, Lot2;
+
     .line 24
-    iput-object p1, p0, Lkb3;->e:Ljava/util/ArrayList;
-
     .line 25
-    .line 26
-    new-instance p1, Ljava/util/ArrayList;
+    invoke-virtual {v0, v2, v1}, Ltx6;->a(Ljava/lang/Class;Ltx7;)V
 
+    .line 26
     .line 27
     .line 28
-    invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
+    new-instance v1, Lsh3;
 
     .line 29
     .line 30
-    .line 31
-    new-instance p1, Ljava/util/ArrayList;
+    invoke-direct {v1}, Lsh3;-><init>()V
 
+    .line 31
     .line 32
     .line 33
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+    sget-object v2, Lsf4;->s0:Lsf4;
 
     .line 34
     .line 35
+    const/4 v3, 0x1
+
     .line 36
-    iput-object p1, p0, Lkb3;->f:Ljava/util/ArrayList;
+    invoke-virtual {v1, v2, v3}, Lsh3;->c(Lsf4;Z)V
 
     .line 37
     .line 38
-    new-instance p1, Ljava/util/ArrayList;
-
     .line 39
-    .line 40
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+    invoke-virtual {v1, v0}, Lsh3;->e(Lkn4;)V
 
+    .line 40
     .line 41
     .line 42
+    sput-object v1, Lkb3;->c:Lsh3;
+
     .line 43
-    iput-object p1, p0, Lkb3;->g:Ljava/util/ArrayList;
-
     .line 44
-    .line 45
-    new-instance p1, Ljava/util/ArrayList;
-
-    .line 46
-    .line 47
-    invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 48
-    .line 49
-    .line 50
-    iput-object p1, p0, Lkb3;->i:Ljava/util/ArrayList;
-
-    .line 51
-    .line 52
-    new-instance p1, Ljava/util/LinkedHashMap;
-
-    .line 53
-    .line 54
-    invoke-direct {p1, p2}, Ljava/util/LinkedHashMap;-><init>(I)V
-
-    .line 55
-    .line 56
-    .line 57
-    iput-object p1, p0, Lkb3;->j:Ljava/util/LinkedHashMap;
-
-    .line 58
-    .line 59
-    new-instance p1, Ljava/util/ArrayList;
-
-    .line 60
-    .line 61
-    invoke-direct {p1, p2}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 62
-    .line 63
-    .line 64
-    iput-object p1, p0, Lkb3;->k:Ljava/util/ArrayList;
-
-    .line 65
-    .line 66
-    sget-object p1, Lz34;->a:Ly34;
-
-    .line 67
-    .line 68
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 69
-    .line 70
-    .line 71
-    invoke-static {}, Ly34;->a()Ljava/util/List;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object p1
-
-    .line 75
-    new-instance p2, Ljava/util/ArrayList;
-
-    .line 76
-    .line 77
-    const/16 v0, 0xa
-
-    .line 78
-    .line 79
-    invoke-static {p1, v0}, Lom0;->e0(Ljava/lang/Iterable;I)I
-
-    .line 80
-    .line 81
-    .line 82
-    move-result v0
-
-    .line 83
-    invoke-direct {p2, v0}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 84
-    .line 85
-    .line 86
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    .line 87
-    .line 88
-    .line 89
-    move-result-object p1
-
-    .line 90
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 91
-    .line 92
-    .line 93
-    move-result v0
-
-    .line 94
-    if-eqz v0, :cond_0
-
-    .line 95
-    .line 96
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 97
-    .line 98
-    .line 99
-    move-result-object v0
-
-    .line 100
-    check-cast v0, Lz34;
-
-    .line 101
-    .line 102
-    check-cast v0, Lm53;
-
-    .line 103
-    .line 104
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 105
-    .line 106
-    .line 107
-    new-instance v0, Le53;
-
-    .line 108
-    .line 109
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 110
-    .line 111
-    .line 112
-    invoke-virtual {p2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 113
-    .line 114
-    .line 115
-    goto :goto_0
-
-    .line 116
-    :cond_0
-    iput-object p2, p0, Lkb3;->l:Ljava/util/ArrayList;
-
-    .line 117
-    .line 118
     return-void
+.end method
+
+.method public constructor <init>(Lzs6;Ljava/util/LinkedHashMap;Ljava/util/LinkedHashMap;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    :try_start_0
+    sget-object p1, Lkb3;->c:Lsh3;
+
+    .line 5
+    .line 6
+    new-instance v0, Lot2;
+
+    .line 7
+    .line 8
+    invoke-direct {v0, p2}, Laq0;-><init>(Ljava/util/LinkedHashMap;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {p1, v0}, Lsh3;->f(Laq0;)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p2
+
+    .line 15
+    iput-object p2, p0, Lkb3;->a:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    new-instance p2, Lv85;
+
+    .line 18
+    .line 19
+    invoke-direct {p2, p3}, Laq0;-><init>(Ljava/util/LinkedHashMap;)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p1, p2}, Lsh3;->f(Laq0;)Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    iput-object p1, p0, Lkb3;->b:Ljava/lang/String;
+    :try_end_0
+    .catch Lri3; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 27
+    .line 28
+    return-void
+
+    .line 29
+    :catch_0
+    move-exception p0
+
+    .line 30
+    new-instance p1, Ljb3;
+
+    .line 31
+    .line 32
+    const-string p2, "Some of the Claims couldn\'t be converted to a valid JSON format."
+
+    .line 33
+    .line 34
+    invoke-direct {p1, p2, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 35
+    .line 36
+    .line 37
+    throw p1
 .end method

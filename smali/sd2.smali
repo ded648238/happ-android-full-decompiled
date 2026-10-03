@@ -1,54 +1,149 @@
 .class public final Lsd2;
-.super Landroid/graphics/drawable/Drawable;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# instance fields
+.field public a:Ljava/lang/String;
+
+.field public b:Ljava/lang/String;
+
+.field public c:Ljava/util/List;
 
 
 # virtual methods
-.method public final draw(Landroid/graphics/Canvas;)V
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    return-void
-.end method
-
-.method public final getOpacity()I
-    .locals 1
-
-    .line 1
-    const/4 v0, -0x2
+    const/4 v0, 0x1
 
     .line 2
-    return v0
-.end method
-
-.method public final getPadding(Landroid/graphics/Rect;)Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-virtual {p1, v0, v0, v0, v0}, Landroid/graphics/Rect;->set(IIII)V
+    if-ne p0, p1, :cond_0
 
     .line 3
     .line 4
+    return v0
+
     .line 5
-    const/4 p1, 0x1
+    :cond_0
+    instance-of v1, p1, Lsd2;
 
     .line 6
-    return p1
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lsd2;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lsd2;->a:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iget-object v3, p1, Lsd2;->a:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-eqz v1, :cond_2
+
+    .line 22
+    .line 23
+    iget-object v1, p0, Lsd2;->b:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    iget-object v3, p1, Lsd2;->b:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v1
+
+    .line 31
+    if-eqz v1, :cond_2
+
+    .line 32
+    .line 33
+    iget-object p0, p0, Lsd2;->c:Ljava/util/List;
+
+    .line 34
+    .line 35
+    iget-object p1, p1, Lsd2;->c:Ljava/util/List;
+
+    .line 36
+    .line 37
+    invoke-static {p0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result p0
+
+    .line 41
+    if-eqz p0, :cond_2
+
+    .line 42
+    .line 43
+    return v0
+
+    .line 44
+    :cond_2
+    return v2
 .end method
 
-.method public final setAlpha(I)V
-    .locals 0
+.method public final hashCode()I
+    .locals 2
 
     .line 1
-    return-void
-.end method
+    iget-object v0, p0, Lsd2;->a:Ljava/lang/String;
 
-.method public final setColorFilter(Landroid/graphics/ColorFilter;)V
-    .locals 0
+    .line 2
+    .line 3
+    iget-object v1, p0, Lsd2;->b:Ljava/lang/String;
 
-    .line 1
-    return-void
+    .line 4
+    .line 5
+    iget-object p0, p0, Lsd2;->c:Ljava/util/List;
+
+    .line 6
+    .line 7
+    filled-new-array {v0, v1, p0}, [Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    invoke-static {p0}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    return p0
 .end method

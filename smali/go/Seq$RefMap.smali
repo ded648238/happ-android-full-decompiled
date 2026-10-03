@@ -1,6 +1,6 @@
 .class final Lgo/Seq$RefMap;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -137,10 +137,10 @@
     const/4 v2, 0x0
 
     .line 30
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 31
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 32
     :goto_1
@@ -254,24 +254,24 @@
 
     .line 80
     .line 81
-    iget v2, p0, Lgo/Seq$RefMap;->next:I
+    iget p0, p0, Lgo/Seq$RefMap;->next:I
 
     .line 82
     .line 83
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 84
     .line 85
-    const-string v4, "bad state: live="
+    const-string v3, "bad state: live="
 
     .line 86
     .line 87
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 88
     .line 89
     .line 90
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 91
     .line 92
@@ -280,25 +280,25 @@
 
     .line 94
     .line 95
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 96
     .line 97
     .line 98
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 99
     .line 100
     .line 101
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 102
     .line 103
     .line 104
-    move-result-object v1
+    move-result-object p0
 
     .line 105
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     .line 106
     .line 107
@@ -358,22 +358,22 @@
 
     .line 11
     .line 12
-    iget-object v0, p0, Lgo/Seq$RefMap;->objs:[Lgo/Seq$Ref;
+    iget-object p0, p0, Lgo/Seq$RefMap;->objs:[Lgo/Seq$Ref;
 
     .line 13
     .line 14
-    aget-object p1, v0, p1
+    aget-object p0, p0, p1
 
     .line 15
     .line 16
-    return-object p1
+    return-object p0
 
     .line 17
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return-object p1
+    return-object p0
 .end method
 
 .method public put(ILgo/Seq$Ref;)V
@@ -440,11 +440,11 @@
     .line 29
     .line 30
     :cond_0
-    aget-object v1, v2, v1
+    aget-object p0, v2, v1
 
     .line 31
     .line 32
-    if-ne v1, p2, :cond_1
+    if-ne p0, p2, :cond_1
 
     .line 33
     .line 34
@@ -452,19 +452,19 @@
 
     .line 35
     :cond_1
-    const-string p2, "replacing an existing ref (with key "
+    const-string p0, "replacing an existing ref (with key "
 
     .line 36
     .line 37
-    invoke-static {p2, p1, v0}, Lea0;->p(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1, v0}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     .line 38
     .line 39
     .line 40
-    move-result-object p1
+    move-result-object p0
 
     .line 41
-    invoke-static {p1}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -598,19 +598,19 @@
 
     .line 105
     :cond_5
-    const-string p2, "put a null ref (with key "
+    const-string p0, "put a null ref (with key "
 
     .line 106
     .line 107
-    invoke-static {p2, p1, v0}, Lea0;->p(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1, v0}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     .line 108
     .line 109
     .line 110
-    move-result-object p1
+    move-result-object p0
 
     .line 111
-    invoke-static {p1}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 112
     .line 113

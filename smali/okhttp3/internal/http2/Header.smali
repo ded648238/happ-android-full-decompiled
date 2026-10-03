@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Header;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -17,21 +17,21 @@
     d2 = {
         "Lokhttp3/internal/http2/Header;",
         "",
-        "Ly60;",
+        "Lo90;",
         "name",
         "value",
         "<init>",
-        "(Ly60;Ly60;)V",
+        "(Lo90;Lo90;)V",
         "",
         "(Ljava/lang/String;Ljava/lang/String;)V",
-        "(Ly60;Ljava/lang/String;)V",
+        "(Lo90;Ljava/lang/String;)V",
         "toString",
         "()Ljava/lang/String;",
         "component1",
-        "()Ly60;",
+        "()Lo90;",
         "component2",
         "copy",
-        "(Ly60;Ly60;)Lokhttp3/internal/http2/Header;",
+        "(Lo90;Lo90;)Lokhttp3/internal/http2/Header;",
         "",
         "hashCode",
         "()I",
@@ -39,7 +39,7 @@
         "",
         "equals",
         "(Ljava/lang/Object;)Z",
-        "Ly60;",
+        "Lo90;",
         "hpackSize",
         "I",
         "Companion",
@@ -58,25 +58,25 @@
 # static fields
 .field public static final Companion:Lokhttp3/internal/http2/Header$Companion;
 
-.field public static final PSEUDO_PREFIX:Ly60;
+.field public static final PSEUDO_PREFIX:Lo90;
 
-.field public static final RESPONSE_STATUS:Ly60;
+.field public static final RESPONSE_STATUS:Lo90;
 
 .field public static final RESPONSE_STATUS_UTF8:Ljava/lang/String; = ":status"
 
-.field public static final TARGET_AUTHORITY:Ly60;
+.field public static final TARGET_AUTHORITY:Lo90;
 
 .field public static final TARGET_AUTHORITY_UTF8:Ljava/lang/String; = ":authority"
 
-.field public static final TARGET_METHOD:Ly60;
+.field public static final TARGET_METHOD:Lo90;
 
 .field public static final TARGET_METHOD_UTF8:Ljava/lang/String; = ":method"
 
-.field public static final TARGET_PATH:Ly60;
+.field public static final TARGET_PATH:Lo90;
 
 .field public static final TARGET_PATH_UTF8:Ljava/lang/String; = ":path"
 
-.field public static final TARGET_SCHEME:Ly60;
+.field public static final TARGET_SCHEME:Lo90;
 
 .field public static final TARGET_SCHEME_UTF8:Ljava/lang/String; = ":scheme"
 
@@ -84,9 +84,9 @@
 # instance fields
 .field public final hpackSize:I
 
-.field public final name:Ly60;
+.field public final name:Lo90;
 
-.field public final value:Ly60;
+.field public final value:Lo90;
 
 
 # direct methods
@@ -101,7 +101,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/http2/Header$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/http2/Header$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -110,7 +110,7 @@
 
     .line 8
     .line 9
-    sget-object v0, Ly60;->T:Ly60;
+    sget-object v0, Lo90;->c0:Lo90;
 
     .line 10
     .line 11
@@ -118,7 +118,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 14
     .line 15
@@ -126,7 +126,7 @@
     move-result-object v0
 
     .line 17
-    sput-object v0, Lokhttp3/internal/http2/Header;->PSEUDO_PREFIX:Ly60;
+    sput-object v0, Lokhttp3/internal/http2/Header;->PSEUDO_PREFIX:Lo90;
 
     .line 18
     .line 19
@@ -134,7 +134,7 @@
 
     .line 20
     .line 21
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 22
     .line 23
@@ -142,7 +142,7 @@
     move-result-object v0
 
     .line 25
-    sput-object v0, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Ly60;
+    sput-object v0, Lokhttp3/internal/http2/Header;->RESPONSE_STATUS:Lo90;
 
     .line 26
     .line 27
@@ -150,7 +150,7 @@
 
     .line 28
     .line 29
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 30
     .line 31
@@ -158,7 +158,7 @@
     move-result-object v0
 
     .line 33
-    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_METHOD:Ly60;
+    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_METHOD:Lo90;
 
     .line 34
     .line 35
@@ -166,7 +166,7 @@
 
     .line 36
     .line 37
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 38
     .line 39
@@ -174,7 +174,7 @@
     move-result-object v0
 
     .line 41
-    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_PATH:Ly60;
+    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_PATH:Lo90;
 
     .line 42
     .line 43
@@ -182,7 +182,7 @@
 
     .line 44
     .line 45
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 46
     .line 47
@@ -190,7 +190,7 @@
     move-result-object v0
 
     .line 49
-    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_SCHEME:Ly60;
+    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_SCHEME:Lo90;
 
     .line 50
     .line 51
@@ -198,7 +198,7 @@
 
     .line 52
     .line 53
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 54
     .line 55
@@ -206,7 +206,7 @@
     move-result-object v0
 
     .line 57
-    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_AUTHORITY:Ly60;
+    sput-object v0, Lokhttp3/internal/http2/Header;->TARGET_AUTHORITY:Lo90;
 
     .line 58
     .line 59
@@ -221,22 +221,22 @@
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 28
-    sget-object v0, Ly60;->T:Ly60;
+    sget-object v0, Lo90;->c0:Lo90;
 
-    invoke-static {p1}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {p1}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     move-result-object p1
 
-    invoke-static {p2}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {p2}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     move-result-object p2
 
-    invoke-direct {p0, p1, p2}, Lokhttp3/internal/http2/Header;-><init>(Ly60;Ly60;)V
+    invoke-direct {p0, p1, p2}, Lokhttp3/internal/http2/Header;-><init>(Lo90;Lo90;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Ly60;Ljava/lang/String;)V
+.method public constructor <init>(Lo90;Ljava/lang/String;)V
     .locals 1
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -244,18 +244,18 @@
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 29
-    sget-object v0, Ly60;->T:Ly60;
+    sget-object v0, Lo90;->c0:Lo90;
 
-    invoke-static {p2}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {p2}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     move-result-object p2
 
-    invoke-direct {p0, p1, p2}, Lokhttp3/internal/http2/Header;-><init>(Ly60;Ly60;)V
+    invoke-direct {p0, p1, p2}, Lokhttp3/internal/http2/Header;-><init>(Lo90;Lo90;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Ly60;Ly60;)V
+.method public constructor <init>(Lo90;Lo90;)V
     .locals 0
 
     .line 1
@@ -274,15 +274,15 @@
     .line 8
     .line 9
     .line 10
-    iput-object p1, p0, Lokhttp3/internal/http2/Header;->name:Ly60;
+    iput-object p1, p0, Lokhttp3/internal/http2/Header;->name:Lo90;
 
     .line 11
     .line 12
-    iput-object p2, p0, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iput-object p2, p0, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 13
     .line 14
-    invoke-virtual {p1}, Ly60;->e()I
+    invoke-virtual {p1}, Lo90;->e()I
 
     .line 15
     .line 16
@@ -294,7 +294,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p2}, Ly60;->e()I
+    invoke-virtual {p2}, Lo90;->e()I
 
     .line 21
     .line 22
@@ -312,7 +312,7 @@
     return-void
 .end method
 
-.method public static synthetic copy$default(Lokhttp3/internal/http2/Header;Ly60;Ly60;ILjava/lang/Object;)Lokhttp3/internal/http2/Header;
+.method public static synthetic copy$default(Lokhttp3/internal/http2/Header;Lo90;Lo90;ILjava/lang/Object;)Lokhttp3/internal/http2/Header;
     .locals 0
 
     .line 1
@@ -324,7 +324,7 @@
 
     .line 4
     .line 5
-    iget-object p1, p0, Lokhttp3/internal/http2/Header;->name:Ly60;
+    iget-object p1, p0, Lokhttp3/internal/http2/Header;->name:Lo90;
 
     .line 6
     .line 7
@@ -337,12 +337,12 @@
 
     .line 10
     .line 11
-    iget-object p2, p0, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object p2, p0, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 12
     .line 13
     :cond_1
-    invoke-virtual {p0, p1, p2}, Lokhttp3/internal/http2/Header;->copy(Ly60;Ly60;)Lokhttp3/internal/http2/Header;
+    invoke-virtual {p0, p1, p2}, Lokhttp3/internal/http2/Header;->copy(Lo90;Lo90;)Lokhttp3/internal/http2/Header;
 
     .line 14
     .line 15
@@ -355,30 +355,30 @@
 
 
 # virtual methods
-.method public final component1()Ly60;
-    .locals 1
+.method public final component1()Lo90;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Header;->name:Ly60;
+    iget-object p0, p0, Lokhttp3/internal/http2/Header;->name:Lo90;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final component2()Ly60;
-    .locals 1
+.method public final component2()Lo90;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object p0, p0, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final copy(Ly60;Ly60;)Lokhttp3/internal/http2/Header;
-    .locals 1
+.method public final copy(Lo90;Lo90;)Lokhttp3/internal/http2/Header;
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -391,16 +391,16 @@
     .line 5
     .line 6
     .line 7
-    new-instance v0, Lokhttp3/internal/http2/Header;
+    new-instance p0, Lokhttp3/internal/http2/Header;
 
     .line 8
     .line 9
-    invoke-direct {v0, p1, p2}, Lokhttp3/internal/http2/Header;-><init>(Ly60;Ly60;)V
+    invoke-direct {p0, p1, p2}, Lokhttp3/internal/http2/Header;-><init>(Lo90;Lo90;)V
 
     .line 10
     .line 11
     .line 12
-    return-object v0
+    return-object p0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -437,15 +437,15 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, Lokhttp3/internal/http2/Header;->name:Ly60;
+    iget-object v1, p0, Lokhttp3/internal/http2/Header;->name:Lo90;
 
     .line 14
     .line 15
-    iget-object v3, p1, Lokhttp3/internal/http2/Header;->name:Ly60;
+    iget-object v3, p1, Lokhttp3/internal/http2/Header;->name:Lo90;
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -461,23 +461,23 @@
 
     .line 24
     :cond_2
-    iget-object v1, p0, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object p0, p0, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 25
     .line 26
-    iget-object p1, p1, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object p1, p1, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 27
     .line 28
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
     .line 31
-    move-result p1
+    move-result p0
 
     .line 32
-    if-nez p1, :cond_3
+    if-nez p0, :cond_3
 
     .line 33
     .line 34
@@ -489,14 +489,14 @@
 .end method
 
 .method public hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Header;->name:Ly60;
+    iget-object v0, p0, Lokhttp3/internal/http2/Header;->name:Lo90;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ly60;->hashCode()I
+    invoke-virtual {v0}, Lo90;->hashCode()I
 
     .line 4
     .line 5
@@ -508,22 +508,22 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object p0, p0, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 10
     .line 11
-    invoke-virtual {v1}, Ly60;->hashCode()I
+    invoke-virtual {p0}, Lo90;->hashCode()I
 
     .line 12
     .line 13
     .line 14
-    move-result v1
+    move-result p0
 
     .line 15
-    add-int/2addr v1, v0
+    add-int/2addr p0, v0
 
     .line 16
-    return v1
+    return p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -539,11 +539,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Lokhttp3/internal/http2/Header;->name:Ly60;
+    iget-object v1, p0, Lokhttp3/internal/http2/Header;->name:Lo90;
 
     .line 7
     .line 8
-    invoke-virtual {v1}, Ly60;->r()Ljava/lang/String;
+    invoke-virtual {v1}, Lo90;->r()Ljava/lang/String;
 
     .line 9
     .line 10
@@ -565,19 +565,19 @@
     .line 18
     .line 19
     .line 20
-    iget-object v1, p0, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object p0, p0, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 21
     .line 22
-    invoke-virtual {v1}, Ly60;->r()Ljava/lang/String;
+    invoke-virtual {p0}, Lo90;->r()Ljava/lang/String;
 
     .line 23
     .line 24
     .line 25
-    move-result-object v1
+    move-result-object p0
 
     .line 26
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 27
     .line 28
@@ -587,8 +587,8 @@
     .line 30
     .line 31
     .line 32
-    move-result-object v0
+    move-result-object p0
 
     .line 33
-    return-object v0
+    return-object p0
 .end method

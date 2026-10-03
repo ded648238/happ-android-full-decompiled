@@ -1,22 +1,19 @@
 .class public final Lrw5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljv5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Landroid/graphics/Path;
+.field public final a:La94;
 
-.field public R:F
+.field public final b:Lc8;
 
-.field public S:F
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lem0;)V
-    .locals 1
+.method public constructor <init>(La94;Lc8;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,217 +21,79 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroid/graphics/Path;
+    iput-object p1, p0, Lrw5;->a:La94;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
+    iput-object p2, p0, Lrw5;->b:Lc8;
 
     .line 7
     .line 8
+    new-instance p1, Ljava/lang/Object;
+
     .line 9
-    iput-object v0, p0, Lrw5;->Q:Landroid/graphics/Path;
-
     .line 10
-    .line 11
-    if-nez p1, :cond_0
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
+    .line 11
     .line 12
     .line 13
-    return-void
+    iput-object p1, p0, Lrw5;->c:Ljava/lang/Object;
 
     .line 14
-    :cond_0
-    invoke-virtual {p1, p0}, Lem0;->x(Ljv5;)V
-
     .line 15
-    .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(FFFF)V
+.method public final a(J)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lrw5;->Q:Landroid/graphics/Path;
+    iget-object v0, p0, Lrw5;->c:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/Path;->quadTo(FFFF)V
+    monitor-enter v0
 
     .line 4
+    :try_start_0
+    iget-object p0, p0, Lrw5;->a:La94;
+
     .line 5
     .line 6
-    iput p3, p0, Lrw5;->R:F
+    iget-object p0, p0, La94;->Z:Ljava/lang/Object;
 
     .line 7
     .line 8
-    iput p4, p0, Lrw5;->S:F
+    check-cast p0, Luw5;
 
     .line 9
     .line 10
-    return-void
-.end method
+    iput-wide p1, p0, Luw5;->X:J
 
-.method public final b(FF)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lrw5;->Q:Landroid/graphics/Path;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2}, Landroid/graphics/Path;->moveTo(FF)V
-
-    .line 4
-    .line 5
-    .line 6
-    iput p1, p0, Lrw5;->R:F
-
-    .line 7
-    .line 8
-    iput p2, p0, Lrw5;->S:F
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-.method public final c(FFFFFF)V
-    .locals 7
-
-    .line 1
-    iget-object v0, p0, Lrw5;->Q:Landroid/graphics/Path;
-
-    .line 2
-    .line 3
-    move v1, p1
-
-    .line 4
-    move v2, p2
-
-    .line 5
-    move v3, p3
-
-    .line 6
-    move v4, p4
-
-    .line 7
-    move v5, p5
-
-    .line 8
-    move v6, p6
-
-    .line 9
-    invoke-virtual/range {v0 .. v6}, Landroid/graphics/Path;->cubicTo(FFFFFF)V
-
-    .line 10
     .line 11
     .line 12
-    iput v5, p0, Lrw5;->R:F
+    invoke-virtual {p0, p1, p2}, Luw5;->h(J)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 13
     .line 14
-    iput v6, p0, Lrw5;->S:F
-
     .line 15
+    monitor-exit v0
+
     .line 16
     return-void
-.end method
 
-.method public final close()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lrw5;->Q:Landroid/graphics/Path;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/graphics/Path;->close()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final d(FFFZZFF)V
-    .locals 10
-
-    .line 1
-    iget v0, p0, Lrw5;->R:F
-
-    .line 2
-    .line 3
-    iget v1, p0, Lrw5;->S:F
-
-    .line 4
-    .line 5
-    move-object v9, p0
-
-    .line 6
-    move v2, p1
-
-    .line 7
-    move v3, p2
-
-    .line 8
-    move v4, p3
-
-    .line 9
-    move v5, p4
-
-    .line 10
-    move v6, p5
-
-    .line 11
-    move/from16 v7, p6
-
-    .line 12
-    .line 13
-    move/from16 v8, p7
-
-    .line 14
-    .line 15
-    invoke-static/range {v0 .. v9}, Lxw5;->i(FFFFFZZFFLjv5;)V
-
-    .line 16
     .line 17
+    :catchall_0
+    move-exception p0
+
     .line 18
-    iput v7, p0, Lrw5;->R:F
+    monitor-exit v0
 
     .line 19
-    .line 20
-    iput v8, p0, Lrw5;->S:F
-
-    .line 21
-    .line 22
-    return-void
-.end method
-
-.method public final e(FF)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lrw5;->Q:Landroid/graphics/Path;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2}, Landroid/graphics/Path;->lineTo(FF)V
-
-    .line 4
-    .line 5
-    .line 6
-    iput p1, p0, Lrw5;->R:F
-
-    .line 7
-    .line 8
-    iput p2, p0, Lrw5;->S:F
-
-    .line 9
-    .line 10
-    return-void
+    throw p0
 .end method

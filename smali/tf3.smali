@@ -1,151 +1,201 @@
-.class public final Ltf3;
+.class public final synthetic Ltf3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lmx4;
 
 
 # instance fields
-.field public a:Z
-
-.field public b:I
-
-.field public c:I
-
-.field public d:I
-
-.field public e:I
-
-.field public f:I
-
-.field public g:I
-
-.field public h:Z
-
-.field public i:Z
+.field public final synthetic a:I
 
 
-# virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 3
+# direct methods
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iput p1, p0, Ltf3;->a:I
 
     .line 2
     .line 3
-    const-string v1, "LayoutState{mAvailable="
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget p0, p0, Ltf3;->a:I
+
+    .line 2
+    .line 3
+    const-string v0, "Couldn\'t find encoder for type "
+
+    .line 4
+    .line 5
+    packed-switch p0, :pswitch_data_0
 
     .line 6
     .line 7
     .line 8
-    iget v1, p0, Ltf3;->b:I
+    new-instance p0, Lax1;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    .line 13
-    const-string v1, ", mCurrentPosition="
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 13
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 16
     .line 17
     .line 18
-    iget v1, p0, Ltf3;->c:I
+    move-result-object p1
 
     .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
+    .line 20
     .line 21
     .line 22
+    move-result-object p1
+
     .line 23
-    const-string v1, ", mItemDirection="
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 26
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 27
     .line 28
-    iget v1, p0, Ltf3;->d:I
-
     .line 29
+    move-result-object p1
+
     .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     .line 31
     .line 32
     .line 33
-    const-string v1, ", mLayoutDirection="
+    throw p0
 
     .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_0
+    check-cast p1, Ljava/util/Map$Entry;
 
+    .line 35
     .line 36
+    check-cast p2, Lnx4;
+
     .line 37
     .line 38
-    iget v1, p0, Ltf3;->e:I
+    sget-object p0, Lqp5;->g:Lr42;
 
     .line 39
     .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     .line 41
     .line 42
     .line 43
-    const-string v1, ", mStartLine="
+    move-result-object v0
 
     .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-interface {p2, p0, v0}, Lnx4;->a(Lr42;Ljava/lang/Object;)Lnx4;
 
+    .line 45
     .line 46
     .line 47
+    sget-object p0, Lqp5;->h:Lr42;
+
     .line 48
-    iget v1, p0, Ltf3;->f:I
-
     .line 49
-    .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
+    .line 50
     .line 51
     .line 52
+    move-result-object p1
+
     .line 53
-    const-string v1, ", mEndLine="
+    invoke-interface {p2, p0, p1}, Lnx4;->a(Lr42;Ljava/lang/Object;)Lnx4;
 
     .line 54
     .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 56
+    return-void
+
     .line 57
+    :pswitch_1
+    new-instance p0, Lax1;
+
     .line 58
-    iget v1, p0, Ltf3;->g:I
-
     .line 59
+    new-instance p2, Ljava/lang/StringBuilder;
+
     .line 60
-    const/16 v2, 0x7d
-
     .line 61
-    .line 62
-    invoke-static {v0, v1, v2}, Lea0;->s(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 62
     .line 63
     .line 64
-    .line 65
-    move-result-object v0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 65
     .line 66
-    return-object v0
+    .line 67
+    move-result-object p1
+
+    .line 68
+    invoke-virtual {p1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object p1
+
+    .line 72
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 73
+    .line 74
+    .line 75
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object p1
+
+    .line 79
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 80
+    .line 81
+    .line 82
+    throw p0
+
+    .line 83
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

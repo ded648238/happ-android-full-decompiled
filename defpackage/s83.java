@@ -1,12 +1,13 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class s83 implements m73, pb7 {
-    public final r42 Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class s83 {
+    public final zq4 a;
+    public final fe3 b;
 
-    public s83(r42 r42Var) {
-        r42Var.getClass();
-        this.Q = r42Var;
+    public s83(zq4 zq4Var, fe3 fe3Var) {
+        this.a = zq4Var;
+        this.b = fe3Var;
     }
 }

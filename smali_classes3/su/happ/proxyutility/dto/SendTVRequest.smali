@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/SendTVRequest;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -34,7 +34,7 @@
 
 # instance fields
 .field private final data:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "data"
     .end annotation
 .end field
@@ -93,7 +93,7 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/SendTVRequest;->data:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SendTVRequest;->data:Ljava/lang/String;
 
     .line 14
     .line 15
@@ -101,15 +101,15 @@
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
     .line 20
-    move-result p1
+    move-result p0
 
     .line 21
-    if-nez p1, :cond_2
+    if-nez p0, :cond_2
 
     .line 22
     .line 23
@@ -121,47 +121,47 @@
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SendTVRequest;->data:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SendTVRequest;->data:Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SendTVRequest;->data:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SendTVRequest;->data:Ljava/lang/String;
 
     .line 2
     .line 3
-    const-string v1, "SendTVRequest(data="
+    const-string v0, "SendTVRequest(data="
 
     .line 4
     .line 5
-    const-string v2, ")"
+    const-string v1, ")"
 
     .line 6
     .line 7
-    invoke-static {v1, v0, v2}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0, v1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method

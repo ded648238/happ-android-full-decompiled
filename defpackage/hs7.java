@@ -1,13 +1,25 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface hs7 {
-    int a(z61 z61Var);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class hs7 extends d31 {
+    public uy5 c0;
+    public uy5 d0;
+    public hq2 e0;
+    public /* synthetic */ Object f0;
+    public final /* synthetic */ os7 g0;
+    public int h0;
 
-    int b(z61 z61Var, te3 te3Var);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public hs7(os7 os7Var, d31 d31Var) {
+        super(d31Var);
+        this.g0 = os7Var;
+    }
 
-    int c(z61 z61Var);
-
-    int d(z61 z61Var, te3 te3Var);
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.f0 = obj;
+        this.h0 |= Integer.MIN_VALUE;
+        return os7.b(this.g0, null, false, this);
+    }
 }

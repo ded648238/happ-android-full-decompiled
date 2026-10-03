@@ -1,24 +1,30 @@
 .class public final Le81;
-.super Lo81;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Z:Lf81;
+.field public c0:Lsv0;
+
+.field public synthetic d0:Ljava/lang/Object;
+
+.field public final synthetic e0:Ln81;
+
+.field public f0:I
 
 
 # direct methods
-.method public constructor <init>(Lf81;)V
+.method public constructor <init>(Ln81;Ld31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo81;-><init>()V
+    iput-object p1, p0, Le81;->e0:Ln81;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Le81;->Z:Lf81;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
     return-void
@@ -26,24 +32,43 @@
 
 
 # virtual methods
-.method public final Q()Ly81;
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Le81;->Z:Lf81;
+    iput-object p1, p0, Le81;->d0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    iget p1, p0, Le81;->f0:I
 
-.method public final f()Lp83;
-    .locals 1
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
 
-    .line 1
-    iget-object v0, p0, Le81;->Z:Lf81;
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
 
-    .line 2
-    .line 3
-    return-object v0
+    .line 8
+    iput p1, p0, Le81;->f0:I
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Le81;->e0:Ln81;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-static {p1, v0, p0}, Ln81;->c(Ln81;Lgk4;Ld31;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
 .end method

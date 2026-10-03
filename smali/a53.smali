@@ -1,65 +1,71 @@
 .class public final La53;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lhb3;
-
-
-# static fields
-.field public static final b:Lib3;
+.implements Low3;
+.implements Ljava/io/Serializable;
 
 
 # instance fields
-.field public a:Lo53;
+.field public final X:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lib3;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-class v1, La53;
-
     .line 4
+    iput-object p1, p0, La53;->X:Ljava/lang/Object;
+
     .line 5
-    sget-object v2, Lhg5;->a:Lig5;
-
     .line 6
-    .line 7
-    invoke-virtual {v2, v1}, Lig5;->b(Ljava/lang/Class;)Lx63;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v1
-
-    .line 11
-    invoke-direct {v0, v1}, Lib3;-><init>(Lx63;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, La53;->b:Lib3;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()Lib3;
-    .locals 1
+.method public final c()Z
+    .locals 0
 
     .line 1
-    sget-object v0, La53;->b:Lib3;
+    const/4 p0, 0x1
+
+    .line 2
+    return p0
+.end method
+
+.method public final getValue()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, La53;->X:Ljava/lang/Object;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, La53;->X:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
 .end method

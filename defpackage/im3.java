@@ -1,106 +1,136 @@
 package defpackage;
 
-import java.util.List;
+import java.io.IOException;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class im3 implements l56 {
-    public final l56 a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class im3 extends hl2 {
+    public static final im3 f0;
+    public static final gm3 g0 = new gm3(0);
+    public final n90 X;
+    public int Y;
+    public int Z;
+    public int c0;
+    public byte d0;
+    public int e0;
 
-    public im3(l56 l56Var) {
-        this.a = l56Var;
+    static {
+        im3 im3Var = new im3();
+        f0 = im3Var;
+        im3Var.Z = 0;
+        im3Var.c0 = 0;
     }
 
-    @Override // defpackage.l56
-    public final /* bridge */ boolean c() {
-        return false;
-    }
-
-    @Override // defpackage.l56
-    public final int d(String str) {
-        str.getClass();
-        Integer numI0 = zl6.i0(str);
-        if (numI0 != null) {
-            return numI0.intValue();
+    public im3(ft0 ft0Var) {
+        this.d0 = (byte) -1;
+        this.e0 = -1;
+        boolean z = false;
+        this.Z = 0;
+        this.c0 = 0;
+        m90 m90Var = new m90();
+        kt0 G = kt0.G(m90Var, 1);
+        while (!z) {
+            try {
+                try {
+                    int o = ft0Var.o();
+                    if (o != 0) {
+                        if (o == 8) {
+                            this.Y |= 1;
+                            this.Z = ft0Var.l();
+                        } else if (o == 16) {
+                            this.Y |= 2;
+                            this.c0 = ft0Var.l();
+                        } else if (!ft0Var.r(o, G)) {
+                        }
+                    }
+                    z = true;
+                } catch (Throwable th) {
+                    try {
+                        G.R();
+                    } catch (IOException unused) {
+                    } catch (Throwable th2) {
+                        this.X = m90Var.m();
+                        throw th2;
+                    }
+                    this.X = m90Var.m();
+                    throw th;
+                }
+            } catch (aa3 e) {
+                e.X = this;
+                throw e;
+            } catch (IOException e2) {
+                aa3 aa3Var = new aa3(e2.getMessage());
+                aa3Var.X = this;
+                throw aa3Var;
+            }
         }
-        fn.r(str.concat(" is not a valid list index"));
-        return 0;
+        try {
+            G.R();
+        } catch (IOException unused2) {
+        } catch (Throwable th3) {
+            this.X = m90Var.m();
+            throw th3;
+        }
+        this.X = m90Var.m();
     }
 
-    @Override // defpackage.l56
-    public final int e() {
-        return 1;
+    @Override // defpackage.a2
+    public final int b() {
+        int i = this.e0;
+        if (i != -1) {
+            return i;
+        }
+        int l = (this.Y & 1) == 1 ? kt0.l(1, this.Z) : 0;
+        if ((this.Y & 2) == 2) {
+            l += kt0.l(2, this.c0);
+        }
+        int size = this.X.size() + l;
+        this.e0 = size;
+        return size;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
+    @Override // defpackage.ik4
+    public final boolean c() {
+        if (this.d0 == 1) {
             return true;
         }
-        if (!(obj instanceof im3)) {
-            return false;
+        this.d0 = (byte) 1;
+        return true;
+    }
+
+    @Override // defpackage.a2
+    public final al2 d() {
+        return new hm3(0);
+    }
+
+    @Override // defpackage.a2
+    public final al2 e() {
+        hm3 hm3Var = new hm3(0);
+        hm3Var.h(this);
+        return hm3Var;
+    }
+
+    @Override // defpackage.a2
+    public final void f(kt0 kt0Var) {
+        b();
+        if ((this.Y & 1) == 1) {
+            kt0Var.V(1, this.Z);
         }
-        im3 im3Var = (im3) obj;
-        return rt2.f(this.a, im3Var.a) && rt2.f(a(), im3Var.a());
-    }
-
-    @Override // defpackage.l56
-    public final String f(int i) {
-        return String.valueOf(i);
-    }
-
-    @Override // defpackage.l56
-    public final List g(int i) {
-        if (i >= 0) {
-            return wn1.Q;
+        if ((this.Y & 2) == 2) {
+            kt0Var.V(2, this.c0);
         }
-        StringBuilder sbA = kd0.A("Illegal index ", i, ", ");
-        sbA.append(a());
-        sbA.append(" expects only non-negative indices");
-        throw new IllegalArgumentException(sbA.toString().toString());
+        kt0Var.a0(this.X);
     }
 
-    @Override // defpackage.l56
-    public final /* bridge */ List getAnnotations() {
-        return wn1.Q;
+    public im3() {
+        this.d0 = (byte) -1;
+        this.e0 = -1;
+        this.X = n90.X;
     }
 
-    @Override // defpackage.l56
-    public final l56 h(int i) {
-        if (i >= 0) {
-            return this.a;
-        }
-        StringBuilder sbA = kd0.A("Illegal index ", i, ", ");
-        sbA.append(a());
-        sbA.append(" expects only non-negative indices");
-        throw new IllegalArgumentException(sbA.toString().toString());
-    }
-
-    public final int hashCode() {
-        return a().hashCode() + (this.a.hashCode() * 31);
-    }
-
-    @Override // defpackage.l56
-    public final /* bridge */ boolean i() {
-        return false;
-    }
-
-    @Override // defpackage.l56
-    public final boolean j(int i) {
-        if (i >= 0) {
-            return false;
-        }
-        StringBuilder sbA = kd0.A("Illegal index ", i, ", ");
-        sbA.append(a());
-        sbA.append(" expects only non-negative indices");
-        throw new IllegalArgumentException(sbA.toString().toString());
-    }
-
-    @Override // defpackage.l56
-    public final tv3 t() {
-        return bm6.Y;
-    }
-
-    public final String toString() {
-        return a() + '(' + this.a + ')';
+    public im3(hm3 hm3Var) {
+        this.d0 = (byte) -1;
+        this.e0 = -1;
+        this.X = hm3Var.X;
     }
 }

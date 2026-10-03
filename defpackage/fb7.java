@@ -1,47 +1,122 @@
 package defpackage;
 
-import j$.util.Objects;
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.view.MenuItem;
+import android.view.SubMenu;
+import android.view.View;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class fb7 {
-    public final Class a;
-    public final eb7[] b;
-    public final int c;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class fb7 extends gj4 implements SubMenu {
+    public final lj4 A;
+    public final gj4 z;
 
-    public fb7(Class cls, eb7[] eb7VarArr, int i) {
-        this.a = cls;
-        this.b = eb7VarArr;
-        this.c = (cls.hashCode() * 31) + i;
+    public fb7(Context context, gj4 gj4Var, lj4 lj4Var) {
+        super(context);
+        this.z = gj4Var;
+        this.A = lj4Var;
     }
 
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
+    @Override // defpackage.gj4
+    public final boolean d(lj4 lj4Var) {
+        return this.z.d(lj4Var);
+    }
+
+    @Override // defpackage.gj4
+    public final boolean e(gj4 gj4Var, MenuItem menuItem) {
+        return super.e(gj4Var, menuItem) || this.z.e(gj4Var, menuItem);
+    }
+
+    @Override // defpackage.gj4
+    public final boolean f(lj4 lj4Var) {
+        return this.z.f(lj4Var);
+    }
+
+    @Override // android.view.SubMenu
+    public final MenuItem getItem() {
+        return this.A;
+    }
+
+    @Override // defpackage.gj4
+    public final String j() {
+        lj4 lj4Var = this.A;
+        int i = lj4Var != null ? lj4Var.a : 0;
+        if (i == 0) {
+            return null;
         }
-        if (obj != null && obj.getClass() == fb7.class) {
-            fb7 fb7Var = (fb7) obj;
-            if (this.c == fb7Var.c && this.a == fb7Var.a) {
-                eb7[] eb7VarArr = fb7Var.b;
-                eb7[] eb7VarArr2 = this.b;
-                int length = eb7VarArr2.length;
-                if (length == eb7VarArr.length) {
-                    for (int i = 0; i < length; i++) {
-                        if (Objects.equals(eb7VarArr2[i], eb7VarArr[i])) {
-                        }
-                    }
-                    return true;
-                }
-            }
-        }
-        return false;
+        return eb7.h(i, "android:menu:actionviewstates:");
     }
 
-    public final int hashCode() {
-        return this.c;
+    @Override // defpackage.gj4
+    public final gj4 k() {
+        return this.z.k();
     }
 
-    public final String toString() {
-        return this.a.getName().concat("<>");
+    @Override // defpackage.gj4
+    public final boolean m() {
+        return this.z.m();
+    }
+
+    @Override // defpackage.gj4
+    public final boolean n() {
+        return this.z.n();
+    }
+
+    @Override // defpackage.gj4
+    public final boolean o() {
+        return this.z.o();
+    }
+
+    @Override // defpackage.gj4, android.view.Menu
+    public final void setGroupDividerEnabled(boolean z) {
+        this.z.setGroupDividerEnabled(z);
+    }
+
+    @Override // android.view.SubMenu
+    public final SubMenu setHeaderIcon(Drawable drawable) {
+        u(0, null, 0, drawable, null);
+        return this;
+    }
+
+    @Override // android.view.SubMenu
+    public final SubMenu setHeaderTitle(CharSequence charSequence) {
+        u(0, charSequence, 0, null, null);
+        return this;
+    }
+
+    @Override // android.view.SubMenu
+    public final SubMenu setHeaderView(View view) {
+        u(0, null, 0, null, view);
+        return this;
+    }
+
+    @Override // android.view.SubMenu
+    public final SubMenu setIcon(Drawable drawable) {
+        this.A.setIcon(drawable);
+        return this;
+    }
+
+    @Override // defpackage.gj4, android.view.Menu
+    public final void setQwertyMode(boolean z) {
+        this.z.setQwertyMode(z);
+    }
+
+    @Override // android.view.SubMenu
+    public final SubMenu setIcon(int i) {
+        this.A.setIcon(i);
+        return this;
+    }
+
+    @Override // android.view.SubMenu
+    public final SubMenu setHeaderIcon(int i) {
+        u(0, null, i, null, null);
+        return this;
+    }
+
+    @Override // android.view.SubMenu
+    public final SubMenu setHeaderTitle(int i) {
+        u(i, null, 0, null, null);
+        return this;
     }
 }

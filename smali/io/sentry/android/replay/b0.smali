@@ -1,138 +1,81 @@
-.class public final Lio/sentry/android/replay/b0;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lj72;
+.class public abstract synthetic Lio/sentry/android/replay/b0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:I
-
-.field public final synthetic R:Landroid/view/View;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/view/View;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput p2, p0, Lio/sentry/android/replay/b0;->Q:I
+    invoke-static {}, Lio/sentry/m4;->values()[Lio/sentry/m4;
 
     .line 2
     .line 3
-    iput-object p1, p0, Lio/sentry/android/replay/b0;->R:Landroid/view/View;
-
     .line 4
+    move-result-object v0
+
     .line 5
-    const/4 p1, 0x1
+    array-length v0, v0
 
     .line 6
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    .line 9
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lio/sentry/android/replay/b0;->Q:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lio/sentry/android/replay/b0;->R:Landroid/view/View;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    check-cast p1, Ljava/lang/ref/WeakReference;
+    :try_start_0
+    sget-object v1, Lio/sentry/m4;->CANVAS:Lio/sentry/m4;
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 11
     .line 12
     .line 13
-    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    move-result v1
 
     .line 14
-    .line 15
-    .line 16
-    move-result-object p1
+    const/4 v2, 0x1
 
+    .line 15
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 16
     .line 17
-    invoke-static {p1, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :catch_0
+    :try_start_1
+    sget-object v1, Lio/sentry/m4;->PIXEL_COPY:Lio/sentry/m4;
 
     .line 18
     .line 19
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 20
-    move-result p1
-
     .line 21
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 22
+    move-result v1
+
     .line 23
+    const/4 v2, 0x2
+
     .line 24
-    move-result-object p1
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 25
-    return-object p1
-
     .line 26
-    :pswitch_0
-    check-cast p1, Ljava/lang/ref/WeakReference;
+    :catch_1
+    sput-object v0, Lio/sentry/android/replay/b0;->a:[I
 
     .line 27
     .line 28
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object p1
-
-    .line 35
-    invoke-static {p1, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result p1
-
-    .line 39
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object p1
-
-    .line 43
-    return-object p1
-
-    .line 44
-    nop
-
-    .line 45
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

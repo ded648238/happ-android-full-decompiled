@@ -1,52 +1,29 @@
-.class public final Ln12;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Ln12;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public T:Lqe5;
-
-.field public U:Lk12;
-
-.field public synthetic V:Ljava/lang/Object;
-
-.field public W:I
+# static fields
+.field public static final a:Lkv1;
 
 
-# virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
+# direct methods
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
-    iput-object p1, p0, Ln12;->V:Ljava/lang/Object;
+    new-instance v0, Lkv1;
 
     .line 2
     .line 3
-    iget p1, p0, Ln12;->W:I
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    const/high16 v0, -0x80000000
-
     .line 6
+    sput-object v0, Ln12;->a:Lkv1;
+
     .line 7
-    or-int/2addr p1, v0
-
     .line 8
-    iput p1, p0, Ln12;->W:I
-
-    .line 9
-    .line 10
-    const/4 p1, 0x0
-
-    .line 11
-    invoke-static {p1, p0}, Lf93;->B(Lg02;Law0;)Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    return-object p1
+    return-void
 .end method

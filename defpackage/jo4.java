@@ -1,37 +1,43 @@
 package defpackage;
 
-import android.app.Notification;
-import android.os.Parcel;
-import android.os.Parcelable;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class jo4 {
+    public final long a;
+    public final long b;
+    public final boolean c;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class jo4 implements Parcelable {
-    public static final Parcelable.Creator<jo4> CREATOR = new go4(2);
-    public final String Q;
-    public final b42 R;
-
-    public jo4(Parcel parcel) {
-        this.Q = parcel.readString();
-        this.R = new b42(parcel.readInt(), (Notification) parcel.readParcelable(jo4.class.getClassLoader()), parcel.readInt());
+    public jo4(long j, long j2, boolean z) {
+        this.a = j;
+        this.b = j2;
+        this.c = z;
     }
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
+    public final jo4 a(jo4 jo4Var) {
+        return new jo4(ky4.f(this.a, jo4Var.a), Math.max(this.b, jo4Var.b), this.c);
     }
 
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.Q);
-        b42 b42Var = this.R;
-        parcel.writeInt(b42Var.a);
-        parcel.writeInt(b42Var.b);
-        parcel.writeParcelable(b42Var.c, i);
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof jo4)) {
+            return false;
+        }
+        jo4 jo4Var = (jo4) obj;
+        return ky4.b(this.a, jo4Var.a) && this.b == jo4Var.b && this.c == jo4Var.c;
     }
 
-    public jo4(String str, b42 b42Var) {
-        this.Q = str;
-        this.R = b42Var;
+    public final int hashCode() {
+        return Boolean.hashCode(this.c) + w31.e(Long.hashCode(this.a) * 31, 31, this.b);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("MouseWheelScrollDelta(value=");
+        sb.append((Object) ky4.h(this.a));
+        sb.append(", timeMillis=");
+        sb.append(this.b);
+        sb.append(", shouldApplyImmediately=");
+        return eb7.m(sb, this.c, ')');
     }
 }

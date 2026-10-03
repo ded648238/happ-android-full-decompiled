@@ -1,274 +1,90 @@
 .class public final Lko4;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Landroid/os/Parcelable;
-
-
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lko4;",
-            ">;"
-        }
-    .end annotation
-.end field
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Ljava/lang/String;
+.field public c0:Lrm6;
 
-.field public final R:I
+.field public d0:Lsy5;
+
+.field public e0:F
+
+.field public synthetic f0:Ljava/lang/Object;
+
+.field public final synthetic g0:Lij1;
+
+.field public h0:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lgo4;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x3
-
-    .line 4
-    invoke-direct {v0, v1}, Lgo4;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, Lko4;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Lij1;Ld31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lko4;->g0:Lij1;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lko4;->Q:Ljava/lang/String;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
-    iput p2, p0, Lko4;->R:I
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final describeContents()I
-    .locals 1
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 1
-    if-ne p0, p1, :cond_0
+    iput-object p1, p0, Lko4;->f0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    goto :goto_1
+    iget p1, p0, Lko4;->h0:I
 
     .line 4
-    :cond_0
-    instance-of v0, p1, Lko4;
-
     .line 5
-    .line 6
-    if-nez v0, :cond_1
+    const/high16 v0, -0x80000000
 
+    .line 6
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    goto :goto_0
+    iput p1, p0, Lko4;->h0:I
 
     .line 9
-    :cond_1
-    check-cast p1, Lko4;
-
     .line 10
+    const/4 v3, 0x0
+
     .line 11
-    iget-object v0, p0, Lko4;->Q:Ljava/lang/String;
+    const/4 v4, 0x0
 
     .line 12
-    .line 13
-    iget-object v1, p1, Lko4;->Q:Ljava/lang/String;
+    iget-object v0, p0, Lko4;->g0:Lij1;
 
+    .line 13
     .line 14
+    const/4 v1, 0x0
+
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    const/4 v2, 0x0
 
     .line 16
+    move-object v5, p0
+
     .line 17
+    invoke-static/range {v0 .. v5}, Lij1;->a(Lij1;Lrm6;Ljo4;FFLd31;)Ljava/lang/Object;
+
     .line 18
-    move-result v0
-
-    .line 19
-    if-nez v0, :cond_2
-
-    .line 20
-    .line 21
-    goto :goto_0
-
-    .line 22
-    :cond_2
-    iget v0, p0, Lko4;->R:I
-
-    .line 23
-    .line 24
-    iget p1, p1, Lko4;->R:I
-
-    .line 25
-    .line 26
-    if-eq v0, p1, :cond_3
-
-    .line 27
-    .line 28
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 29
-    return p1
-
-    .line 30
-    :cond_3
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 31
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lko4;->Q:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget v1, p0, Lko4;->R:I
-
-    .line 10
-    .line 11
-    add-int/2addr v0, v1
-
-    .line 12
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "ParcelableInterruptRequest(id="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lko4;->Q:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", stopReason="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget v1, p0, Lko4;->R:I
-
     .line 19
     .line 20
-    const/16 v2, 0x29
+    move-result-object p0
 
     .line 21
-    .line 22
-    invoke-static {v0, v1, v2}, Lea0;->s(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    return-object v0
-.end method
-
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object p2, p0, Lko4;->Q:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 7
-    .line 8
-    .line 9
-    iget p2, p0, Lko4;->R:I
-
-    .line 10
-    .line 11
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 12
-    .line 13
-    .line 14
-    return-void
+    return-object p0
 .end method

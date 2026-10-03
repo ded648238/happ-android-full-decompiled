@@ -1,457 +1,403 @@
 .class public final Llg2;
-.super Lj57;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final b:Ljx6;
 
 
 # instance fields
-.field public final synthetic T:I
+.field public final synthetic a:Lrg2;
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method static constructor <clinit>()V
     .locals 2
 
     .line 1
-    iput p1, p0, Llg2;->T:I
+    new-instance v0, Ljx6;
 
     .line 2
     .line 3
-    packed-switch p1, :pswitch_data_0
+    const/4 v1, 0x0
 
     .line 4
+    invoke-direct {v0, v1}, Ljx6;-><init>(I)V
+
     .line 5
     .line 6
-    const/4 p1, 0x1
-
     .line 7
-    const/4 v0, 0x0
+    sput-object v0, Llg2;->b:Ljx6;
 
     .line 8
-    const-class v1, Lkg2;
-
     .line 9
-    .line 10
-    invoke-direct {p0, v1, p1, v0}, Lj57;-><init>(Ljava/lang/Class;IB)V
-
-    .line 11
-    .line 12
-    .line 13
     return-void
-
-    .line 14
-    :pswitch_0
-    const/4 p1, 0x1
-
-    .line 15
-    const/4 v0, 0x0
-
-    .line 16
-    const-class v1, Lqq4;
-
-    .line 17
-    .line 18
-    invoke-direct {p0, v1, p1, v0}, Lj57;-><init>(Ljava/lang/Class;IB)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
-
-    .line 22
-    nop
-
-    .line 23
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
 .end method
 
-
-# virtual methods
-.method public q(Ljava/util/Map$Entry;Lr03;)V
-    .locals 4
+.method public constructor <init>(Lrg2;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Llg2;->T:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    .line 4
+    iput-object p1, p0, Llg2;->a:Lrg2;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static b(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;
+    .locals 3
+
+    .line 1
+    sget-object v0, Llg2;->b:Ljx6;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p0}, Ljx6;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    invoke-super {p0, p1, p2}, Lj57;->q(Ljava/util/Map$Entry;Lr03;)V
+    move-result-object v1
 
     .line 7
+    check-cast v1, Ljx6;
+
     .line 8
     .line 9
-    return-void
+    const/4 v2, 0x0
 
     .line 10
-    :pswitch_0
-    const-string v0, "aud"
+    if-nez v1, :cond_0
 
     .line 11
     .line 12
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    new-instance v1, Ljx6;
 
     .line 13
     .line 14
+    invoke-direct {v1, v2}, Ljx6;-><init>(I)V
+
     .line 15
-    move-result-object v1
-
     .line 16
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 17
+    invoke-virtual {v0, p0, v1}, Ljx6;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 18
     .line 19
-    move-result v0
-
     .line 20
-    if-eqz v0, :cond_6
+    :cond_0
+    invoke-virtual {v1, p1}, Ljx6;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 21
     .line 22
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
     .line 23
-    .line 24
-    .line 25
     move-result-object v0
 
+    .line 24
+    check-cast v0, Ljava/lang/Class;
+
+    .line 25
     .line 26
-    instance-of v0, v0, Ljava/lang/String;
+    if-nez v0, :cond_1
 
     .line 27
     .line 28
-    if-eqz v0, :cond_0
+    invoke-static {p1, v2, p0}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
 
     .line 29
     .line 30
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    .line 31
+    move-result-object p0
+
+    .line 32
+    invoke-virtual {v1, p1, p0}, Ljx6;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    return-object p0
+
+    .line 36
+    :cond_1
+    return-object v0
+.end method
+
+.method public static c(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;
+    .locals 3
+
+    .line 1
+    const-string v0, "Unable to instantiate fragment "
+
+    .line 2
+    .line 3
+    :try_start_0
+    invoke-static {p0, p1}, Llg2;->b(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 7
+    return-object p0
+
+    .line 8
+    :catch_0
+    move-exception p0
+
+    .line 9
+    new-instance v1, Lsf2;
+
+    .line 10
+    .line 11
+    const-string v2, ": make sure class is a valid subclass of Fragment"
+
+    .line 12
+    .line 13
+    invoke-static {v0, p1, v2}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    invoke-direct {v1, p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 18
+    .line 19
+    .line 20
+    throw v1
+
+    .line 21
+    :catch_1
+    move-exception p0
+
+    .line 22
+    new-instance v1, Lsf2;
+
+    .line 23
+    .line 24
+    const-string v2, ": make sure class name exists"
+
+    .line 25
+    .line 26
+    invoke-static {v0, p1, v2}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    invoke-direct {v1, p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 31
     .line 32
     .line 33
-    move-result-object v0
+    throw v1
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;)Luf2;
+    .locals 3
+
+    .line 1
+    iget-object p0, p0, Llg2;->a:Lrg2;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lrg2;->w:Lxf2;
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lxf2;->d0:Landroidx/appcompat/app/AppCompatActivity;
+
+    .line 6
+    .line 7
+    const-string v0, ": make sure class name exists, is public, and has an empty constructor that is public"
+
+    .line 8
+    .line 9
+    const-string v1, "Unable to instantiate fragment "
+
+    .line 10
+    .line 11
+    :try_start_0
+    invoke-virtual {p0}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    invoke-static {p0, p1}, Llg2;->c(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    const/4 v2, 0x0
+
+    .line 20
+    invoke-virtual {p0, v2}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p0
+
+    .line 24
+    invoke-virtual {p0, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p0
+
+    .line 28
+    check-cast p0, Luf2;
+    :try_end_0
+    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 29
+    .line 30
+    return-object p0
+
+    .line 31
+    :catch_0
+    move-exception p0
+
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :catch_1
+    move-exception p0
 
     .line 34
-    check-cast v0, Ljava/lang/String;
+    goto :goto_1
 
     .line 35
+    :catch_2
+    move-exception p0
+
     .line 36
-    invoke-virtual {p2, v0}, Lr03;->P(Ljava/lang/String;)V
+    goto :goto_2
 
     .line 37
+    :catch_3
+    move-exception p0
+
     .line 38
+    goto :goto_3
+
     .line 39
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    :goto_0
+    new-instance v0, Lsf2;
 
     .line 40
     .line 41
-    .line 42
-    move-result-object p1
+    const-string v2, ": calling Fragment constructor caused an exception"
 
+    .line 42
     .line 43
-    check-cast p1, Ljava/lang/String;
+    invoke-static {v1, p1, v2}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 44
     .line 45
-    invoke-virtual {p2, p1}, Lr03;->M0(Ljava/lang/String;)V
-
     .line 46
-    .line 47
-    .line 48
-    goto/16 :goto_3
+    move-result-object p1
 
+    .line 47
+    invoke-direct {v0, p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 48
     .line 49
     .line 50
-    :cond_0
-    new-instance v0, Ljava/util/ArrayList;
+    throw v0
 
     .line 51
-    .line 52
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    :goto_1
+    new-instance v0, Lsf2;
 
+    .line 52
     .line 53
+    const-string v2, ": could not find Fragment constructor"
+
     .line 54
     .line 55
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-static {v1, p1, v2}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 56
     .line 57
     .line 58
-    move-result-object v1
+    move-result-object p1
 
     .line 59
-    instance-of v1, v1, [Ljava/lang/String;
+    invoke-direct {v0, p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 60
     .line 61
-    if-eqz v1, :cond_1
-
     .line 62
+    throw v0
+
     .line 63
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    :goto_2
+    new-instance v2, Lsf2;
 
     .line 64
     .line 65
+    invoke-static {v1, p1, v0}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
     .line 66
-    move-result-object v0
-
     .line 67
-    check-cast v0, [Ljava/lang/String;
-
     .line 68
+    move-result-object p1
+
     .line 69
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-direct {v2, p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 70
     .line 71
     .line 72
-    move-result-object v0
+    throw v2
 
     .line 73
-    goto :goto_1
+    :goto_3
+    new-instance v2, Lsf2;
 
     .line 74
-    :cond_1
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
     .line 75
+    invoke-static {v1, p1, v0}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
     .line 76
     .line 77
-    move-result-object v1
-
     .line 78
-    instance-of v1, v1, Ljava/util/List;
+    move-result-object p1
 
     .line 79
-    .line 80
-    if-eqz v1, :cond_3
+    invoke-direct {v2, p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 80
     .line 81
     .line 82
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    .line 83
-    .line 84
-    .line 85
-    move-result-object v1
-
-    .line 86
-    check-cast v1, Ljava/util/List;
-
-    .line 87
-    .line 88
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 89
-    .line 90
-    .line 91
-    move-result-object v1
-
-    .line 92
-    :cond_2
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 93
-    .line 94
-    .line 95
-    move-result v2
-
-    .line 96
-    if-eqz v2, :cond_3
-
-    .line 97
-    .line 98
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 99
-    .line 100
-    .line 101
-    move-result-object v2
-
-    .line 102
-    instance-of v3, v2, Ljava/lang/String;
-
-    .line 103
-    .line 104
-    if-eqz v3, :cond_2
-
-    .line 105
-    .line 106
-    check-cast v2, Ljava/lang/String;
-
-    .line 107
-    .line 108
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 109
-    .line 110
-    .line 111
-    goto :goto_0
-
-    .line 112
-    :cond_3
-    :goto_1
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    .line 113
-    .line 114
-    .line 115
-    move-result v1
-
-    .line 116
-    const/4 v2, 0x1
-
-    .line 117
-    if-ne v1, v2, :cond_4
-
-    .line 118
-    .line 119
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    .line 120
-    .line 121
-    .line 122
-    move-result-object p1
-
-    .line 123
-    check-cast p1, Ljava/lang/String;
-
-    .line 124
-    .line 125
-    invoke-virtual {p2, p1}, Lr03;->P(Ljava/lang/String;)V
-
-    .line 126
-    .line 127
-    .line 128
-    const/4 p1, 0x0
-
-    .line 129
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 130
-    .line 131
-    .line 132
-    move-result-object p1
-
-    .line 133
-    check-cast p1, Ljava/lang/String;
-
-    .line 134
-    .line 135
-    invoke-virtual {p2, p1}, Lr03;->M0(Ljava/lang/String;)V
-
-    .line 136
-    .line 137
-    .line 138
-    goto :goto_3
-
-    .line 139
-    :cond_4
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    .line 140
-    .line 141
-    .line 142
-    move-result v1
-
-    .line 143
-    if-le v1, v2, :cond_7
-
-    .line 144
-    .line 145
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    .line 146
-    .line 147
-    .line 148
-    move-result-object p1
-
-    .line 149
-    check-cast p1, Ljava/lang/String;
-
-    .line 150
-    .line 151
-    invoke-virtual {p2, p1}, Lr03;->P(Ljava/lang/String;)V
-
-    .line 152
-    .line 153
-    .line 154
-    invoke-virtual {p2}, Lr03;->x0()V
-
-    .line 155
-    .line 156
-    .line 157
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 158
-    .line 159
-    .line 160
-    move-result-object p1
-
-    .line 161
-    :goto_2
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 162
-    .line 163
-    .line 164
-    move-result v0
-
-    .line 165
-    if-eqz v0, :cond_5
-
-    .line 166
-    .line 167
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 168
-    .line 169
-    .line 170
-    move-result-object v0
-
-    .line 171
-    check-cast v0, Ljava/lang/String;
-
-    .line 172
-    .line 173
-    invoke-virtual {p2, v0}, Lr03;->M0(Ljava/lang/String;)V
-
-    .line 174
-    .line 175
-    .line 176
-    goto :goto_2
-
-    .line 177
-    :cond_5
-    invoke-virtual {p2}, Lr03;->C()V
-
-    .line 178
-    .line 179
-    .line 180
-    goto :goto_3
-
-    .line 181
-    :cond_6
-    invoke-super {p0, p1, p2}, Lj57;->q(Ljava/util/Map$Entry;Lr03;)V
-
-    .line 182
-    .line 183
-    .line 184
-    :cond_7
-    :goto_3
-    return-void
-
-    .line 185
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
+    throw v2
 .end method

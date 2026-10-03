@@ -1,6 +1,6 @@
 .class public final Lokhttp3/CacheControl$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -99,7 +99,7 @@
 .end method
 
 .method private final clampToInt(J)I
-    .locals 3
+    .locals 2
 
     .line 1
     const-wide/32 v0, 0x7fffffff
@@ -107,27 +107,27 @@
     .line 2
     .line 3
     .line 4
-    cmp-long v2, p1, v0
+    cmp-long p0, p1, v0
 
     .line 5
     .line 6
-    if-lez v2, :cond_0
+    if-lez p0, :cond_0
 
     .line 7
     .line 8
-    const p1, 0x7fffffff
+    const p0, 0x7fffffff
 
     .line 9
     .line 10
     .line 11
-    return p1
+    return p0
 
     .line 12
     :cond_0
-    long-to-int p2, p1
+    long-to-int p0, p1
 
     .line 13
-    return p2
+    return p0
 .end method
 
 
@@ -190,7 +190,7 @@
     const/4 v7, 0x0
 
     .line 25
-    invoke-direct/range {v0 .. v14}, Lokhttp3/CacheControl;-><init>(ZZIIZZZIIZZZLjava/lang/String;Lj31;)V
+    invoke-direct/range {v0 .. v14}, Lokhttp3/CacheControl;-><init>(ZZIIZZZIIZZZLjava/lang/String;Lib1;)V
 
     .line 26
     .line 27
@@ -252,27 +252,27 @@
 
     .line 18
     :cond_0
-    const-string p2, "maxAge < 0: "
+    const-string p0, "maxAge < 0: "
 
     .line 19
     .line 20
-    invoke-static {p1, p2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 21
     .line 22
     .line 23
-    move-result-object p1
+    move-result-object p0
 
     .line 24
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 25
     .line 26
     .line 27
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 28
-    return-object p1
+    return-object p0
 .end method
 
 .method public final maxStale(ILjava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
@@ -315,27 +315,27 @@
 
     .line 18
     :cond_0
-    const-string p2, "maxStale < 0: "
+    const-string p0, "maxStale < 0: "
 
     .line 19
     .line 20
-    invoke-static {p1, p2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 21
     .line 22
     .line 23
-    move-result-object p1
+    move-result-object p0
 
     .line 24
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 25
     .line 26
     .line 27
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 28
-    return-object p1
+    return-object p0
 .end method
 
 .method public final minFresh(ILjava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
@@ -378,27 +378,27 @@
 
     .line 18
     :cond_0
-    const-string p2, "minFresh < 0: "
+    const-string p0, "minFresh < 0: "
 
     .line 19
     .line 20
-    invoke-static {p1, p2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 21
     .line 22
     .line 23
-    move-result-object p1
+    move-result-object p0
 
     .line 24
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 25
     .line 26
     .line 27
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 28
-    return-object p1
+    return-object p0
 .end method
 
 .method public final noCache()Lokhttp3/CacheControl$Builder;

@@ -3,116 +3,116 @@ package com.google.android.material.progressindicator;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Pair;
-import defpackage.al3;
-import defpackage.bp2;
-import defpackage.cb1;
-import defpackage.cl3;
-import defpackage.el3;
-import defpackage.fn;
-import defpackage.lk1;
-import defpackage.na5;
-import defpackage.uy;
-import defpackage.v75;
-import j$.util.Objects;
+import defpackage.d24;
+import defpackage.g24;
+import defpackage.hj1;
+import defpackage.i24;
+import defpackage.i60;
+import defpackage.nu5;
+import defpackage.ps1;
+import defpackage.t33;
+import defpackage.ur5;
+import defpackage.y00;
+import java.util.Objects;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class LinearProgressIndicator extends a {
-    public static final int h0 = na5.Widget_MaterialComponents_LinearProgressIndicator;
+    public static final int s0 = nu5.Widget_MaterialComponents_LinearProgressIndicator;
 
     public LinearProgressIndicator(Context context, AttributeSet attributeSet, int i) {
-        super(context, attributeSet, i, h0);
-        LinearProgressIndicatorSpec linearProgressIndicatorSpec = (LinearProgressIndicatorSpec) this.Q;
-        al3 al3Var = new al3(linearProgressIndicatorSpec);
-        al3Var.f = 300.0f;
-        al3Var.o = new Pair(new lk1(), new lk1());
+        super(context, attributeSet, i, s0);
+        LinearProgressIndicatorSpec linearProgressIndicatorSpec = (LinearProgressIndicatorSpec) this.c0;
+        d24 d24Var = new d24(linearProgressIndicatorSpec);
+        d24Var.f = 300.0f;
+        d24Var.o = new Pair(new ps1(), new ps1());
         Context context2 = getContext();
-        setIndeterminateDrawable(new bp2(context2, linearProgressIndicatorSpec, al3Var, linearProgressIndicatorSpec.o == 0 ? new cl3(linearProgressIndicatorSpec) : new el3(context2, linearProgressIndicatorSpec)));
-        setProgressDrawable(new cb1(getContext(), linearProgressIndicatorSpec, al3Var));
-        this.b0 = true;
+        setIndeterminateDrawable(new t33(context2, linearProgressIndicatorSpec, d24Var, linearProgressIndicatorSpec.q == 0 ? new g24(linearProgressIndicatorSpec) : new i24(context2, linearProgressIndicatorSpec)));
+        setProgressDrawable(new hj1(getContext(), linearProgressIndicatorSpec, d24Var));
+        this.l0 = true;
     }
 
     @Override // com.google.android.material.progressindicator.a
-    public final uy a(Context context, AttributeSet attributeSet) {
+    public final y00 a(Context context, AttributeSet attributeSet) {
         return new LinearProgressIndicatorSpec(context, attributeSet);
     }
 
     @Override // com.google.android.material.progressindicator.a
     public final void c(int i, boolean z) {
-        uy uyVar = this.Q;
-        if (uyVar != null && ((LinearProgressIndicatorSpec) uyVar).o == 0 && isIndeterminate()) {
+        y00 y00Var = this.c0;
+        if (y00Var != null && ((LinearProgressIndicatorSpec) y00Var).q == 0 && isIndeterminate()) {
             return;
         }
         super.c(i, z);
     }
 
     public int getIndeterminateAnimationType() {
-        return ((LinearProgressIndicatorSpec) this.Q).o;
+        return ((LinearProgressIndicatorSpec) this.c0).q;
     }
 
     public int getIndicatorDirection() {
-        return ((LinearProgressIndicatorSpec) this.Q).p;
+        return ((LinearProgressIndicatorSpec) this.c0).r;
     }
 
     public int getTrackInnerCornerRadius() {
-        return ((LinearProgressIndicatorSpec) this.Q).t;
+        return ((LinearProgressIndicatorSpec) this.c0).v;
     }
 
     public Integer getTrackStopIndicatorPadding() {
-        return ((LinearProgressIndicatorSpec) this.Q).s;
+        return ((LinearProgressIndicatorSpec) this.c0).u;
     }
 
     public int getTrackStopIndicatorSize() {
-        return ((LinearProgressIndicatorSpec) this.Q).r;
+        return ((LinearProgressIndicatorSpec) this.c0).t;
     }
 
     @Override // com.google.android.material.progressindicator.a, android.view.View
     public final void onLayout(boolean z, int i, int i2, int i3, int i4) {
         super.onLayout(z, i, i2, i3, i4);
-        uy uyVar = this.Q;
-        LinearProgressIndicatorSpec linearProgressIndicatorSpec = (LinearProgressIndicatorSpec) uyVar;
+        y00 y00Var = this.c0;
+        LinearProgressIndicatorSpec linearProgressIndicatorSpec = (LinearProgressIndicatorSpec) y00Var;
         boolean z2 = true;
-        if (((LinearProgressIndicatorSpec) uyVar).p != 1 && ((getLayoutDirection() != 1 || ((LinearProgressIndicatorSpec) uyVar).p != 2) && (getLayoutDirection() != 0 || ((LinearProgressIndicatorSpec) uyVar).p != 3))) {
+        if (((LinearProgressIndicatorSpec) y00Var).r != 1 && ((getLayoutDirection() != 1 || ((LinearProgressIndicatorSpec) y00Var).r != 2) && (getLayoutDirection() != 0 || ((LinearProgressIndicatorSpec) y00Var).r != 3))) {
             z2 = false;
         }
-        linearProgressIndicatorSpec.q = z2;
+        linearProgressIndicatorSpec.s = z2;
     }
 
     @Override // android.widget.ProgressBar, android.view.View
     public final void onSizeChanged(int i, int i2, int i3, int i4) {
         int paddingRight = i - (getPaddingRight() + getPaddingLeft());
         int paddingBottom = i2 - (getPaddingBottom() + getPaddingTop());
-        bp2 indeterminateDrawable = getIndeterminateDrawable();
+        t33 indeterminateDrawable = getIndeterminateDrawable();
         if (indeterminateDrawable != null) {
             indeterminateDrawable.setBounds(0, 0, paddingRight, paddingBottom);
         }
-        cb1 progressDrawable = getProgressDrawable();
+        hj1 progressDrawable = getProgressDrawable();
         if (progressDrawable != null) {
             progressDrawable.setBounds(0, 0, paddingRight, paddingBottom);
         }
     }
 
     public void setIndeterminateAnimationType(int i) {
-        uy uyVar = this.Q;
-        if (((LinearProgressIndicatorSpec) uyVar).o == i) {
+        y00 y00Var = this.c0;
+        if (((LinearProgressIndicatorSpec) y00Var).q == i) {
             return;
         }
         if (d() && isIndeterminate()) {
-            fn.s("Cannot change indeterminate animation type while the progress indicator is show in indeterminate mode.");
+            i60.g("Cannot change indeterminate animation type while the progress indicator is show in indeterminate mode.");
             return;
         }
-        ((LinearProgressIndicatorSpec) uyVar).o = i;
-        ((LinearProgressIndicatorSpec) uyVar).d();
+        ((LinearProgressIndicatorSpec) y00Var).q = i;
+        ((LinearProgressIndicatorSpec) y00Var).d();
         if (i == 0) {
-            bp2 indeterminateDrawable = getIndeterminateDrawable();
-            cl3 cl3Var = new cl3((LinearProgressIndicatorSpec) uyVar);
-            indeterminateDrawable.e0 = cl3Var;
-            cl3Var.a = indeterminateDrawable;
+            t33 indeterminateDrawable = getIndeterminateDrawable();
+            g24 g24Var = new g24((LinearProgressIndicatorSpec) y00Var);
+            indeterminateDrawable.n0 = g24Var;
+            g24Var.a = indeterminateDrawable;
         } else {
-            bp2 indeterminateDrawable2 = getIndeterminateDrawable();
-            el3 el3Var = new el3(getContext(), (LinearProgressIndicatorSpec) uyVar);
-            indeterminateDrawable2.e0 = el3Var;
-            el3Var.a = indeterminateDrawable2;
+            t33 indeterminateDrawable2 = getIndeterminateDrawable();
+            i24 i24Var = new i24(getContext(), (LinearProgressIndicatorSpec) y00Var);
+            indeterminateDrawable2.n0 = i24Var;
+            i24Var.a = indeterminateDrawable2;
         }
         b();
         invalidate();
@@ -121,69 +121,69 @@ public class LinearProgressIndicator extends a {
     @Override // com.google.android.material.progressindicator.a
     public void setIndicatorColor(int... iArr) {
         super.setIndicatorColor(iArr);
-        ((LinearProgressIndicatorSpec) this.Q).d();
+        ((LinearProgressIndicatorSpec) this.c0).d();
     }
 
     public void setIndicatorDirection(int i) {
-        uy uyVar = this.Q;
-        ((LinearProgressIndicatorSpec) uyVar).p = i;
-        LinearProgressIndicatorSpec linearProgressIndicatorSpec = (LinearProgressIndicatorSpec) uyVar;
+        y00 y00Var = this.c0;
+        ((LinearProgressIndicatorSpec) y00Var).r = i;
+        LinearProgressIndicatorSpec linearProgressIndicatorSpec = (LinearProgressIndicatorSpec) y00Var;
         boolean z = true;
-        if (i != 1 && ((getLayoutDirection() != 1 || ((LinearProgressIndicatorSpec) uyVar).p != 2) && (getLayoutDirection() != 0 || i != 3))) {
+        if (i != 1 && ((getLayoutDirection() != 1 || ((LinearProgressIndicatorSpec) y00Var).r != 2) && (getLayoutDirection() != 0 || i != 3))) {
             z = false;
         }
-        linearProgressIndicatorSpec.q = z;
+        linearProgressIndicatorSpec.s = z;
         invalidate();
     }
 
     @Override // com.google.android.material.progressindicator.a
     public void setTrackCornerRadius(int i) {
         super.setTrackCornerRadius(i);
-        ((LinearProgressIndicatorSpec) this.Q).d();
+        ((LinearProgressIndicatorSpec) this.c0).d();
         invalidate();
     }
 
     public void setTrackInnerCornerRadius(int i) {
-        uy uyVar = this.Q;
-        if (((LinearProgressIndicatorSpec) uyVar).t != i) {
-            ((LinearProgressIndicatorSpec) uyVar).t = Math.round(Math.min(i, ((LinearProgressIndicatorSpec) uyVar).a / 2.0f));
-            ((LinearProgressIndicatorSpec) uyVar).v = false;
-            ((LinearProgressIndicatorSpec) uyVar).w = true;
-            ((LinearProgressIndicatorSpec) uyVar).d();
+        y00 y00Var = this.c0;
+        if (((LinearProgressIndicatorSpec) y00Var).v != i) {
+            ((LinearProgressIndicatorSpec) y00Var).v = Math.round(Math.min(i, ((LinearProgressIndicatorSpec) y00Var).a / 2.0f));
+            ((LinearProgressIndicatorSpec) y00Var).x = false;
+            ((LinearProgressIndicatorSpec) y00Var).y = true;
+            ((LinearProgressIndicatorSpec) y00Var).d();
             invalidate();
         }
     }
 
     public void setTrackInnerCornerRadiusFraction(float f) {
-        uy uyVar = this.Q;
-        if (((LinearProgressIndicatorSpec) uyVar).u != f) {
-            ((LinearProgressIndicatorSpec) uyVar).u = Math.min(f, 0.5f);
-            ((LinearProgressIndicatorSpec) uyVar).v = true;
-            ((LinearProgressIndicatorSpec) uyVar).w = true;
-            ((LinearProgressIndicatorSpec) uyVar).d();
+        y00 y00Var = this.c0;
+        if (((LinearProgressIndicatorSpec) y00Var).w != f) {
+            ((LinearProgressIndicatorSpec) y00Var).w = Math.min(f, 0.5f);
+            ((LinearProgressIndicatorSpec) y00Var).x = true;
+            ((LinearProgressIndicatorSpec) y00Var).y = true;
+            ((LinearProgressIndicatorSpec) y00Var).d();
             invalidate();
         }
     }
 
     public void setTrackStopIndicatorPadding(Integer num) {
-        uy uyVar = this.Q;
-        if (Objects.equals(((LinearProgressIndicatorSpec) uyVar).s, num)) {
+        y00 y00Var = this.c0;
+        if (Objects.equals(((LinearProgressIndicatorSpec) y00Var).u, num)) {
             return;
         }
-        ((LinearProgressIndicatorSpec) uyVar).s = num;
+        ((LinearProgressIndicatorSpec) y00Var).u = num;
         invalidate();
     }
 
     public void setTrackStopIndicatorSize(int i) {
-        uy uyVar = this.Q;
-        if (((LinearProgressIndicatorSpec) uyVar).r != i) {
-            ((LinearProgressIndicatorSpec) uyVar).r = Math.min(i, ((LinearProgressIndicatorSpec) uyVar).a);
-            ((LinearProgressIndicatorSpec) uyVar).d();
+        y00 y00Var = this.c0;
+        if (((LinearProgressIndicatorSpec) y00Var).t != i) {
+            ((LinearProgressIndicatorSpec) y00Var).t = i;
+            ((LinearProgressIndicatorSpec) y00Var).d();
             invalidate();
         }
     }
 
     public LinearProgressIndicator(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, v75.linearProgressIndicatorStyle);
+        this(context, attributeSet, ur5.linearProgressIndicatorStyle);
     }
 }

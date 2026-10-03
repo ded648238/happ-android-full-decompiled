@@ -1,36 +1,18 @@
 .class public final Lpj7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lokhttp3/Interceptor;
+.implements Ltf6;
 
 
 # instance fields
-.field public final a:Lg72;
+.field public final X:Lxh2;
 
 
 # direct methods
-.method public constructor <init>(Lg72;)V
+.method public constructor <init>(Lxh2;)V
     .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lpj7;->a:Lg72;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final intercept(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
-    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -38,89 +20,290 @@
     .line 2
     .line 3
     .line 4
-    invoke-interface {p1}, Lokhttp3/Interceptor$Chain;->request()Lokhttp3/Request;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
     .line 6
     .line 7
-    move-result-object v0
+    iput-object p1, p0, Lpj7;->X:Lxh2;
 
     .line 8
-    const-string v1, "User-Agent"
-
     .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Lokhttp3/Request;->header(Ljava/lang/String;)Ljava/lang/String;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final bridge synthetic U0(Ljava/lang/String;)Lag6;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lpj7;->g(Ljava/lang/String;)Lyj7;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final close()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lpj7;->X:Lxh2;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Ljava/io/Closeable;->close()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final g(Ljava/lang/String;)Lyj7;
+    .locals 4
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p0, p0, Lpj7;->X:Lxh2;
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-static {p1}, Lea7;->y1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+
+    .line 10
     .line 11
     .line 12
+    move-result-object v0
+
     .line 13
-    move-result-object v2
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 14
-    if-eqz v2, :cond_0
-
     .line 15
     .line 16
-    invoke-interface {p1, v0}, Lokhttp3/Interceptor$Chain;->proceed(Lokhttp3/Request;)Lokhttp3/Response;
+    move-result-object v0
 
     .line 17
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
     .line 18
     .line 19
-    move-result-object p1
-
     .line 20
-    return-object p1
+    move-result v1
 
     .line 21
-    :cond_0
-    invoke-virtual {v0}, Lokhttp3/Request;->newBuilder()Lokhttp3/Request$Builder;
+    const/4 v2, 0x3
 
     .line 22
+    if-ge v1, v2, :cond_0
+
     .line 23
     .line 24
-    move-result-object v0
+    goto :goto_0
 
     .line 25
-    iget-object v2, p0, Lpj7;->a:Lg72;
+    :cond_0
+    const/4 v1, 0x0
 
     .line 26
-    .line 27
-    invoke-interface {v2}, Lg72;->invoke()Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
+    .line 27
     .line 28
     .line 29
+    move-result-object v0
+
     .line 30
-    move-result-object v2
+    sget-object v2, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
 
     .line 31
-    check-cast v2, Ljava/lang/String;
-
     .line 32
-    .line 33
-    invoke-virtual {v0, v1, v2}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
+    invoke-virtual {v0, v2}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 
+    .line 33
     .line 34
     .line 35
-    .line 36
     move-result-object v0
+
+    .line 36
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 37
-    invoke-virtual {v0}, Lokhttp3/Request$Builder;->build()Lokhttp3/Request;
-
     .line 38
     .line 39
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
     .line 40
-    move-result-object v0
-
     .line 41
-    invoke-interface {p1, v0}, Lokhttp3/Interceptor$Chain;->proceed(Lokhttp3/Request;)Lokhttp3/Response;
-
     .line 42
-    .line 43
-    .line 44
-    move-result-object p1
+    move-result v2
 
+    .line 43
+    const v3, 0x1367f
+
+    .line 44
     .line 45
-    return-object p1
+    .line 46
+    if-eq v2, v3, :cond_3
+
+    .line 47
+    .line 48
+    const v3, 0x1403a
+
+    .line 49
+    .line 50
+    .line 51
+    if-eq v2, v3, :cond_2
+
+    .line 52
+    .line 53
+    const v3, 0x14fc2
+
+    .line 54
+    .line 55
+    .line 56
+    if-eq v2, v3, :cond_1
+
+    .line 57
+    .line 58
+    goto :goto_0
+
+    .line 59
+    :cond_1
+    const-string v2, "WIT"
+
+    .line 60
+    .line 61
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v0
+
+    .line 65
+    if-nez v0, :cond_4
+
+    .line 66
+    .line 67
+    goto :goto_0
+
+    .line 68
+    :cond_2
+    const-string v2, "SEL"
+
+    .line 69
+    .line 70
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 71
+    .line 72
+    .line 73
+    move-result v0
+
+    .line 74
+    if-nez v0, :cond_4
+
+    .line 75
+    .line 76
+    goto :goto_0
+
+    .line 77
+    :cond_3
+    const-string v2, "PRA"
+
+    .line 78
+    .line 79
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 80
+    .line 81
+    .line 82
+    move-result v0
+
+    .line 83
+    if-eqz v0, :cond_5
+
+    .line 84
+    .line 85
+    :cond_4
+    new-instance v0, Lwj7;
+
+    .line 86
+    .line 87
+    invoke-direct {v0, p0, p1}, Lyj7;-><init>(Lxh2;Ljava/lang/String;)V
+
+    .line 88
+    .line 89
+    .line 90
+    new-array p0, v1, [I
+
+    .line 91
+    .line 92
+    iput-object p0, v0, Lwj7;->c0:[I
+
+    .line 93
+    .line 94
+    new-array p0, v1, [J
+
+    .line 95
+    .line 96
+    iput-object p0, v0, Lwj7;->d0:[J
+
+    .line 97
+    .line 98
+    new-array p0, v1, [D
+
+    .line 99
+    .line 100
+    iput-object p0, v0, Lwj7;->e0:[D
+
+    .line 101
+    .line 102
+    new-array p0, v1, [Ljava/lang/String;
+
+    .line 103
+    .line 104
+    iput-object p0, v0, Lwj7;->f0:[Ljava/lang/String;
+
+    .line 105
+    .line 106
+    new-array p0, v1, [[B
+
+    .line 107
+    .line 108
+    iput-object p0, v0, Lwj7;->g0:[[B
+
+    .line 109
+    .line 110
+    return-object v0
+
+    .line 111
+    :cond_5
+    :goto_0
+    new-instance v0, Lxj7;
+
+    .line 112
+    .line 113
+    invoke-direct {v0, p0, p1}, Lxj7;-><init>(Lxh2;Ljava/lang/String;)V
+
+    .line 114
+    .line 115
+    .line 116
+    return-object v0
 .end method

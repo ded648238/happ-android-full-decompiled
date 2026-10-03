@@ -1,93 +1,90 @@
-.class public final Lvm4;
+.class public final synthetic Lvm4;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lwm4;
+.implements Lji2;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:Lgm4;
 
-.field public final synthetic R:Lxm4;
+.field public final synthetic Y:Lji2;
+
+.field public final synthetic Z:Lum4;
+
+.field public final synthetic c0:J
+
+.field public final synthetic d0:Lhv3;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lxm4;I)V
+.method public synthetic constructor <init>(Lgm4;Lji2;Lum4;JLhv3;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lvm4;->Q:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p1, p0, Lvm4;->R:Lxm4;
-
     .line 4
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lvm4;->X:Lgm4;
 
+    .line 5
     .line 6
+    iput-object p2, p0, Lvm4;->Y:Lji2;
+
     .line 7
     .line 8
+    iput-object p3, p0, Lvm4;->Z:Lum4;
+
+    .line 9
+    .line 10
+    iput-wide p4, p0, Lvm4;->c0:J
+
+    .line 11
+    .line 12
+    iput-object p6, p0, Lvm4;->d0:Lhv3;
+
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final F(Lxi;)Ljava/lang/Object;
-    .locals 2
+.method public final invoke()Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    iget v0, p0, Lvm4;->Q:I
+    iget-wide v3, p0, Lvm4;->c0:J
 
     .line 2
     .line 3
-    iget-object v1, p0, Lvm4;->R:Lxm4;
+    iget-object v5, p0, Lvm4;->d0:Lhv3;
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    iget-object v0, p0, Lvm4;->X:Lgm4;
 
     .line 6
     .line 7
+    iget-object v1, p0, Lvm4;->Y:Lji2;
+
     .line 8
-    iget-object v0, v1, Lxm4;->T:Lmg4;
-
     .line 9
-    .line 10
-    invoke-virtual {v0, p1}, Lmg4;->b0(Lxi;)Ljava/lang/Boolean;
+    iget-object v2, p0, Lvm4;->Z:Lum4;
 
+    .line 10
     .line 11
+    invoke-virtual/range {v0 .. v5}, Lgm4;->g(Lji2;Lum4;JLhv3;)V
+
     .line 12
     .line 13
-    move-result-object p1
-
     .line 14
-    return-object p1
+    sget-object p0, Lr98;->a:Lr98;
 
     .line 15
-    :pswitch_0
-    iget-object v0, v1, Lxm4;->T:Lmg4;
-
     .line 16
-    .line 17
-    invoke-virtual {v0, p1}, Lmg4;->P(Lva6;)[Ljava/lang/Class;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object p1
-
-    .line 21
-    return-object p1
-
-    .line 22
-    nop
-
-    .line 23
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p0
 .end method

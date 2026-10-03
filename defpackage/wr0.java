@@ -1,50 +1,49 @@
 package defpackage;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class wr0 implements yi2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ ji2 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class wr0 implements h42 {
-    public final /* synthetic */ int a;
-    public final Object b;
-
-    public wr0(String str) {
-        this.a = 2;
-        str.getClass();
-        this.b = str;
+    public /* synthetic */ wr0(int i, ji2 ji2Var) {
+        this.X = i;
+        this.Y = ji2Var;
     }
 
-    @Override // defpackage.h42
-    public final void a(Object obj, StringBuilder sb, boolean z) {
-        int i = this.a;
-        Object obj2 = this.b;
-        switch (i) {
+    @Override // defpackage.yi2
+    public final Object w(Object obj, Object obj2, Object obj3) {
+        rp4 rp4Var;
+        switch (this.X) {
             case 0:
-                Iterator it = ((ArrayList) obj2).iterator();
-                while (it.hasNext()) {
-                    ((h42) it.next()).a(obj, sb, z);
-                }
-                break;
-            case 1:
-                for (tn4 tn4Var : (List) obj2) {
-                    j72 j72Var = (j72) tn4Var.Q;
-                    h42 h42Var = (h42) tn4Var.R;
-                    if (((Boolean) j72Var.invoke(obj)).booleanValue()) {
-                        h42Var.a(obj, sb, z);
-                        break;
+                rk2 rk2Var = (rk2) obj2;
+                ((Integer) obj3).getClass();
+                rk2Var.W(-756081143);
+                b43 b43Var = (b43) rk2Var.j(y33.a);
+                if (b43Var != null) {
+                    rk2Var.W(-1604682242);
+                    rk2Var.p(false);
+                    rp4Var = null;
+                } else {
+                    rk2Var.W(-1604549624);
+                    Object K = rk2Var.K();
+                    if (K == xx0.a) {
+                        K = new rp4();
+                        rk2Var.g0(K);
                     }
+                    rp4Var = (rp4) K;
+                    rk2Var.p(false);
                 }
-                break;
+                dn4 x = n75.x(an4.X, rp4Var, b43Var, true, null, this.Y);
+                rk2Var.p(false);
+                return x;
             default:
-                sb.append((CharSequence) obj2);
-                break;
+                uh4 uh4Var = (uh4) obj;
+                nh4 nh4Var = (nh4) obj2;
+                i11 i11Var = (i11) obj3;
+                float f = ((vp1) this.Y.invoke()).X;
+                kd5 o = nh4Var.o(i11.a(i11Var.a, 0, 0, k11.f(vp1.b(f, Float.NaN) ? 0 : uh4Var.v0(f), i11Var.a), 0, 11));
+                return uh4Var.f0(o.X, o.Y, gw1.X, new ob(o, 10));
         }
-    }
-
-    public /* synthetic */ wr0(int i, List list) {
-        this.a = i;
-        this.b = list;
     }
 }

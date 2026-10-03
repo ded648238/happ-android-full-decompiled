@@ -1,76 +1,85 @@
 .class public final synthetic Lh56;
-.super Lq82;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lj72;
+.super Ljq4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final Q:Lh56;
+.field public static final X:Lh56;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 5
 
     .line 1
     new-instance v0, Lh56;
 
     .line 2
     .line 3
-    const-string v4, "iterator()Ljava/util/Iterator;"
+    const-string v1, "getNoisesPacketType()Lsu/happ/proxyutility/dto/enums/NoisesPacketType;"
 
     .line 4
     .line 5
-    const/4 v5, 0x0
+    const/4 v2, 0x0
 
     .line 6
-    const/4 v1, 0x1
+    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 7
-    const-class v2, Lb56;
-
     .line 8
+    const-string v4, "noisesPacketType"
+
     .line 9
-    const-string v3, "iterator"
-
     .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lq82;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v4, v1, v2}, Ljq4;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
+    .line 11
     .line 12
     .line 13
-    .line 14
-    sput-object v0, Lh56;->Q:Lh56;
+    sput-object v0, Lh56;->X:Lh56;
 
+    .line 14
     .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final E(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    check-cast p1, Lb56;
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p2, Lsu/happ/proxyutility/dto/enums/NoisesPacketType;
+
+    .line 4
+    .line 5
+    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->U1(Lsu/happ/proxyutility/dto/enums/NoisesPacketType;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->h0()Lsu/happ/proxyutility/dto/enums/NoisesPacketType;
 
     .line 4
     .line 5
     .line 6
-    invoke-interface {p1}, Lb56;->iterator()Ljava/util/Iterator;
+    move-result-object p0
 
     .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    return-object p1
+    return-object p0
 .end method

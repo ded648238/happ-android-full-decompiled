@@ -1,12 +1,12 @@
 .class public Lcom/google/firebase/provider/FirebaseInitProvider;
 .super Landroid/content/ContentProvider;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final Q:Lyv;
+.field public static final X:Lay;
 
-.field public static final R:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public static final Y:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 
 # direct methods
@@ -38,16 +38,16 @@
     move-result-wide v5
 
     .line 13
-    new-instance v0, Lyv;
+    new-instance v0, Lay;
 
     .line 14
     .line 15
-    invoke-direct/range {v0 .. v6}, Lyv;-><init>(JJJ)V
+    invoke-direct/range {v0 .. v6}, Lay;-><init>(JJJ)V
 
     .line 16
     .line 17
     .line 18
-    sput-object v0, Lcom/google/firebase/provider/FirebaseInitProvider;->Q:Lyv;
+    sput-object v0, Lcom/google/firebase/provider/FirebaseInitProvider;->X:Lay;
 
     .line 19
     .line 20
@@ -63,7 +63,7 @@
     .line 24
     .line 25
     .line 26
-    sput-object v0, Lcom/google/firebase/provider/FirebaseInitProvider;->R:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sput-object v0, Lcom/google/firebase/provider/FirebaseInitProvider;->Y:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 27
     .line 28
@@ -92,7 +92,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2, v0}, Ll14;->t(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Ld06;->u(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     .line 5
@@ -126,11 +126,11 @@
 
     .line 20
     :cond_0
-    const-string p1, "Incorrect provider authority in manifest. Most likely due to a missing applicationId variable in application\'s build.gradle."
+    const-string p0, "Incorrect provider authority in manifest. Most likely due to a missing applicationId variable in application\'s build.gradle."
 
     .line 21
     .line 22
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 23
     .line 24
@@ -142,37 +142,37 @@
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return p1
+    return p0
 .end method
 
 .method public final getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object p1
+    return-object p0
 .end method
 
 .method public final insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object p1
+    return-object p0
 .end method
 
 .method public final onCreate()Z
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/google/firebase/provider/FirebaseInitProvider;->R:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v0, Lcom/google/firebase/provider/FirebaseInitProvider;->Y:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 2
     .line 3
@@ -193,10 +193,10 @@
     .line 9
     .line 10
     .line 11
-    move-result-object v1
+    move-result-object p0
 
     .line 12
-    invoke-static {v1}, Low1;->f(Landroid/content/Context;)V
+    invoke-static {p0}, Ln62;->f(Landroid/content/Context;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -212,7 +212,7 @@
 
     .line 19
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 20
     invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
@@ -220,25 +220,25 @@
     .line 21
     .line 22
     .line 23
-    throw v1
+    throw p0
 .end method
 
 .method public final query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object p1
+    return-object p0
 .end method
 
 .method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return p1
+    return p0
 .end method

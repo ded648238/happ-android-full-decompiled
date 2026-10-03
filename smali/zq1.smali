@@ -1,94 +1,76 @@
 .class public final Lzq1;
-.super Lct0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final b:Ljava/lang/String;
+.field public c0:Lnq1;
+
+.field public d0:Ler1;
+
+.field public synthetic e0:Ljava/lang/Object;
+
+.field public final synthetic f0:Lcr1;
+
+.field public g0:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 1
+.method public constructor <init>(Lcr1;Ld31;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lbh7;->a:Lbh7;
+    iput-object p1, p0, Lzq1;->f0:Lcr1;
 
     .line 2
     .line 3
-    invoke-direct {p0, v0}, Lct0;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
     .line 4
     .line 5
     .line 6
-    iput-object p1, p0, Lzq1;->b:Ljava/lang/String;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lr64;)Lod3;
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput-object p1, p0, Lzq1;->e0:Ljava/lang/Object;
 
     .line 2
     .line 3
+    iget p1, p0, Lzq1;->g0:I
+
     .line 4
-    iget-object p1, p0, Lzq1;->b:Ljava/lang/String;
-
     .line 5
+    const/high16 v0, -0x80000000
+
     .line 6
-    filled-new-array {p1}, [Ljava/lang/String;
-
     .line 7
-    .line 8
-    .line 9
-    move-result-object p1
+    or-int/2addr p1, v0
 
+    .line 8
+    iput p1, p0, Lzq1;->g0:I
+
+    .line 9
     .line 10
-    sget-object v0, Lwq1;->j0:Lwq1;
+    iget-object p1, p0, Lzq1;->f0:Lcr1;
 
     .line 11
     .line 12
-    invoke-static {v0, p1}, Lyq1;->c(Lwq1;[Ljava/lang/String;)Luq1;
+    const/4 v0, 0x0
 
     .line 13
+    invoke-static {p1, v0, p0}, Lcr1;->Y0(Lcr1;Lnq1;Ld31;)Ljava/lang/Object;
+
     .line 14
     .line 15
-    move-result-object p1
-
     .line 16
-    return-object p1
-.end method
+    move-result-object p0
 
-.method public final b()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    throw v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzq1;->b:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
+    .line 17
+    return-object p0
 .end method

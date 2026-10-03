@@ -1,25 +1,22 @@
 package defpackage;
 
-import java.util.List;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class mc7 implements uc7 {
+    public final String a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface mc7 extends mk0, oc7 {
-    boolean A();
+    public final boolean equals(Object obj) {
+        if (obj instanceof mc7) {
+            return m93.h(this.a, ((mc7) obj).a);
+        }
+        return false;
+    }
 
-    ll7 F();
+    public final int hashCode() {
+        return this.a.hashCode();
+    }
 
-    op3 W();
-
-    @Override // defpackage.mk0, defpackage.j21
-    mc7 a();
-
-    boolean a0();
-
-    int getIndex();
-
-    List getUpperBounds();
-
-    @Override // defpackage.mk0
-    ob7 m();
+    public final String toString() {
+        return c73.j("RouteProfileDetailsClick(profileId=", this.a, ")");
+    }
 }

@@ -1,213 +1,183 @@
-.class public final enum Lf55;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lxs2;
-
-
-# static fields
-.field public static final enum R:Lf55;
-
-.field public static final enum S:Lf55;
-
-.field public static final enum T:Lf55;
-
-.field public static final enum U:Lf55;
-
-.field public static final synthetic V:[Lf55;
-
-
-# instance fields
-.field public final Q:I
+.class public abstract Lf55;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 1
 
     .line 1
-    new-instance v0, Lf55;
+    const-string v0, "PackageManagerHelper"
 
     .line 2
     .line 3
-    const-string v1, "IN"
+    invoke-static {v0}, Lan3;->u(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    .line 6
+    return-void
+.end method
+
+.method public static a(Landroid/content/Context;Ljava/lang/Class;Z)V
+    .locals 3
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     .line 6
-    invoke-direct {v0, v1, v2, v2}, Lf55;-><init>(Ljava/lang/String;II)V
-
     .line 7
     .line 8
+    move-result-object v1
+
     .line 9
-    sput-object v0, Lf55;->R:Lf55;
+    new-instance v2, Landroid/content/ComponentName;
 
     .line 10
     .line 11
-    new-instance v1, Lf55;
+    invoke-direct {v2, p0, v0}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 12
     .line 13
-    const-string v3, "OUT"
-
     .line 14
+    invoke-virtual {v1, v2}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
+
     .line 15
-    const/4 v4, 0x1
-
     .line 16
-    invoke-direct {v1, v3, v4, v4}, Lf55;-><init>(Ljava/lang/String;II)V
-
     .line 17
+    move-result v0
+
     .line 18
+    const/4 v1, 0x0
+
     .line 19
-    sput-object v1, Lf55;->S:Lf55;
+    const/4 v2, 0x1
 
     .line 20
-    .line 21
-    new-instance v3, Lf55;
+    if-nez v0, :cond_0
 
+    .line 21
     .line 22
+    goto :goto_0
+
     .line 23
-    const-string v5, "INV"
+    :cond_0
+    if-ne v0, v2, :cond_1
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    move v1, v2
 
     .line 26
-    invoke-direct {v3, v5, v6, v6}, Lf55;-><init>(Ljava/lang/String;II)V
+    :cond_1
+    :goto_0
+    if-ne p2, v1, :cond_2
 
     .line 27
     .line 28
-    .line 29
-    sput-object v3, Lf55;->T:Lf55;
+    invoke-static {}, Lan3;->l()Lan3;
 
+    .line 29
     .line 30
     .line 31
-    new-instance v5, Lf55;
+    move-result-object p0
 
     .line 32
-    .line 33
-    const-string v7, "STAR"
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 33
     .line 34
     .line 35
-    const/4 v8, 0x3
+    return-void
 
     .line 36
-    invoke-direct {v5, v7, v8, v8}, Lf55;-><init>(Ljava/lang/String;II)V
+    :cond_2
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     .line 37
     .line 38
     .line 39
-    sput-object v5, Lf55;->U:Lf55;
+    move-result-object v0
 
     .line 40
-    .line 41
-    const/4 v7, 0x4
+    new-instance v1, Landroid/content/ComponentName;
 
+    .line 41
     .line 42
-    new-array v7, v7, [Lf55;
+    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     .line 43
     .line 44
-    aput-object v0, v7, v2
-
     .line 45
+    move-result-object p1
+
     .line 46
-    aput-object v1, v7, v4
+    invoke-direct {v1, p0, p1}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 47
     .line 48
-    aput-object v3, v7, v6
-
     .line 49
-    .line 50
-    aput-object v5, v7, v8
+    if-eqz p2, :cond_3
 
+    .line 50
     .line 51
+    move p0, v2
+
     .line 52
-    sput-object v7, Lf55;->V:[Lf55;
+    goto :goto_1
 
     .line 53
+    :cond_3
+    const/4 p0, 0x2
+
     .line 54
-    return-void
-.end method
+    :goto_1
+    invoke-virtual {v0, v1, p0, v2}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
 
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
+    .line 55
+    .line 56
+    .line 57
+    invoke-static {}, Lan3;->l()Lan3;
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, Lf55;->Q:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lf55;
-    .locals 1
-
-    .line 1
-    const-class v0, Lf55;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
+    .line 58
+    .line 59
+    .line 60
     move-result-object p0
 
-    .line 7
-    check-cast p0, Lf55;
+    .line 61
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 8
-    .line 9
-    return-object p0
-.end method
+    .line 62
+    .line 63
+    .line 64
+    return-void
 
-.method public static values()[Lf55;
-    .locals 1
+    .line 65
+    :catch_0
+    invoke-static {}, Lan3;->l()Lan3;
 
-    .line 1
-    sget-object v0, Lf55;->V:[Lf55;
+    .line 66
+    .line 67
+    .line 68
+    move-result-object p0
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Lf55;->clone()Ljava/lang/Object;
+    .line 69
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lf55;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lf55;->Q:I
-
-    .line 2
-    .line 3
-    return v0
+    .line 70
+    .line 71
+    .line 72
+    return-void
 .end method

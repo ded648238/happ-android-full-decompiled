@@ -1,32 +1,32 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class j77 {
-    public final py6 a;
-    public final ns2 b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class j77 extends l77 {
+    public transient ck3 Z;
 
-    public j77(py6 py6Var, ns2 ns2Var) {
-        this.a = py6Var;
-        this.b = ns2Var;
+    public j77() {
+        super(0, String.class);
+        this.Z = sm5.q;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    @Override // defpackage.gj3
+    public final void e(Object obj, wg3 wg3Var, ur6 ur6Var) {
+        Class<?> cls = obj.getClass();
+        ck3 ck3Var = this.Z;
+        gj3 W = ck3Var.W(cls);
+        if (W == null) {
+            if (cls == Object.class) {
+                W = new i77(8, cls);
+                this.Z = ck3Var.K(cls, W);
+            } else {
+                W = ur6Var.k(ur6Var.X.c(cls), null);
+                ck3 K = ck3Var.K(cls, W);
+                if (ck3Var != K) {
+                    this.Z = K;
+                }
+            }
         }
-        if (obj instanceof j77) {
-            j77 j77Var = (j77) obj;
-            return this.a.equals(j77Var.a) && this.b == j77Var.b;
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        return this.b.hashCode() + (this.a.hashCode() * 31);
-    }
-
-    public final String toString() {
-        return "TransformedText(text=" + ((Object) this.a) + ", offsetMapping=" + this.b + ')';
+        W.e(obj, wg3Var, ur6Var);
     }
 }

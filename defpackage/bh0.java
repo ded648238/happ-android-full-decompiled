@@ -1,32 +1,43 @@
 package defpackage;
 
-import java.util.Arrays;
+import android.graphics.Rect;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class bh0 extends uz4 {
-    public char[] a;
-    public int b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface bh0 extends yg0 {
+    Set a();
 
-    @Override // defpackage.uz4
-    public final Object a() {
-        return Arrays.copyOf(this.a, this.b);
+    boolean d();
+
+    String e();
+
+    Rect i();
+
+    default void j(zs6 zs6Var) {
+        zs6Var.getClass();
+        m18.a = zs6Var;
     }
 
-    @Override // defpackage.uz4
-    public final void b(int i) {
-        char[] cArr = this.a;
-        if (cArr.length < i) {
-            int length = cArr.length * 2;
-            if (i < length) {
-                i = length;
-            }
-            this.a = Arrays.copyOf(cArr, i);
-        }
-    }
+    Object q();
 
-    @Override // defpackage.uz4
-    public final int d() {
-        return this.b;
+    void s(Executor executor, ti5 ti5Var);
+
+    ir5 t();
+
+    List u(int i);
+
+    Set w();
+
+    Set x();
+
+    boolean y();
+
+    void z(ze0 ze0Var);
+
+    default bh0 getImplementation() {
+        return this;
     }
 }

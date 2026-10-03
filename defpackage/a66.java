@@ -1,28 +1,19 @@
 package defpackage;
 
-import java.io.Serializable;
+import su.happ.proxyutility.dto.MetaParams;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class a66 implements Serializable {
-    public static final c66[] T = new c66[0];
-    public static final h35[] U = new h35[0];
-    public final c66[] Q;
-    public final c66[] R;
-    public final h35[] S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class a66 extends jq4 {
+    public static final a66 X = new a66(MetaParams.class, "resolveAddressServerDnsIp", "getResolveAddressServerDnsIp()Ljava/lang/String;", 0);
 
-    public a66(c66[] c66VarArr, c66[] c66VarArr2, h35[] h35VarArr) {
-        c66[] c66VarArr3 = T;
-        this.Q = c66VarArr == null ? c66VarArr3 : c66VarArr;
-        this.R = c66VarArr2 == null ? c66VarArr3 : c66VarArr2;
-        this.S = h35VarArr == null ? U : h35VarArr;
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((MetaParams) obj).o2((String) obj2);
     }
 
-    public final boolean a() {
-        return this.S.length > 0;
-    }
-
-    public final vq b() {
-        return new vq(this.S);
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return ((MetaParams) obj).getResolveAddressServerDnsIp();
     }
 }

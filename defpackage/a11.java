@@ -1,17 +1,21 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class a11 extends h94 {
-    public static final a11 Q = new a11(y01.class, "dayOfYear", "getDayOfYear()Ljava/lang/Integer;", 0);
+/* loaded from: classes3.dex */
+public final class a11 extends d31 {
+    public /* synthetic */ Object c0;
+    public int d0;
+    public final /* synthetic */ k e0;
 
-    @Override // defpackage.h94, defpackage.z73
-    public final void D(Object obj, Object obj2) {
-        ((y01) obj).w((Integer) obj2);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a11(k kVar, b31 b31Var) {
+        super(b31Var);
+        this.e0 = kVar;
     }
 
-    @Override // defpackage.h94, defpackage.n83
-    public final Object get(Object obj) {
-        return ((y01) obj).o();
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.d0 |= Integer.MIN_VALUE;
+        return this.e0.k(null, this);
     }
 }

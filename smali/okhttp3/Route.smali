@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Route;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -95,53 +95,53 @@
 
 # virtual methods
 .method public final -deprecated_address()Lokhttp3/Address;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
+    iget-object p0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_proxy()Ljava/net/Proxy;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
+    iget-object p0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_socketAddress()Ljava/net/InetSocketAddress;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
+    iget-object p0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final address()Lokhttp3/Address;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
+    iget-object p0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -168,7 +168,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 12
     .line 13
@@ -188,7 +188,7 @@
 
     .line 20
     .line 21
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 22
     .line 23
@@ -204,33 +204,33 @@
 
     .line 28
     .line 29
-    iget-object v0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
+    iget-object p0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
     .line 30
     .line 31
-    invoke-static {p1, v0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 32
     .line 33
     .line 34
-    move-result p1
+    move-result p0
 
     .line 35
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 36
     .line 37
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 38
-    return p1
+    return p0
 
     .line 39
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 40
-    return p1
+    return p0
 .end method
 
 .method public hashCode()I
@@ -276,37 +276,37 @@
 
     .line 19
     .line 20
-    iget-object v0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
+    iget-object p0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
     .line 21
     .line 22
-    invoke-virtual {v0}, Ljava/net/InetSocketAddress;->hashCode()I
+    invoke-virtual {p0}, Ljava/net/InetSocketAddress;->hashCode()I
 
     .line 23
     .line 24
     .line 25
-    move-result v0
+    move-result p0
 
     .line 26
-    add-int/2addr v0, v1
+    add-int/2addr p0, v1
 
     .line 27
-    return v0
+    return p0
 .end method
 
 .method public final proxy()Ljava/net/Proxy;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
+    iget-object p0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final requiresTunnel()Z
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lokhttp3/Route;->address:Lokhttp3/Address;
@@ -325,48 +325,48 @@
 
     .line 8
     .line 9
-    iget-object v0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
+    iget-object p0, p0, Lokhttp3/Route;->proxy:Ljava/net/Proxy;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
+    invoke-virtual {p0}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
 
     .line 12
     .line 13
     .line 14
-    move-result-object v0
+    move-result-object p0
 
     .line 15
-    sget-object v1, Ljava/net/Proxy$Type;->HTTP:Ljava/net/Proxy$Type;
+    sget-object v0, Ljava/net/Proxy$Type;->HTTP:Ljava/net/Proxy$Type;
 
     .line 16
     .line 17
-    if-ne v0, v1, :cond_0
+    if-ne p0, v0, :cond_0
 
     .line 18
     .line 19
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 20
-    return v0
+    return p0
 
     .line 21
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 22
-    return v0
+    return p0
 .end method
 
 .method public final socketAddress()Ljava/net/InetSocketAddress;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
+    iget-object p0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -386,20 +386,20 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
+    iget-object p0, p0, Lokhttp3/Route;->socketAddress:Ljava/net/InetSocketAddress;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const/16 v1, 0x7d
+    const/16 p0, 0x7d
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
@@ -409,8 +409,8 @@
     .line 19
     .line 20
     .line 21
-    move-result-object v0
+    move-result-object p0
 
     .line 22
-    return-object v0
+    return-object p0
 .end method

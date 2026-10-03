@@ -1,184 +1,29 @@
 .class public final Lpg6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ldh6;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lqg6;
 
 
-# static fields
-.field public static final a:Lr83;
+# instance fields
+.field public n:Ljava/lang/Boolean;
 
-.field public static final b:Lr83;
+.field public o:Ljava/lang/Boolean;
 
-.field public static final c:Lr83;
+.field public p:Lmg6;
 
-.field public static final d:Lr83;
-
-.field public static final e:Lqa6;
+.field public q:Lmg6;
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 13
+# virtual methods
+.method public final o()Ljava/lang/String;
+    .locals 0
 
     .line 1
-    sget-object v0, Lhg5;->a:Lig5;
+    const-string p0, "mask"
 
     .line 2
     .line 3
-    const-class v1, Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, v1}, Lig5;->b(Ljava/lang/Class;)Lx63;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v2
-
-    .line 9
-    sget-object v3, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
-
-    .line 10
-    .line 11
-    const/4 v4, 0x0
-
-    .line 12
-    invoke-virtual {v0, v2, v3, v4}, Lig5;->l(Lx63;Ljava/util/List;Z)Lr83;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v2
-
-    .line 16
-    sput-object v2, Lpg6;->a:Lr83;
-
-    .line 17
-    .line 18
-    invoke-virtual {v0, v1}, Lig5;->b(Ljava/lang/Class;)Lx63;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v1
-
-    .line 22
-    const/4 v2, 0x1
-
-    .line 23
-    invoke-virtual {v0, v1, v3, v2}, Lig5;->l(Lx63;Ljava/util/List;Z)Lr83;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v1
-
-    .line 27
-    sput-object v1, Lpg6;->b:Lr83;
-
-    .line 28
-    .line 29
-    const-class v1, Ljava/lang/Cloneable;
-
-    .line 30
-    .line 31
-    invoke-virtual {v0, v1}, Lig5;->b(Ljava/lang/Class;)Lx63;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v1
-
-    .line 35
-    invoke-virtual {v0, v1, v3, v4}, Lig5;->l(Lx63;Ljava/util/List;Z)Lr83;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v1
-
-    .line 39
-    sput-object v1, Lpg6;->c:Lr83;
-
-    .line 40
-    .line 41
-    const-class v1, Ljava/io/Serializable;
-
-    .line 42
-    .line 43
-    invoke-virtual {v0, v1}, Lig5;->b(Ljava/lang/Class;)Lx63;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v1
-
-    .line 47
-    invoke-virtual {v0, v1, v3, v4}, Lig5;->l(Lx63;Ljava/util/List;Z)Lr83;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v1
-
-    .line 51
-    sput-object v1, Lpg6;->d:Lr83;
-
-    .line 52
-    .line 53
-    new-instance v2, Lqa6;
-
-    .line 54
-    .line 55
-    const-class v1, Lbh7;
-
-    .line 56
-    .line 57
-    invoke-virtual {v0, v1}, Lig5;->b(Ljava/lang/Class;)Lx63;
-
-    .line 58
-    .line 59
-    .line 60
-    move-result-object v3
-
-    .line 61
-    const/4 v11, 0x0
-
-    .line 62
-    sget-object v12, Lpw;->e0:Lpw;
-
-    .line 63
-    .line 64
-    sget-object v4, Lwn1;->Q:Lwn1;
-
-    .line 65
-    .line 66
-    const/4 v5, 0x0
-
-    .line 67
-    const/4 v7, 0x0
-
-    .line 68
-    const/4 v8, 0x0
-
-    .line 69
-    const/4 v9, 0x0
-
-    .line 70
-    const/4 v10, 0x0
-
-    .line 71
-    move-object v6, v4
-
-    .line 72
-    invoke-direct/range {v2 .. v12}, Lqa6;-><init>(Lm73;Ljava/util/List;ZLjava/util/List;Lr83;ZZZLx63;Lg72;)V
-
-    .line 73
-    .line 74
-    .line 75
-    sput-object v2, Lpg6;->e:Lqa6;
-
-    .line 76
-    .line 77
-    return-void
+    return-object p0
 .end method

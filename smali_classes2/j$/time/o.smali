@@ -1,433 +1,330 @@
-.class public final Lj$/time/o;
-.super Lj$/time/ZoneId;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract synthetic Lj$/time/o;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final synthetic d:I = 0x0
+.field public static final synthetic a:[I
 
-.field private static final serialVersionUID:J = 0x746262147bb70e18L
-
-
-# instance fields
-.field public final b:Ljava/lang/String;
-
-.field public final transient c:Lj$/time/zone/ZoneRules;
+.field public static final synthetic b:[I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lj$/time/zone/ZoneRules;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 8
 
     .line 1
-    invoke-direct {p0}, Lj$/time/ZoneId;-><init>()V
+    invoke-static {}, Lj$/time/temporal/a;->values()[Lj$/time/temporal/a;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lj$/time/o;->b:Ljava/lang/String;
+    move-result-object v0
 
     .line 5
+    array-length v0, v0
+
     .line 6
-    iput-object p2, p0, Lj$/time/o;->c:Lj$/time/zone/ZoneRules;
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    return-void
-.end method
+    sput-object v0, Lj$/time/o;->b:[I
 
-.method public static K(Ljava/lang/String;Z)Lj$/time/o;
-    .locals 6
-
-    .line 1
-    const-string v0, "zoneId"
-
-    .line 2
-    .line 3
-    invoke-static {p0, v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    .line 7
-    .line 8
     .line 9
-    move-result v0
-
     .line 10
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
     .line 11
-    const/4 v2, 0x0
+    :try_start_0
+    sget-object v2, Lj$/time/temporal/a;->MONTHS:Lj$/time/temporal/a;
 
     .line 12
-    const-string v3, "Invalid ID for region-based ZoneId, invalid format: "
-
     .line 13
-    .line 14
-    if-lt v0, v1, :cond_b
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
+    .line 14
     .line 15
     .line 16
-    const/4 v1, 0x0
+    move-result v2
 
     .line 17
-    :goto_0
-    if-ge v1, v0, :cond_9
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 18
     .line 19
-    invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
+    :catch_0
+    const/4 v0, 0x2
 
     .line 20
+    :try_start_1
+    sget-object v2, Lj$/time/o;->b:[I
+
     .line 21
     .line 22
-    move-result v4
+    sget-object v3, Lj$/time/temporal/a;->YEARS:Lj$/time/temporal/a;
 
     .line 23
-    const/16 v5, 0x61
-
     .line 24
-    .line 25
-    if-lt v4, v5, :cond_0
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
+    .line 25
     .line 26
     .line 27
-    const/16 v5, 0x7a
+    move-result v3
 
     .line 28
-    .line 29
-    if-gt v4, v5, :cond_0
+    aput v0, v2, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
+    .line 29
     .line 30
+    :catch_1
+    const/4 v2, 0x3
+
     .line 31
-    goto :goto_1
+    :try_start_2
+    sget-object v3, Lj$/time/o;->b:[I
 
     .line 32
-    :cond_0
-    const/16 v5, 0x41
-
     .line 33
+    sget-object v4, Lj$/time/temporal/a;->DECADES:Lj$/time/temporal/a;
+
     .line 34
-    if-lt v4, v5, :cond_1
-
     .line 35
-    .line 36
-    const/16 v5, 0x5a
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
 
+    .line 36
     .line 37
     .line 38
-    if-gt v4, v5, :cond_1
+    move-result v4
 
     .line 39
-    .line 40
-    goto :goto_1
+    aput v2, v3, v4
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
+    .line 40
     .line 41
-    :cond_1
-    const/16 v5, 0x2f
+    :catch_2
+    const/4 v3, 0x4
 
     .line 42
+    :try_start_3
+    sget-object v4, Lj$/time/o;->b:[I
+
     .line 43
-    if-ne v4, v5, :cond_2
-
     .line 44
+    sget-object v5, Lj$/time/temporal/a;->CENTURIES:Lj$/time/temporal/a;
+
     .line 45
-    if-eqz v1, :cond_2
-
     .line 46
+    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+
     .line 47
-    goto :goto_1
-
     .line 48
-    :cond_2
-    const/16 v5, 0x30
-
     .line 49
+    move-result v5
+
     .line 50
-    if-lt v4, v5, :cond_3
+    aput v3, v4, v5
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 51
     .line 52
-    const/16 v5, 0x39
+    :catch_3
+    const/4 v4, 0x5
 
     .line 53
+    :try_start_4
+    sget-object v5, Lj$/time/o;->b:[I
+
     .line 54
-    if-gt v4, v5, :cond_3
-
     .line 55
+    sget-object v6, Lj$/time/temporal/a;->MILLENNIA:Lj$/time/temporal/a;
+
     .line 56
-    if-eqz v1, :cond_3
-
     .line 57
+    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
+
     .line 58
-    goto :goto_1
-
     .line 59
-    :cond_3
-    const/16 v5, 0x7e
-
     .line 60
+    move-result v6
+
     .line 61
-    if-ne v4, v5, :cond_4
+    aput v4, v5, v6
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
     .line 62
     .line 63
-    if-eqz v1, :cond_4
+    :catch_4
+    :try_start_5
+    sget-object v5, Lj$/time/o;->b:[I
 
     .line 64
     .line 65
-    goto :goto_1
+    sget-object v6, Lj$/time/temporal/a;->ERAS:Lj$/time/temporal/a;
 
     .line 66
-    :cond_4
-    const/16 v5, 0x2e
-
     .line 67
-    .line 68
-    if-ne v4, v5, :cond_5
+    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
 
+    .line 68
     .line 69
     .line 70
-    if-eqz v1, :cond_5
+    move-result v6
 
     .line 71
+    const/4 v7, 0x6
+
     .line 72
-    goto :goto_1
+    aput v7, v5, v6
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
     .line 73
-    :cond_5
-    const/16 v5, 0x5f
-
     .line 74
-    .line 75
-    if-ne v4, v5, :cond_6
+    :catch_5
+    invoke-static {}, Lj$/time/temporal/ChronoField;->values()[Lj$/time/temporal/ChronoField;
 
+    .line 75
     .line 76
     .line 77
-    if-eqz v1, :cond_6
+    move-result-object v5
 
     .line 78
+    array-length v5, v5
+
     .line 79
-    goto :goto_1
+    new-array v5, v5, [I
 
     .line 80
-    :cond_6
-    const/16 v5, 0x2b
-
     .line 81
+    sput-object v5, Lj$/time/o;->a:[I
+
     .line 82
-    if-ne v4, v5, :cond_7
-
     .line 83
+    :try_start_6
+    sget-object v6, Lj$/time/temporal/ChronoField;->MONTH_OF_YEAR:Lj$/time/temporal/ChronoField;
+
     .line 84
-    if-eqz v1, :cond_7
-
     .line 85
+    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
+
     .line 86
-    goto :goto_1
-
     .line 87
-    :cond_7
-    const/16 v5, 0x2d
-
     .line 88
+    move-result v6
+
     .line 89
-    if-ne v4, v5, :cond_8
+    aput v1, v5, v6
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
     .line 90
     .line 91
-    if-eqz v1, :cond_8
+    :catch_6
+    :try_start_7
+    sget-object v1, Lj$/time/o;->a:[I
 
     .line 92
     .line 93
-    :goto_1
-    add-int/lit8 v1, v1, 0x1
+    sget-object v5, Lj$/time/temporal/ChronoField;->PROLEPTIC_MONTH:Lj$/time/temporal/ChronoField;
 
     .line 94
     .line 95
-    goto :goto_0
+    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
     .line 96
-    :cond_8
-    invoke-virtual {v3, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
     .line 97
     .line 98
+    move-result v5
+
     .line 99
-    move-result-object p0
+    aput v0, v1, v5
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
     .line 100
-    invoke-static {p0}, Lj$/time/f;->j(Ljava/lang/String;)V
-
     .line 101
+    :catch_7
+    :try_start_8
+    sget-object v0, Lj$/time/o;->a:[I
+
     .line 102
     .line 103
-    return-object v2
+    sget-object v1, Lj$/time/temporal/ChronoField;->YEAR_OF_ERA:Lj$/time/temporal/ChronoField;
 
     .line 104
-    :cond_9
-    :try_start_0
-    invoke-static {p0}, Lj$/time/zone/h;->a(Ljava/lang/String;)Lj$/time/zone/ZoneRules;
-
     .line 105
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 106
     .line 107
-    move-result-object v2
-    :try_end_0
-    .catch Lj$/time/zone/f; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 108
-    goto :goto_2
+    move-result v1
 
     .line 109
-    :catch_0
-    move-exception v0
+    aput v2, v0, v1
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
 
     .line 110
-    if-nez p1, :cond_a
-
     .line 111
+    :catch_8
+    :try_start_9
+    sget-object v0, Lj$/time/o;->a:[I
+
     .line 112
-    :goto_2
-    new-instance p1, Lj$/time/o;
-
     .line 113
-    .line 114
-    invoke-direct {p1, p0, v2}, Lj$/time/o;-><init>(Ljava/lang/String;Lj$/time/zone/ZoneRules;)V
+    sget-object v1, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
 
+    .line 114
     .line 115
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 116
     .line 117
-    return-object p1
-
     .line 118
-    :cond_a
-    throw v0
+    move-result v1
 
     .line 119
-    :cond_b
-    invoke-virtual {v3, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    aput v3, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
 
     .line 120
     .line 121
-    .line 122
-    move-result-object p0
+    :catch_9
+    :try_start_a
+    sget-object v0, Lj$/time/o;->a:[I
 
+    .line 122
     .line 123
-    invoke-static {p0}, Lj$/time/f;->j(Ljava/lang/String;)V
+    sget-object v1, Lj$/time/temporal/ChronoField;->ERA:Lj$/time/temporal/ChronoField;
 
     .line 124
     .line 125
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 126
-    return-object v2
-.end method
+    .line 127
+    .line 128
+    move-result v1
 
-.method private readObject(Ljava/io/ObjectInputStream;)V
-    .locals 1
+    .line 129
+    aput v4, v0, v1
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
 
-    .line 1
-    new-instance p1, Ljava/io/InvalidObjectException;
-
-    .line 2
-    .line 3
-    const-string v0, "Deserialization via serialization delegate"
-
-    .line 4
-    .line 5
-    invoke-direct {p1, v0}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw p1
-.end method
-
-.method private writeReplace()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj$/time/l;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x7
-
-    .line 4
-    invoke-direct {v0, v1, p0}, Lj$/time/l;-><init>(BLjava/lang/Object;)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final J(Ljava/io/DataOutput;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x7
-
-    .line 2
-    invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeByte(I)V
-
-    .line 3
-    .line 4
-    .line 5
-    iget-object v0, p0, Lj$/time/o;->b:Ljava/lang/String;
-
-    .line 6
-    .line 7
-    invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeUTF(Ljava/lang/String;)V
-
-    .line 8
-    .line 9
-    .line 10
+    .line 130
+    .line 131
+    :catch_a
     return-void
-.end method
-
-.method public final getId()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj$/time/o;->b:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final getRules()Lj$/time/zone/ZoneRules;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj$/time/o;->c:Lj$/time/zone/ZoneRules;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    iget-object v0, p0, Lj$/time/o;->b:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    invoke-static {v0}, Lj$/time/zone/h;->a(Ljava/lang/String;)Lj$/time/zone/ZoneRules;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    return-object v0
 .end method

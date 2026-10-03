@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ZstdDictTrainer {
     private final int allocatedSize;
     private final int dictSize;
@@ -35,32 +35,32 @@ public class ZstdDictTrainer {
     }
 
     public synchronized boolean addSample(byte[] bArr) {
-        if (this.filledSize + ((long) bArr.length) > this.allocatedSize) {
+        if (this.filledSize + bArr.length > this.allocatedSize) {
             return false;
         }
         this.trainingSamples.put(bArr);
         this.sampleSizes.add(Integer.valueOf(bArr.length));
-        this.filledSize += (long) bArr.length;
+        this.filledSize += bArr.length;
         return true;
     }
 
     public byte[] trainSamples(boolean z) throws ZstdException {
-        ByteBuffer byteBufferTrainSamplesDirect = trainSamplesDirect(z);
-        byte[] bArr = new byte[byteBufferTrainSamplesDirect.remaining()];
-        byteBufferTrainSamplesDirect.get(bArr);
+        ByteBuffer trainSamplesDirect = trainSamplesDirect(z);
+        byte[] bArr = new byte[trainSamplesDirect.remaining()];
+        trainSamplesDirect.get(bArr);
         return bArr;
     }
 
     public synchronized ByteBuffer trainSamplesDirect(boolean z) throws ZstdException {
-        ByteBuffer byteBufferAllocateDirect;
-        byteBufferAllocateDirect = ByteBuffer.allocateDirect(this.dictSize);
-        long jTrainFromBufferDirect = Zstd.trainFromBufferDirect(this.trainingSamples, copyToIntArray(this.sampleSizes), byteBufferAllocateDirect, z, this.level);
-        if (Zstd.isError(jTrainFromBufferDirect)) {
-            byteBufferAllocateDirect.limit(0);
-            throw new ZstdException(jTrainFromBufferDirect);
+        ByteBuffer allocateDirect;
+        allocateDirect = ByteBuffer.allocateDirect(this.dictSize);
+        long trainFromBufferDirect = Zstd.trainFromBufferDirect(this.trainingSamples, copyToIntArray(this.sampleSizes), allocateDirect, z, this.level);
+        if (Zstd.isError(trainFromBufferDirect)) {
+            allocateDirect.limit(0);
+            throw new ZstdException(trainFromBufferDirect);
         }
-        byteBufferAllocateDirect.limit(Long.valueOf(jTrainFromBufferDirect).intValue());
-        return byteBufferAllocateDirect;
+        allocateDirect.limit(Long.valueOf(trainFromBufferDirect).intValue());
+        return allocateDirect;
     }
 
     public byte[] trainSamples() throws ZstdException {

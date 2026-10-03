@@ -1,6 +1,6 @@
 .class public final Landroid/support/v4/media/RatingCompat;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field public final Q:I
+.field public final X:I
 
-.field public final R:F
+.field public final Y:F
 
 
 # direct methods
@@ -29,15 +29,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lgo4;
+    new-instance v0, Lj65;
 
     .line 2
     .line 3
-    const/16 v1, 0x15
+    const/16 v1, 0x17
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lgo4;-><init>(I)V
+    invoke-direct {v0, v1}, Lj65;-><init>(I)V
 
     .line 6
     .line 7
@@ -58,11 +58,11 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Landroid/support/v4/media/RatingCompat;->Q:I
+    iput p1, p0, Landroid/support/v4/media/RatingCompat;->X:I
 
     .line 5
     .line 6
-    iput p2, p0, Landroid/support/v4/media/RatingCompat;->R:F
+    iput p2, p0, Landroid/support/v4/media/RatingCompat;->Y:F
 
     .line 7
     .line 8
@@ -72,18 +72,18 @@
 
 # virtual methods
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroid/support/v4/media/RatingCompat;->Q:I
+    iget p0, p0, Landroid/support/v4/media/RatingCompat;->X:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -99,7 +99,7 @@
     .line 6
     .line 7
     .line 8
-    iget v1, p0, Landroid/support/v4/media/RatingCompat;->Q:I
+    iget v1, p0, Landroid/support/v4/media/RatingCompat;->X:I
 
     .line 9
     .line 10
@@ -120,11 +120,11 @@
     const/4 v1, 0x0
 
     .line 19
-    iget v2, p0, Landroid/support/v4/media/RatingCompat;->R:F
+    iget p0, p0, Landroid/support/v4/media/RatingCompat;->Y:F
 
     .line 20
     .line 21
-    cmpg-float v1, v2, v1
+    cmpg-float v1, p0, v1
 
     .line 22
     .line 23
@@ -132,7 +132,7 @@
 
     .line 24
     .line 25
-    const-string v1, "unrated"
+    const-string p0, "unrated"
 
     .line 26
     .line 27
@@ -140,16 +140,16 @@
 
     .line 28
     :cond_0
-    invoke-static {v2}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
+    invoke-static {p0}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
 
     .line 29
     .line 30
     .line 31
-    move-result-object v1
+    move-result-object p0
 
     .line 32
     :goto_0
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 33
     .line 34
@@ -159,17 +159,17 @@
     .line 36
     .line 37
     .line 38
-    move-result-object v0
+    move-result-object p0
 
     .line 39
-    return-object v0
+    return-object p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1
-    iget p2, p0, Landroid/support/v4/media/RatingCompat;->Q:I
+    iget p2, p0, Landroid/support/v4/media/RatingCompat;->X:I
 
     .line 2
     .line 3
@@ -178,11 +178,11 @@
     .line 4
     .line 5
     .line 6
-    iget p2, p0, Landroid/support/v4/media/RatingCompat;->R:F
+    iget p0, p0, Landroid/support/v4/media/RatingCompat;->Y:F
 
     .line 7
     .line 8
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeFloat(F)V
 
     .line 9
     .line 10

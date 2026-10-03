@@ -1,9 +1,9 @@
 .class public final enum Lio/sentry/rrweb/f;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # static fields
@@ -34,141 +34,61 @@
 
 # direct methods
 .method private static synthetic $values()[Lio/sentry/rrweb/f;
-    .locals 3
+    .locals 11
 
     .line 1
-    const/16 v0, 0xb
+    sget-object v0, Lio/sentry/rrweb/f;->MouseUp:Lio/sentry/rrweb/f;
 
     .line 2
     .line 3
-    new-array v0, v0, [Lio/sentry/rrweb/f;
+    sget-object v1, Lio/sentry/rrweb/f;->MouseDown:Lio/sentry/rrweb/f;
 
     .line 4
     .line 5
-    sget-object v1, Lio/sentry/rrweb/f;->MouseUp:Lio/sentry/rrweb/f;
+    sget-object v2, Lio/sentry/rrweb/f;->Click:Lio/sentry/rrweb/f;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    sget-object v3, Lio/sentry/rrweb/f;->ContextMenu:Lio/sentry/rrweb/f;
 
     .line 8
-    aput-object v1, v0, v2
-
     .line 9
+    sget-object v4, Lio/sentry/rrweb/f;->DblClick:Lio/sentry/rrweb/f;
+
     .line 10
-    sget-object v1, Lio/sentry/rrweb/f;->MouseDown:Lio/sentry/rrweb/f;
-
     .line 11
-    .line 12
-    const/4 v2, 0x1
+    sget-object v5, Lio/sentry/rrweb/f;->Focus:Lio/sentry/rrweb/f;
 
+    .line 12
     .line 13
-    aput-object v1, v0, v2
+    sget-object v6, Lio/sentry/rrweb/f;->Blur:Lio/sentry/rrweb/f;
 
     .line 14
     .line 15
-    sget-object v1, Lio/sentry/rrweb/f;->Click:Lio/sentry/rrweb/f;
+    sget-object v7, Lio/sentry/rrweb/f;->TouchStart:Lio/sentry/rrweb/f;
 
     .line 16
     .line 17
-    const/4 v2, 0x2
+    sget-object v8, Lio/sentry/rrweb/f;->TouchMove_Departed:Lio/sentry/rrweb/f;
 
     .line 18
-    aput-object v1, v0, v2
-
     .line 19
+    sget-object v9, Lio/sentry/rrweb/f;->TouchEnd:Lio/sentry/rrweb/f;
+
     .line 20
-    sget-object v1, Lio/sentry/rrweb/f;->ContextMenu:Lio/sentry/rrweb/f;
-
     .line 21
-    .line 22
-    const/4 v2, 0x3
+    sget-object v10, Lio/sentry/rrweb/f;->TouchCancel:Lio/sentry/rrweb/f;
 
+    .line 22
     .line 23
-    aput-object v1, v0, v2
+    filled-new-array/range {v0 .. v10}, [Lio/sentry/rrweb/f;
 
     .line 24
     .line 25
-    sget-object v1, Lio/sentry/rrweb/f;->DblClick:Lio/sentry/rrweb/f;
-
     .line 26
+    move-result-object v0
+
     .line 27
-    const/4 v2, 0x4
-
-    .line 28
-    aput-object v1, v0, v2
-
-    .line 29
-    .line 30
-    sget-object v1, Lio/sentry/rrweb/f;->Focus:Lio/sentry/rrweb/f;
-
-    .line 31
-    .line 32
-    const/4 v2, 0x5
-
-    .line 33
-    aput-object v1, v0, v2
-
-    .line 34
-    .line 35
-    sget-object v1, Lio/sentry/rrweb/f;->Blur:Lio/sentry/rrweb/f;
-
-    .line 36
-    .line 37
-    const/4 v2, 0x6
-
-    .line 38
-    aput-object v1, v0, v2
-
-    .line 39
-    .line 40
-    sget-object v1, Lio/sentry/rrweb/f;->TouchStart:Lio/sentry/rrweb/f;
-
-    .line 41
-    .line 42
-    const/4 v2, 0x7
-
-    .line 43
-    aput-object v1, v0, v2
-
-    .line 44
-    .line 45
-    sget-object v1, Lio/sentry/rrweb/f;->TouchMove_Departed:Lio/sentry/rrweb/f;
-
-    .line 46
-    .line 47
-    const/16 v2, 0x8
-
-    .line 48
-    .line 49
-    aput-object v1, v0, v2
-
-    .line 50
-    .line 51
-    sget-object v1, Lio/sentry/rrweb/f;->TouchEnd:Lio/sentry/rrweb/f;
-
-    .line 52
-    .line 53
-    const/16 v2, 0x9
-
-    .line 54
-    .line 55
-    aput-object v1, v0, v2
-
-    .line 56
-    .line 57
-    sget-object v1, Lio/sentry/rrweb/f;->TouchCancel:Lio/sentry/rrweb/f;
-
-    .line 58
-    .line 59
-    const/16 v2, 0xa
-
-    .line 60
-    .line 61
-    aput-object v1, v0, v2
-
-    .line 62
-    .line 63
     return-object v0
 .end method
 
@@ -479,7 +399,7 @@
 
 
 # virtual methods
-.method public serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -493,10 +413,10 @@
     .line 2
     .line 3
     .line 4
-    move-result p2
+    move-result p0
 
     .line 5
-    int-to-long v0, p2
+    int-to-long v0, p0
 
     .line 6
     check-cast p1, Lio/sentry/internal/debugmeta/c;

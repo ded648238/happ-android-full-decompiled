@@ -1,76 +1,91 @@
 package defpackage;
 
-import java.util.ArrayList;
-import java.util.List;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class z10 implements ji2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ os7 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class z10 {
-    public final int[] a;
-    public final int b;
-    public final int c;
-    public final int d;
-    public final List e;
-
-    public z10(int... iArr) {
-        List listZ0;
-        this.a = iArr;
-        Integer numP0 = or.p0(iArr, 0);
-        this.b = numP0 != null ? numP0.intValue() : -1;
-        Integer numP1 = or.p0(iArr, 1);
-        this.c = numP1 != null ? numP1.intValue() : -1;
-        Integer numP2 = or.p0(iArr, 2);
-        this.d = numP2 != null ? numP2.intValue() : -1;
-        if (iArr.length <= 3) {
-            listZ0 = wn1.Q;
-        } else {
-            if (iArr.length > 1024) {
-                fn.r(ea0.s(new StringBuilder("BinaryVersion with length more than 1024 are not supported. Provided length "), iArr.length, '.'));
-                throw null;
-            }
-            listZ0 = nm0.Z0(new r1(new pr(iArr), 3, iArr.length));
-        }
-        this.e = listZ0;
+    public /* synthetic */ z10(os7 os7Var, int i) {
+        this.X = i;
+        this.Y = os7Var;
     }
 
-    public final boolean a(int i, int i2, int i3) {
-        int i4 = this.b;
-        if (i4 > i) {
-            return true;
-        }
-        if (i4 < i) {
-            return false;
-        }
-        int i5 = this.c;
-        if (i5 > i2) {
-            return true;
-        }
-        return i5 >= i2 && this.d >= i3;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == null || !getClass().equals(obj.getClass())) {
-            return false;
-        }
-        z10 z10Var = (z10) obj;
-        return this.b == z10Var.b && this.c == z10Var.c && this.d == z10Var.d && rt2.f(this.e, z10Var.e);
-    }
-
-    public final int hashCode() {
-        int i = this.b;
-        int i2 = (i * 31) + this.c + i;
-        int i3 = (i2 * 31) + this.d + i2;
-        return this.e.hashCode() + (i3 * 31) + i3;
-    }
-
-    public final String toString() {
-        ArrayList arrayList = new ArrayList();
-        for (int i : this.a) {
-            if (i == -1) {
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        gv3 q;
+        ix5 ix5Var;
+        int i = this.X;
+        r98 r98Var = r98.a;
+        os7 os7Var = this.Y;
+        switch (i) {
+            case 0:
                 break;
-            }
-            arrayList.add(Integer.valueOf(i));
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                x65 x65Var = os7Var.s;
+                vz7 vz7Var = os7Var.a;
+                boolean b = eu7.b(vz7Var.d().c0);
+                if (((b && ((tu7) x65Var.getValue()) == tu7.Y) || (!b && ((tu7) x65Var.getValue()) == tu7.Z)) && os7Var.l() == null && ((Boolean) os7Var.k.getValue()).booleanValue() && (q = os7Var.q()) != null) {
+                    ix5 J = h71.J(q);
+                    ix5 b2 = ut.b(q.I(J.e()), J.d());
+                    gv3 q2 = os7Var.q();
+                    if (q2 == null) {
+                        j53.d("textLayoutCoordinates should not be null.");
+                        ku0.k();
+                        break;
+                    } else {
+                        if (eu7.b(vz7Var.d().c0)) {
+                            ix5 k = os7Var.k();
+                            ix5Var = ut.b(q2.I(k.e()), k.d());
+                        } else {
+                            long I = q2.I(os7Var.o(true));
+                            long I2 = q2.I(os7Var.o(false));
+                            if (os7Var.b.c() == null) {
+                                ix5Var = ix5.e;
+                            } else {
+                                float intBitsToFloat = Float.intBitsToFloat((int) (q2.I((Float.floatToRawIntBits(r0.c((int) (r7 >> 32)).b) & 4294967295L) | (Float.floatToRawIntBits(0.0f) << 32)) & 4294967295L));
+                                float intBitsToFloat2 = Float.intBitsToFloat((int) (q2.I((Float.floatToRawIntBits(0.0f) << 32) | (Float.floatToRawIntBits(r0.c((int) (r7 & 4294967295L)).b) & 4294967295L)) & 4294967295L));
+                                int i2 = (int) (I >> 32);
+                                int i3 = (int) (I2 >> 32);
+                                ix5Var = new ix5(Math.min(Float.intBitsToFloat(i2), Float.intBitsToFloat(i3)), Math.min(intBitsToFloat, intBitsToFloat2), Math.max(Float.intBitsToFloat(i2), Float.intBitsToFloat(i3)), Math.max(Float.intBitsToFloat((int) (I & 4294967295L)), Float.intBitsToFloat((int) (I2 & 4294967295L))));
+                            }
+                        }
+                        if (ix5Var.h(b2)) {
+                            break;
+                        }
+                    }
+                }
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                os7Var.d();
+                break;
+            case 7:
+                break;
+            case 8:
+                vz7 vz7Var2 = os7Var.a;
+                ts7 ts7Var = vz7Var2.a;
+                n63 n63Var = vz7Var2.b;
+                ts7Var.b.a().y();
+                eq7 eq7Var = ts7Var.b;
+                us7.g0(eq7Var, 0, eq7Var.Z.length());
+                ts7.a(ts7Var, n63Var, true, zq7.X);
+                break;
+            default:
+                ji2 ji2Var = os7Var.l;
+                if (ji2Var != null) {
+                    ji2Var.invoke();
+                    break;
+                }
+                break;
         }
-        return arrayList.isEmpty() ? "unknown" : nm0.C0(arrayList, ".", null, null, null, 62);
+        return r98Var;
     }
 }

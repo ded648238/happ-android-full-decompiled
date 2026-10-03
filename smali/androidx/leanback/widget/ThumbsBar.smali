@@ -1,22 +1,22 @@
 .class public Landroidx/leanback/widget/ThumbsBar;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:I
+.field public c0:I
 
-.field public final R:I
+.field public final d0:I
 
-.field public final S:I
+.field public final e0:I
 
-.field public final T:I
+.field public final f0:I
 
-.field public final U:I
+.field public final g0:I
 
-.field public V:I
+.field public h0:I
 
-.field public W:Z
+.field public i0:Z
 
 
 # direct methods
@@ -43,7 +43,7 @@
     const/4 p2, -0x1
 
     .line 5
-    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->Q:I
+    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->c0:I
 
     .line 6
     .line 7
@@ -59,7 +59,7 @@
     const/4 p2, 0x0
 
     .line 13
-    iput-boolean p2, p0, Landroidx/leanback/widget/ThumbsBar;->W:Z
+    iput-boolean p2, p0, Landroidx/leanback/widget/ThumbsBar;->i0:Z
 
     .line 14
     .line 15
@@ -71,7 +71,7 @@
     move-result-object p2
 
     .line 19
-    sget p3, Li85;->lb_playback_transport_thumbs_width:I
+    sget p3, Lhs5;->lb_playback_transport_thumbs_width:I
 
     .line 20
     .line 21
@@ -83,7 +83,7 @@
     move-result p2
 
     .line 25
-    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->R:I
+    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->d0:I
 
     .line 26
     .line 27
@@ -95,7 +95,7 @@
     move-result-object p2
 
     .line 31
-    sget p3, Li85;->lb_playback_transport_thumbs_height:I
+    sget p3, Lhs5;->lb_playback_transport_thumbs_height:I
 
     .line 32
     .line 33
@@ -107,7 +107,7 @@
     move-result p2
 
     .line 37
-    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->S:I
+    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->e0:I
 
     .line 38
     .line 39
@@ -119,7 +119,7 @@
     move-result-object p2
 
     .line 43
-    sget p3, Li85;->lb_playback_transport_hero_thumbs_width:I
+    sget p3, Lhs5;->lb_playback_transport_hero_thumbs_width:I
 
     .line 44
     .line 45
@@ -131,7 +131,7 @@
     move-result p2
 
     .line 49
-    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->U:I
+    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->g0:I
 
     .line 50
     .line 51
@@ -143,7 +143,7 @@
     move-result-object p2
 
     .line 55
-    sget p3, Li85;->lb_playback_transport_hero_thumbs_height:I
+    sget p3, Lhs5;->lb_playback_transport_hero_thumbs_height:I
 
     .line 56
     .line 57
@@ -155,7 +155,7 @@
     move-result p2
 
     .line 61
-    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->T:I
+    iput p2, p0, Landroidx/leanback/widget/ThumbsBar;->f0:I
 
     .line 62
     .line 63
@@ -167,7 +167,7 @@
     move-result-object p1
 
     .line 67
-    sget p2, Li85;->lb_playback_transport_thumbs_margin:I
+    sget p2, Lhs5;->lb_playback_transport_thumbs_margin:I
 
     .line 68
     .line 69
@@ -179,7 +179,7 @@
     move-result p1
 
     .line 73
-    iput p1, p0, Landroidx/leanback/widget/ThumbsBar;->V:I
+    iput p1, p0, Landroidx/leanback/widget/ThumbsBar;->h0:I
 
     .line 74
     .line 75
@@ -201,7 +201,7 @@
     move-result v0
 
     .line 5
-    iget v1, p0, Landroidx/leanback/widget/ThumbsBar;->Q:I
+    iget v1, p0, Landroidx/leanback/widget/ThumbsBar;->c0:I
 
     .line 6
     .line 7
@@ -247,15 +247,15 @@
     move-result v0
 
     .line 27
-    iget v1, p0, Landroidx/leanback/widget/ThumbsBar;->Q:I
+    iget v1, p0, Landroidx/leanback/widget/ThumbsBar;->c0:I
 
     .line 28
     .line 29
-    iget v2, p0, Landroidx/leanback/widget/ThumbsBar;->S:I
+    iget v2, p0, Landroidx/leanback/widget/ThumbsBar;->e0:I
 
     .line 30
     .line 31
-    iget v3, p0, Landroidx/leanback/widget/ThumbsBar;->R:I
+    iget v3, p0, Landroidx/leanback/widget/ThumbsBar;->d0:I
 
     .line 32
     .line 33
@@ -346,7 +346,7 @@
 
     .line 75
     .line 76
-    iget v6, p0, Landroidx/leanback/widget/ThumbsBar;->T:I
+    iget v6, p0, Landroidx/leanback/widget/ThumbsBar;->f0:I
 
     .line 77
     .line 78
@@ -354,7 +354,7 @@
 
     .line 79
     .line 80
-    iget v6, p0, Landroidx/leanback/widget/ThumbsBar;->U:I
+    iget v6, p0, Landroidx/leanback/widget/ThumbsBar;->g0:I
 
     .line 81
     .line 82
@@ -392,7 +392,7 @@
 .end method
 
 .method public getHeroIndex()I
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
@@ -400,14 +400,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    div-int/lit8 v0, v0, 0x2
+    div-int/lit8 p0, p0, 0x2
 
     .line 6
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final onLayout(ZIIII)V
@@ -553,7 +553,7 @@
 
     .line 68
     .line 69
-    iget v0, p0, Landroidx/leanback/widget/ThumbsBar;->V:I
+    iget v0, p0, Landroidx/leanback/widget/ThumbsBar;->h0:I
 
     .line 70
     .line 71
@@ -640,7 +640,7 @@
 
     .line 109
     .line 110
-    iget p3, p0, Landroidx/leanback/widget/ThumbsBar;->Q:I
+    iget p3, p0, Landroidx/leanback/widget/ThumbsBar;->c0:I
 
     .line 111
     .line 112
@@ -648,7 +648,7 @@
 
     .line 113
     .line 114
-    iget p3, p0, Landroidx/leanback/widget/ThumbsBar;->V:I
+    iget p3, p0, Landroidx/leanback/widget/ThumbsBar;->h0:I
 
     .line 115
     .line 116
@@ -745,7 +745,7 @@
     move-result p1
 
     .line 8
-    iget-boolean p2, p0, Landroidx/leanback/widget/ThumbsBar;->W:Z
+    iget-boolean p2, p0, Landroidx/leanback/widget/ThumbsBar;->i0:Z
 
     .line 9
     .line 10
@@ -753,18 +753,18 @@
 
     .line 11
     .line 12
-    iget p2, p0, Landroidx/leanback/widget/ThumbsBar;->T:I
+    iget p2, p0, Landroidx/leanback/widget/ThumbsBar;->f0:I
 
     .line 13
     .line 14
     sub-int/2addr p1, p2
 
     .line 15
-    iget p2, p0, Landroidx/leanback/widget/ThumbsBar;->R:I
+    iget p2, p0, Landroidx/leanback/widget/ThumbsBar;->d0:I
 
     .line 16
     .line 17
-    iget v0, p0, Landroidx/leanback/widget/ThumbsBar;->V:I
+    iget v0, p0, Landroidx/leanback/widget/ThumbsBar;->h0:I
 
     .line 18
     .line 19
@@ -788,7 +788,7 @@
 
     .line 26
     .line 27
-    const/4 p1, 0x2
+    move p1, p2
 
     .line 28
     goto :goto_0
@@ -813,7 +813,7 @@
 
     .line 36
     .line 37
-    iget p2, p0, Landroidx/leanback/widget/ThumbsBar;->Q:I
+    iget p2, p0, Landroidx/leanback/widget/ThumbsBar;->c0:I
 
     .line 38
     .line 39
@@ -821,7 +821,7 @@
 
     .line 40
     .line 41
-    iput p1, p0, Landroidx/leanback/widget/ThumbsBar;->Q:I
+    iput p1, p0, Landroidx/leanback/widget/ThumbsBar;->c0:I
 
     .line 42
     .line 43
@@ -841,11 +841,11 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Landroidx/leanback/widget/ThumbsBar;->W:Z
+    iput-boolean v0, p0, Landroidx/leanback/widget/ThumbsBar;->i0:Z
 
     .line 3
     .line 4
-    iput p1, p0, Landroidx/leanback/widget/ThumbsBar;->Q:I
+    iput p1, p0, Landroidx/leanback/widget/ThumbsBar;->c0:I
 
     .line 5
     .line 6
@@ -861,7 +861,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/leanback/widget/ThumbsBar;->V:I
+    iput p1, p0, Landroidx/leanback/widget/ThumbsBar;->h0:I
 
     .line 2
     .line 3

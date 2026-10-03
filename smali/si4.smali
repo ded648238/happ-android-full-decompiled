@@ -1,115 +1,278 @@
 .class public final Lsi4;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
-.implements Landroid/view/View$OnAttachStateChangeListener;
+
+# static fields
+.field public static final c:[Ljava/lang/Class;
 
 
 # instance fields
-.field public final Q:Landroid/view/View;
+.field public final a:Ljava/lang/String;
 
-.field public R:Landroid/view/ViewTreeObserver;
-
-.field public final S:Ljava/lang/Runnable;
+.field public final b:[Ljava/lang/Class;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Ljava/lang/Runnable;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lsi4;->Q:Landroid/view/View;
-
-    .line 5
-    .line 6
-    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    iput-object p1, p0, Lsi4;->R:Landroid/view/ViewTreeObserver;
-
-    .line 11
-    .line 12
-    iput-object p2, p0, Lsi4;->S:Ljava/lang/Runnable;
-
-    .line 13
-    .line 14
-    return-void
-.end method
-
-.method public static a(Landroid/view/View;Ljava/lang/Runnable;)V
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
-    if-eqz p0, :cond_0
+    const/4 v0, 0x0
+
+    .line 2
+    new-array v0, v0, [Ljava/lang/Class;
+
+    .line 3
+    .line 4
+    sput-object v0, Lsi4;->c:[Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;[Ljava/lang/Class;)V
+    .locals 0
+
+    .line 24
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 25
+    iput-object p1, p0, Lsi4;->a:Ljava/lang/String;
+
+    if-nez p2, :cond_0
+
+    .line 26
+    sget-object p2, Lsi4;->c:[Ljava/lang/Class;
+
+    :cond_0
+    iput-object p2, p0, Lsi4;->b:[Ljava/lang/Class;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/reflect/Constructor;)V
+    .locals 1
+
+    .line 23
+    invoke-virtual {p1}, Ljava/lang/reflect/Constructor;->getParameterCount()I
+
+    move-result v0
+
+    if-lez v0, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/reflect/Constructor;->getParameterTypes()[Ljava/lang/Class;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    :cond_0
+    sget-object p1, Lsi4;->c:[Ljava/lang/Class;
+
+    :goto_0
+    const-string v0, ""
+
+    invoke-direct {p0, v0, p1}, Lsi4;-><init>(Ljava/lang/String;[Ljava/lang/Class;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/reflect/Method;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
     .line 2
     .line 3
-    new-instance v0, Lsi4;
-
     .line 4
+    move-result-object v0
+
     .line 5
-    invoke-direct {v0, p0, p1}, Lsi4;-><init>(Landroid/view/View;Ljava/lang/Runnable;)V
+    invoke-virtual {p1}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    move-result-object v1
 
     .line 9
-    .line 10
-    .line 11
-    move-result-object p1
+    array-length v1, v1
 
+    .line 10
+    if-lez v1, :cond_0
+
+    .line 11
     .line 12
-    invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+    invoke-virtual {p1}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     .line 13
     .line 14
     .line 15
-    invoke-virtual {p0, v0}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+    move-result-object p1
 
     .line 16
-    .line 17
-    .line 18
-    return-void
+    goto :goto_0
 
-    .line 19
+    .line 17
     :cond_0
-    const-string p0, "view == null"
+    sget-object p1, Lsi4;->c:[Ljava/lang/Class;
+
+    .line 18
+    .line 19
+    :goto_0
+    invoke-direct {p0, v0, p1}, Lsi4;-><init>(Ljava/lang/String;[Ljava/lang/Class;)V
 
     .line 20
     .line 21
-    invoke-static {p0}, Len0;->g(Ljava/lang/String;)V
-
     .line 22
-    .line 23
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final onPreDraw()Z
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Lsi4;->R:Landroid/view/ViewTreeObserver;
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p1, p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 6
+    if-nez p1, :cond_1
+
+    .line 7
+    .line 8
+    return v1
+
+    .line 9
+    :cond_1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v2
+
+    .line 13
+    const-class v3, Lsi4;
+
+    .line 14
+    .line 15
+    if-eq v2, v3, :cond_2
+
+    .line 16
+    .line 17
+    return v1
+
+    .line 18
+    :cond_2
+    check-cast p1, Lsi4;
+
+    .line 19
+    .line 20
+    iget-object v2, p0, Lsi4;->a:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    iget-object v3, p1, Lsi4;->a:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v2
+
+    .line 28
+    if-nez v2, :cond_3
+
+    .line 29
+    .line 30
+    return v1
+
+    .line 31
+    :cond_3
+    iget-object p1, p1, Lsi4;->b:[Ljava/lang/Class;
+
+    .line 32
+    .line 33
+    iget-object p0, p0, Lsi4;->b:[Ljava/lang/Class;
+
+    .line 34
+    .line 35
+    array-length v2, p0
+
+    .line 36
+    array-length v3, p1
+
+    .line 37
+    if-eq v3, v2, :cond_4
+
+    .line 38
+    .line 39
+    return v1
+
+    .line 40
+    :cond_4
+    move v3, v1
+
+    .line 41
+    :goto_0
+    if-ge v3, v2, :cond_6
+
+    .line 42
+    .line 43
+    aget-object v4, p1, v3
+
+    .line 44
+    .line 45
+    aget-object v5, p0, v3
+
+    .line 46
+    .line 47
+    if-ne v4, v5, :cond_5
+
+    .line 48
+    .line 49
+    add-int/lit8 v3, v3, 0x1
+
+    .line 50
+    .line 51
+    goto :goto_0
+
+    .line 52
+    :cond_5
+    return v1
+
+    .line 53
+    :cond_6
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lsi4;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
@@ -117,135 +280,68 @@
     move-result v0
 
     .line 7
-    iget-object v1, p0, Lsi4;->Q:Landroid/view/View;
+    iget-object p0, p0, Lsi4;->b:[Ljava/lang/Class;
 
     .line 8
     .line 9
-    if-eqz v0, :cond_0
+    array-length p0, p0
 
     .line 10
+    add-int/2addr v0, p0
+
     .line 11
-    iget-object v0, p0, Lsi4;->R:Landroid/view/ViewTreeObserver;
-
-    .line 12
-    .line 13
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
-
-    .line 14
-    .line 15
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    invoke-virtual {v1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
-
-    .line 22
-    .line 23
-    .line 24
-    :goto_0
-    invoke-virtual {v1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
-
-    .line 25
-    .line 26
-    .line 27
-    iget-object v0, p0, Lsi4;->S:Ljava/lang/Runnable;
-
-    .line 28
-    .line 29
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
-
-    .line 30
-    .line 31
-    .line 32
-    const/4 v0, 0x1
-
-    .line 33
     return v0
 .end method
 
-.method public final onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 0
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    iput-object p1, p0, Lsi4;->R:Landroid/view/ViewTreeObserver;
-
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final onViewDetachedFromWindow(Landroid/view/View;)V
-    .locals 1
-
-    .line 1
-    iget-object p1, p0, Lsi4;->R:Landroid/view/ViewTreeObserver;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Landroid/view/ViewTreeObserver;->isAlive()Z
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    move-result p1
+    iget-object v1, p0, Lsi4;->a:Ljava/lang/String;
 
     .line 7
-    iget-object v0, p0, Lsi4;->Q:Landroid/view/View;
-
     .line 8
-    .line 9
-    if-eqz p1, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
     .line 10
     .line 11
-    iget-object p1, p0, Lsi4;->R:Landroid/view/ViewTreeObserver;
+    const-string v1, "("
 
     .line 12
     .line 13
-    invoke-virtual {p1, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 14
     .line 15
     .line 16
-    goto :goto_0
+    iget-object p0, p0, Lsi4;->b:[Ljava/lang/Class;
 
     .line 17
-    :cond_0
-    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
     .line 18
-    .line 19
-    .line 20
-    move-result-object p1
+    array-length p0, p0
 
+    .line 19
+    const-string v1, "-args)"
+
+    .line 20
     .line 21
-    invoke-virtual {p1, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+    invoke-static {v0, p0, v1}, Leh0;->p(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     .line 22
     .line 23
     .line 24
-    :goto_0
-    invoke-virtual {v0, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+    move-result-object p0
 
     .line 25
-    .line 26
-    .line 27
-    return-void
+    return-object p0
 .end method

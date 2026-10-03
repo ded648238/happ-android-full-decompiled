@@ -1,27 +1,62 @@
 package defpackage;
 
-import android.view.accessibility.AccessibilityNodeInfo;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class t3 extends q3 {
+    public static t3 c;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class t3 implements du1, of4 {
-    public Object Q;
-
-    public /* synthetic */ t3(Object obj) {
-        this.Q = obj;
+    @Override // defpackage.q3
+    public final int[] h(int i) {
+        int length = m().length();
+        if (length <= 0 || i >= length) {
+            return null;
+        }
+        if (i < 0) {
+            i = 0;
+        }
+        while (i < length && m().charAt(i) == '\n' && (m().charAt(i) == '\n' || (i != 0 && m().charAt(i - 1) != '\n'))) {
+            i++;
+        }
+        if (i >= length) {
+            return null;
+        }
+        int i2 = i + 1;
+        while (i2 < length && !y(i2)) {
+            i2++;
+        }
+        return l(i, i2);
     }
 
-    public static t3 a(int i, int i2, int i3, int i4, boolean z) {
-        return new t3(AccessibilityNodeInfo.CollectionItemInfo.obtain(i, i2, i3, i4, false, z));
+    /* JADX WARN: Code restructure failed: missing block: B:16:0x002c, code lost:
+    
+        return null;
+     */
+    @Override // defpackage.q3
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final int[] p(int i) {
+        int length = m().length();
+        if (length <= 0 || i <= 0) {
+            return null;
+        }
+        if (i > length) {
+            i = length;
+        }
+        while (i > 0 && m().charAt(i - 1) == '\n' && !y(i)) {
+            i--;
+        }
+        int i2 = i - 1;
+        while (i2 > 0 && (m().charAt(i2) == '\n' || (i2 != 0 && m().charAt(i2 - 1) != '\n'))) {
+            i2--;
+        }
+        return l(i2, i);
     }
 
-    @Override // defpackage.of4
-    public String d() {
-        return "attempted to overwrite the existing value '" + this.Q + '\'';
-    }
-
-    @Override // defpackage.n65
-    public Object get() {
-        return this.Q;
+    public final boolean y(int i) {
+        if (i <= 0 || m().charAt(i - 1) == '\n') {
+            return false;
+        }
+        return i == m().length() || m().charAt(i) == '\n';
     }
 }

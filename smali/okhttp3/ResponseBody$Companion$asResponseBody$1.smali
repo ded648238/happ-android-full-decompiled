@@ -1,11 +1,11 @@
 .class public final Lokhttp3/ResponseBody$Companion$asResponseBody$1;
 .super Lokhttp3/ResponseBody;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/ResponseBody$Companion;->create(Ls50;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
+    value = Lokhttp3/ResponseBody$Companion;->create(Lf80;Lokhttp3/MediaType;J)Lokhttp3/ResponseBody;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,9 +26,9 @@
         "",
         "contentLength",
         "()J",
-        "Ls50;",
+        "Lf80;",
         "source",
-        "()Ls50;",
+        "()Lf80;",
         "okhttp"
     }
     k = 0x1
@@ -46,11 +46,11 @@
 
 .field final synthetic $contentType:Lokhttp3/MediaType;
 
-.field final synthetic $this_asResponseBody:Ls50;
+.field final synthetic $this_asResponseBody:Lf80;
 
 
 # direct methods
-.method public constructor <init>(Lokhttp3/MediaType;JLs50;)V
+.method public constructor <init>(Lokhttp3/MediaType;JLf80;)V
     .locals 0
 
     .line 1
@@ -62,7 +62,7 @@
 
     .line 4
     .line 5
-    iput-object p4, p0, Lokhttp3/ResponseBody$Companion$asResponseBody$1;->$this_asResponseBody:Ls50;
+    iput-object p4, p0, Lokhttp3/ResponseBody$Companion$asResponseBody$1;->$this_asResponseBody:Lf80;
 
     .line 6
     .line 7
@@ -88,23 +88,23 @@
 .end method
 
 .method public contentType()Lokhttp3/MediaType;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/ResponseBody$Companion$asResponseBody$1;->$contentType:Lokhttp3/MediaType;
+    iget-object p0, p0, Lokhttp3/ResponseBody$Companion$asResponseBody$1;->$contentType:Lokhttp3/MediaType;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public source()Ls50;
-    .locals 1
+.method public source()Lf80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/ResponseBody$Companion$asResponseBody$1;->$this_asResponseBody:Ls50;
+    iget-object p0, p0, Lokhttp3/ResponseBody$Companion$asResponseBody$1;->$this_asResponseBody:Lf80;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

@@ -1,22 +1,23 @@
 package defpackage;
 
-import java.util.HashSet;
+import androidx.media.MediaBrowserServiceCompat;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class ai4 {
-    public static final HashSet a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class ai4 extends v5 {
+    public final /* synthetic */ MediaBrowserServiceCompat f0;
 
-    static {
-        HashSet hashSet = new HashSet();
-        hashSet.add(Boolean.class);
-        hashSet.add(Character.class);
-        hashSet.add(Byte.class);
-        hashSet.add(Short.class);
-        hashSet.add(Integer.class);
-        hashSet.add(Long.class);
-        hashSet.add(Float.class);
-        hashSet.add(Double.class);
-        a = hashSet;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ai4(MediaBrowserServiceCompat mediaBrowserServiceCompat) {
+        super(mediaBrowserServiceCompat);
+        this.f0 = mediaBrowserServiceCompat;
+    }
+
+    @Override // defpackage.v5
+    public final void X() {
+        int i = ei4.a;
+        di4 di4Var = new di4(this.f0, this);
+        this.Z = di4Var;
+        di4Var.onCreate();
     }
 }

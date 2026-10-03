@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/OpenSSLBIOInputStream;
 .super Ljava/io/FilterInputStream;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -152,9 +152,9 @@
 
     invoke-virtual {p0, p1, v0, v1}, Lorg/conscrypt/OpenSSLBIOInputStream;->read([BII)I
 
-    move-result p1
+    move-result p0
 
-    return p1
+    return p0
 .end method
 
 .method public read([BII)I
@@ -246,11 +246,11 @@
 
     .line 34
     :cond_3
-    const-string p1, "Invalid bounds"
+    const-string p0, "Invalid bounds"
 
     .line 35
     .line 36
-    invoke-static {p1}, Lxi4;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->t(Ljava/lang/String;)V
 
     .line 37
     .line 38

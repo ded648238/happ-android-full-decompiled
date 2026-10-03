@@ -1,8 +1,36 @@
 package defpackage;
 
-import android.util.AndroidRuntimeException;
+import su.happ.proxyutility.dto.enums.EConfigType;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class fs6 extends AndroidRuntimeException {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public abstract /* synthetic */ class fs6 {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[si7.values().length];
+        try {
+            iArr[0] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            iArr[1] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        int[] iArr2 = new int[EConfigType.values().length];
+        try {
+            iArr2[EConfigType.CUSTOM.ordinal()] = 1;
+        } catch (NoSuchFieldError unused3) {
+        }
+        a = iArr2;
+        int[] iArr3 = new int[bd5.values().length];
+        try {
+            iArr3[0] = 1;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            iArr3[1] = 2;
+        } catch (NoSuchFieldError unused5) {
+        }
+    }
 }

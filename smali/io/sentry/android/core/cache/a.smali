@@ -1,6 +1,6 @@
 .class public final Lio/sentry/android/core/cache/a;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -10,11 +10,11 @@
 
 .field public final c:Ljava/lang/String;
 
-.field public final d:Lio/sentry/x1;
+.field public final d:Lio/sentry/z1;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Lio/sentry/x1;)V
+.method public constructor <init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Lio/sentry/z1;)V
     .locals 0
 
     .line 1
@@ -35,7 +35,7 @@
 
     .line 9
     .line 10
-    iput-object p4, p0, Lio/sentry/android/core/cache/a;->d:Lio/sentry/x1;
+    iput-object p4, p0, Lio/sentry/android/core/cache/a;->d:Lio/sentry/z1;
 
     .line 11
     .line 12

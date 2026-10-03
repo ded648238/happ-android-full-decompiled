@@ -1,11 +1,9 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class m75 {
-    public static int fragment_close_enter = 2130837509;
-    public static int fragment_close_exit = 2130837510;
-    public static int fragment_fade_enter = 2130837511;
-    public static int fragment_fade_exit = 2130837512;
-    public static int fragment_open_enter = 2130837513;
-    public static int fragment_open_exit = 2130837514;
+import kotlin.Metadata;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0000\u0018\u00002\u00060\u0001j\u0002`\u0002¨\u0006\u0003"}, d2 = {"Lm75;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "kotlinx-datetime"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class m75 extends Exception {
 }

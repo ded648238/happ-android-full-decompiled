@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/Conscrypt;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -147,7 +147,7 @@
     move v1, v5
 
     .line 55
-    goto :goto_2
+    goto :goto_0
 
     .line 56
     :catchall_0
@@ -157,112 +157,119 @@
     move-object v2, v3
 
     .line 58
-    goto :goto_3
+    goto :goto_1
 
     .line 59
     :catch_0
-    :goto_0
-    const/4 v6, -0x1
+    move v6, v1
 
     .line 60
-    goto :goto_4
+    goto :goto_2
 
     .line 61
     :catch_1
-    :goto_1
-    const/4 v5, -0x1
+    move v5, v1
 
     .line 62
-    goto :goto_0
+    move v6, v5
 
     .line 63
-    :cond_0
-    const/4 v0, -0x1
+    goto :goto_2
 
     .line 64
-    const/4 v6, -0x1
+    :cond_0
+    move v0, v1
 
     .line 65
-    :goto_2
-    invoke-static {v3}, Lorg/conscrypt/io/IoUtils;->closeQuietly(Ljava/io/Closeable;)V
+    move v6, v0
 
     .line 66
+    :goto_0
+    invoke-static {v3}, Lorg/conscrypt/io/IoUtils;->closeQuietly(Ljava/io/Closeable;)V
+
     .line 67
     .line 68
-    goto :goto_5
-
     .line 69
+    goto :goto_3
+
+    .line 70
     :catchall_1
     move-exception v0
 
-    .line 70
-    goto :goto_3
-
     .line 71
-    :catch_2
-    move-object v3, v2
-
-    .line 72
     goto :goto_1
 
+    .line 72
+    :catch_2
+    move v5, v1
+
     .line 73
-    :goto_3
-    invoke-static {v2}, Lorg/conscrypt/io/IoUtils;->closeQuietly(Ljava/io/Closeable;)V
+    move v6, v5
 
     .line 74
+    move-object v3, v2
+
     .line 75
+    goto :goto_2
+
     .line 76
-    throw v0
+    :goto_1
+    invoke-static {v2}, Lorg/conscrypt/io/IoUtils;->closeQuietly(Ljava/io/Closeable;)V
 
     .line 77
-    :catch_3
-    :goto_4
-    invoke-static {v3}, Lorg/conscrypt/io/IoUtils;->closeQuietly(Ljava/io/Closeable;)V
-
     .line 78
     .line 79
+    throw v0
+
     .line 80
-    move v1, v5
+    :catch_3
+    :goto_2
+    invoke-static {v3}, Lorg/conscrypt/io/IoUtils;->closeQuietly(Ljava/io/Closeable;)V
 
     .line 81
-    const/4 v0, -0x1
-
     .line 82
-    :goto_5
-    if-ltz v1, :cond_1
-
     .line 83
+    move v0, v1
+
     .line 84
-    if-ltz v6, :cond_1
+    move v1, v5
 
     .line 85
+    :goto_3
+    if-ltz v1, :cond_1
+
     .line 86
+    .line 87
+    if-ltz v6, :cond_1
+
+    .line 88
+    .line 89
     if-ltz v0, :cond_1
 
-    .line 87
-    .line 88
+    .line 90
+    .line 91
     new-instance v3, Lorg/conscrypt/Conscrypt$Version;
 
-    .line 89
-    .line 90
-    invoke-direct {v3, v1, v6, v0, v2}, Lorg/conscrypt/Conscrypt$Version;-><init>(IIILorg/conscrypt/Conscrypt$1;)V
-
-    .line 91
     .line 92
     .line 93
-    sput-object v3, Lorg/conscrypt/Conscrypt;->VERSION:Lorg/conscrypt/Conscrypt$Version;
+    invoke-direct {v3, v1, v6, v0, v2}, Lorg/conscrypt/Conscrypt$Version;-><init>(IIILorg/conscrypt/Conscrypt$1;)V
 
     .line 94
     .line 95
-    goto :goto_6
-
     .line 96
-    :cond_1
-    sput-object v2, Lorg/conscrypt/Conscrypt;->VERSION:Lorg/conscrypt/Conscrypt$Version;
+    sput-object v3, Lorg/conscrypt/Conscrypt;->VERSION:Lorg/conscrypt/Conscrypt$Version;
 
     .line 97
     .line 98
-    :goto_6
+    goto :goto_4
+
+    .line 99
+    :cond_1
+    sput-object v2, Lorg/conscrypt/Conscrypt;->VERSION:Lorg/conscrypt/Conscrypt$Version;
+
+    .line 100
+    .line 101
+    :goto_4
     return-void
 .end method
 
@@ -402,7 +409,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -521,7 +528,7 @@
     move-result-object p0
 
     .line 53
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 54
     .line 55
@@ -560,54 +567,6 @@
 
     .line 5
     invoke-virtual {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getApplicationProtocols()[Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p0
-
-    .line 9
-    return-object p0
-.end method
-
-.method public static getChannelId(Ljavax/net/ssl/SSLEngine;)[B
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljavax/net/ssl/SSLException;
-        }
-    .end annotation
-
-    .line 10
-    invoke-static {p0}, Lorg/conscrypt/Conscrypt;->toConscrypt(Ljavax/net/ssl/SSLEngine;)Lorg/conscrypt/AbstractConscryptEngine;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lorg/conscrypt/AbstractConscryptEngine;->getChannelId()[B
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static getChannelId(Ljavax/net/ssl/SSLSocket;)[B
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljavax/net/ssl/SSLException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p0}, Lorg/conscrypt/Conscrypt;->toConscrypt(Ljavax/net/ssl/SSLSocket;)Lorg/conscrypt/AbstractConscryptSocket;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    invoke-virtual {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getChannelId()[B
 
     .line 6
     .line 7
@@ -900,7 +859,7 @@
 
     .line 36
     .line 37
-    invoke-static {v4, p1, v2, p0, v3}, Lmi2;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4, p1, v2, p0, v3}, Lw31;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 38
     .line 39
@@ -994,7 +953,7 @@
 
     .line 83
     .line 84
-    invoke-static {v2, p1, v1}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p1, v1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 85
     .line 86
@@ -1002,7 +961,7 @@
     move-result-object p1
 
     .line 88
-    invoke-static {p1, p0}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Lq05;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 89
     .line 90
@@ -1043,7 +1002,7 @@
 
     .line 104
     .line 105
-    invoke-static {v2, p1, v1}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p1, v1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 106
     .line 107
@@ -1419,72 +1378,6 @@
     return-void
 .end method
 
-.method public static setChannelIdEnabled(Ljavax/net/ssl/SSLEngine;Z)V
-    .locals 0
-
-    .line 9
-    invoke-static {p0}, Lorg/conscrypt/Conscrypt;->toConscrypt(Ljavax/net/ssl/SSLEngine;)Lorg/conscrypt/AbstractConscryptEngine;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p1}, Lorg/conscrypt/AbstractConscryptEngine;->setChannelIdEnabled(Z)V
-
-    return-void
-.end method
-
-.method public static setChannelIdEnabled(Ljavax/net/ssl/SSLSocket;Z)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lorg/conscrypt/Conscrypt;->toConscrypt(Ljavax/net/ssl/SSLSocket;)Lorg/conscrypt/AbstractConscryptSocket;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    invoke-virtual {p0, p1}, Lorg/conscrypt/AbstractConscryptSocket;->setChannelIdEnabled(Z)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public static setChannelIdPrivateKey(Ljavax/net/ssl/SSLEngine;Ljava/security/PrivateKey;)V
-    .locals 0
-
-    .line 9
-    invoke-static {p0}, Lorg/conscrypt/Conscrypt;->toConscrypt(Ljavax/net/ssl/SSLEngine;)Lorg/conscrypt/AbstractConscryptEngine;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p1}, Lorg/conscrypt/AbstractConscryptEngine;->setChannelIdPrivateKey(Ljava/security/PrivateKey;)V
-
-    return-void
-.end method
-
-.method public static setChannelIdPrivateKey(Ljavax/net/ssl/SSLSocket;Ljava/security/PrivateKey;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lorg/conscrypt/Conscrypt;->toConscrypt(Ljavax/net/ssl/SSLSocket;)Lorg/conscrypt/AbstractConscryptSocket;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    invoke-virtual {p0, p1}, Lorg/conscrypt/AbstractConscryptSocket;->setChannelIdPrivateKey(Ljava/security/PrivateKey;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
 .method public static setClientSessionCache(Ljavax/net/ssl/SSLContext;Lorg/conscrypt/SSLClientSessionCache;)V
     .locals 1
 
@@ -1546,7 +1439,7 @@
     move-result-object p0
 
     .line 29
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -1602,6 +1495,39 @@
 
     .line 11
     throw p0
+.end method
+
+.method public static setEchConfigList(Ljavax/net/ssl/SSLEngine;[B)V
+    .locals 0
+
+    .line 9
+    invoke-static {p0}, Lorg/conscrypt/Conscrypt;->toConscrypt(Ljavax/net/ssl/SSLEngine;)Lorg/conscrypt/AbstractConscryptEngine;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Lorg/conscrypt/AbstractConscryptEngine;->setEchConfigList([B)V
+
+    return-void
+.end method
+
+.method public static setEchConfigList(Ljavax/net/ssl/SSLSocket;[B)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lorg/conscrypt/Conscrypt;->toConscrypt(Ljavax/net/ssl/SSLSocket;)Lorg/conscrypt/AbstractConscryptSocket;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-virtual {p0, p1}, Lorg/conscrypt/AbstractConscryptSocket;->setEchConfigList([B)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
 .end method
 
 .method public static setHandshakeListener(Ljavax/net/ssl/SSLEngine;Lorg/conscrypt/HandshakeListener;)V
@@ -1771,7 +1697,7 @@
     move-result-object p0
 
     .line 29
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -1893,7 +1819,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -1931,7 +1857,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -1969,7 +1895,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -2028,7 +1954,7 @@
     move-result-object p0
 
     .line 24
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -2070,7 +1996,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 

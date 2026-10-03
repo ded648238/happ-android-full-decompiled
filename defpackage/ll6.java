@@ -1,62 +1,21 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class ll6 {
-    public static final String[] a;
-    public static final byte[] b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ll6 {
+    public final zo6 a;
+    public final int b;
+    public final v73 c;
+    public final wu4 d;
 
-    static {
-        String[] strArr = new String[93];
-        for (int i = 0; i < 32; i++) {
-            strArr[i] = "\\u" + b(i >> 12) + b(i >> 8) + b(i >> 4) + b(i);
-        }
-        strArr[34] = "\\\"";
-        strArr[92] = "\\\\";
-        strArr[9] = "\\t";
-        strArr[8] = "\\b";
-        strArr[10] = "\\n";
-        strArr[13] = "\\r";
-        strArr[12] = "\\f";
-        a = strArr;
-        byte[] bArr = new byte[93];
-        for (int i2 = 0; i2 < 32; i2++) {
-            bArr[i2] = 1;
-        }
-        bArr[34] = 34;
-        bArr[92] = 92;
-        bArr[9] = 116;
-        bArr[8] = 98;
-        bArr[10] = 110;
-        bArr[13] = 114;
-        bArr[12] = 102;
-        b = bArr;
+    public ll6(zo6 zo6Var, int i, v73 v73Var, wu4 wu4Var) {
+        this.a = zo6Var;
+        this.b = i;
+        this.c = v73Var;
+        this.d = wu4Var;
     }
 
-    public static final void a(StringBuilder sb, String str) {
-        str.getClass();
-        sb.append('\"');
-        int length = str.length();
-        int i = 0;
-        for (int i2 = 0; i2 < length; i2++) {
-            char cCharAt = str.charAt(i2);
-            String[] strArr = a;
-            if (cCharAt < strArr.length && strArr[cCharAt] != null) {
-                sb.append((CharSequence) str, i, i2);
-                sb.append(strArr[cCharAt]);
-                i = i2 + 1;
-            }
-        }
-        if (i != 0) {
-            sb.append((CharSequence) str, i, str.length());
-        } else {
-            sb.append(str);
-        }
-        sb.append('\"');
-    }
-
-    public static final char b(int i) {
-        int i2 = i & 15;
-        return (char) (i2 < 10 ? i2 + 48 : i2 + 87);
+    public final String toString() {
+        return "ScrollCaptureCandidate(node=" + this.a + ", depth=" + this.b + ", viewportBoundsInWindow=" + this.c + ", coordinates=" + this.d + ")";
     }
 }

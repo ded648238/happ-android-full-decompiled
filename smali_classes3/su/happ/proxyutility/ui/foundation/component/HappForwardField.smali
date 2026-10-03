@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -20,7 +20,7 @@
         "<init>",
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
         "res",
-        "Lbh7;",
+        "Lr98;",
         "setTitle",
         "(I)V",
         "setTitleColor",
@@ -29,7 +29,7 @@
         "Lkotlin/Function0;",
         "handle",
         "setOnForwardIconClickListener",
-        "(Lg72;)V",
+        "(Lji2;)V",
         "",
         "value",
         "getTitle",
@@ -52,17 +52,17 @@
 
 
 # static fields
-.field public static final synthetic U:I
+.field public static final synthetic g0:I
 
 
 # instance fields
-.field public final Q:Landroid/widget/TextView;
+.field public final c0:Landroid/widget/TextView;
 
-.field public final R:Landroid/widget/TextView;
+.field public final d0:Landroid/widget/TextView;
 
-.field public final S:Landroidx/appcompat/widget/AppCompatImageView;
+.field public final e0:Landroidx/appcompat/widget/AppCompatImageView;
 
-.field public final T:Landroid/widget/TextView;
+.field public final f0:Landroid/widget/TextView;
 
 
 # direct methods
@@ -119,7 +119,7 @@
     move-result-object v0
 
     .line 21
-    sget v1, Lt95;->happ_forward_field:I
+    sget v1, Ltt5;->happ_forward_field:I
 
     .line 22
     .line 23
@@ -128,7 +128,7 @@
     .line 24
     .line 25
     .line 26
-    sget p3, Ld95;->tv_forward_field:I
+    sget p3, Let5;->tv_forward_field:I
 
     .line 27
     .line 28
@@ -149,11 +149,11 @@
 
     .line 36
     .line 37
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->Q:Landroid/widget/TextView;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->c0:Landroid/widget/TextView;
 
     .line 38
     .line 39
-    sget p3, Ld95;->tv_forward_value:I
+    sget p3, Let5;->tv_forward_value:I
 
     .line 40
     .line 41
@@ -174,11 +174,11 @@
 
     .line 49
     .line 50
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->R:Landroid/widget/TextView;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->d0:Landroid/widget/TextView;
 
     .line 51
     .line 52
-    sget p3, Ld95;->iv_forward_field:I
+    sget p3, Let5;->iv_forward_field:I
 
     .line 53
     .line 54
@@ -199,11 +199,11 @@
 
     .line 62
     .line 63
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->S:Landroidx/appcompat/widget/AppCompatImageView;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->e0:Landroidx/appcompat/widget/AppCompatImageView;
 
     .line 64
     .line 65
-    sget p3, Ld95;->tv_forward_description:I
+    sget p3, Let5;->tv_forward_description:I
 
     .line 66
     .line 67
@@ -224,7 +224,7 @@
 
     .line 75
     .line 76
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->T:Landroid/widget/TextView;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->f0:Landroid/widget/TextView;
 
     .line 77
     .line 78
@@ -232,7 +232,7 @@
 
     .line 79
     .line 80
-    sget-object p3, Lxa5;->HappForwardField:[I
+    sget-object p3, Lwu5;->HappForwardField:[I
 
     .line 81
     .line 82
@@ -249,33 +249,33 @@
     .line 87
     .line 88
     .line 89
-    new-instance p3, Lj9;
+    new-instance p3, Ll0;
 
     .line 90
     .line 91
-    const/16 v0, 0x11
+    const/16 v0, 0x1c
 
     .line 92
     .line 93
-    invoke-direct {p3, v0, p0, p1}, Lj9;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p3, v0, p0, p1}, Ll0;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 94
     .line 95
     .line 96
-    invoke-static {p2, p3}, Ll47;->h(Landroid/content/res/TypedArray;Lj72;)V
+    invoke-static {p2, p3}, Lbw7;->d(Landroid/content/res/TypedArray;Lmi2;)V
 
     .line 97
     .line 98
     .line 99
     :cond_0
-    new-instance p1, Lqk0;
+    new-instance p1, Lpr0;
 
     .line 100
     .line 101
     const/4 p2, 0x4
 
     .line 102
-    invoke-direct {p1, p2, p0}, Lqk0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lpr0;-><init>(ILjava/lang/Object;)V
 
     .line 103
     .line 104
@@ -291,99 +291,99 @@
 
 # virtual methods
 .method public final getDescription()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->T:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->f0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getTitle()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->c0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getValue()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->R:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->d0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final setDescription(I)V
-    .locals 1
+    .locals 0
 
     .line 10
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->T:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->f0:Landroid/widget/TextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
 
 .method public final setDescription(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -391,11 +391,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->T:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->f0:Landroid/widget/TextView;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 7
     .line 8
@@ -403,12 +403,12 @@
     return-void
 .end method
 
-.method public final setOnForwardIconClickListener(Lg72;)V
+.method public final setOnForwardIconClickListener(Lji2;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg72;",
+            "Lji2;",
             ")V"
         }
     .end annotation
@@ -419,23 +419,23 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lqk0;
+    new-instance v0, Lpr0;
 
     .line 5
     .line 6
     const/4 v1, 0x5
 
     .line 7
-    invoke-direct {v0, v1, p1}, Lqk0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, Lpr0;-><init>(ILjava/lang/Object;)V
 
     .line 8
     .line 9
     .line 10
-    iget-object p1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->S:Landroidx/appcompat/widget/AppCompatImageView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->e0:Landroidx/appcompat/widget/AppCompatImageView;
 
     .line 11
     .line 12
-    invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 13
     .line 14
@@ -444,18 +444,18 @@
 .end method
 
 .method public final setTitle(I)V
-    .locals 1
+    .locals 0
 
     .line 10
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->c0:Landroid/widget/TextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
 
 .method public final setTitle(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -463,11 +463,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->c0:Landroid/widget/TextView;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 7
     .line 8
@@ -476,14 +476,14 @@
 .end method
 
 .method public final setTitleColor(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->c0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Ltv3;->W(Landroid/widget/TextView;I)V
+    invoke-static {p0, p1}, Lih4;->X(Landroid/widget/TextView;I)V
 
     .line 4
     .line 5
@@ -492,18 +492,18 @@
 .end method
 
 .method public final setValue(I)V
-    .locals 1
+    .locals 0
 
     .line 10
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->R:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->d0:Landroid/widget/TextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
 
 .method public final setValue(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -511,11 +511,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->R:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->d0:Landroid/widget/TextView;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 7
     .line 8

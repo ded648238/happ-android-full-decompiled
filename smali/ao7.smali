@@ -1,225 +1,50 @@
 .class public final Lao7;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Landroid/animation/Animator$AnimatorListener;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:I
+.field public c0:Lvy5;
 
-.field public final synthetic b:Landroid/view/View;
+.field public synthetic d0:Ljava/lang/Object;
 
-
-# direct methods
-.method public synthetic constructor <init>(Landroid/view/View;I)V
-    .locals 0
-
-    .line 1
-    iput p2, p0, Lao7;->a:I
-
-    .line 2
-    .line 3
-    iput-object p1, p0, Lao7;->b:Landroid/view/View;
-
-    .line 4
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method private final a(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final b(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final c(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final d(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final e(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final f(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final g(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final h(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final i(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
+.field public e0:I
 
 
 # virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    iget p1, p0, Lao7;->a:I
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
-
-    .line 1
-    iget p1, p0, Lao7;->a:I
-
-    .line 2
-    .line 3
-    iget-object v0, p0, Lao7;->b:Landroid/view/View;
-
-    .line 4
-    .line 5
-    packed-switch p1, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    const/16 p1, 0x8
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 11
-    .line 12
-    .line 13
-    :pswitch_0
-    return-void
-
-    .line 14
-    :pswitch_1
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
-
-    .line 18
-    const/4 v1, -0x2
-
-    .line 19
-    iput v1, p1, Landroid/view/ViewGroup$LayoutParams;->height:I
-
-    .line 20
-    .line 21
-    invoke-virtual {v0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 22
-    .line 23
-    .line 24
-    return-void
-
-    .line 25
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onAnimationRepeat(Landroid/animation/Animator;)V
-    .locals 0
-
-    .line 1
-    iget p1, p0, Lao7;->a:I
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final onAnimationStart(Landroid/animation/Animator;)V
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget p1, p0, Lao7;->a:I
+    iput-object p1, p0, Lao7;->d0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    packed-switch p1, :pswitch_data_0
+    iget p1, p0, Lao7;->e0:I
 
     .line 4
     .line 5
-    .line 6
-    return-void
+    const/high16 v0, -0x80000000
 
+    .line 6
     .line 7
-    :pswitch_0
-    iget-object p1, p0, Lao7;->b:Landroid/view/View;
+    or-int/2addr p1, v0
 
     .line 8
-    .line 9
-    const/4 v0, 0x0
+    iput p1, p0, Lao7;->e0:I
 
+    .line 9
     .line 10
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+    const/4 p1, 0x0
 
     .line 11
+    invoke-static {p1, p1, p0}, Lco7;->g(Lsl7;Lff5;Lg00;)Ljava/lang/Object;
+
     .line 12
     .line 13
-    :pswitch_1
-    return-void
-
     .line 14
-    nop
+    move-result-object p0
 
     .line 15
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object p0
 .end method

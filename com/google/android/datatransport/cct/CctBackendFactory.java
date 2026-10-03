@@ -1,17 +1,17 @@
 package com.google.android.datatransport.cct;
 
 import android.content.Context;
-import defpackage.lx0;
-import defpackage.vu;
-import defpackage.x87;
-import defpackage.yf0;
+import defpackage.f18;
+import defpackage.sm0;
+import defpackage.t41;
+import defpackage.vw;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class CctBackendFactory {
-    public x87 create(lx0 lx0Var) {
-        Context context = ((vu) lx0Var).a;
-        vu vuVar = (vu) lx0Var;
-        return new yf0(context, vuVar.b, vuVar.c);
+    public f18 create(t41 t41Var) {
+        Context context = ((vw) t41Var).a;
+        vw vwVar = (vw) t41Var;
+        return new sm0(context, vwVar.b, vwVar.c);
     }
 }

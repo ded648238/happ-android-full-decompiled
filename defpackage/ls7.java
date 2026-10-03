@@ -1,20 +1,22 @@
 package defpackage;
 
-import android.graphics.Insets;
-import android.view.WindowInsetsAnimation;
-import android.view.animation.Interpolator;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ls7 extends d31 {
+    public /* synthetic */ Object c0;
+    public final /* synthetic */ os7 d0;
+    public int e0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class ls7 {
-    public static /* synthetic */ WindowInsetsAnimation.Bounds a(Insets insets, Insets insets2) {
-        return new WindowInsetsAnimation.Bounds(insets, insets2);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ls7(os7 os7Var, d31 d31Var) {
+        super(d31Var);
+        this.d0 = os7Var;
     }
 
-    public static /* synthetic */ WindowInsetsAnimation b(int i, Interpolator interpolator, long j) {
-        return new WindowInsetsAnimation(i, interpolator, j);
-    }
-
-    public static /* synthetic */ void c() {
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.e0 |= Integer.MIN_VALUE;
+        return this.d0.u(this);
     }
 }

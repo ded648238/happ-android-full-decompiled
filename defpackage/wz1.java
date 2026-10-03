@@ -1,13 +1,28 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface wz1 extends fi {
-    float b(long j, float f, float f2, float f3);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class wz1 extends k01 {
+    public final String b;
 
-    long c(float f, float f2, float f3);
+    public wz1(String str) {
+        super(r98.a);
+        this.b = str;
+    }
 
-    float d(float f, float f2, float f3);
+    @Override // defpackage.k01
+    public final bu3 a(on4 on4Var) {
+        on4Var.getClass();
+        return vz1.c(tz1.ERROR_CONSTANT_VALUE, this.b);
+    }
 
-    float e(long j, float f, float f2, float f3);
+    @Override // defpackage.k01
+    public final Object b() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // defpackage.k01
+    public final String toString() {
+        return this.b;
+    }
 }

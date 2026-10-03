@@ -1,43 +1,23 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ta7 {
-    public static ta7 d;
-    public long a;
-    public long b;
-    public int c;
-
-    public final void a(double d2, double d3, long j) {
-        float f = (j - 946728000000L) / 8.64E7f;
-        float f2 = (0.01720197f * f) + 6.24006f;
-        double d4 = f2;
-        double dSin = (Math.sin(f2 * 3.0f) * 5.236000106378924E-6d) + (Math.sin(2.0f * f2) * 3.4906598739326E-4d) + (Math.sin(d4) * 0.03341960161924362d) + d4 + 1.796593063d + 3.141592653589793d;
-        double d5 = (-d3) / 360.0d;
-        double dSin2 = (Math.sin(2.0d * dSin) * (-0.0069d)) + (Math.sin(d4) * 0.0053d) + ((double) (Math.round(((double) (f - 9.0E-4f)) - d5) + 9.0E-4f)) + d5;
-        double dAsin = Math.asin(Math.sin(0.4092797040939331d) * Math.sin(dSin));
-        double d6 = 0.01745329238474369d * d2;
-        double dSin3 = (Math.sin(-0.10471975803375244d) - (Math.sin(dAsin) * Math.sin(d6))) / (Math.cos(dAsin) * Math.cos(d6));
-        if (dSin3 >= 1.0d) {
-            this.c = 1;
-            this.a = -1L;
-            this.b = -1L;
-        } else {
-            if (dSin3 <= -1.0d) {
-                this.c = 0;
-                this.a = -1L;
-                this.b = -1L;
-                return;
-            }
-            double dAcos = (float) (Math.acos(dSin3) / 6.283185307179586d);
-            this.a = Math.round((dSin2 + dAcos) * 8.64E7d) + 946728000000L;
-            long jRound = Math.round((dSin2 - dAcos) * 8.64E7d) + 946728000000L;
-            this.b = jRound;
-            if (jRound >= j || this.a <= j) {
-                this.c = 1;
-            } else {
-                this.c = 0;
-            }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ta7 extends bv2 {
+    @Override // defpackage.bv2
+    public final void V0(jf5 jf5Var) {
+        kf5 kf5Var = (kf5) hi4.l(this, vy0.w);
+        if (kf5Var != null) {
+            ((sb) kf5Var).a = jf5Var;
         }
+    }
+
+    @Override // defpackage.bv2
+    public final boolean X0(int i) {
+        return i == 3 || i == 4;
+    }
+
+    @Override // defpackage.l18
+    public final /* bridge */ /* synthetic */ Object o() {
+        return "androidx.compose.ui.input.pointer.StylusHoverIcon";
     }
 }

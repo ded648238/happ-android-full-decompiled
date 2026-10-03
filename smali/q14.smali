@@ -1,24 +1,6 @@
-.class public interface abstract Lq14;
+.class public interface abstract annotation Lq14;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ll21;
-.implements Lo21;
-
-
-# virtual methods
-.method public abstract E()Z
-.end method
-
-.method public abstract e()Lv91;
-.end method
-
-.method public abstract l()Z
-.end method
-
-.method public abstract n()Lz54;
-.end method
-
-.method public abstract p0()Z
-.end method
+.implements Ljava/lang/annotation/Annotation;

@@ -1,13 +1,27 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class a53 implements hb3 {
-    public static final ib3 b = new ib3(hg5.a.b(a53.class));
-    public o53 a;
+import java.io.Serializable;
 
-    @Override // defpackage.hb3
-    public final ib3 c() {
-        return b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class a53 implements ow3, Serializable {
+    public final Object X;
+
+    public a53(Object obj) {
+        this.X = obj;
+    }
+
+    @Override // defpackage.ow3
+    public final boolean c() {
+        return true;
+    }
+
+    @Override // defpackage.ow3
+    public final Object getValue() {
+        return this.X;
+    }
+
+    public final String toString() {
+        return String.valueOf(this.X);
     }
 }

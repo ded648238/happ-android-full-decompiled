@@ -1,51 +1,36 @@
-.class public abstract Lgn7;
+.class public abstract synthetic Lgn7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final a:I
 
 
 # direct methods
-.method public static a(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
-    sget v0, Lbo7;->a:I
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1}, Landroid/view/View;->dispatchApplyWindowInsets(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-
     .line 4
+    move-result-object v0
+
     .line 5
+    invoke-virtual {v0}, Ljava/lang/Runtime;->availableProcessors()I
+
     .line 6
-    move-result-object p0
-
     .line 7
-    return-object p0
-.end method
+    .line 8
+    move-result v0
 
-.method public static b(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-    .locals 0
+    .line 9
+    sput v0, Lgn7;->a:I
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->onApplyWindowInsets(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static c(Landroid/view/View;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->requestApplyInsets()V
-
-    .line 2
-    .line 3
-    .line 4
+    .line 10
+    .line 11
     return-void
 .end method

@@ -1,353 +1,389 @@
 .class public final Lio/sentry/h7;
-.super Lio/sentry/y6;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# static fields
-.field public static final i0:Lio/sentry/protocol/i0;
+# interfaces
+.implements Lio/sentry/l2;
 
 
 # instance fields
-.field public f0:Ljava/lang/String;
+.field public final X:Lio/sentry/protocol/w;
 
-.field public g0:Lio/sentry/protocol/i0;
+.field public final Y:Ljava/lang/String;
 
-.field public final h0:Lio/sentry/v3;
+.field public final Z:Ljava/lang/String;
+
+.field public final c0:Ljava/lang/String;
+
+.field public final d0:Ljava/lang/String;
+
+.field public final e0:Ljava/lang/String;
+
+.field public final f0:Ljava/lang/String;
+
+.field public final g0:Ljava/lang/String;
+
+.field public final h0:Ljava/lang/String;
+
+.field public final i0:Lio/sentry/protocol/w;
+
+.field public j0:Ljava/util/concurrent/ConcurrentHashMap;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lio/sentry/protocol/w;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/sentry/protocol/w;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lio/sentry/protocol/i0;->CUSTOM:Lio/sentry/protocol/i0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sput-object v0, Lio/sentry/h7;->i0:Lio/sentry/protocol/i0;
-
     .line 4
+    iput-object p1, p0, Lio/sentry/h7;->X:Lio/sentry/protocol/w;
+
     .line 5
+    .line 6
+    iput-object p2, p0, Lio/sentry/h7;->Y:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lio/sentry/h7;->Z:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lio/sentry/h7;->c0:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Lio/sentry/h7;->d0:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, Lio/sentry/h7;->e0:Ljava/lang/String;
+
+    .line 15
+    .line 16
+    iput-object p7, p0, Lio/sentry/h7;->f0:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    iput-object p8, p0, Lio/sentry/h7;->h0:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    iput-object p9, p0, Lio/sentry/h7;->i0:Lio/sentry/protocol/w;
+
+    .line 21
+    .line 22
+    iput-object p10, p0, Lio/sentry/h7;->g0:Ljava/lang/String;
+
+    .line 23
+    .line 24
     return-void
 .end method
 
-.method public constructor <init>(Lio/sentry/protocol/w;Lio/sentry/b7;Lio/sentry/b7;Lio/sentry/v3;Lio/sentry/c;)V
-    .locals 1
 
-    .line 53
-    const-string v0, "default"
-
-    invoke-direct {p0, p1, p2, v0, p3}, Lio/sentry/y6;-><init>(Lio/sentry/protocol/w;Lio/sentry/b7;Ljava/lang/String;Lio/sentry/b7;)V
-
-    .line 54
-    const-string p1, "<unlabeled transaction>"
-
-    iput-object p1, p0, Lio/sentry/h7;->f0:Ljava/lang/String;
-
-    .line 55
-    iput-object p4, p0, Lio/sentry/h7;->h0:Lio/sentry/v3;
-
-    .line 56
-    sget-object p1, Lio/sentry/h7;->i0:Lio/sentry/protocol/i0;
-
-    iput-object p1, p0, Lio/sentry/h7;->g0:Lio/sentry/protocol/i0;
-
-    const/4 p1, 0x0
-
-    if-nez p4, :cond_0
-
-    move-object p2, p1
-
-    goto :goto_0
-
-    .line 57
-    :cond_0
-    iget-object p2, p4, Lio/sentry/v3;->a:Ljava/io/Serializable;
-
-    check-cast p2, Ljava/lang/Boolean;
-
-    :goto_0
-    if-nez p4, :cond_1
-
-    move-object p3, p1
-
-    goto :goto_1
-
-    .line 58
-    :cond_1
-    iget-object p3, p4, Lio/sentry/v3;->b:Ljava/lang/Object;
-
-    check-cast p3, Ljava/lang/Double;
-
-    :goto_1
-    if-nez p4, :cond_2
-
-    goto :goto_2
-
-    .line 59
-    :cond_2
-    iget-object p1, p4, Lio/sentry/v3;->c:Ljava/lang/Object;
-
-    check-cast p1, Ljava/lang/Double;
-
-    .line 60
-    :goto_2
-    invoke-static {p5, p2, p3, p1}, Lio/sentry/util/b;->g(Lio/sentry/c;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Double;)Lio/sentry/c;
-
-    move-result-object p1
-
-    .line 61
-    iput-object p1, p0, Lio/sentry/y6;->c0:Lio/sentry/c;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Lio/sentry/protocol/i0;Ljava/lang/String;Lio/sentry/v3;)V
+# virtual methods
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 3
 
     .line 1
-    new-instance v0, Lio/sentry/protocol/w;
+    check-cast p1, Lio/sentry/internal/debugmeta/c;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lio/sentry/protocol/w;-><init>()V
+    invoke-virtual {p1}, Lio/sentry/internal/debugmeta/c;->k()Lio/sentry/internal/debugmeta/c;
 
     .line 4
     .line 5
     .line 6
-    new-instance v1, Lio/sentry/b7;
+    const-string v0, "trace_id"
 
     .line 7
     .line 8
-    invoke-direct {v1}, Lio/sentry/b7;-><init>()V
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
 
     .line 9
     .line 10
     .line 11
-    const/4 v2, 0x0
+    iget-object v0, p0, Lio/sentry/h7;->X:Lio/sentry/protocol/w;
 
     .line 12
-    invoke-direct {p0, v0, v1, p3, v2}, Lio/sentry/y6;-><init>(Lio/sentry/protocol/w;Lio/sentry/b7;Ljava/lang/String;Lio/sentry/b7;)V
-
     .line 13
+    invoke-virtual {p1, p2, v0}, Lio/sentry/internal/debugmeta/c;->v(Lio/sentry/ILogger;Ljava/lang/Object;)Lio/sentry/internal/debugmeta/c;
+
     .line 14
     .line 15
-    iput-object p1, p0, Lio/sentry/h7;->f0:Ljava/lang/String;
-
     .line 16
-    .line 17
-    iput-object p2, p0, Lio/sentry/h7;->g0:Lio/sentry/protocol/i0;
-
-    .line 18
-    .line 19
-    invoke-virtual {p0, p4}, Lio/sentry/y6;->a(Lio/sentry/v3;)V
-
-    .line 20
-    .line 21
-    .line 22
-    if-nez p4, :cond_0
-
-    .line 23
-    .line 24
-    move-object p1, v2
-
-    .line 25
-    goto :goto_0
-
-    .line 26
-    :cond_0
-    iget-object p1, p4, Lio/sentry/v3;->a:Ljava/io/Serializable;
-
-    .line 27
-    .line 28
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 29
-    .line 30
-    :goto_0
-    if-nez p4, :cond_1
-
-    .line 31
-    .line 32
-    move-object p2, v2
-
-    .line 33
-    goto :goto_1
-
-    .line 34
-    :cond_1
-    iget-object p2, p4, Lio/sentry/v3;->b:Ljava/lang/Object;
-
-    .line 35
-    .line 36
-    check-cast p2, Ljava/lang/Double;
-
-    .line 37
-    .line 38
-    :goto_1
-    if-nez p4, :cond_2
-
-    .line 39
-    .line 40
-    move-object p3, v2
-
-    .line 41
-    goto :goto_2
-
-    .line 42
-    :cond_2
-    iget-object p3, p4, Lio/sentry/v3;->c:Ljava/lang/Object;
-
-    .line 43
-    .line 44
-    check-cast p3, Ljava/lang/Double;
-
-    .line 45
-    .line 46
-    :goto_2
-    invoke-static {v2, p1, p2, p3}, Lio/sentry/util/b;->g(Lio/sentry/c;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Double;)Lio/sentry/c;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object p1
-
-    .line 50
-    iput-object p1, p0, Lio/sentry/y6;->c0:Lio/sentry/c;
-
-    .line 51
-    .line 52
-    return-void
-.end method
-
-.method public static b(Lio/sentry/v3;)Lio/sentry/h7;
-    .locals 8
-
-    .line 1
-    iget-object v0, p0, Lio/sentry/v3;->a:Ljava/io/Serializable;
-
-    .line 2
-    .line 3
-    check-cast v0, Ljava/lang/Boolean;
-
-    .line 4
-    .line 5
-    iget-object v1, p0, Lio/sentry/v3;->e:Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    move-object v7, v1
-
-    .line 8
-    check-cast v7, Lio/sentry/c;
-
-    .line 9
-    .line 10
-    iget-object v1, v7, Lio/sentry/c;->c:Ljava/lang/Double;
-
-    .line 11
-    .line 12
-    if-nez v0, :cond_0
-
-    .line 13
-    .line 14
-    const/4 v0, 0x0
-
-    .line 15
-    move-object v6, v0
-
-    .line 16
-    goto :goto_1
+    const-string v0, "public_key"
 
     .line 17
-    :cond_0
-    new-instance v2, Lio/sentry/v3;
-
     .line 18
-    .line 19
-    iget-object v3, v7, Lio/sentry/c;->d:Ljava/lang/Double;
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
 
+    .line 19
     .line 20
     .line 21
-    if-nez v3, :cond_1
+    iget-object v0, p0, Lio/sentry/h7;->Y:Ljava/lang/String;
 
     .line 22
     .line 23
-    const-wide/16 v3, 0x0
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
 
     .line 24
     .line 25
-    goto :goto_0
-
     .line 26
-    :cond_1
-    invoke-virtual {v3}, Ljava/lang/Double;->doubleValue()D
+    iget-object v0, p0, Lio/sentry/h7;->Z:Ljava/lang/String;
 
     .line 27
     .line 28
-    .line 29
-    move-result-wide v3
+    if-eqz v0, :cond_0
 
+    .line 29
     .line 30
-    :goto_0
-    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    const-string v1, "release"
 
     .line 31
     .line 32
+    invoke-virtual {p1, v1}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
     .line 33
-    move-result-object v3
-
     .line 34
-    invoke-direct {v2, v0, v1, v3}, Lio/sentry/v3;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Double;)V
-
     .line 35
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
     .line 36
     .line 37
-    move-object v6, v2
-
     .line 38
-    :goto_1
-    new-instance v2, Lio/sentry/h7;
+    :cond_0
+    iget-object v0, p0, Lio/sentry/h7;->c0:Ljava/lang/String;
 
     .line 39
     .line 40
-    iget-object v0, p0, Lio/sentry/v3;->b:Ljava/lang/Object;
+    if-eqz v0, :cond_1
 
     .line 41
     .line 42
-    move-object v3, v0
+    const-string v1, "environment"
 
     .line 43
-    check-cast v3, Lio/sentry/protocol/w;
-
     .line 44
-    .line 45
-    iget-object v0, p0, Lio/sentry/v3;->c:Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
 
+    .line 45
     .line 46
     .line 47
-    move-object v4, v0
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
 
     .line 48
-    check-cast v4, Lio/sentry/b7;
-
     .line 49
     .line 50
-    iget-object p0, p0, Lio/sentry/v3;->d:Ljava/lang/Object;
+    :cond_1
+    iget-object v0, p0, Lio/sentry/h7;->d0:Ljava/lang/String;
 
     .line 51
     .line 52
-    move-object v5, p0
+    if-eqz v0, :cond_2
 
     .line 53
-    check-cast v5, Lio/sentry/b7;
-
     .line 54
-    .line 55
-    invoke-direct/range {v2 .. v7}, Lio/sentry/h7;-><init>(Lio/sentry/protocol/w;Lio/sentry/b7;Lio/sentry/b7;Lio/sentry/v3;Lio/sentry/c;)V
+    const-string v1, "user_id"
 
+    .line 55
     .line 56
+    invoke-virtual {p1, v1}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
     .line 57
     .line 58
-    return-object v2
+    .line 59
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 60
+    .line 61
+    .line 62
+    :cond_2
+    iget-object v0, p0, Lio/sentry/h7;->e0:Ljava/lang/String;
+
+    .line 63
+    .line 64
+    if-eqz v0, :cond_3
+
+    .line 65
+    .line 66
+    const-string v1, "transaction"
+
+    .line 67
+    .line 68
+    invoke-virtual {p1, v1}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 72
+    .line 73
+    .line 74
+    :cond_3
+    iget-object v0, p0, Lio/sentry/h7;->f0:Ljava/lang/String;
+
+    .line 75
+    .line 76
+    if-eqz v0, :cond_4
+
+    .line 77
+    .line 78
+    const-string v1, "sample_rate"
+
+    .line 79
+    .line 80
+    invoke-virtual {p1, v1}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 81
+    .line 82
+    .line 83
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 84
+    .line 85
+    .line 86
+    :cond_4
+    iget-object v0, p0, Lio/sentry/h7;->g0:Ljava/lang/String;
+
+    .line 87
+    .line 88
+    if-eqz v0, :cond_5
+
+    .line 89
+    .line 90
+    const-string v1, "sample_rand"
+
+    .line 91
+    .line 92
+    invoke-virtual {p1, v1}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 93
+    .line 94
+    .line 95
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 96
+    .line 97
+    .line 98
+    :cond_5
+    iget-object v0, p0, Lio/sentry/h7;->h0:Ljava/lang/String;
+
+    .line 99
+    .line 100
+    if-eqz v0, :cond_6
+
+    .line 101
+    .line 102
+    const-string v1, "sampled"
+
+    .line 103
+    .line 104
+    invoke-virtual {p1, v1}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {p1, v0}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 108
+    .line 109
+    .line 110
+    :cond_6
+    iget-object v0, p0, Lio/sentry/h7;->i0:Lio/sentry/protocol/w;
+
+    .line 111
+    .line 112
+    if-eqz v0, :cond_7
+
+    .line 113
+    .line 114
+    const-string v1, "replay_id"
+
+    .line 115
+    .line 116
+    invoke-virtual {p1, v1}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+
+    .line 117
+    .line 118
+    .line 119
+    invoke-virtual {p1, p2, v0}, Lio/sentry/internal/debugmeta/c;->v(Lio/sentry/ILogger;Ljava/lang/Object;)Lio/sentry/internal/debugmeta/c;
+
+    .line 120
+    .line 121
+    .line 122
+    :cond_7
+    iget-object v0, p0, Lio/sentry/h7;->j0:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 123
+    .line 124
+    if-eqz v0, :cond_8
+
+    .line 125
+    .line 126
+    invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
+    .line 127
+    .line 128
+    .line 129
+    move-result-object v0
+
+    .line 130
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 131
+    .line 132
+    .line 133
+    move-result-object v0
+
+    .line 134
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 135
+    .line 136
+    .line 137
+    move-result v1
+
+    .line 138
+    if-eqz v1, :cond_8
+
+    .line 139
+    .line 140
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 141
+    .line 142
+    .line 143
+    move-result-object v1
+
+    .line 144
+    check-cast v1, Ljava/lang/String;
+
+    .line 145
+    .line 146
+    iget-object v2, p0, Lio/sentry/h7;->j0:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 147
+    .line 148
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+
+    .line 149
+    .line 150
+    .line 151
+    goto :goto_0
+
+    .line 152
+    :cond_8
+    invoke-virtual {p1}, Lio/sentry/internal/debugmeta/c;->m()Lio/sentry/internal/debugmeta/c;
+
+    .line 153
+    .line 154
+    .line 155
+    return-void
 .end method

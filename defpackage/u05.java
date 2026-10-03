@@ -1,17 +1,22 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class u05 {
-    public final int a;
-    public final Object b;
+import java.util.List;
 
-    public u05(int i, Object obj) {
-        this.a = i;
-        this.b = obj;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class u05 extends z82 {
+    public static final u05 d = new u05(0, 2, 1);
 
-    public final boolean a() {
-        return this.a > 0;
+    @Override // defpackage.z82
+    public final void d(up0 up0Var, wr wrVar, zz6 zz6Var, u61 u61Var, b25 b25Var) {
+        int i = ((w73) up0Var.i(0)).a;
+        List list = (List) up0Var.i(1);
+        int size = list.size();
+        for (int i2 = 0; i2 < size; i2++) {
+            Object obj = list.get(i2);
+            int i3 = i + i2;
+            wrVar.b(i3, obj);
+            wrVar.j(i3, obj);
+        }
     }
 }

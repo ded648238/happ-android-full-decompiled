@@ -1,551 +1,813 @@
 .class public final synthetic Lio/sentry/a5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final synthetic a:Ljava/io/File;
+.field public final synthetic a:I
 
-.field public final synthetic b:Lio/sentry/q3;
+.field public final synthetic b:J
 
-.field public final synthetic c:Lio/sentry/a1;
+.field public final synthetic c:Lio/sentry/l1;
 
-.field public final synthetic d:Lio/sentry/j1;
+.field public final synthetic d:Ljava/lang/Object;
+
+.field public final synthetic e:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/io/File;Lio/sentry/q3;Lio/sentry/a1;Lio/sentry/j1;)V
-    .locals 0
+.method public synthetic constructor <init>(Lio/sentry/a;JLio/sentry/l1;Lio/sentry/ILogger;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
 
     .line 2
+    iput v0, p0, Lio/sentry/a5;->a:I
+
     .line 3
     .line 4
-    iput-object p1, p0, Lio/sentry/a5;->a:Ljava/io/File;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/sentry/a5;->b:Lio/sentry/q3;
-
     .line 7
+    iput-object p1, p0, Lio/sentry/a5;->d:Ljava/lang/Object;
+
     .line 8
-    iput-object p3, p0, Lio/sentry/a5;->c:Lio/sentry/a1;
-
     .line 9
-    .line 10
-    iput-object p4, p0, Lio/sentry/a5;->d:Lio/sentry/j1;
+    iput-wide p2, p0, Lio/sentry/a5;->b:J
 
+    .line 10
     .line 11
+    iput-object p4, p0, Lio/sentry/a5;->c:Lio/sentry/l1;
+
     .line 12
+    .line 13
+    iput-object p5, p0, Lio/sentry/a5;->e:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/io/File;JLio/sentry/v3;Lio/sentry/l1;)V
+    .locals 1
+
+    .line 16
+    const/4 v0, 0x1
+
+    iput v0, p0, Lio/sentry/a5;->a:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/sentry/a5;->d:Ljava/lang/Object;
+
+    iput-wide p2, p0, Lio/sentry/a5;->b:J
+
+    iput-object p4, p0, Lio/sentry/a5;->e:Ljava/lang/Object;
+
+    iput-object p5, p0, Lio/sentry/a5;->c:Lio/sentry/l1;
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final call()Ljava/lang/Object;
-    .locals 8
+    .locals 10
 
     .line 1
-    iget-object v0, p0, Lio/sentry/a5;->d:Lio/sentry/j1;
+    iget v0, p0, Lio/sentry/a5;->a:I
 
     .line 2
     .line 3
-    const-string v1, "Failed to serialize profile chunk\n"
+    const/4 v1, 0x0
 
     .line 4
+    iget-object v2, p0, Lio/sentry/a5;->c:Lio/sentry/l1;
+
     .line 5
-    iget-object v2, p0, Lio/sentry/a5;->a:Ljava/io/File;
-
     .line 6
+    iget-object v3, p0, Lio/sentry/a5;->e:Ljava/lang/Object;
+
     .line 7
-    iget-object v3, p0, Lio/sentry/a5;->b:Lio/sentry/q3;
-
     .line 8
+    iget-wide v4, p0, Lio/sentry/a5;->b:J
+
     .line 9
-    if-eqz v2, :cond_4
-
     .line 10
-    .line 11
-    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+    iget-object p0, p0, Lio/sentry/a5;->d:Ljava/lang/Object;
 
+    .line 11
     .line 12
+    packed-switch v0, :pswitch_data_0
+
     .line 13
     .line 14
-    move-result v4
-
     .line 15
-    if-eqz v4, :cond_3
+    check-cast p0, Ljava/io/File;
 
     .line 16
     .line 17
-    const-string v4, "java"
+    check-cast v3, Lio/sentry/v3;
 
     .line 18
     .line 19
-    iget-object v5, v3, Lio/sentry/q3;->V:Ljava/lang/String;
+    const-string v0, "Failed to serialize profiling trace data\n"
 
     .line 20
     .line 21
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     .line 22
     .line 23
     .line 24
-    move-result v4
+    move-result v6
 
     .line 25
-    if-eqz v4, :cond_1
+    if-eqz v6, :cond_1
 
     .line 26
     .line 27
-    sget-object v4, Lio/sentry/v2;->a:Lio/sentry/v2;
+    invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     .line 28
     .line 29
-    iget-object v5, p0, Lio/sentry/a5;->c:Lio/sentry/a1;
-
     .line 30
+    move-result-object v6
+
     .line 31
-    if-eq v4, v5, :cond_0
+    invoke-static {v4, v5, v6}, Lio/sentry/util/c;->q(JLjava/lang/String;)[B
 
     .line 32
     .line 33
-    :try_start_0
-    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
     .line 34
+    move-result-object v4
+
     .line 35
+    :try_start_0
+    new-instance v5, Ljava/lang/String;
+
     .line 36
-    check-cast v5, Lio/sentry/v2;
-
     .line 37
-    .line 38
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v4}, Lio/sentry/vendor/a;->b([B)[B
 
+    .line 38
     .line 39
     .line 40
+    move-result-object v4
+
     .line 41
-    new-instance v4, Lio/sentry/protocol/profiling/a;
+    const-string v6, "US-ASCII"
 
     .line 42
     .line 43
-    invoke-direct {v4}, Lio/sentry/protocol/profiling/a;-><init>()V
+    invoke-direct {v5, v4, v6}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 44
     .line 45
     .line 46
-    iput-object v4, v3, Lio/sentry/q3;->c0:Lio/sentry/protocol/profiling/a;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v5}, Ljava/lang/String;->isEmpty()Z
 
     .line 47
     .line 48
-    goto :goto_0
-
     .line 49
-    :catch_0
-    move-exception v0
+    move-result v1
 
     .line 50
-    new-instance v1, Lio/sentry/exception/c;
+    if-nez v1, :cond_0
 
     .line 51
     .line 52
-    const-string v2, "Profile conversion failed"
+    iput-object v5, v3, Lio/sentry/v3;->A0:Ljava/lang/String;
 
     .line 53
     .line 54
-    invoke-direct {v1, v2, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    :try_start_1
+    iget-object v1, v3, Lio/sentry/v3;->Y:Ljava/util/concurrent/Callable;
 
     .line 55
     .line 56
+    invoke-interface {v1}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
+
     .line 57
-    throw v1
-
     .line 58
-    :cond_0
-    new-instance v0, Lio/sentry/exception/c;
-
     .line 59
+    move-result-object v1
+
     .line 60
-    const-string v1, "No ProfileConverter available, dropping chunk."
+    check-cast v1, Ljava/util/List;
 
     .line 61
     .line 62
-    invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    iput-object v1, v3, Lio/sentry/v3;->k0:Ljava/util/List;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 63
     .line 64
-    .line 65
-    throw v0
+    :catchall_0
+    :try_start_2
+    new-instance v1, Ljava/io/ByteArrayOutputStream;
 
+    .line 65
     .line 66
-    :cond_1
-    invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-direct {v1}, Ljava/io/ByteArrayOutputStream;-><init>()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     .line 67
     .line 68
     .line 69
-    move-result-object v4
+    :try_start_3
+    new-instance v4, Ljava/io/BufferedWriter;
 
     .line 70
-    const-wide/32 v5, 0x3200000
-
     .line 71
+    new-instance v5, Ljava/io/OutputStreamWriter;
+
     .line 72
     .line 73
-    invoke-static {v5, v6, v4}, Lio/sentry/util/b;->o(JLjava/lang/String;)[B
+    sget-object v6, Lio/sentry/d5;->d:Ljava/nio/charset/Charset;
 
     .line 74
     .line 75
+    invoke-direct {v5, v1, v6}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
+
     .line 76
-    move-result-object v4
-
     .line 77
-    :try_start_1
-    new-instance v5, Ljava/lang/String;
-
     .line 78
-    .line 79
-    invoke-static {v4}, Lio/sentry/vendor/a;->b([B)[B
+    const/16 v6, 0x200
 
+    .line 79
     .line 80
+    invoke-direct {v4, v5, v6}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;I)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
     .line 81
     .line 82
-    move-result-object v4
-
     .line 83
-    const-string v6, "US-ASCII"
+    :try_start_4
+    invoke-interface {v2, v3, v4}, Lio/sentry/l1;->a(Ljava/lang/Object;Ljava/io/Writer;)V
 
     .line 84
     .line 85
-    invoke-direct {v5, v4, v6}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
-    :try_end_1
-    .catch Ljava/io/UnsupportedEncodingException; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 86
+    invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+
     .line 87
     .line 88
-    invoke-virtual {v5}, Ljava/lang/String;->isEmpty()Z
-
     .line 89
+    move-result-object v2
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_3
+
     .line 90
+    :try_start_5
+    invoke-virtual {v4}, Ljava/io/Writer;->close()V
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+
     .line 91
-    move-result v4
-
     .line 92
-    if-nez v4, :cond_2
-
     .line 93
-    .line 94
-    iput-object v5, v3, Lio/sentry/q3;->b0:Ljava/lang/String;
+    :try_start_6
+    invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->close()V
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_0
+    .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
+    .line 94
     .line 95
     .line 96
-    goto :goto_0
+    invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
     .line 97
-    :cond_2
-    new-instance v0, Lio/sentry/exception/c;
-
     .line 98
     .line 99
-    const-string v1, "Profiling trace file is empty"
+    move-object v1, v2
 
     .line 100
+    goto :goto_5
+
     .line 101
-    invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
-
-    .line 102
-    .line 103
-    .line 104
-    throw v0
-
-    .line 105
-    :catch_1
+    :catchall_1
     move-exception v0
 
+    .line 102
+    goto :goto_4
+
+    .line 103
+    :catch_0
+    move-exception v1
+
+    .line 104
+    goto :goto_3
+
+    .line 105
+    :catchall_2
+    move-exception v2
+
     .line 106
-    invoke-static {v0}, Lfn;->j(Ljava/lang/Object;)V
+    goto :goto_1
 
     .line 107
+    :catchall_3
+    move-exception v2
+
     .line 108
+    :try_start_7
+    invoke-virtual {v4}, Ljava/io/Writer;->close()V
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_4
+
     .line 109
-    const/4 v0, 0x0
-
     .line 110
-    return-object v0
-
     .line 111
-    :cond_3
-    new-instance v0, Lio/sentry/exception/c;
+    goto :goto_0
 
     .line 112
+    :catchall_4
+    move-exception v3
+
     .line 113
-    invoke-virtual {v2}, Ljava/io/File;->getName()Ljava/lang/String;
+    :try_start_8
+    invoke-virtual {v2, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 114
     .line 115
     .line 116
-    move-result-object v1
+    :goto_0
+    throw v2
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
     .line 117
-    const-string v2, "Dropping profile chunk, because the file \'"
+    :goto_1
+    :try_start_9
+    invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->close()V
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_5
 
     .line 118
     .line 119
-    const-string v3, "\' doesn\'t exists"
-
     .line 120
+    goto :goto_2
+
     .line 121
-    invoke-static {v2, v1, v3}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    :catchall_5
+    move-exception v1
 
     .line 122
+    :try_start_a
+    invoke-virtual {v2, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
     .line 123
     .line 124
-    move-result-object v1
-
     .line 125
-    invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    :goto_2
+    throw v2
+    :try_end_a
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_0
+    .catchall {:try_start_a .. :try_end_a} :catchall_1
 
     .line 126
+    :goto_3
+    :try_start_b
+    new-instance v2, Lio/sentry/exception/c;
+
     .line 127
     .line 128
-    throw v0
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 129
-    :cond_4
-    :goto_0
-    :try_start_2
-    new-instance v4, Ljava/io/ByteArrayOutputStream;
-
     .line 130
     .line 131
-    invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    move-result-object v1
 
     .line 132
+    new-instance v3, Ljava/lang/StringBuilder;
+
     .line 133
     .line 134
-    :try_start_3
-    new-instance v5, Ljava/io/BufferedWriter;
+    invoke-direct {v3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 135
     .line 136
-    new-instance v6, Ljava/io/OutputStreamWriter;
-
     .line 137
-    .line 138
-    sget-object v7, Lio/sentry/b5;->d:Ljava/nio/charset/Charset;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 138
     .line 139
     .line 140
-    invoke-direct {v6, v4, v7}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 141
     .line 142
     .line 143
-    const/16 v7, 0x200
+    move-result-object v0
 
     .line 144
-    .line 145
-    invoke-direct {v5, v6, v7}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;I)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    invoke-direct {v2, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
+    .line 145
     .line 146
     .line 147
+    throw v2
+    :try_end_b
+    .catchall {:try_start_b .. :try_end_b} :catchall_1
+
     .line 148
-    :try_start_4
-    invoke-interface {v0, v3, v5}, Lio/sentry/j1;->a(Ljava/lang/Object;Ljava/io/Writer;)V
+    :goto_4
+    invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
     .line 149
     .line 150
     .line 151
-    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+    throw v0
 
     .line 152
+    :cond_0
+    new-instance p0, Lio/sentry/exception/c;
+
     .line 153
     .line 154
-    move-result-object v0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+    const-string v0, "Profiling trace file is empty"
 
     .line 155
-    :try_start_5
-    invoke-virtual {v5}, Ljava/io/Writer;->close()V
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
-
     .line 156
+    invoke-direct {p0, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
     .line 157
     .line 158
-    :try_start_6
-    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->close()V
-    :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
-
     .line 159
+    throw p0
+
     .line 160
+    :catch_1
+    move-exception p0
+
     .line 161
-    if-eqz v2, :cond_5
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 162
     .line 163
-    invoke-virtual {v2}, Ljava/io/File;->delete()Z
-
     .line 164
-    .line 165
-    .line 166
-    :cond_5
-    return-object v0
+    :goto_5
+    return-object v1
 
+    .line 165
+    :cond_1
+    new-instance v0, Lio/sentry/exception/c;
+
+    .line 166
     .line 167
-    :catchall_0
-    move-exception v0
+    invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     .line 168
-    goto :goto_5
-
     .line 169
-    :catch_2
-    move-exception v0
-
     .line 170
-    goto :goto_4
+    move-result-object p0
 
     .line 171
-    :catchall_1
-    move-exception v0
+    const-string v1, "Dropping profiling trace data, because the file \'"
 
     .line 172
-    goto :goto_2
-
     .line 173
-    :catchall_2
-    move-exception v0
+    const-string v2, "\' doesn\'t exists"
 
     .line 174
-    :try_start_7
-    invoke-virtual {v5}, Ljava/io/Writer;->close()V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
-
     .line 175
+    invoke-static {v1, p0, v2}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
     .line 176
     .line 177
-    goto :goto_1
-
     .line 178
-    :catchall_3
-    move-exception v3
+    move-result-object p0
 
     .line 179
-    :try_start_8
-    invoke-virtual {v0, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    invoke-direct {v0, p0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     .line 180
     .line 181
     .line 182
-    :goto_1
     throw v0
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_1
 
     .line 183
-    :goto_2
-    :try_start_9
-    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->close()V
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_4
+    :pswitch_0
+    check-cast p0, Lio/sentry/a;
 
     .line 184
     .line 185
-    .line 186
-    goto :goto_3
+    check-cast v3, Lio/sentry/ILogger;
 
+    .line 186
     .line 187
-    :catchall_4
-    move-exception v3
+    iget-object v0, p0, Lio/sentry/a;->a:[B
 
     .line 188
-    :try_start_a
-    invoke-virtual {v0, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
     .line 189
+    iget-object v6, p0, Lio/sentry/a;->d:Ljava/lang/String;
+
     .line 190
     .line 191
-    :goto_3
-    throw v0
-    :try_end_a
-    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_2
-    .catchall {:try_start_a .. :try_end_a} :catchall_0
+    if-eqz v0, :cond_2
 
     .line 192
-    :goto_4
-    :try_start_b
-    new-instance v3, Lio/sentry/exception/c;
-
     .line 193
+    array-length p0, v0
+
     .line 194
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    int-to-long v1, p0
 
     .line 195
+    invoke-static {v1, v2, v6, v4, v5}, Lio/sentry/d5;->a(JLjava/lang/String;J)V
+
     .line 196
     .line 197
-    move-result-object v0
-
     .line 198
-    new-instance v4, Ljava/lang/StringBuilder;
+    goto :goto_b
 
     .line 199
-    .line 200
-    invoke-direct {v4, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    :cond_2
+    iget-object v0, p0, Lio/sentry/a;->b:Lio/sentry/protocol/j0;
 
+    .line 200
     .line 201
+    if-eqz v0, :cond_3
+
     .line 202
     .line 203
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object p0, Lio/sentry/util/e;->a:Ljava/nio/charset/Charset;
 
     .line 204
     .line 205
-    .line 206
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :try_start_c
+    new-instance p0, Ljava/io/ByteArrayOutputStream;
 
+    .line 206
     .line 207
+    invoke-direct {p0}, Ljava/io/ByteArrayOutputStream;-><init>()V
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_6
+
     .line 208
     .line 209
-    move-result-object v0
-
     .line 210
-    invoke-direct {v3, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    :try_start_d
+    new-instance v7, Ljava/io/BufferedWriter;
 
     .line 211
     .line 212
-    .line 213
-    throw v3
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_0
+    new-instance v8, Ljava/io/OutputStreamWriter;
 
+    .line 213
     .line 214
-    :goto_5
-    if-eqz v2, :cond_6
+    sget-object v9, Lio/sentry/util/e;->a:Ljava/nio/charset/Charset;
 
     .line 215
     .line 216
-    invoke-virtual {v2}, Ljava/io/File;->delete()Z
+    invoke-direct {v8, p0, v9}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
 
     .line 217
     .line 218
     .line 219
-    :cond_6
+    invoke-direct {v7, v8}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_7
+
+    .line 220
+    .line 221
+    .line 222
+    :try_start_e
+    invoke-interface {v2, v0, v7}, Lio/sentry/l1;->a(Ljava/lang/Object;Ljava/io/Writer;)V
+
+    .line 223
+    .line 224
+    .line 225
+    invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+
+    .line 226
+    .line 227
+    .line 228
+    move-result-object v0
+    :try_end_e
+    .catchall {:try_start_e .. :try_end_e} :catchall_8
+
+    .line 229
+    :try_start_f
+    invoke-virtual {v7}, Ljava/io/Writer;->close()V
+    :try_end_f
+    .catchall {:try_start_f .. :try_end_f} :catchall_7
+
+    .line 230
+    .line 231
+    .line 232
+    :try_start_10
+    invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->close()V
+    :try_end_10
+    .catchall {:try_start_10 .. :try_end_10} :catchall_6
+
+    .line 233
+    .line 234
+    .line 235
+    move-object v1, v0
+
+    .line 236
+    goto :goto_a
+
+    .line 237
+    :catchall_6
+    move-exception p0
+
+    .line 238
+    goto :goto_9
+
+    .line 239
+    :catchall_7
+    move-exception v0
+
+    .line 240
+    goto :goto_7
+
+    .line 241
+    :catchall_8
+    move-exception v0
+
+    .line 242
+    :try_start_11
+    invoke-virtual {v7}, Ljava/io/Writer;->close()V
+    :try_end_11
+    .catchall {:try_start_11 .. :try_end_11} :catchall_9
+
+    .line 243
+    .line 244
+    .line 245
+    goto :goto_6
+
+    .line 246
+    :catchall_9
+    move-exception v2
+
+    .line 247
+    :try_start_12
+    invoke-virtual {v0, v2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 248
+    .line 249
+    .line 250
+    :goto_6
     throw v0
+    :try_end_12
+    .catchall {:try_start_12 .. :try_end_12} :catchall_7
+
+    .line 251
+    :goto_7
+    :try_start_13
+    invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->close()V
+    :try_end_13
+    .catchall {:try_start_13 .. :try_end_13} :catchall_a
+
+    .line 252
+    .line 253
+    .line 254
+    goto :goto_8
+
+    .line 255
+    :catchall_a
+    move-exception p0
+
+    .line 256
+    :try_start_14
+    invoke-virtual {v0, p0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 257
+    .line 258
+    .line 259
+    :goto_8
+    throw v0
+    :try_end_14
+    .catchall {:try_start_14 .. :try_end_14} :catchall_6
+
+    .line 260
+    :goto_9
+    sget-object v0, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
+
+    .line 261
+    .line 262
+    const-string v2, "Could not serialize serializable"
+
+    .line 263
+    .line 264
+    invoke-interface {v3, v0, v2, p0}, Lio/sentry/ILogger;->d(Lio/sentry/o5;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 265
+    .line 266
+    .line 267
+    :goto_a
+    if-eqz v1, :cond_4
+
+    .line 268
+    .line 269
+    array-length p0, v1
+
+    .line 270
+    int-to-long v2, p0
+
+    .line 271
+    invoke-static {v2, v3, v6, v4, v5}, Lio/sentry/d5;->a(JLjava/lang/String;J)V
+
+    .line 272
+    .line 273
+    .line 274
+    move-object v0, v1
+
+    .line 275
+    goto :goto_b
+
+    .line 276
+    :cond_3
+    iget-object p0, p0, Lio/sentry/a;->c:Ljava/util/concurrent/Callable;
+
+    .line 277
+    .line 278
+    if-eqz p0, :cond_4
+
+    .line 279
+    .line 280
+    invoke-interface {p0}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
+
+    .line 281
+    .line 282
+    .line 283
+    move-result-object p0
+
+    .line 284
+    move-object v0, p0
+
+    .line 285
+    check-cast v0, [B
+
+    .line 286
+    .line 287
+    if-eqz v0, :cond_4
+
+    .line 288
+    .line 289
+    array-length p0, v0
+
+    .line 290
+    int-to-long v1, p0
+
+    .line 291
+    invoke-static {v1, v2, v6, v4, v5}, Lio/sentry/d5;->a(JLjava/lang/String;J)V
+
+    .line 292
+    .line 293
+    .line 294
+    :goto_b
+    return-object v0
+
+    .line 295
+    :cond_4
+    new-instance p0, Lio/sentry/exception/c;
+
+    .line 296
+    .line 297
+    const-string v0, "Couldn\'t attach the attachment "
+
+    .line 298
+    .line 299
+    const-string v1, ".\nPlease check that either bytes, serializable, path or provider is set."
+
+    .line 300
+    .line 301
+    invoke-static {v0, v6, v1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 302
+    .line 303
+    .line 304
+    move-result-object v0
+
+    .line 305
+    invoke-direct {p0, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    .line 306
+    .line 307
+    .line 308
+    throw p0
+
+    .line 309
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

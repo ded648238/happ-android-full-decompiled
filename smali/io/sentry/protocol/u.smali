@@ -1,21 +1,21 @@
 .class public final Lio/sentry/protocol/u;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # instance fields
-.field public Q:Ljava/lang/String;
+.field public X:Ljava/lang/String;
 
-.field public R:Ljava/lang/String;
+.field public Y:Ljava/lang/String;
 
-.field public S:Ljava/util/concurrent/CopyOnWriteArraySet;
+.field public Z:Ljava/util/concurrent/CopyOnWriteArraySet;
 
-.field public T:Ljava/util/concurrent/CopyOnWriteArraySet;
+.field public c0:Ljava/util/concurrent/CopyOnWriteArraySet;
 
-.field public U:Ljava/util/HashMap;
+.field public d0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -28,11 +28,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/sentry/protocol/u;->Q:Ljava/lang/String;
+    iput-object p1, p0, Lio/sentry/protocol/u;->X:Ljava/lang/String;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/sentry/protocol/u;->R:Ljava/lang/String;
+    iput-object p2, p0, Lio/sentry/protocol/u;->Y:Ljava/lang/String;
 
     .line 7
     .line 8
@@ -42,25 +42,25 @@
 
 # virtual methods
 .method public final a()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/protocol/u;->Q:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/protocol/u;->X:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final b()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/protocol/u;->R:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/protocol/u;->Y:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -109,11 +109,11 @@
 
     .line 18
     .line 19
-    iget-object v2, p0, Lio/sentry/protocol/u;->Q:Ljava/lang/String;
+    iget-object v2, p0, Lio/sentry/protocol/u;->X:Ljava/lang/String;
 
     .line 20
     .line 21
-    iget-object v3, p1, Lio/sentry/protocol/u;->Q:Ljava/lang/String;
+    iget-object v3, p1, Lio/sentry/protocol/u;->X:Ljava/lang/String;
 
     .line 22
     .line 23
@@ -129,23 +129,23 @@
 
     .line 28
     .line 29
-    iget-object v2, p0, Lio/sentry/protocol/u;->R:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/protocol/u;->Y:Ljava/lang/String;
 
     .line 30
     .line 31
-    iget-object p1, p1, Lio/sentry/protocol/u;->R:Ljava/lang/String;
+    iget-object p1, p1, Lio/sentry/protocol/u;->Y:Ljava/lang/String;
 
     .line 32
     .line 33
-    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 34
     .line 35
     .line 36
-    move-result p1
+    move-result p0
 
     .line 37
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 38
     .line 39
@@ -158,50 +158,37 @@
 .end method
 
 .method public final hashCode()I
-    .locals 4
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/sentry/protocol/u;->Q:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/u;->X:Ljava/lang/String;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/sentry/protocol/u;->R:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/protocol/u;->Y:Ljava/lang/String;
 
     .line 4
     .line 5
-    const/4 v2, 0x2
+    filled-new-array {v0, p0}, [Ljava/lang/Object;
 
     .line 6
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 7
     .line 8
-    const/4 v3, 0x0
+    move-result-object p0
 
     .line 9
-    aput-object v0, v2, v3
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     .line 10
     .line 11
-    const/4 v0, 0x1
-
     .line 12
-    aput-object v1, v2, v0
+    move-result p0
 
     .line 13
-    .line 14
-    invoke-static {v2}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v0
-
-    .line 18
-    return v0
+    return p0
 .end method
 
-.method public final serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 3
 
     .line 1
@@ -223,7 +210,7 @@
     .line 9
     .line 10
     .line 11
-    iget-object v0, p0, Lio/sentry/protocol/u;->Q:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/u;->X:Ljava/lang/String;
 
     .line 12
     .line 13
@@ -241,7 +228,7 @@
     .line 19
     .line 20
     .line 21
-    iget-object v0, p0, Lio/sentry/protocol/u;->R:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/u;->Y:Ljava/lang/String;
 
     .line 22
     .line 23
@@ -250,7 +237,7 @@
     .line 24
     .line 25
     .line 26
-    iget-object v0, p0, Lio/sentry/protocol/u;->S:Ljava/util/concurrent/CopyOnWriteArraySet;
+    iget-object v0, p0, Lio/sentry/protocol/u;->Z:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     .line 27
     .line 28
@@ -262,7 +249,7 @@
 
     .line 31
     :cond_0
-    invoke-static {}, Lio/sentry/k5;->d()Lio/sentry/k5;
+    invoke-static {}, Lio/sentry/m5;->d()Lio/sentry/m5;
 
     .line 32
     .line 33
@@ -270,12 +257,12 @@
     move-result-object v0
 
     .line 35
-    iget-object v0, v0, Lio/sentry/k5;->b:Ljava/util/concurrent/CopyOnWriteArraySet;
+    iget-object v0, v0, Lio/sentry/m5;->b:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     .line 36
     .line 37
     :goto_0
-    iget-object v1, p0, Lio/sentry/protocol/u;->T:Ljava/util/concurrent/CopyOnWriteArraySet;
+    iget-object v1, p0, Lio/sentry/protocol/u;->c0:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     .line 38
     .line 39
@@ -287,7 +274,7 @@
 
     .line 42
     :cond_1
-    invoke-static {}, Lio/sentry/k5;->d()Lio/sentry/k5;
+    invoke-static {}, Lio/sentry/m5;->d()Lio/sentry/m5;
 
     .line 43
     .line 44
@@ -295,7 +282,7 @@
     move-result-object v1
 
     .line 46
-    iget-object v1, v1, Lio/sentry/k5;->a:Ljava/util/concurrent/CopyOnWriteArraySet;
+    iget-object v1, v1, Lio/sentry/m5;->a:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     .line 47
     .line 48
@@ -354,7 +341,7 @@
     .line 75
     .line 76
     :cond_3
-    iget-object v0, p0, Lio/sentry/protocol/u;->U:Ljava/util/HashMap;
+    iget-object v0, p0, Lio/sentry/protocol/u;->d0:Ljava/util/HashMap;
 
     .line 77
     .line 78
@@ -403,11 +390,11 @@
 
     .line 99
     .line 100
-    iget-object v2, p0, Lio/sentry/protocol/u;->U:Ljava/util/HashMap;
+    iget-object v2, p0, Lio/sentry/protocol/u;->d0:Ljava/util/HashMap;
 
     .line 101
     .line 102
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/HashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->a(Ljava/util/HashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 103
     .line 104

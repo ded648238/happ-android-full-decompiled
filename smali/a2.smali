@@ -1,10 +1,9 @@
 .class public abstract La2;
-.super Ljava/util/AbstractSet;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/util/Set;
-.implements Lb83;
+.implements Lik4;
 
 
 # direct methods
@@ -12,7 +11,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
@@ -22,20 +21,14 @@
 
 
 # virtual methods
-.method public abstract a()I
+.method public abstract b()I
 .end method
 
-.method public final bridge size()I
-    .locals 1
+.method public abstract d()Lal2;
+.end method
 
-    .line 1
-    invoke-virtual {p0}, La2;->a()I
+.method public abstract e()Lal2;
+.end method
 
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
+.method public abstract f(Lkt0;)V
 .end method

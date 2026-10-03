@@ -1,325 +1,194 @@
-.class public abstract Lq71;
+.class public final Lq71;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Ljava/lang/ThreadLocal;
+# instance fields
+.field public a:J
 
-.field public static final b:Ljava/lang/ThreadLocal;
+.field public b:F
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
 
     .line 1
-    new-instance v0, Ljava/lang/ThreadLocal;
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
-    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lq71;->a:Ljava/lang/ThreadLocal;
+    return v0
 
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lq71;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    new-instance v0, Ljava/lang/ThreadLocal;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
+    return v2
 
     .line 11
+    :cond_1
+    check-cast p1, Lq71;
+
     .line 12
     .line 13
-    sput-object v0, Lq71;->b:Ljava/lang/ThreadLocal;
+    iget-wide v3, p0, Lq71;->a:J
 
     .line 14
     .line 15
-    return-void
+    iget-wide v5, p1, Lq71;->a:J
+
+    .line 16
+    .line 17
+    cmp-long v1, v3, v5
+
+    .line 18
+    .line 19
+    if-eqz v1, :cond_2
+
+    .line 20
+    .line 21
+    return v2
+
+    .line 22
+    :cond_2
+    iget p0, p0, Lq71;->b:F
+
+    .line 23
+    .line 24
+    iget p1, p1, Lq71;->b:F
+
+    .line 25
+    .line 26
+    invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result p0
+
+    .line 30
+    if-eqz p0, :cond_3
+
+    .line 31
+    .line 32
+    return v2
+
+    .line 33
+    :cond_3
+    return v0
 .end method
 
-.method public static a(Landroid/view/ViewParent;Landroid/view/View;Landroid/graphics/Matrix;)V
+.method public final hashCode()I
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    iget-wide v0, p0, Lq71;->a:J
 
     .line 2
     .line 3
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
+
     .line 4
-    move-result-object v0
-
     .line 5
-    instance-of v1, v0, Landroid/view/View;
-
     .line 6
+    move-result v0
+
     .line 7
-    if-eqz v1, :cond_0
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 8
     .line 9
-    if-eq v0, p0, :cond_0
+    iget p0, p0, Lq71;->b:F
 
     .line 10
     .line 11
-    check-cast v0, Landroid/view/View;
+    invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
 
     .line 12
     .line 13
-    invoke-static {p0, v0, p2}, Lq71;->a(Landroid/view/ViewParent;Landroid/view/View;Landroid/graphics/Matrix;)V
-
     .line 14
+    move-result p0
+
     .line 15
+    add-int/2addr p0, v0
+
     .line 16
-    invoke-virtual {v0}, Landroid/view/View;->getScrollX()I
-
-    .line 17
-    .line 18
-    .line 19
-    move-result p0
-
-    .line 20
-    neg-int p0, p0
-
-    .line 21
-    int-to-float p0, p0
-
-    .line 22
-    invoke-virtual {v0}, Landroid/view/View;->getScrollY()I
-
-    .line 23
-    .line 24
-    .line 25
-    move-result v0
-
-    .line 26
-    neg-int v0, v0
-
-    .line 27
-    int-to-float v0, v0
-
-    .line 28
-    invoke-virtual {p2, p0, v0}, Landroid/graphics/Matrix;->preTranslate(FF)Z
-
-    .line 29
-    .line 30
-    .line 31
-    :cond_0
-    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result p0
-
-    .line 35
-    int-to-float p0, p0
-
-    .line 36
-    invoke-virtual {p1}, Landroid/view/View;->getTop()I
-
-    .line 37
-    .line 38
-    .line 39
-    move-result v0
-
-    .line 40
-    int-to-float v0, v0
-
-    .line 41
-    invoke-virtual {p2, p0, v0}, Landroid/graphics/Matrix;->preTranslate(FF)Z
-
-    .line 42
-    .line 43
-    .line 44
-    invoke-virtual {p1}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object p0
-
-    .line 48
-    invoke-virtual {p0}, Landroid/graphics/Matrix;->isIdentity()Z
-
-    .line 49
-    .line 50
-    .line 51
-    move-result p0
-
-    .line 52
-    if-nez p0, :cond_1
-
-    .line 53
-    .line 54
-    invoke-virtual {p1}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object p0
-
-    .line 58
-    invoke-virtual {p2, p0}, Landroid/graphics/Matrix;->preConcat(Landroid/graphics/Matrix;)Z
-
-    .line 59
-    .line 60
-    .line 61
-    :cond_1
-    return-void
+    return p0
 .end method
 
-.method public static b(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V
-    .locals 3
+.method public final toString()Ljava/lang/String;
+    .locals 4
 
     .line 1
-    sget-object v0, Lq71;->a:Ljava/lang/ThreadLocal;
+    iget-wide v0, p0, Lq71;->a:J
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+    iget p0, p0, Lq71;->b:F
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v1
+    new-instance v2, Ljava/lang/StringBuilder;
 
+    .line 6
     .line 7
-    check-cast v1, Landroid/graphics/Matrix;
+    const-string v3, "DataPointAtTime(time="
 
     .line 8
     .line 9
-    if-nez v1, :cond_0
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 10
     .line 11
-    new-instance v1, Landroid/graphics/Matrix;
-
     .line 12
-    .line 13
-    invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
+    invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
+    .line 13
     .line 14
     .line 15
-    .line 16
-    invoke-virtual {v0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
+    const-string v0, ", dataPoint="
 
+    .line 16
     .line 17
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 18
     .line 19
-    goto :goto_0
-
     .line 20
-    :cond_0
-    invoke-virtual {v1}, Landroid/graphics/Matrix;->reset()V
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    :goto_0
-    invoke-static {p0, p1, v1}, Lq71;->a(Landroid/view/ViewParent;Landroid/view/View;Landroid/graphics/Matrix;)V
+    const-string p0, ")"
 
     .line 24
     .line 25
-    .line 26
-    sget-object p0, Lq71;->b:Ljava/lang/ThreadLocal;
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 26
     .line 27
     .line 28
-    invoke-virtual {p0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
     .line 30
     .line 31
-    move-result-object p1
+    move-result-object p0
 
     .line 32
-    check-cast p1, Landroid/graphics/RectF;
-
-    .line 33
-    .line 34
-    if-nez p1, :cond_1
-
-    .line 35
-    .line 36
-    new-instance p1, Landroid/graphics/RectF;
-
-    .line 37
-    .line 38
-    invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
-
-    .line 39
-    .line 40
-    .line 41
-    invoke-virtual {p0, p1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
-
-    .line 42
-    .line 43
-    .line 44
-    :cond_1
-    invoke-virtual {p1, p2}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
-
-    .line 45
-    .line 46
-    .line 47
-    invoke-virtual {v1, p1}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
-
-    .line 48
-    .line 49
-    .line 50
-    iget p0, p1, Landroid/graphics/RectF;->left:F
-
-    .line 51
-    .line 52
-    const/high16 v0, 0x3f000000    # 0.5f
-
-    .line 53
-    .line 54
-    add-float/2addr p0, v0
-
-    .line 55
-    float-to-int p0, p0
-
-    .line 56
-    iget v1, p1, Landroid/graphics/RectF;->top:F
-
-    .line 57
-    .line 58
-    add-float/2addr v1, v0
-
-    .line 59
-    float-to-int v1, v1
-
-    .line 60
-    iget v2, p1, Landroid/graphics/RectF;->right:F
-
-    .line 61
-    .line 62
-    add-float/2addr v2, v0
-
-    .line 63
-    float-to-int v2, v2
-
-    .line 64
-    iget p1, p1, Landroid/graphics/RectF;->bottom:F
-
-    .line 65
-    .line 66
-    add-float/2addr p1, v0
-
-    .line 67
-    float-to-int p1, p1
-
-    .line 68
-    invoke-virtual {p2, p0, v1, v2, p1}, Landroid/graphics/Rect;->set(IIII)V
-
-    .line 69
-    .line 70
-    .line 71
-    return-void
+    return-object p0
 .end method

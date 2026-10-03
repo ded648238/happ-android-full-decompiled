@@ -1,14 +1,14 @@
 .class abstract Lcom/google/android/material/timepicker/RadialViewGroup;
 .super Landroidx/constraintlayout/widget/ConstraintLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final j0:Lcom/google/android/material/timepicker/e;
+.field public final s0:Lcom/google/android/material/timepicker/d;
 
-.field public k0:I
+.field public t0:I
 
-.field public final l0:Ld04;
+.field public final u0:Lbh4;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     move-result-object v0
 
     .line 8
-    sget v1, Ls95;->material_radial_view_group:I
+    sget v1, Lst5;->material_radial_view_group:I
 
     .line 9
     .line 10
@@ -38,20 +38,20 @@
     .line 11
     .line 12
     .line 13
-    new-instance v0, Ld04;
+    new-instance v0, Lbh4;
 
     .line 14
     .line 15
-    invoke-direct {v0}, Ld04;-><init>()V
+    invoke-direct {v0}, Lbh4;-><init>()V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->l0:Ld04;
+    iput-object v0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->u0:Lbh4;
 
     .line 19
     .line 20
-    new-instance v1, Lxg5;
+    new-instance v1, Lh16;
 
     .line 21
     .line 22
@@ -59,134 +59,110 @@
 
     .line 23
     .line 24
-    invoke-direct {v1, v2}, Lxg5;-><init>(F)V
+    invoke-direct {v1, v2}, Lh16;-><init>(F)V
 
     .line 25
     .line 26
     .line 27
-    iget-object v2, v0, Ld04;->R:Lb04;
+    iget-object v2, v0, Lbh4;->Y:Lzg4;
 
     .line 28
     .line 29
-    iget-object v2, v2, Lb04;->a:Lj86;
+    iget-object v2, v2, Lzg4;->a:Lwu6;
 
     .line 30
     .line 31
-    invoke-virtual {v2}, Lj86;->f()Lo5;
+    invoke-interface {v2, v1}, Lwu6;->e(Lh16;)Lxu6;
 
     .line 32
     .line 33
     .line 34
-    move-result-object v2
+    move-result-object v1
 
     .line 35
-    iput-object v1, v2, Lo5;->U:Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lbh4;->setShapeAppearanceModel(Lxu6;)V
 
     .line 36
     .line 37
-    iput-object v1, v2, Lo5;->V:Ljava/lang/Object;
-
     .line 38
-    .line 39
-    iput-object v1, v2, Lo5;->W:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->u0:Lbh4;
 
+    .line 39
     .line 40
+    const/4 v1, -0x1
+
     .line 41
-    iput-object v1, v2, Lo5;->X:Ljava/lang/Object;
+    invoke-static {v1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     .line 42
     .line 43
-    invoke-virtual {v2}, Lo5;->b()Lj86;
-
     .line 44
-    .line 45
-    .line 46
     move-result-object v1
 
-    .line 47
-    invoke-virtual {v0, v1}, Ld04;->setShapeAppearanceModel(Lj86;)V
+    .line 45
+    invoke-virtual {v0, v1}, Lbh4;->t(Landroid/content/res/ColorStateList;)V
 
+    .line 46
+    .line 47
     .line 48
+    iget-object v0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->u0:Lbh4;
+
     .line 49
     .line 50
-    iget-object v0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->l0:Ld04;
+    invoke-virtual {p0, v0}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 51
     .line 52
-    const/4 v1, -0x1
-
     .line 53
-    invoke-static {v1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+    sget-object v0, Luu5;->RadialViewGroup:[I
 
     .line 54
     .line 55
+    const/4 v1, 0x0
+
     .line 56
-    move-result-object v1
+    invoke-virtual {p1, p2, v0, p3, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     .line 57
-    invoke-virtual {v0, v1}, Ld04;->q(Landroid/content/res/ColorStateList;)V
-
     .line 58
     .line 59
+    move-result-object p1
+
     .line 60
-    iget-object v0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->l0:Ld04;
+    sget p2, Luu5;->RadialViewGroup_materialCircleRadius:I
 
     .line 61
     .line 62
-    invoke-virtual {p0, v0}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     .line 63
     .line 64
     .line 65
-    sget-object v0, Lva5;->RadialViewGroup:[I
+    move-result p2
 
     .line 66
-    .line 67
-    const/4 v1, 0x0
+    iput p2, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->t0:I
 
+    .line 67
     .line 68
-    invoke-virtual {p1, p2, v0, p3, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    new-instance p2, Lcom/google/android/material/timepicker/d;
 
     .line 69
     .line 70
+    invoke-direct {p2, p0}, Lcom/google/android/material/timepicker/d;-><init>(Lcom/google/android/material/timepicker/RadialViewGroup;)V
+
     .line 71
-    move-result-object p1
-
     .line 72
-    sget p2, Lva5;->RadialViewGroup_materialCircleRadius:I
-
     .line 73
+    iput-object p2, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->s0:Lcom/google/android/material/timepicker/d;
+
     .line 74
-    invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
-
     .line 75
-    .line 76
-    .line 77
-    move-result p2
-
-    .line 78
-    iput p2, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->k0:I
-
-    .line 79
-    .line 80
-    new-instance p2, Lcom/google/android/material/timepicker/e;
-
-    .line 81
-    .line 82
-    invoke-direct {p2, p0}, Lcom/google/android/material/timepicker/e;-><init>(Lcom/google/android/material/timepicker/RadialViewGroup;)V
-
-    .line 83
-    .line 84
-    .line 85
-    iput-object p2, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->j0:Lcom/google/android/material/timepicker/e;
-
-    .line 86
-    .line 87
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 88
-    .line 89
-    .line 90
+    .line 76
+    .line 77
+    .line 78
     return-void
 .end method
 
@@ -242,16 +218,16 @@
 
     .line 23
     .line 24
-    iget-object p2, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->j0:Lcom/google/android/material/timepicker/e;
+    iget-object p0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->s0:Lcom/google/android/material/timepicker/d;
 
     .line 25
     .line 26
-    invoke-virtual {p1, p2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, p0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 27
     .line 28
     .line 29
-    invoke-virtual {p1, p2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p1, p0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 30
     .line 31
@@ -267,7 +243,7 @@
     .locals 0
 
     .line 1
-    invoke-super {p0}, Landroid/view/ViewGroup;->onFinishInflate()V
+    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 2
     .line 3
@@ -281,7 +257,7 @@
 .end method
 
 .method public final onViewRemoved(Landroid/view/View;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0, p1}, Landroidx/constraintlayout/widget/ConstraintLayout;->onViewRemoved(Landroid/view/View;)V
@@ -301,16 +277,16 @@
 
     .line 9
     .line 10
-    iget-object v0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->j0:Lcom/google/android/material/timepicker/e;
+    iget-object p0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->s0:Lcom/google/android/material/timepicker/d;
 
     .line 11
     .line 12
-    invoke-virtual {p1, v0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, p0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 13
     .line 14
     .line 15
-    invoke-virtual {p1, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p1, p0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 16
     .line 17
@@ -320,10 +296,10 @@
 .end method
 
 .method public final setBackgroundColor(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->l0:Ld04;
+    iget-object p0, p0, Lcom/google/android/material/timepicker/RadialViewGroup;->u0:Lbh4;
 
     .line 2
     .line 3
@@ -335,7 +311,7 @@
     move-result-object p1
 
     .line 7
-    invoke-virtual {v0, p1}, Ld04;->q(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {p0, p1}, Lbh4;->t(Landroid/content/res/ColorStateList;)V
 
     .line 8
     .line 9

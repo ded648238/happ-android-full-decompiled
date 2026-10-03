@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/OpenSSLX509CRLEntry;
 .super Ljava/security/cert/X509CRLEntry;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -54,7 +54,7 @@
 
 # virtual methods
 .method public finalize()V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -71,11 +71,11 @@
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 6
     .line 7
-    if-eqz v4, :cond_0
+    if-eqz v2, :cond_0
 
     .line 8
     .line 9
@@ -161,24 +161,24 @@
     .line 15
     .line 16
     .line 17
-    move-result-object v1
+    move-result-object p0
 
     .line 18
-    array-length v1, v1
+    array-length p0, p0
 
     .line 19
-    if-nez v1, :cond_0
+    if-nez p0, :cond_0
 
     .line 20
     .line 21
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 22
-    return-object v0
+    return-object p0
 
     .line 23
     :cond_0
-    new-instance v1, Ljava/util/HashSet;
+    new-instance p0, Ljava/util/HashSet;
 
     .line 24
     .line 25
@@ -190,12 +190,12 @@
     move-result-object v0
 
     .line 29
-    invoke-direct {v1, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    invoke-direct {p0, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
     .line 30
     .line 31
     .line 32
-    return-object v1
+    return-object p0
 .end method
 
 .method public getEncoded()[B
@@ -216,10 +216,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getExtensionValue(Ljava/lang/String;)[B
@@ -235,10 +235,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    return-object p1
+    return-object p0
 .end method
 
 .method public getNonCriticalExtensionOIDs()Ljava/util/Set;
@@ -287,24 +287,24 @@
     .line 15
     .line 16
     .line 17
-    move-result-object v1
+    move-result-object p0
 
     .line 18
-    array-length v1, v1
+    array-length p0, p0
 
     .line 19
-    if-nez v1, :cond_0
+    if-nez p0, :cond_0
 
     .line 20
     .line 21
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 22
-    return-object v0
+    return-object p0
 
     .line 23
     :cond_0
-    new-instance v1, Ljava/util/HashSet;
+    new-instance p0, Ljava/util/HashSet;
 
     .line 24
     .line 25
@@ -316,35 +316,35 @@
     move-result-object v0
 
     .line 29
-    invoke-direct {v1, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    invoke-direct {p0, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
     .line 30
     .line 31
     .line 32
-    return-object v1
+    return-object p0
 .end method
 
 .method public getRevocationDate()Ljava/util/Date;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLX509CRLEntry;->revocationDate:Ljava/util/Date;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLX509CRLEntry;->revocationDate:Ljava/util/Date;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/Date;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/util/Date;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Ljava/util/Date;
+    check-cast p0, Ljava/util/Date;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSerialNumber()Ljava/math/BigInteger;
@@ -364,10 +364,10 @@
     .line 6
     .line 7
     .line 8
-    move-result-object v1
+    move-result-object p0
 
     .line 9
-    invoke-direct {v0, v1}, Ljava/math/BigInteger;-><init>([B)V
+    invoke-direct {v0, p0}, Ljava/math/BigInteger;-><init>([B)V
 
     .line 10
     .line 11
@@ -413,13 +413,13 @@
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    array-length v0, v0
+    array-length p0, p0
 
     .line 19
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 20
     .line 21
@@ -460,7 +460,7 @@
     const/4 v3, 0x0
 
     .line 10
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 11
     :goto_0
@@ -547,7 +547,7 @@
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    move-result-object p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -557,11 +557,11 @@
     .line 20
     .line 21
     .line 22
-    return-object v0
+    return-object p0
 
     .line 23
     :catchall_0
-    move-exception v0
+    move-exception p0
 
     .line 24
     invoke-static {v1, v2}, Lorg/conscrypt/NativeCrypto;->BIO_free_all(J)V
@@ -569,5 +569,5 @@
     .line 25
     .line 26
     .line 27
-    throw v0
+    throw p0
 .end method

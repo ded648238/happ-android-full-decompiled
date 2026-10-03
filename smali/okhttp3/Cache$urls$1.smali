@@ -1,10 +1,10 @@
 .class public final Lokhttp3/Cache$urls$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/util/Iterator;
-.implements Lr73;
+.implements Lxn3;
 
 
 # annotations
@@ -23,7 +23,7 @@
         "Ljava/util/Iterator<",
         "Ljava/lang/String;",
         ">;",
-        "Lr73;"
+        "Lxn3;"
     }
 .end annotation
 
@@ -40,7 +40,7 @@
         "()Z",
         "next",
         "()Ljava/lang/String;",
-        "Lbh7;",
+        "Lr98;",
         "remove",
         "()V",
         "Lokhttp3/internal/cache/DiskLruCache$Snapshot;",
@@ -126,7 +126,7 @@
 
     .line 4
     .line 5
-    goto :goto_1
+    goto :goto_0
 
     .line 6
     :cond_0
@@ -137,7 +137,7 @@
 
     .line 8
     .line 9
-    :goto_0
+    :catch_0
     iget-object v1, p0, Lokhttp3/Cache$urls$1;->delegate:Ljava/util/Iterator;
 
     .line 10
@@ -181,7 +181,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {v2, v0}, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->getSource(I)Lle6;
+    invoke-virtual {v2, v0}, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->getSource(I)Ld27;
 
     .line 29
     .line 30
@@ -189,7 +189,7 @@
     move-result-object v2
 
     .line 32
-    invoke-static {v2}, Lkz0;->r(Lle6;)Lhc5;
+    invoke-static {v2}, Lnn3;->n(Ld27;)Liw5;
 
     .line 33
     .line 34
@@ -204,7 +204,7 @@
     .line 39
     .line 40
     .line 41
-    invoke-virtual {v2, v3, v4}, Lhc5;->N(J)Ljava/lang/String;
+    invoke-virtual {v2, v3, v4}, Liw5;->V(J)Ljava/lang/String;
 
     .line 42
     .line 43
@@ -222,65 +222,58 @@
 
     .line 48
     :try_start_2
-    invoke-static {v1, v2}, Lzd7;->n(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2}, Lj68;->j(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
     .line 49
     .line 50
     .line 51
-    :goto_1
-    const/4 v0, 0x1
+    :goto_0
+    const/4 p0, 0x1
 
     .line 52
-    return v0
+    return p0
 
     .line 53
-    :catch_0
-    nop
-
-    .line 54
-    goto :goto_0
-
-    .line 55
     :catchall_0
     move-exception v2
 
-    .line 56
+    .line 54
     :try_start_3
     throw v2
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 57
+    .line 55
     :catchall_1
     move-exception v3
 
-    .line 58
+    .line 56
     :try_start_4
-    invoke-static {v1, v2}, Lzd7;->n(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2}, Lj68;->j(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
+    .line 57
+    .line 58
     .line 59
-    .line 60
-    .line 61
     throw v3
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
-    .line 62
+    .line 60
     :cond_1
     return v0
 .end method
 
 .method public bridge synthetic next()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 23
     invoke-virtual {p0}, Lokhttp3/Cache$urls$1;->next()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public next()Ljava/lang/String;
@@ -326,7 +319,7 @@
 
     .line 19
     :cond_0
-    invoke-static {}, Lfn;->p()V
+    invoke-static {}, Li60;->a()V
 
     .line 20
     .line 21
@@ -346,11 +339,11 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lokhttp3/Cache$urls$1;->delegate:Ljava/util/Iterator;
+    iget-object p0, p0, Lokhttp3/Cache$urls$1;->delegate:Ljava/util/Iterator;
 
     .line 6
     .line 7
-    invoke-interface {v0}, Ljava/util/Iterator;->remove()V
+    invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     .line 8
     .line 9
@@ -359,11 +352,11 @@
 
     .line 11
     :cond_0
-    const-string v0, "remove() before next()"
+    const-string p0, "remove() before next()"
 
     .line 12
     .line 13
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 14
     .line 15

@@ -1,27 +1,15 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ka3 extends ra3 {
-    public final byte a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ka3 {
+    public final zw5 a;
+    public int b;
+    public Object c;
 
-    public ka3(byte b) {
-        this.a = b;
-    }
-
-    @Override // defpackage.ra3
-    public final Object a() {
-        return Byte.valueOf(this.a);
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        return (obj instanceof ka3) && this.a == ((ka3) obj).a;
-    }
-
-    public final int hashCode() {
-        return this.a;
+    public ka3(zw5 zw5Var, int i, Object obj) {
+        this.a = zw5Var;
+        this.b = i;
+        this.c = obj;
     }
 }

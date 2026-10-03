@@ -5,39 +5,39 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
-import defpackage.e95;
-import defpackage.hb5;
-import defpackage.qn7;
+import defpackage.dt5;
+import defpackage.gv5;
+import defpackage.ni8;
 import java.util.WeakHashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ButtonBarLayout extends LinearLayout {
-    public boolean Q;
-    public boolean R;
-    public int S;
+    public boolean c0;
+    public boolean d0;
+    public int e0;
 
     public ButtonBarLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.S = -1;
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, hb5.ButtonBarLayout);
-        qn7.p(this, context, hb5.ButtonBarLayout, attributeSet, typedArrayObtainStyledAttributes, 0);
-        this.Q = typedArrayObtainStyledAttributes.getBoolean(hb5.ButtonBarLayout_allowStacking, true);
-        typedArrayObtainStyledAttributes.recycle();
+        this.e0 = -1;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, gv5.ButtonBarLayout);
+        ni8.l(this, context, gv5.ButtonBarLayout, attributeSet, obtainStyledAttributes, 0);
+        this.c0 = obtainStyledAttributes.getBoolean(gv5.ButtonBarLayout_allowStacking, true);
+        obtainStyledAttributes.recycle();
         if (getOrientation() == 1) {
-            setStacked(this.Q);
+            setStacked(this.c0);
         }
     }
 
     private void setStacked(boolean z) {
-        if (this.R != z) {
-            if (!z || this.Q) {
-                this.R = z;
+        if (this.d0 != z) {
+            if (!z || this.c0) {
+                this.d0 = z;
                 setOrientation(z ? 1 : 0);
                 setGravity(z ? 8388613 : 80);
-                View viewFindViewById = findViewById(e95.spacer);
-                if (viewFindViewById != null) {
-                    viewFindViewById.setVisibility(z ? 8 : 4);
+                View findViewById = findViewById(dt5.spacer);
+                if (findViewById != null) {
+                    findViewById.setVisibility(z ? 8 : 4);
                 }
                 for (int childCount = getChildCount() - 2; childCount >= 0; childCount--) {
                     bringChildToFront(getChildAt(childCount));
@@ -48,26 +48,26 @@ public class ButtonBarLayout extends LinearLayout {
 
     @Override // android.widget.LinearLayout, android.view.View
     public final void onMeasure(int i, int i2) {
-        int iMakeMeasureSpec;
-        boolean z;
         int i3;
+        boolean z;
+        int i4;
         int size = View.MeasureSpec.getSize(i);
-        int paddingBottom = 0;
-        if (this.Q) {
-            if (size > this.S && this.R) {
+        int i5 = 0;
+        if (this.c0) {
+            if (size > this.e0 && this.d0) {
                 setStacked(false);
             }
-            this.S = size;
+            this.e0 = size;
         }
-        if (this.R || View.MeasureSpec.getMode(i) != 1073741824) {
-            iMakeMeasureSpec = i;
+        if (this.d0 || View.MeasureSpec.getMode(i) != 1073741824) {
+            i3 = i;
             z = false;
         } else {
-            iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(size, Integer.MIN_VALUE);
+            i3 = View.MeasureSpec.makeMeasureSpec(size, Integer.MIN_VALUE);
             z = true;
         }
-        super.onMeasure(iMakeMeasureSpec, i2);
-        if (this.Q && !this.R && (getMeasuredWidthAndState() & (-16777216)) == 16777216) {
+        super.onMeasure(i3, i2);
+        if (this.c0 && !this.d0 && (getMeasuredWidthAndState() & (-16777216)) == 16777216) {
             setStacked(true);
             z = true;
         }
@@ -75,38 +75,43 @@ public class ButtonBarLayout extends LinearLayout {
             super.onMeasure(i, i2);
         }
         int childCount = getChildCount();
-        int i4 = 0;
+        int i6 = 0;
         while (true) {
-            i3 = -1;
-            if (i4 >= childCount) {
-                i4 = -1;
+            i4 = -1;
+            if (i6 >= childCount) {
+                i6 = -1;
                 break;
-            } else if (getChildAt(i4).getVisibility() == 0) {
+            } else if (getChildAt(i6).getVisibility() == 0) {
                 break;
             } else {
-                i4++;
+                i6++;
             }
         }
-        if (i4 >= 0) {
-            View childAt = getChildAt(i4);
+        if (i6 >= 0) {
+            View childAt = getChildAt(i6);
             LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) childAt.getLayoutParams();
             int measuredHeight = childAt.getMeasuredHeight() + getPaddingTop() + layoutParams.topMargin + layoutParams.bottomMargin;
-            if (this.R) {
+            if (this.d0) {
+                int i7 = i6 + 1;
                 int childCount2 = getChildCount();
-                for (int i5 = i4 + 1; i5 < childCount2; i5++) {
-                    if (getChildAt(i5).getVisibility() == 0) {
-                        i3 = i5;
+                while (true) {
+                    if (i7 >= childCount2) {
                         break;
                     }
+                    if (getChildAt(i7).getVisibility() == 0) {
+                        i4 = i7;
+                        break;
+                    }
+                    i7++;
                 }
-                paddingBottom = i3 >= 0 ? getChildAt(i3).getPaddingTop() + ((int) (getResources().getDisplayMetrics().density * 16.0f)) + measuredHeight : measuredHeight;
+                i5 = i4 >= 0 ? getChildAt(i4).getPaddingTop() + ((int) (getResources().getDisplayMetrics().density * 16.0f)) + measuredHeight : measuredHeight;
             } else {
-                paddingBottom = getPaddingBottom() + measuredHeight;
+                i5 = getPaddingBottom() + measuredHeight;
             }
         }
-        WeakHashMap weakHashMap = qn7.a;
-        if (getMinimumHeight() != paddingBottom) {
-            setMinimumHeight(paddingBottom);
+        WeakHashMap weakHashMap = ni8.a;
+        if (getMinimumHeight() != i5) {
+            setMinimumHeight(i5);
             if (i2 == 0) {
                 super.onMeasure(i, i2);
             }
@@ -114,9 +119,9 @@ public class ButtonBarLayout extends LinearLayout {
     }
 
     public void setAllowStacking(boolean z) {
-        if (this.Q != z) {
-            this.Q = z;
-            if (!z && this.R) {
+        if (this.c0 != z) {
+            this.c0 = z;
+            if (!z && this.d0) {
                 setStacked(false);
             }
             requestLayout();

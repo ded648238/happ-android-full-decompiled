@@ -24,293 +24,268 @@ import android.widget.Checkable;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 import androidx.appcompat.widget.AppCompatCheckBox;
-import com.google.android.material.chip.Chip;
-import defpackage.bv7;
-import defpackage.c37;
-import defpackage.e21;
-import defpackage.fn;
-import defpackage.hc7;
-import defpackage.i04;
-import defpackage.j74;
-import defpackage.j86;
-import defpackage.jx6;
-import defpackage.jy6;
-import defpackage.k30;
-import defpackage.my6;
-import defpackage.na5;
-import defpackage.ni0;
-import defpackage.nw7;
-import defpackage.oi0;
-import defpackage.pi0;
-import defpackage.qi0;
-import defpackage.qn7;
-import defpackage.ri0;
-import defpackage.ub;
-import defpackage.v75;
-import defpackage.va5;
-import defpackage.x86;
-import defpackage.xf5;
-import defpackage.xz3;
-import defpackage.y10;
-import defpackage.yr;
-import defpackage.zd7;
+import com.google.android.material.focus.FocusRingDrawable;
+import defpackage.aq7;
+import defpackage.b40;
+import defpackage.cq7;
+import defpackage.d01;
+import defpackage.go4;
+import defpackage.gv7;
+import defpackage.h31;
+import defpackage.h71;
+import defpackage.hh4;
+import defpackage.jf1;
+import defpackage.jq8;
+import defpackage.lv6;
+import defpackage.ni8;
+import defpackage.np0;
+import defpackage.nu5;
+import defpackage.op0;
+import defpackage.pp0;
+import defpackage.qp0;
+import defpackage.r50;
+import defpackage.ra;
+import defpackage.rp0;
+import defpackage.sp0;
+import defpackage.ur5;
+import defpackage.uu5;
+import defpackage.wg4;
+import defpackage.xu6;
+import defpackage.yl0;
+import defpackage.zo7;
 import java.lang.ref.WeakReference;
 import java.util.Locale;
+import okhttp3.HttpUrl;
 import su.happ.proxyutility.dto.XRayConfig;
-import su.happ.proxyutility.feature.report.ReportActivity;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
-    public static final int p0 = na5.Widget_MaterialComponents_Chip_Action;
-    public static final Rect q0 = new Rect();
-    public static final int[] r0 = {R.attr.state_selected};
-    public static final int[] s0 = {R.attr.state_checkable};
-    public ri0 U;
-    public InsetDrawable V;
-    public RippleDrawable W;
-    public View.OnClickListener a0;
-    public CompoundButton.OnCheckedChangeListener b0;
-    public boolean c0;
-    public boolean d0;
-    public boolean e0;
-    public boolean f0;
-    public boolean g0;
-    public int h0;
-    public int i0;
-    public CharSequence j0;
-    public final pi0 k0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class Chip extends AppCompatCheckBox implements rp0, lv6, Checkable {
+    public sp0 g0;
+    public InsetDrawable h0;
+    public RippleDrawable i0;
+    public View.OnClickListener j0;
+    public CompoundButton.OnCheckedChangeListener k0;
     public boolean l0;
-    public final Rect m0;
-    public final RectF n0;
-    public final ni0 o0;
+    public boolean m0;
+    public boolean n0;
+    public boolean o0;
+    public boolean p0;
+    public int q0;
+    public int r0;
+    public CharSequence s0;
+    public final qp0 t0;
+    public boolean u0;
+    public final Rect v0;
+    public final RectF w0;
+    public final op0 x0;
+    public static final int y0 = nu5.Widget_MaterialComponents_Chip_Action;
+    public static final Rect z0 = new Rect();
+    public static final int[] A0 = {R.attr.state_selected};
+    public static final int[] B0 = {R.attr.state_checkable};
 
     /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public Chip(Context context, AttributeSet attributeSet, int i) {
+        super(hh4.b(context, attributeSet, i, r5), attributeSet, i);
         int resourceId;
         int resourceId2;
         int resourceId3;
-        int i2 = p0;
-        super(i04.a(context, attributeSet, i, i2), attributeSet, i);
-        this.m0 = new Rect();
-        this.n0 = new RectF();
-        final int i3 = 0;
-        this.o0 = new ni0(i3, this);
+        int i2 = y0;
+        this.v0 = new Rect();
+        this.w0 = new RectF();
+        int i3 = 0;
+        this.x0 = new op0(i3, this);
         Context context2 = getContext();
         if (attributeSet != null) {
             attributeSet.getAttributeValue("http://schemas.android.com/apk/res/android", "background");
             if (attributeSet.getAttributeValue("http://schemas.android.com/apk/res/android", "drawableLeft") != null) {
-                fn.l("Please set left drawable using R.attr#chipIcon.");
+                ra.g("Please set left drawable using R.attr#chipIcon.");
                 throw null;
             }
             if (attributeSet.getAttributeValue("http://schemas.android.com/apk/res/android", "drawableStart") != null) {
-                fn.l("Please set start drawable using R.attr#chipIcon.");
+                ra.g("Please set start drawable using R.attr#chipIcon.");
                 throw null;
             }
             if (attributeSet.getAttributeValue("http://schemas.android.com/apk/res/android", "drawableEnd") != null) {
-                fn.l("Please set end drawable using R.attr#closeIcon.");
+                ra.g("Please set end drawable using R.attr#closeIcon.");
                 throw null;
             }
             if (attributeSet.getAttributeValue("http://schemas.android.com/apk/res/android", "drawableRight") != null) {
-                fn.l("Please set end drawable using R.attr#closeIcon.");
+                ra.g("Please set end drawable using R.attr#closeIcon.");
                 throw null;
             }
             if (!attributeSet.getAttributeBooleanValue("http://schemas.android.com/apk/res/android", "singleLine", true) || attributeSet.getAttributeIntValue("http://schemas.android.com/apk/res/android", "lines", 1) != 1 || attributeSet.getAttributeIntValue("http://schemas.android.com/apk/res/android", "minLines", 1) != 1 || attributeSet.getAttributeIntValue("http://schemas.android.com/apk/res/android", "maxLines", 1) != 1) {
-                fn.l("Chip does not support multi-line text");
+                ra.g("Chip does not support multi-line text");
                 throw null;
             }
             attributeSet.getAttributeIntValue("http://schemas.android.com/apk/res/android", "gravity", 8388627);
         }
-        ri0 ri0Var = new ri0(context2, attributeSet, i);
-        TypedArray typedArrayD = c37.d(ri0Var.d1, attributeSet, va5.Chip, i, i2, new int[0]);
-        ri0Var.D1 = typedArrayD.hasValue(va5.Chip_shapeAppearance);
-        int i4 = va5.Chip_chipSurfaceColor;
-        Context context3 = ri0Var.d1;
-        ColorStateList colorStateListF = hc7.F(context3, typedArrayD, i4);
-        if (ri0Var.w0 != colorStateListF) {
-            ri0Var.w0 = colorStateListF;
-            ri0Var.onStateChange(ri0Var.getState());
+        sp0 sp0Var = new sp0(context2, attributeSet, i);
+        TypedArray d = gv7.d(sp0Var.m1, attributeSet, uu5.Chip, i, i2, new int[0]);
+        sp0Var.M1 = d.hasValue(uu5.Chip_shapeAppearance);
+        int i4 = uu5.Chip_chipSurfaceColor;
+        Context context3 = sp0Var.m1;
+        ColorStateList x = jf1.x(context3, d, i4);
+        if (sp0Var.F0 != x) {
+            sp0Var.F0 = x;
+            sp0Var.onStateChange(sp0Var.getState());
         }
-        ColorStateList colorStateListF2 = hc7.F(context3, typedArrayD, va5.Chip_chipBackgroundColor);
-        if (ri0Var.x0 != colorStateListF2) {
-            ri0Var.x0 = colorStateListF2;
-            ri0Var.onStateChange(ri0Var.getState());
+        ColorStateList x2 = jf1.x(context3, d, uu5.Chip_chipBackgroundColor);
+        if (sp0Var.G0 != x2) {
+            sp0Var.G0 = x2;
+            sp0Var.onStateChange(sp0Var.getState());
         }
-        float dimension = typedArrayD.getDimension(va5.Chip_chipMinHeight, 0.0f);
-        if (ri0Var.y0 != dimension) {
-            ri0Var.y0 = dimension;
-            ri0Var.invalidateSelf();
-            ri0Var.H();
+        float dimension = d.getDimension(uu5.Chip_chipMinHeight, 0.0f);
+        if (sp0Var.H0 != dimension) {
+            sp0Var.H0 = dimension;
+            sp0Var.invalidateSelf();
+            sp0Var.M();
         }
-        if (typedArrayD.hasValue(va5.Chip_chipCornerRadius)) {
-            ri0Var.N(typedArrayD.getDimension(va5.Chip_chipCornerRadius, 0.0f));
+        if (d.hasValue(uu5.Chip_chipCornerRadius)) {
+            sp0Var.S(d.getDimension(uu5.Chip_chipCornerRadius, 0.0f));
         }
-        ri0Var.S(hc7.F(context3, typedArrayD, va5.Chip_chipStrokeColor));
-        ri0Var.T(typedArrayD.getDimension(va5.Chip_chipStrokeWidth, 0.0f));
-        ri0Var.d0(hc7.F(context3, typedArrayD, va5.Chip_rippleColor));
-        String text = typedArrayD.getText(va5.Chip_android_text);
-        text = text == null ? "" : text;
-        boolean zEquals = TextUtils.equals(ri0Var.D0, text);
-        my6 my6Var = ri0Var.j1;
-        if (!zEquals) {
-            ri0Var.D0 = text;
-            my6Var.d = true;
-            ri0Var.invalidateSelf();
-            ri0Var.H();
+        sp0Var.X(jf1.x(context3, d, uu5.Chip_chipStrokeColor));
+        sp0Var.Y(d.getDimension(uu5.Chip_chipStrokeWidth, 0.0f));
+        sp0Var.i0(jf1.x(context3, d, uu5.Chip_rippleColor));
+        CharSequence text = d.getText(uu5.Chip_android_text);
+        text = text == null ? HttpUrl.FRAGMENT_ENCODE_SET : text;
+        boolean equals = TextUtils.equals(sp0Var.M0, text);
+        cq7 cq7Var = sp0Var.s1;
+        if (!equals) {
+            sp0Var.M0 = text;
+            cq7Var.d = true;
+            sp0Var.invalidateSelf();
+            sp0Var.M();
         }
-        int i5 = va5.Chip_android_textAppearance;
-        jx6 jx6Var = (!typedArrayD.hasValue(i5) || (resourceId3 = typedArrayD.getResourceId(i5, 0)) == 0) ? null : new jx6(context3, resourceId3);
-        jx6Var.l = typedArrayD.getDimension(va5.Chip_android_textSize, jx6Var.l);
-        int i6 = Build.VERSION.SDK_INT;
-        if (i6 < 23) {
-            jx6Var.k = hc7.F(context3, typedArrayD, va5.Chip_android_textColor);
+        int i5 = uu5.Chip_android_textAppearance;
+        zo7 zo7Var = (!d.hasValue(i5) || (resourceId3 = d.getResourceId(i5, 0)) == 0) ? null : new zo7(context3, resourceId3);
+        zo7Var.l = d.getDimension(uu5.Chip_android_textSize, zo7Var.l);
+        if (Build.VERSION.SDK_INT >= 26) {
+            int i6 = uu5.Chip_fontVariationSettings;
+            i6 = d.hasValue(i6) ? i6 : uu5.Chip_android_fontVariationSettings;
+            if (d.hasValue(i6)) {
+                zo7Var.c = d.getString(i6);
+            }
         }
-        my6Var.b(jx6Var, context3);
-        int i7 = typedArrayD.getInt(va5.Chip_android_ellipsize, 0);
+        cq7Var.b(zo7Var, context3);
+        int i7 = d.getInt(uu5.Chip_android_ellipsize, 0);
         if (i7 == 1) {
-            ri0Var.A1 = TextUtils.TruncateAt.START;
+            sp0Var.J1 = TextUtils.TruncateAt.START;
         } else if (i7 == 2) {
-            ri0Var.A1 = TextUtils.TruncateAt.MIDDLE;
+            sp0Var.J1 = TextUtils.TruncateAt.MIDDLE;
         } else if (i7 == 3) {
-            ri0Var.A1 = TextUtils.TruncateAt.END;
+            sp0Var.J1 = TextUtils.TruncateAt.END;
         }
-        ri0Var.R(typedArrayD.getBoolean(va5.Chip_chipIconVisible, false));
+        sp0Var.W(d.getBoolean(uu5.Chip_chipIconVisible, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "chipIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "chipIconVisible") == null) {
-            ri0Var.R(typedArrayD.getBoolean(va5.Chip_chipIconEnabled, false));
+            sp0Var.W(d.getBoolean(uu5.Chip_chipIconEnabled, false));
         }
-        ri0Var.O(hc7.I(context3, typedArrayD, va5.Chip_chipIcon));
-        if (typedArrayD.hasValue(va5.Chip_chipIconTint)) {
-            ri0Var.Q(hc7.F(context3, typedArrayD, va5.Chip_chipIconTint));
+        sp0Var.T(jf1.A(context3, d, uu5.Chip_chipIcon));
+        if (d.hasValue(uu5.Chip_chipIconTint)) {
+            sp0Var.V(jf1.x(context3, d, uu5.Chip_chipIconTint));
         }
-        ri0Var.P(typedArrayD.getDimension(va5.Chip_chipIconSize, -1.0f));
-        ri0Var.a0(typedArrayD.getBoolean(va5.Chip_closeIconVisible, false));
+        sp0Var.U(d.getDimension(uu5.Chip_chipIconSize, -1.0f));
+        sp0Var.f0(d.getBoolean(uu5.Chip_closeIconVisible, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconVisible") == null) {
-            ri0Var.a0(typedArrayD.getBoolean(va5.Chip_closeIconEnabled, false));
+            sp0Var.f0(d.getBoolean(uu5.Chip_closeIconEnabled, false));
         }
-        ri0Var.U(hc7.I(context3, typedArrayD, va5.Chip_closeIcon));
-        ri0Var.Z(hc7.F(context3, typedArrayD, va5.Chip_closeIconTint));
-        ri0Var.W(typedArrayD.getDimension(va5.Chip_closeIconSize, 0.0f));
-        ri0Var.J(typedArrayD.getBoolean(va5.Chip_android_checkable, false));
-        ri0Var.M(typedArrayD.getBoolean(va5.Chip_checkedIconVisible, false));
+        sp0Var.Z(jf1.A(context3, d, uu5.Chip_closeIcon));
+        sp0Var.e0(jf1.x(context3, d, uu5.Chip_closeIconTint));
+        sp0Var.b0(d.getDimension(uu5.Chip_closeIconSize, 0.0f));
+        sp0Var.O(d.getBoolean(uu5.Chip_android_checkable, false));
+        sp0Var.R(d.getBoolean(uu5.Chip_checkedIconVisible, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "checkedIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "checkedIconVisible") == null) {
-            ri0Var.M(typedArrayD.getBoolean(va5.Chip_checkedIconEnabled, false));
+            sp0Var.R(d.getBoolean(uu5.Chip_checkedIconEnabled, false));
         }
-        ri0Var.K(hc7.I(context3, typedArrayD, va5.Chip_checkedIcon));
-        if (typedArrayD.hasValue(va5.Chip_checkedIconTint)) {
-            ri0Var.L(hc7.F(context3, typedArrayD, va5.Chip_checkedIconTint));
+        sp0Var.P(jf1.A(context3, d, uu5.Chip_checkedIcon));
+        if (d.hasValue(uu5.Chip_checkedIconTint)) {
+            sp0Var.Q(jf1.x(context3, d, uu5.Chip_checkedIconTint));
         }
-        int i8 = va5.Chip_showMotionSpec;
-        ri0Var.T0 = (!typedArrayD.hasValue(i8) || (resourceId2 = typedArrayD.getResourceId(i8, 0)) == 0) ? null : j74.a(context3, resourceId2);
-        int i9 = va5.Chip_hideMotionSpec;
-        ri0Var.U0 = (!typedArrayD.hasValue(i9) || (resourceId = typedArrayD.getResourceId(i9, 0)) == 0) ? null : j74.a(context3, resourceId);
-        float dimension2 = typedArrayD.getDimension(va5.Chip_chipStartPadding, 0.0f);
-        if (ri0Var.V0 != dimension2) {
-            ri0Var.V0 = dimension2;
-            ri0Var.invalidateSelf();
-            ri0Var.H();
+        int i8 = uu5.Chip_showMotionSpec;
+        sp0Var.c1 = (!d.hasValue(i8) || (resourceId2 = d.getResourceId(i8, 0)) == 0) ? null : go4.a(context3, resourceId2);
+        int i9 = uu5.Chip_hideMotionSpec;
+        sp0Var.d1 = (!d.hasValue(i9) || (resourceId = d.getResourceId(i9, 0)) == 0) ? null : go4.a(context3, resourceId);
+        float dimension2 = d.getDimension(uu5.Chip_chipStartPadding, 0.0f);
+        if (sp0Var.e1 != dimension2) {
+            sp0Var.e1 = dimension2;
+            sp0Var.invalidateSelf();
+            sp0Var.M();
         }
-        ri0Var.c0(typedArrayD.getDimension(va5.Chip_iconStartPadding, 0.0f));
-        ri0Var.b0(typedArrayD.getDimension(va5.Chip_iconEndPadding, 0.0f));
-        float dimension3 = typedArrayD.getDimension(va5.Chip_textStartPadding, 0.0f);
-        if (ri0Var.Y0 != dimension3) {
-            ri0Var.Y0 = dimension3;
-            ri0Var.invalidateSelf();
-            ri0Var.H();
+        sp0Var.h0(d.getDimension(uu5.Chip_iconStartPadding, 0.0f));
+        sp0Var.g0(d.getDimension(uu5.Chip_iconEndPadding, 0.0f));
+        float dimension3 = d.getDimension(uu5.Chip_textStartPadding, 0.0f);
+        if (sp0Var.h1 != dimension3) {
+            sp0Var.h1 = dimension3;
+            sp0Var.invalidateSelf();
+            sp0Var.M();
         }
-        float dimension4 = typedArrayD.getDimension(va5.Chip_textEndPadding, 0.0f);
-        if (ri0Var.Z0 != dimension4) {
-            ri0Var.Z0 = dimension4;
-            ri0Var.invalidateSelf();
-            ri0Var.H();
+        float dimension4 = d.getDimension(uu5.Chip_textEndPadding, 0.0f);
+        if (sp0Var.i1 != dimension4) {
+            sp0Var.i1 = dimension4;
+            sp0Var.invalidateSelf();
+            sp0Var.M();
         }
-        ri0Var.X(typedArrayD.getDimension(va5.Chip_closeIconStartPadding, 0.0f));
-        ri0Var.V(typedArrayD.getDimension(va5.Chip_closeIconEndPadding, 0.0f));
-        float dimension5 = typedArrayD.getDimension(va5.Chip_chipEndPadding, 0.0f);
-        if (ri0Var.c1 != dimension5) {
-            ri0Var.c1 = dimension5;
-            ri0Var.invalidateSelf();
-            ri0Var.H();
+        sp0Var.c0(d.getDimension(uu5.Chip_closeIconStartPadding, 0.0f));
+        sp0Var.a0(d.getDimension(uu5.Chip_closeIconEndPadding, 0.0f));
+        float dimension5 = d.getDimension(uu5.Chip_chipEndPadding, 0.0f);
+        if (sp0Var.l1 != dimension5) {
+            sp0Var.l1 = dimension5;
+            sp0Var.invalidateSelf();
+            sp0Var.M();
         }
-        ri0Var.C1 = typedArrayD.getDimensionPixelSize(va5.Chip_android_maxWidth, Integer.MAX_VALUE);
-        typedArrayD.recycle();
-        int[] iArr = va5.Chip;
-        c37.a(context2, attributeSet, i, i2);
-        c37.b(context2, attributeSet, iArr, i, i2, new int[0]);
-        TypedArray typedArrayObtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, iArr, i, i2);
-        this.g0 = typedArrayObtainStyledAttributes.getBoolean(va5.Chip_ensureMinTouchTargetSize, false);
-        this.i0 = (int) Math.ceil(typedArrayObtainStyledAttributes.getDimension(va5.Chip_chipMinTouchTargetSize, xf5.i0(context2)));
-        typedArrayObtainStyledAttributes.recycle();
-        setChipDrawable(ri0Var);
-        ri0Var.p(getElevation());
-        int[] iArr2 = va5.Chip;
-        c37.a(context2, attributeSet, i, i2);
-        c37.b(context2, attributeSet, iArr2, i, i2, new int[0]);
-        TypedArray typedArrayObtainStyledAttributes2 = context2.obtainStyledAttributes(attributeSet, iArr2, i, i2);
-        if (i6 < 23) {
-            setTextColor(hc7.F(context2, typedArrayObtainStyledAttributes2, va5.Chip_android_textColor));
-        }
-        boolean zHasValue = typedArrayObtainStyledAttributes2.hasValue(va5.Chip_shapeAppearance);
-        typedArrayObtainStyledAttributes2.recycle();
-        this.k0 = new pi0(this, this);
+        sp0Var.L1 = d.getDimensionPixelSize(uu5.Chip_android_maxWidth, Integer.MAX_VALUE);
+        d.recycle();
+        int[] iArr = uu5.Chip;
+        gv7.a(context2, attributeSet, i, i2);
+        gv7.b(context2, attributeSet, iArr, i, i2, new int[0]);
+        TypedArray obtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, iArr, i, i2);
+        this.p0 = obtainStyledAttributes.getBoolean(uu5.Chip_ensureMinTouchTargetSize, false);
+        this.r0 = (int) Math.ceil(obtainStyledAttributes.getDimension(uu5.Chip_chipMinTouchTargetSize, d01.P(context2)));
+        obtainStyledAttributes.recycle();
+        setChipDrawable(sp0Var);
+        sp0Var.s(getElevation());
+        int[] iArr2 = uu5.Chip;
+        gv7.a(context2, attributeSet, i, i2);
+        gv7.b(context2, attributeSet, iArr2, i, i2, new int[0]);
+        TypedArray obtainStyledAttributes2 = context2.obtainStyledAttributes(attributeSet, iArr2, i, i2);
+        boolean hasValue = obtainStyledAttributes2.hasValue(uu5.Chip_shapeAppearance);
+        obtainStyledAttributes2.recycle();
+        this.t0 = new qp0(this, this);
         e();
-        if (!zHasValue) {
-            setOutlineProvider(new oi0(this, i3));
+        if (!hasValue) {
+            setOutlineProvider(new pp0(this, i3));
         }
-        setChecked(this.c0);
-        setText(ri0Var.D0);
-        setEllipsize(ri0Var.A1);
+        setChecked(this.l0);
+        setText(sp0Var.M0);
+        setEllipsize(sp0Var.J1);
         h();
-        if (!this.U.B1) {
+        if (!this.g0.K1) {
             setLines(1);
             setHorizontallyScrolling(true);
         }
         setGravity(8388627);
         g();
-        if (this.g0) {
-            setMinHeight(this.i0);
+        if (this.p0) {
+            setMinHeight(this.r0);
         }
-        this.h0 = getLayoutDirection();
-        super.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: mi0
-            @Override // android.widget.CompoundButton.OnCheckedChangeListener
-            public final void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-                Object value;
-                ui5 ui5Var;
-                int i10 = i3;
-                ReportActivity reportActivity = this;
-                switch (i10) {
-                    case 0:
-                        CompoundButton.OnCheckedChangeListener onCheckedChangeListener = ((Chip) reportActivity).b0;
-                        if (onCheckedChangeListener != null) {
-                            onCheckedChangeListener.onCheckedChanged(compoundButton, z);
-                        }
-                        break;
-                    default:
-                        int i11 = ReportActivity.E0;
-                        compoundButton.getClass();
-                        jh6 jh6Var = ((vi5) reportActivity.D0.getValue()).b;
-                        jh6Var.getClass();
-                        do {
-                            value = jh6Var.getValue();
-                            ui5Var = (ui5) value;
-                            ui5Var.getClass();
-                        } while (!jh6Var.i(value, ui5.a(ui5Var, z, null, 2)));
-                        break;
-                }
-            }
-        });
+        this.q0 = getLayoutDirection();
+        super.setOnCheckedChangeListener(new np0(this, i3));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public RectF getCloseIconTouchBounds() {
-        RectF rectF = this.n0;
+        RectF rectF = this.w0;
         rectF.setEmpty();
-        if (d() && this.a0 != null) {
-            ri0 ri0Var = this.U;
-            Rect bounds = ri0Var.getBounds();
+        if (d() && this.j0 != null) {
+            sp0 sp0Var = this.g0;
+            Rect bounds = sp0Var.getBounds();
             rectF.setEmpty();
-            if (ri0Var.g0()) {
-                float f = ri0Var.c1 + ri0Var.b1 + ri0Var.N0 + ri0Var.a1 + ri0Var.Z0;
-                if (yr.E(ri0Var) == 0) {
+            if (sp0Var.l0()) {
+                float f = sp0Var.l1 + sp0Var.k1 + sp0Var.W0 + sp0Var.j1 + sp0Var.i1;
+                if (sp0Var.getLayoutDirection() == 0) {
                     float f2 = bounds.right;
                     rectF.right = f2;
                     rectF.left = f2 - f;
@@ -333,43 +308,43 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
         int i2 = (int) closeIconTouchBounds.top;
         int i3 = (int) closeIconTouchBounds.right;
         int i4 = (int) closeIconTouchBounds.bottom;
-        Rect rect = this.m0;
+        Rect rect = this.v0;
         rect.set(i, i2, i3, i4);
         return rect;
     }
 
-    private jx6 getTextAppearance() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.j1.f;
+    private zo7 getTextAppearance() {
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.s1.f;
         }
         return null;
     }
 
     private void setCloseIconHovered(boolean z) {
-        if (this.e0 != z) {
-            this.e0 = z;
+        if (this.n0 != z) {
+            this.n0 = z;
             refreshDrawableState();
         }
     }
 
     private void setCloseIconPressed(boolean z) {
-        if (this.d0 != z) {
-            this.d0 = z;
+        if (this.m0 != z) {
+            this.m0 = z;
             refreshDrawableState();
         }
     }
 
     public final void c(int i) {
-        this.i0 = i;
-        if (!this.g0) {
-            InsetDrawable insetDrawable = this.V;
+        this.r0 = i;
+        if (!this.p0) {
+            InsetDrawable insetDrawable = this.h0;
             if (insetDrawable == null) {
                 f();
                 return;
             } else {
                 if (insetDrawable != null) {
-                    this.V = null;
+                    this.h0 = null;
                     setMinWidth(0);
                     setMinHeight((int) getChipMinHeight());
                     f();
@@ -378,16 +353,16 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
                 return;
             }
         }
-        int iMax = Math.max(0, i - ((int) this.U.y0));
-        int iMax2 = Math.max(0, i - this.U.getIntrinsicWidth());
-        if (iMax2 <= 0 && iMax <= 0) {
-            InsetDrawable insetDrawable2 = this.V;
+        int max = Math.max(0, i - ((int) this.g0.H0));
+        int max2 = Math.max(0, i - this.g0.getIntrinsicWidth());
+        if (max2 <= 0 && max <= 0) {
+            InsetDrawable insetDrawable2 = this.h0;
             if (insetDrawable2 == null) {
                 f();
                 return;
             } else {
                 if (insetDrawable2 != null) {
-                    this.V = null;
+                    this.h0 = null;
                     setMinWidth(0);
                     setMinHeight((int) getChipMinHeight());
                     f();
@@ -396,11 +371,11 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
                 return;
             }
         }
-        int i2 = iMax2 > 0 ? iMax2 / 2 : 0;
-        int i3 = iMax > 0 ? iMax / 2 : 0;
-        if (this.V != null) {
+        int i2 = max2 > 0 ? max2 / 2 : 0;
+        int i3 = max > 0 ? max / 2 : 0;
+        if (this.h0 != null) {
             Rect rect = new Rect();
-            this.V.getPadding(rect);
+            this.h0.getPadding(rect);
             if (rect.top == i3 && rect.bottom == i3 && rect.left == i2 && rect.right == i2) {
                 f();
                 return;
@@ -412,53 +387,45 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
         if (getMinWidth() != i) {
             setMinWidth(i);
         }
-        this.V = new InsetDrawable((Drawable) this.U, i2, i3, i2, i3);
+        this.h0 = new InsetDrawable((Drawable) this.g0, i2, i3, i2, i3);
         f();
     }
 
     public final boolean d() {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null) {
             return false;
         }
-        Drawable drawable = ri0Var.K0;
+        Drawable drawable = sp0Var.T0;
         if (drawable == null) {
             drawable = null;
-        } else if (drawable instanceof nw7) {
-            drawable = ((nw7) drawable).V;
         }
         return drawable != null;
     }
 
     @Override // android.view.View
     public final boolean dispatchHoverEvent(MotionEvent motionEvent) {
-        if (this.l0) {
-            return this.k0.m(motionEvent) || super.dispatchHoverEvent(motionEvent);
-        }
-        return super.dispatchHoverEvent(motionEvent);
+        return !this.u0 ? super.dispatchHoverEvent(motionEvent) : this.t0.m(motionEvent) || super.dispatchHoverEvent(motionEvent);
     }
 
-    /* JADX WARN: Code duplicated, block: B:31:0x0057  */
-    /* JADX WARN: Code duplicated, block: B:37:0x0067  */
     @Override // android.view.View
     public final boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        int i;
-        if (!this.l0) {
+        if (!this.u0) {
             return super.dispatchKeyEvent(keyEvent);
         }
-        pi0 pi0Var = this.k0;
-        pi0Var.getClass();
-        boolean zQ = false;
-        int i2 = 0;
-        zQ = false;
-        zQ = false;
-        zQ = false;
-        zQ = false;
-        zQ = false;
+        qp0 qp0Var = this.t0;
+        qp0Var.getClass();
+        boolean z = false;
+        int i = 0;
+        z = false;
+        z = false;
+        z = false;
+        z = false;
+        z = false;
         if (keyEvent.getAction() != 1) {
             int keyCode = keyEvent.getKeyCode();
             if (keyCode != 61) {
-                int i3 = 66;
+                int i2 = 66;
                 if (keyCode != 66) {
                     switch (keyCode) {
                         case 19:
@@ -467,74 +434,64 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
                         case 22:
                             if (keyEvent.hasNoModifiers()) {
                                 if (keyCode == 19) {
-                                    i3 = 33;
+                                    i2 = 33;
                                 } else if (keyCode == 21) {
-                                    i3 = 17;
+                                    i2 = 17;
                                 } else if (keyCode != 22) {
-                                    i3 = 130;
+                                    i2 = 130;
                                 }
                                 int repeatCount = keyEvent.getRepeatCount() + 1;
-                                boolean z = false;
-                                while (i2 < repeatCount && pi0Var.q(i3, null)) {
-                                    i2++;
-                                    z = true;
+                                boolean z2 = false;
+                                while (i < repeatCount && qp0Var.p(i2, null)) {
+                                    i++;
+                                    z2 = true;
                                 }
-                                zQ = z;
-                            }
-                            break;
-                        case 23:
-                            if (keyEvent.hasNoModifiers() && keyEvent.getRepeatCount() == 0) {
-                                i = pi0Var.l;
-                                if (i != Integer.MIN_VALUE) {
-                                    pi0Var.s(i, 16, null);
-                                }
-                                zQ = true;
+                                z = z2;
+                                break;
                             }
                             break;
                     }
-                } else if (keyEvent.hasNoModifiers()) {
-                    i = pi0Var.l;
-                    if (i != Integer.MIN_VALUE) {
-                        pi0Var.s(i, 16, null);
+                }
+                if (keyEvent.hasNoModifiers() && keyEvent.getRepeatCount() == 0) {
+                    int i3 = qp0Var.k0;
+                    if (i3 != Integer.MIN_VALUE) {
+                        qp0Var.r(i3, 16, null);
                     }
-                    zQ = true;
+                    z = true;
                 }
             } else if (keyEvent.hasNoModifiers()) {
-                zQ = pi0Var.q(2, null);
+                z = qp0Var.p(2, null);
             } else if (keyEvent.hasModifiers(1)) {
-                zQ = pi0Var.q(1, null);
+                z = qp0Var.p(1, null);
             }
         }
-        if (!zQ || pi0Var.l == Integer.MIN_VALUE) {
+        if (!z || qp0Var.k0 == Integer.MIN_VALUE) {
             return super.dispatchKeyEvent(keyEvent);
         }
         return true;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r2v0, types: [boolean, int] */
     @Override // androidx.appcompat.widget.AppCompatCheckBox, android.widget.CompoundButton, android.widget.TextView, android.view.View
     public final void drawableStateChanged() {
-        int i;
         super.drawableStateChanged();
-        ri0 ri0Var = this.U;
-        boolean zY = false;
-        int i2 = 0;
-        zY = false;
-        if (ri0Var != null && ri0.G(ri0Var.K0)) {
-            ri0 ri0Var2 = this.U;
-            ?? IsEnabled = isEnabled();
-            if (this.f0) {
-                i = IsEnabled;
-                i = IsEnabled + 1;
+        sp0 sp0Var = this.g0;
+        boolean z = false;
+        int i = 0;
+        z = false;
+        if (sp0Var != null && sp0.L(sp0Var.T0)) {
+            sp0 sp0Var2 = this.g0;
+            ?? isEnabled = isEnabled();
+            int i2 = isEnabled;
+            if (this.o0) {
+                i2 = isEnabled + 1;
             }
-            i = IsEnabled;
-            int i3 = i;
-            if (this.e0) {
-                i3 = i + 1;
+            int i3 = i2;
+            if (this.n0) {
+                i3 = i2 + 1;
             }
             int i4 = i3;
-            if (this.d0) {
+            if (this.m0) {
                 i4 = i3 + 1;
             }
             int i5 = i4;
@@ -544,72 +501,74 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
             int[] iArr = new int[i5];
             if (isEnabled()) {
                 iArr[0] = 16842910;
-                i2 = 1;
+                i = 1;
             }
-            if (this.f0) {
-                iArr[i2] = 16842908;
-                i2++;
+            if (this.o0) {
+                iArr[i] = 16842908;
+                i++;
             }
-            if (this.e0) {
-                iArr[i2] = 16843623;
-                i2++;
+            if (this.n0) {
+                iArr[i] = 16843623;
+                i++;
             }
-            if (this.d0) {
-                iArr[i2] = 16842919;
-                i2++;
+            if (this.m0) {
+                iArr[i] = 16842919;
+                i++;
             }
             if (isChecked()) {
-                iArr[i2] = 16842913;
+                iArr[i] = 16842913;
             }
-            zY = ri0Var2.Y(iArr);
+            z = sp0Var2.d0(iArr);
         }
-        if (zY) {
+        if (z) {
             invalidate();
         }
     }
 
     public final void e() {
-        ri0 ri0Var;
-        if (!d() || (ri0Var = this.U) == null || !ri0Var.J0 || this.a0 == null) {
-            qn7.q(this, null);
-            this.l0 = false;
+        sp0 sp0Var;
+        if (!d() || (sp0Var = this.g0) == null || !sp0Var.S0 || this.j0 == null) {
+            ni8.m(this, null);
+            this.u0 = false;
         } else {
-            qn7.q(this, this.k0);
-            this.l0 = true;
+            ni8.m(this, this.t0);
+            this.u0 = true;
         }
     }
 
     public final void f() {
-        this.W = new RippleDrawable(e21.J(this.U.C0), getBackgroundDrawable(), null);
-        this.U.getClass();
-        setBackground(this.W);
+        RippleDrawable rippleDrawable = new RippleDrawable(h31.q0(this.g0.L0), getBackgroundDrawable(), null);
+        FocusRingDrawable.f(getContext(), rippleDrawable, this.g0);
+        this.i0 = rippleDrawable;
+        this.g0.getClass();
+        setBackground(this.i0);
         g();
     }
 
     public final void g() {
-        ri0 ri0Var;
-        if (TextUtils.isEmpty(getText()) || (ri0Var = this.U) == null) {
+        sp0 sp0Var;
+        if (TextUtils.isEmpty(getText()) || (sp0Var = this.g0) == null) {
             return;
         }
-        int iD = (int) (ri0Var.D() + ri0Var.c1 + ri0Var.Z0);
-        ri0 ri0Var2 = this.U;
-        int iC = (int) (ri0Var2.C() + ri0Var2.V0 + ri0Var2.Y0);
-        if (this.V != null) {
+        int I = (int) (sp0Var.I() + sp0Var.l1 + sp0Var.i1);
+        sp0 sp0Var2 = this.g0;
+        int H = (int) (sp0Var2.H() + sp0Var2.e1 + sp0Var2.h1);
+        if (this.h0 != null) {
             Rect rect = new Rect();
-            this.V.getPadding(rect);
-            iC += rect.left;
-            iD += rect.right;
+            this.h0.getPadding(rect);
+            H += rect.left;
+            I += rect.right;
         }
-        setPaddingRelative(iC, getPaddingTop(), iD, getPaddingBottom());
+        setPaddingRelative(H, getPaddingTop(), I, getPaddingBottom());
     }
 
     @Override // android.widget.CheckBox, android.widget.CompoundButton, android.widget.Button, android.widget.TextView, android.view.View
     public CharSequence getAccessibilityClassName() {
-        if (!TextUtils.isEmpty(this.j0)) {
-            return this.j0;
+        if (!TextUtils.isEmpty(this.s0)) {
+            return this.s0;
         }
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || !ri0Var.P0) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || !sp0Var.Y0) {
             return isClickable() ? "android.widget.Button" : "android.view.View";
         }
         getParent();
@@ -617,107 +576,107 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     }
 
     public Drawable getBackgroundDrawable() {
-        InsetDrawable insetDrawable = this.V;
-        return insetDrawable == null ? this.U : insetDrawable;
+        InsetDrawable insetDrawable = this.h0;
+        return insetDrawable == null ? this.g0 : insetDrawable;
     }
 
     public Drawable getCheckedIcon() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.R0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.a1;
         }
         return null;
     }
 
     public ColorStateList getCheckedIconTint() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.S0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.b1;
         }
         return null;
     }
 
     public ColorStateList getChipBackgroundColor() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.x0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.G0;
         }
         return null;
     }
 
     public float getChipCornerRadius() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return Math.max(0.0f, ri0Var.E());
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return Math.max(0.0f, sp0Var.J());
         }
         return 0.0f;
     }
 
     public Drawable getChipDrawable() {
-        return this.U;
+        return this.g0;
     }
 
     public float getChipEndPadding() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.c1;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.l1;
         }
         return 0.0f;
     }
 
     public Drawable getChipIcon() {
         Drawable drawable;
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || (drawable = ri0Var.F0) == null) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || (drawable = sp0Var.O0) == null) {
             return null;
         }
-        return drawable instanceof nw7 ? ((nw7) drawable).V : drawable;
+        return drawable;
     }
 
     public float getChipIconSize() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.H0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.Q0;
         }
         return 0.0f;
     }
 
     public ColorStateList getChipIconTint() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.G0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.P0;
         }
         return null;
     }
 
     public float getChipMinHeight() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.y0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.H0;
         }
         return 0.0f;
     }
 
     public float getChipStartPadding() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.V0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.e1;
         }
         return 0.0f;
     }
 
     public ColorStateList getChipStrokeColor() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.A0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.J0;
         }
         return null;
     }
 
     public float getChipStrokeWidth() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.B0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.K0;
         }
         return 0.0f;
     }
@@ -729,67 +688,67 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
 
     public Drawable getCloseIcon() {
         Drawable drawable;
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || (drawable = ri0Var.K0) == null) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || (drawable = sp0Var.T0) == null) {
             return null;
         }
-        return drawable instanceof nw7 ? ((nw7) drawable).V : drawable;
+        return drawable;
     }
 
     public CharSequence getCloseIconContentDescription() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.O0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.X0;
         }
         return null;
     }
 
     public float getCloseIconEndPadding() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.b1;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.k1;
         }
         return 0.0f;
     }
 
     public float getCloseIconSize() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.N0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.W0;
         }
         return 0.0f;
     }
 
     public float getCloseIconStartPadding() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.a1;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.j1;
         }
         return 0.0f;
     }
 
     public ColorStateList getCloseIconTint() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.M0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.V0;
         }
         return null;
     }
 
     @Override // android.widget.TextView
     public TextUtils.TruncateAt getEllipsize() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.A1;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.J1;
         }
         return null;
     }
 
     @Override // android.widget.TextView, android.view.View
     public final void getFocusedRect(Rect rect) {
-        if (this.l0) {
-            pi0 pi0Var = this.k0;
-            if (pi0Var.l == 1 || pi0Var.k == 1) {
+        if (this.u0) {
+            qp0 qp0Var = this.t0;
+            if (qp0Var.k0 == 1 || qp0Var.j0 == 1) {
                 rect.set(getCloseIconTouchBoundsInt());
                 return;
             }
@@ -797,108 +756,121 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
         super.getFocusedRect(rect);
     }
 
-    public j74 getHideMotionSpec() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.U0;
+    @Override // android.widget.TextView
+    public String getFontVariationSettings() {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null) {
+            return super.getFontVariationSettings();
+        }
+        zo7 zo7Var = sp0Var.s1.f;
+        if (zo7Var == null || Build.VERSION.SDK_INT < 26) {
+            return null;
+        }
+        return zo7Var.c;
+    }
+
+    public go4 getHideMotionSpec() {
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.d1;
         }
         return null;
     }
 
     public float getIconEndPadding() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.X0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.g1;
         }
         return 0.0f;
     }
 
     public float getIconStartPadding() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.W0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.f1;
         }
         return 0.0f;
     }
 
     public ColorStateList getRippleColor() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.C0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.L0;
         }
         return null;
     }
 
-    public j86 getShapeAppearanceModel() {
-        return this.U.R.a;
+    public xu6 getShapeAppearanceModel() {
+        return this.g0.k();
     }
 
-    public j74 getShowMotionSpec() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.T0;
+    public go4 getShowMotionSpec() {
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.c1;
         }
         return null;
     }
 
     public float getTextEndPadding() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.Z0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.i1;
         }
         return 0.0f;
     }
 
     public float getTextStartPadding() {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            return ri0Var.Y0;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            return sp0Var.h1;
         }
         return 0.0f;
     }
 
     public final void h() {
         TextPaint paint = getPaint();
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            paint.drawableState = ri0Var.getState();
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            paint.drawableState = sp0Var.getState();
         }
-        jx6 textAppearance = getTextAppearance();
+        zo7 textAppearance = getTextAppearance();
         if (textAppearance != null) {
-            textAppearance.d(getContext(), paint, this.o0);
+            textAppearance.d(getContext(), paint, this.x0);
         }
     }
 
     @Override // android.widget.TextView, android.view.View
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        zd7.f0(this, this.U);
+        h71.G(this, this.g0);
     }
 
     @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
     public final int[] onCreateDrawableState(int i) {
-        int[] iArrOnCreateDrawableState = super.onCreateDrawableState(i + 2);
+        int[] onCreateDrawableState = super.onCreateDrawableState(i + 2);
         if (isChecked()) {
-            View.mergeDrawableStates(iArrOnCreateDrawableState, r0);
+            View.mergeDrawableStates(onCreateDrawableState, A0);
         }
-        ri0 ri0Var = this.U;
-        if (ri0Var != null && ri0Var.P0) {
-            View.mergeDrawableStates(iArrOnCreateDrawableState, s0);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null && sp0Var.Y0) {
+            View.mergeDrawableStates(onCreateDrawableState, B0);
         }
-        return iArrOnCreateDrawableState;
+        return onCreateDrawableState;
     }
 
     @Override // android.widget.TextView, android.view.View
     public final void onFocusChanged(boolean z, int i, Rect rect) {
         super.onFocusChanged(z, i, rect);
-        if (this.l0) {
-            pi0 pi0Var = this.k0;
-            int i2 = pi0Var.l;
+        if (this.u0) {
+            qp0 qp0Var = this.t0;
+            int i2 = qp0Var.k0;
             if (i2 != Integer.MIN_VALUE) {
-                pi0Var.j(i2);
+                qp0Var.j(i2);
             }
             if (z) {
-                pi0Var.q(i, rect);
+                qp0Var.p(i, rect);
             }
         }
     }
@@ -918,8 +890,8 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     public final void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
         super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
         accessibilityNodeInfo.setClassName(getAccessibilityClassName());
-        ri0 ri0Var = this.U;
-        accessibilityNodeInfo.setCheckable(ri0Var != null && ri0Var.P0);
+        sp0 sp0Var = this.g0;
+        accessibilityNodeInfo.setCheckable(sp0Var != null && sp0Var.Y0);
         accessibilityNodeInfo.setClickable(isClickable());
         getParent();
     }
@@ -932,100 +904,105 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     @Override // android.widget.TextView, android.view.View
     public final void onRtlPropertiesChanged(int i) {
         super.onRtlPropertiesChanged(i);
-        if (this.h0 != i) {
-            this.h0 = i;
+        if (this.q0 != i) {
+            this.q0 = i;
             g();
         }
     }
 
+    /* JADX WARN: Code restructure failed: missing block: B:7:0x001e, code lost:
+    
+        if (r0 != 3) goto L28;
+     */
     @Override // android.widget.TextView, android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final boolean onTouchEvent(MotionEvent motionEvent) {
         boolean z;
         int actionMasked = motionEvent.getActionMasked();
-        boolean zContains = getCloseIconTouchBounds().contains(motionEvent.getX(), motionEvent.getY());
+        boolean contains = getCloseIconTouchBounds().contains(motionEvent.getX(), motionEvent.getY());
         if (actionMasked != 0) {
             if (actionMasked != 1) {
-                if (actionMasked != 2) {
-                    if (actionMasked != 3) {
+                if (actionMasked == 2) {
+                    if (this.m0) {
+                        if (!contains) {
+                            setCloseIconPressed(false);
+                        }
+                        z = true;
                     }
-                } else if (this.d0) {
-                    if (!zContains) {
-                        setCloseIconPressed(false);
-                    }
-                    z = true;
                 }
                 z = false;
-            } else {
-                if (this.d0) {
-                    playSoundEffect(0);
-                    View.OnClickListener onClickListener = this.a0;
-                    if (onClickListener != null) {
-                        onClickListener.onClick(this);
-                    }
-                    if (this.l0) {
-                        this.k0.x(1, 1);
-                    }
-                    z = true;
+            } else if (this.m0) {
+                playSoundEffect(0);
+                View.OnClickListener onClickListener = this.j0;
+                if (onClickListener != null) {
+                    onClickListener.onClick(this);
                 }
+                if (this.u0) {
+                    this.t0.w(1, 1);
+                }
+                z = true;
                 setCloseIconPressed(false);
             }
             z = false;
             setCloseIconPressed(false);
-        } else if (zContains) {
-            setCloseIconPressed(true);
-            z = true;
         } else {
+            if (contains) {
+                setCloseIconPressed(true);
+                z = true;
+            }
             z = false;
         }
         return z || super.onTouchEvent(motionEvent);
     }
 
     public void setAccessibilityClassName(CharSequence charSequence) {
-        this.j0 = charSequence;
+        this.s0 = charSequence;
     }
 
     @Override // android.view.View
     public void setBackground(Drawable drawable) {
-        if (drawable == getBackgroundDrawable() || drawable == this.W) {
+        if (drawable == getBackgroundDrawable() || drawable == this.i0) {
             super.setBackground(drawable);
         }
     }
 
     @Override // androidx.appcompat.widget.AppCompatCheckBox, android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
-        if (drawable == getBackgroundDrawable() || drawable == this.W) {
+        if (drawable == getBackgroundDrawable() || drawable == this.i0) {
             super.setBackgroundDrawable(drawable);
         }
     }
 
     public void setCheckable(boolean z) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.J(z);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.O(z);
         }
     }
 
     public void setCheckableResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.J(ri0Var.d1.getResources().getBoolean(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.O(sp0Var.m1.getResources().getBoolean(i));
         }
     }
 
     @Override // android.widget.CompoundButton, android.widget.Checkable
     public void setChecked(boolean z) {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null) {
-            this.c0 = z;
-        } else if (ri0Var.P0) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null) {
+            this.l0 = z;
+        } else if (sp0Var.Y0) {
             super.setChecked(z);
         }
     }
 
     public void setCheckedIcon(Drawable drawable) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.K(drawable);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.P(drawable);
         }
     }
 
@@ -1040,107 +1017,107 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     }
 
     public void setCheckedIconResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.K(ub.y(ri0Var.d1, i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.P(yl0.u(sp0Var.m1, i));
         }
     }
 
     public void setCheckedIconTint(ColorStateList colorStateList) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.L(colorStateList);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.Q(colorStateList);
         }
     }
 
     public void setCheckedIconTintResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.L(bv7.B(ri0Var.d1, i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.Q(jq8.u(sp0Var.m1, i));
         }
     }
 
     public void setCheckedIconVisible(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.M(ri0Var.d1.getResources().getBoolean(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.R(sp0Var.m1.getResources().getBoolean(i));
         }
     }
 
     public void setChipBackgroundColor(ColorStateList colorStateList) {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || ri0Var.x0 == colorStateList) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || sp0Var.G0 == colorStateList) {
             return;
         }
-        ri0Var.x0 = colorStateList;
-        ri0Var.onStateChange(ri0Var.getState());
+        sp0Var.G0 = colorStateList;
+        sp0Var.onStateChange(sp0Var.getState());
     }
 
     public void setChipBackgroundColorResource(int i) {
-        ColorStateList colorStateListB;
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || ri0Var.x0 == (colorStateListB = bv7.B(ri0Var.d1, i))) {
+        ColorStateList u;
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || sp0Var.G0 == (u = jq8.u(sp0Var.m1, i))) {
             return;
         }
-        ri0Var.x0 = colorStateListB;
-        ri0Var.onStateChange(ri0Var.getState());
+        sp0Var.G0 = u;
+        sp0Var.onStateChange(sp0Var.getState());
     }
 
     @Deprecated
     public void setChipCornerRadius(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.N(f);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.S(f);
         }
     }
 
     @Deprecated
     public void setChipCornerRadiusResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.N(ri0Var.d1.getResources().getDimension(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.S(sp0Var.m1.getResources().getDimension(i));
         }
     }
 
-    public void setChipDrawable(ri0 ri0Var) {
-        ri0 ri0Var2 = this.U;
-        if (ri0Var2 != ri0Var) {
-            if (ri0Var2 != null) {
-                ri0Var2.z1 = new WeakReference(null);
+    public void setChipDrawable(sp0 sp0Var) {
+        sp0 sp0Var2 = this.g0;
+        if (sp0Var2 != sp0Var) {
+            if (sp0Var2 != null) {
+                sp0Var2.I1 = new WeakReference(null);
             }
-            this.U = ri0Var;
-            ri0Var.B1 = false;
-            ri0Var.z1 = new WeakReference(this);
-            c(this.i0);
+            this.g0 = sp0Var;
+            sp0Var.K1 = false;
+            sp0Var.I1 = new WeakReference(this);
+            c(this.r0);
         }
     }
 
     public void setChipEndPadding(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || ri0Var.c1 == f) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || sp0Var.l1 == f) {
             return;
         }
-        ri0Var.c1 = f;
-        ri0Var.invalidateSelf();
-        ri0Var.H();
+        sp0Var.l1 = f;
+        sp0Var.invalidateSelf();
+        sp0Var.M();
     }
 
     public void setChipEndPaddingResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            float dimension = ri0Var.d1.getResources().getDimension(i);
-            if (ri0Var.c1 != dimension) {
-                ri0Var.c1 = dimension;
-                ri0Var.invalidateSelf();
-                ri0Var.H();
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            float dimension = sp0Var.m1.getResources().getDimension(i);
+            if (sp0Var.l1 != dimension) {
+                sp0Var.l1 = dimension;
+                sp0Var.invalidateSelf();
+                sp0Var.M();
             }
         }
     }
 
     public void setChipIcon(Drawable drawable) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.O(drawable);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.T(drawable);
         }
     }
 
@@ -1155,116 +1132,116 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     }
 
     public void setChipIconResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.O(ub.y(ri0Var.d1, i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.T(yl0.u(sp0Var.m1, i));
         }
     }
 
     public void setChipIconSize(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.P(f);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.U(f);
         }
     }
 
     public void setChipIconSizeResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.P(ri0Var.d1.getResources().getDimension(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.U(sp0Var.m1.getResources().getDimension(i));
         }
     }
 
     public void setChipIconTint(ColorStateList colorStateList) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.Q(colorStateList);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.V(colorStateList);
         }
     }
 
     public void setChipIconTintResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.Q(bv7.B(ri0Var.d1, i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.V(jq8.u(sp0Var.m1, i));
         }
     }
 
     public void setChipIconVisible(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.R(ri0Var.d1.getResources().getBoolean(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.W(sp0Var.m1.getResources().getBoolean(i));
         }
     }
 
     public void setChipMinHeight(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || ri0Var.y0 == f) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || sp0Var.H0 == f) {
             return;
         }
-        ri0Var.y0 = f;
-        ri0Var.invalidateSelf();
-        ri0Var.H();
+        sp0Var.H0 = f;
+        sp0Var.invalidateSelf();
+        sp0Var.M();
     }
 
     public void setChipMinHeightResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            float dimension = ri0Var.d1.getResources().getDimension(i);
-            if (ri0Var.y0 != dimension) {
-                ri0Var.y0 = dimension;
-                ri0Var.invalidateSelf();
-                ri0Var.H();
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            float dimension = sp0Var.m1.getResources().getDimension(i);
+            if (sp0Var.H0 != dimension) {
+                sp0Var.H0 = dimension;
+                sp0Var.invalidateSelf();
+                sp0Var.M();
             }
         }
     }
 
     public void setChipStartPadding(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || ri0Var.V0 == f) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || sp0Var.e1 == f) {
             return;
         }
-        ri0Var.V0 = f;
-        ri0Var.invalidateSelf();
-        ri0Var.H();
+        sp0Var.e1 = f;
+        sp0Var.invalidateSelf();
+        sp0Var.M();
     }
 
     public void setChipStartPaddingResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            float dimension = ri0Var.d1.getResources().getDimension(i);
-            if (ri0Var.V0 != dimension) {
-                ri0Var.V0 = dimension;
-                ri0Var.invalidateSelf();
-                ri0Var.H();
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            float dimension = sp0Var.m1.getResources().getDimension(i);
+            if (sp0Var.e1 != dimension) {
+                sp0Var.e1 = dimension;
+                sp0Var.invalidateSelf();
+                sp0Var.M();
             }
         }
     }
 
     public void setChipStrokeColor(ColorStateList colorStateList) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.S(colorStateList);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.X(colorStateList);
         }
     }
 
     public void setChipStrokeColorResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.S(bv7.B(ri0Var.d1, i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.X(jq8.u(sp0Var.m1, i));
         }
     }
 
     public void setChipStrokeWidth(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.T(f);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.Y(f);
         }
     }
 
     public void setChipStrokeWidthResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.T(ri0Var.d1.getResources().getDimension(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.Y(sp0Var.m1.getResources().getDimension(i));
         }
     }
 
@@ -1279,24 +1256,24 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     }
 
     public void setCloseIcon(Drawable drawable) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.U(drawable);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.Z(drawable);
         }
         e();
     }
 
     public void setCloseIconContentDescription(CharSequence charSequence) {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || ri0Var.O0 == charSequence) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || sp0Var.X0 == charSequence) {
             return;
         }
-        String str = y10.b;
-        y10 y10Var = TextUtils.getLayoutDirectionFromLocale(Locale.getDefault()) == 1 ? y10.e : y10.d;
-        y10Var.getClass();
-        k30 k30Var = jy6.a;
-        ri0Var.O0 = y10Var.c(charSequence);
-        ri0Var.invalidateSelf();
+        String str = b40.b;
+        b40 b40Var = TextUtils.getLayoutDirectionFromLocale(Locale.getDefault()) == 1 ? b40.e : b40.d;
+        b40Var.getClass();
+        r50 r50Var = aq7.a;
+        sp0Var.X0 = b40Var.c(charSequence);
+        sp0Var.invalidateSelf();
     }
 
     @Deprecated
@@ -1310,66 +1287,66 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     }
 
     public void setCloseIconEndPadding(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.V(f);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.a0(f);
         }
     }
 
     public void setCloseIconEndPaddingResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.V(ri0Var.d1.getResources().getDimension(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.a0(sp0Var.m1.getResources().getDimension(i));
         }
     }
 
     public void setCloseIconResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.U(ub.y(ri0Var.d1, i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.Z(yl0.u(sp0Var.m1, i));
         }
         e();
     }
 
     public void setCloseIconSize(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.W(f);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.b0(f);
         }
     }
 
     public void setCloseIconSizeResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.W(ri0Var.d1.getResources().getDimension(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.b0(sp0Var.m1.getResources().getDimension(i));
         }
     }
 
     public void setCloseIconStartPadding(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.X(f);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.c0(f);
         }
     }
 
     public void setCloseIconStartPaddingResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.X(ri0Var.d1.getResources().getDimension(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.c0(sp0Var.m1.getResources().getDimension(i));
         }
     }
 
     public void setCloseIconTint(ColorStateList colorStateList) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.Z(colorStateList);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.e0(colorStateList);
         }
     }
 
     public void setCloseIconTintResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.Z(bv7.B(ri0Var.d1, i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.e0(jq8.u(sp0Var.m1, i));
         }
     }
 
@@ -1380,75 +1357,90 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     @Override // androidx.appcompat.widget.AppCompatCheckBox, android.widget.TextView
     public final void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         if (drawable != null) {
-            fn.l("Please set start drawable using R.attr#chipIcon.");
+            ra.g("Please set start drawable using R.attr#chipIcon.");
         } else if (drawable3 == null) {
             super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
         } else {
-            fn.l("Please set end drawable using R.attr#closeIcon.");
+            ra.g("Please set end drawable using R.attr#closeIcon.");
         }
     }
 
     @Override // androidx.appcompat.widget.AppCompatCheckBox, android.widget.TextView
     public final void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         if (drawable != null) {
-            fn.l("Please set start drawable using R.attr#chipIcon.");
+            ra.g("Please set start drawable using R.attr#chipIcon.");
         } else if (drawable3 == null) {
             super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
         } else {
-            fn.l("Please set end drawable using R.attr#closeIcon.");
+            ra.g("Please set end drawable using R.attr#closeIcon.");
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawablesRelativeWithIntrinsicBounds(int i, int i2, int i3, int i4) {
         if (i != 0) {
-            fn.l("Please set start drawable using R.attr#chipIcon.");
+            ra.g("Please set start drawable using R.attr#chipIcon.");
         } else if (i3 == 0) {
             super.setCompoundDrawablesRelativeWithIntrinsicBounds(i, i2, i3, i4);
         } else {
-            fn.l("Please set end drawable using R.attr#closeIcon.");
+            ra.g("Please set end drawable using R.attr#closeIcon.");
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawablesWithIntrinsicBounds(int i, int i2, int i3, int i4) {
         if (i != 0) {
-            fn.l("Please set start drawable using R.attr#chipIcon.");
+            ra.g("Please set start drawable using R.attr#chipIcon.");
         } else if (i3 == 0) {
             super.setCompoundDrawablesWithIntrinsicBounds(i, i2, i3, i4);
         } else {
-            fn.l("Please set end drawable using R.attr#closeIcon.");
+            ra.g("Please set end drawable using R.attr#closeIcon.");
         }
     }
 
     @Override // android.view.View
     public void setElevation(float f) {
         super.setElevation(f);
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.p(f);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.s(f);
         }
     }
 
     @Override // android.widget.TextView
     public void setEllipsize(TextUtils.TruncateAt truncateAt) {
-        if (this.U == null) {
+        if (this.g0 == null) {
             return;
         }
         if (truncateAt == TextUtils.TruncateAt.MARQUEE) {
-            fn.l("Text within a chip are not allowed to scroll.");
+            ra.g("Text within a chip are not allowed to scroll.");
             return;
         }
         super.setEllipsize(truncateAt);
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.A1 = truncateAt;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.J1 = truncateAt;
         }
     }
 
     public void setEnsureMinTouchTargetSize(boolean z) {
-        this.g0 = z;
-        c(this.i0);
+        this.p0 = z;
+        c(this.r0);
+    }
+
+    @Override // android.widget.TextView
+    public final boolean setFontVariationSettings(String str) {
+        super.setFontVariationSettings(str);
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null) {
+            return false;
+        }
+        zo7 zo7Var = sp0Var.s1.f;
+        if (zo7Var != null && Build.VERSION.SDK_INT >= 26) {
+            zo7Var.c = str;
+        }
+        h();
+        return true;
     }
 
     @Override // android.widget.TextView
@@ -1459,51 +1451,51 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
         super.setGravity(i);
     }
 
-    public void setHideMotionSpec(j74 j74Var) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.U0 = j74Var;
+    public void setHideMotionSpec(go4 go4Var) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.d1 = go4Var;
         }
     }
 
     public void setHideMotionSpecResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.U0 = j74.a(ri0Var.d1, i);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.d1 = go4.a(sp0Var.m1, i);
         }
     }
 
     public void setIconEndPadding(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.b0(f);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.g0(f);
         }
     }
 
     public void setIconEndPaddingResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.b0(ri0Var.d1.getResources().getDimension(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.g0(sp0Var.m1.getResources().getDimension(i));
         }
     }
 
     public void setIconStartPadding(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.c0(f);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.h0(f);
         }
     }
 
     public void setIconStartPaddingResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.c0(ri0Var.d1.getResources().getDimension(i));
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.h0(sp0Var.m1.getResources().getDimension(i));
         }
     }
 
     @Override // android.view.View
     public void setLayoutDirection(int i) {
-        if (this.U == null) {
+        if (this.g0 == null) {
             return;
         }
         super.setLayoutDirection(i);
@@ -1514,7 +1506,7 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
         if (i <= 1) {
             super.setLines(i);
         } else {
-            fn.l("Chip does not support multi-line text");
+            ra.g("Chip does not support multi-line text");
         }
     }
 
@@ -1523,16 +1515,16 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
         if (i <= 1) {
             super.setMaxLines(i);
         } else {
-            fn.l("Chip does not support multi-line text");
+            ra.g("Chip does not support multi-line text");
         }
     }
 
     @Override // android.widget.TextView
     public void setMaxWidth(int i) {
         super.setMaxWidth(i);
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.C1 = i;
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.L1 = i;
         }
     }
 
@@ -1541,54 +1533,54 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
         if (i <= 1) {
             super.setMinLines(i);
         } else {
-            fn.l("Chip does not support multi-line text");
+            ra.g("Chip does not support multi-line text");
         }
     }
 
     @Override // android.widget.CompoundButton
     public void setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener onCheckedChangeListener) {
-        this.b0 = onCheckedChangeListener;
+        this.k0 = onCheckedChangeListener;
     }
 
     public void setOnCloseIconClickListener(View.OnClickListener onClickListener) {
-        this.a0 = onClickListener;
+        this.j0 = onClickListener;
         e();
     }
 
     public void setRippleColor(ColorStateList colorStateList) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.d0(colorStateList);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.i0(colorStateList);
         }
-        this.U.getClass();
+        this.g0.getClass();
         f();
     }
 
     public void setRippleColorResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.d0(bv7.B(ri0Var.d1, i));
-            this.U.getClass();
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.i0(jq8.u(sp0Var.m1, i));
+            this.g0.getClass();
             f();
         }
     }
 
-    @Override // defpackage.x86
-    public void setShapeAppearanceModel(j86 j86Var) {
-        this.U.setShapeAppearanceModel(j86Var);
+    @Override // defpackage.lv6
+    public void setShapeAppearanceModel(xu6 xu6Var) {
+        this.g0.setShapeAppearanceModel(xu6Var);
     }
 
-    public void setShowMotionSpec(j74 j74Var) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.T0 = j74Var;
+    public void setShowMotionSpec(go4 go4Var) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.c1 = go4Var;
         }
     }
 
     public void setShowMotionSpecResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.T0 = j74.a(ri0Var.d1, i);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.c1 = go4.a(sp0Var.m1, i);
         }
     }
 
@@ -1597,37 +1589,37 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
         if (z) {
             super.setSingleLine(z);
         } else {
-            fn.l("Chip does not support multi-line text");
+            ra.g("Chip does not support multi-line text");
         }
     }
 
     @Override // android.widget.TextView
     public final void setText(CharSequence charSequence, TextView.BufferType bufferType) {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null) {
             return;
         }
         if (charSequence == null) {
-            charSequence = "";
+            charSequence = HttpUrl.FRAGMENT_ENCODE_SET;
         }
-        super.setText(ri0Var.B1 ? null : charSequence, bufferType);
-        ri0 ri0Var2 = this.U;
-        if (ri0Var2 == null || TextUtils.equals(ri0Var2.D0, charSequence)) {
+        super.setText(sp0Var.K1 ? null : charSequence, bufferType);
+        sp0 sp0Var2 = this.g0;
+        if (sp0Var2 == null || TextUtils.equals(sp0Var2.M0, charSequence)) {
             return;
         }
-        ri0Var2.D0 = charSequence;
-        ri0Var2.j1.d = true;
-        ri0Var2.invalidateSelf();
-        ri0Var2.H();
+        sp0Var2.M0 = charSequence;
+        sp0Var2.s1.d = true;
+        sp0Var2.invalidateSelf();
+        sp0Var2.M();
     }
 
     @Override // android.widget.TextView
     public final void setTextAppearance(Context context, int i) {
         super.setTextAppearance(context, i);
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            Context context2 = ri0Var.d1;
-            ri0Var.j1.b(new jx6(context2, i), context2);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            Context context2 = sp0Var.m1;
+            sp0Var.s1.b(new zo7(context2, i), context2);
         }
         h();
     }
@@ -1637,23 +1629,23 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     }
 
     public void setTextEndPadding(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || ri0Var.Z0 == f) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || sp0Var.i1 == f) {
             return;
         }
-        ri0Var.Z0 = f;
-        ri0Var.invalidateSelf();
-        ri0Var.H();
+        sp0Var.i1 = f;
+        sp0Var.invalidateSelf();
+        sp0Var.M();
     }
 
     public void setTextEndPaddingResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            float dimension = ri0Var.d1.getResources().getDimension(i);
-            if (ri0Var.Z0 != dimension) {
-                ri0Var.Z0 = dimension;
-                ri0Var.invalidateSelf();
-                ri0Var.H();
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            float dimension = sp0Var.m1.getResources().getDimension(i);
+            if (sp0Var.i1 != dimension) {
+                sp0Var.i1 = dimension;
+                sp0Var.invalidateSelf();
+                sp0Var.M();
             }
         }
     }
@@ -1661,90 +1653,90 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     @Override // android.widget.TextView
     public final void setTextSize(int i, float f) {
         super.setTextSize(i, f);
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            float fApplyDimension = TypedValue.applyDimension(i, f, getResources().getDisplayMetrics());
-            my6 my6Var = ri0Var.j1;
-            jx6 jx6Var = my6Var.f;
-            if (jx6Var != null) {
-                jx6Var.l = fApplyDimension;
-                my6Var.a.setTextSize(fApplyDimension);
-                ri0Var.a();
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            float applyDimension = TypedValue.applyDimension(i, f, getResources().getDisplayMetrics());
+            cq7 cq7Var = sp0Var.s1;
+            zo7 zo7Var = cq7Var.f;
+            if (zo7Var != null) {
+                zo7Var.l = applyDimension;
+                cq7Var.a.setTextSize(applyDimension);
+                sp0Var.a();
             }
         }
         h();
     }
 
     public void setTextStartPadding(float f) {
-        ri0 ri0Var = this.U;
-        if (ri0Var == null || ri0Var.Y0 == f) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var == null || sp0Var.h1 == f) {
             return;
         }
-        ri0Var.Y0 = f;
-        ri0Var.invalidateSelf();
-        ri0Var.H();
+        sp0Var.h1 = f;
+        sp0Var.invalidateSelf();
+        sp0Var.M();
     }
 
     public void setTextStartPaddingResource(int i) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            float dimension = ri0Var.d1.getResources().getDimension(i);
-            if (ri0Var.Y0 != dimension) {
-                ri0Var.Y0 = dimension;
-                ri0Var.invalidateSelf();
-                ri0Var.H();
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            float dimension = sp0Var.m1.getResources().getDimension(i);
+            if (sp0Var.h1 != dimension) {
+                sp0Var.h1 = dimension;
+                sp0Var.invalidateSelf();
+                sp0Var.M();
             }
         }
     }
 
     public void setCloseIconVisible(boolean z) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.a0(z);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.f0(z);
         }
         e();
     }
 
     public void setCheckedIconVisible(boolean z) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.M(z);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.R(z);
         }
     }
 
     public void setChipIconVisible(boolean z) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.R(z);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.W(z);
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawablesRelativeWithIntrinsicBounds(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         if (drawable != null) {
-            fn.l("Please set start drawable using R.attr#chipIcon.");
+            ra.g("Please set start drawable using R.attr#chipIcon.");
         } else if (drawable3 == null) {
             super.setCompoundDrawablesRelativeWithIntrinsicBounds(drawable, drawable2, drawable3, drawable4);
         } else {
-            fn.l("Please set end drawable using R.attr#closeIcon.");
+            ra.g("Please set end drawable using R.attr#closeIcon.");
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawablesWithIntrinsicBounds(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         if (drawable != null) {
-            fn.l("Please set left drawable using R.attr#chipIcon.");
+            ra.g("Please set left drawable using R.attr#chipIcon.");
         } else if (drawable3 == null) {
             super.setCompoundDrawablesWithIntrinsicBounds(drawable, drawable2, drawable3, drawable4);
         } else {
-            fn.l("Please set right drawable using R.attr#closeIcon.");
+            ra.g("Please set right drawable using R.attr#closeIcon.");
         }
     }
 
-    public void setTextAppearance(jx6 jx6Var) {
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            ri0Var.j1.b(jx6Var, ri0Var.d1);
+    public void setTextAppearance(zo7 zo7Var) {
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            sp0Var.s1.b(zo7Var, sp0Var.m1);
         }
         h();
     }
@@ -1765,21 +1757,21 @@ public class Chip extends AppCompatCheckBox implements qi0, x86, Checkable {
     public void setBackgroundTintMode(PorterDuff.Mode mode) {
     }
 
-    public void setInternalOnCheckedChangeListener(xz3 xz3Var) {
+    public void setInternalOnCheckedChangeListener(wg4 wg4Var) {
     }
 
     @Override // android.widget.TextView
     public void setTextAppearance(int i) {
         super.setTextAppearance(i);
-        ri0 ri0Var = this.U;
-        if (ri0Var != null) {
-            Context context = ri0Var.d1;
-            ri0Var.j1.b(new jx6(context, i), context);
+        sp0 sp0Var = this.g0;
+        if (sp0Var != null) {
+            Context context = sp0Var.m1;
+            sp0Var.s1.b(new zo7(context, i), context);
         }
         h();
     }
 
     public Chip(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, v75.chipStyle);
+        this(context, attributeSet, ur5.chipStyle);
     }
 }

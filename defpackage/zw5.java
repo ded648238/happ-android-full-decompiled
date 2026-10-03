@@ -1,24 +1,50 @@
 package defpackage;
 
-import java.util.HashMap;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class zw5 {
+    public py0 a;
+    public int b;
+    public mk2 c;
+    public xi2 d;
+    public int e;
+    public zp4 f;
+    public mq4 g;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class zw5 {
-    public static final HashMap a;
+    public zw5(py0 py0Var) {
+        this.a = py0Var;
+    }
 
-    static {
-        HashMap map = new HashMap(10);
-        a = map;
-        map.put("none", wy4.Q);
-        map.put("xMinYMin", wy4.R);
-        map.put("xMidYMin", wy4.S);
-        map.put("xMaxYMin", wy4.T);
-        map.put("xMinYMid", wy4.U);
-        map.put("xMidYMid", wy4.V);
-        map.put("xMaxYMid", wy4.W);
-        map.put("xMinYMax", wy4.X);
-        map.put("xMidYMax", wy4.Y);
-        map.put("xMaxYMax", wy4.Z);
+    public final boolean a() {
+        if (this.a != null) {
+            mk2 mk2Var = this.c;
+            if (mk2Var != null ? mk2Var.a() : false) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final la3 b(Object obj) {
+        la3 s;
+        py0 py0Var = this.a;
+        return (py0Var == null || (s = py0Var.s(this, obj)) == null) ? la3.X : s;
+    }
+
+    public final void c() {
+        py0 py0Var = this.a;
+        if (py0Var != null) {
+            py0Var.n0 = true;
+            py0Var.s0.J();
+        }
+        this.a = null;
+        this.f = null;
+        this.g = null;
+        this.d = null;
+    }
+
+    public final void d(boolean z) {
+        int i = this.b;
+        this.b = z ? i | 32 : i & (-33);
     }
 }

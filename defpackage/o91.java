@@ -1,29 +1,38 @@
 package defpackage;
 
-import java.util.Set;
+import okhttp3.dnsoverhttps.DnsOverHttps;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface o91 {
-    void a(boolean z);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class o91 extends m91 {
+    public static final n91 Companion = new n91();
+    public final int b;
 
-    void b(Set set);
+    public o91(int i) {
+        this.b = i;
+        if (i > 0) {
+            return;
+        }
+        co6.g(c73.h("Unit duration must be positive, but was ", i, " days."));
+        throw null;
+    }
 
-    void c(boolean z);
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof o91) {
+            return this.b == ((o91) obj).b;
+        }
+        return false;
+    }
 
-    void d(ki5 ki5Var);
+    public final int hashCode() {
+        return this.b ^ DnsOverHttps.MAX_RESPONSE_SIZE;
+    }
 
-    void e(boolean z);
-
-    void f(boolean z);
-
-    void g(boolean z);
-
-    void h(boolean z);
-
-    void i(do4 do4Var);
-
-    void j(ok0 ok0Var);
-
-    void k(boolean z);
+    public final String toString() {
+        int i = this.b;
+        return i % 7 == 0 ? t91.a(i / 7, "WEEK") : t91.a(i, "DAY");
+    }
 }

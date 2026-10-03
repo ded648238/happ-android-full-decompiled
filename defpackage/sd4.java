@@ -1,25 +1,25 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class sd4 implements xe1, ii0 {
-    public static final sd4 Q = new sd4();
+import su.happ.proxyutility.feature.main.MainViewModel;
 
-    @Override // defpackage.ii0
-    public final boolean b(Throwable th) {
-        return false;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class sd4 extends d31 {
+    public kr4 c0;
+    public /* synthetic */ Object d0;
+    public final /* synthetic */ MainViewModel e0;
+    public int f0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public sd4(MainViewModel mainViewModel, d31 d31Var) {
+        super(d31Var);
+        this.e0 = mainViewModel;
     }
 
-    @Override // defpackage.ii0
-    public final fy2 getParent() {
-        return null;
-    }
-
-    public final String toString() {
-        return "NonDisposableHandle";
-    }
-
-    @Override // defpackage.xe1
-    public final void a() {
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.d0 = obj;
+        this.f0 |= Integer.MIN_VALUE;
+        return this.e0.r(this);
     }
 }

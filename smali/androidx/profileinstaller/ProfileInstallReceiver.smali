@@ -1,6 +1,6 @@
 .class public Landroidx/profileinstaller/ProfileInstallReceiver;
 .super Landroid/content/BroadcastReceiver;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
 # virtual methods
 .method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 8
+    .locals 5
 
     .line 1
     if-nez p2, :cond_0
@@ -51,35 +51,35 @@
     move-result v1
 
     .line 15
-    const/4 v2, 0x4
+    const/4 v2, 0x6
 
     .line 16
     if-eqz v1, :cond_1
 
     .line 17
     .line 18
-    new-instance p2, Lhq;
+    new-instance p2, Lds;
 
     .line 19
     .line 20
     const/4 v0, 0x1
 
     .line 21
-    invoke-direct {p2, v0}, Lhq;-><init>(I)V
+    invoke-direct {p2, v0}, Lds;-><init>(I)V
 
     .line 22
     .line 23
     .line 24
-    new-instance v1, Lov4;
+    new-instance v1, La05;
 
     .line 25
     .line 26
-    invoke-direct {v1, v2, p0}, Lov4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, La05;-><init>(ILjava/lang/Object;)V
 
     .line 27
     .line 28
     .line 29
-    invoke-static {p1, p2, v1, v0}, Lg25;->b(Landroid/content/Context;Ljava/util/concurrent/Executor;Lf25;Z)V
+    invoke-static {p1, p2, v1, v0}, Lml5;->b(Landroid/content/Context;Ljava/util/concurrent/Executor;Lll5;Z)V
 
     .line 30
     .line 31
@@ -116,7 +116,7 @@
     move-result-object p2
 
     .line 47
-    if-eqz p2, :cond_d
+    if-eqz p2, :cond_9
 
     .line 48
     .line 49
@@ -194,7 +194,7 @@
     move-result-object p1
 
     .line 84
-    invoke-static {p2, p1}, Lg25;->a(Landroid/content/pm/PackageInfo;Ljava/io/File;)V
+    invoke-static {p2, p1}, Lml5;->a(Landroid/content/pm/PackageInfo;Ljava/io/File;)V
 
     .line 85
     .line 86
@@ -234,7 +234,7 @@
     move-result p2
 
     .line 104
-    if-eqz p2, :cond_d
+    if-eqz p2, :cond_9
 
     .line 105
     .line 106
@@ -289,215 +289,212 @@
     move-result v1
 
     .line 132
-    const/16 v4, 0xd
+    const/16 v4, 0xc
 
     .line 133
     .line 134
-    const/16 v5, 0xc
+    if-eqz v1, :cond_4
 
     .line 135
     .line 136
-    const/16 v6, 0x18
+    invoke-static {}, Landroid/os/Process;->myPid()I
 
     .line 137
     .line 138
-    if-eqz v1, :cond_5
-
     .line 139
+    move-result p1
+
     .line 140
-    invoke-static {}, Landroid/os/Process;->myPid()I
+    invoke-static {p1, v3}, Landroid/os/Process;->sendSignal(II)V
 
     .line 141
     .line 142
     .line 143
-    move-result p1
+    invoke-virtual {p0, v4}, Landroid/content/BroadcastReceiver;->setResultCode(I)V
 
     .line 144
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 145
     .line 146
-    if-lt p2, v6, :cond_4
-
-    .line 147
-    .line 148
-    invoke-static {p1, v3}, Landroid/os/Process;->sendSignal(II)V
-
-    .line 149
-    .line 150
-    .line 151
-    invoke-virtual {p0, v5}, Landroid/content/BroadcastReceiver;->setResultCode(I)V
-
-    .line 152
-    .line 153
-    .line 154
     return-void
 
-    .line 155
+    .line 147
     :cond_4
-    invoke-virtual {p0, v4}, Landroid/content/BroadcastReceiver;->setResultCode(I)V
+    const-string v1, "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+    .line 148
+    .line 149
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 150
+    .line 151
+    .line 152
+    move-result v0
+
+    .line 153
+    if-eqz v0, :cond_9
+
+    .line 154
+    .line 155
+    invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     .line 156
     .line 157
     .line 158
-    return-void
+    move-result-object p2
 
     .line 159
-    :cond_5
-    const-string v1, "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+    if-eqz p2, :cond_9
 
     .line 160
     .line 161
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const-string v0, "EXTRA_BENCHMARK_OPERATION"
 
     .line 162
     .line 163
+    invoke-virtual {p2, v0}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
     .line 164
-    move-result v0
-
     .line 165
-    if-eqz v0, :cond_d
-
     .line 166
+    move-result-object v0
+
     .line 167
-    invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+    new-instance v1, La05;
 
     .line 168
     .line 169
+    invoke-direct {v1, v2, p0}, La05;-><init>(ILjava/lang/Object;)V
+
     .line 170
-    move-result-object p2
-
     .line 171
-    if-eqz p2, :cond_d
-
     .line 172
+    const-string p0, "DROP_SHADER_CACHE"
+
     .line 173
-    const-string v0, "EXTRA_BENCHMARK_OPERATION"
-
     .line 174
-    .line 175
-    invoke-virtual {p2, v0}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 175
     .line 176
     .line 177
+    move-result p0
+
     .line 178
-    move-result-object v0
+    const/4 v2, 0x0
 
     .line 179
-    new-instance v1, Lov4;
+    if-eqz p0, :cond_7
 
     .line 180
     .line 181
-    invoke-direct {v1, v2, p0}, Lov4;-><init>(ILjava/lang/Object;)V
+    sget p0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 182
     .line 183
+    const/16 p2, 0x22
+
     .line 184
-    const-string v2, "DROP_SHADER_CACHE"
-
     .line 185
-    .line 186
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-lt p0, p2, :cond_5
 
+    .line 186
     .line 187
+    invoke-virtual {p1}, Landroid/content/Context;->createDeviceProtectedStorageContext()Landroid/content/Context;
+
     .line 188
     .line 189
-    move-result v2
-
     .line 190
-    const/4 v7, 0x0
+    move-result-object p0
 
     .line 191
-    if-eqz v2, :cond_a
+    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
     .line 192
     .line 193
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 194
+    move-result-object p0
+
     .line 195
-    const/16 v0, 0x22
-
-    .line 196
-    .line 197
-    if-lt p2, v0, :cond_6
-
-    .line 198
-    .line 199
-    invoke-static {p1}, Lkl6;->d(Landroid/content/Context;)Landroid/content/Context;
-
-    .line 200
-    .line 201
-    .line 202
-    move-result-object p1
-
-    .line 203
-    invoke-virtual {p1}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
-
-    .line 204
-    .line 205
-    .line 206
-    move-result-object p1
-
-    .line 207
     goto :goto_0
 
+    .line 196
+    :cond_5
+    invoke-virtual {p1}, Landroid/content/Context;->createDeviceProtectedStorageContext()Landroid/content/Context;
+
+    .line 197
+    .line 198
+    .line 199
+    move-result-object p0
+
+    .line 200
+    invoke-virtual {p0}, Landroid/content/Context;->getCodeCacheDir()Ljava/io/File;
+
+    .line 201
+    .line 202
+    .line 203
+    move-result-object p0
+
+    .line 204
+    :goto_0
+    invoke-static {p0}, Lq48;->E(Ljava/io/File;)Z
+
+    .line 205
+    .line 206
+    .line 207
+    move-result p0
+
     .line 208
-    :cond_6
-    if-lt p2, v6, :cond_7
+    if-eqz p0, :cond_6
 
     .line 209
     .line 210
-    invoke-static {p1}, Lkl6;->d(Landroid/content/Context;)Landroid/content/Context;
+    const/16 p0, 0xe
 
     .line 211
     .line 212
+    invoke-virtual {v1, p0, v2}, La05;->g(ILjava/lang/Object;)V
+
     .line 213
-    move-result-object p1
-
     .line 214
-    invoke-virtual {p1}, Landroid/content/Context;->getCodeCacheDir()Ljava/io/File;
-
     .line 215
-    .line 216
-    .line 217
-    move-result-object p1
+    return-void
 
+    .line 216
+    :cond_6
+    const/16 p0, 0xf
+
+    .line 217
     .line 218
-    goto :goto_0
+    invoke-virtual {v1, p0, v2}, La05;->g(ILjava/lang/Object;)V
 
     .line 219
-    :cond_7
-    const/16 v0, 0x17
-
     .line 220
     .line 221
-    if-ne p2, v0, :cond_8
+    return-void
 
     .line 222
-    .line 223
-    invoke-virtual {p1}, Landroid/content/Context;->getCodeCacheDir()Ljava/io/File;
+    :cond_7
+    const-string p0, "SAVE_PROFILE"
 
+    .line 223
     .line 224
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 225
     .line 226
-    move-result-object p1
-
     .line 227
-    goto :goto_0
+    move-result p0
 
     .line 228
-    :cond_8
-    invoke-virtual {p1}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+    if-eqz p0, :cond_8
 
     .line 229
     .line 230
-    .line 231
-    move-result-object p1
+    const-string p0, "EXTRA_PID"
 
+    .line 231
     .line 232
-    :goto_0
-    invoke-static {p1}, Lhc7;->x(Ljava/io/File;)Z
+    invoke-static {}, Landroid/os/Process;->myPid()I
 
     .line 233
     .line 234
@@ -505,113 +502,38 @@
     move-result p1
 
     .line 236
-    if-eqz p1, :cond_9
+    invoke-virtual {p2, p0, p1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     .line 237
     .line 238
-    const/16 p1, 0xe
-
     .line 239
+    move-result p0
+
     .line 240
-    invoke-virtual {v1, p1, v7}, Lov4;->k(ILjava/lang/Object;)V
+    invoke-static {p0, v3}, Landroid/os/Process;->sendSignal(II)V
 
     .line 241
     .line 242
     .line 243
-    return-void
+    invoke-virtual {v1, v4, v2}, La05;->g(ILjava/lang/Object;)V
 
     .line 244
-    :cond_9
-    const/16 p1, 0xf
-
     .line 245
     .line 246
-    invoke-virtual {v1, p1, v7}, Lov4;->k(ILjava/lang/Object;)V
+    return-void
 
     .line 247
+    :cond_8
+    const/16 p0, 0x10
+
     .line 248
     .line 249
-    return-void
+    invoke-virtual {v1, p0, v2}, La05;->g(ILjava/lang/Object;)V
 
     .line 250
-    :cond_a
-    const-string p1, "SAVE_PROFILE"
-
     .line 251
     .line 252
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 253
-    .line 254
-    .line 255
-    move-result p1
-
-    .line 256
-    if-eqz p1, :cond_c
-
-    .line 257
-    .line 258
-    const-string p1, "EXTRA_PID"
-
-    .line 259
-    .line 260
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    .line 261
-    .line 262
-    .line 263
-    move-result v0
-
-    .line 264
-    invoke-virtual {p2, p1, v0}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
-
-    .line 265
-    .line 266
-    .line 267
-    move-result p1
-
-    .line 268
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 269
-    .line 270
-    if-lt p2, v6, :cond_b
-
-    .line 271
-    .line 272
-    invoke-static {p1, v3}, Landroid/os/Process;->sendSignal(II)V
-
-    .line 273
-    .line 274
-    .line 275
-    invoke-virtual {v1, v5, v7}, Lov4;->k(ILjava/lang/Object;)V
-
-    .line 276
-    .line 277
-    .line 278
-    return-void
-
-    .line 279
-    :cond_b
-    invoke-virtual {v1, v4, v7}, Lov4;->k(ILjava/lang/Object;)V
-
-    .line 280
-    .line 281
-    .line 282
-    return-void
-
-    .line 283
-    :cond_c
-    const/16 p1, 0x10
-
-    .line 284
-    .line 285
-    invoke-virtual {v1, p1, v7}, Lov4;->k(ILjava/lang/Object;)V
-
-    .line 286
-    .line 287
-    .line 288
-    :cond_d
+    :cond_9
     :goto_1
     return-void
 .end method

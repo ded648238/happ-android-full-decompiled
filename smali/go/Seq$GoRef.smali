@@ -1,6 +1,6 @@
 .class Lgo/Seq$GoRef;
 .super Ljava/lang/ref/PhantomReference;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -48,25 +48,25 @@
 
     .line 9
     :cond_0
-    const-string p2, "GoRef instantiated with a Java refnum "
+    const-string p0, "GoRef instantiated with a Java refnum "
 
     .line 10
     .line 11
-    invoke-static {p1, p2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result-object p0
 
     .line 15
-    invoke-static {p1}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 16
     .line 17
     .line 18
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    throw p1
+    throw p0
 .end method

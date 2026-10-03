@@ -1,11 +1,13 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface v36 {
-    Object a(yv0 yv0Var, Object obj);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class v36 {
+    public final rt2 a;
+    public final w36 b;
 
-    boolean b(Throwable th);
-
-    Object d(Object obj);
+    public v36(rt2 rt2Var, w36 w36Var) {
+        this.a = rt2Var;
+        this.b = w36Var;
+    }
 }

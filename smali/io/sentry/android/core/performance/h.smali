@@ -1,19 +1,19 @@
 .class public final Lio/sentry/android/core/performance/h;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Comparable;
 
 
 # instance fields
-.field public Q:Ljava/lang/String;
+.field public X:Ljava/lang/String;
 
-.field public R:J
+.field public Y:J
 
-.field public S:J
+.field public Z:J
 
-.field public T:J
+.field public c0:J
 
 
 # virtual methods
@@ -33,11 +33,11 @@
 
     .line 6
     .line 7
-    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->T:J
+    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->c0:J
 
     .line 8
     .line 9
-    iget-wide v2, p0, Lio/sentry/android/core/performance/h;->S:J
+    iget-wide v2, p0, Lio/sentry/android/core/performance/h;->Z:J
 
     .line 10
     .line 11
@@ -55,7 +55,7 @@
     return-wide v0
 .end method
 
-.method public final b()Lio/sentry/r5;
+.method public final b()Lio/sentry/t5;
     .locals 5
 
     .line 1
@@ -71,11 +71,11 @@
 
     .line 6
     .line 7
-    new-instance v0, Lio/sentry/r5;
+    new-instance v0, Lio/sentry/t5;
 
     .line 8
     .line 9
-    iget-wide v1, p0, Lio/sentry/android/core/performance/h;->R:J
+    iget-wide v1, p0, Lio/sentry/android/core/performance/h;->Y:J
 
     .line 10
     .line 11
@@ -84,30 +84,29 @@
     .line 12
     .line 13
     .line 14
-    mul-long v1, v1, v3
+    mul-long/2addr v1, v3
 
     .line 15
-    .line 16
-    invoke-direct {v0, v1, v2}, Lio/sentry/r5;-><init>(J)V
+    invoke-direct {v0, v1, v2}, Lio/sentry/t5;-><init>(J)V
 
+    .line 16
     .line 17
     .line 18
-    .line 19
     return-object v0
+
+    .line 19
+    :cond_0
+    const/4 p0, 0x0
 
     .line 20
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 21
-    return-object v0
+    return-object p0
 .end method
 
 .method public final c()Z
-    .locals 5
+    .locals 4
 
     .line 1
-    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->S:J
+    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->Z:J
 
     .line 2
     .line 3
@@ -115,59 +114,59 @@
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    cmp-long p0, v0, v2
 
     .line 6
     .line 7
-    if-eqz v4, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 10
-    return v0
+    return p0
 
     .line 11
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    return v0
+    return p0
 .end method
 
 .method public final compareTo(Ljava/lang/Object;)I
-    .locals 4
+    .locals 2
 
     .line 1
     check-cast p1, Lio/sentry/android/core/performance/h;
 
     .line 2
     .line 3
-    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->R:J
+    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->Y:J
 
     .line 4
     .line 5
-    iget-wide v2, p1, Lio/sentry/android/core/performance/h;->R:J
+    iget-wide p0, p1, Lio/sentry/android/core/performance/h;->Y:J
 
     .line 6
     .line 7
-    invoke-static {v0, v1, v2, v3}, Ljava/lang/Long;->compare(JJ)I
+    invoke-static {v0, v1, p0, p1}, Ljava/lang/Long;->compare(JJ)I
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    move-result p0
 
     .line 11
-    return p1
+    return p0
 .end method
 
 .method public final d()Z
-    .locals 5
+    .locals 4
 
     .line 1
-    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->T:J
+    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->c0:J
 
     .line 2
     .line 3
@@ -175,32 +174,32 @@
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    cmp-long p0, v0, v2
 
     .line 6
     .line 7
-    if-eqz v4, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 10
-    return v0
+    return p0
 
     .line 11
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    return v0
+    return p0
 .end method
 
 .method public final e(J)V
     .locals 2
 
     .line 1
-    iput-wide p1, p0, Lio/sentry/android/core/performance/h;->S:J
+    iput-wide p1, p0, Lio/sentry/android/core/performance/h;->Z:J
 
     .line 2
     .line 3
@@ -212,7 +211,7 @@
     move-result-wide p1
 
     .line 7
-    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->S:J
+    iget-wide v0, p0, Lio/sentry/android/core/performance/h;->Z:J
 
     .line 8
     .line 9
@@ -230,7 +229,7 @@
     sub-long/2addr v0, p1
 
     .line 15
-    iput-wide v0, p0, Lio/sentry/android/core/performance/h;->R:J
+    iput-wide v0, p0, Lio/sentry/android/core/performance/h;->Y:J
 
     .line 16
     .line 17

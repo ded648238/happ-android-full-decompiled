@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSSLRSAPublicKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/security/interfaces/RSAPublicKey;
@@ -117,19 +117,19 @@
     move-exception v0
 
     .line 39
-    move-object p1, v0
+    move-object p0, v0
 
     .line 40
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p1, Ljava/security/spec/InvalidKeySpecException;
 
     .line 41
     .line 42
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {p1, p0}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/Throwable;)V
 
     .line 43
     .line 44
     .line 45
-    throw v0
+    throw p1
 .end method
 
 .method public constructor <init>(Lorg/conscrypt/OpenSSLKey;)V
@@ -344,7 +344,7 @@
     move-object p0, v0
 
     .line 35
-    invoke-static {p0}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 36
     .line 37
@@ -573,7 +573,7 @@
 
     .line 47
     .line 48
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->publicExponent:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->publicExponent:Ljava/math/BigInteger;
 
     .line 49
     .line 50
@@ -585,15 +585,15 @@
     move-result-object p1
 
     .line 54
-    invoke-virtual {v1, p1}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
 
     .line 55
     .line 56
     .line 57
-    move-result p1
+    move-result p0
 
     .line 58
-    if-eqz p1, :cond_3
+    if-eqz p0, :cond_3
 
     .line 59
     .line 60
@@ -605,56 +605,56 @@
 .end method
 
 .method public getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "RSA"
+    const-string p0, "RSA"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "X.509"
+    const-string p0, "X.509"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getModulus()Ljava/math/BigInteger;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Lorg/conscrypt/OpenSSLRSAPublicKey;->ensureReadParams()V
@@ -662,26 +662,26 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->modulus:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->modulus:Ljava/math/BigInteger;
 
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
 .method public getOpenSSLKey()Lorg/conscrypt/OpenSSLKey;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPublicExponent()Ljava/math/BigInteger;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Lorg/conscrypt/OpenSSLRSAPublicKey;->ensureReadParams()V
@@ -689,15 +689,15 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->publicExponent:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->publicExponent:Ljava/math/BigInteger;
 
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Lorg/conscrypt/OpenSSLRSAPublicKey;->ensureReadParams()V
@@ -717,22 +717,22 @@
     move-result v0
 
     .line 10
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->publicExponent:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->publicExponent:Ljava/math/BigInteger;
 
     .line 11
     .line 12
-    invoke-virtual {v1}, Ljava/math/BigInteger;->hashCode()I
+    invoke-virtual {p0}, Ljava/math/BigInteger;->hashCode()I
 
     .line 13
     .line 14
     .line 15
-    move-result v1
+    move-result p0
 
     .line 16
-    xor-int/2addr v0, v1
+    xor-int/2addr p0, v0
 
     .line 17
-    return v0
+    return p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -787,28 +787,28 @@
     .line 25
     .line 26
     .line 27
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->publicExponent:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAPublicKey;->publicExponent:Ljava/math/BigInteger;
 
     .line 28
     .line 29
-    invoke-virtual {v1, v2}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
 
     .line 30
     .line 31
     .line 32
-    move-result-object v1
+    move-result-object p0
 
     .line 33
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 34
     .line 35
     .line 36
-    const/16 v1, 0x7d
+    const/16 p0, 0x7d
 
     .line 37
     .line 38
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 39
     .line 40
@@ -818,8 +818,8 @@
     .line 42
     .line 43
     .line 44
-    move-result-object v0
+    move-result-object p0
 
     .line 45
-    return-object v0
+    return-object p0
 .end method

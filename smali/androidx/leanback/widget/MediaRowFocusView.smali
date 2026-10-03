@@ -1,14 +1,14 @@
 .class Landroidx/leanback/widget/MediaRowFocusView;
 .super Landroid/view/View;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Landroid/graphics/Paint;
+.field public final c0:Landroid/graphics/Paint;
 
-.field public final R:Landroid/graphics/RectF;
+.field public final d0:Landroid/graphics/RectF;
 
-.field public S:I
+.field public e0:I
 
 
 # direct methods
@@ -30,7 +30,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object p2, p0, Landroidx/leanback/widget/MediaRowFocusView;->R:Landroid/graphics/RectF;
+    iput-object p2, p0, Landroidx/leanback/widget/MediaRowFocusView;->d0:Landroid/graphics/RectF;
 
     .line 10
     .line 11
@@ -51,7 +51,7 @@
     move-result-object p1
 
     .line 20
-    sget v0, Lc85;->lb_playback_media_row_highlight_color:I
+    sget v0, Lbs5;->lb_playback_media_row_highlight_color:I
 
     .line 21
     .line 22
@@ -68,7 +68,7 @@
     .line 27
     .line 28
     .line 29
-    iput-object p2, p0, Landroidx/leanback/widget/MediaRowFocusView;->Q:Landroid/graphics/Paint;
+    iput-object p2, p0, Landroidx/leanback/widget/MediaRowFocusView;->c0:Landroid/graphics/Paint;
 
     .line 30
     .line 31
@@ -98,7 +98,7 @@
 
     .line 9
     .line 10
-    iput v0, p0, Landroidx/leanback/widget/MediaRowFocusView;->S:I
+    iput v0, p0, Landroidx/leanback/widget/MediaRowFocusView;->e0:I
 
     .line 11
     .line 12
@@ -152,7 +152,7 @@
     int-to-float v0, v3
 
     .line 34
-    iget-object v3, p0, Landroidx/leanback/widget/MediaRowFocusView;->R:Landroid/graphics/RectF;
+    iget-object v3, p0, Landroidx/leanback/widget/MediaRowFocusView;->d0:Landroid/graphics/RectF;
 
     .line 35
     .line 36
@@ -164,7 +164,7 @@
     .line 38
     .line 39
     .line 40
-    iget v0, p0, Landroidx/leanback/widget/MediaRowFocusView;->S:I
+    iget v0, p0, Landroidx/leanback/widget/MediaRowFocusView;->e0:I
 
     .line 41
     .line 42
@@ -174,11 +174,11 @@
     int-to-float v0, v0
 
     .line 44
-    iget-object v2, p0, Landroidx/leanback/widget/MediaRowFocusView;->Q:Landroid/graphics/Paint;
+    iget-object p0, p0, Landroidx/leanback/widget/MediaRowFocusView;->c0:Landroid/graphics/Paint;
 
     .line 45
     .line 46
-    invoke-virtual {p1, v3, v1, v0, v2}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
+    invoke-virtual {p1, v3, v1, v0, p0}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
     .line 47
     .line 48

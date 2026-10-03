@@ -1,70 +1,9 @@
 package defpackage;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import kotlin.Metadata;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class x92 {
-    public final w1 a;
-    public final Object b;
-    public final w1 c;
-    public final w92 d;
-    public final Method e;
-
-    public x92(w1 w1Var, Object obj, w1 w1Var2, w92 w92Var, Class cls) {
-        if (w1Var == null) {
-            fn.r("Null containingTypeDefaultInstance");
-            throw null;
-        }
-        if (w92Var.R == eu7.V && w1Var2 == null) {
-            fn.r("Null messageDefaultInstance");
-            throw null;
-        }
-        this.a = w1Var;
-        this.b = obj;
-        this.c = w1Var2;
-        this.d = w92Var;
-        if (!xs2.class.isAssignableFrom(cls)) {
-            this.e = null;
-            return;
-        }
-        try {
-            this.e = cls.getMethod("valueOf", Integer.TYPE);
-        } catch (NoSuchMethodException e) {
-            String name = cls.getName();
-            StringBuilder sb = new StringBuilder(name.length() + 52);
-            sb.append("Generated message class \"");
-            sb.append(name);
-            sb.append("\" missing method \"valueOf\".");
-            throw new RuntimeException(sb.toString(), e);
-        }
-    }
-
-    public final Object a(Object obj) {
-        if (this.d.R.Q == gu7.Y) {
-            Object[] objArr = {(Integer) obj};
-            obj = null;
-            try {
-                return this.e.invoke(null, objArr);
-            } catch (IllegalAccessException e) {
-                xi4.m("Couldn't use Java reflection to implement protocol message reflection.", e);
-            } catch (InvocationTargetException e2) {
-                Throwable cause = e2.getCause();
-                if (cause instanceof RuntimeException) {
-                    throw ((RuntimeException) cause);
-                }
-                if (cause instanceof Error) {
-                    throw ((Error) cause);
-                }
-                xi4.m("Unexpected exception thrown by generated accessor method.", cause);
-                return null;
-            }
-        }
-        return obj;
-    }
-
-    public final Object b(Object obj) {
-        return this.d.R.Q == gu7.Y ? Integer.valueOf(((xs2) obj).a()) : obj;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0001\u0018\u00002\u00020\u0001¨\u0006\u0002"}, d2 = {"Lx92;", "Lfe5;", "foundation"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class x92 extends fe5 {
 }

@@ -1,174 +1,181 @@
-.class public final Lq06;
+.class public Lq06;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lz61;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
-.method public final G(F)J
-    .locals 2
+.method public a(Lsj2;)Lwn3;
+    .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Lq06;->M(F)F
+    return-object p1
+.end method
+
+.method public b(Ljava/lang/Class;)Lgn3;
+    .locals 0
+
+    .line 1
+    new-instance p0, Lzq0;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lzq0;-><init>(Ljava/lang/Class;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public c(Ljava/lang/Class;)Ltn3;
+    .locals 0
+
+    .line 1
+    new-instance p0, Lg55;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Lg55;-><init>(Ljava/lang/Class;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public d(Ler7;)Ldo3;
+    .locals 0
+
+    .line 1
+    return-object p1
+.end method
+
+.method public e(Ljq4;)Lfo3;
+    .locals 0
+
+    .line 1
+    return-object p1
+.end method
+
+.method public f(Ljz3;)Lqo3;
+    .locals 0
+
+    .line 1
+    return-object p1
+.end method
+
+.method public g(Lom5;)Lso3;
+    .locals 0
+
+    .line 1
+    return-object p1
+.end method
+
+.method public h(Lpm5;)Lto3;
+    .locals 0
+
+    .line 1
+    return-object p1
+.end method
+
+.method public i(Lhj2;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result-object p0
 
     .line 5
-    invoke-static {p0, p1}, Lkd0;->f(Lz61;F)J
+    invoke-virtual {p0}, Ljava/lang/Class;->getGenericInterfaces()[Ljava/lang/reflect/Type;
 
     .line 6
     .line 7
     .line 8
-    move-result-wide v0
+    move-result-object p0
 
     .line 9
-    return-wide v0
-.end method
+    const/4 p1, 0x0
 
-.method public final K(I)F
-    .locals 1
+    .line 10
+    aget-object p0, p0, p1
 
-    .line 1
-    int-to-float p1, p1
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    .line 2
-    const/high16 v0, 0x3f800000    # 1.0f
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
 
-    .line 3
-    .line 4
-    div-float/2addr p1, v0
+    .line 16
+    const-string p1, "kotlin.jvm.functions."
 
-    .line 5
-    return p1
-.end method
+    .line 17
+    .line 18
+    invoke-virtual {p0, p1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-.method public final M(F)F
-    .locals 1
-
-    .line 1
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 2
-    .line 3
-    div-float/2addr p1, v0
-
-    .line 4
-    return p1
-.end method
-
-.method public final O()F
-    .locals 1
-
-    .line 1
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final U(F)F
-    .locals 1
-
-    .line 1
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 2
-    .line 3
-    mul-float v0, v0, p1
-
-    .line 4
-    .line 5
-    return v0
-.end method
-
-.method public final synthetic f0(F)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lkd0;->a(Lz61;F)I
-
-    .line 2
-    .line 3
-    .line 4
+    .line 19
+    .line 20
+    .line 21
     move-result p1
 
-    .line 5
-    return p1
+    .line 22
+    if-eqz p1, :cond_0
+
+    .line 23
+    .line 24
+    const/16 p1, 0x15
+
+    .line 25
+    .line 26
+    invoke-virtual {p0, p1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p0
+
+    .line 30
+    :cond_0
+    return-object p0
 .end method
 
-.method public final getDensity()F
-    .locals 1
-
-    .line 1
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final synthetic l0(J)J
+.method public j(Lou3;)Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-static {p1, p2, p0}, Lkd0;->e(JLz61;)J
+    invoke-virtual {p0, p1}, Lq06;->i(Lhj2;)Ljava/lang/String;
 
     .line 2
     .line 3
     .line 4
-    move-result-wide p1
+    move-result-object p0
 
     .line 5
-    return-wide p1
+    return-object p0
 .end method
 
-.method public final synthetic m(J)J
+.method public k(Lgn3;Z)Lwo3;
     .locals 0
 
     .line 1
-    invoke-static {p1, p2, p0}, Lkd0;->c(JLz61;)J
+    sget-object p0, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
 
     .line 2
     .line 3
+    new-instance p0, Lc58;
+
     .line 4
-    move-result-wide p1
-
     .line 5
-    return-wide p1
-.end method
+    invoke-direct {p0, p1, p2}, Lc58;-><init>(Lsn3;Z)V
 
-.method public final synthetic n0(J)F
-    .locals 0
-
-    .line 1
-    invoke-static {p1, p2, p0}, Lkd0;->d(JLz61;)F
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    return p1
-.end method
-
-.method public final synthetic u(J)F
-    .locals 0
-
-    .line 1
-    invoke-static {p1, p2, p0}, Lkd0;->b(JLz61;)F
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    return p1
+    .line 6
+    .line 7
+    .line 8
+    return-object p0
 .end method

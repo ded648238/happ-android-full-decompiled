@@ -1,6 +1,6 @@
 .class public final Lokhttp3/CertificatePinner$Pin;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -45,11 +45,11 @@
         "getPattern",
         "hashAlgorithm",
         "getHashAlgorithm",
-        "Ly60;",
+        "Lo90;",
         "hash",
-        "Ly60;",
+        "Lo90;",
         "getHash",
-        "()Ly60;",
+        "()Lo90;",
         "okhttp"
     }
     k = 0x1
@@ -63,7 +63,7 @@
 
 
 # instance fields
-.field private final hash:Ly60;
+.field private final hash:Lo90;
 
 .field private final hashAlgorithm:Ljava/lang/String;
 
@@ -97,7 +97,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1, v0, v1}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 14
     .line 15
@@ -125,7 +125,7 @@
     const/4 v1, 0x1
 
     .line 25
-    invoke-static {p1, v4, v1, v0, v3}, Lsl6;->t0(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
+    invoke-static {p1, v4, v1, v0, v3}, Lea7;->U0(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
 
     .line 26
     .line 27
@@ -142,7 +142,7 @@
 
     .line 32
     .line 33
-    invoke-static {p1, v0, v1}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 34
     .line 35
@@ -157,7 +157,7 @@
     const/4 v1, 0x2
 
     .line 40
-    invoke-static {p1, v4, v1, v0, v3}, Lsl6;->t0(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
+    invoke-static {p1, v4, v1, v0, v3}, Lea7;->U0(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
 
     .line 41
     .line 42
@@ -173,7 +173,7 @@
     const/4 v1, 0x6
 
     .line 47
-    invoke-static {p1, v4, v0, v0, v1}, Lsl6;->t0(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
+    invoke-static {p1, v4, v0, v0, v1}, Lea7;->U0(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
 
     .line 48
     .line 49
@@ -206,7 +206,7 @@
 
     .line 62
     .line 63
-    invoke-static {p2, v0, p1}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {p2, v0, p1}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 64
     .line 65
@@ -230,7 +230,7 @@
 
     .line 74
     .line 75
-    sget-object p1, Ly60;->T:Ly60;
+    sget-object p1, Lo90;->c0:Lo90;
 
     .line 76
     .line 77
@@ -245,7 +245,7 @@
     move-result-object p1
 
     .line 82
-    invoke-static {p1}, Lhp5;->v0(Ljava/lang/String;)Ly60;
+    invoke-static {p1}, Lm0;->b(Ljava/lang/String;)Lo90;
 
     .line 83
     .line 84
@@ -257,7 +257,7 @@
 
     .line 87
     .line 88
-    iput-object p1, p0, Lokhttp3/CertificatePinner$Pin;->hash:Ly60;
+    iput-object p1, p0, Lokhttp3/CertificatePinner$Pin;->hash:Lo90;
 
     .line 89
     .line 90
@@ -270,10 +270,10 @@
     .line 92
     .line 93
     .line 94
-    move-result-object p1
+    move-result-object p0
 
     .line 95
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 96
     .line 97
@@ -286,7 +286,7 @@
 
     .line 100
     .line 101
-    invoke-static {p2, v0, p1}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {p2, v0, p1}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 102
     .line 103
@@ -306,7 +306,7 @@
 
     .line 110
     .line 111
-    sget-object p1, Ly60;->T:Ly60;
+    sget-object p1, Lo90;->c0:Lo90;
 
     .line 112
     .line 113
@@ -321,7 +321,7 @@
     move-result-object p1
 
     .line 118
-    invoke-static {p1}, Lhp5;->v0(Ljava/lang/String;)Ly60;
+    invoke-static {p1}, Lm0;->b(Ljava/lang/String;)Lo90;
 
     .line 119
     .line 120
@@ -333,7 +333,7 @@
 
     .line 123
     .line 124
-    iput-object p1, p0, Lokhttp3/CertificatePinner$Pin;->hash:Ly60;
+    iput-object p1, p0, Lokhttp3/CertificatePinner$Pin;->hash:Lo90;
 
     .line 125
     .line 126
@@ -346,10 +346,10 @@
     .line 128
     .line 129
     .line 130
-    move-result-object p1
+    move-result-object p0
 
     .line 131
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 132
     .line 133
@@ -358,19 +358,19 @@
 
     .line 135
     :cond_6
-    const-string p1, "pins must start with \'sha256/\' or \'sha1/\': "
+    const-string p0, "pins must start with \'sha256/\' or \'sha1/\': "
 
     .line 136
     .line 137
-    invoke-virtual {p1, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 138
     .line 139
     .line 140
-    move-result-object p1
+    move-result-object p0
 
     .line 141
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 142
     .line 143
@@ -379,19 +379,19 @@
 
     .line 145
     :cond_7
-    const-string p2, "Invalid pattern: "
+    const-string p0, "Invalid pattern: "
 
     .line 146
     .line 147
-    invoke-virtual {p2, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 148
     .line 149
     .line 150
-    move-result-object p1
+    move-result-object p0
 
     .line 151
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 152
     .line 153
@@ -400,19 +400,19 @@
 
     .line 155
     :cond_8
-    const-string p2, "Unexpected pattern: "
+    const-string p0, "Unexpected pattern: "
 
     .line 156
     .line 157
-    invoke-virtual {p2, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 158
     .line 159
     .line 160
-    move-result-object p1
+    move-result-object p0
 
     .line 161
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 162
     .line 163
@@ -464,7 +464,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -488,7 +488,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -504,23 +504,23 @@
 
     .line 35
     :cond_3
-    iget-object v1, p0, Lokhttp3/CertificatePinner$Pin;->hash:Ly60;
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Pin;->hash:Lo90;
 
     .line 36
     .line 37
-    iget-object p1, p1, Lokhttp3/CertificatePinner$Pin;->hash:Ly60;
+    iget-object p1, p1, Lokhttp3/CertificatePinner$Pin;->hash:Lo90;
 
     .line 38
     .line 39
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
     .line 42
-    move-result p1
+    move-result p0
 
     .line 43
-    if-nez p1, :cond_4
+    if-nez p0, :cond_4
 
     .line 44
     .line 45
@@ -531,37 +531,37 @@
     return v0
 .end method
 
-.method public final getHash()Ly60;
-    .locals 1
+.method public final getHash()Lo90;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/CertificatePinner$Pin;->hash:Ly60;
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Pin;->hash:Lo90;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getHashAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPattern()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/CertificatePinner$Pin;->pattern:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Pin;->pattern:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
@@ -584,38 +584,37 @@
 
     .line 8
     .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 10
-    .line 11
     iget-object v2, p0, Lokhttp3/CertificatePinner$Pin;->hashAlgorithm:Ljava/lang/String;
 
+    .line 11
     .line 12
-    .line 13
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 13
     .line 14
     .line 15
-    .line 16
     move-result v0
 
+    .line 16
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Pin;->hash:Lo90;
+
     .line 17
-    iget-object v1, p0, Lokhttp3/CertificatePinner$Pin;->hash:Ly60;
-
     .line 18
-    .line 19
-    invoke-virtual {v1}, Ly60;->hashCode()I
+    invoke-virtual {p0}, Lo90;->hashCode()I
 
+    .line 19
     .line 20
     .line 21
+    move-result p0
+
     .line 22
-    move-result v1
+    add-int/2addr p0, v0
 
     .line 23
-    add-int/2addr v1, v0
-
-    .line 24
-    return v1
+    return p0
 .end method
 
 .method public final matchesCertificate(Ljava/security/cert/X509Certificate;)Z
@@ -635,7 +634,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 9
     .line 10
@@ -647,15 +646,15 @@
 
     .line 13
     .line 14
-    iget-object v0, p0, Lokhttp3/CertificatePinner$Pin;->hash:Ly60;
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Pin;->hash:Lo90;
 
     .line 15
     .line 16
-    sget-object v1, Lokhttp3/CertificatePinner;->Companion:Lokhttp3/CertificatePinner$Companion;
+    sget-object v0, Lokhttp3/CertificatePinner;->Companion:Lokhttp3/CertificatePinner$Companion;
 
     .line 17
     .line 18
-    invoke-virtual {v1, p1}, Lokhttp3/CertificatePinner$Companion;->sha256Hash(Ljava/security/cert/X509Certificate;)Ly60;
+    invoke-virtual {v0, p1}, Lokhttp3/CertificatePinner$Companion;->sha256Hash(Ljava/security/cert/X509Certificate;)Lo90;
 
     .line 19
     .line 20
@@ -663,15 +662,15 @@
     move-result-object p1
 
     .line 22
-    invoke-static {v0, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 23
     .line 24
     .line 25
-    move-result p1
+    move-result p0
 
     .line 26
-    return p1
+    return p0
 
     .line 27
     :cond_0
@@ -679,7 +678,7 @@
 
     .line 28
     .line 29
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 30
     .line 31
@@ -691,15 +690,15 @@
 
     .line 34
     .line 35
-    iget-object v0, p0, Lokhttp3/CertificatePinner$Pin;->hash:Ly60;
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Pin;->hash:Lo90;
 
     .line 36
     .line 37
-    sget-object v1, Lokhttp3/CertificatePinner;->Companion:Lokhttp3/CertificatePinner$Companion;
+    sget-object v0, Lokhttp3/CertificatePinner;->Companion:Lokhttp3/CertificatePinner$Companion;
 
     .line 38
     .line 39
-    invoke-virtual {v1, p1}, Lokhttp3/CertificatePinner$Companion;->sha1Hash(Ljava/security/cert/X509Certificate;)Ly60;
+    invoke-virtual {v0, p1}, Lokhttp3/CertificatePinner$Companion;->sha1Hash(Ljava/security/cert/X509Certificate;)Lo90;
 
     .line 40
     .line 41
@@ -707,22 +706,22 @@
     move-result-object p1
 
     .line 43
-    invoke-static {v0, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 44
     .line 45
     .line 46
-    move-result p1
+    move-result p0
 
     .line 47
-    return p1
+    return p0
 
     .line 48
     :cond_1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 49
-    return p1
+    return p0
 .end method
 
 .method public final matchesHostname(Ljava/lang/String;)Z
@@ -745,7 +744,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, v1, v2}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {v0, v1, v2}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 10
     .line 11
@@ -816,15 +815,15 @@
     move-object v8, p1
 
     .line 42
-    invoke-static/range {v5 .. v10}, Lzl6;->b0(IIILjava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static/range {v5 .. v10}, Lla7;->C0(IIILjava/lang/String;Ljava/lang/String;Z)Z
 
     .line 43
     .line 44
     .line 45
-    move-result p1
+    move-result p0
 
     .line 46
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 47
     .line 48
@@ -840,10 +839,10 @@
     .line 52
     .line 53
     .line 54
-    move-result p1
+    move-result p0
 
     .line 55
-    if-ne p1, v3, :cond_2
+    if-ne p0, v3, :cond_2
 
     .line 56
     .line 57
@@ -858,7 +857,7 @@
 
     .line 60
     .line 61
-    invoke-static {v2, v1, p1}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {v2, v1, p1}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 62
     .line 63
@@ -919,36 +918,36 @@
     const/4 v10, 0x0
 
     .line 90
-    invoke-static/range {v5 .. v10}, Lzl6;->b0(IIILjava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static/range {v5 .. v10}, Lla7;->C0(IIILjava/lang/String;Ljava/lang/String;Z)Z
 
     .line 91
     .line 92
     .line 93
-    move-result v0
+    move-result p0
 
     .line 94
-    if-eqz v0, :cond_2
+    if-eqz p0, :cond_2
 
     .line 95
     .line 96
     sub-int/2addr p1, v4
 
     .line 97
-    const/4 v0, 0x4
+    const/4 p0, 0x4
 
     .line 98
-    invoke-static {v8, v3, p1, v0}, Lsl6;->x0(Ljava/lang/CharSequence;CII)I
+    invoke-static {v8, v3, p1, p0}, Lea7;->Y0(Ljava/lang/CharSequence;CII)I
 
     .line 99
     .line 100
     .line 101
-    move-result p1
+    move-result p0
 
     .line 102
-    const/4 v0, -0x1
+    const/4 p1, -0x1
 
     .line 103
-    if-ne p1, v0, :cond_2
+    if-ne p0, p1, :cond_2
 
     .line 104
     .line 105
@@ -967,10 +966,10 @@
     .line 108
     .line 109
     .line 110
-    move-result p1
+    move-result p0
 
     .line 111
-    return p1
+    return p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -1004,19 +1003,19 @@
     .line 14
     .line 15
     .line 16
-    iget-object v1, p0, Lokhttp3/CertificatePinner$Pin;->hash:Ly60;
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Pin;->hash:Lo90;
 
     .line 17
     .line 18
-    invoke-virtual {v1}, Ly60;->a()Ljava/lang/String;
+    invoke-virtual {p0}, Lo90;->a()Ljava/lang/String;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v1
+    move-result-object p0
 
     .line 22
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 23
     .line 24
@@ -1026,8 +1025,8 @@
     .line 26
     .line 27
     .line 28
-    move-result-object v0
+    move-result-object p0
 
     .line 29
-    return-object v0
+    return-object p0
 .end method

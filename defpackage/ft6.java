@@ -1,140 +1,72 @@
 package defpackage;
 
-import android.graphics.RectF;
-import android.opengl.Matrix;
-import android.util.Size;
-import android.view.Surface;
-import java.io.Closeable;
-import java.util.concurrent.Executor;
-import java.util.concurrent.RejectedExecutionException;
-import java.util.concurrent.atomic.AtomicReference;
+import android.hardware.camera2.params.InputConfiguration;
+import android.util.ArrayMap;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ft6 implements Closeable {
-    public final Surface R;
-    public final int S;
-    public final Size T;
-    public final float[] U;
-    public nu0 V;
-    public Executor W;
-    public final f90 Z;
-    public final c90 a0;
-    public final Object Q = new Object();
-    public boolean X = false;
-    public boolean Y = false;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ft6 {
+    public static final List j = Arrays.asList(1, 5, 3);
+    public final ArrayList a;
+    public final zx b;
+    public final List c;
+    public final List d;
+    public final List e;
+    public final dt6 f;
+    public final yk0 g;
+    public final int h;
+    public final InputConfiguration i;
 
-    public ft6(Surface surface, int i, Size size, dw dwVar, dw dwVar2) {
-        float[] fArr = new float[16];
-        this.U = fArr;
-        this.R = surface;
-        this.S = i;
-        this.T = size;
-        f(fArr, new float[16], dwVar);
-        f(new float[16], new float[16], dwVar2);
-        c90 c90Var = new c90();
-        c90Var.c = new ij5();
-        f90 f90Var = new f90(c90Var);
-        c90Var.b = f90Var;
-        try {
-            this.a0 = c90Var;
-            c90Var.a = "SurfaceOutputImpl close future complete";
-        } catch (Exception e) {
-            f90Var.b(e);
-        }
-        this.Z = f90Var;
+    public ft6(ArrayList arrayList, ArrayList arrayList2, ArrayList arrayList3, ArrayList arrayList4, yk0 yk0Var, dt6 dt6Var, InputConfiguration inputConfiguration, int i, zx zxVar) {
+        this.a = arrayList;
+        this.c = Collections.unmodifiableList(arrayList2);
+        this.d = Collections.unmodifiableList(arrayList3);
+        this.e = Collections.unmodifiableList(arrayList4);
+        this.f = dt6Var;
+        this.g = yk0Var;
+        this.i = inputConfiguration;
+        this.h = i;
+        this.b = zxVar;
     }
 
-    public static void f(float[] fArr, float[] fArr2, dw dwVar) {
-        Matrix.setIdentityM(fArr, 0);
-        if (dwVar == null) {
-            return;
+    public static ft6 a() {
+        ArrayList arrayList = new ArrayList();
+        ArrayList arrayList2 = new ArrayList(0);
+        ArrayList arrayList3 = new ArrayList(0);
+        ArrayList arrayList4 = new ArrayList(0);
+        HashSet hashSet = new HashSet();
+        eq4 d = eq4.d();
+        ArrayList arrayList5 = new ArrayList();
+        uq4 a = uq4.a();
+        ArrayList arrayList6 = new ArrayList(hashSet);
+        w25 a2 = w25.a(d);
+        ArrayList arrayList7 = new ArrayList(arrayList5);
+        pn7 pn7Var = pn7.b;
+        ArrayMap arrayMap = new ArrayMap();
+        ArrayMap arrayMap2 = a.a;
+        for (String str : arrayMap2.keySet()) {
+            arrayMap.put(str, arrayMap2.get(str));
         }
-        Size size = dwVar.a;
-        boolean z = dwVar.e;
-        int i = dwVar.d;
-        wj0.h0(fArr);
-        wj0.g0(fArr, i);
-        if (z) {
-            Matrix.translateM(fArr, 0, 1.0f, 0.0f, 0.0f);
-            Matrix.scaleM(fArr, 0, -1.0f, 1.0f, 1.0f);
-        }
-        Size sizeE = h77.e(size, i);
-        android.graphics.Matrix matrixA = h77.a(new RectF(0.0f, 0.0f, size.getWidth(), size.getHeight()), new RectF(0.0f, 0.0f, sizeE.getWidth(), sizeE.getHeight()), i, z);
-        RectF rectF = new RectF(dwVar.b);
-        matrixA.mapRect(rectF);
-        float width = rectF.left / sizeE.getWidth();
-        float height = ((sizeE.getHeight() - rectF.height()) - rectF.top) / sizeE.getHeight();
-        float fWidth = rectF.width() / sizeE.getWidth();
-        float fHeight = rectF.height() / sizeE.getHeight();
-        Matrix.translateM(fArr, 0, width, height, 0.0f);
-        Matrix.scaleM(fArr, 0, fWidth, fHeight, 1.0f);
-        yc0 yc0Var = dwVar.c;
-        Matrix.setIdentityM(fArr2, 0);
-        wj0.h0(fArr2);
-        if (yc0Var != null) {
-            hp4.u("Camera has no transform.", yc0Var.l());
-            wj0.g0(fArr2, yc0Var.a().a());
-            if (yc0Var.c()) {
-                Matrix.translateM(fArr2, 0, 1.0f, 0.0f, 0.0f);
-                Matrix.scaleM(fArr2, 0, -1.0f, 1.0f, 1.0f);
-            }
-        }
-        Matrix.invertM(fArr2, 0, fArr2, 0);
-        Matrix.multiplyMM(fArr, 0, fArr2, 0, fArr, 0);
+        return new ft6(arrayList, arrayList2, arrayList3, arrayList4, new yk0(arrayList6, a2, -1, arrayList7, new pn7(arrayMap)), null, null, 0, null);
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public final void close() {
-        synchronized (this.Q) {
-            try {
-                if (!this.Y) {
-                    this.Y = true;
-                }
-            } catch (Throwable th) {
-                throw th;
+    public final List b() {
+        ArrayList arrayList = new ArrayList();
+        Iterator it = this.a.iterator();
+        while (it.hasNext()) {
+            zx zxVar = (zx) it.next();
+            arrayList.add(zxVar.a);
+            Iterator it2 = zxVar.b.iterator();
+            while (it2.hasNext()) {
+                arrayList.add((vd1) it2.next());
             }
         }
-        this.a0.b(null);
-    }
-
-    public final Surface h(de2 de2Var, nu0 nu0Var) {
-        boolean z;
-        synchronized (this.Q) {
-            this.W = de2Var;
-            this.V = nu0Var;
-            z = this.X;
-        }
-        if (z) {
-            i();
-        }
-        return this.R;
-    }
-
-    public final void i() {
-        Executor executor;
-        nu0 nu0Var;
-        AtomicReference atomicReference = new AtomicReference();
-        synchronized (this.Q) {
-            try {
-                if (this.W == null || (nu0Var = this.V) == null) {
-                    this.X = true;
-                } else if (!this.Y) {
-                    atomicReference.set(nu0Var);
-                    executor = this.W;
-                    this.X = false;
-                }
-                executor = null;
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        if (executor != null) {
-            try {
-                executor.execute(new a44(9, this, atomicReference));
-            } catch (RejectedExecutionException unused) {
-                w33.U("SurfaceOutputImpl");
-            }
-        }
+        return Collections.unmodifiableList(arrayList);
     }
 }

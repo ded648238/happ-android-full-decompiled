@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/ws/WebSocketReader;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -22,15 +22,15 @@
         "Ljava/io/Closeable;",
         "",
         "isClient",
-        "Ls50;",
+        "Lf80;",
         "source",
         "Lokhttp3/internal/ws/WebSocketReader$FrameCallback;",
         "frameCallback",
         "perMessageDeflate",
         "noContextTakeover",
         "<init>",
-        "(ZLs50;Lokhttp3/internal/ws/WebSocketReader$FrameCallback;ZZ)V",
-        "Lbh7;",
+        "(ZLf80;Lokhttp3/internal/ws/WebSocketReader$FrameCallback;ZZ)V",
+        "Lr98;",
         "readHeader",
         "()V",
         "readControlFrame",
@@ -40,9 +40,9 @@
         "processNextFrame",
         "close",
         "Z",
-        "Ls50;",
+        "Lf80;",
         "getSource",
-        "()Ls50;",
+        "()Lf80;",
         "Lokhttp3/internal/ws/WebSocketReader$FrameCallback;",
         "closed",
         "",
@@ -54,9 +54,9 @@
         "isFinalFrame",
         "isControlFrame",
         "readingCompressedMessage",
-        "Lf50;",
+        "Ll70;",
         "controlFrameBuffer",
-        "Lf50;",
+        "Ll70;",
         "messageFrameBuffer",
         "Lokhttp3/internal/ws/MessageInflater;",
         "messageInflater",
@@ -64,9 +64,9 @@
         "",
         "maskKey",
         "[B",
-        "Ld50;",
+        "Lj70;",
         "maskCursor",
-        "Ld50;",
+        "Lj70;",
         "FrameCallback",
         "okhttp"
     }
@@ -83,7 +83,7 @@
 # instance fields
 .field private closed:Z
 
-.field private final controlFrameBuffer:Lf50;
+.field private final controlFrameBuffer:Ll70;
 
 .field private final frameCallback:Lokhttp3/internal/ws/WebSocketReader$FrameCallback;
 
@@ -95,11 +95,11 @@
 
 .field private isFinalFrame:Z
 
-.field private final maskCursor:Ld50;
+.field private final maskCursor:Lj70;
 
 .field private final maskKey:[B
 
-.field private final messageFrameBuffer:Lf50;
+.field private final messageFrameBuffer:Ll70;
 
 .field private messageInflater:Lokhttp3/internal/ws/MessageInflater;
 
@@ -111,11 +111,11 @@
 
 .field private readingCompressedMessage:Z
 
-.field private final source:Ls50;
+.field private final source:Lf80;
 
 
 # direct methods
-.method public constructor <init>(ZLs50;Lokhttp3/internal/ws/WebSocketReader$FrameCallback;ZZ)V
+.method public constructor <init>(ZLf80;Lokhttp3/internal/ws/WebSocketReader$FrameCallback;ZZ)V
     .locals 0
 
     .line 1
@@ -138,7 +138,7 @@
 
     .line 11
     .line 12
-    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 13
     .line 14
@@ -154,7 +154,7 @@
 
     .line 19
     .line 20
-    new-instance p2, Lf50;
+    new-instance p2, Ll70;
 
     .line 21
     .line 22
@@ -163,11 +163,11 @@
     .line 23
     .line 24
     .line 25
-    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lf50;
+    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Ll70;
 
     .line 26
     .line 27
-    new-instance p2, Lf50;
+    new-instance p2, Ll70;
 
     .line 28
     .line 29
@@ -176,7 +176,7 @@
     .line 30
     .line 31
     .line 32
-    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Lf50;
+    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Ll70;
 
     .line 33
     .line 34
@@ -214,17 +214,17 @@
 
     .line 47
     :cond_1
-    new-instance p2, Ld50;
+    new-instance p2, Lj70;
 
     .line 48
     .line 49
-    invoke-direct {p2}, Ld50;-><init>()V
+    invoke-direct {p2}, Lj70;-><init>()V
 
     .line 50
     .line 51
     .line 52
     :goto_1
-    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Ld50;
+    iput-object p2, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Lj70;
 
     .line 53
     .line 54
@@ -256,15 +256,15 @@
 
     .line 8
     .line 9
-    iget-object v4, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v4, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 10
     .line 11
-    iget-object v5, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lf50;
+    iget-object v5, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Ll70;
 
     .line 12
     .line 13
-    invoke-interface {v4, v5, v0, v1}, Ls50;->Y(Lf50;J)V
+    invoke-interface {v4, v5, v0, v1}, Lf80;->g0(Ll70;J)V
 
     .line 14
     .line 15
@@ -277,11 +277,11 @@
 
     .line 19
     .line 20
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Ll70;
 
     .line 21
     .line 22
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Ld50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Lj70;
 
     .line 23
     .line 24
@@ -290,16 +290,16 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v0, v1}, Lf50;->M(Ld50;)Ld50;
+    invoke-virtual {v0, v1}, Ll70;->R(Lj70;)V
 
     .line 28
     .line 29
     .line 30
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Ld50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Lj70;
 
     .line 31
     .line 32
-    invoke-virtual {v0, v2, v3}, Ld50;->h(J)I
+    invoke-virtual {v0, v2, v3}, Lj70;->h(J)I
 
     .line 33
     .line 34
@@ -308,7 +308,7 @@
 
     .line 36
     .line 37
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Ld50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Lj70;
 
     .line 38
     .line 39
@@ -321,16 +321,16 @@
     .line 42
     .line 43
     .line 44
-    invoke-virtual {v0, v1, v4}, Lokhttp3/internal/ws/WebSocketProtocol;->toggleMask(Ld50;[B)V
+    invoke-virtual {v0, v1, v4}, Lokhttp3/internal/ws/WebSocketProtocol;->toggleMask(Lj70;[B)V
 
     .line 45
     .line 46
     .line 47
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Ld50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Lj70;
 
     .line 48
     .line 49
-    invoke-virtual {v0}, Ld50;->close()V
+    invoke-virtual {v0}, Lj70;->close()V
 
     .line 50
     .line 51
@@ -349,45 +349,45 @@
 
     .line 58
     .line 59
-    iget v1, p0, Lokhttp3/internal/ws/WebSocketReader;->opcode:I
+    iget p0, p0, Lokhttp3/internal/ws/WebSocketReader;->opcode:I
 
     .line 60
     .line 61
-    invoke-static {v1}, Lokhttp3/internal/Util;->toHexString(I)Ljava/lang/String;
+    invoke-static {p0}, Lokhttp3/internal/Util;->toHexString(I)Ljava/lang/String;
 
     .line 62
     .line 63
     .line 64
-    move-result-object v1
+    move-result-object p0
 
     .line 65
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 66
     .line 67
-    const-string v3, "Unknown control opcode: "
+    const-string v2, "Unknown control opcode: "
 
     .line 68
     .line 69
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 70
     .line 71
     .line 72
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 73
     .line 74
     .line 75
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 76
     .line 77
     .line 78
-    move-result-object v1
+    move-result-object p0
 
     .line 79
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 80
     .line 81
@@ -400,23 +400,23 @@
 
     .line 84
     .line 85
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lf50;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Ll70;
 
     .line 86
     .line 87
-    iget-wide v2, v1, Lf50;->R:J
+    iget-wide v1, p0, Ll70;->Y:J
 
     .line 88
     .line 89
-    invoke-virtual {v1, v2, v3}, Lf50;->o(J)Ly60;
+    invoke-virtual {p0, v1, v2}, Ll70;->s(J)Lo90;
 
     .line 90
     .line 91
     .line 92
-    move-result-object v1
+    move-result-object p0
 
     .line 93
-    invoke-interface {v0, v1}, Lokhttp3/internal/ws/WebSocketReader$FrameCallback;->onReadPong(Ly60;)V
+    invoke-interface {v0, p0}, Lokhttp3/internal/ws/WebSocketReader$FrameCallback;->onReadPong(Lo90;)V
 
     .line 94
     .line 95
@@ -429,23 +429,23 @@
 
     .line 98
     .line 99
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lf50;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Ll70;
 
     .line 100
     .line 101
-    iget-wide v2, v1, Lf50;->R:J
+    iget-wide v1, p0, Ll70;->Y:J
 
     .line 102
     .line 103
-    invoke-virtual {v1, v2, v3}, Lf50;->o(J)Ly60;
+    invoke-virtual {p0, v1, v2}, Ll70;->s(J)Lo90;
 
     .line 104
     .line 105
     .line 106
-    move-result-object v1
+    move-result-object p0
 
     .line 107
-    invoke-interface {v0, v1}, Lokhttp3/internal/ws/WebSocketReader$FrameCallback;->onReadPing(Ly60;)V
+    invoke-interface {v0, p0}, Lokhttp3/internal/ws/WebSocketReader$FrameCallback;->onReadPing(Lo90;)V
 
     .line 108
     .line 109
@@ -454,11 +454,11 @@
 
     .line 111
     :pswitch_2
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Ll70;
 
     .line 112
     .line 113
-    iget-wide v4, v0, Lf50;->R:J
+    iget-wide v4, v0, Ll70;->Y:J
 
     .line 114
     .line 115
@@ -482,7 +482,7 @@
 
     .line 124
     .line 125
-    invoke-virtual {v0}, Lf50;->readShort()S
+    invoke-virtual {v0}, Ll70;->readShort()S
 
     .line 126
     .line 127
@@ -490,11 +490,11 @@
     move-result v0
 
     .line 129
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Lf50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->controlFrameBuffer:Ll70;
 
     .line 130
     .line 131
-    invoke-virtual {v1}, Lf50;->i0()Ljava/lang/String;
+    invoke-virtual {v1}, Ll70;->b0()Ljava/lang/String;
 
     .line 132
     .line 133
@@ -522,16 +522,16 @@
 
     .line 144
     :cond_1
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 145
     .line 146
-    invoke-direct {v0, v2}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 147
     .line 148
     .line 149
-    throw v0
+    throw p0
 
     .line 150
     :cond_2
@@ -564,20 +564,20 @@
 
     .line 163
     :cond_3
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 164
     .line 165
-    const-string v1, "Malformed close payload length of 1."
+    const-string v0, "Malformed close payload length of 1."
 
     .line 166
     .line 167
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 168
     .line 169
     .line 170
-    throw v0
+    throw p0
 
     .line 171
     :pswitch_data_0
@@ -610,11 +610,11 @@
 
     .line 6
     .line 7
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 8
     .line 9
-    invoke-interface {v1}, Lle6;->timeout()Lo47;
+    invoke-interface {v1}, Ld27;->timeout()Lax7;
 
     .line 10
     .line 11
@@ -622,7 +622,7 @@
     move-result-object v1
 
     .line 13
-    invoke-virtual {v1}, Lo47;->timeoutNanos()J
+    invoke-virtual {v1}, Lax7;->timeoutNanos()J
 
     .line 14
     .line 15
@@ -630,11 +630,11 @@
     move-result-wide v1
 
     .line 17
-    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 18
     .line 19
-    invoke-interface {v3}, Lle6;->timeout()Lo47;
+    invoke-interface {v3}, Ld27;->timeout()Lax7;
 
     .line 20
     .line 21
@@ -642,17 +642,17 @@
     move-result-object v3
 
     .line 23
-    invoke-virtual {v3}, Lo47;->clearTimeout()Lo47;
+    invoke-virtual {v3}, Lax7;->clearTimeout()Lax7;
 
     .line 24
     .line 25
     .line 26
     :try_start_0
-    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 27
     .line 28
-    invoke-interface {v3}, Ls50;->readByte()B
+    invoke-interface {v3}, Lf80;->readByte()B
 
     .line 29
     .line 30
@@ -674,11 +674,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 38
-    iget-object v5, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v5, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 39
     .line 40
-    invoke-interface {v5}, Lle6;->timeout()Lo47;
+    invoke-interface {v5}, Ld27;->timeout()Lax7;
 
     .line 41
     .line 42
@@ -686,7 +686,7 @@
     move-result-object v5
 
     .line 44
-    invoke-virtual {v5, v1, v2, v0}, Lo47;->timeout(JLjava/util/concurrent/TimeUnit;)Lo47;
+    invoke-virtual {v5, v1, v2, v0}, Lax7;->timeout(JLjava/util/concurrent/TimeUnit;)Lax7;
 
     .line 45
     .line 46
@@ -713,14 +713,14 @@
 
     .line 56
     .line 57
-    const/4 v1, 0x1
+    move v1, v5
 
     .line 58
     goto :goto_0
 
     .line 59
     :cond_0
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 60
     :goto_0
@@ -736,14 +736,14 @@
 
     .line 65
     .line 66
-    const/4 v6, 0x1
+    move v6, v5
 
     .line 67
     goto :goto_1
 
     .line 68
     :cond_1
-    const/4 v6, 0x0
+    move v6, v2
 
     .line 69
     :goto_1
@@ -763,20 +763,20 @@
 
     .line 76
     :cond_2
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 77
     .line 78
-    const-string v1, "Control frames must be final."
+    const-string v0, "Control frames must be final."
 
     .line 79
     .line 80
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 81
     .line 82
     .line 83
-    throw v0
+    throw p0
 
     .line 84
     :cond_3
@@ -789,14 +789,14 @@
 
     .line 87
     .line 88
-    const/4 v1, 0x1
+    move v1, v5
 
     .line 89
     goto :goto_3
 
     .line 90
     :cond_4
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 91
     :goto_3
@@ -823,16 +823,16 @@
 
     .line 101
     :cond_5
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 102
     .line 103
-    invoke-direct {v0, v6}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v6}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 104
     .line 105
     .line 106
-    throw v0
+    throw p0
 
     .line 107
     :cond_6
@@ -848,27 +848,27 @@
 
     .line 112
     .line 113
-    const/4 v0, 0x1
+    move v0, v5
 
     .line 114
     goto :goto_4
 
     .line 115
     :cond_7
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 116
     .line 117
-    invoke-direct {v0, v6}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v6}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 118
     .line 119
     .line 120
-    throw v0
+    throw p0
 
     .line 121
     :cond_8
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 122
     :goto_4
@@ -893,11 +893,11 @@
 
     .line 131
     .line 132
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 133
     .line 134
-    invoke-interface {v0}, Ls50;->readByte()B
+    invoke-interface {v0}, Lf80;->readByte()B
 
     .line 135
     .line 136
@@ -921,7 +921,7 @@
 
     .line 145
     .line 146
-    const/4 v2, 0x1
+    move v2, v5
 
     .line 147
     :cond_9
@@ -937,15 +937,15 @@
 
     .line 152
     .line 153
-    iget-boolean v1, p0, Lokhttp3/internal/ws/WebSocketReader;->isClient:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/WebSocketReader;->isClient:Z
 
     .line 154
     .line 155
-    if-eqz v1, :cond_a
+    if-eqz p0, :cond_a
 
     .line 156
     .line 157
-    const-string v1, "Server-sent frames must not be masked."
+    const-string p0, "Server-sent frames must not be masked."
 
     .line 158
     .line 159
@@ -953,12 +953,12 @@
 
     .line 160
     :cond_a
-    const-string v1, "Client-sent frames must be masked."
+    const-string p0, "Client-sent frames must be masked."
 
     .line 161
     .line 162
     :goto_6
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 163
     .line 164
@@ -982,19 +982,19 @@
 
     .line 172
     .line 173
-    cmp-long v5, v0, v3
+    cmp-long v3, v0, v3
 
     .line 174
     .line 175
-    if-nez v5, :cond_c
+    if-nez v3, :cond_c
 
     .line 176
     .line 177
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 178
     .line 179
-    invoke-interface {v0}, Ls50;->readShort()S
+    invoke-interface {v0}, Lf80;->readShort()S
 
     .line 180
     .line 181
@@ -1030,19 +1030,19 @@
 
     .line 195
     .line 196
-    cmp-long v5, v0, v3
+    cmp-long v0, v0, v3
 
     .line 197
     .line 198
-    if-nez v5, :cond_e
+    if-nez v0, :cond_e
 
     .line 199
     .line 200
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 201
     .line 202
-    invoke-interface {v0}, Ls50;->readLong()J
+    invoke-interface {v0}, Lf80;->readLong()J
 
     .line 203
     .line 204
@@ -1058,11 +1058,11 @@
 
     .line 209
     .line 210
-    cmp-long v5, v0, v3
+    cmp-long v0, v0, v3
 
     .line 211
     .line 212
-    if-ltz v5, :cond_d
+    if-ltz v0, :cond_d
 
     .line 213
     .line 214
@@ -1083,45 +1083,45 @@
     .line 220
     .line 221
     .line 222
-    move-result-object v1
+    move-result-object p0
 
     .line 223
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 224
     .line 225
-    const-string v3, "Frame length 0x"
+    const-string v2, "Frame length 0x"
 
     .line 226
     .line 227
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 228
     .line 229
     .line 230
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 231
     .line 232
     .line 233
-    const-string v1, " > 0x7FFFFFFFFFFFFFFF"
+    const-string p0, " > 0x7FFFFFFFFFFFFFFF"
 
     .line 234
     .line 235
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 236
     .line 237
     .line 238
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 239
     .line 240
     .line 241
-    move-result-object v1
+    move-result-object p0
 
     .line 242
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 243
     .line 244
@@ -1147,11 +1147,11 @@
 
     .line 253
     .line 254
-    cmp-long v5, v0, v3
+    cmp-long v0, v0, v3
 
     .line 255
     .line 256
-    if-gtz v5, :cond_f
+    if-gtz v0, :cond_f
 
     .line 257
     .line 258
@@ -1159,20 +1159,20 @@
 
     .line 259
     :cond_f
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 260
     .line 261
-    const-string v1, "Control frame must be less than 125B."
+    const-string v0, "Control frame must be less than 125B."
 
     .line 262
     .line 263
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 264
     .line 265
     .line 266
-    throw v0
+    throw p0
 
     .line 267
     :cond_10
@@ -1181,20 +1181,20 @@
 
     .line 268
     .line 269
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 270
     .line 271
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskKey:[B
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketReader;->maskKey:[B
 
     .line 272
     .line 273
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 274
     .line 275
     .line 276
-    invoke-interface {v0, v1}, Ls50;->readFully([B)V
+    invoke-interface {v0, p0}, Lf80;->readFully([B)V
 
     .line 277
     .line 278
@@ -1204,56 +1204,56 @@
 
     .line 280
     :cond_12
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 281
     .line 282
-    const-string v1, "Unexpected rsv3 flag"
+    const-string v0, "Unexpected rsv3 flag"
 
     .line 283
     .line 284
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 285
     .line 286
     .line 287
-    throw v0
+    throw p0
 
     .line 288
     :cond_13
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 289
     .line 290
-    const-string v1, "Unexpected rsv2 flag"
+    const-string v0, "Unexpected rsv2 flag"
 
     .line 291
     .line 292
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 293
     .line 294
     .line 295
-    throw v0
+    throw p0
 
     .line 296
     :catchall_0
     move-exception v3
 
     .line 297
-    iget-object v4, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 298
     .line 299
-    invoke-interface {v4}, Lle6;->timeout()Lo47;
+    invoke-interface {p0}, Ld27;->timeout()Lax7;
 
     .line 300
     .line 301
     .line 302
-    move-result-object v4
+    move-result-object p0
 
     .line 303
-    invoke-virtual {v4, v1, v2, v0}, Lo47;->timeout(JLjava/util/concurrent/TimeUnit;)Lo47;
+    invoke-virtual {p0, v1, v2, v0}, Lax7;->timeout(JLjava/util/concurrent/TimeUnit;)Lax7;
 
     .line 304
     .line 305
@@ -1262,11 +1262,11 @@
 
     .line 307
     :cond_14
-    const-string v0, "closed"
+    const-string p0, "closed"
 
     .line 308
     .line 309
-    invoke-static {v0}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 310
     .line 311
@@ -1300,23 +1300,23 @@
 
     .line 8
     .line 9
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 10
     .line 11
-    if-lez v4, :cond_0
+    if-lez v2, :cond_0
 
     .line 12
     .line 13
-    iget-object v2, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object v2, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 14
     .line 15
-    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Lf50;
+    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Ll70;
 
     .line 16
     .line 17
-    invoke-interface {v2, v3, v0, v1}, Ls50;->Y(Lf50;J)V
+    invoke-interface {v2, v3, v0, v1}, Lf80;->g0(Ll70;J)V
 
     .line 18
     .line 19
@@ -1329,11 +1329,11 @@
 
     .line 23
     .line 24
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Ll70;
 
     .line 25
     .line 26
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Ld50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Lj70;
 
     .line 27
     .line 28
@@ -1342,20 +1342,20 @@
     .line 29
     .line 30
     .line 31
-    invoke-virtual {v0, v1}, Lf50;->M(Ld50;)Ld50;
+    invoke-virtual {v0, v1}, Ll70;->R(Lj70;)V
 
     .line 32
     .line 33
     .line 34
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Ld50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Lj70;
 
     .line 35
     .line 36
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Lf50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Ll70;
 
     .line 37
     .line 38
-    iget-wide v1, v1, Lf50;->R:J
+    iget-wide v1, v1, Ll70;->Y:J
 
     .line 39
     .line 40
@@ -1366,7 +1366,7 @@
     sub-long/2addr v1, v3
 
     .line 43
-    invoke-virtual {v0, v1, v2}, Ld50;->h(J)I
+    invoke-virtual {v0, v1, v2}, Lj70;->h(J)I
 
     .line 44
     .line 45
@@ -1375,7 +1375,7 @@
 
     .line 47
     .line 48
-    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Ld50;
+    iget-object v1, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Lj70;
 
     .line 49
     .line 50
@@ -1388,16 +1388,16 @@
     .line 53
     .line 54
     .line 55
-    invoke-virtual {v0, v1, v2}, Lokhttp3/internal/ws/WebSocketProtocol;->toggleMask(Ld50;[B)V
+    invoke-virtual {v0, v1, v2}, Lokhttp3/internal/ws/WebSocketProtocol;->toggleMask(Lj70;[B)V
 
     .line 56
     .line 57
     .line 58
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Ld50;
+    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->maskCursor:Lj70;
 
     .line 59
     .line 60
-    invoke-virtual {v0}, Ld50;->close()V
+    invoke-virtual {v0}, Lj70;->close()V
 
     .line 61
     .line 62
@@ -1432,45 +1432,45 @@
 
     .line 76
     .line 77
-    iget v1, p0, Lokhttp3/internal/ws/WebSocketReader;->opcode:I
+    iget p0, p0, Lokhttp3/internal/ws/WebSocketReader;->opcode:I
 
     .line 78
     .line 79
-    invoke-static {v1}, Lokhttp3/internal/Util;->toHexString(I)Ljava/lang/String;
+    invoke-static {p0}, Lokhttp3/internal/Util;->toHexString(I)Ljava/lang/String;
 
     .line 80
     .line 81
     .line 82
-    move-result-object v1
+    move-result-object p0
 
     .line 83
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 84
     .line 85
-    const-string v3, "Expected continuation opcode. Got: "
+    const-string v2, "Expected continuation opcode. Got: "
 
     .line 86
     .line 87
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 88
     .line 89
     .line 90
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 91
     .line 92
     .line 93
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 94
     .line 95
     .line 96
-    move-result-object v1
+    move-result-object p0
 
     .line 97
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 98
     .line 99
@@ -1483,11 +1483,11 @@
 
     .line 102
     :cond_3
-    const-string v0, "closed"
+    const-string p0, "closed"
 
     .line 103
     .line 104
-    invoke-static {v0}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 105
     .line 106
@@ -1496,7 +1496,7 @@
 .end method
 
 .method private final readMessageFrame()V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1526,7 +1526,7 @@
 
     .line 10
     :cond_0
-    new-instance v1, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 11
     .line 12
@@ -1538,25 +1538,25 @@
     move-result-object v0
 
     .line 16
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 17
     .line 18
-    const-string v3, "Unknown opcode: "
+    const-string v2, "Unknown opcode: "
 
     .line 19
     .line 20
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 24
     .line 25
     .line 26
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 27
     .line 28
@@ -1564,12 +1564,12 @@
     move-result-object v0
 
     .line 30
-    invoke-direct {v1, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 31
     .line 32
     .line 33
-    throw v1
+    throw p0
 
     .line 34
     :cond_1
@@ -1613,11 +1613,11 @@
     .line 53
     .line 54
     :cond_2
-    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Lf50;
+    iget-object v3, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Ll70;
 
     .line 55
     .line 56
-    invoke-virtual {v2, v3}, Lokhttp3/internal/ws/MessageInflater;->inflate(Lf50;)V
+    invoke-virtual {v2, v3}, Lokhttp3/internal/ws/MessageInflater;->inflate(Ll70;)V
 
     .line 57
     .line 58
@@ -1631,19 +1631,19 @@
 
     .line 62
     .line 63
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Lf50;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Ll70;
 
     .line 64
     .line 65
-    invoke-virtual {v0}, Lf50;->i0()Ljava/lang/String;
+    invoke-virtual {p0}, Ll70;->b0()Ljava/lang/String;
 
     .line 66
     .line 67
     .line 68
-    move-result-object v0
+    move-result-object p0
 
     .line 69
-    invoke-interface {v2, v0}, Lokhttp3/internal/ws/WebSocketReader$FrameCallback;->onReadMessage(Ljava/lang/String;)V
+    invoke-interface {v2, p0}, Lokhttp3/internal/ws/WebSocketReader$FrameCallback;->onReadMessage(Ljava/lang/String;)V
 
     .line 70
     .line 71
@@ -1652,23 +1652,23 @@
 
     .line 73
     :cond_4
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Lf50;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketReader;->messageFrameBuffer:Ll70;
 
     .line 74
     .line 75
-    iget-wide v3, v0, Lf50;->R:J
+    iget-wide v0, p0, Ll70;->Y:J
 
     .line 76
     .line 77
-    invoke-virtual {v0, v3, v4}, Lf50;->o(J)Ly60;
+    invoke-virtual {p0, v0, v1}, Ll70;->s(J)Lo90;
 
     .line 78
     .line 79
     .line 80
-    move-result-object v0
+    move-result-object p0
 
     .line 81
-    invoke-interface {v2, v0}, Lokhttp3/internal/ws/WebSocketReader$FrameCallback;->onReadMessage(Ly60;)V
+    invoke-interface {v2, p0}, Lokhttp3/internal/ws/WebSocketReader$FrameCallback;->onReadMessage(Lo90;)V
 
     .line 82
     .line 83
@@ -1727,7 +1727,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1735,15 +1735,15 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->messageInflater:Lokhttp3/internal/ws/MessageInflater;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketReader;->messageInflater:Lokhttp3/internal/ws/MessageInflater;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lokhttp3/internal/ws/MessageInflater;->close()V
+    invoke-virtual {p0}, Lokhttp3/internal/ws/MessageInflater;->close()V
 
     .line 6
     .line 7
@@ -1752,15 +1752,15 @@
     return-void
 .end method
 
-.method public final getSource()Ls50;
-    .locals 1
+.method public final getSource()Lf80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/ws/WebSocketReader;->source:Lf80;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final processNextFrame()V

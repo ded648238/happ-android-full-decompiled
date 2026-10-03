@@ -1,409 +1,513 @@
 .class public final Ls87;
-.super Landroid/animation/AnimatorListenerAdapter;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Luf2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Landroid/transition/Transition$TransitionListener;
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0004"
+    }
+    d2 = {
+        "Ls87;",
+        "Luf2;",
+        "<init>",
+        "()V",
+        "app"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x4,
+        0x0
+    }
+    xi = 0x30
+.end annotation
 
 
 # instance fields
-.field public final a:Landroid/view/View;
-
-.field public final b:Landroid/view/View;
-
-.field public final c:I
-
-.field public final d:I
-
-.field public e:[I
-
-.field public f:F
-
-.field public g:F
-
-.field public final h:F
-
-.field public final i:F
+.field public a1:Ldh2;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Landroid/view/View;IIFF)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct {p0}, Luf2;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ls87;->b:Landroid/view/View;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Ls87;->a:Landroid/view/View;
-
-    .line 7
-    .line 8
-    invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v0
-
-    .line 12
-    invoke-static {v0}, Ljava/lang/Math;->round(F)I
-
-    .line 13
-    .line 14
-    .line 15
-    move-result v0
-
-    .line 16
-    sub-int/2addr p3, v0
-
-    .line 17
-    iput p3, p0, Ls87;->c:I
-
-    .line 18
-    .line 19
-    invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
-
-    .line 20
-    .line 21
-    .line 22
-    move-result p1
-
-    .line 23
-    invoke-static {p1}, Ljava/lang/Math;->round(F)I
-
-    .line 24
-    .line 25
-    .line 26
-    move-result p1
-
-    .line 27
-    sub-int/2addr p4, p1
-
-    .line 28
-    iput p4, p0, Ls87;->d:I
-
-    .line 29
-    .line 30
-    iput p5, p0, Ls87;->h:F
-
-    .line 31
-    .line 32
-    iput p6, p0, Ls87;->i:F
-
-    .line 33
-    .line 34
-    sget p1, Lv85;->transitionPosition:I
-
-    .line 35
-    .line 36
-    invoke-virtual {p2, p1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object p1
-
-    .line 40
-    check-cast p1, [I
-
-    .line 41
-    .line 42
-    iput-object p1, p0, Ls87;->e:[I
-
-    .line 43
-    .line 44
-    if-eqz p1, :cond_0
-
-    .line 45
-    .line 46
-    sget p1, Lv85;->transitionPosition:I
-
-    .line 47
-    .line 48
-    const/4 p3, 0x0
-
-    .line 49
-    invoke-virtual {p2, p1, p3}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 50
-    .line 51
-    .line 52
-    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 3
+.method public final y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
+    .locals 8
 
     .line 1
-    iget-object p1, p0, Ls87;->e:[I
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    if-nez p1, :cond_0
-
     .line 4
-    .line 5
-    const/4 p1, 0x2
+    sget p2, Ldh2;->o0:I
 
+    .line 5
     .line 6
-    new-array p1, p1, [I
+    sget-object p2, Le71;->a:Landroidx/databinding/DataBinderMapperImpl;
 
     .line 7
     .line 8
-    iput-object p1, p0, Ls87;->e:[I
+    sget p2, Ltt5;->fragment_story_page:I
 
     .line 9
     .line 10
-    :cond_0
-    iget-object p1, p0, Ls87;->e:[I
+    const/4 v0, 0x0
 
     .line 11
-    .line 12
-    iget v0, p0, Ls87;->c:I
+    invoke-static {p2, p1, v0}, Lvi8;->c(ILandroid/view/LayoutInflater;Landroid/view/ViewGroup;)Lvi8;
 
+    .line 12
     .line 13
     .line 14
-    int-to-float v0, v0
+    move-result-object p1
 
     .line 15
-    iget-object v1, p0, Ls87;->b:Landroid/view/View;
+    check-cast p1, Ldh2;
 
     .line 16
     .line 17
-    invoke-virtual {v1}, Landroid/view/View;->getTranslationX()F
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 18
     .line 19
     .line 20
-    move-result v2
+    iput-object p1, p0, Ls87;->a1:Ldh2;
 
     .line 21
-    add-float/2addr v2, v0
-
     .line 22
-    invoke-static {v2}, Ljava/lang/Math;->round(F)I
+    iget-object p1, p0, Luf2;->e0:Landroid/os/Bundle;
 
     .line 23
     .line 24
-    .line 25
-    move-result v0
+    if-eqz p1, :cond_0
 
+    .line 25
     .line 26
-    const/4 v2, 0x0
+    const-class p2, Lb26;
 
     .line 27
-    aput v0, p1, v2
-
     .line 28
+    sget-object v1, Lp06;->a:Lq06;
+
     .line 29
-    iget-object p1, p0, Ls87;->e:[I
-
     .line 30
-    .line 31
-    iget v0, p0, Ls87;->d:I
+    invoke-virtual {v1, p2}, Lq06;->b(Ljava/lang/Class;)Lgn3;
 
+    .line 31
     .line 32
     .line 33
-    int-to-float v0, v0
+    move-result-object p2
 
     .line 34
-    invoke-virtual {v1}, Landroid/view/View;->getTranslationY()F
+    invoke-static {p1, p2}, Lx3;->l(Landroid/os/Bundle;Lgn3;)Landroid/os/Parcelable;
 
     .line 35
     .line 36
     .line 37
-    move-result v1
+    move-result-object p1
 
     .line 38
-    add-float/2addr v1, v0
+    check-cast p1, Lb26;
 
     .line 39
-    invoke-static {v1}, Ljava/lang/Math;->round(F)I
-
     .line 40
+    goto :goto_0
+
     .line 41
+    :cond_0
+    move-object p1, v0
+
     .line 42
-    move-result v0
+    :goto_0
+    if-eqz p1, :cond_7
 
     .line 43
-    const/4 v1, 0x1
-
     .line 44
-    aput v0, p1, v1
+    iget-object p2, p1, Lb26;->Y:Ll71;
 
     .line 45
     .line 46
-    sget p1, Lv85;->transitionPosition:I
+    invoke-virtual {p2}, Ll71;->c()Lo71;
 
     .line 47
     .line 48
-    iget-object v0, p0, Ls87;->e:[I
-
     .line 49
+    move-result-object p2
+
     .line 50
-    iget-object v1, p0, Ls87;->a:Landroid/view/View;
+    invoke-virtual {p0}, Luf2;->L()Landroidx/fragment/app/FragmentActivity;
 
     .line 51
     .line 52
-    invoke-virtual {v1, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
     .line 53
+    move-result-object v1
+
     .line 54
+    check-cast v1, Lsu/happ/proxyutility/ui/BaseActivity;
+
     .line 55
-    return-void
-.end method
+    .line 56
+    iget v1, v1, Lsu/happ/proxyutility/ui/BaseActivity;->G0:I
 
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 0
+    .line 57
+    .line 58
+    invoke-virtual {p0}, Luf2;->L()Landroidx/fragment/app/FragmentActivity;
 
-    .line 1
-    return-void
-.end method
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v2
 
-.method public final onAnimationPause(Landroid/animation/Animator;)V
-    .locals 1
+    .line 62
+    check-cast v2, Lsu/happ/proxyutility/ui/BaseActivity;
 
-    .line 1
-    iget-object p1, p0, Ls87;->b:Landroid/view/View;
+    .line 63
+    .line 64
+    iget v2, v2, Lsu/happ/proxyutility/ui/BaseActivity;->H0:I
 
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
+    .line 65
+    .line 66
+    invoke-virtual {p0}, Luf2;->n()Landroid/content/res/Resources;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v3
 
-    .line 7
-    iput v0, p0, Ls87;->f:F
+    .line 70
+    invoke-virtual {v3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
-    .line 8
-    .line 9
-    invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
+    .line 71
+    .line 72
+    .line 73
+    move-result-object v3
 
-    .line 10
-    .line 11
-    .line 12
-    move-result v0
+    .line 74
+    const/4 v4, 0x1
 
-    .line 13
-    iput v0, p0, Ls87;->g:F
+    .line 75
+    const/high16 v5, 0x42400000    # 48.0f
 
-    .line 14
-    .line 15
-    iget v0, p0, Ls87;->h:F
+    .line 76
+    .line 77
+    invoke-static {v4, v5, v3}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
 
-    .line 16
-    .line 17
-    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
+    .line 78
+    .line 79
+    .line 80
+    move-result v3
 
-    .line 18
-    .line 19
-    .line 20
-    iget v0, p0, Ls87;->i:F
+    .line 81
+    float-to-int v3, v3
 
-    .line 21
-    .line 22
-    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationY(F)V
+    .line 82
+    iget-object v4, p0, Ls87;->a1:Ldh2;
 
-    .line 23
-    .line 24
-    .line 25
-    return-void
-.end method
+    .line 83
+    .line 84
+    const-string v5, "binding"
 
-.method public final onAnimationResume(Landroid/animation/Animator;)V
-    .locals 1
+    .line 85
+    .line 86
+    if-eqz v4, :cond_6
 
-    .line 1
-    iget p1, p0, Ls87;->f:F
+    .line 87
+    .line 88
+    iget-object v4, v4, Ldh2;->j0:Landroid/widget/LinearLayout;
 
-    .line 2
-    .line 3
-    iget-object v0, p0, Ls87;->b:Landroid/view/View;
+    .line 89
+    .line 90
+    new-instance v6, Landroid/widget/RelativeLayout$LayoutParams;
 
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1}, Landroid/view/View;->setTranslationX(F)V
+    .line 91
+    .line 92
+    iget-object v7, p0, Ls87;->a1:Ldh2;
 
-    .line 6
-    .line 7
-    .line 8
-    iget p1, p0, Ls87;->g:F
+    .line 93
+    .line 94
+    if-eqz v7, :cond_5
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1}, Landroid/view/View;->setTranslationY(F)V
+    .line 95
+    .line 96
+    iget-object v7, v7, Ldh2;->j0:Landroid/widget/LinearLayout;
 
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
+    .line 97
+    .line 98
+    invoke-virtual {v7}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-.method public final onTransitionCancel(Landroid/transition/Transition;)V
-    .locals 0
+    .line 99
+    .line 100
+    .line 101
+    move-result-object v7
 
-    .line 1
-    return-void
-.end method
+    .line 102
+    invoke-direct {v6, v7}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
-.method public final onTransitionEnd(Landroid/transition/Transition;)V
-    .locals 1
+    .line 103
+    .line 104
+    .line 105
+    const/4 v7, -0x1
 
-    .line 1
-    iget p1, p0, Ls87;->h:F
+    .line 106
+    iput v7, v6, Landroid/widget/RelativeLayout$LayoutParams;->width:I
 
-    .line 2
-    .line 3
-    iget-object v0, p0, Ls87;->b:Landroid/view/View;
+    .line 107
+    .line 108
+    const/4 v7, -0x2
 
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1}, Landroid/view/View;->setTranslationX(F)V
+    .line 109
+    iput v7, v6, Landroid/widget/RelativeLayout$LayoutParams;->height:I
 
-    .line 6
-    .line 7
-    .line 8
-    iget p1, p0, Ls87;->i:F
+    .line 110
+    .line 111
+    add-int/2addr v1, v3
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1}, Landroid/view/View;->setTranslationY(F)V
+    .line 112
+    iput v1, v6, Landroid/widget/RelativeLayout$LayoutParams;->topMargin:I
 
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
+    .line 113
+    .line 114
+    add-int/2addr v2, v3
 
-.method public final onTransitionPause(Landroid/transition/Transition;)V
-    .locals 0
+    .line 115
+    iput v2, v6, Landroid/widget/RelativeLayout$LayoutParams;->bottomMargin:I
 
-    .line 1
-    return-void
-.end method
+    .line 116
+    .line 117
+    const/16 v1, 0xd
 
-.method public final onTransitionResume(Landroid/transition/Transition;)V
-    .locals 0
+    .line 118
+    .line 119
+    invoke-virtual {v6, v1}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
-    .line 1
-    return-void
-.end method
+    .line 120
+    .line 121
+    .line 122
+    invoke-virtual {v4, v6}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-.method public final onTransitionStart(Landroid/transition/Transition;)V
-    .locals 0
+    .line 123
+    .line 124
+    .line 125
+    iget-object v1, p0, Ls87;->a1:Ldh2;
 
-    .line 1
-    return-void
+    .line 126
+    .line 127
+    if-eqz v1, :cond_4
+
+    .line 128
+    .line 129
+    iget-object v1, v1, Ldh2;->n0:Landroid/widget/TextSwitcher;
+
+    .line 130
+    .line 131
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 132
+    .line 133
+    .line 134
+    iget-object v2, p2, Lo71;->X:Ljava/lang/String;
+
+    .line 135
+    .line 136
+    if-nez v2, :cond_1
+
+    .line 137
+    .line 138
+    const-string v2, ""
+
+    .line 139
+    .line 140
+    :cond_1
+    const/16 v3, 0x3f
+
+    .line 141
+    .line 142
+    invoke-static {v2, v3}, Landroid/text/Html;->fromHtml(Ljava/lang/String;I)Landroid/text/Spanned;
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object v2
+
+    .line 146
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 147
+    .line 148
+    .line 149
+    invoke-virtual {v1, v2}, Landroid/widget/TextSwitcher;->setText(Ljava/lang/CharSequence;)V
+
+    .line 150
+    .line 151
+    .line 152
+    iget-object v1, p0, Ls87;->a1:Ldh2;
+
+    .line 153
+    .line 154
+    if-eqz v1, :cond_3
+
+    .line 155
+    .line 156
+    iget-object v1, v1, Ldh2;->m0:Landroid/widget/TextSwitcher;
+
+    .line 157
+    .line 158
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 159
+    .line 160
+    .line 161
+    iget-object p2, p2, Lo71;->Y:Ljava/lang/String;
+
+    .line 162
+    .line 163
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 164
+    .line 165
+    .line 166
+    invoke-static {p2, v3}, Landroid/text/Html;->fromHtml(Ljava/lang/String;I)Landroid/text/Spanned;
+
+    .line 167
+    .line 168
+    .line 169
+    move-result-object p2
+
+    .line 170
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 171
+    .line 172
+    .line 173
+    invoke-virtual {v1, p2}, Landroid/widget/TextSwitcher;->setText(Ljava/lang/CharSequence;)V
+
+    .line 174
+    .line 175
+    .line 176
+    iget-object p2, p0, Luf2;->P0:Li14;
+
+    .line 177
+    .line 178
+    invoke-static {p2}, Lkp3;->y(Li14;)Ly04;
+
+    .line 179
+    .line 180
+    .line 181
+    move-result-object p2
+
+    .line 182
+    sget-object v1, Ljm1;->a:Lpc1;
+
+    .line 183
+    .line 184
+    sget-object v1, Lac4;->a:Lkq2;
+
+    .line 185
+    .line 186
+    new-instance v2, Lu96;
+
+    .line 187
+    .line 188
+    const/16 v3, 0x10
+
+    .line 189
+    .line 190
+    invoke-direct {v2, p0, p1, v0, v3}, Lu96;-><init>(Ljava/lang/Object;Ljava/lang/Object;Lb31;I)V
+
+    .line 191
+    .line 192
+    .line 193
+    const/4 p1, 0x2
+
+    .line 194
+    invoke-static {p2, v1, v2, p1}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
+
+    .line 195
+    .line 196
+    .line 197
+    iget-object p0, p0, Ls87;->a1:Ldh2;
+
+    .line 198
+    .line 199
+    if-eqz p0, :cond_2
+
+    .line 200
+    .line 201
+    iget-object p0, p0, Lvi8;->Z:Landroid/view/View;
+
+    .line 202
+    .line 203
+    return-object p0
+
+    .line 204
+    :cond_2
+    invoke-static {v5}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 205
+    .line 206
+    .line 207
+    throw v0
+
+    .line 208
+    :cond_3
+    invoke-static {v5}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 209
+    .line 210
+    .line 211
+    throw v0
+
+    .line 212
+    :cond_4
+    invoke-static {v5}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 213
+    .line 214
+    .line 215
+    throw v0
+
+    .line 216
+    :cond_5
+    invoke-static {v5}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 217
+    .line 218
+    .line 219
+    throw v0
+
+    .line 220
+    :cond_6
+    invoke-static {v5}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 221
+    .line 222
+    .line 223
+    throw v0
+
+    .line 224
+    :cond_7
+    const-string p0, "Required value was null."
+
+    .line 225
+    .line 226
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 227
+    .line 228
+    .line 229
+    return-object v0
 .end method

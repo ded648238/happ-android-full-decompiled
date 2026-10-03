@@ -1,44 +1,53 @@
 .class public final Lio/sentry/s2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/u0;
-
-
-# static fields
-.field public static final a:Lio/sentry/s2;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lio/sentry/s2;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lio/sentry/s2;->a:Lio/sentry/s2;
-
-    .line 7
-    .line 8
-    return-void
-.end method
+.implements Lio/sentry/t0;
 
 
 # virtual methods
-.method public final a(Ljava/io/BufferedInputStream;)Lio/sentry/internal/debugmeta/c;
+.method public final H0(Lio/sentry/s0;)V
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
+    return-void
+.end method
+
+.method public final close()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final m0()Lio/sentry/r0;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lio/sentry/r0;->UNKNOWN:Lio/sentry/r0;
 
     .line 2
-    return-object p1
+    .line 3
+    return-object p0
+.end method
+
+.method public final s0(Lio/sentry/s0;)Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final y()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
 .end method

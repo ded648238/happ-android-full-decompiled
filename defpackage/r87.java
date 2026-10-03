@@ -1,38 +1,15 @@
 package defpackage;
 
-import android.view.View;
-import java.util.ArrayList;
-import java.util.HashMap;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class r87 extends ij8 {
+    public final mm7 b = new mm7(new c87(5));
+    public final k57 c;
+    public final gw5 d;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class r87 {
-    public final View b;
-    public final HashMap a = new HashMap();
-    public final ArrayList c = new ArrayList();
-
-    public r87(View view) {
-        this.b = view;
-    }
-
-    public final boolean equals(Object obj) {
-        if (!(obj instanceof r87)) {
-            return false;
-        }
-        r87 r87Var = (r87) obj;
-        return this.b == r87Var.b && this.a.equals(r87Var.a);
-    }
-
-    public final int hashCode() {
-        return this.a.hashCode() + (this.b.hashCode() * 31);
-    }
-
-    public final String toString() {
-        String strConcat = (("TransitionValues@" + Integer.toHexString(hashCode()) + ":\n") + "    view = " + this.b + "\n").concat("    values:");
-        HashMap map = this.a;
-        for (String str : map.keySet()) {
-            strConcat = strConcat + "    " + str + ": " + map.get(str) + "\n";
-        }
-        return strConcat;
+    public r87() {
+        k57 a = l57.a(new q87(c07.Y, false, 0, null));
+        this.c = a;
+        this.d = h31.p(a);
     }
 }

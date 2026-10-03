@@ -1,93 +1,34 @@
-.class public final synthetic Lsz2;
+.class public final Lsz2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lbl7;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Ljava/util/HashMap;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, Lsz2;->a:I
-
-    .line 2
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
-    iget v0, p0, Lsz2;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    new-instance v0, Ljava/util/HashMap;
+
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Boolean;
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 7
     .line 8
-    check-cast p2, Lcl7;
-
     .line 9
+    iput-object v0, p0, Lsz2;->a:Ljava/util/HashMap;
+
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
     .line 11
-    .line 12
-    .line 13
-    move-result p1
-
-    .line 14
-    invoke-interface {p2, p1}, Lcl7;->c(Z)Lcl7;
-
-    .line 15
-    .line 16
-    .line 17
     return-void
-
-    .line 18
-    :pswitch_0
-    check-cast p1, Ljava/lang/String;
-
-    .line 19
-    .line 20
-    check-cast p2, Lcl7;
-
-    .line 21
-    .line 22
-    invoke-interface {p2, p1}, Lcl7;->b(Ljava/lang/String;)Lcl7;
-
-    .line 23
-    .line 24
-    .line 25
-    return-void
-
-    .line 26
-    nop
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

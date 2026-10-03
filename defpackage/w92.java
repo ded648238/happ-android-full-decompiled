@@ -1,20 +1,7 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class w92 implements Comparable {
-    public final int Q;
-    public final eu7 R;
-    public final boolean S;
-
-    public w92(int i, eu7 eu7Var, boolean z) {
-        this.Q = i;
-        this.R = eu7Var;
-        this.S = z;
-    }
-
-    @Override // java.lang.Comparable
-    public final int compareTo(Object obj) {
-        return this.Q - ((w92) obj).Q;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class w92 {
+    public static final float a = (float) (Math.log(0.78d) / Math.log(0.9d));
 }

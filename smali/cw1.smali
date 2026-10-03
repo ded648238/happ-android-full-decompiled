@@ -1,63 +1,151 @@
 .class public final Lcw1;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lb56;
+.super Lvn3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final a:Lb56;
-
-.field public final b:Z
-
-.field public final c:Lj72;
+# static fields
+.field public static final Y:Lcw1;
 
 
 # direct methods
-.method public constructor <init>(Lb56;ZLj72;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v0, Lcw1;
 
     .line 2
     .line 3
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
+    sput-object v0, Lcw1;->Y:Lcw1;
+
     .line 7
-    iput-object p1, p0, Lcw1;->a:Lb56;
-
     .line 8
-    .line 9
-    iput-boolean p2, p0, Lcw1;->b:Z
-
-    .line 10
-    .line 11
-    iput-object p3, p0, Lcw1;->c:Lj72;
-
-    .line 12
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final iterator()Ljava/util/Iterator;
+.method public final U()Ljava/util/Collection;
     .locals 1
 
     .line 1
-    new-instance v0, Lbw1;
+    new-instance p0, Lxt3;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Lbw1;-><init>(Lcw1;)V
+    const-string v0, "Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection"
 
     .line 4
     .line 5
+    invoke-direct {p0, v0}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
+
     .line 6
-    return-object v0
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final V()Ljava/util/Collection;
+    .locals 1
+
+    .line 1
+    new-instance p0, Lxt3;
+
+    .line 2
+    .line 3
+    const-string v0, "Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final W(Lpr4;)Ljava/util/Collection;
+    .locals 0
+
+    .line 1
+    new-instance p0, Lxt3;
+
+    .line 2
+    .line 3
+    const-string p1, "Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final X(I)Lim5;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final Y(I)Lsr3;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final a0(Lpr4;)Ljava/util/Collection;
+    .locals 0
+
+    .line 1
+    new-instance p0, Lxt3;
+
+    .line 2
+    .line 3
+    const-string p1, "Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public final w()Ljava/lang/Class;
+    .locals 1
+
+    .line 1
+    new-instance p0, Lxt3;
+
+    .line 2
+    .line 3
+    const-string v0, "Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
 .end method

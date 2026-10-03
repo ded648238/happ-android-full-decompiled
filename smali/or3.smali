@@ -1,128 +1,127 @@
 .class public final Lor3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ls04;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:I
-
-.field public final synthetic c:Ljava/util/Map;
-
-.field public final synthetic d:Lj72;
-
-.field public final synthetic e:Lj72;
-
-.field public final synthetic f:Lpr3;
+.field public final a:Lgn3;
 
 
 # direct methods
-.method public constructor <init>(IILjava/util/Map;Lj72;Lj72;Lpr3;)V
+.method public constructor <init>(Lgn3;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Lor3;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
     .line 6
-    iput p2, p0, Lor3;->b:I
-
     .line 7
+    iput-object p1, p0, Lor3;->a:Lgn3;
+
     .line 8
-    iput-object p3, p0, Lor3;->c:Ljava/util/Map;
-
     .line 9
-    .line 10
-    iput-object p4, p0, Lor3;->d:Lj72;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, Lor3;->e:Lj72;
-
-    .line 13
-    .line 14
-    iput-object p6, p0, Lor3;->f:Lpr3;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()I
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     .line 1
-    iget v0, p0, Lor3;->b:I
+    instance-of v0, p1, Lor3;
 
     .line 2
     .line 3
-    return v0
-.end method
-
-.method public final b()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lor3;->a:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final c()Ljava/util/Map;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lor3;->c:Ljava/util/Map;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final d()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lor3;->f:Lpr3;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, Lpr3;->b0:Lqr3;
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    iget-object v1, p0, Lor3;->e:Lj72;
+    check-cast p1, Lor3;
 
     .line 6
     .line 7
-    invoke-interface {v1, v0}, Lj72;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object p1, p1, Lor3;->a:Lgn3;
+
+    .line 8
+    .line 9
+    iget-object p0, p0, Lor3;->a:Lgn3;
+
+    .line 10
+    .line 11
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    if-eqz p0, :cond_0
+
+    .line 16
+    .line 17
+    const/4 p0, 0x1
+
+    .line 18
+    return p0
+
+    .line 19
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 20
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lor3;->a:Lgn3;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Lgn3;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lor3;->a:Lgn3;
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Lvx6;->J(Lgn3;)Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    return-void
-.end method
+    move-result-object p0
 
-.method public final e()Lj72;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lor3;->d:Lj72;
-
-    .line 2
-    .line 3
-    return-object v0
+    .line 11
+    return-object p0
 .end method

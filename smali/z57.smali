@@ -1,37 +1,25 @@
-.class public abstract Lz57;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lz57;
+.super Landroid/view/inputmethod/InputConnectionWrapper;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:F
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# virtual methods
+.method public final commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
+    .locals 0
 
     .line 1
-    const/high16 v0, 0x41800000    # 16.0f
+    const/4 p0, 0x0
 
     .line 2
-    .line 3
-    const/high16 v1, 0x41000000    # 8.0f
+    return p0
+.end method
 
-    .line 4
-    .line 5
-    invoke-static {v0, v1}, Lyu7;->b(FF)J
+.method public final performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
+    .locals 0
 
-    .line 6
-    .line 7
-    .line 8
-    const/high16 v0, 0x43480000    # 200.0f
+    .line 1
+    const/4 p0, 0x1
 
-    .line 9
-    .line 10
-    sput v0, Lz57;->a:F
-
-    .line 11
-    .line 12
-    return-void
+    .line 2
+    return p0
 .end method

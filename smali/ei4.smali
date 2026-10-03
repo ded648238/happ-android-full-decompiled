@@ -1,28 +1,44 @@
-.class public final Lei4;
-.super Ld64;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ltb2;
+.class public abstract Lei4;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public e0:Lj72;
+# static fields
+.field public static final synthetic a:I
 
 
-# virtual methods
-.method public final b(Landroidx/compose/ui/node/NodeCoordinator;)V
-    .locals 1
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lei4;->e0:Lj72;
+    :try_start_0
+    const-class v0, Landroid/service/media/MediaBrowserService$Result;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, Lj72;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v1, "mFlags"
 
     .line 4
     .line 5
+    invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
     .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 11
+    .line 12
+    .line 13
+    :catch_0
     return-void
 .end method

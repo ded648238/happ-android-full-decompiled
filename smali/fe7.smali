@@ -1,27 +1,28 @@
 .class public final Lfe7;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/lang/Comparable;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:B
+.field public synthetic c0:Ljava/lang/Object;
+
+.field public final synthetic d0:Lge7;
+
+.field public e0:I
 
 
 # direct methods
-.method public synthetic constructor <init>(B)V
+.method public constructor <init>(Lge7;Ld31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lfe7;->d0:Lge7;
 
     .line 2
     .line 3
-    .line 4
-    iput-byte p1, p0, Lfe7;->Q:B
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
     return-void
@@ -29,117 +30,82 @@
 
 
 # virtual methods
-.method public final synthetic compareTo(Ljava/lang/Object;)I
-    .locals 1
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    check-cast p1, Lfe7;
+    iput-object p1, p0, Lfe7;->c0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget-byte p1, p1, Lfe7;->Q:B
+    iget p1, p0, Lfe7;->e0:I
 
     .line 4
     .line 5
-    iget-byte v0, p0, Lfe7;->Q:B
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
-    and-int/lit16 v0, v0, 0xff
+    or-int/2addr p1, v0
 
     .line 8
-    .line 9
-    and-int/lit16 p1, p1, 0xff
-
-    .line 10
-    .line 11
-    invoke-static {v0, p1}, Lrt2;->j(II)I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result p1
-
-    .line 15
-    return p1
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    instance-of v0, p1, Lfe7;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    check-cast p1, Lfe7;
-
-    .line 7
-    .line 8
-    iget-byte p1, p1, Lfe7;->Q:B
+    iput p1, p0, Lfe7;->e0:I
 
     .line 9
     .line 10
-    iget-byte v0, p0, Lfe7;->Q:B
+    const/4 v5, 0x0
 
     .line 11
+    const/4 v6, 0x0
+
     .line 12
-    if-eq v0, p1, :cond_1
+    iget-object v0, p0, Lfe7;->d0:Lge7;
 
     .line 13
     .line 14
-    :goto_0
-    const/4 p1, 0x0
+    const/4 v1, 0x0
 
     .line 15
-    return p1
+    const/4 v2, 0x0
 
     .line 16
-    :cond_1
-    const/4 p1, 0x1
+    const/4 v3, 0x0
 
     .line 17
-    return p1
-.end method
+    const/4 v4, 0x0
 
-.method public final hashCode()I
-    .locals 1
+    .line 18
+    move-object v7, p0
 
-    .line 1
-    iget-byte v0, p0, Lfe7;->Q:B
+    .line 19
+    invoke-virtual/range {v0 .. v7}, Lge7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/net/Proxy;Ljava/util/HashMap;Ljava/lang/String;ZLd31;)Ljava/lang/Object;
 
-    .line 2
-    .line 3
-    return v0
-.end method
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
+    .line 23
+    sget-object p1, Lj41;->X:Lj41;
 
-    .line 1
-    iget-byte v0, p0, Lfe7;->Q:B
+    .line 24
+    .line 25
+    if-ne p0, p1, :cond_0
 
-    .line 2
-    .line 3
-    and-int/lit16 v0, v0, 0xff
+    .line 26
+    .line 27
+    return-object p0
 
-    .line 4
-    .line 5
-    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    .line 28
+    :cond_0
+    new-instance p1, Ld86;
 
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
+    .line 29
+    .line 30
+    invoke-direct {p1, p0}, Ld86;-><init>(Ljava/lang/Object;)V
 
-    .line 9
-    return-object v0
+    .line 31
+    .line 32
+    .line 33
+    return-object p1
 .end method

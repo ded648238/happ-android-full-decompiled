@@ -1,6 +1,6 @@
 .class public final Lgo/Seq$Ref;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -55,27 +55,27 @@
 
     .line 14
     :cond_0
-    const-string p2, "Ref instantiated with a Go refnum "
+    const-string p0, "Ref instantiated with a Go refnum "
 
     .line 15
     .line 16
-    invoke-static {p1, p2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 17
     .line 18
     .line 19
-    move-result-object p1
+    move-result-object p0
 
     .line 20
-    invoke-static {p1}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 21
     .line 22
     .line 23
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 24
-    throw p1
+    throw p0
 .end method
 
 .method public static synthetic access$100(Lgo/Seq$Ref;)I
@@ -111,7 +111,7 @@
 
 # virtual methods
 .method public inc()V
-    .locals 3
+    .locals 2
 
     .line 1
     iget v0, p0, Lgo/Seq$Ref;->refcnt:I
@@ -152,23 +152,23 @@
     .line 18
     .line 19
     .line 20
-    iget v1, p0, Lgo/Seq$Ref;->refnum:I
+    iget p0, p0, Lgo/Seq$Ref;->refnum:I
 
     .line 21
     .line 22
-    const-string v2, " overflow"
+    const-string v1, " overflow"
 
     .line 23
     .line 24
-    invoke-static {v0, v1, v2}, Lkd0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0, v1}, Leh0;->p(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     .line 25
     .line 26
     .line 27
-    move-result-object v0
+    move-result-object p0
 
     .line 28
-    invoke-static {v0}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 29
     .line 30

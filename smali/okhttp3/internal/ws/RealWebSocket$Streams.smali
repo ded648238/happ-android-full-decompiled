@@ -1,6 +1,6 @@
 .class public abstract Lokhttp3/internal/ws/RealWebSocket$Streams;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -25,21 +25,21 @@
         "Ljava/io/Closeable;",
         "",
         "client",
-        "Ls50;",
+        "Lf80;",
         "source",
-        "Lr50;",
+        "Le80;",
         "sink",
         "<init>",
-        "(ZLs50;Lr50;)V",
+        "(ZLf80;Le80;)V",
         "Z",
         "getClient",
         "()Z",
-        "Ls50;",
+        "Lf80;",
         "getSource",
-        "()Ls50;",
-        "Lr50;",
+        "()Lf80;",
+        "Le80;",
         "getSink",
-        "()Lr50;",
+        "()Le80;",
         "okhttp"
     }
     k = 0x1
@@ -55,13 +55,13 @@
 # instance fields
 .field private final client:Z
 
-.field private final sink:Lr50;
+.field private final sink:Le80;
 
-.field private final source:Ls50;
+.field private final source:Lf80;
 
 
 # direct methods
-.method public constructor <init>(ZLs50;Lr50;)V
+.method public constructor <init>(ZLf80;Le80;)V
     .locals 0
 
     .line 1
@@ -84,11 +84,11 @@
 
     .line 11
     .line 12
-    iput-object p2, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->source:Ls50;
+    iput-object p2, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->source:Lf80;
 
     .line 13
     .line 14
-    iput-object p3, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->sink:Lr50;
+    iput-object p3, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->sink:Le80;
 
     .line 15
     .line 16
@@ -98,34 +98,34 @@
 
 # virtual methods
 .method public final getClient()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->client:Z
+    iget-boolean p0, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->client:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public final getSink()Lr50;
-    .locals 1
+.method public final getSink()Le80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->sink:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->sink:Le80;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final getSource()Ls50;
-    .locals 1
+.method public final getSource()Lf80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/ws/RealWebSocket$Streams;->source:Lf80;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

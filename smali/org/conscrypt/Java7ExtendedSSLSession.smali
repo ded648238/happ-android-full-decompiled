@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/Java7ExtendedSSLSession;
 .super Ljavax/net/ssl/ExtendedSSLSession;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lorg/conscrypt/ConscryptSession;
@@ -30,71 +30,71 @@
 
 # virtual methods
 .method public final getApplicationBufferSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getApplicationBufferSize()I
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getApplicationBufferSize()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public getApplicationProtocol()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getApplicationProtocol()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getApplicationProtocol()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getCipherSuite()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getCipherSuite()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getCipherSuite()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getCreationTime()J
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getCreationTime()J
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getCreationTime()J
 
     .line 4
     .line 5
@@ -106,33 +106,33 @@
 .end method
 
 .method public final getId()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getId()[B
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getId()[B
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getLastAccessedTime()J
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getLastAccessedTime()J
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getLastAccessedTime()J
 
     .line 4
     .line 5
@@ -144,83 +144,83 @@
 .end method
 
 .method public final getLocalCertificates()[Ljava/security/cert/Certificate;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getLocalCertificates()[Ljava/security/cert/Certificate;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getLocalCertificates()[Ljava/security/cert/Certificate;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getLocalPrincipal()Ljava/security/Principal;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getLocalPrincipal()Ljava/security/Principal;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getLocalPrincipal()Ljava/security/Principal;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getLocalSupportedSignatureAlgorithms()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getLocalSupportedSignatureAlgorithms()[Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getLocalSupportedSignatureAlgorithms()[Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPacketBufferSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getPacketBufferSize()I
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getPacketBufferSize()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final getPeerCertificateChain()[Ljavax/security/cert/X509Certificate;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -228,23 +228,23 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getPeerCertificateChain()[Ljavax/security/cert/X509Certificate;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getPeerCertificateChain()[Ljavax/security/cert/X509Certificate;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getPeerCertificates()[Ljava/security/cert/Certificate;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -254,13 +254,13 @@
     .line 8
     invoke-virtual {p0}, Lorg/conscrypt/Java7ExtendedSSLSession;->getPeerCertificates()[Ljava/security/cert/X509Certificate;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerCertificates()[Ljava/security/cert/X509Certificate;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -268,61 +268,61 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getPeerCertificates()[Ljava/security/cert/X509Certificate;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getPeerCertificates()[Ljava/security/cert/X509Certificate;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPeerHost()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getPeerHost()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getPeerHost()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPeerPort()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getPeerPort()I
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getPeerPort()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final getPeerPrincipal()Ljava/security/Principal;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -330,118 +330,118 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getPeerPrincipal()Ljava/security/Principal;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getPeerPrincipal()Ljava/security/Principal;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPeerSignedCertificateTimestamp()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getPeerSignedCertificateTimestamp()[B
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getPeerSignedCertificateTimestamp()[B
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPeerSupportedSignatureAlgorithms()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getPeerSupportedSignatureAlgorithms()[Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getPeerSupportedSignatureAlgorithms()[Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getProtocol()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getProtocol()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getProtocol()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getRequestedServerName()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getRequestedServerName()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getRequestedServerName()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getSessionContext()Ljavax/net/ssl/SSLSessionContext;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getSessionContext()Ljavax/net/ssl/SSLSessionContext;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getSessionContext()Ljavax/net/ssl/SSLSessionContext;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getStatusResponses()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -451,68 +451,68 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getStatusResponses()Ljava/util/List;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getStatusResponses()Ljava/util/List;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getValue(Ljava/lang/String;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lorg/conscrypt/ExternalSession;->getValue(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lorg/conscrypt/ExternalSession;->getValue(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    return-object p1
+    return-object p0
 .end method
 
 .method public final getValueNames()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->getValueNames()[Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getValueNames()[Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final invalidate()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->invalidate()V
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->invalidate()V
 
     .line 4
     .line 5
@@ -521,22 +521,22 @@
 .end method
 
 .method public final isValid()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
+    iget-object p0, p0, Lorg/conscrypt/Java7ExtendedSSLSession;->delegate:Lorg/conscrypt/ExternalSession;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ExternalSession;->isValid()Z
+    invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->isValid()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final putValue(Ljava/lang/String;Ljava/lang/Object;)V

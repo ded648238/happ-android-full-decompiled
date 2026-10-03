@@ -1,36 +1,50 @@
 package defpackage;
 
-import android.view.accessibility.AccessibilityManager;
-import android.widget.AutoCompleteTextView;
+import android.os.Handler;
+import android.os.Looper;
+import androidx.compose.ui.platform.AndroidComposeView;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class gb implements AccessibilityManager.TouchExplorationStateChangeListener {
-    public final /* synthetic */ int a;
-    public final /* synthetic */ Object b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class gb implements mi2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ AndroidComposeView Y;
 
-    public /* synthetic */ gb(int i, Object obj) {
-        this.a = i;
-        this.b = obj;
+    public /* synthetic */ gb(AndroidComposeView androidComposeView, int i) {
+        this.X = i;
+        this.Y = androidComposeView;
     }
 
-    @Override // android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener
-    public final void onTouchExplorationStateChanged(boolean z) {
-        int i = this.a;
-        Object obj = this.b;
+    @Override // defpackage.mi2
+    public final Object invoke(Object obj) {
+        int i = this.X;
+        r98 r98Var = r98.a;
+        AndroidComposeView androidComposeView = this.Y;
         switch (i) {
             case 0:
-                mb mbVar = (mb) obj;
-                mbVar.k = mbVar.g.getEnabledAccessibilityServiceList(-1);
-                break;
-            default:
-                yk1 yk1Var = (yk1) obj;
-                AutoCompleteTextView autoCompleteTextView = yk1Var.h;
-                if (autoCompleteTextView != null && autoCompleteTextView.getInputType() == 0) {
-                    yk1Var.d.setImportantForAccessibility(z ? 2 : 1);
-                    break;
+                Class cls = AndroidComposeView.G1;
+                return new ef(androidComposeView, androidComposeView.getTextInputService(), (i41) obj);
+            case 1:
+                ji2 ji2Var = (ji2) obj;
+                Class cls2 = AndroidComposeView.G1;
+                Handler handler = androidComposeView.getHandler();
+                if ((handler != null ? handler.getLooper() : null) == Looper.myLooper()) {
+                    ji2Var.invoke();
+                } else {
+                    Handler handler2 = androidComposeView.getHandler();
+                    if (handler2 != null) {
+                        handler2.post(new kb(0, ji2Var));
+                    }
                 }
-                break;
+                return r98Var;
+            case 2:
+                Class cls3 = AndroidComposeView.G1;
+                ((qc2) androidComposeView.getFocusOwner()).g(((gc2) obj).a, false);
+                return r98Var;
+            case 3:
+                return androidComposeView.getSavedStateRegistry();
+            default:
+                return Boolean.valueOf(androidComposeView.getScrollCaptureInProgress());
         }
     }
 }

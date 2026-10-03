@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/HpkeContextSender;
 .super Lorg/conscrypt/HpkeContext;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -90,22 +90,22 @@
 
 # virtual methods
 .method public getEncapsulated()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
+    iget-object p0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/HpkeSpi;->getEncapsulated()[B
+    invoke-interface {p0}, Lorg/conscrypt/HpkeSpi;->getEncapsulated()[B
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public init(Ljava/security/PublicKey;[B)V
@@ -177,11 +177,11 @@
 
     .line 16
     :cond_0
-    const-string p1, "Sender private key is null"
+    const-string p0, "Sender private key is null"
 
     .line 17
     .line 18
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -190,7 +190,7 @@
 .end method
 
 .method public init(Ljava/security/PublicKey;[BLjava/security/PrivateKey;[B[B)V
-    .locals 6
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidKeyException;
@@ -200,27 +200,17 @@
     if-eqz p3, :cond_0
 
     .line 24
-    iget-object v0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
+    iget-object p0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
 
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v3, p3
-
-    move-object v4, p4
-
-    move-object v5, p5
-
-    invoke-interface/range {v0 .. v5}, Lorg/conscrypt/HpkeSpi;->engineInitSender(Ljava/security/PublicKey;[BLjava/security/PrivateKey;[B[B)V
+    invoke-interface/range {p0 .. p5}, Lorg/conscrypt/HpkeSpi;->engineInitSender(Ljava/security/PublicKey;[BLjava/security/PrivateKey;[B[B)V
 
     return-void
 
     .line 25
     :cond_0
-    const-string p1, "Sender private key is null"
+    const-string p0, "Sender private key is null"
 
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -296,11 +286,11 @@
 
     .line 16
     :cond_0
-    const-string p1, "null seed"
+    const-string p0, "null seed"
 
     .line 17
     .line 18
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -309,20 +299,20 @@
 .end method
 
 .method public seal([B[B)[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
+    iget-object p0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1, p2}, Lorg/conscrypt/HpkeSpi;->engineSeal([B[B)[B
+    invoke-interface {p0, p1, p2}, Lorg/conscrypt/HpkeSpi;->engineSeal([B[B)[B
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    return-object p1
+    return-object p0
 .end method

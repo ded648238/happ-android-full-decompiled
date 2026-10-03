@@ -1,6 +1,6 @@
 .class public final Lokhttp3/HttpUrl$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -22,7 +22,7 @@
         "",
         "<init>",
         "()V",
-        "Lf50;",
+        "Ll70;",
         "",
         "encoded",
         "",
@@ -30,9 +30,9 @@
         "limit",
         "",
         "plusIsSpace",
-        "Lbh7;",
+        "Lr98;",
         "writePercentDecoded",
-        "(Lf50;Ljava/lang/String;IIZ)V",
+        "(Ll70;Ljava/lang/String;IIZ)V",
         "isPercentEncoded",
         "(Ljava/lang/String;II)Z",
         "input",
@@ -43,7 +43,7 @@
         "Ljava/nio/charset/Charset;",
         "charset",
         "writeCanonicalized",
-        "(Lf50;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)V",
+        "(Ll70;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)V",
         "scheme",
         "defaultPort",
         "(Ljava/lang/String;)I",
@@ -117,7 +117,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -144,7 +144,7 @@
 
     .line 5
     .line 6
-    const/4 p2, 0x0
+    move p2, v0
 
     .line 7
     :cond_0
@@ -173,7 +173,7 @@
 
     .line 18
     .line 19
-    const/4 p5, 0x0
+    move p5, v0
 
     .line 20
     :cond_2
@@ -185,7 +185,7 @@
 
     .line 23
     .line 24
-    const/4 p6, 0x0
+    move p6, v0
 
     .line 25
     :cond_3
@@ -197,7 +197,7 @@
 
     .line 28
     .line 29
-    const/4 p7, 0x0
+    move p7, v0
 
     .line 30
     :cond_4
@@ -209,7 +209,7 @@
 
     .line 33
     .line 34
-    const/4 p8, 0x0
+    move p8, v0
 
     .line 35
     :cond_5
@@ -237,14 +237,14 @@
 .end method
 
 .method private final isPercentEncoded(Ljava/lang/String;II)Z
-    .locals 2
+    .locals 1
 
     .line 1
-    add-int/lit8 v0, p2, 0x2
+    add-int/lit8 p0, p2, 0x2
 
     .line 2
     .line 3
-    if-ge v0, p3, :cond_0
+    if-ge p0, p3, :cond_0
 
     .line 4
     .line 5
@@ -256,11 +256,11 @@
     move-result p3
 
     .line 9
-    const/16 v1, 0x25
+    const/16 v0, 0x25
 
     .line 10
     .line 11
-    if-ne p3, v1, :cond_0
+    if-ne p3, v0, :cond_0
 
     .line 12
     .line 13
@@ -286,30 +286,30 @@
     move-result p2
 
     .line 23
-    const/4 v1, -0x1
+    const/4 v0, -0x1
 
     .line 24
-    if-eq p2, v1, :cond_0
+    if-eq p2, v0, :cond_0
 
     .line 25
     .line 26
-    invoke-virtual {p1, v0}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p1, p0}, Ljava/lang/String;->charAt(I)C
 
     .line 27
     .line 28
     .line 29
-    move-result p1
+    move-result p0
 
     .line 30
-    invoke-static {p1}, Lokhttp3/internal/Util;->parseHexDigit(C)I
+    invoke-static {p0}, Lokhttp3/internal/Util;->parseHexDigit(C)I
 
     .line 31
     .line 32
     .line 33
-    move-result p1
+    move-result p0
 
     .line 34
-    if-eq p1, v1, :cond_0
+    if-eq p0, v0, :cond_0
 
     .line 35
     .line 36
@@ -317,10 +317,10 @@
 
     .line 37
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 38
-    return p1
+    return p0
 .end method
 
 .method public static synthetic percentDecode$okhttp$default(Lokhttp3/HttpUrl$Companion;Ljava/lang/String;IIZILjava/lang/Object;)Ljava/lang/String;
@@ -338,7 +338,7 @@
 
     .line 5
     .line 6
-    const/4 p2, 0x0
+    move p2, v0
 
     .line 7
     :cond_0
@@ -367,7 +367,7 @@
 
     .line 18
     .line 19
-    const/4 p4, 0x0
+    move p4, v0
 
     .line 20
     :cond_2
@@ -382,7 +382,7 @@
     return-object p0
 .end method
 
-.method private final writeCanonicalized(Lf50;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)V
+.method private final writeCanonicalized(Ll70;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)V
     .locals 7
 
     .line 1
@@ -476,7 +476,7 @@
     .line 42
     .line 43
     :goto_1
-    invoke-virtual {p1, v3}, Lf50;->O0(Ljava/lang/String;)V
+    invoke-virtual {p1, v3}, Ll70;->b1(Ljava/lang/String;)V
 
     .line 44
     .line 45
@@ -522,7 +522,7 @@
     int-to-char v3, v2
 
     .line 65
-    invoke-static {p5, v3}, Lsl6;->l0(Ljava/lang/CharSequence;C)Z
+    invoke-static {p5, v3}, Lea7;->M0(Ljava/lang/CharSequence;C)Z
 
     .line 66
     .line 67
@@ -562,7 +562,7 @@
 
     .line 84
     :cond_4
-    invoke-virtual {p1, v2}, Lf50;->P0(I)V
+    invoke-virtual {p1, v2}, Ll70;->c1(I)V
 
     .line 85
     .line 86
@@ -576,7 +576,7 @@
 
     .line 89
     .line 90
-    new-instance v1, Lf50;
+    new-instance v1, Ll70;
 
     .line 91
     .line 92
@@ -621,7 +621,7 @@
     add-int/2addr v3, p3
 
     .line 111
-    invoke-virtual {v1, p2, p3, v3, v0}, Lf50;->M0(Ljava/lang/String;IILjava/nio/charset/Charset;)V
+    invoke-virtual {v1, p2, p3, v3, v0}, Ll70;->Z0(Ljava/lang/String;IILjava/nio/charset/Charset;)V
 
     .line 112
     .line 113
@@ -631,13 +631,13 @@
     .line 115
     :cond_8
     :goto_3
-    invoke-virtual {v1, v2}, Lf50;->P0(I)V
+    invoke-virtual {v1, v2}, Ll70;->c1(I)V
 
     .line 116
     .line 117
     .line 118
     :goto_4
-    invoke-virtual {v1}, Lf50;->z()Z
+    invoke-virtual {v1}, Ll70;->G()Z
 
     .line 119
     .line 120
@@ -649,7 +649,7 @@
 
     .line 123
     .line 124
-    invoke-virtual {v1}, Lf50;->readByte()B
+    invoke-virtual {v1}, Ll70;->readByte()B
 
     .line 125
     .line 126
@@ -661,7 +661,7 @@
 
     .line 129
     .line 130
-    invoke-virtual {p1, v4}, Lf50;->x0(I)V
+    invoke-virtual {p1, v4}, Ll70;->G0(I)V
 
     .line 131
     .line 132
@@ -686,7 +686,7 @@
 
     .line 142
     .line 143
-    invoke-virtual {p1, v5}, Lf50;->x0(I)V
+    invoke-virtual {p1, v5}, Ll70;->G0(I)V
 
     .line 144
     .line 145
@@ -707,7 +707,7 @@
 
     .line 153
     .line 154
-    invoke-virtual {p1, v3}, Lf50;->x0(I)V
+    invoke-virtual {p1, v3}, Ll70;->G0(I)V
 
     .line 155
     .line 156
@@ -736,8 +736,8 @@
     return-void
 .end method
 
-.method private final writePercentDecoded(Lf50;Ljava/lang/String;IIZ)V
-    .locals 5
+.method private final writePercentDecoded(Ll70;Ljava/lang/String;IIZ)V
+    .locals 4
 
     .line 1
     :goto_0
@@ -750,147 +750,148 @@
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    const/16 v1, 0x25
+    const/16 v0, 0x25
 
     .line 8
     .line 9
-    if-ne v0, v1, :cond_0
+    if-ne p0, v0, :cond_0
 
     .line 10
     .line 11
-    add-int/lit8 v1, p3, 0x2
+    add-int/lit8 v0, p3, 0x2
 
     .line 12
     .line 13
-    if-ge v1, p4, :cond_0
+    if-ge v0, p4, :cond_0
 
     .line 14
     .line 15
-    add-int/lit8 v2, p3, 0x1
+    add-int/lit8 v1, p3, 0x1
 
     .line 16
     .line 17
-    invoke-virtual {p2, v2}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p2, v1}, Ljava/lang/String;->charAt(I)C
 
     .line 18
     .line 19
     .line 20
-    move-result v2
+    move-result v1
 
     .line 21
-    invoke-static {v2}, Lokhttp3/internal/Util;->parseHexDigit(C)I
+    invoke-static {v1}, Lokhttp3/internal/Util;->parseHexDigit(C)I
 
     .line 22
     .line 23
     .line 24
-    move-result v2
+    move-result v1
 
     .line 25
-    invoke-virtual {p2, v1}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p2, v0}, Ljava/lang/String;->charAt(I)C
 
     .line 26
     .line 27
     .line 28
-    move-result v3
+    move-result v2
 
     .line 29
-    invoke-static {v3}, Lokhttp3/internal/Util;->parseHexDigit(C)I
+    invoke-static {v2}, Lokhttp3/internal/Util;->parseHexDigit(C)I
 
     .line 30
     .line 31
     .line 32
-    move-result v3
+    move-result v2
 
     .line 33
-    const/4 v4, -0x1
+    const/4 v3, -0x1
 
     .line 34
-    if-eq v2, v4, :cond_1
+    if-eq v1, v3, :cond_1
 
     .line 35
     .line 36
-    if-eq v3, v4, :cond_1
+    if-eq v2, v3, :cond_1
 
     .line 37
     .line 38
-    shl-int/lit8 p3, v2, 0x4
+    shl-int/lit8 p3, v1, 0x4
 
     .line 39
     .line 40
-    add-int/2addr p3, v3
+    add-int/2addr p3, v2
 
     .line 41
-    invoke-virtual {p1, p3}, Lf50;->x0(I)V
+    invoke-virtual {p1, p3}, Ll70;->G0(I)V
 
     .line 42
     .line 43
     .line 44
-    invoke-static {v0}, Ljava/lang/Character;->charCount(I)I
+    invoke-static {p0}, Ljava/lang/Character;->charCount(I)I
 
     .line 45
     .line 46
     .line 47
-    move-result p3
+    move-result p0
 
     .line 48
-    add-int/2addr p3, v1
+    add-int p3, p0, v0
 
     .line 49
-    goto :goto_0
-
     .line 50
-    :cond_0
-    const/16 v1, 0x2b
+    goto :goto_0
 
     .line 51
-    .line 52
-    if-ne v0, v1, :cond_1
+    :cond_0
+    const/16 v0, 0x2b
 
+    .line 52
     .line 53
+    if-ne p0, v0, :cond_1
+
     .line 54
+    .line 55
     if-eqz p5, :cond_1
 
-    .line 55
     .line 56
-    const/16 v0, 0x20
-
     .line 57
-    .line 58
-    invoke-virtual {p1, v0}, Lf50;->x0(I)V
+    const/16 p0, 0x20
 
+    .line 58
     .line 59
+    invoke-virtual {p1, p0}, Ll70;->G0(I)V
+
     .line 60
     .line 61
+    .line 62
     add-int/lit8 p3, p3, 0x1
 
-    .line 62
     .line 63
-    goto :goto_0
-
     .line 64
-    :cond_1
-    invoke-virtual {p1, v0}, Lf50;->P0(I)V
+    goto :goto_0
 
     .line 65
+    :cond_1
+    invoke-virtual {p1, p0}, Ll70;->c1(I)V
+
     .line 66
     .line 67
-    invoke-static {v0}, Ljava/lang/Character;->charCount(I)I
-
     .line 68
+    invoke-static {p0}, Ljava/lang/Character;->charCount(I)I
+
     .line 69
     .line 70
-    move-result v0
-
     .line 71
-    add-int/2addr p3, v0
+    move-result p0
 
     .line 72
-    goto :goto_0
+    add-int/2addr p3, p0
 
     .line 73
+    goto :goto_0
+
+    .line 74
     :cond_2
     return-void
 .end method
@@ -899,7 +900,7 @@
 # virtual methods
 .method public final -deprecated_get(Ljava/lang/String;)Lokhttp3/HttpUrl;
     .locals 0
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -913,15 +914,15 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p1
+    move-result-object p0
 
     .line 8
-    return-object p1
+    return-object p0
 .end method
 
 .method public final -deprecated_get(Ljava/net/URI;)Lokhttp3/HttpUrl;
     .locals 0
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -929,14 +930,14 @@
     .line 10
     invoke-virtual {p0, p1}, Lokhttp3/HttpUrl$Companion;->get(Ljava/net/URI;)Lokhttp3/HttpUrl;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final -deprecated_get(Ljava/net/URL;)Lokhttp3/HttpUrl;
     .locals 0
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -944,14 +945,14 @@
     .line 9
     invoke-virtual {p0, p1}, Lokhttp3/HttpUrl$Companion;->get(Ljava/net/URL;)Lokhttp3/HttpUrl;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final -deprecated_parse(Ljava/lang/String;)Lokhttp3/HttpUrl;
     .locals 0
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -965,10 +966,10 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p1
+    move-result-object p0
 
     .line 8
-    return-object p1
+    return-object p0
 .end method
 
 .method public final canonicalize$okhttp(Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)Ljava/lang/String;
@@ -1033,7 +1034,7 @@
     int-to-char v1, v0
 
     .line 29
-    invoke-static {p4, v1}, Lsl6;->l0(Ljava/lang/CharSequence;C)Z
+    invoke-static {p4, v1}, Lea7;->M0(Ljava/lang/CharSequence;C)Z
 
     .line 30
     .line 31
@@ -1106,7 +1107,7 @@
     .line 62
     :cond_3
     :goto_1
-    new-instance v1, Lf50;
+    new-instance v1, Ll70;
 
     .line 63
     .line 64
@@ -1115,7 +1116,7 @@
     .line 65
     .line 66
     .line 67
-    invoke-virtual {v1, p2, v3, p1}, Lf50;->N0(IILjava/lang/String;)V
+    invoke-virtual {v1, p2, v3, p1}, Ll70;->a1(IILjava/lang/String;)V
 
     .line 68
     .line 69
@@ -1152,20 +1153,20 @@
 
     .line 83
     .line 84
-    invoke-direct/range {v0 .. v10}, Lokhttp3/HttpUrl$Companion;->writeCanonicalized(Lf50;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)V
+    invoke-direct/range {v0 .. v10}, Lokhttp3/HttpUrl$Companion;->writeCanonicalized(Ll70;Ljava/lang/String;IILjava/lang/String;ZZZZLjava/nio/charset/Charset;)V
 
     .line 85
     .line 86
     .line 87
-    invoke-virtual {v1}, Lf50;->i0()Ljava/lang/String;
+    invoke-virtual {v1}, Ll70;->b0()Ljava/lang/String;
 
     .line 88
     .line 89
     .line 90
-    move-result-object p1
+    move-result-object p0
 
     .line 91
-    return-object p1
+    return-object p0
 
     .line 92
     :cond_4
@@ -1174,13 +1175,76 @@
     .line 93
     .line 94
     .line 95
-    move-result-object p1
+    move-result-object p0
 
     .line 96
-    return-object p1
+    return-object p0
 .end method
 
 .method public final defaultPort(Ljava/lang/String;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    const-string p0, "http"
+
+    .line 5
+    .line 6
+    invoke-virtual {p1, p0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p0
+
+    .line 10
+    if-eqz p0, :cond_0
+
+    .line 11
+    .line 12
+    const/16 p0, 0x50
+
+    .line 13
+    .line 14
+    return p0
+
+    .line 15
+    :cond_0
+    const-string p0, "https"
+
+    .line 16
+    .line 17
+    invoke-virtual {p1, p0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    if-eqz p0, :cond_1
+
+    .line 22
+    .line 23
+    const/16 p0, 0x1bb
+
+    .line 24
+    .line 25
+    return p0
+
+    .line 26
+    :cond_1
+    const/4 p0, -0x1
+
+    .line 27
+    return p0
+.end method
+
+.method public final get(Ljava/lang/String;)Lokhttp3/HttpUrl;
     .locals 1
 
     .line 1
@@ -1189,98 +1253,35 @@
     .line 2
     .line 3
     .line 4
-    const-string v0, "http"
+    new-instance p0, Lokhttp3/HttpUrl$Builder;
 
     .line 5
     .line 6
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-direct {p0}, Lokhttp3/HttpUrl$Builder;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    move-result v0
+    const/4 v0, 0x0
 
     .line 10
-    if-eqz v0, :cond_0
-
-    .line 11
-    .line 12
-    const/16 p1, 0x50
-
-    .line 13
-    .line 14
-    return p1
-
-    .line 15
-    :cond_0
-    const-string v0, "https"
-
-    .line 16
-    .line 17
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    if-eqz p1, :cond_1
-
-    .line 22
-    .line 23
-    const/16 p1, 0x1bb
-
-    .line 24
-    .line 25
-    return p1
-
-    .line 26
-    :cond_1
-    const/4 p1, -0x1
-
-    .line 27
-    return p1
-.end method
-
-.method public final get(Ljava/lang/String;)Lokhttp3/HttpUrl;
-    .locals 2
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Lokhttp3/HttpUrl$Builder;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, Lokhttp3/HttpUrl$Builder;-><init>()V
-
-    .line 7
-    .line 8
-    .line 9
-    const/4 v1, 0x0
-
-    .line 10
-    invoke-virtual {v0, v1, p1}, Lokhttp3/HttpUrl$Builder;->parse$okhttp(Lokhttp3/HttpUrl;Ljava/lang/String;)Lokhttp3/HttpUrl$Builder;
+    invoke-virtual {p0, v0, p1}, Lokhttp3/HttpUrl$Builder;->parse$okhttp(Lokhttp3/HttpUrl;Ljava/lang/String;)Lokhttp3/HttpUrl$Builder;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    move-result-object p0
 
     .line 14
-    invoke-virtual {p1}, Lokhttp3/HttpUrl$Builder;->build()Lokhttp3/HttpUrl;
+    invoke-virtual {p0}, Lokhttp3/HttpUrl$Builder;->build()Lokhttp3/HttpUrl;
 
     .line 15
     .line 16
     .line 17
-    move-result-object p1
+    move-result-object p0
 
     .line 18
-    return-object p1
+    return-object p0
 .end method
 
 .method public final get(Ljava/net/URI;)Lokhttp3/HttpUrl;
@@ -1297,9 +1298,9 @@
 
     invoke-virtual {p0, p1}, Lokhttp3/HttpUrl$Companion;->parse(Ljava/lang/String;)Lokhttp3/HttpUrl;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final get(Ljava/net/URL;)Lokhttp3/HttpUrl;
@@ -1316,9 +1317,9 @@
 
     invoke-virtual {p0, p1}, Lokhttp3/HttpUrl$Companion;->parse(Ljava/lang/String;)Lokhttp3/HttpUrl;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final parse(Ljava/lang/String;)Lokhttp3/HttpUrl;
@@ -1336,19 +1337,19 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p1
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 8
-    return-object p1
+    return-object p0
 
     .line 9
     :catch_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public final percentDecode$okhttp(Ljava/lang/String;IIZ)Ljava/lang/String;
@@ -1409,7 +1410,7 @@
     .line 25
     :cond_1
     :goto_1
-    new-instance v1, Lf50;
+    new-instance v1, Ll70;
 
     .line 26
     .line 27
@@ -1418,7 +1419,7 @@
     .line 28
     .line 29
     .line 30
-    invoke-virtual {v1, p2, v3, p1}, Lf50;->N0(IILjava/lang/String;)V
+    invoke-virtual {v1, p2, v3, p1}, Ll70;->a1(IILjava/lang/String;)V
 
     .line 31
     .line 32
@@ -1435,20 +1436,20 @@
     move v5, p4
 
     .line 37
-    invoke-direct/range {v0 .. v5}, Lokhttp3/HttpUrl$Companion;->writePercentDecoded(Lf50;Ljava/lang/String;IIZ)V
+    invoke-direct/range {v0 .. v5}, Lokhttp3/HttpUrl$Companion;->writePercentDecoded(Ll70;Ljava/lang/String;IIZ)V
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {v1}, Lf50;->i0()Ljava/lang/String;
+    invoke-virtual {v1}, Ll70;->b0()Ljava/lang/String;
 
     .line 41
     .line 42
     .line 43
-    move-result-object p1
+    move-result-object p0
 
     .line 44
-    return-object p1
+    return-object p0
 
     .line 45
     :cond_2
@@ -1463,14 +1464,14 @@
     .line 48
     .line 49
     .line 50
-    move-result-object p1
+    move-result-object p0
 
     .line 51
-    return-object p1
+    return-object p0
 .end method
 
 .method public final toPathString$okhttp(Ljava/util/List;Ljava/lang/StringBuilder;)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1498,44 +1499,44 @@
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p0
 
     .line 11
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 12
     :goto_0
-    if-ge v1, v0, :cond_0
+    if-ge v0, p0, :cond_0
 
     .line 13
     .line 14
-    const/16 v2, 0x2f
+    const/16 v1, 0x2f
 
     .line 15
     .line 16
-    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 17
     .line 18
     .line 19
-    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v2
+    move-result-object v1
 
     .line 23
-    check-cast v2, Ljava/lang/String;
+    check-cast v1, Ljava/lang/String;
 
     .line 24
     .line 25
-    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
     .line 28
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     .line 29
     .line 30
@@ -1547,7 +1548,7 @@
 .end method
 
 .method public final toQueryNamesAndValues$okhttp(Ljava/lang/String;)Ljava/util/List;
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1565,16 +1566,16 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/util/ArrayList;
+    new-instance p0, Ljava/util/ArrayList;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 10
     :goto_0
@@ -1583,32 +1584,32 @@
     .line 11
     .line 12
     .line 13
-    move-result v2
+    move-result v1
 
     .line 14
-    if-gt v1, v2, :cond_3
+    if-gt v0, v1, :cond_3
 
     .line 15
     .line 16
-    const/16 v2, 0x26
+    const/16 v1, 0x26
 
     .line 17
     .line 18
-    const/4 v3, 0x4
+    const/4 v2, 0x4
 
     .line 19
-    invoke-static {p1, v2, v1, v3}, Lsl6;->s0(Ljava/lang/CharSequence;CII)I
+    invoke-static {p1, v1, v0, v2}, Lea7;->T0(Ljava/lang/CharSequence;CII)I
 
     .line 20
     .line 21
     .line 22
-    move-result v2
+    move-result v1
 
     .line 23
-    const/4 v4, -0x1
+    const/4 v3, -0x1
 
     .line 24
-    if-ne v2, v4, :cond_0
+    if-ne v1, v3, :cond_0
 
     .line 25
     .line 26
@@ -1617,27 +1618,27 @@
     .line 27
     .line 28
     .line 29
-    move-result v2
+    move-result v1
 
     .line 30
     :cond_0
-    const/16 v5, 0x3d
+    const/16 v4, 0x3d
 
     .line 31
     .line 32
-    invoke-static {p1, v5, v1, v3}, Lsl6;->s0(Ljava/lang/CharSequence;CII)I
+    invoke-static {p1, v4, v0, v2}, Lea7;->T0(Ljava/lang/CharSequence;CII)I
 
     .line 33
     .line 34
     .line 35
-    move-result v3
+    move-result v2
 
     .line 36
-    if-eq v3, v4, :cond_2
+    if-eq v2, v3, :cond_2
 
     .line 37
     .line 38
-    if-le v3, v2, :cond_1
+    if-le v2, v1, :cond_1
 
     .line 39
     .line 40
@@ -1645,32 +1646,32 @@
 
     .line 41
     :cond_1
-    invoke-virtual {p1, v1, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {p1, v0, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     .line 42
     .line 43
     .line 44
-    move-result-object v1
+    move-result-object v0
 
     .line 45
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 46
     .line 47
     .line 48
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     .line 49
     .line 50
-    invoke-virtual {p1, v3, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {p1, v2, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     .line 51
     .line 52
     .line 53
-    move-result-object v1
+    move-result-object v0
 
     .line 54
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 55
     .line 56
@@ -1680,29 +1681,29 @@
     .line 58
     :cond_2
     :goto_1
-    invoke-virtual {p1, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {p1, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     .line 59
     .line 60
     .line 61
-    move-result-object v1
+    move-result-object v0
 
     .line 62
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 63
     .line 64
     .line 65
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 66
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 67
     .line 68
     .line 69
     :goto_2
-    add-int/lit8 v1, v2, 0x1
+    add-int/lit8 v0, v1, 0x1
 
     .line 70
     .line 71
@@ -1710,11 +1711,11 @@
 
     .line 72
     :cond_3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final toQueryString$okhttp(Ljava/util/List;Ljava/lang/StringBuilder;)V
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1737,7 +1738,7 @@
     .line 5
     .line 6
     .line 7
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 8
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -1745,130 +1746,130 @@
     .line 9
     .line 10
     .line 11
-    move-result v1
+    move-result v0
 
     .line 12
-    invoke-static {v0, v1}, Lxf5;->n0(II)Lhs2;
+    invoke-static {p0, v0}, Lvx6;->i0(II)Lu73;
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    const/4 v1, 0x2
+    const/4 v0, 0x2
 
     .line 17
-    invoke-static {v0, v1}, Lxf5;->l0(Lhs2;I)Lfs2;
+    invoke-static {p0, v0}, Lvx6;->c0(Lu73;I)Ls73;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v0
+    move-result-object p0
 
     .line 21
-    iget v1, v0, Lfs2;->Q:I
+    iget v0, p0, Ls73;->X:I
 
     .line 22
     .line 23
-    iget v2, v0, Lfs2;->R:I
+    iget v1, p0, Ls73;->Y:I
 
     .line 24
     .line 25
-    iget v0, v0, Lfs2;->S:I
+    iget p0, p0, Ls73;->Z:I
 
     .line 26
     .line 27
-    if-lez v0, :cond_0
+    if-lez p0, :cond_0
 
     .line 28
     .line 29
-    if-le v1, v2, :cond_1
+    if-le v0, v1, :cond_1
 
     .line 30
     .line 31
     :cond_0
-    if-gez v0, :cond_4
+    if-gez p0, :cond_4
 
     .line 32
     .line 33
-    if-gt v2, v1, :cond_4
+    if-gt v1, v0, :cond_4
 
     .line 34
     .line 35
     :cond_1
     :goto_0
-    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 36
     .line 37
     .line 38
-    move-result-object v3
+    move-result-object v2
 
     .line 39
-    check-cast v3, Ljava/lang/String;
+    check-cast v2, Ljava/lang/String;
 
     .line 40
     .line 41
-    add-int/lit8 v4, v1, 0x1
+    add-int/lit8 v3, v0, 0x1
 
     .line 42
     .line 43
-    invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 44
     .line 45
     .line 46
-    move-result-object v4
+    move-result-object v3
 
     .line 47
-    check-cast v4, Ljava/lang/String;
+    check-cast v3, Ljava/lang/String;
 
     .line 48
     .line 49
-    if-lez v1, :cond_2
+    if-lez v0, :cond_2
 
     .line 50
     .line 51
-    const/16 v5, 0x26
+    const/16 v4, 0x26
 
     .line 52
     .line 53
-    invoke-virtual {p2, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 54
     .line 55
     .line 56
     :cond_2
-    invoke-virtual {p2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 57
     .line 58
     .line 59
-    if-eqz v4, :cond_3
+    if-eqz v3, :cond_3
 
     .line 60
     .line 61
-    const/16 v3, 0x3d
+    const/16 v2, 0x3d
 
     .line 62
     .line 63
-    invoke-virtual {p2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 64
     .line 65
     .line 66
-    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 67
     .line 68
     .line 69
     :cond_3
-    if-eq v1, v2, :cond_4
+    if-eq v0, v1, :cond_4
 
     .line 70
     .line 71
-    add-int/2addr v1, v0
+    add-int/2addr v0, p0
 
     .line 72
     goto :goto_0

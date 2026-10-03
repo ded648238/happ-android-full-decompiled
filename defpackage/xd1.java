@@ -1,36 +1,19 @@
 package defpackage;
 
-import java.util.concurrent.Executor;
-
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class xd1 implements Executor {
-    public static final xd1 Q;
-    public static final /* synthetic */ xd1[] R;
-
-    static {
-        xd1 xd1Var = new xd1("INSTANCE", 0);
-        Q = xd1Var;
-        R = new xd1[]{xd1Var};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class xd1 extends b1 implements wd1 {
+    @Override // defpackage.wd1
+    public final Object I0(b31 b31Var) {
+        return i(b31Var);
     }
 
-    public static xd1 valueOf(String str) {
-        return (xd1) Enum.valueOf(xd1.class, str);
-    }
-
-    public static xd1[] values() {
-        return (xd1[]) R.clone();
-    }
-
-    @Override // java.util.concurrent.Executor
-    public final void execute(Runnable runnable) {
-        runnable.run();
-    }
-
-    @Override // java.lang.Enum
-    public final String toString() {
-        return "DirectExecutor";
+    @Override // defpackage.wd1
+    public final qn6 v() {
+        se3 se3Var = se3.X;
+        q48.t(3, se3Var);
+        te3 te3Var = te3.X;
+        q48.t(3, te3Var);
+        return new qn6(this, se3Var, te3Var, null, 0);
     }
 }

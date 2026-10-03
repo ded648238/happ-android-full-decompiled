@@ -1,18 +1,34 @@
 .class public final Li44;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Llj7;
+.implements Landroid/content/ServiceConnection;
 
 
 # instance fields
-.field public final Q:Lc94;
+.field public final a:Lrt6;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    const-string v0, "ListenableWorkerImplSession"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lan3;->u(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
 .method public constructor <init>()V
-    .locals 3
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -20,167 +36,29 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Lc94;->b()Lc94;
+    new-instance v0, Lrt6;
 
     .line 5
     .line 6
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
     .line 7
-    move-result-object v0
-
     .line 8
-    new-instance v1, Ljb0;
-
     .line 9
+    iput-object v0, p0, Li44;->a:Lrt6;
+
     .line 10
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
-
     .line 11
-    .line 12
-    .line 13
-    sget-object v2, Llj7;->H:Luu;
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v2, v1}, Lc94;->f(Luu;Ljava/lang/Object;)V
-
-    .line 16
-    .line 17
-    .line 18
-    const/16 v1, 0x22
-
-    .line 19
-    .line 20
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v1
-
-    .line 24
-    sget-object v2, Lal2;->l:Luu;
-
-    .line 25
-    .line 26
-    invoke-virtual {v0, v2, v1}, Lc94;->f(Luu;Ljava/lang/Object;)V
-
-    .line 27
-    .line 28
-    .line 29
-    sget-object v1, Lpw6;->D:Luu;
-
-    .line 30
-    .line 31
-    const-class v2, Lj44;
-
-    .line 32
-    .line 33
-    invoke-virtual {v0, v1, v2}, Lc94;->f(Luu;Ljava/lang/Object;)V
-
-    .line 34
-    .line 35
-    .line 36
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 37
-    .line 38
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 39
-    .line 40
-    .line 41
-    invoke-virtual {v2}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v2
-
-    .line 45
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    const-string v2, "-"
-
-    .line 49
-    .line 50
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    .line 53
-    invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object v2
-
-    .line 57
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 58
-    .line 59
-    .line 60
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object v1
-
-    .line 64
-    sget-object v2, Lpw6;->C:Luu;
-
-    .line 65
-    .line 66
-    invoke-virtual {v0, v2, v1}, Lc94;->f(Luu;Ljava/lang/Object;)V
-
-    .line 67
-    .line 68
-    .line 69
-    iput-object v0, p0, Li44;->Q:Lc94;
-
-    .line 70
-    .line 71
     return-void
 .end method
 
 
 # virtual methods
-.method public final A()Ll76;
-    .locals 2
+.method public final onBindingDied(Landroid/content/ComponentName;)V
+    .locals 1
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    sget-object v1, Llj7;->F:Luu;
-
-    .line 3
-    .line 4
-    invoke-virtual {p0, v1, v0}, Li44;->m(Luu;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v0
-
-    .line 8
-    check-cast v0, Ll76;
-
-    .line 9
-    .line 10
-    return-object v0
-.end method
-
-.method public final synthetic B(Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lxy4;->f(Llj7;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {}, Lan3;->l()Lan3;
 
     .line 2
     .line 3
@@ -188,146 +66,41 @@
     move-result-object p1
 
     .line 5
-    return-object p1
-.end method
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-.method public final synthetic F(Luu;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lxy4;->a(Lzb5;Luu;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    return p1
-.end method
-
-.method public final I()Lnj7;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lnj7;->V:Lnj7;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final synthetic J()I
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lp27;->d(Llj7;)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final P()Lse0;
-    .locals 2
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    sget-object v1, Llj7;->G:Luu;
-
-    .line 3
-    .line 4
-    invoke-virtual {p0, v1, v0}, Li44;->m(Luu;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
     .line 6
     .line 7
-    move-result-object v0
-
     .line 8
-    check-cast v0, Lse0;
+    new-instance p1, Ljava/lang/RuntimeException;
 
     .line 9
     .line 10
-    return-object v0
-.end method
+    const-string v0, "Binding died"
 
-.method public final synthetic Q()Ljava/lang/String;
-    .locals 1
+    .line 11
+    .line 12
+    invoke-direct {p1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    .line 1
-    invoke-static {p0}, Lxy4;->e(Llj7;)Ljava/lang/String;
+    .line 13
+    .line 14
+    .line 15
+    iget-object p0, p0, Li44;->a:Lrt6;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
+    .line 16
+    .line 17
+    invoke-virtual {p0, p1}, Lrt6;->h(Ljava/lang/Throwable;)Z
 
-    .line 5
-    return-object v0
-.end method
-
-.method public final S(Luu;)Les0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Li44;->Q:Lc94;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, Lcl4;->S(Luu;)Les0;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    return-object p1
-.end method
-
-.method public final synthetic V()I
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lp27;->b(Llj7;)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final X(Lna0;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Li44;->Q:Lc94;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, Lcl4;->X(Lna0;)V
-
-    .line 4
-    .line 5
-    .line 6
+    .line 18
+    .line 19
+    .line 20
     return-void
 .end method
 
-.method public final synthetic d()Lll1;
-    .locals 1
+.method public final onNullBinding(Landroid/content/ComponentName;)V
+    .locals 3
 
     .line 1
-    invoke-static {p0}, Lmi2;->b(Llj7;)Lll1;
+    invoke-static {}, Lan3;->l()Lan3;
 
     .line 2
     .line 3
@@ -335,258 +108,220 @@
     move-result-object v0
 
     .line 5
-    return-object v0
-.end method
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-.method public final synthetic f0()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lp27;->f(Llj7;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final i()Lfs0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Li44;->Q:Lc94;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final j()Landroid/util/Range;
-    .locals 2
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    sget-object v1, Llj7;->K:Luu;
-
-    .line 3
-    .line 4
-    invoke-virtual {p0, v1, v0}, Li44;->m(Luu;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
     .line 6
     .line 7
-    move-result-object v0
-
     .line 8
-    check-cast v0, Landroid/util/Range;
+    new-instance v0, Ljava/lang/RuntimeException;
 
     .line 9
     .line 10
-    return-object v0
-.end method
+    new-instance v1, Ljava/lang/StringBuilder;
 
-.method public final k()I
-    .locals 1
-
-    .line 1
-    sget-object v0, Lal2;->l:Luu;
-
-    .line 2
-    .line 3
-    invoke-interface {p0, v0}, Lfs0;->q(Luu;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Ljava/lang/Integer;
-
-    .line 8
-    .line 9
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    .line 10
     .line 11
     .line 12
-    move-result v0
+    const-string v2, "Cannot bind to service "
 
     .line 13
-    return v0
-.end method
+    .line 14
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-.method public final synthetic m(Luu;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 1
-    invoke-static {p0, p1, p2}, Lxy4;->j(Lzb5;Luu;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 2
-    .line 3
-    .line 4
+    .line 21
+    .line 22
+    .line 23
     move-result-object p1
 
-    .line 5
-    return-object p1
+    .line 24
+    invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget-object p0, p0, Li44;->a:Lrt6;
+
+    .line 28
+    .line 29
+    invoke-virtual {p0, v0}, Lrt6;->h(Ljava/lang/Throwable;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    return-void
 .end method
 
-.method public final p()Ljava/util/Set;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Li44;->Q:Lc94;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lcl4;->p()Ljava/util/Set;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final q(Luu;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Li44;->Q:Lc94;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, Lcl4;->q(Luu;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    return-object p1
-.end method
-
-.method public final r()Ll76;
-    .locals 1
-
-    .line 1
-    sget-object v0, Llj7;->F:Luu;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Li44;->q(Luu;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Ll76;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final synthetic s()I
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lp27;->c(Llj7;)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final t()Ljb0;
+.method public final onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 2
 
     .line 1
-    const/4 v0, 0x0
+    invoke-static {}, Lan3;->l()Lan3;
 
     .line 2
-    sget-object v1, Llj7;->H:Luu;
-
     .line 3
     .line 4
-    invoke-virtual {p0, v1, v0}, Li44;->m(Luu;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p1
 
     .line 5
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 6
     .line 7
-    move-result-object v0
-
     .line 8
-    check-cast v0, Ljb0;
+    sget p1, Lqw2;->g:I
 
     .line 9
     .line 10
-    return-object v0
+    const/4 p1, 0x0
+
+    .line 11
+    if-nez p2, :cond_0
+
+    .line 12
+    .line 13
+    move-object v0, p1
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    sget-object v0, Lrw2;->a:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    invoke-interface {p2, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    if-eqz v0, :cond_1
+
+    .line 22
+    .line 23
+    instance-of v1, v0, Lrw2;
+
+    .line 24
+    .line 25
+    if-eqz v1, :cond_1
+
+    .line 26
+    .line 27
+    check-cast v0, Lrw2;
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_1
+    new-instance v0, Lpw2;
+
+    .line 31
+    .line 32
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 33
+    .line 34
+    .line 35
+    iput-object p2, v0, Lpw2;->g:Landroid/os/IBinder;
+
+    .line 36
+    .line 37
+    :goto_0
+    iget-object p0, p0, Li44;->a:Lrt6;
+
+    .line 38
+    .line 39
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 40
+    .line 41
+    .line 42
+    if-nez v0, :cond_2
+
+    .line 43
+    .line 44
+    sget-object v0, Lo1;->f0:Ljava/lang/Object;
+
+    .line 45
+    .line 46
+    :cond_2
+    sget-object p2, Lo1;->e0:Ln75;
+
+    .line 47
+    .line 48
+    invoke-virtual {p2, p0, p1, v0}, Ln75;->s(Lo1;Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 49
+    .line 50
+    .line 51
+    move-result p1
+
+    .line 52
+    if-eqz p1, :cond_3
+
+    .line 53
+    .line 54
+    invoke-static {p0}, Lo1;->c(Lo1;)V
+
+    .line 55
+    .line 56
+    .line 57
+    :cond_3
+    return-void
 .end method
 
-.method public final u(Luu;)Ljava/util/Set;
+.method public final onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Li44;->Q:Lc94;
+    invoke-static {}, Lan3;->l()Lan3;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcl4;->u(Luu;)Ljava/util/Set;
-
     .line 4
-    .line 5
-    .line 6
     move-result-object p1
 
-    .line 7
-    return-object p1
-.end method
-
-.method public final synthetic v()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lp27;->e(Llj7;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
     .line 5
-    return v0
-.end method
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-.method public final y(Luu;Les0;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Li44;->Q:Lc94;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2}, Lcl4;->y(Luu;Les0;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
     .line 6
-    move-result-object p1
-
     .line 7
-    return-object p1
+    .line 8
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    .line 9
+    .line 10
+    const-string v0, "Service disconnected"
+
+    .line 11
+    .line 12
+    invoke-direct {p1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object p0, p0, Li44;->a:Lrt6;
+
+    .line 16
+    .line 17
+    invoke-virtual {p0, p1}, Lrt6;->h(Ljava/lang/Throwable;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    return-void
 .end method

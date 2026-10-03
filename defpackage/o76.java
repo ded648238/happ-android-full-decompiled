@@ -1,26 +1,19 @@
 package defpackage;
 
-import android.hardware.camera2.CameraCaptureSession;
-import android.hardware.camera2.CaptureRequest;
-import java.util.List;
-import java.util.concurrent.Executor;
+import su.happ.proxyutility.dto.MetaParams;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface o76 {
-    Object a();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class o76 extends jq4 {
+    public static final o76 X = new o76(MetaParams.class, "subscriptionRequestTimeout", "getSubscriptionRequestTimeout()Ljava/lang/Integer;", 0);
 
-    mq2 b();
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((MetaParams) obj).J2((Integer) obj2);
+    }
 
-    Executor c();
-
-    int d();
-
-    CameraCaptureSession.StateCallback e();
-
-    List f();
-
-    void g(CaptureRequest captureRequest);
-
-    void h(mq2 mq2Var);
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return ((MetaParams) obj).getSubscriptionRequestTimeout();
+    }
 }

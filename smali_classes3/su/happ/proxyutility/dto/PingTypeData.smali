@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/PingTypeData;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -85,36 +85,36 @@
 
 # virtual methods
 .method public final a()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->info:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->info:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final b()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->selected:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->selected:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final c()Lsu/happ/proxyutility/dto/enums/EPingType;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->value:Lsu/happ/proxyutility/dto/enums/EPingType;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->value:Lsu/happ/proxyutility/dto/enums/EPingType;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -159,7 +159,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -191,7 +191,7 @@
 
     .line 31
     :cond_3
-    iget-boolean v1, p0, Lsu/happ/proxyutility/dto/PingTypeData;->selected:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->selected:Z
 
     .line 32
     .line 33
@@ -199,7 +199,7 @@
 
     .line 34
     .line 35
-    if-eq v1, p1, :cond_4
+    if-eq p0, p1, :cond_4
 
     .line 36
     .line 37
@@ -249,35 +249,26 @@
 
     .line 17
     .line 18
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->selected:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->selected:Z
 
     .line 19
     .line 20
-    if-eqz v0, :cond_0
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 21
     .line 22
-    const/16 v0, 0x4cf
-
     .line 23
+    move-result p0
+
     .line 24
-    goto :goto_0
+    add-int/2addr p0, v1
 
     .line 25
-    :cond_0
-    const/16 v0, 0x4d5
-
-    .line 26
-    .line 27
-    :goto_0
-    add-int/2addr v1, v0
-
-    .line 28
-    return v1
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 5
+    .locals 4
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->info:Ljava/lang/String;
@@ -288,24 +279,24 @@
 
     .line 4
     .line 5
-    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/PingTypeData;->selected:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/PingTypeData;->selected:Z
 
     .line 6
     .line 7
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 8
     .line 9
-    const-string v4, "PingTypeData(info="
+    const-string v3, "PingTypeData(info="
 
     .line 10
     .line 11
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 15
     .line 16
@@ -314,12 +305,12 @@
 
     .line 18
     .line 19
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 20
     .line 21
     .line 22
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 23
     .line 24
@@ -328,7 +319,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 28
     .line 29
@@ -337,13 +328,13 @@
 
     .line 31
     .line 32
-    invoke-static {v3, v2, v0}, Lea0;->t(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p0, v0}, Lw31;->o(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     .line 33
     .line 34
     .line 35
-    move-result-object v0
+    move-result-object p0
 
     .line 36
-    return-object v0
+    return-object p0
 .end method

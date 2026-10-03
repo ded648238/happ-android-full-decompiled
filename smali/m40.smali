@@ -1,99 +1,66 @@
 .class public final Lm40;
-.super Ld64;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lq42;
 
 
 # instance fields
-.field public e0:Lrb2;
+.field public final a:Landroid/graphics/Bitmap;
+
+
+# direct methods
+.method public constructor <init>(Landroid/graphics/Bitmap;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lm40;->a:Landroid/graphics/Bitmap;
+
+    .line 5
+    .line 6
+    return-void
+.end method
 
 
 # virtual methods
-.method public final A0()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lm40;->e0:Lrb2;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, v0, Lrb2;->R:Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    check-cast v0, Lu94;
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, p0}, Lu94;->j(Ljava/lang/Object;)Z
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    return-void
-.end method
-
-.method public final v0()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final y0()V
+.method public final a(Lmx1;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lm40;->e0:Lrb2;
+    new-instance p1, Loy2;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    new-instance v0, Ln40;
 
     .line 4
     .line 5
-    iget-object v1, v0, Lrb2;->R:Ljava/lang/Object;
+    iget-object p0, p0, Lm40;->a:Landroid/graphics/Bitmap;
 
     .line 6
     .line 7
-    check-cast v1, Lu94;
+    invoke-direct {v0, p0}, Ln40;-><init>(Landroid/graphics/Bitmap;)V
 
     .line 8
     .line 9
-    invoke-virtual {v1, p0}, Lu94;->j(Ljava/lang/Object;)Z
-
     .line 10
+    sget-object p0, Ls71;->Y:Ls71;
+
     .line 11
     .line 12
-    :cond_0
-    if-eqz v0, :cond_1
+    const/4 v1, 0x0
 
     .line 13
-    .line 14
-    iget-object v1, v0, Lrb2;->R:Ljava/lang/Object;
+    invoke-direct {p1, v0, v1, p0}, Loy2;-><init>(Lqx2;ZLs71;)V
 
+    .line 14
     .line 15
     .line 16
-    check-cast v1, Lu94;
-
-    .line 17
-    .line 18
-    invoke-virtual {v1, p0}, Lu94;->b(Ljava/lang/Object;)V
-
-    .line 19
-    .line 20
-    .line 21
-    :cond_1
-    iput-object v0, p0, Lm40;->e0:Lrb2;
-
-    .line 22
-    .line 23
-    return-void
+    return-object p1
 .end method

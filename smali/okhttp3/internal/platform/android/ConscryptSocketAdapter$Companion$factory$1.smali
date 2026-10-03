@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/ConscryptSocketAdapter$Companion$factory$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/platform/android/DeferredSocketAdapter$Factory;
@@ -65,20 +65,20 @@
     .line 2
     .line 3
     .line 4
-    new-instance p1, Lokhttp3/internal/platform/android/ConscryptSocketAdapter;
+    new-instance p0, Lokhttp3/internal/platform/android/ConscryptSocketAdapter;
 
     .line 5
     .line 6
-    invoke-direct {p1}, Lokhttp3/internal/platform/android/ConscryptSocketAdapter;-><init>()V
+    invoke-direct {p0}, Lokhttp3/internal/platform/android/ConscryptSocketAdapter;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    return-object p1
+    return-object p0
 .end method
 
 .method public matchesSocket(Ljavax/net/ssl/SSLSocket;)Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -86,19 +86,19 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lokhttp3/internal/platform/ConscryptPlatform;->Companion:Lokhttp3/internal/platform/ConscryptPlatform$Companion;
+    sget-object p0, Lokhttp3/internal/platform/ConscryptPlatform;->Companion:Lokhttp3/internal/platform/ConscryptPlatform$Companion;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Lokhttp3/internal/platform/ConscryptPlatform$Companion;->isSupported()Z
+    invoke-virtual {p0}, Lokhttp3/internal/platform/ConscryptPlatform$Companion;->isSupported()Z
 
     .line 7
     .line 8
     .line 9
-    move-result v0
+    move-result p0
 
     .line 10
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 11
     .line 12
@@ -107,22 +107,22 @@
     .line 13
     .line 14
     .line 15
-    move-result p1
+    move-result p0
 
     .line 16
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 17
     .line 18
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 19
-    return p1
+    return p0
 
     .line 20
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 21
-    return p1
+    return p0
 .end method

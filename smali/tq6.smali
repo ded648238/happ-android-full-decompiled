@@ -1,78 +1,104 @@
-.class public final Ltq6;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract synthetic Ltq6;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public T:Ljava/lang/String;
-
-.field public U:Ljava/lang/String;
-
-.field public V:Z
-
-.field public synthetic W:Ljava/lang/Object;
-
-.field public final synthetic X:Lyq6;
-
-.field public Y:I
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Lyq6;Law0;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput-object p1, p0, Ltq6;->X:Lyq6;
+    invoke-static {}, Lio/sentry/o5;->values()[Lio/sentry/o5;
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
-
     .line 4
+    move-result-object v0
+
     .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iput-object p1, p0, Ltq6;->W:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    iget p1, p0, Ltq6;->Y:I
-
-    .line 4
-    .line 5
-    const/high16 v0, -0x80000000
+    array-length v0, v0
 
     .line 6
+    new-array v0, v0, [I
+
     .line 7
-    or-int/2addr p1, v0
-
     .line 8
-    iput p1, p0, Ltq6;->Y:I
+    :try_start_0
+    sget-object v1, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 9
     .line 10
-    iget-object p1, p0, Ltq6;->X:Lyq6;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 11
     .line 12
-    const/4 v0, 0x0
-
     .line 13
-    invoke-virtual {p1, v0, v0, p0}, Lyq6;->a(Ljava/lang/String;Ljava/lang/String;Law0;)Ljava/lang/Object;
+    move-result v1
 
     .line 14
-    .line 15
-    .line 16
-    move-result-object p1
+    const/4 v2, 0x1
 
+    .line 15
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 16
     .line 17
-    return-object p1
+    :catch_0
+    :try_start_1
+    sget-object v1, Lio/sentry/o5;->INFO:Lio/sentry/o5;
+
+    .line 18
+    .line 19
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v1
+
+    .line 23
+    const/4 v2, 0x2
+
+    .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 25
+    .line 26
+    :catch_1
+    :try_start_2
+    sget-object v1, Lio/sentry/o5;->WARNING:Lio/sentry/o5;
+
+    .line 27
+    .line 28
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    const/4 v2, 0x3
+
+    .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 34
+    .line 35
+    :catch_2
+    sput-object v0, Ltq6;->a:[I
+
+    .line 36
+    .line 37
+    return-void
 .end method

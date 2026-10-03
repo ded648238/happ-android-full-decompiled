@@ -1,24 +1,24 @@
-.class public final synthetic Lrz5;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lrz5;
+.super Lbz5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public constructor <init>(Lpr4;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lrz5;->a:I
+    invoke-direct {p0, p1}, Lbz5;-><init>(Lpr4;)V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p2, p0, Lrz5;->b:Ljava/lang/Object;
+
     .line 5
     .line 6
     return-void

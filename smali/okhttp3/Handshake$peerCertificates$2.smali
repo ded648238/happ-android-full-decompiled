@@ -1,14 +1,14 @@
 .class final Lokhttp3/Handshake$peerCertificates$2;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lou3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg72;
+.implements Lji2;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lg72;)V
+    value = Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lji2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe3;",
-        "Lg72;"
+        "Lou3;",
+        "Lji2;"
     }
 .end annotation
 
@@ -44,35 +44,35 @@
 
 
 # instance fields
-.field final synthetic $peerCertificatesFn:Lg72;
+.field final synthetic $peerCertificatesFn:Lji2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lg72;"
+            "Lji2;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lg72;)V
+.method public constructor <init>(Lji2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lg72;",
+            "Lji2;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lokhttp3/Handshake$peerCertificates$2;->$peerCertificatesFn:Lg72;
+    iput-object p1, p0, Lokhttp3/Handshake$peerCertificates$2;->$peerCertificatesFn:Lji2;
 
     .line 2
     .line 3
     const/4 p1, 0x0
 
     .line 4
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
+    invoke-direct {p0, p1}, Lou3;-><init>(I)V
 
     .line 5
     .line 6
@@ -83,18 +83,18 @@
 
 # virtual methods
 .method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 13
     invoke-virtual {p0}, Lokhttp3/Handshake$peerCertificates$2;->invoke()Ljava/util/List;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final invoke()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -106,31 +106,31 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lokhttp3/Handshake$peerCertificates$2;->$peerCertificatesFn:Lg72;
+    iget-object p0, p0, Lokhttp3/Handshake$peerCertificates$2;->$peerCertificatesFn:Lji2;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lg72;->invoke()Ljava/lang/Object;
+    invoke-interface {p0}, Lji2;->invoke()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Ljava/util/List;
+    check-cast p0, Ljava/util/List;
     :try_end_0
     .catch Ljavax/net/ssl/SSLPeerUnverifiedException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :catch_0
-    sget-object v0, Lwn1;->Q:Lwn1;
+    sget-object p0, Lfw1;->X:Lfw1;
 
     .line 11
     .line 12
-    return-object v0
+    return-object p0
 .end method

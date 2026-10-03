@@ -1,6 +1,6 @@
 .class public Lcom/google/firebase/datatransport/TransportRegistrar;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lcom/google/firebase/components/ComponentRegistrar;
@@ -23,11 +23,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Lf76;)Lb97;
+.method public static synthetic a(Lv5;)Lh18;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/firebase/datatransport/TransportRegistrar;->lambda$getComponents$2(Lwo0;)Lb97;
+    invoke-static {p0}, Lcom/google/firebase/datatransport/TransportRegistrar;->lambda$getComponents$2(Llw0;)Lh18;
 
     .line 2
     .line 3
@@ -38,11 +38,11 @@
     return-object p0
 .end method
 
-.method public static synthetic b(Lf76;)Lb97;
+.method public static synthetic b(Lv5;)Lh18;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/firebase/datatransport/TransportRegistrar;->lambda$getComponents$1(Lwo0;)Lb97;
+    invoke-static {p0}, Lcom/google/firebase/datatransport/TransportRegistrar;->lambda$getComponents$1(Llw0;)Lh18;
 
     .line 2
     .line 3
@@ -53,11 +53,11 @@
     return-object p0
 .end method
 
-.method public static synthetic c(Lf76;)Lb97;
+.method public static synthetic c(Lv5;)Lh18;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lcom/google/firebase/datatransport/TransportRegistrar;->lambda$getComponents$0(Lwo0;)Lb97;
+    invoke-static {p0}, Lcom/google/firebase/datatransport/TransportRegistrar;->lambda$getComponents$0(Llw0;)Lh18;
 
     .line 2
     .line 3
@@ -68,7 +68,7 @@
     return-object p0
 .end method
 
-.method private static synthetic lambda$getComponents$0(Lwo0;)Lb97;
+.method private static synthetic lambda$getComponents$0(Llw0;)Lh18;
     .locals 1
 
     .line 1
@@ -76,7 +76,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p0, v0}, Lwo0;->a(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Llw0;->a(Ljava/lang/Class;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -88,12 +88,12 @@
 
     .line 8
     .line 9
-    invoke-static {p0}, Le97;->b(Landroid/content/Context;)V
+    invoke-static {p0}, Lj18;->b(Landroid/content/Context;)V
 
     .line 10
     .line 11
     .line 12
-    invoke-static {}, Le97;->a()Le97;
+    invoke-static {}, Lj18;->a()Lj18;
 
     .line 13
     .line 14
@@ -101,11 +101,11 @@
     move-result-object p0
 
     .line 16
-    sget-object v0, Lc70;->f:Lc70;
+    sget-object v0, Ls90;->f:Ls90;
 
     .line 17
     .line 18
-    invoke-virtual {p0, v0}, Le97;->c(Lc70;)Lc97;
+    invoke-virtual {p0, v0}, Lj18;->c(Ls90;)Li18;
 
     .line 19
     .line 20
@@ -116,7 +116,7 @@
     return-object p0
 .end method
 
-.method private static synthetic lambda$getComponents$1(Lwo0;)Lb97;
+.method private static synthetic lambda$getComponents$1(Llw0;)Lh18;
     .locals 1
 
     .line 1
@@ -124,7 +124,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p0, v0}, Lwo0;->a(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Llw0;->a(Ljava/lang/Class;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -136,12 +136,12 @@
 
     .line 8
     .line 9
-    invoke-static {p0}, Le97;->b(Landroid/content/Context;)V
+    invoke-static {p0}, Lj18;->b(Landroid/content/Context;)V
 
     .line 10
     .line 11
     .line 12
-    invoke-static {}, Le97;->a()Le97;
+    invoke-static {}, Lj18;->a()Lj18;
 
     .line 13
     .line 14
@@ -149,11 +149,11 @@
     move-result-object p0
 
     .line 16
-    sget-object v0, Lc70;->f:Lc70;
+    sget-object v0, Ls90;->f:Ls90;
 
     .line 17
     .line 18
-    invoke-virtual {p0, v0}, Le97;->c(Lc70;)Lc97;
+    invoke-virtual {p0, v0}, Lj18;->c(Ls90;)Li18;
 
     .line 19
     .line 20
@@ -164,7 +164,7 @@
     return-object p0
 .end method
 
-.method private static synthetic lambda$getComponents$2(Lwo0;)Lb97;
+.method private static synthetic lambda$getComponents$2(Llw0;)Lh18;
     .locals 1
 
     .line 1
@@ -172,7 +172,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p0, v0}, Lwo0;->a(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Llw0;->a(Ljava/lang/Class;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -184,12 +184,12 @@
 
     .line 8
     .line 9
-    invoke-static {p0}, Le97;->b(Landroid/content/Context;)V
+    invoke-static {p0}, Lj18;->b(Landroid/content/Context;)V
 
     .line 10
     .line 11
     .line 12
-    invoke-static {}, Le97;->a()Le97;
+    invoke-static {}, Lj18;->a()Lj18;
 
     .line 13
     .line 14
@@ -197,11 +197,11 @@
     move-result-object p0
 
     .line 16
-    sget-object v0, Lc70;->e:Lc70;
+    sget-object v0, Ls90;->e:Ls90;
 
     .line 17
     .line 18
-    invoke-virtual {p0, v0}, Le97;->c(Lc70;)Lc97;
+    invoke-virtual {p0, v0}, Lj18;->c(Ls90;)Li18;
 
     .line 19
     .line 20
@@ -215,109 +215,109 @@
 
 # virtual methods
 .method public getComponents()Ljava/util/List;
-    .locals 13
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Ljava/util/List<",
-            "Llo0;",
+            "Law0;",
             ">;"
         }
     .end annotation
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    new-array v1, v0, [Ljava/lang/Class;
+    new-array p0, p0, [Ljava/lang/Class;
 
     .line 3
     .line 4
-    new-instance v2, Ljava/util/HashSet;
+    new-instance v0, Ljava/util/HashSet;
 
     .line 5
     .line 6
-    invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    new-instance v3, Ljava/util/HashSet;
+    new-instance v1, Ljava/util/HashSet;
 
     .line 10
     .line 11
-    invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
+    invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
     .line 12
     .line 13
     .line 14
-    new-instance v11, Ljava/util/HashSet;
+    new-instance v9, Ljava/util/HashSet;
 
     .line 15
     .line 16
-    invoke-direct {v11}, Ljava/util/HashSet;-><init>()V
+    invoke-direct {v9}, Ljava/util/HashSet;-><init>()V
 
     .line 17
     .line 18
     .line 19
-    const-class v12, Lb97;
+    const-class v10, Lh18;
 
     .line 20
     .line 21
-    invoke-static {v12}, Lg75;->a(Ljava/lang/Class;)Lg75;
+    invoke-static {v10}, Ler5;->a(Ljava/lang/Class;)Ler5;
 
     .line 22
     .line 23
     .line 24
-    move-result-object v4
+    move-result-object v2
 
     .line 25
-    invoke-virtual {v2, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 26
     .line 27
     .line 28
-    array-length v4, v1
+    array-length v2, p0
 
     .line 29
-    const/4 v8, 0x0
+    const/4 v6, 0x0
 
     .line 30
-    const/4 v5, 0x0
+    move v3, v6
 
     .line 31
     :goto_0
-    if-ge v5, v4, :cond_0
+    if-ge v3, v2, :cond_0
 
     .line 32
     .line 33
-    aget-object v6, v1, v5
+    aget-object v4, p0, v3
 
     .line 34
     .line 35
-    const-string v7, "Null interface"
+    const-string v5, "Null interface"
 
     .line 36
     .line 37
-    invoke-static {v6, v7}, Lyc4;->C(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lvx6;->m(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 38
     .line 39
     .line 40
-    invoke-static {v6}, Lg75;->a(Ljava/lang/Class;)Lg75;
+    invoke-static {v4}, Ler5;->a(Ljava/lang/Class;)Ler5;
 
     .line 41
     .line 42
     .line 43
-    move-result-object v6
+    move-result-object v4
 
     .line 44
-    invoke-virtual {v2, v6}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 45
     .line 46
     .line 47
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     .line 48
     .line 49
@@ -325,271 +325,247 @@
 
     .line 50
     :cond_0
-    const-class v1, Landroid/content/Context;
+    const-class p0, Landroid/content/Context;
 
     .line 51
     .line 52
-    invoke-static {v1}, Ld71;->a(Ljava/lang/Class;)Ld71;
+    invoke-static {p0}, Lgf1;->a(Ljava/lang/Class;)Lgf1;
 
     .line 53
     .line 54
     .line 55
-    move-result-object v4
+    move-result-object v2
 
     .line 56
-    iget-object v5, v4, Ld71;->a:Lg75;
+    iget-object v3, v2, Lgf1;->a:Ler5;
 
     .line 57
     .line 58
-    invoke-virtual {v2, v5}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
     .line 59
     .line 60
     .line 61
-    move-result v5
+    move-result v3
 
     .line 62
-    if-nez v5, :cond_1
+    if-nez v3, :cond_1
 
     .line 63
     .line 64
-    invoke-virtual {v3, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 65
     .line 66
     .line 67
-    new-instance v10, Lj26;
+    new-instance v8, Lco6;
 
     .line 68
     .line 69
-    const/16 v4, 0x13
+    const/16 v2, 0x13
 
     .line 70
     .line 71
-    invoke-direct {v10, v4}, Lj26;-><init>(I)V
+    invoke-direct {v8, v2}, Lco6;-><init>(I)V
 
     .line 72
     .line 73
     .line 74
-    new-instance v4, Llo0;
+    new-instance v2, Law0;
 
     .line 75
     .line 76
-    new-instance v6, Ljava/util/HashSet;
+    new-instance v4, Ljava/util/HashSet;
 
     .line 77
     .line 78
-    invoke-direct {v6, v2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v4, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
     .line 79
     .line 80
     .line 81
-    new-instance v7, Ljava/util/HashSet;
+    new-instance v5, Ljava/util/HashSet;
 
     .line 82
     .line 83
-    invoke-direct {v7, v3}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v5, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
     .line 84
     .line 85
     .line 86
-    const-string v5, "fire-transport"
+    const-string v3, "fire-transport"
 
     .line 87
     .line 88
-    move v9, v8
+    move v7, v6
 
     .line 89
-    invoke-direct/range {v4 .. v11}, Llo0;-><init>(Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;IILzo0;Ljava/util/Set;)V
+    invoke-direct/range {v2 .. v9}, Law0;-><init>(Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;IILpw0;Ljava/util/Set;)V
 
     .line 90
     .line 91
     .line 92
-    new-instance v2, Lg75;
+    new-instance v0, Ler5;
 
     .line 93
     .line 94
-    const-class v3, Lpj3;
+    const-class v1, Lk04;
 
     .line 95
     .line 96
-    invoke-direct {v2, v3, v12}, Lg75;-><init>(Ljava/lang/Class;Ljava/lang/Class;)V
+    invoke-direct {v0, v1, v10}, Ler5;-><init>(Ljava/lang/Class;Ljava/lang/Class;)V
 
     .line 97
     .line 98
     .line 99
-    invoke-static {v2}, Llo0;->a(Lg75;)Lko0;
+    invoke-static {v0}, Law0;->a(Ler5;)Lzv0;
 
     .line 100
     .line 101
     .line 102
-    move-result-object v2
+    move-result-object v0
 
     .line 103
-    invoke-static {v1}, Ld71;->a(Ljava/lang/Class;)Ld71;
+    invoke-static {p0}, Lgf1;->a(Ljava/lang/Class;)Lgf1;
 
     .line 104
     .line 105
     .line 106
-    move-result-object v3
+    move-result-object v1
 
     .line 107
-    invoke-virtual {v2, v3}, Lko0;->a(Ld71;)V
+    invoke-virtual {v0, v1}, Lzv0;->a(Lgf1;)V
 
     .line 108
     .line 109
     .line 110
-    new-instance v3, Lj26;
+    new-instance v1, Lco6;
 
     .line 111
     .line 112
-    const/16 v6, 0x14
+    const/16 v4, 0x14
 
     .line 113
     .line 114
-    invoke-direct {v3, v6}, Lj26;-><init>(I)V
+    invoke-direct {v1, v4}, Lco6;-><init>(I)V
 
     .line 115
     .line 116
     .line 117
-    iput-object v3, v2, Lko0;->f:Lzo0;
+    iput-object v1, v0, Lzv0;->f:Lpw0;
 
     .line 118
     .line 119
-    invoke-virtual {v2}, Lko0;->b()Llo0;
+    invoke-virtual {v0}, Lzv0;->b()Law0;
 
     .line 120
     .line 121
     .line 122
-    move-result-object v2
+    move-result-object v0
 
     .line 123
-    new-instance v3, Lg75;
+    new-instance v1, Ler5;
 
     .line 124
     .line 125
-    const-class v6, Lw87;
+    const-class v4, Le18;
 
     .line 126
     .line 127
-    invoke-direct {v3, v6, v12}, Lg75;-><init>(Ljava/lang/Class;Ljava/lang/Class;)V
+    invoke-direct {v1, v4, v10}, Ler5;-><init>(Ljava/lang/Class;Ljava/lang/Class;)V
 
     .line 128
     .line 129
     .line 130
-    invoke-static {v3}, Llo0;->a(Lg75;)Lko0;
+    invoke-static {v1}, Law0;->a(Ler5;)Lzv0;
 
     .line 131
     .line 132
     .line 133
-    move-result-object v3
+    move-result-object v1
 
     .line 134
-    invoke-static {v1}, Ld71;->a(Ljava/lang/Class;)Ld71;
+    invoke-static {p0}, Lgf1;->a(Ljava/lang/Class;)Lgf1;
 
     .line 135
     .line 136
     .line 137
-    move-result-object v1
+    move-result-object p0
 
     .line 138
-    invoke-virtual {v3, v1}, Lko0;->a(Ld71;)V
+    invoke-virtual {v1, p0}, Lzv0;->a(Lgf1;)V
 
     .line 139
     .line 140
     .line 141
-    new-instance v1, Lj26;
+    new-instance p0, Lco6;
 
     .line 142
     .line 143
-    const/16 v6, 0x15
+    const/16 v4, 0x15
 
     .line 144
     .line 145
-    invoke-direct {v1, v6}, Lj26;-><init>(I)V
+    invoke-direct {p0, v4}, Lco6;-><init>(I)V
 
     .line 146
     .line 147
     .line 148
-    iput-object v1, v3, Lko0;->f:Lzo0;
+    iput-object p0, v1, Lzv0;->f:Lpw0;
 
     .line 149
     .line 150
-    invoke-virtual {v3}, Lko0;->b()Llo0;
+    invoke-virtual {v1}, Lzv0;->b()Law0;
 
     .line 151
     .line 152
     .line 153
-    move-result-object v1
+    move-result-object p0
 
     .line 154
-    const-string v3, "18.2.0"
+    const-string v1, "18.2.0"
 
     .line 155
     .line 156
-    invoke-static {v5, v3}, Luy7;->t(Ljava/lang/String;Ljava/lang/String;)Llo0;
+    invoke-static {v3, v1}, Lck3;->o(Ljava/lang/String;Ljava/lang/String;)Law0;
 
     .line 157
     .line 158
     .line 159
-    move-result-object v3
+    move-result-object v1
 
     .line 160
-    const/4 v5, 0x4
+    filled-new-array {v2, v0, p0, v1}, [Law0;
 
     .line 161
-    new-array v5, v5, [Llo0;
-
     .line 162
     .line 163
-    aput-object v4, v5, v0
+    move-result-object p0
 
     .line 164
+    invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
     .line 165
-    const/4 v0, 0x1
-
     .line 166
-    aput-object v2, v5, v0
-
     .line 167
+    move-result-object p0
+
     .line 168
-    const/4 v0, 0x2
+    return-object p0
 
     .line 169
-    aput-object v1, v5, v0
+    :cond_1
+    const-string p0, "Components are not allowed to depend on interfaces they themselves provide."
 
     .line 170
     .line 171
-    const/4 v0, 0x3
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 172
-    aput-object v3, v5, v0
-
     .line 173
     .line 174
-    invoke-static {v5}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    const/4 p0, 0x0
 
     .line 175
-    .line 176
-    .line 177
-    move-result-object v0
-
-    .line 178
-    return-object v0
-
-    .line 179
-    :cond_1
-    const-string v0, "Components are not allowed to depend on interfaces they themselves provide."
-
-    .line 180
-    .line 181
-    invoke-static {v0}, Lfn;->r(Ljava/lang/String;)V
-
-    .line 182
-    .line 183
-    .line 184
-    const/4 v0, 0x0
-
-    .line 185
-    return-object v0
+    return-object p0
 .end method

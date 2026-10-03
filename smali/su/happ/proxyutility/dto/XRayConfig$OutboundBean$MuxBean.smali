@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -243,7 +243,7 @@
 
     .line 34
     :cond_4
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->xudpProxyUDP443:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->xudpProxyUDP443:Ljava/lang/String;
 
     .line 35
     .line 36
@@ -251,15 +251,15 @@
 
     .line 37
     .line 38
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 39
     .line 40
     .line 41
-    move-result p1
+    move-result p0
 
     .line 42
-    if-nez p1, :cond_5
+    if-nez p0, :cond_5
 
     .line 43
     .line 44
@@ -271,76 +271,72 @@
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 3
 
     .line 1
     iget-boolean v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->enabled:Z
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 4
     .line 5
-    const/16 v0, 0x4cf
-
     .line 6
+    move-result v0
+
     .line 7
-    goto :goto_0
+    const/16 v1, 0x1f
 
     .line 8
-    :cond_0
-    const/16 v0, 0x4d5
-
     .line 9
+    mul-int/2addr v0, v1
+
     .line 10
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
+    iget v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->concurrency:I
 
     .line 11
     .line 12
-    iget v1, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->concurrency:I
+    invoke-static {v2, v0, v1}, Leh0;->d(III)I
 
     .line 13
     .line 14
-    add-int/2addr v0, v1
-
     .line 15
-    mul-int/lit8 v0, v0, 0x1f
+    move-result v0
 
     .line 16
+    iget v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->xudpConcurrency:I
+
     .line 17
-    iget v1, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->xudpConcurrency:I
-
     .line 18
+    invoke-static {v2, v0, v1}, Leh0;->d(III)I
+
     .line 19
-    add-int/2addr v0, v1
-
     .line 20
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 21
+    move-result v0
+
     .line 22
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->xudpProxyUDP443:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->xudpProxyUDP443:Ljava/lang/String;
 
     .line 23
     .line 24
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     .line 25
     .line 26
     .line 27
-    move-result v1
+    move-result p0
 
     .line 28
-    add-int/2addr v1, v0
+    add-int/2addr p0, v0
 
     .line 29
-    return v1
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 6
+    .locals 5
 
     .line 1
     iget-boolean v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->enabled:Z
@@ -355,24 +351,24 @@
 
     .line 6
     .line 7
-    iget-object v3, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->xudpProxyUDP443:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$MuxBean;->xudpProxyUDP443:Ljava/lang/String;
 
     .line 8
     .line 9
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 10
     .line 11
-    const-string v5, "MuxBean(enabled="
+    const-string v4, "MuxBean(enabled="
 
     .line 12
     .line 13
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 17
     .line 18
@@ -381,12 +377,12 @@
 
     .line 20
     .line 21
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 25
     .line 26
@@ -395,12 +391,12 @@
 
     .line 28
     .line 29
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 30
     .line 31
     .line 32
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 33
     .line 34
@@ -409,32 +405,32 @@
 
     .line 36
     .line 37
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 41
     .line 42
     .line 43
-    const-string v0, ")"
+    const-string p0, ")"
 
     .line 44
     .line 45
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 46
     .line 47
     .line 48
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 49
     .line 50
     .line 51
-    move-result-object v0
+    move-result-object p0
 
     .line 52
-    return-object v0
+    return-object p0
 .end method

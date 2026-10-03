@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/cache/DiskLruCache$Snapshot;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -28,7 +28,7 @@
         "",
         "sequenceNumber",
         "",
-        "Lle6;",
+        "Ld27;",
         "sources",
         "",
         "lengths",
@@ -42,10 +42,10 @@
         "",
         "index",
         "getSource",
-        "(I)Lle6;",
+        "(I)Ld27;",
         "getLength",
         "(I)J",
-        "Lbh7;",
+        "Lr98;",
         "close",
         "()V",
         "Ljava/lang/String;",
@@ -75,7 +75,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lle6;",
+            "Ld27;",
             ">;"
         }
     .end annotation
@@ -94,7 +94,7 @@
             "J",
             "Ljava/util/List<",
             "+",
-            "Lle6;",
+            "Ld27;",
             ">;[J)V"
         }
     .end annotation
@@ -146,47 +146,47 @@
 
 # virtual methods
 .method public close()V
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->sources:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->sources:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 8
     .line 9
     .line 10
-    move-result v1
+    move-result v0
 
     .line 11
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 12
     .line 13
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 14
     .line 15
     .line 16
-    move-result-object v1
+    move-result-object v0
 
     .line 17
-    check-cast v1, Lle6;
+    check-cast v0, Ld27;
 
     .line 18
     .line 19
-    invoke-static {v1}, Lokhttp3/internal/Util;->closeQuietly(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lokhttp3/internal/Util;->closeQuietly(Ljava/io/Closeable;)V
 
     .line 20
     .line 21
@@ -224,57 +224,57 @@
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getLength(I)J
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->lengths:[J
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->lengths:[J
 
     .line 2
     .line 3
-    aget-wide v1, v0, p1
+    aget-wide v0, p0, p1
 
     .line 4
     .line 5
-    return-wide v1
+    return-wide v0
 .end method
 
-.method public final getSource(I)Lle6;
-    .locals 1
+.method public final getSource(I)Ld27;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->sources:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->sources:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    check-cast p1, Lle6;
+    check-cast p0, Ld27;
 
     .line 8
     .line 9
-    return-object p1
+    return-object p0
 .end method
 
 .method public final key()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->key:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Snapshot;->key:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

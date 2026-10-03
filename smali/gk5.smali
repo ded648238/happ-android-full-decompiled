@@ -1,85 +1,164 @@
-.class public final synthetic Lgk5;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public Lgk5;
+.super Lbz6;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final Q:Lgk5;
+# instance fields
+.field public final c0:Lup4;
+
+.field public volatile d0:Luv7;
+
+.field public volatile e0:Luv7;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Lqw1;ILjava/lang/String;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lgk5;
+    sget-object p2, Lmv0;->a:Ljava/util/concurrent/atomic/AtomicLong;
 
     .line 2
     .line 3
-    const-string v1, "getRoutingEnable()Ljava/lang/Boolean;"
+    invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
 
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
+    move-result-wide p2
 
     .line 7
-    .line 8
-    const-string v4, "routingEnable"
+    invoke-direct {p0, p1, p2, p3}, Lbz6;-><init>(Lqw1;J)V
 
+    .line 8
     .line 9
     .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    sget p2, Lz74;->a:I
 
     .line 11
     .line 12
-    .line 13
-    sput-object v0, Lgk5;->Q:Lgk5;
+    new-instance p2, Lup4;
 
+    .line 13
     .line 14
+    const/4 p3, 0x6
+
     .line 15
+    invoke-direct {p2, p3}, Lup4;-><init>(I)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object p2, p0, Lgk5;->c0:Lup4;
+
+    .line 19
+    .line 20
+    new-instance p0, Lmq4;
+
+    .line 21
+    .line 22
+    invoke-direct {p0}, Lmq4;-><init>()V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 26
+    .line 27
+    .line 28
     return-void
 .end method
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public g(JLjava/lang/String;J)Luv7;
+    .locals 10
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    iget-object v1, p0, Lgk5;->c0:Lup4;
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/Boolean;
+    monitor-enter v1
 
     .line 4
-    .line 5
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->q2(Ljava/lang/Boolean;)V
+    :try_start_0
+    iget-object v0, p0, Lgk5;->c0:Lup4;
 
+    .line 5
     .line 6
+    invoke-virtual {v0, p1, p2}, Lup4;->d(J)Ljava/lang/Object;
+
     .line 7
     .line 8
-    return-void
-.end method
+    .line 9
+    move-result-object v2
 
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .line 10
+    if-nez v2, :cond_0
 
-    .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    .line 11
+    .line 12
+    new-instance v3, Luv7;
 
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->D0()Ljava/lang/Boolean;
+    .line 13
+    .line 14
+    move-object v9, p0
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
+    .line 15
+    move-wide v4, p1
 
-    .line 7
-    return-object p1
+    .line 16
+    move-object v8, p3
+
+    .line 17
+    move-wide v6, p4
+
+    .line 18
+    invoke-direct/range {v3 .. v9}, Luv7;-><init>(JJLjava/lang/String;Lgk5;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0, v4, v5, v3}, Lup4;->g(JLjava/lang/Object;)V
+
+    .line 22
+    .line 23
+    .line 24
+    move-object v2, v3
+
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :catchall_0
+    move-exception v0
+
+    .line 27
+    move-object p0, v0
+
+    .line 28
+    goto :goto_1
+
+    .line 29
+    :cond_0
+    :goto_0
+    check-cast v2, Luv7;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 30
+    .line 31
+    monitor-exit v1
+
+    .line 32
+    return-object v2
+
+    .line 33
+    :goto_1
+    monitor-exit v1
+
+    .line 34
+    throw p0
 .end method

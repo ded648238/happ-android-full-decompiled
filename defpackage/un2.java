@@ -1,21 +1,14 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class un2 implements so2 {
-    public final jd4 Q;
+import okhttp3.Interceptor;
+import okhttp3.Response;
 
-    public un2(jd4 jd4Var) {
-        this.Q = jd4Var;
-    }
-
-    @Override // defpackage.so2
-    public final boolean h() {
-        return false;
-    }
-
-    @Override // defpackage.so2
-    public final jd4 i() {
-        return this.Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class un2 implements Interceptor {
+    @Override // okhttp3.Interceptor
+    public final Response intercept(Interceptor.Chain chain) {
+        chain.getClass();
+        return chain.proceed(chain.request().newBuilder().header("Host", "drive.usercontent.google.com").build());
     }
 }

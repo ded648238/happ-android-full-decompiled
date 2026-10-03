@@ -1,107 +1,271 @@
-.class public final synthetic Lj54;
+.class public final Lj54;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lu72;
+.implements Ljava/lang/Comparable;
+.implements Ljava/io/Serializable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/lang/Comparable<",
+        "Lj54;",
+        ">;",
+        "Ljava/io/Serializable;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lh54;
 
 
 # instance fields
-.field public final synthetic Q:J
-
-.field public final synthetic R:Lg72;
-
-.field public final synthetic S:Z
-
-.field public final synthetic T:Z
+.field public final X:Lj$/time/LocalDateTime;
 
 
 # direct methods
-.method public synthetic constructor <init>(JLg72;ZZI)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lh54;
 
     .line 2
     .line 3
-    .line 4
-    iput-wide p1, p0, Lj54;->Q:J
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p3, p0, Lj54;->R:Lg72;
+    sput-object v0, Lj54;->Companion:Lh54;
 
     .line 7
     .line 8
-    iput-boolean p4, p0, Lj54;->S:Z
+    new-instance v0, Lj54;
 
     .line 9
     .line 10
-    iput-boolean p5, p0, Lj54;->T:Z
+    sget-object v1, Lj$/time/LocalDateTime;->MIN:Lj$/time/LocalDateTime;
 
     .line 11
     .line 12
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-direct {v0, v1}, Lj54;-><init>(Lj$/time/LocalDateTime;)V
+
+    .line 16
+    .line 17
+    .line 18
+    new-instance v0, Lj54;
+
+    .line 19
+    .line 20
+    sget-object v1, Lj$/time/LocalDateTime;->MAX:Lj$/time/LocalDateTime;
+
+    .line 21
+    .line 22
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-direct {v0, v1}, Lj54;-><init>(Lj$/time/LocalDateTime;)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-void
+.end method
+
+.method public constructor <init>(Lb54;Lu54;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p1, Lb54;->X:Lj$/time/LocalDate;
+
+    .line 2
+    .line 3
+    iget-object p2, p2, Lu54;->X:Lj$/time/LocalTime;
+
+    .line 4
+    .line 5
+    invoke-static {p1, p2}, Lj$/time/LocalDateTime;->of(Lj$/time/LocalDate;Lj$/time/LocalTime;)Lj$/time/LocalDateTime;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 13
+    .line 14
+    .line 15
+    iput-object p1, p0, Lj54;->X:Lj$/time/LocalDateTime;
+
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public constructor <init>(Lj$/time/LocalDateTime;)V
+    .locals 0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 18
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 19
+    iput-object p1, p0, Lj54;->X:Lj$/time/LocalDateTime;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+.method public final compareTo(Ljava/lang/Object;)I
+    .locals 0
 
     .line 1
-    move-object v5, p1
+    check-cast p1, Lj54;
 
     .line 2
-    check-cast v5, Luq0;
-
     .line 3
-    .line 4
-    check-cast p2, Ljava/lang/Integer;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 4
     .line 5
     .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object p0, p0, Lj54;->X:Lj$/time/LocalDateTime;
 
     .line 7
     .line 8
-    .line 9
-    const/4 p1, 0x1
+    iget-object p1, p1, Lj54;->X:Lj$/time/LocalDateTime;
 
+    .line 9
     .line 10
-    invoke-static {p1}, Luy7;->X(I)I
+    invoke-virtual {p0, p1}, Lj$/time/LocalDateTime;->compareTo(Lj$/time/chrono/ChronoLocalDateTime;)I
 
     .line 11
     .line 12
     .line 13
-    move-result v6
+    move-result p0
 
     .line 14
-    iget-wide v0, p0, Lj54;->Q:J
+    return p0
+.end method
 
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    if-eq p0, p1, :cond_1
+
+    .line 2
+    .line 3
+    instance-of v0, p1, Lj54;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    check-cast p1, Lj54;
+
+    .line 8
+    .line 9
+    iget-object p1, p1, Lj54;->X:Lj$/time/LocalDateTime;
+
+    .line 10
+    .line 11
+    iget-object p0, p0, Lj54;->X:Lj$/time/LocalDateTime;
+
+    .line 12
+    .line 13
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 14
     .line 15
     .line 16
-    iget-object v2, p0, Lj54;->R:Lg72;
+    move-result p0
 
     .line 17
-    .line 18
-    iget-boolean v3, p0, Lj54;->S:Z
+    if-eqz p0, :cond_0
 
+    .line 18
     .line 19
+    goto :goto_0
+
     .line 20
-    iget-boolean v4, p0, Lj54;->T:Z
+    :cond_0
+    const/4 p0, 0x0
 
     .line 21
+    return p0
+
     .line 22
-    invoke-static/range {v0 .. v6}, Lt54;->c(JLg72;ZZLuq0;I)V
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
 
     .line 23
-    .line 24
-    .line 25
-    sget-object p1, Lbh7;->a:Lbh7;
+    return p0
+.end method
 
-    .line 26
-    .line 27
-    return-object p1
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lj54;->X:Lj$/time/LocalDateTime;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lj$/time/LocalDateTime;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lj54;->X:Lj$/time/LocalDateTime;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lj$/time/LocalDateTime;->toString()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    .line 10
+    return-object p0
 .end method

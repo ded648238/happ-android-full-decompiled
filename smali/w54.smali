@@ -1,25 +1,14 @@
-.class public final synthetic Lw54;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg72;
+.class public final Lw54;
+.super Ld1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:Li54;
-
-.field public final synthetic R:Lg72;
-
-.field public final synthetic S:Lu54;
-
-.field public final synthetic T:J
-
-.field public final synthetic U:Lte3;
+.field public final a:Lua0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Li54;Lg72;Lu54;JLte3;)V
+.method public constructor <init>(Lua0;)V
     .locals 0
 
     .line 1
@@ -28,63 +17,82 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lw54;->Q:Li54;
+    iput-object p1, p0, Lw54;->a:Lua0;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lw54;->R:Lg72;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lw54;->S:Lu54;
-
-    .line 9
-    .line 10
-    iput-wide p4, p0, Lw54;->T:J
-
-    .line 11
-    .line 12
-    iput-object p6, p0, Lw54;->U:Lte3;
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 6
+.method public final b()Lua0;
+    .locals 0
 
     .line 1
-    iget-wide v3, p0, Lw54;->T:J
+    iget-object p0, p0, Lw54;->a:Lua0;
 
     .line 2
     .line 3
-    iget-object v5, p0, Lw54;->U:Lte3;
+    return-object p0
+.end method
+
+.method public final c()Lo31;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lx54;->b:Lm33;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final d(Lj54;)Lo31;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lu54;
+
+    .line 2
+    .line 3
+    new-instance p0, Lm33;
 
     .line 4
     .line 5
-    iget-object v0, p0, Lw54;->Q:Li54;
+    invoke-direct {p0}, Lm33;-><init>()V
 
     .line 6
     .line 7
-    iget-object v1, p0, Lw54;->R:Lg72;
-
     .line 8
-    .line 9
-    iget-object v2, p0, Lw54;->S:Lu54;
+    invoke-virtual {p0, p1}, Lm33;->f(Lu54;)V
 
+    .line 9
     .line 10
     .line 11
-    invoke-virtual/range {v0 .. v5}, Li54;->d(Lg72;Lu54;JLte3;)V
+    return-object p0
+.end method
 
-    .line 12
-    .line 13
-    .line 14
-    sget-object v0, Lbh7;->a:Lbh7;
+.method public final f(Lo31;)Ljava/lang/Object;
+    .locals 0
 
-    .line 15
-    .line 16
-    return-object v0
+    .line 1
+    check-cast p1, Lm33;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Lm33;->i()Lu54;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
 .end method

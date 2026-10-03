@@ -1,6 +1,6 @@
 .class public final Lokhttp3/ConnectionSpec$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -176,19 +176,19 @@
 
     .line 9
     :cond_0
-    const-string v0, "no cipher suites for cleartext connections"
+    const-string p0, "no cipher suites for cleartext connections"
 
     .line 10
     .line 11
-    invoke-static {v0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 12
     .line 13
     .line 14
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 15
-    return-object v0
+    return-object p0
 .end method
 
 .method public final allEnabledTlsVersions()Lokhttp3/ConnectionSpec$Builder;
@@ -214,23 +214,23 @@
 
     .line 9
     :cond_0
-    const-string v0, "no TLS versions for cleartext connections"
+    const-string p0, "no TLS versions for cleartext connections"
 
     .line 10
     .line 11
-    invoke-static {v0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 12
     .line 13
     .line 14
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 15
-    return-object v0
+    return-object p0
 .end method
 
 .method public final build()Lokhttp3/ConnectionSpec;
-    .locals 5
+    .locals 4
 
     .line 1
     new-instance v0, Lokhttp3/ConnectionSpec;
@@ -249,11 +249,11 @@
 
     .line 8
     .line 9
-    iget-object v4, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
 
     .line 10
     .line 11
-    invoke-direct {v0, v1, v2, v3, v4}, Lokhttp3/ConnectionSpec;-><init>(ZZ[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3, p0}, Lokhttp3/ConnectionSpec;-><init>(ZZ[Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -301,17 +301,17 @@
 
     .line 61
     :cond_1
-    const-string p1, "At least one cipher suite is required"
+    const-string p0, "At least one cipher suite is required"
 
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     return-object v1
 
     .line 62
     :cond_2
-    const-string p1, "no cipher suites for cleartext connections"
+    const-string p0, "no cipher suites for cleartext connections"
 
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     return-object v1
 .end method
@@ -351,7 +351,7 @@
     const/4 v2, 0x0
 
     .line 16
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 17
     :goto_0
@@ -420,70 +420,70 @@
     .line 47
     .line 48
     .line 49
-    move-result-object p1
+    move-result-object p0
 
     .line 50
-    return-object p1
+    return-object p0
 
     .line 51
     :cond_1
-    const-string p1, "no cipher suites for cleartext connections"
+    const-string p0, "no cipher suites for cleartext connections"
 
     .line 52
     .line 53
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 54
     .line 55
     .line 56
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 57
-    return-object p1
+    return-object p0
 .end method
 
 .method public final getCipherSuites$okhttp()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getSupportsTlsExtensions$okhttp()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->supportsTlsExtensions:Z
+    iget-boolean p0, p0, Lokhttp3/ConnectionSpec$Builder;->supportsTlsExtensions:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getTls$okhttp()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
+    iget-boolean p0, p0, Lokhttp3/ConnectionSpec$Builder;->tls:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getTlsVersions$okhttp()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final setCipherSuites$okhttp([Ljava/lang/String;)V
@@ -532,7 +532,7 @@
 
 .method public final supportsTlsExtensions(Z)Lokhttp3/ConnectionSpec$Builder;
     .locals 1
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -552,19 +552,19 @@
 
     .line 8
     :cond_0
-    const-string p1, "no TLS extensions for cleartext connections"
+    const-string p0, "no TLS extensions for cleartext connections"
 
     .line 9
     .line 10
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 11
     .line 12
     .line 13
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 14
-    return-object p1
+    return-object p0
 .end method
 
 .method public final varargs tlsVersions([Ljava/lang/String;)Lokhttp3/ConnectionSpec$Builder;
@@ -607,17 +607,17 @@
 
     .line 61
     :cond_1
-    const-string p1, "At least one TLS version is required"
+    const-string p0, "At least one TLS version is required"
 
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     return-object v1
 
     .line 62
     :cond_2
-    const-string p1, "no TLS versions for cleartext connections"
+    const-string p0, "no TLS versions for cleartext connections"
 
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     return-object v1
 .end method
@@ -657,7 +657,7 @@
     const/4 v2, 0x0
 
     .line 16
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 17
     :goto_0
@@ -726,24 +726,24 @@
     .line 47
     .line 48
     .line 49
-    move-result-object p1
+    move-result-object p0
 
     .line 50
-    return-object p1
+    return-object p0
 
     .line 51
     :cond_1
-    const-string p1, "no TLS versions for cleartext connections"
+    const-string p0, "no TLS versions for cleartext connections"
 
     .line 52
     .line 53
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 54
     .line 55
     .line 56
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 57
-    return-object p1
+    return-object p0
 .end method

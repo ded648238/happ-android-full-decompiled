@@ -1,6 +1,6 @@
 .class public Landroidx/drawerlayout/widget/DrawerLayout$LayoutParams;
 .super Landroid/view/ViewGroup$MarginLayoutParams;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -41,7 +41,7 @@
 
     .line 6
     .line 7
-    sget-object v1, Landroidx/drawerlayout/widget/DrawerLayout;->v0:[I
+    sget-object v1, Landroidx/drawerlayout/widget/DrawerLayout;->E0:[I
 
     .line 8
     .line 9

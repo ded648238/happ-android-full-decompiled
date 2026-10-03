@@ -1,141 +1,120 @@
 .class public final Luc3;
-.super Lld3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
 
 # interfaces
-.implements La83;
+.implements Lji2;
 
 
 # instance fields
-.field public final b0:Lwf3;
+.field public final synthetic X:I
+
+.field public final Y:Lvn3;
 
 
 # direct methods
-.method public constructor <init>(Lp73;Ljava/lang/String;Ljava/lang/Object;Lmb3;Lw63;)V
+.method public synthetic constructor <init>(Lvn3;I)V
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput p2, p0, Luc3;->X:I
 
     .line 2
     .line 3
-    .line 4
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput-object p1, p0, Luc3;->Y:Lvn3;
 
+    .line 4
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
     .line 7
-    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 8
-    .line 9
-    .line 10
-    invoke-virtual {p5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-direct/range {p0 .. p5}, Lld3;-><init>(Lp73;Ljava/lang/String;Ljava/lang/Object;Lmb3;Lw63;)V
-
-    .line 14
-    .line 15
-    .line 16
-    new-instance p1, Le83;
-
-    .line 17
-    .line 18
-    const/4 p2, 0x3
-
-    .line 19
-    invoke-direct {p1, p2, p0}, Le83;-><init>(ILjava/lang/Object;)V
-
-    .line 20
-    .line 21
-    .line 22
-    sget-object p2, Ljj3;->Q:Ljj3;
-
-    .line 23
-    .line 24
-    invoke-static {p2, p1}, Ll14;->U(Ljj3;Lg72;)Lwf3;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p1
-
-    .line 28
-    iput-object p1, p0, Luc3;->b0:Lwf3;
-
-    .line 29
-    .line 30
     return-void
 .end method
 
 
 # virtual methods
-.method public final d()Lv73;
+.method public final invoke()Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Luc3;->b0:Lwf3;
+    iget v0, p0, Luc3;->X:I
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lwf3;->getValue()Ljava/lang/Object;
+    iget-object p0, p0, Luc3;->Y:Lvn3;
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    packed-switch v0, :pswitch_data_0
 
-    .line 7
-    check-cast v0, Ltc3;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final x(Lp73;Lw63;)Lvf5;
-    .locals 6
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 5
     .line 6
     .line 7
-    new-instance v0, Luc3;
-
     .line 8
-    .line 9
-    sget-object v3, Lz80;->NO_RECEIVER:Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 9
     .line 10
     .line 11
-    iget-object v4, p0, Ljd3;->U:Lmb3;
+    check-cast p0, Lln3;
 
     .line 12
     .line 13
-    iget-object v2, p0, Ljd3;->S:Ljava/lang/String;
+    invoke-static {p0}, Lyl0;->o(Lgn3;)Lr1;
 
     .line 14
     .line 15
-    move-object v1, p1
-
     .line 16
-    move-object v5, p2
+    move-result-object p0
 
     .line 17
-    invoke-direct/range {v0 .. v5}, Luc3;-><init>(Lp73;Ljava/lang/String;Ljava/lang/Object;Lmb3;Lw63;)V
+    return-object p0
 
     .line 18
+    :pswitch_0
+    invoke-interface {p0}, Lcq0;->w()Ljava/lang/Class;
+
     .line 19
     .line 20
-    return-object v0
+    .line 21
+    move-result-object p0
+
+    .line 22
+    invoke-static {p0}, Lmn4;->a(Ljava/lang/Class;)Ljf6;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p0
+
+    .line 26
+    return-object p0
+
+    .line 27
+    :pswitch_1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 28
+    .line 29
+    .line 30
+    check-cast p0, Lln3;
+
+    .line 31
+    .line 32
+    invoke-static {p0}, Lyl0;->o(Lgn3;)Lr1;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    return-object p0
+
+    .line 37
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

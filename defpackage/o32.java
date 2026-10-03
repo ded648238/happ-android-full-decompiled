@@ -1,9 +1,32 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface o32 {
-    float a(float f);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class o32 {
+    public final float a;
+    public final j62 b;
 
-    float b(float f);
+    public o32(float f, j62 j62Var) {
+        this.a = f;
+        this.b = j62Var;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof o32)) {
+            return false;
+        }
+        o32 o32Var = (o32) obj;
+        return Float.compare(this.a, o32Var.a) == 0 && m93.h(this.b, o32Var.b);
+    }
+
+    public final int hashCode() {
+        return this.b.hashCode() + (Float.hashCode(this.a) * 31);
+    }
+
+    public final String toString() {
+        return "Fade(alpha=" + this.a + ", animationSpec=" + this.b + ")";
+    }
 }

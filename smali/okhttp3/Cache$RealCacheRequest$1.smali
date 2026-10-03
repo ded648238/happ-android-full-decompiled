@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Cache$RealCacheRequest$1;
-.super Lo42;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lff2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -19,8 +19,8 @@
     }
     d2 = {
         "okhttp3/Cache$RealCacheRequest$1",
-        "Lo42;",
-        "Lbh7;",
+        "Lff2;",
+        "Lr98;",
         "close",
         "()V",
         "okhttp"
@@ -42,7 +42,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lokhttp3/Cache;Lokhttp3/Cache$RealCacheRequest;Lpb6;)V
+.method public constructor <init>(Lokhttp3/Cache;Lokhttp3/Cache$RealCacheRequest;Lqy6;)V
     .locals 0
 
     .line 1
@@ -54,7 +54,7 @@
 
     .line 4
     .line 5
-    invoke-direct {p0, p3}, Lo42;-><init>(Lpb6;)V
+    invoke-direct {p0, p3}, Lff2;-><init>(Lqy6;)V
 
     .line 6
     .line 7
@@ -136,24 +136,24 @@
     monitor-exit v0
 
     .line 27
-    invoke-super {p0}, Lo42;->close()V
+    invoke-super {p0}, Lff2;->close()V
 
     .line 28
     .line 29
     .line 30
-    iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest$1;->this$1:Lokhttp3/Cache$RealCacheRequest;
+    iget-object p0, p0, Lokhttp3/Cache$RealCacheRequest$1;->this$1:Lokhttp3/Cache$RealCacheRequest;
 
     .line 31
     .line 32
-    invoke-static {v0}, Lokhttp3/Cache$RealCacheRequest;->access$getEditor$p(Lokhttp3/Cache$RealCacheRequest;)Lokhttp3/internal/cache/DiskLruCache$Editor;
+    invoke-static {p0}, Lokhttp3/Cache$RealCacheRequest;->access$getEditor$p(Lokhttp3/Cache$RealCacheRequest;)Lokhttp3/internal/cache/DiskLruCache$Editor;
 
     .line 33
     .line 34
     .line 35
-    move-result-object v0
+    move-result-object p0
 
     .line 36
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->commit()V
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->commit()V
 
     .line 37
     .line 38
@@ -162,11 +162,11 @@
 
     .line 40
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 41
     monitor-exit v0
 
     .line 42
-    throw v1
+    throw p0
 .end method

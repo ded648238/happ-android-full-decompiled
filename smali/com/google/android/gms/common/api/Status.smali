@@ -1,6 +1,6 @@
 .class public final Lcom/google/android/gms/common/api/Status;
-.super Ln2;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ls2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lcom/google/android/gms/common/internal/ReflectedParcelable;
@@ -19,13 +19,13 @@
 
 
 # instance fields
-.field public final Q:I
+.field public final X:I
 
-.field public final R:Ljava/lang/String;
+.field public final Y:Ljava/lang/String;
 
-.field public final S:Landroid/app/PendingIntent;
+.field public final Z:Landroid/app/PendingIntent;
 
-.field public final T:Los0;
+.field public final c0:Lwz0;
 
 
 # direct methods
@@ -33,15 +33,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Ltp6;
+    new-instance v0, Lh47;
 
     .line 2
     .line 3
-    const/16 v1, 0x12
+    const/16 v1, 0x1a
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ltp6;-><init>(I)V
+    invoke-direct {v0, v1}, Lh47;-><init>(I)V
 
     .line 6
     .line 7
@@ -53,7 +53,7 @@
     return-void
 .end method
 
-.method public constructor <init>(ILjava/lang/String;Landroid/app/PendingIntent;Los0;)V
+.method public constructor <init>(ILjava/lang/String;Landroid/app/PendingIntent;Lwz0;)V
     .locals 0
 
     .line 1
@@ -62,19 +62,19 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Lcom/google/android/gms/common/api/Status;->Q:I
+    iput p1, p0, Lcom/google/android/gms/common/api/Status;->X:I
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/google/android/gms/common/api/Status;->R:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/api/Status;->Y:Ljava/lang/String;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/google/android/gms/common/api/Status;->S:Landroid/app/PendingIntent;
+    iput-object p3, p0, Lcom/google/android/gms/common/api/Status;->Z:Landroid/app/PendingIntent;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lcom/google/android/gms/common/api/Status;->T:Los0;
+    iput-object p4, p0, Lcom/google/android/gms/common/api/Status;->c0:Lwz0;
 
     .line 11
     .line 12
@@ -106,11 +106,11 @@
 
     .line 8
     .line 9
-    iget v0, p0, Lcom/google/android/gms/common/api/Status;->Q:I
+    iget v0, p0, Lcom/google/android/gms/common/api/Status;->X:I
 
     .line 10
     .line 11
-    iget v2, p1, Lcom/google/android/gms/common/api/Status;->Q:I
+    iget v2, p1, Lcom/google/android/gms/common/api/Status;->X:I
 
     .line 12
     .line 13
@@ -118,15 +118,15 @@
 
     .line 14
     .line 15
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->R:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->Y:Ljava/lang/String;
 
     .line 16
     .line 17
-    iget-object v2, p1, Lcom/google/android/gms/common/api/Status;->R:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/android/gms/common/api/Status;->Y:Ljava/lang/String;
 
     .line 18
     .line 19
-    invoke-static {v0, v2}, Lvs0;->C(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lm93;->v(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 20
     .line 21
@@ -138,15 +138,15 @@
 
     .line 24
     .line 25
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->S:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->Z:Landroid/app/PendingIntent;
 
     .line 26
     .line 27
-    iget-object v2, p1, Lcom/google/android/gms/common/api/Status;->S:Landroid/app/PendingIntent;
+    iget-object v2, p1, Lcom/google/android/gms/common/api/Status;->Z:Landroid/app/PendingIntent;
 
     .line 28
     .line 29
-    invoke-static {v0, v2}, Lvs0;->C(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lm93;->v(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 30
     .line 31
@@ -158,30 +158,30 @@
 
     .line 34
     .line 35
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->T:Los0;
+    iget-object p0, p0, Lcom/google/android/gms/common/api/Status;->c0:Lwz0;
 
     .line 36
     .line 37
-    iget-object p1, p1, Lcom/google/android/gms/common/api/Status;->T:Los0;
+    iget-object p1, p1, Lcom/google/android/gms/common/api/Status;->c0:Lwz0;
 
     .line 38
     .line 39
-    invoke-static {v0, p1}, Lvs0;->C(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->v(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
     .line 42
-    move-result p1
+    move-result p0
 
     .line 43
-    if-eqz p1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 44
     .line 45
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 46
-    return p1
+    return p0
 
     .line 47
     :cond_1
@@ -192,7 +192,7 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Lcom/google/android/gms/common/api/Status;->Q:I
+    iget v0, p0, Lcom/google/android/gms/common/api/Status;->X:I
 
     .line 2
     .line 3
@@ -204,78 +204,51 @@
     move-result-object v0
 
     .line 7
-    const/4 v1, 0x4
+    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->Z:Landroid/app/PendingIntent;
 
     .line 8
-    new-array v1, v1, [Ljava/lang/Object;
-
     .line 9
-    .line 10
-    const/4 v2, 0x0
+    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->c0:Lwz0;
 
+    .line 10
     .line 11
-    aput-object v0, v1, v2
+    iget-object p0, p0, Lcom/google/android/gms/common/api/Status;->Y:Ljava/lang/String;
 
     .line 12
     .line 13
-    const/4 v0, 0x1
+    filled-new-array {v0, p0, v1, v2}, [Ljava/lang/Object;
 
     .line 14
-    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->R:Ljava/lang/String;
-
     .line 15
     .line 16
-    aput-object v2, v1, v0
+    move-result-object p0
 
     .line 17
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
     .line 18
-    const/4 v0, 0x2
-
     .line 19
-    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->S:Landroid/app/PendingIntent;
-
     .line 20
+    move-result p0
+
     .line 21
-    aput-object v2, v1, v0
-
-    .line 22
-    .line 23
-    const/4 v0, 0x3
-
-    .line 24
-    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->T:Los0;
-
-    .line 25
-    .line 26
-    aput-object v2, v1, v0
-
-    .line 27
-    .line 28
-    invoke-static {v1}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v0
-
-    .line 32
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 4
 
     .line 1
-    new-instance v0, Lh71;
+    new-instance v0, Lm13;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Lh71;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p0}, Lm13;-><init>(Ljava/lang/Object;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->R:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->Y:Ljava/lang/String;
 
     .line 7
     .line 8
@@ -283,226 +256,266 @@
 
     .line 9
     .line 10
-    goto :goto_0
+    goto/16 :goto_0
 
     .line 11
-    :cond_0
-    iget v1, p0, Lcom/google/android/gms/common/api/Status;->Q:I
-
     .line 12
+    :cond_0
+    iget v1, p0, Lcom/google/android/gms/common/api/Status;->X:I
+
     .line 13
+    .line 14
     packed-switch v1, :pswitch_data_0
 
-    .line 14
     .line 15
     .line 16
-    :pswitch_0
-    const-string v2, "unknown status code: "
-
     .line 17
-    .line 18
-    invoke-static {v1, v2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    :pswitch_0
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
+    .line 18
     .line 19
     .line 20
+    move-result-object v2
+
     .line 21
-    move-result-object v1
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     .line 22
-    goto :goto_0
-
     .line 23
-    :pswitch_1
-    const-string v1, "RECONNECTION_TIMED_OUT"
-
     .line 24
+    move-result v2
+
     .line 25
-    goto :goto_0
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 26
-    :pswitch_2
-    const-string v1, "RECONNECTION_TIMED_OUT_DURING_UPDATE"
-
     .line 27
-    .line 28
-    goto :goto_0
+    add-int/lit8 v2, v2, 0x15
 
+    .line 28
     .line 29
-    :pswitch_3
-    const-string v1, "CONNECTION_SUSPENDED_DURING_CALL"
+    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 30
     .line 31
-    goto :goto_0
-
     .line 32
-    :pswitch_4
-    const-string v1, "REMOTE_EXCEPTION"
+    const-string v2, "unknown status code: "
 
     .line 33
     .line 34
-    goto :goto_0
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 35
+    .line 36
+    .line 37
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v1
+
+    .line 44
+    goto :goto_0
+
+    .line 45
+    :pswitch_1
+    const-string v1, "RECONNECTION_TIMED_OUT"
+
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :pswitch_2
+    const-string v1, "RECONNECTION_TIMED_OUT_DURING_UPDATE"
+
+    .line 49
+    .line 50
+    goto :goto_0
+
+    .line 51
+    :pswitch_3
+    const-string v1, "CONNECTION_SUSPENDED_DURING_CALL"
+
+    .line 52
+    .line 53
+    goto :goto_0
+
+    .line 54
+    :pswitch_4
+    const-string v1, "REMOTE_EXCEPTION"
+
+    .line 55
+    .line 56
+    goto :goto_0
+
+    .line 57
     :pswitch_5
     const-string v1, "DEAD_CLIENT"
 
-    .line 36
-    .line 37
+    .line 58
+    .line 59
     goto :goto_0
 
-    .line 38
+    .line 60
     :pswitch_6
     const-string v1, "API_NOT_CONNECTED"
 
-    .line 39
-    .line 40
+    .line 61
+    .line 62
     goto :goto_0
 
-    .line 41
+    .line 63
     :pswitch_7
     const-string v1, "CANCELED"
 
-    .line 42
-    .line 43
+    .line 64
+    .line 65
     goto :goto_0
 
-    .line 44
+    .line 66
     :pswitch_8
     const-string v1, "TIMEOUT"
 
-    .line 45
-    .line 46
+    .line 67
+    .line 68
     goto :goto_0
 
-    .line 47
+    .line 69
     :pswitch_9
     const-string v1, "INTERRUPTED"
 
-    .line 48
-    .line 49
+    .line 70
+    .line 71
     goto :goto_0
 
-    .line 50
+    .line 72
     :pswitch_a
     const-string v1, "ERROR"
 
-    .line 51
-    .line 52
+    .line 73
+    .line 74
     goto :goto_0
 
-    .line 53
+    .line 75
     :pswitch_b
     const-string v1, "DEVELOPER_ERROR"
 
-    .line 54
-    .line 55
+    .line 76
+    .line 77
     goto :goto_0
 
-    .line 56
+    .line 78
     :pswitch_c
     const-string v1, "INTERNAL_ERROR"
 
-    .line 57
-    .line 58
+    .line 79
+    .line 80
     goto :goto_0
 
-    .line 59
+    .line 81
     :pswitch_d
     const-string v1, "NETWORK_ERROR"
 
-    .line 60
-    .line 61
+    .line 82
+    .line 83
     goto :goto_0
 
-    .line 62
+    .line 84
     :pswitch_e
     const-string v1, "RESOLUTION_REQUIRED"
 
-    .line 63
-    .line 64
+    .line 85
+    .line 86
     goto :goto_0
 
-    .line 65
+    .line 87
     :pswitch_f
     const-string v1, "INVALID_ACCOUNT"
 
-    .line 66
-    .line 67
+    .line 88
+    .line 89
     goto :goto_0
 
-    .line 68
+    .line 90
     :pswitch_10
     const-string v1, "SIGN_IN_REQUIRED"
 
-    .line 69
-    .line 70
+    .line 91
+    .line 92
     goto :goto_0
 
-    .line 71
+    .line 93
     :pswitch_11
     const-string v1, "SERVICE_DISABLED"
 
-    .line 72
-    .line 73
+    .line 94
+    .line 95
     goto :goto_0
 
-    .line 74
+    .line 96
     :pswitch_12
     const-string v1, "SERVICE_VERSION_UPDATE_REQUIRED"
 
-    .line 75
-    .line 76
+    .line 97
+    .line 98
     goto :goto_0
 
-    .line 77
+    .line 99
     :pswitch_13
     const-string v1, "SUCCESS"
 
-    .line 78
-    .line 79
+    .line 100
+    .line 101
     goto :goto_0
 
-    .line 80
+    .line 102
     :pswitch_14
     const-string v1, "SUCCESS_CACHE"
 
-    .line 81
-    .line 82
+    .line 103
+    .line 104
     :goto_0
     const-string v2, "statusCode"
 
-    .line 83
-    .line 84
-    invoke-virtual {v0, v1, v2}, Lh71;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 105
+    .line 106
+    invoke-virtual {v0, v1, v2}, Lm13;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 85
-    .line 86
-    .line 87
+    .line 107
+    .line 108
+    .line 109
     const-string v1, "resolution"
 
-    .line 88
-    .line 89
-    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->S:Landroid/app/PendingIntent;
+    .line 110
+    .line 111
+    iget-object p0, p0, Lcom/google/android/gms/common/api/Status;->Z:Landroid/app/PendingIntent;
 
-    .line 90
-    .line 91
-    invoke-virtual {v0, v2, v1}, Lh71;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 112
+    .line 113
+    invoke-virtual {v0, p0, v1}, Lm13;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 92
-    .line 93
-    .line 94
-    invoke-virtual {v0}, Lh71;->toString()Ljava/lang/String;
+    .line 114
+    .line 115
+    .line 116
+    invoke-virtual {v0}, Lm13;->toString()Ljava/lang/String;
 
-    .line 95
-    .line 96
-    .line 97
-    move-result-object v0
+    .line 117
+    .line 118
+    .line 119
+    move-result-object p0
 
-    .line 98
-    return-object v0
+    .line 120
+    return-object p0
 
-    .line 99
+    .line 121
     :pswitch_data_0
     .packed-switch -0x1
         :pswitch_14
@@ -540,7 +553,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lyc4;->g1(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lmu4;->E0(Landroid/os/Parcel;I)I
 
     .line 4
     .line 5
@@ -554,12 +567,12 @@
     const/4 v2, 0x4
 
     .line 9
-    invoke-static {p1, v1, v2}, Lyc4;->i1(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lmu4;->D0(Landroid/os/Parcel;II)V
 
     .line 10
     .line 11
     .line 12
-    iget v1, p0, Lcom/google/android/gms/common/api/Status;->Q:I
+    iget v1, p0, Lcom/google/android/gms/common/api/Status;->X:I
 
     .line 13
     .line 14
@@ -571,11 +584,11 @@
     const/4 v1, 0x2
 
     .line 18
-    iget-object v3, p0, Lcom/google/android/gms/common/api/Status;->R:Ljava/lang/String;
+    iget-object v3, p0, Lcom/google/android/gms/common/api/Status;->Y:Ljava/lang/String;
 
     .line 19
     .line 20
-    invoke-static {p1, v1, v3}, Lyc4;->d1(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, v1, v3}, Lmu4;->z0(Landroid/os/Parcel;ILjava/lang/String;)V
 
     .line 21
     .line 22
@@ -583,25 +596,25 @@
     const/4 v1, 0x3
 
     .line 24
-    iget-object v3, p0, Lcom/google/android/gms/common/api/Status;->S:Landroid/app/PendingIntent;
+    iget-object v3, p0, Lcom/google/android/gms/common/api/Status;->Z:Landroid/app/PendingIntent;
 
     .line 25
     .line 26
-    invoke-static {p1, v1, v3, p2}, Lyc4;->c1(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
+    invoke-static {p1, v1, v3, p2}, Lmu4;->y0(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 
     .line 27
     .line 28
     .line 29
-    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->T:Los0;
+    iget-object p0, p0, Lcom/google/android/gms/common/api/Status;->c0:Lwz0;
 
     .line 30
     .line 31
-    invoke-static {p1, v2, v1, p2}, Lyc4;->c1(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
+    invoke-static {p1, v2, p0, p2}, Lmu4;->y0(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 
     .line 32
     .line 33
     .line 34
-    invoke-static {p1, v0}, Lyc4;->h1(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lmu4;->F0(Landroid/os/Parcel;I)V
 
     .line 35
     .line 36

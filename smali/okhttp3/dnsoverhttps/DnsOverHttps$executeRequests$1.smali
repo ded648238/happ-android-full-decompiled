@@ -1,6 +1,6 @@
 .class public final Lokhttp3/dnsoverhttps/DnsOverHttps$executeRequests$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/Callback;
@@ -27,7 +27,7 @@
         "call",
         "Ljava/io/IOException;",
         "e",
-        "Lbh7;",
+        "Lr98;",
         "onFailure",
         "(Lokhttp3/Call;Ljava/io/IOException;)V",
         "Lokhttp3/Response;",
@@ -155,11 +155,11 @@
     monitor-exit p1
 
     .line 14
-    iget-object p1, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$executeRequests$1;->$latch:Ljava/util/concurrent/CountDownLatch;
+    iget-object p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$executeRequests$1;->$latch:Ljava/util/concurrent/CountDownLatch;
 
     .line 15
     .line 16
-    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
+    invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     .line 17
     .line 18
@@ -168,13 +168,13 @@
 
     .line 20
     :catchall_0
-    move-exception p2
+    move-exception p0
 
     .line 21
     monitor-exit p1
 
     .line 22
-    throw p2
+    throw p0
 .end method
 
 .method public onResponse(Lokhttp3/Call;Lokhttp3/Response;)V
@@ -212,11 +212,11 @@
     .line 16
     .line 17
     .line 18
-    iget-object p1, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$executeRequests$1;->$latch:Ljava/util/concurrent/CountDownLatch;
+    iget-object p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$executeRequests$1;->$latch:Ljava/util/concurrent/CountDownLatch;
 
     .line 19
     .line 20
-    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
+    invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     .line 21
     .line 22

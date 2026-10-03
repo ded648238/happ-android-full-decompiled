@@ -1,65 +1,8 @@
-.class public Ltp7;
-.super Lrp7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# static fields
-.field public static Z:Z = true
+.class public interface abstract Ltp7;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
-.method public d(Landroid/view/View;I)V
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 2
-    .line 3
-    const/16 v1, 0x1c
-
-    .line 4
-    .line 5
-    if-ne v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    invoke-super {p0, p1, p2}, Ls27;->d(Landroid/view/View;I)V
-
-    .line 8
-    .line 9
-    .line 10
-    return-void
-
-    .line 11
-    :cond_0
-    sget-boolean v0, Ltp7;->Z:Z
-
-    .line 12
-    .line 13
-    if-eqz v0, :cond_1
-
-    .line 14
-    .line 15
-    :try_start_0
-    invoke-static {p1, p2}, Lsp7;->a(Landroid/view/View;I)V
-    :try_end_0
-    .catch Ljava/lang/NoSuchMethodError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 16
-    .line 17
-    .line 18
-    return-void
-
-    .line 19
-    :catch_0
-    const/4 p1, 0x0
-
-    .line 20
-    sput-boolean p1, Ltp7;->Z:Z
-
-    .line 21
-    .line 22
-    :cond_1
-    return-void
+.method public abstract close()V
 .end method

@@ -1,11 +1,19 @@
 package defpackage;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class a13 implements b13 {
+    public static final a13 a = new a13();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Retention(RetentionPolicy.RUNTIME)
-public @interface a13 {
-    boolean value() default true;
+    public final boolean equals(Object obj) {
+        return this == obj || (obj instanceof a13);
+    }
+
+    public final int hashCode() {
+        return 541694519;
+    }
+
+    public final String toString() {
+        return "UnknownDeeplinkAction";
+    }
 }

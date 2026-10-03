@@ -1,11 +1,11 @@
 .class public final Lokhttp3/internal/concurrent/TaskQueue$schedule$2;
 .super Lokhttp3/internal/concurrent/Task;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/internal/concurrent/TaskQueue;->schedule(Ljava/lang/String;JLg72;)V
+    value = Lokhttp3/internal/concurrent/TaskQueue;->schedule(Ljava/lang/String;JLji2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,29 +35,29 @@
 
 
 # instance fields
-.field final synthetic $block:Lg72;
+.field final synthetic $block:Lji2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lg72;"
+            "Lji2;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lg72;)V
+.method public constructor <init>(Ljava/lang/String;Lji2;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
-            "Lg72;",
+            "Lji2;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p2, p0, Lokhttp3/internal/concurrent/TaskQueue$schedule$2;->$block:Lg72;
+    iput-object p2, p0, Lokhttp3/internal/concurrent/TaskQueue$schedule$2;->$block:Lji2;
 
     .line 2
     .line 3
@@ -70,7 +70,7 @@
     const/4 v1, 0x0
 
     .line 6
-    invoke-direct {p0, p1, v1, p2, v0}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;ZILj31;)V
+    invoke-direct {p0, p1, v1, p2, v0}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;ZILib1;)V
 
     .line 7
     .line 8
@@ -84,23 +84,23 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskQueue$schedule$2;->$block:Lg72;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskQueue$schedule$2;->$block:Lji2;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lg72;->invoke()Ljava/lang/Object;
+    invoke-interface {p0}, Lji2;->invoke()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Ljava/lang/Number;
+    check-cast p0, Ljava/lang/Number;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+    invoke-virtual {p0}, Ljava/lang/Number;->longValue()J
 
     .line 10
     .line 11

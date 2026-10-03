@@ -1,10 +1,10 @@
-.class public abstract Lrv4;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lrv4;
+.super Lbw5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final a:Lqv4;
+.field public static final Z:Lrv4;
 
 
 # direct methods
@@ -12,48 +12,59 @@
     .locals 2
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    new-instance v0, Lrv4;
 
     .line 2
     .line 3
-    const/16 v1, 0x18
+    invoke-direct {v0}, Ljava/lang/Exception;-><init>()V
 
     .line 4
     .line 5
-    if-lt v0, v1, :cond_0
+    .line 6
+    sput-object v0, Lrv4;->Z:Lrv4;
+
+    .line 7
+    .line 8
+    sget-object v1, Lbw5;->Y:[Ljava/lang/StackTraceElement;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public static a()Lrv4;
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lbw5;->X:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v0, Lrv4;
 
     .line 6
     .line 7
-    new-instance v0, Lqd;
+    invoke-direct {v0}, Ljava/lang/Exception;-><init>()V
 
     .line 8
     .line 9
-    invoke-direct {v0}, Lqd;-><init>()V
-
     .line 10
+    return-object v0
+
     .line 11
-    .line 12
-    goto :goto_0
-
-    .line 13
     :cond_0
-    new-instance v0, Lkv6;
+    sget-object v0, Lrv4;->Z:Lrv4;
 
-    .line 14
-    .line 15
-    const/16 v1, 0x17
-
-    .line 16
-    .line 17
-    invoke-direct {v0, v1}, Lkv6;-><init>(I)V
-
-    .line 18
-    .line 19
-    .line 20
-    :goto_0
-    sput-object v0, Lrv4;->a:Lqv4;
-
-    .line 21
-    .line 22
-    return-void
+    .line 12
+    .line 13
+    return-object v0
 .end method

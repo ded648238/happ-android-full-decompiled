@@ -1,25 +1,14 @@
-.class public final synthetic Lvb0;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.class public final Lvb0;
+.super Lr2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:Lha0;
-
-.field public final synthetic R:Landroid/hardware/camera2/CameraCaptureSession;
-
-.field public final synthetic S:Landroid/hardware/camera2/CaptureRequest;
-
-.field public final synthetic T:J
-
-.field public final synthetic U:J
+.field public final synthetic g0:Lwb0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lha0;Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;JJ)V
+.method public constructor <init>(Lwb0;)V
     .locals 0
 
     .line 1
@@ -28,70 +17,89 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lvb0;->Q:Lha0;
+    iput-object p1, p0, Lvb0;->g0:Lwb0;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lvb0;->R:Landroid/hardware/camera2/CameraCaptureSession;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lvb0;->S:Landroid/hardware/camera2/CaptureRequest;
-
-    .line 9
-    .line 10
-    iput-wide p4, p0, Lvb0;->T:J
-
-    .line 11
-    .line 12
-    iput-wide p6, p0, Lvb0;->U:J
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 8
+.method public final h()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lvb0;->Q:Lha0;
+    iget-object p0, p0, Lvb0;->g0:Lwb0;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lha0;->b:Ljava/lang/Object;
+    iget-object p0, p0, Lwb0;->X:Ljava/lang/ref/WeakReference;
 
     .line 4
     .line 5
-    move-object v1, v0
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     .line 6
-    check-cast v1, Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
-
     .line 7
     .line 8
-    iget-object v2, p0, Lvb0;->R:Landroid/hardware/camera2/CameraCaptureSession;
+    move-result-object p0
 
     .line 9
+    check-cast p0, Lsb0;
+
     .line 10
-    iget-object v3, p0, Lvb0;->S:Landroid/hardware/camera2/CaptureRequest;
-
     .line 11
+    if-nez p0, :cond_0
+
     .line 12
-    iget-wide v4, p0, Lvb0;->T:J
-
     .line 13
-    .line 14
-    iget-wide v6, p0, Lvb0;->U:J
+    const-string p0, "Completer object has been garbage collected, future will fail soon"
 
+    .line 14
     .line 15
+    return-object p0
+
     .line 16
-    invoke-virtual/range {v1 .. v7}, Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;->onCaptureStarted(Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;JJ)V
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 17
     .line 18
+    const-string v1, "tag=["
+
     .line 19
-    return-void
+    .line 20
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    iget-object p0, p0, Lsb0;->a:Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    const-string p0, "]"
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p0
+
+    .line 37
+    return-object p0
 .end method

@@ -1,14 +1,14 @@
 .class public final Lio/sentry/a;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
 .field public final a:[B
 
-.field public final b:Lio/sentry/protocol/k0;
+.field public final b:Lio/sentry/protocol/j0;
 
-.field public final c:Luu1;
+.field public final c:Ljava/util/concurrent/Callable;
 
 .field public final d:Ljava/lang/String;
 
@@ -18,7 +18,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/sentry/protocol/k0;)V
+.method public constructor <init>(Lio/sentry/protocol/j0;)V
     .locals 1
 
     .line 1
@@ -34,11 +34,11 @@
 
     .line 6
     .line 7
-    iput-object p1, p0, Lio/sentry/a;->b:Lio/sentry/protocol/k0;
+    iput-object p1, p0, Lio/sentry/a;->b:Lio/sentry/protocol/j0;
 
     .line 8
     .line 9
-    iput-object v0, p0, Lio/sentry/a;->c:Luu1;
+    iput-object v0, p0, Lio/sentry/a;->c:Ljava/util/concurrent/Callable;
 
     .line 10
     .line 11
@@ -80,7 +80,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Luu1;)V
+.method public constructor <init>(Ljava/util/concurrent/Callable;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
     .line 32
@@ -92,20 +92,16 @@
     iput-object v0, p0, Lio/sentry/a;->a:[B
 
     .line 34
-    iput-object v0, p0, Lio/sentry/a;->b:Lio/sentry/protocol/k0;
+    iput-object v0, p0, Lio/sentry/a;->b:Lio/sentry/protocol/j0;
 
     .line 35
-    iput-object p1, p0, Lio/sentry/a;->c:Luu1;
+    iput-object p1, p0, Lio/sentry/a;->c:Ljava/util/concurrent/Callable;
 
     .line 36
-    const-string p1, "screenshot.png"
-
-    iput-object p1, p0, Lio/sentry/a;->d:Ljava/lang/String;
+    iput-object p2, p0, Lio/sentry/a;->d:Ljava/lang/String;
 
     .line 37
-    const-string p1, "image/png"
-
-    iput-object p1, p0, Lio/sentry/a;->e:Ljava/lang/String;
+    iput-object p3, p0, Lio/sentry/a;->e:Ljava/lang/String;
 
     .line 38
     const-string p1, "event.attachment"
@@ -127,10 +123,10 @@
     const/4 p1, 0x0
 
     .line 26
-    iput-object p1, p0, Lio/sentry/a;->b:Lio/sentry/protocol/k0;
+    iput-object p1, p0, Lio/sentry/a;->b:Lio/sentry/protocol/j0;
 
     .line 27
-    iput-object p1, p0, Lio/sentry/a;->c:Luu1;
+    iput-object p1, p0, Lio/sentry/a;->c:Ljava/util/concurrent/Callable;
 
     .line 28
     iput-object p2, p0, Lio/sentry/a;->d:Ljava/lang/String;

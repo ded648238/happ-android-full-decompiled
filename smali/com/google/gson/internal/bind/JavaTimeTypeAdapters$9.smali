@@ -1,6 +1,6 @@
 .class Lcom/google/gson/internal/bind/JavaTimeTypeAdapters$9;
 .super Lcom/google/gson/internal/bind/TypeAdapters$IntegerFieldsTypeAdapter;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -24,124 +24,67 @@
 
 # virtual methods
 .method public final d([J)Ljava/lang/Object;
-    .locals 7
+    .locals 3
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    aget-wide v0, p1, v0
+    aget-wide v0, p1, p0
 
     .line 3
     .line 4
-    long-to-int v2, v0
+    invoke-static {v0, v1}, Ljava/lang/Math;->toIntExact(J)I
 
     .line 5
-    int-to-long v3, v2
-
     .line 6
-    cmp-long v5, v0, v3
-
     .line 7
-    .line 8
-    if-nez v5, :cond_2
+    move-result p0
 
-    .line 9
-    .line 10
+    .line 8
     const/4 v0, 0x1
 
-    .line 11
+    .line 9
     aget-wide v0, p1, v0
+
+    .line 10
+    .line 11
+    invoke-static {v0, v1}, Ljava/lang/Math;->toIntExact(J)I
 
     .line 12
     .line 13
-    long-to-int v3, v0
-
     .line 14
-    int-to-long v4, v3
+    move-result v0
 
     .line 15
-    cmp-long v6, v0, v4
+    const/4 v1, 0x2
 
     .line 16
+    aget-wide v1, p1, v1
+
     .line 17
-    if-nez v6, :cond_1
-
     .line 18
+    invoke-static {v1, v2}, Ljava/lang/Math;->toIntExact(J)I
+
     .line 19
-    const/4 v0, 0x2
-
     .line 20
-    aget-wide v0, p1, v0
-
     .line 21
+    move-result p1
+
     .line 22
-    long-to-int p1, v0
+    invoke-static {p0, v0, p1}, Lj$/time/Period;->of(III)Lj$/time/Period;
 
     .line 23
-    int-to-long v4, p1
-
     .line 24
-    cmp-long v6, v0, v4
-
     .line 25
+    move-result-object p0
+
     .line 26
-    if-nez v6, :cond_0
-
-    .line 27
-    .line 28
-    invoke-static {v2, v3, p1}, Lj$/time/Period;->of(III)Lj$/time/Period;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object p1
-
-    .line 32
-    return-object p1
-
-    .line 33
-    :cond_0
-    new-instance p1, Ljava/lang/ArithmeticException;
-
-    .line 34
-    .line 35
-    invoke-direct {p1}, Ljava/lang/ArithmeticException;-><init>()V
-
-    .line 36
-    .line 37
-    .line 38
-    throw p1
-
-    .line 39
-    :cond_1
-    new-instance p1, Ljava/lang/ArithmeticException;
-
-    .line 40
-    .line 41
-    invoke-direct {p1}, Ljava/lang/ArithmeticException;-><init>()V
-
-    .line 42
-    .line 43
-    .line 44
-    throw p1
-
-    .line 45
-    :cond_2
-    new-instance p1, Ljava/lang/ArithmeticException;
-
-    .line 46
-    .line 47
-    invoke-direct {p1}, Ljava/lang/ArithmeticException;-><init>()V
-
-    .line 48
-    .line 49
-    .line 50
-    throw p1
+    return-object p0
 .end method
 
 .method public final e(Ljava/lang/Object;)[J
-    .locals 7
+    .locals 6
 
     .line 1
     check-cast p1, Lj$/time/Period;
@@ -153,10 +96,10 @@
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    int-to-long v0, v0
+    int-to-long v0, p0
 
     .line 8
     invoke-virtual {p1}, Lj$/time/Period;->getMonths()I
@@ -164,10 +107,10 @@
     .line 9
     .line 10
     .line 11
-    move-result v2
+    move-result p0
 
     .line 12
-    int-to-long v2, v2
+    int-to-long v2, p0
 
     .line 13
     invoke-virtual {p1}, Lj$/time/Period;->getDays()I
@@ -175,39 +118,39 @@
     .line 14
     .line 15
     .line 16
-    move-result p1
+    move-result p0
 
     .line 17
-    int-to-long v4, p1
+    int-to-long p0, p0
 
     .line 18
-    const/4 p1, 0x3
+    const/4 v4, 0x3
 
     .line 19
-    new-array p1, p1, [J
+    new-array v4, v4, [J
 
     .line 20
     .line 21
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
     .line 22
-    aput-wide v0, p1, v6
+    aput-wide v0, v4, v5
 
     .line 23
     .line 24
     const/4 v0, 0x1
 
     .line 25
-    aput-wide v2, p1, v0
+    aput-wide v2, v4, v0
 
     .line 26
     .line 27
     const/4 v0, 0x2
 
     .line 28
-    aput-wide v4, p1, v0
+    aput-wide p0, v4, v0
 
     .line 29
     .line 30
-    return-object p1
+    return-object v4
 .end method

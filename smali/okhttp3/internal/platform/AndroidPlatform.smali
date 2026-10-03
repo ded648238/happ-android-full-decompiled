@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/AndroidPlatform;
 .super Lokhttp3/internal/platform/Platform;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,7 +26,7 @@
         "address",
         "",
         "connectTimeout",
-        "Lbh7;",
+        "Lr98;",
         "connectSocket",
         "(Ljava/net/Socket;Ljava/net/InetSocketAddress;I)V",
         "Ljavax/net/ssl/SSLSocketFactory;",
@@ -114,7 +114,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/platform/AndroidPlatform$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/platform/AndroidPlatform$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -295,7 +295,7 @@
 
     .line 58
     .line 59
-    invoke-static {v5}, Lor;->m0([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {v5}, Lkt;->w0([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     .line 60
     .line 61
@@ -440,14 +440,14 @@
     .line 14
     .line 15
     .line 16
-    move-result-object p1
+    move-result-object p0
 
     .line 17
-    return-object p1
+    return-object p0
 .end method
 
 .method public buildTrustRootIndex(Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/TrustRootIndex;
-    .locals 6
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -468,65 +468,62 @@
 
     .line 9
     .line 10
-    const/4 v2, 0x1
+    const-class v2, Ljava/security/cert/X509Certificate;
 
     .line 11
-    new-array v3, v2, [Ljava/lang/Class;
-
     .line 12
-    .line 13
-    const-class v4, Ljava/security/cert/X509Certificate;
+    filled-new-array {v2}, [Ljava/lang/Class;
 
+    .line 13
     .line 14
     .line 15
-    const/4 v5, 0x0
+    move-result-object v2
 
     .line 16
-    aput-object v4, v3, v5
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 17
     .line 18
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 19
-    .line 20
-    .line 21
     move-result-object v0
 
-    .line 22
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    .line 20
+    const/4 v1, 0x1
 
+    .line 21
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+
+    .line 22
     .line 23
     .line 24
-    .line 25
     new-instance v1, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;
 
+    .line 25
     .line 26
-    .line 27
     invoke-direct {v1, p1, v0}, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;-><init>(Ljavax/net/ssl/X509TrustManager;Ljava/lang/reflect/Method;)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 27
     .line 28
     .line 29
-    .line 30
     return-object v1
 
-    .line 31
+    .line 30
     :catch_0
     invoke-super {p0, p1}, Lokhttp3/internal/platform/Platform;->buildTrustRootIndex(Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/TrustRootIndex;
 
+    .line 31
     .line 32
     .line 33
-    .line 34
-    move-result-object p1
+    move-result-object p0
 
-    .line 35
-    return-object p1
+    .line 34
+    return-object p0
 .end method
 
 .method public configureTlsExtensions(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -549,55 +546,55 @@
     .line 5
     .line 6
     .line 7
-    iget-object v0, p0, Lokhttp3/internal/platform/AndroidPlatform;->socketAdapters:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform;->socketAdapters:Ljava/util/List;
 
     .line 8
     .line 9
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
     :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 14
     .line 15
     .line 16
-    move-result v1
+    move-result v0
 
     .line 17
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
     .line 18
     .line 19
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v1
+    move-result-object v0
 
     .line 23
-    move-object v2, v1
+    move-object v1, v0
 
     .line 24
-    check-cast v2, Lokhttp3/internal/platform/android/SocketAdapter;
+    check-cast v1, Lokhttp3/internal/platform/android/SocketAdapter;
 
     .line 25
     .line 26
-    invoke-interface {v2, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->matchesSocket(Ljavax/net/ssl/SSLSocket;)Z
+    invoke-interface {v1, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->matchesSocket(Ljavax/net/ssl/SSLSocket;)Z
 
     .line 27
     .line 28
     .line 29
-    move-result v2
+    move-result v1
 
     .line 30
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
     .line 31
     .line 32
@@ -605,19 +602,19 @@
 
     .line 33
     :cond_1
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 34
     :goto_0
-    check-cast v1, Lokhttp3/internal/platform/android/SocketAdapter;
+    check-cast v0, Lokhttp3/internal/platform/android/SocketAdapter;
 
     .line 35
     .line 36
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
     .line 37
     .line 38
-    invoke-interface {v1, p1, p2, p3}, Lokhttp3/internal/platform/android/SocketAdapter;->configureTlsExtensions(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V
+    invoke-interface {v0, p1, p2, p3}, Lokhttp3/internal/platform/android/SocketAdapter;->configureTlsExtensions(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V
 
     .line 39
     .line 40
@@ -657,43 +654,43 @@
 
     .line 11
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 12
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 13
     .line 14
-    const/16 p3, 0x1a
+    const/16 p2, 0x1a
 
     .line 15
     .line 16
-    if-ne p2, p3, :cond_0
+    if-ne p1, p2, :cond_0
 
     .line 17
     .line 18
-    new-instance p2, Ljava/io/IOException;
+    new-instance p1, Ljava/io/IOException;
 
     .line 19
     .line 20
-    const-string p3, "Exception in connect"
+    const-string p2, "Exception in connect"
 
     .line 21
     .line 22
-    invoke-direct {p2, p3, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, p2, p0}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 23
     .line 24
     .line 25
-    throw p2
+    throw p1
 
     .line 26
     :cond_0
-    throw p1
+    throw p0
 .end method
 
 .method public getSelectedProtocol(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -701,58 +698,58 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/internal/platform/AndroidPlatform;->socketAdapters:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform;->socketAdapters:Ljava/util/List;
 
     .line 5
     .line 6
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 7
     .line 8
     .line 9
-    move-result-object v0
+    move-result-object p0
 
     .line 10
     :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 11
     .line 12
     .line 13
-    move-result v1
+    move-result v0
 
     .line 14
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 15
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
     .line 16
     .line 17
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v1
+    move-result-object v0
 
     .line 21
-    move-object v3, v1
+    move-object v2, v0
 
     .line 22
-    check-cast v3, Lokhttp3/internal/platform/android/SocketAdapter;
+    check-cast v2, Lokhttp3/internal/platform/android/SocketAdapter;
 
     .line 23
     .line 24
-    invoke-interface {v3, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->matchesSocket(Ljavax/net/ssl/SSLSocket;)Z
+    invoke-interface {v2, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->matchesSocket(Ljavax/net/ssl/SSLSocket;)Z
 
     .line 25
     .line 26
     .line 27
-    move-result v3
+    move-result v2
 
     .line 28
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     .line 29
     .line 30
@@ -760,35 +757,35 @@
 
     .line 31
     :cond_1
-    move-object v1, v2
+    move-object v0, v1
 
     .line 32
     :goto_0
-    check-cast v1, Lokhttp3/internal/platform/android/SocketAdapter;
+    check-cast v0, Lokhttp3/internal/platform/android/SocketAdapter;
 
     .line 33
     .line 34
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
     .line 35
     .line 36
-    invoke-interface {v1, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->getSelectedProtocol(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
+    invoke-interface {v0, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->getSelectedProtocol(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
 
     .line 37
     .line 38
     .line 39
-    move-result-object p1
+    move-result-object p0
 
     .line 40
-    return-object p1
+    return-object p0
 
     .line 41
     :cond_2
-    return-object v2
+    return-object v1
 .end method
 
 .method public getStackTraceForCloseable(Ljava/lang/String;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -796,23 +793,23 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/internal/platform/AndroidPlatform;->closeGuard:Lokhttp3/internal/platform/android/CloseGuard;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform;->closeGuard:Lokhttp3/internal/platform/android/CloseGuard;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Lokhttp3/internal/platform/android/CloseGuard;->createAndOpen(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lokhttp3/internal/platform/android/CloseGuard;->createAndOpen(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public isCleartextTrafficPermitted(Ljava/lang/String;)Z
-    .locals 2
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -820,70 +817,23 @@
     .line 2
     .line 3
     .line 4
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-static {}, Landroid/security/NetworkSecurityPolicy;->getInstance()Landroid/security/NetworkSecurityPolicy;
 
     .line 5
     .line 6
-    const/16 v1, 0x18
-
     .line 7
+    move-result-object p0
+
     .line 8
-    if-lt v0, v1, :cond_0
+    invoke-virtual {p0, p1}, Landroid/security/NetworkSecurityPolicy;->isCleartextTrafficPermitted(Ljava/lang/String;)Z
 
     .line 9
     .line 10
-    invoke-static {}, Landroid/security/NetworkSecurityPolicy;->getInstance()Landroid/security/NetworkSecurityPolicy;
-
     .line 11
+    move-result p0
+
     .line 12
-    .line 13
-    move-result-object v0
-
-    .line 14
-    invoke-virtual {v0, p1}, Landroid/security/NetworkSecurityPolicy;->isCleartextTrafficPermitted(Ljava/lang/String;)Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result p1
-
-    .line 18
-    return p1
-
-    .line 19
-    :cond_0
-    const/16 p1, 0x17
-
-    .line 20
-    .line 21
-    if-lt v0, p1, :cond_1
-
-    .line 22
-    .line 23
-    invoke-static {}, Landroid/security/NetworkSecurityPolicy;->getInstance()Landroid/security/NetworkSecurityPolicy;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object p1
-
-    .line 27
-    invoke-virtual {p1}, Landroid/security/NetworkSecurityPolicy;->isCleartextTrafficPermitted()Z
-
-    .line 28
-    .line 29
-    .line 30
-    move-result p1
-
-    .line 31
-    return p1
-
-    .line 32
-    :cond_1
-    const/4 p1, 0x1
-
-    .line 33
-    return p1
+    return p0
 .end method
 
 .method public logCloseableLeak(Ljava/lang/String;Ljava/lang/Object;)V
@@ -939,7 +889,7 @@
 .end method
 
 .method public trustManager(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -947,58 +897,58 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/internal/platform/AndroidPlatform;->socketAdapters:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform;->socketAdapters:Ljava/util/List;
 
     .line 5
     .line 6
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 7
     .line 8
     .line 9
-    move-result-object v0
+    move-result-object p0
 
     .line 10
     :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 11
     .line 12
     .line 13
-    move-result v1
+    move-result v0
 
     .line 14
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 15
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
     .line 16
     .line 17
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v1
+    move-result-object v0
 
     .line 21
-    move-object v3, v1
+    move-object v2, v0
 
     .line 22
-    check-cast v3, Lokhttp3/internal/platform/android/SocketAdapter;
+    check-cast v2, Lokhttp3/internal/platform/android/SocketAdapter;
 
     .line 23
     .line 24
-    invoke-interface {v3, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->matchesSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)Z
+    invoke-interface {v2, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->matchesSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)Z
 
     .line 25
     .line 26
     .line 27
-    move-result v3
+    move-result v2
 
     .line 28
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     .line 29
     .line 30
@@ -1006,29 +956,29 @@
 
     .line 31
     :cond_1
-    move-object v1, v2
+    move-object v0, v1
 
     .line 32
     :goto_0
-    check-cast v1, Lokhttp3/internal/platform/android/SocketAdapter;
+    check-cast v0, Lokhttp3/internal/platform/android/SocketAdapter;
 
     .line 33
     .line 34
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
     .line 35
     .line 36
-    invoke-interface {v1, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->trustManager(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
+    invoke-interface {v0, p1}, Lokhttp3/internal/platform/android/SocketAdapter;->trustManager(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
 
     .line 37
     .line 38
     .line 39
-    move-result-object p1
+    move-result-object p0
 
     .line 40
-    return-object p1
+    return-object p0
 
     .line 41
     :cond_2
-    return-object v2
+    return-object v1
 .end method

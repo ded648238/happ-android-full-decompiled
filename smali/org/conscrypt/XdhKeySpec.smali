@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/XdhKeySpec;
 .super Ljava/security/spec/EncodedKeySpec;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -85,7 +85,7 @@
     .line 28
     .line 29
     .line 30
-    move-result-object v1
+    move-result-object p0
 
     .line 31
     invoke-virtual {p1}, Ljava/security/spec/EncodedKeySpec;->getEncoded()[B
@@ -96,15 +96,15 @@
     move-result-object p1
 
     .line 35
-    invoke-static {v1, p1}, Ljava/util/Arrays;->equals([B[B)Z
+    invoke-static {p0, p1}, Ljava/util/Arrays;->equals([B[B)Z
 
     .line 36
     .line 37
     .line 38
-    move-result p1
+    move-result p0
 
     .line 39
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 40
     .line 41
@@ -116,18 +116,18 @@
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "raw"
+    const-string p0, "raw"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getKey()[B
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Ljava/security/spec/EncodedKeySpec;->getEncoded()[B
@@ -135,14 +135,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 4
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/XdhKeySpec;->getFormat()Ljava/lang/String;
@@ -158,53 +158,40 @@
     .line 6
     .line 7
     .line 8
-    move-result-object v1
+    move-result-object p0
 
     .line 9
-    invoke-static {v1}, Ljava/util/Arrays;->hashCode([B)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([B)I
 
     .line 10
     .line 11
     .line 12
-    move-result v1
+    move-result p0
 
     .line 13
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 14
     .line 15
     .line 16
-    move-result-object v1
+    move-result-object p0
 
     .line 17
-    const/4 v2, 0x2
+    filled-new-array {v0, p0}, [Ljava/lang/Object;
 
     .line 18
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 19
     .line 20
-    const/4 v3, 0x0
+    move-result-object p0
 
     .line 21
-    aput-object v0, v2, v3
+    invoke-static {p0}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 22
     .line 23
-    const/4 v0, 0x1
-
     .line 24
-    aput-object v1, v2, v0
+    move-result p0
 
     .line 25
-    .line 26
-    invoke-static {v2}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v0
-
-    .line 30
-    return v0
+    return p0
 .end method

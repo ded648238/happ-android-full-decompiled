@@ -1,16 +1,25 @@
 package defpackage;
 
-import android.app.LocaleManager;
-import android.os.LocaleList;
+import com.google.gson.a;
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLSession;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class xm {
-    public static LocaleList a(Object obj) {
-        return ((LocaleManager) obj).getApplicationLocales();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class xm implements HostnameVerifier {
+    public final /* synthetic */ int a;
+
+    public /* synthetic */ xm(int i) {
+        this.a = i;
     }
 
-    public static void b(Object obj, LocaleList localeList) {
-        ((LocaleManager) obj).setApplicationLocales(localeList);
+    @Override // javax.net.ssl.HostnameVerifier
+    public final boolean verify(String str, SSLSession sSLSession) {
+        switch (this.a) {
+            case 0:
+                a aVar = un.b;
+                break;
+        }
+        return true;
     }
 }

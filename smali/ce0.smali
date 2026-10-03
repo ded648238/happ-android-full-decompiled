@@ -1,45 +1,45 @@
-.class public final synthetic Lce0;
+.class public final Lce0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lhf0;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic a:Ljava/util/concurrent/CountDownLatch;
 
-.field public final synthetic R:Landroidx/work/impl/WorkDatabase;
+.field public final synthetic b:Lku;
 
-.field public final synthetic S:Ljava/lang/String;
+.field public final synthetic c:Landroid/view/Surface;
 
-.field public final synthetic T:Lzu7;
+.field public final synthetic d:Landroid/graphics/SurfaceTexture;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/work/impl/WorkDatabase;Ljava/lang/String;Lzu7;I)V
+.method public constructor <init>(Ljava/util/concurrent/CountDownLatch;Lku;Landroid/view/Surface;Landroid/graphics/SurfaceTexture;)V
     .locals 0
 
     .line 1
-    iput p4, p0, Lce0;->Q:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p1, p0, Lce0;->R:Landroidx/work/impl/WorkDatabase;
-
     .line 4
+    iput-object p1, p0, Lce0;->a:Ljava/util/concurrent/CountDownLatch;
+
     .line 5
-    iput-object p2, p0, Lce0;->S:Ljava/lang/String;
-
     .line 6
+    iput-object p2, p0, Lce0;->b:Lku;
+
     .line 7
-    iput-object p3, p0, Lce0;->T:Lzu7;
-
     .line 8
-    .line 9
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p3, p0, Lce0;->c:Landroid/view/Surface;
 
+    .line 9
     .line 10
+    iput-object p4, p0, Lce0;->d:Landroid/graphics/SurfaceTexture;
+
     .line 11
     .line 12
     return-void
@@ -47,397 +47,347 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 6
+.method public final a()V
+    .locals 0
 
     .line 1
-    iget v0, p0, Lce0;->Q:I
+    return-void
+.end method
+
+.method public final b()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final c(Lif0;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final d(Lif0;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Lce0;->b:Lku;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    invoke-virtual {p1}, Lku;->a()Z
 
     .line 4
-    const/4 v2, 0x1
-
     .line 5
-    iget-object v3, p0, Lce0;->T:Lzu7;
-
     .line 6
+    move-result p1
+
     .line 7
-    iget-object v4, p0, Lce0;->S:Ljava/lang/String;
+    if-eqz p1, :cond_0
 
     .line 8
     .line 9
-    iget-object v5, p0, Lce0;->R:Landroidx/work/impl/WorkDatabase;
+    iget-object p1, p0, Lce0;->c:Landroid/view/Surface;
 
     .line 10
     .line 11
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {p1}, Landroid/view/Surface;->release()V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v5}, Landroidx/work/impl/WorkDatabase;->v()Lpv7;
+    iget-object p0, p0, Lce0;->d:Landroid/graphics/SurfaceTexture;
 
     .line 15
     .line 16
+    invoke-virtual {p0}, Landroid/graphics/SurfaceTexture;->release()V
+
     .line 17
+    .line 18
+    .line 19
+    :cond_0
+    return-void
+.end method
+
+.method public final e(Lif0;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final f(Lif0;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final g(Lif0;)V
+    .locals 5
+
+    .line 1
+    instance-of v0, p1, Ljava/lang/AutoCloseable;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
+
+    .line 6
+    .line 7
+    .line 8
+    goto :goto_1
+
+    .line 9
+    :cond_0
+    instance-of v0, p1, Ljava/util/concurrent/ExecutorService;
+
+    .line 10
+    .line 11
+    if-eqz v0, :cond_4
+
+    .line 12
+    .line 13
+    check-cast p1, Ljava/util/concurrent/ExecutorService;
+
+    .line 14
+    .line 15
+    invoke-static {}, Ljava/util/concurrent/ForkJoinPool;->commonPool()Ljava/util/concurrent/ForkJoinPool;
+
+    .line 16
+    .line 17
+    .line 18
     move-result-object v0
 
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 19
+    if-ne p1, v0, :cond_1
+
     .line 20
     .line 21
-    const-string v5, "SELECT id FROM workspec WHERE state NOT IN (2, 3, 5) AND id IN (SELECT work_spec_id FROM worktag WHERE tag=?)"
+    goto :goto_1
 
     .line 22
-    .line 23
-    invoke-static {v2, v5}, Ldp5;->i(ILjava/lang/String;)Ldp5;
+    :cond_1
+    invoke-interface {p1}, Ljava/util/concurrent/ExecutorService;->isTerminated()Z
 
+    .line 23
     .line 24
     .line 25
+    move-result v0
+
     .line 26
-    move-result-object v5
+    if-nez v0, :cond_7
 
     .line 27
-    invoke-virtual {v5, v2, v4}, Ldp5;->p(ILjava/lang/String;)V
-
     .line 28
+    invoke-interface {p1}, Ljava/util/concurrent/ExecutorService;->shutdown()V
+
     .line 29
     .line 30
-    iget-object v0, v0, Lpv7;->R:Ljava/lang/Object;
-
     .line 31
+    const/4 v1, 0x0
+
     .line 32
-    check-cast v0, Landroidx/work/impl/WorkDatabase_Impl;
+    :cond_2
+    :goto_0
+    if-nez v0, :cond_3
 
     .line 33
     .line 34
-    invoke-virtual {v0}, Landroidx/work/impl/WorkDatabase;->b()V
+    :try_start_0
+    sget-object v2, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
     .line 35
     .line 36
-    .line 37
-    invoke-virtual {v0, v5}, Landroidx/work/impl/WorkDatabase;->m(Lrs6;)Landroid/database/Cursor;
+    const-wide/16 v3, 0x1
 
+    .line 37
     .line 38
+    invoke-interface {p1, v3, v4, v2}, Ljava/util/concurrent/ExecutorService;->awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
+
     .line 39
     .line 40
-    move-result-object v0
-
     .line 41
-    :try_start_0
-    new-instance v2, Ljava/util/ArrayList;
+    move-result v0
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 42
+    goto :goto_0
+
     .line 43
-    invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
+    :catch_0
+    if-nez v1, :cond_2
 
     .line 44
     .line 45
+    invoke-interface {p1}, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
+
     .line 46
-    move-result v4
-
     .line 47
-    invoke-direct {v2, v4}, Ljava/util/ArrayList;-><init>(I)V
-
     .line 48
+    const/4 v1, 0x1
+
     .line 49
+    goto :goto_0
+
     .line 50
-    :goto_0
-    invoke-interface {v0}, Landroid/database/Cursor;->moveToNext()Z
+    :cond_3
+    if-eqz v1, :cond_7
 
     .line 51
     .line 52
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
     .line 53
-    move-result v4
-
     .line 54
-    if-eqz v4, :cond_0
-
     .line 55
+    move-result-object p1
+
     .line 56
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
 
     .line 57
     .line 58
     .line 59
-    move-result-object v4
+    goto :goto_1
 
     .line 60
-    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :cond_4
+    instance-of v0, p1, Landroid/content/res/TypedArray;
 
     .line 61
     .line 62
-    .line 63
-    goto :goto_0
+    if-eqz v0, :cond_5
 
+    .line 63
     .line 64
-    :catchall_0
-    move-exception v1
+    check-cast p1, Landroid/content/res/TypedArray;
 
     .line 65
-    goto :goto_2
-
     .line 66
-    :cond_0
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 67
     .line 68
     .line 69
-    invoke-virtual {v5}, Ldp5;->l()V
+    goto :goto_1
 
     .line 70
+    :cond_5
+    instance-of v0, p1, Landroid/media/MediaMetadataRetriever;
+
     .line 71
     .line 72
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    if-eqz v0, :cond_6
 
     .line 73
     .line 74
-    .line 75
-    move-result-object v0
+    check-cast p1, Landroid/media/MediaMetadataRetriever;
 
+    .line 75
     .line 76
-    :goto_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {p1}, Landroid/media/MediaMetadataRetriever;->release()V
 
     .line 77
     .line 78
     .line 79
-    move-result v1
+    goto :goto_1
 
     .line 80
-    if-eqz v1, :cond_1
+    :cond_6
+    instance-of v0, p1, Landroid/media/MediaDrm;
 
     .line 81
     .line 82
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    if-eqz v0, :cond_8
 
     .line 83
     .line 84
-    .line 85
-    move-result-object v1
+    check-cast p1, Landroid/media/MediaDrm;
 
+    .line 85
     .line 86
-    check-cast v1, Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/media/MediaDrm;->release()V
 
     .line 87
     .line 88
-    invoke-static {v3, v1}, Lhc7;->r(Lzu7;Ljava/lang/String;)V
-
     .line 89
+    :cond_7
+    :goto_1
+    iget-object p0, p0, Lce0;->a:Ljava/util/concurrent/CountDownLatch;
+
     .line 90
     .line 91
-    goto :goto_1
+    invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     .line 92
-    :cond_1
+    .line 93
+    .line 94
     return-void
 
-    .line 93
-    :goto_2
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    .line 94
     .line 95
-    .line 96
-    invoke-virtual {v5}, Ldp5;->l()V
+    :cond_8
+    invoke-static {}, Lq05;->f()V
 
+    .line 96
     .line 97
     .line 98
-    .line 99
-    throw v1
-
-    .line 100
-    :pswitch_0
-    invoke-virtual {v5}, Landroidx/work/impl/WorkDatabase;->v()Lpv7;
-
-    .line 101
-    .line 102
-    .line 103
-    move-result-object v0
-
-    .line 104
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 105
-    .line 106
-    .line 107
-    const-string v5, "SELECT id FROM workspec WHERE state NOT IN (2, 3, 5) AND id IN (SELECT work_spec_id FROM workname WHERE name=?)"
-
-    .line 108
-    .line 109
-    invoke-static {v2, v5}, Ldp5;->i(ILjava/lang/String;)Ldp5;
-
-    .line 110
-    .line 111
-    .line 112
-    move-result-object v5
-
-    .line 113
-    invoke-virtual {v5, v2, v4}, Ldp5;->p(ILjava/lang/String;)V
-
-    .line 114
-    .line 115
-    .line 116
-    iget-object v0, v0, Lpv7;->R:Ljava/lang/Object;
-
-    .line 117
-    .line 118
-    check-cast v0, Landroidx/work/impl/WorkDatabase_Impl;
-
-    .line 119
-    .line 120
-    invoke-virtual {v0}, Landroidx/work/impl/WorkDatabase;->b()V
-
-    .line 121
-    .line 122
-    .line 123
-    invoke-virtual {v0, v5}, Landroidx/work/impl/WorkDatabase;->m(Lrs6;)Landroid/database/Cursor;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object v0
-
-    .line 127
-    :try_start_1
-    new-instance v2, Ljava/util/ArrayList;
-
-    .line 128
-    .line 129
-    invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
-
-    .line 130
-    .line 131
-    .line 132
-    move-result v4
-
-    .line 133
-    invoke-direct {v2, v4}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 134
-    .line 135
-    .line 136
-    :goto_3
-    invoke-interface {v0}, Landroid/database/Cursor;->moveToNext()Z
-
-    .line 137
-    .line 138
-    .line 139
-    move-result v4
-
-    .line 140
-    if-eqz v4, :cond_2
-
-    .line 141
-    .line 142
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    .line 143
-    .line 144
-    .line 145
-    move-result-object v4
-
-    .line 146
-    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    .line 147
-    .line 148
-    .line 149
-    goto :goto_3
-
-    .line 150
-    :catchall_1
-    move-exception v1
-
-    .line 151
-    goto :goto_5
-
-    .line 152
-    :cond_2
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    .line 153
-    .line 154
-    .line 155
-    invoke-virtual {v5}, Ldp5;->l()V
-
-    .line 156
-    .line 157
-    .line 158
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 159
-    .line 160
-    .line 161
-    move-result-object v0
-
-    .line 162
-    :goto_4
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 163
-    .line 164
-    .line 165
-    move-result v1
-
-    .line 166
-    if-eqz v1, :cond_3
-
-    .line 167
-    .line 168
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 169
-    .line 170
-    .line 171
-    move-result-object v1
-
-    .line 172
-    check-cast v1, Ljava/lang/String;
-
-    .line 173
-    .line 174
-    invoke-static {v3, v1}, Lhc7;->r(Lzu7;Ljava/lang/String;)V
-
-    .line 175
-    .line 176
-    .line 177
-    goto :goto_4
-
-    .line 178
-    :cond_3
     return-void
+.end method
 
-    .line 179
-    :goto_5
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
+.method public final h(Lif0;)V
+    .locals 0
 
-    .line 180
-    .line 181
-    .line 182
-    invoke-virtual {v5}, Ldp5;->l()V
+    .line 1
+    iget-object p1, p0, Lce0;->b:Lku;
 
-    .line 183
-    .line 184
-    .line 185
-    throw v1
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lku;->a()Z
 
-    .line 186
-    nop
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
 
-    .line 187
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 7
+    if-eqz p1, :cond_0
+
+    .line 8
+    .line 9
+    iget-object p1, p0, Lce0;->c:Landroid/view/Surface;
+
+    .line 10
+    .line 11
+    invoke-virtual {p1}, Landroid/view/Surface;->release()V
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object p1, p0, Lce0;->d:Landroid/graphics/SurfaceTexture;
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Landroid/graphics/SurfaceTexture;->release()V
+
+    .line 17
+    .line 18
+    .line 19
+    :cond_0
+    iget-object p0, p0, Lce0;->a:Ljava/util/concurrent/CountDownLatch;
+
+    .line 20
+    .line 21
+    invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
+
+    .line 22
+    .line 23
+    .line 24
+    return-void
 .end method

@@ -1,6 +1,6 @@
 .class public final Lio/sentry/android/core/internal/util/k;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -10,7 +10,7 @@
 # instance fields
 .field public final a:Landroid/content/Context;
 
-.field public final b:Lio/sentry/android/core/n0;
+.field public final b:Lio/sentry/android/core/o0;
 
 .field public final c:Lio/sentry/ILogger;
 
@@ -45,7 +45,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/android/core/n0;)V
+.method public constructor <init>(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/android/core/o0;)V
     .locals 12
 
     .line 1
@@ -158,12 +158,12 @@
 
     .line 55
     .line 56
-    invoke-static {p3, p1}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, p1}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 57
     .line 58
     .line 59
-    iput-object p3, p0, Lio/sentry/android/core/internal/util/k;->b:Lio/sentry/android/core/n0;
+    iput-object p3, p0, Lio/sentry/android/core/internal/util/k;->b:Lio/sentry/android/core/o0;
 
     .line 60
     .line 61
@@ -171,7 +171,7 @@
 
     .line 62
     .line 63
-    invoke-static {p2, p1}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 64
     .line 65
@@ -192,7 +192,7 @@
 
     .line 73
     .line 74
-    invoke-static {v2, p1}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, p1}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 75
     .line 76
@@ -210,7 +210,7 @@
     .locals 10
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/internal/util/k;->b:Lio/sentry/android/core/n0;
+    iget-object v0, p0, Lio/sentry/android/core/internal/util/k;->b:Lio/sentry/android/core/o0;
 
     .line 2
     .line 3
@@ -261,7 +261,7 @@
     const/4 v3, 0x0
 
     .line 25
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 26
     :goto_0
@@ -309,23 +309,23 @@
     move-exception v7
 
     .line 46
-    sget-object v8, Lio/sentry/m5;->ERROR:Lio/sentry/m5;
+    sget-object v8, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
 
     .line 47
     .line 48
-    new-array v9, v1, [Ljava/lang/Object;
+    const-string v9, "Error when trying to check if root file %s exists."
 
     .line 49
     .line 50
-    aput-object v6, v9, v3
+    filled-new-array {v6}, [Ljava/lang/Object;
 
     .line 51
     .line 52
-    const-string v6, "Error when trying to check if root file %s exists."
-
     .line 53
+    move-result-object v6
+
     .line 54
-    invoke-interface {v5, v8, v7, v6, v9}, Lio/sentry/ILogger;->c(Lio/sentry/m5;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {v5, v8, v7, v9, v6}, Lio/sentry/ILogger;->c(Lio/sentry/o5;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 55
     .line 56
@@ -419,14 +419,14 @@
 
     .line 96
     .line 97
-    const/4 v4, 0x1
+    move v4, v1
 
     .line 98
     goto :goto_1
 
     .line 99
     :cond_3
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 100
     :goto_1
@@ -488,7 +488,7 @@
     .line 119
     :goto_3
     :try_start_6
-    sget-object v4, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v4, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 120
     .line 121
@@ -496,7 +496,7 @@
 
     .line 122
     .line 123
-    invoke-interface {v5, v4, v6, v0}, Lio/sentry/ILogger;->d(Lio/sentry/m5;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v5, v4, v6, v0}, Lio/sentry/ILogger;->d(Lio/sentry/o5;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
@@ -517,7 +517,7 @@
 
     .line 132
     :catchall_3
-    move-exception v0
+    move-exception p0
 
     .line 133
     goto :goto_9
@@ -525,7 +525,7 @@
     .line 134
     :catch_1
     :try_start_7
-    sget-object v0, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v0, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 135
     .line 136
@@ -537,7 +537,7 @@
 
     .line 139
     .line 140
-    invoke-interface {v5, v0, v4, v6}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {v5, v0, v4, v6}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_3
 
@@ -553,7 +553,7 @@
     .line 146
     :cond_4
     :goto_5
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 147
     :goto_6
@@ -565,7 +565,7 @@
 
     .line 150
     .line 151
-    invoke-static {v5, v0}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v0}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 152
     .line 153
@@ -586,51 +586,51 @@
 
     .line 161
     .line 162
-    iget-object v2, p0, Lio/sentry/android/core/internal/util/k;->e:[Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/android/core/internal/util/k;->e:[Ljava/lang/String;
 
     .line 163
     .line 164
-    array-length v4, v2
+    array-length v2, p0
 
     .line 165
-    const/4 v5, 0x0
+    move v4, v3
 
     .line 166
     :goto_7
-    if-ge v5, v4, :cond_6
+    if-ge v4, v2, :cond_6
 
     .line 167
     .line 168
-    aget-object v6, v2, v5
+    aget-object v5, p0, v4
 
     .line 169
     .line 170
     :try_start_8
-    sget v7, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 171
     .line 172
-    const/16 v8, 0x21
+    const/16 v7, 0x21
 
     .line 173
     .line 174
-    if-lt v7, v8, :cond_5
+    if-lt v6, v7, :cond_5
 
     .line 175
     .line 176
-    const-wide/16 v7, 0x0
+    const-wide/16 v6, 0x0
 
     .line 177
     .line 178
-    invoke-static {v7, v8}, Landroid/content/pm/PackageManager$PackageInfoFlags;->of(J)Landroid/content/pm/PackageManager$PackageInfoFlags;
+    invoke-static {v6, v7}, Landroid/content/pm/PackageManager$PackageInfoFlags;->of(J)Landroid/content/pm/PackageManager$PackageInfoFlags;
 
     .line 179
     .line 180
     .line 181
-    move-result-object v7
+    move-result-object v6
 
     .line 182
-    invoke-virtual {v0, v6, v7}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)Landroid/content/pm/PackageInfo;
+    invoke-virtual {v0, v5, v6}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)Landroid/content/pm/PackageInfo;
 
     .line 183
     .line 184
@@ -639,7 +639,7 @@
 
     .line 186
     :cond_5
-    invoke-virtual {v0, v6, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-virtual {v0, v5, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
     :try_end_8
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_8 .. :try_end_8} :catch_2
 
@@ -650,7 +650,7 @@
 
     .line 190
     :catch_2
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     .line 191
     .line 192
@@ -658,7 +658,7 @@
 
     .line 193
     :cond_6
-    const/4 v1, 0x0
+    move v1, v3
 
     .line 194
     :cond_7
@@ -677,5 +677,5 @@
     .line 199
     .line 200
     :cond_8
-    throw v0
+    throw p0
 .end method

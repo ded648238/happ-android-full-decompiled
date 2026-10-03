@@ -10,350 +10,375 @@ import android.graphics.RectF;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import defpackage.a95;
-import defpackage.lq7;
-import defpackage.mp7;
-import defpackage.mq7;
-import defpackage.nq7;
-import defpackage.p87;
-import defpackage.q87;
-import defpackage.r87;
-import defpackage.s27;
+import defpackage.at5;
+import defpackage.lk8;
+import defpackage.nl8;
+import defpackage.ol8;
+import defpackage.pl8;
+import defpackage.rk8;
+import defpackage.x08;
+import defpackage.y08;
+import defpackage.z08;
 import java.util.HashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class Visibility extends Transition {
-    public static final String[] t0 = {"android:visibility:visibility", "android:visibility:parent"};
-    public int s0 = 3;
+    public static final String[] C0 = {"android:visibility:visibility", "android:visibility:parent"};
+    public int B0 = 3;
 
-    public static void K(r87 r87Var) {
-        View view = r87Var.b;
+    public static void K(z08 z08Var) {
+        View view = z08Var.b;
         int visibility = view.getVisibility();
-        HashMap map = r87Var.a;
-        map.put("android:visibility:visibility", Integer.valueOf(visibility));
-        map.put("android:visibility:parent", view.getParent());
+        HashMap hashMap = z08Var.a;
+        hashMap.put("android:visibility:visibility", Integer.valueOf(visibility));
+        hashMap.put("android:visibility:parent", view.getParent());
         int[] iArr = new int[2];
         view.getLocationOnScreen(iArr);
-        map.put("android:visibility:screenLocation", iArr);
+        hashMap.put("android:visibility:screenLocation", iArr);
     }
 
-    /* JADX WARN: Code duplicated, block: B:12:0x0052  */
-    /* JADX WARN: Code duplicated, block: B:7:0x002f  */
-    public static nq7 L(r87 r87Var, r87 r87Var2) {
-        nq7 nq7Var = new nq7();
-        nq7Var.a = false;
-        nq7Var.b = false;
-        if (r87Var != null) {
-            HashMap map = r87Var.a;
-            if (map.containsKey("android:visibility:visibility")) {
-                nq7Var.c = ((Integer) map.get("android:visibility:visibility")).intValue();
-                nq7Var.e = (ViewGroup) map.get("android:visibility:parent");
-            } else {
-                nq7Var.c = -1;
-                nq7Var.e = null;
-            }
-        } else {
-            nq7Var.c = -1;
-            nq7Var.e = null;
-        }
-        if (r87Var2 != null) {
-            HashMap map2 = r87Var2.a;
-            if (map2.containsKey("android:visibility:visibility")) {
-                nq7Var.d = ((Integer) map2.get("android:visibility:visibility")).intValue();
-                nq7Var.f = (ViewGroup) map2.get("android:visibility:parent");
-            } else {
-                nq7Var.d = -1;
-                nq7Var.f = null;
-            }
-        } else {
-            nq7Var.d = -1;
-            nq7Var.f = null;
-        }
-        if (r87Var != null && r87Var2 != null) {
-            int i = nq7Var.c;
-            int i2 = nq7Var.d;
-            if (i != i2 || nq7Var.e != nq7Var.f) {
-                if (i != i2) {
-                    if (i == 0) {
-                        nq7Var.b = false;
-                        nq7Var.a = true;
-                        return nq7Var;
-                    }
-                    if (i2 == 0) {
-                        nq7Var.b = true;
-                        nq7Var.a = true;
-                        return nq7Var;
-                    }
-                } else {
-                    if (nq7Var.f == null) {
-                        nq7Var.b = false;
-                        nq7Var.a = true;
-                        return nq7Var;
-                    }
-                    if (nq7Var.e == null) {
-                        nq7Var.b = true;
-                        nq7Var.a = true;
-                        return nq7Var;
+    /* JADX WARN: Removed duplicated region for block: B:12:0x0059 A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:35:0x008c  */
+    /* JADX WARN: Removed duplicated region for block: B:40:0x0097  */
+    /* JADX WARN: Removed duplicated region for block: B:7:0x0035  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static pl8 L(z08 z08Var, z08 z08Var2) {
+        pl8 pl8Var = new pl8();
+        pl8Var.a = false;
+        pl8Var.b = false;
+        if (z08Var != null) {
+            HashMap hashMap = z08Var.a;
+            if (hashMap.containsKey("android:visibility:visibility")) {
+                pl8Var.c = ((Integer) hashMap.get("android:visibility:visibility")).intValue();
+                pl8Var.e = (ViewGroup) hashMap.get("android:visibility:parent");
+                if (z08Var2 != null) {
+                    HashMap hashMap2 = z08Var2.a;
+                    if (hashMap2.containsKey("android:visibility:visibility")) {
+                        pl8Var.d = ((Integer) hashMap2.get("android:visibility:visibility")).intValue();
+                        pl8Var.f = (ViewGroup) hashMap2.get("android:visibility:parent");
+                        if (z08Var == null && z08Var2 != null) {
+                            int i = pl8Var.c;
+                            int i2 = pl8Var.d;
+                            if (i != i2 || pl8Var.e != pl8Var.f) {
+                                if (i != i2) {
+                                    if (i == 0) {
+                                        pl8Var.b = false;
+                                        pl8Var.a = true;
+                                        return pl8Var;
+                                    }
+                                    if (i2 == 0) {
+                                        pl8Var.b = true;
+                                        pl8Var.a = true;
+                                        return pl8Var;
+                                    }
+                                } else {
+                                    if (pl8Var.f == null) {
+                                        pl8Var.b = false;
+                                        pl8Var.a = true;
+                                        return pl8Var;
+                                    }
+                                    if (pl8Var.e == null) {
+                                        pl8Var.b = true;
+                                        pl8Var.a = true;
+                                        return pl8Var;
+                                    }
+                                }
+                            }
+                        } else {
+                            if (z08Var != null && pl8Var.d == 0) {
+                                pl8Var.b = true;
+                                pl8Var.a = true;
+                                return pl8Var;
+                            }
+                            if (z08Var2 == null && pl8Var.c == 0) {
+                                pl8Var.b = false;
+                                pl8Var.a = true;
+                            }
+                        }
+                        return pl8Var;
                     }
                 }
-            }
-        } else {
-            if (r87Var == null && nq7Var.d == 0) {
-                nq7Var.b = true;
-                nq7Var.a = true;
-                return nq7Var;
-            }
-            if (r87Var2 == null && nq7Var.c == 0) {
-                nq7Var.b = false;
-                nq7Var.a = true;
+                pl8Var.d = -1;
+                pl8Var.f = null;
+                if (z08Var == null) {
+                }
+                if (z08Var != null) {
+                }
+                if (z08Var2 == null) {
+                    pl8Var.b = false;
+                    pl8Var.a = true;
+                }
+                return pl8Var;
             }
         }
-        return nq7Var;
+        pl8Var.c = -1;
+        pl8Var.e = null;
+        if (z08Var2 != null) {
+        }
+        pl8Var.d = -1;
+        pl8Var.f = null;
+        if (z08Var == null) {
+        }
+        if (z08Var != null) {
+        }
+        if (z08Var2 == null) {
+        }
+        return pl8Var;
     }
 
     @Override // androidx.transition.Transition
-    public final void c(r87 r87Var) {
-        K(r87Var);
+    public final void c(z08 z08Var) {
+        K(z08Var);
     }
 
-    /* JADX WARN: Code duplicated, block: B:45:0x0097  */
-    /* JADX WARN: Code duplicated, block: B:78:0x01e9  */
-    /* JADX WARN: Code duplicated, block: B:86:0x021e  */
-    /* JADX WARN: Code restructure failed: missing block: B:19:0x0047, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:15:0x0046, code lost:
     
         if (L(m(r3, false), q(r3, false)).a != false) goto L9;
      */
+    /* JADX WARN: Removed duplicated region for block: B:60:0x009f  */
+    /* JADX WARN: Removed duplicated region for block: B:76:0x01e6  */
     @Override // androidx.transition.Transition
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Animator j(ViewGroup viewGroup, r87 r87Var, r87 r87Var2) {
-        View view;
+    public final Animator j(ViewGroup viewGroup, z08 z08Var, z08 z08Var2) {
         boolean z;
+        View view;
         int i;
+        char c;
+        int i2;
         View view2;
         Animator animator;
-        char c;
-        char c2;
         View view3;
+        boolean z2;
         ViewGroup viewGroup2;
-        int i2;
-        Bitmap bitmapCreateBitmap;
-        nq7 nq7VarL = L(r87Var, r87Var2);
-        if (nq7VarL.a && (nq7VarL.e != null || nq7VarL.f != null)) {
-            boolean z2 = true;
-            if (!nq7VarL.b) {
-                int i3 = nq7VarL.d;
-                if ((this.s0 & 2) == 2 && r87Var != null) {
-                    View view4 = r87Var.b;
-                    View view5 = r87Var2 != null ? r87Var2.b : null;
-                    View view6 = (View) view4.getTag(a95.save_overlay_view);
+        int i3;
+        Bitmap bitmap;
+        pl8 L = L(z08Var, z08Var2);
+        if (L.a && (L.e != null || L.f != null)) {
+            int i4 = 1;
+            if (!L.b) {
+                int i5 = L.d;
+                if ((this.B0 & 2) == 2 && z08Var != null) {
+                    View view4 = z08Var.b;
+                    View view5 = z08Var2 != null ? z08Var2.b : null;
+                    View view6 = (View) view4.getTag(at5.save_overlay_view);
                     if (view6 != null) {
-                        i = i3;
+                        i = i5;
+                        c = 1;
+                        i2 = 0;
                         view3 = null;
                         animator = null;
-                        c = 1;
-                        c2 = 0;
                     } else {
                         if (view5 == null || view5.getParent() == null) {
                             if (view5 != null) {
-                                view = null;
                                 z = false;
-                            } else {
-                                view5 = null;
                                 view = null;
-                                z = true;
-                            }
-                        } else if (i3 == 4 || view4 == view5) {
-                            view = view5;
-                            view5 = null;
-                            z = false;
-                        } else {
-                            view5 = null;
-                            view = null;
-                            z = true;
-                        }
-                        if (!z) {
-                            i = i3;
-                            view2 = view;
-                            animator = null;
-                            c = 1;
-                            c2 = 0;
-                            view6 = view5;
-                            view3 = view2;
-                            z2 = false;
-                        } else if (view4.getParent() == null) {
-                            i = i3;
-                            view3 = view;
-                            z2 = false;
-                            animator = null;
-                            c = 1;
-                            c2 = 0;
-                            view6 = view4;
-                        } else {
-                            if (view4.getParent() instanceof View) {
-                                View view7 = (View) view4.getParent();
-                                animator = null;
-                                if (L(q(view7, true), m(view7, true)).a) {
-                                    i = i3;
-                                    view2 = view;
-                                    c = 1;
-                                    c2 = 0;
-                                    int id = view7.getId();
-                                    if (view7.getParent() == null && id != -1) {
-                                        viewGroup.findViewById(id);
-                                    }
-                                } else {
-                                    boolean z3 = q87.a;
-                                    Matrix matrix = new Matrix();
-                                    matrix.setTranslate(-view7.getScrollX(), -view7.getScrollY());
-                                    s27 s27Var = mp7.a;
-                                    s27Var.f(view4, matrix);
-                                    s27Var.h(viewGroup, matrix);
-                                    RectF rectF = new RectF(0.0f, 0.0f, view4.getWidth(), view4.getHeight());
-                                    matrix.mapRect(rectF);
-                                    int iRound = Math.round(rectF.left);
-                                    int iRound2 = Math.round(rectF.top);
-                                    c = 1;
-                                    int iRound3 = Math.round(rectF.right);
-                                    c2 = 0;
-                                    int iRound4 = Math.round(rectF.bottom);
-                                    ImageView imageView = new ImageView(view4.getContext());
-                                    imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                                    boolean zIsAttachedToWindow = view4.isAttachedToWindow();
-                                    boolean z4 = viewGroup != null && viewGroup.isAttachedToWindow();
-                                    if (zIsAttachedToWindow) {
-                                        viewGroup2 = null;
+                                if (z) {
+                                    if (view4.getParent() == null) {
+                                        i = i5;
+                                        c = 1;
+                                        i4 = 0;
                                         i2 = 0;
-                                    } else {
-                                        if (z4) {
-                                            ViewGroup viewGroup3 = (ViewGroup) view4.getParent();
-                                            int iIndexOfChild = viewGroup3.indexOfChild(view4);
-                                            viewGroup.getOverlay().add(view4);
-                                            i2 = iIndexOfChild;
-                                            viewGroup2 = viewGroup3;
-                                        } else {
-                                            i = i3;
+                                        view3 = view;
+                                        animator = null;
+                                        view6 = view4;
+                                    } else if (view4.getParent() instanceof View) {
+                                        View view7 = (View) view4.getParent();
+                                        animator = null;
+                                        if (L(q(view7, true), m(view7, true)).a) {
+                                            i = i5;
+                                            c = 1;
+                                            i2 = 0;
                                             view2 = view;
-                                            bitmapCreateBitmap = null;
-                                        }
-                                        if (bitmapCreateBitmap != null) {
-                                            imageView.setImageBitmap(bitmapCreateBitmap);
-                                        }
-                                        imageView.measure(View.MeasureSpec.makeMeasureSpec(iRound3 - iRound, 1073741824), View.MeasureSpec.makeMeasureSpec(iRound4 - iRound2, 1073741824));
-                                        imageView.layout(iRound, iRound2, iRound3, iRound4);
-                                        view6 = imageView;
-                                    }
-                                    view2 = view;
-                                    int iRound5 = Math.round(rectF.width());
-                                    i = i3;
-                                    int iRound6 = Math.round(rectF.height());
-                                    if (iRound5 <= 0 || iRound6 <= 0) {
-                                        bitmapCreateBitmap = null;
-                                    } else {
-                                        float fMin = Math.min(1.0f, 1048576.0f / (iRound5 * iRound6));
-                                        int iRound7 = Math.round(iRound5 * fMin);
-                                        int iRound8 = Math.round(iRound6 * fMin);
-                                        matrix.postTranslate(-rectF.left, -rectF.top);
-                                        matrix.postScale(fMin, fMin);
-                                        if (q87.a) {
-                                            Picture picture = new Picture();
-                                            Canvas canvasBeginRecording = picture.beginRecording(iRound7, iRound8);
-                                            canvasBeginRecording.concat(matrix);
-                                            view4.draw(canvasBeginRecording);
-                                            picture.endRecording();
-                                            bitmapCreateBitmap = p87.a(picture);
+                                            int id = view7.getId();
+                                            if (view7.getParent() == null && id != -1) {
+                                                viewGroup.findViewById(id);
+                                            }
+                                            view6 = view5;
+                                            i4 = i2;
+                                            view3 = view2;
                                         } else {
-                                            bitmapCreateBitmap = Bitmap.createBitmap(iRound7, iRound8, Bitmap.Config.ARGB_8888);
-                                            Canvas canvas = new Canvas(bitmapCreateBitmap);
-                                            canvas.concat(matrix);
-                                            view4.draw(canvas);
+                                            boolean z3 = y08.a;
+                                            Matrix matrix = new Matrix();
+                                            matrix.setTranslate(-view7.getScrollX(), -view7.getScrollY());
+                                            rk8 rk8Var = lk8.a;
+                                            rk8Var.h(view4, matrix);
+                                            rk8Var.i(viewGroup, matrix);
+                                            RectF rectF = new RectF(0.0f, 0.0f, view4.getWidth(), view4.getHeight());
+                                            matrix.mapRect(rectF);
+                                            int round = Math.round(rectF.left);
+                                            int round2 = Math.round(rectF.top);
+                                            c = 1;
+                                            int round3 = Math.round(rectF.right);
+                                            i2 = 0;
+                                            int round4 = Math.round(rectF.bottom);
+                                            ImageView imageView = new ImageView(view4.getContext());
+                                            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                                            boolean isAttachedToWindow = view4.isAttachedToWindow();
+                                            boolean z4 = viewGroup != null && viewGroup.isAttachedToWindow();
+                                            if (isAttachedToWindow) {
+                                                z2 = isAttachedToWindow;
+                                                viewGroup2 = null;
+                                                i3 = 0;
+                                            } else if (z4) {
+                                                ViewGroup viewGroup3 = (ViewGroup) view4.getParent();
+                                                int indexOfChild = viewGroup3.indexOfChild(view4);
+                                                viewGroup.getOverlay().add(view4);
+                                                z2 = isAttachedToWindow;
+                                                i3 = indexOfChild;
+                                                viewGroup2 = viewGroup3;
+                                            } else {
+                                                i = i5;
+                                                view2 = view;
+                                                bitmap = null;
+                                                if (bitmap != null) {
+                                                    imageView.setImageBitmap(bitmap);
+                                                }
+                                                imageView.measure(View.MeasureSpec.makeMeasureSpec(round3 - round, 1073741824), View.MeasureSpec.makeMeasureSpec(round4 - round2, 1073741824));
+                                                imageView.layout(round, round2, round3, round4);
+                                                view6 = imageView;
+                                                i4 = i2;
+                                                view3 = view2;
+                                            }
+                                            view2 = view;
+                                            int round5 = Math.round(rectF.width());
+                                            i = i5;
+                                            int round6 = Math.round(rectF.height());
+                                            if (round5 <= 0 || round6 <= 0) {
+                                                bitmap = null;
+                                            } else {
+                                                float min = Math.min(1.0f, 1048576.0f / (round5 * round6));
+                                                int round7 = Math.round(round5 * min);
+                                                int round8 = Math.round(round6 * min);
+                                                matrix.postTranslate(-rectF.left, -rectF.top);
+                                                matrix.postScale(min, min);
+                                                if (y08.a) {
+                                                    Picture picture = new Picture();
+                                                    Canvas beginRecording = picture.beginRecording(round7, round8);
+                                                    beginRecording.concat(matrix);
+                                                    view4.draw(beginRecording);
+                                                    picture.endRecording();
+                                                    bitmap = x08.a(picture);
+                                                } else {
+                                                    bitmap = Bitmap.createBitmap(round7, round8, Bitmap.Config.ARGB_8888);
+                                                    Canvas canvas = new Canvas(bitmap);
+                                                    canvas.concat(matrix);
+                                                    view4.draw(canvas);
+                                                }
+                                            }
+                                            if (!z2) {
+                                                viewGroup.getOverlay().remove(view4);
+                                                viewGroup2.addView(view4, i3);
+                                            }
+                                            if (bitmap != null) {
+                                            }
+                                            imageView.measure(View.MeasureSpec.makeMeasureSpec(round3 - round, 1073741824), View.MeasureSpec.makeMeasureSpec(round4 - round2, 1073741824));
+                                            imageView.layout(round, round2, round3, round4);
+                                            view6 = imageView;
+                                            i4 = i2;
+                                            view3 = view2;
                                         }
                                     }
-                                    if (!zIsAttachedToWindow) {
-                                        viewGroup.getOverlay().remove(view4);
-                                        viewGroup2.addView(view4, i2);
-                                    }
-                                    if (bitmapCreateBitmap != null) {
-                                        imageView.setImageBitmap(bitmapCreateBitmap);
-                                    }
-                                    imageView.measure(View.MeasureSpec.makeMeasureSpec(iRound3 - iRound, 1073741824), View.MeasureSpec.makeMeasureSpec(iRound4 - iRound2, 1073741824));
-                                    imageView.layout(iRound, iRound2, iRound3, iRound4);
-                                    view6 = imageView;
                                 }
-                                view3 = view2;
-                                z2 = false;
-                            } else {
-                                i = i3;
+                                i = i5;
+                                c = 1;
+                                i2 = 0;
                                 view2 = view;
                                 animator = null;
-                                c = 1;
-                                c2 = 0;
+                                view6 = view5;
+                                i4 = i2;
+                                view3 = view2;
                             }
+                        } else if (i5 == 4 || view4 == view5) {
+                            z = false;
+                            view = view5;
+                            view5 = null;
+                            if (z) {
+                            }
+                            i = i5;
+                            c = 1;
+                            i2 = 0;
+                            view2 = view;
+                            animator = null;
                             view6 = view5;
+                            i4 = i2;
                             view3 = view2;
-                            z2 = false;
                         }
+                        z = true;
+                        view5 = null;
+                        view = null;
+                        if (z) {
+                        }
+                        i = i5;
+                        c = 1;
+                        i2 = 0;
+                        view2 = view;
+                        animator = null;
+                        view6 = view5;
+                        i4 = i2;
+                        view3 = view2;
                     }
                     if (view6 == null) {
                         if (view3 == null) {
                             return animator;
                         }
                         int visibility = view3.getVisibility();
-                        mp7.b(view3, 0);
-                        s27 s27Var2 = mp7.a;
-                        s27Var2.getClass();
-                        ObjectAnimator objectAnimatorM = ((Fade) this).M(view3, Fade.N(r87Var, 1.0f), 0.0f);
-                        if (objectAnimatorM == null) {
-                            s27Var2.c(view3, Fade.N(r87Var2, 1.0f));
+                        lk8.b(view3, i2);
+                        rk8 rk8Var2 = lk8.a;
+                        rk8Var2.getClass();
+                        ObjectAnimator M = ((Fade) this).M(view3, Fade.N(z08Var, 1.0f), 0.0f);
+                        if (M == null) {
+                            rk8Var2.e(view3, Fade.N(z08Var2, 1.0f));
                         }
-                        if (objectAnimatorM == null) {
-                            mp7.b(view3, visibility);
-                            return objectAnimatorM;
+                        if (M == null) {
+                            lk8.b(view3, visibility);
+                            return M;
                         }
-                        lq7 lq7Var = new lq7(view3, i);
-                        objectAnimatorM.addListener(lq7Var);
-                        n().a(lq7Var);
-                        return objectAnimatorM;
+                        nl8 nl8Var = new nl8(view3, i);
+                        M.addListener(nl8Var);
+                        n().a(nl8Var);
+                        return M;
                     }
-                    if (!z2) {
-                        int[] iArr = (int[]) r87Var.a.get("android:visibility:screenLocation");
-                        int i4 = iArr[c2];
-                        int i5 = iArr[c];
+                    if (i4 == 0) {
+                        int[] iArr = (int[]) z08Var.a.get("android:visibility:screenLocation");
+                        int i6 = iArr[i2];
+                        int i7 = iArr[c];
                         int[] iArr2 = new int[2];
                         viewGroup.getLocationOnScreen(iArr2);
-                        view6.offsetLeftAndRight((i4 - iArr2[c2]) - view6.getLeft());
-                        view6.offsetTopAndBottom((i5 - iArr2[c]) - view6.getTop());
+                        view6.offsetLeftAndRight((i6 - iArr2[i2]) - view6.getLeft());
+                        view6.offsetTopAndBottom((i7 - iArr2[c]) - view6.getTop());
                         viewGroup.getOverlay().add(view6);
                     }
-                    s27 s27Var3 = mp7.a;
-                    s27Var3.getClass();
-                    ObjectAnimator objectAnimatorM2 = ((Fade) this).M(view6, Fade.N(r87Var, 1.0f), 0.0f);
-                    if (objectAnimatorM2 == null) {
-                        s27Var3.c(view6, Fade.N(r87Var2, 1.0f));
+                    rk8 rk8Var3 = lk8.a;
+                    rk8Var3.getClass();
+                    ObjectAnimator M2 = ((Fade) this).M(view6, Fade.N(z08Var, 1.0f), 0.0f);
+                    if (M2 == null) {
+                        rk8Var3.e(view6, Fade.N(z08Var2, 1.0f));
                     }
-                    if (z2) {
-                        return objectAnimatorM2;
+                    if (i4 == 0) {
+                        if (M2 == null) {
+                            viewGroup.getOverlay().remove(view6);
+                            return M2;
+                        }
+                        view4.setTag(at5.save_overlay_view, view6);
+                        ol8 ol8Var = new ol8(this, viewGroup, view6, view4);
+                        M2.addListener(ol8Var);
+                        M2.addPauseListener(ol8Var);
+                        n().a(ol8Var);
                     }
-                    if (objectAnimatorM2 == null) {
-                        viewGroup.getOverlay().remove(view6);
-                        return objectAnimatorM2;
-                    }
-                    view4.setTag(a95.save_overlay_view, view6);
-                    mq7 mq7Var = new mq7(this, viewGroup, view6, view4);
-                    objectAnimatorM2.addListener(mq7Var);
-                    objectAnimatorM2.addPauseListener(mq7Var);
-                    n().a(mq7Var);
-                    return objectAnimatorM2;
+                    return M2;
                 }
-            } else if ((this.s0 & 1) == 1 && r87Var2 != null) {
-                View view8 = r87Var2.b;
-                if (r87Var == null) {
+            } else if ((this.B0 & 1) == 1 && z08Var2 != null) {
+                View view8 = z08Var2.b;
+                if (z08Var == null) {
                     View view9 = (View) view8.getParent();
                 }
-                mp7.a.getClass();
-                return ((Fade) this).M(view8, Fade.N(r87Var, 0.0f), 1.0f);
+                lk8.a.getClass();
+                return ((Fade) this).M(view8, Fade.N(z08Var, 0.0f), 1.0f);
             }
         }
         return null;
@@ -361,20 +386,20 @@ public abstract class Visibility extends Transition {
 
     @Override // androidx.transition.Transition
     public final String[] p() {
-        return t0;
+        return C0;
     }
 
     @Override // androidx.transition.Transition
-    public final boolean s(r87 r87Var, r87 r87Var2) {
-        if (r87Var == null && r87Var2 == null) {
+    public final boolean s(z08 z08Var, z08 z08Var2) {
+        if (z08Var == null && z08Var2 == null) {
             return false;
         }
-        if (r87Var != null && r87Var2 != null && r87Var2.a.containsKey("android:visibility:visibility") != r87Var.a.containsKey("android:visibility:visibility")) {
+        if (z08Var != null && z08Var2 != null && z08Var2.a.containsKey("android:visibility:visibility") != z08Var.a.containsKey("android:visibility:visibility")) {
             return false;
         }
-        nq7 nq7VarL = L(r87Var, r87Var2);
-        if (nq7VarL.a) {
-            return nq7VarL.c == 0 || nq7VarL.d == 0;
+        pl8 L = L(z08Var, z08Var2);
+        if (L.a) {
+            return L.c == 0 || L.d == 0;
         }
         return false;
     }

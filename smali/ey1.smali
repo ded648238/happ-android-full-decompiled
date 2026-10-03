@@ -1,706 +1,651 @@
-.class public final synthetic Ley1;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Ley1;
+.super Lou3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg72;
+.implements Lmi2;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
+
+.field public final synthetic Y:Lgy1;
+
+.field public final synthetic Z:J
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
-
-    .line 9
-    iput p1, p0, Ley1;->Q:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lgy1;JI)V
     .locals 0
 
     .line 1
-    const/16 p1, 0x18
+    iput p4, p0, Ley1;->X:I
 
     .line 2
     .line 3
-    iput p1, p0, Ley1;->Q:I
+    iput-object p1, p0, Ley1;->Y:Lgy1;
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-wide p2, p0, Ley1;->Z:J
 
     .line 6
     .line 7
+    const/4 p1, 0x1
+
     .line 8
+    invoke-direct {p0, p1}, Lou3;-><init>(I)V
+
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
     .line 1
-    iget v0, p0, Ley1;->Q:I
+    iget v0, p0, Ley1;->X:I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    iget-wide v1, p0, Ley1;->Z:J
 
     .line 4
     .line 5
-    .line 6
-    :try_start_0
-    const-class v0, Landroid/view/inputmethod/InputMethodManager;
+    const-wide/16 v3, 0x0
 
+    .line 6
     .line 7
+    const/4 v5, 0x0
+
     .line 8
-    const-string v1, "mServedView"
+    const/4 v6, 0x2
 
     .line 9
+    const/4 v7, 0x1
+
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    iget-object v8, p0, Ley1;->Y:Lgy1;
 
     .line 11
     .line 12
+    packed-switch v0, :pswitch_data_0
+
     .line 13
-    move-result-object v1
-
     .line 14
-    const/4 v2, 0x1
-
     .line 15
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    check-cast p1, Lsx1;
 
     .line 16
     .line 17
+    iget-object v0, v8, Lgy1;->y0:Lr8;
+
     .line 18
-    const-string v3, "mNextServedView"
-
     .line 19
+    if-nez v0, :cond_0
+
     .line 20
-    invoke-virtual {v0, v3}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
     .line 21
+    goto :goto_0
+
     .line 22
+    :cond_0
+    invoke-virtual {v8}, Lgy1;->W0()Lr8;
+
     .line 23
-    move-result-object v3
-
     .line 24
-    invoke-virtual {v3, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
-
     .line 25
-    .line 26
-    .line 27
-    const-string v4, "mH"
+    move-result-object v0
 
+    .line 26
+    if-nez v0, :cond_1
+
+    .line 27
     .line 28
+    goto :goto_0
+
     .line 29
-    invoke-virtual {v0, v4}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    :cond_1
+    iget-object v0, v8, Lgy1;->y0:Lr8;
 
     .line 30
     .line 31
+    invoke-virtual {v8}, Lgy1;->W0()Lr8;
+
     .line 32
-    move-result-object v0
-
     .line 33
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
-
     .line 34
-    .line 35
-    .line 36
-    new-instance v2, Ljm2;
+    move-result-object v1
 
+    .line 35
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 36
     .line 37
     .line 38
-    invoke-direct {v2, v0, v1, v3}, Ljm2;-><init>(Ljava/lang/reflect/Field;Ljava/lang/reflect/Field;Ljava/lang/reflect/Field;)V
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
+    move-result v0
 
     .line 39
+    if-eqz v0, :cond_2
+
     .line 40
     .line 41
     goto :goto_0
 
     .line 42
-    :catch_0
-    sget-object v2, Lim2;->a:Lim2;
+    :cond_2
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     .line 43
     .line 44
-    :goto_0
-    return-object v2
-
     .line 45
-    :pswitch_0
-    sget-object v0, Lsk7;->a:Lzu6;
+    move-result p1
 
     .line 46
-    .line 47
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    if-eqz p1, :cond_4
 
+    .line 47
     .line 48
+    if-eq p1, v7, :cond_4
+
     .line 49
     .line 50
-    move-result-object v0
+    if-ne p1, v6, :cond_3
 
     .line 51
-    check-cast v0, Ljc5;
-
     .line 52
-    .line 53
-    return-object v0
+    iget-object p1, v8, Lgy1;->t0:Ld22;
 
+    .line 53
     .line 54
-    :pswitch_1
-    sget-object v0, Lpe1;->a:Lq41;
+    iget-object p1, p1, Ld22;->a:Ln08;
 
     .line 55
     .line 56
-    sget-object v0, Lpv3;->a:Lzd2;
+    iget-object p1, p1, Ln08;->c:Len0;
 
     .line 57
     .line 58
-    iget-object v0, v0, Lzd2;->V:Lzd2;
+    if-eqz p1, :cond_4
 
     .line 59
     .line 60
-    return-object v0
+    iget-object p1, p1, Len0;->b:Lmi2;
 
     .line 61
-    :pswitch_2
-    sget-object v0, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;->b0:Lzu6;
-
     .line 62
+    new-instance v0, Lz73;
+
     .line 63
-    sget-object v0, Le54;->a:Le54;
-
     .line 64
-    .line 65
-    invoke-static {}, Le54;->l()Lcom/tencent/mmkv/MMKV;
+    iget-wide v2, p0, Ley1;->Z:J
 
+    .line 65
     .line 66
+    invoke-direct {v0, v2, v3}, Lz73;-><init>(J)V
+
     .line 67
     .line 68
-    move-result-object v0
-
     .line 69
-    return-object v0
+    invoke-interface {p1, v0}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 70
-    :pswitch_3
-    new-instance v0, Ljf2;
-
     .line 71
     .line 72
-    invoke-direct {v0}, Ljf2;-><init>()V
+    move-result-object p0
 
     .line 73
+    check-cast p0, Lz73;
+
     .line 74
     .line 75
-    return-object v0
+    iget-wide v4, p0, Lz73;->a:J
 
     .line 76
-    :pswitch_4
-    sget-object v0, Lbh7;->a:Lbh7;
-
     .line 77
+    invoke-virtual {v8}, Lgy1;->W0()Lr8;
+
     .line 78
-    return-object v0
-
     .line 79
-    :pswitch_5
-    new-instance v0, Lwe2;
-
     .line 80
+    move-result-object v1
+
     .line 81
-    const/4 v1, 0x0
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 82
-    invoke-direct {v0, v1}, Lwe2;-><init>(Z)V
-
     .line 83
     .line 84
-    .line 85
-    return-object v0
+    sget-object v6, Lhv3;->X:Lhv3;
 
+    .line 85
     .line 86
-    :pswitch_6
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    invoke-interface/range {v1 .. v6}, Lr8;->a(JJLhv3;)J
 
     .line 87
     .line 88
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
-
     .line 89
-    .line 90
-    .line 91
-    move-result-object v0
+    move-result-wide p0
 
+    .line 90
+    iget-object v1, v8, Lgy1;->y0:Lr8;
+
+    .line 91
     .line 92
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->f()Llq5;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 93
     .line 94
     .line 95
-    move-result-object v0
+    invoke-interface/range {v1 .. v6}, Lr8;->a(JJLhv3;)J
 
     .line 96
-    return-object v0
-
     .line 97
-    :pswitch_7
-    const-string v0, "SETTING"
-
     .line 98
+    move-result-wide v0
+
     .line 99
-    invoke-static {}, Ltv3;->C()Ljava/lang/String;
+    invoke-static {p0, p1, v0, v1}, Lr73;->b(JJ)J
 
     .line 100
     .line 101
     .line 102
-    move-result-object v1
+    move-result-wide v3
 
     .line 103
-    invoke-static {v0, v1}, Lcom/tencent/mmkv/MMKV;->u(Ljava/lang/String;Ljava/lang/String;)Lcom/tencent/mmkv/MMKV;
+    goto :goto_0
 
     .line 104
+    :cond_3
+    invoke-static {}, Lku0;->d()V
+
     .line 105
     .line 106
-    move-result-object v0
-
     .line 107
-    return-object v0
+    goto :goto_1
 
     .line 108
-    :pswitch_8
-    const-string v0, "SERVER_RAW"
+    :cond_4
+    :goto_0
+    new-instance v5, Lr73;
 
     .line 109
     .line 110
-    invoke-static {}, Ltv3;->C()Ljava/lang/String;
+    invoke-direct {v5, v3, v4}, Lr73;-><init>(J)V
 
     .line 111
     .line 112
     .line 113
-    move-result-object v1
+    :goto_1
+    return-object v5
 
     .line 114
-    invoke-static {v0, v1}, Lcom/tencent/mmkv/MMKV;->u(Ljava/lang/String;Ljava/lang/String;)Lcom/tencent/mmkv/MMKV;
+    :pswitch_0
+    check-cast p1, Lsx1;
 
     .line 115
     .line 116
-    .line 117
-    move-result-object v0
+    sget-object p0, Lsx1;->Z:Lsx1;
 
+    .line 117
     .line 118
-    return-object v0
+    if-ne p1, p0, :cond_5
 
     .line 119
-    :pswitch_9
-    const-string v0, "MAIN"
-
     .line 120
-    .line 121
-    invoke-static {}, Ltv3;->C()Ljava/lang/String;
+    iget-object p0, v8, Lgy1;->t0:Ld22;
 
+    .line 121
     .line 122
+    iget-object p0, p0, Ld22;->a:Ln08;
+
     .line 123
     .line 124
-    move-result-object v1
+    iget-object p0, p0, Ln08;->b:Lcz6;
 
     .line 125
-    invoke-static {v0, v1}, Lcom/tencent/mmkv/MMKV;->u(Ljava/lang/String;Ljava/lang/String;)Lcom/tencent/mmkv/MMKV;
-
     .line 126
+    if-nez p0, :cond_5
+
     .line 127
     .line 128
-    move-result-object v0
+    iget-object p0, v8, Lgy1;->u0:Lvv6;
 
     .line 129
-    return-object v0
-
     .line 130
-    :pswitch_a
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    iget-wide v3, p0, Lvv6;->i:J
 
     .line 131
     .line 132
-    new-instance v0, Lia7;
+    goto :goto_4
 
     .line 133
-    .line 134
-    invoke-direct {v0}, Lia7;-><init>()V
+    :cond_5
+    iget-object p0, v8, Lgy1;->s0:Lhy1;
 
+    .line 134
     .line 135
+    iget-object p0, p0, Lhy1;->a:Ln08;
+
     .line 136
     .line 137
-    return-object v0
+    iget-object p0, p0, Ln08;->b:Lcz6;
 
     .line 138
-    :pswitch_b
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
     .line 139
+    if-eqz p0, :cond_6
+
     .line 140
-    new-instance v0, Lpr1;
-
     .line 141
-    .line 142
-    invoke-direct {v0}, Lpr1;-><init>()V
+    iget-object p0, p0, Lcz6;->a:Lmi2;
 
+    .line 142
     .line 143
+    if-eqz p0, :cond_6
+
     .line 144
     .line 145
-    return-object v0
+    new-instance v0, Lz73;
 
     .line 146
-    :pswitch_c
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
     .line 147
-    .line 148
-    new-instance v0, Lgm0;
+    invoke-direct {v0, v1, v2}, Lz73;-><init>(J)V
 
+    .line 148
     .line 149
     .line 150
-    invoke-direct {v0}, Lgm0;-><init>()V
+    invoke-interface {p0, v0}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 151
     .line 152
     .line 153
-    return-object v0
+    move-result-object p0
 
     .line 154
-    :pswitch_d
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    check-cast p0, Lr73;
 
     .line 155
     .line 156
-    new-instance v0, Lyq6;
+    iget-wide v9, p0, Lr73;->a:J
 
     .line 157
     .line 158
-    invoke-direct {v0}, Lyq6;-><init>()V
+    goto :goto_2
 
     .line 159
-    .line 160
-    .line 161
-    return-object v0
+    :cond_6
+    move-wide v9, v3
 
+    .line 160
+    :goto_2
+    iget-object p0, v8, Lgy1;->t0:Ld22;
+
+    .line 161
     .line 162
-    :pswitch_e
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    iget-object p0, p0, Ld22;->a:Ln08;
 
     .line 163
     .line 164
-    new-instance v0, Lvj6;
+    iget-object p0, p0, Ln08;->b:Lcz6;
 
     .line 165
     .line 166
-    invoke-direct {v0}, Lvj6;-><init>()V
+    if-eqz p0, :cond_7
 
     .line 167
     .line 168
-    .line 169
-    return-object v0
+    iget-object p0, p0, Lcz6;->a:Lmi2;
 
+    .line 169
     .line 170
-    :pswitch_f
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    if-eqz p0, :cond_7
 
     .line 171
     .line 172
-    new-instance v0, Lom6;
+    new-instance v0, Lz73;
 
     .line 173
     .line 174
-    invoke-direct {v0}, Lom6;-><init>()V
+    invoke-direct {v0, v1, v2}, Lz73;-><init>(J)V
 
     .line 175
     .line 176
     .line 177
-    return-object v0
+    invoke-interface {p0, v0}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 178
-    :pswitch_10
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
     .line 179
     .line 180
-    new-instance v0, Lne3;
+    move-result-object p0
 
     .line 181
-    .line 182
-    invoke-direct {v0}, Lne3;-><init>()V
+    check-cast p0, Lr73;
 
+    .line 182
     .line 183
+    iget-wide v0, p0, Lr73;->a:J
+
     .line 184
     .line 185
-    return-object v0
+    goto :goto_3
 
     .line 186
-    :pswitch_11
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    :cond_7
+    move-wide v0, v3
 
     .line 187
-    .line 188
-    new-instance v0, Lsh0;
+    :goto_3
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 188
     .line 189
     .line 190
-    invoke-direct {v0}, Lsh0;-><init>()V
+    move-result p0
 
     .line 191
+    if-eqz p0, :cond_9
+
     .line 192
     .line 193
-    return-object v0
+    if-eq p0, v7, :cond_a
 
     .line 194
-    :pswitch_12
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
     .line 195
-    .line 196
-    new-instance v0, Lfk6;
+    if-ne p0, v6, :cond_8
 
+    .line 196
     .line 197
+    move-wide v3, v0
+
     .line 198
-    invoke-direct {v0}, Lfk6;-><init>()V
+    goto :goto_4
 
     .line 199
+    :cond_8
+    invoke-static {}, Lku0;->d()V
+
     .line 200
     .line 201
-    return-object v0
-
     .line 202
-    :pswitch_13
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    goto :goto_5
 
     .line 203
+    :cond_9
+    move-wide v3, v9
+
     .line 204
-    new-instance v0, Lmw0;
+    :cond_a
+    :goto_4
+    new-instance v5, Lr73;
 
     .line 205
     .line 206
-    invoke-direct {v0}, Lmw0;-><init>()V
+    invoke-direct {v5, v3, v4}, Lr73;-><init>(J)V
 
     .line 207
     .line 208
     .line 209
-    return-object v0
+    :goto_5
+    return-object v5
 
     .line 210
-    :pswitch_14
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    :pswitch_1
+    check-cast p1, Lsx1;
 
     .line 211
     .line 212
-    new-instance v0, Lth1;
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
     .line 213
     .line 214
-    invoke-direct {v0}, Lth1;-><init>()V
-
     .line 215
-    .line 216
-    .line 217
-    return-object v0
+    move-result p0
 
+    .line 216
+    if-eqz p0, :cond_c
+
+    .line 217
     .line 218
-    :pswitch_15
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    if-eq p0, v7, :cond_d
 
     .line 219
     .line 220
-    new-instance v0, Llq5;
+    if-ne p0, v6, :cond_b
 
     .line 221
     .line 222
-    invoke-direct {v0}, Llq5;-><init>()V
+    iget-object p0, v8, Lgy1;->t0:Ld22;
 
     .line 223
     .line 224
-    .line 225
-    return-object v0
+    iget-object p0, p0, Ld22;->a:Ln08;
 
+    .line 225
     .line 226
-    :pswitch_16
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    iget-object p0, p0, Ln08;->c:Len0;
 
     .line 227
     .line 228
-    new-instance v0, Lbn2;
+    if-eqz p0, :cond_d
 
     .line 229
     .line 230
-    invoke-direct {v0}, Lbn2;-><init>()V
+    iget-object p0, p0, Len0;->b:Lmi2;
 
     .line 231
     .line 232
-    .line 233
-    return-object v0
+    if-eqz p0, :cond_d
 
+    .line 233
     .line 234
-    :pswitch_17
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    new-instance p1, Lz73;
 
     .line 235
     .line 236
-    new-instance v0, Ly36;
+    invoke-direct {p1, v1, v2}, Lz73;-><init>(J)V
 
     .line 237
     .line 238
-    invoke-direct {v0}, Ly36;-><init>()V
-
     .line 239
+    invoke-interface {p0, p1}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 240
     .line 241
-    return-object v0
-
     .line 242
-    :pswitch_18
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    move-result-object p0
 
     .line 243
+    check-cast p0, Lz73;
+
     .line 244
-    new-instance v0, Lzt1;
-
     .line 245
+    iget-wide v1, p0, Lz73;->a:J
+
     .line 246
-    invoke-direct {v0}, Lzt1;-><init>()V
-
     .line 247
+    goto :goto_6
+
     .line 248
+    :cond_b
+    invoke-static {}, Lku0;->d()V
+
     .line 249
-    return-object v0
-
     .line 250
-    :pswitch_19
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
     .line 251
+    goto :goto_7
+
     .line 252
-    new-instance v0, Lym4;
+    :cond_c
+    iget-object p0, v8, Lgy1;->s0:Lhy1;
 
     .line 253
     .line 254
-    invoke-direct {v0}, Lym4;-><init>()V
+    iget-object p0, p0, Lhy1;->a:Ln08;
 
     .line 255
     .line 256
-    .line 257
-    return-object v0
+    iget-object p0, p0, Ln08;->c:Len0;
 
+    .line 257
     .line 258
-    :pswitch_1a
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    if-eqz p0, :cond_d
 
     .line 259
     .line 260
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
+    iget-object p0, p0, Len0;->b:Lmi2;
 
     .line 261
     .line 262
-    .line 263
-    move-result-object v0
+    if-eqz p0, :cond_d
 
+    .line 263
     .line 264
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->f()Llq5;
+    new-instance p1, Lz73;
 
     .line 265
     .line 266
+    invoke-direct {p1, v1, v2}, Lz73;-><init>(J)V
+
     .line 267
-    move-result-object v0
-
     .line 268
-    return-object v0
-
     .line 269
-    :pswitch_1b
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    invoke-interface {p0, p1}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 270
     .line 271
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
-
     .line 272
-    .line 273
-    .line 274
-    move-result-object v0
+    move-result-object p0
 
+    .line 273
+    check-cast p0, Lz73;
+
+    .line 274
     .line 275
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->d()Lxp3;
+    iget-wide v1, p0, Lz73;->a:J
 
     .line 276
     .line 277
-    .line 278
-    move-result-object v0
+    :cond_d
+    :goto_6
+    new-instance v5, Lz73;
 
+    .line 278
     .line 279
-    return-object v0
+    invoke-direct {v5, v1, v2}, Lz73;-><init>(J)V
 
     .line 280
-    :pswitch_1c
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
     .line 281
     .line 282
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
+    :goto_7
+    return-object v5
 
     .line 283
-    .line 284
-    .line 285
-    move-result-object v0
-
-    .line 286
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->c()Ldy1;
-
-    .line 287
-    .line 288
-    .line 289
-    move-result-object v0
-
-    .line 290
-    return-object v0
-
-    .line 291
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1c
-        :pswitch_1b
-        :pswitch_1a
-        :pswitch_19
-        :pswitch_18
-        :pswitch_17
-        :pswitch_16
-        :pswitch_15
-        :pswitch_14
-        :pswitch_13
-        :pswitch_12
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

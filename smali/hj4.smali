@@ -1,10 +1,10 @@
-.class public final Lhj4;
-.super Laz1;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lhj4;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final d:Lhj4;
+.field public static final a:F
 
 
 # direct methods
@@ -12,38 +12,29 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lhj4;
+    sget v0, Lvq0;->N:F
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    sput v0, Lhj4;->a:F
 
     .line 4
-    const/4 v2, 0x3
-
     .line 5
-    invoke-direct {v0, v1, v1, v2}, Laz1;-><init>(III)V
+    const/high16 v0, 0x41400000    # 12.0f
 
     .line 6
     .line 7
+    new-instance v1, Lo55;
+
     .line 8
-    sput-object v0, Lhj4;->d:Lhj4;
-
     .line 9
+    const/4 v2, 0x0
+
     .line 10
-    return-void
-.end method
+    invoke-direct {v1, v0, v2, v0, v2}, Lo55;-><init>(FFFF)V
 
-
-# virtual methods
-.method public final d(Lvi0;Laq;Lgc6;Llf1;Lhk4;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p3}, Lgc6;->j()V
-
-    .line 2
-    .line 3
-    .line 4
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method

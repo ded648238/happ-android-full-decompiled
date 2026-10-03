@@ -1,13 +1,27 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class xa0 {
-    public final /* synthetic */ int a;
-    public final /* synthetic */ gc0 b;
+import android.graphics.Matrix;
+import android.view.View;
+import android.view.ViewParent;
 
-    public /* synthetic */ xa0(gc0 gc0Var, int i) {
-        this.a = i;
-        this.b = gc0Var;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class xa0 {
+    public static final xa0 a = new xa0();
+
+    public final void a(View view, float[] fArr, Matrix matrix, int[] iArr) {
+        matrix.reset();
+        view.transformMatrixToGlobal(matrix);
+        ViewParent parent = view.getParent();
+        while (parent instanceof View) {
+            view = parent;
+            parent = view.getParent();
+        }
+        view.getLocationOnScreen(iArr);
+        int i = iArr[0];
+        int i2 = iArr[1];
+        view.getLocationInWindow(iArr);
+        matrix.postTranslate(iArr[0] - i, iArr[1] - i2);
+        ic4.Q(matrix, fArr);
     }
 }

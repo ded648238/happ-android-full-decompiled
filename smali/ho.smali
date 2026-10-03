@@ -1,20 +1,50 @@
 .class public final Lho;
-.super Lva6;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final b:Lho;
 
 
 # instance fields
-.field public final synthetic Y:I
-
-.field public final synthetic Z:I
-
-.field public final synthetic a0:Ljava/lang/ref/WeakReference;
-
-.field public final synthetic b0:Lmo;
+.field public final a:Lua6;
 
 
 # direct methods
-.method public constructor <init>(Lmo;IILjava/lang/ref/WeakReference;)V
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lho;
+
+    .line 2
+    .line 3
+    const/high16 v1, 0x41000000    # 8.0f
+
+    .line 4
+    .line 5
+    invoke-static {v1}, Lva6;->a(F)Lua6;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-direct {v0, v1}, Lho;-><init>(Lua6;)V
+
+    .line 10
+    .line 11
+    .line 12
+    sput-object v0, Lho;->b:Lho;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public constructor <init>(Lua6;)V
     .locals 0
 
     .line 1
@@ -23,171 +53,139 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lho;->b0:Lmo;
+    iput-object p1, p0, Lho;->a:Lua6;
 
     .line 5
     .line 6
-    iput p2, p0, Lho;->Y:I
-
-    .line 7
-    .line 8
-    iput p3, p0, Lho;->Z:I
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Lho;->a0:Ljava/lang/ref/WeakReference;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final N(I)V
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
     .line 1
-    return-void
-.end method
-
-.method public final O(Landroid/graphics/Typeface;)V
-    .locals 4
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    const/16 v1, 0x1c
+    goto :goto_1
 
     .line 4
-    .line 5
-    const/4 v2, 0x1
+    :cond_0
+    instance-of v0, p1, Lho;
 
+    .line 5
     .line 6
-    if-lt v0, v1, :cond_1
+    if-nez v0, :cond_1
 
     .line 7
     .line 8
-    const/4 v0, -0x1
+    goto :goto_0
 
     .line 9
-    iget v1, p0, Lho;->Y:I
+    :cond_1
+    check-cast p1, Lho;
 
     .line 10
     .line 11
-    if-eq v1, v0, :cond_1
+    iget-object p0, p0, Lho;->a:Lua6;
 
     .line 12
     .line 13
-    iget v0, p0, Lho;->Z:I
+    iget-object p1, p1, Lho;->a:Lua6;
 
     .line 14
     .line 15
-    and-int/lit8 v0, v0, 0x2
+    invoke-virtual {p0, p1}, Lua6;->equals(Ljava/lang/Object;)Z
 
     .line 16
     .line 17
-    if-eqz v0, :cond_0
-
     .line 18
+    move-result p0
+
     .line 19
-    const/4 v0, 0x1
+    if-nez p0, :cond_2
 
     .line 20
-    goto :goto_0
-
     .line 21
-    :cond_0
-    const/4 v0, 0x0
+    :goto_0
+    const/4 p0, 0x0
 
     .line 22
-    :goto_0
-    invoke-static {p1, v1, v0}, Llo;->a(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
+    return p0
 
     .line 23
-    .line 24
-    .line 25
-    move-result-object p1
-
-    .line 26
-    :cond_1
-    iget-object v0, p0, Lho;->b0:Lmo;
-
-    .line 27
-    .line 28
-    iget-boolean v1, v0, Lmo;->m:Z
-
-    .line 29
-    .line 30
-    if-eqz v1, :cond_3
-
-    .line 31
-    .line 32
-    iput-object p1, v0, Lmo;->l:Landroid/graphics/Typeface;
-
-    .line 33
-    .line 34
-    iget-object v1, p0, Lho;->a0:Ljava/lang/ref/WeakReference;
-
-    .line 35
-    .line 36
-    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v1
-
-    .line 40
-    check-cast v1, Landroid/widget/TextView;
-
-    .line 41
-    .line 42
-    if-eqz v1, :cond_3
-
-    .line 43
-    .line 44
-    invoke-virtual {v1}, Landroid/view/View;->isAttachedToWindow()Z
-
-    .line 45
-    .line 46
-    .line 47
-    move-result v3
-
-    .line 48
-    iget v0, v0, Lmo;->j:I
-
-    .line 49
-    .line 50
-    if-eqz v3, :cond_2
-
-    .line 51
-    .line 52
-    new-instance v3, Lh5;
-
-    .line 53
-    .line 54
-    invoke-direct {v3, v0, v2, v1, p1}, Lh5;-><init>(IILjava/lang/Object;Ljava/lang/Object;)V
-
-    .line 55
-    .line 56
-    .line 57
-    invoke-virtual {v1, v3}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
-
-    .line 58
-    .line 59
-    .line 60
-    return-void
-
-    .line 61
     :cond_2
-    invoke-virtual {v1, p1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
+    :goto_1
+    const/4 p0, 0x1
 
-    .line 62
-    .line 63
-    .line 64
-    :cond_3
-    return-void
+    .line 24
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lho;->a:Lua6;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lua6;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "AppButtonShapes(text="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object p0, p0, Lho;->a:Lua6;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string p0, ")"
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
 .end method

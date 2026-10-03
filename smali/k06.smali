@@ -1,82 +1,185 @@
 .class public final Lk06;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lrm4;
+.implements Lji2;
+
+
+# static fields
+.field public static final Z:Lfp4;
 
 
 # instance fields
-.field public final Q:I
+.field public final X:Lji2;
 
-.field public final R:Ljava/util/List;
-
-.field public S:Ljava/lang/Float;
-
-.field public T:Ljava/lang/Float;
-
-.field public U:Lyz5;
-
-.field public V:Lyz5;
+.field public volatile Y:Ljava/lang/ref/SoftReference;
 
 
 # direct methods
-.method public constructor <init>(ILjava/util/ArrayList;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lfp4;
 
     .line 2
     .line 3
+    const/16 v1, 0xc
+
     .line 4
-    iput p1, p0, Lk06;->Q:I
+    .line 5
+    invoke-direct {v0, v1}, Lfp4;-><init>(I)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lk06;->Z:Lfp4;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Object;Lji2;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-eqz p2, :cond_1
+
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
     .line 6
-    iput-object p2, p0, Lk06;->R:Ljava/util/List;
-
     .line 7
-    .line 8
-    const/4 p1, 0x0
+    iput-object v0, p0, Lk06;->Y:Ljava/lang/ref/SoftReference;
 
+    .line 8
     .line 9
-    iput-object p1, p0, Lk06;->S:Ljava/lang/Float;
+    iput-object p2, p0, Lk06;->X:Lji2;
 
     .line 10
     .line 11
-    iput-object p1, p0, Lk06;->T:Ljava/lang/Float;
+    if-eqz p1, :cond_0
 
     .line 12
     .line 13
-    iput-object p1, p0, Lk06;->U:Lyz5;
+    new-instance p2, Ljava/lang/ref/SoftReference;
 
     .line 14
     .line 15
-    iput-object p1, p0, Lk06;->V:Lyz5;
+    invoke-direct {p2, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
 
     .line 16
     .line 17
+    .line 18
+    iput-object p2, p0, Lk06;->Y:Ljava/lang/ref/SoftReference;
+
+    .line 19
+    .line 20
+    :cond_0
     return-void
+
+    .line 21
+    :cond_1
+    const-string p0, "Argument for @NotNull parameter \'initializer\' of kotlin/reflect/jvm/internal/ReflectProperties$LazySoftVal.<init> must not be null"
+
+    .line 22
+    .line 23
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    throw v0
 .end method
 
 
 # virtual methods
-.method public final o()Z
-    .locals 1
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lk06;->R:Ljava/util/List;
+    sget-object v0, Lk06;->Z:Lfp4;
 
     .line 2
     .line 3
-    invoke-interface {v0, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    iget-object v1, p0, Lk06;->Y:Ljava/lang/ref/SoftReference;
 
     .line 4
     .line 5
-    .line 6
-    move-result v0
+    if-eqz v1, :cond_1
 
+    .line 6
     .line 7
-    return v0
+    invoke-virtual {v1}, Ljava/lang/ref/SoftReference;->get()Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    if-eqz v1, :cond_1
+
+    .line 12
+    .line 13
+    if-ne v1, v0, :cond_0
+
+    .line 14
+    .line 15
+    const/4 p0, 0x0
+
+    .line 16
+    return-object p0
+
+    .line 17
+    :cond_0
+    return-object v1
+
+    .line 18
+    :cond_1
+    iget-object v1, p0, Lk06;->X:Lji2;
+
+    .line 19
+    .line 20
+    invoke-interface {v1}, Lji2;->invoke()Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v1
+
+    .line 24
+    new-instance v2, Ljava/lang/ref/SoftReference;
+
+    .line 25
+    .line 26
+    if-nez v1, :cond_2
+
+    .line 27
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_2
+    move-object v0, v1
+
+    .line 30
+    :goto_0
+    invoke-direct {v2, v0}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    .line 31
+    .line 32
+    .line 33
+    iput-object v2, p0, Lk06;->Y:Ljava/lang/ref/SoftReference;
+
+    .line 34
+    .line 35
+    return-object v1
 .end method

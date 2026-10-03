@@ -1,193 +1,132 @@
 .class public final Lmm;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final b:Lmm;
-
-.field public static final c:Lmm;
-
-
-# instance fields
-.field public final a:J
+.field public static final a:Lmm;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 1
 
     .line 1
     new-instance v0, Lmm;
 
     .line 2
     .line 3
-    sget-wide v1, Lqm;->e:J
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, v2}, Lmm;-><init>(J)V
-
     .line 6
+    sput-object v0, Lmm;->a:Lmm;
+
     .line 7
     .line 8
-    sput-object v0, Lmm;->b:Lmm;
-
-    .line 9
-    .line 10
-    new-instance v0, Lmm;
-
-    .line 11
-    .line 12
-    sget-wide v1, Lqm;->k:J
-
-    .line 13
-    .line 14
-    invoke-direct {v0, v1, v2}, Lmm;-><init>(J)V
-
-    .line 15
-    .line 16
-    .line 17
-    sput-object v0, Lmm;->c:Lmm;
-
-    .line 18
-    .line 19
-    return-void
-.end method
-
-.method public constructor <init>(J)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-wide p1, p0, Lmm;->a:J
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final a(Landroid/view/Window;)I
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    invoke-virtual {p1}, Landroid/view/Window;->getWindowManager()Landroid/view/WindowManager;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
     .line 4
-    return v0
+    move-result-object p0
 
     .line 5
-    :cond_0
-    instance-of v1, p1, Lmm;
+    invoke-interface {p0}, Landroid/view/WindowManager;->getCurrentWindowMetrics()Landroid/view/WindowMetrics;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    move-result-object p0
 
     .line 9
+    invoke-virtual {p0}, Landroid/view/WindowMetrics;->getWindowInsets()Landroid/view/WindowInsets;
+
     .line 10
-    return v2
-
     .line 11
-    :cond_1
-    check-cast p1, Lmm;
-
     .line 12
+    move-result-object p1
+
     .line 13
-    iget-wide v3, p0, Lmm;->a:J
+    invoke-static {}, Landroid/view/WindowInsets$Type;->systemBars()I
 
     .line 14
     .line 15
-    iget-wide v5, p1, Lmm;->a:J
-
     .line 16
+    move-result v0
+
     .line 17
-    invoke-static {v3, v4, v5, v6}, Lvm0;->c(JJ)Z
+    invoke-virtual {p1, v0}, Landroid/view/WindowInsets;->getInsets(I)Landroid/graphics/Insets;
 
     .line 18
     .line 19
     .line 20
-    move-result p1
+    move-result-object p1
 
     .line 21
-    if-nez p1, :cond_2
+    iget v0, p1, Landroid/graphics/Insets;->top:I
 
     .line 22
     .line 23
-    return v2
+    iget p1, p1, Landroid/graphics/Insets;->bottom:I
 
     .line 24
-    :cond_2
-    return v0
+    .line 25
+    add-int/2addr v0, p1
+
+    .line 26
+    invoke-virtual {p0}, Landroid/view/WindowMetrics;->getBounds()Landroid/graphics/Rect;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p0
+
+    .line 30
+    invoke-virtual {p0}, Landroid/graphics/Rect;->height()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result p0
+
+    .line 34
+    sub-int/2addr p0, v0
+
+    .line 35
+    return p0
 .end method
 
-.method public final hashCode()I
-    .locals 2
+.method public final b(Landroid/view/WindowManager$LayoutParams;I)V
+    .locals 0
 
     .line 1
-    sget v0, Lvm0;->h:I
+    invoke-virtual {p1, p2}, Landroid/view/WindowManager$LayoutParams;->setFitInsetsSides(I)V
 
     .line 2
     .line 3
-    iget-wide v0, p0, Lmm;->a:J
-
     .line 4
-    .line 5
-    invoke-static {v0, v1}, Lxe7;->a(J)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    return v0
+    return-void
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public final c(Landroid/view/WindowManager$LayoutParams;I)V
+    .locals 0
 
     .line 1
-    iget-wide v0, p0, Lmm;->a:J
+    invoke-virtual {p1, p2}, Landroid/view/WindowManager$LayoutParams;->setFitInsetsTypes(I)V
 
     .line 2
     .line 3
-    invoke-static {v0, v1}, Lvm0;->i(J)Ljava/lang/String;
-
     .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    const-string v1, "AppBorderColors(primary="
-
-    .line 8
-    .line 9
-    const-string v2, ")"
-
-    .line 10
-    .line 11
-    invoke-static {v1, v0, v2}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v0
-
-    .line 15
-    return-object v0
+    return-void
 .end method

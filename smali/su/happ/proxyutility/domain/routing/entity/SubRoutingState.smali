@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -139,35 +139,35 @@
 
 # virtual methods
 .method public final d()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isEnabled:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isEnabled:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final e()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -220,7 +220,7 @@
 
     .line 20
     :cond_2
-    iget-boolean v1, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
 
     .line 21
     .line 22
@@ -228,7 +228,7 @@
 
     .line 23
     .line 24
-    if-eq v1, p1, :cond_3
+    if-eq p0, p1, :cond_3
 
     .line 25
     .line 26
@@ -240,87 +240,69 @@
 .end method
 
 .method public final hashCode()I
-    .locals 4
+    .locals 1
 
     .line 1
     iget-boolean v0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isEnabled:Z
 
     .line 2
     .line 3
-    const/16 v1, 0x4d5
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 4
     .line 5
-    const/16 v2, 0x4cf
-
     .line 6
+    move-result v0
+
     .line 7
-    if-eqz v0, :cond_0
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 8
     .line 9
-    const/16 v0, 0x4cf
+    iget-boolean p0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
 
     .line 10
     .line 11
-    goto :goto_0
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 12
-    :cond_0
-    const/16 v0, 0x4d5
-
     .line 13
     .line 14
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
+    move-result p0
 
     .line 15
+    add-int/2addr p0, v0
+
     .line 16
-    iget-boolean v3, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
-
-    .line 17
-    .line 18
-    if-eqz v3, :cond_1
-
-    .line 19
-    .line 20
-    const/16 v1, 0x4cf
-
-    .line 21
-    .line 22
-    :cond_1
-    add-int/2addr v0, v1
-
-    .line 23
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 4
+    .locals 3
 
     .line 1
     iget-boolean v0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isEnabled:Z
 
     .line 2
     .line 3
-    iget-boolean v1, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
 
     .line 4
     .line 5
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 6
     .line 7
-    const-string v3, "SubRoutingState(isEnabled="
+    const-string v2, "SubRoutingState(isEnabled="
 
     .line 8
     .line 9
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 13
     .line 14
@@ -329,34 +311,34 @@
 
     .line 16
     .line 17
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    const-string v0, ")"
+    const-string p0, ")"
 
     .line 24
     .line 25
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
     .line 28
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
     .line 30
     .line 31
-    move-result-object v0
+    move-result-object p0
 
     .line 32
-    return-object v0
+    return-object p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
@@ -377,11 +359,11 @@
     .line 7
     .line 8
     .line 9
-    iget-boolean p2, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/domain/routing/entity/SubRoutingState;->isImportIgnored:Z
 
     .line 10
     .line 11
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 12
     .line 13

@@ -5,4 +5,5 @@
         <View android:id="@id/touch_outside" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:soundEffectsEnabled="false" android:importantForAccessibility="no" />
         <FrameLayout android:layout_gravity="center|top" android:id="@id/design_bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/bottom_sheet_behavior" style="?bottomSheetStyle" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.core.view.insets.ProtectionLayout android:id="@id/protection_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
 </FrameLayout>

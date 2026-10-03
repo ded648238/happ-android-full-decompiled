@@ -8,40 +8,43 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ScaleFrameLayout extends FrameLayout {
-    public float Q;
-    public float R;
-    public float S;
+    public float c0;
+    public float d0;
+    public float e0;
 
     public ScaleFrameLayout(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.Q = 1.0f;
-        this.R = 1.0f;
-        this.S = 1.0f;
+        this.c0 = 1.0f;
+        this.d0 = 1.0f;
+        this.e0 = 1.0f;
     }
 
     @Override // android.view.ViewGroup
     public final void addView(View view, int i, ViewGroup.LayoutParams layoutParams) {
         super.addView(view, i, layoutParams);
-        view.setScaleX(this.S);
-        view.setScaleY(this.S);
+        view.setScaleX(this.e0);
+        view.setScaleY(this.e0);
     }
 
     @Override // android.view.ViewGroup
     public final boolean addViewInLayout(View view, int i, ViewGroup.LayoutParams layoutParams, boolean z) {
-        boolean zAddViewInLayout = super.addViewInLayout(view, i, layoutParams, z);
-        if (zAddViewInLayout) {
-            view.setScaleX(this.S);
-            view.setScaleY(this.S);
+        boolean addViewInLayout = super.addViewInLayout(view, i, layoutParams, z);
+        if (addViewInLayout) {
+            view.setScaleX(this.e0);
+            view.setScaleY(this.e0);
         }
-        return zAddViewInLayout;
+        return addViewInLayout;
     }
 
-    /* JADX WARN: Code duplicated, block: B:33:0x00c9  */
-    /* JADX WARN: Code duplicated, block: B:42:0x00de  */
+    /* JADX WARN: Removed duplicated region for block: B:26:0x00c9  */
+    /* JADX WARN: Removed duplicated region for block: B:38:0x00de  */
     @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final void onLayout(boolean z, int i, int i2, int i3, int i4) {
         int paddingLeft;
         int i5;
@@ -55,13 +58,14 @@ public class ScaleFrameLayout extends FrameLayout {
         int i10;
         int i11;
         int i12;
+        int i13;
         ScaleFrameLayout scaleFrameLayout = this;
         int childCount = scaleFrameLayout.getChildCount();
         int layoutDirection = scaleFrameLayout.getLayoutDirection();
         float width = layoutDirection == 1 ? scaleFrameLayout.getWidth() - scaleFrameLayout.getPivotX() : scaleFrameLayout.getPivotX();
-        if (scaleFrameLayout.Q != 1.0f) {
+        if (scaleFrameLayout.c0 != 1.0f) {
             int paddingLeft2 = scaleFrameLayout.getPaddingLeft();
-            float f = scaleFrameLayout.Q;
+            float f = scaleFrameLayout.c0;
             paddingLeft = paddingLeft2 + ((int) ((width - (width / f)) + 0.5f));
             i5 = (int) ((((i3 - i) - width) / f) + width + 0.5f);
             paddingRight = scaleFrameLayout.getPaddingRight();
@@ -70,11 +74,11 @@ public class ScaleFrameLayout extends FrameLayout {
             i5 = i3 - i;
             paddingRight = scaleFrameLayout.getPaddingRight();
         }
-        int i13 = i5 - paddingRight;
+        int i14 = i5 - paddingRight;
         float pivotY = scaleFrameLayout.getPivotY();
-        if (scaleFrameLayout.R != 1.0f) {
+        if (scaleFrameLayout.d0 != 1.0f) {
             int paddingTop2 = scaleFrameLayout.getPaddingTop();
-            float f2 = scaleFrameLayout.R;
+            float f2 = scaleFrameLayout.d0;
             paddingTop = paddingTop2 + ((int) ((pivotY - (pivotY / f2)) + 0.5f));
             i6 = (int) ((((i4 - i2) - pivotY) / f2) + pivotY + 0.5f);
             paddingBottom = scaleFrameLayout.getPaddingBottom();
@@ -83,90 +87,85 @@ public class ScaleFrameLayout extends FrameLayout {
             i6 = i4 - i2;
             paddingBottom = scaleFrameLayout.getPaddingBottom();
         }
-        int i14 = i6 - paddingBottom;
-        int i15 = 0;
-        while (i15 < childCount) {
-            View childAt = scaleFrameLayout.getChildAt(i15);
+        int i15 = i6 - paddingBottom;
+        int i16 = 0;
+        while (i16 < childCount) {
+            View childAt = scaleFrameLayout.getChildAt(i16);
             if (childAt.getVisibility() != 8) {
                 FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) childAt.getLayoutParams();
                 int measuredWidth = childAt.getMeasuredWidth();
                 int measuredHeight = childAt.getMeasuredHeight();
-                int i16 = layoutParams.gravity;
-                if (i16 == -1) {
-                    i16 = 8388659;
+                int i17 = layoutParams.gravity;
+                if (i17 == -1) {
+                    i17 = 8388659;
                 }
-                int absoluteGravity = Gravity.getAbsoluteGravity(i16, layoutDirection);
-                int i17 = i16 & 112;
-                int i18 = absoluteGravity & 7;
-                if (i18 != 1) {
-                    if (i18 != 5) {
-                        i9 = layoutParams.leftMargin + paddingLeft;
-                    } else {
-                        i7 = i13 - measuredWidth;
-                        i8 = layoutParams.rightMargin;
-                    }
-                    if (i17 == 16) {
-                        i10 = (((i14 - paddingTop) - measuredHeight) / 2) + paddingTop + layoutParams.topMargin;
-                        i11 = layoutParams.bottomMargin;
-                    } else if (i17 == 48 && i17 == 80) {
-                        i10 = i14 - measuredHeight;
-                        i11 = layoutParams.bottomMargin;
-                    } else {
-                        i12 = i + paddingTop;
+                int absoluteGravity = Gravity.getAbsoluteGravity(i17, layoutDirection);
+                int i18 = i17 & 112;
+                int i19 = absoluteGravity & 7;
+                if (i19 == 1) {
+                    i7 = (((i14 - paddingLeft) - measuredWidth) / 2) + paddingLeft + layoutParams.leftMargin;
+                    i8 = layoutParams.rightMargin;
+                } else if (i19 != 5) {
+                    i9 = layoutParams.leftMargin + paddingLeft;
+                    if (i18 == 16) {
+                        if (i18 == 48) {
+                            i13 = layoutParams.topMargin;
+                        } else if (i18 != 80) {
+                            i13 = layoutParams.topMargin;
+                        } else {
+                            i10 = i15 - measuredHeight;
+                            i11 = layoutParams.bottomMargin;
+                        }
+                        i12 = i13 + paddingTop;
                         childAt.layout(i9, i12, measuredWidth + i9, measuredHeight + i12);
                         childAt.setPivotX(width - i9);
                         childAt.setPivotY(pivotY - i12);
+                    } else {
+                        i10 = (((i15 - paddingTop) - measuredHeight) / 2) + paddingTop + layoutParams.topMargin;
+                        i11 = layoutParams.bottomMargin;
                     }
                     i12 = i10 - i11;
                     childAt.layout(i9, i12, measuredWidth + i9, measuredHeight + i12);
                     childAt.setPivotX(width - i9);
                     childAt.setPivotY(pivotY - i12);
                 } else {
-                    i7 = (((i13 - paddingLeft) - measuredWidth) / 2) + paddingLeft + layoutParams.leftMargin;
+                    i7 = i14 - measuredWidth;
                     i8 = layoutParams.rightMargin;
                 }
                 i9 = i7 - i8;
-                if (i17 == 16) {
-                    int i19 = i17 == 48 ? layoutParams.topMargin : layoutParams.topMargin;
-                    i12 = i19 + paddingTop;
-                    childAt.layout(i9, i12, measuredWidth + i9, measuredHeight + i12);
-                    childAt.setPivotX(width - i9);
-                    childAt.setPivotY(pivotY - i12);
-                } else {
-                    i10 = (((i14 - paddingTop) - measuredHeight) / 2) + paddingTop + layoutParams.topMargin;
-                    i11 = layoutParams.bottomMargin;
+                if (i18 == 16) {
                 }
                 i12 = i10 - i11;
                 childAt.layout(i9, i12, measuredWidth + i9, measuredHeight + i12);
                 childAt.setPivotX(width - i9);
                 childAt.setPivotY(pivotY - i12);
             }
-            i15++;
+            i16++;
             scaleFrameLayout = this;
         }
     }
 
     @Override // android.widget.FrameLayout, android.view.View
     public final void onMeasure(int i, int i2) {
-        float f = this.Q;
-        if (f == 1.0f && this.R == 1.0f) {
+        float f = this.c0;
+        if (f == 1.0f && this.d0 == 1.0f) {
             super.onMeasure(i, i2);
             return;
         }
         if (f != 1.0f) {
             i = View.MeasureSpec.makeMeasureSpec((int) ((View.MeasureSpec.getSize(i) / f) + 0.5f), View.MeasureSpec.getMode(i));
         }
-        float f2 = this.R;
+        float f2 = this.d0;
         if (f2 != 1.0f) {
             i2 = View.MeasureSpec.makeMeasureSpec((int) ((View.MeasureSpec.getSize(i2) / f2) + 0.5f), View.MeasureSpec.getMode(i2));
         }
         super.onMeasure(i, i2);
-        setMeasuredDimension((int) ((getMeasuredWidth() * this.Q) + 0.5f), (int) ((getMeasuredHeight() * this.R) + 0.5f));
+        setMeasuredDimension((int) ((getMeasuredWidth() * this.c0) + 0.5f), (int) ((getMeasuredHeight() * this.d0) + 0.5f));
     }
 
     public void setChildScale(float f) {
-        if (this.S != f) {
-            this.S = f;
+        if (this.e0 != f) {
+            this.e0 = f;
             for (int i = 0; i < getChildCount(); i++) {
                 getChildAt(i).setScaleX(f);
                 getChildAt(i).setScaleY(f);
@@ -180,15 +179,15 @@ public class ScaleFrameLayout extends FrameLayout {
     }
 
     public void setLayoutScaleX(float f) {
-        if (f != this.Q) {
-            this.Q = f;
+        if (f != this.c0) {
+            this.c0 = f;
             requestLayout();
         }
     }
 
     public void setLayoutScaleY(float f) {
-        if (f != this.R) {
-            this.R = f;
+        if (f != this.d0) {
+            this.d0 = f;
             requestLayout();
         }
     }

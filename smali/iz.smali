@@ -1,15 +1,55 @@
 .class public final Liz;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Landroid/os/Parcelable;
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Liz;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # instance fields
-.field public final a:F
+.field public final X:Ljava/util/ArrayList;
+
+.field public final Y:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public synthetic constructor <init>(F)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lzv8;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x5
+
+    .line 4
+    invoke-direct {v0, v1}, Lzv8;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Liz;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -17,130 +57,70 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Liz;->a:F
+    invoke-virtual {p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
 
     .line 5
     .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    iput-object v0, p0, Liz;->X:Ljava/util/ArrayList;
+
+    .line 9
+    .line 10
+    sget-object v0, Lhz;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->createTypedArrayList(Landroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    iput-object p1, p0, Liz;->Y:Ljava/util/ArrayList;
+
+    .line 17
+    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
+.method public final describeContents()I
+    .locals 0
 
     .line 1
-    instance-of v0, p1, Liz;
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
+
+    .line 1
+    iget-object p2, p0, Liz;->X:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
 
     .line 4
     .line 5
-    goto :goto_0
-
     .line 6
-    :cond_0
-    check-cast p1, Liz;
+    iget-object p0, p0, Liz;->Y:Ljava/util/ArrayList;
 
     .line 7
     .line 8
-    iget p1, p1, Liz;->a:F
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
     .line 9
     .line 10
-    iget v0, p0, Liz;->a:F
-
     .line 11
-    .line 12
-    invoke-static {v0, p1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 13
-    .line 14
-    .line 15
-    move-result p1
-
-    .line 16
-    if-eqz p1, :cond_1
-
-    .line 17
-    .line 18
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 19
-    return p1
-
-    .line 20
-    :cond_1
-    const/4 p1, 0x1
-
-    .line 21
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Liz;->a:F
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "BaselineShift(multiplier="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget v1, p0, Liz;->a:F
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const/16 v1, 0x29
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    return-object v0
+    return-void
 .end method

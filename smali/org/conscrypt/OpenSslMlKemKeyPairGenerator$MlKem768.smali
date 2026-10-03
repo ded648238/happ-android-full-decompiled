@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSslMlKemKeyPairGenerator$MlKem768;
 .super Lorg/conscrypt/OpenSslMlKemKeyPairGenerator;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -48,60 +48,60 @@
 
 # virtual methods
 .method public generateKeyPair()Ljava/security/KeyPair;
-    .locals 5
+    .locals 4
 
     .line 1
-    const/16 v0, 0x40
+    const/16 p0, 0x40
 
     .line 2
     .line 3
-    new-array v0, v0, [B
+    new-array p0, p0, [B
 
     .line 4
     .line 5
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->RAND_bytes([B)V
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->RAND_bytes([B)V
 
     .line 6
     .line 7
     .line 8
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->MLKEM768_public_key_from_seed([B)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->MLKEM768_public_key_from_seed([B)[B
 
     .line 9
     .line 10
     .line 11
-    move-result-object v1
+    move-result-object v0
 
     .line 12
-    new-instance v2, Ljava/security/KeyPair;
+    new-instance v1, Ljava/security/KeyPair;
 
     .line 13
     .line 14
-    new-instance v3, Lorg/conscrypt/OpenSslMlKemPublicKey;
+    new-instance v2, Lorg/conscrypt/OpenSslMlKemPublicKey;
 
     .line 15
     .line 16
-    sget-object v4, Lorg/conscrypt/MlKemAlgorithm;->ML_KEM_768:Lorg/conscrypt/MlKemAlgorithm;
+    sget-object v3, Lorg/conscrypt/MlKemAlgorithm;->ML_KEM_768:Lorg/conscrypt/MlKemAlgorithm;
 
     .line 17
     .line 18
-    invoke-direct {v3, v1, v4}, Lorg/conscrypt/OpenSslMlKemPublicKey;-><init>([BLorg/conscrypt/MlKemAlgorithm;)V
+    invoke-direct {v2, v0, v3}, Lorg/conscrypt/OpenSslMlKemPublicKey;-><init>([BLorg/conscrypt/MlKemAlgorithm;)V
 
     .line 19
     .line 20
     .line 21
-    new-instance v1, Lorg/conscrypt/OpenSslMlKemPrivateKey;
+    new-instance v0, Lorg/conscrypt/OpenSslMlKemPrivateKey;
 
     .line 22
     .line 23
-    invoke-direct {v1, v0, v4}, Lorg/conscrypt/OpenSslMlKemPrivateKey;-><init>([BLorg/conscrypt/MlKemAlgorithm;)V
+    invoke-direct {v0, p0, v3}, Lorg/conscrypt/OpenSslMlKemPrivateKey;-><init>([BLorg/conscrypt/MlKemAlgorithm;)V
 
     .line 24
     .line 25
     .line 26
-    invoke-direct {v2, v3, v1}, Ljava/security/KeyPair;-><init>(Ljava/security/PublicKey;Ljava/security/PrivateKey;)V
+    invoke-direct {v1, v2, v0}, Ljava/security/KeyPair;-><init>(Ljava/security/PublicKey;Ljava/security/PrivateKey;)V
 
     .line 27
     .line 28
     .line 29
-    return-object v2
+    return-object v1
 .end method

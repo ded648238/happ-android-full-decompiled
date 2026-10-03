@@ -31,365 +31,369 @@ import android.view.accessibility.AccessibilityManager;
 import android.widget.EdgeEffect;
 import android.widget.OverScroller;
 import androidx.core.view.ScrollingView;
-import defpackage.be5;
-import defpackage.ce5;
-import defpackage.de5;
-import defpackage.ea0;
-import defpackage.ee5;
-import defpackage.en0;
-import defpackage.eo7;
-import defpackage.ew0;
-import defpackage.f70;
-import defpackage.fb4;
-import defpackage.fn;
-import defpackage.fx4;
-import defpackage.g62;
-import defpackage.gd5;
-import defpackage.ge5;
-import defpackage.hd5;
-import defpackage.hp4;
-import defpackage.i62;
-import defpackage.id5;
-import defpackage.in7;
-import defpackage.j41;
-import defpackage.j85;
-import defpackage.ka0;
-import defpackage.ki0;
-import defpackage.kn7;
-import defpackage.kr3;
-import defpackage.la6;
-import defpackage.md5;
-import defpackage.nd5;
-import defpackage.nn4;
-import defpackage.o92;
-import defpackage.od5;
-import defpackage.on4;
-import defpackage.pm1;
-import defpackage.qd5;
-import defpackage.qn7;
-import defpackage.rd1;
-import defpackage.rd5;
-import defpackage.rn7;
-import defpackage.s6;
-import defpackage.sa5;
-import defpackage.sd5;
-import defpackage.su1;
-import defpackage.t6;
-import defpackage.td5;
-import defpackage.th5;
-import defpackage.tr2;
-import defpackage.u75;
-import defpackage.ub;
-import defpackage.ud5;
-import defpackage.un7;
-import defpackage.vd5;
-import defpackage.vi0;
-import defpackage.wd5;
-import defpackage.xd5;
-import defpackage.xi4;
-import defpackage.zd5;
-import io.sentry.x1;
-import j$.util.Objects;
+import defpackage.a42;
+import defpackage.ay5;
+import defpackage.bh2;
+import defpackage.by5;
+import defpackage.cb3;
+import defpackage.cy5;
+import defpackage.dj8;
+import defpackage.e7;
+import defpackage.ey5;
+import defpackage.f7;
+import defpackage.gg5;
+import defpackage.gy5;
+import defpackage.hc1;
+import defpackage.hi8;
+import defpackage.hy5;
+import defpackage.i60;
+import defpackage.is5;
+import defpackage.iy5;
+import defpackage.j68;
+import defpackage.jp0;
+import defpackage.jx6;
+import defpackage.jy5;
+import defpackage.k84;
+import defpackage.kl1;
+import defpackage.ku0;
+import defpackage.ku8;
+import defpackage.lx5;
+import defpackage.ly5;
+import defpackage.mx5;
+import defpackage.ni8;
+import defpackage.nx5;
+import defpackage.oi8;
+import defpackage.q05;
+import defpackage.q96;
+import defpackage.r55;
+import defpackage.ri8;
+import defpackage.ru5;
+import defpackage.rx5;
+import defpackage.s55;
+import defpackage.si8;
+import defpackage.sx5;
+import defpackage.tr5;
+import defpackage.tx5;
+import defpackage.up0;
+import defpackage.us4;
+import defpackage.ut;
+import defpackage.v90;
+import defpackage.vx5;
+import defpackage.w31;
+import defpackage.wx5;
+import defpackage.xk0;
+import defpackage.xk2;
+import defpackage.xu1;
+import defpackage.xx5;
+import defpackage.yx5;
+import defpackage.zg2;
+import defpackage.zx5;
+import io.sentry.z1;
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Objects;
 import java.util.WeakHashMap;
 import su.happ.proxyutility.dto.XRayConfig;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class RecyclerView extends ViewGroup implements ScrollingView {
-    public static final hv2 A1;
-    public static final ce5 B1;
-    public static boolean t1 = false;
-    public static boolean u1 = false;
-    public static final int[] v1 = {R.attr.nestedScrollingEnabled};
-    public static final float w1 = (float) (Math.log(0.78d) / Math.log(0.9d));
-    public static final boolean x1;
-    public static final boolean y1;
-    public static final Class[] z1;
-    public int A0;
-    public nd5 B0;
-    public EdgeEffect C0;
-    public EdgeEffect D0;
-    public EdgeEffect E0;
-    public EdgeEffect F0;
-    public od5 G0;
-    public int H0;
+    public static boolean C1 = false;
+    public static boolean D1 = false;
+    public static final int[] E1 = {R.attr.nestedScrollingEnabled};
+    public static final float F1 = (float) (Math.log(0.78d) / Math.log(0.9d));
+    public static final boolean G1 = true;
+    public static final boolean H1 = true;
+    public static final Class[] I1;
+    public static final cb3 J1;
+    public static final hy5 K1;
+    public boolean A0;
+    public final mx5 A1;
+    public boolean B0;
+    public final kl1 B1;
+    public int C0;
+    public boolean D0;
+    public final AccessibilityManager E0;
+    public ArrayList F0;
+    public boolean G0;
+    public boolean H0;
     public int I0;
-    public VelocityTracker J0;
-    public int K0;
-    public int L0;
-    public int M0;
-    public int N0;
-    public int O0;
-    public rd5 P0;
-    public final float Q;
-    public final int Q0;
-    public final g62 R;
-    public final int R0;
-    public final k S;
-    public final float S0;
-    public xd5 T;
-    public final float T0;
-    public final t6 U;
-    public boolean U0;
-    public final ka0 V;
-    public final ee5 V0;
-    public final th5 W;
-    public o92 W0;
-    public final vi0 X0;
-    public final be5 Y0;
-    public td5 Z0;
-    public boolean a0;
-    public ArrayList a1;
-    public final gd5 b0;
-    public boolean b1;
-    public final Rect c0;
-    public boolean c1;
-    public final Rect d0;
-    public final hd5 d1;
-    public final RectF e0;
-    public boolean e1;
-    public f f0;
-    public ge5 f1;
-    public j g0;
-    public final int[] g1;
-    public wd5 h0;
-    public fb4 h1;
-    public final ArrayList i0;
-    public final int[] i1;
-    public final ArrayList j0;
-    public final int[] j1;
-    public final ArrayList k0;
-    public final int[] k1;
-    public sd5 l0;
-    public final ArrayList l1;
-    public boolean m0;
-    public final gd5 m1;
-    public boolean n0;
+    public int J0;
+    public sx5 K0;
+    public EdgeEffect L0;
+    public EdgeEffect M0;
+    public EdgeEffect N0;
+    public EdgeEffect O0;
+    public tx5 P0;
+    public int Q0;
+    public int R0;
+    public VelocityTracker S0;
+    public int T0;
+    public int U0;
+    public int V0;
+    public int W0;
+    public int X0;
+    public wx5 Y0;
+    public final int Z0;
+    public final int a1;
+    public final float b1;
+    public final float c0;
+    public final float c1;
+    public final zg2 d0;
+    public boolean d1;
+    public final k e0;
+    public final jy5 e1;
+    public cy5 f0;
+    public xk2 f1;
+    public final f7 g0;
+    public final up0 g1;
+    public final xk0 h0;
+    public final gy5 h1;
+    public final q96 i0;
+    public yx5 i1;
+    public boolean j0;
+    public ArrayList j1;
+    public final lx5 k0;
+    public boolean k1;
+    public final Rect l0;
+    public boolean l1;
+    public final Rect m0;
+    public final mx5 m1;
+    public final RectF n0;
     public boolean n1;
-    public boolean o0;
-    public int o1;
-    public int p0;
-    public int p1;
-    public boolean q0;
-    public final boolean q1;
-    public boolean r0;
-    public final hd5 r1;
-    public boolean s0;
-    public final rd1 s1;
-    public int t0;
-    public boolean u0;
-    public final AccessibilityManager v0;
-    public ArrayList w0;
+    public f o0;
+    public ly5 o1;
+    public j p0;
+    public final int[] p1;
+    public by5 q0;
+    public us4 q1;
+    public final ArrayList r0;
+    public final int[] r1;
+    public final ArrayList s0;
+    public final int[] s1;
+    public final ArrayList t0;
+    public final int[] t1;
+    public xx5 u0;
+    public final ArrayList u1;
+    public boolean v0;
+    public final lx5 v1;
+    public boolean w0;
+    public boolean w1;
     public boolean x0;
-    public boolean y0;
-    public int z0;
+    public int x1;
+    public int y0;
+    public int y1;
+    public boolean z0;
+    public final boolean z1;
 
     static {
-        x1 = Build.VERSION.SDK_INT >= 23;
-        y1 = true;
         Class cls = Integer.TYPE;
-        z1 = new Class[]{Context.class, AttributeSet.class, cls, cls};
-        A1 = new hv2(2);
-        B1 = new ce5();
+        I1 = new Class[]{Context.class, AttributeSet.class, cls, cls};
+        J1 = new cb3(2);
+        K1 = new hy5();
     }
 
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r18v0 */
+    /* JADX WARN: Type inference failed for: r18v1 */
+    /* JADX WARN: Type inference failed for: r18v2 */
     public RecyclerView(Context context, AttributeSet attributeSet, int i) {
-        float fA;
-        TypedArray typedArray;
+        super(context, attributeSet, i);
+        float a;
         char c;
-        char c2;
+        boolean z;
+        TypedArray typedArray;
         Constructor constructor;
         Object[] objArr;
-        super(context, attributeSet, i);
-        this.R = new g62(2, this);
-        this.S = new k(this);
-        this.W = new th5(10);
-        this.b0 = new gd5(this, 0);
-        this.c0 = new Rect();
-        this.d0 = new Rect();
-        this.e0 = new RectF();
-        this.i0 = new ArrayList();
-        this.j0 = new ArrayList();
-        this.k0 = new ArrayList();
-        this.p0 = 0;
-        this.x0 = false;
-        this.y0 = false;
-        this.z0 = 0;
-        this.A0 = 0;
-        this.B0 = B1;
-        j41 j41Var = new j41();
-        j41Var.a = null;
-        j41Var.b = new ArrayList();
-        j41Var.c = 120L;
-        j41Var.d = 120L;
-        j41Var.e = 250L;
-        j41Var.f = 250L;
-        int i2 = 1;
-        j41Var.g = true;
-        j41Var.h = new ArrayList();
-        j41Var.i = new ArrayList();
-        j41Var.j = new ArrayList();
-        j41Var.k = new ArrayList();
-        j41Var.l = new ArrayList();
-        j41Var.m = new ArrayList();
-        j41Var.n = new ArrayList();
-        j41Var.o = new ArrayList();
-        j41Var.p = new ArrayList();
-        j41Var.q = new ArrayList();
-        j41Var.r = new ArrayList();
-        this.G0 = j41Var;
-        this.H0 = 0;
-        this.I0 = -1;
-        this.S0 = Float.MIN_VALUE;
-        this.T0 = Float.MIN_VALUE;
-        this.U0 = true;
-        this.V0 = new ee5(this);
-        this.X0 = y1 ? new vi0(3) : null;
-        be5 be5Var = new be5();
-        be5Var.a = -1;
-        be5Var.b = 0;
-        be5Var.c = 0;
-        be5Var.d = 1;
-        be5Var.e = 0;
-        be5Var.f = false;
-        be5Var.g = false;
-        be5Var.h = false;
-        be5Var.i = false;
-        be5Var.j = false;
-        be5Var.k = false;
-        this.Y0 = be5Var;
-        this.b1 = false;
-        this.c1 = false;
-        hd5 hd5Var = new hd5(this);
-        this.d1 = hd5Var;
-        this.e1 = false;
-        this.g1 = new int[2];
-        this.i1 = new int[2];
-        this.j1 = new int[2];
-        this.k1 = new int[2];
-        this.l1 = new ArrayList();
-        this.m1 = new gd5(this, i2);
-        this.o1 = 0;
-        this.p1 = 0;
-        this.r1 = new hd5(this);
-        this.s1 = new rd1(getContext(), new id5(this));
+        int i2 = 2;
+        this.d0 = new zg2(i2, this);
+        this.e0 = new k(this);
+        this.i0 = new q96(22);
+        byte b = 0;
+        this.k0 = new lx5(this, b);
+        this.l0 = new Rect();
+        this.m0 = new Rect();
+        this.n0 = new RectF();
+        this.r0 = new ArrayList();
+        this.s0 = new ArrayList();
+        this.t0 = new ArrayList();
+        this.y0 = 0;
+        this.G0 = false;
+        this.H0 = false;
+        this.I0 = 0;
+        this.J0 = 0;
+        this.K0 = K1;
+        hc1 hc1Var = new hc1();
+        hc1Var.a = null;
+        hc1Var.b = new ArrayList();
+        hc1Var.c = 120L;
+        hc1Var.d = 120L;
+        hc1Var.e = 250L;
+        hc1Var.f = 250L;
+        int i3 = 1;
+        hc1Var.g = true;
+        hc1Var.h = new ArrayList();
+        hc1Var.i = new ArrayList();
+        hc1Var.j = new ArrayList();
+        hc1Var.k = new ArrayList();
+        hc1Var.l = new ArrayList();
+        hc1Var.m = new ArrayList();
+        hc1Var.n = new ArrayList();
+        hc1Var.o = new ArrayList();
+        hc1Var.p = new ArrayList();
+        hc1Var.q = new ArrayList();
+        hc1Var.r = new ArrayList();
+        this.P0 = hc1Var;
+        this.Q0 = 0;
+        this.R0 = -1;
+        this.b1 = Float.MIN_VALUE;
+        this.c1 = Float.MIN_VALUE;
+        this.d1 = true;
+        this.e1 = new jy5(this);
+        this.g1 = H1 ? new up0(b, i2) : null;
+        gy5 gy5Var = new gy5();
+        gy5Var.a = -1;
+        gy5Var.b = 0;
+        gy5Var.c = 0;
+        gy5Var.d = 1;
+        gy5Var.e = 0;
+        gy5Var.f = false;
+        gy5Var.g = false;
+        gy5Var.h = false;
+        gy5Var.i = false;
+        gy5Var.j = false;
+        gy5Var.k = false;
+        this.h1 = gy5Var;
+        this.k1 = false;
+        this.l1 = false;
+        mx5 mx5Var = new mx5(this);
+        this.m1 = mx5Var;
+        this.n1 = false;
+        this.p1 = new int[2];
+        this.r1 = new int[2];
+        this.s1 = new int[2];
+        this.t1 = new int[2];
+        this.u1 = new ArrayList();
+        this.v1 = new lx5(this, i3);
+        this.x1 = 0;
+        this.y1 = 0;
+        this.A1 = new mx5(this);
+        this.B1 = new kl1(getContext(), new nx5(this));
         setScrollContainer(true);
         setFocusableInTouchMode(true);
         ViewConfiguration viewConfiguration = ViewConfiguration.get(context);
-        this.O0 = viewConfiguration.getScaledTouchSlop();
-        int i3 = Build.VERSION.SDK_INT;
-        if (i3 >= 26) {
-            Method method = un7.a;
-            fA = tr2.o(viewConfiguration);
+        this.X0 = viewConfiguration.getScaledTouchSlop();
+        int i4 = Build.VERSION.SDK_INT;
+        if (i4 >= 26) {
+            Method method = si8.a;
+            a = ri8.b(viewConfiguration);
         } else {
-            fA = un7.a(viewConfiguration, context);
+            a = si8.a(viewConfiguration, context);
         }
-        this.S0 = fA;
-        this.T0 = i3 >= 26 ? tr2.p(viewConfiguration) : un7.a(viewConfiguration, context);
-        this.Q0 = viewConfiguration.getScaledMinimumFlingVelocity();
-        this.R0 = viewConfiguration.getScaledMaximumFlingVelocity();
-        this.Q = context.getResources().getDisplayMetrics().density * 160.0f * 386.0878f * 0.84f;
+        this.b1 = a;
+        this.c1 = i4 >= 26 ? ri8.c(viewConfiguration) : si8.a(viewConfiguration, context);
+        this.Z0 = viewConfiguration.getScaledMinimumFlingVelocity();
+        this.a1 = viewConfiguration.getScaledMaximumFlingVelocity();
+        this.c0 = context.getResources().getDisplayMetrics().density * 160.0f * 386.0878f * 0.84f;
         setWillNotDraw(getOverScrollMode() == 2);
-        this.G0.a = hd5Var;
-        this.U = new t6(new id5(this));
-        this.V = new ka0(new hd5(this));
-        WeakHashMap weakHashMap = qn7.a;
-        if ((i3 >= 26 ? kn7.a(this) : 0) == 0 && i3 >= 26) {
-            kn7.b(this, 8);
+        this.P0.a = mx5Var;
+        this.g0 = new f7(new nx5(this));
+        this.h0 = new xk0(new mx5(this));
+        WeakHashMap weakHashMap = ni8.a;
+        if ((i4 >= 26 ? hi8.a(this) : 0) == 0 && i4 >= 26) {
+            hi8.b(this, 8);
         }
         if (getImportantForAccessibility() == 0) {
             setImportantForAccessibility(1);
         }
-        this.v0 = (AccessibilityManager) getContext().getSystemService("accessibility");
-        setAccessibilityDelegateCompat(new ge5(this));
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, sa5.RecyclerView, i, 0);
-        qn7.p(this, context, sa5.RecyclerView, attributeSet, typedArrayObtainStyledAttributes, i);
-        String string = typedArrayObtainStyledAttributes.getString(sa5.RecyclerView_layoutManager);
-        if (typedArrayObtainStyledAttributes.getInt(sa5.RecyclerView_android_descendantFocusability, -1) == -1) {
+        this.E0 = (AccessibilityManager) getContext().getSystemService("accessibility");
+        setAccessibilityDelegateCompat(new ly5(this));
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ru5.RecyclerView, i, 0);
+        ni8.l(this, context, ru5.RecyclerView, attributeSet, obtainStyledAttributes, i);
+        String string = obtainStyledAttributes.getString(ru5.RecyclerView_layoutManager);
+        if (obtainStyledAttributes.getInt(ru5.RecyclerView_android_descendantFocusability, -1) == -1) {
             setDescendantFocusability(262144);
         }
-        this.a0 = typedArrayObtainStyledAttributes.getBoolean(sa5.RecyclerView_android_clipToPadding, true);
-        if (typedArrayObtainStyledAttributes.getBoolean(sa5.RecyclerView_fastScrollEnabled, false)) {
-            StateListDrawable stateListDrawable = (StateListDrawable) typedArrayObtainStyledAttributes.getDrawable(sa5.RecyclerView_fastScrollVerticalThumbDrawable);
-            Drawable drawable = typedArrayObtainStyledAttributes.getDrawable(sa5.RecyclerView_fastScrollVerticalTrackDrawable);
-            StateListDrawable stateListDrawable2 = (StateListDrawable) typedArrayObtainStyledAttributes.getDrawable(sa5.RecyclerView_fastScrollHorizontalThumbDrawable);
-            Drawable drawable2 = typedArrayObtainStyledAttributes.getDrawable(sa5.RecyclerView_fastScrollHorizontalTrackDrawable);
+        this.j0 = obtainStyledAttributes.getBoolean(ru5.RecyclerView_android_clipToPadding, true);
+        if (obtainStyledAttributes.getBoolean(ru5.RecyclerView_fastScrollEnabled, false)) {
+            StateListDrawable stateListDrawable = (StateListDrawable) obtainStyledAttributes.getDrawable(ru5.RecyclerView_fastScrollVerticalThumbDrawable);
+            Drawable drawable = obtainStyledAttributes.getDrawable(ru5.RecyclerView_fastScrollVerticalTrackDrawable);
+            StateListDrawable stateListDrawable2 = (StateListDrawable) obtainStyledAttributes.getDrawable(ru5.RecyclerView_fastScrollHorizontalThumbDrawable);
+            Drawable drawable2 = obtainStyledAttributes.getDrawable(ru5.RecyclerView_fastScrollHorizontalTrackDrawable);
             if (stateListDrawable == null || drawable == null || stateListDrawable2 == null || drawable2 == null) {
-                fn.r("Trying to set fast scroller without both required drawables.".concat(C()));
+                i60.p("Trying to set fast scroller without both required drawables.".concat(C()));
                 throw null;
             }
             Resources resources = getContext().getResources();
             c = 2;
-            c2 = 3;
-            typedArray = typedArrayObtainStyledAttributes;
-            new su1(this, stateListDrawable, drawable, stateListDrawable2, drawable2, resources.getDimensionPixelSize(j85.fastscroll_default_thickness), resources.getDimensionPixelSize(j85.fastscroll_minimum_range), resources.getDimensionPixelOffset(j85.fastscroll_margin));
+            z = 1;
+            typedArray = obtainStyledAttributes;
+            new a42(this, stateListDrawable, drawable, stateListDrawable2, drawable2, resources.getDimensionPixelSize(is5.fastscroll_default_thickness), resources.getDimensionPixelSize(is5.fastscroll_minimum_range), resources.getDimensionPixelOffset(is5.fastscroll_margin));
         } else {
-            typedArray = typedArrayObtainStyledAttributes;
             c = 2;
-            c2 = 3;
+            z = 1;
+            typedArray = obtainStyledAttributes;
         }
         typedArray.recycle();
-        this.q1 = context.getPackageManager().hasSystemFeature("android.hardware.rotaryencoder.lowres");
+        this.z1 = context.getPackageManager().hasSystemFeature("android.hardware.rotaryencoder.lowres");
         if (string != null) {
-            String strTrim = string.trim();
-            if (!strTrim.isEmpty()) {
-                if (strTrim.charAt(0) == '.') {
-                    strTrim = context.getPackageName() + strTrim;
-                } else if (!strTrim.contains(".")) {
-                    strTrim = RecyclerView.class.getPackage().getName() + '.' + strTrim;
+            String trim = string.trim();
+            if (!trim.isEmpty()) {
+                if (trim.charAt(0) == '.') {
+                    trim = context.getPackageName() + trim;
+                } else if (!trim.contains(".")) {
+                    trim = RecyclerView.class.getPackage().getName() + '.' + trim;
                 }
-                String str = strTrim;
+                String str = trim;
                 try {
-                    Class<? extends U> clsAsSubclass = Class.forName(str, false, isInEditMode() ? getClass().getClassLoader() : context.getClassLoader()).asSubclass(j.class);
+                    Class asSubclass = Class.forName(str, false, isInEditMode() ? getClass().getClassLoader() : context.getClassLoader()).asSubclass(j.class);
                     try {
-                        constructor = clsAsSubclass.getConstructor(z1);
+                        constructor = asSubclass.getConstructor(I1);
                         objArr = new Object[4];
                         objArr[0] = context;
-                        objArr[1] = attributeSet;
+                        objArr[z] = attributeSet;
                         objArr[c] = Integer.valueOf(i);
-                        objArr[c2] = 0;
+                        objArr[3] = 0;
                     } catch (NoSuchMethodException e) {
                         try {
-                            constructor = clsAsSubclass.getConstructor(null);
+                            constructor = asSubclass.getConstructor(null);
                             objArr = null;
                         } catch (NoSuchMethodException e2) {
                             e2.initCause(e);
                             throw new IllegalStateException(attributeSet.getPositionDescription() + ": Error creating LayoutManager " + str, e2);
                         }
                     }
-                    constructor.setAccessible(true);
+                    constructor.setAccessible(z);
                     setLayoutManager((j) constructor.newInstance(objArr));
                 } catch (ClassCastException e3) {
-                    xi4.h(attributeSet.getPositionDescription(), ": Class is not a LayoutManager ", str, e3);
+                    q05.j(attributeSet.getPositionDescription(), ": Class is not a LayoutManager ", str, e3);
                     throw null;
                 } catch (ClassNotFoundException e4) {
-                    xi4.h(attributeSet.getPositionDescription(), ": Unable to find LayoutManager ", str, e4);
+                    q05.j(attributeSet.getPositionDescription(), ": Unable to find LayoutManager ", str, e4);
                     throw null;
                 } catch (IllegalAccessException e5) {
-                    xi4.h(attributeSet.getPositionDescription(), ": Cannot access non-public constructor ", str, e5);
+                    q05.j(attributeSet.getPositionDescription(), ": Cannot access non-public constructor ", str, e5);
                     throw null;
                 } catch (InstantiationException e6) {
-                    xi4.h(attributeSet.getPositionDescription(), ": Could not instantiate the LayoutManager: ", str, e6);
+                    q05.j(attributeSet.getPositionDescription(), ": Could not instantiate the LayoutManager: ", str, e6);
                     throw null;
                 } catch (InvocationTargetException e7) {
-                    xi4.h(attributeSet.getPositionDescription(), ": Could not instantiate the LayoutManager: ", str, e7);
+                    q05.j(attributeSet.getPositionDescription(), ": Could not instantiate the LayoutManager: ", str, e7);
                     throw null;
                 }
             }
         }
-        int[] iArr = v1;
-        TypedArray typedArrayObtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, iArr, i, 0);
-        qn7.p(this, context, iArr, attributeSet, typedArrayObtainStyledAttributes2, i);
-        boolean z = typedArrayObtainStyledAttributes2.getBoolean(0, true);
-        typedArrayObtainStyledAttributes2.recycle();
-        setNestedScrollingEnabled(z);
-        setTag(fx4.b, Boolean.TRUE);
+        int[] iArr = E1;
+        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, iArr, i, 0);
+        ni8.l(this, context, iArr, attributeSet, obtainStyledAttributes2, i);
+        boolean z2 = obtainStyledAttributes2.getBoolean(0, true);
+        obtainStyledAttributes2.recycle();
+        setNestedScrollingEnabled(z2);
+        setTag(gg5.b, Boolean.TRUE);
     }
 
     public static RecyclerView H(View view) {
@@ -402,9 +406,9 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         ViewGroup viewGroup = (ViewGroup) view;
         int childCount = viewGroup.getChildCount();
         for (int i = 0; i < childCount; i++) {
-            RecyclerView recyclerViewH = H(viewGroup.getChildAt(i));
-            if (recyclerViewH != null) {
-                return recyclerViewH;
+            RecyclerView H = H(viewGroup.getChildAt(i));
+            if (H != null) {
+                return H;
             }
         }
         return null;
@@ -414,14 +418,14 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         if (view == null) {
             return null;
         }
-        return ((LayoutParams) view.getLayoutParams()).Q;
+        return ((LayoutParams) view.getLayoutParams()).X;
     }
 
-    private fb4 getScrollingChildHelper() {
-        if (this.h1 == null) {
-            this.h1 = new fb4(this);
+    private us4 getScrollingChildHelper() {
+        if (this.q1 == null) {
+            this.q1 = new us4(this);
         }
-        return this.h1;
+        return this.q1;
     }
 
     public static void l(l lVar) {
@@ -440,93 +444,97 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public static int o(int i, EdgeEffect edgeEffect, EdgeEffect edgeEffect2, int i2) {
-        if (i > 0 && edgeEffect != null && ew0.G(edgeEffect) != 0.0f) {
-            int iRound = Math.round(ew0.R(edgeEffect, ((-i) * 4.0f) / i2, 0.5f) * ((-i2) / 4.0f));
-            if (iRound != i) {
+        if (i > 0 && edgeEffect != null && j68.G(edgeEffect) != 0.0f) {
+            int round = Math.round(j68.l0(edgeEffect, ((-i) * 4.0f) / i2, 0.5f) * ((-i2) / 4.0f));
+            if (round != i) {
                 edgeEffect.finish();
             }
-            return i - iRound;
+            return i - round;
         }
-        if (i >= 0 || edgeEffect2 == null || ew0.G(edgeEffect2) == 0.0f) {
+        if (i >= 0 || edgeEffect2 == null || j68.G(edgeEffect2) == 0.0f) {
             return i;
         }
         float f = i2;
-        int iRound2 = Math.round(ew0.R(edgeEffect2, (i * 4.0f) / f, 0.5f) * (f / 4.0f));
-        if (iRound2 != i) {
+        int round2 = Math.round(j68.l0(edgeEffect2, (i * 4.0f) / f, 0.5f) * (f / 4.0f));
+        if (round2 != i) {
             edgeEffect2.finish();
         }
-        return i - iRound2;
+        return i - round2;
     }
 
     public static void setDebugAssertionsEnabled(boolean z) {
-        t1 = z;
+        C1 = z;
     }
 
     public static void setVerboseLoggingEnabled(boolean z) {
-        u1 = z;
+        D1 = z;
     }
 
     public final void A() {
-        if (this.E0 != null) {
+        if (this.N0 != null) {
             return;
         }
-        EdgeEffect edgeEffectA = this.B0.a(this, 2);
-        this.E0 = edgeEffectA;
-        if (this.a0) {
-            edgeEffectA.setSize((getMeasuredHeight() - getPaddingTop()) - getPaddingBottom(), (getMeasuredWidth() - getPaddingLeft()) - getPaddingRight());
+        EdgeEffect a = this.K0.a(this, 2);
+        this.N0 = a;
+        if (this.j0) {
+            a.setSize((getMeasuredHeight() - getPaddingTop()) - getPaddingBottom(), (getMeasuredWidth() - getPaddingLeft()) - getPaddingRight());
         } else {
-            edgeEffectA.setSize(getMeasuredHeight(), getMeasuredWidth());
+            a.setSize(getMeasuredHeight(), getMeasuredWidth());
         }
     }
 
     public final void B() {
-        if (this.D0 != null) {
+        if (this.M0 != null) {
             return;
         }
-        EdgeEffect edgeEffectA = this.B0.a(this, 1);
-        this.D0 = edgeEffectA;
-        if (this.a0) {
-            edgeEffectA.setSize((getMeasuredWidth() - getPaddingLeft()) - getPaddingRight(), (getMeasuredHeight() - getPaddingTop()) - getPaddingBottom());
+        EdgeEffect a = this.K0.a(this, 1);
+        this.M0 = a;
+        if (this.j0) {
+            a.setSize((getMeasuredWidth() - getPaddingLeft()) - getPaddingRight(), (getMeasuredHeight() - getPaddingTop()) - getPaddingBottom());
         } else {
-            edgeEffectA.setSize(getMeasuredWidth(), getMeasuredHeight());
+            a.setSize(getMeasuredWidth(), getMeasuredHeight());
         }
     }
 
     public final String C() {
-        return " " + super.toString() + ", adapter:" + this.f0 + ", layout:" + this.g0 + ", context:" + getContext();
+        return " " + super.toString() + ", adapter:" + this.o0 + ", layout:" + this.p0 + ", context:" + getContext();
     }
 
-    public final void D(be5 be5Var) {
+    public final void D(gy5 gy5Var) {
         if (getScrollState() != 2) {
-            be5Var.o = 0;
-            be5Var.p = 0;
+            gy5Var.o = 0;
+            gy5Var.p = 0;
         } else {
-            OverScroller overScroller = this.V0.S;
-            be5Var.o = overScroller.getFinalX() - overScroller.getCurrX();
-            be5Var.p = overScroller.getFinalY() - overScroller.getCurrY();
+            OverScroller overScroller = this.e1.Z;
+            gy5Var.o = overScroller.getFinalX() - overScroller.getCurrX();
+            gy5Var.p = overScroller.getFinalY() - overScroller.getCurrY();
         }
     }
 
+    /* JADX WARN: Code restructure failed: missing block: B:9:0x0016, code lost:
+    
+        return r3;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final View E(View view) {
         ViewParent parent = view.getParent();
         while (parent != null && parent != this && (parent instanceof View)) {
             view = parent;
             parent = view.getParent();
         }
-        if (parent == this) {
-            return view;
-        }
         return null;
     }
 
     public final boolean F(MotionEvent motionEvent) {
         int action = motionEvent.getAction();
-        ArrayList arrayList = this.k0;
+        ArrayList arrayList = this.t0;
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
-            sd5 sd5Var = (sd5) arrayList.get(i);
-            if (sd5Var.c(this, motionEvent) && action != 3) {
-                this.l0 = sd5Var;
+            xx5 xx5Var = (xx5) arrayList.get(i);
+            if (xx5Var.c(this, motionEvent) && action != 3) {
+                this.u0 = xx5Var;
                 return true;
             }
         }
@@ -534,24 +542,24 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final void G(int[] iArr) {
-        ka0 ka0Var = this.V;
-        int iF = ka0Var.f();
-        if (iF == 0) {
+        xk0 xk0Var = this.h0;
+        int k = xk0Var.k();
+        if (k == 0) {
             iArr[0] = -1;
             iArr[1] = -1;
             return;
         }
         int i = Integer.MAX_VALUE;
         int i2 = Integer.MIN_VALUE;
-        for (int i3 = 0; i3 < iF; i3++) {
-            l lVarN = N(ka0Var.d(i3));
-            if (!lVarN.p()) {
-                int iC = lVarN.c();
-                if (iC < i) {
-                    i = iC;
+        for (int i3 = 0; i3 < k; i3++) {
+            l N = N(xk0Var.j(i3));
+            if (!N.p()) {
+                int c = N.c();
+                if (c < i) {
+                    i = c;
                 }
-                if (iC > i2) {
-                    i2 = iC;
+                if (c > i2) {
+                    i2 = c;
                 }
             }
         }
@@ -561,213 +569,244 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     public final l I(int i) {
         l lVar = null;
-        if (this.x0) {
+        if (this.G0) {
             return null;
         }
-        ka0 ka0Var = this.V;
-        int iJ = ka0Var.j();
-        for (int i2 = 0; i2 < iJ; i2++) {
-            l lVarN = N(ka0Var.i(i2));
-            if (lVarN != null && !lVarN.i() && K(lVarN) == i) {
-                if (!((ArrayList) ka0Var.R).contains(lVarN.a)) {
-                    return lVarN;
+        xk0 xk0Var = this.h0;
+        int n = xk0Var.n();
+        for (int i2 = 0; i2 < n; i2++) {
+            l N = N(xk0Var.m(i2));
+            if (N != null && !N.i() && K(N) == i) {
+                if (!((ArrayList) xk0Var.Y).contains(N.a)) {
+                    return N;
                 }
-                lVar = lVarN;
+                lVar = N;
             }
         }
         return lVar;
     }
 
-    /* JADX WARN: Code duplicated, block: B:100:0x0149  */
-    /* JADX WARN: Code duplicated, block: B:140:0x01d5  */
-    /* JADX WARN: Code duplicated, block: B:163:0x0210  */
-    /* JADX WARN: Code duplicated, block: B:42:0x007f  */
-    /* JADX WARN: Code duplicated, block: B:60:0x00c1  */
+    /* JADX WARN: Code restructure failed: missing block: B:128:0x0209, code lost:
+    
+        if (r1 < r14) goto L133;
+     */
     /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x0082  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x00c8 A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:43:0x00e3 A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:49:0x00f2  */
+    /* JADX WARN: Removed duplicated region for block: B:72:0x020f  */
+    /* JADX WARN: Removed duplicated region for block: B:75:0x021d  */
+    /* JADX WARN: Removed duplicated region for block: B:77:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final boolean J(int i, int i2, int i3, int i4) {
-        int iMax;
         int i5;
+        int i6;
+        jy5 jy5Var;
+        float f;
+        float f2;
         boolean z;
         boolean z2;
-        int minFlingVelocity;
         boolean z3;
-        pm1 pm1VarF;
+        int minFlingVelocity;
         boolean z4;
-        int iT;
-        PointF pointFA;
-        int i6;
+        int T;
+        PointF a;
         int i7;
-        j jVar = this.g0;
-        if (jVar != null && !this.r0) {
-            boolean zP = jVar.p();
-            boolean zQ = this.g0.q();
-            int i8 = (!zP || Math.abs(i) < i3) ? 0 : i;
-            int iMax2 = (!zQ || Math.abs(i2) < i3) ? 0 : i2;
-            if (i8 != 0 || iMax2 != 0) {
-                if (i8 == 0) {
-                    iMax = 0;
-                } else {
-                    EdgeEffect edgeEffect = this.C0;
-                    if (edgeEffect == null || ew0.G(edgeEffect) == 0.0f) {
-                        EdgeEffect edgeEffect2 = this.E0;
-                        if (edgeEffect2 == null || ew0.G(edgeEffect2) == 0.0f) {
-                            iMax = 0;
-                        } else if (k0(this.E0, i8, getWidth())) {
-                            this.E0.onAbsorb(i8);
-                            i8 = 0;
+        int i8;
+        j jVar = this.p0;
+        if (jVar != null && !this.A0) {
+            boolean p = jVar.p();
+            boolean q = this.p0.q();
+            int i9 = (!p || Math.abs(i) < i3) ? 0 : i;
+            int i10 = (!q || Math.abs(i2) < i3) ? 0 : i2;
+            if (i9 != 0 || i10 != 0) {
+                if (i9 != 0) {
+                    EdgeEffect edgeEffect = this.L0;
+                    if (edgeEffect == null || j68.G(edgeEffect) == 0.0f) {
+                        EdgeEffect edgeEffect2 = this.N0;
+                        if (edgeEffect2 != null && j68.G(edgeEffect2) != 0.0f) {
+                            if (k0(this.N0, i9, getWidth())) {
+                                this.N0.onAbsorb(i9);
+                                i9 = 0;
+                            }
+                            i5 = i9;
+                            i9 = 0;
                         }
                     } else {
-                        int i9 = -i8;
-                        if (k0(this.C0, i9, getWidth())) {
-                            this.C0.onAbsorb(i9);
-                            i8 = 0;
+                        int i11 = -i9;
+                        if (k0(this.L0, i11, getWidth())) {
+                            this.L0.onAbsorb(i11);
+                            i9 = 0;
                         }
+                        i5 = i9;
+                        i9 = 0;
                     }
-                    iMax = i8;
-                    i8 = 0;
-                }
-                if (iMax2 == 0) {
-                    i5 = iMax2;
-                    iMax2 = 0;
-                } else {
-                    EdgeEffect edgeEffect3 = this.D0;
-                    if (edgeEffect3 == null || ew0.G(edgeEffect3) == 0.0f) {
-                        EdgeEffect edgeEffect4 = this.F0;
-                        if (edgeEffect4 == null || ew0.G(edgeEffect4) == 0.0f) {
-                            i5 = iMax2;
-                            iMax2 = 0;
-                        } else if (k0(this.F0, iMax2, getHeight())) {
-                            this.F0.onAbsorb(iMax2);
-                            iMax2 = 0;
-                        }
-                    } else {
-                        int i10 = -iMax2;
-                        if (k0(this.D0, i10, getHeight())) {
-                            this.D0.onAbsorb(i10);
-                            iMax2 = 0;
-                        }
-                    }
-                    i5 = 0;
-                }
-                ee5 ee5Var = this.V0;
-                if (iMax != 0 || iMax2 != 0) {
-                    int i11 = -i4;
-                    iMax = Math.max(i11, Math.min(iMax, i4));
-                    iMax2 = Math.max(i11, Math.min(iMax2, i4));
-                    q0(1);
-                    ee5Var.a(iMax, iMax2);
-                }
-                if (i8 != 0 || i5 != 0) {
-                    float f = i8;
-                    float f2 = i5;
-                    if (!dispatchNestedPreFling(f, f2)) {
-                        boolean z5 = zP || zQ;
-                        dispatchNestedFling(f, f2, z5);
-                        rd5 rd5Var = this.P0;
-                        if (rd5Var != null) {
-                            on4 on4Var = (on4) rd5Var;
-                            j layoutManager = on4Var.a.getLayoutManager();
-                            if (layoutManager == 0 || on4Var.a.getAdapter() == null || ((Math.abs(i5) <= (minFlingVelocity = on4Var.a.getMinFlingVelocity()) && Math.abs(i8) <= minFlingVelocity) || !((z3 = layoutManager instanceof zd5)))) {
-                                z = z5;
-                                z2 = false;
-                            } else {
-                                View view = null;
-                                nn4 nn4Var = !z3 ? null : new nn4(on4Var, on4Var.a.getContext());
-                                if (nn4Var == null) {
-                                    z = z5;
-                                    z2 = false;
-                                } else {
-                                    int iS = layoutManager.S();
-                                    if (iS != 0) {
-                                        if (layoutManager.q()) {
-                                            pm1VarF = on4Var.g(layoutManager);
-                                        } else {
-                                            pm1VarF = layoutManager.p() ? on4Var.f(layoutManager) : null;
-                                        }
-                                        if (pm1VarF == null) {
-                                            z = z5;
-                                            z4 = true;
-                                            iT = -1;
-                                            i6 = -1;
-                                            z2 = false;
-                                        } else {
-                                            z2 = false;
-                                            int I = layoutManager.I();
-                                            View view2 = null;
-                                            z4 = true;
-                                            int i12 = Integer.MIN_VALUE;
-                                            int i13 = Integer.MAX_VALUE;
-                                            int i14 = 0;
-                                            while (i14 < I) {
-                                                boolean z6 = z5;
-                                                View viewH = layoutManager.H(i14);
-                                                if (viewH == null) {
-                                                    i7 = I;
-                                                } else {
-                                                    i7 = I;
-                                                    int iC = on4.c(viewH, pm1VarF);
-                                                    if (iC <= 0 && iC > i12) {
-                                                        view2 = viewH;
-                                                        i12 = iC;
-                                                    }
-                                                    if (iC >= 0 && iC < i13) {
-                                                        view = viewH;
-                                                        i13 = iC;
-                                                    }
-                                                }
-                                                i14++;
-                                                z5 = z6;
-                                                I = i7;
-                                            }
-                                            z = z5;
-                                            boolean z7 = !layoutManager.p() ? i5 <= 0 : i8 <= 0;
-                                            if (z7 && view != null) {
-                                                iT = j.T(view);
-                                            } else if (z7 || view2 == null) {
-                                                if (z7) {
-                                                    view = view2;
-                                                }
-                                                if (view == null) {
-                                                    iT = -1;
-                                                } else {
-                                                    iT = ((z3 && (pointFA = ((zd5) layoutManager).a(layoutManager.S() + (-1))) != null && ((pointFA.x > 0.0f ? 1 : (pointFA.x == 0.0f ? 0 : -1)) < 0 || (pointFA.y > 0.0f ? 1 : (pointFA.y == 0.0f ? 0 : -1)) < 0)) == z7 ? -1 : 1) + j.T(view);
-                                                    if (iT < 0 || iT >= iS) {
-                                                        iT = -1;
-                                                    }
-                                                }
-                                            } else {
-                                                iT = j.T(view2);
-                                            }
-                                            i6 = -1;
-                                        }
-                                    } else {
-                                        z = z5;
-                                        z4 = true;
-                                        iT = -1;
-                                        i6 = -1;
-                                        z2 = false;
-                                    }
-                                    if (iT != i6) {
-                                        nn4Var.a = iT;
-                                        layoutManager.Y0(nn4Var);
-                                        return z4;
-                                    }
+                    if (i10 != 0) {
+                        EdgeEffect edgeEffect3 = this.M0;
+                        if (edgeEffect3 == null || j68.G(edgeEffect3) == 0.0f) {
+                            EdgeEffect edgeEffect4 = this.O0;
+                            if (edgeEffect4 != null && j68.G(edgeEffect4) != 0.0f) {
+                                if (k0(this.O0, i10, getHeight())) {
+                                    this.O0.onAbsorb(i10);
+                                    i10 = 0;
                                 }
+                                i6 = 0;
                             }
                         } else {
-                            z = z5;
-                            z2 = false;
+                            int i12 = -i10;
+                            if (k0(this.M0, i12, getHeight())) {
+                                this.M0.onAbsorb(i12);
+                                i10 = 0;
+                            }
+                            i6 = 0;
                         }
-                        if (!z) {
-                            return z2;
+                        jy5Var = this.e1;
+                        if (i5 == 0 || i10 != 0) {
+                            int i13 = -i4;
+                            i5 = Math.max(i13, Math.min(i5, i4));
+                            i10 = Math.max(i13, Math.min(i10, i4));
+                            q0(1);
+                            jy5Var.a(i5, i10);
                         }
-                        q0(1);
-                        int i15 = -i4;
-                        ee5Var.a(Math.max(i15, Math.min(i8, i4)), Math.max(i15, Math.min(i5, i4)));
-                        return true;
+                        if (i9 == 0 || i6 != 0) {
+                            f = i9;
+                            f2 = i6;
+                            if (!dispatchNestedPreFling(f, f2)) {
+                                boolean z5 = p || q;
+                                dispatchNestedFling(f, f2, z5);
+                                wx5 wx5Var = this.Y0;
+                                if (wx5Var != null) {
+                                    s55 s55Var = (s55) wx5Var;
+                                    j layoutManager = s55Var.a.getLayoutManager();
+                                    if (layoutManager != 0 && s55Var.a.getAdapter() != null && ((Math.abs(i6) > (minFlingVelocity = s55Var.a.getMinFlingVelocity()) || Math.abs(i9) > minFlingVelocity) && ((z4 = layoutManager instanceof ey5)))) {
+                                        View view = null;
+                                        r55 r55Var = !z4 ? null : new r55(s55Var, s55Var.a.getContext());
+                                        if (r55Var != null) {
+                                            int S = layoutManager.S();
+                                            if (S != 0) {
+                                                xu1 g = layoutManager.q() ? s55Var.g(layoutManager) : layoutManager.p() ? s55Var.f(layoutManager) : null;
+                                                if (g != null) {
+                                                    z3 = false;
+                                                    int I = layoutManager.I();
+                                                    z2 = true;
+                                                    int i14 = 0;
+                                                    int i15 = Integer.MIN_VALUE;
+                                                    int i16 = Integer.MAX_VALUE;
+                                                    View view2 = null;
+                                                    while (i14 < I) {
+                                                        boolean z6 = z5;
+                                                        View H = layoutManager.H(i14);
+                                                        if (H == null) {
+                                                            i8 = I;
+                                                        } else {
+                                                            i8 = I;
+                                                            int c = s55.c(H, g);
+                                                            if (c <= 0 && c > i15) {
+                                                                view2 = H;
+                                                                i15 = c;
+                                                            }
+                                                            if (c >= 0 && c < i16) {
+                                                                view = H;
+                                                                i16 = c;
+                                                            }
+                                                        }
+                                                        i14++;
+                                                        z5 = z6;
+                                                        I = i8;
+                                                    }
+                                                    z = z5;
+                                                    Object[] objArr = !layoutManager.p() ? i6 <= 0 : i9 <= 0;
+                                                    if (objArr == true && view != null) {
+                                                        T = j.T(view);
+                                                    } else if (objArr == true || view2 == null) {
+                                                        if (objArr != false) {
+                                                            view = view2;
+                                                        }
+                                                        if (view != null) {
+                                                            T = ((z4 && (a = ((ey5) layoutManager).a(layoutManager.S() + (-1))) != null && ((a.x > 0.0f ? 1 : (a.x == 0.0f ? 0 : -1)) < 0 || (a.y > 0.0f ? 1 : (a.y == 0.0f ? 0 : -1)) < 0)) == objArr ? -1 : 1) + j.T(view);
+                                                            if (T >= 0) {
+                                                            }
+                                                        }
+                                                        T = -1;
+                                                    } else {
+                                                        T = j.T(view2);
+                                                    }
+                                                    i7 = -1;
+                                                    if (T != i7) {
+                                                        r55Var.a = T;
+                                                        layoutManager.X0(r55Var);
+                                                        return z2;
+                                                    }
+                                                    if (!z) {
+                                                        return z3;
+                                                    }
+                                                    boolean z7 = z2;
+                                                    q0(z7 ? 1 : 0);
+                                                    int i17 = -i4;
+                                                    jy5Var.a(Math.max(i17, Math.min(i9, i4)), Math.max(i17, Math.min(i6, i4)));
+                                                    return z7;
+                                                }
+                                            }
+                                            z = z5;
+                                            z2 = true;
+                                            T = -1;
+                                            i7 = -1;
+                                            z3 = false;
+                                            if (T != i7) {
+                                            }
+                                            if (!z) {
+                                            }
+                                        }
+                                    }
+                                }
+                                z = z5;
+                                z2 = true;
+                                z3 = false;
+                                if (!z) {
+                                }
+                            }
+                        } else if (i5 != 0 || i10 != 0) {
+                            return true;
+                        }
                     }
-                } else if (iMax != 0 || iMax2 != 0) {
-                    return true;
+                    i6 = i10;
+                    i10 = 0;
+                    jy5Var = this.e1;
+                    if (i5 == 0) {
+                    }
+                    int i132 = -i4;
+                    i5 = Math.max(i132, Math.min(i5, i4));
+                    i10 = Math.max(i132, Math.min(i10, i4));
+                    q0(1);
+                    jy5Var.a(i5, i10);
+                    if (i9 == 0) {
+                    }
+                    f = i9;
+                    f2 = i6;
+                    if (!dispatchNestedPreFling(f, f2)) {
+                    }
+                }
+                i5 = 0;
+                if (i10 != 0) {
+                }
+                i6 = i10;
+                i10 = 0;
+                jy5Var = this.e1;
+                if (i5 == 0) {
+                }
+                int i1322 = -i4;
+                i5 = Math.max(i1322, Math.min(i5, i4));
+                i10 = Math.max(i1322, Math.min(i10, i4));
+                q0(1);
+                jy5Var.a(i5, i10);
+                if (i9 == 0) {
+                }
+                f = i9;
+                f2 = i6;
+                if (!dispatchNestedPreFling(f, f2)) {
                 }
             }
         }
@@ -777,16 +816,16 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     public final int K(l lVar) {
         if ((lVar.j & 524) == 0 && lVar.f()) {
             int i = lVar.c;
-            ArrayList arrayList = (ArrayList) this.U.d;
+            ArrayList arrayList = (ArrayList) this.g0.d;
             int size = arrayList.size();
             for (int i2 = 0; i2 < size; i2++) {
-                s6 s6Var = (s6) arrayList.get(i2);
-                int i3 = s6Var.a;
+                e7 e7Var = (e7) arrayList.get(i2);
+                int i3 = e7Var.a;
                 if (i3 != 1) {
                     if (i3 == 2) {
-                        int i4 = s6Var.b;
+                        int i4 = e7Var.b;
                         if (i4 <= i) {
-                            int i5 = s6Var.d;
+                            int i5 = e7Var.d;
                             if (i4 + i5 <= i) {
                                 i -= i5;
                             }
@@ -794,20 +833,20 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                             continue;
                         }
                     } else if (i3 == 8) {
-                        int i6 = s6Var.b;
+                        int i6 = e7Var.b;
                         if (i6 == i) {
-                            i = s6Var.d;
+                            i = e7Var.d;
                         } else {
                             if (i6 < i) {
                                 i--;
                             }
-                            if (s6Var.d <= i) {
+                            if (e7Var.d <= i) {
                                 i++;
                             }
                         }
                     }
-                } else if (s6Var.b <= i) {
-                    i += s6Var.d;
+                } else if (e7Var.b <= i) {
+                    i += e7Var.d;
                 }
             }
             return i;
@@ -816,7 +855,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final long L(l lVar) {
-        return this.f0.b ? lVar.e : lVar.c;
+        return this.o0.b ? lVar.e : lVar.c;
     }
 
     public final l M(View view) {
@@ -824,22 +863,22 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         if (parent == null || parent == this) {
             return N(view);
         }
-        en0.n("View ", view, " is not a direct child of ", this);
+        ku0.m("View ", view, " is not a direct child of ", this);
         return null;
     }
 
     public final Rect O(View view) {
         LayoutParams layoutParams = (LayoutParams) view.getLayoutParams();
-        boolean z = layoutParams.S;
-        Rect rect = layoutParams.R;
-        if (!z || (this.Y0.g && (layoutParams.Q.l() || layoutParams.Q.g()))) {
+        boolean z = layoutParams.Z;
+        Rect rect = layoutParams.Y;
+        if (!z || (this.h1.g && (layoutParams.X.l() || layoutParams.X.g()))) {
             return rect;
         }
         rect.set(0, 0, 0, 0);
-        ArrayList arrayList = this.j0;
+        ArrayList arrayList = this.s0;
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
-            Rect rect2 = this.c0;
+            Rect rect2 = this.l0;
             rect2.set(0, 0, 0, 0);
             ((g) arrayList.get(i)).f(rect2, view, this);
             rect.left += rect2.left;
@@ -847,12 +886,12 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
             rect.right += rect2.right;
             rect.bottom += rect2.bottom;
         }
-        layoutParams.S = false;
+        layoutParams.Z = false;
         return rect;
     }
 
     public final boolean P() {
-        return !this.o0 || this.x0 || this.U.x();
+        return !this.x0 || this.G0 || this.g0.x();
     }
 
     public boolean Q() {
@@ -860,68 +899,68 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final boolean R() {
-        return this.z0 > 0;
+        return this.I0 > 0;
     }
 
     public final void S(int i) {
-        if (this.g0 == null) {
+        if (this.p0 == null) {
             return;
         }
         setScrollState(2);
-        this.g0.N0(i);
+        this.p0.M0(i);
         awakenScrollBars();
     }
 
     public final void T() {
-        ka0 ka0Var = this.V;
-        int iJ = ka0Var.j();
-        for (int i = 0; i < iJ; i++) {
-            ((LayoutParams) ka0Var.i(i).getLayoutParams()).S = true;
+        xk0 xk0Var = this.h0;
+        int n = xk0Var.n();
+        for (int i = 0; i < n; i++) {
+            ((LayoutParams) xk0Var.m(i).getLayoutParams()).Z = true;
         }
-        ArrayList arrayList = this.S.c;
+        ArrayList arrayList = this.e0.c;
         int size = arrayList.size();
         for (int i2 = 0; i2 < size; i2++) {
             LayoutParams layoutParams = (LayoutParams) ((l) arrayList.get(i2)).a.getLayoutParams();
             if (layoutParams != null) {
-                layoutParams.S = true;
+                layoutParams.Z = true;
             }
         }
     }
 
     public final void U(boolean z, int i, int i2) {
         int i3 = i + i2;
-        ka0 ka0Var = this.V;
-        int iJ = ka0Var.j();
-        for (int i4 = 0; i4 < iJ; i4++) {
-            l lVarN = N(ka0Var.i(i4));
-            if (lVarN != null && !lVarN.p()) {
-                int i5 = lVarN.c;
-                be5 be5Var = this.Y0;
+        xk0 xk0Var = this.h0;
+        int n = xk0Var.n();
+        for (int i4 = 0; i4 < n; i4++) {
+            l N = N(xk0Var.m(i4));
+            if (N != null && !N.p()) {
+                int i5 = N.c;
+                gy5 gy5Var = this.h1;
                 if (i5 >= i3) {
-                    if (u1) {
-                        lVarN.toString();
+                    if (D1) {
+                        N.toString();
                     }
-                    lVarN.m(-i2, z);
-                    be5Var.f = true;
+                    N.m(-i2, z);
+                    gy5Var.f = true;
                 } else if (i5 >= i) {
-                    if (u1) {
-                        lVarN.toString();
+                    if (D1) {
+                        N.toString();
                     }
-                    lVarN.a(8);
-                    lVarN.m(-i2, z);
-                    lVarN.c = i - 1;
-                    be5Var.f = true;
+                    N.a(8);
+                    N.m(-i2, z);
+                    N.c = i - 1;
+                    gy5Var.f = true;
                 }
             }
         }
-        k kVar = this.S;
+        k kVar = this.e0;
         ArrayList arrayList = kVar.c;
         for (int size = arrayList.size() - 1; size >= 0; size--) {
             l lVar = (l) arrayList.get(size);
             if (lVar != null) {
                 int i6 = lVar.c;
                 if (i6 >= i3) {
-                    if (u1) {
+                    if (D1) {
                         lVar.toString();
                     }
                     lVar.m(-i2, z);
@@ -935,30 +974,30 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final void V() {
-        this.z0++;
+        this.I0++;
     }
 
     public final void W(boolean z) {
         int i;
         AccessibilityManager accessibilityManager;
-        int i2 = this.z0 - 1;
-        this.z0 = i2;
+        int i2 = this.I0 - 1;
+        this.I0 = i2;
         if (i2 < 1) {
-            if (t1 && i2 < 0) {
-                fn.s("layout or scroll counter cannot go below zero.Some calls are not matching".concat(C()));
+            if (C1 && i2 < 0) {
+                i60.g("layout or scroll counter cannot go below zero.Some calls are not matching".concat(C()));
                 return;
             }
-            this.z0 = 0;
+            this.I0 = 0;
             if (z) {
-                int i3 = this.t0;
-                this.t0 = 0;
-                if (i3 != 0 && (accessibilityManager = this.v0) != null && accessibilityManager.isEnabled()) {
-                    AccessibilityEvent accessibilityEventObtain = AccessibilityEvent.obtain();
-                    accessibilityEventObtain.setEventType(2048);
-                    accessibilityEventObtain.setContentChangeTypes(i3);
-                    sendAccessibilityEventUnchecked(accessibilityEventObtain);
+                int i3 = this.C0;
+                this.C0 = 0;
+                if (i3 != 0 && (accessibilityManager = this.E0) != null && accessibilityManager.isEnabled()) {
+                    AccessibilityEvent obtain = AccessibilityEvent.obtain();
+                    obtain.setEventType(2048);
+                    obtain.setContentChangeTypes(i3);
+                    sendAccessibilityEventUnchecked(obtain);
                 }
-                ArrayList arrayList = this.l1;
+                ArrayList arrayList = this.u1;
                 for (int size = arrayList.size() - 1; size >= 0; size--) {
                     l lVar = (l) arrayList.get(size);
                     if (lVar.a.getParent() == this && !lVar.p() && (i = lVar.q) != -1) {
@@ -973,68 +1012,68 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     public final void X(MotionEvent motionEvent) {
         int actionIndex = motionEvent.getActionIndex();
-        if (motionEvent.getPointerId(actionIndex) == this.I0) {
+        if (motionEvent.getPointerId(actionIndex) == this.R0) {
             int i = actionIndex == 0 ? 1 : 0;
-            this.I0 = motionEvent.getPointerId(i);
+            this.R0 = motionEvent.getPointerId(i);
             int x = (int) (motionEvent.getX(i) + 0.5f);
-            this.M0 = x;
-            this.K0 = x;
+            this.V0 = x;
+            this.T0 = x;
             int y = (int) (motionEvent.getY(i) + 0.5f);
-            this.N0 = y;
-            this.L0 = y;
+            this.W0 = y;
+            this.U0 = y;
         }
     }
 
     public final void Y() {
-        if (this.e1 || !this.m0) {
+        if (this.n1 || !this.v0) {
             return;
         }
-        WeakHashMap weakHashMap = qn7.a;
-        postOnAnimation(this.m1);
-        this.e1 = true;
+        WeakHashMap weakHashMap = ni8.a;
+        postOnAnimation(this.v1);
+        this.n1 = true;
     }
 
     public final void Z() {
         boolean z;
-        boolean z2 = this.x0;
-        t6 t6Var = this.U;
+        boolean z2 = this.G0;
+        f7 f7Var = this.g0;
         boolean z3 = false;
         if (z2) {
-            t6Var.I((ArrayList) t6Var.d);
-            t6Var.I((ArrayList) t6Var.e);
-            t6Var.b = 0;
-            if (this.y0) {
-                this.g0.p0();
+            f7Var.I((ArrayList) f7Var.d);
+            f7Var.I((ArrayList) f7Var.e);
+            f7Var.b = 0;
+            if (this.H0) {
+                this.p0.p0();
             }
         }
-        if (this.G0 != null && this.g0.Z0()) {
-            t6Var.G();
+        if (this.P0 != null && this.p0.Y0()) {
+            f7Var.G();
         } else {
-            t6Var.o();
+            f7Var.o();
         }
-        boolean z4 = this.b1 || this.c1;
-        boolean z5 = this.o0 && this.G0 != null && ((z = this.x0) || z4 || this.g0.V) && (!z || this.f0.b);
-        be5 be5Var = this.Y0;
-        be5Var.j = z5;
-        if (z5 && z4 && !this.x0 && this.G0 != null && this.g0.Z0()) {
+        boolean z4 = this.k1 || this.l1;
+        boolean z5 = this.x0 && this.P0 != null && ((z = this.G0) || z4 || this.p0.e0) && (!z || this.o0.b);
+        gy5 gy5Var = this.h1;
+        gy5Var.j = z5;
+        if (z5 && z4 && !this.G0 && this.P0 != null && this.p0.Y0()) {
             z3 = true;
         }
-        be5Var.k = z3;
+        gy5Var.k = z3;
     }
 
     public final void a0(boolean z) {
-        this.y0 = z | this.y0;
-        this.x0 = true;
-        ka0 ka0Var = this.V;
-        int iJ = ka0Var.j();
-        for (int i = 0; i < iJ; i++) {
-            l lVarN = N(ka0Var.i(i));
-            if (lVarN != null && !lVarN.p()) {
-                lVarN.a(6);
+        this.H0 = z | this.H0;
+        this.G0 = true;
+        xk0 xk0Var = this.h0;
+        int n = xk0Var.n();
+        for (int i = 0; i < n; i++) {
+            l N = N(xk0Var.m(i));
+            if (N != null && !N.p()) {
+                N.a(6);
             }
         }
         T();
-        k kVar = this.S;
+        k kVar = this.e0;
         ArrayList arrayList = kVar.c;
         int size = arrayList.size();
         for (int i2 = 0; i2 < size; i2++) {
@@ -1044,7 +1083,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                 lVar.a(1024);
             }
         }
-        f fVar = kVar.h.f0;
+        f fVar = kVar.h.o0;
         if (fVar == null || !fVar.b) {
             kVar.g();
         }
@@ -1052,113 +1091,113 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.ViewGroup, android.view.View
     public final void addFocusables(ArrayList arrayList, int i, int i2) {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar == null || !jVar.f0(this, arrayList, i, i2)) {
             super.addFocusables(arrayList, i, i2);
         }
     }
 
-    public final void b0(l lVar, f70 f70Var) {
+    public final void b0(l lVar, v90 v90Var) {
         lVar.j &= -8193;
-        boolean z = this.Y0.h;
-        th5 th5Var = this.W;
+        boolean z = this.h1.h;
+        q96 q96Var = this.i0;
         if (z && lVar.l() && !lVar.i() && !lVar.p()) {
-            ((kr3) th5Var.S).i(L(lVar), lVar);
+            ((k84) q96Var.Z).f(L(lVar), lVar);
         }
-        la6 la6Var = (la6) th5Var.R;
-        eo7 eo7VarA = (eo7) la6Var.get(lVar);
-        if (eo7VarA == null) {
-            eo7VarA = eo7.a();
-            la6Var.put(lVar, eo7VarA);
+        jx6 jx6Var = (jx6) q96Var.Y;
+        dj8 dj8Var = (dj8) jx6Var.get(lVar);
+        if (dj8Var == null) {
+            dj8Var = dj8.a();
+            jx6Var.put(lVar, dj8Var);
         }
-        eo7VarA.b = f70Var;
-        eo7VarA.a |= 4;
+        dj8Var.b = v90Var;
+        dj8Var.a |= 4;
     }
 
     public final void c0() {
-        boolean zIsFinished;
-        EdgeEffect edgeEffect = this.C0;
+        boolean z;
+        EdgeEffect edgeEffect = this.L0;
         if (edgeEffect != null) {
             edgeEffect.onRelease();
-            zIsFinished = this.C0.isFinished();
+            z = this.L0.isFinished();
         } else {
-            zIsFinished = false;
+            z = false;
         }
-        EdgeEffect edgeEffect2 = this.D0;
+        EdgeEffect edgeEffect2 = this.M0;
         if (edgeEffect2 != null) {
             edgeEffect2.onRelease();
-            zIsFinished |= this.D0.isFinished();
+            z |= this.M0.isFinished();
         }
-        EdgeEffect edgeEffect3 = this.E0;
+        EdgeEffect edgeEffect3 = this.N0;
         if (edgeEffect3 != null) {
             edgeEffect3.onRelease();
-            zIsFinished |= this.E0.isFinished();
+            z |= this.N0.isFinished();
         }
-        EdgeEffect edgeEffect4 = this.F0;
+        EdgeEffect edgeEffect4 = this.O0;
         if (edgeEffect4 != null) {
             edgeEffect4.onRelease();
-            zIsFinished |= this.F0.isFinished();
+            z |= this.O0.isFinished();
         }
-        if (zIsFinished) {
+        if (z) {
             postInvalidateOnAnimation();
         }
     }
 
     @Override // android.view.ViewGroup
     public final boolean checkLayoutParams(ViewGroup.LayoutParams layoutParams) {
-        return (layoutParams instanceof LayoutParams) && this.g0.r((LayoutParams) layoutParams);
+        return (layoutParams instanceof LayoutParams) && this.p0.r((LayoutParams) layoutParams);
     }
 
     @Override // android.view.View, androidx.core.view.ScrollingView
     public final int computeHorizontalScrollExtent() {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null && jVar.p()) {
-            return this.g0.v(this.Y0);
+            return this.p0.v(this.h1);
         }
         return 0;
     }
 
     @Override // android.view.View, androidx.core.view.ScrollingView
     public final int computeHorizontalScrollOffset() {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null && jVar.p()) {
-            return this.g0.w(this.Y0);
+            return this.p0.w(this.h1);
         }
         return 0;
     }
 
     @Override // android.view.View, androidx.core.view.ScrollingView
     public final int computeHorizontalScrollRange() {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null && jVar.p()) {
-            return this.g0.x(this.Y0);
+            return this.p0.x(this.h1);
         }
         return 0;
     }
 
     @Override // android.view.View, androidx.core.view.ScrollingView
     public final int computeVerticalScrollExtent() {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null && jVar.q()) {
-            return this.g0.y(this.Y0);
+            return this.p0.y(this.h1);
         }
         return 0;
     }
 
     @Override // android.view.View, androidx.core.view.ScrollingView
     public final int computeVerticalScrollOffset() {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null && jVar.q()) {
-            return this.g0.z(this.Y0);
+            return this.p0.z(this.h1);
         }
         return 0;
     }
 
     @Override // android.view.View, androidx.core.view.ScrollingView
     public final int computeVerticalScrollRange() {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null && jVar.q()) {
-            return this.g0.A(this.Y0);
+            return this.p0.A(this.h1);
         }
         return 0;
     }
@@ -1166,33 +1205,33 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     public final int d0(int i, float f) {
         float height = f / getHeight();
         float width = i / getWidth();
-        EdgeEffect edgeEffect = this.C0;
+        EdgeEffect edgeEffect = this.L0;
         float f2 = 0.0f;
-        if (edgeEffect == null || ew0.G(edgeEffect) == 0.0f) {
-            EdgeEffect edgeEffect2 = this.E0;
-            if (edgeEffect2 != null && ew0.G(edgeEffect2) != 0.0f) {
-                boolean zCanScrollHorizontally = canScrollHorizontally(1);
-                EdgeEffect edgeEffect3 = this.E0;
-                if (zCanScrollHorizontally) {
+        if (edgeEffect == null || j68.G(edgeEffect) == 0.0f) {
+            EdgeEffect edgeEffect2 = this.N0;
+            if (edgeEffect2 != null && j68.G(edgeEffect2) != 0.0f) {
+                boolean canScrollHorizontally = canScrollHorizontally(1);
+                EdgeEffect edgeEffect3 = this.N0;
+                if (canScrollHorizontally) {
                     edgeEffect3.onRelease();
                 } else {
-                    float fR = ew0.R(edgeEffect3, width, height);
-                    if (ew0.G(this.E0) == 0.0f) {
-                        this.E0.onRelease();
+                    float l0 = j68.l0(edgeEffect3, width, height);
+                    if (j68.G(this.N0) == 0.0f) {
+                        this.N0.onRelease();
                     }
-                    f2 = fR;
+                    f2 = l0;
                 }
                 invalidate();
             }
         } else {
-            boolean zCanScrollHorizontally2 = canScrollHorizontally(-1);
-            EdgeEffect edgeEffect4 = this.C0;
-            if (zCanScrollHorizontally2) {
+            boolean canScrollHorizontally2 = canScrollHorizontally(-1);
+            EdgeEffect edgeEffect4 = this.L0;
+            if (canScrollHorizontally2) {
                 edgeEffect4.onRelease();
             } else {
-                float f3 = -ew0.R(edgeEffect4, -width, 1.0f - height);
-                if (ew0.G(this.C0) == 0.0f) {
-                    this.C0.onRelease();
+                float f3 = -j68.l0(edgeEffect4, -width, 1.0f - height);
+                if (j68.G(this.L0) == 0.0f) {
+                    this.L0.onRelease();
                 }
                 f2 = f3;
             }
@@ -1207,7 +1246,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
             return true;
         }
         j layoutManager = getLayoutManager();
-        int iA = 0;
+        int i = 0;
         if (layoutManager != null) {
             if (layoutManager.q()) {
                 int keyCode = keyEvent.getKeyCode();
@@ -1224,12 +1263,12 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                     boolean Z = layoutManager.Z();
                     if (keyCode == 122) {
                         if (Z) {
-                            iA = getAdapter().a();
+                            i = getAdapter().a();
                         }
                     } else if (!Z) {
-                        iA = getAdapter().a();
+                        i = getAdapter().a();
                     }
-                    o0(iA);
+                    o0(i);
                     return true;
                 }
             } else if (layoutManager.p()) {
@@ -1247,12 +1286,12 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                     boolean Z2 = layoutManager.Z();
                     if (keyCode2 == 122) {
                         if (Z2) {
-                            iA = getAdapter().a();
+                            i = getAdapter().a();
                         }
                     } else if (!Z2) {
-                        iA = getAdapter().a();
+                        i = getAdapter().a();
                     }
-                    o0(iA);
+                    o0(i);
                     return true;
                 }
             }
@@ -1262,13 +1301,13 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.View
     public final boolean dispatchNestedFling(float f, float f2, boolean z) {
-        ViewParent viewParentD;
-        fb4 scrollingChildHelper = getScrollingChildHelper();
-        if (scrollingChildHelper.d && (viewParentD = scrollingChildHelper.d(0)) != null) {
+        ViewParent d;
+        us4 scrollingChildHelper = getScrollingChildHelper();
+        if (scrollingChildHelper.d && (d = scrollingChildHelper.d(0)) != null) {
             try {
-                return viewParentD.onNestedFling(scrollingChildHelper.c, f, f2, z);
+                return d.onNestedFling(scrollingChildHelper.c, f, f2, z);
             } catch (AbstractMethodError unused) {
-                Objects.toString(viewParentD);
+                Objects.toString(d);
             }
         }
         return false;
@@ -1309,62 +1348,62 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     public void draw(Canvas canvas) {
         boolean z;
         super.draw(canvas);
-        ArrayList arrayList = this.j0;
+        ArrayList arrayList = this.s0;
         int size = arrayList.size();
         boolean z2 = false;
         for (int i = 0; i < size; i++) {
             ((g) arrayList.get(i)).h(canvas, this);
         }
-        EdgeEffect edgeEffect = this.C0;
+        EdgeEffect edgeEffect = this.L0;
         if (edgeEffect == null || edgeEffect.isFinished()) {
             z = false;
         } else {
-            int iSave = canvas.save();
-            int paddingBottom = this.a0 ? getPaddingBottom() : 0;
+            int save = canvas.save();
+            int paddingBottom = this.j0 ? getPaddingBottom() : 0;
             canvas.rotate(270.0f);
             canvas.translate((-getHeight()) + paddingBottom, 0.0f);
-            EdgeEffect edgeEffect2 = this.C0;
+            EdgeEffect edgeEffect2 = this.L0;
             z = edgeEffect2 != null && edgeEffect2.draw(canvas);
-            canvas.restoreToCount(iSave);
+            canvas.restoreToCount(save);
         }
-        EdgeEffect edgeEffect3 = this.D0;
+        EdgeEffect edgeEffect3 = this.M0;
         if (edgeEffect3 != null && !edgeEffect3.isFinished()) {
-            int iSave2 = canvas.save();
-            if (this.a0) {
+            int save2 = canvas.save();
+            if (this.j0) {
                 canvas.translate(getPaddingLeft(), getPaddingTop());
             }
-            EdgeEffect edgeEffect4 = this.D0;
+            EdgeEffect edgeEffect4 = this.M0;
             z |= edgeEffect4 != null && edgeEffect4.draw(canvas);
-            canvas.restoreToCount(iSave2);
+            canvas.restoreToCount(save2);
         }
-        EdgeEffect edgeEffect5 = this.E0;
+        EdgeEffect edgeEffect5 = this.N0;
         if (edgeEffect5 != null && !edgeEffect5.isFinished()) {
-            int iSave3 = canvas.save();
+            int save3 = canvas.save();
             int width = getWidth();
-            int paddingTop = this.a0 ? getPaddingTop() : 0;
+            int paddingTop = this.j0 ? getPaddingTop() : 0;
             canvas.rotate(90.0f);
             canvas.translate(paddingTop, -width);
-            EdgeEffect edgeEffect6 = this.E0;
+            EdgeEffect edgeEffect6 = this.N0;
             z |= edgeEffect6 != null && edgeEffect6.draw(canvas);
-            canvas.restoreToCount(iSave3);
+            canvas.restoreToCount(save3);
         }
-        EdgeEffect edgeEffect7 = this.F0;
+        EdgeEffect edgeEffect7 = this.O0;
         if (edgeEffect7 != null && !edgeEffect7.isFinished()) {
-            int iSave4 = canvas.save();
+            int save4 = canvas.save();
             canvas.rotate(180.0f);
-            if (this.a0) {
+            if (this.j0) {
                 canvas.translate(getPaddingRight() + (-getWidth()), getPaddingBottom() + (-getHeight()));
             } else {
                 canvas.translate(-getWidth(), -getHeight());
             }
-            EdgeEffect edgeEffect8 = this.F0;
+            EdgeEffect edgeEffect8 = this.O0;
             if (edgeEffect8 != null && edgeEffect8.draw(canvas)) {
                 z2 = true;
             }
             z |= z2;
-            canvas.restoreToCount(iSave4);
+            canvas.restoreToCount(save4);
         }
-        if ((z || this.G0 == null || arrayList.size() <= 0 || !this.G0.f()) ? z : true) {
+        if ((z || this.P0 == null || arrayList.size() <= 0 || !this.P0.f()) ? z : true) {
             postInvalidateOnAnimation();
         }
     }
@@ -1377,33 +1416,33 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     public final int e0(int i, float f) {
         float width = f / getWidth();
         float height = i / getHeight();
-        EdgeEffect edgeEffect = this.D0;
+        EdgeEffect edgeEffect = this.M0;
         float f2 = 0.0f;
-        if (edgeEffect == null || ew0.G(edgeEffect) == 0.0f) {
-            EdgeEffect edgeEffect2 = this.F0;
-            if (edgeEffect2 != null && ew0.G(edgeEffect2) != 0.0f) {
-                boolean zCanScrollVertically = canScrollVertically(1);
-                EdgeEffect edgeEffect3 = this.F0;
-                if (zCanScrollVertically) {
+        if (edgeEffect == null || j68.G(edgeEffect) == 0.0f) {
+            EdgeEffect edgeEffect2 = this.O0;
+            if (edgeEffect2 != null && j68.G(edgeEffect2) != 0.0f) {
+                boolean canScrollVertically = canScrollVertically(1);
+                EdgeEffect edgeEffect3 = this.O0;
+                if (canScrollVertically) {
                     edgeEffect3.onRelease();
                 } else {
-                    float fR = ew0.R(edgeEffect3, height, 1.0f - width);
-                    if (ew0.G(this.F0) == 0.0f) {
-                        this.F0.onRelease();
+                    float l0 = j68.l0(edgeEffect3, height, 1.0f - width);
+                    if (j68.G(this.O0) == 0.0f) {
+                        this.O0.onRelease();
                     }
-                    f2 = fR;
+                    f2 = l0;
                 }
                 invalidate();
             }
         } else {
-            boolean zCanScrollVertically2 = canScrollVertically(-1);
-            EdgeEffect edgeEffect4 = this.D0;
-            if (zCanScrollVertically2) {
+            boolean canScrollVertically2 = canScrollVertically(-1);
+            EdgeEffect edgeEffect4 = this.M0;
+            if (canScrollVertically2) {
                 edgeEffect4.onRelease();
             } else {
-                float f3 = -ew0.R(edgeEffect4, -height, width);
-                if (ew0.G(this.D0) == 0.0f) {
-                    this.D0.onRelease();
+                float f3 = -j68.l0(edgeEffect4, -height, width);
+                if (j68.G(this.M0) == 0.0f) {
+                    this.M0.onRelease();
                 }
                 f2 = f3;
             }
@@ -1413,11 +1452,11 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final void f0(g gVar) {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null) {
             jVar.n("Cannot remove item decoration during a scroll  or layout");
         }
-        ArrayList arrayList = this.j0;
+        ArrayList arrayList = this.s0;
         arrayList.remove(gVar);
         if (arrayList.isEmpty()) {
             setWillNotDraw(getOverScrollMode() == 2);
@@ -1426,214 +1465,202 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         requestLayout();
     }
 
-    /* JADX WARN: Code duplicated, block: B:112:0x0160 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:113:0x0162 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:114:0x0164 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:115:0x0166  */
-    /* JADX WARN: Code duplicated, block: B:117:0x016a  */
-    /* JADX WARN: Code duplicated, block: B:119:0x016e A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:121:0x0171  */
-    /* JADX WARN: Code duplicated, block: B:123:0x017b A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:125:0x017e A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:127:0x0181 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:129:0x0184  */
-    /* JADX WARN: Code duplicated, block: B:130:0x0186  */
-    /* JADX WARN: Code duplicated, block: B:131:0x0188  */
-    /* JADX WARN: Code duplicated, block: B:134:0x018d  */
-    /* JADX WARN: Code duplicated, block: B:135:0x018f  */
-    /* JADX WARN: Code duplicated, block: B:136:0x0191  */
-    /* JADX WARN: Code duplicated, block: B:27:0x0051  */
-    /* JADX WARN: Code duplicated, block: B:83:0x0118  */
-    /* JADX WARN: Code duplicated, block: B:84:0x011a  */
-    /* JADX WARN: Code restructure failed: missing block: B:119:0x016e, code lost:
-    
-        if (r16 > 0) goto L138;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:123:0x017b, code lost:
-    
-        if (r5 > 0) goto L138;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:125:0x017e, code lost:
-    
-        if (r16 < 0) goto L138;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:127:0x0181, code lost:
-    
-        if (r5 < 0) goto L138;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:132:0x018a, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:102:0x0187, code lost:
     
         if ((r5 * r6) <= 0) goto L139;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:137:0x0193, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:106:0x018f, code lost:
     
         if ((r5 * r6) >= 0) goto L139;
      */
+    /* JADX WARN: Code restructure failed: missing block: B:93:0x016c, code lost:
+    
+        if (r16 > 0) goto L138;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:96:0x0179, code lost:
+    
+        if (r5 > 0) goto L138;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:97:0x017c, code lost:
+    
+        if (r16 < 0) goto L138;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:98:0x017f, code lost:
+    
+        if (r5 < 0) goto L138;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:103:0x018a  */
+    /* JADX WARN: Removed duplicated region for block: B:117:0x0118  */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x0065  */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x006a  */
+    /* JADX WARN: Removed duplicated region for block: B:35:0x0070  */
+    /* JADX WARN: Removed duplicated region for block: B:38:0x007a  */
+    /* JADX WARN: Removed duplicated region for block: B:39:0x007c  */
+    /* JADX WARN: Removed duplicated region for block: B:40:0x0073  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x006c  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x0067  */
+    /* JADX WARN: Removed duplicated region for block: B:44:0x007f  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x00bb  */
+    /* JADX WARN: Removed duplicated region for block: B:59:0x00d2 A[ADDED_TO_REGION] */
+    /* JADX WARN: Removed duplicated region for block: B:68:0x0116  */
+    /* JADX WARN: Removed duplicated region for block: B:86:0x015e  */
     @Override // android.view.ViewGroup, android.view.ViewParent
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final View focusSearch(View view, int i) {
-        View viewI0;
+        View view2;
         int i2;
         int i3;
         int i4;
         int i5;
         int i6;
-        byte b;
+        char c;
         boolean z;
-        View viewN0 = this.g0.n0(view, i);
-        if (viewN0 != null) {
-            return viewN0;
+        View n0 = this.p0.n0(view, i);
+        if (n0 != null) {
+            return n0;
         }
-        boolean z2 = (this.f0 == null || this.g0 == null || R() || this.r0) ? false : true;
+        boolean z2 = (this.o0 == null || this.p0 == null || R() || this.A0) ? false : true;
         FocusFinder focusFinder = FocusFinder.getInstance();
-        be5 be5Var = this.Y0;
-        k kVar = this.S;
+        gy5 gy5Var = this.h1;
+        k kVar = this.e0;
         if (z2 && (i == 2 || i == 1)) {
-            if (this.g0.q()) {
+            if (this.p0.q()) {
                 if (focusFinder.findNextFocus(this, view, i == 2 ? 130 : 33) == null) {
                     z = true;
-                } else {
-                    z = false;
+                    if (!z && this.p0.p()) {
+                        z = focusFinder.findNextFocus(this, view, !((this.p0.Y.getLayoutDirection() != 1) ^ (i != 2)) ? 66 : 17) != null;
+                    }
+                    if (z) {
+                        p();
+                        if (E(view) != null) {
+                            p0();
+                            this.p0.i0(view, i, kVar, gy5Var);
+                            r0(false);
+                        }
+                        return null;
+                    }
+                    view2 = focusFinder.findNextFocus(this, view, i);
+                    if (view2 == null) {
+                    }
+                    if (view2 != null) {
+                        if (view != null) {
+                            int width = view.getWidth();
+                            int height = view.getHeight();
+                            Rect rect = this.l0;
+                            rect.set(0, 0, width, height);
+                            int width2 = view2.getWidth();
+                            int height2 = view2.getHeight();
+                            Rect rect2 = this.m0;
+                            rect2.set(0, 0, width2, height2);
+                            offsetDescendantRectToMyCoords(view, rect);
+                            offsetDescendantRectToMyCoords(view2, rect2);
+                            if (this.p0.Y.getLayoutDirection() != 1) {
+                            }
+                            i2 = rect.left;
+                            i3 = rect2.left;
+                            if (i2 >= i3) {
+                            }
+                            i4 = 1;
+                            i5 = rect.top;
+                            i6 = rect2.top;
+                            if (i5 >= i6) {
+                            }
+                            c = 1;
+                            if (i == 1) {
+                            }
+                        }
+                        return view2;
+                    }
+                    return super.focusSearch(view, i);
                 }
-            } else {
-                z = false;
             }
-            if (!z && this.g0.p()) {
-                z = focusFinder.findNextFocus(this, view, (this.g0.R.getLayoutDirection() == 1) ^ (i == 2) ? 66 : 17) == null;
+            z = false;
+            if (!z) {
+                if (focusFinder.findNextFocus(this, view, !((this.p0.Y.getLayoutDirection() != 1) ^ (i != 2)) ? 66 : 17) != null) {
+                }
             }
             if (z) {
-                p();
-                if (E(view) != null) {
-                    p0();
-                    this.g0.i0(view, i, kVar, be5Var);
-                    r0(false);
-                }
-                return null;
             }
-            viewI0 = focusFinder.findNextFocus(this, view, i);
-            if (viewI0 == null) {
+            view2 = focusFinder.findNextFocus(this, view, i);
+            if (view2 == null) {
             }
-            if (viewI0 != null) {
-                if (view != null) {
-                    int width = view.getWidth();
-                    int height = view.getHeight();
-                    Rect rect = this.c0;
-                    rect.set(0, 0, width, height);
-                    int width2 = viewI0.getWidth();
-                    int height2 = viewI0.getHeight();
-                    Rect rect2 = this.d0;
-                    rect2.set(0, 0, width2, height2);
-                    offsetDescendantRectToMyCoords(view, rect);
-                    offsetDescendantRectToMyCoords(viewI0, rect2);
-                    if (this.g0.R.getLayoutDirection() == 1) {
-                        i2 = -1;
-                    } else {
-                        i2 = 1;
-                    }
-                    i3 = rect.left;
-                    i4 = rect2.left;
-                    int i7 = i3 < i4 ? 1 : 1;
-                    i5 = rect.top;
-                    i6 = rect2.top;
-                    b = i5 < i6 ? (byte) 1 : (byte) 1;
-                    if (i != 1) {
-                        if (i != 2) {
-                            if (i != 17) {
-                                if (i != 33) {
-                                    if (i != 66) {
-                                        if (i == 130) {
-                                            fn.h(i, C(), "Invalid direction: ");
-                                            return null;
-                                        }
-                                    }
-                                }
-                            }
-                        } else if (b <= 0) {
-                            if (b == 0) {
-                            }
-                        }
-                    } else if (b >= 0) {
-                        if (b == 0) {
-                        }
-                    }
-                }
-                return viewI0;
+            if (view2 != null) {
             }
             return super.focusSearch(view, i);
         }
-        View viewFindNextFocus = focusFinder.findNextFocus(this, view, i);
-        if (viewFindNextFocus == null && z2) {
+        View findNextFocus = focusFinder.findNextFocus(this, view, i);
+        if (findNextFocus == null && z2) {
             p();
             if (E(view) != null) {
                 p0();
-                viewI0 = this.g0.i0(view, i, kVar, be5Var);
+                view2 = this.p0.i0(view, i, kVar, gy5Var);
                 r0(false);
             }
             return null;
         }
-        viewI0 = viewFindNextFocus;
-        if (viewI0 == null && !viewI0.hasFocusable()) {
+        view2 = findNextFocus;
+        if (view2 == null && !view2.hasFocusable()) {
             if (getFocusedChild() == null) {
                 return super.focusSearch(view, i);
             }
-            g0(viewI0, null);
+            g0(view2, null);
             return view;
         }
-        if (viewI0 != null && viewI0 != this && viewI0 != view && E(viewI0) != null) {
+        if (view2 != null && view2 != this && view2 != view && E(view2) != null) {
             if (view != null && E(view) != null) {
                 int width3 = view.getWidth();
                 int height3 = view.getHeight();
-                Rect rect3 = this.c0;
+                Rect rect3 = this.l0;
                 rect3.set(0, 0, width3, height3);
-                int width4 = viewI0.getWidth();
-                int height4 = viewI0.getHeight();
-                Rect rect4 = this.d0;
-                rect4.set(0, 0, width4, height4);
+                int width22 = view2.getWidth();
+                int height22 = view2.getHeight();
+                Rect rect22 = this.m0;
+                rect22.set(0, 0, width22, height22);
                 offsetDescendantRectToMyCoords(view, rect3);
-                offsetDescendantRectToMyCoords(viewI0, rect4);
-                if (this.g0.R.getLayoutDirection() == 1) {
-                    i2 = -1;
+                offsetDescendantRectToMyCoords(view2, rect22);
+                int i7 = this.p0.Y.getLayoutDirection() != 1 ? -1 : 1;
+                i2 = rect3.left;
+                i3 = rect22.left;
+                if ((i2 >= i3 || rect3.right <= i3) && rect3.right < rect22.right) {
+                    i4 = 1;
                 } else {
-                    i2 = 1;
-                }
-                i3 = rect3.left;
-                i4 = rect4.left;
-                if ((i3 < i4 && rect3.right > i4) || rect3.right >= rect4.right) {
                     int i8 = rect3.right;
-                    int i9 = rect4.right;
-                    i7 = ((i8 > i9 || i3 >= i9) && i3 > i4) ? -1 : 0;
+                    int i9 = rect22.right;
+                    i4 = ((i8 > i9 || i2 >= i9) && i2 > i3) ? -1 : 0;
                 }
                 i5 = rect3.top;
-                i6 = rect4.top;
-                if ((i5 < i6 && rect3.bottom > i6) || rect3.bottom >= rect4.bottom) {
+                i6 = rect22.top;
+                if ((i5 >= i6 || rect3.bottom <= i6) && rect3.bottom < rect22.bottom) {
+                    c = 1;
+                } else {
                     int i10 = rect3.bottom;
-                    int i11 = rect4.bottom;
-                    b = ((i10 > i11 || i5 >= i11) && i5 > i6) ? (byte) -1 : (byte) 0;
+                    int i11 = rect22.bottom;
+                    c = ((i10 > i11 || i5 >= i11) && i5 > i6) ? (char) 65535 : (char) 0;
                 }
-                if (i != 1) {
+                if (i == 1) {
                     if (i != 2) {
                         if (i != 17) {
                             if (i != 33) {
                                 if (i != 66) {
-                                    if (i == 130) {
-                                        fn.h(i, C(), "Invalid direction: ");
+                                    if (i != 130) {
+                                        i60.d(i, C(), "Invalid direction: ");
                                         return null;
                                     }
                                 }
                             }
                         }
-                    } else if (b <= 0) {
-                        if (b == 0) {
+                    } else if (c <= 0) {
+                        if (c == 0) {
                         }
                     }
-                } else if (b >= 0) {
-                    if (b == 0) {
+                } else if (c >= 0) {
+                    if (c == 0) {
                     }
                 }
             }
-            return viewI0;
+            return view2;
         }
         return super.focusSearch(view, i);
     }
@@ -1642,13 +1669,13 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         View view3 = view2 != null ? view2 : view;
         int width = view3.getWidth();
         int height = view3.getHeight();
-        Rect rect = this.c0;
+        Rect rect = this.l0;
         rect.set(0, 0, width, height);
         ViewGroup.LayoutParams layoutParams = view3.getLayoutParams();
         if (layoutParams instanceof LayoutParams) {
             LayoutParams layoutParams2 = (LayoutParams) layoutParams;
-            if (!layoutParams2.S) {
-                Rect rect2 = layoutParams2.R;
+            if (!layoutParams2.Z) {
+                Rect rect2 = layoutParams2.Y;
                 rect.left -= rect2.left;
                 rect.right += rect2.right;
                 rect.top -= rect2.top;
@@ -1659,26 +1686,26 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
             offsetDescendantRectToMyCoords(view2, rect);
             offsetRectIntoDescendantCoords(view, rect);
         }
-        this.g0.J0(this, view, this.c0, !this.o0, view2 == null);
+        this.p0.I0(this, view, this.l0, !this.x0, view2 == null);
     }
 
     @Override // android.view.ViewGroup
     public final ViewGroup.LayoutParams generateDefaultLayoutParams() {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null) {
             return jVar.E();
         }
-        fn.s("RecyclerView has no LayoutManager".concat(C()));
+        i60.g("RecyclerView has no LayoutManager".concat(C()));
         return null;
     }
 
     @Override // android.view.ViewGroup
     public final ViewGroup.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null) {
             return jVar.F(getContext(), attributeSet);
         }
-        fn.s("RecyclerView has no LayoutManager".concat(C()));
+        i60.g("RecyclerView has no LayoutManager".concat(C()));
         return null;
     }
 
@@ -1688,12 +1715,12 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public f getAdapter() {
-        return this.f0;
+        return this.o0;
     }
 
     @Override // android.view.View
     public int getBaseline() {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar == null) {
             return super.getBaseline();
         }
@@ -1708,91 +1735,90 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.ViewGroup
     public boolean getClipToPadding() {
-        return this.a0;
+        return this.j0;
     }
 
-    public ge5 getCompatAccessibilityDelegate() {
-        return this.f1;
+    public ly5 getCompatAccessibilityDelegate() {
+        return this.o1;
     }
 
-    public nd5 getEdgeEffectFactory() {
-        return this.B0;
+    public sx5 getEdgeEffectFactory() {
+        return this.K0;
     }
 
-    public od5 getItemAnimator() {
-        return this.G0;
+    public tx5 getItemAnimator() {
+        return this.P0;
     }
 
     public int getItemDecorationCount() {
-        return this.j0.size();
+        return this.s0.size();
     }
 
     public j getLayoutManager() {
-        return this.g0;
+        return this.p0;
     }
 
     public int getMaxFlingVelocity() {
-        return this.R0;
+        return this.a1;
     }
 
     public int getMinFlingVelocity() {
-        return this.Q0;
+        return this.Z0;
     }
 
     public long getNanoTime() {
-        if (y1) {
+        if (H1) {
             return System.nanoTime();
         }
         return 0L;
     }
 
-    public rd5 getOnFlingListener() {
-        return this.P0;
+    public wx5 getOnFlingListener() {
+        return this.Y0;
     }
 
     public boolean getPreserveFocusAfterLayout() {
-        return this.U0;
+        return this.d1;
     }
 
-    public vd5 getRecycledViewPool() {
-        return this.S.c();
+    public ay5 getRecycledViewPool() {
+        return this.e0.c();
     }
 
     public int getScrollState() {
-        return this.H0;
+        return this.Q0;
     }
 
     public final void h(l lVar) {
         View view = lVar.a;
         boolean z = view.getParent() == this;
-        this.S.m(M(view));
-        boolean zK = lVar.k();
-        ka0 ka0Var = this.V;
-        if (zK) {
-            ka0Var.b(view, -1, view.getLayoutParams(), true);
+        this.e0.m(M(view));
+        boolean k = lVar.k();
+        xk0 xk0Var = this.h0;
+        if (k) {
+            xk0Var.g(view, -1, view.getLayoutParams(), true);
             return;
         }
         if (!z) {
-            ka0Var.a(view, -1, true);
+            xk0Var.f(view, -1, true);
             return;
         }
-        int iIndexOfChild = ((hd5) ka0Var.T).a.indexOfChild(view);
-        if (iIndexOfChild < 0) {
-            i62.g(view, "view is not a child, cannot hide ");
+        int indexOfChild = ((mx5) xk0Var.c0).a.indexOfChild(view);
+        if (indexOfChild < 0) {
+            bh2.h(view, "view is not a child, cannot hide ");
         } else {
-            ((ki0) ka0Var.U).j(iIndexOfChild);
-            ka0Var.k(view);
+            ((jp0) xk0Var.d0).j(indexOfChild);
+            xk0Var.o(view);
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:30:0x00c9  */
-    /* JADX WARN: Code duplicated, block: B:32:0x00e0  */
-    /* JADX WARN: Code duplicated, block: B:34:0x00e4  */
-    /* JADX WARN: Code duplicated, block: B:35:0x00fb A[DONT_INVERT, PHI: r7
-      0x00fb: PHI (r7v9 boolean) = (r7v7 boolean), (r7v10 boolean) binds: [B:33:0x00e2, B:31:0x00de] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:36:0x00fd  */
-    /* JADX WARN: Code duplicated, block: B:40:0x0105  */
-    /* JADX WARN: Code duplicated, block: B:43:0x010e  */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x00cb  */
+    /* JADX WARN: Removed duplicated region for block: B:25:0x0100  */
+    /* JADX WARN: Removed duplicated region for block: B:31:0x0111  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x00e3  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final boolean h0(int i, int i2, MotionEvent motionEvent, int i3) {
         int i4;
         int i5;
@@ -1802,8 +1828,8 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         boolean z2;
         boolean z3;
         p();
-        f fVar = this.f0;
-        int[] iArr = this.k1;
+        f fVar = this.o0;
+        int[] iArr = this.t1;
         if (fVar != null) {
             iArr[0] = 0;
             iArr[1] = 0;
@@ -1818,29 +1844,29 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
             i6 = 0;
             i7 = 0;
         }
-        if (!this.j0.isEmpty()) {
+        if (!this.s0.isEmpty()) {
             invalidate();
         }
         iArr[0] = 0;
         iArr[1] = 0;
-        w(i4, i5, i6, i7, this.i1, i3, iArr);
+        w(i4, i5, i6, i7, this.r1, i3, iArr);
         int i8 = iArr[0];
         int i9 = i6 - i8;
         int i10 = iArr[1];
         int i11 = i7 - i10;
         boolean z4 = (i8 == 0 && i10 == 0) ? false : true;
-        int i12 = this.M0;
-        int[] iArr2 = this.i1;
+        int i12 = this.V0;
+        int[] iArr2 = this.r1;
         int i13 = iArr2[0];
-        this.M0 = i12 - i13;
-        int i14 = this.N0;
+        this.V0 = i12 - i13;
+        int i14 = this.W0;
         int i15 = iArr2[1];
-        this.N0 = i14 - i15;
-        int[] iArr3 = this.j1;
+        this.W0 = i14 - i15;
+        int[] iArr3 = this.s1;
         iArr3[0] = iArr3[0] + i13;
         iArr3[1] = iArr3[1] + i15;
         if (getOverScrollMode() != 2) {
-            if (motionEvent == null || hp4.F(motionEvent, 8194)) {
+            if (motionEvent == null || ku8.A(motionEvent, 8194)) {
                 z = true;
                 z2 = false;
             } else {
@@ -1852,65 +1878,47 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                     z();
                     z = true;
                     z2 = false;
-                    ew0.R(this.C0, (-f) / getWidth(), 1.0f - (y / getHeight()));
+                    j68.l0(this.L0, (-f) / getWidth(), 1.0f - (y / getHeight()));
                 } else {
                     z = true;
                     z2 = false;
                     if (f > 0.0f) {
                         A();
-                        ew0.R(this.E0, f / getWidth(), y / getHeight());
+                        j68.l0(this.N0, f / getWidth(), y / getHeight());
                     } else {
                         z3 = false;
-                    }
-                    if (f2 < 0.0f) {
-                        B();
-                        ew0.R(this.D0, (-f2) / getHeight(), x / getWidth());
-                    } else if (f2 > 0.0f) {
-                        y();
-                        ew0.R(this.F0, f2 / getHeight(), 1.0f - (x / getWidth()));
-                    } else {
-                        if (z3 || f != 0.0f || f2 != 0.0f) {
-                            postInvalidateOnAnimation();
+                        if (f2 >= 0.0f) {
+                            B();
+                            j68.l0(this.M0, (-f2) / getHeight(), x / getWidth());
+                        } else {
+                            if (f2 > 0.0f) {
+                                y();
+                                j68.l0(this.O0, f2 / getHeight(), 1.0f - (x / getWidth()));
+                            }
+                            if (!z3 || f != 0.0f || f2 != 0.0f) {
+                                postInvalidateOnAnimation();
+                            }
+                            if (Build.VERSION.SDK_INT >= 31 && ku8.A(motionEvent, 4194304)) {
+                                c0();
+                            }
                         }
-                        if (Build.VERSION.SDK_INT >= 31 && hp4.F(motionEvent, 4194304)) {
+                        z3 = z;
+                        if (!z3) {
+                        }
+                        postInvalidateOnAnimation();
+                        if (Build.VERSION.SDK_INT >= 31) {
                             c0();
                         }
                     }
-                    z3 = true;
-                    if (z3) {
-                        postInvalidateOnAnimation();
-                    } else {
-                        postInvalidateOnAnimation();
-                    }
-                    if (Build.VERSION.SDK_INT >= 31) {
-                        c0();
-                    }
                 }
-                z3 = true;
-                if (f2 < 0.0f) {
-                    B();
-                    ew0.R(this.D0, (-f2) / getHeight(), x / getWidth());
-                } else if (f2 > 0.0f) {
-                    y();
-                    ew0.R(this.F0, f2 / getHeight(), 1.0f - (x / getWidth()));
-                } else {
-                    if (z3) {
-                        postInvalidateOnAnimation();
-                    } else {
-                        postInvalidateOnAnimation();
-                    }
-                    if (Build.VERSION.SDK_INT >= 31) {
-                        c0();
-                    }
+                z3 = z;
+                if (f2 >= 0.0f) {
                 }
-                z3 = true;
-                if (z3) {
-                    postInvalidateOnAnimation();
-                } else {
-                    postInvalidateOnAnimation();
+                z3 = z;
+                if (!z3) {
                 }
+                postInvalidateOnAnimation();
                 if (Build.VERSION.SDK_INT >= 31) {
-                    c0();
                 }
             }
             n(i, i2);
@@ -1933,11 +1941,11 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final void i(g gVar) {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null) {
             jVar.n("Cannot add item decoration during a scroll  or layout");
         }
-        ArrayList arrayList = this.j0;
+        ArrayList arrayList = this.s0;
         if (arrayList.isEmpty()) {
             setWillNotDraw(false);
         }
@@ -1951,21 +1959,21 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         p0();
         V();
         Trace.beginSection("RV Scroll");
-        be5 be5Var = this.Y0;
-        D(be5Var);
-        k kVar = this.S;
-        int iM0 = i != 0 ? this.g0.M0(i, be5Var, kVar) : 0;
-        int iO0 = i2 != 0 ? this.g0.O0(i2, be5Var, kVar) : 0;
+        gy5 gy5Var = this.h1;
+        D(gy5Var);
+        k kVar = this.e0;
+        int L0 = i != 0 ? this.p0.L0(i, gy5Var, kVar) : 0;
+        int N0 = i2 != 0 ? this.p0.N0(i2, gy5Var, kVar) : 0;
         Trace.endSection();
-        ka0 ka0Var = this.V;
-        int iF = ka0Var.f();
-        for (int i3 = 0; i3 < iF; i3++) {
-            View viewD = ka0Var.d(i3);
-            l lVarM = M(viewD);
-            if (lVarM != null && (lVar = lVarM.i) != null) {
+        xk0 xk0Var = this.h0;
+        int k = xk0Var.k();
+        for (int i3 = 0; i3 < k; i3++) {
+            View j = xk0Var.j(i3);
+            l M = M(j);
+            if (M != null && (lVar = M.i) != null) {
                 View view = lVar.a;
-                int left = viewD.getLeft();
-                int top = viewD.getTop();
+                int left = j.getLeft();
+                int top = j.getTop();
                 if (left != view.getLeft() || top != view.getTop()) {
                     view.layout(left, top, view.getWidth() + left, view.getHeight() + top);
                 }
@@ -1974,19 +1982,19 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         W(true);
         r0(false);
         if (iArr != null) {
-            iArr[0] = iM0;
-            iArr[1] = iO0;
+            iArr[0] = L0;
+            iArr[1] = N0;
         }
     }
 
     @Override // android.view.View
     public final boolean isAttachedToWindow() {
-        return this.m0;
+        return this.v0;
     }
 
     @Override // android.view.ViewGroup
     public final boolean isLayoutSuppressed() {
-        return this.r0;
+        return this.A0;
     }
 
     @Override // android.view.View
@@ -1994,35 +2002,35 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         return getScrollingChildHelper().d;
     }
 
-    public final void j(td5 td5Var) {
-        if (this.a1 == null) {
-            this.a1 = new ArrayList();
+    public final void j(yx5 yx5Var) {
+        if (this.j1 == null) {
+            this.j1 = new ArrayList();
         }
-        this.a1.add(td5Var);
+        this.j1.add(yx5Var);
     }
 
     public void j0(int i) {
-        if (this.r0) {
+        if (this.A0) {
             return;
         }
         t0();
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar == null) {
             return;
         }
-        jVar.N0(i);
+        jVar.M0(i);
         awakenScrollBars();
     }
 
     public final void k(String str) {
         if (!R()) {
-            if (this.A0 > 0) {
+            if (this.J0 > 0) {
                 new IllegalStateException(C());
             }
         } else if (str == null) {
-            fn.s("Cannot call this method while RecyclerView is computing a layout or scrolling".concat(C()));
+            i60.g("Cannot call this method while RecyclerView is computing a layout or scrolling".concat(C()));
         } else {
-            fn.s(str);
+            i60.g(str);
         }
     }
 
@@ -2030,12 +2038,12 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         if (i > 0) {
             return true;
         }
-        float fG = ew0.G(edgeEffect) * i2;
-        float fAbs = Math.abs(-i) * 0.35f;
-        float f = this.Q * 0.015f;
-        double dLog = Math.log(fAbs / f);
-        double d = w1;
-        return ((float) (Math.exp((d / (d - 1.0d)) * dLog) * ((double) f))) < fG;
+        float G = j68.G(edgeEffect) * i2;
+        float abs = Math.abs(-i) * 0.35f;
+        float f = this.c0 * 0.015f;
+        double log = Math.log(abs / f);
+        double d = F1;
+        return ((float) (Math.exp((d / (d - 1.0d)) * log) * ((double) f))) < G;
     }
 
     public void l0(int i, int i2) {
@@ -2043,16 +2051,16 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final void m() {
-        ka0 ka0Var = this.V;
-        int iJ = ka0Var.j();
-        for (int i = 0; i < iJ; i++) {
-            l lVarN = N(ka0Var.i(i));
-            if (!lVarN.p()) {
-                lVarN.d = -1;
-                lVarN.g = -1;
+        xk0 xk0Var = this.h0;
+        int n = xk0Var.n();
+        for (int i = 0; i < n; i++) {
+            l N = N(xk0Var.m(i));
+            if (!N.p()) {
+                N.d = -1;
+                N.g = -1;
             }
         }
-        k kVar = this.S;
+        k kVar = this.e0;
         ArrayList arrayList = kVar.a;
         ArrayList arrayList2 = kVar.c;
         int size = arrayList2.size();
@@ -2083,43 +2091,43 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final void n(int i, int i2) {
-        boolean zIsFinished;
-        EdgeEffect edgeEffect = this.C0;
+        boolean z;
+        EdgeEffect edgeEffect = this.L0;
         if (edgeEffect == null || edgeEffect.isFinished() || i <= 0) {
-            zIsFinished = false;
+            z = false;
         } else {
-            this.C0.onRelease();
-            zIsFinished = this.C0.isFinished();
+            this.L0.onRelease();
+            z = this.L0.isFinished();
         }
-        EdgeEffect edgeEffect2 = this.E0;
+        EdgeEffect edgeEffect2 = this.N0;
         if (edgeEffect2 != null && !edgeEffect2.isFinished() && i < 0) {
-            this.E0.onRelease();
-            zIsFinished |= this.E0.isFinished();
+            this.N0.onRelease();
+            z |= this.N0.isFinished();
         }
-        EdgeEffect edgeEffect3 = this.D0;
+        EdgeEffect edgeEffect3 = this.M0;
         if (edgeEffect3 != null && !edgeEffect3.isFinished() && i2 > 0) {
-            this.D0.onRelease();
-            zIsFinished |= this.D0.isFinished();
+            this.M0.onRelease();
+            z |= this.M0.isFinished();
         }
-        EdgeEffect edgeEffect4 = this.F0;
+        EdgeEffect edgeEffect4 = this.O0;
         if (edgeEffect4 != null && !edgeEffect4.isFinished() && i2 < 0) {
-            this.F0.onRelease();
-            zIsFinished |= this.F0.isFinished();
+            this.O0.onRelease();
+            z |= this.O0.isFinished();
         }
-        if (zIsFinished) {
+        if (z) {
             postInvalidateOnAnimation();
         }
     }
 
     public final void n0(boolean z, int i, int i2) {
-        j jVar = this.g0;
-        if (jVar == null || this.r0) {
+        j jVar = this.p0;
+        if (jVar == null || this.A0) {
             return;
         }
         if (!jVar.p()) {
             i = 0;
         }
-        if (!this.g0.q()) {
+        if (!this.p0.q()) {
             i2 = 0;
         }
         if (i == 0 && i2 == 0) {
@@ -2132,55 +2140,57 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
             }
             getScrollingChildHelper().f(i3, 1);
         }
-        this.V0.c(i, i2, Integer.MIN_VALUE, null);
+        this.e1.c(i, i2, Integer.MIN_VALUE, null);
     }
 
     public void o0(int i) {
         j jVar;
-        if (this.r0 || (jVar = this.g0) == null) {
+        if (this.A0 || (jVar = this.p0) == null) {
             return;
         }
-        jVar.X0(this, i);
+        jVar.W0(this, i);
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0058  */
+    /* JADX WARN: Code restructure failed: missing block: B:17:0x0055, code lost:
+    
+        if (r1 >= 30.0f) goto L22;
+     */
     @Override // android.view.ViewGroup, android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final void onAttachedToWindow() {
-        float refreshRate;
+        float f;
         super.onAttachedToWindow();
-        this.z0 = 0;
-        this.m0 = true;
-        this.o0 = this.o0 && !isLayoutRequested();
-        this.S.e();
-        j jVar = this.g0;
+        this.I0 = 0;
+        this.v0 = true;
+        this.x0 = this.x0 && !isLayoutRequested();
+        this.e0.e();
+        j jVar = this.p0;
         if (jVar != null) {
-            jVar.W = true;
+            jVar.f0 = true;
             jVar.g0(this);
         }
-        this.e1 = false;
-        if (y1) {
-            ThreadLocal threadLocal = o92.U;
-            o92 o92Var = (o92) threadLocal.get();
-            this.W0 = o92Var;
-            if (o92Var == null) {
-                this.W0 = new o92();
-                WeakHashMap weakHashMap = qn7.a;
+        this.n1 = false;
+        if (H1) {
+            ThreadLocal threadLocal = xk2.d0;
+            xk2 xk2Var = (xk2) threadLocal.get();
+            this.f1 = xk2Var;
+            if (xk2Var == null) {
+                this.f1 = new xk2();
+                WeakHashMap weakHashMap = ni8.a;
                 Display display = getDisplay();
-                if (isInEditMode() || display == null) {
-                    refreshRate = 60.0f;
-                } else {
-                    refreshRate = display.getRefreshRate();
-                    if (refreshRate < 30.0f) {
-                        refreshRate = 60.0f;
-                    }
+                if (!isInEditMode() && display != null) {
+                    f = display.getRefreshRate();
                 }
-                o92 o92Var2 = this.W0;
-                o92Var2.S = (long) (1.0E9f / refreshRate);
-                threadLocal.set(o92Var2);
+                f = 60.0f;
+                xk2 xk2Var2 = this.f1;
+                xk2Var2.Z = (long) (1.0E9f / f);
+                threadLocal.set(xk2Var2);
             }
-            ArrayList arrayList = this.W0.Q;
-            if (t1 && arrayList.contains(this)) {
-                fn.s("RecyclerView already present in worker list!");
+            ArrayList arrayList = this.f1.X;
+            if (C1 && arrayList.contains(this)) {
+                i60.g("RecyclerView already present in worker list!");
             } else {
                 arrayList.add(this);
             }
@@ -2189,59 +2199,59 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.ViewGroup, android.view.View
     public final void onDetachedFromWindow() {
-        o92 o92Var;
+        xk2 xk2Var;
         super.onDetachedFromWindow();
-        od5 od5Var = this.G0;
-        if (od5Var != null) {
-            od5Var.e();
+        tx5 tx5Var = this.P0;
+        if (tx5Var != null) {
+            tx5Var.e();
         }
         t0();
         int i = 0;
-        this.m0 = false;
-        j jVar = this.g0;
+        this.v0 = false;
+        j jVar = this.p0;
         if (jVar != null) {
-            jVar.W = false;
+            jVar.f0 = false;
             jVar.h0(this);
         }
-        this.l1.clear();
-        removeCallbacks(this.m1);
-        this.W.getClass();
-        while (eo7.d.a() != null) {
+        this.u1.clear();
+        removeCallbacks(this.v1);
+        this.i0.getClass();
+        while (dj8.d.a() != null) {
         }
-        k kVar = this.S;
+        k kVar = this.e0;
         ArrayList arrayList = kVar.c;
         for (int i2 = 0; i2 < arrayList.size(); i2++) {
-            fx4.a(((l) arrayList.get(i2)).a);
+            gg5.a(((l) arrayList.get(i2)).a);
         }
-        kVar.f(kVar.h.f0, false);
-        int i3 = fx4.a;
+        kVar.f(kVar.h.o0, false);
+        int i3 = gg5.a;
         while (i < getChildCount()) {
             int i4 = i + 1;
             View childAt = getChildAt(i);
             if (childAt == null) {
                 throw new IndexOutOfBoundsException();
             }
-            ArrayList arrayList2 = fx4.b(childAt).a;
-            for (int iZ = ub.z(arrayList2); -1 < iZ; iZ--) {
-                ((rn7) arrayList2.get(iZ)).a.d();
+            ArrayList arrayList2 = gg5.b(childAt).a;
+            for (int A = ut.A(arrayList2); -1 < A; A--) {
+                ((oi8) arrayList2.get(A)).a.e();
             }
             i = i4;
         }
-        if (!y1 || (o92Var = this.W0) == null) {
+        if (!H1 || (xk2Var = this.f1) == null) {
             return;
         }
-        boolean zRemove = o92Var.Q.remove(this);
-        if (!t1 || zRemove) {
-            this.W0 = null;
+        boolean remove = xk2Var.X.remove(this);
+        if (!C1 || remove) {
+            this.f1 = null;
         } else {
-            fn.s("RecyclerView removal failed!");
+            i60.g("RecyclerView removal failed!");
         }
     }
 
     @Override // android.view.View
     public final void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        ArrayList arrayList = this.j0;
+        ArrayList arrayList = this.s0;
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
             ((g) arrayList.get(i)).g(canvas, this);
@@ -2250,75 +2260,65 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.View
     public final boolean onGenericMotionEvent(MotionEvent motionEvent) {
-        float axisValue;
-        boolean z;
+        float f;
         int i;
-        if (this.g0 != null && !this.r0 && motionEvent.getAction() == 8) {
-            float f = 0.0f;
+        boolean z;
+        if (this.p0 != null && !this.A0 && motionEvent.getAction() == 8) {
             if ((motionEvent.getSource() & 2) != 0) {
-                float f2 = this.g0.q() ? -motionEvent.getAxisValue(9) : 0.0f;
-                if (this.g0.p()) {
-                    axisValue = motionEvent.getAxisValue(10);
-                    i = 0;
-                    z = false;
-                    f = f2;
-                } else {
-                    f = f2;
-                    axisValue = 0.0f;
-                    i = 0;
-                    z = false;
-                }
+                float f2 = this.p0.q() ? -motionEvent.getAxisValue(9) : 0.0f;
+                f = this.p0.p() ? motionEvent.getAxisValue(10) : 0.0f;
+                i = 0;
+                z = false;
+                r2 = f2;
             } else if ((motionEvent.getSource() & 4194304) != 0) {
-                axisValue = motionEvent.getAxisValue(26);
-                if (this.g0.q()) {
-                    f = -axisValue;
-                } else {
-                    if (!this.g0.p()) {
-                    }
-                    z = this.q1;
-                    i = 26;
+                f = motionEvent.getAxisValue(26);
+                if (this.p0.q()) {
+                    float f3 = -f;
+                    f = 0.0f;
+                    r2 = f3;
+                } else if (!this.p0.p()) {
+                    f = 0.0f;
                 }
-                axisValue = 0.0f;
-                z = this.q1;
                 i = 26;
+                z = this.z1;
             } else {
-                axisValue = 0.0f;
+                f = 0.0f;
                 i = 0;
                 z = false;
             }
-            int i2 = (int) (f * this.T0);
-            int i3 = (int) (axisValue * this.S0);
+            int i2 = (int) (r2 * this.c1);
+            int i3 = (int) (f * this.b1);
             if (z) {
-                OverScroller overScroller = this.V0.S;
+                OverScroller overScroller = this.e1.Z;
                 n0(true, (overScroller.getFinalX() - overScroller.getCurrX()) + i3, (overScroller.getFinalY() - overScroller.getCurrY()) + i2);
             } else {
-                j jVar = this.g0;
-                if (jVar != null && !this.r0) {
-                    int[] iArr = this.k1;
+                j jVar = this.p0;
+                if (jVar != null && !this.A0) {
+                    int[] iArr = this.t1;
                     iArr[0] = 0;
                     iArr[1] = 0;
-                    boolean zP = jVar.p();
-                    boolean zQ = this.g0.q();
-                    int i4 = zQ ? (zP ? 1 : 0) | 2 : zP ? 1 : 0;
+                    boolean p = jVar.p();
+                    boolean q = this.p0.q();
+                    int i4 = q ? (p ? 1 : 0) | 2 : p ? 1 : 0;
                     float y = motionEvent.getY();
                     float x = motionEvent.getX();
-                    int iD0 = i3 - d0(i3, y);
-                    int iE0 = i2 - e0(i2, x);
+                    int d0 = i3 - d0(i3, y);
+                    int e0 = i2 - e0(i2, x);
                     getScrollingChildHelper().f(i4, 1);
-                    if (v(zP ? iD0 : 0, zQ ? iE0 : 0, 1, this.k1, this.i1)) {
-                        iD0 -= iArr[0];
-                        iE0 -= iArr[1];
+                    if (v(p ? d0 : 0, q ? e0 : 0, 1, this.t1, this.r1)) {
+                        d0 -= iArr[0];
+                        e0 -= iArr[1];
                     }
-                    h0(zP ? iD0 : 0, zQ ? iE0 : 0, motionEvent, 1);
-                    o92 o92Var = this.W0;
-                    if (o92Var != null && (iD0 != 0 || iE0 != 0)) {
-                        o92Var.a(this, iD0, iE0);
+                    h0(p ? d0 : 0, q ? e0 : 0, motionEvent, 1);
+                    xk2 xk2Var = this.f1;
+                    if (xk2Var != null && (d0 != 0 || e0 != 0)) {
+                        xk2Var.a(this, d0, e0);
                     }
                     s0(1);
                 }
             }
             if (i != 0 && !z) {
-                this.s1.a(motionEvent, i);
+                this.B1.a(motionEvent, i);
             }
         }
         return false;
@@ -2328,10 +2328,10 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         boolean z;
         boolean z2;
-        if (!this.r0) {
-            this.l0 = null;
+        if (!this.A0) {
+            this.u0 = null;
             if (F(motionEvent)) {
-                VelocityTracker velocityTracker = this.J0;
+                VelocityTracker velocityTracker = this.S0;
                 if (velocityTracker != null) {
                     velocityTracker.clear();
                 }
@@ -2340,77 +2340,77 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                 setScrollState(0);
                 return true;
             }
-            j jVar = this.g0;
+            j jVar = this.p0;
             if (jVar != null) {
-                boolean zP = jVar.p();
-                boolean zQ = this.g0.q();
-                if (this.J0 == null) {
-                    this.J0 = VelocityTracker.obtain();
+                boolean p = jVar.p();
+                boolean q = this.p0.q();
+                if (this.S0 == null) {
+                    this.S0 = VelocityTracker.obtain();
                 }
-                this.J0.addMovement(motionEvent);
+                this.S0.addMovement(motionEvent);
                 int actionMasked = motionEvent.getActionMasked();
                 int actionIndex = motionEvent.getActionIndex();
                 if (actionMasked == 0) {
-                    if (this.s0) {
-                        this.s0 = false;
+                    if (this.B0) {
+                        this.B0 = false;
                     }
-                    this.I0 = motionEvent.getPointerId(0);
+                    this.R0 = motionEvent.getPointerId(0);
                     int x = (int) (motionEvent.getX() + 0.5f);
-                    this.M0 = x;
-                    this.K0 = x;
+                    this.V0 = x;
+                    this.T0 = x;
                     int y = (int) (motionEvent.getY() + 0.5f);
-                    this.N0 = y;
-                    this.L0 = y;
-                    EdgeEffect edgeEffect = this.C0;
-                    if (edgeEffect == null || ew0.G(edgeEffect) == 0.0f || canScrollHorizontally(-1)) {
+                    this.W0 = y;
+                    this.U0 = y;
+                    EdgeEffect edgeEffect = this.L0;
+                    if (edgeEffect == null || j68.G(edgeEffect) == 0.0f || canScrollHorizontally(-1)) {
                         z = false;
                     } else {
-                        ew0.R(this.C0, 0.0f, 1.0f - (motionEvent.getY() / getHeight()));
+                        j68.l0(this.L0, 0.0f, 1.0f - (motionEvent.getY() / getHeight()));
                         z = true;
                     }
-                    EdgeEffect edgeEffect2 = this.E0;
-                    if (edgeEffect2 != null && ew0.G(edgeEffect2) != 0.0f && !canScrollHorizontally(1)) {
-                        ew0.R(this.E0, 0.0f, motionEvent.getY() / getHeight());
+                    EdgeEffect edgeEffect2 = this.N0;
+                    if (edgeEffect2 != null && j68.G(edgeEffect2) != 0.0f && !canScrollHorizontally(1)) {
+                        j68.l0(this.N0, 0.0f, motionEvent.getY() / getHeight());
                         z = true;
                     }
-                    EdgeEffect edgeEffect3 = this.D0;
-                    if (edgeEffect3 != null && ew0.G(edgeEffect3) != 0.0f && !canScrollVertically(-1)) {
-                        ew0.R(this.D0, 0.0f, motionEvent.getX() / getWidth());
+                    EdgeEffect edgeEffect3 = this.M0;
+                    if (edgeEffect3 != null && j68.G(edgeEffect3) != 0.0f && !canScrollVertically(-1)) {
+                        j68.l0(this.M0, 0.0f, motionEvent.getX() / getWidth());
                         z = true;
                     }
-                    EdgeEffect edgeEffect4 = this.F0;
-                    if (edgeEffect4 != null && ew0.G(edgeEffect4) != 0.0f && !canScrollVertically(1)) {
-                        ew0.R(this.F0, 0.0f, 1.0f - (motionEvent.getX() / getWidth()));
+                    EdgeEffect edgeEffect4 = this.O0;
+                    if (edgeEffect4 != null && j68.G(edgeEffect4) != 0.0f && !canScrollVertically(1)) {
+                        j68.l0(this.O0, 0.0f, 1.0f - (motionEvent.getX() / getWidth()));
                         z = true;
                     }
-                    if (z || this.H0 == 2) {
+                    if (z || this.Q0 == 2) {
                         getParent().requestDisallowInterceptTouchEvent(true);
                         setScrollState(1);
                         s0(1);
                     }
-                    int[] iArr = this.j1;
+                    int[] iArr = this.s1;
                     iArr[1] = 0;
                     iArr[0] = 0;
                     q0(0);
                 } else if (actionMasked == 1) {
-                    this.J0.clear();
+                    this.S0.clear();
                     s0(0);
                 } else if (actionMasked == 2) {
-                    int iFindPointerIndex = motionEvent.findPointerIndex(this.I0);
-                    if (iFindPointerIndex >= 0) {
-                        int x2 = (int) (motionEvent.getX(iFindPointerIndex) + 0.5f);
-                        int y2 = (int) (motionEvent.getY(iFindPointerIndex) + 0.5f);
-                        if (this.H0 != 1) {
-                            int i = x2 - this.K0;
-                            int i2 = y2 - this.L0;
-                            if (!zP || Math.abs(i) <= this.O0) {
+                    int findPointerIndex = motionEvent.findPointerIndex(this.R0);
+                    if (findPointerIndex >= 0) {
+                        int x2 = (int) (motionEvent.getX(findPointerIndex) + 0.5f);
+                        int y2 = (int) (motionEvent.getY(findPointerIndex) + 0.5f);
+                        if (this.Q0 != 1) {
+                            int i = x2 - this.T0;
+                            int i2 = y2 - this.U0;
+                            if (!p || Math.abs(i) <= this.X0) {
                                 z2 = false;
                             } else {
-                                this.M0 = x2;
+                                this.V0 = x2;
                                 z2 = true;
                             }
-                            if (zQ && Math.abs(i2) > this.O0) {
-                                this.N0 = y2;
+                            if (q && Math.abs(i2) > this.X0) {
+                                this.W0 = y2;
                                 z2 = true;
                             }
                             if (z2) {
@@ -2419,7 +2419,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                         }
                     }
                 } else if (actionMasked == 3) {
-                    VelocityTracker velocityTracker2 = this.J0;
+                    VelocityTracker velocityTracker2 = this.S0;
                     if (velocityTracker2 != null) {
                         velocityTracker2.clear();
                     }
@@ -2427,17 +2427,17 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                     c0();
                     setScrollState(0);
                 } else if (actionMasked == 5) {
-                    this.I0 = motionEvent.getPointerId(actionIndex);
+                    this.R0 = motionEvent.getPointerId(actionIndex);
                     int x3 = (int) (motionEvent.getX(actionIndex) + 0.5f);
-                    this.M0 = x3;
-                    this.K0 = x3;
+                    this.V0 = x3;
+                    this.T0 = x3;
                     int y3 = (int) (motionEvent.getY(actionIndex) + 0.5f);
-                    this.N0 = y3;
-                    this.L0 = y3;
+                    this.W0 = y3;
+                    this.U0 = y3;
                 } else if (actionMasked == 6) {
                     X(motionEvent);
                 }
-                if (this.H0 == 1) {
+                if (this.Q0 == 1) {
                     return true;
                 }
             }
@@ -2450,79 +2450,79 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         Trace.beginSection("RV OnLayout");
         s();
         Trace.endSection();
-        this.o0 = true;
+        this.x0 = true;
     }
 
     @Override // android.view.View
     public final void onMeasure(int i, int i2) {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar == null) {
             q(i, i2);
             return;
         }
-        boolean zY = jVar.Y();
-        k kVar = this.S;
+        boolean Y = jVar.Y();
+        k kVar = this.e0;
         boolean z = false;
-        be5 be5Var = this.Y0;
-        if (zY) {
+        gy5 gy5Var = this.h1;
+        if (Y) {
             int mode = View.MeasureSpec.getMode(i);
             int mode2 = View.MeasureSpec.getMode(i2);
-            this.g0.w0(kVar, be5Var, i, i2);
+            this.p0.w0(kVar, gy5Var, i, i2);
             if (mode == 1073741824 && mode2 == 1073741824) {
                 z = true;
             }
-            this.n1 = z;
-            if (z || this.f0 == null) {
+            this.w1 = z;
+            if (z || this.o0 == null) {
                 return;
             }
-            if (be5Var.d == 1) {
+            if (gy5Var.d == 1) {
                 t();
             }
-            this.g0.Q0(i, i2);
-            be5Var.i = true;
+            this.p0.P0(i, i2);
+            gy5Var.i = true;
             u();
-            this.g0.S0(i, i2);
-            if (this.g0.V0()) {
-                this.g0.Q0(View.MeasureSpec.makeMeasureSpec(getMeasuredWidth(), 1073741824), View.MeasureSpec.makeMeasureSpec(getMeasuredHeight(), 1073741824));
-                be5Var.i = true;
+            this.p0.R0(i, i2);
+            if (this.p0.U0()) {
+                this.p0.P0(View.MeasureSpec.makeMeasureSpec(getMeasuredWidth(), 1073741824), View.MeasureSpec.makeMeasureSpec(getMeasuredHeight(), 1073741824));
+                gy5Var.i = true;
                 u();
-                this.g0.S0(i, i2);
+                this.p0.R0(i, i2);
             }
-            this.o1 = getMeasuredWidth();
-            this.p1 = getMeasuredHeight();
+            this.x1 = getMeasuredWidth();
+            this.y1 = getMeasuredHeight();
             return;
         }
-        if (this.n0) {
-            this.g0.w0(kVar, be5Var, i, i2);
+        if (this.w0) {
+            this.p0.w0(kVar, gy5Var, i, i2);
             return;
         }
-        if (this.u0) {
+        if (this.D0) {
             p0();
             V();
             Z();
             W(true);
-            if (be5Var.k) {
-                be5Var.g = true;
+            if (gy5Var.k) {
+                gy5Var.g = true;
             } else {
-                this.U.o();
-                be5Var.g = false;
+                this.g0.o();
+                gy5Var.g = false;
             }
-            this.u0 = false;
+            this.D0 = false;
             r0(false);
-        } else if (be5Var.k) {
+        } else if (gy5Var.k) {
             setMeasuredDimension(getMeasuredWidth(), getMeasuredHeight());
             return;
         }
-        f fVar = this.f0;
+        f fVar = this.o0;
         if (fVar != null) {
-            be5Var.e = fVar.a();
+            gy5Var.e = fVar.a();
         } else {
-            be5Var.e = 0;
+            gy5Var.e = 0;
         }
         p0();
-        this.g0.w0(kVar, be5Var, i, i2);
+        this.p0.w0(kVar, gy5Var, i, i2);
         r0(false);
-        be5Var.g = false;
+        gy5Var.g = false;
     }
 
     @Override // android.view.ViewGroup
@@ -2535,31 +2535,31 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.View
     public final void onRestoreInstanceState(Parcelable parcelable) {
-        if (!(parcelable instanceof xd5)) {
+        if (!(parcelable instanceof cy5)) {
             super.onRestoreInstanceState(parcelable);
             return;
         }
-        xd5 xd5Var = (xd5) parcelable;
-        this.T = xd5Var;
-        super.onRestoreInstanceState(xd5Var.Q);
+        cy5 cy5Var = (cy5) parcelable;
+        this.f0 = cy5Var;
+        super.onRestoreInstanceState(cy5Var.X);
         requestLayout();
     }
 
     @Override // android.view.View
     public final Parcelable onSaveInstanceState() {
-        xd5 xd5Var = new xd5(super.onSaveInstanceState());
-        xd5 xd5Var2 = this.T;
-        if (xd5Var2 != null) {
-            xd5Var.S = xd5Var2.S;
-            return xd5Var;
+        cy5 cy5Var = new cy5(super.onSaveInstanceState());
+        cy5 cy5Var2 = this.f0;
+        if (cy5Var2 != null) {
+            cy5Var.Z = cy5Var2.Z;
+            return cy5Var;
         }
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null) {
-            xd5Var.S = jVar.z0();
-            return xd5Var;
+            cy5Var.Z = jVar.z0();
+            return cy5Var;
         }
-        xd5Var.S = null;
-        return xd5Var;
+        cy5Var.Z = null;
+        return cy5Var;
     }
 
     @Override // android.view.View
@@ -2568,32 +2568,35 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         if (i == i3 && i2 == i4) {
             return;
         }
-        this.F0 = null;
-        this.D0 = null;
-        this.E0 = null;
-        this.C0 = null;
+        this.O0 = null;
+        this.M0 = null;
+        this.N0 = null;
+        this.L0 = null;
     }
 
-    /* JADX WARN: Code duplicated, block: B:62:0x00f6 A[PHI: r1
-      0x00f6: PHI (r1v47 int) = (r1v31 int), (r1v51 int) binds: [B:55:0x00e1, B:60:0x00f2] A[DONT_GENERATE, DONT_INLINE]] */
+    /* JADX WARN: Removed duplicated region for block: B:55:0x00f9  */
+    /* JADX WARN: Removed duplicated region for block: B:62:0x010d  */
     @Override // android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        boolean zF;
         boolean z;
-        if (!this.r0 && !this.s0) {
-            sd5 sd5Var = this.l0;
-            if (sd5Var == null) {
-                zF = motionEvent.getAction() == 0 ? false : F(motionEvent);
+        boolean z2;
+        if (!this.A0 && !this.B0) {
+            xx5 xx5Var = this.u0;
+            if (xx5Var == null) {
+                z = motionEvent.getAction() == 0 ? false : F(motionEvent);
             } else {
-                sd5Var.a(this, motionEvent);
+                xx5Var.a(this, motionEvent);
                 int action = motionEvent.getAction();
                 if (action == 3 || action == 1) {
-                    this.l0 = null;
+                    this.u0 = null;
                 }
-                zF = true;
+                z = true;
             }
-            if (zF) {
-                VelocityTracker velocityTracker = this.J0;
+            if (z) {
+                VelocityTracker velocityTracker = this.S0;
                 if (velocityTracker != null) {
                     velocityTracker.clear();
                 }
@@ -2602,99 +2605,112 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                 setScrollState(0);
                 return true;
             }
-            j jVar = this.g0;
+            j jVar = this.p0;
             if (jVar != null) {
-                boolean zP = jVar.p();
-                boolean zQ = this.g0.q();
-                if (this.J0 == null) {
-                    this.J0 = VelocityTracker.obtain();
+                boolean p = jVar.p();
+                boolean q = this.p0.q();
+                if (this.S0 == null) {
+                    this.S0 = VelocityTracker.obtain();
                 }
                 int actionMasked = motionEvent.getActionMasked();
                 int actionIndex = motionEvent.getActionIndex();
-                int[] iArr = this.j1;
+                int[] iArr = this.s1;
                 if (actionMasked == 0) {
                     iArr[1] = 0;
                     iArr[0] = 0;
                 }
-                MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
-                motionEventObtain.offsetLocation(iArr[0], iArr[1]);
-                if (actionMasked != 0) {
+                MotionEvent obtain = MotionEvent.obtain(motionEvent);
+                obtain.offsetLocation(iArr[0], iArr[1]);
+                if (actionMasked == 0) {
+                    this.R0 = motionEvent.getPointerId(0);
+                    int x = (int) (motionEvent.getX() + 0.5f);
+                    this.V0 = x;
+                    this.T0 = x;
+                    int y = (int) (motionEvent.getY() + 0.5f);
+                    this.W0 = y;
+                    this.U0 = y;
+                    q0(0);
+                } else {
                     if (actionMasked == 1) {
-                        this.J0.addMovement(motionEventObtain);
-                        VelocityTracker velocityTracker2 = this.J0;
-                        int i = this.R0;
+                        this.S0.addMovement(obtain);
+                        VelocityTracker velocityTracker2 = this.S0;
+                        int i = this.a1;
                         velocityTracker2.computeCurrentVelocity(XRayConfig.OutboundBean.StreamSettingsBean.KcpSettingsBean.ttiMax, i);
-                        float f = zP ? -this.J0.getXVelocity(this.I0) : 0.0f;
-                        float f2 = zQ ? -this.J0.getYVelocity(this.I0) : 0.0f;
-                        if ((f == 0.0f && f2 == 0.0f) || !J((int) f, (int) f2, this.Q0, i)) {
+                        float f = p ? -this.S0.getXVelocity(this.R0) : 0.0f;
+                        float f2 = q ? -this.S0.getYVelocity(this.R0) : 0.0f;
+                        if ((f == 0.0f && f2 == 0.0f) || !J((int) f, (int) f2, this.Z0, i)) {
                             setScrollState(0);
                         }
-                        VelocityTracker velocityTracker3 = this.J0;
+                        VelocityTracker velocityTracker3 = this.S0;
                         if (velocityTracker3 != null) {
                             velocityTracker3.clear();
                         }
                         s0(0);
                         c0();
-                    } else if (actionMasked == 2) {
-                        int iFindPointerIndex = motionEvent.findPointerIndex(this.I0);
-                        if (iFindPointerIndex >= 0) {
-                            int x = (int) (motionEvent.getX(iFindPointerIndex) + 0.5f);
-                            int y = (int) (motionEvent.getY(iFindPointerIndex) + 0.5f);
-                            int iMax = this.M0 - x;
-                            int iMax2 = this.N0 - y;
-                            if (this.H0 != 1) {
-                                if (zP) {
-                                    int i2 = this.O0;
-                                    iMax = iMax > 0 ? Math.max(0, iMax - i2) : Math.min(0, iMax + i2);
-                                    if (iMax != 0) {
-                                        z = true;
-                                    } else {
-                                        z = false;
+                        obtain.recycle();
+                        return true;
+                    }
+                    if (actionMasked == 2) {
+                        int findPointerIndex = motionEvent.findPointerIndex(this.R0);
+                        if (findPointerIndex >= 0) {
+                            int x2 = (int) (motionEvent.getX(findPointerIndex) + 0.5f);
+                            int y2 = (int) (motionEvent.getY(findPointerIndex) + 0.5f);
+                            int i2 = this.V0 - x2;
+                            int i3 = this.W0 - y2;
+                            if (this.Q0 != 1) {
+                                if (p) {
+                                    int i4 = this.X0;
+                                    i2 = i2 > 0 ? Math.max(0, i2 - i4) : Math.min(0, i2 + i4);
+                                    if (i2 != 0) {
+                                        z2 = true;
+                                        if (q) {
+                                            int i5 = this.X0;
+                                            i3 = i3 > 0 ? Math.max(0, i3 - i5) : Math.min(0, i3 + i5);
+                                            if (i3 != 0) {
+                                                z2 = true;
+                                            }
+                                        }
+                                        if (z2) {
+                                            setScrollState(1);
+                                        }
                                     }
-                                } else {
-                                    z = false;
                                 }
-                                if (zQ) {
-                                    int i3 = this.O0;
-                                    iMax2 = iMax2 > 0 ? Math.max(0, iMax2 - i3) : Math.min(0, iMax2 + i3);
-                                    if (iMax2 != 0) {
-                                        z = true;
-                                    }
+                                z2 = false;
+                                if (q) {
                                 }
-                                if (z) {
-                                    setScrollState(1);
+                                if (z2) {
                                 }
                             }
-                            if (this.H0 == 1) {
-                                int[] iArr2 = this.k1;
+                            if (this.Q0 == 1) {
+                                int[] iArr2 = this.t1;
                                 iArr2[0] = 0;
                                 iArr2[1] = 0;
-                                int iD0 = iMax - d0(iMax, motionEvent.getY());
-                                int iE0 = iMax2 - e0(iMax2, motionEvent.getX());
-                                boolean zV = v(zP ? iD0 : 0, zQ ? iE0 : 0, 0, this.k1, this.i1);
-                                int[] iArr3 = this.i1;
-                                if (zV) {
-                                    iD0 -= iArr2[0];
-                                    iE0 -= iArr2[1];
+                                int d0 = i2 - d0(i2, motionEvent.getY());
+                                int e0 = i3 - e0(i3, motionEvent.getX());
+                                boolean v = v(p ? d0 : 0, q ? e0 : 0, 0, this.t1, this.r1);
+                                int[] iArr3 = this.r1;
+                                if (v) {
+                                    d0 -= iArr2[0];
+                                    e0 -= iArr2[1];
                                     iArr[0] = iArr[0] + iArr3[0];
                                     iArr[1] = iArr[1] + iArr3[1];
                                     getParent().requestDisallowInterceptTouchEvent(true);
                                 }
-                                int i4 = iD0;
-                                int i5 = iE0;
-                                this.M0 = x - iArr3[0];
-                                this.N0 = y - iArr3[1];
-                                if (h0(zP ? i4 : 0, zQ ? i5 : 0, motionEvent, 0)) {
+                                int i6 = d0;
+                                int i7 = e0;
+                                this.V0 = x2 - iArr3[0];
+                                this.W0 = y2 - iArr3[1];
+                                if (h0(p ? i6 : 0, q ? i7 : 0, motionEvent, 0)) {
                                     getParent().requestDisallowInterceptTouchEvent(true);
                                 }
-                                o92 o92Var = this.W0;
-                                if (o92Var != null && (i4 != 0 || i5 != 0)) {
-                                    o92Var.a(this, i4, i5);
+                                xk2 xk2Var = this.f1;
+                                if (xk2Var != null && (i6 != 0 || i7 != 0)) {
+                                    xk2Var.a(this, i6, i7);
                                 }
                             }
                         }
                     } else if (actionMasked == 3) {
-                        VelocityTracker velocityTracker4 = this.J0;
+                        VelocityTracker velocityTracker4 = this.S0;
                         if (velocityTracker4 != null) {
                             velocityTracker4.clear();
                         }
@@ -2702,29 +2718,19 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
                         c0();
                         setScrollState(0);
                     } else if (actionMasked == 5) {
-                        this.I0 = motionEvent.getPointerId(actionIndex);
-                        int x2 = (int) (motionEvent.getX(actionIndex) + 0.5f);
-                        this.M0 = x2;
-                        this.K0 = x2;
-                        int y2 = (int) (motionEvent.getY(actionIndex) + 0.5f);
-                        this.N0 = y2;
-                        this.L0 = y2;
+                        this.R0 = motionEvent.getPointerId(actionIndex);
+                        int x3 = (int) (motionEvent.getX(actionIndex) + 0.5f);
+                        this.V0 = x3;
+                        this.T0 = x3;
+                        int y3 = (int) (motionEvent.getY(actionIndex) + 0.5f);
+                        this.W0 = y3;
+                        this.U0 = y3;
                     } else if (actionMasked == 6) {
                         X(motionEvent);
                     }
-                    motionEventObtain.recycle();
-                    return true;
                 }
-                this.I0 = motionEvent.getPointerId(0);
-                int x3 = (int) (motionEvent.getX() + 0.5f);
-                this.M0 = x3;
-                this.K0 = x3;
-                int y3 = (int) (motionEvent.getY() + 0.5f);
-                this.N0 = y3;
-                this.L0 = y3;
-                q0(0);
-                this.J0.addMovement(motionEventObtain);
-                motionEventObtain.recycle();
+                this.S0.addMovement(obtain);
+                obtain.recycle();
                 return true;
             }
         }
@@ -2732,17 +2738,17 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final void p() {
-        if (!this.o0 || this.x0) {
+        if (!this.x0 || this.G0) {
             Trace.beginSection("RV FullInvalidate");
             s();
             Trace.endSection();
             return;
         }
-        t6 t6Var = this.U;
-        if (t6Var.x()) {
-            int i = t6Var.b;
+        f7 f7Var = this.g0;
+        if (f7Var.x()) {
+            int i = f7Var.b;
             if ((i & 4) == 0 || (i & 11) != 0) {
-                if (t6Var.x()) {
+                if (f7Var.x()) {
                     Trace.beginSection("RV FullInvalidate");
                     s();
                     Trace.endSection();
@@ -2753,17 +2759,24 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
             Trace.beginSection("RV PartialInvalidate");
             p0();
             V();
-            t6Var.G();
-            if (!this.q0) {
-                ka0 ka0Var = this.V;
-                int iF = ka0Var.f();
-                for (int i2 = 0; i2 < iF; i2++) {
-                    l lVarN = N(ka0Var.d(i2));
-                    if (lVarN != null && !lVarN.p() && lVarN.l()) {
-                        s();
+            f7Var.G();
+            if (!this.z0) {
+                xk0 xk0Var = this.h0;
+                int k = xk0Var.k();
+                int i2 = 0;
+                while (true) {
+                    if (i2 < k) {
+                        l N = N(xk0Var.j(i2));
+                        if (N != null && !N.p() && N.l()) {
+                            s();
+                            break;
+                        }
+                        i2++;
+                    } else {
+                        f7Var.k();
+                        break;
                     }
                 }
-                t6Var.k();
             }
             r0(true);
             W(true);
@@ -2772,78 +2785,78 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final void p0() {
-        int i = this.p0 + 1;
-        this.p0 = i;
-        if (i != 1 || this.r0) {
+        int i = this.y0 + 1;
+        this.y0 = i;
+        if (i != 1 || this.A0) {
             return;
         }
-        this.q0 = false;
+        this.z0 = false;
     }
 
     public final void q(int i, int i2) {
         int paddingRight = getPaddingRight() + getPaddingLeft();
-        WeakHashMap weakHashMap = qn7.a;
+        WeakHashMap weakHashMap = ni8.a;
         setMeasuredDimension(j.s(i, paddingRight, getMinimumWidth()), j.s(i2, getPaddingBottom() + getPaddingTop(), getMinimumHeight()));
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public final void q0(int i) {
-        boolean zP = this.g0.p();
-        int i2 = zP;
-        if (this.g0.q()) {
-            i2 = (zP ? 1 : 0) | 2;
+        boolean p = this.p0.p();
+        int i2 = p;
+        if (this.p0.q()) {
+            i2 = (p ? 1 : 0) | 2;
         }
         getScrollingChildHelper().f(i2, i);
     }
 
     public final void r(View view) {
         N(view);
-        ArrayList arrayList = this.w0;
+        ArrayList arrayList = this.F0;
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
-                ((qd5) this.w0.get(size)).b(view);
+                ((vx5) this.F0.get(size)).b(view);
             }
         }
     }
 
     public final void r0(boolean z) {
-        if (this.p0 < 1) {
-            if (t1) {
-                fn.s("stopInterceptRequestLayout was called more times than startInterceptRequestLayout.".concat(C()));
+        if (this.y0 < 1) {
+            if (C1) {
+                i60.g("stopInterceptRequestLayout was called more times than startInterceptRequestLayout.".concat(C()));
                 return;
             }
-            this.p0 = 1;
+            this.y0 = 1;
         }
-        if (!z && !this.r0) {
-            this.q0 = false;
+        if (!z && !this.A0) {
+            this.z0 = false;
         }
-        if (this.p0 == 1) {
-            if (z && this.q0 && !this.r0 && this.g0 != null && this.f0 != null) {
+        if (this.y0 == 1) {
+            if (z && this.z0 && !this.A0 && this.p0 != null && this.o0 != null) {
                 s();
             }
-            if (!this.r0) {
-                this.q0 = false;
+            if (!this.A0) {
+                this.z0 = false;
             }
         }
-        this.p0--;
+        this.y0--;
     }
 
     @Override // android.view.ViewGroup
     public final void removeDetachedView(View view, boolean z) {
-        l lVarN = N(view);
-        if (lVarN != null) {
-            if (lVarN.k()) {
-                lVarN.j &= -257;
-            } else if (!lVarN.p()) {
+        l N = N(view);
+        if (N != null) {
+            if (N.k()) {
+                N.j &= -257;
+            } else if (!N.p()) {
                 StringBuilder sb = new StringBuilder("Called removeDetachedView with a view which is not flagged as tmp detached.");
-                sb.append(lVarN);
-                fn.o(sb, C());
+                sb.append(N);
+                i60.k(sb, C());
                 return;
             }
-        } else if (t1) {
+        } else if (C1) {
             StringBuilder sb2 = new StringBuilder("No ViewHolder found for child: ");
             sb2.append(view);
-            fn.o(sb2, C());
+            i60.k(sb2, C());
             return;
         }
         view.clearAnimation();
@@ -2853,7 +2866,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public final void requestChildFocus(View view, View view2) {
-        if (!this.g0.x0(this, view, view2) && view2 != null) {
+        if (!this.p0.x0(this, view, view2) && view2 != null) {
             g0(view, view2);
         }
         super.requestChildFocus(view, view2);
@@ -2861,521 +2874,369 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public final boolean requestChildRectangleOnScreen(View view, Rect rect, boolean z) {
-        return this.g0.I0(this, view, rect, z);
+        return this.p0.H0(this, view, rect, z);
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public final void requestDisallowInterceptTouchEvent(boolean z) {
-        ArrayList arrayList = this.k0;
+        ArrayList arrayList = this.t0;
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
-            ((sd5) arrayList.get(i)).e(z);
+            ((xx5) arrayList.get(i)).e(z);
         }
         super.requestDisallowInterceptTouchEvent(z);
     }
 
     @Override // android.view.View, android.view.ViewParent
     public final void requestLayout() {
-        if (this.p0 != 0 || this.r0) {
-            this.q0 = true;
+        if (this.y0 != 0 || this.A0) {
+            this.z0 = true;
         } else {
             super.requestLayout();
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:122:0x024d  */
-    /* JADX WARN: Code duplicated, block: B:163:0x031c  */
-    /* JADX WARN: Code duplicated, block: B:182:0x035c  */
-    /* JADX WARN: Code duplicated, block: B:184:0x035f  */
-    /* JADX WARN: Code duplicated, block: B:190:0x0374  */
-    /* JADX WARN: Code duplicated, block: B:192:0x037a  */
-    /* JADX WARN: Code duplicated, block: B:194:0x037e  */
-    /* JADX WARN: Code duplicated, block: B:197:0x0386  */
-    /* JADX WARN: Code duplicated, block: B:200:0x038d  */
-    /* JADX WARN: Code duplicated, block: B:203:0x0397 A[LOOP:4: B:196:0x0384->B:203:0x0397, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:206:0x03a4  */
-    /* JADX WARN: Code duplicated, block: B:209:0x03ab  */
-    /* JADX WARN: Code duplicated, block: B:212:0x03b4 A[LOOP:5: B:205:0x03a2->B:212:0x03b4, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:214:0x03b9  */
-    /* JADX WARN: Code duplicated, block: B:244:0x039a A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:245:0x039a A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:246:0x0395 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:247:0x0372 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:249:0x03b7 A[EDGE_INSN: B:249:0x03b7->B:213:0x03b7 BREAK  A[LOOP:5: B:205:0x03a2->B:212:0x03b4], SYNTHETIC] */
+    /* JADX WARN: Code restructure failed: missing block: B:155:0x031c, code lost:
+    
+        if (((java.util.ArrayList) r6.Y).contains(getFocusedChild()) == false) goto L222;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:180:0x0373, code lost:
+    
+        if (r4.hasFocusable() != false) goto L189;
+     */
     /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:117:0x0250  */
     /* JADX WARN: Type inference failed for: r2v16 */
     /* JADX WARN: Type inference failed for: r2v23 */
     /* JADX WARN: Type inference failed for: r2v24, types: [int] */
     /* JADX WARN: Type inference failed for: r2v27 */
-    /* JADX WARN: Type inference failed for: r2v31 */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-     */
+    /* JADX WARN: Type inference failed for: r2v28 */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final void s() {
-        long j;
-        l lVar;
-        int i;
-        int iB;
-        int i2;
-        int iMin;
-        l lVarI;
-        View view;
-        l lVarI2;
-        View view2;
-        int i3;
-        View viewFindViewById;
         boolean z;
-        la6 la6Var;
-        f70 f70Var;
+        l lVar;
+        View view;
+        View findViewById;
+        boolean z2;
+        jx6 jx6Var;
+        v90 v90Var;
         ?? r2;
         RecyclerView recyclerView;
-        boolean zG;
-        if (this.f0 == null || this.g0 == null) {
+        boolean g;
+        boolean z3;
+        if (this.o0 == null || this.p0 == null) {
             return;
         }
-        be5 be5Var = this.Y0;
-        boolean z2 = false;
-        be5Var.i = false;
-        boolean z3 = this.n1 && !(this.o1 == getWidth() && this.p1 == getHeight());
-        this.o1 = 0;
-        this.p1 = 0;
-        this.n1 = false;
-        if (be5Var.d == 1) {
+        gy5 gy5Var = this.h1;
+        boolean z4 = false;
+        gy5Var.i = false;
+        boolean z5 = true;
+        boolean z6 = this.w1 && !(this.x1 == getWidth() && this.y1 == getHeight());
+        this.x1 = 0;
+        this.y1 = 0;
+        this.w1 = false;
+        if (gy5Var.d == 1) {
             t();
-            this.g0.P0(this);
+            this.p0.O0(this);
             u();
         } else {
-            t6 t6Var = this.U;
-            if ((((ArrayList) t6Var.e).isEmpty() || ((ArrayList) t6Var.d).isEmpty()) && !z3 && this.g0.d0 == getWidth() && this.g0.e0 == getHeight()) {
-                this.g0.P0(this);
+            f7 f7Var = this.g0;
+            if ((((ArrayList) f7Var.e).isEmpty() || ((ArrayList) f7Var.d).isEmpty()) && !z6 && this.p0.m0 == getWidth() && this.p0.n0 == getHeight()) {
+                this.p0.O0(this);
             } else {
-                this.g0.P0(this);
+                this.p0.O0(this);
                 u();
             }
         }
-        be5Var.a(4);
+        gy5Var.a(4);
         p0();
         V();
-        be5Var.d = 1;
-        boolean z4 = be5Var.j;
-        ka0 ka0Var = this.V;
-        k kVar = this.S;
-        th5 th5Var = this.W;
-        if (z4) {
-            for (int iF = ka0Var.f() - 1; iF >= 0; iF--) {
-                l lVarN = N(ka0Var.d(iF));
-                if (!lVarN.p()) {
-                    long jL = L(lVarN);
-                    this.G0.getClass();
-                    f70 f70Var2 = new f70();
-                    f70Var2.a(lVarN);
-                    kr3 kr3Var = (kr3) th5Var.S;
-                    la6 la6Var2 = (la6) th5Var.R;
-                    l lVar2 = (l) kr3Var.d(jL);
+        gy5Var.d = 1;
+        boolean z7 = gy5Var.j;
+        xk0 xk0Var = this.h0;
+        k kVar = this.e0;
+        q96 q96Var = this.i0;
+        if (z7) {
+            int k = xk0Var.k() - 1;
+            while (k >= 0) {
+                l N = N(xk0Var.j(k));
+                if (N.p()) {
+                    z3 = z5;
+                } else {
+                    long L = L(N);
+                    this.P0.getClass();
+                    v90 v90Var2 = new v90();
+                    v90Var2.a(N);
+                    k84 k84Var = (k84) q96Var.Z;
+                    jx6 jx6Var2 = (jx6) q96Var.Y;
+                    l lVar2 = (l) k84Var.b(L);
                     if (lVar2 == null || lVar2.p()) {
-                        th5Var.b(lVarN, f70Var2);
+                        z3 = z5;
+                        q96Var.g(N, v90Var2);
                     } else {
-                        eo7 eo7Var = (eo7) la6Var2.get(lVar2);
-                        boolean z5 = (eo7Var == null || (eo7Var.a & 1) == 0) ? false : true;
-                        eo7 eo7Var2 = (eo7) la6Var2.get(lVarN);
-                        boolean z6 = (eo7Var2 == null || (eo7Var2.a & 1) == 0) ? false : true;
-                        if (z5 && lVar2 == lVarN) {
-                            th5Var.b(lVarN, f70Var2);
+                        z3 = z5;
+                        dj8 dj8Var = (dj8) jx6Var2.get(lVar2);
+                        boolean z8 = (dj8Var == null || (dj8Var.a & 1) == 0) ? false : z3;
+                        dj8 dj8Var2 = (dj8) jx6Var2.get(N);
+                        boolean z9 = (dj8Var2 == null || (dj8Var2.a & 1) == 0) ? false : z3;
+                        if (z8 && lVar2 == N) {
+                            q96Var.g(N, v90Var2);
                         } else {
-                            f70 f70VarI = th5Var.i(lVar2, 4);
-                            th5Var.b(lVarN, f70Var2);
-                            f70 f70VarI2 = th5Var.i(lVarN, 8);
-                            if (f70VarI == null) {
-                                int iF2 = ka0Var.f();
-                                for (int i4 = 0; i4 < iF2; i4++) {
-                                    l lVarN2 = N(ka0Var.d(i4));
-                                    if (lVarN2 != lVarN && L(lVarN2) == jL) {
-                                        f fVar = this.f0;
+                            v90 z10 = q96Var.z(lVar2, 4);
+                            q96Var.g(N, v90Var2);
+                            v90 z11 = q96Var.z(N, 8);
+                            if (z10 == null) {
+                                int k2 = xk0Var.k();
+                                for (int i = 0; i < k2; i++) {
+                                    l N2 = N(xk0Var.j(i));
+                                    if (N2 != N && L(N2) == L) {
+                                        f fVar = this.o0;
                                         if (fVar == null || !fVar.b) {
                                             StringBuilder sb = new StringBuilder("Two different ViewHolders have the same change ID. This might happen due to inconsistent Adapter update events or if the LayoutManager lays out the same View multiple times.\n ViewHolder 1:");
-                                            sb.append(lVarN2);
+                                            sb.append(N2);
                                             sb.append(" \n View Holder 2:");
-                                            sb.append(lVarN);
-                                            x1.k(sb, C());
+                                            sb.append(N);
+                                            z1.k(sb, C());
                                             return;
                                         }
                                         StringBuilder sb2 = new StringBuilder("Two different ViewHolders have the same stable ID. Stable IDs in your adapter MUST BE unique and SHOULD NOT change.\n ViewHolder 1:");
-                                        sb2.append(lVarN2);
+                                        sb2.append(N2);
                                         sb2.append(" \n View Holder 2:");
-                                        sb2.append(lVarN);
-                                        x1.k(sb2, C());
+                                        sb2.append(N);
+                                        z1.k(sb2, C());
                                         return;
                                     }
                                 }
                                 Objects.toString(lVar2);
-                                Objects.toString(lVarN);
+                                Objects.toString(N);
                                 C();
                             } else {
                                 lVar2.o(false);
-                                if (z5) {
+                                if (z8) {
                                     h(lVar2);
                                 }
-                                if (lVar2 != lVarN) {
-                                    if (z6) {
-                                        h(lVarN);
+                                if (lVar2 != N) {
+                                    if (z9) {
+                                        h(N);
                                     }
-                                    lVar2.h = lVarN;
+                                    lVar2.h = N;
                                     h(lVar2);
                                     kVar.m(lVar2);
-                                    lVarN.o(false);
-                                    lVarN.i = lVar2;
+                                    N.o(false);
+                                    N.i = lVar2;
                                 }
-                                if (this.G0.a(lVar2, lVarN, f70VarI, f70VarI2)) {
+                                if (this.P0.a(lVar2, N, z10, z11)) {
                                     Y();
                                 }
                             }
                         }
                     }
                 }
+                k--;
+                z5 = z3;
             }
-            la6 la6Var3 = (la6) th5Var.R;
-            int i5 = la6Var3.S - 1;
-            while (i5 >= 0) {
-                l lVar3 = (l) la6Var3.g(i5);
-                eo7 eo7Var3 = (eo7) la6Var3.h(i5);
-                int i6 = eo7Var3.a;
-                int i7 = i6 & 3;
-                hd5 hd5Var = this.r1;
-                if (i7 == 3) {
-                    RecyclerView recyclerView2 = hd5Var.a;
-                    recyclerView2.g0.G0(lVar3.a, recyclerView2.S);
-                } else if ((i6 & 1) != 0) {
-                    f70 f70Var3 = eo7Var3.b;
-                    if (f70Var3 == null) {
-                        RecyclerView recyclerView3 = hd5Var.a;
-                        recyclerView3.g0.G0(lVar3.a, recyclerView3.S);
+            z = z5;
+            jx6 jx6Var3 = (jx6) q96Var.Y;
+            int i2 = jx6Var3.Z - 1;
+            while (i2 >= 0) {
+                l lVar3 = (l) jx6Var3.g(i2);
+                dj8 dj8Var3 = (dj8) jx6Var3.h(i2);
+                int i3 = dj8Var3.a;
+                int i4 = i3 & 3;
+                mx5 mx5Var = this.A1;
+                if (i4 == 3) {
+                    RecyclerView recyclerView2 = mx5Var.a;
+                    recyclerView2.p0.G0(lVar3.a, recyclerView2.e0);
+                } else if ((i3 & 1) != 0) {
+                    v90 v90Var3 = dj8Var3.b;
+                    if (v90Var3 == null) {
+                        RecyclerView recyclerView3 = mx5Var.a;
+                        recyclerView3.p0.G0(lVar3.a, recyclerView3.e0);
                     } else {
-                        hd5Var.b(lVar3, f70Var3, eo7Var3.c);
+                        mx5Var.b(lVar3, v90Var3, dj8Var3.c);
                     }
-                } else {
-                    if ((i6 & 14) == 14) {
-                        hd5Var.a(lVar3, eo7Var3.b, eo7Var3.c);
-                    } else if ((i6 & 12) == 12) {
-                        f70 f70Var4 = eo7Var3.b;
-                        f70 f70Var5 = eo7Var3.c;
-                        hd5Var.getClass();
-                        lVar3.o(z2);
-                        RecyclerView recyclerView4 = hd5Var.a;
-                        boolean z7 = recyclerView4.x0;
-                        od5 od5Var = recyclerView4.G0;
-                        if (z7) {
-                            if (od5Var.a(lVar3, lVar3, f70Var4, f70Var5)) {
-                                recyclerView4.Y();
-                            }
-                            la6Var = la6Var3;
-                        } else {
-                            j41 j41Var = (j41) od5Var;
-                            j41Var.getClass();
-                            int i8 = f70Var4.a;
-                            int i9 = f70Var5.a;
-                            if (i8 == i9) {
-                                la6Var = la6Var3;
-                                if (f70Var4.b == f70Var5.b) {
-                                    j41Var.c(lVar3);
-                                    recyclerView = recyclerView4;
-                                    zG = false;
-                                }
-                                if (zG) {
+                } else if ((i3 & 14) == 14) {
+                    mx5Var.a(lVar3, dj8Var3.b, dj8Var3.c);
+                } else if ((i3 & 12) == 12) {
+                    v90 v90Var4 = dj8Var3.b;
+                    v90 v90Var5 = dj8Var3.c;
+                    mx5Var.getClass();
+                    lVar3.o(z4);
+                    RecyclerView recyclerView4 = mx5Var.a;
+                    boolean z12 = recyclerView4.G0;
+                    tx5 tx5Var = recyclerView4.P0;
+                    if (z12) {
+                        if (tx5Var.a(lVar3, lVar3, v90Var4, v90Var5)) {
+                            recyclerView4.Y();
+                        }
+                        jx6Var = jx6Var3;
+                    } else {
+                        hc1 hc1Var = (hc1) tx5Var;
+                        hc1Var.getClass();
+                        int i5 = v90Var4.a;
+                        int i6 = v90Var5.a;
+                        if (i5 == i6) {
+                            jx6Var = jx6Var3;
+                            if (v90Var4.b == v90Var5.b) {
+                                hc1Var.c(lVar3);
+                                recyclerView = recyclerView4;
+                                g = false;
+                                if (g) {
                                     recyclerView.Y();
                                 }
-                            } else {
-                                la6Var = la6Var3;
                             }
-                            recyclerView = recyclerView4;
-                            zG = j41Var.g(lVar3, i8, f70Var4.b, i9, f70Var5.b);
-                            if (zG) {
-                                recyclerView.Y();
-                            }
-                        }
-                        r2 = 0;
-                        f70Var = null;
-                    } else {
-                        la6Var = la6Var3;
-                        if ((i6 & 4) != 0) {
-                            f70Var = null;
-                            hd5Var.b(lVar3, eo7Var3.b, null);
                         } else {
-                            f70Var = null;
-                            if ((i6 & 8) != 0) {
-                                hd5Var.a(lVar3, eo7Var3.b, eo7Var3.c);
-                            }
+                            jx6Var = jx6Var3;
                         }
-                        r2 = 0;
+                        recyclerView = recyclerView4;
+                        g = hc1Var.g(lVar3, i5, v90Var4.b, i6, v90Var5.b);
+                        if (g) {
+                        }
                     }
-                    eo7Var3.a = r2;
-                    eo7Var3.b = f70Var;
-                    eo7Var3.c = f70Var;
-                    eo7.d.d(eo7Var3);
-                    i5--;
-                    la6Var3 = la6Var;
-                    z2 = false;
+                    r2 = 0;
+                    v90Var = null;
+                    dj8Var3.a = r2;
+                    dj8Var3.b = v90Var;
+                    dj8Var3.c = v90Var;
+                    dj8.d.d(dj8Var3);
+                    i2--;
+                    jx6Var3 = jx6Var;
+                    z4 = false;
+                } else {
+                    jx6Var = jx6Var3;
+                    if ((i3 & 4) != 0) {
+                        v90Var = null;
+                        mx5Var.b(lVar3, dj8Var3.b, null);
+                    } else {
+                        v90Var = null;
+                        if ((i3 & 8) != 0) {
+                            mx5Var.a(lVar3, dj8Var3.b, dj8Var3.c);
+                        }
+                    }
+                    r2 = 0;
+                    dj8Var3.a = r2;
+                    dj8Var3.b = v90Var;
+                    dj8Var3.c = v90Var;
+                    dj8.d.d(dj8Var3);
+                    i2--;
+                    jx6Var3 = jx6Var;
+                    z4 = false;
                 }
-                la6Var = la6Var3;
-                r2 = z2;
-                f70Var = null;
-                eo7Var3.a = r2;
-                eo7Var3.b = f70Var;
-                eo7Var3.c = f70Var;
-                eo7.d.d(eo7Var3);
-                i5--;
-                la6Var3 = la6Var;
-                z2 = false;
+                jx6Var = jx6Var3;
+                r2 = z4;
+                v90Var = null;
+                dj8Var3.a = r2;
+                dj8Var3.b = v90Var;
+                dj8Var3.c = v90Var;
+                dj8.d.d(dj8Var3);
+                i2--;
+                jx6Var3 = jx6Var;
+                z4 = false;
             }
+        } else {
+            z = true;
         }
-        View view3 = null;
-        this.g0.F0(kVar);
-        be5Var.b = be5Var.e;
-        this.x0 = false;
-        this.y0 = false;
-        be5Var.j = false;
-        be5Var.k = false;
-        this.g0.V = false;
+        View view2 = null;
+        this.p0.F0(kVar);
+        gy5Var.b = gy5Var.e;
+        this.G0 = false;
+        this.H0 = false;
+        gy5Var.j = false;
+        gy5Var.k = false;
+        this.p0.e0 = false;
         ArrayList arrayList = kVar.b;
         if (arrayList != null) {
             arrayList.clear();
         }
-        j jVar = this.g0;
-        if (jVar.a0) {
-            jVar.Z = 0;
-            jVar.a0 = false;
+        j jVar = this.p0;
+        if (jVar.j0) {
+            jVar.i0 = 0;
+            jVar.j0 = false;
             kVar.n();
         }
-        this.g0.v0(be5Var);
-        W(true);
+        this.p0.v0(gy5Var);
+        boolean z13 = z;
+        W(z13);
         r0(false);
-        ((la6) th5Var.R).clear();
-        ((kr3) th5Var.S).b();
-        int[] iArr = this.g1;
-        int i10 = iArr[0];
-        int i11 = iArr[1];
+        ((jx6) q96Var.Y).clear();
+        ((k84) q96Var.Z).a();
+        int[] iArr = this.p1;
+        int i7 = iArr[0];
+        int i8 = iArr[z13 ? 1 : 0];
         G(iArr);
-        if (iArr[0] != i10 || iArr[1] != i11) {
+        if (iArr[0] != i7 || iArr[z13 ? 1 : 0] != i8) {
             x(0, 0);
         }
-        if (this.U0 && this.f0 != null && hasFocus() && getDescendantFocusability() != 393216 && (getDescendantFocusability() != 131072 || !isFocused())) {
-            if (isFocused()) {
-                j = be5Var.m;
-                if (j == -1) {
-                    lVar = null;
-                } else {
-                    lVar = null;
-                }
-                if (lVar != null) {
-                    view = lVar.a;
-                    if (!((ArrayList) ka0Var.R).contains(view)) {
-                        if (ka0Var.f() > 0) {
-                            int i12 = be5Var.l;
-                            if (i12 != -1) {
-                            }
-                            iB = be5Var.b();
-                            i2 = i;
-                            while (true) {
-                                if (i2 < iB) {
-                                    lVarI2 = I(i2);
-                                    if (lVarI2 != null) {
-                                        view2 = lVarI2.a;
-                                        if (view2.hasFocusable()) {
-                                            view3 = view2;
-                                        } else {
-                                            i2++;
-                                        }
-                                    }
-                                }
-                                for (iMin = Math.min(iB, i) - 1; iMin >= 0; iMin--) {
-                                    lVarI = I(iMin);
-                                    if (lVarI == null) {
-                                        break;
-                                        break;
-                                    }
-                                    view = lVarI.a;
-                                    if (view.hasFocusable()) {
-                                        view3 = view;
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-                    } else if (ka0Var.f() > 0) {
-                        int i13 = be5Var.l;
-                        if (i13 != -1) {
-                        }
-                        iB = be5Var.b();
-                        i2 = i;
-                        while (true) {
-                            if (i2 < iB) {
-                                lVarI2 = I(i2);
-                                if (lVarI2 != null) {
-                                    view2 = lVarI2.a;
-                                    if (view2.hasFocusable()) {
-                                        view3 = view2;
-                                    } else {
-                                        i2++;
-                                    }
-                                }
-                            }
-                            while (iMin >= 0) {
-                                lVarI = I(iMin);
-                                if (lVarI == null) {
-                                    break;
-                                    break;
-                                }
-                                view = lVarI.a;
-                                if (view.hasFocusable()) {
-                                    view3 = view;
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                } else if (ka0Var.f() > 0) {
-                    int i14 = be5Var.l;
-                    if (i14 != -1) {
-                    }
-                    iB = be5Var.b();
-                    i2 = i;
-                    while (true) {
-                        if (i2 < iB) {
-                            lVarI2 = I(i2);
-                            if (lVarI2 != null) {
-                                view2 = lVarI2.a;
-                                if (view2.hasFocusable()) {
-                                    view3 = view2;
-                                } else {
-                                    i2++;
-                                }
-                            }
-                        }
-                        while (iMin >= 0) {
-                            lVarI = I(iMin);
-                            if (lVarI == null) {
-                                break;
-                                break;
-                            }
-                            view = lVarI.a;
-                            if (view.hasFocusable()) {
-                                view3 = view;
-                                break;
-                            }
-                        }
-                    }
-                }
-                if (view3 != null) {
-                    i3 = be5Var.n;
-                    if (i3 != -1) {
-                        view3 = viewFindViewById;
-                    }
-                    view3.requestFocus();
-                }
-            } else if (((ArrayList) ka0Var.R).contains(getFocusedChild())) {
-                j = be5Var.m;
-                if (j == -1 && (z = this.f0.b) && z) {
-                    int iJ = ka0Var.j();
-                    lVar = null;
-                    for (int i15 = 0; i15 < iJ; i15++) {
-                        l lVarN3 = N(ka0Var.i(i15));
-                        if (lVarN3 != null && !lVarN3.i() && lVarN3.e == j) {
-                            if (!((ArrayList) ka0Var.R).contains(lVarN3.a)) {
-                                lVar = lVarN3;
-                                break;
-                            }
-                            lVar = lVarN3;
-                        }
-                    }
-                } else {
-                    lVar = null;
-                }
-                if (lVar != null) {
-                    view = lVar.a;
-                    if (!((ArrayList) ka0Var.R).contains(view) && view.hasFocusable()) {
-                        view3 = view;
+        if (this.d1 && this.o0 != null && hasFocus() && getDescendantFocusability() != 393216 && (getDescendantFocusability() != 131072 || !isFocused())) {
+            if (!isFocused()) {
+            }
+            long j = gy5Var.m;
+            if (j != -1 && (z2 = this.o0.b) && z2) {
+                int n = xk0Var.n();
+                int i9 = 0;
+                lVar = null;
+                while (true) {
+                    if (i9 >= n) {
                         break;
                     }
-                    if (ka0Var.f() > 0) {
-                        int i16 = be5Var.l;
-                        i = i16 != -1 ? i16 : 0;
-                        iB = be5Var.b();
-                        i2 = i;
-                        while (true) {
-                            if (i2 < iB) {
-                                lVarI2 = I(i2);
-                                if (lVarI2 != null) {
-                                    view2 = lVarI2.a;
-                                    if (view2.hasFocusable()) {
-                                        view3 = view2;
-                                    } else {
-                                        i2++;
-                                    }
-                                }
-                            }
-                            while (iMin >= 0) {
-                                lVarI = I(iMin);
-                                if (lVarI == null) {
-                                    break;
-                                }
-                                view = lVarI.a;
-                                if (view.hasFocusable()) {
-                                    view3 = view;
-                                    break;
-                                }
-                            }
+                    l N3 = N(xk0Var.m(i9));
+                    if (N3 != null && !N3.i() && N3.e == j) {
+                        if (!((ArrayList) xk0Var.Y).contains(N3.a)) {
+                            lVar = N3;
+                            break;
                         }
+                        lVar = N3;
                     }
-                } else if (ka0Var.f() > 0) {
-                    int i17 = be5Var.l;
-                    if (i17 != -1) {
-                    }
-                    iB = be5Var.b();
-                    i2 = i;
-                    while (true) {
-                        if (i2 < iB) {
-                            lVarI2 = I(i2);
-                            if (lVarI2 != null) {
-                                view2 = lVarI2.a;
-                                if (view2.hasFocusable()) {
-                                    view3 = view2;
-                                } else {
-                                    i2++;
-                                }
-                            }
-                        }
-                        while (iMin >= 0) {
-                            lVarI = I(iMin);
-                            if (lVarI == null) {
-                                break;
-                                break;
-                            }
-                            view = lVarI.a;
-                            if (view.hasFocusable()) {
-                                view3 = view;
-                                break;
-                            }
-                        }
-                    }
+                    i9++;
                 }
-                if (view3 != null) {
-                    i3 = be5Var.n;
-                    if (i3 != -1 && (viewFindViewById = view3.findViewById(i3)) != null && viewFindViewById.isFocusable()) {
-                        view3 = viewFindViewById;
-                    }
-                    view3.requestFocus();
+            } else {
+                lVar = null;
+            }
+            if (lVar != null) {
+                view = lVar.a;
+                if (!((ArrayList) xk0Var.Y).contains(view)) {
                 }
             }
+            if (xk0Var.k() > 0) {
+                int i10 = gy5Var.l;
+                int i11 = i10 != -1 ? i10 : 0;
+                int b = gy5Var.b();
+                for (int i12 = i11; i12 < b; i12++) {
+                    l I = I(i12);
+                    if (I == null) {
+                        break;
+                    }
+                    View view3 = I.a;
+                    if (view3.hasFocusable()) {
+                        view2 = view3;
+                        break;
+                    }
+                }
+                for (int min = Math.min(b, i11) - 1; min >= 0; min--) {
+                    l I2 = I(min);
+                    if (I2 == null) {
+                        break;
+                    }
+                    view = I2.a;
+                    if (view.hasFocusable()) {
+                        view2 = view;
+                        break;
+                    }
+                }
+            }
+            if (view2 != null) {
+                int i13 = gy5Var.n;
+                if (i13 != -1 && (findViewById = view2.findViewById(i13)) != null && findViewById.isFocusable()) {
+                    view2 = findViewById;
+                }
+                view2.requestFocus();
+            }
         }
-        be5Var.m = -1L;
-        be5Var.l = -1;
-        be5Var.n = -1;
+        gy5Var.m = -1L;
+        gy5Var.l = -1;
+        gy5Var.n = -1;
     }
 
     public final void s0(int i) {
@@ -3384,17 +3245,17 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.View
     public final void scrollBy(int i, int i2) {
-        j jVar = this.g0;
-        if (jVar == null || this.r0) {
+        j jVar = this.p0;
+        if (jVar == null || this.A0) {
             return;
         }
-        boolean zP = jVar.p();
-        boolean zQ = this.g0.q();
-        if (zP || zQ) {
-            if (!zP) {
+        boolean p = jVar.p();
+        boolean q = this.p0.q();
+        if (p || q) {
+            if (!p) {
                 i = 0;
             }
-            if (!zQ) {
+            if (!q) {
                 i2 = 0;
             }
             h0(i, i2, null, 0);
@@ -3407,79 +3268,79 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
             super.sendAccessibilityEventUnchecked(accessibilityEvent);
         } else {
             int contentChangeTypes = accessibilityEvent != null ? accessibilityEvent.getContentChangeTypes() : 0;
-            this.t0 |= contentChangeTypes != 0 ? contentChangeTypes : 0;
+            this.C0 |= contentChangeTypes != 0 ? contentChangeTypes : 0;
         }
     }
 
-    public void setAccessibilityDelegateCompat(ge5 ge5Var) {
-        this.f1 = ge5Var;
-        qn7.q(this, ge5Var);
+    public void setAccessibilityDelegateCompat(ly5 ly5Var) {
+        this.o1 = ly5Var;
+        ni8.m(this, ly5Var);
     }
 
     public void setAdapter(f fVar) {
         setLayoutFrozen(false);
-        f fVar2 = this.f0;
-        g62 g62Var = this.R;
+        f fVar2 = this.o0;
+        zg2 zg2Var = this.d0;
         if (fVar2 != null) {
-            fVar2.a.unregisterObserver(g62Var);
-            this.f0.h(this);
+            fVar2.a.unregisterObserver(zg2Var);
+            this.o0.h(this);
         }
-        od5 od5Var = this.G0;
-        if (od5Var != null) {
-            od5Var.e();
+        tx5 tx5Var = this.P0;
+        if (tx5Var != null) {
+            tx5Var.e();
         }
-        j jVar = this.g0;
-        k kVar = this.S;
+        j jVar = this.p0;
+        k kVar = this.e0;
         if (jVar != null) {
             jVar.E0(kVar);
-            this.g0.F0(kVar);
+            this.p0.F0(kVar);
         }
         kVar.a.clear();
         kVar.g();
-        t6 t6Var = this.U;
-        t6Var.I((ArrayList) t6Var.d);
-        t6Var.I((ArrayList) t6Var.e);
-        t6Var.b = 0;
-        f fVar3 = this.f0;
-        this.f0 = fVar;
+        f7 f7Var = this.g0;
+        f7Var.I((ArrayList) f7Var.d);
+        f7Var.I((ArrayList) f7Var.e);
+        f7Var.b = 0;
+        f fVar3 = this.o0;
+        this.o0 = fVar;
         if (fVar != null) {
-            fVar.a.registerObserver(g62Var);
+            fVar.a.registerObserver(zg2Var);
             fVar.d(this);
         }
-        j jVar2 = this.g0;
+        j jVar2 = this.p0;
         if (jVar2 != null) {
             jVar2.e0(fVar3);
         }
-        f fVar4 = this.f0;
+        f fVar4 = this.o0;
         kVar.a.clear();
         kVar.g();
         kVar.f(fVar3, true);
-        vd5 vd5VarC = kVar.c();
+        ay5 c = kVar.c();
         if (fVar3 != null) {
-            vd5VarC.b--;
+            c.b--;
         }
-        if (vd5VarC.b == 0) {
-            SparseArray sparseArray = vd5VarC.a;
+        if (c.b == 0) {
+            SparseArray sparseArray = c.a;
             for (int i = 0; i < sparseArray.size(); i++) {
-                ud5 ud5Var = (ud5) sparseArray.valueAt(i);
-                Iterator it = ud5Var.a.iterator();
+                zx5 zx5Var = (zx5) sparseArray.valueAt(i);
+                Iterator it = zx5Var.a.iterator();
                 while (it.hasNext()) {
-                    fx4.a(((l) it.next()).a);
+                    gg5.a(((l) it.next()).a);
                 }
-                ud5Var.a.clear();
+                zx5Var.a.clear();
             }
         }
         if (fVar4 != null) {
-            vd5VarC.b++;
+            c.b++;
         }
         kVar.e();
-        this.Y0.f = true;
+        this.h1.f = true;
         a0(false);
         requestLayout();
     }
 
-    public void setChildDrawingOrderCallback(md5 md5Var) {
-        if (md5Var == null) {
+    public void setChildDrawingOrderCallback(rx5 rx5Var) {
+        if (rx5Var == null) {
             return;
         }
         setChildrenDrawingOrderEnabled(false);
@@ -3487,46 +3348,46 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.ViewGroup
     public void setClipToPadding(boolean z) {
-        if (z != this.a0) {
-            this.F0 = null;
-            this.D0 = null;
-            this.E0 = null;
-            this.C0 = null;
+        if (z != this.j0) {
+            this.O0 = null;
+            this.M0 = null;
+            this.N0 = null;
+            this.L0 = null;
         }
-        this.a0 = z;
+        this.j0 = z;
         super.setClipToPadding(z);
-        if (this.o0) {
+        if (this.x0) {
             requestLayout();
         }
     }
 
-    public void setEdgeEffectFactory(nd5 nd5Var) {
-        nd5Var.getClass();
-        this.B0 = nd5Var;
-        this.F0 = null;
-        this.D0 = null;
-        this.E0 = null;
-        this.C0 = null;
+    public void setEdgeEffectFactory(sx5 sx5Var) {
+        sx5Var.getClass();
+        this.K0 = sx5Var;
+        this.O0 = null;
+        this.M0 = null;
+        this.N0 = null;
+        this.L0 = null;
     }
 
     public void setHasFixedSize(boolean z) {
-        this.n0 = z;
+        this.w0 = z;
     }
 
-    public void setItemAnimator(od5 od5Var) {
-        od5 od5Var2 = this.G0;
-        if (od5Var2 != null) {
-            od5Var2.e();
-            this.G0.a = null;
+    public void setItemAnimator(tx5 tx5Var) {
+        tx5 tx5Var2 = this.P0;
+        if (tx5Var2 != null) {
+            tx5Var2.e();
+            this.P0.a = null;
         }
-        this.G0 = od5Var;
-        if (od5Var != null) {
-            od5Var.a = this.d1;
+        this.P0 = tx5Var;
+        if (tx5Var != null) {
+            tx5Var.a = this.m1;
         }
     }
 
     public void setItemViewCacheSize(int i) {
-        k kVar = this.S;
+        k kVar = this.e0;
         kVar.e = i;
         kVar.n();
     }
@@ -3538,51 +3399,51 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     public void setLayoutManager(j jVar) {
         RecyclerView recyclerView;
-        if (jVar == this.g0) {
+        if (jVar == this.p0) {
             return;
         }
         t0();
-        j jVar2 = this.g0;
-        k kVar = this.S;
+        j jVar2 = this.p0;
+        k kVar = this.e0;
         if (jVar2 != null) {
-            od5 od5Var = this.G0;
-            if (od5Var != null) {
-                od5Var.e();
+            tx5 tx5Var = this.P0;
+            if (tx5Var != null) {
+                tx5Var.e();
             }
-            this.g0.E0(kVar);
-            this.g0.F0(kVar);
+            this.p0.E0(kVar);
+            this.p0.F0(kVar);
             kVar.a.clear();
             kVar.g();
-            if (this.m0) {
-                j jVar3 = this.g0;
-                jVar3.W = false;
+            if (this.v0) {
+                j jVar3 = this.p0;
+                jVar3.f0 = false;
                 jVar3.h0(this);
             }
-            this.g0.T0(null);
-            this.g0 = null;
+            this.p0.S0(null);
+            this.p0 = null;
         } else {
             kVar.a.clear();
             kVar.g();
         }
-        ka0 ka0Var = this.V;
-        ((ki0) ka0Var.U).i();
-        ArrayList arrayList = (ArrayList) ka0Var.R;
+        xk0 xk0Var = this.h0;
+        ((jp0) xk0Var.d0).i();
+        ArrayList arrayList = (ArrayList) xk0Var.Y;
         int size = arrayList.size() - 1;
         while (true) {
-            recyclerView = ((hd5) ka0Var.T).a;
+            recyclerView = ((mx5) xk0Var.c0).a;
             if (size < 0) {
                 break;
             }
-            l lVarN = N((View) arrayList.get(size));
-            if (lVarN != null) {
-                int i = lVarN.p;
+            l N = N((View) arrayList.get(size));
+            if (N != null) {
+                int i = N.p;
                 if (recyclerView.R()) {
-                    lVarN.q = i;
-                    recyclerView.l1.add(lVarN);
+                    N.q = i;
+                    recyclerView.u1.add(N);
                 } else {
-                    lVarN.a.setImportantForAccessibility(i);
+                    N.a.setImportantForAccessibility(i);
                 }
-                lVarN.p = 0;
+                N.p = 0;
             }
             arrayList.remove(size);
             size--;
@@ -3594,20 +3455,20 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
             childAt.clearAnimation();
         }
         recyclerView.removeAllViews();
-        this.g0 = jVar;
+        this.p0 = jVar;
         if (jVar != null) {
-            if (jVar.R != null) {
+            if (jVar.Y != null) {
                 StringBuilder sb = new StringBuilder("LayoutManager ");
                 sb.append(jVar);
-                String strC = jVar.R.C();
+                String C = jVar.Y.C();
                 sb.append(" is already attached to a RecyclerView:");
-                sb.append(strC);
+                sb.append(C);
                 throw new IllegalArgumentException(sb.toString());
             }
-            jVar.T0(this);
-            if (this.m0) {
-                j jVar4 = this.g0;
-                jVar4.W = true;
+            jVar.S0(this);
+            if (this.v0) {
+                j jVar4 = this.p0;
+                jVar4.f0 = true;
                 jVar4.g0(this);
             }
         }
@@ -3621,84 +3482,83 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         if (layoutTransition == null) {
             super.setLayoutTransition(null);
         } else {
-            fn.r("Providing a LayoutTransition into RecyclerView is not supported. Please use setItemAnimator() instead for animating changes to the items in this RecyclerView");
+            i60.p("Providing a LayoutTransition into RecyclerView is not supported. Please use setItemAnimator() instead for animating changes to the items in this RecyclerView");
         }
     }
 
     @Override // android.view.View
     public void setNestedScrollingEnabled(boolean z) {
-        fb4 scrollingChildHelper = getScrollingChildHelper();
+        us4 scrollingChildHelper = getScrollingChildHelper();
         if (scrollingChildHelper.d) {
             ViewGroup viewGroup = scrollingChildHelper.c;
-            WeakHashMap weakHashMap = qn7.a;
-            in7.n(viewGroup);
+            WeakHashMap weakHashMap = ni8.a;
+            viewGroup.stopNestedScroll();
         }
         scrollingChildHelper.d = z;
     }
 
-    public void setOnFlingListener(rd5 rd5Var) {
-        this.P0 = rd5Var;
+    public void setOnFlingListener(wx5 wx5Var) {
+        this.Y0 = wx5Var;
     }
 
     @Deprecated
-    public void setOnScrollListener(td5 td5Var) {
-        this.Z0 = td5Var;
+    public void setOnScrollListener(yx5 yx5Var) {
+        this.i1 = yx5Var;
     }
 
     public void setPreserveFocusAfterLayout(boolean z) {
-        this.U0 = z;
+        this.d1 = z;
     }
 
-    public void setRecycledViewPool(vd5 vd5Var) {
-        k kVar = this.S;
+    public void setRecycledViewPool(ay5 ay5Var) {
+        k kVar = this.e0;
         RecyclerView recyclerView = kVar.h;
-        kVar.f(recyclerView.f0, false);
-        vd5 vd5Var2 = kVar.g;
-        if (vd5Var2 != null) {
-            vd5Var2.b--;
+        kVar.f(recyclerView.o0, false);
+        if (kVar.g != null) {
+            r1.b--;
         }
-        kVar.g = vd5Var;
-        if (vd5Var != null && recyclerView.getAdapter() != null) {
+        kVar.g = ay5Var;
+        if (ay5Var != null && recyclerView.getAdapter() != null) {
             kVar.g.b++;
         }
         kVar.e();
     }
 
     @Deprecated
-    public void setRecyclerListener(wd5 wd5Var) {
-        this.h0 = wd5Var;
+    public void setRecyclerListener(by5 by5Var) {
+        this.q0 = by5Var;
     }
 
     public void setScrollState(int i) {
         c cVar;
-        if (i == this.H0) {
+        if (i == this.Q0) {
             return;
         }
-        if (u1) {
+        if (D1) {
             new Exception();
         }
-        this.H0 = i;
+        this.Q0 = i;
         if (i != 2) {
-            ee5 ee5Var = this.V0;
-            ee5Var.W.removeCallbacks(ee5Var);
-            ee5Var.S.abortAnimation();
-            j jVar = this.g0;
-            if (jVar != null && (cVar = jVar.U) != null) {
+            jy5 jy5Var = this.e1;
+            jy5Var.f0.removeCallbacks(jy5Var);
+            jy5Var.Z.abortAnimation();
+            j jVar = this.p0;
+            if (jVar != null && (cVar = jVar.d0) != null) {
                 cVar.e();
             }
         }
-        j jVar2 = this.g0;
+        j jVar2 = this.p0;
         if (jVar2 != null) {
             jVar2.A0(i);
         }
-        td5 td5Var = this.Z0;
-        if (td5Var != null) {
-            td5Var.a(i);
+        yx5 yx5Var = this.i1;
+        if (yx5Var != null) {
+            yx5Var.a(this, i);
         }
-        ArrayList arrayList = this.a1;
+        ArrayList arrayList = this.j1;
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
-                ((td5) this.a1.get(size)).a(i);
+                ((yx5) this.j1.get(size)).a(this, i);
             }
         }
     }
@@ -3706,14 +3566,14 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     public void setScrollingTouchSlop(int i) {
         ViewConfiguration viewConfiguration = ViewConfiguration.get(getContext());
         if (i != 1) {
-            this.O0 = viewConfiguration.getScaledTouchSlop();
+            this.X0 = viewConfiguration.getScaledTouchSlop();
         } else {
-            this.O0 = viewConfiguration.getScaledPagingTouchSlop();
+            this.X0 = viewConfiguration.getScaledPagingTouchSlop();
         }
     }
 
-    public void setViewCacheExtension(de5 de5Var) {
-        this.S.getClass();
+    public void setViewCacheExtension(iy5 iy5Var) {
+        this.e0.getClass();
     }
 
     @Override // android.view.View
@@ -3728,130 +3588,130 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
 
     @Override // android.view.ViewGroup
     public final void suppressLayout(boolean z) {
-        if (z != this.r0) {
+        if (z != this.A0) {
             k("Do not suppressLayout in layout or scroll");
             if (z) {
-                long jUptimeMillis = SystemClock.uptimeMillis();
-                onTouchEvent(MotionEvent.obtain(jUptimeMillis, jUptimeMillis, 3, 0.0f, 0.0f, 0));
-                this.r0 = true;
-                this.s0 = true;
+                long uptimeMillis = SystemClock.uptimeMillis();
+                onTouchEvent(MotionEvent.obtain(uptimeMillis, uptimeMillis, 3, 0.0f, 0.0f, 0));
+                this.A0 = true;
+                this.B0 = true;
                 t0();
                 return;
             }
-            this.r0 = false;
-            if (this.q0 && this.g0 != null && this.f0 != null) {
+            this.A0 = false;
+            if (this.z0 && this.p0 != null && this.o0 != null) {
                 requestLayout();
             }
-            this.q0 = false;
+            this.z0 = false;
         }
     }
 
     public final void t() {
-        eo7 eo7Var;
-        View viewE;
-        be5 be5Var = this.Y0;
-        be5Var.a(1);
-        D(be5Var);
-        be5Var.i = false;
+        dj8 dj8Var;
+        View E;
+        gy5 gy5Var = this.h1;
+        gy5Var.a(1);
+        D(gy5Var);
+        gy5Var.i = false;
         p0();
-        th5 th5Var = this.W;
-        la6 la6Var = (la6) th5Var.R;
-        la6 la6Var2 = (la6) th5Var.R;
-        la6Var.clear();
-        kr3 kr3Var = (kr3) th5Var.S;
-        kr3Var.b();
+        q96 q96Var = this.i0;
+        jx6 jx6Var = (jx6) q96Var.Y;
+        jx6 jx6Var2 = (jx6) q96Var.Y;
+        jx6Var.clear();
+        k84 k84Var = (k84) q96Var.Z;
+        k84Var.a();
         V();
         Z();
-        l lVarM = null;
-        View focusedChild = (this.U0 && hasFocus() && this.f0 != null) ? getFocusedChild() : null;
-        if (focusedChild != null && (viewE = E(focusedChild)) != null) {
-            lVarM = M(viewE);
+        l lVar = null;
+        View focusedChild = (this.d1 && hasFocus() && this.o0 != null) ? getFocusedChild() : null;
+        if (focusedChild != null && (E = E(focusedChild)) != null) {
+            lVar = M(E);
         }
-        if (lVarM == null) {
-            be5Var.m = -1L;
-            be5Var.l = -1;
-            be5Var.n = -1;
+        if (lVar == null) {
+            gy5Var.m = -1L;
+            gy5Var.l = -1;
+            gy5Var.n = -1;
         } else {
-            be5Var.m = this.f0.b ? lVarM.e : -1L;
-            be5Var.l = this.x0 ? -1 : lVarM.i() ? lVarM.d : lVarM.b();
-            View focusedChild2 = lVarM.a;
-            int id = focusedChild2.getId();
-            while (!focusedChild2.isFocused() && (focusedChild2 instanceof ViewGroup) && focusedChild2.hasFocus()) {
-                focusedChild2 = ((ViewGroup) focusedChild2).getFocusedChild();
-                if (focusedChild2.getId() != -1) {
-                    id = focusedChild2.getId();
+            gy5Var.m = this.o0.b ? lVar.e : -1L;
+            gy5Var.l = this.G0 ? -1 : lVar.i() ? lVar.d : lVar.b();
+            View view = lVar.a;
+            int id = view.getId();
+            while (!view.isFocused() && (view instanceof ViewGroup) && view.hasFocus()) {
+                view = ((ViewGroup) view).getFocusedChild();
+                if (view.getId() != -1) {
+                    id = view.getId();
                 }
             }
-            be5Var.n = id;
+            gy5Var.n = id;
         }
-        be5Var.h = be5Var.j && this.c1;
-        this.c1 = false;
-        this.b1 = false;
-        be5Var.g = be5Var.k;
-        be5Var.e = this.f0.a();
-        G(this.g1);
-        boolean z = be5Var.j;
-        ka0 ka0Var = this.V;
+        gy5Var.h = gy5Var.j && this.l1;
+        this.l1 = false;
+        this.k1 = false;
+        gy5Var.g = gy5Var.k;
+        gy5Var.e = this.o0.a();
+        G(this.p1);
+        boolean z = gy5Var.j;
+        xk0 xk0Var = this.h0;
         if (z) {
-            int iF = ka0Var.f();
-            for (int i = 0; i < iF; i++) {
-                l lVarN = N(ka0Var.d(i));
-                if (!lVarN.p() && (!lVarN.g() || this.f0.b)) {
-                    od5 od5Var = this.G0;
-                    od5.b(lVarN);
-                    lVarN.d();
-                    od5Var.getClass();
-                    f70 f70Var = new f70();
-                    f70Var.a(lVarN);
-                    eo7 eo7VarA = (eo7) la6Var2.get(lVarN);
-                    if (eo7VarA == null) {
-                        eo7VarA = eo7.a();
-                        la6Var2.put(lVarN, eo7VarA);
+            int k = xk0Var.k();
+            for (int i = 0; i < k; i++) {
+                l N = N(xk0Var.j(i));
+                if (!N.p() && (!N.g() || this.o0.b)) {
+                    tx5 tx5Var = this.P0;
+                    tx5.b(N);
+                    N.d();
+                    tx5Var.getClass();
+                    v90 v90Var = new v90();
+                    v90Var.a(N);
+                    dj8 dj8Var2 = (dj8) jx6Var2.get(N);
+                    if (dj8Var2 == null) {
+                        dj8Var2 = dj8.a();
+                        jx6Var2.put(N, dj8Var2);
                     }
-                    eo7VarA.b = f70Var;
-                    eo7VarA.a |= 4;
-                    if (be5Var.h && lVarN.l() && !lVarN.i() && !lVarN.p() && !lVarN.g()) {
-                        kr3Var.i(L(lVarN), lVarN);
+                    dj8Var2.b = v90Var;
+                    dj8Var2.a |= 4;
+                    if (gy5Var.h && N.l() && !N.i() && !N.p() && !N.g()) {
+                        k84Var.f(L(N), N);
                     }
                 }
             }
         }
-        if (be5Var.k) {
-            int iJ = ka0Var.j();
-            for (int i2 = 0; i2 < iJ; i2++) {
-                l lVarN2 = N(ka0Var.i(i2));
-                if (t1 && lVarN2.c == -1 && !lVarN2.i()) {
-                    fn.s("view holder cannot have position -1 unless it is removed".concat(C()));
+        if (gy5Var.k) {
+            int n = xk0Var.n();
+            for (int i2 = 0; i2 < n; i2++) {
+                l N2 = N(xk0Var.m(i2));
+                if (C1 && N2.c == -1 && !N2.i()) {
+                    i60.g("view holder cannot have position -1 unless it is removed".concat(C()));
                     return;
                 }
-                if (!lVarN2.p() && lVarN2.d == -1) {
-                    lVarN2.d = lVarN2.c;
+                if (!N2.p() && N2.d == -1) {
+                    N2.d = N2.c;
                 }
             }
-            boolean z2 = be5Var.f;
-            be5Var.f = false;
-            this.g0.u0(this.S, be5Var);
-            be5Var.f = z2;
-            for (int i3 = 0; i3 < ka0Var.f(); i3++) {
-                l lVarN3 = N(ka0Var.d(i3));
-                if (!lVarN3.p() && ((eo7Var = (eo7) la6Var2.get(lVarN3)) == null || (eo7Var.a & 4) == 0)) {
-                    od5.b(lVarN3);
-                    boolean z3 = (lVarN3.j & 8192) != 0;
-                    od5 od5Var2 = this.G0;
-                    lVarN3.d();
-                    od5Var2.getClass();
-                    f70 f70Var2 = new f70();
-                    f70Var2.a(lVarN3);
+            boolean z2 = gy5Var.f;
+            gy5Var.f = false;
+            this.p0.u0(this.e0, gy5Var);
+            gy5Var.f = z2;
+            for (int i3 = 0; i3 < xk0Var.k(); i3++) {
+                l N3 = N(xk0Var.j(i3));
+                if (!N3.p() && ((dj8Var = (dj8) jx6Var2.get(N3)) == null || (dj8Var.a & 4) == 0)) {
+                    tx5.b(N3);
+                    boolean z3 = (N3.j & 8192) != 0;
+                    tx5 tx5Var2 = this.P0;
+                    N3.d();
+                    tx5Var2.getClass();
+                    v90 v90Var2 = new v90();
+                    v90Var2.a(N3);
                     if (z3) {
-                        b0(lVarN3, f70Var2);
+                        b0(N3, v90Var2);
                     } else {
-                        eo7 eo7VarA2 = (eo7) la6Var2.get(lVarN3);
-                        if (eo7VarA2 == null) {
-                            eo7VarA2 = eo7.a();
-                            la6Var2.put(lVarN3, eo7VarA2);
+                        dj8 dj8Var3 = (dj8) jx6Var2.get(N3);
+                        if (dj8Var3 == null) {
+                            dj8Var3 = dj8.a();
+                            jx6Var2.put(N3, dj8Var3);
                         }
-                        eo7VarA2.a |= 2;
-                        eo7VarA2.b = f70Var2;
+                        dj8Var3.a |= 2;
+                        dj8Var3.b = v90Var2;
                     }
                 }
             }
@@ -3861,17 +3721,17 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
         }
         W(true);
         r0(false);
-        be5Var.d = 2;
+        gy5Var.d = 2;
     }
 
     public final void t0() {
         c cVar;
         setScrollState(0);
-        ee5 ee5Var = this.V0;
-        ee5Var.W.removeCallbacks(ee5Var);
-        ee5Var.S.abortAnimation();
-        j jVar = this.g0;
-        if (jVar == null || (cVar = jVar.U) == null) {
+        jy5 jy5Var = this.e1;
+        jy5Var.f0.removeCallbacks(jy5Var);
+        jy5Var.Z.abortAnimation();
+        j jVar = this.p0;
+        if (jVar == null || (cVar = jVar.d0) == null) {
             return;
         }
         cVar.e();
@@ -3880,27 +3740,27 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     public final void u() {
         p0();
         V();
-        be5 be5Var = this.Y0;
-        be5Var.a(6);
-        this.U.o();
-        be5Var.e = this.f0.a();
-        be5Var.c = 0;
-        if (this.T != null) {
-            f fVar = this.f0;
-            int iE = ea0.E(fVar.c);
-            if (iE == 1 ? fVar.a() > 0 : iE != 2) {
-                Parcelable parcelable = this.T.S;
+        gy5 gy5Var = this.h1;
+        gy5Var.a(6);
+        this.g0.o();
+        gy5Var.e = this.o0.a();
+        gy5Var.c = 0;
+        if (this.f0 != null) {
+            f fVar = this.o0;
+            int B = w31.B(fVar.c);
+            if (B == 1 ? fVar.a() > 0 : B != 2) {
+                Parcelable parcelable = this.f0.Z;
                 if (parcelable != null) {
-                    this.g0.y0(parcelable);
+                    this.p0.y0(parcelable);
                 }
-                this.T = null;
+                this.f0 = null;
             }
         }
-        be5Var.g = false;
-        this.g0.u0(this.S, be5Var);
-        be5Var.f = false;
-        be5Var.j = be5Var.j && this.G0 != null;
-        be5Var.d = 4;
+        gy5Var.g = false;
+        this.p0.u0(this.e0, gy5Var);
+        gy5Var.f = false;
+        gy5Var.j = gy5Var.j && this.P0 != null;
+        gy5Var.d = 4;
         W(true);
         r0(false);
     }
@@ -3914,99 +3774,99 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public final void x(int i, int i2) {
-        this.A0++;
+        this.J0++;
         int scrollX = getScrollX();
         int scrollY = getScrollY();
         onScrollChanged(scrollX, scrollY, scrollX - i, scrollY - i2);
-        td5 td5Var = this.Z0;
-        if (td5Var != null) {
-            td5Var.b(this, i, i2);
+        yx5 yx5Var = this.i1;
+        if (yx5Var != null) {
+            yx5Var.b(this, i, i2);
         }
-        ArrayList arrayList = this.a1;
+        ArrayList arrayList = this.j1;
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
-                ((td5) this.a1.get(size)).b(this, i, i2);
+                ((yx5) this.j1.get(size)).b(this, i, i2);
             }
         }
-        this.A0--;
+        this.J0--;
     }
 
     public final void y() {
-        if (this.F0 != null) {
+        if (this.O0 != null) {
             return;
         }
-        EdgeEffect edgeEffectA = this.B0.a(this, 3);
-        this.F0 = edgeEffectA;
-        if (this.a0) {
-            edgeEffectA.setSize((getMeasuredWidth() - getPaddingLeft()) - getPaddingRight(), (getMeasuredHeight() - getPaddingTop()) - getPaddingBottom());
+        EdgeEffect a = this.K0.a(this, 3);
+        this.O0 = a;
+        if (this.j0) {
+            a.setSize((getMeasuredWidth() - getPaddingLeft()) - getPaddingRight(), (getMeasuredHeight() - getPaddingTop()) - getPaddingBottom());
         } else {
-            edgeEffectA.setSize(getMeasuredWidth(), getMeasuredHeight());
+            a.setSize(getMeasuredWidth(), getMeasuredHeight());
         }
     }
 
     public final void z() {
-        if (this.C0 != null) {
+        if (this.L0 != null) {
             return;
         }
-        EdgeEffect edgeEffectA = this.B0.a(this, 0);
-        this.C0 = edgeEffectA;
-        if (this.a0) {
-            edgeEffectA.setSize((getMeasuredHeight() - getPaddingTop()) - getPaddingBottom(), (getMeasuredWidth() - getPaddingLeft()) - getPaddingRight());
+        EdgeEffect a = this.K0.a(this, 0);
+        this.L0 = a;
+        if (this.j0) {
+            a.setSize((getMeasuredHeight() - getPaddingTop()) - getPaddingBottom(), (getMeasuredWidth() - getPaddingLeft()) - getPaddingRight());
         } else {
-            edgeEffectA.setSize(getMeasuredHeight(), getMeasuredWidth());
+            a.setSize(getMeasuredHeight(), getMeasuredWidth());
         }
     }
 
-    /* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+    /* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
     public static class LayoutParams extends ViewGroup.MarginLayoutParams {
-        public l Q;
-        public final Rect R;
-        public boolean S;
-        public boolean T;
+        public l X;
+        public final Rect Y;
+        public boolean Z;
+        public boolean c0;
 
         public LayoutParams(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            this.R = new Rect();
-            this.S = true;
-            this.T = false;
+            this.Y = new Rect();
+            this.Z = true;
+            this.c0 = false;
         }
 
         public LayoutParams(int i, int i2) {
             super(i, i2);
-            this.R = new Rect();
-            this.S = true;
-            this.T = false;
+            this.Y = new Rect();
+            this.Z = true;
+            this.c0 = false;
         }
 
         public LayoutParams(ViewGroup.MarginLayoutParams marginLayoutParams) {
             super(marginLayoutParams);
-            this.R = new Rect();
-            this.S = true;
-            this.T = false;
+            this.Y = new Rect();
+            this.Z = true;
+            this.c0 = false;
         }
 
         public LayoutParams(ViewGroup.LayoutParams layoutParams) {
             super(layoutParams);
-            this.R = new Rect();
-            this.S = true;
-            this.T = false;
+            this.Y = new Rect();
+            this.Z = true;
+            this.c0 = false;
         }
 
         public LayoutParams(LayoutParams layoutParams) {
             super((ViewGroup.LayoutParams) layoutParams);
-            this.R = new Rect();
-            this.S = true;
-            this.T = false;
+            this.Y = new Rect();
+            this.Z = true;
+            this.c0 = false;
         }
     }
 
     @Override // android.view.ViewGroup
     public final ViewGroup.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
-        j jVar = this.g0;
+        j jVar = this.p0;
         if (jVar != null) {
             return jVar.G(layoutParams);
         }
-        fn.s("RecyclerView has no LayoutManager".concat(C()));
+        i60.g("RecyclerView has no LayoutManager".concat(C()));
         return null;
     }
 
@@ -4015,6 +3875,6 @@ public class RecyclerView extends ViewGroup implements ScrollingView {
     }
 
     public RecyclerView(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, u75.recyclerViewStyle);
+        this(context, attributeSet, tr5.recyclerViewStyle);
     }
 }

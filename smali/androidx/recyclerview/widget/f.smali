@@ -1,10 +1,10 @@
 .class public abstract Landroidx/recyclerview/widget/f;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Ljd5;
+.field public final a:Lox5;
 
 .field public b:Z
 
@@ -21,7 +21,7 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljd5;
+    new-instance v0, Lox5;
 
     .line 5
     .line 6
@@ -30,7 +30,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/recyclerview/widget/f;->a:Ljd5;
+    iput-object v0, p0, Landroidx/recyclerview/widget/f;->a:Lox5;
 
     .line 10
     .line 11
@@ -57,24 +57,24 @@
 .end method
 
 .method public b(I)J
-    .locals 2
+    .locals 0
 
     .line 1
-    const-wide/16 v0, -0x1
+    const-wide/16 p0, -0x1
 
     .line 2
     .line 3
-    return-wide v0
+    return-wide p0
 .end method
 
 .method public c(I)I
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return p1
+    return p0
 .end method
 
 .method public d(Landroidx/recyclerview/widget/RecyclerView;)V
@@ -113,10 +113,10 @@
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return p1
+    return p0
 .end method
 
 .method public j(Landroidx/recyclerview/widget/l;)V

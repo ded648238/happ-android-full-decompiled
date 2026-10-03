@@ -1,6 +1,6 @@
 .class public Lcom/github/luben/zstd/ZstdDirectBufferDecompressingStreamNoFinalizer;
 .super Lcom/github/luben/zstd/BaseZstdBufferDecompressingStreamNoFinalizer;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -62,19 +62,19 @@
 
     .line 22
     :cond_0
-    const-string p1, "Source buffer should be a direct buffer"
+    const-string p0, "Source buffer should be a direct buffer"
 
     .line 23
     .line 24
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 25
     .line 26
     .line 27
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 28
-    throw p1
+    throw p0
 .end method
 
 .method private static native createDStreamNative()J
@@ -104,10 +104,10 @@
     move-result-wide v0
 
     .line 5
-    long-to-int v1, v0
+    long-to-int v0, v0
 
     .line 6
-    return v1
+    return v0
 .end method
 
 
@@ -136,10 +136,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-wide p1
+    move-result-wide p0
 
     .line 5
-    return-wide p1
+    return-wide p0
 .end method
 
 .method public freeDStream(J)J
@@ -151,10 +151,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-wide p1
+    move-result-wide p0
 
     .line 5
-    return-wide p1
+    return-wide p0
 .end method
 
 .method public initDStream(J)J
@@ -166,10 +166,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-wide p1
+    move-result-wide p0
 
     .line 5
-    return-wide p1
+    return-wide p0
 .end method
 
 .method public read(Ljava/nio/ByteBuffer;)I
@@ -201,24 +201,24 @@
     .line 9
     .line 10
     .line 11
-    move-result p1
+    move-result p0
 
     .line 12
-    return p1
+    return p0
 
     .line 13
     :cond_0
-    const-string p1, "Target buffer should be a direct buffer"
+    const-string p0, "Target buffer should be a direct buffer"
 
     .line 14
     .line 15
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 16
     .line 17
     .line 18
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    return p1
+    return p0
 .end method

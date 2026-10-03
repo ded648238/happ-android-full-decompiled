@@ -1,17 +1,17 @@
 package com.google.android.material.slider;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class f implements Runnable {
-    public int Q = -1;
-    public final /* synthetic */ BaseSlider R;
+    public int X = -1;
+    public final /* synthetic */ BaseSlider Y;
 
     public f(BaseSlider baseSlider) {
-        this.R = baseSlider;
+        this.Y = baseSlider;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        this.R.a0.x(this.Q, 4);
+        this.Y.j0.w(this.X, 4);
     }
 }

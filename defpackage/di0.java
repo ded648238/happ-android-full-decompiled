@@ -1,22 +1,46 @@
 package defpackage;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class di0 extends a0 {
-    public static final Parcelable.Creator<di0> CREATOR = new so4(2);
-    public boolean S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class di0 implements gy4 {
+    public final /* synthetic */ int a = 0;
+    public final /* synthetic */ Object b;
 
-    public di0(Parcel parcel, ClassLoader classLoader) {
-        super(parcel, classLoader);
-        this.S = parcel.readInt() == 1;
-    }
-
-    @Override // defpackage.a0, android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i) {
-        super.writeToParcel(parcel, i);
-        parcel.writeInt(this.S ? 1 : 0);
+    @Override // defpackage.gy4
+    public final void a(Object obj) {
+        HashMap hashMap;
+        int i = this.a;
+        int i2 = 0;
+        Object obj2 = this.b;
+        switch (i) {
+            case 0:
+                gi0 gi0Var = (gi0) obj2;
+                pw pwVar = (pw) obj;
+                if (!gi0Var.l.get()) {
+                    us7.q0("CameraPresencePrvdr");
+                    return;
+                } else {
+                    if (pwVar.b != null) {
+                        us7.q0("CameraPresencePrvdr");
+                        gi0Var.a.execute(new ci0(gi0Var, i2));
+                        return;
+                    }
+                    return;
+                }
+            default:
+                w53 w53Var = (w53) obj2;
+                t44 t44Var = (t44) obj;
+                synchronized (((HashMap) w53Var.Z)) {
+                    hashMap = new HashMap((HashMap) w53Var.Z);
+                }
+                for (Map.Entry entry : hashMap.entrySet()) {
+                    ((Executor) entry.getValue()).execute(new s44(i2, entry, t44Var));
+                }
+                return;
+        }
     }
 }

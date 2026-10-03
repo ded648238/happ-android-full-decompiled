@@ -1,169 +1,40 @@
 .class public final Lc32;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lm58;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public a:Ljava/lang/String;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lm58<",
+        "Ljava/util/Map<",
+        "Ljava/lang/String;",
+        "+",
+        "Ljava/util/List<",
+        "+",
+        "Ljava/lang/String;",
+        ">;>;>;"
+    }
+.end annotation
 
-.field public b:Ljava/lang/String;
-
-.field public c:Ljava/util/List;
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Lc32;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Lc32;
-
-    .line 12
-    .line 13
-    iget-object v1, p0, Lc32;->a:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    iget-object v3, p1, Lc32;->a:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-eqz v1, :cond_2
-
-    .line 22
-    .line 23
-    iget-object v1, p0, Lc32;->b:Ljava/lang/String;
-
-    .line 24
-    .line 25
-    iget-object v3, p1, Lc32;->b:Ljava/lang/String;
-
-    .line 26
-    .line 27
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v1
-
-    .line 31
-    if-eqz v1, :cond_2
-
-    .line 32
-    .line 33
-    iget-object v1, p0, Lc32;->c:Ljava/util/List;
-
-    .line 34
-    .line 35
-    iget-object p1, p1, Lc32;->c:Ljava/util/List;
-
-    .line 36
-    .line 37
-    invoke-static {v1, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 38
-    .line 39
-    .line 40
-    move-result p1
-
-    .line 41
-    if-eqz p1, :cond_2
-
-    .line 42
-    .line 43
-    return v0
-
-    .line 44
-    :cond_2
-    return v2
-.end method
-
-.method public final hashCode()I
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lc32;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lc32;->b:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    iget-object v2, p0, Lc32;->c:Ljava/util/List;
-
-    .line 6
-    .line 7
-    const/4 v3, 0x3
-
-    .line 8
-    new-array v3, v3, [Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    const/4 v4, 0x0
-
-    .line 11
-    aput-object v0, v3, v4
-
-    .line 12
-    .line 13
-    const/4 v0, 0x1
-
-    .line 14
-    aput-object v1, v3, v0
-
-    .line 15
-    .line 16
-    const/4 v0, 0x2
-
-    .line 17
-    aput-object v2, v3, v0
-
-    .line 18
-    .line 19
-    invoke-static {v3}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    return v0
-.end method
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\u0008\n\u0018\u00002\u001e\u0012\u001a\u0012\u0018\u0012\u0004\u0012\u00020\u0003\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00040\u0002j\u0002`\u00050\u0001\u00a8\u0006\u0006"
+    }
+    d2 = {
+        "Lc32;",
+        "Lm58;",
+        "",
+        "",
+        "",
+        "Lsu/happ/proxyutility/domain/check_extra/ProviderMap;",
+        "app"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x4,
+        0x0
+    }
+    xi = 0x30
+.end annotation

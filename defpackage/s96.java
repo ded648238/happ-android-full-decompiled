@@ -1,32 +1,30 @@
 package defpackage;
 
-import java.util.Arrays;
+import androidx.compose.material3.c;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class s96 extends uz4 {
-    public short[] a;
-    public int b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class s96 {
+    public static final wy0 a = new wy0(new a35(21));
+    public static final c b;
+    public static final c c;
 
-    @Override // defpackage.uz4
-    public final Object a() {
-        return Arrays.copyOf(this.a, this.b);
+    static {
+        long j = au0.g;
+        b = new c(true, Float.NaN, j);
+        c = new c(false, Float.NaN, j);
     }
 
-    @Override // defpackage.uz4
-    public final void b(int i) {
-        short[] sArr = this.a;
-        if (sArr.length < i) {
-            int length = sArr.length * 2;
-            if (i < length) {
-                i = length;
-            }
-            this.a = Arrays.copyOf(sArr, i);
+    public static c a(float f, int i, long j, boolean z) {
+        if ((i & 1) != 0) {
+            z = true;
         }
-    }
-
-    @Override // defpackage.uz4
-    public final int d() {
-        return this.b;
+        if ((i & 2) != 0) {
+            f = Float.NaN;
+        }
+        if ((i & 4) != 0) {
+            j = au0.g;
+        }
+        return (vp1.b(f, Float.NaN) && au0.c(j, au0.g)) ? z ? b : c : new c(z, f, j);
     }
 }

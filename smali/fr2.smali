@@ -1,141 +1,116 @@
-.class public final enum Lfr2;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lfr2;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final enum Q:Lfr2;
+.field public static final c:Lq96;
 
-.field public static final enum R:Lfr2;
 
-.field public static final enum S:Lfr2;
+# instance fields
+.field public final a:Lx65;
 
-.field public static final synthetic T:[Lfr2;
+.field public final b:Lx65;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 4
 
     .line 1
-    new-instance v0, Lfr2;
+    new-instance v0, Lva2;
 
     .line 2
     .line 3
-    const-string v1, "Focused"
+    const/4 v1, 0x1
 
     .line 4
+    invoke-direct {v0, v1}, Lva2;-><init>(I)V
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
+    new-instance v1, Ltc2;
+
     .line 8
     .line 9
-    sput-object v0, Lfr2;->Q:Lfr2;
+    const/4 v2, 0x4
 
     .line 10
+    const/4 v3, 0x0
+
     .line 11
-    new-instance v1, Lfr2;
+    invoke-direct {v1, v3, v2}, Ltc2;-><init>(BI)V
 
     .line 12
     .line 13
-    const-string v3, "UnfocusedEmpty"
-
     .line 14
-    .line 15
-    const/4 v4, 0x1
+    new-instance v2, Lq96;
 
+    .line 15
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v3, 0x4
 
     .line 17
+    invoke-direct {v2, v3, v0, v1}, Lq96;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+
     .line 18
     .line 19
-    sput-object v1, Lfr2;->R:Lfr2;
-
     .line 20
+    sput-object v2, Lfr2;->c:Lq96;
+
     .line 21
-    new-instance v3, Lfr2;
-
     .line 22
-    .line 23
-    const-string v5, "UnfocusedNotEmpty"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, Lfr2;->S:Lfr2;
-
-    .line 30
-    .line 31
-    const/4 v5, 0x3
-
-    .line 32
-    new-array v5, v5, [Lfr2;
-
-    .line 33
-    .line 34
-    aput-object v0, v5, v2
-
-    .line 35
-    .line 36
-    aput-object v1, v5, v4
-
-    .line 37
-    .line 38
-    aput-object v3, v5, v6
-
-    .line 39
-    .line 40
-    sput-object v5, Lfr2;->T:[Lfr2;
-
-    .line 41
-    .line 42
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lfr2;
-    .locals 1
+.method public constructor <init>(Z)V
+    .locals 0
 
     .line 1
-    const-class v0, Lfr2;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
     .line 4
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 5
     .line 6
-    move-result-object p0
-
     .line 7
-    check-cast p0, Lfr2;
+    move-result-object p1
 
     .line 8
+    invoke-static {p1}, Ld01;->J(Ljava/lang/Object;)Lx65;
+
     .line 9
-    return-object p0
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    iput-object p1, p0, Lfr2;->a:Lx65;
+
+    .line 13
+    .line 14
+    iput-object p1, p0, Lfr2;->b:Lx65;
+
+    .line 15
+    .line 16
+    return-void
 .end method
 
-.method public static values()[Lfr2;
+
+# virtual methods
+.method public final a()V
     .locals 1
 
     .line 1
-    sget-object v0, Lfr2;->T:[Lfr2;
+    iget-object p0, p0, Lfr2;->a:Lx65;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Lx65;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -143,9 +118,34 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, [Lfr2;
+    check-cast v0, Ljava/lang/Boolean;
 
     .line 8
     .line 9
-    return-object v0
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    xor-int/lit8 v0, v0, 0x1
+
+    .line 14
+    .line 15
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    invoke-virtual {p0, v0}, Lx65;->setValue(Ljava/lang/Object;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
 .end method

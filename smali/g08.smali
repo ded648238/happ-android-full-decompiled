@@ -1,44 +1,36 @@
 .class public abstract Lg08;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# static fields
-.field public static final a:I
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static a(Landroid/animation/Animator;)J
     .locals 2
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual {p0}, Landroid/animation/Animator;->getTotalDuration()J
 
     .line 2
     .line 3
-    const/16 v1, 0x1f
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    return-wide v0
+.end method
+
+.method public static b(Landroid/animation/Animator;J)V
+    .locals 0
+
+    .line 1
+    check-cast p0, Landroid/animation/AnimatorSet;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Landroid/animation/AnimatorSet;->setCurrentPlayTime(J)V
 
     .line 4
     .line 5
-    if-lt v0, v1, :cond_0
-
     .line 6
-    .line 7
-    const/high16 v0, 0x2000000
-
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 11
-    :goto_0
-    sput v0, Lg08;->a:I
-
-    .line 12
-    .line 13
     return-void
 .end method

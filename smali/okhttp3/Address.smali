@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Address;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -312,20 +312,20 @@
 
 # virtual methods
 .method public final -deprecated_certificatePinner()Lokhttp3/CertificatePinner;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->certificatePinner:Lokhttp3/CertificatePinner;
+    iget-object p0, p0, Lokhttp3/Address;->certificatePinner:Lokhttp3/CertificatePinner;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_connectionSpecs()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -335,45 +335,45 @@
         }
     .end annotation
 
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->connectionSpecs:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Address;->connectionSpecs:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_dns()Lokhttp3/Dns;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->dns:Lokhttp3/Dns;
+    iget-object p0, p0, Lokhttp3/Address;->dns:Lokhttp3/Dns;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_hostnameVerifier()Ljavax/net/ssl/HostnameVerifier;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
+    iget-object p0, p0, Lokhttp3/Address;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_protocols()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -383,108 +383,108 @@
         }
     .end annotation
 
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->protocols:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Address;->protocols:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_proxy()Ljava/net/Proxy;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->proxy:Ljava/net/Proxy;
+    iget-object p0, p0, Lokhttp3/Address;->proxy:Ljava/net/Proxy;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_proxyAuthenticator()Lokhttp3/Authenticator;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->proxyAuthenticator:Lokhttp3/Authenticator;
+    iget-object p0, p0, Lokhttp3/Address;->proxyAuthenticator:Lokhttp3/Authenticator;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_proxySelector()Ljava/net/ProxySelector;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->proxySelector:Ljava/net/ProxySelector;
+    iget-object p0, p0, Lokhttp3/Address;->proxySelector:Ljava/net/ProxySelector;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_socketFactory()Ljavax/net/SocketFactory;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->socketFactory:Ljavax/net/SocketFactory;
+    iget-object p0, p0, Lokhttp3/Address;->socketFactory:Ljavax/net/SocketFactory;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_sslSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object p0, p0, Lokhttp3/Address;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_url()Lokhttp3/HttpUrl;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->url:Lokhttp3/HttpUrl;
+    iget-object p0, p0, Lokhttp3/Address;->url:Lokhttp3/HttpUrl;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final certificatePinner()Lokhttp3/CertificatePinner;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->certificatePinner:Lokhttp3/CertificatePinner;
+    iget-object p0, p0, Lokhttp3/Address;->certificatePinner:Lokhttp3/CertificatePinner;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final connectionSpecs()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -495,22 +495,22 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->connectionSpecs:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Address;->connectionSpecs:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final dns()Lokhttp3/Dns;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->dns:Lokhttp3/Dns;
+    iget-object p0, p0, Lokhttp3/Address;->dns:Lokhttp3/Dns;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -537,7 +537,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 12
     .line 13
@@ -554,24 +554,24 @@
     .line 18
     .line 19
     .line 20
-    move-result p1
+    move-result p0
 
     .line 21
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 22
     .line 23
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 24
-    return p1
+    return p0
 
     .line 25
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 26
-    return p1
+    return p0
 .end method
 
 .method public final equalsNonHost$okhttp(Lokhttp3/Address;)Z
@@ -591,7 +591,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 9
     .line 10
@@ -611,7 +611,7 @@
 
     .line 17
     .line 18
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 19
     .line 20
@@ -631,7 +631,7 @@
 
     .line 27
     .line 28
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -651,7 +651,7 @@
 
     .line 37
     .line 38
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 39
     .line 40
@@ -671,7 +671,7 @@
 
     .line 47
     .line 48
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 49
     .line 50
@@ -691,7 +691,7 @@
 
     .line 57
     .line 58
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 59
     .line 60
@@ -711,7 +711,7 @@
 
     .line 67
     .line 68
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 69
     .line 70
@@ -731,7 +731,7 @@
 
     .line 77
     .line 78
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 79
     .line 80
@@ -751,7 +751,7 @@
 
     .line 87
     .line 88
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 89
     .line 90
@@ -763,16 +763,16 @@
 
     .line 93
     .line 94
-    iget-object v0, p0, Lokhttp3/Address;->url:Lokhttp3/HttpUrl;
+    iget-object p0, p0, Lokhttp3/Address;->url:Lokhttp3/HttpUrl;
 
     .line 95
     .line 96
-    invoke-virtual {v0}, Lokhttp3/HttpUrl;->port()I
+    invoke-virtual {p0}, Lokhttp3/HttpUrl;->port()I
 
     .line 97
     .line 98
     .line 99
-    move-result v0
+    move-result p0
 
     .line 100
     iget-object p1, p1, Lokhttp3/Address;->url:Lokhttp3/HttpUrl;
@@ -787,21 +787,21 @@
     move-result p1
 
     .line 106
-    if-ne v0, p1, :cond_0
+    if-ne p0, p1, :cond_0
 
     .line 107
     .line 108
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 109
-    return p1
+    return p0
 
     .line 110
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 111
-    return p1
+    return p0
 .end method
 
 .method public hashCode()I
@@ -828,179 +828,172 @@
 
     .line 10
     .line 11
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 12
-    .line 13
     iget-object v2, p0, Lokhttp3/Address;->dns:Lokhttp3/Dns;
 
+    .line 13
     .line 14
-    .line 15
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
+    .line 15
     .line 16
     .line 17
-    .line 18
     move-result v2
 
-    .line 19
+    .line 18
     add-int/2addr v2, v0
 
+    .line 19
+    mul-int/2addr v2, v1
+
     .line 20
-    mul-int/lit8 v2, v2, 0x1f
+    iget-object v0, p0, Lokhttp3/Address;->proxyAuthenticator:Lokhttp3/Authenticator;
 
     .line 21
     .line 22
-    iget-object v0, p0, Lokhttp3/Address;->proxyAuthenticator:Lokhttp3/Authenticator;
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 23
     .line 24
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
     .line 25
-    .line 26
-    .line 27
     move-result v0
 
-    .line 28
+    .line 26
     add-int/2addr v0, v2
 
-    .line 29
-    mul-int/lit8 v0, v0, 0x1f
+    .line 27
+    mul-int/2addr v0, v1
 
-    .line 30
-    .line 31
+    .line 28
     iget-object v2, p0, Lokhttp3/Address;->protocols:Ljava/util/List;
 
+    .line 29
+    .line 30
+    invoke-static {v0, v1, v2}, Lw31;->f(IILjava/util/List;)I
+
+    .line 31
     .line 32
     .line 33
-    invoke-static {v0, v1, v2}, Lp27;->k(IILjava/util/List;)I
+    move-result v0
 
     .line 34
-    .line 35
-    .line 36
-    move-result v0
-
-    .line 37
     iget-object v2, p0, Lokhttp3/Address;->connectionSpecs:Ljava/util/List;
 
+    .line 35
+    .line 36
+    invoke-static {v0, v1, v2}, Lw31;->f(IILjava/util/List;)I
+
+    .line 37
     .line 38
     .line 39
-    invoke-static {v0, v1, v2}, Lp27;->k(IILjava/util/List;)I
-
-    .line 40
-    .line 41
-    .line 42
     move-result v0
 
-    .line 43
+    .line 40
     iget-object v2, p0, Lokhttp3/Address;->proxySelector:Ljava/net/ProxySelector;
 
-    .line 44
-    .line 45
+    .line 41
+    .line 42
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    .line 46
-    .line 47
-    .line 48
+    .line 43
+    .line 44
+    .line 45
     move-result v2
 
-    .line 49
+    .line 46
     add-int/2addr v2, v0
 
+    .line 47
+    mul-int/2addr v2, v1
+
+    .line 48
+    iget-object v0, p0, Lokhttp3/Address;->proxy:Ljava/net/Proxy;
+
+    .line 49
     .line 50
-    mul-int/lit8 v2, v2, 0x1f
+    invoke-static {v0}, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
 
     .line 51
     .line 52
-    iget-object v0, p0, Lokhttp3/Address;->proxy:Ljava/net/Proxy;
-
     .line 53
-    .line 54
-    invoke-static {v0}, Lj$/util/Objects;->hashCode(Ljava/lang/Object;)I
-
-    .line 55
-    .line 56
-    .line 57
     move-result v0
 
-    .line 58
+    .line 54
     add-int/2addr v0, v2
 
-    .line 59
-    mul-int/lit8 v0, v0, 0x1f
+    .line 55
+    mul-int/2addr v0, v1
 
-    .line 60
-    .line 61
+    .line 56
     iget-object v2, p0, Lokhttp3/Address;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
 
-    .line 62
-    .line 63
-    invoke-static {v2}, Lj$/util/Objects;->hashCode(Ljava/lang/Object;)I
+    .line 57
+    .line 58
+    invoke-static {v2}, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
 
-    .line 64
-    .line 65
-    .line 66
+    .line 59
+    .line 60
+    .line 61
     move-result v2
 
-    .line 67
+    .line 62
     add-int/2addr v2, v0
 
-    .line 68
-    mul-int/lit8 v2, v2, 0x1f
+    .line 63
+    mul-int/2addr v2, v1
 
-    .line 69
-    .line 70
+    .line 64
     iget-object v0, p0, Lokhttp3/Address;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
 
+    .line 65
+    .line 66
+    invoke-static {v0}, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v0
+
+    .line 70
+    add-int/2addr v0, v2
+
     .line 71
+    mul-int/2addr v0, v1
+
     .line 72
-    invoke-static {v0}, Lj$/util/Objects;->hashCode(Ljava/lang/Object;)I
+    iget-object p0, p0, Lokhttp3/Address;->certificatePinner:Lokhttp3/CertificatePinner;
 
     .line 73
     .line 74
+    invoke-static {p0}, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
+
     .line 75
-    move-result v0
-
     .line 76
-    add-int/2addr v0, v2
-
     .line 77
-    mul-int/lit8 v0, v0, 0x1f
+    move-result p0
 
     .line 78
+    add-int/2addr p0, v0
+
     .line 79
-    iget-object v1, p0, Lokhttp3/Address;->certificatePinner:Lokhttp3/CertificatePinner;
-
-    .line 80
-    .line 81
-    invoke-static {v1}, Lj$/util/Objects;->hashCode(Ljava/lang/Object;)I
-
-    .line 82
-    .line 83
-    .line 84
-    move-result v1
-
-    .line 85
-    add-int/2addr v1, v0
-
-    .line 86
-    return v1
+    return p0
 .end method
 
 .method public final hostnameVerifier()Ljavax/net/ssl/HostnameVerifier;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
+    iget-object p0, p0, Lokhttp3/Address;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final protocols()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1011,66 +1004,66 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->protocols:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Address;->protocols:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final proxy()Ljava/net/Proxy;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->proxy:Ljava/net/Proxy;
+    iget-object p0, p0, Lokhttp3/Address;->proxy:Ljava/net/Proxy;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final proxyAuthenticator()Lokhttp3/Authenticator;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->proxyAuthenticator:Lokhttp3/Authenticator;
+    iget-object p0, p0, Lokhttp3/Address;->proxyAuthenticator:Lokhttp3/Authenticator;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final proxySelector()Ljava/net/ProxySelector;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->proxySelector:Ljava/net/ProxySelector;
+    iget-object p0, p0, Lokhttp3/Address;->proxySelector:Ljava/net/ProxySelector;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final socketFactory()Ljavax/net/SocketFactory;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->socketFactory:Ljavax/net/SocketFactory;
+    iget-object p0, p0, Lokhttp3/Address;->socketFactory:Ljavax/net/SocketFactory;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final sslSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object p0, p0, Lokhttp3/Address;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -1163,12 +1156,12 @@
     .line 45
     .line 46
     .line 47
-    iget-object v2, p0, Lokhttp3/Address;->proxy:Ljava/net/Proxy;
+    iget-object p0, p0, Lokhttp3/Address;->proxy:Ljava/net/Proxy;
 
     .line 48
     .line 49
     :goto_0
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 50
     .line 51
@@ -1178,7 +1171,7 @@
     .line 53
     .line 54
     .line 55
-    move-result-object v1
+    move-result-object p0
 
     .line 56
     goto :goto_1
@@ -1198,7 +1191,7 @@
     .line 62
     .line 63
     .line 64
-    iget-object v2, p0, Lokhttp3/Address;->proxySelector:Ljava/net/ProxySelector;
+    iget-object p0, p0, Lokhttp3/Address;->proxySelector:Ljava/net/ProxySelector;
 
     .line 65
     .line 66
@@ -1206,28 +1199,28 @@
 
     .line 67
     :goto_1
-    const/16 v2, 0x7d
+    const/16 v1, 0x7d
 
     .line 68
     .line 69
-    invoke-static {v0, v1, v2}, Lmi2;->r(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+    invoke-static {v0, p0, v1}, Leh0;->q(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
 
     .line 70
     .line 71
     .line 72
-    move-result-object v0
+    move-result-object p0
 
     .line 73
-    return-object v0
+    return-object p0
 .end method
 
 .method public final url()Lokhttp3/HttpUrl;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Address;->url:Lokhttp3/HttpUrl;
+    iget-object p0, p0, Lokhttp3/Address;->url:Lokhttp3/HttpUrl;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

@@ -1,304 +1,278 @@
 .class public final Lxy7;
-.super Lyu7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final d:Ljava/util/regex/Pattern;
 
 
 # instance fields
-.field public final synthetic k:I
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/lang/String;
+
+.field public final c:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput p1, p0, Lxy7;->k:I
+    const-string v0, "[a-zA-Z0-9-_.~%]{1,900}"
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     .line 4
     .line 5
     .line 6
+    move-result-object v0
+
+    .line 7
+    sput-object v0, Lxy7;->d:Ljava/util/regex/Pattern;
+
+    .line 8
+    .line 9
     return-void
 .end method
 
-
-# virtual methods
-.method public g(Landroid/content/Context;Landroid/os/Looper;Lj44;Ljava/lang/Object;Lfc2;Lgc2;)Ltk;
-    .locals 7
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
 
     .line 1
-    iget v0, p0, Lxy7;->k:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    if-eqz p2, :cond_0
+
     .line 5
     .line 6
-    invoke-super/range {p0 .. p6}, Lyu7;->g(Landroid/content/Context;Landroid/os/Looper;Lj44;Ljava/lang/Object;Lfc2;Lgc2;)Ltk;
+    const-string v0, "/topics/"
 
     .line 7
     .line 8
+    invoke-virtual {p2, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
     .line 9
-    move-result-object p1
-
     .line 10
-    return-object p1
-
     .line 11
-    :pswitch_0
-    invoke-static {p4}, Lp27;->l(Ljava/lang/Object;)Ljava/lang/ClassCastException;
+    move-result v0
 
     .line 12
+    if-eqz v0, :cond_0
+
     .line 13
     .line 14
-    move-result-object p1
+    const/16 v0, 0x8
 
     .line 15
-    throw p1
-
     .line 16
-    :pswitch_1
-    check-cast p4, Lba6;
+    invoke-virtual {p2, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     .line 17
     .line 18
-    new-instance v0, Laa6;
-
     .line 19
+    move-result-object v0
+
     .line 20
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    goto :goto_0
 
     .line 21
+    :cond_0
+    move-object v0, p2
+
     .line 22
+    :goto_0
+    if-eqz v0, :cond_1
+
     .line 23
-    iget-object p4, p3, Lj44;->W:Ljava/lang/Object;
-
     .line 24
+    sget-object v1, Lxy7;->d:Ljava/util/regex/Pattern;
+
     .line 25
-    check-cast p4, Ljava/lang/Integer;
-
     .line 26
-    .line 27
-    new-instance v4, Landroid/os/Bundle;
+    invoke-virtual {v1, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
+    .line 27
     .line 28
     .line 29
-    invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
+    move-result-object v1
 
     .line 30
+    invoke-virtual {v1}, Ljava/util/regex/Matcher;->matches()Z
+
     .line 31
     .line 32
-    const-string v1, "com.google.android.gms.signin.internal.clientRequestedAccount"
-
     .line 33
+    move-result v1
+
     .line 34
-    const/4 v2, 0x0
+    if-eqz v1, :cond_1
 
     .line 35
-    invoke-virtual {v4, v1, v2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
-
     .line 36
+    iput-object v0, p0, Lxy7;->a:Ljava/lang/String;
+
     .line 37
     .line 38
-    if-eqz p4, :cond_0
+    iput-object p1, p0, Lxy7;->b:Ljava/lang/String;
 
     .line 39
     .line 40
-    const-string v1, "com.google.android.gms.common.internal.ClientSettings.sessionId"
+    const-string v0, "!"
 
     .line 41
     .line 42
-    invoke-virtual {p4}, Ljava/lang/Integer;->intValue()I
+    invoke-static {p1, v0, p2}, Leh0;->m(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 43
     .line 44
     .line 45
-    move-result p4
+    move-result-object p1
 
     .line 46
-    invoke-virtual {v4, v1, p4}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+    iput-object p1, p0, Lxy7;->c:Ljava/lang/String;
 
     .line 47
     .line 48
+    return-void
+
     .line 49
-    :cond_0
-    const-string p4, "com.google.android.gms.signin.internal.offlineAccessRequested"
+    :cond_1
+    const-string p0, "Invalid topic name: "
 
     .line 50
     .line 51
-    const/4 v1, 0x0
+    const-string p1, " does not match the allowed format [a-zA-Z0-9-_.~%]{1,900}."
 
     .line 52
-    invoke-virtual {v4, p4, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
     .line 53
+    invoke-static {p0, v0, p1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
     .line 54
     .line 55
-    const-string p4, "com.google.android.gms.signin.internal.idTokenRequested"
-
     .line 56
+    move-result-object p0
+
     .line 57
-    invoke-virtual {v4, p4, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 58
     .line 59
     .line 60
-    const-string p4, "com.google.android.gms.signin.internal.serverClientId"
+    const/4 p0, 0x0
 
     .line 61
-    .line 62
-    invoke-virtual {v4, p4, v2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 63
-    .line 64
-    .line 65
-    const-string p4, "com.google.android.gms.signin.internal.usePromptModeForAuthCode"
-
-    .line 66
-    .line 67
-    const/4 v3, 0x1
-
-    .line 68
-    invoke-virtual {v4, p4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 69
-    .line 70
-    .line 71
-    const-string p4, "com.google.android.gms.signin.internal.forceCodeForRefreshToken"
-
-    .line 72
-    .line 73
-    invoke-virtual {v4, p4, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 74
-    .line 75
-    .line 76
-    const-string p4, "com.google.android.gms.signin.internal.hostedDomain"
-
-    .line 77
-    .line 78
-    invoke-virtual {v4, p4, v2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 79
-    .line 80
-    .line 81
-    const-string p4, "com.google.android.gms.signin.internal.logSessionId"
-
-    .line 82
-    .line 83
-    invoke-virtual {v4, p4, v2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 84
-    .line 85
-    .line 86
-    const-string p4, "com.google.android.gms.signin.internal.waitForAccessTokenRefresh"
-
-    .line 87
-    .line 88
-    invoke-virtual {v4, p4, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 89
-    .line 90
-    .line 91
-    move-object v1, p1
-
-    .line 92
-    move-object v2, p2
-
-    .line 93
-    move-object v3, p3
-
-    .line 94
-    move-object v5, p5
-
-    .line 95
-    move-object v6, p6
-
-    .line 96
-    invoke-direct/range {v0 .. v6}, Laa6;-><init>(Landroid/content/Context;Landroid/os/Looper;Lj44;Landroid/os/Bundle;Lfc2;Lgc2;)V
-
-    .line 97
-    .line 98
-    .line 99
-    return-object v0
-
-    .line 100
-    nop
-
-    .line 101
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    throw p0
 .end method
 
-.method public synthetic h(Landroid/content/Context;Landroid/os/Looper;Lj44;Ljava/lang/Object;Ldz7;Ldz7;)Ltk;
-    .locals 7
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    iget v0, p0, Lxy7;->k:I
+    instance-of v0, p1, Lxy7;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v1, 0x0
 
     .line 4
+    if-nez v0, :cond_0
+
     .line 5
     .line 6
-    invoke-super/range {p0 .. p6}, Lyu7;->h(Landroid/content/Context;Landroid/os/Looper;Lj44;Ljava/lang/Object;Ldz7;Ldz7;)Ltk;
+    return v1
 
     .line 7
+    :cond_0
+    check-cast p1, Lxy7;
+
     .line 8
     .line 9
-    move-result-object p1
+    iget-object v0, p0, Lxy7;->a:Ljava/lang/String;
 
     .line 10
-    return-object p1
-
     .line 11
-    :pswitch_0
-    move-object v4, p4
+    iget-object v2, p1, Lxy7;->a:Ljava/lang/String;
 
     .line 12
-    check-cast v4, Lww6;
-
     .line 13
-    .line 14
-    new-instance v0, Lb08;
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 14
     .line 15
     .line 16
-    move-object v1, p1
+    move-result v0
 
     .line 17
-    move-object v2, p2
+    if-eqz v0, :cond_1
 
     .line 18
-    move-object v3, p3
-
     .line 19
-    move-object v5, p5
+    iget-object p0, p0, Lxy7;->b:Ljava/lang/String;
 
     .line 20
-    move-object v6, p6
-
     .line 21
-    invoke-direct/range {v0 .. v6}, Lb08;-><init>(Landroid/content/Context;Landroid/os/Looper;Lj44;Lww6;Ldz7;Ldz7;)V
+    iget-object p1, p1, Lxy7;->b:Ljava/lang/String;
 
     .line 22
     .line 23
-    .line 24
-    return-object v0
+    invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 24
     .line 25
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_0
-    .end packed-switch
+    .line 26
+    move-result p0
+
+    .line 27
+    if-eqz p0, :cond_1
+
+    .line 28
+    .line 29
+    const/4 p0, 0x1
+
+    .line 30
+    return p0
+
+    .line 31
+    :cond_1
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lxy7;->b:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lxy7;->a:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    filled-new-array {v0, p0}, [Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-static {p0}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p0
+
+    .line 13
+    return p0
 .end method

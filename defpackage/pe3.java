@@ -1,16 +1,28 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class pe3 {
-    public float c;
-    public long e;
-    public float a = 1.0f;
-    public float b = 1.0f;
-    public float d = 8.0f;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class pe3 extends ke3 {
+    public final tn6 g0;
+    public final /* synthetic */ ve3 h0;
 
-    public pe3() {
-        int i = e77.c;
-        this.e = e77.b;
+    public pe3(ve3 ve3Var, tn6 tn6Var) {
+        this.h0 = ve3Var;
+        this.g0 = tn6Var;
+    }
+
+    @Override // defpackage.ke3
+    public final boolean r() {
+        return false;
+    }
+
+    @Override // defpackage.ke3
+    public final void s(Throwable th) {
+        ve3 ve3Var = this.h0;
+        Object N = ve3Var.N();
+        if (!(N instanceof vv0)) {
+            N = we3.a(N);
+        }
+        this.g0.k(ve3Var, N);
     }
 }

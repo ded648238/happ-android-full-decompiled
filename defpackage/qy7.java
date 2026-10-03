@@ -1,44 +1,29 @@
 package defpackage;
 
-import android.hardware.camera2.CameraCharacteristics;
-import android.os.Build;
-import android.util.Range;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class qy7 implements qg5 {
+    public final int X;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class qy7 {
-    public final ja0 a;
-    public final j94 b;
-    public final q84 c;
-    public final py7 d;
-    public boolean e = false;
-    public final oy7 f = new oy7(this);
+    public qy7(int i) {
+        this.X = i;
+    }
 
-    /* JADX WARN: Code duplicated, block: B:9:0x002c  */
-    public qy7(ja0 ja0Var, gc0 gc0Var, j56 j56Var) {
-        Range range;
-        py7 weVar;
-        this.a = ja0Var;
-        if (Build.VERSION.SDK_INT >= 30) {
-            try {
-                range = (Range) gc0Var.a(CameraCharacteristics.CONTROL_ZOOM_RATIO_RANGE);
-            } catch (AssertionError unused) {
-                w33.U("ZoomControl");
-                range = null;
-            }
-            if (range != null) {
-                weVar = new we(gc0Var);
-            } else {
-                weVar = new rb2(23, gc0Var);
-            }
-        } else {
-            weVar = new rb2(23, gc0Var);
+    @Override // defpackage.qg5
+    public final long p(v73 v73Var, long j, hv3 hv3Var, long j2) {
+        int i = (int) (j2 >> 32);
+        int d = ((v73Var.d() - i) / 2) + v73Var.a;
+        if (d < 0) {
+            d = v73Var.a;
+        } else if (d + i > ((int) (j >> 32))) {
+            d = v73Var.c - i;
         }
-        this.d = weVar;
-        j94 j94Var = new j94(weVar.l(), weVar.C());
-        this.b = j94Var;
-        j94Var.i();
-        this.c = new q84(new gv(j94Var.d(), j94Var.b(), j94Var.c(), j94Var.a()));
-        ja0Var.a(this.f);
+        int i2 = v73Var.b - ((int) (j2 & 4294967295L));
+        int i3 = this.X;
+        int i4 = i2 - i3;
+        if (i4 < 0) {
+            i4 = v73Var.d + i3;
+        }
+        return (d << 32) | (i4 & 4294967295L);
     }
 }

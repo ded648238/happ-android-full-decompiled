@@ -1,30 +1,8 @@
-.class public final Lpk0;
+.class public interface abstract Lpk0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final a:Lkv6;
-
-
-# direct methods
-.method public constructor <init>(Lkv6;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    .line 6
-    .line 7
-    iput-object p1, p0, Lpk0;->a:Lkv6;
-
-    .line 8
-    .line 9
-    return-void
+# virtual methods
+.method public abstract cancel()V
 .end method

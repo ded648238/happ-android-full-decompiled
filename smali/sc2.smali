@@ -1,152 +1,229 @@
-.class public interface abstract Lsc2;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class final Lsc2;
+.super Ljn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Lng2;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljn4;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0082\u0008\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001\u00a8\u0006\u0003"
+    }
+    d2 = {
+        "Lsc2;",
+        "Ljn4;",
+        "Lxc2;",
+        "ui"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field public final X:Lvc2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lvc2;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lng2;->Y:Lng2;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sput-object v0, Lsc2;->a:Lng2;
-
     .line 4
+    iput-object p1, p0, Lsc2;->X:Lvc2;
+
     .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract A()F
+.method public final a()Lcn4;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lxc2;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcn4;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p0, p0, Lsc2;->X:Lvc2;
+
+    .line 7
+    .line 8
+    iput-object p0, v0, Lxc2;->n0:Lvc2;
+
+    .line 9
+    .line 10
+    return-object v0
 .end method
 
-.method public abstract B()J
+.method public final c(Lcn4;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lxc2;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lsc2;->X:Lvc2;
+
+    .line 4
+    .line 5
+    iput-object p0, p1, Lxc2;->n0:Lvc2;
+
+    .line 6
+    .line 7
+    return-void
 .end method
 
-.method public abstract C(J)V
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, Lsc2;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, Lsc2;
+
+    .line 10
+    .line 11
+    iget-object p0, p0, Lsc2;->X:Lvc2;
+
+    .line 12
+    .line 13
+    iget-object p1, p1, Lsc2;->X:Lvc2;
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, p1}, Lvc2;->equals(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p0
+
+    .line 19
+    if-nez p0, :cond_2
+
+    .line 20
+    .line 21
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 22
+    return p0
+
+    .line 23
+    :cond_2
+    :goto_1
+    const/4 p0, 0x1
+
+    .line 24
+    return p0
 .end method
 
-.method public abstract D()F
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsc2;->X:Lvc2;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lvc2;->a:Lmi2;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p0
+
+    .line 9
+    return p0
 .end method
 
-.method public abstract E()F
-.end method
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-.method public abstract F(Lt20;)V
-.end method
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-.method public abstract G(Z)V
-.end method
+    .line 2
+    .line 3
+    const-string v1, "FocusPropertiesElement(scope="
 
-.method public abstract H()F
-.end method
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-.method public abstract I(Lz61;Lte3;Lrc2;Lk8;)V
-.end method
+    .line 6
+    .line 7
+    .line 8
+    iget-object p0, p0, Lsc2;->X:Lvc2;
 
-.method public abstract J(I)V
-.end method
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-.method public abstract K(J)V
-.end method
+    .line 11
+    .line 12
+    .line 13
+    const-string p0, ")"
 
-.method public abstract L()Landroid/graphics/Matrix;
-.end method
+    .line 14
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public abstract M()Z
-.end method
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-.method public abstract N()F
-.end method
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
 
-.method public abstract O()F
-.end method
-
-.method public abstract P()I
-.end method
-
-.method public abstract a()F
-.end method
-
-.method public abstract b(F)V
-.end method
-
-.method public abstract c()F
-.end method
-
-.method public abstract d(F)V
-.end method
-
-.method public abstract e(I)V
-.end method
-
-.method public abstract f()V
-.end method
-
-.method public abstract g(F)V
-.end method
-
-.method public abstract h()Z
-.end method
-
-.method public abstract i()V
-.end method
-
-.method public abstract j(F)V
-.end method
-
-.method public abstract k()V
-.end method
-
-.method public abstract l()V
-.end method
-
-.method public abstract m()V
-.end method
-
-.method public abstract n(F)V
-.end method
-
-.method public abstract o()V
-.end method
-
-.method public abstract p(F)V
-.end method
-
-.method public abstract q()Lt20;
-.end method
-
-.method public abstract r(Landroid/graphics/Outline;J)V
-.end method
-
-.method public abstract s(Lme0;)V
-.end method
-
-.method public abstract t()I
-.end method
-
-.method public abstract u()Lm20;
-.end method
-
-.method public abstract v(IIJ)V
-.end method
-
-.method public abstract w()F
-.end method
-
-.method public abstract x()F
-.end method
-
-.method public abstract y(J)V
-.end method
-
-.method public abstract z()J
+    .line 22
+    return-object p0
 .end method

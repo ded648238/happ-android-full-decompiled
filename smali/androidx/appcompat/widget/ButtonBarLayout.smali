@@ -1,14 +1,14 @@
 .class public Landroidx/appcompat/widget/ButtonBarLayout;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:Z
+.field public c0:Z
 
-.field public R:Z
+.field public d0:Z
 
-.field public S:I
+.field public e0:I
 
 
 # direct methods
@@ -24,11 +24,11 @@
     const/4 v0, -0x1
 
     .line 5
-    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->S:I
+    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->e0:I
 
     .line 6
     .line 7
-    sget-object v0, Lhb5;->ButtonBarLayout:[I
+    sget-object v0, Lgv5;->ButtonBarLayout:[I
 
     .line 8
     .line 9
@@ -40,7 +40,7 @@
     move-result-object v5
 
     .line 13
-    sget-object v3, Lhb5;->ButtonBarLayout:[I
+    sget-object v3, Lgv5;->ButtonBarLayout:[I
 
     .line 14
     .line 15
@@ -56,27 +56,27 @@
     move-object v4, p2
 
     .line 19
-    invoke-static/range {v1 .. v6}, Lqn7;->p(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v1 .. v6}, Lni8;->l(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 20
     .line 21
     .line 22
-    sget p1, Lhb5;->ButtonBarLayout_allowStacking:I
+    sget p0, Lgv5;->ButtonBarLayout_allowStacking:I
 
     .line 23
     .line 24
-    const/4 p2, 0x1
+    const/4 p1, 0x1
 
     .line 25
-    invoke-virtual {v5, p1, p2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {v5, p0, p1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     .line 26
     .line 27
     .line 28
-    move-result p1
+    move-result p0
 
     .line 29
-    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->Q:Z
+    iput-boolean p0, v1, Landroidx/appcompat/widget/ButtonBarLayout;->c0:Z
 
     .line 30
     .line 31
@@ -85,23 +85,23 @@
     .line 32
     .line 33
     .line 34
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getOrientation()I
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->getOrientation()I
 
     .line 35
     .line 36
     .line 37
-    move-result p1
+    move-result p0
 
     .line 38
-    if-ne p1, p2, :cond_0
+    if-ne p0, p1, :cond_0
 
     .line 39
     .line 40
-    iget-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->Q:Z
+    iget-boolean p0, v1, Landroidx/appcompat/widget/ButtonBarLayout;->c0:Z
 
     .line 41
     .line 42
-    invoke-direct {p0, p1}, Landroidx/appcompat/widget/ButtonBarLayout;->setStacked(Z)V
+    invoke-direct {v1, p0}, Landroidx/appcompat/widget/ButtonBarLayout;->setStacked(Z)V
 
     .line 43
     .line 44
@@ -114,7 +114,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->R:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->d0:Z
 
     .line 2
     .line 3
@@ -126,7 +126,7 @@
 
     .line 6
     .line 7
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->Q:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->c0:Z
 
     .line 8
     .line 9
@@ -135,7 +135,7 @@
     .line 10
     .line 11
     :cond_0
-    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->R:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->d0:Z
 
     .line 12
     .line 13
@@ -167,7 +167,7 @@
     .line 25
     .line 26
     .line 27
-    sget v0, Le95;->spacer:I
+    sget v0, Ldt5;->spacer:I
 
     .line 28
     .line 29
@@ -260,7 +260,7 @@
     move-result v0
 
     .line 5
-    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->Q:Z
+    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->c0:Z
 
     .line 6
     .line 7
@@ -271,7 +271,7 @@
 
     .line 9
     .line 10
-    iget v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->S:I
+    iget v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->e0:I
 
     .line 11
     .line 12
@@ -279,7 +279,7 @@
 
     .line 13
     .line 14
-    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->R:Z
+    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->d0:Z
 
     .line 15
     .line 16
@@ -293,12 +293,12 @@
     .line 20
     .line 21
     :cond_0
-    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->S:I
+    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->e0:I
 
     .line 22
     .line 23
     :cond_1
-    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->R:Z
+    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->d0:Z
 
     .line 24
     .line 25
@@ -337,7 +337,7 @@
     move-result v0
 
     .line 42
-    const/4 v1, 0x1
+    move v1, v3
 
     .line 43
     goto :goto_0
@@ -347,7 +347,7 @@
     move v0, p1
 
     .line 45
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 46
     :goto_0
@@ -356,7 +356,7 @@
     .line 47
     .line 48
     .line 49
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->Q:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->c0:Z
 
     .line 50
     .line 51
@@ -364,7 +364,7 @@
 
     .line 52
     .line 53
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->R:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->d0:Z
 
     .line 54
     .line 55
@@ -400,7 +400,7 @@
     .line 69
     .line 70
     .line 71
-    const/4 v1, 0x1
+    move v1, v3
 
     .line 72
     :cond_3
@@ -422,7 +422,7 @@
     move-result v0
 
     .line 81
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 82
     :goto_1
@@ -465,7 +465,7 @@
 
     .line 99
     :cond_6
-    const/4 v1, -0x1
+    move v1, v4
 
     .line 100
     :goto_2
@@ -526,7 +526,7 @@
     add-int/2addr v0, v2
 
     .line 127
-    iget-boolean v2, p0, Landroidx/appcompat/widget/ButtonBarLayout;->R:Z
+    iget-boolean v2, p0, Landroidx/appcompat/widget/ButtonBarLayout;->d0:Z
 
     .line 128
     .line 129
@@ -630,77 +630,76 @@
 
     .line 174
     .line 175
-    mul-float v2, v2, v3
+    mul-float/2addr v2, v3
 
     .line 176
-    .line 177
     float-to-int v2, v2
 
-    .line 178
+    .line 177
     add-int/2addr v1, v2
 
-    .line 179
+    .line 178
     add-int/2addr v1, v0
 
-    .line 180
+    .line 179
     move v2, v1
 
-    .line 181
+    .line 180
     goto :goto_5
 
-    .line 182
+    .line 181
     :cond_9
     move v2, v0
 
-    .line 183
+    .line 182
     goto :goto_5
 
-    .line 184
+    .line 183
     :cond_a
     invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
 
+    .line 184
     .line 185
     .line 186
-    .line 187
     move-result v1
 
-    .line 188
+    .line 187
     add-int v2, v1, v0
 
+    .line 188
     .line 189
-    .line 190
     :cond_b
     :goto_5
-    sget-object v0, Lqn7;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lni8;->a:Ljava/util/WeakHashMap;
 
+    .line 190
     .line 191
-    .line 192
     invoke-virtual {p0}, Landroid/view/View;->getMinimumHeight()I
 
+    .line 192
     .line 193
     .line 194
-    .line 195
     move-result v0
 
-    .line 196
+    .line 195
     if-eq v0, v2, :cond_c
 
+    .line 196
     .line 197
-    .line 198
     invoke-virtual {p0, v2}, Landroid/view/View;->setMinimumHeight(I)V
 
+    .line 198
     .line 199
     .line 200
-    .line 201
     if-nez p2, :cond_c
 
+    .line 201
     .line 202
-    .line 203
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
+    .line 203
     .line 204
     .line 205
-    .line 206
     :cond_c
     return-void
 .end method
@@ -709,7 +708,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->Q:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->c0:Z
 
     .line 2
     .line 3
@@ -717,7 +716,7 @@
 
     .line 4
     .line 5
-    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->Q:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->c0:Z
 
     .line 6
     .line 7
@@ -725,7 +724,7 @@
 
     .line 8
     .line 9
-    iget-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->R:Z
+    iget-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->d0:Z
 
     .line 10
     .line 11

@@ -1,55 +1,21 @@
 .class public final Lfx;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Landroid/os/Parcelable;
-
-
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lfx;",
-            ">;"
-        }
-    .end annotation
-.end field
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Ljava/util/ArrayList;
+.field public final a:Ljava/lang/String;
 
-.field public final R:Ljava/util/ArrayList;
+.field public final b:Ljava/lang/String;
+
+.field public final c:Ljava/lang/String;
+
+.field public final d:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lu;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x4
-
-    .line 4
-    invoke-direct {v0, v1}, Lu;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, Lfx;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/os/Parcel;)V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -57,70 +23,312 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
+    iput-object p1, p0, Lfx;->a:Ljava/lang/String;
 
     .line 5
     .line 6
-    .line 7
-    move-result-object v0
+    iput-object p2, p0, Lfx;->b:Ljava/lang/String;
 
+    .line 7
     .line 8
-    iput-object v0, p0, Lfx;->Q:Ljava/util/ArrayList;
+    iput-object p3, p0, Lfx;->c:Ljava/lang/String;
 
     .line 9
     .line 10
-    sget-object v0, Lex;->CREATOR:Landroid/os/Parcelable$Creator;
+    iput-object p4, p0, Lfx;->d:Ljava/lang/String;
 
     .line 11
     .line 12
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->createTypedArrayList(Landroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    iput-object p1, p0, Lfx;->R:Ljava/util/ArrayList;
-
-    .line 17
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final describeContents()I
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
-
-    .line 1
-    iget-object p2, p0, Lfx;->Q:Ljava/util/ArrayList;
+    if-ne p1, p0, :cond_0
 
     .line 2
     .line 3
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, Lfx;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_1
+
+    .line 7
+    .line 8
+    check-cast p1, Lfx;
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Lfx;->a:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    iget-object v1, p1, Lfx;->a:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    if-eqz v0, :cond_1
+
+    .line 19
+    .line 20
+    iget-object v0, p0, Lfx;->b:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    iget-object v1, p1, Lfx;->b:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    if-eqz v0, :cond_1
+
+    .line 29
+    .line 30
+    iget-object v0, p0, Lfx;->c:Ljava/lang/String;
+
+    .line 31
+    .line 32
+    iget-object v1, p1, Lfx;->c:Ljava/lang/String;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v0
+
+    .line 38
+    if-eqz v0, :cond_1
+
+    .line 39
+    .line 40
+    iget-object p0, p0, Lfx;->d:Ljava/lang/String;
+
+    .line 41
+    .line 42
+    iget-object p1, p1, Lfx;->d:Ljava/lang/String;
+
+    .line 43
+    .line 44
+    invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 45
+    .line 46
+    .line 47
+    move-result p0
+
+    .line 48
+    if-eqz p0, :cond_1
+
+    .line 49
+    .line 50
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 51
+    return p0
+
+    .line 52
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 53
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lfx;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    iget-object p2, p0, Lfx;->R:Ljava/util/ArrayList;
+    move-result v0
 
     .line 7
+    const v1, 0xf4243
+
     .line 8
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
+    .line 9
+    .line 10
+    xor-int/2addr v0, v1
+
+    .line 11
+    mul-int/2addr v0, v1
+
+    .line 12
+    iget-object v2, p0, Lfx;->b:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    xor-int/2addr v0, v2
+
+    .line 19
+    mul-int/2addr v0, v1
+
+    .line 20
+    iget-object v2, p0, Lfx;->c:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v2
+
+    .line 26
+    xor-int/2addr v0, v2
+
+    .line 27
+    mul-int/2addr v0, v1
+
+    .line 28
+    iget-object p0, p0, Lfx;->d:Ljava/lang/String;
+
+    .line 29
+    .line 30
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result p0
+
+    .line 34
+    xor-int/2addr p0, v0
+
+    .line 35
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "GraphicDeviceInfo{glVersion="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lfx;->a:Ljava/lang/String;
 
     .line 9
     .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 11
-    return-void
+    .line 12
+    .line 13
+    const-string v1, ", eglVersion="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lfx;->b:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", glExtensions="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, Lfx;->c:Ljava/lang/String;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", eglExtensions="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget-object p0, p0, Lfx;->d:Ljava/lang/String;
+
+    .line 39
+    .line 40
+    const-string v1, "}"
+
+    .line 41
+    .line 42
+    invoke-static {v0, p0, v1}, Leh0;->r(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p0
+
+    .line 46
+    return-object p0
 .end method

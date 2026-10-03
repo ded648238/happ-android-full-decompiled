@@ -1,6 +1,6 @@
 .class public abstract Lorg/conscrypt/OpenSSLSocketImpl;
 .super Lorg/conscrypt/AbstractConscryptSocket;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -140,7 +140,7 @@
 .end method
 
 .method public final getAlpnSelectedProtocol()[B
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -150,22 +150,22 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-static {v0}, Lorg/conscrypt/SSLUtils;->toProtocolBytes(Ljava/lang/String;)[B
+    invoke-static {p0}, Lorg/conscrypt/SSLUtils;->toProtocolBytes(Ljava/lang/String;)[B
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getChannel()Ljava/nio/channels/SocketChannel;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getChannel()Ljava/nio/channels/SocketChannel;
@@ -173,25 +173,17 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
-.end method
-
-.method public abstract getChannelId()[B
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljavax/net/ssl/SSLException;
-        }
-    .end annotation
+    return-object p0
 .end method
 
 .method public abstract getCurveNameForTesting()Ljava/lang/String;
 .end method
 
 .method public getFileDescriptor$()Ljava/io/FileDescriptor;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getFileDescriptor$()Ljava/io/FileDescriptor;
@@ -199,17 +191,17 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public abstract getHandshakeSession()Ljavax/net/ssl/SSLSession;
 .end method
 
 .method public getHostname()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getHostname()Ljava/lang/String;
@@ -217,14 +209,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public getHostnameOrIP()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getHostnameOrIP()Ljava/lang/String;
@@ -232,14 +224,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getInetAddress()Ljava/net/InetAddress;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getInetAddress()Ljava/net/InetAddress;
@@ -247,14 +239,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getInputStream()Ljava/io/InputStream;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -267,14 +259,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getKeepAlive()Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -287,14 +279,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic getLocalAddress()Ljava/net/InetAddress;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getLocalAddress()Ljava/net/InetAddress;
@@ -302,14 +294,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getLocalPort()I
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getLocalPort()I
@@ -317,14 +309,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic getLocalSocketAddress()Ljava/net/SocketAddress;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getLocalSocketAddress()Ljava/net/SocketAddress;
@@ -332,26 +324,26 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getNpnSelectedProtocol()[B
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getOOBInline()Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -364,14 +356,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic getOutputStream()Ljava/io/OutputStream;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -384,14 +376,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getReceiveBufferSize()I
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -404,14 +396,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic getRemoteSocketAddress()Ljava/net/SocketAddress;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->getRemoteSocketAddress()Ljava/net/SocketAddress;
@@ -419,14 +411,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getReuseAddress()Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -439,14 +431,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic getSendBufferSize()I
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -459,14 +451,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic getSoLinger()I
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -479,14 +471,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public getSoWriteTimeout()I
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -499,14 +491,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic getTcpNoDelay()Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -519,14 +511,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic getTrafficClass()I
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -539,14 +531,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic isBound()Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->isBound()Z
@@ -554,14 +546,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic isClosed()Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->isClosed()Z
@@ -569,14 +561,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic isConnected()Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->isConnected()Z
@@ -584,14 +576,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic isInputShutdown()Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->isInputShutdown()Z
@@ -599,14 +591,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic isOutputShutdown()Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->isOutputShutdown()Z
@@ -614,10 +606,10 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic removeHandshakeCompletedListener(Ljavax/net/ssl/HandshakeCompletedListener;)V
@@ -679,10 +671,10 @@
     return-void
 .end method
 
-.method public abstract setChannelIdEnabled(Z)V
+.method public abstract setChannelIdPrivateKey(Ljava/security/PrivateKey;)V
 .end method
 
-.method public abstract setChannelIdPrivateKey(Ljava/security/PrivateKey;)V
+.method public abstract setEchConfigList([B)V
 .end method
 
 .method public setHandshakeTimeout(I)V
@@ -912,7 +904,7 @@
 .end method
 
 .method public bridge synthetic toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Lorg/conscrypt/AbstractConscryptSocket;->toString()Ljava/lang/String;
@@ -920,8 +912,8 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method

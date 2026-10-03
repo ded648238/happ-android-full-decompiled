@@ -9,43 +9,36 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import defpackage.d04;
-import defpackage.o5;
-import defpackage.s95;
-import defpackage.va5;
-import defpackage.xg5;
+import defpackage.bh4;
+import defpackage.h16;
+import defpackage.st5;
+import defpackage.uu5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 abstract class RadialViewGroup extends ConstraintLayout {
-    public final e j0;
-    public int k0;
-    public final d04 l0;
+    public final d s0;
+    public int t0;
+    public final bh4 u0;
 
-    /* JADX WARN: Type inference failed for: r5v3, types: [com.google.android.material.timepicker.e] */
+    /* JADX WARN: Type inference failed for: r5v3, types: [com.google.android.material.timepicker.d] */
     public RadialViewGroup(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        LayoutInflater.from(context).inflate(s95.material_radial_view_group, this);
-        d04 d04Var = new d04();
-        this.l0 = d04Var;
-        xg5 xg5Var = new xg5(0.5f);
-        o5 o5VarF = d04Var.R.a.f();
-        o5VarF.U = xg5Var;
-        o5VarF.V = xg5Var;
-        o5VarF.W = xg5Var;
-        o5VarF.X = xg5Var;
-        d04Var.setShapeAppearanceModel(o5VarF.b());
-        this.l0.q(ColorStateList.valueOf(-1));
-        setBackground(this.l0);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, va5.RadialViewGroup, i, 0);
-        this.k0 = typedArrayObtainStyledAttributes.getDimensionPixelSize(va5.RadialViewGroup_materialCircleRadius, 0);
-        this.j0 = new Runnable() { // from class: com.google.android.material.timepicker.e
+        LayoutInflater.from(context).inflate(st5.material_radial_view_group, this);
+        bh4 bh4Var = new bh4();
+        this.u0 = bh4Var;
+        bh4Var.setShapeAppearanceModel(bh4Var.Y.a.e(new h16(0.5f)));
+        this.u0.t(ColorStateList.valueOf(-1));
+        setBackground(this.u0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, uu5.RadialViewGroup, i, 0);
+        this.t0 = obtainStyledAttributes.getDimensionPixelSize(uu5.RadialViewGroup_materialCircleRadius, 0);
+        this.s0 = new Runnable() { // from class: com.google.android.material.timepicker.d
             @Override // java.lang.Runnable
             public final void run() {
-                this.Q.m();
+                RadialViewGroup.this.m();
             }
         };
-        typedArrayObtainStyledAttributes.recycle();
+        obtainStyledAttributes.recycle();
     }
 
     @Override // android.view.ViewGroup
@@ -56,9 +49,9 @@ abstract class RadialViewGroup extends ConstraintLayout {
         }
         Handler handler = getHandler();
         if (handler != null) {
-            e eVar = this.j0;
-            handler.removeCallbacks(eVar);
-            handler.post(eVar);
+            d dVar = this.s0;
+            handler.removeCallbacks(dVar);
+            handler.post(dVar);
         }
     }
 
@@ -75,14 +68,14 @@ abstract class RadialViewGroup extends ConstraintLayout {
         super.onViewRemoved(view);
         Handler handler = getHandler();
         if (handler != null) {
-            e eVar = this.j0;
-            handler.removeCallbacks(eVar);
-            handler.post(eVar);
+            d dVar = this.s0;
+            handler.removeCallbacks(dVar);
+            handler.post(dVar);
         }
     }
 
     @Override // android.view.View
     public final void setBackgroundColor(int i) {
-        this.l0.q(ColorStateList.valueOf(i));
+        this.u0.t(ColorStateList.valueOf(i));
     }
 }

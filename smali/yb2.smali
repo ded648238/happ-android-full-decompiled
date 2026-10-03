@@ -1,47 +1,52 @@
-.class public abstract Lyb2;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lyb2;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Ljava/util/concurrent/atomic/AtomicBoolean;
+# instance fields
+.field public c0:Lvy5;
 
-.field public static final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public d0:Lsb2;
+
+.field public synthetic e0:Ljava/lang/Object;
+
+.field public f0:I
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# virtual methods
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object p1, p0, Lyb2;->e0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    iget p1, p0, Lyb2;->f0:I
 
     .line 4
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
     .line 5
+    const/high16 v0, -0x80000000
+
     .line 6
     .line 7
-    sput-object v0, Lyb2;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    or-int/2addr p1, v0
 
     .line 8
-    .line 9
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput p1, p0, Lyb2;->f0:I
 
+    .line 9
     .line 10
+    const/4 p1, 0x0
+
     .line 11
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+    invoke-static {p1, p0}, Lh31;->T(Lja2;Ld31;)Ljava/lang/Object;
 
     .line 12
     .line 13
     .line 14
-    sput-object v0, Lyb2;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    move-result-object p0
 
     .line 15
-    .line 16
-    return-void
+    return-object p0
 .end method

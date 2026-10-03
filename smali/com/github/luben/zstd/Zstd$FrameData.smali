@@ -1,6 +1,6 @@
 .class Lcom/github/luben/zstd/Zstd$FrameData;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -22,7 +22,7 @@
 
 # direct methods
 .method public constructor <init>([BI)V
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,10 +42,10 @@
 
     .line 9
     .line 10
-    long-to-int v1, v0
+    long-to-int v0, v0
 
     .line 11
-    invoke-static {p1, p2, v1}, Lcom/github/luben/zstd/Zstd;->getFrameContentSize([BII)J
+    invoke-static {p1, p2, v0}, Lcom/github/luben/zstd/Zstd;->getFrameContentSize([BII)J
 
     .line 12
     .line 13
@@ -62,10 +62,10 @@
     .line 18
     .line 19
     .line 20
-    move-result v0
+    move-result p0
 
     .line 21
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 22
     .line 23
@@ -73,41 +73,41 @@
 
     .line 24
     .line 25
-    cmp-long v2, p1, v0
+    cmp-long p0, p1, v0
 
     .line 26
     .line 27
-    if-nez v2, :cond_0
+    if-nez p0, :cond_0
 
     .line 28
     .line 29
-    new-instance v0, Lcom/github/luben/zstd/ZstdException;
+    new-instance p0, Lcom/github/luben/zstd/ZstdException;
 
     .line 30
     .line 31
-    const-string v1, "Content size is unknown"
+    const-string v0, "Content size is unknown"
 
     .line 32
     .line 33
-    invoke-direct {v0, p1, p2, v1}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
 
     .line 34
     .line 35
     .line 36
-    throw v0
+    throw p0
 
     .line 37
     :cond_0
-    new-instance v0, Lcom/github/luben/zstd/ZstdException;
+    new-instance p0, Lcom/github/luben/zstd/ZstdException;
 
     .line 38
     .line 39
-    invoke-direct {v0, p1, p2}, Lcom/github/luben/zstd/ZstdException;-><init>(J)V
+    invoke-direct {p0, p1, p2}, Lcom/github/luben/zstd/ZstdException;-><init>(J)V
 
     .line 40
     .line 41
     .line 42
-    throw v0
+    throw p0
 
     .line 43
     :cond_1

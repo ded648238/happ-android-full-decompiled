@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/KeyGeneratorImpl$DESEDE;
 .super Lorg/conscrypt/KeyGeneratorImpl;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -41,22 +41,22 @@
 
 # virtual methods
 .method public checkKeySize(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    const/16 v0, 0x70
+    const/16 p0, 0x70
 
     .line 2
     .line 3
-    if-eq p1, v0, :cond_1
+    if-eq p1, p0, :cond_1
 
     .line 4
     .line 5
-    const/16 v0, 0xa8
+    const/16 p0, 0xa8
 
     .line 6
     .line 7
-    if-ne p1, v0, :cond_0
+    if-ne p1, p0, :cond_0
 
     .line 8
     .line 9
@@ -64,20 +64,20 @@
 
     .line 10
     :cond_0
-    new-instance p1, Ljava/security/InvalidParameterException;
+    new-instance p0, Ljava/security/InvalidParameterException;
 
     .line 11
     .line 12
-    const-string v0, "Key size must be either 112 or 168 bits"
+    const-string p1, "Key size must be either 112 or 168 bits"
 
     .line 13
     .line 14
-    invoke-direct {p1, v0}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    throw p1
+    throw p0
 
     .line 18
     :cond_1
@@ -86,7 +86,7 @@
 .end method
 
 .method public doKeyGeneration(I)[B
-    .locals 5
+    .locals 4
 
     .line 1
     const/16 v0, 0x18
@@ -97,63 +97,63 @@
 
     .line 4
     .line 5
-    iget-object v2, p0, Lorg/conscrypt/KeyGeneratorImpl;->secureRandom:Ljava/security/SecureRandom;
+    iget-object p0, p0, Lorg/conscrypt/KeyGeneratorImpl;->secureRandom:Ljava/security/SecureRandom;
 
     .line 6
     .line 7
-    invoke-virtual {v2, v1}, Ljava/security/SecureRandom;->nextBytes([B)V
+    invoke-virtual {p0, v1}, Ljava/security/SecureRandom;->nextBytes([B)V
 
     .line 8
     .line 9
     .line 10
-    const/4 v2, 0x0
+    const/4 p0, 0x0
 
     .line 11
-    const/4 v3, 0x0
+    move v2, p0
 
     .line 12
     :goto_0
-    if-ge v3, v0, :cond_1
+    if-ge v2, v0, :cond_1
 
     .line 13
     .line 14
-    aget-byte v4, v1, v3
+    aget-byte v3, v1, v2
 
     .line 15
     .line 16
-    invoke-static {v4}, Ljava/lang/Integer;->bitCount(I)I
+    invoke-static {v3}, Ljava/lang/Integer;->bitCount(I)I
 
     .line 17
     .line 18
     .line 19
-    move-result v4
+    move-result v3
 
     .line 20
-    rem-int/lit8 v4, v4, 0x2
+    rem-int/lit8 v3, v3, 0x2
 
     .line 21
     .line 22
-    if-nez v4, :cond_0
+    if-nez v3, :cond_0
 
     .line 23
     .line 24
-    aget-byte v4, v1, v3
+    aget-byte v3, v1, v2
 
     .line 25
     .line 26
-    xor-int/lit8 v4, v4, 0x1
+    xor-int/lit8 v3, v3, 0x1
 
     .line 27
     .line 28
-    int-to-byte v4, v4
+    int-to-byte v3, v3
 
     .line 29
-    aput-byte v4, v1, v3
+    aput-byte v3, v1, v2
 
     .line 30
     .line 31
     :cond_0
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     .line 32
     .line 33
@@ -177,7 +177,7 @@
 
     .line 41
     .line 42
-    invoke-static {v1, v2, v1, p1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v1, p0, v1, p1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 43
     .line 44

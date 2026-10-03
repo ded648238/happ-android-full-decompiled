@@ -1,124 +1,108 @@
 .class public final Lze1;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg72;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:Z
-
-.field public final synthetic R:Lf05;
-
-.field public final synthetic S:Ljava/lang/String;
-
-
-# direct methods
-.method public constructor <init>(ZLf05;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-boolean p1, p0, Lze1;->Q:Z
-
-    .line 2
-    .line 3
-    iput-object p2, p0, Lze1;->R:Lf05;
-
-    .line 4
-    .line 5
-    iput-object p3, p0, Lze1;->S:Ljava/lang/String;
-
-    .line 6
-    .line 7
-    const/4 p1, 0x0
-
-    .line 8
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
+.field public a:I
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lze1;->Q:Z
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    if-eqz v0, :cond_0
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    iget-object v0, p0, Lze1;->R:Lf05;
+    :cond_0
+    instance-of v1, p1, Lze1;
 
     .line 6
     .line 7
-    iget-object v1, p0, Lze1;->S:Ljava/lang/String;
+    const/4 v2, 0x0
 
     .line 8
-    .line 9
-    iget-object v0, v0, Lf05;->R:Ljava/lang/Object;
+    if-nez v1, :cond_1
 
+    .line 9
     .line 10
+    return v2
+
     .line 11
-    check-cast v0, Lpy5;
+    :cond_1
+    check-cast p1, Lze1;
 
     .line 12
     .line 13
-    iget-object v2, v0, Lpy5;->c:Ldr0;
+    iget p0, p0, Lze1;->a:I
 
     .line 14
     .line 15
-    monitor-enter v2
+    iget p1, p1, Lze1;->a:I
 
     .line 16
-    :try_start_0
-    iget-object v0, v0, Lpy5;->d:Ljava/util/LinkedHashMap;
-
     .line 17
+    if-eq p0, p1, :cond_2
+
     .line 18
-    invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 19
+    return v2
+
     .line 20
-    .line 21
-    move-result-object v0
+    :cond_2
+    return v0
+.end method
 
-    .line 22
-    check-cast v0, Loy5;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+.method public final hashCode()I
+    .locals 0
 
-    .line 23
-    .line 24
-    monitor-exit v2
+    .line 1
+    iget p0, p0, Lze1;->a:I
 
-    .line 25
-    goto :goto_0
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
 
-    .line 26
-    :catchall_0
-    move-exception v0
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
 
-    .line 27
-    monitor-exit v2
+    .line 7
+    return p0
+.end method
 
-    .line 28
-    throw v0
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    .line 29
-    :cond_0
-    :goto_0
-    sget-object v0, Lbh7;->a:Lbh7;
+    .line 1
+    iget p0, p0, Lze1;->a:I
 
-    .line 30
-    .line 31
-    return-object v0
+    .line 2
+    .line 3
+    const-string v0, "DeltaCounter(count="
+
+    .line 4
+    .line 5
+    const-string v1, ")"
+
+    .line 6
+    .line 7
+    invoke-static {v0, p0, v1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
 .end method

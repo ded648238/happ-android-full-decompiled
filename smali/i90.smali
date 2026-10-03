@@ -1,334 +1,397 @@
 .class public final Li90;
-.super Lw90;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lw30;
+.super Ljava/io/FilterInputStream;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic e:I
+.field public X:J
 
-.field public final f:Ljava/lang/Object;
+.field public Y:J
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/reflect/Constructor;Ljava/lang/Object;I)V
-    .locals 3
+.method public constructor <init>(Ljava/io/InputStream;)V
+    .locals 2
 
     .line 1
-    iput p3, p0, Li90;->e:I
+    invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
     .line 2
     .line 3
-    packed-switch p3, :pswitch_data_0
-
     .line 4
+    const-wide/16 v0, -0x1
+
     .line 5
     .line 6
-    invoke-virtual {p1}, Ljava/lang/reflect/Constructor;->getDeclaringClass()Ljava/lang/Class;
+    iput-wide v0, p0, Li90;->Y:J
 
     .line 7
     .line 8
+    const-wide/32 v0, 0x100001
+
     .line 9
-    move-result-object p3
-
     .line 10
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 11
+    iput-wide v0, p0, Li90;->X:J
+
     .line 12
     .line 13
-    invoke-virtual {p1}, Ljava/lang/reflect/Constructor;->getGenericParameterTypes()[Ljava/lang/reflect/Type;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 18
-    .line 19
-    .line 20
-    array-length v1, v0
-
-    .line 21
-    const/4 v2, 0x2
-
-    .line 22
-    if-gt v1, v2, :cond_0
-
-    .line 23
-    .line 24
-    const/4 v0, 0x0
-
-    .line 25
-    new-array v0, v0, [Ljava/lang/reflect/Type;
-
-    .line 26
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :cond_0
-    array-length v1, v0
-
-    .line 29
-    const/4 v2, 0x1
-
-    .line 30
-    sub-int/2addr v1, v2
-
-    .line 31
-    invoke-static {v0, v2, v1}, Lor;->h0([Ljava/lang/Object;II)[Ljava/lang/Object;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v0
-
-    .line 35
-    :goto_0
-    check-cast v0, [Ljava/lang/reflect/Type;
-
-    .line 36
-    .line 37
-    invoke-direct {p0, p1, p3, v0}, Lw90;-><init>(Ljava/lang/reflect/Member;Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)V
-
-    .line 38
-    .line 39
-    .line 40
-    iput-object p2, p0, Li90;->f:Ljava/lang/Object;
-
-    .line 41
-    .line 42
     return-void
-
-    .line 43
-    :pswitch_0
-    invoke-virtual {p1}, Ljava/lang/reflect/Constructor;->getDeclaringClass()Ljava/lang/Class;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object p3
-
-    .line 47
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 48
-    .line 49
-    .line 50
-    invoke-static {p1}, Ll73;->m0(Ljava/lang/reflect/Constructor;)[Ljava/lang/reflect/Type;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v0
-
-    .line 54
-    invoke-direct {p0, p1, p3, v0}, Lw90;-><init>(Ljava/lang/reflect/Member;Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)V
-
-    .line 55
-    .line 56
-    .line 57
-    iput-object p2, p0, Li90;->f:Ljava/lang/Object;
-
-    .line 58
-    .line 59
-    return-void
-
-    .line 60
-    nop
-
-    .line 61
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
 .end method
 
 
 # virtual methods
-.method public final d([Ljava/lang/Object;)Ljava/lang/Object;
+.method public final available()I
     .locals 4
 
     .line 1
-    iget v0, p0, Li90;->e:I
+    iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
 
     .line 2
     .line 3
-    iget-object v1, p0, Li90;->f:Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/io/InputStream;->available()I
 
     .line 4
     .line 5
-    iget-object v2, p0, Lw90;->c:Ljava/lang/reflect/Member;
+    .line 6
+    move-result v0
 
+    .line 7
+    int-to-long v0, v0
+
+    .line 8
+    iget-wide v2, p0, Li90;->X:J
+
+    .line 9
+    .line 10
+    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->min(JJ)J
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-wide v0
+
+    .line 14
+    long-to-int p0, v0
+
+    .line 15
+    return p0
+.end method
+
+.method public final declared-synchronized mark(I)V
+    .locals 2
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
+
+    .line 3
+    .line 4
+    invoke-virtual {v0, p1}, Ljava/io/InputStream;->mark(I)V
+
+    .line 5
     .line 6
     .line 7
-    packed-switch v0, :pswitch_data_0
+    iget-wide v0, p0, Li90;->X:J
 
     .line 8
     .line 9
-    .line 10
-    array-length v0, p1
+    iput-wide v0, p0, Li90;->Y:J
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     .line 11
-    add-int/lit8 v0, v0, 0x1
+    monitor-exit p0
 
     .line 12
+    return-void
+
     .line 13
-    invoke-virtual {p0, v0}, Lw90;->e(I)V
+    :catchall_0
+    move-exception p1
 
     .line 14
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 15
+    throw p1
+.end method
+
+.method public final read()I
+    .locals 5
+
+    .line 32
+    iget-wide v0, p0, Li90;->X:J
+
+    const-wide/16 v2, 0x0
+
+    cmp-long v0, v0, v2
+
+    const/4 v1, -0x1
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 33
+    :cond_0
+    iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
+
+    invoke-virtual {v0}, Ljava/io/InputStream;->read()I
+
+    move-result v0
+
+    if-eq v0, v1, :cond_1
+
+    .line 34
+    iget-wide v1, p0, Li90;->X:J
+
+    const-wide/16 v3, 0x1
+
+    sub-long/2addr v1, v3
+
+    iput-wide v1, p0, Li90;->X:J
+
+    :cond_1
+    return v0
+.end method
+
+.method public final read([BII)I
+    .locals 6
+
+    .line 1
+    iget-wide v0, p0, Li90;->X:J
+
+    .line 2
+    .line 3
+    const-wide/16 v2, 0x0
+
+    .line 4
+    .line 5
+    cmp-long v2, v0, v2
+
+    .line 6
+    .line 7
+    const/4 v3, -0x1
+
+    .line 8
+    if-nez v2, :cond_0
+
+    .line 9
+    .line 10
+    return v3
+
+    .line 11
+    :cond_0
+    int-to-long v4, p3
+
+    .line 12
+    invoke-static {v4, v5, v0, v1}, Ljava/lang/Math;->min(JJ)J
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-wide v0
+
+    .line 16
+    long-to-int p3, v0
+
+    .line 17
+    iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
+
+    .line 18
+    .line 19
+    invoke-virtual {v0, p1, p2, p3}, Ljava/io/InputStream;->read([BII)I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p1
+
+    .line 23
+    if-eq p1, v3, :cond_1
+
+    .line 24
+    .line 25
+    iget-wide p2, p0, Li90;->X:J
+
+    .line 26
+    .line 27
+    int-to-long v0, p1
+
+    .line 28
+    sub-long/2addr p2, v0
+
+    .line 29
+    iput-wide p2, p0, Li90;->X:J
+
+    .line 30
+    .line 31
+    :cond_1
+    return p1
+.end method
+
+.method public final declared-synchronized reset()V
+    .locals 4
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
+
+    .line 3
+    .line 4
+    invoke-virtual {v0}, Ljava/io/InputStream;->markSupported()Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    if-eqz v0, :cond_1
+
+    .line 9
+    .line 10
+    iget-wide v0, p0, Li90;->Y:J
+
+    .line 11
+    .line 12
+    const-wide/16 v2, -0x1
+
+    .line 13
+    .line 14
+    cmp-long v0, v0, v2
+
     .line 15
     .line 16
-    check-cast v2, Ljava/lang/reflect/Constructor;
+    if-eqz v0, :cond_0
 
     .line 17
     .line 18
-    new-instance v0, Lzp;
+    iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
 
     .line 19
     .line 20
-    const/4 v3, 0x2
+    invoke-virtual {v0}, Ljava/io/InputStream;->reset()V
 
     .line 21
-    invoke-direct {v0, v3}, Lzp;-><init>(I)V
-
     .line 22
     .line 23
-    .line 24
-    invoke-virtual {v0, v1}, Lzp;->b(Ljava/lang/Object;)V
+    iget-wide v0, p0, Li90;->Y:J
 
+    .line 24
     .line 25
+    iput-wide v0, p0, Li90;->X:J
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 26
     .line 27
-    invoke-virtual {v0, p1}, Lzp;->c(Ljava/lang/Object;)V
+    monitor-exit p0
 
     .line 28
+    return-void
+
     .line 29
+    :catchall_0
+    move-exception v0
+
     .line 30
-    iget-object p1, v0, Lzp;->a:Ljava/util/ArrayList;
+    goto :goto_0
 
     .line 31
-    .line 32
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+    :cond_0
+    :try_start_1
+    new-instance v0, Ljava/io/IOException;
 
+    .line 32
     .line 33
+    const-string v1, "Mark not set"
+
     .line 34
     .line 35
-    move-result v0
+    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 36
-    new-array v0, v0, [Ljava/lang/Object;
-
     .line 37
     .line 38
-    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    throw v0
 
     .line 39
+    :cond_1
+    new-instance v0, Ljava/io/IOException;
+
     .line 40
     .line 41
-    move-result-object p1
+    const-string v1, "Mark not supported"
 
     .line 42
-    invoke-virtual {v2, p1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 43
+    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
     .line 44
     .line 45
-    move-result-object p1
-
     .line 46
-    return-object p1
+    throw v0
 
     .line 47
-    :pswitch_0
-    array-length v0, p1
+    :goto_0
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 48
-    invoke-virtual {p0, v0}, Lw90;->e(I)V
+    throw v0
+.end method
 
-    .line 49
-    .line 50
-    .line 51
-    check-cast v2, Ljava/lang/reflect/Constructor;
+.method public final skip(J)J
+    .locals 2
 
-    .line 52
-    .line 53
-    new-instance v0, Lzp;
+    .line 1
+    iget-wide v0, p0, Li90;->X:J
 
-    .line 54
-    .line 55
-    const/4 v3, 0x3
+    .line 2
+    .line 3
+    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->min(JJ)J
 
-    .line 56
-    invoke-direct {v0, v3}, Lzp;-><init>(I)V
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide p1
 
-    .line 57
-    .line 58
-    .line 59
-    invoke-virtual {v0, v1}, Lzp;->b(Ljava/lang/Object;)V
+    .line 7
+    iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
 
-    .line 60
-    .line 61
-    .line 62
-    invoke-virtual {v0, p1}, Lzp;->c(Ljava/lang/Object;)V
+    .line 8
+    .line 9
+    invoke-virtual {v0, p1, p2}, Ljava/io/InputStream;->skip(J)J
 
-    .line 63
-    .line 64
-    .line 65
-    const/4 p1, 0x0
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide p1
 
-    .line 66
-    invoke-virtual {v0, p1}, Lzp;->b(Ljava/lang/Object;)V
+    .line 13
+    iget-wide v0, p0, Li90;->X:J
 
-    .line 67
-    .line 68
-    .line 69
-    iget-object p1, v0, Lzp;->a:Ljava/util/ArrayList;
+    .line 14
+    .line 15
+    sub-long/2addr v0, p1
 
-    .line 70
-    .line 71
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+    .line 16
+    iput-wide v0, p0, Li90;->X:J
 
-    .line 72
-    .line 73
-    .line 74
-    move-result v0
-
-    .line 75
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 76
-    .line 77
-    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 78
-    .line 79
-    .line 80
-    move-result-object p1
-
-    .line 81
-    invoke-virtual {v2, p1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object p1
-
-    .line 85
-    return-object p1
-
-    .line 86
-    nop
-
-    .line 87
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 17
+    .line 18
+    return-wide p1
 .end method

@@ -1,173 +1,368 @@
 .class public final Leu;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lbg4;
-
-
-# static fields
-.field public static final a:Leu;
-
-.field public static final b:Lbv1;
-
-.field public static final c:Lbv1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public static final a(Leu;Liu;)V
+    .locals 6
 
     .line 1
-    new-instance v0, Leu;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    invoke-static {}, Liu;->access$getIdleSentinel$cp()Liu;
+
     .line 5
     .line 6
-    sput-object v0, Leu;->a:Leu;
-
     .line 7
+    move-result-object p0
+
     .line 8
-    new-instance v0, Lns;
+    const/4 v0, 0x1
 
     .line 9
-    .line 10
-    const/4 v1, 0x1
+    if-nez p0, :cond_0
 
+    .line 10
     .line 11
-    invoke-direct {v0, v1}, Lns;-><init>(I)V
+    new-instance p0, Liu;
 
     .line 12
     .line 13
-    .line 14
-    const-class v1, Lf65;
+    invoke-direct {p0}, Liu;-><init>()V
 
+    .line 14
     .line 15
     .line 16
-    invoke-static {v1, v0}, Lea0;->w(Ljava/lang/Class;Lns;)Ljava/util/HashMap;
+    invoke-static {p0}, Liu;->access$setIdleSentinel$cp(Liu;)V
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    new-instance p0, Lfu;
 
     .line 20
-    new-instance v2, Lbv1;
-
     .line 21
-    .line 22
-    invoke-static {v0}, Lea0;->y(Ljava/util/HashMap;)Ljava/util/Map;
+    const-string v1, "Okio Watchdog"
 
+    .line 22
     .line 23
+    invoke-direct {p0, v1}, Lfu;-><init>(Ljava/lang/String;)V
+
     .line 24
     .line 25
-    move-result-object v0
-
     .line 26
-    const-string v3, "startMs"
+    invoke-virtual {p0, v0}, Ljava/lang/Thread;->setDaemon(Z)V
 
     .line 27
     .line 28
-    invoke-direct {v2, v3, v0}, Lbv1;-><init>(Ljava/lang/String;Ljava/util/Map;)V
-
     .line 29
+    invoke-virtual {p0}, Ljava/lang/Thread;->start()V
+
     .line 30
     .line 31
-    sput-object v2, Leu;->b:Lbv1;
-
     .line 32
-    .line 33
-    new-instance v0, Lns;
+    :cond_0
+    const-wide/16 v1, 0x0
 
+    .line 33
     .line 34
+    const/4 p0, 0x0
+
     .line 35
-    const/4 v2, 0x2
+    invoke-static {p1, v1, v2, v0, p0}, Liu;->setTimeoutAt$okio$default(Liu;JILjava/lang/Object;)V
 
     .line 36
-    invoke-direct {v0, v2}, Lns;-><init>(I)V
+    .line 37
+    .line 38
+    invoke-static {}, Liu;->access$getQueue$cp()Lmj5;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p0
+
+    .line 42
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 43
+    .line 44
+    .line 45
+    iget v1, p0, Lmj5;->a:I
+
+    .line 46
+    .line 47
+    add-int/2addr v1, v0
+
+    .line 48
+    iput v1, p0, Lmj5;->a:I
+
+    .line 49
+    .line 50
+    iget-object v2, p0, Lmj5;->b:[Liu;
+
+    .line 51
+    .line 52
+    array-length v3, v2
+
+    .line 53
+    if-ne v1, v3, :cond_1
+
+    .line 54
+    .line 55
+    mul-int/lit8 v3, v1, 0x2
+
+    .line 56
+    .line 57
+    new-array v3, v3, [Liu;
+
+    .line 58
+    .line 59
+    const/16 v4, 0xe
+
+    .line 60
+    .line 61
+    const/4 v5, 0x0
+
+    .line 62
+    invoke-static {v2, v3, v5, v5, v4}, Lkt;->p0([Ljava/lang/Object;[Ljava/lang/Object;III)V
+
+    .line 63
+    .line 64
+    .line 65
+    iput-object v3, p0, Lmj5;->b:[Liu;
+
+    .line 66
+    .line 67
+    :cond_1
+    invoke-virtual {p0, p1, v1}, Lmj5;->a(Liu;I)V
+
+    .line 68
+    .line 69
+    .line 70
+    iget p0, p1, Liu;->index:I
+
+    .line 71
+    .line 72
+    if-ne p0, v0, :cond_2
+
+    .line 73
+    .line 74
+    invoke-static {}, Liu;->access$getCondition$cp()Ljava/util/concurrent/locks/Condition;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object p0
+
+    .line 78
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Condition;->signal()V
+
+    .line 79
+    .line 80
+    .line 81
+    :cond_2
+    return-void
+.end method
+
+.method public static b()Liu;
+    .locals 8
+
+    .line 1
+    invoke-static {}, Liu;->access$getQueue$cp()Lmj5;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget-object v0, v0, Lmj5;->b:[Liu;
+
+    .line 6
+    .line 7
+    const/4 v1, 0x1
+
+    .line 8
+    aget-object v0, v0, v1
+
+    .line 9
+    .line 10
+    const/4 v2, 0x0
+
+    .line 11
+    if-nez v0, :cond_1
+
+    .line 12
+    .line 13
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-wide v3
+
+    .line 17
+    invoke-static {}, Liu;->access$getCondition$cp()Ljava/util/concurrent/locks/Condition;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    invoke-static {}, Liu;->access$getIDLE_TIMEOUT_MILLIS$cp()J
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-wide v5
+
+    .line 25
+    sget-object v7, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 26
+    .line 27
+    invoke-interface {v0, v5, v6, v7}, Ljava/util/concurrent/locks/Condition;->await(JLjava/util/concurrent/TimeUnit;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-static {}, Liu;->access$getQueue$cp()Lmj5;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    iget-object v0, v0, Lmj5;->b:[Liu;
+
+    .line 35
+    .line 36
+    aget-object v0, v0, v1
 
     .line 37
     .line 38
-    .line 39
-    invoke-static {v1, v0}, Lea0;->w(Ljava/lang/Class;Lns;)Ljava/util/HashMap;
+    if-nez v0, :cond_0
 
+    .line 39
     .line 40
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
+
     .line 41
     .line 42
-    move-result-object v0
-
     .line 43
-    new-instance v1, Lbv1;
+    move-result-wide v0
 
     .line 44
+    sub-long/2addr v0, v3
+
     .line 45
-    invoke-static {v0}, Lea0;->y(Ljava/util/HashMap;)Ljava/util/Map;
+    invoke-static {}, Liu;->access$getIDLE_TIMEOUT_NANOS$cp()J
 
     .line 46
     .line 47
     .line 48
-    move-result-object v0
+    move-result-wide v3
 
     .line 49
-    const-string v2, "endMs"
+    cmp-long v0, v0, v3
 
     .line 50
     .line 51
-    invoke-direct {v1, v2, v0}, Lbv1;-><init>(Ljava/lang/String;Ljava/util/Map;)V
+    if-ltz v0, :cond_0
 
     .line 52
     .line 53
-    .line 54
-    sput-object v1, Leu;->c:Lbv1;
+    invoke-static {}, Liu;->access$getIdleSentinel$cp()Liu;
 
+    .line 54
     .line 55
     .line 56
-    return-void
-.end method
+    move-result-object v0
 
+    .line 57
+    return-object v0
 
-# virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 3
+    .line 58
+    :cond_0
+    return-object v2
 
-    .line 1
-    check-cast p1, Lg47;
+    .line 59
+    :cond_1
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
 
-    .line 2
-    .line 3
-    check-cast p2, Lcg4;
+    .line 60
+    .line 61
+    .line 62
+    move-result-wide v3
 
-    .line 4
-    .line 5
-    sget-object v0, Leu;->b:Lbv1;
+    .line 63
+    invoke-virtual {v0, v3, v4}, Liu;->remainingNanos$okio(J)J
 
-    .line 6
-    .line 7
-    iget-wide v1, p1, Lg47;->a:J
+    .line 64
+    .line 65
+    .line 66
+    move-result-wide v3
 
-    .line 8
-    .line 9
-    invoke-interface {p2, v0, v1, v2}, Lcg4;->e(Lbv1;J)Lcg4;
+    .line 67
+    const-wide/16 v5, 0x0
 
-    .line 10
-    .line 11
-    .line 12
-    sget-object v0, Leu;->c:Lbv1;
+    .line 68
+    .line 69
+    cmp-long v1, v3, v5
 
-    .line 13
-    .line 14
-    iget-wide v1, p1, Lg47;->b:J
+    .line 70
+    .line 71
+    if-lez v1, :cond_2
 
-    .line 15
-    .line 16
-    invoke-interface {p2, v0, v1, v2}, Lcg4;->e(Lbv1;J)Lcg4;
+    .line 72
+    .line 73
+    invoke-static {}, Liu;->access$getCondition$cp()Ljava/util/concurrent/locks/Condition;
 
-    .line 17
-    .line 18
-    .line 19
-    return-void
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v0
+
+    .line 77
+    sget-object v1, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 78
+    .line 79
+    invoke-interface {v0, v3, v4, v1}, Ljava/util/concurrent/locks/Condition;->await(JLjava/util/concurrent/TimeUnit;)Z
+
+    .line 80
+    .line 81
+    .line 82
+    return-object v2
+
+    .line 83
+    :cond_2
+    invoke-static {}, Liu;->access$getQueue$cp()Lmj5;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v1
+
+    .line 87
+    invoke-virtual {v1, v0}, Lmj5;->b(Liu;)V
+
+    .line 88
+    .line 89
+    .line 90
+    const/4 v1, 0x2
+
+    .line 91
+    invoke-static {v0, v1}, Liu;->access$setState$p(Liu;I)V
+
+    .line 92
+    .line 93
+    .line 94
+    return-object v0
 .end method

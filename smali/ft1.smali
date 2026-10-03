@@ -1,16 +1,21 @@
-.class public final Lft1;
+.class public final synthetic Lft1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ls11;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final synthetic a:Lgt1;
 
-.field public final b:I
+.field public final synthetic b:Landroid/graphics/SurfaceTexture;
+
+.field public final synthetic c:Landroid/view/Surface;
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/Object;)V
+.method public synthetic constructor <init>(Lgt1;Landroid/graphics/SurfaceTexture;Landroid/view/Surface;)V
     .locals 0
 
     .line 1
@@ -19,107 +24,77 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lft1;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lft1;->a:Lgt1;
 
     .line 5
     .line 6
-    iput p1, p0, Lft1;->b:I
+    iput-object p2, p0, Lft1;->b:Landroid/graphics/SurfaceTexture;
 
     .line 7
     .line 8
+    iput-object p3, p0, Lft1;->c:Landroid/view/Surface;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    instance-of v0, p1, Lft1;
+    check-cast p1, Lgy;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const/4 p1, 0x0
 
     .line 4
-    if-nez v0, :cond_0
+    iget-object v0, p0, Lft1;->b:Landroid/graphics/SurfaceTexture;
 
     .line 5
     .line 6
-    return v1
+    invoke-virtual {v0, p1}, Landroid/graphics/SurfaceTexture;->setOnFrameAvailableListener(Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;)V
 
     .line 7
-    :cond_0
-    check-cast p1, Lft1;
-
     .line 8
     .line 9
-    iget-object v0, p0, Lft1;->a:Ljava/lang/Object;
+    invoke-virtual {v0}, Landroid/graphics/SurfaceTexture;->release()V
 
     .line 10
     .line 11
-    iget-object v2, p1, Lft1;->a:Ljava/lang/Object;
-
     .line 12
+    iget-object p1, p0, Lft1;->c:Landroid/view/Surface;
+
     .line 13
-    if-ne v0, v2, :cond_1
-
     .line 14
-    .line 15
-    iget v0, p0, Lft1;->b:I
+    invoke-virtual {p1}, Landroid/view/Surface;->release()V
 
+    .line 15
     .line 16
     .line 17
-    iget p1, p1, Lft1;->b:I
+    iget-object p0, p0, Lft1;->a:Lgt1;
 
     .line 18
     .line 19
-    if-ne v0, p1, :cond_1
+    iget p1, p0, Lgt1;->e:I
 
     .line 20
     .line 21
-    const/4 p1, 0x1
+    add-int/lit8 p1, p1, -0x1
 
     .line 22
-    return p1
-
     .line 23
-    :cond_1
-    return v1
-.end method
+    iput p1, p0, Lgt1;->e:I
 
-.method public final hashCode()I
-    .locals 2
+    .line 24
+    .line 25
+    invoke-virtual {p0}, Lgt1;->d()V
 
-    .line 1
-    iget-object v0, p0, Lft1;->a:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    const v1, 0xffff
-
-    .line 8
-    .line 9
-    .line 10
-    mul-int v0, v0, v1
-
-    .line 11
-    .line 12
-    iget v1, p0, Lft1;->b:I
-
-    .line 13
-    .line 14
-    add-int/2addr v0, v1
-
-    .line 15
-    return v0
+    .line 26
+    .line 27
+    .line 28
+    return-void
 .end method

@@ -1,141 +1,119 @@
 .class public final synthetic Lkz6;
-.super Li94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lx73;
+.implements Lxi2;
+
+
+# instance fields
+.field public final synthetic X:Lnz6;
+
+.field public final synthetic Y:Lrp4;
+
+.field public final synthetic Z:Ldn4;
+
+.field public final synthetic c0:Lhz6;
+
+.field public final synthetic d0:J
+
+
+# direct methods
+.method public synthetic constructor <init>(Lnz6;Lrp4;Ldn4;Lhz6;JI)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lkz6;->X:Lnz6;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lkz6;->Y:Lrp4;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lkz6;->Z:Ldn4;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lkz6;->c0:Lhz6;
+
+    .line 11
+    .line 12
+    iput-wide p5, p0, Lkz6;->d0:J
+
+    .line 13
+    .line 14
+    return-void
+.end method
 
 
 # virtual methods
-.method public final L()Lv63;
-    .locals 1
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    sget-object v0, Lhg5;->a:Lig5;
+    move-object v6, p1
 
     .line 2
-    .line 3
-    invoke-virtual {v0, p0}, Lig5;->e(Lkz6;)Lx73;
+    check-cast v6, Lrk2;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final bridge synthetic b()Lj83;
-    .locals 1
-
-    .line 12
-    invoke-virtual {p0}, Lkz6;->b()Lk83;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final b()Lk83;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lk35;->P()Lp83;
-
-    .line 2
     .line 3
     .line 4
-    move-result-object v0
+    check-cast p2, Ljava/lang/Integer;
 
     .line 5
-    check-cast v0, Lx73;
-
     .line 6
-    .line 7
-    invoke-interface {v0}, Ll83;->b()Lk83;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 7
     .line 8
     .line 9
+    const p1, 0x30001
+
     .line 10
-    move-result-object v0
-
     .line 11
-    return-object v0
-.end method
-
-.method public final bridge synthetic d()Lv73;
-    .locals 1
-
     .line 12
-    invoke-virtual {p0}, Lkz6;->d()Lw73;
+    invoke-static {p1}, Lku8;->S(I)I
 
-    move-result-object v0
+    .line 13
+    .line 14
+    .line 15
+    move-result v7
 
-    return-object v0
-.end method
+    .line 16
+    iget-object v0, p0, Lkz6;->X:Lnz6;
 
-.method public final d()Lw73;
-    .locals 1
+    .line 17
+    .line 18
+    iget-object v1, p0, Lkz6;->Y:Lrp4;
 
-    .line 1
-    invoke-virtual {p0}, Lk35;->P()Lp83;
+    .line 19
+    .line 20
+    iget-object v2, p0, Lkz6;->Z:Ldn4;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
+    .line 21
+    .line 22
+    iget-object v3, p0, Lkz6;->c0:Lhz6;
 
-    .line 5
-    check-cast v0, Lx73;
+    .line 23
+    .line 24
+    iget-wide v4, p0, Lkz6;->d0:J
 
-    .line 6
-    .line 7
-    invoke-interface {v0}, Lx73;->d()Lw73;
+    .line 25
+    .line 26
+    invoke-virtual/range {v0 .. v7}, Lnz6;->a(Lrp4;Ldn4;Lhz6;JLrk2;I)V
 
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
+    .line 27
+    .line 28
+    .line 29
+    sget-object p0, Lr98;->a:Lr98;
 
-    .line 11
-    return-object v0
-.end method
-
-.method public final get()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lz80;->receiver:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    check-cast v0, Lq94;
-
-    .line 4
-    .line 5
-    invoke-interface {v0}, Lgh6;->getValue()Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    return-object v0
-.end method
-
-.method public final invoke()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lkz6;->get()Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
+    .line 30
+    .line 31
+    return-object p0
 .end method

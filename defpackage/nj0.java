@@ -1,30 +1,58 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class nj0 {
-    public static final nj0 Q;
-    public static final nj0 R;
-    public static final nj0 S;
-    public static final /* synthetic */ nj0[] T;
+import android.graphics.SurfaceTexture;
+import android.view.Surface;
+import java.util.concurrent.atomic.AtomicBoolean;
 
-    static {
-        nj0 nj0Var = new nj0("NONE", 0);
-        Q = nj0Var;
-        nj0 nj0Var2 = new nj0("ALL_JSON_OBJECTS", 1);
-        R = nj0Var2;
-        nj0 nj0Var3 = new nj0("POLYMORPHIC", 2);
-        S = nj0Var3;
-        T = new nj0[]{nj0Var, nj0Var2, nj0Var3};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class nj0 implements s11 {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ Object b;
+    public final /* synthetic */ Object c;
+
+    public /* synthetic */ nj0(int i, Object obj, Object obj2) {
+        this.a = i;
+        this.b = obj;
+        this.c = obj2;
     }
 
-    public static nj0 valueOf(String str) {
-        return (nj0) Enum.valueOf(nj0.class, str);
-    }
-
-    public static nj0[] values() {
-        return (nj0[]) T.clone();
+    @Override // defpackage.s11
+    public final void accept(Object obj) {
+        int i = this.a;
+        Object obj2 = this.c;
+        Object obj3 = this.b;
+        switch (i) {
+            case 0:
+                ((Surface) obj3).release();
+                ((SurfaceTexture) obj2).release();
+                break;
+            case 1:
+                jd1 jd1Var = (jd1) obj3;
+                tk7 tk7Var = (tk7) obj2;
+                tk7Var.close();
+                Surface surface = (Surface) jd1Var.h.remove(tk7Var);
+                if (surface != null) {
+                    p05 p05Var = jd1Var.a;
+                    lk2.d((AtomicBoolean) p05Var.Z, true);
+                    lk2.c((Thread) p05Var.d0);
+                    p05Var.p(surface, true);
+                    break;
+                }
+                break;
+            default:
+                gt1 gt1Var = (gt1) obj3;
+                tk7 tk7Var2 = (tk7) obj2;
+                tk7Var2.close();
+                Surface surface2 = (Surface) gt1Var.h.remove(tk7Var2);
+                if (surface2 != null) {
+                    et1 et1Var = gt1Var.a;
+                    lk2.d((AtomicBoolean) et1Var.Z, true);
+                    lk2.c((Thread) et1Var.d0);
+                    et1Var.p(surface2, true);
+                    break;
+                }
+                break;
+        }
     }
 }

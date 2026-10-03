@@ -1,19 +1,22 @@
 package defpackage;
 
-import android.graphics.PointF;
-import android.graphics.Rect;
+import java.util.HashSet;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class sz4 extends h44 {
-    public final nz4 a;
-    public Rect b = null;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class sz4 {
+    public static final HashSet a;
 
     static {
-        new PointF(2.0f, 2.0f);
-    }
-
-    public sz4(nz4 nz4Var) {
-        this.a = nz4Var;
+        HashSet hashSet = new HashSet();
+        hashSet.add(Boolean.class);
+        hashSet.add(Character.class);
+        hashSet.add(Byte.class);
+        hashSet.add(Short.class);
+        hashSet.add(Integer.class);
+        hashSet.add(Long.class);
+        hashSet.add(Float.class);
+        hashSet.add(Double.class);
+        a = hashSet;
     }
 }

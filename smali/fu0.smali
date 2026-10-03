@@ -1,1014 +1,1017 @@
-.class public abstract Lfu0;
+.class public final Lfu0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# instance fields
+.field public final A:J
+
+.field public final B:J
+
+.field public final C:J
+
+.field public final D:J
+
+.field public final E:J
+
+.field public final F:J
+
+.field public final G:J
+
+.field public final H:J
+
+.field public final I:J
+
+.field public final J:J
+
+.field public final K:J
+
+.field public final L:J
+
+.field public final M:J
+
+.field public final N:J
+
+.field public final O:J
+
+.field public final P:J
+
+.field public final Q:J
+
+.field public final R:J
+
+.field public final S:J
+
+.field public final T:J
+
+.field public final U:J
+
+.field public final V:J
+
+.field public W:Lty7;
+
+.field public X:Lgx2;
+
+.field public Y:Ljj4;
+
+.field public Z:Liv5;
+
+.field public final a:J
+
+.field public a0:Lhz6;
+
+.field public final b:J
+
+.field public b0:Lgq7;
+
+.field public final c:J
+
+.field public c0:Lgq7;
+
+.field public final d:J
+
+.field public d0:Li96;
+
+.field public final e:J
+
+.field public final f:J
+
+.field public final g:J
+
+.field public final h:J
+
+.field public final i:J
+
+.field public final j:J
+
+.field public final k:J
+
+.field public final l:J
+
+.field public final m:J
+
+.field public final n:J
+
+.field public final o:J
+
+.field public final p:J
+
+.field public final q:J
+
+.field public final r:J
+
+.field public final s:J
+
+.field public final t:J
+
+.field public final u:J
+
+.field public final v:J
+
+.field public final w:J
+
+.field public final x:J
+
+.field public final y:J
+
+.field public final z:J
 
 
 # direct methods
-.method public static final a(IIII)J
-    .locals 4
+.method public constructor <init>(JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    const/4 v1, 0x1
+    iput-wide p1, p0, Lfu0;->a:J
 
     .line 3
-    if-lt p1, p0, :cond_0
+    iput-wide p3, p0, Lfu0;->b:J
 
     .line 4
+    iput-wide p5, p0, Lfu0;->c:J
+
     .line 5
-    const/4 v2, 0x1
+    iput-wide p7, p0, Lfu0;->d:J
 
     .line 6
-    goto :goto_0
+    iput-wide p9, p0, Lfu0;->e:J
 
     .line 7
-    :cond_0
-    const/4 v2, 0x0
+    iput-wide p11, p0, Lfu0;->f:J
 
     .line 8
-    :goto_0
-    if-lt p3, p2, :cond_1
+    iput-wide p13, p0, Lfu0;->g:J
+
+    move-wide p1, p15
 
     .line 9
+    iput-wide p1, p0, Lfu0;->h:J
+
+    move-wide/from16 p1, p17
+
     .line 10
-    const/4 v3, 0x1
+    iput-wide p1, p0, Lfu0;->i:J
+
+    move-wide/from16 p1, p19
 
     .line 11
-    goto :goto_1
+    iput-wide p1, p0, Lfu0;->j:J
+
+    move-wide/from16 p1, p21
 
     .line 12
-    :cond_1
-    const/4 v3, 0x0
+    iput-wide p1, p0, Lfu0;->k:J
+
+    move-wide/from16 p1, p23
 
     .line 13
-    :goto_1
-    and-int/2addr v2, v3
+    iput-wide p1, p0, Lfu0;->l:J
+
+    move-wide/from16 p1, p25
 
     .line 14
-    if-ltz p0, :cond_2
+    iput-wide p1, p0, Lfu0;->m:J
+
+    move-wide/from16 p1, p27
 
     .line 15
+    iput-wide p1, p0, Lfu0;->n:J
+
+    move-wide/from16 p1, p29
+
     .line 16
-    const/4 v3, 0x1
+    iput-wide p1, p0, Lfu0;->o:J
+
+    move-wide/from16 p1, p31
 
     .line 17
-    goto :goto_2
+    iput-wide p1, p0, Lfu0;->p:J
+
+    move-wide/from16 p1, p33
 
     .line 18
-    :cond_2
-    const/4 v3, 0x0
+    iput-wide p1, p0, Lfu0;->q:J
+
+    move-wide/from16 p1, p35
 
     .line 19
-    :goto_2
-    and-int/2addr v2, v3
+    iput-wide p1, p0, Lfu0;->r:J
+
+    move-wide/from16 p1, p37
 
     .line 20
-    if-ltz p2, :cond_3
+    iput-wide p1, p0, Lfu0;->s:J
+
+    move-wide/from16 p1, p39
 
     .line 21
+    iput-wide p1, p0, Lfu0;->t:J
+
+    move-wide/from16 p1, p41
+
     .line 22
-    const/4 v0, 0x1
+    iput-wide p1, p0, Lfu0;->u:J
+
+    move-wide/from16 p1, p43
 
     .line 23
-    :cond_3
-    and-int/2addr v0, v2
+    iput-wide p1, p0, Lfu0;->v:J
+
+    move-wide/from16 p1, p45
 
     .line 24
-    if-nez v0, :cond_4
+    iput-wide p1, p0, Lfu0;->w:J
+
+    move-wide/from16 p1, p47
 
     .line 25
+    iput-wide p1, p0, Lfu0;->x:J
+
+    move-wide/from16 p1, p49
+
     .line 26
-    const-string v0, "maxWidth must be >= than minWidth,\nmaxHeight must be >= than minHeight,\nminWidth and minHeight must be >= 0"
+    iput-wide p1, p0, Lfu0;->y:J
+
+    move-wide/from16 p1, p51
 
     .line 27
+    iput-wide p1, p0, Lfu0;->z:J
+
+    move-wide/from16 p1, p53
+
     .line 28
-    invoke-static {v0}, Lbq2;->a(Ljava/lang/String;)V
+    iput-wide p1, p0, Lfu0;->A:J
+
+    move-wide/from16 p1, p55
 
     .line 29
+    iput-wide p1, p0, Lfu0;->B:J
+
+    move-wide/from16 p1, p57
+
     .line 30
+    iput-wide p1, p0, Lfu0;->C:J
+
+    move-wide/from16 p1, p59
+
     .line 31
-    :cond_4
-    invoke-static {p0, p1, p2, p3}, Lfu0;->h(IIII)J
+    iput-wide p1, p0, Lfu0;->D:J
+
+    move-wide/from16 p1, p61
 
     .line 32
+    iput-wide p1, p0, Lfu0;->E:J
+
+    move-wide/from16 p1, p63
+
     .line 33
+    iput-wide p1, p0, Lfu0;->F:J
+
+    move-wide/from16 p1, p65
+
     .line 34
-    move-result-wide p0
+    iput-wide p1, p0, Lfu0;->G:J
+
+    move-wide/from16 p1, p67
 
     .line 35
-    return-wide p0
-.end method
+    iput-wide p1, p0, Lfu0;->H:J
 
-.method public static synthetic b(III)J
-    .locals 2
-
-    .line 1
-    and-int/lit8 v0, p2, 0x2
-
-    .line 2
-    .line 3
-    const v1, 0x7fffffff
-
-    .line 4
-    .line 5
-    .line 6
-    if-eqz v0, :cond_0
-
-    .line 7
-    .line 8
-    const p0, 0x7fffffff
-
-    .line 9
-    .line 10
-    .line 11
-    :cond_0
-    and-int/lit8 p2, p2, 0x8
-
-    .line 12
-    .line 13
-    if-eqz p2, :cond_1
-
-    .line 14
-    .line 15
-    const p1, 0x7fffffff
-
-    .line 16
-    .line 17
-    .line 18
-    :cond_1
-    const/4 p2, 0x0
-
-    .line 19
-    invoke-static {p2, p0, p2, p1}, Lfu0;->a(IIII)J
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-wide p0
-
-    .line 23
-    return-wide p0
-.end method
-
-.method public static final c(I)I
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x1fff
-
-    .line 2
-    .line 3
-    if-ge p0, v0, :cond_0
-
-    .line 4
-    .line 5
-    const/16 p0, 0xd
-
-    .line 6
-    .line 7
-    return p0
-
-    .line 8
-    :cond_0
-    const/16 v0, 0x7fff
-
-    .line 9
-    .line 10
-    if-ge p0, v0, :cond_1
-
-    .line 11
-    .line 12
-    const/16 p0, 0xf
-
-    .line 13
-    .line 14
-    return p0
-
-    .line 15
-    :cond_1
-    const v0, 0xffff
-
-    .line 16
-    .line 17
-    .line 18
-    if-ge p0, v0, :cond_2
-
-    .line 19
-    .line 20
-    const/16 p0, 0x10
-
-    .line 21
-    .line 22
-    return p0
-
-    .line 23
-    :cond_2
-    const v0, 0x3ffff
-
-    .line 24
-    .line 25
-    .line 26
-    if-ge p0, v0, :cond_3
-
-    .line 27
-    .line 28
-    const/16 p0, 0x12
-
-    .line 29
-    .line 30
-    return p0
-
-    .line 31
-    :cond_3
-    const/16 p0, 0xff
-
-    .line 32
-    .line 33
-    return p0
-.end method
-
-.method public static final d(JJ)J
-    .locals 5
-
-    .line 1
-    const/16 v0, 0x20
-
-    .line 2
-    .line 3
-    shr-long v1, p2, v0
-
-    .line 4
-    .line 5
-    long-to-int v2, v1
-
-    .line 6
-    invoke-static {p0, p1}, Lcu0;->j(J)I
-
-    .line 7
-    .line 8
-    .line 9
-    move-result v1
-
-    .line 10
-    invoke-static {p0, p1}, Lcu0;->h(J)I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v3
-
-    .line 14
-    if-ge v2, v1, :cond_0
-
-    .line 15
-    .line 16
-    move v2, v1
-
-    .line 17
-    :cond_0
-    if-le v2, v3, :cond_1
-
-    .line 18
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_1
-    move v3, v2
-
-    .line 21
-    :goto_0
-    const-wide v1, 0xffffffffL
-
-    .line 22
-    .line 23
-    .line 24
-    .line 25
-    .line 26
-    and-long/2addr p2, v1
-
-    .line 27
-    long-to-int p3, p2
-
-    .line 28
-    invoke-static {p0, p1}, Lcu0;->i(J)I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p2
-
-    .line 32
-    invoke-static {p0, p1}, Lcu0;->g(J)I
-
-    .line 33
-    .line 34
-    .line 35
-    move-result p0
+    move-wide/from16 p1, p69
 
     .line 36
-    if-ge p3, p2, :cond_2
+    iput-wide p1, p0, Lfu0;->I:J
+
+    move-wide/from16 p1, p71
 
     .line 37
-    .line 38
-    move p3, p2
+    iput-wide p1, p0, Lfu0;->J:J
 
-    .line 39
-    :cond_2
-    if-le p3, p0, :cond_3
-
-    .line 40
-    .line 41
-    goto :goto_1
-
-    .line 42
-    :cond_3
-    move p0, p3
-
-    .line 43
-    :goto_1
-    int-to-long p1, v3
-
-    .line 44
-    shl-long/2addr p1, v0
-
-    .line 45
-    int-to-long v3, p0
-
-    .line 46
-    and-long/2addr v1, v3
-
-    .line 47
-    or-long/2addr p1, v1
-
-    .line 48
-    return-wide p1
-.end method
-
-.method public static final e(JJ)J
-    .locals 4
-
-    .line 1
-    invoke-static {p0, p1}, Lcu0;->j(J)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    invoke-static {p0, p1}, Lcu0;->h(J)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    invoke-static {p0, p1}, Lcu0;->i(J)I
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v2
-
-    .line 13
-    invoke-static {p0, p1}, Lcu0;->g(J)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result p0
-
-    .line 17
-    invoke-static {p2, p3}, Lcu0;->j(J)I
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    if-ge p1, v0, :cond_0
-
-    .line 22
-    .line 23
-    move p1, v0
-
-    .line 24
-    :cond_0
-    if-le p1, v1, :cond_1
-
-    .line 25
-    .line 26
-    move p1, v1
-
-    .line 27
-    :cond_1
-    invoke-static {p2, p3}, Lcu0;->h(J)I
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v3
-
-    .line 31
-    if-ge v3, v0, :cond_2
-
-    .line 32
-    .line 33
-    goto :goto_0
-
-    .line 34
-    :cond_2
-    move v0, v3
-
-    .line 35
-    :goto_0
-    if-le v0, v1, :cond_3
-
-    .line 36
-    .line 37
-    goto :goto_1
+    move-wide/from16 p1, p73
 
     .line 38
-    :cond_3
-    move v1, v0
+    iput-wide p1, p0, Lfu0;->K:J
+
+    move-wide/from16 p1, p75
 
     .line 39
-    :goto_1
-    invoke-static {p2, p3}, Lcu0;->i(J)I
+    iput-wide p1, p0, Lfu0;->L:J
+
+    move-wide/from16 p1, p77
 
     .line 40
+    iput-wide p1, p0, Lfu0;->M:J
+
+    move-wide/from16 p1, p79
+
     .line 41
+    iput-wide p1, p0, Lfu0;->N:J
+
+    move-wide/from16 p1, p81
+
     .line 42
-    move-result v0
+    iput-wide p1, p0, Lfu0;->O:J
+
+    move-wide/from16 p1, p83
 
     .line 43
-    if-ge v0, v2, :cond_4
+    iput-wide p1, p0, Lfu0;->P:J
+
+    move-wide/from16 p1, p85
 
     .line 44
+    iput-wide p1, p0, Lfu0;->Q:J
+
+    move-wide/from16 p1, p87
+
     .line 45
-    move v0, v2
+    iput-wide p1, p0, Lfu0;->R:J
+
+    move-wide/from16 p1, p89
 
     .line 46
-    :cond_4
-    if-le v0, p0, :cond_5
+    iput-wide p1, p0, Lfu0;->S:J
+
+    move-wide/from16 p1, p91
 
     .line 47
+    iput-wide p1, p0, Lfu0;->T:J
+
+    move-wide/from16 p1, p93
+
     .line 48
-    move v0, p0
+    iput-wide p1, p0, Lfu0;->U:J
+
+    move-wide/from16 p1, p95
 
     .line 49
-    :cond_5
-    invoke-static {p2, p3}, Lcu0;->g(J)I
+    iput-wide p1, p0, Lfu0;->V:J
 
-    .line 50
-    .line 51
-    .line 52
-    move-result p2
-
-    .line 53
-    if-ge p2, v2, :cond_6
-
-    .line 54
-    .line 55
-    goto :goto_2
-
-    .line 56
-    :cond_6
-    move v2, p2
-
-    .line 57
-    :goto_2
-    if-le v2, p0, :cond_7
-
-    .line 58
-    .line 59
-    goto :goto_3
-
-    .line 60
-    :cond_7
-    move p0, v2
-
-    .line 61
-    :goto_3
-    invoke-static {p1, v1, v0, p0}, Lfu0;->a(IIII)J
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-wide p0
-
-    .line 65
-    return-wide p0
+    return-void
 .end method
 
-.method public static final f(IJ)I
-    .locals 1
 
-    .line 1
-    invoke-static {p1, p2}, Lcu0;->i(J)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    invoke-static {p1, p2}, Lcu0;->g(J)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p1
-
-    .line 9
-    if-ge p0, v0, :cond_0
-
-    .line 10
-    .line 11
-    move p0, v0
-
-    .line 12
-    :cond_0
-    if-le p0, p1, :cond_1
-
-    .line 13
-    .line 14
-    return p1
-
-    .line 15
-    :cond_1
-    return p0
-.end method
-
-.method public static final g(IJ)I
-    .locals 1
-
-    .line 1
-    invoke-static {p1, p2}, Lcu0;->j(J)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    invoke-static {p1, p2}, Lcu0;->h(J)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p1
-
-    .line 9
-    if-ge p0, v0, :cond_0
-
-    .line 10
-    .line 11
-    move p0, v0
-
-    .line 12
-    :cond_0
-    if-le p0, p1, :cond_1
-
-    .line 13
-    .line 14
-    return p1
-
-    .line 15
-    :cond_1
-    return p0
-.end method
-
-.method public static final h(IIII)J
+# virtual methods
+.method public final toString()Ljava/lang/String;
     .locals 6
 
     .line 1
-    const v0, 0x7fffffff
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
+    const-string v1, "ColorScheme(primary="
+
     .line 4
-    if-ne p3, v0, :cond_0
-
     .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 6
-    move v1, p2
-
     .line 7
-    goto :goto_0
-
     .line 8
-    :cond_0
-    move v1, p3
+    iget-wide v1, p0, Lfu0;->a:J
 
     .line 9
-    :goto_0
-    invoke-static {v1}, Lfu0;->c(I)I
-
     .line 10
+    const-string v3, "onPrimary="
+
     .line 11
     .line 12
-    move-result v2
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
     .line 13
-    if-ne p1, v0, :cond_1
-
     .line 14
     .line 15
-    move v0, p0
+    iget-wide v1, p0, Lfu0;->b:J
 
     .line 16
-    goto :goto_1
-
     .line 17
-    :cond_1
-    move v0, p1
+    const-string v3, "primaryContainer="
 
     .line 18
-    :goto_1
-    invoke-static {v0}, Lfu0;->c(I)I
-
     .line 19
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
     .line 20
     .line 21
-    move-result v3
-
     .line 22
-    add-int/2addr v2, v3
+    iget-wide v1, p0, Lfu0;->c:J
 
     .line 23
-    const/16 v4, 0x1f
-
     .line 24
+    const-string v3, "onPrimaryContainer="
+
     .line 25
-    if-le v2, v4, :cond_2
-
     .line 26
-    .line 27
-    invoke-static {v0, v1}, Lfu0;->k(II)V
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
+    .line 27
     .line 28
     .line 29
+    const-string v1, "inversePrimary="
+
     .line 30
-    :cond_2
-    add-int/lit8 p1, p1, 0x1
-
     .line 31
+    iget-wide v2, p0, Lfu0;->d:J
+
     .line 32
-    shr-int/lit8 v0, p1, 0x1f
-
     .line 33
+    invoke-static {v2, v3, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
     .line 34
-    not-int v0, v0
-
     .line 35
-    and-int/2addr p1, v0
-
     .line 36
-    add-int/lit8 p3, p3, 0x1
+    iget-wide v4, p0, Lfu0;->e:J
 
     .line 37
     .line 38
-    shr-int/lit8 v0, p3, 0x1f
+    const-string v1, "secondary="
 
     .line 39
     .line 40
-    not-int v0, v0
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
     .line 41
-    and-int/2addr p3, v0
-
     .line 42
-    add-int/lit8 v0, v3, -0xd
-
     .line 43
+    iget-wide v4, p0, Lfu0;->f:J
+
     .line 44
-    shr-int/lit8 v1, v0, 0x1
-
     .line 45
+    const-string v1, "onSecondary="
+
     .line 46
-    and-int/lit8 v0, v0, 0x1
-
     .line 47
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
     .line 48
-    add-int/2addr v1, v0
-
     .line 49
-    add-int/lit8 v0, v3, 0x2
-
     .line 50
+    iget-wide v4, p0, Lfu0;->g:J
+
     .line 51
-    add-int/lit8 v3, v3, 0x21
-
     .line 52
-    .line 53
-    int-to-long v1, v1
+    const-string v1, "secondaryContainer="
 
+    .line 53
     .line 54
-    int-to-long v4, p0
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
     .line 55
-    const/4 p0, 0x2
-
     .line 56
-    shl-long/2addr v4, p0
-
     .line 57
-    or-long/2addr v1, v4
+    iget-wide v4, p0, Lfu0;->h:J
 
     .line 58
-    int-to-long p0, p1
-
     .line 59
-    const/16 v4, 0x21
+    const-string v1, "onSecondaryContainer="
 
     .line 60
     .line 61
-    shl-long/2addr p0, v4
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
     .line 62
-    or-long/2addr p0, v1
-
     .line 63
-    int-to-long v1, p2
-
     .line 64
-    shl-long v0, v1, v0
+    iget-wide v4, p0, Lfu0;->i:J
 
     .line 65
     .line 66
-    or-long/2addr p0, v0
+    const-string v1, "tertiary="
 
     .line 67
-    int-to-long p2, p3
-
     .line 68
-    shl-long/2addr p2, v3
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
     .line 69
-    or-long/2addr p0, p2
-
     .line 70
-    return-wide p0
-.end method
+    .line 71
+    iget-wide v4, p0, Lfu0;->j:J
 
-.method public static final i(IIJ)J
-    .locals 4
+    .line 72
+    .line 73
+    const-string v1, "onTertiary="
 
-    .line 1
-    invoke-static {p2, p3}, Lcu0;->j(J)I
+    .line 74
+    .line 75
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
+    .line 76
+    .line 77
+    .line 78
+    iget-wide v4, p0, Lfu0;->k:J
 
-    .line 5
-    add-int/2addr v0, p0
+    .line 79
+    .line 80
+    const-string v1, "tertiaryContainer="
 
-    .line 6
-    const/4 v1, 0x0
+    .line 81
+    .line 82
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 7
-    if-gez v0, :cond_0
+    .line 83
+    .line 84
+    .line 85
+    iget-wide v4, p0, Lfu0;->l:J
 
-    .line 8
-    .line 9
-    const/4 v0, 0x0
+    .line 86
+    .line 87
+    const-string v1, "onTertiaryContainer="
 
-    .line 10
-    :cond_0
-    invoke-static {p2, p3}, Lcu0;->h(J)I
+    .line 88
+    .line 89
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 11
-    .line 12
-    .line 13
-    move-result v2
+    .line 90
+    .line 91
+    .line 92
+    iget-wide v4, p0, Lfu0;->m:J
 
-    .line 14
-    const v3, 0x7fffffff
+    .line 93
+    .line 94
+    const-string v1, "background="
 
-    .line 15
-    .line 16
-    .line 17
-    if-ne v2, v3, :cond_1
+    .line 95
+    .line 96
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 18
-    .line 19
-    goto :goto_0
+    .line 97
+    .line 98
+    .line 99
+    iget-wide v4, p0, Lfu0;->n:J
 
-    .line 20
-    :cond_1
-    add-int/2addr v2, p0
+    .line 100
+    .line 101
+    const-string v1, "onBackground="
 
-    .line 21
-    if-gez v2, :cond_2
+    .line 102
+    .line 103
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 22
-    .line 23
-    const/4 v2, 0x0
+    .line 104
+    .line 105
+    .line 106
+    iget-wide v4, p0, Lfu0;->o:J
 
-    .line 24
-    :cond_2
-    :goto_0
-    invoke-static {p2, p3}, Lcu0;->i(J)I
+    .line 107
+    .line 108
+    const-string v1, "surface="
 
-    .line 25
-    .line 26
-    .line 27
-    move-result p0
+    .line 109
+    .line 110
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 28
-    add-int/2addr p0, p1
+    .line 111
+    .line 112
+    .line 113
+    iget-wide v4, p0, Lfu0;->p:J
 
-    .line 29
-    if-gez p0, :cond_3
+    .line 114
+    .line 115
+    const-string v1, "onSurface="
 
-    .line 30
-    .line 31
-    const/4 p0, 0x0
+    .line 116
+    .line 117
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 32
-    :cond_3
-    invoke-static {p2, p3}, Lcu0;->g(J)I
+    .line 118
+    .line 119
+    .line 120
+    iget-wide v4, p0, Lfu0;->q:J
 
-    .line 33
-    .line 34
-    .line 35
-    move-result p2
+    .line 121
+    .line 122
+    const-string v1, "surfaceVariant="
 
-    .line 36
-    if-ne p2, v3, :cond_5
+    .line 123
+    .line 124
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 37
-    .line 38
-    :cond_4
-    move v1, p2
+    .line 125
+    .line 126
+    .line 127
+    iget-wide v4, p0, Lfu0;->r:J
 
-    .line 39
-    goto :goto_1
+    .line 128
+    .line 129
+    const-string v1, "onSurfaceVariant="
 
-    .line 40
-    :cond_5
-    add-int/2addr p2, p1
+    .line 130
+    .line 131
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 41
-    if-gez p2, :cond_4
+    .line 132
+    .line 133
+    .line 134
+    iget-wide v4, p0, Lfu0;->s:J
 
-    .line 42
-    .line 43
-    :goto_1
-    invoke-static {v0, v2, p0, v1}, Lfu0;->a(IIII)J
+    .line 135
+    .line 136
+    const-string v1, "surfaceTint="
 
-    .line 44
-    .line 45
-    .line 46
-    move-result-wide p0
+    .line 137
+    .line 138
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 47
-    return-wide p0
-.end method
+    .line 139
+    .line 140
+    .line 141
+    iget-wide v4, p0, Lfu0;->t:J
 
-.method public static synthetic j(IIIJ)J
-    .locals 2
+    .line 142
+    .line 143
+    const-string v1, "inverseSurface="
 
-    .line 1
-    and-int/lit8 v0, p2, 0x1
+    .line 144
+    .line 145
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 2
-    .line 3
-    const/4 v1, 0x0
+    .line 146
+    .line 147
+    .line 148
+    iget-wide v4, p0, Lfu0;->u:J
 
-    .line 4
-    if-eqz v0, :cond_0
+    .line 149
+    .line 150
+    const-string v1, "inverseOnSurface="
 
-    .line 5
-    .line 6
-    const/4 p0, 0x0
+    .line 151
+    .line 152
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 7
-    :cond_0
-    and-int/lit8 p2, p2, 0x2
+    .line 153
+    .line 154
+    .line 155
+    iget-wide v4, p0, Lfu0;->v:J
 
-    .line 8
-    .line 9
-    if-eqz p2, :cond_1
+    .line 156
+    .line 157
+    const-string v1, "error="
 
-    .line 10
-    .line 11
-    const/4 p1, 0x0
+    .line 158
+    .line 159
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 12
-    :cond_1
-    invoke-static {p0, p1, p3, p4}, Lfu0;->i(IIJ)J
+    .line 160
+    .line 161
+    .line 162
+    iget-wide v4, p0, Lfu0;->w:J
 
-    .line 13
-    .line 14
-    .line 15
-    move-result-wide p0
+    .line 163
+    .line 164
+    const-string v1, "onError="
 
-    .line 16
-    return-wide p0
-.end method
+    .line 165
+    .line 166
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-.method public static final k(II)V
-    .locals 3
+    .line 167
+    .line 168
+    .line 169
+    iget-wide v4, p0, Lfu0;->x:J
 
-    .line 1
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    .line 170
+    .line 171
+    const-string v1, "errorContainer="
 
-    .line 2
-    .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 172
+    .line 173
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 4
-    .line 5
-    const-string v2, "Can\'t represent a width of "
+    .line 174
+    .line 175
+    .line 176
+    iget-wide v4, p0, Lfu0;->y:J
 
-    .line 6
-    .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 177
+    .line 178
+    const-string v1, "onErrorContainer="
 
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 179
+    .line 180
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 11
-    .line 12
-    .line 13
-    const-string p0, " and height of "
+    .line 181
+    .line 182
+    .line 183
+    iget-wide v4, p0, Lfu0;->z:J
 
-    .line 14
-    .line 15
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 184
+    .line 185
+    const-string v1, "outline="
 
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 186
+    .line 187
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 19
-    .line 20
-    .line 21
-    const-string p0, " in Constraints"
+    .line 188
+    .line 189
+    .line 190
+    iget-wide v4, p0, Lfu0;->A:J
 
-    .line 22
-    .line 23
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 191
+    .line 192
+    const-string v1, "outlineVariant="
 
-    .line 24
-    .line 25
-    .line 26
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 193
+    .line 194
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
 
-    .line 27
-    .line 28
-    .line 29
+    .line 195
+    .line 196
+    .line 197
+    iget-wide v4, p0, Lfu0;->B:J
+
+    .line 198
+    .line 199
+    const-string v1, "scrim="
+
+    .line 200
+    .line 201
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 202
+    .line 203
+    .line 204
+    iget-wide v4, p0, Lfu0;->C:J
+
+    .line 205
+    .line 206
+    const-string v1, "surfaceBright="
+
+    .line 207
+    .line 208
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 209
+    .line 210
+    .line 211
+    iget-wide v4, p0, Lfu0;->D:J
+
+    .line 212
+    .line 213
+    const-string v1, "surfaceDim="
+
+    .line 214
+    .line 215
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 216
+    .line 217
+    .line 218
+    iget-wide v4, p0, Lfu0;->E:J
+
+    .line 219
+    .line 220
+    const-string v1, "surfaceContainer="
+
+    .line 221
+    .line 222
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 223
+    .line 224
+    .line 225
+    iget-wide v4, p0, Lfu0;->F:J
+
+    .line 226
+    .line 227
+    const-string v1, "surfaceContainerHigh="
+
+    .line 228
+    .line 229
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 230
+    .line 231
+    .line 232
+    iget-wide v4, p0, Lfu0;->G:J
+
+    .line 233
+    .line 234
+    const-string v1, "surfaceContainerHighest="
+
+    .line 235
+    .line 236
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 237
+    .line 238
+    .line 239
+    iget-wide v4, p0, Lfu0;->H:J
+
+    .line 240
+    .line 241
+    const-string v1, "surfaceContainerLow="
+
+    .line 242
+    .line 243
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 244
+    .line 245
+    .line 246
+    iget-wide v4, p0, Lfu0;->I:J
+
+    .line 247
+    .line 248
+    const-string v1, "surfaceContainerLowest="
+
+    .line 249
+    .line 250
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 251
+    .line 252
+    .line 253
+    iget-wide v4, p0, Lfu0;->J:J
+
+    .line 254
+    .line 255
+    const-string v1, "primaryFixed="
+
+    .line 256
+    .line 257
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 258
+    .line 259
+    .line 260
+    iget-wide v4, p0, Lfu0;->K:J
+
+    .line 261
+    .line 262
+    const-string v1, "primaryFixedDim="
+
+    .line 263
+    .line 264
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 265
+    .line 266
+    .line 267
+    iget-wide v4, p0, Lfu0;->L:J
+
+    .line 268
+    .line 269
+    const-string v1, "onPrimaryFixed="
+
+    .line 270
+    .line 271
+    invoke-static {v4, v5, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 272
+    .line 273
+    .line 274
+    const-string v1, "onPrimaryFixedVariant="
+
+    .line 275
+    .line 276
+    invoke-static {v2, v3, v1, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 277
+    .line 278
+    .line 279
+    iget-wide v1, p0, Lfu0;->N:J
+
+    .line 280
+    .line 281
+    const-string v3, "secondaryFixed="
+
+    .line 282
+    .line 283
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 284
+    .line 285
+    .line 286
+    iget-wide v1, p0, Lfu0;->O:J
+
+    .line 287
+    .line 288
+    const-string v3, "secondaryFixedDim="
+
+    .line 289
+    .line 290
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 291
+    .line 292
+    .line 293
+    iget-wide v1, p0, Lfu0;->P:J
+
+    .line 294
+    .line 295
+    const-string v3, "onSecondaryFixed="
+
+    .line 296
+    .line 297
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 298
+    .line 299
+    .line 300
+    iget-wide v1, p0, Lfu0;->Q:J
+
+    .line 301
+    .line 302
+    const-string v3, "onSecondaryFixedVariant="
+
+    .line 303
+    .line 304
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 305
+    .line 306
+    .line 307
+    iget-wide v1, p0, Lfu0;->R:J
+
+    .line 308
+    .line 309
+    const-string v3, "tertiaryFixed="
+
+    .line 310
+    .line 311
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 312
+    .line 313
+    .line 314
+    iget-wide v1, p0, Lfu0;->S:J
+
+    .line 315
+    .line 316
+    const-string v3, "tertiaryFixedDim="
+
+    .line 317
+    .line 318
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 319
+    .line 320
+    .line 321
+    iget-wide v1, p0, Lfu0;->T:J
+
+    .line 322
+    .line 323
+    const-string v3, "onTertiaryFixed="
+
+    .line 324
+    .line 325
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 326
+    .line 327
+    .line 328
+    iget-wide v1, p0, Lfu0;->U:J
+
+    .line 329
+    .line 330
+    const-string v3, "onTertiaryFixedVariant="
+
+    .line 331
+    .line 332
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 333
+    .line 334
+    .line 335
+    iget-wide v1, p0, Lfu0;->V:J
+
+    .line 336
+    .line 337
+    invoke-static {v1, v2}, Lau0;->i(J)Ljava/lang/String;
+
+    .line 338
+    .line 339
+    .line 340
     move-result-object p0
 
-    .line 30
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    .line 341
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 31
-    .line 32
-    .line 33
-    throw v0
-.end method
+    .line 342
+    .line 343
+    .line 344
+    const/16 p0, 0x29
 
-.method public static final l(I)Ljava/lang/Void;
-    .locals 3
+    .line 345
+    .line 346
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 1
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    .line 347
+    .line 348
+    .line 349
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 2
-    .line 3
-    const-string v1, "Can\'t represent a size of "
-
-    .line 4
-    .line 5
-    const-string v2, " in Constraints"
-
-    .line 6
-    .line 7
-    invoke-static {v1, p0, v2}, Lea0;->p(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
-
-    .line 8
-    .line 9
-    .line 10
+    .line 350
+    .line 351
+    .line 352
     move-result-object p0
 
-    .line 11
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    throw v0
+    .line 353
+    return-object p0
 .end method

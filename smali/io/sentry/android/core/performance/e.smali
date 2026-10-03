@@ -1,15 +1,15 @@
 .class public final synthetic Lio/sentry/android/core/performance/e;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
 
-.field public final synthetic R:Lio/sentry/android/core/performance/g;
+.field public final synthetic Y:Lio/sentry/android/core/performance/g;
 
 
 # direct methods
@@ -17,11 +17,11 @@
     .locals 0
 
     .line 1
-    iput p2, p0, Lio/sentry/android/core/performance/e;->Q:I
+    iput p2, p0, Lio/sentry/android/core/performance/e;->X:I
 
     .line 2
     .line 3
-    iput-object p1, p0, Lio/sentry/android/core/performance/e;->R:Lio/sentry/android/core/performance/g;
+    iput-object p1, p0, Lio/sentry/android/core/performance/e;->Y:Lio/sentry/android/core/performance/g;
 
     .line 4
     .line 5
@@ -36,14 +36,14 @@
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 1
 
     .line 1
-    iget v0, p0, Lio/sentry/android/core/performance/e;->Q:I
+    iget v0, p0, Lio/sentry/android/core/performance/e;->X:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/sentry/android/core/performance/e;->R:Lio/sentry/android/core/performance/g;
+    iget-object p0, p0, Lio/sentry/android/core/performance/e;->Y:Lio/sentry/android/core/performance/g;
 
     .line 4
     .line 5
@@ -52,50 +52,28 @@
     .line 6
     .line 7
     .line 8
-    iget-object v0, v1, Lio/sentry/android/core/performance/g;->f0:Ljava/util/concurrent/atomic/AtomicBoolean;
+    invoke-virtual {p0}, Lio/sentry/android/core/performance/g;->e()V
 
     .line 9
     .line 10
-    const/4 v2, 0x0
-
     .line 11
-    invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    return-void
 
     .line 12
+    :pswitch_0
+    invoke-virtual {p0}, Lio/sentry/android/core/performance/g;->e()V
+
     .line 13
     .line 14
-    invoke-virtual {v1}, Lio/sentry/android/core/performance/g;->d()V
-
     .line 15
+    return-void
+
     .line 16
-    .line 17
-    return-void
-
-    .line 18
-    :pswitch_0
-    invoke-virtual {v1}, Lio/sentry/android/core/performance/g;->e()V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
-
-    .line 22
-    :pswitch_1
-    invoke-virtual {v1}, Lio/sentry/android/core/performance/g;->e()V
-
-    .line 23
-    .line 24
-    .line 25
-    return-void
-
-    .line 26
     nop
 
-    .line 27
+    .line 17
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

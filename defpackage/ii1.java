@@ -1,7 +1,20 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ii1 extends mi1 {
-    public static final ii1 a = new ii1();
+import java.util.ArrayList;
+
+/* loaded from: classes.dex */
+public final class ii1 implements ji2 {
+    public final /* synthetic */ int X;
+    public final ArrayList Y;
+
+    public /* synthetic */ ii1(int i, ArrayList arrayList) {
+        this.X = i;
+        this.Y = arrayList;
+    }
+
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        int i = this.X;
+        return this.Y;
+    }
 }

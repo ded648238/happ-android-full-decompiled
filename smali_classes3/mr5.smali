@@ -1,130 +1,82 @@
-.class public final Lmr5;
+.class public abstract Lmr5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lvr5;
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
+# static fields
+.field public static connect_to:I = 0x7f030000
 
+.field public static flows:I = 0x7f030001
 
-# direct methods
-.method public synthetic constructor <init>(Ljava/lang/String;)V
-    .locals 0
+.field public static font_size_entries:I = 0x7f030002
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.field public static fragment_packets_pref:I = 0x7f030003
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lmr5;->a:Ljava/lang/String;
+.field public static fragment_type:I = 0x7f030004
 
-    .line 5
-    .line 6
-    return-void
-.end method
+.field public static fragment_type_pref:I = 0x7f030005
 
+.field public static header_type_kcp_and_quic:I = 0x7f030006
 
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
+.field public static header_type_tcp:I = 0x7f030007
 
-    .line 1
-    instance-of v0, p1, Lmr5;
+.field public static inbound_authorization_modes:I = 0x7f030008
 
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
+.field public static language_select:I = 0x7f030009
 
-    .line 4
-    .line 5
-    goto :goto_0
+.field public static language_select_value:I = 0x7f03000a
 
-    .line 6
-    :cond_0
-    check-cast p1, Lmr5;
+.field public static mode_entries:I = 0x7f03000b
 
-    .line 7
-    .line 8
-    iget-object p1, p1, Lmr5;->a:Ljava/lang/String;
+.field public static mode_type_grpc:I = 0x7f03000c
 
-    .line 9
-    .line 10
-    iget-object v0, p0, Lmr5;->a:Ljava/lang/String;
+.field public static mode_value:I = 0x7f03000d
 
-    .line 11
-    .line 12
-    invoke-static {v0, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+.field public static mux_xudp_quic_value:I = 0x7f03000e
 
-    .line 13
-    .line 14
-    .line 15
-    move-result p1
+.field public static networks:I = 0x7f03000f
 
-    .line 16
-    if-nez p1, :cond_1
+.field public static noises_type_pref:I = 0x7f030010
 
-    .line 17
-    .line 18
-    :goto_0
-    const/4 p1, 0x0
+.field public static observatory_type:I = 0x7f030011
 
-    .line 19
-    return p1
+.field public static ping_mode:I = 0x7f030012
 
-    .line 20
-    :cond_1
-    const/4 p1, 0x1
+.field public static ping_result:I = 0x7f030013
 
-    .line 21
-    return p1
-.end method
+.field public static ping_type:I = 0x7f030014
 
-.method public final hashCode()I
-    .locals 1
+.field public static pref_ip_type:I = 0x7f030015
 
-    .line 1
-    iget-object v0, p0, Lmr5;->a:Ljava/lang/String;
+.field public static pref_ip_type_values:I = 0x7f030016
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+.field public static protocols:I = 0x7f030017
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+.field public static routing_activity_order_routing_values:I = 0x7f030018
 
-    .line 7
-    return v0
-.end method
+.field public static routing_domain_strategy:I = 0x7f030019
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.field public static routing_tag:I = 0x7f03001a
 
-    .line 1
-    const-string v0, "DetailsClick(id="
+.field public static securitys:I = 0x7f03001b
 
-    .line 2
-    .line 3
-    const-string v1, ")"
+.field public static settings_profile_custom_ua:I = 0x7f03001c
 
-    .line 4
-    .line 5
-    iget-object v2, p0, Lmr5;->a:Ljava/lang/String;
+.field public static ss_securitys:I = 0x7f03001d
 
-    .line 6
-    .line 7
-    invoke-static {v0, v2, v1}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.field public static streamsecurity_alpn:I = 0x7f03001e
 
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
+.field public static streamsecurity_utls:I = 0x7f03001f
 
-    .line 11
-    return-object v0
-.end method
+.field public static streamsecurityxs:I = 0x7f030020
+
+.field public static streamsecurityxs_hysteria:I = 0x7f030021
+
+.field public static subscription_config_sort_type:I = 0x7f030022
+
+.field public static subscription_config_sort_type_value:I = 0x7f030023
+
+.field public static ui_mode_night:I = 0x7f030024
+
+.field public static ui_mode_night_value:I = 0x7f030025
+
+.field public static xhttp_mode:I = 0x7f030026

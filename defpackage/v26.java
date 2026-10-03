@@ -1,12 +1,29 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class v26 {
-    public static final n36 a = new n36("SelectionHandleInfo");
+import su.happ.proxyutility.feature.report.ReportActivity;
 
-    public static final long a(long j) {
-        float fIntBitsToFloat = Float.intBitsToFloat((int) (j >> 32));
-        return (((long) Float.floatToRawIntBits(Float.intBitsToFloat((int) (j & 4294967295L)) - 1.0f)) & 4294967295L) | (Float.floatToRawIntBits(fIntBitsToFloat) << 32);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class v26 implements ji2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ ReportActivity Y;
+
+    public /* synthetic */ v26(ReportActivity reportActivity, int i) {
+        this.X = i;
+        this.Y = reportActivity;
+    }
+
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        int i = this.X;
+        ReportActivity reportActivity = this.Y;
+        switch (i) {
+            case 0:
+                return reportActivity.a();
+            case 1:
+                return reportActivity.c();
+            default:
+                return reportActivity.b();
+        }
     }
 }

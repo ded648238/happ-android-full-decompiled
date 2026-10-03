@@ -1,32 +1,12 @@
 .class public abstract Lc77;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lqw0;
+.super Lft;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final Q:Lb77;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
+# virtual methods
+.method public final o(Lf58;)Lt11;
+    .locals 0
 
     .line 1
-    new-instance v0, Lb77;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lc77;->Q:Lb77;
-
-    .line 7
-    .line 8
-    return-void
+    return-object p0
 .end method

@@ -1,55 +1,101 @@
-.class public final Ljb;
+.class public final synthetic Ljb;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/util/concurrent/Executor;
 
 
 # instance fields
-.field public final a:Lg36;
+.field public final synthetic X:I
 
-.field public final b:I
-
-.field public final c:I
-
-.field public final d:I
-
-.field public final e:I
-
-.field public final f:J
+.field public final synthetic Y:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lg36;IIIIJ)V
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p1, p0, Ljb;->X:I
 
     .line 2
     .line 3
+    iput-object p2, p0, Ljb;->Y:Ljava/lang/Object;
+
     .line 4
-    iput-object p1, p0, Ljb;->a:Lg36;
-
     .line 5
-    .line 6
-    iput p2, p0, Ljb;->b:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
     .line 7
     .line 8
-    iput p3, p0, Ljb;->c:I
+    return-void
+.end method
+
+
+# virtual methods
+.method public final execute(Ljava/lang/Runnable;)V
+    .locals 3
+
+    .line 1
+    iget v0, p0, Ljb;->X:I
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Ljb;->Y:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    packed-switch v0, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    check-cast p0, Lfe8;
 
     .line 9
     .line 10
-    iput p4, p0, Ljb;->d:I
+    iget-object v0, p0, Lfe8;->c:Lcr6;
 
     .line 11
     .line 12
-    iput p5, p0, Ljb;->e:I
+    new-instance v1, Ls44;
 
     .line 13
     .line 14
-    iput-wide p6, p0, Ljb;->f:J
+    const/16 v2, 0x13
 
     .line 15
     .line 16
+    invoke-direct {v1, v2, p0, p1}, Ls44;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v0, v1}, Lcr6;->execute(Ljava/lang/Runnable;)V
+
+    .line 20
+    .line 21
+    .line 22
     return-void
+
+    .line 23
+    :pswitch_0
+    check-cast p0, Landroidx/compose/ui/platform/AndroidComposeView;
+
+    .line 24
+    .line 25
+    invoke-virtual {p0, p1}, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-void
+
+    .line 29
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,24 +1,45 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum vp1 implements u01 {
-    /* JADX INFO: Fake field, exist only in values array */
-    READ_ENUM_KEYS_USING_INDEX,
-    WRITE_ENUMS_TO_LOWERCASE;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class vp1 implements Comparable {
+    public final float X;
 
-    public final int Q = 1 << ordinal();
-
-    vp1() {
+    public static int a(float f, float f2) {
+        if (Float.isNaN(f) || Float.isNaN(f2)) {
+            return 0;
+        }
+        return Float.compare(f, f2);
     }
 
-    @Override // defpackage.rv2
-    public final boolean a(int i) {
-        return (i & this.Q) != 0;
+    public static final boolean b(float f, float f2) {
+        return Float.compare(f, f2) == 0;
     }
 
-    @Override // defpackage.u01
-    public final int b() {
-        return 0;
+    public static String c(float f) {
+        if (Float.isNaN(f)) {
+            return "Dp.Unspecified";
+        }
+        return f + ".dp";
+    }
+
+    @Override // java.lang.Comparable
+    public final int compareTo(Object obj) {
+        return a(this.X, ((vp1) obj).X);
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof vp1) {
+            return Float.compare(this.X, ((vp1) obj).X) == 0;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Float.hashCode(this.X);
+    }
+
+    public final String toString() {
+        return c(this.X);
     }
 }

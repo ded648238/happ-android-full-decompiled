@@ -1,31 +1,92 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class z25 {
-    public static final z25 Q;
-    public static final z25 R;
-    public static final /* synthetic */ z25[] S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class z25 implements o61 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ yt6 Y;
 
-    /* JADX INFO: Fake field, exist only in values array */
-    z25 EF0;
-
-    static {
-        z25 z25Var = new z25("PRETTY", 0);
-        z25 z25Var2 = new z25("DEBUG", 1);
-        Q = z25Var2;
-        z25 z25Var3 = new z25("NONE", 2);
-        R = z25Var3;
-        S = new z25[]{z25Var, z25Var2, z25Var3};
+    public /* synthetic */ z25(yt6 yt6Var, int i) {
+        this.X = i;
+        this.Y = yt6Var;
     }
 
-    public static z25 valueOf(String str) {
-        return (z25) Enum.valueOf(z25.class, str);
+    @Override // defpackage.o61
+    public final boolean a() {
+        int i = this.X;
+        yt6 yt6Var = this.Y;
+        switch (i) {
+            case 0:
+                return yt6Var.a(yt6Var.Y.h0);
+            case 1:
+                return yt6Var.a(yt6Var.Y.g0);
+            case 2:
+                return yt6Var.a(yt6Var.Y.f0);
+            case 3:
+                return yt6Var.a(yt6Var.Y.d0);
+            default:
+                return yt6Var.a(yt6Var.Y.e0);
+        }
     }
 
-    public static z25[] values() {
-        return (z25[]) S.clone();
+    @Override // defpackage.o61
+    public final boolean b() {
+        int i = this.X;
+        yt6 yt6Var = this.Y;
+        switch (i) {
+            case 0:
+                vt6 vt6Var = (vt6) yt6Var.Z.X0.getValue();
+                return vt6Var.a(vt6Var.Y.k0);
+            case 1:
+                return yt6Var.a(yt6Var.Y.h0);
+            case 2:
+                wg2 wg2Var = yt6Var.Y;
+                if (wg2Var.g0.getVisibility() == 0) {
+                    return yt6Var.a(wg2Var.g0);
+                }
+                vt6 vt6Var2 = (vt6) yt6Var.Z.X0.getValue();
+                return vt6Var2.a(vt6Var2.Y.k0);
+            case 3:
+                return yt6Var.a(yt6Var.Y.f0);
+            default:
+                return yt6Var.a(yt6Var.Y.d0);
+        }
+    }
+
+    @Override // defpackage.o61
+    public final boolean d() {
+        int i = this.X;
+        yt6 yt6Var = this.Y;
+        switch (i) {
+            case 0:
+                return yt6Var.a(yt6Var.Y.g0);
+            case 1:
+                return yt6Var.a(yt6Var.Y.f0);
+            case 2:
+                return yt6Var.a(yt6Var.Y.d0);
+            case 3:
+                return yt6Var.a(yt6Var.Y.e0);
+            default:
+                ut6 ut6Var = (ut6) yt6Var.Z.Z0.getValue();
+                return ut6Var.a(ut6Var.Y.Z);
+        }
+    }
+
+    @Override // defpackage.o61
+    public final boolean f() {
+        int i = this.X;
+        yt6 yt6Var = this.Y;
+        switch (i) {
+            case 0:
+                return yt6Var.a(yt6Var.Y.h0);
+            case 1:
+                return yt6Var.a(yt6Var.Y.g0);
+            case 2:
+                return yt6Var.a(yt6Var.Y.f0);
+            case 3:
+                return yt6Var.a(yt6Var.Y.d0);
+            default:
+                return yt6Var.a(yt6Var.Y.e0);
+        }
     }
 }

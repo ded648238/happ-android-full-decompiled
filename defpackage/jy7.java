@@ -1,52 +1,32 @@
 package defpackage;
 
-import java.util.ArrayList;
-import org.conscrypt.PSKKeyManager;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class jy7 {
+    public static final long a = or4.d(16.0f, 8.0f);
+    public static final float b = 200.0f;
+    public static final float c = 320.0f;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class jy7 {
-    public final op4 a;
-    public final boolean b;
-    public final String c;
-    public final long d;
-    public final long e;
-    public final long f;
-    public final int g;
-    public final long h;
-    public final int i;
-    public final int j;
-    public final Long k;
-    public final Long l;
-    public final Long m;
-    public final Integer n;
-    public final Integer o;
-    public final Integer p;
-    public final ArrayList q;
-
-    public /* synthetic */ jy7(op4 op4Var, boolean z, String str, long j, long j2, long j3, int i, long j4, int i2, int i3, Long l, Long l2, Long l3, int i4) {
-        this(op4Var, z, (i4 & 4) != 0 ? "" : str, (i4 & 8) != 0 ? -1L : j, (i4 & 16) != 0 ? -1L : j2, (i4 & 32) != 0 ? -1L : j3, (i4 & 64) != 0 ? -1 : i, (i4 & 128) != 0 ? -1L : j4, (i4 & PSKKeyManager.MAX_KEY_LENGTH_BYTES) != 0 ? -1 : i2, (i4 & 512) != 0 ? -1 : i3, (i4 & 1024) != 0 ? null : l, (i4 & 2048) != 0 ? null : l2, (i4 & 4096) != 0 ? null : l3, null, null, null);
-    }
-
-    public jy7(op4 op4Var, boolean z, String str, long j, long j2, long j3, int i, long j4, int i2, int i3, Long l, Long l2, Long l3, Integer num, Integer num2, Integer num3) {
-        op4Var.getClass();
-        str.getClass();
-        this.a = op4Var;
-        this.b = z;
-        this.c = str;
-        this.d = j;
-        this.e = j2;
-        this.f = j3;
-        this.g = i;
-        this.h = j4;
-        this.i = i2;
-        this.j = i3;
-        this.k = l;
-        this.l = l2;
-        this.m = l3;
-        this.n = num;
-        this.o = num2;
-        this.p = num3;
-        this.q = new ArrayList();
+    public static qy7 a(rk2 rk2Var, int i, int i2) {
+        float f;
+        if ((i2 & 2) != 0) {
+            o55 o55Var = oy7.a;
+            f = 4.0f;
+        } else {
+            f = 16.0f;
+        }
+        int v0 = ((af1) rk2Var.j(vy0.h)).v0(f);
+        boolean d = rk2Var.d(v0);
+        boolean z = true;
+        if ((((i & 14) ^ 6) <= 4 || !rk2Var.d(1)) && (i & 6) != 4) {
+            z = false;
+        }
+        boolean z2 = d | z;
+        Object K = rk2Var.K();
+        if (z2 || K == xx0.a) {
+            K = new qy7(v0);
+            rk2Var.g0(K);
+        }
+        return (qy7) K;
     }
 }

@@ -1,6 +1,6 @@
 .class public final Lj$/time/LocalDate;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lj$/time/temporal/l;
@@ -117,7 +117,899 @@
     return-void
 .end method
 
-.method public static H(III)Lj$/time/LocalDate;
+.method public static C(Lj$/time/temporal/TemporalAccessor;)Lj$/time/LocalDate;
+    .locals 3
+
+    .line 1
+    const-string v0, "temporal"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, Lj$/time/temporal/p;->f:Lj$/time/e;
+
+    .line 7
+    .line 8
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->d(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    check-cast v0, Lj$/time/LocalDate;
+
+    .line 13
+    .line 14
+    if-eqz v0, :cond_0
+
+    .line 15
+    .line 16
+    return-object v0
+
+    .line 17
+    :cond_0
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    const-string v1, "Unable to obtain LocalDate from TemporalAccessor: "
+
+    .line 26
+    .line 27
+    const-string v2, " of type "
+
+    .line 28
+    .line 29
+    invoke-static {v1, p0, v2, v0}, Lj$/time/g;->f(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 30
+    .line 31
+    .line 32
+    const/4 p0, 0x0
+
+    .line 33
+    return-object p0
+.end method
+
+.method public static R(Lj$/time/a;)Lj$/time/LocalDate;
+    .locals 4
+
+    .line 1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    invoke-static {v0, v1}, Lj$/time/Instant;->ofEpochMilli(J)Lj$/time/Instant;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget-object p0, p0, Lj$/time/a;->a:Lj$/time/ZoneId;
+
+    .line 10
+    .line 11
+    const-string v1, "instant"
+
+    .line 12
+    .line 13
+    invoke-static {v0, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v1, "zone"
+
+    .line 17
+    .line 18
+    invoke-static {p0, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {p0}, Lj$/time/ZoneId;->getRules()Lj$/time/zone/ZoneRules;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p0
+
+    .line 25
+    invoke-virtual {p0, v0}, Lj$/time/zone/ZoneRules;->d(Lj$/time/Instant;)Lj$/time/ZoneOffset;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p0
+
+    .line 29
+    invoke-virtual {v0}, Lj$/time/Instant;->getEpochSecond()J
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-wide v0
+
+    .line 33
+    invoke-virtual {p0}, Lj$/time/ZoneOffset;->getTotalSeconds()I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p0
+
+    .line 37
+    int-to-long v2, p0
+
+    .line 38
+    add-long/2addr v0, v2
+
+    .line 39
+    const-wide/32 v2, 0x15180
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->floorDiv(JJ)J
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-wide v0
+
+    .line 46
+    invoke-static {v0, v1}, Lj$/time/LocalDate;->ofEpochDay(J)Lj$/time/LocalDate;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p0
+
+    .line 50
+    return-object p0
+.end method
+
+.method public static S(II)Lj$/time/LocalDate;
+    .locals 5
+
+    .line 1
+    sget-object v0, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
+
+    .line 2
+    .line 3
+    int-to-long v1, p0
+
+    .line 4
+    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->Q(J)V
+
+    .line 5
+    .line 6
+    .line 7
+    sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_YEAR:Lj$/time/temporal/ChronoField;
+
+    .line 8
+    .line 9
+    int-to-long v3, p1
+
+    .line 10
+    invoke-virtual {v0, v3, v4}, Lj$/time/temporal/ChronoField;->Q(J)V
+
+    .line 11
+    .line 12
+    .line 13
+    sget-object v0, Lj$/time/chrono/r;->c:Lj$/time/chrono/r;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-static {v1, v2}, Lj$/time/chrono/r;->Q(J)Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    const/16 v1, 0x16e
+
+    .line 23
+    .line 24
+    if-ne p1, v1, :cond_1
+
+    .line 25
+    .line 26
+    if-eqz v0, :cond_0
+
+    .line 27
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_0
+    const-string p1, "Invalid date \'DayOfYear 366\' as \'"
+
+    .line 30
+    .line 31
+    const-string v0, "\' is not a leap year"
+
+    .line 32
+    .line 33
+    invoke-static {p1, p0, v0}, Lj$/time/g;->c(Ljava/lang/String;ILjava/lang/Object;)V
+
+    .line 34
+    .line 35
+    .line 36
+    const/4 p0, 0x0
+
+    .line 37
+    return-object p0
+
+    .line 38
+    :cond_1
+    :goto_0
+    add-int/lit8 v1, p1, -0x1
+
+    .line 39
+    .line 40
+    div-int/lit8 v1, v1, 0x1f
+
+    .line 41
+    .line 42
+    add-int/lit8 v1, v1, 0x1
+
+    .line 43
+    .line 44
+    invoke-static {v1}, Lj$/time/Month;->F(I)Lj$/time/Month;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v1
+
+    .line 48
+    invoke-virtual {v1, v0}, Lj$/time/Month;->t(Z)I
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v2
+
+    .line 52
+    invoke-virtual {v1, v0}, Lj$/time/Month;->x(Z)I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v3
+
+    .line 56
+    add-int/2addr v3, v2
+
+    .line 57
+    add-int/lit8 v3, v3, -0x1
+
+    .line 58
+    .line 59
+    if-le p1, v3, :cond_2
+
+    .line 60
+    .line 61
+    sget-object v2, Lj$/time/Month;->a:[Lj$/time/Month;
+
+    .line 62
+    .line 63
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v1
+
+    .line 67
+    add-int/lit8 v1, v1, 0xd
+
+    .line 68
+    .line 69
+    rem-int/lit8 v1, v1, 0xc
+
+    .line 70
+    .line 71
+    aget-object v1, v2, v1
+
+    .line 72
+    .line 73
+    :cond_2
+    invoke-virtual {v1, v0}, Lj$/time/Month;->t(Z)I
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v0
+
+    .line 77
+    sub-int/2addr p1, v0
+
+    .line 78
+    add-int/lit8 p1, p1, 0x1
+
+    .line 79
+    .line 80
+    new-instance v0, Lj$/time/LocalDate;
+
+    .line 81
+    .line 82
+    invoke-virtual {v1}, Lj$/time/Month;->getValue()I
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v1
+
+    .line 86
+    invoke-direct {v0, p0, v1, p1}, Lj$/time/LocalDate;-><init>(III)V
+
+    .line 87
+    .line 88
+    .line 89
+    return-object v0
+.end method
+
+.method public static Y(III)Lj$/time/LocalDate;
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    if-eq p1, v0, :cond_1
+
+    .line 3
+    .line 4
+    const/4 v0, 0x4
+
+    .line 5
+    if-eq p1, v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x6
+
+    .line 8
+    if-eq p1, v0, :cond_0
+
+    .line 9
+    .line 10
+    const/16 v0, 0x9
+
+    .line 11
+    .line 12
+    if-eq p1, v0, :cond_0
+
+    .line 13
+    .line 14
+    const/16 v0, 0xb
+
+    .line 15
+    .line 16
+    if-eq p1, v0, :cond_0
+
+    .line 17
+    .line 18
+    goto :goto_1
+
+    .line 19
+    :cond_0
+    const/16 v0, 0x1e
+
+    .line 20
+    .line 21
+    invoke-static {p2, v0}, Ljava/lang/Math;->min(II)I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p2
+
+    .line 25
+    goto :goto_1
+
+    .line 26
+    :cond_1
+    sget-object v0, Lj$/time/chrono/r;->c:Lj$/time/chrono/r;
+
+    .line 27
+    .line 28
+    int-to-long v1, p0
+
+    .line 29
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-static {v1, v2}, Lj$/time/chrono/r;->Q(J)Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v0
+
+    .line 36
+    if-eqz v0, :cond_2
+
+    .line 37
+    .line 38
+    const/16 v0, 0x1d
+
+    .line 39
+    .line 40
+    goto :goto_0
+
+    .line 41
+    :cond_2
+    const/16 v0, 0x1c
+
+    .line 42
+    .line 43
+    :goto_0
+    invoke-static {p2, v0}, Ljava/lang/Math;->min(II)I
+
+    .line 44
+    .line 45
+    .line 46
+    move-result p2
+
+    .line 47
+    :goto_1
+    new-instance v0, Lj$/time/LocalDate;
+
+    .line 48
+    .line 49
+    invoke-direct {v0, p0, p1, p2}, Lj$/time/LocalDate;-><init>(III)V
+
+    .line 50
+    .line 51
+    .line 52
+    return-object v0
+.end method
+
+.method public static of(III)Lj$/time/LocalDate;
+    .locals 3
+
+    .line 1
+    sget-object v0, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
+
+    .line 2
+    .line 3
+    int-to-long v1, p0
+
+    .line 4
+    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->Q(J)V
+
+    .line 5
+    .line 6
+    .line 7
+    sget-object v0, Lj$/time/temporal/ChronoField;->MONTH_OF_YEAR:Lj$/time/temporal/ChronoField;
+
+    .line 8
+    .line 9
+    int-to-long v1, p1
+
+    .line 10
+    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->Q(J)V
+
+    .line 11
+    .line 12
+    .line 13
+    sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_MONTH:Lj$/time/temporal/ChronoField;
+
+    .line 14
+    .line 15
+    int-to-long v1, p2
+
+    .line 16
+    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->Q(J)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-static {p0, p1, p2}, Lj$/time/LocalDate;->x(III)Lj$/time/LocalDate;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
+    return-object p0
+.end method
+
+.method public static ofEpochDay(J)Lj$/time/LocalDate;
+    .locals 23
+
+    .line 1
+    move-wide/from16 v0, p0
+
+    .line 2
+    .line 3
+    sget-object v2, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
+
+    .line 4
+    .line 5
+    invoke-virtual {v2, v0, v1}, Lj$/time/temporal/ChronoField;->Q(J)V
+
+    .line 6
+    .line 7
+    .line 8
+    const-wide/32 v2, 0xafa6c
+
+    .line 9
+    .line 10
+    .line 11
+    add-long/2addr v2, v0
+
+    .line 12
+    const-wide/16 v4, 0x0
+
+    .line 13
+    .line 14
+    cmp-long v6, v2, v4
+
+    .line 15
+    .line 16
+    const-wide/16 v7, 0x1
+
+    .line 17
+    .line 18
+    const-wide/32 v9, 0x23ab1
+
+    .line 19
+    .line 20
+    .line 21
+    const-wide/16 v11, 0x190
+
+    .line 22
+    .line 23
+    if-gez v6, :cond_0
+
+    .line 24
+    .line 25
+    const-wide/32 v13, 0xafa6d
+
+    .line 26
+    .line 27
+    .line 28
+    add-long/2addr v0, v13
+
+    .line 29
+    div-long/2addr v0, v9
+
+    .line 30
+    sub-long/2addr v0, v7
+
+    .line 31
+    mul-long v13, v0, v11
+
+    .line 32
+    .line 33
+    neg-long v0, v0
+
+    .line 34
+    mul-long/2addr v0, v9
+
+    .line 35
+    add-long/2addr v2, v0
+
+    .line 36
+    goto :goto_0
+
+    .line 37
+    :cond_0
+    move-wide v13, v4
+
+    .line 38
+    :goto_0
+    mul-long v0, v2, v11
+
+    .line 39
+    .line 40
+    const-wide/16 v15, 0x24f
+
+    .line 41
+    .line 42
+    add-long/2addr v0, v15
+
+    .line 43
+    div-long/2addr v0, v9
+
+    .line 44
+    const-wide/16 v9, 0x16d
+
+    .line 45
+    .line 46
+    mul-long v15, v0, v9
+
+    .line 47
+    .line 48
+    const-wide/16 v17, 0x4
+
+    .line 49
+    .line 50
+    div-long v19, v0, v17
+
+    .line 51
+    .line 52
+    add-long v19, v19, v15
+
+    .line 53
+    .line 54
+    const-wide/16 v15, 0x64
+
+    .line 55
+    .line 56
+    div-long v21, v0, v15
+
+    .line 57
+    .line 58
+    sub-long v19, v19, v21
+
+    .line 59
+    .line 60
+    div-long v21, v0, v11
+
+    .line 61
+    .line 62
+    add-long v21, v21, v19
+
+    .line 63
+    .line 64
+    sub-long v19, v2, v21
+
+    .line 65
+    .line 66
+    cmp-long v4, v19, v4
+
+    .line 67
+    .line 68
+    if-gez v4, :cond_1
+
+    .line 69
+    .line 70
+    sub-long/2addr v0, v7
+
+    .line 71
+    mul-long/2addr v9, v0
+
+    .line 72
+    div-long v4, v0, v17
+
+    .line 73
+    .line 74
+    add-long/2addr v4, v9
+
+    .line 75
+    div-long v6, v0, v15
+
+    .line 76
+    .line 77
+    sub-long/2addr v4, v6
+
+    .line 78
+    div-long v6, v0, v11
+
+    .line 79
+    .line 80
+    add-long/2addr v6, v4
+
+    .line 81
+    sub-long v19, v2, v6
+
+    .line 82
+    .line 83
+    :cond_1
+    move-wide/from16 v2, v19
+
+    .line 84
+    .line 85
+    add-long/2addr v0, v13
+
+    .line 86
+    long-to-int v2, v2
+
+    .line 87
+    mul-int/lit8 v3, v2, 0x5
+
+    .line 88
+    .line 89
+    add-int/lit8 v3, v3, 0x2
+
+    .line 90
+    .line 91
+    div-int/lit16 v3, v3, 0x99
+
+    .line 92
+    .line 93
+    add-int/lit8 v4, v3, 0x2
+
+    .line 94
+    .line 95
+    rem-int/lit8 v4, v4, 0xc
+
+    .line 96
+    .line 97
+    add-int/lit8 v4, v4, 0x1
+
+    .line 98
+    .line 99
+    mul-int/lit16 v5, v3, 0x132
+
+    .line 100
+    .line 101
+    add-int/lit8 v5, v5, 0x5
+
+    .line 102
+    .line 103
+    div-int/lit8 v5, v5, 0xa
+
+    .line 104
+    .line 105
+    sub-int/2addr v2, v5
+
+    .line 106
+    add-int/lit8 v2, v2, 0x1
+
+    .line 107
+    .line 108
+    div-int/lit8 v3, v3, 0xa
+
+    .line 109
+    .line 110
+    int-to-long v5, v3
+
+    .line 111
+    add-long/2addr v0, v5
+
+    .line 112
+    sget-object v3, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
+
+    .line 113
+    .line 114
+    iget-object v5, v3, Lj$/time/temporal/ChronoField;->b:Lj$/time/temporal/s;
+
+    .line 115
+    .line 116
+    invoke-virtual {v5, v0, v1, v3}, Lj$/time/temporal/s;->a(JLj$/time/temporal/TemporalField;)I
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v0
+
+    .line 120
+    new-instance v1, Lj$/time/LocalDate;
+
+    .line 121
+    .line 122
+    invoke-direct {v1, v0, v4, v2}, Lj$/time/LocalDate;-><init>(III)V
+
+    .line 123
+    .line 124
+    .line 125
+    return-object v1
+.end method
+
+.method public static parse(Ljava/lang/CharSequence;)Lj$/time/LocalDate;
+    .locals 3
+
+    .line 1
+    sget-object v0, Lj$/time/format/DateTimeFormatter;->ISO_LOCAL_DATE:Lj$/time/format/DateTimeFormatter;
+
+    .line 2
+    .line 3
+    const-string v1, "formatter"
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance v1, Lj$/time/e;
+
+    .line 9
+    .line 10
+    const/4 v2, 0x0
+
+    .line 11
+    invoke-direct {v1, v2}, Lj$/time/e;-><init>(I)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v0, p0, v1}, Lj$/time/format/DateTimeFormatter;->parse(Ljava/lang/CharSequence;Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
+
+    .line 18
+    check-cast p0, Lj$/time/LocalDate;
+
+    .line 19
+    .line 20
+    return-object p0
+.end method
+
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/io/InvalidObjectException;
+
+    .line 2
+    .line 3
+    const-string p1, "Deserialization via serialization delegate"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method private writeReplace()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lj$/time/m;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x3
+
+    .line 4
+    invoke-direct {v0, v1, p0}, Lj$/time/m;-><init>(BLjava/lang/Object;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-object v0
+.end method
+
+.method public static x(III)Lj$/time/LocalDate;
     .locals 5
 
     .line 1
@@ -198,7 +1090,7 @@
     .line 34
     .line 35
     .line 36
-    invoke-static {v3, v4}, Lj$/time/chrono/r;->G(J)Z
+    invoke-static {v3, v4}, Lj$/time/chrono/r;->Q(J)Z
 
     .line 37
     .line 38
@@ -210,1227 +1102,136 @@
 
     .line 41
     .line 42
-    const/16 v0, 0x1d
+    move v0, v2
 
     .line 43
-    .line 44
     :cond_2
     :goto_0
     if-le p2, v0, :cond_4
 
+    .line 44
     .line 45
-    .line 46
     if-ne p2, v2, :cond_3
 
+    .line 46
     .line 47
-    .line 48
     const-string p1, "Invalid date \'February 29\' as \'"
 
+    .line 48
     .line 49
-    .line 50
     const-string p2, "\' is not a leap year"
 
+    .line 50
     .line 51
-    .line 52
-    invoke-static {p1, p0, p2}, Lj$/time/f;->e(Ljava/lang/String;ILjava/lang/Object;)V
+    invoke-static {p1, p0, p2}, Lj$/time/g;->c(Ljava/lang/String;ILjava/lang/Object;)V
 
+    .line 52
     .line 53
     .line 54
-    .line 55
     const/4 p0, 0x0
 
-    .line 56
+    .line 55
     return-object p0
 
-    .line 57
+    .line 56
     :cond_3
     new-instance p0, Lj$/time/DateTimeException;
 
+    .line 57
     .line 58
-    .line 59
-    invoke-static {p1}, Lj$/time/Month;->J(I)Lj$/time/Month;
+    invoke-static {p1}, Lj$/time/Month;->F(I)Lj$/time/Month;
 
+    .line 59
     .line 60
     .line 61
-    .line 62
     move-result-object p1
 
-    .line 63
+    .line 62
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
+    .line 63
     .line 64
     .line 65
-    .line 66
     move-result-object p1
 
-    .line 67
+    .line 66
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 67
     .line 68
-    .line 69
     const-string v1, "Invalid date \'"
 
+    .line 69
     .line 70
-    .line 71
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 71
     .line 72
     .line 73
-    .line 74
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 74
     .line 75
     .line 76
-    .line 77
     const-string p1, " "
 
+    .line 77
     .line 78
-    .line 79
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 79
     .line 80
     .line 81
-    .line 82
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 82
     .line 83
     .line 84
-    .line 85
     const-string p1, "\'"
 
+    .line 85
     .line 86
-    .line 87
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 87
     .line 88
     .line 89
-    .line 90
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 90
     .line 91
     .line 92
-    .line 93
     move-result-object p1
 
-    .line 94
+    .line 93
     invoke-direct {p0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
+    .line 94
     .line 95
     .line 96
-    .line 97
     throw p0
 
-    .line 98
+    .line 97
     :cond_4
     new-instance v0, Lj$/time/LocalDate;
 
-    .line 99
-    .line 100
-    invoke-direct {v0, p0, p1, p2}, Lj$/time/LocalDate;-><init>(III)V
-
-    .line 101
-    .line 102
-    .line 103
-    return-object v0
-.end method
-
-.method public static I(Lj$/time/temporal/TemporalAccessor;)Lj$/time/LocalDate;
-    .locals 3
-
-    .line 1
-    const-string v0, "temporal"
-
-    .line 2
-    .line 3
-    invoke-static {p0, v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    sget-object v0, Lj$/time/temporal/p;->f:Lj$/time/e;
-
-    .line 7
-    .line 8
-    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->z(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    check-cast v0, Lj$/time/LocalDate;
-
-    .line 13
-    .line 14
-    if-eqz v0, :cond_0
-
-    .line 15
-    .line 16
-    return-object v0
-
-    .line 17
-    :cond_0
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    const-string v1, "Unable to obtain LocalDate from TemporalAccessor: "
-
-    .line 26
-    .line 27
-    const-string v2, " of type "
-
-    .line 28
-    .line 29
-    invoke-static {v1, p0, v2, v0}, Lj$/time/f;->g(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 30
-    .line 31
-    .line 32
-    const/4 p0, 0x0
-
-    .line 33
-    return-object p0
-.end method
-
-.method public static N(Lj$/time/a;)Lj$/time/LocalDate;
-    .locals 4
-
-    .line 1
-    const-string v0, "clock"
-
-    .line 2
-    .line 3
-    invoke-static {p0, v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-wide v0
-
-    .line 10
-    invoke-static {v0, v1}, Lj$/time/Instant;->ofEpochMilli(J)Lj$/time/Instant;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
-
-    .line 14
-    iget-object p0, p0, Lj$/time/a;->a:Lj$/time/ZoneId;
-
-    .line 15
-    .line 16
-    const-string v1, "instant"
-
-    .line 17
-    .line 18
-    invoke-static {v0, v1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 19
-    .line 20
-    .line 21
-    const-string v1, "zone"
-
-    .line 22
-    .line 23
-    invoke-static {p0, v1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    invoke-virtual {p0}, Lj$/time/ZoneId;->getRules()Lj$/time/zone/ZoneRules;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p0
-
-    .line 30
-    invoke-virtual {p0, v0}, Lj$/time/zone/ZoneRules;->d(Lj$/time/Instant;)Lj$/time/ZoneOffset;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object p0
-
-    .line 34
-    invoke-virtual {v0}, Lj$/time/Instant;->getEpochSecond()J
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-wide v0
-
-    .line 38
-    invoke-virtual {p0}, Lj$/time/ZoneOffset;->getTotalSeconds()I
-
-    .line 39
-    .line 40
-    .line 41
-    move-result p0
-
-    .line 42
-    int-to-long v2, p0
-
-    .line 43
-    add-long/2addr v0, v2
-
-    .line 44
-    const-wide/32 v2, 0x15180
-
-    .line 45
-    .line 46
-    .line 47
-    invoke-static {v0, v1, v2, v3}, Lj$/com/android/tools/r8/a;->B(JJ)J
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-wide v0
-
-    .line 51
-    invoke-static {v0, v1}, Lj$/time/LocalDate;->ofEpochDay(J)Lj$/time/LocalDate;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object p0
-
-    .line 55
-    return-object p0
-.end method
-
-.method public static O(II)Lj$/time/LocalDate;
-    .locals 5
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
-
-    .line 2
-    .line 3
-    int-to-long v1, p0
-
-    .line 4
-    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->z(J)V
-
-    .line 5
-    .line 6
-    .line 7
-    sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_YEAR:Lj$/time/temporal/ChronoField;
-
-    .line 8
-    .line 9
-    int-to-long v3, p1
-
-    .line 10
-    invoke-virtual {v0, v3, v4}, Lj$/time/temporal/ChronoField;->z(J)V
-
-    .line 11
-    .line 12
-    .line 13
-    sget-object v0, Lj$/time/chrono/r;->c:Lj$/time/chrono/r;
-
-    .line 14
-    .line 15
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-static {v1, v2}, Lj$/time/chrono/r;->G(J)Z
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v0
-
-    .line 22
-    const/16 v1, 0x16e
-
-    .line 23
-    .line 24
-    if-ne p1, v1, :cond_1
-
-    .line 25
-    .line 26
-    if-eqz v0, :cond_0
-
-    .line 27
-    .line 28
-    goto :goto_0
-
-    .line 29
-    :cond_0
-    const-string p1, "Invalid date \'DayOfYear 366\' as \'"
-
-    .line 30
-    .line 31
-    const-string v0, "\' is not a leap year"
-
-    .line 32
-    .line 33
-    invoke-static {p1, p0, v0}, Lj$/time/f;->e(Ljava/lang/String;ILjava/lang/Object;)V
-
-    .line 34
-    .line 35
-    .line 36
-    const/4 p0, 0x0
-
-    .line 37
-    return-object p0
-
-    .line 38
-    :cond_1
-    :goto_0
-    add-int/lit8 v1, p1, -0x1
-
-    .line 39
-    .line 40
-    div-int/lit8 v1, v1, 0x1f
-
-    .line 41
-    .line 42
-    add-int/lit8 v1, v1, 0x1
-
-    .line 43
-    .line 44
-    invoke-static {v1}, Lj$/time/Month;->J(I)Lj$/time/Month;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v1
-
-    .line 48
-    invoke-virtual {v1, v0}, Lj$/time/Month;->G(Z)I
-
-    .line 49
-    .line 50
-    .line 51
-    move-result v2
-
-    .line 52
-    invoke-virtual {v1, v0}, Lj$/time/Month;->H(Z)I
-
-    .line 53
-    .line 54
-    .line 55
-    move-result v3
-
-    .line 56
-    add-int/2addr v3, v2
-
-    .line 57
-    add-int/lit8 v3, v3, -0x1
-
-    .line 58
-    .line 59
-    if-le p1, v3, :cond_2
-
-    .line 60
-    .line 61
-    sget-object v2, Lj$/time/Month;->a:[Lj$/time/Month;
-
-    .line 62
-    .line 63
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 64
-    .line 65
-    .line 66
-    move-result v1
-
-    .line 67
-    add-int/lit8 v1, v1, 0xd
-
-    .line 68
-    .line 69
-    rem-int/lit8 v1, v1, 0xc
-
-    .line 70
-    .line 71
-    aget-object v1, v2, v1
-
-    .line 72
-    .line 73
-    :cond_2
-    invoke-virtual {v1, v0}, Lj$/time/Month;->G(Z)I
-
-    .line 74
-    .line 75
-    .line 76
-    move-result v0
-
-    .line 77
-    sub-int/2addr p1, v0
-
-    .line 78
-    add-int/lit8 p1, p1, 0x1
-
-    .line 79
-    .line 80
-    new-instance v0, Lj$/time/LocalDate;
-
-    .line 81
-    .line 82
-    invoke-virtual {v1}, Lj$/time/Month;->getValue()I
-
-    .line 83
-    .line 84
-    .line 85
-    move-result v1
-
-    .line 86
-    invoke-direct {v0, p0, v1, p1}, Lj$/time/LocalDate;-><init>(III)V
-
-    .line 87
-    .line 88
-    .line 89
-    return-object v0
-.end method
-
-.method public static U(III)Lj$/time/LocalDate;
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    if-eq p1, v0, :cond_1
-
-    .line 3
-    .line 4
-    const/4 v0, 0x4
-
-    .line 5
-    if-eq p1, v0, :cond_0
-
-    .line 6
-    .line 7
-    const/4 v0, 0x6
-
-    .line 8
-    if-eq p1, v0, :cond_0
-
-    .line 9
-    .line 10
-    const/16 v0, 0x9
-
-    .line 11
-    .line 12
-    if-eq p1, v0, :cond_0
-
-    .line 13
-    .line 14
-    const/16 v0, 0xb
-
-    .line 15
-    .line 16
-    if-eq p1, v0, :cond_0
-
-    .line 17
-    .line 18
-    goto :goto_1
-
-    .line 19
-    :cond_0
-    const/16 v0, 0x1e
-
-    .line 20
-    .line 21
-    invoke-static {p2, v0}, Ljava/lang/Math;->min(II)I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result p2
-
-    .line 25
-    goto :goto_1
-
-    .line 26
-    :cond_1
-    sget-object v0, Lj$/time/chrono/r;->c:Lj$/time/chrono/r;
-
-    .line 27
-    .line 28
-    int-to-long v1, p0
-
-    .line 29
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-static {v1, v2}, Lj$/time/chrono/r;->G(J)Z
-
-    .line 33
-    .line 34
-    .line 35
-    move-result v0
-
-    .line 36
-    if-eqz v0, :cond_2
-
-    .line 37
-    .line 38
-    const/16 v0, 0x1d
-
-    .line 39
-    .line 40
-    goto :goto_0
-
-    .line 41
-    :cond_2
-    const/16 v0, 0x1c
-
-    .line 42
-    .line 43
-    :goto_0
-    invoke-static {p2, v0}, Ljava/lang/Math;->min(II)I
-
-    .line 44
-    .line 45
-    .line 46
-    move-result p2
-
-    .line 47
-    :goto_1
-    new-instance v0, Lj$/time/LocalDate;
-
-    .line 48
-    .line 49
-    invoke-direct {v0, p0, p1, p2}, Lj$/time/LocalDate;-><init>(III)V
-
-    .line 50
-    .line 51
-    .line 52
-    return-object v0
-.end method
-
-.method public static of(III)Lj$/time/LocalDate;
-    .locals 3
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
-
-    .line 2
-    .line 3
-    int-to-long v1, p0
-
-    .line 4
-    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->z(J)V
-
-    .line 5
-    .line 6
-    .line 7
-    sget-object v0, Lj$/time/temporal/ChronoField;->MONTH_OF_YEAR:Lj$/time/temporal/ChronoField;
-
-    .line 8
-    .line 9
-    int-to-long v1, p1
-
-    .line 10
-    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->z(J)V
-
-    .line 11
-    .line 12
-    .line 13
-    sget-object v0, Lj$/time/temporal/ChronoField;->DAY_OF_MONTH:Lj$/time/temporal/ChronoField;
-
-    .line 14
-    .line 15
-    int-to-long v1, p2
-
-    .line 16
-    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->z(J)V
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-static {p0, p1, p2}, Lj$/time/LocalDate;->H(III)Lj$/time/LocalDate;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p0
-
-    .line 23
-    return-object p0
-.end method
-
-.method public static ofEpochDay(J)Lj$/time/LocalDate;
-    .locals 22
-
-    .line 1
-    move-wide/from16 v0, p0
-
-    .line 2
-    .line 3
-    sget-object v2, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
-
-    .line 4
-    .line 5
-    invoke-virtual {v2, v0, v1}, Lj$/time/temporal/ChronoField;->z(J)V
-
-    .line 6
-    .line 7
-    .line 8
-    const-wide/32 v2, 0xafa6c
-
-    .line 9
-    .line 10
-    .line 11
-    add-long/2addr v2, v0
-
-    .line 12
-    const-wide/16 v4, 0x1
-
-    .line 13
-    .line 14
-    const-wide/32 v6, 0x23ab1
-
-    .line 15
-    .line 16
-    .line 17
-    const-wide/16 v8, 0x190
-
-    .line 18
-    .line 19
-    const-wide/16 v10, 0x0
-
-    .line 20
-    .line 21
-    cmp-long v12, v2, v10
-
-    .line 22
-    .line 23
-    if-gez v12, :cond_0
-
-    .line 24
-    .line 25
-    const-wide/32 v12, 0xafa6d
-
-    .line 26
-    .line 27
-    .line 28
-    add-long/2addr v0, v12
-
-    .line 29
-    div-long/2addr v0, v6
-
-    .line 30
-    sub-long/2addr v0, v4
-
-    .line 31
-    mul-long v12, v0, v8
-
-    .line 32
-    .line 33
-    neg-long v0, v0
-
-    .line 34
-    mul-long v0, v0, v6
-
-    .line 35
-    .line 36
-    add-long/2addr v2, v0
-
-    .line 37
-    goto :goto_0
-
-    .line 38
-    :cond_0
-    move-wide v12, v10
-
-    .line 39
-    :goto_0
-    mul-long v0, v2, v8
-
-    .line 40
-    .line 41
-    const-wide/16 v14, 0x24f
-
-    .line 42
-    .line 43
-    add-long/2addr v0, v14
-
-    .line 44
-    div-long/2addr v0, v6
-
-    .line 45
-    const-wide/16 v6, 0x16d
-
-    .line 46
-    .line 47
-    mul-long v14, v0, v6
-
-    .line 48
-    .line 49
-    const-wide/16 v16, 0x4
-
-    .line 50
-    .line 51
-    div-long v18, v0, v16
-
-    .line 52
-    .line 53
-    add-long v18, v18, v14
-
-    .line 54
-    .line 55
-    const-wide/16 v14, 0x64
-
-    .line 56
-    .line 57
-    div-long v20, v0, v14
-
-    .line 58
-    .line 59
-    sub-long v18, v18, v20
-
-    .line 60
-    .line 61
-    div-long v20, v0, v8
-
-    .line 62
-    .line 63
-    add-long v20, v20, v18
-
-    .line 64
-    .line 65
-    sub-long v18, v2, v20
-
-    .line 66
-    .line 67
-    cmp-long v20, v18, v10
-
-    .line 68
-    .line 69
-    if-gez v20, :cond_1
-
-    .line 70
-    .line 71
-    sub-long/2addr v0, v4
-
-    .line 72
-    mul-long v6, v6, v0
-
-    .line 73
-    .line 74
-    div-long v4, v0, v16
-
-    .line 75
-    .line 76
-    add-long/2addr v4, v6
-
-    .line 77
-    div-long v6, v0, v14
-
-    .line 78
-    .line 79
-    sub-long/2addr v4, v6
-
-    .line 80
-    div-long v6, v0, v8
-
-    .line 81
-    .line 82
-    add-long/2addr v6, v4
-
-    .line 83
-    sub-long v18, v2, v6
-
-    .line 84
-    .line 85
-    :cond_1
-    move-wide/from16 v2, v18
-
-    .line 86
-    .line 87
-    add-long/2addr v0, v12
-
-    .line 88
-    long-to-int v3, v2
-
-    .line 89
-    mul-int/lit8 v2, v3, 0x5
-
-    .line 90
-    .line 91
-    add-int/lit8 v2, v2, 0x2
-
-    .line 92
-    .line 93
-    div-int/lit16 v2, v2, 0x99
-
-    .line 94
-    .line 95
-    add-int/lit8 v4, v2, 0x2
-
-    .line 96
-    .line 97
-    rem-int/lit8 v4, v4, 0xc
-
     .line 98
     .line 99
-    add-int/lit8 v4, v4, 0x1
+    invoke-direct {v0, p0, p1, p2}, Lj$/time/LocalDate;-><init>(III)V
 
     .line 100
     .line 101
-    mul-int/lit16 v5, v2, 0x132
-
     .line 102
-    .line 103
-    add-int/lit8 v5, v5, 0x5
-
-    .line 104
-    .line 105
-    div-int/lit8 v5, v5, 0xa
-
-    .line 106
-    .line 107
-    sub-int/2addr v3, v5
-
-    .line 108
-    add-int/lit8 v3, v3, 0x1
-
-    .line 109
-    .line 110
-    div-int/lit8 v2, v2, 0xa
-
-    .line 111
-    .line 112
-    int-to-long v5, v2
-
-    .line 113
-    add-long/2addr v0, v5
-
-    .line 114
-    sget-object v2, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
-
-    .line 115
-    .line 116
-    iget-object v5, v2, Lj$/time/temporal/ChronoField;->b:Lj$/time/temporal/s;
-
-    .line 117
-    .line 118
-    invoke-virtual {v5, v0, v1, v2}, Lj$/time/temporal/s;->a(JLj$/time/temporal/TemporalField;)I
-
-    .line 119
-    .line 120
-    .line 121
-    move-result v0
-
-    .line 122
-    new-instance v1, Lj$/time/LocalDate;
-
-    .line 123
-    .line 124
-    invoke-direct {v1, v0, v4, v3}, Lj$/time/LocalDate;-><init>(III)V
-
-    .line 125
-    .line 126
-    .line 127
-    return-object v1
-.end method
-
-.method public static parse(Ljava/lang/CharSequence;)Lj$/time/LocalDate;
-    .locals 3
-
-    .line 1
-    sget-object v0, Lj$/time/format/DateTimeFormatter;->ISO_LOCAL_DATE:Lj$/time/format/DateTimeFormatter;
-
-    .line 2
-    .line 3
-    const-string v1, "formatter"
-
-    .line 4
-    .line 5
-    invoke-static {v0, v1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    .line 8
-    new-instance v1, Lj$/time/e;
-
-    .line 9
-    .line 10
-    const/4 v2, 0x0
-
-    .line 11
-    invoke-direct {v1, v2}, Lj$/time/e;-><init>(I)V
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-virtual {v0, p0, v1}, Lj$/time/format/DateTimeFormatter;->parse(Ljava/lang/CharSequence;Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p0
-
-    .line 18
-    check-cast p0, Lj$/time/LocalDate;
-
-    .line 19
-    .line 20
-    return-object p0
-.end method
-
-.method private readObject(Ljava/io/ObjectInputStream;)V
-    .locals 1
-
-    .line 1
-    new-instance p1, Ljava/io/InvalidObjectException;
-
-    .line 2
-    .line 3
-    const-string v0, "Deserialization via serialization delegate"
-
-    .line 4
-    .line 5
-    invoke-direct {p1, v0}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw p1
-.end method
-
-.method private writeReplace()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lj$/time/l;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x3
-
-    .line 4
-    invoke-direct {v0, v1, p0}, Lj$/time/l;-><init>(BLjava/lang/Object;)V
-
-    .line 5
-    .line 6
-    .line 7
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final A()Lj$/time/chrono/l;
+.method public final F(Lj$/time/temporal/TemporalField;)I
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lj$/time/LocalDate;->getYear()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const/4 v1, 0x1
-
-    .line 6
-    if-lt v0, v1, :cond_0
-
-    .line 7
-    .line 8
-    sget-object v0, Lj$/time/chrono/s;->CE:Lj$/time/chrono/s;
-
-    .line 9
-    .line 10
-    return-object v0
-
-    .line 11
-    :cond_0
-    sget-object v0, Lj$/time/chrono/s;->BCE:Lj$/time/chrono/s;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final C(Lj$/time/temporal/o;)Lj$/time/chrono/ChronoLocalDate;
-    .locals 4
-
-    .line 1
-    invoke-static {p1}, Lj$/time/b;->b(Ljava/lang/Object;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    check-cast p1, Lj$/time/Period;
-
-    .line 8
-    .line 9
-    iget v0, p1, Lj$/time/Period;->a:I
-
-    .line 10
-    .line 11
-    int-to-long v0, v0
-
-    .line 12
-    const-wide/16 v2, 0xc
-
-    .line 13
-    .line 14
-    mul-long v0, v0, v2
-
-    .line 15
-    .line 16
-    iget v2, p1, Lj$/time/Period;->b:I
-
-    .line 17
-    .line 18
-    int-to-long v2, v2
-
-    .line 19
-    add-long/2addr v0, v2
-
-    .line 20
-    invoke-virtual {p0, v0, v1}, Lj$/time/LocalDate;->R(J)Lj$/time/LocalDate;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v0
-
-    .line 24
-    invoke-virtual {p1}, Lj$/time/Period;->getDays()I
-
-    .line 25
-    .line 26
-    .line 27
-    move-result p1
-
-    .line 28
-    int-to-long v1, p1
-
-    .line 29
-    invoke-virtual {v0, v1, v2}, Lj$/time/LocalDate;->Q(J)Lj$/time/LocalDate;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object p1
-
-    .line 33
-    return-object p1
-
-    .line 34
-    :cond_0
-    const-string v0, "amountToAdd"
-
-    .line 35
-    .line 36
-    invoke-static {p1, v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 37
-    .line 38
-    .line 39
-    check-cast p1, Lj$/time/Period;
-
-    .line 40
-    .line 41
-    invoke-virtual {p1, p0}, Lj$/time/Period;->g(Lj$/time/temporal/l;)Lj$/time/temporal/l;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object p1
-
-    .line 45
-    check-cast p1, Lj$/time/LocalDate;
-
-    .line 46
-    .line 47
-    return-object p1
-.end method
-
-.method public final G(Lj$/time/LocalDate;)I
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lj$/time/LocalDate;->a:I
-
-    .line 2
-    .line 3
-    iget v1, p1, Lj$/time/LocalDate;->a:I
-
-    .line 4
-    .line 5
-    sub-int/2addr v0, v1
-
-    .line 6
-    if-nez v0, :cond_0
-
-    .line 7
-    .line 8
-    iget-short v0, p0, Lj$/time/LocalDate;->b:S
-
-    .line 9
-    .line 10
-    iget-short v1, p1, Lj$/time/LocalDate;->b:S
-
-    .line 11
-    .line 12
-    sub-int/2addr v0, v1
-
-    .line 13
-    if-nez v0, :cond_0
-
-    .line 14
-    .line 15
-    iget-short v0, p0, Lj$/time/LocalDate;->c:S
-
-    .line 16
-    .line 17
-    iget-short p1, p1, Lj$/time/LocalDate;->c:S
-
-    .line 18
-    .line 19
-    sub-int/2addr v0, p1
-
-    .line 20
-    :cond_0
-    return v0
-.end method
-
-.method public final J(Lj$/time/temporal/TemporalField;)I
-    .locals 2
-
-    .line 1
-    sget-object v0, Lj$/time/d;->a:[I
+    sget-object v0, Lj$/time/f;->a:[I
 
     .line 2
     .line 3
@@ -1461,15 +1262,15 @@
     .line 14
     .line 15
     .line 16
-    new-instance v0, Lj$/time/temporal/r;
+    new-instance p0, Lj$/time/temporal/r;
 
     .line 17
     .line 18
-    const-string v1, "Unsupported field: "
+    const-string v0, "Unsupported field: "
 
     .line 19
     .line 20
-    invoke-static {v1, p1}, Lj$/time/b;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lj$/time/c;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
 
     .line 21
     .line 22
@@ -1477,20 +1278,20 @@
     move-result-object p1
 
     .line 24
-    invoke-direct {v0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 25
     .line 26
     .line 27
-    throw v0
+    throw p0
 
     .line 28
     :pswitch_0
-    iget p1, p0, Lj$/time/LocalDate;->a:I
+    iget p0, p0, Lj$/time/LocalDate;->a:I
 
     .line 29
     .line 30
-    if-lt p1, v1, :cond_0
+    if-lt p0, v1, :cond_0
 
     .line 31
     .line 32
@@ -1498,43 +1299,43 @@
 
     .line 33
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 34
-    return p1
+    return p0
 
     .line 35
     :pswitch_1
-    iget p1, p0, Lj$/time/LocalDate;->a:I
+    iget p0, p0, Lj$/time/LocalDate;->a:I
 
     .line 36
     .line 37
-    return p1
+    return p0
 
     .line 38
     :pswitch_2
-    new-instance p1, Lj$/time/temporal/r;
+    new-instance p0, Lj$/time/temporal/r;
 
     .line 39
     .line 40
-    const-string v0, "Invalid field \'ProlepticMonth\' for get() method, use getLong() instead"
+    const-string p1, "Invalid field \'ProlepticMonth\' for get() method, use getLong() instead"
 
     .line 41
     .line 42
-    invoke-direct {p1, v0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 43
     .line 44
     .line 45
-    throw p1
+    throw p0
 
     .line 46
     :pswitch_3
-    iget-short p1, p0, Lj$/time/LocalDate;->b:S
+    iget-short p0, p0, Lj$/time/LocalDate;->b:S
 
     .line 47
     .line 48
-    return p1
+    return p0
 
     .line 49
     :pswitch_4
@@ -1543,37 +1344,37 @@
     .line 50
     .line 51
     .line 52
-    move-result p1
+    move-result p0
 
     .line 53
-    sub-int/2addr p1, v1
+    sub-int/2addr p0, v1
 
     .line 54
-    div-int/lit8 p1, p1, 0x7
+    div-int/lit8 p0, p0, 0x7
 
     .line 55
     .line 56
-    add-int/2addr p1, v1
+    add-int/2addr p0, v1
 
     .line 57
-    return p1
+    return p0
 
     .line 58
     :pswitch_5
-    new-instance p1, Lj$/time/temporal/r;
+    new-instance p0, Lj$/time/temporal/r;
 
     .line 59
     .line 60
-    const-string v0, "Invalid field \'EpochDay\' for get() method, use getLong() instead"
+    const-string p1, "Invalid field \'EpochDay\' for get() method, use getLong() instead"
 
     .line 61
     .line 62
-    invoke-direct {p1, v0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 63
     .line 64
     .line 65
-    throw p1
+    throw p0
 
     .line 66
     :pswitch_6
@@ -1582,38 +1383,38 @@
     .line 67
     .line 68
     .line 69
-    move-result p1
+    move-result p0
 
     .line 70
-    sub-int/2addr p1, v1
+    sub-int/2addr p0, v1
 
     .line 71
-    rem-int/lit8 p1, p1, 0x7
+    rem-int/lit8 p0, p0, 0x7
 
     .line 72
     .line 73
-    add-int/2addr p1, v1
+    add-int/2addr p0, v1
 
     .line 74
-    return p1
+    return p0
 
     .line 75
     :pswitch_7
-    iget-short p1, p0, Lj$/time/LocalDate;->c:S
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 76
     .line 77
-    sub-int/2addr p1, v1
+    sub-int/2addr p0, v1
 
     .line 78
-    rem-int/lit8 p1, p1, 0x7
+    rem-int/lit8 p0, p0, 0x7
 
     .line 79
     .line 80
-    add-int/2addr p1, v1
+    add-int/2addr p0, v1
 
     .line 81
-    return p1
+    return p0
 
     .line 82
     :pswitch_8
@@ -1622,55 +1423,55 @@
     .line 83
     .line 84
     .line 85
-    move-result-object p1
+    move-result-object p0
 
     .line 86
-    invoke-virtual {p1}, Lj$/time/DayOfWeek;->getValue()I
+    invoke-virtual {p0}, Lj$/time/DayOfWeek;->getValue()I
 
     .line 87
     .line 88
     .line 89
-    move-result p1
+    move-result p0
 
     .line 90
-    return p1
+    return p0
 
     .line 91
     :pswitch_9
-    iget p1, p0, Lj$/time/LocalDate;->a:I
+    iget p0, p0, Lj$/time/LocalDate;->a:I
 
     .line 92
     .line 93
-    if-lt p1, v1, :cond_1
+    if-lt p0, v1, :cond_1
 
     .line 94
     .line 95
-    return p1
+    return p0
 
     .line 96
     :cond_1
-    sub-int/2addr v1, p1
+    sub-int/2addr v1, p0
 
     .line 97
     return v1
 
     .line 98
     :pswitch_a
-    iget-short p1, p0, Lj$/time/LocalDate;->c:S
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 99
     .line 100
-    sub-int/2addr p1, v1
+    sub-int/2addr p0, v1
 
     .line 101
-    div-int/lit8 p1, p1, 0x7
+    div-int/lit8 p0, p0, 0x7
 
     .line 102
     .line 103
-    add-int/2addr p1, v1
+    add-int/2addr p0, v1
 
     .line 104
-    return p1
+    return p0
 
     .line 105
     :pswitch_b
@@ -1679,18 +1480,18 @@
     .line 106
     .line 107
     .line 108
-    move-result p1
+    move-result p0
 
     .line 109
-    return p1
+    return p0
 
     .line 110
     :pswitch_c
-    iget-short p1, p0, Lj$/time/LocalDate;->c:S
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 111
     .line 112
-    return p1
+    return p0
 
     .line 113
     :pswitch_data_0
@@ -1711,8 +1512,57 @@
     .end packed-switch
 .end method
 
-.method public final K(Lj$/time/chrono/ChronoLocalDate;)Z
-    .locals 7
+.method public final G(Lj$/time/LocalTime;)Lj$/time/chrono/ChronoLocalDateTime;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lj$/time/LocalDateTime;->of(Lj$/time/LocalDate;Lj$/time/LocalTime;)Lj$/time/LocalDateTime;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final I()Lj$/time/chrono/l;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lj$/time/LocalDate;->getYear()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    const/4 v0, 0x1
+
+    .line 6
+    if-lt p0, v0, :cond_0
+
+    .line 7
+    .line 8
+    sget-object p0, Lj$/time/chrono/s;->CE:Lj$/time/chrono/s;
+
+    .line 9
+    .line 10
+    return-object p0
+
+    .line 11
+    :cond_0
+    sget-object p0, Lj$/time/chrono/s;->BCE:Lj$/time/chrono/s;
+
+    .line 12
+    .line 13
+    return-object p0
+.end method
+
+.method public final J(Lj$/time/chrono/ChronoLocalDate;)Z
+    .locals 5
 
     .line 1
     instance-of v0, p1, Lj$/time/LocalDate;
@@ -1733,15 +1583,15 @@
 
     .line 8
     .line 9
-    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->G(Lj$/time/LocalDate;)I
+    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->t(Lj$/time/LocalDate;)I
 
     .line 10
     .line 11
     .line 12
-    move-result p1
+    move-result p0
 
     .line 13
-    if-gez p1, :cond_0
+    if-gez p0, :cond_0
 
     .line 14
     .line 15
@@ -1766,14 +1616,14 @@
     .line 22
     .line 23
     .line 24
-    move-result-wide v5
+    move-result-wide p0
 
     .line 25
-    cmp-long p1, v3, v5
+    cmp-long p0, v3, p0
 
     .line 26
     .line 27
-    if-gez p1, :cond_2
+    if-gez p0, :cond_2
 
     .line 28
     .line 29
@@ -1784,7 +1634,102 @@
     return v1
 .end method
 
-.method public final L()Z
+.method public final L(Lj$/time/temporal/o;)Lj$/time/chrono/ChronoLocalDate;
+    .locals 4
+
+    .line 1
+    if-eqz p1, :cond_0
+
+    .line 2
+    .line 3
+    check-cast p1, Lj$/time/Period;
+
+    .line 4
+    .line 5
+    iget v0, p1, Lj$/time/Period;->a:I
+
+    .line 6
+    .line 7
+    int-to-long v0, v0
+
+    .line 8
+    const-wide/16 v2, 0xc
+
+    .line 9
+    .line 10
+    mul-long/2addr v0, v2
+
+    .line 11
+    iget v2, p1, Lj$/time/Period;->b:I
+
+    .line 12
+    .line 13
+    int-to-long v2, v2
+
+    .line 14
+    add-long/2addr v0, v2
+
+    .line 15
+    invoke-virtual {p0, v0, v1}, Lj$/time/LocalDate;->V(J)Lj$/time/LocalDate;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    invoke-virtual {p1}, Lj$/time/Period;->getDays()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p1
+
+    .line 23
+    int-to-long v0, p1
+
+    .line 24
+    invoke-virtual {p0, v0, v1}, Lj$/time/LocalDate;->U(J)Lj$/time/LocalDate;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p0
+
+    .line 28
+    return-object p0
+
+    .line 29
+    :cond_0
+    const-string v0, "amountToAdd"
+
+    .line 30
+    .line 31
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 32
+    .line 33
+    .line 34
+    check-cast p1, Lj$/time/Period;
+
+    .line 35
+    .line 36
+    invoke-virtual {p1, p0}, Lj$/time/Period;->t(Lj$/time/chrono/ChronoLocalDate;)Lj$/time/temporal/l;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p0
+
+    .line 40
+    check-cast p0, Lj$/time/LocalDate;
+
+    .line 41
+    .line 42
+    return-object p0
+.end method
+
+.method public final O()Z
     .locals 3
 
     .line 1
@@ -1792,11 +1737,11 @@
 
     .line 2
     .line 3
-    iget v1, p0, Lj$/time/LocalDate;->a:I
+    iget p0, p0, Lj$/time/LocalDate;->a:I
 
     .line 4
     .line 5
-    int-to-long v1, v1
+    int-to-long v1, p0
 
     .line 6
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1804,18 +1749,18 @@
     .line 7
     .line 8
     .line 9
-    invoke-static {v1, v2}, Lj$/time/chrono/r;->G(J)Z
+    invoke-static {v1, v2}, Lj$/time/chrono/r;->Q(J)Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 .end method
 
-.method public final M()I
+.method public final Q()I
     .locals 2
 
     .line 1
@@ -1830,80 +1775,80 @@
 
     .line 5
     .line 6
-    const/4 v1, 0x4
+    const/4 p0, 0x4
 
     .line 7
-    if-eq v0, v1, :cond_0
+    if-eq v0, p0, :cond_0
 
     .line 8
     .line 9
-    const/4 v1, 0x6
+    const/4 p0, 0x6
 
     .line 10
-    if-eq v0, v1, :cond_0
+    if-eq v0, p0, :cond_0
 
     .line 11
     .line 12
-    const/16 v1, 0x9
+    const/16 p0, 0x9
 
     .line 13
     .line 14
-    if-eq v0, v1, :cond_0
+    if-eq v0, p0, :cond_0
 
     .line 15
     .line 16
-    const/16 v1, 0xb
+    const/16 p0, 0xb
 
     .line 17
     .line 18
-    if-eq v0, v1, :cond_0
+    if-eq v0, p0, :cond_0
 
     .line 19
     .line 20
-    const/16 v0, 0x1f
+    const/16 p0, 0x1f
 
     .line 21
     .line 22
-    return v0
+    return p0
 
     .line 23
     :cond_0
-    const/16 v0, 0x1e
+    const/16 p0, 0x1e
 
     .line 24
     .line 25
-    return v0
+    return p0
 
     .line 26
     :cond_1
-    invoke-virtual {p0}, Lj$/time/LocalDate;->L()Z
+    invoke-virtual {p0}, Lj$/time/LocalDate;->O()Z
 
     .line 27
     .line 28
     .line 29
-    move-result v0
+    move-result p0
 
     .line 30
-    if-eqz v0, :cond_2
+    if-eqz p0, :cond_2
 
     .line 31
     .line 32
-    const/16 v0, 0x1d
+    const/16 p0, 0x1d
 
     .line 33
     .line 34
-    return v0
+    return p0
 
     .line 35
     :cond_2
-    const/16 v0, 0x1c
+    const/16 p0, 0x1c
 
     .line 36
     .line 37
-    return v0
+    return p0
 .end method
 
-.method public final P(JLj$/time/temporal/q;)Lj$/time/LocalDate;
+.method public final T(JLj$/time/temporal/q;)Lj$/time/LocalDate;
     .locals 2
 
     .line 1
@@ -1922,7 +1867,7 @@
 
     .line 7
     .line 8
-    sget-object v1, Lj$/time/d;->b:[I
+    sget-object v1, Lj$/time/f;->b:[I
 
     .line 9
     .line 10
@@ -1943,19 +1888,19 @@
     .line 17
     .line 18
     .line 19
-    const-string p1, "Unsupported unit: "
+    const-string p0, "Unsupported unit: "
 
     .line 20
     .line 21
-    invoke-static {p3, p1}, Lj$/time/f;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p3}, Lj$/time/g;->d(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 22
     .line 23
     .line 24
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 25
-    return-object p1
+    return-object p0
 
     .line 26
     :pswitch_0
@@ -1963,7 +1908,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->x(Lj$/time/temporal/TemporalField;)J
+    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->k(Lj$/time/temporal/TemporalField;)J
 
     .line 29
     .line 30
@@ -1971,7 +1916,7 @@
     move-result-wide v0
 
     .line 32
-    invoke-static {v0, v1, p1, p2}, Lj$/com/android/tools/r8/a;->w(JJ)J
+    invoke-static {v0, v1, p1, p2}, Ljava/lang/Math;->addExact(JJ)J
 
     .line 33
     .line 34
@@ -1979,15 +1924,15 @@
     move-result-wide p1
 
     .line 36
-    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->V(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->Z(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
 
     .line 37
     .line 38
     .line 39
-    move-result-object p1
+    move-result-object p0
 
     .line 40
-    return-object p1
+    return-object p0
 
     .line 41
     :pswitch_1
@@ -1995,7 +1940,7 @@
 
     .line 42
     .line 43
-    invoke-static {p1, p2, v0, v1}, Lj$/com/android/tools/r8/a;->C(JJ)J
+    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->multiplyExact(JJ)J
 
     .line 44
     .line 45
@@ -2003,15 +1948,15 @@
     move-result-wide p1
 
     .line 47
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->T(J)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->X(J)Lj$/time/LocalDate;
 
     .line 48
     .line 49
     .line 50
-    move-result-object p1
+    move-result-object p0
 
     .line 51
-    return-object p1
+    return-object p0
 
     .line 52
     :pswitch_2
@@ -2019,7 +1964,7 @@
 
     .line 53
     .line 54
-    invoke-static {p1, p2, v0, v1}, Lj$/com/android/tools/r8/a;->C(JJ)J
+    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->multiplyExact(JJ)J
 
     .line 55
     .line 56
@@ -2027,15 +1972,15 @@
     move-result-wide p1
 
     .line 58
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->T(J)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->X(J)Lj$/time/LocalDate;
 
     .line 59
     .line 60
     .line 61
-    move-result-object p1
+    move-result-object p0
 
     .line 62
-    return-object p1
+    return-object p0
 
     .line 63
     :pswitch_3
@@ -2043,7 +1988,7 @@
 
     .line 64
     .line 65
-    invoke-static {p1, p2, v0, v1}, Lj$/com/android/tools/r8/a;->C(JJ)J
+    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->multiplyExact(JJ)J
 
     .line 66
     .line 67
@@ -2051,79 +1996,79 @@
     move-result-wide p1
 
     .line 69
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->T(J)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->X(J)Lj$/time/LocalDate;
 
     .line 70
     .line 71
     .line 72
-    move-result-object p1
+    move-result-object p0
 
     .line 73
-    return-object p1
+    return-object p0
 
     .line 74
     :pswitch_4
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->T(J)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->X(J)Lj$/time/LocalDate;
 
     .line 75
     .line 76
     .line 77
-    move-result-object p1
+    move-result-object p0
 
     .line 78
-    return-object p1
+    return-object p0
 
     .line 79
     :pswitch_5
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->R(J)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->V(J)Lj$/time/LocalDate;
 
     .line 80
     .line 81
     .line 82
-    move-result-object p1
+    move-result-object p0
 
     .line 83
-    return-object p1
+    return-object p0
 
     .line 84
     :pswitch_6
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->S(J)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->W(J)Lj$/time/LocalDate;
 
     .line 85
     .line 86
     .line 87
-    move-result-object p1
+    move-result-object p0
 
     .line 88
-    return-object p1
+    return-object p0
 
     .line 89
     :pswitch_7
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->Q(J)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->U(J)Lj$/time/LocalDate;
 
     .line 90
     .line 91
     .line 92
-    move-result-object p1
+    move-result-object p0
 
     .line 93
-    return-object p1
+    return-object p0
 
     .line 94
     :cond_0
-    invoke-interface {p3, p0, p1, p2}, Lj$/time/temporal/q;->g(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
+    invoke-interface {p3, p0, p1, p2}, Lj$/time/temporal/q;->t(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
 
     .line 95
     .line 96
     .line 97
-    move-result-object p1
+    move-result-object p0
 
     .line 98
-    check-cast p1, Lj$/time/LocalDate;
+    check-cast p0, Lj$/time/LocalDate;
 
     .line 99
     .line 100
-    return-object p1
+    return-object p0
 
     .line 101
     :pswitch_data_0
@@ -2139,7 +2084,7 @@
     .end packed-switch
 .end method
 
-.method public final Q(J)Lj$/time/LocalDate;
+.method public final U(J)Lj$/time/LocalDate;
     .locals 7
 
     .line 1
@@ -2169,11 +2114,11 @@
     add-long/2addr v2, p1
 
     .line 12
-    cmp-long v4, v2, v0
+    cmp-long v0, v2, v0
 
     .line 13
     .line 14
-    if-lez v4, :cond_4
+    if-lez v0, :cond_4
 
     .line 15
     .line 16
@@ -2181,11 +2126,11 @@
 
     .line 17
     .line 18
-    cmp-long v4, v2, v0
+    cmp-long v0, v2, v0
 
     .line 19
     .line 20
-    if-gtz v4, :cond_1
+    if-gtz v0, :cond_1
 
     .line 21
     .line 22
@@ -2197,14 +2142,14 @@
 
     .line 25
     .line 26
-    iget-short v0, p0, Lj$/time/LocalDate;->b:S
+    iget-short p0, p0, Lj$/time/LocalDate;->b:S
 
     .line 27
     .line 28
-    long-to-int v1, v2
+    long-to-int v0, v2
 
     .line 29
-    invoke-direct {p1, p2, v0, v1}, Lj$/time/LocalDate;-><init>(III)V
+    invoke-direct {p1, p2, p0, v0}, Lj$/time/LocalDate;-><init>(III)V
 
     .line 30
     .line 31
@@ -2217,15 +2162,15 @@
 
     .line 34
     .line 35
-    cmp-long v4, v2, v0
+    cmp-long v0, v2, v0
 
     .line 36
     .line 37
-    if-gtz v4, :cond_4
+    if-gtz v0, :cond_4
 
     .line 38
     .line 39
-    invoke-virtual {p0}, Lj$/time/LocalDate;->M()I
+    invoke-virtual {p0}, Lj$/time/LocalDate;->Q()I
 
     .line 40
     .line 41
@@ -2252,14 +2197,14 @@
 
     .line 51
     .line 52
-    iget-short v0, p0, Lj$/time/LocalDate;->b:S
+    iget-short p0, p0, Lj$/time/LocalDate;->b:S
 
     .line 53
     .line 54
-    long-to-int v1, v2
+    long-to-int v0, v2
 
     .line 55
-    invoke-direct {p1, p2, v0, v1}, Lj$/time/LocalDate;-><init>(III)V
+    invoke-direct {p1, p2, p0, v0}, Lj$/time/LocalDate;-><init>(III)V
 
     .line 56
     .line 57
@@ -2287,7 +2232,7 @@
 
     .line 67
     .line 68
-    iget v5, p0, Lj$/time/LocalDate;->a:I
+    iget p0, p0, Lj$/time/LocalDate;->a:I
 
     .line 69
     .line 70
@@ -2300,7 +2245,7 @@
     long-to-int p1, v2
 
     .line 73
-    invoke-direct {v1, v5, v0, p1}, Lj$/time/LocalDate;-><init>(III)V
+    invoke-direct {v1, p0, v0, p1}, Lj$/time/LocalDate;-><init>(III)V
 
     .line 74
     .line 75
@@ -2323,7 +2268,7 @@
     int-to-long v5, v1
 
     .line 83
-    invoke-virtual {v0, v5, v6}, Lj$/time/temporal/ChronoField;->z(J)V
+    invoke-virtual {v0, v5, v6}, Lj$/time/temporal/ChronoField;->Q(J)V
 
     .line 84
     .line 85
@@ -2332,11 +2277,11 @@
 
     .line 87
     .line 88
-    iget v1, p0, Lj$/time/LocalDate;->a:I
+    iget p0, p0, Lj$/time/LocalDate;->a:I
 
     .line 89
     .line 90
-    add-int/2addr v1, v4
+    add-int/2addr p0, v4
 
     .line 91
     sub-long/2addr v2, p1
@@ -2345,7 +2290,7 @@
     long-to-int p1, v2
 
     .line 93
-    invoke-direct {v0, v1, v4, p1}, Lj$/time/LocalDate;-><init>(III)V
+    invoke-direct {v0, p0, v4, p1}, Lj$/time/LocalDate;-><init>(III)V
 
     .line 94
     .line 95
@@ -2362,26 +2307,26 @@
     move-result-wide v0
 
     .line 101
-    invoke-static {v0, v1, p1, p2}, Lj$/com/android/tools/r8/a;->w(JJ)J
+    invoke-static {v0, v1, p1, p2}, Ljava/lang/Math;->addExact(JJ)J
 
     .line 102
     .line 103
     .line 104
-    move-result-wide p1
+    move-result-wide p0
 
     .line 105
-    invoke-static {p1, p2}, Lj$/time/LocalDate;->ofEpochDay(J)Lj$/time/LocalDate;
+    invoke-static {p0, p1}, Lj$/time/LocalDate;->ofEpochDay(J)Lj$/time/LocalDate;
 
     .line 106
     .line 107
     .line 108
-    move-result-object p1
+    move-result-object p0
 
     .line 109
-    return-object p1
+    return-object p0
 .end method
 
-.method public final R(J)Lj$/time/LocalDate;
+.method public final V(J)Lj$/time/LocalDate;
     .locals 6
 
     .line 1
@@ -2389,11 +2334,11 @@
 
     .line 2
     .line 3
-    cmp-long v2, p1, v0
+    cmp-long v0, p1, v0
 
     .line 4
     .line 5
-    if-nez v2, :cond_0
+    if-nez v0, :cond_0
 
     .line 6
     .line 7
@@ -2412,82 +2357,81 @@
 
     .line 12
     .line 13
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     .line 14
-    .line 15
     iget-short v4, p0, Lj$/time/LocalDate;->b:S
 
+    .line 15
     .line 16
-    .line 17
     add-int/lit8 v4, v4, -0x1
 
+    .line 17
     .line 18
-    .line 19
     int-to-long v4, v4
 
-    .line 20
+    .line 19
     add-long/2addr v0, v4
 
-    .line 21
+    .line 20
     add-long/2addr v0, p1
 
-    .line 22
+    .line 21
     sget-object p1, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
 
+    .line 22
     .line 23
-    .line 24
-    invoke-static {v0, v1, v2, v3}, Lj$/com/android/tools/r8/a;->B(JJ)J
+    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->floorDiv(JJ)J
 
+    .line 24
     .line 25
     .line 26
-    .line 27
     move-result-wide v4
 
-    .line 28
+    .line 27
     iget-object p2, p1, Lj$/time/temporal/ChronoField;->b:Lj$/time/temporal/s;
 
+    .line 28
     .line 29
-    .line 30
     invoke-virtual {p2, v4, v5, p1}, Lj$/time/temporal/s;->a(JLj$/time/temporal/TemporalField;)I
 
+    .line 30
     .line 31
     .line 32
-    .line 33
     move-result p1
 
-    .line 34
-    invoke-static {v0, v1, v2, v3}, Lj$/com/android/tools/r8/a;->A(JJ)J
+    .line 33
+    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->floorMod(JJ)J
 
+    .line 34
     .line 35
     .line 36
-    .line 37
     move-result-wide v0
 
-    .line 38
+    .line 37
     long-to-int p2, v0
 
-    .line 39
+    .line 38
     add-int/lit8 p2, p2, 0x1
 
+    .line 39
     .line 40
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
+
     .line 41
-    iget-short v0, p0, Lj$/time/LocalDate;->c:S
-
     .line 42
-    .line 43
-    invoke-static {p1, p2, v0}, Lj$/time/LocalDate;->U(III)Lj$/time/LocalDate;
+    invoke-static {p1, p2, p0}, Lj$/time/LocalDate;->Y(III)Lj$/time/LocalDate;
 
+    .line 43
     .line 44
     .line 45
-    .line 46
-    move-result-object p1
+    move-result-object p0
 
-    .line 47
-    return-object p1
+    .line 46
+    return-object p0
 .end method
 
-.method public final S(J)Lj$/time/LocalDate;
+.method public final W(J)Lj$/time/LocalDate;
     .locals 2
 
     .line 1
@@ -2495,7 +2439,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, p2, v0, v1}, Lj$/com/android/tools/r8/a;->C(JJ)J
+    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->multiplyExact(JJ)J
 
     .line 4
     .line 5
@@ -2503,18 +2447,18 @@
     move-result-wide p1
 
     .line 7
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->Q(J)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->U(J)Lj$/time/LocalDate;
 
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
 
     .line 11
-    return-object p1
+    return-object p0
 .end method
 
-.method public final T(J)Lj$/time/LocalDate;
+.method public final X(J)Lj$/time/LocalDate;
     .locals 3
 
     .line 1
@@ -2522,11 +2466,11 @@
 
     .line 2
     .line 3
-    cmp-long v2, p1, v0
+    cmp-long v0, p1, v0
 
     .line 4
     .line 5
-    if-nez v2, :cond_0
+    if-nez v0, :cond_0
 
     .line 6
     .line 7
@@ -2564,22 +2508,22 @@
 
     .line 21
     .line 22
-    iget-short v0, p0, Lj$/time/LocalDate;->c:S
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 23
     .line 24
-    invoke-static {p1, p2, v0}, Lj$/time/LocalDate;->U(III)Lj$/time/LocalDate;
+    invoke-static {p1, p2, p0}, Lj$/time/LocalDate;->Y(III)Lj$/time/LocalDate;
 
     .line 25
     .line 26
     .line 27
-    move-result-object p1
+    move-result-object p0
 
     .line 28
-    return-object p1
+    return-object p0
 .end method
 
-.method public final V(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
+.method public final Z(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
     .locals 7
 
     .line 1
@@ -2598,12 +2542,12 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1, p2}, Lj$/time/temporal/ChronoField;->z(J)V
+    invoke-virtual {v0, p1, p2}, Lj$/time/temporal/ChronoField;->Q(J)V
 
     .line 9
     .line 10
     .line 11
-    sget-object v1, Lj$/time/d;->a:[I
+    sget-object v1, Lj$/time/f;->a:[I
 
     .line 12
     .line 13
@@ -2631,28 +2575,28 @@
     .line 23
     .line 24
     .line 25
-    new-instance p1, Lj$/time/temporal/r;
+    new-instance p0, Lj$/time/temporal/r;
 
     .line 26
     .line 27
-    const-string p2, "Unsupported field: "
+    const-string p1, "Unsupported field: "
 
     .line 28
     .line 29
-    invoke-static {p2, p3}, Lj$/time/b;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
+    invoke-static {p1, p3}, Lj$/time/c;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
 
     .line 30
     .line 31
     .line 32
-    move-result-object p2
+    move-result-object p1
 
     .line 33
-    invoke-direct {p1, p2}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 34
     .line 35
     .line 36
-    throw p1
+    throw p0
 
     .line 37
     :pswitch_0
@@ -2660,7 +2604,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->x(Lj$/time/temporal/TemporalField;)J
+    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->k(Lj$/time/temporal/TemporalField;)J
 
     .line 40
     .line 41
@@ -2668,11 +2612,11 @@
     move-result-wide v0
 
     .line 43
-    cmp-long p3, v0, p1
+    cmp-long p1, v0, p1
 
     .line 44
     .line 45
-    if-nez p3, :cond_0
+    if-nez p1, :cond_0
 
     .line 46
     .line 47
@@ -2688,30 +2632,30 @@
     sub-int/2addr v3, p1
 
     .line 52
-    invoke-virtual {p0, v3}, Lj$/time/LocalDate;->X(I)Lj$/time/LocalDate;
+    invoke-virtual {p0, v3}, Lj$/time/LocalDate;->b0(I)Lj$/time/LocalDate;
 
     .line 53
     .line 54
     .line 55
-    move-result-object p1
+    move-result-object p0
 
     .line 56
-    return-object p1
+    return-object p0
 
     .line 57
     :pswitch_1
-    long-to-int p2, p1
+    long-to-int p1, p1
 
     .line 58
-    invoke-virtual {p0, p2}, Lj$/time/LocalDate;->X(I)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->b0(I)Lj$/time/LocalDate;
 
     .line 59
     .line 60
     .line 61
-    move-result-object p1
+    move-result-object p0
 
     .line 62
-    return-object p1
+    return-object p0
 
     .line 63
     :pswitch_2
@@ -2726,360 +2670,356 @@
 
     .line 67
     .line 68
-    mul-long v3, v3, v5
+    mul-long/2addr v3, v5
 
     .line 69
-    .line 70
     iget-short p3, p0, Lj$/time/LocalDate;->b:S
 
+    .line 70
     .line 71
-    .line 72
     int-to-long v5, p3
 
-    .line 73
+    .line 72
     add-long/2addr v3, v5
 
-    .line 74
+    .line 73
     sub-long/2addr v3, v1
 
-    .line 75
+    .line 74
     sub-long/2addr p1, v3
 
-    .line 76
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->R(J)Lj$/time/LocalDate;
+    .line 75
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->V(J)Lj$/time/LocalDate;
 
+    .line 76
     .line 77
     .line 78
+    move-result-object p0
+
     .line 79
-    move-result-object p1
+    return-object p0
 
     .line 80
-    return-object p1
+    :pswitch_3
+    long-to-int p1, p1
 
     .line 81
-    :pswitch_3
-    long-to-int p2, p1
+    iget-short p2, p0, Lj$/time/LocalDate;->b:S
 
     .line 82
-    iget-short p1, p0, Lj$/time/LocalDate;->b:S
-
     .line 83
-    .line 84
-    if-ne p1, p2, :cond_1
+    if-ne p2, p1, :cond_1
 
+    .line 84
     .line 85
-    .line 86
     goto :goto_1
 
-    .line 87
+    .line 86
     :cond_1
-    sget-object p1, Lj$/time/temporal/ChronoField;->MONTH_OF_YEAR:Lj$/time/temporal/ChronoField;
+    sget-object p2, Lj$/time/temporal/ChronoField;->MONTH_OF_YEAR:Lj$/time/temporal/ChronoField;
 
+    .line 87
     .line 88
+    int-to-long v0, p1
+
     .line 89
-    int-to-long v0, p2
+    invoke-virtual {p2, v0, v1}, Lj$/time/temporal/ChronoField;->Q(J)V
 
     .line 90
-    invoke-virtual {p1, v0, v1}, Lj$/time/temporal/ChronoField;->z(J)V
-
     .line 91
     .line 92
+    iget p2, p0, Lj$/time/LocalDate;->a:I
+
     .line 93
-    iget p1, p0, Lj$/time/LocalDate;->a:I
-
     .line 94
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
+
     .line 95
-    iget-short p3, p0, Lj$/time/LocalDate;->c:S
-
     .line 96
-    .line 97
-    invoke-static {p1, p2, p3}, Lj$/time/LocalDate;->U(III)Lj$/time/LocalDate;
+    invoke-static {p2, p1, p0}, Lj$/time/LocalDate;->Y(III)Lj$/time/LocalDate;
 
+    .line 97
     .line 98
     .line 99
+    move-result-object p0
+
     .line 100
-    move-result-object p1
+    return-object p0
 
     .line 101
-    return-object p1
-
-    .line 102
     :pswitch_4
     sget-object p3, Lj$/time/temporal/ChronoField;->ALIGNED_WEEK_OF_YEAR:Lj$/time/temporal/ChronoField;
 
+    .line 102
     .line 103
-    .line 104
-    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->x(Lj$/time/temporal/TemporalField;)J
+    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->k(Lj$/time/temporal/TemporalField;)J
 
+    .line 104
     .line 105
     .line 106
-    .line 107
     move-result-wide v0
 
-    .line 108
+    .line 107
     sub-long/2addr p1, v0
 
-    .line 109
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->S(J)Lj$/time/LocalDate;
+    .line 108
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->W(J)Lj$/time/LocalDate;
 
+    .line 109
     .line 110
     .line 111
+    move-result-object p0
+
     .line 112
-    move-result-object p1
+    return-object p0
 
     .line 113
-    return-object p1
-
-    .line 114
     :pswitch_5
     invoke-static {p1, p2}, Lj$/time/LocalDate;->ofEpochDay(J)Lj$/time/LocalDate;
 
+    .line 114
     .line 115
     .line 116
+    move-result-object p0
+
     .line 117
-    move-result-object p1
+    return-object p0
 
     .line 118
-    return-object p1
-
-    .line 119
     :pswitch_6
     sget-object p3, Lj$/time/temporal/ChronoField;->ALIGNED_DAY_OF_WEEK_IN_YEAR:Lj$/time/temporal/ChronoField;
 
+    .line 119
     .line 120
-    .line 121
-    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->x(Lj$/time/temporal/TemporalField;)J
+    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->k(Lj$/time/temporal/TemporalField;)J
 
+    .line 121
     .line 122
     .line 123
-    .line 124
     move-result-wide v0
 
-    .line 125
+    .line 124
     sub-long/2addr p1, v0
 
-    .line 126
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->Q(J)Lj$/time/LocalDate;
+    .line 125
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->U(J)Lj$/time/LocalDate;
 
+    .line 126
     .line 127
     .line 128
+    move-result-object p0
+
     .line 129
-    move-result-object p1
+    return-object p0
 
     .line 130
-    return-object p1
-
-    .line 131
     :pswitch_7
     sget-object p3, Lj$/time/temporal/ChronoField;->ALIGNED_DAY_OF_WEEK_IN_MONTH:Lj$/time/temporal/ChronoField;
 
+    .line 131
     .line 132
-    .line 133
-    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->x(Lj$/time/temporal/TemporalField;)J
+    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->k(Lj$/time/temporal/TemporalField;)J
 
+    .line 133
     .line 134
     .line 135
-    .line 136
     move-result-wide v0
 
-    .line 137
+    .line 136
     sub-long/2addr p1, v0
 
-    .line 138
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->Q(J)Lj$/time/LocalDate;
+    .line 137
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->U(J)Lj$/time/LocalDate;
 
+    .line 138
     .line 139
     .line 140
+    move-result-object p0
+
     .line 141
-    move-result-object p1
+    return-object p0
 
     .line 142
-    return-object p1
-
-    .line 143
     :pswitch_8
     invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfWeek()Lj$/time/DayOfWeek;
 
+    .line 143
     .line 144
     .line 145
-    .line 146
     move-result-object p3
 
-    .line 147
+    .line 146
     invoke-virtual {p3}, Lj$/time/DayOfWeek;->getValue()I
 
+    .line 147
     .line 148
     .line 149
-    .line 150
     move-result p3
 
-    .line 151
+    .line 150
     int-to-long v0, p3
 
-    .line 152
+    .line 151
     sub-long/2addr p1, v0
 
-    .line 153
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->Q(J)Lj$/time/LocalDate;
+    .line 152
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->U(J)Lj$/time/LocalDate;
 
+    .line 153
     .line 154
     .line 155
+    move-result-object p0
+
     .line 156
-    move-result-object p1
+    return-object p0
 
     .line 157
-    return-object p1
-
-    .line 158
     :pswitch_9
     iget p3, p0, Lj$/time/LocalDate;->a:I
 
+    .line 158
     .line 159
-    .line 160
     if-lt p3, v3, :cond_2
 
+    .line 160
     .line 161
-    .line 162
     goto :goto_0
 
-    .line 163
+    .line 162
     :cond_2
     sub-long p1, v1, p1
 
+    .line 163
     .line 164
-    .line 165
     :goto_0
-    long-to-int p2, p1
+    long-to-int p1, p1
+
+    .line 165
+    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->b0(I)Lj$/time/LocalDate;
 
     .line 166
-    invoke-virtual {p0, p2}, Lj$/time/LocalDate;->X(I)Lj$/time/LocalDate;
-
     .line 167
     .line 168
+    move-result-object p0
+
     .line 169
-    move-result-object p1
+    return-object p0
 
     .line 170
-    return-object p1
-
-    .line 171
     :pswitch_a
     sget-object p3, Lj$/time/temporal/ChronoField;->ALIGNED_WEEK_OF_MONTH:Lj$/time/temporal/ChronoField;
 
+    .line 171
     .line 172
-    .line 173
-    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->x(Lj$/time/temporal/TemporalField;)J
+    invoke-virtual {p0, p3}, Lj$/time/LocalDate;->k(Lj$/time/temporal/TemporalField;)J
 
+    .line 173
     .line 174
     .line 175
-    .line 176
     move-result-wide v0
 
-    .line 177
+    .line 176
     sub-long/2addr p1, v0
 
-    .line 178
-    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->S(J)Lj$/time/LocalDate;
+    .line 177
+    invoke-virtual {p0, p1, p2}, Lj$/time/LocalDate;->W(J)Lj$/time/LocalDate;
 
+    .line 178
     .line 179
     .line 180
+    move-result-object p0
+
     .line 181
-    move-result-object p1
+    return-object p0
 
     .line 182
-    return-object p1
+    :pswitch_b
+    long-to-int p1, p1
 
     .line 183
-    :pswitch_b
-    long-to-int p2, p1
-
-    .line 184
     invoke-virtual {p0}, Lj$/time/LocalDate;->getDayOfYear()I
 
+    .line 184
     .line 185
     .line 186
+    move-result p2
+
     .line 187
-    move-result p1
+    if-ne p2, p1, :cond_3
 
     .line 188
-    if-ne p1, p2, :cond_3
-
     .line 189
-    .line 190
     goto :goto_1
 
-    .line 191
+    .line 190
     :cond_3
-    iget p1, p0, Lj$/time/LocalDate;->a:I
+    iget p0, p0, Lj$/time/LocalDate;->a:I
 
+    .line 191
     .line 192
-    .line 193
-    invoke-static {p1, p2}, Lj$/time/LocalDate;->O(II)Lj$/time/LocalDate;
+    invoke-static {p0, p1}, Lj$/time/LocalDate;->S(II)Lj$/time/LocalDate;
 
+    .line 193
     .line 194
     .line 195
+    move-result-object p0
+
     .line 196
-    move-result-object p1
+    return-object p0
 
     .line 197
-    return-object p1
+    :pswitch_c
+    long-to-int p1, p1
 
     .line 198
-    :pswitch_c
-    long-to-int p2, p1
+    iget-short p2, p0, Lj$/time/LocalDate;->c:S
 
     .line 199
-    iget-short p1, p0, Lj$/time/LocalDate;->c:S
-
     .line 200
-    .line 201
-    if-ne p1, p2, :cond_4
+    if-ne p2, p1, :cond_4
 
+    .line 201
     .line 202
-    .line 203
     :goto_1
     return-object p0
 
-    .line 204
+    .line 203
     :cond_4
-    iget p1, p0, Lj$/time/LocalDate;->a:I
+    iget p2, p0, Lj$/time/LocalDate;->a:I
 
+    .line 204
     .line 205
+    iget-short p0, p0, Lj$/time/LocalDate;->b:S
+
     .line 206
-    iget-short p3, p0, Lj$/time/LocalDate;->b:S
-
     .line 207
-    .line 208
-    invoke-static {p1, p3, p2}, Lj$/time/LocalDate;->of(III)Lj$/time/LocalDate;
+    invoke-static {p2, p0, p1}, Lj$/time/LocalDate;->of(III)Lj$/time/LocalDate;
 
+    .line 208
     .line 209
     .line 210
+    move-result-object p0
+
     .line 211
-    move-result-object p1
+    return-object p0
 
     .line 212
-    return-object p1
+    :cond_5
+    invoke-interface {p3, p0, p1, p2}, Lj$/time/temporal/TemporalField;->O(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
 
     .line 213
-    :cond_5
-    invoke-interface {p3, p0, p1, p2}, Lj$/time/temporal/TemporalField;->x(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
-
     .line 214
     .line 215
+    move-result-object p0
+
     .line 216
-    move-result-object p1
+    check-cast p0, Lj$/time/LocalDate;
 
     .line 217
-    check-cast p1, Lj$/time/LocalDate;
-
     .line 218
+    return-object p0
+
     .line 219
-    return-object p1
-
-    .line 220
-    nop
-
-    .line 221
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_c
@@ -3098,7 +3038,92 @@
     .end packed-switch
 .end method
 
-.method public final W(Lj$/time/temporal/m;)Lj$/time/LocalDate;
+.method public final a(JLj$/time/temporal/q;)Lj$/time/chrono/ChronoLocalDate;
+    .locals 2
+
+    .line 1
+    const-wide/high16 v0, -0x8000000000000000L
+
+    .line 2
+    .line 3
+    cmp-long v0, p1, v0
+
+    .line 4
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const-wide p1, 0x7fffffffffffffffL
+
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->T(JLj$/time/temporal/q;)Lj$/time/LocalDate;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    const-wide/16 p1, 0x1
+
+    .line 17
+    .line 18
+    :goto_0
+    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->T(JLj$/time/temporal/q;)Lj$/time/LocalDate;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+
+    .line 23
+    :cond_0
+    neg-long p1, p1
+
+    .line 24
+    goto :goto_0
+.end method
+
+.method public final a(JLj$/time/temporal/q;)Lj$/time/temporal/l;
+    .locals 2
+
+    const-wide/high16 v0, -0x8000000000000000L
+
+    cmp-long v0, p1, v0
+
+    if-nez v0, :cond_0
+
+    const-wide p1, 0x7fffffffffffffffL
+
+    .line 25
+    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->T(JLj$/time/temporal/q;)Lj$/time/LocalDate;
+
+    move-result-object p0
+
+    const-wide/16 p1, 0x1
+
+    :goto_0
+    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->T(JLj$/time/temporal/q;)Lj$/time/LocalDate;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    neg-long p1, p1
+
+    goto :goto_0
+.end method
+
+.method public final a0(Lj$/time/temporal/m;)Lj$/time/LocalDate;
     .locals 1
 
     .line 1
@@ -3118,22 +3143,48 @@
 
     .line 8
     :cond_0
-    invoke-interface {p1, p0}, Lj$/time/temporal/m;->l(Lj$/time/temporal/l;)Lj$/time/temporal/l;
+    invoke-interface {p1, p0}, Lj$/time/temporal/m;->f(Lj$/time/temporal/l;)Lj$/time/temporal/l;
 
     .line 9
     .line 10
     .line 11
-    move-result-object p1
+    move-result-object p0
 
     .line 12
-    check-cast p1, Lj$/time/LocalDate;
+    check-cast p0, Lj$/time/LocalDate;
 
     .line 13
     .line 14
-    return-object p1
+    return-object p0
 .end method
 
-.method public final X(I)Lj$/time/LocalDate;
+.method public final bridge synthetic b(JLj$/time/temporal/TemporalField;)Lj$/time/chrono/ChronoLocalDate;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->Z(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final bridge synthetic b(JLj$/time/temporal/TemporalField;)Lj$/time/temporal/l;
+    .locals 0
+
+    .line 6
+    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->Z(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final b0(I)Lj$/time/LocalDate;
     .locals 3
 
     .line 1
@@ -3156,7 +3207,7 @@
     int-to-long v1, p1
 
     .line 9
-    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->z(J)V
+    invoke-virtual {v0, v1, v2}, Lj$/time/temporal/ChronoField;->Q(J)V
 
     .line 10
     .line 11
@@ -3165,82 +3216,45 @@
 
     .line 13
     .line 14
-    iget-short v1, p0, Lj$/time/LocalDate;->c:S
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 15
     .line 16
-    invoke-static {p1, v0, v1}, Lj$/time/LocalDate;->U(III)Lj$/time/LocalDate;
+    invoke-static {p1, v0, p0}, Lj$/time/LocalDate;->Y(III)Lj$/time/LocalDate;
 
     .line 17
     .line 18
     .line 19
-    move-result-object p1
+    move-result-object p0
 
     .line 20
-    return-object p1
-.end method
-
-.method public final a()Lj$/time/chrono/k;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj$/time/chrono/r;->c:Lj$/time/chrono/r;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final bridge synthetic b(JLj$/time/temporal/TemporalField;)Lj$/time/chrono/ChronoLocalDate;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->V(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final bridge synthetic b(JLj$/time/temporal/TemporalField;)Lj$/time/temporal/l;
-    .locals 0
-
-    .line 6
-    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->V(JLj$/time/temporal/TemporalField;)Lj$/time/LocalDate;
-
-    move-result-object p1
-
-    return-object p1
+    return-object p0
 .end method
 
 .method public final bridge synthetic c(JLj$/time/temporal/q;)Lj$/time/chrono/ChronoLocalDate;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->P(JLj$/time/temporal/q;)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->T(JLj$/time/temporal/q;)Lj$/time/LocalDate;
 
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    return-object p1
+    return-object p0
 .end method
 
 .method public final bridge synthetic c(JLj$/time/temporal/q;)Lj$/time/temporal/l;
     .locals 0
 
     .line 6
-    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->P(JLj$/time/temporal/q;)Lj$/time/LocalDate;
+    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->T(JLj$/time/temporal/q;)Lj$/time/LocalDate;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public compareTo(Lj$/time/chrono/ChronoLocalDate;)I
@@ -3259,27 +3273,27 @@
 
     .line 6
     .line 7
-    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->G(Lj$/time/LocalDate;)I
+    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->t(Lj$/time/LocalDate;)I
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    move-result p0
 
     .line 11
-    return p1
+    return p0
 
     .line 12
     :cond_0
-    invoke-static {p0, p1}, Lj$/com/android/tools/r8/a;->h(Lj$/time/chrono/ChronoLocalDate;Lj$/time/chrono/ChronoLocalDate;)I
+    invoke-super {p0, p1}, Lj$/time/chrono/ChronoLocalDate;->compareTo(Lj$/time/chrono/ChronoLocalDate;)I
 
     .line 13
     .line 14
     .line 15
-    move-result p1
+    move-result p0
 
     .line 16
-    return p1
+    return p0
 .end method
 
 .method public final bridge synthetic compareTo(Ljava/lang/Object;)I
@@ -3290,24 +3304,51 @@
 
     invoke-virtual {p0, p1}, Lj$/time/LocalDate;->compareTo(Lj$/time/chrono/ChronoLocalDate;)I
 
-    move-result p1
+    move-result p0
 
-    return p1
+    return p0
 .end method
 
-.method public final d(Lj$/time/temporal/TemporalField;)Z
+.method public final d(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lj$/time/temporal/p;->f:Lj$/time/e;
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    invoke-super {p0, p1}, Lj$/time/chrono/ChronoLocalDate;->d(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
+.end method
+
+.method public final bridge synthetic e(Lj$/time/LocalDate;)Lj$/time/temporal/l;
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lj$/com/android/tools/r8/a;->n(Lj$/time/chrono/ChronoLocalDate;Lj$/time/temporal/TemporalField;)Z
+    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->a0(Lj$/time/temporal/m;)Lj$/time/LocalDate;
 
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result-object p0
 
     .line 5
-    return p1
+    return-object p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -3340,15 +3381,15 @@
 
     .line 11
     .line 12
-    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->G(Lj$/time/LocalDate;)I
+    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->t(Lj$/time/LocalDate;)I
 
     .line 13
     .line 14
     .line 15
-    move-result p1
+    move-result p0
 
     .line 16
-    if-nez p1, :cond_1
+    if-nez p0, :cond_1
 
     .line 17
     .line 18
@@ -3359,50 +3400,26 @@
     return v2
 .end method
 
-.method public final g(Lj$/time/temporal/TemporalField;)I
-    .locals 1
+.method public final g()Lj$/time/chrono/k;
+    .locals 0
 
     .line 1
-    instance-of v0, p1, Lj$/time/temporal/ChronoField;
+    sget-object p0, Lj$/time/chrono/r;->c:Lj$/time/chrono/r;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->J(Lj$/time/temporal/TemporalField;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p1
-
-    .line 9
-    return p1
-
-    .line 10
-    :cond_0
-    invoke-static {p0, p1}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result p1
-
-    .line 14
-    return p1
+    return-object p0
 .end method
 
 .method public getDayOfMonth()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-short v0, p0, Lj$/time/LocalDate;->c:S
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getDayOfWeek()Lj$/time/DayOfWeek;
@@ -3428,7 +3445,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0, v1, v2, v3}, Lj$/com/android/tools/r8/a;->A(JJ)J
+    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->floorMod(JJ)J
 
     .line 11
     .line 12
@@ -3436,22 +3453,22 @@
     move-result-wide v0
 
     .line 14
-    long-to-int v1, v0
+    long-to-int p0, v0
 
     .line 15
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 p0, p0, 0x1
 
     .line 16
     .line 17
-    invoke-static {v1}, Lj$/time/DayOfWeek;->G(I)Lj$/time/DayOfWeek;
+    invoke-static {p0}, Lj$/time/DayOfWeek;->t(I)Lj$/time/DayOfWeek;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v0
+    move-result-object p0
 
     .line 21
-    return-object v0
+    return-object p0
 .end method
 
 .method public getDayOfYear()I
@@ -3466,7 +3483,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {p0}, Lj$/time/LocalDate;->L()Z
+    invoke-virtual {p0}, Lj$/time/LocalDate;->O()Z
 
     .line 6
     .line 7
@@ -3474,7 +3491,7 @@
     move-result v1
 
     .line 9
-    invoke-virtual {v0, v1}, Lj$/time/Month;->G(Z)I
+    invoke-virtual {v0, v1}, Lj$/time/Month;->t(Z)I
 
     .line 10
     .line 11
@@ -3482,11 +3499,11 @@
     move-result v0
 
     .line 13
-    iget-short v1, p0, Lj$/time/LocalDate;->c:S
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 14
     .line 15
-    add-int/2addr v0, v1
+    add-int/2addr v0, p0
 
     .line 16
     add-int/lit8 v0, v0, -0x1
@@ -3497,63 +3514,83 @@
 .end method
 
 .method public getMonth()Lj$/time/Month;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-short v0, p0, Lj$/time/LocalDate;->b:S
+    iget-short p0, p0, Lj$/time/LocalDate;->b:S
 
     .line 2
     .line 3
-    invoke-static {v0}, Lj$/time/Month;->J(I)Lj$/time/Month;
+    invoke-static {p0}, Lj$/time/Month;->F(I)Lj$/time/Month;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getMonthValue()I
-    .locals 1
-
-    .line 1
-    iget-short v0, p0, Lj$/time/LocalDate;->b:S
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public getYear()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lj$/time/LocalDate;->a:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final bridge synthetic h(Lj$/time/LocalDate;)Lj$/time/temporal/l;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->W(Lj$/time/temporal/m;)Lj$/time/LocalDate;
+    iget-short p0, p0, Lj$/time/LocalDate;->b:S
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p1
+    return p0
+.end method
 
+.method public getYear()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lj$/time/LocalDate;->a:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final h(Lj$/time/temporal/TemporalField;)I
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Lj$/time/temporal/ChronoField;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
     .line 5
-    return-object p1
+    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->F(Lj$/time/temporal/TemporalField;)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p0
+
+    .line 9
+    return p0
+
+    .line 10
+    :cond_0
+    invoke-super {p0, p1}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p0
+
+    .line 14
+    return p0
 .end method
 
 .method public hashCode()I
-    .locals 4
+    .locals 3
 
     .line 1
     iget v0, p0, Lj$/time/LocalDate;->a:I
@@ -3564,11 +3601,11 @@
 
     .line 4
     .line 5
-    iget-short v2, p0, Lj$/time/LocalDate;->c:S
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 6
     .line 7
-    and-int/lit16 v3, v0, -0x800
+    and-int/lit16 v2, v0, -0x800
 
     .line 8
     .line 9
@@ -3583,16 +3620,133 @@
     add-int/2addr v0, v1
 
     .line 14
-    add-int/2addr v0, v2
+    add-int/2addr v0, p0
 
     .line 15
-    xor-int/2addr v0, v3
+    xor-int p0, v2, v0
 
     .line 16
-    return v0
+    .line 17
+    return p0
 .end method
 
-.method public final i(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+.method public final bridge synthetic j(Lj$/time/temporal/m;)Lj$/time/chrono/ChronoLocalDate;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->a0(Lj$/time/temporal/m;)Lj$/time/LocalDate;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final k(Lj$/time/temporal/TemporalField;)J
+    .locals 4
+
+    .line 1
+    instance-of v0, p1, Lj$/time/temporal/ChronoField;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_2
+
+    .line 4
+    .line 5
+    sget-object v0, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
+
+    .line 6
+    .line 7
+    if-ne p1, v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Lj$/time/LocalDate;->toEpochDay()J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide p0
+
+    .line 13
+    return-wide p0
+
+    .line 14
+    :cond_0
+    sget-object v0, Lj$/time/temporal/ChronoField;->PROLEPTIC_MONTH:Lj$/time/temporal/ChronoField;
+
+    .line 15
+    .line 16
+    if-ne p1, v0, :cond_1
+
+    .line 17
+    .line 18
+    iget p1, p0, Lj$/time/LocalDate;->a:I
+
+    .line 19
+    .line 20
+    int-to-long v0, p1
+
+    .line 21
+    const-wide/16 v2, 0xc
+
+    .line 22
+    .line 23
+    mul-long/2addr v0, v2
+
+    .line 24
+    iget-short p0, p0, Lj$/time/LocalDate;->b:S
+
+    .line 25
+    .line 26
+    int-to-long p0, p0
+
+    .line 27
+    add-long/2addr v0, p0
+
+    .line 28
+    const-wide/16 p0, 0x1
+
+    .line 29
+    .line 30
+    sub-long/2addr v0, p0
+
+    .line 31
+    return-wide v0
+
+    .line 32
+    :cond_1
+    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->F(Lj$/time/temporal/TemporalField;)I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result p0
+
+    .line 36
+    int-to-long p0, p0
+
+    .line 37
+    return-wide p0
+
+    .line 38
+    :cond_2
+    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalField;->J(Lj$/time/temporal/TemporalAccessor;)J
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-wide p0
+
+    .line 42
+    return-wide p0
+.end method
+
+.method public final l(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
     .locals 4
 
     .line 1
@@ -3623,7 +3777,7 @@
 
     .line 13
     .line 14
-    sget-object p1, Lj$/time/d;->a:[I
+    sget-object p1, Lj$/time/f;->a:[I
 
     .line 15
     .line 16
@@ -3671,11 +3825,11 @@
 
     .line 35
     .line 36
-    iget-object p1, v0, Lj$/time/temporal/ChronoField;->b:Lj$/time/temporal/s;
+    iget-object p0, v0, Lj$/time/temporal/ChronoField;->b:Lj$/time/temporal/s;
 
     .line 37
     .line 38
-    return-object p1
+    return-object p0
 
     .line 39
     :cond_0
@@ -3684,44 +3838,44 @@
     .line 40
     .line 41
     .line 42
-    move-result p1
+    move-result p0
 
     .line 43
-    if-gtz p1, :cond_1
+    if-gtz p0, :cond_1
 
     .line 44
     .line 45
-    const-wide/32 v0, 0x3b9aca00
+    const-wide/32 p0, 0x3b9aca00
 
     .line 46
     .line 47
     .line 48
-    invoke-static {v2, v3, v0, v1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
+    invoke-static {v2, v3, p0, p1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
 
     .line 49
     .line 50
     .line 51
-    move-result-object p1
+    move-result-object p0
 
     .line 52
-    return-object p1
+    return-object p0
 
     .line 53
     :cond_1
-    const-wide/32 v0, 0x3b9ac9ff
+    const-wide/32 p0, 0x3b9ac9ff
 
     .line 54
     .line 55
     .line 56
-    invoke-static {v2, v3, v0, v1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
+    invoke-static {v2, v3, p0, p1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
 
     .line 57
     .line 58
     .line 59
-    move-result-object p1
+    move-result-object p0
 
     .line 60
-    return-object p1
+    return-object p0
 
     .line 61
     :cond_2
@@ -3741,19 +3895,19 @@
 
     .line 68
     .line 69
-    invoke-virtual {p0}, Lj$/time/LocalDate;->L()Z
+    invoke-virtual {p0}, Lj$/time/LocalDate;->O()Z
 
     .line 70
     .line 71
     .line 72
-    move-result p1
+    move-result p0
 
     .line 73
-    if-nez p1, :cond_3
+    if-nez p0, :cond_3
 
     .line 74
     .line 75
-    const-wide/16 v0, 0x4
+    const-wide/16 p0, 0x4
 
     .line 76
     .line 77
@@ -3761,36 +3915,36 @@
 
     .line 78
     :cond_3
-    const-wide/16 v0, 0x5
+    const-wide/16 p0, 0x5
 
     .line 79
     .line 80
     :goto_0
-    invoke-static {v2, v3, v0, v1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
+    invoke-static {v2, v3, p0, p1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
 
     .line 81
     .line 82
     .line 83
-    move-result-object p1
+    move-result-object p0
 
     .line 84
-    return-object p1
+    return-object p0
 
     .line 85
     :cond_4
-    invoke-virtual {p0}, Lj$/time/LocalDate;->L()Z
+    invoke-virtual {p0}, Lj$/time/LocalDate;->O()Z
 
     .line 86
     .line 87
     .line 88
-    move-result p1
+    move-result p0
 
     .line 89
-    if-eqz p1, :cond_5
+    if-eqz p0, :cond_5
 
     .line 90
     .line 91
-    const/16 p1, 0x16e
+    const/16 p0, 0x16e
 
     .line 92
     .line 93
@@ -3798,58 +3952,58 @@
 
     .line 94
     :cond_5
-    const/16 p1, 0x16d
+    const/16 p0, 0x16d
 
     .line 95
     .line 96
     :goto_1
-    int-to-long v0, p1
+    int-to-long p0, p0
 
     .line 97
-    invoke-static {v2, v3, v0, v1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
+    invoke-static {v2, v3, p0, p1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
 
     .line 98
     .line 99
     .line 100
-    move-result-object p1
+    move-result-object p0
 
     .line 101
-    return-object p1
+    return-object p0
 
     .line 102
     :cond_6
-    invoke-virtual {p0}, Lj$/time/LocalDate;->M()I
+    invoke-virtual {p0}, Lj$/time/LocalDate;->Q()I
 
     .line 103
     .line 104
     .line 105
-    move-result p1
+    move-result p0
 
     .line 106
-    int-to-long v0, p1
+    int-to-long p0, p0
 
     .line 107
-    invoke-static {v2, v3, v0, v1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
+    invoke-static {v2, v3, p0, p1}, Lj$/time/temporal/s;->f(JJ)Lj$/time/temporal/s;
 
     .line 108
     .line 109
     .line 110
-    move-result-object p1
+    move-result-object p0
 
     .line 111
-    return-object p1
+    return-object p0
 
     .line 112
     :cond_7
-    new-instance v0, Lj$/time/temporal/r;
+    new-instance p0, Lj$/time/temporal/r;
 
     .line 113
     .line 114
-    const-string v1, "Unsupported field: "
+    const-string v0, "Unsupported field: "
 
     .line 115
     .line 116
-    invoke-static {v1, p1}, Lj$/time/b;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lj$/time/c;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
 
     .line 117
     .line 118
@@ -3857,115 +4011,76 @@
     move-result-object p1
 
     .line 120
-    invoke-direct {v0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 121
     .line 122
     .line 123
-    throw v0
+    throw p0
 
     .line 124
     :cond_8
-    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalField;->h(Lj$/time/temporal/TemporalAccessor;)Lj$/time/temporal/s;
+    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalField;->x(Lj$/time/temporal/TemporalAccessor;)Lj$/time/temporal/s;
 
     .line 125
     .line 126
     .line 127
-    move-result-object p1
+    move-result-object p0
 
     .line 128
-    return-object p1
+    return-object p0
 .end method
 
-.method public final l(Lj$/time/temporal/l;)Lj$/time/temporal/l;
-    .locals 0
+.method public final t(Lj$/time/LocalDate;)I
+    .locals 2
 
     .line 1
-    invoke-static {p0, p1}, Lj$/com/android/tools/r8/a;->a(Lj$/time/chrono/ChronoLocalDate;Lj$/time/temporal/l;)Lj$/time/temporal/l;
+    iget v0, p0, Lj$/time/LocalDate;->a:I
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final bridge synthetic s(Lj$/time/temporal/m;)Lj$/time/chrono/ChronoLocalDate;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->W(Lj$/time/temporal/m;)Lj$/time/LocalDate;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final t(JLj$/time/temporal/a;)Lj$/time/temporal/l;
-    .locals 3
-
-    .line 1
-    const-wide/high16 v0, -0x8000000000000000L
-
-    .line 2
-    .line 3
-    cmp-long v2, p1, v0
+    iget v1, p1, Lj$/time/LocalDate;->a:I
 
     .line 4
     .line 5
-    if-nez v2, :cond_0
+    sub-int/2addr v0, v1
 
     .line 6
-    .line 7
-    const-wide p1, 0x7fffffffffffffffL
+    if-nez v0, :cond_0
 
+    .line 7
     .line 8
+    iget-short v0, p0, Lj$/time/LocalDate;->b:S
+
     .line 9
     .line 10
+    iget-short v1, p1, Lj$/time/LocalDate;->b:S
+
     .line 11
     .line 12
-    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->P(JLj$/time/temporal/q;)Lj$/time/LocalDate;
+    sub-int/2addr v0, v1
 
     .line 13
+    if-nez v0, :cond_0
+
     .line 14
     .line 15
-    move-result-object p1
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 16
-    const-wide/16 v0, 0x1
-
     .line 17
+    iget-short p1, p1, Lj$/time/LocalDate;->c:S
+
     .line 18
-    invoke-virtual {p1, v0, v1, p3}, Lj$/time/LocalDate;->P(JLj$/time/temporal/q;)Lj$/time/LocalDate;
-
     .line 19
+    sub-int/2addr p0, p1
+
     .line 20
+    return p0
+
     .line 21
-    move-result-object p1
-
-    .line 22
-    return-object p1
-
-    .line 23
     :cond_0
-    neg-long p1, p1
-
-    .line 24
-    invoke-virtual {p0, p1, p2, p3}, Lj$/time/LocalDate;->P(JLj$/time/temporal/q;)Lj$/time/LocalDate;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p1
-
-    .line 28
-    return-object p1
+    return v0
 .end method
 
 .method public toEpochDay()J
@@ -3990,207 +4105,205 @@
 
     .line 8
     .line 9
-    mul-long v4, v4, v0
+    mul-long/2addr v4, v0
 
     .line 10
-    .line 11
     const-wide/16 v6, 0x0
 
+    .line 11
     .line 12
+    cmp-long v6, v0, v6
+
     .line 13
-    cmp-long v8, v0, v6
-
     .line 14
-    .line 15
-    if-ltz v8, :cond_0
+    if-ltz v6, :cond_0
 
+    .line 15
     .line 16
-    .line 17
     const-wide/16 v6, 0x3
 
+    .line 17
     .line 18
-    .line 19
     add-long/2addr v6, v0
 
-    .line 20
+    .line 19
     const-wide/16 v8, 0x4
 
+    .line 20
     .line 21
-    .line 22
     div-long/2addr v6, v8
 
-    .line 23
+    .line 22
     const-wide/16 v8, 0x63
 
+    .line 23
     .line 24
-    .line 25
     add-long/2addr v8, v0
 
-    .line 26
+    .line 25
     const-wide/16 v10, 0x64
 
+    .line 26
     .line 27
-    .line 28
     div-long/2addr v8, v10
 
-    .line 29
+    .line 28
     sub-long/2addr v6, v8
 
-    .line 30
+    .line 29
     const-wide/16 v8, 0x18f
 
+    .line 30
     .line 31
-    .line 32
     add-long/2addr v0, v8
 
-    .line 33
+    .line 32
     const-wide/16 v8, 0x190
 
+    .line 33
     .line 34
-    .line 35
     div-long/2addr v0, v8
 
-    .line 36
+    .line 35
     add-long/2addr v0, v6
 
-    .line 37
+    .line 36
     add-long/2addr v0, v4
 
-    .line 38
+    .line 37
     goto :goto_0
 
-    .line 39
+    .line 38
     :cond_0
     const-wide/16 v6, -0x4
 
+    .line 39
     .line 40
-    .line 41
     div-long v6, v0, v6
 
+    .line 41
     .line 42
-    .line 43
     const-wide/16 v8, -0x64
 
+    .line 43
     .line 44
-    .line 45
     div-long v8, v0, v8
 
+    .line 45
     .line 46
-    .line 47
     sub-long/2addr v6, v8
 
-    .line 48
+    .line 47
     const-wide/16 v8, -0x190
 
+    .line 48
     .line 49
-    .line 50
     div-long/2addr v0, v8
 
-    .line 51
+    .line 50
     add-long/2addr v0, v6
 
-    .line 52
+    .line 51
     sub-long v0, v4, v0
 
+    .line 52
     .line 53
-    .line 54
     :goto_0
     const-wide/16 v4, 0x16f
 
+    .line 54
     .line 55
+    mul-long/2addr v4, v2
+
     .line 56
-    mul-long v4, v4, v2
+    const-wide/16 v6, 0x16a
 
     .line 57
     .line 58
-    const-wide/16 v6, 0x16a
-
-    .line 59
-    .line 60
     sub-long/2addr v4, v6
 
-    .line 61
+    .line 59
     const-wide/16 v6, 0xc
 
-    .line 62
-    .line 63
+    .line 60
+    .line 61
     div-long/2addr v4, v6
 
-    .line 64
+    .line 62
     add-long/2addr v4, v0
 
-    .line 65
+    .line 63
     iget-short v0, p0, Lj$/time/LocalDate;->c:S
+
+    .line 64
+    .line 65
+    add-int/lit8 v0, v0, -0x1
 
     .line 66
     .line 67
-    add-int/lit8 v0, v0, -0x1
-
-    .line 68
-    .line 69
     int-to-long v0, v0
 
-    .line 70
+    .line 68
     add-long/2addr v4, v0
 
-    .line 71
+    .line 69
     const-wide/16 v0, 0x2
+
+    .line 70
+    .line 71
+    cmp-long v2, v2, v0
 
     .line 72
     .line 73
-    cmp-long v6, v2, v0
+    if-lez v2, :cond_2
 
     .line 74
     .line 75
-    if-lez v6, :cond_2
+    const-wide/16 v2, 0x1
 
     .line 76
     .line 77
-    const-wide/16 v2, 0x1
+    sub-long v2, v4, v2
 
     .line 78
     .line 79
-    sub-long v2, v4, v2
+    invoke-virtual {p0}, Lj$/time/LocalDate;->O()Z
 
     .line 80
     .line 81
-    invoke-virtual {p0}, Lj$/time/LocalDate;->L()Z
-
     .line 82
+    move-result p0
+
     .line 83
+    if-nez p0, :cond_1
+
     .line 84
-    move-result v6
-
     .line 85
-    if-nez v6, :cond_1
-
-    .line 86
-    .line 87
     sub-long/2addr v4, v0
 
-    .line 88
+    .line 86
     goto :goto_1
 
-    .line 89
+    .line 87
     :cond_1
     move-wide v4, v2
 
-    .line 90
+    .line 88
     :cond_2
     :goto_1
     const-wide/32 v0, 0xafaa8
 
+    .line 89
+    .line 90
     .line 91
-    .line 92
-    .line 93
     sub-long/2addr v4, v0
 
-    .line 94
+    .line 92
     return-wide v4
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 7
+    .locals 6
 
     .line 1
     iget v0, p0, Lj$/time/LocalDate;->a:I
@@ -4201,7 +4314,7 @@
 
     .line 4
     .line 5
-    iget-short v2, p0, Lj$/time/LocalDate;->c:S
+    iget-short p0, p0, Lj$/time/LocalDate;->c:S
 
     .line 6
     .line 7
@@ -4210,27 +4323,27 @@
     .line 8
     .line 9
     .line 10
-    move-result v3
+    move-result v2
 
     .line 11
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 12
     .line 13
-    const/16 v5, 0xa
+    const/16 v4, 0xa
 
     .line 14
     .line 15
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 16
     .line 17
     .line 18
-    const/16 v6, 0x3e8
+    const/16 v5, 0x3e8
 
     .line 19
     .line 20
-    if-ge v3, v6, :cond_1
+    if-ge v2, v5, :cond_1
 
     .line 21
     .line 22
@@ -4242,7 +4355,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 27
     .line 28
@@ -4250,7 +4363,7 @@
     const/4 v0, 0x1
 
     .line 30
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
@@ -4263,7 +4376,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 37
     .line 38
@@ -4271,7 +4384,7 @@
     const/4 v0, 0x0
 
     .line 40
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
 
     .line 41
     .line 42
@@ -4280,25 +4393,25 @@
 
     .line 44
     :cond_1
-    const/16 v3, 0x270f
+    const/16 v2, 0x270f
 
     .line 45
     .line 46
-    if-le v0, v3, :cond_2
+    if-le v0, v2, :cond_2
 
     .line 47
     .line 48
-    const/16 v3, 0x2b
+    const/16 v2, 0x2b
 
     .line 49
     .line 50
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 51
     .line 52
     .line 53
     :cond_2
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 54
     .line 55
@@ -4308,204 +4421,60 @@
 
     .line 57
     .line 58
-    const-string v3, "-0"
+    const-string v2, "-0"
 
     .line 59
     .line 60
-    if-ge v1, v5, :cond_3
+    if-ge v1, v4, :cond_3
 
     .line 61
     .line 62
-    move-object v6, v3
+    move-object v5, v2
 
     .line 63
     goto :goto_1
 
     .line 64
     :cond_3
-    move-object v6, v0
+    move-object v5, v0
 
     .line 65
     :goto_1
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 66
     .line 67
     .line 68
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 69
     .line 70
     .line 71
-    if-ge v2, v5, :cond_4
+    if-ge p0, v4, :cond_4
 
     .line 72
     .line 73
-    move-object v0, v3
+    move-object v0, v2
 
     .line 74
     :cond_4
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 75
     .line 76
     .line 77
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 78
     .line 79
     .line 80
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 81
     .line 82
     .line 83
-    move-result-object v0
+    move-result-object p0
 
     .line 84
-    return-object v0
-.end method
-
-.method public final x(Lj$/time/temporal/TemporalField;)J
-    .locals 4
-
-    .line 1
-    instance-of v0, p1, Lj$/time/temporal/ChronoField;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_2
-
-    .line 4
-    .line 5
-    sget-object v0, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
-
-    .line 6
-    .line 7
-    if-ne p1, v0, :cond_0
-
-    .line 8
-    .line 9
-    invoke-virtual {p0}, Lj$/time/LocalDate;->toEpochDay()J
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-wide v0
-
-    .line 13
-    return-wide v0
-
-    .line 14
-    :cond_0
-    sget-object v0, Lj$/time/temporal/ChronoField;->PROLEPTIC_MONTH:Lj$/time/temporal/ChronoField;
-
-    .line 15
-    .line 16
-    if-ne p1, v0, :cond_1
-
-    .line 17
-    .line 18
-    iget p1, p0, Lj$/time/LocalDate;->a:I
-
-    .line 19
-    .line 20
-    int-to-long v0, p1
-
-    .line 21
-    const-wide/16 v2, 0xc
-
-    .line 22
-    .line 23
-    mul-long v0, v0, v2
-
-    .line 24
-    .line 25
-    iget-short p1, p0, Lj$/time/LocalDate;->b:S
-
-    .line 26
-    .line 27
-    int-to-long v2, p1
-
-    .line 28
-    add-long/2addr v0, v2
-
-    .line 29
-    const-wide/16 v2, 0x1
-
-    .line 30
-    .line 31
-    sub-long/2addr v0, v2
-
-    .line 32
-    return-wide v0
-
-    .line 33
-    :cond_1
-    invoke-virtual {p0, p1}, Lj$/time/LocalDate;->J(Lj$/time/temporal/TemporalField;)I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result p1
-
-    .line 37
-    int-to-long v0, p1
-
-    .line 38
-    return-wide v0
-
-    .line 39
-    :cond_2
-    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalField;->t(Lj$/time/temporal/TemporalAccessor;)J
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-wide v0
-
-    .line 43
-    return-wide v0
-.end method
-
-.method public final y(Lj$/time/LocalTime;)Lj$/time/chrono/ChronoLocalDateTime;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/time/LocalDateTime;->of(Lj$/time/LocalDate;Lj$/time/LocalTime;)Lj$/time/LocalDateTime;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final z(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/p;->f:Lj$/time/e;
-
-    .line 2
-    .line 3
-    if-ne p1, v0, :cond_0
-
-    .line 4
-    .line 5
     return-object p0
-
-    .line 6
-    :cond_0
-    invoke-static {p0, p1}, Lj$/com/android/tools/r8/a;->p(Lj$/time/chrono/ChronoLocalDate;Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    return-object p1
 .end method

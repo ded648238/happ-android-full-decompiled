@@ -1,12 +1,12 @@
 .class public final Lio/sentry/android/replay/gestures/a;
-.super Lio/sentry/android/replay/util/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lio/sentry/android/replay/util/c;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final R:Lio/sentry/android/core/SentryAndroidOptions;
+.field public final Y:Lio/sentry/android/core/SentryAndroidOptions;
 
-.field public volatile S:Lio/sentry/android/replay/ReplayIntegration;
+.field public volatile Z:Lio/sentry/android/replay/ReplayIntegration;
 
 
 # direct methods
@@ -14,16 +14,16 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p3}, Lio/sentry/android/replay/util/b;-><init>(Landroid/view/Window$Callback;)V
+    invoke-direct {p0, p3}, Lio/sentry/android/replay/util/c;-><init>(Landroid/view/Window$Callback;)V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/sentry/android/replay/gestures/a;->R:Lio/sentry/android/core/SentryAndroidOptions;
+    iput-object p1, p0, Lio/sentry/android/replay/gestures/a;->Y:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/sentry/android/replay/gestures/a;->S:Lio/sentry/android/replay/ReplayIntegration;
+    iput-object p2, p0, Lio/sentry/android/replay/gestures/a;->Z:Lio/sentry/android/replay/ReplayIntegration;
 
     .line 7
     .line 8
@@ -54,7 +54,7 @@
     .line 9
     .line 10
     :try_start_0
-    iget-object v1, p0, Lio/sentry/android/replay/gestures/a;->S:Lio/sentry/android/replay/ReplayIntegration;
+    iget-object v1, p0, Lio/sentry/android/replay/gestures/a;->Z:Lio/sentry/android/replay/ReplayIntegration;
 
     .line 11
     .line 12
@@ -62,60 +62,60 @@
 
     .line 13
     .line 14
-    iget-object v2, v1, Lio/sentry/android/replay/ReplayIntegration;->a0:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v2, v1, Lio/sentry/android/replay/ReplayIntegration;->n0:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 15
     .line 16
-    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     .line 17
     .line 18
     .line 19
-    move-result v2
+    move-result-object v2
 
     .line 20
-    if-eqz v2, :cond_1
+    check-cast v2, Lio/sentry/android/replay/p;
 
     .line 21
     .line 22
-    iget-object v2, v1, Lio/sentry/android/replay/ReplayIntegration;->g0:Lna6;
+    iget-object v1, v1, Lio/sentry/android/replay/ReplayIntegration;->k0:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 23
     .line 24
-    iget-object v3, v2, Lna6;->Q:Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     .line 25
     .line 26
-    check-cast v3, Lio/sentry/android/replay/q;
-
     .line 27
+    move-result v1
+
     .line 28
-    sget-object v4, Lio/sentry/android/replay/q;->STARTED:Lio/sentry/android/replay/q;
+    if-eqz v1, :cond_1
 
     .line 29
     .line 30
-    if-eq v3, v4, :cond_0
+    iget-object v1, v2, Lio/sentry/android/replay/p;->b:Lio/sentry/android/replay/y;
 
     .line 31
     .line 32
-    iget-object v2, v2, Lna6;->Q:Ljava/lang/Object;
+    sget-object v3, Lio/sentry/android/replay/y;->STARTED:Lio/sentry/android/replay/y;
 
     .line 33
     .line 34
-    check-cast v2, Lio/sentry/android/replay/q;
+    if-eq v1, v3, :cond_0
 
     .line 35
     .line 36
-    sget-object v3, Lio/sentry/android/replay/q;->RESUMED:Lio/sentry/android/replay/q;
+    sget-object v3, Lio/sentry/android/replay/y;->RESUMED:Lio/sentry/android/replay/y;
 
     .line 37
     .line 38
-    if-ne v2, v3, :cond_1
+    if-ne v1, v3, :cond_1
 
     .line 39
     .line 40
     :cond_0
-    iget-object v1, v1, Lio/sentry/android/replay/ReplayIntegration;->c0:Lio/sentry/android/replay/capture/c;
+    iget-object v1, v2, Lio/sentry/android/replay/p;->d:Lio/sentry/android/replay/capture/d;
 
     .line 41
     .line 42
@@ -123,7 +123,7 @@
 
     .line 43
     .line 44
-    invoke-virtual {v1, v0}, Lio/sentry/android/replay/capture/c;->i(Landroid/view/MotionEvent;)V
+    invoke-virtual {v1, v0}, Lio/sentry/android/replay/capture/d;->i(Landroid/view/MotionEvent;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -145,11 +145,11 @@
 
     .line 52
     :try_start_1
-    iget-object v2, p0, Lio/sentry/android/replay/gestures/a;->R:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object v2, p0, Lio/sentry/android/replay/gestures/a;->Y:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 53
     .line 54
-    invoke-virtual {v2}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v2}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 55
     .line 56
@@ -157,7 +157,7 @@
     move-result-object v2
 
     .line 58
-    sget-object v3, Lio/sentry/m5;->ERROR:Lio/sentry/m5;
+    sget-object v3, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
 
     .line 59
     .line 60
@@ -165,7 +165,7 @@
 
     .line 61
     .line 62
-    invoke-interface {v2, v3, v4, v1}, Lio/sentry/ILogger;->d(Lio/sentry/m5;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {v2, v3, v4, v1}, Lio/sentry/ILogger;->d(Lio/sentry/o5;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -176,7 +176,7 @@
 
     .line 66
     :catchall_1
-    move-exception p1
+    move-exception p0
 
     .line 67
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
@@ -184,18 +184,18 @@
     .line 68
     .line 69
     .line 70
-    throw p1
+    throw p0
 
     .line 71
     :cond_2
     :goto_1
-    invoke-super {p0, p1}, Lio/sentry/android/replay/util/b;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Lio/sentry/android/replay/util/c;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
     .line 72
     .line 73
     .line 74
-    move-result p1
+    move-result p0
 
     .line 75
-    return p1
+    return p0
 .end method

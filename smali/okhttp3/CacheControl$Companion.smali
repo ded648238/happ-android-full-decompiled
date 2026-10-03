@@ -1,6 +1,6 @@
 .class public final Lokhttp3/CacheControl$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -54,7 +54,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -67,7 +67,7 @@
 .end method
 
 .method private final indexOfElement(Ljava/lang/String;Ljava/lang/String;I)I
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/String;->length()I
@@ -75,11 +75,11 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
     :goto_0
-    if-ge p3, v0, :cond_1
+    if-ge p3, p0, :cond_1
 
     .line 6
     .line 7
@@ -88,18 +88,18 @@
     .line 8
     .line 9
     .line 10
-    move-result v1
+    move-result v0
 
     .line 11
-    invoke-static {p2, v1}, Lsl6;->l0(Ljava/lang/CharSequence;C)Z
+    invoke-static {p2, v0}, Lea7;->M0(Ljava/lang/CharSequence;C)Z
 
     .line 12
     .line 13
     .line 14
-    move-result v1
+    move-result v0
 
     .line 15
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 16
     .line 17
@@ -120,10 +120,10 @@
     .line 22
     .line 23
     .line 24
-    move-result p1
+    move-result p0
 
     .line 25
-    return p1
+    return p0
 .end method
 
 .method public static synthetic indexOfElement$default(Lokhttp3/CacheControl$Companion;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)I
@@ -260,7 +260,7 @@
 
     .line 46
     .line 47
-    invoke-static {v3, v6}, Lzl6;->Z(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v6}, Lla7;->A0(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 48
     .line 49
@@ -295,7 +295,7 @@
 
     .line 60
     .line 61
-    invoke-static {v3, v6}, Lzl6;->Z(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v6}, Lla7;->A0(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 62
     .line 63
@@ -347,7 +347,7 @@
     move-result-object v3
 
     .line 85
-    invoke-static {v3}, Lsl6;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v3}, Lea7;->y1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     .line 86
     .line 87
@@ -458,7 +458,7 @@
     const/4 v4, 0x4
 
     .line 139
-    invoke-static {v5, v6, v1, v4}, Lsl6;->s0(Ljava/lang/CharSequence;CII)I
+    invoke-static {v5, v6, v1, v4}, Lea7;->T0(Ljava/lang/CharSequence;CII)I
 
     .line 140
     .line 141
@@ -502,7 +502,7 @@
     move-result-object v1
 
     .line 160
-    invoke-static {v1}, Lsl6;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v1}, Lea7;->y1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     .line 161
     .line 162
@@ -557,418 +557,422 @@
     move v3, v4
 
     .line 184
-    const/4 v10, 0x1
+    move/from16 v10, v23
 
     .line 185
+    .line 186
     goto :goto_3
 
-    .line 186
+    .line 187
     :cond_5
     const-string v6, "no-store"
 
-    .line 187
     .line 188
+    .line 189
     invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    .line 189
     .line 190
     .line 191
+    .line 192
     move-result v6
 
-    .line 192
+    .line 193
     if-eqz v6, :cond_6
 
-    .line 193
     .line 194
+    .line 195
     move-object/from16 v1, p1
 
-    .line 195
     .line 196
+    .line 197
     move v3, v4
 
-    .line 197
-    const/4 v11, 0x1
-
     .line 198
-    goto/16 :goto_3
+    move/from16 v11, v23
 
     .line 199
     .line 200
-    :cond_6
-    const-string v6, "max-age"
+    goto/16 :goto_3
 
     .line 201
     .line 202
-    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    :cond_6
+    const-string v6, "max-age"
 
     .line 203
     .line 204
+    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
     .line 205
+    .line 206
+    .line 207
     move-result v6
 
-    .line 206
+    .line 208
     if-eqz v6, :cond_8
 
-    .line 207
-    .line 208
+    .line 209
+    .line 210
     const/4 v6, -0x1
 
-    .line 209
+    .line 211
     invoke-static {v1, v6}, Lokhttp3/internal/Util;->toNonNegativeInt(Ljava/lang/String;I)I
 
-    .line 210
-    .line 211
     .line 212
+    .line 213
+    .line 214
     move-result v12
 
-    .line 213
+    .line 215
     :cond_7
     :goto_6
     move-object/from16 v1, p1
 
-    .line 214
-    .line 215
+    .line 216
+    .line 217
     move v3, v4
 
-    .line 216
-    goto/16 :goto_3
-
-    .line 217
     .line 218
-    :cond_8
-    const-string v6, "s-maxage"
+    goto/16 :goto_3
 
     .line 219
     .line 220
-    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    :cond_8
+    const-string v6, "s-maxage"
 
     .line 221
     .line 222
+    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
     .line 223
+    .line 224
+    .line 225
     move-result v6
 
-    .line 224
+    .line 226
     if-eqz v6, :cond_9
 
-    .line 225
-    .line 226
+    .line 227
+    .line 228
     const/4 v6, -0x1
 
-    .line 227
+    .line 229
     invoke-static {v1, v6}, Lokhttp3/internal/Util;->toNonNegativeInt(Ljava/lang/String;I)I
 
-    .line 228
-    .line 229
     .line 230
+    .line 231
+    .line 232
     move-result v13
 
-    .line 231
+    .line 233
     goto :goto_6
 
-    .line 232
+    .line 234
     :cond_9
     const-string v6, "private"
 
-    .line 233
-    .line 234
-    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
     .line 235
     .line 236
+    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
     .line 237
+    .line 238
+    .line 239
     move-result v6
 
-    .line 238
-    if-eqz v6, :cond_a
-
-    .line 239
     .line 240
-    move-object/from16 v1, p1
+    if-eqz v6, :cond_a
 
     .line 241
     .line 242
-    move v3, v4
+    move-object/from16 v1, p1
 
     .line 243
-    const/4 v14, 0x1
-
     .line 244
-    goto/16 :goto_3
+    move v3, v4
 
     .line 245
+    move/from16 v14, v23
+
     .line 246
+    .line 247
+    goto/16 :goto_3
+
+    .line 248
+    .line 249
     :cond_a
     const-string v6, "public"
 
-    .line 247
-    .line 248
-    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    .line 249
     .line 250
     .line 251
-    move-result v6
+    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     .line 252
-    if-eqz v6, :cond_b
-
     .line 253
     .line 254
-    move-object/from16 v1, p1
+    move-result v6
 
     .line 255
-    .line 256
-    move v3, v4
+    if-eqz v6, :cond_b
 
+    .line 256
     .line 257
-    const/4 v15, 0x1
+    move-object/from16 v1, p1
 
     .line 258
-    goto/16 :goto_3
-
     .line 259
+    move v3, v4
+
     .line 260
-    :cond_b
-    const-string v6, "must-revalidate"
+    move/from16 v15, v23
 
     .line 261
     .line 262
-    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    goto/16 :goto_3
 
     .line 263
     .line 264
-    .line 265
-    move-result v6
+    :cond_b
+    const-string v6, "must-revalidate"
 
+    .line 265
     .line 266
-    if-eqz v6, :cond_c
+    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     .line 267
     .line 268
-    move-object/from16 v1, p1
-
     .line 269
+    move-result v6
+
     .line 270
-    move v3, v4
+    if-eqz v6, :cond_c
 
     .line 271
-    const/16 v16, 0x1
-
     .line 272
-    .line 273
-    goto/16 :goto_3
+    move-object/from16 v1, p1
 
+    .line 273
     .line 274
+    move v3, v4
+
     .line 275
-    :cond_c
-    const-string v6, "max-stale"
+    move/from16 v16, v23
 
     .line 276
     .line 277
-    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    goto/16 :goto_3
 
     .line 278
     .line 279
-    .line 280
-    move-result v6
+    :cond_c
+    const-string v6, "max-stale"
 
+    .line 280
     .line 281
-    if-eqz v6, :cond_d
+    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     .line 282
     .line 283
+    .line 284
+    move-result v6
+
+    .line 285
+    if-eqz v6, :cond_d
+
+    .line 286
+    .line 287
     const v3, 0x7fffffff
 
-    .line 284
-    .line 285
-    .line 286
-    invoke-static {v1, v3}, Lokhttp3/internal/Util;->toNonNegativeInt(Ljava/lang/String;I)I
-
-    .line 287
     .line 288
     .line 289
-    move-result v17
-
     .line 290
-    goto :goto_6
+    invoke-static {v1, v3}, Lokhttp3/internal/Util;->toNonNegativeInt(Ljava/lang/String;I)I
 
     .line 291
+    .line 292
+    .line 293
+    move-result v17
+
+    .line 294
+    goto :goto_6
+
+    .line 295
     :cond_d
     const-string v6, "min-fresh"
 
-    .line 292
-    .line 293
-    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    .line 294
-    .line 295
     .line 296
-    move-result v6
-
     .line 297
-    if-eqz v6, :cond_e
+    invoke-virtual {v6, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     .line 298
     .line 299
-    const/4 v6, -0x1
-
     .line 300
-    invoke-static {v1, v6}, Lokhttp3/internal/Util;->toNonNegativeInt(Ljava/lang/String;I)I
+    move-result v6
 
     .line 301
+    if-eqz v6, :cond_e
+
     .line 302
     .line 303
-    move-result v18
+    const/4 v6, -0x1
 
     .line 304
-    goto :goto_6
+    invoke-static {v1, v6}, Lokhttp3/internal/Util;->toNonNegativeInt(Ljava/lang/String;I)I
 
     .line 305
+    .line 306
+    .line 307
+    move-result v18
+
+    .line 308
+    goto :goto_6
+
+    .line 309
     :cond_e
     const/4 v6, -0x1
 
-    .line 306
+    .line 310
     const-string v1, "only-if-cached"
 
-    .line 307
-    .line 308
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    .line 309
-    .line 310
     .line 311
-    move-result v1
-
     .line 312
-    if-eqz v1, :cond_f
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     .line 313
     .line 314
-    move-object/from16 v1, p1
-
     .line 315
+    move-result v1
+
     .line 316
-    move v3, v4
+    if-eqz v1, :cond_f
 
     .line 317
-    const/16 v19, 0x1
-
     .line 318
-    .line 319
-    goto/16 :goto_3
+    move-object/from16 v1, p1
 
+    .line 319
     .line 320
+    move v3, v4
+
     .line 321
-    :cond_f
-    const-string v1, "no-transform"
+    move/from16 v19, v23
 
     .line 322
     .line 323
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    goto/16 :goto_3
 
     .line 324
     .line 325
-    .line 326
-    move-result v1
+    :cond_f
+    const-string v1, "no-transform"
 
+    .line 326
     .line 327
-    if-eqz v1, :cond_10
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     .line 328
     .line 329
-    move-object/from16 v1, p1
-
     .line 330
+    move-result v1
+
     .line 331
-    move v3, v4
+    if-eqz v1, :cond_10
 
     .line 332
-    const/16 v20, 0x1
-
     .line 333
-    .line 334
-    goto/16 :goto_3
+    move-object/from16 v1, p1
 
+    .line 334
     .line 335
+    move v3, v4
+
     .line 336
-    :cond_10
-    const-string v1, "immutable"
+    move/from16 v20, v23
 
     .line 337
     .line 338
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    goto/16 :goto_3
 
     .line 339
     .line 340
-    .line 341
-    move-result v1
+    :cond_10
+    const-string v1, "immutable"
 
+    .line 341
     .line 342
-    if-eqz v1, :cond_7
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     .line 343
     .line 344
-    move-object/from16 v1, p1
-
     .line 345
+    move-result v1
+
     .line 346
-    move v3, v4
+    if-eqz v1, :cond_7
 
     .line 347
-    const/16 v21, 0x1
-
     .line 348
+    move-object/from16 v1, p1
+
     .line 349
+    .line 350
+    move v3, v4
+
+    .line 351
+    move/from16 v21, v23
+
+    .line 352
+    .line 353
     goto/16 :goto_3
 
-    .line 350
-    .line 351
+    .line 354
+    .line 355
     :cond_11
     const/4 v6, -0x1
 
-    .line 352
-    add-int/lit8 v7, v7, 0x1
-
-    .line 353
-    .line 354
-    move-object/from16 v1, p1
-
-    .line 355
     .line 356
-    goto/16 :goto_0
+    add-int/lit8 v7, v7, 0x1
 
     .line 357
     .line 358
-    :cond_12
-    if-nez v8, :cond_13
+    move-object/from16 v1, p1
 
     .line 359
     .line 360
-    const/16 v22, 0x0
+    goto/16 :goto_0
 
     .line 361
     .line 362
-    goto :goto_7
+    :cond_12
+    if-nez v8, :cond_13
 
     .line 363
+    .line 364
+    const/16 v22, 0x0
+
+    .line 365
+    .line 366
+    goto :goto_7
+
+    .line 367
     :cond_13
     move-object/from16 v22, v9
 
-    .line 364
-    .line 365
+    .line 368
+    .line 369
     :goto_7
     new-instance v9, Lokhttp3/CacheControl;
 
-    .line 366
-    .line 367
-    const/16 v23, 0x0
-
-    .line 368
-    .line 369
-    invoke-direct/range {v9 .. v23}, Lokhttp3/CacheControl;-><init>(ZZIIZZZIIZZZLjava/lang/String;Lj31;)V
-
     .line 370
     .line 371
+    const/16 v23, 0x0
+
     .line 372
+    .line 373
+    invoke-direct/range {v9 .. v23}, Lokhttp3/CacheControl;-><init>(ZZIIZZZIIZZZLjava/lang/String;Lib1;)V
+
+    .line 374
+    .line 375
+    .line 376
     return-object v9
 .end method

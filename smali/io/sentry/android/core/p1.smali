@@ -1,19 +1,19 @@
-.class public final synthetic Lio/sentry/android/core/p1;
+.class public final Lio/sentry/android/core/p1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnDismissListener;
+.implements Lio/sentry/z0;
 
 
 # instance fields
-.field public final synthetic Q:Lio/sentry/android/core/r1;
+.field public final a:Lio/sentry/android/core/SentryAndroidOptions;
 
-.field public final synthetic R:Ljava/lang/Runnable;
+.field public final b:J
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/sentry/android/core/r1;Ljava/lang/Runnable;)V
+.method public constructor <init>(Lio/sentry/android/core/SentryAndroidOptions;J)V
     .locals 0
 
     .line 1
@@ -22,11 +22,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/sentry/android/core/p1;->Q:Lio/sentry/android/core/r1;
+    iput-object p1, p0, Lio/sentry/android/core/p1;->a:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/sentry/android/core/p1;->R:Ljava/lang/Runnable;
+    iput-wide p2, p0, Lio/sentry/android/core/p1;->b:J
 
     .line 7
     .line 8
@@ -35,43 +35,80 @@
 
 
 # virtual methods
-.method public final onDismiss(Landroid/content/DialogInterface;)V
+.method public final a(Ljava/util/Map;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final b(Lio/sentry/protocol/u;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final c(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final d(Ljava/lang/Double;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final e(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final f(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final g(Ljava/lang/String;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/p1;->R:Ljava/lang/Runnable;
+    iget-wide v0, p0, Lio/sentry/android/core/p1;->b:J
 
     .line 2
     .line 3
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+    invoke-static {v0, v1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    const/4 v0, 0x0
+    move-result-object p1
 
     .line 7
-    iget-object v1, p0, Lio/sentry/android/core/p1;->Q:Lio/sentry/android/core/r1;
+    const-string v0, ".options-cache"
 
     .line 8
     .line 9
-    iput-object v0, v1, Lio/sentry/android/core/r1;->R:Lio/sentry/protocol/w;
+    const-string v1, "app-last-update-time.json"
 
     .line 10
     .line 11
-    iget-object v0, v1, Lio/sentry/android/core/r1;->S:Landroid/content/DialogInterface$OnDismissListener;
+    iget-object p0, p0, Lio/sentry/android/core/p1;->a:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 12
     .line 13
-    if-eqz v0, :cond_0
+    invoke-static {p0, p1, v0, v1}, Lio/sentry/cache/a;->d(Lio/sentry/o6;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14
     .line 15
-    invoke-interface {v0, p1}, Landroid/content/DialogInterface$OnDismissListener;->onDismiss(Landroid/content/DialogInterface;)V
-
     .line 16
-    .line 17
-    .line 18
-    :cond_0
     return-void
 .end method

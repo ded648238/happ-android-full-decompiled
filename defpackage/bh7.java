@@ -1,11 +1,29 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class bh7 {
-    public static final bh7 a = new bh7();
+import su.happ.proxyutility.feature.subscription_settings.SubscriptionSettingsActivity;
 
-    public final String toString() {
-        return "kotlin.Unit";
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class bh7 implements ji2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ SubscriptionSettingsActivity Y;
+
+    public /* synthetic */ bh7(SubscriptionSettingsActivity subscriptionSettingsActivity, int i) {
+        this.X = i;
+        this.Y = subscriptionSettingsActivity;
+    }
+
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        int i = this.X;
+        SubscriptionSettingsActivity subscriptionSettingsActivity = this.Y;
+        switch (i) {
+            case 0:
+                return subscriptionSettingsActivity.a();
+            case 1:
+                return subscriptionSettingsActivity.c();
+            default:
+                return subscriptionSettingsActivity.b();
+        }
     }
 }

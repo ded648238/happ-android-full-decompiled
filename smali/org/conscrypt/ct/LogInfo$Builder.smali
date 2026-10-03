@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/ct/LogInfo$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -15,8 +15,6 @@
 
 
 # instance fields
-.field private description:Ljava/lang/String;
-
 .field private logId:[B
 
 .field private operator:Ljava/lang/String;
@@ -27,7 +25,7 @@
 
 .field private stateTimestamp:J
 
-.field private url:Ljava/lang/String;
+.field private type:I
 
 
 # direct methods
@@ -69,17 +67,6 @@
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lorg/conscrypt/ct/LogInfo$Builder;->url:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public static synthetic access$300(Lorg/conscrypt/ct/LogInfo$Builder;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
     iget-object p0, p0, Lorg/conscrypt/ct/LogInfo$Builder;->operator:Ljava/lang/String;
 
     .line 2
@@ -87,7 +74,7 @@
     return-object p0
 .end method
 
-.method public static synthetic access$400(Lorg/conscrypt/ct/LogInfo$Builder;)I
+.method public static synthetic access$300(Lorg/conscrypt/ct/LogInfo$Builder;)I
     .locals 0
 
     .line 1
@@ -98,7 +85,7 @@
     return p0
 .end method
 
-.method public static synthetic access$500(Lorg/conscrypt/ct/LogInfo$Builder;)J
+.method public static synthetic access$400(Lorg/conscrypt/ct/LogInfo$Builder;)J
     .locals 2
 
     .line 1
@@ -109,15 +96,15 @@
     return-wide v0
 .end method
 
-.method public static synthetic access$600(Lorg/conscrypt/ct/LogInfo$Builder;)Ljava/lang/String;
+.method public static synthetic access$500(Lorg/conscrypt/ct/LogInfo$Builder;)I
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lorg/conscrypt/ct/LogInfo$Builder;->description:Ljava/lang/String;
+    iget p0, p0, Lorg/conscrypt/ct/LogInfo$Builder;->type:I
 
     .line 2
     .line 3
-    return-object p0
+    return p0
 .end method
 
 
@@ -141,27 +128,11 @@
     return-object v0
 .end method
 
-.method public setDescription(Ljava/lang/String;)Lorg/conscrypt/ct/LogInfo$Builder;
-    .locals 0
-
-    .line 1
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lorg/conscrypt/ct/LogInfo$Builder;->description:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    return-object p0
-.end method
-
 .method public setOperator(Ljava/lang/String;)Lorg/conscrypt/ct/LogInfo$Builder;
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -177,7 +148,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -225,18 +196,18 @@
 
     .line 23
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 24
-    invoke-static {p1}, Li62;->o(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->n(Ljava/lang/Throwable;)V
 
     .line 25
     .line 26
     .line 27
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 28
-    return-object p1
+    return-object p0
 .end method
 
 .method public setState(IJ)Lorg/conscrypt/ct/LogInfo$Builder;
@@ -266,33 +237,55 @@
 
     .line 11
     :cond_0
-    const-string p1, "invalid state value"
+    const-string p0, "invalid state value"
 
     .line 12
     .line 13
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 14
     .line 15
     .line 16
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    return-object p1
+    return-object p0
 .end method
 
-.method public setUrl(Ljava/lang/String;)Lorg/conscrypt/ct/LogInfo$Builder;
-    .locals 0
+.method public setType(I)Lorg/conscrypt/ct/LogInfo$Builder;
+    .locals 1
 
     .line 1
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    if-ltz p1, :cond_0
 
     .line 2
     .line 3
+    const/4 v0, 0x2
+
     .line 4
-    iput-object p1, p0, Lorg/conscrypt/ct/LogInfo$Builder;->url:Ljava/lang/String;
+    if-gt p1, v0, :cond_0
 
     .line 5
     .line 6
+    iput p1, p0, Lorg/conscrypt/ct/LogInfo$Builder;->type:I
+
+    .line 7
+    .line 8
+    return-object p0
+
+    .line 9
+    :cond_0
+    const-string p0, "invalid type value"
+
+    .line 10
+    .line 11
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    const/4 p0, 0x0
+
+    .line 15
     return-object p0
 .end method

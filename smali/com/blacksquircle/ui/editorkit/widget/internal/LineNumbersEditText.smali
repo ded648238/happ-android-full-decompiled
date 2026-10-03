@@ -1,6 +1,6 @@
 .class public abstract Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;
 .super Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -21,27 +21,27 @@
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
         "",
         "text",
-        "Lbh7;",
+        "Lr98;",
         "setTextContent",
         "(Ljava/lang/CharSequence;)V",
         "",
         "value",
-        "V",
+        "h0",
         "Z",
         "getSoftKeyboard",
         "()Z",
         "setSoftKeyboard",
         "(Z)V",
         "softKeyboard",
-        "W",
+        "i0",
         "getReadOnly",
         "setReadOnly",
         "readOnly",
-        "Lj27;",
-        "a0",
-        "Lj27;",
+        "Lou7;",
+        "j0",
+        "Lou7;",
         "getStructure",
-        "()Lj27;",
+        "()Lou7;",
         "structure",
         "editorkit_release"
     }
@@ -56,19 +56,19 @@
 
 
 # instance fields
-.field public V:Z
+.field public h0:Z
 
-.field public W:Z
+.field public i0:Z
 
-.field public final a0:Lj27;
+.field public final j0:Lou7;
 
-.field public final b0:Lsr1;
+.field public final k0:Lu02;
 
-.field public c0:I
+.field public l0:I
 
-.field public d0:I
+.field public m0:I
 
-.field public e0:Ljava/lang/CharSequence;
+.field public n0:Ljava/lang/CharSequence;
 
 
 # direct methods
@@ -86,7 +86,7 @@
     .line 5
     .line 6
     .line 7
-    new-instance p1, Lj27;
+    new-instance p1, Lou7;
 
     .line 8
     .line 9
@@ -99,28 +99,28 @@
     .line 12
     .line 13
     .line 14
-    invoke-direct {p1, p2}, Lj27;-><init>(Landroid/text/SpannableStringBuilder;)V
+    invoke-direct {p1, p2}, Lou7;-><init>(Landroid/text/SpannableStringBuilder;)V
 
     .line 15
     .line 16
     .line 17
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->a0:Lj27;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->j0:Lou7;
 
     .line 18
     .line 19
-    new-instance p1, Lsr1;
+    new-instance p1, Lu02;
 
     .line 20
     .line 21
     const/4 p2, 0x2
 
     .line 22
-    invoke-direct {p1, p2, p0}, Lsr1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lu02;-><init>(ILjava/lang/Object;)V
 
     .line 23
     .line 24
     .line 25
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->b0:Lsr1;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->k0:Lu02;
 
     .line 26
     .line 27
@@ -128,7 +128,7 @@
 
     .line 28
     .line 29
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->e0:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->n0:Ljava/lang/CharSequence;
 
     .line 30
     .line 31
@@ -168,23 +168,23 @@
 
     .line 3
     .line 4
-    const/4 p1, 0x0
+    move p1, v0
 
     .line 5
     :cond_0
-    iget-object v1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->a0:Lj27;
+    iget-object v1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->j0:Lou7;
 
     .line 6
     .line 7
-    iget-object v2, v1, Lj27;->a:Landroid/text/SpannableStringBuilder;
+    iget-object v2, v1, Lou7;->a:Landroid/text/SpannableStringBuilder;
 
     .line 8
     .line 9
-    iget-object v3, v1, Lj27;->a:Landroid/text/SpannableStringBuilder;
+    iget-object v3, v1, Lou7;->a:Landroid/text/SpannableStringBuilder;
 
     .line 10
     .line 11
-    iget-object v4, v1, Lj27;->b:Ljava/util/ArrayList;
+    iget-object v4, v1, Lou7;->b:Ljava/util/ArrayList;
 
     .line 12
     .line 13
@@ -224,7 +224,7 @@
     sub-int/2addr v2, v5
 
     .line 30
-    invoke-virtual {v1, p1}, Lj27;->b(I)I
+    invoke-virtual {v1, p1}, Lou7;->b(I)I
 
     .line 31
     .line 32
@@ -269,7 +269,7 @@
 
     .line 49
     .line 50
-    iget-object v9, v7, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->a0:Lj27;
+    iget-object v9, v7, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->j0:Lou7;
 
     .line 51
     .line 52
@@ -277,7 +277,7 @@
 
     .line 53
     .line 54
-    iget-object v9, v9, Lj27;->b:Ljava/util/ArrayList;
+    iget-object v9, v9, Lou7;->b:Ljava/util/ArrayList;
 
     .line 55
     .line 56
@@ -296,7 +296,7 @@
     .line 62
     .line 63
     :goto_1
-    iget-object v7, v7, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->u0:Ljava/util/HashSet;
+    iget-object v7, v7, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->D0:Ljava/util/HashSet;
 
     .line 64
     .line 65
@@ -324,15 +324,15 @@
 
     .line 76
     :cond_3
-    invoke-static {v7}, Lxy4;->t(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
+    invoke-static {v7}, Lw31;->j(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
 
     .line 77
     .line 78
     .line 79
-    move-result-object p1
+    move-result-object p0
 
     .line 80
-    throw p1
+    throw p0
 
     .line 81
     :cond_4
@@ -345,7 +345,7 @@
 
     .line 84
     :cond_5
-    invoke-virtual {v1, p1}, Lj27;->b(I)I
+    invoke-virtual {v1, p1}, Lou7;->b(I)I
 
     .line 85
     .line 86
@@ -385,7 +385,7 @@
 
     .line 102
     .line 103
-    invoke-virtual {v1, v5}, Lj27;->a(I)I
+    invoke-virtual {v1, v5}, Lou7;->a(I)I
 
     .line 104
     .line 105
@@ -435,11 +435,11 @@
     move-result-object v9
 
     .line 125
-    check-cast v9, Li27;
+    check-cast v9, Lnu7;
 
     .line 126
     .line 127
-    iput v6, v9, Li27;->a:I
+    iput v6, v9, Lnu7;->a:I
 
     .line 128
     .line 129
@@ -480,7 +480,7 @@
 
     .line 144
     .line 145
-    invoke-virtual {v1, v4}, Lj27;->b(I)I
+    invoke-virtual {v1, v4}, Lou7;->b(I)I
 
     .line 146
     .line 147
@@ -501,7 +501,7 @@
 
     .line 153
     .line 154
-    iget-object v9, v6, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->a0:Lj27;
+    iget-object v9, v6, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->j0:Lou7;
 
     .line 155
     .line 156
@@ -509,15 +509,15 @@
 
     .line 157
     .line 158
-    iget-object v9, v9, Lj27;->b:Ljava/util/ArrayList;
+    iget-object v9, v9, Lou7;->b:Ljava/util/ArrayList;
 
     .line 159
     .line 160
-    new-instance v10, Li27;
+    new-instance v10, Lnu7;
 
     .line 161
     .line 162
-    invoke-direct {v10, v4}, Li27;-><init>(I)V
+    invoke-direct {v10, v4}, Lnu7;-><init>(I)V
 
     .line 163
     .line 164
@@ -537,7 +537,7 @@
     .line 171
     .line 172
     :goto_7
-    iget-object v4, v6, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->u0:Ljava/util/HashSet;
+    iget-object v4, v6, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->D0:Ljava/util/HashSet;
 
     .line 173
     .line 174
@@ -565,15 +565,15 @@
 
     .line 185
     :cond_b
-    invoke-static {v4}, Lxy4;->t(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
+    invoke-static {v4}, Lw31;->j(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
 
     .line 186
     .line 187
     .line 188
-    move-result-object p1
+    move-result-object p0
 
     .line 189
-    throw p1
+    throw p0
 
     .line 190
     :cond_c
@@ -595,43 +595,43 @@
 .end method
 
 .method public final getReadOnly()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->W:Z
+    iget-boolean p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->i0:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getSoftKeyboard()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->V:Z
+    iget-boolean p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->h0:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public final getStructure()Lj27;
-    .locals 1
+.method public final getStructure()Lou7;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->a0:Lj27;
+    iget-object p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->j0:Lou7;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final setReadOnly(Z)V
     .locals 1
 
     .line 1
-    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->W:Z
+    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->i0:Z
 
     .line 2
     .line 3
@@ -660,7 +660,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->V:Z
+    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->h0:Z
 
     .line 2
     .line 3
@@ -692,7 +692,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->a0:Lj27;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->j0:Lou7;
 
     .line 2
     .line 3
@@ -701,7 +701,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->b0:Lsr1;
+    iget-object v1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->k0:Lu02;
 
     .line 7
     .line 8
@@ -719,7 +719,7 @@
     .line 13
     .line 14
     .line 15
-    iget-object v3, v0, Lj27;->a:Landroid/text/SpannableStringBuilder;
+    iget-object v3, v0, Lou7;->a:Landroid/text/SpannableStringBuilder;
 
     .line 16
     .line 17
@@ -759,7 +759,7 @@
     .line 32
     .line 33
     .line 34
-    iget-object v0, v0, Lj27;->a:Landroid/text/SpannableStringBuilder;
+    iget-object v0, v0, Lou7;->a:Landroid/text/SpannableStringBuilder;
 
     .line 35
     .line 36

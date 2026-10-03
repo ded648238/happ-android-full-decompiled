@@ -1,6 +1,6 @@
 .class public final Lj$/time/chrono/d0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Externalizable;
@@ -47,14 +47,14 @@
 .end method
 
 .method private readResolve()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lj$/time/chrono/d0;->b:Ljava/lang/Object;
+    iget-object p0, p0, Lj$/time/chrono/d0;->b:Ljava/lang/Object;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 
@@ -80,20 +80,20 @@
     .line 8
     .line 9
     .line 10
-    new-instance p1, Ljava/io/StreamCorruptedException;
+    new-instance p0, Ljava/io/StreamCorruptedException;
 
     .line 11
     .line 12
-    const-string v0, "Unknown serialized type"
+    const-string p1, "Unknown serialized type"
 
     .line 13
     .line 14
-    invoke-direct {p1, v0}, Ljava/io/StreamCorruptedException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/StreamCorruptedException;-><init>(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    throw p1
+    throw p0
 
     .line 18
     :pswitch_0
@@ -109,7 +109,7 @@
     move-result-object v0
 
     .line 24
-    invoke-static {v0}, Lj$/com/android/tools/r8/a;->F(Ljava/lang/String;)Lj$/time/chrono/k;
+    invoke-static {v0}, Lj$/time/chrono/k;->of(Ljava/lang/String;)Lj$/time/chrono/k;
 
     .line 25
     .line 26
@@ -339,7 +339,7 @@
     move-result p1
 
     .line 140
-    invoke-static {p1}, Lj$/time/chrono/x;->k(I)Lj$/time/chrono/x;
+    invoke-static {p1}, Lj$/time/chrono/x;->q(I)Lj$/time/chrono/x;
 
     .line 141
     .line 142
@@ -445,7 +445,7 @@
 
     .line 191
     .line 192
-    invoke-interface {v0, v1}, Lj$/time/chrono/ChronoLocalDateTime;->u(Lj$/time/ZoneId;)Lj$/time/chrono/h;
+    invoke-interface {v0, v1}, Lj$/time/chrono/ChronoLocalDateTime;->B(Lj$/time/ZoneId;)Lj$/time/chrono/h;
 
     .line 193
     .line 194
@@ -453,7 +453,7 @@
     move-result-object v0
 
     .line 196
-    invoke-interface {v0, p1}, Lj$/time/chrono/h;->r(Lj$/time/ZoneId;)Lj$/time/chrono/h;
+    invoke-interface {v0, p1}, Lj$/time/chrono/h;->A(Lj$/time/ZoneId;)Lj$/time/chrono/h;
 
     .line 197
     .line 198
@@ -489,7 +489,7 @@
 
     .line 212
     .line 213
-    invoke-interface {v0, p1}, Lj$/time/chrono/ChronoLocalDate;->y(Lj$/time/LocalTime;)Lj$/time/chrono/ChronoLocalDateTime;
+    invoke-interface {v0, p1}, Lj$/time/chrono/ChronoLocalDate;->G(Lj$/time/LocalTime;)Lj$/time/chrono/ChronoLocalDateTime;
 
     .line 214
     .line 215
@@ -501,7 +501,7 @@
 
     .line 218
     :pswitch_8
-    sget-object v0, Lj$/time/chrono/a;->a:Lj$/util/concurrent/ConcurrentHashMap;
+    sget-object v0, Lj$/time/chrono/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 219
     .line 220
@@ -513,7 +513,7 @@
     move-result-object p1
 
     .line 224
-    invoke-static {p1}, Lj$/com/android/tools/r8/a;->F(Ljava/lang/String;)Lj$/time/chrono/k;
+    invoke-static {p1}, Lj$/time/chrono/k;->of(Ljava/lang/String;)Lj$/time/chrono/k;
 
     .line 225
     .line 226
@@ -544,14 +544,14 @@
 .end method
 
 .method public final writeExternal(Ljava/io/ObjectOutput;)V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-byte v0, p0, Lj$/time/chrono/d0;->a:B
 
     .line 2
     .line 3
-    iget-object v1, p0, Lj$/time/chrono/d0;->b:Ljava/lang/Object;
+    iget-object p0, p0, Lj$/time/chrono/d0;->b:Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -565,28 +565,28 @@
     .line 9
     .line 10
     .line 11
-    new-instance p1, Ljava/io/InvalidClassException;
+    new-instance p0, Ljava/io/InvalidClassException;
 
     .line 12
     .line 13
-    const-string v0, "Unknown serialized type"
+    const-string p1, "Unknown serialized type"
 
     .line 14
     .line 15
-    invoke-direct {p1, v0}, Ljava/io/InvalidClassException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/InvalidClassException;-><init>(Ljava/lang/String;)V
 
     .line 16
     .line 17
     .line 18
-    throw p1
+    throw p0
 
     .line 19
     :pswitch_0
-    check-cast v1, Lj$/time/chrono/f;
+    check-cast p0, Lj$/time/chrono/f;
 
     .line 20
     .line 21
-    iget-object v0, v1, Lj$/time/chrono/f;->a:Lj$/time/chrono/k;
+    iget-object v0, p0, Lj$/time/chrono/f;->a:Lj$/time/chrono/k;
 
     .line 22
     .line 23
@@ -603,7 +603,7 @@
     .line 28
     .line 29
     .line 30
-    iget v0, v1, Lj$/time/chrono/f;->b:I
+    iget v0, p0, Lj$/time/chrono/f;->b:I
 
     .line 31
     .line 32
@@ -612,7 +612,7 @@
     .line 33
     .line 34
     .line 35
-    iget v0, v1, Lj$/time/chrono/f;->c:I
+    iget v0, p0, Lj$/time/chrono/f;->c:I
 
     .line 36
     .line 37
@@ -621,11 +621,11 @@
     .line 38
     .line 39
     .line 40
-    iget v0, v1, Lj$/time/chrono/f;->d:I
+    iget p0, p0, Lj$/time/chrono/f;->d:I
 
     .line 41
     .line 42
-    invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeInt(I)V
+    invoke-interface {p1, p0}, Ljava/io/DataOutput;->writeInt(I)V
 
     .line 43
     .line 44
@@ -634,11 +634,11 @@
 
     .line 46
     :pswitch_1
-    check-cast v1, Lj$/time/chrono/h0;
+    check-cast p0, Lj$/time/chrono/h0;
 
     .line 47
     .line 48
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 49
     .line 50
@@ -647,7 +647,7 @@
 
     .line 52
     .line 53
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 54
     .line 55
@@ -664,7 +664,7 @@
 
     .line 61
     .line 62
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 63
     .line 64
@@ -681,15 +681,15 @@
 
     .line 70
     .line 71
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 72
     .line 73
     .line 74
-    move-result v0
+    move-result p0
 
     .line 75
-    invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeByte(I)V
+    invoke-interface {p1, p0}, Ljava/io/DataOutput;->writeByte(I)V
 
     .line 76
     .line 77
@@ -698,11 +698,11 @@
 
     .line 79
     :pswitch_2
-    check-cast v1, Lj$/time/chrono/b0;
+    check-cast p0, Lj$/time/chrono/b0;
 
     .line 80
     .line 81
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 82
     .line 83
@@ -711,7 +711,7 @@
 
     .line 85
     .line 86
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 87
     .line 88
@@ -728,7 +728,7 @@
 
     .line 94
     .line 95
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 96
     .line 97
@@ -745,15 +745,15 @@
 
     .line 103
     .line 104
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 105
     .line 106
     .line 107
-    move-result v0
+    move-result p0
 
     .line 108
-    invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeByte(I)V
+    invoke-interface {p1, p0}, Ljava/io/DataOutput;->writeByte(I)V
 
     .line 109
     .line 110
@@ -762,11 +762,11 @@
 
     .line 112
     :pswitch_3
-    check-cast v1, Lj$/time/chrono/p;
+    check-cast p0, Lj$/time/chrono/p;
 
     .line 113
     .line 114
-    iget-object v0, v1, Lj$/time/chrono/p;->a:Lj$/time/chrono/n;
+    iget-object v0, p0, Lj$/time/chrono/p;->a:Lj$/time/chrono/n;
 
     .line 115
     .line 116
@@ -779,7 +779,7 @@
 
     .line 120
     .line 121
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 122
     .line 123
@@ -796,7 +796,7 @@
 
     .line 129
     .line 130
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 131
     .line 132
@@ -813,15 +813,15 @@
 
     .line 138
     .line 139
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 140
     .line 141
     .line 142
-    move-result v0
+    move-result p0
 
     .line 143
-    invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeByte(I)V
+    invoke-interface {p1, p0}, Ljava/io/ObjectOutput;->writeByte(I)V
 
     .line 144
     .line 145
@@ -830,15 +830,15 @@
 
     .line 147
     :pswitch_4
-    check-cast v1, Lj$/time/chrono/x;
+    check-cast p0, Lj$/time/chrono/x;
 
     .line 148
     .line 149
-    iget v0, v1, Lj$/time/chrono/x;->a:I
+    iget p0, p0, Lj$/time/chrono/x;->a:I
 
     .line 150
     .line 151
-    invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeByte(I)V
+    invoke-interface {p1, p0}, Ljava/io/DataOutput;->writeByte(I)V
 
     .line 152
     .line 153
@@ -847,11 +847,11 @@
 
     .line 155
     :pswitch_5
-    check-cast v1, Lj$/time/chrono/w;
+    check-cast p0, Lj$/time/chrono/w;
 
     .line 156
     .line 157
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 158
     .line 159
@@ -860,7 +860,7 @@
 
     .line 161
     .line 162
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 163
     .line 164
@@ -877,7 +877,7 @@
 
     .line 170
     .line 171
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 172
     .line 173
@@ -894,15 +894,15 @@
 
     .line 179
     .line 180
-    invoke-static {v1, v0}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p0, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 181
     .line 182
     .line 183
-    move-result v0
+    move-result p0
 
     .line 184
-    invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeByte(I)V
+    invoke-interface {p1, p0}, Ljava/io/DataOutput;->writeByte(I)V
 
     .line 185
     .line 186
@@ -911,11 +911,11 @@
 
     .line 188
     :pswitch_6
-    check-cast v1, Lj$/time/chrono/j;
+    check-cast p0, Lj$/time/chrono/j;
 
     .line 189
     .line 190
-    iget-object v0, v1, Lj$/time/chrono/j;->a:Lj$/time/chrono/e;
+    iget-object v0, p0, Lj$/time/chrono/j;->a:Lj$/time/chrono/e;
 
     .line 191
     .line 192
@@ -924,7 +924,7 @@
     .line 193
     .line 194
     .line 195
-    iget-object v0, v1, Lj$/time/chrono/j;->b:Lj$/time/ZoneOffset;
+    iget-object v0, p0, Lj$/time/chrono/j;->b:Lj$/time/ZoneOffset;
 
     .line 196
     .line 197
@@ -933,11 +933,11 @@
     .line 198
     .line 199
     .line 200
-    iget-object v0, v1, Lj$/time/chrono/j;->c:Lj$/time/ZoneId;
+    iget-object p0, p0, Lj$/time/chrono/j;->c:Lj$/time/ZoneId;
 
     .line 201
     .line 202
-    invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeObject(Ljava/lang/Object;)V
+    invoke-interface {p1, p0}, Ljava/io/ObjectOutput;->writeObject(Ljava/lang/Object;)V
 
     .line 203
     .line 204
@@ -946,11 +946,11 @@
 
     .line 206
     :pswitch_7
-    check-cast v1, Lj$/time/chrono/e;
+    check-cast p0, Lj$/time/chrono/e;
 
     .line 207
     .line 208
-    iget-object v0, v1, Lj$/time/chrono/e;->a:Lj$/time/chrono/ChronoLocalDate;
+    iget-object v0, p0, Lj$/time/chrono/e;->a:Lj$/time/chrono/ChronoLocalDate;
 
     .line 209
     .line 210
@@ -959,11 +959,11 @@
     .line 211
     .line 212
     .line 213
-    iget-object v0, v1, Lj$/time/chrono/e;->b:Lj$/time/LocalTime;
+    iget-object p0, p0, Lj$/time/chrono/e;->b:Lj$/time/LocalTime;
 
     .line 214
     .line 215
-    invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeObject(Ljava/lang/Object;)V
+    invoke-interface {p1, p0}, Ljava/io/ObjectOutput;->writeObject(Ljava/lang/Object;)V
 
     .line 216
     .line 217
@@ -972,19 +972,19 @@
 
     .line 219
     :pswitch_8
-    check-cast v1, Lj$/time/chrono/a;
+    check-cast p0, Lj$/time/chrono/a;
 
     .line 220
     .line 221
-    invoke-interface {v1}, Lj$/time/chrono/k;->getId()Ljava/lang/String;
+    invoke-interface {p0}, Lj$/time/chrono/k;->getId()Ljava/lang/String;
 
     .line 222
     .line 223
     .line 224
-    move-result-object v0
+    move-result-object p0
 
     .line 225
-    invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeUTF(Ljava/lang/String;)V
+    invoke-interface {p1, p0}, Ljava/io/DataOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 226
     .line 227

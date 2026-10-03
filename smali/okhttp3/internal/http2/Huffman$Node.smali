@@ -1,6 +1,6 @@
 .class final Lokhttp3/internal/http2/Huffman$Node;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -122,34 +122,34 @@
 
 # virtual methods
 .method public final getChildren()[Lokhttp3/internal/http2/Huffman$Node;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Huffman$Node;->children:[Lokhttp3/internal/http2/Huffman$Node;
+    iget-object p0, p0, Lokhttp3/internal/http2/Huffman$Node;->children:[Lokhttp3/internal/http2/Huffman$Node;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getSymbol()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http2/Huffman$Node;->symbol:I
+    iget p0, p0, Lokhttp3/internal/http2/Huffman$Node;->symbol:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getTerminalBitCount()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http2/Huffman$Node;->terminalBitCount:I
+    iget p0, p0, Lokhttp3/internal/http2/Huffman$Node;->terminalBitCount:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/RouteException;
 .super Ljava/lang/RuntimeException;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -17,7 +17,7 @@
         "<init>",
         "(Ljava/io/IOException;)V",
         "e",
-        "Lbh7;",
+        "Lr98;",
         "addConnectException",
         "Ljava/io/IOException;",
         "getFirstConnectException",
@@ -84,7 +84,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0, p1}, Lxf5;->i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1}, Lck3;->i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     .line 7
     .line 8
@@ -97,23 +97,23 @@
 .end method
 
 .method public final getFirstConnectException()Ljava/io/IOException;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->firstConnectException:Ljava/io/IOException;
+    iget-object p0, p0, Lokhttp3/internal/connection/RouteException;->firstConnectException:Ljava/io/IOException;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getLastConnectException()Ljava/io/IOException;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->lastConnectException:Ljava/io/IOException;
+    iget-object p0, p0, Lokhttp3/internal/connection/RouteException;->lastConnectException:Ljava/io/IOException;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

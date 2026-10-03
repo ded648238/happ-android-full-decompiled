@@ -1,36 +1,40 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class t43 {
-    public static final t43 Q;
-    public static final t43 R;
-    public static final t43 S;
-    public static final t43 T;
-    public static final t43 U;
-    public static final /* synthetic */ t43[] V;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class t43 implements tj {
+    public final kt1 a;
+    public final r26 b;
 
-    static {
-        t43 t43Var = new t43("HIDDEN", 0);
-        Q = t43Var;
-        t43 t43Var2 = new t43("VISIBLE", 1);
-        R = t43Var2;
-        t43 t43Var3 = new t43("DEPRECATED_LIST_METHODS", 2);
-        S = t43Var3;
-        t43 t43Var4 = new t43("NOT_CONSIDERED", 3);
-        T = t43Var4;
-        t43 t43Var5 = new t43("DROP", 4);
-        U = t43Var5;
-        V = new t43[]{t43Var, t43Var2, t43Var3, t43Var4, t43Var5};
+    public t43(kt1 kt1Var, r26 r26Var) {
+        this.a = kt1Var;
+        this.b = r26Var;
+        if (kt1Var instanceof g38) {
+            g38 g38Var = (g38) kt1Var;
+            if (g38Var.a != 0 || g38Var.b != 0) {
+                return;
+            }
+        } else if (!(kt1Var instanceof z07) && (!(kt1Var instanceof iq3) || ((iq3) kt1Var).a.a != 0)) {
+            return;
+        }
+        i60.p("Animation to be infinitely repeated cannot have a 0-duration");
+        throw null;
     }
 
-    public static t43 valueOf(String str) {
-        return (t43) Enum.valueOf(t43.class, str);
+    @Override // defpackage.tj
+    public final vg8 a(i38 i38Var) {
+        return new uw5(this.a.a(i38Var), this.b);
     }
 
-    public static t43[] values() {
-        return (t43[]) V.clone();
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof t43)) {
+            return false;
+        }
+        t43 t43Var = (t43) obj;
+        return t43Var.a.equals(this.a) && t43Var.b == this.b;
+    }
+
+    public final int hashCode() {
+        return Long.hashCode(0L) + ((this.b.hashCode() + (this.a.hashCode() * 31)) * 31);
     }
 }

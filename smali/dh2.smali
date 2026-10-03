@@ -1,111 +1,59 @@
-.class public final Ldh2;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Ldh2;
+.super Lvi8;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final synthetic o0:I
 
 
 # instance fields
-.field public final a:J
+.field public final j0:Landroid/widget/LinearLayout;
 
-.field public final b:J
+.field public final k0:Landroidx/appcompat/widget/AppCompatImageView;
 
-.field public final c:J
+.field public final l0:Landroid/widget/RelativeLayout;
+
+.field public final m0:Landroid/widget/TextSwitcher;
+
+.field public final n0:Landroid/widget/TextSwitcher;
 
 
 # direct methods
-.method public constructor <init>(JJJ)V
-    .locals 0
+.method public constructor <init>(Landroid/view/View;Landroid/widget/LinearLayout;Landroidx/appcompat/widget/AppCompatImageView;Landroid/widget/RelativeLayout;Landroid/widget/TextSwitcher;Landroid/widget/TextSwitcher;)V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    .line 4
-    iput-wide p1, p0, Ldh2;->a:J
-
-    .line 5
-    .line 6
-    iput-wide p3, p0, Ldh2;->b:J
-
-    .line 7
-    .line 8
-    iput-wide p5, p0, Ldh2;->c:J
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "HistoricalChange(uptimeMillis="
+    invoke-direct {p0, v1, p1, v0}, Lvi8;-><init>(ILandroid/view/View;Ljava/lang/Object;)V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    iput-object p2, p0, Ldh2;->j0:Landroid/widget/LinearLayout;
+
     .line 7
     .line 8
-    iget-wide v1, p0, Ldh2;->a:J
+    iput-object p3, p0, Ldh2;->k0:Landroidx/appcompat/widget/AppCompatImageView;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    iput-object p4, p0, Ldh2;->l0:Landroid/widget/RelativeLayout;
 
     .line 11
     .line 12
+    iput-object p5, p0, Ldh2;->m0:Landroid/widget/TextSwitcher;
+
     .line 13
-    const-string v1, ", position="
-
     .line 14
+    iput-object p6, p0, Ldh2;->n0:Landroid/widget/TextSwitcher;
+
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 16
-    .line 17
-    .line 18
-    iget-wide v1, p0, Ldh2;->b:J
-
-    .line 19
-    .line 20
-    invoke-static {v1, v2}, Lwg4;->i(J)Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v1
-
-    .line 24
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 25
-    .line 26
-    .line 27
-    const/16 v1, 0x29
-
-    .line 28
-    .line 29
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
-    return-object v0
+    return-void
 .end method

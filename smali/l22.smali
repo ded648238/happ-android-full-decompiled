@@ -1,27 +1,43 @@
-.class public final Ll22;
+.class public abstract Ll22;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public a:Z
+# static fields
+.field public static final a:Ljava/lang/Class;
 
-.field public b:Lm22;
 
-.field public c:Lm22;
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
 
-.field public d:Lm22;
+    .line 1
+    :try_start_0
+    const-string v0, "androidx.datastore.preferences.protobuf.ExtensionRegistry"
 
-.field public e:Lm22;
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-.field public f:Lm22;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-.field public g:Lm22;
+    .line 7
+    goto :goto_0
 
-.field public h:Lm22;
+    .line 8
+    :catch_0
+    const/4 v0, 0x0
 
-.field public i:Lm22;
+    .line 9
+    :goto_0
+    sput-object v0, Ll22;->a:Ljava/lang/Class;
 
-.field public j:Lva;
-
-.field public k:Lk22;
+    .line 10
+    .line 11
+    return-void
+.end method

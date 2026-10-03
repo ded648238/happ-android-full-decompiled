@@ -1,81 +1,52 @@
 .class public final Lm31;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lhp2;
+.implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
 
-# static fields
-.field public static final a:Lm31;
+# instance fields
+.field public final synthetic X:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lm31;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, Lm31;->X:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+
     .line 5
     .line 6
-    sput-object v0, Lm31;->a:Lm31;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lp84;)Lg61;
+.method public final onPreDraw()Z
     .locals 1
 
     .line 1
-    new-instance v0, Ll31;
+    iget-object p0, p0, Lm31;->X:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Ll31;-><init>(Lp84;)V
+    const/4 v0, 0x0
 
     .line 4
-    .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 1
-    if-ne p1, p0, :cond_0
-
-    .line 2
-    .line 3
-    const/4 p1, 0x1
-
-    .line 4
-    return p1
+    invoke-virtual {p0, v0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o(I)V
 
     .line 5
-    :cond_0
-    const/4 p1, 0x0
-
     .line 6
-    return p1
-.end method
+    .line 7
+    const/4 p0, 0x1
 
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    const/4 v0, -0x1
-
-    .line 2
-    return v0
+    .line 8
+    return p0
 .end method

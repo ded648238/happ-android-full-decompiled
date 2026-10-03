@@ -1,15 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface x07 {
-    long a();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class x07 extends d31 {
+    public float c0;
+    public float d0;
+    public uj e0;
+    public sy5 f0;
+    public /* synthetic */ Object g0;
+    public int h0;
 
-    x07 b(x07 x07Var);
-
-    float c();
-
-    x07 d(g72 g72Var);
-
-    a50 e();
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.g0 = obj;
+        this.h0 |= Integer.MIN_VALUE;
+        return kc.w(null, 0.0f, 0.0f, null, null, null, this);
+    }
 }

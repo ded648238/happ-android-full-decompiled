@@ -1,17 +1,17 @@
 .class public abstract Lio/sentry/hints/c;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lio/sentry/hints/f;
 
 
 # instance fields
-.field public final Q:Ljava/util/concurrent/CountDownLatch;
+.field public final a:Ljava/util/concurrent/CountDownLatch;
 
-.field public final R:J
+.field public final b:J
 
-.field public final S:Lio/sentry/ILogger;
+.field public final c:Lio/sentry/ILogger;
 
 
 # direct methods
@@ -24,7 +24,7 @@
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, Lio/sentry/hints/c;->R:J
+    iput-wide p1, p0, Lio/sentry/hints/c;->b:J
 
     .line 5
     .line 6
@@ -40,11 +40,11 @@
     .line 10
     .line 11
     .line 12
-    iput-object p1, p0, Lio/sentry/hints/c;->Q:Ljava/util/concurrent/CountDownLatch;
+    iput-object p1, p0, Lio/sentry/hints/c;->a:Ljava/util/concurrent/CountDownLatch;
 
     .line 13
     .line 14
-    iput-object p3, p0, Lio/sentry/hints/c;->S:Lio/sentry/ILogger;
+    iput-object p3, p0, Lio/sentry/hints/c;->c:Lio/sentry/ILogger;
 
     .line 15
     .line 16
@@ -58,11 +58,11 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lio/sentry/hints/c;->Q:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lio/sentry/hints/c;->a:Ljava/util/concurrent/CountDownLatch;
 
     .line 2
     .line 3
-    iget-wide v1, p0, Lio/sentry/hints/c;->R:J
+    iget-wide v1, p0, Lio/sentry/hints/c;->b:J
 
     .line 4
     .line 5
@@ -75,12 +75,12 @@
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p0
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 11
-    return v0
+    return p0
 
     .line 12
     :catch_0
@@ -100,7 +100,7 @@
     .line 18
     .line 19
     .line 20
-    sget-object v1, Lio/sentry/m5;->ERROR:Lio/sentry/m5;
+    sget-object v1, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
 
     .line 21
     .line 22
@@ -108,19 +108,19 @@
 
     .line 23
     .line 24
-    iget-object v3, p0, Lio/sentry/hints/c;->S:Lio/sentry/ILogger;
+    iget-object p0, p0, Lio/sentry/hints/c;->c:Lio/sentry/ILogger;
 
     .line 25
     .line 26
-    invoke-interface {v3, v1, v2, v0}, Lio/sentry/ILogger;->d(Lio/sentry/m5;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {p0, v1, v2, v0}, Lio/sentry/ILogger;->d(Lio/sentry/o5;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 27
     .line 28
     .line 29
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 30
-    return v0
+    return p0
 .end method
 
 .method public abstract f(Lio/sentry/protocol/w;)Z

@@ -1,268 +1,146 @@
-.class public final Lor2;
+.class public abstract Lor2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final a:I
+# static fields
+.field public static final a:Lwp2;
 
-.field public final b:I
+.field public static final b:Lcom/google/gson/a;
 
-.field public final c:I
+.field public static final c:Lcom/google/gson/a;
 
-.field public final d:I
+.field public static final d:Lcom/google/gson/a;
 
 
 # direct methods
-.method public constructor <init>(IIII)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p1, p0, Lor2;->a:I
-
-    .line 5
-    .line 6
-    iput p2, p0, Lor2;->b:I
-
-    .line 7
-    .line 8
-    iput p3, p0, Lor2;->c:I
-
-    .line 9
-    .line 10
-    iput p4, p0, Lor2;->d:I
-
-    .line 11
-    .line 12
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Lor2;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Lor2;
-
-    .line 12
-    .line 13
-    iget v1, p1, Lor2;->a:I
-
-    .line 14
-    .line 15
-    iget v3, p0, Lor2;->a:I
-
-    .line 16
-    .line 17
-    if-ne v3, v1, :cond_2
-
-    .line 18
-    .line 19
-    iget v1, p0, Lor2;->b:I
-
-    .line 20
-    .line 21
-    iget v3, p1, Lor2;->b:I
-
-    .line 22
-    .line 23
-    if-ne v1, v3, :cond_2
-
-    .line 24
-    .line 25
-    iget v1, p0, Lor2;->c:I
-
-    .line 26
-    .line 27
-    iget v3, p1, Lor2;->c:I
-
-    .line 28
-    .line 29
-    if-ne v1, v3, :cond_2
-
-    .line 30
-    .line 31
-    iget v1, p0, Lor2;->d:I
-
-    .line 32
-    .line 33
-    iget p1, p1, Lor2;->d:I
-
-    .line 34
-    .line 35
-    if-ne v1, p1, :cond_2
-
-    .line 36
-    .line 37
-    return v0
-
-    .line 38
-    :cond_2
-    return v2
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lor2;->a:I
-
-    .line 2
-    .line 3
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 4
-    .line 5
-    iget v1, p0, Lor2;->b:I
-
-    .line 6
-    .line 7
-    add-int/2addr v0, v1
-
-    .line 8
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 9
-    .line 10
-    iget v1, p0, Lor2;->c:I
-
-    .line 11
-    .line 12
-    add-int/2addr v0, v1
-
-    .line 13
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 14
-    .line 15
-    iget v1, p0, Lor2;->d:I
-
-    .line 16
-    .line 17
-    add-int/2addr v0, v1
-
-    .line 18
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
+.method static constructor <clinit>()V
     .locals 3
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance v0, Lwp2;
 
     .line 2
     .line 3
-    const-string v1, "InsetsValues(left="
+    invoke-direct {v0}, Lwp2;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    new-instance v1, Lsu/happ/proxyutility/util/adapters/FlexibleStringListAdapter;
+
     .line 7
     .line 8
-    iget v1, p0, Lor2;->a:I
+    invoke-direct {v1}, Lsu/happ/proxyutility/util/adapters/FlexibleStringListAdapter;-><init>()V
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 11
+    const-class v2, Lsu/happ/proxyutility/dto/FlexibleStringList;
+
     .line 12
     .line 13
-    const-string v1, ", top="
+    invoke-virtual {v0, v2, v1}, Lwp2;->c(Ljava/lang/reflect/Type;Ljava/lang/Object;)V
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 16
+    sput-object v0, Lor2;->a:Lwp2;
+
     .line 17
     .line 18
-    iget v1, p0, Lor2;->b:I
+    new-instance v1, Lcom/google/gson/a;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v0}, Lcom/google/gson/a;-><init>(Lwp2;)V
 
     .line 21
     .line 22
     .line 23
-    const-string v1, ", right="
+    sput-object v1, Lor2;->b:Lcom/google/gson/a;
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v1, 0x1
 
     .line 26
+    iput v1, v0, Lwp2;->m:I
+
     .line 27
     .line 28
-    iget v1, p0, Lor2;->c:I
+    new-instance v1, Lcom/google/gson/a;
 
     .line 29
     .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v0}, Lcom/google/gson/a;-><init>(Lwp2;)V
 
     .line 31
     .line 32
     .line 33
-    const-string v1, ", bottom="
+    sput-object v1, Lor2;->c:Lcom/google/gson/a;
 
     .line 34
     .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v1, Lye2;->e:Lye2;
 
     .line 36
     .line 37
-    .line 38
-    iget v1, p0, Lor2;->d:I
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 38
     .line 39
     .line 40
-    const/16 v2, 0x29
+    iput-object v1, v0, Lwp2;->h:Lye2;
 
     .line 41
     .line 42
-    invoke-static {v0, v1, v2}, Lea0;->s(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+    const/4 v1, 0x0
 
     .line 43
+    iput-boolean v1, v0, Lwp2;->g:Z
+
     .line 44
     .line 45
-    move-result-object v0
+    new-instance v1, Lnr2;
 
     .line 46
-    return-object v0
+    .line 47
+    invoke-direct {v1}, Lm58;-><init>()V
+
+    .line 48
+    .line 49
+    .line 50
+    new-instance v2, Lmr2;
+
+    .line 51
+    .line 52
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 53
+    .line 54
+    .line 55
+    iget-object v1, v1, Lm58;->b:Ljava/lang/reflect/Type;
+
+    .line 56
+    .line 57
+    invoke-virtual {v0, v1, v2}, Lwp2;->c(Ljava/lang/reflect/Type;Ljava/lang/Object;)V
+
+    .line 58
+    .line 59
+    .line 60
+    new-instance v1, Lcom/google/gson/a;
+
+    .line 61
+    .line 62
+    invoke-direct {v1, v0}, Lcom/google/gson/a;-><init>(Lwp2;)V
+
+    .line 63
+    .line 64
+    .line 65
+    sput-object v1, Lor2;->d:Lcom/google/gson/a;
+
+    .line 66
+    .line 67
+    return-void
 .end method

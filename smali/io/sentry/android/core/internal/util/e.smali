@@ -1,13 +1,13 @@
 .class public final synthetic Lio/sentry/android/core/internal/util/e;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lio/sentry/android/core/internal/util/e;->Q:I
+    iput p1, p0, Lio/sentry/android/core/internal/util/e;->X:I
 
     .line 2
     .line 3
@@ -33,11 +33,11 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lio/sentry/android/core/internal/util/e;->Q:I
+    iget p0, p0, Lio/sentry/android/core/internal/util/e;->X:I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    packed-switch p0, :pswitch_data_0
 
     .line 4
     .line 5
@@ -56,10 +56,10 @@
     .line 11
     .line 12
     .line 13
-    move-result v0
+    move-result p0
 
     .line 14
-    int-to-long v0, v0
+    int-to-long v0, p0
 
     .line 15
     sput-wide v0, Lio/sentry/android/core/internal/util/f;->b:J

@@ -1,30 +1,62 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class d05 {
-    public static final d05 Q;
-    public static final d05 R;
-    public static final d05 S;
-    public static final /* synthetic */ d05[] T;
+import java.util.ArrayList;
+import java.util.Iterator;
 
-    static {
-        d05 d05Var = new d05("DEFAULT", 0);
-        Q = d05Var;
-        d05 d05Var2 = new d05("VERY_LOW", 1);
-        R = d05Var2;
-        d05 d05Var3 = new d05("HIGHEST", 2);
-        S = d05Var3;
-        T = new d05[]{d05Var, d05Var2, d05Var3};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class d05 implements zx4 {
+    public final /* synthetic */ int X;
+    public final Object Y;
+
+    public /* synthetic */ d05(int i, Object obj) {
+        this.X = i;
+        this.Y = obj;
     }
 
-    public static d05 valueOf(String str) {
-        return (d05) Enum.valueOf(d05.class, str);
-    }
-
-    public static d05[] values() {
-        return (d05[]) T.clone();
+    @Override // defpackage.s4
+    /* renamed from: a */
+    public final void mo6a(Object obj) {
+        switch (this.X) {
+            case 0:
+                td7 td7Var = (td7) obj;
+                c05 c05Var = new c05(new sr6(td7Var));
+                td7Var.X.b(c05Var);
+                td7Var.X.b(c05Var.j0);
+                td7Var.f(new a05(0, c05Var));
+                if (!td7Var.X.Y) {
+                    ((by4) this.Y).d(c05Var);
+                    break;
+                }
+                break;
+            case 1:
+                td7 td7Var2 = (td7) obj;
+                td7Var2.f(new e05(td7Var2, (Object[]) this.Y));
+                break;
+            case 2:
+                td7 td7Var3 = (td7) obj;
+                try {
+                    Iterator it = ((ArrayList) this.Y).iterator();
+                    boolean hasNext = it.hasNext();
+                    if (!td7Var3.X.Y) {
+                        if (!hasNext) {
+                            td7Var3.b();
+                            break;
+                        } else {
+                            td7Var3.f(new f05(td7Var3, it));
+                            break;
+                        }
+                    }
+                } catch (Throwable th) {
+                    m93.Y(th, td7Var3);
+                    return;
+                }
+                break;
+            default:
+                td7 td7Var4 = (td7) obj;
+                Object obj2 = this.Y;
+                td7Var4.f(pk6.Z ? new iy6(td7Var4, obj2) : new p8(10, td7Var4, obj2));
+                break;
+        }
     }
 }

@@ -1,125 +1,186 @@
-.class public final enum Lpr7;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lpr7;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final enum Q:Lpr7;
+.field public static final f:Lkd7;
 
-.field public static final enum R:Lpr7;
 
-.field public static final synthetic S:[Lpr7;
+# instance fields
+.field public final a:Lvz7;
+
+.field public final b:Lpu7;
+
+.field public final c:Z
+
+.field public final d:Z
+
+.field public final e:Z
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 2
 
     .line 1
-    new-instance v0, Lpr7;
+    new-instance v0, Lkd7;
 
     .line 2
     .line 3
-    const-string v1, "Start"
+    const/4 v1, 0x5
 
     .line 4
+    invoke-direct {v0, v1}, Lkd7;-><init>(I)V
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
+    sput-object v0, Lpr7;->f:Lkd7;
+
     .line 8
     .line 9
-    sput-object v0, Lpr7;->Q:Lpr7;
-
-    .line 10
-    .line 11
-    new-instance v1, Lpr7;
-
-    .line 12
-    .line 13
-    const-string v3, "End"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lpr7;->R:Lpr7;
-
-    .line 20
-    .line 21
-    const/4 v3, 0x2
-
-    .line 22
-    new-array v3, v3, [Lpr7;
-
-    .line 23
-    .line 24
-    aput-object v0, v3, v2
-
-    .line 25
-    .line 26
-    aput-object v1, v3, v4
-
-    .line 27
-    .line 28
-    sput-object v3, Lpr7;->S:[Lpr7;
-
-    .line 29
-    .line 30
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lpr7;
-    .locals 1
+.method public constructor <init>(Lvz7;Lpu7;ZZZ)V
+    .locals 0
 
     .line 1
-    const-class v0, Lpr7;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
     .line 4
+    iput-object p1, p0, Lpr7;->a:Lvz7;
+
     .line 5
     .line 6
-    move-result-object p0
+    iput-object p2, p0, Lpr7;->b:Lpu7;
 
     .line 7
-    check-cast p0, Lpr7;
-
     .line 8
+    iput-boolean p3, p0, Lpr7;->c:Z
+
     .line 9
-    return-object p0
+    .line 10
+    iput-boolean p4, p0, Lpr7;->d:Z
+
+    .line 11
+    .line 12
+    iput-boolean p5, p0, Lpr7;->e:Z
+
+    .line 13
+    .line 14
+    return-void
 .end method
 
-.method public static values()[Lpr7;
-    .locals 1
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    sget-object v0, Lpr7;->S:[Lpr7;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    const-string v1, "NonMeasureInputs(textFieldState="
 
     .line 4
     .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 6
-    move-result-object v0
-
     .line 7
-    check-cast v0, [Lpr7;
-
     .line 8
+    iget-object v1, p0, Lpr7;->a:Lvz7;
+
     .line 9
-    return-object v0
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", textStyle="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lpr7;->b:Lpu7;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", singleLine="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-boolean v1, p0, Lpr7;->c:Z
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", softWrap="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget-boolean v1, p0, Lpr7;->d:Z
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ", isKeyboardTypePhone="
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    iget-boolean p0, p0, Lpr7;->e:Z
+
+    .line 49
+    .line 50
+    const/16 v1, 0x29
+
+    .line 51
+    .line 52
+    invoke-static {v0, p0, v1}, Leb7;->m(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p0
+
+    .line 56
+    return-object p0
 .end method

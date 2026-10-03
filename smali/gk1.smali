@@ -1,94 +1,55 @@
 .class public final Lgk1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/view/View$OnApplyWindowInsetsListener;
+.implements Landroid/content/DialogInterface$OnDismissListener;
 
 
-# virtual methods
-.method public final onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
-    .locals 3
+# instance fields
+.field public final synthetic X:Ljk1;
+
+
+# direct methods
+.method public constructor <init>(Ljk1;)V
+    .locals 0
 
     .line 1
-    check-cast p1, Landroidx/drawerlayout/widget/DrawerLayout;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-virtual {p2}, Landroid/view/WindowInsets;->getSystemWindowInsetTop()I
+    .line 4
+    iput-object p1, p0, Lgk1;->X:Ljk1;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onDismiss(Landroid/content/DialogInterface;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lgk1;->X:Ljk1;
+
+    .line 2
+    .line 3
+    iget-object p1, p0, Ljk1;->l1:Landroid/app/Dialog;
 
     .line 4
     .line 5
-    .line 6
-    move-result v0
+    if-eqz p1, :cond_0
 
+    .line 6
     .line 7
-    const/4 v1, 0x0
+    invoke-virtual {p0, p1}, Ljk1;->onDismiss(Landroid/content/DialogInterface;)V
 
     .line 8
-    const/4 v2, 0x1
-
     .line 9
-    if-lez v0, :cond_0
-
     .line 10
-    .line 11
-    const/4 v0, 0x1
-
-    .line 12
-    goto :goto_0
-
-    .line 13
     :cond_0
-    const/4 v0, 0x0
-
-    .line 14
-    :goto_0
-    iput-object p2, p1, Landroidx/drawerlayout/widget/DrawerLayout;->o0:Landroid/view/WindowInsets;
-
-    .line 15
-    .line 16
-    iput-boolean v0, p1, Landroidx/drawerlayout/widget/DrawerLayout;->p0:Z
-
-    .line 17
-    .line 18
-    if-nez v0, :cond_1
-
-    .line 19
-    .line 20
-    invoke-virtual {p1}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v0
-
-    .line 24
-    if-nez v0, :cond_1
-
-    .line 25
-    .line 26
-    const/4 v1, 0x1
-
-    .line 27
-    :cond_1
-    invoke-virtual {p1, v1}, Landroid/view/View;->setWillNotDraw(Z)V
-
-    .line 28
-    .line 29
-    .line 30
-    invoke-virtual {p1}, Landroidx/drawerlayout/widget/DrawerLayout;->requestLayout()V
-
-    .line 31
-    .line 32
-    .line 33
-    invoke-virtual {p2}, Landroid/view/WindowInsets;->consumeSystemWindowInsets()Landroid/view/WindowInsets;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object p1
-
-    .line 37
-    return-object p1
+    return-void
 .end method

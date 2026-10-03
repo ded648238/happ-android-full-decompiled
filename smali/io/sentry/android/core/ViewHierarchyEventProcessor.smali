@@ -1,15 +1,15 @@
 .class public final Lio/sentry/android/core/ViewHierarchyEventProcessor;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/f0;
+.implements Lio/sentry/g0;
 
 
 # instance fields
-.field public final Q:Lio/sentry/android/core/SentryAndroidOptions;
+.field public final a:Lio/sentry/android/core/SentryAndroidOptions;
 
-.field public final R:Loj1;
+.field public final b:Ltr1;
 
 
 # direct methods
@@ -22,11 +22,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/sentry/android/core/ViewHierarchyEventProcessor;->Q:Lio/sentry/android/core/SentryAndroidOptions;
+    iput-object p1, p0, Lio/sentry/android/core/ViewHierarchyEventProcessor;->a:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 5
     .line 6
-    new-instance v0, Loj1;
+    new-instance v0, Ltr1;
 
     .line 7
     .line 8
@@ -37,12 +37,12 @@
     const/4 v3, 0x3
 
     .line 11
-    invoke-direct {v0, v1, v2, v3}, Loj1;-><init>(JI)V
+    invoke-direct {v0, v1, v2, v3}, Ltr1;-><init>(JI)V
 
     .line 12
     .line 13
     .line 14
-    iput-object v0, p0, Lio/sentry/android/core/ViewHierarchyEventProcessor;->R:Loj1;
+    iput-object v0, p0, Lio/sentry/android/core/ViewHierarchyEventProcessor;->b:Ltr1;
 
     .line 15
     .line 16
@@ -51,18 +51,18 @@
     .line 17
     .line 18
     .line 19
-    move-result p1
+    move-result p0
 
     .line 20
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 21
     .line 22
-    const-string p1, "ViewHierarchy"
+    const-string p0, "ViewHierarchy"
 
     .line 23
     .line 24
-    invoke-static {p1}, Lio/sentry/util/b;->a(Ljava/lang/String;)V
+    invoke-static {p0}, Lio/sentry/util/c;->a(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -71,7 +71,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/view/View;Lio/sentry/protocol/l0;Ljava/util/List;)V
+.method public static d(Landroid/view/View;Lio/sentry/protocol/k0;Ljava/util/List;)V
     .locals 5
 
     .line 1
@@ -157,7 +157,7 @@
 
     .line 38
     .line 39
-    invoke-static {v3}, Lio/sentry/android/core/ViewHierarchyEventProcessor;->b(Landroid/view/View;)Lio/sentry/protocol/l0;
+    invoke-static {v3}, Lio/sentry/android/core/ViewHierarchyEventProcessor;->e(Landroid/view/View;)Lio/sentry/protocol/k0;
 
     .line 40
     .line 41
@@ -170,7 +170,7 @@
     .line 44
     .line 45
     .line 46
-    invoke-static {v3, v4, p2}, Lio/sentry/android/core/ViewHierarchyEventProcessor;->a(Landroid/view/View;Lio/sentry/protocol/l0;Ljava/util/List;)V
+    invoke-static {v3, v4, p2}, Lio/sentry/android/core/ViewHierarchyEventProcessor;->d(Landroid/view/View;Lio/sentry/protocol/k0;Ljava/util/List;)V
 
     .line 47
     .line 48
@@ -184,7 +184,7 @@
 
     .line 52
     :cond_3
-    iput-object v1, p1, Lio/sentry/protocol/l0;->a0:Ljava/util/List;
+    iput-object v1, p1, Lio/sentry/protocol/k0;->j0:Ljava/util/List;
 
     .line 53
     .line 54
@@ -192,7 +192,7 @@
 
     .line 55
     :cond_4
-    invoke-static {v0}, Lxy4;->t(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
+    invoke-static {v0}, Lw31;->j(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
 
     .line 56
     .line 57
@@ -203,11 +203,11 @@
     throw p0
 .end method
 
-.method public static b(Landroid/view/View;)Lio/sentry/protocol/l0;
+.method public static e(Landroid/view/View;)Lio/sentry/protocol/k0;
     .locals 3
 
     .line 1
-    new-instance v0, Lio/sentry/protocol/l0;
+    new-instance v0, Lio/sentry/protocol/k0;
 
     .line 2
     .line 3
@@ -224,12 +224,12 @@
     move-result-object v1
 
     .line 10
-    iput-object v1, v0, Lio/sentry/protocol/l0;->R:Ljava/lang/String;
+    iput-object v1, v0, Lio/sentry/protocol/k0;->Y:Ljava/lang/String;
 
     .line 11
     .line 12
     :try_start_0
-    invoke-static {p0}, Lio/sentry/android/core/internal/gestures/i;->b(Landroid/view/View;)Ljava/lang/String;
+    invoke-static {p0}, Lio/sentry/config/a;->l(Landroid/view/View;)Ljava/lang/String;
 
     .line 13
     .line 14
@@ -237,20 +237,18 @@
     move-result-object v1
 
     .line 16
-    iput-object v1, v0, Lio/sentry/protocol/l0;->S:Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    if-eqz v1, :cond_0
 
     .line 17
     .line 18
-    goto :goto_0
+    iput-object v1, v0, Lio/sentry/protocol/k0;->Z:Ljava/lang/String;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 19
-    :catchall_0
-    nop
-
     .line 20
-    :goto_0
+    :catchall_0
+    :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getX()F
 
     .line 21
@@ -270,7 +268,7 @@
     move-result-object v1
 
     .line 29
-    iput-object v1, v0, Lio/sentry/protocol/l0;->W:Ljava/lang/Double;
+    iput-object v1, v0, Lio/sentry/protocol/k0;->f0:Ljava/lang/Double;
 
     .line 30
     .line 31
@@ -293,7 +291,7 @@
     move-result-object v1
 
     .line 40
-    iput-object v1, v0, Lio/sentry/protocol/l0;->X:Ljava/lang/Double;
+    iput-object v1, v0, Lio/sentry/protocol/k0;->g0:Ljava/lang/Double;
 
     .line 41
     .line 42
@@ -316,7 +314,7 @@
     move-result-object v1
 
     .line 51
-    iput-object v1, v0, Lio/sentry/protocol/l0;->U:Ljava/lang/Double;
+    iput-object v1, v0, Lio/sentry/protocol/k0;->d0:Ljava/lang/Double;
 
     .line 52
     .line 53
@@ -339,7 +337,7 @@
     move-result-object v1
 
     .line 62
-    iput-object v1, v0, Lio/sentry/protocol/l0;->V:Ljava/lang/Double;
+    iput-object v1, v0, Lio/sentry/protocol/k0;->e0:Ljava/lang/Double;
 
     .line 63
     .line 64
@@ -362,7 +360,7 @@
     move-result-object v1
 
     .line 73
-    iput-object v1, v0, Lio/sentry/protocol/l0;->Z:Ljava/lang/Double;
+    iput-object v1, v0, Lio/sentry/protocol/k0;->i0:Ljava/lang/Double;
 
     .line 74
     .line 75
@@ -374,14 +372,14 @@
     move-result p0
 
     .line 79
-    if-eqz p0, :cond_2
+    if-eqz p0, :cond_3
 
     .line 80
     .line 81
     const/4 v1, 0x4
 
     .line 82
-    if-eq p0, v1, :cond_1
+    if-eq p0, v1, :cond_2
 
     .line 83
     .line 84
@@ -389,64 +387,57 @@
 
     .line 85
     .line 86
-    if-eq p0, v1, :cond_0
+    if-eq p0, v1, :cond_1
 
     .line 87
     .line 88
-    goto :goto_1
+    goto :goto_0
 
     .line 89
-    :cond_0
+    :cond_1
     const-string p0, "gone"
 
     .line 90
     .line 91
-    iput-object p0, v0, Lio/sentry/protocol/l0;->Y:Ljava/lang/String;
+    iput-object p0, v0, Lio/sentry/protocol/k0;->h0:Ljava/lang/String;
 
     .line 92
     .line 93
-    goto :goto_1
+    goto :goto_0
 
     .line 94
-    :cond_1
+    :cond_2
     const-string p0, "invisible"
 
     .line 95
     .line 96
-    iput-object p0, v0, Lio/sentry/protocol/l0;->Y:Ljava/lang/String;
+    iput-object p0, v0, Lio/sentry/protocol/k0;->h0:Ljava/lang/String;
 
     .line 97
     .line 98
-    goto :goto_1
+    goto :goto_0
 
     .line 99
-    :cond_2
+    :cond_3
     const-string p0, "visible"
 
     .line 100
     .line 101
-    iput-object p0, v0, Lio/sentry/protocol/l0;->Y:Ljava/lang/String;
+    iput-object p0, v0, Lio/sentry/protocol/k0;->h0:Ljava/lang/String;
 
     .line 102
     .line 103
-    :goto_1
+    :goto_0
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final f(Lio/sentry/o6;Lio/sentry/k0;)Lio/sentry/o6;
-    .locals 0
+.method public final b(Lio/sentry/f5;Lio/sentry/l0;)Lio/sentry/f5;
+    .locals 10
 
     .line 1
-    return-object p1
-.end method
-
-.method public final h(Lio/sentry/d5;Lio/sentry/k0;)Lio/sentry/d5;
-    .locals 11
-
-    .line 1
-    invoke-virtual {p1}, Lio/sentry/d5;->g()Z
+    invoke-virtual {p1}, Lio/sentry/f5;->g()Z
 
     .line 2
     .line 3
@@ -463,7 +454,7 @@
     .line 8
     .line 9
     :cond_0
-    iget-object v0, p0, Lio/sentry/android/core/ViewHierarchyEventProcessor;->Q:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object v0, p0, Lio/sentry/android/core/ViewHierarchyEventProcessor;->a:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 10
     .line 11
@@ -482,27 +473,27 @@
 
     .line 17
     .line 18
-    invoke-virtual {v0}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 19
     .line 20
     .line 21
-    move-result-object p2
+    move-result-object p0
 
     .line 22
-    sget-object v0, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object p2, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 23
     .line 24
-    const-string v1, "attachViewHierarchy is disabled."
+    const-string v0, "attachViewHierarchy is disabled."
 
     .line 25
     .line 26
-    new-array v2, v2, [Ljava/lang/Object;
+    new-array v1, v2, [Ljava/lang/Object;
 
     .line 27
     .line 28
-    invoke-interface {p2, v0, v1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, p2, v0, v1}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 29
     .line 30
@@ -511,7 +502,7 @@
 
     .line 32
     :cond_1
-    invoke-static {p2}, Lio/sentry/util/b;->j(Lio/sentry/k0;)Z
+    invoke-static {p2}, Lio/sentry/util/c;->l(Lio/sentry/l0;)Z
 
     .line 33
     .line 34
@@ -528,24 +519,24 @@
     .line 39
     .line 40
     :cond_2
-    iget-object v1, p0, Lio/sentry/android/core/ViewHierarchyEventProcessor;->R:Loj1;
+    iget-object p0, p0, Lio/sentry/android/core/ViewHierarchyEventProcessor;->b:Ltr1;
 
     .line 41
     .line 42
-    invoke-virtual {v1}, Loj1;->a()Z
+    invoke-virtual {p0}, Ltr1;->a()Z
 
     .line 43
     .line 44
     .line 45
-    move-result v1
+    move-result p0
 
     .line 46
-    invoke-virtual {v0}, Lio/sentry/android/core/SentryAndroidOptions;->getBeforeViewHierarchyCaptureCallback()Lio/sentry/android/core/j1;
+    invoke-virtual {v0}, Lio/sentry/android/core/SentryAndroidOptions;->getBeforeViewHierarchyCaptureCallback()Lio/sentry/android/core/v1;
 
     .line 47
     .line 48
     .line 49
-    if-eqz v1, :cond_3
+    if-eqz p0, :cond_3
 
     .line 50
     .line 51
@@ -554,34 +545,34 @@
     .line 52
     .line 53
     :cond_3
-    sget-object v1, Lio/sentry/android/core/n0;->b:Lio/sentry/android/core/n0;
+    sget-object p0, Lio/sentry/android/core/o0;->b:Lio/sentry/android/core/o0;
 
     .line 54
     .line 55
-    iget-object v1, v1, Lio/sentry/android/core/n0;->a:Ljava/lang/Object;
+    iget-object p0, p0, Lio/sentry/android/core/o0;->a:Ljava/lang/Object;
 
     .line 56
     .line 57
-    check-cast v1, Ljava/lang/ref/WeakReference;
+    check-cast p0, Ljava/lang/ref/WeakReference;
 
     .line 58
     .line 59
-    const/4 v3, 0x0
+    const/4 v1, 0x0
 
     .line 60
-    if-eqz v1, :cond_4
+    if-eqz p0, :cond_4
 
     .line 61
     .line 62
-    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     .line 63
     .line 64
     .line 65
-    move-result-object v1
+    move-result-object p0
 
     .line 66
-    check-cast v1, Landroid/app/Activity;
+    check-cast p0, Landroid/app/Activity;
 
     .line 67
     .line 68
@@ -589,43 +580,43 @@
 
     .line 69
     :cond_4
-    move-object v1, v3
+    move-object p0, v1
 
     .line 70
     :goto_0
-    invoke-virtual {v0}, Lio/sentry/m6;->getViewHierarchyExporters()Ljava/util/List;
+    invoke-virtual {v0}, Lio/sentry/o6;->getViewHierarchyExporters()Ljava/util/List;
 
     .line 71
     .line 72
     .line 73
-    move-result-object v7
+    move-result-object v6
 
     .line 74
-    invoke-virtual {v0}, Lio/sentry/m6;->getThreadChecker()Lio/sentry/util/thread/a;
+    invoke-virtual {v0}, Lio/sentry/o6;->getThreadChecker()Lio/sentry/util/thread/a;
 
     .line 75
     .line 76
     .line 77
-    move-result-object v4
+    move-result-object v3
 
     .line 78
-    invoke-virtual {v0}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 79
     .line 80
     .line 81
-    move-result-object v9
+    move-result-object v8
 
     .line 82
-    if-nez v1, :cond_5
+    if-nez p0, :cond_5
 
     .line 83
     .line 84
-    sget-object v0, Lio/sentry/m5;->INFO:Lio/sentry/m5;
+    sget-object p0, Lio/sentry/o5;->INFO:Lio/sentry/o5;
 
     .line 85
     .line 86
-    const-string v1, "Missing activity for view hierarchy snapshot."
+    const-string v0, "Missing activity for view hierarchy snapshot."
 
     .line 87
     .line 88
@@ -633,261 +624,265 @@
 
     .line 89
     .line 90
-    invoke-interface {v9, v0, v1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {v8, p0, v0, v2}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 91
     .line 92
     .line 93
-    goto :goto_1
+    goto/16 :goto_1
 
     .line 94
-    :cond_5
-    invoke-virtual {v1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
     .line 95
+    :cond_5
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
     .line 96
     .line 97
+    .line 98
     move-result-object v0
 
-    .line 98
+    .line 99
     if-nez v0, :cond_6
 
-    .line 99
     .line 100
-    sget-object v0, Lio/sentry/m5;->INFO:Lio/sentry/m5;
-
     .line 101
-    .line 102
-    const-string v1, "Missing window for view hierarchy snapshot."
+    sget-object p0, Lio/sentry/o5;->INFO:Lio/sentry/o5;
 
+    .line 102
     .line 103
+    const-string v0, "Missing window for view hierarchy snapshot."
+
     .line 104
+    .line 105
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 105
     .line 106
-    invoke-interface {v9, v0, v1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
-
     .line 107
+    invoke-interface {v8, p0, v0, v2}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
+
     .line 108
     .line 109
+    .line 110
     goto :goto_1
 
-    .line 110
+    .line 111
     :cond_6
     invoke-virtual {v0}, Landroid/view/Window;->peekDecorView()Landroid/view/View;
 
-    .line 111
     .line 112
     .line 113
-    move-result-object v6
-
     .line 114
-    if-nez v6, :cond_7
+    move-result-object v5
 
     .line 115
+    if-nez v5, :cond_7
+
     .line 116
-    sget-object v0, Lio/sentry/m5;->INFO:Lio/sentry/m5;
-
     .line 117
-    .line 118
-    const-string v1, "Missing decor view for view hierarchy snapshot."
+    sget-object p0, Lio/sentry/o5;->INFO:Lio/sentry/o5;
 
+    .line 118
     .line 119
+    const-string v0, "Missing decor view for view hierarchy snapshot."
+
     .line 120
+    .line 121
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 121
     .line 122
-    invoke-interface {v9, v0, v1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
-
     .line 123
+    invoke-interface {v8, p0, v0, v2}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
+
     .line 124
     .line 125
-    goto :goto_1
-
     .line 126
-    :cond_7
-    :try_start_0
-    invoke-interface {v4}, Lio/sentry/util/thread/a;->c()Z
+    goto :goto_1
 
     .line 127
+    :cond_7
+    :try_start_0
+    invoke-interface {v3}, Lio/sentry/util/thread/a;->c()Z
+
     .line 128
     .line 129
-    move-result v0
-
     .line 130
-    const/4 v2, 0x1
+    move-result v0
 
     .line 131
-    if-eqz v0, :cond_8
+    const/4 v2, 0x1
 
     .line 132
+    if-eqz v0, :cond_8
+
     .line 133
-    new-instance v0, Ljava/util/ArrayList;
-
     .line 134
-    .line 135
-    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
+    new-instance p0, Ljava/util/ArrayList;
 
+    .line 135
     .line 136
+    invoke-direct {p0, v2}, Ljava/util/ArrayList;-><init>(I)V
+
     .line 137
     .line 138
-    new-instance v1, Lio/sentry/protocol/k0;
-
     .line 139
+    new-instance v0, Lio/sentry/protocol/j0;
+
     .line 140
+    .line 141
     const-string v2, "android_view_system"
 
-    .line 141
     .line 142
-    invoke-direct {v1, v2, v0}, Lio/sentry/protocol/k0;-><init>(Ljava/lang/String;Ljava/util/List;)V
-
     .line 143
+    invoke-direct {v0, v2, p0}, Lio/sentry/protocol/j0;-><init>(Ljava/lang/String;Ljava/util/List;)V
+
     .line 144
     .line 145
-    invoke-static {v6}, Lio/sentry/android/core/ViewHierarchyEventProcessor;->b(Landroid/view/View;)Lio/sentry/protocol/l0;
-
     .line 146
+    invoke-static {v5}, Lio/sentry/android/core/ViewHierarchyEventProcessor;->e(Landroid/view/View;)Lio/sentry/protocol/k0;
+
     .line 147
     .line 148
+    .line 149
     move-result-object v2
 
-    .line 149
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 150
+    invoke-virtual {p0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 151
     .line 152
-    invoke-static {v6, v2, v7}, Lio/sentry/android/core/ViewHierarchyEventProcessor;->a(Landroid/view/View;Lio/sentry/protocol/l0;Ljava/util/List;)V
-
     .line 153
+    invoke-static {v5, v2, v6}, Lio/sentry/android/core/ViewHierarchyEventProcessor;->d(Landroid/view/View;Lio/sentry/protocol/k0;Ljava/util/List;)V
+
     .line 154
     .line 155
-    move-object v3, v1
-
     .line 156
-    goto :goto_1
+    move-object v1, v0
 
     .line 157
-    :cond_8
-    new-instance v8, Ljava/util/concurrent/CountDownLatch;
+    goto :goto_1
 
     .line 158
-    .line 159
-    invoke-direct {v8, v2}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+    :cond_8
+    new-instance v7, Ljava/util/concurrent/CountDownLatch;
 
+    .line 159
     .line 160
+    invoke-direct {v7, v2}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+
     .line 161
     .line 162
-    new-instance v5, Ljava/util/concurrent/atomic/AtomicReference;
-
     .line 163
-    .line 164
-    invoke-direct {v5, v3}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+    new-instance v4, Ljava/util/concurrent/atomic/AtomicReference;
 
+    .line 164
     .line 165
+    invoke-direct {v4, v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+
     .line 166
     .line 167
-    new-instance v4, Ln00;
-
     .line 168
-    .line 169
-    const/4 v10, 0x2
+    new-instance v3, Lq20;
 
+    .line 169
     .line 170
-    invoke-direct/range {v4 .. v10}, Ln00;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    const/4 v9, 0x3
 
     .line 171
+    invoke-direct/range {v3 .. v9}, Lq20;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
     .line 172
     .line 173
-    invoke-virtual {v1, v4}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
-
     .line 174
+    invoke-virtual {p0, v3}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+
     .line 175
     .line 176
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
     .line 177
+    sget-object p0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
     .line 178
-    const-wide/16 v1, 0x3e8
-
     .line 179
-    .line 180
-    invoke-virtual {v8, v1, v2, v0}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
+    const-wide/16 v2, 0x3e8
 
+    .line 180
     .line 181
+    invoke-virtual {v7, v2, v3, p0}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
+
     .line 182
     .line 183
-    move-result v0
-
     .line 184
-    if-eqz v0, :cond_9
+    move-result p0
 
     .line 185
-    .line 186
-    invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+    if-eqz p0, :cond_9
 
+    .line 186
     .line 187
+    invoke-virtual {v4}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
     .line 188
     .line 189
-    move-result-object v0
-
     .line 190
-    check-cast v0, Lio/sentry/protocol/k0;
+    move-result-object p0
+
+    .line 191
+    check-cast p0, Lio/sentry/protocol/j0;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 191
     .line 192
-    move-object v3, v0
-
     .line 193
-    goto :goto_1
+    move-object v1, p0
 
     .line 194
+    goto :goto_1
+
+    .line 195
     :catchall_0
     move-exception v0
 
-    .line 195
-    sget-object v1, Lio/sentry/m5;->ERROR:Lio/sentry/m5;
-
     .line 196
+    move-object p0, v0
+
     .line 197
-    const-string v2, "Failed to process view hierarchy."
+    sget-object v0, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
 
     .line 198
     .line 199
-    invoke-interface {v9, v1, v2, v0}, Lio/sentry/ILogger;->d(Lio/sentry/m5;Ljava/lang/String;Ljava/lang/Throwable;)V
+    const-string v2, "Failed to process view hierarchy."
 
     .line 200
     .line 201
-    .line 202
-    :cond_9
-    :goto_1
-    if-eqz v3, :cond_a
+    invoke-interface {v8, v0, v2, p0}, Lio/sentry/ILogger;->d(Lio/sentry/o5;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 202
     .line 203
     .line 204
-    new-instance v0, Lio/sentry/a;
+    :cond_9
+    :goto_1
+    if-eqz v1, :cond_a
 
     .line 205
     .line 206
-    invoke-direct {v0, v3}, Lio/sentry/a;-><init>(Lio/sentry/protocol/k0;)V
+    new-instance p0, Lio/sentry/a;
 
     .line 207
     .line 208
-    .line 209
-    iput-object v0, p2, Lio/sentry/k0;->e:Lio/sentry/a;
+    invoke-direct {p0, v1}, Lio/sentry/a;-><init>(Lio/sentry/protocol/j0;)V
 
+    .line 209
     .line 210
     .line 211
+    iput-object p0, p2, Lio/sentry/l0;->e:Lio/sentry/a;
+
+    .line 212
+    .line 213
     :cond_a
     :goto_2
     return-object p1
 .end method
 
-.method public final i(Lio/sentry/protocol/f0;Lio/sentry/k0;)Lio/sentry/protocol/f0;
+.method public final c(Lio/sentry/protocol/f0;Lio/sentry/l0;)Lio/sentry/protocol/f0;
     .locals 0
 
     .line 1

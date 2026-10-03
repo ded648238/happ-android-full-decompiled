@@ -1,115 +1,81 @@
-.class public final Le1;
-.super Ljava/lang/Throwable;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public interface abstract Le1;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# instance fields
-.field public final synthetic Q:I
-
-
-# direct methods
-.method public synthetic constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-
-    .line 1
-    iput p2, p0, Le1;->Q:I
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method private final declared-synchronized a()Ljava/lang/Throwable;
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    monitor-exit p0
-
-    .line 3
-    return-object p0
-.end method
-
-.method private final declared-synchronized b()Ljava/lang/Throwable;
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    monitor-exit p0
-
-    .line 3
-    return-object p0
-.end method
-
-.method private final declared-synchronized c()Ljava/lang/Throwable;
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    monitor-exit p0
-
-    .line 3
-    return-object p0
-.end method
+# interfaces
+.implements Lh91;
 
 
 # virtual methods
-.method public final declared-synchronized fillInStackTrace()Ljava/lang/Throwable;
+.method public a(Ljava/lang/String;)V
     .locals 1
 
     .line 1
-    iget v0, p0, Le1;->Q:I
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    invoke-interface {p0}, Le1;->i()Lur;
+
     .line 5
     .line 6
-    invoke-direct {p0}, Le1;->c()Ljava/lang/Throwable;
-
     .line 7
-    .line 8
-    .line 9
-    return-object p0
+    move-result-object p0
 
+    .line 8
+    new-instance v0, Li01;
+
+    .line 9
     .line 10
-    :pswitch_0
-    invoke-direct {p0}, Le1;->b()Ljava/lang/Throwable;
+    invoke-direct {v0, p1}, Li01;-><init>(Ljava/lang/String;)V
 
     .line 11
     .line 12
     .line 13
-    return-object p0
+    invoke-virtual {p0, v0}, Lur;->b(Lwe2;)V
 
     .line 14
-    :pswitch_1
-    invoke-direct {p0}, Le1;->a()Ljava/lang/Throwable;
-
     .line 15
     .line 16
-    .line 17
-    return-object p0
+    return-void
+.end method
 
-    .line 18
-    nop
+.method public build()Lua0;
+    .locals 1
 
-    .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    new-instance v0, Lua0;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Le1;->i()Lur;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    iget-object p0, p0, Lur;->b:Ljava/util/ArrayList;
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-direct {v0, p0}, Lua0;-><init>(Ljava/util/List;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object v0
+.end method
+
+.method public abstract i()Lur;
+.end method
+
+.method public abstract l()Le1;
 .end method

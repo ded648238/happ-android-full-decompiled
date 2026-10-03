@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/HostnamesKt;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -52,7 +52,7 @@
     const/4 v1, 0x0
 
     .line 6
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 7
     :goto_0
@@ -72,7 +72,7 @@
 
     .line 14
     .line 15
-    invoke-static {v3, v4}, Lrt2;->j(II)I
+    invoke-static {v3, v4}, Lm93;->p(II)I
 
     .line 16
     .line 17
@@ -88,7 +88,7 @@
 
     .line 22
     .line 23
-    invoke-static {v3, v4}, Lrt2;->j(II)I
+    invoke-static {v3, v4}, Lm93;->p(II)I
 
     .line 24
     .line 25
@@ -111,7 +111,7 @@
     const/4 v5, 0x6
 
     .line 33
-    invoke-static {v4, v3, v1, v5}, Lsl6;->s0(Ljava/lang/CharSequence;CII)I
+    invoke-static {v4, v3, v1, v5}, Lea7;->T0(Ljava/lang/CharSequence;CII)I
 
     .line 34
     .line 35
@@ -207,7 +207,7 @@
     move v2, p1
 
     .line 23
-    const/4 v3, 0x0
+    move v3, v1
 
     .line 24
     :goto_1
@@ -227,7 +227,7 @@
 
     .line 31
     .line 32
-    invoke-static {v4, v5}, Lrt2;->j(II)I
+    invoke-static {v4, v5}, Lm93;->p(II)I
 
     .line 33
     .line 34
@@ -243,7 +243,7 @@
 
     .line 39
     .line 40
-    invoke-static {v4, v6}, Lrt2;->j(II)I
+    invoke-static {v4, v6}, Lm93;->p(II)I
 
     .line 41
     .line 42
@@ -371,13 +371,13 @@
     const/4 v3, -0x1
 
     .line 7
-    const/4 v4, 0x0
+    move v4, v2
 
     .line 8
-    const/4 v5, -0x1
+    move v5, v3
 
     .line 9
-    const/4 v6, -0x1
+    move v6, v5
 
     .line 10
     :goto_0
@@ -406,7 +406,7 @@
 
     .line 21
     .line 22
-    invoke-static {p0, v8, p1, v2}, Lzl6;->f0(Ljava/lang/String;Ljava/lang/String;IZ)Z
+    invoke-static {p0, v8, p1, v2}, Lla7;->G0(Ljava/lang/String;Ljava/lang/String;IZ)Z
 
     .line 23
     .line 24
@@ -457,7 +457,7 @@
 
     .line 43
     .line 44
-    invoke-static {p0, v7, p1, v2}, Lzl6;->f0(Ljava/lang/String;Ljava/lang/String;IZ)Z
+    invoke-static {p0, v7, p1, v2}, Lla7;->G0(Ljava/lang/String;Ljava/lang/String;IZ)Z
 
     .line 45
     .line 46
@@ -485,7 +485,7 @@
 
     .line 55
     .line 56
-    invoke-static {p0, v7, p1, v2}, Lzl6;->f0(Ljava/lang/String;Ljava/lang/String;IZ)Z
+    invoke-static {p0, v7, p1, v2}, Lla7;->G0(Ljava/lang/String;Ljava/lang/String;IZ)Z
 
     .line 57
     .line 58
@@ -525,10 +525,10 @@
 
     .line 74
     :goto_1
-    move p1, v6
+    move v7, v2
 
     .line 75
-    const/4 v7, 0x0
+    move p1, v6
 
     .line 76
     :goto_2
@@ -692,10 +692,10 @@
     const/4 v1, 0x0
 
     .line 3
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 4
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 5
     :goto_0
@@ -776,7 +776,7 @@
 
     .line 38
     :cond_2
-    new-instance v2, Lf50;
+    new-instance v2, Ll70;
 
     .line 39
     .line 40
@@ -802,7 +802,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {v2, v4}, Lf50;->x0(I)V
+    invoke-virtual {v2, v4}, Ll70;->G0(I)V
 
     .line 51
     .line 52
@@ -814,7 +814,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {v2, v4}, Lf50;->x0(I)V
+    invoke-virtual {v2, v4}, Ll70;->G0(I)V
 
     .line 57
     .line 58
@@ -827,7 +827,7 @@
 
     .line 61
     .line 62
-    invoke-virtual {v2, v4}, Lf50;->x0(I)V
+    invoke-virtual {v2, v4}, Ll70;->G0(I)V
 
     .line 63
     .line 64
@@ -875,7 +875,7 @@
     int-to-long v6, v4
 
     .line 85
-    invoke-virtual {v2, v6, v7}, Lf50;->I0(J)V
+    invoke-virtual {v2, v6, v7}, Ll70;->S0(J)V
 
     .line 86
     .line 87
@@ -888,7 +888,7 @@
 
     .line 91
     :cond_6
-    invoke-virtual {v2}, Lf50;->i0()Ljava/lang/String;
+    invoke-virtual {v2}, Ll70;->b0()Ljava/lang/String;
 
     .line 92
     .line 93
@@ -915,7 +915,7 @@
     const/4 v1, 0x0
 
     .line 7
-    invoke-static {p0, v0, v1}, Lsl6;->k0(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+    invoke-static {p0, v0, v1}, Lea7;->L0(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
 
     .line 8
     .line 9
@@ -934,7 +934,7 @@
 
     .line 15
     .line 16
-    invoke-static {p0, v1, v0}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {p0, v1, v0}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 17
     .line 18
@@ -950,7 +950,7 @@
 
     .line 23
     .line 24
-    invoke-static {p0, v1, v0}, Lzl6;->Y(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {p0, v1, v0}, Lla7;->z0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 25
     .line 26
@@ -1074,7 +1074,7 @@
 
     .line 78
     .line 79
-    invoke-static {v1, v0, p0}, Lxy4;->u(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0, p0}, Lw31;->k(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 80
     .line 81
@@ -1082,7 +1082,7 @@
     move-result-object p0
 
     .line 83
-    invoke-static {p0}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 84
     .line 85

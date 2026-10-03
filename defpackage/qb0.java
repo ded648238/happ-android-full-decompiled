@@ -1,39 +1,23 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class qb0 {
-    public static final qb0 Q;
-    public static final qb0 R;
-    public static final qb0 S;
-    public static final qb0 T;
-    public static final qb0 U;
-    public static final qb0 V;
-    public static final /* synthetic */ qb0[] W;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class qb0 extends d31 {
+    public ok5 c0;
+    public /* synthetic */ Object d0;
+    public final /* synthetic */ rb0 e0;
+    public int f0;
 
-    static {
-        qb0 qb0Var = new qb0("UNKNOWN", 0);
-        Q = qb0Var;
-        qb0 qb0Var2 = new qb0("INACTIVE", 1);
-        R = qb0Var2;
-        qb0 qb0Var3 = new qb0("SEARCHING", 2);
-        S = qb0Var3;
-        qb0 qb0Var4 = new qb0("FLASH_REQUIRED", 3);
-        T = qb0Var4;
-        qb0 qb0Var5 = new qb0("CONVERGED", 4);
-        U = qb0Var5;
-        qb0 qb0Var6 = new qb0("LOCKED", 5);
-        V = qb0Var6;
-        W = new qb0[]{qb0Var, qb0Var2, qb0Var3, qb0Var4, qb0Var5, qb0Var6};
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public qb0(rb0 rb0Var, d31 d31Var) {
+        super(d31Var);
+        this.e0 = rb0Var;
     }
 
-    public static qb0 valueOf(String str) {
-        return (qb0) Enum.valueOf(qb0.class, str);
-    }
-
-    public static qb0[] values() {
-        return (qb0[]) W.clone();
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.d0 = obj;
+        this.f0 |= Integer.MIN_VALUE;
+        return this.e0.d(null, this);
     }
 }

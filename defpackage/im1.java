@@ -1,24 +1,12 @@
 package defpackage;
 
-import android.text.StaticLayout;
-import android.view.inputmethod.EditorInfo;
-import androidx.core.widget.NestedScrollView;
-
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class im1 {
-    public static final void a(StaticLayout.Builder builder) {
-        builder.setUseBoundsForWidth(false);
-    }
+    public static final kq2 a;
 
-    public static void b(NestedScrollView nestedScrollView, float f) {
-        try {
-            nestedScrollView.setFrameContentVelocity(f);
-        } catch (LinkageError unused) {
-        }
-    }
-
-    public static void c(EditorInfo editorInfo, boolean z) {
-        editorInfo.setStylusHandwritingEnabled(z);
+    static {
+        pc1 pc1Var = jm1.a;
+        a = ac4.a;
     }
 }

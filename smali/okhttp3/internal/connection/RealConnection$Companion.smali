@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/RealConnection$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -73,7 +73,7 @@
 
 # virtual methods
 .method public final newTestConnection(Lokhttp3/internal/connection/RealConnectionPool;Lokhttp3/Route;Ljava/net/Socket;J)Lokhttp3/internal/connection/RealConnection;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -91,24 +91,24 @@
     .line 8
     .line 9
     .line 10
-    new-instance v0, Lokhttp3/internal/connection/RealConnection;
+    new-instance p0, Lokhttp3/internal/connection/RealConnection;
 
     .line 11
     .line 12
-    invoke-direct {v0, p1, p2}, Lokhttp3/internal/connection/RealConnection;-><init>(Lokhttp3/internal/connection/RealConnectionPool;Lokhttp3/Route;)V
+    invoke-direct {p0, p1, p2}, Lokhttp3/internal/connection/RealConnection;-><init>(Lokhttp3/internal/connection/RealConnectionPool;Lokhttp3/Route;)V
 
     .line 13
     .line 14
     .line 15
-    invoke-static {v0, p3}, Lokhttp3/internal/connection/RealConnection;->access$setSocket$p(Lokhttp3/internal/connection/RealConnection;Ljava/net/Socket;)V
+    invoke-static {p0, p3}, Lokhttp3/internal/connection/RealConnection;->access$setSocket$p(Lokhttp3/internal/connection/RealConnection;Ljava/net/Socket;)V
 
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v0, p4, p5}, Lokhttp3/internal/connection/RealConnection;->setIdleAtNs$okhttp(J)V
+    invoke-virtual {p0, p4, p5}, Lokhttp3/internal/connection/RealConnection;->setIdleAtNs$okhttp(J)V
 
     .line 19
     .line 20
     .line 21
-    return-object v0
+    return-object p0
 .end method

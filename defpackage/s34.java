@@ -1,23 +1,49 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum s34 implements b65 {
-    /* JADX INFO: Fake field, exist only in values array */
-    UNKNOWN(0),
-    DATA_MESSAGE(1),
-    /* JADX INFO: Fake field, exist only in values array */
-    TOPIC(2),
-    DISPLAY_NOTIFICATION(3);
+import android.os.Handler;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Checkable;
+import android.widget.PopupWindow;
+import androidx.appcompat.widget.ListPopupWindow;
 
-    public final int Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class s34 implements View.OnTouchListener {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ Object Y;
 
-    s34(int i) {
-        this.Q = i;
+    public /* synthetic */ s34(int i, Object obj) {
+        this.X = i;
+        this.Y = obj;
     }
 
-    @Override // defpackage.b65
-    public final int a() {
-        return this.Q;
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // android.view.View.OnTouchListener
+    public final boolean onTouch(View view, MotionEvent motionEvent) {
+        int i = this.X;
+        Object obj = this.Y;
+        switch (i) {
+            case 0:
+                ListPopupWindow listPopupWindow = (ListPopupWindow) obj;
+                q34 q34Var = listPopupWindow.q0;
+                Handler handler = listPopupWindow.u0;
+                PopupWindow popupWindow = listPopupWindow.y0;
+                int action = motionEvent.getAction();
+                int x = (int) motionEvent.getX();
+                int y = (int) motionEvent.getY();
+                if (action == 0 && popupWindow != null && popupWindow.isShowing() && x >= 0 && x < popupWindow.getWidth() && y >= 0 && y < popupWindow.getHeight()) {
+                    handler.postDelayed(q34Var, 250L);
+                } else if (action == 1) {
+                    handler.removeCallbacks(q34Var);
+                }
+                return false;
+            default:
+                if (((Checkable) view).isChecked()) {
+                    return ((GestureDetector) obj).onTouchEvent(motionEvent);
+                }
+                return false;
+        }
     }
 }

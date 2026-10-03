@@ -1,14 +1,19 @@
 package defpackage;
 
-import android.animation.AnimatorSet;
-
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* loaded from: classes.dex */
 public final class e51 {
-    public static final e51 a = new e51();
+    public static final /* synthetic */ e51[] X = {new e51("AGREEMENT", 0), new e51("ENCRYPTION", 1), new e51("DECRYPTION", 2), new e51("KEYGEN", 3), new e51("SIGNING", 4), new e51("VERIFYING", 5), new e51("AUTHENTICATION", 6), new e51("VERIFICATION", 7), new e51("PRF", 8), new e51("ANY", 9)};
 
-    public final long a(AnimatorSet animatorSet) {
-        animatorSet.getClass();
-        return animatorSet.getTotalDuration();
+    /* JADX INFO: Fake field, exist only in values array */
+    e51 EF5;
+
+    public static e51 valueOf(String str) {
+        return (e51) Enum.valueOf(e51.class, str);
+    }
+
+    public static e51[] values() {
+        return (e51[]) X.clone();
     }
 }

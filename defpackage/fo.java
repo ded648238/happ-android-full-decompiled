@@ -1,34 +1,29 @@
 package defpackage;
 
-import android.graphics.drawable.Drawable;
-import android.widget.ListAdapter;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class fo {
+    public static final fo b = new fo(jo.e);
+    public static final fo c = new fo(jo.h);
+    public final long a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface fo {
-    boolean b();
+    public fo(long j) {
+        this.a = j;
+    }
 
-    int c();
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof fo) && au0.c(this.a, ((fo) obj).a);
+    }
 
-    void d(int i);
+    public final int hashCode() {
+        int i = au0.h;
+        return Long.hashCode(this.a);
+    }
 
-    void dismiss();
-
-    CharSequence f();
-
-    Drawable h();
-
-    void i(CharSequence charSequence);
-
-    void k(Drawable drawable);
-
-    void l(int i);
-
-    void m(int i);
-
-    void n(int i, int i2);
-
-    int o();
-
-    void p(ListAdapter listAdapter);
+    public final String toString() {
+        return c73.j("AppBorderColors(primary=", au0.i(this.a), ")");
+    }
 }

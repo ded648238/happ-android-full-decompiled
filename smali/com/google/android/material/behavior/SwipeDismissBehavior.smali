@@ -1,6 +1,6 @@
 .class public Lcom/google/android/material/behavior/SwipeDismissBehavior;
 .super Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public a:Lyn7;
+.field public a:Lxi8;
 
-.field public b:Lrb2;
+.field public b:Lha6;
 
 .field public c:Z
 
@@ -30,7 +30,7 @@
 
 .field public g:F
 
-.field public final h:Llu6;
+.field public final h:Lam7;
 
 
 # direct methods
@@ -65,16 +65,16 @@
 
     .line 13
     .line 14
-    new-instance v0, Llu6;
+    new-instance v0, Lam7;
 
     .line 15
     .line 16
-    invoke-direct {v0, p0}, Llu6;-><init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;)V
+    invoke-direct {v0, p0}, Lam7;-><init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;)V
 
     .line 17
     .line 18
     .line 19
-    iput-object v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->h:Llu6;
+    iput-object v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->h:Lam7;
 
     .line 20
     .line 21
@@ -171,7 +171,7 @@
 
     .line 37
     .line 38
-    iget-object p2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lyn7;
+    iget-object p2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lxi8;
 
     .line 39
     .line 40
@@ -179,7 +179,7 @@
 
     .line 41
     .line 42
-    new-instance p2, Lyn7;
+    new-instance p2, Lxi8;
 
     .line 43
     .line 44
@@ -191,16 +191,16 @@
     move-result-object v0
 
     .line 48
-    iget-object v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->h:Llu6;
+    iget-object v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->h:Lam7;
 
     .line 49
     .line 50
-    invoke-direct {p2, v0, p1, v1}, Lyn7;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Lh97;)V
+    invoke-direct {p2, v0, p1, v1}, Lxi8;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Lr08;)V
 
     .line 51
     .line 52
     .line 53
-    iput-object p2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lyn7;
+    iput-object p2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lxi8;
 
     .line 54
     .line 55
@@ -213,19 +213,19 @@
 
     .line 58
     .line 59
-    iget-object p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lyn7;
+    iget-object p0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lxi8;
 
     .line 60
     .line 61
-    invoke-virtual {p1, p3}, Lyn7;->q(Landroid/view/MotionEvent;)Z
+    invoke-virtual {p0, p3}, Lxi8;->q(Landroid/view/MotionEvent;)Z
 
     .line 62
     .line 63
     .line 64
-    move-result p1
+    move-result p0
 
     .line 65
-    if-eqz p1, :cond_3
+    if-eqz p0, :cond_3
 
     .line 66
     .line 67
@@ -267,12 +267,12 @@
 
     .line 13
     .line 14
-    invoke-static {p2, p1}, Lqn7;->n(Landroid/view/View;I)V
+    invoke-static {p2, p1}, Lni8;->j(Landroid/view/View;I)V
 
     .line 15
     .line 16
     .line 17
-    invoke-static {p2, p3}, Lqn7;->j(Landroid/view/View;I)V
+    invoke-static {p2, p3}, Lni8;->h(Landroid/view/View;I)V
 
     .line 18
     .line 19
@@ -289,27 +289,27 @@
 
     .line 25
     .line 26
-    sget-object p1, Lp3;->n:Lp3;
+    sget-object p1, Lv3;->m:Lv3;
 
     .line 27
     .line 28
-    new-instance v0, Lov4;
+    new-instance v0, Lmh5;
 
     .line 29
     .line 30
-    const/16 v1, 0x18
+    const/16 v1, 0x12
 
     .line 31
     .line 32
-    invoke-direct {v0, v1, p0}, Lov4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lmh5;-><init>(ILjava/lang/Object;)V
 
     .line 33
     .line 34
     .line 35
-    const/4 v1, 0x0
+    const/4 p0, 0x0
 
     .line 36
-    invoke-static {p2, p1, v1, v0}, Lqn7;->o(Landroid/view/View;Lp3;Ljava/lang/String;Li4;)V
+    invoke-static {p2, p1, p0, v0}, Lni8;->k(Landroid/view/View;Lv3;Ljava/lang/String;Lq4;)V
 
     .line 37
     .line 38
@@ -322,7 +322,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lyn7;
+    iget-object p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lxi8;
 
     .line 2
     .line 3
@@ -354,35 +354,35 @@
     .line 15
     .line 16
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lyn7;
+    iget-object p0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->a:Lxi8;
 
     .line 17
     .line 18
-    invoke-virtual {p1, p3}, Lyn7;->j(Landroid/view/MotionEvent;)V
+    invoke-virtual {p0, p3}, Lxi8;->j(Landroid/view/MotionEvent;)V
 
     .line 19
     .line 20
     .line 21
     :cond_1
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 22
-    return p1
+    return p0
 
     .line 23
     :cond_2
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 24
-    return p1
+    return p0
 .end method
 
 .method public v(Landroid/view/View;)Z
     .locals 0
 
     .line 1
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 2
-    return p1
+    return p0
 .end method

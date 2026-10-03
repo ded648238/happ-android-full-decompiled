@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/widget/ReselectableDropDownPreference;
 .super Landroidx/preference/ListPreference;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -30,12 +30,12 @@
 
 
 # instance fields
-.field public final c0:Landroid/widget/Spinner;
+.field public final l0:Landroid/widget/Spinner;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -48,7 +48,7 @@
     .line 5
     .line 6
     .line 7
-    new-instance p2, Lo7;
+    new-instance p2, La8;
 
     .line 8
     .line 9
@@ -57,7 +57,7 @@
     .line 10
     .line 11
     .line 12
-    invoke-direct {p2, p1, v0}, Lo7;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p2, p1, v0}, La8;-><init>(Landroid/content/Context;I)V
 
     .line 13
     .line 14
@@ -71,7 +71,7 @@
     .line 18
     .line 19
     .line 20
-    iput-object v0, p0, Lsu/happ/proxyutility/ui/widget/ReselectableDropDownPreference;->c0:Landroid/widget/Spinner;
+    iput-object v0, p0, Lsu/happ/proxyutility/ui/widget/ReselectableDropDownPreference;->l0:Landroid/widget/Spinner;
 
     .line 21
     .line 22
@@ -88,14 +88,14 @@
     .line 27
     .line 28
     .line 29
-    new-instance p1, Llm3;
+    new-instance p1, Lp34;
 
     .line 30
     .line 31
     const/4 v1, 0x2
 
     .line 32
-    invoke-direct {p1, v1, p0}, Llm3;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v1, p0}, Lp34;-><init>(ILjava/lang/Object;)V
 
     .line 33
     .line 34
@@ -110,43 +110,43 @@
     .line 39
     .line 40
     .line 41
-    iget-object p1, p0, Landroidx/preference/ListPreference;->X:[Ljava/lang/CharSequence;
+    iget-object p0, p0, Landroidx/preference/ListPreference;->g0:[Ljava/lang/CharSequence;
 
     .line 42
     .line 43
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 44
     .line 45
-    array-length v0, p1
+    array-length p1, p0
 
     .line 46
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 47
     :goto_0
-    if-ge v1, v0, :cond_0
+    if-ge v0, p1, :cond_0
 
     .line 48
     .line 49
-    aget-object v2, p1, v1
+    aget-object v1, p0, v0
 
     .line 50
     .line 51
-    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 52
     .line 53
     .line 54
-    move-result-object v2
+    move-result-object v1
 
     .line 55
-    invoke-virtual {p2, v2}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
+    invoke-virtual {p2, v1}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
 
     .line 56
     .line 57
     .line 58
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     .line 59
     .line 60
@@ -154,11 +154,11 @@
 
     .line 61
     :cond_0
-    const-string p1, ""
+    const-string p0, ""
 
     .line 62
     .line 63
-    invoke-virtual {p2, p1}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
+    invoke-virtual {p2, p0}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
 
     .line 64
     .line 65

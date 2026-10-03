@@ -1,13 +1,13 @@
 package androidx.recyclerview.widget;
 
 import android.view.ViewGroup;
-import defpackage.jd5;
+import defpackage.ox5;
 import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class f {
-    public final jd5 a = new jd5();
+    public final ox5 a = new ox5();
     public boolean b = false;
     public final int c = 1;
 

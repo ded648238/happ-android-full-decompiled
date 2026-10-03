@@ -1,91 +1,79 @@
-.class public abstract Lez6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lez6;
+.super Lq48;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Ljava/lang/String;
+# instance fields
+.field public final synthetic v0:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    const-string v0, "H"
+    iput p1, p0, Lez6;->v0:I
 
     .line 2
     .line 3
-    const/16 v1, 0xa
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-static {v1, v0}, Lzl6;->c0(ILjava/lang/String;)Ljava/lang/String;
-
     .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    sput-object v0, Lez6;->a:Ljava/lang/String;
-
-    .line 10
-    .line 11
     return-void
 .end method
 
-.method public static final a(Lk27;Lz61;Lv22;Ljava/lang/String;I)J
-    .locals 10
+
+# virtual methods
+.method public final a(Landroid/view/View;)F
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    iget p0, p0, Lez6;->v0:I
 
     .line 2
-    const/16 v1, 0xf
-
     .line 3
-    .line 4
-    invoke-static {v0, v0, v1}, Lfu0;->b(III)J
+    packed-switch p0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
+
     .line 7
-    move-result-wide v4
-
     .line 8
-    const/16 v9, 0x40
-
     .line 9
+    move-result p0
+
     .line 10
-    move-object v3, p0
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     .line 11
-    move-object v6, p1
-
     .line 12
-    move-object v7, p2
-
     .line 13
-    move-object v2, p3
+    move-result p1
 
     .line 14
-    move v8, p4
+    int-to-float p1, p1
 
     .line 15
-    invoke-static/range {v2 .. v9}, Lzd7;->g(Ljava/lang/String;Lk27;JLz61;Lv22;II)Lzd;
+    add-float/2addr p0, p1
 
     .line 16
+    return p0
+
     .line 17
+    :pswitch_0
+    invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
+
     .line 18
-    move-result-object p0
-
     .line 19
-    iget-object p1, p0, Lzd;->a:Lde;
-
     .line 20
+    move-result p0
+
     .line 21
-    invoke-virtual {p1}, Lde;->b()F
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     .line 22
     .line 23
@@ -93,55 +81,20 @@
     move-result p1
 
     .line 25
-    invoke-static {p1}, Lj04;->i(F)I
+    int-to-float p1, p1
 
     .line 26
+    sub-float/2addr p0, p1
+
     .line 27
+    return p0
+
     .line 28
-    move-result p1
+    nop
 
     .line 29
-    invoke-virtual {p0}, Lzd;->b()F
-
-    .line 30
-    .line 31
-    .line 32
-    move-result p0
-
-    .line 33
-    invoke-static {p0}, Lj04;->i(F)I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result p0
-
-    .line 37
-    int-to-long p1, p1
-
-    .line 38
-    const/16 p3, 0x20
-
-    .line 39
-    .line 40
-    shl-long/2addr p1, p3
-
-    .line 41
-    int-to-long p3, p0
-
-    .line 42
-    const-wide v0, 0xffffffffL
-
-    .line 43
-    .line 44
-    .line 45
-    .line 46
-    .line 47
-    and-long/2addr p3, v0
-
-    .line 48
-    or-long/2addr p1, p3
-
-    .line 49
-    return-wide p1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

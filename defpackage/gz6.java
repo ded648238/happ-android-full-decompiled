@@ -1,28 +1,63 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class gz6 {
-    public static final gz6 Q;
-    public static final gz6 R;
-    public static final /* synthetic */ gz6[] S;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.util.Property;
+import android.view.View;
 
-    static {
-        gz6 gz6Var = new gz6("MergeIfPossible", 0);
-        Q = gz6Var;
-        gz6 gz6Var2 = new gz6("ClearHistory", 1);
-        gz6 gz6Var3 = new gz6("NeverMerge", 2);
-        R = gz6Var3;
-        S = new gz6[]{gz6Var, gz6Var2, gz6Var3};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class gz6 extends AnimatorListenerAdapter {
+    public boolean a = false;
+    public float b;
+    public final View c;
+    public final float d;
+    public final float e;
+    public final int f;
+    public final Property g;
+
+    public gz6(View view, Property property, float f, float f2, int i) {
+        this.g = property;
+        this.c = view;
+        this.e = f;
+        this.d = f2;
+        this.f = i;
+        view.setVisibility(0);
     }
 
-    public static gz6 valueOf(String str) {
-        return (gz6) Enum.valueOf(gz6.class, str);
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public final void onAnimationCancel(Animator animator) {
+        View view = this.c;
+        view.setTag(us5.lb_slide_transition_value, new float[]{view.getTranslationX(), view.getTranslationY()});
+        this.g.set(view, Float.valueOf(this.e));
+        this.a = true;
     }
 
-    public static gz6[] values() {
-        return (gz6[]) S.clone();
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public final void onAnimationEnd(Animator animator) {
+        boolean z = this.a;
+        View view = this.c;
+        if (!z) {
+            this.g.set(view, Float.valueOf(this.e));
+        }
+        view.setVisibility(this.f);
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorPauseListener
+    public final void onAnimationPause(Animator animator) {
+        Property property = this.g;
+        View view = this.c;
+        this.b = ((Float) property.get(view)).floatValue();
+        property.set(view, Float.valueOf(this.d));
+        view.setVisibility(this.f);
+    }
+
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorPauseListener
+    public final void onAnimationResume(Animator animator) {
+        Float valueOf = Float.valueOf(this.b);
+        Property property = this.g;
+        View view = this.c;
+        property.set(view, valueOf);
+        view.setVisibility(0);
     }
 }

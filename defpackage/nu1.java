@@ -1,16 +1,13 @@
 package defpackage;
 
-import java.util.Random;
+import android.view.Window;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class nu1 extends e2 {
-    public final ig S = new ig(1);
-
-    @Override // defpackage.e2
-    public final Random f() {
-        Object obj = this.S.get();
-        obj.getClass();
-        return (Random) obj;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class nu1 extends mu1 {
+    @Override // defpackage.lu1, defpackage.pu1
+    public void a(Window window) {
+        window.getClass();
+        window.getAttributes().layoutInDisplayCutoutMode = 3;
     }
 }

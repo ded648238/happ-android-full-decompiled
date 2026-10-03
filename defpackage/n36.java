@@ -1,32 +1,45 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class n36 {
-    public final String a;
-    public final u72 b;
-    public final boolean c;
+    public final int a;
 
-    public n36(String str, u72 u72Var) {
-        this.a = str;
-        this.b = u72Var;
+    public static final String a(int i) {
+        switch (i) {
+            case 1:
+                return "TEMPLATE_PREVIEW";
+            case 2:
+                return "TEMPLATE_STILL_CAPTURE";
+            case 3:
+                return "TEMPLATE_RECORD";
+            case 4:
+                return "TEMPLATE_VIDEO_SNAPSHOT";
+            case 5:
+                return "TEMPLATE_ZERO_SHUTTER_LAG";
+            case 6:
+                return "TEMPLATE_MANUAL";
+            default:
+                return eb7.h(i, "UNKNOWN-");
+        }
+    }
+
+    public static String b(int i) {
+        return "RequestTemplate(value=" + i + ')';
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof n36) {
+            return this.a == ((n36) obj).a;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.a);
     }
 
     public final String toString() {
-        return "AccessibilityKey: " + this.a;
-    }
-
-    public /* synthetic */ n36(String str) {
-        this(str, th.t0);
-    }
-
-    public n36(String str, int i) {
-        this(str);
-        this.c = true;
-    }
-
-    public n36(String str, boolean z, u72 u72Var) {
-        this(str, u72Var);
-        this.c = z;
+        return b(this.a);
     }
 }

@@ -1,28 +1,36 @@
 package defpackage;
 
-import java.nio.charset.Charset;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import okhttp3.Dns;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class nh0 {
-    public static final Charset a;
-    public static final Charset b;
-    public static final Charset c;
-    public static volatile Charset d;
-    public static volatile Charset e;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class nh0 implements Dns {
+    public final Map X;
 
-    static {
-        Charset charsetForName = Charset.forName("UTF-8");
-        charsetForName.getClass();
-        a = charsetForName;
-        Charset.forName("UTF-16").getClass();
-        Charset.forName("UTF-16BE").getClass();
-        Charset.forName("UTF-16LE").getClass();
-        Charset charsetForName2 = Charset.forName("US-ASCII");
-        charsetForName2.getClass();
-        b = charsetForName2;
-        Charset charsetForName3 = Charset.forName("ISO-8859-1");
-        charsetForName3.getClass();
-        c = charsetForName3;
+    public nh0(int i) {
+        switch (i) {
+            case 1:
+                Map singletonMap = Collections.singletonMap("google.com", "drive.usercontent.google.com");
+                singletonMap.getClass();
+                this.X = singletonMap;
+                break;
+            default:
+                this.X = gw1.X;
+                break;
+        }
+    }
+
+    @Override // okhttp3.Dns
+    public List lookup(String str) {
+        str.getClass();
+        Dns dns = Dns.SYSTEM;
+        String str2 = (String) this.X.get(str);
+        if (str2 != null) {
+            str = str2;
+        }
+        return dns.lookup(str);
     }
 }

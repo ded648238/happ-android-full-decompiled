@@ -1,44 +1,27 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class hk7 {
-    public static final /* synthetic */ int[] a;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class hk7 {
+    public static final hk7 X;
+    public static final hk7 Y;
+    public static final /* synthetic */ hk7[] Z;
 
     static {
-        int[] iArr = new int[b05.values().length];
-        try {
-            iArr[b05.BOOLEAN.ordinal()] = 1;
-        } catch (NoSuchFieldError unused) {
-        }
-        try {
-            iArr[b05.CHAR.ordinal()] = 2;
-        } catch (NoSuchFieldError unused2) {
-        }
-        try {
-            iArr[b05.BYTE.ordinal()] = 3;
-        } catch (NoSuchFieldError unused3) {
-        }
-        try {
-            iArr[b05.SHORT.ordinal()] = 4;
-        } catch (NoSuchFieldError unused4) {
-        }
-        try {
-            iArr[b05.INT.ordinal()] = 5;
-        } catch (NoSuchFieldError unused5) {
-        }
-        try {
-            iArr[b05.FLOAT.ordinal()] = 6;
-        } catch (NoSuchFieldError unused6) {
-        }
-        try {
-            iArr[b05.LONG.ordinal()] = 7;
-        } catch (NoSuchFieldError unused7) {
-        }
-        try {
-            iArr[b05.DOUBLE.ordinal()] = 8;
-        } catch (NoSuchFieldError unused8) {
-        }
-        a = iArr;
+        hk7 hk7Var = new hk7("FEATURE_COMBINATION_TABLE", 0);
+        X = hk7Var;
+        hk7 hk7Var2 = new hk7("CAPTURE_SESSION_TABLES", 1);
+        Y = hk7Var2;
+        Z = new hk7[]{hk7Var, hk7Var2};
+    }
+
+    public static hk7 valueOf(String str) {
+        return (hk7) Enum.valueOf(hk7.class, str);
+    }
+
+    public static hk7[] values() {
+        return (hk7[]) Z.clone();
     }
 }

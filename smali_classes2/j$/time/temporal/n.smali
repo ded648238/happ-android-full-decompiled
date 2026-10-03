@@ -1,6 +1,6 @@
 .class public final synthetic Lj$/time/temporal/n;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lj$/time/temporal/m;
@@ -35,15 +35,15 @@
 
 
 # virtual methods
-.method public final l(Lj$/time/temporal/l;)Lj$/time/temporal/l;
-    .locals 3
+.method public final f(Lj$/time/temporal/l;)Lj$/time/temporal/l;
+    .locals 2
 
     .line 1
     iget v0, p0, Lj$/time/temporal/n;->a:I
 
     .line 2
     .line 3
-    iget v1, p0, Lj$/time/temporal/n;->b:I
+    iget p0, p0, Lj$/time/temporal/n;->b:I
 
     .line 4
     .line 5
@@ -56,7 +56,7 @@
 
     .line 9
     .line 10
-    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->g(Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 11
     .line 12
@@ -64,7 +64,7 @@
     move-result v0
 
     .line 14
-    if-ne v0, v1, :cond_0
+    if-ne v0, p0, :cond_0
 
     .line 15
     .line 16
@@ -72,37 +72,37 @@
 
     .line 17
     :cond_0
-    sub-int/2addr v1, v0
+    sub-int/2addr p0, v0
 
     .line 18
-    if-ltz v1, :cond_1
+    if-ltz p0, :cond_1
 
     .line 19
     .line 20
-    rsub-int/lit8 v0, v1, 0x7
+    rsub-int/lit8 p0, p0, 0x7
 
     .line 21
     .line 22
     :goto_0
-    int-to-long v0, v0
+    int-to-long v0, p0
 
     .line 23
     goto :goto_1
 
     .line 24
     :cond_1
-    neg-int v0, v1
+    neg-int p0, p0
 
     .line 25
     goto :goto_0
 
     .line 26
     :goto_1
-    sget-object v2, Lj$/time/temporal/a;->DAYS:Lj$/time/temporal/a;
+    sget-object p0, Lj$/time/temporal/a;->DAYS:Lj$/time/temporal/a;
 
     .line 27
     .line 28
-    invoke-interface {p1, v0, v1, v2}, Lj$/time/temporal/l;->t(JLj$/time/temporal/a;)Lj$/time/temporal/l;
+    invoke-interface {p1, v0, v1, p0}, Lj$/time/temporal/l;->a(JLj$/time/temporal/q;)Lj$/time/temporal/l;
 
     .line 29
     .line 30
@@ -119,7 +119,7 @@
 
     .line 34
     .line 35
-    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->g(Lj$/time/temporal/TemporalField;)I
+    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->h(Lj$/time/temporal/TemporalField;)I
 
     .line 36
     .line 37
@@ -127,7 +127,7 @@
     move-result v0
 
     .line 39
-    if-ne v0, v1, :cond_2
+    if-ne v0, p0, :cond_2
 
     .line 40
     .line 41
@@ -135,37 +135,37 @@
 
     .line 42
     :cond_2
-    sub-int/2addr v0, v1
+    sub-int/2addr v0, p0
 
     .line 43
     if-ltz v0, :cond_3
 
     .line 44
     .line 45
-    rsub-int/lit8 v0, v0, 0x7
+    rsub-int/lit8 p0, v0, 0x7
 
     .line 46
     .line 47
     :goto_3
-    int-to-long v0, v0
+    int-to-long v0, p0
 
     .line 48
     goto :goto_4
 
     .line 49
     :cond_3
-    neg-int v0, v0
+    neg-int p0, v0
 
     .line 50
     goto :goto_3
 
     .line 51
     :goto_4
-    sget-object v2, Lj$/time/temporal/a;->DAYS:Lj$/time/temporal/a;
+    sget-object p0, Lj$/time/temporal/a;->DAYS:Lj$/time/temporal/a;
 
     .line 52
     .line 53
-    invoke-interface {p1, v0, v1, v2}, Lj$/time/temporal/l;->c(JLj$/time/temporal/q;)Lj$/time/temporal/l;
+    invoke-interface {p1, v0, v1, p0}, Lj$/time/temporal/l;->c(JLj$/time/temporal/q;)Lj$/time/temporal/l;
 
     .line 54
     .line 55

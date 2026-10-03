@@ -1,43 +1,31 @@
 package defpackage;
 
-import j$.util.DesugarCollections;
-import j$.util.concurrent.ConcurrentHashMap;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.Set;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class dj3 implements o65 {
-    public volatile Set a;
-    public volatile Set b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Retention(RetentionPolicy.RUNTIME)
+/* loaded from: classes.dex */
+public @interface dj3 {
+    Class as() default Void.class;
 
-    public final synchronized void a() {
-        try {
-            Iterator it = this.a.iterator();
-            while (it.hasNext()) {
-                this.b.add(((o65) it.next()).get());
-            }
-            this.a = null;
-        } catch (Throwable th) {
-            throw th;
-        }
-    }
+    Class contentAs() default Void.class;
 
-    @Override // defpackage.o65
-    public final Object get() {
-        if (this.b == null) {
-            synchronized (this) {
-                try {
-                    if (this.b == null) {
-                        this.b = Collections.newSetFromMap(new ConcurrentHashMap());
-                        a();
-                    }
-                } catch (Throwable th) {
-                    throw th;
-                }
-            }
-        }
-        return DesugarCollections.unmodifiableSet(this.b);
-    }
+    Class contentConverter() default jf1.class;
+
+    Class contentUsing() default fj3.class;
+
+    Class converter() default jf1.class;
+
+    bj3 include() default bj3.X;
+
+    Class keyAs() default Void.class;
+
+    Class keyUsing() default fj3.class;
+
+    Class nullsUsing() default fj3.class;
+
+    cj3 typing() default cj3.Z;
+
+    Class using() default fj3.class;
 }

@@ -1,18 +1,19 @@
 package androidx.drawerlayout.widget;
 
 import android.view.View;
-import defpackage.db;
-import defpackage.h97;
-import defpackage.yn7;
-import io.sentry.x1;
+import androidx.drawerlayout.widget.DrawerLayout;
+import defpackage.r08;
+import defpackage.tb;
+import defpackage.xi8;
+import io.sentry.z1;
 import java.util.ArrayList;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class a extends h97 {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class a extends r08 {
     public final int a;
-    public yn7 b;
-    public final db c = new db(6, this);
+    public xi8 b;
+    public final tb c = new tb(5, this);
     public final /* synthetic */ DrawerLayout d;
 
     public a(DrawerLayout drawerLayout, int i) {
@@ -20,8 +21,8 @@ public final class a extends h97 {
         this.a = i;
     }
 
-    @Override // defpackage.h97
-    public final int a(View view, int i) {
+    @Override // defpackage.r08
+    public final int b(View view, int i) {
         DrawerLayout drawerLayout = this.d;
         if (drawerLayout.a(view, 3)) {
             return Math.max(-view.getWidth(), Math.min(i, 0));
@@ -30,48 +31,48 @@ public final class a extends h97 {
         return Math.max(width - view.getWidth(), Math.min(i, width));
     }
 
-    @Override // defpackage.h97
-    public final int b(View view, int i) {
+    @Override // defpackage.r08
+    public final int c(View view, int i) {
         return view.getTop();
     }
 
-    @Override // defpackage.h97
-    public final int d(View view) {
+    @Override // defpackage.r08
+    public final int h(View view) {
         if (DrawerLayout.j(view)) {
             return view.getWidth();
         }
         return 0;
     }
 
-    @Override // defpackage.h97
-    public final void g(int i, int i2) {
+    @Override // defpackage.r08
+    public final void j(int i, int i2) {
         int i3 = i & 1;
         DrawerLayout drawerLayout = this.d;
-        View viewD = i3 == 1 ? drawerLayout.d(3) : drawerLayout.d(5);
-        if (viewD == null || drawerLayout.f(viewD) != 0) {
+        View d = i3 == 1 ? drawerLayout.d(3) : drawerLayout.d(5);
+        if (d == null || drawerLayout.f(d) != 0) {
             return;
         }
-        this.b.b(viewD, i2);
+        this.b.b(d, i2);
     }
 
-    @Override // defpackage.h97
-    public final void h() {
+    @Override // defpackage.r08
+    public final void k() {
         this.d.postDelayed(this.c, 160L);
     }
 
-    @Override // defpackage.h97
-    public final void i(View view, int i) {
+    @Override // defpackage.r08
+    public final void l(View view, int i) {
         ((DrawerLayout.LayoutParams) view.getLayoutParams()).c = false;
         int i2 = this.a == 3 ? 5 : 3;
         DrawerLayout drawerLayout = this.d;
-        View viewD = drawerLayout.d(i2);
-        if (viewD != null) {
-            drawerLayout.b(viewD);
+        View d = drawerLayout.d(i2);
+        if (d != null) {
+            drawerLayout.b(d);
         }
     }
 
-    @Override // defpackage.h97
-    public final void j(int i) {
+    @Override // defpackage.r08
+    public final void m(int i) {
         int i2;
         int size;
         int size2;
@@ -79,8 +80,8 @@ public final class a extends h97 {
         int size3;
         View view = this.b.t;
         DrawerLayout drawerLayout = this.d;
-        int i3 = drawerLayout.V.a;
-        int i4 = drawerLayout.W.a;
+        int i3 = drawerLayout.h0.a;
+        int i4 = drawerLayout.i0.a;
         if (i3 == 1 || i4 == 1) {
             i2 = 1;
         } else {
@@ -95,10 +96,10 @@ public final class a extends h97 {
                 DrawerLayout.LayoutParams layoutParams = (DrawerLayout.LayoutParams) view.getLayoutParams();
                 if ((layoutParams.d & 1) == 1) {
                     layoutParams.d = 0;
-                    ArrayList arrayList = drawerLayout.k0;
+                    ArrayList arrayList = drawerLayout.t0;
                     if (arrayList != null && (size3 = arrayList.size() - 1) >= 0) {
-                        drawerLayout.k0.get(size3).getClass();
-                        x1.l();
+                        drawerLayout.t0.get(size3).getClass();
+                        z1.l();
                         return;
                     } else {
                         drawerLayout.o(view, false);
@@ -112,10 +113,10 @@ public final class a extends h97 {
                 DrawerLayout.LayoutParams layoutParams2 = (DrawerLayout.LayoutParams) view.getLayoutParams();
                 if ((layoutParams2.d & 1) == 0) {
                     layoutParams2.d = 1;
-                    ArrayList arrayList2 = drawerLayout.k0;
+                    ArrayList arrayList2 = drawerLayout.t0;
                     if (arrayList2 != null && (size2 = arrayList2.size() - 1) >= 0) {
-                        drawerLayout.k0.get(size2).getClass();
-                        x1.l();
+                        drawerLayout.t0.get(size2).getClass();
+                        z1.l();
                         return;
                     } else {
                         drawerLayout.o(view, true);
@@ -127,19 +128,19 @@ public final class a extends h97 {
                 }
             }
         }
-        if (i2 != drawerLayout.c0) {
-            drawerLayout.c0 = i2;
-            ArrayList arrayList3 = drawerLayout.k0;
+        if (i2 != drawerLayout.l0) {
+            drawerLayout.l0 = i2;
+            ArrayList arrayList3 = drawerLayout.t0;
             if (arrayList3 == null || (size = arrayList3.size() - 1) < 0) {
                 return;
             }
-            drawerLayout.k0.get(size).getClass();
-            x1.l();
+            drawerLayout.t0.get(size).getClass();
+            z1.l();
         }
     }
 
-    @Override // defpackage.h97
-    public final void k(View view, int i, int i2) {
+    @Override // defpackage.r08
+    public final void n(View view, int i, int i2) {
         int width = view.getWidth();
         DrawerLayout drawerLayout = this.d;
         float width2 = (drawerLayout.a(view, 3) ? i + width : drawerLayout.getWidth() - i) / width;
@@ -148,10 +149,10 @@ public final class a extends h97 {
         drawerLayout.invalidate();
     }
 
-    @Override // defpackage.h97
-    public final void l(View view, float f, float f2) {
+    @Override // defpackage.r08
+    public final void o(View view, float f, float f2) {
         int i;
-        int[] iArr = DrawerLayout.u0;
+        int[] iArr = DrawerLayout.D0;
         float f3 = ((DrawerLayout.LayoutParams) view.getLayoutParams()).b;
         int width = view.getWidth();
         DrawerLayout drawerLayout = this.d;
@@ -168,7 +169,7 @@ public final class a extends h97 {
         drawerLayout.invalidate();
     }
 
-    @Override // defpackage.h97
+    @Override // defpackage.r08
     public final boolean p(View view, int i) {
         if (!DrawerLayout.j(view)) {
             return false;

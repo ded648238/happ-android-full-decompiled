@@ -1,27 +1,20 @@
 package defpackage;
 
-import java.util.EnumMap;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public enum qn5 implements k83 {
+    AT_MOST_ONCE(0),
+    EXACTLY_ONCE(1),
+    AT_LEAST_ONCE(2);
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class qn5 {
-    public final String a;
-    public EnumMap b;
+    public final int X;
 
-    public qn5(String str) {
-        System.currentTimeMillis();
-        this.a = str;
-        this.b = null;
+    qn5(int i) {
+        this.X = i;
     }
 
-    public final void a(rn5 rn5Var, Object obj) {
-        if (this.b == null) {
-            this.b = new EnumMap(rn5.class);
-        }
-        this.b.put(rn5Var, obj);
-    }
-
-    public final String toString() {
-        return this.a;
+    @Override // defpackage.k83
+    public final int a() {
+        return this.X;
     }
 }

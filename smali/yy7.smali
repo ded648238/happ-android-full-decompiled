@@ -1,147 +1,175 @@
 .class public final Lyy7;
-.super Ln2;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lyy7;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static b:Ljava/lang/ref/WeakReference;
 
 
 # instance fields
-.field public final Q:I
-
-.field public final R:I
-
-.field public final S:Landroid/content/Intent;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Ltp6;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x7
-
-    .line 4
-    invoke-direct {v0, v1}, Ltp6;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, Lyy7;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public constructor <init>(IILandroid/content/Intent;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p1, p0, Lyy7;->Q:I
-
-    .line 5
-    .line 6
-    iput p2, p0, Lyy7;->R:I
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lyy7;->S:Landroid/content/Intent;
-
-    .line 9
-    .line 10
-    return-void
-.end method
+.field public a:Lv5;
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 3
+.method public final declared-synchronized a()Lxy7;
+    .locals 4
 
     .line 1
-    const/16 v0, 0x4f45
+    monitor-enter p0
 
     .line 2
-    .line 3
-    invoke-static {p1, v0}, Lyc4;->g1(Landroid/os/Parcel;I)I
+    :try_start_0
+    iget-object v0, p0, Lyy7;->a:Lv5;
 
+    .line 3
     .line 4
+    iget-object v1, v0, Lv5;->c0:Ljava/lang/Object;
+
     .line 5
     .line 6
-    move-result v0
+    check-cast v1, Ljava/util/ArrayDeque;
 
     .line 7
-    const/4 v1, 0x1
-
     .line 8
-    const/4 v2, 0x4
+    monitor-enter v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 9
-    invoke-static {p1, v1, v2}, Lyc4;->i1(Landroid/os/Parcel;II)V
+    :try_start_1
+    iget-object v0, v0, Lv5;->c0:Ljava/lang/Object;
 
     .line 10
     .line 11
+    check-cast v0, Ljava/util/ArrayDeque;
+
     .line 12
-    iget v1, p0, Lyy7;->Q:I
-
     .line 13
-    .line 14
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {v0}, Ljava/util/ArrayDeque;->peek()Ljava/lang/Object;
 
+    .line 14
     .line 15
     .line 16
+    move-result-object v0
+
     .line 17
-    const/4 v1, 0x2
+    check-cast v0, Ljava/lang/String;
 
     .line 18
-    invoke-static {p1, v1, v2}, Lyc4;->i1(Landroid/os/Parcel;II)V
-
     .line 19
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 20
+    :try_start_2
+    sget-object v1, Lxy7;->d:Ljava/util/regex/Pattern;
+
     .line 21
-    iget v1, p0, Lyy7;->R:I
-
     .line 22
-    .line 23
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
+    .line 23
     .line 24
     .line 25
+    move-result v1
+
     .line 26
-    const/4 v1, 0x3
+    const/4 v2, 0x0
 
     .line 27
-    iget-object v2, p0, Lyy7;->S:Landroid/content/Intent;
+    if-eqz v1, :cond_0
 
     .line 28
     .line 29
-    invoke-static {p1, v1, v2, p2}, Lyc4;->c1(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
+    goto :goto_0
 
     .line 30
+    :cond_0
+    const-string v1, "!"
+
     .line 31
     .line 32
-    invoke-static {p1, v0}, Lyc4;->h1(Landroid/os/Parcel;I)V
+    const/4 v3, -0x1
 
     .line 33
+    invoke-virtual {v0, v1, v3}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
+
     .line 34
     .line 35
-    return-void
+    .line 36
+    move-result-object v0
+
+    .line 37
+    array-length v1, v0
+
+    .line 38
+    const/4 v3, 0x2
+
+    .line 39
+    if-eq v1, v3, :cond_1
+
+    .line 40
+    .line 41
+    goto :goto_0
+
+    .line 42
+    :cond_1
+    new-instance v2, Lxy7;
+
+    .line 43
+    .line 44
+    const/4 v1, 0x0
+
+    .line 45
+    aget-object v1, v0, v1
+
+    .line 46
+    .line 47
+    const/4 v3, 0x1
+
+    .line 48
+    aget-object v0, v0, v3
+
+    .line 49
+    .line 50
+    invoke-direct {v2, v1, v0}, Lxy7;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 51
+    .line 52
+    .line 53
+    :goto_0
+    monitor-exit p0
+
+    .line 54
+    return-object v2
+
+    .line 55
+    :catchall_0
+    move-exception v0
+
+    .line 56
+    :try_start_3
+    monitor-exit v1
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 57
+    :try_start_4
+    throw v0
+
+    .line 58
+    :catchall_1
+    move-exception v0
+
+    .line 59
+    monitor-exit p0
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+
+    .line 60
+    throw v0
 .end method

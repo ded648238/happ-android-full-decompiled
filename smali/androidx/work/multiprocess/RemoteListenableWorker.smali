@@ -1,6 +1,6 @@
 .class public abstract Landroidx/work/multiprocess/RemoteListenableWorker;
-.super Ldn3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lf44;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lmc2;->x(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lan3;->u(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -24,7 +24,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ldn3;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
+    invoke-direct {p0, p1, p2}, Lf44;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
 
     .line 2
     .line 3
@@ -34,110 +34,109 @@
 
 
 # virtual methods
-.method public final c()Lwm3;
-    .locals 5
+.method public final c()Ly34;
+    .locals 4
 
     .line 1
-    const-string v0, "RemoteListenableWorker Failed Future"
+    const-string p0, "startWork() shouldn\'t never be called on RemoteListenableWorker"
 
     .line 2
     .line 3
-    new-instance v1, Lc90;
+    const-string v0, "RemoteListenableWorker Failed Future"
 
     .line 4
     .line 5
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    new-instance v1, Lsb0;
 
     .line 6
     .line 7
-    .line 8
-    new-instance v2, Lij5;
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
+    .line 8
     .line 9
     .line 10
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+    new-instance v2, Lz36;
 
     .line 11
     .line 12
-    .line 13
-    iput-object v2, v1, Lc90;->c:Lij5;
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
+    .line 13
     .line 14
     .line 15
-    new-instance v2, Lf90;
+    iput-object v2, v1, Lsb0;->c:Lz36;
 
     .line 16
     .line 17
-    invoke-direct {v2, v1}, Lf90;-><init>(Lc90;)V
+    new-instance v2, Lwb0;
 
     .line 18
     .line 19
-    .line 20
-    iput-object v2, v1, Lc90;->b:Lf90;
+    invoke-direct {v2, v1}, Lwb0;-><init>(Lsb0;)V
 
+    .line 20
     .line 21
     .line 22
-    const-class v3, Lea0;
+    iput-object v2, v1, Lsb0;->b:Lwb0;
 
     .line 23
     .line 24
-    iput-object v3, v1, Lc90;->a:Ljava/lang/Object;
+    const-class v3, Lw31;
 
     .line 25
     .line 26
-    :try_start_0
-    const-string v3, "startWork() shouldn\'t never be called on RemoteListenableWorker"
+    iput-object v3, v1, Lsb0;->a:Ljava/lang/Object;
 
     .line 27
     .line 28
-    invoke-static {}, Lmc2;->m()Lmc2;
+    :try_start_0
+    invoke-static {}, Lan3;->l()Lan3;
 
     .line 29
     .line 30
     .line 31
-    move-result-object v4
+    move-result-object v3
 
     .line 32
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 33
     .line 34
     .line 35
-    new-instance v4, Ljava/lang/IllegalArgumentException;
+    new-instance v3, Ljava/lang/IllegalArgumentException;
 
     .line 36
     .line 37
-    invoke-direct {v4, v3}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {v1, v4}, Lc90;->c(Ljava/lang/Throwable;)Z
+    invoke-virtual {v1, v3}, Lsb0;->d(Ljava/lang/Throwable;)Z
 
     .line 41
     .line 42
     .line 43
-    iput-object v0, v1, Lc90;->a:Ljava/lang/Object;
+    iput-object v0, v1, Lsb0;->a:Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 44
     .line 45
-    goto :goto_0
+    return-object v2
 
     .line 46
     :catch_0
-    move-exception v0
+    move-exception p0
 
     .line 47
-    invoke-virtual {v2, v0}, Lf90;->b(Ljava/lang/Throwable;)Z
+    invoke-virtual {v2, p0}, Lwb0;->b(Ljava/lang/Throwable;)Z
 
     .line 48
     .line 49
     .line 50
-    :goto_0
     return-object v2
 .end method
 
-.method public abstract d()Lwm3;
+.method public abstract e()Ly34;
 .end method

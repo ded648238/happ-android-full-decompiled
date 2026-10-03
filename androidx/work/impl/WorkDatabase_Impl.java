@@ -1,242 +1,391 @@
 package androidx.work.impl;
 
-import defpackage.dv7;
-import defpackage.ey4;
-import defpackage.f31;
-import defpackage.fv7;
-import defpackage.g71;
-import defpackage.h71;
-import defpackage.iq6;
-import defpackage.m44;
-import defpackage.ov6;
-import defpackage.ps6;
-import defpackage.pv6;
-import defpackage.pv7;
-import defpackage.rb5;
-import defpackage.ru2;
-import defpackage.rv7;
-import defpackage.t01;
-import defpackage.tq;
+import androidx.work.impl.WorkDatabase_Impl;
+import defpackage.an7;
+import defpackage.aq8;
+import defpackage.br8;
+import defpackage.cq8;
+import defpackage.dr8;
+import defpackage.fw1;
+import defpackage.gn3;
+import defpackage.il4;
+import defpackage.jh5;
+import defpackage.ji2;
+import defpackage.kf1;
+import defpackage.ma3;
+import defpackage.mm7;
+import defpackage.oq8;
+import defpackage.p06;
+import defpackage.q06;
+import defpackage.qq8;
+import defpackage.sv5;
+import defpackage.xu1;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
+import kotlin.Metadata;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Landroidx/work/impl/WorkDatabase_Impl;", "Landroidx/work/impl/WorkDatabase;", "<init>", "()V", "work-runtime_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes.dex */
 public final class WorkDatabase_Impl extends WorkDatabase {
-    public volatile pv7 l;
-    public volatile h71 m;
-    public volatile rv7 n;
-    public volatile pv6 o;
-    public volatile dv7 p;
-    public volatile fv7 q;
-    public volatile ey4 r;
-    public volatile rb5 s;
+    public final mm7 k;
+    public final mm7 l;
+    public final mm7 m;
+    public final mm7 n;
+    public final mm7 o;
+    public final mm7 p;
+    public final mm7 q;
+    public final mm7 r;
 
-    @Override // androidx.work.impl.WorkDatabase
-    public final ru2 d() {
-        return new ru2(this, new HashMap(0), new HashMap(0), "Dependency", "WorkSpec", "WorkTag", "SystemIdInfo", "WorkName", "WorkProgress", "Preference");
-    }
+    public WorkDatabase_Impl() {
+        final int i = 0;
+        this.k = new mm7(new ji2(this) { // from class: bq8
+            public final /* synthetic */ WorkDatabase_Impl Y;
 
-    @Override // androidx.work.impl.WorkDatabase
-    public final ps6 e(t01 t01Var) {
-        return t01Var.c.g(new f31(t01Var.a, t01Var.b, new tq(t01Var, new iq6(11, this)), false, false));
-    }
-
-    @Override // androidx.work.impl.WorkDatabase
-    public final h71 f() {
-        h71 h71Var;
-        if (this.m != null) {
-            return this.m;
-        }
-        synchronized (this) {
-            try {
-                if (this.m == null) {
-                    this.m = new h71(this);
-                }
-                h71Var = this.m;
-            } catch (Throwable th) {
-                throw th;
+            {
+                this.Y = this;
             }
-        }
-        return h71Var;
+
+            @Override // defpackage.ji2
+            public final Object invoke() {
+                int i2 = i;
+                WorkDatabase_Impl workDatabase_Impl = this.Y;
+                switch (i2) {
+                    case 0:
+                        return new br8(workDatabase_Impl);
+                    case 1:
+                        return new kf1(workDatabase_Impl);
+                    case 2:
+                        return new dr8(workDatabase_Impl);
+                    case 3:
+                        return new an7(workDatabase_Impl);
+                    case 4:
+                        return new oq8(workDatabase_Impl);
+                    case 5:
+                        return new qq8(workDatabase_Impl);
+                    case 6:
+                        return new jh5(workDatabase_Impl);
+                    default:
+                        return new sv5(workDatabase_Impl);
+                }
+            }
+        });
+        final int i2 = 1;
+        this.l = new mm7(new ji2(this) { // from class: bq8
+            public final /* synthetic */ WorkDatabase_Impl Y;
+
+            {
+                this.Y = this;
+            }
+
+            @Override // defpackage.ji2
+            public final Object invoke() {
+                int i22 = i2;
+                WorkDatabase_Impl workDatabase_Impl = this.Y;
+                switch (i22) {
+                    case 0:
+                        return new br8(workDatabase_Impl);
+                    case 1:
+                        return new kf1(workDatabase_Impl);
+                    case 2:
+                        return new dr8(workDatabase_Impl);
+                    case 3:
+                        return new an7(workDatabase_Impl);
+                    case 4:
+                        return new oq8(workDatabase_Impl);
+                    case 5:
+                        return new qq8(workDatabase_Impl);
+                    case 6:
+                        return new jh5(workDatabase_Impl);
+                    default:
+                        return new sv5(workDatabase_Impl);
+                }
+            }
+        });
+        final int i3 = 2;
+        this.m = new mm7(new ji2(this) { // from class: bq8
+            public final /* synthetic */ WorkDatabase_Impl Y;
+
+            {
+                this.Y = this;
+            }
+
+            @Override // defpackage.ji2
+            public final Object invoke() {
+                int i22 = i3;
+                WorkDatabase_Impl workDatabase_Impl = this.Y;
+                switch (i22) {
+                    case 0:
+                        return new br8(workDatabase_Impl);
+                    case 1:
+                        return new kf1(workDatabase_Impl);
+                    case 2:
+                        return new dr8(workDatabase_Impl);
+                    case 3:
+                        return new an7(workDatabase_Impl);
+                    case 4:
+                        return new oq8(workDatabase_Impl);
+                    case 5:
+                        return new qq8(workDatabase_Impl);
+                    case 6:
+                        return new jh5(workDatabase_Impl);
+                    default:
+                        return new sv5(workDatabase_Impl);
+                }
+            }
+        });
+        final int i4 = 3;
+        this.n = new mm7(new ji2(this) { // from class: bq8
+            public final /* synthetic */ WorkDatabase_Impl Y;
+
+            {
+                this.Y = this;
+            }
+
+            @Override // defpackage.ji2
+            public final Object invoke() {
+                int i22 = i4;
+                WorkDatabase_Impl workDatabase_Impl = this.Y;
+                switch (i22) {
+                    case 0:
+                        return new br8(workDatabase_Impl);
+                    case 1:
+                        return new kf1(workDatabase_Impl);
+                    case 2:
+                        return new dr8(workDatabase_Impl);
+                    case 3:
+                        return new an7(workDatabase_Impl);
+                    case 4:
+                        return new oq8(workDatabase_Impl);
+                    case 5:
+                        return new qq8(workDatabase_Impl);
+                    case 6:
+                        return new jh5(workDatabase_Impl);
+                    default:
+                        return new sv5(workDatabase_Impl);
+                }
+            }
+        });
+        final int i5 = 4;
+        this.o = new mm7(new ji2(this) { // from class: bq8
+            public final /* synthetic */ WorkDatabase_Impl Y;
+
+            {
+                this.Y = this;
+            }
+
+            @Override // defpackage.ji2
+            public final Object invoke() {
+                int i22 = i5;
+                WorkDatabase_Impl workDatabase_Impl = this.Y;
+                switch (i22) {
+                    case 0:
+                        return new br8(workDatabase_Impl);
+                    case 1:
+                        return new kf1(workDatabase_Impl);
+                    case 2:
+                        return new dr8(workDatabase_Impl);
+                    case 3:
+                        return new an7(workDatabase_Impl);
+                    case 4:
+                        return new oq8(workDatabase_Impl);
+                    case 5:
+                        return new qq8(workDatabase_Impl);
+                    case 6:
+                        return new jh5(workDatabase_Impl);
+                    default:
+                        return new sv5(workDatabase_Impl);
+                }
+            }
+        });
+        final int i6 = 5;
+        this.p = new mm7(new ji2(this) { // from class: bq8
+            public final /* synthetic */ WorkDatabase_Impl Y;
+
+            {
+                this.Y = this;
+            }
+
+            @Override // defpackage.ji2
+            public final Object invoke() {
+                int i22 = i6;
+                WorkDatabase_Impl workDatabase_Impl = this.Y;
+                switch (i22) {
+                    case 0:
+                        return new br8(workDatabase_Impl);
+                    case 1:
+                        return new kf1(workDatabase_Impl);
+                    case 2:
+                        return new dr8(workDatabase_Impl);
+                    case 3:
+                        return new an7(workDatabase_Impl);
+                    case 4:
+                        return new oq8(workDatabase_Impl);
+                    case 5:
+                        return new qq8(workDatabase_Impl);
+                    case 6:
+                        return new jh5(workDatabase_Impl);
+                    default:
+                        return new sv5(workDatabase_Impl);
+                }
+            }
+        });
+        final int i7 = 6;
+        this.q = new mm7(new ji2(this) { // from class: bq8
+            public final /* synthetic */ WorkDatabase_Impl Y;
+
+            {
+                this.Y = this;
+            }
+
+            @Override // defpackage.ji2
+            public final Object invoke() {
+                int i22 = i7;
+                WorkDatabase_Impl workDatabase_Impl = this.Y;
+                switch (i22) {
+                    case 0:
+                        return new br8(workDatabase_Impl);
+                    case 1:
+                        return new kf1(workDatabase_Impl);
+                    case 2:
+                        return new dr8(workDatabase_Impl);
+                    case 3:
+                        return new an7(workDatabase_Impl);
+                    case 4:
+                        return new oq8(workDatabase_Impl);
+                    case 5:
+                        return new qq8(workDatabase_Impl);
+                    case 6:
+                        return new jh5(workDatabase_Impl);
+                    default:
+                        return new sv5(workDatabase_Impl);
+                }
+            }
+        });
+        final int i8 = 7;
+        this.r = new mm7(new ji2(this) { // from class: bq8
+            public final /* synthetic */ WorkDatabase_Impl Y;
+
+            {
+                this.Y = this;
+            }
+
+            @Override // defpackage.ji2
+            public final Object invoke() {
+                int i22 = i8;
+                WorkDatabase_Impl workDatabase_Impl = this.Y;
+                switch (i22) {
+                    case 0:
+                        return new br8(workDatabase_Impl);
+                    case 1:
+                        return new kf1(workDatabase_Impl);
+                    case 2:
+                        return new dr8(workDatabase_Impl);
+                    case 3:
+                        return new an7(workDatabase_Impl);
+                    case 4:
+                        return new oq8(workDatabase_Impl);
+                    case 5:
+                        return new qq8(workDatabase_Impl);
+                    case 6:
+                        return new jh5(workDatabase_Impl);
+                    default:
+                        return new sv5(workDatabase_Impl);
+                }
+            }
+        });
     }
 
-    @Override // androidx.work.impl.WorkDatabase
-    public final List g(Map map) {
+    @Override // defpackage.ba6
+    public final List c(LinkedHashMap linkedHashMap) {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(new m44(13, 14, 10));
-        arrayList.add(new m44(11));
+        arrayList.add(new il4(13, 14, 10));
+        arrayList.add(new aq8(0));
         int i = 17;
-        arrayList.add(new m44(16, i, 12));
+        arrayList.add(new il4(16, i, 11));
         int i2 = 18;
-        arrayList.add(new m44(i, i2, 13));
-        arrayList.add(new m44(i2, 19, 14));
-        arrayList.add(new m44(15));
-        arrayList.add(new m44(20, 21, 16));
-        arrayList.add(new m44(22, 23, 17));
+        arrayList.add(new il4(i, i2, 12));
+        arrayList.add(new il4(i2, 19, 13));
+        arrayList.add(new aq8(1));
+        arrayList.add(new il4(20, 21, 14));
+        int i3 = 23;
+        arrayList.add(new il4(22, i3, 15));
+        arrayList.add(new il4(i3, 24, 16));
         return arrayList;
     }
 
-    @Override // androidx.work.impl.WorkDatabase
-    public final Set i() {
-        return new HashSet();
+    @Override // defpackage.ba6
+    public final ma3 d() {
+        return new ma3(this, new LinkedHashMap(), new LinkedHashMap(), "Dependency", "WorkSpec", "WorkTag", "SystemIdInfo", "WorkName", "WorkProgress", "Preference");
+    }
+
+    @Override // defpackage.ba6
+    public final xu1 e() {
+        return new cq8(this);
+    }
+
+    @Override // defpackage.ba6
+    public final Set h() {
+        return new LinkedHashSet();
+    }
+
+    @Override // defpackage.ba6
+    public final LinkedHashMap i() {
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        q06 q06Var = p06.a;
+        gn3 b = q06Var.b(br8.class);
+        fw1 fw1Var = fw1.X;
+        linkedHashMap.put(b, fw1Var);
+        linkedHashMap.put(q06Var.b(kf1.class), fw1Var);
+        linkedHashMap.put(q06Var.b(dr8.class), fw1Var);
+        linkedHashMap.put(q06Var.b(an7.class), fw1Var);
+        linkedHashMap.put(q06Var.b(oq8.class), fw1Var);
+        linkedHashMap.put(q06Var.b(qq8.class), fw1Var);
+        linkedHashMap.put(q06Var.b(jh5.class), fw1Var);
+        linkedHashMap.put(q06Var.b(sv5.class), fw1Var);
+        return linkedHashMap;
     }
 
     @Override // androidx.work.impl.WorkDatabase
-    public final Map j() {
-        HashMap map = new HashMap();
-        List list = Collections.EMPTY_LIST;
-        map.put(pv7.class, list);
-        map.put(h71.class, list);
-        map.put(rv7.class, list);
-        map.put(pv6.class, list);
-        map.put(dv7.class, list);
-        map.put(fv7.class, list);
-        map.put(ey4.class, list);
-        map.put(rb5.class, list);
-        return map;
+    public final kf1 r() {
+        return (kf1) this.l.getValue();
     }
 
     @Override // androidx.work.impl.WorkDatabase
-    public final ey4 l() {
-        ey4 ey4Var;
-        if (this.r != null) {
-            return this.r;
-        }
-        synchronized (this) {
-            try {
-                if (this.r == null) {
-                    this.r = new ey4(this);
-                }
-                ey4Var = this.r;
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        return ey4Var;
+    public final jh5 s() {
+        return (jh5) this.q.getValue();
     }
 
     @Override // androidx.work.impl.WorkDatabase
-    public final rb5 n() {
-        rb5 rb5Var;
-        if (this.s != null) {
-            return this.s;
-        }
-        synchronized (this) {
-            try {
-                if (this.s == null) {
-                    this.s = new rb5(this);
-                }
-                rb5Var = this.s;
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        return rb5Var;
+    public final sv5 t() {
+        return (sv5) this.r.getValue();
     }
 
     @Override // androidx.work.impl.WorkDatabase
-    public final pv6 r() {
-        pv6 pv6Var;
-        if (this.o != null) {
-            return this.o;
-        }
-        synchronized (this) {
-            try {
-                if (this.o == null) {
-                    this.o = new pv6(this);
-                }
-                pv6Var = this.o;
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        return pv6Var;
+    public final an7 u() {
+        return (an7) this.n.getValue();
     }
 
     @Override // androidx.work.impl.WorkDatabase
-    public final dv7 t() {
-        dv7 dv7Var;
-        if (this.p != null) {
-            return this.p;
-        }
-        synchronized (this) {
-            try {
-                if (this.p == null) {
-                    this.p = new dv7(this);
-                }
-                dv7Var = this.p;
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        return dv7Var;
+    public final oq8 v() {
+        return (oq8) this.o.getValue();
     }
 
     @Override // androidx.work.impl.WorkDatabase
-    public final fv7 u() {
-        fv7 fv7Var;
-        if (this.q != null) {
-            return this.q;
-        }
-        synchronized (this) {
-            try {
-                if (this.q == null) {
-                    fv7 fv7Var2 = new fv7();
-                    fv7Var2.Q = this;
-                    fv7Var2.R = new g71(this, 4);
-                    fv7Var2.S = new ov6(this, 2);
-                    fv7Var2.T = new ov6(this, 3);
-                    this.q = fv7Var2;
-                }
-                fv7Var = this.q;
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        return fv7Var;
+    public final qq8 w() {
+        return (qq8) this.p.getValue();
     }
 
     @Override // androidx.work.impl.WorkDatabase
-    public final pv7 v() {
-        pv7 pv7Var;
-        if (this.l != null) {
-            return this.l;
-        }
-        synchronized (this) {
-            try {
-                if (this.l == null) {
-                    this.l = new pv7(this);
-                }
-                pv7Var = this.l;
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        return pv7Var;
+    public final br8 x() {
+        return (br8) this.k.getValue();
     }
 
     @Override // androidx.work.impl.WorkDatabase
-    public final rv7 w() {
-        rv7 rv7Var;
-        if (this.n != null) {
-            return this.n;
-        }
-        synchronized (this) {
-            try {
-                if (this.n == null) {
-                    this.n = new rv7(this);
-                }
-                rv7Var = this.n;
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        return rv7Var;
+    public final dr8 y() {
+        return (dr8) this.m.getValue();
     }
 }

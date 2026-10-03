@@ -1,142 +1,34 @@
-.class public abstract Ldf3;
+.class public interface abstract annotation Ldf3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lr04;
+.implements Ljava/lang/annotation/Annotation;
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
-
-
-# direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Ldf3;->a:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    return-void
-.end method
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation Ldf3;
+        include = .enum Lih3;->Y:Lih3;
+        propName = ""
+        propNamespace = ""
+        required = false
+    .end subannotation
+.end annotation
 
 
 # virtual methods
-.method public final e(Landroidx/compose/ui/node/NodeCoordinator;Ljava/util/List;I)I
-    .locals 0
-
-    .line 1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 2
-    .line 3
-    iget-object p2, p0, Ldf3;->a:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p2
-
-    .line 9
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
+.method public abstract include()Lih3;
 .end method
 
-.method public final f(Landroidx/compose/ui/node/NodeCoordinator;Ljava/util/List;I)I
-    .locals 0
-
-    .line 1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 2
-    .line 3
-    iget-object p2, p0, Ldf3;->a:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p2
-
-    .line 9
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
+.method public abstract propName()Ljava/lang/String;
 .end method
 
-.method public final g(Landroidx/compose/ui/node/NodeCoordinator;Ljava/util/List;I)I
-    .locals 0
-
-    .line 1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 2
-    .line 3
-    iget-object p2, p0, Ldf3;->a:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p2
-
-    .line 9
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
+.method public abstract propNamespace()Ljava/lang/String;
 .end method
 
-.method public final j(Landroidx/compose/ui/node/NodeCoordinator;Ljava/util/List;I)I
-    .locals 0
+.method public abstract required()Z
+.end method
 
-    .line 1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 2
-    .line 3
-    iget-object p2, p0, Ldf3;->a:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p2
-
-    .line 9
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
+.method public abstract value()Ljava/lang/String;
 .end method

@@ -1,14 +1,14 @@
 .class public abstract Landroidx/media/MediaBrowserServiceCompat;
 .super Landroid/app/Service;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:Lf76;
+.field public X:Lv5;
 
 
 # virtual methods
-.method public abstract a()Lew0;
+.method public abstract a()Lkp3;
 .end method
 
 .method public abstract b()V
@@ -22,30 +22,30 @@
 .end method
 
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->Q:Lf76;
+    iget-object p0, p0, Landroidx/media/MediaBrowserServiceCompat;->X:Lv5;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lf76;->S:Ljava/lang/Object;
+    iget-object p0, p0, Lv5;->Z:Ljava/lang/Object;
 
     .line 4
     .line 5
-    check-cast v0, Le14;
+    check-cast p0, Lci4;
 
     .line 6
     .line 7
-    invoke-virtual {v0, p1}, Landroid/service/media/MediaBrowserService;->onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+    invoke-virtual {p0, p1}, Landroid/service/media/MediaBrowserService;->onBind(Landroid/content/Intent;)Landroid/os/IBinder;
 
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
 
     .line 11
-    return-object p1
+    return-object p0
 .end method
 
 .method public final onCreate()V
@@ -69,16 +69,16 @@
 
     .line 9
     .line 10
-    new-instance v0, Ld14;
+    new-instance v0, Lbi4;
 
     .line 11
     .line 12
-    invoke-direct {v0, p0}, Lc14;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
+    invoke-direct {v0, p0}, Lai4;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
 
     .line 13
     .line 14
     .line 15
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->Q:Lf76;
+    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->X:Lv5;
 
     .line 16
     .line 17
@@ -94,16 +94,16 @@
 
     .line 21
     .line 22
-    new-instance v0, Lc14;
+    new-instance v0, Lai4;
 
     .line 23
     .line 24
-    invoke-direct {v0, p0}, Lc14;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
+    invoke-direct {v0, p0}, Lai4;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
 
     .line 25
     .line 26
     .line 27
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->Q:Lf76;
+    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->X:Lv5;
 
     .line 28
     .line 29
@@ -111,53 +111,28 @@
 
     .line 30
     :cond_1
-    const/16 v1, 0x17
+    new-instance v0, Lv5;
 
     .line 31
     .line 32
-    if-lt v0, v1, :cond_2
+    invoke-direct {v0, p0}, Lv5;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
 
     .line 33
     .line 34
-    new-instance v0, Lb14;
-
     .line 35
-    .line 36
-    invoke-direct {v0, p0}, Lb14;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
+    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->X:Lv5;
 
+    .line 36
     .line 37
+    :goto_0
+    iget-object p0, p0, Landroidx/media/MediaBrowserServiceCompat;->X:Lv5;
+
     .line 38
     .line 39
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->Q:Lf76;
+    invoke-virtual {p0}, Lv5;->X()V
 
     .line 40
     .line 41
-    goto :goto_0
-
     .line 42
-    :cond_2
-    new-instance v0, Lf76;
-
-    .line 43
-    .line 44
-    invoke-direct {v0, p0}, Lf76;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
-
-    .line 45
-    .line 46
-    .line 47
-    iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->Q:Lf76;
-
-    .line 48
-    .line 49
-    :goto_0
-    iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat;->Q:Lf76;
-
-    .line 50
-    .line 51
-    invoke-virtual {v0}, Lf76;->z()V
-
-    .line 52
-    .line 53
-    .line 54
     return-void
 .end method

@@ -1,27 +1,27 @@
-.class public final Lwb;
+.class public final synthetic Lwb;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lue1;
+.implements Lmi2;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic X:I
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic Y:Lcc;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
+.method public synthetic constructor <init>(Lcc;I)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lwb;->a:I
+    iput p2, p0, Lwb;->X:I
 
     .line 2
     .line 3
-    iput-object p2, p0, Lwb;->b:Ljava/lang/Object;
+    iput-object p1, p0, Lwb;->Y:Lcc;
 
     .line 4
     .line 5
@@ -35,308 +35,133 @@
 
 
 # virtual methods
-.method public final a()V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
     .line 1
-    iget v0, p0, Lwb;->a:I
+    iget v0, p0, Lwb;->X:I
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    iget-object p0, p0, Lwb;->Y:Lcc;
 
     .line 4
-    iget-object v2, p0, Lwb;->b:Ljava/lang/Object;
-
     .line 5
-    .line 6
     packed-switch v0, :pswitch_data_0
 
+    .line 6
     .line 7
     .line 8
+    check-cast p1, Lvl6;
+
     .line 9
-    check-cast v2, Li54;
-
     .line 10
-    .line 11
-    invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V
+    iget-object v0, p1, Lvl6;->Y:Ljava/util/List;
 
+    .line 11
     .line 12
+    invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
     .line 13
     .line 14
-    iget-object v0, v2, Li54;->X:Lf54;
-
     .line 15
+    move-result v0
+
     .line 16
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/AbstractComposeView;->d()V
+    if-nez v0, :cond_0
 
     .line 17
     .line 18
+    goto :goto_0
+
     .line 19
-    return-void
+    :cond_0
+    iget-object v0, p0, Lcc;->c0:Landroidx/compose/ui/platform/AndroidComposeView;
 
     .line 20
-    :pswitch_0
-    check-cast v2, Lzh3;
-
     .line 21
+    invoke-virtual {v0}, Landroidx/compose/ui/platform/AndroidComposeView;->getSnapshotObserver()Lu45;
+
     .line 22
-    const/4 v0, 0x1
-
     .line 23
-    iput-boolean v0, v2, Lzh3;->f:Z
-
     .line 24
+    move-result-object v0
+
     .line 25
-    return-void
+    iget-object v1, p0, Lcc;->L0:Lwb;
 
     .line 26
-    :pswitch_1
-    check-cast v2, Ldi3;
-
     .line 27
-    .line 28
-    iget-object v0, v2, Ldi3;->c:Ljw1;
+    new-instance v2, Lm5;
 
+    .line 28
     .line 29
+    const/4 v3, 0x2
+
     .line 30
-    if-eqz v0, :cond_0
+    invoke-direct {v2, v3, p1, p0}, Lm5;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 31
     .line 32
-    const/4 v3, 0x0
-
     .line 33
-    iput-boolean v3, v0, Ljw1;->b:Z
+    iget-object p0, v0, Lu45;->a:Lu17;
 
     .line 34
     .line 35
-    :cond_0
-    iput-object v1, v2, Ldi3;->c:Ljw1;
+    invoke-virtual {p0, p1, v1, v2}, Lu17;->c(Ljava/lang/Object;Lmi2;Lji2;)V
 
     .line 36
     .line 37
-    return-void
-
     .line 38
-    :pswitch_2
-    check-cast v2, Luh3;
+    :goto_0
+    sget-object p0, Lr98;->a:Lr98;
 
     .line 39
     .line 40
-    iput-object v1, v2, Luh3;->d:Lip0;
+    return-object p0
 
     .line 41
-    .line 42
-    return-void
+    :pswitch_0
+    check-cast p1, Landroid/view/accessibility/AccessibilityEvent;
 
+    .line 42
     .line 43
-    :pswitch_3
-    check-cast v2, Lh67;
+    iget-object p0, p0, Lcc;->c0:Landroidx/compose/ui/platform/AndroidComposeView;
 
     .line 44
     .line 45
-    iget-object v0, v2, Lh67;->c:Lie0;
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     .line 46
     .line 47
-    if-eqz v0, :cond_1
-
     .line 48
+    move-result-object v0
+
     .line 49
-    invoke-virtual {v0, v1}, Lie0;->q(Ljava/lang/Throwable;)Z
+    invoke-interface {v0, p0, p1}, Landroid/view/ViewParent;->requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
     .line 50
     .line 51
     .line 52
-    :cond_1
-    return-void
+    move-result p0
 
     .line 53
-    :pswitch_4
-    check-cast v2, Lq07;
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 54
     .line 55
-    invoke-virtual {v2}, Lq07;->q()V
-
     .line 56
+    move-result-object p0
+
     .line 57
+    return-object p0
+
     .line 58
-    iput-object v1, v2, Lq07;->j:Lgg2;
-
-    .line 59
-    .line 60
-    return-void
-
-    .line 61
-    :pswitch_5
-    check-cast v2, Lsz;
-
-    .line 62
-    .line 63
-    iget-object v0, v2, Lsz;->c:Lto4;
-
-    .line 64
-    .line 65
-    invoke-virtual {v0}, Lto4;->getValue()Ljava/lang/Object;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v0
-
-    .line 69
-    check-cast v0, Lrz;
-
-    .line 70
-    .line 71
-    if-eqz v0, :cond_2
-
-    .line 72
-    .line 73
-    invoke-virtual {v0}, Lrz;->close()V
-
-    .line 74
-    .line 75
-    .line 76
-    :cond_2
-    return-void
-
-    .line 77
-    :pswitch_6
-    check-cast v2, Ltf;
-
-    .line 78
-    .line 79
-    iget-object v0, v2, Ltf;->e:Lzd6;
-
-    .line 80
-    .line 81
-    iget-object v3, v0, Lzd6;->h:Lyx;
-
-    .line 82
-    .line 83
-    if-eqz v3, :cond_3
-
-    .line 84
-    .line 85
-    invoke-virtual {v3}, Lyx;->l()V
-
-    .line 86
-    .line 87
-    .line 88
-    :cond_3
-    invoke-virtual {v0}, Lzd6;->a()V
-
-    .line 89
-    .line 90
-    .line 91
-    iget-object v0, v2, Ltf;->h:Landroid/view/ActionMode;
-
-    .line 92
-    .line 93
-    if-eqz v0, :cond_4
-
-    .line 94
-    .line 95
-    invoke-virtual {v0}, Landroid/view/ActionMode;->finish()V
-
-    .line 96
-    .line 97
-    .line 98
-    :cond_4
-    iput-object v1, v2, Ltf;->h:Landroid/view/ActionMode;
-
-    .line 99
-    .line 100
-    return-void
-
-    .line 101
-    :pswitch_7
-    check-cast v2, Lkx4;
-
-    .line 102
-    .line 103
-    invoke-virtual {v2}, Landroidx/compose/ui/platform/AbstractComposeView;->d()V
-
-    .line 104
-    .line 105
-    .line 106
-    sget v0, Lw85;->view_tree_lifecycle_owner:I
-
-    .line 107
-    .line 108
-    invoke-virtual {v2, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
-
-    .line 109
-    .line 110
-    .line 111
-    iget-object v0, v2, Lkx4;->g0:Landroid/view/WindowManager;
-
-    .line 112
-    .line 113
-    invoke-interface {v0, v2}, Landroid/view/WindowManager;->removeViewImmediate(Landroid/view/View;)V
-
-    .line 114
-    .line 115
-    .line 116
-    return-void
-
-    .line 117
-    :pswitch_8
-    check-cast v2, Lld1;
-
-    .line 118
-    .line 119
-    invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V
-
-    .line 120
-    .line 121
-    .line 122
-    iget-object v0, v2, Lld1;->W:Lhc1;
-
-    .line 123
-    .line 124
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/AbstractComposeView;->d()V
-
-    .line 125
-    .line 126
-    .line 127
-    return-void
-
-    .line 128
-    :pswitch_9
-    check-cast v2, Lye1;
-
-    .line 129
-    .line 130
-    iget-object v0, v2, Lye1;->R:Lze1;
-
-    .line 131
-    .line 132
-    invoke-virtual {v0}, Lze1;->invoke()Ljava/lang/Object;
-
-    .line 133
-    .line 134
-    .line 135
-    return-void
-
-    .line 136
     nop
 
-    .line 137
+    .line 59
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

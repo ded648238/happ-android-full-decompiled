@@ -1,118 +1,40 @@
-.class public final enum Lgf4;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lgf4;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final enum Q:Lgf4;
-
-.field public static final enum R:Lgf4;
-
-.field public static final enum S:Lgf4;
-
-.field public static final synthetic T:[Lgf4;
+# instance fields
+.field public final a:Ljava/util/Map;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(Ljava/util/Map;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lgf4;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "FORCE_FLEXIBILITY"
-
     .line 4
+    iput-object p1, p0, Lgf4;->a:Ljava/util/Map;
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, Lgf4;->Q:Lgf4;
-
-    .line 10
-    .line 11
-    new-instance v1, Lgf4;
-
-    .line 12
-    .line 13
-    const-string v3, "NULLABLE"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lgf4;->R:Lgf4;
-
-    .line 20
-    .line 21
-    new-instance v3, Lgf4;
-
-    .line 22
-    .line 23
-    const-string v5, "NOT_NULL"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, Lgf4;->S:Lgf4;
-
-    .line 30
-    .line 31
-    const/4 v5, 0x3
-
-    .line 32
-    new-array v5, v5, [Lgf4;
-
-    .line 33
-    .line 34
-    aput-object v0, v5, v2
-
-    .line 35
-    .line 36
-    aput-object v1, v5, v4
-
-    .line 37
-    .line 38
-    aput-object v3, v5, v6
-
-    .line 39
-    .line 40
-    sput-object v5, Lgf4;->T:[Lgf4;
-
-    .line 41
-    .line 42
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lgf4;
-    .locals 1
+
+# virtual methods
+.method public final a(F)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    const-class v0, Lgf4;
+    iget-object p0, p0, Lgf4;->a:Ljava/util/Map;
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     .line 4
     .line 5
@@ -120,32 +42,770 @@
     move-result-object p0
 
     .line 7
-    check-cast p0, Lgf4;
+    check-cast p0, Ljava/lang/Iterable;
 
     .line 8
     .line 9
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    const/4 v1, 0x0
+
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 19
+    .line 20
+    move-object v0, v1
+
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v2
+
+    .line 30
+    if-nez v2, :cond_1
+
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_1
+    move-object v2, v0
+
+    .line 34
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 35
+    .line 36
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v2
+
+    .line 40
+    check-cast v2, Ljava/lang/Number;
+
+    .line 41
+    .line 42
+    invoke-virtual {v2}, Ljava/lang/Number;->floatValue()F
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v2
+
+    .line 46
+    sub-float v2, p1, v2
+
+    .line 47
+    .line 48
+    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v2
+
+    .line 52
+    :cond_2
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v3
+
+    .line 56
+    move-object v4, v3
+
+    .line 57
+    check-cast v4, Ljava/util/Map$Entry;
+
+    .line 58
+    .line 59
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v4
+
+    .line 63
+    check-cast v4, Ljava/lang/Number;
+
+    .line 64
+    .line 65
+    invoke-virtual {v4}, Ljava/lang/Number;->floatValue()F
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v4
+
+    .line 69
+    sub-float v4, p1, v4
+
+    .line 70
+    .line 71
+    invoke-static {v4}, Ljava/lang/Math;->abs(F)F
+
+    .line 72
+    .line 73
+    .line 74
+    move-result v4
+
+    .line 75
+    invoke-static {v2, v4}, Ljava/lang/Float;->compare(FF)I
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v5
+
+    .line 79
+    if-lez v5, :cond_3
+
+    .line 80
+    .line 81
+    move-object v0, v3
+
+    .line 82
+    move v2, v4
+
+    .line 83
+    :cond_3
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 84
+    .line 85
+    .line 86
+    move-result v3
+
+    .line 87
+    if-nez v3, :cond_2
+
+    .line 88
+    .line 89
+    :goto_0
+    check-cast v0, Ljava/util/Map$Entry;
+
+    .line 90
+    .line 91
+    if-eqz v0, :cond_4
+
+    .line 92
+    .line 93
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object p0
+
+    .line 97
     return-object p0
+
+    .line 98
+    :cond_4
+    return-object v1
 .end method
 
-.method public static values()[Lgf4;
-    .locals 1
+.method public final b(FZ)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    sget-object v0, Lgf4;->T:[Lgf4;
+    iget-object p0, p0, Lgf4;->a:Ljava/util/Map;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, [Lgf4;
+    check-cast p0, Ljava/lang/Iterable;
 
     .line 8
     .line 9
-    return-object v0
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    const/4 v1, 0x0
+
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 19
+    .line 20
+    move-object v0, v1
+
+    .line 21
+    goto :goto_2
+
+    .line 22
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v2
+
+    .line 30
+    if-nez v2, :cond_1
+
+    .line 31
+    .line 32
+    goto :goto_2
+
+    .line 33
+    :cond_1
+    move-object v2, v0
+
+    .line 34
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 35
+    .line 36
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v2
+
+    .line 40
+    check-cast v2, Ljava/lang/Number;
+
+    .line 41
+    .line 42
+    invoke-virtual {v2}, Ljava/lang/Number;->floatValue()F
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v2
+
+    .line 46
+    if-eqz p2, :cond_2
+
+    .line 47
+    .line 48
+    sub-float/2addr v2, p1
+
+    .line 49
+    goto :goto_0
+
+    .line 50
+    :cond_2
+    sub-float v2, p1, v2
+
+    .line 51
+    .line 52
+    :goto_0
+    const/4 v3, 0x0
+
+    .line 53
+    cmpg-float v4, v2, v3
+
+    .line 54
+    .line 55
+    const/high16 v5, 0x7f800000    # Float.POSITIVE_INFINITY
+
+    .line 56
+    .line 57
+    if-gez v4, :cond_3
+
+    .line 58
+    .line 59
+    move v2, v5
+
+    .line 60
+    :cond_3
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v4
+
+    .line 64
+    move-object v6, v4
+
+    .line 65
+    check-cast v6, Ljava/util/Map$Entry;
+
+    .line 66
+    .line 67
+    invoke-interface {v6}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v6
+
+    .line 71
+    check-cast v6, Ljava/lang/Number;
+
+    .line 72
+    .line 73
+    invoke-virtual {v6}, Ljava/lang/Number;->floatValue()F
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v6
+
+    .line 77
+    if-eqz p2, :cond_4
+
+    .line 78
+    .line 79
+    sub-float/2addr v6, p1
+
+    .line 80
+    goto :goto_1
+
+    .line 81
+    :cond_4
+    sub-float v6, p1, v6
+
+    .line 82
+    .line 83
+    :goto_1
+    cmpg-float v7, v6, v3
+
+    .line 84
+    .line 85
+    if-gez v7, :cond_5
+
+    .line 86
+    .line 87
+    move v6, v5
+
+    .line 88
+    :cond_5
+    invoke-static {v2, v6}, Ljava/lang/Float;->compare(FF)I
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v7
+
+    .line 92
+    if-lez v7, :cond_6
+
+    .line 93
+    .line 94
+    move-object v0, v4
+
+    .line 95
+    move v2, v6
+
+    .line 96
+    :cond_6
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 97
+    .line 98
+    .line 99
+    move-result v4
+
+    .line 100
+    if-nez v4, :cond_3
+
+    .line 101
+    .line 102
+    :goto_2
+    check-cast v0, Ljava/util/Map$Entry;
+
+    .line 103
+    .line 104
+    if-eqz v0, :cond_7
+
+    .line 105
+    .line 106
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 107
+    .line 108
+    .line 109
+    move-result-object p0
+
+    .line 110
+    return-object p0
+
+    .line 111
+    :cond_7
+    return-object v1
+.end method
+
+.method public final c()F
+    .locals 2
+
+    .line 1
+    iget-object p0, p0, Lgf4;->a:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ljava/lang/Iterable;
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v0
+
+    .line 20
+    if-nez v0, :cond_0
+
+    .line 21
+    .line 22
+    const/4 p0, 0x0
+
+    .line 23
+    goto :goto_1
+
+    .line 24
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    check-cast v0, Ljava/lang/Number;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0}, Ljava/lang/Number;->floatValue()F
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v0
+
+    .line 34
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v1
+
+    .line 38
+    if-eqz v1, :cond_1
+
+    .line 39
+    .line 40
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v1
+
+    .line 44
+    check-cast v1, Ljava/lang/Number;
+
+    .line 45
+    .line 46
+    invoke-virtual {v1}, Ljava/lang/Number;->floatValue()F
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v1
+
+    .line 50
+    invoke-static {v0, v1}, Ljava/lang/Math;->min(FF)F
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v0
+
+    .line 54
+    goto :goto_0
+
+    .line 55
+    :cond_1
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p0
+
+    .line 59
+    :goto_1
+    if-eqz p0, :cond_2
+
+    .line 60
+    .line 61
+    invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
+
+    .line 62
+    .line 63
+    .line 64
+    move-result p0
+
+    .line 65
+    return p0
+
+    .line 66
+    :cond_2
+    const/high16 p0, 0x7fc00000    # Float.NaN
+
+    .line 67
+    .line 68
+    return p0
+.end method
+
+.method public final d(Ljava/lang/Object;)F
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lgf4;->a:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ljava/lang/Float;
+
+    .line 8
+    .line 9
+    if-eqz p0, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_0
+    const/high16 p0, 0x7fc00000    # Float.NaN
+
+    .line 17
+    .line 18
+    return p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p0, 0x1
+
+    .line 4
+    return p0
+
+    .line 5
+    :cond_0
+    instance-of v0, p1, Lgf4;
+
+    .line 6
+    .line 7
+    if-nez v0, :cond_1
+
+    .line 8
+    .line 9
+    const/4 p0, 0x0
+
+    .line 10
+    return p0
+
+    .line 11
+    :cond_1
+    check-cast p1, Lgf4;
+
+    .line 12
+    .line 13
+    iget-object p1, p1, Lgf4;->a:Ljava/util/Map;
+
+    .line 14
+    .line 15
+    iget-object p0, p0, Lgf4;->a:Ljava/util/Map;
+
+    .line 16
+    .line 17
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
+
+    .line 21
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lgf4;->a:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    mul-int/lit8 p0, p0, 0x1f
+
+    .line 8
+    .line 9
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "MapDraggableAnchors("
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object p0, p0, Lgf4;->a:Ljava/util/Map;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const/16 p0, 0x29
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
 .end method

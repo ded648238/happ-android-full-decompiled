@@ -1,14 +1,14 @@
 .class public final Lio/sentry/cache/tape/e;
 .super Lio/sentry/cache/tape/g;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Lio/sentry/cache/tape/j;
+.field public final X:Lio/sentry/cache/tape/j;
 
-.field public final R:Lio/sentry/cache/tape/c;
+.field public final Y:Lio/sentry/cache/tape/c;
 
-.field public final S:Lio/sentry/cache/tape/f;
+.field public final Z:Lio/sentry/cache/tape/f;
 
 
 # direct methods
@@ -30,15 +30,15 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lio/sentry/cache/tape/e;->R:Lio/sentry/cache/tape/c;
+    iput-object v0, p0, Lio/sentry/cache/tape/e;->Y:Lio/sentry/cache/tape/c;
 
     .line 10
     .line 11
-    iput-object p1, p0, Lio/sentry/cache/tape/e;->Q:Lio/sentry/cache/tape/j;
+    iput-object p1, p0, Lio/sentry/cache/tape/e;->X:Lio/sentry/cache/tape/j;
 
     .line 12
     .line 13
-    iput-object p2, p0, Lio/sentry/cache/tape/e;->S:Lio/sentry/cache/tape/f;
+    iput-object p2, p0, Lio/sentry/cache/tape/e;->Z:Lio/sentry/cache/tape/f;
 
     .line 14
     .line 15
@@ -47,63 +47,15 @@
 
 
 # virtual methods
-.method public final R(I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lio/sentry/cache/tape/e;->Q:Lio/sentry/cache/tape/j;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, Lio/sentry/cache/tape/j;->k0(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final clear()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lio/sentry/cache/tape/e;->Q:Lio/sentry/cache/tape/j;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lio/sentry/cache/tape/j;->clear()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final close()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lio/sentry/cache/tape/e;->Q:Lio/sentry/cache/tape/j;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lio/sentry/cache/tape/j;->close()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final i(Ljava/lang/Object;)V
-    .locals 27
+.method public final R(Ljava/lang/Comparable;)V
+    .locals 26
 
     .line 1
     move-object/from16 v0, p0
 
     .line 2
     .line 3
-    iget-object v1, v0, Lio/sentry/cache/tape/e;->R:Lio/sentry/cache/tape/c;
+    iget-object v1, v0, Lio/sentry/cache/tape/e;->Y:Lio/sentry/cache/tape/c;
 
     .line 4
     .line 5
@@ -112,7 +64,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v2, v0, Lio/sentry/cache/tape/e;->S:Lio/sentry/cache/tape/f;
+    iget-object v2, v0, Lio/sentry/cache/tape/e;->Z:Lio/sentry/cache/tape/f;
 
     .line 9
     .line 10
@@ -120,12 +72,12 @@
 
     .line 11
     .line 12
-    invoke-interface {v2, v3, v1}, Lio/sentry/cache/tape/f;->c(Ljava/lang/Object;Ljava/io/OutputStream;)V
+    invoke-interface {v2, v3, v1}, Lio/sentry/cache/tape/f;->d(Ljava/lang/Comparable;Ljava/io/OutputStream;)V
 
     .line 13
     .line 14
     .line 15
-    invoke-virtual {v1}, Lio/sentry/cache/tape/c;->f()[B
+    invoke-virtual {v1}, Lio/sentry/cache/tape/c;->g()[B
 
     .line 16
     .line 17
@@ -141,7 +93,7 @@
     move-result v1
 
     .line 23
-    iget-object v3, v0, Lio/sentry/cache/tape/e;->Q:Lio/sentry/cache/tape/j;
+    iget-object v3, v0, Lio/sentry/cache/tape/e;->X:Lio/sentry/cache/tape/j;
 
     .line 24
     .line 25
@@ -150,7 +102,7 @@
     .line 26
     .line 27
     .line 28
-    iget-object v11, v3, Lio/sentry/cache/tape/j;->W:[B
+    iget-object v0, v3, Lio/sentry/cache/tape/j;->f0:[B
 
     .line 29
     .line 30
@@ -169,7 +121,7 @@
 
     .line 36
     .line 37
-    iget-boolean v4, v3, Lio/sentry/cache/tape/j;->Z:Z
+    iget-boolean v4, v3, Lio/sentry/cache/tape/j;->j0:Z
 
     .line 38
     .line 39
@@ -177,14 +129,14 @@
 
     .line 40
     .line 41
-    iget v4, v3, Lio/sentry/cache/tape/j;->Y:I
+    iget v4, v3, Lio/sentry/cache/tape/j;->h0:I
 
     .line 42
     .line 43
     const/4 v5, -0x1
 
     .line 44
-    const/4 v12, 0x1
+    const/4 v11, 0x1
 
     .line 45
     if-ne v4, v5, :cond_0
@@ -195,7 +147,7 @@
 
     .line 48
     :cond_0
-    iget v5, v3, Lio/sentry/cache/tape/j;->T:I
+    iget v5, v3, Lio/sentry/cache/tape/j;->c0:I
 
     .line 49
     .line 50
@@ -203,7 +155,7 @@
 
     .line 51
     .line 52
-    invoke-virtual {v3, v12}, Lio/sentry/cache/tape/j;->k0(I)V
+    invoke-virtual {v3, v11}, Lio/sentry/cache/tape/j;->t0(I)V
 
     .line 53
     .line 54
@@ -213,22 +165,22 @@
     int-to-long v4, v1
 
     .line 56
-    const-wide/16 v13, 0x4
+    const-wide/16 v12, 0x4
 
     .line 57
     .line 58
-    add-long/2addr v4, v13
+    add-long/2addr v4, v12
 
     .line 59
-    iget-wide v6, v3, Lio/sentry/cache/tape/j;->S:J
+    iget-wide v6, v3, Lio/sentry/cache/tape/j;->Z:J
 
     .line 60
     .line 61
-    iget v8, v3, Lio/sentry/cache/tape/j;->T:I
+    iget v8, v3, Lio/sentry/cache/tape/j;->c0:I
 
     .line 62
     .line 63
-    const-wide/16 v15, 0x20
+    const-wide/16 v14, 0x20
 
     .line 64
     .line 65
@@ -236,23 +188,22 @@
 
     .line 66
     .line 67
-    move-wide/from16 v17, v13
+    move-wide/from16 p0, v12
 
     .line 68
     .line 69
-    move-wide v9, v15
+    move-wide v9, v14
 
     .line 70
-    :goto_1
-    const/16 p1, 0x1
+    move-wide/from16 v16, v9
 
     .line 71
     .line 72
-    goto :goto_2
+    goto :goto_1
 
     .line 73
     :cond_2
-    iget-object v8, v3, Lio/sentry/cache/tape/j;->V:Lio/sentry/cache/tape/h;
+    iget-object v8, v3, Lio/sentry/cache/tape/j;->e0:Lio/sentry/cache/tape/h;
 
     .line 74
     .line 75
@@ -260,19 +211,19 @@
 
     .line 76
     .line 77
-    move-wide/from16 v17, v13
+    move-wide/from16 p0, v12
 
     .line 78
     .line 79
-    iget-object v13, v3, Lio/sentry/cache/tape/j;->U:Lio/sentry/cache/tape/h;
+    iget-object v12, v3, Lio/sentry/cache/tape/j;->d0:Lio/sentry/cache/tape/h;
 
     .line 80
     .line 81
-    iget-wide v13, v13, Lio/sentry/cache/tape/h;->a:J
+    iget-wide v12, v12, Lio/sentry/cache/tape/h;->a:J
 
     .line 82
     .line 83
-    cmp-long v19, v9, v13
+    cmp-long v16, v9, v12
 
     .line 84
     .line 85
@@ -280,628 +231,705 @@
 
     .line 86
     .line 87
-    if-ltz v19, :cond_3
+    if-ltz v16, :cond_3
 
     .line 88
     .line 89
-    sub-long/2addr v9, v13
+    sub-long/2addr v9, v12
 
     .line 90
-    add-long v9, v9, v17
+    add-long v9, v9, p0
 
     .line 91
     .line 92
-    int-to-long v13, v8
+    int-to-long v12, v8
 
     .line 93
-    add-long/2addr v9, v13
+    add-long/2addr v9, v12
 
     .line 94
-    add-long/2addr v9, v15
+    add-long/2addr v9, v14
 
     .line 95
-    goto :goto_1
+    move-wide/from16 v16, v14
 
     .line 96
-    :cond_3
-    add-long v9, v9, v17
-
     .line 97
+    goto :goto_1
+
     .line 98
-    move-wide/from16 v19, v13
+    :cond_3
+    add-long v9, v9, p0
 
     .line 99
     .line 100
-    const/16 p1, 0x1
+    move-wide/from16 v16, v14
 
     .line 101
     .line 102
-    int-to-long v12, v8
+    int-to-long v14, v8
 
     .line 103
-    add-long/2addr v9, v12
+    add-long/2addr v9, v14
 
     .line 104
     add-long/2addr v9, v6
 
     .line 105
-    sub-long v9, v9, v19
+    sub-long/2addr v9, v12
 
     .line 106
+    :goto_1
+    sub-long v8, v6, v9
+
     .line 107
-    :goto_2
-    sub-long v9, v6, v9
-
     .line 108
+    cmp-long v10, v8, v4
+
     .line 109
-    cmp-long v8, v9, v4
-
     .line 110
+    if-ltz v10, :cond_4
+
     .line 111
-    if-ltz v8, :cond_4
-
     .line 112
-    .line 113
-    goto/16 :goto_7
+    goto/16 :goto_6
 
+    .line 113
     .line 114
-    .line 115
     :cond_4
-    add-long/2addr v9, v6
+    add-long/2addr v8, v6
+
+    .line 115
+    shl-long/2addr v6, v11
 
     .line 116
-    shl-long v6, v6, p1
+    cmp-long v10, v8, v4
 
     .line 117
     .line 118
-    cmp-long v8, v9, v4
+    if-ltz v10, :cond_4
 
     .line 119
     .line 120
-    if-ltz v8, :cond_4
+    iget-object v4, v3, Lio/sentry/cache/tape/j;->X:Ljava/io/RandomAccessFile;
 
     .line 121
     .line 122
-    iget-object v4, v3, Lio/sentry/cache/tape/j;->Q:Ljava/io/RandomAccessFile;
+    invoke-virtual {v4, v6, v7}, Ljava/io/RandomAccessFile;->setLength(J)V
 
     .line 123
     .line 124
-    invoke-virtual {v4, v6, v7}, Ljava/io/RandomAccessFile;->setLength(J)V
-
     .line 125
+    iget-object v4, v3, Lio/sentry/cache/tape/j;->X:Ljava/io/RandomAccessFile;
+
     .line 126
     .line 127
-    iget-object v4, v3, Lio/sentry/cache/tape/j;->Q:Ljava/io/RandomAccessFile;
+    invoke-virtual {v4}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
 
     .line 128
     .line 129
-    invoke-virtual {v4}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
-
     .line 130
-    .line 131
-    .line 132
     move-result-object v4
 
-    .line 133
-    const/4 v5, 0x1
+    .line 131
+    invoke-virtual {v4, v11}, Ljava/nio/channels/FileChannel;->force(Z)V
 
+    .line 132
+    .line 133
     .line 134
-    invoke-virtual {v4, v5}, Ljava/nio/channels/FileChannel;->force(Z)V
+    iget-object v4, v3, Lio/sentry/cache/tape/j;->e0:Lio/sentry/cache/tape/h;
 
     .line 135
     .line 136
-    .line 137
-    iget-object v4, v3, Lio/sentry/cache/tape/j;->V:Lio/sentry/cache/tape/h;
-
-    .line 138
-    .line 139
     iget-wide v8, v4, Lio/sentry/cache/tape/h;->a:J
 
-    .line 140
-    .line 141
-    add-long v8, v8, v17
+    .line 137
+    .line 138
+    add-long v8, v8, p0
 
-    .line 142
-    .line 143
+    .line 139
+    .line 140
     iget v4, v4, Lio/sentry/cache/tape/h;->b:I
 
-    .line 144
-    .line 145
+    .line 141
+    .line 142
     int-to-long v4, v4
 
-    .line 146
+    .line 143
     add-long/2addr v8, v4
 
+    .line 144
+    invoke-virtual {v3, v8, v9}, Lio/sentry/cache/tape/j;->G0(J)J
+
+    .line 145
+    .line 146
     .line 147
-    invoke-virtual {v3, v8, v9}, Lio/sentry/cache/tape/j;->x0(J)J
+    move-result-wide v4
 
     .line 148
+    iget-object v8, v3, Lio/sentry/cache/tape/j;->d0:Lio/sentry/cache/tape/h;
+
     .line 149
     .line 150
-    move-result-wide v4
-
-    .line 151
-    iget-object v8, v3, Lio/sentry/cache/tape/j;->U:Lio/sentry/cache/tape/h;
-
-    .line 152
-    .line 153
     iget-wide v8, v8, Lio/sentry/cache/tape/h;->a:J
 
+    .line 151
+    .line 152
+    cmp-long v8, v4, v8
+
+    .line 153
     .line 154
+    const-wide/16 v12, 0x0
+
     .line 155
-    cmp-long v10, v4, v8
-
     .line 156
+    if-gtz v8, :cond_6
+
     .line 157
-    if-gtz v10, :cond_6
-
     .line 158
-    .line 159
-    iget-object v8, v3, Lio/sentry/cache/tape/j;->Q:Ljava/io/RandomAccessFile;
+    iget-object v8, v3, Lio/sentry/cache/tape/j;->X:Ljava/io/RandomAccessFile;
 
+    .line 159
     .line 160
-    .line 161
     invoke-virtual {v8}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
 
+    .line 161
     .line 162
     .line 163
-    .line 164
     move-result-object v8
 
-    .line 165
-    iget-wide v9, v3, Lio/sentry/cache/tape/j;->S:J
+    .line 164
+    iget-wide v9, v3, Lio/sentry/cache/tape/j;->Z:J
 
+    .line 165
     .line 166
-    .line 167
     invoke-virtual {v8, v9, v10}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
 
+    .line 167
     .line 168
     .line 169
+    sub-long v21, v4, v16
+
     .line 170
-    sub-long v22, v4, v15
-
     .line 171
+    const-wide/16 v19, 0x20
+
     .line 172
-    const-wide/16 v20, 0x20
-
     .line 173
+    move-object/from16 v23, v8
+
     .line 174
-    move-object/from16 v24, v8
-
     .line 175
+    move-object/from16 v18, v8
+
     .line 176
-    move-object/from16 v19, v8
-
     .line 177
-    .line 178
-    invoke-virtual/range {v19 .. v24}, Ljava/nio/channels/FileChannel;->transferTo(JJLjava/nio/channels/WritableByteChannel;)J
+    invoke-virtual/range {v18 .. v23}, Ljava/nio/channels/FileChannel;->transferTo(JJLjava/nio/channels/WritableByteChannel;)J
 
+    .line 178
     .line 179
     .line 180
-    .line 181
     move-result-wide v4
 
+    .line 181
+    cmp-long v4, v4, v21
+
     .line 182
-    cmp-long v8, v4, v22
-
     .line 183
-    .line 184
-    if-nez v8, :cond_5
+    if-nez v4, :cond_5
 
+    .line 184
     .line 185
+    goto :goto_2
+
     .line 186
-    goto :goto_3
+    :cond_5
+    const-string v0, "Copied insufficient number of bytes!"
 
     .line 187
-    :cond_5
-    const-string v1, "Copied insufficient number of bytes!"
-
     .line 188
-    .line 189
-    invoke-static {v1}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {v0}, Li60;->e(Ljava/lang/Object;)V
 
+    .line 189
     .line 190
     .line 191
-    .line 192
     return-void
 
-    .line 193
+    .line 192
     :cond_6
-    const-wide/16 v22, 0x0
+    move-wide/from16 v21, v12
 
+    .line 193
     .line 194
-    .line 195
-    :goto_3
-    iget-object v4, v3, Lio/sentry/cache/tape/j;->V:Lio/sentry/cache/tape/h;
+    :goto_2
+    iget-object v4, v3, Lio/sentry/cache/tape/j;->e0:Lio/sentry/cache/tape/h;
 
+    .line 195
     .line 196
-    .line 197
     iget-wide v9, v4, Lio/sentry/cache/tape/h;->a:J
 
+    .line 197
     .line 198
-    .line 199
-    iget-object v4, v3, Lio/sentry/cache/tape/j;->U:Lio/sentry/cache/tape/h;
+    iget-object v4, v3, Lio/sentry/cache/tape/j;->d0:Lio/sentry/cache/tape/h;
 
+    .line 199
     .line 200
-    .line 201
     iget-wide v4, v4, Lio/sentry/cache/tape/h;->a:J
 
+    .line 201
     .line 202
-    .line 203
     cmp-long v8, v9, v4
 
+    .line 203
     .line 204
-    .line 205
     if-gez v8, :cond_7
 
+    .line 205
     .line 206
-    .line 207
-    const-wide/16 v19, 0x0
+    iget-wide v14, v3, Lio/sentry/cache/tape/j;->Z:J
 
+    .line 207
     .line 208
+    add-long/2addr v14, v9
+
     .line 209
-    iget-wide v12, v3, Lio/sentry/cache/tape/j;->S:J
+    sub-long v9, v14, v16
 
     .line 210
     .line 211
-    add-long/2addr v12, v9
+    move-wide/from16 v24, v6
 
     .line 212
-    sub-long v9, v12, v15
-
     .line 213
+    move-wide v7, v4
+
     .line 214
-    move-wide/from16 v25, v6
+    move-wide/from16 v4, v24
 
     .line 215
     .line 216
-    move-wide v7, v4
+    iget v6, v3, Lio/sentry/cache/tape/j;->c0:I
 
     .line 217
-    move-wide/from16 v4, v25
-
     .line 218
-    .line 219
-    iget v6, v3, Lio/sentry/cache/tape/j;->T:I
+    invoke-virtual/range {v3 .. v10}, Lio/sentry/cache/tape/j;->I0(JIJJ)V
 
+    .line 219
     .line 220
     .line 221
-    invoke-virtual/range {v3 .. v10}, Lio/sentry/cache/tape/j;->F0(JIJJ)V
+    new-instance v6, Lio/sentry/cache/tape/h;
 
     .line 222
     .line 223
+    iget-object v7, v3, Lio/sentry/cache/tape/j;->e0:Lio/sentry/cache/tape/h;
+
     .line 224
-    new-instance v6, Lio/sentry/cache/tape/h;
-
     .line 225
-    .line 226
-    iget-object v7, v3, Lio/sentry/cache/tape/j;->V:Lio/sentry/cache/tape/h;
-
-    .line 227
-    .line 228
     iget v7, v7, Lio/sentry/cache/tape/h;->b:I
 
+    .line 226
+    .line 227
+    invoke-direct {v6, v9, v10, v7}, Lio/sentry/cache/tape/h;-><init>(JI)V
+
+    .line 228
     .line 229
     .line 230
-    invoke-direct {v6, v9, v10, v7}, Lio/sentry/cache/tape/h;-><init>(JI)V
+    iput-object v6, v3, Lio/sentry/cache/tape/j;->e0:Lio/sentry/cache/tape/h;
 
     .line 231
     .line 232
-    .line 233
-    iput-object v6, v3, Lio/sentry/cache/tape/j;->V:Lio/sentry/cache/tape/h;
-
-    .line 234
-    .line 235
-    :goto_4
+    :goto_3
     move-wide v6, v4
 
+    .line 233
+    goto :goto_4
+
+    .line 234
+    :cond_7
+    move-wide/from16 v24, v6
+
+    .line 235
     .line 236
-    goto :goto_5
+    move-wide v7, v4
 
     .line 237
-    :cond_7
-    move-wide/from16 v19, v6
+    move-wide/from16 v4, v24
 
     .line 238
     .line 239
-    move-wide v7, v4
+    iget v6, v3, Lio/sentry/cache/tape/j;->c0:I
 
     .line 240
-    move-wide/from16 v4, v19
-
     .line 241
-    .line 242
-    const-wide/16 v19, 0x0
+    invoke-virtual/range {v3 .. v10}, Lio/sentry/cache/tape/j;->I0(JIJJ)V
 
+    .line 242
     .line 243
     .line 244
-    iget v6, v3, Lio/sentry/cache/tape/j;->T:I
+    goto :goto_3
 
     .line 245
-    .line 246
-    invoke-virtual/range {v3 .. v10}, Lio/sentry/cache/tape/j;->F0(JIJJ)V
+    :goto_4
+    iput-wide v6, v3, Lio/sentry/cache/tape/j;->Z:J
 
+    .line 246
     .line 247
+    move-wide/from16 v6, v16
+
     .line 248
     .line 249
-    goto :goto_4
+    move-wide/from16 v4, v21
 
     .line 250
-    :goto_5
-    iput-wide v6, v3, Lio/sentry/cache/tape/j;->S:J
-
     .line 251
-    .line 252
-    move-wide v6, v15
+    :goto_5
+    cmp-long v8, v4, v12
 
+    .line 252
     .line 253
-    move-wide/from16 v4, v22
+    if-lez v8, :cond_8
 
     .line 254
     .line 255
-    :goto_6
-    cmp-long v8, v4, v19
+    const-wide/16 v8, 0x1000
 
     .line 256
     .line 257
-    if-lez v8, :cond_8
+    invoke-static {v4, v5, v8, v9}, Ljava/lang/Math;->min(JJ)J
 
     .line 258
     .line 259
-    const-wide/16 v8, 0x1000
-
     .line 260
-    .line 261
-    invoke-static {v4, v5, v8, v9}, Ljava/lang/Math;->min(JJ)J
-
-    .line 262
-    .line 263
-    .line 264
     move-result-wide v8
 
+    .line 261
+    long-to-int v8, v8
+
+    .line 262
+    sget-object v9, Lio/sentry/cache/tape/j;->k0:[B
+
+    .line 263
+    .line 264
+    invoke-virtual {v3, v6, v7, v9, v8}, Lio/sentry/cache/tape/j;->C0(J[BI)V
+
     .line 265
-    long-to-int v9, v8
-
     .line 266
-    sget-object v8, Lio/sentry/cache/tape/j;->a0:[B
-
     .line 267
+    int-to-long v8, v8
+
     .line 268
-    invoke-virtual {v3, v6, v7, v8, v9}, Lio/sentry/cache/tape/j;->v0(J[BI)V
-
-    .line 269
-    .line 270
-    .line 271
-    int-to-long v8, v9
-
-    .line 272
     sub-long/2addr v4, v8
 
-    .line 273
+    .line 269
     add-long/2addr v6, v8
 
-    .line 274
-    goto :goto_6
+    .line 270
+    goto :goto_5
 
-    .line 275
+    .line 271
     :cond_8
-    :goto_7
-    iget v4, v3, Lio/sentry/cache/tape/j;->T:I
+    :goto_6
+    iget v4, v3, Lio/sentry/cache/tape/j;->c0:I
 
-    .line 276
-    .line 277
+    .line 272
+    .line 273
     const/4 v5, 0x0
 
-    .line 278
+    .line 274
     if-nez v4, :cond_9
 
-    .line 279
-    .line 280
-    const/4 v12, 0x1
+    .line 275
+    .line 276
+    move v12, v11
 
-    .line 281
-    goto :goto_8
+    .line 277
+    goto :goto_7
 
-    .line 282
+    .line 278
     :cond_9
-    const/4 v12, 0x0
+    move v12, v5
 
-    .line 283
-    :goto_8
+    .line 279
+    :goto_7
     if-eqz v12, :cond_a
 
+    .line 280
+    .line 281
+    move-wide/from16 v9, v16
+
+    .line 282
+    .line 283
+    goto :goto_8
+
     .line 284
-    .line 285
-    :goto_9
-    move-wide v9, v15
-
-    .line 286
-    goto :goto_a
-
-    .line 287
     :cond_a
-    iget-object v4, v3, Lio/sentry/cache/tape/j;->V:Lio/sentry/cache/tape/h;
+    iget-object v4, v3, Lio/sentry/cache/tape/j;->e0:Lio/sentry/cache/tape/h;
 
-    .line 288
-    .line 289
+    .line 285
+    .line 286
     iget-wide v6, v4, Lio/sentry/cache/tape/h;->a:J
 
-    .line 290
-    .line 291
-    add-long v6, v6, v17
+    .line 287
+    .line 288
+    add-long v6, v6, p0
 
-    .line 292
-    .line 293
+    .line 289
+    .line 290
     iget v4, v4, Lio/sentry/cache/tape/h;->b:I
 
-    .line 294
-    .line 295
+    .line 291
+    .line 292
     int-to-long v8, v4
 
-    .line 296
+    .line 293
     add-long/2addr v6, v8
 
+    .line 294
+    invoke-virtual {v3, v6, v7}, Lio/sentry/cache/tape/j;->G0(J)J
+
+    .line 295
+    .line 296
     .line 297
-    invoke-virtual {v3, v6, v7}, Lio/sentry/cache/tape/j;->x0(J)J
+    move-result-wide v14
 
     .line 298
+    move-wide v9, v14
+
     .line 299
-    .line 300
-    move-result-wide v15
-
-    .line 301
-    goto :goto_9
-
-    .line 302
-    :goto_a
+    :goto_8
     new-instance v13, Lio/sentry/cache/tape/h;
 
+    .line 300
+    .line 301
+    invoke-direct {v13, v9, v10, v1}, Lio/sentry/cache/tape/h;-><init>(JI)V
+
+    .line 302
     .line 303
     .line 304
-    invoke-direct {v13, v9, v10, v1}, Lio/sentry/cache/tape/h;-><init>(JI)V
+    invoke-static {v5, v1, v0}, Lio/sentry/cache/tape/j;->S0(II[B)V
 
     .line 305
     .line 306
     .line 307
-    invoke-static {v5, v1, v11}, Lio/sentry/cache/tape/j;->I0(II[B)V
-
-    .line 308
-    .line 309
-    .line 310
     const/4 v4, 0x4
 
+    .line 308
+    invoke-virtual {v3, v9, v10, v0, v4}, Lio/sentry/cache/tape/j;->C0(J[BI)V
+
+    .line 309
+    .line 310
     .line 311
-    invoke-virtual {v3, v9, v10, v11, v4}, Lio/sentry/cache/tape/j;->v0(J[BI)V
+    add-long v4, v9, p0
 
     .line 312
     .line 313
-    .line 314
-    add-long v4, v9, v17
+    invoke-virtual {v3, v4, v5, v2, v1}, Lio/sentry/cache/tape/j;->C0(J[BI)V
 
+    .line 314
     .line 315
     .line 316
-    invoke-virtual {v3, v4, v5, v2, v1}, Lio/sentry/cache/tape/j;->v0(J[BI)V
+    if-eqz v12, :cond_b
 
     .line 317
     .line 318
-    .line 319
-    if-eqz v12, :cond_b
-
-    .line 320
-    .line 321
     move-wide v7, v9
 
+    .line 319
+    goto :goto_9
+
+    .line 320
+    :cond_b
+    iget-object v0, v3, Lio/sentry/cache/tape/j;->d0:Lio/sentry/cache/tape/h;
+
+    .line 321
     .line 322
-    goto :goto_b
+    iget-wide v0, v0, Lio/sentry/cache/tape/h;->a:J
 
     .line 323
-    :cond_b
-    iget-object v1, v3, Lio/sentry/cache/tape/j;->U:Lio/sentry/cache/tape/h;
-
     .line 324
+    move-wide v7, v0
+
     .line 325
-    iget-wide v1, v1, Lio/sentry/cache/tape/h;->a:J
+    :goto_9
+    iget-wide v4, v3, Lio/sentry/cache/tape/j;->Z:J
 
     .line 326
     .line 327
-    move-wide v7, v1
+    iget v0, v3, Lio/sentry/cache/tape/j;->c0:I
 
     .line 328
-    :goto_b
-    iget-wide v4, v3, Lio/sentry/cache/tape/j;->S:J
-
     .line 329
+    add-int/lit8 v6, v0, 0x1
+
     .line 330
-    iget v1, v3, Lio/sentry/cache/tape/j;->T:I
-
     .line 331
+    invoke-virtual/range {v3 .. v10}, Lio/sentry/cache/tape/j;->I0(JIJJ)V
+
     .line 332
-    const/4 v14, 0x1
-
     .line 333
-    add-int/lit8 v6, v1, 0x1
-
     .line 334
-    .line 335
-    invoke-virtual/range {v3 .. v10}, Lio/sentry/cache/tape/j;->F0(JIJJ)V
+    iput-object v13, v3, Lio/sentry/cache/tape/j;->e0:Lio/sentry/cache/tape/h;
 
+    .line 335
     .line 336
+    iget v0, v3, Lio/sentry/cache/tape/j;->c0:I
+
     .line 337
     .line 338
-    iput-object v13, v3, Lio/sentry/cache/tape/j;->V:Lio/sentry/cache/tape/h;
+    add-int/2addr v0, v11
 
     .line 339
+    iput v0, v3, Lio/sentry/cache/tape/j;->c0:I
+
     .line 340
-    iget v1, v3, Lio/sentry/cache/tape/j;->T:I
-
     .line 341
-    .line 342
-    add-int/2addr v1, v14
+    iget v0, v3, Lio/sentry/cache/tape/j;->g0:I
 
+    .line 342
     .line 343
-    iput v1, v3, Lio/sentry/cache/tape/j;->T:I
+    add-int/2addr v0, v11
 
     .line 344
+    iput v0, v3, Lio/sentry/cache/tape/j;->g0:I
+
     .line 345
-    iget v1, v3, Lio/sentry/cache/tape/j;->X:I
-
     .line 346
-    .line 347
-    add-int/2addr v1, v14
+    if-eqz v12, :cond_c
 
+    .line 347
     .line 348
-    iput v1, v3, Lio/sentry/cache/tape/j;->X:I
+    iput-object v13, v3, Lio/sentry/cache/tape/j;->d0:Lio/sentry/cache/tape/h;
 
     .line 349
     .line 350
-    if-eqz v12, :cond_c
-
-    .line 351
-    .line 352
-    iput-object v13, v3, Lio/sentry/cache/tape/j;->U:Lio/sentry/cache/tape/h;
-
-    .line 353
-    .line 354
     :cond_c
     return-void
 
-    .line 355
+    .line 351
     :cond_d
-    const-string v1, "closed"
+    const-string v0, "closed"
 
+    .line 352
+    .line 353
+    invoke-static {v0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 354
+    .line 355
     .line 356
+    return-void
+
     .line 357
-    invoke-static {v1}, Lfn;->s(Ljava/lang/String;)V
+    :cond_e
+    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
     .line 358
     .line 359
+    invoke-direct {v0}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+
     .line 360
-    return-void
-
     .line 361
-    :cond_e
-    new-instance v1, Ljava/lang/IndexOutOfBoundsException;
-
     .line 362
+    throw v0
+
     .line 363
-    invoke-direct {v1}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+    :cond_f
+    const-string v0, "data == null"
 
     .line 364
     .line 365
+    invoke-static {v0}, Lku0;->f(Ljava/lang/String;)V
+
     .line 366
-    throw v1
-
     .line 367
-    :cond_f
-    const-string v1, "data == null"
-
     .line 368
-    .line 369
-    invoke-static {v1}, Len0;->g(Ljava/lang/String;)V
+    return-void
+.end method
 
-    .line 370
-    .line 371
-    .line 372
+.method public final X(I)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/cache/tape/e;->X:Lio/sentry/cache/tape/j;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lio/sentry/cache/tape/j;->t0(I)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final Z()V
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/cache/tape/e;->X:Lio/sentry/cache/tape/j;
+
+    .line 2
+    .line 3
+    iget-boolean v0, p0, Lio/sentry/cache/tape/j;->i0:Z
+
+    .line 4
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    iget-object p0, p0, Lio/sentry/cache/tape/j;->X:Ljava/io/RandomAccessFile;
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    const/4 v0, 0x0
+
+    .line 14
+    invoke-virtual {p0, v0}, Ljava/nio/channels/FileChannel;->force(Z)V
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_0
+    return-void
+.end method
+
+.method public final clear()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/cache/tape/e;->X:Lio/sentry/cache/tape/j;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lio/sentry/cache/tape/j;->clear()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final close()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/cache/tape/e;->X:Lio/sentry/cache/tape/j;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lio/sentry/cache/tape/j;->close()V
+
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -913,7 +941,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/sentry/cache/tape/e;->Q:Lio/sentry/cache/tape/j;
+    iget-object v1, p0, Lio/sentry/cache/tape/e;->X:Lio/sentry/cache/tape/j;
 
     .line 4
     .line 5
@@ -940,18 +968,18 @@
 .end method
 
 .method public final size()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/cache/tape/e;->Q:Lio/sentry/cache/tape/j;
+    iget-object p0, p0, Lio/sentry/cache/tape/e;->X:Lio/sentry/cache/tape/j;
 
     .line 2
     .line 3
-    iget v0, v0, Lio/sentry/cache/tape/j;->T:I
+    iget p0, p0, Lio/sentry/cache/tape/j;->c0:I
 
     .line 4
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -971,20 +999,20 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Lio/sentry/cache/tape/e;->Q:Lio/sentry/cache/tape/j;
+    iget-object p0, p0, Lio/sentry/cache/tape/e;->X:Lio/sentry/cache/tape/j;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const/16 v1, 0x7d
+    const/16 p0, 0x7d
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
@@ -994,8 +1022,8 @@
     .line 19
     .line 20
     .line 21
-    move-result-object v0
+    move-result-object p0
 
     .line 22
-    return-object v0
+    return-object p0
 .end method

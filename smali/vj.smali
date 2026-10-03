@@ -1,125 +1,189 @@
-.class public final enum Lvj;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lvj;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final enum Q:Lvj;
+.field public static final a:Landroid/view/animation/LinearInterpolator;
 
-.field public static final enum R:Lvj;
+.field public static final b:Lw32;
 
-.field public static final synthetic S:[Lvj;
+.field public static final c:Lw32;
+
+.field public static final d:Lw32;
+
+.field public static final e:Landroid/view/animation/DecelerateInterpolator;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 2
 
     .line 1
-    new-instance v0, Lvj;
+    new-instance v0, Landroid/view/animation/LinearInterpolator;
 
     .line 2
     .line 3
-    const-string v1, "JAVA"
+    invoke-direct {v0}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v0, Lvj;->a:Landroid/view/animation/LinearInterpolator;
 
     .line 7
     .line 8
-    .line 9
-    sput-object v0, Lvj;->Q:Lvj;
+    new-instance v0, Lw32;
 
+    .line 9
     .line 10
+    const/4 v1, 0x1
+
     .line 11
-    new-instance v1, Lvj;
+    invoke-direct {v0, v1}, Lw32;-><init>(I)V
 
     .line 12
     .line 13
-    const-string v3, "KOTLIN"
-
     .line 14
-    .line 15
-    const/4 v4, 0x1
+    sput-object v0, Lvj;->b:Lw32;
 
+    .line 15
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v0, Lw32;
 
     .line 17
     .line 18
+    const/4 v1, 0x0
+
     .line 19
-    sput-object v1, Lvj;->R:Lvj;
+    invoke-direct {v0, v1}, Lw32;-><init>(I)V
 
     .line 20
     .line 21
-    const/4 v3, 0x2
-
     .line 22
-    new-array v3, v3, [Lvj;
+    sput-object v0, Lvj;->c:Lw32;
 
     .line 23
     .line 24
-    aput-object v0, v3, v2
+    new-instance v0, Lw32;
 
     .line 25
     .line 26
-    aput-object v1, v3, v4
+    sget-object v1, Lw32;->e:[F
 
     .line 27
     .line 28
-    sput-object v3, Lvj;->S:[Lvj;
+    invoke-direct {v0, v1}, Lw32;-><init>([F)V
 
     .line 29
     .line 30
+    .line 31
+    sput-object v0, Lvj;->d:Lw32;
+
+    .line 32
+    .line 33
+    new-instance v0, Landroid/view/animation/DecelerateInterpolator;
+
+    .line 34
+    .line 35
+    invoke-direct {v0}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
+
+    .line 36
+    .line 37
+    .line 38
+    sput-object v0, Lvj;->e:Landroid/view/animation/DecelerateInterpolator;
+
+    .line 39
+    .line 40
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lvj;
-    .locals 1
+.method public static a(FFF)F
+    .locals 0
 
     .line 1
-    const-class v0, Lvj;
+    invoke-static {p1, p0, p2, p0}, Lw31;->d(FFFF)F
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
     .line 4
+    move-result p0
+
     .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lvj;
-
-    .line 8
-    .line 9
-    return-object p0
+    return p0
 .end method
 
-.method public static values()[Lvj;
+.method public static b(FFFFF)F
     .locals 1
 
     .line 1
-    sget-object v0, Lvj;->S:[Lvj;
+    cmpg-float v0, p4, p2
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    if-gtz v0, :cond_0
 
     .line 4
     .line 5
+    return p0
+
     .line 6
-    move-result-object v0
+    :cond_0
+    cmpl-float v0, p4, p3
 
     .line 7
-    check-cast v0, [Lvj;
+    .line 8
+    if-ltz v0, :cond_1
+
+    .line 9
+    .line 10
+    return p1
+
+    .line 11
+    :cond_1
+    sub-float/2addr p4, p2
+
+    .line 12
+    sub-float/2addr p3, p2
+
+    .line 13
+    div-float/2addr p4, p3
+
+    .line 14
+    invoke-static {p0, p1, p4}, Lvj;->a(FFF)F
+
+    .line 15
+    .line 16
+    .line 17
+    move-result p0
+
+    .line 18
+    return p0
+.end method
+
+.method public static c(IFI)I
+    .locals 0
+
+    .line 1
+    sub-int/2addr p2, p0
+
+    .line 2
+    int-to-float p2, p2
+
+    .line 3
+    mul-float/2addr p1, p2
+
+    .line 4
+    invoke-static {p1}, Ljava/lang/Math;->round(F)I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result p1
 
     .line 8
+    add-int/2addr p1, p0
+
     .line 9
-    return-object v0
+    return p1
 .end method

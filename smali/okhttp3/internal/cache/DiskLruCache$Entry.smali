@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/cache/DiskLruCache$Entry;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -31,17 +31,17 @@
         "(Ljava/util/List;)Ljava/lang/Void;",
         "",
         "index",
-        "Lle6;",
+        "Ld27;",
         "newSource",
-        "(I)Lle6;",
-        "Lbh7;",
+        "(I)Ld27;",
+        "Lr98;",
         "setLengths$okhttp",
         "(Ljava/util/List;)V",
         "setLengths",
-        "Lr50;",
+        "Le80;",
         "writer",
         "writeLengths$okhttp",
-        "(Lr50;)V",
+        "(Le80;)V",
         "writeLengths",
         "Lokhttp3/internal/cache/DiskLruCache$Snapshot;",
         "Lokhttp3/internal/cache/DiskLruCache;",
@@ -365,7 +365,7 @@
 .end method
 
 .method private final invalidLengths(Ljava/util/List;)Ljava/lang/Void;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -383,29 +383,29 @@
     .end annotation
 
     .line 1
-    new-instance v0, Ljava/io/IOException;
+    new-instance p0, Ljava/io/IOException;
 
     .line 2
     .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 4
     .line 5
-    const-string v2, "unexpected journal line: "
+    const-string v1, "unexpected journal line: "
 
     .line 6
     .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 14
     .line 15
@@ -413,15 +413,15 @@
     move-result-object p1
 
     .line 17
-    invoke-direct {v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 18
     .line 19
     .line 20
-    throw v0
+    throw p0
 .end method
 
-.method private final newSource(I)Lle6;
+.method private final newSource(I)Ld27;
     .locals 2
 
     .line 1
@@ -453,7 +453,7 @@
 
     .line 14
     .line 15
-    invoke-interface {v0, p1}, Lokhttp3/internal/io/FileSystem;->source(Ljava/io/File;)Lle6;
+    invoke-interface {v0, p1}, Lokhttp3/internal/io/FileSystem;->source(Ljava/io/File;)Ld27;
 
     .line 16
     .line 17
@@ -501,7 +501,7 @@
 
     .line 37
     .line 38
-    invoke-direct {v0, p1, v1, p0}, Lokhttp3/internal/cache/DiskLruCache$Entry$newSource$1;-><init>(Lle6;Lokhttp3/internal/cache/DiskLruCache;Lokhttp3/internal/cache/DiskLruCache$Entry;)V
+    invoke-direct {v0, p1, v1, p0}, Lokhttp3/internal/cache/DiskLruCache$Entry$newSource$1;-><init>(Ld27;Lokhttp3/internal/cache/DiskLruCache;Lokhttp3/internal/cache/DiskLruCache$Entry;)V
 
     .line 39
     .line 40
@@ -512,7 +512,7 @@
 
 # virtual methods
 .method public final getCleanFiles$okhttp()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -523,26 +523,26 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->cleanFiles:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->cleanFiles:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getCurrentEditor$okhttp()Lokhttp3/internal/cache/DiskLruCache$Editor;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/cache/DiskLruCache$Editor;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/cache/DiskLruCache$Editor;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getDirtyFiles$okhttp()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -553,55 +553,55 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->dirtyFiles:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->dirtyFiles:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getKey$okhttp()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->key:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->key:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getLengths$okhttp()[J
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->lengths:[J
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->lengths:[J
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getLockingSourceCount$okhttp()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->lockingSourceCount:I
+    iget p0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->lockingSourceCount:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getReadable$okhttp()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->readable:Z
+    iget-boolean p0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->readable:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getSequenceNumber$okhttp()J
@@ -616,14 +616,14 @@
 .end method
 
 .method public final getZombie$okhttp()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->zombie:Z
+    iget-boolean p0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->zombie:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final setCurrentEditor$okhttp(Lokhttp3/internal/cache/DiskLruCache$Editor;)V
@@ -748,7 +748,7 @@
     .line 42
     .line 43
     .line 44
-    invoke-static {}, Len0;->k()V
+    invoke-static {}, Lku0;->k()V
 
     .line 45
     .line 46
@@ -762,7 +762,7 @@
     .line 49
     .line 50
     .line 51
-    invoke-static {}, Len0;->k()V
+    invoke-static {}, Lku0;->k()V
 
     .line 52
     .line 53
@@ -854,22 +854,22 @@
     .line 16
     .line 17
     .line 18
-    move-result-object v1
+    move-result-object p0
 
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v1
+    move-result-object p0
 
     .line 23
-    const-string v3, " MUST hold lock on "
+    const-string v1, " MUST hold lock on "
 
     .line 24
     .line 25
-    invoke-static {v1, v3, v0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, v1, v0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -977,7 +977,7 @@
 
     .line 73
     .line 74
-    invoke-direct {p0, v1}, Lokhttp3/internal/cache/DiskLruCache$Entry;->newSource(I)Lle6;
+    invoke-direct {p0, v1}, Lokhttp3/internal/cache/DiskLruCache$Entry;->newSource(I)Ld27;
 
     .line 75
     .line 76
@@ -1054,7 +1054,7 @@
     move-result-object v1
 
     .line 110
-    check-cast v1, Lle6;
+    check-cast v1, Ld27;
 
     .line 111
     .line 112
@@ -1083,8 +1083,8 @@
     return-object v2
 .end method
 
-.method public final writeLengths$okhttp(Lr50;)V
-    .locals 6
+.method public final writeLengths$okhttp(Le80;)V
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1097,43 +1097,43 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->lengths:[J
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Entry;->lengths:[J
 
     .line 5
     .line 6
-    array-length v1, v0
+    array-length v0, p0
 
     .line 7
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 8
     :goto_0
-    if-ge v2, v1, :cond_0
+    if-ge v1, v0, :cond_0
 
     .line 9
     .line 10
-    aget-wide v3, v0, v2
+    aget-wide v2, p0, v1
 
     .line 11
     .line 12
-    const/16 v5, 0x20
+    const/16 v4, 0x20
 
     .line 13
     .line 14
-    invoke-interface {p1, v5}, Lr50;->writeByte(I)Lr50;
+    invoke-interface {p1, v4}, Le80;->writeByte(I)Le80;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v5
+    move-result-object v4
 
     .line 18
-    invoke-interface {v5, v3, v4}, Lr50;->E0(J)Lr50;
+    invoke-interface {v4, v2, v3}, Le80;->R0(J)Le80;
 
     .line 19
     .line 20
     .line 21
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     .line 22
     .line 23

@@ -1,92 +1,32 @@
 .class public abstract Ly92;
-.super Lw1;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Ljava/io/Serializable;
+
+# static fields
+.field public static final a:F
 
 
 # direct methods
-.method public static g(Lw1;Lw1;ILeu7;Ljava/lang/Class;)Lx92;
-    .locals 6
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    sget-object v2, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
+    const/high16 v0, 0x3f000000    # 0.5f
 
     .line 2
     .line 3
-    new-instance v0, Lx92;
+    invoke-static {v0}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 4
     .line 5
-    new-instance v4, Lw92;
-
     .line 6
+    move-result v0
+
     .line 7
-    const/4 v1, 0x1
+    sput v0, Ly92;->a:F
 
     .line 8
-    invoke-direct {v4, p2, p3, v1}, Lw92;-><init>(ILeu7;Z)V
-
     .line 9
-    .line 10
-    .line 11
-    move-object v1, p0
-
-    .line 12
-    move-object v3, p1
-
-    .line 13
-    move-object v5, p4
-
-    .line 14
-    invoke-direct/range {v0 .. v5}, Lx92;-><init>(Lw1;Ljava/lang/Object;Lw1;Lw92;Ljava/lang/Class;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-object v0
-.end method
-
-.method public static h(Lw1;Ljava/lang/Object;Lw1;ILeu7;Ljava/lang/Class;)Lx92;
-    .locals 3
-
-    .line 1
-    move v0, p3
-
-    .line 2
-    move-object p3, p2
-
-    .line 3
-    move-object p2, p1
-
-    .line 4
-    move-object p1, p0
-
-    .line 5
-    new-instance p0, Lx92;
-
-    .line 6
-    .line 7
-    move-object v1, p4
-
-    .line 8
-    new-instance p4, Lw92;
-
-    .line 9
-    .line 10
-    const/4 v2, 0x0
-
-    .line 11
-    invoke-direct {p4, v0, v1, v2}, Lw92;-><init>(ILeu7;Z)V
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-direct/range {p0 .. p5}, Lx92;-><init>(Lw1;Ljava/lang/Object;Lw1;Lw92;Ljava/lang/Class;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-object p0
+    return-void
 .end method

@@ -1,13 +1,12 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class wx4 {
-    public static final void a(String str) {
-        throw new IllegalArgumentException(str);
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class wx4 extends tu8 {
+    public final Object h;
 
-    public static final void b(String str) {
-        throw new IllegalStateException(str);
+    public wx4(Object obj) {
+        super("com.google.android.gms.dynamic.IObjectWrapper");
+        this.h = obj;
     }
 }

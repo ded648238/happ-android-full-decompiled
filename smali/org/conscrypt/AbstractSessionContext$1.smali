@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/AbstractSessionContext$1;
 .super Ljava/util/LinkedHashMap;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -99,7 +99,7 @@
 
     .line 20
     .line 21
-    iget-object v0, p0, Lorg/conscrypt/AbstractSessionContext$1;->this$0:Lorg/conscrypt/AbstractSessionContext;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext$1;->this$0:Lorg/conscrypt/AbstractSessionContext;
 
     .line 22
     .line 23
@@ -115,20 +115,20 @@
 
     .line 28
     .line 29
-    invoke-virtual {v0, p1}, Lorg/conscrypt/AbstractSessionContext;->onBeforeRemoveSession(Lorg/conscrypt/NativeSslSession;)V
+    invoke-virtual {p0, p1}, Lorg/conscrypt/AbstractSessionContext;->onBeforeRemoveSession(Lorg/conscrypt/NativeSslSession;)V
 
     .line 30
     .line 31
     .line 32
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 33
-    return p1
+    return p0
 
     .line 34
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 35
-    return p1
+    return p0
 .end method

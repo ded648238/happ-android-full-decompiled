@@ -1,49 +1,116 @@
 .class public abstract Lna;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final a:Landroid/graphics/Canvas;
+.field public static final a:Ljava/lang/Class;
+
+.field public static final b:Z
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     .line 1
-    new-instance v0, Landroid/graphics/Canvas;
+    const-string v0, "libcore.io.Memory"
 
     .line 2
     .line 3
-    invoke-direct {v0}, Landroid/graphics/Canvas;-><init>()V
+    const/4 v1, 0x0
 
     .line 4
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
     .line 5
     .line 6
-    sput-object v0, Lna;->a:Landroid/graphics/Canvas;
-
     .line 7
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 8
+    goto :goto_0
+
+    .line 9
+    :catchall_0
+    move-object v0, v1
+
+    .line 10
+    :goto_0
+    sput-object v0, Lna;->a:Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    const-string v0, "org.robolectric.Robolectric"
+
+    .line 13
+    .line 14
+    :try_start_1
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    :catchall_1
+    if-eqz v1, :cond_0
+
+    .line 19
+    .line 20
+    const/4 v0, 0x1
+
+    .line 21
+    goto :goto_1
+
+    .line 22
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 23
+    :goto_1
+    sput-boolean v0, Lna;->b:Z
+
+    .line 24
+    .line 25
     return-void
 .end method
 
-.method public static final a(Lme0;)Landroid/graphics/Canvas;
-    .locals 0
+.method public static a()Z
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sget-object v0, Lna;->a:Ljava/lang/Class;
 
     .line 2
     .line 3
+    if-eqz v0, :cond_0
+
     .line 4
-    check-cast p0, Lma;
-
     .line 5
-    .line 6
-    iget-object p0, p0, Lma;->a:Landroid/graphics/Canvas;
+    sget-boolean v0, Lna;->b:Z
 
+    .line 6
     .line 7
+    if-nez v0, :cond_0
+
     .line 8
-    return-object p0
+    .line 9
+    const/4 v0, 0x1
+
+    .line 10
+    return v0
+
+    .line 11
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 12
+    return v0
 .end method

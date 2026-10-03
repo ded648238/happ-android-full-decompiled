@@ -1,6 +1,6 @@
 .class public Lcom/google/android/material/floatingactionbutton/FloatingActionButton$BaseBehavior;
 .super Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,7 +26,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -34,31 +34,31 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lva5;->FloatingActionButton_Behavior_Layout:[I
+    sget-object p0, Luu5;->FloatingActionButton_Behavior_Layout:[I
 
     .line 5
     .line 6
-    invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+    invoke-virtual {p1, p2, p0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    sget p2, Lva5;->FloatingActionButton_Behavior_Layout_behavior_autoHide:I
+    sget p1, Luu5;->FloatingActionButton_Behavior_Layout_behavior_autoHide:I
 
     .line 11
     .line 12
-    const/4 v0, 0x1
+    const/4 p2, 0x1
 
     .line 13
-    invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 17
     .line 18
@@ -72,35 +72,35 @@
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/ClassCastException;
+    new-instance p0, Ljava/lang/ClassCastException;
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/ClassCastException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    throw p0
 .end method
 
 .method public final g(Landroidx/coordinatorlayout/widget/b;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p1, Landroidx/coordinatorlayout/widget/b;->h:I
+    iget p0, p1, Landroidx/coordinatorlayout/widget/b;->h:I
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 4
     .line 5
-    const/16 v0, 0x50
+    const/16 p0, 0x50
 
     .line 6
     .line 7
-    iput v0, p1, Landroidx/coordinatorlayout/widget/b;->h:I
+    iput p0, p1, Landroidx/coordinatorlayout/widget/b;->h:I
 
     .line 8
     .line 9
@@ -112,30 +112,30 @@
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/ClassCastException;
+    new-instance p0, Ljava/lang/ClassCastException;
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/ClassCastException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    throw p0
 .end method
 
 .method public final k(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/ClassCastException;
+    new-instance p0, Ljava/lang/ClassCastException;
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/ClassCastException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    throw p0
 .end method

@@ -1,74 +1,176 @@
 .class public final Lpv1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# static fields
-.field public static final c:Ljava/util/LinkedHashSet;
-
-.field public static final d:Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Lj72;
-
-.field public final b:Lie;
+.field public final a:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/util/LinkedHashSet;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
-
     .line 4
+    iput p1, p0, Lpv1;->a:I
+
     .line 5
     .line 6
-    sput-object v0, Lpv1;->c:Ljava/util/LinkedHashSet;
-
-    .line 7
-    .line 8
-    new-instance v0, Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lpv1;->d:Ljava/lang/Object;
-
-    .line 14
-    .line 15
     return-void
 .end method
 
-.method public constructor <init>(Lie;)V
-    .locals 1
+.method public static a(I)Ljava/lang/String;
+    .locals 2
 
     .line 1
-    sget-object v0, Lva;->t0:Lva;
+    if-nez p0, :cond_0
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string p0, "EmojiSupportMatch.Default"
+
+    .line 4
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 7
+    if-ne p0, v0, :cond_1
+
+    .line 8
+    .line 9
+    const-string p0, "EmojiSupportMatch.None"
+
+    .line 10
+    .line 11
+    return-object p0
+
+    .line 12
+    :cond_1
+    const/4 v0, 0x2
+
+    .line 13
+    if-ne p0, v0, :cond_2
+
+    .line 14
+    .line 15
+    const-string p0, "EmojiSupportMatch.All"
+
+    .line 16
+    .line 17
+    return-object p0
+
+    .line 18
+    :cond_2
+    const-string v0, "Invalid(value="
+
+    .line 19
+    .line 20
+    const-string v1, ")"
+
+    .line 21
+    .line 22
+    invoke-static {v0, p0, v1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p0
+
+    .line 26
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Lpv1;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    check-cast p1, Lpv1;
+
+    .line 7
+    .line 8
+    iget p1, p1, Lpv1;->a:I
+
+    .line 9
+    .line 10
+    iget p0, p0, Lpv1;->a:I
+
+    .line 11
+    .line 12
+    if-eq p0, p1, :cond_1
+
+    .line 13
+    .line 14
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_1
+    const/4 p0, 0x1
+
+    .line 17
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lpv1;->a:I
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
 
     .line 4
     .line 5
     .line 6
-    iput-object v0, p0, Lpv1;->a:Lj72;
+    move-result p0
 
     .line 7
-    .line 8
-    iput-object p1, p0, Lpv1;->b:Lie;
+    return p0
+.end method
 
-    .line 9
-    .line 10
-    return-void
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lpv1;->a:I
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Lpv1;->a(I)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
 .end method

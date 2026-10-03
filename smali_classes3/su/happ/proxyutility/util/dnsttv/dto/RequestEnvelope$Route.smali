@@ -1,6 +1,6 @@
 .class public final enum Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -49,7 +49,7 @@
 
 
 # static fields
-.field private static final synthetic $ENTRIES:Lpp1;
+.field private static final synthetic $ENTRIES:Lmy1;
 
 .field private static final synthetic $VALUES:[Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
 
@@ -66,7 +66,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 5
 
     .line 1
     new-instance v0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
@@ -93,14 +93,14 @@
 
     .line 12
     .line 13
-    const-string v3, "RemotePush"
+    const-string v2, "RemotePush"
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
     .line 16
-    invoke-direct {v1, v3, v4, v4}, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;-><init>(Ljava/lang/String;IB)V
+    invoke-direct {v1, v2, v3, v3}, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;-><init>(Ljava/lang/String;IB)V
 
     .line 17
     .line 18
@@ -109,62 +109,51 @@
 
     .line 20
     .line 21
-    new-instance v3, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
+    new-instance v2, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
 
     .line 22
     .line 23
-    const-string v5, "Install"
+    const-string v3, "Install"
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    const/4 v4, 0x2
 
     .line 26
-    invoke-direct {v3, v5, v6, v6}, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;-><init>(Ljava/lang/String;IB)V
+    invoke-direct {v2, v3, v4, v4}, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;-><init>(Ljava/lang/String;IB)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;->Install:Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
+    sput-object v2, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;->Install:Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
 
     .line 30
     .line 31
-    const/4 v5, 0x3
+    filled-new-array {v0, v1, v2}, [Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
 
     .line 32
-    new-array v5, v5, [Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
-
     .line 33
     .line 34
-    aput-object v0, v5, v2
+    move-result-object v0
 
     .line 35
+    sput-object v0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;->$VALUES:[Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
+
     .line 36
-    aput-object v1, v5, v4
-
     .line 37
+    new-instance v1, Loy1;
+
     .line 38
-    aput-object v3, v5, v6
-
     .line 39
-    .line 40
-    sput-object v5, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;->$VALUES:[Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;
+    invoke-direct {v1, v0}, Loy1;-><init>([Ljava/lang/Enum;)V
 
+    .line 40
     .line 41
     .line 42
-    new-instance v0, Lrp1;
+    sput-object v1, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;->$ENTRIES:Lmy1;
 
     .line 43
     .line 44
-    invoke-direct {v0, v5}, Lrp1;-><init>([Ljava/lang/Enum;)V
-
-    .line 45
-    .line 46
-    .line 47
-    sput-object v0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;->$ENTRIES:Lpp1;
-
-    .line 48
-    .line 49
     return-void
 .end method
 
@@ -233,12 +222,12 @@
 
 # virtual methods
 .method public final a()B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-byte v0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;->raw:B
+    iget-byte p0, p0, Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Route;->raw:B
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

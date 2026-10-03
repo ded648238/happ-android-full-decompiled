@@ -1,6 +1,6 @@
 .class public final enum Lsu/happ/proxyutility/dto/enums/AlertType;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -14,7 +14,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0010\u0008\n\u0002\u0008\u0007\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001R\u0017\u0010\u0003\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008\u00a8\u0006\t"
+        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0010\u0008\n\u0002\u0008\u0007\u0008\u0087\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001R\u0017\u0010\u0003\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008\u00a8\u0006\t"
     }
     d2 = {
         "Lsu/happ/proxyutility/dto/enums/AlertType;",
@@ -39,7 +39,7 @@
 
 
 # static fields
-.field private static final synthetic $ENTRIES:Lpp1;
+.field private static final synthetic $ENTRIES:Lmy1;
 
 .field private static final synthetic $VALUES:[Lsu/happ/proxyutility/dto/enums/AlertType;
 
@@ -54,25 +54,25 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 5
 
     .line 1
     new-instance v0, Lsu/happ/proxyutility/dto/enums/AlertType;
 
     .line 2
     .line 3
-    sget v1, Lt95;->dialog_alert_info:I
+    const/4 v1, 0x0
 
     .line 4
+    sget v2, Ltt5;->dialog_alert_info:I
+
     .line 5
-    const-string v2, "INFO"
-
     .line 6
-    .line 7
-    const/4 v3, 0x0
+    const-string v3, "INFO"
 
+    .line 7
     .line 8
-    invoke-direct {v0, v2, v3, v1}, Lsu/happ/proxyutility/dto/enums/AlertType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v1, v2}, Lsu/happ/proxyutility/dto/enums/AlertType;-><init>(Ljava/lang/String;II)V
 
     .line 9
     .line 10
@@ -85,18 +85,18 @@
 
     .line 14
     .line 15
-    sget v2, Lt95;->dialog_alert_warning:I
+    const/4 v2, 0x1
 
     .line 16
+    sget v3, Ltt5;->dialog_alert_warning:I
+
     .line 17
+    .line 18
     const-string v4, "WARNING"
 
-    .line 18
     .line 19
-    const/4 v5, 0x1
-
     .line 20
-    invoke-direct {v1, v4, v5, v2}, Lsu/happ/proxyutility/dto/enums/AlertType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v4, v2, v3}, Lsu/happ/proxyutility/dto/enums/AlertType;-><init>(Ljava/lang/String;II)V
 
     .line 21
     .line 22
@@ -105,38 +105,31 @@
 
     .line 24
     .line 25
-    const/4 v2, 0x2
+    filled-new-array {v0, v1}, [Lsu/happ/proxyutility/dto/enums/AlertType;
 
     .line 26
-    new-array v2, v2, [Lsu/happ/proxyutility/dto/enums/AlertType;
-
     .line 27
     .line 28
-    aput-object v0, v2, v3
+    move-result-object v0
 
     .line 29
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/AlertType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/AlertType;
+
     .line 30
-    aput-object v1, v2, v5
-
     .line 31
+    new-instance v1, Loy1;
+
     .line 32
-    sput-object v2, Lsu/happ/proxyutility/dto/enums/AlertType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/AlertType;
-
     .line 33
-    .line 34
-    new-instance v0, Lrp1;
+    invoke-direct {v1, v0}, Loy1;-><init>([Ljava/lang/Enum;)V
 
+    .line 34
     .line 35
     .line 36
-    invoke-direct {v0, v2}, Lrp1;-><init>([Ljava/lang/Enum;)V
+    sput-object v1, Lsu/happ/proxyutility/dto/enums/AlertType;->$ENTRIES:Lmy1;
 
     .line 37
     .line 38
-    .line 39
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/AlertType;->$ENTRIES:Lpp1;
-
-    .line 40
-    .line 41
     return-void
 .end method
 
@@ -205,12 +198,12 @@
 
 # virtual methods
 .method public final a()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lsu/happ/proxyutility/dto/enums/AlertType;->layoutRes:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/enums/AlertType;->layoutRes:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

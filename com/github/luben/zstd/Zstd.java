@@ -1,28 +1,28 @@
 package com.github.luben.zstd;
 
 import com.github.luben.zstd.util.Native;
-import defpackage.ea0;
-import defpackage.fn;
-import defpackage.j26;
+import defpackage.c73;
+import defpackage.co6;
+import defpackage.i60;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class Zstd {
     public static final long MAX_DECOMPRESS_SIZE;
     private static final String maxDecompressSizeOverride = "ZstdMaxDecompressSize";
 
-    /* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+    /* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
     public static class FrameData {
         final long compressedSize;
         final long contentSize;
 
         public FrameData(byte[] bArr, int i) {
-            long jFindFrameCompressedSize = Zstd.findFrameCompressedSize(bArr, i);
-            this.compressedSize = jFindFrameCompressedSize;
-            long frameContentSize = Zstd.getFrameContentSize(bArr, i, (int) jFindFrameCompressedSize);
+            long findFrameCompressedSize = Zstd.findFrameCompressedSize(bArr, i);
+            this.compressedSize = findFrameCompressedSize;
+            long frameContentSize = Zstd.getFrameContentSize(bArr, i, (int) findFrameCompressedSize);
             this.contentSize = frameContentSize;
             if (Zstd.isError(frameContentSize)) {
                 if (frameContentSize != -1) {
@@ -33,7 +33,7 @@ public class Zstd {
         }
     }
 
-    /* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+    /* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
     public enum ParamSwitch {
         AUTO(0),
         ENABLE(1),
@@ -73,19 +73,23 @@ public class Zstd {
             list.add(frameData);
             long j2 = frameData.compressedSize;
             if (j2 > bArr.length - i) {
-                j26.j("Invalid compressed size");
+                co6.i("Invalid compressed size");
                 return 0;
             }
             long j3 = frameData.contentSize;
+            if (j3 < 0) {
+                co6.i("Frame content size is invalid");
+                return 0;
+            }
             long j4 = MAX_DECOMPRESS_SIZE;
             if (j3 > j4) {
-                j26.j("Frame content size is too large");
+                co6.i("Frame content size is too large");
                 return 0;
             }
             i += (int) j2;
             j += j3;
             if (j > j4) {
-                j26.j("Content size too large");
+                co6.i("Content size too large");
                 return 0;
             }
         }
@@ -187,21 +191,21 @@ public class Zstd {
         int i = 0;
         int i2 = 0;
         int i3 = 0;
-        while (i3 < arrayList.size()) {
-            FrameData frameData = (FrameData) arrayList.get(i3);
+        while (i < arrayList.size()) {
+            FrameData frameData = (FrameData) arrayList.get(i);
             byte[] bArr3 = bArr;
-            long jDecompressByteArray = decompressByteArray(bArr2, i, (int) frameData.contentSize, bArr3, i2, (int) frameData.compressedSize);
-            if (isError(jDecompressByteArray)) {
-                throw new ZstdException(jDecompressByteArray, String.format("error %s while decompressing %d frame", getErrorName(jDecompressByteArray), Integer.valueOf(i3)));
+            long decompressByteArray = decompressByteArray(bArr2, i2, (int) frameData.contentSize, bArr3, i3, (int) frameData.compressedSize);
+            if (isError(decompressByteArray)) {
+                throw new ZstdException(decompressByteArray, String.format("error %s while decompressing %d frame", getErrorName(decompressByteArray), Integer.valueOf(i)));
             }
             long j = frameData.contentSize;
-            if (jDecompressByteArray != j) {
-                fn.s("decompressed size mismatch");
+            if (decompressByteArray != j) {
+                i60.g("decompressed size mismatch");
                 return null;
             }
-            i2 += (int) frameData.compressedSize;
-            i += (int) j;
-            i3++;
+            i3 += (int) frameData.compressedSize;
+            i2 += (int) j;
+            i++;
             bArr = bArr3;
         }
         return bArr2;
@@ -256,18 +260,22 @@ public class Zstd {
     }
 
     public static byte[] decompressFrame(byte[] bArr, int i) {
-        int iFindFrameCompressedSize = (int) findFrameCompressedSize(bArr, i);
-        long frameContentSize = getFrameContentSize(bArr, i, iFindFrameCompressedSize);
+        int findFrameCompressedSize = (int) findFrameCompressedSize(bArr, i);
+        long frameContentSize = getFrameContentSize(bArr, i, findFrameCompressedSize);
         if (isError(frameContentSize)) {
             if (frameContentSize == -1) {
                 throw new ZstdException(frameContentSize, "Content size is unknown");
             }
             throw new ZstdException(frameContentSize);
         }
-        if (frameContentSize <= MAX_DECOMPRESS_SIZE) {
-            return decompressFrame(bArr, i, iFindFrameCompressedSize, (int) frameContentSize);
+        if (frameContentSize < 0) {
+            co6.i("Frame content size is invalid");
+            return null;
         }
-        j26.j("Frame content size is too large");
+        if (frameContentSize <= MAX_DECOMPRESS_SIZE) {
+            return decompressFrame(bArr, i, findFrameCompressedSize, (int) frameContentSize);
+        }
+        co6.i("Frame content size is too large");
         return null;
     }
 
@@ -293,14 +301,13 @@ public class Zstd {
 
     @Deprecated
     public static long decompressedSize(byte[] bArr, int i, int i2, boolean z) {
-        if (i >= bArr.length) {
+        if (i < 0 || i >= bArr.length) {
             throw new ArrayIndexOutOfBoundsException(i);
         }
-        int i3 = i + i2;
-        if (i3 <= bArr.length) {
-            return decompressedSize0(bArr, i, i2, z);
+        if (i2 < 0 || i2 > bArr.length - i) {
+            throw new ArrayIndexOutOfBoundsException(i + i2);
         }
-        throw new ArrayIndexOutOfBoundsException(i3);
+        return decompressedSize0(bArr, i, i2, z);
     }
 
     private static native long decompressedSize0(byte[] bArr, int i, int i2, boolean z);
@@ -362,44 +369,40 @@ public class Zstd {
         if (i2 < 0 || i2 > bArr.length - i) {
             throw new ArrayIndexOutOfBoundsException(i + i2);
         }
-        long jFindFrameCompressedSize0 = findFrameCompressedSize0(bArr, i, i2);
-        if (isError(jFindFrameCompressedSize0)) {
-            throw new ZstdException(jFindFrameCompressedSize0);
+        long findFrameCompressedSize0 = findFrameCompressedSize0(bArr, i, i2);
+        if (isError(findFrameCompressedSize0)) {
+            throw new ZstdException(findFrameCompressedSize0);
         }
-        return jFindFrameCompressedSize0;
+        return findFrameCompressedSize0;
     }
 
     private static native long findFrameCompressedSize0(byte[] bArr, int i, int i2);
 
-    public static native void generateSequences(long j, long j2, long j3, long j4, long j5);
-
     public static ByteBuffer getArrayBackedBuffer(BufferPool bufferPool, int i) throws ZstdIOException {
         ByteBuffer byteBuffer = bufferPool.get(i);
         if (byteBuffer == null) {
-            throw new ZstdIOException(errMemoryAllocation(), ea0.p("Cannot get ByteBuffer of size ", i, " from the BufferPool"));
+            throw new ZstdIOException(errMemoryAllocation(), c73.h("Cannot get ByteBuffer of size ", i, " from the BufferPool"));
         }
         if (byteBuffer.hasArray() && byteBuffer.arrayOffset() == 0) {
             return byteBuffer;
         }
         bufferPool.release(byteBuffer);
-        fn.r("provided ByteBuffer lacks array or has non-zero arrayOffset");
+        i60.p("provided ByteBuffer lacks array or has non-zero arrayOffset");
         return null;
     }
-
-    public static native long getBuiltinSequenceProducer();
 
     public static native long getDictIdFromDict(byte[] bArr);
 
     public static long getDictIdFromDictDirect(ByteBuffer byteBuffer) {
-        int iLimit = byteBuffer.limit() - byteBuffer.position();
+        int limit = byteBuffer.limit() - byteBuffer.position();
         if (!byteBuffer.isDirect()) {
-            fn.r("dict must be a direct buffer");
+            i60.p("dict must be a direct buffer");
             return 0L;
         }
-        if (iLimit >= 0) {
-            return getDictIdFromDictDirect(byteBuffer, byteBuffer.position(), iLimit);
+        if (limit >= 0) {
+            return getDictIdFromDictDirect(byteBuffer, byteBuffer.position(), limit);
         }
-        fn.r("dict cannot be empty.");
+        i60.p("dict cannot be empty.");
         return 0L;
     }
 
@@ -420,19 +423,16 @@ public class Zstd {
     public static native String getErrorName(long j);
 
     public static long getFrameContentSize(byte[] bArr, int i, int i2, boolean z) {
-        if (i >= bArr.length) {
+        if (i < 0 || i >= bArr.length) {
             throw new ArrayIndexOutOfBoundsException(i);
         }
-        int i3 = i + i2;
-        if (i3 <= bArr.length) {
-            return getFrameContentSize0(bArr, i, i2, z);
+        if (i2 < 0 || i2 > bArr.length - i) {
+            throw new ArrayIndexOutOfBoundsException(i + i2);
         }
-        throw new ArrayIndexOutOfBoundsException(i3);
+        return getFrameContentSize0(bArr, i, i2, z);
     }
 
     private static native long getFrameContentSize0(byte[] bArr, int i, int i2, boolean z);
-
-    public static native long getStubSequenceProducer();
 
     public static native int hashLogMax();
 
@@ -507,6 +507,11 @@ public class Zstd {
     public static native int setValidateSequences(long j, int i);
 
     public static long trainFromBuffer(byte[][] bArr, byte[] bArr2, boolean z, int i) {
+        java.util.Objects.requireNonNull(bArr, "samples");
+        java.util.Objects.requireNonNull(bArr2, "dictBuffer");
+        for (byte[] bArr3 : bArr) {
+            java.util.Objects.requireNonNull(bArr3, "sample");
+        }
         if (bArr.length > 10) {
             return trainFromBuffer0(bArr, bArr2, z, i);
         }
@@ -516,6 +521,9 @@ public class Zstd {
     private static native long trainFromBuffer0(byte[][] bArr, byte[] bArr2, boolean z, int i);
 
     public static long trainFromBufferDirect(ByteBuffer byteBuffer, int[] iArr, ByteBuffer byteBuffer2, boolean z, int i) {
+        java.util.Objects.requireNonNull(byteBuffer, "samples");
+        java.util.Objects.requireNonNull(iArr, "sampleSizes");
+        java.util.Objects.requireNonNull(byteBuffer2, "dictBuffer");
         if (iArr.length > 10) {
             return trainFromBufferDirect0(byteBuffer, iArr, byteBuffer2, z, i);
         }
@@ -528,20 +536,8 @@ public class Zstd {
 
     public static native int windowLogMin();
 
-    public static long trainFromBuffer(byte[][] bArr, byte[] bArr2, boolean z) {
-        return trainFromBuffer(bArr, bArr2, z, defaultCompressionLevel());
-    }
-
-    public static long trainFromBufferDirect(ByteBuffer byteBuffer, int[] iArr, ByteBuffer byteBuffer2, boolean z) {
-        return trainFromBufferDirect(byteBuffer, iArr, byteBuffer2, z, defaultCompressionLevel());
-    }
-
-    public static long trainFromBuffer(byte[][] bArr, byte[] bArr2) {
-        return trainFromBuffer(bArr, bArr2, false);
-    }
-
-    public static long trainFromBufferDirect(ByteBuffer byteBuffer, int[] iArr, ByteBuffer byteBuffer2) {
-        return trainFromBufferDirect(byteBuffer, iArr, byteBuffer2, false);
+    public static long compress(byte[] bArr, byte[] bArr2, int i) {
+        return compress(bArr, bArr2, i, false);
     }
 
     @Deprecated
@@ -553,6 +549,17 @@ public class Zstd {
         return getFrameContentSize(bArr, i, i2, false);
     }
 
+    public static long compress(byte[] bArr, byte[] bArr2, int i, boolean z) {
+        ZstdCompressCtx zstdCompressCtx = new ZstdCompressCtx();
+        try {
+            zstdCompressCtx.setLevel(i);
+            zstdCompressCtx.setChecksum(z);
+            return zstdCompressCtx.compress(bArr, bArr2);
+        } finally {
+            zstdCompressCtx.close();
+        }
+    }
+
     @Deprecated
     public static long decompressedSize(byte[] bArr, int i) {
         return decompressedSize(bArr, i, bArr.length - i);
@@ -560,6 +567,11 @@ public class Zstd {
 
     public static long getFrameContentSize(byte[] bArr, int i) {
         return getFrameContentSize(bArr, i, bArr.length - i);
+    }
+
+    @Deprecated
+    public static long decompressUsingDict(byte[] bArr, byte[] bArr2, byte[] bArr3) {
+        return decompressUsingDict(bArr, 0, bArr2, 0, bArr2.length, bArr3);
     }
 
     @Deprecated
@@ -578,26 +590,6 @@ public class Zstd {
 
     public static long getFrameContentSize(ByteBuffer byteBuffer) {
         return getDirectByteBufferFrameContentSize(byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position());
-    }
-
-    public static long compress(byte[] bArr, byte[] bArr2, int i) {
-        return compress(bArr, bArr2, i, false);
-    }
-
-    public static long compress(byte[] bArr, byte[] bArr2, int i, boolean z) {
-        ZstdCompressCtx zstdCompressCtx = new ZstdCompressCtx();
-        try {
-            zstdCompressCtx.setLevel(i);
-            zstdCompressCtx.setChecksum(z);
-            return zstdCompressCtx.compress(bArr, bArr2);
-        } finally {
-            zstdCompressCtx.close();
-        }
-    }
-
-    @Deprecated
-    public static long decompressUsingDict(byte[] bArr, byte[] bArr2, byte[] bArr3) {
-        return decompressUsingDict(bArr, 0, bArr2, 0, bArr2.length, bArr3);
     }
 
     public static long compressByteArray(byte[] bArr, int i, int i2, byte[] bArr2, int i3, int i4, int i5) {
@@ -631,6 +623,14 @@ public class Zstd {
         } finally {
             zstdCompressCtx.close();
         }
+    }
+
+    public static long trainFromBufferDirect(ByteBuffer byteBuffer, int[] iArr, ByteBuffer byteBuffer2, boolean z) {
+        return trainFromBufferDirect(byteBuffer, iArr, byteBuffer2, z, defaultCompressionLevel());
+    }
+
+    public static long trainFromBufferDirect(ByteBuffer byteBuffer, int[] iArr, ByteBuffer byteBuffer2) {
+        return trainFromBufferDirect(byteBuffer, iArr, byteBuffer2, false);
     }
 
     public static long compressFastDict(byte[] bArr, int i, byte[] bArr2, int i2, int i3, ZstdDictCompress zstdDictCompress) {
@@ -687,6 +687,14 @@ public class Zstd {
         return findDirectByteBufferFrameCompressedSize(byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position());
     }
 
+    public static long trainFromBuffer(byte[][] bArr, byte[] bArr2, boolean z) {
+        return trainFromBuffer(bArr, bArr2, z, defaultCompressionLevel());
+    }
+
+    public static long trainFromBuffer(byte[][] bArr, byte[] bArr2) {
+        return trainFromBuffer(bArr, bArr2, false);
+    }
+
     public static int compress(ByteBuffer byteBuffer, ByteBuffer byteBuffer2, int i) {
         return compress(byteBuffer, byteBuffer2, i, false);
     }
@@ -701,15 +709,6 @@ public class Zstd {
         }
     }
 
-    public static byte[] decompressFrame(byte[] bArr, int i, int i2, int i3) {
-        ZstdDecompressCtx zstdDecompressCtx = new ZstdDecompressCtx();
-        try {
-            return zstdDecompressCtx.decompress(bArr, i, i2, i3);
-        } finally {
-            zstdDecompressCtx.close();
-        }
-    }
-
     public static byte[] compress(byte[] bArr, ZstdDictCompress zstdDictCompress) {
         ZstdCompressCtx zstdCompressCtx = new ZstdCompressCtx();
         try {
@@ -719,10 +718,6 @@ public class Zstd {
         } finally {
             zstdCompressCtx.close();
         }
-    }
-
-    public static byte[] decompressFrame(byte[] bArr) {
-        return decompressFrame(bArr, 0);
     }
 
     public static long compress(byte[] bArr, byte[] bArr2, byte[] bArr3, int i) {
@@ -740,6 +735,15 @@ public class Zstd {
         }
     }
 
+    public static byte[] decompressFrame(byte[] bArr, int i, int i2, int i3) {
+        ZstdDecompressCtx zstdDecompressCtx = new ZstdDecompressCtx();
+        try {
+            return zstdDecompressCtx.decompress(bArr, i, i2, i3);
+        } finally {
+            zstdDecompressCtx.close();
+        }
+    }
+
     public static ByteBuffer compress(ByteBuffer byteBuffer, byte[] bArr, int i) {
         ZstdCompressCtx zstdCompressCtx = new ZstdCompressCtx();
         try {
@@ -749,6 +753,10 @@ public class Zstd {
         } finally {
             zstdCompressCtx.close();
         }
+    }
+
+    public static byte[] decompressFrame(byte[] bArr) {
+        return decompressFrame(bArr, 0);
     }
 
     public static int compress(ByteBuffer byteBuffer, ByteBuffer byteBuffer2, ZstdDictCompress zstdDictCompress) {

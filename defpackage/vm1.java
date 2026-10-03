@@ -1,31 +1,35 @@
 package defpackage;
 
-import android.content.Context;
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.Map;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class vm1 implements rm1 {
-    public final Context a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class vm1 implements nj6 {
+    public final /* synthetic */ oj6 X;
+    public final wm1 Y;
 
-    public vm1(Context context, int i) {
-        switch (i) {
-            case 1:
-                this.a = context;
-                break;
-            default:
-                this.a = context.getApplicationContext();
-                break;
-        }
+    public vm1(oj6 oj6Var, wm1 wm1Var) {
+        this.X = oj6Var;
+        this.Y = wm1Var;
     }
 
-    @Override // defpackage.rm1
-    public void a(ji2 ji2Var) {
-        xr0 xr0Var = new xr0("EmojiCompatInitializer");
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(0, 1, 15L, TimeUnit.SECONDS, new LinkedBlockingDeque(), xr0Var);
-        threadPoolExecutor.allowCoreThreadTimeOut(true);
-        threadPoolExecutor.execute(new sf(this, ji2Var, threadPoolExecutor, 9));
+    @Override // defpackage.nj6
+    public final w53 a(String str, ji2 ji2Var) {
+        return this.X.a(str, ji2Var);
+    }
+
+    @Override // defpackage.nj6
+    public final boolean b(Object obj) {
+        return this.X.b(obj);
+    }
+
+    @Override // defpackage.nj6
+    public final Map c() {
+        return this.X.c();
+    }
+
+    @Override // defpackage.nj6
+    public final Object d(String str) {
+        return this.X.d(str);
     }
 }

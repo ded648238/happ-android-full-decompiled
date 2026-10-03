@@ -1,32 +1,30 @@
 .class public final enum Lu33;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final enum Q:Lu33;
+.field public static final enum X:Lu33;
 
-.field public static final enum R:Lu33;
+.field public static final enum Y:Lu33;
 
-.field public static final enum S:Lu33;
+.field public static final enum Z:Lu33;
 
-.field public static final enum T:Lu33;
+.field public static final enum c0:Lu33;
 
-.field public static final enum U:Lu33;
-
-.field public static final synthetic V:[Lu33;
+.field public static final synthetic d0:[Lu33;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 13
+    .locals 6
 
     .line 1
     new-instance v0, Lu33;
 
     .line 2
     .line 3
-    const-string v1, "PROPERTY"
+    const-string v1, "Untransformed"
 
     .line 4
     .line 5
@@ -38,7 +36,7 @@
     .line 7
     .line 8
     .line 9
-    sput-object v0, Lu33;->Q:Lu33;
+    sput-object v0, Lu33;->X:Lu33;
 
     .line 10
     .line 11
@@ -46,133 +44,74 @@
 
     .line 12
     .line 13
-    const-string v3, "WRAPPER_OBJECT"
+    const-string v2, "Insertion"
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v1, Lu33;->R:Lu33;
+    sput-object v1, Lu33;->Y:Lu33;
 
     .line 20
     .line 21
-    new-instance v3, Lu33;
+    new-instance v2, Lu33;
 
     .line 22
     .line 23
-    const-string v5, "WRAPPER_ARRAY"
+    const-string v3, "Replacement"
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    const/4 v4, 0x2
 
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Lu33;->S:Lu33;
+    sput-object v2, Lu33;->Z:Lu33;
 
     .line 30
     .line 31
-    new-instance v5, Lu33;
+    new-instance v3, Lu33;
 
     .line 32
     .line 33
-    const-string v7, "EXTERNAL_PROPERTY"
+    const-string v4, "Deletion"
 
     .line 34
     .line 35
-    const/4 v8, 0x3
+    const/4 v5, 0x3
 
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v4, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v5, Lu33;->T:Lu33;
+    sput-object v3, Lu33;->c0:Lu33;
 
     .line 40
     .line 41
-    new-instance v7, Lu33;
+    filled-new-array {v0, v1, v2, v3}, [Lu33;
 
     .line 42
     .line 43
-    const-string v9, "EXISTING_PROPERTY"
-
     .line 44
+    move-result-object v0
+
     .line 45
-    const/4 v10, 0x4
+    sput-object v0, Lu33;->d0:[Lu33;
 
     .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 47
-    .line 48
-    .line 49
-    sput-object v7, Lu33;->U:Lu33;
-
-    .line 50
-    .line 51
-    new-instance v9, Lu33;
-
-    .line 52
-    .line 53
-    const-string v11, "NOTHING"
-
-    .line 54
-    .line 55
-    const/4 v12, 0x5
-
-    .line 56
-    invoke-direct {v9, v11, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 57
-    .line 58
-    .line 59
-    const/4 v11, 0x6
-
-    .line 60
-    new-array v11, v11, [Lu33;
-
-    .line 61
-    .line 62
-    aput-object v0, v11, v2
-
-    .line 63
-    .line 64
-    aput-object v1, v11, v4
-
-    .line 65
-    .line 66
-    aput-object v3, v11, v6
-
-    .line 67
-    .line 68
-    aput-object v5, v11, v8
-
-    .line 69
-    .line 70
-    aput-object v7, v11, v10
-
-    .line 71
-    .line 72
-    aput-object v9, v11, v12
-
-    .line 73
-    .line 74
-    sput-object v11, Lu33;->V:[Lu33;
-
-    .line 75
-    .line 76
     return-void
 .end method
 
@@ -203,11 +142,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lu33;->V:[Lu33;
+    sget-object v0, Lu33;->d0:[Lu33;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, [Lu33;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5

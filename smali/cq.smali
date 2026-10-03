@@ -1,80 +1,140 @@
-.class public final Lcq;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# instance fields
-.field public T:Ljava/lang/String;
-
-.field public U:Ljava/lang/String;
-
-.field public V:Lsu/happ/proxyutility/dto/SubscriptionItem;
-
-.field public W:Lqn2;
-
-.field public synthetic X:Ljava/lang/Object;
-
-.field public final synthetic Y:Ldq;
-
-.field public Z:I
+.class public Lcq;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
-.method public constructor <init>(Ldq;Law0;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcq;->Y:Ldq;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
-
     .line 4
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public a(Landroid/text/StaticLayout$Builder;Landroid/widget/TextView;)V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lcq;->X:Ljava/lang/Object;
+    const-string p0, "getTextDirectionHeuristic"
 
     .line 2
     .line 3
-    iget p1, p0, Lcq;->Z:I
+    sget-object v0, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
 
     .line 4
     .line 5
-    const/high16 v0, -0x80000000
+    :try_start_0
+    invoke-static {p0}, Ldq;->d(Ljava/lang/String;)Ljava/lang/reflect/Method;
 
     .line 6
     .line 7
-    or-int/2addr p1, v0
-
     .line 8
-    iput p1, p0, Lcq;->Z:I
+    move-result-object p0
 
     .line 9
+    const/4 v1, 0x0
+
     .line 10
-    iget-object p1, p0, Lcq;->Y:Ldq;
+    invoke-virtual {p0, p2, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12
-    const/4 v0, 0x0
-
     .line 13
-    invoke-virtual {p1, v0, p0}, Ldq;->a(Ljava/lang/String;Law0;)Ljava/lang/Object;
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 14
+    goto :goto_0
+
     .line 15
+    :catchall_0
+    move-exception p0
+
     .line 16
-    move-result-object p1
+    throw p0
 
     .line 17
-    return-object p1
+    :catch_0
+    :goto_0
+    check-cast v0, Landroid/text/TextDirectionHeuristic;
+
+    .line 18
+    .line 19
+    invoke-virtual {p1, v0}, Landroid/text/StaticLayout$Builder;->setTextDirection(Landroid/text/TextDirectionHeuristic;)Landroid/text/StaticLayout$Builder;
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+.end method
+
+.method public b(Landroid/widget/TextView;)Z
+    .locals 2
+
+    .line 1
+    const-string p0, "getHorizontallyScrolling"
+
+    .line 2
+    .line 3
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
+    :try_start_0
+    invoke-static {p0}, Ldq;->d(Ljava/lang/String;)Ljava/lang/reflect/Method;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    invoke-virtual {p0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :catchall_0
+    move-exception p0
+
+    .line 16
+    throw p0
+
+    .line 17
+    :catch_0
+    :goto_0
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 18
+    .line 19
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p0
+
+    .line 23
+    return p0
 .end method

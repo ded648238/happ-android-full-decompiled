@@ -1,6 +1,6 @@
 .class public final Lio/sentry/cache/tape/h;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -120,21 +120,21 @@
     .line 28
     .line 29
     .line 30
-    iget v1, p0, Lio/sentry/cache/tape/h;->b:I
+    iget p0, p0, Lio/sentry/cache/tape/h;->b:I
 
     .line 31
     .line 32
-    const-string v2, "]"
+    const-string v1, "]"
 
     .line 33
     .line 34
-    invoke-static {v0, v1, v2}, Lkd0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0, v1}, Leh0;->p(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     .line 35
     .line 36
     .line 37
-    move-result-object v0
+    move-result-object p0
 
     .line 38
-    return-object v0
+    return-object p0
 .end method

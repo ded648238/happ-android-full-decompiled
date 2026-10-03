@@ -1,28 +1,35 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class h15 implements q94, bx0 {
-    public final /* synthetic */ q94 Q;
-    public final sw0 R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class h15 extends z82 {
+    public static final h15 d = new h15(0, 3, 1);
 
-    public h15(q94 q94Var, sw0 sw0Var) {
-        this.Q = q94Var;
-        this.R = sw0Var;
-    }
-
-    @Override // defpackage.bx0
-    public final sw0 getCoroutineContext() {
-        return this.R;
-    }
-
-    @Override // defpackage.gh6
-    public final Object getValue() {
-        return this.Q.getValue();
-    }
-
-    @Override // defpackage.q94
-    public final void setValue(Object obj) {
-        this.Q.setValue(obj);
+    @Override // defpackage.z82
+    public final void d(up0 up0Var, wr wrVar, zz6 zz6Var, u61 u61Var, b25 b25Var) {
+        va3 va3Var;
+        wz6 wz6Var = (wz6) up0Var.i(1);
+        mk2 mk2Var = (mk2) up0Var.i(0);
+        o82 o82Var = (o82) up0Var.i(2);
+        zz6 e = wz6Var.e();
+        if (b25Var != null) {
+            try {
+                va3Var = new va3(18, b25Var, zz6Var);
+            } catch (Throwable th) {
+                e.e(false);
+                throw th;
+            }
+        } else {
+            va3Var = null;
+        }
+        if (!o82Var.d0.m1()) {
+            by0.a("FixupList has pending fixup operations that were not realized. Were there mismatched insertNode() and endNodeInsert() calls?");
+        }
+        o82Var.c0.l1(wrVar, e, u61Var, va3Var);
+        e.e(true);
+        zz6Var.d();
+        mk2Var.getClass();
+        zz6Var.A(wz6Var, wz6Var.a(mk2Var));
+        zz6Var.k();
     }
 }

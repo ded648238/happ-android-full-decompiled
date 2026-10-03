@@ -1,15 +1,14 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class dv5 extends yu5 {
-    public cv5 o;
-    public cv5 p;
-    public cv5 q;
-    public cv5 r;
+import android.R;
 
-    @Override // defpackage.yv5
-    public final String o() {
-        return "line";
-    }
+/* loaded from: classes.dex */
+public abstract class dv5 {
+    public static int[] Fragment = {R.attr.name, R.attr.id, R.attr.tag};
+    public static int[] FragmentContainerView = {R.attr.name, R.attr.tag};
+    public static int FragmentContainerView_android_name = 0;
+    public static int FragmentContainerView_android_tag = 1;
+    public static int Fragment_android_id = 1;
+    public static int Fragment_android_name = 0;
+    public static int Fragment_android_tag = 2;
 }

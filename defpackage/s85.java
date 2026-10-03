@@ -1,94 +1,208 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class s85 {
-    public static int abc_ab_share_pack_mtrl_alpha = 2131232220;
-    public static int abc_action_bar_item_background_material = 2131232221;
-    public static int abc_btn_borderless_material = 2131232222;
-    public static int abc_btn_check_material = 2131232223;
-    public static int abc_btn_check_material_anim = 2131232224;
-    public static int abc_btn_check_to_on_mtrl_000 = 2131232225;
-    public static int abc_btn_check_to_on_mtrl_015 = 2131232226;
-    public static int abc_btn_colored_material = 2131232227;
-    public static int abc_btn_default_mtrl_shape = 2131232228;
-    public static int abc_btn_radio_material = 2131232229;
-    public static int abc_btn_radio_material_anim = 2131232230;
-    public static int abc_btn_radio_to_on_mtrl_000 = 2131232231;
-    public static int abc_btn_radio_to_on_mtrl_015 = 2131232232;
-    public static int abc_btn_switch_to_on_mtrl_00001 = 2131232233;
-    public static int abc_btn_switch_to_on_mtrl_00012 = 2131232234;
-    public static int abc_cab_background_internal_bg = 2131232235;
-    public static int abc_cab_background_top_material = 2131232236;
-    public static int abc_cab_background_top_mtrl_alpha = 2131232237;
-    public static int abc_control_background_material = 2131232238;
-    public static int abc_dialog_material_background = 2131232239;
-    public static int abc_edit_text_material = 2131232240;
-    public static int abc_ic_ab_back_material = 2131232241;
-    public static int abc_ic_arrow_drop_right_black_24dp = 2131232242;
-    public static int abc_ic_clear_material = 2131232243;
-    public static int abc_ic_commit_search_api_mtrl_alpha = 2131232244;
-    public static int abc_ic_go_search_api_material = 2131232245;
-    public static int abc_ic_menu_copy_mtrl_am_alpha = 2131232246;
-    public static int abc_ic_menu_cut_mtrl_alpha = 2131232247;
-    public static int abc_ic_menu_overflow_material = 2131232248;
-    public static int abc_ic_menu_paste_mtrl_am_alpha = 2131232249;
-    public static int abc_ic_menu_selectall_mtrl_alpha = 2131232250;
-    public static int abc_ic_menu_share_mtrl_alpha = 2131232251;
-    public static int abc_ic_search_api_material = 2131232252;
-    public static int abc_ic_voice_search_api_material = 2131232253;
-    public static int abc_item_background_holo_dark = 2131232254;
-    public static int abc_item_background_holo_light = 2131232255;
-    public static int abc_list_divider_material = 2131232256;
-    public static int abc_list_divider_mtrl_alpha = 2131232257;
-    public static int abc_list_focused_holo = 2131232258;
-    public static int abc_list_longpressed_holo = 2131232259;
-    public static int abc_list_pressed_holo_dark = 2131232260;
-    public static int abc_list_pressed_holo_light = 2131232261;
-    public static int abc_list_selector_background_transition_holo_dark = 2131232262;
-    public static int abc_list_selector_background_transition_holo_light = 2131232263;
-    public static int abc_list_selector_disabled_holo_dark = 2131232264;
-    public static int abc_list_selector_disabled_holo_light = 2131232265;
-    public static int abc_list_selector_holo_dark = 2131232266;
-    public static int abc_list_selector_holo_light = 2131232267;
-    public static int abc_menu_hardkey_panel_mtrl_mult = 2131232268;
-    public static int abc_popup_background_mtrl_mult = 2131232269;
-    public static int abc_ratingbar_indicator_material = 2131232270;
-    public static int abc_ratingbar_material = 2131232271;
-    public static int abc_ratingbar_small_material = 2131232272;
-    public static int abc_scrubber_control_off_mtrl_alpha = 2131232273;
-    public static int abc_scrubber_control_to_pressed_mtrl_000 = 2131232274;
-    public static int abc_scrubber_control_to_pressed_mtrl_005 = 2131232275;
-    public static int abc_scrubber_primary_mtrl_alpha = 2131232276;
-    public static int abc_scrubber_track_mtrl_alpha = 2131232277;
-    public static int abc_seekbar_thumb_material = 2131232278;
-    public static int abc_seekbar_tick_mark_material = 2131232279;
-    public static int abc_seekbar_track_material = 2131232280;
-    public static int abc_spinner_mtrl_am_alpha = 2131232281;
-    public static int abc_spinner_textfield_background_material = 2131232282;
-    public static int abc_star_black_48dp = 2131232283;
-    public static int abc_star_half_black_48dp = 2131232284;
-    public static int abc_switch_thumb_material = 2131232285;
-    public static int abc_switch_track_mtrl_alpha = 2131232286;
-    public static int abc_tab_indicator_material = 2131232287;
-    public static int abc_tab_indicator_mtrl_alpha = 2131232288;
-    public static int abc_text_cursor_material = 2131232289;
-    public static int abc_text_select_handle_left_mtrl = 2131232290;
-    public static int abc_text_select_handle_middle_mtrl = 2131232291;
-    public static int abc_text_select_handle_right_mtrl = 2131232292;
-    public static int abc_textfield_activated_mtrl_alpha = 2131232293;
-    public static int abc_textfield_default_mtrl_alpha = 2131232294;
-    public static int abc_textfield_search_activated_mtrl_alpha = 2131232295;
-    public static int abc_textfield_search_default_mtrl_alpha = 2131232296;
-    public static int abc_textfield_search_material = 2131232297;
-    public static int btn_checkbox_checked_mtrl = 2131232360;
-    public static int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131232361;
-    public static int btn_checkbox_unchecked_mtrl = 2131232362;
-    public static int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131232363;
-    public static int btn_radio_off_mtrl = 2131232364;
-    public static int btn_radio_off_to_on_mtrl_animation = 2131232365;
-    public static int btn_radio_on_mtrl = 2131232366;
-    public static int btn_radio_on_to_off_mtrl_animation = 2131232367;
-    public static int test_level_drawable = 2131232876;
-    public static int tooltip_frame_dark = 2131232877;
-    public static int tooltip_frame_light = 2131232878;
+import android.os.Trace;
+import java.util.concurrent.atomic.AtomicReference;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class s85 {
+    public final py0 a;
+    public final ky0 b;
+    public final rk2 c;
+    public final xi2 d;
+    public final boolean e;
+    public final a88 f;
+    public final Object g;
+    public final AtomicReference h = new AtomicReference(u85.Z);
+    public long i = wv7.c();
+    public nq4 j;
+    public final u61 k;
+    public final gx5 l;
+
+    public s85(py0 py0Var, ky0 ky0Var, rk2 rk2Var, pq4 pq4Var, xi2 xi2Var, boolean z, a88 a88Var, Object obj) {
+        this.a = py0Var;
+        this.b = ky0Var;
+        this.c = rk2Var;
+        this.d = xi2Var;
+        this.e = z;
+        this.f = a88Var;
+        this.g = obj;
+        nq4 nq4Var = vk6.a;
+        nq4Var.getClass();
+        this.j = nq4Var;
+        u61 u61Var = new u61();
+        u61Var.k(pq4Var, rk2Var.y());
+        this.k = u61Var;
+        this.l = new gx5(a88Var.Z);
+    }
+
+    public final void a() {
+        AtomicReference atomicReference = this.h;
+        try {
+            switch (((u85) atomicReference.get()).ordinal()) {
+                case 0:
+                    throw new IllegalStateException("The paused composition is invalid because of a previous exception");
+                case 1:
+                    throw new IllegalStateException("The paused composition has been cancelled");
+                case 2:
+                case 3:
+                case 4:
+                    throw new IllegalStateException("The paused composition has not completed yet");
+                case 5:
+                    b();
+                    u85 u85Var = u85.e0;
+                    u85 u85Var2 = u85.f0;
+                    while (!atomicReference.compareAndSet(u85Var, u85Var2)) {
+                        if (atomicReference.get() != u85Var) {
+                            zg5.b("Unexpected state change from: " + u85Var + " to: " + u85Var2 + ".");
+                            return;
+                        }
+                    }
+                    return;
+                case 6:
+                    throw new IllegalStateException("The paused composition has already been applied");
+                default:
+                    throw new qu4();
+            }
+        } catch (Exception e) {
+            atomicReference.set(u85.X);
+            throw e;
+        }
+    }
+
+    public final void b() {
+        Trace.beginSection("PausedComposition:applyChanges");
+        try {
+            synchronized (this.g) {
+                try {
+                    this.l.a(this.f, this.k);
+                    this.k.e();
+                    this.k.f();
+                } finally {
+                    this.k.d();
+                    this.a.p0 = null;
+                }
+            }
+        } finally {
+            Trace.endSection();
+        }
+    }
+
+    public final boolean c() {
+        return ((u85) this.h.get()).compareTo(u85.e0) >= 0;
+    }
+
+    public final void d() {
+        u85 u85Var;
+        u85 u85Var2;
+        boolean z;
+        while (true) {
+            AtomicReference atomicReference = this.h;
+            u85Var = u85.c0;
+            u85Var2 = u85.e0;
+            if (atomicReference.compareAndSet(u85Var, u85Var2)) {
+                z = true;
+                break;
+            } else if (atomicReference.get() != u85Var) {
+                z = false;
+                break;
+            }
+        }
+        if (z) {
+            return;
+        }
+        zg5.b("Unexpected state change from: " + u85Var + " to: " + u85Var2 + ".");
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    public final boolean e(sw6 sw6Var) {
+        u85 u85Var = u85.d0;
+        AtomicReference atomicReference = this.h;
+        try {
+            int ordinal = ((u85) atomicReference.get()).ordinal();
+            u85 u85Var2 = u85.c0;
+            py0 py0Var = this.a;
+            ky0 ky0Var = this.b;
+            switch (ordinal) {
+                case 0:
+                    throw new IllegalStateException("The paused composition is invalid because of a previous exception");
+                case 1:
+                    throw new IllegalStateException("The paused composition has been cancelled");
+                case 2:
+                    rk2 rk2Var = this.c;
+                    boolean z = this.e;
+                    if (z) {
+                        rk2Var.z = 0;
+                        rk2Var.y = true;
+                    }
+                    this.j = ky0Var.b(py0Var, sw6Var, this.d);
+                    if (z) {
+                        if (rk2Var.F || rk2Var.z != 0) {
+                            zg5.a("Cannot disable reuse from root if it was caused by other groups");
+                        }
+                        rk2Var.z = -1;
+                        rk2Var.y = false;
+                    }
+                    u85 u85Var3 = u85.Z;
+                    while (true) {
+                        if (!atomicReference.compareAndSet(u85Var3, u85Var2)) {
+                            if (atomicReference.get() != u85Var3) {
+                                zg5.b("Unexpected state change from: " + u85Var3 + " to: " + u85Var2 + ".");
+                            }
+                        }
+                    }
+                    if (this.j.g()) {
+                        d();
+                    }
+                    return c();
+                case 3:
+                    while (true) {
+                        if (!atomicReference.compareAndSet(u85Var2, u85Var)) {
+                            if (atomicReference.get() != u85Var2) {
+                                zg5.b("Unexpected state change from: " + u85Var2 + " to: " + u85Var + ".");
+                            }
+                        }
+                    }
+                    long j = this.i;
+                    try {
+                        this.i = wv7.c();
+                        this.j = ky0Var.n(py0Var, sw6Var, this.j);
+                        this.i = j;
+                        while (true) {
+                            if (!atomicReference.compareAndSet(u85Var, u85Var2)) {
+                                if (atomicReference.get() != u85Var) {
+                                    zg5.b("Unexpected state change from: " + u85Var + " to: " + u85Var2 + ".");
+                                }
+                            }
+                        }
+                        if (this.j.g()) {
+                            d();
+                        }
+                        return c();
+                    } catch (Throwable th) {
+                        this.i = j;
+                        while (true) {
+                            if (!atomicReference.compareAndSet(u85Var, u85Var2)) {
+                                if (atomicReference.get() != u85Var) {
+                                    zg5.b("Unexpected state change from: " + u85Var + " to: " + u85Var2 + ".");
+                                }
+                            }
+                        }
+                        throw th;
+                    }
+                case 4:
+                    by0.b("Recursive call to resume()");
+                    throw new wt3();
+                case 5:
+                    throw new IllegalStateException("Pausable composition is complete and apply() should be applied");
+                case 6:
+                    throw new IllegalStateException("The paused composition has been applied");
+                default:
+                    throw new qu4();
+            }
+        } catch (Exception e) {
+            atomicReference.set(u85.X);
+            throw e;
+        }
+    }
 }

@@ -1,256 +1,398 @@
 .class public final Lik;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Lj72;
+.super Lkk;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:I
-
-.field public final R:Lzb3;
+.field public final transient n0:Ljava/lang/reflect/Field;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lzb3;I)V
+.method public constructor <init>(Ld58;Ljava/lang/reflect/Field;Lym2;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lik;->Q:I
+    invoke-direct {p0, p1, p3}, Lkk;-><init>(Ld58;Lym2;)V
 
     .line 2
     .line 3
-    iput-object p1, p0, Lik;->R:Lzb3;
-
     .line 4
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 5
     .line 6
     .line 7
+    iput-object p2, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
     .line 8
+    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final C0()Ljava/lang/Class;
+    .locals 0
 
     .line 1
-    iget v0, p0, Lik;->Q:I
+    iget-object p0, p0, Lik;->n0:Ljava/lang/reflect/Field;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lik;->R:Lzb3;
+    invoke-virtual {p0}, Ljava/lang/reflect/Field;->getDeclaringClass()Ljava/lang/Class;
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final E0()Ljava/lang/reflect/Member;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final F0(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 7
+    return-object p0
+
+    .line 8
+    :catch_0
+    move-exception p1
+
+    .line 9
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Lkk;->D0()Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 20
+    .line 21
+    const-string v3, "Failed to getValue() for field "
+
+    .line 22
+    .line 23
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 27
+    .line 28
+    .line 29
+    const-string p0, ": "
+
+    .line 30
+    .line 31
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 32
+    .line 33
+    .line 34
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p0
+
+    .line 41
+    invoke-direct {v0, p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 42
+    .line 43
+    .line 44
+    throw v0
+.end method
+
+.method public final I0(Lym2;)Lj68;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lik;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lkk;->l0:Ld58;
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v1, p0, p1}, Lik;-><init>(Ld58;Ljava/lang/reflect/Field;Lym2;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public final L()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/reflect/Field;->getModifiers()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final N()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final P()Ljava/lang/Class;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final R()Lr38;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/reflect/Field;->getGenericType()Ljava/lang/reflect/Type;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iget-object p0, p0, Lkk;->l0:Ld58;
+
+    .line 8
+    .line 9
+    invoke-interface {p0, v0}, Ld58;->d(Ljava/lang/reflect/Type;)Lr38;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    if-ne p1, p0, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p0, 0x1
+
+    .line 4
+    return p0
+
+    .line 5
+    :cond_0
+    const-class v0, Lik;
+
+    .line 6
+    .line 7
+    invoke-static {v0, p1}, Lfr0;->o(Ljava/lang/Class;Ljava/lang/Object;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    if-nez v0, :cond_1
+
+    .line 12
+    .line 13
+    const/4 p0, 0x0
+
+    .line 14
+    return p0
+
+    .line 15
+    :cond_1
+    check-cast p1, Lik;
+
+    .line 16
+    .line 17
+    iget-object p0, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 18
+    .line 19
+    iget-object p1, p1, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 20
+    .line 21
+    invoke-static {p0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p0
+
+    .line 25
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lik;->n0:Ljava/lang/reflect/Field;
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "[field "
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    check-cast p1, Lha4;
+    invoke-virtual {p0}, Lkk;->D0()Ljava/lang/String;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Lzb3;->l()Ls64;
-
     .line 11
+    move-result-object p0
+
     .line 12
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 13
-    move-result-object v0
-
     .line 14
-    sget-object v1, Lsg6;->k:Lr42;
-
     .line 15
-    .line 16
-    invoke-virtual {v0, v1}, Ls64;->i0(Lr42;)Laj3;
+    const-string p0, "]"
 
+    .line 16
     .line 17
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 18
     .line 19
-    move-result-object v0
-
     .line 20
-    iget-object v0, v0, Laj3;->Y:Lcj3;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 21
     .line 22
-    const/4 v2, 0x0
-
     .line 23
-    if-eqz v0, :cond_2
+    move-result-object p0
 
     .line 24
-    .line 25
-    sget-object v3, Lad4;->Q:Lad4;
-
-    .line 26
-    .line 27
-    invoke-virtual {v0, p1, v3}, Lcj3;->e(Lha4;Lad4;)Lmk0;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v0
-
-    .line 31
-    if-eqz v0, :cond_1
-
-    .line 32
-    .line 33
-    instance-of v1, v0, Lo64;
-
-    .line 34
-    .line 35
-    if-eqz v1, :cond_0
-
-    .line 36
-    .line 37
-    move-object v2, v0
-
-    .line 38
-    check-cast v2, Lo64;
-
-    .line 39
-    .line 40
-    goto :goto_0
-
-    .line 41
-    :cond_0
-    new-instance v1, Ljava/lang/AssertionError;
-
-    .line 42
-    .line 43
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 44
-    .line 45
-    const-string v3, "Must be a class descriptor "
-
-    .line 46
-    .line 47
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 48
-    .line 49
-    .line 50
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    .line 53
-    const-string p1, ", but was "
-
-    .line 54
-    .line 55
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 59
-    .line 60
-    .line 61
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object p1
-
-    .line 65
-    invoke-direct {v1, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
-
-    .line 66
-    .line 67
-    .line 68
-    throw v1
-
-    .line 69
-    :cond_1
-    invoke-virtual {v1, p1}, Lr42;->a(Lha4;)Lr42;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object p1
-
-    .line 73
-    const-string v0, " is not found"
-
-    .line 74
-    .line 75
-    const-string v1, "Built-in class "
-
-    .line 76
-    .line 77
-    invoke-static {v1, p1, v0}, Li62;->r(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 78
-    .line 79
-    .line 80
-    :goto_0
-    return-object v2
-
-    .line 81
-    :cond_2
-    const/16 p1, 0xb
-
-    .line 82
-    .line 83
-    invoke-static {p1}, Lzb3;->a(I)V
-
-    .line 84
-    .line 85
-    .line 86
-    throw v2
-
-    .line 87
-    :pswitch_0
-    check-cast p1, Lr64;
-
-    .line 88
-    .line 89
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 90
-    .line 91
-    .line 92
-    invoke-interface {p1}, Lr64;->f()Lzb3;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object p1
-
-    .line 96
-    invoke-virtual {v1}, Lzb3;->v()Lya6;
-
-    .line 97
-    .line 98
-    .line 99
-    move-result-object v0
-
-    .line 100
-    invoke-virtual {p1, v0}, Lzb3;->h(Lod3;)Lya6;
-
-    .line 101
-    .line 102
-    .line 103
-    move-result-object p1
-
-    .line 104
-    return-object p1
-
-    .line 105
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p0
 .end method

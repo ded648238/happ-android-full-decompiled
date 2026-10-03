@@ -1,41 +1,57 @@
 package defpackage;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class vf7 {
+    public static final uf7 Companion = new uf7();
+    public final boolean a;
+    public final boolean b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class vf7 extends OutputStream {
-    public final FileOutputStream Q;
-
-    public vf7(FileOutputStream fileOutputStream) {
-        this.Q = fileOutputStream;
+    public /* synthetic */ vf7(int i, boolean z, boolean z2) {
+        if ((i & 1) == 0) {
+            this.a = true;
+        } else {
+            this.a = z;
+        }
+        if ((i & 2) == 0) {
+            this.b = true;
+        } else {
+            this.b = z2;
+        }
     }
 
-    @Override // java.io.OutputStream, java.io.Flushable
-    public final void flush() throws IOException {
-        this.Q.flush();
+    public static vf7 a(vf7 vf7Var, boolean z, boolean z2, int i) {
+        if ((i & 1) != 0) {
+            z = vf7Var.a;
+        }
+        if ((i & 2) != 0) {
+            z2 = vf7Var.b;
+        }
+        vf7Var.getClass();
+        return new vf7(z, z2);
     }
 
-    @Override // java.io.OutputStream
-    public final void write(byte[] bArr) throws IOException {
-        bArr.getClass();
-        this.Q.write(bArr);
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof vf7)) {
+            return false;
+        }
+        vf7 vf7Var = (vf7) obj;
+        return this.a == vf7Var.a && this.b == vf7Var.b;
     }
 
-    @Override // java.io.OutputStream
-    public final void write(int i) throws IOException {
-        this.Q.write(i);
+    public final int hashCode() {
+        return Boolean.hashCode(this.b) + (Boolean.hashCode(this.a) * 31);
     }
 
-    @Override // java.io.OutputStream
-    public final void write(byte[] bArr, int i, int i2) throws IOException {
-        bArr.getClass();
-        this.Q.write(bArr, i, i2);
+    public final String toString() {
+        return "SendingDataProperties(isSendHwidEnabled=" + this.a + ", isSendHwidAlwaysEnabled=" + this.b + ")";
     }
 
-    @Override // java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
-    public final void close() {
+    public vf7(boolean z, boolean z2) {
+        this.a = z;
+        this.b = z2;
     }
 }

@@ -1,187 +1,280 @@
-.class public final enum Ln45;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lxs2;
-
-
-# static fields
-.field public static final enum R:Ln45;
-
-.field public static final enum S:Ln45;
-
-.field public static final enum T:Ln45;
-
-.field public static final synthetic U:[Ln45;
+.class public final Ln45;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:I
+.field public final a:J
+
+.field public final b:Lo55;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>()V
+    .locals 3
 
     .line 1
-    new-instance v0, Ln45;
+    const-wide v0, 0xff666666L
 
     .line 2
     .line 3
-    const-string v1, "TRUE"
-
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    invoke-direct {v0, v1, v2, v2}, Ln45;-><init>(Ljava/lang/String;II)V
+    invoke-static {v0, v1}, Lvq0;->c(J)J
 
     .line 7
     .line 8
     .line 9
-    sput-object v0, Ln45;->R:Ln45;
+    move-result-wide v0
 
     .line 10
+    const/4 v2, 0x3
+
     .line 11
-    new-instance v1, Ln45;
+    invoke-static {v2}, Lhc4;->b(I)Lo55;
 
     .line 12
     .line 13
-    const-string v3, "FALSE"
-
     .line 14
+    move-result-object v2
+
     .line 15
-    const/4 v4, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 16
-    invoke-direct {v1, v3, v4, v4}, Ln45;-><init>(Ljava/lang/String;II)V
-
     .line 17
     .line 18
+    iput-wide v0, p0, Ln45;->a:J
+
     .line 19
-    sput-object v1, Ln45;->S:Ln45;
-
     .line 20
+    iput-object v2, p0, Ln45;->b:Lo55;
+
     .line 21
-    new-instance v3, Ln45;
-
     .line 22
-    .line 23
-    const-string v5, "NULL"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6, v6}, Ln45;-><init>(Ljava/lang/String;II)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, Ln45;->T:Ln45;
-
-    .line 30
-    .line 31
-    const/4 v5, 0x3
-
-    .line 32
-    new-array v5, v5, [Ln45;
-
-    .line 33
-    .line 34
-    aput-object v0, v5, v2
-
-    .line 35
-    .line 36
-    aput-object v1, v5, v4
-
-    .line 37
-    .line 38
-    aput-object v3, v5, v6
-
-    .line 39
-    .line 40
-    sput-object v5, Ln45;->U:[Ln45;
-
-    .line 41
-    .line 42
     return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, Ln45;->Q:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Ln45;
-    .locals 1
-
-    .line 1
-    const-class v0, Ln45;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Ln45;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Ln45;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ln45;->U:[Ln45;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Ln45;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Ln45;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    iget v0, p0, Ln45;->Q:I
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    return v0
+    goto :goto_2
+
+    .line 4
+    :cond_0
+    if-eqz p1, :cond_1
+
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 12
+    :goto_0
+    const-class v1, Ln45;
+
+    .line 13
+    .line 14
+    invoke-virtual {v1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    if-nez v0, :cond_2
+
+    .line 19
+    .line 20
+    goto :goto_1
+
+    .line 21
+    :cond_2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 22
+    .line 23
+    .line 24
+    check-cast p1, Ln45;
+
+    .line 25
+    .line 26
+    iget-wide v0, p0, Ln45;->a:J
+
+    .line 27
+    .line 28
+    iget-wide v2, p1, Ln45;->a:J
+
+    .line 29
+    .line 30
+    invoke-static {v0, v1, v2, v3}, Lau0;->c(JJ)Z
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v0
+
+    .line 34
+    if-nez v0, :cond_3
+
+    .line 35
+    .line 36
+    goto :goto_1
+
+    .line 37
+    :cond_3
+    iget-object p0, p0, Ln45;->b:Lo55;
+
+    .line 38
+    .line 39
+    iget-object p1, p1, Ln45;->b:Lo55;
+
+    .line 40
+    .line 41
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 42
+    .line 43
+    .line 44
+    move-result p0
+
+    .line 45
+    if-nez p0, :cond_4
+
+    .line 46
+    .line 47
+    :goto_1
+    const/4 p0, 0x0
+
+    .line 48
+    return p0
+
+    .line 49
+    :cond_4
+    :goto_2
+    const/4 p0, 0x1
+
+    .line 50
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    sget v0, Lau0;->h:I
+
+    .line 2
+    .line 3
+    iget-wide v0, p0, Ln45;->a:J
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 10
+    .line 11
+    iget-object p0, p0, Ln45;->b:Lo55;
+
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Lo55;->hashCode()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p0
+
+    .line 17
+    add-int/2addr p0, v0
+
+    .line 18
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "OverscrollConfiguration(glowColor="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-wide v1, p0, Ln45;->a:J
+
+    .line 9
+    .line 10
+    const-string v3, ", drawPadding="
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v3, v0}, Lc73;->r(JLjava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object p0, p0, Ln45;->b:Lo55;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    const/16 p0, 0x29
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p0
+
+    .line 29
+    return-object p0
 .end method

@@ -1,23 +1,23 @@
-.class public interface abstract annotation Lzy2;
+.class public interface abstract Lzy2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/lang/annotation/Annotation;
-
-
-# annotations
-.annotation system Ldalvik/annotation/AnnotationDefault;
-    value = .subannotation Lzy2;
-        enabled = true
-    .end subannotation
-.end annotation
-
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
+.implements Ljava/lang/AutoCloseable;
 
 
 # virtual methods
-.method public abstract enabled()Z
+.method public abstract a()I
+.end method
+
+.method public abstract b()I
+.end method
+
+.method public abstract getFormat()I
+.end method
+
+.method public abstract o()[Lyy2;
+.end method
+
+.method public abstract r0()Lqy2;
 .end method

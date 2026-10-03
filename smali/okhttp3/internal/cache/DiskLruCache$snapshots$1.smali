@@ -1,10 +1,10 @@
 .class public final Lokhttp3/internal/cache/DiskLruCache$snapshots$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/util/Iterator;
-.implements Lr73;
+.implements Lxn3;
 
 
 # annotations
@@ -23,7 +23,7 @@
         "Ljava/util/Iterator<",
         "Lokhttp3/internal/cache/DiskLruCache$Snapshot;",
         ">;",
-        "Lr73;"
+        "Lxn3;"
     }
 .end annotation
 
@@ -41,7 +41,7 @@
         "()Z",
         "next",
         "()Lokhttp3/internal/cache/DiskLruCache$Snapshot;",
-        "Lbh7;",
+        "Lr98;",
         "remove",
         "()V",
         "Lokhttp3/internal/cache/DiskLruCache$Entry;",
@@ -260,7 +260,7 @@
 
     .line 48
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 49
     goto :goto_1
@@ -277,18 +277,18 @@
     monitor-exit v0
 
     .line 53
-    throw v1
+    throw p0
 .end method
 
 .method public bridge synthetic next()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 22
     invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache$snapshots$1;->next()Lokhttp3/internal/cache/DiskLruCache$Snapshot;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public next()Lokhttp3/internal/cache/DiskLruCache$Snapshot;
@@ -331,7 +331,7 @@
 
     .line 18
     :cond_0
-    invoke-static {}, Lfn;->p()V
+    invoke-static {}, Li60;->a()V
 
     .line 19
     .line 20
@@ -402,11 +402,11 @@
 
     .line 25
     :cond_0
-    const-string v0, "remove() before next()"
+    const-string p0, "remove() before next()"
 
     .line 26
     .line 27
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 28
     .line 29

@@ -1,6 +1,6 @@
 .class public abstract Lokhttp3/RequestBody;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -25,11 +25,11 @@
         "",
         "contentLength",
         "()J",
-        "Lr50;",
+        "Le80;",
         "sink",
-        "Lbh7;",
+        "Lr98;",
         "writeTo",
-        "(Lr50;)V",
+        "(Le80;)V",
         "",
         "isDuplex",
         "()Z",
@@ -63,7 +63,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/RequestBody$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/RequestBody$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -113,9 +113,28 @@
     return-object p0
 .end method
 
+.method public static final create(Lo90;Lokhttp3/MediaType;)Lokhttp3/RequestBody;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lokhttp3/RequestBody;->Companion:Lokhttp3/RequestBody$Companion;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p0, p1}, Lokhttp3/RequestBody$Companion;->create(Lo90;Lokhttp3/MediaType;)Lokhttp3/RequestBody;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
 .method public static final create(Lokhttp3/MediaType;Ljava/io/File;)Lokhttp3/RequestBody;
     .locals 1
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 11
@@ -130,7 +149,7 @@
 
 .method public static final create(Lokhttp3/MediaType;Ljava/lang/String;)Lokhttp3/RequestBody;
     .locals 1
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 12
@@ -143,15 +162,15 @@
     return-object p0
 .end method
 
-.method public static final create(Lokhttp3/MediaType;Ly60;)Lokhttp3/RequestBody;
+.method public static final create(Lokhttp3/MediaType;Lo90;)Lokhttp3/RequestBody;
     .locals 1
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 10
     sget-object v0, Lokhttp3/RequestBody;->Companion:Lokhttp3/RequestBody$Companion;
 
-    invoke-virtual {v0, p0, p1}, Lokhttp3/RequestBody$Companion;->create(Lokhttp3/MediaType;Ly60;)Lokhttp3/RequestBody;
+    invoke-virtual {v0, p0, p1}, Lokhttp3/RequestBody$Companion;->create(Lokhttp3/MediaType;Lo90;)Lokhttp3/RequestBody;
 
     move-result-object p0
 
@@ -160,7 +179,7 @@
 
 .method public static final create(Lokhttp3/MediaType;[B)Lokhttp3/RequestBody;
     .locals 1
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 13
@@ -175,7 +194,7 @@
 
 .method public static final create(Lokhttp3/MediaType;[BI)Lokhttp3/RequestBody;
     .locals 1
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 14
@@ -190,7 +209,7 @@
 
 .method public static final create(Lokhttp3/MediaType;[BII)Lokhttp3/RequestBody;
     .locals 1
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 15
@@ -200,25 +219,6 @@
 
     move-result-object p0
 
-    return-object p0
-.end method
-
-.method public static final create(Ly60;Lokhttp3/MediaType;)Lokhttp3/RequestBody;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lokhttp3/RequestBody;->Companion:Lokhttp3/RequestBody$Companion;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p0, p1}, Lokhttp3/RequestBody$Companion;->create(Ly60;Lokhttp3/MediaType;)Lokhttp3/RequestBody;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
     return-object p0
 .end method
 
@@ -296,26 +296,26 @@
 .end method
 
 .method public isDuplex()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public isOneShot()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
-.method public abstract writeTo(Lr50;)V
+.method public abstract writeTo(Le80;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

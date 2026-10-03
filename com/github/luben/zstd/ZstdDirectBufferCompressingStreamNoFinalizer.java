@@ -1,15 +1,15 @@
 package com.github.luben.zstd;
 
 import com.github.luben.zstd.util.Native;
-import defpackage.fn;
-import defpackage.i62;
+import defpackage.bh2;
+import defpackage.i60;
 import java.io.Closeable;
 import java.io.Flushable;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ZstdDirectBufferCompressingStreamNoFinalizer implements Closeable, Flushable {
     private int level;
     private final long stream;
@@ -28,7 +28,7 @@ public class ZstdDirectBufferCompressingStreamNoFinalizer implements Closeable, 
     public ZstdDirectBufferCompressingStreamNoFinalizer(ByteBuffer byteBuffer, int i) throws IOException {
         this.level = Zstd.defaultCompressionLevel();
         if (!byteBuffer.isDirect()) {
-            fn.r("Target buffer should be a direct buffer");
+            i60.p("Target buffer should be a direct buffer");
             throw null;
         }
         this.target = byteBuffer;
@@ -60,152 +60,194 @@ public class ZstdDirectBufferCompressingStreamNoFinalizer implements Closeable, 
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() throws IOException {
-        long jEndStream;
+        ZstdDirectBufferCompressingStreamNoFinalizer zstdDirectBufferCompressingStreamNoFinalizer;
         if (this.closed) {
             return;
         }
         try {
             if (this.initialized) {
-                do {
-                    long j = this.stream;
+                while (true) {
                     ByteBuffer byteBuffer = this.target;
-                    jEndStream = endStream(j, byteBuffer, byteBuffer.position(), this.target.remaining());
-                    if (Zstd.isError(jEndStream)) {
-                        throw new ZstdIOException(jEndStream);
+                    if (byteBuffer == null) {
+                        throw new IOException("Stream closed");
                     }
-                    ByteBuffer byteBuffer2 = this.target;
-                    byteBuffer2.position(byteBuffer2.position() + this.produced);
-                    ByteBuffer byteBufferFlushBuffer = flushBuffer(this.target);
-                    this.target = byteBufferFlushBuffer;
-                    if (!byteBufferFlushBuffer.isDirect()) {
-                        throw new IllegalArgumentException("Target buffer should be a direct buffer");
+                    zstdDirectBufferCompressingStreamNoFinalizer = this;
+                    try {
+                        long endStream = zstdDirectBufferCompressingStreamNoFinalizer.endStream(this.stream, byteBuffer, byteBuffer.position(), byteBuffer.remaining());
+                        if (Zstd.isError(endStream)) {
+                            throw new ZstdIOException(endStream);
+                        }
+                        byteBuffer.position(byteBuffer.position() + zstdDirectBufferCompressingStreamNoFinalizer.produced);
+                        ByteBuffer flushBuffer = zstdDirectBufferCompressingStreamNoFinalizer.flushBuffer(byteBuffer);
+                        zstdDirectBufferCompressingStreamNoFinalizer.target = flushBuffer;
+                        if (!flushBuffer.isDirect()) {
+                            throw new IllegalArgumentException("Target buffer should be a direct buffer");
+                        }
+                        if (endStream > 0 && !flushBuffer.hasRemaining()) {
+                            throw new IOException("The target buffer has no more space, even after flushing, and there are still bytes to compress");
+                        }
+                        this = zstdDirectBufferCompressingStreamNoFinalizer;
+                    } catch (Throwable th) {
+                        th = th;
+                        Throwable th2 = th;
+                        freeCStream(zstdDirectBufferCompressingStreamNoFinalizer.stream);
+                        zstdDirectBufferCompressingStreamNoFinalizer.closed = true;
+                        zstdDirectBufferCompressingStreamNoFinalizer.initialized = false;
+                        zstdDirectBufferCompressingStreamNoFinalizer.target = null;
+                        ZstdDictCompress zstdDictCompress = zstdDirectBufferCompressingStreamNoFinalizer.fastDict;
+                        if (zstdDictCompress != null) {
+                            zstdDictCompress.releaseSharedLock();
+                        }
+                        zstdDirectBufferCompressingStreamNoFinalizer.fastDict = null;
+                        zstdDirectBufferCompressingStreamNoFinalizer.dict = null;
+                        throw th2;
                     }
-                    if (jEndStream > 0 && !this.target.hasRemaining()) {
-                        throw new IOException("The target buffer has no more space, even after flushing, and there are still bytes to compress");
-                    }
-                } while (jEndStream > 0);
+                }
+            } else {
+                zstdDirectBufferCompressingStreamNoFinalizer = this;
             }
-            freeCStream(this.stream);
-            this.closed = true;
-            this.initialized = false;
-            this.target = null;
-        } catch (Throwable th) {
-            freeCStream(this.stream);
-            this.closed = true;
-            this.initialized = false;
-            this.target = null;
-            throw th;
+            freeCStream(zstdDirectBufferCompressingStreamNoFinalizer.stream);
+            zstdDirectBufferCompressingStreamNoFinalizer.closed = true;
+            zstdDirectBufferCompressingStreamNoFinalizer.initialized = false;
+            zstdDirectBufferCompressingStreamNoFinalizer.target = null;
+            ZstdDictCompress zstdDictCompress2 = zstdDirectBufferCompressingStreamNoFinalizer.fastDict;
+            if (zstdDictCompress2 != null) {
+                zstdDictCompress2.releaseSharedLock();
+            }
+            zstdDirectBufferCompressingStreamNoFinalizer.fastDict = null;
+            zstdDirectBufferCompressingStreamNoFinalizer.dict = null;
+        } catch (Throwable th3) {
+            th = th3;
+            zstdDirectBufferCompressingStreamNoFinalizer = this;
         }
     }
 
     public void compress(ByteBuffer byteBuffer) throws IOException {
-        long jInitCStreamWithDict;
+        ZstdDirectBufferCompressingStreamNoFinalizer zstdDirectBufferCompressingStreamNoFinalizer;
+        long initCStream;
         if (!byteBuffer.isDirect()) {
-            fn.r("Source buffer should be a direct buffer");
+            i60.p("Source buffer should be a direct buffer");
             return;
         }
         if (this.closed) {
-            i62.h("Stream closed");
+            bh2.i("Stream closed");
             return;
         }
-        if (!this.initialized) {
+        if (this.initialized) {
+            zstdDirectBufferCompressingStreamNoFinalizer = this;
+        } else {
             ZstdDictCompress zstdDictCompress = this.fastDict;
             if (zstdDictCompress != null) {
-                zstdDictCompress.acquireSharedLock();
-                try {
-                    jInitCStreamWithDict = initCStreamWithFastDict(this.stream, zstdDictCompress);
-                    zstdDictCompress.releaseSharedLock();
-                } catch (Throwable th) {
-                    zstdDictCompress.releaseSharedLock();
-                    throw th;
-                }
+                initCStream = initCStreamWithFastDict(this.stream, zstdDictCompress);
+                zstdDirectBufferCompressingStreamNoFinalizer = this;
             } else {
                 byte[] bArr = this.dict;
                 long j = this.stream;
-                jInitCStreamWithDict = bArr != null ? initCStreamWithDict(j, bArr, bArr.length, this.level) : initCStream(j, this.level);
+                if (bArr != null) {
+                    zstdDirectBufferCompressingStreamNoFinalizer = this;
+                    initCStream = zstdDirectBufferCompressingStreamNoFinalizer.initCStreamWithDict(j, bArr, bArr.length, this.level);
+                } else {
+                    zstdDirectBufferCompressingStreamNoFinalizer = this;
+                    initCStream = zstdDirectBufferCompressingStreamNoFinalizer.initCStream(j, zstdDirectBufferCompressingStreamNoFinalizer.level);
+                }
             }
-            if (Zstd.isError(jInitCStreamWithDict)) {
-                throw new ZstdIOException(jInitCStreamWithDict);
+            if (Zstd.isError(initCStream)) {
+                throw new ZstdIOException(initCStream);
             }
-            this.initialized = true;
+            zstdDirectBufferCompressingStreamNoFinalizer.initialized = true;
         }
         while (byteBuffer.hasRemaining()) {
-            if (!this.target.hasRemaining()) {
-                ByteBuffer byteBufferFlushBuffer = flushBuffer(this.target);
-                this.target = byteBufferFlushBuffer;
-                if (!byteBufferFlushBuffer.isDirect()) {
-                    fn.r("Target buffer should be a direct buffer");
+            ByteBuffer byteBuffer2 = zstdDirectBufferCompressingStreamNoFinalizer.target;
+            if (byteBuffer2 == null) {
+                bh2.i("Stream closed");
+                return;
+            }
+            if (!byteBuffer2.hasRemaining()) {
+                byteBuffer2 = zstdDirectBufferCompressingStreamNoFinalizer.flushBuffer(byteBuffer2);
+                zstdDirectBufferCompressingStreamNoFinalizer.target = byteBuffer2;
+                if (!byteBuffer2.isDirect()) {
+                    i60.p("Target buffer should be a direct buffer");
                     return;
-                } else if (!this.target.hasRemaining()) {
-                    i62.h("The target buffer has no more space, even after flushing, and there are still bytes to compress");
+                } else if (!byteBuffer2.hasRemaining()) {
+                    bh2.i("The target buffer has no more space, even after flushing, and there are still bytes to compress");
                     return;
                 }
             }
-            long j2 = this.stream;
-            ByteBuffer byteBuffer2 = this.target;
-            ByteBuffer byteBuffer3 = byteBuffer;
-            long jCompressDirectByteBuffer = compressDirectByteBuffer(j2, byteBuffer2, byteBuffer2.position(), this.target.remaining(), byteBuffer3, byteBuffer.position(), byteBuffer.remaining());
-            if (Zstd.isError(jCompressDirectByteBuffer)) {
-                throw new ZstdIOException(jCompressDirectByteBuffer);
+            ByteBuffer byteBuffer3 = byteBuffer2;
+            ByteBuffer byteBuffer4 = byteBuffer;
+            long compressDirectByteBuffer = zstdDirectBufferCompressingStreamNoFinalizer.compressDirectByteBuffer(zstdDirectBufferCompressingStreamNoFinalizer.stream, byteBuffer3, byteBuffer3.position(), byteBuffer3.remaining(), byteBuffer4, byteBuffer.position(), byteBuffer.remaining());
+            if (Zstd.isError(compressDirectByteBuffer)) {
+                throw new ZstdIOException(compressDirectByteBuffer);
             }
-            ByteBuffer byteBuffer4 = this.target;
-            byteBuffer4.position(byteBuffer4.position() + this.produced);
-            byteBuffer3.position(byteBuffer3.position() + this.consumed);
-            byteBuffer = byteBuffer3;
+            byteBuffer3.position(byteBuffer3.position() + zstdDirectBufferCompressingStreamNoFinalizer.produced);
+            byteBuffer4.position(byteBuffer4.position() + zstdDirectBufferCompressingStreamNoFinalizer.consumed);
+            byteBuffer = byteBuffer4;
         }
     }
 
     @Override // java.io.Flushable
     public void flush() throws IOException {
-        long jFlushStream;
         if (this.closed) {
-            i62.h("Already closed");
+            bh2.i("Already closed");
             return;
         }
-        if (this.initialized) {
-            do {
-                long j = this.stream;
-                ByteBuffer byteBuffer = this.target;
-                jFlushStream = flushStream(j, byteBuffer, byteBuffer.position(), this.target.remaining());
-                if (Zstd.isError(jFlushStream)) {
-                    throw new ZstdIOException(jFlushStream);
-                }
-                ByteBuffer byteBuffer2 = this.target;
-                byteBuffer2.position(byteBuffer2.position() + this.produced);
-                ByteBuffer byteBufferFlushBuffer = flushBuffer(this.target);
-                this.target = byteBufferFlushBuffer;
-                if (!byteBufferFlushBuffer.isDirect()) {
-                    fn.r("Target buffer should be a direct buffer");
-                    return;
-                } else if (jFlushStream > 0 && !this.target.hasRemaining()) {
-                    i62.h("The target buffer has no more space, even after flushing, and there are still bytes to compress");
-                    return;
-                }
-            } while (jFlushStream > 0);
+        if (!this.initialized) {
+            return;
         }
-    }
-
-    public ZstdDirectBufferCompressingStreamNoFinalizer setDict(byte[] bArr) {
-        if (this.initialized) {
-            fn.s("Change of parameter on initialized stream");
-            return null;
+        while (true) {
+            ByteBuffer byteBuffer = this.target;
+            if (byteBuffer == null) {
+                bh2.i("Stream closed");
+                return;
+            }
+            ZstdDirectBufferCompressingStreamNoFinalizer zstdDirectBufferCompressingStreamNoFinalizer = this;
+            long flushStream = zstdDirectBufferCompressingStreamNoFinalizer.flushStream(this.stream, byteBuffer, byteBuffer.position(), byteBuffer.remaining());
+            if (Zstd.isError(flushStream)) {
+                throw new ZstdIOException(flushStream);
+            }
+            byteBuffer.position(byteBuffer.position() + zstdDirectBufferCompressingStreamNoFinalizer.produced);
+            ByteBuffer flushBuffer = zstdDirectBufferCompressingStreamNoFinalizer.flushBuffer(byteBuffer);
+            zstdDirectBufferCompressingStreamNoFinalizer.target = flushBuffer;
+            if (!flushBuffer.isDirect()) {
+                i60.p("Target buffer should be a direct buffer");
+                return;
+            } else if (flushStream > 0 && !flushBuffer.hasRemaining()) {
+                bh2.i("The target buffer has no more space, even after flushing, and there are still bytes to compress");
+                return;
+            } else if (flushStream <= 0) {
+                return;
+            } else {
+                this = zstdDirectBufferCompressingStreamNoFinalizer;
+            }
         }
-        this.dict = bArr;
-        this.fastDict = null;
-        return this;
     }
 
     public ZstdDirectBufferCompressingStreamNoFinalizer setDict(ZstdDictCompress zstdDictCompress) {
-        if (!this.initialized) {
-            this.dict = null;
-            this.fastDict = zstdDictCompress;
-            return this;
+        if (this.initialized) {
+            i60.g("Change of parameter on initialized stream");
+            return null;
         }
-        fn.s("Change of parameter on initialized stream");
-        return null;
+        this.dict = null;
+        zstdDictCompress.acquireSharedLock();
+        ZstdDictCompress zstdDictCompress2 = this.fastDict;
+        if (zstdDictCompress2 != null) {
+            zstdDictCompress2.releaseSharedLock();
+        }
+        this.fastDict = zstdDictCompress;
+        return this;
     }
 
     public ByteBuffer flushBuffer(ByteBuffer byteBuffer) throws IOException {
         return byteBuffer;
+    }
+
+    public ZstdDirectBufferCompressingStreamNoFinalizer setDict(byte[] bArr) {
+        if (!this.initialized) {
+            this.dict = bArr;
+            this.fastDict = null;
+            return this;
+        }
+        i60.g("Change of parameter on initialized stream");
+        return null;
     }
 }

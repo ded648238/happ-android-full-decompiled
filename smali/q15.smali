@@ -1,149 +1,49 @@
 .class public final Lq15;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lr15;
+.super Lz82;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final a:Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;
+# static fields
+.field public static final d:Lq15;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lq15;
 
     .line 2
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    iput-object p1, p0, Lq15;->a:Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;
+    const/4 v2, 0x3
 
     .line 5
+    invoke-direct {v0, v1, v1, v2}, Lz82;-><init>(III)V
+
     .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lq15;->d:Lq15;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
+.method public final d(Lup0;Lwr;Lzz6;Lu61;Lb25;)V
+    .locals 0
 
     .line 1
-    instance-of v0, p1, Lq15;
+    invoke-virtual {p3}, Lzz6;->M()V
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
-
     .line 4
-    .line 5
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    check-cast p1, Lq15;
-
-    .line 7
-    .line 8
-    iget-object p1, p1, Lq15;->a:Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;
-
-    .line 9
-    .line 10
-    iget-object v0, p0, Lq15;->a:Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;
-
-    .line 11
-    .line 12
-    invoke-static {v0, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 13
-    .line 14
-    .line 15
-    move-result p1
-
-    .line 16
-    if-nez p1, :cond_1
-
-    .line 17
-    .line 18
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 19
-    return p1
-
-    .line 20
-    :cond_1
-    const/4 p1, 0x1
-
-    .line 21
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lq15;->a:Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Select(profile="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lq15;->a:Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    return-object v0
+    return-void
 .end method

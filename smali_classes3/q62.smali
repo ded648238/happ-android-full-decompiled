@@ -1,59 +1,80 @@
 .class public final Lq62;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lbn7;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Landroid/widget/LinearLayout;
+.field public c0:Ljava/lang/String;
 
-.field public final R:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+.field public d0:Lsu/happ/proxyutility/dto/SubscriptionItem;
 
-.field public final S:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+.field public e0:Ljava/io/Serializable;
 
-.field public final T:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+.field public f0:Z
+
+.field public synthetic g0:Ljava/lang/Object;
+
+.field public final synthetic h0:Ly62;
+
+.field public i0:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;)V
+.method public constructor <init>(Ly62;Ld31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lq62;->h0:Ly62;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lq62;->Q:Landroid/widget/LinearLayout;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Lq62;->R:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lq62;->S:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Lq62;->T:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final getRoot()Landroid/view/View;
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lq62;->Q:Landroid/widget/LinearLayout;
+    iput-object p1, p0, Lq62;->g0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    return-object v0
+    iget p1, p0, Lq62;->i0:I
+
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
+
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    iput p1, p0, Lq62;->i0:I
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Lq62;->h0:Ly62;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-virtual {p1, v0, p0}, Ly62;->h(Ljava/lang/String;Ld31;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
 .end method

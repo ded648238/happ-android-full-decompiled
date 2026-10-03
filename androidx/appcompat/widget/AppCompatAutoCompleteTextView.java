@@ -13,207 +13,201 @@ import android.view.ActionMode;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.AutoCompleteTextView;
-import defpackage.av2;
-import defpackage.b15;
-import defpackage.d37;
-import defpackage.dv7;
-import defpackage.mo;
-import defpackage.t6;
-import defpackage.ub;
-import defpackage.uy7;
-import defpackage.v47;
-import defpackage.x75;
-import defpackage.z47;
+import defpackage.bv7;
+import defpackage.f7;
+import defpackage.hp;
+import defpackage.hv7;
+import defpackage.ut;
+import defpackage.vk7;
+import defpackage.wr5;
+import defpackage.xp;
+import defpackage.yl0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class AppCompatAutoCompleteTextView extends AutoCompleteTextView implements z47 {
-    public static final int[] T = {R.attr.popupBackground};
-    public final t6 Q;
-    public final mo R;
-    public final dv7 S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class AppCompatAutoCompleteTextView extends AutoCompleteTextView {
+    public static final int[] f0 = {R.attr.popupBackground};
+    public final f7 c0;
+    public final xp d0;
+    public final hp e0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AppCompatAutoCompleteTextView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        v47.a(context);
-        d37.a(this, getContext());
-        av2 av2VarB = av2.B(getContext(), attributeSet, T, i);
-        if (((TypedArray) av2VarB.S).hasValue(0)) {
-            setDropDownBackgroundDrawable(av2VarB.s(0));
+        hv7.a(this, getContext());
+        vk7 j = vk7.j(i, 0, getContext(), attributeSet, f0);
+        if (((TypedArray) j.Y).hasValue(0)) {
+            setDropDownBackgroundDrawable(j.e(0));
         }
-        av2VarB.H();
-        t6 t6Var = new t6(this);
-        this.Q = t6Var;
-        t6Var.y(attributeSet, i);
-        mo moVar = new mo(this);
-        this.R = moVar;
-        moVar.f(attributeSet, i);
-        moVar.b();
-        dv7 dv7Var = new dv7(this);
-        this.S = dv7Var;
-        dv7Var.D(attributeSet, i);
+        j.l();
+        f7 f7Var = new f7(this);
+        this.c0 = f7Var;
+        f7Var.y(attributeSet, i);
+        xp xpVar = new xp(this);
+        this.d0 = xpVar;
+        xpVar.h(attributeSet, i);
+        xpVar.b();
+        hp hpVar = new hp(this);
+        this.e0 = hpVar;
+        hpVar.A(attributeSet, i);
         KeyListener keyListener = getKeyListener();
         if (keyListener instanceof NumberKeyListener) {
             return;
         }
-        boolean zIsFocusable = super.isFocusable();
-        boolean zIsClickable = super.isClickable();
-        boolean zIsLongClickable = super.isLongClickable();
+        boolean isFocusable = super.isFocusable();
+        boolean isClickable = super.isClickable();
+        boolean isLongClickable = super.isLongClickable();
         int inputType = super.getInputType();
-        KeyListener keyListenerY = dv7Var.y(keyListener);
-        if (keyListenerY == keyListener) {
+        KeyListener w = hpVar.w(keyListener);
+        if (w == keyListener) {
             return;
         }
-        super.setKeyListener(keyListenerY);
+        super.setKeyListener(w);
         super.setRawInputType(inputType);
-        super.setFocusable(zIsFocusable);
-        super.setClickable(zIsClickable);
-        super.setLongClickable(zIsLongClickable);
+        super.setFocusable(isFocusable);
+        super.setClickable(isClickable);
+        super.setLongClickable(isLongClickable);
     }
 
     @Override // android.widget.TextView, android.view.View
     public final void drawableStateChanged() {
         super.drawableStateChanged();
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.b();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.b();
         }
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     @Override // android.widget.TextView
     public ActionMode.Callback getCustomSelectionActionModeCallback() {
-        return b15.W(super.getCustomSelectionActionModeCallback());
+        return bv7.k(super.getCustomSelectionActionModeCallback());
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            return t6Var.v();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            return f7Var.v();
         }
         return null;
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            return t6Var.w();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            return f7Var.w();
         }
         return null;
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.R.d();
+        return this.d0.f();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.R.e();
+        return this.d0.g();
     }
 
     @Override // android.widget.TextView, android.view.View
     public InputConnection onCreateInputConnection(EditorInfo editorInfo) {
-        InputConnection inputConnectionOnCreateInputConnection = super.onCreateInputConnection(editorInfo);
-        uy7.E(inputConnectionOnCreateInputConnection, editorInfo, this);
-        return this.S.F(inputConnectionOnCreateInputConnection, editorInfo);
+        InputConnection onCreateInputConnection = super.onCreateInputConnection(editorInfo);
+        ut.V(editorInfo, onCreateInputConnection, this);
+        return this.e0.E(onCreateInputConnection, editorInfo);
     }
 
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.A();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.A();
         }
     }
 
     @Override // android.view.View
     public void setBackgroundResource(int i) {
         super.setBackgroundResource(i);
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.B(i);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.B(i);
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     @Override // android.widget.TextView
     public void setCustomSelectionActionModeCallback(ActionMode.Callback callback) {
-        super.setCustomSelectionActionModeCallback(b15.X(callback, this));
+        super.setCustomSelectionActionModeCallback(bv7.l(callback, this));
     }
 
     @Override // android.widget.AutoCompleteTextView
     public void setDropDownBackgroundResource(int i) {
-        setDropDownBackgroundDrawable(ub.y(getContext(), i));
+        setDropDownBackgroundDrawable(yl0.u(getContext(), i));
     }
 
     public void setEmojiCompatEnabled(boolean z) {
-        this.S.I(z);
+        this.e0.N(z);
     }
 
     @Override // android.widget.TextView
     public void setKeyListener(KeyListener keyListener) {
-        super.setKeyListener(this.S.y(keyListener));
+        super.setKeyListener(this.e0.w(keyListener));
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.K(colorStateList);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.L(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.L(mode);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.M(mode);
         }
     }
 
-    @Override // defpackage.z47
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        mo moVar = this.R;
-        moVar.k(colorStateList);
-        moVar.b();
+        xp xpVar = this.d0;
+        xpVar.m(colorStateList);
+        xpVar.b();
     }
 
-    @Override // defpackage.z47
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        mo moVar = this.R;
-        moVar.l(mode);
-        moVar.b();
+        xp xpVar = this.d0;
+        xpVar.n(mode);
+        xpVar.b();
     }
 
     @Override // android.widget.TextView
     public final void setTextAppearance(Context context, int i) {
         super.setTextAppearance(context, i);
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.g(context, i);
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.i(context, i);
         }
     }
 
     public AppCompatAutoCompleteTextView(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, x75.autoCompleteTextViewStyle);
+        this(context, attributeSet, wr5.autoCompleteTextViewStyle);
     }
 }

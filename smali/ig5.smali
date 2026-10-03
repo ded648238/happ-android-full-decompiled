@@ -1,222 +1,250 @@
 .class public Lig5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# instance fields
+.field public a:[Ljava/lang/Object;
+
+.field public b:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 18
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/16 v0, 0x100
+
+    .line 19
+    new-array v0, v0, [Ljava/lang/Object;
+
+    iput-object v0, p0, Lig5;->a:[Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    if-lez p1, :cond_0
+
+    .line 5
+    .line 6
+    new-array p1, p1, [Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    iput-object p1, p0, Lig5;->a:[Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :cond_0
+    const-string p0, "The max pool size must be > 0"
+
+    .line 12
+    .line 13
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    const/4 p0, 0x0
+
+    .line 17
+    throw p0
+.end method
 
 
 # virtual methods
-.method public a(Lp82;)Lq73;
-    .locals 0
+.method public a()Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    return-object p1
-.end method
-
-.method public b(Ljava/lang/Class;)Lx63;
-    .locals 1
-
-    .line 1
-    new-instance v0, Lak0;
+    iget-object v0, p0, Lig5;->a:[Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Lak0;-><init>(Ljava/lang/Class;)V
+    iget v1, p0, Lig5;->b:I
 
     .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    return-object v0
-.end method
-
-.method public c(Ljava/lang/Class;)Ln73;
-    .locals 1
-
-    .line 1
-    new-instance v0, Len4;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p1}, Len4;-><init>(Ljava/lang/Class;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public d(Lr83;)Lr83;
-    .locals 3
-
-    .line 1
-    move-object v0, p1
-
-    .line 2
-    check-cast v0, Ltc7;
-
-    .line 3
-    .line 4
-    new-instance v1, Ltc7;
-
-    .line 5
-    .line 6
-    invoke-interface {p1}, Lr83;->G()Lm73;
+    if-lez v1, :cond_0
 
     .line 7
     .line 8
-    .line 9
-    move-result-object v2
+    add-int/lit8 v1, v1, -0x1
 
+    .line 9
     .line 10
-    invoke-interface {p1}, Lr83;->F()Ljava/util/List;
+    aget-object v3, v0, v1
 
     .line 11
     .line 12
-    .line 13
-    move-result-object p1
-
-    .line 14
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 15
-    .line 16
-    .line 17
-    iget v0, v0, Ltc7;->S:I
-
-    .line 18
-    .line 19
-    or-int/lit8 v0, v0, 0x2
-
-    .line 20
-    .line 21
-    invoke-direct {v1, v2, p1, v0}, Ltc7;-><init>(Lm73;Ljava/util/List;I)V
-
-    .line 22
-    .line 23
-    .line 24
-    return-object v1
-.end method
-
-.method public e(Lkz6;)Lx73;
-    .locals 0
-
-    .line 1
-    return-object p1
-.end method
-
-.method public f(Lh94;)Lz73;
-    .locals 0
-
-    .line 1
-    return-object p1
-.end method
-
-.method public g(Lpi3;)Ll83;
-    .locals 0
-
-    .line 1
-    return-object p1
-.end method
-
-.method public h(Li35;)Ln83;
-    .locals 0
-
-    .line 1
-    return-object p1
-.end method
-
-.method public i(Lj35;)Lo83;
-    .locals 0
-
-    .line 1
-    return-object p1
-.end method
-
-.method public j(Le82;)Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    invoke-virtual {p1}, Ljava/lang/Class;->getGenericInterfaces()[Ljava/lang/reflect/Type;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p1
-
-    .line 9
-    const/4 v0, 0x0
-
-    .line 10
-    aget-object p1, p1, v0
-
-    .line 11
-    .line 12
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 13
     .line 14
     .line 15
-    move-result-object p1
+    aput-object v2, v0, v1
 
     .line 16
-    const-string v0, "kotlin.jvm.functions."
-
     .line 17
-    .line 18
-    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    iget v0, p0, Lig5;->b:I
 
+    .line 18
     .line 19
+    add-int/lit8 v0, v0, -0x1
+
     .line 20
     .line 21
-    move-result v0
+    iput v0, p0, Lig5;->b:I
 
     .line 22
-    if-eqz v0, :cond_0
+    .line 23
+    return-object v3
+
+    .line 24
+    :cond_0
+    return-object v2
+.end method
+
+.method public b(Ljava/lang/Object;)V
+    .locals 4
+
+    .line 1
+    iget v0, p0, Lig5;->b:I
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lig5;->a:[Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    if-nez v1, :cond_0
+
+    .line 6
+    .line 7
+    const/16 v1, 0x10
+
+    .line 8
+    .line 9
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    iput-object v1, p0, Lig5;->a:[Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    array-length v2, v1
+
+    .line 15
+    if-ne v0, v2, :cond_1
+
+    .line 16
+    .line 17
+    shr-int/lit8 v2, v0, 0x2
+
+    .line 18
+    .line 19
+    add-int/2addr v2, v0
+
+    .line 20
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    const/4 v3, 0x0
 
     .line 23
-    .line 24
-    const/16 v0, 0x15
+    invoke-static {v1, v3, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 24
     .line 25
     .line 26
-    invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    iput-object v2, p0, Lig5;->a:[Ljava/lang/Object;
 
     .line 27
     .line 28
+    move-object v1, v2
+
     .line 29
-    move-result-object p1
+    :cond_1
+    :goto_0
+    aput-object p1, v1, v0
 
     .line 30
-    :cond_0
-    return-object p1
+    .line 31
+    add-int/lit8 v0, v0, 0x1
+
+    .line 32
+    .line 33
+    iput v0, p0, Lig5;->b:I
+
+    .line 34
+    .line 35
+    return-void
 .end method
 
-.method public k(Lbe3;)Ljava/lang/String;
-    .locals 0
+.method public c(Let;)V
+    .locals 3
 
     .line 1
-    invoke-virtual {p0, p1}, Lig5;->j(Le82;)Ljava/lang/String;
+    iget v0, p0, Lig5;->b:I
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p1
+    iget-object v1, p0, Lig5;->a:[Ljava/lang/Object;
 
+    .line 4
     .line 5
-    return-object p1
+    array-length v2, v1
+
+    .line 6
+    if-ge v0, v2, :cond_0
+
+    .line 7
+    .line 8
+    aput-object p1, v1, v0
+
+    .line 9
+    .line 10
+    add-int/lit8 v0, v0, 0x1
+
+    .line 11
+    .line 12
+    iput v0, p0, Lig5;->b:I
+
+    .line 13
+    .line 14
+    :cond_0
+    return-void
 .end method
 
-.method public l(Lx63;Ljava/util/List;Z)Lr83;
-    .locals 1
+.method public d(Ljava/lang/Object;)Z
+    .locals 5
 
     .line 1
-    new-instance v0, Ltc7;
+    iget-object v0, p0, Lig5;->a:[Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -225,15 +253,78 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget v1, p0, Lig5;->b:I
 
     .line 7
     .line 8
+    const/4 v2, 0x0
+
     .line 9
-    invoke-direct {v0, p1, p2, p3}, Ltc7;-><init>(Lm73;Ljava/util/List;I)V
+    move v3, v2
 
     .line 10
+    :goto_0
+    if-ge v3, v1, :cond_1
+
     .line 11
     .line 12
-    return-object v0
+    aget-object v4, v0, v3
+
+    .line 13
+    .line 14
+    if-eq v4, p1, :cond_0
+
+    .line 15
+    .line 16
+    add-int/lit8 v3, v3, 0x1
+
+    .line 17
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    const-string p0, "Already in the pool!"
+
+    .line 20
+    .line 21
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return v2
+
+    .line 25
+    :cond_1
+    iget v1, p0, Lig5;->b:I
+
+    .line 26
+    .line 27
+    array-length v3, v0
+
+    .line 28
+    if-ge v1, v3, :cond_2
+
+    .line 29
+    .line 30
+    aput-object p1, v0, v1
+
+    .line 31
+    .line 32
+    const/4 p1, 0x1
+
+    .line 33
+    add-int/2addr v1, p1
+
+    .line 34
+    iput v1, p0, Lig5;->b:I
+
+    .line 35
+    .line 36
+    return p1
+
+    .line 37
+    :cond_2
+    return v2
 .end method

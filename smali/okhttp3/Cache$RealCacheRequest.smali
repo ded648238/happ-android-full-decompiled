@@ -1,6 +1,6 @@
 .class final Lokhttp3/Cache$RealCacheRequest;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/cache/CacheRequest;
@@ -28,15 +28,15 @@
         "editor",
         "<init>",
         "(Lokhttp3/Cache;Lokhttp3/internal/cache/DiskLruCache$Editor;)V",
-        "Lbh7;",
+        "Lr98;",
         "abort",
         "()V",
-        "Lpb6;",
+        "Lqy6;",
         "body",
-        "()Lpb6;",
+        "()Lqy6;",
         "Lokhttp3/internal/cache/DiskLruCache$Editor;",
         "cacheOut",
-        "Lpb6;",
+        "Lqy6;",
         "",
         "done",
         "Z",
@@ -57,9 +57,9 @@
 
 
 # instance fields
-.field private final body:Lpb6;
+.field private final body:Lqy6;
 
-.field private final cacheOut:Lpb6;
+.field private final cacheOut:Lqy6;
 
 .field private done:Z
 
@@ -101,7 +101,7 @@
     const/4 v0, 0x1
 
     .line 12
-    invoke-virtual {p2, v0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->newSink(I)Lpb6;
+    invoke-virtual {p2, v0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->newSink(I)Lqy6;
 
     .line 13
     .line 14
@@ -109,7 +109,7 @@
     move-result-object p2
 
     .line 16
-    iput-object p2, p0, Lokhttp3/Cache$RealCacheRequest;->cacheOut:Lpb6;
+    iput-object p2, p0, Lokhttp3/Cache$RealCacheRequest;->cacheOut:Lqy6;
 
     .line 17
     .line 18
@@ -117,12 +117,12 @@
 
     .line 19
     .line 20
-    invoke-direct {v0, p1, p0, p2}, Lokhttp3/Cache$RealCacheRequest$1;-><init>(Lokhttp3/Cache;Lokhttp3/Cache$RealCacheRequest;Lpb6;)V
+    invoke-direct {v0, p1, p0, p2}, Lokhttp3/Cache$RealCacheRequest$1;-><init>(Lokhttp3/Cache;Lokhttp3/Cache$RealCacheRequest;Lqy6;)V
 
     .line 21
     .line 22
     .line 23
-    iput-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->body:Lpb6;
+    iput-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->body:Lqy6;
 
     .line 24
     .line 25
@@ -200,7 +200,7 @@
     monitor-exit v0
 
     .line 22
-    iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->cacheOut:Lpb6;
+    iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->cacheOut:Lqy6;
 
     .line 23
     .line 24
@@ -210,11 +210,11 @@
     .line 26
     .line 27
     :try_start_2
-    iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->editor:Lokhttp3/internal/cache/DiskLruCache$Editor;
+    iget-object p0, p0, Lokhttp3/Cache$RealCacheRequest;->editor:Lokhttp3/internal/cache/DiskLruCache$Editor;
 
     .line 28
     .line 29
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->abort()V
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->abort()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -226,35 +226,35 @@
 
     .line 33
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 34
     monitor-exit v0
 
     .line 35
-    throw v1
+    throw p0
 .end method
 
-.method public body()Lpb6;
-    .locals 1
+.method public body()Lqy6;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache$RealCacheRequest;->body:Lpb6;
+    iget-object p0, p0, Lokhttp3/Cache$RealCacheRequest;->body:Lqy6;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getDone()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/Cache$RealCacheRequest;->done:Z
+    iget-boolean p0, p0, Lokhttp3/Cache$RealCacheRequest;->done:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final setDone(Z)V

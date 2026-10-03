@@ -1,23 +1,56 @@
 .class public final Loa3;
-.super Lra3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lke3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final synthetic h0:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
 
 # instance fields
-.field public final a:F
+.field private volatile synthetic _invoked$volatile:I
+
+.field public final g0:Lz;
 
 
 # direct methods
-.method public constructor <init>(F)V
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    const-class v0, Loa3;
+
+    .line 2
+    .line 3
+    const-string v1, "_invoked$volatile"
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    sput-object v0, Loa3;->h0:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public constructor <init>(Lz;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ls64;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Loa3;->a:F
+    iput-object p1, p0, Loa3;->g0:Lz;
 
     .line 5
     .line 6
@@ -26,101 +59,51 @@
 
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 1
+.method public final r()Z
+    .locals 0
 
     .line 1
-    iget v0, p0, Loa3;->a:F
+    const/4 p0, 0x1
 
     .line 2
-    .line 3
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
+    return p0
 .end method
 
-.method public final equals(Ljava/lang/Object;)Z
+.method public final s(Ljava/lang/Throwable;)V
     .locals 3
 
     .line 1
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     .line 2
-    if-ne p0, p1, :cond_0
+    const/4 v1, 0x1
 
     .line 3
-    .line 4
-    return v0
+    sget-object v2, Loa3;->h0:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, Loa3;
+    invoke-virtual {v2, p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    move-result v0
 
     .line 9
-    .line 10
-    return v2
+    if-eqz v0, :cond_0
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, Loa3;
+    iget-object p0, p0, Loa3;->g0:Lz;
 
     .line 12
     .line 13
-    iget v1, p0, Loa3;->a:F
+    invoke-virtual {p0, p1}, Lz;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15
-    iget p1, p1, Loa3;->a:F
-
     .line 16
-    .line 17
-    invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    if-eqz p1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Loa3;->a:F
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
+    :cond_0
+    return-void
 .end method

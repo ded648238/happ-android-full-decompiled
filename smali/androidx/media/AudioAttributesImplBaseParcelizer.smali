@@ -1,6 +1,6 @@
 .class public final Landroidx/media/AudioAttributesImplBaseParcelizer;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static read(Lvm7;)Landroidx/media/AudioAttributesImplBase;
+.method public static read(Lqh8;)Landroidx/media/AudioAttributesImplBase;
     .locals 3
 
     .line 1
@@ -54,7 +54,7 @@
     const/4 v2, 0x1
 
     .line 17
-    invoke-virtual {p0, v1, v2}, Lvm7;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lqh8;->f(II)I
 
     .line 18
     .line 19
@@ -73,7 +73,7 @@
     const/4 v2, 0x2
 
     .line 26
-    invoke-virtual {p0, v1, v2}, Lvm7;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lqh8;->f(II)I
 
     .line 27
     .line 28
@@ -92,7 +92,7 @@
     const/4 v2, 0x3
 
     .line 35
-    invoke-virtual {p0, v1, v2}, Lvm7;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lqh8;->f(II)I
 
     .line 36
     .line 37
@@ -111,7 +111,7 @@
     const/4 v2, 0x4
 
     .line 44
-    invoke-virtual {p0, v1, v2}, Lvm7;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lqh8;->f(II)I
 
     .line 45
     .line 46
@@ -126,7 +126,7 @@
     return-object v0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesImplBase;Lvm7;)V
+.method public static write(Landroidx/media/AudioAttributesImplBase;Lqh8;)V
     .locals 2
 
     .line 1
@@ -142,7 +142,7 @@
     const/4 v1, 0x1
 
     .line 7
-    invoke-virtual {p1, v0, v1}, Lvm7;->j(II)V
+    invoke-virtual {p1, v0, v1}, Lqh8;->j(II)V
 
     .line 8
     .line 9
@@ -154,7 +154,7 @@
     const/4 v1, 0x2
 
     .line 13
-    invoke-virtual {p1, v0, v1}, Lvm7;->j(II)V
+    invoke-virtual {p1, v0, v1}, Lqh8;->j(II)V
 
     .line 14
     .line 15
@@ -166,7 +166,7 @@
     const/4 v1, 0x3
 
     .line 19
-    invoke-virtual {p1, v0, v1}, Lvm7;->j(II)V
+    invoke-virtual {p1, v0, v1}, Lqh8;->j(II)V
 
     .line 20
     .line 21
@@ -178,7 +178,7 @@
     const/4 v0, 0x4
 
     .line 25
-    invoke-virtual {p1, p0, v0}, Lvm7;->j(II)V
+    invoke-virtual {p1, p0, v0}, Lqh8;->j(II)V
 
     .line 26
     .line 27

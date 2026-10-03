@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/RealConnectionPool$cleanupTask$1;
 .super Lokhttp3/internal/concurrent/Task;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -56,7 +56,7 @@
     const/4 v1, 0x0
 
     .line 6
-    invoke-direct {p0, p2, v1, p1, v0}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;ZILj31;)V
+    invoke-direct {p0, p2, v1, p1, v0}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;ZILib1;)V
 
     .line 7
     .line 8
@@ -67,10 +67,10 @@
 
 # virtual methods
 .method public runOnce()J
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealConnectionPool$cleanupTask$1;->this$0:Lokhttp3/internal/connection/RealConnectionPool;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealConnectionPool$cleanupTask$1;->this$0:Lokhttp3/internal/connection/RealConnectionPool;
 
     .line 2
     .line 3
@@ -79,10 +79,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-wide v1
+    move-result-wide v0
 
     .line 7
-    invoke-virtual {v0, v1, v2}, Lokhttp3/internal/connection/RealConnectionPool;->cleanup(J)J
+    invoke-virtual {p0, v0, v1}, Lokhttp3/internal/connection/RealConnectionPool;->cleanup(J)J
 
     .line 8
     .line 9

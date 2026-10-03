@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http1/Http1ExchangeCodec;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/http/ExchangeCodec;
@@ -30,20 +30,20 @@
         "client",
         "Lokhttp3/internal/connection/RealConnection;",
         "connection",
-        "Ls50;",
+        "Lf80;",
         "source",
-        "Lr50;",
+        "Le80;",
         "sink",
         "<init>",
-        "(Lokhttp3/OkHttpClient;Lokhttp3/internal/connection/RealConnection;Ls50;Lr50;)V",
+        "(Lokhttp3/OkHttpClient;Lokhttp3/internal/connection/RealConnection;Lf80;Le80;)V",
         "Lokhttp3/Request;",
         "request",
         "",
         "contentLength",
-        "Lpb6;",
+        "Lqy6;",
         "createRequestBody",
-        "(Lokhttp3/Request;J)Lpb6;",
-        "Lbh7;",
+        "(Lokhttp3/Request;J)Lqy6;",
+        "Lr98;",
         "cancel",
         "()V",
         "writeRequestHeaders",
@@ -52,9 +52,9 @@
         "response",
         "reportedContentLength",
         "(Lokhttp3/Response;)J",
-        "Lle6;",
+        "Ld27;",
         "openResponseBodySource",
-        "(Lokhttp3/Response;)Lle6;",
+        "(Lokhttp3/Response;)Ld27;",
         "Lokhttp3/Headers;",
         "trailers",
         "()Lokhttp3/Headers;",
@@ -73,27 +73,27 @@
         "skipConnectBody",
         "(Lokhttp3/Response;)V",
         "newChunkedSink",
-        "()Lpb6;",
+        "()Lqy6;",
         "newKnownLengthSink",
         "length",
         "newFixedLengthSource",
-        "(J)Lle6;",
+        "(J)Ld27;",
         "Lokhttp3/HttpUrl;",
         "url",
         "newChunkedSource",
-        "(Lokhttp3/HttpUrl;)Lle6;",
+        "(Lokhttp3/HttpUrl;)Ld27;",
         "newUnknownLengthSource",
-        "()Lle6;",
-        "Lq42;",
+        "()Ld27;",
+        "Lhf2;",
         "timeout",
         "detachTimeout",
-        "(Lq42;)V",
+        "(Lhf2;)V",
         "Lokhttp3/OkHttpClient;",
         "Lokhttp3/internal/connection/RealConnection;",
         "getConnection",
         "()Lokhttp3/internal/connection/RealConnection;",
-        "Ls50;",
-        "Lr50;",
+        "Lf80;",
+        "Le80;",
         "",
         "state",
         "I",
@@ -152,9 +152,9 @@
 
 .field private final headersReader:Lokhttp3/internal/http1/HeadersReader;
 
-.field private final sink:Lr50;
+.field private final sink:Le80;
 
-.field private final source:Ls50;
+.field private final source:Lf80;
 
 .field private state:I
 
@@ -173,7 +173,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -185,7 +185,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lokhttp3/OkHttpClient;Lokhttp3/internal/connection/RealConnection;Ls50;Lr50;)V
+.method public constructor <init>(Lokhttp3/OkHttpClient;Lokhttp3/internal/connection/RealConnection;Lf80;Le80;)V
     .locals 0
 
     .line 1
@@ -217,11 +217,11 @@
 
     .line 16
     .line 17
-    iput-object p3, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->source:Ls50;
+    iput-object p3, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->source:Lf80;
 
     .line 18
     .line 19
-    iput-object p4, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lr50;
+    iput-object p4, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Le80;
 
     .line 20
     .line 21
@@ -229,7 +229,7 @@
 
     .line 22
     .line 23
-    invoke-direct {p1, p3}, Lokhttp3/internal/http1/HeadersReader;-><init>(Ls50;)V
+    invoke-direct {p1, p3}, Lokhttp3/internal/http1/HeadersReader;-><init>(Lf80;)V
 
     .line 24
     .line 25
@@ -241,11 +241,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$detachTimeout(Lokhttp3/internal/http1/Http1ExchangeCodec;Lq42;)V
+.method public static final synthetic access$detachTimeout(Lokhttp3/internal/http1/Http1ExchangeCodec;Lhf2;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->detachTimeout(Lq42;)V
+    invoke-direct {p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->detachTimeout(Lhf2;)V
 
     .line 2
     .line 3
@@ -275,22 +275,22 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$getSink$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lr50;
+.method public static final synthetic access$getSink$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Le80;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Le80;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static final synthetic access$getSource$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Ls50;
+.method public static final synthetic access$getSource$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lf80;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->source:Lf80;
 
     .line 2
     .line 3
@@ -341,33 +341,33 @@
     return-void
 .end method
 
-.method private final detachTimeout(Lq42;)V
-    .locals 2
+.method private final detachTimeout(Lhf2;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p1, Lq42;->a:Lo47;
+    iget-object p0, p1, Lhf2;->a:Lax7;
 
     .line 2
     .line 3
-    sget-object v1, Lo47;->NONE:Lo47;
+    sget-object v0, Lax7;->NONE:Lax7;
 
     .line 4
     .line 5
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
     .line 7
     .line 8
-    iput-object v1, p1, Lq42;->a:Lo47;
+    iput-object v0, p1, Lhf2;->a:Lax7;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, Lo47;->clearDeadline()Lo47;
+    invoke-virtual {p0}, Lax7;->clearDeadline()Lax7;
 
     .line 11
     .line 12
     .line 13
-    invoke-virtual {v0}, Lo47;->clearTimeout()Lo47;
+    invoke-virtual {p0}, Lax7;->clearTimeout()Lax7;
 
     .line 14
     .line 15
@@ -376,63 +376,63 @@
 .end method
 
 .method private final isChunked(Lokhttp3/Request;)Z
-    .locals 1
+    .locals 0
 
     .line 16
-    const-string v0, "Transfer-Encoding"
+    const-string p0, "Transfer-Encoding"
 
-    invoke-virtual {p1, v0}, Lokhttp3/Request;->header(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Lokhttp3/Request;->header(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object p0
 
     .line 17
-    const-string v0, "chunked"
+    const-string p1, "chunked"
 
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result p1
+    move-result p0
 
-    return p1
+    return p0
 .end method
 
 .method private final isChunked(Lokhttp3/Response;)Z
-    .locals 3
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    const/4 v1, 0x2
+    const/4 v0, 0x2
 
     .line 3
-    const-string v2, "Transfer-Encoding"
+    const-string v1, "Transfer-Encoding"
 
     .line 4
     .line 5
-    invoke-static {p1, v2, v0, v1, v0}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v1, p0, v0, p0}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     .line 6
     .line 7
     .line 8
-    move-result-object p1
+    move-result-object p0
 
     .line 9
-    const-string v0, "chunked"
+    const-string p1, "chunked"
 
     .line 10
     .line 11
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result p0
 
     .line 15
-    return p1
+    return p0
 .end method
 
-.method private final newChunkedSink()Lpb6;
+.method private final newChunkedSink()Lqy6;
     .locals 2
 
     .line 1
@@ -471,22 +471,22 @@
 
     .line 16
     .line 17
-    iget v1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
+    iget p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     .line 18
     .line 19
-    invoke-static {v1, v0}, Lxi4;->p(ILjava/lang/String;)V
+    invoke-static {p0, v0}, Lq05;->r(ILjava/lang/String;)V
 
     .line 20
     .line 21
     .line 22
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 23
-    return-object v0
+    return-object p0
 .end method
 
-.method private final newChunkedSource(Lokhttp3/HttpUrl;)Lle6;
+.method private final newChunkedSource(Lokhttp3/HttpUrl;)Ld27;
     .locals 2
 
     .line 1
@@ -525,22 +525,22 @@
 
     .line 16
     .line 17
-    iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
+    iget p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     .line 18
     .line 19
-    invoke-static {v0, p1}, Lxi4;->p(ILjava/lang/String;)V
+    invoke-static {p0, p1}, Lq05;->r(ILjava/lang/String;)V
 
     .line 20
     .line 21
     .line 22
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 23
-    return-object p1
+    return-object p0
 .end method
 
-.method private final newFixedLengthSource(J)Lle6;
+.method private final newFixedLengthSource(J)Ld27;
     .locals 2
 
     .line 1
@@ -579,22 +579,22 @@
 
     .line 16
     .line 17
-    iget p2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
+    iget p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     .line 18
     .line 19
-    invoke-static {p2, p1}, Lxi4;->p(ILjava/lang/String;)V
+    invoke-static {p0, p1}, Lq05;->r(ILjava/lang/String;)V
 
     .line 20
     .line 21
     .line 22
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 23
-    return-object p1
+    return-object p0
 .end method
 
-.method private final newKnownLengthSink()Lpb6;
+.method private final newKnownLengthSink()Lqy6;
     .locals 2
 
     .line 1
@@ -633,22 +633,22 @@
 
     .line 16
     .line 17
-    iget v1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
+    iget p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     .line 18
     .line 19
-    invoke-static {v1, v0}, Lxi4;->p(ILjava/lang/String;)V
+    invoke-static {p0, v0}, Lq05;->r(ILjava/lang/String;)V
 
     .line 20
     .line 21
     .line 22
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 23
-    return-object v0
+    return-object p0
 .end method
 
-.method private final newUnknownLengthSource()Lle6;
+.method private final newUnknownLengthSource()Ld27;
     .locals 2
 
     .line 1
@@ -700,25 +700,25 @@
 
     .line 23
     .line 24
-    iget v1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
+    iget p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     .line 25
     .line 26
-    invoke-static {v1, v0}, Lxi4;->p(ILjava/lang/String;)V
+    invoke-static {p0, v0}, Lq05;->r(ILjava/lang/String;)V
 
     .line 27
     .line 28
     .line 29
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 30
-    return-object v0
+    return-object p0
 .end method
 
 
 # virtual methods
 .method public cancel()V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->getConnection()Lokhttp3/internal/connection/RealConnection;
@@ -726,10 +726,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnection;->cancel()V
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealConnection;->cancel()V
 
     .line 6
     .line 7
@@ -737,7 +737,7 @@
     return-void
 .end method
 
-.method public createRequestBody(Lokhttp3/Request;J)Lpb6;
+.method public createRequestBody(Lokhttp3/Request;J)Lqy6;
     .locals 2
 
     .line 1
@@ -782,20 +782,20 @@
 
     .line 21
     :cond_0
-    new-instance p1, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 22
     .line 23
-    const-string p2, "Duplex connections are not supported for HTTP/1"
+    const-string p1, "Duplex connections are not supported for HTTP/1"
 
     .line 24
     .line 25
-    invoke-direct {p1, p2}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 26
     .line 27
     .line 28
-    throw p1
+    throw p0
 
     .line 29
     :cond_1
@@ -812,15 +812,15 @@
 
     .line 34
     .line 35
-    invoke-direct {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newChunkedSink()Lpb6;
+    invoke-direct {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newChunkedSink()Lqy6;
 
     .line 36
     .line 37
     .line 38
-    move-result-object p1
+    move-result-object p0
 
     .line 39
-    return-object p1
+    return-object p0
 
     .line 40
     :cond_2
@@ -836,42 +836,42 @@
 
     .line 45
     .line 46
-    invoke-direct {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newKnownLengthSink()Lpb6;
+    invoke-direct {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newKnownLengthSink()Lqy6;
 
     .line 47
     .line 48
     .line 49
-    move-result-object p1
+    move-result-object p0
 
     .line 50
-    return-object p1
+    return-object p0
 
     .line 51
     :cond_3
-    const-string p1, "Cannot stream a request body without chunked encoding or a known content length!"
+    const-string p0, "Cannot stream a request body without chunked encoding or a known content length!"
 
     .line 52
     .line 53
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 54
     .line 55
     .line 56
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 57
-    return-object p1
+    return-object p0
 .end method
 
 .method public finishRequest()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Le80;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lr50;->flush()V
+    invoke-interface {p0}, Le80;->flush()V
 
     .line 4
     .line 5
@@ -880,14 +880,14 @@
 .end method
 
 .method public flushRequest()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Le80;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lr50;->flush()V
+    invoke-interface {p0}, Le80;->flush()V
 
     .line 4
     .line 5
@@ -896,45 +896,45 @@
 .end method
 
 .method public getConnection()Lokhttp3/internal/connection/RealConnection;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->connection:Lokhttp3/internal/connection/RealConnection;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->connection:Lokhttp3/internal/connection/RealConnection;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final isClosed()Z
-    .locals 2
+    .locals 1
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
+    iget p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     .line 2
     .line 3
-    const/4 v1, 0x6
+    const/4 v0, 0x6
 
     .line 4
-    if-ne v0, v1, :cond_0
+    if-ne p0, v0, :cond_0
 
     .line 5
     .line 6
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 7
-    return v0
+    return p0
 
     .line 8
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 9
-    return v0
+    return p0
 .end method
 
-.method public openResponseBodySource(Lokhttp3/Response;)Lle6;
+.method public openResponseBodySource(Lokhttp3/Response;)Ld27;
     .locals 4
 
     .line 1
@@ -959,15 +959,15 @@
 
     .line 11
     .line 12
-    invoke-direct {p0, v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newFixedLengthSource(J)Lle6;
+    invoke-direct {p0, v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newFixedLengthSource(J)Ld27;
 
     .line 13
     .line 14
     .line 15
-    move-result-object p1
+    move-result-object p0
 
     .line 16
-    return-object p1
+    return-object p0
 
     .line 17
     :cond_0
@@ -999,15 +999,15 @@
     move-result-object p1
 
     .line 31
-    invoke-direct {p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newChunkedSource(Lokhttp3/HttpUrl;)Lle6;
+    invoke-direct {p0, p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newChunkedSource(Lokhttp3/HttpUrl;)Ld27;
 
     .line 32
     .line 33
     .line 34
-    move-result-object p1
+    move-result-object p0
 
     .line 35
-    return-object p1
+    return-object p0
 
     .line 36
     :cond_1
@@ -1031,27 +1031,27 @@
 
     .line 45
     .line 46
-    invoke-direct {p0, v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newFixedLengthSource(J)Lle6;
+    invoke-direct {p0, v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newFixedLengthSource(J)Ld27;
 
     .line 47
     .line 48
     .line 49
-    move-result-object p1
+    move-result-object p0
 
     .line 50
-    return-object p1
+    return-object p0
 
     .line 51
     :cond_2
-    invoke-direct {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newUnknownLengthSource()Lle6;
+    invoke-direct {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newUnknownLengthSource()Ld27;
 
     .line 52
     .line 53
     .line 54
-    move-result-object p1
+    move-result-object p0
 
     .line 55
-    return-object p1
+    return-object p0
 .end method
 
 .method public readResponseHeaders(Z)Lokhttp3/Response$Builder;
@@ -1094,11 +1094,11 @@
 
     .line 15
     .line 16
-    iget v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
+    iget p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     .line 17
     .line 18
-    invoke-static {v0, p1}, Lxi4;->p(ILjava/lang/String;)V
+    invoke-static {p0, p1}, Lq05;->r(ILjava/lang/String;)V
 
     .line 19
     .line 20
@@ -1283,67 +1283,67 @@
     .line 101
     .line 102
     .line 103
-    move-result-object v0
+    move-result-object p0
 
     .line 104
-    invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnection;->route()Lokhttp3/Route;
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealConnection;->route()Lokhttp3/Route;
 
     .line 105
     .line 106
     .line 107
-    move-result-object v0
+    move-result-object p0
 
     .line 108
-    invoke-virtual {v0}, Lokhttp3/Route;->address()Lokhttp3/Address;
+    invoke-virtual {p0}, Lokhttp3/Route;->address()Lokhttp3/Address;
 
     .line 109
     .line 110
     .line 111
-    move-result-object v0
+    move-result-object p0
 
     .line 112
-    invoke-virtual {v0}, Lokhttp3/Address;->url()Lokhttp3/HttpUrl;
+    invoke-virtual {p0}, Lokhttp3/Address;->url()Lokhttp3/HttpUrl;
 
     .line 113
     .line 114
     .line 115
-    move-result-object v0
+    move-result-object p0
 
     .line 116
-    invoke-virtual {v0}, Lokhttp3/HttpUrl;->redact()Ljava/lang/String;
+    invoke-virtual {p0}, Lokhttp3/HttpUrl;->redact()Ljava/lang/String;
 
     .line 117
     .line 118
     .line 119
-    move-result-object v0
+    move-result-object p0
 
     .line 120
-    new-instance v1, Ljava/io/IOException;
+    new-instance v0, Ljava/io/IOException;
 
     .line 121
     .line 122
-    const-string v2, "unexpected end of stream on "
+    const-string v1, "unexpected end of stream on "
 
     .line 123
     .line 124
-    invoke-static {v2, v0}, Lkd0;->v(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0}, Lw31;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 125
     .line 126
     .line 127
-    move-result-object v0
+    move-result-object p0
 
     .line 128
-    invoke-direct {v1, v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {v0, p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 129
     .line 130
     .line 131
-    throw v1
+    throw v0
 .end method
 
 .method public reportedContentLength(Lokhttp3/Response;)J
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1363,11 +1363,11 @@
 
     .line 9
     .line 10
-    const-wide/16 v0, 0x0
+    const-wide/16 p0, 0x0
 
     .line 11
     .line 12
-    return-wide v0
+    return-wide p0
 
     .line 13
     :cond_0
@@ -1376,18 +1376,18 @@
     .line 14
     .line 15
     .line 16
-    move-result v0
+    move-result p0
 
     .line 17
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 18
     .line 19
-    const-wide/16 v0, -0x1
+    const-wide/16 p0, -0x1
 
     .line 20
     .line 21
-    return-wide v0
+    return-wide p0
 
     .line 22
     :cond_1
@@ -1396,10 +1396,10 @@
     .line 23
     .line 24
     .line 25
-    move-result-wide v0
+    move-result-wide p0
 
     .line 26
-    return-wide v0
+    return-wide p0
 .end method
 
 .method public final skipConnectBody(Lokhttp3/Response;)V
@@ -1435,29 +1435,29 @@
 
     .line 15
     :cond_0
-    invoke-direct {p0, v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newFixedLengthSource(J)Lle6;
+    invoke-direct {p0, v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->newFixedLengthSource(J)Ld27;
 
     .line 16
     .line 17
     .line 18
-    move-result-object p1
+    move-result-object p0
 
     .line 19
-    const v0, 0x7fffffff
+    const p1, 0x7fffffff
 
     .line 20
     .line 21
     .line 22
-    sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 23
     .line 24
-    invoke-static {p1, v0, v1}, Lokhttp3/internal/Util;->skipAll(Lle6;ILjava/util/concurrent/TimeUnit;)Z
+    invoke-static {p0, p1, v0}, Lokhttp3/internal/Util;->skipAll(Ld27;ILjava/util/concurrent/TimeUnit;)Z
 
     .line 25
     .line 26
     .line 27
-    invoke-interface {p1}, Ljava/io/Closeable;->close()V
+    invoke-interface {p0}, Ljava/io/Closeable;->close()V
 
     .line 28
     .line 29
@@ -1480,36 +1480,36 @@
 
     .line 5
     .line 6
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->trailers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->trailers:Lokhttp3/Headers;
 
     .line 7
     .line 8
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 9
     .line 10
-    sget-object v0, Lokhttp3/internal/Util;->EMPTY_HEADERS:Lokhttp3/Headers;
+    sget-object p0, Lokhttp3/internal/Util;->EMPTY_HEADERS:Lokhttp3/Headers;
 
     .line 11
     .line 12
     :cond_0
-    return-object v0
+    return-object p0
 
     .line 13
     :cond_1
-    const-string v0, "too early; can\'t read the trailers yet"
+    const-string p0, "too early; can\'t read the trailers yet"
 
     .line 14
     .line 15
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 16
     .line 17
     .line 18
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    return-object v0
+    return-object p0
 .end method
 
 .method public final writeRequest(Lokhttp3/Headers;Ljava/lang/String;)V
@@ -1534,11 +1534,11 @@
 
     .line 10
     .line 11
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lr50;
+    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Le80;
 
     .line 12
     .line 13
-    invoke-interface {v0, p2}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {v0, p2}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 14
     .line 15
@@ -1550,7 +1550,7 @@
 
     .line 18
     .line 19
-    invoke-interface {p2, v0}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {p2, v0}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 20
     .line 21
@@ -1567,7 +1567,7 @@
 
     .line 27
     :goto_0
-    iget-object v2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Lr50;
+    iget-object v2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->sink:Le80;
 
     .line 28
     .line 29
@@ -1583,7 +1583,7 @@
     move-result-object v3
 
     .line 35
-    invoke-interface {v2, v3}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {v2, v3}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 36
     .line 37
@@ -1595,7 +1595,7 @@
 
     .line 40
     .line 41
-    invoke-interface {v2, v3}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {v2, v3}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 42
     .line 43
@@ -1611,7 +1611,7 @@
     move-result-object v3
 
     .line 49
-    invoke-interface {v2, v3}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {v2, v3}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 50
     .line 51
@@ -1619,7 +1619,7 @@
     move-result-object v2
 
     .line 53
-    invoke-interface {v2, v0}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {v2, v0}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 54
     .line 55
@@ -1632,7 +1632,7 @@
 
     .line 59
     :cond_0
-    invoke-interface {v2, v0}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {v2, v0}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 60
     .line 61
@@ -1652,11 +1652,11 @@
 
     .line 67
     .line 68
-    iget p2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
+    iget p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec;->state:I
 
     .line 69
     .line 70
-    invoke-static {p2, p1}, Lxi4;->p(ILjava/lang/String;)V
+    invoke-static {p0, p1}, Lq05;->r(ILjava/lang/String;)V
 
     .line 71
     .line 72

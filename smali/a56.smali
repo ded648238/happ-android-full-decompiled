@@ -1,104 +1,125 @@
-.class public abstract synthetic La56;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic La56;
+.super Ljq4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final X:La56;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 5
 
     .line 1
-    invoke-static {}, Lio/sentry/m5;->values()[Lio/sentry/m5;
+    new-instance v0, La56;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    const-string v1, "getFragmentationLength-8mMDfP4()Ljava/lang/String;"
 
+    .line 4
     .line 5
-    array-length v0, v0
+    const/4 v2, 0x0
 
     .line 6
-    new-array v0, v0, [I
+    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    const-string v4, "fragmentationLength"
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {v0, v3, v4, v1, v2}, Ljq4;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 11
     .line 12
     .line 13
-    move-result v1
+    sput-object v0, La56;->X:La56;
 
     .line 14
-    const/4 v2, 0x1
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final E(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    check-cast p2, Lsu/happ/proxyutility/dto/enums/FragmentationLength;
+
+    .line 4
+    .line 5
+    if-eqz p2, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {p2}, Lsu/happ/proxyutility/dto/enums/FragmentationLength;->c()Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 13
+    :goto_0
+    invoke-virtual {p1, p0}, Lsu/happ/proxyutility/dto/MetaParams;->x1(Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->K()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    if-eqz p0, :cond_0
+
+    .line 8
+    .line 9
+    new-instance p1, Lsu/happ/proxyutility/dto/enums/FragmentationLength;
+
+    .line 10
+    .line 11
+    invoke-direct {p1, p0}, Lsu/happ/proxyutility/dto/enums/FragmentationLength;-><init>(Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object p1
 
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    :cond_0
+    const/4 p0, 0x0
 
     .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lio/sentry/m5;->INFO:Lio/sentry/m5;
-
-    .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    const/4 v2, 0x2
-
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 25
-    .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lio/sentry/m5;->WARNING:Lio/sentry/m5;
-
-    .line 27
-    .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    const/4 v2, 0x3
-
-    .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 34
-    .line 35
-    :catch_2
-    sput-object v0, La56;->a:[I
-
-    .line 36
-    .line 37
-    return-void
+    return-object p0
 .end method

@@ -1,17 +1,28 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class b47 extends h94 {
-    public static final b47 Q = new b47(x37.class, "hourOfAmPm", "getHourOfAmPm()Ljava/lang/Integer;", 0);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class b47 implements b31, k41 {
+    public final kn0 X;
+    public final z31 Y;
 
-    @Override // defpackage.h94, defpackage.z73
-    public final void D(Object obj, Object obj2) {
-        ((x37) obj).d((Integer) obj2);
+    public b47(kn0 kn0Var, z31 z31Var) {
+        this.X = kn0Var;
+        this.Y = z31Var;
     }
 
-    @Override // defpackage.h94, defpackage.n83
-    public final Object get(Object obj) {
-        return ((x37) obj).k();
+    @Override // defpackage.k41
+    public final k41 c() {
+        return this.X;
+    }
+
+    @Override // defpackage.b31
+    public final void f(Object obj) {
+        this.X.f(obj);
+    }
+
+    @Override // defpackage.b31
+    public final z31 s() {
+        return this.Y;
     }
 }

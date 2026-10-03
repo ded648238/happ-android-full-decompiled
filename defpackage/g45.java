@@ -1,20 +1,26 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum g45 implements xs2 {
-    CONCLUSION_CONDITION(0),
-    RETURNS_CONDITION(1),
-    HOLDSIN_CONDITION(2);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class g45 {
+    public final int a;
 
-    public final int Q;
-
-    g45(int i) {
-        this.Q = i;
+    public static String a(int i) {
+        return "MirrorMode(value=" + i + ')';
     }
 
-    @Override // defpackage.xs2
-    public final int a() {
-        return this.Q;
+    public final boolean equals(Object obj) {
+        if (obj instanceof g45) {
+            return this.a == ((g45) obj).a;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.a);
+    }
+
+    public final String toString() {
+        return a(this.a);
     }
 }

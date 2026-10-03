@@ -1,493 +1,177 @@
 .class public final Lq34;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lqz5;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Lx1;
+.field public final synthetic X:I
 
-.field public final b:Lfh7;
-
-.field public final c:Lit1;
+.field public final synthetic Y:Landroidx/appcompat/widget/ListPopupWindow;
 
 
 # direct methods
-.method public constructor <init>(Lfh7;Lit1;Lx1;)V
+.method public synthetic constructor <init>(Landroidx/appcompat/widget/ListPopupWindow;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lq34;->X:I
 
     .line 2
     .line 3
+    iput-object p1, p0, Lq34;->Y:Landroidx/appcompat/widget/ListPopupWindow;
+
     .line 4
-    iput-object p1, p0, Lq34;->b:Lfh7;
-
     .line 5
-    .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
     .line 7
     .line 8
-    .line 9
-    iput-object p2, p0, Lq34;->c:Lit1;
-
-    .line 10
-    .line 11
-    iput-object p3, p0, Lq34;->a:Lx1;
-
-    .line 12
-    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Lrb5;)V
-    .locals 0
-
-    .line 1
-    iget-object p2, p0, Lq34;->c:Lit1;
-
-    .line 2
-    .line 3
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {p1}, Lxy4;->D(Ljava/lang/Object;)V
-
-    .line 7
-    .line 8
-    .line 9
-    const/4 p1, 0x0
-
-    .line 10
-    throw p1
-.end method
-
-.method public final b(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lq34;->b:Lfh7;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p1, p2}, Ltz5;->k(Lfh7;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final c(Ljava/lang/Object;)V
+.method public final run()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lq34;->b:Lfh7;
+    iget v0, p0, Lq34;->X:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object p0, p0, Lq34;->Y:Landroidx/appcompat/widget/ListPopupWindow;
 
     .line 4
     .line 5
+    packed-switch v0, :pswitch_data_0
+
     .line 6
-    move-object v0, p1
-
     .line 7
-    check-cast v0, Lz92;
-
     .line 8
+    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->Z:Lus1;
+
     .line 9
-    iget-object v0, v0, Lz92;->unknownFields:Leh7;
-
     .line 10
+    if-eqz v0, :cond_0
+
     .line 11
-    iget-boolean v1, v0, Leh7;->e:Z
-
     .line 12
-    .line 13
-    if-eqz v1, :cond_0
+    invoke-virtual {v0}, Landroid/view/View;->isAttachedToWindow()Z
 
+    .line 13
     .line 14
     .line 15
-    const/4 v1, 0x0
+    move-result v0
 
     .line 16
-    iput-boolean v1, v0, Leh7;->e:Z
+    if-eqz v0, :cond_0
 
     .line 17
     .line 18
-    :cond_0
-    iget-object v0, p0, Lq34;->c:Lit1;
+    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->Z:Lus1;
 
     .line 19
     .line 20
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, Landroid/widget/AdapterView;->getCount()I
 
     .line 21
     .line 22
     .line 23
-    invoke-static {p1}, Lxy4;->D(Ljava/lang/Object;)V
+    move-result v0
 
     .line 24
-    .line 25
-    .line 26
-    const/4 p1, 0x0
-
-    .line 27
-    throw p1
-.end method
-
-.method public final d(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lq34;->c:Lit1;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {p1}, Lxy4;->D(Ljava/lang/Object;)V
-
-    .line 7
-    .line 8
-    .line 9
-    const/4 p1, 0x0
-
-    .line 10
-    throw p1
-.end method
-
-.method public final e(Lz92;Lz92;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lq34;->b:Lfh7;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object p1, p1, Lz92;->unknownFields:Leh7;
-
-    .line 7
-    .line 8
-    iget-object p2, p2, Lz92;->unknownFields:Leh7;
-
-    .line 9
-    .line 10
-    invoke-virtual {p1, p2}, Leh7;->equals(Ljava/lang/Object;)Z
-
-    .line 11
-    .line 12
-    .line 13
-    move-result p1
-
-    .line 14
-    if-nez p1, :cond_0
-
-    .line 15
-    .line 16
-    const/4 p1, 0x0
-
-    .line 17
-    return p1
-
-    .line 18
-    :cond_0
-    const/4 p1, 0x1
-
-    .line 19
-    return p1
-.end method
-
-.method public final f(Lz92;)I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lq34;->b:Lfh7;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object p1, p1, Lz92;->unknownFields:Leh7;
-
-    .line 7
-    .line 8
-    invoke-virtual {p1}, Leh7;->hashCode()I
-
-    .line 9
-    .line 10
-    .line 11
-    move-result p1
-
-    .line 12
-    return p1
-.end method
-
-.method public final g(Ljava/lang/Object;Lvi0;Lht1;)V
-    .locals 0
-
-    .line 1
-    iget-object p2, p0, Lq34;->b:Lfh7;
-
-    .line 2
-    .line 3
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {p1}, Lfh7;->a(Ljava/lang/Object;)Leh7;
-
-    .line 7
-    .line 8
-    .line 9
-    iget-object p2, p0, Lq34;->c:Lit1;
-
-    .line 10
-    .line 11
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 15
-    .line 16
-    .line 17
-    new-instance p1, Ljava/lang/ClassCastException;
-
-    .line 18
-    .line 19
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
-
-    .line 20
-    .line 21
-    .line 22
-    throw p1
-.end method
-
-.method public final h(Lz92;)I
-    .locals 7
-
-    .line 1
-    iget-object v0, p0, Lq34;->b:Lfh7;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object p1, p1, Lz92;->unknownFields:Leh7;
-
-    .line 7
-    .line 8
-    iget v0, p1, Leh7;->d:I
-
-    .line 9
-    .line 10
-    const/4 v1, -0x1
-
-    .line 11
-    if-eq v0, v1, :cond_0
-
-    .line 12
-    .line 13
-    return v0
-
-    .line 14
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 15
-    const/4 v1, 0x0
-
-    .line 16
-    :goto_0
-    iget v2, p1, Leh7;->a:I
-
-    .line 17
-    .line 18
-    if-ge v0, v2, :cond_1
-
-    .line 19
-    .line 20
-    iget-object v2, p1, Leh7;->b:[I
-
-    .line 21
-    .line 22
-    aget v2, v2, v0
-
-    .line 23
-    .line 24
-    const/4 v3, 0x3
+    iget-object v1, p0, Landroidx/appcompat/widget/ListPopupWindow;->Z:Lus1;
 
     .line 25
-    ushr-int/2addr v2, v3
-
     .line 26
-    iget-object v4, p1, Leh7;->c:[Ljava/lang/Object;
+    invoke-virtual {v1}, Landroid/view/ViewGroup;->getChildCount()I
 
     .line 27
     .line 28
-    aget-object v4, v4, v0
-
     .line 29
+    move-result v1
+
     .line 30
-    check-cast v4, Lv60;
+    if-le v0, v1, :cond_0
 
     .line 31
     .line 32
-    const/4 v5, 0x1
+    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->Z:Lus1;
 
     .line 33
-    invoke-static {v5}, Ldm0;->h(I)I
-
     .line 34
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
+
     .line 35
     .line 36
-    move-result v5
-
     .line 37
-    const/4 v6, 0x2
+    move-result v0
 
     .line 38
-    mul-int/lit8 v5, v5, 0x2
+    iget v1, p0, Landroidx/appcompat/widget/ListPopupWindow;->l0:I
 
     .line 39
     .line 40
-    invoke-static {v6}, Ldm0;->h(I)I
+    if-gt v0, v1, :cond_0
 
     .line 41
     .line 42
-    .line 43
-    move-result v6
+    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->y0:Landroid/widget/PopupWindow;
 
+    .line 43
     .line 44
-    invoke-static {v2}, Ldm0;->i(I)I
+    const/4 v1, 0x2
 
     .line 45
+    invoke-virtual {v0, v1}, Landroid/widget/PopupWindow;->setInputMethodMode(I)V
+
     .line 46
     .line 47
-    move-result v2
-
     .line 48
-    add-int/2addr v2, v6
+    invoke-virtual {p0}, Landroidx/appcompat/widget/ListPopupWindow;->f()V
 
     .line 49
-    add-int/2addr v2, v5
-
     .line 50
-    invoke-static {v3, v4}, Ldm0;->f(ILv60;)I
-
     .line 51
-    .line 52
-    .line 53
-    move-result v3
+    :cond_0
+    return-void
 
+    .line 52
+    :pswitch_0
+    iget-object p0, p0, Landroidx/appcompat/widget/ListPopupWindow;->Z:Lus1;
+
+    .line 53
     .line 54
-    add-int/2addr v3, v2
+    if-eqz p0, :cond_1
 
     .line 55
-    add-int/2addr v1, v3
-
     .line 56
-    add-int/lit8 v0, v0, 0x1
+    const/4 v0, 0x1
 
     .line 57
+    invoke-virtual {p0, v0}, Lus1;->setListSelectionHidden(Z)V
+
     .line 58
-    goto :goto_0
-
     .line 59
-    :cond_1
-    iput v1, p1, Leh7;->d:I
-
     .line 60
+    invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
+
     .line 61
-    return v1
-.end method
+    .line 62
+    .line 63
+    :cond_1
+    return-void
 
-.method public final i()Lz92;
-    .locals 2
+    .line 64
+    nop
 
-    .line 1
-    iget-object v0, p0, Lq34;->a:Lx1;
-
-    .line 2
-    .line 3
-    instance-of v1, v0, Lz92;
-
-    .line 4
-    .line 5
-    if-eqz v1, :cond_0
-
-    .line 6
-    .line 7
-    check-cast v0, Lz92;
-
-    .line 8
-    .line 9
-    invoke-virtual {v0}, Lz92;->i()Lz92;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    return-object v0
-
-    .line 14
-    :cond_0
-    check-cast v0, Lz92;
-
-    .line 15
-    .line 16
-    const/4 v1, 0x5
-
-    .line 17
-    invoke-virtual {v0, v1}, Lz92;->c(I)Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
-    check-cast v0, Ls92;
-
-    .line 22
-    .line 23
-    invoke-virtual {v0}, Ls92;->b()Lz92;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v0
-
-    .line 27
-    return-object v0
+    .line 65
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

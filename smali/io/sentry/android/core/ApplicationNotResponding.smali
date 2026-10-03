@@ -1,10 +1,10 @@
 .class final Lio/sentry/android/core/ApplicationNotResponding;
 .super Ljava/lang/RuntimeException;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Ljava/lang/Thread;
+.field public final X:Ljava/lang/Thread;
 
 
 # direct methods
@@ -17,7 +17,7 @@
     const/4 p1, 0x0
 
     .line 20
-    iput-object p1, p0, Lio/sentry/android/core/ApplicationNotResponding;->Q:Ljava/lang/Thread;
+    iput-object p1, p0, Lio/sentry/android/core/ApplicationNotResponding;->X:Ljava/lang/Thread;
 
     return-void
 .end method
@@ -35,12 +35,12 @@
 
     .line 5
     .line 6
-    invoke-static {p2, p1}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
     .line 8
     .line 9
-    iput-object p2, p0, Lio/sentry/android/core/ApplicationNotResponding;->Q:Ljava/lang/Thread;
+    iput-object p2, p0, Lio/sentry/android/core/ApplicationNotResponding;->X:Ljava/lang/Thread;
 
     .line 10
     .line 11

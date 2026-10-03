@@ -3,4 +3,4 @@
 
 
 # static fields
-.field public static sentry_privacy:I = 0x7f0b04b3
+.field public static sentry_privacy:I = 0x7f0b04b5

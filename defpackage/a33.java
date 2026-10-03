@@ -1,40 +1,22 @@
 package defpackage;
 
-import java.util.Set;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class a33 implements f33 {
+    public final r23 a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class a33 {
-    public abstract Class b();
-
-    public boolean c(b66 b66Var, Object obj) {
-        return false;
-    }
-
-    public boolean d() {
-        return this instanceof mi7;
-    }
-
-    public abstract void e(Object obj, r03 r03Var, b66 b66Var);
-
-    public void f(Object obj, r03 r03Var, b66 b66Var, wc7 wc7Var) {
-        Class<?> clsB = b();
-        if (clsB == null) {
-            clsB = obj.getClass();
+    public final boolean equals(Object obj) {
+        if (obj instanceof a33) {
+            return this.a.equals(((a33) obj).a);
         }
-        b66Var.z(clsB, xy4.A("Type id handling not implemented for type ", clsB.getName(), " (by serializer of type ", getClass().getName(), ")"));
-        throw null;
-    }
-
-    public boolean h() {
         return false;
     }
 
-    public a33 g(oa4 oa4Var) {
-        return this;
+    public final int hashCode() {
+        return this.a.hashCode();
     }
 
-    public a33 i(Set set) {
-        return this;
+    public final String toString() {
+        return "Load(state=" + this.a + ")";
     }
 }

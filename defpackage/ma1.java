@@ -1,7 +1,31 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ma1 {
-    public static final ma1 a = new ma1();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface ma1 {
+    Object F(dq0 dq0Var, Object obj);
+
+    Object f(km5 km5Var, Object obj);
+
+    Object g(bg8 bg8Var, Object obj);
+
+    Object h(f3 f3Var, Object obj);
+
+    Object i(qw3 qw3Var, Object obj);
+
+    Object k(wm5 wm5Var, Object obj);
+
+    Object l(uz3 uz3Var, Object obj);
+
+    Object m(cj1 cj1Var, Object obj);
+
+    Object n(pn4 pn4Var, Object obj);
+
+    Object u(jm5 jm5Var, Object obj);
+
+    Object v(nj2 nj2Var, Object obj);
+
+    Object w(ln4 ln4Var, Object obj);
+
+    Object z(c55 c55Var, Object obj);
 }

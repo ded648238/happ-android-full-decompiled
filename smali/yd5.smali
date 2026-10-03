@@ -1,145 +1,189 @@
-.class public final Lyd5;
+.class public abstract Lyd5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public a:I
+# static fields
+.field public static final a:Ljava/lang/reflect/Method;
 
-.field public b:I
-
-.field public c:I
-
-.field public d:I
-
-.field public e:Landroid/view/animation/Interpolator;
-
-.field public f:Z
+.field public static final b:Ljava/lang/reflect/Method;
 
 
-# virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView;)V
-    .locals 5
+# direct methods
+.method static constructor <clinit>()V
+    .locals 9
 
     .line 1
-    iget v0, p0, Lyd5;->d:I
+    const-class v0, Ljava/lang/Throwable;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    invoke-virtual {v0}, Ljava/lang/Class;->getMethods()[Ljava/lang/reflect/Method;
 
     .line 4
-    if-ltz v0, :cond_0
-
     .line 5
     .line 6
-    const/4 v2, -0x1
+    move-result-object v1
 
     .line 7
-    iput v2, p0, Lyd5;->d:I
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->S(I)V
-
     .line 10
+    array-length v2, v1
+
     .line 11
+    const/4 v3, 0x0
+
     .line 12
-    iput-boolean v1, p0, Lyd5;->f:Z
+    move v4, v3
 
     .line 13
+    :goto_0
+    const/4 v5, 0x0
+
     .line 14
-    return-void
+    if-ge v4, v2, :cond_1
 
     .line 15
-    :cond_0
-    iget-boolean v0, p0, Lyd5;->f:Z
-
     .line 16
+    aget-object v6, v1, v4
+
     .line 17
-    if-eqz v0, :cond_4
-
     .line 18
-    .line 19
-    iget-object v0, p0, Lyd5;->e:Landroid/view/animation/Interpolator;
+    invoke-virtual {v6}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
+    .line 19
     .line 20
     .line 21
-    const/4 v2, 0x1
+    move-result-object v7
 
     .line 22
-    if-eqz v0, :cond_2
+    const-string v8, "addSuppressed"
 
     .line 23
     .line 24
-    iget v3, p0, Lyd5;->c:I
+    invoke-static {v7, v8}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
-    if-lt v3, v2, :cond_1
-
     .line 27
+    move-result v7
+
     .line 28
-    goto :goto_0
+    if-eqz v7, :cond_0
 
     .line 29
-    :cond_1
-    const-string p1, "If you provide an interpolator, you must set a positive duration"
-
     .line 30
-    .line 31
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-virtual {v6}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
+    .line 31
     .line 32
     .line 33
+    move-result-object v7
+
     .line 34
-    return-void
+    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 35
-    :cond_2
-    :goto_0
-    iget v3, p0, Lyd5;->c:I
-
     .line 36
     .line 37
-    if-lt v3, v2, :cond_3
+    invoke-static {v7}, Lkt;->K0([Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
     .line 39
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->V0:Lee5;
-
     .line 40
+    move-result-object v7
+
     .line 41
-    iget v2, p0, Lyd5;->a:I
+    invoke-static {v7, v0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 42
     .line 43
-    iget v4, p0, Lyd5;->b:I
-
     .line 44
+    move-result v7
+
     .line 45
-    invoke-virtual {p1, v2, v4, v3, v0}, Lee5;->c(IIILandroid/view/animation/Interpolator;)V
+    if-eqz v7, :cond_0
 
     .line 46
     .line 47
+    goto :goto_1
+
     .line 48
-    iput-boolean v1, p0, Lyd5;->f:Z
+    :cond_0
+    add-int/lit8 v4, v4, 0x1
 
     .line 49
     .line 50
-    return-void
+    goto :goto_0
 
     .line 51
-    :cond_3
-    const-string p1, "Scroll duration must be a positive number"
+    :cond_1
+    move-object v6, v5
 
     .line 52
-    .line 53
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    :goto_1
+    sput-object v6, Lyd5;->a:Ljava/lang/reflect/Method;
 
+    .line 53
     .line 54
+    array-length v0, v1
+
     .line 55
+    :goto_2
+    if-ge v3, v0, :cond_3
+
     .line 56
-    :cond_4
+    .line 57
+    aget-object v2, v1, v3
+
+    .line 58
+    .line 59
+    invoke-virtual {v2}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v4
+
+    .line 63
+    const-string v6, "getSuppressed"
+
+    .line 64
+    .line 65
+    invoke-static {v4, v6}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v4
+
+    .line 69
+    if-eqz v4, :cond_2
+
+    .line 70
+    .line 71
+    move-object v5, v2
+
+    .line 72
+    goto :goto_3
+
+    .line 73
+    :cond_2
+    add-int/lit8 v3, v3, 0x1
+
+    .line 74
+    .line 75
+    goto :goto_2
+
+    .line 76
+    :cond_3
+    :goto_3
+    sput-object v5, Lyd5;->b:Ljava/lang/reflect/Method;
+
+    .line 77
+    .line 78
     return-void
 .end method

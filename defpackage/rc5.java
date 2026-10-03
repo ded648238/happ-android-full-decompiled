@@ -1,17 +1,34 @@
 package defpackage;
 
-import java.util.Map;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class rc5 implements mi2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ i41 Y;
+    public final /* synthetic */ sv0 Z;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class rc5 {
-    public final ck2 a;
-    public final Map b;
-    public final long c;
+    public /* synthetic */ rc5(i41 i41Var, sv0 sv0Var, int i) {
+        this.X = i;
+        this.Y = i41Var;
+        this.Z = sv0Var;
+    }
 
-    public rc5(ck2 ck2Var, Map map, long j) {
-        this.a = ck2Var;
-        this.b = map;
-        this.c = j;
+    @Override // defpackage.mi2
+    public final Object invoke(Object obj) {
+        int i = this.X;
+        r98 r98Var = r98.a;
+        i41 i41Var = this.Y;
+        long longValue = ((Long) obj).longValue();
+        switch (i) {
+            case 0:
+                pc1 pc1Var = jm1.a;
+                m93.L(i41Var, ac4.a, new sc5(this.Z, longValue, null, 0), 2);
+                break;
+            default:
+                pc1 pc1Var2 = jm1.a;
+                m93.L(i41Var, ac4.a, new sc5(this.Z, longValue, null, 1), 2);
+                break;
+        }
+        return r98Var;
     }
 }

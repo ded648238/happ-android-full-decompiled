@@ -1,17 +1,25 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class ch4 extends h94 {
-    public static final ch4 Q = new ch4(xo2.class, "offsetHours", "getOffsetHours()Ljava/lang/Integer;", 0);
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 
-    @Override // defpackage.h94, defpackage.z73
-    public final void D(Object obj, Object obj2) {
-        ((xo2) obj).b = (Integer) obj2;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ch4 extends AnimatorListenerAdapter {
+    public final /* synthetic */ boolean a;
+    public final /* synthetic */ int b;
+    public final /* synthetic */ dh4 c;
+
+    public ch4(dh4 dh4Var, boolean z, int i) {
+        this.c = dh4Var;
+        this.a = z;
+        this.b = i;
     }
 
-    @Override // defpackage.h94, defpackage.n83
-    public final Object get(Object obj) {
-        return ((xo2) obj).b;
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public final void onAnimationEnd(Animator animator) {
+        dh4 dh4Var = this.c;
+        dh4Var.b.setTranslationX(0.0f);
+        dh4Var.a(0.0f, this.a, this.b);
     }
 }

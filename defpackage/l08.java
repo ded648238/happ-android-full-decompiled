@@ -1,29 +1,21 @@
 package defpackage;
 
-import android.os.BadParcelableException;
-import android.os.Parcel;
-import android.os.Parcelable;
+import androidx.transition.Transition;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class l08 {
-    public static final /* synthetic */ int a = 0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface l08 {
+    void a();
 
-    static {
-        l08.class.getClassLoader();
+    void b(Transition transition);
+
+    default void c(Transition transition) {
+        b(transition);
     }
 
-    public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
-        if (parcel.readInt() == 0) {
-            return null;
-        }
-        return (Parcelable) creator.createFromParcel(parcel);
-    }
+    void d(Transition transition);
 
-    public static void b(Parcel parcel) {
-        int iDataAvail = parcel.dataAvail();
-        if (iDataAvail > 0) {
-            throw new BadParcelableException(xy4.v(iDataAvail, "Parcel data not fully consumed, unread size: "));
-        }
-    }
+    void e(Transition transition);
+
+    void f();
 }

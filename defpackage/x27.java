@@ -1,99 +1,30 @@
 package defpackage;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.text.Editable;
-import android.view.ActionMode;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.TextView;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class x27 {
+    public static final x27 X;
+    public static final x27 Y;
+    public static final x27 Z;
+    public static final /* synthetic */ x27[] c0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class x27 implements ActionMode.Callback {
-    public final ActionMode.Callback a;
-    public final TextView b;
-    public Class c;
-    public Method d;
-    public boolean e;
-    public boolean f = false;
-
-    public x27(ActionMode.Callback callback, TextView textView) {
-        this.a = callback;
-        this.b = textView;
+    static {
+        x27 x27Var = new x27("ONE_COLLECTION_PARAMETER", 0);
+        X = x27Var;
+        x27 x27Var2 = new x27("OBJECT_PARAMETER_NON_GENERIC", 1);
+        Y = x27Var2;
+        x27 x27Var3 = new x27("OBJECT_PARAMETER_GENERIC", 2);
+        Z = x27Var3;
+        c0 = new x27[]{x27Var, x27Var2, x27Var3};
     }
 
-    @Override // android.view.ActionMode.Callback
-    public final boolean onActionItemClicked(ActionMode actionMode, MenuItem menuItem) {
-        return this.a.onActionItemClicked(actionMode, menuItem);
+    public static x27 valueOf(String str) {
+        return (x27) Enum.valueOf(x27.class, str);
     }
 
-    @Override // android.view.ActionMode.Callback
-    public final boolean onCreateActionMode(ActionMode actionMode, Menu menu) {
-        return this.a.onCreateActionMode(actionMode, menu);
-    }
-
-    @Override // android.view.ActionMode.Callback
-    public final void onDestroyActionMode(ActionMode actionMode) {
-        this.a.onDestroyActionMode(actionMode);
-    }
-
-    @Override // android.view.ActionMode.Callback
-    public final boolean onPrepareActionMode(ActionMode actionMode, Menu menu) {
-        String str;
-        TextView textView = this.b;
-        Context context = textView.getContext();
-        PackageManager packageManager = context.getPackageManager();
-        boolean z = this.f;
-        Class<?> cls = Integer.TYPE;
-        if (!z) {
-            this.f = true;
-            try {
-                Class<?> cls2 = Class.forName("com.android.internal.view.menu.MenuBuilder");
-                this.c = cls2;
-                this.d = cls2.getDeclaredMethod("removeItemAt", cls);
-                this.e = true;
-            } catch (ClassNotFoundException | NoSuchMethodException unused) {
-                this.c = null;
-                this.d = null;
-                this.e = false;
-            }
-        }
-        try {
-            Method declaredMethod = (this.e && this.c.isInstance(menu)) ? this.d : menu.getClass().getDeclaredMethod("removeItemAt", cls);
-            for (int size = menu.size() - 1; size >= 0; size--) {
-                MenuItem item = menu.getItem(size);
-                if (item.getIntent() != null && "android.intent.action.PROCESS_TEXT".equals(item.getIntent().getAction())) {
-                    declaredMethod.invoke(menu, Integer.valueOf(size));
-                }
-            }
-            ArrayList arrayList = new ArrayList();
-            if (context instanceof Activity) {
-                for (ResolveInfo resolveInfo : packageManager.queryIntentActivities(new Intent().setAction("android.intent.action.PROCESS_TEXT").setType("text/plain"), 0)) {
-                    if (!context.getPackageName().equals(resolveInfo.activityInfo.packageName)) {
-                        ActivityInfo activityInfo = resolveInfo.activityInfo;
-                        if (activityInfo.exported && ((str = activityInfo.permission) == null || context.checkSelfPermission(str) == 0)) {
-                        }
-                    }
-                    arrayList.add(resolveInfo);
-                }
-            }
-            for (int i = 0; i < arrayList.size(); i++) {
-                ResolveInfo resolveInfo2 = (ResolveInfo) arrayList.get(i);
-                MenuItem menuItemAdd = menu.add(0, 0, i + 100, resolveInfo2.loadLabel(packageManager));
-                Intent intentPutExtra = new Intent().setAction("android.intent.action.PROCESS_TEXT").setType("text/plain").putExtra("android.intent.extra.PROCESS_TEXT_READONLY", !((textView instanceof Editable) && textView.onCheckIsTextEditor() && textView.isEnabled()));
-                ActivityInfo activityInfo2 = resolveInfo2.activityInfo;
-                menuItemAdd.setIntent(intentPutExtra.setClassName(activityInfo2.packageName, activityInfo2.name)).setShowAsAction(1);
-            }
-        } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException unused2) {
-        }
-        return this.a.onPrepareActionMode(actionMode, menu);
+    public static x27[] values() {
+        return (x27[]) c0.clone();
     }
 }

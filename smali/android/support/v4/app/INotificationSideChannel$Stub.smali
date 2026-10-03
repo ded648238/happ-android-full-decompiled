@@ -1,6 +1,6 @@
 .class public abstract Landroid/support/v4/app/INotificationSideChannel$Stub;
 .super Landroid/os/Binder;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/support/v4/app/INotificationSideChannel;
@@ -197,10 +197,10 @@
     .line 32
     .line 33
     .line 34
-    move-result p1
+    move-result p0
 
     .line 35
-    return p1
+    return p0
 
     .line 36
     :cond_2
@@ -282,7 +282,7 @@
 
     .line 73
     .line 74
-    invoke-static {p2, v0}, Landroid/support/v4/app/INotificationSideChannel$_Parcel;->access$000(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Ljava/lang/Object;
+    invoke-virtual {p2, v0}, Landroid/os/Parcel;->readTypedObject(Landroid/os/Parcelable$Creator;)Ljava/lang/Object;
 
     .line 75
     .line 76

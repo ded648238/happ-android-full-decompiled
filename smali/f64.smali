@@ -1,18 +1,14 @@
 .class public final Lf64;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Le64;
-
-.field public final b:Lse3;
-
-.field public final c:Ljava/lang/Object;
+.field public final a:Landroid/os/LocaleList;
 
 
 # direct methods
-.method public constructor <init>(Le64;Landroidx/compose/ui/node/NodeCoordinator;Lpm4;)V
+.method public constructor <init>(Landroid/os/LocaleList;)V
     .locals 0
 
     .line 1
@@ -21,97 +17,76 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lf64;->a:Le64;
+    iput-object p1, p0, Lf64;->a:Landroid/os/LocaleList;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lf64;->b:Lse3;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lf64;->c:Ljava/lang/Object;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    check-cast p1, Lf64;
 
     .line 2
     .line 3
-    const-string v1, "ModifierInfo("
+    iget-object p1, p1, Lf64;->a:Landroid/os/LocaleList;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iget-object p0, p0, Lf64;->a:Landroid/os/LocaleList;
 
     .line 6
     .line 7
-    .line 8
-    iget-object v1, p0, Lf64;->a:Le64;
+    invoke-virtual {p0, p1}, Landroid/os/LocaleList;->equals(Ljava/lang/Object;)Z
 
+    .line 8
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result p0
 
     .line 11
-    .line 12
-    .line 13
-    const-string v1, ", "
+    return p0
+.end method
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public final hashCode()I
+    .locals 0
 
-    .line 16
-    .line 17
-    .line 18
-    iget-object v2, p0, Lf64;->b:Lse3;
+    .line 1
+    iget-object p0, p0, Lf64;->a:Landroid/os/LocaleList;
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/os/LocaleList;->hashCode()I
 
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
 
-    .line 24
-    .line 25
-    .line 26
-    iget-object v1, p0, Lf64;->c:Ljava/lang/Object;
+    .line 7
+    return p0
+.end method
 
-    .line 27
-    .line 28
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+.method public final toString()Ljava/lang/String;
+    .locals 0
 
-    .line 29
-    .line 30
-    .line 31
-    const/16 v1, 0x29
+    .line 1
+    iget-object p0, p0, Lf64;->a:Landroid/os/LocaleList;
 
-    .line 32
-    .line 33
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/os/LocaleList;->toString()Ljava/lang/String;
 
-    .line 34
-    .line 35
-    .line 36
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v0
-
-    .line 40
-    return-object v0
+    .line 7
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/util/ErrorCodeJNIWrapper;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -37,7 +37,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,11 +45,11 @@
     .line 2
     .line 3
     .line 4
-    const-string v0, "error-code"
+    const-string p0, "error-code"
 
     .line 5
     .line 6
-    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+    invoke-static {p0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
     .line 7
     .line 8
@@ -77,10 +77,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    return-object p1
+    return-object p0
 .end method
 
 .method public final b(ILjava/lang/String;)Ljava/lang/String;
@@ -101,14 +101,14 @@
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    sget-object p2, Lnh0;->a:Ljava/nio/charset/Charset;
+    sget-object p1, Lho0;->a:Ljava/nio/charset/Charset;
 
     .line 11
     .line 12
-    invoke-direct {v0, p1, p2}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+    invoke-direct {v0, p0, p1}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
     .line 13
     .line 14
@@ -117,7 +117,7 @@
 .end method
 
 .method public final c(Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 1
     new-instance v0, Ljava/lang/String;
@@ -129,14 +129,14 @@
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    sget-object v1, Lnh0;->a:Ljava/nio/charset/Charset;
+    sget-object p1, Lho0;->a:Ljava/nio/charset/Charset;
 
     .line 8
     .line 9
-    invoke-direct {v0, p1, v1}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+    invoke-direct {v0, p0, p1}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
     .line 10
     .line 11

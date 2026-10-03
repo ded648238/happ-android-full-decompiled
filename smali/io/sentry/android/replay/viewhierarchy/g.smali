@@ -1,6 +1,6 @@
 .class public abstract Lio/sentry/android/replay/viewhierarchy/g;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -58,11 +58,11 @@
 
 
 # virtual methods
-.method public final a(Lle;)V
-    .locals 2
+.method public final a(Lio/sentry/android/replay/util/e;)V
+    .locals 1
 
     .line 1
-    invoke-virtual {p1, p0}, Lle;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Lio/sentry/android/replay/util/e;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -86,48 +86,48 @@
 
     .line 12
     .line 13
-    iget-object v0, p0, Lio/sentry/android/replay/viewhierarchy/g;->g:Ljava/util/ArrayList;
+    iget-object p0, p0, Lio/sentry/android/replay/viewhierarchy/g;->g:Ljava/util/ArrayList;
 
     .line 14
     .line 15
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 16
     .line 17
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v0
+    move-result-object p0
 
     .line 21
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 22
     .line 23
     .line 24
-    move-result v1
+    move-result v0
 
     .line 25
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 26
     .line 27
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 28
     .line 29
     .line 30
-    move-result-object v1
+    move-result-object v0
 
     .line 31
-    check-cast v1, Lio/sentry/android/replay/viewhierarchy/g;
+    check-cast v0, Lio/sentry/android/replay/viewhierarchy/g;
 
     .line 32
     .line 33
-    invoke-virtual {v1, p1}, Lio/sentry/android/replay/viewhierarchy/g;->a(Lle;)V
+    invoke-virtual {v0, p1}, Lio/sentry/android/replay/viewhierarchy/g;->a(Lio/sentry/android/replay/util/e;)V
 
     .line 34
     .line 35

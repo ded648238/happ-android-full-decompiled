@@ -1,7 +1,36 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface q10 {
-    boolean a();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class q10 implements gv4 {
+    public final t42 a;
+
+    public q10(t42 t42Var) {
+        this.a = t42Var;
+    }
+
+    @Override // defpackage.we2
+    public final xe2 a() {
+        return this.a.a();
+    }
+
+    @Override // defpackage.we2
+    public final r75 b() {
+        return this.a.b();
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof q10) {
+            return this.a.equals(((q10) obj).a);
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode();
+    }
+
+    public final String toString() {
+        return "BasicFormatStructure(" + this.a + ')';
+    }
 }

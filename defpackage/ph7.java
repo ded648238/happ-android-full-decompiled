@@ -1,38 +1,19 @@
 package defpackage;
 
-import android.content.res.ColorStateList;
-import android.graphics.Rect;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.RippleDrawable;
-import java.lang.reflect.Method;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ph7 implements rh7 {
+    public static final ph7 a = new ph7();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ph7 extends RippleDrawable {
-    public static Method U;
-    public static boolean V;
-    public final boolean Q;
-    public vm0 R;
-    public Integer S;
-    public boolean T;
-
-    public ph7(boolean z) {
-        super(ColorStateList.valueOf(-16777216), null, z ? new ColorDrawable(-1) : null);
-        this.Q = z;
+    public final boolean equals(Object obj) {
+        return this == obj || (obj instanceof ph7);
     }
 
-    @Override // android.graphics.drawable.RippleDrawable, android.graphics.drawable.Drawable
-    public final Rect getDirtyBounds() {
-        if (!this.Q) {
-            this.T = true;
-        }
-        Rect dirtyBounds = super.getDirtyBounds();
-        this.T = false;
-        return dirtyBounds;
+    public final int hashCode() {
+        return -556635884;
     }
 
-    @Override // android.graphics.drawable.RippleDrawable, android.graphics.drawable.LayerDrawable, android.graphics.drawable.Drawable
-    public final boolean isProjected() {
-        return this.T;
+    public final String toString() {
+        return "Skip";
     }
 }

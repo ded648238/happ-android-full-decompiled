@@ -1,23 +1,20 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface qz5 {
-    void a(Object obj, rb5 rb5Var);
+import java.lang.reflect.Field;
+import java.lang.reflect.Member;
 
-    void b(Object obj, Object obj2);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class qz5 extends sz5 {
+    public final Field a;
 
-    void c(Object obj);
+    public qz5(Field field) {
+        field.getClass();
+        this.a = field;
+    }
 
-    boolean d(Object obj);
-
-    boolean e(z92 z92Var, z92 z92Var2);
-
-    int f(z92 z92Var);
-
-    void g(Object obj, vi0 vi0Var, ht1 ht1Var);
-
-    int h(z92 z92Var);
-
-    z92 i();
+    @Override // defpackage.sz5
+    public final Member b() {
+        return this.a;
+    }
 }

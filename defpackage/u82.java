@@ -1,7 +1,17 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class u82 extends v82 {
-    public static final u82 d = new u82(sg6.f, "SuspendFunction", r82.d.c - 1);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class u82 extends jq4 {
+    public static final u82 X = new u82(ur3.class, "flags", "getFlags$org_jetbrains_kotlin_kotlin_metadata()I", 0);
+
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((ur3) obj).a = ((Number) obj2).intValue();
+    }
+
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return Integer.valueOf(((ur3) obj).a);
+    }
 }

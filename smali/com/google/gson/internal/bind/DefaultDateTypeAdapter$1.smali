@@ -1,9 +1,9 @@
 .class Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lwa7;
+.implements Lj38;
 
 
 # annotations
@@ -32,55 +32,55 @@
 
 
 # virtual methods
-.method public final a(Lcom/google/gson/a;Ldd7;)Lcom/google/gson/b;
-    .locals 1
+.method public final a(Lcom/google/gson/a;Lm58;)Lcom/google/gson/b;
+    .locals 0
 
     .line 1
-    iget-object p1, p2, Ldd7;->a:Ljava/lang/Class;
+    iget-object p0, p2, Lm58;->a:Ljava/lang/Class;
 
     .line 2
     .line 3
-    const-class p2, Ljava/util/Date;
+    const-class p1, Ljava/util/Date;
 
     .line 4
     .line 5
-    if-ne p1, p2, :cond_0
+    if-ne p0, p1, :cond_0
 
     .line 6
     .line 7
-    new-instance p1, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;
+    new-instance p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;
 
     .line 8
     .line 9
-    sget-object p2, Lcom/google/gson/internal/bind/a;->b:Lk31;
+    sget-object p1, Lcom/google/gson/internal/bind/a;->b:Ljb1;
 
     .line 10
     .line 11
-    const/4 v0, 0x2
+    const/4 p2, 0x2
 
     .line 12
-    invoke-direct {p1, p2, v0, v0}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;-><init>(Lcom/google/gson/internal/bind/a;II)V
+    invoke-direct {p0, p1, p2, p2}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;-><init>(Lcom/google/gson/internal/bind/a;II)V
 
     .line 13
     .line 14
     .line 15
-    return-object p1
+    return-object p0
 
     .line 16
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    return-object p1
+    return-object p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "DefaultDateTypeAdapter#DEFAULT_STYLE_FACTORY"
+    const-string p0, "DefaultDateTypeAdapter#DEFAULT_STYLE_FACTORY"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

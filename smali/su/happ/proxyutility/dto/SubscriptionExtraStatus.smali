@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/SubscriptionExtraStatus;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -34,7 +34,7 @@
 
 # instance fields
 .field private final status:I
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "status"
     .end annotation
 .end field
@@ -63,14 +63,14 @@
 
 # virtual methods
 .method public final a()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lsu/happ/proxyutility/dto/SubscriptionExtraStatus;->status:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/SubscriptionExtraStatus;->status:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -107,7 +107,7 @@
 
     .line 12
     .line 13
-    iget v1, p0, Lsu/happ/proxyutility/dto/SubscriptionExtraStatus;->status:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/SubscriptionExtraStatus;->status:I
 
     .line 14
     .line 15
@@ -115,7 +115,7 @@
 
     .line 16
     .line 17
-    if-eq v1, p1, :cond_2
+    if-eq p0, p1, :cond_2
 
     .line 18
     .line 19
@@ -127,39 +127,47 @@
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lsu/happ/proxyutility/dto/SubscriptionExtraStatus;->status:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/SubscriptionExtraStatus;->status:I
 
     .line 2
     .line 3
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lsu/happ/proxyutility/dto/SubscriptionExtraStatus;->status:I
-
-    .line 2
-    .line 3
-    const-string v1, "SubscriptionExtraStatus(status="
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
 
     .line 4
     .line 5
-    const-string v2, ")"
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget p0, p0, Lsu/happ/proxyutility/dto/SubscriptionExtraStatus;->status:I
+
+    .line 2
+    .line 3
+    const-string v0, "SubscriptionExtraStatus(status="
+
+    .line 4
+    .line 5
+    const-string v1, ")"
 
     .line 6
     .line 7
-    invoke-static {v1, v0, v2}, Lea0;->p(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0, v1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method

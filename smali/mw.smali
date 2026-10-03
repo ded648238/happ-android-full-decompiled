@@ -1,448 +1,721 @@
 .class public final Lmw;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# instance fields
+.field public final a:Ljk7;
+
+.field public final b:I
+
+.field public final c:Landroid/util/Size;
+
+.field public final d:Lrt1;
+
+.field public final e:Ljava/util/List;
+
+.field public final f:Ljz0;
+
+.field public final g:I
+
+.field public final h:Landroid/util/Range;
+
+.field public final i:Z
+
+.field public final j:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Ljk7;ILandroid/util/Size;Lrt1;Ljava/util/List;Ljz0;ILandroid/util/Range;ZI)V
     .locals 0
 
     .line 1
-    return-void
-.end method
-
-.method public static a(Landroid/view/ViewStructure;I)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->addChildCount(I)I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result p0
+    iput-object p1, p0, Lmw;->a:Ljk7;
 
     .line 5
-    return p0
-.end method
-
-.method public static b(Ljava/lang/String;)Landroid/view/autofill/AutofillValue;
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Landroid/view/autofill/AutofillValue;->forText(Ljava/lang/CharSequence;)Landroid/view/autofill/AutofillValue;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static c(Landroid/view/ViewStructure;I)Landroid/view/ViewStructure;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->newChild(I)Landroid/view/ViewStructure;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static d(Landroid/view/ViewStructure;[Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setAutofillHints([Ljava/lang/String;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static e(Landroid/view/ViewStructure;Landroid/view/autofill/AutofillId;I)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/view/ViewStructure;->setAutofillId(Landroid/view/autofill/AutofillId;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static f(Landroid/view/ViewStructure;I)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setAutofillType(I)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static g(Landroid/view/ViewStructure;Landroid/view/autofill/AutofillValue;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setAutofillValue(Landroid/view/autofill/AutofillValue;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static h(Landroid/view/ViewStructure;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    invoke-virtual {p0, v0}, Landroid/view/ViewStructure;->setCheckable(Z)V
-
-    .line 3
-    .line 4
-    .line 5
-    return-void
-.end method
-
-.method public static i(Landroid/view/ViewStructure;Z)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setChecked(Z)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static j(Landroid/view/ViewStructure;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setClassName(Ljava/lang/String;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static k(Landroid/view/ViewStructure;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    invoke-virtual {p0, v0}, Landroid/view/ViewStructure;->setClickable(Z)V
-
-    .line 3
-    .line 4
-    .line 5
-    return-void
-.end method
-
-.method public static l(Landroid/view/ViewStructure;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static m(Landroid/view/ViewStructure;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    invoke-virtual {p0, v0}, Landroid/view/ViewStructure;->setDataIsSensitive(Z)V
-
-    .line 3
-    .line 4
-    .line 5
-    return-void
-.end method
-
-.method public static n(Landroid/view/ViewStructure;IIII)V
-    .locals 7
-
-    .line 1
-    const/4 v3, 0x0
-
-    .line 2
-    const/4 v4, 0x0
-
-    .line 3
-    move-object v0, p0
-
-    .line 4
-    move v1, p1
-
-    .line 5
-    move v2, p2
-
     .line 6
-    move v5, p3
+    iput p2, p0, Lmw;->b:I
 
     .line 7
-    move v6, p4
-
     .line 8
-    invoke-virtual/range {v0 .. v6}, Landroid/view/ViewStructure;->setDimens(IIIIII)V
+    iput-object p3, p0, Lmw;->c:Landroid/util/Size;
 
     .line 9
     .line 10
+    const/4 p1, 0x0
+
     .line 11
-    return-void
-.end method
-
-.method public static o(Landroid/view/ViewStructure;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-virtual {p0, v0}, Landroid/view/ViewStructure;->setEnabled(Z)V
-
-    .line 3
-    .line 4
-    .line 5
-    return-void
-.end method
-
-.method public static p(Landroid/view/ViewStructure;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    invoke-virtual {p0, v0}, Landroid/view/ViewStructure;->setFocusable(Z)V
-
-    .line 3
-    .line 4
-    .line 5
-    return-void
-.end method
-
-.method public static q(Landroid/view/ViewStructure;Z)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setFocused(Z)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static r(Landroid/view/ViewStructure;ILjava/lang/String;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-virtual {p0, p1, p2, v0, v0}, Landroid/view/ViewStructure;->setId(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 3
-    .line 4
-    .line 5
-    return-void
-.end method
-
-.method public static s(Landroid/view/ViewStructure;)V
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x81
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroid/view/ViewStructure;->setInputType(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static t(Landroid/view/ViewStructure;)V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    invoke-virtual {p0, v0}, Landroid/view/ViewStructure;->setLongClickable(Z)V
-
-    .line 3
-    .line 4
-    .line 5
-    return-void
-.end method
-
-.method public static u(Landroid/view/ViewStructure;Z)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setSelected(Z)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static v(Landroid/view/ViewStructure;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setText(Ljava/lang/CharSequence;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static w(Landroid/view/ViewStructure;I)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewStructure;->setVisibility(I)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static x(ILhb0;)V
-    .locals 2
-
-    .line 1
-    const-class v0, Landroidx/camera/camera2/internal/compat/quirk/ImageCapturePixelHDRPlusQuirk;
-
-    .line 2
-    .line 3
-    sget-object v1, Lgb1;->a:Lzp;
-
-    .line 4
-    .line 5
-    invoke-virtual {v1, v0}, Lzp;->e(Ljava/lang/Class;)Lh75;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    check-cast v0, Landroidx/camera/camera2/internal/compat/quirk/ImageCapturePixelHDRPlusQuirk;
-
-    .line 10
-    .line 11
-    if-nez v0, :cond_0
+    if-eqz p4, :cond_1
 
     .line 12
     .line 13
-    goto :goto_0
+    iput-object p4, p0, Lmw;->d:Lrt1;
 
     .line 14
-    :cond_0
-    if-eqz p0, :cond_2
-
     .line 15
-    .line 16
-    const/4 v0, 0x1
+    iput-object p5, p0, Lmw;->e:Ljava/util/List;
 
+    .line 16
     .line 17
-    if-eq p0, v0, :cond_1
+    iput-object p6, p0, Lmw;->f:Ljz0;
 
     .line 18
     .line 19
-    :goto_0
-    return-void
+    iput p7, p0, Lmw;->g:I
 
     .line 20
-    :cond_1
-    sget-object p0, Landroid/hardware/camera2/CaptureRequest;->CONTROL_ENABLE_ZSL:Landroid/hardware/camera2/CaptureRequest$Key;
-
     .line 21
+    if-eqz p8, :cond_0
+
     .line 22
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
     .line 23
-    .line 24
-    invoke-static {p0}, Lib0;->B0(Landroid/hardware/camera2/CaptureRequest$Key;)Luu;
+    iput-object p8, p0, Lmw;->h:Landroid/util/Range;
 
+    .line 24
     .line 25
+    iput-boolean p9, p0, Lmw;->i:Z
+
     .line 26
     .line 27
-    move-result-object p0
+    iput p10, p0, Lmw;->j:I
 
     .line 28
-    iget-object p1, p1, Lhb0;->b:Lc94;
-
     .line 29
+    return-void
+
     .line 30
-    invoke-virtual {p1, p0, v0}, Lc94;->f(Luu;Ljava/lang/Object;)V
+    :cond_0
+    const-string p0, "Null targetFrameRate"
 
     .line 31
     .line 32
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
+
     .line 33
-    return-void
-
     .line 34
-    :cond_2
-    sget-object p0, Landroid/hardware/camera2/CaptureRequest;->CONTROL_ENABLE_ZSL:Landroid/hardware/camera2/CaptureRequest$Key;
-
     .line 35
+    throw p1
+
     .line 36
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    :cond_1
+    const-string p0, "Null dynamicRange"
 
     .line 37
     .line 38
-    invoke-static {p0}, Lib0;->B0(Landroid/hardware/camera2/CaptureRequest$Key;)Luu;
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 39
     .line 40
     .line 41
-    move-result-object p0
+    throw p1
+.end method
 
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p1, p0, :cond_0
+
+    .line 2
+    .line 3
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, Lmw;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_2
+
+    .line 7
+    .line 8
+    check-cast p1, Lmw;
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Lmw;->a:Ljk7;
+
+    .line 11
+    .line 12
+    iget-object v1, p1, Lmw;->a:Ljk7;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, v1}, Ljk7;->equals(Ljava/lang/Object;)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    if-eqz v0, :cond_2
+
+    .line 19
+    .line 20
+    iget v0, p0, Lmw;->b:I
+
+    .line 21
+    .line 22
+    iget v1, p1, Lmw;->b:I
+
+    .line 23
+    .line 24
+    if-ne v0, v1, :cond_2
+
+    .line 25
+    .line 26
+    iget-object v0, p0, Lmw;->c:Landroid/util/Size;
+
+    .line 27
+    .line 28
+    iget-object v1, p1, Lmw;->c:Landroid/util/Size;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Landroid/util/Size;->equals(Ljava/lang/Object;)Z
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v0
+
+    .line 34
+    if-eqz v0, :cond_2
+
+    .line 35
+    .line 36
+    iget-object v0, p0, Lmw;->d:Lrt1;
+
+    .line 37
+    .line 38
+    iget-object v1, p1, Lmw;->d:Lrt1;
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Lrt1;->equals(Ljava/lang/Object;)Z
+
+    .line 41
     .line 42
-    iget-object p1, p1, Lhb0;->b:Lc94;
-
     .line 43
+    move-result v0
+
     .line 44
-    invoke-virtual {p1, p0, v0}, Lc94;->f(Luu;Ljava/lang/Object;)V
+    if-eqz v0, :cond_2
 
     .line 45
     .line 46
+    iget-object v0, p0, Lmw;->e:Ljava/util/List;
+
     .line 47
-    return-void
+    .line 48
+    iget-object v1, p1, Lmw;->e:Ljava/util/List;
+
+    .line 49
+    .line 50
+    invoke-interface {v0, v1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v0
+
+    .line 54
+    if-eqz v0, :cond_2
+
+    .line 55
+    .line 56
+    iget-object v0, p1, Lmw;->f:Ljz0;
+
+    .line 57
+    .line 58
+    iget-object v1, p0, Lmw;->f:Ljz0;
+
+    .line 59
+    .line 60
+    if-nez v1, :cond_1
+
+    .line 61
+    .line 62
+    if-nez v0, :cond_2
+
+    .line 63
+    .line 64
+    goto :goto_0
+
+    .line 65
+    :cond_1
+    invoke-virtual {v1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v0
+
+    .line 69
+    if-eqz v0, :cond_2
+
+    .line 70
+    .line 71
+    :goto_0
+    iget v0, p0, Lmw;->g:I
+
+    .line 72
+    .line 73
+    iget v1, p1, Lmw;->g:I
+
+    .line 74
+    .line 75
+    if-ne v0, v1, :cond_2
+
+    .line 76
+    .line 77
+    iget-object v0, p0, Lmw;->h:Landroid/util/Range;
+
+    .line 78
+    .line 79
+    iget-object v1, p1, Lmw;->h:Landroid/util/Range;
+
+    .line 80
+    .line 81
+    invoke-virtual {v0, v1}, Landroid/util/Range;->equals(Ljava/lang/Object;)Z
+
+    .line 82
+    .line 83
+    .line 84
+    move-result v0
+
+    .line 85
+    if-eqz v0, :cond_2
+
+    .line 86
+    .line 87
+    iget-boolean v0, p0, Lmw;->i:Z
+
+    .line 88
+    .line 89
+    iget-boolean v1, p1, Lmw;->i:Z
+
+    .line 90
+    .line 91
+    if-ne v0, v1, :cond_2
+
+    .line 92
+    .line 93
+    iget p0, p0, Lmw;->j:I
+
+    .line 94
+    .line 95
+    iget p1, p1, Lmw;->j:I
+
+    .line 96
+    .line 97
+    if-ne p0, p1, :cond_2
+
+    .line 98
+    .line 99
+    :goto_1
+    const/4 p0, 0x1
+
+    .line 100
+    return p0
+
+    .line 101
+    :cond_2
+    const/4 p0, 0x0
+
+    .line 102
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lmw;->a:Ljk7;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljk7;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const v1, 0xf4243
+
+    .line 8
+    .line 9
+    .line 10
+    xor-int/2addr v0, v1
+
+    .line 11
+    mul-int/2addr v0, v1
+
+    .line 12
+    iget v2, p0, Lmw;->b:I
+
+    .line 13
+    .line 14
+    xor-int/2addr v0, v2
+
+    .line 15
+    mul-int/2addr v0, v1
+
+    .line 16
+    iget-object v2, p0, Lmw;->c:Landroid/util/Size;
+
+    .line 17
+    .line 18
+    invoke-virtual {v2}, Landroid/util/Size;->hashCode()I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v2
+
+    .line 22
+    xor-int/2addr v0, v2
+
+    .line 23
+    mul-int/2addr v0, v1
+
+    .line 24
+    iget-object v2, p0, Lmw;->d:Lrt1;
+
+    .line 25
+    .line 26
+    invoke-virtual {v2}, Lrt1;->hashCode()I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v2
+
+    .line 30
+    xor-int/2addr v0, v2
+
+    .line 31
+    mul-int/2addr v0, v1
+
+    .line 32
+    iget-object v2, p0, Lmw;->e:Ljava/util/List;
+
+    .line 33
+    .line 34
+    invoke-interface {v2}, Ljava/util/List;->hashCode()I
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v2
+
+    .line 38
+    xor-int/2addr v0, v2
+
+    .line 39
+    mul-int/2addr v0, v1
+
+    .line 40
+    iget-object v2, p0, Lmw;->f:Ljz0;
+
+    .line 41
+    .line 42
+    if-nez v2, :cond_0
+
+    .line 43
+    .line 44
+    const/4 v2, 0x0
+
+    .line 45
+    goto :goto_0
+
+    .line 46
+    :cond_0
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v2
+
+    .line 50
+    :goto_0
+    xor-int/2addr v0, v2
+
+    .line 51
+    mul-int/2addr v0, v1
+
+    .line 52
+    iget v2, p0, Lmw;->g:I
+
+    .line 53
+    .line 54
+    xor-int/2addr v0, v2
+
+    .line 55
+    mul-int/2addr v0, v1
+
+    .line 56
+    iget-object v2, p0, Lmw;->h:Landroid/util/Range;
+
+    .line 57
+    .line 58
+    invoke-virtual {v2}, Landroid/util/Range;->hashCode()I
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v2
+
+    .line 62
+    xor-int/2addr v0, v2
+
+    .line 63
+    mul-int/2addr v0, v1
+
+    .line 64
+    iget-boolean v2, p0, Lmw;->i:Z
+
+    .line 65
+    .line 66
+    if-eqz v2, :cond_1
+
+    .line 67
+    .line 68
+    const/16 v2, 0x4cf
+
+    .line 69
+    .line 70
+    goto :goto_1
+
+    .line 71
+    :cond_1
+    const/16 v2, 0x4d5
+
+    .line 72
+    .line 73
+    :goto_1
+    xor-int/2addr v0, v2
+
+    .line 74
+    mul-int/2addr v0, v1
+
+    .line 75
+    iget p0, p0, Lmw;->j:I
+
+    .line 76
+    .line 77
+    xor-int/2addr p0, v0
+
+    .line 78
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "AttachedSurfaceInfo{surfaceConfig="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lmw;->a:Ljk7;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", imageFormat="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget v1, p0, Lmw;->b:I
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", size="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, Lmw;->c:Landroid/util/Size;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", dynamicRange="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget-object v1, p0, Lmw;->d:Lrt1;
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ", captureTypes="
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object v1, p0, Lmw;->e:Ljava/util/List;
+
+    .line 49
+    .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    const-string v1, ", implementationOptions="
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    iget-object v1, p0, Lmw;->f:Ljz0;
+
+    .line 59
+    .line 60
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    const-string v1, ", sessionType="
+
+    .line 64
+    .line 65
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 66
+    .line 67
+    .line 68
+    iget v1, p0, Lmw;->g:I
+
+    .line 69
+    .line 70
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 71
+    .line 72
+    .line 73
+    const-string v1, ", targetFrameRate="
+
+    .line 74
+    .line 75
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    .line 78
+    iget-object v1, p0, Lmw;->h:Landroid/util/Range;
+
+    .line 79
+    .line 80
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 81
+    .line 82
+    .line 83
+    const-string v1, ", strictFrameRateRequired="
+
+    .line 84
+    .line 85
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 86
+    .line 87
+    .line 88
+    iget-boolean v1, p0, Lmw;->i:Z
+
+    .line 89
+    .line 90
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 91
+    .line 92
+    .line 93
+    const-string v1, ", customMaxFrameRate="
+
+    .line 94
+    .line 95
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 96
+    .line 97
+    .line 98
+    iget p0, p0, Lmw;->j:I
+
+    .line 99
+    .line 100
+    const-string v1, "}"
+
+    .line 101
+    .line 102
+    invoke-static {v0, p0, v1}, Leh0;->p(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object p0
+
+    .line 106
+    return-object p0
 .end method

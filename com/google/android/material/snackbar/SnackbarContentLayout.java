@@ -6,22 +6,23 @@ import android.util.AttributeSet;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import defpackage.c95;
-import defpackage.hi;
-import defpackage.k85;
-import defpackage.v75;
-import defpackage.va6;
+import defpackage.ct5;
+import defpackage.js5;
+import defpackage.ur5;
+import defpackage.ut;
+import defpackage.vj;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class SnackbarContentLayout extends LinearLayout {
-    public TextView Q;
-    public Button R;
-    public int S;
+    public TextView c0;
+    public Button d0;
+    public Button e0;
+    public int f0;
 
     public SnackbarContentLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        va6.V(context, v75.motionEasingEmphasizedInterpolator, hi.b);
+        ut.i0(context, ur5.motionEasingEmphasizedInterpolator, vj.b);
     }
 
     public final boolean a(int i, int i2, int i3) {
@@ -32,10 +33,10 @@ public class SnackbarContentLayout extends LinearLayout {
         } else {
             z = false;
         }
-        if (this.Q.getPaddingTop() == i2 && this.Q.getPaddingBottom() == i3) {
+        if (this.c0.getPaddingTop() == i2 && this.c0.getPaddingBottom() == i3) {
             return z;
         }
-        TextView textView = this.Q;
+        TextView textView = this.c0;
         if (textView.isPaddingRelative()) {
             textView.setPaddingRelative(textView.getPaddingStart(), i2, textView.getPaddingEnd(), i3);
             return true;
@@ -45,18 +46,23 @@ public class SnackbarContentLayout extends LinearLayout {
     }
 
     public Button getActionView() {
-        return this.R;
+        return this.d0;
+    }
+
+    public Button getCloseView() {
+        return this.e0;
     }
 
     public TextView getMessageView() {
-        return this.Q;
+        return this.c0;
     }
 
     @Override // android.view.View
     public final void onFinishInflate() {
         super.onFinishInflate();
-        this.Q = (TextView) findViewById(c95.snackbar_text);
-        this.R = (Button) findViewById(c95.snackbar_action);
+        this.c0 = (TextView) findViewById(ct5.snackbar_text);
+        this.d0 = (Button) findViewById(ct5.snackbar_action);
+        this.e0 = (Button) findViewById(ct5.mtrl_snackbar_close);
     }
 
     @Override // android.widget.LinearLayout, android.view.View
@@ -65,11 +71,11 @@ public class SnackbarContentLayout extends LinearLayout {
         if (getOrientation() == 1) {
             return;
         }
-        int dimensionPixelSize = getResources().getDimensionPixelSize(k85.design_snackbar_padding_vertical_2lines);
-        int dimensionPixelSize2 = getResources().getDimensionPixelSize(k85.design_snackbar_padding_vertical);
-        Layout layout = this.Q.getLayout();
+        int dimensionPixelSize = getResources().getDimensionPixelSize(js5.design_snackbar_padding_vertical_2lines);
+        int dimensionPixelSize2 = getResources().getDimensionPixelSize(js5.design_snackbar_padding_vertical);
+        Layout layout = this.c0.getLayout();
         boolean z = layout != null && layout.getLineCount() > 1;
-        if (!z || this.S <= 0 || this.R.getMeasuredWidth() <= this.S) {
+        if (!z || this.f0 <= 0 || this.d0.getMeasuredWidth() <= this.f0) {
             if (!z) {
                 dimensionPixelSize = dimensionPixelSize2;
             }
@@ -83,6 +89,6 @@ public class SnackbarContentLayout extends LinearLayout {
     }
 
     public void setMaxInlineActionWidth(int i) {
-        this.S = i;
+        this.f0 = i;
     }
 }

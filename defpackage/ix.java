@@ -1,108 +1,70 @@
 package defpackage;
 
-import android.app.Activity;
-import android.app.Application;
-import android.content.ComponentCallbacks2;
-import android.content.res.Configuration;
-import android.os.Bundle;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.concurrent.atomic.AtomicBoolean;
+import android.graphics.Matrix;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ix implements Application.ActivityLifecycleCallbacks, ComponentCallbacks2 {
-    public static final ix U = new ix();
-    public final AtomicBoolean Q = new AtomicBoolean();
-    public final AtomicBoolean R = new AtomicBoolean();
-    public final ArrayList S = new ArrayList();
-    public boolean T = false;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ix implements qy2 {
+    public final pn7 a;
+    public final long b;
+    public final int c;
+    public final Matrix d;
+    public final int e;
 
-    public static void b(Application application) {
-        ix ixVar = U;
-        synchronized (ixVar) {
-            try {
-                if (!ixVar.T) {
-                    application.registerActivityLifecycleCallbacks(ixVar);
-                    application.registerComponentCallbacks(ixVar);
-                    ixVar.T = true;
-                }
-            } catch (Throwable th) {
-                throw th;
-            }
+    public ix(pn7 pn7Var, long j, int i, Matrix matrix, int i2) {
+        if (pn7Var == null) {
+            ku0.f("Null tagBundle");
+            throw null;
         }
+        this.a = pn7Var;
+        this.b = j;
+        this.c = i;
+        this.d = matrix;
+        this.e = i2;
     }
 
-    public final void a(hx hxVar) {
-        synchronized (U) {
-            this.S.add(hxVar);
+    @Override // defpackage.qy2
+    public final pn7 a() {
+        return this.a;
+    }
+
+    @Override // defpackage.qy2
+    public final int b() {
+        return this.e;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
         }
-    }
-
-    public final void c(boolean z) {
-        synchronized (U) {
-            try {
-                Iterator it = this.S.iterator();
-                while (it.hasNext()) {
-                    ((hx) it.next()).a(z);
-                }
-            } catch (Throwable th) {
-                throw th;
-            }
+        if (!(obj instanceof ix)) {
+            return false;
         }
+        ix ixVar = (ix) obj;
+        return this.a.equals(ixVar.a) && this.b == ixVar.b && this.c == ixVar.c && this.d.equals(ixVar.d) && this.e == ixVar.e;
     }
 
-    @Override // android.app.Application.ActivityLifecycleCallbacks
-    public final void onActivityCreated(Activity activity, Bundle bundle) {
-        boolean zCompareAndSet = this.Q.compareAndSet(true, false);
-        this.R.set(true);
-        if (zCompareAndSet) {
-            c(false);
-        }
+    @Override // defpackage.qy2
+    public final long getTimestamp() {
+        return this.b;
     }
 
-    @Override // android.app.Application.ActivityLifecycleCallbacks
-    public final void onActivityResumed(Activity activity) {
-        boolean zCompareAndSet = this.Q.compareAndSet(true, false);
-        this.R.set(true);
-        if (zCompareAndSet) {
-            c(false);
-        }
+    public final int hashCode() {
+        int hashCode = (this.a.hashCode() ^ 1000003) * 1000003;
+        long j = this.b;
+        return this.e ^ ((((((hashCode ^ ((int) ((j >>> 32) ^ j))) * 1000003) ^ this.c) * 1000003) ^ this.d.hashCode()) * 1000003);
     }
 
-    @Override // android.content.ComponentCallbacks2
-    public final void onTrimMemory(int i) {
-        if (i == 20 && this.Q.compareAndSet(false, true)) {
-            this.R.set(true);
-            c(true);
-        }
-    }
-
-    @Override // android.content.ComponentCallbacks
-    public final void onLowMemory() {
-    }
-
-    @Override // android.app.Application.ActivityLifecycleCallbacks
-    public final void onActivityDestroyed(Activity activity) {
-    }
-
-    @Override // android.app.Application.ActivityLifecycleCallbacks
-    public final void onActivityPaused(Activity activity) {
-    }
-
-    @Override // android.app.Application.ActivityLifecycleCallbacks
-    public final void onActivityStarted(Activity activity) {
-    }
-
-    @Override // android.app.Application.ActivityLifecycleCallbacks
-    public final void onActivityStopped(Activity activity) {
-    }
-
-    @Override // android.content.ComponentCallbacks
-    public final void onConfigurationChanged(Configuration configuration) {
-    }
-
-    @Override // android.app.Application.ActivityLifecycleCallbacks
-    public final void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("ImmutableImageInfo{tagBundle=");
+        sb.append(this.a);
+        sb.append(", timestamp=");
+        sb.append(this.b);
+        sb.append(", rotationDegrees=");
+        sb.append(this.c);
+        sb.append(", sensorToBufferTransformMatrix=");
+        sb.append(this.d);
+        sb.append(", flashState=");
+        return eh0.p(sb, this.e, "}");
     }
 }

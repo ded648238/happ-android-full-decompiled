@@ -1,100 +1,42 @@
 package defpackage;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
+import java.util.Collection;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class dp0 {
-    public final List a;
-    public final List b;
-    public final List c;
-    public List d;
-    public List e;
-    public final zu6 f;
-    public final zu6 g;
+    public final pr4 a;
+    public final b16 b;
+    public final Collection c;
+    public final mi2 d;
+    public final io0[] e;
 
-    public dp0(List list, List list2, List list3, List list4, List list5) {
-        this.a = list;
-        this.b = list2;
-        this.c = list3;
-        this.d = list4;
-        this.e = list5;
-        final int i = 0;
-        this.f = new zu6(new g72(this) { // from class: bp0
-            public final /* synthetic */ dp0 R;
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public dp0(pr4 pr4Var, io0[] io0VarArr, mi2 mi2Var) {
+        this(pr4Var, null, null, mi2Var, (io0[]) Arrays.copyOf(io0VarArr, io0VarArr.length));
+        pr4Var.getClass();
+    }
 
-            {
-                this.R = this;
-            }
+    public /* synthetic */ dp0(pr4 pr4Var, io0[] io0VarArr) {
+        this(pr4Var, io0VarArr, of.m0);
+    }
 
-            @Override // defpackage.g72
-            public final Object invoke() {
-                int i2 = i;
-                wn1 wn1Var = wn1.Q;
-                int i3 = 0;
-                dp0 dp0Var = this.R;
-                switch (i2) {
-                    case 0:
-                        List list6 = dp0Var.d;
-                        ArrayList arrayList = new ArrayList();
-                        int size = list6.size();
-                        while (i3 < size) {
-                            sm0.i0(arrayList, (List) ((g72) list6.get(i3)).invoke());
-                            i3++;
-                        }
-                        dp0Var.d = wn1Var;
-                        return arrayList;
-                    default:
-                        List list7 = dp0Var.e;
-                        ArrayList arrayList2 = new ArrayList();
-                        int size2 = list7.size();
-                        while (i3 < size2) {
-                            sm0.i0(arrayList2, (List) ((g72) list7.get(i3)).invoke());
-                            i3++;
-                        }
-                        dp0Var.e = wn1Var;
-                        return arrayList2;
-                }
-            }
-        });
-        final int i2 = 1;
-        this.g = new zu6(new g72(this) { // from class: bp0
-            public final /* synthetic */ dp0 R;
+    public dp0(pr4 pr4Var, b16 b16Var, Collection collection, mi2 mi2Var, io0... io0VarArr) {
+        this.a = pr4Var;
+        this.b = b16Var;
+        this.c = collection;
+        this.d = mi2Var;
+        this.e = io0VarArr;
+    }
 
-            {
-                this.R = this;
-            }
+    public /* synthetic */ dp0(Collection collection, io0[] io0VarArr) {
+        this(collection, io0VarArr, of.o0);
+    }
 
-            @Override // defpackage.g72
-            public final Object invoke() {
-                int i3 = i2;
-                wn1 wn1Var = wn1.Q;
-                int i4 = 0;
-                dp0 dp0Var = this.R;
-                switch (i3) {
-                    case 0:
-                        List list6 = dp0Var.d;
-                        ArrayList arrayList = new ArrayList();
-                        int size = list6.size();
-                        while (i4 < size) {
-                            sm0.i0(arrayList, (List) ((g72) list6.get(i4)).invoke());
-                            i4++;
-                        }
-                        dp0Var.d = wn1Var;
-                        return arrayList;
-                    default:
-                        List list7 = dp0Var.e;
-                        ArrayList arrayList2 = new ArrayList();
-                        int size2 = list7.size();
-                        while (i4 < size2) {
-                            sm0.i0(arrayList2, (List) ((g72) list7.get(i4)).invoke());
-                            i4++;
-                        }
-                        dp0Var.e = wn1Var;
-                        return arrayList2;
-                }
-            }
-        });
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public dp0(Collection collection, io0[] io0VarArr, mi2 mi2Var) {
+        this(null, null, collection, mi2Var, (io0[]) Arrays.copyOf(io0VarArr, io0VarArr.length));
+        collection.getClass();
     }
 }

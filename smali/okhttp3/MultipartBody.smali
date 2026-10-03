@@ -1,6 +1,6 @@
 .class public final Lokhttp3/MultipartBody;
 .super Lokhttp3/RequestBody;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -19,7 +19,7 @@
     d2 = {
         "Lokhttp3/MultipartBody;",
         "Lokhttp3/RequestBody;",
-        "Ly60;",
+        "Lo90;",
         "boundaryByteString",
         "Lokhttp3/MediaType;",
         "type",
@@ -27,14 +27,14 @@
         "Lokhttp3/MultipartBody$Part;",
         "parts",
         "<init>",
-        "(Ly60;Lokhttp3/MediaType;Ljava/util/List;)V",
-        "Lr50;",
+        "(Lo90;Lokhttp3/MediaType;Ljava/util/List;)V",
+        "Le80;",
         "sink",
         "",
         "countBytes",
         "",
         "writeOrCountBytes",
-        "(Lr50;Z)J",
+        "(Le80;Z)J",
         "",
         "index",
         "part",
@@ -53,10 +53,10 @@
         "()Ljava/util/List;",
         "contentLength",
         "()J",
-        "Lbh7;",
+        "Lr98;",
         "writeTo",
-        "(Lr50;)V",
-        "Ly60;",
+        "(Le80;)V",
+        "Lo90;",
         "Lokhttp3/MediaType;",
         "Ljava/util/List;",
         "J",
@@ -96,7 +96,7 @@
 
 
 # instance fields
-.field private final boundaryByteString:Ly60;
+.field private final boundaryByteString:Lo90;
 
 .field private contentLength:J
 
@@ -127,7 +127,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/MultipartBody$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/MultipartBody$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -303,12 +303,12 @@
     .end array-data
 .end method
 
-.method public constructor <init>(Ly60;Lokhttp3/MediaType;Ljava/util/List;)V
+.method public constructor <init>(Lo90;Lokhttp3/MediaType;Ljava/util/List;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ly60;",
+            "Lo90;",
             "Lokhttp3/MediaType;",
             "Ljava/util/List<",
             "Lokhttp3/MultipartBody$Part;",
@@ -337,7 +337,7 @@
     .line 11
     .line 12
     .line 13
-    iput-object p1, p0, Lokhttp3/MultipartBody;->boundaryByteString:Ly60;
+    iput-object p1, p0, Lokhttp3/MultipartBody;->boundaryByteString:Lo90;
 
     .line 14
     .line 15
@@ -420,7 +420,7 @@
     return-void
 .end method
 
-.method private final writeOrCountBytes(Lr50;Z)J
+.method private final writeOrCountBytes(Le80;Z)J
     .locals 12
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -433,7 +433,7 @@
 
     .line 2
     .line 3
-    new-instance p1, Lf50;
+    new-instance p1, Ll70;
 
     .line 4
     .line 5
@@ -472,7 +472,7 @@
 
     .line 19
     .line 20
-    const/4 v5, 0x0
+    move v5, v2
 
     .line 21
     :goto_1
@@ -521,16 +521,16 @@
 
     .line 43
     .line 44
-    invoke-interface {p1, v8}, Lr50;->write([B)Lr50;
+    invoke-interface {p1, v8}, Le80;->write([B)Le80;
 
     .line 45
     .line 46
     .line 47
-    iget-object v8, p0, Lokhttp3/MultipartBody;->boundaryByteString:Ly60;
+    iget-object v8, p0, Lokhttp3/MultipartBody;->boundaryByteString:Lo90;
 
     .line 48
     .line 49
-    invoke-interface {p1, v8}, Lr50;->B0(Ly60;)Lr50;
+    invoke-interface {p1, v8}, Le80;->M0(Lo90;)Le80;
 
     .line 50
     .line 51
@@ -539,7 +539,7 @@
 
     .line 53
     .line 54
-    invoke-interface {p1, v8}, Lr50;->write([B)Lr50;
+    invoke-interface {p1, v8}, Le80;->write([B)Le80;
 
     .line 55
     .line 56
@@ -556,7 +556,7 @@
     move-result v8
 
     .line 63
-    const/4 v9, 0x0
+    move v9, v2
 
     .line 64
     :goto_2
@@ -572,7 +572,7 @@
     move-result-object v10
 
     .line 70
-    invoke-interface {p1, v10}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {p1, v10}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 71
     .line 72
@@ -584,7 +584,7 @@
 
     .line 75
     .line 76
-    invoke-interface {v10, v11}, Lr50;->write([B)Lr50;
+    invoke-interface {v10, v11}, Le80;->write([B)Le80;
 
     .line 77
     .line 78
@@ -600,7 +600,7 @@
     move-result-object v11
 
     .line 84
-    invoke-interface {v10, v11}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {v10, v11}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 85
     .line 86
@@ -612,7 +612,7 @@
 
     .line 89
     .line 90
-    invoke-interface {v10, v11}, Lr50;->write([B)Lr50;
+    invoke-interface {v10, v11}, Le80;->write([B)Le80;
 
     .line 91
     .line 92
@@ -641,7 +641,7 @@
 
     .line 103
     .line 104
-    invoke-interface {p1, v8}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {p1, v8}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 105
     .line 106
@@ -657,7 +657,7 @@
     move-result-object v7
 
     .line 112
-    invoke-interface {v8, v7}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {v8, v7}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 113
     .line 114
@@ -669,7 +669,7 @@
 
     .line 117
     .line 118
-    invoke-interface {v7, v8}, Lr50;->write([B)Lr50;
+    invoke-interface {v7, v8}, Le80;->write([B)Le80;
 
     .line 119
     .line 120
@@ -699,7 +699,7 @@
 
     .line 132
     .line 133
-    invoke-interface {p1, v9}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {p1, v9}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 134
     .line 135
@@ -707,7 +707,7 @@
     move-result-object v9
 
     .line 137
-    invoke-interface {v9, v7, v8}, Lr50;->E0(J)Lr50;
+    invoke-interface {v9, v7, v8}, Le80;->R0(J)Le80;
 
     .line 138
     .line 139
@@ -719,7 +719,7 @@
 
     .line 142
     .line 143
-    invoke-interface {v9, v10}, Lr50;->write([B)Lr50;
+    invoke-interface {v9, v10}, Le80;->write([B)Le80;
 
     .line 144
     .line 145
@@ -737,7 +737,7 @@
     .line 150
     .line 151
     .line 152
-    invoke-virtual {v0}, Lf50;->f()V
+    invoke-virtual {v0}, Ll70;->g()V
 
     .line 153
     .line 154
@@ -751,7 +751,7 @@
 
     .line 157
     .line 158
-    invoke-interface {p1, v9}, Lr50;->write([B)Lr50;
+    invoke-interface {p1, v9}, Le80;->write([B)Le80;
 
     .line 159
     .line 160
@@ -767,13 +767,13 @@
 
     .line 165
     :cond_5
-    invoke-virtual {v6, p1}, Lokhttp3/RequestBody;->writeTo(Lr50;)V
+    invoke-virtual {v6, p1}, Lokhttp3/RequestBody;->writeTo(Le80;)V
 
     .line 166
     .line 167
     .line 168
     :goto_4
-    invoke-interface {p1, v9}, Lr50;->write([B)Lr50;
+    invoke-interface {p1, v9}, Le80;->write([B)Le80;
 
     .line 169
     .line 170
@@ -796,30 +796,30 @@
 
     .line 179
     .line 180
-    invoke-interface {p1, v1}, Lr50;->write([B)Lr50;
+    invoke-interface {p1, v1}, Le80;->write([B)Le80;
 
     .line 181
     .line 182
     .line 183
-    iget-object v2, p0, Lokhttp3/MultipartBody;->boundaryByteString:Ly60;
+    iget-object p0, p0, Lokhttp3/MultipartBody;->boundaryByteString:Lo90;
 
     .line 184
     .line 185
-    invoke-interface {p1, v2}, Lr50;->B0(Ly60;)Lr50;
+    invoke-interface {p1, p0}, Le80;->M0(Lo90;)Le80;
 
     .line 186
     .line 187
     .line 188
-    invoke-interface {p1, v1}, Lr50;->write([B)Lr50;
+    invoke-interface {p1, v1}, Le80;->write([B)Le80;
 
     .line 189
     .line 190
     .line 191
-    sget-object v1, Lokhttp3/MultipartBody;->CRLF:[B
+    sget-object p0, Lokhttp3/MultipartBody;->CRLF:[B
 
     .line 192
     .line 193
-    invoke-interface {p1, v1}, Lr50;->write([B)Lr50;
+    invoke-interface {p1, p0}, Le80;->write([B)Le80;
 
     .line 194
     .line 195
@@ -833,14 +833,14 @@
     .line 199
     .line 200
     .line 201
-    iget-wide p1, v0, Lf50;->R:J
+    iget-wide p0, v0, Ll70;->Y:J
 
     .line 202
     .line 203
-    add-long/2addr v3, p1
+    add-long/2addr v3, p0
 
     .line 204
-    invoke-virtual {v0}, Lf50;->f()V
+    invoke-virtual {v0}, Ll70;->g()V
 
     .line 205
     .line 206
@@ -852,8 +852,8 @@
 
 # virtual methods
 .method public final -deprecated_boundary()Ljava/lang/String;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -862,14 +862,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_parts()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -879,20 +879,20 @@
         }
     .end annotation
 
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_size()I
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -901,46 +901,46 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_type()Lokhttp3/MediaType;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartBody;->type:Lokhttp3/MediaType;
+    iget-object p0, p0, Lokhttp3/MultipartBody;->type:Lokhttp3/MediaType;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final boundary()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartBody;->boundaryByteString:Ly60;
+    iget-object p0, p0, Lokhttp3/MultipartBody;->boundaryByteString:Lo90;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ly60;->r()Ljava/lang/String;
+    invoke-virtual {p0}, Lo90;->r()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public contentLength()J
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -956,11 +956,11 @@
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 6
     .line 7
-    if-nez v4, :cond_0
+    if-nez v2, :cond_0
 
     .line 8
     .line 9
@@ -970,7 +970,7 @@
     const/4 v1, 0x1
 
     .line 11
-    invoke-direct {p0, v0, v1}, Lokhttp3/MultipartBody;->writeOrCountBytes(Lr50;Z)J
+    invoke-direct {p0, v0, v1}, Lokhttp3/MultipartBody;->writeOrCountBytes(Le80;Z)J
 
     .line 12
     .line 13
@@ -987,41 +987,41 @@
 .end method
 
 .method public contentType()Lokhttp3/MediaType;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartBody;->contentType:Lokhttp3/MediaType;
+    iget-object p0, p0, Lokhttp3/MultipartBody;->contentType:Lokhttp3/MediaType;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final part(I)Lokhttp3/MultipartBody$Part;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    check-cast p1, Lokhttp3/MultipartBody$Part;
+    check-cast p0, Lokhttp3/MultipartBody$Part;
 
     .line 8
     .line 9
-    return-object p1
+    return-object p0
 .end method
 
 .method public final parts()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1032,44 +1032,44 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final size()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/MultipartBody;->parts:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-interface {p0}, Ljava/util/List;->size()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final type()Lokhttp3/MediaType;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartBody;->type:Lokhttp3/MediaType;
+    iget-object p0, p0, Lokhttp3/MultipartBody;->type:Lokhttp3/MediaType;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public writeTo(Lr50;)V
+.method public writeTo(Le80;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1086,7 +1086,7 @@
     const/4 v0, 0x0
 
     .line 5
-    invoke-direct {p0, p1, v0}, Lokhttp3/MultipartBody;->writeOrCountBytes(Lr50;Z)J
+    invoke-direct {p0, p1, v0}, Lokhttp3/MultipartBody;->writeOrCountBytes(Le80;Z)J
 
     .line 6
     .line 7

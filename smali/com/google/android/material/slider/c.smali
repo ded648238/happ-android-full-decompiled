@@ -1,13 +1,13 @@
 .class public final synthetic Lcom/google/android/material/slider/c;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
 
 # instance fields
-.field public final synthetic Q:Lcom/google/android/material/slider/BaseSlider;
+.field public final synthetic X:Lcom/google/android/material/slider/BaseSlider;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/android/material/slider/c;->Q:Lcom/google/android/material/slider/BaseSlider;
+    iput-object p1, p0, Lcom/google/android/material/slider/c;->X:Lcom/google/android/material/slider/BaseSlider;
 
     .line 5
     .line 6
@@ -33,15 +33,15 @@
     .locals 1
 
     .line 1
-    sget v0, Lcom/google/android/material/slider/BaseSlider;->K1:I
+    sget v0, Lcom/google/android/material/slider/BaseSlider;->e2:I
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/slider/c;->Q:Lcom/google/android/material/slider/BaseSlider;
+    iget-object p0, p0, Lcom/google/android/material/slider/c;->X:Lcom/google/android/material/slider/BaseSlider;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lcom/google/android/material/slider/BaseSlider;->C()V
+    invoke-virtual {p0}, Lcom/google/android/material/slider/BaseSlider;->F()V
 
     .line 6
     .line 7

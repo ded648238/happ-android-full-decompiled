@@ -1,61 +1,109 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class jm7 {
-    public final long a;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.PowerManager;
+import com.google.firebase.messaging.FirebaseMessaging;
+import java.io.IOException;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
-    public static long a(long j, float f, float f2, int i) {
-        if ((i & 1) != 0) {
-            f = Float.intBitsToFloat((int) (j >> 32));
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class jm7 implements Runnable {
+    public final long X;
+    public final PowerManager.WakeLock Y;
+    public final FirebaseMessaging Z;
+    public final ThreadPoolExecutor c0 = new ThreadPoolExecutor(0, 1, 30, TimeUnit.SECONDS, new LinkedBlockingQueue(), new yr4("firebase-iid-executor"));
+
+    public jm7(FirebaseMessaging firebaseMessaging, long j) {
+        this.Z = firebaseMessaging;
+        this.X = j;
+        PowerManager.WakeLock newWakeLock = ((PowerManager) firebaseMessaging.b.getSystemService("power")).newWakeLock(1, "fiid-sync");
+        this.Y = newWakeLock;
+        newWakeLock.setReferenceCounted(false);
+    }
+
+    public final boolean a() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) this.Z.b.getSystemService("connectivity");
+        NetworkInfo activeNetworkInfo = connectivityManager != null ? connectivityManager.getActiveNetworkInfo() : null;
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
+
+    public final boolean b() {
+        try {
+        } catch (IOException e) {
+            String message = e.getMessage();
+            if ("SERVICE_NOT_AVAILABLE".equals(message) || "INTERNAL_SERVER_ERROR".equals(message) || "InternalServerError".equals(message)) {
+                e.getMessage();
+                return false;
+            }
+            if (e.getMessage() != null) {
+                throw e;
+            }
+        } catch (SecurityException unused) {
         }
-        if ((i & 2) != 0) {
-            f2 = Float.intBitsToFloat((int) (j & 4294967295L));
+        return this.Z.a() != null;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        PowerManager.WakeLock wakeLock = this.Y;
+        zs6 F = zs6.F();
+        FirebaseMessaging firebaseMessaging = this.Z;
+        if (F.I(firebaseMessaging.b)) {
+            wakeLock.acquire();
         }
-        return (((long) Float.floatToRawIntBits(f)) << 32) | (((long) Float.floatToRawIntBits(f2)) & 4294967295L);
-    }
-
-    public static final float b(long j) {
-        return Float.intBitsToFloat((int) (j >> 32));
-    }
-
-    public static final float c(long j) {
-        return Float.intBitsToFloat((int) (j & 4294967295L));
-    }
-
-    public static final long d(long j, long j2) {
-        float fIntBitsToFloat = Float.intBitsToFloat((int) (j >> 32)) - Float.intBitsToFloat((int) (j2 >> 32));
-        float fIntBitsToFloat2 = Float.intBitsToFloat((int) (j & 4294967295L)) - Float.intBitsToFloat((int) (j2 & 4294967295L));
-        return (((long) Float.floatToRawIntBits(fIntBitsToFloat)) << 32) | (((long) Float.floatToRawIntBits(fIntBitsToFloat2)) & 4294967295L);
-    }
-
-    public static final long e(long j, long j2) {
-        float fIntBitsToFloat = Float.intBitsToFloat((int) (j2 >> 32)) + Float.intBitsToFloat((int) (j >> 32));
-        return (((long) Float.floatToRawIntBits(Float.intBitsToFloat((int) (j2 & 4294967295L)) + Float.intBitsToFloat((int) (j & 4294967295L)))) & 4294967295L) | (Float.floatToRawIntBits(fIntBitsToFloat) << 32);
-    }
-
-    public static final long f(float f, long j) {
-        float fIntBitsToFloat = Float.intBitsToFloat((int) (j >> 32)) * f;
-        return (((long) Float.floatToRawIntBits(Float.intBitsToFloat((int) (j & 4294967295L)) * f)) & 4294967295L) | (Float.floatToRawIntBits(fIntBitsToFloat) << 32);
-    }
-
-    public static String g(long j) {
-        return "(" + b(j) + ", " + c(j) + ") px/sec";
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj instanceof jm7) {
-            return this.a == ((jm7) obj).a;
+        try {
+            try {
+                synchronized (firebaseMessaging) {
+                    firebaseMessaging.k = true;
+                }
+                if (!firebaseMessaging.i.f()) {
+                    synchronized (firebaseMessaging) {
+                        firebaseMessaging.k = false;
+                    }
+                    if (zs6.F().I(firebaseMessaging.b)) {
+                        wakeLock.release();
+                        return;
+                    }
+                    return;
+                }
+                if (zs6.F().H(firebaseMessaging.b) && !a()) {
+                    im7 im7Var = new im7();
+                    im7Var.a = this;
+                    im7Var.a();
+                    if (zs6.F().I(firebaseMessaging.b)) {
+                        wakeLock.release();
+                        return;
+                    }
+                    return;
+                }
+                if (b()) {
+                    synchronized (firebaseMessaging) {
+                        firebaseMessaging.k = false;
+                    }
+                } else {
+                    firebaseMessaging.h(this.X);
+                }
+                if (zs6.F().I(firebaseMessaging.b)) {
+                    wakeLock.release();
+                }
+            } catch (IOException e) {
+                e.getMessage();
+                synchronized (firebaseMessaging) {
+                    firebaseMessaging.k = false;
+                    if (zs6.F().I(firebaseMessaging.b)) {
+                        wakeLock.release();
+                    }
+                }
+            }
+        } catch (Throwable th) {
+            if (zs6.F().I(firebaseMessaging.b)) {
+                wakeLock.release();
+            }
+            throw th;
         }
-        return false;
-    }
-
-    public final int hashCode() {
-        long j = this.a;
-        return (int) (j ^ (j >>> 32));
-    }
-
-    public final String toString() {
-        return g(this.a);
     }
 }

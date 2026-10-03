@@ -1,20 +1,48 @@
 .class public final Lvq;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Ljava/util/Iterator;
-.implements Ljava/lang/Iterable;
+
+# static fields
+.field public static final c:Lvq;
 
 
 # instance fields
-.field public final Q:[Ljava/lang/Object;
+.field public final a:J
 
-.field public R:I
+.field public final b:J
 
 
 # direct methods
-.method public constructor <init>([Ljava/lang/Object;)V
+.method static constructor <clinit>()V
+    .locals 5
+
+    .line 1
+    new-instance v0, Lvq;
+
+    .line 2
+    .line 3
+    sget-wide v1, Ljo;->c:J
+
+    .line 4
+    .line 5
+    sget-wide v3, Ljo;->d:J
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v1, v2, v3, v4}, Lvq;-><init>(JJ)V
+
+    .line 8
+    .line 9
+    .line 10
+    sput-object v0, Lvq;->c:Lvq;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public constructor <init>(JJ)V
     .locals 0
 
     .line 1
@@ -23,119 +51,193 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lvq;->Q:[Ljava/lang/Object;
+    iput-wide p1, p0, Lvq;->a:J
 
     .line 5
     .line 6
-    const/4 p1, 0x0
+    iput-wide p3, p0, Lvq;->b:J
 
     .line 7
-    iput p1, p0, Lvq;->R:I
-
     .line 8
-    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final hasNext()Z
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
 
     .line 1
-    iget v0, p0, Lvq;->R:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lvq;->Q:[Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    array-length v1, v1
-
-    .line 6
-    if-ge v0, v1, :cond_0
-
-    .line 7
-    .line 8
     const/4 v0, 0x1
 
-    .line 9
-    return v0
-
-    .line 10
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 11
-    return v0
-.end method
-
-.method public final iterator()Ljava/util/Iterator;
-    .locals 0
-
-    .line 1
-    return-object p0
-.end method
-
-.method public final next()Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lvq;->R:I
-
     .line 2
-    .line 3
-    iget-object v1, p0, Lvq;->Q:[Ljava/lang/Object;
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    array-length v2, v1
+    :cond_0
+    instance-of v1, p1, Lvq;
 
     .line 6
-    if-ge v0, v2, :cond_0
-
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    add-int/lit8 v2, v0, 0x1
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    iput v2, p0, Lvq;->R:I
+    return v2
 
     .line 11
+    :cond_1
+    check-cast p1, Lvq;
+
     .line 12
-    aget-object v0, v1, v0
-
     .line 13
-    .line 14
-    return-object v0
+    iget-wide v3, p0, Lvq;->a:J
 
+    .line 14
     .line 15
-    :cond_0
-    invoke-static {}, Lfn;->p()V
+    iget-wide v5, p1, Lvq;->a:J
 
     .line 16
     .line 17
-    .line 18
-    const/4 v0, 0x0
+    invoke-static {v3, v4, v5, v6}, Lau0;->c(JJ)Z
 
+    .line 18
     .line 19
-    return-object v0
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-wide v3, p0, Lvq;->b:J
+
+    .line 25
+    .line 26
+    iget-wide p0, p1, Lvq;->b:J
+
+    .line 27
+    .line 28
+    invoke-static {v3, v4, p0, p1}, Lau0;->c(JJ)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p0
+
+    .line 32
+    if-nez p0, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    return v0
 .end method
 
-.method public final remove()V
-    .locals 1
+.method public final hashCode()I
+    .locals 3
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    sget v0, Lau0;->h:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    iget-wide v0, p0, Lvq;->a:J
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 10
+    .line 11
+    iget-wide v1, p0, Lvq;->b:J
+
+    .line 12
+    .line 13
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p0
+
+    .line 17
+    add-int/2addr p0, v0
+
+    .line 18
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    iget-wide v0, p0, Lvq;->a:J
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Lau0;->i(J)Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    throw v0
+    move-result-object v0
+
+    .line 7
+    iget-wide v1, p0, Lvq;->b:J
+
+    .line 8
+    .line 9
+    invoke-static {v1, v2}, Lau0;->i(J)Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    const-string v1, ", disabled="
+
+    .line 14
+    .line 15
+    const-string v2, ")"
+
+    .line 16
+    .line 17
+    const-string v3, "AppRadioButtonColors(enabled="
+
+    .line 18
+    .line 19
+    invoke-static {v3, v0, v1, p0, v2}, Leh0;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
+    return-object p0
 .end method

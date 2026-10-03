@@ -1,6 +1,6 @@
 .class public Lcom/github/luben/zstd/ZstdCompressCtx;
 .super Lcom/github/luben/zstd/AutoCloseBase;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -27,7 +27,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Lcom/github/luben/zstd/AutoCloseBase;-><init>()V
@@ -70,11 +70,11 @@
 
     .line 20
     .line 21
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 22
     .line 23
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
     .line 24
     .line 25
@@ -87,22 +87,28 @@
 
     .line 29
     :cond_0
-    const-string v0, "ZSTD_createCompressCtx failed"
+    const-string p0, "ZSTD_createCompressCtx failed"
 
     .line 30
     .line 31
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 32
     .line 33
     .line 34
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 35
-    throw v0
+    throw p0
 .end method
 
 .method private static native compressByteArray0(J[BII[BII)J
+.end method
+
+.method private static native compressByteArrayStream0(J[BIII[BIIII)J
+.end method
+
+.method private static native compressByteArrayToDirectByteBufferStream0(JLjava/nio/ByteBuffer;II[BIIII)J
 .end method
 
 .method private static native compressDirectByteBuffer0(JLjava/nio/ByteBuffer;IILjava/nio/ByteBuffer;II)J
@@ -111,8 +117,11 @@
 .method private static native compressDirectByteBufferStream0(JLjava/nio/ByteBuffer;IILjava/nio/ByteBuffer;III)J
 .end method
 
+.method private static native compressDirectByteBufferToByteArrayStream0(J[BIIILjava/nio/ByteBuffer;III)J
+.end method
+
 .method private ensureOpen()V
-    .locals 5
+    .locals 4
 
     .line 1
     iget-wide v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->nativePtr:J
@@ -123,11 +132,11 @@
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    cmp-long p0, v0, v2
 
     .line 6
     .line 7
-    if-eqz v4, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
@@ -135,11 +144,11 @@
 
     .line 10
     :cond_0
-    const-string v0, "Compression context is closed"
+    const-string p0, "Compression context is closed"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -178,6 +187,135 @@
 .end method
 
 .method private static native setPledgedSrcSize0(JJ)J
+.end method
+
+.method private static updateStreamPositions(JLjava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Z
+    .locals 4
+
+    .line 1
+    const-wide v0, 0x80000000L
+
+    .line 2
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    and-long/2addr v0, p0
+
+    .line 7
+    const-wide/16 v2, 0x0
+
+    .line 8
+    .line 9
+    cmp-long v0, v0, v2
+
+    .line 10
+    .line 11
+    if-nez v0, :cond_1
+
+    .line 12
+    .line 13
+    const-wide/32 v0, 0x7fffffff
+
+    .line 14
+    .line 15
+    .line 16
+    and-long/2addr v0, p0
+
+    .line 17
+    long-to-int v0, v0
+
+    .line 18
+    invoke-virtual {p3, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+
+    .line 19
+    .line 20
+    .line 21
+    const/16 p3, 0x20
+
+    .line 22
+    .line 23
+    ushr-long v0, p0, p3
+
+    .line 24
+    .line 25
+    long-to-int p3, v0
+
+    .line 26
+    const v0, 0x7fffffff
+
+    .line 27
+    .line 28
+    .line 29
+    and-int/2addr p3, v0
+
+    .line 30
+    invoke-virtual {p2, p3}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+
+    .line 31
+    .line 32
+    .line 33
+    const/16 p2, 0x3f
+
+    .line 34
+    .line 35
+    ushr-long/2addr p0, p2
+
+    .line 36
+    const-wide/16 p2, 0x1
+
+    .line 37
+    .line 38
+    cmp-long p0, p0, p2
+
+    .line 39
+    .line 40
+    if-nez p0, :cond_0
+
+    .line 41
+    .line 42
+    const/4 p0, 0x1
+
+    .line 43
+    return p0
+
+    .line 44
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 45
+    return p0
+
+    .line 46
+    :cond_1
+    const-wide/16 p2, 0xff
+
+    .line 47
+    .line 48
+    and-long/2addr p0, p2
+
+    .line 49
+    neg-long p0, p0
+
+    .line 50
+    new-instance p2, Lcom/github/luben/zstd/ZstdException;
+
+    .line 51
+    .line 52
+    invoke-static {p0, p1}, Lcom/github/luben/zstd/Zstd;->getErrorName(J)Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p3
+
+    .line 56
+    invoke-direct {p2, p0, p1, p3}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
+
+    .line 57
+    .line 58
+    .line 59
+    throw p2
 .end method
 
 
@@ -238,25 +376,25 @@
     .line 75
     invoke-virtual/range {v0 .. v6}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressDirectByteBuffer(Ljava/nio/ByteBuffer;IILjava/nio/ByteBuffer;II)I
 
-    move-result p1
+    move-result p0
 
     .line 76
     invoke-virtual {v4}, Ljava/nio/Buffer;->limit()I
 
-    move-result p2
+    move-result p1
 
-    invoke-virtual {v4, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v4, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     .line 77
     invoke-virtual {v1}, Ljava/nio/Buffer;->position()I
 
-    move-result p2
+    move-result p1
 
-    add-int/2addr p2, p1
+    add-int/2addr p1, p0
 
-    invoke-virtual {v1, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v1, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    return p1
+    return p0
 .end method
 
 .method public compress([B[B)I
@@ -279,13 +417,13 @@
 
     invoke-virtual/range {v0 .. v6}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressByteArray([BII[BII)I
 
-    move-result p1
+    move-result p0
 
-    return p1
+    return p0
 .end method
 
 .method public compress(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
-    .locals 12
+    .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/github/luben/zstd/ZstdException;
@@ -328,23 +466,23 @@
     .line 16
     .line 17
     .line 18
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 19
     .line 20
-    if-gtz v4, :cond_0
+    if-gtz v2, :cond_0
 
     .line 21
     .line 22
-    long-to-int v8, v0
+    long-to-int v6, v0
 
     .line 23
-    invoke-static {v8}, Ljava/nio/ByteBuffer;->allocateDirect(I)Ljava/nio/ByteBuffer;
+    invoke-static {v6}, Ljava/nio/ByteBuffer;->allocateDirect(I)Ljava/nio/ByteBuffer;
 
     .line 24
     .line 25
     .line 26
-    move-result-object v6
+    move-result-object v4
 
     .line 27
     invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
@@ -352,7 +490,7 @@
     .line 28
     .line 29
     .line 30
-    move-result v10
+    move-result v8
 
     .line 31
     invoke-virtual {p1}, Ljava/nio/Buffer;->limit()I
@@ -371,50 +509,50 @@
     move-result v1
 
     .line 39
-    sub-int v11, v0, v1
+    sub-int v9, v0, v1
 
     .line 40
     .line 41
-    const/4 v7, 0x0
+    const/4 v5, 0x0
 
     .line 42
-    move-object v5, p0
+    move-object v3, p0
 
     .line 43
-    move-object v9, p1
+    move-object v7, p1
 
     .line 44
-    invoke-virtual/range {v5 .. v11}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressDirectByteBuffer(Ljava/nio/ByteBuffer;IILjava/nio/ByteBuffer;II)I
+    invoke-virtual/range {v3 .. v9}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressDirectByteBuffer(Ljava/nio/ByteBuffer;IILjava/nio/ByteBuffer;II)I
 
     .line 45
     .line 46
     .line 47
-    move-result p1
+    move-result p0
 
     .line 48
-    invoke-virtual {v9}, Ljava/nio/Buffer;->limit()I
+    invoke-virtual {v7}, Ljava/nio/Buffer;->limit()I
 
     .line 49
     .line 50
     .line 51
-    move-result v0
+    move-result p1
 
     .line 52
-    invoke-virtual {v9, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v7, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     .line 53
     .line 54
     .line 55
-    invoke-virtual {v6, p1}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
+    invoke-virtual {v4, p0}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
     .line 56
     .line 57
     .line 58
-    return-object v6
+    return-object v4
 
     .line 59
     :cond_0
-    new-instance p1, Lcom/github/luben/zstd/ZstdException;
+    new-instance p0, Lcom/github/luben/zstd/ZstdException;
 
     .line 60
     .line 61
@@ -426,20 +564,20 @@
     move-result-wide v0
 
     .line 65
-    const-string v2, "Max output size is greater than MAX_INT"
+    const-string p1, "Max output size is greater than MAX_INT"
 
     .line 66
     .line 67
-    invoke-direct {p1, v0, v1, v2}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
+    invoke-direct {p0, v0, v1, p1}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
 
     .line 68
     .line 69
     .line 70
-    throw p1
+    throw p0
 .end method
 
 .method public compress([B)[B
-    .locals 12
+    .locals 10
 
     .line 79
     array-length v0, p1
@@ -452,52 +590,52 @@
 
     const-wide/32 v2, 0x7fffffff
 
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
-    if-gtz v4, :cond_0
+    if-gtz v2, :cond_0
 
-    long-to-int v8, v0
+    long-to-int v6, v0
 
     .line 80
-    new-array v6, v8, [B
+    new-array v4, v6, [B
 
-    const/4 v10, 0x0
+    const/4 v8, 0x0
 
     .line 81
-    array-length v11, p1
+    array-length v9, p1
 
-    const/4 v7, 0x0
+    const/4 v5, 0x0
 
-    move-object v5, p0
+    move-object v3, p0
 
-    move-object v9, p1
+    move-object v7, p1
 
-    invoke-virtual/range {v5 .. v11}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressByteArray([BII[BII)I
+    invoke-virtual/range {v3 .. v9}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressByteArray([BII[BII)I
 
-    move-result p1
+    move-result p0
 
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
     .line 82
-    invoke-static {v6, v0, p1}, Ljava/util/Arrays;->copyOfRange([BII)[B
+    invoke-static {v4, p1, p0}, Ljava/util/Arrays;->copyOfRange([BII)[B
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 
     .line 83
     :cond_0
-    new-instance p1, Lcom/github/luben/zstd/ZstdException;
+    new-instance p0, Lcom/github/luben/zstd/ZstdException;
 
     invoke-static {}, Lcom/github/luben/zstd/Zstd;->errGeneric()J
 
     move-result-wide v0
 
-    const-string v2, "Max output size is greater than MAX_INT"
+    const-string p1, "Max output size is greater than MAX_INT"
 
-    invoke-direct {p1, v0, v1, v2}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
+    invoke-direct {p0, v0, v1, p1}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
 
-    throw p1
+    throw p0
 .end method
 
 .method public compressByteArray([BII[BII)I
@@ -580,15 +718,15 @@
     .line 34
     .line 35
     .line 36
-    cmp-long p5, p1, p3
+    cmp-long p3, p1, p3
 
     .line 37
     .line 38
-    if-gtz p5, :cond_0
+    if-gtz p3, :cond_0
 
     .line 39
     .line 40
-    long-to-int p2, p1
+    long-to-int p1, p1
 
     .line 41
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
@@ -596,7 +734,7 @@
     .line 42
     .line 43
     .line 44
-    return p2
+    return p1
 
     .line 45
     :cond_0
@@ -657,6 +795,516 @@
     .line 68
     .line 69
     throw p1
+.end method
+
+.method public compressByteBufferStream(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;Lcom/github/luben/zstd/EndDirective;)Z
+    .locals 13
+
+    .line 1
+    invoke-direct {p0}, Lcom/github/luben/zstd/ZstdCompressCtx;->ensureOpen()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Ljava/nio/Buffer;->isReadOnly()Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    if-nez v0, :cond_7
+
+    .line 10
+    .line 11
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->isDirect()Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-nez v0, :cond_1
+
+    .line 16
+    .line 17
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->hasArray()Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    if-eqz v0, :cond_0
+
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_0
+    const-string p0, "dst must be a direct or array-backed buffer"
+
+    .line 25
+    .line 26
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return v1
+
+    .line 30
+    :cond_1
+    :goto_0
+    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->isDirect()Z
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v0
+
+    .line 34
+    if-nez v0, :cond_3
+
+    .line 35
+    .line 36
+    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->hasArray()Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v0
+
+    .line 40
+    if-eqz v0, :cond_2
+
+    .line 41
+    .line 42
+    goto :goto_1
+
+    .line 43
+    :cond_2
+    const-string p0, "src must be a direct or array-backed buffer"
+
+    .line 44
+    .line 45
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    return v1
+
+    .line 49
+    :cond_3
+    :goto_1
+    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->acquireSharedLock()V
+
+    .line 50
+    .line 51
+    .line 52
+    :try_start_0
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->isDirect()Z
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v0
+
+    .line 56
+    if-eqz v0, :cond_5
+
+    .line 57
+    .line 58
+    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->isDirect()Z
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 62
+    iget-wide v1, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->nativePtr:J
+
+    .line 63
+    .line 64
+    if-eqz v0, :cond_4
+
+    .line 65
+    .line 66
+    :try_start_1
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v4
+
+    .line 70
+    invoke-virtual {p1}, Ljava/nio/Buffer;->limit()I
+
+    .line 71
+    .line 72
+    .line 73
+    move-result v5
+
+    .line 74
+    invoke-virtual {p2}, Ljava/nio/Buffer;->position()I
+
+    .line 75
+    .line 76
+    .line 77
+    move-result v7
+
+    .line 78
+    invoke-virtual {p2}, Ljava/nio/Buffer;->limit()I
+
+    .line 79
+    .line 80
+    .line 81
+    move-result v8
+
+    .line 82
+    invoke-virtual/range {p3 .. p3}, Lcom/github/luben/zstd/EndDirective;->value()I
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v9
+
+    .line 86
+    move-object v3, p1
+
+    .line 87
+    move-object v6, p2
+
+    .line 88
+    invoke-static/range {v1 .. v9}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressDirectByteBufferStream0(JLjava/nio/ByteBuffer;IILjava/nio/ByteBuffer;III)J
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-wide v0
+
+    .line 92
+    :goto_2
+    move-object v12, p2
+
+    .line 93
+    goto/16 :goto_3
+
+    .line 94
+    .line 95
+    :catchall_0
+    move-exception v0
+
+    .line 96
+    move-object p1, v0
+
+    .line 97
+    goto/16 :goto_4
+
+    .line 98
+    .line 99
+    :cond_4
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
+
+    .line 100
+    .line 101
+    .line 102
+    move-result v4
+
+    .line 103
+    invoke-virtual {p1}, Ljava/nio/Buffer;->limit()I
+
+    .line 104
+    .line 105
+    .line 106
+    move-result v5
+
+    .line 107
+    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->array()[B
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v6
+
+    .line 111
+    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->arrayOffset()I
+
+    .line 112
+    .line 113
+    .line 114
+    move-result v7
+
+    .line 115
+    invoke-virtual {p2}, Ljava/nio/Buffer;->position()I
+
+    .line 116
+    .line 117
+    .line 118
+    move-result v8
+
+    .line 119
+    invoke-virtual {p2}, Ljava/nio/Buffer;->limit()I
+
+    .line 120
+    .line 121
+    .line 122
+    move-result v9
+
+    .line 123
+    invoke-virtual/range {p3 .. p3}, Lcom/github/luben/zstd/EndDirective;->value()I
+
+    .line 124
+    .line 125
+    .line 126
+    move-result v10
+
+    .line 127
+    move-object v3, p1
+
+    .line 128
+    invoke-static/range {v1 .. v10}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressByteArrayToDirectByteBufferStream0(JLjava/nio/ByteBuffer;II[BIIII)J
+
+    .line 129
+    .line 130
+    .line 131
+    move-result-wide v0
+
+    .line 132
+    goto :goto_2
+
+    .line 133
+    :cond_5
+    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->isDirect()Z
+
+    .line 134
+    .line 135
+    .line 136
+    move-result v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 137
+    iget-wide v1, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->nativePtr:J
+
+    .line 138
+    .line 139
+    if-eqz v0, :cond_6
+
+    .line 140
+    .line 141
+    :try_start_2
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-object v4
+
+    .line 145
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->arrayOffset()I
+
+    .line 146
+    .line 147
+    .line 148
+    move-result v5
+
+    .line 149
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
+
+    .line 150
+    .line 151
+    .line 152
+    move-result v6
+
+    .line 153
+    invoke-virtual {p1}, Ljava/nio/Buffer;->limit()I
+
+    .line 154
+    .line 155
+    .line 156
+    move-result v7
+
+    .line 157
+    invoke-virtual {p2}, Ljava/nio/Buffer;->position()I
+
+    .line 158
+    .line 159
+    .line 160
+    move-result v9
+
+    .line 161
+    invoke-virtual {p2}, Ljava/nio/Buffer;->limit()I
+
+    .line 162
+    .line 163
+    .line 164
+    move-result v10
+
+    .line 165
+    invoke-virtual/range {p3 .. p3}, Lcom/github/luben/zstd/EndDirective;->value()I
+
+    .line 166
+    .line 167
+    .line 168
+    move-result v11
+
+    .line 169
+    move-object v8, p2
+
+    .line 170
+    move-wide v2, v1
+
+    .line 171
+    invoke-static/range {v2 .. v11}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressDirectByteBufferToByteArrayStream0(J[BIIILjava/nio/ByteBuffer;III)J
+
+    .line 172
+    .line 173
+    .line 174
+    move-result-wide v0
+
+    .line 175
+    move-object v12, v8
+
+    .line 176
+    goto :goto_3
+
+    .line 177
+    :cond_6
+    move-object v12, p2
+
+    .line 178
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
+
+    .line 179
+    .line 180
+    .line 181
+    move-result-object v3
+
+    .line 182
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->arrayOffset()I
+
+    .line 183
+    .line 184
+    .line 185
+    move-result v4
+
+    .line 186
+    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
+
+    .line 187
+    .line 188
+    .line 189
+    move-result v5
+
+    .line 190
+    invoke-virtual {p1}, Ljava/nio/Buffer;->limit()I
+
+    .line 191
+    .line 192
+    .line 193
+    move-result v6
+
+    .line 194
+    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->array()[B
+
+    .line 195
+    .line 196
+    .line 197
+    move-result-object v7
+
+    .line 198
+    invoke-virtual {p2}, Ljava/nio/ByteBuffer;->arrayOffset()I
+
+    .line 199
+    .line 200
+    .line 201
+    move-result v8
+
+    .line 202
+    invoke-virtual {p2}, Ljava/nio/Buffer;->position()I
+
+    .line 203
+    .line 204
+    .line 205
+    move-result v9
+
+    .line 206
+    invoke-virtual {p2}, Ljava/nio/Buffer;->limit()I
+
+    .line 207
+    .line 208
+    .line 209
+    move-result v10
+
+    .line 210
+    invoke-virtual/range {p3 .. p3}, Lcom/github/luben/zstd/EndDirective;->value()I
+
+    .line 211
+    .line 212
+    .line 213
+    move-result v11
+
+    .line 214
+    invoke-static/range {v1 .. v11}, Lcom/github/luben/zstd/ZstdCompressCtx;->compressByteArrayStream0(J[BIII[BIIII)J
+
+    .line 215
+    .line 216
+    .line 217
+    move-result-wide v0
+
+    .line 218
+    :goto_3
+    invoke-static {v0, v1, p1, p2}, Lcom/github/luben/zstd/ZstdCompressCtx;->updateStreamPositions(JLjava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Z
+
+    .line 219
+    .line 220
+    .line 221
+    move-result p1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 222
+    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 223
+    .line 224
+    .line 225
+    return p1
+
+    .line 226
+    :goto_4
+    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 227
+    .line 228
+    .line 229
+    throw p1
+
+    .line 230
+    :cond_7
+    const-string p0, "dst must be writable"
+
+    .line 231
+    .line 232
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 233
+    .line 234
+    .line 235
+    return v1
 .end method
 
 .method public compressDirectByteBuffer(Ljava/nio/ByteBuffer;IILjava/nio/ByteBuffer;II)I
@@ -776,15 +1424,15 @@
     .line 53
     .line 54
     .line 55
-    cmp-long p5, p1, p3
+    cmp-long p3, p1, p3
 
     .line 56
     .line 57
-    if-gtz p5, :cond_0
+    if-gtz p3, :cond_0
 
     .line 58
     .line 59
-    long-to-int p2, p1
+    long-to-int p1, p1
 
     .line 60
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
@@ -792,7 +1440,7 @@
     .line 61
     .line 62
     .line 63
-    return p2
+    return p1
 
     .line 64
     :cond_0
@@ -856,11 +1504,11 @@
 
     .line 89
     :cond_2
-    const-string p1, "dstBuff must be a direct buffer"
+    const-string p0, "dstBuff must be a direct buffer"
 
     .line 90
     .line 91
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 92
     .line 93
@@ -869,11 +1517,11 @@
 
     .line 95
     :cond_3
-    const-string p1, "srcBuff must be a direct buffer"
+    const-string p0, "srcBuff must be a direct buffer"
 
     .line 96
     .line 97
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 98
     .line 99
@@ -954,163 +1602,41 @@
     move-result-wide p1
 
     .line 35
-    const-wide v0, 0x80000000L
+    invoke-static {p1, p2, v2, v5}, Lcom/github/luben/zstd/ZstdCompressCtx;->updateStreamPositions(JLjava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Z
 
     .line 36
     .line 37
     .line 38
-    .line 39
-    .line 40
-    and-long/2addr v0, p1
-
-    .line 41
-    const-wide/16 v3, 0x0
-
-    .line 42
-    .line 43
-    cmp-long p3, v0, v3
-
-    .line 44
-    .line 45
-    if-nez p3, :cond_1
-
-    .line 46
-    .line 47
-    const-wide/32 v0, 0x7fffffff
-
-    .line 48
-    .line 49
-    .line 50
-    and-long/2addr v0, p1
-
-    .line 51
-    long-to-int p3, v0
-
-    .line 52
-    invoke-virtual {v5, p3}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
-
-    .line 53
-    .line 54
-    .line 55
-    const/16 p3, 0x20
-
-    .line 56
-    .line 57
-    ushr-long v0, p1, p3
-
-    .line 58
-    .line 59
-    long-to-int p3, v0
-
-    .line 60
-    const v0, 0x7fffffff
-
-    .line 61
-    .line 62
-    .line 63
-    and-int/2addr p3, v0
-
-    .line 64
-    invoke-virtual {v2, p3}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 65
-    .line 66
-    .line 67
-    const/16 p3, 0x3f
-
-    .line 68
-    .line 69
-    ushr-long/2addr p1, p3
-
-    .line 70
-    const-wide/16 v0, 0x1
-
-    .line 71
-    .line 72
-    cmp-long p3, p1, v0
-
-    .line 73
-    .line 74
-    if-nez p3, :cond_0
-
-    .line 75
-    .line 76
-    const/4 p1, 0x1
-
-    .line 77
-    goto :goto_0
-
-    .line 78
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 79
-    :goto_0
+    .line 39
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
-    .line 80
-    .line 81
-    .line 82
+    .line 40
+    .line 41
+    .line 42
     return p1
 
-    .line 83
+    .line 43
     :catchall_0
     move-exception v0
 
-    .line 84
+    .line 44
     move-object p1, v0
 
-    .line 85
-    goto :goto_1
-
-    .line 86
-    :cond_1
-    const-wide/16 v0, 0xff
-
-    .line 87
-    .line 88
-    and-long/2addr p1, v0
-
-    .line 89
-    neg-long p1, p1
-
-    .line 90
-    :try_start_1
-    new-instance p3, Lcom/github/luben/zstd/ZstdException;
-
-    .line 91
-    .line 92
-    invoke-static {p1, p2}, Lcom/github/luben/zstd/Zstd;->getErrorName(J)Ljava/lang/String;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object v0
-
-    .line 96
-    invoke-direct {p3, p1, p2, v0}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
-
-    .line 97
-    .line 98
-    .line 99
-    throw p3
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 100
-    :goto_1
+    .line 45
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
-    .line 101
-    .line 102
-    .line 103
+    .line 46
+    .line 47
+    .line 48
     throw p1
 .end method
 
 .method public doClose()V
-    .locals 5
+    .locals 6
 
     .line 1
     iget-wide v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->nativePtr:J
@@ -1125,44 +1651,62 @@
 
     .line 6
     .line 7
-    if-eqz v4, :cond_0
+    const/4 v5, 0x0
 
     .line 8
+    if-eqz v4, :cond_0
+
     .line 9
+    .line 10
     invoke-static {v0, v1}, Lcom/github/luben/zstd/ZstdCompressCtx;->free(J)V
 
-    .line 10
     .line 11
     .line 12
+    .line 13
     iput-wide v2, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->nativePtr:J
 
-    .line 13
     .line 14
+    .line 15
     iget-object v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->seqprod:Lcom/github/luben/zstd/SequenceProducer;
 
-    .line 15
     .line 16
+    .line 17
     if-eqz v0, :cond_0
 
-    .line 17
     .line 18
+    .line 19
     iget-wide v1, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->seqprod_state:J
 
-    .line 19
     .line 20
+    .line 21
     invoke-interface {v0, v1, v2}, Lcom/github/luben/zstd/SequenceProducer;->freeState(J)V
 
-    .line 21
     .line 22
     .line 23
-    const/4 v0, 0x0
-
     .line 24
-    iput-object v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->seqprod:Lcom/github/luben/zstd/SequenceProducer;
+    iput-object v5, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->seqprod:Lcom/github/luben/zstd/SequenceProducer;
 
     .line 25
     .line 26
     :cond_0
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->compression_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+
+    .line 27
+    .line 28
+    if-eqz v0, :cond_1
+
+    .line 29
+    .line 30
+    invoke-virtual {v0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 31
+    .line 32
+    .line 33
+    iput-object v5, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->compression_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+
+    .line 34
+    .line 35
+    :cond_1
     return-void
 .end method
 
@@ -1240,102 +1784,115 @@
     .line 5
     .line 6
     .line 7
-    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->acquireSharedLock()V
+    if-eqz p1, :cond_0
 
     .line 8
     .line 9
+    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->acquireSharedLock()V
+
     .line 10
+    .line 11
+    .line 12
+    :cond_0
     :try_start_0
     iget-wide v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->nativePtr:J
 
-    .line 11
-    .line 12
-    invoke-direct {p0, v0, v1, p1}, Lcom/github/luben/zstd/ZstdCompressCtx;->loadCDictFast0(JLcom/github/luben/zstd/ZstdDictCompress;)J
-
     .line 13
     .line 14
+    invoke-direct {p0, v0, v1, p1}, Lcom/github/luben/zstd/ZstdCompressCtx;->loadCDictFast0(JLcom/github/luben/zstd/ZstdDictCompress;)J
+
     .line 15
+    .line 16
+    .line 17
     move-result-wide v0
 
-    .line 16
+    .line 18
     invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
 
-    .line 17
-    .line 18
     .line 19
+    .line 20
+    .line 21
     move-result v2
 
-    .line 20
-    if-nez v2, :cond_0
-
-    .line 21
     .line 22
+    if-nez v2, :cond_2
+
+    .line 23
+    .line 24
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->compression_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+
+    .line 25
+    .line 26
+    if-eqz v0, :cond_1
+
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 29
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :catchall_0
+    move-exception p1
+
+    .line 33
+    goto :goto_1
+
+    .line 34
+    :cond_1
+    :goto_0
     iput-object p1, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->compression_dict:Lcom/github/luben/zstd/ZstdDictCompress;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 23
-    .line 24
-    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
-
-    .line 25
-    .line 26
-    .line 27
+    .line 35
+    .line 36
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
-    .line 28
-    .line 29
-    .line 30
-    return-object p0
-
-    .line 31
-    :catchall_0
-    move-exception v0
-
-    .line 32
-    goto :goto_0
-
-    .line 33
-    :cond_0
-    :try_start_1
-    new-instance v2, Lcom/github/luben/zstd/ZstdException;
-
-    .line 34
-    .line 35
-    invoke-direct {v2, v0, v1}, Lcom/github/luben/zstd/ZstdException;-><init>(J)V
-
-    .line 36
     .line 37
     .line 38
-    throw v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
     .line 39
-    :goto_0
-    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+    return-object p0
 
     .line 40
+    :cond_2
+    :try_start_1
+    new-instance p1, Lcom/github/luben/zstd/ZstdException;
+
     .line 41
     .line 42
-    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+    invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdException;-><init>(J)V
 
     .line 43
     .line 44
     .line 45
-    throw v0
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 46
+    :goto_1
+    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 47
+    .line 48
+    .line 49
+    throw p1
 .end method
 
 .method public loadDict([B)Lcom/github/luben/zstd/ZstdCompressCtx;
     .locals 2
 
-    .line 46
+    .line 50
     invoke-direct {p0}, Lcom/github/luben/zstd/ZstdCompressCtx;->ensureOpen()V
 
-    .line 47
+    .line 51
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->acquireSharedLock()V
 
-    .line 48
+    .line 52
     :try_start_0
     iget-wide v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->nativePtr:J
 
@@ -1343,32 +1900,44 @@
 
     move-result-wide v0
 
-    .line 49
+    .line 53
     invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
 
     move-result p1
 
-    if-nez p1, :cond_0
+    if-nez p1, :cond_1
+
+    .line 54
+    iget-object p1, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->compression_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+
+    if-eqz p1, :cond_0
+
+    .line 55
+    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
     const/4 p1, 0x0
 
-    .line 50
+    .line 56
     iput-object p1, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->compression_dict:Lcom/github/luben/zstd/ZstdDictCompress;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 51
-    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
-
-    return-object p0
+    goto :goto_0
 
     :catchall_0
     move-exception p1
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 52
+    .line 57
     :cond_0
+    :goto_0
+    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    return-object p0
+
+    .line 58
+    :cond_1
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdException;
 
@@ -1378,11 +1947,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 53
-    :goto_0
+    .line 59
+    :goto_1
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
-    .line 54
+    .line 60
     throw p1
 .end method
 
@@ -1590,47 +2159,76 @@
     .line 15
     .line 16
     move-result v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 17
-    if-nez v2, :cond_0
+    if-nez v2, :cond_1
 
     .line 18
     .line 19
-    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->compression_dict:Lcom/github/luben/zstd/ZstdDictCompress;
 
     .line 20
     .line 21
-    .line 22
-    return-void
+    if-eqz v0, :cond_0
 
+    .line 22
     .line 23
-    :cond_0
-    :try_start_1
-    new-instance v2, Lcom/github/luben/zstd/ZstdException;
+    invoke-virtual {v0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
     .line 24
     .line 25
+    .line 26
+    const/4 v0, 0x0
+
+    .line 27
+    iput-object v0, p0, Lcom/github/luben/zstd/ZstdCompressCtx;->compression_dict:Lcom/github/luben/zstd/ZstdDictCompress;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :catchall_0
+    move-exception v0
+
+    .line 31
+    goto :goto_1
+
+    .line 32
+    :cond_0
+    :goto_0
+    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 33
+    .line 34
+    .line 35
+    return-void
+
+    .line 36
+    :cond_1
+    :try_start_1
+    new-instance v2, Lcom/github/luben/zstd/ZstdException;
+
+    .line 37
+    .line 38
     invoke-direct {v2, v0, v1}, Lcom/github/luben/zstd/ZstdException;-><init>(J)V
 
-    .line 26
-    .line 27
-    .line 28
+    .line 39
+    .line 40
+    .line 41
     throw v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 29
-    :catchall_0
-    move-exception v0
-
-    .line 30
+    .line 42
+    :goto_1
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
-    .line 31
-    .line 32
-    .line 33
+    .line 43
+    .line 44
+    .line 45
     throw v0
 .end method
 

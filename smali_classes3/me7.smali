@@ -1,33 +1,31 @@
-.class public final synthetic Lme7;
+.class public final Lme7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lj72;
+.implements Loe7;
 
 
-# instance fields
-.field public final synthetic Q:I
-
-.field public final synthetic R:Lsu/happ/proxyutility/feature/ui_settings/UISettingsActivity;
+# static fields
+.field public static final a:Lme7;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lsu/happ/proxyutility/feature/ui_settings/UISettingsActivity;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput p2, p0, Lme7;->Q:I
+    new-instance v0, Lme7;
 
     .line 2
     .line 3
-    iput-object p1, p0, Lme7;->R:Lsu/happ/proxyutility/feature/ui_settings/UISettingsActivity;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
+    sput-object v0, Lme7;->a:Lme7;
+
     .line 7
     .line 8
     return-void
@@ -35,93 +33,58 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
     .line 1
-    iget v0, p0, Lme7;->Q:I
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    sget-object v1, Lbh7;->a:Lbh7;
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    iget-object v2, p0, Lme7;->R:Lsu/happ/proxyutility/feature/ui_settings/UISettingsActivity;
+    :cond_0
+    instance-of p0, p1, Lme7;
 
     .line 6
     .line 7
-    check-cast p1, Ljava/lang/Boolean;
+    if-nez p0, :cond_1
 
     .line 8
     .line 9
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    const/4 p0, 0x0
 
     .line 10
+    return p0
+
     .line 11
-    .line 12
-    move-result p1
+    :cond_1
+    return v0
+.end method
 
-    .line 13
-    packed-switch v0, :pswitch_data_0
+.method public final hashCode()I
+    .locals 0
 
-    .line 14
-    .line 15
-    .line 16
-    sget v0, Lsu/happ/proxyutility/feature/ui_settings/UISettingsActivity;->F0:I
+    .line 1
+    const p0, -0x6f6a1596
 
-    .line 17
-    .line 18
-    invoke-virtual {v2}, Lsu/happ/proxyutility/feature/ui_settings/UISettingsActivity;->z()Lcom/tencent/mmkv/MMKV;
+    .line 2
+    .line 3
+    .line 4
+    return p0
+.end method
 
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
+.method public final toString()Ljava/lang/String;
+    .locals 0
 
-    .line 22
-    const-string v2, "pref_live_updates"
+    .line 1
+    const-string p0, "ShowSuccessSnackbar"
 
-    .line 23
-    .line 24
-    invoke-virtual {v0, v2, p1}, Lcom/tencent/mmkv/MMKV;->r(Ljava/lang/String;Z)Z
-
-    .line 25
-    .line 26
-    .line 27
-    return-object v1
-
-    .line 28
-    :pswitch_0
-    sget v0, Lsu/happ/proxyutility/feature/ui_settings/UISettingsActivity;->F0:I
-
-    .line 29
-    .line 30
-    invoke-virtual {v2}, Lsu/happ/proxyutility/feature/ui_settings/UISettingsActivity;->z()Lcom/tencent/mmkv/MMKV;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    const-string v2, "pref_speed_enabled"
-
-    .line 35
-    .line 36
-    invoke-virtual {v0, v2, p1}, Lcom/tencent/mmkv/MMKV;->r(Ljava/lang/String;Z)Z
-
-    .line 37
-    .line 38
-    .line 39
-    return-object v1
-
-    .line 40
-    nop
-
-    .line 41
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 2
+    .line 3
+    return-object p0
 .end method

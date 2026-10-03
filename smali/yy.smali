@@ -1,170 +1,97 @@
 .class public final Lyy;
-.super Landroid/animation/AnimatorListenerAdapter;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljn4;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0001\u0018\u00002\u000c\u0012\u0008\u0012\u00060\u0002R\u00020\u00000\u0001:\u0001\u0002\u00a8\u0006\u0003"
+    }
+    d2 = {
+        "Lyy;",
+        "Ljn4;",
+        "Lxy;",
+        "foundation"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field public X:Lxy;
 
-.field public final synthetic b:Lgz;
-
-
-# direct methods
-.method public synthetic constructor <init>(Lgz;I)V
-    .locals 0
-
-    .line 1
-    iput p2, p0, Lyy;->a:I
-
-    .line 2
-    .line 3
-    iput-object p1, p0, Lyy;->b:Lgz;
-
-    .line 4
-    .line 5
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Lgz;II)V
-    .locals 0
-
-    .line 9
-    iput p3, p0, Lyy;->a:I
-
-    iput-object p1, p0, Lyy;->b:Lgz;
-
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
-
-    return-void
-.end method
+.field public Y:Lsv0;
 
 
 # virtual methods
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
+.method public final a()Lcn4;
     .locals 1
 
     .line 1
-    iget p1, p0, Lyy;->a:I
+    new-instance v0, Lxy;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lyy;->b:Lgz;
+    invoke-direct {v0, p0}, Lxy;-><init>(Lyy;)V
 
     .line 4
     .line 5
-    packed-switch p1, :pswitch_data_0
-
     .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, Lgz;->d()V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-
-    .line 12
-    :pswitch_0
-    invoke-virtual {v0}, Lgz;->c()V
-
-    .line 13
-    .line 14
-    .line 15
-    return-void
-
-    .line 16
-    :pswitch_1
-    invoke-virtual {v0}, Lgz;->d()V
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    :pswitch_2
-    invoke-virtual {v0}, Lgz;->c()V
-
-    .line 21
-    .line 22
-    .line 23
-    return-void
-
-    .line 24
-    nop
-
-    .line 25
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method
 
-.method public onAnimationStart(Landroid/animation/Animator;)V
-    .locals 2
+.method public final bridge synthetic c(Lcn4;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Lyy;->a:I
+    check-cast p1, Lxy;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lyy;->b:Lgz;
+    return-void
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    if-ne p1, p0, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p0, 0x1
 
     .line 4
+    return p0
+
     .line 5
-    packed-switch v0, :pswitch_data_0
+    :cond_0
+    const/4 p0, 0x0
 
     .line 6
-    .line 7
-    .line 8
-    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationStart(Landroid/animation/Animator;)V
+    return p0
+.end method
 
-    .line 9
-    .line 10
-    .line 11
-    return-void
+.method public final hashCode()I
+    .locals 0
 
-    .line 12
-    :pswitch_0
-    iget-object p1, v1, Lgz;->j:Lsu/happ/proxyutility/ui/foundation/component/snackbar/HappSnackbarView;
+    .line 1
+    const/16 p0, 0xea
 
-    .line 13
-    .line 14
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 15
-    .line 16
-    .line 17
-    return-void
-
-    .line 18
-    :pswitch_1
-    iget-object p1, v1, Lgz;->j:Lsu/happ/proxyutility/ui/foundation/component/snackbar/HappSnackbarView;
-
-    .line 19
-    .line 20
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 21
-    .line 22
-    .line 23
-    return-void
-
-    .line 24
-    nop
-
-    .line 25
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 2
+    .line 3
+    return p0
 .end method

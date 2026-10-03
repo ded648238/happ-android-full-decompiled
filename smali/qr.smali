@@ -1,142 +1,107 @@
 .class public final Lqr;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/lang/Iterable;
-.implements Lr73;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public c0:Lpb8;
 
-.field public final R:Ljava/lang/Object;
+.field public d0:Ljava/lang/String;
+
+.field public e0:Ljava/lang/String;
+
+.field public f0:Lsu/happ/proxyutility/HappApplication;
+
+.field public g0:Lsu/happ/proxyutility/service/d;
+
+.field public h0:Lrr;
+
+.field public i0:I
+
+.field public synthetic j0:Ljava/lang/Object;
+
+.field public final synthetic k0:Lrr;
+
+.field public l0:I
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
+.method public constructor <init>(Lrr;Ld31;)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lqr;->Q:I
+    iput-object p1, p0, Lqr;->k0:Lrr;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lqr;->R:Ljava/lang/Object;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final iterator()Ljava/util/Iterator;
-    .locals 2
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    iget v0, p0, Lqr;->Q:I
+    iput-object p1, p0, Lqr;->j0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lqr;->R:Ljava/lang/Object;
+    iget p1, p0, Lqr;->l0:I
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    new-instance v0, Lp1;
+    iput p1, p0, Lqr;->l0:I
 
     .line 9
     .line 10
-    check-cast v1, Lop1;
+    iget-object p1, p0, Lqr;->k0:Lrr;
 
     .line 11
     .line 12
-    invoke-direct {v0, v1}, Lp1;-><init>(Lop1;)V
+    const/4 v0, 0x0
 
     .line 13
+    invoke-virtual {p1, v0, p0}, Lrr;->e(Lpb8;Ld31;)Ljava/lang/Object;
+
     .line 14
     .line 15
-    return-object v0
-
     .line 16
-    :pswitch_0
-    check-cast v1, Lb56;
+    move-result-object p0
 
     .line 17
-    .line 18
-    invoke-interface {v1}, Lb56;->iterator()Ljava/util/Iterator;
+    sget-object p1, Lj41;->X:Lj41;
 
+    .line 18
     .line 19
+    if-ne p0, p1, :cond_0
+
     .line 20
     .line 21
-    move-result-object v0
+    return-object p0
 
     .line 22
-    return-object v0
+    :cond_0
+    new-instance p1, Ld86;
 
     .line 23
-    :pswitch_1
-    new-instance v0, Ltk1;
-
     .line 24
-    .line 25
-    check-cast v1, Lg72;
+    invoke-direct {p1, p0}, Ld86;-><init>(Ljava/lang/Object;)V
 
+    .line 25
     .line 26
     .line 27
-    invoke-interface {v1}, Lg72;->invoke()Ljava/lang/Object;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v1
-
-    .line 31
-    check-cast v1, Ljava/util/Iterator;
-
-    .line 32
-    .line 33
-    invoke-direct {v0, v1}, Ltk1;-><init>(Ljava/util/Iterator;)V
-
-    .line 34
-    .line 35
-    .line 36
-    return-object v0
-
-    .line 37
-    :pswitch_2
-    check-cast v1, [Ljava/lang/Object;
-
-    .line 38
-    .line 39
-    invoke-static {v1}, Le21;->D([Ljava/lang/Object;)Lp1;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
-
-    .line 43
-    return-object v0
-
-    .line 44
-    nop
-
-    .line 45
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

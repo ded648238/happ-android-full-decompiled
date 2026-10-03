@@ -1,21 +1,37 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum f55 implements xs2 {
-    IN(0),
-    OUT(1),
-    INV(2),
-    STAR(3);
+import android.content.ComponentName;
+import android.content.Context;
 
-    public final int Q;
-
-    f55(int i) {
-        this.Q = i;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class f55 {
+    static {
+        an3.u("PackageManagerHelper");
     }
 
-    @Override // defpackage.xs2
-    public final int a() {
-        return this.Q;
+    /* JADX WARN: Code restructure failed: missing block: B:6:0x001b, code lost:
+    
+        defpackage.an3.l().getClass();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:7:0x0022, code lost:
+    
+        return;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static void a(Context context, Class cls, boolean z) {
+        try {
+            int componentEnabledSetting = context.getPackageManager().getComponentEnabledSetting(new ComponentName(context, cls.getName()));
+            boolean z2 = false;
+            if (componentEnabledSetting != 0 && componentEnabledSetting == 1) {
+                z2 = true;
+            }
+            context.getPackageManager().setComponentEnabledSetting(new ComponentName(context, cls.getName()), z ? 1 : 2, 1);
+            an3.l().getClass();
+        } catch (Exception unused) {
+            an3.l().getClass();
+        }
     }
 }

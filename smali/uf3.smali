@@ -1,71 +1,93 @@
-.class public final Luf3;
-.super Ld64;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Luf3;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ldp4;
+.implements Luf8;
 
 
 # instance fields
-.field public e0:F
-
-.field public f0:Z
+.field public final synthetic a:I
 
 
-# virtual methods
-.method public final s0(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+# direct methods
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    instance-of v0, p1, Ltt5;
+    iput p1, p0, Luf3;->a:I
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    check-cast p1, Ltt5;
-
     .line 6
-    .line 7
-    goto :goto_0
+    return-void
+.end method
 
+
+# virtual methods
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    iget p0, p0, Luf3;->a:I
+
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 7
     .line 8
-    :cond_0
-    const/4 p1, 0x0
+    check-cast p2, Lvf8;
 
     .line 9
-    :goto_0
-    if-nez p1, :cond_1
-
     .line 10
-    .line 11
-    new-instance p1, Ltt5;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 11
     .line 12
     .line 13
-    invoke-direct {p1}, Ltt5;-><init>()V
+    move-result p0
 
     .line 14
+    invoke-interface {p2, p0}, Lvf8;->c(Z)Lvf8;
+
     .line 15
     .line 16
-    :cond_1
-    iget v0, p0, Luf3;->e0:F
-
     .line 17
+    return-void
+
     .line 18
-    iput v0, p1, Ltt5;->a:F
+    :pswitch_0
+    check-cast p1, Ljava/lang/String;
 
     .line 19
     .line 20
-    iget-boolean v0, p0, Luf3;->f0:Z
+    check-cast p2, Lvf8;
 
     .line 21
     .line 22
-    iput-boolean v0, p1, Ltt5;->b:Z
+    invoke-interface {p2, p1}, Lvf8;->b(Ljava/lang/String;)Lvf8;
 
     .line 23
     .line 24
-    return-object p1
+    .line 25
+    return-void
+
+    .line 26
+    nop
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

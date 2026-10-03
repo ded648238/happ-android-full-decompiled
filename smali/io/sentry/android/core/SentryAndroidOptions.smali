@@ -1,6 +1,6 @@
 .class public final Lio/sentry/android/core/SentryAndroidOptions;
-.super Lio/sentry/m6;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lio/sentry/o6;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -20,15 +20,15 @@
 
 .field private attachViewHierarchy:Z
 
-.field private beforeScreenshotCaptureCallback:Lio/sentry/android/core/j1;
+.field private beforeScreenshotCaptureCallback:Lio/sentry/android/core/v1;
 
-.field private beforeViewHierarchyCaptureCallback:Lio/sentry/android/core/j1;
+.field private beforeViewHierarchyCaptureCallback:Lio/sentry/android/core/v1;
 
 .field private collectAdditionalContext:Z
 
 .field private collectExternalStorageContext:Z
 
-.field private debugImagesLoader:Lio/sentry/android/core/u0;
+.field private debugImagesLoader:Lio/sentry/android/core/x0;
 
 .field private enableActivityLifecycleBreadcrumbs:Z
 
@@ -48,6 +48,8 @@
 
 .field private enableNdk:Z
 
+.field private enableNdkAppHangTracking:Z
+
 .field private enableNetworkEventBreadcrumbs:Z
 
 .field private enablePerformanceV2:Z
@@ -66,15 +68,21 @@
 
 .field private frameMetricsCollector:Lio/sentry/android/core/internal/util/t;
 
+.field private memoryLimiterEnabled:Z
+
 .field private nativeSdkName:Ljava/lang/String;
 
-.field private ndkHandlerStrategy:Lio/sentry/android/core/a1;
+.field private ndkAppHangTimeoutIntervalMillis:J
+
+.field private ndkHandlerStrategy:Lio/sentry/android/core/e1;
 
 .field private reportHistoricalAnrs:Z
 
+.field private reportHistoricalMemoryLimiterExits:Z
+
 .field private reportHistoricalTombstones:Z
 
-.field private final screenshot:Lio/sentry/android/core/k1;
+.field private final screenshot:Lio/sentry/android/core/w1;
 
 .field private final startupCrashDurationThresholdMillis:J
 
@@ -89,7 +97,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, v0}, Lio/sentry/m6;-><init>(Z)V
+    invoke-direct {p0, v0}, Lio/sentry/o6;-><init>(Z)V
 
     .line 3
     .line 4
@@ -113,208 +121,224 @@
 
     .line 13
     .line 14
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleBreadcrumbs:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNdkAppHangTracking:Z
 
     .line 15
     .line 16
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppLifecycleBreadcrumbs:Z
+    iput-wide v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->ndkAppHangTimeoutIntervalMillis:J
 
     .line 17
     .line 18
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbs:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleBreadcrumbs:Z
 
     .line 19
     .line 20
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppComponentBreadcrumbs:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppLifecycleBreadcrumbs:Z
 
     .line 21
     .line 22
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNetworkEventBreadcrumbs:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbs:Z
 
     .line 23
     .line 24
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoActivityLifecycleTracing:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppComponentBreadcrumbs:Z
 
     .line 25
     .line 26
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleTracingAutoFinish:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNetworkEventBreadcrumbs:Z
 
     .line 27
     .line 28
-    sget-object v4, Lio/sentry/android/core/u;->S:Lio/sentry/android/core/u;
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoActivityLifecycleTracing:Z
 
     .line 29
     .line 30
-    iput-object v4, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/u0;
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleTracingAutoFinish:Z
 
     .line 31
     .line 32
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectAdditionalContext:Z
+    sget-object v4, Lio/sentry/android/core/w;->Z:Lio/sentry/android/core/w;
 
     .line 33
     .line 34
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectExternalStorageContext:Z
+    iput-object v4, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/x0;
 
     .line 35
     .line 36
-    iput-wide v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->startupCrashFlushTimeoutMillis:J
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectAdditionalContext:Z
 
     .line 37
     .line 38
-    const-wide/16 v2, 0x7d0
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectExternalStorageContext:Z
 
     .line 39
     .line 40
-    iput-wide v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->startupCrashDurationThresholdMillis:J
+    iput-wide v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->startupCrashFlushTimeoutMillis:J
 
     .line 41
     .line 42
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableFramesTracking:Z
+    const-wide/16 v2, 0x7d0
 
     .line 43
     .line 44
-    const/4 v2, 0x0
+    iput-wide v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->startupCrashDurationThresholdMillis:J
 
     .line 45
-    iput-object v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->nativeSdkName:Ljava/lang/String;
-
     .line 46
-    .line 47
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableRootCheck:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableFramesTracking:Z
 
+    .line 47
     .line 48
+    const/4 v2, 0x0
+
     .line 49
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNdk:Z
+    iput-object v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->nativeSdkName:Ljava/lang/String;
 
     .line 50
     .line 51
-    sget-object v2, Lio/sentry/android/core/a1;->SENTRY_HANDLER_STRATEGY_DEFAULT:Lio/sentry/android/core/a1;
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableRootCheck:Z
 
     .line 52
     .line 53
-    iput-object v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->ndkHandlerStrategy:Lio/sentry/android/core/a1;
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNdk:Z
 
     .line 54
     .line 55
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableScopeSync:Z
+    sget-object v2, Lio/sentry/android/core/e1;->SENTRY_HANDLER_STRATEGY_DEFAULT:Lio/sentry/android/core/e1;
 
     .line 56
     .line 57
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoTraceIdGeneration:Z
+    iput-object v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->ndkHandlerStrategy:Lio/sentry/android/core/e1;
 
     .line 58
     .line 59
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbsExtras:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableScopeSync:Z
 
     .line 60
     .line 61
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalAnrs:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoTraceIdGeneration:Z
 
     .line 62
     .line 63
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalTombstones:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbsExtras:Z
 
     .line 64
     .line 65
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachAnrThreadDump:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalAnrs:Z
 
     .line 66
     .line 67
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachRawTombstone:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalTombstones:Z
 
     .line 68
     .line 69
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enablePerformanceV2:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->memoryLimiterEnabled:Z
 
     .line 70
     .line 71
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableStandaloneAppStartTracing:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalMemoryLimiterExits:Z
 
     .line 72
     .line 73
-    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableTombstone:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachAnrThreadDump:Z
 
     .line 74
     .line 75
-    new-instance v2, Lio/sentry/android/core/k1;
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachRawTombstone:Z
 
     .line 76
     .line 77
-    const/4 v3, 0x4
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enablePerformanceV2:Z
 
     .line 78
-    invoke-direct {v2, v3, v0}, Lk3;-><init>(IZ)V
-
     .line 79
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableStandaloneAppStartTracing:Z
+
     .line 80
     .line 81
-    iput-object v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->screenshot:Lio/sentry/android/core/k1;
+    iput-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableTombstone:Z
 
     .line 82
     .line 83
-    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAnrFingerprinting:Z
+    new-instance v2, Lio/sentry/android/core/w1;
 
     .line 84
     .line 85
-    const-string v1, "sentry.java.android/8.46.0"
+    const/4 v3, 0x5
 
     .line 86
-    .line 87
-    invoke-virtual {p0, v1}, Lio/sentry/m6;->setSentryClientName(Ljava/lang/String;)V
+    invoke-direct {v2, v3, v0}, Lq3;-><init>(IZ)V
 
+    .line 87
     .line 88
     .line 89
-    .line 90
-    invoke-direct {p0}, Lio/sentry/android/core/SentryAndroidOptions;->createSdkVersion()Lio/sentry/protocol/u;
+    iput-object v2, p0, Lio/sentry/android/core/SentryAndroidOptions;->screenshot:Lio/sentry/android/core/w1;
 
+    .line 90
     .line 91
+    iput-boolean v1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAnrFingerprinting:Z
+
     .line 92
     .line 93
-    move-result-object v1
+    const-string v1, "sentry.java.android/8.57.0"
 
     .line 94
-    invoke-virtual {p0, v1}, Lio/sentry/m6;->setSdkVersion(Lio/sentry/protocol/u;)V
-
     .line 95
+    invoke-virtual {p0, v1}, Lio/sentry/o6;->setSentryClientName(Ljava/lang/String;)V
+
     .line 96
     .line 97
-    invoke-virtual {p0, v0}, Lio/sentry/m6;->setAttachServerName(Z)V
-
     .line 98
+    invoke-direct {p0}, Lio/sentry/android/core/SentryAndroidOptions;->createSdkVersion()Lio/sentry/protocol/u;
+
     .line 99
     .line 100
+    .line 101
+    move-result-object v1
+
+    .line 102
+    invoke-virtual {p0, v1}, Lio/sentry/o6;->setSdkVersion(Lio/sentry/protocol/u;)V
+
+    .line 103
+    .line 104
+    .line 105
+    invoke-virtual {p0, v0}, Lio/sentry/o6;->setAttachServerName(Z)V
+
+    .line 106
+    .line 107
+    .line 108
     return-void
 .end method
 
 .method private createSdkVersion()Lio/sentry/protocol/u;
-    .locals 4
+    .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lio/sentry/m6;->getSdkVersion()Lio/sentry/protocol/u;
+    invoke-virtual {p0}, Lio/sentry/o6;->getSdkVersion()Lio/sentry/protocol/u;
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    const-string v1, "sentry.java.android"
+    const-string v0, "sentry.java.android"
 
     .line 6
     .line 7
-    const-string v2, "8.46.0"
+    const-string v1, "8.57.0"
 
     .line 8
     .line 9
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 10
     .line 11
-    new-instance v0, Lio/sentry/protocol/u;
+    new-instance p0, Lio/sentry/protocol/u;
 
     .line 12
     .line 13
-    invoke-direct {v0, v1, v2}, Lio/sentry/protocol/u;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lio/sentry/protocol/u;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14
     .line 15
@@ -323,33 +347,33 @@
 
     .line 17
     :cond_0
-    iput-object v1, v0, Lio/sentry/protocol/u;->Q:Ljava/lang/String;
+    iput-object v0, p0, Lio/sentry/protocol/u;->X:Ljava/lang/String;
 
     .line 18
     .line 19
-    iput-object v2, v0, Lio/sentry/protocol/u;->R:Ljava/lang/String;
+    iput-object v1, p0, Lio/sentry/protocol/u;->Y:Ljava/lang/String;
 
     .line 20
     .line 21
     :goto_0
-    const-string v1, "maven:io.sentry:sentry-android-core"
+    const-string v0, "maven:io.sentry:sentry-android-core"
 
     .line 22
     .line 23
-    invoke-static {}, Lio/sentry/k5;->d()Lio/sentry/k5;
+    invoke-static {}, Lio/sentry/m5;->d()Lio/sentry/m5;
 
     .line 24
     .line 25
     .line 26
-    move-result-object v3
+    move-result-object v2
 
     .line 27
-    invoke-virtual {v3, v1, v2}, Lio/sentry/k5;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v1}, Lio/sentry/m5;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 28
     .line 29
     .line 30
-    return-object v0
+    return-object p0
 .end method
 
 
@@ -378,7 +402,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p0, p1}, Lio/sentry/m6;->setEnableUserInteractionBreadcrumbs(Z)V
+    invoke-virtual {p0, p1}, Lio/sentry/o6;->setEnableUserInteractionBreadcrumbs(Z)V
 
     .line 12
     .line 13
@@ -387,14 +411,14 @@
 .end method
 
 .method public getAnrProfilingSampleRate()Ljava/lang/Double;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrProfilingSampleRate:Ljava/lang/Double;
+    iget-object p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrProfilingSampleRate:Ljava/lang/Double;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getAnrTimeoutIntervalMillis()J
@@ -408,87 +432,109 @@
     return-wide v0
 .end method
 
-.method public getBeforeScreenshotCaptureCallback()Lio/sentry/android/core/j1;
-    .locals 1
+.method public getBeforeScreenshotCaptureCallback()Lio/sentry/android/core/v1;
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
-.method public getBeforeViewHierarchyCaptureCallback()Lio/sentry/android/core/j1;
-    .locals 1
+.method public getBeforeViewHierarchyCaptureCallback()Lio/sentry/android/core/v1;
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
-.method public getDebugImagesLoader()Lio/sentry/android/core/u0;
-    .locals 1
+.method public getDebugImagesLoader()Lio/sentry/android/core/x0;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/u0;
+    iget-object p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/x0;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFrameMetricsCollector()Lio/sentry/android/core/internal/util/t;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->frameMetricsCollector:Lio/sentry/android/core/internal/util/t;
+    iget-object p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->frameMetricsCollector:Lio/sentry/android/core/internal/util/t;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
+.end method
+
+.method public getMonotonicTicker()Lio/sentry/time/c;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lio/sentry/android/core/internal/time/a;->a:Lio/sentry/android/core/internal/time/a;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
 .method public getNativeSdkName()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->nativeSdkName:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->nativeSdkName:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
+.end method
+
+.method public getNdkAppHangTimeoutIntervalMillis()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->ndkAppHangTimeoutIntervalMillis:J
+
+    .line 2
+    .line 3
+    return-wide v0
 .end method
 
 .method public getNdkHandlerStrategy()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->ndkHandlerStrategy:Lio/sentry/android/core/a1;
+    iget-object p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->ndkHandlerStrategy:Lio/sentry/android/core/e1;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/android/core/a1;->getValue()I
+    invoke-virtual {p0}, Lio/sentry/android/core/e1;->getValue()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
-.method public getScreenshot()Lio/sentry/android/core/k1;
-    .locals 1
+.method public getScreenshot()Lio/sentry/android/core/w1;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->screenshot:Lio/sentry/android/core/k1;
+    iget-object p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->screenshot:Lio/sentry/android/core/w1;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getStartupCrashDurationThresholdMillis()J
@@ -514,29 +560,29 @@
 .end method
 
 .method public isAnrEnabled()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrEnabled:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrEnabled:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isAnrProfilingEnabled()Z
-    .locals 5
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrProfilingSampleRate:Ljava/lang/Double;
+    iget-object p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrProfilingSampleRate:Ljava/lang/Double;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Double;->doubleValue()D
+    invoke-virtual {p0}, Ljava/lang/Double;->doubleValue()D
 
     .line 6
     .line 7
@@ -548,311 +594,344 @@
 
     .line 10
     .line 11
-    cmpl-double v4, v0, v2
+    cmpl-double p0, v0, v2
 
     .line 12
     .line 13
-    if-lez v4, :cond_0
+    if-lez p0, :cond_0
 
     .line 14
     .line 15
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 16
-    return v0
+    return p0
 
     .line 17
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public isAnrReportInDebug()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrReportInDebug:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->anrReportInDebug:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isAttachAnrThreadDump()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachAnrThreadDump:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachAnrThreadDump:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isAttachRawTombstone()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachRawTombstone:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachRawTombstone:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isAttachScreenshot()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachScreenshot:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachScreenshot:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isAttachViewHierarchy()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachViewHierarchy:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->attachViewHierarchy:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isCollectAdditionalContext()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectAdditionalContext:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectAdditionalContext:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isCollectExternalStorageContext()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectExternalStorageContext:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->collectExternalStorageContext:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableActivityLifecycleBreadcrumbs()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleBreadcrumbs:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleBreadcrumbs:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableActivityLifecycleTracingAutoFinish()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleTracingAutoFinish:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableActivityLifecycleTracingAutoFinish:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableAnrFingerprinting()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAnrFingerprinting:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAnrFingerprinting:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableAppComponentBreadcrumbs()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppComponentBreadcrumbs:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppComponentBreadcrumbs:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableAppLifecycleBreadcrumbs()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppLifecycleBreadcrumbs:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAppLifecycleBreadcrumbs:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableAutoActivityLifecycleTracing()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoActivityLifecycleTracing:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoActivityLifecycleTracing:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableAutoTraceIdGeneration()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoTraceIdGeneration:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableAutoTraceIdGeneration:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableFramesTracking()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableFramesTracking:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableFramesTracking:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableNdk()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNdk:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNdk:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
+.end method
+
+.method public isEnableNdkAppHangTracking()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNdkAppHangTracking:Z
+
+    .line 2
+    .line 3
+    return p0
 .end method
 
 .method public isEnableNetworkEventBreadcrumbs()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNetworkEventBreadcrumbs:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNetworkEventBreadcrumbs:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnablePerformanceV2()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enablePerformanceV2:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enablePerformanceV2:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableRootCheck()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableRootCheck:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableRootCheck:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableScopeSync()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableScopeSync:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableScopeSync:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableStandaloneAppStartTracing()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableStandaloneAppStartTracing:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableStandaloneAppStartTracing:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableSystemEventBreadcrumbs()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbs:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbs:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isEnableSystemEventBreadcrumbsExtras()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbsExtras:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableSystemEventBreadcrumbsExtras:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
+.end method
+
+.method public isMemoryLimiterEnabled()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->memoryLimiterEnabled:Z
+
+    .line 2
+    .line 3
+    return p0
 .end method
 
 .method public isReportHistoricalAnrs()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalAnrs:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalAnrs:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
+.end method
+
+.method public isReportHistoricalMemoryLimiterExits()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalMemoryLimiterExits:Z
+
+    .line 2
+    .line 3
+    return p0
 .end method
 
 .method public isReportHistoricalTombstones()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalTombstones:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalTombstones:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isTombstoneEnabled()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableTombstone:Z
+    iget-boolean p0, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableTombstone:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public setAnrEnabled(Z)V
@@ -867,13 +946,13 @@
 .end method
 
 .method public setAnrProfilingSampleRate(Ljava/lang/Double;)V
-    .locals 2
+    .locals 1
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    invoke-static {p1, v0}, Lio/sentry/util/b;->l(Ljava/lang/Double;Z)Z
+    invoke-static {p1, v0}, Lio/sentry/util/c;->n(Ljava/lang/Double;Z)Z
 
     .line 3
     .line 4
@@ -893,15 +972,15 @@
 
     .line 11
     :cond_0
-    const-string v0, "The value "
+    const-string p0, "The value "
 
     .line 12
     .line 13
-    const-string v1, " is not valid. Use null to disable or values >= 0.0 and <= 1.0."
+    const-string v0, " is not valid. Use null to disable or values >= 0.0 and <= 1.0."
 
     .line 14
     .line 15
-    invoke-static {v0, p1, v1}, Lio/sentry/x1;->m(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, p1, v0}, Lio/sentry/z1;->m(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 16
     .line 17
@@ -975,14 +1054,14 @@
     return-void
 .end method
 
-.method public setBeforeScreenshotCaptureCallback(Lio/sentry/android/core/j1;)V
+.method public setBeforeScreenshotCaptureCallback(Lio/sentry/android/core/v1;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public setBeforeViewHierarchyCaptureCallback(Lio/sentry/android/core/j1;)V
+.method public setBeforeViewHierarchyCaptureCallback(Lio/sentry/android/core/v1;)V
     .locals 0
 
     .line 1
@@ -1011,7 +1090,7 @@
     return-void
 .end method
 
-.method public setDebugImagesLoader(Lio/sentry/android/core/u0;)V
+.method public setDebugImagesLoader(Lio/sentry/android/core/x0;)V
     .locals 0
 
     .line 1
@@ -1023,12 +1102,12 @@
 
     .line 4
     :cond_0
-    sget-object p1, Lio/sentry/android/core/u;->S:Lio/sentry/android/core/u;
+    sget-object p1, Lio/sentry/android/core/w;->Z:Lio/sentry/android/core/w;
 
     .line 5
     .line 6
     :goto_0
-    iput-object p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/u0;
+    iput-object p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->debugImagesLoader:Lio/sentry/android/core/x0;
 
     .line 7
     .line 8
@@ -1134,6 +1213,17 @@
     return-void
 .end method
 
+.method public setEnableNdkAppHangTracking(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->enableNdkAppHangTracking:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
 .method public setEnableNetworkEventBreadcrumbs(Z)V
     .locals 0
 
@@ -1222,11 +1312,22 @@
     return-void
 .end method
 
-.method public setNativeHandlerStrategy(Lio/sentry/android/core/a1;)V
+.method public setMemoryLimiterEnabled(Z)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->ndkHandlerStrategy:Lio/sentry/android/core/a1;
+    iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->memoryLimiterEnabled:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setNativeHandlerStrategy(Lio/sentry/android/core/e1;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->ndkHandlerStrategy:Lio/sentry/android/core/e1;
 
     .line 2
     .line 3
@@ -1244,11 +1345,33 @@
     return-void
 .end method
 
+.method public setNdkAppHangTimeoutIntervalMillis(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->ndkAppHangTimeoutIntervalMillis:J
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
 .method public setReportHistoricalAnrs(Z)V
     .locals 0
 
     .line 1
     iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalAnrs:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setReportHistoricalMemoryLimiterExits(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lio/sentry/android/core/SentryAndroidOptions;->reportHistoricalMemoryLimiterExits:Z
 
     .line 2
     .line 3

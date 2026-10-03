@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/GCMParameters;
 .super Ljava/security/AlgorithmParametersSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -88,23 +88,23 @@
     .line 14
     .line 15
     .line 16
-    iget v4, p0, Lorg/conscrypt/GCMParameters;->tLen:I
+    iget p0, p0, Lorg/conscrypt/GCMParameters;->tLen:I
 
     .line 17
     .line 18
-    const/16 v5, 0x60
+    const/16 v4, 0x60
 
     .line 19
     .line 20
-    if-eq v4, v5, :cond_0
+    if-eq p0, v4, :cond_0
 
     .line 21
     .line 22
-    div-int/lit8 v4, v4, 0x8
+    div-int/lit8 p0, p0, 0x8
 
     .line 23
     .line 24
-    int-to-long v4, v4
+    int-to-long v4, p0
 
     .line 25
     invoke-static {v0, v1, v4, v5}, Lorg/conscrypt/NativeCrypto;->asn1_write_uint64(JJ)V
@@ -116,14 +116,14 @@
 
     .line 29
     :catchall_0
-    move-exception v4
+    move-exception p0
 
     .line 30
     goto :goto_2
 
     .line 31
     :catch_0
-    move-exception v4
+    move-exception p0
 
     .line 32
     move-wide v6, v2
@@ -145,7 +145,7 @@
     .line 37
     .line 38
     .line 39
-    move-result-object v4
+    move-result-object p0
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -161,11 +161,11 @@
     .line 44
     .line 45
     .line 46
-    return-object v4
+    return-object p0
 
     .line 47
     :catchall_1
-    move-exception v4
+    move-exception p0
 
     .line 48
     move-wide v2, v0
@@ -175,7 +175,7 @@
 
     .line 50
     :catch_1
-    move-exception v4
+    move-exception p0
 
     .line 51
     move-wide v2, v0
@@ -188,13 +188,13 @@
     .line 53
     .line 54
     .line 55
-    throw v4
+    throw p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     .line 56
     :catchall_2
-    move-exception v4
+    move-exception p0
 
     .line 57
     move-wide v6, v2
@@ -217,7 +217,7 @@
     .line 64
     .line 65
     .line 66
-    throw v4
+    throw p0
 .end method
 
 .method public engineGetEncoded(Ljava/lang/String;)[B
@@ -243,26 +243,26 @@
 
     .line 68
     :cond_0
-    const-string v0, "Unsupported format: "
+    const-string p0, "Unsupported format: "
 
-    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object p0
 
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    return-object p1
+    return-object p0
 
     .line 69
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lorg/conscrypt/GCMParameters;->engineGetEncoded()[B
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public engineGetParameterSpec(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;
@@ -316,43 +316,43 @@
 
     .line 16
     .line 17
-    iget-object v1, p0, Lorg/conscrypt/GCMParameters;->iv:[B
+    iget-object p0, p0, Lorg/conscrypt/GCMParameters;->iv:[B
 
     .line 18
     .line 19
-    invoke-static {v0, v1}, Lorg/conscrypt/Platform;->toGCMParameterSpec(I[B)Ljava/security/spec/AlgorithmParameterSpec;
+    invoke-static {v0, p0}, Lorg/conscrypt/Platform;->toGCMParameterSpec(I[B)Ljava/security/spec/AlgorithmParameterSpec;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v0
+    move-result-object p0
 
     .line 23
-    invoke-virtual {p1, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 24
     .line 25
     .line 26
-    move-result-object p1
+    move-result-object p0
 
     .line 27
-    check-cast p1, Ljava/security/spec/AlgorithmParameterSpec;
+    check-cast p0, Ljava/security/spec/AlgorithmParameterSpec;
 
     .line 28
     .line 29
-    return-object p1
+    return-object p0
 
     .line 30
     :cond_0
-    new-instance v0, Ljava/security/spec/InvalidParameterSpecException;
+    new-instance p0, Ljava/security/spec/InvalidParameterSpecException;
 
     .line 31
     .line 32
-    const-string v1, "Unsupported class: "
+    const-string v0, "Unsupported class: "
 
     .line 33
     .line 34
-    invoke-static {p1, v1}, Lxy4;->x(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lc73;->g(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
 
     .line 35
     .line 36
@@ -360,12 +360,12 @@
     move-result-object p1
 
     .line 38
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
 
     .line 39
     .line 40
     .line 41
-    throw v0
+    throw p0
 .end method
 
 .method public engineInit(Ljava/security/spec/AlgorithmParameterSpec;)V
@@ -397,13 +397,13 @@
 
     .line 76
     :cond_0
-    new-instance p1, Ljava/security/spec/InvalidParameterSpecException;
+    new-instance p0, Ljava/security/spec/InvalidParameterSpecException;
 
-    const-string v0, "Only GCMParameterSpec is supported"
+    const-string p1, "Only GCMParameterSpec is supported"
 
-    invoke-direct {p1, v0}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
 
-    throw p1
+    throw p0
 .end method
 
 .method public engineInit([B)V
@@ -467,10 +467,10 @@
     move-result-wide v4
 
     .line 25
-    long-to-int v5, v4
+    long-to-int v4, v4
 
     .line 26
-    mul-int/lit8 v5, v5, 0x8
+    mul-int/lit8 v4, v4, 0x8
 
     .line 27
     .line 28
@@ -478,14 +478,14 @@
 
     .line 29
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 30
     goto :goto_1
 
     .line 31
     :cond_0
-    const/16 v5, 0x60
+    const/16 v4, 0x60
 
     .line 32
     .line 33
@@ -495,10 +495,10 @@
     .line 34
     .line 35
     .line 36
-    move-result v4
+    move-result v5
 
     .line 37
-    if-eqz v4, :cond_1
+    if-eqz v5, :cond_1
 
     .line 38
     .line 39
@@ -507,10 +507,10 @@
     .line 40
     .line 41
     .line 42
-    move-result v4
+    move-result v5
 
     .line 43
-    if-eqz v4, :cond_1
+    if-eqz v5, :cond_1
 
     .line 44
     .line 45
@@ -518,7 +518,7 @@
 
     .line 46
     .line 47
-    iput v5, p0, Lorg/conscrypt/GCMParameters;->tLen:I
+    iput v4, p0, Lorg/conscrypt/GCMParameters;->tLen:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -539,26 +539,26 @@
     .line 56
     :cond_1
     :try_start_2
-    new-instance p1, Ljava/io/IOException;
+    new-instance p0, Ljava/io/IOException;
 
     .line 57
     .line 58
-    const-string v4, "Error reading ASN.1 encoding"
+    const-string p1, "Error reading ASN.1 encoding"
 
     .line 59
     .line 60
-    invoke-direct {p1, v4}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 61
     .line 62
     .line 63
-    throw p1
+    throw p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 64
     :catchall_1
-    move-exception p1
+    move-exception p0
 
     .line 65
     move-wide v2, v0
@@ -575,7 +575,7 @@
     .line 70
     .line 71
     .line 72
-    throw p1
+    throw p0
 .end method
 
 .method public engineInit([BLjava/lang/String;)V
@@ -601,13 +601,13 @@
 
     .line 78
     :cond_0
-    const-string p1, "Unsupported format: "
+    const-string p0, "Unsupported format: "
 
-    invoke-virtual {p1, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object p0
 
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     return-void
 
@@ -620,34 +620,34 @@
 .end method
 
 .method public engineToString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "Conscrypt GCM AlgorithmParameters"
+    const-string p0, "Conscrypt GCM AlgorithmParameters"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getIV()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/GCMParameters;->iv:[B
+    iget-object p0, p0, Lorg/conscrypt/GCMParameters;->iv:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getTLen()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/GCMParameters;->tLen:I
+    iget p0, p0, Lorg/conscrypt/GCMParameters;->tLen:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

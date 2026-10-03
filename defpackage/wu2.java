@@ -1,59 +1,36 @@
 package defpackage;
 
-import android.os.Handler;
-import android.os.Looper;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.RejectedExecutionException;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class wu2 implements vu6 {
+    public static final wu2 b = new wu2(0);
+    public static final wu2 c = new wu2(1);
+    public final /* synthetic */ int a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class wu2 implements Executor {
-    public static volatile wu2 S;
-    public final /* synthetic */ int Q;
-    public final Object R;
-
-    public wu2(int i) {
-        this.Q = i;
-        switch (i) {
-            case 3:
-                d08 d08Var = new d08(Looper.getMainLooper());
-                Looper.getMainLooper();
-                this.R = d08Var;
-                break;
-            default:
-                this.R = Executors.newFixedThreadPool(2, new uc0(2));
-                break;
-        }
+    public /* synthetic */ wu2(int i) {
+        this.a = i;
     }
 
-    @Override // java.util.concurrent.Executor
-    public final void execute(Runnable runnable) {
-        int i = this.Q;
-        Object obj = this.R;
-        switch (i) {
+    @Override // defpackage.vu6
+    public final vx6 a(long j, hv3 hv3Var, af1 af1Var) {
+        switch (this.a) {
             case 0:
-                ((ExecutorService) obj).execute(runnable);
-                return;
+                float v0 = af1Var.v0(30.0f);
+                return new g35(new ix5(0.0f, -v0, Float.intBitsToFloat((int) (j >> 32)), Float.intBitsToFloat((int) (j & 4294967295L)) + v0));
             case 1:
-                Handler handler = (Handler) obj;
-                runnable.getClass();
-                if (handler.post(runnable)) {
-                    return;
-                }
-                throw new RejectedExecutionException(handler + " is shutting down");
-            case 2:
-                ((Executor) obj).execute(new rx5(runnable, 0));
-                return;
+                float v02 = af1Var.v0(30.0f);
+                return new g35(new ix5(-v02, 0.0f, Float.intBitsToFloat((int) (j >> 32)) + v02, Float.intBitsToFloat((int) (j & 4294967295L))));
             default:
-                ((d08) obj).post(runnable);
-                return;
+                return new g35(ut.b(0L, j));
         }
     }
 
-    public /* synthetic */ wu2(int i, Object obj) {
-        this.Q = i;
-        this.R = obj;
+    public String toString() {
+        switch (this.a) {
+            case 2:
+                return "RectangleShape";
+            default:
+                return super.toString();
+        }
     }
 }

@@ -1,982 +1,549 @@
 .class public final Lre5;
-.super Lza6;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lll7;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lxi2;
 
 
 # instance fields
-.field public final e0:Leb7;
+.field public d0:Lkr4;
 
-.field public final f0:Leb7;
+.field public e0:Lse5;
+
+.field public f0:Ljava/lang/CharSequence;
+
+.field public g0:J
+
+.field public h0:I
+
+.field public synthetic i0:Ljava/lang/Object;
+
+.field public final synthetic j0:Ljava/lang/CharSequence;
+
+.field public final synthetic k0:J
+
+.field public final synthetic l0:Lse5;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;Leb7;Leb7;Ljava/lang/Object;Ljava/lang/Object;Z)V
-    .locals 9
+.method public constructor <init>(JLb31;Lse5;Ljava/lang/CharSequence;)V
+    .locals 0
 
     .line 1
-    invoke-static {p5}, Lj$/util/Objects;->hashCode(Ljava/lang/Object;)I
+    iput-object p5, p0, Lre5;->j0:Ljava/lang/CharSequence;
 
     .line 2
     .line 3
-    .line 4
-    move-result v5
+    iput-wide p1, p0, Lre5;->k0:J
 
+    .line 4
     .line 5
-    move-object v0, p0
+    iput-object p4, p0, Lre5;->l0:Lse5;
 
     .line 6
-    move-object v1, p1
-
     .line 7
-    move-object v2, p2
+    const/4 p1, 0x2
 
     .line 8
-    move-object v3, p3
+    invoke-direct {p0, p1, p3}, Lll7;-><init>(ILb31;)V
 
     .line 9
-    move-object v4, p4
-
     .line 10
-    move-object/from16 v6, p7
-
     .line 11
-    .line 12
-    move-object/from16 v7, p8
-
-    .line 13
-    .line 14
-    move/from16 v8, p9
-
-    .line 15
-    .line 16
-    invoke-direct/range {v0 .. v8}, Leb7;-><init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;ILjava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 17
-    .line 18
-    .line 19
-    iput-object p5, p0, Lre5;->e0:Leb7;
-
-    .line 20
-    .line 21
-    if-nez p6, :cond_0
-
-    .line 22
-    .line 23
-    move-object p6, p0
-
-    .line 24
-    :cond_0
-    iput-object p6, p0, Lre5;->f0:Leb7;
-
-    .line 25
-    .line 26
     return-void
 .end method
 
 
 # virtual methods
-.method public final H0(Ljava/lang/Class;Lhb7;Leb7;[Leb7;)Leb7;
-    .locals 10
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lq05;->d(Ljava/lang/Object;)Landroid/view/textclassifier/TextClassifier;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    check-cast p2, Lb31;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0, p2, p1}, Lre5;->n(Lb31;Ljava/lang/Object;)Lb31;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    check-cast p0, Lre5;
+
+    .line 12
+    .line 13
+    sget-object p1, Lr98;->a:Lr98;
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, p1}, Lre5;->q(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    return-object p0
+.end method
+
+.method public final n(Lb31;Ljava/lang/Object;)Lb31;
+    .locals 6
 
     .line 1
     new-instance v0, Lre5;
 
     .line 2
     .line 3
-    iget-object v8, p0, Leb7;->Y:Ljava/lang/Object;
+    iget-wide v1, p0, Lre5;->k0:J
 
     .line 4
     .line 5
-    iget-boolean v9, p0, Leb7;->Z:Z
+    iget-object v4, p0, Lre5;->l0:Lse5;
 
     .line 6
     .line 7
-    iget-object v2, p0, Leb7;->c0:Lhb7;
+    iget-object v5, p0, Lre5;->j0:Ljava/lang/CharSequence;
 
     .line 8
     .line 9
-    iget-object v5, p0, Lre5;->e0:Leb7;
+    move-object v3, p1
 
     .line 10
-    .line 11
-    iget-object v6, p0, Lre5;->f0:Leb7;
-
-    .line 12
-    .line 13
-    iget-object v7, p0, Leb7;->X:Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    move-object v1, p1
-
-    .line 16
-    move-object v3, p3
-
-    .line 17
-    move-object v4, p4
-
-    .line 18
-    invoke-direct/range {v0 .. v9}, Lre5;-><init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;Leb7;Leb7;Ljava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-object v0
-.end method
-
-.method public final J0(Leb7;)Leb7;
-    .locals 11
-
-    .line 1
-    iget-object v0, p0, Lre5;->e0:Leb7;
-
-    .line 2
-    .line 3
-    if-ne v0, p1, :cond_0
-
-    .line 4
-    .line 5
-    return-object p0
-
-    .line 6
-    :cond_0
-    new-instance v1, Lre5;
-
-    .line 7
-    .line 8
-    iget-object v9, p0, Leb7;->Y:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    iget-boolean v10, p0, Leb7;->Z:Z
+    invoke-direct/range {v0 .. v5}, Lre5;-><init>(JLb31;Lse5;Ljava/lang/CharSequence;)V
 
     .line 11
     .line 12
-    iget-object v2, p0, Leb7;->V:Ljava/lang/Class;
-
     .line 13
+    iput-object p2, v0, Lre5;->i0:Ljava/lang/Object;
+
     .line 14
-    iget-object v3, p0, Leb7;->c0:Lhb7;
-
     .line 15
-    .line 16
-    iget-object v4, p0, Leb7;->a0:Leb7;
-
-    .line 17
-    .line 18
-    iget-object v5, p0, Leb7;->b0:[Leb7;
-
-    .line 19
-    .line 20
-    iget-object v7, p0, Lre5;->f0:Leb7;
-
-    .line 21
-    .line 22
-    iget-object v8, p0, Leb7;->X:Ljava/lang/Object;
-
-    .line 23
-    .line 24
-    move-object v6, p1
-
-    .line 25
-    invoke-direct/range {v1 .. v10}, Lre5;-><init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;Leb7;Leb7;Ljava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-object v1
-.end method
-
-.method public final K()Leb7;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lre5;->e0:Leb7;
-
-    .line 2
-    .line 3
     return-object v0
 .end method
 
-.method public final K0(Lxc7;)Leb7;
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 12
 
     .line 1
-    iget-object v0, p0, Lre5;->e0:Leb7;
+    iget v0, p0, Lre5;->h0:I
 
     .line 2
     .line 3
-    iget-object v1, v0, Leb7;->Y:Ljava/lang/Object;
+    const/4 v1, 0x2
 
     .line 4
-    .line 5
-    if-ne p1, v1, :cond_0
-
-    .line 6
-    .line 7
-    return-object p0
-
-    .line 8
-    :cond_0
-    new-instance v2, Lre5;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1}, Leb7;->N0(Ljava/lang/Object;)Leb7;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v7
-
-    .line 14
-    iget-object v10, p0, Leb7;->Y:Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    iget-boolean v11, p0, Leb7;->Z:Z
-
-    .line 17
-    .line 18
-    iget-object v3, p0, Leb7;->V:Ljava/lang/Class;
-
-    .line 19
-    .line 20
-    iget-object v4, p0, Leb7;->c0:Lhb7;
-
-    .line 21
-    .line 22
-    iget-object v5, p0, Leb7;->a0:Leb7;
-
-    .line 23
-    .line 24
-    iget-object v6, p0, Leb7;->b0:[Leb7;
-
-    .line 25
-    .line 26
-    iget-object v8, p0, Lre5;->f0:Leb7;
-
-    .line 27
-    .line 28
-    iget-object v9, p0, Leb7;->X:Ljava/lang/Object;
-
-    .line 29
-    .line 30
-    invoke-direct/range {v2 .. v11}, Lre5;-><init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;Leb7;Leb7;Ljava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 31
-    .line 32
-    .line 33
-    return-object v2
-.end method
-
-.method public final bridge synthetic M0()Leb7;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lre5;->T0()Lre5;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public final N0(Ljava/lang/Object;)Leb7;
-    .locals 11
-
-    .line 1
-    iget-object v0, p0, Leb7;->Y:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    if-ne p1, v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object p0
-
-    .line 6
-    :cond_0
-    new-instance v1, Lre5;
-
-    .line 7
-    .line 8
-    iget-object v8, p0, Leb7;->X:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    iget-boolean v10, p0, Leb7;->Z:Z
-
-    .line 11
-    .line 12
-    iget-object v2, p0, Leb7;->V:Ljava/lang/Class;
-
-    .line 13
-    .line 14
-    iget-object v3, p0, Leb7;->c0:Lhb7;
-
-    .line 15
-    .line 16
-    iget-object v4, p0, Leb7;->a0:Leb7;
-
-    .line 17
-    .line 18
-    iget-object v5, p0, Leb7;->b0:[Leb7;
-
-    .line 19
-    .line 20
-    iget-object v6, p0, Lre5;->e0:Leb7;
-
-    .line 21
-    .line 22
-    iget-object v7, p0, Lre5;->f0:Leb7;
-
-    .line 23
-    .line 24
-    move-object v9, p1
-
-    .line 25
-    invoke-direct/range {v1 .. v10}, Lre5;-><init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;Leb7;Leb7;Ljava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-object v1
-.end method
-
-.method public final O0(Ljava/lang/Object;)Leb7;
-    .locals 11
-
-    .line 1
-    iget-object v0, p0, Leb7;->X:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    if-ne p1, v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object p0
-
-    .line 6
-    :cond_0
-    new-instance v1, Lre5;
-
-    .line 7
-    .line 8
-    iget-object v9, p0, Leb7;->Y:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    iget-boolean v10, p0, Leb7;->Z:Z
-
-    .line 11
-    .line 12
-    iget-object v2, p0, Leb7;->V:Ljava/lang/Class;
-
-    .line 13
-    .line 14
-    iget-object v3, p0, Leb7;->c0:Lhb7;
-
-    .line 15
-    .line 16
-    iget-object v4, p0, Leb7;->a0:Leb7;
-
-    .line 17
-    .line 18
-    iget-object v5, p0, Leb7;->b0:[Leb7;
-
-    .line 19
-    .line 20
-    iget-object v6, p0, Lre5;->e0:Leb7;
-
-    .line 21
-    .line 22
-    iget-object v7, p0, Lre5;->f0:Leb7;
-
-    .line 23
-    .line 24
-    move-object v8, p1
-
-    .line 25
-    invoke-direct/range {v1 .. v10}, Lre5;-><init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;Leb7;Leb7;Ljava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-object v1
-.end method
-
-.method public final bridge synthetic Q0()Lza6;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lre5;->T0()Lre5;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public final R0(Ljava/lang/Object;)Lza6;
-    .locals 11
-
-    .line 1
-    iget-object v0, p0, Leb7;->Y:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    if-ne p1, v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object p0
-
-    .line 6
-    :cond_0
-    new-instance v1, Lre5;
-
-    .line 7
-    .line 8
-    iget-object v8, p0, Leb7;->X:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    iget-boolean v10, p0, Leb7;->Z:Z
-
-    .line 11
-    .line 12
-    iget-object v2, p0, Leb7;->V:Ljava/lang/Class;
-
-    .line 13
-    .line 14
-    iget-object v3, p0, Leb7;->c0:Lhb7;
-
-    .line 15
-    .line 16
-    iget-object v4, p0, Leb7;->a0:Leb7;
-
-    .line 17
-    .line 18
-    iget-object v5, p0, Leb7;->b0:[Leb7;
-
-    .line 19
-    .line 20
-    iget-object v6, p0, Lre5;->e0:Leb7;
-
-    .line 21
-    .line 22
-    iget-object v7, p0, Lre5;->f0:Leb7;
-
-    .line 23
-    .line 24
-    move-object v9, p1
-
-    .line 25
-    invoke-direct/range {v1 .. v10}, Lre5;-><init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;Leb7;Leb7;Ljava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-object v1
-.end method
-
-.method public final S0(Ljava/lang/Object;)Lza6;
-    .locals 11
-
-    .line 1
-    iget-object v0, p0, Leb7;->X:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    if-ne p1, v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object p0
-
-    .line 6
-    :cond_0
-    new-instance v1, Lre5;
-
-    .line 7
-    .line 8
-    iget-object v9, p0, Leb7;->Y:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    iget-boolean v10, p0, Leb7;->Z:Z
-
-    .line 11
-    .line 12
-    iget-object v2, p0, Leb7;->V:Ljava/lang/Class;
-
-    .line 13
-    .line 14
-    iget-object v3, p0, Leb7;->c0:Lhb7;
-
-    .line 15
-    .line 16
-    iget-object v4, p0, Leb7;->a0:Leb7;
-
-    .line 17
-    .line 18
-    iget-object v5, p0, Leb7;->b0:[Leb7;
-
-    .line 19
-    .line 20
-    iget-object v6, p0, Lre5;->e0:Leb7;
-
-    .line 21
-    .line 22
-    iget-object v7, p0, Lre5;->f0:Leb7;
-
-    .line 23
-    .line 24
-    move-object v8, p1
-
-    .line 25
-    invoke-direct/range {v1 .. v10}, Lre5;-><init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;Leb7;Leb7;Ljava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-object v1
-.end method
-
-.method public final T0()Lre5;
-    .locals 11
-
-    .line 1
-    iget-boolean v0, p0, Leb7;->Z:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object p0
-
-    .line 6
-    :cond_0
-    new-instance v1, Lre5;
-
-    .line 7
-    .line 8
-    iget-object v0, p0, Lre5;->e0:Leb7;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0}, Leb7;->M0()Leb7;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v6
-
-    .line 14
-    iget-object v9, p0, Leb7;->Y:Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    const/4 v10, 0x1
-
-    .line 17
-    iget-object v2, p0, Leb7;->V:Ljava/lang/Class;
-
-    .line 18
-    .line 19
-    iget-object v3, p0, Leb7;->c0:Lhb7;
-
-    .line 20
-    .line 21
-    iget-object v4, p0, Leb7;->a0:Leb7;
-
-    .line 22
-    .line 23
-    iget-object v5, p0, Leb7;->b0:[Leb7;
-
-    .line 24
-    .line 25
-    iget-object v7, p0, Lre5;->f0:Leb7;
-
-    .line 26
-    .line 27
-    iget-object v8, p0, Leb7;->X:Ljava/lang/Object;
-
-    .line 28
-    .line 29
-    invoke-direct/range {v1 .. v10}, Lre5;-><init>(Ljava/lang/Class;Lhb7;Leb7;[Leb7;Leb7;Leb7;Ljava/lang/Object;Ljava/lang/Object;Z)V
-
-    .line 30
-    .line 31
-    .line 32
-    return-object v1
-.end method
-
-.method public final Y()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    return v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    if-ne p1, p0, :cond_0
-
-    .line 2
-    .line 3
-    const/4 p1, 0x1
-
-    .line 4
-    return p1
-
-    .line 5
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 6
-    if-nez p1, :cond_1
-
-    .line 7
-    .line 8
-    return v0
-
-    .line 9
-    :cond_1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v1
-
-    .line 13
-    const-class v2, Lre5;
-
-    .line 14
-    .line 15
-    if-eq v1, v2, :cond_2
-
-    .line 16
-    .line 17
-    return v0
-
-    .line 18
-    :cond_2
-    check-cast p1, Lre5;
-
-    .line 19
-    .line 20
-    iget-object v1, p1, Leb7;->V:Ljava/lang/Class;
-
-    .line 21
-    .line 22
-    iget-object v2, p0, Leb7;->V:Ljava/lang/Class;
-
-    .line 23
-    .line 24
-    if-eq v1, v2, :cond_3
-
-    .line 25
-    .line 26
-    return v0
-
-    .line 27
-    :cond_3
-    iget-object v0, p0, Lre5;->e0:Leb7;
-
-    .line 28
-    .line 29
-    iget-object p1, p1, Lre5;->e0:Leb7;
-
-    .line 30
-    .line 31
-    invoke-virtual {v0, p1}, Leb7;->equals(Ljava/lang/Object;)Z
-
-    .line 32
-    .line 33
-    .line 34
-    move-result p1
-
-    .line 35
-    return p1
-.end method
-
-.method public final r0()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v1, p0, Leb7;->V:Ljava/lang/Class;
-
-    .line 7
-    .line 8
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v1
-
-    .line 12
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 13
-    .line 14
-    .line 15
-    iget-object v1, p0, Lre5;->e0:Leb7;
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
     const/4 v2, 0x1
 
-    .line 20
-    invoke-virtual {p0, v2}, Leb7;->q0(I)Z
+    .line 5
+    const/4 v3, 0x0
 
+    .line 6
+    if-eqz v0, :cond_2
+
+    .line 7
+    .line 8
+    if-eq v0, v2, :cond_1
+
+    .line 9
+    .line 10
+    if-ne v0, v1, :cond_0
+
+    .line 11
+    .line 12
+    iget-wide v0, p0, Lre5;->g0:J
+
+    .line 13
+    .line 14
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 15
+    .line 16
+    .line 17
+    goto/16 :goto_2
+
+    .line 18
+    .line 19
+    :cond_0
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 20
     .line 21
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
     .line 22
     .line 23
-    move-result v2
-
     .line 24
-    if-eqz v2, :cond_0
+    return-object v3
 
     .line 25
+    :cond_1
+    iget-wide v0, p0, Lre5;->g0:J
+
     .line 26
-    const/16 v2, 0x3c
-
     .line 27
-    .line 28
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    iget-object v2, p0, Lre5;->f0:Ljava/lang/CharSequence;
 
+    .line 28
     .line 29
+    iget-object v4, p0, Lre5;->e0:Lse5;
+
     .line 30
     .line 31
-    invoke-virtual {v1}, Leb7;->I0()Ljava/lang/String;
+    iget-object v5, p0, Lre5;->d0:Lkr4;
 
     .line 32
     .line 33
-    .line 34
-    move-result-object v1
+    iget-object p0, p0, Lre5;->i0:Ljava/lang/Object;
 
+    .line 34
     .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast p0, Landroid/view/textclassifier/TextSelection;
 
     .line 36
     .line 37
-    .line 38
-    const/16 v1, 0x3e
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
 
+    .line 38
     .line 39
     .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    goto :goto_0
 
     .line 41
+    :cond_2
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
     .line 42
     .line 43
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 44
+    iget-object p1, p0, Lre5;->i0:Ljava/lang/Object;
+
     .line 45
     .line 46
-    move-result-object v0
+    invoke-static {p1}, Lq05;->d(Ljava/lang/Object;)Landroid/view/textclassifier/TextClassifier;
 
     .line 47
-    return-object v0
-.end method
+    .line 48
+    .line 49
+    move-result-object v8
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+    .line 50
+    new-instance p1, Landroid/view/textclassifier/TextSelection$Request$Builder;
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 51
+    .line 52
+    iget-wide v4, p0, Lre5;->k0:J
 
-    .line 2
-    .line 3
-    const/16 v1, 0x28
+    .line 53
+    .line 54
+    invoke-static {v4, v5}, Leu7;->d(J)I
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    .line 55
+    .line 56
+    .line 57
+    move-result p1
 
-    .line 6
-    .line 7
-    .line 8
-    const-string v1, "[reference type, class "
+    .line 58
+    invoke-static {v4, v5}, Leu7;->c(J)I
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 59
+    .line 60
+    .line 61
+    move-result v0
 
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {p0}, Lre5;->r0()Ljava/lang/String;
+    .line 62
+    new-instance v4, Landroid/view/textclassifier/TextSelection$Request$Builder;
 
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v1
+    .line 63
+    .line 64
+    iget-object v5, p0, Lre5;->j0:Ljava/lang/CharSequence;
 
-    .line 17
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 65
+    .line 66
+    invoke-direct {v4, v5, p1, v0}, Landroid/view/textclassifier/TextSelection$Request$Builder;-><init>(Ljava/lang/CharSequence;II)V
 
-    .line 18
-    .line 19
-    .line 20
-    const/16 v1, 0x3c
+    .line 67
+    .line 68
+    .line 69
+    iget-object p1, p0, Lre5;->l0:Lse5;
 
-    .line 21
-    .line 22
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 70
+    .line 71
+    invoke-virtual {p1}, Lse5;->c()Landroid/os/LocaleList;
 
-    .line 23
-    .line 24
-    .line 25
-    iget-object v1, p0, Lre5;->e0:Leb7;
-
-    .line 26
-    .line 27
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 28
-    .line 29
-    .line 30
-    const-string v1, ">]"
-
-    .line 31
-    .line 32
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 33
-    .line 34
-    .line 35
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 36
-    .line 37
-    .line 38
+    .line 72
+    .line 73
+    .line 74
     move-result-object v0
 
-    .line 39
-    return-object v0
-.end method
+    .line 75
+    invoke-virtual {v4, v0}, Landroid/view/textclassifier/TextSelection$Request$Builder;->setDefaultLocales(Landroid/os/LocaleList;)Landroid/view/textclassifier/TextSelection$Request$Builder;
 
-.method public final u0()Leb7;
-    .locals 1
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v0
 
-    .line 1
-    iget-object v0, p0, Lre5;->e0:Leb7;
+    .line 79
+    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 2
-    .line 3
-    return-object v0
-.end method
+    .line 80
+    .line 81
+    const/16 v6, 0x1f
 
-.method public final v0(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
-    .locals 2
+    .line 82
+    .line 83
+    if-lt v4, v6, :cond_3
 
-    .line 1
-    iget-object v0, p0, Leb7;->V:Ljava/lang/Class;
+    .line 84
+    .line 85
+    invoke-virtual {v0, v2}, Landroid/view/textclassifier/TextSelection$Request$Builder;->setIncludeTextClassification(Z)Landroid/view/textclassifier/TextSelection$Request$Builder;
 
-    .line 2
-    .line 3
-    const/4 v1, 0x1
+    .line 86
+    .line 87
+    .line 88
+    :cond_3
+    invoke-virtual {v0}, Landroid/view/textclassifier/TextSelection$Request$Builder;->build()Landroid/view/textclassifier/TextSelection$Request;
 
-    .line 4
-    invoke-static {v0, p1, v1}, Leb7;->p0(Ljava/lang/Class;Ljava/lang/StringBuilder;Z)V
+    .line 89
+    .line 90
+    .line 91
+    move-result-object v0
 
-    .line 5
-    .line 6
-    .line 7
-    return-object p1
-.end method
+    .line 92
+    invoke-interface {v8, v0}, Landroid/view/textclassifier/TextClassifier;->suggestSelection(Landroid/view/textclassifier/TextSelection$Request;)Landroid/view/textclassifier/TextSelection;
 
-.method public final w0(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
-    .locals 2
+    .line 93
+    .line 94
+    .line 95
+    move-result-object v0
 
-    .line 1
-    iget-object v0, p0, Leb7;->V:Ljava/lang/Class;
+    .line 96
+    invoke-virtual {v0}, Landroid/view/textclassifier/TextSelection;->getSelectionStartIndex()I
 
-    .line 2
-    .line 3
-    const/4 v1, 0x0
+    .line 97
+    .line 98
+    .line 99
+    move-result v7
 
-    .line 4
-    invoke-static {v0, p1, v1}, Leb7;->p0(Ljava/lang/Class;Ljava/lang/StringBuilder;Z)V
+    .line 100
+    invoke-virtual {v0}, Landroid/view/textclassifier/TextSelection;->getSelectionEndIndex()I
 
-    .line 5
-    .line 6
-    .line 7
-    const/16 v0, 0x3c
+    .line 101
+    .line 102
+    .line 103
+    move-result v9
 
-    .line 8
-    .line 9
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 104
+    invoke-static {v7, v9}, Lfu7;->a(II)J
 
-    .line 10
-    .line 11
-    .line 12
-    iget-object v0, p0, Lre5;->e0:Leb7;
+    .line 105
+    .line 106
+    .line 107
+    move-result-wide v9
 
-    .line 13
-    .line 14
-    invoke-virtual {v0, p1}, Leb7;->w0(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+    .line 108
+    sget-object v11, Lj41;->X:Lj41;
 
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
+    .line 109
+    .line 110
+    if-lt v4, v6, :cond_5
 
-    .line 18
-    const-string v0, ">;"
+    .line 111
+    .line 112
+    invoke-virtual {v0}, Landroid/view/textclassifier/TextSelection;->getTextClassification()Landroid/view/textclassifier/TextClassification;
 
-    .line 19
-    .line 20
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 113
+    .line 114
+    .line 115
+    move-result-object v4
 
-    .line 21
-    .line 22
-    .line 23
-    return-object p1
-.end method
+    .line 116
+    if-eqz v4, :cond_5
 
-.method public final y0()Leb7;
-    .locals 1
+    .line 117
+    .line 118
+    iget-object v1, p1, Lse5;->e:Lkr4;
 
-    .line 1
-    iget-object v0, p0, Lre5;->e0:Leb7;
+    .line 119
+    .line 120
+    iput-object v0, p0, Lre5;->i0:Ljava/lang/Object;
 
-    .line 2
-    .line 3
-    return-object v0
+    .line 121
+    .line 122
+    iput-object v1, p0, Lre5;->d0:Lkr4;
+
+    .line 123
+    .line 124
+    iput-object p1, p0, Lre5;->e0:Lse5;
+
+    .line 125
+    .line 126
+    iput-object v5, p0, Lre5;->f0:Ljava/lang/CharSequence;
+
+    .line 127
+    .line 128
+    iput-wide v9, p0, Lre5;->g0:J
+
+    .line 129
+    .line 130
+    iput v2, p0, Lre5;->h0:I
+
+    .line 131
+    .line 132
+    invoke-virtual {v1, p0}, Lkr4;->g(Lb31;)Ljava/lang/Object;
+
+    .line 133
+    .line 134
+    .line 135
+    move-result-object p0
+
+    .line 136
+    if-ne p0, v11, :cond_4
+
+    .line 137
+    .line 138
+    goto :goto_1
+
+    .line 139
+    :cond_4
+    move-object v4, p1
+
+    .line 140
+    move-object p0, v0
+
+    .line 141
+    move-object v2, v5
+
+    .line 142
+    move-object v5, v1
+
+    .line 143
+    move-wide v0, v9
+
+    .line 144
+    :goto_0
+    :try_start_0
+    new-instance p1, Lcp7;
+
+    .line 145
+    .line 146
+    invoke-virtual {p0}, Landroid/view/textclassifier/TextSelection;->getTextClassification()Landroid/view/textclassifier/TextClassification;
+
+    .line 147
+    .line 148
+    .line 149
+    move-result-object p0
+
+    .line 150
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 151
+    .line 152
+    .line 153
+    invoke-direct {p1, v2, v0, v1, p0}, Lcp7;-><init>(Ljava/lang/CharSequence;JLandroid/view/textclassifier/TextClassification;)V
+
+    .line 154
+    .line 155
+    .line 156
+    iget-object p0, v4, Lse5;->g:Lx65;
+
+    .line 157
+    .line 158
+    invoke-virtual {p0, p1}, Lx65;->setValue(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 159
+    .line 160
+    .line 161
+    invoke-interface {v5, v3}, Lir4;->m(Ljava/lang/Object;)V
+
+    .line 162
+    .line 163
+    .line 164
+    goto :goto_2
+
+    .line 165
+    :catchall_0
+    move-exception v0
+
+    .line 166
+    move-object p0, v0
+
+    .line 167
+    invoke-interface {v5, v3}, Lir4;->m(Ljava/lang/Object;)V
+
+    .line 168
+    .line 169
+    .line 170
+    throw p0
+
+    .line 171
+    :cond_5
+    iput-wide v9, p0, Lre5;->g0:J
+
+    .line 172
+    .line 173
+    iput v1, p0, Lre5;->h0:I
+
+    .line 174
+    .line 175
+    iget-object v4, p0, Lre5;->l0:Lse5;
+
+    .line 176
+    .line 177
+    iget-object v5, p0, Lre5;->j0:Ljava/lang/CharSequence;
+
+    .line 178
+    .line 179
+    move-wide v6, v9
+
+    .line 180
+    move-object v9, p0
+
+    .line 181
+    invoke-static/range {v4 .. v9}, Lse5;->a(Lse5;Ljava/lang/CharSequence;JLandroid/view/textclassifier/TextClassifier;Ld31;)Ljava/lang/Object;
+
+    .line 182
+    .line 183
+    .line 184
+    move-result-object p0
+
+    .line 185
+    if-ne p0, v11, :cond_6
+
+    .line 186
+    .line 187
+    :goto_1
+    return-object v11
+
+    .line 188
+    :cond_6
+    move-wide v0, v6
+
+    .line 189
+    :goto_2
+    new-instance p0, Leu7;
+
+    .line 190
+    .line 191
+    invoke-direct {p0, v0, v1}, Leu7;-><init>(J)V
+
+    .line 192
+    .line 193
+    .line 194
+    return-object p0
 .end method

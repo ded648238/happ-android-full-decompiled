@@ -1,11 +1,11 @@
 package com.github.luben.zstd;
 
 import com.github.luben.zstd.util.Native;
-import defpackage.fn;
+import defpackage.i60;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ZstdDictCompress extends SharedDictBase {
     private int level;
     private long nativePtr;
@@ -20,18 +20,18 @@ public class ZstdDictCompress extends SharedDictBase {
         this.sharedDict = null;
         Zstd.defaultCompressionLevel();
         this.level = i;
-        int iLimit = byteBuffer.limit() - byteBuffer.position();
+        int limit = byteBuffer.limit() - byteBuffer.position();
         if (!byteBuffer.isDirect()) {
-            fn.r("dict must be a direct buffer");
+            i60.p("dict must be a direct buffer");
             throw null;
         }
-        if (iLimit < 0) {
-            fn.r("dict cannot be empty.");
+        if (limit < 0) {
+            i60.p("dict cannot be empty.");
             throw null;
         }
-        initDirect(byteBuffer, byteBuffer.position(), iLimit, i, z ? 1 : 0);
+        initDirect(byteBuffer, byteBuffer.position(), limit, i, z ? 1 : 0);
         if (this.nativePtr == 0) {
-            fn.s("ZSTD_createCDict failed");
+            i60.g("ZSTD_createCDict failed");
             throw null;
         }
         if (z) {
@@ -74,16 +74,20 @@ public class ZstdDictCompress extends SharedDictBase {
         Zstd.defaultCompressionLevel();
         this.level = i3;
         if (bArr.length - i >= 0) {
-            init(bArr, i, i2, i3);
-            if (0 != this.nativePtr) {
-                storeFence();
-                return;
-            } else {
-                fn.s("ZSTD_createCDict failed");
-                throw null;
+            if (i >= 0 && i2 >= 0 && i2 <= bArr.length - i) {
+                init(bArr, i, i2, i3);
+                if (0 != this.nativePtr) {
+                    storeFence();
+                    return;
+                } else {
+                    i60.g("ZSTD_createCDict failed");
+                    throw null;
+                }
             }
+            i60.p("Invalid offset/length for dictionary buffer");
+            throw null;
         }
-        fn.r("Dictionary buffer is too short");
+        i60.p("Dictionary buffer is too short");
         throw null;
     }
 

@@ -1,10 +1,14 @@
-.class public final synthetic Lgm5;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Lgm5;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final Q:Lgm5;
+.field public static final enum X:Lgm5;
+
+.field public static final enum Y:Lgm5;
+
+.field public static final synthetic Z:[Lgm5;
 
 
 # direct methods
@@ -16,70 +20,115 @@
 
     .line 2
     .line 3
-    const-string v1, "getSubInfoButtonLink()Ljava/lang/String;"
+    const-string v1, "PRETTY"
 
     .line 4
     .line 5
     const/4 v2, 0x0
 
     .line 6
-    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 7
     .line 8
-    const-string v4, "subInfoButtonLink"
-
     .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    new-instance v1, Lgm5;
 
+    .line 10
     .line 11
+    const-string v2, "DEBUG"
+
     .line 12
     .line 13
-    sput-object v0, Lgm5;->Q:Lgm5;
+    const/4 v3, 0x1
 
     .line 14
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 15
+    .line 16
+    .line 17
+    sput-object v1, Lgm5;->X:Lgm5;
+
+    .line 18
+    .line 19
+    new-instance v2, Lgm5;
+
+    .line 20
+    .line 21
+    const-string v3, "NONE"
+
+    .line 22
+    .line 23
+    const/4 v4, 0x2
+
+    .line 24
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 25
+    .line 26
+    .line 27
+    sput-object v2, Lgm5;->Y:Lgm5;
+
+    .line 28
+    .line 29
+    filled-new-array {v0, v1, v2}, [Lgm5;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    sput-object v0, Lgm5;->Z:[Lgm5;
+
+    .line 34
+    .line 35
     return-void
 .end method
 
-
-# virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public static valueOf(Ljava/lang/String;)Lgm5;
+    .locals 1
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    const-class v0, Lgm5;
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/String;
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->x2(Ljava/lang/String;)V
-
     .line 6
+    move-result-object p0
+
     .line 7
+    check-cast p0, Lgm5;
+
     .line 8
-    return-void
+    .line 9
+    return-object p0
 .end method
 
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public static values()[Lgm5;
+    .locals 1
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    sget-object v0, Lgm5;->Z:[Lgm5;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->K0()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object v0
 
     .line 7
-    return-object p1
+    check-cast v0, [Lgm5;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

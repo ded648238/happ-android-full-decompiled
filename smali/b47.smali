@@ -1,85 +1,75 @@
-.class public final synthetic Lb47;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lb47;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lb31;
+.implements Lk41;
 
 
-# static fields
-.field public static final Q:Lb47;
+# instance fields
+.field public final X:Lkn0;
+
+.field public final Y:Lz31;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Lkn0;Lz31;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lb47;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "getHourOfAmPm()Ljava/lang/Integer;"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, Lb47;->X:Lkn0;
 
+    .line 5
     .line 6
-    const-class v3, Lx37;
+    iput-object p2, p0, Lb47;->Y:Lz31;
 
     .line 7
     .line 8
-    const-string v4, "hourOfAmPm"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lb47;->Q:Lb47;
-
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final c()Lk41;
     .locals 0
 
     .line 1
-    check-cast p1, Lx37;
+    iget-object p0, p0, Lb47;->X:Lkn0;
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/Integer;
+    return-object p0
+.end method
+
+.method public final f(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lb47;->X:Lkn0;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lg00;->f(Ljava/lang/Object;)V
 
     .line 4
     .line 5
-    invoke-interface {p1, p2}, Lx37;->d(Ljava/lang/Integer;)V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final s()Lz31;
     .locals 0
 
     .line 1
-    check-cast p1, Lx37;
+    iget-object p0, p0, Lb47;->Y:Lz31;
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lx37;->k()Ljava/lang/Integer;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    return-object p1
+    return-object p0
 .end method

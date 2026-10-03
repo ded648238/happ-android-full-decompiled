@@ -1,6 +1,6 @@
 .class public final enum Lorg/conscrypt/ct/PolicyCompliance;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -22,52 +22,38 @@
 
 .field public static final enum NOT_ENOUGH_SCTS:Lorg/conscrypt/ct/PolicyCompliance;
 
+.field public static final enum NO_RFC6962_LOG:Lorg/conscrypt/ct/PolicyCompliance;
+
 
 # direct methods
 .method private static synthetic $values()[Lorg/conscrypt/ct/PolicyCompliance;
-    .locals 3
+    .locals 4
 
     .line 1
-    const/4 v0, 0x3
+    sget-object v0, Lorg/conscrypt/ct/PolicyCompliance;->COMPLY:Lorg/conscrypt/ct/PolicyCompliance;
 
     .line 2
-    new-array v0, v0, [Lorg/conscrypt/ct/PolicyCompliance;
-
     .line 3
+    sget-object v1, Lorg/conscrypt/ct/PolicyCompliance;->NOT_ENOUGH_SCTS:Lorg/conscrypt/ct/PolicyCompliance;
+
     .line 4
-    sget-object v1, Lorg/conscrypt/ct/PolicyCompliance;->COMPLY:Lorg/conscrypt/ct/PolicyCompliance;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
+    sget-object v2, Lorg/conscrypt/ct/PolicyCompliance;->NOT_ENOUGH_DIVERSE_SCTS:Lorg/conscrypt/ct/PolicyCompliance;
 
+    .line 6
     .line 7
-    aput-object v1, v0, v2
+    sget-object v3, Lorg/conscrypt/ct/PolicyCompliance;->NO_RFC6962_LOG:Lorg/conscrypt/ct/PolicyCompliance;
 
     .line 8
     .line 9
-    sget-object v1, Lorg/conscrypt/ct/PolicyCompliance;->NOT_ENOUGH_SCTS:Lorg/conscrypt/ct/PolicyCompliance;
+    filled-new-array {v0, v1, v2, v3}, [Lorg/conscrypt/ct/PolicyCompliance;
 
     .line 10
     .line 11
-    const/4 v2, 0x1
-
     .line 12
-    aput-object v1, v0, v2
+    move-result-object v0
 
     .line 13
-    .line 14
-    sget-object v1, Lorg/conscrypt/ct/PolicyCompliance;->NOT_ENOUGH_DIVERSE_SCTS:Lorg/conscrypt/ct/PolicyCompliance;
-
-    .line 15
-    .line 16
-    const/4 v2, 0x2
-
-    .line 17
-    aput-object v1, v0, v2
-
-    .line 18
-    .line 19
     return-object v0
 .end method
 
@@ -135,18 +121,38 @@
 
     .line 30
     .line 31
-    invoke-static {}, Lorg/conscrypt/ct/PolicyCompliance;->$values()[Lorg/conscrypt/ct/PolicyCompliance;
+    new-instance v0, Lorg/conscrypt/ct/PolicyCompliance;
 
     .line 32
     .line 33
-    .line 34
-    move-result-object v0
+    const-string v1, "NO_RFC6962_LOG"
 
+    .line 34
     .line 35
-    sput-object v0, Lorg/conscrypt/ct/PolicyCompliance;->$VALUES:[Lorg/conscrypt/ct/PolicyCompliance;
+    const/4 v2, 0x3
 
     .line 36
+    invoke-direct {v0, v1, v2}, Lorg/conscrypt/ct/PolicyCompliance;-><init>(Ljava/lang/String;I)V
+
     .line 37
+    .line 38
+    .line 39
+    sput-object v0, Lorg/conscrypt/ct/PolicyCompliance;->NO_RFC6962_LOG:Lorg/conscrypt/ct/PolicyCompliance;
+
+    .line 40
+    .line 41
+    invoke-static {}, Lorg/conscrypt/ct/PolicyCompliance;->$values()[Lorg/conscrypt/ct/PolicyCompliance;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    sput-object v0, Lorg/conscrypt/ct/PolicyCompliance;->$VALUES:[Lorg/conscrypt/ct/PolicyCompliance;
+
+    .line 46
+    .line 47
     return-void
 .end method
 

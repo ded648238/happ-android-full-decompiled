@@ -1,305 +1,324 @@
 package androidx.activity;
 
 import android.app.Application;
+import android.app.PictureInPictureUiState;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.res.Configuration;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Trace;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import defpackage.av2;
-import defpackage.bv3;
-import defpackage.d6;
-import defpackage.dd5;
-import defpackage.e6;
-import defpackage.e72;
-import defpackage.e84;
-import defpackage.eu4;
-import defpackage.f05;
-import defpackage.fk3;
-import defpackage.fn;
-import defpackage.g72;
-import defpackage.jg2;
-import defpackage.jv0;
-import defpackage.k84;
-import defpackage.kk3;
-import defpackage.km2;
-import defpackage.ky5;
-import defpackage.mo0;
-import defpackage.n95;
-import defpackage.no0;
-import defpackage.nu0;
-import defpackage.oo7;
-import defpackage.ph4;
-import defpackage.po0;
-import defpackage.po7;
-import defpackage.py5;
-import defpackage.qi5;
-import defpackage.qo0;
-import defpackage.qy5;
-import defpackage.r52;
-import defpackage.ro0;
-import defpackage.ro7;
-import defpackage.rt2;
-import defpackage.si5;
-import defpackage.so0;
-import defpackage.so7;
-import defpackage.th5;
-import defpackage.to0;
-import defpackage.uo0;
-import defpackage.w5;
-import defpackage.w85;
-import defpackage.x67;
-import defpackage.x85;
-import defpackage.xh4;
-import defpackage.xj3;
-import defpackage.yu7;
-import defpackage.z85;
-import defpackage.zu6;
+import android.window.OnBackInvokedDispatcher;
+import defpackage.ak6;
+import defpackage.bk6;
+import defpackage.bw0;
+import defpackage.c14;
+import defpackage.cw0;
+import defpackage.dp4;
+import defpackage.ew0;
+import defpackage.f14;
+import defpackage.fp4;
+import defpackage.fw0;
+import defpackage.gw0;
+import defpackage.gz7;
+import defpackage.hi2;
+import defpackage.hw0;
+import defpackage.hx5;
+import defpackage.hz4;
+import defpackage.i14;
+import defpackage.i6;
+import defpackage.i60;
+import defpackage.iw0;
+import defpackage.ji2;
+import defpackage.jw0;
+import defpackage.kc5;
+import defpackage.kg2;
+import defpackage.lg5;
+import defpackage.lj8;
+import defpackage.m93;
+import defpackage.mj8;
+import defpackage.mm7;
+import defpackage.mp4;
+import defpackage.nt2;
+import defpackage.nt5;
+import defpackage.p6;
+import defpackage.pj8;
+import defpackage.pz4;
+import defpackage.q6;
+import defpackage.q96;
+import defpackage.qj8;
+import defpackage.r04;
+import defpackage.r21;
+import defpackage.s04;
+import defpackage.s11;
+import defpackage.tm;
+import defpackage.ul1;
+import defpackage.vj6;
+import defpackage.vs5;
+import defpackage.w26;
+import defpackage.w53;
+import defpackage.ws5;
+import defpackage.xs5;
+import defpackage.y26;
+import defpackage.yl0;
+import defpackage.zs5;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.atomic.AtomicInteger;
 import kotlin.Metadata;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0016\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u00052\u00020\u00062\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u0002:\u0004\f\r\u000e\u000eJ\u0019\u0010\n\u001a\u00020\t2\b\u0010\b\u001a\u0004\u0018\u00010\u0007H\u0016¢\u0006\u0004\b\n\u0010\u000b¨\u0006\u000f"}, d2 = {"Landroidx/activity/ComponentActivity;", "Landroidx/core/app/ComponentActivity;", "", "Lik3;", "Lso7;", "Ljg2;", "Lqy5;", "Landroid/view/View;", "view", "Lbh7;", "setContentView", "(Landroid/view/View;)V", "so0", "r3", "to0", "activity_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
-public class ComponentActivity extends androidx.core.app.ComponentActivity implements so7, jg2, qy5 {
-    public static final /* synthetic */ int j0 = 0;
-    public final jv0 R = new jv0();
-    public final av2 S = new av2((Runnable) new mo0(this, 0));
-    public final th5 T;
-    public ro7 U;
-    public final to0 V;
-    public final zu6 W;
-    public final AtomicInteger X;
-    public final uo0 Y;
-    public final CopyOnWriteArrayList Z;
-    public final CopyOnWriteArrayList a0;
-    public final CopyOnWriteArrayList b0;
-    public final CopyOnWriteArrayList c0;
-    public final CopyOnWriteArrayList d0;
-    public final CopyOnWriteArrayList e0;
-    public boolean f0;
-    public boolean g0;
-    public final zu6 h0;
-    public final zu6 i0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0016\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u00052\u00020\u00062\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u00022\u00020\u0002:\u0003\f\r\rJ\u0019\u0010\n\u001a\u00020\t2\b\u0010\b\u001a\u0004\u0018\u00010\u0007H\u0016¢\u0006\u0004\b\n\u0010\u000b¨\u0006\u000e"}, d2 = {"Landroidx/activity/ComponentActivity;", "Landroidx/core/app/ComponentActivity;", HttpUrl.FRAGMENT_ENCODE_SET, "Lf14;", "Lqj8;", "Lnt2;", "Lbk6;", "Landroid/view/View;", "view", "Lr98;", "setContentView", "(Landroid/view/View;)V", "hw0", "iw0", "activity"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes.dex */
+public class ComponentActivity extends androidx.core.app.ComponentActivity implements qj8, nt2, bk6 {
+    public static final /* synthetic */ int u0 = 0;
+    public final r21 Y = new r21();
+    public final w53 Z = new w53(new bw0(this, 0));
+    public final q96 c0;
+    public pj8 d0;
+    public final iw0 e0;
+    public final mm7 f0;
+    public final AtomicInteger g0;
+    public final jw0 h0;
+    public final CopyOnWriteArrayList i0;
+    public final CopyOnWriteArrayList j0;
+    public final CopyOnWriteArrayList k0;
+    public final CopyOnWriteArrayList l0;
+    public final CopyOnWriteArrayList m0;
+    public final CopyOnWriteArrayList n0;
+    public final CopyOnWriteArrayList o0;
+    public boolean p0;
+    public boolean q0;
+    public final mm7 r0;
+    public final mm7 s0;
+    public final mm7 t0;
 
     public ComponentActivity() {
         int i = 0;
-        py5 py5Var = new py5(this, new bv3(17, this));
-        th5 th5Var = new th5(py5Var);
-        this.T = th5Var;
-        this.V = new to0(this);
+        ak6 ak6Var = new ak6(this, new lg5(12, this));
+        q96 q96Var = new q96(ak6Var, 3);
+        this.c0 = q96Var;
+        this.e0 = new iw0(this);
         int i2 = 1;
-        this.W = new zu6(new no0(this, 1));
-        this.X = new AtomicInteger();
-        this.Y = new uo0(this);
-        this.Z = new CopyOnWriteArrayList();
-        this.a0 = new CopyOnWriteArrayList();
-        this.b0 = new CopyOnWriteArrayList();
-        this.c0 = new CopyOnWriteArrayList();
-        this.d0 = new CopyOnWriteArrayList();
-        this.e0 = new CopyOnWriteArrayList();
-        kk3 kk3Var = this.Q;
-        if (kk3Var == null) {
-            fn.s("getLifecycle() returned null in ComponentActivity's constructor. Please make sure you are lazily constructing your Lifecycle in the first call to getLifecycle() rather than relying on field initialization.");
+        this.f0 = new mm7(new cw0(this, 1));
+        this.g0 = new AtomicInteger();
+        this.h0 = new jw0(this);
+        this.i0 = new CopyOnWriteArrayList();
+        this.j0 = new CopyOnWriteArrayList();
+        this.k0 = new CopyOnWriteArrayList();
+        this.l0 = new CopyOnWriteArrayList();
+        this.m0 = new CopyOnWriteArrayList();
+        this.n0 = new CopyOnWriteArrayList();
+        this.o0 = new CopyOnWriteArrayList();
+        this.r0 = new mm7(new cw0(this, 2));
+        i14 i14Var = this.X;
+        if (i14Var == null) {
+            i60.g("getLifecycle() returned null in ComponentActivity's constructor. Please make sure you are lazily constructing your Lifecycle in the first call to getLifecycle() rather than relying on field initialization.");
             throw null;
         }
-        kk3Var.a(new po0(i, this));
-        this.Q.a(new po0(i2, this));
-        this.Q.a(new dd5(i2, this));
-        py5Var.a();
-        ky5.b(this);
-        if (Build.VERSION.SDK_INT <= 23) {
-            this.Q.a(new km2(this));
-        }
-        ((f05) th5Var.S).o("android:support:activity-result", new qo0(i, this));
-        h(new ro0(this, i));
-        this.h0 = new zu6(new no0(this, 2));
-        this.i0 = new zu6(new no0(this, 3));
+        i14Var.a(new ew0(i, this));
+        this.X.a(new ew0(i2, this));
+        this.X.a(new hx5(i2, this));
+        ak6Var.a();
+        vj6.b(this);
+        ((q96) q96Var.Z).B("android:support:activity-result", new fw0(i, this));
+        i(new gw0(this, i));
+        this.s0 = new mm7(new cw0(this, 3));
+        this.t0 = new mm7(new cw0(this, 4));
     }
 
-    public static void g(ComponentActivity componentActivity) {
+    public static void g(hz4 hz4Var, ComponentActivity componentActivity, f14 f14Var, r04 r04Var) {
+        if (r04Var == r04.ON_CREATE) {
+            OnBackInvokedDispatcher onBackInvokedDispatcher = componentActivity.getOnBackInvokedDispatcher();
+            onBackInvokedDispatcher.getClass();
+            hz4Var.c(onBackInvokedDispatcher);
+        }
+    }
+
+    public static void h(ComponentActivity componentActivity) {
         try {
             super.onBackPressed();
         } catch (IllegalStateException e) {
-            if (!rt2.f(e.getMessage(), "Can not perform this action after onSaveInstanceState")) {
+            if (!m93.h(e.getMessage(), "Can not perform this action after onSaveInstanceState")) {
                 throw e;
             }
         } catch (NullPointerException e2) {
-            if (!rt2.f(e2.getMessage(), "Attempt to invoke virtual method 'android.os.Handler android.app.FragmentHostCallback.getHandler()' on a null object reference")) {
+            if (!m93.h(e2.getMessage(), "Attempt to invoke virtual method 'android.os.Handler android.app.FragmentHostCallback.getHandler()' on a null object reference")) {
                 throw e2;
             }
         }
     }
 
-    @Override // defpackage.jg2
-    public final po7 a() {
-        return (po7) this.h0.getValue();
+    @Override // defpackage.nt2
+    public final mj8 a() {
+        return (mj8) this.s0.getValue();
     }
 
     @Override // android.app.Activity
     public void addContentView(View view, ViewGroup.LayoutParams layoutParams) {
-        j();
+        k();
         View decorView = getWindow().getDecorView();
         decorView.getClass();
-        this.V.a(decorView);
+        this.e0.a(decorView);
         super.addContentView(view, layoutParams);
     }
 
-    @Override // defpackage.jg2
-    public final k84 b() {
-        k84 k84Var = new k84(0);
+    @Override // defpackage.nt2
+    public final mp4 b() {
+        mp4 mp4Var = new mp4(0);
         Application application = getApplication();
-        LinkedHashMap linkedHashMap = k84Var.a;
+        LinkedHashMap linkedHashMap = mp4Var.a;
         if (application != null) {
-            linkedHashMap.put(oo7.e, getApplication());
+            linkedHashMap.put(lj8.d, getApplication());
         }
-        linkedHashMap.put(ky5.a, this);
-        linkedHashMap.put(ky5.b, this);
+        linkedHashMap.put(vj6.a, this);
+        linkedHashMap.put(vj6.b, this);
         Intent intent = getIntent();
         Bundle extras = intent != null ? intent.getExtras() : null;
         if (extras != null) {
-            linkedHashMap.put(ky5.c, extras);
+            linkedHashMap.put(vj6.c, extras);
         }
-        return k84Var;
+        return mp4Var;
     }
 
-    @Override // defpackage.so7
-    public final ro7 c() {
+    @Override // defpackage.qj8
+    public final pj8 c() {
         if (getApplication() == null) {
-            fn.s("Your activity is not yet attached to the Application instance. You can't request ViewModel before onCreate call.");
+            i60.g("Your activity is not yet attached to the Application instance. You can't request ViewModel before onCreate call.");
             return null;
         }
-        if (this.U == null) {
-            so0 so0Var = (so0) getLastNonConfigurationInstance();
-            if (so0Var != null) {
-                this.U = so0Var.a;
+        if (this.d0 == null) {
+            hw0 hw0Var = (hw0) getLastNonConfigurationInstance();
+            if (hw0Var != null) {
+                this.d0 = hw0Var.a;
             }
-            if (this.U == null) {
-                this.U = new ro7();
+            if (this.d0 == null) {
+                this.d0 = new pj8();
             }
         }
-        ro7 ro7Var = this.U;
-        ro7Var.getClass();
-        return ro7Var;
+        pj8 pj8Var = this.d0;
+        pj8Var.getClass();
+        return pj8Var;
     }
 
-    @Override // defpackage.qy5
-    public final f05 e() {
-        return (f05) this.T.S;
+    @Override // defpackage.bk6
+    public final q96 e() {
+        return (q96) this.c0.Z;
     }
 
-    @Override // androidx.core.app.ComponentActivity, defpackage.ik3
-    /* JADX INFO: renamed from: f */
-    public final kk3 getQ() {
-        return this.Q;
+    @Override // androidx.core.app.ComponentActivity, defpackage.f14
+    /* renamed from: f */
+    public final i14 getX() {
+        return this.X;
     }
 
-    public final void h(xh4 xh4Var) {
-        jv0 jv0Var = this.R;
-        jv0Var.getClass();
-        ComponentActivity componentActivity = (ComponentActivity) jv0Var.a;
-        if (componentActivity != null) {
-            xh4Var.a(componentActivity);
+    public final void i(pz4 pz4Var) {
+        r21 r21Var = this.Y;
+        r21Var.getClass();
+        Context context = (Context) r21Var.a;
+        if (context != null) {
+            pz4Var.a(context);
         }
-        ((CopyOnWriteArraySet) jv0Var.b).add(xh4Var);
+        ((CopyOnWriteArraySet) r21Var.b).add(pz4Var);
     }
 
-    public final ph4 i() {
-        return (ph4) this.i0.getValue();
+    public final hz4 j() {
+        return (hz4) this.t0.getValue();
     }
 
-    public final void j() {
+    public final void k() {
         View decorView = getWindow().getDecorView();
         decorView.getClass();
-        decorView.setTag(w85.view_tree_lifecycle_owner, this);
+        decorView.setTag(vs5.view_tree_lifecycle_owner, this);
         View decorView2 = getWindow().getDecorView();
         decorView2.getClass();
-        decorView2.setTag(x85.view_tree_view_model_store_owner, this);
+        decorView2.setTag(ws5.view_tree_view_model_store_owner, this);
         View decorView3 = getWindow().getDecorView();
         decorView3.getClass();
-        decorView3.setTag(z85.view_tree_saved_state_registry_owner, this);
+        decorView3.setTag(zs5.view_tree_saved_state_registry_owner, this);
         View decorView4 = getWindow().getDecorView();
         decorView4.getClass();
-        decorView4.setTag(n95.view_tree_on_back_pressed_dispatcher_owner, this);
+        decorView4.setTag(nt5.view_tree_on_back_pressed_dispatcher_owner, this);
         View decorView5 = getWindow().getDecorView();
         decorView5.getClass();
-        decorView5.setTag(n95.report_drawn, this);
+        decorView5.setTag(nt5.report_drawn, this);
+        View decorView6 = getWindow().getDecorView();
+        decorView6.getClass();
+        decorView6.setTag(xs5.view_tree_navigation_event_dispatcher_owner, this);
     }
 
-    public final e6 k(final w5 w5Var, final yu7 yu7Var) {
-        final uo0 uo0Var = this.Y;
-        uo0Var.getClass();
-        final String str = "activity_rq#" + this.X.getAndIncrement();
-        LinkedHashMap linkedHashMap = uo0Var.c;
-        kk3 kk3Var = this.Q;
-        if (kk3Var.d.compareTo(xj3.T) >= 0) {
+    public final q6 l(final i6 i6Var, final yl0 yl0Var) {
+        final jw0 jw0Var = this.h0;
+        jw0Var.getClass();
+        final String str = "activity_rq#" + this.g0.getAndIncrement();
+        LinkedHashMap linkedHashMap = jw0Var.c;
+        i14 i14Var = this.X;
+        if (i14Var.i.compareTo(s04.c0) >= 0) {
             StringBuilder sb = new StringBuilder("LifecycleOwner ");
             sb.append(this);
-            xj3 xj3Var = kk3Var.d;
+            s04 s04Var = i14Var.i;
             sb.append(" is attempting to register while current state is ");
-            sb.append(xj3Var);
+            sb.append(s04Var);
             sb.append(". LifecycleOwners must call register before they are STARTED.");
             throw new IllegalStateException(sb.toString().toString());
         }
-        uo0Var.d(str);
-        d6 d6Var = (d6) linkedHashMap.get(str);
-        if (d6Var == null) {
-            d6Var = new d6(kk3Var);
+        jw0Var.d(str);
+        p6 p6Var = (p6) linkedHashMap.get(str);
+        if (p6Var == null) {
+            p6Var = new p6(i14Var);
         }
-        fk3 fk3Var = new fk3() { // from class: b6
-            @Override // defpackage.fk3
-            public final void h(ik3 ik3Var, wj3 wj3Var) {
-                wj3 wj3Var2 = wj3.ON_START;
-                uo0 uo0Var2 = uo0Var;
+        c14 c14Var = new c14() { // from class: n6
+            @Override // defpackage.c14
+            public final void m(f14 f14Var, r04 r04Var) {
+                r04 r04Var2 = r04.ON_START;
+                jw0 jw0Var2 = jw0.this;
                 String str2 = str;
-                if (wj3Var2 != wj3Var) {
-                    if (wj3.ON_STOP == wj3Var) {
-                        uo0Var2.e.remove(str2);
+                if (r04Var2 != r04Var) {
+                    if (r04.ON_STOP == r04Var) {
+                        jw0Var2.e.remove(str2);
                         return;
                     } else {
-                        if (wj3.ON_DESTROY == wj3Var) {
-                            uo0Var2.e(str2);
+                        if (r04.ON_DESTROY == r04Var) {
+                            jw0Var2.e(str2);
                             return;
                         }
                         return;
                     }
                 }
-                LinkedHashMap linkedHashMap2 = uo0Var2.e;
-                Bundle bundle = uo0Var2.g;
-                LinkedHashMap linkedHashMap3 = uo0Var2.f;
-                w5 w5Var2 = w5Var;
-                yu7 yu7Var2 = yu7Var;
-                linkedHashMap2.put(str2, new c6(w5Var2, yu7Var2));
+                LinkedHashMap linkedHashMap2 = jw0Var2.e;
+                Bundle bundle = jw0Var2.g;
+                LinkedHashMap linkedHashMap3 = jw0Var2.f;
+                i6 i6Var2 = i6Var;
+                yl0 yl0Var2 = yl0Var;
+                linkedHashMap2.put(str2, new o6(i6Var2, yl0Var2));
                 if (linkedHashMap3.containsKey(str2)) {
                     Object obj = linkedHashMap3.get(str2);
                     linkedHashMap3.remove(str2);
-                    w5Var2.b(obj);
+                    i6Var2.b(obj);
                 }
-                v5 v5Var = (v5) ji2.s(str2, bundle);
-                if (v5Var != null) {
+                h6 h6Var = (h6) da1.M(str2, bundle);
+                if (h6Var != null) {
                     bundle.remove(str2);
-                    w5Var2.b(yu7Var2.I(v5Var.R, v5Var.Q));
+                    i6Var2.b(yl0Var2.H(h6Var.Y, h6Var.X));
                 }
             }
         };
-        d6Var.a.a(fk3Var);
-        d6Var.b.add(fk3Var);
-        linkedHashMap.put(str, d6Var);
-        return new e6(uo0Var, str, yu7Var);
+        p6Var.a.a(c14Var);
+        p6Var.b.add(c14Var);
+        linkedHashMap.put(str, p6Var);
+        return new q6(jw0Var, str, yl0Var, 0);
     }
 
     @Override // android.app.Activity
     public void onActivityResult(int i, int i2, Intent intent) {
-        if (this.Y.a(i, i2, intent)) {
+        if (this.h0.a(i, i2, intent)) {
             return;
         }
         super.onActivityResult(i, i2, intent);
@@ -307,33 +326,34 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
 
     @Override // android.app.Activity
     public final void onBackPressed() {
-        i().d();
+        ((ul1) this.r0.getValue()).a();
     }
 
     @Override // android.app.Activity, android.content.ComponentCallbacks
     public void onConfigurationChanged(Configuration configuration) {
         configuration.getClass();
         super.onConfigurationChanged(configuration);
-        Iterator it = this.Z.iterator();
+        Iterator it = this.i0.iterator();
         it.getClass();
         while (it.hasNext()) {
-            ((nu0) it.next()).accept(configuration);
+            ((s11) it.next()).accept(configuration);
         }
     }
 
     @Override // androidx.core.app.ComponentActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
-        this.T.f(bundle);
-        jv0 jv0Var = this.R;
-        jv0Var.getClass();
-        jv0Var.a = this;
-        Iterator it = ((CopyOnWriteArraySet) jv0Var.b).iterator();
+        this.c0.v(bundle);
+        r21 r21Var = this.Y;
+        r21Var.getClass();
+        r21Var.a = this;
+        Iterator it = ((CopyOnWriteArraySet) r21Var.b).iterator();
         while (it.hasNext()) {
-            ((xh4) it.next()).a(this);
+            ((pz4) it.next()).a(this);
         }
         super.onCreate(bundle);
-        int i = si5.R;
-        qi5.b(this);
+        int i = y26.Y;
+        w26.b(this);
+        getPackageManager().hasSystemFeature("android.software.picture_in_picture");
     }
 
     @Override // android.app.Activity, android.view.Window.Callback
@@ -344,9 +364,9 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         }
         super.onCreatePanelMenu(i, menu);
         getMenuInflater();
-        Iterator it = ((CopyOnWriteArrayList) this.S.S).iterator();
+        Iterator it = ((CopyOnWriteArrayList) this.Z.Z).iterator();
         while (it.hasNext()) {
-            ((r52) it.next()).a.k();
+            ((kg2) it.next()).a.l();
         }
         return true;
     }
@@ -358,9 +378,9 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
             return true;
         }
         if (i == 0) {
-            Iterator it = ((CopyOnWriteArrayList) this.S.S).iterator();
+            Iterator it = ((CopyOnWriteArrayList) this.Z.Z).iterator();
             while (it.hasNext()) {
-                if (((r52) it.next()).a.p()) {
+                if (((kg2) it.next()).a.q()) {
                     return true;
                 }
             }
@@ -371,17 +391,17 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     @Override // android.app.Activity
     public final void onMultiWindowModeChanged(boolean z, Configuration configuration) {
         configuration.getClass();
-        this.f0 = true;
+        this.p0 = true;
         try {
             super.onMultiWindowModeChanged(z, configuration);
-            this.f0 = false;
-            Iterator it = this.c0.iterator();
+            this.p0 = false;
+            Iterator it = this.l0.iterator();
             it.getClass();
             while (it.hasNext()) {
-                ((nu0) it.next()).accept(new e84(z));
+                ((s11) it.next()).accept(new dp4(z));
             }
         } catch (Throwable th) {
-            this.f0 = false;
+            this.p0 = false;
             throw th;
         }
     }
@@ -390,19 +410,19 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     public void onNewIntent(Intent intent) {
         intent.getClass();
         super.onNewIntent(intent);
-        Iterator it = this.b0.iterator();
+        Iterator it = this.k0.iterator();
         it.getClass();
         while (it.hasNext()) {
-            ((nu0) it.next()).accept(intent);
+            ((s11) it.next()).accept(intent);
         }
     }
 
     @Override // android.app.Activity, android.view.Window.Callback
     public void onPanelClosed(int i, Menu menu) {
         menu.getClass();
-        Iterator it = ((CopyOnWriteArrayList) this.S.S).iterator();
+        Iterator it = ((CopyOnWriteArrayList) this.Z.Z).iterator();
         while (it.hasNext()) {
-            ((r52) it.next()).a.q();
+            ((kg2) it.next()).a.r();
         }
         super.onPanelClosed(i, menu);
     }
@@ -410,18 +430,30 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     @Override // android.app.Activity
     public final void onPictureInPictureModeChanged(boolean z, Configuration configuration) {
         configuration.getClass();
-        this.g0 = true;
+        this.q0 = true;
         try {
             super.onPictureInPictureModeChanged(z, configuration);
-            this.g0 = false;
-            Iterator it = this.d0.iterator();
+            this.q0 = false;
+            Iterator it = this.m0.iterator();
             it.getClass();
             while (it.hasNext()) {
-                ((nu0) it.next()).accept(new eu4(z));
+                ((s11) it.next()).accept(new kc5(z));
             }
         } catch (Throwable th) {
-            this.g0 = false;
+            this.q0 = false;
             throw th;
+        }
+    }
+
+    @Override // android.app.Activity
+    public final void onPictureInPictureUiStateChanged(PictureInPictureUiState pictureInPictureUiState) {
+        pictureInPictureUiState.getClass();
+        super.onPictureInPictureUiStateChanged(pictureInPictureUiState);
+        fp4 b = tm.b(pictureInPictureUiState);
+        Iterator it = this.n0.iterator();
+        it.getClass();
+        while (it.hasNext()) {
+            ((s11) it.next()).accept(b);
         }
     }
 
@@ -432,9 +464,9 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
             return true;
         }
         super.onPreparePanel(i, view, menu);
-        Iterator it = ((CopyOnWriteArrayList) this.S.S).iterator();
+        Iterator it = ((CopyOnWriteArrayList) this.Z.Z).iterator();
         while (it.hasNext()) {
-            ((r52) it.next()).a.t();
+            ((kg2) it.next()).a.u();
         }
         return true;
     }
@@ -443,7 +475,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     public void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
         strArr.getClass();
         iArr.getClass();
-        if (this.Y.a(i, -1, new Intent().putExtra("androidx.activity.result.contract.extra.PERMISSIONS", strArr).putExtra("androidx.activity.result.contract.extra.PERMISSION_GRANT_RESULTS", iArr)) || Build.VERSION.SDK_INT < 23) {
+        if (this.h0.a(i, -1, new Intent().putExtra("androidx.activity.result.contract.extra.PERMISSIONS", strArr).putExtra("androidx.activity.result.contract.extra.PERMISSION_GRANT_RESULTS", iArr))) {
             return;
         }
         super.onRequestPermissionsResult(i, strArr, iArr);
@@ -451,46 +483,45 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
 
     @Override // android.app.Activity
     public final Object onRetainNonConfigurationInstance() {
-        so0 so0Var;
-        ro7 ro7Var = this.U;
-        if (ro7Var == null && (so0Var = (so0) getLastNonConfigurationInstance()) != null) {
-            ro7Var = so0Var.a;
+        hw0 hw0Var;
+        pj8 pj8Var = this.d0;
+        if (pj8Var == null && (hw0Var = (hw0) getLastNonConfigurationInstance()) != null) {
+            pj8Var = hw0Var.a;
         }
-        if (ro7Var == null) {
+        if (pj8Var == null) {
             return null;
         }
-        so0 so0Var2 = new so0();
-        so0Var2.a = ro7Var;
-        return so0Var2;
+        hw0 hw0Var2 = new hw0();
+        hw0Var2.a = pj8Var;
+        return hw0Var2;
     }
 
     @Override // androidx.core.app.ComponentActivity, android.app.Activity
     public final void onSaveInstanceState(Bundle bundle) {
         bundle.getClass();
-        kk3 kk3Var = this.Q;
-        if (kk3Var != null) {
-            kk3Var.getClass();
-            kk3Var.c("setCurrentState");
-            kk3Var.e(xj3.S);
+        i14 i14Var = this.X;
+        if (i14Var != null) {
+            i14Var.c("setCurrentState");
+            i14Var.e(s04.Z);
         }
         super.onSaveInstanceState(bundle);
-        this.T.g(bundle);
+        this.c0.w(bundle);
     }
 
     @Override // android.app.Activity, android.content.ComponentCallbacks2
     public final void onTrimMemory(int i) {
         super.onTrimMemory(i);
-        Iterator it = this.a0.iterator();
+        Iterator it = this.j0.iterator();
         it.getClass();
         while (it.hasNext()) {
-            ((nu0) it.next()).accept(Integer.valueOf(i));
+            ((s11) it.next()).accept(Integer.valueOf(i));
         }
     }
 
     @Override // android.app.Activity
     public final void onUserLeaveHint() {
         super.onUserLeaveHint();
-        Iterator it = this.e0.iterator();
+        Iterator it = this.o0.iterator();
         it.getClass();
         while (it.hasNext()) {
             ((Runnable) it.next()).run();
@@ -500,36 +531,34 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     @Override // android.app.Activity
     public final void reportFullyDrawn() {
         try {
-            if (x67.c()) {
-                Trace.beginSection(x67.f("reportFullyDrawn() for ComponentActivity"));
+            if (gz7.b()) {
+                Trace.beginSection("reportFullyDrawn() for ComponentActivity");
             }
             super.reportFullyDrawn();
-            e72 e72Var = (e72) this.W.getValue();
-            synchronized (e72Var.b) {
+            hi2 hi2Var = (hi2) this.f0.getValue();
+            synchronized (hi2Var.b) {
                 try {
-                    e72Var.c = true;
-                    Iterator it = e72Var.d.iterator();
+                    hi2Var.c = true;
+                    Iterator it = hi2Var.d.iterator();
                     while (it.hasNext()) {
-                        ((g72) it.next()).invoke();
+                        ((ji2) it.next()).invoke();
                     }
-                    e72Var.d.clear();
+                    hi2Var.d.clear();
                 } catch (Throwable th) {
                     throw th;
                 }
             }
+        } finally {
             Trace.endSection();
-        } catch (Throwable th2) {
-            Trace.endSection();
-            throw th2;
         }
     }
 
     @Override // android.app.Activity
     public void setContentView(int i) {
-        j();
+        k();
         View decorView = getWindow().getDecorView();
         decorView.getClass();
-        this.V.a(decorView);
+        this.e0.a(decorView);
         super.setContentView(i);
     }
 
@@ -540,7 +569,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     }
 
     @Override // android.app.Activity
-    public final void startIntentSenderForResult(IntentSender intentSender, int i, Intent intent, int i2, int i3, int i4) throws IntentSender.SendIntentException {
+    public final void startIntentSenderForResult(IntentSender intentSender, int i, Intent intent, int i2, int i3, int i4) {
         intentSender.getClass();
         super.startIntentSenderForResult(intentSender, i, intent, i2, i3, i4);
     }
@@ -559,43 +588,43 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
 
     @Override // android.app.Activity
     public void setContentView(View view) {
-        j();
+        k();
         View decorView = getWindow().getDecorView();
         decorView.getClass();
-        this.V.a(decorView);
+        this.e0.a(decorView);
         super.setContentView(view);
     }
 
     @Override // android.app.Activity
     public void setContentView(View view, ViewGroup.LayoutParams layoutParams) {
-        j();
+        k();
         View decorView = getWindow().getDecorView();
         decorView.getClass();
-        this.V.a(decorView);
+        this.e0.a(decorView);
         super.setContentView(view, layoutParams);
     }
 
     @Override // android.app.Activity
     public final void onMultiWindowModeChanged(boolean z) {
-        if (this.f0) {
+        if (this.p0) {
             return;
         }
-        Iterator it = this.c0.iterator();
+        Iterator it = this.l0.iterator();
         it.getClass();
         while (it.hasNext()) {
-            ((nu0) it.next()).accept(new e84(z));
+            ((s11) it.next()).accept(new dp4(z));
         }
     }
 
     @Override // android.app.Activity
     public final void onPictureInPictureModeChanged(boolean z) {
-        if (this.g0) {
+        if (this.q0) {
             return;
         }
-        Iterator it = this.d0.iterator();
+        Iterator it = this.m0.iterator();
         it.getClass();
         while (it.hasNext()) {
-            ((nu0) it.next()).accept(new eu4(z));
+            ((s11) it.next()).accept(new kc5(z));
         }
     }
 }

@@ -1,34 +1,53 @@
 .class public interface abstract Loj7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# static fields
-.field public static final a:Lmj7;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lmj7;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Loj7;->a:Lmj7;
-
-    .line 7
-    .line 8
-    return-void
-.end method
+# interfaces
+.implements Landroid/view/MenuItem;
 
 
 # virtual methods
-.method public abstract a(Lnj7;I)Lfs0;
+.method public abstract a(Lmj4;)Loj7;
+.end method
+
+.method public abstract c()Lmj4;
+.end method
+
+.method public abstract getAlphabeticModifiers()I
+.end method
+
+.method public abstract getContentDescription()Ljava/lang/CharSequence;
+.end method
+
+.method public abstract getIconTintList()Landroid/content/res/ColorStateList;
+.end method
+
+.method public abstract getIconTintMode()Landroid/graphics/PorterDuff$Mode;
+.end method
+
+.method public abstract getNumericModifiers()I
+.end method
+
+.method public abstract getTooltipText()Ljava/lang/CharSequence;
+.end method
+
+.method public abstract setAlphabeticShortcut(CI)Landroid/view/MenuItem;
+.end method
+
+.method public abstract setContentDescription(Ljava/lang/CharSequence;)Loj7;
+.end method
+
+.method public abstract setIconTintList(Landroid/content/res/ColorStateList;)Landroid/view/MenuItem;
+.end method
+
+.method public abstract setIconTintMode(Landroid/graphics/PorterDuff$Mode;)Landroid/view/MenuItem;
+.end method
+
+.method public abstract setNumericShortcut(CI)Landroid/view/MenuItem;
+.end method
+
+.method public abstract setShortcut(CCII)Landroid/view/MenuItem;
+.end method
+
+.method public abstract setTooltipText(Ljava/lang/CharSequence;)Loj7;
 .end method

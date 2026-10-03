@@ -1,225 +1,173 @@
 .class public final Lfw;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lmx4;
 
 
-# instance fields
-.field public final a:I
+# static fields
+.field public static final a:Lfw;
 
-.field public final b:Landroid/view/Surface;
+.field public static final b:Lr42;
+
+.field public static final c:Lr42;
 
 
 # direct methods
-.method public constructor <init>(ILandroid/view/Surface;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lfw;
 
     .line 2
     .line 3
-    .line 4
-    iput p1, p0, Lfw;->a:I
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    if-eqz p2, :cond_0
+    sput-object v0, Lfw;->a:Lfw;
 
     .line 7
     .line 8
-    iput-object p2, p0, Lfw;->b:Landroid/view/Surface;
+    new-instance v0, Lju;
 
     .line 9
     .line 10
-    return-void
+    const/4 v1, 0x1
 
     .line 11
-    :cond_0
-    const-string p1, "Null surface"
+    invoke-direct {v0, v1}, Lju;-><init>(I)V
 
     .line 12
     .line 13
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
-
     .line 14
-    .line 15
-    .line 16
-    const/4 p1, 0x0
-
-    .line 17
-    throw p1
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 1
-    if-ne p1, p0, :cond_0
-
-    .line 2
-    .line 3
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    instance-of v0, p1, Lfw;
-
-    .line 5
-    .line 6
-    if-eqz v0, :cond_1
-
-    .line 7
-    .line 8
-    check-cast p1, Lfw;
-
-    .line 9
-    .line 10
-    iget v0, p0, Lfw;->a:I
-
-    .line 11
-    .line 12
-    iget v1, p1, Lfw;->a:I
-
-    .line 13
-    .line 14
-    if-ne v0, v1, :cond_1
+    const-class v1, Lnp5;
 
     .line 15
     .line 16
-    iget-object v0, p0, Lfw;->b:Landroid/view/Surface;
+    invoke-static {v1, v0}, Lw31;->s(Ljava/lang/Class;Lju;)Ljava/util/HashMap;
 
     .line 17
     .line 18
-    iget-object p1, p1, Lfw;->b:Landroid/view/Surface;
-
     .line 19
+    move-result-object v0
+
     .line 20
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    new-instance v2, Lr42;
 
     .line 21
     .line 22
+    invoke-static {v0}, Lw31;->t(Ljava/util/HashMap;)Ljava/util/Map;
+
     .line 23
-    move-result p1
-
-    .line 24
-    if-eqz p1, :cond_1
-
-    .line 25
-    .line 26
-    :goto_0
-    const/4 p1, 0x1
-
-    .line 27
-    return p1
-
-    .line 28
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 29
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lfw;->a:I
-
-    .line 2
-    .line 3
-    const v1, 0xf4243
-
-    .line 4
-    .line 5
-    .line 6
-    xor-int/2addr v0, v1
-
-    .line 7
-    mul-int v0, v0, v1
-
-    .line 8
-    .line 9
-    iget-object v1, p0, Lfw;->b:Landroid/view/Surface;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    xor-int/2addr v0, v1
-
-    .line 16
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Result{resultCode="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget v1, p0, Lfw;->a:I
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", surface="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, Lfw;->b:Landroid/view/Surface;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, "}"
-
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
     .line 26
+    const-string v3, "startMs"
+
     .line 27
     .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v2, v3, v0}, Lr42;-><init>(Ljava/lang/String;Ljava/util/Map;)V
 
     .line 29
     .line 30
     .line 31
-    move-result-object v0
+    sput-object v2, Lfw;->b:Lr42;
 
     .line 32
-    return-object v0
+    .line 33
+    new-instance v0, Lju;
+
+    .line 34
+    .line 35
+    const/4 v2, 0x2
+
+    .line 36
+    invoke-direct {v0, v2}, Lju;-><init>(I)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-static {v1, v0}, Lw31;->s(Ljava/lang/Class;Lju;)Ljava/util/HashMap;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v0
+
+    .line 43
+    new-instance v1, Lr42;
+
+    .line 44
+    .line 45
+    invoke-static {v0}, Lw31;->t(Ljava/util/HashMap;)Ljava/util/Map;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    const-string v2, "endMs"
+
+    .line 50
+    .line 51
+    invoke-direct {v1, v2, v0}, Lr42;-><init>(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 52
+    .line 53
+    .line 54
+    sput-object v1, Lfw;->c:Lr42;
+
+    .line 55
+    .line 56
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    check-cast p1, Lsw7;
+
+    .line 2
+    .line 3
+    check-cast p2, Lnx4;
+
+    .line 4
+    .line 5
+    sget-object p0, Lfw;->b:Lr42;
+
+    .line 6
+    .line 7
+    iget-wide v0, p1, Lsw7;->a:J
+
+    .line 8
+    .line 9
+    invoke-interface {p2, p0, v0, v1}, Lnx4;->e(Lr42;J)Lnx4;
+
+    .line 10
+    .line 11
+    .line 12
+    sget-object p0, Lfw;->c:Lr42;
+
+    .line 13
+    .line 14
+    iget-wide v0, p1, Lsw7;->b:J
+
+    .line 15
+    .line 16
+    invoke-interface {p2, p0, v0, v1}, Lnx4;->e(Lr42;J)Lnx4;
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
 .end method

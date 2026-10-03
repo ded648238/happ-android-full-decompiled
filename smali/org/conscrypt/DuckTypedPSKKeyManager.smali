@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/DuckTypedPSKKeyManager;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lorg/conscrypt/PSKKeyManager;
@@ -240,7 +240,7 @@
 
 # virtual methods
 .method public chooseClientKeyIdentity(Ljava/lang/String;Ljava/net/Socket;)Ljava/lang/String;
-    .locals 7
+    .locals 4
 
     .line 1
     :try_start_0
@@ -260,99 +260,82 @@
 
     .line 8
     .line 9
-    const/4 v2, 0x2
+    const-class v2, Ljava/lang/String;
 
     .line 10
-    new-array v3, v2, [Ljava/lang/Class;
-
     .line 11
+    const-class v3, Ljava/net/Socket;
+
     .line 12
-    const-class v4, Ljava/lang/String;
-
     .line 13
+    filled-new-array {v2, v3}, [Ljava/lang/Class;
+
     .line 14
-    const/4 v5, 0x0
-
     .line 15
-    aput-object v4, v3, v5
-
     .line 16
+    move-result-object v2
+
     .line 17
-    const-class v4, Ljava/net/Socket;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 18
     .line 19
-    const/4 v6, 0x1
-
     .line 20
-    aput-object v4, v3, v6
-
-    .line 21
-    .line 22
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    .line 23
-    .line 24
-    .line 25
     move-result-object v0
 
+    .line 21
+    iget-object p0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    filled-new-array {p1, p2}, [Ljava/lang/Object;
+
+    .line 24
+    .line 25
     .line 26
-    iget-object v1, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
-
-    .line 27
-    .line 28
-    new-array v2, v2, [Ljava/lang/Object;
-
-    .line 29
-    .line 30
-    aput-object p1, v2, v5
-
-    .line 31
-    .line 32
-    aput-object p2, v2, v6
-
-    .line 33
-    .line 34
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 35
-    .line 36
-    .line 37
     move-result-object p1
 
-    .line 38
-    check-cast p1, Ljava/lang/String;
+    .line 27
+    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object p0
+
+    .line 31
+    check-cast p0, Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 32
+    .line 33
+    return-object p0
+
+    .line 34
+    :catch_0
+    move-exception p0
+
+    .line 35
+    const-string p1, "Failed to invoke chooseClientKeyIdentity"
+
+    .line 36
+    .line 37
+    invoke-static {p1, p0}, Lq05;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 38
     .line 39
     .line 40
-    return-object p1
+    const/4 p0, 0x0
 
     .line 41
-    :catch_0
-    move-exception p1
-
-    .line 42
-    const-string p2, "Failed to invoke chooseClientKeyIdentity"
-
-    .line 43
-    .line 44
-    invoke-static {p2, p1}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 45
-    .line 46
-    .line 47
-    const/4 p1, 0x0
-
-    .line 48
-    return-object p1
+    return-object p0
 .end method
 
 .method public chooseClientKeyIdentity(Ljava/lang/String;Ljavax/net/ssl/SSLEngine;)Ljava/lang/String;
-    .locals 7
+    .locals 4
 
-    .line 49
+    .line 42
     :try_start_0
     iget-object v0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
 
@@ -362,61 +345,51 @@
 
     const-string v1, "chooseClientKeyIdentity"
 
-    const/4 v2, 0x2
+    const-class v2, Ljava/lang/String;
 
-    new-array v3, v2, [Ljava/lang/Class;
+    const-class v3, Ljavax/net/ssl/SSLEngine;
 
-    const-class v4, Ljava/lang/String;
+    filled-new-array {v2, v3}, [Ljava/lang/Class;
 
-    const/4 v5, 0x0
+    move-result-object v2
 
-    aput-object v4, v3, v5
-
-    const-class v4, Ljavax/net/ssl/SSLEngine;
-
-    const/4 v6, 0x1
-
-    aput-object v4, v3, v6
-
-    .line 50
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    .line 43
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    iget-object v1, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
+    iget-object p0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
 
-    new-array v2, v2, [Ljava/lang/Object;
-
-    aput-object p1, v2, v5
-
-    aput-object p2, v2, v6
-
-    .line 51
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    filled-new-array {p1, p2}, [Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Ljava/lang/String;
+    .line 44
+    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object p1
+    return-object p0
 
     :catch_0
-    move-exception p1
+    move-exception p0
 
-    .line 52
-    const-string p2, "Failed to invoke chooseClientKeyIdentity"
+    .line 45
+    const-string p1, "Failed to invoke chooseClientKeyIdentity"
 
-    invoke-static {p2, p1}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Lq05;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public chooseServerKeyIdentityHint(Ljava/net/Socket;)Ljava/lang/String;
-    .locals 6
+    .locals 3
 
     .line 1
     :try_start_0
@@ -436,84 +409,78 @@
 
     .line 8
     .line 9
-    const/4 v2, 0x1
+    const-class v2, Ljava/net/Socket;
 
     .line 10
-    new-array v3, v2, [Ljava/lang/Class;
-
     .line 11
-    .line 12
-    const-class v4, Ljava/net/Socket;
+    filled-new-array {v2}, [Ljava/lang/Class;
 
+    .line 12
     .line 13
     .line 14
-    const/4 v5, 0x0
+    move-result-object v2
 
     .line 15
-    aput-object v4, v3, v5
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 18
-    .line 19
-    .line 20
     move-result-object v0
 
+    .line 19
+    iget-object p0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
+
+    .line 20
     .line 21
-    iget-object v1, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 22
     .line 23
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 24
+    move-result-object p1
+
     .line 25
-    aput-object p1, v2, v5
+    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 26
     .line 27
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 28
-    .line 29
-    .line 30
-    move-result-object p1
+    move-result-object p0
 
-    .line 31
-    check-cast p1, Ljava/lang/String;
+    .line 29
+    check-cast p0, Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 30
+    .line 31
+    return-object p0
+
     .line 32
+    :catch_0
+    move-exception p0
+
     .line 33
-    return-object p1
+    const-string p1, "Failed to invoke chooseServerKeyIdentityHint"
 
     .line 34
-    :catch_0
-    move-exception p1
-
     .line 35
-    const-string v0, "Failed to invoke chooseServerKeyIdentityHint"
+    invoke-static {p1, p0}, Lq05;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 36
     .line 37
-    invoke-static {v0, p1}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
-
     .line 38
-    .line 39
-    .line 40
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    .line 41
-    return-object p1
+    .line 39
+    return-object p0
 .end method
 
 .method public chooseServerKeyIdentityHint(Ljavax/net/ssl/SSLEngine;)Ljava/lang/String;
-    .locals 6
+    .locals 3
 
-    .line 42
+    .line 40
     :try_start_0
     iget-object v0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
 
@@ -523,240 +490,192 @@
 
     const-string v1, "chooseServerKeyIdentityHint"
 
-    const/4 v2, 0x1
+    const-class v2, Ljavax/net/ssl/SSLEngine;
 
-    new-array v3, v2, [Ljava/lang/Class;
+    filled-new-array {v2}, [Ljava/lang/Class;
 
-    const-class v4, Ljavax/net/ssl/SSLEngine;
+    move-result-object v2
 
-    const/4 v5, 0x0
-
-    aput-object v4, v3, v5
-
-    .line 43
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    .line 41
+    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    iget-object v1, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
+    iget-object p0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
 
-    new-array v2, v2, [Ljava/lang/Object;
-
-    aput-object p1, v2, v5
-
-    .line 44
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Ljava/lang/String;
+    .line 42
+    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object p1
+    return-object p0
 
     :catch_0
-    move-exception p1
+    move-exception p0
 
-    .line 45
-    const-string v0, "Failed to invoke chooseServerKeyIdentityHint"
+    .line 43
+    const-string p1, "Failed to invoke chooseServerKeyIdentityHint"
 
-    invoke-static {v0, p1}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Lq05;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public getKey(Ljava/lang/String;Ljava/lang/String;Ljava/net/Socket;)Ljavax/crypto/SecretKey;
-    .locals 8
+    .locals 4
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
+    const-class v0, Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_start_0
+    iget-object v1, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
 
     .line 4
     .line 5
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 6
-    move-result-object v0
-
     .line 7
-    const-string v1, "getKey"
-
     .line 8
+    move-result-object v1
+
     .line 9
-    const/4 v2, 0x3
+    const-string v2, "getKey"
 
     .line 10
-    new-array v3, v2, [Ljava/lang/Class;
-
     .line 11
+    const-class v3, Ljava/net/Socket;
+
     .line 12
-    const-class v4, Ljava/lang/String;
-
     .line 13
+    filled-new-array {v0, v0, v3}, [Ljava/lang/Class;
+
     .line 14
-    const/4 v5, 0x0
-
     .line 15
-    aput-object v4, v3, v5
-
     .line 16
+    move-result-object v0
+
     .line 17
-    const/4 v6, 0x1
+    invoke-virtual {v1, v2, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 18
-    aput-object v4, v3, v6
-
     .line 19
     .line 20
-    const-class v4, Ljava/net/Socket;
+    move-result-object v0
 
     .line 21
-    .line 22
-    const/4 v7, 0x2
+    iget-object p0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
 
+    .line 22
     .line 23
-    aput-object v4, v3, v7
+    filled-new-array {p1, p2, p3}, [Ljava/lang/Object;
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
     .line 26
+    move-result-object p1
+
     .line 27
+    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 28
-    move-result-object v0
-
     .line 29
-    iget-object v1, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
-
     .line 30
+    move-result-object p0
+
     .line 31
-    new-array v2, v2, [Ljava/lang/Object;
+    check-cast p0, Ljavax/crypto/SecretKey;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 32
     .line 33
-    aput-object p1, v2, v5
+    return-object p0
 
     .line 34
+    :catch_0
+    move-exception p0
+
     .line 35
-    aput-object p2, v2, v6
+    const-string p1, "Failed to invoke getKey"
 
     .line 36
     .line 37
-    aput-object p3, v2, v7
+    invoke-static {p1, p0}, Lq05;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 38
     .line 39
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 40
+    const/4 p0, 0x0
+
     .line 41
-    .line 42
-    move-result-object p1
-
-    .line 43
-    check-cast p1, Ljavax/crypto/SecretKey;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 44
-    .line 45
-    return-object p1
-
-    .line 46
-    :catch_0
-    move-exception p1
-
-    .line 47
-    const-string p2, "Failed to invoke getKey"
-
-    .line 48
-    .line 49
-    invoke-static {p2, p1}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 50
-    .line 51
-    .line 52
-    const/4 p1, 0x0
-
-    .line 53
-    return-object p1
+    return-object p0
 .end method
 
 .method public getKey(Ljava/lang/String;Ljava/lang/String;Ljavax/net/ssl/SSLEngine;)Ljavax/crypto/SecretKey;
-    .locals 8
+    .locals 4
 
-    .line 54
+    .line 42
+    const-class v0, Ljava/lang/String;
+
     :try_start_0
-    iget-object v0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v1, "getKey"
-
-    const/4 v2, 0x3
-
-    new-array v3, v2, [Ljava/lang/Class;
-
-    const-class v4, Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    aput-object v4, v3, v5
-
-    const/4 v6, 0x1
-
-    aput-object v4, v3, v6
-
-    const-class v4, Ljavax/net/ssl/SSLEngine;
-
-    const/4 v7, 0x2
-
-    aput-object v4, v3, v7
-
-    .line 55
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
     iget-object v1, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
 
-    new-array v2, v2, [Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    aput-object p1, v2, v5
+    move-result-object v1
 
-    aput-object p2, v2, v6
+    const-string v2, "getKey"
 
-    aput-object p3, v2, v7
+    const-class v3, Ljavax/net/ssl/SSLEngine;
 
-    .line 56
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    filled-new-array {v0, v0, v3}, [Ljava/lang/Class;
+
+    move-result-object v0
+
+    .line 43
+    invoke-virtual {v1, v2, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    iget-object p0, p0, Lorg/conscrypt/DuckTypedPSKKeyManager;->mDelegate:Ljava/lang/Object;
+
+    filled-new-array {p1, p2, p3}, [Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Ljavax/crypto/SecretKey;
+    .line 44
+    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljavax/crypto/SecretKey;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object p1
+    return-object p0
 
     :catch_0
-    move-exception p1
+    move-exception p0
 
-    .line 57
-    const-string p2, "Failed to invoke getKey"
+    .line 45
+    const-string p1, "Failed to invoke getKey"
 
-    invoke-static {p2, p1}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Lq05;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    return-object p1
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/MediaType;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -86,7 +86,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/MediaType$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/MediaType$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -158,7 +158,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Lj31;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Lib1;)V
     .locals 0
 
     .line 13
@@ -257,44 +257,44 @@
 
 # virtual methods
 .method public final -deprecated_subtype()Ljava/lang/String;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MediaType;->subtype:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/MediaType;->subtype:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_type()Ljava/lang/String;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MediaType;->type:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/MediaType;->type:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final charset()Ljava/nio/charset/Charset;
     .locals 2
 
-    .line 15
+    .line 16
     const/4 v0, 0x0
 
     const/4 v1, 0x1
 
     invoke-static {p0, v0, v1, v0}, Lokhttp3/MediaType;->charset$default(Lokhttp3/MediaType;Ljava/nio/charset/Charset;ILjava/lang/Object;)Ljava/nio/charset/Charset;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final charset(Ljava/nio/charset/Charset;)Ljava/nio/charset/Charset;
@@ -310,10 +310,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 8
     .line 9
@@ -322,16 +322,19 @@
     .line 10
     :cond_0
     :try_start_0
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+    invoke-static {p0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 14
+    return-object p0
+
+    .line 15
     :catch_0
     return-object p1
 .end method
@@ -356,52 +359,52 @@
 
     .line 8
     .line 9
-    iget-object v0, p0, Lokhttp3/MediaType;->mediaType:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/MediaType;->mediaType:Ljava/lang/String;
 
     .line 10
     .line 11
-    invoke-static {p1, v0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result p0
 
     .line 15
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 16
     .line 17
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 18
-    return p1
+    return p0
 
     .line 19
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 20
-    return p1
+    return p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MediaType;->mediaType:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/MediaType;->mediaType:Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final parameter(Ljava/lang/String;)Ljava/lang/String;
@@ -430,7 +433,7 @@
     const/4 v2, 0x0
 
     .line 11
-    invoke-static {v2, v0, v1}, Le21;->A(III)I
+    invoke-static {v2, v0, v1}, Ll93;->w(III)I
 
     .line 12
     .line 13
@@ -451,7 +454,7 @@
 
     .line 20
     .line 21
-    invoke-static {v1, p1}, Lzl6;->Z(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, p1}, Lla7;->A0(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 22
     .line 23
@@ -463,7 +466,7 @@
 
     .line 26
     .line 27
-    iget-object p1, p0, Lokhttp3/MediaType;->parameterNamesAndValues:[Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/MediaType;->parameterNamesAndValues:[Ljava/lang/String;
 
     .line 28
     .line 29
@@ -471,11 +474,11 @@
 
     .line 30
     .line 31
-    aget-object p1, p1, v2
+    aget-object p0, p0, v2
 
     .line 32
     .line 33
-    return-object p1
+    return-object p0
 
     .line 34
     :cond_0
@@ -491,41 +494,41 @@
 
     .line 39
     :cond_1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 40
-    return-object p1
+    return-object p0
 .end method
 
 .method public final subtype()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MediaType;->subtype:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/MediaType;->subtype:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MediaType;->mediaType:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/MediaType;->mediaType:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final type()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MediaType;->type:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/MediaType;->type:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

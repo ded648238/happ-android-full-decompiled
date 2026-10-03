@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/SubscriptionUserInfo;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -17,16 +17,16 @@
         "",
         "upload",
         "J",
-        "f",
+        "g",
         "()J",
-        "v",
+        "p",
         "(J)V",
         "download",
         "c",
         "h",
         "total",
         "e",
-        "l",
+        "m",
         "expire",
         "d",
         "k",
@@ -140,13 +140,13 @@
 .end method
 
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final e()J
@@ -258,15 +258,15 @@
 
     .line 41
     .line 42
-    iget-wide v5, p1, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->expire:J
+    iget-wide p0, p1, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->expire:J
 
     .line 43
     .line 44
-    cmp-long p1, v3, v5
+    cmp-long p0, v3, p0
 
     .line 45
     .line 46
-    if-eqz p1, :cond_5
+    if-eqz p0, :cond_5
 
     .line 47
     .line 48
@@ -277,7 +277,7 @@
     return v0
 .end method
 
-.method public final f()J
+.method public final g()J
     .locals 2
 
     .line 1
@@ -300,91 +300,68 @@
 .end method
 
 .method public final hashCode()I
-    .locals 7
+    .locals 4
 
     .line 1
     iget-wide v0, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->upload:J
 
     .line 2
     .line 3
-    const/16 v2, 0x20
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
 
     .line 4
     .line 5
-    ushr-long v3, v0, v2
-
     .line 6
+    move-result v0
+
     .line 7
-    xor-long/2addr v0, v3
+    const/16 v1, 0x1f
 
     .line 8
-    long-to-int v1, v0
-
     .line 9
-    mul-int/lit8 v1, v1, 0x1f
+    mul-int/2addr v0, v1
 
     .line 10
+    iget-wide v2, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->download:J
+
     .line 11
-    iget-wide v3, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->download:J
-
     .line 12
-    .line 13
-    ushr-long v5, v3, v2
+    invoke-static {v0, v1, v2, v3}, Lw31;->e(IIJ)I
 
+    .line 13
     .line 14
     .line 15
-    xor-long/2addr v3, v5
+    move-result v0
 
     .line 16
-    long-to-int v0, v3
+    iget-wide v2, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->total:J
 
     .line 17
-    add-int/2addr v1, v0
-
     .line 18
-    mul-int/lit8 v1, v1, 0x1f
+    invoke-static {v0, v1, v2, v3}, Lw31;->e(IIJ)I
 
     .line 19
     .line 20
-    iget-wide v3, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->total:J
-
     .line 21
+    move-result v0
+
     .line 22
-    ushr-long v5, v3, v2
+    iget-wide v1, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->expire:J
 
     .line 23
     .line 24
-    xor-long/2addr v3, v5
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
 
     .line 25
-    long-to-int v0, v3
-
     .line 26
-    add-int/2addr v1, v0
-
     .line 27
-    mul-int/lit8 v1, v1, 0x1f
+    move-result p0
 
     .line 28
+    add-int/2addr p0, v0
+
     .line 29
-    iget-wide v3, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->expire:J
-
-    .line 30
-    .line 31
-    ushr-long v5, v3, v2
-
-    .line 32
-    .line 33
-    xor-long/2addr v3, v5
-
-    .line 34
-    long-to-int v0, v3
-
-    .line 35
-    add-int/2addr v1, v0
-
-    .line 36
-    return v1
+    return p0
 .end method
 
 .method public final k(J)V
@@ -398,7 +375,7 @@
     return-void
 .end method
 
-.method public final l(J)V
+.method public final m(J)V
     .locals 0
 
     .line 1
@@ -409,8 +386,19 @@
     return-void
 .end method
 
+.method public final p(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->upload:J
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
 .method public final toString()Ljava/lang/String;
-    .locals 10
+    .locals 9
 
     .line 1
     iget-wide v0, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->upload:J
@@ -429,95 +417,63 @@
 
     .line 8
     .line 9
-    new-instance v8, Ljava/lang/StringBuilder;
+    const-string p0, "SubscriptionUserInfo(upload="
 
     .line 10
     .line 11
-    const-string v9, "SubscriptionUserInfo(upload="
+    const-string v8, ", download="
 
     .line 12
     .line 13
-    invoke-direct {v8, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-static {v0, v1, p0, v8}, Lc73;->m(JLjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v8, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-object p0
 
     .line 17
+    invoke-virtual {p0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
     .line 18
     .line 19
-    const-string v0, ", download="
-
     .line 20
-    .line 21
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 22
-    .line 23
-    .line 24
-    invoke-virtual {v8, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 25
-    .line 26
-    .line 27
     const-string v0, ", total="
 
-    .line 28
-    .line 29
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 21
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {p0, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    const-string v0, ", expire="
+
+    .line 29
     .line 30
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 31
     .line 32
-    invoke-virtual {v8, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
     .line 33
+    const-string v0, ")"
+
     .line 34
     .line 35
-    const-string v0, ", expire="
+    invoke-static {v6, v7, v0, p0}, Lc73;->f(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 36
     .line 37
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 38
+    move-result-object p0
+
     .line 39
-    .line 40
-    invoke-virtual {v8, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v0, ")"
-
-    .line 44
-    .line 45
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    return-object v0
-.end method
-
-.method public final v(J)V
-    .locals 0
-
-    .line 1
-    iput-wide p1, p0, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->upload:J
-
-    .line 2
-    .line 3
-    return-void
+    return-object p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V

@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/MetaParams$Creator;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -32,13 +32,13 @@
         0x4,
         0x0
     }
-    xi = 0x30
+    xi = 0x530
 .end annotation
 
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 93
+    .locals 94
 
     .line 1
     move-object/from16 v0, p1
@@ -119,970 +119,966 @@
     move-object v5, v4
 
     .line 37
-    goto :goto_1
+    move-object v6, v5
 
     .line 38
+    goto :goto_1
+
+    .line 39
     :cond_1
     sget-object v5, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    .line 39
     .line 40
+    .line 41
     invoke-interface {v5, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    .line 41
     .line 42
     .line 43
+    .line 44
     move-result-object v5
 
-    .line 44
-    :goto_1
+    .line 45
     check-cast v5, Lsu/happ/proxyutility/dto/SubscriptionUserInfo;
 
-    .line 45
     .line 46
+    .line 47
     move-object v6, v4
 
-    .line 47
+    .line 48
+    :goto_1
     invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    .line 48
     .line 49
     .line 50
+    .line 51
     move-result-object v4
 
-    .line 51
+    .line 52
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 52
     .line 53
     .line 54
+    .line 55
     move-result v7
 
-    .line 55
-    if-nez v7, :cond_2
-
     .line 56
+    if-nez v7, :cond_3
+
     .line 57
+    .line 58
+    :cond_2
     move-object v7, v6
 
-    .line 58
-    goto :goto_2
-
     .line 59
-    :cond_2
-    sget-object v7, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->CREATOR:Landroid/os/Parcelable$Creator;
+    move-object v8, v7
 
     .line 60
+    goto :goto_2
+
     .line 61
-    invoke-interface {v7, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    :cond_3
+    sget-object v7, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 62
     .line 63
+    invoke-interface {v7, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
     .line 64
+    .line 65
+    .line 66
     move-result-object v7
 
-    .line 65
-    :goto_2
-    check-cast v7, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;
-
-    .line 66
     .line 67
-    if-eqz v7, :cond_3
+    check-cast v7, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;
 
     .line 68
     .line 69
-    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->l()Ljava/util/Map;
+    if-eqz v7, :cond_2
 
     .line 70
     .line 71
+    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->m()Ljava/util/Map;
+
     .line 72
-    move-result-object v7
-
     .line 73
-    move-object v8, v6
-
     .line 74
-    goto :goto_3
+    move-result-object v7
 
     .line 75
-    :cond_3
-    move-object v7, v6
+    move-object v8, v6
 
     .line 76
-    move-object v8, v7
+    :goto_2
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 77
-    :goto_3
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 78
     .line 79
-    .line 80
     move-result-object v6
 
-    .line 81
+    .line 80
     move-object v9, v2
 
-    .line 82
+    .line 81
     move-object v2, v3
 
-    .line 83
+    .line 82
     move-object v3, v5
 
-    .line 84
+    .line 83
     move-object v5, v7
 
-    .line 85
+    .line 84
     invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
+    .line 85
     .line 86
     .line 87
-    .line 88
     move-result-object v7
 
-    .line 89
+    .line 88
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 89
     .line 90
     .line 91
-    .line 92
     move-result v10
 
-    .line 93
+    .line 92
     const/4 v11, 0x0
 
-    .line 94
+    .line 93
     const/4 v12, 0x1
 
-    .line 95
+    .line 94
     if-nez v10, :cond_4
 
+    .line 95
     .line 96
-    .line 97
     move-object v10, v8
 
-    .line 98
-    :goto_4
+    .line 97
+    :goto_3
     move-object v13, v9
 
-    .line 99
-    goto :goto_6
+    .line 98
+    goto :goto_5
 
-    .line 100
+    .line 99
     :cond_4
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 100
     .line 101
     .line 102
-    .line 103
     move-result v10
 
-    .line 104
+    .line 103
     if-eqz v10, :cond_5
 
+    .line 104
     .line 105
+    move v10, v12
+
     .line 106
-    const/4 v10, 0x1
-
-    .line 107
-    goto :goto_5
-
-    .line 108
-    :cond_5
-    const/4 v10, 0x0
-
-    .line 109
-    :goto_5
-    invoke-static {v10}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 110
-    .line 111
-    .line 112
-    move-result-object v10
-
-    .line 113
     goto :goto_4
 
-    .line 114
-    :goto_6
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    .line 107
+    :cond_5
+    move v10, v11
 
-    .line 115
-    .line 116
-    .line 117
-    move-result-object v9
+    .line 108
+    :goto_4
+    invoke-static {v10}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 118
-    move-object v14, v8
-
-    .line 119
-    move-object v8, v10
-
-    .line 120
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    .line 121
-    .line 122
-    .line 123
+    .line 109
+    .line 110
+    .line 111
     move-result-object v10
 
+    .line 112
+    goto :goto_3
+
+    .line 113
+    :goto_5
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object v9
+
+    .line 117
+    move-object v14, v8
+
+    .line 118
+    move-object v8, v10
+
+    .line 119
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 120
+    .line 121
+    .line 122
+    move-result-object v10
+
+    .line 123
+    move v15, v11
+
     .line 124
-    const/4 v15, 0x0
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 125
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 126
     .line 127
-    .line 128
     move-result-object v11
 
-    .line 129
-    const/16 v16, 0x1
+    .line 128
+    move/from16 v16, v12
 
+    .line 129
     .line 130
-    .line 131
     invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
+    .line 131
     .line 132
     .line 133
-    .line 134
     move-result-object v12
 
-    .line 135
+    .line 134
     move-object/from16 v17, v13
 
+    .line 135
     .line 136
-    .line 137
     invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
+    .line 137
     .line 138
     .line 139
-    .line 140
     move-result-object v13
 
-    .line 141
+    .line 140
     move-object/from16 v18, v14
 
+    .line 141
     .line 142
-    .line 143
     invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
+    .line 143
     .line 144
     .line 145
-    .line 146
     move-result-object v14
 
-    .line 147
-    const/16 v19, 0x0
+    .line 146
+    move/from16 v19, v15
 
+    .line 147
     .line 148
-    .line 149
     invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
+    .line 149
     .line 150
     .line 151
-    .line 152
     move-result-object v15
 
-    .line 153
+    .line 152
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 153
     .line 154
     .line 155
-    .line 156
     move-result v20
 
-    .line 157
+    .line 156
     if-nez v20, :cond_6
 
+    .line 157
     .line 158
-    .line 159
     move-object/from16 v20, v18
 
+    .line 159
     .line 160
-    .line 161
-    goto :goto_8
+    goto :goto_7
 
-    .line 162
+    .line 161
     :cond_6
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 162
     .line 163
     .line 164
-    .line 165
     move-result v20
 
-    .line 166
+    .line 165
     if-eqz v20, :cond_7
 
+    .line 166
     .line 167
-    .line 168
-    const/16 v20, 0x1
+    move/from16 v20, v16
 
+    .line 168
     .line 169
+    goto :goto_6
+
     .line 170
-    goto :goto_7
+    :cond_7
+    move/from16 v20, v19
 
     .line 171
-    :cond_7
-    const/16 v20, 0x0
-
     .line 172
-    .line 173
-    :goto_7
+    :goto_6
     invoke-static/range {v20 .. v20}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 173
     .line 174
     .line 175
-    .line 176
     move-result-object v20
 
-    .line 177
-    :goto_8
+    .line 176
+    :goto_7
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 177
     .line 178
     .line 179
-    .line 180
     move-result v21
 
-    .line 181
+    .line 180
     if-nez v21, :cond_8
 
+    .line 181
     .line 182
-    .line 183
     move-object/from16 v21, v18
 
+    .line 183
     .line 184
-    .line 185
-    goto :goto_a
+    goto :goto_9
 
-    .line 186
+    .line 185
     :cond_8
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 186
     .line 187
     .line 188
-    .line 189
     move-result v21
 
-    .line 190
+    .line 189
     if-eqz v21, :cond_9
 
+    .line 190
     .line 191
-    .line 192
-    const/16 v21, 0x1
+    move/from16 v21, v16
 
+    .line 192
     .line 193
+    goto :goto_8
+
     .line 194
-    goto :goto_9
+    :cond_9
+    move/from16 v21, v19
 
     .line 195
-    :cond_9
-    const/16 v21, 0x0
-
     .line 196
-    .line 197
-    :goto_9
+    :goto_8
     invoke-static/range {v21 .. v21}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 197
     .line 198
     .line 199
-    .line 200
     move-result-object v21
 
+    .line 200
+    :goto_9
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
     .line 201
+    .line 202
+    .line 203
+    move-result v22
+
+    .line 204
+    move-object/from16 p0, v1
+
+    .line 205
+    .line 206
+    if-nez v22, :cond_a
+
+    .line 207
+    .line 208
+    move-object/from16 v1, v18
+
+    .line 209
+    .line 210
+    goto :goto_a
+
+    .line 211
+    :cond_a
+    sget-object v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 212
+    .line 213
+    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    .line 214
+    .line 215
+    .line 216
+    move-result-object v1
+
+    .line 217
+    check-cast v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
+
+    .line 218
+    .line 219
     :goto_a
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 202
-    .line 203
-    .line 204
-    move-result v22
-
-    .line 205
-    if-nez v22, :cond_a
-
-    .line 206
-    .line 207
-    move-object/from16 v22, v1
-
-    .line 208
-    .line 209
-    move-object/from16 v1, v18
-
-    .line 210
-    .line 211
-    goto :goto_b
-
-    .line 212
-    :cond_a
-    move-object/from16 v22, v1
-
-    .line 213
-    .line 214
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 215
-    .line 216
-    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-
-    .line 217
-    .line 218
-    .line 219
-    move-result-object v1
-
     .line 220
-    :goto_b
-    check-cast v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
-
     .line 221
     .line 222
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+    move-result v22
 
     .line 223
+    if-nez v22, :cond_b
+
     .line 224
     .line 225
-    move-result v23
+    move-object/from16 v22, v18
 
     .line 226
-    if-nez v23, :cond_b
-
     .line 227
+    goto :goto_c
+
     .line 228
-    move-object/from16 v23, v18
-
-    .line 229
-    .line 230
-    goto :goto_d
-
-    .line 231
     :cond_b
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 229
+    .line 230
+    .line 231
+    move-result v22
+
     .line 232
+    if-eqz v22, :cond_c
+
     .line 233
     .line 234
-    move-result v23
+    move/from16 v22, v16
 
     .line 235
-    if-eqz v23, :cond_c
-
     .line 236
+    goto :goto_b
+
     .line 237
-    const/16 v23, 0x1
+    :cond_c
+    move/from16 v22, v19
 
     .line 238
     .line 239
-    goto :goto_c
+    :goto_b
+    invoke-static/range {v22 .. v22}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 240
-    :cond_c
-    const/16 v23, 0x0
-
     .line 241
     .line 242
-    :goto_c
-    invoke-static/range {v23 .. v23}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-result-object v22
 
     .line 243
-    .line 244
-    .line 245
-    move-result-object v23
-
-    .line 246
-    :goto_d
+    :goto_c
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 244
+    .line 245
+    .line 246
+    move-result v23
+
     .line 247
+    if-nez v23, :cond_d
+
     .line 248
     .line 249
-    move-result v24
+    move-object/from16 v23, v18
 
     .line 250
-    if-nez v24, :cond_d
-
     .line 251
+    goto :goto_e
+
     .line 252
-    move-object/from16 v24, v18
-
-    .line 253
-    .line 254
-    goto :goto_f
-
-    .line 255
     :cond_d
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 253
+    .line 254
+    .line 255
+    move-result v23
+
     .line 256
+    if-eqz v23, :cond_e
+
     .line 257
     .line 258
-    move-result v24
+    move/from16 v23, v16
 
     .line 259
-    if-eqz v24, :cond_e
-
     .line 260
+    goto :goto_d
+
     .line 261
-    const/16 v24, 0x1
+    :cond_e
+    move/from16 v23, v19
 
     .line 262
     .line 263
-    goto :goto_e
+    :goto_d
+    invoke-static/range {v23 .. v23}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 264
-    :cond_e
-    const/16 v24, 0x0
-
     .line 265
     .line 266
-    :goto_e
-    invoke-static/range {v24 .. v24}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-result-object v23
 
     .line 267
-    .line 268
-    .line 269
-    move-result-object v24
-
-    .line 270
-    :goto_f
+    :goto_e
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 268
+    .line 269
+    .line 270
+    move-result v24
+
     .line 271
+    if-nez v24, :cond_f
+
     .line 272
     .line 273
-    move-result v25
+    move-object/from16 v24, v1
 
     .line 274
-    if-nez v25, :cond_f
-
     .line 275
-    .line 276
-    move-object/from16 v25, v1
-
-    .line 277
-    .line 278
     move-object/from16 v1, v18
+
+    .line 276
+    .line 277
+    goto :goto_f
+
+    .line 278
+    :cond_f
+    move-object/from16 v24, v1
 
     .line 279
     .line 280
-    goto :goto_10
-
-    .line 281
-    :cond_f
-    move-object/from16 v25, v1
-
-    .line 282
-    .line 283
     sget-object v1, Lsu/happ/proxyutility/dto/enums/FragmentationPackets;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    .line 284
-    .line 285
+    .line 281
+    .line 282
     invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    .line 286
-    .line 287
-    .line 288
+    .line 283
+    .line 284
+    .line 285
     move-result-object v1
 
-    .line 289
-    :goto_10
+    .line 286
     check-cast v1, Lsu/happ/proxyutility/dto/enums/FragmentationPackets;
 
-    .line 290
-    .line 291
+    .line 287
+    .line 288
+    :goto_f
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 289
+    .line 290
+    .line 291
+    move-result v25
+
     .line 292
+    if-nez v25, :cond_11
+
     .line 293
     .line 294
-    move-result v26
+    move-object/from16 v25, v1
 
     .line 295
-    if-nez v26, :cond_10
-
     .line 296
-    .line 297
-    move-object/from16 v26, v1
-
-    .line 298
-    .line 299
+    :cond_10
     move-object/from16 v1, v18
+
+    .line 297
+    .line 298
+    goto :goto_10
+
+    .line 299
+    :cond_11
+    move-object/from16 v25, v1
 
     .line 300
     .line 301
-    goto :goto_11
-
-    .line 302
-    :cond_10
-    move-object/from16 v26, v1
-
-    .line 303
-    .line 304
     sget-object v1, Lsu/happ/proxyutility/dto/enums/FragmentationLength;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    .line 305
-    .line 306
+    .line 302
+    .line 303
     invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    .line 307
-    .line 308
-    .line 309
+    .line 304
+    .line 305
+    .line 306
     move-result-object v1
 
-    .line 310
-    :goto_11
+    .line 307
     check-cast v1, Lsu/happ/proxyutility/dto/enums/FragmentationLength;
 
-    .line 311
-    .line 312
-    if-eqz v1, :cond_11
+    .line 308
+    .line 309
+    if-eqz v1, :cond_10
 
-    .line 313
-    .line 314
+    .line 310
+    .line 311
     invoke-virtual {v1}, Lsu/happ/proxyutility/dto/enums/FragmentationLength;->c()Ljava/lang/String;
 
-    .line 315
-    .line 316
-    .line 317
+    .line 312
+    .line 313
+    .line 314
     move-result-object v1
 
+    .line 315
+    :goto_10
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
+    .line 316
+    .line 317
     .line 318
-    goto :goto_12
+    move-result v26
 
     .line 319
-    :cond_11
-    move-object/from16 v1, v18
+    if-nez v26, :cond_13
 
     .line 320
     .line 321
-    :goto_12
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+    move-object/from16 v26, v1
 
     .line 322
     .line 323
-    .line 324
-    move-result v27
-
-    .line 325
-    if-nez v27, :cond_12
-
-    .line 326
-    .line 327
-    move-object/from16 v27, v1
-
-    .line 328
-    .line 329
+    :cond_12
     move-object/from16 v1, v18
 
-    .line 330
-    .line 331
-    goto :goto_13
+    .line 324
+    .line 325
+    goto :goto_11
 
-    .line 332
-    :cond_12
-    move-object/from16 v27, v1
+    .line 326
+    :cond_13
+    move-object/from16 v26, v1
 
-    .line 333
-    .line 334
+    .line 327
+    .line 328
     sget-object v1, Lsu/happ/proxyutility/dto/enums/FragmentationDelay;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 329
+    .line 330
+    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    .line 331
+    .line 332
+    .line 333
+    move-result-object v1
+
+    .line 334
+    check-cast v1, Lsu/happ/proxyutility/dto/enums/FragmentationDelay;
 
     .line 335
     .line 336
-    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    if-eqz v1, :cond_12
 
     .line 337
     .line 338
+    invoke-virtual {v1}, Lsu/happ/proxyutility/dto/enums/FragmentationDelay;->d()Ljava/lang/String;
+
     .line 339
+    .line 340
+    .line 341
     move-result-object v1
 
-    .line 340
-    :goto_13
-    check-cast v1, Lsu/happ/proxyutility/dto/enums/FragmentationDelay;
-
-    .line 341
     .line 342
-    if-eqz v1, :cond_13
+    :goto_11
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 343
     .line 344
-    invoke-virtual {v1}, Lsu/happ/proxyutility/dto/enums/FragmentationDelay;->d()Ljava/lang/String;
-
     .line 345
-    .line 346
-    .line 347
-    move-result-object v1
+    move-result v27
 
+    .line 346
+    if-nez v27, :cond_15
+
+    .line 347
     .line 348
-    goto :goto_14
+    move-object/from16 v27, v1
 
     .line 349
-    :cond_13
+    .line 350
+    :cond_14
     move-object/from16 v1, v18
 
-    .line 350
     .line 351
-    :goto_14
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
-
     .line 352
-    .line 353
-    .line 354
-    move-result v28
+    goto :goto_12
 
+    .line 353
+    :cond_15
+    move-object/from16 v27, v1
+
+    .line 354
     .line 355
-    if-nez v28, :cond_14
+    sget-object v1, Lsu/happ/proxyutility/dto/enums/FragmentationDelay;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 356
     .line 357
-    move-object/from16 v28, v1
+    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
     .line 358
     .line 359
-    move-object/from16 v1, v18
-
     .line 360
-    .line 361
-    goto :goto_15
-
-    .line 362
-    :cond_14
-    move-object/from16 v28, v1
-
-    .line 363
-    .line 364
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/FragmentationDelay;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 365
-    .line 366
-    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-
-    .line 367
-    .line 368
-    .line 369
     move-result-object v1
 
-    .line 370
-    :goto_15
+    .line 361
     check-cast v1, Lsu/happ/proxyutility/dto/enums/FragmentationDelay;
 
-    .line 371
-    .line 372
-    if-eqz v1, :cond_15
+    .line 362
+    .line 363
+    if-eqz v1, :cond_14
 
-    .line 373
-    .line 374
+    .line 364
+    .line 365
     invoke-virtual {v1}, Lsu/happ/proxyutility/dto/enums/FragmentationDelay;->d()Ljava/lang/String;
 
-    .line 375
-    .line 376
-    .line 377
+    .line 366
+    .line 367
+    .line 368
     move-result-object v1
 
-    .line 378
-    goto :goto_16
+    .line 369
+    :goto_12
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 379
-    :cond_15
+    .line 370
+    .line 371
+    .line 372
+    move-result v28
+
+    .line 373
+    if-nez v28, :cond_16
+
+    .line 374
+    .line 375
+    move-object/from16 v28, v1
+
+    .line 376
+    .line 377
     move-object/from16 v1, v18
+
+    .line 378
+    .line 379
+    :goto_13
+    move/from16 v29, v19
 
     .line 380
     .line 381
-    :goto_16
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+    move-object/from16 v19, v22
 
     .line 382
     .line 383
-    .line 384
-    move-result v29
+    move-object/from16 v22, v26
 
+    .line 384
     .line 385
-    if-nez v29, :cond_16
+    goto :goto_14
 
     .line 386
-    .line 387
-    move-object/from16 v29, v1
-
-    .line 388
-    .line 389
-    move-object/from16 v1, v18
-
-    .line 390
-    .line 391
-    goto :goto_17
-
-    .line 392
     :cond_16
-    move-object/from16 v29, v1
+    move-object/from16 v28, v1
 
-    .line 393
-    .line 394
+    .line 387
+    .line 388
     sget-object v1, Lsu/happ/proxyutility/dto/enums/FragmentationType;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 389
+    .line 390
+    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    .line 391
+    .line 392
+    .line 393
+    move-result-object v1
+
+    .line 394
+    check-cast v1, Lsu/happ/proxyutility/dto/enums/FragmentationType;
 
     .line 395
     .line 396
-    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    goto :goto_13
 
     .line 397
+    :goto_14
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
     .line 398
     .line 399
-    move-result-object v1
-
     .line 400
-    :goto_17
-    check-cast v1, Lsu/happ/proxyutility/dto/enums/FragmentationType;
-
-    .line 401
-    .line 402
-    move-object/from16 v30, v17
-
-    .line 403
-    .line 404
-    move-object/from16 v17, v21
-
-    .line 405
-    .line 406
-    move-object/from16 v21, v26
-
-    .line 407
-    .line 408
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    .line 409
-    .line 410
-    .line 411
     move-result-object v26
 
+    .line 401
+    move/from16 v30, v16
+
+    .line 402
+    .line 403
+    move-object/from16 v16, v20
+
+    .line 404
+    .line 405
+    move-object/from16 v20, v23
+
+    .line 406
+    .line 407
+    move-object/from16 v23, v27
+
+    .line 408
+    .line 409
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 410
+    .line 411
     .line 412
-    move-object/from16 v31, v18
+    move-result-object v27
 
     .line 413
-    .line 414
-    move-object/from16 v18, v25
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 414
     .line 415
     .line 416
-    move-object/from16 v25, v1
+    move-result v31
 
     .line 417
+    if-nez v31, :cond_17
+
     .line 418
-    move-object/from16 v1, v22
-
     .line 419
-    .line 420
-    move-object/from16 v22, v27
+    move-object/from16 v31, v18
 
+    .line 420
     .line 421
+    goto :goto_16
+
     .line 422
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    :cond_17
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 423
     .line 424
     .line 425
-    move-result-object v27
+    move-result v31
 
     .line 426
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+    if-eqz v31, :cond_18
 
     .line 427
     .line 428
-    .line 429
-    move-result v32
+    move/from16 v31, v30
 
+    .line 429
     .line 430
-    if-nez v32, :cond_17
+    goto :goto_15
 
     .line 431
+    :cond_18
+    move/from16 v31, v29
+
     .line 432
-    move-object/from16 v32, v31
-
     .line 433
-    .line 434
-    goto :goto_19
+    :goto_15
+    invoke-static/range {v31 .. v31}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 434
     .line 435
-    :cond_17
+    .line 436
+    move-result-object v31
+
+    .line 437
+    :goto_16
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 436
-    .line 437
     .line 438
+    .line 439
+    .line 440
     move-result v32
 
-    .line 439
-    if-eqz v32, :cond_18
-
-    .line 440
     .line 441
-    const/16 v32, 0x1
+    if-nez v32, :cond_19
 
     .line 442
     .line 443
-    goto :goto_18
+    move-object/from16 v32, v1
 
     .line 444
-    :cond_18
-    const/16 v32, 0x0
-
     .line 445
-    .line 446
-    :goto_18
-    invoke-static/range {v32 .. v32}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-object/from16 v1, v18
 
+    .line 446
     .line 447
+    :goto_17
+    move/from16 v33, v30
+
     .line 448
     .line 449
-    move-result-object v32
+    goto :goto_18
 
     .line 450
-    :goto_19
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+    :cond_19
+    move-object/from16 v32, v1
 
     .line 451
     .line 452
-    .line 453
-    move-result v33
+    sget-object v1, Lsu/happ/proxyutility/dto/enums/NoisesPacketType;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 453
     .line 454
-    if-nez v33, :cond_19
+    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
     .line 455
     .line 456
-    move-object/from16 v33, v1
-
     .line 457
+    move-result-object v1
+
     .line 458
-    move-object/from16 v1, v31
+    check-cast v1, Lsu/happ/proxyutility/dto/enums/NoisesPacketType;
 
     .line 459
     .line 460
-    goto :goto_1a
+    goto :goto_17
 
     .line 461
-    :cond_19
-    move-object/from16 v33, v1
+    :goto_18
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 462
     .line 463
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/NoisesPacketType;->CREATOR:Landroid/os/Parcelable$Creator;
-
     .line 464
+    move-result-object v30
+
     .line 465
-    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    move-object/from16 v34, v18
 
     .line 466
     .line 467
-    .line 468
-    move-result-object v1
+    move-object/from16 v18, v24
 
+    .line 468
     .line 469
-    :goto_1a
-    check-cast v1, Lsu/happ/proxyutility/dto/enums/NoisesPacketType;
+    move-object/from16 v24, v28
 
     .line 470
     .line 471
-    move-object/from16 v34, v30
+    move-object/from16 v28, v31
 
     .line 472
     .line 473
@@ -1091,34 +1087,34 @@
     .line 474
     .line 475
     .line 476
-    move-result-object v30
+    move-result-object v31
 
     .line 477
-    move-object/from16 v35, v31
+    move-object/from16 v35, v17
 
     .line 478
     .line 479
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    move-object/from16 v17, v21
 
     .line 480
     .line 481
-    .line 482
-    move-result-object v31
+    move-object/from16 v21, v25
 
+    .line 482
     .line 483
-    move-object/from16 v19, v23
+    move-object/from16 v25, v32
 
     .line 484
     .line 485
-    move-object/from16 v23, v28
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 486
     .line 487
-    move-object/from16 v28, v32
-
     .line 488
+    move-result-object v32
+
     .line 489
-    const/16 v36, 0x0
+    move/from16 v36, v33
 
     .line 490
     .line 491
@@ -1127,2275 +1123,2328 @@
     .line 492
     .line 493
     .line 494
-    move-result-object v32
+    move-result-object v33
 
     .line 495
-    move-object/from16 v16, v20
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 496
     .line 497
-    move-object/from16 v20, v24
-
     .line 498
+    move-result v37
+
     .line 499
-    move-object/from16 v24, v29
+    if-nez v37, :cond_1a
 
     .line 500
     .line 501
-    const/16 v37, 0x1
+    move-object/from16 v37, v34
 
     .line 502
     .line 503
-    move-object/from16 v29, v1
+    goto :goto_1a
 
     .line 504
-    .line 505
-    move-object/from16 v1, v33
-
-    .line 506
-    .line 507
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    .line 508
-    .line 509
-    .line 510
-    move-result-object v33
-
-    .line 511
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
-
-    .line 512
-    .line 513
-    .line 514
-    move-result v38
-
-    .line 515
-    if-nez v38, :cond_1a
-
-    .line 516
-    .line 517
-    move-object/from16 v38, v35
-
-    .line 518
-    .line 519
-    goto :goto_1c
-
-    .line 520
     :cond_1a
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 521
-    .line 522
-    .line 523
-    move-result v38
+    .line 505
+    .line 506
+    .line 507
+    move-result v37
 
-    .line 524
-    if-eqz v38, :cond_1b
+    .line 508
+    if-eqz v37, :cond_1b
 
-    .line 525
-    .line 526
-    const/16 v38, 0x1
+    .line 509
+    .line 510
+    move/from16 v37, v36
 
-    .line 527
-    .line 528
-    goto :goto_1b
+    .line 511
+    .line 512
+    goto :goto_19
 
-    .line 529
+    .line 513
     :cond_1b
-    const/16 v38, 0x0
+    move/from16 v37, v29
 
-    .line 530
-    .line 531
-    :goto_1b
-    invoke-static/range {v38 .. v38}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 514
+    .line 515
+    :goto_19
+    invoke-static/range {v37 .. v37}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 532
-    .line 533
-    .line 534
-    move-result-object v38
+    .line 516
+    .line 517
+    .line 518
+    move-result-object v37
 
-    .line 535
-    :goto_1c
+    .line 519
+    :goto_1a
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 536
-    .line 537
-    .line 538
-    move-result v39
+    .line 520
+    .line 521
+    .line 522
+    move-result v38
 
-    .line 539
-    if-nez v39, :cond_1c
+    .line 523
+    if-nez v38, :cond_1c
 
-    .line 540
-    .line 541
-    move-object/from16 v39, v35
+    .line 524
+    .line 525
+    move-object/from16 v38, v34
 
-    .line 542
-    .line 543
-    goto :goto_1e
+    .line 526
+    .line 527
+    goto :goto_1c
 
-    .line 544
+    .line 528
     :cond_1c
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 545
-    .line 546
-    .line 547
-    move-result v39
+    .line 529
+    .line 530
+    .line 531
+    move-result v38
 
-    .line 548
-    if-eqz v39, :cond_1d
+    .line 532
+    if-eqz v38, :cond_1d
 
-    .line 549
-    .line 550
-    const/16 v39, 0x1
+    .line 533
+    .line 534
+    move/from16 v38, v36
 
-    .line 551
-    .line 552
-    goto :goto_1d
+    .line 535
+    .line 536
+    goto :goto_1b
 
-    .line 553
+    .line 537
     :cond_1d
-    const/16 v39, 0x0
+    move/from16 v38, v29
 
-    .line 554
-    .line 555
-    :goto_1d
-    invoke-static/range {v39 .. v39}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 538
+    .line 539
+    :goto_1b
+    invoke-static/range {v38 .. v38}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 556
-    .line 557
-    .line 558
-    move-result-object v39
+    .line 540
+    .line 541
+    .line 542
+    move-result-object v38
 
-    .line 559
-    :goto_1e
+    .line 543
+    :goto_1c
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 560
-    .line 561
-    .line 562
-    move-result v40
+    .line 544
+    .line 545
+    .line 546
+    move-result v39
 
-    .line 563
-    if-nez v40, :cond_1e
+    .line 547
+    if-nez v39, :cond_1e
 
-    .line 564
-    .line 565
-    move-object/from16 v40, v35
+    .line 548
+    .line 549
+    move-object/from16 v39, v34
 
-    .line 566
-    .line 567
-    goto :goto_20
+    .line 550
+    .line 551
+    goto :goto_1e
 
-    .line 568
+    .line 552
     :cond_1e
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 569
-    .line 570
-    .line 571
-    move-result v40
+    .line 553
+    .line 554
+    .line 555
+    move-result v39
 
-    .line 572
-    if-eqz v40, :cond_1f
+    .line 556
+    if-eqz v39, :cond_1f
 
-    .line 573
-    .line 574
-    const/16 v40, 0x1
+    .line 557
+    .line 558
+    move/from16 v39, v36
 
-    .line 575
-    .line 576
-    goto :goto_1f
+    .line 559
+    .line 560
+    goto :goto_1d
 
-    .line 577
+    .line 561
     :cond_1f
-    const/16 v40, 0x0
+    move/from16 v39, v29
 
-    .line 578
-    .line 579
-    :goto_1f
-    invoke-static/range {v40 .. v40}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 562
+    .line 563
+    :goto_1d
+    invoke-static/range {v39 .. v39}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 580
-    .line 581
-    .line 582
-    move-result-object v40
+    .line 564
+    .line 565
+    .line 566
+    move-result-object v39
 
-    .line 583
-    :goto_20
+    .line 567
+    :goto_1e
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 584
-    .line 585
-    .line 586
-    move-result v41
+    .line 568
+    .line 569
+    .line 570
+    move-result v40
 
-    .line 587
-    if-nez v41, :cond_20
+    .line 571
+    if-nez v40, :cond_20
 
-    .line 588
-    .line 589
-    move-object/from16 v41, v35
+    .line 572
+    .line 573
+    move-object/from16 v40, v34
 
-    .line 590
-    .line 591
-    goto :goto_22
+    .line 574
+    .line 575
+    goto :goto_20
 
-    .line 592
+    .line 576
     :cond_20
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 593
-    .line 594
-    .line 595
-    move-result v41
+    .line 577
+    .line 578
+    .line 579
+    move-result v40
 
-    .line 596
-    if-eqz v41, :cond_21
+    .line 580
+    if-eqz v40, :cond_21
 
-    .line 597
-    .line 598
-    const/16 v41, 0x1
+    .line 581
+    .line 582
+    move/from16 v40, v36
 
-    .line 599
-    .line 600
-    goto :goto_21
+    .line 583
+    .line 584
+    goto :goto_1f
 
-    .line 601
+    .line 585
     :cond_21
-    const/16 v41, 0x0
+    move/from16 v40, v29
 
-    .line 602
-    .line 603
-    :goto_21
-    invoke-static/range {v41 .. v41}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 586
+    .line 587
+    :goto_1f
+    invoke-static/range {v40 .. v40}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 604
-    .line 605
-    .line 606
-    move-result-object v41
+    .line 588
+    .line 589
+    .line 590
+    move-result-object v40
 
-    .line 607
-    :goto_22
+    .line 591
+    :goto_20
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 608
-    .line 609
-    .line 610
-    move-result v42
+    .line 592
+    .line 593
+    .line 594
+    move-result v41
 
-    .line 611
-    if-nez v42, :cond_22
+    .line 595
+    if-nez v41, :cond_22
 
-    .line 612
-    .line 613
-    move-object/from16 v42, v35
+    .line 596
+    .line 597
+    move-object/from16 v41, v34
 
-    .line 614
-    .line 615
-    goto :goto_24
+    .line 598
+    .line 599
+    goto :goto_22
 
-    .line 616
+    .line 600
     :cond_22
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 617
-    .line 618
-    .line 619
-    move-result v42
+    .line 601
+    .line 602
+    .line 603
+    move-result v41
 
-    .line 620
-    if-eqz v42, :cond_23
+    .line 604
+    if-eqz v41, :cond_23
 
-    .line 621
-    .line 622
-    const/16 v42, 0x1
+    .line 605
+    .line 606
+    move/from16 v41, v36
 
-    .line 623
-    .line 624
-    goto :goto_23
+    .line 607
+    .line 608
+    goto :goto_21
 
-    .line 625
+    .line 609
     :cond_23
-    const/16 v42, 0x0
+    move/from16 v41, v29
 
-    .line 626
-    .line 627
-    :goto_23
-    invoke-static/range {v42 .. v42}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 610
+    .line 611
+    :goto_21
+    invoke-static/range {v41 .. v41}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 628
-    .line 629
-    .line 630
-    move-result-object v42
+    .line 612
+    .line 613
+    .line 614
+    move-result-object v41
 
-    .line 631
-    :goto_24
+    .line 615
+    :goto_22
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 632
-    .line 633
-    .line 634
-    move-result v43
+    .line 616
+    .line 617
+    .line 618
+    move-result v42
 
-    .line 635
-    if-nez v43, :cond_24
+    .line 619
+    if-nez v42, :cond_24
 
-    .line 636
-    .line 637
-    move-object/from16 v43, v35
+    .line 620
+    .line 621
+    move-object/from16 v42, v34
 
-    .line 638
-    .line 639
-    goto :goto_26
+    .line 622
+    .line 623
+    goto :goto_24
 
-    .line 640
+    .line 624
     :cond_24
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 641
-    .line 642
-    .line 643
-    move-result v43
+    .line 625
+    .line 626
+    .line 627
+    move-result v42
 
-    .line 644
-    if-eqz v43, :cond_25
+    .line 628
+    if-eqz v42, :cond_25
 
-    .line 645
-    .line 646
-    const/16 v43, 0x1
+    .line 629
+    .line 630
+    move/from16 v42, v36
 
-    .line 647
-    .line 648
-    goto :goto_25
+    .line 631
+    .line 632
+    goto :goto_23
 
-    .line 649
+    .line 633
     :cond_25
-    const/16 v43, 0x0
+    move/from16 v42, v29
 
-    .line 650
-    .line 651
-    :goto_25
-    invoke-static/range {v43 .. v43}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 634
+    .line 635
+    :goto_23
+    invoke-static/range {v42 .. v42}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 652
-    .line 653
-    .line 654
-    move-result-object v43
+    .line 636
+    .line 637
+    .line 638
+    move-result-object v42
 
-    .line 655
-    :goto_26
+    .line 639
+    :goto_24
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 656
-    .line 657
-    .line 658
-    move-result v44
+    .line 640
+    .line 641
+    .line 642
+    move-result v43
 
-    .line 659
-    if-nez v44, :cond_26
+    .line 643
+    if-nez v43, :cond_26
 
-    .line 660
-    .line 661
-    move-object/from16 v44, v35
+    .line 644
+    .line 645
+    move-object/from16 v43, v34
 
-    .line 662
-    .line 663
-    goto :goto_28
+    .line 646
+    .line 647
+    goto :goto_26
 
-    .line 664
+    .line 648
     :cond_26
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 665
-    .line 666
-    .line 667
-    move-result v44
+    .line 649
+    .line 650
+    .line 651
+    move-result v43
 
-    .line 668
-    if-eqz v44, :cond_27
+    .line 652
+    if-eqz v43, :cond_27
 
-    .line 669
-    .line 670
-    const/16 v44, 0x1
+    .line 653
+    .line 654
+    move/from16 v43, v36
 
-    .line 671
-    .line 672
-    goto :goto_27
+    .line 655
+    .line 656
+    goto :goto_25
 
-    .line 673
+    .line 657
     :cond_27
-    const/16 v44, 0x0
+    move/from16 v43, v29
 
-    .line 674
-    .line 675
-    :goto_27
-    invoke-static/range {v44 .. v44}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 658
+    .line 659
+    :goto_25
+    invoke-static/range {v43 .. v43}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 676
-    .line 677
-    .line 678
-    move-result-object v44
+    .line 660
+    .line 661
+    .line 662
+    move-result-object v43
 
-    .line 679
-    :goto_28
+    .line 663
+    :goto_26
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 664
+    .line 665
+    .line 666
+    move-result v44
+
+    .line 667
+    if-nez v44, :cond_28
+
+    .line 668
+    .line 669
+    move-object/from16 v44, v1
+
+    .line 670
+    .line 671
+    move-object/from16 v1, v34
+
+    .line 672
+    .line 673
+    goto :goto_27
+
+    .line 674
+    :cond_28
+    move-object/from16 v44, v1
+
+    .line 675
+    .line 676
+    sget-object v1, Lsu/happ/proxyutility/dto/enums/EPingType;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 677
+    .line 678
+    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    .line 679
     .line 680
     .line 681
+    move-result-object v1
+
     .line 682
-    move-result v45
+    check-cast v1, Lsu/happ/proxyutility/dto/enums/EPingType;
 
     .line 683
-    if-nez v45, :cond_28
-
     .line 684
-    .line 685
-    move-object/from16 v45, v1
+    :goto_27
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 685
     .line 686
     .line 687
-    move-object/from16 v1, v35
+    move-result v45
 
     .line 688
-    .line 689
-    goto :goto_29
+    if-nez v45, :cond_29
 
+    .line 689
     .line 690
-    :cond_28
-    move-object/from16 v45, v1
+    move-object/from16 v45, v34
 
     .line 691
     .line 692
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/EPingType;->CREATOR:Landroid/os/Parcelable$Creator;
+    move-object/from16 v46, v45
 
     .line 693
     .line 694
-    invoke-interface {v1, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    :goto_28
+    move-object/from16 v34, v37
 
     .line 695
     .line 696
-    .line 697
-    move-result-object v1
+    move-object/from16 v37, v40
 
+    .line 697
     .line 698
-    :goto_29
-    check-cast v1, Lsu/happ/proxyutility/dto/enums/EPingType;
+    move-object/from16 v40, v43
 
     .line 699
     .line 700
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+    goto :goto_2a
 
     .line 701
-    .line 702
-    .line 703
-    move-result v46
-
-    .line 704
-    if-nez v46, :cond_29
-
-    .line 705
-    .line 706
-    move-object/from16 v46, v35
-
-    .line 707
-    .line 708
-    move-object/from16 v47, v46
-
-    .line 709
-    .line 710
-    :goto_2a
-    move-object/from16 v35, v39
-
-    .line 711
-    .line 712
-    move-object/from16 v39, v43
-
-    .line 713
-    .line 714
-    goto :goto_2c
-
-    .line 715
     :cond_29
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 702
+    .line 703
+    .line 704
+    move-result v45
+
+    .line 705
+    if-eqz v45, :cond_2a
+
+    .line 706
+    .line 707
+    move/from16 v45, v36
+
+    .line 708
+    .line 709
+    goto :goto_29
+
+    .line 710
+    :cond_2a
+    move/from16 v45, v29
+
+    .line 711
+    .line 712
+    :goto_29
+    invoke-static/range {v45 .. v45}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 713
+    .line 714
+    .line 715
+    move-result-object v45
+
     .line 716
+    move-object/from16 v46, v34
+
     .line 717
     .line 718
-    move-result v46
+    goto :goto_28
 
     .line 719
-    if-eqz v46, :cond_2a
+    :goto_2a
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 720
     .line 721
-    const/16 v46, 0x1
-
     .line 722
-    .line 723
-    goto :goto_2b
-
-    .line 724
-    :cond_2a
-    const/16 v46, 0x0
-
-    .line 725
-    .line 726
-    :goto_2b
-    invoke-static/range {v46 .. v46}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 727
-    .line 728
-    .line 729
-    move-result-object v46
-
-    .line 730
-    move-object/from16 v47, v35
-
-    .line 731
-    .line 732
-    goto :goto_2a
-
-    .line 733
-    :goto_2c
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    .line 734
-    .line 735
-    .line 736
     move-result-object v43
 
+    .line 723
+    move/from16 v47, v29
+
+    .line 724
+    .line 725
+    move-object/from16 v29, v44
+
+    .line 726
+    .line 727
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 728
+    .line 729
+    .line 730
+    move-result-object v44
+
+    .line 731
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
+    .line 732
+    .line 733
+    .line 734
+    move-result v48
+
+    .line 735
+    if-nez v48, :cond_2b
+
+    .line 736
     .line 737
-    move-object/from16 v36, v40
+    move-object/from16 v48, v46
 
     .line 738
     .line 739
-    move-object/from16 v40, v44
+    goto :goto_2c
 
     .line 740
-    .line 741
-    const/16 v48, 0x0
-
-    .line 742
-    .line 743
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    .line 744
-    .line 745
-    .line 746
-    move-result-object v44
-
-    .line 747
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
-
-    .line 748
-    .line 749
-    .line 750
-    move-result v49
-
-    .line 751
-    if-nez v49, :cond_2b
-
-    .line 752
-    .line 753
-    move-object/from16 v49, v47
-
-    .line 754
-    .line 755
-    goto :goto_2e
-
-    .line 756
     :cond_2b
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 757
-    .line 758
-    .line 759
-    move-result v49
+    .line 741
+    .line 742
+    .line 743
+    move-result v48
 
-    .line 760
-    if-eqz v49, :cond_2c
+    .line 744
+    if-eqz v48, :cond_2c
 
-    .line 761
-    .line 762
-    const/16 v49, 0x1
+    .line 745
+    .line 746
+    move/from16 v48, v36
 
-    .line 763
-    .line 764
-    goto :goto_2d
+    .line 747
+    .line 748
+    goto :goto_2b
 
-    .line 765
+    .line 749
     :cond_2c
-    const/16 v49, 0x0
+    move/from16 v48, v47
 
-    .line 766
-    .line 767
-    :goto_2d
-    invoke-static/range {v49 .. v49}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 750
+    .line 751
+    :goto_2b
+    invoke-static/range {v48 .. v48}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 768
-    .line 769
-    .line 770
-    move-result-object v49
+    .line 752
+    .line 753
+    .line 754
+    move-result-object v48
 
-    .line 771
-    :goto_2e
+    .line 755
+    :goto_2c
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 756
+    .line 757
+    .line 758
+    move-result v49
+
+    .line 759
+    if-nez v49, :cond_2d
+
+    .line 760
+    .line 761
+    move-object/from16 v49, v46
+
+    .line 762
+    .line 763
+    :goto_2d
+    move/from16 v50, v47
+
+    .line 764
+    .line 765
+    goto :goto_2f
+
+    .line 766
+    :cond_2d
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
+    .line 767
+    .line 768
+    .line 769
+    move-result v49
+
+    .line 770
+    if-eqz v49, :cond_2e
+
+    .line 771
     .line 772
+    move/from16 v49, v36
+
     .line 773
     .line 774
-    move-result v50
+    goto :goto_2e
 
     .line 775
-    if-nez v50, :cond_2d
+    :cond_2e
+    move/from16 v49, v47
 
     .line 776
     .line 777
-    move-object/from16 v50, v47
+    :goto_2e
+    invoke-static/range {v49 .. v49}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 778
     .line 779
-    move-object/from16 v51, v50
-
     .line 780
+    move-result-object v49
+
     .line 781
-    goto :goto_30
+    goto :goto_2d
 
     .line 782
-    :cond_2d
-    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+    :goto_2f
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 783
     .line 784
     .line 785
-    move-result v50
+    move-result-object v47
 
     .line 786
-    if-eqz v50, :cond_2e
+    move/from16 v51, v36
 
     .line 787
     .line 788
-    const/16 v50, 0x1
+    move-object/from16 v36, v39
 
     .line 789
     .line 790
-    goto :goto_2f
+    move-object/from16 v39, v42
 
     .line 791
-    :cond_2e
-    const/16 v50, 0x0
-
     .line 792
-    .line 793
-    :goto_2f
-    invoke-static/range {v50 .. v50}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-object/from16 v42, v45
 
+    .line 793
     .line 794
+    move-object/from16 v45, v48
+
     .line 795
     .line 796
-    move-result-object v50
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 797
-    move-object/from16 v51, v47
-
     .line 798
     .line 799
-    :goto_30
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    .line 800
-    .line 801
-    .line 802
-    move-result-object v47
-
-    .line 803
-    const/16 v52, 0x0
-
-    .line 804
-    .line 805
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    .line 806
-    .line 807
-    .line 808
     move-result-object v48
 
-    .line 809
+    .line 800
     invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 801
+    .line 802
+    .line 803
+    move-result v52
+
+    .line 804
+    if-nez v52, :cond_2f
+
+    .line 805
+    .line 806
+    move-object/from16 v52, v46
+
+    .line 807
+    .line 808
+    :goto_30
+    move/from16 v53, v50
+
+    .line 809
     .line 810
+    goto :goto_31
+
     .line 811
-    .line 812
-    move-result v53
-
-    .line 813
-    if-nez v53, :cond_2f
-
-    .line 814
-    .line 815
-    move-object/from16 v53, v51
-
-    .line 816
-    .line 817
-    :goto_31
-    move-object/from16 v0, v34
-
-    .line 818
-    .line 819
-    move-object/from16 v34, v38
-
-    .line 820
-    .line 821
-    move-object/from16 v38, v42
-
-    .line 822
-    .line 823
-    move-object/from16 v42, v46
-
-    .line 824
-    .line 825
-    move-object/from16 v46, v50
-
-    .line 826
-    .line 827
-    goto :goto_32
-
-    .line 828
     :cond_2f
     invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    .line 829
-    .line 830
-    .line 831
-    move-result-object v53
+    .line 812
+    .line 813
+    .line 814
+    move-result-object v52
 
+    .line 815
+    invoke-static/range {v52 .. v52}, Lp95;->valueOf(Ljava/lang/String;)Lp95;
+
+    .line 816
+    .line 817
+    .line 818
+    move-result-object v52
+
+    .line 819
+    goto :goto_30
+
+    .line 820
+    :goto_31
+    invoke-virtual {v0}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
+
+    .line 821
+    .line 822
+    .line 823
+    move-result-object v50
+
+    .line 824
+    move/from16 v54, v51
+
+    .line 825
+    .line 826
+    invoke-virtual {v0}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
+
+    .line 827
+    .line 828
+    .line 829
+    move-result-object v51
+
+    .line 830
+    move-object/from16 v55, v46
+
+    .line 831
     .line 832
-    invoke-static/range {v53 .. v53}, Lkr4;->valueOf(Ljava/lang/String;)Lkr4;
+    move-object/from16 v46, v49
 
     .line 833
     .line 834
-    .line 835
-    move-result-object v53
+    move-object/from16 v49, v52
 
+    .line 835
     .line 836
-    goto :goto_31
+    invoke-virtual {v0}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
 
     .line 837
-    :goto_32
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
-
     .line 838
     .line 839
+    move-result-object v52
+
     .line 840
-    move-result-object v50
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 841
-    move-object/from16 v54, v51
-
     .line 842
     .line 843
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
+    move-result v56
 
     .line 844
+    if-nez v56, :cond_30
+
     .line 845
     .line 846
-    move-result-object v51
+    move-object/from16 v56, v55
 
     .line 847
-    const/16 v55, 0x0
-
     .line 848
+    goto :goto_33
+
     .line 849
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->createStringArrayList()Ljava/util/ArrayList;
+    :cond_30
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 850
     .line 851
     .line 852
-    move-result-object v52
+    move-result v56
 
     .line 853
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    if-eqz v56, :cond_31
 
     .line 854
     .line 855
-    .line 856
-    move-result v56
+    move/from16 v56, v54
 
+    .line 856
     .line 857
-    if-nez v56, :cond_30
+    goto :goto_32
 
     .line 858
+    :cond_31
+    move/from16 v56, v53
+
     .line 859
-    move-object/from16 v56, v54
-
     .line 860
+    :goto_32
+    invoke-static/range {v56 .. v56}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 861
-    goto :goto_34
-
     .line 862
-    :cond_30
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 863
+    move-result-object v56
+
     .line 864
+    :goto_33
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
     .line 865
-    move-result v56
-
     .line 866
-    if-eqz v56, :cond_31
-
     .line 867
+    move-result v57
+
     .line 868
-    const/16 v56, 0x1
+    if-nez v57, :cond_32
 
     .line 869
     .line 870
-    goto :goto_33
+    move-object/from16 v57, v55
 
     .line 871
-    :cond_31
-    const/16 v56, 0x0
-
     .line 872
+    goto :goto_34
+
     .line 873
-    :goto_33
-    invoke-static/range {v56 .. v56}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    :cond_32
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 874
     .line 875
     .line 876
-    move-result-object v56
+    move-result v57
 
     .line 877
-    :goto_34
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    invoke-static/range {v57 .. v57}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 878
     .line 879
     .line 880
-    move-result v57
+    move-result-object v57
 
     .line 881
-    if-nez v57, :cond_32
+    :goto_34
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 882
     .line 883
-    move-object/from16 v57, v54
-
     .line 884
+    move-result v58
+
     .line 885
-    goto :goto_35
+    if-nez v58, :cond_33
 
     .line 886
-    :cond_32
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 887
+    move-object/from16 v58, v55
+
     .line 888
     .line 889
-    move-result v57
+    goto :goto_35
 
     .line 890
-    invoke-static/range {v57 .. v57}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :cond_33
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 891
     .line 892
     .line 893
-    move-result-object v57
+    move-result v58
 
     .line 894
-    :goto_35
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    invoke-static/range {v58 .. v58}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 895
     .line 896
     .line 897
-    move-result v58
+    move-result-object v58
 
     .line 898
-    if-nez v58, :cond_33
+    :goto_35
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 899
     .line 900
-    move-object/from16 v58, v54
-
     .line 901
+    move-result v59
+
     .line 902
-    goto :goto_36
+    if-nez v59, :cond_34
 
     .line 903
-    :cond_33
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 904
+    move-object/from16 v59, v55
+
     .line 905
     .line 906
-    move-result v58
+    goto :goto_36
 
     .line 907
-    invoke-static/range {v58 .. v58}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :cond_34
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 908
     .line 909
     .line 910
-    move-result-object v58
+    move-result-object v59
 
     .line 911
-    :goto_36
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    invoke-static/range {v59 .. v59}, Lsu/happ/proxyutility/dto/enums/MuxQuicType;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/MuxQuicType;
 
     .line 912
     .line 913
     .line 914
-    move-result v59
+    move-result-object v59
 
     .line 915
-    if-nez v59, :cond_34
+    :goto_36
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 916
     .line 917
-    move-object/from16 v59, v54
-
     .line 918
+    move-result v60
+
     .line 919
-    goto :goto_37
+    if-nez v60, :cond_35
 
     .line 920
-    :cond_34
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 921
+    move-object/from16 v60, v55
+
     .line 922
     .line 923
-    move-result-object v59
+    goto :goto_38
 
     .line 924
-    invoke-static/range {v59 .. v59}, Lsu/happ/proxyutility/dto/enums/MuxQuicType;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/MuxQuicType;
+    :cond_35
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 925
     .line 926
     .line 927
-    move-result-object v59
+    move-result v60
 
     .line 928
-    :goto_37
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    if-eqz v60, :cond_36
 
     .line 929
     .line 930
-    .line 931
-    move-result v60
+    move/from16 v60, v54
 
+    .line 931
     .line 932
-    if-nez v60, :cond_35
+    goto :goto_37
 
     .line 933
+    :cond_36
+    move/from16 v60, v53
+
     .line 934
-    move-object/from16 v60, v54
-
     .line 935
+    :goto_37
+    invoke-static/range {v60 .. v60}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 936
-    goto :goto_39
-
     .line 937
-    :cond_35
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 938
+    move-result-object v60
+
     .line 939
+    :goto_38
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
     .line 940
-    move-result v60
-
     .line 941
-    if-eqz v60, :cond_36
-
     .line 942
+    move-result v61
+
     .line 943
-    const/16 v60, 0x1
+    if-nez v61, :cond_37
 
     .line 944
     .line 945
-    goto :goto_38
+    move-object/from16 v61, v55
 
     .line 946
-    :cond_36
-    const/16 v60, 0x0
-
     .line 947
+    goto :goto_39
+
     .line 948
-    :goto_38
-    invoke-static/range {v60 .. v60}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    :cond_37
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 949
     .line 950
     .line 951
-    move-result-object v60
+    move-result-object v61
 
     .line 952
-    :goto_39
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    invoke-static/range {v61 .. v61}, Lsu/happ/proxyutility/dto/enums/EIpType;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/EIpType;
 
     .line 953
     .line 954
     .line 955
-    move-result v61
+    move-result-object v61
 
     .line 956
-    if-nez v61, :cond_37
+    :goto_39
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 957
     .line 958
-    move-object/from16 v61, v54
-
     .line 959
+    move-result v62
+
     .line 960
-    goto :goto_3a
+    if-nez v62, :cond_38
 
     .line 961
-    :cond_37
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 962
+    move-object/from16 v62, v55
+
     .line 963
     .line 964
-    move-result-object v61
+    goto :goto_3b
 
     .line 965
-    invoke-static/range {v61 .. v61}, Lsu/happ/proxyutility/dto/enums/EIpType;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/EIpType;
+    :cond_38
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 966
     .line 967
     .line 968
-    move-result-object v61
+    move-result v62
 
     .line 969
-    :goto_3a
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    if-eqz v62, :cond_39
 
     .line 970
     .line 971
-    .line 972
-    move-result v62
+    move/from16 v62, v54
 
+    .line 972
     .line 973
-    if-nez v62, :cond_38
+    goto :goto_3a
 
     .line 974
+    :cond_39
+    move/from16 v62, v53
+
     .line 975
-    move-object/from16 v62, v54
-
     .line 976
+    :goto_3a
+    invoke-static/range {v62 .. v62}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 977
-    goto :goto_3c
-
     .line 978
-    :cond_38
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 979
+    move-result-object v62
+
     .line 980
+    :goto_3b
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
     .line 981
-    move-result v62
-
     .line 982
-    if-eqz v62, :cond_39
-
     .line 983
+    move-result v63
+
     .line 984
-    const/16 v62, 0x1
+    if-nez v63, :cond_3a
 
     .line 985
     .line 986
-    goto :goto_3b
+    move-object/from16 v63, v55
 
     .line 987
-    :cond_39
-    const/16 v62, 0x0
-
     .line 988
-    .line 989
-    :goto_3b
-    invoke-static/range {v62 .. v62}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-object/from16 v64, v63
 
+    .line 989
     .line 990
+    :goto_3c
+    move-object/from16 v55, v58
+
     .line 991
     .line 992
-    move-result-object v62
+    move-object/from16 v58, v61
 
     .line 993
-    :goto_3c
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 994
+    goto :goto_3d
+
     .line 995
+    :cond_3a
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
     .line 996
-    move-result v63
-
     .line 997
-    if-nez v63, :cond_3a
-
     .line 998
+    move-result-object v63
+
     .line 999
-    move-object/from16 v63, v54
+    invoke-static/range {v63 .. v63}, Lbd5;->valueOf(Ljava/lang/String;)Lbd5;
 
     .line 1000
     .line 1001
-    :goto_3d
-    move-object/from16 v55, v58
-
     .line 1002
+    move-result-object v63
+
     .line 1003
-    move-object/from16 v58, v61
+    move-object/from16 v64, v55
 
     .line 1004
     .line 1005
-    const/16 v64, 0x0
+    goto :goto_3c
 
     .line 1006
+    :goto_3d
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
     .line 1007
-    goto :goto_3e
-
     .line 1008
-    :cond_3a
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 1009
-    .line 1010
-    .line 1011
-    move-result-object v63
+    move-result-object v61
 
+    .line 1010
+    move/from16 v65, v53
+
+    .line 1011
     .line 1012
-    invoke-static/range {v63 .. v63}, Lvu4;->valueOf(Ljava/lang/String;)Lvu4;
+    move-object/from16 v53, v56
 
     .line 1013
     .line 1014
-    .line 1015
-    move-result-object v63
+    move-object/from16 v56, v59
 
+    .line 1015
     .line 1016
-    goto :goto_3d
+    move-object/from16 v59, v62
 
     .line 1017
-    :goto_3e
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 1018
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
     .line 1019
     .line 1020
-    move-result-object v61
-
     .line 1021
-    move-object/from16 v37, v41
+    move-result-object v62
 
     .line 1022
-    .line 1023
-    const/16 v65, 0x1
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 1023
     .line 1024
     .line 1025
-    move-object/from16 v41, v1
+    move-result v66
 
     .line 1026
+    if-nez v66, :cond_3b
+
     .line 1027
-    move-object/from16 v1, v45
-
     .line 1028
+    move-object/from16 v66, v64
+
     .line 1029
-    move-object/from16 v45, v49
-
     .line 1030
-    .line 1031
-    move-object/from16 v49, v53
+    move-object/from16 v67, v66
 
+    .line 1031
     .line 1032
+    goto :goto_3e
+
     .line 1033
-    move-object/from16 v53, v56
+    :cond_3b
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 1034
     .line 1035
-    move-object/from16 v56, v59
-
     .line 1036
+    move-result-object v66
+
     .line 1037
-    move-object/from16 v59, v62
+    invoke-static/range {v66 .. v66}, Lsu/happ/proxyutility/dto/enums/SubInfoColor;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/SubInfoColor;
 
     .line 1038
     .line 1039
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 1040
-    .line 1041
-    .line 1042
-    move-result-object v62
+    move-result-object v66
 
+    .line 1041
+    move-object/from16 v67, v64
+
+    .line 1042
     .line 1043
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :goto_3e
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 1044
     .line 1045
     .line 1046
-    move-result v66
+    move-result-object v64
 
     .line 1047
-    if-nez v66, :cond_3b
+    move/from16 v68, v65
 
     .line 1048
     .line 1049
-    move-object/from16 v66, v54
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 1050
     .line 1051
-    :goto_3f
-    const/16 v67, 0x0
-
     .line 1052
+    move-result-object v65
+
     .line 1053
-    goto :goto_40
+    move/from16 v69, v54
 
     .line 1054
-    :cond_3b
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 1055
+    move-object/from16 v54, v57
+
     .line 1056
     .line 1057
-    move-result-object v66
+    move-object/from16 v57, v60
 
     .line 1058
-    invoke-static/range {v66 .. v66}, Lsu/happ/proxyutility/dto/enums/SubInfoColor;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/SubInfoColor;
-
     .line 1059
+    move-object/from16 v60, v63
+
     .line 1060
     .line 1061
-    move-result-object v66
+    move-object/from16 v63, v66
 
     .line 1062
-    goto :goto_3f
-
     .line 1063
-    :goto_40
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 1064
     .line 1065
     .line 1066
-    move-result-object v64
+    move-result-object v66
 
     .line 1067
-    const/16 v68, 0x1
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1068
     .line 1069
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 1070
-    .line 1071
-    .line 1072
-    move-result-object v65
+    move-result v70
 
+    .line 1071
+    if-nez v70, :cond_3c
+
+    .line 1072
     .line 1073
-    move-object/from16 v69, v54
+    move-object/from16 v70, v67
 
     .line 1074
     .line 1075
-    move-object/from16 v54, v57
+    :goto_3f
+    move/from16 v71, v68
 
     .line 1076
     .line 1077
-    move-object/from16 v57, v60
+    goto :goto_41
 
     .line 1078
-    .line 1079
-    move-object/from16 v60, v63
+    :cond_3c
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 1079
     .line 1080
     .line 1081
-    move-object/from16 v63, v66
+    move-result v70
 
     .line 1082
-    .line 1083
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    if-eqz v70, :cond_3d
 
+    .line 1083
     .line 1084
+    move/from16 v70, v69
+
     .line 1085
     .line 1086
-    move-result-object v66
+    goto :goto_40
 
     .line 1087
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :cond_3d
+    move/from16 v70, v68
 
     .line 1088
     .line 1089
+    :goto_40
+    invoke-static/range {v70 .. v70}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 1090
-    move-result v70
-
     .line 1091
-    if-nez v70, :cond_3c
-
     .line 1092
+    move-result-object v70
+
     .line 1093
-    move-object/from16 v70, v69
+    goto :goto_3f
 
     .line 1094
-    .line 1095
     :goto_41
-    const/16 v71, 0x1
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
+    .line 1095
     .line 1096
     .line 1097
-    goto :goto_43
+    move-result-object v68
 
     .line 1098
-    :cond_3c
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1099
     .line 1100
     .line 1101
-    move-result v70
+    move-result v72
 
     .line 1102
-    if-eqz v70, :cond_3d
+    if-nez v72, :cond_3e
 
     .line 1103
     .line 1104
-    const/16 v70, 0x1
+    move-object/from16 v72, v67
 
     .line 1105
     .line 1106
-    goto :goto_42
+    goto :goto_43
 
     .line 1107
-    :cond_3d
-    const/16 v70, 0x0
+    :cond_3e
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1108
     .line 1109
-    :goto_42
-    invoke-static/range {v70 .. v70}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 1110
-    .line 1111
-    .line 1112
-    move-result-object v70
+    move-result v72
 
+    .line 1111
+    if-eqz v72, :cond_3f
+
+    .line 1112
     .line 1113
-    goto :goto_41
+    move/from16 v72, v69
 
     .line 1114
-    :goto_43
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 1115
-    .line 1116
-    .line 1117
-    move-result-object v68
+    goto :goto_42
 
+    .line 1116
+    :cond_3f
+    move/from16 v72, v71
+
+    .line 1117
     .line 1118
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :goto_42
+    invoke-static/range {v72 .. v72}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 1119
     .line 1120
     .line 1121
-    move-result v72
+    move-result-object v72
 
     .line 1122
-    if-nez v72, :cond_3e
+    :goto_43
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1123
     .line 1124
-    move-object/from16 v72, v69
-
     .line 1125
+    move-result v73
+
     .line 1126
-    goto :goto_45
+    if-nez v73, :cond_40
 
     .line 1127
-    :cond_3e
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 1128
+    move-object/from16 v73, v67
+
     .line 1129
     .line 1130
-    move-result v72
+    goto :goto_45
 
     .line 1131
-    if-eqz v72, :cond_3f
+    :cond_40
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1132
     .line 1133
-    const/16 v72, 0x1
-
     .line 1134
+    move-result v73
+
     .line 1135
-    goto :goto_44
+    if-eqz v73, :cond_41
 
     .line 1136
-    :cond_3f
-    const/16 v72, 0x0
-
     .line 1137
+    move/from16 v73, v69
+
     .line 1138
-    :goto_44
-    invoke-static/range {v72 .. v72}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 1139
-    .line 1140
-    .line 1141
-    move-result-object v72
+    goto :goto_44
 
+    .line 1140
+    :cond_41
+    move/from16 v73, v71
+
+    .line 1141
     .line 1142
-    :goto_45
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :goto_44
+    invoke-static/range {v73 .. v73}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 1143
     .line 1144
     .line 1145
-    move-result v73
+    move-result-object v73
 
     .line 1146
-    if-nez v73, :cond_40
+    :goto_45
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1147
     .line 1148
-    move-object/from16 v73, v69
-
     .line 1149
+    move-result v74
+
     .line 1150
-    goto :goto_47
+    if-nez v74, :cond_42
 
     .line 1151
-    :cond_40
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 1152
+    move-object/from16 v74, v67
+
     .line 1153
     .line 1154
-    move-result v73
+    goto :goto_47
 
     .line 1155
-    if-eqz v73, :cond_41
+    :cond_42
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1156
     .line 1157
-    const/16 v73, 0x1
-
     .line 1158
+    move-result v74
+
     .line 1159
-    goto :goto_46
+    if-eqz v74, :cond_43
 
     .line 1160
-    :cond_41
-    const/16 v73, 0x0
-
     .line 1161
+    move/from16 v74, v69
+
     .line 1162
-    :goto_46
-    invoke-static/range {v73 .. v73}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 1163
-    .line 1164
-    .line 1165
-    move-result-object v73
+    goto :goto_46
 
+    .line 1164
+    :cond_43
+    move/from16 v74, v71
+
+    .line 1165
     .line 1166
-    :goto_47
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :goto_46
+    invoke-static/range {v74 .. v74}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 1167
     .line 1168
     .line 1169
-    move-result v74
+    move-result-object v74
 
     .line 1170
-    if-nez v74, :cond_42
+    :goto_47
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1171
     .line 1172
-    move-object/from16 v74, v69
-
     .line 1173
+    move-result v75
+
     .line 1174
-    goto :goto_49
+    if-nez v75, :cond_44
 
     .line 1175
-    :cond_42
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 1176
+    move-object/from16 v75, v67
+
     .line 1177
     .line 1178
-    move-result v74
+    goto :goto_49
 
     .line 1179
-    if-eqz v74, :cond_43
+    :cond_44
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1180
     .line 1181
-    const/16 v74, 0x1
-
     .line 1182
+    move-result v75
+
     .line 1183
-    goto :goto_48
+    if-eqz v75, :cond_45
 
     .line 1184
-    :cond_43
-    const/16 v74, 0x0
-
     .line 1185
+    move/from16 v75, v69
+
     .line 1186
-    :goto_48
-    invoke-static/range {v74 .. v74}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 1187
-    .line 1188
-    .line 1189
-    move-result-object v74
+    goto :goto_48
 
+    .line 1188
+    :cond_45
+    move/from16 v75, v71
+
+    .line 1189
     .line 1190
-    :goto_49
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :goto_48
+    invoke-static/range {v75 .. v75}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 1191
     .line 1192
     .line 1193
-    move-result v75
+    move-result-object v75
 
     .line 1194
-    if-nez v75, :cond_44
+    :goto_49
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1195
     .line 1196
-    move-object/from16 v75, v69
-
     .line 1197
+    move-result v76
+
     .line 1198
-    goto :goto_4b
+    if-nez v76, :cond_46
 
     .line 1199
-    :cond_44
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 1200
+    move-object/from16 v76, v67
+
     .line 1201
     .line 1202
-    move-result v75
+    goto :goto_4a
 
     .line 1203
-    if-eqz v75, :cond_45
+    :cond_46
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 1204
     .line 1205
-    const/16 v75, 0x1
-
     .line 1206
+    move-result-object v76
+
     .line 1207
-    goto :goto_4a
+    invoke-static/range {v76 .. v76}, Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;
 
     .line 1208
-    :cond_45
-    const/16 v75, 0x0
-
     .line 1209
     .line 1210
-    :goto_4a
-    invoke-static/range {v75 .. v75}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-result-object v76
 
     .line 1211
+    :goto_4a
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
     .line 1212
     .line 1213
-    move-result-object v75
-
     .line 1214
-    :goto_4b
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    move-result v77
 
     .line 1215
+    if-nez v77, :cond_47
+
     .line 1216
     .line 1217
-    move-result v76
+    move-object/from16 v77, v67
 
     .line 1218
-    if-nez v76, :cond_46
-
     .line 1219
+    goto :goto_4c
+
     .line 1220
-    move-object/from16 v76, v69
+    :cond_47
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1221
     .line 1222
-    goto :goto_4c
-
     .line 1223
-    :cond_46
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    move-result v77
 
     .line 1224
+    if-eqz v77, :cond_48
+
     .line 1225
     .line 1226
-    move-result-object v76
+    move/from16 v77, v69
 
     .line 1227
-    invoke-static/range {v76 .. v76}, Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;
-
     .line 1228
-    .line 1229
-    .line 1230
-    move-result-object v76
+    goto :goto_4b
 
+    .line 1229
+    :cond_48
+    move/from16 v77, v71
+
+    .line 1230
     .line 1231
-    :goto_4c
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :goto_4b
+    invoke-static/range {v77 .. v77}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 1232
     .line 1233
     .line 1234
-    move-result v77
+    move-result-object v77
 
     .line 1235
-    if-nez v77, :cond_47
+    :goto_4c
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1236
     .line 1237
-    move-object/from16 v77, v69
-
     .line 1238
+    move-result v78
+
     .line 1239
-    goto :goto_4e
+    if-nez v78, :cond_49
 
     .line 1240
-    :cond_47
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 1241
+    move-object/from16 v78, v67
+
     .line 1242
     .line 1243
-    move-result v77
+    move-object/from16 v79, v78
 
     .line 1244
-    if-eqz v77, :cond_48
-
     .line 1245
+    :goto_4d
+    move-object/from16 v67, v70
+
     .line 1246
-    const/16 v77, 0x1
-
     .line 1247
-    .line 1248
-    goto :goto_4d
+    move-object/from16 v70, v73
 
+    .line 1248
     .line 1249
-    :cond_48
-    const/16 v77, 0x0
+    move-object/from16 v73, v76
 
     .line 1250
     .line 1251
-    :goto_4d
-    invoke-static/range {v77 .. v77}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    goto :goto_4e
 
     .line 1252
+    :cond_49
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
     .line 1253
     .line 1254
-    move-result-object v77
-
     .line 1255
-    :goto_4e
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    move-result-object v78
 
     .line 1256
+    invoke-static/range {v78 .. v78}, Lsu/happ/proxyutility/dto/enums/InboundAuthMode;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/InboundAuthMode;
+
     .line 1257
     .line 1258
-    move-result v78
-
     .line 1259
-    if-nez v78, :cond_49
+    move-result-object v78
 
     .line 1260
-    .line 1261
-    move-object/from16 v78, v69
+    move-object/from16 v79, v67
 
+    .line 1261
     .line 1262
+    goto :goto_4d
+
     .line 1263
-    :goto_4f
-    move-object/from16 v67, v70
+    :goto_4e
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 1264
     .line 1265
-    move-object/from16 v70, v73
-
     .line 1266
+    move-result-object v76
+
     .line 1267
-    move-object/from16 v73, v76
+    move/from16 v80, v71
 
     .line 1268
     .line 1269
-    const/16 v79, 0x0
+    move-object/from16 v71, v74
 
     .line 1270
     .line 1271
-    goto :goto_50
+    move-object/from16 v74, v77
 
     .line 1272
-    :cond_49
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 1273
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
     .line 1274
     .line 1275
-    move-result-object v78
-
     .line 1276
-    invoke-static/range {v78 .. v78}, Lsu/happ/proxyutility/dto/enums/InboundAuthMode;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/InboundAuthMode;
+    move-result-object v77
 
     .line 1277
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
     .line 1278
     .line 1279
-    move-result-object v78
-
     .line 1280
-    goto :goto_4f
+    move-result v81
 
     .line 1281
-    :goto_50
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    if-nez v81, :cond_4a
 
     .line 1282
     .line 1283
-    .line 1284
-    move-result-object v76
+    move-object/from16 v81, v79
 
+    .line 1284
     .line 1285
-    move-object/from16 v71, v74
+    goto :goto_50
 
     .line 1286
-    .line 1287
-    move-object/from16 v74, v77
+    :cond_4a
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
+    .line 1287
     .line 1288
     .line 1289
-    const/16 v80, 0x1
+    move-result v81
 
     .line 1290
-    .line 1291
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    if-eqz v81, :cond_4b
 
+    .line 1291
     .line 1292
+    move/from16 v81, v69
+
     .line 1293
     .line 1294
-    move-result-object v77
+    goto :goto_4f
 
     .line 1295
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :cond_4b
+    move/from16 v81, v80
 
     .line 1296
     .line 1297
+    :goto_4f
+    invoke-static/range {v81 .. v81}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 1298
-    move-result v81
-
     .line 1299
-    if-nez v81, :cond_4a
-
     .line 1300
+    move-result-object v81
+
     .line 1301
-    move-object/from16 v81, v69
+    :goto_50
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1302
     .line 1303
-    goto :goto_52
-
     .line 1304
-    :cond_4a
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
-    .line 1305
-    .line 1306
-    .line 1307
-    move-result v81
-
-    .line 1308
-    if-eqz v81, :cond_4b
-
-    .line 1309
-    .line 1310
-    const/16 v81, 0x1
-
-    .line 1311
-    .line 1312
-    goto :goto_51
-
-    .line 1313
-    :cond_4b
-    const/16 v81, 0x0
-
-    .line 1314
-    .line 1315
-    :goto_51
-    invoke-static/range {v81 .. v81}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 1316
-    .line 1317
-    .line 1318
-    move-result-object v81
-
-    .line 1319
-    :goto_52
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
-    .line 1320
-    .line 1321
-    .line 1322
     move-result v82
 
-    .line 1323
+    .line 1305
     if-nez v82, :cond_4c
 
+    .line 1306
+    .line 1307
+    move-object/from16 v82, v79
+
+    .line 1308
+    .line 1309
+    :goto_51
+    move/from16 v83, v80
+
+    .line 1310
+    .line 1311
+    goto :goto_52
+
+    .line 1312
+    :cond_4c
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 1313
+    .line 1314
+    .line 1315
+    move-result-object v82
+
+    .line 1316
+    invoke-static/range {v82 .. v82}, Lsu/happ/proxyutility/dto/enums/InboundAuthMode;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/InboundAuthMode;
+
+    .line 1317
+    .line 1318
+    .line 1319
+    move-result-object v82
+
+    .line 1320
+    goto :goto_51
+
+    .line 1321
+    :goto_52
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 1322
+    .line 1323
     .line 1324
+    move-result-object v80
+
     .line 1325
-    move-object/from16 v82, v69
+    move/from16 v84, v69
 
     .line 1326
     .line 1327
-    :goto_53
-    const/16 v83, 0x1
+    move-object/from16 v69, v72
 
     .line 1328
     .line 1329
-    goto :goto_54
+    move-object/from16 v72, v75
 
     .line 1330
-    :cond_4c
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
     .line 1331
+    move-object/from16 v75, v78
+
     .line 1332
     .line 1333
-    move-result-object v82
+    move-object/from16 v78, v81
 
     .line 1334
-    invoke-static/range {v82 .. v82}, Lsu/happ/proxyutility/dto/enums/InboundAuthMode;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/InboundAuthMode;
-
     .line 1335
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
     .line 1336
     .line 1337
-    move-result-object v82
-
     .line 1338
-    goto :goto_53
+    move-result-object v81
 
     .line 1339
-    :goto_54
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1340
     .line 1341
     .line 1342
-    move-result-object v80
+    move-result v85
 
     .line 1343
-    move-object/from16 v84, v69
+    if-nez v85, :cond_4d
 
     .line 1344
     .line 1345
-    move-object/from16 v69, v72
+    move-object/from16 v85, v79
 
     .line 1346
     .line 1347
-    move-object/from16 v72, v75
+    goto :goto_53
 
     .line 1348
-    .line 1349
-    move-object/from16 v75, v78
+    :cond_4d
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
+    .line 1349
     .line 1350
     .line 1351
-    move-object/from16 v78, v81
+    move-result-object v85
 
     .line 1352
-    .line 1353
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    .line 1354
-    .line 1355
-    .line 1356
-    move-result-object v81
-
-    .line 1357
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
-    .line 1358
-    .line 1359
-    .line 1360
-    move-result v85
-
-    .line 1361
-    if-nez v85, :cond_4d
-
-    .line 1362
-    .line 1363
-    move-object/from16 v85, v84
-
-    .line 1364
-    .line 1365
-    goto :goto_55
-
-    .line 1366
-    :cond_4d
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    .line 1367
-    .line 1368
-    .line 1369
-    move-result-object v85
-
-    .line 1370
     invoke-static/range {v85 .. v85}, Lsu/happ/proxyutility/dto/enums/GeoUserAgent;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/GeoUserAgent;
 
-    .line 1371
-    .line 1372
-    .line 1373
+    .line 1353
+    .line 1354
+    .line 1355
     move-result-object v85
 
-    .line 1374
-    :goto_55
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    .line 1356
+    :goto_53
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 1375
-    .line 1376
-    .line 1377
+    .line 1357
+    .line 1358
+    .line 1359
     move-result v86
 
-    .line 1378
+    .line 1360
     if-nez v86, :cond_4e
 
-    .line 1379
-    .line 1380
-    move-object/from16 v86, v84
+    .line 1361
+    .line 1362
+    move-object/from16 v86, v79
 
-    .line 1381
-    .line 1382
-    goto :goto_56
+    .line 1363
+    .line 1364
+    goto :goto_54
 
-    .line 1383
+    .line 1365
     :cond_4e
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
-    .line 1384
-    .line 1385
-    .line 1386
+    .line 1366
+    .line 1367
+    .line 1368
     move-result v86
 
-    .line 1387
+    .line 1369
     invoke-static/range {v86 .. v86}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 1388
-    .line 1389
-    .line 1390
+    .line 1370
+    .line 1371
+    .line 1372
     move-result-object v86
 
+    .line 1373
+    :goto_54
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
+    .line 1374
+    .line 1375
+    .line 1376
+    move-result v87
+
+    .line 1377
+    if-nez v87, :cond_4f
+
+    .line 1378
+    .line 1379
+    move-object/from16 v87, v79
+
+    .line 1380
+    .line 1381
+    goto :goto_56
+
+    .line 1382
+    :cond_4f
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
+    .line 1383
+    .line 1384
+    .line 1385
+    move-result v87
+
+    .line 1386
+    if-eqz v87, :cond_50
+
+    .line 1387
+    .line 1388
+    move/from16 v87, v84
+
+    .line 1389
+    .line 1390
+    goto :goto_55
+
     .line 1391
-    :goto_56
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :cond_50
+    move/from16 v87, v83
 
     .line 1392
     .line 1393
+    :goto_55
+    invoke-static/range {v87 .. v87}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 1394
-    move-result v87
-
     .line 1395
-    if-nez v87, :cond_4f
-
     .line 1396
+    move-result-object v87
+
     .line 1397
-    move-object/from16 v87, v84
+    :goto_56
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1398
     .line 1399
-    goto :goto_58
-
     .line 1400
-    :cond_4f
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    move-result v88
 
     .line 1401
+    if-nez v88, :cond_51
+
     .line 1402
     .line 1403
-    move-result v87
+    move-object/from16 v88, v79
 
     .line 1404
-    if-eqz v87, :cond_50
-
     .line 1405
+    goto :goto_57
+
     .line 1406
-    const/16 v87, 0x1
+    :cond_51
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1407
     .line 1408
-    goto :goto_57
-
     .line 1409
-    :cond_50
-    const/16 v87, 0x0
+    move-result v88
 
     .line 1410
-    .line 1411
-    :goto_57
-    invoke-static/range {v87 .. v87}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 1412
-    .line 1413
-    .line 1414
-    move-result-object v87
-
-    .line 1415
-    :goto_58
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
-    .line 1416
-    .line 1417
-    .line 1418
-    move-result v88
-
-    .line 1419
-    if-nez v88, :cond_51
-
-    .line 1420
-    .line 1421
-    move-object/from16 v88, v84
-
-    .line 1422
-    .line 1423
-    goto :goto_59
-
-    .line 1424
-    :cond_51
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
-    .line 1425
-    .line 1426
-    .line 1427
-    move-result v88
-
-    .line 1428
     invoke-static/range {v88 .. v88}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 1429
-    .line 1430
-    .line 1431
+    .line 1411
+    .line 1412
+    .line 1413
     move-result-object v88
 
+    .line 1414
+    :goto_57
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
+    .line 1415
+    .line 1416
+    .line 1417
+    move-result v89
+
+    .line 1418
+    if-nez v89, :cond_52
+
+    .line 1419
+    .line 1420
+    move-object/from16 v89, v79
+
+    .line 1421
+    .line 1422
+    goto :goto_59
+
+    .line 1423
+    :cond_52
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
+    .line 1424
+    .line 1425
+    .line 1426
+    move-result v89
+
+    .line 1427
+    if-eqz v89, :cond_53
+
+    .line 1428
+    .line 1429
+    move/from16 v89, v84
+
+    .line 1430
+    .line 1431
+    goto :goto_58
+
     .line 1432
-    :goto_59
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    :cond_53
+    move/from16 v89, v83
 
     .line 1433
     .line 1434
+    :goto_58
+    invoke-static/range {v89 .. v89}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 1435
-    move-result v89
-
     .line 1436
-    if-nez v89, :cond_52
-
     .line 1437
+    move-result-object v89
+
     .line 1438
-    move-object/from16 v89, v84
+    :goto_59
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1439
     .line 1440
-    goto :goto_5b
-
     .line 1441
-    :cond_52
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    move-result v90
 
     .line 1442
+    if-nez v90, :cond_54
+
     .line 1443
     .line 1444
-    move-result v89
+    move-object/from16 v90, v79
 
     .line 1445
-    if-eqz v89, :cond_53
-
     .line 1446
+    goto :goto_5a
+
     .line 1447
-    const/16 v89, 0x1
+    :cond_54
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 1448
     .line 1449
-    goto :goto_5a
-
     .line 1450
-    :cond_53
-    const/16 v89, 0x0
+    move-result-object v90
 
     .line 1451
-    .line 1452
-    :goto_5a
-    invoke-static/range {v89 .. v89}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static/range {v90 .. v90}, Lsu/happ/proxyutility/dto/enums/GoPingType;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/GoPingType;
 
+    .line 1452
     .line 1453
     .line 1454
+    move-result-object v90
+
     .line 1455
-    move-result-object v89
+    :goto_5a
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1456
-    :goto_5b
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
-
     .line 1457
     .line 1458
+    move-result v91
+
     .line 1459
-    move-result v90
+    if-nez v91, :cond_55
 
     .line 1460
-    if-nez v90, :cond_54
-
     .line 1461
+    move-object/from16 v91, v79
+
     .line 1462
-    move-object/from16 v90, v84
-
     .line 1463
+    :goto_5b
+    move/from16 v92, v83
+
     .line 1464
-    :goto_5c
-    move-object/from16 v79, v82
-
     .line 1465
+    move-object/from16 v83, v86
+
     .line 1466
-    move-object/from16 v82, v85
-
     .line 1467
-    .line 1468
-    move-object/from16 v85, v88
+    move-object/from16 v86, v89
 
+    .line 1468
     .line 1469
+    goto :goto_5c
+
     .line 1470
-    const/16 v91, 0x0
+    :cond_55
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
 
     .line 1471
     .line 1472
-    goto :goto_5d
-
     .line 1473
-    :cond_54
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    move-result v91
 
     .line 1474
+    invoke-static/range {v91 .. v91}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 1475
     .line 1476
-    move-result-object v90
-
     .line 1477
-    invoke-static/range {v90 .. v90}, Lsu/happ/proxyutility/dto/enums/GoPingType;->valueOf(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/GoPingType;
+    move-result-object v91
 
     .line 1478
+    goto :goto_5b
+
     .line 1479
+    :goto_5c
+    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
     .line 1480
-    move-result-object v90
-
     .line 1481
-    goto :goto_5c
-
     .line 1482
-    :goto_5d
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    move-result-object v89
 
     .line 1483
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
     .line 1484
     .line 1485
-    move-result-object v88
-
     .line 1486
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    move-result v93
 
     .line 1487
+    if-nez v93, :cond_56
+
     .line 1488
     .line 1489
-    move-result v92
-
-    .line 1490
-    if-nez v92, :cond_55
-
-    .line 1491
-    .line 1492
-    move-object/from16 v83, v86
-
-    .line 1493
-    .line 1494
-    move-object/from16 v86, v89
-
-    .line 1495
-    .line 1496
-    move-object/from16 v89, v84
-
-    .line 1497
-    .line 1498
-    :goto_5e
     move-object/from16 v84, v87
 
-    .line 1499
-    .line 1500
+    .line 1490
+    .line 1491
     move-object/from16 v87, v90
 
-    .line 1501
-    .line 1502
-    goto :goto_60
+    .line 1492
+    .line 1493
+    move-object/from16 v90, v79
 
+    .line 1494
+    .line 1495
+    move-object/from16 v0, v35
+
+    .line 1496
+    .line 1497
+    move-object/from16 v35, v38
+
+    .line 1498
+    .line 1499
+    move-object/from16 v38, v41
+
+    .line 1500
+    .line 1501
+    move-object/from16 v41, v1
+
+    .line 1502
     .line 1503
-    :cond_55
-    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+    move-object/from16 v79, v82
 
     .line 1504
     .line 1505
-    .line 1506
-    move-result v84
+    move-object/from16 v82, v85
 
+    .line 1506
     .line 1507
-    if-eqz v84, :cond_56
+    move-object/from16 v85, v88
 
     .line 1508
     .line 1509
-    goto :goto_5f
+    move-object/from16 v88, v91
 
     .line 1510
-    :cond_56
-    const/16 v83, 0x0
-
     .line 1511
+    :goto_5d
+    move-object/from16 v1, p0
+
     .line 1512
-    :goto_5f
-    invoke-static/range {v83 .. v83}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 1513
+    goto :goto_5f
+
     .line 1514
+    :cond_56
+    invoke-virtual {v0}, Landroid/os/Parcel;->readInt()I
+
     .line 1515
-    move-result-object v83
-
     .line 1516
-    move-object/from16 v84, v89
-
     .line 1517
+    move-result v0
+
     .line 1518
-    move-object/from16 v89, v83
+    if-eqz v0, :cond_57
 
     .line 1519
     .line 1520
-    move-object/from16 v83, v86
-
-    .line 1521
-    .line 1522
-    move-object/from16 v86, v84
-
-    .line 1523
-    .line 1524
     goto :goto_5e
 
-    .line 1525
-    :goto_60
-    invoke-direct/range {v0 .. v89}, Lsu/happ/proxyutility/dto/MetaParams;-><init>(Ljava/lang/String;Ljava/lang/Integer;Lsu/happ/proxyutility/dto/SubscriptionUserInfo;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;Ljava/lang/Boolean;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/FragmentationPackets;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/FragmentationType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/NoisesPacketType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/EPingType;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lkr4;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Lsu/happ/proxyutility/dto/enums/MuxQuicType;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/EIpType;Ljava/lang/Boolean;Lvu4;Ljava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/SubInfoColor;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/InboundAuthMode;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/InboundAuthMode;Ljava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/GeoUserAgent;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/GoPingType;Ljava/lang/String;Ljava/lang/Boolean;)V
+    .line 1521
+    :cond_57
+    move/from16 v84, v92
 
+    .line 1522
+    .line 1523
+    :goto_5e
+    invoke-static/range {v84 .. v84}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 1524
+    .line 1525
     .line 1526
+    move-result-object v0
+
     .line 1527
+    move-object/from16 v84, v87
+
     .line 1528
+    .line 1529
+    move-object/from16 v87, v90
+
+    .line 1530
+    .line 1531
+    move-object/from16 v90, v0
+
+    .line 1532
+    .line 1533
+    move-object/from16 v79, v82
+
+    .line 1534
+    .line 1535
+    move-object/from16 v82, v85
+
+    .line 1536
+    .line 1537
+    move-object/from16 v85, v88
+
+    .line 1538
+    .line 1539
+    move-object/from16 v88, v91
+
+    .line 1540
+    .line 1541
+    move-object/from16 v0, v35
+
+    .line 1542
+    .line 1543
+    move-object/from16 v35, v38
+
+    .line 1544
+    .line 1545
+    move-object/from16 v38, v41
+
+    .line 1546
+    .line 1547
+    move-object/from16 v41, v1
+
+    .line 1548
+    .line 1549
+    goto :goto_5d
+
+    .line 1550
+    :goto_5f
+    invoke-direct/range {v0 .. v90}, Lsu/happ/proxyutility/dto/MetaParams;-><init>(Ljava/lang/String;Ljava/lang/Integer;Lsu/happ/proxyutility/dto/SubscriptionUserInfo;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;Ljava/lang/Boolean;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/FragmentationPackets;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/FragmentationType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/NoisesPacketType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/EPingType;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lp95;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Lsu/happ/proxyutility/dto/enums/MuxQuicType;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/EIpType;Ljava/lang/Boolean;Lbd5;Ljava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/SubInfoColor;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/InboundAuthMode;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/InboundAuthMode;Ljava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/GeoUserAgent;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Boolean;Lsu/happ/proxyutility/dto/enums/GoPingType;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Boolean;)V
+
+    .line 1551
+    .line 1552
+    .line 1553
     return-object v0
 .end method
 
@@ -3403,9 +3452,9 @@
     .locals 0
 
     .line 1
-    new-array p1, p1, [Lsu/happ/proxyutility/dto/MetaParams;
+    new-array p0, p1, [Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 2
     .line 3
-    return-object p1
+    return-object p0
 .end method

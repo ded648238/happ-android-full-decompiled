@@ -1,23 +1,18 @@
-.class public interface abstract Ltb0;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class final Ltb0;
+.super Ljava/lang/Throwable;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
-.method public abstract a()Law6;
-.end method
+.method public final declared-synchronized fillInStackTrace()Ljava/lang/Throwable;
+    .locals 0
 
-.method public abstract d()Lsb0;
-.end method
+    .line 1
+    monitor-enter p0
 
-.method public abstract getTimestamp()J
-.end method
+    .line 2
+    monitor-exit p0
 
-.method public abstract i()Lqb0;
-.end method
-
-.method public abstract k()Landroid/hardware/camera2/CaptureResult;
-.end method
-
-.method public abstract n()Lrb0;
+    .line 3
+    return-object p0
 .end method

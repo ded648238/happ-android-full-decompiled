@@ -1,23 +1,11 @@
 package defpackage;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class y33 {
+    public static final wy0 a = new wy0(new uq2(20));
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Retention(RetentionPolicy.RUNTIME)
-public @interface y33 {
-    Class defaultImpl() default y33.class;
-
-    u33 include() default u33.Q;
-
-    String property() default "";
-
-    vk4 requireTypeIdForSubtypes() default vk4.R;
-
-    v33 use();
-
-    boolean visible() default false;
-
-    vk4 writeTypeIdForDefaultImpl() default vk4.R;
+    public static final dn4 a(dn4 dn4Var, rp4 rp4Var, b43 b43Var) {
+        return b43Var == null ? dn4Var : dn4Var.x(new z33(rp4Var, b43Var));
+    }
 }

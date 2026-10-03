@@ -1,226 +1,173 @@
 .class public final Lbj6;
-.super Lkr;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic X:I
+
+.field public final Y:Ljava/lang/Runnable;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(ILjava/lang/Runnable;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    iput p1, p0, Lbj6;->X:I
 
     .line 2
     .line 3
-    invoke-static {v0}, Lfj6;->a(Ljava/lang/Class;)V
+    iput-object p2, p0, Lbj6;->Y:Ljava/lang/Runnable;
 
     .line 4
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Lb66;Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 1
-    check-cast p2, [I
-
-    .line 2
-    .line 3
-    array-length p1, p2
-
-    .line 4
-    if-nez p1, :cond_0
-
-    .line 5
-    .line 6
-    const/4 p1, 0x1
-
-    .line 7
-    return p1
-
-    .line 8
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 9
-    return p1
-.end method
-
-.method public final e(Ljava/lang/Object;Lr03;Lb66;)V
-    .locals 3
-
-    .line 1
-    check-cast p1, [I
-
-    .line 2
-    .line 3
-    array-length v0, p1
-
-    .line 4
-    const/4 v1, 0x1
-
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    if-ne v0, v1, :cond_1
-
-    .line 7
-    .line 8
-    invoke-virtual {p0, p3}, Lkr;->p(Lb66;)Z
-
-    .line 9
-    .line 10
-    .line 11
-    move-result p3
-
-    .line 12
-    if-eqz p3, :cond_1
-
-    .line 13
-    .line 14
-    array-length p3, p1
-
-    .line 15
-    :goto_0
-    if-ge v2, p3, :cond_0
-
-    .line 16
-    .line 17
-    aget v0, p1, v2
-
-    .line 18
-    .line 19
-    invoke-virtual {p2, v0}, Lr03;->k0(I)V
-
-    .line 20
-    .line 21
-    .line 22
-    add-int/lit8 v2, v2, 0x1
-
-    .line 23
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_0
-    return-void
-
-    .line 26
-    :cond_1
-    array-length p3, p1
-
-    .line 27
-    array-length v0, p1
-
-    .line 28
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-static {v0, p3}, Lr03;->h(II)V
-
-    .line 32
-    .line 33
-    .line 34
-    invoke-virtual {p2, p1}, Lr03;->I0(Ljava/lang/Object;)V
-
-    .line 35
-    .line 36
-    .line 37
-    :goto_1
-    if-ge v2, p3, :cond_2
-
-    .line 38
-    .line 39
-    aget v0, p1, v2
-
-    .line 40
-    .line 41
-    invoke-virtual {p2, v0}, Lr03;->k0(I)V
-
-    .line 42
-    .line 43
-    .line 44
-    add-int/lit8 v2, v2, 0x1
-
-    .line 45
-    .line 46
-    goto :goto_1
-
-    .line 47
-    :cond_2
-    invoke-virtual {p2}, Lr03;->C()V
-
-    .line 48
-    .line 49
-    .line 50
-    return-void
-.end method
-
-.method public final o(Lwc7;)Lou0;
-    .locals 0
-
-    .line 1
-    return-object p0
-.end method
-
-.method public final q(Lj10;Ljava/lang/Boolean;)La33;
+.method public final run()V
     .locals 1
 
     .line 1
-    new-instance v0, Lbj6;
+    iget v0, p0, Lbj6;->X:I
 
     .line 2
     .line 3
-    invoke-direct {v0, p0, p1, p2}, Lkr;-><init>(Lkr;Lj10;Ljava/lang/Boolean;)V
+    iget-object p0, p0, Lbj6;->Y:Ljava/lang/Runnable;
 
     .line 4
     .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public final r(Ljava/lang/Object;Lr03;Lb66;)V
-    .locals 2
-
-    .line 1
-    check-cast p1, [I
-
-    .line 2
-    .line 3
-    array-length p3, p1
-
-    .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    :goto_0
-    if-ge v0, p3, :cond_0
+    packed-switch v0, :pswitch_data_0
 
     .line 6
     .line 7
-    aget v1, p1, v0
-
     .line 8
+    const/4 v0, 0x0
+
     .line 9
-    invoke-virtual {p2, v1}, Lr03;->k0(I)V
+    invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
 
     .line 10
     .line 11
     .line 12
-    add-int/lit8 v0, v0, 0x1
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
 
     .line 13
     .line 14
+    .line 15
+    return-void
+
+    .line 16
+    :pswitch_0
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+
+    .line 20
+    :pswitch_1
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+
+    .line 24
+    :pswitch_2
+    :try_start_0
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 25
+    .line 26
+    .line 27
     goto :goto_0
 
-    .line 15
-    :cond_0
+    .line 28
+    :catch_0
+    const-string p0, "Executor"
+
+    .line 29
+    .line 30
+    invoke-static {p0}, Lq48;->J(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 31
+    .line 32
+    .line 33
+    :goto_0
     return-void
+
+    .line 34
+    nop
+
+    .line 35
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lbj6;->X:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
+
+    .line 11
+    :pswitch_0
+    iget-object p0, p0, Lbj6;->Y:Ljava/lang/Runnable;
+
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
+
+    .line 18
+    nop
+
+    .line 19
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method

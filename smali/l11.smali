@@ -1,22 +1,29 @@
 .class public final Ll11;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ln11;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# virtual methods
-.method public final serializer()Lq83;
+# static fields
+.field public static final a:Ll11;
+
+
+# direct methods
+.method static constructor <clinit>()V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lq83;"
-        }
-    .end annotation
 
     .line 1
-    sget-object v0, Lv11;->a:Lv11;
+    new-instance v0, Ll11;
 
     .line 2
     .line 3
-    return-object v0
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Ll11;->a:Ll11;
+
+    .line 7
+    .line 8
+    return-void
 .end method

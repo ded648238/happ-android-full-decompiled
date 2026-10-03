@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/FillElement;
-.super Lm64;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lm64;"
+        "Ljn4;"
     }
 .end annotation
 
@@ -16,8 +16,8 @@
     }
     d2 = {
         "Landroidx/compose/foundation/layout/FillElement;",
-        "Lm64;",
-        "Lyv1;",
+        "Ljn4;",
+        "Lv52;",
         "foundation-layout"
     }
     k = 0x1
@@ -31,11 +31,11 @@
 
 
 # instance fields
-.field public final Q:Lae1;
+.field public final X:Lvl1;
 
 
 # direct methods
-.method public constructor <init>(Lae1;)V
+.method public constructor <init>(Lvl1;)V
     .locals 0
 
     .line 1
@@ -44,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/foundation/layout/FillElement;->Q:Lae1;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/FillElement;->X:Lvl1;
 
     .line 5
     .line 6
@@ -53,59 +53,59 @@
 
 
 # virtual methods
-.method public final a()Ld64;
-    .locals 2
+.method public final a()Lcn4;
+    .locals 1
 
     .line 1
-    new-instance v0, Lyv1;
+    new-instance v0, Lv52;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ld64;-><init>()V
+    invoke-direct {v0}, Lcn4;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Landroidx/compose/foundation/layout/FillElement;->Q:Lae1;
+    iget-object p0, p0, Landroidx/compose/foundation/layout/FillElement;->X:Lvl1;
 
     .line 7
     .line 8
-    iput-object v1, v0, Lyv1;->e0:Lae1;
+    iput-object p0, v0, Lv52;->n0:Lvl1;
 
     .line 9
     .line 10
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/high16 p0, 0x3f800000    # 1.0f
 
     .line 11
     .line 12
-    iput v1, v0, Lyv1;->f0:F
+    iput p0, v0, Lv52;->o0:F
 
     .line 13
     .line 14
     return-object v0
 .end method
 
-.method public final d(Ld64;)V
-    .locals 1
+.method public final c(Lcn4;)V
+    .locals 0
 
     .line 1
-    check-cast p1, Lyv1;
+    check-cast p1, Lv52;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/compose/foundation/layout/FillElement;->Q:Lae1;
+    iget-object p0, p0, Landroidx/compose/foundation/layout/FillElement;->X:Lvl1;
 
     .line 4
     .line 5
-    iput-object v0, p1, Lyv1;->e0:Lae1;
+    iput-object p0, p1, Lv52;->n0:Lvl1;
 
     .line 6
     .line 7
-    const/high16 v0, 0x3f800000    # 1.0f
+    const/high16 p0, 0x3f800000    # 1.0f
 
     .line 8
     .line 9
-    iput v0, p1, Lyv1;->f0:F
+    iput p0, p1, Lv52;->o0:F
 
     .line 10
     .line 11
@@ -143,23 +143,23 @@
 
     .line 11
     .line 12
-    iget-object p1, p1, Landroidx/compose/foundation/layout/FillElement;->Q:Lae1;
+    iget-object p1, p1, Landroidx/compose/foundation/layout/FillElement;->X:Lvl1;
 
     .line 13
     .line 14
-    iget-object v1, p0, Landroidx/compose/foundation/layout/FillElement;->Q:Lae1;
+    iget-object p0, p0, Landroidx/compose/foundation/layout/FillElement;->X:Lvl1;
 
     .line 15
     .line 16
-    if-eq v1, p1, :cond_2
+    if-eq p0, p1, :cond_2
 
     .line 17
     .line 18
     :goto_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    return p1
+    return p0
 
     .line 20
     :cond_2
@@ -167,39 +167,39 @@
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/FillElement;->Q:Lae1;
+    iget-object p0, p0, Landroidx/compose/foundation/layout/FillElement;->X:Lvl1;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/lit8 p0, p0, 0x1f
 
     .line 8
     .line 9
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/high16 v0, 0x3f800000    # 1.0f
 
     .line 10
     .line 11
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
 
     .line 12
     .line 13
     .line 14
-    move-result v1
+    move-result v0
 
     .line 15
-    add-int/2addr v1, v0
+    add-int/2addr v0, p0
 
     .line 16
-    return v1
+    return v0
 .end method

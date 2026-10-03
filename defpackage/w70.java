@@ -1,20 +1,20 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum w70 {
-    ENABLED(true, true),
-    /* JADX INFO: Fake field, exist only in values array */
-    READ_ONLY(true, false),
-    /* JADX INFO: Fake field, exist only in values array */
-    WRITE_ONLY(false, true),
-    DISABLED(false, false);
+import java.util.concurrent.atomic.AtomicLongFieldUpdater;
 
-    public final boolean Q;
-    public final boolean R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class w70 extends tj2 implements yi2 {
+    public static final w70 X = new w70(3, b80.class, "processResultSelectReceive", "processResultSelectReceive(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", 0);
 
-    w70(boolean z, boolean z2) {
-        this.Q = z;
-        this.R = z2;
+    @Override // defpackage.yi2
+    public final Object w(Object obj, Object obj2, Object obj3) {
+        b80 b80Var = (b80) obj;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = b80.c0;
+        b80Var.getClass();
+        if (obj3 != d80.l) {
+            return obj3;
+        }
+        throw b80Var.x();
     }
 }

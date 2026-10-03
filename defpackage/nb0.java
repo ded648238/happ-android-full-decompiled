@@ -1,17 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class nb0 {
-    public void a(int i) {
-    }
+import java.util.Collection;
 
-    public void d(int i) {
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface nb0 extends lb0, mi4 {
+    nb0 W(ln4 ln4Var, ym4 ym4Var, zh1 zh1Var);
 
-    public void b(int i, tb0 tb0Var) {
-    }
+    @Override // defpackage.lb0, defpackage.ia1
+    nb0 a();
 
-    public void c(int i, kv6 kv6Var) {
-    }
+    void f0(Collection collection);
+
+    @Override // defpackage.lb0
+    Collection r();
+
+    int s();
 }

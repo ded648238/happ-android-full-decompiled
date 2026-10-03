@@ -1,35 +1,34 @@
 package defpackage;
 
-import android.view.WindowInsets;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class dt7 {
+    public static final dt7 c = new dt7(yu7.f(0), yu7.f(0));
+    public final long a;
+    public final long b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class dt7 {
-    public static int a(int i) {
-        int iStatusBars;
-        int i2 = 0;
-        for (int i3 = 1; i3 <= 512; i3 <<= 1) {
-            if ((i & i3) != 0) {
-                if (i3 == 1) {
-                    iStatusBars = WindowInsets.Type.statusBars();
-                } else if (i3 == 2) {
-                    iStatusBars = WindowInsets.Type.navigationBars();
-                } else if (i3 == 4) {
-                    iStatusBars = WindowInsets.Type.captionBar();
-                } else if (i3 == 8) {
-                    iStatusBars = WindowInsets.Type.ime();
-                } else if (i3 == 16) {
-                    iStatusBars = WindowInsets.Type.systemGestures();
-                } else if (i3 == 32) {
-                    iStatusBars = WindowInsets.Type.mandatorySystemGestures();
-                } else if (i3 == 64) {
-                    iStatusBars = WindowInsets.Type.tappableElement();
-                } else if (i3 == 128) {
-                    iStatusBars = WindowInsets.Type.displayCutout();
-                }
-                i2 |= iStatusBars;
-            }
+    public dt7(long j, long j2) {
+        this.a = j;
+        this.b = j2;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        return i2;
+        if (!(obj instanceof dt7)) {
+            return false;
+        }
+        dt7 dt7Var = (dt7) obj;
+        return xu7.a(this.a, dt7Var.a) && xu7.a(this.b, dt7Var.b);
+    }
+
+    public final int hashCode() {
+        zu7[] zu7VarArr = xu7.b;
+        return Long.hashCode(this.b) + (Long.hashCode(this.a) * 31);
+    }
+
+    public final String toString() {
+        return eh0.o("TextIndent(firstLine=", xu7.e(this.a), ", restLine=", xu7.e(this.b), ")");
     }
 }

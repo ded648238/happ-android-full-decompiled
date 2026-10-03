@@ -8,12 +8,11 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Trace;
-import defpackage.io0;
-import defpackage.rv7;
-import defpackage.x67;
+import defpackage.b57;
+import defpackage.pq;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class InitializationProvider extends ContentProvider {
     @Override // android.content.ContentProvider
     public final int delete(Uri uri, String str, String[] strArr) {
@@ -34,25 +33,23 @@ public class InitializationProvider extends ContentProvider {
     public final boolean onCreate() {
         Context context = getContext();
         if (context == null) {
-            throw new io0("Context cannot be null", 16);
+            throw new b57("Context cannot be null");
         }
         if (context.getApplicationContext() == null) {
             return true;
         }
-        rv7 rv7VarQ = rv7.q(context);
-        Context context2 = (Context) rv7VarQ.T;
+        pq p = pq.p(context);
+        Context context2 = (Context) p.c0;
         try {
             try {
-                Trace.beginSection(x67.f("Startup"));
-                rv7VarQ.l(context2.getPackageManager().getProviderInfo(new ComponentName(context2.getPackageName(), InitializationProvider.class.getName()), 128).metaData);
-                Trace.endSection();
+                Trace.beginSection("Startup");
+                p.i(context2.getPackageManager().getProviderInfo(new ComponentName(context2.getPackageName(), InitializationProvider.class.getName()), 128).metaData);
                 return true;
             } catch (PackageManager.NameNotFoundException e) {
-                throw new io0(16, e);
+                throw new b57(e);
             }
-        } catch (Throwable th) {
+        } finally {
             Trace.endSection();
-            throw th;
         }
     }
 

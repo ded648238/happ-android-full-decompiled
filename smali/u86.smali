@@ -1,63 +1,137 @@
-.class public abstract Lu86;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Lu86;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final b:Landroid/graphics/Matrix;
+.field public static final synthetic X:[Lu86;
 
-
-# instance fields
-.field public final a:Landroid/graphics/Matrix;
+.field public static final synthetic Y:Loy1;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 5
 
     .line 1
-    new-instance v0, Landroid/graphics/Matrix;
+    new-instance v0, Lu86;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+    const-string v1, "UNSPECIFIED"
 
     .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    sput-object v0, Lu86;->b:Landroid/graphics/Matrix;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Landroid/graphics/Matrix;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lu86;->a:Landroid/graphics/Matrix;
+    new-instance v1, Lu86;
 
     .line 10
     .line 11
+    const-string v2, "MUST_USE"
+
+    .line 12
+    .line 13
+    const/4 v3, 0x1
+
+    .line 14
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 15
+    .line 16
+    .line 17
+    new-instance v2, Lu86;
+
+    .line 18
+    .line 19
+    const-string v3, "EXPLICITLY_IGNORABLE"
+
+    .line 20
+    .line 21
+    const/4 v4, 0x2
+
+    .line 22
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 23
+    .line 24
+    .line 25
+    filled-new-array {v0, v1, v2}, [Lu86;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    sput-object v0, Lu86;->X:[Lu86;
+
+    .line 30
+    .line 31
+    new-instance v1, Loy1;
+
+    .line 32
+    .line 33
+    invoke-direct {v1, v0}, Loy1;-><init>([Ljava/lang/Enum;)V
+
+    .line 34
+    .line 35
+    .line 36
+    sput-object v1, Lu86;->Y:Loy1;
+
+    .line 37
+    .line 38
     return-void
 .end method
 
+.method public static valueOf(Ljava/lang/String;)Lu86;
+    .locals 1
 
-# virtual methods
-.method public abstract a(Landroid/graphics/Matrix;Lg86;ILandroid/graphics/Canvas;)V
+    .line 1
+    const-class v0, Lu86;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lu86;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lu86;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lu86;->X:[Lu86;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lu86;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

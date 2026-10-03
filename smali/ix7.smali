@@ -1,18 +1,14 @@
-.class public final Lix7;
+.class public interface abstract Lix7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lsu/happ/proxyutility/service/AntiFilterVpnSupportsSet;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
-.method public protect(I)Z
-    .locals 0
+.method public abstract getSupportButtonTintList()Landroid/content/res/ColorStateList;
+.end method
 
-    .line 1
-    const/4 p1, 0x1
+.method public abstract setSupportButtonTintList(Landroid/content/res/ColorStateList;)V
+.end method
 
-    .line 2
-    return p1
+.method public abstract setSupportButtonTintMode(Landroid/graphics/PorterDuff$Mode;)V
 .end method

@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/ct/VerificationResult;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -95,7 +95,7 @@
 
 # virtual methods
 .method public add(Lorg/conscrypt/ct/VerifiedSCT;)V
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-virtual {p1}, Lorg/conscrypt/ct/VerifiedSCT;->isValid()Z
@@ -165,18 +165,18 @@
 
     .line 33
     .line 34
-    iget-object v1, p0, Lorg/conscrypt/ct/VerificationResult;->count:Ljava/util/EnumMap;
+    iget-object p0, p0, Lorg/conscrypt/ct/VerificationResult;->count:Ljava/util/EnumMap;
 
     .line 35
     .line 36
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
     .line 37
     if-nez v0, :cond_1
 
     .line 38
     .line 39
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 40
     .line 41
@@ -184,7 +184,7 @@
     move-result-object v0
 
     .line 43
-    invoke-virtual {v1, p1, v0}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v0}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 44
     .line 45
@@ -201,7 +201,7 @@
     move-result v0
 
     .line 51
-    add-int/2addr v0, v2
+    add-int/2addr v0, v1
 
     .line 52
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -212,7 +212,7 @@
     move-result-object v0
 
     .line 56
-    invoke-virtual {v1, p1, v0}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v0}, Ljava/util/EnumMap;->put(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 57
     .line 58
@@ -221,7 +221,7 @@
 .end method
 
 .method public getInvalidSCTs()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -232,23 +232,23 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/VerificationResult;->invalidSCTs:Ljava/util/List;
+    iget-object p0, p0, Lorg/conscrypt/ct/VerificationResult;->invalidSCTs:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getValidSCTs()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -259,155 +259,155 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/VerificationResult;->validSCTs:Ljava/util/List;
+    iget-object p0, p0, Lorg/conscrypt/ct/VerificationResult;->validSCTs:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public numCertSCTs()I
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/VerificationResult;->count:Ljava/util/EnumMap;
+    iget-object p0, p0, Lorg/conscrypt/ct/VerificationResult;->count:Ljava/util/EnumMap;
 
     .line 2
     .line 3
-    sget-object v1, Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;->EMBEDDED:Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;
+    sget-object v0, Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;->EMBEDDED:Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, Ljava/util/EnumMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/EnumMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    check-cast v0, Ljava/lang/Integer;
+    check-cast p0, Ljava/lang/Integer;
 
     .line 10
     .line 11
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 12
     .line 13
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 14
-    return v0
+    return p0
 
     .line 15
     :cond_0
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
     .line 16
     .line 17
     .line 18
-    move-result v0
+    move-result p0
 
     .line 19
-    return v0
+    return p0
 .end method
 
 .method public numOCSPSCTs()I
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/VerificationResult;->count:Ljava/util/EnumMap;
+    iget-object p0, p0, Lorg/conscrypt/ct/VerificationResult;->count:Ljava/util/EnumMap;
 
     .line 2
     .line 3
-    sget-object v1, Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;->OCSP_RESPONSE:Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;
+    sget-object v0, Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;->OCSP_RESPONSE:Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, Ljava/util/EnumMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/EnumMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    check-cast v0, Ljava/lang/Integer;
+    check-cast p0, Ljava/lang/Integer;
 
     .line 10
     .line 11
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 12
     .line 13
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 14
-    return v0
+    return p0
 
     .line 15
     :cond_0
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
     .line 16
     .line 17
     .line 18
-    move-result v0
+    move-result p0
 
     .line 19
-    return v0
+    return p0
 .end method
 
 .method public numTlsSCTs()I
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/VerificationResult;->count:Ljava/util/EnumMap;
+    iget-object p0, p0, Lorg/conscrypt/ct/VerificationResult;->count:Ljava/util/EnumMap;
 
     .line 2
     .line 3
-    sget-object v1, Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;->TLS_EXTENSION:Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;
+    sget-object v0, Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;->TLS_EXTENSION:Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, Ljava/util/EnumMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/EnumMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    check-cast v0, Ljava/lang/Integer;
+    check-cast p0, Ljava/lang/Integer;
 
     .line 10
     .line 11
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 12
     .line 13
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 14
-    return v0
+    return p0
 
     .line 15
     :cond_0
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
     .line 16
     .line 17
     .line 18
-    move-result v0
+    move-result p0
 
     .line 19
-    return v0
+    return p0
 .end method

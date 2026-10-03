@@ -1,46 +1,68 @@
 .class public abstract Lp85;
 .super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static common_full_open_on_phone:I = 0x7f080670
+# instance fields
+.field public final a:Z
 
-.field public static common_google_signin_btn_icon_dark:I = 0x7f080671
+.field public final b:Z
 
-.field public static common_google_signin_btn_icon_dark_focused:I = 0x7f080672
 
-.field public static common_google_signin_btn_icon_dark_normal:I = 0x7f080673
+# direct methods
+.method public constructor <init>(I)V
+    .locals 3
 
-.field public static common_google_signin_btn_icon_dark_normal_background:I = 0x7f080674
+    .line 1
+    and-int/lit8 v0, p1, 0x1
 
-.field public static common_google_signin_btn_icon_disabled:I = 0x7f080675
+    .line 2
+    .line 3
+    const/4 v1, 0x1
 
-.field public static common_google_signin_btn_icon_light:I = 0x7f080676
+    .line 4
+    const/4 v2, 0x0
 
-.field public static common_google_signin_btn_icon_light_focused:I = 0x7f080677
+    .line 5
+    if-eqz v0, :cond_0
 
-.field public static common_google_signin_btn_icon_light_normal:I = 0x7f080678
+    .line 6
+    .line 7
+    move v0, v2
 
-.field public static common_google_signin_btn_icon_light_normal_background:I = 0x7f080679
+    .line 8
+    goto :goto_0
 
-.field public static common_google_signin_btn_text_dark:I = 0x7f08067a
+    .line 9
+    :cond_0
+    move v0, v1
 
-.field public static common_google_signin_btn_text_dark_focused:I = 0x7f08067b
+    .line 10
+    :goto_0
+    and-int/lit8 p1, p1, 0x2
 
-.field public static common_google_signin_btn_text_dark_normal:I = 0x7f08067c
+    .line 11
+    .line 12
+    if-eqz p1, :cond_1
 
-.field public static common_google_signin_btn_text_dark_normal_background:I = 0x7f08067d
+    .line 13
+    .line 14
+    move v1, v2
 
-.field public static common_google_signin_btn_text_disabled:I = 0x7f08067e
+    .line 15
+    :cond_1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static common_google_signin_btn_text_light:I = 0x7f08067f
+    .line 16
+    .line 17
+    .line 18
+    iput-boolean v0, p0, Lp85;->a:Z
 
-.field public static common_google_signin_btn_text_light_focused:I = 0x7f080680
+    .line 19
+    .line 20
+    iput-boolean v1, p0, Lp85;->b:Z
 
-.field public static common_google_signin_btn_text_light_normal:I = 0x7f080681
-
-.field public static common_google_signin_btn_text_light_normal_background:I = 0x7f080682
-
-.field public static googleg_disabled_color_18:I = 0x7f08068f
-
-.field public static googleg_standard_color_18:I = 0x7f080690
+    .line 21
+    .line 22
+    return-void
+.end method

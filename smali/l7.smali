@@ -1,20 +1,20 @@
 .class public final Ll7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
+.implements Lt31;
 
 
 # instance fields
-.field public final synthetic Q:Lp7;
+.field public final a:Lt31;
 
-.field public final synthetic R:Lm7;
+.field public final b:F
 
 
 # direct methods
-.method public constructor <init>(Lm7;Lp7;)V
-    .locals 0
+.method public constructor <init>(FLt31;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -22,61 +22,203 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ll7;->R:Lm7;
+    :goto_0
+    instance-of v0, p2, Ll7;
 
     .line 5
     .line 6
-    iput-object p2, p0, Ll7;->Q:Lp7;
+    if-eqz v0, :cond_0
 
     .line 7
     .line 8
+    check-cast p2, Ll7;
+
+    .line 9
+    .line 10
+    iget-object p2, p2, Ll7;->a:Lt31;
+
+    .line 11
+    .line 12
+    move-object v0, p2
+
+    .line 13
+    check-cast v0, Ll7;
+
+    .line 14
+    .line 15
+    iget v0, v0, Ll7;->b:F
+
+    .line 16
+    .line 17
+    add-float/2addr p1, v0
+
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    iput-object p2, p0, Ll7;->a:Lt31;
+
+    .line 20
+    .line 21
+    iput p1, p0, Ll7;->b:F
+
+    .line 22
+    .line 23
     return-void
 .end method
 
 
 # virtual methods
-.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 0
+.method public final a(Landroid/graphics/RectF;)F
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Ll7;->R:Lm7;
+    iget-object v0, p0, Ll7;->a:Lt31;
 
     .line 2
     .line 3
-    iget-object p2, p1, Lm7;->i:Landroid/content/DialogInterface$OnClickListener;
+    invoke-interface {v0, p1}, Lt31;->a(Landroid/graphics/RectF;)F
 
     .line 4
     .line 5
-    iget-object p4, p0, Ll7;->Q:Lp7;
-
     .line 6
+    move-result p1
+
     .line 7
-    iget-object p5, p4, Lp7;->b:Lr7;
+    iget p0, p0, Ll7;->b:F
 
     .line 8
     .line 9
-    invoke-interface {p2, p5, p3}, Landroid/content/DialogInterface$OnClickListener;->onClick(Landroid/content/DialogInterface;I)V
+    add-float/2addr p1, p0
+
+    .line 10
+    const/4 p0, 0x0
+
+    .line 11
+    invoke-static {p0, p1}, Ljava/lang/Math;->max(FF)F
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    return p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Ll7;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Ll7;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Ll7;->a:Lt31;
+
+    .line 14
+    .line 15
+    iget-object v3, p1, Ll7;->a:Lt31;
+
+    .line 16
+    .line 17
+    invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-eqz v1, :cond_2
+
+    .line 22
+    .line 23
+    iget p0, p0, Ll7;->b:F
+
+    .line 24
+    .line 25
+    iget p1, p1, Ll7;->b:F
+
+    .line 26
+    .line 27
+    cmpl-float p0, p0, p1
+
+    .line 28
+    .line 29
+    if-nez p0, :cond_2
+
+    .line 30
+    .line 31
+    return v0
+
+    .line 32
+    :cond_2
+    return v2
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Ll7;->b:F
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iget-object p0, p0, Ll7;->a:Lt31;
+
+    .line 8
+    .line 9
+    filled-new-array {p0, v0}, [Ljava/lang/Object;
 
     .line 10
     .line 11
     .line 12
-    iget-boolean p1, p1, Lm7;->l:Z
+    move-result-object p0
 
     .line 13
-    .line 14
-    if-nez p1, :cond_0
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
+    .line 14
     .line 15
     .line 16
-    iget-object p1, p4, Lp7;->b:Lr7;
+    move-result p0
 
     .line 17
-    .line 18
-    invoke-virtual {p1}, Lon;->dismiss()V
-
-    .line 19
-    .line 20
-    .line 21
-    :cond_0
-    return-void
+    return p0
 .end method

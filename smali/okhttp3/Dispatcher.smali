@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Dispatcher;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -29,7 +29,7 @@
         "Ljava/util/Deque;",
         "calls",
         "call",
-        "Lbh7;",
+        "Lr98;",
         "finished",
         "(Ljava/util/Deque;Ljava/lang/Object;)V",
         "enqueue$okhttp",
@@ -256,7 +256,7 @@
     move-result-object v2
 
     .line 23
-    invoke-static {v2, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 24
     .line 25
@@ -272,71 +272,71 @@
 
     .line 30
     :cond_1
-    iget-object v0, p0, Lokhttp3/Dispatcher;->readyAsyncCalls:Ljava/util/ArrayDeque;
+    iget-object p0, p0, Lokhttp3/Dispatcher;->readyAsyncCalls:Ljava/util/ArrayDeque;
 
     .line 31
     .line 32
-    invoke-virtual {v0}, Ljava/util/ArrayDeque;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p0}, Ljava/util/ArrayDeque;->iterator()Ljava/util/Iterator;
 
     .line 33
     .line 34
     .line 35
-    move-result-object v0
+    move-result-object p0
 
     .line 36
     :cond_2
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 37
     .line 38
     .line 39
-    move-result v1
+    move-result v0
 
     .line 40
-    if-eqz v1, :cond_3
+    if-eqz v0, :cond_3
 
     .line 41
     .line 42
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 43
     .line 44
     .line 45
-    move-result-object v1
+    move-result-object v0
 
     .line 46
-    check-cast v1, Lokhttp3/internal/connection/RealCall$AsyncCall;
+    check-cast v0, Lokhttp3/internal/connection/RealCall$AsyncCall;
 
     .line 47
     .line 48
-    invoke-virtual {v1}, Lokhttp3/internal/connection/RealCall$AsyncCall;->getHost()Ljava/lang/String;
+    invoke-virtual {v0}, Lokhttp3/internal/connection/RealCall$AsyncCall;->getHost()Ljava/lang/String;
 
     .line 49
     .line 50
     .line 51
-    move-result-object v2
+    move-result-object v1
 
     .line 52
-    invoke-static {v2, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 53
     .line 54
     .line 55
-    move-result v2
+    move-result v1
 
     .line 56
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
     .line 57
     .line 58
-    return-object v1
+    return-object v0
 
     .line 59
     :cond_3
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 60
-    return-object p1
+    return-object p0
 .end method
 
 .method private final finished(Ljava/util/Deque;Ljava/lang/Object;)V
@@ -382,10 +382,10 @@
     .line 12
     .line 13
     .line 14
-    move-result p2
+    move-result p0
 
     .line 15
-    if-nez p2, :cond_0
+    if-nez p0, :cond_0
 
     .line 16
     .line 17
@@ -487,7 +487,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0, v2, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0, v2, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 24
     .line 25
@@ -661,7 +661,7 @@
 
     .line 105
     :cond_4
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 106
     :goto_2
@@ -727,8 +727,8 @@
 
 # virtual methods
 .method public final -deprecated_executorService()Ljava/util/concurrent/ExecutorService;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -737,10 +737,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final declared-synchronized cancelAll()V
@@ -1385,7 +1385,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0, v2}, Lom0;->e0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v2}, Lut0;->F0(Ljava/lang/Iterable;I)I
 
     .line 9
     .line 10
@@ -1455,7 +1455,7 @@
 
     .line 41
     :cond_0
-    invoke-static {v1}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 42
     .line 43
@@ -1559,7 +1559,7 @@
 
     .line 9
     .line 10
-    invoke-static {v1, v3}, Lom0;->e0(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v3}, Lut0;->F0(Ljava/lang/Iterable;I)I
 
     .line 11
     .line 12
@@ -1629,7 +1629,7 @@
 
     .line 43
     :cond_0
-    invoke-static {v0, v2}, Lnm0;->K0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
+    invoke-static {v0, v2}, Ltt0;->q1(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     .line 44
     .line 45
@@ -1637,7 +1637,7 @@
     move-result-object v0
 
     .line 47
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 48
     .line 49
@@ -1800,19 +1800,19 @@
 
     .line 15
     :cond_0
-    const-string v0, "max < 1: "
+    const-string p0, "max < 1: "
 
     .line 16
     .line 17
-    invoke-static {p1, v0}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 18
     .line 19
     .line 20
-    move-result-object p1
+    move-result-object p0
 
     .line 21
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 22
     .line 23
@@ -1863,19 +1863,19 @@
 
     .line 15
     :cond_0
-    const-string v0, "max < 1: "
+    const-string p0, "max < 1: "
 
     .line 16
     .line 17
-    invoke-static {p1, v0}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 18
     .line 19
     .line 20
-    move-result-object p1
+    move-result-object p0
 
     .line 21
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 22
     .line 23

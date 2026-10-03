@@ -1,6 +1,6 @@
 .class public abstract synthetic Lio/sentry/android/core/k;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -12,7 +12,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Lio/sentry/m5;->values()[Lio/sentry/m5;
+    invoke-static {}, Lio/sentry/o5;->values()[Lio/sentry/o5;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 9
     .line 10
     :try_start_0
-    sget-object v1, Lio/sentry/m5;->INFO:Lio/sentry/m5;
+    sget-object v1, Lio/sentry/o5;->INFO:Lio/sentry/o5;
 
     .line 11
     .line 12
@@ -59,7 +59,7 @@
 
     .line 20
     .line 21
-    sget-object v1, Lio/sentry/m5;->WARNING:Lio/sentry/m5;
+    sget-object v1, Lio/sentry/o5;->WARNING:Lio/sentry/o5;
 
     .line 22
     .line 23
@@ -86,7 +86,7 @@
 
     .line 31
     .line 32
-    sget-object v1, Lio/sentry/m5;->ERROR:Lio/sentry/m5;
+    sget-object v1, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
 
     .line 33
     .line 34
@@ -113,7 +113,7 @@
 
     .line 42
     .line 43
-    sget-object v1, Lio/sentry/m5;->FATAL:Lio/sentry/m5;
+    sget-object v1, Lio/sentry/o5;->FATAL:Lio/sentry/o5;
 
     .line 44
     .line 45
@@ -140,7 +140,7 @@
 
     .line 53
     .line 54
-    sget-object v1, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v1, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 55
     .line 56

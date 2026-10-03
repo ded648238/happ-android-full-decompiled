@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;
 .super Lsu/happ/proxyutility/ui/SnackbarHostActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,17 +26,17 @@
 
 
 # static fields
-.field public static final synthetic G0:I
+.field public static final synthetic R0:I
 
 
 # instance fields
-.field public C0:Ln6;
+.field public N0:Lx6;
 
-.field public final D0:Lzu6;
+.field public final O0:Lmm7;
 
-.field public final E0:Ll5;
+.field public final P0:Lv5;
 
-.field public final F0:Lzu6;
+.field public final Q0:Lmm7;
 
 
 # direct methods
@@ -49,57 +49,57 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lv37;
+    new-instance v0, Lin7;
 
     .line 5
     .line 6
-    const/16 v1, 0x14
+    const/16 v1, 0x1a
 
     .line 7
     .line 8
-    invoke-direct {v0, v1}, Lv37;-><init>(I)V
+    invoke-direct {v0, v1}, Lin7;-><init>(I)V
 
     .line 9
     .line 10
     .line 11
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 12
     .line 13
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 14
     .line 15
     .line 16
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->D0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->O0:Lmm7;
 
     .line 17
     .line 18
-    new-instance v0, Lwq7;
+    new-instance v0, Lyl8;
 
     .line 19
     .line 20
     const/4 v1, 0x0
 
     .line 21
-    invoke-direct {v0, p0, v1}, Lwq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v0, p0, v1}, Lyl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 22
     .line 23
     .line 24
-    new-instance v1, Ll5;
+    new-instance v1, Lv5;
 
     .line 25
     .line 26
-    const-class v2, Ldr7;
+    const-class v2, Lem8;
 
     .line 27
     .line 28
-    sget-object v3, Lhg5;->a:Lig5;
+    sget-object v3, Lp06;->a:Lq06;
 
     .line 29
     .line 30
-    invoke-virtual {v3, v2}, Lig5;->b(Ljava/lang/Class;)Lx63;
+    invoke-virtual {v3, v2}, Lq06;->b(Ljava/lang/Class;)Lgn3;
 
     .line 31
     .line 32
@@ -107,58 +107,58 @@
     move-result-object v2
 
     .line 34
-    new-instance v3, Lwq7;
+    new-instance v3, Lyl8;
 
     .line 35
     .line 36
     const/4 v4, 0x1
 
     .line 37
-    invoke-direct {v3, p0, v4}, Lwq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v3, p0, v4}, Lyl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 38
     .line 39
     .line 40
-    new-instance v5, Lwq7;
+    new-instance v5, Lyl8;
 
     .line 41
     .line 42
     const/4 v6, 0x2
 
     .line 43
-    invoke-direct {v5, p0, v6}, Lwq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v5, p0, v6}, Lyl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 44
     .line 45
     .line 46
-    invoke-direct {v1, v2, v3, v0, v5}, Ll5;-><init>(Lx63;Lg72;Lg72;Lg72;)V
+    invoke-direct {v1, v2, v3, v0, v5}, Lv5;-><init>(Lgn3;Lji2;Lji2;Lji2;)V
 
     .line 47
     .line 48
     .line 49
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->E0:Ll5;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->P0:Lv5;
 
     .line 50
     .line 51
-    new-instance v0, Lsq7;
+    new-instance v0, Lul8;
 
     .line 52
     .line 53
-    invoke-direct {v0, p0, v4}, Lsq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v0, p0, v4}, Lul8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 54
     .line 55
     .line 56
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 57
     .line 58
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 59
     .line 60
     .line 61
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->F0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->Q0:Lmm7;
 
     .line 62
     .line 63
@@ -168,56 +168,56 @@
 
 # virtual methods
 .method public final A()Lcom/tencent/mmkv/MMKV;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->D0:Lzu6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->O0:Lmm7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Lcom/tencent/mmkv/MMKV;
+    check-cast p0, Lcom/tencent/mmkv/MMKV;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
-.method public final B()Ldr7;
-    .locals 1
+.method public final B()Lem8;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->E0:Ll5;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->P0:Lv5;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ll5;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lv5;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Ldr7;
+    check-cast p0, Lem8;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public final C(Z)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 2
     .line 3
@@ -232,7 +232,7 @@
 
     .line 7
     .line 8
-    iget-object v0, v0, Ln6;->g0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v0, v0, Lx6;->p0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 9
     .line 10
@@ -241,12 +241,12 @@
     .line 11
     .line 12
     .line 13
-    invoke-static {v0, p1}, Lw97;->e(Landroid/view/View;Z)V
+    invoke-static {v0, p1}, Lb18;->d(Landroid/view/View;Z)V
 
     .line 14
     .line 15
     .line 16
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 17
     .line 18
@@ -254,7 +254,7 @@
 
     .line 19
     .line 20
-    iget-object v0, v0, Ln6;->b0:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;
+    iget-object v0, v0, Lx6;->k0:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;
 
     .line 21
     .line 22
@@ -263,12 +263,12 @@
     .line 23
     .line 24
     .line 25
-    invoke-static {v0, p1}, Lw97;->e(Landroid/view/View;Z)V
+    invoke-static {v0, p1}, Lb18;->d(Landroid/view/View;Z)V
 
     .line 26
     .line 27
     .line 28
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 29
     .line 30
@@ -276,7 +276,7 @@
 
     .line 31
     .line 32
-    iget-object v0, v0, Ln6;->f0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v0, v0, Lx6;->o0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 33
     .line 34
@@ -285,29 +285,29 @@
     .line 35
     .line 36
     .line 37
-    invoke-static {v0, p1}, Lw97;->e(Landroid/view/View;Z)V
+    invoke-static {v0, p1}, Lb18;->d(Landroid/view/View;Z)V
 
     .line 38
     .line 39
     .line 40
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 41
     .line 42
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 43
     .line 44
-    iget-object v0, v0, Ln6;->a0:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;
+    iget-object p0, p0, Lx6;->j0:Lsu/happ/proxyutility/ui/foundation/component/HappSettingsDivider;
 
     .line 45
     .line 46
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 47
     .line 48
     .line 49
-    invoke-static {v0, p1}, Lw97;->e(Landroid/view/View;Z)V
+    invoke-static {p0, p1}, Lb18;->d(Landroid/view/View;Z)V
 
     .line 50
     .line 51
@@ -316,7 +316,7 @@
 
     .line 53
     :cond_0
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 54
     .line 55
@@ -325,7 +325,7 @@
 
     .line 57
     :cond_1
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 58
     .line 59
@@ -334,7 +334,7 @@
 
     .line 61
     :cond_2
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 62
     .line 63
@@ -343,7 +343,7 @@
 
     .line 65
     :cond_3
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 66
     .line 67
@@ -368,22 +368,22 @@
     move-result-object p1
 
     .line 8
-    sget v0, Ln6;->s0:I
+    sget v0, Lx6;->B0:I
 
     .line 9
     .line 10
-    sget-object v0, Lhz0;->a:Landroidx/databinding/DataBinderMapperImpl;
+    sget-object v0, Le71;->a:Landroidx/databinding/DataBinderMapperImpl;
 
     .line 11
     .line 12
-    sget v0, Lt95;->activity_vpn_settings:I
+    sget v0, Ltt5;->activity_vpn_settings:I
 
     .line 13
     .line 14
     const/4 v1, 0x0
 
     .line 15
-    invoke-static {v0, p1, v1}, Lxn7;->c(ILandroid/view/LayoutInflater;Landroid/view/ViewGroup;)Lxn7;
+    invoke-static {v0, p1, v1}, Lvi8;->c(ILandroid/view/LayoutInflater;Landroid/view/ViewGroup;)Lvi8;
 
     .line 16
     .line 17
@@ -391,7 +391,7 @@
     move-result-object p1
 
     .line 19
-    check-cast p1, Ln6;
+    check-cast p1, Lx6;
 
     .line 20
     .line 21
@@ -400,11 +400,11 @@
     .line 22
     .line 23
     .line 24
-    iput-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iput-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 25
     .line 26
-    iget-object p1, p1, Lxn7;->S:Landroid/view/View;
+    iget-object p1, p1, Lvi8;->Z:Landroid/view/View;
 
     .line 27
     .line 28
@@ -413,11 +413,11 @@
     .line 29
     .line 30
     .line 31
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->F0:Lzu6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->Q0:Lmm7;
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 34
     .line 35
@@ -425,16 +425,16 @@
     move-result-object p1
 
     .line 37
-    check-cast p1, Lzq7;
+    check-cast p1, Lam8;
 
     .line 38
     .line 39
-    invoke-static {p1}, Lhc7;->o(Lxy0;)V
+    invoke-static {p1}, Lor4;->n(Ln61;)V
 
     .line 40
     .line 41
     .line 42
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 43
     .line 44
@@ -446,7 +446,7 @@
 
     .line 47
     .line 48
-    iget-object p1, p1, Lxn7;->S:Landroid/view/View;
+    iget-object p1, p1, Lvi8;->Z:Landroid/view/View;
 
     .line 49
     .line 50
@@ -460,7 +460,7 @@
     .line 54
     .line 55
     .line 56
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 57
     .line 58
@@ -468,16 +468,16 @@
 
     .line 59
     .line 60
-    iget-object p1, p1, Ln6;->q0:Landroidx/appcompat/widget/Toolbar;
+    iget-object p1, p1, Lx6;->z0:Landroidx/appcompat/widget/Toolbar;
 
     .line 61
     .line 62
-    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->p(Landroidx/appcompat/widget/Toolbar;)V
+    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->q(Landroidx/appcompat/widget/Toolbar;)V
 
     .line 63
     .line 64
     .line 65
-    sget p1, Lx95;->title_vpn_settings:I
+    sget p1, Lxt5;->title_vpn_settings:I
 
     .line 66
     .line 67
@@ -494,7 +494,7 @@
     .line 72
     .line 73
     .line 74
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 75
     .line 76
@@ -502,7 +502,7 @@
 
     .line 77
     .line 78
-    iget-object p1, p1, Ln6;->i0:Landroid/widget/LinearLayout;
+    iget-object p1, p1, Lx6;->r0:Landroid/widget/LinearLayout;
 
     .line 79
     .line 80
@@ -511,12 +511,12 @@
     .line 81
     .line 82
     .line 83
-    invoke-static {p1}, Lw97;->d(Landroid/view/ViewGroup;)V
+    invoke-static {p1}, Lb18;->b(Landroid/view/ViewGroup;)V
 
     .line 84
     .line 85
     .line 86
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 87
     .line 88
@@ -524,7 +524,7 @@
 
     .line 89
     .line 90
-    iget-object p1, p1, Ln6;->n0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object p1, p1, Lx6;->w0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 91
     .line 92
@@ -556,7 +556,7 @@
     .line 104
     .line 105
     .line 106
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 107
     .line 108
@@ -564,20 +564,20 @@
 
     .line 109
     .line 110
-    iget-object p1, p1, Ln6;->n0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object p1, p1, Lx6;->w0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 111
     .line 112
-    new-instance v2, Ltq7;
+    new-instance v2, Lvl8;
 
     .line 113
     .line 114
-    invoke-direct {v2, p0, v4}, Ltq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v2, p0, v4}, Lvl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 115
     .line 116
     .line 117
-    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 118
     .line 119
@@ -606,7 +606,7 @@
 
     .line 131
     .line 132
-    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 133
     .line 134
@@ -614,7 +614,7 @@
 
     .line 135
     .line 136
-    iget-object v2, v2, Ln6;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v2, v2, Lx6;->n0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 137
     .line 138
@@ -627,7 +627,7 @@
 
     .line 142
     :cond_0
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 143
     .line 144
@@ -637,7 +637,7 @@
     .line 146
     :cond_1
     :goto_0
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 147
     .line 148
@@ -645,28 +645,28 @@
 
     .line 149
     .line 150
-    iget-object p1, p1, Ln6;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object p1, p1, Lx6;->n0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 151
     .line 152
-    new-instance v2, Ltq7;
+    new-instance v2, Lvl8;
 
     .line 153
     .line 154
     const/4 v3, 0x1
 
     .line 155
-    invoke-direct {v2, p0, v3}, Ltq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v2, p0, v3}, Lvl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 156
     .line 157
     .line 158
-    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 159
     .line 160
     .line 161
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 162
     .line 163
@@ -674,28 +674,28 @@
 
     .line 164
     .line 165
-    iget-object p1, p1, Ln6;->m0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object p1, p1, Lx6;->v0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 166
     .line 167
-    new-instance v2, Ltq7;
+    new-instance v2, Lvl8;
 
     .line 168
     .line 169
     const/4 v5, 0x2
 
     .line 170
-    invoke-direct {v2, p0, v5}, Ltq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v2, p0, v5}, Lvl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 171
     .line 172
     .line 173
-    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 174
     .line 175
     .line 176
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 177
     .line 178
@@ -703,7 +703,7 @@
 
     .line 179
     .line 180
-    iget-object p1, p1, Ln6;->m0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object p1, p1, Lx6;->v0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 181
     .line 182
@@ -732,7 +732,7 @@
     .line 193
     .line 194
     .line 195
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 196
     .line 197
@@ -740,28 +740,28 @@
 
     .line 198
     .line 199
-    iget-object p1, p1, Ln6;->p0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object p1, p1, Lx6;->y0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 200
     .line 201
-    new-instance v2, Ltq7;
+    new-instance v2, Lvl8;
 
     .line 202
     .line 203
     const/4 v6, 0x3
 
     .line 204
-    invoke-direct {v2, p0, v6}, Ltq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v2, p0, v6}, Lvl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 205
     .line 206
     .line 207
-    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 208
     .line 209
     .line 210
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 211
     .line 212
@@ -769,7 +769,7 @@
 
     .line 213
     .line 214
-    iget-object p1, p1, Ln6;->p0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object p1, p1, Lx6;->y0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 215
     .line 216
@@ -798,7 +798,7 @@
     .line 227
     .line 228
     .line 229
-    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 230
     .line 231
@@ -806,7 +806,7 @@
     move-result-object p1
 
     .line 233
-    sget v2, Ln75;->mode_value:I
+    sget v2, Lmr5;->mode_value:I
 
     .line 234
     .line 235
@@ -852,7 +852,7 @@
     .line 255
     .line 256
     :cond_2
-    iget-object v3, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object v3, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 257
     .line 258
@@ -860,11 +860,11 @@
 
     .line 259
     .line 260
-    iget-object v3, v3, Ln6;->l0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v3, v3, Lx6;->u0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 261
     .line 262
-    invoke-static {v2, p1}, Lor;->r0(Ljava/lang/Object;[Ljava/lang/Object;)I
+    invoke-static {v2, p1}, Lkt;->B0(Ljava/lang/Object;[Ljava/lang/Object;)I
 
     .line 263
     .line 264
@@ -877,7 +877,7 @@
     .line 267
     .line 268
     .line 269
-    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 270
     .line 271
@@ -885,15 +885,15 @@
 
     .line 272
     .line 273
-    iget-object v2, v2, Ln6;->l0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v2, v2, Lx6;->u0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 274
     .line 275
-    new-instance v3, Lqa7;
+    new-instance v3, Le38;
 
     .line 276
     .line 277
-    invoke-direct {v3, v5, p0, p1}, Lqa7;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v5, p0, p1}, Le38;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 278
     .line 279
@@ -903,7 +903,7 @@
     .line 281
     .line 282
     .line 283
-    invoke-static {}, Lc86;->c()Lcom/tencent/mmkv/MMKV;
+    invoke-static {}, Llu6;->c()Lcom/tencent/mmkv/MMKV;
 
     .line 284
     .line 285
@@ -923,7 +923,7 @@
     move-result p1
 
     .line 293
-    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 294
     .line 295
@@ -931,7 +931,7 @@
 
     .line 296
     .line 297
-    iget-object v2, v2, Ln6;->o0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v2, v2, Lx6;->x0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 298
     .line 299
@@ -945,7 +945,7 @@
     .line 303
     .line 304
     .line 305
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 306
     .line 307
@@ -953,23 +953,23 @@
 
     .line 308
     .line 309
-    iget-object p1, p1, Ln6;->o0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object p1, p1, Lx6;->x0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 310
     .line 311
-    new-instance v2, Ltq7;
+    new-instance v2, Lvl8;
 
     .line 312
     .line 313
     const/4 v3, 0x4
 
     .line 314
-    invoke-direct {v2, p0, v3}, Ltq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v2, p0, v3}, Lvl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 315
     .line 316
     .line 317
-    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 318
     .line 319
@@ -998,7 +998,7 @@
 
     .line 331
     .line 332
-    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 333
     .line 334
@@ -1006,7 +1006,7 @@
 
     .line 335
     .line 336
-    iget-object v2, v2, Ln6;->g0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v2, v2, Lx6;->p0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 337
     .line 338
@@ -1019,7 +1019,7 @@
 
     .line 342
     :cond_3
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 343
     .line 344
@@ -1029,7 +1029,7 @@
     .line 346
     :cond_4
     :goto_1
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 347
     .line 348
@@ -1037,23 +1037,23 @@
 
     .line 349
     .line 350
-    iget-object p1, p1, Ln6;->g0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object p1, p1, Lx6;->p0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 351
     .line 352
-    new-instance v2, Ltq7;
+    new-instance v2, Lvl8;
 
     .line 353
     .line 354
     const/4 v6, 0x5
 
     .line 355
-    invoke-direct {v2, p0, v6}, Ltq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v2, p0, v6}, Lvl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 356
     .line 357
     .line 358
-    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 359
     .line 360
@@ -1082,7 +1082,7 @@
 
     .line 372
     .line 373
-    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object v2, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 374
     .line 375
@@ -1090,7 +1090,7 @@
 
     .line 376
     .line 377
-    iget-object v2, v2, Ln6;->f0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v2, v2, Lx6;->o0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 378
     .line 379
@@ -1103,7 +1103,7 @@
 
     .line 383
     :cond_5
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 384
     .line 385
@@ -1113,7 +1113,7 @@
     .line 387
     :cond_6
     :goto_2
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 388
     .line 389
@@ -1121,28 +1121,28 @@
 
     .line 390
     .line 391
-    iget-object p1, p1, Ln6;->f0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object p1, p1, Lx6;->o0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 392
     .line 393
-    new-instance v2, Ltq7;
+    new-instance v2, Lvl8;
 
     .line 394
     .line 395
     const/4 v6, 0x6
 
     .line 396
-    invoke-direct {v2, p0, v6}, Ltq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v2, p0, v6}, Lvl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 397
     .line 398
     .line 399
-    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 400
     .line 401
     .line 402
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 403
     .line 404
@@ -1150,25 +1150,25 @@
 
     .line 405
     .line 406
-    iget-object p1, p1, Ln6;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object p1, p1, Lx6;->l0:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 407
     .line 408
-    new-instance v2, Lsq7;
+    new-instance v2, Lul8;
 
     .line 409
     .line 410
-    invoke-direct {v2, p0, v5}, Lsq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v2, p0, v5}, Lul8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 411
     .line 412
     .line 413
-    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    invoke-virtual {p1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 414
     .line 415
     .line 416
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 417
     .line 418
@@ -1176,29 +1176,29 @@
 
     .line 419
     .line 420
-    iget-object p1, p1, Ln6;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object p1, p1, Lx6;->m0:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 421
     .line 422
-    new-instance v0, Lsq7;
+    new-instance v0, Lul8;
 
     .line 423
     .line 424
-    invoke-direct {v0, p0, v4}, Lsq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
+    invoke-direct {v0, p0, v4}, Lul8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;I)V
 
     .line 425
     .line 426
     .line 427
-    invoke-virtual {p1, v0}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    invoke-virtual {p1, v0}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 428
     .line 429
     .line 430
-    iget-object p1, p0, Landroidx/core/app/ComponentActivity;->Q:Lkk3;
+    iget-object p1, p0, Landroidx/core/app/ComponentActivity;->X:Li14;
 
     .line 431
     .line 432
-    invoke-static {p1}, Lyr;->C(Lkk3;)Lbk3;
+    invoke-static {p1}, Lkp3;->y(Li14;)Ly04;
 
     .line 433
     .line 434
@@ -1206,29 +1206,29 @@
     move-result-object v0
 
     .line 436
-    sget-object v2, Lpe1;->a:Lq41;
+    sget-object v2, Ljm1;->a:Lpc1;
 
     .line 437
     .line 438
-    sget-object v2, Lpv3;->a:Lzd2;
+    sget-object v2, Lac4;->a:Lkq2;
 
     .line 439
     .line 440
-    new-instance v4, Luq7;
+    new-instance v4, Lwl8;
 
     .line 441
     .line 442
-    invoke-direct {v4, p0, v1, v3}, Luq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;Lyv0;I)V
+    invoke-direct {v4, p0, v1, v3}, Lwl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;Lb31;I)V
 
     .line 443
     .line 444
     .line 445
-    invoke-static {v0, v2, v4, v5}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {v0, v2, v4, v5}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 446
     .line 447
     .line 448
-    invoke-static {p1}, Lyr;->C(Lkk3;)Lbk3;
+    invoke-static {p1}, Lkp3;->y(Li14;)Ly04;
 
     .line 449
     .line 450
@@ -1236,21 +1236,21 @@
     move-result-object v0
 
     .line 452
-    new-instance v3, Luq7;
+    new-instance v3, Lwl8;
 
     .line 453
     .line 454
-    invoke-direct {v3, p0, v1, v6}, Luq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;Lyv0;I)V
+    invoke-direct {v3, p0, v1, v6}, Lwl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;Lb31;I)V
 
     .line 455
     .line 456
     .line 457
-    invoke-static {v0, v2, v3, v5}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {v0, v2, v3, v5}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 458
     .line 459
     .line 460
-    invoke-static {p1}, Lyr;->C(Lkk3;)Lbk3;
+    invoke-static {p1}, Lkp3;->y(Li14;)Ly04;
 
     .line 461
     .line 462
@@ -1258,7 +1258,7 @@
     move-result-object p1
 
     .line 464
-    new-instance v0, Luq7;
+    new-instance v0, Lwl8;
 
     .line 465
     .line 466
@@ -1266,12 +1266,12 @@
 
     .line 467
     .line 468
-    invoke-direct {v0, p0, v1, v3}, Luq7;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;Lyv0;I)V
+    invoke-direct {v0, p0, v1, v3}, Lwl8;-><init>(Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;Lb31;I)V
 
     .line 469
     .line 470
     .line 471
-    invoke-static {p1, v2, v0, v5}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {p1, v2, v0, v5}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 472
     .line 473
@@ -1280,7 +1280,7 @@
 
     .line 475
     :cond_7
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 476
     .line 477
@@ -1289,7 +1289,7 @@
 
     .line 479
     :cond_8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 480
     .line 481
@@ -1298,7 +1298,7 @@
 
     .line 483
     :cond_9
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 484
     .line 485
@@ -1307,7 +1307,7 @@
 
     .line 487
     :cond_a
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 488
     .line 489
@@ -1316,7 +1316,7 @@
 
     .line 491
     :cond_b
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 492
     .line 493
@@ -1325,7 +1325,7 @@
 
     .line 495
     :cond_c
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 496
     .line 497
@@ -1334,7 +1334,7 @@
 
     .line 499
     :cond_d
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 500
     .line 501
@@ -1343,7 +1343,7 @@
 
     .line 503
     :cond_e
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 504
     .line 505
@@ -1352,7 +1352,7 @@
 
     .line 507
     :cond_f
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 508
     .line 509
@@ -1361,7 +1361,7 @@
 
     .line 511
     :cond_10
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 512
     .line 513
@@ -1370,7 +1370,7 @@
 
     .line 515
     :cond_11
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 516
     .line 517
@@ -1379,7 +1379,7 @@
 
     .line 519
     :cond_12
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 520
     .line 521
@@ -1388,7 +1388,7 @@
 
     .line 523
     :cond_13
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 524
     .line 525
@@ -1397,7 +1397,7 @@
 
     .line 527
     :cond_14
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 528
     .line 529
@@ -1406,7 +1406,7 @@
 
     .line 531
     :cond_15
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 532
     .line 533
@@ -1415,7 +1415,7 @@
 
     .line 535
     :cond_16
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 536
     .line 537
@@ -1424,7 +1424,7 @@
 
     .line 539
     :cond_17
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 540
     .line 541
@@ -1433,7 +1433,7 @@
 
     .line 543
     :cond_18
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 544
     .line 545
@@ -1450,228 +1450,253 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->B()Ldr7;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->B()Lem8;
 
     .line 5
     .line 6
     .line 7
-    move-result-object v0
+    move-result-object p0
 
     .line 8
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget-object v0, Lsu/happ/proxyutility/HappApplication;->I0:Lsu/happ/proxyutility/HappApplication;
 
     .line 9
     .line 10
-    const/16 v2, 0x17
+    invoke-static {}, Lh31;->V()Lsu/happ/proxyutility/HappApplication;
 
     .line 11
     .line 12
-    if-lt v1, v2, :cond_1
-
     .line 13
+    move-result-object v0
+
     .line 14
-    sget-object v1, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    const-string v1, "power"
 
     .line 15
     .line 16
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 17
     .line 18
     .line 19
-    move-result-object v1
+    move-result-object v0
 
     .line 20
-    const-string v2, "power"
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 21
     .line 22
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
     .line 23
+    check-cast v0, Landroid/os/PowerManager;
+
     .line 24
     .line 25
-    move-result-object v1
+    iget-object p0, p0, Lem8;->c:Lk57;
 
     .line 26
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 27
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 28
     .line 29
-    check-cast v1, Landroid/os/PowerManager;
-
     .line 30
-    .line 31
-    iget-object v0, v0, Ldr7;->c:Ljh6;
+    :cond_0
+    invoke-virtual {p0}, Lk57;->getValue()Ljava/lang/Object;
 
+    .line 31
     .line 32
     .line 33
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v1
 
     .line 34
-    .line 35
-    .line 36
-    :cond_0
-    invoke-virtual {v0}, Ljh6;->getValue()Ljava/lang/Object;
+    move-object v2, v1
 
+    .line 35
+    check-cast v2, Lbm8;
+
+    .line 36
     .line 37
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 38
     .line 39
-    move-result-object v2
-
     .line 40
-    move-object v3, v2
+    sget-object v2, Lsu/happ/proxyutility/HappApplication;->I0:Lsu/happ/proxyutility/HappApplication;
 
     .line 41
-    check-cast v3, Lar7;
-
     .line 42
-    .line 43
-    invoke-static {v1, v3}, Ldr7;->e(Landroid/os/PowerManager;Lar7;)Lar7;
+    invoke-static {}, Lh31;->V()Lsu/happ/proxyutility/HappApplication;
 
+    .line 43
     .line 44
     .line 45
+    move-result-object v2
+
     .line 46
-    move-result-object v3
+    invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     .line 47
-    invoke-virtual {v0, v2, v3}, Ljh6;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 48
     .line 49
+    move-result-object v2
+
     .line 50
-    move-result v2
+    invoke-virtual {v0, v2}, Landroid/os/PowerManager;->isIgnoringBatteryOptimizations(Ljava/lang/String;)Z
 
     .line 51
-    if-eqz v2, :cond_0
-
     .line 52
     .line 53
-    :cond_1
+    move-result v2
+
+    .line 54
+    xor-int/lit8 v2, v2, 0x1
+
+    .line 55
+    .line 56
+    new-instance v3, Lbm8;
+
+    .line 57
+    .line 58
+    invoke-direct {v3, v2}, Lbm8;-><init>(Z)V
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-virtual {p0, v1, v3}, Lk57;->l(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v1
+
+    .line 65
+    if-eqz v1, :cond_0
+
+    .line 66
+    .line 67
     return-void
 .end method
 
-.method public final t()Landroidx/appcompat/widget/Toolbar;
-    .locals 1
+.method public final u()Landroidx/appcompat/widget/Toolbar;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Ln6;->q0:Landroidx/appcompat/widget/Toolbar;
+    iget-object p0, p0, Lx6;->z0:Landroidx/appcompat/widget/Toolbar;
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    return-object v0
+    return-object p0
 
     .line 11
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 12
     .line 13
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 14
     .line 15
     .line 16
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    throw v0
+    throw p0
 .end method
 
-.method public final v()Z
-    .locals 2
+.method public final w()Z
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->F0:Lzu6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->Q0:Lmm7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Lzq7;
+    check-cast p0, Lam8;
 
     .line 8
     .line 9
-    iget-object v1, v0, Lzq7;->Q:Ln6;
+    iget-object v0, p0, Lam8;->X:Lx6;
 
     .line 10
     .line 11
-    iget-object v1, v1, Ln6;->n0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v0, v0, Lx6;->w0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 12
     .line 13
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v0, v1}, Lzq7;->a(Landroid/view/View;)Z
+    invoke-virtual {p0, v0}, Lam8;->a(Landroid/view/View;)Z
 
     .line 17
     .line 18
     .line 19
-    move-result v0
+    move-result p0
 
     .line 20
-    return v0
+    return p0
 .end method
 
 .method public final z()Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->C0:Ln6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/vpn_settings/VpnSettingsActivity;->N0:Lx6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Ln6;->k0:Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
+    iget-object p0, p0, Lx6;->t0:Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    return-object v0
+    return-object p0
 
     .line 11
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 12
     .line 13
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 14
     .line 15
     .line 16
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    throw v0
+    throw p0
 .end method

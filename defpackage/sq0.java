@@ -1,39 +1,47 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class sq0 {
-    public final /* synthetic */ int a;
-    public final /* synthetic */ Object b;
+    public final nq0 a;
+    public final int b;
 
-    public /* synthetic */ sq0(int i, Object obj) {
-        this.a = i;
-        this.b = obj;
+    public sq0(nq0 nq0Var, int i) {
+        this.a = nq0Var;
+        this.b = i;
     }
 
-    public final void a() {
-        int i = this.a;
-        Object obj = this.b;
-        switch (i) {
-            case 0:
-                ((uq0) obj).A--;
-                break;
-            default:
-                ((yd6) obj).j--;
-                break;
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
+        if (!(obj instanceof sq0)) {
+            return false;
+        }
+        sq0 sq0Var = (sq0) obj;
+        return this.a.equals(sq0Var.a) && this.b == sq0Var.b;
     }
 
-    public final void b() {
-        int i = this.a;
-        Object obj = this.b;
-        switch (i) {
-            case 0:
-                ((uq0) obj).A++;
+    public final int hashCode() {
+        return Integer.hashCode(this.b) + (this.a.hashCode() * 31);
+    }
+
+    public final String toString() {
+        int i;
+        StringBuilder sb = new StringBuilder();
+        int i2 = 0;
+        while (true) {
+            i = this.b;
+            if (i2 >= i) {
                 break;
-            default:
-                ((yd6) obj).j++;
-                break;
+            }
+            sb.append("kotlin/Array<");
+            i2++;
         }
+        sb.append(this.a);
+        for (int i3 = 0; i3 < i; i3++) {
+            sb.append(">");
+        }
+        return sb.toString();
     }
 }

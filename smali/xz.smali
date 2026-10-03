@@ -1,138 +1,138 @@
-.class public final synthetic Lxz;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg72;
+.class public final enum Lxz;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:I
-
-.field public final synthetic R:Z
-
-.field public final synthetic S:Ljava/lang/Object;
+# static fields
+.field public static final synthetic X:[Lxz;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj72;Z)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    iput v0, p0, Lxz;->Q:I
-
-    .line 3
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    .line 6
-    .line 7
-    iput-object p1, p0, Lxz;->S:Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    iput-boolean p2, p0, Lxz;->R:Z
-
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public synthetic constructor <init>(ZLo94;)V
-    .locals 1
-
-    .line 12
-    const/4 v0, 0x0
-
-    iput v0, p0, Lxz;->Q:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-boolean p1, p0, Lxz;->R:Z
-
-    iput-object p2, p0, Lxz;->S:Ljava/lang/Object;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    iget v0, p0, Lxz;->Q:I
+    new-instance v0, Lxz;
 
     .line 2
     .line 3
-    sget-object v1, Lbh7;->a:Lbh7;
+    const-string v1, "PRESENT"
 
     .line 4
     .line 5
-    iget-boolean v2, p0, Lxz;->R:Z
+    const/4 v2, 0x0
 
     .line 6
-    .line 7
-    iget-object v3, p0, Lxz;->S:Ljava/lang/Object;
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 7
     .line 8
     .line 9
-    packed-switch v0, :pswitch_data_0
+    new-instance v1, Lxz;
 
     .line 10
     .line 11
-    .line 12
-    check-cast v3, Lj72;
+    const-string v2, "ABSENT"
 
+    .line 12
     .line 13
+    const/4 v3, 0x1
+
     .line 14
-    xor-int/lit8 v0, v2, 0x1
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 15
     .line 16
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 17
+    new-instance v2, Lxz;
+
     .line 18
     .line 19
-    move-result-object v0
+    const-string v3, "PRESENT_OPTIONAL"
 
     .line 20
-    invoke-interface {v3, v0}, Lj72;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 21
+    const/4 v4, 0x2
+
     .line 22
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 23
-    return-object v1
-
     .line 24
-    :pswitch_0
-    check-cast v3, Lo94;
-
     .line 25
+    new-instance v3, Lxz;
+
     .line 26
-    if-eqz v2, :cond_0
-
     .line 27
+    const-string v4, "ABSENT_OPTIONAL"
+
     .line 28
-    invoke-interface {v3, v1}, Lo94;->j(Ljava/lang/Object;)Z
-
     .line 29
+    const/4 v5, 0x3
+
     .line 30
+    invoke-direct {v3, v4, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 31
-    :cond_0
-    return-object v1
-
     .line 32
-    nop
-
     .line 33
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    filled-new-array {v0, v1, v2, v3}, [Lxz;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    sput-object v0, Lxz;->X:[Lxz;
+
+    .line 38
+    .line 39
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lxz;
+    .locals 1
+
+    .line 1
+    const-class v0, Lxz;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lxz;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lxz;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lxz;->X:[Lxz;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lxz;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

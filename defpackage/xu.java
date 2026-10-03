@@ -1,32 +1,17 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class xu {
-    public final pv a;
-    public final pv b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class xu extends jq4 {
+    public static final xu X = new xu(tr3.class, "flags", "getFlags$org_jetbrains_kotlin_kotlin_metadata()I", 0);
 
-    public xu(pv pvVar, pv pvVar2) {
-        this.a = pvVar;
-        this.b = pvVar2;
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((tr3) obj).a = ((Number) obj2).intValue();
     }
 
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (!(obj instanceof xu)) {
-            return false;
-        }
-        xu xuVar = (xu) obj;
-        return this.a.equals(xuVar.a) && this.b.equals(xuVar.b);
-    }
-
-    public final int hashCode() {
-        return ((this.a.hashCode() ^ 1000003) * 1000003) ^ this.b.hashCode();
-    }
-
-    public final String toString() {
-        return "DualOutConfig{primaryOutConfig=" + this.a + ", secondaryOutConfig=" + this.b + "}";
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return Integer.valueOf(((tr3) obj).a);
     }
 }

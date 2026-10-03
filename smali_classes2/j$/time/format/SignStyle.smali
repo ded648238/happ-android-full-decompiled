@@ -1,6 +1,6 @@
 .class public final enum Lj$/time/format/SignStyle;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -29,7 +29,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 7
 
     .line 1
     new-instance v0, Lj$/time/format/SignStyle;
@@ -56,14 +56,14 @@
 
     .line 12
     .line 13
-    const-string v3, "ALWAYS"
+    const-string v2, "ALWAYS"
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
@@ -72,97 +72,78 @@
 
     .line 20
     .line 21
-    new-instance v3, Lj$/time/format/SignStyle;
+    new-instance v2, Lj$/time/format/SignStyle;
 
     .line 22
     .line 23
-    const-string v5, "NEVER"
+    const-string v3, "NEVER"
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    const/4 v4, 0x2
 
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Lj$/time/format/SignStyle;->NEVER:Lj$/time/format/SignStyle;
+    sput-object v2, Lj$/time/format/SignStyle;->NEVER:Lj$/time/format/SignStyle;
 
     .line 30
     .line 31
-    new-instance v5, Lj$/time/format/SignStyle;
+    new-instance v3, Lj$/time/format/SignStyle;
 
     .line 32
     .line 33
-    const-string v7, "NOT_NEGATIVE"
+    const-string v4, "NOT_NEGATIVE"
 
     .line 34
     .line 35
-    const/4 v8, 0x3
+    const/4 v5, 0x3
 
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v4, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v5, Lj$/time/format/SignStyle;->NOT_NEGATIVE:Lj$/time/format/SignStyle;
+    sput-object v3, Lj$/time/format/SignStyle;->NOT_NEGATIVE:Lj$/time/format/SignStyle;
 
     .line 40
     .line 41
-    new-instance v7, Lj$/time/format/SignStyle;
+    new-instance v4, Lj$/time/format/SignStyle;
 
     .line 42
     .line 43
-    const-string v9, "EXCEEDS_PAD"
+    const-string v5, "EXCEEDS_PAD"
 
     .line 44
     .line 45
-    const/4 v10, 0x4
+    const/4 v6, 0x4
 
     .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v4, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 47
     .line 48
     .line 49
-    sput-object v7, Lj$/time/format/SignStyle;->EXCEEDS_PAD:Lj$/time/format/SignStyle;
+    sput-object v4, Lj$/time/format/SignStyle;->EXCEEDS_PAD:Lj$/time/format/SignStyle;
 
     .line 50
     .line 51
-    const/4 v9, 0x5
+    filled-new-array {v0, v1, v2, v3, v4}, [Lj$/time/format/SignStyle;
 
     .line 52
-    new-array v9, v9, [Lj$/time/format/SignStyle;
-
     .line 53
     .line 54
-    aput-object v0, v9, v2
+    move-result-object v0
 
     .line 55
+    sput-object v0, Lj$/time/format/SignStyle;->a:[Lj$/time/format/SignStyle;
+
     .line 56
-    aput-object v1, v9, v4
-
     .line 57
-    .line 58
-    aput-object v3, v9, v6
-
-    .line 59
-    .line 60
-    aput-object v5, v9, v8
-
-    .line 61
-    .line 62
-    aput-object v7, v9, v10
-
-    .line 63
-    .line 64
-    sput-object v9, Lj$/time/format/SignStyle;->a:[Lj$/time/format/SignStyle;
-
-    .line 65
-    .line 66
     return-void
 .end method
 

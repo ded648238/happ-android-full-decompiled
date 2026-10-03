@@ -1,51 +1,53 @@
-.class public final Lh53;
-.super Le21;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# instance fields
-.field public final e:Ljava/lang/reflect/Method;
+.class public abstract Lh53;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/reflect/Method;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    .line 6
-    .line 7
-    iput-object p1, p0, Lh53;->e:Ljava/lang/reflect/Method;
-
-    .line 8
-    .line 9
-    return-void
-.end method
-
-
-# virtual methods
-.method public final o()Ljava/lang/String;
+.method public static final a(Ljava/lang/String;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lh53;->e:Ljava/lang/reflect/Method;
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
     .line 2
     .line 3
-    invoke-static {v0}, Luv3;->A(Ljava/lang/reflect/Method;)Ljava/lang/String;
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    throw v0
+.end method
 
-    .line 7
-    return-object v0
+.method public static final b(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v0
+.end method
+
+.method public static final c(Ljava/lang/String;)Ljava/lang/Void;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v0
 .end method

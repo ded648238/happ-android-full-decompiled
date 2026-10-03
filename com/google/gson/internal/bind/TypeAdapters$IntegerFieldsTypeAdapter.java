@@ -1,13 +1,12 @@
 package com.google.gson.internal.bind;
 
-import defpackage.h43;
-import defpackage.r23;
-import java.io.IOException;
+import defpackage.nk3;
+import defpackage.xi3;
 import java.util.Arrays;
 import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 abstract class TypeAdapters$IntegerFieldsTypeAdapter<T> extends com.google.gson.b {
     public final List a;
 
@@ -16,43 +15,43 @@ abstract class TypeAdapters$IntegerFieldsTypeAdapter<T> extends com.google.gson.
     }
 
     @Override // com.google.gson.b
-    public final Object b(r23 r23Var) throws IOException {
-        if (r23Var.k0() == 9) {
-            r23Var.R();
+    public final Object b(xi3 xi3Var) {
+        if (xi3Var.t0() == 9) {
+            xi3Var.X();
             return null;
         }
-        r23Var.t0();
+        xi3Var.E0();
         List list = this.a;
         long[] jArr = new long[list.size()];
-        while (r23Var.k0() != 4) {
-            int iIndexOf = list.indexOf(r23Var.V());
-            if (iIndexOf >= 0) {
-                jArr[iIndexOf] = r23Var.nextLong();
+        while (xi3Var.t0() != 4) {
+            int indexOf = list.indexOf(xi3Var.d0());
+            if (indexOf >= 0) {
+                jArr[indexOf] = xi3Var.nextLong();
             } else {
-                r23Var.r();
+                xi3Var.w();
             }
         }
-        r23Var.Z();
+        xi3Var.i0();
         return d(jArr);
     }
 
     @Override // com.google.gson.b
-    public final void c(h43 h43Var, Object obj) throws IOException {
+    public final void c(nk3 nk3Var, Object obj) {
         if (obj == null) {
-            h43Var.v();
+            nk3Var.v();
             return;
         }
-        h43Var.t0();
-        long[] jArrE = e(obj);
+        nk3Var.E0();
+        long[] e = e(obj);
         int i = 0;
         while (true) {
             List list = this.a;
             if (i >= list.size()) {
-                h43Var.Z();
+                nk3Var.i0();
                 return;
             } else {
-                h43Var.i((String) list.get(i));
-                h43Var.R(jArrE[i]);
+                nk3Var.m((String) list.get(i));
+                nk3Var.X(e[i]);
                 i++;
             }
         }

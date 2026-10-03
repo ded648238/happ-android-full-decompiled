@@ -1,7 +1,21 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface me6 {
-    public static final kq0 A = new kq0(26);
+import okhttp3.HttpUrl;
+import su.happ.proxyutility.HappApplication;
+import su.happ.proxyutility.dto.enums.ERoutingSettingsType;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class me6 extends ij8 {
+    public final rb6 b;
+    public final k57 c;
+    public final gw5 d;
+
+    public me6() {
+        HappApplication happApplication = HappApplication.I0;
+        this.b = h31.V().f();
+        k57 a = l57.a(new ke6(HttpUrl.FRAGMENT_ENCODE_SET, HttpUrl.FRAGMENT_ENCODE_SET, ERoutingSettingsType.PROXY));
+        this.c = a;
+        this.d = h31.p(a);
+    }
 }

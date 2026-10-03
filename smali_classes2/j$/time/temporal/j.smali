@@ -1,6 +1,6 @@
 .class public final enum Lj$/time/temporal/j;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lj$/time/temporal/TemporalField;
@@ -122,38 +122,18 @@
 
     .line 47
     .line 48
-    const/4 v3, 0x3
+    filled-new-array {v0, v1, v2}, [Lj$/time/temporal/j;
 
     .line 49
-    new-array v3, v3, [Lj$/time/temporal/j;
-
     .line 50
     .line 51
-    const/4 v4, 0x0
+    move-result-object v0
 
     .line 52
-    aput-object v0, v3, v4
+    sput-object v0, Lj$/time/temporal/j;->d:[Lj$/time/temporal/j;
 
     .line 53
     .line 54
-    const/4 v0, 0x1
-
-    .line 55
-    aput-object v1, v3, v0
-
-    .line 56
-    .line 57
-    const/4 v0, 0x2
-
-    .line 58
-    aput-object v2, v3, v0
-
-    .line 59
-    .line 60
-    sput-object v3, Lj$/time/temporal/j;->d:[Lj$/time/temporal/j;
-
-    .line 61
-    .line 62
     return-void
 .end method
 
@@ -257,69 +237,7 @@
 
 
 # virtual methods
-.method public final g(Lj$/time/temporal/TemporalAccessor;)Z
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
-
-    .line 2
-    .line 3
-    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->d(Lj$/time/temporal/TemporalField;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result p1
-
-    .line 7
-    return p1
-.end method
-
-.method public final h(Lj$/time/temporal/TemporalAccessor;)Lj$/time/temporal/s;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
-
-    .line 2
-    .line 3
-    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->d(Lj$/time/temporal/TemporalField;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result p1
-
-    .line 7
-    if-eqz p1, :cond_0
-
-    .line 8
-    .line 9
-    iget-object p1, p0, Lj$/time/temporal/j;->b:Lj$/time/temporal/s;
-
-    .line 10
-    .line 11
-    return-object p1
-
-    .line 12
-    :cond_0
-    const-string p1, "Unsupported field: "
-
-    .line 13
-    .line 14
-    invoke-static {p0, p1}, Lj$/time/f;->i(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    const/4 p1, 0x0
-
-    .line 18
-    return-object p1
-.end method
-
-.method public final i(Ljava/util/Map;Lj$/time/format/u;Lj$/time/format/v;)Lj$/time/temporal/TemporalAccessor;
+.method public final C(Ljava/util/Map;Lj$/time/format/u;Lj$/time/format/v;)Lj$/time/temporal/TemporalAccessor;
     .locals 4
 
     .line 1
@@ -343,7 +261,7 @@
     move-result-wide v0
 
     .line 11
-    invoke-static {p2}, Lj$/com/android/tools/r8/a;->v(Lj$/time/temporal/TemporalAccessor;)Lj$/time/chrono/k;
+    invoke-static {p2}, Lj$/time/chrono/k;->o(Lj$/time/temporal/TemporalAccessor;)Lj$/time/chrono/k;
 
     .line 12
     .line 13
@@ -363,7 +281,7 @@
 
     .line 20
     .line 21
-    invoke-static {v0, v1, v2, v3}, Lj$/com/android/tools/r8/a;->D(JJ)J
+    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->subtractExact(JJ)J
 
     .line 22
     .line 23
@@ -371,15 +289,15 @@
     move-result-wide p2
 
     .line 25
-    invoke-interface {p1, p2, p3}, Lj$/time/chrono/k;->f(J)Lj$/time/chrono/ChronoLocalDate;
+    invoke-interface {p1, p2, p3}, Lj$/time/chrono/k;->n(J)Lj$/time/chrono/ChronoLocalDate;
 
     .line 26
     .line 27
     .line 28
-    move-result-object p1
+    move-result-object p0
 
     .line 29
-    return-object p1
+    return-object p0
 
     .line 30
     :cond_0
@@ -395,47 +313,37 @@
     sub-long/2addr v0, v2
 
     .line 36
-    invoke-interface {p1, v0, v1}, Lj$/time/chrono/k;->f(J)Lj$/time/chrono/ChronoLocalDate;
+    invoke-interface {p1, v0, v1}, Lj$/time/chrono/k;->n(J)Lj$/time/chrono/ChronoLocalDate;
 
     .line 37
     .line 38
     .line 39
-    move-result-object p1
+    move-result-object p0
 
     .line 40
-    return-object p1
+    return-object p0
 .end method
 
-.method public final isDateBased()Z
-    .locals 1
+.method public final F()Lj$/time/temporal/s;
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    return v0
-.end method
-
-.method public final l()Lj$/time/temporal/s;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj$/time/temporal/j;->b:Lj$/time/temporal/s;
+    iget-object p0, p0, Lj$/time/temporal/j;->b:Lj$/time/temporal/s;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final t(Lj$/time/temporal/TemporalAccessor;)J
-    .locals 4
+.method public final J(Lj$/time/temporal/TemporalAccessor;)J
+    .locals 2
 
     .line 1
     sget-object v0, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
 
     .line 2
     .line 3
-    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->x(Lj$/time/temporal/TemporalField;)J
+    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->k(Lj$/time/temporal/TemporalField;)J
 
     .line 4
     .line 5
@@ -443,28 +351,17 @@
     move-result-wide v0
 
     .line 7
-    iget-wide v2, p0, Lj$/time/temporal/j;->c:J
+    iget-wide p0, p0, Lj$/time/temporal/j;->c:J
 
     .line 8
     .line 9
-    add-long/2addr v0, v2
+    add-long/2addr v0, p0
 
     .line 10
     return-wide v0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj$/time/temporal/j;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final x(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
+.method public final O(Lj$/time/temporal/l;J)Lj$/time/temporal/l;
     .locals 3
 
     .line 1
@@ -492,7 +389,7 @@
 
     .line 12
     .line 13
-    invoke-static {p2, p3, v1, v2}, Lj$/com/android/tools/r8/a;->D(JJ)J
+    invoke-static {p2, p3, v1, v2}, Ljava/lang/Math;->subtractExact(JJ)J
 
     .line 14
     .line 15
@@ -505,10 +402,10 @@
     .line 18
     .line 19
     .line 20
-    move-result-object p1
+    move-result-object p0
 
     .line 21
-    return-object p1
+    return-object p0
 
     .line 22
     :cond_0
@@ -529,20 +426,20 @@
     .line 29
     .line 30
     .line 31
-    iget-object v1, p0, Lj$/time/temporal/j;->a:Ljava/lang/String;
+    iget-object p0, p0, Lj$/time/temporal/j;->a:Ljava/lang/String;
 
     .line 32
     .line 33
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 34
     .line 35
     .line 36
-    const-string v1, " "
+    const-string p0, " "
 
     .line 37
     .line 38
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 39
     .line 40
@@ -557,13 +454,96 @@
     .line 45
     .line 46
     .line 47
-    move-result-object p2
+    move-result-object p0
 
     .line 48
-    invoke-direct {p1, p2}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 49
     .line 50
     .line 51
     throw p1
+.end method
+
+.method public final isDateBased()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x1
+
+    .line 2
+    return p0
+.end method
+
+.method public final t(Lj$/time/temporal/TemporalAccessor;)Z
+    .locals 0
+
+    .line 1
+    sget-object p0, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
+
+    .line 2
+    .line 3
+    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalAccessor;->i(Lj$/time/temporal/TemporalField;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lj$/time/temporal/j;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final x(Lj$/time/temporal/TemporalAccessor;)Lj$/time/temporal/s;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lj$/time/temporal/ChronoField;->EPOCH_DAY:Lj$/time/temporal/ChronoField;
+
+    .line 2
+    .line 3
+    invoke-interface {p1, v0}, Lj$/time/temporal/TemporalAccessor;->i(Lj$/time/temporal/TemporalField;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    if-eqz p1, :cond_0
+
+    .line 8
+    .line 9
+    iget-object p0, p0, Lj$/time/temporal/j;->b:Lj$/time/temporal/s;
+
+    .line 10
+    .line 11
+    return-object p0
+
+    .line 12
+    :cond_0
+    const-string p1, "Unsupported field: "
+
+    .line 13
+    .line 14
+    invoke-static {p1, p0}, Lj$/time/g;->g(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 15
+    .line 16
+    .line 17
+    const/4 p0, 0x0
+
+    .line 18
+    return-object p0
 .end method

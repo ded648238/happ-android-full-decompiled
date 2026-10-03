@@ -1,31 +1,31 @@
 .class public final Lio/sentry/rrweb/a;
 .super Lio/sentry/rrweb/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # instance fields
-.field public S:Ljava/lang/String;
+.field public Z:Ljava/lang/String;
 
-.field public T:D
+.field public c0:D
 
-.field public U:Ljava/lang/String;
+.field public d0:Ljava/lang/String;
 
-.field public V:Ljava/lang/String;
+.field public e0:Ljava/lang/String;
 
-.field public W:Ljava/lang/String;
+.field public f0:Ljava/lang/String;
 
-.field public X:Lio/sentry/m5;
+.field public g0:Lio/sentry/o5;
 
-.field public Y:Lj$/util/concurrent/ConcurrentHashMap;
+.field public h0:Ljava/util/concurrent/ConcurrentHashMap;
 
-.field public Z:Ljava/util/HashMap;
+.field public i0:Ljava/util/HashMap;
 
-.field public a0:Lj$/util/concurrent/ConcurrentHashMap;
+.field public j0:Ljava/util/concurrent/ConcurrentHashMap;
 
-.field public b0:Lj$/util/concurrent/ConcurrentHashMap;
+.field public k0:Ljava/util/concurrent/ConcurrentHashMap;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     .line 7
     .line 8
-    iput-object v0, p0, Lio/sentry/rrweb/a;->S:Ljava/lang/String;
+    iput-object v0, p0, Lio/sentry/rrweb/a;->Z:Ljava/lang/String;
 
     .line 9
     .line 10
@@ -55,7 +55,7 @@
 
 
 # virtual methods
-.method public final serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 4
 
     .line 1
@@ -77,7 +77,7 @@
     .line 9
     .line 10
     .line 11
-    iget-object v1, p0, Lio/sentry/rrweb/b;->Q:Lio/sentry/rrweb/c;
+    iget-object v1, p0, Lio/sentry/rrweb/b;->X:Lio/sentry/rrweb/c;
 
     .line 12
     .line 13
@@ -95,7 +95,7 @@
     .line 19
     .line 20
     .line 21
-    iget-wide v2, p0, Lio/sentry/rrweb/b;->R:J
+    iget-wide v2, p0, Lio/sentry/rrweb/b;->Y:J
 
     .line 22
     .line 23
@@ -127,7 +127,7 @@
     .line 37
     .line 38
     .line 39
-    iget-object v3, p0, Lio/sentry/rrweb/a;->S:Ljava/lang/String;
+    iget-object v3, p0, Lio/sentry/rrweb/a;->Z:Ljava/lang/String;
 
     .line 40
     .line 41
@@ -150,7 +150,7 @@
     .line 50
     .line 51
     .line 52
-    iget-object v3, p0, Lio/sentry/rrweb/a;->U:Ljava/lang/String;
+    iget-object v3, p0, Lio/sentry/rrweb/a;->d0:Ljava/lang/String;
 
     .line 53
     .line 54
@@ -163,7 +163,7 @@
     .line 57
     .line 58
     .line 59
-    iget-object v0, p0, Lio/sentry/rrweb/a;->U:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->d0:Ljava/lang/String;
 
     .line 60
     .line 61
@@ -178,7 +178,7 @@
     .line 65
     .line 66
     .line 67
-    iget-wide v0, p0, Lio/sentry/rrweb/a;->T:D
+    iget-wide v0, p0, Lio/sentry/rrweb/a;->c0:D
 
     .line 68
     .line 69
@@ -195,7 +195,7 @@
     .line 74
     .line 75
     .line 76
-    iget-object v0, p0, Lio/sentry/rrweb/a;->V:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->e0:Ljava/lang/String;
 
     .line 77
     .line 78
@@ -212,7 +212,7 @@
     .line 83
     .line 84
     .line 85
-    iget-object v0, p0, Lio/sentry/rrweb/a;->V:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->e0:Ljava/lang/String;
 
     .line 86
     .line 87
@@ -222,7 +222,7 @@
     .line 89
     .line 90
     :cond_1
-    iget-object v0, p0, Lio/sentry/rrweb/a;->W:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->f0:Ljava/lang/String;
 
     .line 91
     .line 92
@@ -239,7 +239,7 @@
     .line 97
     .line 98
     .line 99
-    iget-object v0, p0, Lio/sentry/rrweb/a;->W:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->f0:Ljava/lang/String;
 
     .line 100
     .line 101
@@ -249,7 +249,7 @@
     .line 103
     .line 104
     :cond_2
-    iget-object v0, p0, Lio/sentry/rrweb/a;->X:Lio/sentry/m5;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->g0:Lio/sentry/o5;
 
     .line 105
     .line 106
@@ -266,7 +266,7 @@
     .line 111
     .line 112
     .line 113
-    iget-object v0, p0, Lio/sentry/rrweb/a;->X:Lio/sentry/m5;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->g0:Lio/sentry/o5;
 
     .line 114
     .line 115
@@ -276,7 +276,7 @@
     .line 117
     .line 118
     :cond_3
-    iget-object v0, p0, Lio/sentry/rrweb/a;->Y:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->h0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 119
     .line 120
@@ -289,7 +289,7 @@
     .line 123
     .line 124
     .line 125
-    iget-object v0, p0, Lio/sentry/rrweb/a;->Y:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->h0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 126
     .line 127
@@ -299,7 +299,7 @@
     .line 129
     .line 130
     :cond_4
-    iget-object v0, p0, Lio/sentry/rrweb/a;->a0:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->j0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 131
     .line 132
@@ -348,11 +348,11 @@
 
     .line 153
     .line 154
-    iget-object v2, p0, Lio/sentry/rrweb/a;->a0:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v2, p0, Lio/sentry/rrweb/a;->j0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 155
     .line 156
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->c(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 157
     .line 158
@@ -366,7 +366,7 @@
     .line 161
     .line 162
     .line 163
-    iget-object v0, p0, Lio/sentry/rrweb/a;->b0:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->k0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 164
     .line 165
@@ -415,11 +415,11 @@
 
     .line 186
     .line 187
-    iget-object v2, p0, Lio/sentry/rrweb/a;->b0:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v2, p0, Lio/sentry/rrweb/a;->k0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 188
     .line 189
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->c(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 190
     .line 191
@@ -433,7 +433,7 @@
     .line 194
     .line 195
     .line 196
-    iget-object v0, p0, Lio/sentry/rrweb/a;->Z:Ljava/util/HashMap;
+    iget-object v0, p0, Lio/sentry/rrweb/a;->i0:Ljava/util/HashMap;
 
     .line 197
     .line 198
@@ -482,11 +482,11 @@
 
     .line 219
     .line 220
-    iget-object v2, p0, Lio/sentry/rrweb/a;->Z:Ljava/util/HashMap;
+    iget-object v2, p0, Lio/sentry/rrweb/a;->i0:Ljava/util/HashMap;
 
     .line 221
     .line 222
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/HashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->a(Ljava/util/HashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 223
     .line 224

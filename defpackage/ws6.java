@@ -1,20 +1,22 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum ws6 {
-    VGA(0),
-    s720p(1),
-    PREVIEW(2),
-    s1440p(3),
-    RECORD(4),
-    MAXIMUM(5),
-    ULTRA_MAXIMUM(6),
-    NOT_SUPPORT(7);
+import android.app.Service;
+import su.happ.proxyutility.dto.ServerConfig;
 
-    public final int Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public interface ws6 {
+    void b();
 
-    ws6(int i) {
-        this.Q = i;
-    }
+    long c();
+
+    void d();
+
+    void f();
+
+    Service g();
+
+    boolean i();
+
+    void j(ServerConfig serverConfig);
 }

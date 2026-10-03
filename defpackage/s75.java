@@ -1,187 +1,148 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class s75 {
-    public static int activatedAnimationDuration = 2130968614;
-    public static int arrowBgColor = 2130968645;
-    public static int arrowColor = 2130968646;
-    public static int arrowRadius = 2130968648;
-    public static int baseCardViewStyle = 2130968696;
-    public static int browsePaddingBottom = 2130968737;
-    public static int browsePaddingEnd = 2130968738;
-    public static int browsePaddingStart = 2130968739;
-    public static int browsePaddingTop = 2130968740;
-    public static int browseRowsFadingEdgeLength = 2130968741;
-    public static int browseRowsMarginStart = 2130968742;
-    public static int browseRowsMarginTop = 2130968743;
-    public static int browseTitleIconStyle = 2130968744;
-    public static int browseTitleTextStyle = 2130968745;
-    public static int browseTitleViewLayout = 2130968746;
-    public static int browseTitleViewStyle = 2130968747;
-    public static int cardBackground = 2130968766;
-    public static int cardForeground = 2130968770;
-    public static int cardType = 2130968774;
-    public static int closed_captioning = 2130968852;
-    public static int columnCount = 2130968995;
-    public static int datePickerFormat = 2130969088;
-    public static int datePickerStyle = 2130969089;
-    public static int defaultBrandColor = 2130969095;
-    public static int defaultBrandColorDark = 2130969096;
-    public static int defaultSearchBrightColor = 2130969101;
-    public static int defaultSearchColor = 2130969102;
-    public static int defaultSearchIcon = 2130969103;
-    public static int defaultSearchIconColor = 2130969104;
-    public static int defaultSectionHeaderColor = 2130969105;
-    public static int detailsActionButtonStyle = 2130969113;
-    public static int detailsDescriptionBodyStyle = 2130969114;
-    public static int detailsDescriptionSubtitleStyle = 2130969115;
-    public static int detailsDescriptionTitleStyle = 2130969116;
-    public static int dotBgColor = 2130969140;
-    public static int dotToArrowGap = 2130969141;
-    public static int dotToDotGap = 2130969142;
-    public static int errorMessageStyle = 2130969198;
-    public static int extraVisibility = 2130969237;
-    public static int fast_forward = 2130969252;
-    public static int guidanceBreadcrumbStyle = 2130969332;
-    public static int guidanceContainerStyle = 2130969333;
-    public static int guidanceDescriptionStyle = 2130969334;
-    public static int guidanceEntryAnimation = 2130969335;
-    public static int guidanceIconStyle = 2130969336;
-    public static int guidanceTitleStyle = 2130969337;
-    public static int guidedActionCheckedAnimation = 2130969338;
-    public static int guidedActionContentWidth = 2130969339;
-    public static int guidedActionContentWidthNoIcon = 2130969340;
-    public static int guidedActionContentWidthWeight = 2130969341;
-    public static int guidedActionContentWidthWeightTwoPanels = 2130969342;
-    public static int guidedActionDescriptionMinLines = 2130969343;
-    public static int guidedActionDisabledChevronAlpha = 2130969344;
-    public static int guidedActionEnabledChevronAlpha = 2130969345;
-    public static int guidedActionItemCheckmarkStyle = 2130969346;
-    public static int guidedActionItemChevronStyle = 2130969347;
-    public static int guidedActionItemContainerStyle = 2130969348;
-    public static int guidedActionItemContentStyle = 2130969349;
-    public static int guidedActionItemDescriptionStyle = 2130969350;
-    public static int guidedActionItemIconStyle = 2130969351;
-    public static int guidedActionItemTitleStyle = 2130969352;
-    public static int guidedActionPressedAnimation = 2130969353;
-    public static int guidedActionTitleMaxLines = 2130969354;
-    public static int guidedActionTitleMinLines = 2130969355;
-    public static int guidedActionUncheckedAnimation = 2130969356;
-    public static int guidedActionUnpressedAnimation = 2130969357;
-    public static int guidedActionVerticalPadding = 2130969358;
-    public static int guidedActionsBackground = 2130969359;
-    public static int guidedActionsBackgroundDark = 2130969360;
-    public static int guidedActionsContainerStyle = 2130969361;
-    public static int guidedActionsElevation = 2130969362;
-    public static int guidedActionsEntryAnimation = 2130969363;
-    public static int guidedActionsListStyle = 2130969364;
-    public static int guidedActionsSelectorDrawable = 2130969365;
-    public static int guidedActionsSelectorHideAnimation = 2130969366;
-    public static int guidedActionsSelectorShowAnimation = 2130969367;
-    public static int guidedActionsSelectorStyle = 2130969368;
-    public static int guidedActionsShadowWidth = 2130969369;
-    public static int guidedButtonActionsListStyle = 2130969370;
-    public static int guidedButtonActionsWidthWeight = 2130969371;
-    public static int guidedStepBackground = 2130969372;
-    public static int guidedStepEntryAnimation = 2130969373;
-    public static int guidedStepExitAnimation = 2130969374;
-    public static int guidedStepHeightWeight = 2130969375;
-    public static int guidedStepImeAppearingAnimation = 2130969376;
-    public static int guidedStepImeDisappearingAnimation = 2130969377;
-    public static int guidedStepKeyline = 2130969378;
-    public static int guidedStepReentryAnimation = 2130969379;
-    public static int guidedStepReturnAnimation = 2130969380;
-    public static int guidedStepTheme = 2130969381;
-    public static int guidedStepThemeFlag = 2130969382;
-    public static int guidedSubActionsListStyle = 2130969383;
-    public static int headerStyle = 2130969389;
-    public static int headersVerticalGridStyle = 2130969390;
-    public static int high_quality = 2130969401;
-    public static int imageCardViewBadgeStyle = 2130969438;
-    public static int imageCardViewContentStyle = 2130969439;
-    public static int imageCardViewImageStyle = 2130969440;
-    public static int imageCardViewInfoAreaStyle = 2130969441;
-    public static int imageCardViewStyle = 2130969442;
-    public static int imageCardViewTitleStyle = 2130969443;
-    public static int infoAreaBackground = 2130969461;
-    public static int infoVisibility = 2130969462;
-    public static int is24HourFormat = 2130969467;
-    public static int itemsVerticalGridStyle = 2130969505;
-    public static int layout_viewType = 2130969602;
-    public static int lbDotRadius = 2130969605;
-    public static int lbImageCardViewType = 2130969606;
-    public static int lb_slideEdge = 2130969607;
-    public static int maintainLineSpacing = 2130969635;
-    public static int onboardingDescriptionStyle = 2130969801;
-    public static int onboardingHeaderStyle = 2130969802;
-    public static int onboardingLogoStyle = 2130969803;
-    public static int onboardingMainIconStyle = 2130969804;
-    public static int onboardingNavigatorContainerStyle = 2130969805;
-    public static int onboardingPageIndicatorStyle = 2130969806;
-    public static int onboardingStartButtonStyle = 2130969807;
-    public static int onboardingTheme = 2130969808;
-    public static int onboardingTitleStyle = 2130969809;
-    public static int overlayDimActiveLevel = 2130969815;
-    public static int overlayDimDimmedLevel = 2130969816;
-    public static int overlayDimMaskColor = 2130969817;
-    public static int pause = 2130969837;
-    public static int pickerItemLayout = 2130969844;
-    public static int pickerItemTextViewId = 2130969845;
-    public static int pickerStyle = 2130969846;
-    public static int picture_in_picture = 2130969847;
-    public static int pinPickerStyle = 2130969848;
-    public static int play = 2130969855;
-    public static int playbackControlButtonLabelStyle = 2130969856;
-    public static int playbackControlsActionIcons = 2130969857;
-    public static int playbackControlsAutoHideTickleTimeout = 2130969858;
-    public static int playbackControlsAutoHideTimeout = 2130969859;
-    public static int playbackControlsButtonStyle = 2130969860;
-    public static int playbackControlsIconHighlightColor = 2130969861;
-    public static int playbackControlsTimeStyle = 2130969862;
-    public static int playbackMediaItemDetailsStyle = 2130969863;
-    public static int playbackMediaItemDurationStyle = 2130969864;
-    public static int playbackMediaItemNameStyle = 2130969865;
-    public static int playbackMediaItemNumberStyle = 2130969866;
-    public static int playbackMediaItemNumberViewFlipperLayout = 2130969867;
-    public static int playbackMediaItemNumberViewFlipperStyle = 2130969868;
-    public static int playbackMediaItemPaddingStart = 2130969869;
-    public static int playbackMediaItemRowStyle = 2130969870;
-    public static int playbackMediaItemSeparatorStyle = 2130969871;
-    public static int playbackMediaListHeaderStyle = 2130969872;
-    public static int playbackMediaListHeaderTitleStyle = 2130969873;
-    public static int playbackPaddingEnd = 2130969874;
-    public static int playbackPaddingStart = 2130969875;
-    public static int playbackProgressPrimaryColor = 2130969876;
-    public static int playbackProgressSecondaryColor = 2130969877;
-    public static int repeat = 2130969926;
-    public static int repeat_one = 2130969927;
-    public static int resizeTrigger = 2130969928;
-    public static int resizedPaddingAdjustmentBottom = 2130969929;
-    public static int resizedPaddingAdjustmentTop = 2130969930;
-    public static int resizedTextSize = 2130969931;
-    public static int rewind = 2130969934;
-    public static int rowHeaderDescriptionStyle = 2130969940;
-    public static int rowHeaderDockStyle = 2130969941;
-    public static int rowHeaderStyle = 2130969942;
-    public static int rowHorizontalGridStyle = 2130969944;
-    public static int rowHoverCardDescriptionStyle = 2130969945;
-    public static int rowHoverCardTitleStyle = 2130969946;
-    public static int rowsVerticalGridStyle = 2130969947;
-    public static int searchOrbBrightColor = 2130969958;
-    public static int searchOrbColor = 2130969959;
-    public static int searchOrbIcon = 2130969960;
-    public static int searchOrbIconColor = 2130969961;
-    public static int searchOrbViewStyle = 2130969962;
-    public static int sectionHeaderStyle = 2130969967;
-    public static int selectedAnimationDelay = 2130969974;
-    public static int selectedAnimationDuration = 2130969975;
-    public static int shuffle = 2130970029;
-    public static int skip_next = 2130970041;
-    public static int skip_previous = 2130970042;
-    public static int thumb_down = 2130970267;
-    public static int thumb_down_outline = 2130970268;
-    public static int thumb_up = 2130970269;
-    public static int thumb_up_outline = 2130970270;
-    public static int timePickerStyle = 2130970281;
-    public static int useCurrentTime = 2130970352;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class s75 implements CharSequence {
+    public CharSequence X;
+    public up0 Y;
+    public int Z;
+    public int c0;
+
+    public final void a(int i, int i2, int i3, CharSequence charSequence) {
+        if (i > i2) {
+            j53.a("start=" + i + " > end=" + i2);
+        }
+        if (i3 < 0) {
+            j53.a("textStart=0 > textEnd=" + i3);
+        }
+        if (i < 0) {
+            j53.a("start must be non-negative, but was " + i);
+        }
+        up0 up0Var = this.Y;
+        if (up0Var == null) {
+            int max = Math.max(255, i3 + 128);
+            char[] cArr = new char[max];
+            int min = Math.min(i, 64);
+            int min2 = Math.min(this.X.length() - i2, 64);
+            int i4 = i - min;
+            mx7.m(this.X, cArr, 0, i4, i);
+            int i5 = max - min2;
+            int i6 = min2 + i2;
+            mx7.m(this.X, cArr, i5, i2, i6);
+            mx7.m(charSequence, cArr, min, 0, i3);
+            up0 up0Var2 = new up0((byte) 0, 1);
+            up0Var2.b = max;
+            up0Var2.e = cArr;
+            up0Var2.c = min + i3;
+            up0Var2.d = i5;
+            this.Y = up0Var2;
+            this.Z = i4;
+            this.c0 = i6;
+            return;
+        }
+        int i7 = this.Z;
+        int i8 = i - i7;
+        int i9 = i2 - i7;
+        if (i8 < 0 || i9 > up0Var.b - up0Var.f()) {
+            this.X = toString();
+            this.Y = null;
+            this.Z = -1;
+            this.c0 = -1;
+            a(i, i2, i3, charSequence);
+            return;
+        }
+        int i10 = i3 - (i9 - i8);
+        if (i10 > up0Var.f()) {
+            int f = i10 - up0Var.f();
+            int i11 = up0Var.b;
+            do {
+                i11 *= 2;
+            } while (i11 - up0Var.b < f);
+            char[] cArr2 = new char[i11];
+            System.arraycopy((char[]) up0Var.e, 0, cArr2, 0, up0Var.c);
+            int i12 = up0Var.b;
+            int i13 = up0Var.d;
+            int i14 = i12 - i13;
+            int i15 = i11 - i14;
+            System.arraycopy((char[]) up0Var.e, i13, cArr2, i15, (i14 + i13) - i13);
+            up0Var.e = cArr2;
+            up0Var.b = i11;
+            up0Var.d = i15;
+        }
+        int i16 = up0Var.c;
+        if (i8 < i16 && i9 <= i16) {
+            int i17 = i16 - i9;
+            char[] cArr3 = (char[]) up0Var.e;
+            System.arraycopy(cArr3, i9, cArr3, up0Var.d - i17, i17);
+            up0Var.c = i8;
+            up0Var.d -= i17;
+        } else if (i8 >= i16 || i9 < i16) {
+            int f2 = up0Var.f() + i8;
+            int f3 = up0Var.f() + i9;
+            int i18 = up0Var.d;
+            int i19 = f2 - i18;
+            char[] cArr4 = (char[]) up0Var.e;
+            System.arraycopy(cArr4, i18, cArr4, up0Var.c, i19);
+            up0Var.c += i19;
+            up0Var.d = f3;
+        } else {
+            up0Var.d = up0Var.f() + i9;
+            up0Var.c = i8;
+        }
+        mx7.m(charSequence, (char[]) up0Var.e, up0Var.c, 0, i3);
+        up0Var.c += i3;
+    }
+
+    @Override // java.lang.CharSequence
+    public final char charAt(int i) {
+        up0 up0Var = this.Y;
+        if (up0Var == null) {
+            return this.X.charAt(i);
+        }
+        if (i < this.Z) {
+            return this.X.charAt(i);
+        }
+        int f = up0Var.b - up0Var.f();
+        int i2 = this.Z;
+        if (i >= f + i2) {
+            return this.X.charAt(i - ((f - this.c0) + i2));
+        }
+        int i3 = i - i2;
+        int i4 = up0Var.c;
+        char[] cArr = (char[]) up0Var.e;
+        return i3 < i4 ? cArr[i3] : cArr[(i3 - i4) + up0Var.d];
+    }
+
+    @Override // java.lang.CharSequence
+    public final int length() {
+        up0 up0Var = this.Y;
+        CharSequence charSequence = this.X;
+        if (up0Var == null) {
+            return charSequence.length();
+        }
+        return (up0Var.b - up0Var.f()) + (charSequence.length() - (this.c0 - this.Z));
+    }
+
+    @Override // java.lang.CharSequence
+    public final CharSequence subSequence(int i, int i2) {
+        return toString().subSequence(i, i2);
+    }
+
+    @Override // java.lang.CharSequence
+    public final String toString() {
+        up0 up0Var = this.Y;
+        CharSequence charSequence = this.X;
+        if (up0Var == null) {
+            return charSequence.toString();
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append(charSequence, 0, this.Z);
+        sb.append((char[]) up0Var.e, 0, up0Var.c);
+        char[] cArr = (char[]) up0Var.e;
+        int i = up0Var.d;
+        sb.append(cArr, i, up0Var.b - i);
+        CharSequence charSequence2 = this.X;
+        sb.append(charSequence2, this.c0, charSequence2.length());
+        return sb.toString();
+    }
 }

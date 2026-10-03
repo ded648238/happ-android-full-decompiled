@@ -1,6 +1,6 @@
 .class Lcom/google/gson/internal/bind/TypeAdapters$2;
 .super Lcom/google/gson/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,283 +26,279 @@
 
 
 # virtual methods
-.method public final b(Lr23;)Ljava/lang/Object;
-    .locals 7
+.method public final b(Lxi3;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    new-instance v0, Ljava/util/BitSet;
+    new-instance p0, Ljava/util/BitSet;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/BitSet;-><init>()V
+    invoke-direct {p0}, Ljava/util/BitSet;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1}, Lr23;->C0()V
+    invoke-virtual {p1}, Lxi3;->N0()V
 
     .line 7
     .line 8
     .line 9
-    invoke-virtual {p1}, Lr23;->k0()I
+    invoke-virtual {p1}, Lxi3;->t0()I
 
     .line 10
     .line 11
     .line 12
-    move-result v1
+    move-result v0
 
     .line 13
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 14
-    const/4 v3, 0x0
+    move v2, v1
 
     .line 15
     :goto_0
-    const/4 v4, 0x2
+    const/4 v3, 0x2
 
     .line 16
-    if-eq v1, v4, :cond_5
+    if-eq v0, v3, :cond_5
 
     .line 17
     .line 18
-    invoke-static {v1}, Lea0;->E(I)I
+    invoke-static {v0}, Lw31;->B(I)I
 
     .line 19
     .line 20
     .line 21
-    move-result v4
+    move-result v3
 
     .line 22
-    const/4 v5, 0x5
+    const/4 v4, 0x5
 
     .line 23
-    const/16 v6, 0x9
+    if-eq v3, v4, :cond_1
 
     .line 24
     .line 25
-    if-eq v4, v5, :cond_1
+    const/4 v4, 0x6
 
     .line 26
-    .line 27
-    const/4 v5, 0x6
+    if-eq v3, v4, :cond_1
 
+    .line 27
     .line 28
-    if-eq v4, v5, :cond_1
+    const/4 v4, 0x7
 
     .line 29
-    .line 30
-    const/4 v5, 0x7
+    if-ne v3, v4, :cond_0
 
+    .line 30
     .line 31
-    if-ne v4, v5, :cond_0
+    invoke-virtual {p1}, Lxi3;->R()Z
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Lr23;->M()Z
-
     .line 34
-    .line 35
-    .line 36
-    move-result v1
+    move-result v0
 
-    .line 37
+    .line 35
     goto :goto_1
 
-    .line 38
+    .line 36
     :cond_0
-    new-instance v0, Lg33;
+    new-instance p0, Lmj3;
+
+    .line 37
+    .line 38
+    invoke-static {v0}, Lc73;->v(I)Ljava/lang/String;
 
     .line 39
     .line 40
-    invoke-static {v1}, Lmi2;->B(I)Ljava/lang/String;
-
     .line 41
+    move-result-object v0
+
     .line 42
+    invoke-virtual {p1}, Lxi3;->p()Ljava/lang/String;
+
     .line 43
-    move-result-object v1
-
     .line 44
-    invoke-virtual {p1}, Lr23;->l()Ljava/lang/String;
-
     .line 45
-    .line 46
-    .line 47
     move-result-object p1
 
+    .line 46
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 47
     .line 48
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v2, "Invalid bitset value type: "
 
     .line 49
     .line 50
-    const-string v3, "Invalid bitset value type: "
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 51
     .line 52
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 53
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 54
     .line 55
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 56
+    const-string v0, "; at path "
+
     .line 57
     .line 58
-    const-string v1, "; at path "
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 59
     .line 60
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 61
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 62
     .line 63
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 64
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 65
     .line 66
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 67
-    .line 68
-    .line 69
     move-result-object p1
 
+    .line 68
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 69
     .line 70
-    invoke-direct {v0, p1, v6}, Lio0;-><init>(Ljava/lang/String;I)V
-
     .line 71
+    throw p0
+
     .line 72
-    .line 73
-    throw v0
-
-    .line 74
     :cond_1
-    invoke-virtual {p1}, Lr23;->nextInt()I
+    invoke-virtual {p1}, Lxi3;->nextInt()I
 
+    .line 73
+    .line 74
     .line 75
-    .line 76
-    .line 77
-    move-result v1
+    move-result v0
 
+    .line 76
+    if-nez v0, :cond_2
+
+    .line 77
     .line 78
-    if-nez v1, :cond_2
+    move v0, v1
 
     .line 79
-    .line 80
-    const/4 v1, 0x0
-
-    .line 81
     goto :goto_1
 
-    .line 82
+    .line 80
     :cond_2
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
+    .line 81
+    if-ne v0, v3, :cond_4
+
+    .line 82
     .line 83
-    if-ne v1, v4, :cond_4
+    move v0, v3
 
     .line 84
-    .line 85
-    const/4 v1, 0x1
-
-    .line 86
     :goto_1
-    if-eqz v1, :cond_3
+    if-eqz v0, :cond_3
+
+    .line 85
+    .line 86
+    invoke-virtual {p0, v2}, Ljava/util/BitSet;->set(I)V
 
     .line 87
     .line 88
-    invoke-virtual {v0, v3}, Ljava/util/BitSet;->set(I)V
-
     .line 89
+    :cond_3
+    add-int/lit8 v2, v2, 0x1
+
     .line 90
     .line 91
-    :cond_3
-    add-int/lit8 v3, v3, 0x1
+    invoke-virtual {p1}, Lxi3;->t0()I
 
     .line 92
     .line 93
-    invoke-virtual {p1}, Lr23;->k0()I
-
     .line 94
-    .line 95
-    .line 96
-    move-result v1
+    move-result v0
 
-    .line 97
+    .line 95
     goto :goto_0
 
-    .line 98
+    .line 96
     :cond_4
-    new-instance v0, Lg33;
+    new-instance p0, Lmj3;
+
+    .line 97
+    .line 98
+    const-string v1, "Invalid bitset value "
 
     .line 99
     .line 100
-    const-string v2, "Invalid bitset value "
+    const-string v2, ", expected 0 or 1; at path "
 
     .line 101
     .line 102
-    const-string v3, ", expected 0 or 1; at path "
+    invoke-static {v1, v0, v2}, Lc73;->n(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 103
     .line 104
-    invoke-static {v2, v1, v3}, Lkd0;->A(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 105
+    move-result-object v0
+
     .line 106
+    invoke-virtual {p1}, Lxi3;->D()Ljava/lang/String;
+
     .line 107
-    move-result-object v1
-
     .line 108
-    invoke-virtual {p1}, Lr23;->y()Ljava/lang/String;
-
     .line 109
-    .line 110
-    .line 111
     move-result-object p1
 
-    .line 112
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 110
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 111
+    .line 112
     .line 113
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 114
     .line 115
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 116
-    .line 117
-    .line 118
     move-result-object p1
 
+    .line 117
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 118
     .line 119
-    invoke-direct {v0, p1, v6}, Lio0;-><init>(Ljava/lang/String;I)V
-
     .line 120
+    throw p0
+
     .line 121
-    .line 122
-    throw v0
-
-    .line 123
     :cond_5
-    invoke-virtual {p1}, Lr23;->y0()V
+    invoke-virtual {p1}, Lxi3;->J0()V
 
+    .line 122
+    .line 123
     .line 124
-    .line 125
-    .line 126
-    return-object v0
+    return-object p0
 .end method
 
-.method public final c(Lh43;Ljava/lang/Object;)V
-    .locals 4
+.method public final c(Lnk3;Ljava/lang/Object;)V
+    .locals 3
 
     .line 1
     check-cast p2, Ljava/util/BitSet;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lh43;->C0()V
+    invoke-virtual {p1}, Lnk3;->N0()V
 
     .line 4
     .line 5
@@ -312,34 +308,34 @@
     .line 7
     .line 8
     .line 9
-    move-result v0
+    move-result p0
 
     .line 10
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 11
     :goto_0
-    if-ge v1, v0, :cond_0
+    if-ge v0, p0, :cond_0
 
     .line 12
     .line 13
-    invoke-virtual {p2, v1}, Ljava/util/BitSet;->get(I)Z
+    invoke-virtual {p2, v0}, Ljava/util/BitSet;->get(I)Z
 
     .line 14
     .line 15
     .line 16
-    move-result v2
+    move-result v1
 
     .line 17
-    int-to-long v2, v2
+    int-to-long v1, v1
 
     .line 18
-    invoke-virtual {p1, v2, v3}, Lh43;->R(J)V
+    invoke-virtual {p1, v1, v2}, Lnk3;->X(J)V
 
     .line 19
     .line 20
     .line 21
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     .line 22
     .line 23
@@ -347,7 +343,7 @@
 
     .line 24
     :cond_0
-    invoke-virtual {p1}, Lh43;->y0()V
+    invoke-virtual {p1}, Lnk3;->J0()V
 
     .line 25
     .line 26

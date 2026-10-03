@@ -1,62 +1,35 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum c93 {
-    LEFT_CHAR(false),
-    RIGHT_CHAR(false),
-    RIGHT_WORD(false),
-    LEFT_WORD(false),
-    NEXT_PARAGRAPH(false),
-    PREV_PARAGRAPH(false),
-    LINE_START(false),
-    LINE_END(false),
-    LINE_LEFT(false),
-    LINE_RIGHT(false),
-    UP(false),
-    DOWN(false),
-    CENTER(false),
-    PAGE_UP(false),
-    PAGE_DOWN(false),
-    HOME(false),
-    END(false),
-    COPY(false),
-    PASTE(true),
-    CUT(true),
-    DELETE_PREV_CHAR(true),
-    DELETE_NEXT_CHAR(true),
-    DELETE_PREV_WORD(true),
-    DELETE_NEXT_WORD(true),
-    DELETE_FROM_LINE_START(true),
-    DELETE_TO_LINE_END(true),
-    SELECT_ALL(false),
-    SELECT_LEFT_CHAR(false),
-    SELECT_RIGHT_CHAR(false),
-    SELECT_UP(false),
-    SELECT_DOWN(false),
-    SELECT_PAGE_UP(false),
-    SELECT_PAGE_DOWN(false),
-    SELECT_HOME(false),
-    SELECT_END(false),
-    SELECT_LEFT_WORD(false),
-    SELECT_RIGHT_WORD(false),
-    SELECT_NEXT_PARAGRAPH(false),
-    SELECT_PREV_PARAGRAPH(false),
-    SELECT_LINE_START(false),
-    SELECT_LINE_END(false),
-    SELECT_LINE_LEFT(false),
-    SELECT_LINE_RIGHT(false),
-    DESELECT(false),
-    NEW_LINE(true),
-    TAB(true),
-    UNDO(true),
-    REDO(true),
-    /* JADX INFO: Fake field, exist only in values array */
-    CHARACTER_PALETTE(true);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class c93 extends g93 {
+    public f93 o0;
+    public boolean p0;
 
-    public final boolean Q;
+    @Override // defpackage.g93
+    public final long U0(nh4 nh4Var, long j) {
+        int L = this.o0 == f93.X ? nh4Var.L(i11.h(j)) : nh4Var.a(i11.h(j));
+        if (L < 0) {
+            L = 0;
+        }
+        if (L < 0) {
+            i53.a("height must be >= 0");
+        }
+        return k11.h(0, Integer.MAX_VALUE, L, L);
+    }
 
-    c93(boolean z) {
-        this.Q = z;
+    @Override // defpackage.g93
+    public final boolean V0() {
+        return this.p0;
+    }
+
+    @Override // defpackage.g93, defpackage.ov3
+    public final int a0(p84 p84Var, nh4 nh4Var, int i) {
+        return this.o0 == f93.X ? nh4Var.L(i) : nh4Var.a(i);
+    }
+
+    @Override // defpackage.g93, defpackage.ov3
+    public final int k0(p84 p84Var, nh4 nh4Var, int i) {
+        return this.o0 == f93.X ? nh4Var.L(i) : nh4Var.a(i);
     }
 }

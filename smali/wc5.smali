@@ -1,27 +1,36 @@
 .class public final Lwc5;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ler7;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Lie0;
+.field public c0:Ljava/lang/String;
+
+.field public d0:Lmi2;
+
+.field public e0:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;
+
+.field public f0:I
+
+.field public synthetic g0:Ljava/lang/Object;
+
+.field public final synthetic h0:Lad5;
+
+.field public i0:I
 
 
 # direct methods
-.method public constructor <init>(Lie0;)V
+.method public constructor <init>(Lad5;Ld31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lwc5;->h0:Lad5;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lwc5;->Q:Lie0;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
     return-void
@@ -29,18 +38,43 @@
 
 
 # virtual methods
-.method public final a(Lw16;I)V
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lwc5;->Q:Lie0;
+    iput-object p1, p0, Lwc5;->g0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1, p2}, Lie0;->a(Lw16;I)V
+    iget p1, p0, Lwc5;->i0:I
 
     .line 4
     .line 5
+    const/high16 v0, -0x80000000
+
     .line 6
-    return-void
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    iput p1, p0, Lwc5;->i0:I
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Lwc5;->h0:Lad5;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-virtual {p1, v0, v0, p0}, Lad5;->f(Ljava/lang/String;Lmi2;Ld31;)Ljava/io/Serializable;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
 .end method

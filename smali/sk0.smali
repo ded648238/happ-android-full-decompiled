@@ -1,129 +1,98 @@
-.class public final synthetic Lsk0;
+.class public interface abstract Lsk0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Luk0;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
-.method public synthetic constructor <init>(Luk0;I)V
-    .locals 0
+.method public static q(Lsk0;Lix5;)V
+    .locals 6
 
     .line 1
-    iput p2, p0, Lsk0;->a:I
+    iget v1, p1, Lix5;->a:F
 
     .line 2
     .line 3
-    iput-object p1, p0, Lsk0;->b:Luk0;
+    iget v2, p1, Lix5;->b:F
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget v3, p1, Lix5;->c:F
 
     .line 6
     .line 7
+    iget v4, p1, Lix5;->d:F
+
     .line 8
+    .line 9
+    const/4 v5, 0x1
+
+    .line 10
+    move-object v0, p0
+
+    .line 11
+    invoke-interface/range {v0 .. v5}, Lsk0;->m(FFFFI)V
+
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 2
+.method public abstract a(FF)V
+.end method
 
-    .line 1
-    iget v0, p0, Lsk0;->a:I
+.method public abstract b(F)V
+.end method
 
-    .line 2
-    .line 3
-    iget-object v1, p0, Lsk0;->b:Luk0;
+.method public abstract c(FJLte;)V
+.end method
 
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
+.method public abstract d(Lce;JJJLte;)V
+.end method
 
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+.method public abstract e(Laf;Lte;)V
+.end method
 
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
+.method public abstract f(FFFFFFLte;)V
+.end method
 
-    .line 12
-    check-cast p1, Ljava/lang/Float;
+.method public abstract g()V
+.end method
 
-    .line 13
-    .line 14
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+.method public abstract h(JJLte;)V
+.end method
 
-    .line 15
-    .line 16
-    .line 17
-    move-result p1
+.method public abstract i()V
+.end method
 
-    .line 18
-    iget-object v0, v1, Lro1;->d:Lcom/google/android/material/internal/CheckableImageButton;
+.method public abstract j(FFFFLte;)V
+.end method
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, p1}, Landroid/view/View;->setScaleX(F)V
+.method public abstract k([F)V
+.end method
 
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {v0, p1}, Landroid/view/View;->setScaleY(F)V
+.method public abstract l(Laf;)V
+.end method
 
-    .line 24
-    .line 25
-    .line 26
-    return-void
+.method public abstract m(FFFFI)V
+.end method
 
-    .line 27
-    :pswitch_0
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+.method public abstract n(FF)V
+.end method
 
-    .line 28
-    .line 29
-    .line 30
-    move-result-object p1
+.method public abstract o(Lce;JLte;)V
+.end method
 
-    .line 31
-    check-cast p1, Ljava/lang/Float;
+.method public abstract p()V
+.end method
 
-    .line 32
-    .line 33
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+.method public abstract r(Lix5;Lte;)V
+.end method
 
-    .line 34
-    .line 35
-    .line 36
-    move-result p1
+.method public abstract s()V
+.end method
 
-    .line 37
-    iget-object v0, v1, Lro1;->d:Lcom/google/android/material/internal/CheckableImageButton;
-
-    .line 38
-    .line 39
-    invoke-virtual {v0, p1}, Landroid/view/View;->setAlpha(F)V
-
-    .line 40
-    .line 41
-    .line 42
-    return-void
-
-    .line 43
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+.method public abstract t(FFFFFFLte;)V
 .end method

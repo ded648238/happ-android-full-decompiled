@@ -1,6 +1,6 @@
 .class final Lcom/google/gson/internal/bind/CollectionTypeAdapterFactory$Adapter;
 .super Lcom/google/gson/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,11 +26,11 @@
 # instance fields
 .field public final a:Lcom/google/gson/b;
 
-.field public final b:Lag4;
+.field public final b:Llx4;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/gson/b;Lag4;)V
+.method public constructor <init>(Lcom/google/gson/b;Llx4;)V
     .locals 0
 
     .line 1
@@ -43,7 +43,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/google/gson/internal/bind/CollectionTypeAdapterFactory$Adapter;->b:Lag4;
+    iput-object p2, p0, Lcom/google/gson/internal/bind/CollectionTypeAdapterFactory$Adapter;->b:Llx4;
 
     .line 7
     .line 8
@@ -52,11 +52,11 @@
 
 
 # virtual methods
-.method public final b(Lr23;)Ljava/lang/Object;
+.method public final b(Lxi3;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Lr23;->k0()I
+    invoke-virtual {p1}, Lxi3;->t0()I
 
     .line 2
     .line 3
@@ -72,23 +72,23 @@
 
     .line 8
     .line 9
-    invoke-virtual {p1}, Lr23;->R()V
+    invoke-virtual {p1}, Lxi3;->X()V
 
     .line 10
     .line 11
     .line 12
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 13
-    return-object p1
+    return-object p0
 
     .line 14
     :cond_0
-    iget-object v0, p0, Lcom/google/gson/internal/bind/CollectionTypeAdapterFactory$Adapter;->b:Lag4;
+    iget-object v0, p0, Lcom/google/gson/internal/bind/CollectionTypeAdapterFactory$Adapter;->b:Llx4;
 
     .line 15
     .line 16
-    invoke-interface {v0}, Lag4;->i()Ljava/lang/Object;
+    invoke-interface {v0}, Llx4;->i()Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -100,13 +100,13 @@
 
     .line 21
     .line 22
-    invoke-virtual {p1}, Lr23;->C0()V
+    invoke-virtual {p1}, Lxi3;->N0()V
 
     .line 23
     .line 24
     .line 25
     :goto_0
-    invoke-virtual {p1}, Lr23;->hasNext()Z
+    invoke-virtual {p1}, Lxi3;->hasNext()Z
 
     .line 26
     .line 27
@@ -130,7 +130,7 @@
 
     .line 36
     .line 37
-    invoke-virtual {v1, p1}, Lcom/google/gson/b;->b(Lr23;)Ljava/lang/Object;
+    invoke-virtual {v1, p1}, Lcom/google/gson/b;->b(Lxi3;)Ljava/lang/Object;
 
     .line 38
     .line 39
@@ -147,7 +147,7 @@
 
     .line 45
     :cond_1
-    invoke-virtual {p1}, Lr23;->y0()V
+    invoke-virtual {p1}, Lxi3;->J0()V
 
     .line 46
     .line 47
@@ -155,7 +155,7 @@
     return-object v0
 .end method
 
-.method public final c(Lh43;Ljava/lang/Object;)V
+.method public final c(Lnk3;Ljava/lang/Object;)V
     .locals 2
 
     .line 1
@@ -167,7 +167,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p1}, Lh43;->v()Lh43;
+    invoke-virtual {p1}, Lnk3;->v()Lnk3;
 
     .line 6
     .line 7
@@ -176,7 +176,7 @@
 
     .line 9
     :cond_0
-    invoke-virtual {p1}, Lh43;->C0()V
+    invoke-virtual {p1}, Lnk3;->N0()V
 
     .line 10
     .line 11
@@ -214,7 +214,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {v1, p1, v0}, Lcom/google/gson/b;->c(Lh43;Ljava/lang/Object;)V
+    invoke-virtual {v1, p1, v0}, Lcom/google/gson/b;->c(Lnk3;Ljava/lang/Object;)V
 
     .line 29
     .line 30
@@ -223,7 +223,7 @@
 
     .line 32
     :cond_1
-    invoke-virtual {p1}, Lh43;->y0()V
+    invoke-virtual {p1}, Lnk3;->J0()V
 
     .line 33
     .line 34

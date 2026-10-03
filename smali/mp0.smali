@@ -1,41 +1,176 @@
-.class public abstract Lmp0;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lmp0;
+.super Ljn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Lip0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljn4;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001\u00a8\u0006\u0003"
+    }
+    d2 = {
+        "Lmp0;",
+        "Ljn4;",
+        "Llp0;",
+        "material3"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field public final X:Lm54;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(Lm54;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lqc;->T:Lqc;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    new-instance v1, Lip0;
+    .line 4
+    iput-object p1, p0, Lmp0;->X:Lm54;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcn4;
+    .locals 1
+
+    .line 1
+    new-instance v0, Llp0;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcn4;-><init>()V
 
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const v3, -0x152b71e6
+    iget-object p0, p0, Lmp0;->X:Lm54;
 
     .line 7
     .line 8
+    iput-object p0, v0, Llp0;->n0:Lm54;
+
     .line 9
-    invoke-direct {v1, v0, v2, v3}, Lip0;-><init>(Ljava/lang/Object;ZI)V
+    .line 10
+    return-object v0
+.end method
+
+.method public final c(Lcn4;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Llp0;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lmp0;->X:Lm54;
+
+    .line 4
+    .line 5
+    iput-object p0, p1, Llp0;->n0:Lm54;
+
+    .line 6
+    .line 7
+    invoke-static {p1}, Lvv2;->v(Lxo6;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, Lmp0;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_1
+
+    .line 9
+    :cond_1
+    check-cast p1, Lmp0;
 
     .line 10
     .line 11
-    .line 12
-    sput-object v1, Lmp0;->a:Lip0;
+    iget-object p1, p1, Lmp0;->X:Lm54;
 
+    .line 12
     .line 13
+    iget-object p0, p0, Lmp0;->X:Lm54;
+
     .line 14
-    return-void
+    .line 15
+    if-ne p0, p1, :cond_2
+
+    .line 16
+    .line 17
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 18
+    return p0
+
+    .line 19
+    :cond_2
+    :goto_1
+    const/4 p0, 0x0
+
+    .line 20
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lmp0;->X:Lm54;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
 .end method

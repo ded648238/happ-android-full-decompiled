@@ -1,17 +1,13 @@
 .class public final Lo06;
-.super Ld64;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg97;
+.implements Lqi1;
 
 
 # static fields
-.field public static final f0:Ldr0;
-
-
-# instance fields
-.field public e0:Z
+.field public static final X:Lo06;
 
 
 # direct methods
@@ -19,7 +15,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Ldr0;
+    new-instance v0, Lo06;
 
     .line 2
     .line 3
@@ -28,7 +24,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lo06;->f0:Ldr0;
+    sput-object v0, Lo06;->X:Lo06;
 
     .line 7
     .line 8
@@ -37,13 +33,21 @@
 
 
 # virtual methods
-.method public final j()Ljava/lang/Object;
-    .locals 1
+.method public final j()Ljava/lang/String;
+    .locals 0
 
     .line 1
-    sget-object v0, Lo06;->f0:Ldr0;
+    const-class p0, Lo06;
 
     .line 2
     .line 3
-    return-object v0
+    invoke-virtual {p0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
 .end method

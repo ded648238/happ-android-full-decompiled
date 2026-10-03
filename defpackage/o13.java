@@ -1,65 +1,30 @@
 package defpackage;
 
-import java.io.Serializable;
-import okhttp3.HttpUrl;
+import su.happ.proxyutility.dto.enums.InboundAuthMode;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class o13 implements Serializable {
-    public transient Object Q;
-    public final String R;
-    public int S = -1;
-    public String T;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public abstract /* synthetic */ class o13 {
+    public static final /* synthetic */ int[] a;
 
-    public o13(Object obj, String str) {
-        this.Q = obj;
-        if (str != null) {
-            this.R = str;
-        } else {
-            en0.g("Cannot pass null fieldName");
-            throw null;
+    static {
+        int[] iArr = new int[InboundAuthMode.values().length];
+        try {
+            iArr[InboundAuthMode.AUTO.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
         }
-    }
-
-    public final String toString() {
-        if (this.T == null) {
-            StringBuilder sb = new StringBuilder();
-            Object obj = this.Q;
-            if (obj != null) {
-                Class<?> componentType = obj instanceof Class ? (Class) obj : obj.getClass();
-                int i = 0;
-                while (componentType.isArray()) {
-                    componentType = componentType.getComponentType();
-                    i++;
-                }
-                sb.append(componentType.getName());
-                while (true) {
-                    i--;
-                    if (i < 0) {
-                        break;
-                    }
-                    sb.append(HttpUrl.PATH_SEGMENT_ENCODE_SET_URI);
-                }
-            } else {
-                sb.append("UNKNOWN");
-            }
-            sb.append('[');
-            String str = this.R;
-            if (str != null) {
-                sb.append('\"');
-                sb.append(str);
-                sb.append('\"');
-            } else {
-                int i2 = this.S;
-                if (i2 >= 0) {
-                    sb.append(i2);
-                } else {
-                    sb.append('?');
-                }
-            }
-            sb.append(']');
-            this.T = sb.toString();
+        try {
+            iArr[InboundAuthMode.MANUAL.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
         }
-        return this.T;
+        try {
+            iArr[InboundAuthMode.FROM_JSON.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            iArr[InboundAuthMode.DISABLE.ordinal()] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        a = iArr;
     }
 }

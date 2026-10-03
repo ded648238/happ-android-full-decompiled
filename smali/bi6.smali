@@ -1,18 +1,22 @@
 .class public final Lbi6;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lu21;
+.implements Ltg6;
 
 
 # instance fields
-.field public final a:Ls36;
+.field public final X:Landroid/graphics/Path;
+
+.field public Y:F
+
+.field public Z:F
 
 
 # direct methods
-.method public constructor <init>(Ls36;)V
-    .locals 0
+.method public constructor <init>(Lkt0;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -20,84 +24,217 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lbi6;->a:Ls36;
+    new-instance v0, Landroid/graphics/Path;
 
     .line 5
     .line 6
+    invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lbi6;->X:Landroid/graphics/Path;
+
+    .line 10
+    .line 11
+    if-nez p1, :cond_0
+
+    .line 12
+    .line 13
+    return-void
+
+    .line 14
+    :cond_0
+    invoke-virtual {p1, p0}, Lkt0;->w(Ltg6;)V
+
+    .line 15
+    .line 16
+    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lne6;Lbl4;)Lw21;
-    .locals 3
+.method public final a(FFFF)V
+    .locals 1
 
     .line 1
-    invoke-static {p2}, Lql2;->a(Lbl4;)Landroid/graphics/Bitmap$Config;
+    iget-object v0, p0, Lbi6;->X:Landroid/graphics/Path;
 
     .line 2
     .line 3
+    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/Path;->quadTo(FFFF)V
+
     .line 4
-    move-result-object v0
+    .line 5
+    .line 6
+    iput p3, p0, Lbi6;->Y:F
+
+    .line 7
+    .line 8
+    iput p4, p0, Lbi6;->Z:F
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public final b(FF)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lbi6;->X:Landroid/graphics/Path;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Landroid/graphics/Path;->moveTo(FF)V
+
+    .line 4
+    .line 5
+    .line 6
+    iput p1, p0, Lbi6;->Y:F
+
+    .line 7
+    .line 8
+    iput p2, p0, Lbi6;->Z:F
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public final c(FFFFFF)V
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lbi6;->X:Landroid/graphics/Path;
+
+    .line 2
+    .line 3
+    move v1, p1
+
+    .line 4
+    move v2, p2
 
     .line 5
-    sget-object v1, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+    move v3, p3
 
     .line 6
+    move v4, p4
+
     .line 7
-    if-eq v0, v1, :cond_0
+    move v5, p5
 
     .line 8
+    move v6, p6
+
     .line 9
-    sget-object v1, Landroid/graphics/Bitmap$Config;->HARDWARE:Landroid/graphics/Bitmap$Config;
+    invoke-virtual/range {v0 .. v6}, Landroid/graphics/Path;->cubicTo(FFFFFF)V
 
     .line 10
     .line 11
-    if-ne v0, v1, :cond_1
+    .line 12
+    iput v5, p0, Lbi6;->Y:F
+
+    .line 13
+    .line 14
+    iput v6, p0, Lbi6;->Z:F
+
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public final close()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lbi6;->X:Landroid/graphics/Path;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/graphics/Path;->close()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final d(FFFZZFF)V
+    .locals 10
+
+    .line 1
+    iget v0, p0, Lbi6;->Y:F
+
+    .line 2
+    .line 3
+    iget v1, p0, Lbi6;->Z:F
+
+    .line 4
+    .line 5
+    move-object v9, p0
+
+    .line 6
+    move v2, p1
+
+    .line 7
+    move v3, p2
+
+    .line 8
+    move v4, p3
+
+    .line 9
+    move v5, p4
+
+    .line 10
+    move v6, p5
+
+    .line 11
+    move/from16 v7, p6
 
     .line 12
     .line 13
-    :cond_0
-    iget-object v0, p1, Lne6;->a:Lsl2;
+    move/from16 v8, p7
 
     .line 14
     .line 15
-    invoke-static {v0, p2}, Lla;->K(Lsl2;Lbl4;)Landroid/graphics/ImageDecoder$Source;
+    invoke-static/range {v0 .. v9}, Lhi6;->r(FFFFFZZFFLtg6;)V
 
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    iput v7, p0, Lbi6;->Y:F
 
     .line 19
-    if-nez v0, :cond_2
-
     .line 20
+    iput v8, p0, Lbi6;->Z:F
+
     .line 21
-    :cond_1
-    const/4 p1, 0x0
-
     .line 22
-    return-object p1
+    return-void
+.end method
 
-    .line 23
-    :cond_2
-    new-instance v1, Lei6;
+.method public final e(FF)V
+    .locals 1
 
-    .line 24
-    .line 25
-    iget-object p1, p1, Lne6;->a:Lsl2;
+    .line 1
+    iget-object v0, p0, Lbi6;->X:Landroid/graphics/Path;
 
-    .line 26
-    .line 27
-    iget-object v2, p0, Lbi6;->a:Ls36;
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 28
-    .line 29
-    invoke-direct {v1, v0, p1, p2, v2}, Lei6;-><init>(Landroid/graphics/ImageDecoder$Source;Ljava/lang/AutoCloseable;Lbl4;Ls36;)V
+    .line 4
+    .line 5
+    .line 6
+    iput p1, p0, Lbi6;->Y:F
 
-    .line 30
-    .line 31
-    .line 32
-    return-object v1
+    .line 7
+    .line 8
+    iput p2, p0, Lbi6;->Z:F
+
+    .line 9
+    .line 10
+    return-void
 .end method

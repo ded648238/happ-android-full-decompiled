@@ -1,62 +1,23 @@
 package defpackage;
 
-import android.view.Window;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class bn extends d31 {
+    public /* synthetic */ Object c0;
+    public final /* synthetic */ un d0;
+    public int e0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class bn implements tu0, g34 {
-    public final /* synthetic */ mn Q;
-
-    public /* synthetic */ bn(mn mnVar) {
-        this.Q = mnVar;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public bn(un unVar, d31 d31Var) {
+        super(d31Var);
+        this.d0 = unVar;
     }
 
-    @Override // defpackage.g34
-    public void a(k24 k24Var, boolean z) {
-        ln lnVar;
-        k24 k24VarK = k24Var.k();
-        int i = 0;
-        boolean z2 = k24VarK != k24Var;
-        if (z2) {
-            k24Var = k24VarK;
-        }
-        mn mnVar = this.Q;
-        ln[] lnVarArr = mnVar.A0;
-        int length = lnVarArr != null ? lnVarArr.length : 0;
-        while (true) {
-            if (i < length) {
-                lnVar = lnVarArr[i];
-                if (lnVar != null && lnVar.h == k24Var) {
-                    break;
-                } else {
-                    i++;
-                }
-            } else {
-                lnVar = null;
-                break;
-            }
-        }
-        if (lnVar != null) {
-            if (!z2) {
-                mnVar.r(lnVar, z);
-            } else {
-                mnVar.p(lnVar.a, lnVar, k24VarK);
-                mnVar.r(lnVar, true);
-            }
-        }
-    }
-
-    @Override // defpackage.g34
-    public boolean k0(k24 k24Var) {
-        Window.Callback callback;
-        if (k24Var != k24Var.k()) {
-            return true;
-        }
-        mn mnVar = this.Q;
-        if (!mnVar.u0 || (callback = mnVar.b0.getCallback()) == null || mnVar.F0) {
-            return true;
-        }
-        callback.onMenuOpened(108, k24Var);
-        return true;
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.e0 |= Integer.MIN_VALUE;
+        Object e = this.d0.e(null, null, null, this);
+        return e == j41.X ? e : new d86(e);
     }
 }

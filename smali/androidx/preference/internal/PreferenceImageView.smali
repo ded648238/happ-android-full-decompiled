@@ -1,12 +1,12 @@
 .class public Landroidx/preference/internal/PreferenceImageView;
 .super Landroid/widget/ImageView;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:I
+.field public c0:I
 
-.field public R:I
+.field public d0:I
 
 
 # direct methods
@@ -35,15 +35,15 @@
     .line 5
     .line 6
     .line 7
-    iput v0, p0, Landroidx/preference/internal/PreferenceImageView;->Q:I
+    iput v0, p0, Landroidx/preference/internal/PreferenceImageView;->c0:I
 
     .line 8
     .line 9
-    iput v0, p0, Landroidx/preference/internal/PreferenceImageView;->R:I
+    iput v0, p0, Landroidx/preference/internal/PreferenceImageView;->d0:I
 
     .line 10
     .line 11
-    sget-object v1, Lra5;->PreferenceImageView:[I
+    sget-object v1, Lqu5;->PreferenceImageView:[I
 
     .line 12
     .line 13
@@ -58,7 +58,7 @@
     move-result-object p1
 
     .line 18
-    sget p2, Lra5;->PreferenceImageView_maxWidth:I
+    sget p2, Lqu5;->PreferenceImageView_maxWidth:I
 
     .line 19
     .line 20
@@ -75,7 +75,7 @@
     .line 25
     .line 26
     .line 27
-    sget p2, Lra5;->PreferenceImageView_maxHeight:I
+    sget p2, Lqu5;->PreferenceImageView_maxHeight:I
 
     .line 28
     .line 29
@@ -103,25 +103,25 @@
 
 # virtual methods
 .method public getMaxHeight()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/preference/internal/PreferenceImageView;->R:I
+    iget p0, p0, Landroidx/preference/internal/PreferenceImageView;->d0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getMaxWidth()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/preference/internal/PreferenceImageView;->Q:I
+    iget p0, p0, Landroidx/preference/internal/PreferenceImageView;->c0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final onMeasure(II)V
@@ -259,7 +259,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/preference/internal/PreferenceImageView;->R:I
+    iput p1, p0, Landroidx/preference/internal/PreferenceImageView;->d0:I
 
     .line 2
     .line 3
@@ -275,7 +275,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/preference/internal/PreferenceImageView;->Q:I
+    iput p1, p0, Landroidx/preference/internal/PreferenceImageView;->c0:I
 
     .line 2
     .line 3

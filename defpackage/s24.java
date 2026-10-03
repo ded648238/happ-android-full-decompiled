@@ -1,25 +1,45 @@
 package defpackage;
 
-import android.view.MenuItem;
+import java.util.Iterator;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class s24 implements MenuItem.OnActionExpandListener {
-    public final MenuItem.OnActionExpandListener a;
-    public final /* synthetic */ t24 b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class s24 implements Iterator {
+    public wj5 X;
+    public final /* synthetic */ int Y;
 
-    public s24(t24 t24Var, MenuItem.OnActionExpandListener onActionExpandListener) {
-        this.b = t24Var;
-        this.a = onActionExpandListener;
+    public s24(wj5 wj5Var, int i) {
+        this.Y = i;
+        this.X = wj5Var;
     }
 
-    @Override // android.view.MenuItem.OnActionExpandListener
-    public final boolean onMenuItemActionCollapse(MenuItem menuItem) {
-        return this.a.onMenuItemActionCollapse(this.b.j(menuItem));
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        return this.X != null;
     }
 
-    @Override // android.view.MenuItem.OnActionExpandListener
-    public final boolean onMenuItemActionExpand(MenuItem menuItem) {
-        return this.a.onMenuItemActionExpand(this.b.j(menuItem));
+    @Override // java.util.Iterator
+    public final Object next() {
+        wj5 wj5Var;
+        if (!hasNext()) {
+            i60.a();
+            return null;
+        }
+        wj5 wj5Var2 = this.X;
+        switch (this.Y) {
+            case 0:
+                wj5Var = this.X.Z;
+                break;
+            default:
+                wj5Var = this.X.Y;
+                break;
+        }
+        this.X = wj5Var;
+        return wj5Var2;
+    }
+
+    @Override // java.util.Iterator
+    public final void remove() {
+        throw new UnsupportedOperationException();
     }
 }

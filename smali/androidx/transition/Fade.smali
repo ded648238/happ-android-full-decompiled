@@ -1,6 +1,6 @@
 .class public Landroidx/transition/Fade;
 .super Landroidx/transition/Visibility;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -13,14 +13,14 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Landroidx/transition/Visibility;->s0:I
+    iput p1, p0, Landroidx/transition/Visibility;->B0:I
 
     .line 5
     .line 6
     return-void
 .end method
 
-.method public static N(Lr87;F)F
+.method public static N(Lz08;F)F
     .locals 1
 
     .line 1
@@ -28,7 +28,7 @@
 
     .line 2
     .line 3
-    iget-object p0, p0, Lr87;->a:Ljava/util/HashMap;
+    iget-object p0, p0, Lz08;->a:Ljava/util/HashMap;
 
     .line 4
     .line 5
@@ -81,23 +81,23 @@
 
     .line 4
     .line 5
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 6
-    return-object p1
+    return-object p0
 
     .line 7
     :cond_0
-    sget-object v0, Lmp7;->a:Ls27;
+    sget-object v0, Llk8;->a:Lrk8;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1, p2}, Ls27;->c(Landroid/view/View;F)V
+    invoke-virtual {v0, p1, p2}, Ldu7;->e(Landroid/view/View;F)V
 
     .line 10
     .line 11
     .line 12
-    sget-object p2, Lmp7;->b:Lfg0;
+    sget-object p2, Llk8;->b:Lzm0;
 
     .line 13
     .line 14
@@ -123,11 +123,11 @@
     move-result-object p2
 
     .line 24
-    new-instance p3, Leu1;
+    new-instance p3, Ln32;
 
     .line 25
     .line 26
-    invoke-direct {p3, p1}, Leu1;-><init>(Landroid/view/View;)V
+    invoke-direct {p3, p1}, Ln32;-><init>(Landroid/view/View;)V
 
     .line 27
     .line 28
@@ -142,10 +142,10 @@
     .line 33
     .line 34
     .line 35
-    move-result-object p1
+    move-result-object p0
 
     .line 36
-    invoke-virtual {p1, p3}, Landroidx/transition/Transition;->a(Lc87;)V
+    invoke-virtual {p0, p3}, Landroidx/transition/Transition;->a(Ll08;)V
 
     .line 37
     .line 38
@@ -153,97 +153,97 @@
     return-object p2
 .end method
 
-.method public final f(Lr87;)V
-    .locals 2
+.method public final f(Lz08;)V
+    .locals 1
 
     .line 1
-    invoke-static {p1}, Landroidx/transition/Visibility;->K(Lr87;)V
+    invoke-static {p1}, Landroidx/transition/Visibility;->K(Lz08;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p1, Lr87;->b:Landroid/view/View;
+    iget-object p0, p1, Lz08;->b:Landroid/view/View;
 
     .line 5
     .line 6
-    sget v1, La95;->transition_pause_alpha:I
+    sget v0, Lat5;->transition_pause_alpha:I
 
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     .line 9
     .line 10
     .line 11
-    move-result-object v1
+    move-result-object v0
 
     .line 12
-    check-cast v1, Ljava/lang/Float;
+    check-cast v0, Ljava/lang/Float;
 
     .line 13
     .line 14
-    if-nez v1, :cond_1
+    if-nez v0, :cond_1
 
     .line 15
     .line 16
-    invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
     .line 17
     .line 18
     .line 19
-    move-result v1
+    move-result v0
 
     .line 20
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
     .line 21
     .line 22
-    sget-object v1, Lmp7;->a:Ls27;
+    sget-object v0, Llk8;->a:Lrk8;
 
     .line 23
     .line 24
-    invoke-virtual {v1, v0}, Ls27;->a(Landroid/view/View;)F
+    invoke-virtual {v0, p0}, Ldu7;->b(Landroid/view/View;)F
 
     .line 25
     .line 26
     .line 27
-    move-result v0
+    move-result p0
 
     .line 28
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     .line 29
     .line 30
     .line 31
-    move-result-object v1
+    move-result-object v0
 
     .line 32
     goto :goto_0
 
     .line 33
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 34
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     .line 35
     .line 36
     .line 37
-    move-result-object v1
+    move-result-object v0
 
     .line 38
     :cond_1
     :goto_0
-    iget-object p1, p1, Lr87;->a:Ljava/util/HashMap;
+    iget-object p0, p1, Lz08;->a:Ljava/util/HashMap;
 
     .line 39
     .line 40
-    const-string v0, "android:fade:transitionAlpha"
+    const-string p1, "android:fade:transitionAlpha"
 
     .line 41
     .line 42
-    invoke-virtual {p1, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 43
     .line 44

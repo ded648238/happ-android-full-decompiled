@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http1/HeadersReader;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -17,19 +17,19 @@
     d2 = {
         "Lokhttp3/internal/http1/HeadersReader;",
         "",
-        "Ls50;",
+        "Lf80;",
         "source",
         "<init>",
-        "(Ls50;)V",
+        "(Lf80;)V",
         "",
         "readLine",
         "()Ljava/lang/String;",
         "Lokhttp3/Headers;",
         "readHeaders",
         "()Lokhttp3/Headers;",
-        "Ls50;",
+        "Lf80;",
         "getSource",
-        "()Ls50;",
+        "()Lf80;",
         "",
         "headerLimit",
         "J",
@@ -55,7 +55,7 @@
 # instance fields
 .field private headerLimit:J
 
-.field private final source:Ls50;
+.field private final source:Lf80;
 
 
 # direct methods
@@ -70,7 +70,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/http1/HeadersReader$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/http1/HeadersReader$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -82,7 +82,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Ls50;)V
+.method public constructor <init>(Lf80;)V
     .locals 2
 
     .line 1
@@ -96,7 +96,7 @@
     .line 5
     .line 6
     .line 7
-    iput-object p1, p0, Lokhttp3/internal/http1/HeadersReader;->source:Ls50;
+    iput-object p1, p0, Lokhttp3/internal/http1/HeadersReader;->source:Lf80;
 
     .line 8
     .line 9
@@ -114,15 +114,15 @@
 
 
 # virtual methods
-.method public final getSource()Ls50;
-    .locals 1
+.method public final getSource()Lf80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http1/HeadersReader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http1/HeadersReader;->source:Lf80;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final readHeaders()Lokhttp3/Headers;
@@ -164,10 +164,10 @@
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    move-result-object p0
 
     .line 20
-    return-object v0
+    return-object p0
 
     .line 21
     :cond_0
@@ -183,7 +183,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http1/HeadersReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/internal/http1/HeadersReader;->source:Lf80;
 
     .line 2
     .line 3
@@ -191,7 +191,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0, v1, v2}, Ls50;->N(J)Ljava/lang/String;
+    invoke-interface {v0, v1, v2}, Lf80;->V(J)Ljava/lang/String;
 
     .line 6
     .line 7

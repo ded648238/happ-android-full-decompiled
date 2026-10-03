@@ -1,34 +1,34 @@
 .class public abstract Lcom/google/gson/internal/bind/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final A:Lwa7;
+.field public static final A:Lj38;
 
-.field public static final B:Lwa7;
+.field public static final B:Lj38;
 
-.field public static final C:Lwa7;
+.field public static final C:Lj38;
 
-.field public static final a:Lwa7;
+.field public static final a:Lj38;
 
-.field public static final b:Lwa7;
+.field public static final b:Lj38;
 
 .field public static final c:Lcom/google/gson/b;
 
-.field public static final d:Lwa7;
+.field public static final d:Lj38;
 
-.field public static final e:Lwa7;
+.field public static final e:Lj38;
 
-.field public static final f:Lwa7;
+.field public static final f:Lj38;
 
-.field public static final g:Lwa7;
+.field public static final g:Lj38;
 
-.field public static final h:Lwa7;
+.field public static final h:Lj38;
 
-.field public static final i:Lwa7;
+.field public static final i:Lj38;
 
-.field public static final j:Lwa7;
+.field public static final j:Lj38;
 
 .field public static final k:Lcom/google/gson/b;
 
@@ -36,31 +36,31 @@
 
 .field public static final m:Lcom/google/gson/b;
 
-.field public static final n:Lwa7;
+.field public static final n:Lj38;
 
-.field public static final o:Lwa7;
+.field public static final o:Lj38;
 
-.field public static final p:Lwa7;
+.field public static final p:Lj38;
 
-.field public static final q:Lwa7;
+.field public static final q:Lj38;
 
-.field public static final r:Lwa7;
+.field public static final r:Lj38;
 
-.field public static final s:Lwa7;
+.field public static final s:Lj38;
 
-.field public static final t:Lwa7;
+.field public static final t:Lj38;
 
-.field public static final u:Lwa7;
+.field public static final u:Lj38;
 
-.field public static final v:Lwa7;
+.field public static final v:Lj38;
 
-.field public static final w:Lwa7;
+.field public static final w:Lj38;
 
-.field public static final x:Lwa7;
+.field public static final x:Lj38;
 
-.field public static final y:Lwa7;
+.field public static final y:Lj38;
 
-.field public static final z:Lwa7;
+.field public static final z:Lj38;
 
 
 # direct methods
@@ -98,7 +98,7 @@
     .line 15
     .line 16
     .line 17
-    sput-object v1, Lcom/google/gson/internal/bind/b;->a:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->a:Lj38;
 
     .line 18
     .line 19
@@ -132,7 +132,7 @@
     .line 33
     .line 34
     .line 35
-    sput-object v1, Lcom/google/gson/internal/bind/b;->b:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->b:Lj38;
 
     .line 36
     .line 37
@@ -175,7 +175,7 @@
     .line 56
     .line 57
     .line 58
-    sput-object v1, Lcom/google/gson/internal/bind/b;->d:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->d:Lj38;
 
     .line 59
     .line 60
@@ -205,7 +205,7 @@
     .line 72
     .line 73
     .line 74
-    sput-object v1, Lcom/google/gson/internal/bind/b;->e:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->e:Lj38;
 
     .line 75
     .line 76
@@ -235,7 +235,7 @@
     .line 88
     .line 89
     .line 90
-    sput-object v1, Lcom/google/gson/internal/bind/b;->f:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->f:Lj38;
 
     .line 91
     .line 92
@@ -265,7 +265,7 @@
     .line 104
     .line 105
     .line 106
-    sput-object v1, Lcom/google/gson/internal/bind/b;->g:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->g:Lj38;
 
     .line 107
     .line 108
@@ -299,7 +299,7 @@
     .line 122
     .line 123
     .line 124
-    sput-object v1, Lcom/google/gson/internal/bind/b;->h:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->h:Lj38;
 
     .line 125
     .line 126
@@ -333,7 +333,7 @@
     .line 140
     .line 141
     .line 142
-    sput-object v1, Lcom/google/gson/internal/bind/b;->i:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->i:Lj38;
 
     .line 143
     .line 144
@@ -367,7 +367,7 @@
     .line 158
     .line 159
     .line 160
-    sput-object v1, Lcom/google/gson/internal/bind/b;->j:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->j:Lj38;
 
     .line 161
     .line 162
@@ -448,7 +448,7 @@
     .line 201
     .line 202
     .line 203
-    sput-object v1, Lcom/google/gson/internal/bind/b;->n:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->n:Lj38;
 
     .line 204
     .line 205
@@ -483,7 +483,7 @@
     .line 220
     .line 221
     .line 222
-    sput-object v2, Lcom/google/gson/internal/bind/b;->o:Lwa7;
+    sput-object v2, Lcom/google/gson/internal/bind/b;->o:Lj38;
 
     .line 223
     .line 224
@@ -509,7 +509,7 @@
     .line 234
     .line 235
     .line 236
-    sput-object v2, Lcom/google/gson/internal/bind/b;->p:Lwa7;
+    sput-object v2, Lcom/google/gson/internal/bind/b;->p:Lj38;
 
     .line 237
     .line 238
@@ -526,7 +526,7 @@
 
     .line 244
     .line 245
-    const-class v3, Lvf3;
+    const-class v3, Lnw3;
 
     .line 246
     .line 247
@@ -535,7 +535,7 @@
     .line 248
     .line 249
     .line 250
-    sput-object v2, Lcom/google/gson/internal/bind/b;->q:Lwa7;
+    sput-object v2, Lcom/google/gson/internal/bind/b;->q:Lj38;
 
     .line 251
     .line 252
@@ -552,7 +552,7 @@
     .line 257
     .line 258
     .line 259
-    sput-object v1, Lcom/google/gson/internal/bind/b;->r:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->r:Lj38;
 
     .line 260
     .line 261
@@ -578,7 +578,7 @@
     .line 271
     .line 272
     .line 273
-    sput-object v1, Lcom/google/gson/internal/bind/b;->s:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->s:Lj38;
 
     .line 274
     .line 275
@@ -604,7 +604,7 @@
     .line 285
     .line 286
     .line 287
-    sput-object v1, Lcom/google/gson/internal/bind/b;->t:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->t:Lj38;
 
     .line 288
     .line 289
@@ -630,7 +630,7 @@
     .line 299
     .line 300
     .line 301
-    sput-object v1, Lcom/google/gson/internal/bind/b;->u:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->u:Lj38;
 
     .line 302
     .line 303
@@ -656,7 +656,7 @@
     .line 313
     .line 314
     .line 315
-    sput-object v1, Lcom/google/gson/internal/bind/b;->v:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->v:Lj38;
 
     .line 316
     .line 317
@@ -682,7 +682,7 @@
     .line 327
     .line 328
     .line 329
-    sput-object v1, Lcom/google/gson/internal/bind/b;->w:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->w:Lj38;
 
     .line 330
     .line 331
@@ -708,7 +708,7 @@
     .line 341
     .line 342
     .line 343
-    sput-object v1, Lcom/google/gson/internal/bind/b;->x:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->x:Lj38;
 
     .line 344
     .line 345
@@ -742,7 +742,7 @@
     .line 359
     .line 360
     .line 361
-    sput-object v1, Lcom/google/gson/internal/bind/b;->y:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->y:Lj38;
 
     .line 362
     .line 363
@@ -796,7 +796,7 @@
     .line 387
     .line 388
     .line 389
-    sput-object v1, Lcom/google/gson/internal/bind/b;->z:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->z:Lj38;
 
     .line 390
     .line 391
@@ -822,7 +822,7 @@
     .line 401
     .line 402
     .line 403
-    sput-object v1, Lcom/google/gson/internal/bind/b;->A:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->A:Lj38;
 
     .line 404
     .line 405
@@ -834,7 +834,7 @@
 
     .line 408
     .line 409
-    const-class v2, Ld03;
+    const-class v2, Lfg3;
 
     .line 410
     .line 411
@@ -843,15 +843,15 @@
     .line 412
     .line 413
     .line 414
-    sput-object v1, Lcom/google/gson/internal/bind/b;->B:Lwa7;
+    sput-object v1, Lcom/google/gson/internal/bind/b;->B:Lj38;
 
     .line 415
     .line 416
-    sget-object v0, Lcom/google/gson/internal/bind/EnumTypeAdapter;->d:Lwa7;
+    sget-object v0, Lcom/google/gson/internal/bind/EnumTypeAdapter;->d:Lj38;
 
     .line 417
     .line 418
-    sput-object v0, Lcom/google/gson/internal/bind/b;->C:Lwa7;
+    sput-object v0, Lcom/google/gson/internal/bind/b;->C:Lj38;
 
     .line 419
     .line 420
@@ -934,7 +934,7 @@
 .end method
 
 .method public static b(J)I
-    .locals 4
+    .locals 3
 
     .line 1
     long-to-int v0, p0
@@ -943,11 +943,11 @@
     int-to-long v1, v0
 
     .line 3
-    cmp-long v3, v1, p0
+    cmp-long v1, v1, p0
 
     .line 4
     .line 5
-    if-nez v3, :cond_0
+    if-nez v1, :cond_0
 
     .line 6
     .line 7
@@ -959,7 +959,7 @@
 
     .line 9
     .line 10
-    invoke-static {p0, p1, v0}, Lp27;->m(JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1, v0}, Leh0;->i(JLjava/lang/String;)Ljava/lang/String;
 
     .line 11
     .line 12
@@ -967,7 +967,7 @@
     move-result-object p0
 
     .line 14
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -982,7 +982,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -1011,7 +1011,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -1036,7 +1036,7 @@
     return-object p0
 .end method
 
-.method public static e(Ldd7;Lcom/google/gson/b;)Lwa7;
+.method public static e(Lm58;Lcom/google/gson/b;)Lj38;
     .locals 1
 
     .line 1
@@ -1044,7 +1044,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$29;-><init>(Ldd7;Lcom/google/gson/b;)V
+    invoke-direct {v0, p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$29;-><init>(Lm58;Lcom/google/gson/b;)V
 
     .line 4
     .line 5
@@ -1052,7 +1052,7 @@
     return-object v0
 .end method
 
-.method public static f(Ljava/lang/Class;Lcom/google/gson/b;)Lwa7;
+.method public static f(Ljava/lang/Class;Lcom/google/gson/b;)Lj38;
     .locals 1
 
     .line 1
@@ -1068,7 +1068,7 @@
     return-object v0
 .end method
 
-.method public static g(Ljava/lang/Class;Ljava/lang/Class;Lcom/google/gson/b;)Lwa7;
+.method public static g(Ljava/lang/Class;Ljava/lang/Class;Lcom/google/gson/b;)Lj38;
     .locals 1
 
     .line 1

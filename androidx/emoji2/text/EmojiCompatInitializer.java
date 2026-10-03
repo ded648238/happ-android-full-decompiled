@@ -2,61 +2,55 @@ package androidx.emoji2.text;
 
 import android.content.Context;
 import androidx.lifecycle.ProcessLifecycleInitializer;
-import defpackage.g32;
-import defpackage.ik3;
-import defpackage.kk3;
-import defpackage.rv7;
-import defpackage.sm1;
-import defpackage.tm1;
-import defpackage.up2;
-import defpackage.vm1;
+import defpackage.av1;
+import defpackage.b53;
+import defpackage.bv1;
+import defpackage.f14;
+import defpackage.i14;
+import defpackage.io1;
+import defpackage.pq;
+import defpackage.wd2;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class EmojiCompatInitializer implements up2 {
-    @Override // defpackage.up2
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class EmojiCompatInitializer implements b53 {
+    @Override // defpackage.b53
     public final List a() {
         return Collections.singletonList(ProcessLifecycleInitializer.class);
     }
 
-    @Override // defpackage.up2
+    @Override // defpackage.b53
     public final Object b(Context context) {
-        g32 g32Var = new g32(new vm1(context, 0));
-        g32Var.a = 1;
-        if (sm1.k == null) {
-            synchronized (sm1.j) {
+        Object obj;
+        wd2 wd2Var = new wd2(new io1(context));
+        wd2Var.a = 1;
+        if (av1.k == null) {
+            synchronized (av1.j) {
                 try {
-                    if (sm1.k == null) {
-                        sm1.k = new sm1(g32Var);
+                    if (av1.k == null) {
+                        av1.k = new av1(wd2Var);
                     }
-                } catch (Throwable th) {
-                    throw th;
+                } finally {
                 }
             }
         }
-        c(context);
-        return Boolean.TRUE;
-    }
-
-    public final void c(Context context) {
-        Object objM;
-        rv7 rv7VarQ = rv7.q(context);
-        rv7VarQ.getClass();
-        synchronized (rv7.V) {
+        pq p = pq.p(context);
+        p.getClass();
+        synchronized (pq.e0) {
             try {
-                objM = ((HashMap) rv7VarQ.R).get(ProcessLifecycleInitializer.class);
-                if (objM == null) {
-                    objM = rv7VarQ.m(ProcessLifecycleInitializer.class, new HashSet());
+                obj = ((HashMap) p.Y).get(ProcessLifecycleInitializer.class);
+                if (obj == null) {
+                    obj = p.j(ProcessLifecycleInitializer.class, new HashSet());
                 }
-            } catch (Throwable th) {
-                throw th;
+            } finally {
             }
         }
-        kk3 q = ((ik3) objM).getQ();
-        q.a(new tm1(this, q));
+        i14 x = ((f14) obj).getX();
+        x.a(new bv1(this, x));
+        return Boolean.TRUE;
     }
 }

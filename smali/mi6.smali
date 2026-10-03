@@ -1,154 +1,217 @@
-.class public final Lmi6;
+.class public abstract Lmi6;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lg72;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:I
-
-.field public final R:Lni6;
+# static fields
+.field public static final a:Ljava/util/HashMap;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lni6;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 7
 
     .line 1
-    iput p2, p0, Lmi6;->Q:I
+    new-instance v0, Ljava/util/HashMap;
 
     .line 2
     .line 3
-    iput-object p1, p0, Lmi6;->R:Lni6;
+    const/16 v1, 0xd
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
 
     .line 6
     .line 7
     .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    iget v0, p0, Lmi6;->Q:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lmi6;->R:Lni6;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    iget-boolean v0, v1, Lni6;->c:Z
+    sput-object v0, Lmi6;->a:Ljava/util/HashMap;
 
     .line 9
     .line 10
-    if-eqz v0, :cond_0
+    const/16 v1, 0x190
 
     .line 11
     .line 12
-    iget-object v0, v1, Lni6;->b:Lja1;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 13
     .line 14
-    invoke-static {v0}, Lrt2;->p(Lo64;)Ld35;
-
     .line 15
-    .line 16
-    .line 17
-    move-result-object v0
+    move-result-object v1
 
+    .line 16
+    const-string v2, "normal"
+
+    .line 17
     .line 18
-    invoke-static {v0}, Lub;->K(Ljava/lang/Object;)Ljava/util/List;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v0
+    const/16 v2, 0x2bc
 
     .line 22
-    goto :goto_0
-
     .line 23
-    :cond_0
-    sget-object v0, Lwn1;->Q:Lwn1;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 24
     .line 25
-    :goto_0
-    return-object v0
-
     .line 26
-    :pswitch_0
-    iget-object v0, v1, Lni6;->b:Lja1;
+    move-result-object v2
 
     .line 27
-    .line 28
-    invoke-static {v0}, Lrt2;->q(Lo64;)Loa6;
+    const-string v3, "bold"
 
+    .line 28
     .line 29
+    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 30
     .line 31
-    move-result-object v1
-
     .line 32
-    invoke-static {v0}, Lrt2;->r(Lo64;)Loa6;
+    const-string v3, "lighter"
 
     .line 33
     .line 34
+    const/4 v4, -0x1
+
     .line 35
-    move-result-object v0
+    const/4 v5, 0x1
 
     .line 36
-    const/4 v2, 0x2
+    const-string v6, "bolder"
 
     .line 37
-    new-array v2, v2, [Loa6;
-
     .line 38
+    invoke-static {v5, v0, v6, v4, v3}, Lc73;->q(ILjava/util/HashMap;Ljava/lang/String;ILjava/lang/String;)V
+
     .line 39
-    const/4 v3, 0x0
-
     .line 40
-    aput-object v1, v2, v3
-
     .line 41
-    .line 42
-    const/4 v1, 0x1
+    const-string v3, "200"
 
+    .line 42
     .line 43
-    aput-object v0, v2, v1
+    const/16 v4, 0xc8
 
     .line 44
     .line 45
-    invoke-static {v2}, Lub;->J([Ljava/lang/Object;)Ljava/util/List;
+    const/16 v5, 0x64
 
     .line 46
     .line 47
-    .line 48
-    move-result-object v0
+    const-string v6, "100"
 
+    .line 48
     .line 49
-    return-object v0
+    invoke-static {v5, v0, v6, v4, v3}, Lc73;->q(ILjava/util/HashMap;Ljava/lang/String;ILjava/lang/String;)V
 
     .line 50
-    nop
-
     .line 51
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 52
+    const/16 v3, 0x12c
+
+    .line 53
+    .line 54
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v3
+
+    .line 58
+    const-string v4, "300"
+
+    .line 59
+    .line 60
+    invoke-virtual {v0, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    const-string v3, "400"
+
+    .line 64
+    .line 65
+    invoke-virtual {v0, v3, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 66
+    .line 67
+    .line 68
+    const-string v1, "600"
+
+    .line 69
+    .line 70
+    const/16 v3, 0x258
+
+    .line 71
+    .line 72
+    const/16 v4, 0x1f4
+
+    .line 73
+    .line 74
+    const-string v5, "500"
+
+    .line 75
+    .line 76
+    invoke-static {v4, v0, v5, v3, v1}, Lc73;->q(ILjava/util/HashMap;Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 77
+    .line 78
+    .line 79
+    const-string v1, "700"
+
+    .line 80
+    .line 81
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 82
+    .line 83
+    .line 84
+    const/16 v1, 0x320
+
+    .line 85
+    .line 86
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object v1
+
+    .line 90
+    const-string v2, "800"
+
+    .line 91
+    .line 92
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 93
+    .line 94
+    .line 95
+    const/16 v1, 0x384
+
+    .line 96
+    .line 97
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object v1
+
+    .line 101
+    const-string v2, "900"
+
+    .line 102
+    .line 103
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 104
+    .line 105
+    .line 106
+    return-void
 .end method

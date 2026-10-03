@@ -1,29 +1,175 @@
-.class public final Lce5;
-.super Lnd5;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public Lce5;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lae5;
 
 
-# virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView;I)Landroid/widget/EdgeEffect;
+# instance fields
+.field public final a:Landroid/widget/Magnifier;
+
+
+# direct methods
+.method public constructor <init>(Landroid/widget/Magnifier;)V
     .locals 0
 
     .line 1
-    new-instance p2, Landroid/widget/EdgeEffect;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    .line 4
+    iput-object p1, p0, Lce5;->a:Landroid/widget/Magnifier;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(JJF)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lce5;->a:Landroid/widget/Magnifier;
+
+    .line 2
+    .line 3
+    const/16 p3, 0x20
+
+    .line 4
+    .line 5
+    shr-long p3, p1, p3
+
+    .line 6
+    .line 7
+    long-to-int p3, p3
+
+    .line 8
+    invoke-static {p3}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p3
+
+    .line 12
+    const-wide p4, 0xffffffffL
+
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    and-long/2addr p1, p4
+
+    .line 18
+    long-to-int p1, p1
+
+    .line 19
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p1
+
+    .line 23
+    invoke-virtual {p0, p3, p1}, Landroid/widget/Magnifier;->show(FF)V
+
+    .line 24
+    .line 25
+    .line 26
+    return-void
+.end method
+
+.method public final b()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lce5;->a:Landroid/widget/Magnifier;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/widget/Magnifier;->dismiss()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    return-void
+.end method
+
+.method public final c()J
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lce5;->a:Landroid/widget/Magnifier;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/widget/Magnifier;->getWidth()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
 
     .line 7
-    invoke-direct {p2, p1}, Landroid/widget/EdgeEffect;-><init>(Landroid/content/Context;)V
+    iget-object p0, p0, Lce5;->a:Landroid/widget/Magnifier;
 
     .line 8
     .line 9
+    invoke-virtual {p0}, Landroid/widget/Magnifier;->getHeight()I
+
     .line 10
-    return-object p2
+    .line 11
+    .line 12
+    move-result p0
+
+    .line 13
+    int-to-long v0, v0
+
+    .line 14
+    const/16 v2, 0x20
+
+    .line 15
+    .line 16
+    shl-long/2addr v0, v2
+
+    .line 17
+    int-to-long v2, p0
+
+    .line 18
+    const-wide v4, 0xffffffffL
+
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    and-long/2addr v2, v4
+
+    .line 24
+    or-long/2addr v0, v2
+
+    .line 25
+    return-wide v0
+.end method
+
+.method public final d()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lce5;->a:Landroid/widget/Magnifier;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/widget/Magnifier;->update()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
 .end method

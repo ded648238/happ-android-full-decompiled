@@ -1,96 +1,149 @@
-.class public abstract Lz14;
+.class public final Lz14;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Loh0;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/String;
+.field public final a:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/String;I)V
+.method public synthetic constructor <init>(I)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lz14;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p1, p0, Lz14;->b:Ljava/lang/String;
-
     .line 4
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p1, p0, Lz14;->a:I
 
+    .line 5
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lz14;->a:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lz14;->b:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    return-object v1
-.end method
-
-.method public final bridge c(Ljx2;)Ljava/lang/String;
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     .line 1
-    iget v0, p0, Lz14;->a:I
+    instance-of v0, p1, Lz14;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    check-cast p1, Lz14;
+
+    .line 7
+    .line 8
+    iget p1, p1, Lz14;->a:I
+
+    .line 9
+    .line 10
+    iget p0, p0, Lz14;->a:I
+
+    .line 11
+    .line 12
+    if-eq p0, p1, :cond_1
+
+    .line 13
+    .line 14
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_1
+    const/4 p0, 0x1
+
+    .line 17
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lz14;->a:I
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
 
     .line 4
     .line 5
     .line 6
-    invoke-static {p0, p1}, Lrt2;->J(Loh0;Ljx2;)Ljava/lang/String;
+    move-result p0
 
     .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget p0, p0, Lz14;->a:I
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const-string p0, "LineHeightStyle.Mode.Fixed"
+
+    .line 6
+    .line 7
+    return-object p0
+
     .line 8
+    :cond_0
+    const/4 v0, 0x1
+
     .line 9
-    move-result-object p1
+    if-ne p0, v0, :cond_1
 
     .line 10
-    return-object p1
-
     .line 11
-    :pswitch_0
-    invoke-static {p0, p1}, Lrt2;->J(Loh0;Ljx2;)Ljava/lang/String;
+    const-string p0, "LineHeightStyle.Mode.Minimum"
 
     .line 12
     .line 13
+    return-object p0
+
     .line 14
-    move-result-object p1
+    :cond_1
+    const/4 v0, 0x2
 
     .line 15
-    return-object p1
+    if-ne p0, v0, :cond_2
 
     .line 16
-    nop
-
     .line 17
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    const-string p0, "LineHeightStyle.Mode.Tight"
+
+    .line 18
+    .line 19
+    return-object p0
+
+    .line 20
+    :cond_2
+    const-string p0, "Invalid"
+
+    .line 21
+    .line 22
+    return-object p0
 .end method

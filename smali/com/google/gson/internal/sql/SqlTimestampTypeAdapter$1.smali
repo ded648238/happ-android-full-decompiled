@@ -1,9 +1,9 @@
 .class Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lwa7;
+.implements Lj38;
 
 
 # annotations
@@ -32,19 +32,19 @@
 
 
 # virtual methods
-.method public final a(Lcom/google/gson/a;Ldd7;)Lcom/google/gson/b;
-    .locals 1
+.method public final a(Lcom/google/gson/a;Lm58;)Lcom/google/gson/b;
+    .locals 0
 
     .line 1
-    iget-object p2, p2, Ldd7;->a:Ljava/lang/Class;
+    iget-object p0, p2, Lm58;->a:Ljava/lang/Class;
 
     .line 2
     .line 3
-    const-class v0, Ljava/sql/Timestamp;
+    const-class p2, Ljava/sql/Timestamp;
 
     .line 4
     .line 5
-    if-ne p2, v0, :cond_0
+    if-ne p0, p2, :cond_0
 
     .line 6
     .line 7
@@ -53,42 +53,42 @@
     .line 8
     .line 9
     .line 10
-    new-instance p2, Ldd7;
+    new-instance p0, Lm58;
 
     .line 11
     .line 12
-    const-class v0, Ljava/util/Date;
+    const-class p2, Ljava/util/Date;
 
     .line 13
     .line 14
-    invoke-direct {p2, v0}, Ldd7;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {p0, p2}, Lm58;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 15
     .line 16
     .line 17
-    invoke-virtual {p1, p2}, Lcom/google/gson/a;->e(Ldd7;)Lcom/google/gson/b;
+    invoke-virtual {p1, p0}, Lcom/google/gson/a;->e(Lm58;)Lcom/google/gson/b;
 
     .line 18
     .line 19
     .line 20
-    move-result-object p1
+    move-result-object p0
 
     .line 21
-    new-instance p2, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;
+    new-instance p1, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;
 
     .line 22
     .line 23
-    invoke-direct {p2, p1}, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;-><init>(Lcom/google/gson/b;)V
+    invoke-direct {p1, p0}, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;-><init>(Lcom/google/gson/b;)V
 
     .line 24
     .line 25
     .line 26
-    return-object p2
+    return-object p1
 
     .line 27
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 28
-    return-object p1
+    return-object p0
 .end method

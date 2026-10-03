@@ -1,61 +1,107 @@
 package defpackage;
 
-import android.text.Layout;
-import android.text.TextDirectionHeuristic;
-import android.text.TextPaint;
-import android.text.TextUtils;
+import java.util.HashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ki6 {
-    public final CharSequence a;
-    public final int b;
-    public final TextPaint c;
-    public final int d;
-    public final TextDirectionHeuristic e;
-    public final Layout.Alignment f;
-    public final int g;
-    public final TextUtils.TruncateAt h;
-    public final int i;
-    public final int j;
-    public final boolean k;
-    public final int l;
-    public final int m;
-    public final int n;
-    public final int o;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class ki6 {
+    public static final HashMap a;
 
-    public ki6(CharSequence charSequence, int i, TextPaint textPaint, int i2, TextDirectionHeuristic textDirectionHeuristic, Layout.Alignment alignment, int i3, TextUtils.TruncateAt truncateAt, int i4, int i5, boolean z, int i6, int i7, int i8, int i9) {
-        this.a = charSequence;
-        this.b = i;
-        this.c = textPaint;
-        this.d = i2;
-        this.e = textDirectionHeuristic;
-        this.f = alignment;
-        this.g = i3;
-        this.h = truncateAt;
-        this.i = i4;
-        this.j = i5;
-        this.k = z;
-        this.l = i6;
-        this.m = i7;
-        this.n = i8;
-        this.o = i9;
-        if (i < 0) {
-            aq2.a("invalid start value");
-        }
-        int length = charSequence.length();
-        if (i < 0 || i > length) {
-            aq2.a("invalid end value");
-        }
-        if (i3 < 0) {
-            aq2.a("invalid maxLines value");
-        }
-        if (i2 < 0) {
-            aq2.a("invalid width value");
-        }
-        if (i4 >= 0) {
-            return;
-        }
-        aq2.a("invalid ellipsizedWidth value");
+    static {
+        HashMap hashMap = new HashMap(47);
+        a = hashMap;
+        c73.q(-984833, hashMap, "aliceblue", -332841, "antiquewhite");
+        hashMap.put("aqua", -16711681);
+        hashMap.put("aquamarine", -8388652);
+        c73.q(-983041, hashMap, "azure", -657956, "beige");
+        c73.q(-6972, hashMap, "bisque", -16777216, "black");
+        c73.q(-5171, hashMap, "blanchedalmond", -16776961, "blue");
+        c73.q(-7722014, hashMap, "blueviolet", -5952982, "brown");
+        c73.q(-2180985, hashMap, "burlywood", -10510688, "cadetblue");
+        c73.q(-8388864, hashMap, "chartreuse", -2987746, "chocolate");
+        c73.q(-32944, hashMap, "coral", -10185235, "cornflowerblue");
+        c73.q(-1828, hashMap, "cornsilk", -2354116, "crimson");
+        hashMap.put("cyan", -16711681);
+        hashMap.put("darkblue", -16777077);
+        c73.q(-16741493, hashMap, "darkcyan", -4684277, "darkgoldenrod");
+        hashMap.put("darkgray", -5658199);
+        hashMap.put("darkgreen", -16751616);
+        hashMap.put("darkgrey", -5658199);
+        hashMap.put("darkkhaki", -4343957);
+        c73.q(-7667573, hashMap, "darkmagenta", -11179217, "darkolivegreen");
+        c73.q(-29696, hashMap, "darkorange", -6737204, "darkorchid");
+        c73.q(-7667712, hashMap, "darkred", -1468806, "darksalmon");
+        c73.q(-7357297, hashMap, "darkseagreen", -12042869, "darkslateblue");
+        hashMap.put("darkslategray", -13676721);
+        hashMap.put("darkslategrey", -13676721);
+        hashMap.put("darkturquoise", -16724271);
+        hashMap.put("darkviolet", -7077677);
+        c73.q(-60269, hashMap, "deeppink", -16728065, "deepskyblue");
+        hashMap.put("dimgray", -9868951);
+        hashMap.put("dimgrey", -9868951);
+        hashMap.put("dodgerblue", -14774017);
+        hashMap.put("firebrick", -5103070);
+        c73.q(-1296, hashMap, "floralwhite", -14513374, "forestgreen");
+        hashMap.put("fuchsia", -65281);
+        hashMap.put("gainsboro", -2302756);
+        c73.q(-460545, hashMap, "ghostwhite", -10496, "gold");
+        hashMap.put("goldenrod", -2448096);
+        hashMap.put("gray", -8355712);
+        c73.q(-16744448, hashMap, "green", -5374161, "greenyellow");
+        hashMap.put("grey", -8355712);
+        hashMap.put("honeydew", -983056);
+        c73.q(-38476, hashMap, "hotpink", -3318692, "indianred");
+        c73.q(-11861886, hashMap, "indigo", -16, "ivory");
+        c73.q(-989556, hashMap, "khaki", -1644806, "lavender");
+        c73.q(-3851, hashMap, "lavenderblush", -8586240, "lawngreen");
+        c73.q(-1331, hashMap, "lemonchiffon", -5383962, "lightblue");
+        c73.q(-1015680, hashMap, "lightcoral", -2031617, "lightcyan");
+        hashMap.put("lightgoldenrodyellow", -329006);
+        hashMap.put("lightgray", -2894893);
+        hashMap.put("lightgreen", -7278960);
+        hashMap.put("lightgrey", -2894893);
+        c73.q(-18751, hashMap, "lightpink", -24454, "lightsalmon");
+        c73.q(-14634326, hashMap, "lightseagreen", -7876870, "lightskyblue");
+        hashMap.put("lightslategray", -8943463);
+        hashMap.put("lightslategrey", -8943463);
+        hashMap.put("lightsteelblue", -5192482);
+        hashMap.put("lightyellow", -32);
+        c73.q(-16711936, hashMap, "lime", -13447886, "limegreen");
+        hashMap.put("linen", -331546);
+        hashMap.put("magenta", -65281);
+        c73.q(-8388608, hashMap, "maroon", -10039894, "mediumaquamarine");
+        c73.q(-16777011, hashMap, "mediumblue", -4565549, "mediumorchid");
+        c73.q(-7114533, hashMap, "mediumpurple", -12799119, "mediumseagreen");
+        c73.q(-8689426, hashMap, "mediumslateblue", -16713062, "mediumspringgreen");
+        c73.q(-12004916, hashMap, "mediumturquoise", -3730043, "mediumvioletred");
+        c73.q(-15132304, hashMap, "midnightblue", -655366, "mintcream");
+        c73.q(-6943, hashMap, "mistyrose", -6987, "moccasin");
+        c73.q(-8531, hashMap, "navajowhite", -16777088, "navy");
+        c73.q(-133658, hashMap, "oldlace", -8355840, "olive");
+        c73.q(-9728477, hashMap, "olivedrab", -23296, "orange");
+        c73.q(-47872, hashMap, "orangered", -2461482, "orchid");
+        c73.q(-1120086, hashMap, "palegoldenrod", -6751336, "palegreen");
+        c73.q(-5247250, hashMap, "paleturquoise", -2396013, "palevioletred");
+        c73.q(-4139, hashMap, "papayawhip", -9543, "peachpuff");
+        c73.q(-3308225, hashMap, "peru", -16181, "pink");
+        c73.q(-2252579, hashMap, "plum", -5185306, "powderblue");
+        c73.q(-8388480, hashMap, "purple", -10079335, "rebeccapurple");
+        c73.q(-65536, hashMap, "red", -4419697, "rosybrown");
+        c73.q(-12490271, hashMap, "royalblue", -7650029, "saddlebrown");
+        c73.q(-360334, hashMap, "salmon", -744352, "sandybrown");
+        c73.q(-13726889, hashMap, "seagreen", -2578, "seashell");
+        c73.q(-6270419, hashMap, "sienna", -4144960, "silver");
+        c73.q(-7876885, hashMap, "skyblue", -9807155, "slateblue");
+        hashMap.put("slategray", -9404272);
+        hashMap.put("slategrey", -9404272);
+        hashMap.put("snow", -1286);
+        hashMap.put("springgreen", -16711809);
+        c73.q(-12156236, hashMap, "steelblue", -2968436, "tan");
+        c73.q(-16744320, hashMap, "teal", -2572328, "thistle");
+        c73.q(-40121, hashMap, "tomato", -12525360, "turquoise");
+        c73.q(-1146130, hashMap, "violet", -663885, "wheat");
+        c73.q(-1, hashMap, "white", -657931, "whitesmoke");
+        c73.q(-256, hashMap, "yellow", -6632142, "yellowgreen");
+        hashMap.put("transparent", 0);
     }
 }

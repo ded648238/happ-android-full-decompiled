@@ -1,30 +1,65 @@
-.class public final Le62;
-.super Ljava/lang/RuntimeException;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Le62;
+.super Lom5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final Q:Lz42;
+# static fields
+.field public static final X:Le62;
 
 
 # direct methods
-.method public constructor <init>(Lz42;Ljava/lang/String;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v0, Le62;
 
     .line 2
     .line 3
-    .line 4
-    invoke-direct {p0, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    const-string v1, "getOuterClassId()Lorg/jetbrains/kotlin/name/ClassId;"
 
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    const-class v3, Lnq0;
+
+    .line 7
+    .line 8
+    const-string v4, "outerClassId"
+
+    .line 9
+    .line 10
+    invoke-direct {v0, v3, v4, v1, v2}, Lom5;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v0, Le62;->X:Le62;
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lnq0;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lnq0;->e()Lnq0;
+
+    .line 4
     .line 5
     .line 6
-    .line 7
-    iput-object p1, p0, Le62;->Q:Lz42;
+    move-result-object p0
 
-    .line 8
-    .line 9
-    return-void
+    .line 7
+    return-object p0
 .end method

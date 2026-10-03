@@ -1,297 +1,238 @@
-.class public interface abstract Llj7;
+.class public final Llj7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lpw6;
-.implements Lal2;
+.implements Landroid/view/MenuItem$OnMenuItemClickListener;
 
 
 # static fields
-.field public static final F:Luu;
+.field public static final d:[Ljava/lang/Class;
 
-.field public static final G:Luu;
 
-.field public static final H:Luu;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final I:Luu;
+.field public b:Ljava/lang/Object;
 
-.field public static final J:Luu;
-
-.field public static final K:Luu;
-
-.field public static final L:Luu;
-
-.field public static final M:Luu;
-
-.field public static final N:Luu;
-
-.field public static final O:Luu;
-
-.field public static final P:Luu;
+.field public c:Ljava/lang/Object;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 1
 
     .line 1
-    new-instance v0, Luu;
+    const-class v0, Landroid/view/MenuItem;
 
     .line 2
     .line 3
-    const-string v1, "camerax.core.useCase.defaultSessionConfig"
+    filled-new-array {v0}, [Ljava/lang/Class;
 
     .line 4
     .line 5
-    const-class v2, Ll76;
-
     .line 6
+    move-result-object v0
+
     .line 7
-    const/4 v3, 0x0
+    sput-object v0, Llj7;->d:[Ljava/lang/Class;
 
     .line 8
-    invoke-direct {v0, v1, v2, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
-
     .line 9
-    .line 10
-    .line 11
-    sput-object v0, Llj7;->F:Luu;
+    return-void
+.end method
+
+.method public synthetic constructor <init>()V
+    .locals 1
 
     .line 12
-    .line 13
-    new-instance v0, Luu;
+    const/4 v0, 0x0
 
-    .line 14
-    .line 15
-    const-string v1, "camerax.core.useCase.defaultCaptureConfig"
+    iput v0, p0, Llj7;->a:I
 
-    .line 16
-    .line 17
-    const-class v2, Lse0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
-    .line 19
-    invoke-direct {v0, v1, v2, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+    return-void
+.end method
 
-    .line 20
-    .line 21
-    .line 22
-    sput-object v0, Llj7;->G:Luu;
+.method public constructor <init>(Lpj4;Landroid/view/MenuItem$OnMenuItemClickListener;)V
+    .locals 1
 
-    .line 23
-    .line 24
-    new-instance v0, Luu;
+    .line 1
+    const/4 v0, 0x1
 
-    .line 25
-    .line 26
-    const-string v1, "camerax.core.useCase.sessionConfigUnpacker"
+    .line 2
+    iput v0, p0, Llj7;->a:I
 
-    .line 27
-    .line 28
-    const-class v2, Ljb0;
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 29
-    .line 30
-    invoke-direct {v0, v1, v2, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Llj7;->c:Ljava/lang/Object;
 
-    .line 31
-    .line 32
-    .line 33
-    sput-object v0, Llj7;->H:Luu;
+    .line 8
+    .line 9
+    iput-object p2, p0, Llj7;->b:Ljava/lang/Object;
 
-    .line 34
-    .line 35
-    new-instance v0, Luu;
-
-    .line 36
-    .line 37
-    const-string v1, "camerax.core.useCase.captureConfigUnpacker"
-
-    .line 38
-    .line 39
-    const-class v2, Ldb0;
-
-    .line 40
-    .line 41
-    invoke-direct {v0, v1, v2, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
-
-    .line 42
-    .line 43
-    .line 44
-    sput-object v0, Llj7;->I:Luu;
-
-    .line 45
-    .line 46
-    new-instance v0, Luu;
-
-    .line 47
-    .line 48
-    const-string v1, "camerax.core.useCase.surfaceOccupancyPriority"
-
-    .line 49
-    .line 50
-    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    .line 51
-    .line 52
-    invoke-direct {v0, v1, v2, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
-
-    .line 53
-    .line 54
-    .line 55
-    sput-object v0, Llj7;->J:Luu;
-
-    .line 56
-    .line 57
-    new-instance v0, Luu;
-
-    .line 58
-    .line 59
-    const-string v1, "camerax.core.useCase.targetFrameRate"
-
-    .line 60
-    .line 61
-    const-class v4, Landroid/util/Range;
-
-    .line 62
-    .line 63
-    invoke-direct {v0, v1, v4, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
-
-    .line 64
-    .line 65
-    .line 66
-    sput-object v0, Llj7;->K:Luu;
-
-    .line 67
-    .line 68
-    new-instance v0, Luu;
-
-    .line 69
-    .line 70
-    const-string v1, "camerax.core.useCase.zslDisabled"
-
-    .line 71
-    .line 72
-    sget-object v4, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
-
-    .line 73
-    .line 74
-    invoke-direct {v0, v1, v4, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
-
-    .line 75
-    .line 76
-    .line 77
-    sput-object v0, Llj7;->L:Luu;
-
-    .line 78
-    .line 79
-    new-instance v0, Luu;
-
-    .line 80
-    .line 81
-    const-string v1, "camerax.core.useCase.highResolutionDisabled"
-
-    .line 82
-    .line 83
-    invoke-direct {v0, v1, v4, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
-
-    .line 84
-    .line 85
-    .line 86
-    sput-object v0, Llj7;->M:Luu;
-
-    .line 87
-    .line 88
-    new-instance v0, Luu;
-
-    .line 89
-    .line 90
-    const-string v1, "camerax.core.useCase.captureType"
-
-    .line 91
-    .line 92
-    const-class v4, Lnj7;
-
-    .line 93
-    .line 94
-    invoke-direct {v0, v1, v4, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
-
-    .line 95
-    .line 96
-    .line 97
-    sput-object v0, Llj7;->N:Luu;
-
-    .line 98
-    .line 99
-    new-instance v0, Luu;
-
-    .line 100
-    .line 101
-    const-string v1, "camerax.core.useCase.previewStabilizationMode"
-
-    .line 102
-    .line 103
-    invoke-direct {v0, v1, v2, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
-
-    .line 104
-    .line 105
-    .line 106
-    sput-object v0, Llj7;->O:Luu;
-
-    .line 107
-    .line 108
-    new-instance v0, Luu;
-
-    .line 109
-    .line 110
-    const-string v1, "camerax.core.useCase.videoStabilizationMode"
-
-    .line 111
-    .line 112
-    invoke-direct {v0, v1, v2, v3}, Luu;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
-
-    .line 113
-    .line 114
-    .line 115
-    sput-object v0, Llj7;->P:Luu;
-
-    .line 116
-    .line 117
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract A()Ll76;
-.end method
+.method public final onMenuItemClick(Landroid/view/MenuItem;)Z
+    .locals 3
 
-.method public abstract I()Lnj7;
-.end method
+    .line 1
+    iget v0, p0, Llj7;->a:I
 
-.method public abstract J()I
-.end method
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
 
-.method public abstract P()Lse0;
-.end method
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Llj7;->b:Ljava/lang/Object;
 
-.method public abstract V()I
-.end method
+    .line 7
+    .line 8
+    check-cast v0, Landroid/view/MenuItem$OnMenuItemClickListener;
 
-.method public abstract f0()Z
-.end method
+    .line 9
+    .line 10
+    iget-object p0, p0, Llj7;->c:Ljava/lang/Object;
 
-.method public abstract j()Landroid/util/Range;
-.end method
+    .line 11
+    .line 12
+    check-cast p0, Lpj4;
 
-.method public abstract r()Ll76;
-.end method
+    .line 13
+    .line 14
+    invoke-virtual {p0, p1}, Lq3;->k(Landroid/view/MenuItem;)Landroid/view/MenuItem;
 
-.method public abstract s()I
-.end method
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
 
-.method public abstract t()Ljb0;
-.end method
+    .line 18
+    invoke-interface {v0, p0}, Landroid/view/MenuItem$OnMenuItemClickListener;->onMenuItemClick(Landroid/view/MenuItem;)Z
 
-.method public abstract v()Z
+    .line 19
+    .line 20
+    .line 21
+    move-result p0
+
+    .line 22
+    return p0
+
+    .line 23
+    :pswitch_0
+    iget-object v0, p0, Llj7;->b:Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    iget-object p0, p0, Llj7;->c:Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    check-cast p0, Ljava/lang/reflect/Method;
+
+    .line 28
+    .line 29
+    :try_start_0
+    invoke-virtual {p0}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
+
+    .line 33
+    sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+
+    .line 34
+    .line 35
+    if-ne v1, v2, :cond_0
+
+    .line 36
+    .line 37
+    filled-new-array {p1}, [Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p1
+
+    .line 41
+    invoke-virtual {p0, v0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p0
+
+    .line 45
+    check-cast p0, Ljava/lang/Boolean;
+
+    .line 46
+    .line 47
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 48
+    .line 49
+    .line 50
+    move-result p0
+
+    .line 51
+    goto :goto_0
+
+    .line 52
+    :cond_0
+    filled-new-array {p1}, [Ljava/lang/Object;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    invoke-virtual {p0, v0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 57
+    .line 58
+    .line 59
+    const/4 p0, 0x1
+
+    .line 60
+    goto :goto_0
+
+    .line 61
+    :catch_0
+    move-exception p0
+
+    .line 62
+    invoke-static {p0}, Lbh2;->n(Ljava/lang/Throwable;)V
+
+    .line 63
+    .line 64
+    .line 65
+    const/4 p0, 0x0
+
+    .line 66
+    :goto_0
+    return p0
+
+    .line 67
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

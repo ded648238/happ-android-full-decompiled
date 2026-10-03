@@ -1,29 +1,23 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class fn1 implements en1 {
-    public final int Q;
-    public int R = -1;
-    public int S = -1;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class fn1 extends d31 {
+    public long c0;
+    public /* synthetic */ Object d0;
+    public final /* synthetic */ u61 e0;
+    public int f0;
 
-    public fn1(int i) {
-        this.Q = i;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public fn1(u61 u61Var, d31 d31Var) {
+        super(d31Var);
+        this.e0 = u61Var;
     }
 
-    @Override // defpackage.en1
-    public final boolean m(CharSequence charSequence, int i, int i2, sd7 sd7Var) {
-        int i3 = this.Q;
-        if (i > i3 || i3 >= i2) {
-            return i2 <= i3;
-        }
-        this.R = i;
-        this.S = i2;
-        return false;
-    }
-
-    @Override // defpackage.en1
-    public final Object getResult() {
-        return this;
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.d0 = obj;
+        this.f0 |= Integer.MIN_VALUE;
+        return this.e0.l(this);
     }
 }

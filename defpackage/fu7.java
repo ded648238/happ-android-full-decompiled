@@ -1,66 +1,122 @@
 package defpackage;
 
-/* JADX WARN: Enum visitor error
-jadx.core.utils.exceptions.JadxRuntimeException: Init of enum field 'EF2' uses external variables
-	at jadx.core.dex.visitors.EnumVisitor.createEnumFieldByConstructor(EnumVisitor.java:485)
-	at jadx.core.dex.visitors.EnumVisitor.processEnumFieldByRegister(EnumVisitor.java:422)
-	at jadx.core.dex.visitors.EnumVisitor.extractEnumFieldsFromFilledArray(EnumVisitor.java:351)
-	at jadx.core.dex.visitors.EnumVisitor.extractEnumFieldsFromInsn(EnumVisitor.java:284)
-	at jadx.core.dex.visitors.EnumVisitor.convertToEnum(EnumVisitor.java:153)
-	at jadx.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:102)
- */
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class fu7 {
-    public static final xt7 S;
-    public static final zt7 T;
-    public static final bu7 U;
-    public static final /* synthetic */ fu7[] V;
-    public final hu7 Q;
-    public final int R;
+import android.appwidget.AppWidgetManager;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import su.happ.proxyutility.receiver.WidgetProvider;
 
-    /* JADX INFO: Fake field, exist only in values array */
-    fu7 EF0;
-
-    /* JADX INFO: Fake field, exist only in values array */
-    fu7 EF1;
-
-    /* JADX INFO: Fake field, exist only in values array */
-    fu7 EF2;
-
-    static {
-        fu7 fu7Var = new fu7("DOUBLE", 0, hu7.DOUBLE, 1);
-        fu7 fu7Var2 = new fu7("FLOAT", 1, hu7.FLOAT, 5);
-        hu7 hu7Var = hu7.LONG;
-        fu7 fu7Var3 = new fu7("INT64", 2, hu7Var, 0);
-        fu7 fu7Var4 = new fu7("UINT64", 3, hu7Var, 0);
-        hu7 hu7Var2 = hu7.INT;
-        fu7 fu7Var5 = new fu7("INT32", 4, hu7Var2, 0);
-        fu7 fu7Var6 = new fu7("FIXED64", 5, hu7Var, 1);
-        fu7 fu7Var7 = new fu7("FIXED32", 6, hu7Var2, 5);
-        fu7 fu7Var8 = new fu7("BOOL", 7, hu7.BOOLEAN, 0);
-        xt7 xt7Var = new xt7("STRING", 8, hu7.STRING, 2);
-        S = xt7Var;
-        hu7 hu7Var3 = hu7.MESSAGE;
-        zt7 zt7Var = new zt7("GROUP", 9, hu7Var3, 3);
-        T = zt7Var;
-        bu7 bu7Var = new bu7("MESSAGE", 10, hu7Var3, 2);
-        U = bu7Var;
-        V = new fu7[]{fu7Var, fu7Var2, fu7Var3, fu7Var4, fu7Var5, fu7Var6, fu7Var7, fu7Var8, xt7Var, zt7Var, bu7Var, new du7("BYTES", 11, hu7.BYTE_STRING, 2), new fu7("UINT32", 12, hu7Var2, 0), new fu7("ENUM", 13, hu7.ENUM, 0), new fu7("SFIXED32", 14, hu7Var2, 5), new fu7("SFIXED64", 15, hu7Var, 1), new fu7("SINT32", 16, hu7Var2, 0), new fu7("SINT64", 17, hu7Var, 0)};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class fu7 {
+    public static final long a(int i, int i2) {
+        if (i < 0 || i2 < 0) {
+            h53.a("start and end cannot be negative. [start: " + i + ", end: " + i2 + "]");
+        }
+        long j = (i2 & 4294967295L) | (i << 32);
+        int i3 = eu7.c;
+        return j;
     }
 
-    public fu7(String str, int i, hu7 hu7Var, int i2) {
-        super(str, i);
-        this.Q = hu7Var;
-        this.R = i2;
+    public static final long b(int i, long j) {
+        int i2 = eu7.c;
+        int i3 = (int) (j >> 32);
+        int i4 = i3 < 0 ? 0 : i3;
+        if (i4 > i) {
+            i4 = i;
+        }
+        int i5 = (int) (4294967295L & j);
+        int i6 = i5 >= 0 ? i5 : 0;
+        if (i6 <= i) {
+            i = i6;
+        }
+        return (i4 == i3 && i == i5) ? j : a(i4, i);
     }
 
-    public static fu7 valueOf(String str) {
-        return (fu7) Enum.valueOf(fu7.class, str);
+    public static final ArrayList c(ArrayList arrayList, List list, nj2 nj2Var) {
+        bu3 bu3Var;
+        list.getClass();
+        arrayList.size();
+        list.size();
+        ArrayList L1 = tt0.L1(arrayList, list);
+        ArrayList arrayList2 = new ArrayList(ut0.F0(L1, 10));
+        Iterator it = L1.iterator();
+        while (it.hasNext()) {
+            w55 w55Var = (w55) it.next();
+            bu3 bu3Var2 = (bu3) w55Var.X;
+            bg8 bg8Var = (bg8) w55Var.Y;
+            int i = bg8Var.g0;
+            xl annotations = bg8Var.getAnnotations();
+            pr4 name = bg8Var.getName();
+            name.getClass();
+            boolean A0 = bg8Var.A0();
+            boolean z = bg8Var.i0;
+            boolean z2 = bg8Var.j0;
+            if (bg8Var.k0 != null) {
+                int i2 = yh1.a;
+                on4 c = vh1.c(nj2Var);
+                c.getClass();
+                bu3Var = c.f().f(bu3Var2);
+            } else {
+                bu3Var = null;
+            }
+            bu3 bu3Var3 = bu3Var;
+            e27 j = bg8Var.j();
+            j.getClass();
+            arrayList2.add(new bg8(nj2Var, null, i, annotations, name, bu3Var2, A0, z, z2, bu3Var3, j));
+        }
+        return arrayList2;
     }
 
-    public static fu7[] values() {
-        return (fu7[]) V.clone();
+    public static xi4 d(String str, Collection collection) {
+        collection.getClass();
+        Collection collection2 = collection;
+        ArrayList arrayList = new ArrayList(ut0.F0(collection2, 10));
+        Iterator it = collection2.iterator();
+        while (it.hasNext()) {
+            arrayList.add(((bu3) it.next()).L());
+        }
+        m07 g0 = j68.g0(arrayList);
+        int i = g0.X;
+        xi4 xm0Var = i != 0 ? i != 1 ? new xm0(str, (xi4[]) g0.toArray(new xi4[0])) : (xi4) g0.get(0) : wi4.b;
+        return g0.X <= 1 ? xm0Var : new wz3(xm0Var);
+    }
+
+    public static final rx3 e(ln4 ln4Var) {
+        ln4 ln4Var2;
+        lr0 C;
+        ln4Var.getClass();
+        int i = yh1.a;
+        Iterator it = ln4Var.Y().o0().c().iterator();
+        while (true) {
+            if (!it.hasNext()) {
+                ln4Var2 = null;
+                break;
+            }
+            bu3 bu3Var = (bu3) it.next();
+            if (!hs3.y(bu3Var)) {
+                C = bu3Var.o0().C();
+                if (vh1.l(C, rq0.X) || vh1.l(C, rq0.Z)) {
+                    break;
+                }
+            }
+        }
+        C.getClass();
+        ln4Var2 = (ln4) C;
+        if (ln4Var2 == null) {
+            return null;
+        }
+        xi4 p0 = ln4Var2.p0();
+        rx3 rx3Var = p0 instanceof rx3 ? (rx3) p0 : null;
+        return rx3Var == null ? e(ln4Var2) : rx3Var;
+    }
+
+    public static void f(Context context, Integer num) {
+        context.getClass();
+        context.sendBroadcast(new Intent(context.getApplicationContext(), (Class<?>) WidgetProvider.class).setAction("android.appwidget.action.APPWIDGET_UPDATE").putExtra("appWidgetIds", AppWidgetManager.getInstance(context).getAppWidgetIds(new ComponentName(context, (Class<?>) WidgetProvider.class))).putExtra("key", num));
     }
 }

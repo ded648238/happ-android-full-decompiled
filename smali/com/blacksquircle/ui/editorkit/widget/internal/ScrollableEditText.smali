@@ -1,6 +1,6 @@
 .class public abstract Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;
 .super Landroid/widget/MultiAutoCompleteTextView;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -21,7 +21,7 @@
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
         "",
         "whether",
-        "Lbh7;",
+        "Lr98;",
         "setHorizontallyScrolling",
         "(Z)V",
         "editorkit_release"
@@ -37,15 +37,15 @@
 
 
 # instance fields
-.field public final Q:Landroid/widget/OverScroller;
+.field public final c0:Landroid/widget/OverScroller;
 
-.field public final R:Ljava/util/ArrayList;
+.field public final d0:Ljava/util/ArrayList;
 
-.field public final S:F
+.field public final e0:F
 
-.field public T:Landroid/view/VelocityTracker;
+.field public f0:Landroid/view/VelocityTracker;
 
-.field public U:Z
+.field public g0:Z
 
 
 # direct methods
@@ -72,7 +72,7 @@
     .line 10
     .line 11
     .line 12
-    iput-object p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->Q:Landroid/widget/OverScroller;
+    iput-object p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->c0:Landroid/widget/OverScroller;
 
     .line 13
     .line 14
@@ -85,7 +85,7 @@
     .line 17
     .line 18
     .line 19
-    iput-object p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->R:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->d0:Ljava/util/ArrayList;
 
     .line 20
     .line 21
@@ -108,7 +108,7 @@
     int-to-float p1, p1
 
     .line 30
-    iput p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->S:F
+    iput p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->e0:F
 
     .line 31
     .line 32
@@ -121,7 +121,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->Q:Landroid/widget/OverScroller;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->c0:Landroid/widget/OverScroller;
 
     .line 2
     .line 3
@@ -209,32 +209,32 @@
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/MultiAutoCompleteTextView;->onScrollChanged(IIII)V
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onScrollChanged(IIII)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->R:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->d0:Ljava/util/ArrayList;
 
     .line 5
     .line 6
-    invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 11
     .line 12
     .line 13
-    move-result p2
+    move-result p1
 
     .line 14
-    if-nez p2, :cond_0
+    if-nez p1, :cond_0
 
     .line 15
     .line 16
@@ -242,27 +242,27 @@
 
     .line 17
     :cond_0
-    invoke-static {p1}, Lxy4;->t(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
+    invoke-static {p0}, Lw31;->j(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
 
     .line 18
     .line 19
     .line 20
-    move-result-object p1
+    move-result-object p0
 
     .line 21
-    throw p1
+    throw p0
 .end method
 
 .method public onSizeChanged(IIII)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/MultiAutoCompleteTextView;->onSizeChanged(IIII)V
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->R:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->d0:Ljava/util/ArrayList;
 
     .line 5
     .line 6
@@ -302,7 +302,7 @@
 
     .line 22
     .line 23
-    invoke-static {}, Lio/sentry/x1;->l()V
+    invoke-static {}, Lio/sentry/z1;->l()V
 
     .line 24
     .line 25
@@ -331,10 +331,10 @@
     .line 37
     .line 38
     .line 39
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 40
-    throw p1
+    throw p0
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
@@ -346,7 +346,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->T:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->f0:Landroid/view/VelocityTracker;
 
     .line 5
     .line 6
@@ -362,7 +362,7 @@
     move-result-object v0
 
     .line 12
-    iput-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->T:Landroid/view/VelocityTracker;
+    iput-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->f0:Landroid/view/VelocityTracker;
 
     .line 13
     .line 14
@@ -375,7 +375,7 @@
     move-result v0
 
     .line 18
-    iget-object v1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->Q:Landroid/widget/OverScroller;
+    iget-object v1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->c0:Landroid/widget/OverScroller;
 
     .line 19
     .line 20
@@ -402,7 +402,7 @@
     .line 29
     .line 30
     :cond_1
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->T:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->f0:Landroid/view/VelocityTracker;
 
     .line 31
     .line 32
@@ -420,7 +420,7 @@
     .line 38
     .line 39
     :cond_2
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->T:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->f0:Landroid/view/VelocityTracker;
 
     .line 40
     .line 41
@@ -432,7 +432,7 @@
 
     .line 44
     .line 45
-    iget v3, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->S:F
+    iget v3, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->e0:F
 
     .line 46
     .line 47
@@ -442,7 +442,7 @@
     .line 49
     .line 50
     :cond_3
-    iget-boolean v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->U:Z
+    iget-boolean v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->g0:Z
 
     .line 51
     .line 52
@@ -453,7 +453,7 @@
 
     .line 54
     .line 55
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->T:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->f0:Landroid/view/VelocityTracker;
 
     .line 56
     .line 57
@@ -476,11 +476,11 @@
 
     .line 65
     :cond_4
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 66
     :goto_0
-    iget-object v3, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->T:Landroid/view/VelocityTracker;
+    iget-object v3, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->f0:Landroid/view/VelocityTracker;
 
     .line 67
     .line 68
@@ -718,7 +718,7 @@
     .line 173
     :cond_a
     :goto_3
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->T:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->f0:Landroid/view/VelocityTracker;
 
     .line 174
     .line 175
@@ -735,7 +735,7 @@
     const/4 v0, 0x0
 
     .line 181
-    iput-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->T:Landroid/view/VelocityTracker;
+    iput-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->f0:Landroid/view/VelocityTracker;
 
     .line 182
     .line 183
@@ -761,7 +761,7 @@
     .line 192
     .line 193
     :cond_d
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->T:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->f0:Landroid/view/VelocityTracker;
 
     .line 194
     .line 195
@@ -776,27 +776,27 @@
     .line 200
     :cond_e
     :goto_4
-    invoke-super {p0, p1}, Landroid/widget/MultiAutoCompleteTextView;->onTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     .line 201
     .line 202
     .line 203
-    move-result p1
+    move-result p0
 
     .line 204
-    return p1
+    return p0
 .end method
 
 .method public setHorizontallyScrolling(Z)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Landroid/widget/MultiAutoCompleteTextView;->setHorizontallyScrolling(Z)V
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setHorizontallyScrolling(Z)V
 
     .line 2
     .line 3
     .line 4
-    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->U:Z
+    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/ScrollableEditText;->g0:Z
 
     .line 5
     .line 6

@@ -1,12 +1,9 @@
 package defpackage;
 
-import android.app.Activity;
+import android.util.Rational;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ri5 {
-    public static void a(Activity activity) {
-        activity.getClass();
-        activity.registerActivityLifecycleCallbacks(new si5.a());
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class ri5 {
+    public static final Rational a = new Rational(16, 9);
 }

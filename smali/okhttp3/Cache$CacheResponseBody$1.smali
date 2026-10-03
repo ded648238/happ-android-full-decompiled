@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Cache$CacheResponseBody$1;
-.super Lp42;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lgf2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -19,8 +19,8 @@
     }
     d2 = {
         "okhttp3/Cache$CacheResponseBody$1",
-        "Lp42;",
-        "Lbh7;",
+        "Lgf2;",
+        "Lr98;",
         "close",
         "()V",
         "okhttp"
@@ -40,7 +40,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lle6;Lokhttp3/Cache$CacheResponseBody;)V
+.method public constructor <init>(Ld27;Lokhttp3/Cache$CacheResponseBody;)V
     .locals 0
 
     .line 1
@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    invoke-direct {p0, p1}, Lp42;-><init>(Lle6;)V
+    invoke-direct {p0, p1}, Lgf2;-><init>(Ld27;)V
 
     .line 4
     .line 5
@@ -84,7 +84,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-super {p0}, Lp42;->close()V
+    invoke-super {p0}, Lgf2;->close()V
 
     .line 11
     .line 12

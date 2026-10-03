@@ -1,78 +1,53 @@
 .class public final Lbm6;
-.super Ltv3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lcn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ll18;
 
 
 # static fields
-.field public static final X:Lbm6;
+.field public static final o0:Lfp4;
 
-.field public static final Y:Lbm6;
 
-.field public static final Z:Lbm6;
-
-.field public static final a0:Lbm6;
+# instance fields
+.field public n0:Z
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
+.method static constructor <clinit>()V
     .locals 2
 
     .line 1
-    new-instance v0, Lbm6;
+    new-instance v0, Lfp4;
 
     .line 2
     .line 3
-    const/16 v1, 0x1b
+    const/16 v1, 0x18
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ltv3;-><init>(I)V
+    invoke-direct {v0, v1}, Lfp4;-><init>(I)V
 
     .line 6
     .line 7
     .line 8
-    sput-object v0, Lbm6;->X:Lbm6;
+    sput-object v0, Lbm6;->o0:Lfp4;
 
     .line 9
     .line 10
-    new-instance v0, Lbm6;
-
-    .line 11
-    .line 12
-    invoke-direct {v0, v1}, Ltv3;-><init>(I)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v0, Lbm6;->Y:Lbm6;
-
-    .line 16
-    .line 17
-    new-instance v0, Lbm6;
-
-    .line 18
-    .line 19
-    invoke-direct {v0, v1}, Ltv3;-><init>(I)V
-
-    .line 20
-    .line 21
-    .line 22
-    sput-object v0, Lbm6;->Z:Lbm6;
-
-    .line 23
-    .line 24
-    new-instance v0, Lbm6;
-
-    .line 25
-    .line 26
-    invoke-direct {v0, v1}, Ltv3;-><init>(I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v0, Lbm6;->a0:Lbm6;
-
-    .line 30
-    .line 31
     return-void
+.end method
+
+
+# virtual methods
+.method public final o()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lbm6;->o0:Lfp4;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

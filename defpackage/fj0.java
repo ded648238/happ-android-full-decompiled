@@ -1,39 +1,29 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+import java.util.Iterator;
+import java.util.List;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class fj0 {
-    public final ia4 a;
-    public final a45 b;
-    public final z10 c;
-    public final me6 d;
+    public final List a;
 
-    public fj0(ia4 ia4Var, a45 a45Var, z10 z10Var, me6 me6Var) {
-        ia4Var.getClass();
-        a45Var.getClass();
-        me6Var.getClass();
-        this.a = ia4Var;
-        this.b = a45Var;
-        this.c = z10Var;
-        this.d = me6Var;
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public fj0(List list) {
+        this.a = list;
+        e45 e45Var = (e45) tt0.a1(list);
+        if (list.isEmpty()) {
+            return;
         }
-        if (!(obj instanceof fj0)) {
-            return false;
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            if (((e45) it.next()).b != e45Var.b) {
+                i60.g("All outputs must have the same format!");
+                throw null;
+            }
         }
-        fj0 fj0Var = (fj0) obj;
-        return rt2.f(this.a, fj0Var.a) && rt2.f(this.b, fj0Var.b) && this.c.equals(fj0Var.c) && rt2.f(this.d, fj0Var.d);
-    }
-
-    public final int hashCode() {
-        return this.d.hashCode() + ((this.c.hashCode() + ((this.b.hashCode() + (this.a.hashCode() * 31)) * 31)) * 31);
     }
 
     public final String toString() {
-        return "ClassData(nameResolver=" + this.a + ", classProto=" + this.b + ", metadataVersion=" + this.c + ", sourceElement=" + this.d + ')';
+        return "CameraStream.Config(outputs=" + this.a + ", imageSourceConfig=null)";
     }
 }

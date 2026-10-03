@@ -1,36 +1,36 @@
 .class public final Lio/sentry/g;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 .implements Ljava/lang/Comparable;
 
 
 # static fields
-.field public static final a0:Ljava/util/Map;
+.field public static final j0:Ljava/util/Map;
 
 
 # instance fields
-.field public final Q:Ljava/lang/Long;
+.field public final X:Ljava/lang/Long;
 
-.field public R:Ljava/util/Date;
+.field public Y:Ljava/util/Date;
 
-.field public final S:Ljava/lang/Long;
+.field public final Z:Ljava/lang/Long;
 
-.field public T:Ljava/lang/String;
+.field public c0:Ljava/lang/String;
 
-.field public U:Ljava/lang/String;
+.field public d0:Ljava/lang/String;
 
-.field public volatile V:Ljava/util/Map;
+.field public volatile e0:Ljava/util/Map;
 
-.field public W:Ljava/lang/String;
+.field public f0:Ljava/lang/String;
 
-.field public X:Ljava/lang/String;
+.field public g0:Ljava/lang/String;
 
-.field public Y:Lio/sentry/m5;
+.field public h0:Lio/sentry/o5;
 
-.field public Z:Lj$/util/concurrent/ConcurrentHashMap;
+.field public i0:Ljava/util/concurrent/ConcurrentHashMap;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     .line 2
     .line 3
-    sput-object v0, Lio/sentry/g;->a0:Ljava/util/Map;
+    sput-object v0, Lio/sentry/g;->j0:Ljava/util/Map;
 
     .line 4
     .line 5
@@ -52,7 +52,7 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 83
+    .line 77
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -65,15 +65,15 @@
 .method public constructor <init>(J)V
     .locals 2
 
-    .line 73
+    .line 67
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 74
-    sget-object v0, Lio/sentry/g;->a0:Ljava/util/Map;
+    .line 68
+    sget-object v0, Lio/sentry/g;->j0:Ljava/util/Map;
 
-    iput-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iput-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
-    .line 75
+    .line 69
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0
@@ -82,25 +82,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/sentry/g;->S:Ljava/lang/Long;
+    iput-object v0, p0, Lio/sentry/g;->Z:Ljava/lang/Long;
 
-    .line 76
+    .line 70
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
 
-    iput-object p1, p0, Lio/sentry/g;->Q:Ljava/lang/Long;
+    iput-object p1, p0, Lio/sentry/g;->X:Ljava/lang/Long;
 
     const/4 p1, 0x0
 
-    .line 77
-    iput-object p1, p0, Lio/sentry/g;->R:Ljava/util/Date;
+    .line 71
+    iput-object p1, p0, Lio/sentry/g;->Y:Ljava/util/Date;
 
     return-void
 .end method
 
 .method public constructor <init>(Lio/sentry/g;)V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -108,158 +108,146 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lio/sentry/g;->a0:Ljava/util/Map;
+    sget-object v0, Lio/sentry/g;->j0:Ljava/util/Map;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iput-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 7
     .line 8
-    invoke-static {}, Ljava/lang/System;->nanoTime()J
+    iget-object v0, p1, Lio/sentry/g;->Z:Ljava/lang/Long;
 
     .line 9
     .line 10
-    .line 11
-    move-result-wide v0
+    iput-object v0, p0, Lio/sentry/g;->Z:Ljava/lang/Long;
 
+    .line 11
     .line 12
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    iget-object v0, p1, Lio/sentry/g;->Y:Ljava/util/Date;
 
     .line 13
     .line 14
-    .line 15
-    move-result-object v0
+    iput-object v0, p0, Lio/sentry/g;->Y:Ljava/util/Date;
 
+    .line 15
     .line 16
-    iput-object v0, p0, Lio/sentry/g;->S:Ljava/lang/Long;
+    iget-object v0, p1, Lio/sentry/g;->X:Ljava/lang/Long;
 
     .line 17
     .line 18
-    iget-object v0, p1, Lio/sentry/g;->R:Ljava/util/Date;
+    iput-object v0, p0, Lio/sentry/g;->X:Ljava/lang/Long;
 
     .line 19
     .line 20
-    iput-object v0, p0, Lio/sentry/g;->R:Ljava/util/Date;
+    iget-object v0, p1, Lio/sentry/g;->c0:Ljava/lang/String;
 
     .line 21
     .line 22
-    iget-object v0, p1, Lio/sentry/g;->Q:Ljava/lang/Long;
+    iput-object v0, p0, Lio/sentry/g;->c0:Ljava/lang/String;
 
     .line 23
     .line 24
-    iput-object v0, p0, Lio/sentry/g;->Q:Ljava/lang/Long;
+    iget-object v0, p1, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 25
     .line 26
-    iget-object v0, p1, Lio/sentry/g;->T:Ljava/lang/String;
+    iput-object v0, p0, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 27
     .line 28
-    iput-object v0, p0, Lio/sentry/g;->T:Ljava/lang/String;
+    iget-object v0, p1, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 29
     .line 30
-    iget-object v0, p1, Lio/sentry/g;->U:Ljava/lang/String;
+    iput-object v0, p0, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 31
     .line 32
-    iput-object v0, p0, Lio/sentry/g;->U:Ljava/lang/String;
+    iget-object v0, p1, Lio/sentry/g;->g0:Ljava/lang/String;
 
     .line 33
     .line 34
-    iget-object v0, p1, Lio/sentry/g;->W:Ljava/lang/String;
+    iput-object v0, p0, Lio/sentry/g;->g0:Ljava/lang/String;
 
     .line 35
     .line 36
-    iput-object v0, p0, Lio/sentry/g;->W:Ljava/lang/String;
+    iget-object v0, p1, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 37
     .line 38
-    iget-object v0, p1, Lio/sentry/g;->X:Ljava/lang/String;
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
     .line 39
     .line 40
-    iput-object v0, p0, Lio/sentry/g;->X:Ljava/lang/String;
-
     .line 41
+    move-result v0
+
     .line 42
-    iget-object v0, p1, Lio/sentry/g;->V:Ljava/util/Map;
+    if-nez v0, :cond_0
 
     .line 43
     .line 44
-    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+    iget-object v0, p1, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 45
     .line 46
+    invoke-static {v0}, Lio/sentry/util/c;->p(Ljava/util/Map;)Ljava/util/concurrent/ConcurrentHashMap;
+
     .line 47
-    move-result v0
-
     .line 48
-    if-nez v0, :cond_0
-
     .line 49
+    move-result-object v0
+
     .line 50
-    iget-object v0, p1, Lio/sentry/g;->V:Ljava/util/Map;
+    if-eqz v0, :cond_0
 
     .line 51
     .line 52
-    invoke-static {v0}, Lio/sentry/util/b;->n(Ljava/util/Map;)Lj$/util/concurrent/ConcurrentHashMap;
+    iput-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 53
     .line 54
-    .line 55
-    move-result-object v0
+    :cond_0
+    iget-object v0, p1, Lio/sentry/g;->i0:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 55
     .line 56
-    if-eqz v0, :cond_0
+    invoke-static {v0}, Lio/sentry/util/c;->p(Ljava/util/Map;)Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 57
     .line 58
-    iput-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
-
     .line 59
+    move-result-object v0
+
     .line 60
-    :cond_0
-    iget-object v0, p1, Lio/sentry/g;->Z:Lj$/util/concurrent/ConcurrentHashMap;
+    iput-object v0, p0, Lio/sentry/g;->i0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 61
     .line 62
-    invoke-static {v0}, Lio/sentry/util/b;->n(Ljava/util/Map;)Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object p1, p1, Lio/sentry/g;->h0:Lio/sentry/o5;
 
     .line 63
     .line 64
+    iput-object p1, p0, Lio/sentry/g;->h0:Lio/sentry/o5;
+
     .line 65
-    move-result-object v0
-
     .line 66
-    iput-object v0, p0, Lio/sentry/g;->Z:Lj$/util/concurrent/ConcurrentHashMap;
-
-    .line 67
-    .line 68
-    iget-object p1, p1, Lio/sentry/g;->Y:Lio/sentry/m5;
-
-    .line 69
-    .line 70
-    iput-object p1, p0, Lio/sentry/g;->Y:Lio/sentry/m5;
-
-    .line 71
-    .line 72
     return-void
 .end method
 
 .method public constructor <init>(Ljava/util/Date;)V
     .locals 2
 
-    .line 78
+    .line 72
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 79
-    sget-object v0, Lio/sentry/g;->a0:Ljava/util/Map;
+    .line 73
+    sget-object v0, Lio/sentry/g;->j0:Ljava/util/Map;
 
-    iput-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iput-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
-    .line 80
+    .line 74
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0
@@ -268,21 +256,21 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/sentry/g;->S:Ljava/lang/Long;
+    iput-object v0, p0, Lio/sentry/g;->Z:Ljava/lang/Long;
 
-    .line 81
-    iput-object p1, p0, Lio/sentry/g;->R:Ljava/util/Date;
+    .line 75
+    iput-object p1, p0, Lio/sentry/g;->Y:Ljava/util/Date;
 
     const/4 p1, 0x0
 
-    .line 82
-    iput-object p1, p0, Lio/sentry/g;->Q:Ljava/lang/Long;
+    .line 76
+    iput-object p1, p0, Lio/sentry/g;->X:Ljava/lang/Long;
 
     return-void
 .end method
 
 .method public static a(Lio/sentry/g;Lio/sentry/g;)Z
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-virtual {p0}, Lio/sentry/g;->c()Ljava/util/Date;
@@ -317,23 +305,23 @@
     move-result-wide v2
 
     .line 17
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 18
     .line 19
-    if-nez v4, :cond_0
+    if-nez v0, :cond_0
 
     .line 20
     .line 21
-    iget-object v0, p0, Lio/sentry/g;->T:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->c0:Ljava/lang/String;
 
     .line 22
     .line 23
-    iget-object v1, p1, Lio/sentry/g;->T:Ljava/lang/String;
+    iget-object v1, p1, Lio/sentry/g;->c0:Ljava/lang/String;
 
     .line 24
     .line 25
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 26
     .line 27
@@ -345,15 +333,15 @@
 
     .line 30
     .line 31
-    iget-object v0, p0, Lio/sentry/g;->U:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 32
     .line 33
-    iget-object v1, p1, Lio/sentry/g;->U:Ljava/lang/String;
+    iget-object v1, p1, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 34
     .line 35
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 36
     .line 37
@@ -365,15 +353,15 @@
 
     .line 40
     .line 41
-    iget-object v0, p0, Lio/sentry/g;->W:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 42
     .line 43
-    iget-object v1, p1, Lio/sentry/g;->W:Ljava/lang/String;
+    iget-object v1, p1, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 44
     .line 45
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 46
     .line 47
@@ -385,15 +373,15 @@
 
     .line 50
     .line 51
-    iget-object v0, p0, Lio/sentry/g;->X:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->g0:Ljava/lang/String;
 
     .line 52
     .line 53
-    iget-object v1, p1, Lio/sentry/g;->X:Ljava/lang/String;
+    iget-object v1, p1, Lio/sentry/g;->g0:Ljava/lang/String;
 
     .line 54
     .line 55
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 56
     .line 57
@@ -405,11 +393,11 @@
 
     .line 60
     .line 61
-    iget-object p0, p0, Lio/sentry/g;->Y:Lio/sentry/m5;
+    iget-object p0, p0, Lio/sentry/g;->h0:Lio/sentry/o5;
 
     .line 62
     .line 63
-    iget-object p1, p1, Lio/sentry/g;->Y:Lio/sentry/m5;
+    iget-object p1, p1, Lio/sentry/g;->h0:Lio/sentry/o5;
 
     .line 64
     .line 65
@@ -436,11 +424,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 2
     .line 3
-    sget-object v1, Lio/sentry/g;->a0:Ljava/util/Map;
+    sget-object v1, Lio/sentry/g;->j0:Ljava/util/Map;
 
     .line 4
     .line 5
@@ -452,7 +440,7 @@
 
     .line 8
     :try_start_0
-    iget-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 9
     .line 10
@@ -460,16 +448,16 @@
 
     .line 11
     .line 12
-    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 13
     .line 14
-    invoke-direct {v0}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     .line 15
     .line 16
     .line 17
-    iput-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iput-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 18
     .line 19
@@ -508,7 +496,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/sentry/g;->R:Ljava/util/Date;
+    iget-object v0, p0, Lio/sentry/g;->Y:Ljava/util/Date;
 
     .line 2
     .line 3
@@ -520,7 +508,7 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lio/sentry/g;->Q:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/g;->X:Ljava/lang/Long;
 
     .line 7
     .line 8
@@ -545,7 +533,7 @@
     .line 17
     .line 18
     .line 19
-    iput-object v2, p0, Lio/sentry/g;->R:Ljava/util/Date;
+    iput-object v2, p0, Lio/sentry/g;->Y:Ljava/util/Date;
 
     .line 20
     .line 21
@@ -553,50 +541,82 @@
 
     .line 22
     :cond_1
-    const-string v0, "No timestamp set for breadcrumb"
+    const-string p0, "No timestamp set for breadcrumb"
 
     .line 23
     .line 24
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 25
     .line 26
     .line 27
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 28
-    return-object v0
+    return-object p0
 .end method
 
 .method public final compareTo(Ljava/lang/Object;)I
-    .locals 1
+    .locals 2
 
     .line 1
     check-cast p1, Lio/sentry/g;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lio/sentry/g;->S:Ljava/lang/Long;
+    invoke-virtual {p0}, Lio/sentry/g;->c()Ljava/util/Date;
 
     .line 4
     .line 5
-    iget-object p1, p1, Lio/sentry/g;->S:Ljava/lang/Long;
-
     .line 6
+    move-result-object v0
+
     .line 7
-    invoke-virtual {v0, p1}, Ljava/lang/Long;->compareTo(Ljava/lang/Long;)I
+    invoke-virtual {p1}, Lio/sentry/g;->c()Ljava/util/Date;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    move-result-object v1
 
     .line 11
-    return p1
+    invoke-virtual {v0, v1}, Ljava/util/Date;->compareTo(Ljava/util/Date;)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-eqz v0, :cond_0
+
+    .line 16
+    .line 17
+    return v0
+
+    .line 18
+    :cond_0
+    iget-object p0, p0, Lio/sentry/g;->Z:Ljava/lang/Long;
+
+    .line 19
+    .line 20
+    iget-object p1, p1, Lio/sentry/g;->Z:Ljava/lang/Long;
+
+    .line 21
+    .line 22
+    invoke-virtual {p0, p1}, Ljava/lang/Long;->compareTo(Ljava/lang/Long;)I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result p0
+
+    .line 26
+    return p0
 .end method
 
 .method public final d(Ljava/lang/Object;Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     if-nez p2, :cond_0
@@ -611,19 +631,19 @@
 
     .line 5
     .line 6
-    iget-object p1, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object p0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 7
     .line 8
-    sget-object v0, Lio/sentry/g;->a0:Ljava/util/Map;
+    sget-object p1, Lio/sentry/g;->j0:Ljava/util/Map;
 
     .line 9
     .line 10
-    if-eq p1, v0, :cond_1
+    if-eq p0, p1, :cond_1
 
     .line 11
     .line 12
-    invoke-interface {p1, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -639,10 +659,10 @@
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    move-result-object p0
 
     .line 20
-    invoke-interface {v0, p2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -696,7 +716,7 @@
 
     .line 20
     .line 21
-    iget-object v1, p0, Lio/sentry/g;->U:Ljava/lang/String;
+    iget-object v1, p0, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 22
     .line 23
@@ -724,7 +744,7 @@
 
     .line 34
     .line 35
-    iget-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 36
     .line 37
@@ -740,7 +760,7 @@
     move-result-object v0
 
     .line 43
-    iget-object v2, p1, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v2, p1, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 44
     .line 45
@@ -752,7 +772,7 @@
     move-result-object v1
 
     .line 49
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 50
     .line 51
@@ -764,7 +784,7 @@
 
     .line 54
     .line 55
-    iget-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 56
     .line 57
@@ -780,7 +800,7 @@
     move-result-object v0
 
     .line 63
-    iget-object v2, p1, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v2, p1, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 64
     .line 65
@@ -792,7 +812,7 @@
     move-result-object v1
 
     .line 69
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 70
     .line 71
@@ -804,7 +824,7 @@
 
     .line 74
     .line 75
-    iget-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 76
     .line 77
@@ -820,7 +840,7 @@
     move-result-object v0
 
     .line 83
-    iget-object v2, p1, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v2, p1, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 84
     .line 85
@@ -832,7 +852,7 @@
     move-result-object v1
 
     .line 89
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 90
     .line 91
@@ -844,7 +864,7 @@
 
     .line 94
     .line 95
-    iget-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 96
     .line 97
@@ -860,7 +880,7 @@
     move-result-object v0
 
     .line 103
-    iget-object v2, p1, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v2, p1, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 104
     .line 105
@@ -872,7 +892,7 @@
     move-result-object v1
 
     .line 109
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 110
     .line 111
@@ -884,27 +904,27 @@
 
     .line 114
     .line 115
-    iget-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object p0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 116
     .line 117
-    const-string v1, "http.query"
+    const-string v0, "http.query"
 
     .line 118
     .line 119
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 120
     .line 121
     .line 122
-    move-result-object v0
+    move-result-object p0
 
     .line 123
-    iget-object p1, p1, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object p1, p1, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 124
     .line 125
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 126
     .line 127
@@ -912,23 +932,23 @@
     move-result-object p1
 
     .line 129
-    invoke-static {v0, p1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 130
     .line 131
     .line 132
-    move-result p1
+    move-result p0
 
     .line 133
-    if-eqz p1, :cond_3
+    if-eqz p0, :cond_3
 
     .line 134
     .line 135
     :goto_0
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 136
-    return p1
+    return p0
 
     .line 137
     :cond_2
@@ -937,376 +957,252 @@
     .line 138
     .line 139
     .line 140
-    move-result p1
+    move-result p0
 
     .line 141
-    return p1
+    return p0
 
     .line 142
     :cond_3
     :goto_1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 143
-    return p1
+    return p0
 .end method
 
 .method public final hashCode()I
-    .locals 20
+    .locals 13
 
     .line 1
-    move-object/from16 v0, p0
+    const-string v0, "http"
 
     .line 2
     .line 3
-    const-string v1, "http"
+    iget-object v1, p0, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 4
     .line 5
-    iget-object v2, v0, Lio/sentry/g;->U:Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 6
     .line 7
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 8
-    .line 9
-    .line 10
-    move-result v1
+    move-result v0
 
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
     .line 11
-    const/4 v2, 0x6
+    invoke-virtual {p0}, Lio/sentry/g;->c()Ljava/util/Date;
 
     .line 12
-    const/4 v7, 0x1
-
     .line 13
-    const/4 v8, 0x0
-
     .line 14
-    if-eqz v1, :cond_0
+    move-result-object v0
 
     .line 15
-    .line 16
-    invoke-virtual {v0}, Lio/sentry/g;->c()Ljava/util/Date;
+    invoke-virtual {v0}, Ljava/util/Date;->getTime()J
 
+    .line 16
     .line 17
     .line 18
+    move-result-wide v0
+
     .line 19
-    move-result-object v1
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 20
-    invoke-virtual {v1}, Ljava/util/Date;->getTime()J
-
     .line 21
     .line 22
+    move-result-object v2
+
     .line 23
-    move-result-wide v9
+    iget-object v3, p0, Lio/sentry/g;->c0:Ljava/lang/String;
 
     .line 24
-    invoke-static {v9, v10}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
     .line 25
+    iget-object v4, p0, Lio/sentry/g;->d0:Ljava/lang/String;
+
     .line 26
     .line 27
-    move-result-object v1
+    iget-object v5, p0, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 28
-    iget-object v9, v0, Lio/sentry/g;->T:Ljava/lang/String;
-
     .line 29
+    iget-object v6, p0, Lio/sentry/g;->g0:Ljava/lang/String;
+
     .line 30
-    iget-object v10, v0, Lio/sentry/g;->U:Ljava/lang/String;
-
     .line 31
+    iget-object v7, p0, Lio/sentry/g;->h0:Lio/sentry/o5;
+
     .line 32
-    iget-object v11, v0, Lio/sentry/g;->W:Ljava/lang/String;
-
     .line 33
+    const-string v0, "status_code"
+
     .line 34
-    iget-object v12, v0, Lio/sentry/g;->X:Ljava/lang/String;
-
     .line 35
+    iget-object v1, p0, Lio/sentry/g;->e0:Ljava/util/Map;
+
     .line 36
-    iget-object v13, v0, Lio/sentry/g;->Y:Lio/sentry/m5;
-
     .line 37
-    .line 38
-    const-string v14, "status_code"
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 38
     .line 39
     .line 40
-    iget-object v15, v0, Lio/sentry/g;->V:Ljava/util/Map;
+    move-result-object v8
 
     .line 41
-    .line 42
-    invoke-interface {v15, v14}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v0, "url"
 
+    .line 42
     .line 43
+    iget-object v1, p0, Lio/sentry/g;->e0:Ljava/util/Map;
+
     .line 44
     .line 45
-    move-result-object v14
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 46
-    const-string v15, "url"
-
     .line 47
     .line 48
-    const/16 v16, 0x5
+    move-result-object v9
 
     .line 49
+    const-string v0, "method"
+
     .line 50
-    iget-object v3, v0, Lio/sentry/g;->V:Ljava/util/Map;
-
     .line 51
-    .line 52
-    invoke-interface {v3, v15}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v1, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
+    .line 52
     .line 53
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 54
     .line 55
-    move-result-object v3
-
     .line 56
-    const-string v15, "method"
+    move-result-object v10
 
     .line 57
+    const-string v0, "http.fragment"
+
     .line 58
-    const/16 v17, 0x4
-
     .line 59
+    iget-object v1, p0, Lio/sentry/g;->e0:Ljava/util/Map;
+
     .line 60
-    iget-object v4, v0, Lio/sentry/g;->V:Ljava/util/Map;
-
     .line 61
-    .line 62
-    invoke-interface {v4, v15}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 62
     .line 63
     .line 64
+    move-result-object v11
+
     .line 65
-    move-result-object v4
+    const-string v0, "http.query"
 
     .line 66
-    const-string v15, "http.fragment"
-
     .line 67
+    iget-object p0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
+
     .line 68
-    const/16 v18, 0x3
-
     .line 69
-    .line 70
-    iget-object v5, v0, Lio/sentry/g;->V:Ljava/util/Map;
+    invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 70
     .line 71
     .line 72
-    invoke-interface {v5, v15}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v12
 
     .line 73
+    filled-new-array/range {v2 .. v12}, [Ljava/lang/Object;
+
     .line 74
     .line 75
-    move-result-object v5
-
     .line 76
-    const-string v15, "http.query"
+    move-result-object p0
 
     .line 77
-    .line 78
-    const/16 v19, 0x2
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
+    .line 78
     .line 79
     .line 80
-    iget-object v6, v0, Lio/sentry/g;->V:Ljava/util/Map;
+    move-result p0
 
     .line 81
+    return p0
+
     .line 82
-    invoke-interface {v6, v15}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_0
+    invoke-virtual {p0}, Lio/sentry/g;->c()Ljava/util/Date;
 
     .line 83
     .line 84
     .line 85
-    move-result-object v6
+    move-result-object v0
 
     .line 86
-    const/16 v15, 0xb
+    invoke-virtual {v0}, Ljava/util/Date;->getTime()J
 
     .line 87
     .line 88
-    new-array v15, v15, [Ljava/lang/Object;
-
     .line 89
+    move-result-wide v0
+
     .line 90
-    aput-object v1, v15, v8
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 91
     .line 92
-    aput-object v9, v15, v7
-
     .line 93
+    move-result-object v2
+
     .line 94
-    aput-object v10, v15, v19
+    iget-object v3, p0, Lio/sentry/g;->c0:Ljava/lang/String;
 
     .line 95
     .line 96
-    aput-object v11, v15, v18
+    iget-object v4, p0, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 97
     .line 98
-    aput-object v12, v15, v17
+    iget-object v5, p0, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 99
     .line 100
-    aput-object v13, v15, v16
+    iget-object v6, p0, Lio/sentry/g;->g0:Ljava/lang/String;
 
     .line 101
     .line 102
-    aput-object v14, v15, v2
+    iget-object v7, p0, Lio/sentry/g;->h0:Lio/sentry/o5;
 
     .line 103
     .line 104
-    const/4 v1, 0x7
+    filled-new-array/range {v2 .. v7}, [Ljava/lang/Object;
 
     .line 105
-    aput-object v3, v15, v1
-
     .line 106
     .line 107
-    const/16 v1, 0x8
+    move-result-object p0
 
     .line 108
-    .line 109
-    aput-object v4, v15, v1
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
+    .line 109
     .line 110
     .line 111
-    const/16 v1, 0x9
+    move-result p0
 
     .line 112
-    .line 113
-    aput-object v5, v15, v1
-
-    .line 114
-    .line 115
-    const/16 v1, 0xa
-
-    .line 116
-    .line 117
-    aput-object v6, v15, v1
-
-    .line 118
-    .line 119
-    invoke-static {v15}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 120
-    .line 121
-    .line 122
-    move-result v1
-
-    .line 123
-    return v1
-
-    .line 124
-    :cond_0
-    const/16 v16, 0x5
-
-    .line 125
-    .line 126
-    const/16 v17, 0x4
-
-    .line 127
-    .line 128
-    const/16 v18, 0x3
-
-    .line 129
-    .line 130
-    const/16 v19, 0x2
-
-    .line 131
-    .line 132
-    invoke-virtual {v0}, Lio/sentry/g;->c()Ljava/util/Date;
-
-    .line 133
-    .line 134
-    .line 135
-    move-result-object v1
-
-    .line 136
-    invoke-virtual {v1}, Ljava/util/Date;->getTime()J
-
-    .line 137
-    .line 138
-    .line 139
-    move-result-wide v3
-
-    .line 140
-    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 141
-    .line 142
-    .line 143
-    move-result-object v1
-
-    .line 144
-    iget-object v3, v0, Lio/sentry/g;->T:Ljava/lang/String;
-
-    .line 145
-    .line 146
-    iget-object v4, v0, Lio/sentry/g;->U:Ljava/lang/String;
-
-    .line 147
-    .line 148
-    iget-object v5, v0, Lio/sentry/g;->W:Ljava/lang/String;
-
-    .line 149
-    .line 150
-    iget-object v6, v0, Lio/sentry/g;->X:Ljava/lang/String;
-
-    .line 151
-    .line 152
-    iget-object v9, v0, Lio/sentry/g;->Y:Lio/sentry/m5;
-
-    .line 153
-    .line 154
-    new-array v2, v2, [Ljava/lang/Object;
-
-    .line 155
-    .line 156
-    aput-object v1, v2, v8
-
-    .line 157
-    .line 158
-    aput-object v3, v2, v7
-
-    .line 159
-    .line 160
-    aput-object v4, v2, v19
-
-    .line 161
-    .line 162
-    aput-object v5, v2, v18
-
-    .line 163
-    .line 164
-    aput-object v6, v2, v17
-
-    .line 165
-    .line 166
-    aput-object v9, v2, v16
-
-    .line 167
-    .line 168
-    invoke-static {v2}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 169
-    .line 170
-    .line 171
-    move-result v1
-
-    .line 172
-    return v1
+    return p0
 .end method
 
-.method public final serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 3
 
     .line 1
@@ -1328,7 +1224,7 @@
     .line 9
     .line 10
     .line 11
-    iget-object v0, p0, Lio/sentry/g;->Q:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/g;->X:Ljava/lang/Long;
 
     .line 12
     .line 13
@@ -1344,7 +1240,7 @@
     move-result-wide v0
 
     .line 19
-    invoke-static {v0, v1}, Lio/sentry/config/a;->m(J)Ljava/lang/String;
+    invoke-static {v0, v1}, Lio/sentry/config/a;->n(J)Ljava/lang/String;
 
     .line 20
     .line 21
@@ -1372,7 +1268,7 @@
     move-result-wide v0
 
     .line 32
-    invoke-static {v0, v1}, Lio/sentry/config/a;->m(J)Ljava/lang/String;
+    invoke-static {v0, v1}, Lio/sentry/config/a;->n(J)Ljava/lang/String;
 
     .line 33
     .line 34
@@ -1386,7 +1282,7 @@
     .line 37
     .line 38
     .line 39
-    iget-object v0, p0, Lio/sentry/g;->T:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->c0:Ljava/lang/String;
 
     .line 40
     .line 41
@@ -1403,7 +1299,7 @@
     .line 46
     .line 47
     .line 48
-    iget-object v0, p0, Lio/sentry/g;->T:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->c0:Ljava/lang/String;
 
     .line 49
     .line 50
@@ -1413,7 +1309,7 @@
     .line 52
     .line 53
     :cond_1
-    iget-object v0, p0, Lio/sentry/g;->U:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 54
     .line 55
@@ -1430,7 +1326,7 @@
     .line 60
     .line 61
     .line 62
-    iget-object v0, p0, Lio/sentry/g;->U:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 63
     .line 64
@@ -1449,7 +1345,7 @@
     .line 70
     .line 71
     .line 72
-    iget-object v0, p0, Lio/sentry/g;->V:Ljava/util/Map;
+    iget-object v0, p0, Lio/sentry/g;->e0:Ljava/util/Map;
 
     .line 73
     .line 74
@@ -1458,7 +1354,7 @@
     .line 75
     .line 76
     .line 77
-    iget-object v0, p0, Lio/sentry/g;->W:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 78
     .line 79
@@ -1475,7 +1371,7 @@
     .line 84
     .line 85
     .line 86
-    iget-object v0, p0, Lio/sentry/g;->W:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 87
     .line 88
@@ -1485,7 +1381,7 @@
     .line 90
     .line 91
     :cond_3
-    iget-object v0, p0, Lio/sentry/g;->X:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->g0:Ljava/lang/String;
 
     .line 92
     .line 93
@@ -1502,7 +1398,7 @@
     .line 98
     .line 99
     .line 100
-    iget-object v0, p0, Lio/sentry/g;->X:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/g;->g0:Ljava/lang/String;
 
     .line 101
     .line 102
@@ -1512,7 +1408,7 @@
     .line 104
     .line 105
     :cond_4
-    iget-object v0, p0, Lio/sentry/g;->Y:Lio/sentry/m5;
+    iget-object v0, p0, Lio/sentry/g;->h0:Lio/sentry/o5;
 
     .line 106
     .line 107
@@ -1529,7 +1425,7 @@
     .line 112
     .line 113
     .line 114
-    iget-object v0, p0, Lio/sentry/g;->Y:Lio/sentry/m5;
+    iget-object v0, p0, Lio/sentry/g;->h0:Lio/sentry/o5;
 
     .line 115
     .line 116
@@ -1539,7 +1435,7 @@
     .line 118
     .line 119
     :cond_5
-    iget-object v0, p0, Lio/sentry/g;->Z:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/g;->i0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 120
     .line 121
@@ -1588,11 +1484,11 @@
 
     .line 142
     .line 143
-    iget-object v2, p0, Lio/sentry/g;->Z:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v2, p0, Lio/sentry/g;->i0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 144
     .line 145
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->c(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 146
     .line 147

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/AndroidLog;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -19,7 +19,7 @@
         "(Ljava/lang/String;)Ljava/lang/String;",
         "logger",
         "tag",
-        "Lbh7;",
+        "Lr98;",
         "enableLogging",
         "(Ljava/lang/String;Ljava/lang/String;)V",
         "",
@@ -237,7 +237,7 @@
     .line 77
     .line 78
     .line 79
-    invoke-static {v0}, Lxy3;->s1(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v0}, Luf4;->i0(Ljava/util/Map;)Ljava/util/Map;
 
     .line 80
     .line 81
@@ -265,7 +265,7 @@
 .end method
 
 .method private final enableLogging(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-static {p1}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
@@ -273,49 +273,49 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    sget-object v0, Lokhttp3/internal/platform/android/AndroidLog;->configuredLoggers:Ljava/util/concurrent/CopyOnWriteArraySet;
+    sget-object p1, Lokhttp3/internal/platform/android/AndroidLog;->configuredLoggers:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     .line 6
     .line 7
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArraySet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p0}, Ljava/util/concurrent/CopyOnWriteArraySet;->add(Ljava/lang/Object;)Z
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p1
 
     .line 11
-    if-eqz v0, :cond_2
+    if-eqz p1, :cond_2
 
     .line 12
     .line 13
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
     .line 14
-    invoke-virtual {p1, v0}, Ljava/util/logging/Logger;->setUseParentHandlers(Z)V
+    invoke-virtual {p0, p1}, Ljava/util/logging/Logger;->setUseParentHandlers(Z)V
 
     .line 15
     .line 16
     .line 17
-    const/4 v0, 0x3
+    const/4 p1, 0x3
 
     .line 18
-    invoke-static {p2, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {p2, p1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     .line 19
     .line 20
     .line 21
-    move-result v0
+    move-result p1
 
     .line 22
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_0
 
     .line 23
     .line 24
-    sget-object p2, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
+    sget-object p1, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
 
     .line 25
     .line 26
@@ -323,22 +323,22 @@
 
     .line 27
     :cond_0
-    const/4 v0, 0x4
+    const/4 p1, 0x4
 
     .line 28
-    invoke-static {p2, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {p2, p1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     .line 29
     .line 30
     .line 31
-    move-result p2
+    move-result p1
 
     .line 32
-    if-eqz p2, :cond_1
+    if-eqz p1, :cond_1
 
     .line 33
     .line 34
-    sget-object p2, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
+    sget-object p1, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
 
     .line 35
     .line 36
@@ -346,21 +346,21 @@
 
     .line 37
     :cond_1
-    sget-object p2, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
+    sget-object p1, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
     .line 38
     .line 39
     :goto_0
-    invoke-virtual {p1, p2}, Ljava/util/logging/Logger;->setLevel(Ljava/util/logging/Level;)V
+    invoke-virtual {p0, p1}, Ljava/util/logging/Logger;->setLevel(Ljava/util/logging/Level;)V
 
     .line 40
     .line 41
     .line 42
-    sget-object p2, Lokhttp3/internal/platform/android/AndroidLogHandler;->INSTANCE:Lokhttp3/internal/platform/android/AndroidLogHandler;
+    sget-object p1, Lokhttp3/internal/platform/android/AndroidLogHandler;->INSTANCE:Lokhttp3/internal/platform/android/AndroidLogHandler;
 
     .line 43
     .line 44
-    invoke-virtual {p1, p2}, Ljava/util/logging/Logger;->addHandler(Ljava/util/logging/Handler;)V
+    invoke-virtual {p0, p1}, Ljava/util/logging/Logger;->addHandler(Ljava/util/logging/Handler;)V
 
     .line 45
     .line 46
@@ -370,52 +370,49 @@
 .end method
 
 .method private final loggerTag(Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    sget-object v0, Lokhttp3/internal/platform/android/AndroidLog;->knownLoggers:Ljava/util/Map;
+    sget-object p0, Lokhttp3/internal/platform/android/AndroidLog;->knownLoggers:Ljava/util/Map;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Ljava/lang/String;
+    check-cast p0, Ljava/lang/String;
 
     .line 8
     .line 9
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 10
     .line 11
-    const/16 v0, 0x17
+    const/16 p0, 0x17
 
     .line 12
     .line 13
-    invoke-static {v0, p1}, Lsl6;->U0(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lea7;->x1(ILjava/lang/String;)Ljava/lang/String;
 
     .line 14
     .line 15
     .line 16
-    move-result-object p1
+    move-result-object p0
 
     .line 17
-    return-object p1
-
-    .line 18
     :cond_0
-    return-object v0
+    return-object p0
 .end method
 
 
 # virtual methods
 .method public final androidLog$okhttp(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -433,22 +430,22 @@
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
 
     .line 11
-    invoke-static {p1, p2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-static {p0, p2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     .line 12
     .line 13
     .line 14
-    move-result v0
+    move-result p1
 
     .line 15
-    if-eqz v0, :cond_3
+    if-eqz p1, :cond_3
 
     .line 16
     .line 17
-    const/16 v0, 0xa
+    const/16 p1, 0xa
 
     .line 18
     .line 19
@@ -456,21 +453,21 @@
 
     .line 20
     .line 21
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 22
     .line 23
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 24
     .line 25
     .line 26
-    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 27
     .line 28
     .line 29
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 30
     .line 31
@@ -483,12 +480,12 @@
     move-result-object p3
 
     .line 36
-    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 37
     .line 38
     .line 39
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 40
     .line 41
@@ -505,29 +502,29 @@
     move-result p4
 
     .line 47
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 48
     :goto_0
-    if-ge v1, p4, :cond_3
+    if-ge v0, p4, :cond_3
 
     .line 49
     .line 50
-    const/4 v2, 0x4
+    const/4 v1, 0x4
 
     .line 51
-    invoke-static {p3, v0, v1, v2}, Lsl6;->s0(Ljava/lang/CharSequence;CII)I
+    invoke-static {p3, p1, v0, v1}, Lea7;->T0(Ljava/lang/CharSequence;CII)I
 
     .line 52
     .line 53
     .line 54
-    move-result v2
+    move-result v1
 
     .line 55
-    const/4 v3, -0x1
+    const/4 v2, -0x1
 
     .line 56
-    if-eq v2, v3, :cond_1
+    if-eq v1, v2, :cond_1
 
     .line 57
     .line 58
@@ -535,40 +532,40 @@
 
     .line 59
     :cond_1
-    move v2, p4
+    move v1, p4
 
     .line 60
     :goto_1
-    add-int/lit16 v3, v1, 0xfa0
+    add-int/lit16 v2, v0, 0xfa0
 
     .line 61
     .line 62
-    invoke-static {v2, v3}, Ljava/lang/Math;->min(II)I
+    invoke-static {v1, v2}, Ljava/lang/Math;->min(II)I
 
     .line 63
     .line 64
     .line 65
-    move-result v3
+    move-result v2
 
     .line 66
-    invoke-virtual {p3, v1, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {p3, v0, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     .line 67
     .line 68
     .line 69
-    move-result-object v1
+    move-result-object v0
 
     .line 70
-    invoke-static {p2, p1, v1}, Landroid/util/Log;->println(ILjava/lang/String;Ljava/lang/String;)I
+    invoke-static {p2, p0, v0}, Landroid/util/Log;->println(ILjava/lang/String;Ljava/lang/String;)I
 
     .line 71
     .line 72
     .line 73
-    if-lt v3, v2, :cond_2
+    if-lt v2, v1, :cond_2
 
     .line 74
     .line 75
-    add-int/lit8 v1, v3, 0x1
+    add-int/lit8 v0, v2, 0x1
 
     .line 76
     .line 77
@@ -576,7 +573,7 @@
 
     .line 78
     :cond_2
-    move v1, v3
+    move v0, v2
 
     .line 79
     goto :goto_1

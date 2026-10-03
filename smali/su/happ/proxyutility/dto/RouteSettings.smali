@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/RouteSettings;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -22,66 +22,66 @@
         "Z",
         "s",
         "()Z",
-        "P",
+        "N",
         "(Z)V",
         "",
         "remoteDnsIp",
         "Ljava/lang/String;",
         "y",
         "()Ljava/lang/String;",
-        "V",
+        "T",
         "(Ljava/lang/String;)V",
         "domesticDnsIp",
         "n",
-        "K",
+        "I",
         "Lsu/happ/proxyutility/dto/enums/EDnsType;",
         "remoteDnsType",
         "Lsu/happ/proxyutility/dto/enums/EDnsType;",
         "z",
         "()Lsu/happ/proxyutility/dto/enums/EDnsType;",
-        "W",
+        "U",
         "(Lsu/happ/proxyutility/dto/enums/EDnsType;)V",
         "domesticDnsType",
         "o",
-        "L",
+        "J",
         "remoteDnsDomain",
         "x",
-        "U",
+        "S",
         "domesticDnsDomain",
         "m",
-        "J",
+        "H",
         "geoIpUrl",
         "q",
-        "N",
+        "L",
         "geoSiteUrl",
         "r",
-        "O",
+        "M",
         "domainStrategy",
         "l",
-        "I",
+        "G",
         "",
         "dnsHosts",
         "Ljava/util/Map;",
         "k",
         "()Ljava/util/Map;",
-        "H",
+        "F",
         "(Ljava/util/Map;)V",
         "",
         "proxySites",
         "Ljava/util/List;",
         "w",
         "()Ljava/util/List;",
-        "T",
+        "R",
         "(Ljava/util/List;)V",
         "proxyIp",
         "v",
-        "S",
+        "Q",
         "directSites",
         "j",
-        "G",
+        "E",
         "directIp",
         "i",
-        "F",
+        "D",
         "blockSites",
         "f",
         "C",
@@ -90,29 +90,29 @@
         "B",
         "fakeDnsEnabled",
         "p",
-        "M",
+        "K",
         "localPathGeo",
         "u",
-        "R",
+        "P",
         "",
         "dateLastUpdateSite",
         "Ljava/lang/Long;",
         "h",
         "()Ljava/lang/Long;",
-        "E",
+        "setDateLastUpdateSite",
         "(Ljava/lang/Long;)V",
         "dateLastUpdateIp",
         "g",
-        "D",
+        "setDateLastUpdateIp",
         "lastUpdated",
         "t",
-        "Q",
+        "O",
         "Lsu/happ/proxyutility/dto/enums/RoutingOrder;",
         "routeOrder",
         "Lsu/happ/proxyutility/dto/enums/RoutingOrder;",
         "A",
         "()Lsu/happ/proxyutility/dto/enums/RoutingOrder;",
-        "X",
+        "V",
         "(Lsu/happ/proxyutility/dto/enums/RoutingOrder;)V",
         "Companion",
         "app"
@@ -196,7 +196,7 @@
         }
     .end annotation
 
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "BlockIp"
     .end annotation
 .end field
@@ -210,19 +210,19 @@
         }
     .end annotation
 
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "BlockSites"
     .end annotation
 .end field
 
 .field private dateLastUpdateIp:Ljava/lang/Long;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "DateLastUpdateIp"
     .end annotation
 .end field
 
 .field private dateLastUpdateSite:Ljava/lang/Long;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "DateLastUpdateSite"
     .end annotation
 .end field
@@ -236,7 +236,7 @@
         }
     .end annotation
 
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "DirectIp"
     .end annotation
 .end field
@@ -250,7 +250,7 @@
         }
     .end annotation
 
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "DirectSites"
     .end annotation
 .end field
@@ -265,67 +265,67 @@
         }
     .end annotation
 
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "DnsHosts"
     .end annotation
 .end field
 
 .field private domainStrategy:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "DomainStrategy"
     .end annotation
 .end field
 
 .field private domesticDnsDomain:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "DomesticDnsDomain"
     .end annotation
 .end field
 
 .field private domesticDnsIp:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "DomesticDnsIp"
     .end annotation
 .end field
 
 .field private domesticDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "DomesticDnsType"
     .end annotation
 .end field
 
 .field private fakeDnsEnabled:Z
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "FakeDns"
     .end annotation
 .end field
 
 .field private geoIpUrl:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "Geoipurl"
     .end annotation
 .end field
 
 .field private geoSiteUrl:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "Geositeurl"
     .end annotation
 .end field
 
 .field private globalProxy:Z
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "GlobalProxy"
     .end annotation
 .end field
 
 .field private lastUpdated:Ljava/lang/Long;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "LastUpdated"
     .end annotation
 .end field
 
 .field private localPathGeo:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "LocalPathGeo"
     .end annotation
 .end field
@@ -339,7 +339,7 @@
         }
     .end annotation
 
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "ProxyIp"
     .end annotation
 .end field
@@ -353,31 +353,31 @@
         }
     .end annotation
 
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "ProxySites"
     .end annotation
 .end field
 
 .field private remoteDnsDomain:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "RemoteDnsDomain"
     .end annotation
 .end field
 
 .field private remoteDnsIp:Ljava/lang/String;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "RemoteDnsIp"
     .end annotation
 .end field
 
 .field private remoteDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "RemoteDnsType"
     .end annotation
 .end field
 
 .field private routeOrder:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "RouteOrder"
     .end annotation
 .end field
@@ -401,7 +401,7 @@
 
     .line 7
     .line 8
-    new-instance v0, Ltn4;
+    new-instance v0, Lw55;
 
     .line 9
     .line 10
@@ -413,12 +413,12 @@
 
     .line 13
     .line 14
-    invoke-direct {v0, v1, v2}, Ltn4;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, v2}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 15
     .line 16
     .line 17
-    new-instance v1, Ltn4;
+    new-instance v1, Lw55;
 
     .line 18
     .line 19
@@ -430,148 +430,135 @@
 
     .line 22
     .line 23
-    invoke-direct {v1, v2, v3}, Ltn4;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v3}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 24
     .line 25
     .line 26
-    const/4 v2, 0x2
+    filled-new-array {v0, v1}, [Lw55;
 
     .line 27
-    new-array v2, v2, [Ltn4;
-
     .line 28
     .line 29
-    const/4 v3, 0x0
+    move-result-object v0
 
     .line 30
-    aput-object v0, v2, v3
+    invoke-static {v0}, Luf4;->c0([Lw55;)Ljava/util/LinkedHashMap;
 
     .line 31
     .line 32
-    const/4 v0, 0x1
-
     .line 33
-    aput-object v1, v2, v0
+    move-result-object v0
 
     .line 34
-    .line 35
-    invoke-static {v2}, Lxy3;->n1([Ltn4;)Ljava/util/LinkedHashMap;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v0
-
-    .line 39
     sput-object v0, Lsu/happ/proxyutility/dto/RouteSettings;->DEFAULT_DNS_HOSTS:Ljava/util/Map;
 
-    .line 40
-    .line 41
+    .line 35
+    .line 36
     sget-object v0, Lsu/happ/proxyutility/dto/enums/EDnsType;->DOH:Lsu/happ/proxyutility/dto/enums/EDnsType;
 
-    .line 42
-    .line 43
+    .line 37
+    .line 38
     sput-object v0, Lsu/happ/proxyutility/dto/RouteSettings;->DEFAULT_DNS_TYPE:Lsu/happ/proxyutility/dto/enums/EDnsType;
 
-    .line 44
-    .line 45
+    .line 39
+    .line 40
     sget-object v0, Lsu/happ/proxyutility/dto/enums/RoutingOrder;->BLOCK_DIRECT_PROXY:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
 
-    .line 46
-    .line 47
+    .line 41
+    .line 42
     sput-object v0, Lsu/happ/proxyutility/dto/RouteSettings;->DEFAULT_ROUTE_ORDER:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
 
-    .line 48
-    .line 49
+    .line 43
+    .line 44
     const-string v5, "224.0.0.0/4"
 
-    .line 50
-    .line 51
+    .line 45
+    .line 46
     const-string v6, "255.255.255.255"
 
-    .line 52
-    .line 53
+    .line 47
+    .line 48
     const-string v1, "10.0.0.0/8"
 
-    .line 54
-    .line 55
+    .line 49
+    .line 50
     const-string v2, "172.16.0.0/12"
 
-    .line 56
-    .line 57
+    .line 51
+    .line 52
     const-string v3, "192.168.0.0/16"
 
+    .line 53
+    .line 54
+    const-string v4, "169.254.0.0/16"
+
+    .line 55
+    .line 56
+    filled-new-array/range {v1 .. v6}, [Ljava/lang/String;
+
+    .line 57
     .line 58
     .line 59
-    const-string v4, "169.254.0.0/16"
+    move-result-object v0
 
     .line 60
-    .line 61
-    filled-new-array/range {v1 .. v6}, [Ljava/lang/String;
+    invoke-static {v0}, Lut;->M([Ljava/lang/Object;)Ljava/util/List;
 
+    .line 61
     .line 62
     .line 63
+    move-result-object v0
+
     .line 64
-    move-result-object v0
-
-    .line 65
-    invoke-static {v0}, Lub;->J([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v0
-
-    .line 69
     sput-object v0, Lsu/happ/proxyutility/dto/RouteSettings;->DEFAULT_DIRECT_IP:Ljava/util/List;
 
-    .line 70
-    .line 71
+    .line 65
+    .line 66
     const-string v5, "224.0.0.0/4"
 
-    .line 72
-    .line 73
+    .line 67
+    .line 68
     const-string v6, "255.255.255.255"
 
-    .line 74
-    .line 75
+    .line 69
+    .line 70
     const-string v1, "10.0.0.0/8"
 
-    .line 76
-    .line 77
+    .line 71
+    .line 72
     const-string v2, "172.16.0.0/12"
 
-    .line 78
-    .line 79
+    .line 73
+    .line 74
     const-string v3, "192.168.0.0/16"
 
-    .line 80
-    .line 81
+    .line 75
+    .line 76
     const-string v4, "169.254.0.0/16"
 
-    .line 82
-    .line 83
+    .line 77
+    .line 78
     filled-new-array/range {v1 .. v6}, [Ljava/lang/String;
 
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v0
+
+    .line 82
+    invoke-static {v0}, Lut;->M([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 83
     .line 84
     .line 85
+    move-result-object v0
+
     .line 86
-    move-result-object v0
-
-    .line 87
-    invoke-static {v0}, Lub;->J([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 88
-    .line 89
-    .line 90
-    move-result-object v0
-
-    .line 91
     sput-object v0, Lsu/happ/proxyutility/dto/RouteSettings;->LAN_ADDRESSES:Ljava/util/List;
 
-    .line 92
-    .line 93
+    .line 87
+    .line 88
     return-void
 .end method
 
@@ -615,7 +602,7 @@
     .line 31
     sget-object v0, Lsu/happ/proxyutility/dto/RouteSettings;->DEFAULT_DIRECT_IP:Ljava/util/List;
 
-    invoke-static {v0}, Lnm0;->a1(Ljava/util/Collection;)Ljava/util/ArrayList;
+    invoke-static {v0}, Ltt0;->G1(Ljava/util/Collection;)Ljava/util/ArrayList;
 
     move-result-object v15
 
@@ -820,12 +807,12 @@
     return-object v0
 .end method
 
-.method public static d(Lsu/happ/proxyutility/dto/RouteSettings;ZLjava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/EDnsType;Lsu/happ/proxyutility/dto/enums/EDnsType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;ZLjava/lang/String;Lsu/happ/proxyutility/dto/enums/RoutingOrder;I)Lsu/happ/proxyutility/dto/RouteSettings;
+.method public static d(Lsu/happ/proxyutility/dto/RouteSettings;ZLjava/lang/String;Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/EDnsType;Lsu/happ/proxyutility/dto/enums/EDnsType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;ZLjava/lang/String;Ljava/lang/Long;Ljava/lang/Long;Lsu/happ/proxyutility/dto/enums/RoutingOrder;I)Lsu/happ/proxyutility/dto/RouteSettings;
     .locals 27
 
     move-object/from16 v0, p0
 
-    move/from16 v1, p20
+    move/from16 v1, p22
 
     and-int/lit8 v2, v1, 0x1
 
@@ -1093,8 +1080,6 @@
 
     and-int/2addr v2, v1
 
-    const/4 v3, 0x0
-
     if-eqz v2, :cond_12
 
     iget-object v2, v0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateSite:Ljava/lang/Long;
@@ -1104,7 +1089,7 @@
     goto :goto_12
 
     :cond_12
-    move-object/from16 v23, v3
+    move-object/from16 v23, p19
 
     :goto_12
     const/high16 v2, 0x100000
@@ -1113,11 +1098,16 @@
 
     if-eqz v2, :cond_13
 
-    iget-object v3, v0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateIp:Ljava/lang/Long;
+    iget-object v2, v0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateIp:Ljava/lang/Long;
+
+    move-object/from16 v24, v2
+
+    goto :goto_13
 
     :cond_13
-    move-object/from16 v24, v3
+    move-object/from16 v24, p20
 
+    :goto_13
     iget-object v2, v0, Lsu/happ/proxyutility/dto/RouteSettings;->lastUpdated:Ljava/lang/Long;
 
     const/high16 v3, 0x400000
@@ -1130,12 +1120,12 @@
 
     move-object/from16 v26, v1
 
-    goto :goto_13
+    goto :goto_14
 
     :cond_14
-    move-object/from16 v26, p19
+    move-object/from16 v26, p21
 
-    :goto_13
+    :goto_14
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
@@ -1187,14 +1177,14 @@
 
 # virtual methods
 .method public final A()Lsu/happ/proxyutility/dto/enums/RoutingOrder;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->routeOrder:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->routeOrder:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final B(Ljava/util/List;)V
@@ -1229,29 +1219,7 @@
     return-void
 .end method
 
-.method public final D(Ljava/lang/Long;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateIp:Ljava/lang/Long;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final E(Ljava/lang/Long;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateSite:Ljava/lang/Long;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final F(Ljava/util/List;)V
+.method public final D(Ljava/util/List;)V
     .locals 0
 
     .line 1
@@ -1267,7 +1235,7 @@
     return-void
 .end method
 
-.method public final G(Ljava/util/List;)V
+.method public final E(Ljava/util/List;)V
     .locals 0
 
     .line 1
@@ -1283,7 +1251,7 @@
     return-void
 .end method
 
-.method public final H(Ljava/util/Map;)V
+.method public final F(Ljava/util/Map;)V
     .locals 0
 
     .line 1
@@ -1299,7 +1267,7 @@
     return-void
 .end method
 
-.method public final I(Ljava/lang/String;)V
+.method public final G(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -1315,7 +1283,7 @@
     return-void
 .end method
 
-.method public final J(Ljava/lang/String;)V
+.method public final H(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -1331,7 +1299,7 @@
     return-void
 .end method
 
-.method public final K(Ljava/lang/String;)V
+.method public final I(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -1347,7 +1315,7 @@
     return-void
 .end method
 
-.method public final L(Lsu/happ/proxyutility/dto/enums/EDnsType;)V
+.method public final J(Lsu/happ/proxyutility/dto/enums/EDnsType;)V
     .locals 0
 
     .line 1
@@ -1363,7 +1331,7 @@
     return-void
 .end method
 
-.method public final M(Z)V
+.method public final K(Z)V
     .locals 0
 
     .line 1
@@ -1374,7 +1342,7 @@
     return-void
 .end method
 
-.method public final N(Ljava/lang/String;)V
+.method public final L(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -1390,7 +1358,7 @@
     return-void
 .end method
 
-.method public final O(Ljava/lang/String;)V
+.method public final M(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -1406,7 +1374,7 @@
     return-void
 .end method
 
-.method public final P(Z)V
+.method public final N(Z)V
     .locals 0
 
     .line 1
@@ -1417,7 +1385,7 @@
     return-void
 .end method
 
-.method public final Q(Ljava/lang/Long;)V
+.method public final O(Ljava/lang/Long;)V
     .locals 0
 
     .line 1
@@ -1428,7 +1396,7 @@
     return-void
 .end method
 
-.method public final R(Ljava/lang/String;)V
+.method public final P(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -1439,7 +1407,7 @@
     return-void
 .end method
 
-.method public final S(Ljava/util/List;)V
+.method public final Q(Ljava/util/List;)V
     .locals 0
 
     .line 1
@@ -1455,7 +1423,7 @@
     return-void
 .end method
 
-.method public final T(Ljava/util/List;)V
+.method public final R(Ljava/util/List;)V
     .locals 0
 
     .line 1
@@ -1471,7 +1439,7 @@
     return-void
 .end method
 
-.method public final U(Ljava/lang/String;)V
+.method public final S(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -1487,7 +1455,7 @@
     return-void
 .end method
 
-.method public final V(Ljava/lang/String;)V
+.method public final T(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -1503,7 +1471,7 @@
     return-void
 .end method
 
-.method public final W(Lsu/happ/proxyutility/dto/enums/EDnsType;)V
+.method public final U(Lsu/happ/proxyutility/dto/enums/EDnsType;)V
     .locals 0
 
     .line 1
@@ -1519,7 +1487,7 @@
     return-void
 .end method
 
-.method public final X(Lsu/happ/proxyutility/dto/enums/RoutingOrder;)V
+.method public final V(Lsu/happ/proxyutility/dto/enums/RoutingOrder;)V
     .locals 0
 
     .line 1
@@ -1536,14 +1504,14 @@
 .end method
 
 .method public final e()Ljava/util/List;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->blockIp:Ljava/util/List;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->blockIp:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -1604,7 +1572,7 @@
 
     .line 23
     .line 24
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
@@ -1628,7 +1596,7 @@
 
     .line 34
     .line 35
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 36
     .line 37
@@ -1684,7 +1652,7 @@
 
     .line 59
     .line 60
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 61
     .line 62
@@ -1708,7 +1676,7 @@
 
     .line 70
     .line 71
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 72
     .line 73
@@ -1732,7 +1700,7 @@
 
     .line 81
     .line 82
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 83
     .line 84
@@ -1756,7 +1724,7 @@
 
     .line 92
     .line 93
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 94
     .line 95
@@ -1780,7 +1748,7 @@
 
     .line 103
     .line 104
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 105
     .line 106
@@ -1804,7 +1772,7 @@
 
     .line 114
     .line 115
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 116
     .line 117
@@ -1828,7 +1796,7 @@
 
     .line 125
     .line 126
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 127
     .line 128
@@ -1852,7 +1820,7 @@
 
     .line 136
     .line 137
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 138
     .line 139
@@ -1876,7 +1844,7 @@
 
     .line 147
     .line 148
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 149
     .line 150
@@ -1900,7 +1868,7 @@
 
     .line 158
     .line 159
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 160
     .line 161
@@ -1924,7 +1892,7 @@
 
     .line 169
     .line 170
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 171
     .line 172
@@ -1948,7 +1916,7 @@
 
     .line 180
     .line 181
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 182
     .line 183
@@ -1988,7 +1956,7 @@
 
     .line 198
     .line 199
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 200
     .line 201
@@ -2012,7 +1980,7 @@
 
     .line 209
     .line 210
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 211
     .line 212
@@ -2036,7 +2004,7 @@
 
     .line 220
     .line 221
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 222
     .line 223
@@ -2060,7 +2028,7 @@
 
     .line 231
     .line 232
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 233
     .line 234
@@ -2076,7 +2044,7 @@
 
     .line 239
     :cond_17
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/RouteSettings;->routeOrder:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->routeOrder:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
 
     .line 240
     .line 241
@@ -2084,7 +2052,7 @@
 
     .line 242
     .line 243
-    if-eq v1, p1, :cond_18
+    if-eq p0, p1, :cond_18
 
     .line 244
     .line 245
@@ -2096,569 +2064,537 @@
 .end method
 
 .method public final f()Ljava/util/List;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->blockSites:Ljava/util/List;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->blockSites:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final g()Ljava/lang/Long;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateIp:Ljava/lang/Long;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateIp:Ljava/lang/Long;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final h()Ljava/lang/Long;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateSite:Ljava/lang/Long;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateSite:Ljava/lang/Long;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final hashCode()I
-    .locals 5
+    .locals 4
 
     .line 1
     iget-boolean v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->globalProxy:Z
 
     .line 2
     .line 3
-    const/16 v1, 0x4d5
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 4
     .line 5
-    const/16 v2, 0x4cf
-
     .line 6
+    move-result v0
+
     .line 7
-    if-eqz v0, :cond_0
+    const/16 v1, 0x1f
 
     .line 8
     .line 9
-    const/16 v0, 0x4cf
+    mul-int/2addr v0, v1
 
     .line 10
-    .line 11
-    goto :goto_0
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsIp:Ljava/lang/String;
 
+    .line 11
     .line 12
-    :cond_0
-    const/16 v0, 0x4d5
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
     .line 13
     .line 14
-    :goto_0
-    const/16 v3, 0x1f
-
     .line 15
+    move-result v0
+
     .line 16
-    mul-int/lit8 v0, v0, 0x1f
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsIp:Ljava/lang/String;
 
     .line 17
     .line 18
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsIp:Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
     .line 19
     .line 20
-    invoke-static {v0, v3, v4}, Lxy4;->p(IILjava/lang/String;)I
-
     .line 21
-    .line 22
-    .line 23
     move-result v0
 
+    .line 22
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
+
+    .line 23
     .line 24
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsIp:Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 25
     .line 26
-    invoke-static {v0, v3, v4}, Lxy4;->p(IILjava/lang/String;)I
-
     .line 27
+    move-result v2
+
     .line 28
+    add-int/2addr v2, v0
+
     .line 29
-    move-result v0
+    mul-int/2addr v2, v1
 
     .line 30
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
+    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
 
     .line 31
     .line 32
-    invoke-virtual {v4}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 33
     .line 34
     .line 35
-    move-result v4
-
-    .line 36
-    add-int/2addr v4, v0
-
-    .line 37
-    mul-int/lit8 v4, v4, 0x1f
-
-    .line 38
-    .line 39
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
-
-    .line 40
-    .line 41
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 42
-    .line 43
-    .line 44
     move-result v0
 
-    .line 45
-    add-int/2addr v0, v4
+    .line 36
+    add-int/2addr v0, v2
 
+    .line 37
+    mul-int/2addr v0, v1
+
+    .line 38
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsDomain:Ljava/lang/String;
+
+    .line 39
+    .line 40
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v0
+
+    .line 44
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsDomain:Ljava/lang/String;
+
+    .line 45
     .line 46
-    mul-int/lit8 v0, v0, 0x1f
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
     .line 47
     .line 48
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsDomain:Ljava/lang/String;
-
     .line 49
+    move-result v0
+
     .line 50
-    invoke-static {v0, v3, v4}, Lxy4;->p(IILjava/lang/String;)I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->geoIpUrl:Ljava/lang/String;
 
     .line 51
     .line 52
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
+
     .line 53
+    .line 54
+    .line 55
     move-result v0
 
-    .line 54
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsDomain:Ljava/lang/String;
-
-    .line 55
     .line 56
-    invoke-static {v0, v3, v4}, Lxy4;->p(IILjava/lang/String;)I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->geoSiteUrl:Ljava/lang/String;
 
     .line 57
     .line 58
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
+
     .line 59
+    .line 60
+    .line 61
     move-result v0
 
-    .line 60
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->geoIpUrl:Ljava/lang/String;
-
-    .line 61
     .line 62
-    invoke-static {v0, v3, v4}, Lxy4;->p(IILjava/lang/String;)I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domainStrategy:Ljava/lang/String;
 
     .line 63
     .line 64
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
+
     .line 65
+    .line 66
+    .line 67
     move-result v0
 
-    .line 66
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->geoSiteUrl:Ljava/lang/String;
-
-    .line 67
     .line 68
-    invoke-static {v0, v3, v4}, Lxy4;->p(IILjava/lang/String;)I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dnsHosts:Ljava/util/Map;
 
     .line 69
     .line 70
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
     .line 71
-    move-result v0
-
     .line 72
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domainStrategy:Ljava/lang/String;
-
     .line 73
+    move-result v2
+
     .line 74
-    invoke-static {v0, v3, v4}, Lxy4;->p(IILjava/lang/String;)I
+    add-int/2addr v2, v0
 
     .line 75
-    .line 76
-    .line 77
-    move-result v0
+    mul-int/2addr v2, v1
 
+    .line 76
+    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->proxySites:Ljava/util/List;
+
+    .line 77
     .line 78
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dnsHosts:Ljava/util/Map;
+    invoke-static {v2, v1, v0}, Lw31;->f(IILjava/util/List;)I
 
     .line 79
     .line 80
-    invoke-virtual {v4}, Ljava/lang/Object;->hashCode()I
-
     .line 81
-    .line 82
-    .line 83
-    move-result v4
+    move-result v0
 
+    .line 82
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->proxyIp:Ljava/util/List;
+
+    .line 83
     .line 84
-    add-int/2addr v4, v0
+    invoke-static {v0, v1, v2}, Lw31;->f(IILjava/util/List;)I
 
     .line 85
-    mul-int/lit8 v4, v4, 0x1f
-
     .line 86
     .line 87
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->proxySites:Ljava/util/List;
+    move-result v0
 
     .line 88
-    .line 89
-    invoke-static {v4, v3, v0}, Lp27;->k(IILjava/util/List;)I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->directSites:Ljava/util/List;
 
+    .line 89
     .line 90
+    invoke-static {v0, v1, v2}, Lw31;->f(IILjava/util/List;)I
+
     .line 91
     .line 92
-    move-result v0
-
     .line 93
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->proxyIp:Ljava/util/List;
+    move-result v0
 
     .line 94
-    .line 95
-    invoke-static {v0, v3, v4}, Lp27;->k(IILjava/util/List;)I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->directIp:Ljava/util/List;
 
+    .line 95
     .line 96
+    invoke-static {v0, v1, v2}, Lw31;->f(IILjava/util/List;)I
+
     .line 97
     .line 98
-    move-result v0
-
     .line 99
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->directSites:Ljava/util/List;
+    move-result v0
 
     .line 100
-    .line 101
-    invoke-static {v0, v3, v4}, Lp27;->k(IILjava/util/List;)I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->blockSites:Ljava/util/List;
 
+    .line 101
     .line 102
+    invoke-static {v0, v1, v2}, Lw31;->f(IILjava/util/List;)I
+
     .line 103
     .line 104
-    move-result v0
-
     .line 105
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->directIp:Ljava/util/List;
+    move-result v0
 
     .line 106
-    .line 107
-    invoke-static {v0, v3, v4}, Lp27;->k(IILjava/util/List;)I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->blockIp:Ljava/util/List;
 
+    .line 107
     .line 108
+    invoke-static {v0, v1, v2}, Lw31;->f(IILjava/util/List;)I
+
     .line 109
     .line 110
-    move-result v0
-
     .line 111
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->blockSites:Ljava/util/List;
+    move-result v0
 
     .line 112
-    .line 113
-    invoke-static {v0, v3, v4}, Lp27;->k(IILjava/util/List;)I
+    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->fakeDnsEnabled:Z
 
+    .line 113
     .line 114
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
+
     .line 115
     .line 116
-    move-result v0
-
     .line 117
-    iget-object v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->blockIp:Ljava/util/List;
+    move-result v0
 
     .line 118
-    .line 119
-    invoke-static {v0, v3, v4}, Lp27;->k(IILjava/util/List;)I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->localPathGeo:Ljava/lang/String;
 
+    .line 119
     .line 120
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
+
     .line 121
     .line 122
+    .line 123
     move-result v0
 
-    .line 123
-    iget-boolean v4, p0, Lsu/happ/proxyutility/dto/RouteSettings;->fakeDnsEnabled:Z
-
     .line 124
-    .line 125
-    if-eqz v4, :cond_1
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateSite:Ljava/lang/Long;
 
+    .line 125
     .line 126
+    const/4 v3, 0x0
+
     .line 127
-    const/16 v1, 0x4cf
+    if-nez v2, :cond_0
 
     .line 128
     .line 129
-    :cond_1
-    add-int/2addr v0, v1
+    move v2, v3
 
     .line 130
-    mul-int/lit8 v0, v0, 0x1f
+    goto :goto_0
 
     .line 131
-    .line 132
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/RouteSettings;->localPathGeo:Ljava/lang/String;
+    :cond_0
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
+    .line 132
     .line 133
     .line 134
-    invoke-static {v0, v3, v1}, Lxy4;->p(IILjava/lang/String;)I
+    move-result v2
 
     .line 135
+    :goto_0
+    add-int/2addr v0, v2
+
     .line 136
+    mul-int/2addr v0, v1
+
     .line 137
-    move-result v0
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateIp:Ljava/lang/Long;
 
     .line 138
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateSite:Ljava/lang/Long;
-
     .line 139
-    .line 140
-    const/4 v2, 0x0
+    if-nez v2, :cond_1
 
+    .line 140
     .line 141
-    if-nez v1, :cond_2
+    move v2, v3
 
     .line 142
-    .line 143
-    const/4 v1, 0x0
-
-    .line 144
     goto :goto_1
 
-    .line 145
-    :cond_2
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    .line 143
+    :cond_1
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
+    .line 144
+    .line 145
     .line 146
+    move-result v2
+
     .line 147
+    :goto_1
+    add-int/2addr v0, v2
+
     .line 148
-    move-result v1
+    mul-int/2addr v0, v1
 
     .line 149
-    :goto_1
-    add-int/2addr v0, v1
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/RouteSettings;->lastUpdated:Ljava/lang/Long;
 
     .line 150
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 151
-    .line 152
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dateLastUpdateIp:Ljava/lang/Long;
+    if-nez v2, :cond_2
 
+    .line 152
     .line 153
+    goto :goto_2
+
     .line 154
-    if-nez v1, :cond_3
+    :cond_2
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 155
     .line 156
-    const/4 v1, 0x0
-
     .line 157
-    goto :goto_2
+    move-result v3
 
     .line 158
-    :cond_3
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    :goto_2
+    add-int/2addr v0, v3
 
     .line 159
-    .line 160
-    .line 161
-    move-result v1
+    mul-int/2addr v0, v1
 
+    .line 160
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->routeOrder:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
+
+    .line 161
     .line 162
-    :goto_2
-    add-int/2addr v0, v1
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     .line 163
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 164
     .line 165
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/RouteSettings;->lastUpdated:Ljava/lang/Long;
+    move-result p0
 
     .line 166
+    add-int/2addr p0, v0
+
     .line 167
-    if-nez v1, :cond_4
-
-    .line 168
-    .line 169
-    goto :goto_3
-
-    .line 170
-    :cond_4
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 171
-    .line 172
-    .line 173
-    move-result v2
-
-    .line 174
-    :goto_3
-    add-int/2addr v0, v2
-
-    .line 175
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 176
-    .line 177
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/RouteSettings;->routeOrder:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
-
-    .line 178
-    .line 179
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 180
-    .line 181
-    .line 182
-    move-result v1
-
-    .line 183
-    add-int/2addr v1, v0
-
-    .line 184
-    return v1
+    return p0
 .end method
 
 .method public final i()Ljava/util/List;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->directIp:Ljava/util/List;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->directIp:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final j()Ljava/util/List;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->directSites:Ljava/util/List;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->directSites:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final k()Ljava/util/Map;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dnsHosts:Ljava/util/Map;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->dnsHosts:Ljava/util/Map;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final l()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domainStrategy:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domainStrategy:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final m()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsDomain:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsDomain:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final n()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsIp:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsIp:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final o()Lsu/happ/proxyutility/dto/enums/EDnsType;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->domesticDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final p()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->fakeDnsEnabled:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->fakeDnsEnabled:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final q()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->geoIpUrl:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->geoIpUrl:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final r()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->geoSiteUrl:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->geoSiteUrl:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final s()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->globalProxy:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->globalProxy:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final t()Ljava/lang/Long;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->lastUpdated:Ljava/lang/Long;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->lastUpdated:Ljava/lang/Long;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 25
+    .locals 24
 
     .line 1
     move-object/from16 v0, p0
@@ -2781,11 +2717,11 @@
 
     .line 60
     .line 61
-    move-object/from16 v23, v15
+    iget-object v0, v0, Lsu/happ/proxyutility/dto/RouteSettings;->routeOrder:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
 
     .line 62
     .line 63
-    iget-object v15, v0, Lsu/happ/proxyutility/dto/RouteSettings;->routeOrder:Lsu/happ/proxyutility/dto/enums/RoutingOrder;
+    move-object/from16 p0, v0
 
     .line 64
     .line 65
@@ -2793,7 +2729,7 @@
 
     .line 66
     .line 67
-    move-object/from16 v24, v15
+    move-object/from16 v23, v15
 
     .line 68
     .line 69
@@ -2898,7 +2834,7 @@
 
     .line 125
     .line 126
-    invoke-static {v0, v7, v1, v8, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v7, v1, v8, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 127
     .line 128
@@ -2911,7 +2847,7 @@
 
     .line 132
     .line 133
-    invoke-static {v0, v9, v1, v10, v2}, Lkd0;->D(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v9, v1, v10, v2}, Leh0;->y(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 134
     .line 135
@@ -3116,7 +3052,7 @@
     .line 246
     .line 247
     .line 248
-    move-object/from16 v1, v24
+    move-object/from16 v1, p0
 
     .line 249
     .line 250
@@ -3146,67 +3082,67 @@
 .end method
 
 .method public final u()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->localPathGeo:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->localPathGeo:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final v()Ljava/util/List;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->proxyIp:Ljava/util/List;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->proxyIp:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final w()Ljava/util/List;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->proxySites:Ljava/util/List;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->proxySites:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final x()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsDomain:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsDomain:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final y()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsIp:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsIp:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final z()Lsu/happ/proxyutility/dto/enums/EDnsType;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/RouteSettings;->remoteDnsType:Lsu/happ/proxyutility/dto/enums/EDnsType;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

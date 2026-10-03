@@ -1,167 +1,217 @@
-.class public final synthetic Lum6;
+.class public final Lum6;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lv72;
+.implements Landroid/view/View$OnFocusChangeListener;
 
 
 # instance fields
-.field public final synthetic Q:Z
+.field public final synthetic a:I
 
-.field public final synthetic R:Ltm2;
-
-.field public final synthetic S:Ljava/lang/String;
-
-.field public final synthetic T:Lj72;
+.field public final synthetic b:Landroid/view/ViewGroup;
 
 
 # direct methods
-.method public synthetic constructor <init>(ZLtm2;Ljava/lang/String;Lj72;)V
+.method public synthetic constructor <init>(Landroid/view/ViewGroup;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lum6;->a:I
 
     .line 2
     .line 3
+    iput-object p1, p0, Lum6;->b:Landroid/view/ViewGroup;
+
     .line 4
-    iput-boolean p1, p0, Lum6;->Q:Z
-
     .line 5
-    .line 6
-    iput-object p2, p0, Lum6;->R:Ltm2;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
     .line 7
     .line 8
-    iput-object p3, p0, Lum6;->S:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Lum6;->T:Lj72;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final v(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+.method public final onFocusChange(Landroid/view/View;Z)V
+    .locals 2
 
     .line 1
-    check-cast p1, Lvh;
+    iget p1, p0, Lum6;->a:I
 
     .line 2
     .line 3
-    move-object v5, p2
+    const/4 v0, 0x0
 
     .line 4
-    check-cast v5, Luq0;
+    iget-object p0, p0, Lum6;->b:Landroid/view/ViewGroup;
 
     .line 5
     .line 6
-    check-cast p3, Ljava/lang/Integer;
+    packed-switch p1, :pswitch_data_0
 
     .line 7
     .line 8
-    invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
-
     .line 9
+    check-cast p0, Landroidx/appcompat/widget/SearchView;
+
     .line 10
     .line 11
-    move-result p2
+    iget-object p1, p0, Landroidx/appcompat/widget/SearchView;->N0:Landroid/view/View$OnFocusChangeListener;
 
     .line 12
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 13
+    if-eqz p1, :cond_0
+
     .line 14
     .line 15
-    and-int/lit8 p1, p2, 0x11
+    invoke-interface {p1, p0, p2}, Landroid/view/View$OnFocusChangeListener;->onFocusChange(Landroid/view/View;Z)V
 
     .line 16
     .line 17
-    const/16 p3, 0x10
-
     .line 18
+    :cond_0
+    return-void
+
     .line 19
-    const/4 v0, 0x1
+    :pswitch_0
+    check-cast p0, Landroidx/leanback/widget/SearchBar;
 
     .line 20
-    if-eq p1, p3, :cond_0
-
     .line 21
-    .line 22
-    const/4 p1, 0x1
+    if-eqz p2, :cond_1
 
+    .line 22
     .line 23
-    goto :goto_0
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/view/inputmethod/InputMethodManager;
 
     .line 24
-    :cond_0
-    const/4 p1, 0x0
-
     .line 25
-    :goto_0
-    and-int/2addr p2, v0
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
 
     .line 26
-    invoke-virtual {v5, p2, p1}, Luq0;->N(IZ)Z
-
     .line 27
+    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+
     .line 28
     .line 29
-    move-result p1
-
     .line 30
-    if-eqz p1, :cond_1
+    move-result-object v1
 
     .line 31
-    .line 32
-    sget-object v4, Landroidx/compose/foundation/layout/c;->a:Landroidx/compose/foundation/layout/FillElement;
+    invoke-virtual {p1, v1, v0}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
+    .line 32
     .line 33
     .line 34
-    const/16 v6, 0x6000
+    iget-boolean p1, p0, Landroidx/leanback/widget/SearchBar;->l0:Z
 
     .line 35
     .line 36
-    iget-boolean v0, p0, Lum6;->Q:Z
+    if-eqz p1, :cond_2
 
     .line 37
     .line 38
-    iget-object v1, p0, Lum6;->R:Ltm2;
+    invoke-virtual {p0}, Landroidx/leanback/widget/SearchBar;->a()V
 
     .line 39
     .line 40
-    iget-object v2, p0, Lum6;->S:Ljava/lang/String;
-
     .line 41
-    .line 42
-    iget-object v3, p0, Lum6;->T:Lj72;
+    iput-boolean v0, p0, Landroidx/leanback/widget/SearchBar;->l0:Z
 
+    .line 42
     .line 43
+    goto :goto_0
+
     .line 44
-    invoke-static/range {v0 .. v6}, Lwj0;->i(ZLtm2;Ljava/lang/String;Lj72;Le64;Luq0;I)V
+    :cond_1
+    invoke-virtual {p0}, Landroidx/leanback/widget/SearchBar;->b()V
 
     .line 45
     .line 46
     .line 47
-    goto :goto_1
+    :cond_2
+    :goto_0
+    invoke-virtual {p0, p2}, Landroidx/leanback/widget/SearchBar;->d(Z)V
 
     .line 48
-    :cond_1
-    invoke-virtual {v5}, Luq0;->Q()V
-
     .line 49
     .line 50
+    return-void
+
     .line 51
-    :goto_1
-    sget-object p1, Lbh7;->a:Lbh7;
+    :pswitch_1
+    check-cast p0, Landroidx/leanback/widget/SearchBar;
 
     .line 52
     .line 53
-    return-object p1
+    if-eqz p2, :cond_3
+
+    .line 54
+    .line 55
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->j0:Landroid/os/Handler;
+
+    .line 56
+    .line 57
+    new-instance v0, Lvm6;
+
+    .line 58
+    .line 59
+    const/4 v1, 0x1
+
+    .line 60
+    invoke-direct {v0, p0, v1}, Lvm6;-><init>(Landroidx/leanback/widget/SearchBar;I)V
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-virtual {p1, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    .line 64
+    .line 65
+    .line 66
+    goto :goto_1
+
+    .line 67
+    :cond_3
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar;->k0:Landroid/view/inputmethod/InputMethodManager;
+
+    .line 68
+    .line 69
+    iget-object v1, p0, Landroidx/leanback/widget/SearchBar;->c0:Landroidx/leanback/widget/SearchEditText;
+
+    .line 70
+    .line 71
+    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v1
+
+    .line 75
+    invoke-virtual {p1, v1, v0}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
+
+    .line 76
+    .line 77
+    .line 78
+    :goto_1
+    invoke-virtual {p0, p2}, Landroidx/leanback/widget/SearchBar;->d(Z)V
+
+    .line 79
+    .line 80
+    .line 81
+    return-void
+
+    .line 82
+    nop
+
+    .line 83
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -2,28 +2,25 @@ package defpackage;
 
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class u33 {
-    public static final u33 Q;
-    public static final u33 R;
-    public static final u33 S;
-    public static final u33 T;
-    public static final u33 U;
-    public static final /* synthetic */ u33[] V;
+    public static final u33 X;
+    public static final u33 Y;
+    public static final u33 Z;
+    public static final u33 c0;
+    public static final /* synthetic */ u33[] d0;
 
     static {
-        u33 u33Var = new u33("PROPERTY", 0);
-        Q = u33Var;
-        u33 u33Var2 = new u33("WRAPPER_OBJECT", 1);
-        R = u33Var2;
-        u33 u33Var3 = new u33("WRAPPER_ARRAY", 2);
-        S = u33Var3;
-        u33 u33Var4 = new u33("EXTERNAL_PROPERTY", 3);
-        T = u33Var4;
-        u33 u33Var5 = new u33("EXISTING_PROPERTY", 4);
-        U = u33Var5;
-        V = new u33[]{u33Var, u33Var2, u33Var3, u33Var4, u33Var5, new u33("NOTHING", 5)};
+        u33 u33Var = new u33("Untransformed", 0);
+        X = u33Var;
+        u33 u33Var2 = new u33("Insertion", 1);
+        Y = u33Var2;
+        u33 u33Var3 = new u33("Replacement", 2);
+        Z = u33Var3;
+        u33 u33Var4 = new u33("Deletion", 3);
+        c0 = u33Var4;
+        d0 = new u33[]{u33Var, u33Var2, u33Var3, u33Var4};
     }
 
     public static u33 valueOf(String str) {
@@ -31,6 +28,6 @@ public final class u33 {
     }
 
     public static u33[] values() {
-        return (u33[]) V.clone();
+        return (u33[]) d0.clone();
     }
 }

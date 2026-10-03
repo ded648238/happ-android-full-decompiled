@@ -1,156 +1,211 @@
 .class public final Ljs;
-.super Ljava/lang/Thread;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lms;
+
+
+# instance fields
+.field public final synthetic X:I
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput v0, p0, Ljs;->X:I
+
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
 
 
 # virtual methods
-.method public final run()V
+.method public final e(ILuh4;[I[I)V
     .locals 3
 
     .line 1
-    :catch_0
-    :cond_0
-    :goto_0
-    :try_start_0
-    invoke-static {}, Lms;->access$getCompanion$p()Lis;
+    iget p0, p0, Ljs;->X:I
 
     .line 2
     .line 3
+    const/4 p2, 0x0
+
     .line 4
-    move-result-object v0
+    packed-switch p0, :pswitch_data_0
 
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 6
     .line 7
+    array-length p0, p3
+
     .line 8
-    invoke-static {}, Lms;->access$getLock$cp()Ljava/util/concurrent/locks/ReentrantLock;
+    move p1, p2
 
     .line 9
-    .line 10
-    .line 11
-    move-result-object v0
+    move v0, p1
 
+    .line 10
+    :goto_0
+    if-ge p2, p0, :cond_0
+
+    .line 11
     .line 12
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+    aget v1, p3, p2
 
     .line 13
     .line 14
-    .line 15
-    :try_start_1
-    invoke-static {}, Lms;->access$getCompanion$p()Lis;
+    add-int/lit8 v2, p1, 0x1
 
+    .line 15
     .line 16
+    aput v0, p4, p1
+
     .line 17
     .line 18
-    move-result-object v1
+    add-int/2addr v0, v1
 
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    add-int/lit8 p2, p2, 0x1
 
     .line 20
     .line 21
+    move p1, v2
+
     .line 22
-    invoke-static {}, Lis;->b()Lms;
+    goto :goto_0
 
     .line 23
+    :cond_0
+    return-void
+
     .line 24
+    :pswitch_0
+    array-length p0, p3
+
     .line 25
-    move-result-object v1
+    move v0, p2
 
     .line 26
-    invoke-static {}, Lms;->access$getCompanion$p()Lis;
+    move v1, v0
 
     .line 27
+    :goto_1
+    if-ge v0, p0, :cond_1
+
     .line 28
     .line 29
-    move-result-object v2
+    aget v2, p3, v0
 
     .line 30
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 31
-    .line 32
-    .line 33
-    invoke-static {}, Lms;->access$getIdleSentinel$cp()Lms;
+    add-int/2addr v1, v2
 
+    .line 32
+    add-int/lit8 v0, v0, 0x1
+
+    .line 33
     .line 34
+    goto :goto_1
+
     .line 35
+    :cond_1
+    sub-int/2addr p1, v1
+
     .line 36
-    move-result-object v2
+    array-length p0, p3
 
     .line 37
-    if-ne v1, v2, :cond_1
+    move v0, p2
 
     .line 38
-    .line 39
-    invoke-static {}, Lms;->access$getCompanion$p()Lis;
+    :goto_2
+    if-ge p2, p0, :cond_2
 
+    .line 39
     .line 40
+    aget v1, p3, p2
+
     .line 41
     .line 42
-    move-result-object v1
+    add-int/lit8 v2, v0, 0x1
 
     .line 43
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 44
+    aput p1, p4, v0
+
     .line 45
     .line 46
-    const/4 v1, 0x0
+    add-int/2addr p1, v1
 
     .line 47
-    invoke-static {v1}, Lms;->access$setIdleSentinel$cp(Lms;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    add-int/lit8 p2, p2, 0x1
 
     .line 48
     .line 49
+    move v0, v2
+
     .line 50
-    :try_start_2
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    goto :goto_2
 
     .line 51
-    .line 52
-    .line 53
+    :cond_2
     return-void
 
-    .line 54
-    :catchall_0
-    move-exception v1
+    .line 52
+    nop
 
-    .line 55
-    goto :goto_1
+    .line 53
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    .line 56
-    :cond_1
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+.method public final toString()Ljava/lang/String;
+    .locals 0
 
-    .line 57
-    .line 58
-    .line 59
-    if-eqz v1, :cond_0
+    .line 1
+    iget p0, p0, Ljs;->X:I
 
-    .line 60
-    .line 61
-    invoke-virtual {v1}, Lms;->timedOut()V
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
 
-    .line 62
-    .line 63
-    .line 64
-    goto :goto_0
+    .line 4
+    .line 5
+    .line 6
+    const-string p0, "Arrangement#Top"
 
-    .line 65
-    :goto_1
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    .line 7
+    .line 8
+    return-object p0
 
-    .line 66
-    .line 67
-    .line 68
-    throw v1
-    :try_end_2
-    .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_0
+    .line 9
+    :pswitch_0
+    const-string p0, "Arrangement#Bottom"
+
+    .line 10
+    .line 11
+    return-object p0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

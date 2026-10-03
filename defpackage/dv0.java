@@ -1,52 +1,41 @@
 package defpackage;
 
-import j$.util.Objects;
-import java.io.File;
-import java.io.Serializable;
-import java.net.URI;
-import java.net.URL;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class dv0 implements dn4 {
+    public final dn4 X;
+    public final dn4 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class dv0 implements Serializable {
-    public final transient Object Q;
-
-    static {
-        new dv0();
-        new dv0();
+    public dv0(dn4 dn4Var, dn4 dn4Var2) {
+        this.X = dn4Var;
+        this.Y = dn4Var2;
     }
 
-    public dv0(kq3 kq3Var, y80 y80Var) {
-        this.Q = kq3Var;
-        y80Var.getClass();
+    @Override // defpackage.dn4
+    public final Object d(xi2 xi2Var, Object obj) {
+        return this.Y.d(xi2Var, this.X.d(xi2Var, obj));
     }
 
     public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj == null || !(obj instanceof dv0)) {
+        if (!(obj instanceof dv0)) {
             return false;
         }
-        Object obj2 = ((dv0) obj).Q;
-        Object obj3 = this.Q;
-        if (obj3 == null) {
-            return obj2 == null;
-        }
-        if (obj2 == null) {
-            return false;
-        }
-        if ((obj3 instanceof File) || (obj3 instanceof URL) || (obj3 instanceof URI)) {
-            return obj3.equals(obj2);
-        }
-        return obj3 == obj2;
+        dv0 dv0Var = (dv0) obj;
+        return this.X.equals(dv0Var.X) && m93.h(this.Y, dv0Var.Y);
+    }
+
+    @Override // defpackage.dn4
+    public final boolean f(mi2 mi2Var) {
+        return this.X.f(mi2Var) && this.Y.f(mi2Var);
     }
 
     public final int hashCode() {
-        return Objects.hashCode(this.Q);
+        return (this.Y.hashCode() * 31) + this.X.hashCode();
     }
 
-    public dv0() {
-        this(null, y80.S);
+    public final String toString() {
+        StringBuilder sb = (StringBuilder) d(new hs(2), new StringBuilder("["));
+        sb.append("]");
+        return sb.toString();
     }
 }

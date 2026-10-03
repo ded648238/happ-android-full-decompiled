@@ -1,95 +1,80 @@
 package defpackage;
 
-import java.util.Collection;
-import java.util.Iterator;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class u0 extends ll7 implements xi2 {
+    public final /* synthetic */ int d0;
+    public final /* synthetic */ v0 e0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class u0 implements Collection, r73 {
-    public abstract int a();
-
-    @Override // java.util.Collection
-    public final boolean add(Object obj) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ u0(v0 v0Var, b31 b31Var, int i) {
+        super(2, b31Var);
+        this.d0 = i;
+        this.e0 = v0Var;
     }
 
-    @Override // java.util.Collection
-    public final boolean addAll(Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final void clear() {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection, java.util.List
-    public boolean contains(Object obj) {
-        if (isEmpty()) {
-            return false;
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        int i = this.d0;
+        r98 r98Var = r98.a;
+        i41 i41Var = (i41) obj;
+        b31 b31Var = (b31) obj2;
+        switch (i) {
+            case 0:
+                ((u0) n(b31Var, i41Var)).q(r98Var);
+                break;
+            default:
+                ((u0) n(b31Var, i41Var)).q(r98Var);
+                break;
         }
-        Iterator<E> it = iterator();
-        while (it.hasNext()) {
-            if (rt2.f(it.next(), obj)) {
-                return true;
-            }
+        return r98Var;
+    }
+
+    @Override // defpackage.g00
+    public final b31 n(b31 b31Var, Object obj) {
+        int i = this.d0;
+        v0 v0Var = this.e0;
+        switch (i) {
+            case 0:
+                return new u0(v0Var, b31Var, 0);
+            default:
+                return new u0(v0Var, b31Var, 1);
         }
-        return false;
     }
 
-    @Override // java.util.Collection, java.util.List
-    public boolean containsAll(Collection collection) {
-        collection.getClass();
-        Collection collection2 = collection;
-        if (collection2.isEmpty()) {
-            return true;
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        int i = this.d0;
+        r98 r98Var = r98.a;
+        b31 b31Var = null;
+        v0 v0Var = this.e0;
+        switch (i) {
+            case 0:
+                q48.f0(obj);
+                if (v0Var.B0 == null) {
+                    cv2 cv2Var = new cv2();
+                    rp4 rp4Var = v0Var.p0;
+                    if (rp4Var != null) {
+                        d01.G(v0Var.I0(), null, null, new n0(rp4Var, cv2Var, b31Var, 0), 3);
+                    }
+                    v0Var.B0 = cv2Var;
+                    break;
+                }
+                break;
+            default:
+                q48.f0(obj);
+                cv2 cv2Var2 = v0Var.B0;
+                if (cv2Var2 != null) {
+                    dv2 dv2Var = new dv2(cv2Var2);
+                    rp4 rp4Var2 = v0Var.p0;
+                    if (rp4Var2 != null) {
+                        d01.G(v0Var.I0(), null, null, new n0(rp4Var2, dv2Var, b31Var, 1), 3);
+                    }
+                    v0Var.B0 = null;
+                    break;
+                }
+                break;
         }
-        Iterator it = collection2.iterator();
-        while (it.hasNext()) {
-            if (!contains(it.next())) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    @Override // java.util.Collection
-    public boolean isEmpty() {
-        return a() == 0;
-    }
-
-    @Override // java.util.Collection
-    public final boolean remove(Object obj) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final boolean removeAll(Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final boolean retainAll(Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final /* bridge */ int size() {
-        return a();
-    }
-
-    @Override // java.util.Collection, java.util.List
-    public Object[] toArray(Object[] objArr) {
-        objArr.getClass();
-        return tv3.Y(this, objArr);
-    }
-
-    public final String toString() {
-        return nm0.C0(this, ", ", "[", "]", new t0(0, this), 24);
-    }
-
-    @Override // java.util.Collection, java.util.List
-    public Object[] toArray() {
-        return tv3.X(this);
+        return r98Var;
     }
 }

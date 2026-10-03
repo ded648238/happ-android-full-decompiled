@@ -1,16 +1,16 @@
 .class final synthetic Lsu/happ/proxyutility/dto/MetaParams$Companion$toStringList$2;
-.super Lq82;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ltj2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lj72;
+.implements Lmi2;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq82;",
-        "Lj72;"
+        "Ltj2;",
+        "Lmi2;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
         0x4,
         0x0
     }
-    xi = 0x30
+    xi = 0x530
 .end annotation
 
 
@@ -48,7 +48,7 @@
     const/4 v1, 0x1
 
     .line 7
-    const-class v2, Lsl6;
+    const-class v2, Lea7;
 
     .line 8
     .line 9
@@ -56,7 +56,7 @@
 
     .line 10
     .line 11
-    invoke-direct/range {v0 .. v5}, Lq82;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Ltj2;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 12
     .line 13
@@ -88,31 +88,31 @@
     .line 7
     .line 8
     .line 9
-    move-result p1
+    move-result p0
 
     .line 10
-    if-lez p1, :cond_0
+    if-lez p0, :cond_0
 
     .line 11
     .line 12
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 13
     goto :goto_0
 
     .line 14
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 15
     :goto_0
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 16
     .line 17
     .line 18
-    move-result-object p1
+    move-result-object p0
 
     .line 19
-    return-object p1
+    return-object p0
 .end method

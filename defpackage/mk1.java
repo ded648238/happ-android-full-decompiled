@@ -1,45 +1,42 @@
 package defpackage;
 
-import android.graphics.Canvas;
-import android.graphics.Matrix;
-import android.graphics.Paint;
-import android.graphics.Path;
-import android.graphics.PathMeasure;
-import android.graphics.Rect;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class mk1 {
-    public final uy a;
-    public final Path b;
-    public final Path c;
-    public final PathMeasure d;
-    public final Matrix e;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class mk1 {
+    public final boolean a;
+    public final boolean b;
+    public final jn6 c;
+    public final boolean d;
+    public final boolean e;
+    public final String f;
+    public final int g;
 
-    public mk1(uy uyVar) {
-        Path path = new Path();
-        this.b = path;
-        this.c = new Path();
-        this.d = new PathMeasure(path, false);
-        this.a = uyVar;
-        this.e = new Matrix();
+    public mk1(int i, boolean z, boolean z2) {
+        z = (i & 1) != 0 ? true : z;
+        z2 = (i & 2) != 0 ? true : z2;
+        this.a = z;
+        this.b = z2;
+        this.c = jn6.X;
+        this.d = true;
+        this.e = true;
+        this.f = HttpUrl.FRAGMENT_ENCODE_SET;
+        this.g = 2;
     }
 
-    public static float h(float[] fArr) {
-        return (float) Math.toDegrees(Math.atan2(fArr[1], fArr[0]));
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof mk1)) {
+            return false;
+        }
+        mk1 mk1Var = (mk1) obj;
+        return this.a == mk1Var.a && this.b == mk1Var.b && this.c == mk1Var.c && this.d == mk1Var.d && this.e == mk1Var.e && this.g == mk1Var.g;
     }
 
-    public abstract void a(Canvas canvas, Rect rect, float f, boolean z, boolean z2);
-
-    public abstract void b(int i, int i2, Canvas canvas, Paint paint);
-
-    public abstract void c(Canvas canvas, Paint paint, kk1 kk1Var, int i);
-
-    public abstract void d(Canvas canvas, Paint paint, float f, float f2, int i, int i2, int i3);
-
-    public abstract int e();
-
-    public abstract int f();
-
-    public abstract void g();
+    public final int hashCode() {
+        return (eb7.f(this.e, eb7.f(this.d, (this.c.hashCode() + eb7.f(this.b, Boolean.hashCode(this.a) * 31, 31)) * 31, 31), 31) + this.g) * 31;
+    }
 }

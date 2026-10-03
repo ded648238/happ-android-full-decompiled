@@ -1,65 +1,58 @@
 package defpackage;
 
-import org.conscrypt.FileClientSessionCache;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class t35 {
+    public final boolean a;
+    public final long b;
+    public final long c;
+    public final long d;
+    public final long e;
+    public final s35 f;
+    public final ku g;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum t35 implements xs2 {
-    BYTE(0),
-    CHAR(1),
-    SHORT(2),
-    INT(3),
-    LONG(4),
-    FLOAT(5),
-    DOUBLE(6),
-    BOOLEAN(7),
-    STRING(8),
-    CLASS(9),
-    ENUM(10),
-    ANNOTATION(11),
-    ARRAY(12);
-
-    public final int Q;
-
-    t35(int i) {
-        this.Q = i;
+    public t35(boolean z, long j, long j2, long j3, long j4, s35 s35Var) {
+        s35Var.getClass();
+        this.a = z;
+        this.b = j;
+        this.c = j2;
+        this.d = j3;
+        this.e = j4;
+        this.f = s35Var;
+        this.g = ic4.f(false);
     }
 
-    public static t35 b(int i) {
-        switch (i) {
-            case 0:
-                return BYTE;
-            case 1:
-                return CHAR;
-            case 2:
-                return SHORT;
-            case 3:
-                return INT;
-            case 4:
-                return LONG;
-            case 5:
-                return FLOAT;
-            case 6:
-                return DOUBLE;
-            case 7:
-                return BOOLEAN;
-            case 8:
-                return STRING;
-            case 9:
-                return CLASS;
-            case 10:
-                return ENUM;
-            case 11:
-                return ANNOTATION;
-            case FileClientSessionCache.MAX_SIZE /* 12 */:
-                return ARRAY;
-            default:
-                return null;
+    public final void a(long j, Object obj) {
+        if (this.g.a()) {
+            this.f.b(obj);
+            return;
         }
+        StringBuilder sb = new StringBuilder("Output ");
+        sb.append(this.d);
+        sb.append(" at ");
+        sb.append((Object) rh2.a(this.b));
+        sb.append(" for ");
+        co6.l(c73.f(j, " was completed multiple times!", sb));
     }
 
-    @Override // defpackage.xs2
-    public final int a() {
-        return this.Q;
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof t35) {
+            t35 t35Var = (t35) obj;
+            if (this.a == t35Var.a && this.b == t35Var.b && this.c == t35Var.c && this.d == t35Var.d && this.e == t35Var.e && m93.h(this.f, t35Var.f)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return this.f.hashCode() + w31.e(w31.e(w31.e(w31.e(Boolean.hashCode(this.a) * 31, 31, this.b), 31, this.c), 31, this.d), 31, this.e);
+    }
+
+    public final String toString() {
+        return "StartedOutput(isOutOfOrder=" + this.a + ", cameraFrameNumber=" + ((Object) rh2.a(this.b)) + ", cameraTimestamp=" + ((Object) ("CameraTimestamp(value=" + this.c + ')')) + ", cameraOutputSequence=" + this.d + ", cameraOutputNumber=" + this.e + ", outputListener=" + this.f + ')';
     }
 }

@@ -1,14 +1,11 @@
 package defpackage;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class bj0 extends ej0 {
+    public static final bj0 a = new bj0();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class bj0 {
-    public final Map a;
-
-    public bj0(LinkedHashMap linkedHashMap) {
-        this.a = linkedHashMap;
+    public final String toString() {
+        return "CameraPrioritiesChanged";
     }
 }

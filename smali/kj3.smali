@@ -1,57 +1,26 @@
-.class public final Lkj3;
+.class public interface abstract annotation Lkj3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ldl7;
+.implements Ljava/lang/annotation/Annotation;
 
 
-# instance fields
-.field public final a:Lzu6;
-
-
-# direct methods
-.method public constructor <init>(Lg72;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-static {p1}, Ll14;->V(Lg72;)Lzu6;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    iput-object p1, p0, Lkj3;->a:Lzu6;
-
-    .line 9
-    .line 10
-    return-void
-.end method
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation Lkj3;
+        name = ""
+        names = {}
+    .end subannotation
+.end annotation
 
 
 # virtual methods
-.method public final a(Ljs4;)Ljava/lang/Object;
-    .locals 0
+.method public abstract name()Ljava/lang/String;
+.end method
 
-    .line 1
-    iget-object p1, p0, Lkj3;->a:Lzu6;
+.method public abstract names()[Ljava/lang/String;
+.end method
 
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Lzu6;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    return-object p1
+.method public abstract value()Ljava/lang/Class;
 .end method

@@ -1,13 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class q76 {
-    public final fy2 a;
-    public final Object b;
+import su.happ.proxyutility.dto.MetaParams;
 
-    public q76(fy2 fy2Var, Object obj) {
-        this.a = fy2Var;
-        this.b = obj;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class q76 extends jq4 {
+    public static final q76 X = new q76(MetaParams.class, "xrayTunMtu", "getXrayTunMtu()Ljava/lang/Integer;", 0);
+
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((MetaParams) obj).S2((Integer) obj2);
+    }
+
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return ((MetaParams) obj).getXrayTunMtu();
     }
 }

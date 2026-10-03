@@ -1,53 +1,58 @@
 package defpackage;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import kotlin.Metadata;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class vr0 implements g42 {
-    public final List a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001¨\u0006\u0003"}, d2 = {"Lvr0;", "Ljn4;", "Lzr0;", "foundation"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes.dex */
+final class vr0 extends jn4 {
+    public final rp4 X;
+    public final b43 Y;
+    public final boolean Z;
+    public final boolean c0;
+    public final String d0;
+    public final w96 e0;
+    public final ji2 f0;
 
-    public vr0(List list) {
-        list.getClass();
-        this.a = list;
+    public vr0(rp4 rp4Var, b43 b43Var, boolean z, boolean z2, String str, w96 w96Var, ji2 ji2Var) {
+        this.X = rp4Var;
+        this.Y = b43Var;
+        this.Z = z;
+        this.c0 = z2;
+        this.d0 = str;
+        this.e0 = w96Var;
+        this.f0 = ji2Var;
     }
 
-    @Override // defpackage.g42
-    public h42 a() {
-        List list = this.a;
-        ArrayList arrayList = new ArrayList(om0.e0(list, 10));
-        Iterator it = list.iterator();
-        while (it.hasNext()) {
-            arrayList.add(((rd4) it.next()).a());
-        }
-        return arrayList.size() == 1 ? (h42) nm0.P0(arrayList) : new wr0(0, arrayList);
+    @Override // defpackage.jn4
+    public final cn4 a() {
+        return new zr0(this.X, this.Y, this.Z, this.c0, this.d0, this.e0, this.f0);
     }
 
-    @Override // defpackage.g42
-    public lp4 b() {
-        List list = this.a;
-        ArrayList arrayList = new ArrayList(om0.e0(list, 10));
-        Iterator it = list.iterator();
-        while (it.hasNext()) {
-            arrayList.add(((rd4) it.next()).b());
-        }
-        return uy7.o(arrayList);
+    @Override // defpackage.jn4
+    public final void c(cn4 cn4Var) {
+        ((zr0) cn4Var).i1(this.X, this.Y, this.Z, this.c0, this.d0, this.e0, this.f0);
     }
 
     public final boolean equals(Object obj) {
-        if (obj instanceof vr0) {
-            return rt2.f(this.a, ((vr0) obj).a);
+        if (this == obj) {
+            return true;
         }
-        return false;
+        if (obj == null || vr0.class != obj.getClass()) {
+            return false;
+        }
+        vr0 vr0Var = (vr0) obj;
+        return m93.h(this.X, vr0Var.X) && m93.h(this.Y, vr0Var.Y) && this.Z == vr0Var.Z && this.c0 == vr0Var.c0 && m93.h(this.d0, vr0Var.d0) && m93.h(this.e0, vr0Var.e0) && this.f0 == vr0Var.f0;
     }
 
     public final int hashCode() {
-        return this.a.hashCode();
-    }
-
-    public final String toString() {
-        return mi2.r(new StringBuilder("ConcatenatedFormatStructure("), nm0.C0(this.a, ", ", null, null, null, 62), ')');
+        rp4 rp4Var = this.X;
+        int hashCode = (rp4Var != null ? rp4Var.hashCode() : 0) * 31;
+        b43 b43Var = this.Y;
+        int f = eb7.f(this.c0, eb7.f(this.Z, (hashCode + (b43Var != null ? b43Var.hashCode() : 0)) * 31, 31), 31);
+        String str = this.d0;
+        int hashCode2 = (f + (str != null ? str.hashCode() : 0)) * 31;
+        w96 w96Var = this.e0;
+        return this.f0.hashCode() + ((hashCode2 + (w96Var != null ? Integer.hashCode(w96Var.a) : 0)) * 31);
     }
 }

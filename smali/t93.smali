@@ -1,61 +1,99 @@
 .class public final Lt93;
-.super Lhc7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lth4;
 
 
-# static fields
-.field public static final i0:Ljava/util/regex/Pattern;
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:I
+
+.field public final synthetic c:Ljava/util/Map;
+
+.field public final synthetic d:Lmi2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(IILjava/util/Map;Lmi2;)V
+    .locals 0
 
     .line 1
-    const-string v0, "([a-zA-Z]{2}|[0-9]{3})"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
     .line 4
+    iput p1, p0, Lt93;->a:I
+
     .line 5
     .line 6
-    move-result-object v0
+    iput p2, p0, Lt93;->b:I
 
     .line 7
-    sput-object v0, Lt93;->i0:Ljava/util/regex/Pattern;
-
     .line 8
+    iput-object p3, p0, Lt93;->c:Ljava/util/Map;
+
     .line 9
+    .line 10
+    iput-object p4, p0, Lt93;->d:Lmi2;
+
+    .line 11
+    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final N(Ljava/lang/String;)Z
-    .locals 1
+.method public final a()I
+    .locals 0
 
     .line 1
-    sget-object v0, Lt93;->i0:Ljava/util/regex/Pattern;
+    iget p0, p0, Lt93;->b:I
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    return p0
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
+.method public final b()I
+    .locals 0
 
-    .line 7
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->matches()Z
+    .line 1
+    iget p0, p0, Lt93;->a:I
 
-    .line 8
-    .line 9
-    .line 10
-    move-result p1
+    .line 2
+    .line 3
+    return p0
+.end method
 
-    .line 11
-    return p1
+.method public final c()Ljava/util/Map;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lt93;->c:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final d()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final g()Lmi2;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lt93;->d:Lmi2;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

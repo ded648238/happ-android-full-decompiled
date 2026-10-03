@@ -1,110 +1,163 @@
-.class public final Lbt0;
-.super Lnf4;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lbt0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/lang/Iterable;
 
 
 # instance fields
-.field public final c:Ljava/lang/String;
+.field public final X:[I
+
+.field public final Y:[C
+
+.field public final Z:Ljq8;
+
+.field public final c0:I
+
+.field public final d0:I
+
+.field public final e0:I
+
+.field public final f0:I
+
+.field public final g0:I
+
+.field public final synthetic h0:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 2
+.method public constructor <init>([CLjq8;IIII)V
+    .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
+    iput p6, p0, Lbt0;->h0:I
 
     .line 2
     .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 4
-    move-result v0
-
     .line 5
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 6
+    const/16 p6, 0x80
+
     .line 7
     .line 8
-    move-result-object v0
+    new-array v0, p6, [I
 
     .line 9
-    const-string v1, "the predefined string "
-
     .line 10
-    .line 11
-    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    iput-object v0, p0, Lbt0;->X:[I
 
+    .line 11
     .line 12
+    iput-object p1, p0, Lbt0;->Y:[C
+
     .line 13
     .line 14
-    move-result-object v1
+    iput-object p2, p0, Lbt0;->Z:Ljq8;
 
     .line 15
-    invoke-direct {p0, v0, v1}, Lnf4;-><init>(Ljava/lang/Integer;Ljava/lang/String;)V
-
     .line 16
+    invoke-virtual {p2}, Ljq8;->v()I
+
     .line 17
     .line 18
-    iput-object p1, p0, Lbt0;->c:Ljava/lang/String;
-
     .line 19
+    move-result p1
+
     .line 20
+    iput p1, p0, Lbt0;->c0:I
+
+    .line 21
+    .line 22
+    iput p3, p0, Lbt0;->d0:I
+
+    .line 23
+    .line 24
+    iput p4, p0, Lbt0;->e0:I
+
+    .line 25
+    .line 26
+    iput p5, p0, Lbt0;->f0:I
+
+    .line 27
+    .line 28
+    const/4 p1, 0x0
+
+    .line 29
+    :goto_0
+    if-ge p1, p6, :cond_0
+
+    .line 30
+    .line 31
+    iget-object p3, p0, Lbt0;->X:[I
+
+    .line 32
+    .line 33
+    invoke-virtual {p2, p1}, Ljq8;->x(I)I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p4
+
+    .line 37
+    aput p4, p3, p1
+
+    .line 38
+    .line 39
+    add-int/lit8 p1, p1, 0x1
+
+    .line 40
+    .line 41
+    goto :goto_0
+
+    .line 42
+    :cond_0
+    iget p1, p0, Lbt0;->c0:I
+
+    .line 43
+    .line 44
+    if-lt p5, p1, :cond_1
+
+    .line 45
+    .line 46
+    add-int/lit8 p5, p1, -0x2
+
+    .line 47
+    .line 48
+    :cond_1
+    invoke-virtual {p2, p5}, Ljq8;->x(I)I
+
+    .line 49
+    .line 50
+    .line 51
+    move-result p1
+
+    .line 52
+    iput p1, p0, Lbt0;->g0:I
+
+    .line 53
+    .line 54
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;IILjava/lang/Object;)Lof4;
-    .locals 0
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
 
     .line 1
-    invoke-virtual {p1, p2, p3}, Ljava/lang/String;->subSequence(II)Ljava/lang/CharSequence;
+    new-instance v0, Lys0;
 
     .line 2
     .line 3
+    invoke-direct {v0, p0}, Lys0;-><init>(Lbt0;)V
+
     .line 4
-    move-result-object p1
-
     .line 5
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
     .line 6
-    .line 7
-    .line 8
-    move-result-object p1
-
-    .line 9
-    iget-object p2, p0, Lbt0;->c:Ljava/lang/String;
-
-    .line 10
-    .line 11
-    invoke-static {p1, p2}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result p1
-
-    .line 15
-    if-eqz p1, :cond_0
-
-    .line 16
-    .line 17
-    const/4 p1, 0x0
-
-    .line 18
-    return-object p1
-
-    .line 19
-    :cond_0
-    new-instance p1, Lku0;
-
-    .line 20
-    .line 21
-    invoke-direct {p1, p2}, Lku0;-><init>(Ljava/lang/String;)V
-
-    .line 22
-    .line 23
-    .line 24
-    return-object p1
+    return-object v0
 .end method

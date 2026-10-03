@@ -1,30 +1,37 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class df7 {
-    public static final df7 Q;
-    public static final df7 R;
-    public static final df7 S;
-    public static final /* synthetic */ df7[] T;
+import java.util.HashMap;
+import su.happ.proxyutility.domain.sub.ImportSubResult;
+import su.happ.proxyutility.dto.SubscriptionItem;
 
-    static {
-        df7 df7Var = new df7("MISSING", 0);
-        Q = df7Var;
-        df7 df7Var2 = new df7("ICU", 1);
-        R = df7Var2;
-        df7 df7Var3 = new df7("JAVA", 2);
-        S = df7Var3;
-        T = new df7[]{df7Var, df7Var2, df7Var3};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class df7 extends d31 {
+    public String c0;
+    public String d0;
+    public SubscriptionItem e0;
+    public String f0;
+    public Boolean g0;
+    public HashMap h0;
+    public vy5 i0;
+    public ImportSubResult j0;
+    public boolean k0;
+    public int l0;
+    public int m0;
+    public /* synthetic */ Object n0;
+    public final /* synthetic */ jf7 o0;
+    public int p0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public df7(jf7 jf7Var, d31 d31Var) {
+        super(d31Var);
+        this.o0 = jf7Var;
     }
 
-    public static df7 valueOf(String str) {
-        return (df7) Enum.valueOf(df7.class, str);
-    }
-
-    public static df7[] values() {
-        return (df7[]) T.clone();
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.n0 = obj;
+        this.p0 |= Integer.MIN_VALUE;
+        return this.o0.a(null, null, null, false, null, this);
     }
 }

@@ -1,131 +1,175 @@
 .class public final Lqe;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lu72;
+.implements Lra8;
 
 
 # instance fields
-.field public final synthetic Q:Lnx4;
-
-.field public final synthetic R:Lg72;
-
-.field public final synthetic S:Lox4;
-
-.field public final synthetic T:Lip0;
-
-.field public final synthetic U:I
-
-.field public final synthetic V:I
+.field public final X:Landroid/hardware/camera2/params/OutputConfiguration;
 
 
 # direct methods
-.method public constructor <init>(Lnx4;Lg72;Lox4;Lip0;II)V
+.method static constructor <clinit>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lqe;->Q:Lnx4;
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/hardware/camera2/params/OutputConfiguration;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p2, p0, Lqe;->R:Lg72;
-
     .line 4
+    iput-object p1, p0, Lqe;->X:Landroid/hardware/camera2/params/OutputConfiguration;
+
     .line 5
-    iput-object p3, p0, Lqe;->S:Lox4;
-
     .line 6
-    .line 7
-    iput-object p4, p0, Lqe;->T:Lip0;
+    invoke-virtual {p1}, Landroid/hardware/camera2/params/OutputConfiguration;->getSurface()Landroid/view/Surface;
 
+    .line 7
     .line 8
     .line 9
-    iput p5, p0, Lqe;->U:I
-
-    .line 10
-    .line 11
-    iput p6, p0, Lqe;->V:I
-
-    .line 12
-    .line 13
-    const/4 p1, 0x2
-
-    .line 14
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
-
-    .line 15
-    .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+.method public final G0(Lgn3;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    move-object v4, p1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    check-cast v4, Luq0;
-
     .line 3
     .line 4
-    check-cast p2, Ljava/lang/Number;
+    const-class v0, Landroid/hardware/camera2/params/OutputConfiguration;
 
     .line 5
     .line 6
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+    sget-object v1, Lp06;->a:Lq06;
 
     .line 7
     .line 8
-    .line 9
-    iget p1, p0, Lqe;->U:I
+    invoke-virtual {v1, v0}, Lq06;->b(Ljava/lang/Class;)Lgn3;
 
+    .line 9
     .line 10
     .line 11
-    or-int/lit8 p1, p1, 0x1
+    move-result-object v0
 
     .line 12
-    .line 13
-    invoke-static {p1}, Luy7;->X(I)I
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 13
     .line 14
     .line 15
+    move-result p1
+
     .line 16
-    move-result v5
+    if-eqz p1, :cond_0
 
     .line 17
-    iget v6, p0, Lqe;->V:I
-
     .line 18
-    .line 19
-    iget-object v0, p0, Lqe;->Q:Lnx4;
+    iget-object p0, p0, Lqe;->X:Landroid/hardware/camera2/params/OutputConfiguration;
 
+    .line 19
     .line 20
+    return-object p0
+
     .line 21
-    iget-object v1, p0, Lqe;->R:Lg72;
+    :cond_0
+    const/4 p0, 0x0
 
     .line 22
-    .line 23
-    iget-object v2, p0, Lqe;->S:Lox4;
+    return-object p0
+.end method
 
+.method public final a(Landroid/view/Surface;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 5
+    .line 6
+    const/16 v1, 0x1a
+
+    .line 7
+    .line 8
+    if-lt v0, v1, :cond_1
+
+    .line 9
+    .line 10
+    if-lt v0, v1, :cond_0
+
+    .line 11
+    .line 12
+    iget-object p0, p0, Lqe;->X:Landroid/hardware/camera2/params/OutputConfiguration;
+
+    .line 13
+    .line 14
+    invoke-static {p0, p1}, Lf73;->b(Landroid/hardware/camera2/params/OutputConfiguration;Landroid/view/Surface;)V
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_0
+    return-void
+
+    .line 18
+    :cond_1
+    const-string p0, "addSurface is not supported on API "
+
+    .line 19
+    .line 20
+    const-string p1, " (requires API 26)"
+
+    .line 21
+    .line 22
+    invoke-static {p0, v0, p1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+
+    .line 23
     .line 24
     .line 25
-    iget-object v3, p0, Lqe;->T:Lip0;
+    move-result-object p0
 
     .line 26
-    .line 27
-    invoke-static/range {v0 .. v6}, Lse;->a(Lnx4;Lg72;Lox4;Lip0;Luq0;II)V
+    invoke-static {p0}, Lco6;->l(Ljava/lang/Object;)V
 
+    .line 27
     .line 28
     .line 29
-    .line 30
-    sget-object p1, Lbh7;->a:Lbh7;
+    return-void
+.end method
 
-    .line 31
-    .line 32
-    return-object p1
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lqe;->X:Landroid/hardware/camera2/params/OutputConfiguration;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
 .end method

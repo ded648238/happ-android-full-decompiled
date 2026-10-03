@@ -1,6 +1,6 @@
 .class public final enum Lokhttp3/Protocol;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -64,7 +64,7 @@
 .field public static final enum QUIC:Lokhttp3/Protocol;
 
 .field public static final enum SPDY_3:Lokhttp3/Protocol;
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 .end field
 
@@ -75,82 +75,41 @@
 
 # direct methods
 .method private static final synthetic $values()[Lokhttp3/Protocol;
-    .locals 3
+    .locals 6
 
     .line 1
-    const/4 v0, 0x6
+    sget-object v0, Lokhttp3/Protocol;->HTTP_1_0:Lokhttp3/Protocol;
 
     .line 2
-    new-array v0, v0, [Lokhttp3/Protocol;
-
     .line 3
+    sget-object v1, Lokhttp3/Protocol;->HTTP_1_1:Lokhttp3/Protocol;
+
     .line 4
-    sget-object v1, Lokhttp3/Protocol;->HTTP_1_0:Lokhttp3/Protocol;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
+    sget-object v2, Lokhttp3/Protocol;->SPDY_3:Lokhttp3/Protocol;
 
+    .line 6
     .line 7
-    aput-object v1, v0, v2
+    sget-object v3, Lokhttp3/Protocol;->HTTP_2:Lokhttp3/Protocol;
 
     .line 8
     .line 9
-    sget-object v1, Lokhttp3/Protocol;->HTTP_1_1:Lokhttp3/Protocol;
+    sget-object v4, Lokhttp3/Protocol;->H2_PRIOR_KNOWLEDGE:Lokhttp3/Protocol;
 
     .line 10
     .line 11
-    const/4 v2, 0x1
+    sget-object v5, Lokhttp3/Protocol;->QUIC:Lokhttp3/Protocol;
 
     .line 12
-    aput-object v1, v0, v2
-
     .line 13
-    .line 14
-    sget-object v1, Lokhttp3/Protocol;->SPDY_3:Lokhttp3/Protocol;
+    filled-new-array/range {v0 .. v5}, [Lokhttp3/Protocol;
 
+    .line 14
     .line 15
     .line 16
-    const/4 v2, 0x2
+    move-result-object v0
 
     .line 17
-    aput-object v1, v0, v2
-
-    .line 18
-    .line 19
-    sget-object v1, Lokhttp3/Protocol;->HTTP_2:Lokhttp3/Protocol;
-
-    .line 20
-    .line 21
-    const/4 v2, 0x3
-
-    .line 22
-    aput-object v1, v0, v2
-
-    .line 23
-    .line 24
-    sget-object v1, Lokhttp3/Protocol;->H2_PRIOR_KNOWLEDGE:Lokhttp3/Protocol;
-
-    .line 25
-    .line 26
-    const/4 v2, 0x4
-
-    .line 27
-    aput-object v1, v0, v2
-
-    .line 28
-    .line 29
-    sget-object v1, Lokhttp3/Protocol;->QUIC:Lokhttp3/Protocol;
-
-    .line 30
-    .line 31
-    const/4 v2, 0x5
-
-    .line 32
-    aput-object v1, v0, v2
-
-    .line 33
-    .line 34
     return-object v0
 .end method
 
@@ -321,7 +280,7 @@
     const/4 v1, 0x0
 
     .line 82
-    invoke-direct {v0, v1}, Lokhttp3/Protocol$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/Protocol$Companion;-><init>(Lib1;)V
 
     .line 83
     .line 84
@@ -440,12 +399,12 @@
 
 # virtual methods
 .method public toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Protocol;->protocol:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Protocol;->protocol:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

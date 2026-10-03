@@ -1,9 +1,9 @@
 .class public final Landroidx/compose/material3/c;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lhp2;
+.implements Lb43;
 
 
 # instance fields
@@ -41,15 +41,15 @@
 
 
 # virtual methods
-.method public final a(Lp84;)Lg61;
-    .locals 4
+.method public final a(Lrp4;)Lie1;
+    .locals 3
 
     .line 1
-    new-instance v0, Lyo5;
+    new-instance v0, Lv96;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Lyo5;-><init>(Landroidx/compose/material3/c;)V
+    invoke-direct {v0, p0}, Lv96;-><init>(Landroidx/compose/material3/c;)V
 
     .line 4
     .line 5
@@ -62,11 +62,11 @@
 
     .line 9
     .line 10
-    iget v3, p0, Landroidx/compose/material3/c;->b:F
+    iget p0, p0, Landroidx/compose/material3/c;->b:F
 
     .line 11
     .line 12
-    invoke-direct {v1, p1, v2, v3, v0}, Landroidx/compose/material3/DelegatingThemeAwareRippleNode;-><init>(Lp84;ZFLxm0;)V
+    invoke-direct {v1, p1, v2, p0, v0}, Landroidx/compose/material3/DelegatingThemeAwareRippleNode;-><init>(Lrp4;ZFLcu0;)V
 
     .line 13
     .line 14
@@ -75,17 +75,17 @@
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 2
 
     .line 1
     if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 4
-    return p1
+    return p0
 
     .line 5
     :cond_0
@@ -129,7 +129,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0, v1}, Lxh1;->a(FF)Z
+    invoke-static {v0, v1}, Lvp1;->b(FF)Z
 
     .line 24
     .line 25
@@ -142,10 +142,10 @@
     .line 28
     .line 29
     :goto_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 30
-    return p1
+    return p0
 
     .line 31
     :cond_3
@@ -153,19 +153,19 @@
 
     .line 32
     .line 33
-    iget-wide v2, p1, Landroidx/compose/material3/c;->c:J
+    iget-wide p0, p1, Landroidx/compose/material3/c;->c:J
 
     .line 34
     .line 35
-    invoke-static {v0, v1, v2, v3}, Lvm0;->c(JJ)Z
+    invoke-static {v0, v1, p0, p1}, Lau0;->c(JJ)Z
 
     .line 36
     .line 37
     .line 38
-    move-result p1
+    move-result p0
 
     .line 39
-    return p1
+    return p0
 .end method
 
 .method public final hashCode()I
@@ -176,61 +176,52 @@
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 4
     .line 5
-    const/16 v0, 0x4cf
-
     .line 6
-    .line 7
-    goto :goto_0
-
-    .line 8
-    :cond_0
-    const/16 v0, 0x4d5
-
-    .line 9
-    .line 10
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 11
-    .line 12
-    iget v1, p0, Landroidx/compose/material3/c;->b:F
-
-    .line 13
-    .line 14
-    const/16 v2, 0x3c1
-
-    .line 15
-    .line 16
-    invoke-static {v0, v1, v2}, Lkd0;->r(IFI)I
-
-    .line 17
-    .line 18
-    .line 19
     move-result v0
 
-    .line 20
-    sget v1, Lvm0;->h:I
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
 
-    .line 21
-    .line 22
+    .line 8
+    .line 9
+    iget v1, p0, Landroidx/compose/material3/c;->b:F
+
+    .line 10
+    .line 11
+    const/16 v2, 0x3c1
+
+    .line 12
+    .line 13
+    invoke-static {v0, v1, v2}, Leb7;->c(IFI)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    sget v1, Lau0;->h:I
+
+    .line 18
+    .line 19
     iget-wide v1, p0, Landroidx/compose/material3/c;->c:J
 
+    .line 20
+    .line 21
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
+
+    .line 22
     .line 23
     .line 24
-    invoke-static {v1, v2}, Lxe7;->a(J)I
+    move-result p0
 
     .line 25
+    add-int/2addr p0, v0
+
     .line 26
-    .line 27
-    move-result v1
-
-    .line 28
-    add-int/2addr v1, v0
-
-    .line 29
-    return v1
+    return p0
 .end method

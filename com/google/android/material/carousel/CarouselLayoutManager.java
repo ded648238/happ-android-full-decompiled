@@ -10,44 +10,44 @@ import android.view.accessibility.AccessibilityEvent;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.j;
 import androidx.recyclerview.widget.k;
-import defpackage.be5;
-import defpackage.fn;
-import defpackage.k85;
-import defpackage.of0;
-import defpackage.pf0;
-import defpackage.qf0;
-import defpackage.rf0;
-import defpackage.sa5;
-import defpackage.sf0;
-import defpackage.tf0;
-import defpackage.u74;
-import defpackage.va5;
-import defpackage.xy4;
-import defpackage.zd5;
+import defpackage.eb7;
+import defpackage.ey5;
+import defpackage.gy5;
+import defpackage.i60;
+import defpackage.im0;
+import defpackage.jm0;
+import defpackage.js5;
+import defpackage.km0;
+import defpackage.lm0;
+import defpackage.mm0;
+import defpackage.nm0;
+import defpackage.qo4;
+import defpackage.ru5;
+import defpackage.uu5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class CarouselLayoutManager extends j implements zd5 {
-    public final u74 f0;
-    public tf0 g0;
-    public final View.OnLayoutChangeListener h0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class CarouselLayoutManager extends j implements ey5 {
+    public final qo4 o0;
+    public nm0 p0;
+    public final View.OnLayoutChangeListener q0;
 
     public CarouselLayoutManager(Context context, AttributeSet attributeSet, int i, int i2) {
-        new qf0();
-        this.h0 = new of0(0, this);
-        this.f0 = new u74();
-        K0();
+        new km0();
+        this.q0 = new im0(0, this);
+        this.o0 = new qo4();
+        J0();
         if (attributeSet != null) {
-            TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, va5.Carousel);
-            typedArrayObtainStyledAttributes.getInt(va5.Carousel_carousel_alignment, 0);
-            K0();
-            d1(typedArrayObtainStyledAttributes.getInt(sa5.RecyclerView_android_orientation, 0));
-            typedArrayObtainStyledAttributes.recycle();
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, uu5.Carousel);
+            obtainStyledAttributes.getInt(uu5.Carousel_carousel_alignment, 0);
+            J0();
+            c1(obtainStyledAttributes.getInt(ru5.RecyclerView_android_orientation, 0));
+            obtainStyledAttributes.recycle();
         }
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final int A(be5 be5Var) {
+    public final int A(gy5 gy5Var) {
         return 0;
     }
 
@@ -57,45 +57,45 @@ public class CarouselLayoutManager extends j implements zd5 {
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final boolean J0(RecyclerView recyclerView, View view, Rect rect, boolean z, boolean z2) {
+    public final boolean I0(RecyclerView recyclerView, View view, Rect rect, boolean z, boolean z2) {
         return false;
+    }
+
+    @Override // androidx.recyclerview.widget.j
+    public final int L0(int i, gy5 gy5Var, k kVar) {
+        if (!a1() || I() == 0 || i == 0) {
+            return 0;
+        }
+        kVar.d(0);
+        i60.g("All children of a RecyclerView using CarouselLayoutManager must use MaskableFrameLayout as their root ViewGroup.");
+        return 0;
     }
 
     @Override // androidx.recyclerview.widget.j
     public final void M(View view, Rect rect) {
         super.M(view, rect);
         rect.centerY();
-        if (b1()) {
+        if (a1()) {
             rect.centerX();
         }
         throw null;
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final int M0(int i, be5 be5Var, k kVar) {
-        if (!b1() || I() == 0 || i == 0) {
-            return 0;
-        }
-        kVar.d(0);
-        fn.s("All children of a RecyclerView using CarouselLayoutManager must use MaskableFrameLayout as their root ViewGroup.");
-        return 0;
-    }
-
-    @Override // androidx.recyclerview.widget.j
-    public final int O0(int i, be5 be5Var, k kVar) {
+    public final int N0(int i, gy5 gy5Var, k kVar) {
         if (!q() || I() == 0 || i == 0) {
             return 0;
         }
         kVar.d(0);
-        fn.s("All children of a RecyclerView using CarouselLayoutManager must use MaskableFrameLayout as their root ViewGroup.");
+        i60.g("All children of a RecyclerView using CarouselLayoutManager must use MaskableFrameLayout as their root ViewGroup.");
         return 0;
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final void X0(RecyclerView recyclerView, int i) {
-        pf0 pf0Var = new pf0(this, recyclerView.getContext());
-        pf0Var.a = i;
-        Y0(pf0Var);
+    public final void W0(RecyclerView recyclerView, int i) {
+        jm0 jm0Var = new jm0(this, recyclerView.getContext());
+        jm0Var.a = i;
+        X0(jm0Var);
     }
 
     @Override // androidx.recyclerview.widget.j
@@ -103,126 +103,137 @@ public class CarouselLayoutManager extends j implements zd5 {
         return true;
     }
 
-    @Override // defpackage.zd5
+    public final float Z0(float f, float f2) {
+        return b1() ? f - f2 : f + f2;
+    }
+
+    @Override // defpackage.ey5
     public final PointF a(int i) {
         return null;
     }
 
-    public final float a1(float f, float f2) {
-        return c1() ? f - f2 : f + f2;
+    public final boolean a1() {
+        return this.p0.a == 0;
     }
 
     public final boolean b1() {
-        return this.g0.a == 0;
+        return a1() && this.Y.getLayoutDirection() == 1;
     }
 
-    public final boolean c1() {
-        return b1() && this.R.getLayoutDirection() == 1;
-    }
-
-    public final void d1(int i) {
-        tf0 sf0Var;
+    public final void c1(int i) {
+        nm0 mm0Var;
         if (i != 0 && i != 1) {
-            fn.r(xy4.v(i, "invalid orientation:"));
+            i60.p(eb7.h(i, "invalid orientation:"));
             return;
         }
         n(null);
-        tf0 tf0Var = this.g0;
-        if (tf0Var == null || i != tf0Var.a) {
+        nm0 nm0Var = this.p0;
+        if (nm0Var == null || i != nm0Var.a) {
             if (i == 0) {
-                sf0Var = new sf0(this);
+                mm0Var = new mm0(this);
             } else {
                 if (i != 1) {
-                    fn.r("invalid orientation");
+                    i60.p("invalid orientation");
                     return;
                 }
-                sf0Var = new rf0(this);
+                mm0Var = new lm0(this);
             }
-            this.g0 = sf0Var;
-            K0();
+            this.p0 = mm0Var;
+            J0();
         }
     }
 
     @Override // androidx.recyclerview.widget.j
     public final void g0(RecyclerView recyclerView) {
         Context context = recyclerView.getContext();
-        u74 u74Var = this.f0;
-        float dimension = u74Var.a;
-        if (dimension <= 0.0f) {
-            dimension = context.getResources().getDimension(k85.m3_carousel_small_item_size_min);
+        qo4 qo4Var = this.o0;
+        float f = qo4Var.a;
+        if (f <= 0.0f) {
+            f = context.getResources().getDimension(js5.m3_carousel_small_item_size_min);
         }
-        u74Var.a = dimension;
-        float dimension2 = u74Var.b;
-        if (dimension2 <= 0.0f) {
-            dimension2 = context.getResources().getDimension(k85.m3_carousel_small_item_size_max);
+        qo4Var.a = f;
+        float f2 = qo4Var.b;
+        if (f2 <= 0.0f) {
+            f2 = context.getResources().getDimension(js5.m3_carousel_small_item_size_max);
         }
-        u74Var.b = dimension2;
-        K0();
-        recyclerView.addOnLayoutChangeListener(this.h0);
+        qo4Var.b = f2;
+        J0();
+        recyclerView.addOnLayoutChangeListener(this.q0);
     }
 
     @Override // androidx.recyclerview.widget.j
     public final void h0(RecyclerView recyclerView) {
-        recyclerView.removeOnLayoutChangeListener(this.h0);
+        recyclerView.removeOnLayoutChangeListener(this.q0);
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x0026  */
-    /* JADX WARN: Code duplicated, block: B:19:0x002b  */
-    /* JADX WARN: Code duplicated, block: B:23:0x0035  */
+    /* JADX WARN: Code restructure failed: missing block: B:46:0x0028, code lost:
+    
+        if (r7 != 1) goto L17;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:49:0x0032, code lost:
+    
+        if (b1() != false) goto L23;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:50:0x0036, code lost:
+    
+        if (r7 == 1) goto L23;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:53:0x003f, code lost:
+    
+        if (b1() != false) goto L19;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:17:0x0045  */
     @Override // androidx.recyclerview.widget.j
-    public final View i0(View view, int i, k kVar, be5 be5Var) {
-        byte b;
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final View i0(View view, int i, k kVar, gy5 gy5Var) {
+        char c;
         if (I() != 0) {
-            int i2 = this.g0.a;
-            if (i == 1) {
-                b = -1;
-            } else if (i == 2) {
-                b = 1;
-            } else if (i != 17) {
-                if (i != 33) {
-                    if (i != 66) {
-                        if (i == 130 && i2 == 1) {
-                            b = 1;
+            int i2 = this.p0.a;
+            if (i != 1) {
+                if (i != 2) {
+                    if (i == 17) {
+                        if (i2 == 0) {
+                        }
+                        c = 0;
+                    } else if (i != 33) {
+                        if (i != 66) {
+                            if (i == 130) {
+                            }
+                            c = 0;
                         } else {
-                            b = -2147483648;
+                            if (i2 == 0) {
+                            }
+                            c = 0;
                         }
-                    } else if (i2 != 0) {
-                        b = -2147483648;
-                    } else if (c1()) {
-                        b = -1;
-                    } else {
-                        b = 1;
                     }
-                } else if (i2 == 1) {
-                    b = -1;
-                } else {
-                    b = -2147483648;
+                    if (c != 0) {
+                        if (c == 65535) {
+                            if (j.T(view) != 0) {
+                                int T = j.T(H(0)) - 1;
+                                if (T < 0 || T >= S()) {
+                                    return H(b1() ? I() - 1 : 0);
+                                }
+                                this.p0.d();
+                                throw null;
+                            }
+                        } else if (j.T(view) != S() - 1) {
+                            int T2 = j.T(H(I() - 1)) + 1;
+                            if (T2 < 0 || T2 >= S()) {
+                                return H(b1() ? 0 : I() - 1);
+                            }
+                            this.p0.d();
+                            throw null;
+                        }
+                    }
                 }
-            } else if (i2 != 0) {
-                b = -2147483648;
-            } else if (c1()) {
-                b = 1;
-            } else {
-                b = -1;
+                c = 1;
+                if (c != 0) {
+                }
             }
-            if (b != -2147483648) {
-                if (b == -1) {
-                    if (j.T(view) != 0) {
-                        int iT = j.T(H(0)) - 1;
-                        if (iT < 0 || iT >= S()) {
-                            return H(c1() ? I() - 1 : 0);
-                        }
-                        this.g0.d();
-                        throw null;
-                    }
-                } else if (j.T(view) != S() - 1) {
-                    int iT2 = j.T(H(I() - 1)) + 1;
-                    if (iT2 < 0 || iT2 >= S()) {
-                        return H(c1() ? 0 : I() - 1);
-                    }
-                    this.g0.d();
-                    throw null;
-                }
+            c = 65535;
+            if (c != 0) {
             }
         }
         return null;
@@ -244,7 +255,7 @@ public class CarouselLayoutManager extends j implements zd5 {
 
     @Override // androidx.recyclerview.widget.j
     public final boolean p() {
-        return b1();
+        return a1();
     }
 
     @Override // androidx.recyclerview.widget.j
@@ -254,7 +265,7 @@ public class CarouselLayoutManager extends j implements zd5 {
 
     @Override // androidx.recyclerview.widget.j
     public final boolean q() {
-        return !b1();
+        return !a1();
     }
 
     @Override // androidx.recyclerview.widget.j
@@ -263,12 +274,12 @@ public class CarouselLayoutManager extends j implements zd5 {
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final void u0(k kVar, be5 be5Var) {
-        if (be5Var.b() > 0) {
-            if ((b1() ? this.d0 : this.e0) > 0.0f) {
-                c1();
+    public final void u0(k kVar, gy5 gy5Var) {
+        if (gy5Var.b() > 0) {
+            if ((a1() ? this.m0 : this.n0) > 0.0f) {
+                b1();
                 kVar.d(0);
-                fn.s("All children of a RecyclerView using CarouselLayoutManager must use MaskableFrameLayout as their root ViewGroup.");
+                i60.g("All children of a RecyclerView using CarouselLayoutManager must use MaskableFrameLayout as their root ViewGroup.");
                 return;
             }
         }
@@ -276,13 +287,13 @@ public class CarouselLayoutManager extends j implements zd5 {
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final int v(be5 be5Var) {
+    public final int v(gy5 gy5Var) {
         I();
         return 0;
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final void v0(be5 be5Var) {
+    public final void v0(gy5 gy5Var) {
         if (I() == 0) {
             return;
         }
@@ -290,36 +301,36 @@ public class CarouselLayoutManager extends j implements zd5 {
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final int w(be5 be5Var) {
+    public final int w(gy5 gy5Var) {
         return 0;
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final int x(be5 be5Var) {
+    public final int x(gy5 gy5Var) {
         return 0;
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final int y(be5 be5Var) {
+    public final int y(gy5 gy5Var) {
         I();
         return 0;
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final int z(be5 be5Var) {
+    public final int z(gy5 gy5Var) {
         return 0;
     }
 
     @Override // androidx.recyclerview.widget.j
-    public final void N0(int i) {
+    public final void M0(int i) {
     }
 
     public CarouselLayoutManager() {
-        u74 u74Var = new u74();
-        new qf0();
-        this.h0 = new of0(0, this);
-        this.f0 = u74Var;
-        K0();
-        d1(0);
+        qo4 qo4Var = new qo4();
+        new km0();
+        this.q0 = new im0(0, this);
+        this.o0 = qo4Var;
+        J0();
+        c1(0);
     }
 }

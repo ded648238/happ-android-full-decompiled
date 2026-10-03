@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/AbstractSessionContext$2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/util/Enumeration;
@@ -139,21 +139,21 @@
 
     .line 34
     .line 35
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 36
-    return v0
+    return p0
 .end method
 
 .method public bridge synthetic nextElement()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 22
     invoke-virtual {p0}, Lorg/conscrypt/AbstractSessionContext$2;->nextElement()[B
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public nextElement()[B
@@ -195,13 +195,13 @@
 
     .line 17
     :cond_0
-    invoke-static {}, Lfn;->p()V
+    invoke-static {}, Li60;->a()V
 
     .line 18
     .line 19
     .line 20
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 21
-    return-object v0
+    return-object p0
 .end method

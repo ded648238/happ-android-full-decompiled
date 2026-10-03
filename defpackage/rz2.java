@@ -1,29 +1,34 @@
 package defpackage;
 
-import java.util.Map;
+import android.content.res.Resources;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class rz2 implements bg4 {
-    public final /* synthetic */ int a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class rz2 {
+    public final Resources.Theme a;
+    public final int b;
 
-    public /* synthetic */ rz2(int i) {
-        this.a = i;
+    public rz2(Resources.Theme theme, int i) {
+        this.a = theme;
+        this.b = i;
     }
 
-    @Override // defpackage.ho1
-    public final void a(Object obj, Object obj2) {
-        switch (this.a) {
-            case 0:
-                throw new ko1("Couldn't find encoder for type " + obj.getClass().getCanonicalName());
-            case 1:
-                Map.Entry entry = (Map.Entry) obj;
-                cg4 cg4Var = (cg4) obj2;
-                cg4Var.a(i65.g, entry.getKey());
-                cg4Var.a(i65.h, entry.getValue());
-                return;
-            default:
-                throw new ko1("Couldn't find encoder for type " + obj.getClass().getCanonicalName());
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
+        if (!(obj instanceof rz2)) {
+            return false;
+        }
+        rz2 rz2Var = (rz2) obj;
+        return m93.h(this.a, rz2Var.a) && this.b == rz2Var.b;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.b) + (this.a.hashCode() * 31);
+    }
+
+    public final String toString() {
+        return "Key(theme=" + this.a + ", id=" + this.b + ")";
     }
 }

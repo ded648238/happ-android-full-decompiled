@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/EvpMdRef;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -573,18 +573,18 @@
 .end method
 
 .method public static getJcaDigestAlgorithmStandardNameFromEVP_MD(J)Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     sget-wide v0, Lorg/conscrypt/EvpMdRef$MD5;->EVP_MD:J
 
     .line 2
     .line 3
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
     .line 4
     .line 5
-    if-nez v2, :cond_0
+    if-nez v0, :cond_0
 
     .line 6
     .line 7
@@ -600,11 +600,11 @@
 
     .line 11
     .line 12
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
     .line 13
     .line 14
-    if-nez v2, :cond_1
+    if-nez v0, :cond_1
 
     .line 15
     .line 16
@@ -620,11 +620,11 @@
 
     .line 20
     .line 21
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
     .line 22
     .line 23
-    if-nez v2, :cond_2
+    if-nez v0, :cond_2
 
     .line 24
     .line 25
@@ -640,11 +640,11 @@
 
     .line 29
     .line 30
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
     .line 31
     .line 32
-    if-nez v2, :cond_3
+    if-nez v0, :cond_3
 
     .line 33
     .line 34
@@ -660,11 +660,11 @@
 
     .line 38
     .line 39
-    cmp-long v2, p0, v0
+    cmp-long v0, p0, v0
 
     .line 40
     .line 41
-    if-nez v2, :cond_4
+    if-nez v0, :cond_4
 
     .line 42
     .line 43
@@ -680,11 +680,11 @@
 
     .line 47
     .line 48
-    cmp-long v2, p0, v0
+    cmp-long p0, p0, v0
 
     .line 49
     .line 50
-    if-nez v2, :cond_5
+    if-nez p0, :cond_5
 
     .line 51
     .line 52
@@ -700,7 +700,7 @@
 
     .line 56
     .line 57
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 58
     .line 59

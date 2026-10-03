@@ -1,24 +1,32 @@
 package defpackage;
 
-import android.content.Intent;
-import com.google.android.gms.common.api.GoogleApiActivity;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class pz7 {
+    public static final long b = qz7.a(0.5f, 0.5f);
+    public static final /* synthetic */ int c = 0;
+    public final long a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class pz7 extends sz7 {
-    public final /* synthetic */ Intent Q;
-    public final /* synthetic */ GoogleApiActivity R;
-
-    public pz7(Intent intent, GoogleApiActivity googleApiActivity) {
-        this.Q = intent;
-        this.R = googleApiActivity;
+    public static final boolean a(long j, long j2) {
+        return j == j2;
     }
 
-    @Override // defpackage.sz7
-    public final void a() {
-        Intent intent = this.Q;
-        if (intent != null) {
-            this.R.startActivityForResult(intent, 2);
+    public static String b(long j) {
+        return "TransformOrigin(packedValue=" + j + ")";
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof pz7) {
+            return this.a == ((pz7) obj).a;
         }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Long.hashCode(this.a);
+    }
+
+    public final String toString() {
+        return b(this.a);
     }
 }

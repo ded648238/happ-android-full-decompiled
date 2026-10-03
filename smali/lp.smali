@@ -1,79 +1,24 @@
 .class public final Llp;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# static fields
-.field public static final d:Llp;
-
-.field public static final e:Llp;
+# interfaces
+.implements Lrp;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # instance fields
-.field public final a:J
+.field public X:Ld8;
 
-.field public final b:J
+.field public Y:Lmp;
 
-.field public final c:J
+.field public Z:Ljava/lang/CharSequence;
+
+.field public final synthetic c0:Landroidx/appcompat/widget/AppCompatSpinner;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 8
-
-    .line 1
-    new-instance v0, Llp;
-
-    .line 2
-    .line 3
-    sget-wide v1, Lqm;->c:J
-
-    .line 4
-    .line 5
-    sget-wide v3, Lvm0;->c:J
-
-    .line 6
-    .line 7
-    sget-wide v5, Lqm;->s:J
-
-    .line 8
-    .line 9
-    invoke-direct/range {v0 .. v6}, Llp;-><init>(JJJ)V
-
-    .line 10
-    .line 11
-    .line 12
-    sput-object v0, Llp;->d:Llp;
-
-    .line 13
-    .line 14
-    move-wide v2, v1
-
-    .line 15
-    new-instance v1, Llp;
-
-    .line 16
-    .line 17
-    move-wide v6, v5
-
-    .line 18
-    sget-wide v4, Lvm0;->b:J
-
-    .line 19
-    .line 20
-    invoke-direct/range {v1 .. v7}, Llp;-><init>(JJJ)V
-
-    .line 21
-    .line 22
-    .line 23
-    sput-object v1, Llp;->e:Llp;
-
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public constructor <init>(JJJ)V
+.method public constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner;)V
     .locals 0
 
     .line 1
@@ -82,261 +27,349 @@
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, Llp;->a:J
+    iput-object p1, p0, Llp;->c0:Landroidx/appcompat/widget/AppCompatSpinner;
 
     .line 5
     .line 6
-    iput-wide p3, p0, Llp;->b:J
-
-    .line 7
-    .line 8
-    iput-wide p5, p0, Llp;->c:J
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final a()Z
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    iget-object p0, p0, Llp;->X:Ld8;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    if-eqz p0, :cond_0
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, Llp;
+    invoke-virtual {p0}, Landroid/app/Dialog;->isShowing()Z
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    move-result p0
 
     .line 9
+    return p0
+
     .line 10
-    return v2
+    :cond_0
+    const/4 p0, 0x0
 
     .line 11
-    :cond_1
-    check-cast p1, Llp;
-
-    .line 12
-    .line 13
-    iget-wide v3, p0, Llp;->a:J
-
-    .line 14
-    .line 15
-    iget-wide v5, p1, Llp;->a:J
-
-    .line 16
-    .line 17
-    invoke-static {v3, v4, v5, v6}, Lvm0;->c(JJ)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-wide v3, p0, Llp;->b:J
-
-    .line 25
-    .line 26
-    iget-wide v5, p1, Llp;->b:J
-
-    .line 27
-    .line 28
-    invoke-static {v3, v4, v5, v6}, Lvm0;->c(JJ)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    if-nez v1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
-    iget-wide v3, p0, Llp;->c:J
-
-    .line 36
-    .line 37
-    iget-wide v5, p1, Llp;->c:J
-
-    .line 38
-    .line 39
-    invoke-static {v3, v4, v5, v6}, Lvm0;->c(JJ)Z
-
-    .line 40
-    .line 41
-    .line 42
-    move-result p1
-
-    .line 43
-    if-nez p1, :cond_4
-
-    .line 44
-    .line 45
-    return v2
-
-    .line 46
-    :cond_4
-    return v0
+    return p0
 .end method
 
-.method public final hashCode()I
+.method public final b()I
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final d(I)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final dismiss()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Llp;->X:Ld8;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcp;->dismiss()V
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    iput-object v0, p0, Llp;->X:Ld8;
+
+    .line 10
+    .line 11
+    :cond_0
+    return-void
+.end method
+
+.method public final e()Ljava/lang/CharSequence;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Llp;->Z:Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final g()Landroid/graphics/drawable/Drawable;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final h(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Llp;->Z:Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final i(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final k(I)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final l(I)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final m(II)V
     .locals 4
 
     .line 1
-    sget v0, Lvm0;->h:I
+    iget-object v0, p0, Llp;->Y:Lmp;
 
     .line 2
     .line 3
-    iget-wide v0, p0, Llp;->a:J
+    if-nez v0, :cond_0
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lxe7;->a(J)I
+    return-void
 
     .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    const/16 v1, 0x1f
-
-    .line 10
-    .line 11
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 12
-    .line 13
-    iget-wide v2, p0, Llp;->b:J
-
-    .line 14
-    .line 15
-    invoke-static {v0, v1, v2, v3}, Lea0;->n(IIJ)I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
-
-    .line 19
-    iget-wide v1, p0, Llp;->c:J
-
-    .line 20
-    .line 21
-    invoke-static {v1, v2}, Lxe7;->a(J)I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v1
-
-    .line 25
-    add-int/2addr v1, v0
-
-    .line 26
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 6
-
-    .line 1
-    iget-wide v0, p0, Llp;->a:J
-
-    .line 2
-    .line 3
-    invoke-static {v0, v1}, Lvm0;->i(J)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    :cond_0
+    new-instance v0, Lc8;
 
     .line 7
-    iget-wide v1, p0, Llp;->b:J
-
     .line 8
-    .line 9
-    invoke-static {v1, v2}, Lvm0;->i(J)Ljava/lang/String;
+    iget-object v1, p0, Llp;->c0:Landroidx/appcompat/widget/AppCompatSpinner;
 
+    .line 9
     .line 10
+    invoke-virtual {v1}, Landroidx/appcompat/widget/AppCompatSpinner;->getPopupContext()Landroid/content/Context;
+
     .line 11
     .line 12
-    move-result-object v1
-
     .line 13
-    iget-wide v2, p0, Llp;->c:J
-
-    .line 14
-    .line 15
-    invoke-static {v2, v3}, Lvm0;->i(J)Ljava/lang/String;
-
-    .line 16
-    .line 17
-    .line 18
     move-result-object v2
 
+    .line 14
+    invoke-direct {v0, v2}, Lc8;-><init>(Landroid/content/Context;)V
+
+    .line 15
+    .line 16
+    .line 17
+    iget-object v2, v0, Lc8;->Z:Ljava/lang/Object;
+
+    .line 18
     .line 19
-    const-string v3, ", indicatorSecondary="
+    check-cast v2, Ly7;
 
     .line 20
     .line 21
-    const-string v4, ", track="
+    iget-object v3, p0, Llp;->Z:Ljava/lang/CharSequence;
 
     .line 22
     .line 23
-    const-string v5, "AppProgressIndicatorColors(indicatorPrimary="
+    if-eqz v3, :cond_1
 
     .line 24
     .line 25
-    invoke-static {v5, v0, v3, v1, v4}, Lmi2;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iput-object v3, v2, Ly7;->f:Ljava/lang/Object;
 
     .line 26
     .line 27
-    .line 28
-    move-result-object v0
+    :cond_1
+    iget-object v3, p0, Llp;->Y:Lmp;
 
+    .line 28
     .line 29
-    const-string v1, ")"
+    invoke-virtual {v1}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
 
     .line 30
     .line 31
-    invoke-static {v0, v2, v1}, Lkd0;->z(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
     .line 32
+    move-result v1
+
     .line 33
+    iput-object v3, v2, Ly7;->j:Ljava/lang/Object;
+
     .line 34
+    .line 35
+    iput-object p0, v2, Ly7;->k:Ljava/lang/Object;
+
+    .line 36
+    .line 37
+    iput v1, v2, Ly7;->a:I
+
+    .line 38
+    .line 39
+    const/4 v1, 0x1
+
+    .line 40
+    iput-boolean v1, v2, Ly7;->b:Z
+
+    .line 41
+    .line 42
+    invoke-virtual {v0}, Lc8;->d()Ld8;
+
+    .line 43
+    .line 44
+    .line 45
     move-result-object v0
 
-    .line 35
-    return-object v0
+    .line 46
+    iput-object v0, p0, Llp;->X:Ld8;
+
+    .line 47
+    .line 48
+    iget-object v0, v0, Ld8;->f0:Lb8;
+
+    .line 49
+    .line 50
+    iget-object v0, v0, Lb8;->e:Landroidx/appcompat/app/AlertController$RecycleListView;
+
+    .line 51
+    .line 52
+    invoke-virtual {v0, p1}, Landroid/view/View;->setTextDirection(I)V
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v0, p2}, Landroid/view/View;->setTextAlignment(I)V
+
+    .line 56
+    .line 57
+    .line 58
+    iget-object p0, p0, Llp;->X:Ld8;
+
+    .line 59
+    .line 60
+    invoke-virtual {p0}, Landroid/app/Dialog;->show()V
+
+    .line 61
+    .line 62
+    .line 63
+    return-void
+.end method
+
+.method public final n()I
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final o(Landroid/widget/ListAdapter;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lmp;
+
+    .line 2
+    .line 3
+    iput-object p1, p0, Llp;->Y:Lmp;
+
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 3
+
+    .line 1
+    iget-object p1, p0, Llp;->c0:Landroidx/appcompat/widget/AppCompatSpinner;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, p2}, Landroid/widget/AdapterView;->setSelection(I)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Landroid/widget/AdapterView;->getOnItemClickListener()Landroid/widget/AdapterView$OnItemClickListener;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    if-eqz v0, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Llp;->Y:Lmp;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, p2}, Lmp;->getItemId(I)J
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-wide v0
+
+    .line 18
+    const/4 v2, 0x0
+
+    .line 19
+    invoke-virtual {p1, v2, p2, v0, v1}, Landroid/widget/AdapterView;->performItemClick(Landroid/view/View;IJ)Z
+
+    .line 20
+    .line 21
+    .line 22
+    :cond_0
+    invoke-virtual {p0}, Llp;->dismiss()V
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
 .end method

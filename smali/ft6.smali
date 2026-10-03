@@ -1,852 +1,511 @@
 .class public final Lft6;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Ljava/io/Closeable;
+
+# static fields
+.field public static final j:Ljava/util/List;
 
 
 # instance fields
-.field public final Q:Ljava/lang/Object;
+.field public final a:Ljava/util/ArrayList;
 
-.field public final R:Landroid/view/Surface;
+.field public final b:Lzx;
 
-.field public final S:I
+.field public final c:Ljava/util/List;
 
-.field public final T:Landroid/util/Size;
+.field public final d:Ljava/util/List;
 
-.field public final U:[F
+.field public final e:Ljava/util/List;
 
-.field public V:Lnu0;
+.field public final f:Ldt6;
 
-.field public W:Ljava/util/concurrent/Executor;
+.field public final g:Lyk0;
 
-.field public X:Z
+.field public final h:I
 
-.field public Y:Z
-
-.field public final Z:Lf90;
-
-.field public final a0:Lc90;
+.field public final i:Landroid/hardware/camera2/params/InputConfiguration;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/Surface;ILandroid/util/Size;Ldw;Ldw;)V
-    .locals 6
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    const-string v0, "SurfaceOutputImpl close future complete"
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 3
     .line 4
     .line 5
+    move-result-object v0
+
     .line 6
-    new-instance v1, Ljava/lang/Object;
+    const/4 v1, 0x5
 
     .line 7
-    .line 8
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 8
     .line 9
     .line 10
+    move-result-object v1
+
     .line 11
-    iput-object v1, p0, Lft6;->Q:Ljava/lang/Object;
+    const/4 v2, 0x3
 
     .line 12
-    .line 13
-    const/16 v1, 0x10
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 13
     .line 14
     .line 15
-    new-array v2, v1, [F
+    move-result-object v2
 
     .line 16
-    .line 17
-    iput-object v2, p0, Lft6;->U:[F
+    filled-new-array {v0, v1, v2}, [Ljava/lang/Integer;
 
+    .line 17
     .line 18
     .line 19
-    new-array v3, v1, [F
+    move-result-object v0
 
     .line 20
-    .line 21
-    new-array v4, v1, [F
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
+    .line 21
     .line 22
     .line 23
-    new-array v1, v1, [F
+    move-result-object v0
 
     .line 24
+    sput-object v0, Lft6;->j:Ljava/util/List;
+
     .line 25
-    const/4 v5, 0x0
-
     .line 26
-    iput-boolean v5, p0, Lft6;->X:Z
-
-    .line 27
-    .line 28
-    iput-boolean v5, p0, Lft6;->Y:Z
-
-    .line 29
-    .line 30
-    iput-object p1, p0, Lft6;->R:Landroid/view/Surface;
-
-    .line 31
-    .line 32
-    iput p2, p0, Lft6;->S:I
-
-    .line 33
-    .line 34
-    iput-object p3, p0, Lft6;->T:Landroid/util/Size;
-
-    .line 35
-    .line 36
-    invoke-static {v2, v4, p4}, Lft6;->f([F[FLdw;)V
-
-    .line 37
-    .line 38
-    .line 39
-    invoke-static {v3, v1, p5}, Lft6;->f([F[FLdw;)V
-
-    .line 40
-    .line 41
-    .line 42
-    new-instance p1, Lc90;
-
-    .line 43
-    .line 44
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
-
-    .line 45
-    .line 46
-    .line 47
-    new-instance p2, Lij5;
-
-    .line 48
-    .line 49
-    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
-
-    .line 50
-    .line 51
-    .line 52
-    iput-object p2, p1, Lc90;->c:Lij5;
-
-    .line 53
-    .line 54
-    new-instance p2, Lf90;
-
-    .line 55
-    .line 56
-    invoke-direct {p2, p1}, Lf90;-><init>(Lc90;)V
-
-    .line 57
-    .line 58
-    .line 59
-    iput-object p2, p1, Lc90;->b:Lf90;
-
-    .line 60
-    .line 61
-    :try_start_0
-    iput-object p1, p0, Lft6;->a0:Lc90;
-
-    .line 62
-    .line 63
-    iput-object v0, p1, Lc90;->a:Ljava/lang/Object;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 64
-    .line 65
-    goto :goto_0
-
-    .line 66
-    :catch_0
-    move-exception p1
-
-    .line 67
-    invoke-virtual {p2, p1}, Lf90;->b(Ljava/lang/Throwable;)Z
-
-    .line 68
-    .line 69
-    .line 70
-    :goto_0
-    iput-object p2, p0, Lft6;->Z:Lf90;
-
-    .line 71
-    .line 72
     return-void
 .end method
 
-.method public static f([F[FLdw;)V
-    .locals 13
+.method public constructor <init>(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Lyk0;Ldt6;Landroid/hardware/camera2/params/InputConfiguration;ILzx;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p0, v0}, Landroid/opengl/Matrix;->setIdentityM([FI)V
-
     .line 3
     .line 4
+    iput-object p1, p0, Lft6;->a:Ljava/util/ArrayList;
+
     .line 5
-    if-nez p2, :cond_0
-
     .line 6
+    invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
     .line 7
-    return-void
-
     .line 8
-    :cond_0
-    iget-object v1, p2, Ldw;->a:Landroid/util/Size;
-
     .line 9
+    move-result-object p1
+
     .line 10
-    iget-boolean v2, p2, Ldw;->e:Z
+    iput-object p1, p0, Lft6;->c:Ljava/util/List;
 
     .line 11
     .line 12
-    iget v3, p2, Ldw;->d:I
+    invoke-static {p3}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 13
     .line 14
-    invoke-static {p0}, Lwj0;->h0([F)V
-
     .line 15
-    .line 16
-    .line 17
-    int-to-float v4, v3
+    move-result-object p1
 
+    .line 16
+    iput-object p1, p0, Lft6;->d:Ljava/util/List;
+
+    .line 17
     .line 18
-    invoke-static {p0, v4}, Lwj0;->g0([FF)V
+    invoke-static {p4}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 19
     .line 20
     .line 21
-    const/high16 v4, -0x40800000    # -1.0f
+    move-result-object p1
 
     .line 22
-    .line 23
-    const/4 v5, 0x0
+    iput-object p1, p0, Lft6;->e:Ljava/util/List;
 
+    .line 23
     .line 24
-    const/high16 v6, 0x3f800000    # 1.0f
+    iput-object p6, p0, Lft6;->f:Ldt6;
 
     .line 25
     .line 26
-    if-eqz v2, :cond_1
+    iput-object p5, p0, Lft6;->g:Lyk0;
 
     .line 27
     .line 28
-    invoke-static {p0, v0, v6, v5, v5}, Landroid/opengl/Matrix;->translateM([FIFFF)V
+    iput-object p7, p0, Lft6;->i:Landroid/hardware/camera2/params/InputConfiguration;
+
+    .line 29
+    .line 30
+    iput p8, p0, Lft6;->h:I
+
+    .line 31
+    .line 32
+    iput-object p9, p0, Lft6;->b:Lzx;
+
+    .line 33
+    .line 34
+    return-void
+.end method
+
+.method public static a()Lft6;
+    .locals 15
+
+    .line 1
+    new-instance v0, Lft6;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 4
+    .line 5
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance v2, Ljava/util/ArrayList;
+
+    .line 9
+    .line 10
+    const/4 v3, 0x0
+
+    .line 11
+    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 12
+    .line 13
+    .line 14
+    move v4, v3
+
+    .line 15
+    new-instance v3, Ljava/util/ArrayList;
+
+    .line 16
+    .line 17
+    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 18
+    .line 19
+    .line 20
+    move v5, v4
+
+    .line 21
+    new-instance v4, Ljava/util/ArrayList;
+
+    .line 22
+    .line 23
+    invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 24
+    .line 25
+    .line 26
+    new-instance v5, Ljava/util/HashSet;
+
+    .line 27
+    .line 28
+    invoke-direct {v5}, Ljava/util/HashSet;-><init>()V
 
     .line 29
     .line 30
     .line 31
-    invoke-static {p0, v0, v4, v6, v6}, Landroid/opengl/Matrix;->scaleM([FIFFF)V
+    invoke-static {}, Leq4;->d()Leq4;
 
     .line 32
     .line 33
     .line 34
-    :cond_1
-    invoke-static {v1, v3}, Lh77;->e(Landroid/util/Size;I)Landroid/util/Size;
+    move-result-object v6
 
     .line 35
+    new-instance v7, Ljava/util/ArrayList;
+
     .line 36
     .line 37
-    move-result-object v7
+    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
     .line 38
-    new-instance v8, Landroid/graphics/RectF;
-
     .line 39
     .line 40
-    invoke-virtual {v1}, Landroid/util/Size;->getWidth()I
+    invoke-static {}, Luq4;->a()Luq4;
 
     .line 41
     .line 42
     .line 43
-    move-result v9
+    move-result-object v8
 
     .line 44
-    int-to-float v9, v9
+    new-instance v9, Lyk0;
 
     .line 45
-    invoke-virtual {v1}, Landroid/util/Size;->getHeight()I
-
     .line 46
+    new-instance v10, Ljava/util/ArrayList;
+
     .line 47
     .line 48
-    move-result v1
+    invoke-direct {v10, v5}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     .line 49
-    int-to-float v1, v1
-
     .line 50
-    invoke-direct {v8, v5, v5, v9, v1}, Landroid/graphics/RectF;-><init>(FFFF)V
-
     .line 51
+    invoke-static {v6}, Lw25;->a(Ljz0;)Lw25;
+
     .line 52
     .line 53
-    new-instance v1, Landroid/graphics/RectF;
-
     .line 54
+    move-result-object v11
+
     .line 55
-    invoke-virtual {v7}, Landroid/util/Size;->getWidth()I
+    new-instance v13, Ljava/util/ArrayList;
 
     .line 56
     .line 57
+    invoke-direct {v13, v7}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
     .line 58
-    move-result v9
-
     .line 59
-    int-to-float v9, v9
-
     .line 60
-    invoke-virtual {v7}, Landroid/util/Size;->getHeight()I
+    sget-object v5, Lpn7;->b:Lpn7;
 
     .line 61
     .line 62
-    .line 63
-    move-result v10
+    new-instance v5, Landroid/util/ArrayMap;
 
+    .line 63
     .line 64
-    int-to-float v10, v10
+    invoke-direct {v5}, Landroid/util/ArrayMap;-><init>()V
 
     .line 65
-    invoke-direct {v1, v5, v5, v9, v10}, Landroid/graphics/RectF;-><init>(FFFF)V
-
     .line 66
     .line 67
-    .line 68
-    invoke-static {v8, v1, v3, v2}, Lh77;->a(Landroid/graphics/RectF;Landroid/graphics/RectF;IZ)Landroid/graphics/Matrix;
+    iget-object v6, v8, Lpn7;->a:Landroid/util/ArrayMap;
 
+    .line 68
     .line 69
+    invoke-virtual {v6}, Landroid/util/ArrayMap;->keySet()Ljava/util/Set;
+
     .line 70
     .line 71
-    move-result-object v1
-
     .line 72
-    new-instance v2, Landroid/graphics/RectF;
+    move-result-object v7
 
     .line 73
-    .line 74
-    iget-object v3, p2, Ldw;->b:Landroid/graphics/Rect;
+    invoke-interface {v7}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
+    .line 74
     .line 75
     .line 76
-    invoke-direct {v2, v3}, Landroid/graphics/RectF;-><init>(Landroid/graphics/Rect;)V
+    move-result-object v7
 
     .line 77
+    :goto_0
+    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+
     .line 78
     .line 79
-    invoke-virtual {v1, v2}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
-
     .line 80
-    .line 81
-    .line 82
-    iget v1, v2, Landroid/graphics/RectF;->left:F
-
-    .line 83
-    .line 84
-    invoke-virtual {v7}, Landroid/util/Size;->getWidth()I
-
-    .line 85
-    .line 86
-    .line 87
-    move-result v3
-
-    .line 88
-    int-to-float v3, v3
-
-    .line 89
-    div-float/2addr v1, v3
-
-    .line 90
-    invoke-virtual {v7}, Landroid/util/Size;->getHeight()I
-
-    .line 91
-    .line 92
-    .line 93
-    move-result v3
-
-    .line 94
-    int-to-float v3, v3
-
-    .line 95
-    invoke-virtual {v2}, Landroid/graphics/RectF;->height()F
-
-    .line 96
-    .line 97
-    .line 98
     move-result v8
 
+    .line 81
+    if-eqz v8, :cond_0
+
+    .line 82
+    .line 83
+    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v8
+
+    .line 87
+    check-cast v8, Ljava/lang/String;
+
+    .line 88
+    .line 89
+    invoke-virtual {v6, v8}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v12
+
+    .line 93
+    invoke-virtual {v5, v8, v12}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 94
+    .line 95
+    .line 96
+    goto :goto_0
+
+    .line 97
+    :cond_0
+    new-instance v14, Lpn7;
+
+    .line 98
     .line 99
-    sub-float/2addr v3, v8
+    invoke-direct {v14, v5}, Lpn7;-><init>(Landroid/util/ArrayMap;)V
 
     .line 100
-    iget v8, v2, Landroid/graphics/RectF;->top:F
-
     .line 101
     .line 102
-    sub-float/2addr v3, v8
+    const/4 v12, -0x1
 
     .line 103
-    invoke-virtual {v7}, Landroid/util/Size;->getHeight()I
+    invoke-direct/range {v9 .. v14}, Lyk0;-><init>(Ljava/util/ArrayList;Lw25;ILjava/util/ArrayList;Lpn7;)V
 
     .line 104
     .line 105
     .line 106
-    move-result v8
+    move-object v5, v9
 
     .line 107
-    int-to-float v8, v8
-
-    .line 108
-    div-float/2addr v3, v8
-
-    .line 109
-    invoke-virtual {v2}, Landroid/graphics/RectF;->width()F
-
-    .line 110
-    .line 111
-    .line 112
-    move-result v8
-
-    .line 113
-    invoke-virtual {v7}, Landroid/util/Size;->getWidth()I
-
-    .line 114
-    .line 115
-    .line 116
-    move-result v9
-
-    .line 117
-    int-to-float v9, v9
-
-    .line 118
-    div-float/2addr v8, v9
-
-    .line 119
-    invoke-virtual {v2}, Landroid/graphics/RectF;->height()F
-
-    .line 120
-    .line 121
-    .line 122
-    move-result v2
-
-    .line 123
-    invoke-virtual {v7}, Landroid/util/Size;->getHeight()I
-
-    .line 124
-    .line 125
-    .line 126
-    move-result v7
-
-    .line 127
-    int-to-float v7, v7
-
-    .line 128
-    div-float/2addr v2, v7
-
-    .line 129
-    invoke-static {p0, v0, v1, v3, v5}, Landroid/opengl/Matrix;->translateM([FIFFF)V
-
-    .line 130
-    .line 131
-    .line 132
-    invoke-static {p0, v0, v8, v2, v6}, Landroid/opengl/Matrix;->scaleM([FIFFF)V
-
-    .line 133
-    .line 134
-    .line 135
-    iget-object p2, p2, Ldw;->c:Lyc0;
-
-    .line 136
-    .line 137
-    invoke-static {p1, v0}, Landroid/opengl/Matrix;->setIdentityM([FI)V
-
-    .line 138
-    .line 139
-    .line 140
-    invoke-static {p1}, Lwj0;->h0([F)V
-
-    .line 141
-    .line 142
-    .line 143
-    if-eqz p2, :cond_2
-
-    .line 144
-    .line 145
-    invoke-interface {p2}, Lyc0;->l()Z
-
-    .line 146
-    .line 147
-    .line 148
-    move-result v1
-
-    .line 149
-    const-string v2, "Camera has no transform."
-
-    .line 150
-    .line 151
-    invoke-static {v2, v1}, Lhp4;->u(Ljava/lang/String;Z)V
-
-    .line 152
-    .line 153
-    .line 154
-    invoke-interface {p2}, Lyc0;->a()Lwc0;
-
-    .line 155
-    .line 156
-    .line 157
-    move-result-object v1
-
-    .line 158
-    invoke-interface {v1}, Lwc0;->a()I
-
-    .line 159
-    .line 160
-    .line 161
-    move-result v1
-
-    .line 162
-    int-to-float v1, v1
-
-    .line 163
-    invoke-static {p1, v1}, Lwj0;->g0([FF)V
-
-    .line 164
-    .line 165
-    .line 166
-    invoke-interface {p2}, Lyc0;->c()Z
-
-    .line 167
-    .line 168
-    .line 169
-    move-result p2
-
-    .line 170
-    if-eqz p2, :cond_2
-
-    .line 171
-    .line 172
-    invoke-static {p1, v0, v6, v5, v5}, Landroid/opengl/Matrix;->translateM([FIFFF)V
-
-    .line 173
-    .line 174
-    .line 175
-    invoke-static {p1, v0, v4, v6, v6}, Landroid/opengl/Matrix;->scaleM([FIFFF)V
-
-    .line 176
-    .line 177
-    .line 178
-    :cond_2
-    invoke-static {p1, v0, p1, v0}, Landroid/opengl/Matrix;->invertM([FI[FI)Z
-
-    .line 179
-    .line 180
-    .line 181
-    const/4 v10, 0x0
-
-    .line 182
-    const/4 v12, 0x0
-
-    .line 183
     const/4 v8, 0x0
 
-    .line 184
-    move-object v11, p0
+    .line 108
+    const/4 v9, 0x0
 
-    .line 185
-    move-object v7, p0
+    .line 109
+    const/4 v6, 0x0
 
-    .line 186
-    move-object v9, p1
+    .line 110
+    const/4 v7, 0x0
 
-    .line 187
-    invoke-static/range {v7 .. v12}, Landroid/opengl/Matrix;->multiplyMM([FI[FI[FI)V
+    .line 111
+    invoke-direct/range {v0 .. v9}, Lft6;-><init>(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Lyk0;Ldt6;Landroid/hardware/camera2/params/InputConfiguration;ILzx;)V
 
-    .line 188
-    .line 189
-    .line 190
-    return-void
+    .line 112
+    .line 113
+    .line 114
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final close()V
-    .locals 2
+.method public final b()Ljava/util/List;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lft6;->Q:Ljava/lang/Object;
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    monitor-enter v0
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
-    :try_start_0
-    iget-boolean v1, p0, Lft6;->Y:Z
-
     .line 5
     .line 6
-    if-nez v1, :cond_0
+    iget-object p0, p0, Lft6;->a:Ljava/util/ArrayList;
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 9
-    iput-boolean v1, p0, Lft6;->Y:Z
-
     .line 10
     .line 11
-    goto :goto_0
+    move-result-object p0
 
     .line 12
-    :catchall_0
-    move-exception v1
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 13
-    goto :goto_1
-
     .line 14
-    :cond_0
-    :goto_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 15
-    iget-object v0, p0, Lft6;->a0:Lc90;
+    move-result v1
 
     .line 16
-    .line 17
-    const/4 v1, 0x0
+    if-eqz v1, :cond_1
 
+    .line 17
     .line 18
-    invoke-virtual {v0, v1}, Lc90;->b(Ljava/lang/Object;)Z
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 19
     .line 20
     .line 21
-    return-void
+    move-result-object v1
 
     .line 22
-    :goto_1
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 23
-    throw v1
-.end method
-
-.method public final h(Lde2;Lnu0;)Landroid/view/Surface;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lft6;->Q:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iput-object p1, p0, Lft6;->W:Ljava/util/concurrent/Executor;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Lft6;->V:Lnu0;
-
-    .line 7
-    .line 8
-    iget-boolean p1, p0, Lft6;->X:Z
-
-    .line 9
-    .line 10
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 11
-    if-eqz p1, :cond_0
-
-    .line 12
-    .line 13
-    invoke-virtual {p0}, Lft6;->i()V
-
-    .line 14
-    .line 15
-    .line 16
-    :cond_0
-    iget-object p1, p0, Lft6;->R:Landroid/view/Surface;
-
-    .line 17
-    .line 18
-    return-object p1
-
-    .line 19
-    :catchall_0
-    move-exception p1
-
-    .line 20
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 21
-    throw p1
-.end method
-
-.method public final i()V
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v1, p0, Lft6;->Q:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    monitor-enter v1
-
-    .line 9
-    :try_start_0
-    iget-object v2, p0, Lft6;->W:Ljava/util/concurrent/Executor;
-
-    .line 10
-    .line 11
-    if-eqz v2, :cond_1
-
-    .line 12
-    .line 13
-    iget-object v2, p0, Lft6;->V:Lnu0;
-
-    .line 14
-    .line 15
-    if-nez v2, :cond_0
-
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_0
-    iget-boolean v3, p0, Lft6;->Y:Z
-
-    .line 19
-    .line 20
-    if-nez v3, :cond_2
-
-    .line 21
-    .line 22
-    invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+    check-cast v1, Lzx;
 
     .line 23
     .line 24
+    iget-object v2, v1, Lzx;->a:Lvd1;
+
     .line 25
-    iget-object v2, p0, Lft6;->W:Ljava/util/concurrent/Executor;
-
     .line 26
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 27
-    const/4 v3, 0x0
-
     .line 28
-    iput-boolean v3, p0, Lft6;->X:Z
-
     .line 29
-    .line 30
-    goto :goto_1
+    iget-object v1, v1, Lzx;->b:Ljava/util/List;
 
+    .line 30
     .line 31
-    :catchall_0
-    move-exception v0
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     .line 32
-    goto :goto_2
-
     .line 33
-    :cond_1
-    :goto_0
-    const/4 v2, 0x1
-
     .line 34
-    iput-boolean v2, p0, Lft6;->X:Z
+    move-result-object v1
 
     .line 35
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
     .line 36
-    :cond_2
-    const/4 v2, 0x0
-
     .line 37
-    :goto_1
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 38
-    if-eqz v2, :cond_3
+    move-result v2
 
     .line 39
+    if-eqz v2, :cond_0
+
     .line 40
-    :try_start_1
-    new-instance v1, La44;
-
     .line 41
-    .line 42
-    const/16 v3, 0x9
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 42
     .line 43
     .line 44
-    invoke-direct {v1, v3, p0, v0}, La44;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    move-result-object v2
 
     .line 45
+    check-cast v2, Lvd1;
+
     .line 46
     .line 47
-    invoke-interface {v2, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-    :try_end_1
-    .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_1 .. :try_end_1} :catch_0
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 48
     .line 49
     .line 50
-    return-void
+    goto :goto_0
 
     .line 51
-    :catch_0
-    const-string v0, "SurfaceOutputImpl"
+    :cond_1
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 52
     .line 53
-    invoke-static {v0}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
-
     .line 54
+    move-result-object p0
+
     .line 55
-    .line 56
-    :cond_3
-    return-void
-
-    .line 57
-    :goto_2
-    :try_start_2
-    monitor-exit v1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 58
-    throw v0
+    return-object p0
 .end method

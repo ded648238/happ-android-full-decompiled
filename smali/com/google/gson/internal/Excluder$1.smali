@@ -1,6 +1,6 @@
 .class Lcom/google/gson/internal/Excluder$1;
 .super Lcom/google/gson/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -20,13 +20,13 @@
 
 .field public final synthetic d:Lcom/google/gson/a;
 
-.field public final synthetic e:Ldd7;
+.field public final synthetic e:Lm58;
 
 .field public final synthetic f:Lcom/google/gson/internal/Excluder;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/gson/internal/Excluder;ZZLcom/google/gson/a;Ldd7;)V
+.method public constructor <init>(Lcom/google/gson/internal/Excluder;ZZLcom/google/gson/a;Lm58;)V
     .locals 0
 
     .line 1
@@ -51,7 +51,7 @@
 
     .line 11
     .line 12
-    iput-object p5, p0, Lcom/google/gson/internal/Excluder$1;->e:Ldd7;
+    iput-object p5, p0, Lcom/google/gson/internal/Excluder$1;->e:Lm58;
 
     .line 13
     .line 14
@@ -60,7 +60,7 @@
 
 
 # virtual methods
-.method public final b(Lr23;)Ljava/lang/Object;
+.method public final b(Lxi3;)Ljava/lang/Object;
     .locals 3
 
     .line 1
@@ -72,15 +72,15 @@
 
     .line 4
     .line 5
-    invoke-virtual {p1}, Lr23;->r()V
+    invoke-virtual {p1}, Lxi3;->w()V
 
     .line 6
     .line 7
     .line 8
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 9
-    return-object p1
+    return-object p0
 
     .line 10
     :cond_0
@@ -100,11 +100,11 @@
 
     .line 17
     .line 18
-    iget-object v2, p0, Lcom/google/gson/internal/Excluder$1;->e:Ldd7;
+    iget-object v2, p0, Lcom/google/gson/internal/Excluder$1;->e:Lm58;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1, v2}, Lcom/google/gson/a;->f(Lwa7;Ldd7;)Lcom/google/gson/b;
+    invoke-virtual {v0, v1, v2}, Lcom/google/gson/a;->f(Lj38;Lm58;)Lcom/google/gson/b;
 
     .line 21
     .line 22
@@ -117,18 +117,18 @@
     .line 25
     .line 26
     :cond_1
-    invoke-virtual {v0, p1}, Lcom/google/gson/b;->b(Lr23;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lcom/google/gson/b;->b(Lxi3;)Ljava/lang/Object;
 
     .line 27
     .line 28
     .line 29
-    move-result-object p1
+    move-result-object p0
 
     .line 30
-    return-object p1
+    return-object p0
 .end method
 
-.method public final c(Lh43;Ljava/lang/Object;)V
+.method public final c(Lnk3;Ljava/lang/Object;)V
     .locals 3
 
     .line 1
@@ -140,7 +140,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p1}, Lh43;->v()Lh43;
+    invoke-virtual {p1}, Lnk3;->v()Lnk3;
 
     .line 6
     .line 7
@@ -165,11 +165,11 @@
 
     .line 16
     .line 17
-    iget-object v2, p0, Lcom/google/gson/internal/Excluder$1;->e:Ldd7;
+    iget-object v2, p0, Lcom/google/gson/internal/Excluder$1;->e:Lm58;
 
     .line 18
     .line 19
-    invoke-virtual {v0, v1, v2}, Lcom/google/gson/a;->f(Lwa7;Ldd7;)Lcom/google/gson/b;
+    invoke-virtual {v0, v1, v2}, Lcom/google/gson/a;->f(Lj38;Lm58;)Lcom/google/gson/b;
 
     .line 20
     .line 21
@@ -182,7 +182,7 @@
     .line 24
     .line 25
     :cond_1
-    invoke-virtual {v0, p1, p2}, Lcom/google/gson/b;->c(Lh43;Ljava/lang/Object;)V
+    invoke-virtual {v0, p1, p2}, Lcom/google/gson/b;->c(Lnk3;Ljava/lang/Object;)V
 
     .line 26
     .line 27

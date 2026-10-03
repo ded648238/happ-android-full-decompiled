@@ -1,27 +1,37 @@
-.class public final synthetic Ldb2;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg72;
+.class public final Ldb2;
+.super Ld31;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public synthetic c0:Ljava/lang/Object;
+
+.field public d0:I
+
+.field public final synthetic e0:Lya2;
+
+.field public f0:Lla2;
+
+.field public g0:Ljava/lang/Throwable;
+
+.field public h0:I
+
+.field public i0:I
+
+.field public j0:J
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public constructor <init>(Lya2;Lb31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Ldb2;->e0:Lya2;
 
     .line 2
     .line 3
-    .line 4
-    iput p1, p0, Ldb2;->Q:I
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
     return-void
@@ -29,31 +39,43 @@
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    iget v0, p0, Ldb2;->Q:I
+    iput-object p1, p0, Ldb2;->c0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    int-to-float v0, v0
+    iget p1, p0, Ldb2;->d0:I
 
     .line 4
-    const/high16 v1, 0x42c80000    # 100.0f
-
     .line 5
-    .line 6
-    div-float/2addr v0, v1
+    const/high16 v0, -0x80000000
 
+    .line 6
     .line 7
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    or-int/2addr p1, v0
 
     .line 8
+    iput p1, p0, Ldb2;->d0:I
+
     .line 9
     .line 10
-    move-result-object v0
+    iget-object p1, p0, Ldb2;->e0:Lya2;
 
     .line 11
-    return-object v0
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-virtual {p1, v0, p0}, Lya2;->a(Lla2;Lb31;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
 .end method

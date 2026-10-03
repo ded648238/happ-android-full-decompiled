@@ -1,6 +1,6 @@
 .class public abstract Lorg/conscrypt/OpenSslMlKemKeyFactory;
 .super Ljava/security/KeyFactorySpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -279,94 +279,6 @@
 .end method
 
 .method private makePrivateKeyFromSeed([BLorg/conscrypt/MlKemAlgorithm;)Lorg/conscrypt/OpenSslMlKemPrivateKey;
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/spec/InvalidKeySpecException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0, p2}, Lorg/conscrypt/OpenSslMlKemKeyFactory;->supportsAlgorithm(Lorg/conscrypt/MlKemAlgorithm;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const/4 v1, 0x0
-
-    .line 6
-    if-eqz v0, :cond_1
-
-    .line 7
-    .line 8
-    array-length v0, p1
-
-    .line 9
-    const/16 v2, 0x40
-
-    .line 10
-    .line 11
-    const-string v3, "Invalid raw private key"
-
-    .line 12
-    .line 13
-    if-ne v0, v2, :cond_0
-
-    .line 14
-    .line 15
-    :try_start_0
-    new-instance v0, Lorg/conscrypt/OpenSslMlKemPrivateKey;
-
-    .line 16
-    .line 17
-    invoke-direct {v0, p1, p2}, Lorg/conscrypt/OpenSslMlKemPrivateKey;-><init>([BLorg/conscrypt/MlKemAlgorithm;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 18
-    .line 19
-    .line 20
-    return-object v0
-
-    .line 21
-    :catch_0
-    move-exception p1
-
-    .line 22
-    new-instance p2, Ljava/security/spec/InvalidKeySpecException;
-
-    .line 23
-    .line 24
-    invoke-direct {p2, v3, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 25
-    .line 26
-    .line 27
-    throw p2
-
-    .line 28
-    :cond_0
-    invoke-static {v3}, Lxi4;->j(Ljava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-object v1
-
-    .line 32
-    :cond_1
-    invoke-static {p2}, Lxi4;->g(Ljava/lang/Object;)V
-
-    .line 33
-    .line 34
-    .line 35
-    return-object v1
-.end method
-
-.method private makePublicKeyFromRaw([BLorg/conscrypt/MlKemAlgorithm;)Lorg/conscrypt/OpenSslMlKemPublicKey;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -380,14 +292,102 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    if-eqz v0, :cond_1
+    const/4 v0, 0x0
+
+    .line 6
+    if-eqz p0, :cond_1
+
+    .line 7
+    .line 8
+    array-length p0, p1
+
+    .line 9
+    const/16 v1, 0x40
+
+    .line 10
+    .line 11
+    const-string v2, "Invalid raw private key"
+
+    .line 12
+    .line 13
+    if-ne p0, v1, :cond_0
+
+    .line 14
+    .line 15
+    :try_start_0
+    new-instance p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;
+
+    .line 16
+    .line 17
+    invoke-direct {p0, p1, p2}, Lorg/conscrypt/OpenSslMlKemPrivateKey;-><init>([BLorg/conscrypt/MlKemAlgorithm;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 18
+    .line 19
+    .line 20
+    return-object p0
+
+    .line 21
+    :catch_0
+    move-exception p0
+
+    .line 22
+    new-instance p1, Ljava/security/spec/InvalidKeySpecException;
+
+    .line 23
+    .line 24
+    invoke-direct {p1, v2, p0}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 25
+    .line 26
+    .line 27
+    throw p1
+
+    .line 28
+    :cond_0
+    invoke-static {v2}, Lq05;->l(Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-object v0
+
+    .line 32
+    :cond_1
+    invoke-static {p2}, Lq05;->i(Ljava/lang/Object;)V
+
+    .line 33
+    .line 34
+    .line 35
+    return-object v0
+.end method
+
+.method private makePublicKeyFromRaw([BLorg/conscrypt/MlKemAlgorithm;)Lorg/conscrypt/OpenSslMlKemPublicKey;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/spec/InvalidKeySpecException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p2}, Lorg/conscrypt/OpenSslMlKemKeyFactory;->supportsAlgorithm(Lorg/conscrypt/MlKemAlgorithm;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    if-eqz p0, :cond_1
 
     .line 6
     .line 7
-    array-length v0, p1
+    array-length p0, p1
 
     .line 8
     invoke-virtual {p2}, Lorg/conscrypt/MlKemAlgorithm;->publicKeySize()I
@@ -395,50 +395,50 @@
     .line 9
     .line 10
     .line 11
-    move-result v1
+    move-result v0
 
     .line 12
-    if-ne v0, v1, :cond_0
+    if-ne p0, v0, :cond_0
 
     .line 13
     .line 14
     :try_start_0
-    new-instance v0, Lorg/conscrypt/OpenSslMlKemPublicKey;
+    new-instance p0, Lorg/conscrypt/OpenSslMlKemPublicKey;
 
     .line 15
     .line 16
-    invoke-direct {v0, p1, p2}, Lorg/conscrypt/OpenSslMlKemPublicKey;-><init>([BLorg/conscrypt/MlKemAlgorithm;)V
+    invoke-direct {p0, p1, p2}, Lorg/conscrypt/OpenSslMlKemPublicKey;-><init>([BLorg/conscrypt/MlKemAlgorithm;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 17
     .line 18
     .line 19
-    return-object v0
+    return-object p0
 
     .line 20
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 21
-    new-instance p2, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p1, Ljava/security/spec/InvalidKeySpecException;
 
     .line 22
     .line 23
-    const-string v0, "Invalid raw public key"
+    const-string p2, "Invalid raw public key"
 
     .line 24
     .line 25
-    invoke-direct {p2, v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, p2, p0}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 26
     .line 27
     .line 28
-    throw p2
+    throw p1
 
     .line 29
     :cond_0
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 30
     .line 31
@@ -453,20 +453,20 @@
     move-result p2
 
     .line 36
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 37
     .line 38
-    const-string v2, "Invalid raw public key length: "
+    const-string v1, "Invalid raw public key length: "
 
     .line 39
     .line 40
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 41
     .line 42
     .line 43
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 44
     .line 45
@@ -475,17 +475,17 @@
 
     .line 47
     .line 48
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 49
     .line 50
     .line 51
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 52
     .line 53
     .line 54
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 55
     .line 56
@@ -493,24 +493,24 @@
     move-result-object p1
 
     .line 58
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 59
     .line 60
     .line 61
-    throw v0
+    throw p0
 
     .line 62
     :cond_1
-    invoke-static {p2}, Lxi4;->g(Ljava/lang/Object;)V
+    invoke-static {p2}, Lq05;->i(Ljava/lang/Object;)V
 
     .line 63
     .line 64
     .line 65
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 66
-    return-object p1
+    return-object p0
 .end method
 
 
@@ -555,7 +555,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 17
     .line 18
@@ -584,10 +584,10 @@
     .line 29
     .line 30
     .line 31
-    move-result-object p1
+    move-result-object p0
 
     .line 32
-    return-object p1
+    return-object p0
 
     .line 33
     :cond_0
@@ -662,10 +662,10 @@
     .line 66
     .line 67
     .line 68
-    move-result-object p1
+    move-result-object p0
 
     .line 69
-    return-object p1
+    return-object p0
 
     .line 70
     :cond_1
@@ -708,18 +708,18 @@
     .line 87
     .line 88
     .line 89
-    move-result-object p1
+    move-result-object p0
 
     .line 90
-    return-object p1
+    return-object p0
 
     .line 91
     :cond_2
-    const-string p1, "Only PKCS#8 format for ML-KEM-768 and ML-KEM-1024 is supported"
+    const-string p0, "Only PKCS#8 format for ML-KEM-768 and ML-KEM-1024 is supported"
 
     .line 92
     .line 93
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 94
     .line 95
@@ -728,11 +728,11 @@
 
     .line 97
     :cond_3
-    const-string p1, "Encoding must be in PKCS#8 format"
+    const-string p0, "Encoding must be in PKCS#8 format"
 
     .line 98
     .line 99
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 100
     .line 101
@@ -741,7 +741,7 @@
 
     .line 103
     :cond_4
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 104
     .line 105
@@ -761,11 +761,11 @@
     move-result-object p1
 
     .line 113
-    const-string v1, "Currently only EncodedKeySpec is supported; was "
+    const-string v0, "Currently only EncodedKeySpec is supported; was "
 
     .line 114
     .line 115
-    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 116
     .line 117
@@ -773,20 +773,20 @@
     move-result-object p1
 
     .line 119
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 120
     .line 121
     .line 122
-    throw v0
+    throw p0
 
     .line 123
     :cond_5
-    const-string p1, "keySpec == null"
+    const-string p0, "keySpec == null"
 
     .line 124
     .line 125
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 126
     .line 127
@@ -834,7 +834,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 17
     .line 18
@@ -863,10 +863,10 @@
     .line 29
     .line 30
     .line 31
-    move-result-object p1
+    move-result-object p0
 
     .line 32
-    return-object p1
+    return-object p0
 
     .line 33
     :cond_0
@@ -941,10 +941,10 @@
     .line 66
     .line 67
     .line 68
-    move-result-object p1
+    move-result-object p0
 
     .line 69
-    return-object p1
+    return-object p0
 
     .line 70
     :cond_1
@@ -987,18 +987,18 @@
     .line 87
     .line 88
     .line 89
-    move-result-object p1
+    move-result-object p0
 
     .line 90
-    return-object p1
+    return-object p0
 
     .line 91
     :cond_2
-    const-string p1, "Only X.509 format for ML-KEM-768 and ML-KEM-1024 is supported"
+    const-string p0, "Only X.509 format for ML-KEM-768 and ML-KEM-1024 is supported"
 
     .line 92
     .line 93
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 94
     .line 95
@@ -1007,11 +1007,11 @@
 
     .line 97
     :cond_3
-    const-string p1, "Encoding must be in X.509 format"
+    const-string p0, "Encoding must be in X.509 format"
 
     .line 98
     .line 99
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 100
     .line 101
@@ -1020,7 +1020,7 @@
 
     .line 103
     :cond_4
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 104
     .line 105
@@ -1040,11 +1040,11 @@
     move-result-object p1
 
     .line 113
-    const-string v1, "Currently only EncodedKeySpec is supported; was "
+    const-string v0, "Currently only EncodedKeySpec is supported; was "
 
     .line 114
     .line 115
-    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 116
     .line 117
@@ -1052,20 +1052,20 @@
     move-result-object p1
 
     .line 119
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 120
     .line 121
     .line 122
-    throw v0
+    throw p0
 
     .line 123
     :cond_5
-    const-string p1, "keySpec == null"
+    const-string p0, "keySpec == null"
 
     .line 124
     .line 125
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 126
     .line 127
@@ -1164,30 +1164,30 @@
     .line 34
     .line 35
     .line 36
-    move-result v4
+    move-result p0
 
     .line 37
-    if-eqz v4, :cond_1
+    if-eqz p0, :cond_1
 
     .line 38
     .line 39
-    const-class v0, Ljava/security/spec/X509EncodedKeySpec;
+    const-class p0, Ljava/security/spec/X509EncodedKeySpec;
 
     .line 40
     .line 41
-    invoke-virtual {v0, p2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+    invoke-virtual {p0, p2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
     .line 42
     .line 43
     .line 44
-    move-result v0
+    move-result p0
 
     .line 45
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 46
     .line 47
-    new-instance p2, Ljava/security/spec/X509EncodedKeySpec;
+    new-instance p0, Ljava/security/spec/X509EncodedKeySpec;
 
     .line 48
     .line 49
@@ -1199,12 +1199,12 @@
     move-result-object p1
 
     .line 53
-    invoke-direct {p2, p1}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
+    invoke-direct {p0, p1}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
 
     .line 54
     .line 55
     .line 56
-    return-object p2
+    return-object p0
 
     .line 57
     :cond_0
@@ -1213,10 +1213,10 @@
     .line 58
     .line 59
     .line 60
-    move-result v0
+    move-result p0
 
     .line 61
-    if-eqz v0, :cond_5
+    if-eqz p0, :cond_5
 
     .line 62
     .line 63
@@ -1225,22 +1225,22 @@
     .line 64
     .line 65
     .line 66
-    move-result-object p1
+    move-result-object p0
 
     .line 67
-    invoke-static {p1, p2}, Lorg/conscrypt/KeySpecUtil;->makeRawKeySpec([BLjava/lang/Class;)Ljava/security/spec/KeySpec;
+    invoke-static {p0, p2}, Lorg/conscrypt/KeySpecUtil;->makeRawKeySpec([BLjava/lang/Class;)Ljava/security/spec/KeySpec;
 
     .line 68
     .line 69
     .line 70
-    move-result-object p1
+    move-result-object p0
 
     .line 71
-    return-object p1
+    return-object p0
 
     .line 72
     :cond_1
-    invoke-static {v3}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {v3}, Lq05;->l(Ljava/lang/String;)V
 
     .line 73
     .line 74
@@ -1277,30 +1277,30 @@
     .line 88
     .line 89
     .line 90
-    move-result v4
+    move-result p0
 
     .line 91
-    if-eqz v4, :cond_4
+    if-eqz p0, :cond_4
 
     .line 92
     .line 93
-    const-class v0, Ljava/security/spec/PKCS8EncodedKeySpec;
+    const-class p0, Ljava/security/spec/PKCS8EncodedKeySpec;
 
     .line 94
     .line 95
-    invoke-virtual {v0, p2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+    invoke-virtual {p0, p2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
     .line 96
     .line 97
     .line 98
-    move-result v0
+    move-result p0
 
     .line 99
-    if-eqz v0, :cond_3
+    if-eqz p0, :cond_3
 
     .line 100
     .line 101
-    new-instance p2, Ljava/security/spec/PKCS8EncodedKeySpec;
+    new-instance p0, Ljava/security/spec/PKCS8EncodedKeySpec;
 
     .line 102
     .line 103
@@ -1312,12 +1312,12 @@
     move-result-object p1
 
     .line 107
-    invoke-direct {p2, p1}, Ljava/security/spec/PKCS8EncodedKeySpec;-><init>([B)V
+    invoke-direct {p0, p1}, Ljava/security/spec/PKCS8EncodedKeySpec;-><init>([B)V
 
     .line 108
     .line 109
     .line 110
-    return-object p2
+    return-object p0
 
     .line 111
     :cond_3
@@ -1326,10 +1326,10 @@
     .line 112
     .line 113
     .line 114
-    move-result v0
+    move-result p0
 
     .line 115
-    if-eqz v0, :cond_5
+    if-eqz p0, :cond_5
 
     .line 116
     .line 117
@@ -1338,22 +1338,22 @@
     .line 118
     .line 119
     .line 120
-    move-result-object p1
+    move-result-object p0
 
     .line 121
-    invoke-static {p1, p2}, Lorg/conscrypt/KeySpecUtil;->makeRawKeySpec([BLjava/lang/Class;)Ljava/security/spec/KeySpec;
+    invoke-static {p0, p2}, Lorg/conscrypt/KeySpecUtil;->makeRawKeySpec([BLjava/lang/Class;)Ljava/security/spec/KeySpec;
 
     .line 122
     .line 123
     .line 124
-    move-result-object p1
+    move-result-object p0
 
     .line 125
-    return-object p1
+    return-object p0
 
     .line 126
     :cond_4
-    invoke-static {v3}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {v3}, Lq05;->l(Ljava/lang/String;)V
 
     .line 127
     .line 128
@@ -1362,7 +1362,7 @@
 
     .line 130
     :cond_5
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p0, Ljava/security/spec/InvalidKeySpecException;
 
     .line 131
     .line 132
@@ -1390,20 +1390,20 @@
     move-result-object p2
 
     .line 144
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 145
     .line 146
-    const-string v2, "Unsupported key type and key spec combination; key="
+    const-string v1, "Unsupported key type and key spec combination; key="
 
     .line 147
     .line 148
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 149
     .line 150
     .line 151
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 152
     .line 153
@@ -1412,17 +1412,17 @@
 
     .line 155
     .line 156
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 157
     .line 158
     .line 159
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 160
     .line 161
     .line 162
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 163
     .line 164
@@ -1430,20 +1430,20 @@
     move-result-object p1
 
     .line 166
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/String;)V
 
     .line 167
     .line 168
     .line 169
-    throw v0
+    throw p0
 
     .line 170
     :cond_6
-    const-string p1, "Key must be an ML-KEM key"
+    const-string p0, "Key must be an ML-KEM key"
 
     .line 171
     .line 172
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 173
     .line 174
@@ -1452,11 +1452,11 @@
 
     .line 176
     :cond_7
-    const-string p1, "keySpec == null"
+    const-string p0, "keySpec == null"
 
     .line 177
     .line 178
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 179
     .line 180
@@ -1465,11 +1465,11 @@
 
     .line 182
     :cond_8
-    const-string p1, "key == null"
+    const-string p0, "key == null"
 
     .line 183
     .line 184
-    invoke-static {p1}, Lxi4;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lq05;->l(Ljava/lang/String;)V
 
     .line 185
     .line 186
@@ -1518,10 +1518,10 @@
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 19
     .line 20
@@ -1529,7 +1529,7 @@
 
     .line 21
     :cond_0
-    invoke-static {v2}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {v2}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 22
     .line 23
@@ -1566,10 +1566,10 @@
     .line 37
     .line 38
     .line 39
-    move-result v0
+    move-result p0
 
     .line 40
-    if-eqz v0, :cond_2
+    if-eqz p0, :cond_2
 
     .line 41
     .line 42
@@ -1577,7 +1577,7 @@
 
     .line 43
     :cond_2
-    invoke-static {v2}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {v2}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 44
     .line 45
@@ -1641,19 +1641,19 @@
     .line 73
     .line 74
     .line 75
-    move-result-object p1
+    move-result-object p0
     :try_end_0
     .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 76
-    return-object p1
+    return-object p0
 
     .line 77
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 78
-    invoke-static {p1}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 79
     .line 80
@@ -1717,19 +1717,19 @@
     .line 108
     .line 109
     .line 110
-    move-result-object p1
+    move-result-object p0
     :try_end_1
     .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 111
-    return-object p1
+    return-object p0
 
     .line 112
     :catch_1
-    move-exception p1
+    move-exception p0
 
     .line 113
-    invoke-static {p1}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 114
     .line 115
@@ -1738,11 +1738,11 @@
 
     .line 117
     :cond_5
-    const-string p1, "Unable to translate key into ML-KEM key"
+    const-string p0, "Unable to translate key into ML-KEM key"
 
     .line 118
     .line 119
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 120
     .line 121

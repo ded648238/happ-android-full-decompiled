@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Http2Stream;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -38,21 +38,21 @@
         "Lokhttp3/internal/http2/Header;",
         "responseHeaders",
         "flushHeaders",
-        "Lbh7;",
+        "Lr98;",
         "writeHeaders",
         "(Ljava/util/List;ZZ)V",
         "enqueueTrailers",
         "(Lokhttp3/Headers;)V",
-        "Lo47;",
+        "Lax7;",
         "readTimeout",
-        "()Lo47;",
+        "()Lax7;",
         "writeTimeout",
-        "Lle6;",
+        "Ld27;",
         "getSource",
-        "()Lle6;",
-        "Lpb6;",
+        "()Ld27;",
+        "Lqy6;",
         "getSink",
-        "()Lpb6;",
+        "()Lqy6;",
         "Lokhttp3/internal/http2/ErrorCode;",
         "rstStatusCode",
         "Ljava/io/IOException;",
@@ -62,11 +62,11 @@
         "errorCode",
         "closeLater",
         "(Lokhttp3/internal/http2/ErrorCode;)V",
-        "Ls50;",
+        "Lf80;",
         "source",
         "length",
         "receiveData",
-        "(Ls50;I)V",
+        "(Lf80;I)V",
         "receiveHeaders",
         "(Lokhttp3/Headers;Z)V",
         "receiveRstStream",
@@ -207,7 +207,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/http2/Http2Stream$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/http2/Http2Stream$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -360,10 +360,10 @@
     .line 70
     .line 71
     .line 72
-    move-result p3
+    move-result p0
 
     .line 73
-    if-nez p3, :cond_0
+    if-nez p0, :cond_0
 
     .line 74
     .line 75
@@ -376,11 +376,11 @@
 
     .line 79
     :cond_0
-    const-string p1, "locally-initiated streams shouldn\'t have headers yet"
+    const-string p0, "locally-initiated streams shouldn\'t have headers yet"
 
     .line 80
     .line 81
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 82
     .line 83
@@ -394,10 +394,10 @@
     .line 86
     .line 87
     .line 88
-    move-result p1
+    move-result p0
 
     .line 89
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 90
     .line 91
@@ -405,11 +405,11 @@
 
     .line 92
     :cond_2
-    const-string p1, "remotely-initiated streams should have headers"
+    const-string p0, "remotely-initiated streams should have headers"
 
     .line 93
     .line 94
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 95
     .line 96
@@ -465,15 +465,15 @@
 
     .line 21
     .line 22
-    invoke-static {p1, p2, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, p2, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 23
     .line 24
     .line 25
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 26
-    return p1
+    return p0
 
     .line 27
     :cond_1
@@ -571,19 +571,19 @@
 
     .line 64
     .line 65
-    iget p2, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
 
     .line 66
     .line 67
-    invoke-virtual {p1, p2}, Lokhttp3/internal/http2/Http2Connection;->removeStream$okhttp(I)Lokhttp3/internal/http2/Http2Stream;
+    invoke-virtual {p1, p0}, Lokhttp3/internal/http2/Http2Connection;->removeStream$okhttp(I)Lokhttp3/internal/http2/Http2Stream;
 
     .line 68
     .line 69
     .line 70
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 71
-    return p1
+    return p0
 
     .line 72
     :goto_1
@@ -596,7 +596,7 @@
 
 # virtual methods
 .method public final addBytesToWriteWindow(J)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-wide v0, p0, Lokhttp3/internal/http2/Http2Stream;->writeBytesMaximum:J
@@ -614,11 +614,11 @@
 
     .line 7
     .line 8
-    cmp-long v2, p1, v0
+    cmp-long p1, p1, v0
 
     .line 9
     .line 10
-    if-lez v2, :cond_0
+    if-lez p1, :cond_0
 
     .line 11
     .line 12
@@ -684,7 +684,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 23
     .line 24
@@ -826,11 +826,11 @@
 
     .line 82
     .line 83
-    iget v1, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
 
     .line 84
     .line 85
-    invoke-virtual {v0, v1}, Lokhttp3/internal/http2/Http2Connection;->removeStream$okhttp(I)Lokhttp3/internal/http2/Http2Stream;
+    invoke-virtual {v0, p0}, Lokhttp3/internal/http2/Http2Connection;->removeStream$okhttp(I)Lokhttp3/internal/http2/Http2Stream;
 
     .line 86
     .line 87
@@ -847,7 +847,7 @@
 .end method
 
 .method public final checkOutNotClosed$okhttp()V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -895,11 +895,11 @@
 
     .line 20
     .line 21
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Stream;->errorException:Ljava/io/IOException;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->errorException:Ljava/io/IOException;
 
     .line 22
     .line 23
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 24
     .line 25
@@ -907,7 +907,7 @@
 
     .line 26
     :cond_0
-    new-instance v1, Lokhttp3/internal/http2/StreamResetException;
+    new-instance p0, Lokhttp3/internal/http2/StreamResetException;
 
     .line 27
     .line 28
@@ -916,13 +916,13 @@
     .line 29
     .line 30
     .line 31
-    invoke-direct {v1, v0}, Lokhttp3/internal/http2/StreamResetException;-><init>(Lokhttp3/internal/http2/ErrorCode;)V
+    invoke-direct {p0, v0}, Lokhttp3/internal/http2/StreamResetException;-><init>(Lokhttp3/internal/http2/ErrorCode;)V
 
     .line 32
     .line 33
     .line 34
     :goto_0
-    throw v1
+    throw p0
 
     .line 35
     :cond_1
@@ -930,11 +930,11 @@
 
     .line 36
     :cond_2
-    const-string v0, "stream finished"
+    const-string p0, "stream finished"
 
     .line 37
     .line 38
-    invoke-static {v0}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 39
     .line 40
@@ -943,11 +943,11 @@
 
     .line 42
     :cond_3
-    const-string v0, "stream closed"
+    const-string p0, "stream closed"
 
     .line 43
     .line 44
-    invoke-static {v0}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 45
     .line 46
@@ -956,7 +956,7 @@
 .end method
 
 .method public final close(Lokhttp3/internal/http2/ErrorCode;Ljava/io/IOException;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -989,11 +989,11 @@
 
     .line 12
     .line 13
-    iget v0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
 
     .line 14
     .line 15
-    invoke-virtual {p2, v0, p1}, Lokhttp3/internal/http2/Http2Connection;->writeSynReset$okhttp(ILokhttp3/internal/http2/ErrorCode;)V
+    invoke-virtual {p2, p0, p1}, Lokhttp3/internal/http2/Http2Connection;->writeSynReset$okhttp(ILokhttp3/internal/http2/ErrorCode;)V
 
     .line 16
     .line 17
@@ -1002,7 +1002,7 @@
 .end method
 
 .method public final closeLater(Lokhttp3/internal/http2/ErrorCode;)V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1033,11 +1033,11 @@
 
     .line 13
     .line 14
-    iget v1, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
 
     .line 15
     .line 16
-    invoke-virtual {v0, v1, p1}, Lokhttp3/internal/http2/Http2Connection;->writeSynResetLater$okhttp(ILokhttp3/internal/http2/ErrorCode;)V
+    invoke-virtual {v0, p0, p1}, Lokhttp3/internal/http2/Http2Connection;->writeSynResetLater$okhttp(ILokhttp3/internal/http2/ErrorCode;)V
 
     .line 17
     .line 18
@@ -1155,14 +1155,14 @@
 .end method
 
 .method public final getConnection()Lokhttp3/internal/http2/Http2Connection;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final declared-synchronized getErrorCode$okhttp()Lokhttp3/internal/http2/ErrorCode;
@@ -1199,25 +1199,25 @@
 .end method
 
 .method public final getErrorException$okhttp()Ljava/io/IOException;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->errorException:Ljava/io/IOException;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->errorException:Ljava/io/IOException;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getId()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getReadBytesAcknowledged()J
@@ -1243,17 +1243,17 @@
 .end method
 
 .method public final getReadTimeout$okhttp()Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->readTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->readTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final getSink()Lpb6;
+.method public final getSink()Lqy6;
     .locals 2
 
     .line 1
@@ -1315,11 +1315,11 @@
     monitor-exit p0
 
     .line 24
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->sink:Lokhttp3/internal/http2/Http2Stream$FramingSink;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->sink:Lokhttp3/internal/http2/Http2Stream$FramingSink;
 
     .line 25
     .line 26
-    return-object v0
+    return-object p0
 
     .line 27
     :goto_1
@@ -1330,36 +1330,36 @@
 .end method
 
 .method public final getSink$okhttp()Lokhttp3/internal/http2/Http2Stream$FramingSink;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->sink:Lokhttp3/internal/http2/Http2Stream$FramingSink;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->sink:Lokhttp3/internal/http2/Http2Stream$FramingSink;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final getSource()Lle6;
-    .locals 1
+.method public final getSource()Ld27;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->source:Lokhttp3/internal/http2/Http2Stream$FramingSource;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->source:Lokhttp3/internal/http2/Http2Stream$FramingSource;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getSource$okhttp()Lokhttp3/internal/http2/Http2Stream$FramingSource;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->source:Lokhttp3/internal/http2/Http2Stream$FramingSource;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->source:Lokhttp3/internal/http2/Http2Stream$FramingSource;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getWriteBytesMaximum()J
@@ -1385,18 +1385,18 @@
 .end method
 
 .method public final getWriteTimeout$okhttp()Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->writeTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->writeTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final isLocallyInitiated()Z
-    .locals 4
+    .locals 3
 
     .line 1
     iget v0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
@@ -1416,30 +1416,30 @@
 
     .line 7
     .line 8
-    const/4 v0, 0x1
+    move v0, v1
 
     .line 9
     goto :goto_0
 
     .line 10
     :cond_0
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 11
     :goto_0
-    iget-object v3, p0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
 
     .line 12
     .line 13
-    invoke-virtual {v3}, Lokhttp3/internal/http2/Http2Connection;->getClient$okhttp()Z
+    invoke-virtual {p0}, Lokhttp3/internal/http2/Http2Connection;->getClient$okhttp()Z
 
     .line 14
     .line 15
     .line 16
-    move-result v3
+    move-result p0
 
     .line 17
-    if-ne v3, v0, :cond_1
+    if-ne p0, v0, :cond_1
 
     .line 18
     .line 19
@@ -1576,10 +1576,10 @@
     monitor-exit p0
 
     .line 51
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 52
-    return v0
+    return p0
 
     .line 53
     :goto_1
@@ -1592,19 +1592,19 @@
     throw v0
 .end method
 
-.method public final readTimeout()Lo47;
-    .locals 1
+.method public final readTimeout()Lax7;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->readTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->readTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final receiveData(Ls50;I)V
-    .locals 3
+.method public final receiveData(Lf80;I)V
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1661,7 +1661,7 @@
 
     .line 24
     .line 25
-    invoke-static {p1, p2, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, p2, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -1671,14 +1671,14 @@
     .line 29
     :cond_1
     :goto_0
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->source:Lokhttp3/internal/http2/Http2Stream$FramingSource;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->source:Lokhttp3/internal/http2/Http2Stream$FramingSource;
 
     .line 30
     .line 31
-    int-to-long v1, p2
+    int-to-long v0, p2
 
     .line 32
-    invoke-virtual {v0, p1, v1, v2}, Lokhttp3/internal/http2/Http2Stream$FramingSource;->receive$okhttp(Ls50;J)V
+    invoke-virtual {p0, p1, v0, v1}, Lokhttp3/internal/http2/Http2Stream$FramingSource;->receive$okhttp(Lf80;J)V
 
     .line 33
     .line 34
@@ -1739,7 +1739,7 @@
 
     .line 24
     .line 25
-    invoke-static {p1, p2, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, p2, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -1847,11 +1847,11 @@
 
     .line 71
     .line 72
-    iget p2, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Stream;->id:I
 
     .line 73
     .line 74
-    invoke-virtual {p1, p2}, Lokhttp3/internal/http2/Http2Connection;->removeStream$okhttp(I)Lokhttp3/internal/http2/Http2Stream;
+    invoke-virtual {p1, p0}, Lokhttp3/internal/http2/Http2Connection;->removeStream$okhttp(I)Lokhttp3/internal/http2/Http2Stream;
 
     .line 75
     .line 76
@@ -2010,7 +2010,7 @@
 
     .line 3
     .line 4
-    invoke-virtual {v0}, Lms;->enter()V
+    invoke-virtual {v0}, Liu;->enter()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -2214,7 +2214,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Stream$FramingSource;->getReceiveBuffer()Lf50;
+    invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Stream$FramingSource;->getReceiveBuffer()Ll70;
 
     .line 13
     .line 14
@@ -2222,7 +2222,7 @@
     move-result-object v0
 
     .line 16
-    invoke-virtual {v0}, Lf50;->z()Z
+    invoke-virtual {v0}, Ll70;->G()Z
 
     .line 17
     .line 18
@@ -2238,7 +2238,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Stream$FramingSource;->getReadBuffer()Lf50;
+    invoke-virtual {v0}, Lokhttp3/internal/http2/Http2Stream$FramingSource;->getReadBuffer()Ll70;
 
     .line 25
     .line 26
@@ -2246,7 +2246,7 @@
     move-result-object v0
 
     .line 28
-    invoke-virtual {v0}, Lf50;->z()Z
+    invoke-virtual {v0}, Ll70;->G()Z
 
     .line 29
     .line 30
@@ -2365,7 +2365,7 @@
 .end method
 
 .method public final waitForIo$okhttp()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/InterruptedIOException;
@@ -2390,28 +2390,28 @@
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
+    invoke-virtual {p0}, Ljava/lang/Thread;->interrupt()V
 
     .line 10
     .line 11
     .line 12
-    new-instance v0, Ljava/io/InterruptedIOException;
+    new-instance p0, Ljava/io/InterruptedIOException;
 
     .line 13
     .line 14
-    invoke-direct {v0}, Ljava/io/InterruptedIOException;-><init>()V
+    invoke-direct {p0}, Ljava/io/InterruptedIOException;-><init>()V
 
     .line 15
     .line 16
     .line 17
-    throw v0
+    throw p0
 .end method
 
 .method public final writeHeaders(Ljava/util/List;ZZ)V
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2477,7 +2477,7 @@
 
     .line 24
     .line 25
-    invoke-static {p1, p2, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, p2, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -2566,11 +2566,11 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 61
-    cmp-long v5, v1, v3
+    cmp-long v1, v1, v3
 
     .line 62
     .line 63
-    if-ltz v5, :cond_3
+    if-ltz v1, :cond_3
 
     .line 64
     .line 65
@@ -2592,13 +2592,13 @@
 
     .line 70
     :catchall_1
-    move-exception p1
+    move-exception p0
 
     .line 71
     monitor-exit p3
 
     .line 72
-    throw p1
+    throw p0
 
     .line 73
     :cond_4
@@ -2620,11 +2620,11 @@
 
     .line 81
     .line 82
-    iget-object p1, p0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->connection:Lokhttp3/internal/http2/Http2Connection;
 
     .line 83
     .line 84
-    invoke-virtual {p1}, Lokhttp3/internal/http2/Http2Connection;->flush()V
+    invoke-virtual {p0}, Lokhttp3/internal/http2/Http2Connection;->flush()V
 
     .line 85
     .line 86
@@ -2640,13 +2640,13 @@
     throw p1
 .end method
 
-.method public final writeTimeout()Lo47;
-    .locals 1
+.method public final writeTimeout()Lax7;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream;->writeTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream;->writeTimeout:Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/Spake2PlusKeyManager;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljavax/net/ssl/KeyManager;
@@ -93,104 +93,104 @@
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    const-string p2, "Not implemented"
+    const-string p1, "Not implemented"
 
     .line 4
     .line 5
-    invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method public chooseEngineClientAlias([Ljava/lang/String;[Ljava/security/Principal;Ljavax/net/ssl/SSLEngine;)Ljava/lang/String;
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    const-string p2, "Not implemented"
+    const-string p1, "Not implemented"
 
     .line 4
     .line 5
-    invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method public getContext()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->context:[B
+    iget-object p0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->context:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getHandshakeLimit()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->handshakeLimit:I
+    iget p0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->handshakeLimit:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getIdProver()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->idProver:[B
+    iget-object p0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->idProver:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getIdVerifier()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->idVerifier:[B
+    iget-object p0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->idVerifier:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPassword()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->password:[B
+    iget-object p0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->password:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public isClient()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->isClient:Z
+    iget-boolean p0, p0, Lorg/conscrypt/Spake2PlusKeyManager;->isClient:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

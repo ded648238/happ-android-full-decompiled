@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/ApplicationProtocolSelectorAdapter;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -114,7 +114,7 @@
 
 # virtual methods
 .method public selectApplicationProtocol([B)I
-    .locals 5
+    .locals 4
 
     .line 1
     const/4 v0, -0x1
@@ -168,39 +168,39 @@
     .line 23
     .line 24
     .line 25
-    move-result-object v1
+    move-result-object p0
 
     .line 26
     goto :goto_0
 
     .line 27
     :cond_1
-    iget-object v1, p0, Lorg/conscrypt/ApplicationProtocolSelectorAdapter;->socket:Ljavax/net/ssl/SSLSocket;
+    iget-object p0, p0, Lorg/conscrypt/ApplicationProtocolSelectorAdapter;->socket:Ljavax/net/ssl/SSLSocket;
 
     .line 28
     .line 29
-    invoke-virtual {v2, v1, p1}, Lorg/conscrypt/ApplicationProtocolSelector;->selectApplicationProtocol(Ljavax/net/ssl/SSLSocket;Ljava/util/List;)Ljava/lang/String;
+    invoke-virtual {v2, p0, p1}, Lorg/conscrypt/ApplicationProtocolSelector;->selectApplicationProtocol(Ljavax/net/ssl/SSLSocket;Ljava/util/List;)Ljava/lang/String;
 
     .line 30
     .line 31
     .line 32
-    move-result-object v1
+    move-result-object p0
 
     .line 33
     :goto_0
-    if-eqz v1, :cond_4
+    if-eqz p0, :cond_4
 
     .line 34
     .line 35
-    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+    invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
 
     .line 36
     .line 37
     .line 38
-    move-result v2
+    move-result v1
 
     .line 39
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
     .line 40
     .line 41
@@ -216,7 +216,7 @@
     move-result-object p1
 
     .line 46
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 47
     :goto_1
@@ -225,10 +225,10 @@
     .line 48
     .line 49
     .line 50
-    move-result v3
+    move-result v2
 
     .line 51
-    if-eqz v3, :cond_4
+    if-eqz v2, :cond_4
 
     .line 52
     .line 53
@@ -237,42 +237,42 @@
     .line 54
     .line 55
     .line 56
-    move-result-object v3
+    move-result-object v2
 
     .line 57
-    check-cast v3, Ljava/lang/String;
+    check-cast v2, Ljava/lang/String;
 
     .line 58
     .line 59
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 60
     .line 61
     .line 62
-    move-result v4
+    move-result v3
 
     .line 63
-    if-eqz v4, :cond_3
+    if-eqz v3, :cond_3
 
     .line 64
     .line 65
-    return v2
+    return v1
 
     .line 66
     :cond_3
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     .line 67
     .line 68
     .line 69
-    move-result v3
+    move-result v2
 
     .line 70
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     .line 71
     .line 72
-    add-int/2addr v2, v3
+    add-int/2addr v1, v2
 
     .line 73
     goto :goto_1

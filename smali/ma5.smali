@@ -1,256 +1,254 @@
-.class public abstract Lma5;
+.class public final Lma5;
 .super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static TextAppearance_Leanback:I = 0x7f150245
+# instance fields
+.field public final a:Ljava/lang/String;
 
-.field public static TextAppearance_LeanbackBase:I = 0x7f15025c
+.field public final b:Z
 
-.field public static TextAppearance_Leanback_DetailsActionButton:I = 0x7f150246
+.field public final c:Z
 
-.field public static TextAppearance_Leanback_DetailsDescriptionBody:I = 0x7f150247
 
-.field public static TextAppearance_Leanback_DetailsDescriptionSubtitle:I = 0x7f150248
+# direct methods
+.method public constructor <init>(Ljava/lang/String;ZZ)V
+    .locals 0
 
-.field public static TextAppearance_Leanback_DetailsDescriptionTitle:I = 0x7f150249
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public static TextAppearance_Leanback_ErrorMessage:I = 0x7f15024a
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lma5;->a:Ljava/lang/String;
 
-.field public static TextAppearance_Leanback_Header:I = 0x7f15024b
+    .line 5
+    .line 6
+    iput-boolean p2, p0, Lma5;->b:Z
 
-.field public static TextAppearance_Leanback_Header_Section:I = 0x7f15024c
+    .line 7
+    .line 8
+    iput-boolean p3, p0, Lma5;->c:Z
 
-.field public static TextAppearance_Leanback_ImageCardView:I = 0x7f15024d
+    .line 9
+    .line 10
+    return-void
+.end method
 
-.field public static TextAppearance_Leanback_ImageCardView_Content:I = 0x7f15024e
 
-.field public static TextAppearance_Leanback_ImageCardView_Title:I = 0x7f15024f
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
-.field public static TextAppearance_Leanback_PlaybackControlLabel:I = 0x7f150250
+    .line 1
+    if-ne p0, p1, :cond_0
 
-.field public static TextAppearance_Leanback_PlaybackControlsTime:I = 0x7f150251
+    .line 2
+    .line 3
+    const/4 p0, 0x1
 
-.field public static TextAppearance_Leanback_PlaybackMediaItemDuration:I = 0x7f150252
+    .line 4
+    return p0
 
-.field public static TextAppearance_Leanback_PlaybackMediaItemName:I = 0x7f150253
+    .line 5
+    :cond_0
+    const/4 v0, 0x0
 
-.field public static TextAppearance_Leanback_PlaybackMediaItemNumber:I = 0x7f150254
+    .line 6
+    if-eqz p1, :cond_4
 
-.field public static TextAppearance_Leanback_PlaybackMediaListHeaderTitle:I = 0x7f150255
+    .line 7
+    .line 8
+    const-class v1, Lma5;
 
-.field public static TextAppearance_Leanback_Row_Header:I = 0x7f150256
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-.field public static TextAppearance_Leanback_Row_Header_Description:I = 0x7f150257
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v2
 
-.field public static TextAppearance_Leanback_Row_HoverCardDescription:I = 0x7f150258
+    .line 14
+    if-eq v1, v2, :cond_1
 
-.field public static TextAppearance_Leanback_Row_HoverCardTitle:I = 0x7f150259
+    .line 15
+    .line 16
+    goto :goto_0
 
-.field public static TextAppearance_Leanback_SearchTextEdit:I = 0x7f15025a
+    .line 17
+    :cond_1
+    check-cast p1, Lma5;
 
-.field public static TextAppearance_Leanback_Title:I = 0x7f15025b
+    .line 18
+    .line 19
+    iget-boolean v1, p0, Lma5;->b:Z
 
-.field public static Theme_AppCompat_Leanback:I = 0x7f1502c1
+    .line 20
+    .line 21
+    iget-boolean v2, p1, Lma5;->b:Z
 
-.field public static Theme_AppCompat_LeanbackBase:I = 0x7f1502cb
+    .line 22
+    .line 23
+    if-eq v1, v2, :cond_2
 
-.field public static Theme_AppCompat_Leanback_Browse:I = 0x7f1502c2
+    .line 24
+    .line 25
+    return v0
 
-.field public static Theme_AppCompat_Leanback_Details:I = 0x7f1502c3
+    .line 26
+    :cond_2
+    iget-boolean v1, p0, Lma5;->c:Z
 
-.field public static Theme_AppCompat_Leanback_Details_NoSharedElementTransition:I = 0x7f1502c4
+    .line 27
+    .line 28
+    iget-boolean v2, p1, Lma5;->c:Z
 
-.field public static Theme_AppCompat_Leanback_GuidedStep:I = 0x7f1502c5
+    .line 29
+    .line 30
+    if-eq v1, v2, :cond_3
 
-.field public static Theme_AppCompat_Leanback_GuidedStepBase:I = 0x7f1502c8
+    .line 31
+    .line 32
+    return v0
 
-.field public static Theme_AppCompat_Leanback_GuidedStep_Half:I = 0x7f1502c6
-
-.field public static Theme_AppCompat_Leanback_GuidedStep_HalfBase:I = 0x7f1502c7
-
-.field public static Theme_AppCompat_Leanback_Onboarding:I = 0x7f1502c9
-
-.field public static Theme_AppCompat_Leanback_VerticalGrid:I = 0x7f1502ca
-
-.field public static Theme_Leanback:I = 0x7f1502da
-
-.field public static Theme_LeanbackBase:I = 0x7f1502e4
-
-.field public static Theme_Leanback_Browse:I = 0x7f1502db
-
-.field public static Theme_Leanback_Details:I = 0x7f1502dc
-
-.field public static Theme_Leanback_Details_NoSharedElementTransition:I = 0x7f1502dd
-
-.field public static Theme_Leanback_GuidedStep:I = 0x7f1502de
-
-.field public static Theme_Leanback_GuidedStepBase:I = 0x7f1502e1
-
-.field public static Theme_Leanback_GuidedStep_Half:I = 0x7f1502df
-
-.field public static Theme_Leanback_GuidedStep_HalfBase:I = 0x7f1502e0
-
-.field public static Theme_Leanback_Onboarding:I = 0x7f1502e2
-
-.field public static Theme_Leanback_VerticalGrid:I = 0x7f1502e3
-
-.field public static Widget_Leanback:I = 0x7f150404
-
-.field public static Widget_LeanbackBase:I = 0x7f150453
-
-.field public static Widget_Leanback_BaseCardViewStyle:I = 0x7f150405
-
-.field public static Widget_Leanback_DetailsActionButtonStyle:I = 0x7f150406
-
-.field public static Widget_Leanback_DetailsActionButtonStyleBase:I = 0x7f150407
-
-.field public static Widget_Leanback_DetailsDescriptionBodyStyle:I = 0x7f150408
-
-.field public static Widget_Leanback_DetailsDescriptionSubtitleStyle:I = 0x7f150409
-
-.field public static Widget_Leanback_DetailsDescriptionTitleStyle:I = 0x7f15040a
-
-.field public static Widget_Leanback_ErrorMessageStyle:I = 0x7f15040b
-
-.field public static Widget_Leanback_GridItems:I = 0x7f15040c
-
-.field public static Widget_Leanback_GridItems_VerticalGridView:I = 0x7f15040d
-
-.field public static Widget_Leanback_GuidanceBreadcrumbStyle:I = 0x7f15040e
-
-.field public static Widget_Leanback_GuidanceContainerStyle:I = 0x7f15040f
-
-.field public static Widget_Leanback_GuidanceDescriptionStyle:I = 0x7f150410
-
-.field public static Widget_Leanback_GuidanceIconStyle:I = 0x7f150411
-
-.field public static Widget_Leanback_GuidanceTitleStyle:I = 0x7f150412
-
-.field public static Widget_Leanback_GuidedActionItemCheckmarkStyle:I = 0x7f150413
-
-.field public static Widget_Leanback_GuidedActionItemChevronStyle:I = 0x7f150414
-
-.field public static Widget_Leanback_GuidedActionItemContainerStyle:I = 0x7f150415
-
-.field public static Widget_Leanback_GuidedActionItemContentStyle:I = 0x7f150416
-
-.field public static Widget_Leanback_GuidedActionItemDescriptionStyle:I = 0x7f150417
-
-.field public static Widget_Leanback_GuidedActionItemIconStyle:I = 0x7f150418
-
-.field public static Widget_Leanback_GuidedActionItemTitleStyle:I = 0x7f150419
-
-.field public static Widget_Leanback_GuidedActionsContainerStyle:I = 0x7f15041a
-
-.field public static Widget_Leanback_GuidedActionsListStyle:I = 0x7f15041b
-
-.field public static Widget_Leanback_GuidedActionsSelectorStyle:I = 0x7f15041c
-
-.field public static Widget_Leanback_GuidedButtonActionsListStyle:I = 0x7f15041d
-
-.field public static Widget_Leanback_GuidedSubActionsListStyle:I = 0x7f15041e
-
-.field public static Widget_Leanback_Header:I = 0x7f15041f
-
-.field public static Widget_Leanback_Header_Section:I = 0x7f150420
-
-.field public static Widget_Leanback_Headers:I = 0x7f150421
-
-.field public static Widget_Leanback_Headers_VerticalGridView:I = 0x7f150422
-
-.field public static Widget_Leanback_ImageCardView:I = 0x7f150423
-
-.field public static Widget_Leanback_ImageCardViewStyle:I = 0x7f150429
-
-.field public static Widget_Leanback_ImageCardView_BadgeStyle:I = 0x7f150424
-
-.field public static Widget_Leanback_ImageCardView_ContentStyle:I = 0x7f150425
-
-.field public static Widget_Leanback_ImageCardView_ImageStyle:I = 0x7f150426
-
-.field public static Widget_Leanback_ImageCardView_InfoAreaStyle:I = 0x7f150427
-
-.field public static Widget_Leanback_ImageCardView_TitleStyle:I = 0x7f150428
-
-.field public static Widget_Leanback_OnboardingDescriptionStyle:I = 0x7f15042a
-
-.field public static Widget_Leanback_OnboardingHeaderStyle:I = 0x7f15042b
-
-.field public static Widget_Leanback_OnboardingLogoStyle:I = 0x7f15042c
-
-.field public static Widget_Leanback_OnboardingMainIconStyle:I = 0x7f15042d
-
-.field public static Widget_Leanback_OnboardingNavigatorContainerStyle:I = 0x7f15042e
-
-.field public static Widget_Leanback_OnboardingPageIndicatorStyle:I = 0x7f15042f
-
-.field public static Widget_Leanback_OnboardingStartButtonStyle:I = 0x7f150430
-
-.field public static Widget_Leanback_OnboardingStartButtonStyleBase:I = 0x7f150431
-
-.field public static Widget_Leanback_OnboardingTitleStyle:I = 0x7f150432
-
-.field public static Widget_Leanback_PickerStyle:I = 0x7f150433
-
-.field public static Widget_Leanback_PickerStyle_DatePickerStyle:I = 0x7f150434
-
-.field public static Widget_Leanback_PickerStyle_PinPickerStyle:I = 0x7f150435
-
-.field public static Widget_Leanback_PickerStyle_TimePickerStyle:I = 0x7f150436
-
-.field public static Widget_Leanback_PlaybackControlLabelStyle:I = 0x7f150437
-
-.field public static Widget_Leanback_PlaybackControlsActionIconsStyle:I = 0x7f150438
-
-.field public static Widget_Leanback_PlaybackControlsButtonStyle:I = 0x7f150439
-
-.field public static Widget_Leanback_PlaybackControlsTimeStyle:I = 0x7f15043a
-
-.field public static Widget_Leanback_PlaybackMediaItemDetailsStyle:I = 0x7f15043b
-
-.field public static Widget_Leanback_PlaybackMediaItemDurationStyle:I = 0x7f15043c
-
-.field public static Widget_Leanback_PlaybackMediaItemNameStyle:I = 0x7f15043d
-
-.field public static Widget_Leanback_PlaybackMediaItemNumberStyle:I = 0x7f15043e
-
-.field public static Widget_Leanback_PlaybackMediaItemNumberViewFlipperStyle:I = 0x7f15043f
-
-.field public static Widget_Leanback_PlaybackMediaItemRowStyle:I = 0x7f150440
-
-.field public static Widget_Leanback_PlaybackMediaItemSeparatorStyle:I = 0x7f150441
-
-.field public static Widget_Leanback_PlaybackMediaListHeaderStyle:I = 0x7f150442
-
-.field public static Widget_Leanback_PlaybackMediaListHeaderTitleStyle:I = 0x7f150443
-
-.field public static Widget_Leanback_PlaybackRow:I = 0x7f150444
-
-.field public static Widget_Leanback_Row:I = 0x7f150445
-
-.field public static Widget_Leanback_Row_Header:I = 0x7f150446
-
-.field public static Widget_Leanback_Row_HeaderDock:I = 0x7f150448
-
-.field public static Widget_Leanback_Row_Header_Description:I = 0x7f150447
-
-.field public static Widget_Leanback_Row_HorizontalGridView:I = 0x7f150449
-
-.field public static Widget_Leanback_Row_HoverCardDescription:I = 0x7f15044a
-
-.field public static Widget_Leanback_Row_HoverCardTitle:I = 0x7f15044b
-
-.field public static Widget_Leanback_Rows:I = 0x7f15044c
-
-.field public static Widget_Leanback_Rows_VerticalGridView:I = 0x7f15044d
-
-.field public static Widget_Leanback_SearchOrbViewStyle:I = 0x7f15044e
-
-.field public static Widget_Leanback_Title:I = 0x7f15044f
-
-.field public static Widget_Leanback_TitleView:I = 0x7f150452
-
-.field public static Widget_Leanback_Title_Icon:I = 0x7f150450
-
-.field public static Widget_Leanback_Title_Text:I = 0x7f150451
+    .line 33
+    :cond_3
+    iget-object p0, p0, Lma5;->a:Ljava/lang/String;
+
+    .line 34
+    .line 35
+    iget-object p1, p1, Lma5;->a:Ljava/lang/String;
+
+    .line 36
+    .line 37
+    invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result p0
+
+    .line 41
+    return p0
+
+    .line 42
+    :cond_4
+    :goto_0
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lma5;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-boolean v1, p0, Lma5;->b:Z
+
+    .line 10
+    .line 11
+    add-int/2addr v0, v1
+
+    .line 12
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 13
+    .line 14
+    iget-boolean p0, p0, Lma5;->c:Z
+
+    .line 15
+    .line 16
+    add-int/2addr v0, p0
+
+    .line 17
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Permission{name=\'"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lma5;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, "\', granted="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-boolean v1, p0, Lma5;->b:Z
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", shouldShowRequestPermissionRationale="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-boolean p0, p0, Lma5;->c:Z
+
+    .line 29
+    .line 30
+    const/16 v1, 0x7d
+
+    .line 31
+    .line 32
+    invoke-static {v0, p0, v1}, Leb7;->m(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    return-object p0
+.end method

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Http2Reader;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -22,19 +22,19 @@
     d2 = {
         "Lokhttp3/internal/http2/Http2Reader;",
         "Ljava/io/Closeable;",
-        "Ls50;",
+        "Lf80;",
         "source",
         "",
         "client",
         "<init>",
-        "(Ls50;Z)V",
+        "(Lf80;Z)V",
         "Lokhttp3/internal/http2/Http2Reader$Handler;",
         "handler",
         "",
         "length",
         "flags",
         "streamId",
-        "Lbh7;",
+        "Lr98;",
         "readHeaders",
         "(Lokhttp3/internal/http2/Http2Reader$Handler;III)V",
         "padding",
@@ -58,7 +58,7 @@
         "(ZLokhttp3/internal/http2/Http2Reader$Handler;)Z",
         "close",
         "()V",
-        "Ls50;",
+        "Lf80;",
         "Z",
         "Lokhttp3/internal/http2/Http2Reader$ContinuationSource;",
         "continuation",
@@ -94,7 +94,7 @@
 
 .field private final hpackReader:Lokhttp3/internal/http2/Hpack$Reader;
 
-.field private final source:Ls50;
+.field private final source:Lf80;
 
 
 # direct methods
@@ -109,7 +109,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/http2/Http2Reader$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/http2/Http2Reader$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -150,7 +150,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Ls50;Z)V
+.method public constructor <init>(Lf80;Z)V
     .locals 6
 
     .line 1
@@ -164,7 +164,7 @@
     .line 5
     .line 6
     .line 7
-    iput-object p1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iput-object p1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 8
     .line 9
@@ -176,7 +176,7 @@
 
     .line 12
     .line 13
-    invoke-direct {v1, p1}, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;-><init>(Ls50;)V
+    invoke-direct {v1, p1}, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;-><init>(Lf80;)V
 
     .line 14
     .line 15
@@ -202,7 +202,7 @@
     const/4 v3, 0x0
 
     .line 25
-    invoke-direct/range {v0 .. v5}, Lokhttp3/internal/http2/Hpack$Reader;-><init>(Lle6;IIILj31;)V
+    invoke-direct/range {v0 .. v5}, Lokhttp3/internal/http2/Hpack$Reader;-><init>(Ld27;IIILib1;)V
 
     .line 26
     .line 27
@@ -256,7 +256,7 @@
 
     .line 10
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 11
     :goto_0
@@ -276,11 +276,11 @@
 
     .line 18
     .line 19
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 20
     .line 21
-    invoke-interface {v1}, Ls50;->readByte()B
+    invoke-interface {v1}, Lf80;->readByte()B
 
     .line 22
     .line 23
@@ -313,23 +313,23 @@
     move-result p2
 
     .line 37
-    iget-object p3, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p3, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 38
     .line 39
-    invoke-interface {p1, v0, p4, p3, p2}, Lokhttp3/internal/http2/Http2Reader$Handler;->data(ZILs50;I)V
+    invoke-interface {p1, v0, p4, p3, p2}, Lokhttp3/internal/http2/Http2Reader$Handler;->data(ZILf80;I)V
 
     .line 40
     .line 41
     .line 42
-    iget-object p1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 43
     .line 44
-    int-to-long p2, v1
+    int-to-long p1, v1
 
     .line 45
-    invoke-interface {p1, p2, p3}, Ls50;->skip(J)V
+    invoke-interface {p0, p1, p2}, Lf80;->skip(J)V
 
     .line 46
     .line 47
@@ -338,11 +338,11 @@
 
     .line 49
     :cond_2
-    const-string p1, "PROTOCOL_ERROR: FLAG_COMPRESSED without SETTINGS_COMPRESS_DATA"
+    const-string p0, "PROTOCOL_ERROR: FLAG_COMPRESSED without SETTINGS_COMPRESS_DATA"
 
     .line 50
     .line 51
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 52
     .line 53
@@ -351,11 +351,11 @@
 
     .line 55
     :cond_3
-    const-string p1, "PROTOCOL_ERROR: TYPE_DATA streamId == 0"
+    const-string p0, "PROTOCOL_ERROR: TYPE_DATA streamId == 0"
 
     .line 56
     .line 57
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 58
     .line 59
@@ -364,7 +364,7 @@
 .end method
 
 .method private final readGoAway(Lokhttp3/internal/http2/Http2Reader$Handler;III)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -384,11 +384,11 @@
 
     .line 6
     .line 7
-    iget-object p4, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p4, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 8
     .line 9
-    invoke-interface {p4}, Ls50;->readInt()I
+    invoke-interface {p4}, Lf80;->readInt()I
 
     .line 10
     .line 11
@@ -396,11 +396,11 @@
     move-result p4
 
     .line 13
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 14
     .line 15
-    invoke-interface {v0}, Ls50;->readInt()I
+    invoke-interface {v0}, Lf80;->readInt()I
 
     .line 16
     .line 17
@@ -427,7 +427,7 @@
 
     .line 27
     .line 28
-    sget-object v0, Ly60;->T:Ly60;
+    sget-object v0, Lo90;->c0:Lo90;
 
     .line 29
     .line 30
@@ -435,14 +435,14 @@
 
     .line 31
     .line 32
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 33
     .line 34
-    int-to-long v1, p2
+    int-to-long v0, p2
 
     .line 35
-    invoke-interface {v0, v1, v2}, Ls50;->o(J)Ly60;
+    invoke-interface {p0, v0, v1}, Lf80;->s(J)Lo90;
 
     .line 36
     .line 37
@@ -451,7 +451,7 @@
 
     .line 39
     :cond_0
-    invoke-interface {p1, p4, p3, v0}, Lokhttp3/internal/http2/Http2Reader$Handler;->goAway(ILokhttp3/internal/http2/ErrorCode;Ly60;)V
+    invoke-interface {p1, p4, p3, v0}, Lokhttp3/internal/http2/Http2Reader$Handler;->goAway(ILokhttp3/internal/http2/ErrorCode;Lo90;)V
 
     .line 40
     .line 41
@@ -460,19 +460,19 @@
 
     .line 43
     :cond_1
-    const-string p1, "TYPE_GOAWAY unexpected error code: "
+    const-string p0, "TYPE_GOAWAY unexpected error code: "
 
     .line 44
     .line 45
-    invoke-static {v0, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 46
     .line 47
     .line 48
-    move-result-object p1
+    move-result-object p0
 
     .line 49
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -481,11 +481,11 @@
 
     .line 53
     :cond_2
-    const-string p1, "TYPE_GOAWAY streamId != 0"
+    const-string p0, "TYPE_GOAWAY streamId != 0"
 
     .line 54
     .line 55
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 56
     .line 57
@@ -494,19 +494,19 @@
 
     .line 59
     :cond_3
-    const-string p1, "TYPE_GOAWAY length < 8: "
+    const-string p0, "TYPE_GOAWAY length < 8: "
 
     .line 60
     .line 61
-    invoke-static {p2, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 62
     .line 63
     .line 64
-    move-result-object p1
+    move-result-object p0
 
     .line 65
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 66
     .line 67
@@ -594,19 +594,19 @@
     .line 33
     .line 34
     .line 35
-    iget-object p1, p0, Lokhttp3/internal/http2/Http2Reader;->hpackReader:Lokhttp3/internal/http2/Hpack$Reader;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->hpackReader:Lokhttp3/internal/http2/Hpack$Reader;
 
     .line 36
     .line 37
-    invoke-virtual {p1}, Lokhttp3/internal/http2/Hpack$Reader;->getAndResetHeaderList()Ljava/util/List;
+    invoke-virtual {p0}, Lokhttp3/internal/http2/Hpack$Reader;->getAndResetHeaderList()Ljava/util/List;
 
     .line 38
     .line 39
     .line 40
-    move-result-object p1
+    move-result-object p0
 
     .line 41
-    return-object p1
+    return-object p0
 .end method
 
 .method private final readHeaders(Lokhttp3/internal/http2/Http2Reader$Handler;III)V
@@ -640,7 +640,7 @@
 
     .line 10
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 11
     :goto_0
@@ -652,11 +652,11 @@
 
     .line 14
     .line 15
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 16
     .line 17
-    invoke-interface {v1}, Ls50;->readByte()B
+    invoke-interface {v1}, Lf80;->readByte()B
 
     .line 18
     .line 19
@@ -712,13 +712,13 @@
     .line 43
     .line 44
     .line 45
-    move-result-object p2
+    move-result-object p0
 
     .line 46
-    const/4 p3, -0x1
+    const/4 p2, -0x1
 
     .line 47
-    invoke-interface {p1, v0, p4, p3, p2}, Lokhttp3/internal/http2/Http2Reader$Handler;->headers(ZIILjava/util/List;)V
+    invoke-interface {p1, v0, p4, p2, p0}, Lokhttp3/internal/http2/Http2Reader$Handler;->headers(ZIILjava/util/List;)V
 
     .line 48
     .line 49
@@ -727,11 +727,11 @@
 
     .line 51
     :cond_3
-    const-string p1, "PROTOCOL_ERROR: TYPE_HEADERS streamId == 0"
+    const-string p0, "PROTOCOL_ERROR: TYPE_HEADERS streamId == 0"
 
     .line 52
     .line 53
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 54
     .line 55
@@ -760,11 +760,11 @@
 
     .line 6
     .line 7
-    iget-object p2, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p2, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 8
     .line 9
-    invoke-interface {p2}, Ls50;->readInt()I
+    invoke-interface {p2}, Lf80;->readInt()I
 
     .line 10
     .line 11
@@ -772,22 +772,22 @@
     move-result p2
 
     .line 13
-    iget-object p4, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 14
     .line 15
-    invoke-interface {p4}, Ls50;->readInt()I
+    invoke-interface {p0}, Lf80;->readInt()I
 
     .line 16
     .line 17
     .line 18
-    move-result p4
+    move-result p0
 
     .line 19
-    const/4 v0, 0x1
+    const/4 p4, 0x1
 
     .line 20
-    and-int/2addr p3, v0
+    and-int/2addr p3, p4
 
     .line 21
     if-eqz p3, :cond_0
@@ -798,11 +798,11 @@
 
     .line 24
     :cond_0
-    const/4 v0, 0x0
+    const/4 p4, 0x0
 
     .line 25
     :goto_0
-    invoke-interface {p1, v0, p2, p4}, Lokhttp3/internal/http2/Http2Reader$Handler;->ping(ZII)V
+    invoke-interface {p1, p4, p2, p0}, Lokhttp3/internal/http2/Http2Reader$Handler;->ping(ZII)V
 
     .line 26
     .line 27
@@ -811,11 +811,11 @@
 
     .line 29
     :cond_1
-    const-string p1, "TYPE_PING streamId != 0"
+    const-string p0, "TYPE_PING streamId != 0"
 
     .line 30
     .line 31
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 32
     .line 33
@@ -824,19 +824,19 @@
 
     .line 35
     :cond_2
-    const-string p1, "TYPE_PING length != 8: "
+    const-string p0, "TYPE_PING length != 8: "
 
     .line 36
     .line 37
-    invoke-static {p2, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 38
     .line 39
     .line 40
-    move-result-object p1
+    move-result-object p0
 
     .line 41
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -845,7 +845,7 @@
 .end method
 
 .method private final readPriority(Lokhttp3/internal/http2/Http2Reader$Handler;I)V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -853,11 +853,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Ls50;->readInt()I
+    invoke-interface {v0}, Lf80;->readInt()I
 
     .line 4
     .line 5
@@ -879,7 +879,7 @@
 
     .line 12
     .line 13
-    const/4 v1, 0x1
+    move v1, v2
 
     .line 14
     goto :goto_0
@@ -898,34 +898,34 @@
     and-int/2addr v0, v3
 
     .line 20
-    iget-object v3, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 21
     .line 22
-    invoke-interface {v3}, Ls50;->readByte()B
+    invoke-interface {p0}, Lf80;->readByte()B
 
     .line 23
     .line 24
     .line 25
-    move-result v3
+    move-result p0
 
     .line 26
-    const/16 v4, 0xff
+    const/16 v3, 0xff
 
     .line 27
     .line 28
-    invoke-static {v3, v4}, Lokhttp3/internal/Util;->and(BI)I
+    invoke-static {p0, v3}, Lokhttp3/internal/Util;->and(BI)I
 
     .line 29
     .line 30
     .line 31
-    move-result v3
+    move-result p0
 
     .line 32
-    add-int/2addr v3, v2
+    add-int/2addr p0, v2
 
     .line 33
-    invoke-interface {p1, p2, v0, v3, v1}, Lokhttp3/internal/http2/Http2Reader$Handler;->priority(IIIZ)V
+    invoke-interface {p1, p2, v0, p0, v1}, Lokhttp3/internal/http2/Http2Reader$Handler;->priority(IIIZ)V
 
     .line 34
     .line 35
@@ -954,25 +954,25 @@
 
     .line 38
     :cond_0
-    const-string p1, "TYPE_PRIORITY streamId == 0"
+    const-string p0, "TYPE_PRIORITY streamId == 0"
 
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     return-void
 
     .line 39
     :cond_1
-    const-string p1, "TYPE_PRIORITY length: "
+    const-string p0, "TYPE_PRIORITY length: "
 
-    const-string p3, " != 5"
+    const-string p1, " != 5"
 
     .line 40
-    invoke-static {p1, p2, p3}, Lea0;->p(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p2, p1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object p0
 
     .line 41
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -998,11 +998,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 8
     .line 9
-    invoke-interface {v0}, Ls50;->readByte()B
+    invoke-interface {v0}, Lf80;->readByte()B
 
     .line 10
     .line 11
@@ -1030,11 +1030,11 @@
 
     .line 21
     :goto_0
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 22
     .line 23
-    invoke-interface {v1}, Ls50;->readInt()I
+    invoke-interface {v1}, Lf80;->readInt()I
 
     .line 24
     .line 25
@@ -1071,10 +1071,10 @@
     .line 40
     .line 41
     .line 42
-    move-result-object p2
+    move-result-object p0
 
     .line 43
-    invoke-interface {p1, p4, v1, p2}, Lokhttp3/internal/http2/Http2Reader$Handler;->pushPromise(IILjava/util/List;)V
+    invoke-interface {p1, p4, v1, p0}, Lokhttp3/internal/http2/Http2Reader$Handler;->pushPromise(IILjava/util/List;)V
 
     .line 44
     .line 45
@@ -1083,11 +1083,11 @@
 
     .line 47
     :cond_1
-    const-string p1, "PROTOCOL_ERROR: TYPE_PUSH_PROMISE streamId == 0"
+    const-string p0, "PROTOCOL_ERROR: TYPE_PUSH_PROMISE streamId == 0"
 
     .line 48
     .line 49
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -1115,35 +1115,35 @@
 
     .line 5
     .line 6
-    iget-object p2, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 7
     .line 8
-    invoke-interface {p2}, Ls50;->readInt()I
+    invoke-interface {p0}, Lf80;->readInt()I
 
     .line 9
     .line 10
     .line 11
-    move-result p2
+    move-result p0
 
     .line 12
-    sget-object p3, Lokhttp3/internal/http2/ErrorCode;->Companion:Lokhttp3/internal/http2/ErrorCode$Companion;
+    sget-object p2, Lokhttp3/internal/http2/ErrorCode;->Companion:Lokhttp3/internal/http2/ErrorCode$Companion;
 
     .line 13
     .line 14
-    invoke-virtual {p3, p2}, Lokhttp3/internal/http2/ErrorCode$Companion;->fromHttp2(I)Lokhttp3/internal/http2/ErrorCode;
+    invoke-virtual {p2, p0}, Lokhttp3/internal/http2/ErrorCode$Companion;->fromHttp2(I)Lokhttp3/internal/http2/ErrorCode;
 
     .line 15
     .line 16
     .line 17
-    move-result-object p3
+    move-result-object p2
 
     .line 18
-    if-eqz p3, :cond_0
+    if-eqz p2, :cond_0
 
     .line 19
     .line 20
-    invoke-interface {p1, p4, p3}, Lokhttp3/internal/http2/Http2Reader$Handler;->rstStream(ILokhttp3/internal/http2/ErrorCode;)V
+    invoke-interface {p1, p4, p2}, Lokhttp3/internal/http2/Http2Reader$Handler;->rstStream(ILokhttp3/internal/http2/ErrorCode;)V
 
     .line 21
     .line 22
@@ -1156,15 +1156,15 @@
 
     .line 25
     .line 26
-    invoke-static {p2, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 27
     .line 28
     .line 29
-    move-result-object p1
+    move-result-object p0
 
     .line 30
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -1173,11 +1173,11 @@
 
     .line 34
     :cond_1
-    const-string p1, "TYPE_RST_STREAM streamId == 0"
+    const-string p0, "TYPE_RST_STREAM streamId == 0"
 
     .line 35
     .line 36
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 37
     .line 38
@@ -1186,23 +1186,23 @@
 
     .line 40
     :cond_2
-    const-string p1, "TYPE_RST_STREAM length: "
+    const-string p0, "TYPE_RST_STREAM length: "
 
     .line 41
     .line 42
-    const-string p3, " != 4"
+    const-string p1, " != 4"
 
     .line 43
     .line 44
-    invoke-static {p1, p2, p3}, Lea0;->p(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p2, p1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     .line 45
     .line 46
     .line 47
-    move-result-object p1
+    move-result-object p0
 
     .line 48
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -1246,11 +1246,11 @@
 
     .line 13
     :cond_0
-    const-string p1, "FRAME_SIZE_ERROR ack frame should be empty!"
+    const-string p0, "FRAME_SIZE_ERROR ack frame should be empty!"
 
     .line 14
     .line 15
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 16
     .line 17
@@ -1279,7 +1279,7 @@
     const/4 v0, 0x0
 
     .line 29
-    invoke-static {v0, p2}, Lxf5;->n0(II)Lhs2;
+    invoke-static {v0, p2}, Lvx6;->i0(II)Lu73;
 
     .line 30
     .line 31
@@ -1290,7 +1290,7 @@
     const/4 v1, 0x6
 
     .line 34
-    invoke-static {p2, v1}, Lxf5;->l0(Lhs2;I)Lfs2;
+    invoke-static {p2, v1}, Lvx6;->c0(Lu73;I)Ls73;
 
     .line 35
     .line 36
@@ -1298,15 +1298,15 @@
     move-result-object p2
 
     .line 38
-    iget v1, p2, Lfs2;->Q:I
+    iget v1, p2, Ls73;->X:I
 
     .line 39
     .line 40
-    iget v2, p2, Lfs2;->R:I
+    iget v2, p2, Ls73;->Y:I
 
     .line 41
     .line 42
-    iget p2, p2, Lfs2;->S:I
+    iget p2, p2, Ls73;->Z:I
 
     .line 43
     .line 44
@@ -1329,11 +1329,11 @@
     .line 52
     :cond_3
     :goto_0
-    iget-object v3, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v3, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 53
     .line 54
-    invoke-interface {v3}, Ls50;->readShort()S
+    invoke-interface {v3}, Lf80;->readShort()S
 
     .line 55
     .line 56
@@ -1354,11 +1354,11 @@
     move-result v3
 
     .line 65
-    iget-object v4, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v4, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 66
     .line 67
-    invoke-interface {v4}, Ls50;->readInt()I
+    invoke-interface {v4}, Lf80;->readInt()I
 
     .line 68
     .line 69
@@ -1419,19 +1419,19 @@
 
     .line 94
     :cond_5
-    const-string p1, "PROTOCOL_ERROR SETTINGS_MAX_FRAME_SIZE: "
+    const-string p0, "PROTOCOL_ERROR SETTINGS_MAX_FRAME_SIZE: "
 
     .line 95
     .line 96
-    invoke-static {v4, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 97
     .line 98
     .line 99
-    move-result-object p1
+    move-result-object p0
 
     .line 100
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 101
     .line 102
@@ -1451,11 +1451,11 @@
 
     .line 108
     :cond_7
-    const-string p1, "PROTOCOL_ERROR SETTINGS_INITIAL_WINDOW_SIZE > 2^31 - 1"
+    const-string p0, "PROTOCOL_ERROR SETTINGS_INITIAL_WINDOW_SIZE > 2^31 - 1"
 
     .line 109
     .line 110
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 111
     .line 112
@@ -1464,7 +1464,7 @@
 
     .line 114
     :cond_8
-    const/4 v3, 0x4
+    move v3, v6
 
     .line 115
     goto :goto_1
@@ -1483,11 +1483,11 @@
 
     .line 121
     :cond_a
-    const-string p1, "PROTOCOL_ERROR SETTINGS_ENABLE_PUSH != 0 or 1"
+    const-string p0, "PROTOCOL_ERROR SETTINGS_ENABLE_PUSH != 0 or 1"
 
     .line 122
     .line 123
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 124
     .line 125
@@ -1522,19 +1522,19 @@
 
     .line 138
     :cond_d
-    const-string p1, "TYPE_SETTINGS length % 6 != 0: "
+    const-string p0, "TYPE_SETTINGS length % 6 != 0: "
 
     .line 139
     .line 140
-    invoke-static {p2, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 141
     .line 142
     .line 143
-    move-result-object p1
+    move-result-object p0
 
     .line 144
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 145
     .line 146
@@ -1543,11 +1543,11 @@
 
     .line 148
     :cond_e
-    const-string p1, "TYPE_SETTINGS streamId != 0"
+    const-string p0, "TYPE_SETTINGS streamId != 0"
 
     .line 149
     .line 150
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 151
     .line 152
@@ -1556,7 +1556,7 @@
 .end method
 
 .method private final readWindowUpdate(Lokhttp3/internal/http2/Http2Reader$Handler;III)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1571,24 +1571,24 @@
 
     .line 3
     .line 4
-    iget-object p2, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 5
     .line 6
-    invoke-interface {p2}, Ls50;->readInt()I
+    invoke-interface {p0}, Lf80;->readInt()I
 
     .line 7
     .line 8
     .line 9
-    move-result p2
+    move-result p0
 
     .line 10
-    const-wide/32 v0, 0x7fffffff
+    const-wide/32 p2, 0x7fffffff
 
     .line 11
     .line 12
     .line 13
-    invoke-static {p2, v0, v1}, Lokhttp3/internal/Util;->and(IJ)J
+    invoke-static {p0, p2, p3}, Lokhttp3/internal/Util;->and(IJ)J
 
     .line 14
     .line 15
@@ -1600,11 +1600,11 @@
 
     .line 18
     .line 19
-    cmp-long v2, p2, v0
+    cmp-long p0, p2, v0
 
     .line 20
     .line 21
-    if-eqz v2, :cond_0
+    if-eqz p0, :cond_0
 
     .line 22
     .line 23
@@ -1617,11 +1617,11 @@
 
     .line 27
     :cond_0
-    const-string p1, "windowSizeIncrement was 0"
+    const-string p0, "windowSizeIncrement was 0"
 
     .line 28
     .line 29
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -1630,19 +1630,19 @@
 
     .line 33
     :cond_1
-    const-string p1, "TYPE_WINDOW_UPDATE length !=4: "
+    const-string p0, "TYPE_WINDOW_UPDATE length !=4: "
 
     .line 34
     .line 35
-    invoke-static {p2, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 36
     .line 37
     .line 38
-    move-result-object p1
+    move-result-object p0
 
     .line 39
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 40
     .line 41
@@ -1653,7 +1653,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1661,11 +1661,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Ljava/io/Closeable;->close()V
+    invoke-interface {p0}, Ljava/io/Closeable;->close()V
 
     .line 4
     .line 5
@@ -1691,7 +1691,7 @@
 
     .line 5
     :try_start_0
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 6
     .line 7
@@ -1699,18 +1699,18 @@
 
     .line 8
     .line 9
-    invoke-interface {v1, v2, v3}, Ls50;->D0(J)V
+    invoke-interface {v1, v2, v3}, Lf80;->Q0(J)V
     :try_end_0
     .catch Ljava/io/EOFException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 10
     .line 11
     .line 12
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 13
     .line 14
-    invoke-static {v1}, Lokhttp3/internal/Util;->readMedium(Ls50;)I
+    invoke-static {v1}, Lokhttp3/internal/Util;->readMedium(Lf80;)I
 
     .line 15
     .line 16
@@ -1726,11 +1726,11 @@
 
     .line 21
     .line 22
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 23
     .line 24
-    invoke-interface {v1}, Ls50;->readByte()B
+    invoke-interface {v1}, Lf80;->readByte()B
 
     .line 25
     .line 26
@@ -1750,11 +1750,11 @@
     move-result v6
 
     .line 34
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 35
     .line 36
-    invoke-interface {v1}, Ls50;->readByte()B
+    invoke-interface {v1}, Lf80;->readByte()B
 
     .line 37
     .line 38
@@ -1770,11 +1770,11 @@
     move-result v7
 
     .line 44
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 45
     .line 46
-    invoke-interface {v1}, Ls50;->readInt()I
+    invoke-interface {v1}, Lf80;->readInt()I
 
     .line 47
     .line 48
@@ -1847,23 +1847,23 @@
 
     .line 81
     :cond_1
-    sget-object p1, Lokhttp3/internal/http2/Http2;->INSTANCE:Lokhttp3/internal/http2/Http2;
+    sget-object p0, Lokhttp3/internal/http2/Http2;->INSTANCE:Lokhttp3/internal/http2/Http2;
 
     .line 82
     .line 83
-    invoke-virtual {p1, v6}, Lokhttp3/internal/http2/Http2;->formattedType$okhttp(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lokhttp3/internal/http2/Http2;->formattedType$okhttp(I)Ljava/lang/String;
 
     .line 84
     .line 85
     .line 86
-    move-result-object p1
+    move-result-object p0
 
     .line 87
-    const-string p2, "Expected a SETTINGS frame but was "
+    const-string p1, "Expected a SETTINGS frame but was "
 
     .line 88
     .line 89
-    invoke-static {p1, p2}, Lio/sentry/util/c;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lio/sentry/clientreport/a;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 90
     .line 91
@@ -1878,14 +1878,14 @@
     .line 94
     .line 95
     .line 96
-    iget-object p1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 97
     .line 98
-    int-to-long v0, v5
+    int-to-long p1, v5
 
     .line 99
-    invoke-interface {p1, v0, v1}, Ls50;->skip(J)V
+    invoke-interface {p0, p1, p2}, Lf80;->skip(J)V
 
     .line 100
     .line 101
@@ -1972,26 +1972,26 @@
     .line 137
     .line 138
     :goto_1
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 139
-    return p1
+    return p0
 
     .line 140
     :cond_3
-    const-string p1, "FRAME_SIZE_ERROR: "
+    const-string p0, "FRAME_SIZE_ERROR: "
 
     .line 141
     .line 142
-    invoke-static {v5, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v5, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 143
     .line 144
     .line 145
-    move-result-object p1
+    move-result-object p0
 
     .line 146
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 147
     .line 148
@@ -2018,7 +2018,7 @@
 .end method
 
 .method public final readConnectionPreface(Lokhttp3/internal/http2/Http2Reader$Handler;)V
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2047,10 +2047,10 @@
     .line 10
     .line 11
     .line 12
-    move-result p1
+    move-result p0
 
     .line 13
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 14
     .line 15
@@ -2058,11 +2058,11 @@
 
     .line 16
     :cond_0
-    const-string p1, "Required SETTINGS preface not received"
+    const-string p0, "Required SETTINGS preface not received"
 
     .line 17
     .line 18
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -2071,117 +2071,117 @@
 
     .line 22
     :cond_1
-    iget-object p1, p0, Lokhttp3/internal/http2/Http2Reader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader;->source:Lf80;
 
     .line 23
     .line 24
-    sget-object v0, Lokhttp3/internal/http2/Http2;->CONNECTION_PREFACE:Ly60;
+    sget-object p1, Lokhttp3/internal/http2/Http2;->CONNECTION_PREFACE:Lo90;
 
     .line 25
     .line 26
-    invoke-virtual {v0}, Ly60;->e()I
+    invoke-virtual {p1}, Lo90;->e()I
 
     .line 27
     .line 28
     .line 29
-    move-result v1
+    move-result v0
 
     .line 30
-    int-to-long v1, v1
+    int-to-long v0, v0
 
     .line 31
-    invoke-interface {p1, v1, v2}, Ls50;->o(J)Ly60;
+    invoke-interface {p0, v0, v1}, Lf80;->s(J)Lo90;
 
     .line 32
     .line 33
     .line 34
-    move-result-object p1
+    move-result-object p0
 
     .line 35
-    sget-object v1, Lokhttp3/internal/http2/Http2Reader;->logger:Ljava/util/logging/Logger;
+    sget-object v0, Lokhttp3/internal/http2/Http2Reader;->logger:Ljava/util/logging/Logger;
 
     .line 36
     .line 37
-    sget-object v2, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
+    sget-object v1, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
 
     .line 38
     .line 39
-    invoke-virtual {v1, v2}, Ljava/util/logging/Logger;->isLoggable(Ljava/util/logging/Level;)Z
+    invoke-virtual {v0, v1}, Ljava/util/logging/Logger;->isLoggable(Ljava/util/logging/Level;)Z
 
     .line 40
     .line 41
     .line 42
-    move-result v2
+    move-result v1
 
     .line 43
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
     .line 44
     .line 45
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 46
     .line 47
-    const-string v3, "<< CONNECTION "
+    const-string v2, "<< CONNECTION "
 
     .line 48
     .line 49
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 50
     .line 51
     .line 52
-    invoke-virtual {p1}, Ly60;->f()Ljava/lang/String;
+    invoke-virtual {p0}, Lo90;->f()Ljava/lang/String;
 
     .line 53
     .line 54
     .line 55
-    move-result-object v3
+    move-result-object v2
 
     .line 56
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 57
     .line 58
     .line 59
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 60
     .line 61
     .line 62
-    move-result-object v2
+    move-result-object v1
 
     .line 63
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 64
-    new-array v3, v3, [Ljava/lang/Object;
+    new-array v2, v2, [Ljava/lang/Object;
 
     .line 65
     .line 66
-    invoke-static {v2, v3}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v2}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 67
     .line 68
     .line 69
-    move-result-object v2
+    move-result-object v1
 
     .line 70
-    invoke-virtual {v1, v2}, Ljava/util/logging/Logger;->fine(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Ljava/util/logging/Logger;->fine(Ljava/lang/String;)V
 
     .line 71
     .line 72
     .line 73
     :cond_2
-    invoke-virtual {v0, p1}, Ly60;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p0}, Lo90;->equals(Ljava/lang/Object;)Z
 
     .line 74
     .line 75
     .line 76
-    move-result v0
+    move-result p1
 
     .line 77
-    if-eqz v0, :cond_3
+    if-eqz p1, :cond_3
 
     .line 78
     .line 79
@@ -2190,27 +2190,27 @@
 
     .line 80
     :cond_3
-    invoke-virtual {p1}, Ly60;->r()Ljava/lang/String;
+    invoke-virtual {p0}, Lo90;->r()Ljava/lang/String;
 
     .line 81
     .line 82
     .line 83
-    move-result-object p1
+    move-result-object p0
 
     .line 84
-    const-string v0, "Expected a connection header but was "
+    const-string p1, "Expected a connection header but was "
 
     .line 85
     .line 86
-    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 87
     .line 88
     .line 89
-    move-result-object p1
+    move-result-object p0
 
     .line 90
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 91
     .line 92

@@ -1,15 +1,18 @@
 package defpackage;
 
-import android.graphics.Insets;
-import android.graphics.Rect;
-import android.view.View;
-import android.view.WindowInsets;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class kp7 extends je1 implements qy0, an2 {
+    public xi2 p0;
+    public final x65 q0 = new x65(null, an3.g0);
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class kp7 {
-    public static void a(View view, Rect rect, Rect rect2) {
-        Insets systemWindowInsets = view.computeSystemWindowInsets(new WindowInsets.Builder().setSystemWindowInsets(Insets.of(rect)).build(), rect2).getSystemWindowInsets();
-        rect.set(systemWindowInsets.left, systemWindowInsets.top, systemWindowInsets.right, systemWindowInsets.bottom);
+    public kp7(xi2 xi2Var) {
+        this.p0 = xi2Var;
+        U0(pl7.a(new md(5, this)));
+    }
+
+    @Override // defpackage.an2
+    public final void d0(wu4 wu4Var) {
+        this.q0.setValue(wu4Var);
     }
 }

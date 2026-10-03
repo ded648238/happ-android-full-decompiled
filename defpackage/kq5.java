@@ -1,11 +1,30 @@
 package defpackage;
 
-import java.util.List;
-import kotlin.Metadata;
-import su.happ.proxyutility.domain.routing.entity.RouteProfile;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class kq5 implements mq5 {
+    public final cg0 a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\b\n\u0018\u00002\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0001¨\u0006\u0004"}, d2 = {"Lkq5;", "Ldd7;", "", "Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;", "app"}, k = 1, mv = {2, 4, 0}, xi = 48)
-public final class kq5 extends dd7<List<? extends RouteProfile>> {
+    public kq5(cg0 cg0Var) {
+        this.a = cg0Var;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof kq5) && m93.h(this.a, ((kq5) obj).a);
+    }
+
+    public final int hashCode() {
+        cg0 cg0Var = this.a;
+        if (cg0Var == null) {
+            return 0;
+        }
+        return Integer.hashCode(cg0Var.a);
+    }
+
+    public final String toString() {
+        return "Error(lastCameraError=" + this.a + ')';
+    }
 }

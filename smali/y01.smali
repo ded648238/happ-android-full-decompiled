@@ -1,26 +1,72 @@
-.class public interface abstract Ly01;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Ly01;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Lzx7;
+
+# instance fields
+.field public synthetic c0:Ljava/lang/Object;
+
+.field public final synthetic d0:Landroidx/work/impl/workers/ConstraintTrackingWorker;
+
+.field public e0:I
+
+
+# direct methods
+.method public constructor <init>(Landroidx/work/impl/workers/ConstraintTrackingWorker;Ld31;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ly01;->d0:Landroidx/work/impl/workers/ConstraintTrackingWorker;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract i()Ljava/lang/Integer;
-.end method
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-.method public abstract l()Ljava/lang/Integer;
-.end method
+    .line 1
+    iput-object p1, p0, Ly01;->c0:Ljava/lang/Object;
 
-.method public abstract m(Ljava/lang/Integer;)V
-.end method
+    .line 2
+    .line 3
+    iget p1, p0, Ly01;->e0:I
 
-.method public abstract o()Ljava/lang/Integer;
-.end method
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
 
-.method public abstract r(Ljava/lang/Integer;)V
-.end method
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
 
-.method public abstract w(Ljava/lang/Integer;)V
+    .line 8
+    iput p1, p0, Ly01;->e0:I
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Ly01;->d0:Landroidx/work/impl/workers/ConstraintTrackingWorker;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-static {p1, v0, v0, v0, p0}, Landroidx/work/impl/workers/ConstraintTrackingWorker;->f(Landroidx/work/impl/workers/ConstraintTrackingWorker;Lf44;Lur;Lyq8;Ld31;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
 .end method

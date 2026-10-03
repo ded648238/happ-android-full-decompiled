@@ -1,6 +1,6 @@
-.class final Lorg/conscrypt/BufferUtils;
+.class public final Lorg/conscrypt/BufferUtils;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -51,7 +51,7 @@
 
     .line 13
     .line 14
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -147,7 +147,7 @@
 
     .line 36
     .line 37
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -181,7 +181,7 @@
 
     .line 10
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 11
     :goto_0
@@ -197,7 +197,7 @@
     array-length v0, p0
 
     .line 17
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 18
     :goto_1
@@ -279,7 +279,7 @@
     .line 55
     .line 56
     .line 57
-    const/4 p2, 0x0
+    move p2, v1
 
     .line 58
     :goto_2

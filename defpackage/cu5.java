@@ -1,6 +1,12 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class cu5 extends RuntimeException {
+/* loaded from: classes.dex */
+public abstract class cu5 {
+    public static int copy = 2132017275;
+    public static int expand_button_title = 2132017354;
+    public static int not_set = 2132017680;
+    public static int preference_copied = 2132017712;
+    public static int summary_collapsed_preference_list = 2132018001;
+    public static int v7_preference_off = 2132018138;
+    public static int v7_preference_on = 2132018139;
 }

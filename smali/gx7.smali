@@ -1,735 +1,157 @@
-.class public final synthetic Lgx7;
+.class public final Lgx7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg72;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final a:J
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public synthetic constructor <init>(J)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lgx7;->Q:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-wide p1, p0, Lgx7;->a:J
+
     .line 5
     .line 6
     return-void
 .end method
 
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 6
+.method public static a(J)Ljava/lang/String;
+    .locals 2
 
     .line 1
-    iget v0, p0, Lgx7;->Q:I
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "SUB"
+    const-string v1, "TimestampNs(value="
 
     .line 4
     .line 5
-    const/16 v2, 0x2d
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    const/16 v3, 0xa
-
     .line 8
-    .line 9
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
+    .line 9
     .line 10
     .line 11
+    const/16 p0, 0x29
+
     .line 12
-    new-instance v0, Lj$/time/format/DateTimeFormatterBuilder;
+    .line 13
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    instance-of v0, p1, Lgx7;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    check-cast p1, Lgx7;
+
+    .line 7
+    .line 8
+    iget-wide v0, p1, Lgx7;->a:J
+
+    .line 9
+    .line 10
+    iget-wide p0, p0, Lgx7;->a:J
+
+    .line 11
+    .line 12
+    cmp-long p0, p0, v0
 
     .line 13
     .line 14
-    invoke-direct {v0}, Lj$/time/format/DateTimeFormatterBuilder;-><init>()V
+    if-eqz p0, :cond_1
 
     .line 15
     .line 16
+    :goto_0
+    const/4 p0, 0x0
+
     .line 17
-    invoke-virtual {v0}, Lj$/time/format/DateTimeFormatterBuilder;->parseCaseInsensitive()Lj$/time/format/DateTimeFormatterBuilder;
+    return p0
 
     .line 18
+    :cond_1
+    const/4 p0, 0x1
+
     .line 19
-    .line 20
-    move-result-object v0
+    return p0
+.end method
 
-    .line 21
-    sget-object v1, Lj$/time/temporal/ChronoField;->YEAR:Lj$/time/temporal/ChronoField;
+.method public final hashCode()I
+    .locals 2
 
-    .line 22
-    .line 23
-    const/4 v4, 0x4
+    .line 1
+    iget-wide v0, p0, Lgx7;->a:J
 
-    .line 24
-    sget-object v5, Lj$/time/format/SignStyle;->EXCEEDS_PAD:Lj$/time/format/SignStyle;
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
 
-    .line 25
-    .line 26
-    invoke-virtual {v0, v1, v4, v3, v5}, Lj$/time/format/DateTimeFormatterBuilder;->appendValue(Lj$/time/temporal/TemporalField;IILj$/time/format/SignStyle;)Lj$/time/format/DateTimeFormatterBuilder;
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
 
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v0
+    .line 7
+    return p0
+.end method
 
-    .line 30
-    invoke-virtual {v0, v2}, Lj$/time/format/DateTimeFormatterBuilder;->appendLiteral(C)Lj$/time/format/DateTimeFormatterBuilder;
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
+    .line 1
+    iget-wide v0, p0, Lgx7;->a:J
 
-    .line 34
-    sget-object v1, Lj$/time/temporal/ChronoField;->MONTH_OF_YEAR:Lj$/time/temporal/ChronoField;
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Lgx7;->a(J)Ljava/lang/String;
 
-    .line 35
-    .line 36
-    const/4 v2, 0x2
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
-    .line 37
-    invoke-virtual {v0, v1, v2}, Lj$/time/format/DateTimeFormatterBuilder;->appendValue(Lj$/time/temporal/TemporalField;I)Lj$/time/format/DateTimeFormatterBuilder;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v0
-
-    .line 41
-    invoke-virtual {v0}, Lj$/time/format/DateTimeFormatterBuilder;->toFormatter()Lj$/time/format/DateTimeFormatter;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v0
-
-    .line 45
-    return-object v0
-
-    .line 46
-    :pswitch_0
-    new-instance v0, Ldy7;
-
-    .line 47
-    .line 48
-    new-instance v1, Lzp;
-
-    .line 49
-    .line 50
-    const/4 v3, 0x0
-
-    .line 51
-    invoke-direct {v1, v3, v3}, Lzp;-><init>(IZ)V
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-direct {v0, v1}, Ldy7;-><init>(Lzp;)V
-
-    .line 55
-    .line 56
-    .line 57
-    sget-object v1, Lhn4;->R:Lhn4;
-
-    .line 58
-    .line 59
-    invoke-interface {v0, v1}, Lh11;->f(Lhn4;)V
-
-    .line 60
-    .line 61
-    .line 62
-    invoke-static {v0, v2}, Luy7;->l(Li11;C)V
-
-    .line 63
-    .line 64
-    .line 65
-    invoke-interface {v0, v1}, Lh11;->j(Lhn4;)V
-
-    .line 66
-    .line 67
-    .line 68
-    new-instance v1, Ley7;
-
-    .line 69
-    .line 70
-    invoke-static {v0}, Lea0;->c(La1;)Le80;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v0
-
-    .line 74
-    invoke-direct {v1, v0}, Ley7;-><init>(Le80;)V
-
-    .line 75
-    .line 76
-    .line 77
-    return-object v1
-
-    .line 78
-    :pswitch_1
-    sget v0, Lsu/happ/proxyutility/service/XRayVpnService;->m0:I
-
-    .line 79
-    .line 80
-    new-instance v0, Landroid/net/NetworkRequest$Builder;
-
-    .line 81
-    .line 82
-    invoke-direct {v0}, Landroid/net/NetworkRequest$Builder;-><init>()V
-
-    .line 83
-    .line 84
-    .line 85
-    const/16 v1, 0xc
-
-    .line 86
-    .line 87
-    invoke-virtual {v0, v1}, Landroid/net/NetworkRequest$Builder;->addCapability(I)Landroid/net/NetworkRequest$Builder;
-
-    .line 88
-    .line 89
-    .line 90
-    move-result-object v0
-
-    .line 91
-    const/16 v1, 0xd
-
-    .line 92
-    .line 93
-    invoke-virtual {v0, v1}, Landroid/net/NetworkRequest$Builder;->addCapability(I)Landroid/net/NetworkRequest$Builder;
-
-    .line 94
-    .line 95
-    .line 96
-    move-result-object v0
-
-    .line 97
-    invoke-virtual {v0}, Landroid/net/NetworkRequest$Builder;->build()Landroid/net/NetworkRequest;
-
-    .line 98
-    .line 99
-    .line 100
-    move-result-object v0
-
-    .line 101
-    return-object v0
-
-    .line 102
-    :pswitch_2
-    sget v0, Lsu/happ/proxyutility/service/XRayVpnService;->m0:I
-
-    .line 103
-    .line 104
-    new-instance v0, Lsu/happ/proxyutility/service/XRayServiceManager$VpnMessageReceiver;
-
-    .line 105
-    .line 106
-    invoke-direct {v0}, Landroid/content/BroadcastReceiver;-><init>()V
-
-    .line 107
-    .line 108
-    .line 109
-    return-object v0
-
-    .line 110
-    :pswitch_3
-    sget v0, Lsu/happ/proxyutility/service/XRayVpnService;->m0:I
-
-    .line 111
-    .line 112
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
-    .line 113
-    .line 114
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
-
-    .line 115
-    .line 116
-    .line 117
-    move-result-object v0
-
-    .line 118
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->f()Llq5;
-
-    .line 119
-    .line 120
-    .line 121
-    move-result-object v0
-
-    .line 122
-    return-object v0
-
-    .line 123
-    :pswitch_4
-    sget v0, Lsu/happ/proxyutility/service/XRayVpnService;->m0:I
-
-    .line 124
-    .line 125
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
-    .line 126
-    .line 127
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
-
-    .line 128
-    .line 129
-    .line 130
-    move-result-object v0
-
-    .line 131
-    iget-object v0, v0, Lsu/happ/proxyutility/HappApplication;->g0:Lzu6;
-
-    .line 132
-    .line 133
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
-
-    .line 134
-    .line 135
-    .line 136
-    move-result-object v0
-
-    .line 137
-    check-cast v0, Lpr1;
-
-    .line 138
-    .line 139
-    return-object v0
-
-    .line 140
-    :pswitch_5
-    sget v0, Lsu/happ/proxyutility/service/XRayVpnService;->m0:I
-
-    .line 141
-    .line 142
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
-    .line 143
-    .line 144
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
-
-    .line 145
-    .line 146
-    .line 147
-    move-result-object v0
-
-    .line 148
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->e()Lv65;
-
-    .line 149
-    .line 150
-    .line 151
-    move-result-object v0
-
-    .line 152
-    return-object v0
-
-    .line 153
-    :pswitch_6
-    sget v0, Lsu/happ/proxyutility/service/XRayVpnService;->m0:I
-
-    .line 154
-    .line 155
-    sget-object v0, Le54;->a:Le54;
-
-    .line 156
-    .line 157
-    invoke-static {}, Le54;->l()Lcom/tencent/mmkv/MMKV;
-
-    .line 158
-    .line 159
-    .line 160
-    move-result-object v0
-
-    .line 161
-    return-object v0
-
-    .line 162
-    :pswitch_7
-    sget-object v0, Lsu/happ/proxyutility/service/XRayTestService;->S:Lzu6;
-
-    .line 163
-    .line 164
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
-    .line 165
-    .line 166
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
-
-    .line 167
-    .line 168
-    .line 169
-    move-result-object v0
-
-    .line 170
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->f()Llq5;
-
-    .line 171
-    .line 172
-    .line 173
-    move-result-object v0
-
-    .line 174
-    return-object v0
-
-    .line 175
-    :pswitch_8
-    sget-object v0, Lsu/happ/proxyutility/service/XRayTestService;->S:Lzu6;
-
-    .line 176
-    .line 177
-    invoke-static {}, Ltv3;->C()Ljava/lang/String;
-
-    .line 178
-    .line 179
-    .line 180
-    move-result-object v0
-
-    .line 181
-    invoke-static {v1, v0}, Lcom/tencent/mmkv/MMKV;->u(Ljava/lang/String;Ljava/lang/String;)Lcom/tencent/mmkv/MMKV;
-
-    .line 182
-    .line 183
-    .line 184
-    move-result-object v0
-
-    .line 185
-    return-object v0
-
-    .line 186
-    :pswitch_9
-    sget-object v0, Lsu/happ/proxyutility/service/XRayTestService;->S:Lzu6;
-
-    .line 187
-    .line 188
-    invoke-static {v3}, Ljava/util/concurrent/Executors;->newFixedThreadPool(I)Ljava/util/concurrent/ExecutorService;
-
-    .line 189
-    .line 190
-    .line 191
-    move-result-object v0
-
-    .line 192
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 193
-    .line 194
-    .line 195
-    new-instance v1, Lls1;
-
-    .line 196
-    .line 197
-    invoke-direct {v1, v0}, Lls1;-><init>(Ljava/util/concurrent/Executor;)V
-
-    .line 198
-    .line 199
-    .line 200
-    invoke-static {v1}, Ll73;->G(Lsw0;)Lvv0;
-
-    .line 201
-    .line 202
-    .line 203
-    move-result-object v0
-
-    .line 204
-    return-object v0
-
-    .line 205
-    :pswitch_a
-    sget-object v0, Lsu/happ/proxyutility/service/XRayTestService;->S:Lzu6;
-
-    .line 206
-    .line 207
-    invoke-static {v3}, Ljava/util/concurrent/Executors;->newFixedThreadPool(I)Ljava/util/concurrent/ExecutorService;
-
-    .line 208
-    .line 209
-    .line 210
-    move-result-object v0
-
-    .line 211
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 212
-    .line 213
-    .line 214
-    new-instance v1, Lls1;
-
-    .line 215
-    .line 216
-    invoke-direct {v1, v0}, Lls1;-><init>(Ljava/util/concurrent/Executor;)V
-
-    .line 217
-    .line 218
-    .line 219
-    invoke-static {v1}, Ll73;->G(Lsw0;)Lvv0;
-
-    .line 220
-    .line 221
-    .line 222
-    move-result-object v0
-
-    .line 223
-    return-object v0
-
-    .line 224
-    :pswitch_b
-    sget-object v0, Lsu/happ/proxyutility/service/XRayTestService;->S:Lzu6;
-
-    .line 225
-    .line 226
-    invoke-static {v3}, Ljava/util/concurrent/Executors;->newFixedThreadPool(I)Ljava/util/concurrent/ExecutorService;
-
-    .line 227
-    .line 228
-    .line 229
-    move-result-object v0
-
-    .line 230
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 231
-    .line 232
-    .line 233
-    new-instance v1, Lls1;
-
-    .line 234
-    .line 235
-    invoke-direct {v1, v0}, Lls1;-><init>(Ljava/util/concurrent/Executor;)V
-
-    .line 236
-    .line 237
-    .line 238
-    invoke-static {v1}, Ll73;->G(Lsw0;)Lvv0;
-
-    .line 239
-    .line 240
-    .line 241
-    move-result-object v0
-
-    .line 242
-    return-object v0
-
-    .line 243
-    :pswitch_c
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
-    .line 244
-    .line 245
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
-
-    .line 246
-    .line 247
-    .line 248
-    move-result-object v0
-
-    .line 249
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->d()Lxp3;
-
-    .line 250
-    .line 251
-    .line 252
-    move-result-object v0
-
-    .line 253
-    return-object v0
-
-    .line 254
-    :pswitch_d
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
-    .line 255
-    .line 256
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
-
-    .line 257
-    .line 258
-    .line 259
-    move-result-object v0
-
-    .line 260
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->f()Llq5;
-
-    .line 261
-    .line 262
-    .line 263
-    move-result-object v0
-
-    .line 264
-    return-object v0
-
-    .line 265
-    :pswitch_e
-    sget-object v0, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
-
-    .line 266
-    .line 267
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
-
-    .line 268
-    .line 269
-    .line 270
-    move-result-object v0
-
-    .line 271
-    invoke-virtual {v0}, Lsu/happ/proxyutility/HappApplication;->b()Lmw0;
-
-    .line 272
-    .line 273
-    .line 274
-    move-result-object v0
-
-    .line 275
-    return-object v0
-
-    .line 276
-    :pswitch_f
-    invoke-static {}, Ltv3;->C()Ljava/lang/String;
-
-    .line 277
-    .line 278
-    .line 279
-    move-result-object v0
-
-    .line 280
-    invoke-static {v1, v0}, Lcom/tencent/mmkv/MMKV;->u(Ljava/lang/String;Ljava/lang/String;)Lcom/tencent/mmkv/MMKV;
-
-    .line 281
-    .line 282
-    .line 283
-    move-result-object v0
-
-    .line 284
-    return-object v0
-
-    .line 285
-    :pswitch_10
-    const-string v0, "SETTING"
-
-    .line 286
-    .line 287
-    invoke-static {}, Ltv3;->C()Ljava/lang/String;
-
-    .line 288
-    .line 289
-    .line 290
-    move-result-object v1
-
-    .line 291
-    invoke-static {v0, v1}, Lcom/tencent/mmkv/MMKV;->u(Ljava/lang/String;Ljava/lang/String;)Lcom/tencent/mmkv/MMKV;
-
-    .line 292
-    .line 293
-    .line 294
-    move-result-object v0
-
-    .line 295
-    return-object v0
-
-    .line 296
-    :pswitch_11
-    const-string v0, "MAIN"
-
-    .line 297
-    .line 298
-    invoke-static {}, Ltv3;->C()Ljava/lang/String;
-
-    .line 299
-    .line 300
-    .line 301
-    move-result-object v1
-
-    .line 302
-    invoke-static {v0, v1}, Lcom/tencent/mmkv/MMKV;->u(Ljava/lang/String;Ljava/lang/String;)Lcom/tencent/mmkv/MMKV;
-
-    .line 303
-    .line 304
-    .line 305
-    move-result-object v0
-
-    .line 306
-    return-object v0
-
-    .line 307
-    :pswitch_12
-    sget v0, Lsu/happ/proxyutility/service/XRayProxyOnlyService;->X:I
-
-    .line 308
-    .line 309
-    new-instance v0, Lsu/happ/proxyutility/service/XRayServiceManager$VpnMessageReceiver;
-
-    .line 310
-    .line 311
-    invoke-direct {v0}, Landroid/content/BroadcastReceiver;-><init>()V
-
-    .line 312
-    .line 313
-    .line 314
-    return-object v0
-
-    .line 315
-    :pswitch_13
-    sget v0, Lsu/happ/proxyutility/service/XRayProxyOnlyService;->X:I
-
-    .line 316
-    .line 317
-    sget-object v0, Le54;->a:Le54;
-
-    .line 318
-    .line 319
-    invoke-static {}, Le54;->l()Lcom/tencent/mmkv/MMKV;
-
-    .line 320
-    .line 321
-    .line 322
-    move-result-object v0
-
-    .line 323
-    return-object v0
-
-    .line 324
-    nop
-
-    .line 325
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_13
-        :pswitch_12
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 7
+    return-object p0
 .end method

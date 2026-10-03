@@ -1,14 +1,55 @@
-.class public interface abstract Lnj;
+.class public final Lnj;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Ldk;
+
+# instance fields
+.field public a:Lmj;
+
+.field public final synthetic b:Lpj;
+
+
+# direct methods
+.method public constructor <init>(Lpj;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lnj;->b:Lpj;
+
+    .line 5
+    .line 6
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract n(Lvm3;Lx45;Lod3;)Ljava/lang/Object;
-.end method
+.method public final a()Z
+    .locals 2
 
-.method public abstract p(Lvm3;Lx45;Lod3;)Ljava/lang/Object;
+    .line 1
+    iget-object v0, p0, Lnj;->a:Lmj;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Landroid/animation/ValueAnimator;->unregisterDurationScaleChangeListener(Landroid/animation/ValueAnimator$DurationScaleChangeListener;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const/4 v1, 0x0
+
+    .line 8
+    iput-object v1, p0, Lnj;->a:Lmj;
+
+    .line 9
+    .line 10
+    return v0
 .end method

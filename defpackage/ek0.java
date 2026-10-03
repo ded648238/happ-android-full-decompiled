@@ -1,27 +1,45 @@
 package defpackage;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Constructor;
+import java.util.concurrent.ScheduledFuture;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ek0 {
-    public final Constructor a;
-    public transient Annotation[] b;
-    public transient Annotation[][] c;
-    public int d = -1;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ek0 implements fk0 {
+    public final /* synthetic */ int X;
+    public final Object Y;
 
-    public ek0(Constructor constructor) {
-        this.a = constructor;
+    public /* synthetic */ ek0(int i, Object obj) {
+        this.X = i;
+        this.Y = obj;
     }
 
-    public final int a() {
-        int i = this.d;
-        if (i >= 0) {
-            return i;
+    @Override // defpackage.fk0
+    public final void b(Throwable th) {
+        int i = this.X;
+        Object obj = this.Y;
+        switch (i) {
+            case 0:
+                ((ScheduledFuture) obj).cancel(false);
+                break;
+            case 1:
+                ((mi2) obj).invoke(th);
+                break;
+            default:
+                ((um1) obj).a();
+                break;
         }
-        int parameterCount = this.a.getParameterCount();
-        this.d = parameterCount;
-        return parameterCount;
+    }
+
+    public final String toString() {
+        int i = this.X;
+        Object obj = this.Y;
+        switch (i) {
+            case 0:
+                return "CancelFutureOnCancel[" + ((ScheduledFuture) obj) + ']';
+            case 1:
+                return "CancelHandler.UserSupplied[" + ((mi2) obj).getClass().getSimpleName() + '@' + da1.K(this) + ']';
+            default:
+                return "DisposeOnCancel[" + ((um1) obj) + ']';
+        }
     }
 }

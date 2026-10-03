@@ -1,20 +1,12 @@
-.class public abstract Lo22;
+.class public final Lo22;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final a:Lb94;
+.field public static volatile a:Lo22;
 
-.field public static b:I
-
-.field public static c:I
-
-.field public static final d:Lk94;
-
-.field public static final e:Lte;
-
-.field public static final f:Lte;
+.field public static final b:Lo22;
 
 
 # direct methods
@@ -22,70 +14,156 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lb94;
+    new-instance v0, Lo22;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lb94;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lo22;->a:Lb94;
+    sget-object v1, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
 
     .line 7
     .line 8
-    const/4 v0, 0x1
+    sput-object v0, Lo22;->b:Lo22;
 
     .line 9
-    sput v0, Lo22;->c:I
+    .line 10
+    return-void
+.end method
+
+.method public static a()Lo22;
+    .locals 4
+
+    .line 1
+    sget-object v0, Lop5;->c:Lop5;
+
+    .line 2
+    .line 3
+    sget-object v0, Lo22;->a:Lo22;
+
+    .line 4
+    .line 5
+    if-nez v0, :cond_3
+
+    .line 6
+    .line 7
+    const-class v1, Lo22;
+
+    .line 8
+    .line 9
+    monitor-enter v1
 
     .line 10
+    :try_start_0
+    sget-object v0, Lo22;->a:Lo22;
+
     .line 11
-    new-instance v0, Lk94;
-
     .line 12
-    .line 13
-    invoke-direct {v0}, Lk94;-><init>()V
+    if-nez v0, :cond_2
 
+    .line 13
     .line 14
+    const-string v0, "getEmptyRegistry"
+
     .line 15
     .line 16
-    sput-object v0, Lo22;->d:Lk94;
+    sget-object v2, Ll22;->a:Ljava/lang/Class;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 17
     .line 18
-    new-instance v0, Lte;
+    const/4 v3, 0x0
 
     .line 19
-    .line 20
-    const/4 v1, 0x2
+    if-nez v2, :cond_0
 
+    .line 20
     .line 21
-    invoke-direct {v0, v1}, Lte;-><init>(I)V
+    goto :goto_0
 
     .line 22
+    :cond_0
+    :try_start_1
+    invoke-virtual {v2, v0, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
     .line 23
     .line 24
-    sput-object v0, Lo22;->e:Lte;
-
     .line 25
+    move-result-object v0
+
     .line 26
-    new-instance v0, Lte;
+    invoke-virtual {v0, v3, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 27
     .line 28
-    const/4 v1, 0x3
-
     .line 29
-    invoke-direct {v0, v1}, Lte;-><init>(I)V
+    move-result-object v0
 
     .line 30
+    check-cast v0, Lo22;
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 31
     .line 32
-    sput-object v0, Lo22;->f:Lte;
+    move-object v3, v0
 
     .line 33
+    :catch_0
+    :goto_0
+    if-eqz v3, :cond_1
+
     .line 34
-    return-void
+    .line 35
+    move-object v0, v3
+
+    .line 36
+    goto :goto_1
+
+    .line 37
+    :cond_1
+    :try_start_2
+    sget-object v0, Lo22;->b:Lo22;
+
+    .line 38
+    .line 39
+    :goto_1
+    sput-object v0, Lo22;->a:Lo22;
+
+    .line 40
+    .line 41
+    goto :goto_2
+
+    .line 42
+    :catchall_0
+    move-exception v0
+
+    .line 43
+    goto :goto_3
+
+    .line 44
+    :cond_2
+    :goto_2
+    monitor-exit v1
+
+    .line 45
+    return-object v0
+
+    .line 46
+    :goto_3
+    monitor-exit v1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 47
+    throw v0
+
+    .line 48
+    :cond_3
+    return-object v0
 .end method

@@ -1,30 +1,16 @@
 package defpackage;
 
-import java.util.UUID;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class aq7 {
+    public static final r50 a = new r50((an3) null, false);
+    public static final r50 b = new r50((an3) null, true);
+    public static final r50 c;
+    public static final r50 d;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class aq7 extends j42 {
-    public final String b;
-    public int c;
-
-    public aq7(wc0 wc0Var) {
-        super(wc0Var);
-        this.b = "virtual-" + wc0Var.b() + "-" + UUID.randomUUID().toString();
-    }
-
-    @Override // defpackage.j42, defpackage.wc0
-    public final int a() {
-        return g(0);
-    }
-
-    @Override // defpackage.j42, defpackage.wc0
-    public final String b() {
-        return this.b;
-    }
-
-    @Override // defpackage.j42, defpackage.wc0
-    public final int g(int i) {
-        return h77.f(this.a.g(i) - this.c);
+    static {
+        an3 an3Var = an3.A0;
+        c = new r50(an3Var, false);
+        d = new r50(an3Var, true);
     }
 }

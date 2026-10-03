@@ -1,39 +1,38 @@
 package com.google.gson;
 
-import defpackage.h43;
-import defpackage.r23;
-import java.io.IOException;
+import defpackage.nk3;
+import defpackage.xi3;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class b {
     public final b a() {
         return !(this instanceof TypeAdapter$NullSafeTypeAdapter) ? new b() { // from class: com.google.gson.TypeAdapter$NullSafeTypeAdapter
             @Override // com.google.gson.b
-            public final Object b(r23 r23Var) throws IOException {
-                if (r23Var.k0() != 9) {
-                    return this.a.b(r23Var);
+            public final Object b(xi3 xi3Var) {
+                if (xi3Var.t0() != 9) {
+                    return b.this.b(xi3Var);
                 }
-                r23Var.R();
+                xi3Var.X();
                 return null;
             }
 
             @Override // com.google.gson.b
-            public final void c(h43 h43Var, Object obj) throws IOException {
+            public final void c(nk3 nk3Var, Object obj) {
                 if (obj == null) {
-                    h43Var.v();
+                    nk3Var.v();
                 } else {
-                    this.a.c(h43Var, obj);
+                    b.this.c(nk3Var, obj);
                 }
             }
 
             public final String toString() {
-                return "NullSafeTypeAdapter[" + this.a + "]";
+                return "NullSafeTypeAdapter[" + b.this + "]";
             }
         } : this;
     }
 
-    public abstract Object b(r23 r23Var);
+    public abstract Object b(xi3 xi3Var);
 
-    public abstract void c(h43 h43Var, Object obj);
+    public abstract void c(nk3 nk3Var, Object obj);
 }

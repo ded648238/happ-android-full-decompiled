@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/metrics/OptionalMethod;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -150,17 +150,17 @@
 
 # virtual methods
 .method public varargs invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/metrics/OptionalMethod;->cachedMethod:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lorg/conscrypt/metrics/OptionalMethod;->cachedMethod:Ljava/lang/reflect/Method;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 4
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 5
     .line 6
@@ -173,60 +173,60 @@
     .line 9
     :cond_0
     :try_start_0
-    invoke-virtual {v0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     .line 11
     .line 12
-    move-result-object p1
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 13
-    return-object p1
+    return-object p0
 
     .line 14
     :catch_0
     :cond_1
     :goto_0
-    return-object v1
+    return-object v0
 .end method
 
 .method public varargs invokeStatic([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/metrics/OptionalMethod;->cachedMethod:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lorg/conscrypt/metrics/OptionalMethod;->cachedMethod:Ljava/lang/reflect/Method;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 4
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 5
     .line 6
-    return-object v1
+    return-object v0
 
     .line 7
     :cond_0
     :try_start_0
-    invoke-virtual {v0, v1, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 11
-    return-object p1
+    return-object p0
 
     .line 12
     :catch_0
-    return-object v1
+    return-object v0
 .end method

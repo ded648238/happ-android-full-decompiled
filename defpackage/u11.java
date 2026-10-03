@@ -1,42 +1,38 @@
 package defpackage;
 
-import su.happ.proxyutility.dto.XRayConfig;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class u11 {
+    public final int a;
+    public final long b;
+    public final v11 c;
+    public final mh5 d;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class u11 {
-    public static final l11 Companion = new l11();
-    public static final p11 a;
-
-    static {
-        new t11(1L).b(XRayConfig.OutboundBean.StreamSettingsBean.KcpSettingsBean.ttiMax).b(XRayConfig.OutboundBean.StreamSettingsBean.KcpSettingsBean.ttiMax).b(XRayConfig.OutboundBean.StreamSettingsBean.KcpSettingsBean.ttiMax).b(60).b(60);
-        a = new p11(1);
-        new p11(7);
-        new r11(1);
-        long j = ((long) 1) * 3;
-        int i = (int) j;
-        if (j != i) {
-            throw new ArithmeticException();
-        }
-        new r11(i);
-        long j2 = ((long) 1) * 12;
-        int i2 = (int) j2;
-        if (j2 != i2) {
-            throw new ArithmeticException();
-        }
-        new r11(i2);
-        long j3 = ((long) i2) * 100;
-        int i3 = (int) j3;
-        if (j3 != i3) {
-            throw new ArithmeticException();
-        }
-        new r11(i3);
+    public u11(int i, long j, v11 v11Var, mh5 mh5Var) {
+        this.a = i;
+        this.b = j;
+        this.c = v11Var;
+        this.d = mh5Var;
     }
 
-    public static String a(int i, String str) {
-        if (i == 1) {
-            return str;
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        return i + '-' + str;
+        if (!(obj instanceof u11)) {
+            return false;
+        }
+        u11 u11Var = (u11) obj;
+        return this.a == u11Var.a && this.b == u11Var.b && this.c == u11Var.c && m93.h(this.d, u11Var.d);
+    }
+
+    public final int hashCode() {
+        int hashCode = (this.c.hashCode() + w31.e(Integer.hashCode(this.a) * 31, 31, this.b)) * 31;
+        mh5 mh5Var = this.d;
+        return hashCode + (mh5Var == null ? 0 : mh5Var.hashCode());
+    }
+
+    public final String toString() {
+        return "ContentCaptureEvent(id=" + this.a + ", timestamp=" + this.b + ", type=" + this.c + ", structureCompat=" + this.d + ")";
     }
 }

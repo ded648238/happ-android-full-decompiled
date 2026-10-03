@@ -10,130 +10,127 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import defpackage.d37;
-import defpackage.dk1;
-import defpackage.k18;
-import defpackage.t6;
-import defpackage.ub;
-import defpackage.v47;
-import defpackage.w47;
-import defpackage.x75;
+import defpackage.f7;
+import defpackage.ge;
+import defpackage.hs1;
+import defpackage.hv7;
+import defpackage.hx7;
+import defpackage.wr5;
+import defpackage.yl0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class AppCompatImageButton extends ImageButton {
-    public final t6 Q;
-    public final k18 R;
-    public boolean S;
+    public final f7 c0;
+    public final ge d0;
+    public boolean e0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AppCompatImageButton(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        v47.a(context);
-        this.S = false;
-        d37.a(this, getContext());
-        t6 t6Var = new t6(this);
-        this.Q = t6Var;
-        t6Var.y(attributeSet, i);
-        k18 k18Var = new k18(this);
-        this.R = k18Var;
-        k18Var.c(attributeSet, i);
+        this.e0 = false;
+        hv7.a(this, getContext());
+        f7 f7Var = new f7(this);
+        this.c0 = f7Var;
+        f7Var.y(attributeSet, i);
+        ge geVar = new ge(this);
+        this.d0 = geVar;
+        geVar.k(attributeSet, i);
     }
 
     @Override // android.widget.ImageView, android.view.View
     public final void drawableStateChanged() {
         super.drawableStateChanged();
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.b();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.b();
         }
-        k18 k18Var = this.R;
-        if (k18Var != null) {
-            k18Var.a();
+        ge geVar = this.d0;
+        if (geVar != null) {
+            geVar.d();
         }
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            return t6Var.v();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            return f7Var.v();
         }
         return null;
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            return t6Var.w();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            return f7Var.w();
         }
         return null;
     }
 
     public ColorStateList getSupportImageTintList() {
-        w47 w47Var;
-        k18 k18Var = this.R;
-        if (k18Var == null || (w47Var = (w47) k18Var.T) == null) {
+        hx7 hx7Var;
+        ge geVar = this.d0;
+        if (geVar == null || (hx7Var = (hx7) geVar.c0) == null) {
             return null;
         }
-        return w47Var.a;
+        return hx7Var.a;
     }
 
     public PorterDuff.Mode getSupportImageTintMode() {
-        w47 w47Var;
-        k18 k18Var = this.R;
-        if (k18Var == null || (w47Var = (w47) k18Var.T) == null) {
+        hx7 hx7Var;
+        ge geVar = this.d0;
+        if (geVar == null || (hx7Var = (hx7) geVar.c0) == null) {
             return null;
         }
-        return w47Var.b;
+        return hx7Var.b;
     }
 
     @Override // android.widget.ImageView, android.view.View
     public final boolean hasOverlappingRendering() {
-        return !(((ImageView) this.R.S).getBackground() instanceof RippleDrawable) && super.hasOverlappingRendering();
+        return !(((ImageView) this.d0.Z).getBackground() instanceof RippleDrawable) && super.hasOverlappingRendering();
     }
 
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.A();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.A();
         }
     }
 
     @Override // android.view.View
     public void setBackgroundResource(int i) {
         super.setBackgroundResource(i);
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.B(i);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.B(i);
         }
     }
 
     @Override // android.widget.ImageView
     public void setImageBitmap(Bitmap bitmap) {
         super.setImageBitmap(bitmap);
-        k18 k18Var = this.R;
-        if (k18Var != null) {
-            k18Var.a();
+        ge geVar = this.d0;
+        if (geVar != null) {
+            geVar.d();
         }
     }
 
     @Override // android.widget.ImageView
     public void setImageDrawable(Drawable drawable) {
-        k18 k18Var = this.R;
-        if (k18Var != null && drawable != null && !this.S) {
-            k18Var.R = drawable.getLevel();
+        ge geVar = this.d0;
+        if (geVar != null && drawable != null && !this.e0) {
+            geVar.Y = drawable.getLevel();
         }
         super.setImageDrawable(drawable);
-        if (k18Var != null) {
-            k18Var.a();
-            if (this.S) {
+        if (geVar != null) {
+            geVar.d();
+            if (this.e0) {
                 return;
             }
-            ImageView imageView = (ImageView) k18Var.S;
+            ImageView imageView = (ImageView) geVar.Z;
             if (imageView.getDrawable() != null) {
-                imageView.getDrawable().setLevel(k18Var.R);
+                imageView.getDrawable().setLevel(geVar.Y);
             }
         }
     }
@@ -141,75 +138,75 @@ public class AppCompatImageButton extends ImageButton {
     @Override // android.widget.ImageView
     public void setImageLevel(int i) {
         super.setImageLevel(i);
-        this.S = true;
+        this.e0 = true;
     }
 
     @Override // android.widget.ImageView
     public void setImageResource(int i) {
-        k18 k18Var = this.R;
-        ImageView imageView = (ImageView) k18Var.S;
+        ge geVar = this.d0;
+        ImageView imageView = (ImageView) geVar.Z;
         if (i != 0) {
-            Drawable drawableY = ub.y(imageView.getContext(), i);
-            if (drawableY != null) {
-                dk1.a(drawableY);
+            Drawable u = yl0.u(imageView.getContext(), i);
+            if (u != null) {
+                hs1.a(u);
             }
-            imageView.setImageDrawable(drawableY);
+            imageView.setImageDrawable(u);
         } else {
             imageView.setImageDrawable(null);
         }
-        k18Var.a();
+        geVar.d();
     }
 
     @Override // android.widget.ImageView
     public void setImageURI(Uri uri) {
         super.setImageURI(uri);
-        k18 k18Var = this.R;
-        if (k18Var != null) {
-            k18Var.a();
+        ge geVar = this.d0;
+        if (geVar != null) {
+            geVar.d();
         }
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.K(colorStateList);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.L(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.L(mode);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.M(mode);
         }
     }
 
     public void setSupportImageTintList(ColorStateList colorStateList) {
-        k18 k18Var = this.R;
-        if (k18Var != null) {
-            if (((w47) k18Var.T) == null) {
-                k18Var.T = new w47();
+        ge geVar = this.d0;
+        if (geVar != null) {
+            if (((hx7) geVar.c0) == null) {
+                geVar.c0 = new hx7();
             }
-            w47 w47Var = (w47) k18Var.T;
-            w47Var.a = colorStateList;
-            w47Var.d = true;
-            k18Var.a();
+            hx7 hx7Var = (hx7) geVar.c0;
+            hx7Var.a = colorStateList;
+            hx7Var.d = true;
+            geVar.d();
         }
     }
 
     public void setSupportImageTintMode(PorterDuff.Mode mode) {
-        k18 k18Var = this.R;
-        if (k18Var != null) {
-            if (((w47) k18Var.T) == null) {
-                k18Var.T = new w47();
+        ge geVar = this.d0;
+        if (geVar != null) {
+            if (((hx7) geVar.c0) == null) {
+                geVar.c0 = new hx7();
             }
-            w47 w47Var = (w47) k18Var.T;
-            w47Var.b = mode;
-            w47Var.c = true;
-            k18Var.a();
+            hx7 hx7Var = (hx7) geVar.c0;
+            hx7Var.b = mode;
+            hx7Var.c = true;
+            geVar.d();
         }
     }
 
     public AppCompatImageButton(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, x75.imageButtonStyle);
+        this(context, attributeSet, wr5.imageButtonStyle);
     }
 }

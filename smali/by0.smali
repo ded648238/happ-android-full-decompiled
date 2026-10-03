@@ -1,212 +1,169 @@
-.class public final Lby0;
-.super Landroid/database/ContentObserver;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lby0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic a:I
+# static fields
+.field public static final a:Ln05;
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public static final b:Ln05;
+
+.field public static final c:Ln05;
+
+.field public static final d:Ln05;
+
+.field public static final e:Ln05;
 
 
 # direct methods
-.method public constructor <init>(Les6;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    iput v0, p0, Lby0;->a:I
-
-    .line 3
-    .line 4
-    iput-object p1, p0, Lby0;->b:Ljava/lang/Object;
-
-    .line 5
-    .line 6
-    new-instance p1, Landroid/os/Handler;
-
-    .line 7
-    .line 8
-    invoke-direct {p1}, Landroid/os/Handler;-><init>()V
-
-    .line 9
-    .line 10
-    .line 11
-    invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
-
-    .line 12
-    .line 13
-    .line 14
-    return-void
-.end method
-
-.method public constructor <init>(Lo50;Landroid/os/Handler;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Lby0;->a:I
-
-    iput-object p1, p0, Lby0;->b:Ljava/lang/Object;
-
-    .line 15
-    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public deliverSelfNotifications()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lby0;->a:I
+    new-instance v0, Ln05;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const-string v1, "provider"
 
     .line 4
     .line 5
-    .line 6
-    invoke-super {p0}, Landroid/database/ContentObserver;->deliverSelfNotifications()Z
+    invoke-direct {v0, v1}, Ln05;-><init>(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
+    sput-object v0, Lby0;->a:Ln05;
+
     .line 9
-    move-result v0
-
     .line 10
-    return v0
-
-    .line 11
-    :pswitch_0
-    const/4 v0, 0x1
-
-    .line 12
-    return v0
-
-    .line 13
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public onChange(Z)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lby0;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-
-    .line 10
-    :pswitch_0
-    iget-object p1, p0, Lby0;->b:Ljava/lang/Object;
+    new-instance v0, Ln05;
 
     .line 11
     .line 12
-    check-cast p1, Les6;
+    invoke-direct {v0, v1}, Ln05;-><init>(Ljava/lang/String;)V
 
     .line 13
     .line 14
-    iget-boolean v0, p1, Ldy0;->R:Z
-
     .line 15
+    sput-object v0, Lby0;->b:Ln05;
+
     .line 16
-    if-eqz v0, :cond_0
-
     .line 17
+    new-instance v0, Ln05;
+
     .line 18
-    iget-object v0, p1, Ldy0;->S:Landroid/database/Cursor;
-
     .line 19
+    const-string v1, "compositionLocalMap"
+
     .line 20
-    if-eqz v0, :cond_0
-
     .line 21
-    .line 22
-    invoke-interface {v0}, Landroid/database/Cursor;->isClosed()Z
+    invoke-direct {v0, v1}, Ln05;-><init>(Ljava/lang/String;)V
 
+    .line 22
     .line 23
     .line 24
-    .line 25
-    move-result v0
+    sput-object v0, Lby0;->c:Ln05;
 
+    .line 25
     .line 26
-    if-nez v0, :cond_0
+    new-instance v0, Ln05;
 
     .line 27
     .line 28
-    iget-object v0, p1, Ldy0;->S:Landroid/database/Cursor;
+    const-string v1, "providers"
 
     .line 29
     .line 30
-    invoke-interface {v0}, Landroid/database/Cursor;->requery()Z
+    invoke-direct {v0, v1}, Ln05;-><init>(Ljava/lang/String;)V
 
     .line 31
     .line 32
     .line 33
-    move-result v0
+    sput-object v0, Lby0;->d:Ln05;
 
     .line 34
-    iput-boolean v0, p1, Ldy0;->Q:Z
-
     .line 35
-    .line 36
-    :cond_0
-    return-void
+    new-instance v0, Ln05;
 
+    .line 36
     .line 37
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    const-string v1, "reference"
+
+    .line 38
+    .line 39
+    invoke-direct {v0, v1}, Ln05;-><init>(Ljava/lang/String;)V
+
+    .line 40
+    .line 41
+    .line 42
+    sput-object v0, Lby0;->e:Ln05;
+
+    .line 43
+    .line 44
+    return-void
 .end method
 
-.method public onChange(ZLandroid/net/Uri;)V
-    .locals 1
+.method public static final a(Ljava/lang/String;)V
+    .locals 3
 
-    iget v0, p0, Lby0;->a:I
+    .line 1
+    new-instance v0, Lkx0;
 
-    packed-switch v0, :pswitch_data_0
+    .line 2
+    .line 3
+    const-string v1, "Compose Runtime internal error. Unexpected or incorrect use of the Compose internal runtime API ("
 
-    invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
+    .line 4
+    .line 5
+    const-string v2, "). Please report to Google or use https://goo.gle/compose-feedback"
 
-    return-void
+    .line 6
+    .line 7
+    invoke-static {v1, p0, v2}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 37
-    :pswitch_0
-    iget-object p1, p0, Lby0;->b:Ljava/lang/Object;
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
 
-    check-cast p1, Lo50;
+    .line 11
+    invoke-direct {v0, p0}, Lkx0;-><init>(Ljava/lang/String;)V
 
-    sget-object p2, Lbh7;->a:Lbh7;
+    .line 12
+    .line 13
+    .line 14
+    throw v0
+.end method
 
-    invoke-interface {p1, p2}, Lv36;->d(Ljava/lang/Object;)Ljava/lang/Object;
+.method public static final b(Ljava/lang/String;)Ljava/lang/Void;
+    .locals 3
 
-    return-void
+    .line 1
+    new-instance v0, Lkx0;
 
-    nop
+    .line 2
+    .line 3
+    const-string v1, "Compose Runtime internal error. Unexpected or incorrect use of the Compose internal runtime API ("
 
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
+    .line 4
+    .line 5
+    const-string v2, "). Please report to Google or use https://goo.gle/compose-feedback"
+
+    .line 6
+    .line 7
+    invoke-static {v1, p0, v2}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    invoke-direct {v0, p0}, Lkx0;-><init>(Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    throw v0
 .end method

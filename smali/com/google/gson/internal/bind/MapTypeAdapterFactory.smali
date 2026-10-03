@@ -1,9 +1,9 @@
 .class public final Lcom/google/gson/internal/bind/MapTypeAdapterFactory;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lwa7;
+.implements Lj38;
 
 
 # annotations
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final Q:Ld8;
+.field public final X:Lp8;
 
 
 # direct methods
-.method public constructor <init>(Ld8;)V
+.method public constructor <init>(Lp8;)V
     .locals 0
 
     .line 1
@@ -28,7 +28,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/gson/internal/bind/MapTypeAdapterFactory;->Q:Ld8;
+    iput-object p1, p0, Lcom/google/gson/internal/bind/MapTypeAdapterFactory;->X:Lp8;
 
     .line 5
     .line 6
@@ -37,15 +37,15 @@
 
 
 # virtual methods
-.method public final a(Lcom/google/gson/a;Ldd7;)Lcom/google/gson/b;
+.method public final a(Lcom/google/gson/a;Lm58;)Lcom/google/gson/b;
     .locals 7
 
     .line 1
-    iget-object v0, p2, Ldd7;->b:Ljava/lang/reflect/Type;
+    iget-object v0, p2, Lm58;->b:Ljava/lang/reflect/Type;
 
     .line 2
     .line 3
-    iget-object v1, p2, Ldd7;->a:Ljava/lang/Class;
+    iget-object v1, p2, Lm58;->a:Ljava/lang/Class;
 
     .line 4
     .line 5
@@ -65,10 +65,10 @@
 
     .line 12
     .line 13
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 14
-    return-object p1
+    return-object p0
 
     .line 15
     :cond_0
@@ -117,7 +117,7 @@
 
     .line 35
     :cond_1
-    invoke-static {v0, v1, v2}, Lbv7;->H(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/reflect/Type;
+    invoke-static {v0, v1, v2}, Lkp3;->H(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/reflect/Type;
 
     .line 36
     .line 37
@@ -194,16 +194,16 @@
 
     .line 71
     :cond_3
-    new-instance v2, Ldd7;
+    new-instance v2, Lm58;
 
     .line 72
     .line 73
-    invoke-direct {v2, v1}, Ldd7;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v2, v1}, Lm58;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 74
     .line 75
     .line 76
-    invoke-virtual {p1, v2}, Lcom/google/gson/a;->e(Ldd7;)Lcom/google/gson/b;
+    invoke-virtual {p1, v2}, Lcom/google/gson/a;->e(Lm58;)Lcom/google/gson/b;
 
     .line 77
     .line 78
@@ -230,16 +230,16 @@
     .line 86
     .line 87
     .line 88
-    new-instance v1, Ldd7;
+    new-instance v1, Lm58;
 
     .line 89
     .line 90
-    invoke-direct {v1, v0}, Ldd7;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v1, v0}, Lm58;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 91
     .line 92
     .line 93
-    invoke-virtual {p1, v1}, Lcom/google/gson/a;->e(Ldd7;)Lcom/google/gson/b;
+    invoke-virtual {p1, v1}, Lcom/google/gson/a;->e(Lm58;)Lcom/google/gson/b;
 
     .line 94
     .line 95
@@ -256,11 +256,11 @@
     .line 100
     .line 101
     .line 102
-    iget-object p1, p0, Lcom/google/gson/internal/bind/MapTypeAdapterFactory;->Q:Ld8;
+    iget-object p1, p0, Lcom/google/gson/internal/bind/MapTypeAdapterFactory;->X:Lp8;
 
     .line 103
     .line 104
-    invoke-virtual {p1, p2, v6}, Ld8;->n(Ldd7;Z)Lag4;
+    invoke-virtual {p1, p2, v6}, Lp8;->m(Lm58;Z)Llx4;
 
     .line 105
     .line 106
@@ -272,7 +272,7 @@
 
     .line 109
     .line 110
-    invoke-direct {p2, p0, v3, v2, p1}, Lcom/google/gson/internal/bind/MapTypeAdapterFactory$Adapter;-><init>(Lcom/google/gson/internal/bind/MapTypeAdapterFactory;Lcom/google/gson/b;Lcom/google/gson/b;Lag4;)V
+    invoke-direct {p2, p0, v3, v2, p1}, Lcom/google/gson/internal/bind/MapTypeAdapterFactory$Adapter;-><init>(Lcom/google/gson/internal/bind/MapTypeAdapterFactory;Lcom/google/gson/b;Lcom/google/gson/b;Llx4;)V
 
     .line 111
     .line 112

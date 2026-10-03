@@ -1,18 +1,18 @@
 .class public final Lio/sentry/android/core/performance/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public b:Lio/sentry/u4;
+.field public b:Lio/sentry/w4;
 
-.field public c:Lio/sentry/u4;
+.field public c:Lio/sentry/w4;
 
-.field public d:Lio/sentry/l1;
+.field public d:Lio/sentry/n1;
 
-.field public e:Lio/sentry/l1;
+.field public e:Lio/sentry/n1;
 
 
 # direct methods
@@ -28,19 +28,19 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, Lio/sentry/android/core/performance/b;->b:Lio/sentry/u4;
+    iput-object v0, p0, Lio/sentry/android/core/performance/b;->b:Lio/sentry/w4;
 
     .line 6
     .line 7
-    iput-object v0, p0, Lio/sentry/android/core/performance/b;->c:Lio/sentry/u4;
+    iput-object v0, p0, Lio/sentry/android/core/performance/b;->c:Lio/sentry/w4;
 
     .line 8
     .line 9
-    iput-object v0, p0, Lio/sentry/android/core/performance/b;->d:Lio/sentry/l1;
+    iput-object v0, p0, Lio/sentry/android/core/performance/b;->d:Lio/sentry/n1;
 
     .line 10
     .line 11
-    iput-object v0, p0, Lio/sentry/android/core/performance/b;->e:Lio/sentry/l1;
+    iput-object v0, p0, Lio/sentry/android/core/performance/b;->e:Lio/sentry/n1;
 
     .line 12
     .line 13
@@ -51,15 +51,15 @@
     return-void
 .end method
 
-.method public static a(Lio/sentry/l1;Ljava/lang/String;Lio/sentry/u4;)Lio/sentry/l1;
+.method public static a(Lio/sentry/n1;Ljava/lang/String;Lio/sentry/w4;)Lio/sentry/n1;
     .locals 1
 
     .line 1
-    sget-object v0, Lio/sentry/s1;->SENTRY:Lio/sentry/s1;
+    sget-object v0, Lio/sentry/u1;->SENTRY:Lio/sentry/u1;
 
     .line 2
     .line 3
-    invoke-interface {p0, p1, p2, v0}, Lio/sentry/l1;->d(Ljava/lang/String;Lio/sentry/u4;Lio/sentry/s1;)Lio/sentry/l1;
+    invoke-interface {p0, p1, p2, v0}, Lio/sentry/n1;->d(Ljava/lang/String;Lio/sentry/w4;Lio/sentry/u1;)Lio/sentry/n1;
 
     .line 4
     .line 5
@@ -103,7 +103,7 @@
 
     .line 24
     .line 25
-    invoke-interface {p0, p1, p2}, Lio/sentry/l1;->j(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-interface {p0, p1, p2}, Lio/sentry/n1;->j(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 26
     .line 27
@@ -116,7 +116,7 @@
 
     .line 31
     .line 32
-    invoke-interface {p0, p2, p1}, Lio/sentry/l1;->j(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-interface {p0, p2, p1}, Lio/sentry/n1;->j(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 33
     .line 34
@@ -129,7 +129,7 @@
 
     .line 38
     .line 39
-    invoke-interface {p0, p1, p2}, Lio/sentry/l1;->j(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-interface {p0, p1, p2}, Lio/sentry/n1;->j(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 40
     .line 41
@@ -138,7 +138,7 @@
 
     .line 43
     .line 44
-    invoke-interface {p0, p1, p2}, Lio/sentry/l1;->j(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-interface {p0, p1, p2}, Lio/sentry/n1;->j(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 45
     .line 46

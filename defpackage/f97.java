@@ -1,30 +1,41 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class f97 {
-    public static final f97 Q;
-    public static final f97 R;
-    public static final f97 S;
-    public static final /* synthetic */ f97[] T;
+import java.util.Iterator;
 
-    static {
-        f97 f97Var = new f97("ContinueTraversal", 0);
-        Q = f97Var;
-        f97 f97Var2 = new f97("SkipSubtreeAndContinueTraversal", 1);
-        R = f97Var2;
-        f97 f97Var3 = new f97("CancelTraversal", 2);
-        S = f97Var3;
-        T = new f97[]{f97Var, f97Var2, f97Var3};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class f97 implements dt6 {
+    public final /* synthetic */ g97 a;
+    public final /* synthetic */ String b;
+    public final /* synthetic */ String c;
+    public final /* synthetic */ ud8 d;
+    public final /* synthetic */ dy e;
+    public final /* synthetic */ dy f;
+
+    public /* synthetic */ f97(g97 g97Var, String str, String str2, ud8 ud8Var, dy dyVar, dy dyVar2) {
+        this.a = g97Var;
+        this.b = str;
+        this.c = str2;
+        this.d = ud8Var;
+        this.e = dyVar;
+        this.f = dyVar2;
     }
 
-    public static f97 valueOf(String str) {
-        return (f97) Enum.valueOf(f97.class, str);
-    }
-
-    public static f97[] values() {
-        return (f97[]) T.clone();
+    @Override // defpackage.dt6
+    public final void a(ft6 ft6Var) {
+        g97 g97Var = this.a;
+        if (g97Var.d() == null) {
+            return;
+        }
+        g97Var.I();
+        g97Var.G(g97Var.J(this.b, this.c, this.d, this.e, this.f));
+        g97Var.r();
+        yk8 yk8Var = g97Var.r;
+        yk8Var.getClass();
+        xv7.a();
+        Iterator it = yk8Var.X.iterator();
+        while (it.hasNext()) {
+            yk8Var.d((yc8) it.next());
+        }
     }
 }

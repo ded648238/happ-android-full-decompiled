@@ -1,22 +1,44 @@
 package defpackage;
 
-import java.util.Collections;
-import java.util.List;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ov5 {
+    public final b2 a;
+    public final String b;
+    public final Object[] c;
+    public final int d;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ov5 extends wv5 implements uv5 {
-    @Override // defpackage.uv5
-    public final List f() {
-        return Collections.EMPTY_LIST;
+    public ov5(il2 il2Var, String str, Object[] objArr) {
+        this.a = il2Var;
+        this.b = str;
+        this.c = objArr;
+        char charAt = str.charAt(0);
+        if (charAt < 55296) {
+            this.d = charAt;
+            return;
+        }
+        int i = charAt & 8191;
+        int i2 = 13;
+        int i3 = 1;
+        while (true) {
+            int i4 = i3 + 1;
+            char charAt2 = str.charAt(i3);
+            if (charAt2 < 55296) {
+                this.d = i | (charAt2 << i2);
+                return;
+            } else {
+                i |= (charAt2 & 8191) << i2;
+                i2 += 13;
+                i3 = i4;
+            }
+        }
     }
 
-    @Override // defpackage.yv5
-    public final String o() {
-        return "solidColor";
-    }
-
-    @Override // defpackage.uv5
-    public final void e(yv5 yv5Var) {
+    public final int a() {
+        int i = this.d;
+        if ((i & 1) != 0) {
+            return 1;
+        }
+        return (i & 4) == 4 ? 3 : 2;
     }
 }

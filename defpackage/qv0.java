@@ -1,39 +1,18 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class qv0 implements g72 {
-    public final /* synthetic */ int Q;
-    public final /* synthetic */ g72 R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class qv0 implements gh5 {
+    public final Object a;
+    public final z b;
 
-    public /* synthetic */ qv0(int i, g72 g72Var) {
-        this.Q = i;
-        this.R = g72Var;
+    public qv0(Object obj, z zVar) {
+        this.a = obj;
+        this.b = zVar;
     }
 
-    @Override // defpackage.g72
-    public final Object invoke() {
-        int i = this.Q;
-        g72 g72Var = this.R;
-        switch (i) {
-            case 0:
-                g72Var.invoke();
-                return bh7.a;
-            case 1:
-                g72Var.invoke();
-                return Boolean.TRUE;
-            case 2:
-                g72Var.invoke();
-                return Boolean.TRUE;
-            default:
-                float fFloatValue = ((Number) g72Var.invoke()).floatValue();
-                if (fFloatValue < 0.0f) {
-                    fFloatValue = 0.0f;
-                }
-                if (fFloatValue > 1.0f) {
-                    fFloatValue = 1.0f;
-                }
-                return Float.valueOf(fFloatValue);
-        }
+    @Override // defpackage.gh5
+    public final boolean test(Object obj) {
+        return m93.h(this.b.invoke(obj), this.a);
     }
 }

@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSslSignatureSlhDsa;
 .super Ljava/security/SignatureSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -48,10 +48,10 @@
     .end annotation
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object p1
+    return-object p0
 .end method
 
 .method public engineInitSign(Ljava/security/PrivateKey;)V
@@ -78,11 +78,11 @@
 
     .line 7
     .line 8
-    iget-object p1, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->reset()V
+    invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->reset()V
 
     .line 11
     .line 12
@@ -114,11 +114,11 @@
 
     .line 7
     .line 8
-    iget-object p1, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->reset()V
+    invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->reset()V
 
     .line 11
     .line 12
@@ -199,11 +199,11 @@
     move-result-object v0
 
     .line 27
-    iget-object v1, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
 
     .line 28
     .line 29
-    invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->reset()V
+    invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->reset()V
 
     .line 30
     .line 31
@@ -212,31 +212,31 @@
 
     .line 33
     :cond_0
-    new-instance v0, Ljava/security/SignatureException;
+    new-instance p0, Ljava/security/SignatureException;
 
     .line 34
     .line 35
-    const-string v1, "No privateKey provided"
+    const-string v0, "No privateKey provided"
 
     .line 36
     .line 37
-    invoke-direct {v0, v1}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
 
     .line 38
     .line 39
     .line 40
-    throw v0
+    throw p0
 .end method
 
 .method public engineUpdate(B)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
+    invoke-virtual {p0, p1}, Ljava/io/OutputStream;->write(I)V
 
     .line 4
     .line 5
@@ -245,12 +245,12 @@
 .end method
 
 .method public engineUpdate([BII)V
-    .locals 1
+    .locals 0
 
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
 
-    invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
+    invoke-virtual {p0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
 
     return-void
 .end method
@@ -316,45 +316,45 @@
     move-result p1
 
     .line 27
-    iget-object v0, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSignatureSlhDsa;->buffer:Lorg/conscrypt/ExposedByteArrayOutputStream;
 
     .line 28
     .line 29
-    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->reset()V
+    invoke-virtual {p0}, Ljava/io/ByteArrayOutputStream;->reset()V
 
     .line 30
     .line 31
     .line 32
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 33
-    if-ne p1, v0, :cond_0
+    if-ne p1, p0, :cond_0
 
     .line 34
     .line 35
-    return v0
+    return p0
 
     .line 36
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 37
-    return p1
+    return p0
 
     .line 38
     :cond_1
-    new-instance p1, Ljava/security/SignatureException;
+    new-instance p0, Ljava/security/SignatureException;
 
     .line 39
     .line 40
-    const-string v0, "No publicKey provided"
+    const-string p1, "No publicKey provided"
 
     .line 41
     .line 42
-    invoke-direct {p1, v0}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
 
     .line 43
     .line 44
     .line 45
-    throw p1
+    throw p0
 .end method

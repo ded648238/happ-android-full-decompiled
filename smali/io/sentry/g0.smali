@@ -1,3 +1,22 @@
-.class public final Lio/sentry/g0;
+.class public interface abstract Lio/sentry/g0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# virtual methods
+.method public a(Lio/sentry/q6;Lio/sentry/l0;)Lio/sentry/q6;
+    .locals 0
+
+    .line 1
+    return-object p1
+.end method
+
+.method public abstract b(Lio/sentry/f5;Lio/sentry/l0;)Lio/sentry/f5;
+.end method
+
+.method public c(Lio/sentry/protocol/f0;Lio/sentry/l0;)Lio/sentry/protocol/f0;
+    .locals 0
+
+    .line 1
+    return-object p1
+.end method

@@ -1,56 +1,38 @@
 package defpackage;
 
-import android.util.JsonReader;
-import android.util.JsonToken;
-import java.io.BufferedReader;
-import java.io.IOException;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class nv implements mx4 {
+    public static final nv a = new nv();
+    public static final r42 b = r42.a("sdkVersion");
+    public static final r42 c = r42.a("model");
+    public static final r42 d = r42.a("hardware");
+    public static final r42 e = r42.a("device");
+    public static final r42 f = r42.a("product");
+    public static final r42 g = r42.a("osBuild");
+    public static final r42 h = r42.a("manufacturer");
+    public static final r42 i = r42.a("fingerprint");
+    public static final r42 j = r42.a("locale");
+    public static final r42 k = r42.a("country");
+    public static final r42 l = r42.a("mccMnc");
+    public static final r42 m = r42.a("applicationBuild");
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class nv {
-    public final long a;
-
-    public nv(long j) {
-        this.a = j;
-    }
-
-    public static nv a(BufferedReader bufferedReader) throws IOException {
-        JsonReader jsonReader = new JsonReader(bufferedReader);
-        try {
-            jsonReader.beginObject();
-            while (jsonReader.hasNext()) {
-                if (jsonReader.nextName().equals("nextRequestWaitMillis")) {
-                    if (jsonReader.peek() == JsonToken.STRING) {
-                        nv nvVar = new nv(Long.parseLong(jsonReader.nextString()));
-                        jsonReader.close();
-                        return nvVar;
-                    }
-                    nv nvVar2 = new nv(jsonReader.nextLong());
-                    jsonReader.close();
-                    return nvVar2;
-                }
-                jsonReader.skipValue();
-            }
-            throw new IOException("Response is missing nextRequestWaitMillis field.");
-        } catch (Throwable th) {
-            jsonReader.close();
-            throw th;
-        }
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        return (obj instanceof nv) && this.a == ((nv) obj).a;
-    }
-
-    public final int hashCode() {
-        long j = this.a;
-        return ((int) (j ^ (j >>> 32))) ^ 1000003;
-    }
-
-    public final String toString() {
-        return "LogResponse{nextRequestWaitMillis=" + this.a + "}";
+    @Override // defpackage.vw1
+    public final void a(Object obj, Object obj2) {
+        eb ebVar = (eb) obj;
+        nx4 nx4Var = (nx4) obj2;
+        nx4Var.a(b, ((lw) ebVar).a);
+        lw lwVar = (lw) ebVar;
+        nx4Var.a(c, lwVar.b);
+        nx4Var.a(d, lwVar.c);
+        nx4Var.a(e, lwVar.d);
+        nx4Var.a(f, lwVar.e);
+        nx4Var.a(g, lwVar.f);
+        nx4Var.a(h, lwVar.g);
+        nx4Var.a(i, lwVar.h);
+        nx4Var.a(j, lwVar.i);
+        nx4Var.a(k, lwVar.j);
+        nx4Var.a(l, lwVar.k);
+        nx4Var.a(m, lwVar.l);
     }
 }

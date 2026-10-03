@@ -1,21 +1,21 @@
 .class public final Lio/sentry/android/core/ActivityBreadcrumbsIntegration;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/t1;
+.implements Lio/sentry/v1;
 .implements Ljava/io/Closeable;
 .implements Landroid/app/Application$ActivityLifecycleCallbacks;
 
 
 # instance fields
-.field public final Q:Landroid/app/Application;
+.field public final X:Landroid/app/Application;
 
-.field public R:Lio/sentry/j4;
+.field public Y:Lio/sentry/l4;
 
-.field public S:Z
+.field public Z:Z
 
-.field public final T:Lio/sentry/util/a;
+.field public final c0:Lio/sentry/util/a;
 
 
 # direct methods
@@ -32,16 +32,16 @@
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->T:Lio/sentry/util/a;
+    iput-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->c0:Lio/sentry/util/a;
 
     .line 10
     .line 11
-    iput-object p1, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Q:Landroid/app/Application;
+    iput-object p1, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->X:Landroid/app/Application;
 
     .line 12
     .line 13
@@ -50,15 +50,15 @@
 
 
 # virtual methods
-.method public final M(Lio/sentry/android/core/SentryAndroidOptions;)V
-    .locals 5
+.method public final R(Lio/sentry/android/core/SentryAndroidOptions;)V
+    .locals 4
 
     .line 1
-    sget-object v0, Lio/sentry/j4;->a:Lio/sentry/j4;
+    sget-object v0, Lio/sentry/l4;->a:Lio/sentry/l4;
 
     .line 2
     .line 3
-    iput-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->R:Lio/sentry/j4;
+    iput-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Y:Lio/sentry/l4;
 
     .line 4
     .line 5
@@ -70,11 +70,11 @@
     move-result v0
 
     .line 9
-    iput-boolean v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->S:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Z:Z
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p1}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 12
     .line 13
@@ -82,11 +82,11 @@
     move-result-object v0
 
     .line 15
-    sget-object v1, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v1, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 16
     .line 17
-    iget-boolean v2, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->S:Z
+    iget-boolean v2, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Z:Z
 
     .line 18
     .line 19
@@ -98,85 +98,82 @@
     move-result-object v2
 
     .line 23
-    const/4 v3, 0x1
+    filled-new-array {v2}, [Ljava/lang/Object;
 
     .line 24
-    new-array v3, v3, [Ljava/lang/Object;
-
     .line 25
     .line 26
-    const/4 v4, 0x0
+    move-result-object v2
 
     .line 27
-    aput-object v2, v3, v4
+    const-string v3, "ActivityBreadcrumbsIntegration enabled: %s"
 
     .line 28
     .line 29
-    const-string v2, "ActivityBreadcrumbsIntegration enabled: %s"
+    invoke-interface {v0, v1, v3, v2}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 30
     .line 31
-    invoke-interface {v0, v1, v2, v3}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
-
     .line 32
+    iget-boolean v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Z:Z
+
     .line 33
     .line 34
-    iget-boolean v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->S:Z
+    if-eqz v0, :cond_0
 
     .line 35
     .line 36
-    if-eqz v0, :cond_0
+    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->X:Landroid/app/Application;
 
     .line 37
     .line 38
-    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Q:Landroid/app/Application;
+    invoke-virtual {v0, p0}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
     .line 39
     .line 40
-    invoke-virtual {v0, p0}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
     .line 41
+    invoke-virtual {p1}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
+
     .line 42
     .line 43
-    invoke-virtual {p1}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
-
     .line 44
+    move-result-object p0
+
     .line 45
+    const/4 p1, 0x0
+
     .line 46
-    move-result-object p1
+    new-array p1, p1, [Ljava/lang/Object;
 
     .line 47
+    .line 48
     const-string v0, "ActivityBreadcrumbIntegration installed."
 
-    .line 48
     .line 49
-    new-array v2, v4, [Ljava/lang/Object;
-
     .line 50
-    .line 51
-    invoke-interface {p1, v1, v0, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, v1, v0, p1}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 51
     .line 52
     .line 53
+    const-string p0, "ActivityBreadcrumbs"
+
     .line 54
-    const-string p1, "ActivityBreadcrumbs"
-
     .line 55
-    .line 56
-    invoke-static {p1}, Lio/sentry/util/b;->a(Ljava/lang/String;)V
+    invoke-static {p0}, Lio/sentry/util/c;->a(Ljava/lang/String;)V
 
+    .line 56
     .line 57
     .line 58
-    .line 59
     :cond_0
     return-void
 .end method
 
 .method public final close()V
-    .locals 4
+    .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->S:Z
+    iget-boolean v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Z:Z
 
     .line 2
     .line 3
@@ -184,7 +181,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Q:Landroid/app/Application;
+    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->X:Landroid/app/Application;
 
     .line 6
     .line 7
@@ -193,46 +190,46 @@
     .line 8
     .line 9
     .line 10
-    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->R:Lio/sentry/j4;
+    iget-object p0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Y:Lio/sentry/l4;
 
     .line 11
     .line 12
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 13
     .line 14
-    invoke-virtual {v0}, Lio/sentry/j4;->h()Lio/sentry/m6;
+    invoke-virtual {p0}, Lio/sentry/l4;->j()Lio/sentry/o6;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    invoke-virtual {v0}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v0
+    move-result-object p0
 
     .line 22
-    sget-object v1, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v0, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 23
     .line 24
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 25
-    new-array v2, v2, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 26
     .line 27
-    const-string v3, "ActivityBreadcrumbsIntegration removed."
+    const-string v2, "ActivityBreadcrumbsIntegration removed."
 
     .line 28
     .line 29
-    invoke-interface {v0, v1, v3, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, v0, v2, v1}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 30
     .line 31
@@ -241,11 +238,11 @@
     return-void
 .end method
 
-.method public final f(Landroid/app/Activity;Ljava/lang/String;)V
+.method public final g(Landroid/app/Activity;Ljava/lang/String;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->R:Lio/sentry/j4;
+    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Y:Lio/sentry/l4;
 
     .line 2
     .line 3
@@ -270,7 +267,7 @@
 
     .line 12
     .line 13
-    iput-object v1, v0, Lio/sentry/g;->U:Ljava/lang/String;
+    iput-object v1, v0, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 14
     .line 15
@@ -312,23 +309,23 @@
 
     .line 34
     .line 35
-    iput-object p2, v0, Lio/sentry/g;->W:Ljava/lang/String;
+    iput-object p2, v0, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 36
     .line 37
-    sget-object p2, Lio/sentry/m5;->INFO:Lio/sentry/m5;
+    sget-object p2, Lio/sentry/o5;->INFO:Lio/sentry/o5;
 
     .line 38
     .line 39
-    iput-object p2, v0, Lio/sentry/g;->Y:Lio/sentry/m5;
+    iput-object p2, v0, Lio/sentry/g;->h0:Lio/sentry/o5;
 
     .line 40
     .line 41
-    new-instance p2, Lio/sentry/k0;
+    new-instance p2, Lio/sentry/l0;
 
     .line 42
     .line 43
-    invoke-direct {p2}, Lio/sentry/k0;-><init>()V
+    invoke-direct {p2}, Lio/sentry/l0;-><init>()V
 
     .line 44
     .line 45
@@ -337,16 +334,16 @@
 
     .line 47
     .line 48
-    invoke-virtual {p2, p1, v1}, Lio/sentry/k0;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {p2, p1, v1}, Lio/sentry/l0;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 49
     .line 50
     .line 51
-    iget-object p1, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->R:Lio/sentry/j4;
+    iget-object p0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->Y:Lio/sentry/l4;
 
     .line 52
     .line 53
-    invoke-virtual {p1, v0, p2}, Lio/sentry/j4;->a(Lio/sentry/g;Lio/sentry/k0;)V
+    invoke-virtual {p0, v0, p2}, Lio/sentry/l4;->a(Lio/sentry/g;Lio/sentry/l0;)V
 
     .line 54
     .line 55
@@ -358,446 +355,425 @@
     .locals 1
 
     .line 1
-    iget-object p2, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->T:Lio/sentry/util/a;
+    iget-object p2, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->c0:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    invoke-virtual {p2}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {p2}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object p2
-
-    .line 7
     :try_start_0
     const-string v0, "created"
 
+    .line 7
     .line 8
-    .line 9
-    invoke-virtual {p0, p1, v0}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->f(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v0}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->g(Landroid/app/Activity;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 9
     .line 10
     .line 11
-    .line 12
-    invoke-virtual {p2}, Lio/sentry/u;->close()V
+    invoke-virtual {p2}, Lio/sentry/util/a;->close()V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     return-void
 
-    .line 16
+    .line 15
     :catchall_0
-    move-exception p1
+    move-exception p0
 
-    .line 17
+    .line 16
     :try_start_1
-    invoke-virtual {p2}, Lio/sentry/u;->close()V
+    invoke-virtual {p2}, Lio/sentry/util/a;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 17
     .line 18
     .line 19
-    .line 20
     goto :goto_0
 
-    .line 21
+    .line 20
     :catchall_1
-    move-exception p2
+    move-exception p1
+
+    .line 21
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 22
-    invoke-virtual {p1, p2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
     .line 23
     .line 24
-    .line 25
     :goto_0
-    throw p1
+    throw p0
 .end method
 
 .method public final onActivityDestroyed(Landroid/app/Activity;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->T:Lio/sentry/util/a;
+    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->c0:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
     :try_start_0
     const-string v1, "destroyed"
 
+    .line 7
     .line 8
-    .line 9
-    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->f(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->g(Landroid/app/Activity;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 9
     .line 10
     .line 11
-    .line 12
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     return-void
 
-    .line 16
+    .line 15
     :catchall_0
-    move-exception p1
+    move-exception p0
 
-    .line 17
+    .line 16
     :try_start_1
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 17
     .line 18
     .line 19
-    .line 20
     goto :goto_0
 
-    .line 21
+    .line 20
     :catchall_1
-    move-exception v0
+    move-exception p1
+
+    .line 21
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 22
-    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
     .line 23
     .line 24
-    .line 25
     :goto_0
-    throw p1
+    throw p0
 .end method
 
 .method public final onActivityPaused(Landroid/app/Activity;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->T:Lio/sentry/util/a;
+    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->c0:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
     :try_start_0
     const-string v1, "paused"
 
+    .line 7
     .line 8
-    .line 9
-    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->f(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->g(Landroid/app/Activity;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 9
     .line 10
     .line 11
-    .line 12
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     return-void
 
-    .line 16
+    .line 15
     :catchall_0
-    move-exception p1
+    move-exception p0
 
-    .line 17
+    .line 16
     :try_start_1
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 17
     .line 18
     .line 19
-    .line 20
     goto :goto_0
 
-    .line 21
+    .line 20
     :catchall_1
-    move-exception v0
+    move-exception p1
+
+    .line 21
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 22
-    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
     .line 23
     .line 24
-    .line 25
     :goto_0
-    throw p1
+    throw p0
 .end method
 
 .method public final onActivityResumed(Landroid/app/Activity;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->T:Lio/sentry/util/a;
+    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->c0:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
     :try_start_0
     const-string v1, "resumed"
 
+    .line 7
     .line 8
-    .line 9
-    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->f(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->g(Landroid/app/Activity;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 9
     .line 10
     .line 11
-    .line 12
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     return-void
 
-    .line 16
+    .line 15
     :catchall_0
-    move-exception p1
+    move-exception p0
 
-    .line 17
+    .line 16
     :try_start_1
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 17
     .line 18
     .line 19
-    .line 20
     goto :goto_0
 
-    .line 21
+    .line 20
     :catchall_1
-    move-exception v0
+    move-exception p1
+
+    .line 21
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 22
-    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
     .line 23
     .line 24
-    .line 25
     :goto_0
-    throw p1
+    throw p0
 .end method
 
 .method public final onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 1
 
     .line 1
-    iget-object p2, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->T:Lio/sentry/util/a;
+    iget-object p2, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->c0:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    invoke-virtual {p2}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {p2}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object p2
-
-    .line 7
     :try_start_0
     const-string v0, "saveInstanceState"
 
+    .line 7
     .line 8
-    .line 9
-    invoke-virtual {p0, p1, v0}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->f(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v0}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->g(Landroid/app/Activity;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 9
     .line 10
     .line 11
-    .line 12
-    invoke-virtual {p2}, Lio/sentry/u;->close()V
+    invoke-virtual {p2}, Lio/sentry/util/a;->close()V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     return-void
 
-    .line 16
+    .line 15
     :catchall_0
-    move-exception p1
+    move-exception p0
 
-    .line 17
+    .line 16
     :try_start_1
-    invoke-virtual {p2}, Lio/sentry/u;->close()V
+    invoke-virtual {p2}, Lio/sentry/util/a;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 17
     .line 18
     .line 19
-    .line 20
     goto :goto_0
 
-    .line 21
+    .line 20
     :catchall_1
-    move-exception p2
+    move-exception p1
+
+    .line 21
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 22
-    invoke-virtual {p1, p2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
     .line 23
     .line 24
-    .line 25
     :goto_0
-    throw p1
+    throw p0
 .end method
 
 .method public final onActivityStarted(Landroid/app/Activity;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->T:Lio/sentry/util/a;
+    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->c0:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
     :try_start_0
     const-string v1, "started"
 
+    .line 7
     .line 8
-    .line 9
-    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->f(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->g(Landroid/app/Activity;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 9
     .line 10
     .line 11
-    .line 12
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     return-void
 
-    .line 16
+    .line 15
     :catchall_0
-    move-exception p1
+    move-exception p0
 
-    .line 17
+    .line 16
     :try_start_1
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 17
     .line 18
     .line 19
-    .line 20
     goto :goto_0
 
-    .line 21
+    .line 20
     :catchall_1
-    move-exception v0
+    move-exception p1
+
+    .line 21
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 22
-    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
     .line 23
     .line 24
-    .line 25
     :goto_0
-    throw p1
+    throw p0
 .end method
 
 .method public final onActivityStopped(Landroid/app/Activity;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->T:Lio/sentry/util/a;
+    iget-object v0, p0, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->c0:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
     :try_start_0
     const-string v1, "stopped"
 
+    .line 7
     .line 8
-    .line 9
-    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->f(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v1}, Lio/sentry/android/core/ActivityBreadcrumbsIntegration;->g(Landroid/app/Activity;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 9
     .line 10
     .line 11
-    .line 12
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     return-void
 
-    .line 16
+    .line 15
     :catchall_0
-    move-exception p1
+    move-exception p0
 
-    .line 17
+    .line 16
     :try_start_1
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 17
     .line 18
     .line 19
-    .line 20
     goto :goto_0
 
-    .line 21
+    .line 20
     :catchall_1
-    move-exception v0
+    move-exception p1
+
+    .line 21
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 22
-    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
     .line 23
     .line 24
-    .line 25
     :goto_0
-    throw p1
+    throw p0
 .end method

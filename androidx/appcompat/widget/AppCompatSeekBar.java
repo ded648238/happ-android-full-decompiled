@@ -5,29 +5,29 @@ import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.SeekBar;
-import defpackage.d37;
-import defpackage.un;
-import defpackage.x75;
+import defpackage.hv7;
+import defpackage.ip;
+import defpackage.wr5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class AppCompatSeekBar extends SeekBar {
-    public final un Q;
+    public final ip c0;
 
     public AppCompatSeekBar(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        d37.a(this, getContext());
-        un unVar = new un(this);
-        this.Q = unVar;
-        unVar.i(attributeSet, i);
+        hv7.a(this, getContext());
+        ip ipVar = new ip(this);
+        this.c0 = ipVar;
+        ipVar.A(attributeSet, i);
     }
 
     @Override // android.widget.AbsSeekBar, android.widget.ProgressBar, android.view.View
     public final void drawableStateChanged() {
         super.drawableStateChanged();
-        un unVar = this.Q;
-        AppCompatSeekBar appCompatSeekBar = unVar.U;
-        Drawable drawable = unVar.V;
+        ip ipVar = this.c0;
+        AppCompatSeekBar appCompatSeekBar = ipVar.g0;
+        Drawable drawable = ipVar.h0;
         if (drawable != null && drawable.isStateful() && drawable.setState(appCompatSeekBar.getDrawableState())) {
             appCompatSeekBar.invalidateDrawable(drawable);
         }
@@ -36,7 +36,7 @@ public class AppCompatSeekBar extends SeekBar {
     @Override // android.widget.AbsSeekBar, android.widget.ProgressBar, android.view.View
     public final void jumpDrawablesToCurrentState() {
         super.jumpDrawablesToCurrentState();
-        Drawable drawable = this.Q.V;
+        Drawable drawable = this.c0.h0;
         if (drawable != null) {
             drawable.jumpToCurrentState();
         }
@@ -45,10 +45,10 @@ public class AppCompatSeekBar extends SeekBar {
     @Override // android.widget.AbsSeekBar, android.widget.ProgressBar, android.view.View
     public final synchronized void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        this.Q.v(canvas);
+        this.c0.R(canvas);
     }
 
     public AppCompatSeekBar(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, x75.seekBarStyle);
+        this(context, attributeSet, wr5.seekBarStyle);
     }
 }

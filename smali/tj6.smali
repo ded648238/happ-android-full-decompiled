@@ -1,134 +1,152 @@
-.class public final Ltj6;
+.class public abstract Ltj6;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final c:Ljava/util/concurrent/locks/ReentrantLock;
-
-.field public static d:Ltj6;
-
-
-# instance fields
-.field public final a:Ljava/util/concurrent/locks/ReentrantLock;
-
-.field public final b:Landroid/content/SharedPreferences;
+.field public static final a:Ljava/util/ArrayList;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 30
 
     .line 1
-    new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
+    const-class v28, Landroid/util/Size;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+    const-class v29, Landroid/util/SizeF;
 
     .line 4
     .line 5
+    sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+
     .line 6
-    sput-object v0, Ltj6;->c:Ljava/util/concurrent/locks/ReentrantLock;
-
     .line 7
-    .line 8
-    return-void
-.end method
+    const-class v2, [Z
 
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 2
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
-
-    .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Ltj6;->a:Ljava/util/concurrent/locks/ReentrantLock;
+    sget-object v3, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
     .line 10
     .line 11
-    const-string v0, "com.google.android.gms.signin"
+    const-class v4, [D
 
     .line 12
     .line 13
-    const/4 v1, 0x0
-
-    .line 14
-    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
-
-    .line 18
-    iput-object p1, p0, Ltj6;->b:Landroid/content/SharedPreferences;
-
-    .line 19
-    .line 20
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Ltj6;->a:Ljava/util/concurrent/locks/ReentrantLock;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
-
-    .line 4
-    .line 5
-    .line 6
-    :try_start_0
-    iget-object v1, p0, Ltj6;->b:Landroid/content/SharedPreferences;
-
-    .line 7
-    .line 8
-    const/4 v2, 0x0
-
-    .line 9
-    invoke-interface {v1, p1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 13
-    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     .line 14
     .line 15
-    .line 16
-    return-object p1
+    const-class v6, [I
 
+    .line 16
     .line 17
-    :catchall_0
-    move-exception p1
+    sget-object v7, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
     .line 18
-    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
-
     .line 19
+    const-class v8, [J
+
     .line 20
     .line 21
-    throw p1
+    const-class v9, Ljava/lang/String;
+
+    .line 22
+    .line 23
+    const-class v10, [Ljava/lang/String;
+
+    .line 24
+    .line 25
+    const-class v11, Landroid/os/Binder;
+
+    .line 26
+    .line 27
+    const-class v12, Landroid/os/Bundle;
+
+    .line 28
+    .line 29
+    sget-object v13, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
+
+    .line 30
+    .line 31
+    const-class v14, [B
+
+    .line 32
+    .line 33
+    sget-object v15, Ljava/lang/Character;->TYPE:Ljava/lang/Class;
+
+    .line 34
+    .line 35
+    const-class v16, [C
+
+    .line 36
+    .line 37
+    const-class v17, Ljava/lang/CharSequence;
+
+    .line 38
+    .line 39
+    const-class v18, [Ljava/lang/CharSequence;
+
+    .line 40
+    .line 41
+    const-class v19, Ljava/util/ArrayList;
+
+    .line 42
+    .line 43
+    sget-object v20, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+
+    .line 44
+    .line 45
+    const-class v21, [F
+
+    .line 46
+    .line 47
+    const-class v22, Landroid/os/Parcelable;
+
+    .line 48
+    .line 49
+    const-class v23, [Landroid/os/Parcelable;
+
+    .line 50
+    .line 51
+    const-class v24, Ljava/io/Serializable;
+
+    .line 52
+    .line 53
+    sget-object v25, Ljava/lang/Short;->TYPE:Ljava/lang/Class;
+
+    .line 54
+    .line 55
+    const-class v26, [S
+
+    .line 56
+    .line 57
+    const-class v27, Landroid/util/SparseArray;
+
+    .line 58
+    .line 59
+    filled-new-array/range {v1 .. v29}, [Ljava/lang/Class;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v0
+
+    .line 63
+    invoke-static {v0}, Lkt;->w0([Ljava/lang/Object;)Ljava/util/ArrayList;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v0
+
+    .line 67
+    sput-object v0, Ltj6;->a:Ljava/util/ArrayList;
+
+    .line 68
+    .line 69
+    return-void
 .end method

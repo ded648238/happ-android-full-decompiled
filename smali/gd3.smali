@@ -2,25 +2,25 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lg72;
+.implements Lji2;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
 
-.field public final R:Lid3;
+.field public final Y:Lxc3;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lid3;I)V
+.method public synthetic constructor <init>(Lxc3;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lgd3;->Q:I
+    iput p2, p0, Lgd3;->X:I
 
     .line 2
     .line 3
-    iput-object p1, p0, Lgd3;->R:Lid3;
+    iput-object p1, p0, Lgd3;->Y:Lxc3;
 
     .line 4
     .line 5
@@ -35,14 +35,14 @@
 
 # virtual methods
 .method public final invoke()Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget v0, p0, Lgd3;->Q:I
+    iget v0, p0, Lgd3;->X:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Lgd3;->R:Lid3;
+    iget-object p0, p0, Lgd3;->Y:Lxc3;
 
     .line 4
     .line 5
@@ -51,30 +51,40 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {v1}, Ljd3;->M()Ljava/lang/reflect/Member;
+    const/4 v0, 0x0
 
     .line 9
+    invoke-static {p0, v0}, Lhc4;->d(Led3;Z)Lpc0;
+
     .line 10
     .line 11
-    move-result-object v0
-
     .line 12
-    return-object v0
+    move-result-object p0
 
     .line 13
-    :pswitch_0
-    new-instance v0, Lhd3;
+    return-object p0
 
     .line 14
-    .line 15
-    invoke-direct {v0, v1}, Lhd3;-><init>(Lid3;)V
+    :pswitch_0
+    new-instance v0, Ltc1;
 
+    .line 15
     .line 16
+    iget-object p0, p0, Lxc3;->c0:Lyc3;
+
     .line 17
     .line 18
-    return-object v0
+    invoke-direct {v0, p0}, Ltc1;-><init>(Lg06;)V
 
     .line 19
+    .line 20
+    .line 21
+    return-object v0
+
+    .line 22
+    nop
+
+    .line 23
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

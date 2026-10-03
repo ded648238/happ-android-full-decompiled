@@ -1,133 +1,161 @@
 .class public final Ldc1;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ltg4;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:Lfc1;
+.field public final synthetic a:Landroidx/recyclerview/widget/l;
+
+.field public final synthetic b:I
+
+.field public final synthetic c:Landroid/view/View;
+
+.field public final synthetic d:I
+
+.field public final synthetic e:Landroid/view/ViewPropertyAnimator;
+
+.field public final synthetic f:Lhc1;
 
 
 # direct methods
-.method public constructor <init>(Lfc1;)V
+.method public constructor <init>(Lhc1;Landroidx/recyclerview/widget/l;ILandroid/view/View;ILandroid/view/ViewPropertyAnimator;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Ldc1;->f:Lhc1;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Ldc1;->a:Lfc1;
+    iput-object p2, p0, Ldc1;->a:Landroidx/recyclerview/widget/l;
 
+    .line 4
     .line 5
+    iput p3, p0, Ldc1;->b:I
+
     .line 6
+    .line 7
+    iput-object p4, p0, Ldc1;->c:Landroid/view/View;
+
+    .line 8
+    .line 9
+    iput p5, p0, Ldc1;->d:I
+
+    .line 10
+    .line 11
+    iput-object p6, p0, Ldc1;->e:Landroid/view/ViewPropertyAnimator;
+
+    .line 12
+    .line 13
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
     .locals 2
 
     .line 1
-    check-cast p1, Lik3;
+    iget p1, p0, Ldc1;->b:I
 
     .line 2
     .line 3
-    if-eqz p1, :cond_2
+    const/4 v0, 0x0
 
     .line 4
+    iget-object v1, p0, Ldc1;->c:Landroid/view/View;
+
     .line 5
-    iget-object p1, p0, Ldc1;->a:Lfc1;
-
     .line 6
+    if-eqz p1, :cond_0
+
     .line 7
-    iget-boolean v0, p1, Lfc1;->V0:Z
-
     .line 8
-    .line 9
-    if-eqz v0, :cond_2
+    invoke-virtual {v1, v0}, Landroid/view/View;->setTranslationX(F)V
 
+    .line 9
     .line 10
     .line 11
-    invoke-virtual {p1}, Lz42;->M()Landroid/view/View;
+    :cond_0
+    iget p0, p0, Ldc1;->d:I
 
     .line 12
     .line 13
-    .line 14
-    move-result-object v0
+    if-eqz p0, :cond_1
 
+    .line 14
     .line 15
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v1, v0}, Landroid/view/View;->setTranslationY(F)V
 
     .line 16
     .line 17
     .line 18
-    move-result-object v1
+    :cond_1
+    return-void
+.end method
 
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Ldc1;->e:Landroid/view/ViewPropertyAnimator;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, Ldc1;->f:Lhc1;
+
+    .line 8
+    .line 9
+    iget-object p0, p0, Ldc1;->a:Landroidx/recyclerview/widget/l;
+
+    .line 10
+    .line 11
+    invoke-virtual {p1, p0}, Ltx5;->c(Landroidx/recyclerview/widget/l;)V
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object v0, p1, Lhc1;->p:Ljava/util/ArrayList;
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+
+    .line 17
+    .line 18
     .line 19
-    if-nez v1, :cond_1
+    invoke-virtual {p1}, Lhc1;->i()V
 
     .line 20
     .line 21
-    iget-object v1, p1, Lfc1;->Z0:Landroid/app/Dialog;
-
     .line 22
-    .line 23
-    if-eqz v1, :cond_2
-
-    .line 24
-    .line 25
-    const/4 v1, 0x3
-
-    .line 26
-    invoke-static {v1}, Ly52;->K(I)Z
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v1
-
-    .line 30
-    if-eqz v1, :cond_0
-
-    .line 31
-    .line 32
-    iget-object v1, p1, Lfc1;->Z0:Landroid/app/Dialog;
-
-    .line 33
-    .line 34
-    invoke-static {v1}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 35
-    .line 36
-    .line 37
-    :cond_0
-    iget-object p1, p1, Lfc1;->Z0:Landroid/app/Dialog;
-
-    .line 38
-    .line 39
-    invoke-virtual {p1, v0}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
-
-    .line 40
-    .line 41
-    .line 42
     return-void
+.end method
 
-    .line 43
-    :cond_1
-    const-string p1, "DialogFragment can not be attached to a container view"
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
 
-    .line 44
-    .line 45
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    .line 1
+    iget-object p0, p0, Ldc1;->f:Lhc1;
 
-    .line 46
-    .line 47
-    .line 48
-    :cond_2
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

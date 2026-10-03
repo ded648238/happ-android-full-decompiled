@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Headers$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -28,7 +28,7 @@
         "name",
         "get",
         "([Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
-        "Lbh7;",
+        "Lr98;",
         "checkName",
         "(Ljava/lang/String;)V",
         "value",
@@ -65,7 +65,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -117,7 +117,7 @@
 .end method
 
 .method private final checkName(Ljava/lang/String;)V
-    .locals 5
+    .locals 3
 
     .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
@@ -125,10 +125,10 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    if-lez v0, :cond_2
+    if-lez p0, :cond_2
 
     .line 6
     .line 7
@@ -137,129 +137,109 @@
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p0
 
     .line 11
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 12
-    const/4 v2, 0x0
+    :goto_0
+    if-ge v0, p0, :cond_1
 
     .line 13
-    :goto_0
-    if-ge v2, v0, :cond_1
-
     .line 14
-    .line 15
-    invoke-virtual {p1, v2}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p1, v0}, Ljava/lang/String;->charAt(I)C
 
+    .line 15
     .line 16
     .line 17
+    move-result v1
+
     .line 18
-    move-result v3
+    const/16 v2, 0x21
 
     .line 19
-    const/16 v4, 0x21
-
     .line 20
+    if-gt v2, v1, :cond_0
+
     .line 21
-    if-gt v4, v3, :cond_0
-
     .line 22
+    const/16 v2, 0x7f
+
     .line 23
-    const/16 v4, 0x7f
-
     .line 24
+    if-ge v1, v2, :cond_0
+
     .line 25
-    if-ge v3, v4, :cond_0
-
     .line 26
-    .line 27
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v0, v0, 0x1
 
+    .line 27
     .line 28
-    .line 29
     goto :goto_0
 
-    .line 30
+    .line 29
     :cond_0
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 30
     .line 31
     .line 32
+    move-result-object p0
+
     .line 33
-    move-result-object v0
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 34
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 35
     .line 36
+    move-result-object v0
+
     .line 37
-    move-result-object v2
+    filled-new-array {p0, v0, p1}, [Ljava/lang/Object;
 
     .line 38
-    const/4 v3, 0x3
-
     .line 39
-    new-array v3, v3, [Ljava/lang/Object;
-
     .line 40
+    move-result-object p0
+
     .line 41
-    aput-object v0, v3, v1
+    const-string p1, "Unexpected char %#04x at %d in header name: %s"
 
     .line 42
     .line 43
-    const/4 v0, 0x1
+    invoke-static {p1, p0}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 44
-    aput-object v2, v3, v0
-
     .line 45
     .line 46
-    const/4 v0, 0x2
+    move-result-object p0
 
     .line 47
-    aput-object p1, v3, v0
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 48
     .line 49
-    const-string p1, "Unexpected char %#04x at %d in header name: %s"
-
     .line 50
-    .line 51
-    invoke-static {p1, v3}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object p1
-
-    .line 55
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
-
-    .line 56
-    .line 57
-    .line 58
     :cond_1
     return-void
 
-    .line 59
+    .line 51
     :cond_2
-    const-string p1, "name is empty"
+    const-string p0, "name is empty"
 
-    .line 60
-    .line 61
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    .line 52
+    .line 53
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
-    .line 62
-    .line 63
-    .line 64
+    .line 54
+    .line 55
+    .line 56
     return-void
 .end method
 
 .method private final checkValue(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 5
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/String;->length()I
@@ -267,265 +247,245 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 6
-    const/4 v2, 0x0
+    :goto_0
+    if-ge v0, p0, :cond_3
 
     .line 7
-    :goto_0
-    if-ge v2, v0, :cond_3
-
     .line 8
-    .line 9
-    invoke-virtual {p1, v2}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p1, v0}, Ljava/lang/String;->charAt(I)C
 
+    .line 9
     .line 10
     .line 11
+    move-result v1
+
     .line 12
-    move-result v3
+    const/16 v2, 0x9
 
     .line 13
-    const/16 v4, 0x9
-
     .line 14
+    if-eq v1, v2, :cond_2
+
     .line 15
-    if-eq v3, v4, :cond_2
-
     .line 16
+    const/16 v2, 0x20
+
     .line 17
-    const/16 v4, 0x20
-
     .line 18
+    if-gt v2, v1, :cond_0
+
     .line 19
-    if-gt v4, v3, :cond_0
-
     .line 20
+    const/16 v2, 0x7f
+
     .line 21
-    const/16 v4, 0x7f
-
     .line 22
-    .line 23
-    if-ge v3, v4, :cond_0
+    if-ge v1, v2, :cond_0
 
+    .line 23
     .line 24
-    .line 25
     goto :goto_2
 
-    .line 26
+    .line 25
     :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 26
     .line 27
-    .line 28
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 28
     .line 29
     .line 30
-    .line 31
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 31
     .line 32
     .line 33
+    move-result-object v1
+
     .line 34
-    move-result-object v3
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 35
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 36
     .line 37
+    move-result-object v0
+
     .line 38
-    move-result-object v2
+    filled-new-array {v1, v0, p2}, [Ljava/lang/Object;
 
     .line 39
-    const/4 v4, 0x3
-
     .line 40
-    new-array v4, v4, [Ljava/lang/Object;
-
     .line 41
+    move-result-object v0
+
     .line 42
-    aput-object v3, v4, v1
+    const-string v1, "Unexpected char %#04x at %d in %s value"
 
     .line 43
     .line 44
-    const/4 v1, 0x1
+    invoke-static {v1, v0}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 45
-    aput-object v2, v4, v1
-
     .line 46
     .line 47
-    const/4 v1, 0x2
+    move-result-object v0
 
     .line 48
-    aput-object p2, v4, v1
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 49
     .line 50
-    const-string v1, "Unexpected char %#04x at %d in %s value"
-
     .line 51
-    .line 52
-    invoke-static {v1, v4}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v1
-
-    .line 56
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 57
-    .line 58
-    .line 59
     invoke-static {p2}, Lokhttp3/internal/Util;->isSensitiveHeader(Ljava/lang/String;)Z
 
-    .line 60
-    .line 61
-    .line 62
+    .line 52
+    .line 53
+    .line 54
     move-result p2
 
-    .line 63
+    .line 55
     if-eqz p2, :cond_1
 
-    .line 64
-    .line 65
+    .line 56
+    .line 57
     const-string p1, ""
 
-    .line 66
-    .line 67
+    .line 58
+    .line 59
     goto :goto_1
 
-    .line 68
+    .line 60
     :cond_1
     const-string p2, ": "
 
-    .line 69
-    .line 70
+    .line 61
+    .line 62
     invoke-virtual {p2, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 63
+    .line 64
+    .line 65
+    move-result-object p1
+
+    .line 66
+    :goto_1
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 70
     .line 71
     .line 72
+    move-result-object p0
+
     .line 73
-    move-result-object p1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
     .line 74
-    :goto_1
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 75
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 76
     .line 77
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 78
+    move-result-object p0
+
     .line 79
+    invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
     .line 80
-    move-result-object p1
-
     .line 81
-    new-instance p2, Ljava/lang/IllegalArgumentException;
-
     .line 82
+    throw p1
+
     .line 83
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    :cond_2
+    :goto_2
+    add-int/lit8 v0, v0, 0x1
 
     .line 84
     .line 85
-    .line 86
-    move-result-object p1
-
-    .line 87
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 88
-    .line 89
-    .line 90
-    throw p2
-
-    .line 91
-    :cond_2
-    :goto_2
-    add-int/lit8 v2, v2, 0x1
-
-    .line 92
-    .line 93
     goto :goto_0
 
-    .line 94
+    .line 86
     :cond_3
     return-void
 .end method
 
 .method private final get([Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
-    array-length v0, p1
+    array-length p0, p1
 
     .line 2
-    add-int/lit8 v0, v0, -0x2
+    add-int/lit8 p0, p0, -0x2
 
     .line 3
     .line 4
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 5
-    const/4 v2, -0x2
+    const/4 v1, -0x2
 
     .line 6
-    invoke-static {v0, v1, v2}, Le21;->A(III)I
+    invoke-static {p0, v0, v1}, Ll93;->w(III)I
 
     .line 7
     .line 8
     .line 9
-    move-result v1
+    move-result v0
 
     .line 10
-    if-gt v1, v0, :cond_1
+    if-gt v0, p0, :cond_1
 
     .line 11
     .line 12
     :goto_0
-    aget-object v2, p1, v0
+    aget-object v1, p1, p0
 
     .line 13
     .line 14
-    invoke-static {p2, v2}, Lzl6;->Z(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p2, v1}, Lla7;->A0(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 15
     .line 16
     .line 17
-    move-result v2
+    move-result v1
 
     .line 18
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
     .line 19
     .line 20
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 p0, p0, 0x1
 
     .line 21
     .line 22
-    aget-object p1, p1, v0
+    aget-object p0, p1, p0
 
     .line 23
     .line 24
-    return-object p1
+    return-object p0
 
     .line 25
     :cond_0
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 26
     .line 27
-    add-int/lit8 v0, v0, -0x2
+    add-int/lit8 p0, p0, -0x2
 
     .line 28
     .line 29
@@ -533,10 +493,10 @@
 
     .line 30
     :cond_1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 31
-    return-object p1
+    return-object p0
 .end method
 
 
@@ -554,7 +514,7 @@
         }
     .end annotation
 
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -562,14 +522,14 @@
     .line 16
     invoke-virtual {p0, p1}, Lokhttp3/Headers$Companion;->of(Ljava/util/Map;)Lokhttp3/Headers;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final varargs -deprecated_of([Ljava/lang/String;)Lokhttp3/Headers;
     .locals 1
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -598,10 +558,10 @@
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result-object p0
 
     .line 15
-    return-object p1
+    return-object p0
 .end method
 
 .method public final of(Ljava/util/Map;)Lokhttp3/Headers;
@@ -707,7 +667,7 @@
 
     .line 44
     .line 45
-    invoke-static {v3}, Lsl6;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v3}, Lea7;->y1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     .line 46
     .line 47
@@ -723,7 +683,7 @@
     move-result-object v3
 
     .line 53
-    invoke-static {v2}, Lsl6;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v2}, Lea7;->y1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     .line 54
     .line 55
@@ -769,19 +729,19 @@
 
     .line 76
     :cond_0
-    new-instance p1, Lokhttp3/Headers;
+    new-instance p0, Lokhttp3/Headers;
 
     .line 77
     .line 78
-    const/4 v1, 0x0
+    const/4 p1, 0x0
 
     .line 79
-    invoke-direct {p1, v0, v1}, Lokhttp3/Headers;-><init>([Ljava/lang/String;Lj31;)V
+    invoke-direct {p0, v0, p1}, Lokhttp3/Headers;-><init>([Ljava/lang/String;Lib1;)V
 
     .line 80
     .line 81
     .line 82
-    return-object p1
+    return-object p0
 .end method
 
 .method public final varargs of([Ljava/lang/String;)Lokhttp3/Headers;
@@ -812,7 +772,7 @@
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    move v4, v3
 
     :goto_0
     if-ge v4, v0, :cond_1
@@ -823,7 +783,7 @@
     if-eqz v5, :cond_0
 
     .line 87
-    invoke-static {v5}, Lsl6;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v5}, Lea7;->y1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object v5
 
@@ -839,9 +799,9 @@
 
     .line 88
     :cond_0
-    const-string p1, "Headers cannot be null"
+    const-string p0, "Headers cannot be null"
 
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     return-object v2
 
@@ -851,7 +811,7 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    invoke-static {v3, v0, v1}, Le21;->A(III)I
+    invoke-static {v3, v0, v1}, Ll93;->w(III)I
 
     move-result v0
 
@@ -880,17 +840,17 @@
 
     .line 94
     :cond_2
-    new-instance v0, Lokhttp3/Headers;
+    new-instance p0, Lokhttp3/Headers;
 
-    invoke-direct {v0, p1, v2}, Lokhttp3/Headers;-><init>([Ljava/lang/String;Lj31;)V
+    invoke-direct {p0, p1, v2}, Lokhttp3/Headers;-><init>([Ljava/lang/String;Lib1;)V
 
-    return-object v0
+    return-object p0
 
     .line 95
     :cond_3
-    const-string p1, "Expected alternating header names and values"
+    const-string p0, "Expected alternating header names and values"
 
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     return-object v2
 .end method

@@ -1,140 +1,204 @@
-.class public abstract Ldf2;
+.class public final Ldf2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field public static final a:Lcom/google/gson/a;
+# instance fields
+.field public final synthetic X:I
 
-.field public static final b:Lcom/google/gson/a;
-
-.field public static final c:Lcom/google/gson/a;
+.field public final synthetic Y:Lef2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(Lef2;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lld2;
+    iput p2, p0, Ldf2;->X:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lld2;-><init>()V
+    iput-object p1, p0, Ldf2;->Y:Lef2;
 
     .line 4
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
-    new-instance v1, Lsu/happ/proxyutility/util/adapters/FlexibleStringListAdapter;
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 11
+
+    .line 1
+    iget v0, p0, Ldf2;->X:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    iget-object p0, p0, Ldf2;->Y:Lef2;
+
+    .line 5
+    .line 6
+    packed-switch v0, :pswitch_data_0
 
     .line 7
     .line 8
-    invoke-direct {v1}, Lsu/happ/proxyutility/util/adapters/FlexibleStringListAdapter;-><init>()V
-
     .line 9
+    invoke-virtual {p0}, Lef2;->a()V
+
     .line 10
     .line 11
-    const-class v2, Lsu/happ/proxyutility/dto/FlexibleStringList;
-
     .line 12
-    .line 13
-    invoke-virtual {v0, v2, v1}, Lld2;->c(Ljava/lang/reflect/Type;Ljava/lang/Object;)V
+    iget-object v0, p0, Lef2;->c0:Landroid/view/View;
 
+    .line 13
     .line 14
+    invoke-virtual {v0}, Landroid/view/View;->isEnabled()Z
+
     .line 15
     .line 16
-    new-instance v1, Lcom/google/gson/a;
-
     .line 17
+    move-result v2
+
     .line 18
-    invoke-direct {v1, v0}, Lcom/google/gson/a;-><init>(Lld2;)V
+    if-eqz v2, :cond_2
 
     .line 19
     .line 20
-    .line 21
-    sput-object v1, Ldf2;->a:Lcom/google/gson/a;
+    invoke-virtual {v0}, Landroid/view/View;->isLongClickable()Z
 
+    .line 21
     .line 22
     .line 23
-    const/4 v1, 0x1
+    move-result v2
 
     .line 24
-    iput v1, v0, Lld2;->m:I
+    if-eqz v2, :cond_0
 
     .line 25
     .line 26
-    new-instance v1, Lcom/google/gson/a;
+    goto :goto_0
 
     .line 27
-    .line 28
-    invoke-direct {v1, v0}, Lcom/google/gson/a;-><init>(Lld2;)V
+    :cond_0
+    invoke-virtual {p0}, Lef2;->c()Z
 
+    .line 28
     .line 29
     .line 30
+    move-result v2
+
     .line 31
-    sput-object v1, Ldf2;->b:Lcom/google/gson/a;
+    if-nez v2, :cond_1
 
     .line 32
     .line 33
-    sget-object v1, Li42;->e:Li42;
+    goto :goto_0
 
     .line 34
-    .line 35
-    invoke-static {v1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_1
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
+    .line 35
     .line 36
     .line 37
+    move-result-object v2
+
     .line 38
-    iput-object v1, v0, Lld2;->h:Li42;
+    invoke-interface {v2, v1}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
     .line 39
     .line 40
-    const/4 v1, 0x0
-
     .line 41
-    iput-boolean v1, v0, Lld2;->g:Z
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     .line 42
     .line 43
-    new-instance v1, Lcf2;
-
     .line 44
+    move-result-wide v3
+
     .line 45
-    invoke-direct {v1}, Ldd7;-><init>()V
+    const/4 v9, 0x0
 
     .line 46
+    const/4 v10, 0x0
+
     .line 47
+    const/4 v7, 0x3
+
     .line 48
-    new-instance v2, Lbf2;
+    const/4 v8, 0x0
 
     .line 49
+    move-wide v5, v3
+
     .line 50
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+    invoke-static/range {v3 .. v10}, Landroid/view/MotionEvent;->obtain(JJIFFI)Landroid/view/MotionEvent;
 
     .line 51
     .line 52
     .line 53
-    iget-object v1, v1, Ldd7;->b:Ljava/lang/reflect/Type;
+    move-result-object v2
 
     .line 54
-    .line 55
-    invoke-virtual {v0, v1, v2}, Lld2;->c(Ljava/lang/reflect/Type;Ljava/lang/Object;)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
+    .line 55
     .line 56
     .line 57
-    .line 58
-    new-instance v1, Lcom/google/gson/a;
+    invoke-virtual {v2}, Landroid/view/MotionEvent;->recycle()V
 
+    .line 58
     .line 59
     .line 60
-    invoke-direct {v1, v0}, Lcom/google/gson/a;-><init>(Lld2;)V
+    iput-boolean v1, p0, Lef2;->f0:Z
 
     .line 61
     .line 62
+    :cond_2
+    :goto_0
+    return-void
+
     .line 63
-    sput-object v1, Ldf2;->c:Lcom/google/gson/a;
+    :pswitch_0
+    iget-object p0, p0, Lef2;->c0:Landroid/view/View;
 
     .line 64
     .line 65
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object p0
+
+    .line 69
+    if-eqz p0, :cond_3
+
+    .line 70
+    .line 71
+    invoke-interface {p0, v1}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
+
+    .line 72
+    .line 73
+    .line 74
+    :cond_3
     return-void
+
+    .line 75
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

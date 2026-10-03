@@ -1,40 +1,48 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class ph5 implements aa2 {
-    public static final ph5 a;
-    private static final l56 descriptor;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract /* synthetic */ class ph5 {
+    public static final /* synthetic */ int[] a;
 
     static {
-        ph5 ph5Var = new ph5();
-        a = ph5Var;
-        vp2 vp2Var = new vp2("su.happ.proxyutility.firebase.entity.notification.RemoteMessageId", ph5Var);
-        vp2Var.k("value", false);
-        descriptor = vp2Var;
-    }
-
-    @Override // defpackage.q83
-    public final void a(dl6 dl6Var, Object obj) {
-        String str = ((rh5) obj).Q;
-        str.getClass();
-        dl6Var.h(descriptor).q(str);
-    }
-
-    @Override // defpackage.q83
-    public final Object b(v21 v21Var) {
-        String strS = v21Var.p(descriptor).s();
-        strS.getClass();
-        return new rh5(strS);
-    }
-
-    @Override // defpackage.aa2
-    public final q83[] c() {
-        return new q83[]{ml6.a};
-    }
-
-    @Override // defpackage.q83
-    public final l56 d() {
-        return descriptor;
+        int[] iArr = new int[w31.G(9).length];
+        try {
+            iArr[0] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            iArr[1] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            iArr[6] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            iArr[2] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            iArr[3] = 5;
+        } catch (NoSuchFieldError unused5) {
+        }
+        try {
+            iArr[4] = 6;
+        } catch (NoSuchFieldError unused6) {
+        }
+        try {
+            iArr[5] = 7;
+        } catch (NoSuchFieldError unused7) {
+        }
+        try {
+            iArr[7] = 8;
+        } catch (NoSuchFieldError unused8) {
+        }
+        try {
+            iArr[8] = 9;
+        } catch (NoSuchFieldError unused9) {
+        }
+        a = iArr;
     }
 }

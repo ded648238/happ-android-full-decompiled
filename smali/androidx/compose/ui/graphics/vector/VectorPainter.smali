@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/graphics/vector/VectorPainter;
-.super Lrn4;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lu55;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -10,13 +10,13 @@
     }
     d2 = {
         "Landroidx/compose/ui/graphics/vector/VectorPainter;",
-        "Lrn4;",
-        "ui_release"
+        "Lu55;",
+        "ui"
     }
     k = 0x1
     mv = {
         0x2,
-        0x0,
+        0x1,
         0x0
     }
     xi = 0x30
@@ -24,32 +24,30 @@
 
 
 # instance fields
-.field public final d:Lto4;
+.field public final d:Lx65;
 
-.field public final e:Lto4;
+.field public final e:Lx65;
 
-.field public final f:Lnl7;
+.field public final f:Lgg8;
 
-.field public final g:Lqo4;
+.field public final g:Lx65;
 
 .field public final h:F
 
-.field public i:Lm20;
-
-.field public j:I
+.field public i:Lq40;
 
 
 # direct methods
-.method public constructor <init>(Lhd2;)V
+.method public constructor <init>(Lsp2;)V
     .locals 3
 
     .line 1
-    invoke-direct {p0}, Lrn4;-><init>()V
+    invoke-direct {p0}, Lu55;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lrb6;
+    new-instance v0, Lsy6;
 
     .line 5
     .line 6
@@ -57,12 +55,12 @@
 
     .line 7
     .line 8
-    invoke-direct {v0, v1, v2}, Lrb6;-><init>(J)V
+    invoke-direct {v0, v1, v2}, Lsy6;-><init>(J)V
 
     .line 9
     .line 10
     .line 11
-    invoke-static {v0}, Lvs0;->T(Ljava/lang/Object;)Lto4;
+    invoke-static {v0}, Ld01;->J(Ljava/lang/Object;)Lx65;
 
     .line 12
     .line 13
@@ -70,7 +68,7 @@
     move-result-object v0
 
     .line 15
-    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->d:Lto4;
+    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->d:Lx65;
 
     .line 16
     .line 17
@@ -78,7 +76,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0}, Lvs0;->T(Ljava/lang/Object;)Lto4;
+    invoke-static {v0}, Ld01;->J(Ljava/lang/Object;)Lx65;
 
     .line 20
     .line 21
@@ -86,80 +84,79 @@
     move-result-object v0
 
     .line 23
-    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->e:Lto4;
+    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->e:Lx65;
 
     .line 24
     .line 25
-    new-instance v0, Lnl7;
+    new-instance v0, Lgg8;
 
     .line 26
     .line 27
-    invoke-direct {v0, p1}, Lnl7;-><init>(Lhd2;)V
+    invoke-direct {v0, p1}, Lgg8;-><init>(Lsp2;)V
 
     .line 28
     .line 29
     .line 30
-    new-instance p1, Lbv6;
+    new-instance p1, Lwr7;
 
     .line 31
     .line 32
-    const/4 v1, 0x2
+    const/16 v1, 0x8
 
     .line 33
-    invoke-direct {p1, v1, p0}, Lbv6;-><init>(ILjava/lang/Object;)V
-
     .line 34
+    invoke-direct {p1, v1, p0}, Lwr7;-><init>(ILjava/lang/Object;)V
+
     .line 35
     .line 36
-    iput-object p1, v0, Lnl7;->f:Lg72;
-
     .line 37
+    iput-object p1, v0, Lgg8;->f:Lji2;
+
     .line 38
-    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->f:Lnl7;
-
     .line 39
+    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->f:Lgg8;
+
     .line 40
-    new-instance p1, Lqo4;
-
     .line 41
-    .line 42
-    const/4 v0, 0x0
+    sget-object p1, Lan3;->g0:Lan3;
 
+    .line 42
     .line 43
-    invoke-direct {p1, v0}, Lqo4;-><init>(I)V
+    new-instance v0, Lx65;
 
     .line 44
     .line 45
+    sget-object v1, Lr98;->a:Lr98;
+
     .line 46
-    iput-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->g:Lqo4;
-
     .line 47
-    .line 48
-    const/high16 p1, 0x3f800000    # 1.0f
+    invoke-direct {v0, v1, p1}, Lx65;-><init>(Ljava/lang/Object;Lo17;)V
 
+    .line 48
     .line 49
     .line 50
-    iput p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->h:F
+    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->g:Lx65;
 
     .line 51
     .line 52
-    const/4 p1, -0x1
+    const/high16 p1, 0x3f800000    # 1.0f
 
     .line 53
-    iput p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->j:I
-
     .line 54
+    iput p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->h:F
+
     .line 55
+    .line 56
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lm20;)V
+.method public final a(Lq40;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->i:Lm20;
+    iput-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->i:Lq40;
 
     .line 2
     .line 3
@@ -170,42 +167,42 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->d:Lto4;
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->d:Lx65;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lto4;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lx65;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Lrb6;
+    check-cast p0, Lsy6;
 
     .line 8
     .line 9
-    iget-wide v0, v0, Lrb6;->a:J
+    iget-wide v0, p0, Lsy6;->a:J
 
     .line 10
     .line 11
     return-wide v0
 .end method
 
-.method public final d(Lhf3;)V
+.method public final d(Lxv3;)V
     .locals 11
 
     .line 1
-    iget-object v0, p1, Lhf3;->Q:Loe0;
+    iget-object v0, p1, Lxv3;->X:Luk0;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->i:Lm20;
+    iget-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->i:Lq40;
 
     .line 4
     .line 5
-    iget-object v2, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->f:Lnl7;
+    iget-object v2, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->f:Lgg8;
 
     .line 6
     .line 7
@@ -213,11 +210,11 @@
 
     .line 8
     .line 9
-    iget-object v1, v2, Lnl7;->g:Lto4;
+    iget-object v1, v2, Lgg8;->g:Lx65;
 
     .line 10
     .line 11
-    invoke-virtual {v1}, Lto4;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lx65;->getValue()Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -225,16 +222,16 @@
     move-result-object v1
 
     .line 15
-    check-cast v1, Lm20;
+    check-cast v1, Lq40;
 
     .line 16
     .line 17
     :cond_0
-    iget-object v3, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->e:Lto4;
+    iget-object v3, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->e:Lx65;
 
     .line 18
     .line 19
-    invoke-virtual {v3}, Lto4;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, Lx65;->getValue()Ljava/lang/Object;
 
     .line 20
     .line 21
@@ -262,7 +259,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Lhf3;->getLayoutDirection()Lte3;
+    invoke-virtual {p1}, Lxv3;->getLayoutDirection()Lhv3;
 
     .line 34
     .line 35
@@ -270,7 +267,7 @@
     move-result-object v3
 
     .line 37
-    sget-object v5, Lte3;->R:Lte3;
+    sget-object v5, Lhv3;->Y:Lhv3;
 
     .line 38
     .line 39
@@ -278,7 +275,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {v0}, Loe0;->j0()J
+    invoke-interface {v0}, Lxr1;->y0()J
 
     .line 42
     .line 43
@@ -286,11 +283,11 @@
     move-result-wide v5
 
     .line 45
-    iget-object v0, v0, Loe0;->R:Lrv7;
+    iget-object v0, v0, Luk0;->Y:Lpq;
 
     .line 46
     .line 47
-    invoke-virtual {v0}, Lrv7;->s()J
+    invoke-virtual {v0}, Lpq;->s()J
 
     .line 48
     .line 49
@@ -298,7 +295,7 @@
     move-result-wide v7
 
     .line 51
-    invoke-virtual {v0}, Lrv7;->o()Lme0;
+    invoke-virtual {v0}, Lpq;->k()Lsk0;
 
     .line 52
     .line 53
@@ -306,17 +303,17 @@
     move-result-object v3
 
     .line 55
-    invoke-interface {v3}, Lme0;->h()V
+    invoke-interface {v3}, Lsk0;->g()V
 
     .line 56
     .line 57
     .line 58
     :try_start_0
-    iget-object v3, v0, Lrv7;->R:Ljava/lang/Object;
+    iget-object v3, v0, Lpq;->Y:Ljava/lang/Object;
 
     .line 59
     .line 60
-    check-cast v3, Lrb2;
+    check-cast v3, Lym2;
 
     .line 61
     .line 62
@@ -328,19 +325,19 @@
 
     .line 65
     .line 66
-    invoke-virtual {v3, v9, v10, v5, v6}, Lrb2;->y0(FFJ)V
+    invoke-virtual {v3, v9, v10, v5, v6}, Lym2;->N(FFJ)V
 
     .line 67
     .line 68
     .line 69
-    invoke-virtual {v2, p1, v4, v1}, Lnl7;->e(Ltj1;FLm20;)V
+    invoke-virtual {v2, p1, v4, v1}, Lgg8;->e(Lxr1;FLq40;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 70
     .line 71
     .line 72
-    invoke-static {v0, v7, v8}, Lea0;->A(Lrv7;J)V
+    invoke-static {v0, v7, v8}, Lw31;->v(Lpq;J)V
 
     .line 73
     .line 74
@@ -349,39 +346,32 @@
 
     .line 76
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 77
-    invoke-static {v0, v7, v8}, Lea0;->A(Lrv7;J)V
+    invoke-static {v0, v7, v8}, Lw31;->v(Lpq;J)V
 
     .line 78
     .line 79
     .line 80
-    throw p1
+    throw p0
 
     .line 81
     :cond_1
-    invoke-virtual {v2, p1, v4, v1}, Lnl7;->e(Ltj1;FLm20;)V
+    invoke-virtual {v2, p1, v4, v1}, Lgg8;->e(Lxr1;FLq40;)V
 
     .line 82
     .line 83
     .line 84
     :goto_0
-    iget-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->g:Lqo4;
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->g:Lx65;
 
     .line 85
     .line 86
-    invoke-virtual {p1}, Lqo4;->k()I
+    invoke-virtual {p0}, Lx65;->getValue()Ljava/lang/Object;
 
     .line 87
     .line 88
     .line 89
-    move-result p1
-
-    .line 90
-    iput p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->j:I
-
-    .line 91
-    .line 92
     return-void
 .end method

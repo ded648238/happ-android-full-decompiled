@@ -1,67 +1,121 @@
-.class public final Lri3;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lri3;
+.super Lnb3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic a:Lwi3;
-
-.field public final synthetic b:Ljn4;
-
-.field public final synthetic c:Lg72;
-
-.field public final synthetic d:Lqq;
-
-.field public final synthetic e:Lbx0;
-
-.field public final synthetic f:Lpc2;
-
-.field public final synthetic g:Lir0;
-
-.field public final synthetic h:Le8;
-
-
-# direct methods
-.method public constructor <init>(Lwi3;Ljn4;Ll83;Lqq;Lbx0;Lpc2;Lir0;Le8;)V
+# virtual methods
+.method public final a()Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-super {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lri3;->a:Lwi3;
+    move-result-object p0
 
     .line 5
+    return-object p0
+.end method
+
+.method public b()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public getMessage()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    invoke-super {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    if-nez p0, :cond_0
+
     .line 6
-    iput-object p2, p0, Lri3;->b:Ljn4;
+    .line 7
+    const-string p0, "N/A"
+
+    .line 8
+    .line 9
+    :cond_0
+    return-object p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lri3;->c:Lg72;
-
     .line 9
+    move-result-object v1
+
     .line 10
-    iput-object p4, p0, Lri3;->d:Lqq;
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     .line 11
     .line 12
-    iput-object p5, p0, Lri3;->e:Lbx0;
-
     .line 13
+    move-result-object v1
+
     .line 14
-    iput-object p6, p0, Lri3;->f:Lpc2;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 15
     .line 16
-    iput-object p7, p0, Lri3;->g:Lir0;
-
     .line 17
-    .line 18
-    iput-object p8, p0, Lri3;->h:Le8;
+    const-string v1, ": "
 
+    .line 18
     .line 19
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 20
-    return-void
+    .line 21
+    .line 22
+    invoke-virtual {p0}, Lri3;->getMessage()Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p0
+
+    .line 26
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p0
+
+    .line 33
+    return-object p0
 .end method

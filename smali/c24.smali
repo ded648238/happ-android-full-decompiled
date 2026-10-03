@@ -1,286 +1,657 @@
-.class public abstract Lc24;
+.class public final Lc24;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lb24;
+.implements Landroid/text/style/LineHeightSpan;
+
+
+# instance fields
+.field public final X:F
+
+.field public final Y:I
+
+.field public final Z:Z
+
+.field public final c0:Z
+
+.field public final d0:F
+
+.field public final e0:I
+
+.field public f0:I
+
+.field public g0:I
+
+.field public h0:I
+
+.field public i0:I
+
+.field public j0:I
+
+.field public k0:I
+
+
+# direct methods
+.method public constructor <init>(FIZZFI)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Lc24;->X:F
+
+    .line 5
+    .line 6
+    iput p2, p0, Lc24;->Y:I
+
+    .line 7
+    .line 8
+    iput-boolean p3, p0, Lc24;->Z:Z
+
+    .line 9
+    .line 10
+    iput-boolean p4, p0, Lc24;->c0:Z
+
+    .line 11
+    .line 12
+    iput p5, p0, Lc24;->d0:F
+
+    .line 13
+    .line 14
+    iput p6, p0, Lc24;->e0:I
+
+    .line 15
+    .line 16
+    const/high16 p1, -0x80000000
+
+    .line 17
+    .line 18
+    iput p1, p0, Lc24;->f0:I
+
+    .line 19
+    .line 20
+    iput p1, p0, Lc24;->g0:I
+
+    .line 21
+    .line 22
+    iput p1, p0, Lc24;->h0:I
+
+    .line 23
+    .line 24
+    iput p1, p0, Lc24;->i0:I
+
+    .line 25
+    .line 26
+    const/4 p0, 0x0
+
+    .line 27
+    cmpg-float p0, p0, p5
+
+    .line 28
+    .line 29
+    if-gtz p0, :cond_0
+
+    .line 30
+    .line 31
+    const/high16 p0, 0x3f800000    # 1.0f
+
+    .line 32
+    .line 33
+    cmpg-float p0, p5, p0
+
+    .line 34
+    .line 35
+    if-gtz p0, :cond_0
+
+    .line 36
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_0
+    const/high16 p0, -0x40800000    # -1.0f
+
+    .line 39
+    .line 40
+    cmpg-float p0, p5, p0
+
+    .line 41
+    .line 42
+    if-nez p0, :cond_1
+
+    .line 43
+    .line 44
+    :goto_0
+    return-void
+
+    .line 45
+    :cond_1
+    const-string p0, "topRatio should be in [0..1] range or -1"
+
+    .line 46
+    .line 47
+    invoke-static {p0}, Lh53;->b(Ljava/lang/String;)V
+
+    .line 48
+    .line 49
+    .line 50
+    return-void
+.end method
 
 
 # virtual methods
-.method public a(Li91;Lj72;)Ljava/util/Collection;
-    .locals 0
+.method public final chooseHeight(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V
+    .locals 7
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget p1, p6, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
     .line 2
     .line 3
-    .line 4
-    sget-object p1, Lwn1;->Q:Lwn1;
-
-    .line 5
-    .line 6
-    return-object p1
-.end method
-
-.method public b(Lha4;Lad4;)Ljava/util/Collection;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    sget-object p1, Lwn1;->Q:Lwn1;
-
-    .line 5
-    .line 6
-    return-object p1
-.end method
-
-.method public c()Ljava/util/Set;
-    .locals 4
-
-    .line 1
-    sget-object v0, Li91;->p:Li91;
-
-    .line 2
-    .line 3
-    sget-object v1, Lgq1;->V:Lgq1;
+    iget p4, p6, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
 
     .line 4
     .line 5
-    invoke-virtual {p0, v0, v1}, Lc24;->a(Li91;Lj72;)Ljava/util/Collection;
+    sub-int p5, p1, p4
 
     .line 6
     .line 7
-    .line 8
-    move-result-object v0
+    if-gtz p5, :cond_0
 
+    .line 8
     .line 9
-    check-cast v0, Ljava/lang/Iterable;
+    goto :goto_2
 
     .line 10
+    :cond_0
+    const/4 p5, 0x0
+
     .line 11
-    new-instance v1, Ljava/util/LinkedHashSet;
+    const/4 v0, 0x1
 
     .line 12
-    .line 13
-    invoke-direct {v1}, Ljava/util/LinkedHashSet;-><init>()V
+    if-nez p2, :cond_1
 
+    .line 13
     .line 14
+    move p2, v0
+
     .line 15
+    goto :goto_0
+
     .line 16
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    :cond_1
+    move p2, p5
 
     .line 17
+    :goto_0
+    iget v1, p0, Lc24;->Y:I
+
     .line 18
     .line 19
-    move-result-object v0
+    if-ne p3, v1, :cond_2
 
     .line 20
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
     .line 21
+    move p3, v0
+
     .line 22
+    goto :goto_1
+
     .line 23
-    move-result v2
+    :cond_2
+    move p3, p5
 
     .line 24
-    if-eqz v2, :cond_1
+    :goto_1
+    const/4 v1, 0x2
 
     .line 25
-    .line 26
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    iget v2, p0, Lc24;->e0:I
 
+    .line 26
     .line 27
+    iget-boolean v3, p0, Lc24;->c0:Z
+
     .line 28
     .line 29
-    move-result-object v2
+    iget-boolean v4, p0, Lc24;->Z:Z
 
     .line 30
-    instance-of v3, v2, Loa6;
-
     .line 31
+    if-eqz p2, :cond_4
+
     .line 32
-    if-eqz v3, :cond_0
-
     .line 33
+    if-eqz p3, :cond_4
+
     .line 34
-    check-cast v2, Loa6;
-
     .line 35
-    .line 36
-    invoke-virtual {v2}, Lk21;->getName()Lha4;
+    if-eqz v4, :cond_4
 
+    .line 36
     .line 37
+    if-eqz v3, :cond_4
+
     .line 38
     .line 39
-    move-result-object v2
+    if-ne v2, v1, :cond_3
 
     .line 40
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 41
+    goto :goto_3
+
     .line 42
+    :cond_3
+    :goto_2
+    return-void
+
     .line 43
-    invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    :cond_4
+    :goto_3
+    iget v5, p0, Lc24;->f0:I
 
     .line 44
     .line 45
+    const/high16 v6, -0x80000000
+
     .line 46
-    goto :goto_0
-
     .line 47
-    :cond_1
-    return-object v1
-.end method
+    if-ne v5, v6, :cond_e
 
-.method public d()Ljava/util/Set;
-    .locals 1
+    .line 48
+    .line 49
+    sub-int/2addr p1, p4
 
-    .line 1
-    const/4 v0, 0x0
+    .line 50
+    iget p4, p0, Lc24;->X:F
 
-    .line 2
-    return-object v0
-.end method
+    .line 51
+    .line 52
+    float-to-double v5, p4
 
-.method public e(Lha4;Lad4;)Lmk0;
-    .locals 0
+    .line 53
+    invoke-static {v5, v6}, Ljava/lang/Math;->ceil(D)D
 
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 54
+    .line 55
+    .line 56
+    move-result-wide v5
 
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 57
+    double-to-float p4, v5
 
-    .line 5
-    .line 6
-    .line 7
-    const/4 p1, 0x0
+    .line 58
+    float-to-int p4, p4
 
-    .line 8
-    return-object p1
-.end method
+    .line 59
+    sub-int p1, p4, p1
 
-.method public f(Lha4;Lad4;)Ljava/util/Collection;
-    .locals 0
+    .line 60
+    .line 61
+    if-ne v2, v0, :cond_5
 
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 62
+    .line 63
+    if-gtz p1, :cond_5
 
-    .line 2
-    .line 3
-    .line 4
-    sget-object p1, Lwn1;->Q:Lwn1;
+    .line 64
+    .line 65
+    iget p1, p6, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
 
-    .line 5
-    .line 6
-    return-object p1
-.end method
+    .line 66
+    .line 67
+    iput p1, p0, Lc24;->g0:I
 
-.method public g()Ljava/util/Set;
-    .locals 4
+    .line 68
+    .line 69
+    iget p4, p6, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
-    .line 1
-    sget-object v0, Li91;->q:Li91;
+    .line 70
+    .line 71
+    iput p4, p0, Lc24;->h0:I
 
-    .line 2
-    .line 3
-    sget-object v1, Lgq1;->V:Lgq1;
+    .line 72
+    .line 73
+    iput p1, p0, Lc24;->f0:I
 
-    .line 4
-    .line 5
-    invoke-virtual {p0, v0, v1}, Lc24;->a(Li91;Lj72;)Ljava/util/Collection;
+    .line 74
+    .line 75
+    iput p4, p0, Lc24;->i0:I
 
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
+    .line 76
+    .line 77
+    iput p5, p0, Lc24;->j0:I
 
-    .line 9
-    check-cast v0, Ljava/lang/Iterable;
+    .line 78
+    .line 79
+    iput p5, p0, Lc24;->k0:I
 
-    .line 10
-    .line 11
-    new-instance v1, Ljava/util/LinkedHashSet;
+    .line 80
+    .line 81
+    goto/16 :goto_9
 
-    .line 12
-    .line 13
-    invoke-direct {v1}, Ljava/util/LinkedHashSet;-><init>()V
+    .line 82
+    .line 83
+    :cond_5
+    const/high16 v0, -0x40800000    # -1.0f
 
-    .line 14
-    .line 15
-    .line 16
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    .line 84
+    .line 85
+    iget v5, p0, Lc24;->d0:F
 
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
+    .line 86
+    .line 87
+    cmpg-float v0, v5, v0
 
-    .line 20
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    .line 88
+    .line 89
+    if-nez v0, :cond_6
 
-    .line 21
-    .line 22
-    .line 23
-    move-result v2
+    .line 90
+    .line 91
+    iget v0, p6, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
 
-    .line 24
-    if-eqz v2, :cond_1
+    .line 92
+    .line 93
+    int-to-float v0, v0
 
-    .line 25
-    .line 26
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 94
+    invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v2
+    .line 95
+    .line 96
+    .line 97
+    move-result v0
 
-    .line 30
-    instance-of v3, v2, Loa6;
+    .line 98
+    iget v5, p6, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
-    .line 31
-    .line 32
-    if-eqz v3, :cond_0
+    .line 99
+    .line 100
+    iget v6, p6, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
 
-    .line 33
-    .line 34
-    check-cast v2, Loa6;
+    .line 101
+    .line 102
+    sub-int/2addr v5, v6
 
-    .line 35
-    .line 36
-    invoke-virtual {v2}, Lk21;->getName()Lha4;
+    .line 103
+    int-to-float v5, v5
 
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v2
+    .line 104
+    div-float v5, v0, v5
 
-    .line 40
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 105
+    .line 106
+    :cond_6
+    if-gtz p1, :cond_7
 
-    .line 41
-    .line 42
-    .line 43
-    invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 107
+    .line 108
+    int-to-float v0, p1
 
-    .line 44
-    .line 45
-    .line 46
-    goto :goto_0
+    .line 109
+    mul-float/2addr v0, v5
 
-    .line 47
-    :cond_1
-    return-object v1
+    .line 110
+    float-to-double v5, v0
+
+    .line 111
+    invoke-static {v5, v6}, Ljava/lang/Math;->ceil(D)D
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-wide v5
+
+    .line 115
+    :goto_4
+    double-to-float v0, v5
+
+    .line 116
+    float-to-int v0, v0
+
+    .line 117
+    goto :goto_5
+
+    .line 118
+    :cond_7
+    int-to-float v0, p1
+
+    .line 119
+    const/high16 v6, 0x3f800000    # 1.0f
+
+    .line 120
+    .line 121
+    sub-float/2addr v6, v5
+
+    .line 122
+    mul-float/2addr v6, v0
+
+    .line 123
+    float-to-double v5, v6
+
+    .line 124
+    invoke-static {v5, v6}, Ljava/lang/Math;->ceil(D)D
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-wide v5
+
+    .line 128
+    goto :goto_4
+
+    .line 129
+    :goto_5
+    iget v5, p6, Landroid/graphics/Paint$FontMetricsInt;->descent:I
+
+    .line 130
+    .line 131
+    add-int/2addr v0, v5
+
+    .line 132
+    iput v0, p0, Lc24;->h0:I
+
+    .line 133
+    .line 134
+    sub-int p4, v0, p4
+
+    .line 135
+    .line 136
+    iput p4, p0, Lc24;->g0:I
+
+    .line 137
+    .line 138
+    if-nez v2, :cond_8
+
+    .line 139
+    .line 140
+    goto :goto_6
+
+    .line 141
+    :cond_8
+    if-ltz p1, :cond_b
+
+    .line 142
+    .line 143
+    :goto_6
+    if-eqz v4, :cond_9
+
+    .line 144
+    .line 145
+    iget p4, p6, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
+
+    .line 146
+    .line 147
+    :cond_9
+    iput p4, p0, Lc24;->f0:I
+
+    .line 148
+    .line 149
+    if-eqz v3, :cond_a
+
+    .line 150
+    .line 151
+    move v0, v5
+
+    .line 152
+    :cond_a
+    iput v0, p0, Lc24;->i0:I
+
+    .line 153
+    .line 154
+    iget p1, p6, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
+
+    .line 155
+    .line 156
+    sub-int/2addr p1, p4
+
+    .line 157
+    iput p1, p0, Lc24;->j0:I
+
+    .line 158
+    .line 159
+    sub-int/2addr v0, v5
+
+    .line 160
+    iput v0, p0, Lc24;->k0:I
+
+    .line 161
+    .line 162
+    goto :goto_9
+
+    .line 163
+    :cond_b
+    if-ne v2, v1, :cond_e
+
+    .line 164
+    .line 165
+    iget p1, p6, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
+
+    .line 166
+    .line 167
+    if-eqz v4, :cond_c
+
+    .line 168
+    .line 169
+    invoke-static {p1, p4}, Ljava/lang/Math;->max(II)I
+
+    .line 170
+    .line 171
+    .line 172
+    move-result p1
+
+    .line 173
+    goto :goto_7
+
+    .line 174
+    :cond_c
+    invoke-static {p1, p4}, Ljava/lang/Math;->min(II)I
+
+    .line 175
+    .line 176
+    .line 177
+    move-result p1
+
+    .line 178
+    :goto_7
+    iput p1, p0, Lc24;->f0:I
+
+    .line 179
+    .line 180
+    iget p1, p6, Landroid/graphics/Paint$FontMetricsInt;->descent:I
+
+    .line 181
+    .line 182
+    iget p4, p0, Lc24;->h0:I
+
+    .line 183
+    .line 184
+    if-eqz v3, :cond_d
+
+    .line 185
+    .line 186
+    invoke-static {p1, p4}, Ljava/lang/Math;->min(II)I
+
+    .line 187
+    .line 188
+    .line 189
+    move-result p1
+
+    .line 190
+    goto :goto_8
+
+    .line 191
+    :cond_d
+    invoke-static {p1, p4}, Ljava/lang/Math;->max(II)I
+
+    .line 192
+    .line 193
+    .line 194
+    move-result p1
+
+    .line 195
+    :goto_8
+    iput p1, p0, Lc24;->i0:I
+
+    .line 196
+    .line 197
+    iput p5, p0, Lc24;->j0:I
+
+    .line 198
+    .line 199
+    iput p5, p0, Lc24;->k0:I
+
+    .line 200
+    .line 201
+    :cond_e
+    :goto_9
+    if-eqz p2, :cond_f
+
+    .line 202
+    .line 203
+    iget p1, p0, Lc24;->f0:I
+
+    .line 204
+    .line 205
+    goto :goto_a
+
+    .line 206
+    :cond_f
+    iget p1, p0, Lc24;->g0:I
+
+    .line 207
+    .line 208
+    :goto_a
+    iput p1, p6, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
+
+    .line 209
+    .line 210
+    if-eqz p3, :cond_10
+
+    .line 211
+    .line 212
+    iget p0, p0, Lc24;->i0:I
+
+    .line 213
+    .line 214
+    goto :goto_b
+
+    .line 215
+    :cond_10
+    iget p0, p0, Lc24;->h0:I
+
+    .line 216
+    .line 217
+    :goto_b
+    iput p0, p6, Landroid/graphics/Paint$FontMetricsInt;->descent:I
+
+    .line 218
+    .line 219
+    return-void
 .end method

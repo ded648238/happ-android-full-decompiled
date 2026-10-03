@@ -6,13 +6,13 @@ import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.FrameLayout;
-import defpackage.y40;
-import defpackage.z40;
+import defpackage.e70;
+import defpackage.f70;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class BrowseFrameLayout extends FrameLayout {
-    public View.OnKeyListener Q;
+    public View.OnKeyListener c0;
 
     public BrowseFrameLayout(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0);
@@ -20,16 +20,16 @@ public class BrowseFrameLayout extends FrameLayout {
 
     @Override // android.view.ViewGroup, android.view.View
     public final boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        boolean zDispatchKeyEvent = super.dispatchKeyEvent(keyEvent);
-        View.OnKeyListener onKeyListener = this.Q;
-        return (onKeyListener == null || zDispatchKeyEvent) ? zDispatchKeyEvent : onKeyListener.onKey(getRootView(), keyEvent.getKeyCode(), keyEvent);
+        boolean dispatchKeyEvent = super.dispatchKeyEvent(keyEvent);
+        View.OnKeyListener onKeyListener = this.c0;
+        return (onKeyListener == null || dispatchKeyEvent) ? dispatchKeyEvent : onKeyListener.onKey(getRootView(), keyEvent.getKeyCode(), keyEvent);
     }
 
-    public y40 getOnChildFocusListener() {
+    public e70 getOnChildFocusListener() {
         return null;
     }
 
-    public z40 getOnFocusSearchListener() {
+    public f70 getOnFocusSearchListener() {
         return null;
     }
 
@@ -39,16 +39,16 @@ public class BrowseFrameLayout extends FrameLayout {
     }
 
     public void setOnDispatchKeyListener(View.OnKeyListener onKeyListener) {
-        this.Q = onKeyListener;
+        this.c0 = onKeyListener;
     }
 
     public BrowseFrameLayout(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
     }
 
-    public void setOnChildFocusListener(y40 y40Var) {
+    public void setOnChildFocusListener(e70 e70Var) {
     }
 
-    public void setOnFocusSearchListener(z40 z40Var) {
+    public void setOnFocusSearchListener(f70 f70Var) {
     }
 }

@@ -1,30 +1,33 @@
 package defpackage;
 
-import android.widget.Magnifier;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class uv4 extends ue1 {
+    public final /* synthetic */ int Z;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class uv4 implements sv4 {
-    public final Magnifier a;
-
-    public uv4(Magnifier magnifier) {
-        this.a = magnifier;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ uv4(yx6 yx6Var, int i) {
+        super(yx6Var);
+        this.Z = i;
     }
 
-    @Override // defpackage.sv4
-    public void a(long j, long j2, float f) {
-        this.a.show(Float.intBitsToFloat((int) (j >> 32)), Float.intBitsToFloat((int) (j & 4294967295L)));
+    @Override // defpackage.te1, defpackage.bu3
+    public final boolean p0() {
+        switch (this.Z) {
+            case 0:
+                return false;
+            default:
+                return true;
+        }
     }
 
-    public final void b() {
-        this.a.dismiss();
-    }
-
-    public final long c() {
-        return (((long) this.a.getHeight()) & 4294967295L) | (((long) this.a.getWidth()) << 32);
-    }
-
-    public final void d() {
-        this.a.update();
+    @Override // defpackage.te1
+    public final te1 z0(yx6 yx6Var) {
+        switch (this.Z) {
+            case 0:
+                return new uv4(yx6Var, 0);
+            default:
+                return new uv4(yx6Var, 1);
+        }
     }
 }

@@ -1,85 +1,319 @@
-.class public final synthetic Ltm5;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Ltm5;
+.super Lck3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final Q:Ltm5;
+# instance fields
+.field public final q:[Lvm5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Lck3;[Lvm5;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ltm5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "getInboundHttpEnable()Ljava/lang/Boolean;"
-
     .line 4
+    iput-object p2, p0, Ltm5;->q:[Lvm5;
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
-
-    .line 7
-    .line 8
-    const-string v4, "inboundHttpEnable"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Ltm5;->Q:Ltm5;
-
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final K(Ljava/lang/Class;Lgj3;)Lck3;
+    .locals 3
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    iget-object v0, p0, Ltm5;->q:[Lvm5;
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/Boolean;
+    array-length v1, v0
 
     .line 4
-    .line 5
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->G1(Ljava/lang/Boolean;)V
+    const/16 v2, 0x8
 
+    .line 5
     .line 6
+    if-ne v1, v2, :cond_0
+
     .line 7
     .line 8
-    return-void
+    return-object p0
+
+    .line 9
+    :cond_0
+    add-int/lit8 v2, v1, 0x1
+
+    .line 10
+    .line 11
+    invoke-static {v0, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, [Lvm5;
+
+    .line 16
+    .line 17
+    new-instance v2, Lvm5;
+
+    .line 18
+    .line 19
+    invoke-direct {v2, p1, p2}, Lvm5;-><init>(Ljava/lang/Class;Lgj3;)V
+
+    .line 20
+    .line 21
+    .line 22
+    aput-object v2, v0, v1
+
+    .line 23
+    .line 24
+    new-instance p1, Ltm5;
+
+    .line 25
+    .line 26
+    invoke-direct {p1, p0, v0}, Ltm5;-><init>(Lck3;[Lvm5;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-object p1
 .end method
 
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final W(Ljava/lang/Class;)Lgj3;
+    .locals 2
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->T()Ljava/lang/Boolean;
+    iget-object p0, p0, Ltm5;->q:[Lvm5;
 
+    .line 3
     .line 4
+    aget-object v0, p0, v0
+
     .line 5
     .line 6
-    move-result-object p1
+    iget-object v1, v0, Lvm5;->a:Ljava/lang/Class;
 
     .line 7
-    return-object p1
+    .line 8
+    if-ne v1, p1, :cond_0
+
+    .line 9
+    .line 10
+    iget-object p0, v0, Lvm5;->b:Lgj3;
+
+    .line 11
+    .line 12
+    return-object p0
+
+    .line 13
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 14
+    aget-object v0, p0, v0
+
+    .line 15
+    .line 16
+    iget-object v1, v0, Lvm5;->a:Ljava/lang/Class;
+
+    .line 17
+    .line 18
+    if-ne v1, p1, :cond_1
+
+    .line 19
+    .line 20
+    iget-object p0, v0, Lvm5;->b:Lgj3;
+
+    .line 21
+    .line 22
+    return-object p0
+
+    .line 23
+    :cond_1
+    const/4 v0, 0x2
+
+    .line 24
+    aget-object v0, p0, v0
+
+    .line 25
+    .line 26
+    iget-object v1, v0, Lvm5;->a:Ljava/lang/Class;
+
+    .line 27
+    .line 28
+    if-ne v1, p1, :cond_2
+
+    .line 29
+    .line 30
+    iget-object p0, v0, Lvm5;->b:Lgj3;
+
+    .line 31
+    .line 32
+    return-object p0
+
+    .line 33
+    :cond_2
+    array-length v0, p0
+
+    .line 34
+    packed-switch v0, :pswitch_data_0
+
+    .line 35
+    .line 36
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :pswitch_0
+    const/4 v0, 0x7
+
+    .line 39
+    aget-object v0, p0, v0
+
+    .line 40
+    .line 41
+    iget-object v1, v0, Lvm5;->a:Ljava/lang/Class;
+
+    .line 42
+    .line 43
+    if-ne v1, p1, :cond_3
+
+    .line 44
+    .line 45
+    iget-object p0, v0, Lvm5;->b:Lgj3;
+
+    .line 46
+    .line 47
+    return-object p0
+
+    .line 48
+    :cond_3
+    :pswitch_1
+    const/4 v0, 0x6
+
+    .line 49
+    aget-object v0, p0, v0
+
+    .line 50
+    .line 51
+    iget-object v1, v0, Lvm5;->a:Ljava/lang/Class;
+
+    .line 52
+    .line 53
+    if-ne v1, p1, :cond_4
+
+    .line 54
+    .line 55
+    iget-object p0, v0, Lvm5;->b:Lgj3;
+
+    .line 56
+    .line 57
+    return-object p0
+
+    .line 58
+    :cond_4
+    :pswitch_2
+    const/4 v0, 0x5
+
+    .line 59
+    aget-object v0, p0, v0
+
+    .line 60
+    .line 61
+    iget-object v1, v0, Lvm5;->a:Ljava/lang/Class;
+
+    .line 62
+    .line 63
+    if-ne v1, p1, :cond_5
+
+    .line 64
+    .line 65
+    iget-object p0, v0, Lvm5;->b:Lgj3;
+
+    .line 66
+    .line 67
+    return-object p0
+
+    .line 68
+    :cond_5
+    :pswitch_3
+    const/4 v0, 0x4
+
+    .line 69
+    aget-object v0, p0, v0
+
+    .line 70
+    .line 71
+    iget-object v1, v0, Lvm5;->a:Ljava/lang/Class;
+
+    .line 72
+    .line 73
+    if-ne v1, p1, :cond_6
+
+    .line 74
+    .line 75
+    iget-object p0, v0, Lvm5;->b:Lgj3;
+
+    .line 76
+    .line 77
+    return-object p0
+
+    .line 78
+    :cond_6
+    :pswitch_4
+    const/4 v0, 0x3
+
+    .line 79
+    aget-object p0, p0, v0
+
+    .line 80
+    .line 81
+    iget-object v0, p0, Lvm5;->a:Ljava/lang/Class;
+
+    .line 82
+    .line 83
+    if-ne v0, p1, :cond_7
+
+    .line 84
+    .line 85
+    iget-object p0, p0, Lvm5;->b:Lgj3;
+
+    .line 86
+    .line 87
+    return-object p0
+
+    .line 88
+    :cond_7
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 89
+    return-object p0
+
+    .line 90
+    nop
+
+    .line 91
+    :pswitch_data_0
+    .packed-switch 0x4
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

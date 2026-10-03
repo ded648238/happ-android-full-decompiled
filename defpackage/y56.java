@@ -1,48 +1,19 @@
 package defpackage;
 
-import j$.util.Objects;
-import java.io.Serializable;
+import su.happ.proxyutility.dto.MetaParams;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class y56 implements Serializable {
-    public static final d33 S = d33.b;
-    public final String Q;
-    public volatile char[] R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class y56 extends jq4 {
+    public static final y56 X = new y56(MetaParams.class, "appAutoStart", "getAppAutoStart()Ljava/lang/Boolean;", 0);
 
-    public y56(String str) {
-        Objects.requireNonNull(str, "Null String illegal for SerializedString");
-        this.Q = str;
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((MetaParams) obj).j1((Boolean) obj2);
     }
 
-    public final char[] a() {
-        char[] cArr = this.R;
-        if (cArr != null) {
-            return cArr;
-        }
-        d33 d33Var = S;
-        String str = this.Q;
-        d33Var.getClass();
-        char[] cArrA = d33.a(str);
-        this.R = cArrA;
-        return cArrA;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj == null || obj.getClass() != y56.class) {
-            return false;
-        }
-        return this.Q.equals(((y56) obj).Q);
-    }
-
-    public final int hashCode() {
-        return this.Q.hashCode();
-    }
-
-    public final String toString() {
-        return this.Q;
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return ((MetaParams) obj).getAppAutoStart();
     }
 }

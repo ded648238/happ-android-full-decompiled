@@ -1,27 +1,22 @@
-.class public abstract Lei3;
+.class public final Lei3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final synthetic a:I
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# virtual methods
+.method public final serializer()Lvo3;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lvo3;"
+        }
+    .end annotation
 
     .line 1
-    const/4 v0, 0x0
+    sget-object p0, Lii3;->a:Lii3;
 
     .line 2
-    const/4 v1, 0x5
-
     .line 3
-    invoke-static {v0, v0, v1}, Lfu0;->b(III)J
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
+    return-object p0
 .end method

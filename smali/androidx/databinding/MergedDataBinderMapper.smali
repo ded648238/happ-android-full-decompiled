@@ -1,6 +1,6 @@
 .class public Landroidx/databinding/MergedDataBinderMapper;
-.super Lgz0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld71;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -12,7 +12,7 @@
 
 
 # virtual methods
-.method public final b(Landroid/view/View;I)Lxn7;
+.method public final b(Landroid/view/View;I)Lvi8;
     .locals 2
 
     .line 1
@@ -49,11 +49,11 @@
     move-result-object v1
 
     .line 17
-    check-cast v1, Lgz0;
+    check-cast v1, Ld71;
 
     .line 18
     .line 19
-    invoke-virtual {v1, p1, p2}, Lgz0;->b(Landroid/view/View;I)Lxn7;
+    invoke-virtual {v1, p1, p2}, Ld71;->b(Landroid/view/View;I)Lvi8;
 
     .line 20
     .line 21
@@ -81,25 +81,25 @@
 
     .line 31
     .line 32
-    invoke-virtual {p0, p1, p2}, Landroidx/databinding/MergedDataBinderMapper;->b(Landroid/view/View;I)Lxn7;
+    invoke-virtual {p0, p1, p2}, Landroidx/databinding/MergedDataBinderMapper;->b(Landroid/view/View;I)Lvi8;
 
     .line 33
     .line 34
     .line 35
-    move-result-object p1
+    move-result-object p0
 
     .line 36
-    return-object p1
+    return-object p0
 
     .line 37
     :cond_2
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 38
-    return-object p1
+    return-object p0
 .end method
 
-.method public final c([Landroid/view/View;I)Lxn7;
+.method public final c([Landroid/view/View;I)Lvi8;
     .locals 2
 
     .line 1
@@ -136,11 +136,11 @@
     move-result-object v1
 
     .line 17
-    check-cast v1, Lgz0;
+    check-cast v1, Ld71;
 
     .line 18
     .line 19
-    invoke-virtual {v1, p1, p2}, Lgz0;->c([Landroid/view/View;I)Lxn7;
+    invoke-virtual {v1, p1, p2}, Ld71;->c([Landroid/view/View;I)Lvi8;
 
     .line 20
     .line 21
@@ -168,25 +168,25 @@
 
     .line 31
     .line 32
-    invoke-virtual {p0, p1, p2}, Landroidx/databinding/MergedDataBinderMapper;->c([Landroid/view/View;I)Lxn7;
+    invoke-virtual {p0, p1, p2}, Landroidx/databinding/MergedDataBinderMapper;->c([Landroid/view/View;I)Lvi8;
 
     .line 33
     .line 34
     .line 35
-    move-result-object p1
+    move-result-object p0
 
     .line 36
-    return-object p1
+    return-object p0
 
     .line 37
     :cond_2
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 38
-    return-object p1
+    return-object p0
 .end method
 
-.method public final d(Lgz0;)V
+.method public final d(Ld71;)V
     .locals 2
 
     .line 1
@@ -223,7 +223,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-virtual {p1}, Lgz0;->a()Ljava/util/List;
+    invoke-virtual {p1}, Ld71;->a()Ljava/util/List;
 
     .line 19
     .line 20
@@ -260,11 +260,11 @@
     move-result-object v0
 
     .line 36
-    check-cast v0, Lgz0;
+    check-cast v0, Ld71;
 
     .line 37
     .line 38
-    invoke-virtual {p0, v0}, Landroidx/databinding/MergedDataBinderMapper;->d(Lgz0;)V
+    invoke-virtual {p0, v0}, Landroidx/databinding/MergedDataBinderMapper;->d(Ld71;)V
 
     .line 39
     .line 40
@@ -295,6 +295,7 @@
     const/4 v2, 0x0
 
     .line 8
+    :catch_0
     :cond_0
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -330,7 +331,7 @@
     move-result-object v4
 
     .line 24
-    const-class v5, Lgz0;
+    const-class v5, Ld71;
 
     .line 25
     .line 26
@@ -354,11 +355,11 @@
     move-result-object v4
 
     .line 36
-    check-cast v4, Lgz0;
+    check-cast v4, Ld71;
 
     .line 37
     .line 38
-    invoke-virtual {p0, v4}, Landroidx/databinding/MergedDataBinderMapper;->d(Lgz0;)V
+    invoke-virtual {p0, v4}, Landroidx/databinding/MergedDataBinderMapper;->d(Ld71;)V
 
     .line 39
     .line 40
@@ -378,13 +379,6 @@
     goto :goto_0
 
     .line 46
-    :catch_0
-    nop
-
-    .line 47
-    goto :goto_0
-
-    .line 48
     :cond_1
     return v2
 .end method

@@ -1,9 +1,9 @@
 .class final Lokhttp3/CertificatePinner$check$1;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lou3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg72;
+.implements Lji2;
 
 
 # annotations
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe3;",
-        "Lg72;"
+        "Lou3;",
+        "Lji2;"
     }
 .end annotation
 
@@ -91,7 +91,7 @@
     const/4 p1, 0x0
 
     .line 8
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
+    invoke-direct {p0, p1}, Lou3;-><init>(I)V
 
     .line 9
     .line 10
@@ -102,14 +102,14 @@
 
 # virtual methods
 .method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 58
     invoke-virtual {p0}, Lokhttp3/CertificatePinner$check$1;->invoke()Ljava/util/List;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final invoke()Ljava/util/List;
@@ -166,23 +166,23 @@
     .line 20
     .line 21
     :cond_1
-    new-instance v1, Ljava/util/ArrayList;
+    new-instance p0, Ljava/util/ArrayList;
 
     .line 22
     .line 23
-    const/16 v2, 0xa
+    const/16 v1, 0xa
 
     .line 24
     .line 25
-    invoke-static {v0, v2}, Lom0;->e0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v1}, Lut0;->F0(Ljava/lang/Iterable;I)I
 
     .line 26
     .line 27
     .line 28
-    move-result v2
+    move-result v1
 
     .line 29
-    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {p0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 30
     .line 31
@@ -201,10 +201,10 @@
     .line 37
     .line 38
     .line 39
-    move-result v2
+    move-result v1
 
     .line 40
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
     .line 41
     .line 42
@@ -213,23 +213,23 @@
     .line 43
     .line 44
     .line 45
-    move-result-object v2
+    move-result-object v1
 
     .line 46
-    check-cast v2, Ljava/security/cert/Certificate;
+    check-cast v1, Ljava/security/cert/Certificate;
 
     .line 47
     .line 48
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 49
     .line 50
     .line 51
-    check-cast v2, Ljava/security/cert/X509Certificate;
+    check-cast v1, Ljava/security/cert/X509Certificate;
 
     .line 52
     .line 53
-    invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {p0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     .line 54
     .line 55
@@ -238,5 +238,5 @@
 
     .line 57
     :cond_2
-    return-object v1
+    return-object p0
 .end method

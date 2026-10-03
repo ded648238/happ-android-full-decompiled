@@ -1,62 +1,26 @@
-.class public final Le72;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# instance fields
-.field public final a:Ljava/util/concurrent/Executor;
-
-.field public final b:Ljava/lang/Object;
-
-.field public c:Z
-
-.field public final d:Ljava/util/ArrayList;
+.class public Le72;
+.super Lz62;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lno0;)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const-string v0, "Detail message must not be empty"
 
     .line 2
     .line 3
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p1, v0}, Ld06;->s(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 4
     .line 5
     .line 6
-    .line 7
-    iput-object p1, p0, Le72;->a:Ljava/util/concurrent/Executor;
+    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
+    .line 7
     .line 8
     .line 9
-    new-instance p1, Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
-
-    .line 12
-    .line 13
-    .line 14
-    iput-object p1, p0, Le72;->b:Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    new-instance p1, Ljava/util/ArrayList;
-
-    .line 17
-    .line 18
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    .line 19
-    .line 20
-    .line 21
-    iput-object p1, p0, Le72;->d:Ljava/util/ArrayList;
-
-    .line 22
-    .line 23
     return-void
 .end method

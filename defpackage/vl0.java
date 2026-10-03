@@ -1,6 +1,12 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class vl0 extends wl0 {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class vl0 extends tj2 implements ji2 {
+    public static final vl0 X = new vl0(0, yl0.class, "javaTypeNotSupported", "javaTypeNotSupported()Ljava/lang/Void;", 1);
+
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        throw new xt3("javaType for captured types is not supported");
+    }
 }

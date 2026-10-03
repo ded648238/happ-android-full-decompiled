@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/NativeCrypto;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -263,7 +263,7 @@
 
     .line 79
     .line 80
-    const/4 v5, 0x0
+    move v5, v2
 
     .line 81
     :goto_1
@@ -364,14 +364,14 @@
 
     .line 128
     .line 129
-    const/4 v0, 0x1
+    move v0, v1
 
     .line 130
     goto :goto_2
 
     .line 131
     :cond_1
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 132
     :goto_2
@@ -387,7 +387,7 @@
 
     .line 136
     .line 137
-    invoke-static {v0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {v0}, Li60;->p(Ljava/lang/String;)V
 
     .line 138
     .line 139
@@ -513,7 +513,7 @@
 
     .line 198
     .line 199
-    const/16 v28, 0x1
+    move/from16 v28, v1
 
     .line 200
     .line 201
@@ -1332,6 +1332,9 @@
 .method public static native EVP_PKEY_CTX_free(J)V
 .end method
 
+.method public static native EVP_PKEY_CTX_set1_signature_context_string(J[B)V
+.end method
+
 .method public static native EVP_PKEY_CTX_set_rsa_mgf1_md(JJ)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1618,6 +1621,12 @@
 .method public static native SLHDSA_SHA2_128S_generate_key([B[B)V
 .end method
 
+.method public static native SLHDSA_SHA2_128S_prehash_sign([BII[B)[B
+.end method
+
+.method public static native SLHDSA_SHA2_128S_prehash_verify([BI[BI[B)I
+.end method
+
 .method public static native SLHDSA_SHA2_128S_sign([BI[B)[B
 .end method
 
@@ -1711,16 +1720,6 @@
 .method public static native SSL_clear_options(JLorg/conscrypt/NativeSsl;J)J
 .end method
 
-.method public static native SSL_do_handshake(JLorg/conscrypt/NativeSsl;Ljava/io/FileDescriptor;Lorg/conscrypt/NativeCrypto$SSLHandshakeCallbacks;I)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljavax/net/ssl/SSLException;,
-            Ljava/net/SocketTimeoutException;,
-            Ljava/security/cert/CertificateException;
-        }
-    .end annotation
-.end method
-
 .method public static native SSL_ech_accepted(JLorg/conscrypt/NativeSsl;)Z
 .end method
 
@@ -1728,14 +1727,6 @@
 .end method
 
 .method public static native SSL_enable_signed_cert_timestamps(JLorg/conscrypt/NativeSsl;)V
-.end method
-
-.method public static native SSL_enable_tls_channel_id(JLorg/conscrypt/NativeSsl;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljavax/net/ssl/SSLException;
-        }
-    .end annotation
 .end method
 
 .method public static native SSL_export_keying_material(JLorg/conscrypt/NativeSsl;[B[BI)[B
@@ -1800,14 +1791,6 @@
 .method public static native SSL_get_timeout(JLorg/conscrypt/NativeSsl;)J
 .end method
 
-.method public static native SSL_get_tls_channel_id(JLorg/conscrypt/NativeSsl;)[B
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljavax/net/ssl/SSLException;
-        }
-    .end annotation
-.end method
-
 .method public static native SSL_get_tls_unique(JLorg/conscrypt/NativeSsl;)[B
 .end method
 
@@ -1837,14 +1820,6 @@
 .method public static native SSL_pending_written_bytes_in_BIO(J)I
 .end method
 
-.method public static native SSL_read(JLorg/conscrypt/NativeSsl;Ljava/io/FileDescriptor;Lorg/conscrypt/NativeCrypto$SSLHandshakeCallbacks;[BIII)I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
 .method public static native SSL_session_id(JLorg/conscrypt/NativeSsl;)[B
 .end method
 
@@ -1860,9 +1835,6 @@
 .end method
 
 .method public static native SSL_set1_groups(JLorg/conscrypt/NativeSsl;[I)V
-.end method
-
-.method public static native SSL_set1_tls_channel_id(JLorg/conscrypt/NativeSsl;Lorg/conscrypt/NativeRef$EVP_PKEY;)V
 .end method
 
 .method public static native SSL_set_accept_state(JLorg/conscrypt/NativeSsl;)V
@@ -1930,26 +1902,10 @@
 .method public static native SSL_set_verify(JLorg/conscrypt/NativeSsl;I)V
 .end method
 
-.method public static native SSL_shutdown(JLorg/conscrypt/NativeSsl;Ljava/io/FileDescriptor;Lorg/conscrypt/NativeCrypto$SSLHandshakeCallbacks;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
-
 .method public static native SSL_use_psk_identity_hint(JLorg/conscrypt/NativeSsl;Ljava/lang/String;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLException;
-        }
-    .end annotation
-.end method
-
-.method public static native SSL_write(JLorg/conscrypt/NativeSsl;Ljava/io/FileDescriptor;Lorg/conscrypt/NativeCrypto$SSLHandshakeCallbacks;[BIII)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
         }
     .end annotation
 .end method
@@ -2139,7 +2095,7 @@
     move-exception p0
 
     .line 44
-    invoke-static {p0}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 45
     .line 46
@@ -2251,6 +2207,14 @@
 .method public static native XWING_public_key_from_seed([B)[B
 .end method
 
+.method public static native asn1_read_bitstring_payload(JI)[B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
 .method public static native asn1_read_free(J)V
 .end method
 
@@ -2297,6 +2261,14 @@
     .end annotation
 .end method
 
+.method public static native asn1_read_oid_raw(J)Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
 .method public static native asn1_read_sequence(J)J
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -2314,6 +2286,14 @@
 .end method
 
 .method public static native asn1_read_uint64(J)J
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public static native asn1_write_bitstring(J[B)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2368,6 +2348,14 @@
 .end method
 
 .method public static native asn1_write_oid(JLjava/lang/String;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public static native asn1_write_oid_raw(JLjava/lang/String;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2435,7 +2423,7 @@
     const/4 v1, 0x0
 
     .line 5
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 6
     :goto_0
@@ -2591,7 +2579,7 @@
 
     .line 77
     .line 78
-    invoke-static {v1, p0, v2}, Lkd0;->z(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0, v2}, Leh0;->r(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 79
     .line 80
@@ -2599,7 +2587,7 @@
     move-result-object p0
 
     .line 82
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 83
     .line 84
@@ -2625,7 +2613,7 @@
 
     .line 92
     .line 93
-    invoke-static {p0, v2, v1}, Lea0;->p(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v2, v1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     .line 94
     .line 95
@@ -2633,7 +2621,7 @@
     move-result-object p0
 
     .line 97
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 98
     .line 99
@@ -2650,7 +2638,7 @@
 
     .line 103
     .line 104
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 105
     .line 106
@@ -2728,7 +2716,7 @@
 
     .line 30
     .line 31
-    invoke-static {p0, v3, v1}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v3, v1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33
@@ -2736,7 +2724,7 @@
     move-result-object p0
 
     .line 35
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 36
     .line 37
@@ -2749,7 +2737,7 @@
 
     .line 40
     .line 41
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -2766,7 +2754,7 @@
 
     .line 47
     .line 48
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -3010,7 +2998,7 @@
     move-result-object p0
 
     .line 51
-    invoke-static {p0}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 52
     .line 53
@@ -3131,7 +3119,7 @@
 
     .line 44
     .line 45
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 46
     .line 47
@@ -3143,58 +3131,45 @@
 .end method
 
 .method public static getSupportedCipherSuites()[Ljava/lang/String;
-    .locals 4
+    .locals 2
 
     .line 1
-    sget-object v0, Lorg/conscrypt/NativeCrypto;->SUPPORTED_TLS_1_2_CIPHER_SUITES:[Ljava/lang/String;
+    sget-object v0, Lorg/conscrypt/NativeCrypto;->SUPPORTED_TLS_1_3_CIPHER_SUITES:[Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, [Ljava/lang/String;->clone()Ljava/lang/Object;
+    sget-object v1, Lorg/conscrypt/NativeCrypto;->SUPPORTED_TLS_1_2_CIPHER_SUITES:[Ljava/lang/String;
 
     .line 4
     .line 5
+    invoke-virtual {v1}, [Ljava/lang/String;->clone()Ljava/lang/Object;
+
     .line 6
-    move-result-object v0
-
     .line 7
-    check-cast v0, [Ljava/lang/String;
-
     .line 8
+    move-result-object v1
+
     .line 9
-    const/4 v1, 0x2
+    check-cast v1, [Ljava/lang/String;
 
     .line 10
-    new-array v1, v1, [[Ljava/lang/String;
-
     .line 11
-    .line 12
-    sget-object v2, Lorg/conscrypt/NativeCrypto;->SUPPORTED_TLS_1_3_CIPHER_SUITES:[Ljava/lang/String;
+    filled-new-array {v0, v1}, [[Ljava/lang/String;
 
+    .line 12
     .line 13
     .line 14
-    const/4 v3, 0x0
+    move-result-object v0
 
     .line 15
-    aput-object v2, v1, v3
+    invoke-static {v0}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
 
     .line 16
     .line 17
-    const/4 v2, 0x1
-
     .line 18
-    aput-object v0, v1, v2
-
-    .line 19
-    .line 20
-    invoke-static {v1}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
     move-result-object v0
 
-    .line 24
+    .line 19
     return-object v0
 .end method
 
@@ -3697,5 +3672,29 @@
 .method public static native set_SSL_psk_server_callback_enabled(JLorg/conscrypt/NativeSsl;Z)V
 .end method
 
+.method public static native unwrap_EC_private_key_pkcs8([B)[B
+.end method
+
+.method public static native unwrap_EC_public_key_x509([B)[B
+.end method
+
+.method public static native unwrap_RSA_private_key_pkcs8([B)[B
+.end method
+
+.method public static native unwrap_RSA_public_key_x509([B)[B
+.end method
+
 .method public static native usesBoringSsl_FIPS_mode()Z
+.end method
+
+.method public static native wrap_EC_private_key_pkcs8([B)[B
+.end method
+
+.method public static native wrap_EC_public_key_x509([BLjava/lang/String;)[B
+.end method
+
+.method public static native wrap_RSA_private_key_pkcs8([B)[B
+.end method
+
+.method public static native wrap_RSA_public_key_x509([B)[B
 .end method

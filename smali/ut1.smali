@@ -1,85 +1,14 @@
-.class public abstract Lut1;
+.class public interface abstract Lut1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Lgo3;
+# virtual methods
+.method public abstract a()Ljava/util/Set;
+.end method
 
+.method public abstract b()Landroid/hardware/camera2/params/DynamicRangeProfiles;
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 4
-
-    .line 1
-    sget-object v0, Leo3;->Companion:Lco3;
-
-    .line 2
-    .line 3
-    new-instance v1, Ly3;
-
-    .line 4
-    .line 5
-    const/16 v2, 0x1d
-
-    .line 6
-    .line 7
-    invoke-direct {v1, v2}, Ly3;-><init>(I)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 11
-    .line 12
-    .line 13
-    new-instance v0, Lfo3;
-
-    .line 14
-    .line 15
-    new-instance v2, Lzp;
-
-    .line 16
-    .line 17
-    const/4 v3, 0x0
-
-    .line 18
-    invoke-direct {v2, v3, v3}, Lzp;-><init>(IZ)V
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-direct {v0, v2}, Lfo3;-><init>(Lzp;)V
-
-    .line 22
-    .line 23
-    .line 24
-    invoke-interface {v1, v0}, Lj72;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 25
-    .line 26
-    .line 27
-    new-instance v1, Lgo3;
-
-    .line 28
-    .line 29
-    invoke-static {v0}, Lea0;->c(La1;)Le80;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v0
-
-    .line 33
-    invoke-direct {v1, v0}, Lgo3;-><init>(Le80;)V
-
-    .line 34
-    .line 35
-    .line 36
-    sput-object v1, Lut1;->a:Lgo3;
-
-    .line 37
-    .line 38
-    return-void
+.method public abstract c(Lrt1;)Ljava/util/Set;
 .end method

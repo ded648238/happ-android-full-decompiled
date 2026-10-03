@@ -1,27 +1,33 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class sx4 {
-    public static final sx4 Q;
-    public static final sx4 R;
-    public static final /* synthetic */ sx4[] S;
+import java.util.List;
 
-    static {
-        sx4 sx4Var = new sx4("EXACT", 0);
-        Q = sx4Var;
-        sx4 sx4Var2 = new sx4("INEXACT", 1);
-        R = sx4Var2;
-        S = new sx4[]{sx4Var, sx4Var2};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class sx4 {
+    public static final Object[] a = new Object[0];
+    public static final dq4 b = new dq4(0);
+
+    public static final void a(int i, List list) {
+        int size = list.size();
+        if (i < 0 || i >= size) {
+            q05.t(eb7.i(i, "Index ", size, " is out of bounds. The list has ", " elements."));
+        }
     }
 
-    public static sx4 valueOf(String str) {
-        return (sx4) Enum.valueOf(sx4.class, str);
-    }
-
-    public static sx4[] values() {
-        return (sx4[]) S.clone();
+    public static final void b(int i, int i2, List list) {
+        int size = list.size();
+        if (i > i2) {
+            i60.p(eb7.i(i, "Indices are out of order. fromIndex (", i2, ") is greater than toIndex (", ")."));
+            return;
+        }
+        if (i < 0) {
+            q05.t(c73.h("fromIndex (", i, ") is less than 0."));
+            return;
+        }
+        if (i2 <= size) {
+            return;
+        }
+        throw new IndexOutOfBoundsException("toIndex (" + i2 + ") is more than than the list size (" + size + ')');
     }
 }

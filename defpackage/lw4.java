@@ -1,25 +1,19 @@
 package defpackage;
 
-import j$.util.concurrent.ThreadLocalRandom;
-import java.util.Random;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class lw4 {
+    public static final lw4 a = new lw4();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class lw4 extends e2 {
-    @Override // defpackage.lb5
-    public final int c(int i, int i2) {
-        return ThreadLocalRandom.current().nextInt(i, i2);
+    public final boolean equals(Object obj) {
+        return this == obj || (obj instanceof lw4);
     }
 
-    @Override // defpackage.lb5
-    public final long e(long j) {
-        return ThreadLocalRandom.current().nextLong(0L, j);
+    public final int hashCode() {
+        return 2113961193;
     }
 
-    @Override // defpackage.e2
-    public final Random f() {
-        ThreadLocalRandom threadLocalRandomCurrent = ThreadLocalRandom.current();
-        threadLocalRandomCurrent.getClass();
-        return threadLocalRandomCurrent;
+    public final String toString() {
+        return "NullRequestData";
     }
 }

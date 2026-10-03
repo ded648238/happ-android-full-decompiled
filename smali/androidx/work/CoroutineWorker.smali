@@ -1,6 +1,6 @@
 .class public abstract Landroidx/work/CoroutineWorker;
-.super Ldn3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lf44;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -10,20 +10,20 @@
     }
     d2 = {
         "Landroidx/work/CoroutineWorker;",
-        "Ldn3;",
+        "Lf44;",
         "Landroid/content/Context;",
         "appContext",
         "Landroidx/work/WorkerParameters;",
         "params",
         "<init>",
         "(Landroid/content/Context;Landroidx/work/WorkerParameters;)V",
-        "fx0",
+        "m41",
         "work-runtime_release"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x8,
         0x0
     }
     xi = 0x30
@@ -33,7 +33,7 @@
 # instance fields
 .field public final e:Landroidx/work/WorkerParameters;
 
-.field public final f:Lfx0;
+.field public final f:Lm41;
 
 
 # direct methods
@@ -51,7 +51,7 @@
     .line 5
     .line 6
     .line 7
-    invoke-direct {p0, p1, p2}, Ldn3;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
+    invoke-direct {p0, p1, p2}, Lf44;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
 
     .line 8
     .line 9
@@ -60,11 +60,11 @@
 
     .line 11
     .line 12
-    sget-object p1, Lfx0;->S:Lfx0;
+    sget-object p1, Lm41;->Z:Lm41;
 
     .line 13
     .line 14
-    iput-object p1, p0, Landroidx/work/CoroutineWorker;->f:Lfx0;
+    iput-object p1, p0, Landroidx/work/CoroutineWorker;->f:Lm41;
 
     .line 15
     .line 16
@@ -73,11 +73,11 @@
 
 
 # virtual methods
-.method public final a()Lf90;
+.method public final a()Ly34;
     .locals 4
 
     .line 1
-    invoke-static {}, Lbv7;->c()Lhy2;
+    invoke-static {}, Lih4;->e()Lhe3;
 
     .line 2
     .line 3
@@ -85,7 +85,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v1, p0, Landroidx/work/CoroutineWorker;->f:Lfx0;
+    iget-object v1, p0, Landroidx/work/CoroutineWorker;->f:Lm41;
 
     .line 6
     .line 7
@@ -94,7 +94,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {v1, v0}, Lji2;->B(Lqw0;Lsw0;)Lsw0;
+    invoke-static {v1, v0}, Ljf1;->M(Lx31;Lz31;)Lz31;
 
     .line 11
     .line 12
@@ -102,7 +102,7 @@
     move-result-object v0
 
     .line 14
-    new-instance v1, Lgx0;
+    new-instance v1, Ln41;
 
     .line 15
     .line 16
@@ -112,20 +112,20 @@
     const/4 v3, 0x0
 
     .line 18
-    invoke-direct {v1, p0, v3, v2}, Lgx0;-><init>(Landroidx/work/CoroutineWorker;Lyv0;I)V
+    invoke-direct {v1, p0, v3, v2}, Ln41;-><init>(Landroidx/work/CoroutineWorker;Lb31;I)V
 
     .line 19
     .line 20
     .line 21
-    invoke-static {v0, v1}, Lqt2;->N(Lsw0;Lu72;)Lf90;
+    invoke-static {v0, v1}, Lvx6;->V(Lz31;Lxi2;)Lwb0;
 
     .line 22
     .line 23
     .line 24
-    move-result-object v0
+    move-result-object p0
 
     .line 25
-    return-object v0
+    return-object p0
 .end method
 
 .method public final b()V
@@ -135,19 +135,19 @@
     return-void
 .end method
 
-.method public final c()Lwm3;
+.method public final c()Ly34;
     .locals 4
 
     .line 1
-    sget-object v0, Lfx0;->S:Lfx0;
+    sget-object v0, Lm41;->Z:Lm41;
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/work/CoroutineWorker;->f:Lfx0;
+    iget-object v1, p0, Landroidx/work/CoroutineWorker;->f:Lm41;
 
     .line 4
     .line 5
-    invoke-static {v1, v0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 6
     .line 7
@@ -167,7 +167,7 @@
 
     .line 13
     .line 14
-    iget-object v1, v0, Landroidx/work/WorkerParameters;->g:Lsw0;
+    iget-object v1, v0, Landroidx/work/WorkerParameters;->g:Lz31;
 
     .line 15
     .line 16
@@ -177,7 +177,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-static {}, Lbv7;->c()Lhy2;
+    invoke-static {}, Lih4;->e()Lhe3;
 
     .line 20
     .line 21
@@ -185,7 +185,7 @@
     move-result-object v0
 
     .line 23
-    invoke-interface {v1, v0}, Lsw0;->r0(Lsw0;)Lsw0;
+    invoke-interface {v1, v0}, Lz31;->B0(Lz31;)Lz31;
 
     .line 24
     .line 25
@@ -193,7 +193,7 @@
     move-result-object v0
 
     .line 27
-    new-instance v1, Lgx0;
+    new-instance v1, Ln41;
 
     .line 28
     .line 29
@@ -203,21 +203,21 @@
     const/4 v3, 0x0
 
     .line 31
-    invoke-direct {v1, p0, v3, v2}, Lgx0;-><init>(Landroidx/work/CoroutineWorker;Lyv0;I)V
+    invoke-direct {v1, p0, v3, v2}, Ln41;-><init>(Landroidx/work/CoroutineWorker;Lb31;I)V
 
     .line 32
     .line 33
     .line 34
-    invoke-static {v0, v1}, Lqt2;->N(Lsw0;Lu72;)Lf90;
+    invoke-static {v0, v1}, Lvx6;->V(Lz31;Lxi2;)Lwb0;
 
     .line 35
     .line 36
     .line 37
-    move-result-object v0
+    move-result-object p0
 
     .line 38
-    return-object v0
+    return-object p0
 .end method
 
-.method public abstract d(Lyv0;)Ljava/lang/Object;
+.method public abstract e(Lb31;)Ljava/lang/Object;
 .end method

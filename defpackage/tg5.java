@@ -1,90 +1,56 @@
 package defpackage;
 
-import java.io.Serializable;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class tg5 {
+    public static final mm5[] f = new mm5[0];
+    public final yk a;
+    public final boolean b;
+    public final rf3 c;
+    public mm5[] d;
+    public mm5[] e;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class tg5 implements Serializable {
-    public final Pattern Q;
-
-    public tg5() {
-        Pattern patternCompile = Pattern.compile(".*#.+serverDescription=([^&,#]+)&?", 66);
-        patternCompile.getClass();
-        this.Q = patternCompile;
+    public tg5(yk ykVar, rf3 rf3Var) {
+        this.a = ykVar;
+        this.b = rf3Var != null;
+        this.c = rf3Var == null ? rf3.X : rf3Var;
     }
 
-    public static dz3 a(tg5 tg5Var, CharSequence charSequence) {
-        tg5Var.getClass();
-        charSequence.getClass();
-        Matcher matcher = tg5Var.Q.matcher(charSequence);
-        matcher.getClass();
-        if (matcher.find(0)) {
-            return new dz3(matcher, charSequence);
-        }
-        return null;
-    }
-
-    public final dz3 b(CharSequence charSequence) {
-        charSequence.getClass();
-        Matcher matcher = this.Q.matcher(charSequence);
-        matcher.getClass();
-        if (matcher.matches()) {
-            return new dz3(matcher, charSequence);
-        }
-        return null;
-    }
-
-    public final boolean c(String str) {
-        str.getClass();
-        return this.Q.matcher(str).matches();
-    }
-
-    public final String d(String str, j72 j72Var) {
-        str.getClass();
-        dz3 dz3VarA = a(this, str);
-        if (dz3VarA == null) {
-            return str.toString();
-        }
-        int length = str.length();
-        StringBuilder sb = new StringBuilder(length);
-        int i = 0;
-        do {
-            Matcher matcher = dz3VarA.a;
-            sb.append((CharSequence) str, i, xf5.n0(matcher.start(), matcher.end()).Q);
-            sb.append((CharSequence) j72Var.invoke(dz3VarA));
-            i = xf5.n0(matcher.start(), matcher.end()).R + 1;
-            CharSequence charSequence = dz3VarA.b;
-            int iEnd = matcher.end() + (matcher.end() != matcher.start() ? 0 : 1);
-            dz3 dz3Var = null;
-            if (iEnd <= charSequence.length()) {
-                Matcher matcher2 = matcher.pattern().matcher(charSequence);
-                matcher2.getClass();
-                if (matcher2.find(iEnd)) {
-                    dz3Var = new dz3(matcher2, charSequence);
-                }
+    public final boolean a(lr6 lr6Var) {
+        xx4 d = lr6Var.d();
+        int length = this.d.length;
+        for (int i = 0; i < length; i++) {
+            if (this.e[i] == null && this.d[i] == null && d.i(this.a.J0(i)) == null) {
+                return false;
             }
-            dz3VarA = dz3Var;
-            if (i >= length) {
-                break;
-            }
-        } while (dz3VarA != null);
-        if (i < length) {
-            sb.append((CharSequence) str, i, length);
         }
-        return sb.toString();
+        return true;
+    }
+
+    public final void b(qf4 qf4Var) {
+        if (this.d != null) {
+            return;
+        }
+        yk ykVar = this.a;
+        int K0 = ykVar.K0();
+        if (K0 == 0) {
+            mm5[] mm5VarArr = f;
+            this.e = mm5VarArr;
+            this.d = mm5VarArr;
+            return;
+        }
+        this.e = new mm5[K0];
+        this.d = new mm5[K0];
+        xx4 d = qf4Var.d();
+        for (int i = 0; i < K0; i++) {
+            mm5 m = d.m(ykVar.J0(i));
+            if (m != null && !m.c()) {
+                this.e[i] = m;
+            }
+        }
     }
 
     public final String toString() {
-        String string = this.Q.toString();
-        string.getClass();
-        return string;
-    }
-
-    public tg5(String str) {
-        Pattern patternCompile = Pattern.compile(str);
-        patternCompile.getClass();
-        this.Q = patternCompile;
+        return "(mode=" + this.c + ")" + this.a;
     }
 }

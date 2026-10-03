@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/OpenSSLSignatureRawRSA;
 .super Ljava/security/SignatureSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -37,10 +37,10 @@
     .end annotation
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object p1
+    return-object p0
 .end method
 
 .method public engineInitSign(Ljava/security/PrivateKey;)V
@@ -172,11 +172,11 @@
 
     .line 57
     :cond_2
-    const-string p1, "Need RSA private key"
+    const-string p0, "Need RSA private key"
 
     .line 58
     .line 59
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 60
     .line 61
@@ -285,11 +285,11 @@
 
     .line 44
     :cond_1
-    const-string p1, "Need RSA public key"
+    const-string p0, "Need RSA public key"
 
     .line 45
     .line 46
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 47
     .line 48
@@ -449,26 +449,26 @@
     .line 57
     .line 58
     .line 59
-    iget-object v2, p0, Lorg/conscrypt/OpenSSLSignatureRawRSA;->inputBuffer:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLSignatureRawRSA;->inputBuffer:[B
 
     .line 60
     .line 61
-    array-length v2, v2
+    array-length p0, p0
 
     .line 62
-    const-string v3, " (modulus size)"
+    const-string v2, " (modulus size)"
 
     .line 63
     .line 64
-    invoke-static {v1, v2, v3}, Lkd0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0, v2}, Leh0;->p(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     .line 65
     .line 66
     .line 67
-    move-result-object v1
+    move-result-object p0
 
     .line 68
-    invoke-direct {v0, v1}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
 
     .line 69
     .line 70
@@ -477,20 +477,20 @@
 
     .line 72
     :cond_1
-    new-instance v0, Ljava/security/SignatureException;
+    new-instance p0, Ljava/security/SignatureException;
 
     .line 73
     .line 74
-    const-string v1, "Need RSA private key"
+    const-string v0, "Need RSA private key"
 
     .line 75
     .line 76
-    invoke-direct {v0, v1}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
 
     .line 77
     .line 78
     .line 79
-    throw v0
+    throw p0
 .end method
 
 .method public engineUpdate(B)V
@@ -663,11 +663,11 @@
 
     .line 35
     :cond_1
-    const/4 v4, 0x0
+    move v4, v2
 
     .line 36
     :goto_0
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 37
     :goto_1
@@ -694,7 +694,7 @@
 
     .line 46
     .line 47
-    const/4 v4, 0x0
+    move v4, v2
 
     .line 48
     :cond_2
@@ -782,27 +782,27 @@
     array-length p1, p1
 
     .line 76
-    iget-object v1, p0, Lorg/conscrypt/OpenSSLSignatureRawRSA;->inputBuffer:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLSignatureRawRSA;->inputBuffer:[B
 
     .line 77
     .line 78
-    array-length v1, v1
+    array-length p0, p0
 
     .line 79
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 80
     .line 81
-    const-string v3, "Input signature length is too large: "
+    const-string v2, "Input signature length is too large: "
 
     .line 82
     .line 83
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 84
     .line 85
     .line 86
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 87
     .line 88
@@ -811,25 +811,25 @@
 
     .line 90
     .line 91
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 92
     .line 93
     .line 94
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 95
     .line 96
     .line 97
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 98
     .line 99
     .line 100
-    move-result-object p1
+    move-result-object p0
 
     .line 101
-    invoke-direct {v0, p1}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
 
     .line 102
     .line 103
@@ -838,18 +838,18 @@
 
     .line 105
     :cond_5
-    new-instance p1, Ljava/security/SignatureException;
+    new-instance p0, Ljava/security/SignatureException;
 
     .line 106
     .line 107
-    const-string v0, "Need RSA public key"
+    const-string p1, "Need RSA public key"
 
     .line 108
     .line 109
-    invoke-direct {p1, v0}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
 
     .line 110
     .line 111
     .line 112
-    throw p1
+    throw p0
 .end method

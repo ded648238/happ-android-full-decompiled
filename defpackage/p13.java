@@ -1,95 +1,78 @@
 package defpackage;
 
-import java.io.Closeable;
-import java.util.Iterator;
-import java.util.LinkedList;
+import su.happ.proxyutility.feature.inbound_auth.InboundAuthActivity;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class p13 extends l23 {
-    public LinkedList Q;
-    public final transient Closeable R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class p13 extends ll7 implements xi2 {
+    public final /* synthetic */ int d0;
+    public /* synthetic */ Object e0;
+    public final /* synthetic */ InboundAuthActivity f0;
 
-    public p13(ba2 ba2Var, String str) {
-        super(str);
-        this.R = ba2Var;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ p13(InboundAuthActivity inboundAuthActivity, b31 b31Var, int i) {
+        super(2, b31Var);
+        this.d0 = i;
+        this.f0 = inboundAuthActivity;
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x0042  */
-    public static p13 d(Throwable th, o13 o13Var) {
-        Closeable closeable;
-        p13 p13Var;
-        if (th instanceof p13) {
-            p13Var = (p13) th;
-        } else {
-            String strH = gk0.h(th);
-            if (strH == null || strH.isEmpty()) {
-                strH = "(was " + th.getClass().getName() + ")";
-            }
-            if (th instanceof l23) {
-                Object objB = ((l23) th).b();
-                if (ea0.B(objB)) {
-                    closeable = (Closeable) objB;
-                } else {
-                    closeable = null;
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        int i = this.d0;
+        r98 r98Var = r98.a;
+        switch (i) {
+            case 0:
+                ((p13) n((b31) obj2, (y13) obj)).q(r98Var);
+                break;
+            default:
+                ((p13) n((b31) obj2, (x13) obj)).q(r98Var);
+                break;
+        }
+        return r98Var;
+    }
+
+    @Override // defpackage.g00
+    public final b31 n(b31 b31Var, Object obj) {
+        int i = this.d0;
+        InboundAuthActivity inboundAuthActivity = this.f0;
+        switch (i) {
+            case 0:
+                p13 p13Var = new p13(inboundAuthActivity, b31Var, 0);
+                p13Var.e0 = obj;
+                return p13Var;
+            default:
+                p13 p13Var2 = new p13(inboundAuthActivity, b31Var, 1);
+                p13Var2.e0 = obj;
+                return p13Var2;
+        }
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        int i = this.d0;
+        r98 r98Var = r98.a;
+        InboundAuthActivity inboundAuthActivity = this.f0;
+        Object obj2 = this.e0;
+        switch (i) {
+            case 0:
+                q48.f0(obj);
+                int i2 = InboundAuthActivity.Q0;
+                inboundAuthActivity.B((y13) obj2, true);
+                return r98Var;
+            default:
+                x13 x13Var = (x13) obj2;
+                q48.f0(obj);
+                int i3 = InboundAuthActivity.Q0;
+                if (x13Var instanceof w13) {
+                    ku8.M(inboundAuthActivity, xt5.warning_settings_after_tunnel_restart);
+                    return r98Var;
                 }
-            } else {
-                closeable = null;
-            }
-            p13Var = new p13(closeable, strH, th);
-        }
-        if (p13Var.Q == null) {
-            p13Var.Q = new LinkedList();
-        }
-        if (p13Var.Q.size() < 1000) {
-            p13Var.Q.addFirst(o13Var);
-        }
-        return p13Var;
-    }
-
-    @Override // defpackage.l23
-    public final Object b() {
-        return this.R;
-    }
-
-    public final String c() {
-        String message = super.getMessage();
-        if (this.Q == null) {
-            return message;
-        }
-        StringBuilder sb = new StringBuilder(message);
-        sb.append(" (through reference chain: ");
-        LinkedList linkedList = this.Q;
-        if (linkedList != null) {
-            Iterator it = linkedList.iterator();
-            while (it.hasNext()) {
-                sb.append(((o13) it.next()).toString());
-                if (it.hasNext()) {
-                    sb.append("->");
+                if (x13Var instanceof v13) {
+                    ku8.M(inboundAuthActivity, xt5.title_pref_proxy_sharing_enabled_extend_warning);
+                    return r98Var;
                 }
-            }
+                ku0.d();
+                return null;
         }
-        sb.append(')');
-        return sb.toString();
-    }
-
-    @Override // java.lang.Throwable
-    public final String getLocalizedMessage() {
-        return c();
-    }
-
-    @Override // defpackage.l23, java.lang.Throwable
-    public final String getMessage() {
-        return c();
-    }
-
-    @Override // defpackage.l23, java.lang.Throwable
-    public final String toString() {
-        return getClass().getName() + ": " + c();
-    }
-
-    public p13(Closeable closeable, String str, Throwable th) {
-        super(str, th);
-        this.R = closeable;
     }
 }

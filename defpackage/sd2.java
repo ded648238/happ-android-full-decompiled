@@ -1,33 +1,27 @@
 package defpackage;
 
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
+import java.util.List;
+import java.util.Objects;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class sd2 extends Drawable {
-    @Override // android.graphics.drawable.Drawable
-    public final int getOpacity() {
-        return -2;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class sd2 {
+    public String a;
+    public String b;
+    public List c;
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof sd2)) {
+            return false;
+        }
+        sd2 sd2Var = (sd2) obj;
+        return Objects.equals(this.a, sd2Var.a) && Objects.equals(this.b, sd2Var.b) && Objects.equals(this.c, sd2Var.c);
     }
 
-    @Override // android.graphics.drawable.Drawable
-    public final boolean getPadding(Rect rect) {
-        rect.set(0, 0, 0, 0);
-        return true;
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void draw(Canvas canvas) {
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setAlpha(int i) {
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setColorFilter(ColorFilter colorFilter) {
+    public final int hashCode() {
+        return Objects.hash(this.a, this.b, this.c);
     }
 }

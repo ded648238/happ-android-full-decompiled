@@ -1,15 +1,31 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class xw4 {
-    public final long a;
-    public final long b;
-    public final boolean c;
+    public static final xw4 X;
+    public static final /* synthetic */ xw4[] Y;
 
-    public xw4(long j, long j2, boolean z) {
-        this.a = j;
-        this.b = j2;
-        this.c = z;
+    /* JADX INFO: Fake field, exist only in values array */
+    xw4 EF0;
+
+    static {
+        xw4 xw4Var = new xw4("SET", 0);
+        xw4 xw4Var2 = new xw4("SKIP", 1);
+        xw4 xw4Var3 = new xw4("FAIL", 2);
+        xw4 xw4Var4 = new xw4("AS_EMPTY", 3);
+        xw4 xw4Var5 = new xw4("DEFAULT", 4);
+        X = xw4Var5;
+        Y = new xw4[]{xw4Var, xw4Var2, xw4Var3, xw4Var4, xw4Var5};
+    }
+
+    public static xw4 valueOf(String str) {
+        return (xw4) Enum.valueOf(xw4.class, str);
+    }
+
+    public static xw4[] values() {
+        return (xw4[]) Y.clone();
     }
 }

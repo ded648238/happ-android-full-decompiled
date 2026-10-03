@@ -1,35 +1,28 @@
 package defpackage;
 
-import java.io.PrintWriter;
-import java.util.Date;
+import android.hardware.camera2.params.DynamicRangeProfiles;
+import java.util.Set;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class xt1 implements j72 {
-    public final /* synthetic */ int Q;
-    public final /* synthetic */ Object R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class xt1 implements ut1 {
+    public static final vt1 a = new vt1(0, new xt1());
+    public static final Set b = hi4.M(rt1.d);
 
-    public /* synthetic */ xt1(int i, Object obj) {
-        this.Q = i;
-        this.R = obj;
+    @Override // defpackage.ut1
+    public final Set a() {
+        return b;
     }
 
-    @Override // defpackage.j72
-    public final Object invoke(Object obj) {
-        int i = this.Q;
-        Object obj2 = this.R;
-        switch (i) {
-            case 0:
-                Date date = new Date();
-                StringBuilder sb = new StringBuilder();
-                sb.append(date);
-                sb.append(" Google file download result: ");
-                sb.append(!(obj2 instanceof on5));
-                ((PrintWriter) obj).println(sb.toString());
-                return bh7.a;
-            default:
-                ((Integer) obj).getClass();
-                return obj2;
-        }
+    @Override // defpackage.ut1
+    public final DynamicRangeProfiles b() {
+        return null;
+    }
+
+    @Override // defpackage.ut1
+    public final Set c(rt1 rt1Var) {
+        rt1Var.getClass();
+        us7.v(rt1.d.equals(rt1Var), "DynamicRange is not supported: " + rt1Var);
+        return b;
     }
 }

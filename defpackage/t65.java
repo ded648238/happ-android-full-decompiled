@@ -1,11 +1,86 @@
 package defpackage;
 
-import java.util.Map;
-import kotlin.Metadata;
-import su.happ.proxyutility.dto.AuthData;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\b\n\u0018\u00002\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00040\u00020\u0001¨\u0006\u0005"}, d2 = {"Lt65;", "Ldd7;", "", "", "Lsu/happ/proxyutility/dto/AuthData;", "app"}, k = 1, mv = {2, 4, 0}, xi = 48)
-public final class t65 extends dd7<Map<String, ? extends AuthData>> {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class t65 extends w57 implements Parcelable, m17, h57, sq4 {
+    public static final Parcelable.Creator<t65> CREATOR = new j65(10);
+    public j17 Y;
+
+    public t65(float f) {
+        a17 j = i17.j();
+        j17 j17Var = new j17(f, j.g());
+        if (!(j instanceof en2)) {
+            j17Var.b = new j17(f, 1L);
+        }
+        this.Y = j17Var;
+    }
+
+    @Override // defpackage.v57
+    public final y57 c() {
+        return this.Y;
+    }
+
+    @Override // defpackage.m17
+    public final o17 d() {
+        return an3.z0;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    @Override // defpackage.v57
+    public final y57 e(y57 y57Var, y57 y57Var2, y57 y57Var3) {
+        if (((j17) y57Var2).c == ((j17) y57Var3).c) {
+            return y57Var2;
+        }
+        return null;
+    }
+
+    @Override // defpackage.h57
+    public final Object getValue() {
+        return Float.valueOf(k());
+    }
+
+    public final float k() {
+        return ((j17) i17.t(this.Y, this)).c;
+    }
+
+    public final void m(float f) {
+        a17 j;
+        j17 j17Var = (j17) i17.h(this.Y);
+        if (j17Var.c == f) {
+            return;
+        }
+        j17 j17Var2 = this.Y;
+        synchronized (i17.c) {
+            j = i17.j();
+            ((j17) i17.o(j17Var2, this, j, j17Var)).c = f;
+        }
+        i17.n(j, this);
+    }
+
+    @Override // defpackage.sq4
+    public final void setValue(Object obj) {
+        m(((Number) obj).floatValue());
+    }
+
+    public final String toString() {
+        return "MutableFloatState(value=" + ((j17) i17.h(this.Y)).c + ")@" + hashCode();
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        parcel.writeFloat(k());
+    }
+
+    @Override // defpackage.v57
+    public final void y(y57 y57Var) {
+        y57Var.getClass();
+        this.Y = (j17) y57Var;
+    }
 }

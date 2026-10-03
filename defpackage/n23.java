@@ -1,23 +1,32 @@
 package defpackage;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class n23 implements r23 {
+    public final boolean a;
+    public final boolean b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Retention(RetentionPolicy.RUNTIME)
-public @interface n23 {
-    m23 access() default m23.Q;
+    public n23(boolean z, boolean z2) {
+        this.a = z;
+        this.b = z2;
+    }
 
-    String defaultValue() default "";
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof n23)) {
+            return false;
+        }
+        n23 n23Var = (n23) obj;
+        return this.a == n23Var.a && this.b == n23Var.b;
+    }
 
-    int index() default -1;
+    public final int hashCode() {
+        return Boolean.hashCode(this.b) + (Boolean.hashCode(this.a) * 31);
+    }
 
-    vk4 isRequired() default vk4.R;
-
-    String namespace() default "";
-
-    boolean required() default false;
-
-    String value() default "";
+    public final String toString() {
+        return "DownloadComplete(isForceUpdate=" + this.a + ", isInstallRestricted=" + this.b + ")";
+    }
 }

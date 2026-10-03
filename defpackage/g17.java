@@ -1,33 +1,34 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class g17 {
-    public static final g17 Q;
-    public static final g17 R;
-    public static final g17 S;
-    public static final g17 T;
-    public static final /* synthetic */ g17[] U;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class g17 implements mi2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ mi2 Y;
+    public final /* synthetic */ mi2 Z;
 
-    static {
-        g17 g17Var = new g17("StartInput", 0);
-        Q = g17Var;
-        g17 g17Var2 = new g17("StopInput", 1);
-        R = g17Var2;
-        g17 g17Var3 = new g17("ShowKeyboard", 2);
-        S = g17Var3;
-        g17 g17Var4 = new g17("HideKeyboard", 3);
-        T = g17Var4;
-        U = new g17[]{g17Var, g17Var2, g17Var3, g17Var4};
+    public /* synthetic */ g17(mi2 mi2Var, mi2 mi2Var2, int i) {
+        this.X = i;
+        this.Y = mi2Var;
+        this.Z = mi2Var2;
     }
 
-    public static g17 valueOf(String str) {
-        return (g17) Enum.valueOf(g17.class, str);
-    }
-
-    public static g17[] values() {
-        return (g17[]) U.clone();
+    @Override // defpackage.mi2
+    public final Object invoke(Object obj) {
+        int i = this.X;
+        r98 r98Var = r98.a;
+        mi2 mi2Var = this.Z;
+        mi2 mi2Var2 = this.Y;
+        switch (i) {
+            case 0:
+                mi2Var2.invoke(obj);
+                mi2Var.invoke(obj);
+                break;
+            default:
+                mi2Var2.invoke(obj);
+                mi2Var.invoke(obj);
+                break;
+        }
+        return r98Var;
     }
 }

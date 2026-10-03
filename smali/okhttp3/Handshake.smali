@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Handshake;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -27,7 +27,7 @@
         "Lkotlin/Function0;",
         "peerCertificatesFn",
         "<init>",
-        "(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lg72;)V",
+        "(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lji2;)V",
         "-deprecated_tlsVersion",
         "()Lokhttp3/TlsVersion;",
         "-deprecated_cipherSuite",
@@ -56,7 +56,7 @@
         "Lokhttp3/CipherSuite;",
         "Ljava/util/List;",
         "peerCertificates$delegate",
-        "Lwf3;",
+        "Low3;",
         "getName",
         "(Ljava/security/cert/Certificate;)Ljava/lang/String;",
         "name",
@@ -90,7 +90,7 @@
     .end annotation
 .end field
 
-.field private final peerCertificates$delegate:Lwf3;
+.field private final peerCertificates$delegate:Low3;
 
 .field private final tlsVersion:Lokhttp3/TlsVersion;
 
@@ -107,7 +107,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/Handshake$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/Handshake$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -119,7 +119,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lg72;)V
+.method public constructor <init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lji2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -130,7 +130,7 @@
             "+",
             "Ljava/security/cert/Certificate;",
             ">;",
-            "Lg72;",
+            "Lji2;",
             ")V"
         }
     .end annotation
@@ -177,21 +177,21 @@
 
     .line 23
     .line 24
-    invoke-direct {p1, p4}, Lokhttp3/Handshake$peerCertificates$2;-><init>(Lg72;)V
+    invoke-direct {p1, p4}, Lokhttp3/Handshake$peerCertificates$2;-><init>(Lji2;)V
 
     .line 25
     .line 26
     .line 27
-    new-instance p2, Lzu6;
+    new-instance p2, Lmm7;
 
     .line 28
     .line 29
-    invoke-direct {p2, p1}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {p2, p1}, Lmm7;-><init>(Lji2;)V
 
     .line 30
     .line 31
     .line 32
-    iput-object p2, p0, Lokhttp3/Handshake;->peerCertificates$delegate:Lwf3;
+    iput-object p2, p0, Lokhttp3/Handshake;->peerCertificates$delegate:Low3;
 
     .line 33
     .line 34
@@ -252,14 +252,14 @@
 .end method
 
 .method private final getName(Ljava/security/cert/Certificate;)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    instance-of v0, p1, Ljava/security/cert/X509Certificate;
+    instance-of p0, p1, Ljava/security/cert/X509Certificate;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
@@ -272,18 +272,18 @@
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
 
     .line 11
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result-object p0
 
     .line 15
-    return-object p1
+    return-object p0
 
     .line 16
     :cond_0
@@ -292,34 +292,34 @@
     .line 17
     .line 18
     .line 19
-    move-result-object p1
+    move-result-object p0
 
     .line 20
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 21
     .line 22
     .line 23
-    return-object p1
+    return-object p0
 .end method
 
 
 # virtual methods
 .method public final -deprecated_cipherSuite()Lokhttp3/CipherSuite;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Handshake;->cipherSuite:Lokhttp3/CipherSuite;
+    iget-object p0, p0, Lokhttp3/Handshake;->cipherSuite:Lokhttp3/CipherSuite;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_localCertificates()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -329,20 +329,20 @@
         }
     .end annotation
 
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_localPrincipal()Ljava/security/Principal;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -351,14 +351,14 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_peerCertificates()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -368,7 +368,7 @@
         }
     .end annotation
 
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -377,15 +377,15 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_peerPrincipal()Ljava/security/Principal;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -394,34 +394,34 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_tlsVersion()Lokhttp3/TlsVersion;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Handshake;->tlsVersion:Lokhttp3/TlsVersion;
+    iget-object p0, p0, Lokhttp3/Handshake;->tlsVersion:Lokhttp3/TlsVersion;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final cipherSuite()Lokhttp3/CipherSuite;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Handshake;->cipherSuite:Lokhttp3/CipherSuite;
+    iget-object p0, p0, Lokhttp3/Handshake;->cipherSuite:Lokhttp3/CipherSuite;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -460,7 +460,7 @@
 
     .line 16
     .line 17
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -488,7 +488,7 @@
     move-result-object v1
 
     .line 31
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 32
     .line 33
@@ -504,33 +504,33 @@
 
     .line 38
     .line 39
-    iget-object v0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
 
     .line 40
     .line 41
-    invoke-static {p1, v0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 42
     .line 43
     .line 44
-    move-result p1
+    move-result p0
 
     .line 45
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 46
     .line 47
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 48
-    return p1
+    return p0
 
     .line 49
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 50
-    return p1
+    return p0
 .end method
 
 .method public hashCode()I
@@ -599,26 +599,26 @@
 
     .line 30
     .line 31
-    iget-object v1, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
 
     .line 32
     .line 33
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     .line 34
     .line 35
     .line 36
-    move-result v1
+    move-result p0
 
     .line 37
-    add-int/2addr v1, v0
+    add-int/2addr p0, v0
 
     .line 38
-    return v1
+    return p0
 .end method
 
 .method public final localCertificates()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -629,41 +629,41 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final localPrincipal()Ljava/security/Principal;
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/Handshake;->localCertificates:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lnm0;->y0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p0}, Ltt0;->c1(Ljava/util/List;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    instance-of v1, v0, Ljava/security/cert/X509Certificate;
+    instance-of v0, p0, Ljava/security/cert/X509Certificate;
 
     .line 8
     .line 9
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 10
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 11
     .line 12
-    check-cast v0, Ljava/security/cert/X509Certificate;
+    check-cast p0, Ljava/security/cert/X509Certificate;
 
     .line 13
     .line 14
@@ -671,31 +671,31 @@
 
     .line 15
     :cond_0
-    move-object v0, v2
+    move-object p0, v1
 
     .line 16
     :goto_0
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 17
     .line 18
-    invoke-virtual {v0}, Ljava/security/cert/X509Certificate;->getSubjectX500Principal()Ljavax/security/auth/x500/X500Principal;
+    invoke-virtual {p0}, Ljava/security/cert/X509Certificate;->getSubjectX500Principal()Ljavax/security/auth/x500/X500Principal;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v0
+    move-result-object p0
 
     .line 22
-    return-object v0
+    return-object p0
 
     .line 23
     :cond_1
-    return-object v2
+    return-object v1
 .end method
 
 .method public final peerCertificates()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -706,27 +706,27 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Handshake;->peerCertificates$delegate:Lwf3;
+    iget-object p0, p0, Lokhttp3/Handshake;->peerCertificates$delegate:Low3;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lwf3;->getValue()Ljava/lang/Object;
+    invoke-interface {p0}, Low3;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Ljava/util/List;
+    check-cast p0, Ljava/util/List;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public final peerPrincipal()Ljava/security/Principal;
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-virtual {p0}, Lokhttp3/Handshake;->peerCertificates()Ljava/util/List;
@@ -734,29 +734,29 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-static {v0}, Lnm0;->y0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p0}, Ltt0;->c1(Ljava/util/List;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    instance-of v1, v0, Ljava/security/cert/X509Certificate;
+    instance-of v0, p0, Ljava/security/cert/X509Certificate;
 
     .line 10
     .line 11
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 12
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 13
     .line 14
-    check-cast v0, Ljava/security/cert/X509Certificate;
+    check-cast p0, Ljava/security/cert/X509Certificate;
 
     .line 15
     .line 16
@@ -764,38 +764,38 @@
 
     .line 17
     :cond_0
-    move-object v0, v2
+    move-object p0, v1
 
     .line 18
     :goto_0
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 19
     .line 20
-    invoke-virtual {v0}, Ljava/security/cert/X509Certificate;->getSubjectX500Principal()Ljavax/security/auth/x500/X500Principal;
+    invoke-virtual {p0}, Ljava/security/cert/X509Certificate;->getSubjectX500Principal()Ljavax/security/auth/x500/X500Principal;
 
     .line 21
     .line 22
     .line 23
-    move-result-object v0
+    move-result-object p0
 
     .line 24
-    return-object v0
+    return-object p0
 
     .line 25
     :cond_1
-    return-object v2
+    return-object v1
 .end method
 
 .method public final tlsVersion()Lokhttp3/TlsVersion;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Handshake;->tlsVersion:Lokhttp3/TlsVersion;
+    iget-object p0, p0, Lokhttp3/Handshake;->tlsVersion:Lokhttp3/TlsVersion;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -818,7 +818,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, v2}, Lom0;->e0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v2}, Lut0;->F0(Ljava/lang/Iterable;I)I
 
     .line 10
     .line 11
@@ -960,7 +960,7 @@
 
     .line 82
     .line 83
-    invoke-static {v0, v2}, Lom0;->e0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v2}, Lut0;->F0(Ljava/lang/Iterable;I)I
 
     .line 84
     .line 85
@@ -1028,11 +1028,11 @@
     .line 115
     .line 116
     .line 117
-    const/16 v0, 0x7d
+    const/16 p0, 0x7d
 
     .line 118
     .line 119
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 120
     .line 121
@@ -1042,8 +1042,8 @@
     .line 123
     .line 124
     .line 125
-    move-result-object v0
+    move-result-object p0
 
     .line 126
-    return-object v0
+    return-object p0
 .end method

@@ -1,30 +1,82 @@
-.class public abstract Luc2;
+.class public final Luc2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lrc2;
 
 
 # static fields
-.field public static final a:J
-
-.field public static final synthetic b:I
+.field public static final synthetic m:I
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# instance fields
+.field public a:Z
+
+.field public b:Lzc2;
+
+.field public c:Lzc2;
+
+.field public d:Lzc2;
+
+.field public e:Lzc2;
+
+.field public f:Lzc2;
+
+.field public g:Lzc2;
+
+.field public h:Lzc2;
+
+.field public i:Lzc2;
+
+.field public j:Ltc2;
+
+.field public k:Ltc2;
+
+.field public l:Lix5;
+
+
+# virtual methods
+.method public final a()Z
+    .locals 0
 
     .line 1
-    sget v0, Lvm0;->h:I
+    iget-boolean p0, p0, Luc2;->a:Z
 
     .line 2
     .line 3
-    sget-wide v0, Lvm0;->b:J
+    return p0
+.end method
 
-    .line 4
-    .line 5
-    sput-wide v0, Luc2;->a:J
+.method public final b(Lzc2;)V
+    .locals 0
 
-    .line 6
-    .line 7
+    .line 1
+    iput-object p1, p0, Luc2;->g:Lzc2;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final c(Lix5;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Luc2;->l:Lix5;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final d(Lzc2;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Luc2;->f:Lzc2;
+
+    .line 2
+    .line 3
     return-void
 .end method

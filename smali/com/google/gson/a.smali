@@ -1,14 +1,14 @@
 .class public final Lcom/google/gson/a;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
 .field public final a:Ljava/lang/ThreadLocal;
 
-.field public final b:Lj$/util/concurrent/ConcurrentHashMap;
+.field public final b:Ljava/util/concurrent/ConcurrentHashMap;
 
-.field public final c:Ld8;
+.field public final c:Lp8;
 
 .field public final d:Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;
 
@@ -16,7 +16,7 @@
 
 .field public final f:Z
 
-.field public final g:Li42;
+.field public final g:Lye2;
 
 .field public final h:I
 
@@ -26,14 +26,14 @@
     .locals 1
 
     .line 95
-    sget-object v0, Lld2;->s:Lld2;
+    sget-object v0, Lwp2;->s:Lwp2;
 
-    invoke-direct {p0, v0}, Lcom/google/gson/a;-><init>(Lld2;)V
+    invoke-direct {p0, v0}, Lcom/google/gson/a;-><init>(Lwp2;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lld2;)V
+.method public constructor <init>(Lwp2;)V
     .locals 4
 
     .line 1
@@ -55,20 +55,20 @@
 
     .line 10
     .line 11
-    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 12
     .line 13
-    invoke-direct {v0}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     .line 14
     .line 15
     .line 16
-    iput-object v0, p0, Lcom/google/gson/a;->b:Lj$/util/concurrent/ConcurrentHashMap;
+    iput-object v0, p0, Lcom/google/gson/a;->b:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 17
     .line 18
-    iget-object v0, p1, Lld2;->a:Lcom/google/gson/internal/Excluder;
+    iget-object v0, p1, Lwp2;->a:Lcom/google/gson/internal/Excluder;
 
     .line 19
     .line 20
@@ -76,7 +76,7 @@
 
     .line 21
     .line 22
-    iget-object v1, p1, Lld2;->b:Ljava/util/HashMap;
+    iget-object v1, p1, Lwp2;->b:Ljava/util/HashMap;
 
     .line 23
     .line 24
@@ -85,7 +85,7 @@
     .line 25
     .line 26
     .line 27
-    iget-boolean v1, p1, Lld2;->g:Z
+    iget-boolean v1, p1, Lwp2;->g:Z
 
     .line 28
     .line 29
@@ -93,15 +93,15 @@
 
     .line 30
     .line 31
-    iget-object v1, p1, Lld2;->h:Li42;
+    iget-object v1, p1, Lwp2;->h:Lye2;
 
     .line 32
     .line 33
-    iput-object v1, p0, Lcom/google/gson/a;->g:Li42;
+    iput-object v1, p0, Lcom/google/gson/a;->g:Lye2;
 
     .line 34
     .line 35
-    iget v1, p1, Lld2;->m:I
+    iget v1, p1, Lwp2;->m:I
 
     .line 36
     .line 37
@@ -109,33 +109,33 @@
 
     .line 38
     .line 39
-    iget-boolean v1, p1, Lld2;->i:Z
+    iget-boolean v1, p1, Lwp2;->i:Z
 
     .line 40
     .line 41
-    iget-object v2, p1, Lld2;->c:Ljava/util/ArrayList;
+    iget-object v2, p1, Lwp2;->c:Ljava/util/ArrayList;
 
     .line 42
     .line 43
-    invoke-static {v2}, Lld2;->b(Ljava/util/AbstractCollection;)Ljava/util/List;
+    invoke-static {v2}, Lwp2;->b(Ljava/util/AbstractCollection;)Ljava/util/List;
 
     .line 44
     .line 45
     .line 46
-    iget-object v2, p1, Lld2;->d:Ljava/util/ArrayList;
+    iget-object v2, p1, Lwp2;->d:Ljava/util/ArrayList;
 
     .line 47
     .line 48
-    invoke-static {v2}, Lld2;->b(Ljava/util/AbstractCollection;)Ljava/util/List;
+    invoke-static {v2}, Lwp2;->b(Ljava/util/AbstractCollection;)Ljava/util/List;
 
     .line 49
     .line 50
     .line 51
-    iget-object v2, p1, Lld2;->j:Ljava/util/ArrayDeque;
+    iget-object v2, p1, Lwp2;->j:Ljava/util/ArrayDeque;
 
     .line 52
     .line 53
-    invoke-static {v2}, Lld2;->b(Ljava/util/AbstractCollection;)Ljava/util/List;
+    invoke-static {v2}, Lwp2;->b(Ljava/util/AbstractCollection;)Ljava/util/List;
 
     .line 54
     .line 55
@@ -143,7 +143,7 @@
     move-result-object v2
 
     .line 57
-    sget-object v3, Lld2;->s:Lld2;
+    sget-object v3, Lwp2;->s:Lwp2;
 
     .line 58
     .line 59
@@ -151,15 +151,15 @@
 
     .line 60
     .line 61
-    sget-object p1, Lld2;->q:Ld8;
+    sget-object p1, Lwp2;->q:Lp8;
 
     .line 62
     .line 63
-    iput-object p1, p0, Lcom/google/gson/a;->c:Ld8;
+    iput-object p1, p0, Lcom/google/gson/a;->c:Lp8;
 
     .line 64
     .line 65
-    sget-object p1, Lld2;->r:Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;
+    sget-object p1, Lwp2;->r:Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;
 
     .line 66
     .line 67
@@ -167,7 +167,7 @@
 
     .line 68
     .line 69
-    sget-object p1, Lld2;->t:Ljava/util/List;
+    sget-object p1, Lwp2;->t:Ljava/util/List;
 
     .line 70
     .line 71
@@ -179,16 +179,16 @@
 
     .line 74
     :cond_0
-    new-instance v3, Ld8;
+    new-instance v3, Lp8;
 
     .line 75
     .line 76
-    invoke-direct {v3, v0, v1, v2}, Ld8;-><init>(Ljava/util/Map;ZLjava/util/List;)V
+    invoke-direct {v3, v2, v0, v1}, Lp8;-><init>(Ljava/util/List;Ljava/util/Map;Z)V
 
     .line 77
     .line 78
     .line 79
-    iput-object v3, p0, Lcom/google/gson/a;->c:Ld8;
+    iput-object v3, p0, Lcom/google/gson/a;->c:Lp8;
 
     .line 80
     .line 81
@@ -196,7 +196,7 @@
 
     .line 82
     .line 83
-    invoke-direct {v0, v3}, Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;-><init>(Ld8;)V
+    invoke-direct {v0, v3}, Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;-><init>(Lp8;)V
 
     .line 84
     .line 85
@@ -205,7 +205,7 @@
 
     .line 87
     .line 88
-    invoke-virtual {p1, v3, v0}, Lld2;->a(Ld8;Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;)Ljava/util/List;
+    invoke-virtual {p1, v3, v0}, Lwp2;->a(Lp8;Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;)Ljava/util/List;
 
     .line 89
     .line 90
@@ -222,28 +222,28 @@
 
 
 # virtual methods
-.method public final a(Ld03;Ljava/lang/reflect/Type;)Ljava/lang/Object;
+.method public final a(Lfg3;Ljava/lang/reflect/Type;)Ljava/lang/Object;
     .locals 3
 
     .line 1
-    new-instance v0, Ldd7;
+    new-instance v0, Lm58;
 
     .line 2
     .line 3
-    invoke-direct {v0, p2}, Ldd7;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v0, p2}, Lm58;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 4
     .line 5
     .line 6
-    new-instance p2, Lp33;
+    new-instance p2, Lvj3;
 
     .line 7
     .line 8
-    sget-object v1, Lp33;->j0:Lm33;
+    sget-object v1, Lvj3;->s0:Lsj3;
 
     .line 9
     .line 10
-    invoke-direct {p2, v1}, Lr23;-><init>(Ljava/io/Reader;)V
+    invoke-direct {p2, v1}, Lxi3;-><init>(Ljava/io/Reader;)V
 
     .line 11
     .line 12
@@ -256,14 +256,14 @@
 
     .line 16
     .line 17
-    iput-object v2, p2, Lp33;->f0:[Ljava/lang/Object;
+    iput-object v2, p2, Lvj3;->o0:[Ljava/lang/Object;
 
     .line 18
     .line 19
     const/4 v2, 0x0
 
     .line 20
-    iput v2, p2, Lp33;->g0:I
+    iput v2, p2, Lvj3;->p0:I
 
     .line 21
     .line 22
@@ -271,7 +271,7 @@
 
     .line 23
     .line 24
-    iput-object v2, p2, Lp33;->h0:[Ljava/lang/String;
+    iput-object v2, p2, Lvj3;->q0:[Ljava/lang/String;
 
     .line 25
     .line 26
@@ -279,28 +279,28 @@
 
     .line 27
     .line 28
-    iput-object v1, p2, Lp33;->i0:[I
+    iput-object v1, p2, Lvj3;->r0:[I
 
     .line 29
     .line 30
-    invoke-virtual {p2, p1}, Lp33;->S0(Ljava/lang/Object;)V
+    invoke-virtual {p2, p1}, Lvj3;->f1(Ljava/lang/Object;)V
 
     .line 31
     .line 32
     .line 33
-    invoke-virtual {p0, p2, v0}, Lcom/google/gson/a;->b(Lr23;Ldd7;)Ljava/lang/Object;
+    invoke-virtual {p0, p2, v0}, Lcom/google/gson/a;->b(Lxi3;Lm58;)Ljava/lang/Object;
 
     .line 34
     .line 35
     .line 36
-    move-result-object p1
+    move-result-object p0
 
     .line 37
-    return-object p1
+    return-object p0
 .end method
 
-.method public final b(Lr23;Ldd7;)Ljava/lang/Object;
-    .locals 9
+.method public final b(Lxi3;Lm58;)Ljava/lang/Object;
+    .locals 7
 
     .line 1
     const-string v0, "AssertionError (GSON 2.14.0): "
@@ -311,7 +311,7 @@
 
     .line 4
     .line 5
-    iget v2, p1, Lr23;->e0:I
+    iget v2, p1, Lxi3;->n0:I
 
     .line 6
     .line 7
@@ -326,7 +326,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {p1, v4}, Lr23;->v0(I)V
+    invoke-virtual {p1, v4}, Lxi3;->C0(I)V
 
     .line 13
     .line 14
@@ -342,150 +342,146 @@
 
     .line 18
     .line 19
-    iput v3, p1, Lr23;->e0:I
+    iput v3, p1, Lxi3;->n0:I
 
     .line 20
     .line 21
     :cond_1
     :goto_0
-    const/16 v4, 0x9
+    :try_start_0
+    invoke-virtual {p1}, Lxi3;->t0()I
 
     .line 22
     .line 23
-    :try_start_0
-    invoke-virtual {p1}, Lr23;->k0()I
-
     .line 24
-    .line 25
-    .line 26
     const/4 v3, 0x0
 
+    .line 25
+    invoke-virtual {p0, p2}, Lcom/google/gson/a;->e(Lm58;)Lcom/google/gson/b;
+
+    .line 26
     .line 27
-    invoke-virtual {p0, p2}, Lcom/google/gson/a;->e(Ldd7;)Lcom/google/gson/b;
-
     .line 28
-    .line 29
-    .line 30
-    move-result-object v5
+    move-result-object p0
 
+    .line 29
+    iget-object p2, p2, Lm58;->a:Ljava/lang/Class;
+
+    .line 30
     .line 31
-    iget-object p2, p2, Ldd7;->a:Ljava/lang/Class;
+    invoke-virtual {p0, p1}, Lcom/google/gson/b;->b(Lxi3;)Ljava/lang/Object;
 
     .line 32
     .line 33
-    invoke-virtual {v5, p1}, Lcom/google/gson/b;->b(Lr23;)Ljava/lang/Object;
-
     .line 34
+    move-result-object v4
+
     .line 35
+    invoke-static {p2}, Ljq8;->N(Ljava/lang/Class;)Ljava/lang/Class;
+
     .line 36
-    move-result-object v6
-
     .line 37
-    invoke-static {p2}, Lva6;->X(Ljava/lang/Class;)Ljava/lang/Class;
-
     .line 38
-    .line 39
-    .line 40
-    move-result-object v7
+    move-result-object v5
 
+    .line 39
+    if-eqz v4, :cond_3
+
+    .line 40
     .line 41
-    if-eqz v6, :cond_3
+    invoke-virtual {v5, v4}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     .line 42
     .line 43
-    invoke-virtual {v7, v6}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
-
     .line 44
+    move-result v5
+
     .line 45
+    if-eqz v5, :cond_2
+
     .line 46
-    move-result v7
-
     .line 47
-    if-eqz v7, :cond_2
-
-    .line 48
-    .line 49
     goto :goto_1
 
-    .line 50
+    .line 48
     :cond_2
-    new-instance v7, Ljava/lang/ClassCastException;
+    new-instance v5, Ljava/lang/ClassCastException;
+
+    .line 49
+    .line 50
+    new-instance v6, Ljava/lang/StringBuilder;
 
     .line 51
     .line 52
-    new-instance v8, Ljava/lang/StringBuilder;
+    invoke-direct {v6, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 53
     .line 54
-    invoke-direct {v8, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 55
+    invoke-virtual {v6, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 56
     .line 57
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 58
+    const-string p0, "\' returned wrong type; requested "
+
     .line 59
     .line 60
-    const-string v1, "\' returned wrong type; requested "
+    invoke-virtual {v6, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 61
     .line 62
-    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 63
+    invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 64
     .line 65
-    invoke-virtual {v8, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 66
+    const-string p0, " but got instance of "
+
     .line 67
     .line 68
-    const-string p2, " but got instance of "
+    invoke-virtual {v6, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 69
     .line 70
-    invoke-virtual {v8, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 71
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 72
     .line 73
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 74
+    move-result-object p0
+
     .line 75
+    invoke-virtual {v6, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 76
-    move-result-object p2
-
     .line 77
-    invoke-virtual {v8, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 78
+    const-string p0, "\nVerify that the adapter was registered for the correct type."
+
     .line 79
     .line 80
-    const-string p2, "\nVerify that the adapter was registered for the correct type."
+    invoke-virtual {v6, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 81
     .line 82
-    invoke-virtual {v8, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 83
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 84
     .line 85
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 86
+    move-result-object p0
+
     .line 87
+    invoke-direct {v5, p0}, Ljava/lang/ClassCastException;-><init>(Ljava/lang/String;)V
+
     .line 88
-    move-result-object p2
-
     .line 89
-    invoke-direct {v7, p2}, Ljava/lang/ClassCastException;-><init>(Ljava/lang/String;)V
-
     .line 90
-    .line 91
-    .line 92
-    throw v7
+    throw v5
     :try_end_0
     .catch Ljava/io/EOFException; {:try_start_0 .. :try_end_0} :catch_3
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_2
@@ -493,177 +489,177 @@
     .catch Ljava/lang/AssertionError; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 93
+    .line 91
     :catchall_0
-    move-exception p2
+    move-exception p0
 
-    .line 94
+    .line 92
     goto :goto_6
 
-    .line 95
+    .line 93
     :catch_0
-    move-exception p2
+    move-exception p0
 
-    .line 96
+    .line 94
     goto :goto_2
 
-    .line 97
+    .line 95
     :catch_1
-    move-exception p2
+    move-exception p0
 
-    .line 98
+    .line 96
     goto :goto_3
 
-    .line 99
+    .line 97
     :catch_2
-    move-exception p2
+    move-exception p0
 
-    .line 100
+    .line 98
     goto :goto_4
 
-    .line 101
+    .line 99
     :catch_3
-    move-exception p2
+    move-exception p0
 
-    .line 102
+    .line 100
     goto :goto_5
 
-    .line 103
+    .line 101
     :cond_3
     :goto_1
-    invoke-virtual {p1, v2}, Lr23;->v0(I)V
+    invoke-virtual {p1, v2}, Lxi3;->C0(I)V
 
+    .line 102
+    .line 103
     .line 104
-    .line 105
-    .line 106
-    return-object v6
+    return-object v4
 
-    .line 107
+    .line 105
     :goto_2
     :try_start_1
-    new-instance v1, Ljava/lang/AssertionError;
+    new-instance p2, Ljava/lang/AssertionError;
+
+    .line 106
+    .line 107
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 108
     .line 109
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 110
     .line 111
-    invoke-direct {v3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 112
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
     .line 113
     .line 114
-    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
     .line 115
-    .line 116
-    .line 117
     move-result-object v0
 
-    .line 118
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 116
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 117
+    .line 118
     .line 119
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 120
     .line 121
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 122
-    .line 123
-    .line 124
     move-result-object v0
 
+    .line 123
+    invoke-direct {p2, v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 124
     .line 125
-    invoke-direct {v1, v0, p2}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
     .line 126
-    .line 127
-    .line 128
-    throw v1
+    throw p2
 
-    .line 129
+    .line 127
     :goto_3
-    new-instance v0, Lg33;
+    new-instance p2, Lmj3;
+
+    .line 128
+    .line 129
+    invoke-direct {p2, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 130
     .line 131
-    invoke-direct {v0, v4, p2}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
     .line 132
-    .line 133
-    .line 134
-    throw v0
+    throw p2
 
-    .line 135
+    .line 133
     :goto_4
-    new-instance v0, Lg33;
+    new-instance p2, Lmj3;
+
+    .line 134
+    .line 135
+    invoke-direct {p2, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 136
     .line 137
-    invoke-direct {v0, v4, p2}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
     .line 138
-    .line 139
-    .line 140
-    throw v0
+    throw p2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 141
+    .line 139
     :goto_5
     if-eqz v3, :cond_4
 
+    .line 140
+    .line 141
+    invoke-virtual {p1, v2}, Lxi3;->C0(I)V
+
     .line 142
     .line 143
-    invoke-virtual {p1, v2}, Lr23;->v0(I)V
-
     .line 144
+    const/4 p0, 0x0
+
     .line 145
+    return-object p0
+
     .line 146
-    const/4 p1, 0x0
-
-    .line 147
-    return-object p1
-
-    .line 148
     :cond_4
     :try_start_2
-    new-instance v0, Lg33;
+    new-instance p2, Lmj3;
+
+    .line 147
+    .line 148
+    invoke-direct {p2, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 149
     .line 150
-    invoke-direct {v0, v4, p2}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
     .line 151
-    .line 152
-    .line 153
-    throw v0
+    throw p2
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 154
+    .line 152
     :goto_6
-    invoke-virtual {p1, v2}, Lr23;->v0(I)V
+    invoke-virtual {p1, v2}, Lxi3;->C0(I)V
 
+    .line 153
+    .line 154
     .line 155
-    .line 156
-    .line 157
-    throw p2
+    throw p0
 .end method
 
-.method public final c(Ljava/lang/String;Ldd7;)Ljava/lang/Object;
-    .locals 2
+.method public final c(Ljava/lang/String;Lm58;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
     if-nez p1, :cond_0
 
     .line 2
     .line 3
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 4
-    return-object p1
+    return-object p0
 
     .line 5
     :cond_0
@@ -676,11 +672,11 @@
     .line 8
     .line 9
     .line 10
-    new-instance p1, Lr23;
+    new-instance p1, Lxi3;
 
     .line 11
     .line 12
-    invoke-direct {p1, v0}, Lr23;-><init>(Ljava/io/Reader;)V
+    invoke-direct {p1, v0}, Lxi3;-><init>(Ljava/io/Reader;)V
 
     .line 13
     .line 14
@@ -697,137 +693,125 @@
 
     .line 20
     :cond_1
-    invoke-virtual {p1, v0}, Lr23;->v0(I)V
+    invoke-virtual {p1, v0}, Lxi3;->C0(I)V
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {p0, p1, p2}, Lcom/google/gson/a;->b(Lr23;Ldd7;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcom/google/gson/a;->b(Lxi3;Lm58;)Ljava/lang/Object;
 
     .line 24
     .line 25
     .line 26
-    move-result-object p2
+    move-result-object p0
 
     .line 27
-    if-eqz p2, :cond_3
+    if-eqz p0, :cond_3
 
     .line 28
     .line 29
-    const/16 v0, 0x9
+    :try_start_0
+    invoke-virtual {p1}, Lxi3;->t0()I
 
     .line 30
     .line 31
-    :try_start_0
-    invoke-virtual {p1}, Lr23;->k0()I
-
     .line 32
-    .line 33
-    .line 34
     move-result p1
 
+    .line 33
+    const/16 p2, 0xa
+
+    .line 34
     .line 35
-    const/16 v1, 0xa
+    if-ne p1, p2, :cond_2
 
     .line 36
     .line 37
-    if-ne p1, v1, :cond_2
+    goto :goto_0
 
     .line 38
-    .line 39
-    goto :goto_2
-
-    .line 40
     :cond_2
-    new-instance p1, Lg33;
+    new-instance p0, Lmj3;
+
+    .line 39
+    .line 40
+    const-string p1, "JSON document was not fully consumed."
 
     .line 41
     .line 42
-    const-string p2, "JSON document was not fully consumed."
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     .line 43
     .line 44
-    invoke-direct {p1, p2, v0}, Lio0;-><init>(Ljava/lang/String;I)V
-
     .line 45
-    .line 46
-    .line 47
-    throw p1
+    throw p0
     :try_end_0
-    .catch Lay3; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lxe4; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 48
+    .line 46
     :catch_0
-    move-exception p1
+    move-exception p0
 
+    .line 47
+    new-instance p1, Lzg3;
+
+    .line 48
     .line 49
-    goto :goto_0
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 50
-    :catch_1
-    move-exception p1
-
     .line 51
-    goto :goto_1
-
     .line 52
-    :goto_0
-    new-instance p2, Lu03;
+    throw p1
 
     .line 53
+    :catch_1
+    move-exception p0
+
     .line 54
-    invoke-direct {p2, v0, p1}, Lio0;-><init>(ILjava/lang/Throwable;)V
+    new-instance p1, Lmj3;
 
     .line 55
     .line 56
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
     .line 57
-    throw p2
-
     .line 58
-    :goto_1
-    new-instance p2, Lg33;
-
     .line 59
+    throw p1
+
     .line 60
-    invoke-direct {p2, v0, p1}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
-    .line 61
-    .line 62
-    .line 63
-    throw p2
-
-    .line 64
     :cond_3
-    :goto_2
-    return-object p2
+    :goto_0
+    return-object p0
 .end method
 
 .method public final d(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    new-instance v0, Ldd7;
+    new-instance v0, Lm58;
 
     .line 2
     .line 3
-    invoke-direct {v0, p2}, Ldd7;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v0, p2}, Lm58;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p0, p1, v0}, Lcom/google/gson/a;->c(Ljava/lang/String;Ldd7;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, v0}, Lcom/google/gson/a;->c(Ljava/lang/String;Lm58;)Ljava/lang/Object;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
-.method public final e(Ldd7;)Lcom/google/gson/b;
+.method public final e(Lm58;)Lcom/google/gson/b;
     .locals 9
 
     .line 1
@@ -835,16 +819,16 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/google/gson/a;->b:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lcom/google/gson/a;->b:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -983,11 +967,11 @@
     move-result-object v7
 
     .line 73
-    check-cast v7, Lwa7;
+    check-cast v7, Lj38;
 
     .line 74
     .line 75
-    invoke-interface {v7, p0, p1}, Lwa7;->a(Lcom/google/gson/a;Ldd7;)Lcom/google/gson/b;
+    invoke-interface {v7, p0, p1}, Lj38;->a(Lcom/google/gson/a;Lm58;)Lcom/google/gson/b;
 
     .line 76
     .line 77
@@ -999,11 +983,11 @@
 
     .line 80
     .line 81
-    iget-object v5, v4, Lcom/google/gson/Gson$FutureTypeAdapter;->a:Lcom/google/gson/b;
+    iget-object p0, v4, Lcom/google/gson/Gson$FutureTypeAdapter;->a:Lcom/google/gson/b;
 
     .line 82
     .line 83
-    if-nez v5, :cond_4
+    if-nez p0, :cond_4
 
     .line 84
     .line 85
@@ -1020,27 +1004,27 @@
 
     .line 91
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 92
     goto :goto_2
 
     .line 93
     :cond_4
-    new-instance p1, Ljava/lang/AssertionError;
+    new-instance p0, Ljava/lang/AssertionError;
 
     .line 94
     .line 95
-    const-string v0, "Delegate is already set"
+    const-string p1, "Delegate is already set"
 
     .line 96
     .line 97
-    invoke-direct {p1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p0, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     .line 98
     .line 99
     .line 100
-    throw p1
+    throw p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1065,7 +1049,7 @@
 
     .line 109
     .line 110
-    invoke-virtual {v0, v2}, Lj$/util/concurrent/ConcurrentHashMap;->putAll(Ljava/util/Map;)V
+    invoke-virtual {v0, v2}, Ljava/util/concurrent/ConcurrentHashMap;->putAll(Ljava/util/Map;)V
 
     .line 111
     .line 112
@@ -1075,11 +1059,11 @@
 
     .line 114
     :cond_8
-    const-string v0, "GSON (2.14.0) cannot handle "
+    const-string p0, "GSON (2.14.0) cannot handle "
 
     .line 115
     .line 116
-    invoke-static {p1, v0}, Li62;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lbh2;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 117
     .line 118
@@ -1098,10 +1082,10 @@
     .line 124
     .line 125
     :cond_9
-    throw p1
+    throw p0
 .end method
 
-.method public final f(Lwa7;Ldd7;)Lcom/google/gson/b;
+.method public final f(Lj38;Lm58;)Lcom/google/gson/b;
     .locals 7
 
     .line 1
@@ -1109,7 +1093,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1118,7 +1102,7 @@
 
     .line 7
     .line 8
-    invoke-static {p2, v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p2, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -1132,11 +1116,11 @@
     .line 14
     .line 15
     .line 16
-    iget-object v1, v0, Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;->R:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v1, v0, Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;->Y:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 17
     .line 18
-    sget-object v2, Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;->S:Lwa7;
+    sget-object v2, Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;->Z:Lj38;
 
     .line 19
     .line 20
@@ -1151,11 +1135,11 @@
 
     .line 24
     :cond_0
-    iget-object v2, p2, Ldd7;->a:Ljava/lang/Class;
+    iget-object v2, p2, Lm58;->a:Ljava/lang/Class;
 
     .line 25
     .line 26
-    invoke-virtual {v1, v2}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 27
     .line 28
@@ -1163,7 +1147,7 @@
     move-result-object v4
 
     .line 30
-    check-cast v4, Lwa7;
+    check-cast v4, Lj38;
 
     .line 31
     .line 32
@@ -1179,7 +1163,7 @@
 
     .line 37
     :cond_1
-    const-class v4, Lyy2;
+    const-class v4, Laf3;
 
     .line 38
     .line 39
@@ -1191,7 +1175,7 @@
     move-result-object v4
 
     .line 43
-    check-cast v4, Lyy2;
+    check-cast v4, Laf3;
 
     .line 44
     .line 45
@@ -1203,7 +1187,7 @@
 
     .line 48
     :cond_2
-    invoke-interface {v4}, Lyy2;->value()Ljava/lang/Class;
+    invoke-interface {v4}, Laf3;->value()Ljava/lang/Class;
 
     .line 49
     .line 50
@@ -1211,7 +1195,7 @@
     move-result-object v4
 
     .line 52
-    const-class v5, Lwa7;
+    const-class v5, Lj38;
 
     .line 53
     .line 54
@@ -1231,20 +1215,20 @@
 
     .line 61
     :cond_3
-    iget-object v5, v0, Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;->Q:Ld8;
+    iget-object v5, v0, Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;->X:Lp8;
 
     .line 62
     .line 63
-    new-instance v6, Ldd7;
+    new-instance v6, Lm58;
 
     .line 64
     .line 65
-    invoke-direct {v6, v4}, Ldd7;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v6, v4}, Lm58;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 66
     .line 67
     .line 68
-    invoke-virtual {v5, v6, v3}, Ld8;->n(Ldd7;Z)Lag4;
+    invoke-virtual {v5, v6, v3}, Lp8;->m(Lm58;Z)Llx4;
 
     .line 69
     .line 70
@@ -1252,7 +1236,7 @@
     move-result-object v4
 
     .line 72
-    invoke-interface {v4}, Lag4;->i()Ljava/lang/Object;
+    invoke-interface {v4}, Llx4;->i()Ljava/lang/Object;
 
     .line 73
     .line 74
@@ -1260,11 +1244,11 @@
     move-result-object v4
 
     .line 76
-    check-cast v4, Lwa7;
+    check-cast v4, Lj38;
 
     .line 77
     .line 78
-    invoke-virtual {v1, v2, v4}, Lj$/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2, v4}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 79
     .line 80
@@ -1272,7 +1256,7 @@
     move-result-object v1
 
     .line 82
-    check-cast v1, Lwa7;
+    check-cast v1, Lj38;
 
     .line 83
     .line 84
@@ -1331,7 +1315,7 @@
     move-result-object v2
 
     .line 107
-    check-cast v2, Lwa7;
+    check-cast v2, Lj38;
 
     .line 108
     .line 109
@@ -1343,14 +1327,14 @@
 
     .line 112
     .line 113
-    const/4 v1, 0x1
+    move v1, v3
 
     .line 114
     goto :goto_2
 
     .line 115
     :cond_7
-    invoke-interface {v2, p0, p2}, Lwa7;->a(Lcom/google/gson/a;Ldd7;)Lcom/google/gson/b;
+    invoke-interface {v2, p0, p2}, Lj38;->a(Lcom/google/gson/a;Lm58;)Lcom/google/gson/b;
 
     .line 116
     .line 117
@@ -1370,34 +1354,34 @@
 
     .line 123
     .line 124
-    invoke-virtual {p0, p2}, Lcom/google/gson/a;->e(Ldd7;)Lcom/google/gson/b;
+    invoke-virtual {p0, p2}, Lcom/google/gson/a;->e(Lm58;)Lcom/google/gson/b;
 
     .line 125
     .line 126
     .line 127
-    move-result-object p1
+    move-result-object p0
 
     .line 128
-    return-object p1
+    return-object p0
 
     .line 129
     :cond_9
-    const-string p1, "GSON cannot serialize or deserialize "
+    const-string p0, "GSON cannot serialize or deserialize "
 
     .line 130
     .line 131
-    invoke-static {p2, p1}, Li62;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p0}, Lbh2;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 132
     .line 133
     .line 134
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 135
-    return-object p1
+    return-object p0
 .end method
 
-.method public final g(Ld03;)Ljava/lang/String;
+.method public final g(Lfg3;)Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -1411,29 +1395,29 @@
     .line 5
     .line 6
     :try_start_0
-    new-instance v1, Lgl6;
+    new-instance v1, Lr97;
 
     .line 7
     .line 8
-    invoke-direct {v1, v0}, Lgl6;-><init>(Ljava/lang/StringBuilder;)V
+    invoke-direct {v1, v0}, Lr97;-><init>(Ljava/lang/StringBuilder;)V
 
     .line 9
     .line 10
     .line 11
-    new-instance v2, Lh43;
+    new-instance v2, Lnk3;
 
     .line 12
     .line 13
-    invoke-direct {v2, v1}, Lh43;-><init>(Ljava/io/Writer;)V
+    invoke-direct {v2, v1}, Lnk3;-><init>(Ljava/io/Writer;)V
 
     .line 14
     .line 15
     .line 16
-    iget-object v1, p0, Lcom/google/gson/a;->g:Li42;
+    iget-object v1, p0, Lcom/google/gson/a;->g:Lye2;
 
     .line 17
     .line 18
-    invoke-virtual {v2, v1}, Lh43;->C(Li42;)V
+    invoke-virtual {v2, v1}, Lnk3;->E(Lye2;)V
 
     .line 19
     .line 20
@@ -1442,7 +1426,7 @@
 
     .line 22
     .line 23
-    iput-boolean v1, v2, Lh43;->Y:Z
+    iput-boolean v1, v2, Lnk3;->h0:Z
 
     .line 24
     .line 25
@@ -1458,7 +1442,7 @@
 
     .line 30
     :cond_0
-    invoke-virtual {v2, v1}, Lh43;->F(I)V
+    invoke-virtual {v2, v1}, Lnk3;->J(I)V
 
     .line 31
     .line 32
@@ -1466,11 +1450,11 @@
     const/4 v1, 0x0
 
     .line 34
-    iput-boolean v1, v2, Lh43;->a0:Z
+    iput-boolean v1, v2, Lnk3;->j0:Z
 
     .line 35
     .line 36
-    invoke-virtual {p0, p1, v2}, Lcom/google/gson/a;->i(Ld03;Lh43;)V
+    invoke-virtual {p0, p1, v2}, Lcom/google/gson/a;->i(Lfg3;Lnk3;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1482,30 +1466,26 @@
     .line 40
     .line 41
     .line 42
-    move-result-object p1
+    move-result-object p0
 
     .line 43
-    return-object p1
+    return-object p0
 
     .line 44
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 45
-    new-instance v0, Lu03;
+    new-instance p1, Lzg3;
 
     .line 46
     .line 47
-    const/16 v1, 0x9
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 48
     .line 49
-    invoke-direct {v0, v1, p1}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
     .line 50
-    .line 51
-    .line 52
-    throw v0
+    throw p1
 .end method
 
 .method public final h(Ljava/lang/Object;)Ljava/lang/String;
@@ -1516,19 +1496,19 @@
 
     .line 2
     .line 3
-    sget-object p1, Lx13;->Q:Lx13;
+    sget-object p1, Lci3;->X:Lci3;
 
     .line 4
     .line 5
-    invoke-virtual {p0, p1}, Lcom/google/gson/a;->g(Ld03;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/google/gson/a;->g(Lfg3;)Ljava/lang/String;
 
     .line 6
     .line 7
     .line 8
-    move-result-object p1
+    move-result-object p0
 
     .line 9
-    return-object p1
+    return-object p0
 
     .line 10
     :cond_0
@@ -1550,29 +1530,29 @@
     .line 18
     .line 19
     :try_start_0
-    new-instance v2, Lgl6;
+    new-instance v2, Lr97;
 
     .line 20
     .line 21
-    invoke-direct {v2, v1}, Lgl6;-><init>(Ljava/lang/StringBuilder;)V
+    invoke-direct {v2, v1}, Lr97;-><init>(Ljava/lang/StringBuilder;)V
 
     .line 22
     .line 23
     .line 24
-    new-instance v3, Lh43;
+    new-instance v3, Lnk3;
 
     .line 25
     .line 26
-    invoke-direct {v3, v2}, Lh43;-><init>(Ljava/io/Writer;)V
+    invoke-direct {v3, v2}, Lnk3;-><init>(Ljava/io/Writer;)V
 
     .line 27
     .line 28
     .line 29
-    iget-object v2, p0, Lcom/google/gson/a;->g:Li42;
+    iget-object v2, p0, Lcom/google/gson/a;->g:Lye2;
 
     .line 30
     .line 31
-    invoke-virtual {v3, v2}, Lh43;->C(Li42;)V
+    invoke-virtual {v3, v2}, Lnk3;->E(Lye2;)V
 
     .line 32
     .line 33
@@ -1581,7 +1561,7 @@
 
     .line 35
     .line 36
-    iput-boolean v2, v3, Lh43;->Y:Z
+    iput-boolean v2, v3, Lnk3;->h0:Z
 
     .line 37
     .line 38
@@ -1597,7 +1577,7 @@
 
     .line 43
     :cond_1
-    invoke-virtual {v3, v2}, Lh43;->F(I)V
+    invoke-virtual {v3, v2}, Lnk3;->J(I)V
 
     .line 44
     .line 45
@@ -1605,11 +1585,11 @@
     const/4 v2, 0x0
 
     .line 47
-    iput-boolean v2, v3, Lh43;->a0:Z
+    iput-boolean v2, v3, Lnk3;->j0:Z
 
     .line 48
     .line 49
-    invoke-virtual {p0, p1, v0, v3}, Lcom/google/gson/a;->j(Ljava/lang/Object;Ljava/lang/Class;Lh43;)V
+    invoke-virtual {p0, p1, v0, v3}, Lcom/google/gson/a;->j(Ljava/lang/Object;Ljava/lang/Class;Lnk3;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1621,49 +1601,45 @@
     .line 53
     .line 54
     .line 55
-    move-result-object p1
+    move-result-object p0
 
     .line 56
-    return-object p1
+    return-object p0
 
     .line 57
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 58
-    new-instance v0, Lu03;
+    new-instance p1, Lzg3;
 
     .line 59
     .line 60
-    const/16 v1, 0x9
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 61
     .line 62
-    invoke-direct {v0, v1, p1}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
     .line 63
-    .line 64
-    .line 65
-    throw v0
+    throw p1
 .end method
 
-.method public final i(Ld03;Lh43;)V
-    .locals 6
+.method public final i(Lfg3;Lnk3;)V
+    .locals 5
 
     .line 1
     const-string v0, "AssertionError (GSON 2.14.0): "
 
     .line 2
     .line 3
-    iget v1, p2, Lh43;->X:I
+    iget v1, p2, Lnk3;->g0:I
 
     .line 4
     .line 5
-    iget-boolean v2, p2, Lh43;->Y:Z
+    iget-boolean v2, p2, Lnk3;->h0:Z
 
     .line 6
     .line 7
-    iget-boolean v3, p2, Lh43;->a0:Z
+    iget-boolean v3, p2, Lnk3;->j0:Z
 
     .line 8
     .line 9
@@ -1671,26 +1647,26 @@
 
     .line 10
     .line 11
-    iput-boolean v4, p2, Lh43;->Y:Z
+    iput-boolean v4, p2, Lnk3;->h0:Z
 
     .line 12
     .line 13
     const/4 v4, 0x0
 
     .line 14
-    iput-boolean v4, p2, Lh43;->a0:Z
+    iput-boolean v4, p2, Lnk3;->j0:Z
 
     .line 15
     .line 16
-    iget v4, p0, Lcom/google/gson/a;->h:I
+    iget p0, p0, Lcom/google/gson/a;->h:I
 
     .line 17
     .line 18
-    if-eqz v4, :cond_0
+    if-eqz p0, :cond_0
 
     .line 19
     .line 20
-    invoke-virtual {p2, v4}, Lh43;->F(I)V
+    invoke-virtual {p2, p0}, Lnk3;->J(I)V
 
     .line 21
     .line 22
@@ -1699,33 +1675,33 @@
 
     .line 24
     :cond_0
-    const/4 v4, 0x2
+    const/4 p0, 0x2
 
     .line 25
-    if-ne v1, v4, :cond_1
+    if-ne v1, p0, :cond_1
 
     .line 26
     .line 27
-    const/4 v4, 0x1
+    const/4 p0, 0x1
 
     .line 28
-    iput v4, p2, Lh43;->X:I
+    iput p0, p2, Lnk3;->g0:I
 
     .line 29
     .line 30
     :cond_1
     :goto_0
     :try_start_0
-    sget-object v4, Lcom/google/gson/internal/bind/JsonElementTypeAdapter;->a:Lcom/google/gson/internal/bind/JsonElementTypeAdapter;
+    sget-object p0, Lcom/google/gson/internal/bind/JsonElementTypeAdapter;->a:Lcom/google/gson/internal/bind/JsonElementTypeAdapter;
 
     .line 31
     .line 32
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 33
     .line 34
     .line 35
-    invoke-static {p1, p2}, Lcom/google/gson/internal/bind/JsonElementTypeAdapter;->f(Ld03;Lh43;)V
+    invoke-static {p1, p2}, Lcom/google/gson/internal/bind/JsonElementTypeAdapter;->f(Lfg3;Lnk3;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/AssertionError; {:try_start_0 .. :try_end_0} :catch_0
@@ -1734,16 +1710,16 @@
     .line 36
     .line 37
     .line 38
-    invoke-virtual {p2, v1}, Lh43;->F(I)V
+    invoke-virtual {p2, v1}, Lnk3;->J(I)V
 
     .line 39
     .line 40
     .line 41
-    iput-boolean v2, p2, Lh43;->Y:Z
+    iput-boolean v2, p2, Lnk3;->h0:Z
 
     .line 42
     .line 43
-    iput-boolean v3, p2, Lh43;->a0:Z
+    iput-boolean v3, p2, Lnk3;->j0:Z
 
     .line 44
     .line 45
@@ -1751,24 +1727,24 @@
 
     .line 46
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 47
     :try_start_1
-    new-instance v4, Ljava/lang/AssertionError;
+    new-instance p1, Ljava/lang/AssertionError;
 
     .line 48
     .line 49
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
     .line 50
     .line 51
-    invoke-direct {v5, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 52
     .line 53
     .line 54
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 55
     .line 56
@@ -1776,12 +1752,12 @@
     move-result-object v0
 
     .line 58
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 59
     .line 60
     .line 61
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 62
     .line 63
@@ -1789,78 +1765,74 @@
     move-result-object v0
 
     .line 65
-    invoke-direct {v4, v0, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 66
     .line 67
     .line 68
-    throw v4
+    throw p1
 
     .line 69
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 70
     goto :goto_1
 
     .line 71
     :catch_1
-    move-exception p1
+    move-exception p0
 
     .line 72
-    new-instance v0, Lu03;
+    new-instance p1, Lzg3;
 
     .line 73
     .line 74
-    const/16 v4, 0x9
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 75
     .line 76
-    invoke-direct {v0, v4, p1}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
     .line 77
-    .line 78
-    .line 79
-    throw v0
+    throw p1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 80
+    .line 78
     :goto_1
-    invoke-virtual {p2, v1}, Lh43;->F(I)V
+    invoke-virtual {p2, v1}, Lnk3;->J(I)V
 
+    .line 79
+    .line 80
     .line 81
+    iput-boolean v2, p2, Lnk3;->h0:Z
+
     .line 82
     .line 83
-    iput-boolean v2, p2, Lh43;->Y:Z
+    iput-boolean v3, p2, Lnk3;->j0:Z
 
     .line 84
     .line 85
-    iput-boolean v3, p2, Lh43;->a0:Z
-
-    .line 86
-    .line 87
-    throw p1
+    throw p0
 .end method
 
-.method public final j(Ljava/lang/Object;Ljava/lang/Class;Lh43;)V
-    .locals 5
+.method public final j(Ljava/lang/Object;Ljava/lang/Class;Lnk3;)V
+    .locals 4
 
     .line 1
     const-string v0, "AssertionError (GSON 2.14.0): "
 
     .line 2
     .line 3
-    new-instance v1, Ldd7;
+    new-instance v1, Lm58;
 
     .line 4
     .line 5
-    invoke-direct {v1, p2}, Ldd7;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v1, p2}, Lm58;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0, v1}, Lcom/google/gson/a;->e(Ldd7;)Lcom/google/gson/b;
+    invoke-virtual {p0, v1}, Lcom/google/gson/a;->e(Lm58;)Lcom/google/gson/b;
 
     .line 9
     .line 10
@@ -1868,7 +1840,7 @@
     move-result-object p2
 
     .line 12
-    iget v1, p3, Lh43;->X:I
+    iget v1, p3, Lnk3;->g0:I
 
     .line 13
     .line 14
@@ -1880,7 +1852,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p3, v2}, Lh43;->F(I)V
+    invoke-virtual {p3, v2}, Lnk3;->J(I)V
 
     .line 19
     .line 20
@@ -1899,37 +1871,37 @@
     const/4 v2, 0x1
 
     .line 26
-    iput v2, p3, Lh43;->X:I
+    iput v2, p3, Lnk3;->g0:I
 
     .line 27
     .line 28
     :cond_1
     :goto_0
-    iget-boolean v2, p3, Lh43;->Y:Z
+    iget-boolean v2, p3, Lnk3;->h0:Z
 
     .line 29
     .line 30
-    iget-boolean v3, p3, Lh43;->a0:Z
+    iget-boolean v3, p3, Lnk3;->j0:Z
 
     .line 31
     .line 32
-    iget-boolean v4, p0, Lcom/google/gson/a;->f:Z
+    iget-boolean p0, p0, Lcom/google/gson/a;->f:Z
 
     .line 33
     .line 34
-    iput-boolean v4, p3, Lh43;->Y:Z
+    iput-boolean p0, p3, Lnk3;->h0:Z
 
     .line 35
     .line 36
-    const/4 v4, 0x0
+    const/4 p0, 0x0
 
     .line 37
-    iput-boolean v4, p3, Lh43;->a0:Z
+    iput-boolean p0, p3, Lnk3;->j0:Z
 
     .line 38
     .line 39
     :try_start_0
-    invoke-virtual {p2, p3, p1}, Lcom/google/gson/b;->c(Lh43;Ljava/lang/Object;)V
+    invoke-virtual {p2, p3, p1}, Lcom/google/gson/b;->c(Lnk3;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/AssertionError; {:try_start_0 .. :try_end_0} :catch_0
@@ -1938,16 +1910,16 @@
     .line 40
     .line 41
     .line 42
-    invoke-virtual {p3, v1}, Lh43;->F(I)V
+    invoke-virtual {p3, v1}, Lnk3;->J(I)V
 
     .line 43
     .line 44
     .line 45
-    iput-boolean v2, p3, Lh43;->Y:Z
+    iput-boolean v2, p3, Lnk3;->h0:Z
 
     .line 46
     .line 47
-    iput-boolean v3, p3, Lh43;->a0:Z
+    iput-boolean v3, p3, Lnk3;->j0:Z
 
     .line 48
     .line 49
@@ -1955,31 +1927,31 @@
 
     .line 50
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 51
     goto :goto_1
 
     .line 52
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 53
     :try_start_1
-    new-instance p2, Ljava/lang/AssertionError;
+    new-instance p1, Ljava/lang/AssertionError;
 
     .line 54
     .line 55
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 56
     .line 57
-    invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 58
     .line 59
     .line 60
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 61
     .line 62
@@ -1987,67 +1959,63 @@
     move-result-object v0
 
     .line 64
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 65
     .line 66
     .line 67
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 68
     .line 69
     .line 70
-    move-result-object v0
+    move-result-object p2
 
     .line 71
-    invoke-direct {p2, v0, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, p2, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 72
     .line 73
     .line 74
-    throw p2
+    throw p1
 
     .line 75
     :catch_1
-    move-exception p1
+    move-exception p0
 
     .line 76
-    new-instance p2, Lu03;
+    new-instance p1, Lzg3;
 
     .line 77
     .line 78
-    const/16 v0, 0x9
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 79
     .line 80
-    invoke-direct {p2, v0, p1}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
     .line 81
-    .line 82
-    .line 83
-    throw p2
+    throw p1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 84
+    .line 82
     :goto_1
-    invoke-virtual {p3, v1}, Lh43;->F(I)V
+    invoke-virtual {p3, v1}, Lnk3;->J(I)V
 
+    .line 83
+    .line 84
     .line 85
+    iput-boolean v2, p3, Lnk3;->h0:Z
+
     .line 86
     .line 87
-    iput-boolean v2, p3, Lh43;->Y:Z
+    iput-boolean v3, p3, Lnk3;->j0:Z
 
     .line 88
     .line 89
-    iput-boolean v3, p3, Lh43;->a0:Z
-
-    .line 90
-    .line 91
-    throw p1
+    throw p0
 .end method
 
-.method public final k(Ljava/lang/Object;)Ld03;
+.method public final k(Ljava/lang/Object;)Lfg3;
     .locals 2
 
     .line 1
@@ -2059,37 +2027,37 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, Lr33;
+    new-instance v1, Lxj3;
 
     .line 6
     .line 7
-    invoke-direct {v1}, Lr33;-><init>()V
+    invoke-direct {v1}, Lxj3;-><init>()V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {p0, p1, v0, v1}, Lcom/google/gson/a;->j(Ljava/lang/Object;Ljava/lang/Class;Lh43;)V
+    invoke-virtual {p0, p1, v0, v1}, Lcom/google/gson/a;->j(Ljava/lang/Object;Ljava/lang/Class;Lnk3;)V
 
     .line 11
     .line 12
     .line 13
-    iget-object p1, v1, Lr33;->e0:Ljava/util/ArrayList;
+    iget-object p0, v1, Lxj3;->n0:Ljava/util/ArrayList;
 
     .line 14
     .line 15
-    invoke-virtual {p1}, Ljava/util/ArrayList;->isEmpty()Z
+    invoke-virtual {p0}, Ljava/util/ArrayList;->isEmpty()Z
 
     .line 16
     .line 17
     .line 18
-    move-result v0
+    move-result p1
 
     .line 19
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_0
 
     .line 20
     .line 21
-    iget-object p1, v1, Lr33;->g0:Ld03;
+    iget-object p0, v1, Lxj3;->p0:Lfg3;
 
     .line 22
     .line 23
@@ -2097,20 +2065,20 @@
 
     .line 24
     :cond_0
-    const-string v0, "Expected one JSON element but was "
+    const-string p1, "Expected one JSON element but was "
 
     .line 25
     .line 26
-    invoke-static {p1, v0}, Li62;->p(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lbh2;->o(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 27
     .line 28
     .line 29
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 30
     :goto_0
-    return-object p1
+    return-object p0
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -2148,20 +2116,20 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, Lcom/google/gson/a;->c:Ld8;
+    iget-object p0, p0, Lcom/google/gson/a;->c:Lp8;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    const-string v1, "}"
+    const-string p0, "}"
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
@@ -2171,8 +2139,8 @@
     .line 29
     .line 30
     .line 31
-    move-result-object v0
+    move-result-object p0
 
     .line 32
-    return-object v0
+    return-object p0
 .end method

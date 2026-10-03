@@ -1,16 +1,25 @@
 package defpackage;
 
-import java.lang.reflect.Member;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class ze5 extends q82 implements j72 {
-    public static final ze5 Q = new ze5(1, Member.class, "isSynthetic", "isSynthetic()Z", 0);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ze5 extends i2 {
+    @Override // defpackage.lv5
+    public final int c(int i, int i2) {
+        return ThreadLocalRandom.current().nextInt(i, i2);
+    }
 
-    @Override // defpackage.j72
-    public final Object invoke(Object obj) {
-        Member member = (Member) obj;
-        member.getClass();
-        return Boolean.valueOf(member.isSynthetic());
+    @Override // defpackage.lv5
+    public final long e(long j) {
+        return ThreadLocalRandom.current().nextLong(0L, j);
+    }
+
+    @Override // defpackage.i2
+    public final Random f() {
+        ThreadLocalRandom current = ThreadLocalRandom.current();
+        current.getClass();
+        return current;
     }
 }

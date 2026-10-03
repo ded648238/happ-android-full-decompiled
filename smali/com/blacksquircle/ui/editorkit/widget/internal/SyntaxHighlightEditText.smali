@@ -1,6 +1,6 @@
 .class public abstract Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;
 .super Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -21,38 +21,38 @@
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
         "",
         "text",
-        "Lbh7;",
+        "Lr98;",
         "setTextContent",
         "(Ljava/lang/CharSequence;)V",
         "lineNumber",
         "setErrorLine",
         "(I)V",
-        "Lce3;",
+        "Lpu3;",
         "value",
-        "i0",
-        "Lce3;",
+        "r0",
+        "Lpu3;",
         "getLanguage",
-        "()Lce3;",
+        "()Lpu3;",
         "setLanguage",
-        "(Lce3;)V",
+        "(Lpu3;)V",
         "language",
-        "Lym0;",
-        "j0",
-        "Lym0;",
+        "Leu0;",
+        "s0",
+        "Leu0;",
         "getColorScheme",
-        "()Lym0;",
+        "()Leu0;",
         "setColorScheme",
-        "(Lym0;)V",
+        "(Leu0;)V",
         "colorScheme",
         "",
-        "k0",
+        "t0",
         "Z",
         "getUseSpacesInsteadOfTabs",
         "()Z",
         "setUseSpacesInsteadOfTabs",
         "(Z)V",
         "useSpacesInsteadOfTabs",
-        "l0",
+        "u0",
         "I",
         "getTabWidth",
         "()I",
@@ -71,31 +71,31 @@
 
 
 # static fields
-.field public static final synthetic t0:I
+.field public static final synthetic C0:I
 
 
 # instance fields
-.field public i0:Lce3;
+.field public A0:Z
 
-.field public j0:Lym0;
+.field public B0:Z
 
-.field public k0:Z
+.field public r0:Lpu3;
 
-.field public l0:I
+.field public s0:Leu0;
 
-.field public final m0:Ljava/util/ArrayList;
+.field public t0:Z
 
-.field public final n0:Ljava/util/ArrayList;
+.field public u0:I
 
-.field public o0:Lcm6;
+.field public final v0:Ljava/util/ArrayList;
 
-.field public p0:Lpv6;
+.field public final w0:Ljava/util/ArrayList;
 
-.field public q0:I
+.field public x0:Loa7;
 
-.field public r0:Z
+.field public y0:Lqn6;
 
-.field public s0:Z
+.field public z0:I
 
 
 # direct methods
@@ -113,25 +113,25 @@
     .line 5
     .line 6
     .line 7
-    sget-object p1, Lkm1;->a:Lym0;
+    sget-object p1, Lsu1;->a:Leu0;
 
     .line 8
     .line 9
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 10
     .line 11
     const/4 p1, 0x1
 
     .line 12
-    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->k0:Z
+    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->t0:Z
 
     .line 13
     .line 14
     const/4 p2, 0x4
 
     .line 15
-    iput p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->l0:I
+    iput p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->u0:I
 
     .line 16
     .line 17
@@ -144,7 +144,7 @@
     .line 20
     .line 21
     .line 22
-    iput-object p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->m0:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->v0:Ljava/util/ArrayList;
 
     .line 23
     .line 24
@@ -157,15 +157,15 @@
     .line 27
     .line 28
     .line 29
-    iput-object p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->n0:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->w0:Ljava/util/ArrayList;
 
     .line 30
     .line 31
-    new-instance p2, Lav6;
+    new-instance p2, Lnm7;
 
     .line 32
     .line 33
-    invoke-direct {p2, p0}, Lav6;-><init>(Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;)V
+    invoke-direct {p2, p0}, Lnm7;-><init>(Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;)V
 
     .line 34
     .line 35
@@ -195,7 +195,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->p0:Lpv6;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->y0:Lqn6;
 
     .line 2
     .line 3
@@ -203,7 +203,7 @@
 
     .line 4
     .line 5
-    iget-object v0, v0, Lpv6;->e:Ljava/lang/Object;
+    iget-object v0, v0, Lqn6;->d0:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -220,73 +220,69 @@
     const/4 v0, 0x0
 
     .line 13
-    iput-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->p0:Lpv6;
+    iput-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->y0:Lqn6;
 
     .line 14
     .line 15
-    new-instance v0, Lpv6;
+    new-instance v0, Lqn6;
 
     .line 16
     .line 17
-    new-instance v1, Lbv6;
+    new-instance v1, Lvf;
 
     .line 18
     .line 19
-    const/4 v2, 0x0
+    const/4 v2, 0x3
 
     .line 20
-    invoke-direct {v1, v2, p0}, Lbv6;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lvf;-><init>(ILjava/lang/Object;)V
 
     .line 21
     .line 22
     .line 23
-    new-instance v2, Lf86;
+    new-instance v2, Lhi;
 
     .line 24
     .line 25
-    const/4 v3, 0x4
+    const/4 v3, 0x7
 
     .line 26
-    invoke-direct {v2, v3, p0}, Lf86;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, p0}, Lhi;-><init>(ILjava/lang/Object;)V
 
     .line 27
     .line 28
     .line 29
-    invoke-direct {v0, v1, v2}, Lpv6;-><init>(Lbv6;Lf86;)V
+    invoke-direct {v0, v1, v2}, Lqn6;-><init>(Lvf;Lhi;)V
 
     .line 30
     .line 31
     .line 32
-    iput-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->p0:Lpv6;
+    iput-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->y0:Lqn6;
 
     .line 33
     .line 34
-    iget-object v1, v0, Lpv6;->e:Ljava/lang/Object;
+    iget-object p0, v0, Lqn6;->d0:Ljava/lang/Object;
 
     .line 35
     .line 36
-    check-cast v1, Ljava/util/concurrent/ExecutorService;
+    check-cast p0, Ljava/util/concurrent/ExecutorService;
 
     .line 37
     .line 38
-    new-instance v2, Lf92;
+    new-instance v1, Lg26;
 
     .line 39
     .line 40
-    const/16 v3, 0xf
+    invoke-direct {v1, v3, v0}, Lg26;-><init>(ILjava/lang/Object;)V
 
     .line 41
     .line 42
-    invoke-direct {v2, v3, v0}, Lf92;-><init>(ILjava/lang/Object;)V
-
     .line 43
+    invoke-interface {p0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
     .line 44
     .line 45
-    invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
     .line 46
-    .line 47
-    .line 48
     return-void
 .end method
 
@@ -378,7 +374,7 @@
     .line 40
     :cond_1
     :goto_0
-    const/4 v1, 0x0
+    move v1, v3
 
     .line 41
     goto :goto_1
@@ -495,7 +491,7 @@
     .line 93
     :cond_5
     :goto_2
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 94
     goto :goto_3
@@ -535,7 +531,7 @@
     move-result v1
 
     .line 110
-    iput-boolean v2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->r0:Z
+    iput-boolean v2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->A0:Z
 
     .line 111
     .line 112
@@ -568,7 +564,7 @@
     move-result v5
 
     .line 127
-    const-class v6, Ldv6;
+    const-class v6, Lpm7;
 
     .line 128
     .line 129
@@ -580,14 +576,14 @@
     move-result-object v4
 
     .line 133
-    check-cast v4, [Ldv6;
+    check-cast v4, [Lpm7;
 
     .line 134
     .line 135
     array-length v5, v4
 
     .line 136
-    const/4 v6, 0x0
+    move v6, v3
 
     .line 137
     :goto_4
@@ -620,7 +616,7 @@
 
     .line 151
     :cond_8
-    iget-object v4, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->m0:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->v0:Ljava/util/ArrayList;
 
     .line 152
     .line 153
@@ -654,11 +650,11 @@
     move-result-object v5
 
     .line 167
-    check-cast v5, Lcv6;
+    check-cast v5, Lom7;
 
     .line 168
     .line 169
-    iget v6, v5, Lcv6;->b:I
+    iget v6, v5, Lom7;->b:I
 
     .line 170
     .line 171
@@ -666,7 +662,7 @@
 
     .line 172
     .line 173
-    iget v6, v5, Lcv6;->c:I
+    iget v6, v5, Lom7;->c:I
 
     .line 174
     .line 175
@@ -690,22 +686,22 @@
 
     .line 184
     .line 185
-    const/4 v6, 0x1
+    move v6, v2
 
     .line 186
     goto :goto_6
 
     .line 187
     :cond_a
-    const/4 v6, 0x0
+    move v6, v3
 
     .line 188
     :goto_6
-    iget v7, v5, Lcv6;->b:I
+    iget v7, v5, Lom7;->b:I
 
     .line 189
     .line 190
-    iget v8, v5, Lcv6;->c:I
+    iget v8, v5, Lom7;->c:I
 
     .line 191
     .line 192
@@ -713,14 +709,14 @@
 
     .line 193
     .line 194
-    const/4 v9, 0x1
+    move v9, v2
 
     .line 195
     goto :goto_7
 
     .line 196
     :cond_b
-    const/4 v9, 0x0
+    move v9, v3
 
     .line 197
     :goto_7
@@ -745,14 +741,14 @@
     .line 205
     .line 206
     :goto_8
-    const/4 v7, 0x1
+    move v7, v2
 
     .line 207
     goto :goto_9
 
     .line 208
     :cond_d
-    const/4 v7, 0x0
+    move v7, v3
 
     .line 209
     :goto_9
@@ -776,15 +772,15 @@
     move-result-object v6
 
     .line 219
-    new-instance v7, Ldv6;
+    new-instance v7, Lpm7;
 
     .line 220
     .line 221
-    new-instance v8, Lcm6;
+    new-instance v8, Loa7;
 
     .line 222
     .line 223
-    iget-object v9, v5, Lcv6;->a:Lk57;
+    iget-object v9, v5, Lom7;->a:Lux7;
 
     .line 224
     .line 225
@@ -801,7 +797,7 @@
     .line 230
     .line 231
     .line 232
-    invoke-static {}, Len0;->d()V
+    invoke-static {}, Lku0;->d()V
 
     .line 233
     .line 234
@@ -810,11 +806,11 @@
 
     .line 236
     :pswitch_0
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 237
     .line 238
-    iget v9, v9, Lym0;->A:I
+    iget v9, v9, Leu0;->A:I
 
     .line 239
     .line 240
@@ -822,11 +818,11 @@
 
     .line 241
     :pswitch_1
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 242
     .line 243
-    iget v9, v9, Lym0;->z:I
+    iget v9, v9, Leu0;->z:I
 
     .line 244
     .line 245
@@ -834,11 +830,11 @@
 
     .line 246
     :pswitch_2
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 247
     .line 248
-    iget v9, v9, Lym0;->y:I
+    iget v9, v9, Leu0;->y:I
 
     .line 249
     .line 250
@@ -846,11 +842,11 @@
 
     .line 251
     :pswitch_3
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 252
     .line 253
-    iget v9, v9, Lym0;->x:I
+    iget v9, v9, Leu0;->x:I
 
     .line 254
     .line 255
@@ -858,11 +854,11 @@
 
     .line 256
     :pswitch_4
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 257
     .line 258
-    iget v9, v9, Lym0;->w:I
+    iget v9, v9, Leu0;->w:I
 
     .line 259
     .line 260
@@ -870,11 +866,11 @@
 
     .line 261
     :pswitch_5
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 262
     .line 263
-    iget v9, v9, Lym0;->v:I
+    iget v9, v9, Leu0;->v:I
 
     .line 264
     .line 265
@@ -882,11 +878,11 @@
 
     .line 266
     :pswitch_6
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 267
     .line 268
-    iget v9, v9, Lym0;->u:I
+    iget v9, v9, Leu0;->u:I
 
     .line 269
     .line 270
@@ -894,11 +890,11 @@
 
     .line 271
     :pswitch_7
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 272
     .line 273
-    iget v9, v9, Lym0;->t:I
+    iget v9, v9, Leu0;->t:I
 
     .line 274
     .line 275
@@ -906,11 +902,11 @@
 
     .line 276
     :pswitch_8
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 277
     .line 278
-    iget v9, v9, Lym0;->s:I
+    iget v9, v9, Leu0;->s:I
 
     .line 279
     .line 280
@@ -918,11 +914,11 @@
 
     .line 281
     :pswitch_9
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 282
     .line 283
-    iget v9, v9, Lym0;->r:I
+    iget v9, v9, Leu0;->r:I
 
     .line 284
     .line 285
@@ -930,11 +926,11 @@
 
     .line 286
     :pswitch_a
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 287
     .line 288
-    iget v9, v9, Lym0;->q:I
+    iget v9, v9, Leu0;->q:I
 
     .line 289
     .line 290
@@ -942,11 +938,11 @@
 
     .line 291
     :pswitch_b
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 292
     .line 293
-    iget v9, v9, Lym0;->p:I
+    iget v9, v9, Leu0;->p:I
 
     .line 294
     .line 295
@@ -954,11 +950,11 @@
 
     .line 296
     :pswitch_c
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 297
     .line 298
-    iget v9, v9, Lym0;->o:I
+    iget v9, v9, Leu0;->o:I
 
     .line 299
     .line 300
@@ -966,11 +962,11 @@
 
     .line 301
     :pswitch_d
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 302
     .line 303
-    iget v9, v9, Lym0;->n:I
+    iget v9, v9, Leu0;->n:I
 
     .line 304
     .line 305
@@ -978,26 +974,26 @@
 
     .line 306
     :pswitch_e
-    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object v9, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 307
     .line 308
-    iget v9, v9, Lym0;->m:I
+    iget v9, v9, Leu0;->m:I
 
     .line 309
     .line 310
     :goto_a
-    invoke-direct {v8, v9}, Lcm6;-><init>(I)V
+    invoke-direct {v8, v9}, Loa7;-><init>(I)V
 
     .line 311
     .line 312
     .line 313
-    invoke-direct {v7, v8}, Ldv6;-><init>(Lcm6;)V
+    invoke-direct {v7, v8}, Lpm7;-><init>(Loa7;)V
 
     .line 314
     .line 315
     .line 316
-    iget v8, v5, Lcv6;->b:I
+    iget v8, v5, Lom7;->b:I
 
     .line 317
     .line 318
@@ -1009,7 +1005,7 @@
 
     .line 321
     :cond_e
-    iget v5, v5, Lcv6;->c:I
+    iget v5, v5, Lom7;->c:I
 
     .line 322
     .line 323
@@ -1035,7 +1031,7 @@
     .line 332
     .line 333
     :cond_10
-    iput-boolean v3, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->r0:Z
+    iput-boolean v3, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->A0:Z
 
     .line 334
     .line 335
@@ -1068,7 +1064,7 @@
     move-result v4
 
     .line 350
-    const-class v5, Lgw1;
+    const-class v5, Lf62;
 
     .line 351
     .line 352
@@ -1080,14 +1076,14 @@
     move-result-object v2
 
     .line 356
-    check-cast v2, [Lgw1;
+    check-cast v2, [Lf62;
 
     .line 357
     .line 358
     array-length v4, v2
 
     .line 359
-    const/4 v5, 0x0
+    move v5, v3
 
     .line 360
     :goto_b
@@ -1123,7 +1119,7 @@
 
     .line 375
     :cond_11
-    iget-object v2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->o0:Lcm6;
+    iget-object v2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->x0:Loa7;
 
     .line 376
     .line 377
@@ -1131,7 +1127,7 @@
 
     .line 378
     .line 379
-    iget-object v2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->n0:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->w0:Ljava/util/ArrayList;
 
     .line 380
     .line 381
@@ -1159,20 +1155,20 @@
 
     .line 392
     :cond_12
-    invoke-static {v2}, Lxy4;->t(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
+    invoke-static {v2}, Lw31;->j(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
 
     .line 393
     .line 394
     .line 395
-    move-result-object v0
+    move-result-object p0
 
     .line 396
-    throw v0
+    throw p0
 
     .line 397
     :cond_13
     :goto_c
-    iget-boolean v2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->k0:Z
+    iget-boolean v2, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->t0:Z
 
     .line 398
     .line 399
@@ -1209,7 +1205,7 @@
     move-result v4
 
     .line 416
-    const-class v5, Luv6;
+    const-class v5, Lkn7;
 
     .line 417
     .line 418
@@ -1221,7 +1217,7 @@
     move-result-object v2
 
     .line 422
-    check-cast v2, [Luv6;
+    check-cast v2, [Lkn7;
 
     .line 423
     .line 424
@@ -1362,15 +1358,15 @@
     move-result-object v4
 
     .line 489
-    new-instance v5, Luv6;
+    new-instance v5, Lkn7;
 
     .line 490
     .line 491
-    iget v6, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->l0:I
+    iget v6, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->u0:I
 
     .line 492
     .line 493
-    invoke-direct {v5, v6}, Luv6;-><init>(I)V
+    invoke-direct {v5, v6}, Lkn7;-><init>(I)V
 
     .line 494
     .line 495
@@ -1420,48 +1416,48 @@
     .end packed-switch
 .end method
 
-.method public final getColorScheme()Lym0;
-    .locals 1
+.method public final getColorScheme()Leu0;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iget-object p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final getLanguage()Lce3;
-    .locals 1
+.method public final getLanguage()Lpu3;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->i0:Lce3;
+    iget-object p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->r0:Lpu3;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getTabWidth()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->l0:I
+    iget p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->u0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getUseSpacesInsteadOfTabs()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->k0:Z
+    iget-boolean p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->t0:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public onScrollChanged(IIII)V
@@ -1498,8 +1494,8 @@
     return-void
 .end method
 
-.method public final setColorScheme(Lym0;)V
-    .locals 3
+.method public final setColorScheme(Leu0;)V
+    .locals 2
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1507,144 +1503,141 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
 
     .line 5
     .line 6
-    move-object p1, p0
+    check-cast p0, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;
 
     .line 7
-    check-cast p1, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;
-
     .line 8
+    new-instance p1, Loa7;
+
     .line 9
-    new-instance v0, Lcm6;
-
     .line 10
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
+
     .line 11
-    iget-object v1, p1, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
-
     .line 12
+    iget v1, v0, Leu0;->k:I
+
     .line 13
-    iget v2, v1, Lym0;->k:I
-
     .line 14
-    .line 15
-    invoke-direct {v0, v2}, Lcm6;-><init>(I)V
+    invoke-direct {p1, v1}, Loa7;-><init>(I)V
 
+    .line 15
     .line 16
     .line 17
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->x0:Loa7;
+
     .line 18
-    iput-object v0, p1, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->o0:Lcm6;
-
     .line 19
+    iget p1, v0, Leu0;->a:I
+
     .line 20
-    iget v0, v1, Lym0;->a:I
-
     .line 21
-    .line 22
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setTextColor(I)V
 
+    .line 22
     .line 23
     .line 24
+    iget-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
+
     .line 25
-    iget-object v0, p1, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
-
     .line 26
+    iget p1, p1, Leu0;->b:I
+
     .line 27
-    iget v0, v0, Lym0;->b:I
-
     .line 28
-    .line 29
-    invoke-static {p1, v0}, Lla;->F(Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;I)V
+    invoke-static {p0, p1}, Lsa;->F(Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;I)V
 
+    .line 29
     .line 30
     .line 31
+    iget-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
+
     .line 32
-    iget-object v0, p1, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
-
     .line 33
+    iget p1, p1, Leu0;->c:I
+
     .line 34
-    iget v0, v0, Lym0;->c:I
-
     .line 35
-    .line 36
-    invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundColor(I)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setBackgroundColor(I)V
 
+    .line 36
     .line 37
     .line 38
+    iget-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Leu0;
+
     .line 39
-    iget-object v0, p1, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->j0:Lym0;
-
     .line 40
+    iget p1, p1, Leu0;->i:I
+
     .line 41
-    iget v0, v0, Lym0;->i:I
-
     .line 42
-    .line 43
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setHighlightColor(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setHighlightColor(I)V
 
+    .line 43
     .line 44
     .line 45
+    iget-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->D0:Ljava/util/HashSet;
+
     .line 46
-    iget-object v0, p1, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->u0:Ljava/util/HashSet;
-
     .line 47
-    .line 48
-    invoke-virtual {v0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p1}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
+    .line 48
     .line 49
     .line 50
+    move-result-object p1
+
     .line 51
-    move-result-object v0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 52
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
     .line 53
     .line 54
+    move-result v0
+
     .line 55
-    move-result v1
+    if-nez v0, :cond_0
 
     .line 56
-    if-nez v1, :cond_0
-
     .line 57
-    .line 58
     return-void
+
+    .line 58
+    :cond_0
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 59
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 60
     .line 61
+    move-result-object p1
+
     .line 62
-    move-result-object v0
+    if-eqz p1, :cond_1
 
     .line 63
-    if-eqz v0, :cond_1
-
     .line 64
-    .line 65
-    invoke-static {}, Lio/sentry/x1;->l()V
+    invoke-static {}, Lio/sentry/z1;->l()V
 
+    .line 65
     .line 66
     .line 67
-    .line 68
     return-void
 
-    .line 69
+    .line 68
     :cond_1
-    invoke-virtual {p1}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->getColorScheme()Lym0;
+    invoke-virtual {p0}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->getColorScheme()Leu0;
 
+    .line 69
     .line 70
     .line 71
-    .line 72
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    .line 73
-    throw p1
+    .line 72
+    throw p0
 .end method
 
 .method public final setErrorLine(I)V
@@ -1655,7 +1648,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0}, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->getStructure()Lj27;
+    invoke-virtual {p0}, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->getStructure()Lou7;
 
     .line 4
     .line 5
@@ -1667,7 +1660,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0, v1}, Lj27;->a(I)I
+    invoke-virtual {v0, v1}, Lou7;->a(I)I
 
     .line 10
     .line 11
@@ -1675,7 +1668,7 @@
     move-result v0
 
     .line 13
-    invoke-virtual {p0}, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->getStructure()Lj27;
+    invoke-virtual {p0}, Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;->getStructure()Lou7;
 
     .line 14
     .line 15
@@ -1683,7 +1676,7 @@
     move-result-object v2
 
     .line 17
-    iget-object v3, v2, Lj27;->b:Ljava/util/ArrayList;
+    iget-object v3, v2, Lou7;->b:Ljava/util/ArrayList;
 
     .line 18
     .line 19
@@ -1705,7 +1698,7 @@
 
     .line 26
     .line 27
-    iget-object p1, v2, Lj27;->a:Landroid/text/SpannableStringBuilder;
+    iget-object p1, v2, Lou7;->a:Landroid/text/SpannableStringBuilder;
 
     .line 28
     .line 29
@@ -1721,7 +1714,7 @@
 
     .line 34
     :cond_0
-    invoke-virtual {v2, p1}, Lj27;->a(I)I
+    invoke-virtual {v2, p1}, Lou7;->a(I)I
 
     .line 35
     .line 36
@@ -1784,7 +1777,7 @@
 
     .line 63
     .line 64
-    iput-boolean v4, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->s0:Z
+    iput-boolean v4, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->B0:Z
 
     .line 65
     .line 66
@@ -1793,23 +1786,23 @@
     .line 67
     .line 68
     .line 69
-    move-result-object v1
+    move-result-object p0
 
     .line 70
-    new-instance v2, Ltq1;
+    new-instance v1, Lqz1;
 
     .line 71
     .line 72
-    invoke-direct {v2}, Ltq1;-><init>()V
+    invoke-direct {v1}, Lqz1;-><init>()V
 
     .line 73
     .line 74
     .line 75
-    const/16 v3, 0x21
+    const/16 v2, 0x21
 
     .line 76
     .line 77
-    invoke-interface {v1, v2, v0, p1, v3}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
+    invoke-interface {p0, v1, v0, p1, v2}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
     .line 78
     .line 79
@@ -1818,91 +1811,88 @@
     return-void
 .end method
 
-.method public final setLanguage(Lce3;)V
-    .locals 2
+.method public final setLanguage(Lpu3;)V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->i0:Lce3;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->r0:Lpu3;
 
     .line 2
     .line 3
-    move-object p1, p0
+    check-cast p0, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;
 
     .line 4
-    check-cast p1, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;
-
     .line 5
-    .line 6
-    invoke-virtual {p1}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->b()V
+    invoke-virtual {p0}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->b()V
 
+    .line 6
     .line 7
     .line 8
+    iget-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->D0:Ljava/util/HashSet;
+
     .line 9
-    iget-object v0, p1, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->u0:Ljava/util/HashSet;
-
     .line 10
-    .line 11
-    invoke-virtual {v0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p1}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
+    .line 11
     .line 12
     .line 13
+    move-result-object p1
+
     .line 14
-    move-result-object v0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 15
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
     .line 16
     .line 17
+    move-result v0
+
     .line 18
-    move-result v1
+    if-nez v0, :cond_0
 
     .line 19
-    if-nez v1, :cond_0
-
     .line 20
-    .line 21
     return-void
+
+    .line 21
+    :cond_0
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 22
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 23
     .line 24
+    move-result-object p1
+
     .line 25
-    move-result-object v0
+    if-eqz p1, :cond_1
 
     .line 26
-    if-eqz v0, :cond_1
-
     .line 27
-    .line 28
-    invoke-static {}, Lio/sentry/x1;->l()V
+    invoke-static {}, Lio/sentry/z1;->l()V
 
+    .line 28
     .line 29
     .line 30
-    .line 31
     return-void
 
-    .line 32
+    .line 31
     :cond_1
-    invoke-virtual {p1}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->getLanguage()Lce3;
+    invoke-virtual {p0}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->getLanguage()Lpu3;
 
+    .line 32
     .line 33
     .line 34
-    .line 35
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    .line 36
-    throw p1
+    .line 35
+    throw p0
 .end method
 
 .method public final setTabWidth(I)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->l0:I
+    iput p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->u0:I
 
     .line 2
     .line 3
@@ -1918,7 +1908,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->m0:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->v0:Ljava/util/ArrayList;
 
     .line 5
     .line 6
@@ -1927,7 +1917,7 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->n0:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->w0:Ljava/util/ArrayList;
 
     .line 10
     .line 11
@@ -1953,7 +1943,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->k0:Z
+    iput-boolean p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->t0:Z
 
     .line 2
     .line 3

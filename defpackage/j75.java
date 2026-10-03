@@ -1,9 +1,26 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class j75 {
-    public static final i75 b = new i75(true, null, null);
-    public static final j75 c = new j75();
-    public final r94 a = new r94(b);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class j75 extends cn4 implements l18, xo6 {
+    public ym n0;
+    public boolean o0;
+
+    @Override // defpackage.xo6
+    public final boolean F0() {
+        return true;
+    }
+
+    @Override // defpackage.xo6
+    public final void g(gp6 gp6Var) {
+        if (this.o0) {
+            return;
+        }
+        this.n0.invoke(gp6Var);
+    }
+
+    @Override // defpackage.l18
+    public final Object o() {
+        return an3.n0;
+    }
 }

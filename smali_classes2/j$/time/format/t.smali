@@ -1,6 +1,6 @@
 .class public final Lj$/time/format/t;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -25,7 +25,7 @@
 
     .line 7
     .line 8
-    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 9
     .line 10
@@ -40,7 +40,7 @@
 
     .line 14
     .line 15
-    invoke-direct {v0, v3, v1, v2}, Lj$/util/concurrent/ConcurrentHashMap;-><init>(IFI)V
+    invoke-direct {v0, v3, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(IFI)V
 
     .line 16
     .line 17
@@ -65,11 +65,11 @@
 
     .line 5
     :cond_0
-    instance-of p1, p1, Lj$/time/format/t;
+    instance-of p0, p1, Lj$/time/format/t;
 
     .line 6
     .line 7
-    if-eqz p1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 8
     .line 9
@@ -77,30 +77,30 @@
 
     .line 10
     :cond_1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 11
-    return p1
+    return p0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/16 v0, 0xb6
+    const/16 p0, 0xb6
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "DecimalStyle[0+-.]"
+    const-string p0, "DecimalStyle[0+-.]"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

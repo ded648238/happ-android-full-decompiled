@@ -1,94 +1,71 @@
 .class public final Lfn1;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Len1;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:I
+.field public c0:J
 
-.field public R:I
+.field public synthetic d0:Ljava/lang/Object;
 
-.field public S:I
+.field public final synthetic e0:Lu61;
+
+.field public f0:I
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 1
+.method public constructor <init>(Lu61;Ld31;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lfn1;->e0:Lu61;
 
     .line 2
     .line 3
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
+
     .line 4
-    const/4 v0, -0x1
-
     .line 5
-    iput v0, p0, Lfn1;->R:I
-
     .line 6
-    .line 7
-    iput v0, p0, Lfn1;->S:I
-
-    .line 8
-    .line 9
-    iput p1, p0, Lfn1;->Q:I
-
-    .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final getResult()Ljava/lang/Object;
-    .locals 0
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    return-object p0
-.end method
-
-.method public final m(Ljava/lang/CharSequence;IILsd7;)Z
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
+    iput-object p1, p0, Lfn1;->d0:Ljava/lang/Object;
 
     .line 2
-    iget p4, p0, Lfn1;->Q:I
-
     .line 3
+    iget p1, p0, Lfn1;->f0:I
+
     .line 4
-    if-gt p2, p4, :cond_0
-
     .line 5
-    .line 6
-    if-ge p4, p3, :cond_0
+    const/high16 v0, -0x80000000
 
+    .line 6
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    iput p2, p0, Lfn1;->R:I
+    iput p1, p0, Lfn1;->f0:I
 
     .line 9
     .line 10
-    iput p3, p0, Lfn1;->S:I
+    iget-object p1, p0, Lfn1;->e0:Lu61;
 
     .line 11
     .line 12
-    return p1
+    invoke-virtual {p1, p0}, Lu61;->l(Ld31;)Ljava/io/Serializable;
 
     .line 13
-    :cond_0
-    if-gt p3, p4, :cond_1
-
     .line 14
     .line 15
-    const/4 p1, 0x1
+    move-result-object p0
 
     .line 16
-    :cond_1
-    return p1
+    return-object p0
 .end method

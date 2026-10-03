@@ -1,6 +1,6 @@
 .class public final Llibxray/ConsoleLogWriter;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lgo/Seq$Proxy;
@@ -85,18 +85,18 @@
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
-    .locals 1
+    .locals 0
 
     .line 1
     if-eqz p1, :cond_1
 
     .line 2
     .line 3
-    instance-of v0, p1, Llibxray/ConsoleLogWriter;
+    instance-of p0, p1, Llibxray/ConsoleLogWriter;
 
     .line 4
     .line 5
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 6
     .line 7
@@ -108,40 +108,40 @@
 
     .line 9
     .line 10
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 11
-    return p1
+    return p0
 
     .line 12
     :cond_1
     :goto_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 13
-    return p1
+    return p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    new-array v0, v0, [Ljava/lang/Object;
+    new-array p0, p0, [Ljava/lang/Object;
 
     .line 3
     .line 4
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     .line 5
     .line 6
     .line 7
-    move-result v0
+    move-result p0
 
     .line 8
-    return v0
+    return p0
 .end method
 
 .method public final incRefnum()I
@@ -157,22 +157,22 @@
     .line 4
     .line 5
     .line 6
-    iget v0, p0, Llibxray/ConsoleLogWriter;->refnum:I
+    iget p0, p0, Llibxray/ConsoleLogWriter;->refnum:I
 
     .line 7
     .line 8
-    return v0
+    return p0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "ConsoleLogWriter{}"
+    const-string p0, "ConsoleLogWriter{}"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public native write(Ljava/lang/String;)V

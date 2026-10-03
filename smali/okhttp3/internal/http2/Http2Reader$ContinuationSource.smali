@@ -1,9 +1,9 @@
 .class public final Lokhttp3/internal/http2/Http2Reader$ContinuationSource;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lle6;
+.implements Ld27;
 
 
 # annotations
@@ -22,25 +22,25 @@
     }
     d2 = {
         "Lokhttp3/internal/http2/Http2Reader$ContinuationSource;",
-        "Lle6;",
-        "Ls50;",
+        "Ld27;",
+        "Lf80;",
         "source",
         "<init>",
-        "(Ls50;)V",
-        "Lbh7;",
+        "(Lf80;)V",
+        "Lr98;",
         "readContinuationHeader",
         "()V",
-        "Lf50;",
+        "Ll70;",
         "sink",
         "",
         "byteCount",
         "read",
-        "(Lf50;J)J",
-        "Lo47;",
+        "(Ll70;J)J",
+        "Lax7;",
         "timeout",
-        "()Lo47;",
+        "()Lax7;",
         "close",
-        "Ls50;",
+        "Lf80;",
         "",
         "length",
         "I",
@@ -81,13 +81,13 @@
 
 .field private padding:I
 
-.field private final source:Ls50;
+.field private final source:Lf80;
 
 .field private streamId:I
 
 
 # direct methods
-.method public constructor <init>(Ls50;)V
+.method public constructor <init>(Lf80;)V
     .locals 0
 
     .line 1
@@ -101,7 +101,7 @@
     .line 5
     .line 6
     .line 7
-    iput-object p1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Ls50;
+    iput-object p1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Lf80;
 
     .line 8
     .line 9
@@ -121,11 +121,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Lf80;
 
     .line 4
     .line 5
-    invoke-static {v1}, Lokhttp3/internal/Util;->readMedium(Ls50;)I
+    invoke-static {v1}, Lokhttp3/internal/Util;->readMedium(Lf80;)I
 
     .line 6
     .line 7
@@ -141,11 +141,11 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Lf80;
 
     .line 14
     .line 15
-    invoke-interface {v1}, Ls50;->readByte()B
+    invoke-interface {v1}, Lf80;->readByte()B
 
     .line 16
     .line 17
@@ -165,11 +165,11 @@
     move-result v7
 
     .line 25
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Lf80;
 
     .line 26
     .line 27
-    invoke-interface {v1}, Ls50;->readByte()B
+    invoke-interface {v1}, Lf80;->readByte()B
 
     .line 28
     .line 29
@@ -258,11 +258,11 @@
     .line 70
     .line 71
     :cond_0
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Lf80;
 
     .line 72
     .line 73
-    invoke-interface {v1}, Ls50;->readInt()I
+    invoke-interface {v1}, Lf80;->readInt()I
 
     .line 74
     .line 75
@@ -282,11 +282,11 @@
 
     .line 82
     .line 83
-    const/16 v2, 0x9
+    const/16 p0, 0x9
 
     .line 84
     .line 85
-    if-ne v7, v2, :cond_2
+    if-ne v7, p0, :cond_2
 
     .line 86
     .line 87
@@ -298,11 +298,11 @@
 
     .line 90
     :cond_1
-    const-string v0, "TYPE_CONTINUATION streamId changed"
+    const-string p0, "TYPE_CONTINUATION streamId changed"
 
     .line 91
     .line 92
-    invoke-static {v0}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 93
     .line 94
@@ -311,47 +311,47 @@
 
     .line 96
     :cond_2
-    new-instance v0, Ljava/io/IOException;
+    new-instance p0, Ljava/io/IOException;
 
     .line 97
     .line 98
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 99
     .line 100
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 101
     .line 102
     .line 103
-    invoke-virtual {v1, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 104
     .line 105
     .line 106
-    const-string v2, " != TYPE_CONTINUATION"
+    const-string v1, " != TYPE_CONTINUATION"
 
     .line 107
     .line 108
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 109
     .line 110
     .line 111
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 112
     .line 113
     .line 114
-    move-result-object v1
+    move-result-object v0
 
     .line 115
-    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 116
     .line 117
     .line 118
-    throw v0
+    throw p0
 .end method
 
 
@@ -369,61 +369,61 @@
 .end method
 
 .method public final getFlags()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->flags:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->flags:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getLeft()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->left:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->left:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getLength()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->length:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->length:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getPadding()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->padding:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->padding:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getStreamId()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->streamId:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->streamId:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public read(Lf50;J)J
+.method public read(Ll70;J)J
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -442,7 +442,7 @@
 
     .line 5
     .line 6
-    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Lf80;
 
     .line 7
     .line 8
@@ -461,7 +461,7 @@
     int-to-long v4, v0
 
     .line 15
-    invoke-interface {v1, v4, v5}, Ls50;->skip(J)V
+    invoke-interface {v1, v4, v5}, Lf80;->skip(J)V
 
     .line 16
     .line 17
@@ -509,7 +509,7 @@
     move-result-wide p2
 
     .line 37
-    invoke-interface {v1, p1, p2, p3}, Lle6;->read(Lf50;J)J
+    invoke-interface {v1, p1, p2, p3}, Ld27;->read(Ll70;J)J
 
     .line 38
     .line 39
@@ -601,21 +601,21 @@
     return-void
 .end method
 
-.method public timeout()Lo47;
-    .locals 1
+.method public timeout()Lax7;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Reader$ContinuationSource;->source:Lf80;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lle6;->timeout()Lo47;
+    invoke-interface {p0}, Ld27;->timeout()Lax7;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method

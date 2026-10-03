@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSslMlKemKeyFactory$MlKem;
 .super Lorg/conscrypt/OpenSslMlKemKeyFactory;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -37,38 +37,38 @@
 
 # virtual methods
 .method public supportsAlgorithm(Lorg/conscrypt/MlKemAlgorithm;)Z
-    .locals 1
+    .locals 0
 
     .line 1
-    sget-object v0, Lorg/conscrypt/MlKemAlgorithm;->ML_KEM_768:Lorg/conscrypt/MlKemAlgorithm;
+    sget-object p0, Lorg/conscrypt/MlKemAlgorithm;->ML_KEM_768:Lorg/conscrypt/MlKemAlgorithm;
 
     .line 2
     .line 3
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 8
     .line 9
-    sget-object v0, Lorg/conscrypt/MlKemAlgorithm;->ML_KEM_1024:Lorg/conscrypt/MlKemAlgorithm;
+    sget-object p0, Lorg/conscrypt/MlKemAlgorithm;->ML_KEM_1024:Lorg/conscrypt/MlKemAlgorithm;
 
     .line 10
     .line 11
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result p0
 
     .line 15
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 16
     .line 17
@@ -76,16 +76,16 @@
 
     .line 18
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    return p1
+    return p0
 
     .line 20
     :cond_1
     :goto_0
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 21
-    return p1
+    return p0
 .end method

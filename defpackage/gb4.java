@@ -1,17 +1,21 @@
 package defpackage;
 
-import android.view.View;
+/* loaded from: classes3.dex */
+public final class gb4 extends d31 {
+    public /* synthetic */ Object c0;
+    public int d0;
+    public final /* synthetic */ k e0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface gb4 {
-    void b(View view, int i, int i2, int i3, int i4, int i5);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public gb4(k kVar, b31 b31Var) {
+        super(b31Var);
+        this.e0 = kVar;
+    }
 
-    boolean c(View view, View view2, int i, int i2);
-
-    void d(View view, View view2, int i, int i2);
-
-    void e(View view, int i);
-
-    void f(View view, int i, int i2, int[] iArr, int i3);
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.d0 |= Integer.MIN_VALUE;
+        return this.e0.k(null, this);
+    }
 }

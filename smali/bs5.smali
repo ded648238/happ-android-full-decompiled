@@ -1,71 +1,108 @@
-.class public final Lbs5;
-.super Law0;
+.class public abstract Lbs5;
+.super Ljava/lang/Object;
 
 
-# instance fields
-.field public synthetic T:Ljava/lang/Object;
+# static fields
+.field public static lb_action_text_color:I = 0x7f060079
 
-.field public U:I
+.field public static lb_background_protection:I = 0x7f06007a
 
-.field public final synthetic V:Lq02;
+.field public static lb_basic_card_bg_color:I = 0x7f06007b
 
+.field public static lb_basic_card_content_text_color:I = 0x7f06007c
 
-# direct methods
-.method public constructor <init>(Lq02;Lyv0;)V
-    .locals 0
+.field public static lb_basic_card_info_bg_color:I = 0x7f06007d
 
-    .line 1
-    iput-object p1, p0, Lbs5;->V:Lq02;
+.field public static lb_basic_card_title_text_color:I = 0x7f06007e
 
-    .line 2
-    .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
+.field public static lb_browse_header_color:I = 0x7f06007f
 
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
+.field public static lb_browse_header_description_color:I = 0x7f060080
 
+.field public static lb_browse_title_color:I = 0x7f060081
 
-# virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.field public static lb_control_button_color:I = 0x7f060082
 
-    .line 1
-    iput-object p1, p0, Lbs5;->T:Ljava/lang/Object;
+.field public static lb_control_button_text:I = 0x7f060083
 
-    .line 2
-    .line 3
-    iget p1, p0, Lbs5;->U:I
+.field public static lb_default_brand_color:I = 0x7f060084
 
-    .line 4
-    .line 5
-    const/high16 v0, -0x80000000
+.field public static lb_default_brand_color_dark:I = 0x7f060085
 
-    .line 6
-    .line 7
-    or-int/2addr p1, v0
+.field public static lb_default_search_color:I = 0x7f060086
 
-    .line 8
-    iput p1, p0, Lbs5;->U:I
+.field public static lb_default_search_icon_color:I = 0x7f060087
 
-    .line 9
-    .line 10
-    iget-object p1, p0, Lbs5;->V:Lq02;
+.field public static lb_details_description_body_color:I = 0x7f060088
 
-    .line 11
-    .line 12
-    const/4 v0, 0x0
+.field public static lb_details_description_color:I = 0x7f060089
 
-    .line 13
-    invoke-virtual {p1, v0, p0}, Lq02;->a(Li02;Lyv0;)Ljava/lang/Object;
+.field public static lb_details_overview_bg_color:I = 0x7f06008a
 
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
+.field public static lb_error_background_color_opaque:I = 0x7f06008b
 
-    .line 17
-    return-object p1
-.end method
+.field public static lb_error_background_color_translucent:I = 0x7f06008c
+
+.field public static lb_error_message:I = 0x7f06008d
+
+.field public static lb_grey:I = 0x7f06008e
+
+.field public static lb_guidedactions_background:I = 0x7f06008f
+
+.field public static lb_guidedactions_background_dark:I = 0x7f060090
+
+.field public static lb_guidedactions_item_unselected_text_color:I = 0x7f060091
+
+.field public static lb_list_item_unselected_text_color:I = 0x7f060092
+
+.field public static lb_media_background_color:I = 0x7f060093
+
+.field public static lb_page_indicator_arrow_background:I = 0x7f060094
+
+.field public static lb_page_indicator_arrow_shadow:I = 0x7f060095
+
+.field public static lb_page_indicator_dot:I = 0x7f060096
+
+.field public static lb_playback_background_progress_color:I = 0x7f060097
+
+.field public static lb_playback_controls_background_dark:I = 0x7f060098
+
+.field public static lb_playback_controls_background_light:I = 0x7f060099
+
+.field public static lb_playback_controls_time_text_color:I = 0x7f06009a
+
+.field public static lb_playback_icon_highlight_no_theme:I = 0x7f06009b
+
+.field public static lb_playback_media_row_highlight_color:I = 0x7f06009c
+
+.field public static lb_playback_media_row_separator_highlight_color:I = 0x7f06009d
+
+.field public static lb_playback_now_playing_bar_color:I = 0x7f06009e
+
+.field public static lb_playback_progress_color_no_theme:I = 0x7f06009f
+
+.field public static lb_playback_progress_secondary_color_no_theme:I = 0x7f0600a0
+
+.field public static lb_playback_secondary_progress_color:I = 0x7f0600a1
+
+.field public static lb_search_bar_hint:I = 0x7f0600a2
+
+.field public static lb_search_bar_hint_speech_mode:I = 0x7f0600a3
+
+.field public static lb_search_bar_text:I = 0x7f0600a4
+
+.field public static lb_search_bar_text_speech_mode:I = 0x7f0600a5
+
+.field public static lb_search_plate_hint_text_color:I = 0x7f0600a6
+
+.field public static lb_speech_orb_not_recording:I = 0x7f0600a7
+
+.field public static lb_speech_orb_not_recording_icon:I = 0x7f0600a8
+
+.field public static lb_speech_orb_not_recording_pulsed:I = 0x7f0600a9
+
+.field public static lb_speech_orb_recording:I = 0x7f0600aa
+
+.field public static lb_tv_white:I = 0x7f0600ab
+
+.field public static lb_view_dim_mask_color:I = 0x7f0600ac

@@ -1,19 +1,19 @@
 .class Lcom/google/gson/internal/bind/TypeAdapters$29;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lwa7;
+.implements Lj38;
 
 
 # instance fields
-.field public final synthetic Q:Ldd7;
+.field public final synthetic X:Lm58;
 
-.field public final synthetic R:Lcom/google/gson/b;
+.field public final synthetic Y:Lcom/google/gson/b;
 
 
 # direct methods
-.method public constructor <init>(Ldd7;Lcom/google/gson/b;)V
+.method public constructor <init>(Lm58;Lcom/google/gson/b;)V
     .locals 0
 
     .line 1
@@ -22,11 +22,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$29;->Q:Ldd7;
+    iput-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$29;->X:Lm58;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$29;->R:Lcom/google/gson/b;
+    iput-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$29;->Y:Lcom/google/gson/b;
 
     .line 7
     .line 8
@@ -35,15 +35,15 @@
 
 
 # virtual methods
-.method public final a(Lcom/google/gson/a;Ldd7;)Lcom/google/gson/b;
+.method public final a(Lcom/google/gson/a;Lm58;)Lcom/google/gson/b;
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$29;->Q:Ldd7;
+    iget-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$29;->X:Lm58;
 
     .line 2
     .line 3
-    invoke-virtual {p2, p1}, Ldd7;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p1}, Lm58;->equals(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -55,16 +55,16 @@
 
     .line 8
     .line 9
-    iget-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$29;->R:Lcom/google/gson/b;
+    iget-object p0, p0, Lcom/google/gson/internal/bind/TypeAdapters$29;->Y:Lcom/google/gson/b;
 
     .line 10
     .line 11
-    return-object p1
+    return-object p0
 
     .line 12
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 13
-    return-object p1
+    return-object p0
 .end method

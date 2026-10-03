@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/ct/CertificateEntry;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -48,11 +48,11 @@
 
     .line 12
     :cond_0
-    const-string p1, "issuerKeyHash missing for precert entry."
+    const-string p0, "issuerKeyHash missing for precert entry."
 
     .line 13
     .line 14
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -78,11 +78,11 @@
 
     .line 25
     :cond_2
-    const-string p1, "unexpected issuerKeyHash for X509 entry."
+    const-string p0, "unexpected issuerKeyHash for X509 entry."
 
     .line 26
     .line 27
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 28
     .line 29
@@ -111,11 +111,11 @@
 
     .line 39
     :cond_4
-    const-string p1, "issuerKeyHash must be 32 bytes long"
+    const-string p0, "issuerKeyHash must be 32 bytes long"
 
     .line 40
     .line 41
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -257,7 +257,7 @@
     move-exception p0
 
     .line 52
-    invoke-static {p0}, Li62;->o(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->n(Ljava/lang/Throwable;)V
 
     .line 53
     .line 54
@@ -380,14 +380,14 @@
     .line 22
     .line 23
     :cond_0
-    iget-object v0, p0, Lorg/conscrypt/ct/CertificateEntry;->certificate:[B
+    iget-object p0, p0, Lorg/conscrypt/ct/CertificateEntry;->certificate:[B
 
     .line 24
     .line 25
-    const/4 v1, 0x3
+    const/4 v0, 0x3
 
     .line 26
-    invoke-static {p1, v0, v1}, Lorg/conscrypt/ct/Serialization;->writeVariableBytes(Ljava/io/OutputStream;[BI)V
+    invoke-static {p1, p0, v0}, Lorg/conscrypt/ct/Serialization;->writeVariableBytes(Ljava/io/OutputStream;[BI)V
 
     .line 27
     .line 28
@@ -395,35 +395,82 @@
     return-void
 .end method
 
-.method public getCertificate()[B
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/CertificateEntry;->certificate:[B
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public getEntryType()Lorg/conscrypt/ct/CertificateEntry$LogEntryType;
-    .locals 1
+.method public encodedLength()I
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/ct/CertificateEntry;->entryType:Lorg/conscrypt/ct/CertificateEntry$LogEntryType;
 
     .line 2
     .line 3
-    return-object v0
+    sget-object v1, Lorg/conscrypt/ct/CertificateEntry$LogEntryType;->PRECERT_ENTRY:Lorg/conscrypt/ct/CertificateEntry$LogEntryType;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x2
+
+    .line 6
+    if-ne v0, v1, :cond_0
+
+    .line 7
+    .line 8
+    iget-object v0, p0, Lorg/conscrypt/ct/CertificateEntry;->issuerKeyHash:[B
+
+    .line 9
+    .line 10
+    array-length v0, v0
+
+    .line 11
+    add-int/2addr v2, v0
+
+    .line 12
+    :cond_0
+    add-int/lit8 v2, v2, 0x3
+
+    .line 13
+    .line 14
+    iget-object p0, p0, Lorg/conscrypt/ct/CertificateEntry;->certificate:[B
+
+    .line 15
+    .line 16
+    array-length p0, p0
+
+    .line 17
+    add-int/2addr v2, p0
+
+    .line 18
+    return v2
 .end method
 
-.method public getIssuerKeyHash()[B
-    .locals 1
+.method public getCertificate()[B
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/CertificateEntry;->issuerKeyHash:[B
+    iget-object p0, p0, Lorg/conscrypt/ct/CertificateEntry;->certificate:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
+.end method
+
+.method public getEntryType()Lorg/conscrypt/ct/CertificateEntry$LogEntryType;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lorg/conscrypt/ct/CertificateEntry;->entryType:Lorg/conscrypt/ct/CertificateEntry$LogEntryType;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public getIssuerKeyHash()[B
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lorg/conscrypt/ct/CertificateEntry;->issuerKeyHash:[B
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

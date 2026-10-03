@@ -1,18 +1,19 @@
 package defpackage;
 
-import java.util.Collection;
-import java.util.List;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class ob7 implements yb7 {
+    public static final ob7 a = new ob7();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface ob7 extends pb7 {
-    mk0 B();
+    public final boolean equals(Object obj) {
+        return this == obj || (obj instanceof ob7);
+    }
 
-    boolean C();
+    public final int hashCode() {
+        return -1757185725;
+    }
 
-    Collection c();
-
-    zb3 f();
-
-    List g();
+    public final String toString() {
+        return "LoadCopyFromAnotherSubs";
+    }
 }

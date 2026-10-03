@@ -1,40 +1,73 @@
 package defpackage;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.util.SparseArray;
+import android.os.Looper;
+import android.os.SystemClock;
+import android.view.View;
+import android.view.ViewTreeObserver;
+import androidx.activity.ComponentActivity;
+import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class iw0 extends a0 {
-    public static final Parcelable.Creator<iw0> CREATOR = new wd6(2);
-    public SparseArray S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class iw0 implements ViewTreeObserver.OnDrawListener, Runnable, Executor {
+    public final long X = SystemClock.uptimeMillis() + 10000;
+    public Runnable Y;
+    public boolean Z;
+    public final /* synthetic */ ComponentActivity c0;
 
-    public iw0(Parcel parcel, ClassLoader classLoader) {
-        super(parcel, classLoader);
-        int i = parcel.readInt();
-        int[] iArr = new int[i];
-        parcel.readIntArray(iArr);
-        Parcelable[] parcelableArray = parcel.readParcelableArray(classLoader);
-        this.S = new SparseArray(i);
-        for (int i2 = 0; i2 < i; i2++) {
-            this.S.append(iArr[i2], parcelableArray[i2]);
+    public iw0(ComponentActivity componentActivity) {
+        this.c0 = componentActivity;
+    }
+
+    public final void a(View view) {
+        if (this.Z) {
+            return;
+        }
+        this.Z = true;
+        view.getViewTreeObserver().addOnDrawListener(this);
+    }
+
+    @Override // java.util.concurrent.Executor
+    public final void execute(Runnable runnable) {
+        runnable.getClass();
+        this.Y = runnable;
+        View decorView = this.c0.getWindow().getDecorView();
+        decorView.getClass();
+        if (!this.Z) {
+            decorView.postOnAnimation(new a1(12, this));
+        } else if (m93.h(Looper.myLooper(), Looper.getMainLooper())) {
+            decorView.invalidate();
+        } else {
+            decorView.postInvalidate();
         }
     }
 
-    @Override // defpackage.a0, android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i) {
-        super.writeToParcel(parcel, i);
-        SparseArray sparseArray = this.S;
-        int size = sparseArray != null ? sparseArray.size() : 0;
-        parcel.writeInt(size);
-        int[] iArr = new int[size];
-        Parcelable[] parcelableArr = new Parcelable[size];
-        for (int i2 = 0; i2 < size; i2++) {
-            iArr[i2] = this.S.keyAt(i2);
-            parcelableArr[i2] = (Parcelable) this.S.valueAt(i2);
+    @Override // android.view.ViewTreeObserver.OnDrawListener
+    public final void onDraw() {
+        boolean z;
+        Runnable runnable = this.Y;
+        if (runnable == null) {
+            if (SystemClock.uptimeMillis() > this.X) {
+                this.Z = false;
+                this.c0.getWindow().getDecorView().post(this);
+                return;
+            }
+            return;
         }
-        parcel.writeIntArray(iArr);
-        parcel.writeParcelableArray(parcelableArr, i);
+        runnable.run();
+        this.Y = null;
+        hi2 hi2Var = (hi2) this.c0.f0.getValue();
+        synchronized (hi2Var.b) {
+            z = hi2Var.c;
+        }
+        if (z) {
+            this.Z = false;
+            this.c0.getWindow().getDecorView().post(this);
+        }
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        this.c0.getWindow().getDecorView().getViewTreeObserver().removeOnDrawListener(this);
     }
 }

@@ -1,9 +1,9 @@
 .class public Lcom/google/android/flexbox/FlexboxLayout;
 .super Landroid/view/ViewGroup;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ldz1;
+.implements Lg92;
 
 
 # annotations
@@ -15,39 +15,39 @@
 
 
 # instance fields
-.field public Q:I
-
-.field public R:I
-
-.field public S:I
-
-.field public T:I
-
-.field public U:I
-
-.field public V:I
-
-.field public W:Landroid/graphics/drawable/Drawable;
-
-.field public a0:Landroid/graphics/drawable/Drawable;
-
-.field public b0:I
-
 .field public c0:I
 
 .field public d0:I
 
 .field public e0:I
 
-.field public f0:[I
+.field public f0:I
 
-.field public g0:Landroid/util/SparseIntArray;
+.field public g0:I
 
-.field public final h0:Ll5;
+.field public h0:I
 
-.field public i0:Ljava/util/List;
+.field public i0:Landroid/graphics/drawable/Drawable;
 
-.field public final j0:Lgz1;
+.field public j0:Landroid/graphics/drawable/Drawable;
+
+.field public k0:I
+
+.field public l0:I
+
+.field public m0:I
+
+.field public n0:I
+
+.field public o0:[I
+
+.field public p0:Landroid/util/SparseIntArray;
+
+.field public final q0:Lv5;
+
+.field public r0:Ljava/util/List;
+
+.field public final s0:Lj92;
 
 
 # direct methods
@@ -74,20 +74,20 @@
     const/4 v0, -0x1
 
     .line 5
-    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->V:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h0:I
 
     .line 6
     .line 7
-    new-instance v1, Ll5;
+    new-instance v1, Lv5;
 
     .line 8
     .line 9
-    invoke-direct {v1, p0}, Ll5;-><init>(Ldz1;)V
+    invoke-direct {v1, p0}, Lv5;-><init>(Lg92;)V
 
     .line 10
     .line 11
     .line 12
-    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->h0:Ll5;
+    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q0:Lv5;
 
     .line 13
     .line 14
@@ -100,11 +100,11 @@
     .line 17
     .line 18
     .line 19
-    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 20
     .line 21
-    new-instance v1, Lgz1;
+    new-instance v1, Lj92;
 
     .line 22
     .line 23
@@ -113,11 +113,11 @@
     .line 24
     .line 25
     .line 26
-    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Lgz1;
+    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->s0:Lj92;
 
     .line 27
     .line 28
-    sget-object v1, Lua5;->FlexboxLayout:[I
+    sget-object v1, Ltu5;->FlexboxLayout:[I
 
     .line 29
     .line 30
@@ -132,7 +132,7 @@
     move-result-object p1
 
     .line 35
-    sget p2, Lua5;->FlexboxLayout_flexDirection:I
+    sget p2, Ltu5;->FlexboxLayout_flexDirection:I
 
     .line 36
     .line 37
@@ -144,11 +144,11 @@
     move-result p2
 
     .line 41
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 42
     .line 43
-    sget p2, Lua5;->FlexboxLayout_flexWrap:I
+    sget p2, Ltu5;->FlexboxLayout_flexWrap:I
 
     .line 44
     .line 45
@@ -160,11 +160,11 @@
     move-result p2
 
     .line 49
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 50
     .line 51
-    sget p2, Lua5;->FlexboxLayout_justifyContent:I
+    sget p2, Ltu5;->FlexboxLayout_justifyContent:I
 
     .line 52
     .line 53
@@ -176,11 +176,11 @@
     move-result p2
 
     .line 57
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->S:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
 
     .line 58
     .line 59
-    sget p2, Lua5;->FlexboxLayout_alignItems:I
+    sget p2, Ltu5;->FlexboxLayout_alignItems:I
 
     .line 60
     .line 61
@@ -192,11 +192,11 @@
     move-result p2
 
     .line 65
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->T:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->f0:I
 
     .line 66
     .line 67
-    sget p2, Lua5;->FlexboxLayout_alignContent:I
+    sget p2, Ltu5;->FlexboxLayout_alignContent:I
 
     .line 68
     .line 69
@@ -208,11 +208,11 @@
     move-result p2
 
     .line 73
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->U:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->g0:I
 
     .line 74
     .line 75
-    sget p2, Lua5;->FlexboxLayout_maxLine:I
+    sget p2, Ltu5;->FlexboxLayout_maxLine:I
 
     .line 76
     .line 77
@@ -224,11 +224,11 @@
     move-result p2
 
     .line 81
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->V:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->h0:I
 
     .line 82
     .line 83
-    sget p2, Lua5;->FlexboxLayout_dividerDrawable:I
+    sget p2, Ltu5;->FlexboxLayout_dividerDrawable:I
 
     .line 84
     .line 85
@@ -255,7 +255,7 @@
     .line 96
     .line 97
     :cond_0
-    sget p2, Lua5;->FlexboxLayout_dividerDrawableHorizontal:I
+    sget p2, Ltu5;->FlexboxLayout_dividerDrawableHorizontal:I
 
     .line 98
     .line 99
@@ -277,7 +277,7 @@
     .line 107
     .line 108
     :cond_1
-    sget p2, Lua5;->FlexboxLayout_dividerDrawableVertical:I
+    sget p2, Ltu5;->FlexboxLayout_dividerDrawableVertical:I
 
     .line 109
     .line 110
@@ -299,7 +299,7 @@
     .line 118
     .line 119
     :cond_2
-    sget p2, Lua5;->FlexboxLayout_showDivider:I
+    sget p2, Ltu5;->FlexboxLayout_showDivider:I
 
     .line 120
     .line 121
@@ -315,16 +315,16 @@
 
     .line 126
     .line 127
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 128
     .line 129
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 130
     .line 131
     :cond_3
-    sget p2, Lua5;->FlexboxLayout_showDividerVertical:I
+    sget p2, Ltu5;->FlexboxLayout_showDividerVertical:I
 
     .line 132
     .line 133
@@ -340,12 +340,12 @@
 
     .line 138
     .line 139
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 140
     .line 141
     :cond_4
-    sget p2, Lua5;->FlexboxLayout_showDividerHorizontal:I
+    sget p2, Ltu5;->FlexboxLayout_showDividerHorizontal:I
 
     .line 142
     .line 143
@@ -361,7 +361,7 @@
 
     .line 148
     .line 149
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 150
     .line 151
@@ -421,7 +421,7 @@
     move-result v2
 
     .line 20
-    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 21
     .line 22
@@ -433,7 +433,7 @@
     move-result v3
 
     .line 26
-    const/4 v4, 0x0
+    move v4, v1
 
     .line 27
     :goto_0
@@ -441,7 +441,7 @@
 
     .line 28
     .line 29
-    iget-object v5, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v5, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 30
     .line 31
@@ -453,15 +453,15 @@
     move-result-object v5
 
     .line 35
-    check-cast v5, Lfz1;
+    check-cast v5, Li92;
 
     .line 36
     .line 37
-    const/4 v6, 0x0
+    move v6, v1
 
     .line 38
     :goto_1
-    iget v7, v5, Lfz1;->h:I
+    iget v7, v5, Li92;->h:I
 
     .line 39
     .line 40
@@ -469,7 +469,7 @@
 
     .line 41
     .line 42
-    iget v7, v5, Lfz1;->o:I
+    iget v7, v5, Li92;->o:I
 
     .line 43
     .line 44
@@ -570,7 +570,7 @@
     sub-int/2addr v7, v10
 
     .line 89
-    iget v10, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v10, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 90
     .line 91
@@ -578,11 +578,11 @@
 
     .line 92
     :goto_2
-    iget v10, v5, Lfz1;->b:I
+    iget v10, v5, Li92;->b:I
 
     .line 93
     .line 94
-    iget v11, v5, Lfz1;->g:I
+    iget v11, v5, Li92;->g:I
 
     .line 95
     .line 96
@@ -592,7 +592,7 @@
     .line 98
     .line 99
     :cond_2
-    iget v7, v5, Lfz1;->h:I
+    iget v7, v5, Li92;->h:I
 
     .line 100
     .line 101
@@ -604,7 +604,7 @@
 
     .line 104
     .line 105
-    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 106
     .line 107
@@ -635,7 +635,7 @@
     sub-int/2addr v7, v8
 
     .line 120
-    iget v8, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v8, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 121
     .line 122
@@ -662,11 +662,11 @@
 
     .line 131
     :goto_3
-    iget v8, v5, Lfz1;->b:I
+    iget v8, v5, Li92;->b:I
 
     .line 132
     .line 133
-    iget v9, v5, Lfz1;->g:I
+    iget v9, v5, Li92;->g:I
 
     .line 134
     .line 135
@@ -701,7 +701,7 @@
 
     .line 148
     .line 149
-    iget v6, v5, Lfz1;->d:I
+    iget v6, v5, Li92;->d:I
 
     .line 150
     .line 151
@@ -709,11 +709,11 @@
 
     .line 152
     :cond_6
-    iget v6, v5, Lfz1;->b:I
+    iget v6, v5, Li92;->b:I
 
     .line 153
     .line 154
-    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 155
     .line 156
@@ -739,7 +739,7 @@
 
     .line 165
     .line 166
-    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 167
     .line 168
@@ -755,11 +755,11 @@
 
     .line 173
     .line 174
-    iget v5, v5, Lfz1;->b:I
+    iget v5, v5, Li92;->b:I
 
     .line 175
     .line 176
-    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 177
     .line 178
@@ -770,7 +770,7 @@
 
     .line 180
     :cond_8
-    iget v5, v5, Lfz1;->d:I
+    iget v5, v5, Li92;->d:I
 
     .line 181
     .line 182
@@ -797,7 +797,7 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g0:Landroid/util/SparseIntArray;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p0:Landroid/util/SparseIntArray;
 
     .line 2
     .line 3
@@ -822,28 +822,28 @@
     .line 12
     .line 13
     .line 14
-    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g0:Landroid/util/SparseIntArray;
+    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p0:Landroid/util/SparseIntArray;
 
     .line 15
     .line 16
     :cond_0
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g0:Landroid/util/SparseIntArray;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p0:Landroid/util/SparseIntArray;
 
     .line 17
     .line 18
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->h0:Ll5;
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q0:Lv5;
 
     .line 19
     .line 20
-    iget-object v2, v1, Ll5;->R:Ljava/lang/Object;
+    iget-object v2, v1, Lv5;->Y:Ljava/lang/Object;
 
     .line 21
     .line 22
-    check-cast v2, Ldz1;
+    check-cast v2, Lg92;
 
     .line 23
     .line 24
-    invoke-interface {v2}, Ldz1;->getFlexItemCount()I
+    invoke-interface {v2}, Lg92;->getFlexItemCount()I
 
     .line 25
     .line 26
@@ -851,7 +851,7 @@
     move-result v3
 
     .line 28
-    invoke-virtual {v1, v3}, Ll5;->y(I)Ljava/util/ArrayList;
+    invoke-virtual {v1, v3}, Lv5;->E(I)Ljava/util/ArrayList;
 
     .line 29
     .line 30
@@ -859,7 +859,7 @@
     move-result-object v1
 
     .line 32
-    new-instance v4, Lhz1;
+    new-instance v4, Lk92;
 
     .line 33
     .line 34
@@ -875,7 +875,7 @@
 
     .line 39
     .line 40
-    instance-of v6, p3, Lez1;
+    instance-of v6, p3, Lh92;
 
     .line 41
     .line 42
@@ -886,11 +886,11 @@
     move-object v6, p3
 
     .line 45
-    check-cast v6, Lez1;
+    check-cast v6, Lh92;
 
     .line 46
     .line 47
-    invoke-interface {v6}, Lez1;->getOrder()I
+    invoke-interface {v6}, Lh92;->getOrder()I
 
     .line 48
     .line 49
@@ -898,7 +898,7 @@
     move-result v6
 
     .line 51
-    iput v6, v4, Lhz1;->R:I
+    iput v6, v4, Lk92;->Y:I
 
     .line 52
     .line 53
@@ -906,7 +906,7 @@
 
     .line 54
     :cond_1
-    iput v5, v4, Lhz1;->R:I
+    iput v5, v4, Lk92;->Y:I
 
     .line 55
     .line 56
@@ -926,7 +926,7 @@
 
     .line 62
     :cond_2
-    invoke-interface {v2}, Ldz1;->getFlexItemCount()I
+    invoke-interface {v2}, Lg92;->getFlexItemCount()I
 
     .line 63
     .line 64
@@ -938,7 +938,7 @@
 
     .line 67
     .line 68
-    iput p2, v4, Lhz1;->Q:I
+    iput p2, v4, Lk92;->X:I
 
     .line 69
     .line 70
@@ -958,18 +958,18 @@
     move-result-object v6
 
     .line 77
-    check-cast v6, Lhz1;
+    check-cast v6, Lk92;
 
     .line 78
     .line 79
-    iget v7, v6, Lhz1;->Q:I
+    iget v7, v6, Lk92;->X:I
 
     .line 80
     .line 81
     add-int/2addr v7, v5
 
     .line 82
-    iput v7, v6, Lhz1;->Q:I
+    iput v7, v6, Lk92;->X:I
 
     .line 83
     .line 84
@@ -981,7 +981,7 @@
 
     .line 87
     :cond_3
-    iput v3, v4, Lhz1;->Q:I
+    iput v3, v4, Lk92;->X:I
 
     .line 88
     .line 89
@@ -990,7 +990,7 @@
     .line 90
     :cond_4
     :goto_2
-    iput v3, v4, Lhz1;->Q:I
+    iput v3, v4, Lk92;->X:I
 
     .line 91
     .line 92
@@ -1004,7 +1004,7 @@
     add-int/2addr v3, v5
 
     .line 96
-    invoke-static {v3, v1, v0}, Ll5;->Z(ILjava/util/ArrayList;Landroid/util/SparseIntArray;)[I
+    invoke-static {v3, v1, v0}, Lv5;->c0(ILjava/util/ArrayList;Landroid/util/SparseIntArray;)[I
 
     .line 97
     .line 98
@@ -1012,7 +1012,7 @@
     move-result-object v0
 
     .line 100
-    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->f0:[I
+    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o0:[I
 
     .line 101
     .line 102
@@ -1033,10 +1033,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    return-object p1
+    return-object p0
 .end method
 
 .method public final c(III)I
@@ -1048,24 +1048,24 @@
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result p0
 
     .line 5
-    return p1
+    return p0
 .end method
 
 .method public final checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 0
 
     .line 1
-    instance-of p1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
+    instance-of p0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
 
     .line 2
     .line 3
-    return p1
+    return p0
 .end method
 
-.method public final d(Landroid/view/View;IILfz1;)V
+.method public final d(Landroid/view/View;IILi92;)V
     .locals 0
 
     .line 1
@@ -1089,7 +1089,7 @@
     move-result p1
 
     .line 11
-    iget p2, p4, Lfz1;->e:I
+    iget p2, p4, Li92;->e:I
 
     .line 12
     .line 13
@@ -1097,25 +1097,25 @@
 
     .line 14
     .line 15
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 16
     .line 17
-    add-int/2addr p2, p1
+    add-int/2addr p2, p0
 
     .line 18
-    iput p2, p4, Lfz1;->e:I
+    iput p2, p4, Li92;->e:I
 
     .line 19
     .line 20
-    iget p2, p4, Lfz1;->f:I
+    iget p1, p4, Li92;->f:I
 
     .line 21
     .line 22
-    add-int/2addr p2, p1
+    add-int/2addr p1, p0
 
     .line 23
-    iput p2, p4, Lfz1;->f:I
+    iput p1, p4, Li92;->f:I
 
     .line 24
     .line 25
@@ -1123,25 +1123,25 @@
 
     .line 26
     :cond_0
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 27
     .line 28
-    add-int/2addr p2, p1
+    add-int/2addr p2, p0
 
     .line 29
-    iput p2, p4, Lfz1;->e:I
+    iput p2, p4, Li92;->e:I
 
     .line 30
     .line 31
-    iget p2, p4, Lfz1;->f:I
+    iget p1, p4, Li92;->f:I
 
     .line 32
     .line 33
-    add-int/2addr p2, p1
+    add-int/2addr p1, p0
 
     .line 34
-    iput p2, p4, Lfz1;->f:I
+    iput p1, p4, Li92;->f:I
 
     .line 35
     .line 36
@@ -1158,10 +1158,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    return-object p1
+    return-object p0
 .end method
 
 .method public final f(Landroid/view/View;II)I
@@ -1195,12 +1195,12 @@
 
     .line 13
     .line 14
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 15
     .line 16
     :cond_0
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 17
     .line 18
@@ -1212,12 +1212,12 @@
 
     .line 21
     .line 22
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 23
     .line 24
     :goto_0
-    add-int/2addr v0, p1
+    add-int/2addr v0, p0
 
     .line 25
     :cond_1
@@ -1237,12 +1237,12 @@
 
     .line 31
     .line 32
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 33
     .line 34
     :cond_3
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 35
     .line 36
@@ -1254,7 +1254,7 @@
 
     .line 39
     .line 40
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 41
     .line 42
@@ -1274,62 +1274,62 @@
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result p0
 
     .line 5
-    return p1
+    return p0
 .end method
 
 .method public final generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
-    .locals 2
+    .locals 1
 
     .line 135
     new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object p0
 
-    invoke-direct {v0, v1, p1}, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p0, p1}, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-object v0
 .end method
 
 .method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
-    .locals 7
+    .locals 6
 
     .line 1
-    instance-of v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
+    instance-of p0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
 
     .line 2
     .line 3
-    const v1, 0xffffff
+    const v0, 0xffffff
 
     .line 4
     .line 5
     .line 6
-    const/high16 v2, -0x40800000    # -1.0f
+    const/high16 v1, -0x40800000    # -1.0f
 
     .line 7
     .line 8
-    const/4 v3, -0x1
+    const/4 v2, -0x1
 
     .line 9
-    const/high16 v4, 0x3f800000    # 1.0f
+    const/high16 v3, 0x3f800000    # 1.0f
 
     .line 10
     .line 11
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
     .line 12
-    const/4 v6, 0x1
+    const/4 v5, 0x1
 
     .line 13
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 14
     .line 15
-    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
+    new-instance p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
 
     .line 16
     .line 17
@@ -1337,140 +1337,140 @@
 
     .line 18
     .line 19
-    invoke-direct {v0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
+    invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     .line 20
     .line 21
     .line 22
-    iput v6, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Q:I
+    iput v5, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
 
     .line 23
     .line 24
-    iput v5, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->R:F
+    iput v4, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:F
 
     .line 25
     .line 26
-    iput v4, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->S:F
+    iput v3, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:F
 
     .line 27
     .line 28
-    iput v3, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->T:I
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->c0:I
 
     .line 29
     .line 30
-    iput v2, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->U:F
+    iput v1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->d0:F
 
     .line 31
     .line 32
-    iput v3, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
 
     .line 33
     .line 34
-    iput v3, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 35
     .line 36
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->g0:I
 
     .line 37
     .line 38
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->h0:I
 
     .line 39
     .line 40
-    iget v1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Q:I
+    iget v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
 
     .line 41
     .line 42
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Q:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
 
     .line 43
     .line 44
-    iget v1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->R:F
+    iget v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:F
 
     .line 45
     .line 46
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->R:F
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:F
 
     .line 47
     .line 48
-    iget v1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->S:F
+    iget v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:F
 
     .line 49
     .line 50
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->S:F
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:F
 
     .line 51
     .line 52
-    iget v1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->T:I
+    iget v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->c0:I
 
     .line 53
     .line 54
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->T:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->c0:I
 
     .line 55
     .line 56
-    iget v1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->U:F
+    iget v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->d0:F
 
     .line 57
     .line 58
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->U:F
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->d0:F
 
     .line 59
     .line 60
-    iget v1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
+    iget v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
 
     .line 61
     .line 62
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
 
     .line 63
     .line 64
-    iget v1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iget v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 65
     .line 66
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 67
     .line 68
-    iget v1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
+    iget v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->g0:I
 
     .line 69
     .line 70
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->g0:I
 
     .line 71
     .line 72
-    iget v1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:I
+    iget v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->h0:I
 
     .line 73
     .line 74
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->h0:I
 
     .line 75
     .line 76
-    iget-boolean p1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:Z
+    iget-boolean p1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->i0:Z
 
     .line 77
     .line 78
-    iput-boolean p1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:Z
+    iput-boolean p1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->i0:Z
 
     .line 79
     .line 80
-    return-object v0
+    return-object p0
 
     .line 81
     :cond_0
-    instance-of v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;
+    instance-of p0, p1, Landroid/view/ViewGroup$MarginLayoutParams;
 
     .line 82
     .line 83
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 84
     .line 85
-    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
+    new-instance p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
 
     .line 86
     .line 87
@@ -1478,156 +1478,156 @@
 
     .line 88
     .line 89
-    invoke-direct {v0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
+    invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     .line 90
     .line 91
     .line 92
-    iput v6, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Q:I
+    iput v5, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
 
     .line 93
     .line 94
-    iput v5, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->R:F
+    iput v4, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:F
 
     .line 95
     .line 96
-    iput v4, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->S:F
+    iput v3, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:F
 
     .line 97
     .line 98
-    iput v3, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->T:I
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->c0:I
 
     .line 99
     .line 100
-    iput v2, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->U:F
+    iput v1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->d0:F
 
     .line 101
     .line 102
-    iput v3, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
 
     .line 103
     .line 104
-    iput v3, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 105
     .line 106
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->g0:I
 
     .line 107
     .line 108
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->h0:I
 
     .line 109
     .line 110
-    return-object v0
+    return-object p0
 
     .line 111
     :cond_1
-    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
+    new-instance p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
 
     .line 112
     .line 113
-    invoke-direct {v0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 114
     .line 115
     .line 116
-    iput v6, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Q:I
+    iput v5, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
 
     .line 117
     .line 118
-    iput v5, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->R:F
+    iput v4, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:F
 
     .line 119
     .line 120
-    iput v4, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->S:F
+    iput v3, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:F
 
     .line 121
     .line 122
-    iput v3, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->T:I
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->c0:I
 
     .line 123
     .line 124
-    iput v2, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->U:F
+    iput v1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->d0:F
 
     .line 125
     .line 126
-    iput v3, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
 
     .line 127
     .line 128
-    iput v3, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 129
     .line 130
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->g0:I
 
     .line 131
     .line 132
-    iput v1, v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->h0:I
 
     .line 133
     .line 134
-    return-object v0
+    return-object p0
 .end method
 
 .method public getAlignContent()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->U:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getAlignItems()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->T:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->f0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getDividerDrawableHorizontal()Landroid/graphics/drawable/Drawable;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->W:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getDividerDrawableVertical()Landroid/graphics/drawable/Drawable;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a0:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFlexDirection()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getFlexItemCount()I
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
@@ -1635,19 +1635,19 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public getFlexLines()Ljava/util/List;
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Ljava/util/List<",
-            "Lfz1;",
+            "Li92;",
             ">;"
         }
     .end annotation
@@ -1657,7 +1657,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 4
     .line 5
@@ -1674,52 +1674,52 @@
     .line 10
     .line 11
     .line 12
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 13
     .line 14
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v1
+    move-result-object p0
 
     .line 18
     :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 19
     .line 20
     .line 21
-    move-result v2
+    move-result v1
 
     .line 22
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
 
     .line 23
     .line 24
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 25
     .line 26
     .line 27
-    move-result-object v2
+    move-result-object v1
 
     .line 28
-    check-cast v2, Lfz1;
+    check-cast v1, Li92;
 
     .line 29
     .line 30
-    invoke-virtual {v2}, Lfz1;->a()I
+    invoke-virtual {v1}, Li92;->a()I
 
     .line 31
     .line 32
     .line 33
-    move-result v3
+    move-result v2
 
     .line 34
-    if-nez v3, :cond_0
+    if-nez v2, :cond_0
 
     .line 35
     .line 36
@@ -1727,7 +1727,7 @@
 
     .line 37
     :cond_0
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 38
     .line 39
@@ -1740,148 +1740,148 @@
 .end method
 
 .method public getFlexLinesInternal()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Ljava/util/List<",
-            "Lfz1;",
+            "Li92;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFlexWrap()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getJustifyContent()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->S:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getLargestMainSize()I
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    const/high16 v1, -0x80000000
+    const/high16 v0, -0x80000000
 
     .line 8
     .line 9
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v2
+    move-result v1
 
     .line 13
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
     .line 14
     .line 15
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v2
+    move-result-object v1
 
     .line 19
-    check-cast v2, Lfz1;
+    check-cast v1, Li92;
 
     .line 20
     .line 21
-    iget v2, v2, Lfz1;->e:I
+    iget v1, v1, Li92;->e:I
 
     .line 22
     .line 23
-    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
     .line 24
     .line 25
     .line 26
-    move-result v1
+    move-result v0
 
     .line 27
     goto :goto_0
 
     .line 28
     :cond_0
-    return v1
+    return v0
 .end method
 
 .method public getMaxLine()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->V:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getShowDividerHorizontal()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getShowDividerVertical()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getSumOfCrossSize()I
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 2
     .line 3
@@ -1896,7 +1896,7 @@
     const/4 v1, 0x0
 
     .line 8
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 9
     :goto_0
@@ -1904,7 +1904,7 @@
 
     .line 10
     .line 11
-    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 12
     .line 13
@@ -1916,7 +1916,7 @@
     move-result-object v3
 
     .line 17
-    check-cast v3, Lfz1;
+    check-cast v3, Li92;
 
     .line 18
     .line 19
@@ -1944,7 +1944,7 @@
 
     .line 30
     .line 31
-    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 32
     .line 33
@@ -1956,7 +1956,7 @@
 
     .line 35
     :cond_0
-    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 36
     .line 37
@@ -1989,7 +1989,7 @@
 
     .line 49
     .line 50
-    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 51
     .line 52
@@ -2001,7 +2001,7 @@
 
     .line 54
     :cond_2
-    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 55
     .line 56
@@ -2010,7 +2010,7 @@
     .line 57
     :cond_3
     :goto_4
-    iget v3, v3, Lfz1;->g:I
+    iget v3, v3, Li92;->g:I
 
     .line 58
     .line 59
@@ -2028,8 +2028,8 @@
     return v2
 .end method
 
-.method public final h(Lfz1;)V
-    .locals 2
+.method public final h(Li92;)V
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->j()Z
@@ -2044,7 +2044,7 @@
 
     .line 6
     .line 7
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 8
     .line 9
@@ -2056,29 +2056,29 @@
 
     .line 12
     .line 13
-    iget v0, p1, Lfz1;->e:I
+    iget v0, p1, Li92;->e:I
 
     .line 14
     .line 15
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 16
     .line 17
-    add-int/2addr v0, v1
+    add-int/2addr v0, p0
 
     .line 18
-    iput v0, p1, Lfz1;->e:I
+    iput v0, p1, Li92;->e:I
 
     .line 19
     .line 20
-    iget v0, p1, Lfz1;->f:I
+    iget v0, p1, Li92;->f:I
 
     .line 21
     .line 22
-    add-int/2addr v0, v1
+    add-int/2addr v0, p0
 
     .line 23
-    iput v0, p1, Lfz1;->f:I
+    iput v0, p1, Li92;->f:I
 
     .line 24
     .line 25
@@ -2086,7 +2086,7 @@
 
     .line 26
     :cond_0
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 27
     .line 28
@@ -2098,29 +2098,29 @@
 
     .line 31
     .line 32
-    iget v0, p1, Lfz1;->e:I
+    iget v0, p1, Li92;->e:I
 
     .line 33
     .line 34
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 35
     .line 36
-    add-int/2addr v0, v1
+    add-int/2addr v0, p0
 
     .line 37
-    iput v0, p1, Lfz1;->e:I
+    iput v0, p1, Li92;->e:I
 
     .line 38
     .line 39
-    iget v0, p1, Lfz1;->f:I
+    iget v0, p1, Li92;->f:I
 
     .line 40
     .line 41
-    add-int/2addr v0, v1
+    add-int/2addr v0, p0
 
     .line 42
-    iput v0, p1, Lfz1;->f:I
+    iput v0, p1, Li92;->f:I
 
     .line 43
     .line 44
@@ -2136,21 +2136,21 @@
 .end method
 
 .method public final j()Z
-    .locals 2
+    .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
     .line 4
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 5
     .line 6
-    if-ne v0, v1, :cond_0
+    if-ne p0, v0, :cond_0
 
     .line 7
     .line 8
@@ -2158,25 +2158,25 @@
 
     .line 9
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 10
-    return v0
+    return p0
 
     .line 11
     :cond_1
     :goto_0
-    return v1
+    return v0
 .end method
 
 .method public final k(Landroid/view/View;)I
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return p1
+    return p0
 .end method
 
 .method public final l(Landroid/graphics/Canvas;ZZ)V
@@ -2224,7 +2224,7 @@
     move-result v2
 
     .line 20
-    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 21
     .line 22
@@ -2236,7 +2236,7 @@
     move-result v3
 
     .line 26
-    const/4 v4, 0x0
+    move v4, v1
 
     .line 27
     :goto_0
@@ -2244,7 +2244,7 @@
 
     .line 28
     .line 29
-    iget-object v5, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v5, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 30
     .line 31
@@ -2256,15 +2256,15 @@
     move-result-object v5
 
     .line 35
-    check-cast v5, Lfz1;
+    check-cast v5, Li92;
 
     .line 36
     .line 37
-    const/4 v6, 0x0
+    move v6, v1
 
     .line 38
     :goto_1
-    iget v7, v5, Lfz1;->h:I
+    iget v7, v5, Li92;->h:I
 
     .line 39
     .line 40
@@ -2272,7 +2272,7 @@
 
     .line 41
     .line 42
-    iget v7, v5, Lfz1;->o:I
+    iget v7, v5, Li92;->o:I
 
     .line 43
     .line 44
@@ -2373,7 +2373,7 @@
     sub-int/2addr v7, v10
 
     .line 89
-    iget v10, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v10, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 90
     .line 91
@@ -2381,11 +2381,11 @@
 
     .line 92
     :goto_2
-    iget v10, v5, Lfz1;->a:I
+    iget v10, v5, Li92;->a:I
 
     .line 93
     .line 94
-    iget v11, v5, Lfz1;->g:I
+    iget v11, v5, Li92;->g:I
 
     .line 95
     .line 96
@@ -2395,7 +2395,7 @@
     .line 98
     .line 99
     :cond_2
-    iget v7, v5, Lfz1;->h:I
+    iget v7, v5, Li92;->h:I
 
     .line 100
     .line 101
@@ -2407,7 +2407,7 @@
 
     .line 104
     .line 105
-    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 106
     .line 107
@@ -2438,7 +2438,7 @@
     sub-int/2addr v7, v8
 
     .line 120
-    iget v8, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v8, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 121
     .line 122
@@ -2465,11 +2465,11 @@
 
     .line 131
     :goto_3
-    iget v8, v5, Lfz1;->a:I
+    iget v8, v5, Li92;->a:I
 
     .line 132
     .line 133
-    iget v9, v5, Lfz1;->g:I
+    iget v9, v5, Li92;->g:I
 
     .line 134
     .line 135
@@ -2504,7 +2504,7 @@
 
     .line 148
     .line 149
-    iget v6, v5, Lfz1;->c:I
+    iget v6, v5, Li92;->c:I
 
     .line 150
     .line 151
@@ -2512,11 +2512,11 @@
 
     .line 152
     :cond_6
-    iget v6, v5, Lfz1;->a:I
+    iget v6, v5, Li92;->a:I
 
     .line 153
     .line 154
-    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 155
     .line 156
@@ -2542,7 +2542,7 @@
 
     .line 165
     .line 166
-    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 167
     .line 168
@@ -2558,11 +2558,11 @@
 
     .line 173
     .line 174
-    iget v5, v5, Lfz1;->a:I
+    iget v5, v5, Li92;->a:I
 
     .line 175
     .line 176
-    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 177
     .line 178
@@ -2573,7 +2573,7 @@
 
     .line 180
     :cond_8
-    iget v5, v5, Lfz1;->c:I
+    iget v5, v5, Li92;->c:I
 
     .line 181
     .line 182
@@ -2600,7 +2600,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->W:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
@@ -2615,7 +2615,7 @@
     add-int/2addr p4, p2
 
     .line 7
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 8
     .line 9
@@ -2627,11 +2627,11 @@
     .line 11
     .line 12
     .line 13
-    iget-object p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->W:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 14
     .line 15
-    invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {p0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 16
     .line 17
@@ -2643,7 +2643,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
@@ -2655,7 +2655,7 @@
 
     .line 6
     :cond_0
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 7
     .line 8
@@ -2670,11 +2670,11 @@
     .line 11
     .line 12
     .line 13
-    iget-object p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->a0:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Landroid/graphics/drawable/Drawable;
 
     .line 14
     .line 15
-    invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {p0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 16
     .line 17
@@ -2690,7 +2690,7 @@
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->f0:[I
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o0:[I
 
     .line 4
     .line 5
@@ -2714,25 +2714,25 @@
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result-object p0
 
     .line 15
-    return-object p1
+    return-object p0
 
     .line 16
     :cond_1
     :goto_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    return-object p1
+    return-object p0
 .end method
 
 .method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
@@ -2740,7 +2740,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->W:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 6
     .line 7
@@ -2752,7 +2752,7 @@
 
     .line 10
     :cond_0
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 11
     .line 12
@@ -2760,7 +2760,7 @@
 
     .line 13
     .line 14
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 15
     .line 16
@@ -2772,7 +2772,7 @@
 
     .line 19
     :cond_1
-    sget-object v0, Lqn7;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lni8;->a:Ljava/util/WeakHashMap;
 
     .line 20
     .line 21
@@ -2784,7 +2784,7 @@
     move-result v0
 
     .line 25
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 26
     .line 27
@@ -2825,11 +2825,11 @@
 
     .line 41
     .line 42
-    const/4 v3, 0x1
+    move v3, v4
 
     .line 43
     :cond_3
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 44
     .line 45
@@ -2859,11 +2859,11 @@
 
     .line 56
     :cond_6
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 57
     :goto_1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 58
     .line 59
@@ -2889,18 +2889,18 @@
 
     .line 68
     .line 69
-    const/4 v0, 0x1
+    move v0, v4
 
     .line 70
     goto :goto_2
 
     .line 71
     :cond_9
-    const/4 v0, 0x0
+    move v0, v3
 
     .line 72
     :goto_2
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 73
     .line 74
@@ -2908,7 +2908,7 @@
 
     .line 75
     .line 76
-    const/4 v3, 0x1
+    move v3, v4
 
     .line 77
     :cond_a
@@ -2925,18 +2925,18 @@
 
     .line 82
     .line 83
-    const/4 v0, 0x1
+    move v0, v4
 
     .line 84
     goto :goto_3
 
     .line 85
     :cond_c
-    const/4 v0, 0x0
+    move v0, v3
 
     .line 86
     :goto_3
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 87
     .line 88
@@ -2944,7 +2944,7 @@
 
     .line 89
     .line 90
-    const/4 v3, 0x1
+    move v3, v4
 
     .line 91
     :cond_d
@@ -2957,10 +2957,10 @@
 .end method
 
 .method public final onLayout(ZIIII)V
-    .locals 9
+    .locals 10
 
     .line 1
-    sget-object p1, Lqn7;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lni8;->a:Ljava/util/WeakHashMap;
 
     .line 2
     .line 3
@@ -2972,7 +2972,7 @@
     move-result p1
 
     .line 7
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 8
     .line 9
@@ -3008,11 +3008,11 @@
 
     .line 22
     .line 23
-    const/4 v1, 0x1
+    move v1, v2
 
     .line 24
     :cond_0
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 25
     .line 26
@@ -3059,11 +3059,11 @@
 
     .line 42
     .line 43
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 44
     .line 45
-    invoke-static {p2, p1}, Len0;->e(ILjava/lang/String;)V
+    invoke-static {p0, p1}, Lku0;->e(ILjava/lang/String;)V
 
     .line 46
     .line 47
@@ -3072,46 +3072,46 @@
 
     .line 49
     :cond_3
-    move v1, p2
+    move v9, v1
 
     .line 50
-    move v4, p3
+    move v1, p2
 
     .line 51
-    move v5, p4
+    move p2, p3
 
     .line 52
-    move v6, p5
+    move p3, p4
 
     .line 53
-    const/4 p2, 0x0
+    move p4, p5
 
     .line 54
-    if-ne p1, v2, :cond_4
+    move p5, v9
 
     .line 55
-    .line 56
-    const/4 p2, 0x1
+    if-ne p1, v2, :cond_4
 
+    .line 56
     .line 57
-    :cond_4
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    move p5, v2
 
     .line 58
+    :cond_4
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+
     .line 59
+    .line 60
     if-ne p1, v3, :cond_5
 
-    .line 60
     .line 61
-    xor-int/lit8 p2, p2, 0x1
-
     .line 62
-    .line 63
-    :cond_5
-    move v2, v4
+    xor-int/lit8 p5, p5, 0x1
 
+    .line 63
     .line 64
-    move v4, v6
+    :cond_5
+    move v5, p5
 
     .line 65
     const/4 v6, 0x0
@@ -3120,121 +3120,96 @@
     move-object v0, p0
 
     .line 67
-    move v3, v5
+    move v2, p2
 
     .line 68
-    move v5, p2
+    move v3, p3
 
     .line 69
-    invoke-virtual/range {v0 .. v6}, Lcom/google/android/flexbox/FlexboxLayout;->t(IIIIZZ)V
+    move v4, p4
 
     .line 70
+    invoke-virtual/range {v0 .. v6}, Lcom/google/android/flexbox/FlexboxLayout;->t(IIIIZZ)V
+
     .line 71
     .line 72
-    return-void
-
     .line 73
-    :cond_6
-    move v1, p2
+    return-void
 
     .line 74
-    move v4, p3
+    :cond_6
+    move v9, v1
 
     .line 75
-    move v3, p4
-
-    .line 76
-    move v6, p5
-
-    .line 77
-    const/4 p2, 0x0
-
-    .line 78
-    if-eq p1, v2, :cond_7
-
-    .line 79
-    .line 80
-    const/4 v5, 0x1
-
-    .line 81
-    :goto_0
-    move-object v0, p0
-
-    .line 82
-    move v2, v4
-
-    .line 83
-    move v4, v6
-
-    .line 84
-    goto :goto_1
-
-    .line 85
-    :cond_7
-    const/4 v5, 0x0
-
-    .line 86
-    goto :goto_0
-
-    .line 87
-    :goto_1
-    invoke-virtual/range {v0 .. v5}, Lcom/google/android/flexbox/FlexboxLayout;->s(IIIIZ)V
-
-    .line 88
-    .line 89
-    .line 90
-    return-void
-
-    .line 91
-    :cond_8
     move v1, p2
 
+    .line 76
+    move p2, p3
+
+    .line 77
+    move p3, p4
+
+    .line 78
+    move p4, p5
+
+    .line 79
+    move p5, v9
+
+    .line 80
+    if-eq p1, v2, :cond_7
+
+    .line 81
+    .line 82
+    move p5, v2
+
+    .line 83
+    :cond_7
+    move p1, v1
+
+    .line 84
+    invoke-virtual/range {p0 .. p5}, Lcom/google/android/flexbox/FlexboxLayout;->s(IIIIZ)V
+
+    .line 85
+    .line 86
+    .line 87
+    return-void
+
+    .line 88
+    :cond_8
+    move v9, v1
+
+    .line 89
+    move v1, p2
+
+    .line 90
+    move p2, p3
+
+    .line 91
+    move p3, p4
+
     .line 92
-    move v4, p3
+    move p4, p5
 
     .line 93
-    move v3, p4
+    move p5, v9
 
     .line 94
-    move v6, p5
-
-    .line 95
-    const/4 p2, 0x0
-
-    .line 96
     if-ne p1, v2, :cond_9
 
+    .line 95
+    .line 96
+    move p5, v2
+
     .line 97
+    :cond_9
+    move p1, v1
+
     .line 98
-    const/4 v5, 0x1
+    invoke-virtual/range {p0 .. p5}, Lcom/google/android/flexbox/FlexboxLayout;->s(IIIIZ)V
 
     .line 99
-    :goto_2
-    move-object v0, p0
-
     .line 100
-    move v2, v4
-
     .line 101
-    move v4, v6
-
-    .line 102
-    goto :goto_3
-
-    .line 103
-    :cond_9
-    const/4 v5, 0x0
-
-    .line 104
-    goto :goto_2
-
-    .line 105
-    :goto_3
-    invoke-virtual/range {v0 .. v5}, Lcom/google/android/flexbox/FlexboxLayout;->s(IIIIZ)V
-
-    .line 106
-    .line 107
-    .line 108
     return-void
 .end method
 
@@ -3246,7 +3221,7 @@
 
     .line 2
     .line 3
-    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->g0:Landroid/util/SparseIntArray;
+    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->p0:Landroid/util/SparseIntArray;
 
     .line 4
     .line 5
@@ -3271,28 +3246,28 @@
     .line 14
     .line 15
     .line 16
-    iput-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->g0:Landroid/util/SparseIntArray;
+    iput-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->p0:Landroid/util/SparseIntArray;
 
     .line 17
     .line 18
     :cond_0
-    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->g0:Landroid/util/SparseIntArray;
+    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->p0:Landroid/util/SparseIntArray;
 
     .line 19
     .line 20
-    iget-object v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->h0:Ll5;
+    iget-object v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->q0:Lv5;
 
     .line 21
     .line 22
-    iget-object v2, v9, Ll5;->R:Ljava/lang/Object;
+    iget-object v2, v9, Lv5;->Y:Ljava/lang/Object;
 
     .line 23
     .line 24
-    check-cast v2, Ldz1;
+    check-cast v2, Lg92;
 
     .line 25
     .line 26
-    invoke-interface {v2}, Ldz1;->getFlexItemCount()I
+    invoke-interface {v2}, Lg92;->getFlexItemCount()I
 
     .line 27
     .line 28
@@ -3319,7 +3294,7 @@
 
     .line 38
     :cond_1
-    const/4 v4, 0x0
+    move v4, v10
 
     .line 39
     :goto_0
@@ -3327,7 +3302,7 @@
 
     .line 40
     .line 41
-    invoke-interface {v2, v4}, Ldz1;->e(I)Landroid/view/View;
+    invoke-interface {v2, v4}, Lg92;->e(I)Landroid/view/View;
 
     .line 42
     .line 43
@@ -3351,11 +3326,11 @@
     move-result-object v5
 
     .line 52
-    check-cast v5, Lez1;
+    check-cast v5, Lh92;
 
     .line 53
     .line 54
-    invoke-interface {v5}, Lez1;->getOrder()I
+    invoke-interface {v5}, Lh92;->getOrder()I
 
     .line 55
     .line 56
@@ -3376,19 +3351,19 @@
     .line 63
     .line 64
     :goto_1
-    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->g0:Landroid/util/SparseIntArray;
+    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->p0:Landroid/util/SparseIntArray;
 
     .line 65
     .line 66
-    iget-object v2, v9, Ll5;->R:Ljava/lang/Object;
+    iget-object v2, v9, Lv5;->Y:Ljava/lang/Object;
 
     .line 67
     .line 68
-    check-cast v2, Ldz1;
+    check-cast v2, Lg92;
 
     .line 69
     .line 70
-    invoke-interface {v2}, Ldz1;->getFlexItemCount()I
+    invoke-interface {v2}, Lg92;->getFlexItemCount()I
 
     .line 71
     .line 72
@@ -3396,7 +3371,7 @@
     move-result v2
 
     .line 74
-    invoke-virtual {v9, v2}, Ll5;->y(I)Ljava/util/ArrayList;
+    invoke-virtual {v9, v2}, Lv5;->E(I)Ljava/util/ArrayList;
 
     .line 75
     .line 76
@@ -3404,7 +3379,7 @@
     move-result-object v3
 
     .line 78
-    invoke-static {v2, v3, v1}, Ll5;->Z(ILjava/util/ArrayList;Landroid/util/SparseIntArray;)[I
+    invoke-static {v2, v3, v1}, Lv5;->c0(ILjava/util/ArrayList;Landroid/util/SparseIntArray;)[I
 
     .line 79
     .line 80
@@ -3412,7 +3387,7 @@
     move-result-object v1
 
     .line 82
-    iput-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->f0:[I
+    iput-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->o0:[I
 
     .line 83
     .line 84
@@ -3430,14 +3405,14 @@
     .line 88
     :cond_4
     :goto_3
-    iget v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 89
     .line 90
     const/4 v2, 0x0
 
     .line 91
-    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Lgz1;
+    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->s0:Lj92;
 
     .line 92
     .line 93
@@ -3474,11 +3449,11 @@
 
     .line 106
     .line 107
-    iget v2, v0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget v0, v0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 108
     .line 109
-    invoke-static {v2, v1}, Len0;->e(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lku0;->e(ILjava/lang/String;)V
 
     .line 110
     .line 111
@@ -3488,7 +3463,7 @@
     .line 113
     :cond_6
     :goto_4
-    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 114
     .line 115
@@ -3497,11 +3472,11 @@
     .line 116
     .line 117
     .line 118
-    iput-object v2, v11, Lgz1;->b:Ljava/util/List;
+    iput-object v2, v11, Lj92;->b:Ljava/util/List;
 
     .line 119
     .line 120
-    iput v10, v11, Lgz1;->a:I
+    iput v10, v11, Lj92;->a:I
 
     .line 121
     .line 122
@@ -3511,11 +3486,11 @@
     const/4 v8, 0x0
 
     .line 124
-    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->h0:Ll5;
+    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->q0:Lv5;
 
     .line 125
     .line 126
-    iget-object v2, v0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Lgz1;
+    iget-object v2, v0, Lcom/google/android/flexbox/FlexboxLayout;->s0:Lj92;
 
     .line 127
     .line 128
@@ -3535,7 +3510,7 @@
 
     .line 135
     .line 136
-    invoke-virtual/range {v1 .. v8}, Ll5;->n(Lgz1;IIIIILjava/util/List;)V
+    invoke-virtual/range {v1 .. v8}, Lv5;->x(Lj92;IIIIILjava/util/List;)V
 
     .line 137
     .line 138
@@ -3549,15 +3524,15 @@
     move v3, v15
 
     .line 142
-    iget-object v1, v11, Lgz1;->b:Ljava/util/List;
+    iget-object v1, v11, Lj92;->b:Ljava/util/List;
 
     .line 143
     .line 144
-    iput-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iput-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 145
     .line 146
-    invoke-virtual {v9, v3, v4, v10}, Ll5;->A(III)V
+    invoke-virtual {v9, v3, v4, v10}, Lv5;->G(III)V
 
     .line 147
     .line 148
@@ -3581,21 +3556,21 @@
     add-int/2addr v2, v1
 
     .line 158
-    invoke-virtual {v9, v3, v4, v2}, Ll5;->z(III)V
+    invoke-virtual {v9, v3, v4, v2}, Lv5;->F(III)V
 
     .line 159
     .line 160
     .line 161
-    invoke-virtual {v9, v10}, Ll5;->c0(I)V
+    invoke-virtual {v9, v10}, Lv5;->f0(I)V
 
     .line 162
     .line 163
     .line 164
-    iget v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 165
     .line 166
-    iget v2, v11, Lgz1;->a:I
+    iget v2, v11, Lj92;->a:I
 
     .line 167
     .line 168
@@ -3616,7 +3591,7 @@
 
     .line 175
     .line 176
-    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 177
     .line 178
@@ -3625,11 +3600,11 @@
     .line 179
     .line 180
     .line 181
-    iput-object v2, v11, Lgz1;->b:Ljava/util/List;
+    iput-object v2, v11, Lj92;->b:Ljava/util/List;
 
     .line 182
     .line 183
-    iput v10, v11, Lgz1;->a:I
+    iput v10, v11, Lj92;->a:I
 
     .line 184
     .line 185
@@ -3639,11 +3614,11 @@
     const/4 v8, 0x0
 
     .line 187
-    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->h0:Ll5;
+    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->q0:Lv5;
 
     .line 188
     .line 189
-    iget-object v2, v0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Lgz1;
+    iget-object v2, v0, Lcom/google/android/flexbox/FlexboxLayout;->s0:Lj92;
 
     .line 190
     .line 191
@@ -3655,25 +3630,25 @@
     const/4 v6, 0x0
 
     .line 195
-    invoke-virtual/range {v1 .. v8}, Ll5;->n(Lgz1;IIIIILjava/util/List;)V
+    invoke-virtual/range {v1 .. v8}, Lv5;->x(Lj92;IIIIILjava/util/List;)V
 
     .line 196
     .line 197
     .line 198
-    iget-object v1, v11, Lgz1;->b:Ljava/util/List;
+    iget-object v1, v11, Lj92;->b:Ljava/util/List;
 
     .line 199
     .line 200
-    iput-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iput-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 201
     .line 202
-    invoke-virtual {v9, v3, v4, v10}, Ll5;->A(III)V
+    invoke-virtual {v9, v3, v4, v10}, Lv5;->G(III)V
 
     .line 203
     .line 204
     .line 205
-    iget v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->T:I
+    iget v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->f0:I
 
     .line 206
     .line 207
@@ -3681,7 +3656,7 @@
 
     .line 208
     .line 209
-    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 210
     .line 211
@@ -3714,7 +3689,7 @@
     move-result-object v2
 
     .line 225
-    check-cast v2, Lfz1;
+    check-cast v2, Li92;
 
     .line 226
     .line 227
@@ -3722,11 +3697,11 @@
 
     .line 228
     .line 229
-    const/4 v6, 0x0
+    move v6, v10
 
     .line 230
     :goto_6
-    iget v7, v2, Lfz1;->h:I
+    iget v7, v2, Li92;->h:I
 
     .line 231
     .line 232
@@ -3734,7 +3709,7 @@
 
     .line 233
     .line 234
-    iget v7, v2, Lfz1;->o:I
+    iget v7, v2, Li92;->o:I
 
     .line 235
     .line 236
@@ -3785,11 +3760,11 @@
 
     .line 257
     .line 258
-    iget v12, v0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iget v12, v0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 259
     .line 260
-    iget v14, v2, Lfz1;->l:I
+    iget v14, v2, Li92;->l:I
 
     .line 261
     .line 262
@@ -3920,7 +3895,7 @@
 
     .line 319
     :cond_b
-    iput v5, v2, Lfz1;->g:I
+    iput v5, v2, Li92;->g:I
 
     .line 320
     .line 321
@@ -3947,21 +3922,21 @@
     add-int/2addr v2, v1
 
     .line 331
-    invoke-virtual {v9, v3, v4, v2}, Ll5;->z(III)V
+    invoke-virtual {v9, v3, v4, v2}, Lv5;->F(III)V
 
     .line 332
     .line 333
     .line 334
-    invoke-virtual {v9, v10}, Ll5;->c0(I)V
+    invoke-virtual {v9, v10}, Lv5;->f0(I)V
 
     .line 335
     .line 336
     .line 337
-    iget v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget v1, v0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 338
     .line 339
-    iget v2, v11, Lgz1;->a:I
+    iget v2, v11, Lj92;->a:I
 
     .line 340
     .line 341
@@ -3980,7 +3955,7 @@
     const/4 v0, 0x1
 
     .line 2
-    const/4 v1, 0x1
+    move v1, v0
 
     .line 3
     :goto_0
@@ -4035,15 +4010,15 @@
 
     .line 27
     .line 28
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 29
     .line 30
-    and-int/lit8 p1, p1, 0x2
+    and-int/lit8 p0, p0, 0x2
 
     .line 31
     .line 32
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 33
     .line 34
@@ -4055,15 +4030,15 @@
 
     .line 36
     :cond_1
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 37
     .line 38
-    and-int/lit8 p1, p1, 0x2
+    and-int/lit8 p0, p0, 0x2
 
     .line 39
     .line 40
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 41
     .line 42
@@ -4095,14 +4070,14 @@
 
     .line 52
     .line 53
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 54
     .line 55
-    and-int/2addr p1, v0
+    and-int/2addr p0, v0
 
     .line 56
-    if-eqz p1, :cond_5
+    if-eqz p0, :cond_5
 
     .line 57
     .line 58
@@ -4114,14 +4089,14 @@
 
     .line 60
     :cond_6
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 61
     .line 62
-    and-int/2addr p1, v0
+    and-int/2addr p0, v0
 
     .line 63
-    if-eqz p1, :cond_7
+    if-eqz p0, :cond_7
 
     .line 64
     .line 65
@@ -4143,7 +4118,7 @@
 
     .line 3
     .line 4
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 5
     .line 6
@@ -4163,7 +4138,7 @@
 
     .line 13
     :cond_0
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 14
     :goto_0
@@ -4174,7 +4149,7 @@
 
     .line 16
     .line 17
-    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 18
     .line 19
@@ -4186,11 +4161,11 @@
     move-result-object v3
 
     .line 23
-    check-cast v3, Lfz1;
+    check-cast v3, Li92;
 
     .line 24
     .line 25
-    invoke-virtual {v3}, Lfz1;->a()I
+    invoke-virtual {v3}, Li92;->a()I
 
     .line 26
     .line 27
@@ -4214,15 +4189,15 @@
 
     .line 36
     .line 37
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 38
     .line 39
-    and-int/lit8 p1, p1, 0x2
+    and-int/lit8 p0, p0, 0x2
 
     .line 40
     .line 41
-    if-eqz p1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 42
     .line 43
@@ -4234,15 +4209,15 @@
 
     .line 45
     :cond_2
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 46
     .line 47
-    and-int/lit8 p1, p1, 0x2
+    and-int/lit8 p0, p0, 0x2
 
     .line 48
     .line 49
-    if-eqz p1, :cond_3
+    if-eqz p0, :cond_3
 
     .line 50
     .line 51
@@ -4274,14 +4249,14 @@
 
     .line 61
     .line 62
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 63
     .line 64
-    and-int/2addr p1, v2
+    and-int/2addr p0, v2
 
     .line 65
-    if-eqz p1, :cond_6
+    if-eqz p0, :cond_6
 
     .line 66
     .line 67
@@ -4293,14 +4268,14 @@
 
     .line 69
     :cond_7
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 70
     .line 71
-    and-int/2addr p1, v2
+    and-int/2addr p0, v2
 
     .line 72
-    if-eqz p1, :cond_8
+    if-eqz p0, :cond_8
 
     .line 73
     .line 74
@@ -4323,7 +4298,7 @@
 
     .line 3
     .line 4
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 5
     .line 6
@@ -4350,7 +4325,7 @@
 
     .line 15
     :goto_0
-    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 16
     .line 17
@@ -4366,7 +4341,7 @@
 
     .line 22
     .line 23
-    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 24
     .line 25
@@ -4378,11 +4353,11 @@
     move-result-object v2
 
     .line 29
-    check-cast v2, Lfz1;
+    check-cast v2, Li92;
 
     .line 30
     .line 31
-    invoke-virtual {v2}, Lfz1;->a()I
+    invoke-virtual {v2}, Li92;->a()I
 
     .line 32
     .line 33
@@ -4418,15 +4393,15 @@
 
     .line 46
     .line 47
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 48
     .line 49
-    and-int/lit8 p1, p1, 0x4
+    and-int/lit8 p0, p0, 0x4
 
     .line 50
     .line 51
-    if-eqz p1, :cond_3
+    if-eqz p0, :cond_3
 
     .line 52
     .line 53
@@ -4438,15 +4413,15 @@
 
     .line 55
     :cond_4
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 56
     .line 57
-    and-int/lit8 p1, p1, 0x4
+    and-int/lit8 p0, p0, 0x4
 
     .line 58
     .line 59
-    if-eqz p1, :cond_5
+    if-eqz p0, :cond_5
 
     .line 60
     .line 61
@@ -4509,7 +4484,7 @@
     move-result v5
 
     .line 24
-    iget-object v6, v0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v6, v0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 25
     .line 26
@@ -4529,7 +4504,7 @@
 
     .line 32
     .line 33
-    iget-object v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 34
     .line 35
@@ -4544,7 +4519,7 @@
     move-object v12, v9
 
     .line 40
-    check-cast v12, Lfz1;
+    check-cast v12, Li92;
 
     .line 41
     .line 42
@@ -4560,7 +4535,7 @@
 
     .line 47
     .line 48
-    iget v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 49
     .line 50
@@ -4575,7 +4550,7 @@
 
     .line 53
     .line 54
-    iget v3, v0, Lcom/google/android/flexbox/FlexboxLayout;->S:I
+    iget v3, v0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
 
     .line 55
     .line 56
@@ -4625,7 +4600,7 @@
 
     .line 75
     .line 76
-    invoke-virtual {v12}, Lfz1;->a()I
+    invoke-virtual {v12}, Li92;->a()I
 
     .line 77
     .line 78
@@ -4637,7 +4612,7 @@
 
     .line 81
     .line 82
-    iget v14, v12, Lfz1;->e:I
+    iget v14, v12, Li92;->e:I
 
     .line 83
     .line 84
@@ -4662,7 +4637,7 @@
 
     .line 92
     :cond_1
-    const/4 v14, 0x0
+    move v14, v11
 
     .line 93
     :goto_1
@@ -4690,11 +4665,11 @@
 
     .line 101
     .line 102
-    iget v2, v0, Lcom/google/android/flexbox/FlexboxLayout;->S:I
+    iget v0, v0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
 
     .line 103
     .line 104
-    invoke-static {v2, v1}, Len0;->e(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lku0;->e(ILjava/lang/String;)V
 
     .line 105
     .line 106
@@ -4703,7 +4678,7 @@
 
     .line 108
     :cond_3
-    invoke-virtual {v12}, Lfz1;->a()I
+    invoke-virtual {v12}, Li92;->a()I
 
     .line 109
     .line 110
@@ -4715,7 +4690,7 @@
 
     .line 113
     .line 114
-    iget v15, v12, Lfz1;->e:I
+    iget v15, v12, Li92;->e:I
 
     .line 115
     .line 116
@@ -4736,7 +4711,7 @@
 
     .line 122
     :cond_4
-    const/4 v15, 0x0
+    move v15, v11
 
     .line 123
     :goto_2
@@ -4773,7 +4748,7 @@
     int-to-float v3, v1
 
     .line 135
-    invoke-virtual {v12}, Lfz1;->a()I
+    invoke-virtual {v12}, Li92;->a()I
 
     .line 136
     .line 137
@@ -4801,7 +4776,7 @@
     .line 146
     .line 147
     :goto_3
-    iget v14, v12, Lfz1;->e:I
+    iget v14, v12, Li92;->e:I
 
     .line 148
     .line 149
@@ -4829,7 +4804,7 @@
     int-to-float v3, v1
 
     .line 158
-    iget v7, v12, Lfz1;->e:I
+    iget v7, v12, Li92;->e:I
 
     .line 159
     .line 160
@@ -4867,14 +4842,14 @@
 
     .line 173
     :goto_4
-    const/4 v14, 0x0
+    move v14, v11
 
     .line 174
     goto :goto_5
 
     .line 175
     :cond_8
-    iget v3, v12, Lfz1;->e:I
+    iget v3, v12, Li92;->e:I
 
     .line 176
     .line 177
@@ -4927,7 +4902,7 @@
 
     .line 195
     :goto_6
-    iget v14, v12, Lfz1;->h:I
+    iget v14, v12, Li92;->h:I
 
     .line 196
     .line 197
@@ -4935,7 +4910,7 @@
 
     .line 198
     .line 199
-    iget v14, v12, Lfz1;->o:I
+    iget v14, v12, Li92;->o:I
 
     .line 200
     .line 201
@@ -4950,11 +4925,11 @@
     move-result-object v17
 
     .line 206
-    const/16 p2, 0x4
+    move/from16 p2, v9
 
     .line 207
     .line 208
-    if-eqz v17, :cond_a
+    if-eqz v17, :cond_11
 
     .line 209
     .line 210
@@ -4966,7 +4941,7 @@
     move-result v9
 
     .line 214
-    const/16 p3, 0x1
+    move/from16 p3, v13
 
     .line 215
     .line 216
@@ -4974,32 +4949,32 @@
 
     .line 217
     .line 218
-    if-ne v9, v13, :cond_b
+    if-ne v9, v13, :cond_a
 
     .line 219
     .line 220
-    :cond_a
-    move/from16 v17, v11
+    move/from16 v22, p3
 
     .line 221
     .line 222
-    move/from16 v23, v16
+    :goto_7
+    move/from16 v21, v10
 
     .line 223
     .line 224
-    const/16 v21, 0x2
+    move/from16 v17, v11
 
     .line 225
     .line 226
-    const/16 v22, 0x1
+    move/from16 v23, v16
 
     .line 227
     .line 228
-    goto/16 :goto_e
+    goto/16 :goto_f
 
     .line 229
     .line 230
-    :cond_b
+    :cond_a
     invoke-virtual/range {v17 .. v17}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 231
@@ -5040,11 +5015,11 @@
     move-result v13
 
     .line 248
-    if-eqz v13, :cond_c
+    if-eqz v13, :cond_b
 
     .line 249
     .line 250
-    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 251
     .line 252
@@ -5061,24 +5036,24 @@
 
     .line 256
     .line 257
-    :goto_7
+    :goto_8
     move/from16 v19, v15
 
     .line 258
     .line 259
-    goto :goto_8
+    goto :goto_9
 
     .line 260
-    :cond_c
+    :cond_b
     const/16 v18, 0x0
 
     .line 261
     .line 262
-    goto :goto_7
+    goto :goto_8
 
     .line 263
-    :goto_8
-    iget v13, v12, Lfz1;->h:I
+    :goto_9
+    iget v13, v12, Li92;->h:I
 
     .line 264
     .line 265
@@ -5086,11 +5061,11 @@
 
     .line 266
     .line 267
-    if-ne v11, v13, :cond_d
+    if-ne v11, v13, :cond_c
 
     .line 268
     .line 269
-    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 270
     .line 271
@@ -5098,11 +5073,11 @@
 
     .line 272
     .line 273
-    if-lez v13, :cond_d
+    if-lez v13, :cond_c
 
     .line 274
     .line 275
-    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 276
     .line 277
@@ -5110,31 +5085,31 @@
 
     .line 278
     .line 279
-    goto :goto_9
+    goto :goto_a
 
     .line 280
-    :cond_d
+    :cond_c
     const/16 v20, 0x0
 
     .line 281
     .line 282
-    :goto_9
-    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    :goto_a
+    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 283
     .line 284
-    if-ne v13, v10, :cond_f
+    if-ne v13, v10, :cond_e
 
     .line 285
     .line 286
-    const/4 v13, 0x2
+    move v13, v10
 
     .line 287
-    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->h0:Ll5;
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->q0:Lv5;
 
     .line 288
     .line 289
-    if-eqz p5, :cond_e
+    if-eqz p5, :cond_d
 
     .line 290
     .line 291
@@ -5169,15 +5144,15 @@
 
     .line 305
     .line 306
-    move v13, v14
+    move/from16 v21, v13
 
     .line 307
-    move v14, v15
-
     .line 308
-    const/16 v21, 0x2
+    move v13, v14
 
     .line 309
+    move v14, v15
+
     .line 310
     invoke-static/range {v19 .. v19}, Ljava/lang/Math;->round(F)I
 
@@ -5199,24 +5174,24 @@
 
     .line 319
     .line 320
-    const/16 v22, 0x1
+    move/from16 v22, p3
 
     .line 321
     .line 322
-    invoke-virtual/range {v10 .. v16}, Ll5;->O(Landroid/view/View;Lfz1;IIII)V
+    invoke-virtual/range {v10 .. v16}, Lv5;->U(Landroid/view/View;Li92;IIII)V
 
     .line 323
     .line 324
     .line 325
-    :goto_a
+    :goto_b
     move/from16 v23, v16
 
     .line 326
     .line 327
-    goto :goto_b
+    goto :goto_c
 
     .line 328
-    :cond_e
+    :cond_d
     move-object/from16 v21, v17
 
     .line 329
@@ -5229,11 +5204,11 @@
 
     .line 333
     .line 334
-    const/16 v21, 0x2
+    move/from16 v22, p3
 
     .line 335
     .line 336
-    const/16 v22, 0x1
+    move/from16 v21, v13
 
     .line 337
     .line 338
@@ -5277,15 +5252,15 @@
 
     .line 357
     .line 358
-    invoke-virtual/range {v10 .. v16}, Ll5;->O(Landroid/view/View;Lfz1;IIII)V
+    invoke-virtual/range {v10 .. v16}, Lv5;->U(Landroid/view/View;Li92;IIII)V
 
     .line 359
     .line 360
     .line 361
-    goto :goto_a
+    goto :goto_b
 
     .line 362
-    :cond_f
+    :cond_e
     move-object/from16 v21, v17
 
     .line 363
@@ -5298,23 +5273,23 @@
 
     .line 367
     .line 368
-    move/from16 v23, v16
+    move/from16 v22, p3
 
     .line 369
     .line 370
-    const/16 v21, 0x2
+    move/from16 v21, v10
 
     .line 371
     .line 372
-    const/16 v22, 0x1
+    move/from16 v23, v16
 
     .line 373
     .line 374
-    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->h0:Ll5;
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->q0:Lv5;
 
     .line 375
     .line 376
-    if-eqz p5, :cond_10
+    if-eqz p5, :cond_f
 
     .line 377
     .line 378
@@ -5360,15 +5335,15 @@
     move v14, v5
 
     .line 398
-    invoke-virtual/range {v10 .. v16}, Ll5;->O(Landroid/view/View;Lfz1;IIII)V
+    invoke-virtual/range {v10 .. v16}, Lv5;->U(Landroid/view/View;Li92;IIII)V
 
     .line 399
     .line 400
     .line 401
-    goto :goto_b
+    goto :goto_c
 
     .line 402
-    :cond_10
+    :cond_f
     move v14, v5
 
     .line 403
@@ -5411,7 +5386,7 @@
 
     .line 421
     .line 422
-    invoke-virtual/range {v10 .. v16}, Ll5;->O(Landroid/view/View;Lfz1;IIII)V
+    invoke-virtual/range {v10 .. v16}, Lv5;->U(Landroid/view/View;Li92;IIII)V
 
     .line 423
     .line 424
@@ -5419,7 +5394,7 @@
     move v5, v14
 
     .line 426
-    :goto_b
+    :goto_c
     invoke-virtual {v11}, Landroid/view/View;->getMeasuredWidth()I
 
     .line 427
@@ -5475,7 +5450,7 @@
 
     .line 448
     .line 449
-    if-eqz p5, :cond_11
+    if-eqz p5, :cond_10
 
     .line 450
     .line 451
@@ -5496,19 +5471,19 @@
 
     .line 457
     .line 458
-    invoke-virtual/range {v10 .. v15}, Lfz1;->b(Landroid/view/View;IIII)V
+    invoke-virtual/range {v10 .. v15}, Li92;->b(Landroid/view/View;IIII)V
 
     .line 459
     .line 460
     .line 461
-    :goto_c
+    :goto_d
     move-object v12, v10
 
     .line 462
-    goto :goto_d
+    goto :goto_e
 
     .line 463
-    :cond_11
+    :cond_10
     move/from16 v14, v18
 
     .line 464
@@ -5532,68 +5507,83 @@
     move v14, v13
 
     .line 472
-    const/4 v13, 0x0
+    move v13, v9
 
     .line 473
-    invoke-virtual/range {v10 .. v15}, Lfz1;->b(Landroid/view/View;IIII)V
+    invoke-virtual/range {v10 .. v15}, Li92;->b(Landroid/view/View;IIII)V
 
     .line 474
     .line 475
     .line 476
-    goto :goto_c
+    goto :goto_d
 
     .line 477
-    :goto_d
+    :goto_e
     move/from16 v15, v19
 
     .line 478
     .line 479
-    :goto_e
-    add-int/lit8 v11, v17, 0x1
+    goto :goto_f
 
     .line 480
+    :cond_11
+    move/from16 v22, v13
+
     .line 481
-    move/from16 v16, v23
-
     .line 482
-    .line 483
-    const/4 v9, 0x4
+    goto/16 :goto_7
 
+    .line 483
     .line 484
-    const/4 v10, 0x2
+    :goto_f
+    add-int/lit8 v11, v17, 0x1
 
     .line 485
-    const/4 v13, 0x1
-
     .line 486
-    goto/16 :goto_6
+    move/from16 v9, p2
 
     .line 487
     .line 488
-    :cond_12
-    move/from16 v23, v16
+    move/from16 v10, v21
 
     .line 489
     .line 490
-    iget v3, v12, Lfz1;->g:I
+    move/from16 v13, v22
 
     .line 491
     .line 492
-    add-int/2addr v5, v3
+    move/from16 v16, v23
 
     .line 493
+    .line 494
+    goto/16 :goto_6
+
+    .line 495
+    .line 496
+    :cond_12
+    move/from16 v23, v16
+
+    .line 497
+    .line 498
+    iget v3, v12, Li92;->g:I
+
+    .line 499
+    .line 500
+    add-int/2addr v5, v3
+
+    .line 501
     sub-int v3, v23, v3
 
-    .line 494
-    .line 495
+    .line 502
+    .line 503
     add-int/lit8 v8, v8, 0x1
 
-    .line 496
-    .line 497
+    .line 504
+    .line 505
     goto/16 :goto_0
 
-    .line 498
-    .line 499
+    .line 506
+    .line 507
     :cond_13
     return-void
 .end method
@@ -5602,7 +5592,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->U:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g0:I
 
     .line 2
     .line 3
@@ -5610,7 +5600,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->U:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->g0:I
 
     .line 6
     .line 7
@@ -5627,7 +5617,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->T:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->f0:I
 
     .line 2
     .line 3
@@ -5635,7 +5625,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->T:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->f0:I
 
     .line 6
     .line 7
@@ -5669,7 +5659,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->W:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
@@ -5681,7 +5671,7 @@
 
     .line 6
     :cond_0
-    iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->W:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 7
     .line 8
@@ -5700,7 +5690,7 @@
     move-result p1
 
     .line 15
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 16
     .line 17
@@ -5708,12 +5698,12 @@
 
     .line 18
     :cond_1
-    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 19
     .line 20
     :goto_0
-    iget-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->W:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 21
     .line 22
@@ -5721,7 +5711,7 @@
 
     .line 23
     .line 24
-    iget-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->a0:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Landroid/graphics/drawable/Drawable;
 
     .line 25
     .line 26
@@ -5759,7 +5749,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
@@ -5771,7 +5761,7 @@
 
     .line 6
     :cond_0
-    iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->a0:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Landroid/graphics/drawable/Drawable;
 
     .line 7
     .line 8
@@ -5790,7 +5780,7 @@
     move-result p1
 
     .line 15
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 16
     .line 17
@@ -5798,12 +5788,12 @@
 
     .line 18
     :cond_1
-    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 19
     .line 20
     :goto_0
-    iget-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->W:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Landroid/graphics/drawable/Drawable;
 
     .line 21
     .line 22
@@ -5811,7 +5801,7 @@
 
     .line 23
     .line 24
-    iget-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->a0:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j0:Landroid/graphics/drawable/Drawable;
 
     .line 25
     .line 26
@@ -5849,7 +5839,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 2
     .line 3
@@ -5857,7 +5847,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->Q:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
 
     .line 6
     .line 7
@@ -5876,13 +5866,13 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lfz1;",
+            "Li92;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 2
     .line 3
@@ -5893,7 +5883,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 2
     .line 3
@@ -5901,7 +5891,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->R:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
 
     .line 6
     .line 7
@@ -5918,7 +5908,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->S:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
 
     .line 2
     .line 3
@@ -5926,7 +5916,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->S:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
 
     .line 6
     .line 7
@@ -5943,7 +5933,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->V:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h0:I
 
     .line 2
     .line 3
@@ -5951,7 +5941,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->V:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->h0:I
 
     .line 6
     .line 7
@@ -5985,7 +5975,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 2
     .line 3
@@ -5993,7 +5983,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 6
     .line 7
@@ -6010,7 +6000,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 2
     .line 3
@@ -6018,7 +6008,7 @@
 
     .line 4
     .line 5
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c0:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->l0:I
 
     .line 6
     .line 7
@@ -6082,7 +6072,7 @@
     sub-int/2addr v5, v3
 
     .line 24
-    iget-object v3, v0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v3, v0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 25
     .line 26
@@ -6102,7 +6092,7 @@
 
     .line 32
     .line 33
-    iget-object v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->i0:Ljava/util/List;
+    iget-object v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->r0:Ljava/util/List;
 
     .line 34
     .line 35
@@ -6117,7 +6107,7 @@
     move-object v12, v9
 
     .line 40
-    check-cast v12, Lfz1;
+    check-cast v12, Li92;
 
     .line 41
     .line 42
@@ -6133,7 +6123,7 @@
 
     .line 47
     .line 48
-    iget v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
+    iget v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->n0:I
 
     .line 49
     .line 50
@@ -6148,7 +6138,7 @@
 
     .line 53
     .line 54
-    iget v5, v0, Lcom/google/android/flexbox/FlexboxLayout;->S:I
+    iget v5, v0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
 
     .line 55
     .line 56
@@ -6198,7 +6188,7 @@
 
     .line 75
     .line 76
-    invoke-virtual {v12}, Lfz1;->a()I
+    invoke-virtual {v12}, Li92;->a()I
 
     .line 77
     .line 78
@@ -6210,7 +6200,7 @@
 
     .line 81
     .line 82
-    iget v13, v12, Lfz1;->e:I
+    iget v13, v12, Li92;->e:I
 
     .line 83
     .line 84
@@ -6235,7 +6225,7 @@
 
     .line 92
     :cond_1
-    const/4 v13, 0x0
+    move v13, v10
 
     .line 93
     :goto_1
@@ -6263,11 +6253,11 @@
 
     .line 101
     .line 102
-    iget v2, v0, Lcom/google/android/flexbox/FlexboxLayout;->S:I
+    iget v0, v0, Lcom/google/android/flexbox/FlexboxLayout;->e0:I
 
     .line 103
     .line 104
-    invoke-static {v2, v1}, Len0;->e(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lku0;->e(ILjava/lang/String;)V
 
     .line 105
     .line 106
@@ -6276,7 +6266,7 @@
 
     .line 108
     :cond_3
-    invoke-virtual {v12}, Lfz1;->a()I
+    invoke-virtual {v12}, Li92;->a()I
 
     .line 109
     .line 110
@@ -6288,7 +6278,7 @@
 
     .line 113
     .line 114
-    iget v13, v12, Lfz1;->e:I
+    iget v13, v12, Li92;->e:I
 
     .line 115
     .line 116
@@ -6309,7 +6299,7 @@
 
     .line 122
     :cond_4
-    const/4 v13, 0x0
+    move v13, v10
 
     .line 123
     :goto_2
@@ -6341,7 +6331,7 @@
     int-to-float v5, v1
 
     .line 134
-    invoke-virtual {v12}, Lfz1;->a()I
+    invoke-virtual {v12}, Li92;->a()I
 
     .line 135
     .line 136
@@ -6369,7 +6359,7 @@
     .line 145
     .line 146
     :goto_3
-    iget v14, v12, Lfz1;->e:I
+    iget v14, v12, Li92;->e:I
 
     .line 147
     .line 148
@@ -6398,7 +6388,7 @@
     int-to-float v5, v1
 
     .line 158
-    iget v13, v12, Lfz1;->e:I
+    iget v13, v12, Li92;->e:I
 
     .line 159
     .line 160
@@ -6426,14 +6416,14 @@
 
     .line 169
     :goto_4
-    const/4 v13, 0x0
+    move v13, v10
 
     .line 170
     goto :goto_5
 
     .line 171
     :cond_8
-    iget v5, v12, Lfz1;->e:I
+    iget v5, v12, Li92;->e:I
 
     .line 172
     .line 173
@@ -6486,7 +6476,7 @@
 
     .line 191
     :goto_6
-    iget v13, v12, Lfz1;->h:I
+    iget v13, v12, Li92;->h:I
 
     .line 192
     .line 193
@@ -6494,14 +6484,14 @@
 
     .line 194
     .line 195
-    iget v13, v12, Lfz1;->o:I
+    iget v13, v12, Li92;->o:I
 
     .line 196
     .line 197
     add-int/2addr v13, v10
 
     .line 198
-    const/4 v15, 0x1
+    move v15, v11
 
     .line 199
     invoke-virtual {v0, v13}, Lcom/google/android/flexbox/FlexboxLayout;->o(I)Landroid/view/View;
@@ -6524,7 +6514,7 @@
     move-result v7
 
     .line 209
-    const/16 p2, 0x4
+    move/from16 p2, v9
 
     .line 210
     .line 211
@@ -6541,11 +6531,11 @@
 
     .line 216
     .line 217
-    move/from16 v23, v16
+    move/from16 v21, v15
 
     .line 218
     .line 219
-    const/16 v21, 0x1
+    move/from16 v23, v16
 
     .line 220
     .line 221
@@ -6598,7 +6588,7 @@
 
     .line 242
     .line 243
-    iget v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 244
     .line 245
@@ -6627,7 +6617,7 @@
 
     .line 253
     :goto_9
-    iget v13, v12, Lfz1;->h:I
+    iget v13, v12, Li92;->h:I
 
     .line 254
     .line 255
@@ -6638,7 +6628,7 @@
 
     .line 257
     .line 258
-    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->b0:I
+    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->k0:I
 
     .line 259
     .line 260
@@ -6650,7 +6640,7 @@
 
     .line 263
     .line 264
-    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->d0:I
+    iget v13, v0, Lcom/google/android/flexbox/FlexboxLayout;->m0:I
 
     .line 265
     .line 266
@@ -6674,7 +6664,7 @@
 
     .line 273
     :goto_b
-    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->h0:Ll5;
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->q0:Lv5;
 
     .line 274
     .line 275
@@ -6718,11 +6708,11 @@
 
     .line 294
     .line 295
-    move/from16 v15, v17
+    move/from16 v21, v15
 
     .line 296
     .line 297
-    const/16 v21, 0x1
+    move/from16 v15, v17
 
     .line 298
     .line 299
@@ -6741,7 +6731,7 @@
     const/4 v13, 0x1
 
     .line 306
-    invoke-virtual/range {v10 .. v17}, Ll5;->P(Landroid/view/View;Lfz1;ZIIII)V
+    invoke-virtual/range {v10 .. v17}, Lv5;->V(Landroid/view/View;Li92;ZIIII)V
 
     .line 307
     .line 308
@@ -6759,7 +6749,7 @@
 
     .line 313
     .line 314
-    const/16 v21, 0x1
+    move/from16 v21, v15
 
     .line 315
     .line 316
@@ -6806,7 +6796,7 @@
     const/4 v13, 0x1
 
     .line 337
-    invoke-virtual/range {v10 .. v17}, Ll5;->P(Landroid/view/View;Lfz1;ZIIII)V
+    invoke-virtual/range {v10 .. v17}, Lv5;->V(Landroid/view/View;Li92;ZIIII)V
 
     .line 338
     .line 339
@@ -6819,11 +6809,11 @@
 
     .line 342
     .line 343
-    move/from16 v23, v16
+    move/from16 v21, v15
 
     .line 344
     .line 345
-    const/16 v21, 0x1
+    move/from16 v23, v16
 
     .line 346
     .line 347
@@ -6877,7 +6867,7 @@
     move v14, v4
 
     .line 371
-    invoke-virtual/range {v10 .. v17}, Ll5;->P(Landroid/view/View;Lfz1;ZIIII)V
+    invoke-virtual/range {v10 .. v17}, Lv5;->V(Landroid/view/View;Li92;ZIIII)V
 
     .line 372
     .line 373
@@ -6932,7 +6922,7 @@
     const/4 v13, 0x0
 
     .line 397
-    invoke-virtual/range {v10 .. v17}, Ll5;->P(Landroid/view/View;Lfz1;ZIIII)V
+    invoke-virtual/range {v10 .. v17}, Lv5;->V(Landroid/view/View;Li92;ZIIII)V
 
     .line 398
     .line 399
@@ -7018,7 +7008,7 @@
 
     .line 433
     .line 434
-    invoke-virtual/range {v10 .. v15}, Lfz1;->b(Landroid/view/View;IIII)V
+    invoke-virtual/range {v10 .. v15}, Li92;->b(Landroid/view/View;IIII)V
 
     .line 435
     .line 436
@@ -7047,7 +7037,7 @@
     const/4 v14, 0x0
 
     .line 445
-    invoke-virtual/range {v10 .. v15}, Lfz1;->b(Landroid/view/View;IIII)V
+    invoke-virtual/range {v10 .. v15}, Li92;->b(Landroid/view/View;IIII)V
 
     .line 446
     .line 447
@@ -7064,7 +7054,7 @@
 
     .line 452
     :cond_11
-    const/16 p2, 0x4
+    move/from16 p2, v9
 
     .line 453
     .line 454
@@ -7077,44 +7067,46 @@
 
     .line 457
     .line 458
-    move/from16 v16, v23
+    move/from16 v9, p2
 
     .line 459
     .line 460
-    const/4 v9, 0x4
+    move/from16 v11, v21
 
     .line 461
-    const/4 v11, 0x1
-
     .line 462
-    goto/16 :goto_6
+    move/from16 v16, v23
 
     .line 463
     .line 464
-    :cond_12
-    move/from16 v23, v16
+    goto/16 :goto_6
 
     .line 465
     .line 466
-    iget v5, v12, Lfz1;->g:I
+    :cond_12
+    move/from16 v23, v16
 
     .line 467
     .line 468
-    add-int/2addr v4, v5
+    iget v5, v12, Li92;->g:I
 
     .line 469
-    sub-int v5, v23, v5
-
     .line 470
+    add-int/2addr v4, v5
+
     .line 471
-    add-int/lit8 v8, v8, 0x1
+    sub-int v5, v23, v5
 
     .line 472
     .line 473
-    goto/16 :goto_0
+    add-int/lit8 v8, v8, 0x1
 
     .line 474
     .line 475
+    goto/16 :goto_0
+
+    .line 476
+    .line 477
     :cond_13
     return-void
 .end method
@@ -7184,19 +7176,19 @@
 
     .line 29
     :cond_0
-    const-string p2, "Invalid flex direction: "
+    const-string p0, "Invalid flex direction: "
 
     .line 30
     .line 31
-    invoke-static {p1, p2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33
     .line 34
-    move-result-object p1
+    move-result-object p0
 
     .line 35
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 36
     .line 37
@@ -7336,19 +7328,19 @@
 
     .line 99
     :cond_4
-    const-string p1, "Unknown width mode is set: "
+    const-string p0, "Unknown width mode is set: "
 
     .line 100
     .line 101
-    invoke-static {v0, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 102
     .line 103
     .line 104
-    move-result-object p1
+    move-result-object p0
 
     .line 105
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 106
     .line 107
@@ -7439,19 +7431,19 @@
 
     .line 145
     :cond_9
-    const-string p1, "Unknown height mode is set: "
+    const-string p0, "Unknown height mode is set: "
 
     .line 146
     .line 147
-    invoke-static {v2, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 148
     .line 149
     .line 150
-    move-result-object p1
+    move-result-object p0
 
     .line 151
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 152
     .line 153

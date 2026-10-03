@@ -1,9 +1,15 @@
 package defpackage;
 
-import android.view.View;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class i4 {
+    public static final dn4 a;
+    public static final dn4 b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface i4 {
-    boolean e(View view);
+    static {
+        g4 g4Var = new g4(0);
+        an4 an4Var = an4.X;
+        a = hc4.K(wo6.a(vx6.W(an4Var, g4Var), true, new h4(0)), 10.0f, 0.0f, 2);
+        b = hc4.K(wo6.a(vx6.W(an4Var, new g4(1)), true, new h4(0)), 0.0f, 10.0f, 1);
+    }
 }

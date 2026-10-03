@@ -1,22 +1,32 @@
 package defpackage;
 
-import android.os.IInterface;
-import android.os.RemoteCallbackList;
-import androidx.room.MultiInstanceInvalidationService;
+import java.util.Arrays;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class x74 extends RemoteCallbackList {
-    public final /* synthetic */ MultiInstanceInvalidationService a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class x74 extends aj5 {
+    public long[] a;
+    public int b;
 
-    public x74(MultiInstanceInvalidationService multiInstanceInvalidationService) {
-        this.a = multiInstanceInvalidationService;
+    @Override // defpackage.aj5
+    public final Object a() {
+        return Arrays.copyOf(this.a, this.b);
     }
 
-    @Override // android.os.RemoteCallbackList
-    public final void onCallbackDied(IInterface iInterface, Object obj) {
-        ((jj2) iInterface).getClass();
-        obj.getClass();
-        this.a.R.remove((Integer) obj);
+    @Override // defpackage.aj5
+    public final void b(int i) {
+        long[] jArr = this.a;
+        if (jArr.length < i) {
+            int length = jArr.length * 2;
+            if (i < length) {
+                i = length;
+            }
+            this.a = Arrays.copyOf(jArr, i);
+        }
+    }
+
+    @Override // defpackage.aj5
+    public final int d() {
+        return this.b;
     }
 }

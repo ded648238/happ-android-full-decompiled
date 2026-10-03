@@ -1,220 +1,118 @@
-.class public abstract synthetic Lhk7;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Lhk7;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final enum X:Lhk7;
+
+.field public static final enum Y:Lhk7;
+
+.field public static final synthetic Z:[Lhk7;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 4
 
     .line 1
-    invoke-static {}, Lb05;->values()[Lb05;
+    new-instance v0, Lhk7;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    const-string v1, "FEATURE_COMBINATION_TABLE"
 
+    .line 4
     .line 5
-    array-length v0, v0
+    const/4 v2, 0x0
 
     .line 6
-    new-array v0, v0, [I
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lb05;->V:Lb05;
-
     .line 9
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    sput-object v0, Lhk7;->X:Lhk7;
 
+    .line 10
     .line 11
+    new-instance v1, Lhk7;
+
     .line 12
     .line 13
-    move-result v1
+    const-string v2, "CAPTURE_SESSION_TABLES"
 
     .line 14
-    const/4 v2, 0x1
-
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    const/4 v3, 0x1
 
     .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lb05;->W:Lb05;
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 17
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    sput-object v1, Lhk7;->Y:Lhk7;
 
     .line 20
     .line 21
+    filled-new-array {v0, v1}, [Lhk7;
+
     .line 22
-    move-result v1
-
     .line 23
-    const/4 v2, 0x2
-
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    move-result-object v0
 
     .line 25
+    sput-object v0, Lhk7;->Z:[Lhk7;
+
     .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lb05;->X:Lb05;
-
     .line 27
-    .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    const/4 v2, 0x3
-
-    .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 34
-    .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, Lb05;->Y:Lb05;
-
-    .line 36
-    .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v1
-
-    .line 41
-    const/4 v2, 0x4
-
-    .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 43
-    .line 44
-    :catch_3
-    :try_start_4
-    sget-object v1, Lb05;->Z:Lb05;
-
-    .line 45
-    .line 46
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 47
-    .line 48
-    .line 49
-    move-result v1
-
-    .line 50
-    const/4 v2, 0x5
-
-    .line 51
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 52
-    .line 53
-    :catch_4
-    :try_start_5
-    sget-object v1, Lb05;->a0:Lb05;
-
-    .line 54
-    .line 55
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 56
-    .line 57
-    .line 58
-    move-result v1
-
-    .line 59
-    const/4 v2, 0x6
-
-    .line 60
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 61
-    .line 62
-    :catch_5
-    :try_start_6
-    sget-object v1, Lb05;->b0:Lb05;
-
-    .line 63
-    .line 64
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 65
-    .line 66
-    .line 67
-    move-result v1
-
-    .line 68
-    const/4 v2, 0x7
-
-    .line 69
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    .line 70
-    .line 71
-    :catch_6
-    :try_start_7
-    sget-object v1, Lb05;->c0:Lb05;
-
-    .line 72
-    .line 73
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 74
-    .line 75
-    .line 76
-    move-result v1
-
-    .line 77
-    const/16 v2, 0x8
-
-    .line 78
-    .line 79
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    .line 80
-    .line 81
-    :catch_7
-    sput-object v0, Lhk7;->a:[I
-
-    .line 82
-    .line 83
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lhk7;
+    .locals 1
+
+    .line 1
+    const-class v0, Lhk7;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lhk7;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lhk7;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lhk7;->Z:[Lhk7;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lhk7;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

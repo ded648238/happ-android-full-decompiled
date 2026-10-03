@@ -1,18 +1,26 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class on3 {
-    public final xc0 a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class on3 extends qn3 {
+    public final bu3 a;
 
-    public on3(xc0 xc0Var) {
-        this.a = xc0Var;
+    public on3(bu3 bu3Var) {
+        this.a = bu3Var;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof on3) && this.a.equals(((on3) obj).a);
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode();
     }
 
     public final String toString() {
-        StringBuilder sb = new StringBuilder("[Result: <");
-        sb.append("Value: " + this.a);
-        sb.append(">]");
-        return sb.toString();
+        return "LocalClass(type=" + this.a + ')';
     }
 }

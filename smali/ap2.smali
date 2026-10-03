@@ -1,58 +1,91 @@
-.class public abstract synthetic Lap2;
+.class public final Lap2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ll16;
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final X:Lzo2;
+
+.field public final Y:Lbp2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lzo2;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Landroid/text/Layout$Alignment;->values()[Landroid/text/Layout$Alignment;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, Lap2;->X:Lzo2;
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    invoke-interface {p1}, Lzo2;->c()Lbp2;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Landroid/text/Layout$Alignment;->ALIGN_CENTER:Landroid/text/Layout$Alignment;
-
     .line 9
+    move-result-object p1
+
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iput-object p1, p0, Lap2;->Y:Lbp2;
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    return-void
+.end method
 
-    .line 14
-    const/4 v2, 0x1
 
-    .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+# virtual methods
+.method public final a()V
+    .locals 1
 
-    .line 16
-    .line 17
-    :catch_0
-    sput-object v0, Lap2;->a:[I
+    .line 1
+    iget-object v0, p0, Lap2;->X:Lzo2;
 
-    .line 18
-    .line 19
+    .line 2
+    .line 3
+    iget-object p0, p0, Lap2;->Y:Lbp2;
+
+    .line 4
+    .line 5
+    invoke-interface {v0, p0}, Lzo2;->a(Lbp2;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final b()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lap2;->X:Lzo2;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lap2;->Y:Lbp2;
+
+    .line 4
+    .line 5
+    invoke-interface {v0, p0}, Lzo2;->a(Lbp2;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final c()V
+    .locals 0
+
+    .line 1
     return-void
 .end method

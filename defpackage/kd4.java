@@ -1,27 +1,38 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class kd4 {
-    public static final kd4 Q;
-    public static final kd4 R;
-    public static final /* synthetic */ kd4[] S;
+import su.happ.proxyutility.feature.main.MainViewModel;
 
-    static {
-        kd4 kd4Var = new kd4("Min", 0);
-        Q = kd4Var;
-        kd4 kd4Var2 = new kd4("Max", 1);
-        R = kd4Var2;
-        S = new kd4[]{kd4Var, kd4Var2};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final /* synthetic */ class kd4 implements mi2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ i41 Y;
+    public final /* synthetic */ MainViewModel Z;
+    public final /* synthetic */ String c0;
+
+    public /* synthetic */ kd4(i41 i41Var, MainViewModel mainViewModel, String str, int i) {
+        this.X = i;
+        this.Y = i41Var;
+        this.Z = mainViewModel;
+        this.c0 = str;
     }
 
-    public static kd4 valueOf(String str) {
-        return (kd4) Enum.valueOf(kd4.class, str);
-    }
-
-    public static kd4[] values() {
-        return (kd4[]) S.clone();
+    @Override // defpackage.mi2
+    public final Object invoke(Object obj) {
+        int i = this.X;
+        r98 r98Var = r98.a;
+        i41 i41Var = this.Y;
+        long longValue = ((Long) obj).longValue();
+        switch (i) {
+            case 0:
+                pc1 pc1Var = jm1.a;
+                m93.L(i41Var, ac4.a, new ld4(this.Z, this.c0, longValue, null, 0), 2);
+                break;
+            default:
+                pc1 pc1Var2 = jm1.a;
+                m93.L(i41Var, ac4.a, new ld4(this.Z, this.c0, longValue, null, 1), 2);
+                break;
+        }
+        return r98Var;
     }
 }

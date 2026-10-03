@@ -1,103 +1,118 @@
 package defpackage;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class qv5 implements Cloneable {
-    public int A0;
-    public int B0;
-    public int C0;
-    public long Q = 0;
-    public zv5 R;
-    public Float S;
-    public zv5 T;
-    public Float U;
-    public cv5 V;
-    public Float W;
-    public cv5[] X;
-    public cv5 Y;
-    public Float Z;
-    public tu5 a0;
-    public ArrayList b0;
-    public cv5 c0;
-    public Integer d0;
-    public Boolean e0;
-    public pv6 f0;
-    public String g0;
-    public String h0;
-    public String i0;
-    public Boolean j0;
-    public Boolean k0;
-    public zv5 l0;
-    public Float m0;
-    public String n0;
-    public String o0;
-    public zv5 p0;
-    public Float q0;
-    public zv5 r0;
-    public Float s0;
-    public int t0;
-    public int u0;
-    public int v0;
-    public int w0;
-    public int x0;
-    public int y0;
-    public int z0;
-
-    public static qv5 a() {
-        qv5 qv5Var = new qv5();
-        qv5Var.Q = -1L;
-        tu5 tu5Var = tu5.R;
-        qv5Var.R = tu5Var;
-        qv5Var.t0 = 1;
-        Float fValueOf = Float.valueOf(1.0f);
-        qv5Var.S = fValueOf;
-        qv5Var.T = null;
-        qv5Var.U = fValueOf;
-        qv5Var.V = new cv5(1.0f);
-        qv5Var.u0 = 1;
-        qv5Var.v0 = 1;
-        qv5Var.W = Float.valueOf(4.0f);
-        qv5Var.X = null;
-        qv5Var.Y = new cv5(0.0f);
-        qv5Var.Z = fValueOf;
-        qv5Var.a0 = tu5Var;
-        qv5Var.b0 = null;
-        qv5Var.c0 = new cv5(7, 12.0f);
-        qv5Var.d0 = 400;
-        qv5Var.w0 = 1;
-        qv5Var.x0 = 1;
-        qv5Var.y0 = 1;
-        qv5Var.z0 = 1;
-        Boolean bool = Boolean.TRUE;
-        qv5Var.e0 = bool;
-        qv5Var.f0 = null;
-        qv5Var.g0 = null;
-        qv5Var.h0 = null;
-        qv5Var.i0 = null;
-        qv5Var.j0 = bool;
-        qv5Var.k0 = bool;
-        qv5Var.l0 = tu5Var;
-        qv5Var.m0 = fValueOf;
-        qv5Var.n0 = null;
-        qv5Var.A0 = 1;
-        qv5Var.o0 = null;
-        qv5Var.p0 = null;
-        qv5Var.q0 = fValueOf;
-        qv5Var.r0 = null;
-        qv5Var.s0 = fValueOf;
-        qv5Var.B0 = 1;
-        qv5Var.C0 = 1;
-        return qv5Var;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class qv5 extends q92 {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public qv5(yx6 yx6Var, yx6 yx6Var2) {
+        super(yx6Var, yx6Var2);
+        yx6Var.getClass();
+        yx6Var2.getClass();
+        du3.a.b(yx6Var, yx6Var2);
     }
 
-    public final Object clone() {
-        qv5 qv5Var = (qv5) super.clone();
-        cv5[] cv5VarArr = this.X;
-        if (cv5VarArr != null) {
-            qv5Var.X = (cv5[]) cv5VarArr.clone();
+    public static final ArrayList x0(qh1 qh1Var, bu3 bu3Var) {
+        List<b58> m0 = bu3Var.m0();
+        ArrayList arrayList = new ArrayList(ut0.F0(m0, 10));
+        for (b58 b58Var : m0) {
+            b58Var.getClass();
+            StringBuilder sb = new StringBuilder();
+            tt0.g1(ut.L(b58Var), sb, ", ", null, null, new ph1(qh1Var, 0), 60);
+            arrayList.add(sb.toString());
         }
-        return qv5Var;
+        return arrayList;
+    }
+
+    public static final String y0(String str, String str2) {
+        if (!ea7.M0(str, '<')) {
+            return str;
+        }
+        return ea7.t1('<', str) + '<' + str2 + '>' + ea7.r1('>', str, str);
+    }
+
+    @Override // defpackage.q92, defpackage.bu3
+    public final xi4 L() {
+        lr0 C = o0().C();
+        ln4 ln4Var = C instanceof ln4 ? (ln4) C : null;
+        if (ln4Var == null) {
+            q05.s(o0().C(), "Incorrect classifier: ");
+            return null;
+        }
+        xi4 m0 = ln4Var.m0(new pv5());
+        m0.getClass();
+        return m0;
+    }
+
+    @Override // defpackage.bu3
+    public final bu3 q0(hu3 hu3Var) {
+        hu3Var.getClass();
+        yx6 yx6Var = this.Y;
+        yx6Var.getClass();
+        yx6 yx6Var2 = this.Z;
+        yx6Var2.getClass();
+        return new qv5(yx6Var, yx6Var2);
+    }
+
+    @Override // defpackage.cb8
+    public final cb8 s0(boolean z) {
+        return new qv5(this.Y.s0(z), this.Z.s0(z));
+    }
+
+    @Override // defpackage.cb8
+    /* renamed from: t0 */
+    public final cb8 q0(hu3 hu3Var) {
+        hu3Var.getClass();
+        yx6 yx6Var = this.Y;
+        yx6Var.getClass();
+        yx6 yx6Var2 = this.Z;
+        yx6Var2.getClass();
+        return new qv5(yx6Var, yx6Var2);
+    }
+
+    @Override // defpackage.cb8
+    public final cb8 u0(q38 q38Var) {
+        q38Var.getClass();
+        return new qv5(this.Y.u0(q38Var), this.Z.u0(q38Var));
+    }
+
+    @Override // defpackage.q92
+    public final yx6 v0() {
+        return this.Y;
+    }
+
+    @Override // defpackage.q92
+    public final String w0(qh1 qh1Var, qh1 qh1Var2) {
+        yx6 yx6Var = this.Y;
+        String P = qh1Var.P(yx6Var);
+        yx6 yx6Var2 = this.Z;
+        String P2 = qh1Var.P(yx6Var2);
+        if (qh1Var2.a.p()) {
+            return "raw (" + P + ".." + P2 + ')';
+        }
+        if (yx6Var2.m0().isEmpty()) {
+            return qh1Var.x(P, P2, wv7.f(this));
+        }
+        ArrayList x0 = x0(qh1Var, yx6Var);
+        ArrayList x02 = x0(qh1Var, yx6Var2);
+        String h1 = tt0.h1(x0, ", ", null, null, i25.e0, 30);
+        ArrayList L1 = tt0.L1(x0, x02);
+        if (!L1.isEmpty()) {
+            Iterator it = L1.iterator();
+            while (it.hasNext()) {
+                w55 w55Var = (w55) it.next();
+                String str = (String) w55Var.X;
+                String str2 = (String) w55Var.Y;
+                if (!m93.h(str, ea7.f1(str2, "out ")) && !str2.equals("*")) {
+                    break;
+                }
+            }
+        }
+        P2 = y0(P2, h1);
+        String y0 = y0(P, h1);
+        return y0.equals(P2) ? y0 : qh1Var.x(y0, P2, wv7.f(this));
     }
 }

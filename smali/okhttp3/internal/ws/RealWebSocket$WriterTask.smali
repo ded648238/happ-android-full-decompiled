@@ -1,6 +1,6 @@
 .class final Lokhttp3/internal/ws/RealWebSocket$WriterTask;
 .super Lokhttp3/internal/concurrent/Task;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -101,7 +101,7 @@
     const/4 v2, 0x0
 
     .line 27
-    invoke-direct {p0, p1, v2, v0, v1}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;ZILj31;)V
+    invoke-direct {p0, p1, v2, v0, v1}, Lokhttp3/internal/concurrent/Task;-><init>(Ljava/lang/String;ZILib1;)V
 
     .line 28
     .line 29
@@ -112,7 +112,7 @@
 
 # virtual methods
 .method public runOnce()J
-    .locals 3
+    .locals 2
 
     .line 1
     :try_start_0
@@ -125,12 +125,12 @@
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 7
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
@@ -145,14 +145,14 @@
     move-exception v0
 
     .line 13
-    iget-object v1, p0, Lokhttp3/internal/ws/RealWebSocket$WriterTask;->this$0:Lokhttp3/internal/ws/RealWebSocket;
+    iget-object p0, p0, Lokhttp3/internal/ws/RealWebSocket$WriterTask;->this$0:Lokhttp3/internal/ws/RealWebSocket;
 
     .line 14
     .line 15
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 16
-    invoke-virtual {v1, v0, v2}, Lokhttp3/internal/ws/RealWebSocket;->failWebSocket(Ljava/lang/Exception;Lokhttp3/Response;)V
+    invoke-virtual {p0, v0, v1}, Lokhttp3/internal/ws/RealWebSocket;->failWebSocket(Ljava/lang/Exception;Lokhttp3/Response;)V
 
     .line 17
     .line 18

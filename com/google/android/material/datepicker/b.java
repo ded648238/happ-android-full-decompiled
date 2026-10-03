@@ -1,30 +1,38 @@
 package com.google.android.material.datepicker;
 
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import androidx.recyclerview.widget.l;
-import defpackage.c95;
-import defpackage.en7;
-import defpackage.j95;
-import defpackage.qn7;
-import java.util.WeakHashMap;
+import defpackage.vn4;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class b extends l {
-    public final TextView u;
-    public final MaterialCalendarGridView v;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class b implements Runnable {
+    public final /* synthetic */ MaterialCalendarGridView X;
+    public final /* synthetic */ int Y;
 
-    public b(LinearLayout linearLayout, boolean z) {
-        super(linearLayout);
-        TextView textView = (TextView) linearLayout.findViewById(c95.month_title);
-        this.u = textView;
-        WeakHashMap weakHashMap = qn7.a;
-        new en7(j95.tag_accessibility_heading, Boolean.class, 0, 28, 3).g(textView, Boolean.TRUE);
-        this.v = (MaterialCalendarGridView) linearLayout.findViewById(c95.month_grid);
-        if (z) {
+    public /* synthetic */ b(e eVar, MaterialCalendarGridView materialCalendarGridView, int i) {
+        this.X = materialCalendarGridView;
+        this.Y = i;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        int i;
+        int a;
+        MaterialCalendarGridView materialCalendarGridView = this.X;
+        if (!materialCalendarGridView.hasFocus() || (i = this.Y) == 0) {
             return;
         }
-        textView.setVisibility(8);
+        vn4 b = materialCalendarGridView.b();
+        if (i == 1) {
+            a = b.b(b.f() + 1);
+            if (a == -1) {
+                a = b.f();
+            }
+        } else {
+            a = b.a(b.c() - 1);
+            if (a == -1) {
+                a = b.c();
+            }
+        }
+        materialCalendarGridView.setSelection(a);
     }
 }

@@ -1,29 +1,16 @@
-.class public final synthetic Ltd;
+.class public final Ltd;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lu72;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic Q:Lip0;
+.field public final a:F
 
-.field public final synthetic R:Lg72;
-
-.field public final synthetic S:Le64;
-
-.field public final synthetic T:Lu72;
-
-.field public final synthetic U:Z
-
-.field public final synthetic V:Ln24;
-
-.field public final synthetic W:Ljn4;
+.field public final b:F
 
 
 # direct methods
-.method public synthetic constructor <init>(Lip0;Lg72;Le64;Lu72;ZLn24;Ljn4;I)V
+.method public constructor <init>(FF)V
     .locals 0
 
     .line 1
@@ -32,108 +19,202 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ltd;->Q:Lip0;
+    iput p1, p0, Ltd;->a:F
 
     .line 5
     .line 6
-    iput-object p2, p0, Ltd;->R:Lg72;
+    iput p2, p0, Ltd;->b:F
 
     .line 7
     .line 8
-    iput-object p3, p0, Ltd;->S:Le64;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Ltd;->T:Lu72;
-
-    .line 11
-    .line 12
-    iput-boolean p5, p0, Ltd;->U:Z
-
-    .line 13
-    .line 14
-    iput-object p6, p0, Ltd;->V:Ln24;
-
-    .line 15
-    .line 16
-    iput-object p7, p0, Ltd;->W:Ljn4;
-
-    .line 17
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 9
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    move-object v7, p1
+    const/4 v0, 0x1
 
     .line 2
-    check-cast v7, Luq0;
+    if-ne p0, p1, :cond_0
 
     .line 3
     .line 4
-    check-cast p2, Ljava/lang/Integer;
+    return v0
 
     .line 5
+    :cond_0
+    instance-of v1, p1, Ltd;
+
     .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 7
+    const/4 v2, 0x0
+
     .line 8
+    if-nez v1, :cond_1
+
     .line 9
-    const p1, 0xc00007
-
     .line 10
-    .line 11
-    .line 12
-    invoke-static {p1}, Luy7;->X(I)I
+    return v2
 
+    .line 11
+    :cond_1
+    check-cast p1, Ltd;
+
+    .line 12
     .line 13
+    iget v1, p0, Ltd;->a:F
+
     .line 14
     .line 15
-    move-result v8
+    iget v3, p1, Ltd;->a:F
 
     .line 16
-    iget-object v0, p0, Ltd;->Q:Lip0;
-
     .line 17
-    .line 18
-    iget-object v1, p0, Ltd;->R:Lg72;
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
+    .line 18
     .line 19
     .line 20
-    iget-object v2, p0, Ltd;->S:Le64;
+    move-result v1
 
     .line 21
-    .line 22
-    iget-object v3, p0, Ltd;->T:Lu72;
+    if-eqz v1, :cond_2
 
+    .line 22
     .line 23
+    return v2
+
     .line 24
-    iget-boolean v4, p0, Ltd;->U:Z
+    :cond_2
+    iget p0, p0, Ltd;->b:F
 
     .line 25
     .line 26
-    iget-object v5, p0, Ltd;->V:Ln24;
+    iget p1, p1, Ltd;->b:F
 
     .line 27
     .line 28
-    iget-object v6, p0, Ltd;->W:Ljn4;
+    invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
 
     .line 29
     .line 30
-    invoke-static/range {v0 .. v8}, Lvd;->b(Lip0;Lg72;Le64;Lu72;ZLn24;Ljn4;Luq0;I)V
-
     .line 31
-    .line 32
-    .line 33
-    sget-object p1, Lbh7;->a:Lbh7;
+    move-result p0
 
+    .line 32
+    if-eqz p0, :cond_3
+
+    .line 33
     .line 34
+    return v2
+
     .line 35
-    return-object p1
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Ltd;->a:F
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget p0, p0, Ltd;->b:F
+
+    .line 10
+    .line 11
+    invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    add-int/2addr p0, v0
+
+    .line 16
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "FlingResult(distanceCoefficient="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, Ltd;->a:F
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", velocityCoefficient="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget p0, p0, Ltd;->b:F
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string p0, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p0
+
+    .line 32
+    return-object p0
 .end method

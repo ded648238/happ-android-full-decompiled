@@ -1,114 +1,162 @@
 .class public final Lnp2;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lgh6;
+.super Lop2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:Ljava/lang/Float;
-
-.field public R:Ljava/lang/Float;
-
-.field public final S:Lto4;
-
-.field public T:Low6;
-
-.field public U:Z
-
-.field public V:Z
-
-.field public W:J
-
-.field public final synthetic X:Lpp2;
+.field public final synthetic r:Landroidx/leanback/widget/GridLayoutManager;
 
 
 # direct methods
-.method public constructor <init>(Lpp2;Ljava/lang/Float;Ljava/lang/Float;Lmp2;)V
-    .locals 6
+.method public constructor <init>(Landroidx/leanback/widget/GridLayoutManager;)V
+    .locals 0
 
     .line 1
-    sget-object v2, Lub;->o:Lva7;
+    iput-object p1, p0, Lnp2;->r:Landroidx/leanback/widget/GridLayoutManager;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lop2;-><init>(Landroidx/leanback/widget/GridLayoutManager;)V
 
     .line 4
     .line 5
     .line 6
-    iput-object p1, p0, Lnp2;->X:Lpp2;
-
-    .line 7
-    .line 8
-    iput-object p2, p0, Lnp2;->Q:Ljava/lang/Float;
-
-    .line 9
-    .line 10
-    iput-object p3, p0, Lnp2;->R:Ljava/lang/Float;
-
-    .line 11
-    .line 12
-    invoke-static {p2}, Lvs0;->T(Ljava/lang/Object;)Lto4;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    iput-object p1, p0, Lnp2;->S:Lto4;
-
-    .line 17
-    .line 18
-    new-instance v0, Low6;
-
-    .line 19
-    .line 20
-    iget-object v3, p0, Lnp2;->Q:Ljava/lang/Float;
-
-    .line 21
-    .line 22
-    iget-object v4, p0, Lnp2;->R:Ljava/lang/Float;
-
-    .line 23
-    .line 24
-    const/4 v5, 0x0
-
-    .line 25
-    move-object v1, p4
-
-    .line 26
-    invoke-direct/range {v0 .. v5}, Low6;-><init>(Lfi;Lva7;Ljava/lang/Object;Ljava/lang/Object;Lmi;)V
-
-    .line 27
-    .line 28
-    .line 29
-    iput-object v0, p0, Lnp2;->T:Low6;
-
-    .line 30
-    .line 31
     return-void
 .end method
 
 
 # virtual methods
-.method public final getValue()Ljava/lang/Object;
-    .locals 1
+.method public final a(I)Landroid/graphics/PointF;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lnp2;->S:Lto4;
+    iget-object v0, p0, Lfy5;->b:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lto4;->getValue()Ljava/lang/Object;
+    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->p0:Landroidx/recyclerview/widget/j;
 
     .line 4
     .line 5
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/j;->I()I
+
     .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-nez v0, :cond_0
+
+    .line 10
+    .line 11
+    const/4 p0, 0x0
+
+    .line 12
+    return-object p0
+
+    .line 13
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 14
+    iget-object p0, p0, Lnp2;->r:Landroidx/leanback/widget/GridLayoutManager;
+
+    .line 15
+    .line 16
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/j;->H(I)Landroid/view/View;
+
+    .line 17
+    .line 18
+    .line 19
     move-result-object v0
 
-    .line 7
-    return-object v0
+    .line 20
+    invoke-static {v0}, Landroidx/recyclerview/widget/j;->T(Landroid/view/View;)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v0
+
+    .line 24
+    iget v1, p0, Landroidx/leanback/widget/GridLayoutManager;->B0:I
+
+    .line 25
+    .line 26
+    const/high16 v2, 0x40000
+
+    .line 27
+    .line 28
+    and-int/2addr v1, v2
+
+    .line 29
+    if-eqz v1, :cond_1
+
+    .line 30
+    .line 31
+    if-le p1, v0, :cond_2
+
+    .line 32
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :cond_1
+    if-ge p1, v0, :cond_2
+
+    .line 35
+    .line 36
+    :goto_0
+    const/4 p1, -0x1
+
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_2
+    const/4 p1, 0x1
+
+    .line 39
+    :goto_1
+    iget p0, p0, Landroidx/leanback/widget/GridLayoutManager;->r0:I
+
+    .line 40
+    .line 41
+    const/4 v0, 0x0
+
+    .line 42
+    if-nez p0, :cond_3
+
+    .line 43
+    .line 44
+    new-instance p0, Landroid/graphics/PointF;
+
+    .line 45
+    .line 46
+    int-to-float p1, p1
+
+    .line 47
+    invoke-direct {p0, p1, v0}, Landroid/graphics/PointF;-><init>(FF)V
+
+    .line 48
+    .line 49
+    .line 50
+    return-object p0
+
+    .line 51
+    :cond_3
+    new-instance p0, Landroid/graphics/PointF;
+
+    .line 52
+    .line 53
+    int-to-float p1, p1
+
+    .line 54
+    invoke-direct {p0, v0, p1}, Landroid/graphics/PointF;-><init>(FF)V
+
+    .line 55
+    .line 56
+    .line 57
+    return-object p0
 .end method

@@ -1,26 +1,26 @@
 package androidx.databinding;
 
 import android.view.View;
-import defpackage.gz0;
-import defpackage.xn7;
+import defpackage.d71;
+import defpackage.vi8;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class MergedDataBinderMapper extends gz0 {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class MergedDataBinderMapper extends d71 {
     public HashSet a;
     public CopyOnWriteArrayList b;
     public CopyOnWriteArrayList c;
 
-    @Override // defpackage.gz0
-    public final xn7 b(View view, int i) {
+    @Override // defpackage.d71
+    public final vi8 b(View view, int i) {
         Iterator it = this.b.iterator();
         while (it.hasNext()) {
-            xn7 xn7VarB = ((gz0) it.next()).b(view, i);
-            if (xn7VarB != null) {
-                return xn7VarB;
+            vi8 b = ((d71) it.next()).b(view, i);
+            if (b != null) {
+                return b;
             }
         }
         if (e()) {
@@ -29,13 +29,13 @@ public class MergedDataBinderMapper extends gz0 {
         return null;
     }
 
-    @Override // defpackage.gz0
-    public final xn7 c(View[] viewArr, int i) {
+    @Override // defpackage.d71
+    public final vi8 c(View[] viewArr, int i) {
         Iterator it = this.b.iterator();
         while (it.hasNext()) {
-            xn7 xn7VarC = ((gz0) it.next()).c(viewArr, i);
-            if (xn7VarC != null) {
-                return xn7VarC;
+            vi8 c = ((d71) it.next()).c(viewArr, i);
+            if (c != null) {
+                return c;
             }
         }
         if (e()) {
@@ -44,24 +44,26 @@ public class MergedDataBinderMapper extends gz0 {
         return null;
     }
 
-    public final void d(gz0 gz0Var) {
-        if (this.a.add(gz0Var.getClass())) {
-            this.b.add(gz0Var);
-            Iterator it = gz0Var.a().iterator();
+    public final void d(d71 d71Var) {
+        if (this.a.add(d71Var.getClass())) {
+            this.b.add(d71Var);
+            Iterator it = d71Var.a().iterator();
             while (it.hasNext()) {
-                d((gz0) it.next());
+                d((d71) it.next());
             }
         }
     }
 
     public final boolean e() {
-        CopyOnWriteArrayList<String> copyOnWriteArrayList = this.c;
+        CopyOnWriteArrayList copyOnWriteArrayList = this.c;
+        Iterator it = copyOnWriteArrayList.iterator();
         boolean z = false;
-        for (String str : copyOnWriteArrayList) {
+        while (it.hasNext()) {
+            String str = (String) it.next();
             try {
                 Class<?> cls = Class.forName(str);
-                if (gz0.class.isAssignableFrom(cls)) {
-                    d((gz0) cls.newInstance());
+                if (d71.class.isAssignableFrom(cls)) {
+                    d((d71) cls.newInstance());
                     copyOnWriteArrayList.remove(str);
                     z = true;
                 }

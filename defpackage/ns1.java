@@ -1,54 +1,35 @@
 package defpackage;
 
-import android.media.MediaDataSource;
-import java.io.IOException;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ns1 extends MediaDataSource {
-    public long Q;
-    public final /* synthetic */ ss1 R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ns1 extends x {
+    public static final Parcelable.Creator<ns1> CREATOR = new w65(3);
+    public int Z;
+    public int c0;
+    public int d0;
+    public int e0;
+    public int f0;
 
-    public ns1(ss1 ss1Var) {
-        this.R = ss1Var;
+    public ns1(Parcel parcel, ClassLoader classLoader) {
+        super(parcel, classLoader);
+        this.Z = 0;
+        this.Z = parcel.readInt();
+        this.c0 = parcel.readInt();
+        this.d0 = parcel.readInt();
+        this.e0 = parcel.readInt();
+        this.f0 = parcel.readInt();
     }
 
-    @Override // android.media.MediaDataSource
-    public final long getSize() {
-        return -1L;
-    }
-
-    @Override // android.media.MediaDataSource
-    public final int readAt(long j, byte[] bArr, int i, int i2) {
-        if (i2 == 0) {
-            return 0;
-        }
-        if (j >= 0) {
-            try {
-                long j2 = this.Q;
-                if (j2 != j) {
-                    if (j2 < 0 || j < j2 + ((long) this.R.Q.available())) {
-                        this.R.h(j);
-                        this.Q = j;
-                    }
-                }
-                if (i2 > this.R.Q.available()) {
-                    i2 = this.R.Q.available();
-                }
-                int i3 = this.R.read(bArr, i, i2);
-                if (i3 >= 0) {
-                    this.Q += (long) i3;
-                    return i3;
-                }
-            } catch (IOException unused) {
-            }
-            this.Q = -1L;
-            return -1;
-        }
-        return -1;
-    }
-
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public final void close() {
+    @Override // defpackage.x, android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        super.writeToParcel(parcel, i);
+        parcel.writeInt(this.Z);
+        parcel.writeInt(this.c0);
+        parcel.writeInt(this.d0);
+        parcel.writeInt(this.e0);
+        parcel.writeInt(this.f0);
     }
 }

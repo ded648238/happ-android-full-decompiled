@@ -1,17 +1,17 @@
 .class Landroidx/leanback/widget/CheckableImageView;
 .super Landroid/widget/ImageView;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/widget/Checkable;
 
 
 # static fields
-.field public static final R:[I
+.field public static final d0:[I
 
 
 # instance fields
-.field public Q:Z
+.field public c0:Z
 
 
 # direct methods
@@ -32,7 +32,7 @@
     move-result-object v0
 
     .line 8
-    sput-object v0, Landroidx/leanback/widget/CheckableImageView;->R:[I
+    sput-object v0, Landroidx/leanback/widget/CheckableImageView;->d0:[I
 
     .line 9
     .line 10
@@ -66,18 +66,18 @@
 
 # virtual methods
 .method public final isChecked()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/CheckableImageView;->Q:Z
+    iget-boolean p0, p0, Landroidx/leanback/widget/CheckableImageView;->c0:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final onCreateDrawableState(I)[I
-    .locals 1
+    .locals 0
 
     .line 1
     add-int/lit8 p1, p1, 0x1
@@ -92,19 +92,19 @@
     move-result-object p1
 
     .line 7
-    iget-boolean v0, p0, Landroidx/leanback/widget/CheckableImageView;->Q:Z
+    iget-boolean p0, p0, Landroidx/leanback/widget/CheckableImageView;->c0:Z
 
     .line 8
     .line 9
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 10
     .line 11
-    sget-object v0, Landroidx/leanback/widget/CheckableImageView;->R:[I
+    sget-object p0, Landroidx/leanback/widget/CheckableImageView;->d0:[I
 
     .line 12
     .line 13
-    invoke-static {p1, v0}, Landroid/view/View;->mergeDrawableStates([I[I)[I
+    invoke-static {p1, p0}, Landroid/view/View;->mergeDrawableStates([I[I)[I
 
     .line 14
     .line 15
@@ -117,7 +117,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/CheckableImageView;->Q:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/CheckableImageView;->c0:Z
 
     .line 2
     .line 3
@@ -125,7 +125,7 @@
 
     .line 4
     .line 5
-    iput-boolean p1, p0, Landroidx/leanback/widget/CheckableImageView;->Q:Z
+    iput-boolean p1, p0, Landroidx/leanback/widget/CheckableImageView;->c0:Z
 
     .line 6
     .line 7
@@ -142,7 +142,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/leanback/widget/CheckableImageView;->Q:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/CheckableImageView;->c0:Z
 
     .line 2
     .line 3

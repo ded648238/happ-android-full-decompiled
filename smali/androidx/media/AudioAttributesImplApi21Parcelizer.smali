@@ -1,6 +1,6 @@
 .class public final Landroidx/media/AudioAttributesImplApi21Parcelizer;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static read(Lvm7;)Landroidx/media/AudioAttributesImplApi21;
+.method public static read(Lqh8;)Landroidx/media/AudioAttributesImplApi21;
     .locals 3
 
     .line 1
@@ -43,7 +43,7 @@
     const/4 v2, 0x1
 
     .line 12
-    invoke-virtual {p0, v1, v2}, Lvm7;->g(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
+    invoke-virtual {p0, v1, v2}, Lqh8;->g(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
 
     .line 13
     .line 14
@@ -66,7 +66,7 @@
     const/4 v2, 0x2
 
     .line 23
-    invoke-virtual {p0, v1, v2}, Lvm7;->f(II)I
+    invoke-virtual {p0, v1, v2}, Lqh8;->f(II)I
 
     .line 24
     .line 25
@@ -81,7 +81,7 @@
     return-object v0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesImplApi21;Lvm7;)V
+.method public static write(Landroidx/media/AudioAttributesImplApi21;Lqh8;)V
     .locals 3
 
     .line 1
@@ -97,7 +97,7 @@
     const/4 v1, 0x1
 
     .line 7
-    invoke-virtual {p1, v1}, Lvm7;->i(I)V
+    invoke-virtual {p1, v1}, Lqh8;->i(I)V
 
     .line 8
     .line 9
@@ -105,11 +105,11 @@
     move-object v1, p1
 
     .line 11
-    check-cast v1, Lwm7;
+    check-cast v1, Lrh8;
 
     .line 12
     .line 13
-    iget-object v1, v1, Lwm7;->e:Landroid/os/Parcel;
+    iget-object v1, v1, Lrh8;->e:Landroid/os/Parcel;
 
     .line 14
     .line 15
@@ -128,7 +128,7 @@
     const/4 v0, 0x2
 
     .line 22
-    invoke-virtual {p1, p0, v0}, Lvm7;->j(II)V
+    invoke-virtual {p1, p0, v0}, Lqh8;->j(II)V
 
     .line 23
     .line 24

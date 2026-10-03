@@ -1,10 +1,30 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class uh7 extends vh7 {
-    @Override // defpackage.vh7
-    public final Object a(Class cls) {
-        throw new UnsupportedOperationException(xy4.z("Cannot allocate ", cls, ". Usage of JDK sun.misc.Unsafe is enabled, but it could not be used. Make sure your runtime is configured correctly."));
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class uh7 implements xh7 {
+    public final Throwable a;
+
+    public /* synthetic */ uh7(Throwable th) {
+        this.a = th;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof uh7) {
+            return m93.h(this.a, ((uh7) obj).a);
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        Throwable th = this.a;
+        if (th == null) {
+            return 0;
+        }
+        return th.hashCode();
+    }
+
+    public final String toString() {
+        return "Error(cause=" + this.a + ")";
     }
 }

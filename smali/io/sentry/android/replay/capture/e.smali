@@ -1,164 +1,128 @@
-.class public final Lio/sentry/android/replay/capture/e;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lio/sentry/android/replay/capture/e;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lj72;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:Lio/sentry/android/replay/capture/g;
 
-.field public final synthetic R:Lio/sentry/android/replay/capture/f;
+.field public final synthetic Y:J
+
+.field public final synthetic Z:Ljava/util/Date;
+
+.field public final synthetic c0:Lio/sentry/protocol/w;
+
+.field public final synthetic d0:Lio/sentry/android/replay/d0;
+
+.field public final synthetic e0:Lmi2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/sentry/android/replay/capture/f;I)V
+.method public synthetic constructor <init>(Lio/sentry/android/replay/capture/g;JLjava/util/Date;Lio/sentry/protocol/w;Lio/sentry/android/replay/d0;Lmi2;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lio/sentry/android/replay/capture/e;->Q:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p1, p0, Lio/sentry/android/replay/capture/e;->R:Lio/sentry/android/replay/capture/f;
-
     .line 4
-    .line 5
-    const/4 p1, 0x1
+    iput-object p1, p0, Lio/sentry/android/replay/capture/e;->X:Lio/sentry/android/replay/capture/g;
 
+    .line 5
     .line 6
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
+    iput-wide p2, p0, Lio/sentry/android/replay/capture/e;->Y:J
 
     .line 7
     .line 8
+    iput-object p4, p0, Lio/sentry/android/replay/capture/e;->Z:Ljava/util/Date;
+
     .line 9
+    .line 10
+    iput-object p5, p0, Lio/sentry/android/replay/capture/e;->c0:Lio/sentry/protocol/w;
+
+    .line 11
+    .line 12
+    iput-object p6, p0, Lio/sentry/android/replay/capture/e;->d0:Lio/sentry/android/replay/d0;
+
+    .line 13
+    .line 14
+    iput-object p7, p0, Lio/sentry/android/replay/capture/e;->e0:Lmi2;
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final run()V
+    .locals 10
 
     .line 1
-    iget v0, p0, Lio/sentry/android/replay/capture/e;->Q:I
+    iget-object v0, p0, Lio/sentry/android/replay/capture/e;->X:Lio/sentry/android/replay/capture/g;
 
     .line 2
     .line 3
-    sget-object v1, Lbh7;->a:Lbh7;
+    invoke-virtual {v0}, Lio/sentry/android/replay/capture/d;->e()I
 
     .line 4
     .line 5
-    iget-object v2, p0, Lio/sentry/android/replay/capture/e;->R:Lio/sentry/android/replay/capture/f;
-
     .line 6
+    move-result v5
+
     .line 7
-    packed-switch v0, :pswitch_data_0
+    iget-object v1, p0, Lio/sentry/android/replay/capture/e;->d0:Lio/sentry/android/replay/d0;
 
     .line 8
     .line 9
+    iget v6, v1, Lio/sentry/android/replay/d0;->b:I
+
     .line 10
-    check-cast p1, Lio/sentry/android/replay/capture/k;
-
     .line 11
-    .line 12
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget v7, v1, Lio/sentry/android/replay/d0;->a:I
 
+    .line 12
     .line 13
+    iget v8, v1, Lio/sentry/android/replay/d0;->e:I
+
     .line 14
     .line 15
-    instance-of v0, p1, Lio/sentry/android/replay/capture/i;
+    iget v9, v1, Lio/sentry/android/replay/d0;->f:I
 
     .line 16
     .line 17
-    if-eqz v0, :cond_0
+    iget-wide v1, p0, Lio/sentry/android/replay/capture/e;->Y:J
 
     .line 18
     .line 19
-    iget-object v0, v2, Lio/sentry/android/replay/capture/f;->x:Ljava/util/ArrayList;
+    iget-object v3, p0, Lio/sentry/android/replay/capture/e;->Z:Ljava/util/Date;
 
     .line 20
     .line 21
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    iget-object v4, p0, Lio/sentry/android/replay/capture/e;->c0:Lio/sentry/protocol/w;
 
     .line 22
     .line 23
-    .line 24
-    invoke-virtual {v2}, Lio/sentry/android/replay/capture/c;->e()I
+    invoke-static/range {v0 .. v9}, Lio/sentry/android/replay/capture/d;->c(Lio/sentry/android/replay/capture/d;JLjava/util/Date;Lio/sentry/protocol/w;IIIII)Lio/sentry/android/replay/capture/l;
 
+    .line 24
     .line 25
     .line 26
+    move-result-object v0
+
     .line 27
-    move-result p1
+    iget-object p0, p0, Lio/sentry/android/replay/capture/e;->e0:Lmi2;
 
     .line 28
-    add-int/lit8 p1, p1, 0x1
-
     .line 29
-    .line 30
-    invoke-virtual {v2, p1}, Lio/sentry/android/replay/capture/c;->k(I)V
+    invoke-interface {p0, v0}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 30
     .line 31
     .line 32
-    .line 33
-    :cond_0
-    return-object v1
-
-    .line 34
-    :pswitch_0
-    check-cast p1, Lio/sentry/android/replay/capture/k;
-
-    .line 35
-    .line 36
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 37
-    .line 38
-    .line 39
-    instance-of v0, p1, Lio/sentry/android/replay/capture/i;
-
-    .line 40
-    .line 41
-    if-eqz v0, :cond_1
-
-    .line 42
-    .line 43
-    iget-object v0, v2, Lio/sentry/android/replay/capture/f;->x:Ljava/util/ArrayList;
-
-    .line 44
-    .line 45
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 46
-    .line 47
-    .line 48
-    invoke-virtual {v2}, Lio/sentry/android/replay/capture/c;->e()I
-
-    .line 49
-    .line 50
-    .line 51
-    move-result p1
-
-    .line 52
-    add-int/lit8 p1, p1, 0x1
-
-    .line 53
-    .line 54
-    invoke-virtual {v2, p1}, Lio/sentry/android/replay/capture/c;->k(I)V
-
-    .line 55
-    .line 56
-    .line 57
-    :cond_1
-    return-object v1
-
-    .line 58
-    nop
-
-    .line 59
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Credentials;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -70,7 +70,7 @@
 .method public static final basic(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 55
+    .line 53
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -141,52 +141,48 @@
     move-result-object p0
 
     .line 30
-    sget-object p1, Ly60;->T:Ly60;
+    new-instance p1, Lo90;
 
     .line 31
     .line 32
-    new-instance p1, Ly60;
+    invoke-virtual {p0, p2}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
     .line 33
     .line 34
-    invoke-virtual {p0, p2}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
-
     .line 35
-    .line 36
-    .line 37
     move-result-object p0
 
-    .line 38
+    .line 36
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 37
+    .line 38
     .line 39
+    invoke-direct {p1, p0}, Lo90;-><init>([B)V
+
     .line 40
     .line 41
-    invoke-direct {p1, p0}, Ly60;-><init>([B)V
-
     .line 42
+    invoke-virtual {p1}, Lo90;->a()Ljava/lang/String;
+
     .line 43
     .line 44
-    invoke-virtual {p1}, Ly60;->a()Ljava/lang/String;
-
     .line 45
-    .line 46
-    .line 47
     move-result-object p0
 
-    .line 48
+    .line 46
     const-string p1, "Basic "
+
+    .line 47
+    .line 48
+    invoke-virtual {p1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 49
     .line 50
-    invoke-static {p1, p0}, Lkd0;->v(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
     .line 51
-    .line 52
-    .line 53
     move-result-object p0
 
-    .line 54
+    .line 52
     return-object p0
 .end method
 

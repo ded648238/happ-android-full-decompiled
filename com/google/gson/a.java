@@ -3,26 +3,24 @@ package com.google.gson;
 import com.google.gson.internal.Excluder;
 import com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory;
 import com.google.gson.internal.bind.JsonElementTypeAdapter;
-import defpackage.ay3;
-import defpackage.d03;
-import defpackage.d8;
-import defpackage.dd7;
-import defpackage.g33;
-import defpackage.gl6;
-import defpackage.h43;
-import defpackage.i42;
-import defpackage.i62;
-import defpackage.ld2;
-import defpackage.p33;
-import defpackage.r23;
-import defpackage.r33;
-import defpackage.u03;
-import defpackage.va6;
-import defpackage.wa7;
-import defpackage.x13;
-import defpackage.yy2;
-import j$.util.Objects;
-import j$.util.concurrent.ConcurrentHashMap;
+import defpackage.af3;
+import defpackage.bh2;
+import defpackage.ci3;
+import defpackage.fg3;
+import defpackage.j38;
+import defpackage.jq8;
+import defpackage.m58;
+import defpackage.mj3;
+import defpackage.nk3;
+import defpackage.p8;
+import defpackage.r97;
+import defpackage.vj3;
+import defpackage.wp2;
+import defpackage.xe4;
+import defpackage.xi3;
+import defpackage.xj3;
+import defpackage.ye2;
+import defpackage.zg3;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.StringReader;
@@ -32,132 +30,132 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+import java.util.concurrent.ConcurrentHashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class a {
     public final ThreadLocal a;
     public final ConcurrentHashMap b;
-    public final d8 c;
+    public final p8 c;
     public final JsonAdapterAnnotationTypeAdapterFactory d;
     public final List e;
     public final boolean f;
-    public final i42 g;
+    public final ye2 g;
     public final int h;
 
-    public a(ld2 ld2Var) {
+    public a(wp2 wp2Var) {
         this.a = new ThreadLocal();
         this.b = new ConcurrentHashMap();
-        Excluder excluder = ld2Var.a;
-        HashMap map = new HashMap(ld2Var.b);
-        this.f = ld2Var.g;
-        this.g = ld2Var.h;
-        this.h = ld2Var.m;
-        boolean z = ld2Var.i;
-        ld2.b(ld2Var.c);
-        ld2.b(ld2Var.d);
-        List listB = ld2.b(ld2Var.j);
-        if (ld2Var == ld2.s) {
-            this.c = ld2.q;
-            this.d = ld2.r;
-            this.e = ld2.t;
+        Excluder excluder = wp2Var.a;
+        HashMap hashMap = new HashMap(wp2Var.b);
+        this.f = wp2Var.g;
+        this.g = wp2Var.h;
+        this.h = wp2Var.m;
+        boolean z = wp2Var.i;
+        wp2.b(wp2Var.c);
+        wp2.b(wp2Var.d);
+        List b = wp2.b(wp2Var.j);
+        if (wp2Var == wp2.s) {
+            this.c = wp2.q;
+            this.d = wp2.r;
+            this.e = wp2.t;
         } else {
-            d8 d8Var = new d8(map, z, listB);
-            this.c = d8Var;
-            JsonAdapterAnnotationTypeAdapterFactory jsonAdapterAnnotationTypeAdapterFactory = new JsonAdapterAnnotationTypeAdapterFactory(d8Var);
+            p8 p8Var = new p8(b, hashMap, z);
+            this.c = p8Var;
+            JsonAdapterAnnotationTypeAdapterFactory jsonAdapterAnnotationTypeAdapterFactory = new JsonAdapterAnnotationTypeAdapterFactory(p8Var);
             this.d = jsonAdapterAnnotationTypeAdapterFactory;
-            this.e = ld2Var.a(d8Var, jsonAdapterAnnotationTypeAdapterFactory);
+            this.e = wp2Var.a(p8Var, jsonAdapterAnnotationTypeAdapterFactory);
         }
     }
 
-    public final Object a(d03 d03Var, Type type) {
-        dd7 dd7Var = new dd7(type);
-        p33 p33Var = new p33(p33.j0);
-        p33Var.f0 = new Object[32];
-        p33Var.g0 = 0;
-        p33Var.h0 = new String[32];
-        p33Var.i0 = new int[32];
-        p33Var.S0(d03Var);
-        return b(p33Var, dd7Var);
+    public final Object a(fg3 fg3Var, Type type) {
+        m58 m58Var = new m58(type);
+        vj3 vj3Var = new vj3(vj3.s0);
+        vj3Var.o0 = new Object[32];
+        vj3Var.p0 = 0;
+        vj3Var.q0 = new String[32];
+        vj3Var.r0 = new int[32];
+        vj3Var.f1(fg3Var);
+        return b(vj3Var, m58Var);
     }
 
-    public final Object b(r23 r23Var, dd7 dd7Var) {
-        int i = r23Var.e0;
+    public final Object b(xi3 xi3Var, m58 m58Var) {
+        int i = xi3Var.n0;
         boolean z = true;
         int i2 = this.h;
         if (i2 != 0) {
-            r23Var.v0(i2);
+            xi3Var.C0(i2);
         } else if (i == 2) {
-            r23Var.e0 = 1;
+            xi3Var.n0 = 1;
         }
         try {
             try {
                 try {
-                    r23Var.k0();
+                    xi3Var.t0();
                     z = false;
-                    b bVarE = e(dd7Var);
-                    Class cls = dd7Var.a;
-                    Object objB = bVarE.b(r23Var);
-                    Class clsX = va6.X(cls);
-                    if (objB != null && !clsX.isInstance(objB)) {
-                        throw new ClassCastException("Type adapter '" + bVarE + "' returned wrong type; requested " + cls + " but got instance of " + objB.getClass() + "\nVerify that the adapter was registered for the correct type.");
+                    b e = e(m58Var);
+                    Class cls = m58Var.a;
+                    Object b = e.b(xi3Var);
+                    Class N = jq8.N(cls);
+                    if (b != null && !N.isInstance(b)) {
+                        throw new ClassCastException("Type adapter '" + e + "' returned wrong type; requested " + cls + " but got instance of " + b.getClass() + "\nVerify that the adapter was registered for the correct type.");
                     }
-                    r23Var.v0(i);
-                    return objB;
-                } catch (EOFException e) {
+                    return b;
+                } catch (EOFException e2) {
                     if (!z) {
-                        throw new g33(9, e);
+                        throw new mj3(e2);
                     }
-                    r23Var.v0(i);
+                    xi3Var.C0(i);
                     return null;
-                } catch (IllegalStateException e2) {
-                    throw new g33(9, e2);
+                } catch (IllegalStateException e3) {
+                    throw new mj3(e3);
                 }
-            } catch (IOException e3) {
-                throw new g33(9, e3);
-            } catch (AssertionError e4) {
-                throw new AssertionError("AssertionError (GSON 2.14.0): " + e4.getMessage(), e4);
+            } catch (IOException e4) {
+                throw new mj3(e4);
+            } catch (AssertionError e5) {
+                throw new AssertionError("AssertionError (GSON 2.14.0): " + e5.getMessage(), e5);
             }
-        } catch (Throwable th) {
-            r23Var.v0(i);
-            throw th;
+        } finally {
+            xi3Var.C0(i);
         }
     }
 
-    public final Object c(String str, dd7 dd7Var) {
+    public final Object c(String str, m58 m58Var) {
         if (str == null) {
             return null;
         }
-        r23 r23Var = new r23(new StringReader(str));
+        xi3 xi3Var = new xi3(new StringReader(str));
         int i = this.h;
         if (i == 0) {
             i = 2;
         }
-        r23Var.v0(i);
-        Object objB = b(r23Var, dd7Var);
-        if (objB != null) {
+        xi3Var.C0(i);
+        Object b = b(xi3Var, m58Var);
+        if (b != null) {
             try {
-                if (r23Var.k0() != 10) {
-                    throw new g33("JSON document was not fully consumed.", 9);
+                if (xi3Var.t0() != 10) {
+                    throw new mj3("JSON document was not fully consumed.");
                 }
-            } catch (ay3 e) {
-                throw new g33(9, e);
+            } catch (xe4 e) {
+                throw new mj3(e);
             } catch (IOException e2) {
-                throw new u03(9, e2);
+                throw new zg3(e2);
             }
         }
-        return objB;
+        return b;
     }
 
     public final Object d(String str, Type type) {
-        return c(str, new dd7(type));
+        return c(str, new m58(type));
     }
 
-    public final b e(dd7 dd7Var) {
+    public final b e(m58 m58Var) {
         boolean z;
-        Objects.requireNonNull(dd7Var, "type must not be null");
+        Objects.requireNonNull(m58Var, "type must not be null");
         ConcurrentHashMap concurrentHashMap = this.b;
-        b bVar = (b) concurrentHashMap.get(dd7Var);
+        b bVar = (b) concurrentHashMap.get(m58Var);
         if (bVar != null) {
             return bVar;
         }
@@ -168,7 +166,7 @@ public final class a {
             threadLocal.set(map);
             z = true;
         } else {
-            b bVar2 = (b) map.get(dd7Var);
+            b bVar2 = (b) map.get(m58Var);
             if (bVar2 != null) {
                 return bVar2;
             }
@@ -176,31 +174,33 @@ public final class a {
         }
         try {
             Gson$FutureTypeAdapter gson$FutureTypeAdapter = new Gson$FutureTypeAdapter();
-            map.put(dd7Var, gson$FutureTypeAdapter);
+            map.put(m58Var, gson$FutureTypeAdapter);
             Iterator it = this.e.iterator();
-            b bVarA = null;
-            while (it.hasNext()) {
-                bVarA = ((wa7) it.next()).a(this, dd7Var);
-                if (bVarA != null) {
+            b bVar3 = null;
+            while (true) {
+                if (!it.hasNext()) {
+                    break;
+                }
+                bVar3 = ((j38) it.next()).a(this, m58Var);
+                if (bVar3 != null) {
                     if (gson$FutureTypeAdapter.a != null) {
                         throw new AssertionError("Delegate is already set");
                     }
-                    gson$FutureTypeAdapter.a = bVarA;
-                    map.put(dd7Var, bVarA);
-                    break;
+                    gson$FutureTypeAdapter.a = bVar3;
+                    map.put(m58Var, bVar3);
                 }
             }
             if (z) {
                 threadLocal.remove();
             }
-            if (bVarA == null) {
-                i62.g(dd7Var, "GSON (2.14.0) cannot handle ");
+            if (bVar3 == null) {
+                bh2.h(m58Var, "GSON (2.14.0) cannot handle ");
                 return null;
             }
             if (z) {
                 concurrentHashMap.putAll(map);
             }
-            return bVarA;
+            return bVar3;
         } catch (Throwable th) {
             if (z) {
                 threadLocal.remove();
@@ -209,172 +209,181 @@ public final class a {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x0058  */
-    public final b f(wa7 wa7Var, dd7 dd7Var) {
-        Objects.requireNonNull(wa7Var, "skipPast must not be null");
-        Objects.requireNonNull(dd7Var, "type must not be null");
+    /* JADX WARN: Code restructure failed: missing block: B:38:0x0056, code lost:
+    
+        if (r4 == r8) goto L19;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:5:0x0021, code lost:
+    
+        if (r4 == r8) goto L19;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:27:0x007b  */
+    /* JADX WARN: Removed duplicated region for block: B:29:0x0080  */
+    /* JADX WARN: Removed duplicated region for block: B:9:0x0066  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final b f(j38 j38Var, m58 m58Var) {
+        boolean z;
+        Objects.requireNonNull(j38Var, "skipPast must not be null");
+        Objects.requireNonNull(m58Var, "type must not be null");
         JsonAdapterAnnotationTypeAdapterFactory jsonAdapterAnnotationTypeAdapterFactory = this.d;
         jsonAdapterAnnotationTypeAdapterFactory.getClass();
-        ConcurrentHashMap concurrentHashMap = jsonAdapterAnnotationTypeAdapterFactory.R;
-        if (wa7Var == JsonAdapterAnnotationTypeAdapterFactory.S) {
-            wa7Var = jsonAdapterAnnotationTypeAdapterFactory;
-        } else {
-            Class cls = dd7Var.a;
-            wa7 wa7Var2 = (wa7) concurrentHashMap.get(cls);
-            if (wa7Var2 == null) {
-                yy2 yy2Var = (yy2) cls.getAnnotation(yy2.class);
-                if (yy2Var != null) {
-                    Class clsValue = yy2Var.value();
-                    if (wa7.class.isAssignableFrom(clsValue)) {
-                        wa7 wa7Var3 = (wa7) jsonAdapterAnnotationTypeAdapterFactory.Q.n(new dd7(clsValue), true).i();
-                        wa7 wa7Var4 = (wa7) concurrentHashMap.putIfAbsent(cls, wa7Var3);
-                        if (wa7Var4 != null) {
-                            wa7Var3 = wa7Var4;
-                        }
-                        if (wa7Var3 == wa7Var) {
-                            wa7Var = jsonAdapterAnnotationTypeAdapterFactory;
+        ConcurrentHashMap concurrentHashMap = jsonAdapterAnnotationTypeAdapterFactory.Y;
+        if (j38Var != JsonAdapterAnnotationTypeAdapterFactory.Z) {
+            Class cls = m58Var.a;
+            j38 j38Var2 = (j38) concurrentHashMap.get(cls);
+            if (j38Var2 == null) {
+                af3 af3Var = (af3) cls.getAnnotation(af3.class);
+                if (af3Var != null) {
+                    Class value = af3Var.value();
+                    if (j38.class.isAssignableFrom(value)) {
+                        j38 j38Var3 = (j38) jsonAdapterAnnotationTypeAdapterFactory.X.m(new m58(value), true).i();
+                        j38 j38Var4 = (j38) concurrentHashMap.putIfAbsent(cls, j38Var3);
+                        if (j38Var4 != null) {
+                            j38Var3 = j38Var4;
                         }
                     }
                 }
-            } else if (wa7Var2 == wa7Var) {
-                wa7Var = jsonAdapterAnnotationTypeAdapterFactory;
             }
-        }
-        boolean z = false;
-        for (wa7 wa7Var5 : this.e) {
-            if (z) {
-                b bVarA = wa7Var5.a(this, dd7Var);
-                if (bVarA != null) {
-                    return bVarA;
+            z = false;
+            for (j38 j38Var5 : this.e) {
+                if (z) {
+                    b a = j38Var5.a(this, m58Var);
+                    if (a != null) {
+                        return a;
+                    }
+                } else if (j38Var5 == j38Var) {
+                    z = true;
                 }
-            } else if (wa7Var5 == wa7Var) {
-                z = true;
             }
+            if (z) {
+                return e(m58Var);
+            }
+            bh2.h(m58Var, "GSON cannot serialize or deserialize ");
+            return null;
         }
-        if (!z) {
-            return e(dd7Var);
+        j38Var = jsonAdapterAnnotationTypeAdapterFactory;
+        z = false;
+        while (r0.hasNext()) {
         }
-        i62.g(dd7Var, "GSON cannot serialize or deserialize ");
-        return null;
+        if (z) {
+        }
     }
 
-    public final String g(d03 d03Var) {
+    public final String g(fg3 fg3Var) {
         StringBuilder sb = new StringBuilder();
         try {
-            h43 h43Var = new h43(new gl6(sb));
-            h43Var.C(this.g);
-            h43Var.Y = this.f;
+            nk3 nk3Var = new nk3(new r97(sb));
+            nk3Var.E(this.g);
+            nk3Var.h0 = this.f;
             int i = this.h;
             if (i == 0) {
                 i = 2;
             }
-            h43Var.F(i);
-            h43Var.a0 = false;
-            i(d03Var, h43Var);
+            nk3Var.J(i);
+            nk3Var.j0 = false;
+            i(fg3Var, nk3Var);
             return sb.toString();
         } catch (IOException e) {
-            throw new u03(9, e);
+            throw new zg3(e);
         }
     }
 
     public final String h(Object obj) {
         if (obj == null) {
-            return g(x13.Q);
+            return g(ci3.X);
         }
         Class<?> cls = obj.getClass();
         StringBuilder sb = new StringBuilder();
         try {
-            h43 h43Var = new h43(new gl6(sb));
-            h43Var.C(this.g);
-            h43Var.Y = this.f;
+            nk3 nk3Var = new nk3(new r97(sb));
+            nk3Var.E(this.g);
+            nk3Var.h0 = this.f;
             int i = this.h;
             if (i == 0) {
                 i = 2;
             }
-            h43Var.F(i);
-            h43Var.a0 = false;
-            j(obj, cls, h43Var);
+            nk3Var.J(i);
+            nk3Var.j0 = false;
+            j(obj, cls, nk3Var);
             return sb.toString();
         } catch (IOException e) {
-            throw new u03(9, e);
+            throw new zg3(e);
         }
     }
 
-    public final void i(d03 d03Var, h43 h43Var) {
-        int i = h43Var.X;
-        boolean z = h43Var.Y;
-        boolean z2 = h43Var.a0;
-        h43Var.Y = this.f;
-        h43Var.a0 = false;
+    public final void i(fg3 fg3Var, nk3 nk3Var) {
+        int i = nk3Var.g0;
+        boolean z = nk3Var.h0;
+        boolean z2 = nk3Var.j0;
+        nk3Var.h0 = this.f;
+        nk3Var.j0 = false;
         int i2 = this.h;
         if (i2 != 0) {
-            h43Var.F(i2);
+            nk3Var.J(i2);
         } else if (i == 2) {
-            h43Var.X = 1;
+            nk3Var.g0 = 1;
         }
         try {
             try {
                 try {
                     JsonElementTypeAdapter.a.getClass();
-                    JsonElementTypeAdapter.f(d03Var, h43Var);
-                    h43Var.F(i);
-                    h43Var.Y = z;
-                    h43Var.a0 = z2;
+                    JsonElementTypeAdapter.f(fg3Var, nk3Var);
+                    nk3Var.J(i);
+                    nk3Var.h0 = z;
+                    nk3Var.j0 = z2;
                 } catch (IOException e) {
-                    throw new u03(9, e);
+                    throw new zg3(e);
                 }
             } catch (AssertionError e2) {
                 throw new AssertionError("AssertionError (GSON 2.14.0): " + e2.getMessage(), e2);
             }
         } catch (Throwable th) {
-            h43Var.F(i);
-            h43Var.Y = z;
-            h43Var.a0 = z2;
+            nk3Var.J(i);
+            nk3Var.h0 = z;
+            nk3Var.j0 = z2;
             throw th;
         }
     }
 
-    public final void j(Object obj, Class cls, h43 h43Var) {
-        b bVarE = e(new dd7(cls));
-        int i = h43Var.X;
+    public final void j(Object obj, Class cls, nk3 nk3Var) {
+        b e = e(new m58(cls));
+        int i = nk3Var.g0;
         int i2 = this.h;
         if (i2 != 0) {
-            h43Var.F(i2);
+            nk3Var.J(i2);
         } else if (i == 2) {
-            h43Var.X = 1;
+            nk3Var.g0 = 1;
         }
-        boolean z = h43Var.Y;
-        boolean z2 = h43Var.a0;
-        h43Var.Y = this.f;
-        h43Var.a0 = false;
+        boolean z = nk3Var.h0;
+        boolean z2 = nk3Var.j0;
+        nk3Var.h0 = this.f;
+        nk3Var.j0 = false;
         try {
             try {
-                bVarE.c(h43Var, obj);
-                h43Var.F(i);
-                h43Var.Y = z;
-                h43Var.a0 = z2;
-            } catch (IOException e) {
-                throw new u03(9, e);
-            } catch (AssertionError e2) {
-                throw new AssertionError("AssertionError (GSON 2.14.0): " + e2.getMessage(), e2);
+                e.c(nk3Var, obj);
+            } catch (IOException e2) {
+                throw new zg3(e2);
+            } catch (AssertionError e3) {
+                throw new AssertionError("AssertionError (GSON 2.14.0): " + e3.getMessage(), e3);
             }
-        } catch (Throwable th) {
-            h43Var.F(i);
-            h43Var.Y = z;
-            h43Var.a0 = z2;
-            throw th;
+        } finally {
+            nk3Var.J(i);
+            nk3Var.h0 = z;
+            nk3Var.j0 = z2;
         }
     }
 
-    public final d03 k(Object obj) {
+    public final fg3 k(Object obj) {
         Class cls = obj.getClass();
-        r33 r33Var = new r33();
-        j(obj, cls, r33Var);
-        ArrayList arrayList = r33Var.e0;
+        xj3 xj3Var = new xj3();
+        j(obj, cls, xj3Var);
+        ArrayList arrayList = xj3Var.n0;
         if (arrayList.isEmpty()) {
-            return r33Var.g0;
+            return xj3Var.p0;
         }
-        i62.p(arrayList, "Expected one JSON element but was ");
+        bh2.o(arrayList, "Expected one JSON element but was ");
         return null;
     }
 
@@ -383,6 +392,6 @@ public final class a {
     }
 
     public a() {
-        this(ld2.s);
+        this(wp2.s);
     }
 }

@@ -1,159 +1,242 @@
-.class public abstract Lno7;
+.class public final Lno7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lmo7;
 
 
-# static fields
-.field public static final a:Lkq0;
+# instance fields
+.field public final X:Z
+
+.field public final Y:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Lir5;)V
     .locals 2
 
     .line 1
-    new-instance v0, Lkq0;
-
-    .line 2
-    .line 3
-    const/16 v1, 0x1c
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Lkq0;-><init>(I)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, Lno7;->a:Lkq0;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-.method public static final a(Llo7;)Lnl0;
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lno7;->a:Lkq0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
     .line 6
-    monitor-enter v0
-
     .line 7
-    :try_start_0
-    const-string v1, "androidx.lifecycle.viewmodel.internal.ViewModelCoroutineScope.JOB_KEY"
+    const-class v0, Landroidx/camera/camera2/compat/quirk/CaptureIntentPreviewQuirk;
 
     .line 8
     .line 9
-    invoke-virtual {p0, v1}, Llo7;->c(Ljava/lang/String;)Ljava/lang/AutoCloseable;
+    invoke-virtual {p1, v0}, Lir5;->c(Ljava/lang/Class;)Ljava/util/ArrayList;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v1
+    move-result-object v0
 
     .line 13
-    check-cast v1, Lnl0;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 14
     .line 15
-    if-nez v1, :cond_0
-
     .line 16
+    move-result-object v0
+
     .line 17
-    sget-object v1, Lun1;->Q:Lun1;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 18
     .line 19
-    :try_start_1
-    sget-object v2, Lpe1;->a:Lq41;
-
     .line 20
+    move-result v1
+
     .line 21
-    sget-object v2, Lpv3;->a:Lzd2;
+    if-eqz v1, :cond_1
 
     .line 22
     .line 23
-    iget-object v1, v2, Lzd2;->V:Lzd2;
-    :try_end_1
-    .catch Lee4; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 24
     .line 25
-    :catch_0
-    :try_start_2
-    new-instance v2, Lnl0;
-
     .line 26
+    move-result-object v1
+
     .line 27
-    invoke-static {}, Lew0;->f()Lhs6;
+    check-cast v1, Landroidx/camera/camera2/compat/quirk/CaptureIntentPreviewQuirk;
 
     .line 28
     .line 29
+    invoke-interface {v1}, Landroidx/camera/camera2/compat/quirk/CaptureIntentPreviewQuirk;->a()Z
+
     .line 30
-    move-result-object v3
-
     .line 31
-    invoke-interface {v1, v3}, Lsw0;->r0(Lsw0;)Lsw0;
-
     .line 32
-    .line 33
-    .line 34
-    move-result-object v1
+    move-result v1
 
+    .line 33
+    if-eqz v1, :cond_0
+
+    .line 34
     .line 35
-    invoke-direct {v2, v1}, Lnl0;-><init>(Lsw0;)V
+    const/4 v0, 0x1
 
     .line 36
+    goto :goto_0
+
     .line 37
+    :cond_1
+    const/4 v0, 0x0
+
     .line 38
-    const-string v1, "androidx.lifecycle.viewmodel.internal.ViewModelCoroutineScope.JOB_KEY"
+    :goto_0
+    iput-boolean v0, p0, Lno7;->X:Z
 
     .line 39
     .line 40
-    invoke-virtual {p0, v1, v2}, Llo7;->a(Ljava/lang/String;Ljava/lang/AutoCloseable;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    const-class v0, Landroidx/camera/camera2/compat/quirk/ImageCaptureFailedForVideoSnapshotQuirk;
 
     .line 41
     .line 42
+    invoke-virtual {p1, v0}, Lir5;->a(Ljava/lang/Class;)Z
+
     .line 43
-    move-object v1, v2
-
     .line 44
-    goto :goto_0
-
     .line 45
-    :catchall_0
-    move-exception p0
+    move-result p1
 
     .line 46
-    goto :goto_1
+    iput-boolean p1, p0, Lno7;->Y:Z
 
     .line 47
-    :cond_0
-    :goto_0
-    monitor-exit v0
-
     .line 48
-    return-object v1
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ln36;)Ljava/util/Map;
+    .locals 2
+
+    .line 1
+    if-eqz p1, :cond_0
+
+    .line 2
+    .line 3
+    iget v0, p1, Ln36;->a:I
+
+    .line 4
+    .line 5
+    const/4 v1, 0x3
+
+    .line 6
+    if-ne v0, v1, :cond_0
+
+    .line 7
+    .line 8
+    iget-boolean v0, p0, Lno7;->X:Z
+
+    .line 9
+    .line 10
+    if-eqz v0, :cond_0
+
+    .line 11
+    .line 12
+    sget-object p0, Landroid/hardware/camera2/CaptureRequest;->CONTROL_CAPTURE_INTENT:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 13
+    .line 14
+    const/4 p1, 0x1
+
+    .line 15
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    invoke-static {p0, p1}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 24
+    .line 25
+    .line 26
+    return-object p0
+
+    .line 27
+    :cond_0
+    if-eqz p1, :cond_1
+
+    .line 28
+    .line 29
+    iget p1, p1, Ln36;->a:I
+
+    .line 30
+    .line 31
+    const/4 v0, 0x4
+
+    .line 32
+    if-ne p1, v0, :cond_1
+
+    .line 33
+    .line 34
+    iget-boolean p0, p0, Lno7;->Y:Z
+
+    .line 35
+    .line 36
+    if-eqz p0, :cond_1
+
+    .line 37
+    .line 38
+    sget-object p0, Landroid/hardware/camera2/CaptureRequest;->CONTROL_CAPTURE_INTENT:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 39
+    .line 40
+    const/4 p1, 0x2
+
+    .line 41
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p1
+
+    .line 45
+    invoke-static {p0, p1}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p0
 
     .line 49
-    :goto_1
-    monitor-exit v0
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 50
-    throw p0
+    .line 51
+    .line 52
+    return-object p0
+
+    .line 53
+    :cond_1
+    sget-object p0, Lgw1;->X:Lgw1;
+
+    .line 54
+    .line 55
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class abstract Lcom/google/gson/internal/bind/TypeAdapters$IntegerFieldsTypeAdapter;
 .super Lcom/google/gson/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -45,11 +45,11 @@
 
 
 # virtual methods
-.method public final b(Lr23;)Ljava/lang/Object;
+.method public final b(Lxi3;)Ljava/lang/Object;
     .locals 5
 
     .line 1
-    invoke-virtual {p1}, Lr23;->k0()I
+    invoke-virtual {p1}, Lxi3;->t0()I
 
     .line 2
     .line 3
@@ -65,19 +65,19 @@
 
     .line 8
     .line 9
-    invoke-virtual {p1}, Lr23;->R()V
+    invoke-virtual {p1}, Lxi3;->X()V
 
     .line 10
     .line 11
     .line 12
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 13
-    return-object p1
+    return-object p0
 
     .line 14
     :cond_0
-    invoke-virtual {p1}, Lr23;->t0()V
+    invoke-virtual {p1}, Lxi3;->E0()V
 
     .line 15
     .line 16
@@ -99,7 +99,7 @@
     .line 24
     .line 25
     :goto_0
-    invoke-virtual {p1}, Lr23;->k0()I
+    invoke-virtual {p1}, Lxi3;->t0()I
 
     .line 26
     .line 27
@@ -114,7 +114,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {p1}, Lr23;->V()Ljava/lang/String;
+    invoke-virtual {p1}, Lxi3;->d0()Ljava/lang/String;
 
     .line 33
     .line 34
@@ -134,7 +134,7 @@
 
     .line 41
     .line 42
-    invoke-virtual {p1}, Lr23;->nextLong()J
+    invoke-virtual {p1}, Lxi3;->nextLong()J
 
     .line 43
     .line 44
@@ -150,7 +150,7 @@
 
     .line 49
     :cond_1
-    invoke-virtual {p1}, Lr23;->r()V
+    invoke-virtual {p1}, Lxi3;->w()V
 
     .line 50
     .line 51
@@ -159,7 +159,7 @@
 
     .line 53
     :cond_2
-    invoke-virtual {p1}, Lr23;->Z()V
+    invoke-virtual {p1}, Lxi3;->i0()V
 
     .line 54
     .line 55
@@ -169,13 +169,13 @@
     .line 57
     .line 58
     .line 59
-    move-result-object p1
+    move-result-object p0
 
     .line 60
-    return-object p1
+    return-object p0
 .end method
 
-.method public final c(Lh43;Ljava/lang/Object;)V
+.method public final c(Lnk3;Ljava/lang/Object;)V
     .locals 3
 
     .line 1
@@ -183,7 +183,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lh43;->v()Lh43;
+    invoke-virtual {p1}, Lnk3;->v()Lnk3;
 
     .line 4
     .line 5
@@ -192,7 +192,7 @@
 
     .line 7
     :cond_0
-    invoke-virtual {p1}, Lh43;->t0()V
+    invoke-virtual {p1}, Lnk3;->E0()V
 
     .line 8
     .line 9
@@ -237,7 +237,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {p1, v1}, Lh43;->i(Ljava/lang/String;)V
+    invoke-virtual {p1, v1}, Lnk3;->m(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -246,7 +246,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {p1, v1, v2}, Lh43;->R(J)V
+    invoke-virtual {p1, v1, v2}, Lnk3;->X(J)V
 
     .line 35
     .line 36
@@ -259,7 +259,7 @@
 
     .line 40
     :cond_1
-    invoke-virtual {p1}, Lh43;->Z()V
+    invoke-virtual {p1}, Lnk3;->i0()V
 
     .line 41
     .line 42

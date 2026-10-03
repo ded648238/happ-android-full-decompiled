@@ -1,18 +1,18 @@
 .class public final Ltp2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lwf3;
-.implements Ljava/io/Serializable;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Ljava/lang/Object;
+.field public a:I
+
+.field public b:I
+
+.field public c:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
+.method public constructor <init>(III)V
     .locals 0
 
     .line 1
@@ -21,51 +21,17 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ltp2;->Q:Ljava/lang/Object;
+    iput p1, p0, Ltp2;->a:I
 
     .line 5
     .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    return v0
-.end method
-
-.method public final getValue()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ltp2;->Q:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ltp2;->Q:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    iput p2, p0, Ltp2;->b:I
 
     .line 7
-    return-object v0
+    .line 8
+    iput p3, p0, Ltp2;->c:I
+
+    .line 9
+    .line 10
+    return-void
 .end method

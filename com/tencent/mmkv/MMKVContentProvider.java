@@ -5,23 +5,23 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import defpackage.lo4;
+import defpackage.p65;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class MMKVContentProvider extends ContentProvider {
-    public static Uri Q;
+    public static Uri X;
 
     @Override // android.content.ContentProvider
     public final Bundle call(String str, String str2, Bundle bundle) {
         if (str.equals("mmkvFromAshmemID") && bundle != null) {
             try {
-                MMKV mmkvT = MMKV.t(getContext(), str2, bundle.getInt("KEY_SIZE"), bundle.getInt("KEY_MODE"), bundle.getString("KEY_CRYPT"));
-                lo4 lo4Var = new lo4(mmkvT);
-                mmkvT.ashmemFD();
-                mmkvT.ashmemMetaFD();
+                MMKV s = MMKV.s(getContext(), str2, bundle.getInt("KEY_SIZE"), bundle.getInt("KEY_MODE"), bundle.getString("KEY_CRYPT"));
+                p65 p65Var = new p65(s);
+                s.ashmemFD();
+                s.ashmemMetaFD();
                 Bundle bundle2 = new Bundle();
-                bundle2.putParcelable("KEY", lo4Var);
+                bundle2.putParcelable("KEY", p65Var);
                 return bundle2;
             } catch (Exception e) {
                 e.getMessage();

@@ -1,6 +1,6 @@
 .class public final Lio/sentry/ndk/DebugImage;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -50,102 +50,102 @@
 
 # virtual methods
 .method public getArch()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/DebugImage;->arch:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/DebugImage;->arch:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getCodeFile()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/DebugImage;->codeFile:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/DebugImage;->codeFile:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getCodeId()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/DebugImage;->codeId:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/DebugImage;->codeId:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getDebugFile()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/DebugImage;->debugFile:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/DebugImage;->debugFile:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getDebugId()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/DebugImage;->debugId:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/DebugImage;->debugId:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getImageAddr()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/DebugImage;->imageAddr:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/DebugImage;->imageAddr:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getImageSize()Ljava/lang/Long;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/DebugImage;->imageSize:Ljava/lang/Long;
+    iget-object p0, p0, Lio/sentry/ndk/DebugImage;->imageSize:Ljava/lang/Long;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getType()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/DebugImage;->type:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/DebugImage;->type:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getUuid()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/ndk/DebugImage;->uuid:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/ndk/DebugImage;->uuid:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public setArch(Ljava/lang/String;)V

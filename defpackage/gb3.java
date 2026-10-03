@@ -1,33 +1,60 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class gb3 {
-    public static final gb3 Q;
-    public static final gb3 R;
-    public static final gb3 S;
-    public static final gb3 T;
-    public static final /* synthetic */ gb3[] U;
+    public static final gb3 d;
+    public static final RuntimeException e;
+    public final Method a;
+    public final Method b;
+    public final Method c;
 
     static {
-        gb3 gb3Var = new gb3("RETURNS_CONSTANT", 0);
-        Q = gb3Var;
-        gb3 gb3Var2 = new gb3("CALLS", 1);
-        R = gb3Var2;
-        gb3 gb3Var3 = new gb3("RETURNS_NOT_NULL", 2);
-        S = gb3Var3;
-        gb3 gb3Var4 = new gb3("RETURNS_RESULT_OF", 3);
-        T = gb3Var4;
-        U = new gb3[]{gb3Var, gb3Var2, gb3Var3, gb3Var4};
+        gb3 gb3Var = null;
+        try {
+            e = null;
+            gb3Var = new gb3();
+        } catch (RuntimeException e2) {
+            e = e2;
+        }
+        d = gb3Var;
+        e = e;
     }
 
-    public static gb3 valueOf(String str) {
-        return (gb3) Enum.valueOf(gb3.class, str);
+    public gb3() {
+        try {
+            this.a = Class.class.getMethod("getRecordComponents", null);
+            Class<?> cls = Class.forName("java.lang.reflect.RecordComponent");
+            this.b = cls.getMethod("getName", null);
+            this.c = cls.getMethod("getType", null);
+        } catch (Exception e2) {
+            q05.o(eh0.n("Failed to access Methods needed to support `java.lang.Record`: (", e2.getClass().getName(), ") ", e2.getMessage()), e2);
+            throw null;
+        }
     }
 
-    public static gb3[] values() {
-        return (gb3[]) U.clone();
+    public final Object[] a(Class cls) {
+        boolean z;
+        try {
+            return (Object[]) this.a.invoke(cls, null);
+        } catch (Exception e2) {
+            e = e2;
+            if (as4.a && "runtime".equals(System.getProperty("org.graalvm.nativeimage.imagecode"))) {
+                if (e instanceof InvocationTargetException) {
+                    e = e.getCause();
+                }
+                z = e.getClass().getName().equals("com.oracle.svm.core.jdk.UnsupportedFeatureError");
+            } else {
+                z = false;
+            }
+            if (z) {
+                return null;
+            }
+            i60.p("Failed to access RecordComponents of type ".concat(fr0.u(cls)));
+            return null;
+        }
     }
 }

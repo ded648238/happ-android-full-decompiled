@@ -1,12 +1,12 @@
 package androidx.media;
 
-import defpackage.xy4;
+import defpackage.eb7;
 import java.util.Arrays;
 import okhttp3.internal.ws.WebSocketProtocol;
 import org.conscrypt.FileClientSessionCache;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 class AudioAttributesImplBase implements AudioAttributesImpl {
     public int a;
     public int b;
@@ -85,7 +85,7 @@ class AudioAttributesImplBase implements AudioAttributesImpl {
     }
 
     public final String toString() {
-        String strV;
+        String str;
         StringBuilder sb = new StringBuilder("AudioAttributesCompat:");
         if (this.d != -1) {
             sb.append(" stream=");
@@ -97,59 +97,59 @@ class AudioAttributesImplBase implements AudioAttributesImpl {
         int i2 = AudioAttributesCompat.b;
         switch (i) {
             case 0:
-                strV = "USAGE_UNKNOWN";
+                str = "USAGE_UNKNOWN";
                 break;
             case 1:
-                strV = "USAGE_MEDIA";
+                str = "USAGE_MEDIA";
                 break;
             case 2:
-                strV = "USAGE_VOICE_COMMUNICATION";
+                str = "USAGE_VOICE_COMMUNICATION";
                 break;
             case 3:
-                strV = "USAGE_VOICE_COMMUNICATION_SIGNALLING";
+                str = "USAGE_VOICE_COMMUNICATION_SIGNALLING";
                 break;
             case 4:
-                strV = "USAGE_ALARM";
+                str = "USAGE_ALARM";
                 break;
             case 5:
-                strV = "USAGE_NOTIFICATION";
+                str = "USAGE_NOTIFICATION";
                 break;
             case 6:
-                strV = "USAGE_NOTIFICATION_RINGTONE";
+                str = "USAGE_NOTIFICATION_RINGTONE";
                 break;
             case 7:
-                strV = "USAGE_NOTIFICATION_COMMUNICATION_REQUEST";
+                str = "USAGE_NOTIFICATION_COMMUNICATION_REQUEST";
                 break;
             case 8:
-                strV = "USAGE_NOTIFICATION_COMMUNICATION_INSTANT";
+                str = "USAGE_NOTIFICATION_COMMUNICATION_INSTANT";
                 break;
             case 9:
-                strV = "USAGE_NOTIFICATION_COMMUNICATION_DELAYED";
+                str = "USAGE_NOTIFICATION_COMMUNICATION_DELAYED";
                 break;
             case 10:
-                strV = "USAGE_NOTIFICATION_EVENT";
+                str = "USAGE_NOTIFICATION_EVENT";
                 break;
             case 11:
-                strV = "USAGE_ASSISTANCE_ACCESSIBILITY";
+                str = "USAGE_ASSISTANCE_ACCESSIBILITY";
                 break;
             case FileClientSessionCache.MAX_SIZE /* 12 */:
-                strV = "USAGE_ASSISTANCE_NAVIGATION_GUIDANCE";
+                str = "USAGE_ASSISTANCE_NAVIGATION_GUIDANCE";
                 break;
             case 13:
-                strV = "USAGE_ASSISTANCE_SONIFICATION";
+                str = "USAGE_ASSISTANCE_SONIFICATION";
                 break;
             case 14:
-                strV = "USAGE_GAME";
+                str = "USAGE_GAME";
                 break;
             case 15:
             default:
-                strV = xy4.v(i, "unknown usage ");
+                str = eb7.h(i, "unknown usage ");
                 break;
             case WebSocketProtocol.B0_FLAG_RSV3 /* 16 */:
-                strV = "USAGE_ASSISTANT";
+                str = "USAGE_ASSISTANT";
                 break;
         }
-        sb.append(strV);
+        sb.append(str);
         sb.append(" content=");
         sb.append(this.b);
         sb.append(" flags=0x");

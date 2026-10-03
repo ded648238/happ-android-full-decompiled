@@ -1,17 +1,22 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class ki7 extends od3 {
-    public abstract ki7 t0(boolean z);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ki7 implements mi7 {
+    public final String a;
 
-    /* JADX INFO: renamed from: u0 */
-    public abstract ki7 z0(ud3 ud3Var);
+    public final boolean equals(Object obj) {
+        if (obj instanceof ki7) {
+            return this.a.equals(((ki7) obj).a);
+        }
+        return false;
+    }
 
-    public abstract ki7 v0(cb7 cb7Var);
+    public final int hashCode() {
+        return this.a.hashCode();
+    }
 
-    @Override // defpackage.od3
-    public final ki7 s0() {
-        return this;
+    public final String toString() {
+        return c73.j("GuId(value=", this.a, ")");
     }
 }

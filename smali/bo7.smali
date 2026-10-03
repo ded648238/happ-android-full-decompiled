@@ -1,25 +1,52 @@
-.class public abstract Lbo7;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lbo7;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final synthetic a:I
+# instance fields
+.field public c0:Lsl7;
+
+.field public d0:Lff5;
+
+.field public synthetic e0:Ljava/lang/Object;
+
+.field public f0:I
 
 
-# direct methods
-.method static constructor <clinit>()V
+# virtual methods
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    sget-object v0, Lft7;->b:Lft7;
+    iput-object p1, p0, Lbo7;->e0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lft7;->f()Landroid/view/WindowInsets;
+    iget p1, p0, Lbo7;->f0:I
 
     .line 4
     .line 5
+    const/high16 v0, -0x80000000
+
     .line 6
-    return-void
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    iput p1, p0, Lbo7;->f0:I
+
+    .line 9
+    .line 10
+    const/4 p1, 0x0
+
+    .line 11
+    invoke-static {p1, p1, p0}, Lco7;->h(Lsl7;Lff5;Lg00;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    return-object p0
 .end method

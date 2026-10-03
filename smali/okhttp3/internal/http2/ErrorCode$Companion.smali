@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/ErrorCode$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -47,7 +47,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -62,7 +62,7 @@
 
 # virtual methods
 .method public final fromHttp2(I)Lokhttp3/internal/http2/ErrorCode;
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-static {}, Lokhttp3/internal/http2/ErrorCode;->values()[Lokhttp3/internal/http2/ErrorCode;
@@ -70,41 +70,41 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    array-length v1, v0
+    array-length v0, p0
 
     .line 6
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 7
     :goto_0
-    if-ge v2, v1, :cond_1
+    if-ge v1, v0, :cond_1
 
     .line 8
     .line 9
-    aget-object v3, v0, v2
+    aget-object v2, p0, v1
 
     .line 10
     .line 11
-    invoke-virtual {v3}, Lokhttp3/internal/http2/ErrorCode;->getHttpCode()I
+    invoke-virtual {v2}, Lokhttp3/internal/http2/ErrorCode;->getHttpCode()I
 
     .line 12
     .line 13
     .line 14
-    move-result v4
+    move-result v3
 
     .line 15
-    if-ne v4, p1, :cond_0
+    if-ne v3, p1, :cond_0
 
     .line 16
     .line 17
-    return-object v3
+    return-object v2
 
     .line 18
     :cond_0
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     .line 19
     .line 20
@@ -112,8 +112,8 @@
 
     .line 21
     :cond_1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 22
-    return-object p1
+    return-object p0
 .end method

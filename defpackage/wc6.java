@@ -1,16 +1,34 @@
 package defpackage;
 
-import java.lang.ref.WeakReference;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class wc6 implements yc6 {
+    public final String a;
+    public final String b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class wc6 {
-    public final WeakReference a;
-    public int b;
-    public boolean c;
+    public wc6(String str, String str2) {
+        str.getClass();
+        str2.getClass();
+        this.a = str;
+        this.b = str2;
+    }
 
-    public wc6(int i, dz dzVar) {
-        this.a = new WeakReference(dzVar);
-        this.b = i;
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof wc6)) {
+            return false;
+        }
+        wc6 wc6Var = (wc6) obj;
+        return m93.h(this.a, wc6Var.a) && m93.h(this.b, wc6Var.b);
+    }
+
+    public final int hashCode() {
+        return this.b.hashCode() + (this.a.hashCode() * 31);
+    }
+
+    public final String toString() {
+        return eh0.o("ShareProfile(subId=", this.a, ", profileId=", this.b, ")");
     }
 }

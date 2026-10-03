@@ -1,9 +1,9 @@
 .class public final enum Lio/sentry/rrweb/c;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # static fields
@@ -26,93 +26,45 @@
 
 # direct methods
 .method private static synthetic $values()[Lio/sentry/rrweb/c;
-    .locals 3
+    .locals 7
 
     .line 1
-    const/4 v0, 0x7
+    sget-object v0, Lio/sentry/rrweb/c;->DomContentLoaded:Lio/sentry/rrweb/c;
 
     .line 2
-    new-array v0, v0, [Lio/sentry/rrweb/c;
-
     .line 3
+    sget-object v1, Lio/sentry/rrweb/c;->Load:Lio/sentry/rrweb/c;
+
     .line 4
-    sget-object v1, Lio/sentry/rrweb/c;->DomContentLoaded:Lio/sentry/rrweb/c;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
+    sget-object v2, Lio/sentry/rrweb/c;->FullSnapshot:Lio/sentry/rrweb/c;
 
+    .line 6
     .line 7
-    aput-object v1, v0, v2
+    sget-object v3, Lio/sentry/rrweb/c;->IncrementalSnapshot:Lio/sentry/rrweb/c;
 
     .line 8
     .line 9
-    sget-object v1, Lio/sentry/rrweb/c;->Load:Lio/sentry/rrweb/c;
+    sget-object v4, Lio/sentry/rrweb/c;->Meta:Lio/sentry/rrweb/c;
 
     .line 10
     .line 11
-    const/4 v2, 0x1
+    sget-object v5, Lio/sentry/rrweb/c;->Custom:Lio/sentry/rrweb/c;
 
     .line 12
-    aput-object v1, v0, v2
-
     .line 13
+    sget-object v6, Lio/sentry/rrweb/c;->Plugin:Lio/sentry/rrweb/c;
+
     .line 14
-    sget-object v1, Lio/sentry/rrweb/c;->FullSnapshot:Lio/sentry/rrweb/c;
-
     .line 15
+    filled-new-array/range {v0 .. v6}, [Lio/sentry/rrweb/c;
+
     .line 16
-    const/4 v2, 0x2
-
     .line 17
-    aput-object v1, v0, v2
-
     .line 18
+    move-result-object v0
+
     .line 19
-    sget-object v1, Lio/sentry/rrweb/c;->IncrementalSnapshot:Lio/sentry/rrweb/c;
-
-    .line 20
-    .line 21
-    const/4 v2, 0x3
-
-    .line 22
-    aput-object v1, v0, v2
-
-    .line 23
-    .line 24
-    sget-object v1, Lio/sentry/rrweb/c;->Meta:Lio/sentry/rrweb/c;
-
-    .line 25
-    .line 26
-    const/4 v2, 0x4
-
-    .line 27
-    aput-object v1, v0, v2
-
-    .line 28
-    .line 29
-    sget-object v1, Lio/sentry/rrweb/c;->Custom:Lio/sentry/rrweb/c;
-
-    .line 30
-    .line 31
-    const/4 v2, 0x5
-
-    .line 32
-    aput-object v1, v0, v2
-
-    .line 33
-    .line 34
-    sget-object v1, Lio/sentry/rrweb/c;->Plugin:Lio/sentry/rrweb/c;
-
-    .line 35
-    .line 36
-    const/4 v2, 0x6
-
-    .line 37
-    aput-object v1, v0, v2
-
-    .line 38
-    .line 39
     return-object v0
 .end method
 
@@ -340,7 +292,7 @@
 
 
 # virtual methods
-.method public serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -354,10 +306,10 @@
     .line 2
     .line 3
     .line 4
-    move-result p2
+    move-result p0
 
     .line 5
-    int-to-long v0, p2
+    int-to-long v0, p0
 
     .line 6
     check-cast p1, Lio/sentry/internal/debugmeta/c;

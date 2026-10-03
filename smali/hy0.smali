@@ -1,18 +1,60 @@
 .class public final Lhy0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lwy0;
+.implements Le55;
 
 
 # instance fields
-.field public final Q:Lxw5;
+.field public final a:Ljava/util/List;
+
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lxw5;)V
+.method public constructor <init>(Ljava/util/List;Ljava/lang/String;)V
     .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lhy0;->a:Ljava/util/List;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lhy0;->b:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-static {p1}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    invoke-interface {p0}, Ljava/util/Set;->size()I
+
+    .line 16
+    .line 17
+    .line 18
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljf2;)Z
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -20,139 +62,225 @@
     .line 2
     .line 3
     .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object p0, p0, Lhy0;->a:Ljava/util/List;
 
     .line 5
     .line 6
-    .line 7
-    iput-object p1, p0, Lhy0;->Q:Lxw5;
+    invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
 
+    .line 7
     .line 8
     .line 9
-    return-void
-.end method
-
-
-# virtual methods
-.method public final e()V
-    .locals 3
-
-    .line 1
-    invoke-static {p0}, Lva6;->z(Lwy0;)Landroid/content/Context;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-static {v0}, Ltr2;->r(Landroid/content/Context;)Z
-
-    .line 6
-    .line 7
-    .line 8
     move-result v0
 
-    .line 9
-    iget-object v1, p0, Lhy0;->Q:Lxw5;
-
     .line 10
-    .line 11
-    iget-object v2, v1, Lxw5;->T:Ljava/lang/Object;
+    if-eqz v0, :cond_0
 
+    .line 11
     .line 12
+    goto :goto_0
+
     .line 13
-    check-cast v2, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    :cond_0
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 14
     .line 15
-    invoke-virtual {v2, v0}, Landroid/view/View;->setFocusableInTouchMode(Z)V
-
     .line 16
+    move-result-object p0
+
     .line 17
-    .line 18
-    iget-object v1, v1, Lxw5;->U:Ljava/lang/Object;
-
-    .line 19
-    .line 20
-    check-cast v1, Landroid/widget/LinearLayout;
-
-    .line 21
-    .line 22
-    invoke-virtual {v1, v0}, Landroid/view/View;->setFocusableInTouchMode(Z)V
-
-    .line 23
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public final n()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lhy0;->Q:Lxw5;
-
-    .line 2
-    .line 3
-    iget-object v1, v0, Lxw5;->T:Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
-
-    .line 6
-    .line 7
-    new-instance v2, Lrb5;
-
-    .line 8
-    .line 9
-    invoke-direct {v2, p0}, Lrb5;-><init>(Ljava/lang/Object;)V
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-static {v1, v2}, Lzd7;->c0(Landroid/view/View;Lyy0;)V
-
-    .line 13
-    .line 14
-    .line 15
-    iget-object v0, v0, Lxw5;->S:Ljava/lang/Object;
-
-    .line 16
-    .line 17
-    check-cast v0, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;
+    :cond_1
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 18
     .line 19
-    new-instance v1, Lrb2;
-
     .line 20
+    move-result v0
+
     .line 21
-    const/16 v2, 0x18
+    if-eqz v0, :cond_2
 
     .line 22
     .line 23
-    invoke-direct {v1, v2, p0}, Lrb2;-><init>(ILjava/lang/Object;)V
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 24
     .line 25
     .line 26
-    invoke-static {v0, v1}, Lzd7;->c0(Landroid/view/View;Lyy0;)V
+    move-result-object v0
 
     .line 27
+    check-cast v0, Le55;
+
     .line 28
     .line 29
-    return-void
+    invoke-static {v0, p1}, Ljq8;->B(Le55;Ljf2;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v0
+
+    .line 33
+    if-nez v0, :cond_1
+
+    .line 34
+    .line 35
+    const/4 p0, 0x0
+
+    .line 36
+    return p0
+
+    .line 37
+    :cond_2
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 38
+    return p0
 .end method
 
-.method public final v()Lbn7;
+.method public final b(Ljf2;Ljava/util/ArrayList;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lhy0;->Q:Lxw5;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
+    .line 4
+    iget-object p0, p0, Lhy0;->a:Ljava/util/List;
+
+    .line 5
+    .line 6
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    if-eqz v0, :cond_0
+
+    .line 15
+    .line 16
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    check-cast v0, Le55;
+
+    .line 21
+    .line 22
+    invoke-static {v0, p1, p2}, Ljq8;->k(Le55;Ljf2;Ljava/util/ArrayList;)V
+
+    .line 23
+    .line 24
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_0
+    return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lhy0;->b:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final u(Ljf2;Lmi2;)Ljava/util/Collection;
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Ljava/util/HashSet;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iget-object p0, p0, Lhy0;->a:Ljava/util/List;
+
+    .line 10
+    .line 11
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    if-eqz v1, :cond_0
+
+    .line 20
+    .line 21
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    check-cast v1, Le55;
+
+    .line 26
+    .line 27
+    invoke-interface {v1, p1, p2}, Le55;->u(Ljf2;Lmi2;)Ljava/util/Collection;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v1
+
+    .line 31
+    invoke-virtual {v0, v1}, Ljava/util/AbstractCollection;->addAll(Ljava/util/Collection;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
     return-object v0
 .end method

@@ -1,19 +1,28 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ze4 {
-    public static final ze4 a = new ze4();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ze4 implements hk4 {
+    public hk4[] a;
 
-    public final boolean equals(Object obj) {
-        return this == obj || (obj instanceof ze4);
+    @Override // defpackage.hk4
+    public final ov5 a(Class cls) {
+        for (hk4 hk4Var : this.a) {
+            if (hk4Var.b(cls)) {
+                return hk4Var.a(cls);
+            }
+        }
+        ra.g("No factory is available for message type: ".concat(cls.getName()));
+        return null;
     }
 
-    public final int hashCode() {
-        return 2113961193;
-    }
-
-    public final String toString() {
-        return "NullRequestData";
+    @Override // defpackage.hk4
+    public final boolean b(Class cls) {
+        for (hk4 hk4Var : this.a) {
+            if (hk4Var.b(cls)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

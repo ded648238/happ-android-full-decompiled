@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Http2Connection$Listener$Companion$REFUSE_INCOMING_STREAMS$1;
 .super Lokhttp3/internal/http2/Http2Connection$Listener;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Lokhttp3/internal/http2/Http2Connection$Listener;",
         "Lokhttp3/internal/http2/Http2Stream;",
         "stream",
-        "Lbh7;",
+        "Lr98;",
         "onStream",
         "(Lokhttp3/internal/http2/Http2Stream;)V",
         "okhttp"
@@ -53,7 +53,7 @@
 
 # virtual methods
 .method public onStream(Lokhttp3/internal/http2/Http2Stream;)V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -66,14 +66,14 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lokhttp3/internal/http2/ErrorCode;->REFUSED_STREAM:Lokhttp3/internal/http2/ErrorCode;
+    sget-object p0, Lokhttp3/internal/http2/ErrorCode;->REFUSED_STREAM:Lokhttp3/internal/http2/ErrorCode;
 
     .line 5
     .line 6
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 7
-    invoke-virtual {p1, v0, v1}, Lokhttp3/internal/http2/Http2Stream;->close(Lokhttp3/internal/http2/ErrorCode;Ljava/io/IOException;)V
+    invoke-virtual {p1, p0, v0}, Lokhttp3/internal/http2/Http2Stream;->close(Lokhttp3/internal/http2/ErrorCode;Ljava/io/IOException;)V
 
     .line 8
     .line 9

@@ -1,9 +1,9 @@
 .class public final Lokhttp3/internal/cache2/Relay$RelaySource;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lle6;
+.implements Ld27;
 
 
 # annotations
@@ -22,22 +22,22 @@
     }
     d2 = {
         "Lokhttp3/internal/cache2/Relay$RelaySource;",
-        "Lle6;",
+        "Ld27;",
         "<init>",
         "(Lokhttp3/internal/cache2/Relay;)V",
-        "Lf50;",
+        "Ll70;",
         "sink",
         "",
         "byteCount",
         "read",
-        "(Lf50;J)J",
-        "Lo47;",
+        "(Ll70;J)J",
+        "Lax7;",
         "timeout",
-        "()Lo47;",
-        "Lbh7;",
+        "()Lax7;",
+        "Lr98;",
         "close",
         "()V",
-        "Lo47;",
+        "Lax7;",
         "Lokhttp3/internal/cache2/FileOperator;",
         "fileOperator",
         "Lokhttp3/internal/cache2/FileOperator;",
@@ -62,7 +62,7 @@
 
 .field final synthetic this$0:Lokhttp3/internal/cache2/Relay;
 
-.field private final timeout:Lo47;
+.field private final timeout:Lax7;
 
 
 # direct methods
@@ -84,7 +84,7 @@
     .line 4
     .line 5
     .line 6
-    new-instance v0, Lo47;
+    new-instance v0, Lax7;
 
     .line 7
     .line 8
@@ -93,7 +93,7 @@
     .line 9
     .line 10
     .line 11
-    iput-object v0, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->timeout:Lo47;
+    iput-object v0, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->timeout:Lax7;
 
     .line 12
     .line 13
@@ -142,7 +142,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -169,59 +169,59 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
+    iget-object p0, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
     .line 10
     .line 11
-    monitor-enter v1
+    monitor-enter p0
 
     .line 12
     :try_start_0
-    invoke-virtual {v1}, Lokhttp3/internal/cache2/Relay;->getSourceCount()I
+    invoke-virtual {p0}, Lokhttp3/internal/cache2/Relay;->getSourceCount()I
 
     .line 13
     .line 14
     .line 15
-    move-result v2
+    move-result v1
 
     .line 16
-    add-int/lit8 v2, v2, -0x1
+    add-int/lit8 v1, v1, -0x1
 
     .line 17
     .line 18
-    invoke-virtual {v1, v2}, Lokhttp3/internal/cache2/Relay;->setSourceCount(I)V
+    invoke-virtual {p0, v1}, Lokhttp3/internal/cache2/Relay;->setSourceCount(I)V
 
     .line 19
     .line 20
     .line 21
-    invoke-virtual {v1}, Lokhttp3/internal/cache2/Relay;->getSourceCount()I
+    invoke-virtual {p0}, Lokhttp3/internal/cache2/Relay;->getSourceCount()I
 
     .line 22
     .line 23
     .line 24
-    move-result v2
+    move-result v1
 
     .line 25
-    if-nez v2, :cond_1
+    if-nez v1, :cond_1
 
     .line 26
     .line 27
-    invoke-virtual {v1}, Lokhttp3/internal/cache2/Relay;->getFile()Ljava/io/RandomAccessFile;
+    invoke-virtual {p0}, Lokhttp3/internal/cache2/Relay;->getFile()Ljava/io/RandomAccessFile;
 
     .line 28
     .line 29
     .line 30
-    move-result-object v2
+    move-result-object v1
 
     .line 31
-    invoke-virtual {v1, v0}, Lokhttp3/internal/cache2/Relay;->setFile(Ljava/io/RandomAccessFile;)V
+    invoke-virtual {p0, v0}, Lokhttp3/internal/cache2/Relay;->setFile(Ljava/io/RandomAccessFile;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 32
     .line 33
     .line 34
-    move-object v0, v2
+    move-object v0, v1
 
     .line 35
     goto :goto_0
@@ -236,7 +236,7 @@
     .line 38
     :cond_1
     :goto_0
-    monitor-exit v1
+    monitor-exit p0
 
     .line 39
     if-eqz v0, :cond_2
@@ -254,14 +254,14 @@
 
     .line 45
     :goto_2
-    monitor-exit v1
+    monitor-exit p0
 
     .line 46
     throw v0
 .end method
 
-.method public read(Lf50;J)J
-    .locals 20
+.method public read(Ll70;J)J
+    .locals 22
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -311,18 +311,18 @@
 
     .line 20
     .line 21
-    const/4 v0, 0x2
+    cmp-long v0, v7, v5
 
     .line 22
-    const-wide/16 v9, -0x1
-
     .line 23
+    const/4 v5, 0x2
+
     .line 24
-    cmp-long v11, v7, v5
+    const-wide/16 v6, -0x1
 
     .line 25
     .line 26
-    if-nez v11, :cond_2
+    if-nez v0, :cond_2
 
     .line 27
     .line 28
@@ -331,19 +331,19 @@
     .line 29
     .line 30
     .line 31
-    move-result v5
+    move-result v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 32
-    if-eqz v5, :cond_0
+    if-eqz v0, :cond_0
 
     .line 33
     .line 34
     monitor-exit v4
 
     .line 35
-    return-wide v9
+    return-wide v6
 
     .line 36
     :cond_0
@@ -353,18 +353,18 @@
     .line 37
     .line 38
     .line 39
-    move-result-object v5
+    move-result-object v0
 
     .line 40
-    if-eqz v5, :cond_1
+    if-eqz v0, :cond_1
 
     .line 41
     .line 42
-    iget-object v0, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->timeout:Lo47;
+    iget-object v0, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->timeout:Lax7;
 
     .line 43
     .line 44
-    invoke-virtual {v0, v4}, Lo47;->waitUntilNotified(Ljava/lang/Object;)V
+    invoke-virtual {v0, v4}, Lax7;->waitUntilNotified(Ljava/lang/Object;)V
 
     .line 45
     .line 46
@@ -386,15 +386,15 @@
     .line 52
     .line 53
     .line 54
-    move-result-object v5
+    move-result-object v0
 
     .line 55
-    invoke-virtual {v4, v5}, Lokhttp3/internal/cache2/Relay;->setUpstreamReader(Ljava/lang/Thread;)V
+    invoke-virtual {v4, v0}, Lokhttp3/internal/cache2/Relay;->setUpstreamReader(Ljava/lang/Thread;)V
 
     .line 56
     .line 57
     .line 58
-    const/4 v5, 0x1
+    const/4 v0, 0x1
 
     .line 59
     goto :goto_1
@@ -406,39 +406,39 @@
     .line 61
     .line 62
     .line 63
-    move-result-wide v5
+    move-result-wide v8
 
     .line 64
-    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Lf50;
+    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Ll70;
 
     .line 65
     .line 66
     .line 67
-    move-result-object v7
+    move-result-object v0
 
     .line 68
-    iget-wide v7, v7, Lf50;->R:J
+    iget-wide v10, v0, Ll70;->Y:J
 
     .line 69
     .line 70
-    sub-long/2addr v5, v7
+    sub-long/2addr v8, v10
 
     .line 71
-    iget-wide v7, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
+    iget-wide v10, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 72
     .line 73
-    cmp-long v11, v7, v5
+    cmp-long v0, v10, v8
 
     .line 74
     .line 75
-    if-gez v11, :cond_6
+    if-gez v0, :cond_6
 
     .line 76
     .line 77
-    const/4 v5, 0x2
+    move v0, v5
 
     .line 78
     :goto_1
@@ -449,11 +449,11 @@
 
     .line 80
     .line 81
-    const-wide/16 v6, 0x20
+    const-wide/16 v8, 0x20
 
     .line 82
     .line 83
-    if-ne v5, v0, :cond_3
+    if-ne v0, v5, :cond_3
 
     .line 84
     .line 85
@@ -465,11 +465,11 @@
     move-result-wide v4
 
     .line 89
-    iget-wide v8, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
+    iget-wide v6, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
 
     .line 90
     .line 91
-    sub-long/2addr v4, v8
+    sub-long/2addr v4, v6
 
     .line 92
     invoke-static {v2, v3, v4, v5}, Ljava/lang/Math;->min(JJ)J
@@ -477,14 +477,14 @@
     .line 93
     .line 94
     .line 95
-    move-result-wide v12
+    move-result-wide v14
 
     .line 96
-    iget-object v8, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->fileOperator:Lokhttp3/internal/cache2/FileOperator;
+    iget-object v10, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->fileOperator:Lokhttp3/internal/cache2/FileOperator;
 
     .line 97
     .line 98
-    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 99
     .line 100
@@ -493,15 +493,15 @@
 
     .line 102
     .line 103
-    add-long v9, v2, v6
+    add-long v11, v2, v8
 
     .line 104
     .line 105
-    move-object/from16 v11, p1
+    move-object/from16 v13, p1
 
     .line 106
     .line 107
-    invoke-virtual/range {v8 .. v13}, Lokhttp3/internal/cache2/FileOperator;->read(JLf50;J)V
+    invoke-virtual/range {v10 .. v15}, Lokhttp3/internal/cache2/FileOperator;->read(JLl70;J)V
 
     .line 108
     .line 109
@@ -510,14 +510,14 @@
 
     .line 111
     .line 112
-    add-long/2addr v2, v12
+    add-long/2addr v2, v14
 
     .line 113
     iput-wide v2, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
 
     .line 114
     .line 115
-    return-wide v12
+    return-wide v14
 
     .line 116
     :cond_3
@@ -525,7 +525,7 @@
 
     .line 117
     :try_start_2
-    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getUpstream()Lle6;
+    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getUpstream()Ld27;
 
     .line 118
     .line 119
@@ -542,7 +542,7 @@
 
     .line 125
     .line 126
-    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getUpstreamBuffer()Lf50;
+    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getUpstreamBuffer()Ll70;
 
     .line 127
     .line 128
@@ -550,27 +550,27 @@
     move-result-object v4
 
     .line 130
-    iget-object v8, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
+    iget-object v10, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
     .line 131
     .line 132
-    invoke-virtual {v8}, Lokhttp3/internal/cache2/Relay;->getBufferMaxSize()J
+    invoke-virtual {v10}, Lokhttp3/internal/cache2/Relay;->getBufferMaxSize()J
 
     .line 133
     .line 134
     .line 135
-    move-result-wide v11
+    move-result-wide v10
 
     .line 136
-    invoke-interface {v0, v4, v11, v12}, Lle6;->read(Lf50;J)J
+    invoke-interface {v0, v4, v10, v11}, Ld27;->read(Ll70;J)J
 
     .line 137
     .line 138
     .line 139
-    move-result-wide v11
+    move-result-wide v10
 
     .line 140
-    cmp-long v0, v11, v9
+    cmp-long v0, v10, v6
 
     .line 141
     .line 142
@@ -597,37 +597,37 @@
     .line 151
     .line 152
     .line 153
-    iget-object v2, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
+    iget-object v1, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
     .line 154
     .line 155
-    monitor-enter v2
+    monitor-enter v1
 
     .line 156
     :try_start_3
-    invoke-virtual {v2, v5}, Lokhttp3/internal/cache2/Relay;->setUpstreamReader(Ljava/lang/Thread;)V
+    invoke-virtual {v1, v5}, Lokhttp3/internal/cache2/Relay;->setUpstreamReader(Ljava/lang/Thread;)V
 
     .line 157
     .line 158
     .line 159
-    invoke-virtual {v2}, Ljava/lang/Object;->notifyAll()V
+    invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     .line 160
     .line 161
     .line 162
-    monitor-exit v2
+    monitor-exit v1
 
     .line 163
-    return-wide v9
+    return-wide v6
 
     .line 164
     :catchall_1
     move-exception v0
 
     .line 165
-    monitor-exit v2
+    monitor-exit v1
 
     .line 166
     throw v0
@@ -643,428 +643,425 @@
     .line 170
     :cond_4
     :try_start_4
-    invoke-static {v11, v12, v2, v3}, Ljava/lang/Math;->min(JJ)J
+    invoke-static {v10, v11, v2, v3}, Ljava/lang/Math;->min(JJ)J
 
     .line 171
     .line 172
     .line 173
-    move-result-wide v18
+    move-result-wide v20
 
     .line 174
     iget-object v0, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
     .line 175
     .line 176
-    invoke-virtual {v0}, Lokhttp3/internal/cache2/Relay;->getUpstreamBuffer()Lf50;
+    invoke-virtual {v0}, Lokhttp3/internal/cache2/Relay;->getUpstreamBuffer()Ll70;
 
     .line 177
     .line 178
     .line 179
-    move-result-object v14
+    move-result-object v16
 
     .line 180
-    const-wide/16 v15, 0x0
+    const-wide/16 v17, 0x0
 
     .line 181
     .line 182
-    move-object/from16 v17, p1
+    move-object/from16 v19, p1
 
     .line 183
     .line 184
-    invoke-virtual/range {v14 .. v19}, Lf50;->l(JLf50;J)V
+    invoke-virtual/range {v16 .. v21}, Ll70;->p(JLl70;J)V
 
     .line 185
     .line 186
     .line 187
-    move-wide/from16 v2, v18
+    iget-wide v2, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
 
     .line 188
     .line 189
-    iget-wide v8, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
+    add-long v2, v2, v20
 
     .line 190
     .line 191
-    add-long/2addr v8, v2
+    iput-wide v2, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
 
     .line 192
-    iput-wide v8, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
-
     .line 193
+    iget-object v12, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->fileOperator:Lokhttp3/internal/cache2/FileOperator;
+
     .line 194
-    iget-object v13, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->fileOperator:Lokhttp3/internal/cache2/FileOperator;
-
     .line 195
-    .line 196
-    invoke-virtual {v13}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 196
     .line 197
     .line 198
-    .line 199
     iget-object v0, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
+    .line 199
     .line 200
-    .line 201
     invoke-virtual {v0}, Lokhttp3/internal/cache2/Relay;->getUpstreamPos()J
 
+    .line 201
     .line 202
     .line 203
+    move-result-wide v2
+
     .line 204
-    move-result-wide v8
+    add-long v13, v2, v8
 
     .line 205
-    add-long v14, v8, v6
-
     .line 206
-    .line 207
     iget-object v0, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
+    .line 207
     .line 208
-    .line 209
-    invoke-virtual {v0}, Lokhttp3/internal/cache2/Relay;->getUpstreamBuffer()Lf50;
+    invoke-virtual {v0}, Lokhttp3/internal/cache2/Relay;->getUpstreamBuffer()Ll70;
 
+    .line 209
     .line 210
     .line 211
-    .line 212
     move-result-object v0
 
-    .line 213
-    invoke-virtual {v0}, Lf50;->h()Lf50;
+    .line 212
+    invoke-virtual {v0}, Ll70;->h()Ll70;
 
+    .line 213
     .line 214
     .line 215
+    move-result-object v15
+
     .line 216
-    move-result-object v16
+    move-wide/from16 v16, v10
 
     .line 217
-    move-wide/from16 v17, v11
-
     .line 218
-    .line 219
-    invoke-virtual/range {v13 .. v18}, Lokhttp3/internal/cache2/FileOperator;->write(JLf50;J)V
+    invoke-virtual/range {v12 .. v17}, Lokhttp3/internal/cache2/FileOperator;->write(JLl70;J)V
 
+    .line 219
     .line 220
     .line 221
-    .line 222
-    move-wide/from16 v6, v17
+    move-wide/from16 v2, v16
 
+    .line 222
     .line 223
-    .line 224
     iget-object v4, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
+    .line 224
     .line 225
-    .line 226
     monitor-enter v4
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 227
+    .line 226
     :try_start_5
-    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Lf50;
+    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Ll70;
 
+    .line 227
     .line 228
     .line 229
-    .line 230
     move-result-object v0
+
+    .line 230
+    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getUpstreamBuffer()Ll70;
 
     .line 231
-    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getUpstreamBuffer()Lf50;
-
     .line 232
     .line 233
+    move-result-object v6
+
     .line 234
-    move-result-object v8
+    invoke-virtual {v0, v6, v2, v3}, Ll70;->write(Ll70;J)V
 
     .line 235
-    invoke-virtual {v0, v8, v6, v7}, Lf50;->write(Lf50;J)V
-
     .line 236
     .line 237
-    .line 238
-    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Lf50;
+    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Ll70;
 
+    .line 238
     .line 239
     .line 240
-    .line 241
     move-result-object v0
+
+    .line 241
+    iget-wide v6, v0, Ll70;->Y:J
 
     .line 242
-    iget-wide v8, v0, Lf50;->R:J
-
     .line 243
-    .line 244
     invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBufferMaxSize()J
 
+    .line 244
     .line 245
     .line 246
+    move-result-wide v8
+
     .line 247
-    move-result-wide v10
+    cmp-long v0, v6, v8
 
     .line 248
-    cmp-long v0, v8, v10
-
     .line 249
-    .line 250
     if-lez v0, :cond_5
 
+    .line 250
     .line 251
-    .line 252
-    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Lf50;
+    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Ll70;
 
+    .line 252
     .line 253
     .line 254
-    .line 255
     move-result-object v0
 
-    .line 256
-    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Lf50;
+    .line 255
+    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Ll70;
 
+    .line 256
     .line 257
     .line 258
+    move-result-object v6
+
     .line 259
-    move-result-object v8
+    iget-wide v6, v6, Ll70;->Y:J
 
     .line 260
-    iget-wide v8, v8, Lf50;->R:J
-
     .line 261
-    .line 262
     invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBufferMaxSize()J
 
+    .line 262
     .line 263
     .line 264
+    move-result-wide v8
+
     .line 265
-    move-result-wide v10
+    sub-long/2addr v6, v8
 
     .line 266
-    sub-long/2addr v8, v10
+    invoke-virtual {v0, v6, v7}, Ll70;->skip(J)V
 
     .line 267
-    invoke-virtual {v0, v8, v9}, Lf50;->skip(J)V
-
     .line 268
     .line 269
-    .line 270
     goto :goto_2
 
-    .line 271
+    .line 270
     :catchall_3
     move-exception v0
 
-    .line 272
+    .line 271
     goto :goto_3
 
-    .line 273
+    .line 272
     :cond_5
     :goto_2
     invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getUpstreamPos()J
 
+    .line 273
     .line 274
     .line 275
+    move-result-wide v6
+
     .line 276
-    move-result-wide v8
+    add-long/2addr v6, v2
 
     .line 277
-    add-long/2addr v8, v6
-
-    .line 278
-    invoke-virtual {v4, v8, v9}, Lokhttp3/internal/cache2/Relay;->setUpstreamPos(J)V
+    invoke-virtual {v4, v6, v7}, Lokhttp3/internal/cache2/Relay;->setUpstreamPos(J)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_3
 
+    .line 278
     .line 279
     .line 280
-    .line 281
     :try_start_6
     monitor-exit v4
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
-    .line 282
-    iget-object v4, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
+    .line 281
+    iget-object v1, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
+    .line 282
     .line 283
+    monitor-enter v1
+
     .line 284
-    monitor-enter v4
+    :try_start_7
+    invoke-virtual {v1, v5}, Lokhttp3/internal/cache2/Relay;->setUpstreamReader(Ljava/lang/Thread;)V
 
     .line 285
-    :try_start_7
-    invoke-virtual {v4, v5}, Lokhttp3/internal/cache2/Relay;->setUpstreamReader(Ljava/lang/Thread;)V
-
     .line 286
     .line 287
-    .line 288
-    invoke-virtual {v4}, Ljava/lang/Object;->notifyAll()V
+    invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_4
 
+    .line 288
     .line 289
     .line 290
+    monitor-exit v1
+
     .line 291
-    monitor-exit v4
+    return-wide v20
 
     .line 292
-    return-wide v2
-
-    .line 293
     :catchall_4
     move-exception v0
 
-    .line 294
-    monitor-exit v4
+    .line 293
+    monitor-exit v1
 
-    .line 295
+    .line 294
     throw v0
 
-    .line 296
+    .line 295
     :goto_3
     :try_start_8
     monitor-exit v4
 
-    .line 297
+    .line 296
     throw v0
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
-    .line 298
+    .line 297
     :goto_4
-    iget-object v2, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
+    iget-object v1, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->this$0:Lokhttp3/internal/cache2/Relay;
 
+    .line 298
     .line 299
+    monitor-enter v1
+
     .line 300
-    monitor-enter v2
+    :try_start_9
+    invoke-virtual {v1, v5}, Lokhttp3/internal/cache2/Relay;->setUpstreamReader(Ljava/lang/Thread;)V
 
     .line 301
-    :try_start_9
-    invoke-virtual {v2, v5}, Lokhttp3/internal/cache2/Relay;->setUpstreamReader(Ljava/lang/Thread;)V
-
     .line 302
     .line 303
-    .line 304
-    invoke-virtual {v2}, Ljava/lang/Object;->notifyAll()V
+    invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_5
 
+    .line 304
     .line 305
     .line 306
-    .line 307
-    monitor-exit v2
+    monitor-exit v1
 
-    .line 308
+    .line 307
     throw v0
 
-    .line 309
+    .line 308
     :catchall_5
     move-exception v0
 
-    .line 310
-    monitor-exit v2
+    .line 309
+    monitor-exit v1
 
-    .line 311
+    .line 310
     throw v0
 
-    .line 312
+    .line 311
     :cond_6
     :try_start_a
     invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getUpstreamPos()J
 
+    .line 312
     .line 313
     .line 314
+    move-result-wide v5
+
     .line 315
-    move-result-wide v7
+    iget-wide v10, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
 
     .line 316
-    iget-wide v9, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
-
     .line 317
+    sub-long/2addr v5, v10
+
     .line 318
-    sub-long/2addr v7, v9
+    invoke-static {v2, v3, v5, v6}, Ljava/lang/Math;->min(JJ)J
 
     .line 319
-    invoke-static {v2, v3, v7, v8}, Ljava/lang/Math;->min(JJ)J
-
     .line 320
     .line 321
+    move-result-wide v2
+
     .line 322
-    move-result-wide v9
+    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Ll70;
 
     .line 323
-    move-wide v2, v5
-
     .line 324
-    invoke-virtual {v4}, Lokhttp3/internal/cache2/Relay;->getBuffer()Lf50;
-
     .line 325
-    .line 326
-    .line 327
     move-result-object v5
 
-    .line 328
+    .line 326
     iget-wide v6, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
 
-    .line 329
-    .line 330
-    sub-long/2addr v6, v2
+    .line 327
+    .line 328
+    sub-long/2addr v6, v8
 
-    .line 331
+    .line 329
     move-object/from16 v8, p1
 
-    .line 332
-    .line 333
-    invoke-virtual/range {v5 .. v10}, Lf50;->l(JLf50;J)V
+    .line 330
+    .line 331
+    move-wide v9, v2
 
+    .line 332
+    invoke-virtual/range {v5 .. v10}, Ll70;->p(JLl70;J)V
+
+    .line 333
     .line 334
     .line 335
-    .line 336
     iget-wide v2, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
 
+    .line 336
     .line 337
-    .line 338
     add-long/2addr v2, v9
 
-    .line 339
+    .line 338
     iput-wide v2, v1, Lokhttp3/internal/cache2/Relay$RelaySource;->sourcePos:J
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_0
 
+    .line 339
     .line 340
-    .line 341
     monitor-exit v4
 
-    .line 342
+    .line 341
     return-wide v9
 
-    .line 343
+    .line 342
     :goto_5
     monitor-exit v4
 
-    .line 344
+    .line 343
     throw v0
 
-    .line 345
+    .line 344
     :cond_7
     const-string v0, "Check failed."
 
+    .line 345
     .line 346
-    .line 347
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {v0}, Li60;->g(Ljava/lang/String;)V
 
+    .line 347
     .line 348
     .line 349
-    .line 350
-    const-wide/16 v2, 0x0
+    const-wide/16 v0, 0x0
 
+    .line 350
     .line 351
-    .line 352
-    return-wide v2
+    return-wide v0
 .end method
 
-.method public timeout()Lo47;
-    .locals 1
+.method public timeout()Lax7;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->timeout:Lo47;
+    iget-object p0, p0, Lokhttp3/internal/cache2/Relay$RelaySource;->timeout:Lax7;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

@@ -1,51 +1,115 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class eo1 {
-    public static final eo1 Q;
-    public static final eo1 R;
-    public static final eo1 S;
-    public static final eo1 T;
-    public static final eo1 U;
-    public static final eo1 V;
-    public static final eo1 W;
-    public static final /* synthetic */ eo1[] X;
+import java.util.List;
+import su.happ.proxyutility.util.dnsttv.dto.RequestEnvelope;
+import su.happ.proxyutility.util.dnsttv.dto.enums.DnsTTLogType;
 
-    static {
-        eo1 eo1Var = new eo1("ERROR_CORRECTION", 0);
-        Q = eo1Var;
-        eo1 eo1Var2 = new eo1("CHARACTER_SET", 1);
-        R = eo1Var2;
-        eo1 eo1Var3 = new eo1("DATA_MATRIX_SHAPE", 2);
-        eo1 eo1Var4 = new eo1("DATA_MATRIX_COMPACT", 3);
-        eo1 eo1Var5 = new eo1("MIN_SIZE", 4);
-        eo1 eo1Var6 = new eo1("MAX_SIZE", 5);
-        eo1 eo1Var7 = new eo1("MARGIN", 6);
-        S = eo1Var7;
-        eo1 eo1Var8 = new eo1("PDF417_COMPACT", 7);
-        eo1 eo1Var9 = new eo1("PDF417_COMPACTION", 8);
-        eo1 eo1Var10 = new eo1("PDF417_DIMENSIONS", 9);
-        eo1 eo1Var11 = new eo1("PDF417_AUTO_ECI", 10);
-        eo1 eo1Var12 = new eo1("AZTEC_LAYERS", 11);
-        eo1 eo1Var13 = new eo1("QR_VERSION", 12);
-        T = eo1Var13;
-        eo1 eo1Var14 = new eo1("QR_MASK_PATTERN", 13);
-        U = eo1Var14;
-        eo1 eo1Var15 = new eo1("QR_COMPACT", 14);
-        V = eo1Var15;
-        eo1 eo1Var16 = new eo1("GS1_FORMAT", 15);
-        W = eo1Var16;
-        X = new eo1[]{eo1Var, eo1Var2, eo1Var3, eo1Var4, eo1Var5, eo1Var6, eo1Var7, eo1Var8, eo1Var9, eo1Var10, eo1Var11, eo1Var12, eo1Var13, eo1Var14, eo1Var15, eo1Var16, new eo1("FORCE_CODE_SET", 16), new eo1("FORCE_C40", 17), new eo1("CODE128_COMPACT", 18)};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class eo1 extends ll7 implements xi2 {
+    public go1 d0;
+    public RequestEnvelope e0;
+    public long f0;
+    public int g0;
+    public /* synthetic */ Object h0;
+    public final /* synthetic */ go1 i0;
+    public final /* synthetic */ RequestEnvelope j0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public eo1(go1 go1Var, RequestEnvelope requestEnvelope, b31 b31Var) {
+        super(2, b31Var);
+        this.i0 = go1Var;
+        this.j0 = requestEnvelope;
     }
 
-    public static eo1 valueOf(String str) {
-        return (eo1) Enum.valueOf(eo1.class, str);
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        return ((eo1) n((b31) obj2, (i41) obj)).q(r98.a);
     }
 
-    public static eo1[] values() {
-        return (eo1[]) X.clone();
+    @Override // defpackage.g00
+    public final b31 n(b31 b31Var, Object obj) {
+        eo1 eo1Var = new eo1(this.i0, this.j0, b31Var);
+        eo1Var.h0 = obj;
+        return eo1Var;
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        RequestEnvelope requestEnvelope;
+        long j;
+        go1 go1Var;
+        byte[] bArr;
+        i41 i41Var = (i41) this.h0;
+        int i = this.g0;
+        if (i == 0) {
+            q48.f0(obj);
+            RequestEnvelope requestEnvelope2 = this.j0;
+            String str = "withResolvers: START data:" + requestEnvelope2.getUrl();
+            go1 go1Var2 = this.i0;
+            go1.d(go1Var2, str, null, 6);
+            long currentTimeMillis = System.currentTimeMillis();
+            List list = go1Var2.c;
+            kv5 kv5Var = lv5.X;
+            String str2 = (String) tt0.s1(list);
+            go1.d(go1Var2, "domain:" + str2, null, 6);
+            List i2 = go1Var2.f.i();
+            if (i2 != null) {
+                if (i2.isEmpty()) {
+                    i2 = null;
+                }
+                if (i2 != null) {
+                    byte[] bArr2 = go1Var2.b;
+                    ha6 ha6Var = new ha6(go1Var2);
+                    str2.getClass();
+                    bArr2.getClass();
+                    uo1 uo1Var = new uo1(str2, bArr2, i2, ha6Var);
+                    byte[] a = requestEnvelope2.a();
+                    DnsTTLogType dnsTTLogType = go1Var2.e;
+                    this.h0 = i41Var;
+                    this.d0 = go1Var2;
+                    this.e0 = requestEnvelope2;
+                    this.f0 = currentTimeMillis;
+                    this.g0 = 1;
+                    Object c = uo1Var.c(a, dnsTTLogType, this);
+                    j41 j41Var = j41.X;
+                    if (c == j41Var) {
+                        return j41Var;
+                    }
+                    requestEnvelope = requestEnvelope2;
+                    j = currentTimeMillis;
+                    obj = c;
+                    go1Var = go1Var2;
+                }
+            }
+            return new w55(new Integer(901), null);
+        }
+        if (i != 1) {
+            i60.g("call to 'resume' before 'invoke' with coroutine");
+            return null;
+        }
+        j = this.f0;
+        requestEnvelope = this.e0;
+        go1Var = this.d0;
+        q48.f0(obj);
+        n42 n42Var = (n42) obj;
+        byte[] bArr3 = n42Var.a;
+        boolean z = bArr3 != null;
+        String str3 = n42Var.b;
+        if (z) {
+            go1Var.f.g = str3;
+        }
+        RequestEnvelope.Route url = requestEnvelope.getUrl();
+        String str4 = n42Var.a != null ? "SUCCESS" : "FAILURE";
+        long currentTimeMillis2 = System.currentTimeMillis() - j;
+        int hashCode = requestEnvelope.hashCode();
+        if (bArr3 == null) {
+            bArr = "fail".getBytes(ho0.a);
+            bArr.getClass();
+        } else {
+            bArr = bArr3;
+        }
+        go1.d(go1Var, "withResolvers\ndata.url:" + url + "\nSTATUS:" + str4 + "\ntime:" + currentTimeMillis2 + "ms\ndns:" + str3 + "\nsend data:" + hashCode + "\nanswer data:\n" + new String(bArr, ho0.a), DnsTTLogType.INFO, 4);
+        return new w55(n42Var.c, bArr3);
     }
 }

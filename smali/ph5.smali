@@ -1,179 +1,139 @@
-.class public final synthetic Lph5;
+.class public abstract synthetic Lph5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Laa2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final a:Lph5;
-
-.field private static final descriptor:Ll56;
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 6
 
     .line 1
-    new-instance v0, Lph5;
+    const/16 v0, 0x9
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Lw31;->G(I)[I
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lph5;->a:Lph5;
+    move-result-object v1
 
     .line 7
+    array-length v1, v1
+
     .line 8
-    new-instance v1, Lvp2;
+    new-array v1, v1, [I
 
     .line 9
     .line 10
-    const-string v2, "su.happ.proxyutility.firebase.entity.notification.RemoteMessageId"
+    const/4 v2, 0x1
 
     .line 11
+    const/4 v3, 0x0
+
     .line 12
-    invoke-direct {v1, v2, v0}, Lvp2;-><init>(Ljava/lang/String;Laa2;)V
+    :try_start_0
+    aput v2, v1, v3
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 13
     .line 14
+    :catch_0
+    const/4 v3, 0x2
+
     .line 15
-    const-string v0, "value"
+    :try_start_1
+    aput v3, v1, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 16
     .line 17
-    const/4 v2, 0x0
+    :catch_1
+    const/4 v2, 0x3
 
     .line 18
-    invoke-virtual {v1, v0, v2}, Lpw4;->k(Ljava/lang/String;Z)V
+    const/4 v4, 0x6
 
     .line 19
+    :try_start_2
+    aput v2, v1, v4
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
     .line 20
     .line 21
-    sput-object v1, Lph5;->descriptor:Ll56;
+    :catch_2
+    const/4 v5, 0x4
 
     .line 22
+    :try_start_3
+    aput v5, v1, v3
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
     .line 23
+    .line 24
+    :catch_3
+    const/4 v3, 0x5
+
+    .line 25
+    :try_start_4
+    aput v3, v1, v2
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 26
+    .line 27
+    :catch_4
+    :try_start_5
+    aput v4, v1, v5
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    .line 28
+    .line 29
+    :catch_5
+    const/4 v2, 0x7
+
+    .line 30
+    :try_start_6
+    aput v2, v1, v3
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    .line 31
+    .line 32
+    :catch_6
+    const/16 v3, 0x8
+
+    .line 33
+    .line 34
+    :try_start_7
+    aput v3, v1, v2
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    .line 35
+    .line 36
+    :catch_7
+    :try_start_8
+    aput v0, v1, v3
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    .line 37
+    .line 38
+    :catch_8
+    sput-object v1, Lph5;->a:[I
+
+    .line 39
+    .line 40
     return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ldl6;Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    check-cast p2, Lrh5;
-
-    .line 2
-    .line 3
-    iget-object p2, p2, Lrh5;->Q:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 6
-    .line 7
-    .line 8
-    sget-object v0, Lph5;->descriptor:Ll56;
-
-    .line 9
-    .line 10
-    invoke-virtual {p1, v0}, Ldl6;->h(Ll56;)Ldl6;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
-
-    .line 14
-    invoke-virtual {p1, p2}, Ldl6;->q(Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-void
-.end method
-
-.method public final b(Lv21;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lph5;->descriptor:Ll56;
-
-    .line 2
-    .line 3
-    invoke-interface {p1, v0}, Lv21;->p(Ll56;)Lv21;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    invoke-interface {p1}, Lv21;->s()Ljava/lang/String;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 12
-    .line 13
-    .line 14
-    new-instance v0, Lrh5;
-
-    .line 15
-    .line 16
-    invoke-direct {v0, p1}, Lrh5;-><init>(Ljava/lang/String;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-object v0
-.end method
-
-.method public final c()[Lq83;
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    new-array v0, v0, [Lq83;
-
-    .line 3
-    .line 4
-    sget-object v1, Lml6;->a:Lml6;
-
-    .line 5
-    .line 6
-    const/4 v2, 0x0
-
-    .line 7
-    aput-object v1, v0, v2
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final d()Ll56;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lph5;->descriptor:Ll56;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

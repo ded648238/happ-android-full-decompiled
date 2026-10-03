@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSslSlhDsaPublicKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/security/PublicKey;
@@ -57,23 +57,23 @@
 
     .line 18
     :cond_0
-    const-string p1, "Invalid key size"
+    const-string p0, "Invalid key size"
 
     .line 19
     .line 20
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 21
     .line 22
     .line 23
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 24
-    throw p1
+    throw p0
 .end method
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -87,18 +87,18 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
 
     .line 5
     .line 6
-    array-length p1, p1
+    array-length p0, p0
 
     .line 7
-    const/16 v0, 0x20
+    const/16 p1, 0x20
 
     .line 8
     .line 9
-    if-ne p1, v0, :cond_0
+    if-ne p0, p1, :cond_0
 
     .line 10
     .line 11
@@ -106,11 +106,11 @@
 
     .line 12
     :cond_0
-    const-string p1, "Invalid key size"
+    const-string p0, "Invalid key size"
 
     .line 13
     .line 14
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -138,7 +138,7 @@
 
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
@@ -156,18 +156,18 @@
 
     .line 7
     .line 8
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 9
-    return p1
+    return p0
 
     .line 10
     :cond_0
-    instance-of v2, p1, Lorg/conscrypt/OpenSslSlhDsaPublicKey;
+    instance-of p0, p1, Lorg/conscrypt/OpenSslSlhDsaPublicKey;
 
     .line 11
     .line 12
-    if-nez v2, :cond_1
+    if-nez p0, :cond_1
 
     .line 13
     .line 14
@@ -179,27 +179,27 @@
 
     .line 16
     .line 17
-    iget-object p1, p1, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
+    iget-object p0, p1, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
 
     .line 18
     .line 19
-    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([B[B)Z
+    invoke-static {v0, p0}, Ljava/util/Arrays;->equals([B[B)Z
 
     .line 20
     .line 21
     .line 22
-    move-result p1
+    move-result p0
 
     .line 23
-    return p1
+    return p0
 
     .line 24
     :cond_2
-    const-string p1, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 25
     .line 26
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 27
     .line 28
@@ -208,128 +208,128 @@
 .end method
 
 .method public getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "SLH-DSA-SHA2-128S"
+    const-string p0, "SLH-DSA-SHA2-128S"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
-    .locals 2
+    .locals 1
 
     .line 1
     sget-object v0, Lorg/conscrypt/OpenSslSlhDsaKeyFactory;->x509Preamble:[B
 
     .line 2
     .line 3
-    iget-object v1, p0, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lorg/conscrypt/ArrayUtils;->concat([B[B)[B
+    invoke-static {v0, p0}, Lorg/conscrypt/ArrayUtils;->concat([B[B)[B
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "X.509"
+    const-string p0, "X.509"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getRaw()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, [B->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, [B->clone()Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    check-cast v0, [B
+    check-cast p0, [B
 
     .line 10
     .line 11
-    return-object v0
+    return-object p0
 
     .line 12
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 13
     .line 14
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslSlhDsaPublicKey;->raw:[B
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([B)I
 
     .line 6
     .line 7
     .line 8
-    move-result v0
+    move-result p0
 
     .line 9
-    return v0
+    return p0
 
     .line 10
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return v0
+    return p0
 .end method

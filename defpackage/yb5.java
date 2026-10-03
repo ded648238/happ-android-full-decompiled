@@ -1,64 +1,52 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class yb5 {
-    public static final /* synthetic */ int[] a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class yb5 extends x1 {
+    public final Object[] c0;
+    public final u18 d0;
 
-    static {
-        int[] iArr = new int[t35.values().length];
-        try {
-            iArr[0] = 1;
-        } catch (NoSuchFieldError unused) {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public yb5(Object[] objArr, Object[] objArr2, int i, int i2, int i3) {
+        super(i, i2, 0);
+        objArr.getClass();
+        objArr2.getClass();
+        this.c0 = objArr2;
+        int i4 = (i2 - 1) & (-32);
+        this.d0 = new u18(objArr, i > i4 ? i4 : i, i4, i3);
+    }
+
+    @Override // java.util.ListIterator, java.util.Iterator
+    public final Object next() {
+        if (!hasNext()) {
+            i60.a();
+            return null;
         }
-        try {
-            iArr[2] = 2;
-        } catch (NoSuchFieldError unused2) {
+        u18 u18Var = this.d0;
+        if (u18Var.hasNext()) {
+            this.Y++;
+            return u18Var.next();
         }
-        try {
-            iArr[3] = 3;
-        } catch (NoSuchFieldError unused3) {
+        int i = this.Y;
+        this.Y = i + 1;
+        return this.c0[i - u18Var.Z];
+    }
+
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        if (!hasPrevious()) {
+            i60.a();
+            return null;
         }
-        try {
-            iArr[4] = 4;
-        } catch (NoSuchFieldError unused4) {
+        int i = this.Y;
+        u18 u18Var = this.d0;
+        int i2 = u18Var.Z;
+        if (i <= i2) {
+            this.Y = i - 1;
+            return u18Var.previous();
         }
-        try {
-            iArr[1] = 5;
-        } catch (NoSuchFieldError unused5) {
-        }
-        try {
-            iArr[5] = 6;
-        } catch (NoSuchFieldError unused6) {
-        }
-        try {
-            iArr[6] = 7;
-        } catch (NoSuchFieldError unused7) {
-        }
-        try {
-            iArr[7] = 8;
-        } catch (NoSuchFieldError unused8) {
-        }
-        try {
-            iArr[8] = 9;
-        } catch (NoSuchFieldError unused9) {
-        }
-        try {
-            iArr[9] = 10;
-        } catch (NoSuchFieldError unused10) {
-        }
-        try {
-            iArr[10] = 11;
-        } catch (NoSuchFieldError unused11) {
-        }
-        try {
-            iArr[11] = 12;
-        } catch (NoSuchFieldError unused12) {
-        }
-        try {
-            iArr[12] = 13;
-        } catch (NoSuchFieldError unused13) {
-        }
-        a = iArr;
+        int i3 = i - 1;
+        this.Y = i3;
+        return this.c0[i3 - i2];
     }
 }

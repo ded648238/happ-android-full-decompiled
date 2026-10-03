@@ -2,41 +2,42 @@ package androidx.work.multiprocess;
 
 import android.content.Context;
 import androidx.work.WorkerParameters;
-import defpackage.c90;
-import defpackage.dn3;
-import defpackage.ea0;
-import defpackage.f90;
-import defpackage.ij5;
-import defpackage.mc2;
-import defpackage.wm3;
+import defpackage.an3;
+import defpackage.f44;
+import defpackage.sb0;
+import defpackage.w31;
+import defpackage.wb0;
+import defpackage.y34;
+import defpackage.z36;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class RemoteListenableWorker extends dn3 {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class RemoteListenableWorker extends f44 {
     static {
-        mc2.x("RemoteListenableWorker");
+        an3.u("RemoteListenableWorker");
     }
 
     public RemoteListenableWorker(Context context, WorkerParameters workerParameters) {
         super(context, workerParameters);
     }
 
-    @Override // defpackage.dn3
-    public final wm3 c() {
-        c90 c90Var = new c90();
-        c90Var.c = new ij5();
-        f90 f90Var = new f90(c90Var);
-        c90Var.b = f90Var;
-        c90Var.a = ea0.class;
+    @Override // defpackage.f44
+    public final y34 c() {
+        sb0 sb0Var = new sb0();
+        sb0Var.c = new z36();
+        wb0 wb0Var = new wb0(sb0Var);
+        sb0Var.b = wb0Var;
+        sb0Var.a = w31.class;
         try {
-            mc2.m().getClass();
-            c90Var.c(new IllegalArgumentException("startWork() shouldn't never be called on RemoteListenableWorker"));
-            c90Var.a = "RemoteListenableWorker Failed Future";
+            an3.l().getClass();
+            sb0Var.d(new IllegalArgumentException("startWork() shouldn't never be called on RemoteListenableWorker"));
+            sb0Var.a = "RemoteListenableWorker Failed Future";
+            return wb0Var;
         } catch (Exception e) {
-            f90Var.b(e);
+            wb0Var.b(e);
+            return wb0Var;
         }
-        return f90Var;
     }
 
-    public abstract wm3 d();
+    public abstract y34 e();
 }

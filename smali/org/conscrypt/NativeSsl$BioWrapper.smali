@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/NativeSsl$BioWrapper;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -79,7 +79,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 5
+    .locals 4
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
@@ -120,11 +120,11 @@
 
     .line 19
     .line 20
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 21
     .line 22
-    if-eqz v4, :cond_0
+    if-eqz v2, :cond_0
 
     .line 23
     .line 24
@@ -147,27 +147,27 @@
     .line 30
     :cond_0
     :goto_0
-    iget-object v0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
 
     .line 31
     .line 32
-    invoke-static {v0}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
+    invoke-static {p0}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 33
     .line 34
     .line 35
-    move-result-object v0
+    move-result-object p0
 
     .line 36
-    invoke-interface {v0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 37
     .line 38
     .line 39
-    move-result-object v0
+    move-result-object p0
 
     .line 40
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 41
     .line 42
@@ -176,27 +176,27 @@
 
     .line 44
     :goto_1
-    iget-object v1, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
 
     .line 45
     .line 46
-    invoke-static {v1}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
+    invoke-static {p0}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 47
     .line 48
     .line 49
-    move-result-object v1
+    move-result-object p0
 
     .line 50
-    invoke-interface {v1}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 51
     .line 52
     .line 53
-    move-result-object v1
+    move-result-object p0
 
     .line 54
-    invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 55
     .line 56
@@ -205,7 +205,7 @@
 .end method
 
 .method public getPendingWrittenBytes()I
-    .locals 5
+    .locals 4
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
@@ -242,11 +242,11 @@
 
     .line 17
     .line 18
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 19
     .line 20
-    if-nez v4, :cond_0
+    if-nez v0, :cond_0
 
     .line 21
     .line 22
@@ -272,27 +272,27 @@
 
     .line 30
     :goto_0
-    iget-object v1, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
 
     .line 31
     .line 32
-    invoke-static {v1}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
+    invoke-static {p0}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 33
     .line 34
     .line 35
-    move-result-object v1
+    move-result-object p0
 
     .line 36
-    invoke-interface {v1}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
 
     .line 37
     .line 38
     .line 39
-    move-result-object v1
+    move-result-object p0
 
     .line 40
-    invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 41
     .line 42
@@ -304,27 +304,27 @@
     move-exception v0
 
     .line 45
-    iget-object v1, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
 
     .line 46
     .line 47
-    invoke-static {v1}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
+    invoke-static {p0}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 48
     .line 49
     .line 50
-    move-result-object v1
+    move-result-object p0
 
     .line 51
-    invoke-interface {v1}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
 
     .line 52
     .line 53
     .line 54
-    move-result-object v1
+    move-result-object p0
 
     .line 55
-    invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 56
     .line 57
@@ -431,27 +431,27 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 44
-    iget-object p2, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
 
     .line 45
     .line 46
-    invoke-static {p2}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
+    invoke-static {p0}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 47
     .line 48
     .line 49
-    move-result-object p2
+    move-result-object p0
 
     .line 50
-    invoke-interface {p2}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
 
     .line 51
     .line 52
     .line 53
-    move-result-object p2
+    move-result-object p0
 
     .line 54
-    invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 55
     .line 56
@@ -490,27 +490,27 @@
 
     .line 69
     :goto_0
-    iget-object p2, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
 
     .line 70
     .line 71
-    invoke-static {p2}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
+    invoke-static {p0}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 72
     .line 73
     .line 74
-    move-result-object p2
+    move-result-object p0
 
     .line 75
-    invoke-interface {p2}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
 
     .line 76
     .line 77
     .line 78
-    move-result-object p2
+    move-result-object p0
 
     .line 79
-    invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 80
     .line 81
@@ -617,27 +617,27 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 44
-    iget-object p2, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
 
     .line 45
     .line 46
-    invoke-static {p2}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
+    invoke-static {p0}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 47
     .line 48
     .line 49
-    move-result-object p2
+    move-result-object p0
 
     .line 50
-    invoke-interface {p2}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
 
     .line 51
     .line 52
     .line 53
-    move-result-object p2
+    move-result-object p0
 
     .line 54
-    invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 55
     .line 56
@@ -676,27 +676,27 @@
 
     .line 69
     :goto_0
-    iget-object p2, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
+    iget-object p0, p0, Lorg/conscrypt/NativeSsl$BioWrapper;->this$0:Lorg/conscrypt/NativeSsl;
 
     .line 70
     .line 71
-    invoke-static {p2}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
+    invoke-static {p0}, Lorg/conscrypt/NativeSsl;->access$200(Lorg/conscrypt/NativeSsl;)Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 72
     .line 73
     .line 74
-    move-result-object p2
+    move-result-object p0
 
     .line 75
-    invoke-interface {p2}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
 
     .line 76
     .line 77
     .line 78
-    move-result-object p2
+    move-result-object p0
 
     .line 79
-    invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 80
     .line 81

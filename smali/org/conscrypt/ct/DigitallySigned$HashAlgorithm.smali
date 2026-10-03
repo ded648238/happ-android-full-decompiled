@@ -1,6 +1,6 @@
 .class public final enum Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -44,93 +44,45 @@
 
 # direct methods
 .method private static synthetic $values()[Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
-    .locals 3
+    .locals 7
 
     .line 1
-    const/4 v0, 0x7
+    sget-object v0, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->NONE:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
 
     .line 2
-    new-array v0, v0, [Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
-
     .line 3
+    sget-object v1, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->MD5:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
+
     .line 4
-    sget-object v1, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->NONE:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
+    sget-object v2, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA1:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
 
+    .line 6
     .line 7
-    aput-object v1, v0, v2
+    sget-object v3, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA224:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
 
     .line 8
     .line 9
-    sget-object v1, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->MD5:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
+    sget-object v4, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA256:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
 
     .line 10
     .line 11
-    const/4 v2, 0x1
+    sget-object v5, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA384:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
 
     .line 12
-    aput-object v1, v0, v2
-
     .line 13
+    sget-object v6, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA512:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
+
     .line 14
-    sget-object v1, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA1:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
-
     .line 15
+    filled-new-array/range {v0 .. v6}, [Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
+
     .line 16
-    const/4 v2, 0x2
-
     .line 17
-    aput-object v1, v0, v2
-
     .line 18
+    move-result-object v0
+
     .line 19
-    sget-object v1, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA224:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
-
-    .line 20
-    .line 21
-    const/4 v2, 0x3
-
-    .line 22
-    aput-object v1, v0, v2
-
-    .line 23
-    .line 24
-    sget-object v1, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA256:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
-
-    .line 25
-    .line 26
-    const/4 v2, 0x4
-
-    .line 27
-    aput-object v1, v0, v2
-
-    .line 28
-    .line 29
-    sget-object v1, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA384:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
-
-    .line 30
-    .line 31
-    const/4 v2, 0x5
-
-    .line 32
-    aput-object v1, v0, v2
-
-    .line 33
-    .line 34
-    sget-object v1, Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;->SHA512:Lorg/conscrypt/ct/DigitallySigned$HashAlgorithm;
-
-    .line 35
-    .line 36
-    const/4 v2, 0x6
-
-    .line 37
-    aput-object v1, v0, v2
-
-    .line 38
-    .line 39
     return-object v0
 .end method
 
@@ -352,7 +304,7 @@
 
     .line 10
     .line 11
-    invoke-static {p0, v2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v2}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 12
     .line 13

@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/XRayConfig;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -178,7 +178,7 @@
 .field private final log:Lsu/happ/proxyutility/dto/XRayConfig$LogBean;
 
 .field private meta:Lsu/happ/proxyutility/dto/XRayConfig$Meta;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "meta"
     .end annotation
 .end field
@@ -313,80 +313,80 @@
 
 # virtual methods
 .method public final d()Ljava/util/ArrayList;
-    .locals 7
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->outbounds:Ljava/util/ArrayList;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->outbounds:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    new-instance v1, Ljava/util/ArrayList;
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 4
     .line 5
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 6
     .line 7
     .line 8
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 9
     .line 10
     .line 11
-    move-result-object v0
+    move-result-object p0
 
     .line 12
     :cond_0
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 13
     .line 14
     .line 15
-    move-result v2
+    move-result v1
 
     .line 16
-    if-eqz v2, :cond_3
+    if-eqz v1, :cond_3
 
     .line 17
     .line 18
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v2
+    move-result-object v1
 
     .line 22
-    move-object v3, v2
+    move-object v2, v1
 
     .line 23
-    check-cast v3, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;
+    check-cast v2, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;
 
     .line 24
     .line 25
-    invoke-static {}, Lsu/happ/proxyutility/dto/enums/EConfigType;->a()Lpp1;
+    invoke-static {}, Lsu/happ/proxyutility/dto/enums/EConfigType;->a()Lmy1;
 
     .line 26
     .line 27
     .line 28
-    move-result-object v4
+    move-result-object v3
 
     .line 29
-    if-eqz v4, :cond_1
+    if-eqz v3, :cond_1
 
     .line 30
     .line 31
-    invoke-interface {v4}, Ljava/util/Collection;->isEmpty()Z
+    invoke-interface {v3}, Ljava/util/Collection;->isEmpty()Z
 
     .line 32
     .line 33
     .line 34
-    move-result v5
+    move-result v4
 
     .line 35
-    if-eqz v5, :cond_1
+    if-eqz v4, :cond_1
 
     .line 36
     .line 37
@@ -394,68 +394,68 @@
 
     .line 38
     :cond_1
-    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 39
     .line 40
     .line 41
-    move-result-object v4
+    move-result-object v3
 
     .line 42
     :cond_2
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     .line 43
     .line 44
     .line 45
-    move-result v5
+    move-result v4
 
     .line 46
-    if-eqz v5, :cond_0
+    if-eqz v4, :cond_0
 
     .line 47
     .line 48
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 49
     .line 50
     .line 51
-    move-result-object v5
+    move-result-object v4
 
     .line 52
-    check-cast v5, Lsu/happ/proxyutility/dto/enums/EConfigType;
+    check-cast v4, Lsu/happ/proxyutility/dto/enums/EConfigType;
 
     .line 53
     .line 54
-    invoke-virtual {v5}, Ljava/lang/Enum;->name()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     .line 55
     .line 56
     .line 57
-    move-result-object v5
+    move-result-object v4
 
     .line 58
-    invoke-virtual {v3}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;->e()Ljava/lang/String;
+    invoke-virtual {v2}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;->e()Ljava/lang/String;
 
     .line 59
     .line 60
     .line 61
-    move-result-object v6
+    move-result-object v5
 
     .line 62
-    invoke-static {v5, v6}, Lzl6;->Z(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, v5}, Lla7;->A0(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 63
     .line 64
     .line 65
-    move-result v5
+    move-result v4
 
     .line 66
-    if-eqz v5, :cond_2
+    if-eqz v4, :cond_2
 
     .line 67
     .line 68
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 69
     .line 70
@@ -464,18 +464,18 @@
 
     .line 72
     :cond_3
-    return-object v1
+    return-object v0
 .end method
 
 .method public final e()Lsu/happ/proxyutility/dto/XRayConfig$DnsBean;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->dns:Lsu/happ/proxyutility/dto/XRayConfig$DnsBean;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->dns:Lsu/happ/proxyutility/dto/XRayConfig$DnsBean;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -520,7 +520,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -544,7 +544,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -568,7 +568,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -592,7 +592,7 @@
 
     .line 49
     .line 50
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 51
     .line 52
@@ -616,7 +616,7 @@
 
     .line 60
     .line 61
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 62
     .line 63
@@ -640,7 +640,7 @@
 
     .line 71
     .line 72
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 73
     .line 74
@@ -664,7 +664,7 @@
 
     .line 82
     .line 83
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 84
     .line 85
@@ -688,7 +688,7 @@
 
     .line 93
     .line 94
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 95
     .line 96
@@ -712,7 +712,7 @@
 
     .line 104
     .line 105
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 106
     .line 107
@@ -736,7 +736,7 @@
 
     .line 115
     .line 116
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 117
     .line 118
@@ -760,7 +760,7 @@
 
     .line 126
     .line 127
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 128
     .line 129
@@ -784,7 +784,7 @@
 
     .line 137
     .line 138
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 139
     .line 140
@@ -808,7 +808,7 @@
 
     .line 148
     .line 149
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 150
     .line 151
@@ -832,7 +832,7 @@
 
     .line 159
     .line 160
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 161
     .line 162
@@ -856,7 +856,7 @@
 
     .line 170
     .line 171
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 172
     .line 173
@@ -872,7 +872,7 @@
 
     .line 178
     :cond_10
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/XRayConfig;->meta:Lsu/happ/proxyutility/dto/XRayConfig$Meta;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->meta:Lsu/happ/proxyutility/dto/XRayConfig$Meta;
 
     .line 179
     .line 180
@@ -880,15 +880,15 @@
 
     .line 181
     .line 182
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 183
     .line 184
     .line 185
-    move-result p1
+    move-result p0
 
     .line 186
-    if-nez p1, :cond_11
+    if-nez p0, :cond_11
 
     .line 187
     .line 188
@@ -900,36 +900,36 @@
 .end method
 
 .method public final f()Ljava/util/ArrayList;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->inbounds:Ljava/util/ArrayList;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->inbounds:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final g()Lsu/happ/proxyutility/dto/XRayConfig$LogBean;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->log:Lsu/happ/proxyutility/dto/XRayConfig$LogBean;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->log:Lsu/happ/proxyutility/dto/XRayConfig$LogBean;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final h()Lsu/happ/proxyutility/dto/XRayConfig$Meta;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->meta:Lsu/happ/proxyutility/dto/XRayConfig$Meta;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->meta:Lsu/happ/proxyutility/dto/XRayConfig$Meta;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final hashCode()I
@@ -947,7 +947,7 @@
 
     .line 5
     .line 6
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 7
     goto :goto_0
@@ -975,7 +975,7 @@
 
     .line 17
     .line 18
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 19
     goto :goto_1
@@ -1025,7 +1025,7 @@
 
     .line 39
     .line 40
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 41
     goto :goto_2
@@ -1094,7 +1094,7 @@
 
     .line 70
     .line 71
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 72
     goto :goto_3
@@ -1163,7 +1163,7 @@
 
     .line 101
     .line 102
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 103
     goto :goto_4
@@ -1194,7 +1194,7 @@
 
     .line 114
     .line 115
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 116
     goto :goto_5
@@ -1225,7 +1225,7 @@
 
     .line 127
     .line 128
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 129
     goto :goto_6
@@ -1256,7 +1256,7 @@
 
     .line 140
     .line 141
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 142
     goto :goto_7
@@ -1287,7 +1287,7 @@
 
     .line 153
     .line 154
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 155
     goto :goto_8
@@ -1318,7 +1318,7 @@
 
     .line 166
     .line 167
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 168
     goto :goto_9
@@ -1341,11 +1341,11 @@
 
     .line 175
     .line 176
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->meta:Lsu/happ/proxyutility/dto/XRayConfig$Meta;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->meta:Lsu/happ/proxyutility/dto/XRayConfig$Meta;
 
     .line 177
     .line 178
-    if-nez v0, :cond_a
+    if-nez p0, :cond_a
 
     .line 179
     .line 180
@@ -1353,7 +1353,7 @@
 
     .line 181
     :cond_a
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/XRayConfig$Meta;->hashCode()I
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/XRayConfig$Meta;->hashCode()I
 
     .line 182
     .line 183
@@ -1369,156 +1369,156 @@
 .end method
 
 .method public final i()Ljava/util/ArrayList;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->outbounds:Ljava/util/ArrayList;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->outbounds:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final j()Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;
-    .locals 5
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->outbounds:Ljava/util/ArrayList;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->outbounds:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
     :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 8
     .line 9
     .line 10
-    move-result v1
+    move-result v0
 
     .line 11
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
     .line 12
     .line 13
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 14
     .line 15
     .line 16
-    move-result-object v1
+    move-result-object v0
 
     .line 17
-    check-cast v1, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;
+    check-cast v0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;
 
     .line 18
     .line 19
-    invoke-static {}, Lsu/happ/proxyutility/dto/enums/EConfigType;->a()Lpp1;
+    invoke-static {}, Lsu/happ/proxyutility/dto/enums/EConfigType;->a()Lmy1;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v2
+    move-result-object v1
 
     .line 23
-    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 24
     .line 25
     .line 26
-    move-result-object v2
+    move-result-object v1
 
     .line 27
     :cond_1
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 28
     .line 29
     .line 30
-    move-result v3
+    move-result v2
 
     .line 31
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     .line 32
     .line 33
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 34
     .line 35
     .line 36
-    move-result-object v3
+    move-result-object v2
 
     .line 37
-    check-cast v3, Lsu/happ/proxyutility/dto/enums/EConfigType;
+    check-cast v2, Lsu/happ/proxyutility/dto/enums/EConfigType;
 
     .line 38
     .line 39
-    invoke-virtual {v1}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;->e()Ljava/lang/String;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;->e()Ljava/lang/String;
 
     .line 40
     .line 41
     .line 42
-    move-result-object v4
+    move-result-object v3
 
     .line 43
-    invoke-virtual {v3}, Ljava/lang/Enum;->name()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     .line 44
     .line 45
     .line 46
-    move-result-object v3
+    move-result-object v2
 
     .line 47
-    invoke-static {v4, v3}, Lzl6;->Z(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v2}, Lla7;->A0(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 48
     .line 49
     .line 50
-    move-result v3
+    move-result v2
 
     .line 51
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_1
 
     .line 52
     .line 53
-    return-object v1
+    return-object v0
 
     .line 54
     :cond_2
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 55
-    return-object v0
+    return-object p0
 .end method
 
 .method public final k()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->remarks:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->remarks:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final l()Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->routing:Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig;->routing:Lsu/happ/proxyutility/dto/XRayConfig$RoutingBean;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final m(Lsu/happ/proxyutility/dto/XRayConfig$Api;)V
@@ -1613,7 +1613,7 @@
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 18
+    .locals 17
 
     .line 1
     move-object/from16 v0, p0
@@ -1680,11 +1680,11 @@
 
     .line 32
     .line 33
-    move-object/from16 v16, v15
+    iget-object v0, v0, Lsu/happ/proxyutility/dto/XRayConfig;->meta:Lsu/happ/proxyutility/dto/XRayConfig$Meta;
 
     .line 34
     .line 35
-    iget-object v15, v0, Lsu/happ/proxyutility/dto/XRayConfig;->meta:Lsu/happ/proxyutility/dto/XRayConfig$Meta;
+    move-object/from16 p0, v0
 
     .line 36
     .line 37
@@ -1692,7 +1692,7 @@
 
     .line 38
     .line 39
-    move-object/from16 v17, v15
+    move-object/from16 v16, v15
 
     .line 40
     .line 41
@@ -1919,7 +1919,7 @@
     .line 166
     .line 167
     .line 168
-    move-object/from16 v1, v17
+    move-object/from16 v1, p0
 
     .line 169
     .line 170

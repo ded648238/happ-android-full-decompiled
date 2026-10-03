@@ -1,25 +1,75 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum r45 implements xs2 {
-    /* JADX INFO: Fake field, exist only in values array */
-    DECLARATION(0),
-    /* JADX INFO: Fake field, exist only in values array */
-    FAKE_OVERRIDE(1),
-    /* JADX INFO: Fake field, exist only in values array */
-    DELEGATION(2),
-    /* JADX INFO: Fake field, exist only in values array */
-    SYNTHESIZED(3);
+import androidx.compose.ui.node.LayoutNode;
 
-    public final int Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface r45 {
+    u3 getAccessibilityManager();
 
-    r45(int i) {
-        this.Q = i;
-    }
+    my getAutofill();
 
-    @Override // defpackage.xs2
-    public final int a() {
-        return this.Q;
-    }
+    ry getAutofillManager();
+
+    sy getAutofillTree();
+
+    gs0 getClipboard();
+
+    js0 getClipboardManager();
+
+    z31 getCoroutineContext();
+
+    af1 getDensity();
+
+    bq1 getDragAndDropManager();
+
+    oc2 getFocusOwner();
+
+    md2 getFontFamilyResolver();
+
+    ld2 getFontLoader();
+
+    zo2 getGraphicsContext();
+
+    kt2 getHapticFeedBack();
+
+    j63 getInputModeManager();
+
+    hv3 getLayoutDirection();
+
+    d64 getLocaleList();
+
+    fn4 getModifierLocalManager();
+
+    d35 getOutOfFrameExecutor();
+
+    jd5 getPlacementScope();
+
+    kf5 getPointerIconService();
+
+    kx5 getRectManager();
+
+    o86 getRetainedValuesStore();
+
+    LayoutNode getRoot();
+
+    cp6 getSemanticsOwner();
+
+    xv3 getSharedDrawScope();
+
+    boolean getShowLayoutBounds();
+
+    u45 getSnapshotObserver();
+
+    w17 getSoftwareKeyboardController();
+
+    jt7 getTextInputService();
+
+    ru7 getTextToolbar();
+
+    qi8 getViewConfiguration();
+
+    dn8 getWindowInfo();
+
+    void setShowLayoutBounds(boolean z);
 }

@@ -1,8 +1,26 @@
 package defpackage;
 
-import java.util.Set;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class um2 implements u57 {
+    public final go7 a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface um2 extends Set, pm2, r73 {
+    public um2(go7 go7Var) {
+        this.a = go7Var;
+    }
+
+    @Override // defpackage.u57
+    public final boolean a(Exception exc) {
+        return false;
+    }
+
+    @Override // defpackage.u57
+    public final boolean b(vx vxVar) {
+        int i = vxVar.b;
+        if (i != 3 && i != 4 && i != 5) {
+            return false;
+        }
+        this.a.c(vxVar.a);
+        return true;
+    }
 }

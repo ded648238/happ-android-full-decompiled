@@ -1,6 +1,28 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface vw4 {
+import android.os.CancellationSignal;
+import android.view.inputmethod.HandwritingGesture;
+import android.view.inputmethod.PreviewableHandwritingGesture;
+import java.util.concurrent.Executor;
+import java.util.function.IntConsumer;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class vw4 extends uw4 {
+    @Override // android.view.inputmethod.InputConnection
+    public final void performHandwritingGesture(HandwritingGesture handwritingGesture, Executor executor, IntConsumer intConsumer) {
+        a67 a67Var = this.b;
+        if (a67Var != null) {
+            a67Var.performHandwritingGesture(handwritingGesture, executor, intConsumer);
+        }
+    }
+
+    @Override // android.view.inputmethod.InputConnection
+    public final boolean previewHandwritingGesture(PreviewableHandwritingGesture previewableHandwritingGesture, CancellationSignal cancellationSignal) {
+        a67 a67Var = this.b;
+        if (a67Var != null) {
+            return a67Var.previewHandwritingGesture(previewableHandwritingGesture, cancellationSignal);
+        }
+        return false;
+    }
 }

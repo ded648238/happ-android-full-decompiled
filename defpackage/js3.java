@@ -1,51 +1,28 @@
 package defpackage;
 
-import com.google.gson.a;
-import java.io.PrintWriter;
-import java.util.Date;
-import java.util.List;
-import su.happ.proxyutility.dto.SubscriptionItem;
-import su.happ.proxyutility.feature.main.MainActivity;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class js3 {
+    public final is3 a;
+    public final bl4 b;
+    public final String[] c;
+    public final String[] d;
+    public final String[] e;
+    public final String f;
+    public final int g;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class js3 implements j72 {
-    public final /* synthetic */ int Q;
-    public final /* synthetic */ qe5 R;
-
-    public /* synthetic */ js3(int i, qe5 qe5Var) {
-        this.Q = i;
-        this.R = qe5Var;
+    public js3(is3 is3Var, bl4 bl4Var, String[] strArr, String[] strArr2, String[] strArr3, String str, int i) {
+        is3Var.getClass();
+        this.a = is3Var;
+        this.b = bl4Var;
+        this.c = strArr;
+        this.d = strArr2;
+        this.e = strArr3;
+        this.f = str;
+        this.g = i;
     }
 
-    @Override // defpackage.j72
-    public final Object invoke(Object obj) {
-        int i = this.Q;
-        bh7 bh7Var = bh7.a;
-        qe5 qe5Var = this.R;
-        switch (i) {
-            case 0:
-                PrintWriter printWriter = (PrintWriter) obj;
-                a aVar = MainActivity.m1;
-                Date dateV = ea0.v(printWriter);
-                SubscriptionItem subscriptionItem = (SubscriptionItem) qe5Var.Q;
-                printWriter.println(dateV + " Sub " + (subscriptionItem != null ? subscriptionItem.getRemarks() : null) + " servers were removed because of failure");
-                return bh7Var;
-            case 1:
-                ((PrintWriter) obj).println(new Date() + " Sub " + ((SubscriptionItem) qe5Var.Q).getRemarks() + " successfully updated (1)");
-                return bh7Var;
-            default:
-                g97 g97Var = (g97) obj;
-                g97Var.getClass();
-                di3 di3Var = ((i97) g97Var).e0;
-                List listM = (List) qe5Var.Q;
-                if (listM != null) {
-                    listM.add(di3Var);
-                } else {
-                    listM = ub.M(di3Var);
-                }
-                qe5Var.Q = listM;
-                return f97.R;
-        }
+    public final String toString() {
+        return this.a + " version=" + this.b;
     }
 }

@@ -1,81 +1,135 @@
-.class public abstract synthetic Loa7;
+.class public final Loa7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(I)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lsu/happ/proxyutility/dto/enums/FragmentationType;->values()[Lsu/happ/proxyutility/dto/enums/FragmentationType;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput p1, p0, Loa7;->a:I
 
     .line 5
-    array-length v0, v0
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Loa7;
 
     .line 6
-    new-array v0, v0, [I
-
     .line 7
-    .line 8
-    :try_start_0
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/FragmentationType;->XRAY:Lsu/happ/proxyutility/dto/enums/FragmentationType;
+    if-nez v1, :cond_1
 
+    .line 8
     .line 9
+    goto :goto_0
+
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :cond_1
+    check-cast p1, Loa7;
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    iget p0, p0, Loa7;->a:I
 
+    .line 13
     .line 14
-    const/4 v2, 0x1
+    iget p1, p1, Loa7;->a:I
 
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/FragmentationType;->ADVANCED:Lsu/happ/proxyutility/dto/enums/FragmentationType;
+    if-eq p0, p1, :cond_2
 
+    .line 17
     .line 18
+    :goto_0
+    const/4 p0, 0x0
+
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    return p0
 
     .line 20
-    .line 21
-    .line 22
-    move-result v1
+    :cond_2
+    return v0
+.end method
 
-    .line 23
-    const/4 v2, 0x2
+.method public final hashCode()I
+    .locals 1
 
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    .line 1
+    iget p0, p0, Loa7;->a:I
 
-    .line 25
-    .line 26
-    :catch_1
-    sput-object v0, Loa7;->a:[I
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
 
-    .line 27
-    .line 28
-    return-void
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    const v0, 0xe1781
+
+    .line 8
+    .line 9
+    .line 10
+    mul-int/2addr p0, v0
+
+    .line 11
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    const-string v0, "StyleSpan(color="
+
+    .line 2
+    .line 3
+    const-string v1, ", bold=false, italic=false, underline=false, strikethrough=false)"
+
+    .line 4
+    .line 5
+    iget p0, p0, Loa7;->a:I
+
+    .line 6
+    .line 7
+    invoke-static {v0, p0, v1}, Lc73;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
 .end method

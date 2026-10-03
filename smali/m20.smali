@@ -1,288 +1,133 @@
-.class public final Lm20;
+.class public final synthetic Lm20;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lmi2;
 
 
 # instance fields
-.field public final a:Landroid/graphics/ColorFilter;
+.field public final synthetic X:I
 
-.field public final b:J
+.field public final synthetic Y:Lyt7;
 
-.field public final c:I
+.field public final synthetic Z:Lmi2;
 
 
 # direct methods
-.method public constructor <init>(JI)V
-    .locals 3
+.method public synthetic constructor <init>(Lyt7;Lmi2;I)V
+    .locals 0
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    iput p3, p0, Lm20;->X:I
 
     .line 2
     .line 3
-    const/16 v1, 0x1d
+    iput-object p1, p0, Lm20;->Y:Lyt7;
 
     .line 4
     .line 5
-    if-lt v0, v1, :cond_0
+    iput-object p2, p0, Lm20;->Z:Lmi2;
 
     .line 6
     .line 7
-    invoke-static {}, Ln20;->e()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 8
     .line 9
     .line 10
-    invoke-static {p1, p2}, Lff0;->Y(J)I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v0
-
-    .line 14
-    invoke-static {p3}, Lla;->J(I)Landroid/graphics/BlendMode;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v1
-
-    .line 18
-    invoke-static {v0, v1}, Ln20;->a(ILandroid/graphics/BlendMode;)Landroid/graphics/BlendModeColorFilter;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    goto :goto_0
-
-    .line 23
-    :cond_0
-    new-instance v0, Landroid/graphics/PorterDuffColorFilter;
-
-    .line 24
-    .line 25
-    invoke-static {p1, p2}, Lff0;->Y(J)I
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v1
-
-    .line 29
-    invoke-static {p3}, Lla;->L(I)Landroid/graphics/PorterDuff$Mode;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v2
-
-    .line 33
-    invoke-direct {v0, v1, v2}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
-
-    .line 34
-    .line 35
-    .line 36
-    :goto_0
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 37
-    .line 38
-    .line 39
-    iput-object v0, p0, Lm20;->a:Landroid/graphics/ColorFilter;
-
-    .line 40
-    .line 41
-    iput-wide p1, p0, Lm20;->b:J
-
-    .line 42
-    .line 43
-    iput p3, p0, Lm20;->c:I
-
-    .line 44
-    .line 45
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Lm20;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Lm20;
-
-    .line 12
-    .line 13
-    iget-wide v3, p1, Lm20;->b:J
-
-    .line 14
-    .line 15
-    iget-wide v5, p0, Lm20;->b:J
-
-    .line 16
-    .line 17
-    invoke-static {v5, v6, v3, v4}, Lvm0;->c(JJ)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget v1, p0, Lm20;->c:I
-
-    .line 25
-    .line 26
-    iget p1, p1, Lm20;->c:I
-
-    .line 27
-    .line 28
-    if-ne v1, p1, :cond_3
-
-    .line 29
-    .line 30
-    return v0
-
-    .line 31
-    :cond_3
-    return v2
-.end method
-
-.method public final hashCode()I
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    sget v0, Lvm0;->h:I
+    iget v0, p0, Lm20;->X:I
 
     .line 2
     .line 3
-    iget-wide v0, p0, Lm20;->b:J
+    iget-object v1, p0, Lm20;->Z:Lmi2;
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lxe7;->a(J)I
+    iget-object p0, p0, Lm20;->Y:Lyt7;
 
     .line 6
     .line 7
+    packed-switch v0, :pswitch_data_0
+
     .line 8
-    move-result v0
-
-    .line 9
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 10
-    .line 11
-    iget v1, p0, Lm20;->c:I
-
-    .line 12
-    .line 13
-    add-int/2addr v0, v1
-
-    .line 14
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "BlendModeColorFilter(color="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-wide v1, p0, Lm20;->b:J
-
     .line 9
     .line 10
-    const-string v3, ", blendMode="
+    check-cast p1, Lsm1;
 
     .line 11
     .line 12
-    invoke-static {v1, v2, v0, v3}, Lmi2;->w(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    iget-object p1, p0, Lyt7;->c:Ls17;
 
     .line 13
     .line 14
+    invoke-virtual {p1, v1}, Ls17;->add(Ljava/lang/Object;)Z
+
     .line 15
-    iget v1, p0, Lm20;->c:I
-
     .line 16
     .line 17
-    invoke-static {v1}, Luy7;->U(I)Ljava/lang/String;
+    new-instance p1, Lx43;
 
     .line 18
     .line 19
+    const/4 v0, 0x3
+
     .line 20
-    move-result-object v1
+    invoke-direct {p1, v0, p0, v1}, Lx43;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 21
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 22
     .line 23
+    return-object p1
+
     .line 24
-    const/16 v1, 0x29
+    :pswitch_0
+    check-cast p1, Lst7;
 
     .line 25
     .line 26
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    if-eqz p0, :cond_0
 
     .line 27
     .line 28
-    .line 29
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object p0, p0, Lyt7;->a:Lx65;
 
+    .line 29
     .line 30
+    invoke-virtual {p0, p1}, Lx65;->setValue(Ljava/lang/Object;)V
+
     .line 31
     .line 32
-    move-result-object v0
-
     .line 33
-    return-object v0
+    :cond_0
+    if-eqz v1, :cond_1
+
+    .line 34
+    .line 35
+    invoke-interface {v1, p1}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 36
+    .line 37
+    .line 38
+    :cond_1
+    sget-object p0, Lr98;->a:Lr98;
+
+    .line 39
+    .line 40
+    return-object p0
+
+    .line 41
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

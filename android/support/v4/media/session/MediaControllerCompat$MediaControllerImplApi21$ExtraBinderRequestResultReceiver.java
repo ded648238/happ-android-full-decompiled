@@ -4,24 +4,26 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.ResultReceiver;
-import defpackage.fj2;
-import defpackage.gj2;
-import defpackage.hj2;
-import defpackage.i14;
-import io.sentry.x1;
+import defpackage.fi4;
+import defpackage.sw2;
+import defpackage.tw2;
+import defpackage.uw2;
+import io.sentry.z1;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 class MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver extends ResultReceiver {
-    public WeakReference Q;
+    public WeakReference X;
 
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r3v3, types: [uw2] */
     @Override // android.os.ResultReceiver
     public final void onReceiveResult(int i, Bundle bundle) {
-        hj2 hj2Var;
-        a aVar = (a) this.Q.get();
+        sw2 sw2Var;
+        a aVar = (a) this.X.get();
         if (aVar == null || bundle == null) {
             return;
         }
@@ -29,38 +31,37 @@ class MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultRec
             try {
                 MediaSessionCompat$Token mediaSessionCompat$Token = aVar.e;
                 IBinder binder = bundle.getBinder("android.support.v4.media.session.EXTRA_BINDER");
-                int i2 = gj2.g;
+                int i2 = tw2.g;
                 if (binder == null) {
-                    hj2Var = null;
+                    sw2Var = null;
                 } else {
-                    IInterface iInterfaceQueryLocalInterface = binder.queryLocalInterface("android.support.v4.media.session.IMediaSession");
-                    if (iInterfaceQueryLocalInterface == null || !(iInterfaceQueryLocalInterface instanceof hj2)) {
-                        fj2 fj2Var = new fj2();
-                        fj2Var.g = binder;
-                        hj2Var = fj2Var;
+                    IInterface queryLocalInterface = binder.queryLocalInterface("android.support.v4.media.session.IMediaSession");
+                    if (queryLocalInterface == null || !(queryLocalInterface instanceof uw2)) {
+                        sw2 sw2Var2 = new sw2();
+                        sw2Var2.g = binder;
+                        sw2Var = sw2Var2;
                     } else {
-                        hj2Var = (hj2) iInterfaceQueryLocalInterface;
+                        sw2Var = (uw2) queryLocalInterface;
                     }
                 }
-                mediaSessionCompat$Token.R = hj2Var;
+                mediaSessionCompat$Token.Y = sw2Var;
                 MediaSessionCompat$Token mediaSessionCompat$Token2 = aVar.e;
                 bundle.getBundle("android.support.v4.media.session.SESSION_TOKEN2_BUNDLE");
                 mediaSessionCompat$Token2.getClass();
                 ArrayList arrayList = aVar.c;
-                if (aVar.e.R != null) {
+                if (aVar.e.Y != null) {
                     Iterator it = arrayList.iterator();
                     if (!it.hasNext()) {
                         arrayList.clear();
                     } else {
                         if (it.next() == null) {
-                            aVar.d.put(null, new i14());
+                            aVar.d.put(null, new fi4());
                             throw null;
                         }
-                        x1.l();
+                        z1.l();
                     }
                 }
-            } catch (Throwable th) {
-                throw th;
+            } finally {
             }
         }
     }

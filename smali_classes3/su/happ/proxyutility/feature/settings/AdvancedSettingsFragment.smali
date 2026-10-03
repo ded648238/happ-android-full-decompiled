@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;
-.super Lz42;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Luf2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -10,7 +10,7 @@
     }
     d2 = {
         "Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;",
-        "Lz42;",
+        "Luf2;",
         "<init>",
         "()V",
         "app"
@@ -26,13 +26,13 @@
 
 
 # instance fields
-.field public final O0:Lzu6;
+.field public final a1:Lmm7;
 
-.field public final P0:Lzu6;
+.field public final b1:Lmm7;
 
-.field public Q0:Ld52;
+.field public c1:Lyf2;
 
-.field public R0:Lf7;
+.field public d1:Lr7;
 
 
 # direct methods
@@ -40,58 +40,58 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Lz42;-><init>()V
+    invoke-direct {p0}, Luf2;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lw;
+    new-instance v0, Lu;
 
     .line 5
     .line 6
     const/4 v1, 0x2
 
     .line 7
-    invoke-direct {v0, v1}, Lw;-><init>(I)V
+    invoke-direct {v0, v1}, Lu;-><init>(I)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 11
     .line 12
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 13
     .line 14
     .line 15
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->O0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->a1:Lmm7;
 
     .line 16
     .line 17
-    new-instance v0, Lw;
+    new-instance v0, Lu;
 
     .line 18
     .line 19
     const/4 v1, 0x3
 
     .line 20
-    invoke-direct {v0, v1}, Lw;-><init>(I)V
+    invoke-direct {v0, v1}, Lu;-><init>(I)V
 
     .line 21
     .line 22
     .line 23
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 24
     .line 25
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 26
     .line 27
     .line 28
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->P0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->b1:Lmm7;
 
     .line 29
     .line 30
@@ -100,11 +100,11 @@
 
 
 # virtual methods
-.method public final P(Z)V
-    .locals 3
+.method public final Q(Z)V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 2
     .line 3
@@ -112,7 +112,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v0, v0, Ld52;->a0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v0, v0, Lyf2;->j0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 6
     .line 7
@@ -120,11 +120,11 @@
 
     .line 8
     .line 9
-    sget v1, Lx95;->title_pref_proxy_sharing_enabled_warning:I
+    sget v1, Lxt5;->title_pref_proxy_sharing_enabled_warning:I
 
     .line 10
     .line 11
-    invoke-virtual {p0, v1}, Lz42;->o(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Luf2;->o(I)Ljava/lang/String;
 
     .line 12
     .line 13
@@ -145,26 +145,26 @@
     .line 18
     .line 19
     .line 20
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 21
     .line 22
     .line 23
-    move-result-object v0
+    move-result-object p0
 
     .line 24
-    iget-object v0, v0, Ld52;->R:Landroid/widget/LinearLayout;
+    iget-object p0, p0, Lyf2;->Y:Landroid/widget/LinearLayout;
 
     .line 25
     .line 26
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 27
-    const/16 v2, 0xe
+    const/16 v1, 0xe
 
     .line 28
     .line 29
-    invoke-static {v2, v0, p1, v1}, Lw97;->h(ILandroid/view/View;ZZ)V
+    invoke-static {v1, p0, p1, v0}, Lb18;->h(ILandroid/view/View;ZZ)V
 
     .line 30
     .line 31
@@ -172,42 +172,42 @@
     return-void
 .end method
 
-.method public final Q()Ld52;
-    .locals 1
+.method public final R()Lyf2;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q0:Ld52;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->c1:Lyf2;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    return-object v0
+    return-object p0
 
     .line 6
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    throw v0
+    throw p0
 .end method
 
-.method public final R()V
-    .locals 4
+.method public final S()V
+    .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 2
     .line 3
@@ -215,62 +215,62 @@
     move-result-object v0
 
     .line 5
-    iget-object v0, v0, Ld52;->V:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+    iget-object v0, v0, Lyf2;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
 
     .line 6
     .line 7
-    iget-object v1, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->O0:Lzu6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->a1:Lmm7;
 
     .line 8
     .line 9
-    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v1
+    move-result-object p0
 
     .line 13
-    check-cast v1, Lcom/tencent/mmkv/MMKV;
+    check-cast p0, Lcom/tencent/mmkv/MMKV;
 
     .line 14
     .line 15
-    const-string v2, "pref_proxy_sharing_enabled"
+    const-string v1, "pref_proxy_sharing_enabled"
 
     .line 16
     .line 17
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 18
-    invoke-virtual {v1, v2, v3}, Lcom/tencent/mmkv/MMKV;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {p0, v1, v2}, Lcom/tencent/mmkv/MMKV;->c(Ljava/lang/String;Z)Z
 
     .line 19
     .line 20
     .line 21
-    move-result v1
+    move-result p0
 
     .line 22
-    const-string v2, ""
+    const-string v1, ""
 
     .line 23
     .line 24
-    if-eqz v1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 25
     .line 26
-    sget-object v1, Lpk7;->a:Lpk7;
+    sget-object p0, Lif8;->a:Lif8;
 
     .line 27
     .line 28
-    invoke-static {}, Lpk7;->m()Ljava/lang/String;
+    invoke-static {}, Lif8;->l()Ljava/lang/String;
 
     .line 29
     .line 30
     .line 31
-    move-result-object v1
+    move-result-object p0
 
     .line 32
-    if-nez v1, :cond_0
+    if-nez p0, :cond_0
 
     .line 33
     .line 34
@@ -278,12 +278,12 @@
 
     .line 35
     :cond_0
-    move-object v2, v1
+    move-object v1, p0
 
     .line 36
     :cond_1
     :goto_0
-    invoke-virtual {v0, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;->setInfo(Ljava/lang/String;)V
 
     .line 37
     .line 38
@@ -295,7 +295,7 @@
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lz42;->x(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Luf2;->x(Landroid/os/Bundle;)V
 
     .line 2
     .line 3
@@ -351,7 +351,7 @@
     move-result-object p1
 
     .line 29
-    invoke-virtual {p0}, Lz42;->h()Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {p0}, Luf2;->h()Landroidx/fragment/app/FragmentActivity;
 
     .line 30
     .line 31
@@ -383,66 +383,54 @@
 
     .line 42
     .line 43
-    new-instance v2, Lf7;
+    new-instance v2, Lr7;
 
     .line 44
     .line 45
-    invoke-direct {v2, v0, p0}, Lf7;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v0, p0}, Lr7;-><init>(ILjava/lang/Object;)V
 
     .line 46
     .line 47
     .line 48
-    iput-object v2, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R0:Lf7;
+    iput-object v2, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->d1:Lr7;
 
     .line 49
     .line 50
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    const-class v0, Landroid/net/ConnectivityManager;
 
     .line 51
     .line 52
-    const/16 v2, 0x17
+    invoke-virtual {v1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
 
     .line 53
     .line 54
-    if-lt v0, v2, :cond_1
-
     .line 55
+    move-result-object v0
+
     .line 56
-    const-class v0, Landroid/net/ConnectivityManager;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 57
     .line 58
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
-
     .line 59
-    .line 60
-    .line 61
-    move-result-object v0
-
-    .line 62
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 63
-    .line 64
-    .line 65
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 66
-    .line 67
-    iget-object v1, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R0:Lf7;
+    .line 60
+    .line 61
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->d1:Lr7;
 
+    .line 62
+    .line 63
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-virtual {v0, p1, p0}, Landroid/net/ConnectivityManager;->requestNetwork(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;)V
+
+    .line 67
     .line 68
     .line 69
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 70
-    .line 71
-    .line 72
-    invoke-virtual {v0, p1, v1}, Landroid/net/ConnectivityManager;->requestNetwork(Landroid/net/NetworkRequest;Landroid/net/ConnectivityManager$NetworkCallback;)V
-
-    .line 73
-    .line 74
-    .line 75
     :cond_1
     return-void
 .end method
@@ -460,7 +448,7 @@
     .line 4
     .line 5
     .line 6
-    sget v1, Lt95;->fragment_advanced_settings:I
+    sget v1, Ltt5;->fragment_advanced_settings:I
 
     .line 7
     .line 8
@@ -483,11 +471,11 @@
     move-result-object v1
 
     .line 17
-    sget v3, Ld95;->cl_allow_connection_from_lan_block:I
+    sget v3, Let5;->cl_allow_connection_from_lan_block:I
 
     .line 18
     .line 19
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 20
     .line 21
@@ -509,11 +497,11 @@
 
     .line 28
     .line 29
-    sget v3, Ld95;->divider_advanced:I
+    sget v3, Let5;->divider_advanced:I
 
     .line 30
     .line 31
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 32
     .line 33
@@ -529,11 +517,11 @@
 
     .line 38
     .line 39
-    sget v3, Ld95;->divider_allow_connection_from_lan_enabled:I
+    sget v3, Let5;->divider_allow_connection_from_lan_enabled:I
 
     .line 40
     .line 41
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 42
     .line 43
@@ -549,11 +537,11 @@
 
     .line 48
     .line 49
-    sget v3, Ld95;->divider_auto_start_vpn:I
+    sget v3, Let5;->divider_auto_start_vpn:I
 
     .line 50
     .line 51
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 52
     .line 53
@@ -569,11 +557,11 @@
 
     .line 58
     .line 59
-    sget v3, Ld95;->divider_current_ip:I
+    sget v3, Let5;->divider_current_ip:I
 
     .line 60
     .line 61
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 62
     .line 63
@@ -589,11 +577,11 @@
 
     .line 68
     .line 69
-    sget v3, Ld95;->divider_ping:I
+    sget v3, Let5;->divider_ping:I
 
     .line 70
     .line 71
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 72
     .line 73
@@ -609,11 +597,11 @@
 
     .line 78
     .line 79
-    sget v3, Ld95;->divider_socks_port:I
+    sget v3, Let5;->divider_socks_port:I
 
     .line 80
     .line 81
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 82
     .line 83
@@ -629,11 +617,11 @@
 
     .line 88
     .line 89
-    sget v3, Ld95;->divider_subscription:I
+    sget v3, Let5;->divider_subscription:I
 
     .line 90
     .line 91
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 92
     .line 93
@@ -649,11 +637,11 @@
 
     .line 98
     .line 99
-    sget v3, Ld95;->forward_ping:I
+    sget v3, Let5;->forward_ping:I
 
     .line 100
     .line 101
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 102
     .line 103
@@ -672,11 +660,11 @@
 
     .line 109
     .line 110
-    sget v3, Ld95;->forward_subscription:I
+    sget v3, Let5;->forward_subscription:I
 
     .line 111
     .line 112
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 113
     .line 114
@@ -695,11 +683,11 @@
 
     .line 120
     .line 121
-    sget v3, Ld95;->forward_vpn:I
+    sget v3, Let5;->forward_vpn:I
 
     .line 122
     .line 123
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 124
     .line 125
@@ -718,11 +706,11 @@
 
     .line 131
     .line 132
-    sget v3, Ld95;->if_current_ip:I
+    sget v3, Let5;->if_current_ip:I
 
     .line 133
     .line 134
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 135
     .line 136
@@ -741,11 +729,11 @@
 
     .line 142
     .line 143
-    sget v3, Ld95;->if_http_port:I
+    sget v3, Let5;->if_http_port:I
 
     .line 144
     .line 145
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 146
     .line 147
@@ -764,11 +752,11 @@
 
     .line 153
     .line 154
-    sget v3, Ld95;->if_socks_port:I
+    sget v3, Let5;->if_socks_port:I
 
     .line 155
     .line 156
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 157
     .line 158
@@ -794,11 +782,11 @@
 
     .line 167
     .line 168
-    sget v3, Ld95;->ll_allow_connection_from_lan:I
+    sget v3, Let5;->ll_allow_connection_from_lan:I
 
     .line 169
     .line 170
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 171
     .line 172
@@ -817,11 +805,11 @@
 
     .line 178
     .line 179
-    sget v3, Ld95;->title_category:I
+    sget v3, Let5;->title_category:I
 
     .line 180
     .line 181
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 182
     .line 183
@@ -837,11 +825,11 @@
 
     .line 188
     .line 189
-    sget v3, Ld95;->toggle_allow_connection_from_lan_enabled:I
+    sget v3, Let5;->toggle_allow_connection_from_lan_enabled:I
 
     .line 190
     .line 191
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 192
     .line 193
@@ -861,11 +849,11 @@
 
     .line 200
     .line 201
-    sget v3, Ld95;->toggle_auto_start_vpn:I
+    sget v3, Let5;->toggle_auto_start_vpn:I
 
     .line 202
     .line 203
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 204
     .line 205
@@ -885,23 +873,23 @@
 
     .line 212
     .line 213
-    new-instance v5, Ld52;
+    new-instance v5, Lyf2;
 
     .line 214
     .line 215
     move-object v14, v6
 
     .line 216
-    invoke-direct/range {v5 .. v17}, Ld52;-><init>(Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;)V
+    invoke-direct/range {v5 .. v17}, Lyf2;-><init>(Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;)V
 
     .line 217
     .line 218
     .line 219
-    iput-object v5, v0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q0:Ld52;
+    iput-object v5, v0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->c1:Lyf2;
 
     .line 220
     .line 221
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 222
     .line 223
@@ -909,7 +897,7 @@
     move-result-object v1
 
     .line 225
-    iget-object v1, v1, Ld52;->Y:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Lyf2;->h0:Landroid/widget/LinearLayout;
 
     .line 226
     .line 227
@@ -918,12 +906,12 @@
     .line 228
     .line 229
     .line 230
-    invoke-static {v1}, Lw97;->d(Landroid/view/ViewGroup;)V
+    invoke-static {v1}, Lb18;->b(Landroid/view/ViewGroup;)V
 
     .line 231
     .line 232
     .line 233
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 234
     .line 235
@@ -931,16 +919,16 @@
     move-result-object v1
 
     .line 237
-    iget-object v1, v1, Ld52;->Z:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Lyf2;->i0:Landroid/widget/LinearLayout;
 
     .line 238
     .line 239
-    invoke-static {v1}, Lw97;->d(Landroid/view/ViewGroup;)V
+    invoke-static {v1}, Lb18;->b(Landroid/view/ViewGroup;)V
 
     .line 240
     .line 241
     .line 242
-    invoke-virtual {v0}, Lz42;->h()Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {v0}, Luf2;->h()Landroidx/fragment/app/FragmentActivity;
 
     .line 243
     .line 244
@@ -972,7 +960,7 @@
 
     .line 255
     .line 256
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 257
     .line 258
@@ -980,25 +968,25 @@
     move-result-object v3
 
     .line 260
-    iget-object v3, v3, Ld52;->U:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object v3, v3, Lyf2;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 261
     .line 262
-    new-instance v5, Lb7;
+    new-instance v5, Ln7;
 
     .line 263
     .line 264
-    invoke-direct {v5, v1, v2}, Lb7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
+    invoke-direct {v5, v1, v2}, Ln7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
 
     .line 265
     .line 266
     .line 267
-    invoke-virtual {v3, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    invoke-virtual {v3, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 268
     .line 269
     .line 270
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 271
     .line 272
@@ -1006,28 +994,28 @@
     move-result-object v3
 
     .line 274
-    iget-object v3, v3, Ld52;->T:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object v3, v3, Lyf2;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 275
     .line 276
-    new-instance v5, Lb7;
+    new-instance v5, Ln7;
 
     .line 277
     .line 278
     const/4 v6, 0x1
 
     .line 279
-    invoke-direct {v5, v1, v6}, Lb7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
+    invoke-direct {v5, v1, v6}, Ln7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
 
     .line 280
     .line 281
     .line 282
-    invoke-virtual {v3, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    invoke-virtual {v3, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 283
     .line 284
     .line 285
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 286
     .line 287
@@ -1035,28 +1023,28 @@
     move-result-object v3
 
     .line 289
-    iget-object v3, v3, Ld52;->S:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object v3, v3, Lyf2;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 290
     .line 291
-    new-instance v5, Lb7;
+    new-instance v5, Ln7;
 
     .line 292
     .line 293
     const/4 v7, 0x2
 
     .line 294
-    invoke-direct {v5, v1, v7}, Lb7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
+    invoke-direct {v5, v1, v7}, Ln7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
 
     .line 295
     .line 296
     .line 297
-    invoke-virtual {v3, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    invoke-virtual {v3, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 298
     .line 299
     .line 300
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 301
     .line 302
@@ -1064,29 +1052,29 @@
     move-result-object v1
 
     .line 304
-    iget-object v1, v1, Ld52;->a0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v1, v1, Lyf2;->j0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 305
     .line 306
-    new-instance v3, Lc7;
+    new-instance v3, Lo7;
 
     .line 307
     .line 308
-    invoke-direct {v3, v0, v2}, Lc7;-><init>(Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;I)V
+    invoke-direct {v3, v0, v2}, Lo7;-><init>(Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;I)V
 
     .line 309
     .line 310
     .line 311
-    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 312
     .line 313
     .line 314
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->O0:Lzu6;
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->a1:Lmm7;
 
     .line 315
     .line 316
-    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 317
     .line 318
@@ -1110,7 +1098,7 @@
     move-result v3
 
     .line 328
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 329
     .line 330
@@ -1118,7 +1106,7 @@
     move-result-object v5
 
     .line 332
-    iget-object v5, v5, Ld52;->a0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v5, v5, Lyf2;->j0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 333
     .line 334
@@ -1127,17 +1115,17 @@
     .line 335
     .line 336
     .line 337
-    invoke-virtual {v0, v3}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->P(Z)V
+    invoke-virtual {v0, v3}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q(Z)V
 
     .line 338
     .line 339
     .line 340
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()V
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->S()V
 
     .line 341
     .line 342
     .line 343
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 344
     .line 345
@@ -1145,11 +1133,11 @@
     move-result-object v3
 
     .line 347
-    iget-object v3, v3, Ld52;->X:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+    iget-object v3, v3, Lyf2;->g0:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
 
     .line 348
     .line 349
-    invoke-static {}, Lc86;->d()I
+    invoke-static {}, Llu6;->d()I
 
     .line 350
     .line 351
@@ -1170,7 +1158,7 @@
     .line 358
     .line 359
     .line 360
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 361
     .line 362
@@ -1178,11 +1166,11 @@
     move-result-object v3
 
     .line 364
-    iget-object v3, v3, Ld52;->W:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
+    iget-object v3, v3, Lyf2;->f0:Lsu/happ/proxyutility/ui/foundation/component/HappInfoField;
 
     .line 365
     .line 366
-    invoke-static {}, Lc86;->b()I
+    invoke-static {}, Llu6;->b()I
 
     .line 367
     .line 368
@@ -1203,7 +1191,7 @@
     .line 375
     .line 376
     .line 377
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 378
     .line 379
@@ -1211,25 +1199,25 @@
     move-result-object v3
 
     .line 381
-    iget-object v3, v3, Ld52;->b0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v3, v3, Lyf2;->k0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 382
     .line 383
-    new-instance v5, Lc7;
+    new-instance v5, Lo7;
 
     .line 384
     .line 385
-    invoke-direct {v5, v0, v6}, Lc7;-><init>(Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;I)V
+    invoke-direct {v5, v0, v6}, Lo7;-><init>(Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;I)V
 
     .line 386
     .line 387
     .line 388
-    invoke-virtual {v3, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {v3, v5}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 389
     .line 390
     .line 391
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 392
     .line 393
@@ -1237,11 +1225,11 @@
     move-result-object v3
 
     .line 395
-    iget-object v3, v3, Ld52;->b0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v3, v3, Lyf2;->k0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 396
     .line 397
-    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 398
     .line 399
@@ -1271,11 +1259,11 @@
     .line 411
     .line 412
     :cond_1
-    iget-object v1, v0, Lz42;->G0:Lkk3;
+    iget-object v1, v0, Luf2;->P0:Li14;
 
     .line 413
     .line 414
-    invoke-static {v1}, Lyr;->C(Lkk3;)Lbk3;
+    invoke-static {v1}, Lkp3;->y(Li14;)Ly04;
 
     .line 415
     .line 416
@@ -1283,11 +1271,11 @@
     move-result-object v1
 
     .line 418
-    new-instance v3, Lg7;
+    new-instance v3, Ls7;
 
     .line 419
     .line 420
-    invoke-direct {v3, v0, v4, v2}, Lg7;-><init>(Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;Lyv0;I)V
+    invoke-direct {v3, v0, v4, v2}, Ls7;-><init>(Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;Lb31;I)V
 
     .line 421
     .line 422
@@ -1295,29 +1283,29 @@
     const/4 v2, 0x3
 
     .line 424
-    invoke-static {v1, v4, v3, v2}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {v1, v4, v3, v2}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 425
     .line 426
     .line 427
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->Q()Ld52;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/AdvancedSettingsFragment;->R()Lyf2;
 
     .line 428
     .line 429
     .line 430
-    move-result-object v1
+    move-result-object v0
 
     .line 431
-    iget-object v1, v1, Ld52;->Q:Landroid/widget/LinearLayout;
+    iget-object v0, v0, Lyf2;->X:Landroid/widget/LinearLayout;
 
     .line 432
     .line 433
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 434
     .line 435
     .line 436
-    return-object v1
+    return-object v0
 
     .line 437
     :cond_2
@@ -1326,30 +1314,30 @@
     .line 438
     .line 439
     .line 440
-    move-result-object v1
+    move-result-object v0
 
     .line 441
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
 
     .line 442
     .line 443
     .line 444
-    move-result-object v1
+    move-result-object v0
 
     .line 445
-    const-string v2, "Missing required view with ID: "
+    const-string v1, "Missing required view with ID: "
 
     .line 446
     .line 447
-    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 448
     .line 449
     .line 450
-    move-result-object v1
+    move-result-object v0
 
     .line 451
-    invoke-static {v1}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {v0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 452
     .line 453

@@ -1,30 +1,51 @@
 package defpackage;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.nio.ByteBuffer;
+import java.util.concurrent.atomic.AtomicInteger;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class cu1 {
-    public static final cu1 b = new cu1(yr.a0(new LinkedHashMap()));
-    public final Map a;
+    public static final AtomicInteger d = new AtomicInteger(0);
+    public final byte a;
+    public final byte[] b;
+    public short c = 3515;
 
-    public cu1(Map map) {
-        this.a = map;
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public cu1(byte b, byte[] bArr) {
+        this.a = b;
+        if (bArr.length <= 65507) {
+            this.b = bArr;
+        } else {
+            i60.p("Payload limited to 65507");
+            throw null;
         }
-        return (obj instanceof cu1) && rt2.f(this.a, ((cu1) obj).a);
     }
 
-    public final int hashCode() {
-        return this.a.hashCode();
-    }
-
-    public final String toString() {
-        return "Extras(data=" + this.a + ")";
+    public final ByteBuffer a() {
+        this.c = (short) d.getAndIncrement();
+        byte[] bArr = this.b;
+        bArr.getClass();
+        int length = bArr.length + 8;
+        byte[] bArr2 = new byte[length];
+        ByteBuffer wrap = ByteBuffer.wrap(bArr2);
+        wrap.put(this.a);
+        wrap.put((byte) 0);
+        int position = wrap.position();
+        wrap.position(position + 2);
+        wrap.putShort(this.c);
+        wrap.putShort((short) 0);
+        wrap.put(bArr);
+        int i = 0;
+        for (int i2 = 0; i2 < length; i2 += 2) {
+            int i3 = i + ((bArr2[i2] & 255) << 8);
+            i = (i3 >> 16) + (65535 & i3);
+        }
+        for (int i4 = 1; i4 < length; i4 += 2) {
+            int i5 = i + (bArr2[i4] & 255);
+            i = (i5 >> 16) + (i5 & 65535);
+        }
+        wrap.putShort(position, (short) (((i & 65535) + (i >> 16)) ^ 65535));
+        wrap.flip();
+        return wrap;
     }
 }

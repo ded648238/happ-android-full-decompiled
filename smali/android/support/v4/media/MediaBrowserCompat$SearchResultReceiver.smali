@@ -1,19 +1,19 @@
 .class Landroid/support/v4/media/MediaBrowserCompat$SearchResultReceiver;
-.super Lun5;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lk86;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
 .method public final c(ILandroid/os/Bundle;)V
-    .locals 4
+    .locals 3
 
     .line 1
-    invoke-static {p2}, Ll14;->G(Landroid/os/Bundle;)V
+    invoke-static {p2}, Lhi4;->u(Landroid/os/Bundle;)V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 5
     if-nez p1, :cond_1
@@ -33,10 +33,10 @@
     .line 12
     .line 13
     .line 14
-    move-result v1
+    move-result v0
 
     .line 15
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
     .line 16
     .line 17
@@ -61,31 +61,31 @@
     .line 26
     .line 27
     .line 28
-    array-length v1, p1
+    array-length v0, p1
 
     .line 29
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 30
     :goto_0
-    if-ge v2, v1, :cond_0
+    if-ge v1, v0, :cond_0
 
     .line 31
     .line 32
-    aget-object v3, p1, v2
+    aget-object v2, p1, v1
 
     .line 33
     .line 34
-    check-cast v3, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
+    check-cast v2, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
 
     .line 35
     .line 36
-    invoke-virtual {p2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 37
     .line 38
     .line 39
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     .line 40
     .line 41
@@ -93,9 +93,9 @@
 
     .line 42
     :cond_0
-    throw v0
+    throw p0
 
     .line 43
     :cond_1
-    throw v0
+    throw p0
 .end method

@@ -6,26 +6,26 @@ import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import defpackage.ra5;
+import defpackage.qu5;
 import java.util.ArrayList;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class PreferenceGroup extends Preference {
     public PreferenceGroup(Context context, AttributeSet attributeSet, int i, int i2) {
         super(context, attributeSet, i, 0);
         new Handler(Looper.getMainLooper());
         new ArrayList();
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ra5.PreferenceGroup, i, 0);
-        int i3 = ra5.PreferenceGroup_orderingFromXml;
-        typedArrayObtainStyledAttributes.getBoolean(i3, typedArrayObtainStyledAttributes.getBoolean(i3, true));
-        if (typedArrayObtainStyledAttributes.hasValue(ra5.PreferenceGroup_initialExpandedChildrenCount)) {
-            int i4 = ra5.PreferenceGroup_initialExpandedChildrenCount;
-            if (typedArrayObtainStyledAttributes.getInt(i4, typedArrayObtainStyledAttributes.getInt(i4, Integer.MAX_VALUE)) != Integer.MAX_VALUE) {
-                TextUtils.isEmpty(this.U);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, qu5.PreferenceGroup, i, 0);
+        int i3 = qu5.PreferenceGroup_orderingFromXml;
+        obtainStyledAttributes.getBoolean(i3, obtainStyledAttributes.getBoolean(i3, true));
+        if (obtainStyledAttributes.hasValue(qu5.PreferenceGroup_initialExpandedChildrenCount)) {
+            int i4 = qu5.PreferenceGroup_initialExpandedChildrenCount;
+            if (obtainStyledAttributes.getInt(i4, obtainStyledAttributes.getInt(i4, Integer.MAX_VALUE)) != Integer.MAX_VALUE) {
+                TextUtils.isEmpty(this.d0);
             }
         }
-        typedArrayObtainStyledAttributes.recycle();
+        obtainStyledAttributes.recycle();
     }
 
     public PreferenceGroup(Context context, AttributeSet attributeSet, int i) {

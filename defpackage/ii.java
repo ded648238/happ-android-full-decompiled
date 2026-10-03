@@ -1,53 +1,21 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ii extends mi {
-    public float a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ii extends ou3 implements xi2 {
+    public final /* synthetic */ d22 X;
 
-    public ii(float f) {
-        this.a = f;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ii(d22 d22Var) {
+        super(2);
+        this.X = d22Var;
     }
 
-    @Override // defpackage.mi
-    public final float a(int i) {
-        if (i == 0) {
-            return this.a;
-        }
-        return 0.0f;
-    }
-
-    @Override // defpackage.mi
-    public final int b() {
-        return 1;
-    }
-
-    @Override // defpackage.mi
-    public final mi c() {
-        return new ii(0.0f);
-    }
-
-    @Override // defpackage.mi
-    public final void d() {
-        this.a = 0.0f;
-    }
-
-    @Override // defpackage.mi
-    public final void e(int i, float f) {
-        if (i == 0) {
-            this.a = f;
-        }
-    }
-
-    public final boolean equals(Object obj) {
-        return (obj instanceof ii) && ((ii) obj).a == this.a;
-    }
-
-    public final int hashCode() {
-        return Float.floatToIntBits(this.a);
-    }
-
-    public final String toString() {
-        return "AnimationVector1D: value = " + this.a;
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        sx1 sx1Var = (sx1) obj;
+        sx1 sx1Var2 = (sx1) obj2;
+        sx1 sx1Var3 = sx1.Z;
+        return Boolean.valueOf(sx1Var == sx1Var3 && sx1Var2 == sx1Var3 && !this.X.a.e);
     }
 }

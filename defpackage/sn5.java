@@ -1,42 +1,107 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class sn5 {
-    public final float a;
-    public final float b;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-    public sn5(float f, float f2) {
-        this.a = f;
-        this.b = f2;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class sn5 extends dl2 {
+    public int c0;
+    public int d0;
+    public List e0;
+
+    @Override // defpackage.al2
+    public final a2 b() {
+        tn5 g = g();
+        if (g.c()) {
+            return g;
+        }
+        throw new l98();
     }
 
-    public static float a(sn5 sn5Var, sn5 sn5Var2) {
-        float f = sn5Var.a;
-        float f2 = sn5Var.b;
-        double d = f - sn5Var2.a;
-        double d2 = f2 - sn5Var2.b;
-        return (float) Math.sqrt((d2 * d2) + (d * d));
+    public final Object clone() {
+        sn5 sn5Var = new sn5();
+        sn5Var.e0 = Collections.EMPTY_LIST;
+        sn5Var.h(g());
+        return sn5Var;
     }
 
-    public final boolean equals(Object obj) {
-        if (obj instanceof sn5) {
-            sn5 sn5Var = (sn5) obj;
-            if (this.a == sn5Var.a && this.b == sn5Var.b) {
-                return true;
+    /* JADX WARN: Removed duplicated region for block: B:16:0x001b  */
+    @Override // defpackage.al2
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final al2 d(ft0 ft0Var, n22 n22Var) {
+        tn5 tn5Var = null;
+        try {
+            try {
+                tn5.h0.getClass();
+                h(new tn5(ft0Var, n22Var));
+                return this;
+            } catch (aa3 e) {
+                tn5 tn5Var2 = (tn5) e.X;
+                try {
+                    throw e;
+                } catch (Throwable th) {
+                    th = th;
+                    tn5Var = tn5Var2;
+                    if (tn5Var != null) {
+                        h(tn5Var);
+                    }
+                    throw th;
+                }
+            }
+        } catch (Throwable th2) {
+            th = th2;
+            if (tn5Var != null) {
+            }
+            throw th;
+        }
+    }
+
+    @Override // defpackage.al2
+    public final /* bridge */ /* synthetic */ al2 e(hl2 hl2Var) {
+        h((tn5) hl2Var);
+        return this;
+    }
+
+    public final tn5 g() {
+        tn5 tn5Var = new tn5(this);
+        int i = this.c0;
+        int i2 = (i & 1) != 1 ? 0 : 1;
+        tn5Var.c0 = this.d0;
+        if ((i & 2) == 2) {
+            this.e0 = Collections.unmodifiableList(this.e0);
+            this.c0 &= -3;
+        }
+        tn5Var.d0 = this.e0;
+        tn5Var.Z = i2;
+        return tn5Var;
+    }
+
+    public final void h(tn5 tn5Var) {
+        if (tn5Var == tn5.g0) {
+            return;
+        }
+        if ((tn5Var.Z & 1) == 1) {
+            int i = tn5Var.c0;
+            this.c0 = 1 | this.c0;
+            this.d0 = i;
+        }
+        if (!tn5Var.d0.isEmpty()) {
+            if (this.e0.isEmpty()) {
+                this.e0 = tn5Var.d0;
+                this.c0 &= -3;
+            } else {
+                if ((this.c0 & 2) != 2) {
+                    this.e0 = new ArrayList(this.e0);
+                    this.c0 |= 2;
+                }
+                this.e0.addAll(tn5Var.d0);
             }
         }
-        return false;
-    }
-
-    public final int hashCode() {
-        return Float.floatToIntBits(this.b) + (Float.floatToIntBits(this.a) * 31);
-    }
-
-    public final String toString() {
-        StringBuilder sb = new StringBuilder("(");
-        sb.append(this.a);
-        sb.append(',');
-        return ea0.r(sb, this.b, ')');
+        f(tn5Var);
+        this.X = this.X.b(tn5Var.Y);
     }
 }

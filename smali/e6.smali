@@ -1,185 +1,361 @@
-.class public final Le6;
-.super Lbv7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Le6;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic g:Luo0;
+# static fields
+.field public static final a:Ljava/lang/Class;
 
-.field public final synthetic h:Ljava/lang/String;
+.field public static final b:Ljava/lang/reflect/Field;
 
-.field public final synthetic i:Lyu7;
+.field public static final c:Ljava/lang/reflect/Field;
+
+.field public static final d:Ljava/lang/reflect/Method;
+
+.field public static final e:Ljava/lang/reflect/Method;
+
+.field public static final f:Ljava/lang/reflect/Method;
+
+.field public static final g:Landroid/os/Handler;
 
 
 # direct methods
-.method public constructor <init>(Luo0;Ljava/lang/String;Lyu7;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 13
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-class v0, Landroid/app/Activity;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Le6;->g:Luo0;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Le6;->h:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Le6;->i:Lyu7;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final X(Ljava/lang/Object;)V
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Le6;->g:Luo0;
-
-    .line 2
-    .line 3
-    iget-object v1, v0, Luo0;->b:Ljava/util/LinkedHashMap;
+    new-instance v1, Landroid/os/Handler;
 
     .line 4
     .line 5
-    iget-object v2, v0, Luo0;->d:Ljava/util/ArrayList;
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     .line 6
     .line 7
-    iget-object v3, p0, Le6;->h:Ljava/lang/String;
-
     .line 8
+    move-result-object v2
+
     .line 9
-    invoke-virtual {v1, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     .line 10
     .line 11
     .line 12
-    move-result-object v1
+    sput-object v1, Le6;->g:Landroid/os/Handler;
 
     .line 13
-    iget-object v4, p0, Le6;->i:Lyu7;
-
     .line 14
+    const/4 v1, 0x0
+
     .line 15
-    if-eqz v1, :cond_0
+    :try_start_0
+    const-string v2, "android.app.ActivityThread"
 
     .line 16
     .line 17
-    check-cast v1, Ljava/lang/Number;
+    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
-
     .line 20
+    move-result-object v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 21
+    goto :goto_0
+
     .line 22
-    move-result v1
+    :catchall_0
+    move-object v2, v1
 
     .line 23
-    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :goto_0
+    sput-object v2, Le6;->a:Ljava/lang/Class;
 
     .line 24
     .line 25
+    const/4 v2, 0x1
+
     .line 26
-    :try_start_0
-    invoke-virtual {v0, v1, v4, p1}, Luo0;->b(ILyu7;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    :try_start_1
+    const-string v3, "mMainThread"
 
     .line 27
     .line 28
+    invoke-virtual {v0, v3}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
     .line 29
-    return-void
-
     .line 30
-    :catch_0
-    move-exception p1
-
     .line 31
-    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+    move-result-object v3
 
     .line 32
+    invoke-virtual {v3, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
     .line 33
     .line 34
-    throw p1
-
     .line 35
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    goto :goto_1
 
     .line 36
+    :catchall_1
+    move-object v3, v1
+
     .line 37
-    const-string v1, "Attempting to launch an unregistered ActivityResultLauncher with contract "
+    :goto_1
+    sput-object v3, Le6;->b:Ljava/lang/reflect/Field;
 
     .line 38
     .line 39
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    :try_start_2
+    const-string v3, "mToken"
 
     .line 40
     .line 41
-    .line 42
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v3}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
+    .line 42
     .line 43
     .line 44
+    move-result-object v0
+
     .line 45
-    const-string v1, " and input "
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     .line 46
     .line 47
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 48
+    goto :goto_2
+
     .line 49
+    :catchall_2
+    move-object v0, v1
+
     .line 50
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    :goto_2
+    sput-object v0, Le6;->c:Ljava/lang/reflect/Field;
 
     .line 51
     .line 52
+    sget-object v0, Le6;->a:Ljava/lang/Class;
+
     .line 53
-    const-string p1, ". You must ensure the ActivityResultLauncher is registered before calling launch()."
-
     .line 54
-    .line 55
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
+    .line 55
     .line 56
+    const-class v4, Landroid/os/IBinder;
+
     .line 57
     .line 58
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v5, "performStopActivity"
 
     .line 59
     .line 60
-    .line 61
-    move-result-object p1
+    if-nez v0, :cond_0
 
+    .line 61
     .line 62
-    new-instance v0, Ljava/lang/IllegalStateException;
+    :catchall_3
+    move-object v0, v1
 
     .line 63
+    goto :goto_3
+
     .line 64
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    :cond_0
+    :try_start_3
+    const-class v6, Ljava/lang/String;
 
     .line 65
     .line 66
+    filled-new-array {v4, v3, v6}, [Ljava/lang/Class;
+
     .line 67
-    move-result-object p1
-
     .line 68
-    invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 69
+    move-result-object v6
+
     .line 70
+    invoke-virtual {v0, v5, v6}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
     .line 71
-    throw v0
+    .line 72
+    .line 73
+    move-result-object v0
+
+    .line 74
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_3
+
+    .line 75
+    .line 76
+    .line 77
+    :goto_3
+    sput-object v0, Le6;->d:Ljava/lang/reflect/Method;
+
+    .line 78
+    .line 79
+    sget-object v0, Le6;->a:Ljava/lang/Class;
+
+    .line 80
+    .line 81
+    if-nez v0, :cond_1
+
+    .line 82
+    .line 83
+    :catchall_4
+    move-object v0, v1
+
+    .line 84
+    goto :goto_4
+
+    .line 85
+    :cond_1
+    :try_start_4
+    filled-new-array {v4, v3}, [Ljava/lang/Class;
+
+    .line 86
+    .line 87
+    .line 88
+    move-result-object v3
+
+    .line 89
+    invoke-virtual {v0, v5, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v0
+
+    .line 93
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_4
+
+    .line 94
+    .line 95
+    .line 96
+    :goto_4
+    sput-object v0, Le6;->e:Ljava/lang/reflect/Method;
+
+    .line 97
+    .line 98
+    sget-object v0, Le6;->a:Ljava/lang/Class;
+
+    .line 99
+    .line 100
+    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 101
+    .line 102
+    const/16 v4, 0x1a
+
+    .line 103
+    .line 104
+    if-eq v3, v4, :cond_2
+
+    .line 105
+    .line 106
+    const/16 v4, 0x1b
+
+    .line 107
+    .line 108
+    if-ne v3, v4, :cond_4
+
+    .line 109
+    .line 110
+    :cond_2
+    if-nez v0, :cond_3
+
+    .line 111
+    .line 112
+    goto :goto_5
+
+    .line 113
+    :cond_3
+    :try_start_5
+    const-string v3, "requestRelaunchActivity"
+
+    .line 114
+    .line 115
+    const-class v4, Landroid/os/IBinder;
+
+    .line 116
+    .line 117
+    const-class v5, Ljava/util/List;
+
+    .line 118
+    .line 119
+    const-class v6, Ljava/util/List;
+
+    .line 120
+    .line 121
+    sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    .line 122
+    .line 123
+    sget-object v8, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+
+    .line 124
+    .line 125
+    const-class v9, Landroid/content/res/Configuration;
+
+    .line 126
+    .line 127
+    const-class v10, Landroid/content/res/Configuration;
+
+    .line 128
+    .line 129
+    move-object v11, v8
+
+    .line 130
+    move-object v12, v8
+
+    .line 131
+    filled-new-array/range {v4 .. v12}, [Ljava/lang/Class;
+
+    .line 132
+    .line 133
+    .line 134
+    move-result-object v4
+
+    .line 135
+    invoke-virtual {v0, v3, v4}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object v0
+
+    .line 139
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_5
+
+    .line 140
+    .line 141
+    .line 142
+    move-object v1, v0
+
+    .line 143
+    :catchall_5
+    :cond_4
+    :goto_5
+    sput-object v1, Le6;->f:Ljava/lang/reflect/Method;
+
+    .line 144
+    .line 145
+    return-void
 .end method

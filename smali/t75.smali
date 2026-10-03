@@ -1,128 +1,307 @@
-.class public abstract Lt75;
-.super Ljava/lang/Object;
+.class public final Lt75;
+.super Lix1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static adjustable:I = 0x7f04002c
+# instance fields
+.field public final e:I
 
-.field public static allowDividerAbove:I = 0x7f040033
+.field public f:Landroid/widget/EditText;
 
-.field public static allowDividerAfterLastItem:I = 0x7f040034
+.field public final g:Lpr0;
 
-.field public static allowDividerBelow:I = 0x7f040035
 
-.field public static checkBoxPreferenceStyle:I = 0x7f0400d7
+# direct methods
+.method public constructor <init>(Lhx1;I)V
+    .locals 1
 
-.field public static defaultValue:I = 0x7f040213
+    .line 1
+    invoke-direct {p0, p1}, Lix1;-><init>(Lhx1;)V
 
-.field public static dependency:I = 0x7f040216
+    .line 2
+    .line 3
+    .line 4
+    sget p1, Lps5;->design_password_eye:I
 
-.field public static dialogIcon:I = 0x7f04021e
+    .line 5
+    .line 6
+    iput p1, p0, Lt75;->e:I
 
-.field public static dialogLayout:I = 0x7f04021f
+    .line 7
+    .line 8
+    new-instance p1, Lpr0;
 
-.field public static dialogMessage:I = 0x7f040220
+    .line 9
+    .line 10
+    const/16 v0, 0xb
 
-.field public static dialogPreferenceStyle:I = 0x7f040221
+    .line 11
+    .line 12
+    invoke-direct {p1, v0, p0}, Lpr0;-><init>(ILjava/lang/Object;)V
 
-.field public static dialogTitle:I = 0x7f040224
+    .line 13
+    .line 14
+    .line 15
+    iput-object p1, p0, Lt75;->g:Lpr0;
 
-.field public static disableDependentsState:I = 0x7f040225
+    .line 16
+    .line 17
+    if-eqz p2, :cond_0
 
-.field public static dropdownPreferenceStyle:I = 0x7f04024a
+    .line 18
+    .line 19
+    iput p2, p0, Lt75;->e:I
 
-.field public static editTextPreferenceStyle:I = 0x7f04024f
+    .line 20
+    .line 21
+    :cond_0
+    return-void
+.end method
 
-.field public static enableCopying:I = 0x7f040256
 
-.field public static enabled:I = 0x7f040258
+# virtual methods
+.method public final b()V
+    .locals 0
 
-.field public static entries:I = 0x7f040265
+    .line 1
+    invoke-virtual {p0}, Lix1;->p()V
 
-.field public static entryValues:I = 0x7f040266
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
 
-.field public static fragment:I = 0x7f0402e4
+.method public final c()I
+    .locals 0
 
-.field public static icon:I = 0x7f04034b
+    .line 1
+    sget p0, Lgu5;->password_toggle_content_description:I
 
-.field public static iconSpaceReserved:I = 0x7f040353
+    .line 2
+    .line 3
+    return p0
+.end method
 
-.field public static initialExpandedChildrenCount:I = 0x7f040378
+.method public final d()I
+    .locals 0
 
-.field public static isPreferenceVisible:I = 0x7f040380
+    .line 1
+    iget p0, p0, Lt75;->e:I
 
-.field public static key:I = 0x7f0403a3
+    .line 2
+    .line 3
+    return p0
+.end method
 
-.field public static layout:I = 0x7f0403b1
+.method public final f()Landroid/view/View$OnClickListener;
+    .locals 0
 
-.field public static maxHeight:I = 0x7f040465
+    .line 1
+    iget-object p0, p0, Lt75;->g:Lpr0;
 
-.field public static maxWidth:I = 0x7f04046b
+    .line 2
+    .line 3
+    return-object p0
+.end method
 
-.field public static min:I = 0x7f040472
+.method public final j()Z
+    .locals 0
 
-.field public static negativeButtonText:I = 0x7f0404b9
+    .line 1
+    const/4 p0, 0x1
 
-.field public static order:I = 0x7f0404d3
+    .line 2
+    return p0
+.end method
 
-.field public static orderingFromXml:I = 0x7f0404d4
+.method public final k()Z
+    .locals 1
 
-.field public static persistent:I = 0x7f0404f3
+    .line 1
+    iget-object p0, p0, Lt75;->f:Landroid/widget/EditText;
 
-.field public static positiveButtonText:I = 0x7f04051c
+    .line 2
+    .line 3
+    const/4 v0, 0x1
 
-.field public static preferenceCategoryStyle:I = 0x7f04051e
+    .line 4
+    if-eqz p0, :cond_0
 
-.field public static preferenceCategoryTitleTextAppearance:I = 0x7f04051f
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Landroid/widget/TextView;->getTransformationMethod()Landroid/text/method/TransformationMethod;
 
-.field public static preferenceCategoryTitleTextColor:I = 0x7f040520
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
 
-.field public static preferenceFragmentCompatStyle:I = 0x7f040521
+    .line 10
+    instance-of p0, p0, Landroid/text/method/PasswordTransformationMethod;
 
-.field public static preferenceFragmentListStyle:I = 0x7f040522
+    .line 11
+    .line 12
+    if-eqz p0, :cond_0
 
-.field public static preferenceFragmentStyle:I = 0x7f040523
+    .line 13
+    .line 14
+    move p0, v0
 
-.field public static preferenceInformationStyle:I = 0x7f040524
+    .line 15
+    goto :goto_0
 
-.field public static preferenceScreenStyle:I = 0x7f040525
+    .line 16
+    :cond_0
+    const/4 p0, 0x0
 
-.field public static preferenceStyle:I = 0x7f040526
+    .line 17
+    :goto_0
+    xor-int/2addr p0, v0
 
-.field public static preferenceTheme:I = 0x7f040527
+    .line 18
+    return p0
+.end method
 
-.field public static seekBarIncrement:I = 0x7f040570
+.method public final l(Landroid/widget/EditText;)V
+    .locals 0
 
-.field public static seekBarPreferenceStyle:I = 0x7f040571
+    .line 1
+    iput-object p1, p0, Lt75;->f:Landroid/widget/EditText;
 
-.field public static selectable:I = 0x7f040573
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lix1;->p()V
 
-.field public static selectableItemBackground:I = 0x7f040574
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
-.field public static shouldDisableView:I = 0x7f04059d
+.method public final q()V
+    .locals 3
 
-.field public static showSeekBarValue:I = 0x7f0405a9
+    .line 1
+    iget-object v0, p0, Lt75;->f:Landroid/widget/EditText;
 
-.field public static singleLineTitle:I = 0x7f0405b6
+    .line 2
+    .line 3
+    if-eqz v0, :cond_1
 
-.field public static summary:I = 0x7f040608
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Landroid/widget/TextView;->getInputType()I
 
-.field public static summaryOff:I = 0x7f040609
+    .line 6
+    .line 7
+    .line 8
+    move-result v1
 
-.field public static summaryOn:I = 0x7f04060a
+    .line 9
+    const/16 v2, 0x10
 
-.field public static switchPreferenceCompatStyle:I = 0x7f04060f
+    .line 10
+    .line 11
+    if-eq v1, v2, :cond_0
 
-.field public static switchPreferenceStyle:I = 0x7f040610
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Landroid/widget/TextView;->getInputType()I
 
-.field public static switchTextOff:I = 0x7f040613
+    .line 14
+    .line 15
+    .line 16
+    move-result v1
 
-.field public static switchTextOn:I = 0x7f040614
+    .line 17
+    const/16 v2, 0x80
 
-.field public static title:I = 0x7f0406ad
+    .line 18
+    .line 19
+    if-eq v1, v2, :cond_0
 
-.field public static updatesContinuously:I = 0x7f0406ee
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Landroid/widget/TextView;->getInputType()I
 
-.field public static useSimpleSummaryProvider:I = 0x7f0406f3
+    .line 22
+    .line 23
+    .line 24
+    move-result v1
 
-.field public static widgetLayout:I = 0x7f040710
+    .line 25
+    const/16 v2, 0x90
+
+    .line 26
+    .line 27
+    if-eq v1, v2, :cond_0
+
+    .line 28
+    .line 29
+    invoke-virtual {v0}, Landroid/widget/TextView;->getInputType()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v0
+
+    .line 33
+    const/16 v1, 0xe0
+
+    .line 34
+    .line 35
+    if-ne v0, v1, :cond_1
+
+    .line 36
+    .line 37
+    :cond_0
+    iget-object p0, p0, Lt75;->f:Landroid/widget/EditText;
+
+    .line 38
+    .line 39
+    invoke-static {}, Landroid/text/method/PasswordTransformationMethod;->getInstance()Landroid/text/method/PasswordTransformationMethod;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v0
+
+    .line 43
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
+
+    .line 44
+    .line 45
+    .line 46
+    :cond_1
+    return-void
+.end method
+
+.method public final r()V
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, Lt75;->f:Landroid/widget/EditText;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Landroid/text/method/PasswordTransformationMethod;->getInstance()Landroid/text/method/PasswordTransformationMethod;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    return-void
+.end method

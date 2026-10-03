@@ -4,49 +4,49 @@ import android.content.Context;
 import android.os.Build;
 import android.view.MenuItem;
 import android.widget.PopupWindow;
-import defpackage.d34;
-import defpackage.k24;
-import defpackage.o24;
-import defpackage.p24;
-import defpackage.rb2;
-import defpackage.sk1;
+import defpackage.gj4;
+import defpackage.ha6;
+import defpackage.kj4;
+import defpackage.lj4;
+import defpackage.us1;
+import defpackage.yj4;
 import java.lang.reflect.Method;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class b extends ListPopupWindow implements o24 {
-    public static final Method u0;
-    public rb2 t0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class b extends ListPopupWindow implements kj4 {
+    public static final Method C0;
+    public ha6 B0;
 
     static {
         try {
             if (Build.VERSION.SDK_INT <= 28) {
-                u0 = PopupWindow.class.getDeclaredMethod("setTouchModal", Boolean.TYPE);
+                C0 = PopupWindow.class.getDeclaredMethod("setTouchModal", Boolean.TYPE);
             }
         } catch (NoSuchMethodException unused) {
         }
     }
 
-    @Override // defpackage.o24
-    public final void N(k24 k24Var, p24 p24Var) {
-        rb2 rb2Var = this.t0;
-        if (rb2Var != null) {
-            rb2Var.N(k24Var, p24Var);
+    @Override // defpackage.kj4
+    public final void c(gj4 gj4Var, MenuItem menuItem) {
+        ha6 ha6Var = this.B0;
+        if (ha6Var != null) {
+            ha6Var.c(gj4Var, menuItem);
         }
     }
 
     @Override // androidx.appcompat.widget.ListPopupWindow
-    public final sk1 a(Context context, boolean z) {
-        d34 d34Var = new d34(context, z);
-        d34Var.setHoverListener(this);
-        return d34Var;
+    public final us1 p(Context context, boolean z) {
+        yj4 yj4Var = new yj4(context, z);
+        yj4Var.setHoverListener(this);
+        return yj4Var;
     }
 
-    @Override // defpackage.o24
-    public final void e(k24 k24Var, MenuItem menuItem) {
-        rb2 rb2Var = this.t0;
-        if (rb2Var != null) {
-            rb2Var.e(k24Var, menuItem);
+    @Override // defpackage.kj4
+    public final void t(gj4 gj4Var, lj4 lj4Var) {
+        ha6 ha6Var = this.B0;
+        if (ha6Var != null) {
+            ha6Var.t(gj4Var, lj4Var);
         }
     }
 }

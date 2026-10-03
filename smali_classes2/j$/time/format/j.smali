@@ -1,6 +1,6 @@
 .class public final Lj$/time/format/j;
 .super Lj$/time/format/k;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
@@ -13,26 +13,26 @@
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result p0
 
     .line 5
-    return p1
+    return p0
 .end method
 
 .method public final d(Ljava/lang/String;Ljava/lang/String;Lj$/time/format/k;)Lj$/time/format/k;
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance v0, Lj$/time/format/j;
+    new-instance p0, Lj$/time/format/j;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2, p3}, Lj$/time/format/k;-><init>(Ljava/lang/String;Ljava/lang/String;Lj$/time/format/k;)V
+    invoke-direct {p0, p1, p2, p3}, Lj$/time/format/k;-><init>(Ljava/lang/String;Ljava/lang/String;Lj$/time/format/k;)V
 
     .line 4
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
 .method public final e(Ljava/lang/CharSequence;II)Z
@@ -65,7 +65,7 @@
 
     .line 12
     :cond_0
-    const/4 p3, 0x0
+    move p3, v1
 
     .line 13
     :goto_0
@@ -134,8 +134,8 @@
 
     .line 42
     :cond_2
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 43
-    return p1
+    return p0
 .end method

@@ -1,93 +1,139 @@
-.class public final Lme;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lme;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg72;
+.implements Lxi2;
 
 
 # instance fields
-.field public final synthetic Q:Lkx4;
+.field public final synthetic X:Lyw0;
 
-.field public final synthetic R:Lg72;
+.field public final synthetic Y:Lji2;
 
-.field public final synthetic S:Lox4;
+.field public final synthetic Z:Ldn4;
 
-.field public final synthetic T:Ljava/lang/String;
+.field public final synthetic c0:Lxi2;
 
-.field public final synthetic U:Lte3;
+.field public final synthetic d0:Z
+
+.field public final synthetic e0:Ljj4;
+
+.field public final synthetic f0:Lm55;
 
 
 # direct methods
-.method public constructor <init>(Lkx4;Lg72;Lox4;Ljava/lang/String;Lte3;)V
+.method public synthetic constructor <init>(Lyw0;Lji2;Ldn4;Lxi2;ZLjj4;Lm55;I)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lme;->Q:Lkx4;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p2, p0, Lme;->R:Lg72;
-
     .line 4
+    iput-object p1, p0, Lme;->X:Lyw0;
+
     .line 5
-    iput-object p3, p0, Lme;->S:Lox4;
-
     .line 6
+    iput-object p2, p0, Lme;->Y:Lji2;
+
     .line 7
-    iput-object p4, p0, Lme;->T:Ljava/lang/String;
-
     .line 8
+    iput-object p3, p0, Lme;->Z:Ldn4;
+
     .line 9
-    iput-object p5, p0, Lme;->U:Lte3;
-
     .line 10
-    .line 11
-    const/4 p1, 0x0
+    iput-object p4, p0, Lme;->c0:Lxi2;
 
+    .line 11
     .line 12
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
+    iput-boolean p5, p0, Lme;->d0:Z
 
     .line 13
     .line 14
+    iput-object p6, p0, Lme;->e0:Ljj4;
+
     .line 15
+    .line 16
+    iput-object p7, p0, Lme;->f0:Lm55;
+
+    .line 17
+    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget-object v0, p0, Lme;->T:Ljava/lang/String;
+    move-object v7, p1
 
     .line 2
+    check-cast v7, Lrk2;
+
     .line 3
-    iget-object v1, p0, Lme;->U:Lte3;
-
     .line 4
+    check-cast p2, Ljava/lang/Integer;
+
     .line 5
-    iget-object v2, p0, Lme;->Q:Lkx4;
-
     .line 6
-    .line 7
-    iget-object v3, p0, Lme;->R:Lg72;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 7
     .line 8
     .line 9
-    iget-object v4, p0, Lme;->S:Lox4;
+    const p1, 0xc00007
 
     .line 10
     .line 11
-    invoke-virtual {v2, v3, v4, v0, v1}, Lkx4;->k(Lg72;Lox4;Ljava/lang/String;Lte3;)V
-
     .line 12
+    invoke-static {p1}, Lku8;->S(I)I
+
     .line 13
     .line 14
-    sget-object v0, Lbh7;->a:Lbh7;
-
     .line 15
+    move-result v8
+
     .line 16
-    return-object v0
+    iget-object v0, p0, Lme;->X:Lyw0;
+
+    .line 17
+    .line 18
+    iget-object v1, p0, Lme;->Y:Lji2;
+
+    .line 19
+    .line 20
+    iget-object v2, p0, Lme;->Z:Ldn4;
+
+    .line 21
+    .line 22
+    iget-object v3, p0, Lme;->c0:Lxi2;
+
+    .line 23
+    .line 24
+    iget-boolean v4, p0, Lme;->d0:Z
+
+    .line 25
+    .line 26
+    iget-object v5, p0, Lme;->e0:Ljj4;
+
+    .line 27
+    .line 28
+    iget-object v6, p0, Lme;->f0:Lm55;
+
+    .line 29
+    .line 30
+    invoke-static/range {v0 .. v8}, Loe;->b(Lyw0;Lji2;Ldn4;Lxi2;ZLjj4;Lm55;Lrk2;I)V
+
+    .line 31
+    .line 32
+    .line 33
+    sget-object p0, Lr98;->a:Lr98;
+
+    .line 34
+    .line 35
+    return-object p0
 .end method

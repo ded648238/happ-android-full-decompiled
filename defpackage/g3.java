@@ -1,26 +1,13 @@
 package defpackage;
 
-import android.os.Bundle;
-import android.text.style.ClickableSpan;
-import android.view.View;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class g3 extends mq8 {
+    public static final g3 w = new g3();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class g3 extends ClickableSpan {
-    public final int Q;
-    public final u3 R;
-    public final int S;
-
-    public g3(int i, u3 u3Var, int i2) {
-        this.Q = i;
-        this.R = u3Var;
-        this.S = i2;
-    }
-
-    @Override // android.text.style.ClickableSpan
-    public final void onClick(View view) {
-        Bundle bundle = new Bundle();
-        bundle.putInt("ACCESSIBILITY_CLICKABLE_SPAN_ID", this.Q);
-        this.R.a.performAction(this.S, bundle);
+    @Override // defpackage.mq8
+    public final fu3 J(fu3 fu3Var) {
+        fu3Var.getClass();
+        return fu3Var;
     }
 }

@@ -1,23 +1,56 @@
-.class public final Lmj2;
+.class public interface abstract Lmj2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lnj2;
-
-
-# instance fields
-.field public g:Landroid/os/IBinder;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
-.method public final asBinder()Landroid/os/IBinder;
-    .locals 1
+.method public abstract a(Ljava/util/List;)Lmj2;
+.end method
 
-    .line 1
-    iget-object v0, p0, Lmj2;->g:Landroid/os/IBinder;
+.method public abstract build()Lnj2;
+.end method
 
-    .line 2
-    .line 3
-    return-object v0
+.method public abstract f(I)Lmj2;
+.end method
+
+.method public abstract h(Lqw3;)Lmj2;
+.end method
+
+.method public abstract i()Lmj2;
+.end method
+
+.method public abstract j()Lmj2;
+.end method
+
+.method public abstract k()Lmj2;
+.end method
+
+.method public abstract m(Lzh1;)Lmj2;
+.end method
+
+.method public abstract n()Lmj2;
+.end method
+
+.method public abstract o(Lym4;)Lmj2;
+.end method
+
+.method public abstract p(Lxl;)Lmj2;
+.end method
+
+.method public abstract q()Lmj2;
+.end method
+
+.method public abstract s(Lbu3;)Lmj2;
+.end method
+
+.method public abstract u()Lmj2;
+.end method
+
+.method public abstract v(Lia1;)Lmj2;
+.end method
+
+.method public abstract w(Lpr4;)Lmj2;
+.end method
+
+.method public abstract z()Lmj2;
 .end method

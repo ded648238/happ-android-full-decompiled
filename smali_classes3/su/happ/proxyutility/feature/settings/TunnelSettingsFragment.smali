@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;
-.super Lz42;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Luf2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -10,7 +10,7 @@
     }
     d2 = {
         "Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;",
-        "Lz42;",
+        "Luf2;",
         "<init>",
         "()V",
         "app"
@@ -26,11 +26,11 @@
 
 
 # instance fields
-.field public final O0:Lzu6;
+.field public final a1:Lmm7;
 
-.field public final P0:Lzu6;
+.field public final b1:Lmm7;
 
-.field public Q0:Lp62;
+.field public c1:Ljh2;
 
 
 # direct methods
@@ -38,69 +38,71 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Lz42;-><init>()V
+    invoke-direct {p0}, Luf2;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lv37;
+    new-instance v0, Lin7;
 
     .line 5
     .line 6
-    const/4 v1, 0x2
+    const/16 v1, 0x8
 
     .line 7
-    invoke-direct {v0, v1}, Lv37;-><init>(I)V
-
     .line 8
+    invoke-direct {v0, v1}, Lin7;-><init>(I)V
+
     .line 9
     .line 10
-    new-instance v1, Lzu6;
-
     .line 11
-    .line 12
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    new-instance v1, Lmm7;
 
+    .line 12
     .line 13
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
+
     .line 14
     .line 15
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->O0:Lzu6;
-
     .line 16
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->a1:Lmm7;
+
     .line 17
-    new-instance v0, Lv37;
-
     .line 18
-    .line 19
-    const/4 v1, 0x3
+    new-instance v0, Lin7;
 
+    .line 19
     .line 20
-    invoke-direct {v0, v1}, Lv37;-><init>(I)V
+    const/16 v1, 0x9
 
     .line 21
     .line 22
-    .line 23
-    new-instance v1, Lzu6;
+    invoke-direct {v0, v1}, Lin7;-><init>(I)V
 
+    .line 23
     .line 24
     .line 25
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    new-instance v1, Lmm7;
 
     .line 26
     .line 27
-    .line 28
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->P0:Lzu6;
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
+    .line 28
     .line 29
     .line 30
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->b1:Lmm7;
+
+    .line 31
+    .line 32
     return-void
 .end method
 
-.method public static P(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;Lsu/happ/proxyutility/dto/enums/FragmentationType;)V
+.method public static Q(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;Lsu/happ/proxyutility/dto/enums/FragmentationType;)V
     .locals 3
 
     .line 1
-    sget-object v0, Loa7;->a:[I
+    sget-object v0, Lc38;->a:[I
 
     .line 2
     .line 3
@@ -133,7 +135,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 17
     .line 18
@@ -141,15 +143,15 @@
     move-result-object p1
 
     .line 20
-    iget-object p1, p1, Lp62;->z0:Landroid/widget/TextView;
+    iget-object p1, p1, Ljh2;->I0:Landroid/widget/TextView;
 
     .line 21
     .line 22
-    sget v2, Lx95;->settings_fragment_advanced_description:I
+    sget v2, Lxt5;->settings_fragment_advanced_description:I
 
     .line 23
     .line 24
-    invoke-virtual {p0, v2}, Lz42;->o(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Luf2;->o(I)Ljava/lang/String;
 
     .line 25
     .line 26
@@ -162,7 +164,7 @@
     .line 29
     .line 30
     .line 31
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 32
     .line 33
@@ -170,16 +172,16 @@
     move-result-object p1
 
     .line 35
-    iget-object p1, p1, Lp62;->i0:Landroid/widget/LinearLayout;
+    iget-object p1, p1, Ljh2;->r0:Landroid/widget/LinearLayout;
 
     .line 36
     .line 37
-    invoke-static {p1, v1}, Lw97;->e(Landroid/view/View;Z)V
+    invoke-static {p1, v1}, Lb18;->d(Landroid/view/View;Z)V
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 41
     .line 42
@@ -187,11 +189,11 @@
     move-result-object p0
 
     .line 44
-    iget-object p0, p0, Lp62;->g0:Landroid/widget/LinearLayout;
+    iget-object p0, p0, Ljh2;->p0:Landroid/widget/LinearLayout;
 
     .line 45
     .line 46
-    invoke-static {p0, v0}, Lw97;->e(Landroid/view/View;Z)V
+    invoke-static {p0, v0}, Lb18;->d(Landroid/view/View;Z)V
 
     .line 47
     .line 48
@@ -200,7 +202,7 @@
 
     .line 50
     :cond_0
-    invoke-static {}, Len0;->d()V
+    invoke-static {}, Lku0;->d()V
 
     .line 51
     .line 52
@@ -209,7 +211,7 @@
 
     .line 54
     :cond_1
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 55
     .line 56
@@ -217,15 +219,15 @@
     move-result-object p1
 
     .line 58
-    iget-object p1, p1, Lp62;->z0:Landroid/widget/TextView;
+    iget-object p1, p1, Ljh2;->I0:Landroid/widget/TextView;
 
     .line 59
     .line 60
-    sget v2, Lx95;->settings_fragment_xray_description:I
+    sget v2, Lxt5;->settings_fragment_xray_description:I
 
     .line 61
     .line 62
-    invoke-virtual {p0, v2}, Lz42;->o(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Luf2;->o(I)Ljava/lang/String;
 
     .line 63
     .line 64
@@ -238,7 +240,7 @@
     .line 67
     .line 68
     .line 69
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 70
     .line 71
@@ -246,16 +248,16 @@
     move-result-object p1
 
     .line 73
-    iget-object p1, p1, Lp62;->i0:Landroid/widget/LinearLayout;
+    iget-object p1, p1, Ljh2;->r0:Landroid/widget/LinearLayout;
 
     .line 74
     .line 75
-    invoke-static {p1, v0}, Lw97;->e(Landroid/view/View;Z)V
+    invoke-static {p1, v0}, Lb18;->d(Landroid/view/View;Z)V
 
     .line 76
     .line 77
     .line 78
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 79
     .line 80
@@ -263,11 +265,11 @@
     move-result-object p0
 
     .line 82
-    iget-object p0, p0, Lp62;->g0:Landroid/widget/LinearLayout;
+    iget-object p0, p0, Ljh2;->p0:Landroid/widget/LinearLayout;
 
     .line 83
     .line 84
-    invoke-static {p0, v1}, Lw97;->e(Landroid/view/View;Z)V
+    invoke-static {p0, v1}, Lb18;->d(Landroid/view/View;Z)V
 
     .line 85
     .line 86
@@ -277,81 +279,81 @@
 
 
 # virtual methods
-.method public final Q()Lp62;
-    .locals 1
+.method public final R()Ljh2;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q0:Lp62;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->c1:Ljh2;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    return-object v0
+    return-object p0
 
     .line 6
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    throw v0
+    throw p0
 .end method
 
-.method public final R()Lcom/tencent/mmkv/MMKV;
-    .locals 1
+.method public final S()Lcom/tencent/mmkv/MMKV;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->O0:Lzu6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->a1:Lmm7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Lcom/tencent/mmkv/MMKV;
+    check-cast p0, Lcom/tencent/mmkv/MMKV;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
-.method public final S()Lia7;
-    .locals 1
+.method public final T()Lx28;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->P0:Lzu6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->b1:Lmm7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Lia7;
+    check-cast p0, Lx28;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public final y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
@@ -367,7 +369,7 @@
     .line 4
     .line 5
     .line 6
-    sget v1, Lt95;->fragment_tunnel_settings:I
+    sget v1, Ltt5;->fragment_tunnel_settings:I
 
     .line 7
     .line 8
@@ -390,11 +392,11 @@
     move-result-object v1
 
     .line 17
-    sget v3, Ld95;->divider_block_bindtodevice:I
+    sget v3, Let5;->divider_block_bindtodevice:I
 
     .line 18
     .line 19
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 20
     .line 21
@@ -413,11 +415,11 @@
 
     .line 27
     .line 28
-    sget v3, Ld95;->divider_fragmentation:I
+    sget v3, Let5;->divider_fragmentation:I
 
     .line 29
     .line 30
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 31
     .line 32
@@ -433,11 +435,11 @@
 
     .line 37
     .line 38
-    sget v3, Ld95;->divider_fragmentation_delay:I
+    sget v3, Let5;->divider_fragmentation_delay:I
 
     .line 39
     .line 40
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 41
     .line 42
@@ -453,11 +455,11 @@
 
     .line 47
     .line 48
-    sget v3, Ld95;->divider_fragmentation_description:I
+    sget v3, Let5;->divider_fragmentation_description:I
 
     .line 49
     .line 50
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 51
     .line 52
@@ -473,11 +475,11 @@
 
     .line 57
     .line 58
-    sget v3, Ld95;->divider_fragmentation_end:I
+    sget v3, Let5;->divider_fragmentation_end:I
 
     .line 59
     .line 60
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 61
     .line 62
@@ -493,11 +495,11 @@
 
     .line 67
     .line 68
-    sget v3, Ld95;->divider_fragmentation_max_split:I
+    sget v3, Let5;->divider_fragmentation_max_split:I
 
     .line 69
     .line 70
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 71
     .line 72
@@ -513,11 +515,11 @@
 
     .line 77
     .line 78
-    sget v3, Ld95;->divider_fragmentation_packets:I
+    sget v3, Let5;->divider_fragmentation_packets:I
 
     .line 79
     .line 80
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 81
     .line 82
@@ -533,11 +535,11 @@
 
     .line 87
     .line 88
-    sget v3, Ld95;->divider_fragmentation_type:I
+    sget v3, Let5;->divider_fragmentation_type:I
 
     .line 89
     .line 90
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 91
     .line 92
@@ -553,11 +555,11 @@
 
     .line 97
     .line 98
-    sget v3, Ld95;->divider_inbound_auth:I
+    sget v3, Let5;->divider_inbound_auth:I
 
     .line 99
     .line 100
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 101
     .line 102
@@ -573,11 +575,11 @@
 
     .line 107
     .line 108
-    sget v3, Ld95;->divider_mux:I
+    sget v3, Let5;->divider_mux:I
 
     .line 109
     .line 110
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 111
     .line 112
@@ -593,11 +595,11 @@
 
     .line 117
     .line 118
-    sget v3, Ld95;->divider_mux_description:I
+    sget v3, Let5;->divider_mux_description:I
 
     .line 119
     .line 120
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 121
     .line 122
@@ -613,11 +615,11 @@
 
     .line 127
     .line 128
-    sget v3, Ld95;->divider_mux_tcp:I
+    sget v3, Let5;->divider_mux_tcp:I
 
     .line 129
     .line 130
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 131
     .line 132
@@ -633,11 +635,11 @@
 
     .line 137
     .line 138
-    sget v3, Ld95;->divider_mux_xudp:I
+    sget v3, Let5;->divider_mux_xudp:I
 
     .line 139
     .line 140
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 141
     .line 142
@@ -653,11 +655,11 @@
 
     .line 147
     .line 148
-    sget v3, Ld95;->divider_noises_delay:I
+    sget v3, Let5;->divider_noises_delay:I
 
     .line 149
     .line 150
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 151
     .line 152
@@ -673,11 +675,11 @@
 
     .line 157
     .line 158
-    sget v3, Ld95;->divider_noises_enabled:I
+    sget v3, Let5;->divider_noises_enabled:I
 
     .line 159
     .line 160
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 161
     .line 162
@@ -693,11 +695,11 @@
 
     .line 167
     .line 168
-    sget v3, Ld95;->divider_noises_packet:I
+    sget v3, Let5;->divider_noises_packet:I
 
     .line 169
     .line 170
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 171
     .line 172
@@ -713,11 +715,11 @@
 
     .line 177
     .line 178
-    sget v3, Ld95;->divider_noises_rand:I
+    sget v3, Let5;->divider_noises_rand:I
 
     .line 179
     .line 180
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 181
     .line 182
@@ -733,11 +735,11 @@
 
     .line 187
     .line 188
-    sget v3, Ld95;->divider_noises_type:I
+    sget v3, Let5;->divider_noises_type:I
 
     .line 189
     .line 190
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 191
     .line 192
@@ -753,11 +755,11 @@
 
     .line 197
     .line 198
-    sget v3, Ld95;->divider_per_app_proxy:I
+    sget v3, Let5;->divider_per_app_proxy:I
 
     .line 199
     .line 200
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 201
     .line 202
@@ -773,11 +775,11 @@
 
     .line 207
     .line 208
-    sget v3, Ld95;->divider_routing_profiles:I
+    sget v3, Let5;->divider_routing_profiles:I
 
     .line 209
     .line 210
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 211
     .line 212
@@ -793,11 +795,11 @@
 
     .line 217
     .line 218
-    sget v3, Ld95;->divider_xray_tun:I
+    sget v3, Let5;->divider_xray_tun:I
 
     .line 219
     .line 220
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 221
     .line 222
@@ -813,11 +815,11 @@
 
     .line 227
     .line 228
-    sget v3, Ld95;->divider_xray_tun_mtu:I
+    sget v3, Let5;->divider_xray_tun_mtu:I
 
     .line 229
     .line 230
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 231
     .line 232
@@ -833,11 +835,11 @@
 
     .line 237
     .line 238
-    sget v3, Ld95;->ff_inbound_auth:I
+    sget v3, Let5;->ff_inbound_auth:I
 
     .line 239
     .line 240
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 241
     .line 242
@@ -856,11 +858,11 @@
 
     .line 248
     .line 249
-    sget v3, Ld95;->forward_per_app_proxy:I
+    sget v3, Let5;->forward_per_app_proxy:I
 
     .line 250
     .line 251
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 252
     .line 253
@@ -879,11 +881,11 @@
 
     .line 259
     .line 260
-    sget v3, Ld95;->forward_routing_profiles:I
+    sget v3, Let5;->forward_routing_profiles:I
 
     .line 261
     .line 262
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 263
     .line 264
@@ -902,11 +904,11 @@
 
     .line 270
     .line 271
-    sget v3, Ld95;->if_fragmentation_advanced_options:I
+    sget v3, Let5;->if_fragmentation_advanced_options:I
 
     .line 272
     .line 273
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 274
     .line 275
@@ -925,11 +927,11 @@
 
     .line 281
     .line 282
-    sget v3, Ld95;->if_fragmentation_delay:I
+    sget v3, Let5;->if_fragmentation_delay:I
 
     .line 283
     .line 284
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 285
     .line 286
@@ -948,11 +950,11 @@
 
     .line 292
     .line 293
-    sget v3, Ld95;->if_fragmentation_length:I
+    sget v3, Let5;->if_fragmentation_length:I
 
     .line 294
     .line 295
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 296
     .line 297
@@ -971,11 +973,11 @@
 
     .line 303
     .line 304
-    sget v3, Ld95;->if_fragmentation_max_split:I
+    sget v3, Let5;->if_fragmentation_max_split:I
 
     .line 305
     .line 306
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 307
     .line 308
@@ -994,11 +996,11 @@
 
     .line 314
     .line 315
-    sget v3, Ld95;->if_mux_tcp:I
+    sget v3, Let5;->if_mux_tcp:I
 
     .line 316
     .line 317
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 318
     .line 319
@@ -1017,11 +1019,11 @@
 
     .line 325
     .line 326
-    sget v3, Ld95;->if_mux_xudp:I
+    sget v3, Let5;->if_mux_xudp:I
 
     .line 327
     .line 328
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 329
     .line 330
@@ -1041,11 +1043,11 @@
 
     .line 337
     .line 338
-    sget v3, Ld95;->if_noises_delay:I
+    sget v3, Let5;->if_noises_delay:I
 
     .line 339
     .line 340
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 341
     .line 342
@@ -1065,11 +1067,11 @@
 
     .line 349
     .line 350
-    sget v3, Ld95;->if_noises_packet:I
+    sget v3, Let5;->if_noises_packet:I
 
     .line 351
     .line 352
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 353
     .line 354
@@ -1089,11 +1091,11 @@
 
     .line 361
     .line 362
-    sget v3, Ld95;->if_noises_rand:I
+    sget v3, Let5;->if_noises_rand:I
 
     .line 363
     .line 364
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 365
     .line 366
@@ -1113,11 +1115,11 @@
 
     .line 373
     .line 374
-    sget v3, Ld95;->if_noises_rand_range:I
+    sget v3, Let5;->if_noises_rand_range:I
 
     .line 375
     .line 376
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 377
     .line 378
@@ -1137,11 +1139,11 @@
 
     .line 385
     .line 386
-    sget v3, Ld95;->if_xray_tun_mtu:I
+    sget v3, Let5;->if_xray_tun_mtu:I
 
     .line 387
     .line 388
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 389
     .line 390
@@ -1161,11 +1163,11 @@
 
     .line 397
     .line 398
-    sget v3, Ld95;->ll_fragmentation:I
+    sget v3, Let5;->ll_fragmentation:I
 
     .line 399
     .line 400
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 401
     .line 402
@@ -1185,11 +1187,11 @@
 
     .line 409
     .line 410
-    sget v3, Ld95;->ll_fragmentation_advanced_block:I
+    sget v3, Let5;->ll_fragmentation_advanced_block:I
 
     .line 411
     .line 412
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 413
     .line 414
@@ -1209,11 +1211,11 @@
 
     .line 421
     .line 422
-    sget v3, Ld95;->ll_fragmentation_block:I
+    sget v3, Let5;->ll_fragmentation_block:I
 
     .line 423
     .line 424
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 425
     .line 426
@@ -1233,11 +1235,11 @@
 
     .line 433
     .line 434
-    sget v3, Ld95;->ll_fragmentation_xray_block:I
+    sget v3, Let5;->ll_fragmentation_xray_block:I
 
     .line 435
     .line 436
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 437
     .line 438
@@ -1257,11 +1259,11 @@
 
     .line 445
     .line 446
-    sget v3, Ld95;->ll_mux:I
+    sget v3, Let5;->ll_mux:I
 
     .line 447
     .line 448
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 449
     .line 450
@@ -1281,11 +1283,11 @@
 
     .line 457
     .line 458
-    sget v3, Ld95;->ll_mux_block:I
+    sget v3, Let5;->ll_mux_block:I
 
     .line 459
     .line 460
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 461
     .line 462
@@ -1305,11 +1307,11 @@
 
     .line 469
     .line 470
-    sget v3, Ld95;->ll_noises_fields:I
+    sget v3, Let5;->ll_noises_fields:I
 
     .line 471
     .line 472
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 473
     .line 474
@@ -1336,11 +1338,11 @@
 
     .line 484
     .line 485
-    sget v3, Ld95;->ll_xray_tun:I
+    sget v3, Let5;->ll_xray_tun:I
 
     .line 486
     .line 487
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 488
     .line 489
@@ -1360,11 +1362,11 @@
 
     .line 496
     .line 497
-    sget v3, Ld95;->ll_xray_tun_block:I
+    sget v3, Let5;->ll_xray_tun_block:I
 
     .line 498
     .line 499
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 500
     .line 501
@@ -1384,11 +1386,11 @@
 
     .line 508
     .line 509
-    sget v3, Ld95;->spinner_fragment_type:I
+    sget v3, Let5;->spinner_fragment_type:I
 
     .line 510
     .line 511
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 512
     .line 513
@@ -1408,11 +1410,11 @@
 
     .line 520
     .line 521
-    sget v3, Ld95;->spinner_fragmentation_packets:I
+    sget v3, Let5;->spinner_fragmentation_packets:I
 
     .line 522
     .line 523
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 524
     .line 525
@@ -1432,11 +1434,11 @@
 
     .line 532
     .line 533
-    sget v3, Ld95;->spinner_mux_handling:I
+    sget v3, Let5;->spinner_mux_handling:I
 
     .line 534
     .line 535
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 536
     .line 537
@@ -1456,11 +1458,11 @@
 
     .line 544
     .line 545
-    sget v3, Ld95;->spinner_noises_type:I
+    sget v3, Let5;->spinner_noises_type:I
 
     .line 546
     .line 547
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 548
     .line 549
@@ -1480,11 +1482,11 @@
 
     .line 556
     .line 557
-    sget v3, Ld95;->spinner_type_ip:I
+    sget v3, Let5;->spinner_type_ip:I
 
     .line 558
     .line 559
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 560
     .line 561
@@ -1504,11 +1506,11 @@
 
     .line 568
     .line 569
-    sget v3, Ld95;->title_category:I
+    sget v3, Let5;->title_category:I
 
     .line 570
     .line 571
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 572
     .line 573
@@ -1524,11 +1526,11 @@
 
     .line 578
     .line 579
-    sget v3, Ld95;->toggle_block_bindtodevice_enabled:I
+    sget v3, Let5;->toggle_block_bindtodevice_enabled:I
 
     .line 580
     .line 581
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 582
     .line 583
@@ -1548,11 +1550,11 @@
 
     .line 590
     .line 591
-    sget v3, Ld95;->toggle_fragmentation_enabled:I
+    sget v3, Let5;->toggle_fragmentation_enabled:I
 
     .line 592
     .line 593
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 594
     .line 595
@@ -1572,11 +1574,11 @@
 
     .line 602
     .line 603
-    sget v3, Ld95;->toggle_mux_enabled:I
+    sget v3, Let5;->toggle_mux_enabled:I
 
     .line 604
     .line 605
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 606
     .line 607
@@ -1596,11 +1598,11 @@
 
     .line 614
     .line 615
-    sget v3, Ld95;->toggle_noises_enabled:I
+    sget v3, Let5;->toggle_noises_enabled:I
 
     .line 616
     .line 617
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 618
     .line 619
@@ -1620,11 +1622,11 @@
 
     .line 626
     .line 627
-    sget v3, Ld95;->toggle_xray_tun_enabled:I
+    sget v3, Let5;->toggle_xray_tun_enabled:I
 
     .line 628
     .line 629
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 630
     .line 631
@@ -1644,11 +1646,11 @@
 
     .line 638
     .line 639
-    sget v3, Ld95;->tv_fragmentation_description:I
+    sget v3, Let5;->tv_fragmentation_description:I
 
     .line 640
     .line 641
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 642
     .line 643
@@ -1668,11 +1670,11 @@
 
     .line 650
     .line 651
-    sget v3, Ld95;->tv_mux_description:I
+    sget v3, Let5;->tv_mux_description:I
 
     .line 652
     .line 653
-    invoke-static {v1, v3}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v3}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 654
     .line 655
@@ -1688,7 +1690,7 @@
 
     .line 660
     .line 661
-    new-instance v6, Lp62;
+    new-instance v6, Ljh2;
 
     .line 662
     .line 663
@@ -1696,20 +1698,20 @@
 
     .line 664
     .line 665
-    invoke-direct/range {v6 .. v42}, Lp62;-><init>(Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Landroid/widget/TextView;)V
+    invoke-direct/range {v6 .. v42}, Ljh2;-><init>(Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Lsu/happ/proxyutility/ui/foundation/component/HappInputField;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;Landroid/widget/TextView;)V
 
     .line 666
     .line 667
     .line 668
-    iput-object v6, v0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q0:Lp62;
+    iput-object v6, v0, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->c1:Ljh2;
 
     .line 669
     .line 670
-    iget-object v1, v0, Lz42;->G0:Lkk3;
+    iget-object v1, v0, Luf2;->P0:Li14;
 
     .line 671
     .line 672
-    invoke-static {v1}, Lyr;->C(Lkk3;)Lbk3;
+    invoke-static {v1}, Lkp3;->y(Li14;)Ly04;
 
     .line 673
     .line 674
@@ -1717,11 +1719,11 @@
     move-result-object v1
 
     .line 676
-    new-instance v3, Lpa7;
+    new-instance v3, Ld38;
 
     .line 677
     .line 678
-    invoke-direct {v3, v0, v5, v2}, Lpa7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;Lyv0;I)V
+    invoke-direct {v3, v0, v5, v2}, Ld38;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;Lb31;I)V
 
     .line 679
     .line 680
@@ -1729,7 +1731,7 @@
     const/4 v4, 0x3
 
     .line 682
-    invoke-static {v1, v5, v3, v4}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {v1, v5, v3, v4}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 683
     .line 684
@@ -1757,7 +1759,7 @@
     move-result-object v7
 
     .line 696
-    invoke-virtual {v0}, Lz42;->K()Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {v0}, Luf2;->L()Landroidx/fragment/app/FragmentActivity;
 
     .line 697
     .line 698
@@ -1769,7 +1771,7 @@
 
     .line 701
     .line 702
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 703
     .line 704
@@ -1777,18 +1779,18 @@
     move-result-object v9
 
     .line 706
-    iget-object v9, v9, Lp62;->T:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object v9, v9, Ljh2;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 707
     .line 708
-    new-instance v10, Lma7;
+    new-instance v10, La38;
 
     .line 709
     .line 710
     const/4 v11, 0x1
 
     .line 711
-    invoke-direct {v10, v8, v11}, Lma7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
+    invoke-direct {v10, v8, v11}, La38;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
 
     .line 712
     .line 713
@@ -1798,7 +1800,7 @@
     .line 715
     .line 716
     .line 717
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 718
     .line 719
@@ -1806,15 +1808,15 @@
     move-result-object v9
 
     .line 721
-    iget-object v9, v9, Lp62;->S:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object v9, v9, Ljh2;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 722
     .line 723
-    new-instance v10, Lma7;
+    new-instance v10, La38;
 
     .line 724
     .line 725
-    invoke-direct {v10, v8, v2}, Lma7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
+    invoke-direct {v10, v8, v2}, La38;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
 
     .line 726
     .line 727
@@ -1824,7 +1826,7 @@
     .line 729
     .line 730
     .line 731
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 732
     .line 733
@@ -1844,7 +1846,7 @@
     move-result v9
 
     .line 741
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 742
     .line 743
@@ -1852,7 +1854,7 @@
     move-result-object v10
 
     .line 745
-    iget-object v10, v10, Lp62;->v0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v10, v10, Ljh2;->E0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 746
     .line 747
@@ -1861,7 +1863,7 @@
     .line 748
     .line 749
     .line 750
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 751
     .line 752
@@ -1869,7 +1871,7 @@
     move-result-object v10
 
     .line 754
-    iget-object v10, v10, Lp62;->h0:Landroid/widget/LinearLayout;
+    iget-object v10, v10, Ljh2;->q0:Landroid/widget/LinearLayout;
 
     .line 755
     .line 756
@@ -1877,12 +1879,12 @@
 
     .line 757
     .line 758
-    invoke-static {v12, v10, v9, v2}, Lw97;->h(ILandroid/view/View;ZZ)V
+    invoke-static {v12, v10, v9, v2}, Lb18;->h(ILandroid/view/View;ZZ)V
 
     .line 759
     .line 760
     .line 761
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 762
     .line 763
@@ -1890,28 +1892,28 @@
     move-result-object v9
 
     .line 765
-    iget-object v9, v9, Lp62;->v0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v9, v9, Ljh2;->E0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 766
     .line 767
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 768
     .line 769
     const/4 v13, 0x4
 
     .line 770
-    invoke-direct {v10, v0, v13}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v13}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 771
     .line 772
     .line 773
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 774
     .line 775
     .line 776
-    invoke-virtual {v0}, Lz42;->n()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Luf2;->n()Landroid/content/res/Resources;
 
     .line 777
     .line 778
@@ -1919,7 +1921,7 @@
     move-result-object v9
 
     .line 780
-    sget v10, Ln75;->fragment_type_pref:I
+    sget v10, Lmr5;->fragment_type_pref:I
 
     .line 781
     .line 782
@@ -1936,7 +1938,7 @@
     .line 787
     .line 788
     .line 789
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 790
     .line 791
@@ -1965,7 +1967,7 @@
     .line 802
     .line 803
     :cond_0
-    invoke-static {v10, v9}, Lkz0;->P(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Integer;
+    invoke-static {v10, v9}, Lda1;->Z(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Integer;
 
     .line 804
     .line 805
@@ -1989,7 +1991,7 @@
 
     .line 814
     :cond_1
-    const/4 v13, 0x0
+    move v13, v2
 
     .line 815
     :goto_0
@@ -2014,13 +2016,13 @@
 
     .line 825
     .line 826
-    invoke-static {v0, v10}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->P(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;Lsu/happ/proxyutility/dto/enums/FragmentationType;)V
+    invoke-static {v0, v10}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;Lsu/happ/proxyutility/dto/enums/FragmentationType;)V
 
     .line 827
     .line 828
     .line 829
     :cond_2
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 830
     .line 831
@@ -2028,7 +2030,7 @@
     move-result-object v10
 
     .line 833
-    iget-object v10, v10, Lp62;->p0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v10, v10, Ljh2;->y0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 834
     .line 835
@@ -2037,7 +2039,7 @@
     .line 836
     .line 837
     .line 838
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 839
     .line 840
@@ -2045,7 +2047,7 @@
     move-result-object v10
 
     .line 842
-    iget-object v10, v10, Lp62;->p0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v10, v10, Ljh2;->y0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 843
     .line 844
@@ -2057,21 +2059,21 @@
     move-result-object v13
 
     .line 848
-    new-instance v14, Lna7;
+    new-instance v14, Lb38;
 
     .line 849
     .line 850
-    invoke-direct {v14, v9, v0}, Lna7;-><init>([Ljava/lang/String;Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;)V
+    invoke-direct {v14, v9, v0}, Lb38;-><init>([Ljava/lang/String;Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;)V
 
     .line 851
     .line 852
     .line 853
-    invoke-static {v10, v13, v14}, Lew0;->S(Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Landroid/view/View;Lj72;)V
+    invoke-static {v10, v13, v14}, Lq48;->O(Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Landroid/view/View;Lmi2;)V
 
     .line 854
     .line 855
     .line 856
-    invoke-virtual {v0}, Lz42;->n()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Luf2;->n()Landroid/content/res/Resources;
 
     .line 857
     .line 858
@@ -2079,7 +2081,7 @@
     move-result-object v9
 
     .line 860
-    sget v10, Ln75;->fragment_packets_pref:I
+    sget v10, Lmr5;->fragment_packets_pref:I
 
     .line 861
     .line 862
@@ -2096,7 +2098,7 @@
     .line 867
     .line 868
     .line 869
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 870
     .line 871
@@ -2125,7 +2127,7 @@
     .line 882
     .line 883
     :cond_3
-    invoke-static {v10, v9}, Lkz0;->P(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Integer;
+    invoke-static {v10, v9}, Lda1;->Z(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Integer;
 
     .line 884
     .line 885
@@ -2149,11 +2151,11 @@
 
     .line 894
     :cond_4
-    const/4 v10, 0x0
+    move v10, v2
 
     .line 895
     :goto_1
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 896
     .line 897
@@ -2161,7 +2163,7 @@
     move-result-object v13
 
     .line 899
-    iget-object v13, v13, Lp62;->q0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v13, v13, Ljh2;->z0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 900
     .line 901
@@ -2170,7 +2172,7 @@
     .line 902
     .line 903
     .line 904
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 905
     .line 906
@@ -2178,7 +2180,7 @@
     move-result-object v10
 
     .line 908
-    iget-object v10, v10, Lp62;->q0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v10, v10, Ljh2;->z0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 909
     .line 910
@@ -2190,21 +2192,21 @@
     move-result-object v13
 
     .line 914
-    new-instance v14, Lna7;
+    new-instance v14, Lb38;
 
     .line 915
     .line 916
-    invoke-direct {v14, v0, v9, v11}, Lna7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;[Ljava/lang/String;I)V
+    invoke-direct {v14, v0, v9, v11}, Lb38;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;[Ljava/lang/String;I)V
 
     .line 917
     .line 918
     .line 919
-    invoke-static {v10, v13, v14}, Lew0;->S(Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Landroid/view/View;Lj72;)V
+    invoke-static {v10, v13, v14}, Lq48;->O(Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Landroid/view/View;Lmi2;)V
 
     .line 920
     .line 921
     .line 922
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 923
     .line 924
@@ -2228,7 +2230,7 @@
 
     .line 933
     .line 934
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 935
     .line 936
@@ -2236,7 +2238,7 @@
     move-result-object v10
 
     .line 938
-    iget-object v10, v10, Lp62;->W:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v10, v10, Ljh2;->f0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 939
     .line 940
@@ -2246,7 +2248,7 @@
     .line 942
     .line 943
     :cond_5
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 944
     .line 945
@@ -2254,28 +2256,28 @@
     move-result-object v9
 
     .line 947
-    iget-object v9, v9, Lp62;->W:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v9, v9, Ljh2;->f0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 948
     .line 949
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 950
     .line 951
     const/4 v13, 0x5
 
     .line 952
-    invoke-direct {v10, v0, v13}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v13}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 953
     .line 954
     .line 955
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 956
     .line 957
     .line 958
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 959
     .line 960
@@ -2299,7 +2301,7 @@
 
     .line 969
     .line 970
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 971
     .line 972
@@ -2307,7 +2309,7 @@
     move-result-object v10
 
     .line 974
-    iget-object v10, v10, Lp62;->V:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v10, v10, Ljh2;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 975
     .line 976
@@ -2317,7 +2319,7 @@
     .line 978
     .line 979
     :cond_6
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 980
     .line 981
@@ -2325,28 +2327,28 @@
     move-result-object v9
 
     .line 983
-    iget-object v9, v9, Lp62;->V:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v9, v9, Ljh2;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 984
     .line 985
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 986
     .line 987
     const/4 v13, 0x6
 
     .line 988
-    invoke-direct {v10, v0, v13}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v13}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 989
     .line 990
     .line 991
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 992
     .line 993
     .line 994
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 995
     .line 996
@@ -2370,7 +2372,7 @@
 
     .line 1005
     .line 1006
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1007
     .line 1008
@@ -2378,7 +2380,7 @@
     move-result-object v10
 
     .line 1010
-    iget-object v10, v10, Lp62;->X:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v10, v10, Ljh2;->g0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1011
     .line 1012
@@ -2388,7 +2390,7 @@
     .line 1014
     .line 1015
     :cond_7
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1016
     .line 1017
@@ -2396,28 +2398,28 @@
     move-result-object v9
 
     .line 1019
-    iget-object v9, v9, Lp62;->X:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v9, v9, Ljh2;->g0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1020
     .line 1021
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 1022
     .line 1023
     const/4 v13, 0x7
 
     .line 1024
-    invoke-direct {v10, v0, v13}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v13}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1025
     .line 1026
     .line 1027
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 1028
     .line 1029
     .line 1030
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1031
     .line 1032
@@ -2437,7 +2439,7 @@
     move-result v9
 
     .line 1040
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1041
     .line 1042
@@ -2445,7 +2447,7 @@
     move-result-object v10
 
     .line 1044
-    iget-object v10, v10, Lp62;->x0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v10, v10, Ljh2;->G0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 1045
     .line 1046
@@ -2454,7 +2456,7 @@
     .line 1047
     .line 1048
     .line 1049
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1050
     .line 1051
@@ -2462,16 +2464,16 @@
     move-result-object v10
 
     .line 1053
-    iget-object v10, v10, Lp62;->l0:Landroid/widget/LinearLayout;
+    iget-object v10, v10, Ljh2;->u0:Landroid/widget/LinearLayout;
 
     .line 1054
     .line 1055
-    invoke-static {v12, v10, v9, v2}, Lw97;->h(ILandroid/view/View;ZZ)V
+    invoke-static {v12, v10, v9, v2}, Lb18;->h(ILandroid/view/View;ZZ)V
 
     .line 1056
     .line 1057
     .line 1058
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1059
     .line 1060
@@ -2479,11 +2481,11 @@
     move-result-object v9
 
     .line 1062
-    iget-object v9, v9, Lp62;->x0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v9, v9, Ljh2;->G0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 1063
     .line 1064
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 1065
     .line 1066
@@ -2491,17 +2493,17 @@
 
     .line 1067
     .line 1068
-    invoke-direct {v10, v0, v13}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v13}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1069
     .line 1070
     .line 1071
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 1072
     .line 1073
     .line 1074
-    invoke-virtual {v0}, Lz42;->n()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Luf2;->n()Landroid/content/res/Resources;
 
     .line 1075
     .line 1076
@@ -2509,7 +2511,7 @@
     move-result-object v9
 
     .line 1078
-    sget v10, Ln75;->noises_type_pref:I
+    sget v10, Lmr5;->noises_type_pref:I
 
     .line 1079
     .line 1080
@@ -2526,7 +2528,7 @@
     .line 1085
     .line 1086
     .line 1087
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1088
     .line 1089
@@ -2555,7 +2557,7 @@
     .line 1100
     .line 1101
     :cond_8
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1102
     .line 1103
@@ -2563,11 +2565,11 @@
     move-result-object v13
 
     .line 1105
-    iget-object v13, v13, Lp62;->s0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v13, v13, Ljh2;->B0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 1106
     .line 1107
-    invoke-static {v10, v9}, Lkz0;->P(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Integer;
+    invoke-static {v10, v9}, Lda1;->Z(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Integer;
 
     .line 1108
     .line 1109
@@ -2591,7 +2593,7 @@
 
     .line 1118
     :cond_9
-    const/4 v10, 0x0
+    move v10, v2
 
     .line 1119
     :goto_2
@@ -2600,7 +2602,7 @@
     .line 1120
     .line 1121
     .line 1122
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1123
     .line 1124
@@ -2608,7 +2610,7 @@
     move-result-object v10
 
     .line 1126
-    iget-object v10, v10, Lp62;->s0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v10, v10, Ljh2;->B0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 1127
     .line 1128
@@ -2620,24 +2622,24 @@
     move-result-object v13
 
     .line 1132
-    new-instance v14, Lna7;
+    new-instance v14, Lb38;
 
     .line 1133
     .line 1134
     const/4 v15, 0x2
 
     .line 1135
-    invoke-direct {v14, v0, v9, v15}, Lna7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;[Ljava/lang/String;I)V
+    invoke-direct {v14, v0, v9, v15}, Lb38;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;[Ljava/lang/String;I)V
 
     .line 1136
     .line 1137
     .line 1138
-    invoke-static {v10, v13, v14}, Lew0;->S(Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Landroid/view/View;Lj72;)V
+    invoke-static {v10, v13, v14}, Lq48;->O(Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;Landroid/view/View;Lmi2;)V
 
     .line 1139
     .line 1140
     .line 1141
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1142
     .line 1143
@@ -2661,7 +2663,7 @@
 
     .line 1152
     .line 1153
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1154
     .line 1155
@@ -2669,7 +2671,7 @@
     move-result-object v10
 
     .line 1157
-    iget-object v10, v10, Lp62;->b0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v10, v10, Ljh2;->k0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1158
     .line 1159
@@ -2679,7 +2681,7 @@
     .line 1161
     .line 1162
     :cond_a
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1163
     .line 1164
@@ -2687,11 +2689,11 @@
     move-result-object v9
 
     .line 1166
-    iget-object v9, v9, Lp62;->b0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v9, v9, Ljh2;->k0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1167
     .line 1168
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 1169
     .line 1170
@@ -2699,17 +2701,17 @@
 
     .line 1171
     .line 1172
-    invoke-direct {v10, v0, v13}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v13}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1173
     .line 1174
     .line 1175
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 1176
     .line 1177
     .line 1178
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1179
     .line 1180
@@ -2733,7 +2735,7 @@
 
     .line 1189
     .line 1190
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1191
     .line 1192
@@ -2741,7 +2743,7 @@
     move-result-object v10
 
     .line 1194
-    iget-object v10, v10, Lp62;->a0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v10, v10, Ljh2;->j0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1195
     .line 1196
@@ -2751,7 +2753,7 @@
     .line 1198
     .line 1199
     :cond_b
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1200
     .line 1201
@@ -2759,11 +2761,11 @@
     move-result-object v9
 
     .line 1203
-    iget-object v9, v9, Lp62;->a0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v9, v9, Ljh2;->j0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1204
     .line 1205
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 1206
     .line 1207
@@ -2771,17 +2773,17 @@
 
     .line 1208
     .line 1209
-    invoke-direct {v10, v0, v13}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v13}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1210
     .line 1211
     .line 1212
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 1213
     .line 1214
     .line 1215
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1216
     .line 1217
@@ -2805,7 +2807,7 @@
 
     .line 1226
     .line 1227
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1228
     .line 1229
@@ -2813,7 +2815,7 @@
     move-result-object v10
 
     .line 1231
-    iget-object v10, v10, Lp62;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v10, v10, Ljh2;->l0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1232
     .line 1233
@@ -2823,7 +2825,7 @@
     .line 1235
     .line 1236
     :cond_c
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1237
     .line 1238
@@ -2831,11 +2833,11 @@
     move-result-object v9
 
     .line 1240
-    iget-object v9, v9, Lp62;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v9, v9, Ljh2;->l0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1241
     .line 1242
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 1243
     .line 1244
@@ -2843,17 +2845,17 @@
 
     .line 1245
     .line 1246
-    invoke-direct {v10, v0, v13}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v13}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1247
     .line 1248
     .line 1249
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 1250
     .line 1251
     .line 1252
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1253
     .line 1254
@@ -2861,25 +2863,25 @@
     move-result-object v9
 
     .line 1256
-    iget-object v9, v9, Lp62;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v9, v9, Ljh2;->m0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1257
     .line 1258
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 1259
     .line 1260
-    invoke-direct {v10, v0, v12}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v12}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1261
     .line 1262
     .line 1263
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 1264
     .line 1265
     .line 1266
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1267
     .line 1268
@@ -2903,7 +2905,7 @@
 
     .line 1277
     .line 1278
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1279
     .line 1280
@@ -2911,7 +2913,7 @@
     move-result-object v10
 
     .line 1282
-    iget-object v10, v10, Lp62;->U:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v10, v10, Ljh2;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1283
     .line 1284
@@ -2921,7 +2923,7 @@
     .line 1286
     .line 1287
     :cond_d
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1288
     .line 1289
@@ -2929,11 +2931,11 @@
     move-result-object v9
 
     .line 1291
-    iget-object v9, v9, Lp62;->U:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v9, v9, Ljh2;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1292
     .line 1293
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 1294
     .line 1295
@@ -2941,17 +2943,17 @@
 
     .line 1296
     .line 1297
-    invoke-direct {v10, v0, v13}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v13}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1298
     .line 1299
     .line 1300
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 1301
     .line 1302
     .line 1303
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1304
     .line 1305
@@ -2971,7 +2973,7 @@
     move-result v9
 
     .line 1313
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1314
     .line 1315
@@ -2979,7 +2981,7 @@
     move-result-object v10
 
     .line 1317
-    iget-object v10, v10, Lp62;->w0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v10, v10, Ljh2;->F0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 1318
     .line 1319
@@ -2988,7 +2990,7 @@
     .line 1320
     .line 1321
     .line 1322
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1323
     .line 1324
@@ -2996,16 +2998,16 @@
     move-result-object v10
 
     .line 1326
-    iget-object v10, v10, Lp62;->k0:Landroid/widget/LinearLayout;
+    iget-object v10, v10, Ljh2;->t0:Landroid/widget/LinearLayout;
 
     .line 1327
     .line 1328
-    invoke-static {v12, v10, v9, v2}, Lw97;->h(ILandroid/view/View;ZZ)V
+    invoke-static {v12, v10, v9, v2}, Lb18;->h(ILandroid/view/View;ZZ)V
 
     .line 1329
     .line 1330
     .line 1331
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1332
     .line 1333
@@ -3013,11 +3015,11 @@
     move-result-object v9
 
     .line 1335
-    iget-object v9, v9, Lp62;->w0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v9, v9, Ljh2;->F0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 1336
     .line 1337
-    new-instance v10, Lla7;
+    new-instance v10, Lz28;
 
     .line 1338
     .line 1339
@@ -3025,17 +3027,17 @@
 
     .line 1340
     .line 1341
-    invoke-direct {v10, v0, v14}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v10, v0, v14}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1342
     .line 1343
     .line 1344
-    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {v9, v10}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 1345
     .line 1346
     .line 1347
-    invoke-virtual {v0}, Lz42;->n()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Luf2;->n()Landroid/content/res/Resources;
 
     .line 1348
     .line 1349
@@ -3043,7 +3045,7 @@
     move-result-object v9
 
     .line 1351
-    sget v10, Ln75;->mux_xudp_quic_value:I
+    sget v10, Lmr5;->mux_xudp_quic_value:I
 
     .line 1352
     .line 1353
@@ -3060,7 +3062,7 @@
     .line 1358
     .line 1359
     .line 1360
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1361
     .line 1362
@@ -3084,12 +3086,12 @@
 
     .line 1371
     .line 1372
-    sget-object v10, Lxo;->a:Ljava/lang/String;
+    sget-object v10, Lgq;->a:Ljava/lang/String;
 
     .line 1373
     .line 1374
     :cond_e
-    invoke-static {v10, v9}, Lkz0;->P(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Integer;
+    invoke-static {v10, v9}, Lda1;->Z(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Integer;
 
     .line 1375
     .line 1376
@@ -3113,11 +3115,11 @@
 
     .line 1385
     :cond_f
-    const/4 v10, 0x0
+    move v10, v2
 
     .line 1386
     :goto_3
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1387
     .line 1388
@@ -3125,7 +3127,7 @@
     move-result-object v14
 
     .line 1390
-    iget-object v14, v14, Lp62;->r0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v14, v14, Ljh2;->A0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 1391
     .line 1392
@@ -3134,7 +3136,7 @@
     .line 1393
     .line 1394
     .line 1395
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1396
     .line 1397
@@ -3142,15 +3144,15 @@
     move-result-object v10
 
     .line 1399
-    iget-object v10, v10, Lp62;->r0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v10, v10, Ljh2;->A0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 1400
     .line 1401
-    new-instance v14, Lyf2;
+    new-instance v14, Lbt2;
 
     .line 1402
     .line 1403
-    invoke-direct {v14, v0, v8, v9, v15}, Lyf2;-><init>(Ljava/lang/Object;Landroid/view/KeyEvent$Callback;Ljava/lang/Object;I)V
+    invoke-direct {v14, v0, v8, v9, v15}, Lbt2;-><init>(Ljava/lang/Object;Landroid/view/KeyEvent$Callback;Ljava/lang/Object;I)V
 
     .line 1404
     .line 1405
@@ -3160,7 +3162,7 @@
     .line 1407
     .line 1408
     .line 1409
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1410
     .line 1411
@@ -3219,7 +3221,7 @@
     move-result v9
 
     .line 1436
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1437
     .line 1438
@@ -3227,7 +3229,7 @@
     move-result-object v10
 
     .line 1440
-    iget-object v10, v10, Lp62;->Y:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v10, v10, Ljh2;->h0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1441
     .line 1442
@@ -3245,7 +3247,7 @@
     .line 1448
     .line 1449
     :cond_11
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1450
     .line 1451
@@ -3253,15 +3255,15 @@
     move-result-object v9
 
     .line 1453
-    iget-object v9, v9, Lp62;->Y:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v9, v9, Ljh2;->h0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1454
     .line 1455
-    new-instance v10, Lzq2;
+    new-instance v10, Lf63;
 
     .line 1456
     .line 1457
-    invoke-direct {v10, v7, v3}, Lzq2;-><init>(Ljava/lang/Integer;Ljava/lang/Integer;)V
+    invoke-direct {v10, v7, v3}, Lf63;-><init>(Ljava/lang/Integer;Ljava/lang/Integer;)V
 
     .line 1458
     .line 1459
@@ -3283,7 +3285,7 @@
     .line 1467
     .line 1468
     .line 1469
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1470
     .line 1471
@@ -3291,11 +3293,11 @@
     move-result-object v5
 
     .line 1473
-    iget-object v5, v5, Lp62;->Y:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v5, v5, Ljh2;->h0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1474
     .line 1475
-    new-instance v9, Lla7;
+    new-instance v9, Lz28;
 
     .line 1476
     .line 1477
@@ -3303,17 +3305,17 @@
 
     .line 1478
     .line 1479
-    invoke-direct {v9, v0, v10}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v9, v0, v10}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1480
     .line 1481
     .line 1482
-    invoke-virtual {v5, v9}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v5, v9}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 1483
     .line 1484
     .line 1485
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1486
     .line 1487
@@ -3370,7 +3372,7 @@
     move-result v1
 
     .line 1512
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1513
     .line 1514
@@ -3378,7 +3380,7 @@
     move-result-object v5
 
     .line 1516
-    iget-object v5, v5, Lp62;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v5, v5, Ljh2;->i0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1517
     .line 1518
@@ -3396,7 +3398,7 @@
     .line 1524
     .line 1525
     :cond_13
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1526
     .line 1527
@@ -3404,15 +3406,15 @@
     move-result-object v1
 
     .line 1529
-    iget-object v1, v1, Lp62;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v1, v1, Ljh2;->i0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1530
     .line 1531
-    new-instance v5, Lzq2;
+    new-instance v5, Lf63;
 
     .line 1532
     .line 1533
-    invoke-direct {v5, v7, v3}, Lzq2;-><init>(Ljava/lang/Integer;Ljava/lang/Integer;)V
+    invoke-direct {v5, v7, v3}, Lf63;-><init>(Ljava/lang/Integer;Ljava/lang/Integer;)V
 
     .line 1534
     .line 1535
@@ -3430,7 +3432,7 @@
     .line 1541
     .line 1542
     .line 1543
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1544
     .line 1545
@@ -3438,20 +3440,20 @@
     move-result-object v1
 
     .line 1547
-    iget-object v1, v1, Lp62;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v1, v1, Ljh2;->i0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1548
     .line 1549
-    new-instance v3, Lla7;
+    new-instance v3, Lz28;
 
     .line 1550
     .line 1551
-    invoke-direct {v3, v0, v2}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v3, v0, v2}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1552
     .line 1553
     .line 1554
-    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 1555
     .line 1556
@@ -3460,7 +3462,7 @@
 
     .line 1558
     .line 1559
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1560
     .line 1561
@@ -3493,7 +3495,7 @@
     move-result-object v1
 
     .line 1576
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1577
     .line 1578
@@ -3501,7 +3503,7 @@
     move-result-object v3
 
     .line 1580
-    iget-object v3, v3, Lp62;->t0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v3, v3, Ljh2;->C0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 1581
     .line 1582
@@ -3518,7 +3520,7 @@
     .line 1587
     .line 1588
     .line 1589
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1590
     .line 1591
@@ -3526,15 +3528,15 @@
     move-result-object v1
 
     .line 1593
-    iget-object v1, v1, Lp62;->t0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    iget-object v1, v1, Ljh2;->C0:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 
     .line 1594
     .line 1595
-    new-instance v3, Lqa7;
+    new-instance v3, Le38;
 
     .line 1596
     .line 1597
-    invoke-direct {v3, v2, v0, v8}, Lqa7;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v2, v0, v8}, Le38;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 1598
     .line 1599
@@ -3544,7 +3546,7 @@
     .line 1601
     .line 1602
     .line 1603
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1604
     .line 1605
@@ -3564,7 +3566,7 @@
     move-result v1
 
     .line 1613
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1614
     .line 1615
@@ -3572,7 +3574,7 @@
     move-result-object v3
 
     .line 1617
-    iget-object v3, v3, Lp62;->y0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v3, v3, Ljh2;->H0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 1618
     .line 1619
@@ -3581,7 +3583,7 @@
     .line 1620
     .line 1621
     .line 1622
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1623
     .line 1624
@@ -3589,16 +3591,16 @@
     move-result-object v3
 
     .line 1626
-    iget-object v3, v3, Lp62;->o0:Landroid/widget/LinearLayout;
+    iget-object v3, v3, Ljh2;->x0:Landroid/widget/LinearLayout;
 
     .line 1627
     .line 1628
-    invoke-static {v12, v3, v1, v2}, Lw97;->h(ILandroid/view/View;ZZ)V
+    invoke-static {v12, v3, v1, v2}, Lb18;->h(ILandroid/view/View;ZZ)V
 
     .line 1629
     .line 1630
     .line 1631
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1632
     .line 1633
@@ -3606,25 +3608,25 @@
     move-result-object v1
 
     .line 1635
-    iget-object v1, v1, Lp62;->R:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object v1, v1, Ljh2;->Y:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 1636
     .line 1637
-    new-instance v3, Lb7;
+    new-instance v3, Ln7;
 
     .line 1638
     .line 1639
-    invoke-direct {v3, v8, v13}, Lb7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
+    invoke-direct {v3, v8, v13}, Ln7;-><init>(Lsu/happ/proxyutility/feature/settings/SettingsActivity;I)V
 
     .line 1640
     .line 1641
     .line 1642
-    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 1643
     .line 1644
     .line 1645
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1646
     .line 1647
@@ -3632,25 +3634,25 @@
     move-result-object v1
 
     .line 1649
-    iget-object v1, v1, Lp62;->y0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v1, v1, Ljh2;->H0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 1650
     .line 1651
-    new-instance v3, Lla7;
+    new-instance v3, Lz28;
 
     .line 1652
     .line 1653
-    invoke-direct {v3, v0, v11}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v3, v0, v11}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1654
     .line 1655
     .line 1656
-    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 1657
     .line 1658
     .line 1659
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1660
     .line 1661
@@ -3678,15 +3680,15 @@
     move-result-object v3
 
     .line 1673
-    sget-object v5, Lyo;->a:Lhs2;
+    sget-object v5, Lhq;->a:Lu73;
 
     .line 1674
     .line 1675
-    iget v6, v5, Lfs2;->Q:I
+    iget v6, v5, Ls73;->X:I
 
     .line 1676
     .line 1677
-    iget v5, v5, Lfs2;->R:I
+    iget v5, v5, Ls73;->Y:I
 
     .line 1678
     .line 1679
@@ -3722,7 +3724,7 @@
     move-result v1
 
     .line 1693
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1694
     .line 1695
@@ -3730,7 +3732,7 @@
     move-result-object v3
 
     .line 1697
-    iget-object v3, v3, Lp62;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v3, v3, Ljh2;->n0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1698
     .line 1699
@@ -3748,7 +3750,7 @@
     .line 1705
     .line 1706
     :cond_15
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1707
     .line 1708
@@ -3756,11 +3758,11 @@
     move-result-object v1
 
     .line 1710
-    iget-object v1, v1, Lp62;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v1, v1, Ljh2;->n0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1711
     .line 1712
-    new-instance v3, Lzq2;
+    new-instance v3, Lf63;
 
     .line 1713
     .line 1714
@@ -3785,7 +3787,7 @@
     move-result-object v6
 
     .line 1725
-    invoke-direct {v3, v5, v6}, Lzq2;-><init>(Ljava/lang/Integer;Ljava/lang/Integer;)V
+    invoke-direct {v3, v5, v6}, Lf63;-><init>(Ljava/lang/Integer;Ljava/lang/Integer;)V
 
     .line 1726
     .line 1727
@@ -3803,7 +3805,7 @@
     .line 1733
     .line 1734
     .line 1735
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1736
     .line 1737
@@ -3811,25 +3813,25 @@
     move-result-object v1
 
     .line 1739
-    iget-object v1, v1, Lp62;->e0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    iget-object v1, v1, Ljh2;->n0:Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 1740
     .line 1741
-    new-instance v3, Lla7;
+    new-instance v3, Lz28;
 
     .line 1742
     .line 1743
-    invoke-direct {v3, v0, v15}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v3, v0, v15}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1744
     .line 1745
     .line 1746
-    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lj72;)V
+    invoke-virtual {v1, v3}, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->a(Lmi2;)V
 
     .line 1747
     .line 1748
     .line 1749
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->S()Lcom/tencent/mmkv/MMKV;
 
     .line 1750
     .line 1751
@@ -3849,7 +3851,7 @@
     move-result v1
 
     .line 1759
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1760
     .line 1761
@@ -3857,7 +3859,7 @@
     move-result-object v2
 
     .line 1763
-    iget-object v2, v2, Lp62;->u0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v2, v2, Ljh2;->D0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 1764
     .line 1765
@@ -3866,7 +3868,7 @@
     .line 1766
     .line 1767
     .line 1768
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1769
     .line 1770
@@ -3874,25 +3876,25 @@
     move-result-object v1
 
     .line 1772
-    iget-object v1, v1, Lp62;->u0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
+    iget-object v1, v1, Ljh2;->D0:Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 
     .line 1773
     .line 1774
-    new-instance v2, Lla7;
+    new-instance v2, Lz28;
 
     .line 1775
     .line 1776
-    invoke-direct {v2, v0, v4}, Lla7;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
+    invoke-direct {v2, v0, v4}, Lz28;-><init>(Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;I)V
 
     .line 1777
     .line 1778
     .line 1779
-    invoke-virtual {v1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lj72;)V
+    invoke-virtual {v1, v2}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->setOnToggleClickListener(Lmi2;)V
 
     .line 1780
     .line 1781
     .line 1782
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1783
     .line 1784
@@ -3900,7 +3902,7 @@
     move-result-object v1
 
     .line 1786
-    iget-object v1, v1, Lp62;->m0:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Ljh2;->v0:Landroid/widget/LinearLayout;
 
     .line 1787
     .line 1788
@@ -3909,12 +3911,12 @@
     .line 1789
     .line 1790
     .line 1791
-    invoke-static {v1}, Lw97;->d(Landroid/view/ViewGroup;)V
+    invoke-static {v1}, Lb18;->b(Landroid/view/ViewGroup;)V
 
     .line 1792
     .line 1793
     .line 1794
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1795
     .line 1796
@@ -3922,16 +3924,16 @@
     move-result-object v1
 
     .line 1798
-    iget-object v1, v1, Lp62;->f0:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Ljh2;->o0:Landroid/widget/LinearLayout;
 
     .line 1799
     .line 1800
-    invoke-static {v1}, Lw97;->d(Landroid/view/ViewGroup;)V
+    invoke-static {v1}, Lb18;->b(Landroid/view/ViewGroup;)V
 
     .line 1801
     .line 1802
     .line 1803
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1804
     .line 1805
@@ -3939,16 +3941,16 @@
     move-result-object v1
 
     .line 1807
-    iget-object v1, v1, Lp62;->j0:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Ljh2;->s0:Landroid/widget/LinearLayout;
 
     .line 1808
     .line 1809
-    invoke-static {v1}, Lw97;->d(Landroid/view/ViewGroup;)V
+    invoke-static {v1}, Lb18;->b(Landroid/view/ViewGroup;)V
 
     .line 1810
     .line 1811
     .line 1812
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1813
     .line 1814
@@ -3956,33 +3958,33 @@
     move-result-object v1
 
     .line 1816
-    iget-object v1, v1, Lp62;->n0:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Ljh2;->w0:Landroid/widget/LinearLayout;
 
     .line 1817
     .line 1818
-    invoke-static {v1}, Lw97;->d(Landroid/view/ViewGroup;)V
+    invoke-static {v1}, Lb18;->b(Landroid/view/ViewGroup;)V
 
     .line 1819
     .line 1820
     .line 1821
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->Q()Lp62;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/settings/TunnelSettingsFragment;->R()Ljh2;
 
     .line 1822
     .line 1823
     .line 1824
-    move-result-object v1
+    move-result-object v0
 
     .line 1825
-    iget-object v1, v1, Lp62;->Q:Landroid/widget/LinearLayout;
+    iget-object v0, v0, Ljh2;->X:Landroid/widget/LinearLayout;
 
     .line 1826
     .line 1827
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1828
     .line 1829
     .line 1830
-    return-object v1
+    return-object v0
 
     .line 1831
     :cond_16
@@ -3995,30 +3997,30 @@
     .line 1834
     .line 1835
     .line 1836
-    move-result-object v1
+    move-result-object v0
 
     .line 1837
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
 
     .line 1838
     .line 1839
     .line 1840
-    move-result-object v1
+    move-result-object v0
 
     .line 1841
-    const-string v2, "Missing required view with ID: "
+    const-string v1, "Missing required view with ID: "
 
     .line 1842
     .line 1843
-    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 1844
     .line 1845
     .line 1846
-    move-result-object v1
+    move-result-object v0
 
     .line 1847
-    invoke-static {v1}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {v0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 1848
     .line 1849

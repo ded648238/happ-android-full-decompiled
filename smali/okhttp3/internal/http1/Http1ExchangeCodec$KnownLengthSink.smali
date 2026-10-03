@@ -1,9 +1,9 @@
 .class final Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lpb6;
+.implements Lqy6;
 
 
 # annotations
@@ -22,24 +22,24 @@
     }
     d2 = {
         "Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;",
-        "Lpb6;",
+        "Lqy6;",
         "<init>",
         "(Lokhttp3/internal/http1/Http1ExchangeCodec;)V",
-        "Lo47;",
+        "Lax7;",
         "timeout",
-        "()Lo47;",
-        "Lf50;",
+        "()Lax7;",
+        "Ll70;",
         "source",
         "",
         "byteCount",
-        "Lbh7;",
+        "Lr98;",
         "write",
-        "(Lf50;J)V",
+        "(Ll70;J)V",
         "flush",
         "()V",
         "close",
-        "Lq42;",
-        "Lq42;",
+        "Lhf2;",
+        "Lhf2;",
         "",
         "closed",
         "Z",
@@ -60,7 +60,7 @@
 
 .field final synthetic this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
-.field private final timeout:Lq42;
+.field private final timeout:Lhf2;
 
 
 # direct methods
@@ -82,11 +82,11 @@
     .line 4
     .line 5
     .line 6
-    new-instance v0, Lq42;
+    new-instance v0, Lhf2;
 
     .line 7
     .line 8
-    invoke-static {p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSink$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lr50;
+    invoke-static {p1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSink$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Le80;
 
     .line 9
     .line 10
@@ -94,7 +94,7 @@
     move-result-object p1
 
     .line 12
-    invoke-interface {p1}, Lpb6;->timeout()Lo47;
+    invoke-interface {p1}, Lqy6;->timeout()Lax7;
 
     .line 13
     .line 14
@@ -102,12 +102,12 @@
     move-result-object p1
 
     .line 16
-    invoke-direct {v0, p1}, Lq42;-><init>(Lo47;)V
+    invoke-direct {v0, p1}, Lhf2;-><init>(Lax7;)V
 
     .line 17
     .line 18
     .line 19
-    iput-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->timeout:Lq42;
+    iput-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->timeout:Lhf2;
 
     .line 20
     .line 21
@@ -143,23 +143,23 @@
 
     .line 10
     .line 11
-    iget-object v1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->timeout:Lq42;
+    iget-object v1, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->timeout:Lhf2;
 
     .line 12
     .line 13
-    invoke-static {v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$detachTimeout(Lokhttp3/internal/http1/Http1ExchangeCodec;Lq42;)V
+    invoke-static {v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$detachTimeout(Lokhttp3/internal/http1/Http1ExchangeCodec;Lhf2;)V
 
     .line 14
     .line 15
     .line 16
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
     .line 17
     .line 18
-    const/4 v1, 0x3
+    const/4 v0, 0x3
 
     .line 19
-    invoke-static {v0, v1}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$setState$p(Lokhttp3/internal/http1/Http1ExchangeCodec;I)V
+    invoke-static {p0, v0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$setState$p(Lokhttp3/internal/http1/Http1ExchangeCodec;I)V
 
     .line 20
     .line 21
@@ -183,19 +183,19 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
     .line 7
     .line 8
-    invoke-static {v0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSink$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lr50;
+    invoke-static {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSink$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Le80;
 
     .line 9
     .line 10
     .line 11
-    move-result-object v0
+    move-result-object p0
 
     .line 12
-    invoke-interface {v0}, Lr50;->flush()V
+    invoke-interface {p0}, Le80;->flush()V
 
     .line 13
     .line 14
@@ -203,18 +203,18 @@
     return-void
 .end method
 
-.method public timeout()Lo47;
-    .locals 1
+.method public timeout()Lax7;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->timeout:Lq42;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->timeout:Lhf2;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public write(Lf50;J)V
+.method public write(Ll70;J)V
     .locals 7
 
     .line 1
@@ -231,7 +231,7 @@
 
     .line 7
     .line 8
-    iget-wide v1, p1, Lf50;->R:J
+    iget-wide v1, p1, Ll70;->Y:J
 
     .line 9
     .line 10
@@ -247,19 +247,19 @@
     .line 14
     .line 15
     .line 16
-    iget-object p2, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
+    iget-object p0, p0, Lokhttp3/internal/http1/Http1ExchangeCodec$KnownLengthSink;->this$0:Lokhttp3/internal/http1/Http1ExchangeCodec;
 
     .line 17
     .line 18
-    invoke-static {p2}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSink$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Lr50;
+    invoke-static {p0}, Lokhttp3/internal/http1/Http1ExchangeCodec;->access$getSink$p(Lokhttp3/internal/http1/Http1ExchangeCodec;)Le80;
 
     .line 19
     .line 20
     .line 21
-    move-result-object p2
+    move-result-object p0
 
     .line 22
-    invoke-interface {p2, p1, v5, v6}, Lpb6;->write(Lf50;J)V
+    invoke-interface {p0, p1, v5, v6}, Lqy6;->write(Ll70;J)V
 
     .line 23
     .line 24
@@ -268,11 +268,11 @@
 
     .line 26
     :cond_0
-    const-string p1, "closed"
+    const-string p0, "closed"
 
     .line 27
     .line 28
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 29
     .line 30

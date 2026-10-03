@@ -1,122 +1,118 @@
-.class public final Lst;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lbg4;
+.class public Lst;
+.super Lpt;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Lst;
-
-.field public static final b:Lbv1;
-
-.field public static final c:Lbv1;
+# instance fields
+.field public final e:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Lj48;Ln30;Ljava/lang/String;)V
     .locals 1
 
     .line 1
-    new-instance v0, Lst;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2, v0}, Lpt;-><init>(Lj48;Ln30;I)V
 
+    .line 3
     .line 4
     .line 5
+    iput-object p3, p0, Lst;->e:Ljava/lang/String;
+
     .line 6
-    sput-object v0, Lst;->a:Lst;
-
     .line 7
-    .line 8
-    const-string v0, "networkType"
-
-    .line 9
-    .line 10
-    invoke-static {v0}, Lbv1;->a(Ljava/lang/String;)Lbv1;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
-
-    .line 14
-    sput-object v0, Lst;->b:Lbv1;
-
-    .line 15
-    .line 16
-    const-string v0, "mobileSubtype"
-
-    .line 17
-    .line 18
-    invoke-static {v0}, Lbv1;->a(Ljava/lang/String;)Lbv1;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    sput-object v0, Lst;->c:Lbv1;
-
-    .line 23
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 2
+.method public bridge synthetic a(Ln30;)Lf58;
+    .locals 0
 
     .line 1
-    check-cast p1, Llb4;
+    invoke-virtual {p0, p1}, Lst;->h(Ln30;)Lst;
 
     .line 2
     .line 3
-    check-cast p2, Lcg4;
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lst;->e:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public c()Lak3;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lak3;->X:Lak3;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public bridge synthetic g(Ln30;)Lpt;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lst;->h(Ln30;)Lst;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public h(Ln30;)Lst;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lg58;->b:Ln30;
+
+    .line 2
+    .line 3
+    if-ne v0, p1, :cond_0
 
     .line 4
     .line 5
-    move-object v0, p1
+    return-object p0
 
     .line 6
-    check-cast v0, Lov;
+    :cond_0
+    new-instance v0, Lst;
 
     .line 7
     .line 8
-    iget-object v0, v0, Lov;->a:Lkb4;
+    iget-object v1, p0, Lg58;->a:Lj48;
 
     .line 9
     .line 10
-    sget-object v1, Lst;->b:Lbv1;
+    iget-object p0, p0, Lst;->e:Ljava/lang/String;
 
     .line 11
     .line 12
-    invoke-interface {p2, v1, v0}, Lcg4;->a(Lbv1;Ljava/lang/Object;)Lcg4;
+    invoke-direct {v0, v1, p1, p0}, Lst;-><init>(Lj48;Ln30;Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    check-cast p1, Lov;
-
-    .line 16
-    .line 17
-    iget-object p1, p1, Lov;->b:Ljb4;
-
-    .line 18
-    .line 19
-    sget-object v0, Lst;->c:Lbv1;
-
-    .line 20
-    .line 21
-    invoke-interface {p2, v0, p1}, Lcg4;->a(Lbv1;Ljava/lang/Object;)Lcg4;
-
-    .line 22
-    .line 23
-    .line 24
-    return-void
+    return-object v0
 .end method

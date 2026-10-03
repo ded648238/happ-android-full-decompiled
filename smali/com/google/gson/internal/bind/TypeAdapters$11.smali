@@ -1,6 +1,6 @@
 .class Lcom/google/gson/internal/bind/TypeAdapters$11;
 .super Lcom/google/gson/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,55 +26,55 @@
 
 
 # virtual methods
-.method public final b(Lr23;)Ljava/lang/Object;
-    .locals 4
+.method public final b(Lxi3;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    new-instance v0, Ljava/util/ArrayList;
+    new-instance p0, Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1}, Lr23;->C0()V
+    invoke-virtual {p1}, Lxi3;->N0()V
 
     .line 7
     .line 8
     .line 9
     :goto_0
-    invoke-virtual {p1}, Lr23;->hasNext()Z
+    invoke-virtual {p1}, Lxi3;->hasNext()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v1
+    move-result v0
 
     .line 13
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 14
     .line 15
     :try_start_0
-    invoke-virtual {p1}, Lr23;->nextInt()I
+    invoke-virtual {p1}, Lxi3;->nextInt()I
 
     .line 16
     .line 17
     .line 18
-    move-result v1
+    move-result v0
 
     .line 19
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v1
+    move-result-object v0
 
     .line 23
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -85,101 +85,97 @@
 
     .line 27
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 28
-    new-instance v0, Lg33;
+    new-instance p1, Lmj3;
 
     .line 29
     .line 30
-    const/16 v1, 0x9
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 31
     .line 32
-    invoke-direct {v0, v1, p1}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
     .line 33
+    throw p1
+
     .line 34
-    .line 35
-    throw v0
-
-    .line 36
     :cond_0
-    invoke-virtual {p1}, Lr23;->y0()V
+    invoke-virtual {p1}, Lxi3;->J0()V
 
+    .line 35
+    .line 36
     .line 37
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
     .line 38
     .line 39
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
     .line 40
-    .line 41
-    .line 42
     move-result p1
 
+    .line 41
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicIntegerArray;
+
+    .line 42
     .line 43
-    new-instance v1, Ljava/util/concurrent/atomic/AtomicIntegerArray;
+    invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicIntegerArray;-><init>(I)V
 
     .line 44
     .line 45
-    invoke-direct {v1, p1}, Ljava/util/concurrent/atomic/AtomicIntegerArray;-><init>(I)V
-
     .line 46
-    .line 47
-    .line 48
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    .line 49
+    .line 47
     :goto_1
-    if-ge v2, p1, :cond_1
+    if-ge v1, p1, :cond_1
+
+    .line 48
+    .line 49
+    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     .line 50
     .line 51
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
     .line 52
-    .line 53
-    .line 54
-    move-result-object v3
+    move-result-object v2
 
+    .line 53
+    check-cast v2, Ljava/lang/Integer;
+
+    .line 54
     .line 55
-    check-cast v3, Ljava/lang/Integer;
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
     .line 56
     .line 57
-    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
-
     .line 58
+    move-result v2
+
     .line 59
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicIntegerArray;->set(II)V
+
     .line 60
-    move-result v3
-
     .line 61
-    invoke-virtual {v1, v2, v3}, Ljava/util/concurrent/atomic/AtomicIntegerArray;->set(II)V
-
     .line 62
+    add-int/lit8 v1, v1, 0x1
+
     .line 63
     .line 64
-    add-int/lit8 v2, v2, 0x1
-
-    .line 65
-    .line 66
     goto :goto_1
 
-    .line 67
+    .line 65
     :cond_1
-    return-object v1
+    return-object v0
 .end method
 
-.method public final c(Lh43;Ljava/lang/Object;)V
-    .locals 4
+.method public final c(Lnk3;Ljava/lang/Object;)V
+    .locals 3
 
     .line 1
     check-cast p2, Ljava/util/concurrent/atomic/AtomicIntegerArray;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lh43;->C0()V
+    invoke-virtual {p1}, Lnk3;->N0()V
 
     .line 4
     .line 5
@@ -189,34 +185,34 @@
     .line 7
     .line 8
     .line 9
-    move-result v0
+    move-result p0
 
     .line 10
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 11
     :goto_0
-    if-ge v1, v0, :cond_0
+    if-ge v0, p0, :cond_0
 
     .line 12
     .line 13
-    invoke-virtual {p2, v1}, Ljava/util/concurrent/atomic/AtomicIntegerArray;->get(I)I
+    invoke-virtual {p2, v0}, Ljava/util/concurrent/atomic/AtomicIntegerArray;->get(I)I
 
     .line 14
     .line 15
     .line 16
-    move-result v2
+    move-result v1
 
     .line 17
-    int-to-long v2, v2
+    int-to-long v1, v1
 
     .line 18
-    invoke-virtual {p1, v2, v3}, Lh43;->R(J)V
+    invoke-virtual {p1, v1, v2}, Lnk3;->X(J)V
 
     .line 19
     .line 20
     .line 21
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     .line 22
     .line 23
@@ -224,7 +220,7 @@
 
     .line 24
     :cond_0
-    invoke-virtual {p1}, Lh43;->y0()V
+    invoke-virtual {p1}, Lnk3;->J0()V
 
     .line 25
     .line 26

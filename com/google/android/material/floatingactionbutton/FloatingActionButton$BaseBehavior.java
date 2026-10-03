@@ -6,16 +6,16 @@ import android.util.AttributeSet;
 import android.view.View;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.coordinatorlayout.widget.b;
-import defpackage.va5;
+import defpackage.uu5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class FloatingActionButton$BaseBehavior<T> extends CoordinatorLayout.Behavior<T> {
     public FloatingActionButton$BaseBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, va5.FloatingActionButton_Behavior_Layout);
-        typedArrayObtainStyledAttributes.getBoolean(va5.FloatingActionButton_Behavior_Layout_behavior_autoHide, true);
-        typedArrayObtainStyledAttributes.recycle();
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, uu5.FloatingActionButton_Behavior_Layout);
+        obtainStyledAttributes.getBoolean(uu5.FloatingActionButton_Behavior_Layout_behavior_autoHide, true);
+        obtainStyledAttributes.recycle();
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior

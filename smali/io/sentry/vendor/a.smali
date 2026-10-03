@@ -1,6 +1,6 @@
 .class public abstract Lio/sentry/vendor/a;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -202,10 +202,10 @@
     const/4 v4, -0x1
 
     .line 24
-    const/4 v5, 0x0
+    move v5, v2
 
     .line 25
-    const/4 v6, -0x1
+    move v6, v4
 
     .line 26
     :goto_1
@@ -542,7 +542,7 @@
 
     .line 4
     .line 5
-    const/4 v2, 0x1
+    move v2, v0
 
     .line 6
     goto :goto_0
@@ -556,216 +556,170 @@
     sub-int/2addr p0, v2
 
     .line 9
-    div-int/lit16 v2, p0, 0x190
+    int-to-long v2, p0
 
     .line 10
+    const-wide/16 v4, 0x190
+
     .line 11
-    const/16 v3, 0x190
-
     .line 12
-    .line 13
-    mul-int v3, v3, v2
+    invoke-static {v2, v3, v4, v5}, Lio/sentry/vendor/a;->e(JJ)J
 
+    .line 13
     .line 14
     .line 15
-    sub-int v3, p0, v3
+    move-result-wide v6
 
     .line 16
+    mul-long/2addr v4, v6
+
     .line 17
-    if-nez v3, :cond_1
+    sub-long/2addr v2, v4
 
     .line 18
+    long-to-int p0, v2
+
     .line 19
-    goto :goto_1
+    if-le p1, v1, :cond_1
 
     .line 20
-    :cond_1
-    xor-int/lit16 v3, p0, 0x190
-
     .line 21
+    const/4 v2, -0x3
+
     .line 22
-    shr-int/lit8 v3, v3, 0x1f
+    goto :goto_1
 
     .line 23
-    .line 24
-    or-int/2addr v3, v0
+    :cond_1
+    const/16 v2, 0x9
 
+    .line 24
     .line 25
-    if-gez v3, :cond_2
+    :goto_1
+    add-int/2addr p1, v2
 
     .line 26
-    .line 27
-    add-int/lit8 v2, v2, -0x1
+    mul-int/lit16 p1, p1, 0x99
 
+    .line 27
     .line 28
+    add-int/2addr p1, v1
+
     .line 29
-    :cond_2
-    :goto_1
-    int-to-long v2, v2
+    div-int/lit8 p1, p1, 0x5
 
     .line 30
-    int-to-long v4, p0
-
     .line 31
-    const-wide/16 v6, 0x190
+    add-int/2addr p1, p2
 
     .line 32
+    sub-int/2addr p1, v0
+
     .line 33
-    mul-long v6, v6, v2
+    mul-int/lit16 p2, p0, 0x16d
 
     .line 34
     .line 35
-    sub-long/2addr v4, v6
-
-    .line 36
-    long-to-int p0, v4
-
-    .line 37
-    if-le p1, v1, :cond_3
-
-    .line 38
-    .line 39
-    const/4 v4, -0x3
-
-    .line 40
-    goto :goto_2
-
-    .line 41
-    :cond_3
-    const/16 v4, 0x9
-
-    .line 42
-    .line 43
-    :goto_2
-    add-int/2addr p1, v4
-
-    .line 44
-    mul-int/lit16 p1, p1, 0x99
-
-    .line 45
-    .line 46
-    add-int/2addr p1, v1
-
-    .line 47
-    div-int/lit8 p1, p1, 0x5
-
-    .line 48
-    .line 49
-    add-int/2addr p1, p2
-
-    .line 50
-    sub-int/2addr p1, v0
-
-    .line 51
-    mul-int/lit16 p2, p0, 0x16d
-
-    .line 52
-    .line 53
     div-int/lit8 v0, p0, 0x4
 
-    .line 54
-    .line 55
+    .line 36
+    .line 37
     add-int/2addr v0, p2
 
-    .line 56
+    .line 38
     div-int/lit8 p0, p0, 0x64
 
-    .line 57
-    .line 58
+    .line 39
+    .line 40
     sub-int/2addr v0, p0
 
-    .line 59
+    .line 41
     add-int/2addr v0, p1
 
-    .line 60
+    .line 42
     const-wide/32 p0, 0x23ab1
 
+    .line 43
+    .line 44
+    .line 45
+    mul-long/2addr v6, p0
+
+    .line 46
+    int-to-long p0, v0
+
+    .line 47
+    add-long/2addr v6, p0
+
+    .line 48
+    const-wide/32 p0, 0xafa6c
+
+    .line 49
+    .line 50
+    .line 51
+    sub-long/2addr v6, p0
+
+    .line 52
+    const-wide/32 p0, 0x5265c00
+
+    .line 53
+    .line 54
+    .line 55
+    mul-long/2addr v6, p0
+
+    .line 56
+    int-to-long p0, p3
+
+    .line 57
+    const-wide/32 p2, 0x36ee80
+
+    .line 58
+    .line 59
+    .line 60
+    mul-long/2addr p0, p2
+
     .line 61
+    add-long/2addr p0, v6
+
     .line 62
+    int-to-long p2, p4
+
     .line 63
-    mul-long v2, v2, p0
+    const-wide/32 v0, 0xea60
 
     .line 64
     .line 65
-    int-to-long p0, v0
-
     .line 66
-    add-long/2addr v2, p0
+    mul-long/2addr p2, v0
 
     .line 67
-    const-wide/32 p0, 0xafa6c
-
-    .line 68
-    .line 69
-    .line 70
-    sub-long/2addr v2, p0
-
-    .line 71
-    const-wide/32 p0, 0x5265c00
-
-    .line 72
-    .line 73
-    .line 74
-    mul-long v2, v2, p0
-
-    .line 75
-    .line 76
-    int-to-long p0, p3
-
-    .line 77
-    const-wide/32 p2, 0x36ee80
-
-    .line 78
-    .line 79
-    .line 80
-    mul-long p0, p0, p2
-
-    .line 81
-    .line 82
-    add-long/2addr p0, v2
-
-    .line 83
-    int-to-long p2, p4
-
-    .line 84
-    const-wide/32 v0, 0xea60
-
-    .line 85
-    .line 86
-    .line 87
-    mul-long p2, p2, v0
-
-    .line 88
-    .line 89
     add-long/2addr p2, p0
 
-    .line 90
+    .line 68
     int-to-long p0, p5
 
-    .line 91
+    .line 69
     const-wide/16 p4, 0x3e8
 
-    .line 92
-    .line 93
-    mul-long p0, p0, p4
+    .line 70
+    .line 71
+    mul-long/2addr p0, p4
 
-    .line 94
-    .line 95
+    .line 72
     add-long/2addr p0, p2
 
-    .line 96
+    .line 73
     int-to-long p2, p6
 
-    .line 97
+    .line 74
     add-long/2addr p0, p2
 
-    .line 98
+    .line 75
     int-to-long p2, p7
 
-    .line 99
+    .line 76
     sub-long/2addr p0, p2
 
-    .line 100
+    .line 77
     return-wide p0
 .end method
 
@@ -877,7 +831,71 @@
     return-wide p0
 .end method
 
-.method public static e(Ljava/lang/StringBuilder;II)V
+.method public static e(JJ)J
+    .locals 6
+
+    .line 1
+    div-long v0, p0, p2
+
+    .line 2
+    .line 3
+    mul-long v2, p2, v0
+
+    .line 4
+    .line 5
+    sub-long v2, p0, v2
+
+    .line 6
+    .line 7
+    const-wide/16 v4, 0x0
+
+    .line 8
+    .line 9
+    cmp-long v2, v2, v4
+
+    .line 10
+    .line 11
+    if-nez v2, :cond_0
+
+    .line 12
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    xor-long/2addr p0, p2
+
+    .line 15
+    const/16 p2, 0x3f
+
+    .line 16
+    .line 17
+    shr-long/2addr p0, p2
+
+    .line 18
+    long-to-int p0, p0
+
+    .line 19
+    or-int/lit8 p0, p0, 0x1
+
+    .line 20
+    .line 21
+    if-gez p0, :cond_1
+
+    .line 22
+    .line 23
+    int-to-long p0, p0
+
+    .line 24
+    add-long/2addr v0, p0
+
+    .line 25
+    :cond_1
+    :goto_0
+    return-wide v0
+.end method
+
+.method public static f(Ljava/lang/StringBuilder;II)V
     .locals 1
 
     .line 1
@@ -897,7 +915,7 @@
     neg-int p1, p1
 
     .line 9
-    invoke-static {p0, p1, p2}, Lio/sentry/vendor/a;->e(Ljava/lang/StringBuilder;II)V
+    invoke-static {p0, p1, p2}, Lio/sentry/vendor/a;->f(Ljava/lang/StringBuilder;II)V
 
     .line 10
     .line 11
@@ -955,7 +973,7 @@
     return-void
 .end method
 
-.method public static f(IILjava/lang/String;)I
+.method public static g(IILjava/lang/String;)I
     .locals 5
 
     .line 1
@@ -1081,7 +1099,7 @@
     throw p0
 .end method
 
-.method public static g(Ljava/lang/String;)J
+.method public static h(Ljava/lang/String;)J
     .locals 29
 
     .line 1
@@ -1103,7 +1121,7 @@
     const/4 v3, 0x4
 
     .line 9
-    invoke-static {v2, v3, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v2, v3, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
     .line 10
     .line 11
@@ -1134,7 +1152,7 @@
 
     .line 23
     :cond_0
-    const/4 v6, 0x4
+    move v6, v3
 
     .line 24
     :goto_0
@@ -1142,7 +1160,7 @@
 
     .line 25
     .line 26
-    invoke-static {v6, v7, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v6, v7, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
     .line 27
     .line 28
@@ -1171,7 +1189,7 @@
 
     .line 39
     .line 40
-    invoke-static {v7, v6, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v7, v6, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
     .line 41
     .line 42
@@ -1195,7 +1213,7 @@
 
     .line 51
     .line 52
-    const/16 v16, 0x4
+    move/from16 v16, v3
 
     .line 53
     .line 54
@@ -1308,7 +1326,7 @@
 
     .line 106
     .line 107
-    invoke-static {v0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {v0}, Li60;->p(Ljava/lang/String;)V
 
     .line 108
     .line 109
@@ -1334,7 +1352,7 @@
 
     .line 118
     .line 119
-    const/4 v2, 0x1
+    move v2, v14
 
     .line 120
     const/4 v11, 0x0
@@ -1356,7 +1374,7 @@
 
     .line 127
     :cond_6
-    invoke-static/range {v23 .. v23}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static/range {v23 .. v23}, Li60;->p(Ljava/lang/String;)V
 
     .line 128
     .line 129
@@ -1370,7 +1388,7 @@
 
     .line 132
     .line 133
-    const/16 v22, 0x1
+    move/from16 v22, v14
 
     .line 134
     .line 135
@@ -1383,7 +1401,7 @@
 
     .line 138
     .line 139
-    invoke-static {v2, v5, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v2, v5, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
     .line 140
     .line 141
@@ -1416,7 +1434,7 @@
 
     .line 154
     .line 155
-    invoke-static {v5, v6, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v5, v6, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
     .line 156
     .line 157
@@ -1503,7 +1521,7 @@
 
     .line 191
     :cond_c
-    invoke-static/range {v17 .. v17}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Li60;->p(Ljava/lang/String;)V
 
     .line 192
     .line 193
@@ -1551,7 +1569,7 @@
 
     .line 212
     :cond_e
-    invoke-static {v4, v8, v9}, Lio/sentry/vendor/a;->h(III)V
+    invoke-static {v4, v8, v9}, Lio/sentry/vendor/a;->i(III)V
 
     .line 213
     .line 214
@@ -1610,7 +1628,7 @@
 
     .line 235
     :cond_f
-    invoke-static {v15}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {v15}, Li60;->p(Ljava/lang/String;)V
 
     .line 236
     .line 237
@@ -1625,7 +1643,7 @@
     move v8, v9
 
     .line 241
-    invoke-static {v4, v6, v8}, Lio/sentry/vendor/a;->h(III)V
+    invoke-static {v4, v6, v8}, Lio/sentry/vendor/a;->i(III)V
 
     .line 242
     .line 243
@@ -1638,7 +1656,7 @@
 
     .line 247
     .line 248
-    invoke-static {v9, v10, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v9, v10, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
     .line 249
     .line 250
@@ -1667,7 +1685,7 @@
 
     .line 261
     .line 262
-    invoke-static {v10, v7, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v10, v7, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
     .line 263
     .line 264
@@ -1720,7 +1738,7 @@
 
     .line 287
     .line 288
-    invoke-static {v7, v10, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v7, v10, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
     .line 289
     .line 290
@@ -1740,585 +1758,584 @@
 
     .line 297
     .line 298
-    const/16 v12, 0x3b
+    move v12, v11
 
     .line 299
-    .line 300
     :cond_13
     const/16 v5, 0x2e
 
+    .line 300
     .line 301
-    .line 302
     invoke-static {v0, v10, v5}, Lio/sentry/vendor/a;->a(Ljava/lang/String;IC)Z
 
+    .line 302
     .line 303
     .line 304
-    .line 305
     move-result v5
 
-    .line 306
+    .line 305
     if-eqz v5, :cond_1a
 
+    .line 306
     .line 307
-    .line 308
     add-int/lit8 v5, v7, 0x3
 
+    .line 308
     .line 309
-    .line 310
     move v10, v5
 
-    .line 311
+    .line 310
     :goto_7
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
+    .line 311
     .line 312
     .line 313
-    .line 314
     move-result v2
 
-    .line 315
+    .line 314
     if-ge v10, v2, :cond_15
 
+    .line 315
     .line 316
-    .line 317
     invoke-virtual {v0, v10}, Ljava/lang/String;->charAt(I)C
 
+    .line 317
     .line 318
     .line 319
-    .line 320
     move-result v2
 
-    .line 321
+    .line 320
     const/16 v13, 0x30
 
+    .line 321
     .line 322
-    .line 323
     if-lt v2, v13, :cond_16
 
+    .line 323
     .line 324
-    .line 325
     const/16 v13, 0x39
 
+    .line 325
     .line 326
-    .line 327
     if-le v2, v13, :cond_14
 
+    .line 327
     .line 328
-    .line 329
     goto :goto_8
 
-    .line 330
+    .line 329
     :cond_14
     add-int/lit8 v10, v10, 0x1
 
+    .line 330
     .line 331
-    .line 332
     const/16 v13, 0x5a
 
+    .line 332
     .line 333
-    .line 334
     goto :goto_7
 
-    .line 335
+    .line 334
     :cond_15
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
+    .line 335
     .line 336
     .line 337
-    .line 338
     move-result v10
 
-    .line 339
+    .line 338
     :cond_16
     :goto_8
     if-eq v10, v5, :cond_19
 
+    .line 339
     .line 340
-    .line 341
     add-int/lit8 v7, v7, 0x6
 
+    .line 341
     .line 342
-    .line 343
     invoke-static {v10, v7}, Ljava/lang/Math;->min(II)I
 
+    .line 343
     .line 344
     .line 345
-    .line 346
     move-result v2
 
-    .line 347
-    invoke-static {v5, v2, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    .line 346
+    invoke-static {v5, v2, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
+    .line 347
     .line 348
     .line 349
-    .line 350
     move-result v7
 
-    .line 351
+    .line 350
     sub-int/2addr v2, v5
 
-    .line 352
+    .line 351
     if-eq v2, v14, :cond_18
 
+    .line 352
     .line 353
-    .line 354
     const/4 v5, 0x2
 
-    .line 355
+    .line 354
     if-eq v2, v5, :cond_17
 
+    .line 355
     .line 356
-    .line 357
     goto :goto_9
 
-    .line 358
+    .line 357
     :cond_17
     mul-int/lit8 v7, v7, 0xa
 
+    .line 358
     .line 359
-    .line 360
     goto :goto_9
 
-    .line 361
+    .line 360
     :cond_18
     mul-int/lit8 v7, v7, 0x64
 
+    .line 361
     .line 362
-    .line 363
     :goto_9
     move/from16 v28, v10
 
+    .line 363
     .line 364
-    .line 365
     move v10, v7
 
-    .line 366
+    .line 365
     move/from16 v7, v28
 
+    .line 366
     .line 367
-    .line 368
     goto :goto_a
 
-    .line 369
+    .line 368
     :cond_19
     const-string v0, "Missing millisecond digits"
 
+    .line 369
     .line 370
-    .line 371
-    invoke-static {v0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {v0}, Li60;->p(Ljava/lang/String;)V
 
+    .line 371
     .line 372
     .line 373
-    .line 374
     return-wide v24
 
-    .line 375
+    .line 374
     :cond_1a
     move v7, v10
 
-    .line 376
+    .line 375
     const/4 v10, 0x0
 
-    .line 377
+    .line 376
     goto :goto_a
 
-    .line 378
+    .line 377
     :cond_1b
     const/4 v10, 0x0
 
-    .line 379
+    .line 378
     const/4 v12, 0x0
 
-    .line 380
+    .line 379
     :goto_a
     if-ltz v9, :cond_28
 
+    .line 380
     .line 381
-    .line 382
     const/16 v2, 0x17
 
+    .line 382
     .line 383
-    .line 384
     if-gt v9, v2, :cond_28
 
+    .line 384
     .line 385
-    .line 386
     if-ltz v3, :cond_28
 
+    .line 386
     .line 387
-    .line 388
     if-gt v3, v11, :cond_28
 
+    .line 388
     .line 389
-    .line 390
     if-ltz v12, :cond_28
 
+    .line 390
     .line 391
-    .line 392
     if-gt v12, v11, :cond_28
 
+    .line 392
     .line 393
-    .line 394
     if-ltz v10, :cond_28
 
+    .line 394
     .line 395
-    .line 396
     const/16 v2, 0x3e7
 
+    .line 396
     .line 397
-    .line 398
     if-gt v10, v2, :cond_28
 
+    .line 398
     .line 399
-    .line 400
     if-le v1, v7, :cond_27
 
+    .line 400
     .line 401
-    .line 402
     invoke-virtual {v0, v7}, Ljava/lang/String;->charAt(I)C
 
+    .line 402
     .line 403
     .line 404
-    .line 405
     move-result v2
 
-    .line 406
+    .line 405
     const/16 v5, 0x5a
 
+    .line 406
     .line 407
-    .line 408
     if-ne v2, v5, :cond_1c
 
+    .line 408
     .line 409
-    .line 410
     add-int/2addr v7, v14
 
-    .line 411
+    .line 410
     move v5, v3
 
-    .line 412
-    const/4 v2, 0x1
+    .line 411
+    move v2, v14
 
-    .line 413
+    .line 412
     const/4 v11, 0x0
 
-    .line 414
+    .line 413
     goto :goto_d
 
-    .line 415
+    .line 414
     :cond_1c
     const/16 v5, 0x2b
 
+    .line 415
     .line 416
-    .line 417
     if-eq v2, v5, :cond_1e
 
+    .line 417
     .line 418
-    .line 419
     const/16 v13, 0x2d
 
+    .line 419
     .line 420
-    .line 421
     if-ne v2, v13, :cond_1d
 
+    .line 421
     .line 422
-    .line 423
     goto :goto_b
 
-    .line 424
+    .line 423
     :cond_1d
-    invoke-static/range {v23 .. v23}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static/range {v23 .. v23}, Li60;->p(Ljava/lang/String;)V
 
+    .line 424
     .line 425
     .line 426
-    .line 427
     return-wide v24
 
-    .line 428
+    .line 427
     :cond_1e
     :goto_b
     if-ne v2, v5, :cond_1f
 
+    .line 428
     .line 429
-    .line 430
-    const/16 v22, 0x1
+    move/from16 v22, v14
 
+    .line 430
     .line 431
-    .line 432
     :cond_1f
     add-int/lit8 v2, v7, 0x1
 
+    .line 432
     .line 433
-    .line 434
     add-int/lit8 v5, v7, 0x3
 
+    .line 434
     .line 435
-    .line 436
-    invoke-static {v2, v5, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v2, v5, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
+    .line 436
     .line 437
     .line 438
-    .line 439
     move-result v2
 
-    .line 440
+    .line 439
     const/16 v13, 0x3a
 
+    .line 440
     .line 441
-    .line 442
     invoke-static {v0, v5, v13}, Lio/sentry/vendor/a;->a(Ljava/lang/String;IC)Z
 
+    .line 442
     .line 443
     .line 444
-    .line 445
     move-result v13
 
-    .line 446
+    .line 445
     if-eqz v13, :cond_20
 
+    .line 446
     .line 447
-    .line 448
     add-int/lit8 v5, v7, 0x4
 
+    .line 448
     .line 449
-    .line 450
     :cond_20
     add-int/lit8 v7, v5, 0x2
 
+    .line 450
     .line 451
-    .line 452
     if-lt v1, v7, :cond_21
 
+    .line 452
     .line 453
-    .line 454
-    invoke-static {v5, v7, v0}, Lio/sentry/vendor/a;->f(IILjava/lang/String;)I
+    invoke-static {v5, v7, v0}, Lio/sentry/vendor/a;->g(IILjava/lang/String;)I
 
+    .line 454
     .line 455
     .line 456
-    .line 457
     move-result v0
 
-    .line 458
+    .line 457
     goto :goto_c
 
-    .line 459
+    .line 458
     :cond_21
     move v7, v5
 
-    .line 460
+    .line 459
     const/4 v0, 0x0
 
-    .line 461
+    .line 460
     :goto_c
     if-ltz v2, :cond_26
 
+    .line 461
     .line 462
-    .line 463
     const/16 v5, 0x17
 
+    .line 463
     .line 464
-    .line 465
     if-gt v2, v5, :cond_26
 
+    .line 465
     .line 466
-    .line 467
     if-ltz v0, :cond_26
 
+    .line 467
     .line 468
-    .line 469
     if-gt v0, v11, :cond_26
 
+    .line 469
     .line 470
-    .line 471
     int-to-long v13, v2
 
-    .line 472
+    .line 471
     mul-long v13, v13, v20
 
+    .line 472
     .line 473
-    .line 474
     move v5, v3
 
-    .line 475
+    .line 474
     int-to-long v2, v0
 
-    .line 476
+    .line 475
     mul-long v2, v2, v18
 
+    .line 476
     .line 477
-    .line 478
     add-long/2addr v2, v13
 
-    .line 479
+    .line 478
     long-to-int v0, v2
 
-    .line 480
+    .line 479
     mul-int v22, v22, v0
 
+    .line 480
     .line 481
-    .line 482
     move/from16 v11, v22
 
+    .line 482
     .line 483
-    .line 484
     const/4 v2, 0x0
 
-    .line 485
+    .line 484
     :goto_d
     if-nez v2, :cond_22
 
+    .line 485
     .line 486
-    .line 487
     if-ne v7, v1, :cond_23
 
+    .line 487
     .line 488
-    .line 489
     :cond_22
     const/16 v0, 0x62e
 
+    .line 489
     .line 490
-    .line 491
     goto :goto_e
 
-    .line 492
+    .line 491
     :cond_23
-    invoke-static/range {v17 .. v17}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Li60;->p(Ljava/lang/String;)V
 
+    .line 492
     .line 493
     .line 494
-    .line 495
     return-wide v24
 
-    .line 496
+    .line 495
     :goto_e
     if-lt v4, v0, :cond_24
 
+    .line 496
     .line 497
-    .line 498
     if-ne v4, v0, :cond_25
 
+    .line 498
     .line 499
-    .line 500
     const/16 v0, 0xa
 
+    .line 500
     .line 501
-    .line 502
     if-lt v6, v0, :cond_24
 
+    .line 502
     .line 503
-    .line 504
     if-ne v6, v0, :cond_25
 
+    .line 504
     .line 505
-    .line 506
     const/16 v0, 0xf
 
+    .line 506
     .line 507
-    .line 508
     if-ge v8, v0, :cond_25
 
+    .line 508
     .line 509
-    .line 510
     :cond_24
     move v7, v8
 
-    .line 511
+    .line 510
     move v8, v5
 
-    .line 512
+    .line 511
     move v5, v6
 
-    .line 513
+    .line 512
     move v6, v7
 
-    .line 514
+    .line 513
     move v7, v9
 
-    .line 515
+    .line 514
     move v9, v12
 
-    .line 516
+    .line 515
     goto :goto_f
 
-    .line 517
+    .line 516
     :cond_25
     move v7, v8
 
-    .line 518
+    .line 517
     move v8, v5
 
-    .line 519
+    .line 518
     move v5, v6
 
-    .line 520
+    .line 519
     move v6, v7
 
-    .line 521
+    .line 520
     move v7, v9
 
-    .line 522
+    .line 521
     move v9, v12
 
-    .line 523
+    .line 522
     invoke-static/range {v4 .. v11}, Lio/sentry/vendor/a;->c(IIIIIIII)J
 
+    .line 523
     .line 524
     .line 525
-    .line 526
     move-result-wide v0
 
-    .line 527
+    .line 526
     return-wide v0
 
-    .line 528
+    .line 527
     :goto_f
     invoke-static/range {v4 .. v11}, Lio/sentry/vendor/a;->d(IIIIIIII)J
 
+    .line 528
     .line 529
     .line 530
-    .line 531
     move-result-wide v0
 
-    .line 532
+    .line 531
     return-wide v0
 
-    .line 533
+    .line 532
     :cond_26
-    invoke-static {v15}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {v15}, Li60;->p(Ljava/lang/String;)V
 
+    .line 533
     .line 534
     .line 535
-    .line 536
     return-wide v24
 
-    .line 537
+    .line 536
     :cond_27
     const-string v0, "No time zone indicator"
 
+    .line 537
     .line 538
-    .line 539
-    invoke-static {v0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {v0}, Li60;->p(Ljava/lang/String;)V
 
+    .line 539
     .line 540
     .line 541
-    .line 542
     return-wide v24
 
-    .line 543
+    .line 542
     :cond_28
     const-string v0, "Invalid time"
 
+    .line 543
     .line 544
-    .line 545
-    invoke-static {v0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {v0}, Li60;->p(Ljava/lang/String;)V
 
+    .line 545
     .line 546
     .line 547
-    .line 548
     return-wide v24
 .end method
 
-.method public static h(III)V
+.method public static i(III)V
     .locals 2
 
     .line 1
@@ -2448,7 +2465,7 @@
 
     .line 56
     .line 57
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 58
     .line 59

@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/domain/routing/entity/StateCreateProfile$EmptyName;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lsu/happ/proxyutility/domain/routing/entity/StateCreateProfile;
@@ -88,13 +88,13 @@
 
 # virtual methods
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -112,18 +112,18 @@
 
     .line 5
     :cond_0
-    instance-of p1, p1, Lsu/happ/proxyutility/domain/routing/entity/StateCreateProfile$EmptyName;
+    instance-of p0, p1, Lsu/happ/proxyutility/domain/routing/entity/StateCreateProfile$EmptyName;
 
     .line 6
     .line 7
-    if-nez p1, :cond_1
+    if-nez p0, :cond_1
 
     .line 8
     .line 9
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 10
-    return p1
+    return p0
 
     .line 11
     :cond_1
@@ -131,26 +131,26 @@
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const v0, -0x5ac2439a
+    const p0, -0x5ac2439a
 
     .line 2
     .line 3
     .line 4
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "EmptyName"
+    const-string p0, "EmptyName"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
@@ -162,10 +162,10 @@
     .line 2
     .line 3
     .line 4
-    const/4 p2, 0x1
+    const/4 p0, 0x1
 
     .line 5
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 6
     .line 7

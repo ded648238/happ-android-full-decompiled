@@ -7,9 +7,9 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class a {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class a {
     public final MediaController a;
     public final Object b = new Object();
     public final ArrayList c = new ArrayList();
@@ -18,11 +18,11 @@ public class a {
 
     public a(Context context, MediaSessionCompat$Token mediaSessionCompat$Token) {
         this.e = mediaSessionCompat$Token;
-        MediaController mediaController = new MediaController(context, (MediaSession.Token) mediaSessionCompat$Token.Q);
+        MediaController mediaController = new MediaController(context, (MediaSession.Token) mediaSessionCompat$Token.X);
         this.a = mediaController;
-        if (mediaSessionCompat$Token.R == null) {
+        if (mediaSessionCompat$Token.Y == null) {
             MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver mediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver = new MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver(null);
-            mediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver.Q = new WeakReference(this);
+            mediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver.X = new WeakReference(this);
             mediaController.sendCommand("android.support.v4.media.session.command.GET_EXTRA_BINDER", null, mediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver);
         }
     }

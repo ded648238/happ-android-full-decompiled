@@ -1,55 +1,27 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class o85 {
-    public static int lb_action_bg = 2131232741;
-    public static int lb_action_bg_focused = 2131232742;
-    public static int lb_background = 2131232743;
-    public static int lb_card_foreground = 2131232744;
-    public static int lb_card_shadow_focused = 2131232745;
-    public static int lb_card_shadow_normal = 2131232746;
-    public static int lb_control_button_primary = 2131232747;
-    public static int lb_control_button_secondary = 2131232748;
-    public static int lb_headers_right_fading = 2131232749;
-    public static int lb_ic_actions_right_arrow = 2131232750;
-    public static int lb_ic_cc = 2131232751;
-    public static int lb_ic_fast_forward = 2131232752;
-    public static int lb_ic_fast_rewind = 2131232753;
-    public static int lb_ic_guidedactions_item_chevron = 2131232754;
-    public static int lb_ic_hq = 2131232755;
-    public static int lb_ic_in_app_search = 2131232756;
-    public static int lb_ic_loop = 2131232757;
-    public static int lb_ic_loop_one = 2131232758;
-    public static int lb_ic_more = 2131232759;
-    public static int lb_ic_nav_arrow = 2131232760;
-    public static int lb_ic_pause = 2131232761;
-    public static int lb_ic_pip = 2131232762;
-    public static int lb_ic_play = 2131232763;
-    public static int lb_ic_play_fit = 2131232764;
-    public static int lb_ic_playback_loop = 2131232765;
-    public static int lb_ic_replay = 2131232766;
-    public static int lb_ic_sad_cloud = 2131232767;
-    public static int lb_ic_search_mic = 2131232768;
-    public static int lb_ic_search_mic_out = 2131232769;
-    public static int lb_ic_shuffle = 2131232770;
-    public static int lb_ic_skip_next = 2131232771;
-    public static int lb_ic_skip_previous = 2131232772;
-    public static int lb_ic_stop = 2131232773;
-    public static int lb_ic_thumb_down = 2131232774;
-    public static int lb_ic_thumb_down_outline = 2131232775;
-    public static int lb_ic_thumb_up = 2131232776;
-    public static int lb_ic_thumb_up_outline = 2131232777;
-    public static int lb_in_app_search_bg = 2131232778;
-    public static int lb_in_app_search_shadow_focused = 2131232779;
-    public static int lb_in_app_search_shadow_normal = 2131232780;
-    public static int lb_onboarding_start_button_background = 2131232781;
-    public static int lb_playback_now_playing_bar = 2131232782;
-    public static int lb_playback_progress_bar = 2131232783;
-    public static int lb_search_orb = 2131232784;
-    public static int lb_selectable_item_rounded_rect = 2131232785;
-    public static int lb_speech_orb = 2131232786;
-    public static int lb_text_dot_one = 2131232787;
-    public static int lb_text_dot_one_small = 2131232788;
-    public static int lb_text_dot_two = 2131232789;
-    public static int lb_text_dot_two_small = 2131232790;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class o85 extends p85 {
+    public final float c;
+
+    public o85(float f) {
+        super(3);
+        this.c = f;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof o85) && Float.compare(this.c, ((o85) obj).c) == 0;
+    }
+
+    public final int hashCode() {
+        return Float.hashCode(this.c);
+    }
+
+    public final String toString() {
+        return "VerticalTo(y=" + this.c + ")";
+    }
 }

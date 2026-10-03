@@ -1,6 +1,6 @@
 .class public final Lj$/time/format/c;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lj$/time/format/e;
@@ -29,27 +29,85 @@
 
 
 # virtual methods
-.method public final g(Lj$/time/format/q;Ljava/lang/StringBuilder;)Z
+.method public final t(Lj$/time/format/q;Ljava/lang/StringBuilder;)Z
     .locals 0
 
     .line 1
-    iget-char p1, p0, Lj$/time/format/c;->a:C
+    iget-char p0, p0, Lj$/time/format/c;->a:C
 
     .line 2
     .line 3
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 4
     .line 5
     .line 6
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 7
-    return p1
+    return p0
 .end method
 
-.method public final h(Lj$/time/format/o;Ljava/lang/CharSequence;I)I
+.method public final toString()Ljava/lang/String;
     .locals 2
+
+    .line 1
+    const/16 v0, 0x27
+
+    .line 2
+    .line 3
+    iget-char p0, p0, Lj$/time/format/c;->a:C
+
+    .line 4
+    .line 5
+    if-ne p0, v0, :cond_0
+
+    .line 6
+    .line 7
+    const-string p0, "\'\'"
+
+    .line 8
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    const-string v1, "\'"
+
+    .line 13
+    .line 14
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p0
+
+    .line 27
+    return-object p0
+.end method
+
+.method public final x(Lj$/time/format/o;Ljava/lang/CharSequence;I)I
+    .locals 1
 
     .line 1
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
@@ -64,10 +122,10 @@
 
     .line 6
     .line 7
-    not-int p1, p3
+    not-int p0, p3
 
     .line 8
-    return p1
+    return p0
 
     .line 9
     :cond_0
@@ -79,11 +137,11 @@
     move-result p2
 
     .line 13
-    iget-char v0, p0, Lj$/time/format/c;->a:C
+    iget-char p0, p0, Lj$/time/format/c;->a:C
 
     .line 14
     .line 15
-    if-eq p2, v0, :cond_2
+    if-eq p2, p0, :cond_2
 
     .line 16
     .line 17
@@ -103,15 +161,15 @@
     move-result p1
 
     .line 25
-    invoke-static {v0}, Ljava/lang/Character;->toUpperCase(C)C
+    invoke-static {p0}, Ljava/lang/Character;->toUpperCase(C)C
 
     .line 26
     .line 27
     .line 28
-    move-result v1
+    move-result v0
 
     .line 29
-    if-eq p1, v1, :cond_2
+    if-eq p1, v0, :cond_2
 
     .line 30
     .line 31
@@ -123,23 +181,23 @@
     move-result p1
 
     .line 35
-    invoke-static {v0}, Ljava/lang/Character;->toLowerCase(C)C
+    invoke-static {p0}, Ljava/lang/Character;->toLowerCase(C)C
 
     .line 36
     .line 37
     .line 38
-    move-result p2
+    move-result p0
 
     .line 39
-    if-eq p1, p2, :cond_2
+    if-eq p1, p0, :cond_2
 
     .line 40
     .line 41
     :cond_1
-    not-int p1, p3
+    not-int p0, p3
 
     .line 42
-    return p1
+    return p0
 
     .line 43
     :cond_2
@@ -148,62 +206,4 @@
     .line 44
     .line 45
     return p3
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    const/16 v0, 0x27
-
-    .line 2
-    .line 3
-    iget-char v1, p0, Lj$/time/format/c;->a:C
-
-    .line 4
-    .line 5
-    if-ne v1, v0, :cond_0
-
-    .line 6
-    .line 7
-    const-string v0, "\'\'"
-
-    .line 8
-    .line 9
-    return-object v0
-
-    .line 10
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    const-string v2, "\'"
-
-    .line 13
-    .line 14
-    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v0
-
-    .line 27
-    return-object v0
 .end method

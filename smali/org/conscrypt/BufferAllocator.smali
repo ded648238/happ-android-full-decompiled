@@ -1,6 +1,6 @@
 .class public abstract Lorg/conscrypt/BufferAllocator;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -56,5 +56,22 @@
 .method public abstract allocateDirectBuffer(I)Lorg/conscrypt/AllocatedBuffer;
 .end method
 
-.method public abstract allocateHeapBuffer(I)Lorg/conscrypt/AllocatedBuffer;
+.method public allocateHeapBuffer(I)Lorg/conscrypt/AllocatedBuffer;
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string p1, "Heap buffer allocation is not supported"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
 .end method

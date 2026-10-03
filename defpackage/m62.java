@@ -1,15 +1,33 @@
 package defpackage;
 
-import java.util.LinkedHashMap;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import java.util.Iterator;
+import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class m62 {
-    public static final m62 a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class m62 extends BroadcastReceiver {
+    public static final AtomicReference b = new AtomicReference();
+    public final Context a;
 
-    static {
-        m62 m62Var = new m62();
-        new LinkedHashMap();
-        a = m62Var;
+    public m62(Context context) {
+        this.a = context;
+    }
+
+    @Override // android.content.BroadcastReceiver
+    public final void onReceive(Context context, Intent intent) {
+        synchronized (n62.j) {
+            try {
+                Iterator it = ((ys) n62.k.values()).iterator();
+                while (it.hasNext()) {
+                    ((n62) it.next()).d();
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+        this.a.unregisterReceiver(this);
     }
 }

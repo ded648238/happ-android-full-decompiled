@@ -1,19 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum ti5 {
-    IGNORE("ignore"),
-    WARN("warn"),
-    STRICT("strict");
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ti5 extends ze0 {
+    public final /* synthetic */ sb0 a;
+    public final /* synthetic */ yg0 b;
 
-    public final String Q;
-
-    ti5(String str) {
-        this.Q = str;
+    public ti5(sb0 sb0Var, yg0 yg0Var) {
+        this.a = sb0Var;
+        this.b = yg0Var;
     }
 
-    public final boolean a() {
-        return this == WARN;
+    @Override // defpackage.ze0
+    public final void b(int i, ff0 ff0Var) {
+        this.a.b(null);
+        ((bh0) this.b).z(this);
     }
 }

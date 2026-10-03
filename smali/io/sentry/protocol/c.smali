@@ -1,35 +1,35 @@
 .class public final Lio/sentry/protocol/c;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # instance fields
-.field public Q:Ljava/lang/Long;
-
-.field public R:Ljava/lang/Double;
-
-.field public S:Ljava/lang/Long;
-
-.field public T:Ljava/lang/Double;
-
-.field public U:Ljava/lang/Long;
-
-.field public V:Ljava/lang/Double;
-
-.field public W:Ljava/lang/Long;
-
 .field public X:Ljava/lang/Long;
 
-.field public Y:Ljava/lang/Long;
+.field public Y:Ljava/lang/Double;
 
 .field public Z:Ljava/lang/Long;
 
-.field public a0:Ljava/lang/Long;
+.field public c0:Ljava/lang/Double;
 
-.field public b0:Lj$/util/concurrent/ConcurrentHashMap;
+.field public d0:Ljava/lang/Long;
+
+.field public e0:Ljava/lang/Double;
+
+.field public f0:Ljava/lang/Long;
+
+.field public g0:Ljava/lang/Long;
+
+.field public h0:Ljava/lang/Long;
+
+.field public i0:Ljava/lang/Long;
+
+.field public j0:Ljava/lang/Long;
+
+.field public k0:Ljava/util/concurrent/ConcurrentHashMap;
 
 
 # virtual methods
@@ -79,15 +79,15 @@
 
     .line 18
     .line 19
-    iget-object v2, p0, Lio/sentry/protocol/c;->Q:Ljava/lang/Long;
+    iget-object v2, p0, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
 
     .line 20
     .line 21
-    iget-object v3, p1, Lio/sentry/protocol/c;->Q:Ljava/lang/Long;
+    iget-object v3, p1, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
 
     .line 22
     .line 23
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 24
     .line 25
@@ -99,15 +99,15 @@
 
     .line 28
     .line 29
-    iget-object v2, p0, Lio/sentry/protocol/c;->R:Ljava/lang/Double;
+    iget-object v2, p0, Lio/sentry/protocol/c;->Y:Ljava/lang/Double;
 
     .line 30
     .line 31
-    iget-object v3, p1, Lio/sentry/protocol/c;->R:Ljava/lang/Double;
+    iget-object v3, p1, Lio/sentry/protocol/c;->Y:Ljava/lang/Double;
 
     .line 32
     .line 33
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 34
     .line 35
@@ -119,15 +119,15 @@
 
     .line 38
     .line 39
-    iget-object v2, p0, Lio/sentry/protocol/c;->S:Ljava/lang/Long;
+    iget-object v2, p0, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
 
     .line 40
     .line 41
-    iget-object v3, p1, Lio/sentry/protocol/c;->S:Ljava/lang/Long;
+    iget-object v3, p1, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
 
     .line 42
     .line 43
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 44
     .line 45
@@ -139,15 +139,15 @@
 
     .line 48
     .line 49
-    iget-object v2, p0, Lio/sentry/protocol/c;->T:Ljava/lang/Double;
+    iget-object v2, p0, Lio/sentry/protocol/c;->c0:Ljava/lang/Double;
 
     .line 50
     .line 51
-    iget-object v3, p1, Lio/sentry/protocol/c;->T:Ljava/lang/Double;
+    iget-object v3, p1, Lio/sentry/protocol/c;->c0:Ljava/lang/Double;
 
     .line 52
     .line 53
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 54
     .line 55
@@ -159,15 +159,15 @@
 
     .line 58
     .line 59
-    iget-object v2, p0, Lio/sentry/protocol/c;->U:Ljava/lang/Long;
+    iget-object v2, p0, Lio/sentry/protocol/c;->d0:Ljava/lang/Long;
 
     .line 60
     .line 61
-    iget-object v3, p1, Lio/sentry/protocol/c;->U:Ljava/lang/Long;
+    iget-object v3, p1, Lio/sentry/protocol/c;->d0:Ljava/lang/Long;
 
     .line 62
     .line 63
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 64
     .line 65
@@ -179,15 +179,15 @@
 
     .line 68
     .line 69
-    iget-object v2, p0, Lio/sentry/protocol/c;->V:Ljava/lang/Double;
+    iget-object v2, p0, Lio/sentry/protocol/c;->e0:Ljava/lang/Double;
 
     .line 70
     .line 71
-    iget-object v3, p1, Lio/sentry/protocol/c;->V:Ljava/lang/Double;
+    iget-object v3, p1, Lio/sentry/protocol/c;->e0:Ljava/lang/Double;
 
     .line 72
     .line 73
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 74
     .line 75
@@ -199,15 +199,15 @@
 
     .line 78
     .line 79
-    iget-object v2, p0, Lio/sentry/protocol/c;->W:Ljava/lang/Long;
+    iget-object v2, p0, Lio/sentry/protocol/c;->f0:Ljava/lang/Long;
 
     .line 80
     .line 81
-    iget-object v3, p1, Lio/sentry/protocol/c;->W:Ljava/lang/Long;
+    iget-object v3, p1, Lio/sentry/protocol/c;->f0:Ljava/lang/Long;
 
     .line 82
     .line 83
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 84
     .line 85
@@ -219,15 +219,15 @@
 
     .line 88
     .line 89
-    iget-object v2, p0, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
+    iget-object v2, p0, Lio/sentry/protocol/c;->g0:Ljava/lang/Long;
 
     .line 90
     .line 91
-    iget-object v3, p1, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
+    iget-object v3, p1, Lio/sentry/protocol/c;->g0:Ljava/lang/Long;
 
     .line 92
     .line 93
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 94
     .line 95
@@ -239,15 +239,15 @@
 
     .line 98
     .line 99
-    iget-object v2, p0, Lio/sentry/protocol/c;->Y:Ljava/lang/Long;
+    iget-object v2, p0, Lio/sentry/protocol/c;->h0:Ljava/lang/Long;
 
     .line 100
     .line 101
-    iget-object v3, p1, Lio/sentry/protocol/c;->Y:Ljava/lang/Long;
+    iget-object v3, p1, Lio/sentry/protocol/c;->h0:Ljava/lang/Long;
 
     .line 102
     .line 103
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 104
     .line 105
@@ -259,15 +259,15 @@
 
     .line 108
     .line 109
-    iget-object v2, p0, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
+    iget-object v2, p0, Lio/sentry/protocol/c;->i0:Ljava/lang/Long;
 
     .line 110
     .line 111
-    iget-object v3, p1, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
+    iget-object v3, p1, Lio/sentry/protocol/c;->i0:Ljava/lang/Long;
 
     .line 112
     .line 113
-    invoke-static {v2, v3}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 114
     .line 115
@@ -279,23 +279,23 @@
 
     .line 118
     .line 119
-    iget-object v2, p0, Lio/sentry/protocol/c;->a0:Ljava/lang/Long;
+    iget-object p0, p0, Lio/sentry/protocol/c;->j0:Ljava/lang/Long;
 
     .line 120
     .line 121
-    iget-object p1, p1, Lio/sentry/protocol/c;->a0:Ljava/lang/Long;
+    iget-object p1, p1, Lio/sentry/protocol/c;->j0:Ljava/lang/Long;
 
     .line 122
     .line 123
-    invoke-static {v2, p1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 124
     .line 125
     .line 126
-    move-result p1
+    move-result p0
 
     .line 127
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 128
     .line 129
@@ -308,153 +308,73 @@
 .end method
 
 .method public final hashCode()I
-    .locals 13
+    .locals 11
 
     .line 1
-    iget-object v0, p0, Lio/sentry/protocol/c;->Q:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/sentry/protocol/c;->R:Ljava/lang/Double;
+    iget-object v1, p0, Lio/sentry/protocol/c;->Y:Ljava/lang/Double;
 
     .line 4
     .line 5
-    iget-object v2, p0, Lio/sentry/protocol/c;->S:Ljava/lang/Long;
+    iget-object v2, p0, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
 
     .line 6
     .line 7
-    iget-object v3, p0, Lio/sentry/protocol/c;->T:Ljava/lang/Double;
+    iget-object v3, p0, Lio/sentry/protocol/c;->c0:Ljava/lang/Double;
 
     .line 8
     .line 9
-    iget-object v4, p0, Lio/sentry/protocol/c;->U:Ljava/lang/Long;
+    iget-object v4, p0, Lio/sentry/protocol/c;->d0:Ljava/lang/Long;
 
     .line 10
     .line 11
-    iget-object v5, p0, Lio/sentry/protocol/c;->V:Ljava/lang/Double;
+    iget-object v5, p0, Lio/sentry/protocol/c;->e0:Ljava/lang/Double;
 
     .line 12
     .line 13
-    iget-object v6, p0, Lio/sentry/protocol/c;->W:Ljava/lang/Long;
+    iget-object v6, p0, Lio/sentry/protocol/c;->f0:Ljava/lang/Long;
 
     .line 14
     .line 15
-    iget-object v7, p0, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
+    iget-object v7, p0, Lio/sentry/protocol/c;->g0:Ljava/lang/Long;
 
     .line 16
     .line 17
-    iget-object v8, p0, Lio/sentry/protocol/c;->Y:Ljava/lang/Long;
+    iget-object v8, p0, Lio/sentry/protocol/c;->h0:Ljava/lang/Long;
 
     .line 18
     .line 19
-    iget-object v9, p0, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
+    iget-object v9, p0, Lio/sentry/protocol/c;->i0:Ljava/lang/Long;
 
     .line 20
     .line 21
-    iget-object v10, p0, Lio/sentry/protocol/c;->a0:Ljava/lang/Long;
+    iget-object v10, p0, Lio/sentry/protocol/c;->j0:Ljava/lang/Long;
 
     .line 22
     .line 23
-    const/16 v11, 0xb
+    filled-new-array/range {v0 .. v10}, [Ljava/lang/Object;
 
     .line 24
     .line 25
-    new-array v11, v11, [Ljava/lang/Object;
-
     .line 26
+    move-result-object p0
+
     .line 27
-    const/4 v12, 0x0
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     .line 28
-    aput-object v0, v11, v12
-
     .line 29
     .line 30
-    const/4 v0, 0x1
+    move-result p0
 
     .line 31
-    aput-object v1, v11, v0
-
-    .line 32
-    .line 33
-    const/4 v0, 0x2
-
-    .line 34
-    aput-object v2, v11, v0
-
-    .line 35
-    .line 36
-    const/4 v0, 0x3
-
-    .line 37
-    aput-object v3, v11, v0
-
-    .line 38
-    .line 39
-    const/4 v0, 0x4
-
-    .line 40
-    aput-object v4, v11, v0
-
-    .line 41
-    .line 42
-    const/4 v0, 0x5
-
-    .line 43
-    aput-object v5, v11, v0
-
-    .line 44
-    .line 45
-    const/4 v0, 0x6
-
-    .line 46
-    aput-object v6, v11, v0
-
-    .line 47
-    .line 48
-    const/4 v0, 0x7
-
-    .line 49
-    aput-object v7, v11, v0
-
-    .line 50
-    .line 51
-    const/16 v0, 0x8
-
-    .line 52
-    .line 53
-    aput-object v8, v11, v0
-
-    .line 54
-    .line 55
-    const/16 v0, 0x9
-
-    .line 56
-    .line 57
-    aput-object v9, v11, v0
-
-    .line 58
-    .line 59
-    const/16 v0, 0xa
-
-    .line 60
-    .line 61
-    aput-object v10, v11, v0
-
-    .line 62
-    .line 63
-    invoke-static {v11}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 64
-    .line 65
-    .line 66
-    move-result v0
-
-    .line 67
-    return v0
+    return p0
 .end method
 
-.method public final serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 3
 
     .line 1
@@ -467,7 +387,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lio/sentry/protocol/c;->Q:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
 
     .line 7
     .line 8
@@ -484,7 +404,7 @@
     .line 13
     .line 14
     .line 15
-    iget-object v0, p0, Lio/sentry/protocol/c;->Q:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
 
     .line 16
     .line 17
@@ -494,7 +414,7 @@
     .line 19
     .line 20
     :cond_0
-    iget-object v0, p0, Lio/sentry/protocol/c;->R:Ljava/lang/Double;
+    iget-object v0, p0, Lio/sentry/protocol/c;->Y:Ljava/lang/Double;
 
     .line 21
     .line 22
@@ -511,7 +431,7 @@
     .line 27
     .line 28
     .line 29
-    iget-object v0, p0, Lio/sentry/protocol/c;->R:Ljava/lang/Double;
+    iget-object v0, p0, Lio/sentry/protocol/c;->Y:Ljava/lang/Double;
 
     .line 30
     .line 31
@@ -521,7 +441,7 @@
     .line 33
     .line 34
     :cond_1
-    iget-object v0, p0, Lio/sentry/protocol/c;->S:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
 
     .line 35
     .line 36
@@ -538,7 +458,7 @@
     .line 41
     .line 42
     .line 43
-    iget-object v0, p0, Lio/sentry/protocol/c;->S:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
 
     .line 44
     .line 45
@@ -548,7 +468,7 @@
     .line 47
     .line 48
     :cond_2
-    iget-object v0, p0, Lio/sentry/protocol/c;->T:Ljava/lang/Double;
+    iget-object v0, p0, Lio/sentry/protocol/c;->c0:Ljava/lang/Double;
 
     .line 49
     .line 50
@@ -565,7 +485,7 @@
     .line 55
     .line 56
     .line 57
-    iget-object v0, p0, Lio/sentry/protocol/c;->T:Ljava/lang/Double;
+    iget-object v0, p0, Lio/sentry/protocol/c;->c0:Ljava/lang/Double;
 
     .line 58
     .line 59
@@ -575,7 +495,7 @@
     .line 61
     .line 62
     :cond_3
-    iget-object v0, p0, Lio/sentry/protocol/c;->U:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->d0:Ljava/lang/Long;
 
     .line 63
     .line 64
@@ -592,7 +512,7 @@
     .line 69
     .line 70
     .line 71
-    iget-object v0, p0, Lio/sentry/protocol/c;->U:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->d0:Ljava/lang/Long;
 
     .line 72
     .line 73
@@ -602,7 +522,7 @@
     .line 75
     .line 76
     :cond_4
-    iget-object v0, p0, Lio/sentry/protocol/c;->V:Ljava/lang/Double;
+    iget-object v0, p0, Lio/sentry/protocol/c;->e0:Ljava/lang/Double;
 
     .line 77
     .line 78
@@ -619,7 +539,7 @@
     .line 83
     .line 84
     .line 85
-    iget-object v0, p0, Lio/sentry/protocol/c;->V:Ljava/lang/Double;
+    iget-object v0, p0, Lio/sentry/protocol/c;->e0:Ljava/lang/Double;
 
     .line 86
     .line 87
@@ -629,7 +549,7 @@
     .line 89
     .line 90
     :cond_5
-    iget-object v0, p0, Lio/sentry/protocol/c;->W:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->f0:Ljava/lang/Long;
 
     .line 91
     .line 92
@@ -646,7 +566,7 @@
     .line 97
     .line 98
     .line 99
-    iget-object v0, p0, Lio/sentry/protocol/c;->W:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->f0:Ljava/lang/Long;
 
     .line 100
     .line 101
@@ -656,7 +576,7 @@
     .line 103
     .line 104
     :cond_6
-    iget-object v0, p0, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->g0:Ljava/lang/Long;
 
     .line 105
     .line 106
@@ -673,7 +593,7 @@
     .line 111
     .line 112
     .line 113
-    iget-object v0, p0, Lio/sentry/protocol/c;->X:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->g0:Ljava/lang/Long;
 
     .line 114
     .line 115
@@ -683,7 +603,7 @@
     .line 117
     .line 118
     :cond_7
-    iget-object v0, p0, Lio/sentry/protocol/c;->Y:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->h0:Ljava/lang/Long;
 
     .line 119
     .line 120
@@ -700,7 +620,7 @@
     .line 125
     .line 126
     .line 127
-    iget-object v0, p0, Lio/sentry/protocol/c;->Y:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->h0:Ljava/lang/Long;
 
     .line 128
     .line 129
@@ -710,7 +630,7 @@
     .line 131
     .line 132
     :cond_8
-    iget-object v0, p0, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->i0:Ljava/lang/Long;
 
     .line 133
     .line 134
@@ -727,7 +647,7 @@
     .line 139
     .line 140
     .line 141
-    iget-object v0, p0, Lio/sentry/protocol/c;->Z:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->i0:Ljava/lang/Long;
 
     .line 142
     .line 143
@@ -737,7 +657,7 @@
     .line 145
     .line 146
     :cond_9
-    iget-object v0, p0, Lio/sentry/protocol/c;->a0:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->j0:Ljava/lang/Long;
 
     .line 147
     .line 148
@@ -754,7 +674,7 @@
     .line 153
     .line 154
     .line 155
-    iget-object v0, p0, Lio/sentry/protocol/c;->a0:Ljava/lang/Long;
+    iget-object v0, p0, Lio/sentry/protocol/c;->j0:Ljava/lang/Long;
 
     .line 156
     .line 157
@@ -764,7 +684,7 @@
     .line 159
     .line 160
     :cond_a
-    iget-object v0, p0, Lio/sentry/protocol/c;->b0:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/protocol/c;->k0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 161
     .line 162
@@ -813,11 +733,11 @@
 
     .line 183
     .line 184
-    iget-object v2, p0, Lio/sentry/protocol/c;->b0:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v2, p0, Lio/sentry/protocol/c;->k0:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 185
     .line 186
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->c(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 187
     .line 188

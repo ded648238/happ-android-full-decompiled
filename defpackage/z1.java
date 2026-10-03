@@ -1,38 +1,54 @@
 package defpackage;
 
-import java.util.AbstractMap;
-import java.util.Collection;
-import java.util.Map;
-import java.util.Set;
+import java.io.ByteArrayInputStream;
+import java.io.FilterInputStream;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class z1 extends AbstractMap implements Map, u73 {
-    public abstract Set a();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class z1 extends FilterInputStream {
+    public int X;
 
-    public abstract /* bridge */ Set b();
-
-    public abstract /* bridge */ int c();
-
-    public abstract /* bridge */ Collection e();
-
-    @Override // java.util.AbstractMap, java.util.Map
-    public final /* bridge */ Set entrySet() {
-        return a();
+    public z1(ByteArrayInputStream byteArrayInputStream, int i) {
+        super(byteArrayInputStream);
+        this.X = i;
     }
 
-    @Override // java.util.AbstractMap, java.util.Map
-    public final /* bridge */ Set keySet() {
-        return b();
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public final int available() {
+        return Math.min(super.available(), this.X);
     }
 
-    @Override // java.util.AbstractMap, java.util.Map
-    public final /* bridge */ int size() {
-        return c();
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public final int read(byte[] bArr, int i, int i2) {
+        int i3 = this.X;
+        if (i3 <= 0) {
+            return -1;
+        }
+        int read = super.read(bArr, i, Math.min(i2, i3));
+        if (read >= 0) {
+            this.X -= read;
+        }
+        return read;
     }
 
-    @Override // java.util.AbstractMap, java.util.Map
-    public final /* bridge */ Collection values() {
-        return e();
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public final long skip(long j) {
+        long skip = super.skip(Math.min(j, this.X));
+        if (skip >= 0) {
+            this.X = (int) (this.X - skip);
+        }
+        return skip;
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public final int read() {
+        if (this.X <= 0) {
+            return -1;
+        }
+        int read = super.read();
+        if (read >= 0) {
+            this.X--;
+        }
+        return read;
     }
 }

@@ -17,7 +17,7 @@
                     <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:layout_width="match_parent" android:layout_height="1.0dp" />
                     <su.happ.proxyutility.ui.foundation.component.HappInputField android:id="@id/if_socks_password" android:layout_width="match_parent" android:layout_height="wrap_content" app:copyOnShortClick="true" app:title="@string/inbound_authorization_password" />
                 </LinearLayout>
-                <su.happ.proxyutility.ui.foundation.component.HappSettingsDescription android:id="@id/socks_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/activity_horizontal_margin" />
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDescription android:id="@id/socks_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginHorizontal="@dimen/activity_horizontal_margin" />
                 <Space android:layout_width="0.0dp" android:layout_height="24.0dp" />
                 <LinearLayout android:orientation="vertical" android:id="@id/ll_http" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_http" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/inbound_authorization_http_title" android:layout_marginStart="@dimen/activity_horizontal_margin" />
@@ -33,7 +33,7 @@
                         <su.happ.proxyutility.ui.foundation.component.HappInputField android:id="@id/if_http_password" android:layout_width="match_parent" android:layout_height="wrap_content" app:copyOnShortClick="true" app:title="@string/inbound_authorization_password" />
                     </LinearLayout>
                 </LinearLayout>
-                <su.happ.proxyutility.ui.foundation.component.HappSettingsDescription android:id="@id/http_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/activity_horizontal_margin" />
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDescription android:id="@id/http_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginHorizontal="@dimen/activity_horizontal_margin" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

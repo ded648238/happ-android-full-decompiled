@@ -1,200 +1,223 @@
-.class public abstract Lm85;
-.super Ljava/lang/Object;
+.class public final Lm85;
+.super Lp85;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static abc_action_bar_content_inset_material:I = 0x7f070000
+# instance fields
+.field public final c:F
 
-.field public static abc_action_bar_content_inset_with_nav:I = 0x7f070001
+.field public final d:F
 
-.field public static abc_action_bar_default_height_material:I = 0x7f070002
 
-.field public static abc_action_bar_default_padding_end_material:I = 0x7f070003
+# direct methods
+.method public constructor <init>(FF)V
+    .locals 1
 
-.field public static abc_action_bar_default_padding_start_material:I = 0x7f070004
+    .line 1
+    const/4 v0, 0x1
 
-.field public static abc_action_bar_elevation_material:I = 0x7f070005
+    .line 2
+    invoke-direct {p0, v0}, Lp85;-><init>(I)V
 
-.field public static abc_action_bar_icon_vertical_padding_material:I = 0x7f070006
+    .line 3
+    .line 4
+    .line 5
+    iput p1, p0, Lm85;->c:F
 
-.field public static abc_action_bar_overflow_padding_end_material:I = 0x7f070007
+    .line 6
+    .line 7
+    iput p2, p0, Lm85;->d:F
 
-.field public static abc_action_bar_overflow_padding_start_material:I = 0x7f070008
+    .line 8
+    .line 9
+    return-void
+.end method
 
-.field public static abc_action_bar_stacked_max_height:I = 0x7f070009
 
-.field public static abc_action_bar_stacked_tab_max_width:I = 0x7f07000a
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-.field public static abc_action_bar_subtitle_bottom_margin_material:I = 0x7f07000b
+    .line 1
+    const/4 v0, 0x1
 
-.field public static abc_action_bar_subtitle_top_margin_material:I = 0x7f07000c
+    .line 2
+    if-ne p0, p1, :cond_0
 
-.field public static abc_action_button_min_height_material:I = 0x7f07000d
+    .line 3
+    .line 4
+    return v0
 
-.field public static abc_action_button_min_width_material:I = 0x7f07000e
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lm85;
 
-.field public static abc_action_button_min_width_overflow_material:I = 0x7f07000f
+    .line 6
+    .line 7
+    const/4 v2, 0x0
 
-.field public static abc_alert_dialog_button_bar_height:I = 0x7f070010
+    .line 8
+    if-nez v1, :cond_1
 
-.field public static abc_alert_dialog_button_dimen:I = 0x7f070011
+    .line 9
+    .line 10
+    return v2
 
-.field public static abc_button_inset_horizontal_material:I = 0x7f070012
+    .line 11
+    :cond_1
+    check-cast p1, Lm85;
 
-.field public static abc_button_inset_vertical_material:I = 0x7f070013
+    .line 12
+    .line 13
+    iget v1, p0, Lm85;->c:F
 
-.field public static abc_button_padding_horizontal_material:I = 0x7f070014
+    .line 14
+    .line 15
+    iget v3, p1, Lm85;->c:F
 
-.field public static abc_button_padding_vertical_material:I = 0x7f070015
+    .line 16
+    .line 17
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
-.field public static abc_cascading_menus_min_smallest_width:I = 0x7f070016
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
 
-.field public static abc_config_prefDialogWidth:I = 0x7f070017
+    .line 21
+    if-eqz v1, :cond_2
 
-.field public static abc_control_corner_material:I = 0x7f070018
+    .line 22
+    .line 23
+    return v2
 
-.field public static abc_control_inset_material:I = 0x7f070019
+    .line 24
+    :cond_2
+    iget p0, p0, Lm85;->d:F
 
-.field public static abc_control_padding_material:I = 0x7f07001a
+    .line 25
+    .line 26
+    iget p1, p1, Lm85;->d:F
 
-.field public static abc_dialog_corner_radius_material:I = 0x7f07001b
+    .line 27
+    .line 28
+    invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
 
-.field public static abc_dialog_fixed_height_major:I = 0x7f07001c
+    .line 29
+    .line 30
+    .line 31
+    move-result p0
+
+    .line 32
+    if-eqz p0, :cond_3
 
-.field public static abc_dialog_fixed_height_minor:I = 0x7f07001d
+    .line 33
+    .line 34
+    return v2
 
-.field public static abc_dialog_fixed_width_major:I = 0x7f07001e
-
-.field public static abc_dialog_fixed_width_minor:I = 0x7f07001f
-
-.field public static abc_dialog_list_padding_bottom_no_buttons:I = 0x7f070020
-
-.field public static abc_dialog_list_padding_top_no_title:I = 0x7f070021
-
-.field public static abc_dialog_min_width_major:I = 0x7f070022
-
-.field public static abc_dialog_min_width_minor:I = 0x7f070023
-
-.field public static abc_dialog_padding_material:I = 0x7f070024
-
-.field public static abc_dialog_padding_top_material:I = 0x7f070025
-
-.field public static abc_dialog_title_divider_material:I = 0x7f070026
-
-.field public static abc_disabled_alpha_material_dark:I = 0x7f070027
-
-.field public static abc_disabled_alpha_material_light:I = 0x7f070028
-
-.field public static abc_dropdownitem_icon_width:I = 0x7f070029
-
-.field public static abc_dropdownitem_text_padding_left:I = 0x7f07002a
-
-.field public static abc_dropdownitem_text_padding_right:I = 0x7f07002b
-
-.field public static abc_edit_text_inset_bottom_material:I = 0x7f07002c
-
-.field public static abc_edit_text_inset_horizontal_material:I = 0x7f07002d
-
-.field public static abc_edit_text_inset_top_material:I = 0x7f07002e
-
-.field public static abc_floating_window_z:I = 0x7f07002f
-
-.field public static abc_list_item_height_large_material:I = 0x7f070030
-
-.field public static abc_list_item_height_material:I = 0x7f070031
-
-.field public static abc_list_item_height_small_material:I = 0x7f070032
-
-.field public static abc_list_item_padding_horizontal_material:I = 0x7f070033
-
-.field public static abc_panel_menu_list_width:I = 0x7f070034
-
-.field public static abc_progress_bar_height_material:I = 0x7f070035
-
-.field public static abc_search_view_preferred_height:I = 0x7f070036
-
-.field public static abc_search_view_preferred_width:I = 0x7f070037
-
-.field public static abc_seekbar_track_background_height_material:I = 0x7f070038
-
-.field public static abc_seekbar_track_progress_height_material:I = 0x7f070039
-
-.field public static abc_select_dialog_padding_start_material:I = 0x7f07003a
-
-.field public static abc_star_big:I = 0x7f07003b
-
-.field public static abc_star_medium:I = 0x7f07003c
-
-.field public static abc_star_small:I = 0x7f07003d
-
-.field public static abc_switch_padding:I = 0x7f07003e
-
-.field public static abc_text_size_body_1_material:I = 0x7f07003f
-
-.field public static abc_text_size_body_2_material:I = 0x7f070040
-
-.field public static abc_text_size_button_material:I = 0x7f070041
-
-.field public static abc_text_size_caption_material:I = 0x7f070042
-
-.field public static abc_text_size_display_1_material:I = 0x7f070043
-
-.field public static abc_text_size_display_2_material:I = 0x7f070044
-
-.field public static abc_text_size_display_3_material:I = 0x7f070045
-
-.field public static abc_text_size_display_4_material:I = 0x7f070046
-
-.field public static abc_text_size_headline_material:I = 0x7f070047
-
-.field public static abc_text_size_large_material:I = 0x7f070048
-
-.field public static abc_text_size_medium_material:I = 0x7f070049
-
-.field public static abc_text_size_menu_header_material:I = 0x7f07004a
-
-.field public static abc_text_size_menu_material:I = 0x7f07004b
-
-.field public static abc_text_size_small_material:I = 0x7f07004c
-
-.field public static abc_text_size_subhead_material:I = 0x7f07004d
-
-.field public static abc_text_size_subtitle_material_toolbar:I = 0x7f07004e
-
-.field public static abc_text_size_title_material:I = 0x7f07004f
-
-.field public static abc_text_size_title_material_toolbar:I = 0x7f070050
-
-.field public static disabled_alpha_material_dark:I = 0x7f0700b2
-
-.field public static disabled_alpha_material_light:I = 0x7f0700b3
-
-.field public static highlight_alpha_material_colored:I = 0x7f0700bf
-
-.field public static highlight_alpha_material_dark:I = 0x7f0700c0
-
-.field public static highlight_alpha_material_light:I = 0x7f0700c1
-
-.field public static hint_alpha_material_dark:I = 0x7f0700c2
-
-.field public static hint_alpha_material_light:I = 0x7f0700c3
-
-.field public static hint_pressed_alpha_material_dark:I = 0x7f0700c4
-
-.field public static hint_pressed_alpha_material_light:I = 0x7f0700c5
-
-.field public static tooltip_corner_radius:I = 0x7f070543
-
-.field public static tooltip_horizontal_padding:I = 0x7f070544
-
-.field public static tooltip_margin:I = 0x7f070545
-
-.field public static tooltip_precise_anchor_extra_offset:I = 0x7f070546
-
-.field public static tooltip_precise_anchor_threshold:I = 0x7f070547
-
-.field public static tooltip_vertical_padding:I = 0x7f070548
-
-.field public static tooltip_y_offset_non_touch:I = 0x7f070549
-
-.field public static tooltip_y_offset_touch:I = 0x7f07054a
+    .line 35
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lm85;->c:F
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget p0, p0, Lm85;->d:F
+
+    .line 10
+    .line 11
+    invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    add-int/2addr p0, v0
+
+    .line 16
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "RelativeReflectiveQuadTo(dx="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, Lm85;->c:F
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", dy="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget p0, p0, Lm85;->d:F
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string p0, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p0
+
+    .line 32
+    return-object p0
+.end method

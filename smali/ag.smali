@@ -1,76 +1,138 @@
-.class public final Lag;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lag;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lxi2;
 
 
 # instance fields
-.field public synthetic T:Ljava/lang/Object;
+.field public final synthetic X:Lh20;
 
-.field public U:I
+.field public final synthetic Y:Z
+
+.field public final synthetic Z:Lb46;
+
+.field public final synthetic c0:Z
+
+.field public final synthetic d0:J
+
+.field public final synthetic e0:F
+
+.field public final synthetic f0:Ldn4;
 
 
-# virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 10
+# direct methods
+.method public synthetic constructor <init>(Lh20;ZLb46;ZJFLdn4;I)V
+    .locals 0
 
     .line 1
-    iput-object p1, p0, Lag;->T:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iget p1, p0, Lag;->U:I
-
     .line 4
+    iput-object p1, p0, Lag;->X:Lh20;
+
     .line 5
-    const/high16 v0, -0x80000000
-
     .line 6
-    .line 7
-    or-int/2addr p1, v0
+    iput-boolean p2, p0, Lag;->Y:Z
 
+    .line 7
     .line 8
-    iput p1, p0, Lag;->U:I
+    iput-object p3, p0, Lag;->Z:Lb46;
 
     .line 9
     .line 10
-    const/4 v7, 0x0
+    iput-boolean p4, p0, Lag;->c0:Z
 
     .line 11
-    const/4 v8, 0x0
-
     .line 12
-    const/4 v0, 0x0
+    iput-wide p5, p0, Lag;->d0:J
 
     .line 13
-    const/4 v1, 0x0
-
     .line 14
-    const/4 v2, 0x0
+    iput p7, p0, Lag;->e0:F
 
     .line 15
-    const/4 v3, 0x0
-
     .line 16
-    const/4 v4, 0x0
+    iput-object p8, p0, Lag;->f0:Ldn4;
 
     .line 17
-    const/4 v5, 0x0
+    .line 18
+    return-void
+.end method
+
+
+# virtual methods
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 10
+
+    .line 1
+    move-object v8, p1
+
+    .line 2
+    check-cast v8, Lrk2;
+
+    .line 3
+    .line 4
+    check-cast p2, Ljava/lang/Integer;
+
+    .line 5
+    .line 6
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 7
+    .line 8
+    .line 9
+    const/16 p1, 0x6031
+
+    .line 10
+    .line 11
+    invoke-static {p1}, Lku8;->S(I)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v9
+
+    .line 15
+    iget-object v0, p0, Lag;->X:Lh20;
+
+    .line 16
+    .line 17
+    iget-boolean v1, p0, Lag;->Y:Z
 
     .line 18
-    const/4 v6, 0x0
-
     .line 19
-    move-object v9, p0
+    iget-object v2, p0, Lag;->Z:Lb46;
 
     .line 20
-    invoke-static/range {v0 .. v9}, Lf93;->T(Lje;Ll77;Lp17;Lgm2;Lj72;Lg72;Lrv7;Lo94;Ltn7;Law0;)V
-
     .line 21
+    iget-boolean v3, p0, Lag;->c0:Z
+
     .line 22
     .line 23
-    sget-object p1, Lcx0;->Q:Lcx0;
+    iget-wide v4, p0, Lag;->d0:J
 
     .line 24
     .line 25
-    return-object p1
+    iget v6, p0, Lag;->e0:F
+
+    .line 26
+    .line 27
+    iget-object v7, p0, Lag;->f0:Ldn4;
+
+    .line 28
+    .line 29
+    invoke-static/range {v0 .. v9}, Lor4;->i(Lh20;ZLb46;ZJFLdn4;Lrk2;I)V
+
+    .line 30
+    .line 31
+    .line 32
+    sget-object p0, Lr98;->a:Lr98;
+
+    .line 33
+    .line 34
+    return-object p0
 .end method

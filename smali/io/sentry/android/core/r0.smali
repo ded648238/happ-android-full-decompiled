@@ -1,115 +1,85 @@
-.class public abstract Lio/sentry/android/core/r0;
-.super Landroid/content/ContentProvider;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract synthetic Lio/sentry/android/core/r0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final Q:Lio/sentry/d;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
+    invoke-static {}, Lio/sentry/r0;->values()[Lio/sentry/r0;
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lio/sentry/d;
+    move-result-object v0
 
     .line 5
+    array-length v0, v0
+
     .line 6
-    const/4 v1, 0x4
+    new-array v0, v0, [I
 
     .line 7
-    invoke-direct {v0, v1}, Lio/sentry/d;-><init>(I)V
-
     .line 8
+    sput-object v0, Lio/sentry/android/core/r0;->a:[I
+
     .line 9
     .line 10
-    iput-object v0, p0, Lio/sentry/android/core/r0;->Q:Lio/sentry/d;
+    :try_start_0
+    sget-object v1, Lio/sentry/r0;->DISCONNECTED:Lio/sentry/r0;
 
     .line 11
     .line 12
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    const/4 v2, 0x1
+
+    .line 17
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 18
+    .line 19
+    :catch_0
+    :try_start_1
+    sget-object v0, Lio/sentry/android/core/r0;->a:[I
+
+    .line 20
+    .line 21
+    sget-object v1, Lio/sentry/r0;->CONNECTED:Lio/sentry/r0;
+
+    .line 22
+    .line 23
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    const/4 v2, 0x2
+
+    .line 28
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 29
+    .line 30
+    :catch_1
     return-void
-.end method
-
-
-# virtual methods
-.method public final delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Lio/sentry/android/core/r0;->Q:Lio/sentry/d;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, p0}, Lio/sentry/d;->d(Lio/sentry/android/core/r0;)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
-
-    .line 7
-    return p1
-.end method
-
-.method public final insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Lio/sentry/android/core/r0;->Q:Lio/sentry/d;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, p0}, Lio/sentry/d;->d(Lio/sentry/android/core/r0;)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
-
-    .line 7
-    return-object p1
-.end method
-
-.method public final query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Lio/sentry/android/core/r0;->Q:Lio/sentry/d;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, p0}, Lio/sentry/d;->d(Lio/sentry/android/core/r0;)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
-
-    .line 7
-    return-object p1
-.end method
-
-.method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Lio/sentry/android/core/r0;->Q:Lio/sentry/d;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, p0}, Lio/sentry/d;->d(Lio/sentry/android/core/r0;)V
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
-
-    .line 7
-    return p1
 .end method

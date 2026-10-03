@@ -1,21 +1,30 @@
 package defpackage;
 
-import android.view.View;
-import android.view.Window;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.text.TextUtils;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class it7 extends ht7 {
-    @Override // defpackage.n37
-    public final void e(boolean z) {
-        if (!z) {
-            g(16);
-            return;
-        }
-        Window window = this.a;
-        window.clearFlags(134217728);
-        window.addFlags(Integer.MIN_VALUE);
-        View decorView = window.getDecorView();
-        decorView.setSystemUiVisibility(16 | decorView.getSystemUiVisibility());
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class it7 extends x {
+    public static final Parcelable.Creator<it7> CREATOR = new w65(6);
+    public CharSequence Z;
+    public boolean c0;
+
+    public it7(Parcel parcel, ClassLoader classLoader) {
+        super(parcel, classLoader);
+        this.Z = (CharSequence) TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
+        this.c0 = parcel.readInt() == 1;
+    }
+
+    public final String toString() {
+        return "TextInputLayout.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " error=" + ((Object) this.Z) + "}";
+    }
+
+    @Override // defpackage.x, android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        super.writeToParcel(parcel, i);
+        TextUtils.writeToParcel(this.Z, parcel, i);
+        parcel.writeInt(this.c0 ? 1 : 0);
     }
 }

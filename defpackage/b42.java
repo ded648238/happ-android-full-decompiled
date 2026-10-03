@@ -1,39 +1,55 @@
 package defpackage;
 
-import android.app.Notification;
+import java.io.IOException;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class b42 {
-    public final int a;
-    public final int b;
-    public final Notification c;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class b42 implements qy6 {
+    public final qy6 X;
+    public final w0 Y;
+    public boolean Z;
 
-    public b42(int i, Notification notification, int i2) {
-        this.a = i;
-        this.c = notification;
-        this.b = i2;
+    public b42(qy6 qy6Var, w0 w0Var) {
+        this.X = qy6Var;
+        this.Y = w0Var;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    @Override // defpackage.qy6, java.io.Closeable, java.lang.AutoCloseable
+    public final void close() {
+        try {
+            this.X.close();
+        } catch (IOException e) {
+            this.Z = true;
+            this.Y.invoke(e);
         }
-        if (obj == null || b42.class != obj.getClass()) {
-            return false;
-        }
-        b42 b42Var = (b42) obj;
-        if (this.a == b42Var.a && this.b == b42Var.b) {
-            return this.c.equals(b42Var.c);
-        }
-        return false;
     }
 
-    public final int hashCode() {
-        return this.c.hashCode() + (((this.a * 31) + this.b) * 31);
+    @Override // defpackage.qy6, java.io.Flushable
+    public final void flush() {
+        try {
+            this.X.flush();
+        } catch (IOException e) {
+            this.Z = true;
+            this.Y.invoke(e);
+        }
     }
 
-    public final String toString() {
-        return "ForegroundInfo{mNotificationId=" + this.a + ", mForegroundServiceType=" + this.b + ", mNotification=" + this.c + '}';
+    @Override // defpackage.qy6
+    public final ax7 timeout() {
+        return this.X.timeout();
+    }
+
+    @Override // defpackage.qy6
+    public final void write(l70 l70Var, long j) {
+        if (this.Z) {
+            l70Var.skip(j);
+            return;
+        }
+        try {
+            this.X.write(l70Var, j);
+        } catch (IOException e) {
+            this.Z = true;
+            this.Y.invoke(e);
+        }
     }
 }

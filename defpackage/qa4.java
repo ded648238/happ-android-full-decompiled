@@ -1,22 +1,20 @@
 package defpackage;
 
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadFactory;
+import android.widget.EdgeEffect;
+import androidx.recyclerview.widget.RecyclerView;
+import su.happ.proxyutility.feature.main.MainActivity;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class qa4 implements ThreadFactory {
-    public final String a;
-    public final ThreadFactory b = Executors.defaultThreadFactory();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class qa4 extends sx5 {
+    public final /* synthetic */ MainActivity a;
 
-    public qa4(String str) {
-        this.a = str;
+    public qa4(MainActivity mainActivity) {
+        this.a = mainActivity;
     }
 
-    @Override // java.util.concurrent.ThreadFactory
-    public final Thread newThread(Runnable runnable) {
-        Thread threadNewThread = this.b.newThread(new rx5(runnable, 3));
-        threadNewThread.setName(this.a);
-        return threadNewThread;
+    @Override // defpackage.sx5
+    public final EdgeEffect a(RecyclerView recyclerView, int i) {
+        return new pa4(i, recyclerView, this.a, recyclerView.getContext());
     }
 }

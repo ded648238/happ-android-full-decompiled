@@ -1,58 +1,71 @@
-.class public abstract synthetic Lnb6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lnb6;
+.super Ld31;
+
+
+# instance fields
+.field public synthetic c0:Ljava/lang/Object;
+
+.field public d0:I
+
+.field public final synthetic e0:Lvc0;
 
 
 # direct methods
-.method public static a(Landroid/content/Context;)Lnc5;
-    .locals 3
+.method public constructor <init>(Lvc0;Lb31;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lrv7;
+    iput-object p1, p0, Lnb6;->e0:Lvc0;
 
     .line 2
     .line 3
-    const/16 v1, 0x1a
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
     .line 4
     .line 5
-    invoke-direct {v0, p0, v1}, Lrv7;-><init>(Landroid/content/Context;I)V
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Lnb6;->c0:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    iget p1, p0, Lnb6;->d0:I
+
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    iget-object p0, v0, Lrv7;->T:Ljava/lang/Object;
+    iput p1, p0, Lnb6;->d0:I
 
     .line 9
     .line 10
-    check-cast p0, Lbu1;
+    iget-object p1, p0, Lnb6;->e0:Lvc0;
 
     .line 11
     .line 12
-    sget-object v1, Lob6;->a:Lt3;
+    const/4 v0, 0x0
 
     .line 13
-    .line 14
-    sget-object v2, Lbh7;->a:Lbh7;
+    invoke-virtual {p1, v0, p0}, Lvc0;->k(Ljava/lang/Object;Lb31;)Ljava/lang/Object;
 
+    .line 14
     .line 15
     .line 16
-    iget-object p0, p0, Lbu1;->a:Ljava/util/LinkedHashMap;
-
-    .line 17
-    .line 18
-    invoke-interface {p0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-virtual {v0}, Lrv7;->i()Lnc5;
-
-    .line 22
-    .line 23
-    .line 24
     move-result-object p0
 
-    .line 25
+    .line 17
     return-object p0
 .end method

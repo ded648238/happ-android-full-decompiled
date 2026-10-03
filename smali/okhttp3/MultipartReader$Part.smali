@@ -1,6 +1,6 @@
 .class public final Lokhttp3/MultipartReader$Part;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -25,17 +25,17 @@
         "Ljava/io/Closeable;",
         "Lokhttp3/Headers;",
         "headers",
-        "Ls50;",
+        "Lf80;",
         "body",
         "<init>",
-        "(Lokhttp3/Headers;Ls50;)V",
-        "Lbh7;",
+        "(Lokhttp3/Headers;Lf80;)V",
+        "Lr98;",
         "close",
         "()V",
         "Lokhttp3/Headers;",
         "()Lokhttp3/Headers;",
-        "Ls50;",
-        "()Ls50;",
+        "Lf80;",
+        "()Lf80;",
         "okhttp"
     }
     k = 0x1
@@ -49,13 +49,13 @@
 
 
 # instance fields
-.field private final body:Ls50;
+.field private final body:Lf80;
 
 .field private final headers:Lokhttp3/Headers;
 
 
 # direct methods
-.method public constructor <init>(Lokhttp3/Headers;Ls50;)V
+.method public constructor <init>(Lokhttp3/Headers;Lf80;)V
     .locals 0
 
     .line 1
@@ -78,7 +78,7 @@
 
     .line 11
     .line 12
-    iput-object p2, p0, Lokhttp3/MultipartReader$Part;->body:Ls50;
+    iput-object p2, p0, Lokhttp3/MultipartReader$Part;->body:Lf80;
 
     .line 13
     .line 14
@@ -87,26 +87,26 @@
 
 
 # virtual methods
-.method public final body()Ls50;
-    .locals 1
+.method public final body()Lf80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartReader$Part;->body:Ls50;
+    iget-object p0, p0, Lokhttp3/MultipartReader$Part;->body:Lf80;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public close()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartReader$Part;->body:Ls50;
+    iget-object p0, p0, Lokhttp3/MultipartReader$Part;->body:Lf80;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Ljava/io/Closeable;->close()V
+    invoke-interface {p0}, Ljava/io/Closeable;->close()V
 
     .line 4
     .line 5
@@ -115,12 +115,12 @@
 .end method
 
 .method public final headers()Lokhttp3/Headers;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartReader$Part;->headers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/MultipartReader$Part;->headers:Lokhttp3/Headers;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class public final Lj$/time/zone/a;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Externalizable;
@@ -124,20 +124,19 @@
 
     .line 33
     .line 34
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     .line 35
-    .line 36
     const-wide v2, 0x110bc5000L
 
+    .line 36
     .line 37
     .line 38
     .line 39
     .line 40
-    .line 41
     sub-long/2addr v0, v2
 
-    .line 42
+    .line 41
     return-wide v0
 .end method
 
@@ -207,116 +206,115 @@
     .line 4
     .line 5
     .line 6
-    const/16 v2, 0xff
+    cmp-long v0, p0, v0
 
     .line 7
     .line 8
-    cmp-long v3, p0, v0
+    const/16 v1, 0xff
 
     .line 9
     .line 10
-    if-ltz v3, :cond_0
+    if-ltz v0, :cond_0
 
     .line 11
     .line 12
-    const-wide v0, 0x26cb5db00L
+    const-wide v2, 0x26cb5db00L
 
     .line 13
     .line 14
     .line 15
     .line 16
     .line 17
-    cmp-long v3, p0, v0
+    cmp-long v0, p0, v2
 
     .line 18
     .line 19
-    if-gez v3, :cond_0
+    if-gez v0, :cond_0
 
     .line 20
     .line 21
-    const-wide/16 v0, 0x384
+    const-wide/16 v2, 0x384
 
     .line 22
     .line 23
-    rem-long v3, p0, v0
+    rem-long v4, p0, v2
 
     .line 24
     .line 25
-    const-wide/16 v5, 0x0
+    const-wide/16 v6, 0x0
 
     .line 26
     .line 27
-    cmp-long v7, v3, v5
+    cmp-long v0, v4, v6
 
     .line 28
     .line 29
-    if-nez v7, :cond_0
+    if-nez v0, :cond_0
 
     .line 30
     .line 31
-    const-wide v3, 0x110bc5000L
+    const-wide v4, 0x110bc5000L
 
     .line 32
     .line 33
     .line 34
     .line 35
     .line 36
-    add-long/2addr p0, v3
+    add-long/2addr p0, v4
 
     .line 37
-    div-long/2addr p0, v0
+    div-long/2addr p0, v2
 
     .line 38
-    long-to-int p1, p0
+    long-to-int p0, p0
 
     .line 39
-    ushr-int/lit8 p0, p1, 0x10
+    ushr-int/lit8 p1, p0, 0x10
 
     .line 40
     .line 41
-    and-int/2addr p0, v2
+    and-int/2addr p1, v1
 
     .line 42
-    invoke-interface {p2, p0}, Ljava/io/DataOutput;->writeByte(I)V
+    invoke-interface {p2, p1}, Ljava/io/DataOutput;->writeByte(I)V
 
     .line 43
     .line 44
     .line 45
-    ushr-int/lit8 p0, p1, 0x8
+    ushr-int/lit8 p1, p0, 0x8
 
     .line 46
     .line 47
-    and-int/2addr p0, v2
+    and-int/2addr p1, v1
 
     .line 48
-    invoke-interface {p2, p0}, Ljava/io/DataOutput;->writeByte(I)V
+    invoke-interface {p2, p1}, Ljava/io/DataOutput;->writeByte(I)V
 
     .line 49
     .line 50
     .line 51
-    and-int/lit16 p0, p1, 0xff
+    and-int/2addr p0, v1
 
     .line 52
-    .line 53
     invoke-interface {p2, p0}, Ljava/io/DataOutput;->writeByte(I)V
 
+    .line 53
     .line 54
     .line 55
-    .line 56
     return-void
 
-    .line 57
+    .line 56
     :cond_0
-    invoke-interface {p2, v2}, Ljava/io/DataOutput;->writeByte(I)V
+    invoke-interface {p2, v1}, Ljava/io/DataOutput;->writeByte(I)V
 
+    .line 57
     .line 58
     .line 59
-    .line 60
     invoke-interface {p2, p0, p1}, Ljava/io/DataOutput;->writeLong(J)V
 
+    .line 60
     .line 61
     .line 62
-    .line 63
     return-void
 .end method
 
@@ -352,38 +350,37 @@
 
     .line 14
     :cond_0
-    const/16 v0, 0x7f
+    move v0, v1
 
     .line 15
-    .line 16
     :goto_0
     invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeByte(I)V
 
+    .line 16
     .line 17
     .line 18
-    .line 19
     if-ne v0, v1, :cond_1
 
+    .line 19
     .line 20
-    .line 21
     invoke-interface {p1, p0}, Ljava/io/DataOutput;->writeInt(I)V
 
+    .line 21
     .line 22
     .line 23
-    .line 24
     :cond_1
     return-void
 .end method
 
 .method private readResolve()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lj$/time/zone/a;->b:Ljava/lang/Object;
+    iget-object p0, p0, Lj$/time/zone/a;->b:Ljava/lang/Object;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 
@@ -463,20 +460,20 @@
     .line 34
     .line 35
     :cond_0
-    new-instance p1, Ljava/io/StreamCorruptedException;
+    new-instance p0, Ljava/io/StreamCorruptedException;
 
     .line 36
     .line 37
-    const-string v0, "Unknown serialized type"
+    const-string p1, "Unknown serialized type"
 
     .line 38
     .line 39
-    invoke-direct {p1, v0}, Ljava/io/StreamCorruptedException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/StreamCorruptedException;-><init>(Ljava/lang/String;)V
 
     .line 40
     .line 41
     .line 42
-    throw p1
+    throw p0
 
     .line 43
     :cond_1
@@ -550,292 +547,296 @@
     .line 76
     .line 77
     :cond_3
-    const-string p1, "Offsets must not be equal"
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
     .line 78
     .line 79
-    invoke-static {p1}, Lj$/time/f;->c(Ljava/lang/String;)V
+    const-string p1, "Offsets must not be equal"
 
     .line 80
     .line 81
-    .line 82
-    return-void
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 82
     .line 83
+    .line 84
+    throw p0
+
+    .line 85
     :cond_4
     sget-object v0, Lj$/time/zone/ZoneRules;->i:[J
 
-    .line 84
-    .line 85
-    invoke-interface {p1}, Ljava/io/DataInput;->readInt()I
-
     .line 86
     .line 87
+    invoke-interface {p1}, Ljava/io/DataInput;->readInt()I
+
     .line 88
+    .line 89
+    .line 90
     move-result v2
 
-    .line 89
+    .line 91
     if-nez v2, :cond_5
 
-    .line 90
-    .line 91
+    .line 92
+    .line 93
     move-object v5, v0
 
-    .line 92
+    .line 94
     goto :goto_0
 
-    .line 93
+    .line 95
     :cond_5
     new-array v3, v2, [J
 
-    .line 94
-    .line 95
+    .line 96
+    .line 97
     move-object v5, v3
 
-    .line 96
+    .line 98
     :goto_0
     const/4 v3, 0x0
 
-    .line 97
-    const/4 v4, 0x0
+    .line 99
+    move v4, v3
 
-    .line 98
+    .line 100
     :goto_1
     if-ge v4, v2, :cond_6
 
-    .line 99
-    .line 100
-    invoke-static {p1}, Lj$/time/zone/a;->a(Ljava/io/DataInput;)J
-
     .line 101
     .line 102
+    invoke-static {p1}, Lj$/time/zone/a;->a(Ljava/io/DataInput;)J
+
     .line 103
+    .line 104
+    .line 105
     move-result-wide v6
 
-    .line 104
-    aput-wide v6, v5, v4
-
-    .line 105
     .line 106
-    add-int/lit8 v4, v4, 0x1
+    aput-wide v6, v5, v4
 
     .line 107
     .line 108
-    goto :goto_1
+    add-int/lit8 v4, v4, 0x1
 
     .line 109
+    .line 110
+    goto :goto_1
+
+    .line 111
     :cond_6
     add-int/2addr v2, v1
 
-    .line 110
+    .line 112
     new-array v6, v2, [Lj$/time/ZoneOffset;
 
-    .line 111
-    .line 112
-    const/4 v4, 0x0
-
     .line 113
+    .line 114
+    move v4, v3
+
+    .line 115
     :goto_2
     if-ge v4, v2, :cond_7
 
-    .line 114
-    .line 115
-    invoke-static {p1}, Lj$/time/zone/a;->b(Ljava/io/DataInput;)Lj$/time/ZoneOffset;
-
     .line 116
     .line 117
+    invoke-static {p1}, Lj$/time/zone/a;->b(Ljava/io/DataInput;)Lj$/time/ZoneOffset;
+
     .line 118
+    .line 119
+    .line 120
     move-result-object v7
 
-    .line 119
-    aput-object v7, v6, v4
-
-    .line 120
     .line 121
-    add-int/lit8 v4, v4, 0x1
+    aput-object v7, v6, v4
 
     .line 122
     .line 123
-    goto :goto_2
+    add-int/lit8 v4, v4, 0x1
 
     .line 124
+    .line 125
+    goto :goto_2
+
+    .line 126
     :cond_7
     invoke-interface {p1}, Ljava/io/DataInput;->readInt()I
 
-    .line 125
-    .line 126
     .line 127
+    .line 128
+    .line 129
     move-result v2
 
-    .line 128
+    .line 130
     if-nez v2, :cond_8
 
-    .line 129
-    .line 130
+    .line 131
+    .line 132
     :goto_3
     move-object v7, v0
 
-    .line 131
+    .line 133
     goto :goto_4
 
-    .line 132
+    .line 134
     :cond_8
     new-array v0, v2, [J
 
-    .line 133
-    .line 134
+    .line 135
+    .line 136
     goto :goto_3
 
-    .line 135
+    .line 137
     :goto_4
-    const/4 v0, 0x0
+    move v0, v3
 
-    .line 136
+    .line 138
     :goto_5
     if-ge v0, v2, :cond_9
 
-    .line 137
-    .line 138
-    invoke-static {p1}, Lj$/time/zone/a;->a(Ljava/io/DataInput;)J
-
     .line 139
     .line 140
+    invoke-static {p1}, Lj$/time/zone/a;->a(Ljava/io/DataInput;)J
+
     .line 141
+    .line 142
+    .line 143
     move-result-wide v8
 
-    .line 142
-    aput-wide v8, v7, v0
-
-    .line 143
     .line 144
-    add-int/lit8 v0, v0, 0x1
+    aput-wide v8, v7, v0
 
     .line 145
     .line 146
-    goto :goto_5
+    add-int/lit8 v0, v0, 0x1
 
     .line 147
+    .line 148
+    goto :goto_5
+
+    .line 149
     :cond_9
     add-int/2addr v2, v1
 
-    .line 148
+    .line 150
     new-array v8, v2, [Lj$/time/ZoneOffset;
 
-    .line 149
-    .line 150
-    const/4 v0, 0x0
-
     .line 151
+    .line 152
+    move v0, v3
+
+    .line 153
     :goto_6
     if-ge v0, v2, :cond_a
 
-    .line 152
-    .line 153
-    invoke-static {p1}, Lj$/time/zone/a;->b(Ljava/io/DataInput;)Lj$/time/ZoneOffset;
-
     .line 154
     .line 155
+    invoke-static {p1}, Lj$/time/zone/a;->b(Ljava/io/DataInput;)Lj$/time/ZoneOffset;
+
     .line 156
+    .line 157
+    .line 158
     move-result-object v1
 
-    .line 157
-    aput-object v1, v8, v0
-
-    .line 158
     .line 159
-    add-int/lit8 v0, v0, 0x1
+    aput-object v1, v8, v0
 
     .line 160
     .line 161
-    goto :goto_6
+    add-int/lit8 v0, v0, 0x1
 
     .line 162
+    .line 163
+    goto :goto_6
+
+    .line 164
     :cond_a
     invoke-interface {p1}, Ljava/io/DataInput;->readByte()B
 
-    .line 163
-    .line 164
     .line 165
+    .line 166
+    .line 167
     move-result v0
 
-    .line 166
-    if-nez v0, :cond_b
-
-    .line 167
     .line 168
-    sget-object v1, Lj$/time/zone/ZoneRules;->j:[Lj$/time/zone/e;
+    if-nez v0, :cond_b
 
     .line 169
     .line 170
+    sget-object v1, Lj$/time/zone/ZoneRules;->j:[Lj$/time/zone/e;
+
+    .line 171
+    .line 172
     :goto_7
     move-object v9, v1
 
-    .line 171
+    .line 173
     goto :goto_8
 
-    .line 172
+    .line 174
     :cond_b
     new-array v1, v0, [Lj$/time/zone/e;
 
-    .line 173
-    .line 174
+    .line 175
+    .line 176
     goto :goto_7
 
-    .line 175
+    .line 177
     :goto_8
     if-ge v3, v0, :cond_c
 
-    .line 176
-    .line 177
-    invoke-static {p1}, Lj$/time/zone/e;->a(Ljava/io/DataInput;)Lj$/time/zone/e;
-
     .line 178
     .line 179
+    invoke-static {p1}, Lj$/time/zone/e;->a(Ljava/io/DataInput;)Lj$/time/zone/e;
+
     .line 180
+    .line 181
+    .line 182
     move-result-object v1
 
-    .line 181
-    aput-object v1, v9, v3
-
-    .line 182
     .line 183
-    add-int/lit8 v3, v3, 0x1
+    aput-object v1, v9, v3
 
     .line 184
     .line 185
-    goto :goto_8
+    add-int/lit8 v3, v3, 0x1
 
     .line 186
+    .line 187
+    goto :goto_8
+
+    .line 188
     :cond_c
     new-instance v4, Lj$/time/zone/ZoneRules;
 
-    .line 187
-    .line 188
-    invoke-direct/range {v4 .. v9}, Lj$/time/zone/ZoneRules;-><init>([J[Lj$/time/ZoneOffset;[J[Lj$/time/ZoneOffset;[Lj$/time/zone/e;)V
-
     .line 189
     .line 190
+    invoke-direct/range {v4 .. v9}, Lj$/time/zone/ZoneRules;-><init>([J[Lj$/time/ZoneOffset;[J[Lj$/time/ZoneOffset;[Lj$/time/zone/e;)V
+
     .line 191
+    .line 192
+    .line 193
     move-object v0, v4
 
-    .line 192
+    .line 194
     :goto_9
     iput-object v0, p0, Lj$/time/zone/a;->b:Ljava/lang/Object;
 
-    .line 193
-    .line 194
+    .line 195
+    .line 196
     return-void
 .end method
 
 .method public final writeExternal(Ljava/io/ObjectOutput;)V
-    .locals 7
+    .locals 6
 
     .line 1
     iget-byte v0, p0, Lj$/time/zone/a;->a:B
 
     .line 2
     .line 3
-    iget-object v1, p0, Lj$/time/zone/a;->b:Ljava/lang/Object;
+    iget-object p0, p0, Lj$/time/zone/a;->b:Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -844,52 +845,52 @@
     .line 6
     .line 7
     .line 8
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
     .line 9
-    if-eq v0, v2, :cond_3
+    if-eq v0, v1, :cond_3
 
     .line 10
     .line 11
-    const/4 v2, 0x2
+    const/4 v1, 0x2
 
     .line 12
-    if-eq v0, v2, :cond_2
+    if-eq v0, v1, :cond_2
 
     .line 13
     .line 14
-    const/4 v2, 0x3
+    const/4 v1, 0x3
 
     .line 15
-    if-eq v0, v2, :cond_1
+    if-eq v0, v1, :cond_1
 
     .line 16
     .line 17
-    const/16 v2, 0x64
+    const/16 v1, 0x64
 
     .line 18
     .line 19
-    if-ne v0, v2, :cond_0
+    if-ne v0, v1, :cond_0
 
     .line 20
     .line 21
-    check-cast v1, Lj$/time/zone/ZoneRules;
+    check-cast p0, Lj$/time/zone/ZoneRules;
 
     .line 22
     .line 23
-    iget-object v0, v1, Lj$/time/zone/ZoneRules;->g:Ljava/util/TimeZone;
+    iget-object p0, p0, Lj$/time/zone/ZoneRules;->g:Ljava/util/TimeZone;
 
     .line 24
     .line 25
-    invoke-virtual {v0}, Ljava/util/TimeZone;->getID()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/util/TimeZone;->getID()Ljava/lang/String;
 
     .line 26
     .line 27
     .line 28
-    move-result-object v0
+    move-result-object p0
 
     .line 29
-    invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeUTF(Ljava/lang/String;)V
+    invoke-interface {p1, p0}, Ljava/io/DataOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -898,28 +899,28 @@
 
     .line 33
     :cond_0
-    new-instance p1, Ljava/io/InvalidClassException;
+    new-instance p0, Ljava/io/InvalidClassException;
 
     .line 34
     .line 35
-    const-string v0, "Unknown serialized type"
+    const-string p1, "Unknown serialized type"
 
     .line 36
     .line 37
-    invoke-direct {p1, v0}, Ljava/io/InvalidClassException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/InvalidClassException;-><init>(Ljava/lang/String;)V
 
     .line 38
     .line 39
     .line 40
-    throw p1
+    throw p0
 
     .line 41
     :cond_1
-    check-cast v1, Lj$/time/zone/e;
+    check-cast p0, Lj$/time/zone/e;
 
     .line 42
     .line 43
-    invoke-virtual {v1, p1}, Lj$/time/zone/e;->b(Ljava/io/DataOutput;)V
+    invoke-virtual {p0, p1}, Lj$/time/zone/e;->b(Ljava/io/DataOutput;)V
 
     .line 44
     .line 45
@@ -928,20 +929,20 @@
 
     .line 47
     :cond_2
-    check-cast v1, Lj$/time/zone/b;
+    check-cast p0, Lj$/time/zone/b;
 
     .line 48
     .line 49
-    iget-wide v2, v1, Lj$/time/zone/b;->a:J
+    iget-wide v0, p0, Lj$/time/zone/b;->a:J
 
     .line 50
     .line 51
-    invoke-static {v2, v3, p1}, Lj$/time/zone/a;->c(JLjava/io/DataOutput;)V
+    invoke-static {v0, v1, p1}, Lj$/time/zone/a;->c(JLjava/io/DataOutput;)V
 
     .line 52
     .line 53
     .line 54
-    iget-object v0, v1, Lj$/time/zone/b;->c:Lj$/time/ZoneOffset;
+    iget-object v0, p0, Lj$/time/zone/b;->c:Lj$/time/ZoneOffset;
 
     .line 55
     .line 56
@@ -950,11 +951,11 @@
     .line 57
     .line 58
     .line 59
-    iget-object v0, v1, Lj$/time/zone/b;->d:Lj$/time/ZoneOffset;
+    iget-object p0, p0, Lj$/time/zone/b;->d:Lj$/time/ZoneOffset;
 
     .line 60
     .line 61
-    invoke-static {v0, p1}, Lj$/time/zone/a;->d(Lj$/time/ZoneOffset;Ljava/io/DataOutput;)V
+    invoke-static {p0, p1}, Lj$/time/zone/a;->d(Lj$/time/ZoneOffset;Ljava/io/DataOutput;)V
 
     .line 62
     .line 63
@@ -963,11 +964,11 @@
 
     .line 65
     :cond_3
-    check-cast v1, Lj$/time/zone/ZoneRules;
+    check-cast p0, Lj$/time/zone/ZoneRules;
 
     .line 66
     .line 67
-    iget-object v0, v1, Lj$/time/zone/ZoneRules;->a:[J
+    iget-object v0, p0, Lj$/time/zone/ZoneRules;->a:[J
 
     .line 68
     .line 69
@@ -979,34 +980,34 @@
     .line 71
     .line 72
     .line 73
-    iget-object v0, v1, Lj$/time/zone/ZoneRules;->a:[J
+    iget-object v0, p0, Lj$/time/zone/ZoneRules;->a:[J
 
     .line 74
     .line 75
-    array-length v2, v0
+    array-length v1, v0
 
     .line 76
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 77
-    const/4 v4, 0x0
+    move v3, v2
 
     .line 78
     :goto_0
-    if-ge v4, v2, :cond_4
+    if-ge v3, v1, :cond_4
 
     .line 79
     .line 80
-    aget-wide v5, v0, v4
+    aget-wide v4, v0, v3
 
     .line 81
     .line 82
-    invoke-static {v5, v6, p1}, Lj$/time/zone/a;->c(JLjava/io/DataOutput;)V
+    invoke-static {v4, v5, p1}, Lj$/time/zone/a;->c(JLjava/io/DataOutput;)V
 
     .line 83
     .line 84
     .line 85
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     .line 86
     .line 87
@@ -1014,31 +1015,31 @@
 
     .line 88
     :cond_4
-    iget-object v0, v1, Lj$/time/zone/ZoneRules;->b:[Lj$/time/ZoneOffset;
+    iget-object v0, p0, Lj$/time/zone/ZoneRules;->b:[Lj$/time/ZoneOffset;
 
     .line 89
     .line 90
-    array-length v2, v0
+    array-length v1, v0
 
     .line 91
-    const/4 v4, 0x0
+    move v3, v2
 
     .line 92
     :goto_1
-    if-ge v4, v2, :cond_5
+    if-ge v3, v1, :cond_5
 
     .line 93
     .line 94
-    aget-object v5, v0, v4
+    aget-object v4, v0, v3
 
     .line 95
     .line 96
-    invoke-static {v5, p1}, Lj$/time/zone/a;->d(Lj$/time/ZoneOffset;Ljava/io/DataOutput;)V
+    invoke-static {v4, p1}, Lj$/time/zone/a;->d(Lj$/time/ZoneOffset;Ljava/io/DataOutput;)V
 
     .line 97
     .line 98
     .line 99
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     .line 100
     .line 101
@@ -1046,7 +1047,7 @@
 
     .line 102
     :cond_5
-    iget-object v0, v1, Lj$/time/zone/ZoneRules;->c:[J
+    iget-object v0, p0, Lj$/time/zone/ZoneRules;->c:[J
 
     .line 103
     .line 104
@@ -1058,31 +1059,31 @@
     .line 106
     .line 107
     .line 108
-    iget-object v0, v1, Lj$/time/zone/ZoneRules;->c:[J
+    iget-object v0, p0, Lj$/time/zone/ZoneRules;->c:[J
 
     .line 109
     .line 110
-    array-length v2, v0
+    array-length v1, v0
 
     .line 111
-    const/4 v4, 0x0
+    move v3, v2
 
     .line 112
     :goto_2
-    if-ge v4, v2, :cond_6
+    if-ge v3, v1, :cond_6
 
     .line 113
     .line 114
-    aget-wide v5, v0, v4
+    aget-wide v4, v0, v3
 
     .line 115
     .line 116
-    invoke-static {v5, v6, p1}, Lj$/time/zone/a;->c(JLjava/io/DataOutput;)V
+    invoke-static {v4, v5, p1}, Lj$/time/zone/a;->c(JLjava/io/DataOutput;)V
 
     .line 117
     .line 118
     .line 119
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     .line 120
     .line 121
@@ -1090,31 +1091,31 @@
 
     .line 122
     :cond_6
-    iget-object v0, v1, Lj$/time/zone/ZoneRules;->e:[Lj$/time/ZoneOffset;
+    iget-object v0, p0, Lj$/time/zone/ZoneRules;->e:[Lj$/time/ZoneOffset;
 
     .line 123
     .line 124
-    array-length v2, v0
+    array-length v1, v0
 
     .line 125
-    const/4 v4, 0x0
+    move v3, v2
 
     .line 126
     :goto_3
-    if-ge v4, v2, :cond_7
+    if-ge v3, v1, :cond_7
 
     .line 127
     .line 128
-    aget-object v5, v0, v4
+    aget-object v4, v0, v3
 
     .line 129
     .line 130
-    invoke-static {v5, p1}, Lj$/time/zone/a;->d(Lj$/time/ZoneOffset;Ljava/io/DataOutput;)V
+    invoke-static {v4, p1}, Lj$/time/zone/a;->d(Lj$/time/ZoneOffset;Ljava/io/DataOutput;)V
 
     .line 131
     .line 132
     .line 133
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     .line 134
     .line 135
@@ -1122,7 +1123,7 @@
 
     .line 136
     :cond_7
-    iget-object v0, v1, Lj$/time/zone/ZoneRules;->f:[Lj$/time/zone/e;
+    iget-object v0, p0, Lj$/time/zone/ZoneRules;->f:[Lj$/time/zone/e;
 
     .line 137
     .line 138
@@ -1134,28 +1135,28 @@
     .line 140
     .line 141
     .line 142
-    iget-object v0, v1, Lj$/time/zone/ZoneRules;->f:[Lj$/time/zone/e;
+    iget-object p0, p0, Lj$/time/zone/ZoneRules;->f:[Lj$/time/zone/e;
 
     .line 143
     .line 144
-    array-length v1, v0
+    array-length v0, p0
 
     .line 145
     :goto_4
-    if-ge v3, v1, :cond_8
+    if-ge v2, v0, :cond_8
 
     .line 146
     .line 147
-    aget-object v2, v0, v3
+    aget-object v1, p0, v2
 
     .line 148
     .line 149
-    invoke-virtual {v2, p1}, Lj$/time/zone/e;->b(Ljava/io/DataOutput;)V
+    invoke-virtual {v1, p1}, Lj$/time/zone/e;->b(Ljava/io/DataOutput;)V
 
     .line 150
     .line 151
     .line 152
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     .line 153
     .line 154

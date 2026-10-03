@@ -1,17 +1,8 @@
-.class public abstract Lqp7;
+.class public interface abstract Lqp7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# direct methods
-.method public static a(Landroid/view/View;IIII)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2, p3, p4}, Landroid/view/View;->setLeftTopRightBottom(IIII)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
+# virtual methods
+.method public abstract a(Lgp7;Lll7;)Ljava/lang/Object;
 .end method

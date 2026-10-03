@@ -1,6 +1,6 @@
 .class public interface abstract Lokhttp3/internal/http/ExchangeCodec;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -21,10 +21,10 @@
         "request",
         "",
         "contentLength",
-        "Lpb6;",
+        "Lqy6;",
         "createRequestBody",
-        "(Lokhttp3/Request;J)Lpb6;",
-        "Lbh7;",
+        "(Lokhttp3/Request;J)Lqy6;",
+        "Lr98;",
         "writeRequestHeaders",
         "(Lokhttp3/Request;)V",
         "flushRequest",
@@ -39,9 +39,9 @@
         "response",
         "reportedContentLength",
         "(Lokhttp3/Response;)J",
-        "Lle6;",
+        "Ld27;",
         "openResponseBodySource",
-        "(Lokhttp3/Response;)Lle6;",
+        "(Lokhttp3/Response;)Ld27;",
         "Lokhttp3/Headers;",
         "trailers",
         "()Lokhttp3/Headers;",
@@ -90,7 +90,7 @@
 .method public abstract cancel()V
 .end method
 
-.method public abstract createRequestBody(Lokhttp3/Request;J)Lpb6;
+.method public abstract createRequestBody(Lokhttp3/Request;J)Lqy6;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -117,7 +117,7 @@
 .method public abstract getConnection()Lokhttp3/internal/connection/RealConnection;
 .end method
 
-.method public abstract openResponseBodySource(Lokhttp3/Response;)Lle6;
+.method public abstract openResponseBodySource(Lokhttp3/Response;)Ld27;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

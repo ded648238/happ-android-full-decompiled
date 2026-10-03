@@ -1,37 +1,37 @@
 .class public final Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/t1;
+.implements Lio/sentry/v1;
 .implements Ljava/io/Closeable;
 .implements Lio/sentry/android/core/e0;
 
 
 # instance fields
-.field public final Q:Landroid/content/Context;
+.field public final X:Landroid/content/Context;
 
-.field public volatile R:Lio/sentry/android/core/w1;
+.field public volatile Y:Lio/sentry/android/core/i2;
 
-.field public S:Lio/sentry/android/core/SentryAndroidOptions;
+.field public Z:Lio/sentry/android/core/SentryAndroidOptions;
 
-.field public T:Lio/sentry/j4;
+.field public c0:Lio/sentry/l4;
 
-.field public final U:[Ljava/lang/String;
+.field public final d0:[Ljava/lang/String;
 
-.field public volatile V:Z
+.field public volatile e0:Z
 
-.field public volatile W:Z
+.field public volatile f0:Z
 
-.field public volatile X:Landroid/content/IntentFilter;
+.field public volatile g0:Landroid/content/IntentFilter;
 
-.field public volatile Y:Landroid/os/HandlerThread;
+.field public volatile h0:Landroid/os/HandlerThread;
 
-.field public final Z:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final i0:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field public final a0:Lio/sentry/util/a;
+.field public final j0:Lio/sentry/util/a;
 
-.field public b0:Lio/sentry/android/core/v1;
+.field public k0:Lio/sentry/android/core/h2;
 
 
 # direct methods
@@ -135,22 +135,22 @@
     const/4 v2, 0x0
 
     .line 49
-    iput-boolean v2, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->V:Z
+    iput-boolean v2, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->e0:Z
 
     .line 50
     .line 51
-    iput-boolean v2, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->W:Z
+    iput-boolean v2, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->f0:Z
 
     .line 52
     .line 53
     const/4 v3, 0x0
 
     .line 54
-    iput-object v3, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->X:Landroid/content/IntentFilter;
+    iput-object v3, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->g0:Landroid/content/IntentFilter;
 
     .line 55
     .line 56
-    iput-object v3, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Y:Landroid/os/HandlerThread;
+    iput-object v3, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->h0:Landroid/os/HandlerThread;
 
     .line 57
     .line 58
@@ -163,7 +163,7 @@
     .line 61
     .line 62
     .line 63
-    iput-object v3, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v3, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->i0:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 64
     .line 65
@@ -171,12 +171,12 @@
 
     .line 66
     .line 67
-    invoke-direct {v2}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     .line 68
     .line 69
     .line 70
-    iput-object v2, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->a0:Lio/sentry/util/a;
+    iput-object v2, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->j0:Lio/sentry/util/a;
 
     .line 71
     .line 72
@@ -201,11 +201,11 @@
     .line 80
     .line 81
     :goto_0
-    iput-object v2, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Q:Landroid/content/Context;
+    iput-object v2, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->X:Landroid/content/Context;
 
     .line 82
     .line 83
-    iput-object v1, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->U:[Ljava/lang/String;
+    iput-object v1, v0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->d0:[Ljava/lang/String;
 
     .line 84
     .line 85
@@ -214,23 +214,23 @@
 
 
 # virtual methods
-.method public final M(Lio/sentry/android/core/SentryAndroidOptions;)V
-    .locals 4
+.method public final R(Lio/sentry/android/core/SentryAndroidOptions;)V
+    .locals 3
 
     .line 1
-    iput-object p1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    iput-object p1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 2
     .line 3
-    sget-object v0, Lio/sentry/j4;->a:Lio/sentry/j4;
+    sget-object v0, Lio/sentry/l4;->a:Lio/sentry/l4;
 
     .line 4
     .line 5
-    iput-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->T:Lio/sentry/j4;
+    iput-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->c0:Lio/sentry/l4;
 
     .line 6
     .line 7
-    invoke-virtual {p1}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p1}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 8
     .line 9
@@ -238,11 +238,11 @@
     move-result-object p1
 
     .line 11
-    sget-object v0, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v0, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 12
     .line 13
-    iget-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 14
     .line 15
@@ -262,197 +262,189 @@
     move-result-object v1
 
     .line 23
-    const/4 v2, 0x1
+    filled-new-array {v1}, [Ljava/lang/Object;
 
     .line 24
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 25
     .line 26
-    const/4 v3, 0x0
+    move-result-object v1
 
     .line 27
-    aput-object v1, v2, v3
+    const-string v2, "SystemEventsBreadcrumbsIntegration enabled: %s"
 
     .line 28
     .line 29
-    const-string v1, "SystemEventsBreadcrumbsIntegration enabled: %s"
+    invoke-interface {p1, v0, v2, v1}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 30
     .line 31
-    invoke-interface {p1, v0, v1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
-
     .line 32
+    iget-object p1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
+
     .line 33
     .line 34
-    iget-object p1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    invoke-virtual {p1}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableSystemEventBreadcrumbs()Z
 
     .line 35
     .line 36
-    invoke-virtual {p1}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableSystemEventBreadcrumbs()Z
-
     .line 37
-    .line 38
-    .line 39
     move-result p1
 
-    .line 40
+    .line 38
     if-eqz p1, :cond_0
+
+    .line 39
+    .line 40
+    sget-object p1, Lio/sentry/android/core/h0;->d0:Lio/sentry/android/core/h0;
 
     .line 41
     .line 42
-    sget-object p1, Lio/sentry/android/core/h0;->U:Lio/sentry/android/core/h0;
+    invoke-virtual {p1, p0}, Lio/sentry/android/core/h0;->g(Lio/sentry/android/core/e0;)V
 
     .line 43
     .line 44
-    invoke-virtual {p1, p0}, Lio/sentry/android/core/h0;->f(Lio/sentry/android/core/e0;)V
-
     .line 45
+    invoke-static {}, Lio/sentry/android/core/n0;->i()Z
+
     .line 46
     .line 47
-    invoke-static {}, Lio/sentry/android/core/m0;->i()Z
-
     .line 48
-    .line 49
-    .line 50
     move-result p1
 
-    .line 51
+    .line 49
     if-eqz p1, :cond_0
+
+    .line 50
+    .line 51
+    iget-object p1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->c0:Lio/sentry/l4;
 
     .line 52
     .line 53
-    iget-object p1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->T:Lio/sentry/j4;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 54
     .line 55
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    invoke-virtual {p0, p1, v0}, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->m(Lio/sentry/l4;Lio/sentry/android/core/SentryAndroidOptions;)V
 
     .line 56
     .line 57
-    invoke-virtual {p0, p1, v0}, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->i(Lio/sentry/j4;Lio/sentry/android/core/SentryAndroidOptions;)V
-
     .line 58
-    .line 59
-    .line 60
     :cond_0
     return-void
 .end method
 
 .method public final close()V
-    .locals 4
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->a0:Lio/sentry/util/a;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->j0:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
     const/4 v1, 0x1
 
-    .line 8
+    .line 7
     :try_start_0
-    iput-boolean v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->V:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->e0:Z
 
+    .line 8
     .line 9
-    .line 10
     const/4 v1, 0x0
 
+    .line 10
+    iput-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->g0:Landroid/content/IntentFilter;
+
     .line 11
-    iput-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->X:Landroid/content/IntentFilter;
-
     .line 12
-    .line 13
-    iget-object v2, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Y:Landroid/os/HandlerThread;
+    iget-object v2, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->h0:Landroid/os/HandlerThread;
 
+    .line 13
     .line 14
-    .line 15
     if-eqz v2, :cond_0
 
+    .line 15
     .line 16
-    .line 17
-    iget-object v2, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Y:Landroid/os/HandlerThread;
+    iget-object v2, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->h0:Landroid/os/HandlerThread;
 
+    .line 17
     .line 18
-    .line 19
     invoke-virtual {v2}, Landroid/os/HandlerThread;->quit()Z
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     goto :goto_0
 
-    .line 23
+    .line 22
     :catchall_0
-    move-exception v1
+    move-exception p0
 
-    .line 24
+    .line 23
     goto :goto_2
 
-    .line 25
+    .line 24
     :cond_0
     :goto_0
-    iput-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Y:Landroid/os/HandlerThread;
+    iput-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->h0:Landroid/os/HandlerThread;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 25
     .line 26
-    .line 27
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
+    .line 27
     .line 28
     .line 29
+    sget-object v0, Lio/sentry/android/core/h0;->d0:Lio/sentry/android/core/h0;
+
     .line 30
-    sget-object v0, Lio/sentry/android/core/h0;->U:Lio/sentry/android/core/h0;
-
     .line 31
-    .line 32
-    invoke-virtual {v0, p0}, Lio/sentry/android/core/h0;->l(Lio/sentry/android/core/e0;)V
+    invoke-virtual {v0, p0}, Lio/sentry/android/core/h0;->p(Lio/sentry/android/core/e0;)V
 
+    .line 32
     .line 33
     .line 34
-    .line 35
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
+    .line 35
     .line 36
-    .line 37
     if-nez v0, :cond_1
 
+    .line 37
     .line 38
-    .line 39
     goto :goto_1
 
-    .line 40
+    .line 39
     :cond_1
     :try_start_1
-    invoke-virtual {v0}, Lio/sentry/m6;->getExecutorService()Lio/sentry/h1;
+    invoke-virtual {v0}, Lio/sentry/o6;->getExecutorService()Lio/sentry/j1;
 
+    .line 40
     .line 41
     .line 42
-    .line 43
     move-result-object v0
 
+    .line 43
+    new-instance v1, Lg26;
+
     .line 44
-    new-instance v1, Lio/sentry/android/core/d0;
-
     .line 45
-    .line 46
-    const/4 v2, 0x2
+    const/16 v2, 0x1d
 
+    .line 46
     .line 47
-    invoke-direct {v1, v2, p0}, Lio/sentry/android/core/d0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lg26;-><init>(ILjava/lang/Object;)V
 
     .line 48
     .line 49
     .line 50
-    invoke-interface {v0, v1}, Lio/sentry/h1;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+    invoke-interface {v0, v1}, Lio/sentry/j1;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
     :try_end_1
     .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -463,48 +455,48 @@
 
     .line 54
     :catch_0
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 55
     .line 56
-    invoke-virtual {p0, v0}, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->l(Lio/sentry/android/core/SentryAndroidOptions;)V
+    invoke-virtual {p0, v0}, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->p(Lio/sentry/android/core/SentryAndroidOptions;)V
 
     .line 57
     .line 58
     .line 59
     :goto_1
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object p0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 60
     .line 61
-    if-eqz v0, :cond_2
+    if-eqz p0, :cond_2
 
     .line 62
     .line 63
-    invoke-virtual {v0}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 64
     .line 65
     .line 66
-    move-result-object v0
+    move-result-object p0
 
     .line 67
-    sget-object v1, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v0, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 68
     .line 69
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 70
-    new-array v2, v2, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 71
     .line 72
-    const-string v3, "SystemEventsBreadcrumbsIntegration removed."
+    const-string v2, "SystemEventsBreadcrumbsIntegration removed."
 
     .line 73
     .line 74
-    invoke-interface {v0, v1, v3, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, v0, v2, v1}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 75
     .line 76
@@ -515,7 +507,7 @@
     .line 78
     :goto_2
     :try_start_2
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -529,20 +521,20 @@
     move-exception v0
 
     .line 83
-    invoke-virtual {v1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 84
     .line 85
     .line 86
     :goto_3
-    throw v1
+    throw p0
 .end method
 
-.method public final f()V
+.method public final g()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->T:Lio/sentry/j4;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->c0:Lio/sentry/l4;
 
     .line 2
     .line 3
@@ -550,7 +542,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 6
     .line 7
@@ -565,19 +557,19 @@
     const/4 v0, 0x0
 
     .line 11
-    iput-boolean v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->W:Z
+    iput-boolean v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->f0:Z
 
     .line 12
     .line 13
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->T:Lio/sentry/j4;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->c0:Lio/sentry/l4;
 
     .line 14
     .line 15
-    iget-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 16
     .line 17
-    invoke-virtual {p0, v0, v1}, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->i(Lio/sentry/j4;Lio/sentry/android/core/SentryAndroidOptions;)V
+    invoke-virtual {p0, v0, v1}, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->m(Lio/sentry/l4;Lio/sentry/android/core/SentryAndroidOptions;)V
 
     .line 18
     .line 19
@@ -591,7 +583,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 2
     .line 3
@@ -604,7 +596,7 @@
     .line 6
     :cond_0
     :try_start_0
-    invoke-virtual {v0}, Lio/sentry/m6;->getExecutorService()Lio/sentry/h1;
+    invoke-virtual {v0}, Lio/sentry/o6;->getExecutorService()Lio/sentry/j1;
 
     .line 7
     .line 8
@@ -612,42 +604,43 @@
     move-result-object v0
 
     .line 10
-    new-instance v1, Lio/sentry/android/core/d0;
+    new-instance v1, Lg26;
 
     .line 11
     .line 12
-    const/4 v2, 0x2
+    const/16 v2, 0x1d
 
     .line 13
-    invoke-direct {v1, v2, p0}, Lio/sentry/android/core/d0;-><init>(ILjava/lang/Object;)V
-
     .line 14
+    invoke-direct {v1, v2, p0}, Lg26;-><init>(ILjava/lang/Object;)V
+
     .line 15
     .line 16
-    invoke-interface {v0, v1}, Lio/sentry/h1;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+    .line 17
+    invoke-interface {v0, v1}, Lio/sentry/j1;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
     :try_end_0
     .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 17
     .line 18
     .line 19
+    .line 20
     return-void
 
-    .line 20
-    :catch_0
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->S:Lio/sentry/android/core/SentryAndroidOptions;
-
     .line 21
-    .line 22
-    invoke-virtual {p0, v0}, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->l(Lio/sentry/android/core/SentryAndroidOptions;)V
+    :catch_0
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Z:Lio/sentry/android/core/SentryAndroidOptions;
 
+    .line 22
     .line 23
+    invoke-virtual {p0, v0}, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->p(Lio/sentry/android/core/SentryAndroidOptions;)V
+
     .line 24
     .line 25
+    .line 26
     return-void
 .end method
 
-.method public final i(Lio/sentry/j4;Lio/sentry/android/core/SentryAndroidOptions;)V
+.method public final m(Lio/sentry/l4;Lio/sentry/android/core/SentryAndroidOptions;)V
     .locals 2
 
     .line 1
@@ -667,7 +660,7 @@
 
     .line 8
     :cond_0
-    iget-boolean v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->V:Z
+    iget-boolean v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->e0:Z
 
     .line 9
     .line 10
@@ -675,7 +668,7 @@
 
     .line 11
     .line 12
-    iget-boolean v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->W:Z
+    iget-boolean v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->f0:Z
 
     .line 13
     .line 14
@@ -683,7 +676,7 @@
 
     .line 15
     .line 16
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->R:Lio/sentry/android/core/w1;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Y:Lio/sentry/android/core/i2;
 
     .line 17
     .line 18
@@ -696,7 +689,7 @@
     .line 21
     :cond_1
     :try_start_0
-    invoke-virtual {p2}, Lio/sentry/m6;->getExecutorService()Lio/sentry/h1;
+    invoke-virtual {p2}, Lio/sentry/o6;->getExecutorService()Lio/sentry/j1;
 
     .line 22
     .line 23
@@ -704,16 +697,16 @@
     move-result-object v0
 
     .line 25
-    new-instance v1, Lio/sentry/android/core/g1;
+    new-instance v1, Lio/sentry/android/core/s1;
 
     .line 26
     .line 27
-    invoke-direct {v1, p0, p1, p2}, Lio/sentry/android/core/g1;-><init>(Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;Lio/sentry/d1;Lio/sentry/android/core/SentryAndroidOptions;)V
+    invoke-direct {v1, p0, p1, p2}, Lio/sentry/android/core/s1;-><init>(Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;Lio/sentry/f1;Lio/sentry/android/core/SentryAndroidOptions;)V
 
     .line 28
     .line 29
     .line 30
-    invoke-interface {v0, v1}, Lio/sentry/h1;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+    invoke-interface {v0, v1}, Lio/sentry/j1;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -724,30 +717,30 @@
 
     .line 34
     :catchall_0
-    invoke-virtual {p2}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p2}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 35
     .line 36
     .line 37
-    move-result-object p1
+    move-result-object p0
 
     .line 38
-    sget-object p2, Lio/sentry/m5;->WARNING:Lio/sentry/m5;
+    sget-object p1, Lio/sentry/o5;->WARNING:Lio/sentry/o5;
 
     .line 39
     .line 40
-    const/4 v0, 0x0
+    const/4 p2, 0x0
 
     .line 41
-    new-array v0, v0, [Ljava/lang/Object;
+    new-array p2, p2, [Ljava/lang/Object;
 
     .line 42
     .line 43
-    const-string v1, "Failed to start SystemEventsBreadcrumbsIntegration on executor thread."
+    const-string v0, "Failed to start SystemEventsBreadcrumbsIntegration on executor thread."
 
     .line 44
     .line 45
-    invoke-interface {p1, p2, v1, v0}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, p1, v0, p2}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 46
     .line 47
@@ -757,127 +750,124 @@
     return-void
 .end method
 
-.method public final l(Lio/sentry/android/core/SentryAndroidOptions;)V
-    .locals 4
+.method public final p(Lio/sentry/android/core/SentryAndroidOptions;)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->a0:Lio/sentry/util/a;
+    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->j0:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
     const/4 v1, 0x1
 
-    .line 8
+    .line 7
     :try_start_0
-    iput-boolean v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->W:Z
+    iput-boolean v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->f0:Z
 
+    .line 8
     .line 9
-    .line 10
-    iget-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->R:Lio/sentry/android/core/w1;
+    iget-object v1, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Y:Lio/sentry/android/core/i2;
 
+    .line 10
     .line 11
-    .line 12
     const/4 v2, 0x0
 
-    .line 13
-    iput-object v2, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->R:Lio/sentry/android/core/w1;
+    .line 12
+    iput-object v2, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Y:Lio/sentry/android/core/i2;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
+    .line 13
     .line 14
-    .line 15
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
+    .line 15
     .line 16
     .line 17
-    .line 18
     if-eqz v1, :cond_0
 
+    .line 18
     .line 19
-    .line 20
     :try_start_1
-    iget-object v0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->Q:Landroid/content/Context;
+    iget-object p0, p0, Lio/sentry/android/core/SystemEventsBreadcrumbsIntegration;->X:Landroid/content/Context;
 
+    .line 20
     .line 21
-    .line 22
-    invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    .line 22
     .line 23
     .line 24
-    .line 25
     return-void
 
-    .line 26
+    .line 25
     :catchall_0
-    move-exception v0
+    move-exception p0
+
+    .line 26
+    invoke-virtual {p1}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 27
-    invoke-virtual {p1}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
-
     .line 28
     .line 29
-    .line 30
     move-result-object p1
 
-    .line 31
-    sget-object v1, Lio/sentry/m5;->ERROR:Lio/sentry/m5;
+    .line 30
+    sget-object v0, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
 
+    .line 31
     .line 32
+    const/4 v1, 0x0
+
     .line 33
-    const/4 v2, 0x0
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 34
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 35
+    const-string v2, "Failed to unregister SystemEventsBroadcastReceiver"
+
     .line 36
-    const-string v3, "Failed to unregister SystemEventsBroadcastReceiver"
-
     .line 37
-    .line 38
-    invoke-interface {p1, v1, v0, v3, v2}, Lio/sentry/ILogger;->c(Lio/sentry/m5;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p1, v0, p0, v2, v1}, Lio/sentry/ILogger;->c(Lio/sentry/o5;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 38
     .line 39
     .line 40
-    .line 41
     :cond_0
     return-void
 
-    .line 42
+    .line 41
     :catchall_1
-    move-exception p1
+    move-exception p0
 
-    .line 43
+    .line 42
     :try_start_2
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
+    .line 43
     .line 44
     .line 45
-    .line 46
     goto :goto_0
 
-    .line 47
+    .line 46
     :catchall_2
-    move-exception v0
+    move-exception p1
+
+    .line 47
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 48
-    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
     .line 49
     .line 50
-    .line 51
     :goto_0
-    throw p1
+    throw p0
 .end method

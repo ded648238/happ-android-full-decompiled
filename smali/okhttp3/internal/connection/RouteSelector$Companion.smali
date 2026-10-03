@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/RouteSelector$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -48,7 +48,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -63,7 +63,7 @@
 
 # virtual methods
 .method public final getSocketHost(Ljava/net/InetSocketAddress;)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -76,10 +76,10 @@
     .line 5
     .line 6
     .line 7
-    move-result-object v0
+    move-result-object p0
 
     .line 8
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 9
     .line 10
@@ -88,30 +88,30 @@
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    move-result-object p0
 
     .line 14
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 15
     .line 16
     .line 17
-    return-object p1
+    return-object p0
 
     .line 18
     :cond_0
-    invoke-virtual {v0}, Ljava/net/InetAddress;->getHostAddress()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/net/InetAddress;->getHostAddress()Ljava/lang/String;
 
     .line 19
     .line 20
     .line 21
-    move-result-object p1
+    move-result-object p0
 
     .line 22
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 23
     .line 24
     .line 25
-    return-object p1
+    return-object p0
 .end method

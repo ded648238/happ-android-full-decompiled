@@ -1,12 +1,21 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class ca5 {
-    public static int copy = 2132017265;
-    public static int expand_button_title = 2132017343;
-    public static int not_set = 2132017653;
-    public static int preference_copied = 2132017685;
-    public static int summary_collapsed_preference_list = 2132017956;
-    public static int v7_preference_off = 2132018102;
-    public static int v7_preference_on = 2132018103;
+/* loaded from: classes3.dex */
+public final class ca5 extends d31 {
+    public /* synthetic */ Object c0;
+    public int d0;
+    public final /* synthetic */ k e0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ca5(k kVar, b31 b31Var) {
+        super(b31Var);
+        this.e0 = kVar;
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.d0 |= Integer.MIN_VALUE;
+        return this.e0.k(null, this);
+    }
 }

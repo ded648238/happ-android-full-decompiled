@@ -1,82 +1,26 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class kg7 extends og7 {
-    public final /* synthetic */ int a;
-    public final int b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class kg7 implements vg7 {
+    public final String a;
 
-    public /* synthetic */ kg7(int i, int i2) {
-        this.a = i2;
-        this.b = i;
+    public /* synthetic */ kg7(String str) {
+        this.a = str;
     }
 
-    @Override // defpackage.rg7
-    public final int a() {
-        switch (this.a) {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
+    public final boolean equals(Object obj) {
+        if (obj instanceof kg7) {
+            return m93.h(this.a, ((kg7) obj).a);
         }
-        return this.b;
+        return false;
     }
 
-    @Override // defpackage.rg7
-    public final char b() {
-        switch (this.a) {
-            case 0:
-                return 'h';
-            case 1:
-                return 'a';
-            case 2:
-                return 'H';
-            default:
-                return 'm';
-        }
+    public final int hashCode() {
+        return this.a.hashCode();
     }
 
-    @Override // defpackage.og7
-    public final void c(g11 g11Var) {
-        int i = this.a;
-        hn4 hn4Var = hn4.Q;
-        hn4 hn4Var2 = hn4.R;
-        int i2 = this.b;
-        switch (i) {
-            case 0:
-                g11Var.getClass();
-                wg7.f(this);
-                throw null;
-            case 1:
-                g11Var.getClass();
-                wg7.f(this);
-                throw null;
-            case 2:
-                g11Var.getClass();
-                if (i2 == 1) {
-                    g11Var.d(hn4Var);
-                    return;
-                } else if (i2 == 2) {
-                    g11Var.d(hn4Var2);
-                    return;
-                } else {
-                    wg7.b(this);
-                    throw null;
-                }
-            default:
-                g11Var.getClass();
-                if (i2 == 1) {
-                    g11Var.l(hn4Var);
-                    return;
-                } else if (i2 == 2) {
-                    g11Var.l(hn4Var2);
-                    return;
-                } else {
-                    wg7.b(this);
-                    throw null;
-                }
-        }
+    public final String toString() {
+        return c73.j("AutoUpdateIntervalChange(interval=", this.a, ")");
     }
 }

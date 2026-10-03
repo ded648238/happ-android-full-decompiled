@@ -1,236 +1,84 @@
-.class public final Lxh1;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lxh1;
+.super Ltj2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/lang/Comparable;
+.implements Lmi2;
 
 
-# instance fields
-.field public final Q:F
+# static fields
+.field public static final X:Lxh1;
 
 
 # direct methods
-.method public synthetic constructor <init>(F)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lxh1;
 
     .line 2
     .line 3
+    const-string v4, "declaresDefaultValue()Z"
+
     .line 4
-    iput p1, p0, Lxh1;->Q:F
-
     .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static final a(FF)Z
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    if-nez p0, :cond_0
+    const/4 v5, 0x0
 
     .line 6
+    const/4 v1, 0x1
+
     .line 7
-    const/4 p0, 0x1
-
-    .line 8
-    return p0
-
-    .line 9
-    :cond_0
-    const/4 p0, 0x0
-
-    .line 10
-    return p0
-.end method
-
-.method public static b(F)Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Ljava/lang/Float;->isNaN(F)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    const-string p0, "Dp.Unspecified"
+    const-class v2, Lbg8;
 
     .line 8
     .line 9
-    return-object p0
+    const-string v3, "declaresDefaultValue"
 
     .line 10
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 11
-    .line 12
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v0 .. v5}, Ltj2;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
+    .line 12
     .line 13
     .line 14
+    sput-object v0, Lxh1;->X:Lxh1;
+
     .line 15
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
     .line 16
-    .line 17
-    .line 18
-    const-string p0, ".dp"
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object p0
-
-    .line 27
-    return-object p0
+    return-void
 .end method
 
 
 # virtual methods
-.method public final compareTo(Ljava/lang/Object;)I
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    check-cast p1, Lxh1;
+    check-cast p1, Lbg8;
 
     .line 2
     .line 3
-    iget p1, p1, Lxh1;->Q:F
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
-    iget v0, p0, Lxh1;->Q:F
-
     .line 6
-    .line 7
-    invoke-static {v0, p1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result p1
-
-    .line 11
-    return p1
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    instance-of v0, p1, Lxh1;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    check-cast p1, Lxh1;
+    invoke-virtual {p1}, Lbg8;->A0()Z
 
     .line 7
     .line 8
-    iget p1, p1, Lxh1;->Q:F
-
     .line 9
+    move-result p0
+
     .line 10
-    iget v0, p0, Lxh1;->Q:F
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 11
     .line 12
-    invoke-static {v0, p1}, Ljava/lang/Float;->compare(FF)I
-
     .line 13
+    move-result-object p0
+
     .line 14
-    .line 15
-    move-result p1
-
-    .line 16
-    if-eqz p1, :cond_1
-
-    .line 17
-    .line 18
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 19
-    return p1
-
-    .line 20
-    :cond_1
-    const/4 p1, 0x1
-
-    .line 21
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lxh1;->Q:F
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lxh1;->Q:F
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lxh1;->b(F)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
+    return-object p0
 .end method

@@ -1,9 +1,23 @@
 package defpackage;
 
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class ek3 {
-    public static final AtomicBoolean a = new AtomicBoolean(false);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Retention(RetentionPolicy.RUNTIME)
+/* loaded from: classes.dex */
+public @interface ek3 {
+    Class defaultImpl() default ek3.class;
+
+    ak3 include() default ak3.X;
+
+    String property() default "";
+
+    p25 requireTypeIdForSubtypes() default p25.Y;
+
+    bk3 use();
+
+    boolean visible() default false;
+
+    p25 writeTypeIdForDefaultImpl() default p25.Y;
 }

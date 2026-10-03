@@ -1,65 +1,91 @@
 .class public final Lx74;
-.super Landroid/os/RemoteCallbackList;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Laj5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:Landroidx/room/MultiInstanceInvalidationService;
+.field public a:[J
 
-
-# direct methods
-.method public constructor <init>(Landroidx/room/MultiInstanceInvalidationService;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lx74;->a:Landroidx/room/MultiInstanceInvalidationService;
-
-    .line 2
-    .line 3
-    invoke-direct {p0}, Landroid/os/RemoteCallbackList;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
+.field public b:I
 
 
 # virtual methods
-.method public final onCallbackDied(Landroid/os/IInterface;Ljava/lang/Object;)V
-    .locals 0
+.method public final a()Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, Ljj2;
+    iget-object v0, p0, Lx74;->a:[J
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget p0, p0, Lx74;->b:I
 
     .line 4
     .line 5
-    .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0, p0}, Ljava/util/Arrays;->copyOf([JI)[J
 
+    .line 6
     .line 7
     .line 8
+    move-result-object p0
+
     .line 9
-    iget-object p1, p0, Lx74;->a:Landroidx/room/MultiInstanceInvalidationService;
+    return-object p0
+.end method
+
+.method public final b(I)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lx74;->a:[J
+
+    .line 2
+    .line 3
+    array-length v1, v0
+
+    .line 4
+    if-ge v1, p1, :cond_1
+
+    .line 5
+    .line 6
+    array-length v1, v0
+
+    .line 7
+    mul-int/lit8 v1, v1, 0x2
+
+    .line 8
+    .line 9
+    if-ge p1, v1, :cond_0
 
     .line 10
     .line 11
-    iget-object p1, p1, Landroidx/room/MultiInstanceInvalidationService;->R:Ljava/util/LinkedHashMap;
+    move p1, v1
 
     .line 12
-    .line 13
-    check-cast p2, Ljava/lang/Integer;
+    :cond_0
+    invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([JI)[J
 
+    .line 13
     .line 14
     .line 15
-    invoke-interface {p1, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p1
 
     .line 16
+    iput-object p1, p0, Lx74;->a:[J
+
     .line 17
     .line 18
+    :cond_1
     return-void
+.end method
+
+.method public final d()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lx74;->b:I
+
+    .line 2
+    .line 3
+    return p0
 .end method

@@ -1,12 +1,12 @@
 package com.github.luben.zstd;
 
 import com.github.luben.zstd.util.Native;
-import defpackage.fn;
+import defpackage.i60;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ZstdDecompressCtx extends AutoCloseBase {
     private ZstdDictDecompress decompression_dict = null;
     private long nativePtr;
@@ -17,12 +17,12 @@ public class ZstdDecompressCtx extends AutoCloseBase {
 
     public ZstdDecompressCtx() {
         this.nativePtr = 0L;
-        long jInit = init();
-        this.nativePtr = jInit;
-        if (0 != jInit) {
+        long init = init();
+        this.nativePtr = init;
+        if (0 != init) {
             storeFence();
         } else {
-            fn.s("ZSTD_createDeCompressCtx failed");
+            i60.g("ZSTD_createDeCompressCtx failed");
             throw null;
         }
     }
@@ -41,7 +41,7 @@ public class ZstdDecompressCtx extends AutoCloseBase {
         if (this.nativePtr != 0) {
             return;
         }
-        fn.s("Decompression context is closed");
+        i60.g("Decompression context is closed");
     }
 
     private static native void free(long j);
@@ -60,10 +60,10 @@ public class ZstdDecompressCtx extends AutoCloseBase {
     }
 
     public int decompress(ByteBuffer byteBuffer, ByteBuffer byteBuffer2) throws ZstdException {
-        int iDecompressDirectByteBuffer = decompressDirectByteBuffer(byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position(), byteBuffer2, byteBuffer2.position(), byteBuffer2.limit() - byteBuffer2.position());
+        int decompressDirectByteBuffer = decompressDirectByteBuffer(byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position(), byteBuffer2, byteBuffer2.position(), byteBuffer2.limit() - byteBuffer2.position());
         byteBuffer2.position(byteBuffer2.limit());
-        byteBuffer.position(byteBuffer.position() + iDecompressDirectByteBuffer);
-        return iDecompressDirectByteBuffer;
+        byteBuffer.position(byteBuffer.position() + decompressDirectByteBuffer);
+        return decompressDirectByteBuffer;
     }
 
     public int decompressByteArray(byte[] bArr, int i, int i2, byte[] bArr2, int i3, int i4) {
@@ -72,14 +72,14 @@ public class ZstdDecompressCtx extends AutoCloseBase {
         ensureOpen();
         acquireSharedLock();
         try {
-            long jDecompressByteArray0 = decompressByteArray0(this.nativePtr, bArr, i, i2, bArr2, i3, i4);
-            if (Zstd.isError(jDecompressByteArray0)) {
-                throw new ZstdException(jDecompressByteArray0);
+            long decompressByteArray0 = decompressByteArray0(this.nativePtr, bArr, i, i2, bArr2, i3, i4);
+            if (Zstd.isError(decompressByteArray0)) {
+                throw new ZstdException(decompressByteArray0);
             }
-            if (jDecompressByteArray0 > 2147483647L) {
+            if (decompressByteArray0 > 2147483647L) {
                 throw new ZstdException(Zstd.errGeneric(), "Output size is greater than MAX_INT");
             }
-            int i5 = (int) jDecompressByteArray0;
+            int i5 = (int) decompressByteArray0;
             releaseSharedLock();
             return i5;
         } catch (Throwable th) {
@@ -90,7 +90,7 @@ public class ZstdDecompressCtx extends AutoCloseBase {
 
     public int decompressByteArrayToDirectByteBuffer(ByteBuffer byteBuffer, int i, int i2, byte[] bArr, int i3, int i4) {
         if (!byteBuffer.isDirect()) {
-            fn.r("dstBuff must be a direct buffer");
+            i60.p("dstBuff must be a direct buffer");
             return 0;
         }
         Objects.checkFromIndexSize(i3, i4, bArr.length);
@@ -98,14 +98,14 @@ public class ZstdDecompressCtx extends AutoCloseBase {
         ensureOpen();
         acquireSharedLock();
         try {
-            long jDecompressByteArrayToDirectByteBuffer0 = decompressByteArrayToDirectByteBuffer0(this.nativePtr, byteBuffer, i, i2, bArr, i3, i4);
-            if (Zstd.isError(jDecompressByteArrayToDirectByteBuffer0)) {
-                throw new ZstdException(jDecompressByteArrayToDirectByteBuffer0);
+            long decompressByteArrayToDirectByteBuffer0 = decompressByteArrayToDirectByteBuffer0(this.nativePtr, byteBuffer, i, i2, bArr, i3, i4);
+            if (Zstd.isError(decompressByteArrayToDirectByteBuffer0)) {
+                throw new ZstdException(decompressByteArrayToDirectByteBuffer0);
             }
-            if (jDecompressByteArrayToDirectByteBuffer0 > 2147483647L) {
+            if (decompressByteArrayToDirectByteBuffer0 > 2147483647L) {
                 throw new ZstdException(Zstd.errGeneric(), "Output size is greater than MAX_INT");
             }
-            int i5 = (int) jDecompressByteArrayToDirectByteBuffer0;
+            int i5 = (int) decompressByteArrayToDirectByteBuffer0;
             releaseSharedLock();
             return i5;
         } catch (Throwable th) {
@@ -117,25 +117,25 @@ public class ZstdDecompressCtx extends AutoCloseBase {
     public int decompressDirectByteBuffer(ByteBuffer byteBuffer, int i, int i2, ByteBuffer byteBuffer2, int i3, int i4) {
         ensureOpen();
         if (!byteBuffer2.isDirect()) {
-            fn.r("srcBuff must be a direct buffer");
+            i60.p("srcBuff must be a direct buffer");
             return 0;
         }
         if (!byteBuffer.isDirect()) {
-            fn.r("dstBuff must be a direct buffer");
+            i60.p("dstBuff must be a direct buffer");
             return 0;
         }
         Objects.checkFromIndexSize(i3, i4, byteBuffer2.limit());
         Objects.checkFromIndexSize(i, i2, byteBuffer.limit());
         acquireSharedLock();
         try {
-            long jDecompressDirectByteBuffer0 = decompressDirectByteBuffer0(this.nativePtr, byteBuffer, i, i2, byteBuffer2, i3, i4);
-            if (Zstd.isError(jDecompressDirectByteBuffer0)) {
-                throw new ZstdException(jDecompressDirectByteBuffer0);
+            long decompressDirectByteBuffer0 = decompressDirectByteBuffer0(this.nativePtr, byteBuffer, i, i2, byteBuffer2, i3, i4);
+            if (Zstd.isError(decompressDirectByteBuffer0)) {
+                throw new ZstdException(decompressDirectByteBuffer0);
             }
-            if (jDecompressDirectByteBuffer0 > 2147483647L) {
+            if (decompressDirectByteBuffer0 > 2147483647L) {
                 throw new ZstdException(Zstd.errGeneric(), "Output size is greater than MAX_INT");
             }
-            int i5 = (int) jDecompressDirectByteBuffer0;
+            int i5 = (int) decompressDirectByteBuffer0;
             releaseSharedLock();
             return i5;
         } catch (Throwable th) {
@@ -148,25 +148,22 @@ public class ZstdDecompressCtx extends AutoCloseBase {
         ensureOpen();
         acquireSharedLock();
         try {
-            long jDecompressDirectByteBufferStream0 = decompressDirectByteBufferStream0(this.nativePtr, byteBuffer, byteBuffer.position(), byteBuffer.limit(), byteBuffer2, byteBuffer2.position(), byteBuffer2.limit());
-            if ((2147483648L & jDecompressDirectByteBufferStream0) != 0) {
-                long j = -(jDecompressDirectByteBufferStream0 & 255);
+            long decompressDirectByteBufferStream0 = decompressDirectByteBufferStream0(this.nativePtr, byteBuffer, byteBuffer.position(), byteBuffer.limit(), byteBuffer2, byteBuffer2.position(), byteBuffer2.limit());
+            if ((2147483648L & decompressDirectByteBufferStream0) != 0) {
+                long j = -(decompressDirectByteBufferStream0 & 255);
                 throw new ZstdException(j, Zstd.getErrorName(j));
             }
-            byteBuffer2.position((int) (2147483647L & jDecompressDirectByteBufferStream0));
-            byteBuffer.position(Integer.MAX_VALUE & ((int) (jDecompressDirectByteBufferStream0 >>> 32)));
-            boolean z = (jDecompressDirectByteBufferStream0 >>> 63) == 1;
+            byteBuffer2.position((int) (2147483647L & decompressDirectByteBufferStream0));
+            byteBuffer.position(((int) (decompressDirectByteBufferStream0 >>> 32)) & Integer.MAX_VALUE);
+            return (decompressDirectByteBufferStream0 >>> 63) == 1;
+        } finally {
             releaseSharedLock();
-            return z;
-        } catch (Throwable th) {
-            releaseSharedLock();
-            throw th;
         }
     }
 
     public int decompressDirectByteBufferToByteArray(byte[] bArr, int i, int i2, ByteBuffer byteBuffer, int i3, int i4) {
         if (!byteBuffer.isDirect()) {
-            fn.r("srcBuff must be a direct buffer");
+            i60.p("srcBuff must be a direct buffer");
             return 0;
         }
         Objects.checkFromIndexSize(i3, i4, byteBuffer.limit());
@@ -174,14 +171,14 @@ public class ZstdDecompressCtx extends AutoCloseBase {
         ensureOpen();
         acquireSharedLock();
         try {
-            long jDecompressDirectByteBufferToByteArray0 = decompressDirectByteBufferToByteArray0(this.nativePtr, bArr, i, i2, byteBuffer, i3, i4);
-            if (Zstd.isError(jDecompressDirectByteBufferToByteArray0)) {
-                throw new ZstdException(jDecompressDirectByteBufferToByteArray0);
+            long decompressDirectByteBufferToByteArray0 = decompressDirectByteBufferToByteArray0(this.nativePtr, bArr, i, i2, byteBuffer, i3, i4);
+            if (Zstd.isError(decompressDirectByteBufferToByteArray0)) {
+                throw new ZstdException(decompressDirectByteBufferToByteArray0);
             }
-            if (jDecompressDirectByteBufferToByteArray0 > 2147483647L) {
+            if (decompressDirectByteBufferToByteArray0 > 2147483647L) {
                 throw new ZstdException(Zstd.errGeneric(), "Output size is greater than MAX_INT");
             }
-            int i5 = (int) jDecompressDirectByteBufferToByteArray0;
+            int i5 = (int) decompressDirectByteBufferToByteArray0;
             releaseSharedLock();
             return i5;
         } catch (Throwable th) {
@@ -197,23 +194,32 @@ public class ZstdDecompressCtx extends AutoCloseBase {
             free(j);
             this.nativePtr = 0L;
         }
+        ZstdDictDecompress zstdDictDecompress = this.decompression_dict;
+        if (zstdDictDecompress != null) {
+            zstdDictDecompress.releaseSharedLock();
+            this.decompression_dict = null;
+        }
     }
 
     public ZstdDecompressCtx loadDict(ZstdDictDecompress zstdDictDecompress) {
         ensureOpen();
         acquireSharedLock();
-        zstdDictDecompress.acquireSharedLock();
+        if (zstdDictDecompress != null) {
+            zstdDictDecompress.acquireSharedLock();
+        }
         try {
-            long jLoadDDictFast0 = loadDDictFast0(this.nativePtr, zstdDictDecompress);
-            if (Zstd.isError(jLoadDDictFast0)) {
-                throw new ZstdException(jLoadDDictFast0);
+            long loadDDictFast0 = loadDDictFast0(this.nativePtr, zstdDictDecompress);
+            if (Zstd.isError(loadDDictFast0)) {
+                throw new ZstdException(loadDDictFast0);
+            }
+            ZstdDictDecompress zstdDictDecompress2 = this.decompression_dict;
+            if (zstdDictDecompress2 != null) {
+                zstdDictDecompress2.releaseSharedLock();
             }
             this.decompression_dict = zstdDictDecompress;
-            zstdDictDecompress.releaseSharedLock();
             releaseSharedLock();
             return this;
         } catch (Throwable th) {
-            zstdDictDecompress.releaseSharedLock();
             releaseSharedLock();
             throw th;
         }
@@ -223,14 +229,17 @@ public class ZstdDecompressCtx extends AutoCloseBase {
         ensureOpen();
         acquireSharedLock();
         try {
-            long jReset0 = reset0(this.nativePtr);
-            if (Zstd.isError(jReset0)) {
-                throw new ZstdException(jReset0);
+            long reset0 = reset0(this.nativePtr);
+            if (Zstd.isError(reset0)) {
+                throw new ZstdException(reset0);
             }
+            ZstdDictDecompress zstdDictDecompress = this.decompression_dict;
+            if (zstdDictDecompress != null) {
+                zstdDictDecompress.releaseSharedLock();
+                this.decompression_dict = null;
+            }
+        } finally {
             releaseSharedLock();
-        } catch (Throwable th) {
-            releaseSharedLock();
-            throw th;
         }
     }
 
@@ -246,36 +255,38 @@ public class ZstdDecompressCtx extends AutoCloseBase {
         ensureOpen();
         acquireSharedLock();
         try {
-            long jLoadDDict0 = loadDDict0(this.nativePtr, bArr);
-            if (!Zstd.isError(jLoadDDict0)) {
-                this.decompression_dict = null;
-                releaseSharedLock();
+            long loadDDict0 = loadDDict0(this.nativePtr, bArr);
+            if (!Zstd.isError(loadDDict0)) {
+                ZstdDictDecompress zstdDictDecompress = this.decompression_dict;
+                if (zstdDictDecompress != null) {
+                    zstdDictDecompress.releaseSharedLock();
+                    this.decompression_dict = null;
+                }
                 return this;
             }
-            throw new ZstdException(jLoadDDict0);
-        } catch (Throwable th) {
+            throw new ZstdException(loadDDict0);
+        } finally {
             releaseSharedLock();
-            throw th;
         }
     }
 
     public int decompress(ByteBuffer byteBuffer, byte[] bArr) throws ZstdException {
-        int iDecompressByteArrayToDirectByteBuffer = decompressByteArrayToDirectByteBuffer(byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position(), bArr, 0, bArr.length);
-        byteBuffer.position(byteBuffer.position() + iDecompressByteArrayToDirectByteBuffer);
-        return iDecompressByteArrayToDirectByteBuffer;
+        int decompressByteArrayToDirectByteBuffer = decompressByteArrayToDirectByteBuffer(byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position(), bArr, 0, bArr.length);
+        byteBuffer.position(byteBuffer.position() + decompressByteArrayToDirectByteBuffer);
+        return decompressByteArrayToDirectByteBuffer;
     }
 
     public int decompress(byte[] bArr, ByteBuffer byteBuffer) throws ZstdException {
-        int iDecompressDirectByteBufferToByteArray = decompressDirectByteBufferToByteArray(bArr, 0, bArr.length, byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position());
+        int decompressDirectByteBufferToByteArray = decompressDirectByteBufferToByteArray(bArr, 0, bArr.length, byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position());
         byteBuffer.position(byteBuffer.limit());
-        return iDecompressDirectByteBufferToByteArray;
+        return decompressDirectByteBufferToByteArray;
     }
 
     public ByteBuffer decompress(ByteBuffer byteBuffer, int i) throws ZstdException {
-        ByteBuffer byteBufferAllocateDirect = ByteBuffer.allocateDirect(i);
-        decompressDirectByteBuffer(byteBufferAllocateDirect, 0, i, byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position());
+        ByteBuffer allocateDirect = ByteBuffer.allocateDirect(i);
+        decompressDirectByteBuffer(allocateDirect, 0, i, byteBuffer, byteBuffer.position(), byteBuffer.limit() - byteBuffer.position());
         byteBuffer.position(byteBuffer.limit());
-        return byteBufferAllocateDirect;
+        return allocateDirect;
     }
 
     public int decompress(byte[] bArr, byte[] bArr2) {
@@ -289,8 +300,8 @@ public class ZstdDecompressCtx extends AutoCloseBase {
     public byte[] decompress(byte[] bArr, int i, int i2, int i3) throws ZstdException {
         if (i3 >= 0) {
             byte[] bArr2 = new byte[i3];
-            int iDecompressByteArray = decompressByteArray(bArr2, 0, i3, bArr, i, i2);
-            return iDecompressByteArray != i3 ? Arrays.copyOfRange(bArr2, 0, iDecompressByteArray) : bArr2;
+            int decompressByteArray = decompressByteArray(bArr2, 0, i3, bArr, i, i2);
+            return decompressByteArray != i3 ? Arrays.copyOfRange(bArr2, 0, decompressByteArray) : bArr2;
         }
         throw new ZstdException(Zstd.errGeneric(), "Original size should not be negative");
     }

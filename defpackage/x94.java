@@ -1,32 +1,28 @@
 package defpackage;
 
-import su.happ.proxyutility.dto.ProfileRoutingSettings;
+import java.util.ArrayList;
+import su.happ.proxyutility.feature.main.MainActivity;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class x94 {
-    public static final x94 Q;
-    public static final x94 R;
-    public static final x94 S;
-    public static final /* synthetic */ x94[] T;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class x94 extends d31 {
+    public ArrayList c0;
+    public int d0;
+    public int e0;
+    public /* synthetic */ Object f0;
+    public final /* synthetic */ MainActivity g0;
+    public int h0;
 
-    static {
-        x94 x94Var = new x94(ProfileRoutingSettings.DEFAULT_NAME, 0);
-        Q = x94Var;
-        x94 x94Var2 = new x94("UserInput", 1);
-        R = x94Var2;
-        x94 x94Var3 = new x94("PreventUserInput", 2);
-        S = x94Var3;
-        T = new x94[]{x94Var, x94Var2, x94Var3};
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public x94(MainActivity mainActivity, d31 d31Var) {
+        super(d31Var);
+        this.g0 = mainActivity;
     }
 
-    public static x94 valueOf(String str) {
-        return (x94) Enum.valueOf(x94.class, str);
-    }
-
-    public static x94[] values() {
-        return (x94[]) T.clone();
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.f0 = obj;
+        this.h0 |= Integer.MIN_VALUE;
+        return MainActivity.B(this.g0, this);
     }
 }

@@ -1,43 +1,31 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class vy implements wi5 {
-    public final fy2 Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class vy implements fk0 {
+    public final uy[] X;
 
-    public /* synthetic */ vy(fy2 fy2Var) {
-        this.Q = fy2Var;
+    public vy(uy[] uyVarArr) {
+        this.X = uyVarArr;
     }
 
-    @Override // defpackage.wi5
-    public final /* synthetic */ Object a(mc5 mc5Var) {
-        return bh7.a;
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj instanceof vy) {
-            return this.Q.equals(((vy) obj).Q);
+    public final void a() {
+        for (uy uyVar : this.X) {
+            um1 um1Var = uyVar.h0;
+            if (um1Var == null) {
+                m93.a0("handle");
+                throw null;
+            }
+            um1Var.a();
         }
-        return false;
     }
 
-    public final int hashCode() {
-        return this.Q.hashCode();
+    @Override // defpackage.fk0
+    public final void b(Throwable th) {
+        a();
     }
 
     public final String toString() {
-        return "BaseRequestDelegate(job=" + this.Q + ")";
-    }
-
-    @Override // defpackage.wi5
-    public final /* synthetic */ void b() {
-    }
-
-    @Override // defpackage.wi5
-    public final /* synthetic */ void c() {
-    }
-
-    @Override // defpackage.wi5
-    public final /* synthetic */ void start() {
+        return "DisposeHandlersOnCancel[" + this.X + ']';
     }
 }

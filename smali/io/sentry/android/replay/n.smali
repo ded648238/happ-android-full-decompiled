@@ -1,27 +1,27 @@
 .class public final synthetic Lio/sentry/android/replay/n;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/f4;
+.implements Lio/sentry/h4;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
 
-.field public final synthetic R:Lqe5;
+.field public final synthetic Y:Lvy5;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILqe5;)V
+.method public synthetic constructor <init>(ILvy5;)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lio/sentry/android/replay/n;->Q:I
+    iput p1, p0, Lio/sentry/android/replay/n;->X:I
 
     .line 2
     .line 3
-    iput-object p2, p0, Lio/sentry/android/replay/n;->R:Lqe5;
+    iput-object p2, p0, Lio/sentry/android/replay/n;->Y:Lvy5;
 
     .line 4
     .line 5
@@ -35,15 +35,15 @@
 
 
 # virtual methods
-.method public final g(Lio/sentry/b1;)V
-    .locals 2
+.method public final i(Lio/sentry/d1;)V
+    .locals 1
 
     .line 1
-    iget v0, p0, Lio/sentry/android/replay/n;->Q:I
+    iget v0, p0, Lio/sentry/android/replay/n;->X:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/sentry/android/replay/n;->R:Lqe5;
+    iget-object p0, p0, Lio/sentry/android/replay/n;->Y:Lvy5;
 
     .line 4
     .line 5
@@ -61,7 +61,7 @@
 
     .line 12
     .line 13
-    invoke-interface {p1}, Lio/sentry/b1;->p()Ljava/util/Queue;
+    invoke-interface {p1}, Lio/sentry/d1;->r()Ljava/util/Queue;
 
     .line 14
     .line 15
@@ -74,7 +74,7 @@
     .line 18
     .line 19
     .line 20
-    iput-object v0, v1, Lqe5;->Q:Ljava/lang/Object;
+    iput-object v0, p0, Lvy5;->X:Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -82,7 +82,7 @@
 
     .line 23
     :pswitch_0
-    sget v0, Lio/sentry/android/replay/ReplayIntegration;->h0:I
+    sget v0, Lio/sentry/android/replay/ReplayIntegration;->o0:I
 
     .line 24
     .line 25
@@ -91,7 +91,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-interface {p1}, Lio/sentry/b1;->B()Ljava/lang/String;
+    invoke-interface {p1}, Lio/sentry/d1;->D()Ljava/lang/String;
 
     .line 29
     .line 30
@@ -107,7 +107,7 @@
 
     .line 35
     .line 36
-    invoke-static {v0, p1, p1}, Lsl6;->P0(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, p1}, Lea7;->r1(CLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 37
     .line 38
@@ -123,7 +123,7 @@
 
     .line 42
     :goto_0
-    iput-object p1, v1, Lqe5;->Q:Ljava/lang/Object;
+    iput-object p1, p0, Lvy5;->X:Ljava/lang/Object;
 
     .line 43
     .line 44

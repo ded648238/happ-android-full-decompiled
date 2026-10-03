@@ -1,22 +1,62 @@
 package defpackage;
 
-import android.util.Size;
-import java.util.Comparator;
+import java.util.Iterator;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ao0 implements Comparator {
-    public final boolean Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ao0 implements ss0, Iterable, xn3 {
+    public final char X;
+    public final char Y;
+    public final int Z = 1;
 
-    public ao0(boolean z) {
-        this.Q = z;
+    static {
+        new ao0((char) 1, (char) 0);
     }
 
-    @Override // java.util.Comparator
-    public final int compare(Object obj, Object obj2) {
-        Size size = (Size) obj;
-        Size size2 = (Size) obj2;
-        int iSignum = Long.signum((((long) size.getWidth()) * ((long) size.getHeight())) - (((long) size2.getWidth()) * ((long) size2.getHeight())));
-        return this.Q ? iSignum * (-1) : iSignum;
+    public ao0(char c, char c2) {
+        this.X = c;
+        this.Y = (char) l93.w(c, c2, 1);
+    }
+
+    @Override // defpackage.ss0
+    public final Comparable a() {
+        return Character.valueOf(this.X);
+    }
+
+    @Override // defpackage.ss0
+    public final Comparable b() {
+        return Character.valueOf(this.Y);
+    }
+
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof ao0)) {
+            return false;
+        }
+        if (isEmpty() && ((ao0) obj).isEmpty()) {
+            return true;
+        }
+        ao0 ao0Var = (ao0) obj;
+        return this.X == ao0Var.X && this.Y == ao0Var.Y;
+    }
+
+    public final int hashCode() {
+        if (isEmpty()) {
+            return -1;
+        }
+        return (this.X * 31) + this.Y;
+    }
+
+    @Override // defpackage.ss0
+    public final boolean isEmpty() {
+        return this.X > this.Y;
+    }
+
+    @Override // java.lang.Iterable
+    public final Iterator iterator() {
+        return new zn0(this.X, this.Y, this.Z);
+    }
+
+    public final String toString() {
+        return this.X + ".." + this.Y;
     }
 }

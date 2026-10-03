@@ -1,80 +1,189 @@
 .class public final Lrv1;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lut;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public T:Lsv1;
-
-.field public U:Ljava/lang/Object;
-
-.field public V:Ljava/lang/Object;
-
-.field public W:Lvv1;
-
-.field public synthetic X:Ljava/lang/Object;
-
-.field public final synthetic Y:Lsv1;
-
-.field public Z:I
+.field public final l:Lqv1;
 
 
 # direct methods
-.method public constructor <init>(Lsv1;Law0;)V
-    .locals 0
+.method public constructor <init>(Landroid/widget/TextView;)V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lrv1;->Y:Lsv1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
-
     .line 4
+    new-instance v0, Lqv1;
+
     .line 5
     .line 6
+    invoke-direct {v0, p1}, Lqv1;-><init>(Landroid/widget/TextView;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lrv1;->l:Lqv1;
+
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final E0(Landroid/text/method/TransformationMethod;)Landroid/text/method/TransformationMethod;
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lrv1;->X:Ljava/lang/Object;
+    invoke-static {}, Lav1;->d()Z
 
     .line 2
     .line 3
-    iget p1, p0, Lrv1;->Z:I
-
     .line 4
+    move-result v0
+
     .line 5
-    const/high16 v0, -0x80000000
+    if-nez v0, :cond_0
 
     .line 6
     .line 7
-    or-int/2addr p1, v0
+    return-object p1
 
     .line 8
-    iput p1, p0, Lrv1;->Z:I
+    :cond_0
+    iget-object p0, p0, Lrv1;->l:Lqv1;
 
     .line 9
     .line 10
-    iget-object p1, p0, Lrv1;->Y:Lsv1;
+    invoke-virtual {p0, p1}, Lqv1;->E0(Landroid/text/method/TransformationMethod;)Landroid/text/method/TransformationMethod;
 
     .line 11
     .line 12
-    const/4 v0, 0x0
-
     .line 13
-    invoke-virtual {p1, v0, p0}, Lsv1;->b(Lq01;Law0;)Ljava/lang/Object;
+    move-result-object p0
 
     .line 14
-    .line 15
-    .line 16
-    move-result-object p1
+    return-object p0
+.end method
 
-    .line 17
+.method public final I()Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lrv1;->l:Lqv1;
+
+    .line 2
+    .line 3
+    iget-boolean p0, p0, Lqv1;->n:Z
+
+    .line 4
+    .line 5
+    return p0
+.end method
+
+.method public final l0(Z)V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lav1;->d()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    return-void
+
+    .line 8
+    :cond_0
+    iget-object p0, p0, Lrv1;->l:Lqv1;
+
+    .line 9
+    .line 10
+    invoke-virtual {p0, p1}, Lqv1;->l0(Z)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public final o0(Z)V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lav1;->d()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    iget-object p0, p0, Lrv1;->l:Lqv1;
+
+    .line 6
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    iput-boolean p1, p0, Lqv1;->n:Z
+
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_0
+    invoke-virtual {p0, p1}, Lqv1;->o0(Z)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final y([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lav1;->d()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
     return-object p1
+
+    .line 8
+    :cond_0
+    iget-object p0, p0, Lrv1;->l:Lqv1;
+
+    .line 9
+    .line 10
+    invoke-virtual {p0, p1}, Lqv1;->y([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p0
+
+    .line 14
+    return-object p0
 .end method

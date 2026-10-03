@@ -1,30 +1,121 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class gf4 {
-    public static final gf4 Q;
-    public static final gf4 R;
-    public static final gf4 S;
-    public static final /* synthetic */ gf4[] T;
+    public final Map a;
 
-    static {
-        gf4 gf4Var = new gf4("FORCE_FLEXIBILITY", 0);
-        Q = gf4Var;
-        gf4 gf4Var2 = new gf4("NULLABLE", 1);
-        R = gf4Var2;
-        gf4 gf4Var3 = new gf4("NOT_NULL", 2);
-        S = gf4Var3;
-        T = new gf4[]{gf4Var, gf4Var2, gf4Var3};
+    public gf4(Map map) {
+        this.a = map;
     }
 
-    public static gf4 valueOf(String str) {
-        return (gf4) Enum.valueOf(gf4.class, str);
+    public final Object a(float f) {
+        Object next;
+        Iterator it = this.a.entrySet().iterator();
+        if (it.hasNext()) {
+            next = it.next();
+            if (it.hasNext()) {
+                float abs = Math.abs(f - ((Number) ((Map.Entry) next).getValue()).floatValue());
+                do {
+                    Object next2 = it.next();
+                    float abs2 = Math.abs(f - ((Number) ((Map.Entry) next2).getValue()).floatValue());
+                    if (Float.compare(abs, abs2) > 0) {
+                        next = next2;
+                        abs = abs2;
+                    }
+                } while (it.hasNext());
+            }
+        } else {
+            next = null;
+        }
+        Map.Entry entry = (Map.Entry) next;
+        if (entry != null) {
+            return entry.getKey();
+        }
+        return null;
     }
 
-    public static gf4[] values() {
-        return (gf4[]) T.clone();
+    public final Object b(float f, boolean z) {
+        Object next;
+        Iterator it = this.a.entrySet().iterator();
+        if (it.hasNext()) {
+            next = it.next();
+            if (it.hasNext()) {
+                float floatValue = ((Number) ((Map.Entry) next).getValue()).floatValue();
+                float f2 = z ? floatValue - f : f - floatValue;
+                if (f2 < 0.0f) {
+                    f2 = Float.POSITIVE_INFINITY;
+                }
+                do {
+                    Object next2 = it.next();
+                    float floatValue2 = ((Number) ((Map.Entry) next2).getValue()).floatValue();
+                    float f3 = z ? floatValue2 - f : f - floatValue2;
+                    if (f3 < 0.0f) {
+                        f3 = Float.POSITIVE_INFINITY;
+                    }
+                    if (Float.compare(f2, f3) > 0) {
+                        next = next2;
+                        f2 = f3;
+                    }
+                } while (it.hasNext());
+            }
+        } else {
+            next = null;
+        }
+        Map.Entry entry = (Map.Entry) next;
+        if (entry != null) {
+            return entry.getKey();
+        }
+        return null;
+    }
+
+    public final float c() {
+        Float valueOf;
+        Collection values = this.a.values();
+        values.getClass();
+        Iterator it = values.iterator();
+        if (it.hasNext()) {
+            float floatValue = ((Number) it.next()).floatValue();
+            while (it.hasNext()) {
+                floatValue = Math.min(floatValue, ((Number) it.next()).floatValue());
+            }
+            valueOf = Float.valueOf(floatValue);
+        } else {
+            valueOf = null;
+        }
+        if (valueOf != null) {
+            return valueOf.floatValue();
+        }
+        return Float.NaN;
+    }
+
+    public final float d(Object obj) {
+        Float f = (Float) this.a.get(obj);
+        if (f != null) {
+            return f.floatValue();
+        }
+        return Float.NaN;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof gf4)) {
+            return false;
+        }
+        return m93.h(this.a, ((gf4) obj).a);
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode() * 31;
+    }
+
+    public final String toString() {
+        return "MapDraggableAnchors(" + this.a + ')';
     }
 }

@@ -1,58 +1,49 @@
 package androidx.compose.ui.draw;
 
-import defpackage.d64;
-import defpackage.ev0;
-import defpackage.hp5;
-import defpackage.kd0;
-import defpackage.m20;
-import defpackage.m64;
-import defpackage.rb6;
-import defpackage.rn4;
+import defpackage.cn4;
+import defpackage.eb7;
+import defpackage.j68;
+import defpackage.jn4;
+import defpackage.l21;
+import defpackage.m93;
+import defpackage.q40;
 import defpackage.rt2;
-import defpackage.ub;
-import defpackage.w10;
+import defpackage.sy6;
+import defpackage.u55;
+import defpackage.vx6;
+import defpackage.z30;
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0082\b\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001R\u0017\u0010\u0004\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u0004\u0010\u0005\u001a\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Landroidx/compose/ui/draw/PainterElement;", "Lm64;", "Landroidx/compose/ui/draw/PainterNode;", "Lrn4;", "painter", "Lrn4;", "getPainter", "()Lrn4;", "ui_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
-final /* data */ class PainterElement extends m64 {
-    public final m20 Q;
-    private final rn4 painter;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0082\b\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001R\u0017\u0010\u0004\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u0004\u0010\u0005\u001a\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Landroidx/compose/ui/draw/PainterElement;", "Ljn4;", "Landroidx/compose/ui/draw/PainterNode;", "Lu55;", "painter", "Lu55;", "getPainter", "()Lu55;", "ui"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes.dex */
+final /* data */ class PainterElement extends jn4 {
+    public final q40 X;
+    private final u55 painter;
 
-    public PainterElement(rn4 rn4Var, m20 m20Var) {
-        this.painter = rn4Var;
-        this.Q = m20Var;
+    public PainterElement(u55 u55Var, q40 q40Var) {
+        this.painter = u55Var;
+        this.X = q40Var;
     }
 
-    @Override // defpackage.m64
-    public final d64 a() {
-        return new PainterNode(this.painter, this.Q);
+    @Override // defpackage.jn4
+    public final cn4 a() {
+        return new PainterNode(this.painter, this.X);
     }
 
-    @Override // defpackage.m64
-    public final void d(d64 d64Var) {
-        PainterNode painterNode = (PainterNode) d64Var;
+    @Override // defpackage.jn4
+    public final void c(cn4 cn4Var) {
+        PainterNode painterNode = (PainterNode) cn4Var;
         painterNode.getClass();
-        boolean zA = rb6.a(painterNode.getPainter().c(), this.painter.c());
-        painterNode.N0(this.painter);
-        painterNode.e0 = this.Q;
-        if (!zA) {
-            rt2.I(painterNode);
+        boolean a = sy6.a(painterNode.getPainter().c(), this.painter.c());
+        painterNode.Z0(this.painter);
+        painterNode.n0 = this.X;
+        if (!a) {
+            j68.W(painterNode);
         }
-        ub.G(painterNode);
+        vx6.P(painterNode);
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
-     */
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
@@ -61,20 +52,20 @@ final /* data */ class PainterElement extends m64 {
             return false;
         }
         PainterElement painterElement = (PainterElement) obj;
-        if (!rt2.f(this.painter, painterElement.painter)) {
+        if (!m93.h(this.painter, painterElement.painter)) {
             return false;
         }
-        w10 w10Var = hp5.W;
-        return w10Var.equals(w10Var) && Float.compare(1.0f, 1.0f) == 0 && rt2.f(this.Q, painterElement.Q);
+        z30 z30Var = rt2.f0;
+        return z30Var.equals(z30Var) && Float.compare(1.0f, 1.0f) == 0 && m93.h(this.X, painterElement.X);
     }
 
     public final int hashCode() {
-        int iR = kd0.r((ev0.a.hashCode() + ((Float.floatToIntBits(0.0f) + (Float.floatToIntBits(0.0f) * 31) + (((this.painter.hashCode() * 31) + 1231) * 31)) * 31)) * 31, 1.0f, 31);
-        m20 m20Var = this.Q;
-        return iR + (m20Var == null ? 0 : m20Var.hashCode());
+        int c = eb7.c((l21.a.hashCode() + ((Float.hashCode(0.0f) + (Float.hashCode(0.0f) * 31) + eb7.f(true, this.painter.hashCode() * 31, 31)) * 31)) * 31, 1.0f, 31);
+        q40 q40Var = this.X;
+        return c + (q40Var == null ? 0 : q40Var.hashCode());
     }
 
     public final String toString() {
-        return "PainterElement(painter=" + this.painter + ", sizeToIntrinsics=true, alignment=" + hp5.W + ", contentScale=" + ev0.a + ", alpha=1.0, colorFilter=" + this.Q + ')';
+        return "PainterElement(painter=" + this.painter + ", sizeToIntrinsics=true, alignment=" + rt2.f0 + ", contentScale=" + l21.a + ", alpha=1.0, colorFilter=" + this.X + ")";
     }
 }

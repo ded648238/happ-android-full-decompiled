@@ -1,19 +1,45 @@
 package defpackage;
 
-import java.util.List;
+import kotlin.Metadata;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface v63 extends u63 {
-    a93 e();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001¨\u0006\u0003"}, d2 = {"Lv63;", "Ljn4;", "Lx63;", "foundation-layout"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes.dex */
+final class v63 extends jn4 {
+    public final fn8 X;
 
-    List g();
+    public v63(fn8 fn8Var) {
+        this.X = fn8Var;
+    }
 
-    String getName();
+    @Override // defpackage.jn4
+    public final cn4 a() {
+        return new x63(this.X);
+    }
 
-    List getTypeParameters();
+    @Override // defpackage.jn4
+    public final void c(cn4 cn4Var) {
+        x63 x63Var = (x63) cn4Var;
+        fn8 fn8Var = x63Var.p0;
+        fn8 fn8Var2 = this.X;
+        if (m93.h(fn8Var2, fn8Var)) {
+            return;
+        }
+        x63Var.p0 = fn8Var2;
+        x63Var.V0();
+    }
 
-    boolean h();
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof v63) {
+            return m93.h(((v63) obj).X, this.X);
+        }
+        return false;
+    }
 
-    r83 k();
+    public final int hashCode() {
+        return this.X.hashCode();
+    }
 }

@@ -1,9 +1,9 @@
 .class public Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
 .super Landroid/view/ViewGroup$MarginLayoutParams;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lez1;
+.implements Lh92;
 
 
 # annotations
@@ -30,25 +30,25 @@
 
 
 # instance fields
-.field public Q:I
-
-.field public R:F
-
-.field public S:F
-
-.field public T:I
-
-.field public U:F
-
-.field public V:I
-
-.field public W:I
-
 .field public X:I
 
-.field public Y:I
+.field public Y:F
 
-.field public Z:Z
+.field public Z:F
+
+.field public c0:I
+
+.field public d0:F
+
+.field public e0:I
+
+.field public f0:I
+
+.field public g0:I
+
+.field public h0:I
+
+.field public i0:Z
 
 
 # direct methods
@@ -84,14 +84,14 @@
     const/4 v0, 0x1
 
     .line 5
-    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Q:I
+    iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
 
     .line 6
     .line 7
     const/4 v1, 0x0
 
     .line 8
-    iput v1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->R:F
+    iput v1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:F
 
     .line 9
     .line 10
@@ -99,14 +99,14 @@
 
     .line 11
     .line 12
-    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->S:F
+    iput v2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:F
 
     .line 13
     .line 14
     const/4 v3, -0x1
 
     .line 15
-    iput v3, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->T:I
+    iput v3, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->c0:I
 
     .line 16
     .line 17
@@ -114,15 +114,15 @@
 
     .line 18
     .line 19
-    iput v4, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->U:F
+    iput v4, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->d0:F
 
     .line 20
     .line 21
-    iput v3, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
+    iput v3, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
 
     .line 22
     .line 23
-    iput v3, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iput v3, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 24
     .line 25
@@ -131,15 +131,15 @@
     .line 26
     .line 27
     .line 28
-    iput v5, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
+    iput v5, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->g0:I
 
     .line 29
     .line 30
-    iput v5, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:I
+    iput v5, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->h0:I
 
     .line 31
     .line 32
-    sget-object v6, Lua5;->FlexboxLayout_Layout:[I
+    sget-object v6, Ltu5;->FlexboxLayout_Layout:[I
 
     .line 33
     .line 34
@@ -151,7 +151,7 @@
     move-result-object p1
 
     .line 38
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_order:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_order:I
 
     .line 39
     .line 40
@@ -163,11 +163,11 @@
     move-result p2
 
     .line 44
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Q:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
 
     .line 45
     .line 46
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_flexGrow:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_flexGrow:I
 
     .line 47
     .line 48
@@ -179,11 +179,11 @@
     move-result p2
 
     .line 52
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->R:F
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:F
 
     .line 53
     .line 54
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_flexShrink:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_flexShrink:I
 
     .line 55
     .line 56
@@ -195,11 +195,11 @@
     move-result p2
 
     .line 60
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->S:F
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:F
 
     .line 61
     .line 62
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_alignSelf:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_alignSelf:I
 
     .line 63
     .line 64
@@ -211,11 +211,11 @@
     move-result p2
 
     .line 68
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->T:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->c0:I
 
     .line 69
     .line 70
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_flexBasisPercent:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_flexBasisPercent:I
 
     .line 71
     .line 72
@@ -227,11 +227,11 @@
     move-result p2
 
     .line 76
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->U:F
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->d0:F
 
     .line 77
     .line 78
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_minWidth:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_minWidth:I
 
     .line 79
     .line 80
@@ -243,11 +243,11 @@
     move-result p2
 
     .line 84
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
 
     .line 85
     .line 86
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_minHeight:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_minHeight:I
 
     .line 87
     .line 88
@@ -259,11 +259,11 @@
     move-result p2
 
     .line 92
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 93
     .line 94
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_maxWidth:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_maxWidth:I
 
     .line 95
     .line 96
@@ -275,11 +275,11 @@
     move-result p2
 
     .line 100
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->g0:I
 
     .line 101
     .line 102
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_maxHeight:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_maxHeight:I
 
     .line 103
     .line 104
@@ -291,11 +291,11 @@
     move-result p2
 
     .line 108
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:I
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->h0:I
 
     .line 109
     .line 110
-    sget p2, Lua5;->FlexboxLayout_Layout_layout_wrapBefore:I
+    sget p2, Ltu5;->FlexboxLayout_Layout_layout_wrapBefore:I
 
     .line 111
     .line 112
@@ -310,7 +310,7 @@
     move-result p2
 
     .line 117
-    iput-boolean p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:Z
+    iput-boolean p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->i0:Z
 
     .line 118
     .line 119
@@ -325,97 +325,97 @@
 
 # virtual methods
 .method public final A()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final a()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final b()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final describeContents()I
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final g()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->T:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final getOrder()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Q:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final i()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->S:F
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final j()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final m(I)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->g0:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final a()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final b()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final describeContents()I
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final f()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->c0:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getOrder()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final i()F
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:F
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final j()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final l(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
 
     .line 2
     .line 3
@@ -423,109 +423,98 @@
 .end method
 
 .method public final n()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final o()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final p()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final q(I)V
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final o()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final q()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final r(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final r()F
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->R:F
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
 .method public final s()F
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->U:F
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:F
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public final t()I
-    .locals 1
+.method public final t()F
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->d0:F
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final u()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public final w()Z
-    .locals 1
+.method public final w()I
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:Z
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Q:I
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
 
     .line 2
     .line 3
@@ -534,7 +523,7 @@
     .line 4
     .line 5
     .line 6
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->R:F
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:F
 
     .line 7
     .line 8
@@ -543,7 +532,7 @@
     .line 9
     .line 10
     .line 11
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->S:F
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:F
 
     .line 12
     .line 13
@@ -552,7 +541,7 @@
     .line 14
     .line 15
     .line 16
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->T:I
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->c0:I
 
     .line 17
     .line 18
@@ -561,7 +550,7 @@
     .line 19
     .line 20
     .line 21
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->U:F
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->d0:F
 
     .line 22
     .line 23
@@ -570,7 +559,7 @@
     .line 24
     .line 25
     .line 26
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->V:I
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->e0:I
 
     .line 27
     .line 28
@@ -579,7 +568,7 @@
     .line 29
     .line 30
     .line 31
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->W:I
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->f0:I
 
     .line 32
     .line 33
@@ -588,7 +577,7 @@
     .line 34
     .line 35
     .line 36
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->X:I
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->g0:I
 
     .line 37
     .line 38
@@ -597,7 +586,7 @@
     .line 39
     .line 40
     .line 41
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:I
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->h0:I
 
     .line 42
     .line 43
@@ -606,7 +595,7 @@
     .line 44
     .line 45
     .line 46
-    iget-boolean p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Z:Z
+    iget-boolean p2, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->i0:Z
 
     .line 47
     .line 48
@@ -660,11 +649,11 @@
     .line 74
     .line 75
     .line 76
-    iget p2, p0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+    iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
 
     .line 77
     .line 78
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 79
     .line 80
@@ -672,13 +661,24 @@
     return-void
 .end method
 
-.method public final z()I
-    .locals 1
+.method public final x()Z
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->Y:I
+    iget-boolean p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->i0:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
+.end method
+
+.method public final z()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->h0:I
+
+    .line 2
+    .line 3
+    return p0
 .end method

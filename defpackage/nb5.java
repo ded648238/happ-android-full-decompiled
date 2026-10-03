@@ -1,44 +1,52 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class nb5 {
-    public final x1 a;
-    public final String b;
-    public final Object[] c;
-    public final int d;
+import java.util.Iterator;
+import java.util.Map;
 
-    public nb5(z92 z92Var, String str, Object[] objArr) {
-        this.a = z92Var;
-        this.b = str;
-        this.c = objArr;
-        char cCharAt = str.charAt(0);
-        if (cCharAt < 55296) {
-            this.d = cCharAt;
-            return;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class nb5 extends t2 implements k03 {
+    public final /* synthetic */ int X;
+    public final jb5 Y;
+
+    public /* synthetic */ nb5(jb5 jb5Var, int i) {
+        this.X = i;
+        this.Y = jb5Var;
+    }
+
+    @Override // defpackage.x0
+    public final int a() {
+        int i = this.X;
+        jb5 jb5Var = this.Y;
+        switch (i) {
         }
-        int i = cCharAt & 8191;
-        int i2 = 13;
-        int i3 = 1;
-        while (true) {
-            int i4 = i3 + 1;
-            char cCharAt2 = str.charAt(i3);
-            if (cCharAt2 < 55296) {
-                this.d = i | (cCharAt2 << i2);
-                return;
-            } else {
-                i |= (cCharAt2 & 8191) << i2;
-                i2 += 13;
-                i3 = i4;
-            }
+        return jb5Var.Z.size();
+    }
+
+    @Override // defpackage.x0, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        int i = this.X;
+        jb5 jb5Var = this.Y;
+        switch (i) {
+            case 0:
+                if (obj instanceof Map.Entry) {
+                    return kc.I(jb5Var, (Map.Entry) obj);
+                }
+                return false;
+            default:
+                return jb5Var.Z.containsKey(obj);
         }
     }
 
-    public final int a() {
-        int i = this.d;
-        if ((i & 1) != 0) {
-            return 1;
+    @Override // java.util.Collection, java.lang.Iterable, java.util.Set
+    public final Iterator iterator() {
+        int i = this.X;
+        jb5 jb5Var = this.Y;
+        switch (i) {
+            case 0:
+                return new ob5(jb5Var, 0);
+            default:
+                return new ob5(jb5Var, 1);
         }
-        return (i & 4) == 4 ? 3 : 2;
     }
 }

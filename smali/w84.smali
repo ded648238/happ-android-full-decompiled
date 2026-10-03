@@ -1,205 +1,144 @@
 .class public final Lw84;
-.super Ljy3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lc36;
 
 
 # instance fields
-.field public final T:Lus4;
-
-.field public U:Ljava/lang/Object;
+.field public final synthetic X:Lx84;
 
 
 # direct methods
-.method public constructor <init>(Lus4;Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 1
+.method public constructor <init>(Lx84;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-direct {p0, v0, p2, p3}, Ljy3;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 3
     .line 4
+    iput-object p1, p0, Lw84;->X:Lx84;
+
     .line 5
-    iput-object p1, p0, Lw84;->T:Lus4;
-
     .line 6
-    .line 7
-    iput-object p3, p0, Lw84;->U:Ljava/lang/Object;
-
-    .line 8
-    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final getValue()Ljava/lang/Object;
-    .locals 1
+.method public final J(Lk36;JLwd;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lw84;->U:Ljava/lang/Object;
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public final setValue(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, Lw84;->U:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    iput-object p1, p0, Lw84;->U:Ljava/lang/Object;
+    const/16 p2, 0x23
 
     .line 4
     .line 5
-    iget-object v1, p0, Lw84;->T:Lus4;
+    if-lt p1, p2, :cond_1
 
     .line 6
     .line 7
-    iget-object v1, v1, Lus4;->R:Ljava/util/Iterator;
+    iget-object p0, p0, Lw84;->X:Lx84;
 
     .line 8
     .line 9
-    check-cast v1, Lrs4;
+    iget-object p1, p0, Lx84;->c:Lgd8;
 
     .line 10
     .line 11
-    iget-object v2, v1, Lrs4;->U:Lps4;
+    if-eqz p1, :cond_1
 
     .line 12
     .line 13
-    iget-object v3, p0, Ljy3;->R:Ljava/lang/Object;
+    iget-boolean p1, p0, Lx84;->e:Z
 
     .line 14
     .line 15
-    invoke-virtual {v2, v3}, Lps4;->containsKey(Ljava/lang/Object;)Z
+    if-eqz p1, :cond_1
 
     .line 16
     .line 17
-    .line 18
-    move-result v4
+    iget-object p1, p4, Lwd;->Z:Lra8;
 
+    .line 18
     .line 19
-    if-nez v4, :cond_0
+    check-cast p1, Lxd;
 
     .line 20
     .line 21
-    return-object v0
+    sget-object p2, Landroid/hardware/camera2/CaptureResult;->CONTROL_LOW_LIGHT_BOOST_STATE:Landroid/hardware/camera2/CaptureResult$Key;
 
     .line 22
-    :cond_0
-    iget-boolean v4, v1, Lns4;->S:Z
-
     .line 23
-    .line 24
-    if-eqz v4, :cond_3
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 24
     .line 25
     .line 26
-    if-eqz v4, :cond_2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 27
     .line 28
-    iget-object v4, v1, Lns4;->T:[Ljava/lang/Object;
-
     .line 29
+    iget-object p1, p1, Lxd;->X:Landroid/hardware/camera2/CaptureResult;
+
     .line 30
-    check-cast v4, [Lt97;
-
     .line 31
-    .line 32
-    iget v5, v1, Lns4;->R:I
+    invoke-virtual {p1, p2}, Landroid/hardware/camera2/CaptureResult;->get(Landroid/hardware/camera2/CaptureResult$Key;)Ljava/lang/Object;
 
+    .line 32
     .line 33
     .line 34
-    aget-object v4, v4, v5
+    move-result-object p1
 
     .line 35
+    check-cast p1, Ljava/lang/Integer;
+
     .line 36
-    iget-object v5, v4, Lt97;->R:[Ljava/lang/Object;
-
     .line 37
+    if-eqz p1, :cond_1
+
     .line 38
-    iget v4, v4, Lt97;->T:I
-
     .line 39
-    .line 40
-    aget-object v4, v5, v4
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
+    .line 40
     .line 41
     .line 42
-    invoke-virtual {v2, v3, p1}, Lps4;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result p1
 
     .line 43
+    iget-object p2, p0, Lx84;->f:Lsp4;
+
     .line 44
     .line 45
-    const/4 p1, 0x0
+    const/4 p3, 0x1
 
     .line 46
-    if-eqz v4, :cond_1
+    if-ne p1, p3, :cond_0
 
     .line 47
     .line 48
-    invoke-virtual {v4}, Ljava/lang/Object;->hashCode()I
-
-    .line 49
-    .line 50
-    .line 51
-    move-result v3
-
-    .line 52
     goto :goto_0
 
+    .line 49
+    :cond_0
+    const/4 p3, 0x0
+
+    .line 50
+    :goto_0
+    invoke-virtual {p0, p2, p3}, Lx84;->c(Lsp4;I)V
+
+    .line 51
+    .line 52
     .line 53
     :cond_1
-    const/4 v3, 0x0
-
-    .line 54
-    :goto_0
-    iget-object v5, v2, Lps4;->R:Ls97;
-
-    .line 55
-    .line 56
-    invoke-virtual {v1, v3, v5, v4, p1}, Lrs4;->f(ILs97;Ljava/lang/Object;I)V
-
-    .line 57
-    .line 58
-    .line 59
-    goto :goto_1
-
-    .line 60
-    :cond_2
-    invoke-static {}, Lfn;->p()V
-
-    .line 61
-    .line 62
-    .line 63
-    const/4 p1, 0x0
-
-    .line 64
-    return-object p1
-
-    .line 65
-    :cond_3
-    invoke-virtual {v2, v3, p1}, Lps4;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 66
-    .line 67
-    .line 68
-    :goto_1
-    iget p1, v2, Lps4;->T:I
-
-    .line 69
-    .line 70
-    iput p1, v1, Lrs4;->X:I
-
-    .line 71
-    .line 72
-    return-object v0
+    return-void
 .end method

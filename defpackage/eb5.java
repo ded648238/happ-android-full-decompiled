@@ -1,51 +1,69 @@
 package defpackage;
 
-import android.R;
+import java.util.Iterator;
+import java.util.Map;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class eb5 {
-    public static int ColorStateListItem_alpha = 3;
-    public static int ColorStateListItem_android_alpha = 1;
-    public static int ColorStateListItem_android_color = 0;
-    public static int ColorStateListItem_android_lStar = 2;
-    public static int ColorStateListItem_lStar = 4;
-    public static int DrawerLayout_elevation = 0;
-    public static int FontFamilyFont_android_font = 0;
-    public static int FontFamilyFont_android_fontStyle = 2;
-    public static int FontFamilyFont_android_fontVariationSettings = 4;
-    public static int FontFamilyFont_android_fontWeight = 1;
-    public static int FontFamilyFont_android_ttcIndex = 3;
-    public static int FontFamilyFont_font = 5;
-    public static int FontFamilyFont_fontStyle = 6;
-    public static int FontFamilyFont_fontVariationSettings = 7;
-    public static int FontFamilyFont_fontWeight = 8;
-    public static int FontFamilyFont_ttcIndex = 9;
-    public static int FontFamily_fontProviderAuthority = 0;
-    public static int FontFamily_fontProviderCerts = 1;
-    public static int FontFamily_fontProviderFallbackQuery = 2;
-    public static int FontFamily_fontProviderFetchStrategy = 3;
-    public static int FontFamily_fontProviderFetchTimeout = 4;
-    public static int FontFamily_fontProviderPackage = 5;
-    public static int FontFamily_fontProviderQuery = 6;
-    public static int FontFamily_fontProviderSystemFontFamily = 7;
-    public static int GradientColorItem_android_color = 0;
-    public static int GradientColorItem_android_offset = 1;
-    public static int GradientColor_android_centerColor = 7;
-    public static int GradientColor_android_centerX = 3;
-    public static int GradientColor_android_centerY = 4;
-    public static int GradientColor_android_endColor = 1;
-    public static int GradientColor_android_endX = 10;
-    public static int GradientColor_android_endY = 11;
-    public static int GradientColor_android_gradientRadius = 5;
-    public static int GradientColor_android_startColor = 0;
-    public static int GradientColor_android_startX = 8;
-    public static int GradientColor_android_startY = 9;
-    public static int GradientColor_android_tileMode = 6;
-    public static int GradientColor_android_type = 2;
-    public static int[] ColorStateListItem = {R.attr.color, R.attr.alpha, R.attr.lStar, 2130968631, 2130969511};
-    public static int[] DrawerLayout = {2130969169};
-    public static int[] FontFamily = {2130969302, 2130969303, 2130969304, 2130969305, 2130969306, 2130969307, 2130969308, 2130969309};
-    public static int[] FontFamilyFont = {R.attr.font, R.attr.fontWeight, R.attr.fontStyle, R.attr.ttcIndex, R.attr.fontVariationSettings, 2130969300, 2130969310, 2130969311, 2130969312, 2130970348};
-    public static int[] GradientColor = {R.attr.startColor, R.attr.endColor, R.attr.type, R.attr.centerX, R.attr.centerY, R.attr.gradientRadius, R.attr.tileMode, R.attr.centerColor, R.attr.startX, R.attr.startY, R.attr.endX, R.attr.endY};
-    public static int[] GradientColorItem = {R.attr.color, R.attr.offset};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class eb5 extends t2 {
+    public final /* synthetic */ int X;
+    public final sa5 Y;
+
+    public /* synthetic */ eb5(sa5 sa5Var, int i) {
+        this.X = i;
+        this.Y = sa5Var;
+    }
+
+    @Override // defpackage.x0
+    public final int a() {
+        int i = this.X;
+        sa5 sa5Var = this.Y;
+        switch (i) {
+        }
+        return sa5Var.Y;
+    }
+
+    @Override // defpackage.x0, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        int i = this.X;
+        sa5 sa5Var = this.Y;
+        switch (i) {
+            case 0:
+                if (obj instanceof Map.Entry) {
+                    Map.Entry entry = (Map.Entry) obj;
+                    Object obj2 = sa5Var.get(entry.getKey());
+                    if (obj2 != null) {
+                        return obj2.equals(entry.getValue());
+                    }
+                    if (entry.getValue() == null && sa5Var.containsKey(entry.getKey())) {
+                        return true;
+                    }
+                }
+                return false;
+            default:
+                return sa5Var.containsKey(obj);
+        }
+    }
+
+    @Override // java.util.Collection, java.lang.Iterable, java.util.Set
+    public final Iterator iterator() {
+        int i = this.X;
+        sa5 sa5Var = this.Y;
+        switch (i) {
+            case 0:
+                x18 x18Var = sa5Var.X;
+                y18[] y18VarArr = new y18[8];
+                for (int i2 = 0; i2 < 8; i2++) {
+                    y18VarArr[i2] = new a28(0);
+                }
+                return new gb5(x18Var, y18VarArr);
+            default:
+                x18 x18Var2 = sa5Var.X;
+                y18[] y18VarArr2 = new y18[8];
+                for (int i3 = 0; i3 < 8; i3++) {
+                    y18VarArr2[i3] = new a28(1);
+                }
+                return new gb5(x18Var2, y18VarArr2);
+        }
+    }
 }

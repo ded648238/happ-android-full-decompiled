@@ -1,11 +1,26 @@
 package defpackage;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class t03 implements f13 {
+    public final int a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Retention(RetentionPolicy.RUNTIME)
-public @interface t03 {
-    String value() default "";
+    public t03(int i) {
+        this.a = i;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof t03) && this.a == ((t03) obj).a;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.a);
+    }
+
+    public final String toString() {
+        return c73.h("Message(res=", this.a, ")");
+    }
 }

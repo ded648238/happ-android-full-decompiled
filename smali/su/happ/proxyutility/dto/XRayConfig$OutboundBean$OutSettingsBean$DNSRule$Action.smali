@@ -1,6 +1,6 @@
 .class public final enum Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -23,7 +23,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0005\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001j\u0002\u0008\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005\u00a8\u0006\u0006"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0005\u0008\u0087\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001j\u0002\u0008\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005\u00a8\u0006\u0006"
     }
     d2 = {
         "Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;",
@@ -45,30 +45,30 @@
 
 
 # static fields
-.field private static final synthetic $ENTRIES:Lpp1;
+.field private static final synthetic $ENTRIES:Lmy1;
 
 .field private static final synthetic $VALUES:[Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
 
 .field public static final enum direct:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "direct"
     .end annotation
 .end field
 
 .field public static final enum drop:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "drop"
     .end annotation
 .end field
 
 .field public static final enum hijack:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "hijack"
     .end annotation
 .end field
 
 .field public static final enum return:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "return"
     .end annotation
 .end field
@@ -76,7 +76,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 6
 
     .line 1
     new-instance v0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
@@ -103,14 +103,14 @@
 
     .line 12
     .line 13
-    const-string v3, "drop"
+    const-string v2, "drop"
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
@@ -119,86 +119,71 @@
 
     .line 20
     .line 21
-    new-instance v3, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
+    new-instance v2, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
 
     .line 22
     .line 23
-    const-string v5, "return"
+    const-string v3, "return"
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    const/4 v4, 0x2
 
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;->return:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
+    sput-object v2, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;->return:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
 
     .line 30
     .line 31
-    new-instance v5, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
+    new-instance v3, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
 
     .line 32
     .line 33
-    const-string v7, "hijack"
+    const-string v4, "hijack"
 
     .line 34
     .line 35
-    const/4 v8, 0x3
+    const/4 v5, 0x3
 
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v4, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v5, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;->hijack:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
+    sput-object v3, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;->hijack:Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
 
     .line 40
     .line 41
-    const/4 v7, 0x4
+    filled-new-array {v0, v1, v2, v3}, [Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
 
     .line 42
-    new-array v7, v7, [Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
-
     .line 43
     .line 44
-    aput-object v0, v7, v2
+    move-result-object v0
 
     .line 45
+    sput-object v0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;->$VALUES:[Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
+
     .line 46
-    aput-object v1, v7, v4
-
     .line 47
+    new-instance v1, Loy1;
+
     .line 48
-    aput-object v3, v7, v6
-
     .line 49
-    .line 50
-    aput-object v5, v7, v8
+    invoke-direct {v1, v0}, Loy1;-><init>([Ljava/lang/Enum;)V
 
+    .line 50
     .line 51
     .line 52
-    sput-object v7, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;->$VALUES:[Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;
+    sput-object v1, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;->$ENTRIES:Lmy1;
 
     .line 53
     .line 54
-    new-instance v0, Lrp1;
-
-    .line 55
-    .line 56
-    invoke-direct {v0, v7}, Lrp1;-><init>([Ljava/lang/Enum;)V
-
-    .line 57
-    .line 58
-    .line 59
-    sput-object v0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$OutSettingsBean$DNSRule$Action;->$ENTRIES:Lpp1;
-
-    .line 60
-    .line 61
     return-void
 .end method
 

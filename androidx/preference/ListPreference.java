@@ -5,68 +5,69 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import defpackage.cy4;
-import defpackage.ir0;
-import defpackage.ra5;
-import defpackage.s47;
-import defpackage.t75;
+import defpackage.hh5;
+import defpackage.kv1;
+import defpackage.qu5;
+import defpackage.sr5;
+import defpackage.tw7;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ListPreference extends DialogPreference {
-    public final CharSequence[] X;
-    public final CharSequence[] Y;
-    public String Z;
-    public final String a0;
-    public boolean b0;
+    public final CharSequence[] g0;
+    public final CharSequence[] h0;
+    public String i0;
+    public final String j0;
+    public boolean k0;
 
     public ListPreference(Context context, AttributeSet attributeSet, int i, int i2) {
         super(context, attributeSet, i, 0);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ra5.ListPreference, i, 0);
-        int i3 = ra5.ListPreference_entries;
-        int i4 = ra5.ListPreference_android_entries;
-        CharSequence[] textArray = typedArrayObtainStyledAttributes.getTextArray(i3);
-        this.X = textArray == null ? typedArrayObtainStyledAttributes.getTextArray(i4) : textArray;
-        int i5 = ra5.ListPreference_entryValues;
-        int i6 = ra5.ListPreference_android_entryValues;
-        CharSequence[] textArray2 = typedArrayObtainStyledAttributes.getTextArray(i5);
-        this.Y = textArray2 == null ? typedArrayObtainStyledAttributes.getTextArray(i6) : textArray2;
-        int i7 = ra5.ListPreference_useSimpleSummaryProvider;
-        if (typedArrayObtainStyledAttributes.getBoolean(i7, typedArrayObtainStyledAttributes.getBoolean(i7, false))) {
-            if (ir0.S == null) {
-                ir0.S = new ir0(14);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, qu5.ListPreference, i, 0);
+        int i3 = qu5.ListPreference_entries;
+        int i4 = qu5.ListPreference_android_entries;
+        CharSequence[] textArray = obtainStyledAttributes.getTextArray(i3);
+        this.g0 = textArray == null ? obtainStyledAttributes.getTextArray(i4) : textArray;
+        int i5 = qu5.ListPreference_entryValues;
+        int i6 = qu5.ListPreference_android_entryValues;
+        CharSequence[] textArray2 = obtainStyledAttributes.getTextArray(i5);
+        this.h0 = textArray2 == null ? obtainStyledAttributes.getTextArray(i6) : textArray2;
+        int i7 = qu5.ListPreference_useSimpleSummaryProvider;
+        if (obtainStyledAttributes.getBoolean(i7, obtainStyledAttributes.getBoolean(i7, false))) {
+            if (kv1.Y == null) {
+                kv1.Y = new kv1();
             }
-            this.W = ir0.S;
+            this.f0 = kv1.Y;
             b();
         }
-        typedArrayObtainStyledAttributes.recycle();
-        TypedArray typedArrayObtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, ra5.Preference, i, 0);
-        int i8 = ra5.Preference_summary;
-        int i9 = ra5.Preference_android_summary;
-        String string = typedArrayObtainStyledAttributes2.getString(i8);
-        this.a0 = string == null ? typedArrayObtainStyledAttributes2.getString(i9) : string;
-        typedArrayObtainStyledAttributes2.recycle();
+        obtainStyledAttributes.recycle();
+        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, qu5.Preference, i, 0);
+        int i8 = qu5.Preference_summary;
+        int i9 = qu5.Preference_android_summary;
+        String string = obtainStyledAttributes2.getString(i8);
+        this.j0 = string == null ? obtainStyledAttributes2.getString(i9) : string;
+        obtainStyledAttributes2.recycle();
     }
 
     @Override // androidx.preference.Preference
     public final CharSequence a() {
-        cy4 cy4Var = this.W;
-        if (cy4Var != null) {
-            return cy4Var.g(this);
+        hh5 hh5Var = this.f0;
+        if (hh5Var != null) {
+            return hh5Var.f(this);
         }
-        CharSequence charSequenceD = d();
-        CharSequence charSequenceA = super.a();
-        String str = this.a0;
+        CharSequence d = d();
+        CharSequence a = super.a();
+        String str = this.j0;
         if (str != null) {
-            if (charSequenceD == null) {
-                charSequenceD = "";
+            if (d == null) {
+                d = HttpUrl.FRAGMENT_ENCODE_SET;
             }
-            String str2 = String.format(str, charSequenceD);
-            if (!TextUtils.equals(str2, charSequenceA)) {
-                return str2;
+            String format = String.format(str, d);
+            if (!TextUtils.equals(format, a)) {
+                return format;
             }
         }
-        return charSequenceA;
+        return a;
     }
 
     @Override // androidx.preference.Preference
@@ -75,30 +76,24 @@ public class ListPreference extends DialogPreference {
     }
 
     public final CharSequence d() {
-        int length;
+        int i;
         CharSequence[] charSequenceArr;
         CharSequence[] charSequenceArr2;
-        String str = this.Z;
-        if (str != null && (charSequenceArr2 = this.Y) != null) {
-            length = charSequenceArr2.length - 1;
-            while (true) {
-                if (length < 0) {
-                    length = -1;
+        String str = this.i0;
+        if (str != null && (charSequenceArr2 = this.h0) != null) {
+            i = charSequenceArr2.length - 1;
+            while (i >= 0) {
+                if (TextUtils.equals(charSequenceArr2[i].toString(), str)) {
                     break;
                 }
-                if (TextUtils.equals(charSequenceArr2[length].toString(), str)) {
-                    break;
-                }
-                length--;
+                i--;
             }
-        } else {
-            length = -1;
-            break;
         }
-        if (length < 0 || (charSequenceArr = this.X) == null) {
+        i = -1;
+        if (i < 0 || (charSequenceArr = this.g0) == null) {
             return null;
         }
-        return charSequenceArr[length];
+        return charSequenceArr[i];
     }
 
     public ListPreference(Context context, AttributeSet attributeSet, int i) {
@@ -106,6 +101,6 @@ public class ListPreference extends DialogPreference {
     }
 
     public ListPreference(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, s47.b(context, t75.dialogPreferenceStyle, R.attr.dialogPreferenceStyle));
+        this(context, attributeSet, tw7.d(context, sr5.dialogPreferenceStyle, R.attr.dialogPreferenceStyle));
     }
 }

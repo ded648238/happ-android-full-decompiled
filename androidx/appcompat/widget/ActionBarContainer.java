@@ -8,37 +8,37 @@ import android.view.ActionMode;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
-import defpackage.e95;
-import defpackage.hb5;
-import defpackage.l4;
+import defpackage.dt5;
+import defpackage.gv5;
+import defpackage.t4;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ActionBarContainer extends FrameLayout {
-    public boolean Q;
-    public View R;
-    public View S;
-    public Drawable T;
-    public Drawable U;
-    public Drawable V;
-    public final boolean W;
-    public boolean a0;
-    public final int b0;
+    public boolean c0;
+    public View d0;
+    public View e0;
+    public Drawable f0;
+    public Drawable g0;
+    public Drawable h0;
+    public final boolean i0;
+    public boolean j0;
+    public final int k0;
 
     public ActionBarContainer(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         boolean z = false;
-        setBackground(new l4(0, this));
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, hb5.ActionBar);
-        this.T = typedArrayObtainStyledAttributes.getDrawable(hb5.ActionBar_background);
-        this.U = typedArrayObtainStyledAttributes.getDrawable(hb5.ActionBar_backgroundStacked);
-        this.b0 = typedArrayObtainStyledAttributes.getDimensionPixelSize(hb5.ActionBar_height, -1);
-        if (getId() == e95.split_action_bar) {
-            this.W = true;
-            this.V = typedArrayObtainStyledAttributes.getDrawable(hb5.ActionBar_backgroundSplit);
+        setBackground(new t4(0, this));
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, gv5.ActionBar);
+        this.f0 = obtainStyledAttributes.getDrawable(gv5.ActionBar_background);
+        this.g0 = obtainStyledAttributes.getDrawable(gv5.ActionBar_backgroundStacked);
+        this.k0 = obtainStyledAttributes.getDimensionPixelSize(gv5.ActionBar_height, -1);
+        if (getId() == dt5.split_action_bar) {
+            this.i0 = true;
+            this.h0 = obtainStyledAttributes.getDrawable(gv5.ActionBar_backgroundSplit);
         }
-        typedArrayObtainStyledAttributes.recycle();
-        if (!this.W ? !(this.T != null || this.U != null) : this.V == null) {
+        obtainStyledAttributes.recycle();
+        if (!this.i0 ? !(this.f0 != null || this.g0 != null) : this.h0 == null) {
             z = true;
         }
         setWillNotDraw(z);
@@ -47,19 +47,19 @@ public class ActionBarContainer extends FrameLayout {
     @Override // android.view.ViewGroup, android.view.View
     public final void drawableStateChanged() {
         super.drawableStateChanged();
-        Drawable drawable = this.T;
+        Drawable drawable = this.f0;
         if (drawable != null && drawable.isStateful()) {
-            this.T.setState(getDrawableState());
+            this.f0.setState(getDrawableState());
         }
-        Drawable drawable2 = this.U;
+        Drawable drawable2 = this.g0;
         if (drawable2 != null && drawable2.isStateful()) {
-            this.U.setState(getDrawableState());
+            this.g0.setState(getDrawableState());
         }
-        Drawable drawable3 = this.V;
+        Drawable drawable3 = this.h0;
         if (drawable3 == null || !drawable3.isStateful()) {
             return;
         }
-        this.V.setState(getDrawableState());
+        this.h0.setState(getDrawableState());
     }
 
     public View getTabContainer() {
@@ -69,15 +69,15 @@ public class ActionBarContainer extends FrameLayout {
     @Override // android.view.ViewGroup, android.view.View
     public final void jumpDrawablesToCurrentState() {
         super.jumpDrawablesToCurrentState();
-        Drawable drawable = this.T;
+        Drawable drawable = this.f0;
         if (drawable != null) {
             drawable.jumpToCurrentState();
         }
-        Drawable drawable2 = this.U;
+        Drawable drawable2 = this.g0;
         if (drawable2 != null) {
             drawable2.jumpToCurrentState();
         }
-        Drawable drawable3 = this.V;
+        Drawable drawable3 = this.h0;
         if (drawable3 != null) {
             drawable3.jumpToCurrentState();
         }
@@ -86,8 +86,8 @@ public class ActionBarContainer extends FrameLayout {
     @Override // android.view.View
     public final void onFinishInflate() {
         super.onFinishInflate();
-        this.R = findViewById(e95.action_bar);
-        this.S = findViewById(e95.action_context_bar);
+        this.d0 = findViewById(dt5.action_bar);
+        this.e0 = findViewById(dt5.action_context_bar);
     }
 
     @Override // android.view.View
@@ -98,34 +98,30 @@ public class ActionBarContainer extends FrameLayout {
 
     @Override // android.view.ViewGroup
     public final boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        return this.Q || super.onInterceptTouchEvent(motionEvent);
+        return this.c0 || super.onInterceptTouchEvent(motionEvent);
     }
 
     @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View
     public final void onLayout(boolean z, int i, int i2, int i3, int i4) {
+        View view;
         super.onLayout(z, i, i2, i3, i4);
         boolean z2 = true;
-        if (this.W) {
-            Drawable drawable = this.V;
+        if (this.i0) {
+            Drawable drawable = this.h0;
             if (drawable != null) {
                 drawable.setBounds(0, 0, getMeasuredWidth(), getMeasuredHeight());
             } else {
                 z2 = false;
             }
         } else {
-            if (this.T == null) {
+            if (this.f0 == null) {
                 z2 = false;
-            } else if (this.R.getVisibility() == 0) {
-                this.T.setBounds(this.R.getLeft(), this.R.getTop(), this.R.getRight(), this.R.getBottom());
+            } else if (this.d0.getVisibility() == 0 || ((view = this.e0) != null && view.getVisibility() == 0)) {
+                this.f0.setBounds(0, 0, getMeasuredWidth(), getMeasuredHeight());
             } else {
-                View view = this.S;
-                if (view == null || view.getVisibility() != 0) {
-                    this.T.setBounds(0, 0, 0, 0);
-                } else {
-                    this.T.setBounds(this.S.getLeft(), this.S.getTop(), this.S.getRight(), this.S.getBottom());
-                }
+                this.f0.setBounds(0, 0, 0, 0);
             }
-            this.a0 = false;
+            this.j0 = false;
         }
         if (z2) {
             invalidate();
@@ -135,11 +131,11 @@ public class ActionBarContainer extends FrameLayout {
     @Override // android.widget.FrameLayout, android.view.View
     public final void onMeasure(int i, int i2) {
         int i3;
-        if (this.R == null && View.MeasureSpec.getMode(i2) == Integer.MIN_VALUE && (i3 = this.b0) >= 0) {
+        if (this.d0 == null && View.MeasureSpec.getMode(i2) == Integer.MIN_VALUE && (i3 = this.k0) >= 0) {
             i2 = View.MeasureSpec.makeMeasureSpec(Math.min(i3, View.MeasureSpec.getSize(i2)), Integer.MIN_VALUE);
         }
         super.onMeasure(i, i2);
-        if (this.R == null) {
+        if (this.d0 == null) {
             return;
         }
         View.MeasureSpec.getMode(i2);
@@ -152,21 +148,20 @@ public class ActionBarContainer extends FrameLayout {
     }
 
     public void setPrimaryBackground(Drawable drawable) {
-        Drawable drawable2 = this.T;
+        Drawable drawable2 = this.f0;
         if (drawable2 != null) {
             drawable2.setCallback(null);
-            unscheduleDrawable(this.T);
+            unscheduleDrawable(this.f0);
         }
-        this.T = drawable;
+        this.f0 = drawable;
+        boolean z = false;
         if (drawable != null) {
             drawable.setCallback(this);
-            View view = this.R;
-            if (view != null) {
-                this.T.setBounds(view.getLeft(), this.R.getTop(), this.R.getRight(), this.R.getBottom());
+            if (this.d0 != null) {
+                drawable.setBounds(0, 0, getMeasuredWidth(), getMeasuredHeight());
             }
         }
-        boolean z = false;
-        if (!this.W ? !(this.T != null || this.U != null) : this.V == null) {
+        if (!this.i0 ? !(this.f0 != null || this.g0 != null) : this.h0 == null) {
             z = true;
         }
         setWillNotDraw(z);
@@ -176,21 +171,21 @@ public class ActionBarContainer extends FrameLayout {
 
     public void setSplitBackground(Drawable drawable) {
         Drawable drawable2;
-        Drawable drawable3 = this.V;
+        Drawable drawable3 = this.h0;
         if (drawable3 != null) {
             drawable3.setCallback(null);
-            unscheduleDrawable(this.V);
+            unscheduleDrawable(this.h0);
         }
-        this.V = drawable;
-        boolean z = this.W;
+        this.h0 = drawable;
+        boolean z = this.i0;
         boolean z2 = false;
         if (drawable != null) {
             drawable.setCallback(this);
-            if (z && (drawable2 = this.V) != null) {
+            if (z && (drawable2 = this.h0) != null) {
                 drawable2.setBounds(0, 0, getMeasuredWidth(), getMeasuredHeight());
             }
         }
-        if (!z ? !(this.T != null || this.U != null) : this.V == null) {
+        if (!z ? !(this.f0 != null || this.g0 != null) : this.h0 == null) {
             z2 = true;
         }
         setWillNotDraw(z2);
@@ -199,20 +194,20 @@ public class ActionBarContainer extends FrameLayout {
     }
 
     public void setStackedBackground(Drawable drawable) {
-        Drawable drawable2 = this.U;
+        Drawable drawable2 = this.g0;
         if (drawable2 != null) {
             drawable2.setCallback(null);
-            unscheduleDrawable(this.U);
+            unscheduleDrawable(this.g0);
         }
-        this.U = drawable;
+        this.g0 = drawable;
         if (drawable != null) {
             drawable.setCallback(this);
-            if (this.a0 && this.U != null) {
+            if (this.j0 && this.g0 != null) {
                 throw null;
             }
         }
         boolean z = false;
-        if (!this.W ? !(this.T != null || this.U != null) : this.V == null) {
+        if (!this.i0 ? !(this.f0 != null || this.g0 != null) : this.h0 == null) {
             z = true;
         }
         setWillNotDraw(z);
@@ -221,7 +216,7 @@ public class ActionBarContainer extends FrameLayout {
     }
 
     public void setTransitioning(boolean z) {
-        this.Q = z;
+        this.c0 = z;
         setDescendantFocusability(z ? 393216 : 262144);
     }
 
@@ -229,15 +224,15 @@ public class ActionBarContainer extends FrameLayout {
     public void setVisibility(int i) {
         super.setVisibility(i);
         boolean z = i == 0;
-        Drawable drawable = this.T;
+        Drawable drawable = this.f0;
         if (drawable != null) {
             drawable.setVisible(z, false);
         }
-        Drawable drawable2 = this.U;
+        Drawable drawable2 = this.g0;
         if (drawable2 != null) {
             drawable2.setVisible(z, false);
         }
-        Drawable drawable3 = this.V;
+        Drawable drawable3 = this.h0;
         if (drawable3 != null) {
             drawable3.setVisible(z, false);
         }
@@ -253,15 +248,15 @@ public class ActionBarContainer extends FrameLayout {
 
     @Override // android.view.View
     public final boolean verifyDrawable(Drawable drawable) {
-        Drawable drawable2 = this.T;
-        boolean z = this.W;
+        Drawable drawable2 = this.f0;
+        boolean z = this.i0;
         if (drawable == drawable2 && !z) {
             return true;
         }
-        if (drawable == this.U && this.a0) {
+        if (drawable == this.g0 && this.j0) {
             return true;
         }
-        return (drawable == this.V && z) || super.verifyDrawable(drawable);
+        return (drawable == this.h0 && z) || super.verifyDrawable(drawable);
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent

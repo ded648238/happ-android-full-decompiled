@@ -1,6 +1,6 @@
 .class abstract Lorg/conscrypt/AbstractSessionContext;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljavax/net/ssl/SSLSessionContext;
@@ -170,19 +170,19 @@
     .line 28
     :cond_0
     :goto_0
-    iget-object v0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 29
     .line 30
-    invoke-interface {v0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 31
     .line 32
     .line 33
-    move-result-object v0
+    move-result-object p0
 
     .line 34
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 35
     .line 36
@@ -191,19 +191,19 @@
 
     .line 38
     :goto_1
-    iget-object v1, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 39
     .line 40
-    invoke-interface {v1}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 41
     .line 42
     .line 43
-    move-result-object v1
+    move-result-object p0
 
     .line 44
-    invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 45
     .line 46
@@ -212,7 +212,7 @@
 .end method
 
 .method private isValid()Z
-    .locals 5
+    .locals 4
 
     .line 1
     iget-wide v0, p0, Lorg/conscrypt/AbstractSessionContext;->sslCtxNativePointer:J
@@ -223,25 +223,25 @@
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    cmp-long p0, v0, v2
 
     .line 6
     .line 7
-    if-eqz v4, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 10
-    return v0
+    return p0
 
     .line 11
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    return v0
+    return p0
 .end method
 
 .method private setTimeout(I)V
@@ -304,19 +304,19 @@
     .line 25
     :cond_0
     :goto_0
-    iget-object p1, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 26
     .line 27
-    invoke-interface {p1}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 28
     .line 29
     .line 30
-    move-result-object p1
+    move-result-object p0
 
     .line 31
-    invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 32
     .line 33
@@ -325,19 +325,19 @@
 
     .line 35
     :goto_1
-    iget-object v0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 36
     .line 37
-    invoke-interface {v0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 38
     .line 39
     .line 40
-    move-result-object v0
+    move-result-object p0
 
     .line 41
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 42
     .line 43
@@ -442,7 +442,7 @@
 
     .line 45
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 46
     goto :goto_1
@@ -461,7 +461,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 50
-    throw v1
+    throw p0
 .end method
 
 
@@ -551,7 +551,7 @@
 
     .line 39
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 40
     goto :goto_1
@@ -564,11 +564,11 @@
     .line 42
     .line 43
     .line 44
-    iget-object v0, p0, Lorg/conscrypt/AbstractSessionContext;->sessions:Ljava/util/Map;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->sessions:Ljava/util/Map;
 
     .line 45
     .line 46
-    invoke-interface {v0, v2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 47
     .line 48
@@ -585,7 +585,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 52
-    throw p1
+    throw p0
 
     .line 53
     :cond_2
@@ -714,7 +714,7 @@
 
     .line 34
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 35
     :try_start_1
@@ -723,11 +723,11 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 36
-    throw v1
+    throw p0
 .end method
 
 .method public final getSession([B)Ljavax/net/ssl/SSLSession;
-    .locals 3
+    .locals 2
 
     .line 1
     const/4 v0, 0x0
@@ -754,19 +754,19 @@
 
     .line 12
     :try_start_0
-    iget-object v2, p0, Lorg/conscrypt/AbstractSessionContext;->sessions:Ljava/util/Map;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->sessions:Ljava/util/Map;
 
     .line 13
     .line 14
-    invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v1
+    move-result-object p0
 
     .line 18
-    check-cast v1, Lorg/conscrypt/NativeSslSession;
+    check-cast p0, Lorg/conscrypt/NativeSslSession;
 
     .line 19
     .line 20
@@ -775,11 +775,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 21
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 22
     .line 23
-    invoke-virtual {v1}, Lorg/conscrypt/NativeSslSession;->isValid()Z
+    invoke-virtual {p0}, Lorg/conscrypt/NativeSslSession;->isValid()Z
 
     .line 24
     .line 25
@@ -791,15 +791,15 @@
 
     .line 28
     .line 29
-    invoke-virtual {v1}, Lorg/conscrypt/NativeSslSession;->toSSLSession()Ljavax/net/ssl/SSLSession;
+    invoke-virtual {p0}, Lorg/conscrypt/NativeSslSession;->toSSLSession()Ljavax/net/ssl/SSLSession;
 
     .line 30
     .line 31
     .line 32
-    move-result-object p1
+    move-result-object p0
 
     .line 33
-    return-object p1
+    return-object p0
 
     .line 34
     :cond_0
@@ -807,7 +807,7 @@
 
     .line 35
     :catchall_0
-    move-exception v0
+    move-exception p0
 
     .line 36
     :try_start_1
@@ -816,15 +816,15 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 37
-    throw v0
+    throw p0
 
     .line 38
     :cond_1
-    const-string p1, "sessionId"
+    const-string p0, "sessionId"
 
     .line 39
     .line 40
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 41
     .line 42
@@ -833,14 +833,14 @@
 .end method
 
 .method public final getSessionCacheSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/AbstractSessionContext;->maximumSize:I
+    iget p0, p0, Lorg/conscrypt/AbstractSessionContext;->maximumSize:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getSessionFromCache([B)Lorg/conscrypt/NativeSslSession;
@@ -851,10 +851,10 @@
 
     .line 2
     .line 3
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 4
-    return-object p1
+    return-object p0
 
     .line 5
     :cond_0
@@ -939,14 +939,14 @@
     .line 41
     .line 42
     .line 43
-    move-result-object p1
+    move-result-object p0
 
     .line 44
-    return-object p1
+    return-object p0
 
     .line 45
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 46
     :try_start_1
@@ -955,21 +955,21 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 47
-    throw p1
+    throw p0
 .end method
 
 .method public abstract getSessionFromPersistentCache([B)Lorg/conscrypt/NativeSslSession;
 .end method
 
 .method public final getSessionTimeout()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/AbstractSessionContext;->timeout:I
+    iget p0, p0, Lorg/conscrypt/AbstractSessionContext;->timeout:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public initSpake(Lorg/conscrypt/SSLParametersImpl;)V
@@ -1068,77 +1068,94 @@
     .line 43
     .line 44
     iget-wide v6, p0, Lorg/conscrypt/AbstractSessionContext;->sslCtxNativePointer:J
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 45
     .line 46
     move-object v8, p0
 
     .line 47
+    :try_start_1
     invoke-static/range {v0 .. v8}, Lorg/conscrypt/NativeCrypto;->SSL_CTX_set_spake_credential([B[B[B[BZIJLorg/conscrypt/AbstractSessionContext;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 48
     .line 49
     .line 50
-    goto :goto_0
+    goto :goto_1
 
     .line 51
     :catchall_0
     move-exception v0
 
     .line 52
-    move-object p1, v0
+    :goto_0
+    move-object p0, v0
 
     .line 53
-    goto :goto_1
+    goto :goto_2
 
     .line 54
-    :cond_0
-    :goto_0
-    iget-object p1, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    :catchall_1
+    move-exception v0
 
     .line 55
+    move-object v8, p0
+
     .line 56
-    invoke-interface {p1}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
+    goto :goto_0
 
     .line 57
-    .line 58
-    .line 59
-    move-result-object p1
+    :cond_0
+    move-object v8, p0
 
+    .line 58
+    :goto_1
+    iget-object p0, v8, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+
+    .line 59
     .line 60
-    invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 61
     .line 62
     .line 63
-    return-void
+    move-result-object p0
 
     .line 64
-    :goto_1
-    iget-object v0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 65
     .line 66
-    invoke-interface {v0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
-
     .line 67
-    .line 68
-    .line 69
-    move-result-object v0
+    return-void
 
+    .line 68
+    :goto_2
+    iget-object p1, v8, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+
+    .line 69
     .line 70
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p1}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 71
     .line 72
     .line 73
-    throw p1
+    move-result-object p1
+
+    .line 74
+    invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 75
+    .line 76
+    .line 77
+    throw p0
 .end method
 
 .method public newSsl()J
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLException;
@@ -1190,19 +1207,19 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 22
-    iget-object v2, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 23
     .line 24
-    invoke-interface {v2}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
 
     .line 25
     .line 26
     .line 27
-    move-result-object v2
+    move-result-object p0
 
     .line 28
-    invoke-interface {v2}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 29
     .line 30
@@ -1238,19 +1255,19 @@
 
     .line 42
     :goto_0
-    iget-object v1, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 43
     .line 44
-    invoke-interface {v1}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
 
     .line 45
     .line 46
     .line 47
-    move-result-object v1
+    move-result-object p0
 
     .line 48
-    invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 49
     .line 50
@@ -1313,11 +1330,11 @@
 
     .line 22
     :try_start_0
-    iget-object v1, p0, Lorg/conscrypt/AbstractSessionContext;->sessions:Ljava/util/Map;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->sessions:Ljava/util/Map;
 
     .line 23
     .line 24
-    invoke-interface {v1, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -1329,7 +1346,7 @@
 
     .line 29
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 30
     monitor-exit v0
@@ -1337,7 +1354,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 31
-    throw p1
+    throw p0
 
     .line 32
     :cond_1
@@ -1380,11 +1397,11 @@
 
     .line 13
     :cond_1
-    const-string p1, "size < 0"
+    const-string p0, "size < 0"
 
     .line 14
     .line 15
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 16
     .line 17
@@ -1508,7 +1525,7 @@
 
     .line 52
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 53
     goto :goto_2
@@ -1527,15 +1544,15 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 57
-    throw p1
+    throw p0
 
     .line 58
     :cond_3
-    const-string p1, "seconds < 0"
+    const-string p0, "seconds < 0"
 
     .line 59
     .line 60
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 61
     .line 62
@@ -1600,19 +1617,19 @@
     .line 24
     :cond_0
     :goto_0
-    iget-object p1, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 25
     .line 26
-    invoke-interface {p1}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 27
     .line 28
     .line 29
-    move-result-object p1
+    move-result-object p0
 
     .line 30
-    invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 31
     .line 32
@@ -1621,19 +1638,19 @@
 
     .line 34
     :goto_1
-    iget-object v0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
+    iget-object p0, p0, Lorg/conscrypt/AbstractSessionContext;->lock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     .line 35
     .line 36
-    invoke-interface {v0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
+    invoke-interface {p0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
 
     .line 37
     .line 38
     .line 39
-    move-result-object v0
+    move-result-object p0
 
     .line 40
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     .line 41
     .line 42

@@ -1,24 +1,25 @@
 package defpackage;
 
-import j$.util.DesugarCollections;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class m57 {
-    public final int a;
-    public final String b;
-    public final List c;
-    public final List d;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class m57 extends v2 {
+    public final AtomicReference a = new AtomicReference(null);
 
-    public m57(int i, String str, ArrayList arrayList, ArrayList arrayList2, ArrayList arrayList3, ArrayList arrayList4, ArrayList arrayList5) {
-        this.a = i;
-        this.b = str;
-        this.c = DesugarCollections.unmodifiableList(arrayList);
-        DesugarCollections.unmodifiableList(arrayList2);
-        DesugarCollections.unmodifiableList(arrayList3);
-        this.d = DesugarCollections.unmodifiableList(arrayList4);
-        DesugarCollections.unmodifiableList(arrayList5);
+    @Override // defpackage.v2
+    public final boolean a(u2 u2Var) {
+        AtomicReference atomicReference = this.a;
+        if (atomicReference.get() != null) {
+            return false;
+        }
+        atomicReference.set(l57.a);
+        return true;
+    }
+
+    @Override // defpackage.v2
+    public final b31[] b(u2 u2Var) {
+        this.a.set(null);
+        return yl0.a;
     }
 }

@@ -1,6 +1,6 @@
 .class final Lokhttp3/Cache$Entry;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,25 +26,25 @@
     d2 = {
         "Lokhttp3/Cache$Entry;",
         "",
-        "Lle6;",
+        "Ld27;",
         "rawSource",
         "<init>",
-        "(Lle6;)V",
+        "(Ld27;)V",
         "Lokhttp3/Response;",
         "response",
         "(Lokhttp3/Response;)V",
-        "Ls50;",
+        "Lf80;",
         "source",
         "",
         "Ljava/security/cert/Certificate;",
         "readCertificateList",
-        "(Ls50;)Ljava/util/List;",
-        "Lr50;",
+        "(Lf80;)Ljava/util/List;",
+        "Le80;",
         "sink",
         "certificates",
-        "Lbh7;",
+        "Lr98;",
         "writeCertList",
-        "(Lr50;Ljava/util/List;)V",
+        "(Le80;Ljava/util/List;)V",
         "Lokhttp3/internal/cache/DiskLruCache$Editor;",
         "Lokhttp3/internal/cache/DiskLruCache;",
         "editor",
@@ -139,7 +139,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/Cache$Entry$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/Cache$Entry$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -257,7 +257,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lle6;)V
+.method public constructor <init>(Ld27;)V
     .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -281,11 +281,11 @@
     .line 8
     .line 9
     :try_start_0
-    new-instance v1, Lhc5;
+    new-instance v1, Liw5;
 
     .line 10
     .line 11
-    invoke-direct {v1, p1}, Lhc5;-><init>(Lle6;)V
+    invoke-direct {v1, p1}, Liw5;-><init>(Ld27;)V
 
     .line 12
     .line 13
@@ -297,7 +297,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-virtual {v1, v2, v3}, Lhc5;->N(J)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Liw5;->V(J)Ljava/lang/String;
 
     .line 20
     .line 21
@@ -325,7 +325,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {v1, v2, v3}, Lhc5;->N(J)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Liw5;->V(J)Ljava/lang/String;
 
     .line 34
     .line 35
@@ -350,7 +350,7 @@
 
     .line 45
     .line 46
-    invoke-virtual {v4, v1}, Lokhttp3/Cache$Companion;->readInt$okhttp(Ls50;)I
+    invoke-virtual {v4, v1}, Lokhttp3/Cache$Companion;->readInt$okhttp(Lf80;)I
 
     .line 47
     .line 48
@@ -361,7 +361,7 @@
     const/4 v5, 0x0
 
     .line 51
-    const/4 v6, 0x0
+    move v6, v5
 
     .line 52
     :goto_0
@@ -369,7 +369,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {v1, v2, v3}, Lhc5;->N(J)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Liw5;->V(J)Ljava/lang/String;
 
     .line 55
     .line 56
@@ -390,7 +390,7 @@
 
     .line 64
     :catchall_0
-    move-exception v0
+    move-exception p0
 
     .line 65
     goto/16 :goto_5
@@ -414,7 +414,7 @@
 
     .line 74
     .line 75
-    invoke-virtual {v1, v2, v3}, Lhc5;->N(J)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Liw5;->V(J)Ljava/lang/String;
 
     .line 76
     .line 77
@@ -467,7 +467,7 @@
 
     .line 101
     .line 102
-    invoke-virtual {v4, v1}, Lokhttp3/Cache$Companion;->readInt$okhttp(Ls50;)I
+    invoke-virtual {v4, v1}, Lokhttp3/Cache$Companion;->readInt$okhttp(Lf80;)I
 
     .line 103
     .line 104
@@ -480,7 +480,7 @@
 
     .line 107
     .line 108
-    invoke-virtual {v1, v2, v3}, Lhc5;->N(J)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Liw5;->V(J)Ljava/lang/String;
 
     .line 109
     .line 110
@@ -604,7 +604,7 @@
 
     .line 167
     .line 168
-    invoke-virtual {v1, v2, v3}, Lhc5;->N(J)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Liw5;->V(J)Ljava/lang/String;
 
     .line 169
     .line 170
@@ -624,7 +624,7 @@
 
     .line 177
     .line 178
-    invoke-virtual {v1, v2, v3}, Lhc5;->N(J)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Liw5;->V(J)Ljava/lang/String;
 
     .line 179
     .line 180
@@ -644,7 +644,7 @@
     move-result-object v0
 
     .line 188
-    invoke-direct {p0, v1}, Lokhttp3/Cache$Entry;->readCertificateList(Ls50;)Ljava/util/List;
+    invoke-direct {p0, v1}, Lokhttp3/Cache$Entry;->readCertificateList(Lf80;)Ljava/util/List;
 
     .line 189
     .line 190
@@ -652,7 +652,7 @@
     move-result-object v4
 
     .line 192
-    invoke-direct {p0, v1}, Lokhttp3/Cache$Entry;->readCertificateList(Ls50;)Ljava/util/List;
+    invoke-direct {p0, v1}, Lokhttp3/Cache$Entry;->readCertificateList(Lf80;)Ljava/util/List;
 
     .line 193
     .line 194
@@ -660,7 +660,7 @@
     move-result-object v5
 
     .line 196
-    invoke-virtual {v1}, Lhc5;->z()Z
+    invoke-virtual {v1}, Liw5;->G()Z
 
     .line 197
     .line 198
@@ -676,7 +676,7 @@
 
     .line 203
     .line 204
-    invoke-virtual {v1, v2, v3}, Lhc5;->N(J)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Liw5;->V(J)Ljava/lang/String;
 
     .line 205
     .line 206
@@ -721,29 +721,29 @@
 
     .line 224
     :cond_5
-    new-instance v1, Ljava/io/IOException;
+    new-instance p0, Ljava/io/IOException;
 
     .line 225
     .line 226
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 227
     .line 228
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 229
     .line 230
     .line 231
-    const-string v3, "expected \"\" but was \""
+    const-string v2, "expected \"\" but was \""
 
     .line 232
     .line 233
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 234
     .line 235
     .line 236
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 237
     .line 238
@@ -752,12 +752,12 @@
 
     .line 240
     .line 241
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 242
     .line 243
     .line 244
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 245
     .line 246
@@ -765,12 +765,12 @@
     move-result-object v0
 
     .line 248
-    invoke-direct {v1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 249
     .line 250
     .line 251
-    throw v1
+    throw p0
 
     .line 252
     :cond_6
@@ -794,7 +794,7 @@
     .line 259
     :cond_7
     :try_start_1
-    new-instance v1, Ljava/io/IOException;
+    new-instance p0, Ljava/io/IOException;
 
     .line 260
     .line 261
@@ -806,7 +806,7 @@
     move-result-object v0
 
     .line 265
-    invoke-direct {v1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 266
     .line 267
@@ -823,40 +823,40 @@
     move-result-object v0
 
     .line 274
-    const-string v2, "cache corruption"
+    const-string v1, "cache corruption"
 
     .line 275
     .line 276
-    const/4 v3, 0x5
+    const/4 v2, 0x5
 
     .line 277
-    invoke-virtual {v0, v2, v3, v1}, Lokhttp3/internal/platform/Platform;->log(Ljava/lang/String;ILjava/lang/Throwable;)V
+    invoke-virtual {v0, v1, v2, p0}, Lokhttp3/internal/platform/Platform;->log(Ljava/lang/String;ILjava/lang/Throwable;)V
 
     .line 278
     .line 279
     .line 280
-    throw v1
+    throw p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 281
     :goto_5
     :try_start_2
-    throw v0
+    throw p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     .line 282
     :catchall_1
-    move-exception v1
+    move-exception v0
 
     .line 283
-    invoke-static {p1, v0}, Lzd7;->n(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Lj68;->j(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 284
     .line 285
     .line 286
-    throw v1
+    throw v0
 .end method
 
 .method public constructor <init>(Lokhttp3/Response;)V
@@ -951,42 +951,42 @@
 .end method
 
 .method private final isHttps()Z
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Cache$Entry;->url:Lokhttp3/HttpUrl;
+    iget-object p0, p0, Lokhttp3/Cache$Entry;->url:Lokhttp3/HttpUrl;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/HttpUrl;->scheme()Ljava/lang/String;
+    invoke-virtual {p0}, Lokhttp3/HttpUrl;->scheme()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    const-string v1, "https"
+    const-string v0, "https"
 
     .line 8
     .line 9
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, v0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 .end method
 
-.method private final readCertificateList(Ls50;)Ljava/util/List;
-    .locals 8
+.method private final readCertificateList(Lf80;)Ljava/util/List;
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ls50;",
+            "Lf80;",
             ")",
             "Ljava/util/List<",
             "Ljava/security/cert/Certificate;",
@@ -1001,189 +1001,185 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lokhttp3/Cache;->Companion:Lokhttp3/Cache$Companion;
+    sget-object p0, Lokhttp3/Cache;->Companion:Lokhttp3/Cache$Companion;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lokhttp3/Cache$Companion;->readInt$okhttp(Ls50;)I
+    invoke-virtual {p0, p1}, Lokhttp3/Cache$Companion;->readInt$okhttp(Lf80;)I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    const/4 v1, -0x1
+    const/4 v0, -0x1
 
     .line 8
-    if-ne v0, v1, :cond_0
+    if-ne p0, v0, :cond_0
 
     .line 9
     .line 10
-    sget-object p1, Lwn1;->Q:Lwn1;
+    sget-object p0, Lfw1;->X:Lfw1;
 
     .line 11
     .line 12
-    return-object p1
+    return-object p0
 
     .line 13
     :cond_0
     :try_start_0
-    const-string v1, "X.509"
+    const-string v0, "X.509"
 
     .line 14
     .line 15
-    invoke-static {v1}, Ljava/security/cert/CertificateFactory;->getInstance(Ljava/lang/String;)Ljava/security/cert/CertificateFactory;
+    invoke-static {v0}, Ljava/security/cert/CertificateFactory;->getInstance(Ljava/lang/String;)Ljava/security/cert/CertificateFactory;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v1
+    move-result-object v0
 
     .line 19
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v1, Ljava/util/ArrayList;
 
     .line 20
     .line 21
-    invoke-direct {v2, v0}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v1, p0}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 22
     .line 23
     .line 24
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 25
-    const/4 v4, 0x0
+    move v3, v2
 
     .line 26
     :goto_0
-    if-ge v4, v0, :cond_2
+    if-ge v3, p0, :cond_2
 
     .line 27
     .line 28
-    invoke-interface {p1}, Ls50;->p0()Ljava/lang/String;
+    invoke-interface {p1}, Lf80;->z0()Ljava/lang/String;
 
     .line 29
     .line 30
     .line 31
-    move-result-object v5
+    move-result-object v4
 
     .line 32
-    new-instance v6, Lf50;
+    new-instance v5, Ll70;
 
     .line 33
     .line 34
-    invoke-direct {v6}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v5}, Ljava/lang/Object;-><init>()V
 
     .line 35
     .line 36
     .line 37
-    sget-object v7, Ly60;->T:Ly60;
+    sget-object v6, Lo90;->c0:Lo90;
 
     .line 38
     .line 39
-    invoke-static {v5}, Lhp5;->v0(Ljava/lang/String;)Ly60;
+    invoke-static {v4}, Lm0;->b(Ljava/lang/String;)Lo90;
 
     .line 40
     .line 41
     .line 42
-    move-result-object v5
+    move-result-object v4
 
     .line 43
-    if-eqz v5, :cond_1
+    if-eqz v4, :cond_1
 
     .line 44
     .line 45
-    invoke-virtual {v6, v5}, Lf50;->v0(Ly60;)V
+    invoke-virtual {v5, v4}, Ll70;->C0(Lo90;)V
 
     .line 46
     .line 47
     .line 48
-    new-instance v5, Le50;
+    new-instance v4, Lk70;
 
     .line 49
     .line 50
-    invoke-direct {v5, v6, v3}, Le50;-><init>(Ls50;I)V
+    invoke-direct {v4, v5, v2}, Lk70;-><init>(Lf80;I)V
 
     .line 51
     .line 52
     .line 53
-    invoke-virtual {v1, v5}, Ljava/security/cert/CertificateFactory;->generateCertificate(Ljava/io/InputStream;)Ljava/security/cert/Certificate;
+    invoke-virtual {v0, v4}, Ljava/security/cert/CertificateFactory;->generateCertificate(Ljava/io/InputStream;)Ljava/security/cert/Certificate;
 
     .line 54
     .line 55
     .line 56
-    move-result-object v5
+    move-result-object v4
 
     .line 57
-    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 58
     .line 59
     .line 60
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     .line 61
     .line 62
     goto :goto_0
 
     .line 63
-    :catch_0
-    move-exception p1
+    :cond_1
+    new-instance p0, Ljava/io/IOException;
 
     .line 64
-    goto :goto_1
-
     .line 65
-    :cond_1
-    new-instance p1, Ljava/io/IOException;
+    const-string p1, "Corrupt certificate in cache entry"
 
     .line 66
     .line 67
-    const-string v0, "Corrupt certificate in cache entry"
+    invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 68
     .line 69
-    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
     .line 70
-    .line 71
-    .line 72
-    throw p1
+    throw p0
     :try_end_0
     .catch Ljava/security/cert/CertificateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 73
+    .line 71
     :cond_2
-    return-object v2
+    return-object v1
+
+    .line 72
+    :catch_0
+    move-exception p0
+
+    .line 73
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 74
-    :goto_1
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
     .line 75
     .line 76
+    move-result-object p0
+
     .line 77
-    move-result-object p1
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 78
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
-
     .line 79
     .line 80
-    .line 81
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    .line 82
-    return-object p1
+    .line 81
+    return-object p0
 .end method
 
-.method private final writeCertList(Lr50;Ljava/util/List;)V
-    .locals 3
+.method private final writeCertList(Le80;Ljava/util/List;)V
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lr50;",
+            "Le80;",
             "Ljava/util/List<",
             "+",
             "Ljava/security/cert/Certificate;",
@@ -1204,25 +1200,25 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    int-to-long v0, v0
+    int-to-long v0, p0
 
     .line 6
-    invoke-interface {p1, v0, v1}, Lr50;->E0(J)Lr50;
+    invoke-interface {p1, v0, v1}, Le80;->R0(J)Le80;
 
     .line 7
     .line 8
     .line 9
-    move-result-object v0
+    move-result-object p0
 
     .line 10
-    const/16 v1, 0xa
+    const/16 v0, 0xa
 
     .line 11
     .line 12
-    invoke-interface {v0, v1}, Lr50;->writeByte(I)Lr50;
+    invoke-interface {p0, v0}, Le80;->writeByte(I)Le80;
 
     .line 13
     .line 14
@@ -1232,76 +1228,76 @@
     .line 16
     .line 17
     .line 18
-    move-result-object p2
+    move-result-object p0
 
     .line 19
     :goto_0
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 20
     .line 21
     .line 22
-    move-result v0
+    move-result p2
 
     .line 23
-    if-eqz v0, :cond_0
+    if-eqz p2, :cond_0
 
     .line 24
     .line 25
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 26
     .line 27
     .line 28
-    move-result-object v0
+    move-result-object p2
 
     .line 29
-    check-cast v0, Ljava/security/cert/Certificate;
+    check-cast p2, Ljava/security/cert/Certificate;
 
     .line 30
     .line 31
-    invoke-virtual {v0}, Ljava/security/cert/Certificate;->getEncoded()[B
+    invoke-virtual {p2}, Ljava/security/cert/Certificate;->getEncoded()[B
 
     .line 32
     .line 33
     .line 34
-    move-result-object v0
+    move-result-object p2
 
     .line 35
-    sget-object v2, Ly60;->T:Ly60;
+    sget-object v1, Lo90;->c0:Lo90;
 
     .line 36
     .line 37
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 38
     .line 39
     .line 40
-    invoke-static {v0}, Lhp5;->N0([B)Ly60;
+    invoke-static {p2}, Lm0;->j([B)Lo90;
 
     .line 41
     .line 42
     .line 43
-    move-result-object v0
+    move-result-object p2
 
     .line 44
-    invoke-virtual {v0}, Ly60;->a()Ljava/lang/String;
+    invoke-virtual {p2}, Lo90;->a()Ljava/lang/String;
 
     .line 45
     .line 46
     .line 47
-    move-result-object v0
+    move-result-object p2
 
     .line 48
-    invoke-interface {p1, v0}, Lr50;->W(Ljava/lang/String;)Lr50;
+    invoke-interface {p1, p2}, Le80;->e0(Ljava/lang/String;)Le80;
 
     .line 49
     .line 50
     .line 51
-    move-result-object v0
+    move-result-object p2
 
     .line 52
-    invoke-interface {v0, v1}, Lr50;->writeByte(I)Lr50;
+    invoke-interface {p2, v0}, Le80;->writeByte(I)Le80;
     :try_end_0
     .catch Ljava/security/cert/CertificateEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1311,31 +1307,27 @@
     goto :goto_0
 
     .line 56
-    :catch_0
-    move-exception p1
-
-    .line 57
-    goto :goto_1
-
-    .line 58
     :cond_0
     return-void
 
-    .line 59
-    :goto_1
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    .line 57
+    :catch_0
+    move-exception p0
 
+    .line 58
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 59
     .line 60
     .line 61
+    move-result-object p0
+
     .line 62
-    move-result-object p1
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 63
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
-
     .line 64
     .line 65
-    .line 66
     return-void
 .end method
 
@@ -1367,7 +1359,7 @@
     move-result-object v1
 
     .line 13
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 14
     .line 15
@@ -1391,7 +1383,7 @@
     move-result-object v1
 
     .line 25
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 26
     .line 27
@@ -1407,33 +1399,33 @@
 
     .line 32
     .line 33
-    iget-object v1, p0, Lokhttp3/Cache$Entry;->varyHeaders:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/Cache$Entry;->varyHeaders:Lokhttp3/Headers;
 
     .line 34
     .line 35
-    invoke-virtual {v0, p2, v1, p1}, Lokhttp3/Cache$Companion;->varyMatches(Lokhttp3/Response;Lokhttp3/Headers;Lokhttp3/Request;)Z
+    invoke-virtual {v0, p2, p0, p1}, Lokhttp3/Cache$Companion;->varyMatches(Lokhttp3/Response;Lokhttp3/Headers;Lokhttp3/Request;)Z
 
     .line 36
     .line 37
     .line 38
-    move-result p1
+    move-result p0
 
     .line 39
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 40
     .line 41
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 42
-    return p1
+    return p0
 
     .line 43
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 44
-    return p1
+    return p0
 .end method
 
 .method public final response(Lokhttp3/internal/cache/DiskLruCache$Snapshot;)Lokhttp3/Response;
@@ -1648,18 +1640,18 @@
     .line 105
     .line 106
     .line 107
-    move-result-object p1
+    move-result-object p0
 
     .line 108
-    invoke-virtual {p1}, Lokhttp3/Response$Builder;->build()Lokhttp3/Response;
+    invoke-virtual {p0}, Lokhttp3/Response$Builder;->build()Lokhttp3/Response;
 
     .line 109
     .line 110
     .line 111
-    move-result-object p1
+    move-result-object p0
 
     .line 112
-    return-object p1
+    return-object p0
 .end method
 
 .method public final writeTo(Lokhttp3/internal/cache/DiskLruCache$Editor;)V
@@ -1679,7 +1671,7 @@
     const/4 v0, 0x0
 
     .line 5
-    invoke-virtual {p1, v0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->newSink(I)Lpb6;
+    invoke-virtual {p1, v0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->newSink(I)Lqy6;
 
     .line 6
     .line 7
@@ -1687,7 +1679,7 @@
     move-result-object p1
 
     .line 9
-    invoke-static {p1}, Lkz0;->q(Lpb6;)Lgc5;
+    invoke-static {p1}, Lnn3;->m(Lqy6;)Lhw5;
 
     .line 10
     .line 11
@@ -1708,7 +1700,7 @@
     move-result-object v1
 
     .line 19
-    invoke-virtual {p1, v1}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 20
     .line 21
@@ -1717,7 +1709,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 25
     .line 26
@@ -1726,12 +1718,12 @@
 
     .line 28
     .line 29
-    invoke-virtual {p1, v2}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v2}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 30
     .line 31
     .line 32
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 33
     .line 34
@@ -1751,12 +1743,12 @@
     int-to-long v2, v2
 
     .line 42
-    invoke-virtual {p1, v2, v3}, Lgc5;->E0(J)Lr50;
+    invoke-virtual {p1, v2, v3}, Lhw5;->R0(J)Le80;
 
     .line 43
     .line 44
     .line 45
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 46
     .line 47
@@ -1775,7 +1767,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 54
-    const/4 v3, 0x0
+    move v3, v0
 
     .line 55
     :goto_0
@@ -1800,12 +1792,12 @@
     move-result-object v5
 
     .line 65
-    invoke-virtual {p1, v5}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v5}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 66
     .line 67
     .line 68
-    invoke-virtual {p1, v4}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v4}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 69
     .line 70
@@ -1822,12 +1814,12 @@
     move-result-object v4
 
     .line 77
-    invoke-virtual {p1, v4}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v4}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 78
     .line 79
     .line 80
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 81
     .line 82
@@ -1840,7 +1832,7 @@
 
     .line 86
     :catchall_0
-    move-exception v0
+    move-exception p0
 
     .line 87
     goto/16 :goto_2
@@ -1877,12 +1869,12 @@
     move-result-object v2
 
     .line 104
-    invoke-virtual {p1, v2}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v2}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 105
     .line 106
     .line 107
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 108
     .line 109
@@ -1906,12 +1898,12 @@
     int-to-long v2, v2
 
     .line 119
-    invoke-virtual {p1, v2, v3}, Lgc5;->E0(J)Lr50;
+    invoke-virtual {p1, v2, v3}, Lhw5;->R0(J)Le80;
 
     .line 120
     .line 121
     .line 122
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 123
     .line 124
@@ -1945,12 +1937,12 @@
     move-result-object v3
 
     .line 139
-    invoke-virtual {p1, v3}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v3}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 140
     .line 141
     .line 142
-    invoke-virtual {p1, v4}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v4}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 143
     .line 144
@@ -1967,12 +1959,12 @@
     move-result-object v3
 
     .line 151
-    invoke-virtual {p1, v3}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v3}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 152
     .line 153
     .line 154
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 155
     .line 156
@@ -1989,12 +1981,12 @@
 
     .line 161
     .line 162
-    invoke-virtual {p1, v0}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v0}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 163
     .line 164
     .line 165
-    invoke-virtual {p1, v4}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v4}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 166
     .line 167
@@ -2003,12 +1995,12 @@
 
     .line 169
     .line 170
-    invoke-virtual {p1, v2, v3}, Lgc5;->E0(J)Lr50;
+    invoke-virtual {p1, v2, v3}, Lhw5;->R0(J)Le80;
 
     .line 171
     .line 172
     .line 173
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 174
     .line 175
@@ -2017,12 +2009,12 @@
 
     .line 177
     .line 178
-    invoke-virtual {p1, v0}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v0}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 179
     .line 180
     .line 181
-    invoke-virtual {p1, v4}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v4}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 182
     .line 183
@@ -2031,12 +2023,12 @@
 
     .line 185
     .line 186
-    invoke-virtual {p1, v2, v3}, Lgc5;->E0(J)Lr50;
+    invoke-virtual {p1, v2, v3}, Lhw5;->R0(J)Le80;
 
     .line 187
     .line 188
     .line 189
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 190
     .line 191
@@ -2053,7 +2045,7 @@
 
     .line 197
     .line 198
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 199
     .line 200
@@ -2083,12 +2075,12 @@
     move-result-object v0
 
     .line 214
-    invoke-virtual {p1, v0}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, v0}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 215
     .line 216
     .line 217
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
 
     .line 218
     .line 219
@@ -2105,7 +2097,7 @@
     move-result-object v0
 
     .line 226
-    invoke-direct {p0, p1, v0}, Lokhttp3/Cache$Entry;->writeCertList(Lr50;Ljava/util/List;)V
+    invoke-direct {p0, p1, v0}, Lokhttp3/Cache$Entry;->writeCertList(Le80;Ljava/util/List;)V
 
     .line 227
     .line 228
@@ -2122,37 +2114,37 @@
     move-result-object v0
 
     .line 235
-    invoke-direct {p0, p1, v0}, Lokhttp3/Cache$Entry;->writeCertList(Lr50;Ljava/util/List;)V
+    invoke-direct {p0, p1, v0}, Lokhttp3/Cache$Entry;->writeCertList(Le80;Ljava/util/List;)V
 
     .line 236
     .line 237
     .line 238
-    iget-object v0, p0, Lokhttp3/Cache$Entry;->handshake:Lokhttp3/Handshake;
+    iget-object p0, p0, Lokhttp3/Cache$Entry;->handshake:Lokhttp3/Handshake;
 
     .line 239
     .line 240
-    invoke-virtual {v0}, Lokhttp3/Handshake;->tlsVersion()Lokhttp3/TlsVersion;
+    invoke-virtual {p0}, Lokhttp3/Handshake;->tlsVersion()Lokhttp3/TlsVersion;
 
     .line 241
     .line 242
     .line 243
-    move-result-object v0
+    move-result-object p0
 
     .line 244
-    invoke-virtual {v0}, Lokhttp3/TlsVersion;->javaName()Ljava/lang/String;
+    invoke-virtual {p0}, Lokhttp3/TlsVersion;->javaName()Ljava/lang/String;
 
     .line 245
     .line 246
     .line 247
-    move-result-object v0
+    move-result-object p0
 
     .line 248
-    invoke-virtual {p1, v0}, Lgc5;->W(Ljava/lang/String;)Lr50;
+    invoke-virtual {p1, p0}, Lhw5;->e0(Ljava/lang/String;)Le80;
 
     .line 249
     .line 250
     .line 251
-    invoke-virtual {p1, v1}, Lgc5;->writeByte(I)Lr50;
+    invoke-virtual {p1, v1}, Lhw5;->writeByte(I)Le80;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -2160,7 +2152,7 @@
     .line 253
     .line 254
     :cond_2
-    invoke-virtual {p1}, Lgc5;->close()V
+    invoke-virtual {p1}, Lhw5;->close()V
 
     .line 255
     .line 256
@@ -2170,19 +2162,19 @@
     .line 258
     :goto_2
     :try_start_2
-    throw v0
+    throw p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     .line 259
     :catchall_1
-    move-exception v1
+    move-exception v0
 
     .line 260
-    invoke-static {p1, v0}, Lzd7;->n(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Lj68;->j(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     .line 261
     .line 262
     .line 263
-    throw v1
+    throw v0
 .end method

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/ws/RealWebSocket$connect$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/Callback;
@@ -27,7 +27,7 @@
         "call",
         "Lokhttp3/Response;",
         "response",
-        "Lbh7;",
+        "Lr98;",
         "onResponse",
         "(Lokhttp3/Call;Lokhttp3/Response;)V",
         "Ljava/io/IOException;",
@@ -76,7 +76,7 @@
 
 # virtual methods
 .method public onFailure(Lokhttp3/Call;Ljava/io/IOException;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -89,14 +89,14 @@
     .line 5
     .line 6
     .line 7
-    iget-object p1, p0, Lokhttp3/internal/ws/RealWebSocket$connect$1;->this$0:Lokhttp3/internal/ws/RealWebSocket;
+    iget-object p0, p0, Lokhttp3/internal/ws/RealWebSocket$connect$1;->this$0:Lokhttp3/internal/ws/RealWebSocket;
 
     .line 8
     .line 9
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
     .line 10
-    invoke-virtual {p1, p2, v0}, Lokhttp3/internal/ws/RealWebSocket;->failWebSocket(Ljava/lang/Exception;Lokhttp3/Response;)V
+    invoke-virtual {p0, p2, p1}, Lokhttp3/internal/ws/RealWebSocket;->failWebSocket(Ljava/lang/Exception;Lokhttp3/Response;)V
 
     .line 11
     .line 12
@@ -239,13 +239,13 @@
 
     .line 65
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 66
     monitor-exit v0
 
     .line 67
-    throw p1
+    throw p0
 
     .line 68
     :cond_0
@@ -359,14 +359,14 @@
     move-exception p1
 
     .line 123
-    iget-object p2, p0, Lokhttp3/internal/ws/RealWebSocket$connect$1;->this$0:Lokhttp3/internal/ws/RealWebSocket;
+    iget-object p0, p0, Lokhttp3/internal/ws/RealWebSocket$connect$1;->this$0:Lokhttp3/internal/ws/RealWebSocket;
 
     .line 124
     .line 125
-    const/4 v0, 0x0
+    const/4 p2, 0x0
 
     .line 126
-    invoke-virtual {p2, p1, v0}, Lokhttp3/internal/ws/RealWebSocket;->failWebSocket(Ljava/lang/Exception;Lokhttp3/Response;)V
+    invoke-virtual {p0, p1, p2}, Lokhttp3/internal/ws/RealWebSocket;->failWebSocket(Ljava/lang/Exception;Lokhttp3/Response;)V
 
     .line 127
     .line 128
@@ -378,11 +378,11 @@
     move-exception v0
 
     .line 131
-    iget-object v1, p0, Lokhttp3/internal/ws/RealWebSocket$connect$1;->this$0:Lokhttp3/internal/ws/RealWebSocket;
+    iget-object p0, p0, Lokhttp3/internal/ws/RealWebSocket$connect$1;->this$0:Lokhttp3/internal/ws/RealWebSocket;
 
     .line 132
     .line 133
-    invoke-virtual {v1, v0, p2}, Lokhttp3/internal/ws/RealWebSocket;->failWebSocket(Ljava/lang/Exception;Lokhttp3/Response;)V
+    invoke-virtual {p0, v0, p2}, Lokhttp3/internal/ws/RealWebSocket;->failWebSocket(Ljava/lang/Exception;Lokhttp3/Response;)V
 
     .line 134
     .line 135

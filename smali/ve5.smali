@@ -1,25 +1,49 @@
-.class public abstract Lve5;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lve5;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Lha4;
+.field public synthetic c0:Ljava/lang/Object;
+
+.field public d0:I
 
 
-# direct methods
-.method public constructor <init>(Lha4;)V
-    .locals 0
+# virtual methods
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lve5;->c0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lve5;->a:Lha4;
+    iget p1, p0, Lve5;->d0:I
 
+    .line 4
     .line 5
+    const/high16 v0, -0x80000000
+
     .line 6
-    return-void
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    iput p1, p0, Lve5;->d0:I
+
+    .line 9
+    .line 10
+    const/4 p1, 0x0
+
+    .line 11
+    invoke-static {p1, p1, p0}, Lxe5;->a(Luq7;Lu96;Ld31;)V
+
+    .line 12
+    .line 13
+    .line 14
+    sget-object p0, Lj41;->X:Lj41;
+
+    .line 15
+    .line 16
+    return-object p0
 .end method

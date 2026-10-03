@@ -1,229 +1,450 @@
-.class public final Lpx7;
-.super Lwt6;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class final Lpx7;
+.super Ljn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Lu72;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljn4;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001\u00a8\u0006\u0003"
+    }
+    d2 = {
+        "Lpx7;",
+        "Ljn4;",
+        "Lqx7;",
+        "foundation"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
 
 
 # instance fields
-.field public final synthetic U:Lsu/happ/proxyutility/dto/TestPingViaProxyData;
+.field public final X:Z
 
-.field public final synthetic V:Ljava/lang/String;
+.field public final Y:Lrp4;
 
-.field public final synthetic W:Lug;
+.field public final Z:Z
+
+.field public final c0:Lw96;
+
+.field public final d0:Lmi2;
 
 
 # direct methods
-.method public constructor <init>(Lsu/happ/proxyutility/dto/TestPingViaProxyData;Ljava/lang/String;Lug;Lyv0;)V
+.method public constructor <init>(ZLrp4;ZLw96;Lmi2;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lpx7;->U:Lsu/happ/proxyutility/dto/TestPingViaProxyData;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p2, p0, Lpx7;->V:Ljava/lang/String;
-
     .line 4
+    iput-boolean p1, p0, Lpx7;->X:Z
+
     .line 5
-    iput-object p3, p0, Lpx7;->W:Lug;
-
     .line 6
-    .line 7
-    const/4 p1, 0x2
+    iput-object p2, p0, Lpx7;->Y:Lrp4;
 
+    .line 7
     .line 8
-    invoke-direct {p0, p1, p4}, Lwt6;-><init>(ILyv0;)V
+    iput-boolean p3, p0, Lpx7;->Z:Z
 
     .line 9
     .line 10
+    iput-object p4, p0, Lpx7;->c0:Lw96;
+
     .line 11
+    .line 12
+    iput-object p5, p0, Lpx7;->d0:Lmi2;
+
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final a()Lcn4;
+    .locals 6
 
     .line 1
-    check-cast p1, Lbx0;
+    new-instance v0, Lqx7;
 
     .line 2
     .line 3
-    check-cast p2, Lyv0;
+    iget-object v4, p0, Lpx7;->c0:Lw96;
 
     .line 4
     .line 5
-    invoke-virtual {p0, p2, p1}, Lpx7;->r(Lyv0;Ljava/lang/Object;)Lyv0;
+    iget-object v5, p0, Lpx7;->d0:Lmi2;
 
     .line 6
     .line 7
-    .line 8
-    move-result-object p1
+    iget-boolean v1, p0, Lpx7;->X:Z
 
+    .line 8
     .line 9
-    check-cast p1, Lpx7;
+    iget-object v2, p0, Lpx7;->Y:Lrp4;
 
     .line 10
     .line 11
-    sget-object p2, Lbh7;->a:Lbh7;
+    iget-boolean v3, p0, Lpx7;->Z:Z
 
     .line 12
     .line 13
-    invoke-virtual {p1, p2}, Lpx7;->w(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct/range {v0 .. v5}, Lqx7;-><init>(ZLrp4;ZLw96;Lmi2;)V
 
     .line 14
     .line 15
     .line 16
-    return-object p2
+    return-object v0
 .end method
 
-.method public final r(Lyv0;Ljava/lang/Object;)Lyv0;
-    .locals 3
+.method public final c(Lcn4;)V
+    .locals 8
 
     .line 1
-    new-instance p2, Lpx7;
+    move-object v0, p1
 
     .line 2
-    .line 3
-    iget-object v0, p0, Lpx7;->V:Ljava/lang/String;
+    check-cast v0, Lqx7;
 
-    .line 4
-    .line 5
-    iget-object v1, p0, Lpx7;->W:Lug;
-
-    .line 6
-    .line 7
-    iget-object v2, p0, Lpx7;->U:Lsu/happ/proxyutility/dto/TestPingViaProxyData;
-
-    .line 8
-    .line 9
-    invoke-direct {p2, v2, v0, v1, p1}, Lpx7;-><init>(Lsu/happ/proxyutility/dto/TestPingViaProxyData;Ljava/lang/String;Lug;Lyv0;)V
-
-    .line 10
-    .line 11
-    .line 12
-    return-object p2
-.end method
-
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    invoke-static {p1}, Lbv7;->V(Ljava/lang/Object;)V
-
-    .line 2
     .line 3
     .line 4
-    sget-object p1, Ldf2;->a:Lcom/google/gson/a;
+    iget-boolean p1, v0, Lqx7;->M0:Z
 
     .line 5
     .line 6
-    iget-object v0, p0, Lpx7;->U:Lsu/happ/proxyutility/dto/TestPingViaProxyData;
+    iget-boolean v1, p0, Lpx7;->X:Z
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/TestPingViaProxyData;->a()Ljava/lang/String;
+    if-eq p1, v1, :cond_0
 
     .line 9
     .line 10
-    .line 11
-    move-result-object v1
+    iput-boolean v1, v0, Lqx7;->M0:Z
 
+    .line 11
     .line 12
-    const-class v2, Lsu/happ/proxyutility/dto/XRayConfig;
+    invoke-static {v0}, Lvv2;->v(Lxo6;)V
 
     .line 13
     .line 14
-    invoke-static {p1, v2, v1}, Lmi2;->q(Lcom/google/gson/a;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
-
     .line 15
+    :cond_0
+    iget-object p1, p0, Lpx7;->d0:Lmi2;
+
     .line 16
     .line 17
-    move-result-object p1
+    iput-object p1, v0, Lqx7;->N0:Lmi2;
 
     .line 18
-    check-cast p1, Lsu/happ/proxyutility/dto/XRayConfig;
-
     .line 19
+    const/4 v5, 0x0
+
     .line 20
-    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/XRayConfig;->j()Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;
+    iget-object v7, v0, Lqx7;->O0:Lwr7;
 
     .line 21
     .line 22
-    .line 23
-    move-result-object v1
+    iget-object v1, p0, Lpx7;->Y:Lrp4;
 
+    .line 23
     .line 24
-    if-eqz v1, :cond_0
+    const/4 v2, 0x0
 
     .line 25
+    const/4 v3, 0x0
+
     .line 26
-    iget-object v2, p0, Lpx7;->V:Ljava/lang/String;
+    iget-boolean v4, p0, Lpx7;->Z:Z
 
     .line 27
     .line 28
-    invoke-virtual {v1, v2}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean;->n(Ljava/lang/String;)V
+    iget-object v6, p0, Lpx7;->c0:Lw96;
 
     .line 29
     .line 30
-    .line 31
-    :cond_0
-    sget-object v1, Lnf6;->a:Lnf6;
+    invoke-virtual/range {v0 .. v7}, Lv0;->i1(Lrp4;Lb43;ZZLjava/lang/String;Lw96;Lji2;)V
 
+    .line 31
     .line 32
     .line 33
-    sget-object v1, Ldf2;->c:Lcom/google/gson/a;
+    return-void
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    if-nez p1, :cond_1
+
+    .line 5
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_1
+    const-class v0, Lpx7;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    if-eq v0, v1, :cond_2
+
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_2
+    check-cast p1, Lpx7;
+
+    .line 17
+    .line 18
+    iget-boolean v0, p0, Lpx7;->X:Z
+
+    .line 19
+    .line 20
+    iget-boolean v1, p1, Lpx7;->X:Z
+
+    .line 21
+    .line 22
+    if-eq v0, v1, :cond_3
+
+    .line 23
+    .line 24
+    goto :goto_0
+
+    .line 25
+    :cond_3
+    iget-object v0, p0, Lpx7;->Y:Lrp4;
+
+    .line 26
+    .line 27
+    iget-object v1, p1, Lpx7;->Y:Lrp4;
+
+    .line 28
+    .line 29
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v0
+
+    .line 33
+    if-nez v0, :cond_4
 
     .line 34
     .line 35
-    invoke-virtual {v1, p1}, Lcom/google/gson/a;->h(Ljava/lang/Object;)Ljava/lang/String;
+    goto :goto_0
 
     .line 36
+    :cond_4
+    iget-boolean v0, p0, Lpx7;->Z:Z
+
     .line 37
     .line 38
-    move-result-object p1
+    iget-boolean v1, p1, Lpx7;->Z:Z
 
     .line 39
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/TestPingViaProxyData;->c()Lsu/happ/proxyutility/dto/enums/EPingType;
-
     .line 40
+    if-eq v0, v1, :cond_5
+
     .line 41
     .line 42
-    move-result-object v0
+    goto :goto_0
 
     .line 43
-    invoke-static {p1, v0}, Lnf6;->e(Ljava/lang/String;Lsu/happ/proxyutility/dto/enums/EPingType;)J
+    :cond_5
+    iget-object v0, p0, Lpx7;->c0:Lw96;
 
     .line 44
     .line 45
-    .line 46
-    move-result-wide v0
+    iget-object v1, p1, Lpx7;->c0:Lw96;
 
+    .line 46
     .line 47
-    new-instance p1, Ljava/lang/Long;
+    invoke-virtual {v0, v1}, Lw96;->equals(Ljava/lang/Object;)Z
 
     .line 48
     .line 49
-    invoke-direct {p1, v0, v1}, Ljava/lang/Long;-><init>(J)V
-
     .line 50
-    .line 51
-    .line 52
-    iget-object v0, p0, Lpx7;->W:Lug;
+    move-result v0
 
+    .line 51
+    if-nez v0, :cond_6
+
+    .line 52
     .line 53
+    goto :goto_0
+
     .line 54
-    invoke-virtual {v0, p1}, Lug;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_6
+    iget-object p0, p0, Lpx7;->d0:Lmi2;
 
     .line 55
     .line 56
-    .line 57
-    sget-object p1, Lbh7;->a:Lbh7;
+    iget-object p1, p1, Lpx7;->d0:Lmi2;
 
+    .line 57
     .line 58
+    if-eq p0, p1, :cond_7
+
     .line 59
-    return-object p1
+    .line 60
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 61
+    return p0
+
+    .line 62
+    :cond_7
+    :goto_1
+    const/4 p0, 0x1
+
+    .line 63
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 4
+
+    .line 1
+    iget-boolean v0, p0, Lpx7;->X:Z
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const/16 v1, 0x1f
+
+    .line 8
+    .line 9
+    mul-int/2addr v0, v1
+
+    .line 10
+    const/4 v2, 0x0
+
+    .line 11
+    iget-object v3, p0, Lpx7;->Y:Lrp4;
+
+    .line 12
+    .line 13
+    if-eqz v3, :cond_0
+
+    .line 14
+    .line 15
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v3
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    move v3, v2
+
+    .line 21
+    :goto_0
+    add-int/2addr v0, v3
+
+    .line 22
+    mul-int/lit16 v0, v0, 0x3c1
+
+    .line 23
+    .line 24
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    iget-boolean v2, p0, Lpx7;->Z:Z
+
+    .line 29
+    .line 30
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v0
+
+    .line 34
+    iget-object v2, p0, Lpx7;->c0:Lw96;
+
+    .line 35
+    .line 36
+    iget v2, v2, Lw96;->a:I
+
+    .line 37
+    .line 38
+    invoke-static {v2, v0, v1}, Leh0;->d(III)I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v0
+
+    .line 42
+    iget-object p0, p0, Lpx7;->d0:Lmi2;
+
+    .line 43
+    .line 44
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result p0
+
+    .line 48
+    add-int/2addr p0, v0
+
+    .line 49
+    return p0
 .end method

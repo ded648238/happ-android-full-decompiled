@@ -1,28 +1,28 @@
 package com.google.gson.internal.bind;
 
-import defpackage.dd7;
-import defpackage.wa7;
+import defpackage.j38;
+import defpackage.m58;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-class TypeAdapters$30 implements wa7 {
-    public final /* synthetic */ Class Q;
-    public final /* synthetic */ com.google.gson.b R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+class TypeAdapters$30 implements j38 {
+    public final /* synthetic */ Class X;
+    public final /* synthetic */ com.google.gson.b Y;
 
     public TypeAdapters$30(Class cls, com.google.gson.b bVar) {
-        this.Q = cls;
-        this.R = bVar;
+        this.X = cls;
+        this.Y = bVar;
     }
 
-    @Override // defpackage.wa7
-    public final com.google.gson.b a(com.google.gson.a aVar, dd7 dd7Var) {
-        if (dd7Var.a == this.Q) {
-            return this.R;
+    @Override // defpackage.j38
+    public final com.google.gson.b a(com.google.gson.a aVar, m58 m58Var) {
+        if (m58Var.a == this.X) {
+            return this.Y;
         }
         return null;
     }
 
     public final String toString() {
-        return "Factory[type=" + this.Q.getName() + ",adapter=" + this.R + "]";
+        return "Factory[type=" + this.X.getName() + ",adapter=" + this.Y + "]";
     }
 }

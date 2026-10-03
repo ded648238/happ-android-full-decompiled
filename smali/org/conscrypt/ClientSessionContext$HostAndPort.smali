@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/ClientSessionContext$HostAndPort;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -86,7 +86,7 @@
 
     .line 18
     .line 19
-    iget v0, p0, Lorg/conscrypt/ClientSessionContext$HostAndPort;->port:I
+    iget p0, p0, Lorg/conscrypt/ClientSessionContext$HostAndPort;->port:I
 
     .line 20
     .line 21
@@ -94,14 +94,14 @@
 
     .line 22
     .line 23
-    if-ne v0, p1, :cond_1
+    if-ne p0, p1, :cond_1
 
     .line 24
     .line 25
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 26
-    return p1
+    return p0
 
     .line 27
     :cond_1
@@ -109,7 +109,7 @@
 .end method
 
 .method public hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/ClientSessionContext$HostAndPort;->host:Ljava/lang/String;
@@ -128,11 +128,11 @@
 
     .line 8
     .line 9
-    iget v1, p0, Lorg/conscrypt/ClientSessionContext$HostAndPort;->port:I
+    iget p0, p0, Lorg/conscrypt/ClientSessionContext$HostAndPort;->port:I
 
     .line 10
     .line 11
-    add-int/2addr v0, v1
+    add-int/2addr v0, p0
 
     .line 12
     return v0

@@ -1,3 +1,12 @@
-.class public final Liu5;
+.class public abstract Liu5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# static fields
+.field public static Base_CardView:I = 0x7f150017
+
+.field public static CardView:I = 0x7f15013a
+
+.field public static CardView_Dark:I = 0x7f15013b
+
+.field public static CardView_Light:I = 0x7f15013c

@@ -1,36 +1,31 @@
 .class public final Lc71;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lc57;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final b:Ljava/lang/Object;
 
-.field public final b:Ljava/lang/String;
+.field public final c:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(IILjava/lang/Object;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {p0, p2}, Lc57;-><init>(I)V
 
     .line 2
     .line 3
     .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p3, p0, Lc71;->b:Ljava/lang/Object;
 
     .line 5
     .line 6
+    iput p1, p0, Lc71;->c:I
+
     .line 7
-    iput-object p1, p0, Lc71;->a:Ljava/lang/String;
-
     .line 8
-    .line 9
-    iput-object p2, p0, Lc71;->b:Ljava/lang/String;
-
-    .line 10
-    .line 11
     return-void
 .end method

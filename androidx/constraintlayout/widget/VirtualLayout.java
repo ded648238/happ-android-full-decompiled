@@ -5,14 +5,14 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewParent;
-import defpackage.bb5;
-import defpackage.h02;
+import defpackage.ka2;
+import defpackage.zu5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class VirtualLayout extends ConstraintHelper {
-    public boolean a0;
-    public boolean b0;
+    public boolean j0;
+    public boolean k0;
 
     public VirtualLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -27,38 +27,38 @@ public abstract class VirtualLayout extends ConstraintHelper {
     public void g(AttributeSet attributeSet) {
         super.g(attributeSet);
         if (attributeSet != null) {
-            TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, bb5.ConstraintLayout_Layout);
-            int indexCount = typedArrayObtainStyledAttributes.getIndexCount();
+            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, zu5.ConstraintLayout_Layout);
+            int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
-                int index = typedArrayObtainStyledAttributes.getIndex(i);
-                if (index == bb5.ConstraintLayout_Layout_android_visibility) {
-                    this.a0 = true;
-                } else if (index == bb5.ConstraintLayout_Layout_android_elevation) {
-                    this.b0 = true;
+                int index = obtainStyledAttributes.getIndex(i);
+                if (index == zu5.ConstraintLayout_Layout_android_visibility) {
+                    this.j0 = true;
+                } else if (index == zu5.ConstraintLayout_Layout_android_elevation) {
+                    this.k0 = true;
                 }
             }
-            typedArrayObtainStyledAttributes.recycle();
+            obtainStyledAttributes.recycle();
         }
     }
 
-    public abstract void j(h02 h02Var, int i, int i2);
+    public abstract void j(ka2 ka2Var, int i, int i2);
 
     @Override // androidx.constraintlayout.widget.ConstraintHelper, android.view.View
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (this.a0 || this.b0) {
+        if (this.j0 || this.k0) {
             ViewParent parent = getParent();
             if (parent instanceof ConstraintLayout) {
                 ConstraintLayout constraintLayout = (ConstraintLayout) parent;
                 int visibility = getVisibility();
                 float elevation = getElevation();
-                for (int i = 0; i < this.R; i++) {
-                    View view = (View) constraintLayout.Q.get(this.Q[i]);
+                for (int i = 0; i < this.d0; i++) {
+                    View view = (View) constraintLayout.c0.get(this.c0[i]);
                     if (view != null) {
-                        if (this.a0) {
+                        if (this.j0) {
                             view.setVisibility(visibility);
                         }
-                        if (this.b0 && elevation > 0.0f) {
+                        if (this.k0 && elevation > 0.0f) {
                             view.setTranslationZ(view.getTranslationZ() + elevation);
                         }
                     }

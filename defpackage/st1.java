@@ -1,11 +1,76 @@
 package defpackage;
 
+import android.hardware.camera2.params.DynamicRangeProfiles;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
-import kotlin.Metadata;
+import java.util.Set;
+import okhttp3.internal.ws.RealWebSocket;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\b\n\u0018\u00002\u001e\u0012\u001a\u0012\u0018\u0012\u0004\u0012\u00020\u0003\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00040\u0002j\u0002`\u00050\u0001¨\u0006\u0006"}, d2 = {"Lst1;", "Ldd7;", "", "", "", "Lsu/happ/proxyutility/domain/check_extra/ProviderMap;", "app"}, k = 1, mv = {2, 4, 0}, xi = 48)
-public final class st1 extends dd7<Map<String, ? extends List<? extends String>>> {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class st1 {
+    public static final LinkedHashMap a;
+    public static final LinkedHashMap b;
+
+    static {
+        rt1 rt1Var;
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        a = linkedHashMap;
+        LinkedHashMap linkedHashMap2 = new LinkedHashMap();
+        b = linkedHashMap2;
+        rt1 rt1Var2 = rt1.d;
+        linkedHashMap.put(1L, rt1Var2);
+        linkedHashMap2.put(rt1Var2, ut.L(1L));
+        linkedHashMap.put(2L, rt1.e);
+        linkedHashMap2.put(linkedHashMap.get(2L), ut.L(2L));
+        rt1 rt1Var3 = rt1.f;
+        linkedHashMap.put(4L, rt1Var3);
+        linkedHashMap2.put(rt1Var3, ut.L(4L));
+        rt1 rt1Var4 = rt1.g;
+        linkedHashMap.put(8L, rt1Var4);
+        linkedHashMap2.put(rt1Var4, ut.L(8L));
+        List M = ut.M(64L, 128L, 16L, 32L);
+        Iterator it = M.iterator();
+        while (true) {
+            boolean hasNext = it.hasNext();
+            rt1Var = rt1.h;
+            if (!hasNext) {
+                break;
+            }
+            a.put(Long.valueOf(((Number) it.next()).longValue()), rt1Var);
+        }
+        b.put(rt1Var, M);
+        List M2 = ut.M(Long.valueOf(RealWebSocket.DEFAULT_MINIMUM_DEFLATE_SIZE), 2048L, 256L, 512L);
+        Iterator it2 = M2.iterator();
+        while (true) {
+            boolean hasNext2 = it2.hasNext();
+            rt1 rt1Var5 = rt1.i;
+            if (!hasNext2) {
+                b.put(rt1Var5, M2);
+                return;
+            } else {
+                a.put(Long.valueOf(((Number) it2.next()).longValue()), rt1Var5);
+            }
+        }
+    }
+
+    public static Long a(rt1 rt1Var, DynamicRangeProfiles dynamicRangeProfiles) {
+        rt1Var.getClass();
+        dynamicRangeProfiles.getClass();
+        List list = (List) b.get(rt1Var);
+        if (list == null) {
+            return null;
+        }
+        Set<Long> supportedProfiles = dynamicRangeProfiles.getSupportedProfiles();
+        supportedProfiles.getClass();
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            long longValue = ((Number) it.next()).longValue();
+            if (supportedProfiles.contains(Long.valueOf(longValue))) {
+                return Long.valueOf(longValue);
+            }
+        }
+        return null;
+    }
 }

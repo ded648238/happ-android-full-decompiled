@@ -1,71 +1,59 @@
 .class public final Lhc;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public T:Ll50;
-
-.field public synthetic U:Ljava/lang/Object;
-
-.field public final synthetic V:Lic;
-
-.field public W:I
+# static fields
+.field public static final a:Lhc;
 
 
 # direct methods
-.method public constructor <init>(Lic;Law0;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lhc;->V:Lic;
+    new-instance v0, Lhc;
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
     .line 6
+    sput-object v0, Lhc;->a:Lhc;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(Landroid/view/View;)V
+    .locals 0
 
     .line 1
-    iput-object p1, p0, Lhc;->U:Ljava/lang/Object;
+    invoke-virtual {p1}, Landroid/view/View;->clearViewTranslationCallback()V
 
     .line 2
     .line 3
-    iget p1, p0, Lhc;->W:I
+    .line 4
+    return-void
+.end method
+
+.method public final b(Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lgc;->a:Lgc;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, p0}, Landroid/view/View;->setViewTranslationCallback(Landroid/view/translation/ViewTranslationCallback;)V
 
     .line 4
     .line 5
-    const/high16 v0, -0x80000000
-
     .line 6
-    .line 7
-    or-int/2addr p1, v0
-
-    .line 8
-    iput p1, p0, Lhc;->W:I
-
-    .line 9
-    .line 10
-    iget-object p1, p0, Lhc;->V:Lic;
-
-    .line 11
-    .line 12
-    invoke-virtual {p1, p0}, Lic;->a(Law0;)Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    return-object p1
+    return-void
 .end method

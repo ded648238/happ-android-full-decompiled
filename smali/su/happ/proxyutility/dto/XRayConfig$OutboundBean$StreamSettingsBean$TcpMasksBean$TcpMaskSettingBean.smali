@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -105,10 +105,10 @@
 .end method
 
 .method public static c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/LinkedHashMap;
-    .locals 4
+    .locals 6
 
     .line 1
-    new-instance v0, Ltn4;
+    new-instance v0, Lw55;
 
     .line 2
     .line 3
@@ -116,136 +116,95 @@
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, p1}, Ltn4;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 6
     .line 7
     .line 8
-    new-instance p1, Ltn4;
+    new-instance v1, Lw55;
 
     .line 9
     .line 10
-    const-string v1, "length"
+    const-string p1, "length"
 
     .line 11
     .line 12
-    invoke-direct {p1, v1, p2}, Ltn4;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p1, p2}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 13
     .line 14
     .line 15
-    new-instance p2, Ltn4;
+    new-instance v2, Lw55;
 
     .line 16
     .line 17
-    const-string v1, "packets"
+    const-string p1, "packets"
 
     .line 18
     .line 19
-    invoke-direct {p2, v1, p3}, Ltn4;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, p1, p3}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 20
     .line 21
     .line 22
-    new-instance p3, Ltn4;
+    new-instance v3, Lw55;
 
     .line 23
     .line 24
-    const-string v1, "maxSplit"
+    const-string p1, "maxSplit"
 
     .line 25
     .line 26
-    invoke-direct {p3, v1, p0}, Ltn4;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, p1, p0}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 27
     .line 28
     .line 29
-    new-instance p0, Ltn4;
+    new-instance v4, Lw55;
 
     .line 30
     .line 31
-    const-string v1, "lengths"
+    const-string p0, "lengths"
 
     .line 32
     .line 33
-    const/4 v2, 0x0
+    const/4 p1, 0x0
 
     .line 34
-    invoke-direct {p0, v1, v2}, Ltn4;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, p0, p1}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 35
     .line 36
     .line 37
-    new-instance v1, Ltn4;
+    new-instance v5, Lw55;
 
     .line 38
     .line 39
-    const-string v3, "delays"
+    const-string p0, "delays"
 
     .line 40
     .line 41
-    invoke-direct {v1, v3, v2}, Ltn4;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v5, p0, p1}, Lw55;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 42
     .line 43
     .line 44
-    const/4 v2, 0x6
+    filled-new-array/range {v0 .. v5}, [Lw55;
 
     .line 45
-    new-array v2, v2, [Ltn4;
-
     .line 46
     .line 47
-    const/4 v3, 0x0
+    move-result-object p0
 
     .line 48
-    aput-object v0, v2, v3
+    invoke-static {p0}, Luf4;->c0([Lw55;)Ljava/util/LinkedHashMap;
 
     .line 49
     .line 50
-    const/4 v0, 0x1
-
     .line 51
-    aput-object p1, v2, v0
-
-    .line 52
-    .line 53
-    const/4 p1, 0x2
-
-    .line 54
-    aput-object p2, v2, p1
-
-    .line 55
-    .line 56
-    const/4 p1, 0x3
-
-    .line 57
-    aput-object p3, v2, p1
-
-    .line 58
-    .line 59
-    const/4 p1, 0x4
-
-    .line 60
-    aput-object p0, v2, p1
-
-    .line 61
-    .line 62
-    const/4 p0, 0x5
-
-    .line 63
-    aput-object v1, v2, p0
-
-    .line 64
-    .line 65
-    invoke-static {v2}, Lxy3;->n1([Ltn4;)Ljava/util/LinkedHashMap;
-
-    .line 66
-    .line 67
-    .line 68
     move-result-object p0
 
-    .line 69
+    .line 52
     return-object p0
 .end method
 
@@ -325,7 +284,7 @@
     return-object p0
 .end method
 
-.method public static final f(Ljava/util/Map;)Ljava/lang/String;
+.method public static final g(Ljava/util/Map;)Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -443,7 +402,7 @@
     return-object p0
 .end method
 
-.method public static final v(Ljava/util/Map;Landroid/os/Parcel;)V
+.method public static final p(Ljava/util/Map;Landroid/os/Parcel;)V
     .locals 2
 
     .line 1
@@ -541,28 +500,28 @@
 
 # virtual methods
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
 
     .line 2
     .line 3
-    instance-of v1, p1, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;
+    instance-of v0, p1, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;
 
     .line 4
     .line 5
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
     .line 6
     .line 7
@@ -578,79 +537,79 @@
 
     .line 11
     .line 12
-    invoke-static {v0, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 13
     .line 14
     .line 15
-    move-result p1
+    move-result p0
 
     .line 16
-    if-nez p1, :cond_1
+    if-nez p0, :cond_1
 
     .line 17
     .line 18
     :goto_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    return p1
+    return p0
 
     .line 20
     :cond_1
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 21
-    return p1
+    return p0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
-.method public final synthetic l()Ljava/util/Map;
-    .locals 1
+.method public final synthetic m()Ljava/util/Map;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->k(Ljava/util/Map;)Ljava/lang/String;
+    invoke-static {p0}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->k(Ljava/util/Map;)Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
@@ -662,11 +621,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object p2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->value:Ljava/util/Map;
 
     .line 5
     .line 6
-    invoke-static {p2, p1}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->v(Ljava/util/Map;Landroid/os/Parcel;)V
+    invoke-static {p0, p1}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->p(Ljava/util/Map;Landroid/os/Parcel;)V
 
     .line 7
     .line 8

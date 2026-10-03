@@ -1,21 +1,26 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum h45 implements xs2 {
-    RETURNS_CONSTANT(0),
-    CALLS(1),
-    RETURNS_NOT_NULL(2),
-    RETURNS_RESULT_OF(3);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class h45 {
+    public final long a;
 
-    public final int Q;
-
-    h45(int i) {
-        this.Q = i;
+    public static final boolean a(long j, long j2) {
+        return j == j2;
     }
 
-    @Override // defpackage.xs2
-    public final int a() {
-        return this.Q;
+    public final boolean equals(Object obj) {
+        if (obj instanceof h45) {
+            return this.a == ((h45) obj).a;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Long.hashCode(this.a);
+    }
+
+    public final String toString() {
+        return "StreamUseCase(value=" + this.a + ')';
     }
 }

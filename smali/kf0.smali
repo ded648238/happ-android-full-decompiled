@@ -1,375 +1,168 @@
-.class public final Lkf0;
-.super Lzc7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public interface abstract Lkf0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Law5;
 
 
-# instance fields
-.field public final synthetic b:I
+# static fields
+.field public static final c:Luw;
 
-.field public final c:Lzc7;
+.field public static final d:Luw;
+
+.field public static final e:Luw;
+
+.field public static final f:Luw;
+
+.field public static final g:Luw;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lzc7;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    iput p2, p0, Lkf0;->b:I
+    new-instance v0, Luw;
 
     .line 2
     .line 3
-    iput-object p1, p0, Lkf0;->c:Lzc7;
+    const-string v1, "camerax.core.camera.useCaseConfigFactory"
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-class v2, Lxd8;
 
     .line 6
     .line 7
+    const/4 v3, 0x0
+
     .line 8
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sput-object v0, Lkf0;->c:Luw;
+
+    .line 12
+    .line 13
+    new-instance v0, Luw;
+
+    .line 14
+    .line 15
+    const-string v1, "camerax.core.camera.useCaseCombinationRequiredRule"
+
+    .line 16
+    .line 17
+    const-class v2, Ljava/lang/Integer;
+
+    .line 18
+    .line 19
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+
+    .line 20
+    .line 21
+    .line 22
+    sput-object v0, Lkf0;->d:Luw;
+
+    .line 23
+    .line 24
+    new-instance v0, Luw;
+
+    .line 25
+    .line 26
+    const-string v1, "camerax.core.camera.SessionProcessor"
+
+    .line 27
+    .line 28
+    const-class v2, Lkt6;
+
+    .line 29
+    .line 30
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+
+    .line 31
+    .line 32
+    .line 33
+    sput-object v0, Lkf0;->e:Luw;
+
+    .line 34
+    .line 35
+    new-instance v0, Luw;
+
+    .line 36
+    .line 37
+    const-string v1, "camerax.core.camera.isPostviewSupported"
+
+    .line 38
+    .line 39
+    const-class v2, Ljava/lang/Boolean;
+
+    .line 40
+    .line 41
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+
+    .line 42
+    .line 43
+    .line 44
+    sput-object v0, Lkf0;->f:Luw;
+
+    .line 45
+    .line 46
+    new-instance v0, Luw;
+
+    .line 47
+    .line 48
+    const-string v1, "camerax.core.camera.isCaptureProcessProgressSupported"
+
+    .line 49
+    .line 50
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+
+    .line 51
+    .line 52
+    .line 53
+    sput-object v0, Lkf0;->g:Luw;
+
+    .line 54
+    .line 55
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lkf0;->b:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-super {p0}, Lzc7;->a()Z
-
-    .line 7
-    .line 8
-    .line 9
-    move-result v0
-
-    .line 10
-    return v0
-
-    .line 11
-    :pswitch_0
-    iget-object v0, p0, Lkf0;->c:Lzc7;
-
-    .line 12
-    .line 13
-    invoke-virtual {v0}, Lzc7;->a()Z
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    return v0
-
-    .line 18
-    nop
-
-    .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public b()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lkf0;->b:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-super {p0}, Lzc7;->b()Z
-
-    .line 7
-    .line 8
-    .line 9
-    move-result v0
-
-    .line 10
-    return v0
-
-    .line 11
-    :pswitch_0
-    const/4 v0, 0x1
-
-    .line 12
-    return v0
-
-    .line 13
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final c(Lmk;)Lmk;
+.method public r()V
     .locals 2
 
     .line 1
-    iget v0, p0, Lkf0;->b:I
+    const/4 v0, 0x0
 
     .line 2
+    sget-object v1, Lkf0;->e:Luw;
+
     .line 3
-    iget-object v1, p0, Lkf0;->c:Lzc7;
-
     .line 4
-    .line 5
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-interface {p0, v1, v0}, Law5;->b(Luw;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 5
     .line 6
     .line 7
+    move-result-object p0
+
     .line 8
-    packed-switch v0, :pswitch_data_0
+    if-nez p0, :cond_0
 
     .line 9
     .line 10
+    return-void
+
     .line 11
-    invoke-virtual {v1, p1}, Lzc7;->c(Lmk;)Lmk;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    return-object p1
-
-    .line 16
-    :pswitch_0
-    invoke-virtual {v1, p1}, Lzc7;->c(Lmk;)Lmk;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object p1
-
-    .line 20
-    return-object p1
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final d(Lod3;)Lsc7;
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lkf0;->b:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lkf0;->c:Lzc7;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v1, p1}, Lzc7;->d(Lod3;)Lsc7;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
-
-    .line 12
-    return-object p1
-
-    .line 13
-    :pswitch_0
-    invoke-virtual {v1, p1}, Lzc7;->d(Lod3;)Lsc7;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    const/4 v1, 0x0
-
-    .line 18
-    if-eqz v0, :cond_1
-
-    .line 19
-    .line 20
-    invoke-virtual {p1}, Lod3;->T()Lob7;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    invoke-interface {p1}, Lob7;->B()Lmk0;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p1
-
-    .line 28
-    instance-of v2, p1, Lmc7;
-
-    .line 29
-    .line 30
-    if-eqz v2, :cond_0
-
-    .line 31
-    .line 32
-    move-object v1, p1
-
-    .line 33
-    check-cast v1, Lmc7;
-
-    .line 34
-    .line 35
     :cond_0
-    invoke-static {v0, v1}, Lwj0;->A(Lsc7;Lmc7;)Lsc7;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v1
-
-    .line 39
-    :cond_1
-    return-object v1
-
-    .line 40
-    nop
-
-    .line 41
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final e()Z
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lkf0;->b:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lkf0;->c:Lzc7;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v1}, Lzc7;->e()Z
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v0
-
-    .line 12
-    return v0
-
-    .line 13
-    :pswitch_0
-    invoke-virtual {v1}, Lzc7;->e()Z
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    return v0
-
-    .line 18
-    nop
-
-    .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final f(Lod3;Lll7;)Lod3;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lkf0;->b:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lkf0;->c:Lzc7;
-
-    .line 4
-    .line 5
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 9
-    .line 10
-    .line 11
-    packed-switch v0, :pswitch_data_0
+    invoke-static {}, Lio/sentry/z1;->l()V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v1, p1, p2}, Lzc7;->f(Lod3;Lll7;)Lod3;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
-
-    .line 18
-    return-object p1
-
-    .line 19
-    :pswitch_0
-    invoke-virtual {v1, p1, p2}, Lzc7;->f(Lod3;Lll7;)Lod3;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p1
-
-    .line 23
-    return-object p1
-
-    .line 24
-    nop
-
-    .line 25
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

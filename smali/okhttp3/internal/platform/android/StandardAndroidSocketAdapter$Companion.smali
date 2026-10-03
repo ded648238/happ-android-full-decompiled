@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -47,7 +47,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -90,18 +90,18 @@
 
 # virtual methods
 .method public final buildIfSupported(Ljava/lang/String;)Lokhttp3/internal/platform/android/SocketAdapter;
-    .locals 3
+    .locals 2
 
     .line 1
-    const-string v0, ".SSLParametersImpl"
+    const-string p0, ".SSLParametersImpl"
 
     .line 2
     .line 3
-    const-string v1, ".OpenSSLSocketFactoryImpl"
+    const-string v0, ".OpenSSLSocketFactoryImpl"
 
     .line 4
     .line 5
-    const-string v2, ".OpenSSLSocketImpl"
+    const-string v1, ".OpenSSLSocketImpl"
 
     .line 6
     .line 7
@@ -111,98 +111,98 @@
     .line 9
     .line 10
     :try_start_0
-    invoke-virtual {p1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 11
     .line 12
     .line 13
-    move-result-object v2
+    move-result-object v1
 
     .line 14
-    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v2
+    move-result-object v1
 
     .line 18
-    invoke-virtual {p1, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v1
+    move-result-object v0
 
     .line 22
-    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     .line 23
     .line 24
     .line 25
-    move-result-object v1
+    move-result-object v0
 
     .line 26
-    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 27
     .line 28
     .line 29
-    move-result-object p1
+    move-result-object p0
 
     .line 30
-    invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     .line 31
     .line 32
     .line 33
-    move-result-object p1
+    move-result-object p0
 
     .line 34
-    new-instance v0, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter;
+    new-instance p1, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter;
 
     .line 35
     .line 36
-    invoke-direct {v0, v2, v1, p1}, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter;-><init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)V
+    invoke-direct {p1, v1, v0, p0}, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter;-><init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 37
     .line 38
     .line 39
-    return-object v0
+    return-object p1
 
     .line 40
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 41
-    sget-object v0, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
+    sget-object p1, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
 
     .line 42
     .line 43
-    invoke-virtual {v0}, Lokhttp3/internal/platform/Platform$Companion;->get()Lokhttp3/internal/platform/Platform;
+    invoke-virtual {p1}, Lokhttp3/internal/platform/Platform$Companion;->get()Lokhttp3/internal/platform/Platform;
 
     .line 44
     .line 45
     .line 46
-    move-result-object v0
+    move-result-object p1
 
     .line 47
-    const-string v1, "unable to load android socket classes"
+    const-string v0, "unable to load android socket classes"
 
     .line 48
     .line 49
-    const/4 v2, 0x5
+    const/4 v1, 0x5
 
     .line 50
-    invoke-virtual {v0, v1, v2, p1}, Lokhttp3/internal/platform/Platform;->log(Ljava/lang/String;ILjava/lang/Throwable;)V
+    invoke-virtual {p1, v0, v1, p0}, Lokhttp3/internal/platform/Platform;->log(Ljava/lang/String;ILjava/lang/Throwable;)V
 
     .line 51
     .line 52
     .line 53
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 54
-    return-object p1
+    return-object p0
 .end method

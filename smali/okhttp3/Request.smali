@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Request;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -164,21 +164,21 @@
 
 # virtual methods
 .method public final -deprecated_body()Lokhttp3/RequestBody;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request;->body:Lokhttp3/RequestBody;
+    iget-object p0, p0, Lokhttp3/Request;->body:Lokhttp3/RequestBody;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_cacheControl()Lokhttp3/CacheControl;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -187,60 +187,60 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_headers()Lokhttp3/Headers;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_method()Ljava/lang/String;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request;->method:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Request;->method:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final -deprecated_url()Lokhttp3/HttpUrl;
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
+    iget-object p0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final body()Lokhttp3/RequestBody;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request;->body:Lokhttp3/RequestBody;
+    iget-object p0, p0, Lokhttp3/Request;->body:Lokhttp3/RequestBody;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final cacheControl()Lokhttp3/CacheControl;
@@ -280,7 +280,7 @@
 .end method
 
 .method public final getTags$okhttp()Ljava/util/Map;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -293,15 +293,15 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final header(Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -309,23 +309,23 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Lokhttp3/Headers;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lokhttp3/Headers;->get(Ljava/lang/String;)Ljava/lang/String;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public final headers(Ljava/lang/String;)Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -343,58 +343,58 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Lokhttp3/Headers;->values(Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {p0, p1}, Lokhttp3/Headers;->values(Ljava/lang/String;)Ljava/util/List;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public final headers()Lokhttp3/Headers;
-    .locals 1
+    .locals 0
 
     .line 11
-    iget-object v0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
+    iget-object p0, p0, Lokhttp3/Request;->headers:Lokhttp3/Headers;
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final isHttps()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
+    iget-object p0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/HttpUrl;->isHttps()Z
+    invoke-virtual {p0}, Lokhttp3/HttpUrl;->isHttps()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final method()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request;->method:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Request;->method:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final newBuilder()Lokhttp3/Request$Builder;
@@ -421,13 +421,13 @@
 
     invoke-virtual {p0, v0}, Lokhttp3/Request;->tag(Ljava/lang/Class;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final tag(Ljava/lang/Class;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -444,27 +444,27 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
 
     .line 5
     .line 6
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     .line 8
     .line 9
-    move-result-object v0
+    move-result-object p0
 
     .line 10
-    invoke-virtual {p1, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    move-result-object p0
 
     .line 14
-    return-object p1
+    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -580,11 +580,11 @@
 
     .line 56
     .line 57
-    check-cast v3, Ltn4;
+    check-cast v3, Lw55;
 
     .line 58
     .line 59
-    iget-object v5, v3, Ltn4;->Q:Ljava/lang/Object;
+    iget-object v5, v3, Lw55;->X:Ljava/lang/Object;
 
     .line 60
     .line 61
@@ -592,7 +592,7 @@
 
     .line 62
     .line 63
-    iget-object v3, v3, Ltn4;->R:Ljava/lang/Object;
+    iget-object v3, v3, Lw55;->Y:Ljava/lang/Object;
 
     .line 64
     .line 65
@@ -640,15 +640,15 @@
 
     .line 87
     :cond_1
-    invoke-static {}, Lub;->V()V
+    invoke-static {}, Lut;->u0()V
 
     .line 88
     .line 89
     .line 90
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 91
-    throw v0
+    throw p0
 
     .line 92
     :cond_2
@@ -687,21 +687,21 @@
     .line 108
     .line 109
     .line 110
-    iget-object v1, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Request;->tags:Ljava/util/Map;
 
     .line 111
     .line 112
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 113
     .line 114
     .line 115
     :cond_4
-    const/16 v1, 0x7d
+    const/16 p0, 0x7d
 
     .line 116
     .line 117
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 118
     .line 119
@@ -711,19 +711,19 @@
     .line 121
     .line 122
     .line 123
-    move-result-object v0
+    move-result-object p0
 
     .line 124
-    return-object v0
+    return-object p0
 .end method
 
 .method public final url()Lokhttp3/HttpUrl;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
+    iget-object p0, p0, Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

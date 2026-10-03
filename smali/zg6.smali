@@ -1,30 +1,41 @@
 .class public final Lzg6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lgh6;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Leh6;
 
 
 # instance fields
-.field public final a:Ltu7;
+.field public h:Ljava/lang/Float;
 
 
-# direct methods
-.method public constructor <init>(Ltu7;)V
+# virtual methods
+.method public final e(Lih6;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    return-void
+.end method
+
+.method public final g()Ljava/util/List;
+    .locals 0
+
+    .line 1
+    sget-object p0, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
 
     .line 2
     .line 3
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    return-object p0
+.end method
 
-    .line 5
-    .line 6
-    .line 7
-    iput-object p1, p0, Lzg6;->a:Ltu7;
+.method public final o()Ljava/lang/String;
+    .locals 0
 
-    .line 8
-    .line 9
-    return-void
+    .line 1
+    const-string p0, "stop"
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

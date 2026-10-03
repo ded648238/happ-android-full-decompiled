@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/ConnectionSpecSelector;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -140,10 +140,10 @@
 
     .line 24
     .line 25
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 26
-    return p1
+    return p0
 
     .line 27
     :cond_0
@@ -155,10 +155,10 @@
 
     .line 30
     :cond_1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 31
-    return p1
+    return p0
 .end method
 
 
@@ -266,11 +266,11 @@
 
     .line 44
     .line 45
-    iget-boolean v0, p0, Lokhttp3/internal/connection/ConnectionSpecSelector;->isFallback:Z
+    iget-boolean p0, p0, Lokhttp3/internal/connection/ConnectionSpecSelector;->isFallback:Z
 
     .line 46
     .line 47
-    invoke-virtual {v2, p1, v0}, Lokhttp3/ConnectionSpec;->apply$okhttp(Ljavax/net/ssl/SSLSocket;Z)V
+    invoke-virtual {v2, p1, p0}, Lokhttp3/ConnectionSpec;->apply$okhttp(Ljavax/net/ssl/SSLSocket;Z)V
 
     .line 48
     .line 49
@@ -314,11 +314,11 @@
     .line 68
     .line 69
     .line 70
-    iget-object v2, p0, Lokhttp3/internal/connection/ConnectionSpecSelector;->connectionSpecs:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/connection/ConnectionSpecSelector;->connectionSpecs:Ljava/util/List;
 
     .line 71
     .line 72
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 73
     .line 74
@@ -328,37 +328,37 @@
     .line 76
     .line 77
     .line 78
-    move-result-object p1
+    move-result-object p0
 
     .line 79
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 80
     .line 81
     .line 82
-    invoke-static {p1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
     .line 83
     .line 84
     .line 85
-    move-result-object p1
+    move-result-object p0
 
     .line 86
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 87
     .line 88
     .line 89
-    const-string v2, ", supported protocols="
+    const-string p1, ", supported protocols="
 
     .line 90
     .line 91
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 92
     .line 93
     .line 94
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 95
     .line 96
@@ -368,10 +368,10 @@
     .line 98
     .line 99
     .line 100
-    move-result-object p1
+    move-result-object p0
 
     .line 101
-    invoke-direct {v0, p1}, Ljava/net/UnknownServiceException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/net/UnknownServiceException;-><init>(Ljava/lang/String;)V
 
     .line 102
     .line 103
@@ -380,7 +380,7 @@
 .end method
 
 .method public final connectionFailed(Ljava/io/IOException;)Z
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -395,50 +395,50 @@
 
     .line 6
     .line 7
-    iget-boolean v1, p0, Lokhttp3/internal/connection/ConnectionSpecSelector;->isFallbackPossible:Z
+    iget-boolean p0, p0, Lokhttp3/internal/connection/ConnectionSpecSelector;->isFallbackPossible:Z
 
     .line 8
     .line 9
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 10
-    if-nez v1, :cond_0
+    if-nez p0, :cond_0
 
     .line 11
     .line 12
-    return v2
+    return v1
 
     .line 13
     :cond_0
-    instance-of v1, p1, Ljava/net/ProtocolException;
+    instance-of p0, p1, Ljava/net/ProtocolException;
 
     .line 14
     .line 15
-    if-eqz v1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 16
     .line 17
-    return v2
+    return v1
 
     .line 18
     :cond_1
-    instance-of v1, p1, Ljava/io/InterruptedIOException;
+    instance-of p0, p1, Ljava/io/InterruptedIOException;
 
     .line 19
     .line 20
-    if-eqz v1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 21
     .line 22
-    return v2
+    return v1
 
     .line 23
     :cond_2
-    instance-of v1, p1, Ljavax/net/ssl/SSLHandshakeException;
+    instance-of p0, p1, Ljavax/net/ssl/SSLHandshakeException;
 
     .line 24
     .line 25
-    if-eqz v1, :cond_3
+    if-eqz p0, :cond_3
 
     .line 26
     .line 27
@@ -447,38 +447,38 @@
     .line 28
     .line 29
     .line 30
-    move-result-object v1
+    move-result-object p0
 
     .line 31
-    instance-of v1, v1, Ljava/security/cert/CertificateException;
+    instance-of p0, p0, Ljava/security/cert/CertificateException;
 
     .line 32
     .line 33
-    if-eqz v1, :cond_3
+    if-eqz p0, :cond_3
 
     .line 34
     .line 35
-    return v2
+    return v1
 
     .line 36
     :cond_3
-    instance-of v1, p1, Ljavax/net/ssl/SSLPeerUnverifiedException;
+    instance-of p0, p1, Ljavax/net/ssl/SSLPeerUnverifiedException;
 
     .line 37
     .line 38
-    if-eqz v1, :cond_4
+    if-eqz p0, :cond_4
 
     .line 39
     .line 40
-    return v2
+    return v1
 
     .line 41
     :cond_4
-    instance-of p1, p1, Ljavax/net/ssl/SSLException;
+    instance-of p0, p1, Ljavax/net/ssl/SSLException;
 
     .line 42
     .line 43
-    if-eqz p1, :cond_5
+    if-eqz p0, :cond_5
 
     .line 44
     .line 45
@@ -486,5 +486,5 @@
 
     .line 46
     :cond_5
-    return v2
+    return v1
 .end method

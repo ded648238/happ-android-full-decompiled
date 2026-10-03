@@ -1,126 +1,21 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class i95 {
-    public static int NO_DEBUG = 2131427338;
-    public static int SHOW_ALL = 2131427340;
-    public static int SHOW_PATH = 2131427341;
-    public static int SHOW_PROGRESS = 2131427342;
-    public static int above = 2131427347;
-    public static int accelerate = 2131427348;
-    public static int actionDown = 2131427390;
-    public static int actionDownUp = 2131427391;
-    public static int actionUp = 2131427393;
-    public static int aligned = 2131427423;
-    public static int allStates = 2131427425;
-    public static int animateToEnd = 2131427429;
-    public static int animateToStart = 2131427430;
-    public static int antiClockwise = 2131427432;
-    public static int anticipate = 2131427433;
-    public static int asConfigured = 2131427435;
-    public static int auto = 2131427437;
-    public static int autoComplete = 2131427438;
-    public static int autoCompleteToEnd = 2131427439;
-    public static int autoCompleteToStart = 2131427440;
-    public static int axisRelative = 2131427444;
-    public static int baseline = 2131427453;
-    public static int below = 2131427456;
-    public static int bestChoice = 2131427457;
-    public static int bottom = 2131427476;
-    public static int bounce = 2131427478;
-    public static int callMeasure = 2131427525;
-    public static int carryVelocity = 2131427529;
-    public static int center = 2131427531;
-    public static int chain = 2131427536;
-    public static int chain2 = 2131427537;
-    public static int clockwise = 2131427629;
-    public static int closest = 2131427630;
-    public static int constraint = 2131427672;
-    public static int continuousVelocity = 2131427684;
-    public static int cos = 2131427692;
-    public static int currentState = 2131427696;
-    public static int decelerate = 2131427705;
-    public static int decelerateAndComplete = 2131427706;
-    public static int deltaRelative = 2131427710;
-    public static int dragAnticlockwise = 2131427838;
-    public static int dragClockwise = 2131427839;
-    public static int dragDown = 2131427840;
-    public static int dragEnd = 2131427841;
-    public static int dragLeft = 2131427842;
-    public static int dragRight = 2131427843;
-    public static int dragStart = 2131427844;
-    public static int dragUp = 2131427845;
-    public static int easeIn = 2131427848;
-    public static int easeInOut = 2131427849;
-    public static int easeOut = 2131427850;
-    public static int east = 2131427851;
-    public static int end = 2131427858;
-    public static int flip = 2131427955;
-    public static int frost = 2131427983;
-    public static int gone = 2131427990;
-    public static int honorRequest = 2131428033;
-    public static int horizontal = 2131428034;
-    public static int horizontal_only = 2131428035;
-    public static int ignore = 2131428111;
-    public static int ignoreRequest = 2131428112;
-    public static int immediateStop = 2131428116;
-    public static int included = 2131428128;
-    public static int invisible = 2131428138;
-    public static int jumpToEnd = 2131428151;
-    public static int jumpToStart = 2131428152;
-    public static int layout = 2131428157;
-    public static int left = 2131428196;
-    public static int linear = 2131428202;
-    public static int match_constraint = 2131428279;
-    public static int match_parent = 2131428280;
-    public static int middle = 2131428314;
-    public static int motion_base = 2131428323;
-    public static int neverCompleteToEnd = 2131428360;
-    public static int neverCompleteToStart = 2131428361;
-    public static int noState = 2131428363;
-    public static int none = 2131428364;
-    public static int normal = 2131428365;
-    public static int north = 2131428366;
-    public static int overshoot = 2131428399;
-    public static int packed = 2131428401;
-    public static int parent = 2131428405;
-    public static int parentRelative = 2131428407;
-    public static int path = 2131428410;
-    public static int pathRelative = 2131428411;
-    public static int percent = 2131428417;
-    public static int position = 2131428429;
-    public static int postLayout = 2131428430;
-    public static int rectangles = 2131428446;
-    public static int reverseSawtooth = 2131428450;
-    public static int right = 2131428451;
-    public static int sawtooth = 2131428487;
-    public static int sharedValueSet = 2131428538;
-    public static int sharedValueUnset = 2131428539;
-    public static int sin = 2131428544;
-    public static int skipped = 2131428546;
-    public static int south = 2131428561;
-    public static int spline = 2131428600;
-    public static int spread = 2131428602;
-    public static int spread_inside = 2131428603;
-    public static int spring = 2131428604;
-    public static int square = 2131428606;
-    public static int standard = 2131428610;
-    public static int start = 2131428611;
-    public static int startHorizontal = 2131428612;
-    public static int startVertical = 2131428614;
-    public static int staticLayout = 2131428616;
-    public static int staticPostLayout = 2131428617;
-    public static int stop = 2131428619;
-    public static int top = 2131428763;
-    public static int triangle = 2131428784;
-    public static int vertical = 2131428909;
-    public static int vertical_only = 2131428910;
-    public static int view_transition = 2131428915;
-    public static int visible = 2131428921;
-    public static int west = 2131428923;
-    public static int wrap = 2131428930;
-    public static int wrap_content = 2131428931;
-    public static int wrap_content_constrained = 2131428932;
-    public static int x_left = 2131428936;
-    public static int x_right = 2131428937;
+/* loaded from: classes3.dex */
+public final class i95 extends d31 {
+    public /* synthetic */ Object c0;
+    public int d0;
+    public final /* synthetic */ k e0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public i95(k kVar, b31 b31Var) {
+        super(b31Var);
+        this.e0 = kVar;
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.d0 |= Integer.MIN_VALUE;
+        return this.e0.k(null, this);
+    }
 }

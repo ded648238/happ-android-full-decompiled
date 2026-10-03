@@ -1,7 +1,15 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface hh6 extends b96 {
-    Object getValue();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class hh6 extends hg6 {
+    public mg6 m;
+    public mg6 n;
+    public mg6 o;
+    public mg6 p;
+
+    @Override // defpackage.ih6
+    public final String o() {
+        return "linearGradient";
+    }
 }

@@ -1,6 +1,6 @@
 .class public final enum Lcom/github/luben/zstd/EndDirective;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -28,8 +28,35 @@
 
 
 # direct methods
+.method private static synthetic $values()[Lcom/github/luben/zstd/EndDirective;
+    .locals 3
+
+    .line 1
+    sget-object v0, Lcom/github/luben/zstd/EndDirective;->CONTINUE:Lcom/github/luben/zstd/EndDirective;
+
+    .line 2
+    .line 3
+    sget-object v1, Lcom/github/luben/zstd/EndDirective;->FLUSH:Lcom/github/luben/zstd/EndDirective;
+
+    .line 4
+    .line 5
+    sget-object v2, Lcom/github/luben/zstd/EndDirective;->END:Lcom/github/luben/zstd/EndDirective;
+
+    .line 6
+    .line 7
+    filled-new-array {v0, v1, v2}, [Lcom/github/luben/zstd/EndDirective;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 3
 
     .line 1
     new-instance v0, Lcom/github/luben/zstd/EndDirective;
@@ -52,69 +79,58 @@
 
     .line 10
     .line 11
-    new-instance v1, Lcom/github/luben/zstd/EndDirective;
+    new-instance v0, Lcom/github/luben/zstd/EndDirective;
 
     .line 12
     .line 13
-    const-string v3, "FLUSH"
+    const-string v1, "FLUSH"
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const/4 v2, 0x1
 
     .line 16
-    invoke-direct {v1, v3, v4, v4}, Lcom/github/luben/zstd/EndDirective;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v2, v2}, Lcom/github/luben/zstd/EndDirective;-><init>(Ljava/lang/String;II)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v1, Lcom/github/luben/zstd/EndDirective;->FLUSH:Lcom/github/luben/zstd/EndDirective;
+    sput-object v0, Lcom/github/luben/zstd/EndDirective;->FLUSH:Lcom/github/luben/zstd/EndDirective;
 
     .line 20
     .line 21
-    new-instance v3, Lcom/github/luben/zstd/EndDirective;
+    new-instance v0, Lcom/github/luben/zstd/EndDirective;
 
     .line 22
     .line 23
-    const-string v5, "END"
+    const-string v1, "END"
 
     .line 24
     .line 25
-    const/4 v6, 0x2
+    const/4 v2, 0x2
 
     .line 26
-    invoke-direct {v3, v5, v6, v6}, Lcom/github/luben/zstd/EndDirective;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v2, v2}, Lcom/github/luben/zstd/EndDirective;-><init>(Ljava/lang/String;II)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Lcom/github/luben/zstd/EndDirective;->END:Lcom/github/luben/zstd/EndDirective;
+    sput-object v0, Lcom/github/luben/zstd/EndDirective;->END:Lcom/github/luben/zstd/EndDirective;
 
     .line 30
     .line 31
-    const/4 v5, 0x3
+    invoke-static {}, Lcom/github/luben/zstd/EndDirective;->$values()[Lcom/github/luben/zstd/EndDirective;
 
     .line 32
-    new-array v5, v5, [Lcom/github/luben/zstd/EndDirective;
-
     .line 33
     .line 34
-    aput-object v0, v5, v2
+    move-result-object v0
 
     .line 35
+    sput-object v0, Lcom/github/luben/zstd/EndDirective;->$VALUES:[Lcom/github/luben/zstd/EndDirective;
+
     .line 36
-    aput-object v1, v5, v4
-
     .line 37
-    .line 38
-    aput-object v3, v5, v6
-
-    .line 39
-    .line 40
-    sput-object v5, Lcom/github/luben/zstd/EndDirective;->$VALUES:[Lcom/github/luben/zstd/EndDirective;
-
-    .line 41
-    .line 42
     return-void
 .end method
 
@@ -188,12 +204,12 @@
 
 # virtual methods
 .method public value()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/github/luben/zstd/EndDirective;->value:I
+    iget p0, p0, Lcom/github/luben/zstd/EndDirective;->value:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -20,7 +20,7 @@
         "<init>",
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
         "res",
-        "Lbh7;",
+        "Lr98;",
         "setTitle",
         "(I)V",
         "setTitleColor",
@@ -59,15 +59,15 @@
 
 
 # static fields
-.field public static final synthetic T:I
+.field public static final synthetic f0:I
 
 
 # instance fields
-.field public final Q:Landroid/widget/TextView;
+.field public final c0:Landroid/widget/TextView;
 
-.field public final R:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
+.field public final d0:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
 
-.field public final S:Landroid/widget/TextView;
+.field public final e0:Landroid/widget/TextView;
 
 
 # direct methods
@@ -78,7 +78,7 @@
 
     const/4 v0, 0x0
 
-    .line 97
+    .line 96
     invoke-direct {p0, p1, p2, v0}, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -124,7 +124,7 @@
     move-result-object v0
 
     .line 21
-    sget v1, Lt95;->happ_spinner_field:I
+    sget v1, Ltt5;->happ_spinner_field:I
 
     .line 22
     .line 23
@@ -133,7 +133,7 @@
     .line 24
     .line 25
     .line 26
-    sget p3, Ld95;->tv_spinner_field:I
+    sget p3, Let5;->tv_spinner_field:I
 
     .line 27
     .line 28
@@ -154,11 +154,11 @@
 
     .line 36
     .line 37
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->Q:Landroid/widget/TextView;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->c0:Landroid/widget/TextView;
 
     .line 38
     .line 39
-    sget p3, Ld95;->spinner:I
+    sget p3, Let5;->spinner:I
 
     .line 40
     .line 41
@@ -179,11 +179,11 @@
 
     .line 49
     .line 50
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->R:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->d0:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
 
     .line 51
     .line 52
-    sget p3, Ld95;->tv_spinner_description:I
+    sget p3, Let5;->tv_spinner_description:I
 
     .line 53
     .line 54
@@ -204,7 +204,7 @@
 
     .line 62
     .line 63
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->S:Landroid/widget/TextView;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->e0:Landroid/widget/TextView;
 
     .line 64
     .line 65
@@ -212,7 +212,7 @@
 
     .line 66
     .line 67
-    sget-object p3, Lxa5;->HappSpinnerField:[I
+    sget-object p3, Lwu5;->HappSpinnerField:[I
 
     .line 68
     .line 69
@@ -229,134 +229,133 @@
     .line 74
     .line 75
     .line 76
-    new-instance p3, Lj9;
+    new-instance p3, Lqr2;
 
     .line 77
     .line 78
-    const/16 v0, 0x16
+    const/4 v0, 0x3
 
     .line 79
-    .line 80
-    invoke-direct {p3, v0, p0, p1}, Lj9;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p3, v0, p0, p1}, Lqr2;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
+    .line 80
     .line 81
     .line 82
-    .line 83
-    invoke-static {p2, p3}, Ll47;->h(Landroid/content/res/TypedArray;Lj72;)V
+    invoke-static {p2, p3}, Lbw7;->d(Landroid/content/res/TypedArray;Lmi2;)V
 
+    .line 83
     .line 84
     .line 85
-    .line 86
     :cond_0
-    new-instance p1, Lqk0;
+    new-instance p1, Lpr0;
 
+    .line 86
     .line 87
-    .line 88
     const/16 p2, 0x8
 
+    .line 88
     .line 89
-    .line 90
-    invoke-direct {p1, p2, p0}, Lqk0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lpr0;-><init>(ILjava/lang/Object;)V
 
+    .line 90
     .line 91
     .line 92
-    .line 93
     invoke-virtual {p0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 93
     .line 94
     .line 95
-    .line 96
     return-void
 .end method
 
 
 # virtual methods
 .method public final getDescription()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->S:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->e0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getSelectedItemPosition()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->R:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->d0:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
+    invoke-virtual {p0}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final getTitle()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->c0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final setDescription(I)V
-    .locals 1
+    .locals 0
 
     .line 10
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->S:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->e0:Landroid/widget/TextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
 
 .method public final setDescription(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -364,11 +363,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->S:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->e0:Landroid/widget/TextView;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 7
     .line 8
@@ -377,7 +376,7 @@
 .end method
 
 .method public final setEntries([Ljava/lang/String;)V
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -385,7 +384,7 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lqf6;
+    new-instance v0, Lm37;
 
     .line 5
     .line 6
@@ -423,16 +422,16 @@
     .line 22
     .line 23
     .line 24
-    iget-object v3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->R:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->d0:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
 
     .line 25
     .line 26
-    invoke-direct {v0, v1, v2, v3, p1}, Lqf6;-><init>(Landroid/content/Context;Landroid/view/LayoutInflater;Lsu/happ/proxyutility/ui/widget/CustomSpinner;[Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2, p0, p1}, Lm37;-><init>(Landroid/content/Context;Landroid/view/LayoutInflater;Lsu/happ/proxyutility/ui/widget/CustomSpinner;[Ljava/lang/String;)V
 
     .line 27
     .line 28
     .line 29
-    invoke-virtual {v3, v0}, Landroid/widget/AbsSpinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
+    invoke-virtual {p0, v0}, Landroid/widget/AbsSpinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 30
     .line 31
@@ -441,7 +440,7 @@
 .end method
 
 .method public final setOnSpinnerItemClickListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -449,11 +448,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->R:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->d0:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
+    invoke-virtual {p0, p1}, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 7
     .line 8
@@ -462,26 +461,26 @@
 .end method
 
 .method public final setSelection(I)V
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->R:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->d0:Lsu/happ/proxyutility/ui/widget/CustomSpinner;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
+    invoke-virtual {p0}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
 
     .line 4
     .line 5
     .line 6
-    move-result v1
+    move-result v0
 
     .line 7
-    if-eq v1, p1, :cond_0
+    if-eq v0, p1, :cond_0
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->setSelection(I)V
+    invoke-virtual {p0, p1}, Lsu/happ/proxyutility/ui/widget/CustomSpinner;->setSelection(I)V
 
     .line 10
     .line 11
@@ -491,18 +490,18 @@
 .end method
 
 .method public final setTitle(I)V
-    .locals 1
+    .locals 0
 
     .line 10
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->c0:Landroid/widget/TextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
 
 .method public final setTitle(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -510,11 +509,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->c0:Landroid/widget/TextView;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 7
     .line 8
@@ -523,14 +522,14 @@
 .end method
 
 .method public final setTitleColor(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;->c0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Ltv3;->W(Landroid/widget/TextView;I)V
+    invoke-static {p0, p1}, Lih4;->X(Landroid/widget/TextView;I)V
 
     .line 4
     .line 5

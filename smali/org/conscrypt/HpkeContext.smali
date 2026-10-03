@@ -1,6 +1,6 @@
 .class public abstract Lorg/conscrypt/HpkeContext;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -100,7 +100,7 @@
 
     .line 30
     .line 31
-    invoke-static {v1, p0}, Lkd0;->v(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0}, Lw31;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33
@@ -199,7 +199,7 @@
     :cond_1
     const-string p0, "Invalid provider name"
 
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -296,7 +296,7 @@
 
     .line 37
     .line 38
-    invoke-static {p1, p0, v1}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0, v1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 39
     .line 40
@@ -304,7 +304,7 @@
     move-result-object p0
 
     .line 42
-    invoke-static {p0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 43
     .line 44
@@ -334,7 +334,7 @@
 
     .line 55
     .line 56
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 57
     .line 58
@@ -345,31 +345,31 @@
 
 # virtual methods
 .method public export(I[B)[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
+    iget-object p0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1, p2}, Lorg/conscrypt/HpkeSpi;->engineExport(I[B)[B
+    invoke-interface {p0, p1, p2}, Lorg/conscrypt/HpkeSpi;->engineExport(I[B)[B
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    return-object p1
+    return-object p0
 .end method
 
 .method public getSpi()Lorg/conscrypt/HpkeSpi;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
+    iget-object p0, p0, Lorg/conscrypt/HpkeContext;->spi:Lorg/conscrypt/HpkeSpi;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

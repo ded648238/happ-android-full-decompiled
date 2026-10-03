@@ -1,211 +1,200 @@
-.class public abstract Lby2;
+.class public final Lby2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lud8;
+.implements Luy2;
+.implements Liv7;
 
 
 # static fields
-.field public static final a:I
+.field public static final Y:Luw;
+
+.field public static final Z:Luw;
+
+.field public static final c0:Luw;
+
+.field public static final d0:Luw;
+
+.field public static final e0:Luw;
+
+.field public static final f0:Luw;
+
+
+# instance fields
+.field public final X:Lw25;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 4
 
     .line 1
-    const-string v0, "java.version"
+    new-instance v0, Luw;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, "camerax.core.imageAnalysis.backpressureStrategy"
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    const-class v2, Ltx2;
 
+    .line 6
     .line 7
-    const/4 v1, 0x0
+    const/4 v3, 0x0
 
     .line 8
-    const/4 v2, -0x1
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
     .line 9
-    :try_start_0
-    const-string v3, "[._]"
-
     .line 10
     .line 11
-    const/4 v4, 0x3
+    sput-object v0, Lby2;->Y:Luw;
 
     .line 12
-    invoke-virtual {v0, v3, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
-
     .line 13
+    new-instance v0, Luw;
+
     .line 14
     .line 15
-    move-result-object v3
+    const-string v1, "camerax.core.imageAnalysis.imageQueueDepth"
 
     .line 16
-    aget-object v4, v3, v1
-
     .line 17
-    .line 18
-    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
+    .line 18
     .line 19
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+
     .line 20
     .line 21
-    move-result v4
-
     .line 22
-    const/4 v5, 0x1
+    sput-object v0, Lby2;->Z:Luw;
 
     .line 23
-    if-ne v4, v5, :cond_0
-
     .line 24
-    .line 25
-    array-length v6, v3
+    new-instance v0, Luw;
 
+    .line 25
     .line 26
-    if-le v6, v5, :cond_0
+    const-string v1, "camerax.core.imageAnalysis.imageReaderProxyProvider"
 
     .line 27
     .line 28
-    aget-object v3, v3, v5
+    const-class v2, Ldz2;
 
     .line 29
     .line 30
-    invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
     .line 31
     .line 32
     .line 33
-    move-result v4
-    :try_end_0
-    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+    sput-object v0, Lby2;->c0:Luw;
 
     .line 34
-    goto :goto_0
-
     .line 35
-    :catch_0
-    nop
+    new-instance v0, Luw;
 
     .line 36
-    const/4 v4, -0x1
-
     .line 37
-    :cond_0
-    :goto_0
-    if-ne v4, v2, :cond_2
+    const-string v1, "camerax.core.imageAnalysis.outputImageFormat"
 
     .line 38
     .line 39
-    :try_start_1
-    new-instance v3, Ljava/lang/StringBuilder;
+    const-class v2, Lwx2;
 
     .line 40
     .line 41
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
     .line 42
     .line 43
     .line 44
-    :goto_1
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    sput-object v0, Lby2;->d0:Luw;
 
     .line 45
     .line 46
-    .line 47
-    move-result v4
+    new-instance v0, Luw;
 
+    .line 47
     .line 48
-    if-ge v1, v4, :cond_1
+    const-string v1, "camerax.core.imageAnalysis.onePixelShiftEnabled"
 
     .line 49
     .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/String;->charAt(I)C
+    const-class v2, Ljava/lang/Boolean;
 
     .line 51
     .line 52
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+
     .line 53
-    move-result v4
-
     .line 54
-    invoke-static {v4}, Ljava/lang/Character;->isDigit(C)Z
-
     .line 55
+    sput-object v0, Lby2;->e0:Luw;
+
     .line 56
     .line 57
-    move-result v5
+    new-instance v0, Luw;
 
     .line 58
-    if-eqz v5, :cond_1
-
     .line 59
-    .line 60
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const-string v1, "camerax.core.imageAnalysis.outputImageRotationEnabled"
 
+    .line 60
     .line 61
+    invoke-direct {v0, v1, v2, v3}, Luw;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/hardware/camera2/CaptureRequest$Key;)V
+
     .line 62
     .line 63
-    add-int/lit8 v1, v1, 0x1
-
     .line 64
+    sput-object v0, Lby2;->f0:Luw;
+
     .line 65
-    goto :goto_1
-
     .line 66
-    :catch_1
-    nop
-
-    .line 67
-    goto :goto_2
-
-    .line 68
-    :cond_1
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v0
-
-    .line 72
-    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    .line 73
-    .line 74
-    .line 75
-    move-result v0
-    :try_end_1
-    .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 76
-    move v4, v0
-
-    .line 77
-    goto :goto_3
-
-    .line 78
-    :goto_2
-    const/4 v4, -0x1
-
-    .line 79
-    :cond_2
-    :goto_3
-    if-ne v4, v2, :cond_3
-
-    .line 80
-    .line 81
-    const/4 v4, 0x6
-
-    .line 82
-    :cond_3
-    sput v4, Lby2;->a:I
-
-    .line 83
-    .line 84
     return-void
+.end method
+
+.method public constructor <init>(Lw25;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lby2;->X:Lw25;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final k()Ljz0;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lby2;->X:Lw25;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final l()I
+    .locals 0
+
+    .line 1
+    const/16 p0, 0x23
+
+    .line 2
+    .line 3
+    return p0
 .end method

@@ -1,10 +1,10 @@
 .class final Landroidx/compose/ui/draw/PainterNode;
-.super Ld64;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lcn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lye3;
-.implements Lsj1;
+.implements Lov3;
+.implements Lwr1;
 
 
 # annotations
@@ -14,22 +14,22 @@
     }
     d2 = {
         "Landroidx/compose/ui/draw/PainterNode;",
-        "Lye3;",
-        "Ld64;",
-        "Lsj1;",
-        "Lrn4;",
+        "Lov3;",
+        "Lcn4;",
+        "Lwr1;",
+        "Lu55;",
         "painter",
-        "Lrn4;",
-        "I0",
-        "()Lrn4;",
-        "N0",
-        "(Lrn4;)V",
-        "ui_release"
+        "Lu55;",
+        "U0",
+        "()Lu55;",
+        "Z0",
+        "(Lu55;)V",
+        "ui"
     }
     k = 0x1
     mv = {
         0x2,
-        0x0,
+        0x1,
         0x0
     }
     xi = 0x30
@@ -37,33 +37,33 @@
 
 
 # instance fields
-.field public e0:Lm20;
+.field public n0:Lq40;
 
-.field private painter:Lrn4;
+.field private painter:Lu55;
 
 
 # direct methods
-.method public constructor <init>(Lrn4;Lm20;)V
+.method public constructor <init>(Lu55;Lq40;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ld64;-><init>()V
+    invoke-direct {p0}, Lcn4;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iput-object p1, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/compose/ui/draw/PainterNode;->e0:Lm20;
+    iput-object p2, p0, Landroidx/compose/ui/draw/PainterNode;->n0:Lq40;
 
     .line 7
     .line 8
     return-void
 .end method
 
-.method public static K0(J)Z
+.method public static W0(J)Z
     .locals 2
 
     .line 1
@@ -74,7 +74,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0, p1, v0, v1}, Lrb6;->a(JJ)Z
+    invoke-static {p0, p1, v0, v1}, Lsy6;->a(JJ)Z
 
     .line 7
     .line 8
@@ -96,10 +96,10 @@
     and-long/2addr p0, v0
 
     .line 18
-    long-to-int p1, p0
+    long-to-int p0, p0
 
     .line 19
-    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 20
     .line 21
@@ -144,7 +144,7 @@
     return p0
 .end method
 
-.method public static L0(J)Z
+.method public static X0(J)Z
     .locals 2
 
     .line 1
@@ -155,7 +155,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0, p1, v0, v1}, Lrb6;->a(JJ)Z
+    invoke-static {p0, p1, v0, v1}, Lsy6;->a(JJ)Z
 
     .line 7
     .line 8
@@ -174,10 +174,10 @@
     shr-long/2addr p0, v0
 
     .line 15
-    long-to-int p1, p0
+    long-to-int p0, p0
 
     .line 16
-    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 17
     .line 18
@@ -224,11 +224,21 @@
 
 
 # virtual methods
-.method public final E(Lt04;Lm04;J)Ls04;
-    .locals 2
+.method public final J0()Z
+    .locals 0
 
     .line 1
-    invoke-virtual {p0, p3, p4}, Landroidx/compose/ui/draw/PainterNode;->M0(J)J
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final M(Luh4;Lnh4;J)Lth4;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0, p3, p4}, Landroidx/compose/ui/draw/PainterNode;->Y0(J)J
 
     .line 2
     .line 3
@@ -236,76 +246,69 @@
     move-result-wide p3
 
     .line 5
-    invoke-interface {p2, p3, p4}, Lm04;->n(J)Lbv4;
+    invoke-interface {p2, p3, p4}, Lnh4;->o(J)Lkd5;
 
     .line 6
     .line 7
     .line 8
-    move-result-object p2
+    move-result-object p0
 
     .line 9
-    iget p3, p2, Lbv4;->Q:I
+    iget p2, p0, Lkd5;->X:I
 
     .line 10
     .line 11
-    iget p4, p2, Lbv4;->R:I
+    iget p3, p0, Lkd5;->Y:I
 
     .line 12
     .line 13
-    new-instance v0, Lre;
+    new-instance p4, Lob;
 
     .line 14
     .line 15
-    const/4 v1, 0x4
+    const/4 v0, 0x5
 
     .line 16
-    invoke-direct {v0, p2, v1}, Lre;-><init>(Lbv4;I)V
+    invoke-direct {p4, p0, v0}, Lob;-><init>(Lkd5;I)V
 
     .line 17
     .line 18
     .line 19
-    sget-object p2, Lxn1;->Q:Lxn1;
+    sget-object p0, Lgw1;->X:Lgw1;
 
     .line 20
     .line 21
-    invoke-interface {p1, p3, p4, p2, v0}, Lt04;->S(IILjava/util/Map;Lj72;)Ls04;
+    invoke-interface {p1, p2, p3, p0, p4}, Luh4;->f0(IILjava/util/Map;Lmi2;)Lth4;
 
     .line 22
     .line 23
     .line 24
-    move-result-object p1
+    move-result-object p0
 
     .line 25
-    return-object p1
+    return-object p0
 .end method
 
-.method public final synthetic I()V
+.method public final U0()Lu55;
     .locals 0
 
     .line 1
-    return-void
-.end method
-
-.method public final I0()Lrn4;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iget-object p0, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final J0()Z
-    .locals 5
+.method public final V0()Z
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iget-object p0, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lrn4;->c()J
+    invoke-virtual {p0}, Lu55;->c()J
 
     .line 4
     .line 5
@@ -320,32 +323,32 @@
     .line 10
     .line 11
     .line 12
-    cmp-long v4, v0, v2
+    cmp-long p0, v0, v2
 
     .line 13
     .line 14
-    if-eqz v4, :cond_0
+    if-eqz p0, :cond_0
 
     .line 15
     .line 16
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 17
-    return v0
+    return p0
 
     .line 18
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    return v0
+    return p0
 .end method
 
-.method public final M0(J)J
+.method public final Y0(J)J
     .locals 11
 
     .line 1
-    invoke-static {p1, p2}, Lcu0;->d(J)Z
+    invoke-static {p1, p2}, Li11;->d(J)Z
 
     .line 2
     .line 3
@@ -363,7 +366,7 @@
 
     .line 8
     .line 9
-    invoke-static {p1, p2}, Lcu0;->c(J)Z
+    invoke-static {p1, p2}, Li11;->c(J)Z
 
     .line 10
     .line 11
@@ -375,18 +378,18 @@
 
     .line 14
     .line 15
-    const/4 v0, 0x1
+    move v0, v2
 
     .line 16
     goto :goto_0
 
     .line 17
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     .line 18
     :goto_0
-    invoke-static {p1, p2}, Lcu0;->f(J)Z
+    invoke-static {p1, p2}, Li11;->f(J)Z
 
     .line 19
     .line 20
@@ -398,7 +401,7 @@
 
     .line 23
     .line 24
-    invoke-static {p1, p2}, Lcu0;->e(J)Z
+    invoke-static {p1, p2}, Li11;->e(J)Z
 
     .line 25
     .line 26
@@ -410,11 +413,11 @@
 
     .line 29
     .line 30
-    const/4 v1, 0x1
+    move v1, v2
 
     .line 31
     :cond_1
-    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->J0()Z
+    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->V0()Z
 
     .line 32
     .line 33
@@ -436,7 +439,7 @@
     .line 40
     .line 41
     :cond_3
-    invoke-static {p1, p2}, Lcu0;->h(J)I
+    invoke-static {p1, p2}, Li11;->h(J)I
 
     .line 42
     .line 43
@@ -444,7 +447,7 @@
     move-result v5
 
     .line 45
-    invoke-static {p1, p2}, Lcu0;->g(J)I
+    invoke-static {p1, p2}, Li11;->g(J)I
 
     .line 46
     .line 47
@@ -465,26 +468,26 @@
     move-wide v3, p1
 
     .line 54
-    invoke-static/range {v3 .. v9}, Lcu0;->a(JIIIII)J
+    invoke-static/range {v3 .. v9}, Li11;->a(JIIIII)J
 
     .line 55
     .line 56
     .line 57
-    move-result-wide p1
+    move-result-wide p0
 
     .line 58
-    return-wide p1
+    return-wide p0
 
     .line 59
     :cond_4
     move-wide v0, p1
 
     .line 60
-    iget-object p1, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iget-object p1, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 61
     .line 62
-    invoke-virtual {p1}, Lrn4;->c()J
+    invoke-virtual {p1}, Lu55;->c()J
 
     .line 63
     .line 64
@@ -492,7 +495,7 @@
     move-result-wide p1
 
     .line 66
-    invoke-static {p1, p2}, Landroidx/compose/ui/draw/PainterNode;->L0(J)Z
+    invoke-static {p1, p2}, Landroidx/compose/ui/draw/PainterNode;->X0(J)Z
 
     .line 67
     .line 68
@@ -535,7 +538,7 @@
 
     .line 86
     :cond_5
-    invoke-static {v0, v1}, Lcu0;->j(J)I
+    invoke-static {v0, v1}, Li11;->j(J)I
 
     .line 87
     .line 88
@@ -544,7 +547,7 @@
 
     .line 90
     :goto_1
-    invoke-static {p1, p2}, Landroidx/compose/ui/draw/PainterNode;->K0(J)Z
+    invoke-static {p1, p2}, Landroidx/compose/ui/draw/PainterNode;->W0(J)Z
 
     .line 91
     .line 92
@@ -566,10 +569,10 @@
     and-long/2addr p1, v5
 
     .line 102
-    long-to-int p2, p1
+    long-to-int p1, p1
 
     .line 103
-    invoke-static {p2}, Ljava/lang/Float;->intBitsToFloat(I)F
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 104
     .line 105
@@ -589,7 +592,7 @@
 
     .line 112
     :cond_6
-    invoke-static {v0, v1}, Lcu0;->i(J)I
+    invoke-static {v0, v1}, Li11;->i(J)I
 
     .line 113
     .line 114
@@ -598,7 +601,7 @@
 
     .line 116
     :goto_2
-    invoke-static {v2, v0, v1}, Lfu0;->g(IJ)I
+    invoke-static {v2, v0, v1}, Lk11;->g(IJ)I
 
     .line 117
     .line 118
@@ -606,7 +609,7 @@
     move-result p2
 
     .line 120
-    invoke-static {p1, v0, v1}, Lfu0;->f(IJ)I
+    invoke-static {p1, v0, v1}, Lk11;->f(IJ)I
 
     .line 121
     .line 122
@@ -651,7 +654,7 @@
     or-long/2addr p1, v7
 
     .line 139
-    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->J0()Z
+    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->V0()Z
 
     .line 140
     .line 141
@@ -668,11 +671,11 @@
     .line 146
     .line 147
     :cond_7
-    iget-object v2, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iget-object v2, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 148
     .line 149
-    invoke-virtual {v2}, Lrn4;->c()J
+    invoke-virtual {v2}, Lu55;->c()J
 
     .line 150
     .line 151
@@ -680,7 +683,7 @@
     move-result-wide v7
 
     .line 153
-    invoke-static {v7, v8}, Landroidx/compose/ui/draw/PainterNode;->L0(J)Z
+    invoke-static {v7, v8}, Landroidx/compose/ui/draw/PainterNode;->X0(J)Z
 
     .line 154
     .line 155
@@ -711,11 +714,11 @@
 
     .line 167
     :cond_8
-    iget-object v2, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iget-object v2, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 168
     .line 169
-    invoke-virtual {v2}, Lrn4;->c()J
+    invoke-virtual {v2}, Lu55;->c()J
 
     .line 170
     .line 171
@@ -738,11 +741,11 @@
 
     .line 179
     :goto_3
-    iget-object v4, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iget-object v4, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 180
     .line 181
-    invoke-virtual {v4}, Lrn4;->c()J
+    invoke-virtual {v4}, Lu55;->c()J
 
     .line 182
     .line 183
@@ -750,7 +753,7 @@
     move-result-wide v7
 
     .line 185
-    invoke-static {v7, v8}, Landroidx/compose/ui/draw/PainterNode;->K0(J)Z
+    invoke-static {v7, v8}, Landroidx/compose/ui/draw/PainterNode;->W0(J)Z
 
     .line 186
     .line 187
@@ -766,26 +769,26 @@
 
     .line 192
     .line 193
-    long-to-int v4, v7
+    long-to-int p0, v7
 
     .line 194
-    invoke-static {v4}, Ljava/lang/Float;->intBitsToFloat(I)F
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 195
     .line 196
     .line 197
-    move-result v4
+    move-result p0
 
     .line 198
     goto :goto_4
 
     .line 199
     :cond_9
-    iget-object v4, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iget-object p0, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 200
     .line 201
-    invoke-virtual {v4}, Lrn4;->c()J
+    invoke-virtual {p0}, Lu55;->c()J
 
     .line 202
     .line 203
@@ -796,15 +799,15 @@
     and-long/2addr v7, v5
 
     .line 206
-    long-to-int v4, v7
+    long-to-int p0, v7
 
     .line 207
-    invoke-static {v4}, Ljava/lang/Float;->intBitsToFloat(I)F
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 208
     .line 209
     .line 210
-    move-result v4
+    move-result p0
 
     .line 211
     :goto_4
@@ -819,15 +822,15 @@
     int-to-long v7, v2
 
     .line 216
-    invoke-static {v4}, Ljava/lang/Float;->floatToRawIntBits(F)I
+    invoke-static {p0}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     .line 217
     .line 218
     .line 219
-    move-result v2
+    move-result p0
 
     .line 220
-    int-to-long v9, v2
+    int-to-long v9, p0
 
     .line 221
     shl-long/2addr v7, v3
@@ -843,25 +846,25 @@
 
     .line 225
     .line 226
-    long-to-int v2, v9
+    long-to-int p0, v9
 
     .line 227
-    invoke-static {v2}, Ljava/lang/Float;->intBitsToFloat(I)F
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 228
     .line 229
     .line 230
-    move-result v2
+    move-result p0
 
     .line 231
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
     .line 232
-    cmpg-float v2, v2, v4
+    cmpg-float p0, p0, v2
 
     .line 233
     .line 234
-    if-nez v2, :cond_a
+    if-nez p0, :cond_a
 
     .line 235
     .line 236
@@ -873,22 +876,22 @@
 
     .line 238
     .line 239
-    long-to-int v2, v9
+    long-to-int p0, v9
 
     .line 240
-    invoke-static {v2}, Ljava/lang/Float;->intBitsToFloat(I)F
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 241
     .line 242
     .line 243
-    move-result v2
+    move-result p0
 
     .line 244
-    cmpg-float v2, v2, v4
+    cmpg-float p0, p0, v2
 
     .line 245
     .line 246
-    if-nez v2, :cond_b
+    if-nez p0, :cond_b
 
     .line 247
     .line 248
@@ -901,156 +904,236 @@
 
     .line 251
     :cond_b
-    invoke-static {v7, v8, p1, p2}, Lva6;->i(JJ)F
+    invoke-static {v7, v8, p1, p2}, Lw97;->i(JJ)F
 
     .line 252
     .line 253
     .line 254
-    move-result p1
+    move-result p0
 
     .line 255
-    invoke-static {p1}, Ljava/lang/Float;->floatToRawIntBits(F)I
+    invoke-static {p0}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     .line 256
     .line 257
     .line 258
-    move-result p2
+    move-result p1
 
     .line 259
-    int-to-long v9, p2
+    int-to-long p1, p1
 
     .line 260
-    invoke-static {p1}, Ljava/lang/Float;->floatToRawIntBits(F)I
+    invoke-static {p0}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     .line 261
     .line 262
     .line 263
-    move-result p1
+    move-result p0
 
     .line 264
-    int-to-long p1, p1
+    int-to-long v9, p0
 
     .line 265
-    shl-long/2addr v9, v3
+    shl-long p0, p1, v3
 
     .line 266
-    and-long/2addr p1, v5
-
     .line 267
-    or-long/2addr p1, v9
+    and-long/2addr v9, v5
 
     .line 268
-    sget v2, Lhz5;->a:I
+    or-long/2addr p0, v9
 
     .line 269
-    .line 270
-    invoke-static {v7, v8, p1, p2}, Lva6;->W(JJ)J
+    sget p2, Lsk6;->a:I
 
+    .line 270
     .line 271
+    invoke-static {v7, v8, p0, p1}, Lvx6;->g0(JJ)J
+
     .line 272
     .line 273
+    .line 274
     move-result-wide p1
 
-    .line 274
+    .line 275
     :goto_6
     shr-long v2, p1, v3
 
-    .line 275
     .line 276
-    long-to-int v3, v2
-
     .line 277
-    invoke-static {v3}, Ljava/lang/Float;->intBitsToFloat(I)F
+    long-to-int p0, v2
 
     .line 278
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
     .line 279
     .line 280
-    move-result v2
-
     .line 281
-    invoke-static {v2}, Ljava/lang/Math;->round(F)I
+    move-result p0
 
     .line 282
+    invoke-static {p0}, Ljava/lang/Math;->round(F)I
+
     .line 283
     .line 284
-    move-result v2
-
     .line 285
-    invoke-static {v2, v0, v1}, Lfu0;->g(IJ)I
+    move-result p0
 
     .line 286
+    invoke-static {p0, v0, v1}, Lk11;->g(IJ)I
+
     .line 287
     .line 288
+    .line 289
     move-result v2
 
-    .line 289
-    and-long/2addr p1, v5
-
     .line 290
-    long-to-int p2, p1
+    and-long p0, p1, v5
 
     .line 291
-    invoke-static {p2}, Ljava/lang/Float;->intBitsToFloat(I)F
-
     .line 292
+    long-to-int p0, p0
+
     .line 293
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
     .line 294
-    move-result p1
-
     .line 295
-    invoke-static {p1}, Ljava/lang/Math;->round(F)I
-
     .line 296
+    move-result p0
+
     .line 297
+    invoke-static {p0}, Ljava/lang/Math;->round(F)I
+
     .line 298
-    move-result p1
-
     .line 299
-    invoke-static {p1, v0, v1}, Lfu0;->f(IJ)I
-
     .line 300
+    move-result p0
+
     .line 301
+    invoke-static {p0, v0, v1}, Lk11;->f(IJ)I
+
     .line 302
+    .line 303
+    .line 304
     move-result v4
 
-    .line 303
+    .line 305
     const/4 v5, 0x0
 
-    .line 304
+    .line 306
     const/16 v6, 0xa
 
-    .line 305
-    .line 306
+    .line 307
+    .line 308
     const/4 v3, 0x0
 
-    .line 307
-    invoke-static/range {v0 .. v6}, Lcu0;->a(JIIIII)J
-
-    .line 308
     .line 309
-    .line 310
-    move-result-wide p1
+    invoke-static/range {v0 .. v6}, Li11;->a(JIIIII)J
 
+    .line 310
     .line 311
-    return-wide p1
+    .line 312
+    move-result-wide p0
+
+    .line 313
+    return-wide p0
 .end method
 
-.method public final N0(Lrn4;)V
+.method public final Z0(Lu55;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iput-object p1, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final V(Llt2;Lm04;I)I
+.method public final a0(Lp84;Lnh4;I)I
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->J0()Z
+    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->V0()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    if-eqz p1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 p1, 0x0
+
+    .line 8
+    const/16 v0, 0xd
+
+    .line 9
+    .line 10
+    invoke-static {p3, p1, v0}, Lk11;->b(III)J
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-wide v0
+
+    .line 14
+    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/draw/PainterNode;->Y0(J)J
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-wide p0
+
+    .line 18
+    invoke-interface {p2, p3}, Lnh4;->a(I)I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p2
+
+    .line 22
+    invoke-static {p0, p1}, Li11;->i(J)I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result p0
+
+    .line 26
+    invoke-static {p0, p2}, Ljava/lang/Math;->max(II)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result p0
+
+    .line 30
+    return p0
+
+    .line 31
+    :cond_0
+    invoke-interface {p2, p3}, Lnh4;->a(I)I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result p0
+
+    .line 35
+    return p0
+.end method
+
+.method public final h(Lp84;Lnh4;I)I
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->V0()Z
 
     .line 2
     .line 3
@@ -1068,7 +1151,7 @@
     const/4 v0, 0x7
 
     .line 9
-    invoke-static {p1, p3, v0}, Lfu0;->b(III)J
+    invoke-static {p1, p3, v0}, Lk11;->b(III)J
 
     .line 10
     .line 11
@@ -1076,58 +1159,58 @@
     move-result-wide v0
 
     .line 13
-    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/draw/PainterNode;->M0(J)J
+    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/draw/PainterNode;->Y0(J)J
 
     .line 14
     .line 15
     .line 16
-    move-result-wide v0
+    move-result-wide p0
 
     .line 17
-    invoke-interface {p2, p3}, Lm04;->k(I)I
+    invoke-interface {p2, p3}, Lnh4;->m(I)I
 
     .line 18
     .line 19
     .line 20
-    move-result p1
+    move-result p2
 
     .line 21
-    invoke-static {v0, v1}, Lcu0;->j(J)I
+    invoke-static {p0, p1}, Li11;->j(J)I
 
     .line 22
     .line 23
     .line 24
-    move-result p2
+    move-result p0
 
     .line 25
-    invoke-static {p2, p1}, Ljava/lang/Math;->max(II)I
+    invoke-static {p0, p2}, Ljava/lang/Math;->max(II)I
 
     .line 26
     .line 27
     .line 28
-    move-result p1
+    move-result p0
 
     .line 29
-    return p1
+    return p0
 
     .line 30
     :cond_0
-    invoke-interface {p2, p3}, Lm04;->k(I)I
+    invoke-interface {p2, p3}, Lnh4;->m(I)I
 
     .line 31
     .line 32
     .line 33
-    move-result p1
+    move-result p0
 
     .line 34
-    return p1
+    return p0
 .end method
 
-.method public final X(Llt2;Lm04;I)I
+.method public final k0(Lp84;Lnh4;I)I
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->J0()Z
+    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->V0()Z
 
     .line 2
     .line 3
@@ -1142,85 +1225,86 @@
     const/4 p1, 0x0
 
     .line 8
-    const/4 v0, 0x7
+    const/16 v0, 0xd
 
     .line 9
-    invoke-static {p1, p3, v0}, Lfu0;->b(III)J
-
     .line 10
+    invoke-static {p3, p1, v0}, Lk11;->b(III)J
+
     .line 11
     .line 12
-    move-result-wide v0
-
     .line 13
-    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/draw/PainterNode;->M0(J)J
+    move-result-wide v0
 
     .line 14
+    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/draw/PainterNode;->Y0(J)J
+
     .line 15
     .line 16
-    move-result-wide v0
-
     .line 17
-    invoke-interface {p2, p3}, Lm04;->j(I)I
+    move-result-wide p0
 
     .line 18
+    invoke-interface {p2, p3}, Lnh4;->L(I)I
+
     .line 19
     .line 20
-    move-result p1
-
     .line 21
-    invoke-static {v0, v1}, Lcu0;->j(J)I
-
-    .line 22
-    .line 23
-    .line 24
     move-result p2
 
+    .line 22
+    invoke-static {p0, p1}, Li11;->i(J)I
+
+    .line 23
+    .line 24
     .line 25
-    invoke-static {p2, p1}, Ljava/lang/Math;->max(II)I
+    move-result p0
 
     .line 26
+    invoke-static {p0, p2}, Ljava/lang/Math;->max(II)I
+
     .line 27
     .line 28
-    move-result p1
-
     .line 29
-    return p1
+    move-result p0
 
     .line 30
-    :cond_0
-    invoke-interface {p2, p3}, Lm04;->j(I)I
+    return p0
 
     .line 31
+    :cond_0
+    invoke-interface {p2, p3}, Lnh4;->L(I)I
+
     .line 32
     .line 33
-    move-result p1
-
     .line 34
-    return p1
+    move-result p0
+
+    .line 35
+    return p0
 .end method
 
-.method public final d0(Lhf3;)V
+.method public final s0(Lxv3;)V
     .locals 18
 
     .line 1
-    move-object/from16 v1, p0
+    move-object/from16 v0, p0
 
     .line 2
     .line 3
-    move-object/from16 v0, p1
+    move-object/from16 v1, p1
 
     .line 4
     .line 5
-    iget-object v2, v0, Lhf3;->Q:Loe0;
+    iget-object v2, v1, Lxv3;->X:Luk0;
 
     .line 6
     .line 7
-    iget-object v3, v1, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iget-object v3, v0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 8
     .line 9
-    invoke-virtual {v3}, Lrn4;->c()J
+    invoke-virtual {v3}, Lu55;->c()J
 
     .line 10
     .line 11
@@ -1228,7 +1312,7 @@
     move-result-wide v3
 
     .line 13
-    invoke-static {v3, v4}, Landroidx/compose/ui/draw/PainterNode;->L0(J)Z
+    invoke-static {v3, v4}, Landroidx/compose/ui/draw/PainterNode;->X0(J)Z
 
     .line 14
     .line 15
@@ -1263,927 +1347,805 @@
 
     .line 29
     :cond_0
-    iget-object v5, v2, Loe0;->R:Lrv7;
+    invoke-interface {v2}, Lxr1;->e()J
 
     .line 30
     .line 31
-    invoke-virtual {v5}, Lrv7;->s()J
-
     .line 32
-    .line 33
-    .line 34
     move-result-wide v7
 
-    .line 35
+    .line 33
     shr-long/2addr v7, v6
 
-    .line 36
+    .line 34
     long-to-int v5, v7
 
-    .line 37
+    .line 35
     invoke-static {v5}, Ljava/lang/Float;->intBitsToFloat(I)F
 
+    .line 36
+    .line 37
     .line 38
-    .line 39
-    .line 40
     move-result v5
 
-    .line 41
+    .line 39
     :goto_0
-    invoke-static {v3, v4}, Landroidx/compose/ui/draw/PainterNode;->K0(J)Z
+    invoke-static {v3, v4}, Landroidx/compose/ui/draw/PainterNode;->W0(J)Z
 
+    .line 40
+    .line 41
     .line 42
-    .line 43
-    .line 44
     move-result v7
 
-    .line 45
+    .line 43
     const-wide v8, 0xffffffffL
 
+    .line 44
+    .line 45
     .line 46
     .line 47
     .line 48
-    .line 49
-    .line 50
     if-eqz v7, :cond_1
 
-    .line 51
-    .line 52
+    .line 49
+    .line 50
     and-long/2addr v3, v8
+
+    .line 51
+    long-to-int v3, v3
+
+    .line 52
+    invoke-static {v3}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 53
-    long-to-int v4, v3
-
     .line 54
-    invoke-static {v4}, Ljava/lang/Float;->intBitsToFloat(I)F
-
     .line 55
-    .line 56
-    .line 57
     move-result v3
 
-    .line 58
+    .line 56
     goto :goto_1
 
-    .line 59
+    .line 57
     :cond_1
-    iget-object v3, v2, Loe0;->R:Lrv7;
+    invoke-interface {v2}, Lxr1;->e()J
 
+    .line 58
+    .line 59
     .line 60
-    .line 61
-    invoke-virtual {v3}, Lrv7;->s()J
-
-    .line 62
-    .line 63
-    .line 64
     move-result-wide v3
 
-    .line 65
+    .line 61
     and-long/2addr v3, v8
 
+    .line 62
+    long-to-int v3, v3
+
+    .line 63
+    invoke-static {v3}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 64
+    .line 65
     .line 66
-    long-to-int v4, v3
+    move-result v3
 
     .line 67
-    invoke-static {v4}, Ljava/lang/Float;->intBitsToFloat(I)F
+    :goto_1
+    invoke-static {v5}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     .line 68
     .line 69
     .line 70
-    move-result v3
-
-    .line 71
-    :goto_1
-    invoke-static {v5}, Ljava/lang/Float;->floatToRawIntBits(F)I
-
-    .line 72
-    .line 73
-    .line 74
     move-result v4
 
-    .line 75
+    .line 71
     int-to-long v4, v4
 
-    .line 76
+    .line 72
     invoke-static {v3}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
-    .line 77
-    .line 78
-    .line 79
+    .line 73
+    .line 74
+    .line 75
     move-result v3
 
-    .line 80
+    .line 76
     int-to-long v10, v3
 
-    .line 81
+    .line 77
     shl-long v3, v4, v6
+
+    .line 78
+    .line 79
+    and-long/2addr v10, v8
+
+    .line 80
+    or-long/2addr v3, v10
+
+    .line 81
+    invoke-interface {v2}, Lxr1;->e()J
 
     .line 82
     .line 83
-    and-long/2addr v10, v8
-
     .line 84
-    or-long/2addr v3, v10
+    move-result-wide v10
 
     .line 85
-    iget-object v5, v2, Loe0;->R:Lrv7;
+    shr-long/2addr v10, v6
 
     .line 86
+    long-to-int v5, v10
+
     .line 87
-    invoke-virtual {v5}, Lrv7;->s()J
+    invoke-static {v5}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 88
     .line 89
     .line 90
-    move-result-wide v10
-
-    .line 91
-    shr-long/2addr v10, v6
-
-    .line 92
-    long-to-int v5, v10
-
-    .line 93
-    invoke-static {v5}, Ljava/lang/Float;->intBitsToFloat(I)F
-
-    .line 94
-    .line 95
-    .line 96
     move-result v5
 
-    .line 97
+    .line 91
     const/4 v7, 0x0
 
-    .line 98
+    .line 92
     cmpg-float v5, v5, v7
 
-    .line 99
-    .line 100
+    .line 93
+    .line 94
     if-nez v5, :cond_2
 
-    .line 101
-    .line 102
+    .line 95
+    .line 96
     goto :goto_2
 
-    .line 103
+    .line 97
     :cond_2
-    iget-object v5, v2, Loe0;->R:Lrv7;
+    invoke-interface {v2}, Lxr1;->e()J
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-wide v10
+
+    .line 101
+    and-long/2addr v10, v8
+
+    .line 102
+    long-to-int v5, v10
+
+    .line 103
+    invoke-static {v5}, Ljava/lang/Float;->intBitsToFloat(I)F
 
     .line 104
     .line 105
-    invoke-virtual {v5}, Lrv7;->s()J
-
     .line 106
-    .line 107
-    .line 108
-    move-result-wide v10
-
-    .line 109
-    and-long/2addr v10, v8
-
-    .line 110
-    long-to-int v5, v10
-
-    .line 111
-    invoke-static {v5}, Ljava/lang/Float;->intBitsToFloat(I)F
-
-    .line 112
-    .line 113
-    .line 114
     move-result v5
 
-    .line 115
+    .line 107
     cmpg-float v5, v5, v7
 
-    .line 116
-    .line 117
+    .line 108
+    .line 109
     if-nez v5, :cond_3
 
-    .line 118
-    .line 119
+    .line 110
+    .line 111
     :goto_2
     const-wide/16 v3, 0x0
 
-    .line 120
-    .line 121
+    .line 112
+    .line 113
     goto :goto_3
 
-    .line 122
+    .line 114
     :cond_3
-    iget-object v5, v2, Loe0;->R:Lrv7;
+    invoke-interface {v2}, Lxr1;->e()J
+
+    .line 115
+    .line 116
+    .line 117
+    move-result-wide v10
+
+    .line 118
+    invoke-static {v3, v4, v10, v11}, Lw97;->i(JJ)F
+
+    .line 119
+    .line 120
+    .line 121
+    move-result v5
+
+    .line 122
+    invoke-static {v5}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     .line 123
     .line 124
-    invoke-virtual {v5}, Lrv7;->s()J
-
     .line 125
-    .line 126
-    .line 127
-    move-result-wide v10
-
-    .line 128
-    invoke-static {v3, v4, v10, v11}, Lva6;->i(JJ)F
-
-    .line 129
-    .line 130
-    .line 131
-    move-result v5
-
-    .line 132
-    invoke-static {v5}, Ljava/lang/Float;->floatToRawIntBits(F)I
-
-    .line 133
-    .line 134
-    .line 135
     move-result v10
 
-    .line 136
+    .line 126
     int-to-long v10, v10
 
-    .line 137
+    .line 127
     invoke-static {v5}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    .line 128
+    .line 129
+    .line 130
+    move-result v5
+
+    .line 131
+    int-to-long v12, v5
+
+    .line 132
+    shl-long/2addr v10, v6
+
+    .line 133
+    and-long/2addr v12, v8
+
+    .line 134
+    or-long/2addr v10, v12
+
+    .line 135
+    sget v5, Lsk6;->a:I
+
+    .line 136
+    .line 137
+    invoke-static {v3, v4, v10, v11}, Lvx6;->g0(JJ)J
 
     .line 138
     .line 139
     .line 140
-    move-result v5
-
-    .line 141
-    int-to-long v12, v5
-
-    .line 142
-    shl-long/2addr v10, v6
-
-    .line 143
-    and-long/2addr v12, v8
-
-    .line 144
-    or-long/2addr v10, v12
-
-    .line 145
-    sget v5, Lhz5;->a:I
-
-    .line 146
-    .line 147
-    invoke-static {v3, v4, v10, v11}, Lva6;->W(JJ)J
-
-    .line 148
-    .line 149
-    .line 150
     move-result-wide v3
 
-    .line 151
+    .line 141
     :goto_3
     shr-long v10, v3, v6
 
-    .line 152
-    .line 153
+    .line 142
+    .line 143
     long-to-int v5, v10
 
-    .line 154
+    .line 144
     invoke-static {v5}, Ljava/lang/Float;->intBitsToFloat(I)F
 
-    .line 155
-    .line 156
-    .line 157
+    .line 145
+    .line 146
+    .line 147
     move-result v5
 
-    .line 158
+    .line 148
     invoke-static {v5}, Ljava/lang/Math;->round(F)I
 
-    .line 159
-    .line 160
-    .line 161
+    .line 149
+    .line 150
+    .line 151
     move-result v5
 
-    .line 162
+    .line 152
     and-long v10, v3, v8
 
-    .line 163
-    .line 164
-    long-to-int v11, v10
+    .line 153
+    .line 154
+    long-to-int v10, v10
 
-    .line 165
-    invoke-static {v11}, Ljava/lang/Float;->intBitsToFloat(I)F
+    .line 155
+    invoke-static {v10}, Ljava/lang/Float;->intBitsToFloat(I)F
 
-    .line 166
-    .line 167
-    .line 168
+    .line 156
+    .line 157
+    .line 158
     move-result v10
 
-    .line 169
+    .line 159
     invoke-static {v10}, Ljava/lang/Math;->round(F)I
+
+    .line 160
+    .line 161
+    .line 162
+    move-result v10
+
+    .line 163
+    int-to-long v11, v5
+
+    .line 164
+    shl-long/2addr v11, v6
+
+    .line 165
+    int-to-long v13, v10
+
+    .line 166
+    and-long/2addr v13, v8
+
+    .line 167
+    or-long v10, v11, v13
+
+    .line 168
+    .line 169
+    invoke-interface {v2}, Lxr1;->e()J
 
     .line 170
     .line 171
     .line 172
-    move-result v10
+    move-result-wide v12
 
     .line 173
-    int-to-long v11, v5
+    shr-long/2addr v12, v6
 
     .line 174
-    shl-long/2addr v11, v6
+    long-to-int v5, v12
 
     .line 175
-    int-to-long v13, v10
-
-    .line 176
-    and-long/2addr v13, v8
-
-    .line 177
-    or-long/2addr v11, v13
-
-    .line 178
-    iget-object v5, v2, Loe0;->R:Lrv7;
-
-    .line 179
-    .line 180
-    invoke-virtual {v5}, Lrv7;->s()J
-
-    .line 181
-    .line 182
-    .line 183
-    move-result-wide v13
-
-    .line 184
-    shr-long/2addr v13, v6
-
-    .line 185
-    long-to-int v5, v13
-
-    .line 186
     invoke-static {v5}, Ljava/lang/Float;->intBitsToFloat(I)F
 
-    .line 187
-    .line 188
-    .line 189
+    .line 176
+    .line 177
+    .line 178
     move-result v5
 
-    .line 190
+    .line 179
     invoke-static {v5}, Ljava/lang/Math;->round(F)I
 
-    .line 191
-    .line 192
-    .line 193
+    .line 180
+    .line 181
+    .line 182
     move-result v5
 
-    .line 194
-    iget-object v10, v2, Loe0;->R:Lrv7;
+    .line 183
+    invoke-interface {v2}, Lxr1;->e()J
 
+    .line 184
+    .line 185
+    .line 186
+    move-result-wide v12
+
+    .line 187
+    and-long/2addr v12, v8
+
+    .line 188
+    long-to-int v12, v12
+
+    .line 189
+    invoke-static {v12}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 190
+    .line 191
+    .line 192
+    move-result v12
+
+    .line 193
+    invoke-static {v12}, Ljava/lang/Math;->round(F)I
+
+    .line 194
     .line 195
     .line 196
-    invoke-virtual {v10}, Lrv7;->s()J
+    move-result v12
 
     .line 197
-    .line 198
-    .line 199
-    move-result-wide v13
-
-    .line 200
-    and-long/2addr v13, v8
-
-    .line 201
-    long-to-int v10, v13
-
-    .line 202
-    invoke-static {v10}, Ljava/lang/Float;->intBitsToFloat(I)F
-
-    .line 203
-    .line 204
-    .line 205
-    move-result v10
-
-    .line 206
-    invoke-static {v10}, Ljava/lang/Math;->round(F)I
-
-    .line 207
-    .line 208
-    .line 209
-    move-result v10
-
-    .line 210
     int-to-long v13, v5
 
-    .line 211
+    .line 198
     shl-long/2addr v13, v6
 
+    .line 199
+    move v5, v6
+
+    .line 200
+    move v15, v7
+
+    .line 201
+    int-to-long v6, v12
+
+    .line 202
+    and-long/2addr v6, v8
+
+    .line 203
+    or-long/2addr v6, v13
+
+    .line 204
+    invoke-virtual {v1}, Lxv3;->getLayoutDirection()Lhv3;
+
+    .line 205
+    .line 206
+    .line 207
+    move-result-object v12
+
+    .line 208
+    shr-long v13, v6, v5
+
+    .line 209
+    .line 210
+    long-to-int v13, v13
+
+    .line 211
+    move v14, v5
+
     .line 212
-    const/16 v5, 0x20
+    move-wide/from16 v16, v6
 
     .line 213
     .line 214
-    const/4 v15, 0x0
+    shr-long v5, v10, v14
 
     .line 215
-    int-to-long v6, v10
-
     .line 216
-    and-long/2addr v6, v8
+    long-to-int v5, v5
 
     .line 217
-    or-long/2addr v6, v13
+    sub-int/2addr v13, v5
 
     .line 218
-    invoke-virtual {v0}, Lhf3;->getLayoutDirection()Lte3;
+    int-to-float v5, v13
 
     .line 219
-    .line 220
-    .line 221
-    move-result-object v10
-
-    .line 222
-    shr-long v13, v6, v5
-
-    .line 223
-    .line 224
-    long-to-int v14, v13
-
-    .line 225
-    move-wide/from16 v16, v6
-
-    .line 226
-    .line 227
-    const/16 v13, 0x20
-
-    .line 228
-    .line 229
-    shr-long v5, v11, v13
-
-    .line 230
-    .line 231
-    long-to-int v6, v5
-
-    .line 232
-    sub-int/2addr v14, v6
-
-    .line 233
-    int-to-float v5, v14
-
-    .line 234
     const/high16 v6, 0x40000000    # 2.0f
 
-    .line 235
-    .line 236
+    .line 220
+    .line 221
     div-float/2addr v5, v6
 
-    .line 237
-    const/high16 v14, 0x40000000    # 2.0f
+    .line 222
+    move v13, v6
 
-    .line 238
-    .line 239
+    .line 223
     and-long v6, v16, v8
 
-    .line 240
-    .line 241
-    long-to-int v7, v6
+    .line 224
+    .line 225
+    long-to-int v6, v6
 
-    .line 242
-    and-long/2addr v11, v8
+    .line 226
+    and-long/2addr v10, v8
 
-    .line 243
-    long-to-int v6, v11
+    .line 227
+    long-to-int v7, v10
 
-    .line 244
-    sub-int/2addr v7, v6
+    .line 228
+    sub-int/2addr v6, v7
 
-    .line 245
-    int-to-float v6, v7
+    .line 229
+    int-to-float v6, v6
 
-    .line 246
-    div-float/2addr v6, v14
+    .line 230
+    div-float/2addr v6, v13
 
-    .line 247
-    sget-object v7, Lte3;->Q:Lte3;
+    .line 231
+    sget-object v7, Lhv3;->X:Lhv3;
 
-    .line 248
-    .line 249
-    if-ne v10, v7, :cond_4
+    .line 232
+    .line 233
+    if-ne v12, v7, :cond_4
 
-    .line 250
-    .line 251
-    const/4 v7, 0x0
+    .line 234
+    .line 235
+    move v7, v15
 
-    .line 252
+    .line 236
     goto :goto_4
 
-    .line 253
+    .line 237
     :cond_4
     const/high16 v7, -0x40800000    # -1.0f
 
-    .line 254
-    .line 255
-    mul-float v7, v7, v15
+    .line 238
+    .line 239
+    mul-float/2addr v7, v15
 
-    .line 256
-    .line 257
+    .line 240
     :goto_4
     const/high16 v10, 0x3f800000    # 1.0f
 
-    .line 258
-    .line 259
+    .line 241
+    .line 242
     add-float/2addr v7, v10
 
-    .line 260
-    mul-float v7, v7, v5
+    .line 243
+    mul-float/2addr v7, v5
 
-    .line 261
-    .line 262
+    .line 244
     add-float/2addr v10, v15
 
-    .line 263
-    mul-float v10, v10, v6
+    .line 245
+    mul-float/2addr v10, v6
 
-    .line 264
-    .line 265
+    .line 246
     invoke-static {v7}, Ljava/lang/Math;->round(F)I
 
-    .line 266
-    .line 267
-    .line 268
+    .line 247
+    .line 248
+    .line 249
     move-result v5
 
-    .line 269
+    .line 250
     invoke-static {v10}, Ljava/lang/Math;->round(F)I
 
-    .line 270
-    .line 271
-    .line 272
+    .line 251
+    .line 252
+    .line 253
     move-result v6
 
-    .line 273
+    .line 254
     int-to-long v10, v5
 
-    .line 274
-    shl-long/2addr v10, v13
+    .line 255
+    shl-long/2addr v10, v14
 
-    .line 275
+    .line 256
     int-to-long v5, v6
 
-    .line 276
+    .line 257
     and-long/2addr v5, v8
 
-    .line 277
+    .line 258
     or-long/2addr v5, v10
 
-    .line 278
-    shr-long v10, v5, v13
+    .line 259
+    shr-long v10, v5, v14
 
-    .line 279
-    .line 280
+    .line 260
+    .line 261
     long-to-int v7, v10
 
-    .line 281
+    .line 262
     int-to-float v7, v7
 
-    .line 282
+    .line 263
     and-long/2addr v5, v8
 
-    .line 283
-    long-to-int v6, v5
+    .line 264
+    long-to-int v5, v5
 
-    .line 284
-    int-to-float v5, v6
+    .line 265
+    int-to-float v5, v5
 
-    .line 285
-    iget-object v6, v2, Loe0;->R:Lrv7;
+    .line 266
+    iget-object v6, v2, Luk0;->Y:Lpq;
 
-    .line 286
-    .line 287
-    iget-object v6, v6, Lrv7;->R:Ljava/lang/Object;
+    .line 267
+    .line 268
+    iget-object v6, v6, Lpq;->Y:Ljava/lang/Object;
 
-    .line 288
-    .line 289
-    check-cast v6, Lrb2;
+    .line 269
+    .line 270
+    check-cast v6, Lym2;
 
-    .line 290
-    .line 291
-    invoke-virtual {v6, v7, v5}, Lrb2;->z0(FF)V
+    .line 271
+    .line 272
+    invoke-virtual {v6, v7, v5}, Lym2;->R(FF)V
 
-    .line 292
-    .line 293
-    .line 294
+    .line 273
+    .line 274
+    .line 275
     :try_start_0
-    iget-object v6, v1, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
+    iget-object v6, v0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
-    .line 295
-    .line 296
-    iget-object v8, v1, Landroidx/compose/ui/draw/PainterNode;->e0:Lm20;
+    .line 276
+    .line 277
+    iget-object v0, v0, Landroidx/compose/ui/draw/PainterNode;->n0:Lq40;
 
-    .line 297
-    .line 298
-    invoke-virtual {v6, v0, v3, v4, v8}, Lrn4;->b(Lhf3;JLm20;)V
+    .line 278
+    .line 279
+    invoke-virtual {v6, v1, v3, v4, v0}, Lu55;->b(Lxv3;JLq40;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 299
-    .line 300
-    .line 301
-    iget-object v2, v2, Loe0;->R:Lrv7;
+    .line 280
+    .line 281
+    .line 282
+    iget-object v0, v2, Luk0;->Y:Lpq;
 
-    .line 302
-    .line 303
-    iget-object v2, v2, Lrv7;->R:Ljava/lang/Object;
+    .line 283
+    .line 284
+    iget-object v0, v0, Lpq;->Y:Ljava/lang/Object;
 
-    .line 304
-    .line 305
-    check-cast v2, Lrb2;
+    .line 285
+    .line 286
+    check-cast v0, Lym2;
 
-    .line 306
-    .line 307
-    neg-float v3, v7
+    .line 287
+    .line 288
+    neg-float v2, v7
 
-    .line 308
-    neg-float v4, v5
+    .line 289
+    neg-float v3, v5
 
-    .line 309
-    invoke-virtual {v2, v3, v4}, Lrb2;->z0(FF)V
+    .line 290
+    invoke-virtual {v0, v2, v3}, Lym2;->R(FF)V
 
-    .line 310
-    .line 311
-    .line 312
-    invoke-virtual {v0}, Lhf3;->a()V
+    .line 291
+    .line 292
+    .line 293
+    invoke-virtual {v1}, Lxv3;->a()V
 
-    .line 313
-    .line 314
-    .line 315
+    .line 294
+    .line 295
+    .line 296
     return-void
 
-    .line 316
+    .line 297
     :catchall_0
     move-exception v0
 
-    .line 317
-    iget-object v2, v2, Loe0;->R:Lrv7;
+    .line 298
+    iget-object v1, v2, Luk0;->Y:Lpq;
 
-    .line 318
-    .line 319
-    iget-object v2, v2, Lrv7;->R:Ljava/lang/Object;
+    .line 299
+    .line 300
+    iget-object v1, v1, Lpq;->Y:Ljava/lang/Object;
 
-    .line 320
-    .line 321
-    check-cast v2, Lrb2;
+    .line 301
+    .line 302
+    check-cast v1, Lym2;
 
-    .line 322
-    .line 323
-    neg-float v3, v7
+    .line 303
+    .line 304
+    neg-float v2, v7
 
-    .line 324
-    neg-float v4, v5
+    .line 305
+    neg-float v3, v5
 
-    .line 325
-    invoke-virtual {v2, v3, v4}, Lrb2;->z0(FF)V
+    .line 306
+    invoke-virtual {v1, v2, v3}, Lym2;->R(FF)V
 
-    .line 326
-    .line 327
-    .line 328
+    .line 307
+    .line 308
+    .line 309
     throw v0
 .end method
 
-.method public final h0(Llt2;Lm04;I)I
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->J0()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    if-eqz p1, :cond_0
-
-    .line 6
-    .line 7
-    const/4 p1, 0x0
-
-    .line 8
-    const/16 v0, 0xd
-
-    .line 9
-    .line 10
-    invoke-static {p3, p1, v0}, Lfu0;->b(III)J
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-wide v0
-
-    .line 14
-    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/draw/PainterNode;->M0(J)J
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-wide v0
-
-    .line 18
-    invoke-interface {p2, p3}, Lm04;->I(I)I
-
-    .line 19
-    .line 20
-    .line 21
-    move-result p1
-
-    .line 22
-    invoke-static {v0, v1}, Lcu0;->i(J)I
-
-    .line 23
-    .line 24
-    .line 25
-    move-result p2
-
-    .line 26
-    invoke-static {p2, p1}, Ljava/lang/Math;->max(II)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result p1
-
-    .line 30
-    return p1
-
-    .line 31
-    :cond_0
-    invoke-interface {p2, p3}, Lm04;->I(I)I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result p1
-
-    .line 35
-    return p1
-.end method
-
-.method public final q0(Llt2;Lm04;I)I
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->J0()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    if-eqz p1, :cond_0
-
-    .line 6
-    .line 7
-    const/4 p1, 0x0
-
-    .line 8
-    const/16 v0, 0xd
-
-    .line 9
-    .line 10
-    invoke-static {p3, p1, v0}, Lfu0;->b(III)J
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-wide v0
-
-    .line 14
-    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/draw/PainterNode;->M0(J)J
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-wide v0
-
-    .line 18
-    invoke-interface {p2, p3}, Lm04;->a(I)I
-
-    .line 19
-    .line 20
-    .line 21
-    move-result p1
-
-    .line 22
-    invoke-static {v0, v1}, Lcu0;->i(J)I
-
-    .line 23
-    .line 24
-    .line 25
-    move-result p2
-
-    .line 26
-    invoke-static {p2, p1}, Ljava/lang/Math;->max(II)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result p1
-
-    .line 30
-    return p1
-
-    .line 31
-    :cond_0
-    invoke-interface {p2, p3}, Lm04;->a(I)I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result p1
-
-    .line 35
-    return p1
-.end method
-
 .method public final toString()Ljava/lang/String;
-    .locals 2
+    .locals 4
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lu55;
 
     .line 2
     .line 3
-    const-string v1, "PainterModifier(painter="
+    sget-object v1, Lrt2;->f0:Lz30;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iget-object p0, p0, Landroidx/compose/ui/draw/PainterNode;->n0:Lq40;
 
     .line 6
     .line 7
+    new-instance v2, Ljava/lang/StringBuilder;
+
     .line 8
-    iget-object v1, p0, Landroidx/compose/ui/draw/PainterNode;->painter:Lrn4;
-
     .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v3, "PainterModifier(painter="
 
+    .line 10
     .line 11
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 12
     .line 13
-    const-string v1, ", sizeToIntrinsics=true, alignment="
-
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 15
     .line 16
     .line 17
+    const-string v0, ", sizeToIntrinsics=true, alignment="
+
     .line 18
-    sget-object v1, Lhp5;->W:Lw10;
-
     .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 20
     .line 21
     .line 22
-    .line 23
-    const-string v1, ", alpha=1.0, colorFilter="
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 23
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, ", alpha=1.0, colorFilter="
 
     .line 26
     .line 27
-    .line 28
-    iget-object v1, p0, Landroidx/compose/ui/draw/PainterNode;->e0:Lm20;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 28
     .line 29
     .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
     .line 33
-    const/16 v1, 0x29
+    const-string p0, ")"
 
     .line 34
     .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 36
     .line 37
     .line 38
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 39
     .line 40
     .line 41
-    move-result-object v0
+    move-result-object p0
 
     .line 42
-    return-object v0
+    return-object p0
 .end method
 
-.method public final v0()Z
-    .locals 1
+.method public final w0(Lp84;Lnh4;I)I
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
+    invoke-virtual {p0}, Landroidx/compose/ui/draw/PainterNode;->V0()Z
 
     .line 2
-    return v0
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    if-eqz p1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 p1, 0x0
+
+    .line 8
+    const/4 v0, 0x7
+
+    .line 9
+    invoke-static {p1, p3, v0}, Lk11;->b(III)J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v0
+
+    .line 13
+    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/draw/PainterNode;->Y0(J)J
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-wide p0
+
+    .line 17
+    invoke-interface {p2, p3}, Lnh4;->k(I)I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p2
+
+    .line 21
+    invoke-static {p0, p1}, Li11;->j(J)I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p0
+
+    .line 25
+    invoke-static {p0, p2}, Ljava/lang/Math;->max(II)I
+
+    .line 26
+    .line 27
+    .line 28
+    move-result p0
+
+    .line 29
+    return p0
+
+    .line 30
+    :cond_0
+    invoke-interface {p2, p3}, Lnh4;->k(I)I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result p0
+
+    .line 34
+    return p0
 .end method

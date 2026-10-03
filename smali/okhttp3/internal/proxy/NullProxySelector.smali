@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/proxy/NullProxySelector;
 .super Ljava/net/ProxySelector;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -23,7 +23,7 @@
         "sa",
         "Ljava/io/IOException;",
         "ioe",
-        "Lbh7;",
+        "Lr98;",
         "connectFailed",
         "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V",
         "okhttp"
@@ -102,33 +102,33 @@
 
     .line 2
     .line 3
-    sget-object p1, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
+    sget-object p0, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
 
     .line 4
     .line 5
-    invoke-static {p1}, Lub;->I(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lut;->L(Ljava/lang/Object;)Ljava/util/List;
 
     .line 6
     .line 7
     .line 8
-    move-result-object p1
+    move-result-object p0
 
     .line 9
-    return-object p1
+    return-object p0
 
     .line 10
     :cond_0
-    const-string p1, "uri must not be null"
+    const-string p0, "uri must not be null"
 
     .line 11
     .line 12
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return-object p1
+    return-object p0
 .end method

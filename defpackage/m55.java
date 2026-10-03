@@ -1,20 +1,13 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum m55 implements xs2 {
-    IN(0),
-    OUT(1),
-    INV(2);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface m55 {
+    float a();
 
-    public final int Q;
+    float b(hv3 hv3Var);
 
-    m55(int i) {
-        this.Q = i;
-    }
+    float c(hv3 hv3Var);
 
-    @Override // defpackage.xs2
-    public final int a() {
-        return this.Q;
-    }
+    float d();
 }

@@ -1,10 +1,13 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class yv5 {
-    public av2 a;
-    public uv5 b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class yv5 extends tj2 implements mi2 {
+    public static final yv5 X = new yv5(1, t80.class, "registerAllExtensions", "registerAllExtensions(Lorg/jetbrains/kotlin/protobuf/ExtensionRegistryLite;)V", 0);
 
-    public abstract String o();
+    @Override // defpackage.mi2
+    public final Object invoke(Object obj) {
+        t80.a((n22) obj);
+        return r98.a;
+    }
 }

@@ -1,35 +1,31 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+import java.util.Locale;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class z54 {
-    public static final kq0 Q;
-    public static final z54 R;
-    public static final z54 S;
-    public static final z54 T;
-    public static final z54 U;
-    public static final /* synthetic */ z54[] V;
+    public final Locale a;
 
-    static {
-        z54 z54Var = new z54("FINAL", 0);
-        R = z54Var;
-        z54 z54Var2 = new z54("SEALED", 1);
-        S = z54Var2;
-        z54 z54Var3 = new z54("OPEN", 2);
-        T = z54Var3;
-        z54 z54Var4 = new z54("ABSTRACT", 3);
-        U = z54Var4;
-        V = new z54[]{z54Var, z54Var2, z54Var3, z54Var4};
-        Q = new kq0(16);
+    public z54(Locale locale) {
+        this.a = locale;
     }
 
-    public static z54 valueOf(String str) {
-        return (z54) Enum.valueOf(z54.class, str);
+    public final boolean equals(Object obj) {
+        if (obj == null || !(obj instanceof z54)) {
+            return false;
+        }
+        if (this == obj) {
+            return true;
+        }
+        return m93.h(this.a.toLanguageTag(), ((z54) obj).a.toLanguageTag());
     }
 
-    public static z54[] values() {
-        return (z54[]) V.clone();
+    public final int hashCode() {
+        return this.a.toLanguageTag().hashCode();
+    }
+
+    public final String toString() {
+        return this.a.toLanguageTag();
     }
 }

@@ -1,273 +1,214 @@
-.class public final synthetic Lc16;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lj72;
+.class public final enum Lc16;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:I
-
-.field public final synthetic R:Ld16;
+# static fields
+.field public static final synthetic X:[Lc16;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ld16;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 10
 
     .line 1
-    iput p2, p0, Lc16;->Q:I
+    new-instance v0, Lc16;
 
     .line 2
     .line 3
-    iput-object p1, p0, Lc16;->R:Ld16;
+    const-string v1, "IGNORE_CASE"
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x0
 
     .line 6
+    const/4 v3, 0x2
+
     .line 7
-    .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
-
-    .line 1
-    iget v0, p0, Lc16;->Q:I
-
-    .line 2
-    .line 3
-    sget-object v1, Lbh7;->a:Lbh7;
-
-    .line 4
-    .line 5
-    iget-object v2, p0, Lc16;->R:Ld16;
-
-    .line 6
-    .line 7
-    check-cast p1, Lbk0;
+    invoke-direct {v0, v1, v2, v3}, Lc16;-><init>(Ljava/lang/String;II)V
 
     .line 8
     .line 9
-    packed-switch v0, :pswitch_data_0
-
     .line 10
+    new-instance v1, Lc16;
+
     .line 11
     .line 12
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/16 v2, 0x8
 
     .line 13
     .line 14
-    .line 15
-    iget-object v0, v2, Ld16;->d:Ljava/util/LinkedHashMap;
+    const-string v4, "MULTILINE"
 
+    .line 15
     .line 16
+    const/4 v5, 0x1
+
     .line 17
-    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
+    invoke-direct {v1, v4, v5, v2}, Lc16;-><init>(Ljava/lang/String;II)V
 
     .line 18
     .line 19
     .line 20
-    move-result-object v0
+    new-instance v2, Lc16;
 
     .line 21
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
     .line 22
+    const-string v4, "LITERAL"
+
     .line 23
     .line 24
-    move-result-object v0
+    const/16 v6, 0x10
 
     .line 25
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
     .line 26
+    invoke-direct {v2, v4, v3, v6}, Lc16;-><init>(Ljava/lang/String;II)V
+
     .line 27
     .line 28
-    move-result v2
-
     .line 29
-    if-eqz v2, :cond_0
+    new-instance v3, Lc16;
 
     .line 30
     .line 31
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    const-string v4, "UNIX_LINES"
 
     .line 32
     .line 33
+    const/4 v6, 0x3
+
     .line 34
-    move-result-object v2
+    invoke-direct {v3, v4, v6, v5}, Lc16;-><init>(Ljava/lang/String;II)V
 
     .line 35
-    check-cast v2, Ljava/util/Map$Entry;
-
     .line 36
     .line 37
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    new-instance v4, Lc16;
 
     .line 38
     .line 39
-    .line 40
-    move-result-object v3
+    const-string v5, "COMMENTS"
 
+    .line 40
     .line 41
-    check-cast v3, Ljava/lang/String;
+    const/4 v6, 0x4
 
     .line 42
-    .line 43
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-direct {v4, v5, v6, v6}, Lc16;-><init>(Ljava/lang/String;II)V
 
+    .line 43
     .line 44
     .line 45
-    .line 46
-    move-result-object v2
+    new-instance v5, Lc16;
 
+    .line 46
     .line 47
-    check-cast v2, Lq83;
+    const/4 v6, 0x5
 
     .line 48
-    .line 49
-    invoke-interface {v2}, Lq83;->d()Ll56;
+    const/16 v7, 0x20
 
+    .line 49
     .line 50
+    const-string v8, "DOT_MATCHES_ALL"
+
     .line 51
     .line 52
-    move-result-object v2
+    invoke-direct {v5, v8, v6, v7}, Lc16;-><init>(Ljava/lang/String;II)V
 
     .line 53
-    invoke-virtual {p1, v3, v2}, Lbk0;->a(Ljava/lang/String;Ll56;)V
-
     .line 54
     .line 55
-    .line 56
-    goto :goto_0
+    new-instance v6, Lc16;
 
+    .line 56
     .line 57
-    :cond_0
-    return-object v1
+    const/4 v7, 0x6
 
     .line 58
-    :pswitch_0
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/16 v8, 0x80
 
     .line 59
     .line 60
+    const-string v9, "CANON_EQ"
+
     .line 61
-    const-string v0, "type"
-
     .line 62
-    .line 63
-    sget-object v3, Lml6;->b:Lzz4;
+    invoke-direct {v6, v9, v7, v8}, Lc16;-><init>(Ljava/lang/String;II)V
 
+    .line 63
     .line 64
     .line 65
-    invoke-virtual {p1, v0, v3}, Lbk0;->a(Ljava/lang/String;Ll56;)V
+    filled-new-array/range {v0 .. v6}, [Lc16;
 
     .line 66
     .line 67
     .line 68
-    new-instance v0, Ljava/lang/StringBuilder;
+    move-result-object v0
 
     .line 69
+    sput-object v0, Lc16;->X:[Lc16;
+
     .line 70
-    const-string v3, "kotlinx.serialization.Sealed<"
-
     .line 71
-    .line 72
-    invoke-direct {v0, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    return-void
+.end method
 
-    .line 73
-    .line 74
-    .line 75
-    iget-object v3, v2, Ld16;->a:Lx63;
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
 
-    .line 76
-    .line 77
-    invoke-interface {v3}, Lx63;->z()Ljava/lang/String;
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 78
-    .line 79
-    .line 80
-    move-result-object v3
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
 
-    .line 81
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public static valueOf(Ljava/lang/String;)Lc16;
+    .locals 1
 
-    .line 82
-    .line 83
-    .line 84
-    const/16 v3, 0x3e
+    .line 1
+    const-class v0, Lc16;
 
-    .line 85
-    .line 86
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    .line 87
-    .line 88
-    .line 89
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
-    .line 90
-    .line 91
-    .line 92
+    .line 7
+    check-cast p0, Lc16;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lc16;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lc16;->X:[Lc16;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 93
-    sget-object v3, Lp56;->X:Lp56;
+    .line 7
+    check-cast v0, [Lc16;
 
-    .line 94
-    .line 95
-    const/4 v4, 0x0
-
-    .line 96
-    new-array v4, v4, [Ll56;
-
-    .line 97
-    .line 98
-    new-instance v5, Lc16;
-
-    .line 99
-    .line 100
-    const/4 v6, 0x1
-
-    .line 101
-    invoke-direct {v5, v2, v6}, Lc16;-><init>(Ld16;I)V
-
-    .line 102
-    .line 103
-    .line 104
-    invoke-static {v0, v3, v4, v5}, Lf93;->n(Ljava/lang/String;Ltv3;[Ll56;Lj72;)Ln56;
-
-    .line 105
-    .line 106
-    .line 107
-    move-result-object v0
-
-    .line 108
-    const-string v2, "value"
-
-    .line 109
-    .line 110
-    invoke-virtual {p1, v2, v0}, Lbk0;->a(Ljava/lang/String;Ll56;)V
-
-    .line 111
-    .line 112
-    .line 113
-    return-object v1
-
-    .line 114
-    nop
-
-    .line 115
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 8
+    .line 9
+    return-object v0
 .end method

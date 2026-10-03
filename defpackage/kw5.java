@@ -1,19 +1,13 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class kw5 extends jw5 implements iw5 {
-    public String n;
-    public cv5 o;
-    public hw5 p;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class kw5 {
+    public final j52 a;
+    public final bm1 b;
 
-    @Override // defpackage.iw5
-    public final hw5 c() {
-        return this.p;
-    }
-
-    @Override // defpackage.yv5
-    public final String o() {
-        return "textPath";
+    public kw5(long j, j52 j52Var, u75 u75Var) {
+        this.a = j52Var;
+        this.b = new bm1(j, j52Var, u75Var);
     }
 }

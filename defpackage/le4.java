@@ -1,32 +1,28 @@
 package defpackage;
 
-import android.app.PendingIntent;
-import android.os.Bundle;
-import androidx.core.graphics.drawable.IconCompat;
+import java.util.Iterator;
+import su.happ.proxyutility.feature.main.MainViewModel;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class le4 {
-    public final Bundle a;
-    public IconCompat b;
-    public final jh5[] c;
-    public final boolean d;
-    public final boolean e;
-    public final int f;
-    public final CharSequence g;
-    public final PendingIntent h;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class le4 extends d31 {
+    public ty5 c0;
+    public ry5 d0;
+    public Iterator e0;
+    public /* synthetic */ Object f0;
+    public final /* synthetic */ MainViewModel g0;
+    public int h0;
 
-    public le4(IconCompat iconCompat, CharSequence charSequence, PendingIntent pendingIntent, Bundle bundle, jh5[] jh5VarArr, boolean z, boolean z2) {
-        this.e = true;
-        this.b = iconCompat;
-        if (iconCompat != null && iconCompat.e() == 2) {
-            this.f = iconCompat.d();
-        }
-        this.g = re4.c(charSequence);
-        this.h = pendingIntent;
-        this.a = bundle == null ? new Bundle() : bundle;
-        this.c = jh5VarArr;
-        this.d = z;
-        this.e = z2;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public le4(MainViewModel mainViewModel, d31 d31Var) {
+        super(d31Var);
+        this.g0 = mainViewModel;
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.f0 = obj;
+        this.h0 |= Integer.MIN_VALUE;
+        return MainViewModel.h(this.g0, this);
     }
 }

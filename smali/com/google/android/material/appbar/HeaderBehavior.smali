@@ -1,6 +1,6 @@
 .class abstract Lcom/google/android/material/appbar/HeaderBehavior;
 .super Lcom/google/android/material/appbar/ViewOffsetBehavior;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -190,10 +190,10 @@
 
     .line 62
     .line 63
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 64
-    return p1
+    return p0
 
     .line 65
     :cond_3
@@ -209,15 +209,15 @@
 
     .line 70
     .line 71
-    iget-object p1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->f:Landroid/view/VelocityTracker;
+    iget-object p0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->f:Landroid/view/VelocityTracker;
 
     .line 72
     .line 73
-    if-eqz p1, :cond_4
+    if-eqz p0, :cond_4
 
     .line 74
     .line 75
-    invoke-virtual {p1, p3}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
+    invoke-virtual {p0, p3}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
     .line 76
     .line 77
@@ -242,7 +242,7 @@
     .line 85
     .line 86
     .line 87
-    invoke-static {}, Lio/sentry/x1;->l()V
+    invoke-static {}, Lio/sentry/z1;->l()V
 
     .line 88
     .line 89
@@ -312,14 +312,14 @@
 
     .line 25
     .line 26
-    const/4 p1, 0x1
+    move p1, v2
 
     .line 27
     goto :goto_0
 
     .line 28
     :cond_1
-    const/4 p1, 0x0
+    move p1, v1
 
     .line 29
     :goto_0
@@ -401,7 +401,7 @@
     .line 63
     .line 64
     .line 65
-    invoke-static {}, Lio/sentry/x1;->l()V
+    invoke-static {}, Lio/sentry/z1;->l()V
 
     .line 66
     .line 67
@@ -463,11 +463,11 @@
     .line 93
     .line 94
     :cond_7
-    iget-boolean p1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->b:Z
+    iget-boolean p0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->b:Z
 
     .line 95
     .line 96
-    if-nez p1, :cond_8
+    if-nez p0, :cond_8
 
     .line 97
     .line 98
@@ -502,11 +502,11 @@
 
     .line 111
     .line 112
-    iget p3, p0, Lcom/google/android/material/appbar/HeaderBehavior;->c:I
+    iget p0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->c:I
 
     .line 113
     .line 114
-    invoke-virtual {p1, p3}, Landroid/view/VelocityTracker;->getYVelocity(I)F
+    invoke-virtual {p1, p0}, Landroid/view/VelocityTracker;->getYVelocity(I)F
 
     .line 115
     .line 116
@@ -516,7 +516,7 @@
     .line 118
     .line 119
     .line 120
-    invoke-static {}, Lio/sentry/x1;->l()V
+    invoke-static {}, Lio/sentry/z1;->l()V
 
     .line 121
     .line 122

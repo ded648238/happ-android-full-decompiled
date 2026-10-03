@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/TrustManagerFactoryImpl;
 .super Ljavax/net/ssl/TrustManagerFactorySpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -23,7 +23,7 @@
 
 # virtual methods
 .method public engineGetTrustManagers()[Ljavax/net/ssl/TrustManager;
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/TrustManagerFactoryImpl;->keyStore:Ljava/security/KeyStore;
@@ -38,46 +38,46 @@
 
     .line 6
     .line 7
-    iget-object v1, p0, Lorg/conscrypt/TrustManagerFactoryImpl;->keyStore:Ljava/security/KeyStore;
+    iget-object p0, p0, Lorg/conscrypt/TrustManagerFactoryImpl;->keyStore:Ljava/security/KeyStore;
 
     .line 8
     .line 9
-    invoke-direct {v0, v1}, Lorg/conscrypt/TrustManagerImpl;-><init>(Ljava/security/KeyStore;)V
+    invoke-direct {v0, p0}, Lorg/conscrypt/TrustManagerImpl;-><init>(Ljava/security/KeyStore;)V
 
     .line 10
     .line 11
     .line 12
-    const/4 v1, 0x1
+    const/4 p0, 0x1
 
     .line 13
-    new-array v1, v1, [Ljavax/net/ssl/TrustManager;
+    new-array p0, p0, [Ljavax/net/ssl/TrustManager;
 
     .line 14
     .line 15
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 16
-    aput-object v0, v1, v2
+    aput-object v0, p0, v1
 
     .line 17
     .line 18
-    return-object v1
+    return-object p0
 
     .line 19
     :cond_0
-    const-string v0, "TrustManagerFactory is not initialized"
+    const-string p0, "TrustManagerFactory is not initialized"
 
     .line 20
     .line 21
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 22
     .line 23
     .line 24
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 25
-    return-object v0
+    return-object p0
 .end method
 
 .method public engineInit(Ljava/security/KeyStore;)V
@@ -117,7 +117,7 @@
 .end method
 
 .method public engineInit(Ljavax/net/ssl/ManagerFactoryParameters;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidAlgorithmParameterException;
@@ -125,11 +125,11 @@
     .end annotation
 
     .line 13
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
-    const-string v0, "ManagerFactoryParameters not supported"
+    const-string p1, "ManagerFactoryParameters not supported"
 
-    invoke-direct {p1, v0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
-    throw p1
+    throw p0
 .end method

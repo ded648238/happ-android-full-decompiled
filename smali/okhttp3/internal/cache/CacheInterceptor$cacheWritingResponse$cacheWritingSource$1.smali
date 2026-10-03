@@ -1,9 +1,9 @@
 .class public final Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lle6;
+.implements Ld27;
 
 
 # annotations
@@ -22,17 +22,17 @@
     }
     d2 = {
         "okhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1",
-        "Lle6;",
-        "Lf50;",
+        "Ld27;",
+        "Ll70;",
         "sink",
         "",
         "byteCount",
         "read",
-        "(Lf50;J)J",
-        "Lo47;",
+        "(Ll70;J)J",
+        "Lax7;",
         "timeout",
-        "()Lo47;",
-        "Lbh7;",
+        "()Lax7;",
+        "Lr98;",
         "close",
         "()V",
         "",
@@ -51,21 +51,21 @@
 
 
 # instance fields
-.field final synthetic $cacheBody:Lr50;
+.field final synthetic $cacheBody:Le80;
 
 .field final synthetic $cacheRequest:Lokhttp3/internal/cache/CacheRequest;
 
-.field final synthetic $source:Ls50;
+.field final synthetic $source:Lf80;
 
 .field private cacheRequestClosed:Z
 
 
 # direct methods
-.method public constructor <init>(Ls50;Lokhttp3/internal/cache/CacheRequest;Lr50;)V
+.method public constructor <init>(Lf80;Lokhttp3/internal/cache/CacheRequest;Le80;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$source:Ls50;
+    iput-object p1, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$source:Lf80;
 
     .line 2
     .line 3
@@ -73,7 +73,7 @@
 
     .line 4
     .line 5
-    iput-object p3, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheBody:Lr50;
+    iput-object p3, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheBody:Le80;
 
     .line 6
     .line 7
@@ -112,7 +112,7 @@
 
     .line 8
     .line 9
-    invoke-static {p0, v0, v1}, Lokhttp3/internal/Util;->discard(Lle6;ILjava/util/concurrent/TimeUnit;)Z
+    invoke-static {p0, v0, v1}, Lokhttp3/internal/Util;->discard(Ld27;ILjava/util/concurrent/TimeUnit;)Z
 
     .line 10
     .line 11
@@ -141,11 +141,11 @@
     .line 22
     .line 23
     :cond_0
-    iget-object v0, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$source:Lf80;
 
     .line 24
     .line 25
-    invoke-interface {v0}, Ljava/io/Closeable;->close()V
+    invoke-interface {p0}, Ljava/io/Closeable;->close()V
 
     .line 26
     .line 27
@@ -153,7 +153,7 @@
     return-void
 .end method
 
-.method public read(Lf50;J)J
+.method public read(Ll70;J)J
     .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -171,11 +171,11 @@
 
     .line 5
     :try_start_0
-    iget-object v0, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$source:Ls50;
+    iget-object v0, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$source:Lf80;
 
     .line 6
     .line 7
-    invoke-interface {v0, p1, p2, p3}, Lle6;->read(Lf50;J)J
+    invoke-interface {v0, p1, p2, p3}, Ld27;->read(Ll70;J)J
 
     .line 8
     .line 9
@@ -209,11 +209,11 @@
 
     .line 22
     .line 23
-    iget-object p1, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheBody:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheBody:Le80;
 
     .line 24
     .line 25
-    invoke-interface {p1}, Lpb6;->close()V
+    invoke-interface {p0}, Lqy6;->close()V
 
     .line 26
     .line 27
@@ -223,11 +223,11 @@
 
     .line 29
     :cond_1
-    iget-object p2, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheBody:Lr50;
+    iget-object p2, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheBody:Le80;
 
     .line 30
     .line 31
-    invoke-interface {p2}, Lr50;->g()Lf50;
+    invoke-interface {p2}, Le80;->d()Ll70;
 
     .line 32
     .line 33
@@ -235,7 +235,7 @@
     move-result-object v5
 
     .line 35
-    iget-wide p2, p1, Lf50;->R:J
+    iget-wide p2, p1, Ll70;->Y:J
 
     .line 36
     .line 37
@@ -246,16 +246,16 @@
     move-object v2, p1
 
     .line 40
-    invoke-virtual/range {v2 .. v7}, Lf50;->l(JLf50;J)V
+    invoke-virtual/range {v2 .. v7}, Ll70;->p(JLl70;J)V
 
     .line 41
     .line 42
     .line 43
-    iget-object p1, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheBody:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheBody:Le80;
 
     .line 44
     .line 45
-    invoke-interface {p1}, Lr50;->I()Lr50;
+    invoke-interface {p0}, Le80;->O()Le80;
 
     .line 46
     .line 47
@@ -282,11 +282,11 @@
 
     .line 56
     .line 57
-    iget-object p2, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheRequest:Lokhttp3/internal/cache/CacheRequest;
+    iget-object p0, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$cacheRequest:Lokhttp3/internal/cache/CacheRequest;
 
     .line 58
     .line 59
-    invoke-interface {p2}, Lokhttp3/internal/cache/CacheRequest;->abort()V
+    invoke-interface {p0}, Lokhttp3/internal/cache/CacheRequest;->abort()V
 
     .line 60
     .line 61
@@ -295,21 +295,21 @@
     throw p1
 .end method
 
-.method public timeout()Lo47;
-    .locals 1
+.method public timeout()Lax7;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/cache/CacheInterceptor$cacheWritingResponse$cacheWritingSource$1;->$source:Lf80;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lle6;->timeout()Lo47;
+    invoke-interface {p0}, Ld27;->timeout()Lax7;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method

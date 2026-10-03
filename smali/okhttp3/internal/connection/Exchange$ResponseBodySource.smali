@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/Exchange$ResponseBodySource;
-.super Lp42;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lgf2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -19,19 +19,19 @@
     }
     d2 = {
         "Lokhttp3/internal/connection/Exchange$ResponseBodySource;",
-        "Lp42;",
-        "Lle6;",
+        "Lgf2;",
+        "Ld27;",
         "delegate",
         "",
         "contentLength",
         "<init>",
-        "(Lokhttp3/internal/connection/Exchange;Lle6;J)V",
-        "Lf50;",
+        "(Lokhttp3/internal/connection/Exchange;Ld27;J)V",
+        "Ll70;",
         "sink",
         "byteCount",
         "read",
-        "(Lf50;J)J",
-        "Lbh7;",
+        "(Ll70;J)J",
+        "Lr98;",
         "close",
         "()V",
         "Ljava/io/IOException;",
@@ -73,12 +73,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lokhttp3/internal/connection/Exchange;Lle6;J)V
-    .locals 1
+.method public constructor <init>(Lokhttp3/internal/connection/Exchange;Ld27;J)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lle6;",
+            "Ld27;",
             "J)V"
         }
     .end annotation
@@ -93,7 +93,7 @@
 
     .line 5
     .line 6
-    invoke-direct {p0, p2}, Lp42;-><init>(Lle6;)V
+    invoke-direct {p0, p2}, Lgf2;-><init>(Ld27;)V
 
     .line 7
     .line 8
@@ -113,11 +113,11 @@
 
     .line 15
     .line 16
-    cmp-long v0, p3, p1
+    cmp-long p1, p3, p1
 
     .line 17
     .line 18
-    if-nez v0, :cond_0
+    if-nez p1, :cond_0
 
     .line 19
     .line 20
@@ -164,7 +164,7 @@
     .line 8
     .line 9
     :try_start_0
-    invoke-super {p0}, Lp42;->close()V
+    invoke-super {p0}, Lgf2;->close()V
 
     .line 10
     .line 11
@@ -191,10 +191,10 @@
     .line 19
     .line 20
     .line 21
-    move-result-object v0
+    move-result-object p0
 
     .line 22
-    throw v0
+    throw p0
 .end method
 
 .method public final complete(Ljava/io/IOException;)Ljava/io/IOException;
@@ -298,13 +298,13 @@
     .line 41
     .line 42
     .line 43
-    move-result-object p1
+    move-result-object p0
 
     .line 44
-    return-object p1
+    return-object p0
 .end method
 
-.method public read(Lf50;J)J
+.method public read(Ll70;J)J
     .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -331,7 +331,7 @@
     .line 9
     .line 10
     :try_start_0
-    invoke-virtual {p0}, Lp42;->delegate()Lle6;
+    invoke-virtual {p0}, Lgf2;->delegate()Ld27;
 
     .line 11
     .line 12
@@ -339,7 +339,7 @@
     move-result-object v1
 
     .line 14
-    invoke-interface {v1, p1, p2, p3}, Lle6;->read(Lf50;J)J
+    invoke-interface {v1, p1, p2, p3}, Ld27;->read(Ll70;J)J
 
     .line 15
     .line 16
@@ -403,22 +403,22 @@
     .line 43
     :cond_0
     :goto_0
-    const/4 p3, 0x0
-
-    .line 44
     const-wide/16 v1, -0x1
 
+    .line 44
     .line 45
-    .line 46
-    cmp-long v3, p1, v1
+    cmp-long p3, p1, v1
 
+    .line 46
     .line 47
+    const/4 v3, 0x0
+
     .line 48
-    if-nez v3, :cond_1
+    if-nez p3, :cond_1
 
     .line 49
     .line 50
-    invoke-virtual {p0, p3}, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->complete(Ljava/io/IOException;)Ljava/io/IOException;
+    invoke-virtual {p0, v3}, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->complete(Ljava/io/IOException;)Ljava/io/IOException;
 
     .line 51
     .line 52
@@ -427,30 +427,30 @@
 
     .line 54
     :cond_1
-    iget-wide v3, p0, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->bytesReceived:J
+    iget-wide v4, p0, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->bytesReceived:J
 
     .line 55
     .line 56
-    add-long/2addr v3, p1
+    add-long/2addr v4, p1
 
     .line 57
-    iget-wide v5, p0, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->contentLength:J
+    iget-wide v6, p0, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->contentLength:J
 
     .line 58
     .line 59
-    cmp-long v7, v5, v1
+    cmp-long p3, v6, v1
 
     .line 60
     .line 61
-    if-eqz v7, :cond_3
+    if-eqz p3, :cond_3
 
     .line 62
     .line 63
-    cmp-long v1, v3, v5
+    cmp-long p3, v4, v6
 
     .line 64
     .line 65
-    if-gtz v1, :cond_2
+    if-gtz p3, :cond_2
 
     .line 66
     .line 67
@@ -489,7 +489,7 @@
     .line 83
     .line 84
     .line 85
-    invoke-virtual {p2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 86
     .line 87
@@ -512,19 +512,19 @@
     .line 96
     :cond_3
     :goto_1
-    iput-wide v3, p0, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->bytesReceived:J
+    iput-wide v4, p0, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->bytesReceived:J
 
     .line 97
     .line 98
-    cmp-long v0, v3, v5
+    cmp-long p3, v4, v6
 
     .line 99
     .line 100
-    if-nez v0, :cond_4
+    if-nez p3, :cond_4
 
     .line 101
     .line 102
-    invoke-virtual {p0, p3}, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->complete(Ljava/io/IOException;)Ljava/io/IOException;
+    invoke-virtual {p0, v3}, Lokhttp3/internal/connection/Exchange$ResponseBodySource;->complete(Ljava/io/IOException;)Ljava/io/IOException;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -541,25 +541,25 @@
     .line 107
     .line 108
     .line 109
-    move-result-object p1
+    move-result-object p0
 
     .line 110
-    throw p1
+    throw p0
 
     .line 111
     :cond_5
-    const-string p1, "closed"
+    const-string p0, "closed"
 
     .line 112
     .line 113
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 114
     .line 115
     .line 116
-    const-wide/16 p1, 0x0
+    const-wide/16 p0, 0x0
 
     .line 117
     .line 118
-    return-wide p1
+    return-wide p0
 .end method

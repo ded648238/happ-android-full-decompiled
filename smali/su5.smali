@@ -1,23 +1,34 @@
-.class public final Lsu5;
-.super Lzu5;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lgv5;
+.class public abstract Lsu5;
+.super Ljava/lang/Object;
 
 
-# instance fields
-.field public o:Ljava/lang/Boolean;
+# static fields
+.field public static ViewPager2:[I
+
+.field public static ViewPager2_android_orientation:I
 
 
-# virtual methods
-.method public final o()Ljava/lang/String;
+# direct methods
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 1
-    const-string v0, "clipPath"
+    const v0, 0x10100c4
 
     .line 2
     .line 3
-    return-object v0
+    .line 4
+    filled-new-array {v0}, [I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    sput-object v0, Lsu5;->ViewPager2:[I
+
+    .line 9
+    .line 10
+    return-void
 .end method

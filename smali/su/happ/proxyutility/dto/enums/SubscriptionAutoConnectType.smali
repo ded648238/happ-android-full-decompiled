@@ -1,6 +1,6 @@
 .class public final enum Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -52,7 +52,7 @@
 
 
 # static fields
-.field private static final synthetic $ENTRIES:Lpp1;
+.field private static final synthetic $ENTRIES:Lmy1;
 
 .field private static final synthetic $VALUES:[Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
 
@@ -81,25 +81,25 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 6
 
     .line 1
     new-instance v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
 
     .line 2
     .line 3
-    const-string v1, "lastused"
+    const/4 v1, 0x0
 
     .line 4
+    const-string v2, "lastused"
+
     .line 5
-    const-string v2, "LAST_USED"
-
     .line 6
-    .line 7
-    const/4 v3, 0x0
+    const-string v3, "LAST_USED"
 
+    .line 7
     .line 8
-    invoke-direct {v0, v2, v3, v1}, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v3, v1, v2}, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 9
     .line 10
@@ -112,18 +112,18 @@
 
     .line 14
     .line 15
-    const-string v2, "lowestdelay"
+    const/4 v2, 0x1
 
     .line 16
+    const-string v3, "lowestdelay"
+
     .line 17
+    .line 18
     const-string v4, "LOWEST_DELAY"
 
-    .line 18
     .line 19
-    const/4 v5, 0x1
-
     .line 20
-    invoke-direct {v1, v4, v5, v2}, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v4, v2, v3}, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 21
     .line 22
@@ -136,18 +136,18 @@
 
     .line 26
     .line 27
-    const-string v4, "random"
+    const/4 v3, 0x2
 
     .line 28
+    const-string v4, "random"
+
     .line 29
-    const-string v6, "RANDOM"
-
     .line 30
-    .line 31
-    const/4 v7, 0x2
+    const-string v5, "RANDOM"
 
+    .line 31
     .line 32
-    invoke-direct {v2, v6, v7, v4}, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v2, v5, v3, v4}, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 33
     .line 34
@@ -156,68 +156,57 @@
 
     .line 36
     .line 37
-    const/4 v4, 0x3
+    filled-new-array {v0, v1, v2}, [Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
 
     .line 38
-    new-array v4, v4, [Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
-
     .line 39
     .line 40
-    aput-object v0, v4, v3
+    move-result-object v0
 
     .line 41
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
+
     .line 42
-    aput-object v1, v4, v5
-
     .line 43
+    new-instance v1, Loy1;
+
     .line 44
-    aput-object v2, v4, v7
-
     .line 45
-    .line 46
-    sput-object v4, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
+    invoke-direct {v1, v0}, Loy1;-><init>([Ljava/lang/Enum;)V
 
+    .line 46
     .line 47
     .line 48
-    new-instance v0, Lrp1;
+    sput-object v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->$ENTRIES:Lmy1;
 
     .line 49
     .line 50
-    invoke-direct {v0, v4}, Lrp1;-><init>([Ljava/lang/Enum;)V
+    new-instance v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType$Companion;
 
     .line 51
     .line 52
-    .line 53
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->$ENTRIES:Lpp1;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 53
     .line 54
     .line 55
-    new-instance v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType$Companion;
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->Companion:Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType$Companion;
 
     .line 56
     .line 57
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType$Creator;
 
     .line 58
     .line 59
-    .line 60
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->Companion:Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType$Companion;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 60
     .line 61
     .line 62
-    new-instance v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType$Creator;
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 63
     .line 64
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 65
-    .line 66
-    .line 67
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 68
-    .line 69
     return-void
 .end method
 
@@ -237,11 +226,11 @@
     return-void
 .end method
 
-.method public static c()Lpp1;
+.method public static c()Lmy1;
     .locals 1
 
     .line 1
-    sget-object v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->$ENTRIES:Lpp1;
+    sget-object v0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->$ENTRIES:Lmy1;
 
     .line 2
     .line 3
@@ -297,24 +286,24 @@
 
 # virtual methods
 .method public final d()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->value:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->value:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
@@ -331,10 +320,10 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p2
+    move-result-object p0
 
     .line 8
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 9
     .line 10

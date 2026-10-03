@@ -1,6 +1,6 @@
 .class public final Lokhttp3/CacheControl;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -110,7 +110,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/CacheControl$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/CacheControl$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -261,7 +261,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(ZZIIZZZIIZZZLjava/lang/String;Lj31;)V
+.method public synthetic constructor <init>(ZZIIZZZIIZZZLjava/lang/String;Lib1;)V
     .locals 0
 
     .line 31
@@ -292,265 +292,265 @@
 
 # virtual methods
 .method public final -deprecated_immutable()Z
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->immutable:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->immutable:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_maxAgeSeconds()I
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget v0, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
+    iget p0, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_maxStaleSeconds()I
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget v0, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
+    iget p0, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_minFreshSeconds()I
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget v0, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
+    iget p0, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_mustRevalidate()Z
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->mustRevalidate:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->mustRevalidate:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_noCache()Z
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->noCache:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->noCache:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_noStore()Z
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->noStore:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->noStore:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_noTransform()Z
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->noTransform:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->noTransform:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_onlyIfCached()Z
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->onlyIfCached:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->onlyIfCached:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final -deprecated_sMaxAgeSeconds()I
-    .locals 1
-    .annotation runtime Lk71;
+    .locals 0
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
-    iget v0, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
+    iget p0, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final immutable()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->immutable:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->immutable:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final isPrivate()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->isPrivate:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->isPrivate:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final isPublic()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->isPublic:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->isPublic:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final maxAgeSeconds()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
+    iget p0, p0, Lokhttp3/CacheControl;->maxAgeSeconds:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final maxStaleSeconds()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
+    iget p0, p0, Lokhttp3/CacheControl;->maxStaleSeconds:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final minFreshSeconds()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
+    iget p0, p0, Lokhttp3/CacheControl;->minFreshSeconds:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final mustRevalidate()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->mustRevalidate:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->mustRevalidate:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final noCache()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->noCache:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->noCache:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final noStore()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->noStore:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->noStore:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final noTransform()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->noTransform:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->noTransform:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final onlyIfCached()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/CacheControl;->onlyIfCached:Z
+    iget-boolean p0, p0, Lokhttp3/CacheControl;->onlyIfCached:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final sMaxAgeSeconds()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
+    iget p0, p0, Lokhttp3/CacheControl;->sMaxAgeSeconds:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -865,11 +865,11 @@
 
     .line 158
     .line 159
-    const-string v0, ""
+    const-string p0, ""
 
     .line 160
     .line 161
-    return-object v0
+    return-object p0
 
     .line 162
     :cond_c

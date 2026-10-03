@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/OpenSSLXDHKeyAgreement;
 .super Lorg/conscrypt/OpenSSLBaseDHKeyAgreement;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -42,9 +42,9 @@
 
     invoke-virtual {p0, p1, p2, p3}, Lorg/conscrypt/OpenSSLXDHKeyAgreement;->computeKey([B[B[B)I
 
-    move-result p1
+    move-result p0
 
-    return p1
+    return p0
 .end method
 
 .method public computeKey([B[B[B)I
@@ -61,34 +61,34 @@
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result p0
 
     .line 5
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 6
     .line 7
-    const/16 p1, 0x20
+    const/16 p0, 0x20
 
     .line 8
     .line 9
-    return p1
+    return p0
 
     .line 10
     :cond_0
-    const-string p1, "Error running X25519"
+    const-string p0, "Error running X25519"
 
     .line 11
     .line 12
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return p1
+    return p0
 .end method
 
 .method public bridge synthetic convertPrivateKey(Ljava/security/PrivateKey;)Ljava/lang/Object;
@@ -102,13 +102,13 @@
     .line 19
     invoke-virtual {p0, p1}, Lorg/conscrypt/OpenSSLXDHKeyAgreement;->convertPrivateKey(Ljava/security/PrivateKey;)[B
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public convertPrivateKey(Ljava/security/PrivateKey;)[B
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidKeyException;
@@ -116,11 +116,11 @@
     .end annotation
 
     .line 1
-    instance-of v0, p1, Lorg/conscrypt/OpenSSLX25519PrivateKey;
+    instance-of p0, p1, Lorg/conscrypt/OpenSSLX25519PrivateKey;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
@@ -133,26 +133,26 @@
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
 
     .line 11
-    return-object p1
+    return-object p0
 
     .line 12
     :cond_0
-    const-string p1, "Only OpenSSLX25519PublicKey accepted"
+    const-string p0, "Only OpenSSLX25519PublicKey accepted"
 
     .line 13
     .line 14
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return-object p1
+    return-object p0
 .end method
 
 .method public bridge synthetic convertPublicKey(Ljava/security/PublicKey;)Ljava/lang/Object;
@@ -166,13 +166,13 @@
     .line 19
     invoke-virtual {p0, p1}, Lorg/conscrypt/OpenSSLXDHKeyAgreement;->convertPublicKey(Ljava/security/PublicKey;)[B
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public convertPublicKey(Ljava/security/PublicKey;)[B
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidKeyException;
@@ -180,11 +180,11 @@
     .end annotation
 
     .line 1
-    instance-of v0, p1, Lorg/conscrypt/OpenSSLX25519PublicKey;
+    instance-of p0, p1, Lorg/conscrypt/OpenSSLX25519PublicKey;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
@@ -197,26 +197,26 @@
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
 
     .line 11
-    return-object p1
+    return-object p0
 
     .line 12
     :cond_0
-    const-string p1, "Only OpenSSLX25519PublicKey accepted"
+    const-string p0, "Only OpenSSLX25519PublicKey accepted"
 
     .line 13
     .line 14
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return-object p1
+    return-object p0
 .end method
 
 .method public bridge synthetic getOutputSize(Ljava/lang/Object;)I
@@ -232,17 +232,17 @@
     .line 4
     .line 5
     .line 6
-    move-result p1
+    move-result p0
 
     .line 7
-    return p1
+    return p0
 .end method
 
 .method public getOutputSize([B)I
     .locals 0
 
     .line 8
-    const/16 p1, 0x20
+    const/16 p0, 0x20
 
-    return p1
+    return p0
 .end method

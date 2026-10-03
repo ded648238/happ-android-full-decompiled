@@ -1,71 +1,72 @@
 .class public final Lym1;
-.super Landroid/text/Editable$Factory;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Ljava/lang/Object;
+# instance fields
+.field public synthetic c0:Ljava/lang/Object;
 
-.field public static volatile b:Lym1;
+.field public final synthetic d0:Ldj;
 
-.field public static c:Ljava/lang/Class;
+.field public e0:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ldj;Lb31;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/Object;
+    iput-object p1, p0, Lym1;->d0:Ldj;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lym1;->a:Ljava/lang/Object;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final newEditable(Ljava/lang/CharSequence;)Landroid/text/Editable;
-    .locals 2
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    sget-object v0, Lym1;->c:Ljava/lang/Class;
+    iput-object p1, p0, Lym1;->c0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    iget p1, p0, Lym1;->e0:I
 
     .line 4
     .line 5
-    new-instance v1, Lve6;
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
-    invoke-direct {v1, v0, p1}, Lve6;-><init>(Ljava/lang/Class;Ljava/lang/CharSequence;)V
+    or-int/2addr p1, v0
 
     .line 8
+    iput p1, p0, Lym1;->e0:I
+
     .line 9
     .line 10
-    return-object v1
+    iget-object p1, p0, Lym1;->d0:Ldj;
 
     .line 11
-    :cond_0
-    invoke-super {p0, p1}, Landroid/text/Editable$Factory;->newEditable(Ljava/lang/CharSequence;)Landroid/text/Editable;
-
     .line 12
-    .line 13
-    .line 14
-    move-result-object p1
+    const/4 v0, 0x0
 
+    .line 13
+    invoke-virtual {p1, v0, p0}, Ldj;->k(Ljava/lang/Object;Lb31;)Ljava/lang/Object;
+
+    .line 14
     .line 15
-    return-object p1
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
 .end method

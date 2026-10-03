@@ -1,142 +1,101 @@
 package defpackage;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
+import su.happ.proxyutility.dto.ImportResult;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class if7 implements Collection, r73 {
-    public final short[] Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class if7 extends ll7 implements xi2 {
+    public final /* synthetic */ int d0;
+    public int e0;
+    public /* synthetic */ Object f0;
+    public final /* synthetic */ yi2 g0;
+    public final /* synthetic */ String h0;
 
-    @Override // java.util.Collection
-    public final /* bridge */ /* synthetic */ boolean add(Object obj) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ if7(yi2 yi2Var, String str, b31 b31Var, int i) {
+        super(2, b31Var);
+        this.d0 = i;
+        this.g0 = yi2Var;
+        this.h0 = str;
     }
 
-    @Override // java.util.Collection
-    public final boolean addAll(Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        int i = this.d0;
+        r98 r98Var = r98.a;
+        ImportResult importResult = (ImportResult) obj;
+        b31 b31Var = (b31) obj2;
+        switch (i) {
+        }
+        return ((if7) n(b31Var, importResult)).q(r98Var);
     }
 
-    @Override // java.util.Collection
-    public final void clear() {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    @Override // defpackage.g00
+    public final b31 n(b31 b31Var, Object obj) {
+        int i = this.d0;
+        String str = this.h0;
+        yi2 yi2Var = this.g0;
+        switch (i) {
+            case 0:
+                if7 if7Var = new if7(yi2Var, str, b31Var, 0);
+                if7Var.f0 = obj;
+                return if7Var;
+            default:
+                if7 if7Var2 = new if7(yi2Var, str, b31Var, 1);
+                if7Var2.f0 = obj;
+                return if7Var2;
+        }
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x001b A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:15:0x001d A[RETURN] */
-    @Override // java.util.Collection
-    public final boolean contains(Object obj) {
-        if (!(obj instanceof hf7)) {
-            return false;
-        }
-        short s = ((hf7) obj).Q;
-        short[] sArr = this.Q;
-        int length = sArr.length;
-        int i = 0;
-        while (i < length) {
-            if (s == sArr[i]) {
-                if (i >= 0) {
-                    return true;
-                }
-                return false;
-            }
-            i++;
-        }
-        i = -1;
-        if (i >= 0) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // java.util.Collection
-    public final boolean containsAll(Collection collection) {
-        collection.getClass();
-        Collection collection2 = collection;
-        if (collection2.isEmpty()) {
-            return true;
-        }
-        for (Object obj : collection2) {
-            if (obj instanceof hf7) {
-                short s = ((hf7) obj).Q;
-                short[] sArr = this.Q;
-                int length = sArr.length;
-                int i = 0;
-                while (true) {
-                    if (i >= length) {
-                        i = -1;
-                        break;
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        int i = this.d0;
+        r98 r98Var = r98.a;
+        String str = this.h0;
+        yi2 yi2Var = this.g0;
+        j41 j41Var = j41.X;
+        switch (i) {
+            case 0:
+                ImportResult importResult = (ImportResult) this.f0;
+                int i2 = this.e0;
+                if (i2 == 0) {
+                    q48.f0(obj);
+                    if (yi2Var != null) {
+                        this.f0 = null;
+                        this.e0 = 1;
+                        if (yi2Var.w(str, importResult, this) == j41Var) {
+                            break;
+                        }
                     }
-                    if (s == sArr[i]) {
-                        break;
+                } else if (i2 != 1) {
+                    i60.g("call to 'resume' before 'invoke' with coroutine");
+                    break;
+                } else {
+                    q48.f0(obj);
+                    break;
+                }
+                break;
+            default:
+                ImportResult importResult2 = (ImportResult) this.f0;
+                int i3 = this.e0;
+                if (i3 == 0) {
+                    q48.f0(obj);
+                    if (yi2Var != null) {
+                        this.f0 = null;
+                        this.e0 = 1;
+                        if (yi2Var.w(str, importResult2, this) == j41Var) {
+                            break;
+                        }
                     }
-                    i++;
+                } else if (i3 != 1) {
+                    i60.g("call to 'resume' before 'invoke' with coroutine");
+                    break;
+                } else {
+                    q48.f0(obj);
+                    break;
                 }
-                if (i >= 0) {
-                }
-            }
-            return false;
+                break;
         }
-        return true;
-    }
-
-    @Override // java.util.Collection
-    public final boolean equals(Object obj) {
-        if (obj instanceof if7) {
-            return this.Q.equals(((if7) obj).Q);
-        }
-        return false;
-    }
-
-    @Override // java.util.Collection
-    public final int hashCode() {
-        return Arrays.hashCode(this.Q);
-    }
-
-    @Override // java.util.Collection
-    public final boolean isEmpty() {
-        return this.Q.length == 0;
-    }
-
-    @Override // java.util.Collection, java.lang.Iterable
-    public final Iterator iterator() {
-        return new p1(6, this.Q);
-    }
-
-    @Override // java.util.Collection
-    public final boolean remove(Object obj) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final boolean removeAll(Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final boolean retainAll(Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final int size() {
-        return this.Q.length;
-    }
-
-    @Override // java.util.Collection
-    public final Object[] toArray(Object[] objArr) {
-        objArr.getClass();
-        return tv3.Y(this, objArr);
-    }
-
-    public final String toString() {
-        return "UShortArray(storage=" + Arrays.toString(this.Q) + ')';
-    }
-
-    @Override // java.util.Collection
-    public final Object[] toArray() {
-        return tv3.X(this);
+        return j41Var;
     }
 }

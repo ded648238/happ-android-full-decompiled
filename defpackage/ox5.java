@@ -1,46 +1,41 @@
 package defpackage;
 
-import java.util.Iterator;
+import android.database.Observable;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ox5 extends px5 implements Iterator {
-    public nx5 Q;
-    public boolean R = true;
-    public final /* synthetic */ qx5 S;
-
-    public ox5(qx5 qx5Var) {
-        this.S = qx5Var;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ox5 extends Observable {
+    public final boolean a() {
+        return !((Observable) this).mObservers.isEmpty();
     }
 
-    @Override // defpackage.px5
-    public final void a(nx5 nx5Var) {
-        nx5 nx5Var2 = this.Q;
-        if (nx5Var == nx5Var2) {
-            nx5 nx5Var3 = nx5Var2.T;
-            this.Q = nx5Var3;
-            this.R = nx5Var3 == null;
+    public final void b() {
+        for (int size = ((Observable) this).mObservers.size() - 1; size >= 0; size--) {
+            ((px5) ((Observable) this).mObservers.get(size)).a();
         }
     }
 
-    @Override // java.util.Iterator
-    public final boolean hasNext() {
-        if (this.R) {
-            return this.S.Q != null;
+    public final void c(int i, int i2) {
+        for (int size = ((Observable) this).mObservers.size() - 1; size >= 0; size--) {
+            ((px5) ((Observable) this).mObservers.get(size)).e(i, i2);
         }
-        nx5 nx5Var = this.Q;
-        return (nx5Var == null || nx5Var.S == null) ? false : true;
     }
 
-    @Override // java.util.Iterator
-    public final Object next() {
-        if (this.R) {
-            this.R = false;
-            this.Q = this.S.Q;
-        } else {
-            nx5 nx5Var = this.Q;
-            this.Q = nx5Var != null ? nx5Var.S : null;
+    public final void d(int i, int i2, Object obj) {
+        for (int size = ((Observable) this).mObservers.size() - 1; size >= 0; size--) {
+            ((px5) ((Observable) this).mObservers.get(size)).c(i, i2, obj);
         }
-        return this.Q;
+    }
+
+    public final void e(int i, int i2) {
+        for (int size = ((Observable) this).mObservers.size() - 1; size >= 0; size--) {
+            ((px5) ((Observable) this).mObservers.get(size)).d(i, i2);
+        }
+    }
+
+    public final void f(int i, int i2) {
+        for (int size = ((Observable) this).mObservers.size() - 1; size >= 0; size--) {
+            ((px5) ((Observable) this).mObservers.get(size)).f(i, i2);
+        }
     }
 }

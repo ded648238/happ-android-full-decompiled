@@ -7,101 +7,97 @@ import android.graphics.drawable.Drawable;
 import android.text.InputFilter;
 import android.util.AttributeSet;
 import android.widget.CheckBox;
-import defpackage.d37;
-import defpackage.mo;
-import defpackage.sn;
-import defpackage.t6;
-import defpackage.ub;
-import defpackage.um;
-import defpackage.v47;
-import defpackage.x75;
-import defpackage.y47;
-import defpackage.z47;
+import defpackage.f7;
+import defpackage.gp;
+import defpackage.hv7;
+import defpackage.ix7;
+import defpackage.oo;
+import defpackage.wr5;
+import defpackage.xp;
+import defpackage.yl0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class AppCompatCheckBox extends CheckBox implements y47, z47 {
-    public final um Q;
-    public final t6 R;
-    public final mo S;
-    public sn T;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class AppCompatCheckBox extends CheckBox implements ix7 {
+    public final oo c0;
+    public final f7 d0;
+    public final xp e0;
+    public gp f0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AppCompatCheckBox(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        v47.a(context);
-        d37.a(this, getContext());
-        um umVar = new um(this, 1);
-        this.Q = umVar;
-        umVar.e(attributeSet, i);
-        t6 t6Var = new t6(this);
-        this.R = t6Var;
-        t6Var.y(attributeSet, i);
-        mo moVar = new mo(this);
-        this.S = moVar;
-        moVar.f(attributeSet, i);
+        hv7.a(this, getContext());
+        oo ooVar = new oo(this, 1);
+        this.c0 = ooVar;
+        ooVar.d(attributeSet, i);
+        f7 f7Var = new f7(this);
+        this.d0 = f7Var;
+        f7Var.y(attributeSet, i);
+        xp xpVar = new xp(this);
+        this.e0 = xpVar;
+        xpVar.h(attributeSet, i);
         getEmojiTextViewHelper().b(attributeSet, i);
     }
 
-    private sn getEmojiTextViewHelper() {
-        if (this.T == null) {
-            this.T = new sn(this);
+    private gp getEmojiTextViewHelper() {
+        if (this.f0 == null) {
+            this.f0 = new gp(this);
         }
-        return this.T;
+        return this.f0;
     }
 
     @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
     public void drawableStateChanged() {
         super.drawableStateChanged();
-        t6 t6Var = this.R;
-        if (t6Var != null) {
-            t6Var.b();
+        f7 f7Var = this.d0;
+        if (f7Var != null) {
+            f7Var.b();
         }
-        mo moVar = this.S;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.e0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        t6 t6Var = this.R;
-        if (t6Var != null) {
-            return t6Var.v();
+        f7 f7Var = this.d0;
+        if (f7Var != null) {
+            return f7Var.v();
         }
         return null;
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        t6 t6Var = this.R;
-        if (t6Var != null) {
-            return t6Var.w();
+        f7 f7Var = this.d0;
+        if (f7Var != null) {
+            return f7Var.w();
         }
         return null;
     }
 
-    @Override // defpackage.y47
+    @Override // defpackage.ix7
     public ColorStateList getSupportButtonTintList() {
-        um umVar = this.Q;
-        if (umVar != null) {
-            return (ColorStateList) umVar.b;
+        oo ooVar = this.c0;
+        if (ooVar != null) {
+            return (ColorStateList) ooVar.b;
         }
         return null;
     }
 
     public PorterDuff.Mode getSupportButtonTintMode() {
-        um umVar = this.Q;
-        if (umVar != null) {
-            return (PorterDuff.Mode) umVar.c;
+        oo ooVar = this.c0;
+        if (ooVar != null) {
+            return (PorterDuff.Mode) ooVar.c;
         }
         return null;
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.S.d();
+        return this.e0.f();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.S.e();
+        return this.e0.g();
     }
 
     @Override // android.widget.TextView
@@ -113,31 +109,31 @@ public class AppCompatCheckBox extends CheckBox implements y47, z47 {
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        t6 t6Var = this.R;
-        if (t6Var != null) {
-            t6Var.A();
+        f7 f7Var = this.d0;
+        if (f7Var != null) {
+            f7Var.A();
         }
     }
 
     @Override // android.view.View
     public void setBackgroundResource(int i) {
         super.setBackgroundResource(i);
-        t6 t6Var = this.R;
-        if (t6Var != null) {
-            t6Var.B(i);
+        f7 f7Var = this.d0;
+        if (f7Var != null) {
+            f7Var.B(i);
         }
     }
 
     @Override // android.widget.CompoundButton
     public void setButtonDrawable(Drawable drawable) {
         super.setButtonDrawable(drawable);
-        um umVar = this.Q;
-        if (umVar != null) {
-            if (umVar.f) {
-                umVar.f = false;
+        oo ooVar = this.c0;
+        if (ooVar != null) {
+            if (ooVar.f) {
+                ooVar.f = false;
             } else {
-                umVar.f = true;
-                umVar.b();
+                ooVar.f = true;
+                ooVar.b();
             }
         }
     }
@@ -145,18 +141,18 @@ public class AppCompatCheckBox extends CheckBox implements y47, z47 {
     @Override // android.widget.TextView
     public void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        mo moVar = this.S;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.e0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     @Override // android.widget.TextView
     public void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-        mo moVar = this.S;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.e0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
@@ -170,59 +166,57 @@ public class AppCompatCheckBox extends CheckBox implements y47, z47 {
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        t6 t6Var = this.R;
-        if (t6Var != null) {
-            t6Var.K(colorStateList);
+        f7 f7Var = this.d0;
+        if (f7Var != null) {
+            f7Var.L(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        t6 t6Var = this.R;
-        if (t6Var != null) {
-            t6Var.L(mode);
+        f7 f7Var = this.d0;
+        if (f7Var != null) {
+            f7Var.M(mode);
         }
     }
 
-    @Override // defpackage.y47
+    @Override // defpackage.ix7
     public void setSupportButtonTintList(ColorStateList colorStateList) {
-        um umVar = this.Q;
-        if (umVar != null) {
-            umVar.b = colorStateList;
-            umVar.d = true;
-            umVar.b();
+        oo ooVar = this.c0;
+        if (ooVar != null) {
+            ooVar.b = colorStateList;
+            ooVar.d = true;
+            ooVar.b();
         }
     }
 
-    @Override // defpackage.y47
+    @Override // defpackage.ix7
     public void setSupportButtonTintMode(PorterDuff.Mode mode) {
-        um umVar = this.Q;
-        if (umVar != null) {
-            umVar.c = mode;
-            umVar.e = true;
-            umVar.b();
+        oo ooVar = this.c0;
+        if (ooVar != null) {
+            ooVar.c = mode;
+            ooVar.e = true;
+            ooVar.b();
         }
     }
 
-    @Override // defpackage.z47
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        mo moVar = this.S;
-        moVar.k(colorStateList);
-        moVar.b();
+        xp xpVar = this.e0;
+        xpVar.m(colorStateList);
+        xpVar.b();
     }
 
-    @Override // defpackage.z47
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        mo moVar = this.S;
-        moVar.l(mode);
-        moVar.b();
+        xp xpVar = this.e0;
+        xpVar.n(mode);
+        xpVar.b();
     }
 
     @Override // android.widget.CompoundButton
     public void setButtonDrawable(int i) {
-        setButtonDrawable(ub.y(getContext(), i));
+        setButtonDrawable(yl0.u(getContext(), i));
     }
 
     public AppCompatCheckBox(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, x75.checkboxStyle);
+        this(context, attributeSet, wr5.checkboxStyle);
     }
 }

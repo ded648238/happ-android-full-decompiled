@@ -4,15 +4,16 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.View;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class Guideline extends View {
-    public boolean Q;
+    public boolean c0;
 
     public Guideline(Context context) {
         super(context);
-        this.Q = true;
+        this.c0 = true;
         super.setVisibility(8);
     }
 
@@ -22,12 +23,12 @@ public class Guideline extends View {
     }
 
     public void setFilterRedundantCalls(boolean z) {
-        this.Q = z;
+        this.c0 = z;
     }
 
     public void setGuidelineBegin(int i) {
         ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) getLayoutParams();
-        if (this.Q && layoutParams.a == i) {
+        if (this.c0 && layoutParams.a == i) {
             return;
         }
         layoutParams.a = i;
@@ -36,7 +37,7 @@ public class Guideline extends View {
 
     public void setGuidelineEnd(int i) {
         ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) getLayoutParams();
-        if (this.Q && layoutParams.b == i) {
+        if (this.c0 && layoutParams.b == i) {
             return;
         }
         layoutParams.b = i;
@@ -45,7 +46,7 @@ public class Guideline extends View {
 
     public void setGuidelinePercent(float f) {
         ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) getLayoutParams();
-        if (this.Q && layoutParams.c == f) {
+        if (this.c0 && layoutParams.c == f) {
             return;
         }
         layoutParams.c = f;
@@ -54,7 +55,7 @@ public class Guideline extends View {
 
     public Guideline(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.Q = true;
+        this.c0 = true;
         super.setVisibility(8);
     }
 

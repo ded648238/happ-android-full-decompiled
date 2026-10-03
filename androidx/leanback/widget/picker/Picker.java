@@ -13,87 +13,88 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.leanback.widget.VerticalGridView;
-import defpackage.au4;
-import defpackage.cu4;
-import defpackage.ea0;
-import defpackage.gb5;
-import defpackage.i85;
-import defpackage.q95;
-import defpackage.qn7;
-import defpackage.v85;
-import defpackage.xi4;
-import defpackage.zt4;
+import defpackage.ev5;
+import defpackage.fc5;
+import defpackage.gc5;
+import defpackage.hs5;
+import defpackage.ic5;
+import defpackage.ni8;
+import defpackage.q05;
+import defpackage.qt5;
+import defpackage.us5;
+import defpackage.w31;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import okhttp3.HttpUrl;
 import su.happ.proxyutility.dto.MetaParams;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class Picker extends FrameLayout {
-    public final ViewGroup Q;
-    public final ArrayList R;
-    public ArrayList S;
-    public final float T;
-    public final float U;
-    public final float V;
-    public final int W;
-    public final DecelerateInterpolator a0;
-    public float b0;
-    public float c0;
-    public int d0;
-    public final ArrayList e0;
-    public int f0;
-    public int g0;
-    public final zt4 h0;
+    public final ViewGroup c0;
+    public final ArrayList d0;
+    public ArrayList e0;
+    public final float f0;
+    public final float g0;
+    public final float h0;
+    public final int i0;
+    public final DecelerateInterpolator j0;
+    public float k0;
+    public float l0;
+    public int m0;
+    public final ArrayList n0;
+    public int o0;
+    public int p0;
+    public final fc5 q0;
 
     public Picker(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.R = new ArrayList();
-        this.b0 = 3.0f;
-        this.c0 = 1.0f;
-        this.d0 = 0;
-        this.e0 = new ArrayList();
-        this.h0 = new zt4(this);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, gb5.lbPicker, i, 0);
-        qn7.p(this, context, gb5.lbPicker, attributeSet, typedArrayObtainStyledAttributes, i);
-        this.f0 = typedArrayObtainStyledAttributes.getResourceId(gb5.lbPicker_pickerItemLayout, q95.lb_picker_item);
-        this.g0 = typedArrayObtainStyledAttributes.getResourceId(gb5.lbPicker_pickerItemTextViewId, 0);
-        typedArrayObtainStyledAttributes.recycle();
+        this.d0 = new ArrayList();
+        this.k0 = 3.0f;
+        this.l0 = 1.0f;
+        this.m0 = 0;
+        this.n0 = new ArrayList();
+        this.q0 = new fc5(this);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ev5.lbPicker, i, 0);
+        ni8.l(this, context, ev5.lbPicker, attributeSet, obtainStyledAttributes, i);
+        this.o0 = obtainStyledAttributes.getResourceId(ev5.lbPicker_pickerItemLayout, qt5.lb_picker_item);
+        this.p0 = obtainStyledAttributes.getResourceId(ev5.lbPicker_pickerItemTextViewId, 0);
+        obtainStyledAttributes.recycle();
         setEnabled(true);
         setDescendantFocusability(262144);
-        this.U = 1.0f;
-        this.T = 1.0f;
-        this.V = 0.5f;
-        this.W = MetaParams.MAX_LENGTH_VISIBLE_ANNOUNCE;
-        this.a0 = new DecelerateInterpolator(2.5f);
-        this.Q = (ViewGroup) ((ViewGroup) LayoutInflater.from(getContext()).inflate(q95.lb_picker, (ViewGroup) this, true)).findViewById(v85.picker);
+        this.g0 = 1.0f;
+        this.f0 = 1.0f;
+        this.h0 = 0.5f;
+        this.i0 = MetaParams.MAX_LENGTH_VISIBLE_ANNOUNCE;
+        this.j0 = new DecelerateInterpolator(2.5f);
+        this.c0 = (ViewGroup) ((ViewGroup) LayoutInflater.from(getContext()).inflate(qt5.lb_picker, (ViewGroup) this, true)).findViewById(us5.picker);
     }
 
-    public final void a(int i, cu4 cu4Var) {
-        this.S.set(i, cu4Var);
-        VerticalGridView verticalGridView = (VerticalGridView) this.R.get(i);
-        au4 au4Var = (au4) verticalGridView.getAdapter();
-        if (au4Var != null) {
-            au4Var.a.b();
+    public final void a(int i, ic5 ic5Var) {
+        this.e0.set(i, ic5Var);
+        VerticalGridView verticalGridView = (VerticalGridView) this.d0.get(i);
+        gc5 gc5Var = (gc5) verticalGridView.getAdapter();
+        if (gc5Var != null) {
+            gc5Var.a.b();
         }
-        verticalGridView.setSelectedPosition(cu4Var.a - cu4Var.b);
+        verticalGridView.setSelectedPosition(ic5Var.a - ic5Var.b);
     }
 
     public final void b(int i, View view, boolean z, boolean z2) {
-        boolean z3 = i == this.d0 || !hasFocus();
-        DecelerateInterpolator decelerateInterpolator = this.a0;
+        boolean z3 = i == this.m0 || !hasFocus();
+        DecelerateInterpolator decelerateInterpolator = this.j0;
         if (z) {
             if (z3) {
-                c(view, z2, this.U, decelerateInterpolator);
+                c(view, z2, this.g0, decelerateInterpolator);
                 return;
             } else {
-                c(view, z2, this.T, decelerateInterpolator);
+                c(view, z2, this.f0, decelerateInterpolator);
                 return;
             }
         }
         if (z3) {
-            c(view, z2, this.V, decelerateInterpolator);
+            c(view, z2, this.h0, decelerateInterpolator);
         } else {
             c(view, z2, 0.0f, decelerateInterpolator);
         }
@@ -102,20 +103,20 @@ public abstract class Picker extends FrameLayout {
     public final void c(View view, boolean z, float f, DecelerateInterpolator decelerateInterpolator) {
         view.animate().cancel();
         if (z) {
-            view.animate().alpha(f).setDuration(this.W).setInterpolator(decelerateInterpolator).start();
+            view.animate().alpha(f).setDuration(this.i0).setInterpolator(decelerateInterpolator).start();
         } else {
             view.setAlpha(f);
         }
     }
 
     public final void d(int i) {
-        VerticalGridView verticalGridView = (VerticalGridView) this.R.get(i);
+        VerticalGridView verticalGridView = (VerticalGridView) this.d0.get(i);
         int selectedPosition = verticalGridView.getSelectedPosition();
         int i2 = 0;
         while (i2 < verticalGridView.getAdapter().a()) {
-            View viewD = verticalGridView.getLayoutManager().D(i2);
-            if (viewD != null) {
-                b(i, viewD, selectedPosition == i2, true);
+            View D = verticalGridView.getLayoutManager().D(i2);
+            if (D != null) {
+                b(i, D, selectedPosition == i2, true);
             }
             i2++;
         }
@@ -138,23 +139,23 @@ public abstract class Picker extends FrameLayout {
 
     public final void e() {
         for (int i = 0; i < getColumnsCount(); i++) {
-            f((VerticalGridView) this.R.get(i));
+            f((VerticalGridView) this.d0.get(i));
         }
     }
 
     public final void f(VerticalGridView verticalGridView) {
         ViewGroup.LayoutParams layoutParams = verticalGridView.getLayoutParams();
         float activatedVisibleItemCount = isActivated() ? getActivatedVisibleItemCount() : getVisibleItemCount();
-        layoutParams.height = (int) ea0.m(activatedVisibleItemCount, 1.0f, verticalGridView.getVerticalSpacing(), getPickerItemHeightPixels() * activatedVisibleItemCount);
+        layoutParams.height = (int) w31.d(activatedVisibleItemCount, 1.0f, verticalGridView.getVerticalSpacing(), getPickerItemHeightPixels() * activatedVisibleItemCount);
         verticalGridView.setLayoutParams(layoutParams);
     }
 
     public float getActivatedVisibleItemCount() {
-        return this.b0;
+        return this.k0;
     }
 
     public int getColumnsCount() {
-        ArrayList arrayList = this.S;
+        ArrayList arrayList = this.e0;
         if (arrayList == null) {
             return 0;
         }
@@ -162,28 +163,28 @@ public abstract class Picker extends FrameLayout {
     }
 
     public int getPickerItemHeightPixels() {
-        return getContext().getResources().getDimensionPixelSize(i85.picker_item_height);
+        return getContext().getResources().getDimensionPixelSize(hs5.picker_item_height);
     }
 
     public final int getPickerItemLayoutId() {
-        return this.f0;
+        return this.o0;
     }
 
     public final int getPickerItemTextViewId() {
-        return this.g0;
+        return this.p0;
     }
 
     public int getSelectedColumn() {
-        return this.d0;
+        return this.m0;
     }
 
     @Deprecated
     public final CharSequence getSeparator() {
-        return (CharSequence) this.e0.get(0);
+        return (CharSequence) this.n0.get(0);
     }
 
     public final List<CharSequence> getSeparators() {
-        return this.e0;
+        return this.n0;
     }
 
     public float getVisibleItemCount() {
@@ -196,7 +197,7 @@ public abstract class Picker extends FrameLayout {
         if (selectedColumn < 0) {
             return false;
         }
-        ArrayList arrayList = this.R;
+        ArrayList arrayList = this.d0;
         if (selectedColumn < arrayList.size()) {
             return ((VerticalGridView) arrayList.get(selectedColumn)).requestFocus(i, rect);
         }
@@ -208,7 +209,7 @@ public abstract class Picker extends FrameLayout {
         super.requestChildFocus(view, view2);
         int i = 0;
         while (true) {
-            ArrayList arrayList = this.R;
+            ArrayList arrayList = this.d0;
             if (i >= arrayList.size()) {
                 return;
             }
@@ -227,16 +228,16 @@ public abstract class Picker extends FrameLayout {
             return;
         }
         super.setActivated(z);
-        boolean zHasFocus = hasFocus();
+        boolean hasFocus = hasFocus();
         int selectedColumn = getSelectedColumn();
         setDescendantFocusability(131072);
-        if (!z && zHasFocus && isFocusable()) {
+        if (!z && hasFocus && isFocusable()) {
             requestFocus();
         }
         int i = 0;
         while (true) {
             int columnsCount = getColumnsCount();
-            arrayList = this.R;
+            arrayList = this.d0;
             if (i >= columnsCount) {
                 break;
             }
@@ -244,14 +245,14 @@ public abstract class Picker extends FrameLayout {
             i++;
         }
         e();
-        boolean zIsActivated = isActivated();
+        boolean isActivated = isActivated();
         for (int i2 = 0; i2 < getColumnsCount(); i2++) {
             VerticalGridView verticalGridView = (VerticalGridView) arrayList.get(i2);
             for (int i3 = 0; i3 < verticalGridView.getChildCount(); i3++) {
-                verticalGridView.getChildAt(i3).setFocusable(zIsActivated);
+                verticalGridView.getChildAt(i3).setFocusable(isActivated);
             }
         }
-        if (z && zHasFocus && selectedColumn >= 0) {
+        if (z && hasFocus && selectedColumn >= 0) {
             ((VerticalGridView) arrayList.get(selectedColumn)).requestFocus();
         }
         setDescendantFocusability(262144);
@@ -259,51 +260,50 @@ public abstract class Picker extends FrameLayout {
 
     public void setActivatedVisibleItemCount(float f) {
         if (f <= 0.0f) {
-            xi4.d();
-        } else if (this.b0 != f) {
-            this.b0 = f;
+            q05.f();
+        } else if (this.k0 != f) {
+            this.k0 = f;
             if (isActivated()) {
                 e();
             }
         }
     }
 
-    public void setColumns(List<cu4> list) {
-        ArrayList arrayList = this.e0;
+    public void setColumns(List<ic5> list) {
+        ArrayList arrayList = this.n0;
         if (arrayList.size() == 0) {
             throw new IllegalStateException("Separators size is: " + arrayList.size() + ". At least one separator must be provided");
         }
         if (arrayList.size() == 1) {
             CharSequence charSequence = (CharSequence) arrayList.get(0);
             arrayList.clear();
-            arrayList.add("");
+            arrayList.add(HttpUrl.FRAGMENT_ENCODE_SET);
             for (int i = 0; i < list.size() - 1; i++) {
                 arrayList.add(charSequence);
             }
-            arrayList.add("");
+            arrayList.add(HttpUrl.FRAGMENT_ENCODE_SET);
         } else if (arrayList.size() != list.size() + 1) {
-            xi4.k("Separators size: ", arrayList.size(), " mustequal the size of columns: ", list.size(), " + 1");
-            return;
+            throw new IllegalStateException("Separators size: " + arrayList.size() + " mustequal the size of columns: " + list.size() + " + 1");
         }
-        ArrayList arrayList2 = this.R;
+        ArrayList arrayList2 = this.d0;
         arrayList2.clear();
-        ViewGroup viewGroup = this.Q;
+        ViewGroup viewGroup = this.c0;
         viewGroup.removeAllViews();
         ArrayList arrayList3 = new ArrayList(list);
-        this.S = arrayList3;
-        if (this.d0 > arrayList3.size() - 1) {
-            this.d0 = this.S.size() - 1;
+        this.e0 = arrayList3;
+        if (this.m0 > arrayList3.size() - 1) {
+            this.m0 = this.e0.size() - 1;
         }
-        LayoutInflater layoutInflaterFrom = LayoutInflater.from(getContext());
+        LayoutInflater from = LayoutInflater.from(getContext());
         int columnsCount = getColumnsCount();
         if (!TextUtils.isEmpty((CharSequence) arrayList.get(0))) {
-            TextView textView = (TextView) layoutInflaterFrom.inflate(q95.lb_picker_separator, viewGroup, false);
+            TextView textView = (TextView) from.inflate(qt5.lb_picker_separator, viewGroup, false);
             textView.setText((CharSequence) arrayList.get(0));
             viewGroup.addView(textView);
         }
         int i2 = 0;
         while (i2 < columnsCount) {
-            VerticalGridView verticalGridView = (VerticalGridView) layoutInflaterFrom.inflate(q95.lb_picker_column, viewGroup, false);
+            VerticalGridView verticalGridView = (VerticalGridView) from.inflate(qt5.lb_picker_column, viewGroup, false);
             f(verticalGridView);
             verticalGridView.setWindowAlignment(0);
             verticalGridView.setHasFixedSize(false);
@@ -313,29 +313,29 @@ public abstract class Picker extends FrameLayout {
             viewGroup.addView(verticalGridView);
             int i3 = i2 + 1;
             if (!TextUtils.isEmpty((CharSequence) arrayList.get(i3))) {
-                TextView textView2 = (TextView) layoutInflaterFrom.inflate(q95.lb_picker_separator, viewGroup, false);
+                TextView textView2 = (TextView) from.inflate(qt5.lb_picker_separator, viewGroup, false);
                 textView2.setText((CharSequence) arrayList.get(i3));
                 viewGroup.addView(textView2);
             }
-            verticalGridView.setAdapter(new au4(this, getPickerItemLayoutId(), getPickerItemTextViewId(), i2));
-            verticalGridView.setOnChildViewHolderSelectedListener(this.h0);
+            verticalGridView.setAdapter(new gc5(this, getPickerItemLayoutId(), getPickerItemTextViewId(), i2));
+            verticalGridView.setOnChildViewHolderSelectedListener(this.q0);
             i2 = i3;
         }
     }
 
     public final void setPickerItemLayoutId(int i) {
-        this.f0 = i;
+        this.o0 = i;
     }
 
     public final void setPickerItemTextViewId(int i) {
-        this.g0 = i;
+        this.p0 = i;
     }
 
     public void setSelectedColumn(int i) {
-        int i2 = this.d0;
-        ArrayList arrayList = this.R;
+        int i2 = this.m0;
+        ArrayList arrayList = this.d0;
         if (i2 != i) {
-            this.d0 = i;
+            this.m0 = i;
             for (int i3 = 0; i3 < arrayList.size(); i3++) {
                 d(i3);
             }
@@ -352,16 +352,16 @@ public abstract class Picker extends FrameLayout {
     }
 
     public final void setSeparators(List<CharSequence> list) {
-        ArrayList arrayList = this.e0;
+        ArrayList arrayList = this.n0;
         arrayList.clear();
         arrayList.addAll(list);
     }
 
     public void setVisibleItemCount(float f) {
         if (f <= 0.0f) {
-            xi4.d();
-        } else if (this.c0 != f) {
-            this.c0 = f;
+            q05.f();
+        } else if (this.l0 != f) {
+            this.l0 = f;
             if (isActivated()) {
                 return;
             }

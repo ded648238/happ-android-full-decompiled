@@ -1,115 +1,31 @@
-.class public final Lih0;
+.class public abstract Lih0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lq83;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final a:Lih0;
-
-.field public static final b:Lzz4;
+.field public static final a:Llu;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
-
-    .line 1
-    new-instance v0, Lih0;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lih0;->a:Lih0;
-
-    .line 7
-    .line 8
-    new-instance v0, Lzz4;
-
-    .line 9
-    .line 10
-    const-string v1, "kotlin.Char"
-
-    .line 11
-    .line 12
-    sget-object v2, Lxz4;->Z:Lxz4;
-
-    .line 13
-    .line 14
-    invoke-direct {v0, v1, v2}, Lzz4;-><init>(Ljava/lang/String;Lxz4;)V
-
-    .line 15
-    .line 16
-    .line 17
-    sput-object v0, Lih0;->b:Lzz4;
-
-    .line 18
-    .line 19
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ldl6;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    check-cast p2, Ljava/lang/Character;
-
-    .line 2
-    .line 3
-    invoke-virtual {p2}, Ljava/lang/Character;->charValue()C
-
-    .line 4
-    .line 5
-    .line 6
-    move-result p2
-
-    .line 7
-    invoke-virtual {p1, p2}, Ldl6;->d(C)V
-
-    .line 8
-    .line 9
-    .line 10
-    return-void
-.end method
-
-.method public final b(Lv21;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-interface {p1}, Lv21;->d()C
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    invoke-static {p1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p1
-
-    .line 9
-    return-object p1
-.end method
-
-.method public final d()Ll56;
     .locals 1
 
     .line 1
-    sget-object v0, Lih0;->b:Lzz4;
+    const/4 v0, 0x0
 
     .line 2
+    invoke-static {v0}, Lic4;->g(I)Llu;
+
     .line 3
-    return-object v0
+    .line 4
+    .line 5
+    move-result-object v0
+
+    .line 6
+    sput-object v0, Lih0;->a:Llu;
+
+    .line 7
+    .line 8
+    return-void
 .end method

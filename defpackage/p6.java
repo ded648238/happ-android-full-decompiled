@@ -1,31 +1,14 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class p6 implements Runnable {
-    public final /* synthetic */ int Q;
-    public final /* synthetic */ g72 R;
+import java.util.ArrayList;
 
-    public /* synthetic */ p6(int i, g72 g72Var) {
-        this.Q = i;
-        this.R = g72Var;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class p6 {
+    public final i14 a;
+    public final ArrayList b = new ArrayList();
 
-    @Override // java.lang.Runnable
-    public final void run() {
-        switch (this.Q) {
-            case 0:
-                this.R.invoke();
-                break;
-            case 1:
-                this.R.invoke();
-                break;
-            case 2:
-                this.R.invoke();
-                break;
-            default:
-                this.R.invoke();
-                break;
-        }
+    public p6(i14 i14Var) {
+        this.a = i14Var;
     }
 }

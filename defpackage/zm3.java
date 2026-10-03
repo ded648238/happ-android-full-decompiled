@@ -1,38 +1,32 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class zm3 extends cn3 {
-    public final ez0 a;
+import java.util.ArrayList;
 
-    public zm3(ez0 ez0Var) {
-        this.a = ez0Var;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class zm3 implements nr3 {
+    public static final or3 c = new or3(p06.a.b(zm3.class));
+    public boolean a;
+    public final ArrayList b = new ArrayList();
 
-    @Override // defpackage.cn3
-    public final ez0 a() {
-        return this.a;
+    @Override // defpackage.nr3
+    public final or3 c() {
+        return c;
     }
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (obj == null || zm3.class != obj.getClass()) {
+        if (!zm3.class.equals(obj != null ? obj.getClass() : null)) {
             return false;
         }
-        return this.a.equals(((zm3) obj).a);
+        obj.getClass();
+        zm3 zm3Var = (zm3) obj;
+        return this.a == zm3Var.a && m93.h(this.b, zm3Var.b);
     }
 
     public final int hashCode() {
-        return this.a.hashCode() + (zm3.class.getName().hashCode() * 31);
-    }
-
-    public final String toString() {
-        return "Failure {mOutputData=" + this.a + '}';
-    }
-
-    public zm3() {
-        this(ez0.b);
+        return this.b.hashCode() + (Boolean.hashCode(this.a) * 31);
     }
 }

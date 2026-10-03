@@ -1,19 +1,7 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class lt5 implements pt5 {
-    public static final lt5 a = new lt5();
-
-    public final boolean equals(Object obj) {
-        return this == obj || (obj instanceof lt5);
-    }
-
-    public final int hashCode() {
-        return 1397043263;
-    }
-
-    public final String toString() {
-        return "Dismiss";
-    }
+/* loaded from: classes.dex */
+public abstract class lt5 {
+    public static int is_pooling_container_tag = 2131428134;
+    public static int pooling_container_listener_holder_tag = 2131428428;
 }

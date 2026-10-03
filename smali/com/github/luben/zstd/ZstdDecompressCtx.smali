@@ -1,6 +1,6 @@
 .class public Lcom/github/luben/zstd/ZstdDecompressCtx;
 .super Lcom/github/luben/zstd/AutoCloseBase;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -23,7 +23,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Lcom/github/luben/zstd/AutoCloseBase;-><init>()V
@@ -58,11 +58,11 @@
 
     .line 16
     .line 17
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 18
     .line 19
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
     .line 20
     .line 21
@@ -75,19 +75,19 @@
 
     .line 25
     :cond_0
-    const-string v0, "ZSTD_createDeCompressCtx failed"
+    const-string p0, "ZSTD_createDeCompressCtx failed"
 
     .line 26
     .line 27
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 28
     .line 29
     .line 30
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 31
-    throw v0
+    throw p0
 .end method
 
 .method private static native decompressByteArray0(J[BII[BII)J
@@ -106,7 +106,7 @@
 .end method
 
 .method private ensureOpen()V
-    .locals 5
+    .locals 4
 
     .line 1
     iget-wide v0, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->nativePtr:J
@@ -117,11 +117,11 @@
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    cmp-long p0, v0, v2
 
     .line 6
     .line 7
-    if-eqz v4, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
@@ -129,11 +129,11 @@
 
     .line 10
     :cond_0
-    const-string v0, "Decompression context is closed"
+    const-string p0, "Decompression context is closed"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -249,7 +249,7 @@
     .line 33
     .line 34
     .line 35
-    move-result p1
+    move-result p0
 
     .line 36
     invoke-virtual {v4}, Ljava/nio/Buffer;->limit()I
@@ -257,10 +257,10 @@
     .line 37
     .line 38
     .line 39
-    move-result p2
+    move-result p1
 
     .line 40
-    invoke-virtual {v4, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v4, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     .line 41
     .line 42
@@ -270,18 +270,18 @@
     .line 44
     .line 45
     .line 46
-    move-result p2
+    move-result p1
 
     .line 47
-    add-int/2addr p2, p1
+    add-int/2addr p1, p0
 
     .line 48
-    invoke-virtual {v1, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v1, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     .line 49
     .line 50
     .line 51
-    return p1
+    return p0
 .end method
 
 .method public decompress(Ljava/nio/ByteBuffer;[B)I
@@ -321,18 +321,18 @@
     .line 54
     invoke-virtual/range {v0 .. v6}, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompressByteArrayToDirectByteBuffer(Ljava/nio/ByteBuffer;II[BII)I
 
-    move-result p1
+    move-result p0
 
     .line 55
     invoke-virtual {v1}, Ljava/nio/Buffer;->position()I
 
-    move-result p2
+    move-result p1
 
-    add-int/2addr p2, p1
+    add-int/2addr p1, p0
 
-    invoke-virtual {v1, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v1, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    return p1
+    return p0
 .end method
 
 .method public decompress([BLjava/nio/ByteBuffer;)I
@@ -373,16 +373,16 @@
     .line 59
     invoke-virtual/range {v0 .. v6}, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompressDirectByteBufferToByteArray([BIILjava/nio/ByteBuffer;II)I
 
-    move-result p1
+    move-result p0
 
     .line 60
     invoke-virtual {v4}, Ljava/nio/Buffer;->limit()I
 
-    move-result p2
+    move-result p1
 
-    invoke-virtual {v4, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v4, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    return p1
+    return p0
 .end method
 
 .method public decompress([B[B)I
@@ -405,9 +405,9 @@
 
     invoke-virtual/range {v0 .. v6}, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompressByteArray([BII[BII)I
 
-    move-result p1
+    move-result p0
 
-    return p1
+    return p0
 .end method
 
 .method public decompress(Ljava/nio/ByteBuffer;I)Ljava/nio/ByteBuffer;
@@ -451,9 +451,9 @@
     .line 63
     invoke-virtual {v4}, Ljava/nio/Buffer;->limit()I
 
-    move-result p1
+    move-result p0
 
-    invoke-virtual {v4, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v4, p0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     return-object v1
 .end method
@@ -473,9 +473,9 @@
 
     invoke-virtual {p0, p1, v0, v1, p2}, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompress([BIII)[B
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public decompress([BIII)[B
@@ -506,35 +506,35 @@
     .line 67
     invoke-virtual/range {v0 .. v6}, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompressByteArray([BII[BII)I
 
-    move-result p1
+    move-result p0
 
-    if-eq p1, v3, :cond_0
+    if-eq p0, v3, :cond_0
 
-    const/4 p2, 0x0
+    const/4 p1, 0x0
 
     .line 68
-    invoke-static {v1, p2, p1}, Ljava/util/Arrays;->copyOfRange([BII)[B
+    invoke-static {v1, p1, p0}, Ljava/util/Arrays;->copyOfRange([BII)[B
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 
     :cond_0
     return-object v1
 
     .line 69
     :cond_1
-    new-instance p1, Lcom/github/luben/zstd/ZstdException;
+    new-instance p0, Lcom/github/luben/zstd/ZstdException;
 
     invoke-static {}, Lcom/github/luben/zstd/Zstd;->errGeneric()J
 
-    move-result-wide p2
+    move-result-wide p1
 
-    const-string p4, "Original size should not be negative"
+    const-string p3, "Original size should not be negative"
 
-    invoke-direct {p1, p2, p3, p4}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/github/luben/zstd/ZstdException;-><init>(JLjava/lang/String;)V
 
-    throw p1
+    throw p0
 .end method
 
 .method public decompressByteArray([BII[BII)I
@@ -617,15 +617,15 @@
     .line 34
     .line 35
     .line 36
-    cmp-long p5, p1, p3
+    cmp-long p3, p1, p3
 
     .line 37
     .line 38
-    if-gtz p5, :cond_0
+    if-gtz p3, :cond_0
 
     .line 39
     .line 40
-    long-to-int p2, p1
+    long-to-int p1, p1
 
     .line 41
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
@@ -633,7 +633,7 @@
     .line 42
     .line 43
     .line 44
-    return p2
+    return p1
 
     .line 45
     :cond_0
@@ -793,15 +793,15 @@
     .line 43
     .line 44
     .line 45
-    cmp-long p5, p1, p3
+    cmp-long p3, p1, p3
 
     .line 46
     .line 47
-    if-gtz p5, :cond_0
+    if-gtz p3, :cond_0
 
     .line 48
     .line 49
-    long-to-int p2, p1
+    long-to-int p1, p1
 
     .line 50
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
@@ -809,7 +809,7 @@
     .line 51
     .line 52
     .line 53
-    return p2
+    return p1
 
     .line 54
     :cond_0
@@ -873,19 +873,19 @@
 
     .line 79
     :cond_2
-    const-string p1, "dstBuff must be a direct buffer"
+    const-string p0, "dstBuff must be a direct buffer"
 
     .line 80
     .line 81
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 82
     .line 83
     .line 84
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 85
-    return p1
+    return p0
 .end method
 
 .method public decompressDirectByteBuffer(Ljava/nio/ByteBuffer;IILjava/nio/ByteBuffer;II)I
@@ -1005,15 +1005,15 @@
     .line 53
     .line 54
     .line 55
-    cmp-long p5, p1, p3
+    cmp-long p3, p1, p3
 
     .line 56
     .line 57
-    if-gtz p5, :cond_0
+    if-gtz p3, :cond_0
 
     .line 58
     .line 59
-    long-to-int p2, p1
+    long-to-int p1, p1
 
     .line 60
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
@@ -1021,7 +1021,7 @@
     .line 61
     .line 62
     .line 63
-    return p2
+    return p1
 
     .line 64
     :cond_0
@@ -1085,11 +1085,11 @@
 
     .line 89
     :cond_2
-    const-string p1, "dstBuff must be a direct buffer"
+    const-string p0, "dstBuff must be a direct buffer"
 
     .line 90
     .line 91
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 92
     .line 93
@@ -1098,11 +1098,11 @@
 
     .line 95
     :cond_3
-    const-string p1, "srcBuff must be a direct buffer"
+    const-string p0, "srcBuff must be a direct buffer"
 
     .line 96
     .line 97
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 98
     .line 99
@@ -1189,11 +1189,11 @@
 
     .line 38
     .line 39
-    cmp-long v6, v0, v3
+    cmp-long v0, v0, v3
 
     .line 40
     .line 41
-    if-nez v6, :cond_1
+    if-nez v0, :cond_1
 
     .line 42
     .line 43
@@ -1205,10 +1205,10 @@
     and-long/2addr v0, p1
 
     .line 47
-    long-to-int v1, v0
+    long-to-int v0, v0
 
     .line 48
-    invoke-virtual {v5, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v5, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     .line 49
     .line 50
@@ -1221,10 +1221,10 @@
 
     .line 54
     .line 55
-    long-to-int v1, v0
+    long-to-int v0, v0
 
     .line 56
-    const v0, 0x7fffffff
+    const v1, 0x7fffffff
 
     .line 57
     .line 58
@@ -1250,11 +1250,11 @@
 
     .line 67
     .line 68
-    cmp-long v2, p1, v0
+    cmp-long p1, p1, v0
 
     .line 69
     .line 70
-    if-nez v2, :cond_0
+    if-nez p1, :cond_0
 
     .line 71
     .line 72
@@ -1427,15 +1427,15 @@
     .line 43
     .line 44
     .line 45
-    cmp-long p5, p1, p3
+    cmp-long p3, p1, p3
 
     .line 46
     .line 47
-    if-gtz p5, :cond_0
+    if-gtz p3, :cond_0
 
     .line 48
     .line 49
-    long-to-int p2, p1
+    long-to-int p1, p1
 
     .line 50
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
@@ -1443,7 +1443,7 @@
     .line 51
     .line 52
     .line 53
-    return p2
+    return p1
 
     .line 54
     :cond_0
@@ -1507,19 +1507,19 @@
 
     .line 79
     :cond_2
-    const-string p1, "srcBuff must be a direct buffer"
+    const-string p0, "srcBuff must be a direct buffer"
 
     .line 80
     .line 81
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 82
     .line 83
     .line 84
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 85
-    return p1
+    return p0
 .end method
 
 .method public doClose()V
@@ -1552,6 +1552,27 @@
     .line 13
     .line 14
     :cond_0
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompression_dict:Lcom/github/luben/zstd/ZstdDictDecompress;
+
+    .line 15
+    .line 16
+    if-eqz v0, :cond_1
+
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 19
+    .line 20
+    .line 21
+    const/4 v0, 0x0
+
+    .line 22
+    iput-object v0, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompression_dict:Lcom/github/luben/zstd/ZstdDictDecompress;
+
+    .line 23
+    .line 24
+    :cond_1
     return-void
 .end method
 
@@ -1569,102 +1590,115 @@
     .line 5
     .line 6
     .line 7
-    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->acquireSharedLock()V
+    if-eqz p1, :cond_0
 
     .line 8
     .line 9
+    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->acquireSharedLock()V
+
     .line 10
+    .line 11
+    .line 12
+    :cond_0
     :try_start_0
     iget-wide v0, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->nativePtr:J
 
-    .line 11
-    .line 12
-    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/ZstdDecompressCtx;->loadDDictFast0(JLcom/github/luben/zstd/ZstdDictDecompress;)J
-
     .line 13
     .line 14
+    invoke-static {v0, v1, p1}, Lcom/github/luben/zstd/ZstdDecompressCtx;->loadDDictFast0(JLcom/github/luben/zstd/ZstdDictDecompress;)J
+
     .line 15
+    .line 16
+    .line 17
     move-result-wide v0
 
-    .line 16
+    .line 18
     invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
 
-    .line 17
-    .line 18
     .line 19
+    .line 20
+    .line 21
     move-result v2
 
-    .line 20
-    if-nez v2, :cond_0
-
-    .line 21
     .line 22
+    if-nez v2, :cond_2
+
+    .line 23
+    .line 24
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompression_dict:Lcom/github/luben/zstd/ZstdDictDecompress;
+
+    .line 25
+    .line 26
+    if-eqz v0, :cond_1
+
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 29
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :catchall_0
+    move-exception p1
+
+    .line 33
+    goto :goto_1
+
+    .line 34
+    :cond_1
+    :goto_0
     iput-object p1, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompression_dict:Lcom/github/luben/zstd/ZstdDictDecompress;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 23
-    .line 24
-    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
-
-    .line 25
-    .line 26
-    .line 27
+    .line 35
+    .line 36
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
-    .line 28
-    .line 29
-    .line 30
-    return-object p0
-
-    .line 31
-    :catchall_0
-    move-exception v0
-
-    .line 32
-    goto :goto_0
-
-    .line 33
-    :cond_0
-    :try_start_1
-    new-instance v2, Lcom/github/luben/zstd/ZstdException;
-
-    .line 34
-    .line 35
-    invoke-direct {v2, v0, v1}, Lcom/github/luben/zstd/ZstdException;-><init>(J)V
-
-    .line 36
     .line 37
     .line 38
-    throw v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
     .line 39
-    :goto_0
-    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+    return-object p0
 
     .line 40
+    :cond_2
+    :try_start_1
+    new-instance p1, Lcom/github/luben/zstd/ZstdException;
+
     .line 41
     .line 42
-    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+    invoke-direct {p1, v0, v1}, Lcom/github/luben/zstd/ZstdException;-><init>(J)V
 
     .line 43
     .line 44
     .line 45
-    throw v0
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 46
+    :goto_1
+    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 47
+    .line 48
+    .line 49
+    throw p1
 .end method
 
 .method public loadDict([B)Lcom/github/luben/zstd/ZstdDecompressCtx;
     .locals 2
 
-    .line 46
+    .line 50
     invoke-direct {p0}, Lcom/github/luben/zstd/ZstdDecompressCtx;->ensureOpen()V
 
-    .line 47
+    .line 51
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->acquireSharedLock()V
 
-    .line 48
+    .line 52
     :try_start_0
     iget-wide v0, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->nativePtr:J
 
@@ -1672,32 +1706,44 @@
 
     move-result-wide v0
 
-    .line 49
+    .line 53
     invoke-static {v0, v1}, Lcom/github/luben/zstd/Zstd;->isError(J)Z
 
     move-result p1
 
-    if-nez p1, :cond_0
+    if-nez p1, :cond_1
+
+    .line 54
+    iget-object p1, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompression_dict:Lcom/github/luben/zstd/ZstdDictDecompress;
+
+    if-eqz p1, :cond_0
+
+    .line 55
+    invoke-virtual {p1}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
     const/4 p1, 0x0
 
-    .line 50
+    .line 56
     iput-object p1, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompression_dict:Lcom/github/luben/zstd/ZstdDictDecompress;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 51
-    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
-
-    return-object p0
+    goto :goto_0
 
     :catchall_0
     move-exception p1
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 52
+    .line 57
     :cond_0
+    :goto_0
+    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    return-object p0
+
+    .line 58
+    :cond_1
     :try_start_1
     new-instance p1, Lcom/github/luben/zstd/ZstdException;
 
@@ -1707,11 +1753,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 53
-    :goto_0
+    .line 59
+    :goto_1
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
-    .line 54
+    .line 60
     throw p1
 .end method
 
@@ -1748,47 +1794,76 @@
     .line 15
     .line 16
     move-result v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 17
-    if-nez v2, :cond_0
+    if-nez v2, :cond_1
 
     .line 18
     .line 19
-    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+    iget-object v0, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompression_dict:Lcom/github/luben/zstd/ZstdDictDecompress;
 
     .line 20
     .line 21
-    .line 22
-    return-void
+    if-eqz v0, :cond_0
 
+    .line 22
     .line 23
-    :cond_0
-    :try_start_1
-    new-instance v2, Lcom/github/luben/zstd/ZstdException;
+    invoke-virtual {v0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
     .line 24
     .line 25
+    .line 26
+    const/4 v0, 0x0
+
+    .line 27
+    iput-object v0, p0, Lcom/github/luben/zstd/ZstdDecompressCtx;->decompression_dict:Lcom/github/luben/zstd/ZstdDictDecompress;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :catchall_0
+    move-exception v0
+
+    .line 31
+    goto :goto_1
+
+    .line 32
+    :cond_0
+    :goto_0
+    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
+
+    .line 33
+    .line 34
+    .line 35
+    return-void
+
+    .line 36
+    :cond_1
+    :try_start_1
+    new-instance v2, Lcom/github/luben/zstd/ZstdException;
+
+    .line 37
+    .line 38
     invoke-direct {v2, v0, v1}, Lcom/github/luben/zstd/ZstdException;-><init>(J)V
 
-    .line 26
-    .line 27
-    .line 28
+    .line 39
+    .line 40
+    .line 41
     throw v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 29
-    :catchall_0
-    move-exception v0
-
-    .line 30
+    .line 42
+    :goto_1
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->releaseSharedLock()V
 
-    .line 31
-    .line 32
-    .line 33
+    .line 43
+    .line 44
+    .line 45
     throw v0
 .end method
 

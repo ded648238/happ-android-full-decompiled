@@ -1,114 +1,168 @@
-.class public final Lit2;
-.super Lw90;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lit2;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lxi2;
+
+
+# instance fields
+.field public final synthetic X:Luk;
+
+.field public final synthetic Y:Ldn4;
+
+.field public final synthetic Z:Lpu7;
+
+.field public final synthetic c0:I
+
+.field public final synthetic d0:I
+
+.field public final synthetic e0:I
+
+.field public final synthetic f0:I
+
+.field public final synthetic g0:Z
+
+.field public final synthetic h0:I
+
+.field public final synthetic i0:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/reflect/Method;)V
-    .locals 1
+.method public synthetic constructor <init>(Luk;Ldn4;Lpu7;IIIIZII)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/reflect/Method;->getDeclaringClass()Ljava/lang/Class;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, Lit2;->X:Luk;
 
     .line 5
-    invoke-static {v0}, Lub;->I(Ljava/lang/Object;)Ljava/util/List;
-
     .line 6
+    iput-object p2, p0, Lit2;->Y:Ldn4;
+
     .line 7
     .line 8
-    move-result-object v0
+    iput-object p3, p0, Lit2;->Z:Lpu7;
 
     .line 9
-    invoke-direct {p0, p1, v0}, Lw90;-><init>(Ljava/lang/reflect/Method;Ljava/util/List;)V
-
     .line 10
+    iput p4, p0, Lit2;->c0:I
+
     .line 11
     .line 12
+    iput p5, p0, Lit2;->d0:I
+
+    .line 13
+    .line 14
+    iput p6, p0, Lit2;->e0:I
+
+    .line 15
+    .line 16
+    iput p7, p0, Lit2;->f0:I
+
+    .line 17
+    .line 18
+    iput-boolean p8, p0, Lit2;->g0:Z
+
+    .line 19
+    .line 20
+    iput p9, p0, Lit2;->h0:I
+
+    .line 21
+    .line 22
+    iput p10, p0, Lit2;->i0:I
+
+    .line 23
+    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final d([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
     .line 1
-    array-length v0, p1
+    move-object v8, p1
 
     .line 2
-    invoke-virtual {p0, v0}, Lw90;->e(I)V
+    check-cast v8, Lrk2;
 
     .line 3
     .line 4
-    .line 5
-    const/4 v0, 0x0
+    check-cast p2, Ljava/lang/Integer;
 
+    .line 5
     .line 6
-    aget-object v1, p1, v0
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
     .line 8
-    array-length v2, p1
-
     .line 9
-    const/4 v3, 0x1
+    iget p1, p0, Lit2;->h0:I
 
     .line 10
-    if-gt v2, v3, :cond_0
-
     .line 11
+    or-int/lit8 p1, p1, 0x1
+
     .line 12
-    new-array p1, v0, [Ljava/lang/Object;
-
     .line 13
+    invoke-static {p1}, Lku8;->S(I)I
+
     .line 14
-    goto :goto_0
-
     .line 15
-    :cond_0
-    array-length v0, p1
-
     .line 16
-    invoke-static {p1, v3, v0}, Lor;->h0([Ljava/lang/Object;II)[Ljava/lang/Object;
+    move-result v9
 
     .line 17
+    iget-object v0, p0, Lit2;->X:Luk;
+
     .line 18
     .line 19
-    move-result-object p1
+    iget-object v1, p0, Lit2;->Y:Ldn4;
 
     .line 20
-    :goto_0
-    iget-object v0, p0, Lw90;->c:Ljava/lang/reflect/Member;
-
     .line 21
+    iget-object v2, p0, Lit2;->Z:Lpu7;
+
     .line 22
-    check-cast v0, Ljava/lang/reflect/Method;
-
     .line 23
-    .line 24
-    array-length v2, p1
+    iget v3, p0, Lit2;->c0:I
 
+    .line 24
     .line 25
-    invoke-static {p1, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    iget v4, p0, Lit2;->d0:I
 
     .line 26
     .line 27
-    .line 28
-    move-result-object p1
+    iget v5, p0, Lit2;->e0:I
 
+    .line 28
     .line 29
-    invoke-virtual {v0, v1, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    iget v6, p0, Lit2;->f0:I
 
     .line 30
     .line 31
-    .line 32
-    move-result-object p1
+    iget-boolean v7, p0, Lit2;->g0:Z
 
+    .line 32
     .line 33
-    return-object p1
+    iget v10, p0, Lit2;->i0:I
+
+    .line 34
+    .line 35
+    invoke-static/range {v0 .. v10}, Lku8;->a(Luk;Ldn4;Lpu7;IIIIZLrk2;II)V
+
+    .line 36
+    .line 37
+    .line 38
+    sget-object p0, Lr98;->a:Lr98;
+
+    .line 39
+    .line 40
+    return-object p0
 .end method

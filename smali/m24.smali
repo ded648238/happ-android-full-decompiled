@@ -1,350 +1,317 @@
 .class public final Lm24;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnKeyListener;
-.implements Landroid/content/DialogInterface$OnClickListener;
-.implements Landroid/content/DialogInterface$OnDismissListener;
-.implements Lg34;
+.implements Ljava/util/Iterator;
+.implements Lxn3;
 
 
 # instance fields
-.field public Q:Lqm6;
+.field public final X:Ljava/lang/CharSequence;
 
-.field public R:Lr7;
+.field public Y:I
 
-.field public S:Lkm3;
+.field public Z:I
+
+.field public c0:I
+
+.field public d0:I
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Lm24;->X:Ljava/lang/CharSequence;
+
+    .line 8
+    .line 9
+    return-void
+.end method
 
 
 # virtual methods
-.method public final a(Lk24;Z)V
-    .locals 0
+.method public final hasNext()Z
+    .locals 9
 
     .line 1
-    if-nez p2, :cond_0
+    iget v0, p0, Lm24;->Y:I
 
     .line 2
     .line 3
-    iget-object p2, p0, Lm24;->Q:Lqm6;
+    const/4 v1, 0x0
 
     .line 4
+    const/4 v2, 0x1
+
     .line 5
-    if-ne p1, p2, :cond_1
+    if-eqz v0, :cond_1
 
     .line 6
     .line 7
+    if-ne v0, v2, :cond_0
+
+    .line 8
+    .line 9
+    return v2
+
+    .line 10
     :cond_0
-    iget-object p1, p0, Lm24;->R:Lr7;
+    return v1
 
-    .line 8
-    .line 9
-    if-eqz p1, :cond_1
-
-    .line 10
     .line 11
-    invoke-virtual {p1}, Lon;->dismiss()V
-
-    .line 12
-    .line 13
-    .line 14
     :cond_1
-    return-void
-.end method
-
-.method public final k0(Lk24;)Z
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return p1
-.end method
-
-.method public final onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
-
-    .line 1
-    iget-object p1, p0, Lm24;->Q:Lqm6;
-
-    .line 2
-    .line 3
-    iget-object v0, p0, Lm24;->S:Lkm3;
-
-    .line 4
-    .line 5
-    iget-object v1, v0, Lkm3;->W:Ljm3;
-
-    .line 6
-    .line 7
-    if-nez v1, :cond_0
-
-    .line 8
-    .line 9
-    new-instance v1, Ljm3;
-
-    .line 10
-    .line 11
-    invoke-direct {v1, v0}, Ljm3;-><init>(Lkm3;)V
+    iget v0, p0, Lm24;->d0:I
 
     .line 12
     .line 13
+    const/4 v3, 0x2
+
     .line 14
-    iput-object v1, v0, Lkm3;->W:Ljm3;
+    if-gez v0, :cond_2
 
     .line 15
     .line 16
-    :cond_0
-    iget-object v0, v0, Lkm3;->W:Ljm3;
+    iput v3, p0, Lm24;->Y:I
 
     .line 17
     .line 18
-    invoke-virtual {v0, p2}, Ljm3;->b(I)Lp24;
+    return v1
 
     .line 19
+    :cond_2
+    iget-object v0, p0, Lm24;->X:Ljava/lang/CharSequence;
+
     .line 20
     .line 21
-    move-result-object p2
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
     .line 22
-    const/4 v0, 0x0
-
     .line 23
-    const/4 v1, 0x0
-
     .line 24
-    invoke-virtual {p1, p2, v1, v0}, Lk24;->q(Landroid/view/MenuItem;Lh34;I)Z
+    move-result v1
 
     .line 25
+    iget v4, p0, Lm24;->Z:I
+
     .line 26
     .line 27
-    return-void
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v5
+
+    .line 31
+    :goto_0
+    if-ge v4, v5, :cond_5
+
+    .line 32
+    .line 33
+    invoke-interface {v0, v4}, Ljava/lang/CharSequence;->charAt(I)C
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v6
+
+    .line 37
+    const/16 v7, 0xd
+
+    .line 38
+    .line 39
+    const/16 v8, 0xa
+
+    .line 40
+    .line 41
+    if-eq v6, v8, :cond_3
+
+    .line 42
+    .line 43
+    if-eq v6, v7, :cond_3
+
+    .line 44
+    .line 45
+    add-int/lit8 v4, v4, 0x1
+
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_3
+    if-ne v6, v7, :cond_4
+
+    .line 49
+    .line 50
+    add-int/lit8 v1, v4, 0x1
+
+    .line 51
+    .line 52
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v5
+
+    .line 56
+    if-ge v1, v5, :cond_4
+
+    .line 57
+    .line 58
+    invoke-interface {v0, v1}, Ljava/lang/CharSequence;->charAt(I)C
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v0
+
+    .line 62
+    if-ne v0, v8, :cond_4
+
+    .line 63
+    .line 64
+    goto :goto_1
+
+    .line 65
+    :cond_4
+    move v3, v2
+
+    .line 66
+    :goto_1
+    move v1, v4
+
+    .line 67
+    goto :goto_2
+
+    .line 68
+    :cond_5
+    const/4 v3, -0x1
+
+    .line 69
+    :goto_2
+    iput v2, p0, Lm24;->Y:I
+
+    .line 70
+    .line 71
+    iput v3, p0, Lm24;->d0:I
+
+    .line 72
+    .line 73
+    iput v1, p0, Lm24;->c0:I
+
+    .line 74
+    .line 75
+    return v2
 .end method
 
-.method public final onDismiss(Landroid/content/DialogInterface;)V
-    .locals 2
-
-    .line 1
-    iget-object p1, p0, Lm24;->S:Lkm3;
-
-    .line 2
-    .line 3
-    iget-object v0, p0, Lm24;->Q:Lqm6;
-
-    .line 4
-    .line 5
-    const/4 v1, 0x1
-
-    .line 6
-    invoke-virtual {p1, v0, v1}, Lkm3;->a(Lk24;Z)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public final onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+.method public final next()Ljava/lang/Object;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lm24;->Q:Lqm6;
+    invoke-virtual {p0}, Lm24;->hasNext()Z
 
     .line 2
     .line 3
-    const/16 v1, 0x52
-
     .line 4
+    move-result v0
+
     .line 5
-    if-eq p2, v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 6
     .line 7
-    const/4 v1, 0x4
+    const/4 v0, 0x0
 
     .line 8
-    if-ne p2, v1, :cond_2
+    iput v0, p0, Lm24;->Y:I
 
     .line 9
     .line 10
-    :cond_0
-    invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
+    iget v0, p0, Lm24;->c0:I
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    iget v1, p0, Lm24;->Z:I
 
+    .line 13
     .line 14
-    const/4 v2, 0x1
+    iget v2, p0, Lm24;->d0:I
 
     .line 15
-    if-nez v1, :cond_1
-
     .line 16
+    add-int/2addr v2, v0
+
     .line 17
-    invoke-virtual {p3}, Landroid/view/KeyEvent;->getRepeatCount()I
+    iput v2, p0, Lm24;->Z:I
 
     .line 18
     .line 19
-    .line 20
-    move-result v1
+    iget-object p0, p0, Lm24;->X:Ljava/lang/CharSequence;
 
+    .line 20
     .line 21
-    if-nez v1, :cond_1
+    invoke-interface {p0, v1, v0}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 
     .line 22
     .line 23
-    iget-object p1, p0, Lm24;->R:Lr7;
-
     .line 24
+    move-result-object p0
+
     .line 25
-    invoke-virtual {p1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 26
     .line 27
     .line 28
-    move-result-object p1
+    move-result-object p0
 
     .line 29
-    if-eqz p1, :cond_2
+    return-object p0
 
     .line 30
-    .line 31
-    invoke-virtual {p1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+    :cond_0
+    invoke-static {}, Li60;->a()V
 
+    .line 31
     .line 32
     .line 33
+    const/4 p0, 0x0
+
     .line 34
-    move-result-object p1
+    return-object p0
+.end method
 
-    .line 35
-    if-eqz p1, :cond_2
+.method public final remove()V
+    .locals 1
 
-    .line 36
-    .line 37
-    invoke-virtual {p1}, Landroid/view/View;->getKeyDispatcherState()Landroid/view/KeyEvent$DispatcherState;
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    .line 38
-    .line 39
-    .line 40
-    move-result-object p1
+    .line 2
+    .line 3
+    const-string v0, "Operation is not supported for read-only collection"
 
-    .line 41
-    if-eqz p1, :cond_2
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    .line 42
-    .line 43
-    invoke-virtual {p1, p3, p0}, Landroid/view/KeyEvent$DispatcherState;->startTracking(Landroid/view/KeyEvent;Ljava/lang/Object;)V
-
-    .line 44
-    .line 45
-    .line 46
-    return v2
-
-    .line 47
-    :cond_1
-    invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v1
-
-    .line 51
-    if-ne v1, v2, :cond_2
-
-    .line 52
-    .line 53
-    invoke-virtual {p3}, Landroid/view/KeyEvent;->isCanceled()Z
-
-    .line 54
-    .line 55
-    .line 56
-    move-result v1
-
-    .line 57
-    if-nez v1, :cond_2
-
-    .line 58
-    .line 59
-    iget-object v1, p0, Lm24;->R:Lr7;
-
-    .line 60
-    .line 61
-    invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v1
-
-    .line 65
-    if-eqz v1, :cond_2
-
-    .line 66
-    .line 67
-    invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    .line 68
-    .line 69
-    .line 70
-    move-result-object v1
-
-    .line 71
-    if-eqz v1, :cond_2
-
-    .line 72
-    .line 73
-    invoke-virtual {v1}, Landroid/view/View;->getKeyDispatcherState()Landroid/view/KeyEvent$DispatcherState;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object v1
-
-    .line 77
-    if-eqz v1, :cond_2
-
-    .line 78
-    .line 79
-    invoke-virtual {v1, p3}, Landroid/view/KeyEvent$DispatcherState;->isTracking(Landroid/view/KeyEvent;)Z
-
-    .line 80
-    .line 81
-    .line 82
-    move-result v1
-
-    .line 83
-    if-eqz v1, :cond_2
-
-    .line 84
-    .line 85
-    invoke-virtual {v0, v2}, Lk24;->c(Z)V
-
-    .line 86
-    .line 87
-    .line 88
-    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
-
-    .line 89
-    .line 90
-    .line 91
-    return v2
-
-    .line 92
-    :cond_2
-    const/4 p1, 0x0
-
-    .line 93
-    invoke-virtual {v0, p2, p3, p1}, Lk24;->performShortcut(ILandroid/view/KeyEvent;I)Z
-
-    .line 94
-    .line 95
-    .line 96
-    move-result p1
-
-    .line 97
-    return p1
+    .line 6
+    .line 7
+    .line 8
+    throw p0
 .end method

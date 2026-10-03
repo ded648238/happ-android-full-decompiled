@@ -1,27 +1,49 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class z65 extends qg4 implements sg4 {
-    public final y65 R;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
-    public z65(y65 y65Var) {
-        super(y65Var);
-        this.R = y65Var;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class z65 {
+    public final String a;
+    public final c22 b;
+    public final List c;
+    public final List d;
+
+    public z65(yp8 yp8Var) {
+        this.a = yp8Var.b;
+        this.b = yp8Var.c;
+        this.c = yp8Var.d;
+        List list = yp8Var.g;
+        this.d = null;
+        if (list != null) {
+            this.d = new ArrayList(list.size());
+            Iterator it = list.iterator();
+            while (it.hasNext()) {
+                this.d.add(new z65((yp8) it.next()));
+            }
+        }
     }
 
-    @Override // defpackage.sg4
-    public final void b() {
-        this.R.b();
+    public static ArrayList a(kq8 kq8Var, List list) {
+        if (list == null) {
+            return null;
+        }
+        ArrayList arrayList = new ArrayList(list.size());
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            z65 z65Var = (z65) it.next();
+            arrayList.add(new yp8(kq8Var, z65Var.a, z65Var.b, z65Var.c, a(kq8Var, z65Var.d)));
+        }
+        return arrayList;
     }
 
-    @Override // defpackage.sg4
-    public final void onError(Throwable th) {
-        this.R.onError(th);
-    }
-
-    @Override // defpackage.sg4
-    public final void onNext(Object obj) {
-        this.R.onNext(obj);
+    public z65(String str, c22 c22Var, ArrayList arrayList, ArrayList arrayList2) {
+        this.a = str;
+        this.b = c22Var;
+        this.c = arrayList;
+        this.d = arrayList2;
     }
 }

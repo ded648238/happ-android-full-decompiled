@@ -1,6 +1,6 @@
 .class public final Lokhttp3/MultipartBody$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -47,8 +47,8 @@
         "Lokhttp3/MultipartBody;",
         "build",
         "()Lokhttp3/MultipartBody;",
-        "Ly60;",
-        "Ly60;",
+        "Lo90;",
+        "Lo90;",
         "Lokhttp3/MediaType;",
         "",
         "parts",
@@ -66,7 +66,7 @@
 
 
 # instance fields
-.field private final boundary:Ly60;
+.field private final boundary:Lo90;
 
 .field private final parts:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -90,7 +90,7 @@
 
     const/4 v1, 0x1
 
-    invoke-direct {p0, v0, v1, v0}, Lokhttp3/MultipartBody$Builder;-><init>(Ljava/lang/String;ILj31;)V
+    invoke-direct {p0, v0, v1, v0}, Lokhttp3/MultipartBody$Builder;-><init>(Ljava/lang/String;ILib1;)V
 
     return-void
 .end method
@@ -109,11 +109,11 @@
     .line 5
     .line 6
     .line 7
-    sget-object v0, Ly60;->T:Ly60;
+    sget-object v0, Lo90;->c0:Lo90;
 
     .line 8
     .line 9
-    invoke-static {p1}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {p1}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 10
     .line 11
@@ -121,7 +121,7 @@
     move-result-object p1
 
     .line 13
-    iput-object p1, p0, Lokhttp3/MultipartBody$Builder;->boundary:Ly60;
+    iput-object p1, p0, Lokhttp3/MultipartBody$Builder;->boundary:Lo90;
 
     .line 14
     .line 15
@@ -149,7 +149,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;ILj31;)V
+.method public synthetic constructor <init>(Ljava/lang/String;ILib1;)V
     .locals 0
 
     and-int/lit8 p2, p2, 0x1
@@ -288,7 +288,7 @@
 .end method
 
 .method public final build()Lokhttp3/MultipartBody;
-    .locals 4
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lokhttp3/MultipartBody$Builder;->parts:Ljava/util/List;
@@ -311,7 +311,7 @@
 
     .line 10
     .line 11
-    iget-object v1, p0, Lokhttp3/MultipartBody$Builder;->boundary:Ly60;
+    iget-object v1, p0, Lokhttp3/MultipartBody$Builder;->boundary:Lo90;
 
     .line 12
     .line 13
@@ -319,19 +319,19 @@
 
     .line 14
     .line 15
-    iget-object v3, p0, Lokhttp3/MultipartBody$Builder;->parts:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/MultipartBody$Builder;->parts:Ljava/util/List;
 
     .line 16
     .line 17
-    invoke-static {v3}, Lokhttp3/internal/Util;->toImmutableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p0}, Lokhttp3/internal/Util;->toImmutableList(Ljava/util/List;)Ljava/util/List;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v3
+    move-result-object p0
 
     .line 21
-    invoke-direct {v0, v1, v2, v3}, Lokhttp3/MultipartBody;-><init>(Ly60;Lokhttp3/MediaType;Ljava/util/List;)V
+    invoke-direct {v0, v1, v2, p0}, Lokhttp3/MultipartBody;-><init>(Lo90;Lokhttp3/MediaType;Ljava/util/List;)V
 
     .line 22
     .line 23
@@ -340,19 +340,19 @@
 
     .line 25
     :cond_0
-    const-string v0, "Multipart body must have at least one part."
+    const-string p0, "Multipart body must have at least one part."
 
     .line 26
     .line 27
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 28
     .line 29
     .line 30
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 31
-    return-object v0
+    return-object p0
 .end method
 
 .method public final setType(Lokhttp3/MediaType;)Lokhttp3/MultipartBody$Builder;
@@ -376,7 +376,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 11
     .line 12
@@ -396,17 +396,17 @@
 
     .line 19
     :cond_0
-    const-string v0, "multipart != "
+    const-string p0, "multipart != "
 
     .line 20
     .line 21
-    invoke-static {p1, v0}, Lxi4;->i(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lq05;->k(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 22
     .line 23
     .line 24
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 25
-    return-object p1
+    return-object p0
 .end method

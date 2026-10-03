@@ -1,22 +1,31 @@
-.class public abstract Lqj1;
-.super Landroid/view/ViewGroup;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lqj1;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
 
-# virtual methods
-.method public final a(Lme0;Landroid/view/View;J)V
+# instance fields
+.field public final synthetic X:I
+
+.field public final synthetic Y:Landroid/widget/TextView;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroid/widget/TextView;I)V
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lna;->a(Lme0;)Landroid/graphics/Canvas;
+    iput p2, p0, Lqj1;->X:I
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p1
+    iput-object p1, p0, Lqj1;->Y:Landroid/widget/TextView;
 
+    .line 4
     .line 5
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/ViewGroup;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
     .line 7
@@ -24,58 +33,67 @@
     return-void
 .end method
 
-.method public final forceLayout()V
-    .locals 0
 
-    .line 1
-    return-void
-.end method
-
-.method public getChildCount()I
+# virtual methods
+.method public final onGlobalLayout()V
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
+    iget v0, p0, Lqj1;->X:I
 
     .line 2
-    return v0
-.end method
-
-.method public final invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return-object p1
-.end method
-
-.method public final onLayout(ZIIII)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final onMeasure(II)V
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    invoke-virtual {p0, p1, p1}, Landroid/view/View;->setMeasuredDimension(II)V
-
     .line 3
+    iget-object p0, p0, Lqj1;->Y:Landroid/widget/TextView;
+
     .line 4
     .line 5
-    return-void
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public final requestLayout()V
-    .locals 0
+    .line 6
+    .line 7
+    .line 8
+    check-cast p0, Lsu/happ/proxyutility/ui/foundation/component/button/HappTextButton;
 
-    .line 1
+    .line 9
+    .line 10
+    sget v0, Lsu/happ/proxyutility/ui/foundation/component/button/HappTextButton;->h0:I
+
+    .line 11
+    .line 12
+    sget-object v0, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;->l0:Lmm7;
+
+    .line 13
+    .line 14
+    invoke-static {p0}, Llz1;->i(Landroid/widget/TextView;)V
+
+    .line 15
+    .line 16
+    .line 17
     return-void
+
+    .line 18
+    :pswitch_0
+    check-cast p0, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+
+    .line 19
+    .line 20
+    sget-object v0, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;->l0:Lmm7;
+
+    .line 21
+    .line 22
+    invoke-static {p0}, Llz1;->i(Landroid/widget/TextView;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    nop
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

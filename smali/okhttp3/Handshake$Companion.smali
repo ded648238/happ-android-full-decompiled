@@ -1,6 +1,6 @@
 .class public final Lokhttp3/Handshake$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -60,7 +60,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -73,7 +73,7 @@
 .end method
 
 .method private final toImmutableList([Ljava/security/cert/Certificate;)Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -90,34 +90,34 @@
 
     .line 2
     .line 3
-    array-length v0, p1
+    array-length p0, p1
 
     .line 4
-    invoke-static {p1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    invoke-static {p1, p0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     .line 5
     .line 6
     .line 7
-    move-result-object p1
+    move-result-object p0
 
     .line 8
-    invoke-static {p1}, Lokhttp3/internal/Util;->immutableListOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lokhttp3/internal/Util;->immutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
     .line 9
     .line 10
     .line 11
-    move-result-object p1
+    move-result-object p0
 
     .line 12
-    return-object p1
+    return-object p0
 
     .line 13
     :cond_0
-    sget-object p1, Lwn1;->Q:Lwn1;
+    sget-object p0, Lfw1;->X:Lfw1;
 
     .line 14
     .line 15
-    return-object p1
+    return-object p0
 .end method
 
 
@@ -130,7 +130,7 @@
         }
     .end annotation
 
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -144,14 +144,14 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p1
+    move-result-object p0
 
     .line 8
-    return-object p1
+    return-object p0
 .end method
 
 .method public final get(Ljavax/net/ssl/SSLSession;)Lokhttp3/Handshake;
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -294,7 +294,7 @@
 
     .line 64
     :catch_0
-    sget-object v2, Lwn1;->Q:Lwn1;
+    sget-object v2, Lfw1;->X:Lfw1;
 
     .line 65
     .line 66
@@ -316,19 +316,19 @@
     .line 73
     .line 74
     .line 75
-    move-result-object p1
+    move-result-object p0
 
     .line 76
-    new-instance v4, Lokhttp3/Handshake$Companion$handshake$1;
+    new-instance p1, Lokhttp3/Handshake$Companion$handshake$1;
 
     .line 77
     .line 78
-    invoke-direct {v4, v2}, Lokhttp3/Handshake$Companion$handshake$1;-><init>(Ljava/util/List;)V
+    invoke-direct {p1, v2}, Lokhttp3/Handshake$Companion$handshake$1;-><init>(Ljava/util/List;)V
 
     .line 79
     .line 80
     .line 81
-    invoke-direct {v3, v1, v0, p1, v4}, Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lg72;)V
+    invoke-direct {v3, v1, v0, p0, p1}, Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lji2;)V
 
     .line 82
     .line 83
@@ -337,11 +337,11 @@
 
     .line 85
     :cond_1
-    const-string p1, "tlsVersion == NONE"
+    const-string p0, "tlsVersion == NONE"
 
     .line 86
     .line 87
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 88
     .line 89
@@ -350,11 +350,11 @@
 
     .line 91
     :cond_2
-    const-string p1, "tlsVersion == null"
+    const-string p0, "tlsVersion == null"
 
     .line 92
     .line 93
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 94
     .line 95
@@ -363,19 +363,19 @@
 
     .line 97
     :cond_3
-    const-string p1, "cipherSuite == "
+    const-string p0, "cipherSuite == "
 
     .line 98
     .line 99
-    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 100
     .line 101
     .line 102
-    move-result-object p1
+    move-result-object p0
 
     .line 103
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 104
     .line 105
@@ -384,11 +384,11 @@
 
     .line 107
     :cond_4
-    const-string p1, "cipherSuite == null"
+    const-string p0, "cipherSuite == null"
 
     .line 108
     .line 109
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 110
     .line 111
@@ -397,7 +397,7 @@
 .end method
 
 .method public final get(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Ljava/util/List;)Lokhttp3/Handshake;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -426,20 +426,20 @@
     .line 113
     invoke-static {p3}, Lokhttp3/internal/Util;->toImmutableList(Ljava/util/List;)Ljava/util/List;
 
-    move-result-object p3
+    move-result-object p0
 
     .line 114
-    new-instance v0, Lokhttp3/Handshake;
+    new-instance p3, Lokhttp3/Handshake;
 
     invoke-static {p4}, Lokhttp3/internal/Util;->toImmutableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p4
 
-    new-instance v1, Lokhttp3/Handshake$Companion$get$1;
+    new-instance v0, Lokhttp3/Handshake$Companion$get$1;
 
-    invoke-direct {v1, p3}, Lokhttp3/Handshake$Companion$get$1;-><init>(Ljava/util/List;)V
+    invoke-direct {v0, p0}, Lokhttp3/Handshake$Companion$get$1;-><init>(Ljava/util/List;)V
 
-    invoke-direct {v0, p1, p2, p4, v1}, Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lg72;)V
+    invoke-direct {p3, p1, p2, p4, v0}, Lokhttp3/Handshake;-><init>(Lokhttp3/TlsVersion;Lokhttp3/CipherSuite;Ljava/util/List;Lji2;)V
 
-    return-object v0
+    return-object p3
 .end method

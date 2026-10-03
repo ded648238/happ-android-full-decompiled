@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -146,7 +146,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -170,7 +170,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -194,7 +194,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -250,7 +250,7 @@
 
     .line 63
     .line 64
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 65
     .line 66
@@ -274,7 +274,7 @@
 
     .line 74
     .line 75
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 76
     .line 77
@@ -290,7 +290,7 @@
 
     .line 82
     :cond_8
-    iget v1, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->statusCode:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->statusCode:I
 
     .line 83
     .line 84
@@ -298,7 +298,7 @@
 
     .line 85
     .line 86
-    if-eq v1, p1, :cond_9
+    if-eq p0, p1, :cond_9
 
     .line 87
     .line 88
@@ -310,7 +310,7 @@
 .end method
 
 .method public final hashCode()I
-    .locals 5
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->type:Ljava/lang/String;
@@ -329,133 +329,107 @@
 
     .line 8
     .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 10
-    .line 11
     iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->dir:Ljava/lang/String;
 
+    .line 11
     .line 12
-    .line 13
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 13
     .line 14
     .line 15
-    .line 16
     move-result v0
 
-    .line 17
+    .line 16
     iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->url:Ljava/lang/String;
 
+    .line 17
     .line 18
-    .line 19
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     move-result v0
 
-    .line 23
+    .line 22
     iget-boolean v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->rewriteHost:Z
 
+    .line 23
     .line 24
-    .line 25
-    const/16 v3, 0x4d5
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
+    .line 25
     .line 26
     .line 27
-    const/16 v4, 0x4cf
+    move-result v0
 
     .line 28
+    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->insecure:Z
+
     .line 29
-    if-eqz v2, :cond_0
-
     .line 30
-    .line 31
-    const/16 v2, 0x4cf
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
+    .line 31
     .line 32
     .line 33
-    goto :goto_0
+    move-result v0
 
     .line 34
-    :cond_0
-    const/16 v2, 0x4d5
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->content:Ljava/lang/String;
 
     .line 35
     .line 36
-    :goto_0
-    add-int/2addr v0, v2
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
 
     .line 37
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 38
     .line 39
-    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->insecure:Z
+    move-result v0
 
     .line 40
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->headers:Ljava/util/Map;
+
     .line 41
-    if-eqz v2, :cond_1
-
     .line 42
-    .line 43
-    const/16 v3, 0x4cf
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
+    .line 43
     .line 44
     .line 45
-    :cond_1
-    add-int/2addr v0, v3
+    move-result v2
 
     .line 46
-    mul-int/lit8 v0, v0, 0x1f
+    add-int/2addr v2, v0
 
     .line 47
+    mul-int/2addr v2, v1
+
     .line 48
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->content:Ljava/lang/String;
+    iget p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->statusCode:I
 
     .line 49
     .line 50
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
 
     .line 51
     .line 52
     .line 53
-    move-result v0
+    move-result p0
 
     .line 54
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->headers:Ljava/util/Map;
+    add-int/2addr p0, v2
 
     .line 55
-    .line 56
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v2
-
-    .line 60
-    add-int/2addr v2, v0
-
-    .line 61
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 62
-    .line 63
-    iget v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->statusCode:I
-
-    .line 64
-    .line 65
-    add-int/2addr v2, v0
-
-    .line 66
-    return v2
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 11
+    .locals 10
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->type:Ljava/lang/String;
@@ -486,23 +460,23 @@
 
     .line 14
     .line 15
-    iget v7, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->statusCode:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$HysteriaSettingsBean$Masquerade;->statusCode:I
 
     .line 16
     .line 17
-    const-string v8, ", dir="
+    const-string v7, ", dir="
 
     .line 18
     .line 19
-    const-string v9, ", url="
+    const-string v8, ", url="
 
     .line 20
     .line 21
-    const-string v10, "Masquerade(type="
+    const-string v9, "Masquerade(type="
 
     .line 22
     .line 23
-    invoke-static {v10, v0, v8, v1, v9}, Lmi2;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v9, v0, v7, v1, v8}, Lw31;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 24
     .line 25
@@ -580,16 +554,16 @@
     .line 65
     .line 66
     .line 67
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 68
     .line 69
     .line 70
-    const-string v1, ")"
+    const-string p0, ")"
 
     .line 71
     .line 72
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 73
     .line 74
@@ -599,8 +573,8 @@
     .line 76
     .line 77
     .line 78
-    move-result-object v0
+    move-result-object p0
 
     .line 79
-    return-object v0
+    return-object p0
 .end method

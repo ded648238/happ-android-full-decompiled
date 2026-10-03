@@ -1,29 +1,44 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class i47 extends k47 {
-    public volatile transient boolean V;
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.ArrayList;
 
-    @Override // defpackage.k47
-    public final k47 a() {
-        i47 i47Var = (i47) super.a();
-        i47Var.V = false;
-        return i47Var;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class i47 implements Parcelable {
+    public static final Parcelable.Creator<i47> CREATOR = new h47(0);
+    public int X;
+    public int Y;
+    public int Z;
+    public int[] c0;
+    public int d0;
+    public int[] e0;
+    public ArrayList f0;
+    public boolean g0;
+    public boolean h0;
+    public boolean i0;
 
-    @Override // defpackage.k47
-    public final int d(int i, int i2, int i3, int i4, int i5) {
+    @Override // android.os.Parcelable
+    public final int describeContents() {
         return 0;
     }
 
-    @Override // defpackage.k47
-    public final int f() {
-        return 0;
-    }
-
-    @Override // defpackage.k47
-    public final boolean isFrozen() {
-        return this.V;
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(this.X);
+        parcel.writeInt(this.Y);
+        parcel.writeInt(this.Z);
+        if (this.Z > 0) {
+            parcel.writeIntArray(this.c0);
+        }
+        parcel.writeInt(this.d0);
+        if (this.d0 > 0) {
+            parcel.writeIntArray(this.e0);
+        }
+        parcel.writeInt(this.g0 ? 1 : 0);
+        parcel.writeInt(this.h0 ? 1 : 0);
+        parcel.writeInt(this.i0 ? 1 : 0);
+        parcel.writeList(this.f0);
     }
 }

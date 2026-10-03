@@ -1,71 +1,96 @@
 package defpackage;
 
-import android.os.Build;
-import android.os.LocaleList;
-import android.text.style.LocaleSpan;
-import java.util.Locale;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.TimeUnit;
-import javax.net.ssl.SNIHostName;
+import java.io.Serializable;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class j61 {
-    public static /* synthetic */ LocaleList a(Locale[] localeArr) {
-        return new LocaleList(localeArr);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class j61 extends ic4 {
+    public final /* synthetic */ int l0;
+    public final /* synthetic */ Object m0;
+    public final /* synthetic */ Serializable n0;
+
+    public j61(vy5 vy5Var, mi2 mi2Var) {
+        this.l0 = 1;
+        this.n0 = vy5Var;
+        this.m0 = mi2Var;
     }
 
-    public static /* synthetic */ LocaleSpan b(LocaleList localeList) {
-        return new LocaleSpan(localeList);
-    }
-
-    public static /* synthetic */ SNIHostName c(String str) {
-        return new SNIHostName(str);
-    }
-
-    public static /* synthetic */ void d() {
-    }
-
-    public static void e(p61 p61Var) {
-        if ((Build.VERSION.SDK_INT <= 23 || p61Var != ForkJoinPool.commonPool()) && !p61Var.Q.isTerminated()) {
-            p61Var.shutdown();
-            throw null;
+    @Override // defpackage.ic4
+    public final Object M() {
+        int i = this.l0;
+        Object obj = this.n0;
+        switch (i) {
+            case 0:
+                return Boolean.valueOf(((boolean[]) obj)[0]);
+            case 1:
+                return (nb0) ((vy5) obj).X;
+            default:
+                zk3 zk3Var = (zk3) ((vy5) obj).X;
+                return zk3Var == null ? zk3.c0 : zk3Var;
         }
     }
 
-    public static /* synthetic */ void f(de2 de2Var) {
-        if (Build.VERSION.SDK_INT <= 23 || de2Var != ForkJoinPool.commonPool()) {
-            de2Var.shutdown();
-            throw null;
-        }
-    }
-
-    public static /* synthetic */ void g(ExecutorService executorService) {
-        boolean zIsTerminated;
-        if ((Build.VERSION.SDK_INT <= 23 || executorService != ForkJoinPool.commonPool()) && !(zIsTerminated = executorService.isTerminated())) {
-            executorService.shutdown();
-            boolean z = false;
-            while (!zIsTerminated) {
-                try {
-                    zIsTerminated = executorService.awaitTermination(1L, TimeUnit.DAYS);
-                } catch (InterruptedException unused) {
-                    if (!z) {
-                        executorService.shutdownNow();
-                        z = true;
-                    }
+    @Override // defpackage.ic4
+    public void d(Object obj) {
+        switch (this.l0) {
+            case 1:
+                nb0 nb0Var = (nb0) obj;
+                nb0Var.getClass();
+                vy5 vy5Var = (vy5) this.n0;
+                if (vy5Var.X == null && ((Boolean) ((mi2) this.m0).invoke(nb0Var)).booleanValue()) {
+                    vy5Var.X = nb0Var;
+                    break;
                 }
-            }
-            if (z) {
-                Thread.currentThread().interrupt();
-            }
+                break;
         }
     }
 
-    public static /* synthetic */ SNIHostName h(String str) {
-        return new SNIHostName(str);
+    @Override // defpackage.ic4
+    public final boolean m(Object obj) {
+        int i = this.l0;
+        Object obj2 = this.m0;
+        Object obj3 = this.n0;
+        switch (i) {
+            case 0:
+                boolean[] zArr = (boolean[]) obj3;
+                if (((Boolean) ((mi2) obj2).invoke(obj)).booleanValue()) {
+                    zArr[0] = true;
+                }
+                break;
+            case 1:
+                ((nb0) obj).getClass();
+                if (((vy5) obj3).X == null) {
+                    break;
+                }
+                break;
+            default:
+                ln4 ln4Var = (ln4) obj;
+                vy5 vy5Var = (vy5) obj3;
+                ln4Var.getClass();
+                String str = (String) obj2;
+                String str2 = sd3.a;
+                nq0 h = sd3.h(yh1.g(ln4Var).a);
+                String str3 = (h != null ? fl3.b(h) : d01.p(ln4Var, px3.D0)) + '.' + str;
+                if (dl3.b.contains(str3)) {
+                    vy5Var.X = zk3.X;
+                } else if (dl3.d.contains(str3)) {
+                    vy5Var.X = zk3.Y;
+                } else if (dl3.c.contains(str3)) {
+                    vy5Var.X = zk3.Z;
+                } else if (dl3.a.contains(str3)) {
+                    vy5Var.X = zk3.d0;
+                }
+                if (vy5Var.X == null) {
+                    break;
+                }
+                break;
+        }
+        return true;
     }
 
-    public static /* synthetic */ void i() {
+    public /* synthetic */ j61(Object obj, Serializable serializable, int i) {
+        this.l0 = i;
+        this.m0 = obj;
+        this.n0 = serializable;
     }
 }

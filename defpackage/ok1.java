@@ -1,34 +1,63 @@
 package defpackage;
 
-import android.view.View;
-import android.widget.AbsListView;
-import android.widget.AdapterView;
-import java.lang.reflect.Method;
+import android.app.Application;
+import android.os.Bundle;
+import com.google.gson.a;
+import su.happ.proxyutility.dto.SocketServerInfo;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class ok1 {
-    public static final Method a;
-    public static final Method b;
-    public static final Method c;
-    public static final boolean d;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final /* synthetic */ class ok1 implements ji2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ uk1 Y;
 
-    static {
-        try {
-            Class cls = Integer.TYPE;
-            Class cls2 = Float.TYPE;
-            Method declaredMethod = AbsListView.class.getDeclaredMethod("positionSelector", cls, View.class, Boolean.TYPE, cls2, cls2);
-            a = declaredMethod;
-            declaredMethod.setAccessible(true);
-            Method declaredMethod2 = AdapterView.class.getDeclaredMethod("setSelectedPositionInt", cls);
-            b = declaredMethod2;
-            declaredMethod2.setAccessible(true);
-            Method declaredMethod3 = AdapterView.class.getDeclaredMethod("setNextSelectedPositionInt", cls);
-            c = declaredMethod3;
-            declaredMethod3.setAccessible(true);
-            d = true;
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
+    public /* synthetic */ ok1(uk1 uk1Var, int i) {
+        this.X = i;
+        this.Y = uk1Var;
+    }
+
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        int i = this.X;
+        int i2 = 1;
+        b31 b31Var = null;
+        r98 r98Var = r98.a;
+        uk1 uk1Var = this.Y;
+        switch (i) {
+            case 0:
+                Application application = uk1Var.L().getApplication();
+                application.getClass();
+                a aVar = new a();
+                Bundle bundle = uk1Var.e0;
+                String string = bundle != null ? bundle.getString("socket_server_info") : null;
+                if (string == null) {
+                    i60.p("Required value was null.");
+                    break;
+                } else {
+                    Object c = aVar.c(string, new m58(SocketServerInfo.class));
+                    c.getClass();
+                    break;
+                }
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                uk1Var.Q(false, false);
+                break;
+            case 4:
+                m93.L(hc4.B(uk1Var), null, new qk1(uk1Var, b31Var, i2), 3);
+                break;
+            case 5:
+                uk1Var.Q(false, false);
+                break;
+            case 6:
+                uk1Var.Q(false, false);
+                break;
+            default:
+                uk1Var.Q(false, false);
+                break;
         }
+        return r98Var;
     }
 }

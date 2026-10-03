@@ -1,27 +1,33 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class wa3 extends ra3 {
-    public final int a;
+import android.view.View;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import su.happ.proxyutility.ui.foundation.component.HappTextView;
 
-    public wa3(int i) {
-        this.a = i;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class wa3 implements zh8 {
+    public final /* synthetic */ int X;
+    public final ConstraintLayout Y;
+    public final ConstraintLayout Z;
+    public final View c0;
+    public final AppCompatImageView d0;
+    public final HappTextView e0;
+
+    public /* synthetic */ wa3(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, View view, AppCompatImageView appCompatImageView, HappTextView happTextView, int i) {
+        this.X = i;
+        this.Y = constraintLayout;
+        this.Z = constraintLayout2;
+        this.c0 = view;
+        this.d0 = appCompatImageView;
+        this.e0 = happTextView;
     }
 
-    @Override // defpackage.ra3
-    public final Object a() {
-        return new pe7(this.a);
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    @Override // defpackage.zh8
+    public final View getRoot() {
+        switch (this.X) {
         }
-        return (obj instanceof wa3) && this.a == ((wa3) obj).a;
-    }
-
-    public final int hashCode() {
-        return this.a;
+        return this.Y;
     }
 }

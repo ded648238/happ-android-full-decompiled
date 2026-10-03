@@ -1,34 +1,26 @@
 package defpackage;
 
-import android.hardware.camera2.params.OutputConfiguration;
-import j$.util.Objects;
+import su.happ.proxyutility.dto.SubscriptionItem;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class am4 {
-    public final OutputConfiguration a;
-    public String b;
-    public long c = 1;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class am4 extends d31 {
+    public SubscriptionItem c0;
+    public String d0;
+    public /* synthetic */ Object e0;
+    public final /* synthetic */ cm4 f0;
+    public int g0;
 
-    public am4(OutputConfiguration outputConfiguration) {
-        this.a = outputConfiguration;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public am4(cm4 cm4Var, d31 d31Var) {
+        super(d31Var);
+        this.f0 = cm4Var;
     }
 
-    public final boolean equals(Object obj) {
-        if (!(obj instanceof am4)) {
-            return false;
-        }
-        am4 am4Var = (am4) obj;
-        return this.a.equals(am4Var.a) && this.c == am4Var.c && Objects.equals(this.b, am4Var.b);
-    }
-
-    public final int hashCode() {
-        int iHashCode = this.a.hashCode() ^ 31;
-        int i = (iHashCode << 5) - iHashCode;
-        String str = this.b;
-        int iHashCode2 = (str == null ? 0 : str.hashCode()) ^ i;
-        int i2 = (iHashCode2 << 5) - iHashCode2;
-        long j = this.c;
-        return ((int) (j ^ (j >>> 32))) ^ i2;
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.e0 = obj;
+        this.g0 |= Integer.MIN_VALUE;
+        return this.f0.p(null, null, false, null, null, this);
     }
 }

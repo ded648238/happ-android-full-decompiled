@@ -1,28 +1,28 @@
 .class public Landroidx/leanback/transition/FadeAndShortSlide;
 .super Landroid/transition/Visibility;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final T:Landroid/view/animation/DecelerateInterpolator;
+.field public static final c0:Landroid/view/animation/DecelerateInterpolator;
 
-.field public static final U:Lgu1;
+.field public static final d0:Lp32;
 
-.field public static final V:Lgu1;
+.field public static final e0:Lp32;
 
-.field public static final W:Lgu1;
+.field public static final f0:Lp32;
 
-.field public static final X:Lgu1;
+.field public static final g0:Lp32;
 
-.field public static final Y:Lgu1;
+.field public static final h0:Lp32;
 
 
 # instance fields
-.field public final Q:Lwj0;
+.field public final X:Lus7;
 
-.field public R:Landroid/transition/Visibility;
+.field public Y:Landroid/transition/Visibility;
 
-.field public final S:F
+.field public final Z:F
 
 
 # direct methods
@@ -39,87 +39,87 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->T:Landroid/view/animation/DecelerateInterpolator;
+    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->c0:Landroid/view/animation/DecelerateInterpolator;
 
     .line 7
     .line 8
-    new-instance v0, Lgu1;
+    new-instance v0, Lp32;
 
     .line 9
     .line 10
     const/4 v1, 0x0
 
     .line 11
-    invoke-direct {v0, v1}, Lgu1;-><init>(I)V
+    invoke-direct {v0, v1}, Lp32;-><init>(I)V
 
     .line 12
     .line 13
     .line 14
-    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->U:Lgu1;
+    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->d0:Lp32;
 
     .line 15
     .line 16
-    new-instance v0, Lgu1;
+    new-instance v0, Lp32;
 
     .line 17
     .line 18
     const/4 v1, 0x1
 
     .line 19
-    invoke-direct {v0, v1}, Lgu1;-><init>(I)V
+    invoke-direct {v0, v1}, Lp32;-><init>(I)V
 
     .line 20
     .line 21
     .line 22
-    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->V:Lgu1;
+    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->e0:Lp32;
 
     .line 23
     .line 24
-    new-instance v0, Lgu1;
+    new-instance v0, Lp32;
 
     .line 25
     .line 26
     const/4 v1, 0x2
 
     .line 27
-    invoke-direct {v0, v1}, Lgu1;-><init>(I)V
+    invoke-direct {v0, v1}, Lp32;-><init>(I)V
 
     .line 28
     .line 29
     .line 30
-    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->W:Lgu1;
+    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->f0:Lp32;
 
     .line 31
     .line 32
-    new-instance v0, Lgu1;
+    new-instance v0, Lp32;
 
     .line 33
     .line 34
     const/4 v1, 0x3
 
     .line 35
-    invoke-direct {v0, v1}, Lgu1;-><init>(I)V
+    invoke-direct {v0, v1}, Lp32;-><init>(I)V
 
     .line 36
     .line 37
     .line 38
-    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lgu1;
+    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->g0:Lp32;
 
     .line 39
     .line 40
-    new-instance v0, Lgu1;
+    new-instance v0, Lp32;
 
     .line 41
     .line 42
     const/4 v1, 0x4
 
     .line 43
-    invoke-direct {v0, v1}, Lgu1;-><init>(I)V
+    invoke-direct {v0, v1}, Lp32;-><init>(I)V
 
     .line 44
     .line 45
     .line 46
-    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Lgu1;
+    sput-object v0, Landroidx/leanback/transition/FadeAndShortSlide;->h0:Lp32;
 
     .line 47
     .line 48
@@ -144,7 +144,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iput-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 10
     .line 11
@@ -152,20 +152,20 @@
 
     .line 12
     .line 13
-    iput v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->S:F
+    iput v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Z:F
 
     .line 14
     .line 15
-    new-instance v0, Lhu1;
+    new-instance v0, Lq32;
 
     .line 16
     .line 17
-    invoke-direct {v0, p0}, Lhu1;-><init>(Landroidx/leanback/transition/FadeAndShortSlide;)V
+    invoke-direct {v0, p0}, Lq32;-><init>(Landroidx/leanback/transition/FadeAndShortSlide;)V
 
     .line 18
     .line 19
     .line 20
-    sget-object v1, Lgb5;->lbSlide:[I
+    sget-object v1, Lev5;->lbSlide:[I
 
     .line 21
     .line 22
@@ -177,7 +177,7 @@
     move-result-object p1
 
     .line 26
-    sget p2, Lgb5;->lbSlide_lb_slideEdge:I
+    sget p2, Lev5;->lbSlide_lb_slideEdge:I
 
     .line 27
     .line 28
@@ -240,11 +240,11 @@
 
     .line 58
     .line 59
-    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->W:Lgu1;
+    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->f0:Lp32;
 
     .line 60
     .line 61
-    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Q:Lwj0;
+    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lus7;
 
     .line 62
     .line 63
@@ -252,27 +252,27 @@
 
     .line 64
     :cond_0
-    const-string p1, "Invalid slide direction"
+    const-string p0, "Invalid slide direction"
 
     .line 65
     .line 66
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 67
     .line 68
     .line 69
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 70
-    throw p1
+    throw p0
 
     .line 71
     :cond_1
-    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->V:Lgu1;
+    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->e0:Lp32;
 
     .line 72
     .line 73
-    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Q:Lwj0;
+    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lus7;
 
     .line 74
     .line 75
@@ -280,11 +280,11 @@
 
     .line 76
     :cond_2
-    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->U:Lgu1;
+    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->d0:Lp32;
 
     .line 77
     .line 78
-    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Q:Lwj0;
+    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lus7;
 
     .line 79
     .line 80
@@ -292,7 +292,7 @@
 
     .line 81
     :cond_3
-    iput-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Q:Lwj0;
+    iput-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lus7;
 
     .line 82
     .line 83
@@ -300,11 +300,11 @@
 
     .line 84
     :cond_4
-    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lgu1;
+    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->g0:Lp32;
 
     .line 85
     .line 86
-    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Q:Lwj0;
+    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lus7;
 
     .line 87
     .line 88
@@ -312,11 +312,11 @@
 
     .line 89
     :cond_5
-    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Lgu1;
+    sget-object p2, Landroidx/leanback/transition/FadeAndShortSlide;->h0:Lp32;
 
     .line 90
     .line 91
-    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Q:Lwj0;
+    iput-object p2, p0, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lus7;
 
     .line 92
     .line 93
@@ -332,17 +332,17 @@
 
 # virtual methods
 .method public final a(Landroid/view/ViewGroup;)F
-    .locals 2
+    .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    iget v1, p0, Landroidx/leanback/transition/FadeAndShortSlide;->S:F
+    iget p0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Z:F
 
     .line 3
     .line 4
-    cmpl-float v0, v1, v0
+    cmpl-float v0, p0, v0
 
     .line 5
     .line 6
@@ -350,7 +350,7 @@
 
     .line 7
     .line 8
-    return v1
+    return p0
 
     .line 9
     :cond_0
@@ -359,24 +359,24 @@
     .line 10
     .line 11
     .line 12
-    move-result p1
+    move-result p0
 
     .line 13
-    div-int/lit8 p1, p1, 0x4
+    div-int/lit8 p0, p0, 0x4
 
     .line 14
     .line 15
-    int-to-float p1, p1
+    int-to-float p0, p0
 
     .line 16
-    return p1
+    return p0
 .end method
 
 .method public final addListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 2
     .line 3
@@ -385,29 +385,29 @@
     .line 4
     .line 5
     .line 6
-    invoke-super {p0, p1}, Landroid/transition/Visibility;->addListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
+    invoke-super {p0, p1}, Landroid/transition/Transition;->addListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public final b(Landroid/view/ViewGroup;)F
-    .locals 2
+    .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    iget v1, p0, Landroidx/leanback/transition/FadeAndShortSlide;->S:F
+    iget p0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Z:F
 
     .line 3
     .line 4
-    cmpl-float v0, v1, v0
+    cmpl-float v0, p0, v0
 
     .line 5
     .line 6
@@ -415,7 +415,7 @@
 
     .line 7
     .line 8
-    return v1
+    return p0
 
     .line 9
     :cond_0
@@ -424,24 +424,24 @@
     .line 10
     .line 11
     .line 12
-    move-result p1
+    move-result p0
 
     .line 13
-    div-int/lit8 p1, p1, 0x4
+    div-int/lit8 p0, p0, 0x4
 
     .line 14
     .line 15
-    int-to-float p1, p1
+    int-to-float p0, p0
 
     .line 16
-    return p1
+    return p0
 .end method
 
 .method public final captureEndValues(Landroid/transition/TransitionValues;)V
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 2
     .line 3
@@ -455,31 +455,31 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p1, Landroid/transition/TransitionValues;->view:Landroid/view/View;
+    iget-object p0, p1, Landroid/transition/TransitionValues;->view:Landroid/view/View;
 
     .line 10
     .line 11
-    const/4 v1, 0x2
+    const/4 v0, 0x2
 
     .line 12
-    new-array v1, v1, [I
+    new-array v0, v0, [I
 
     .line 13
     .line 14
-    invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 15
     .line 16
     .line 17
-    iget-object p1, p1, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
+    iget-object p0, p1, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
 
     .line 18
     .line 19
-    const-string v0, "android:fadeAndShortSlideTransition:screenPosition"
+    const-string p1, "android:fadeAndShortSlideTransition:screenPosition"
 
     .line 20
     .line 21
-    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -488,10 +488,10 @@
 .end method
 
 .method public final captureStartValues(Landroid/transition/TransitionValues;)V
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 2
     .line 3
@@ -505,31 +505,31 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p1, Landroid/transition/TransitionValues;->view:Landroid/view/View;
+    iget-object p0, p1, Landroid/transition/TransitionValues;->view:Landroid/view/View;
 
     .line 10
     .line 11
-    const/4 v1, 0x2
+    const/4 v0, 0x2
 
     .line 12
-    new-array v1, v1, [I
+    new-array v0, v0, [I
 
     .line 13
     .line 14
-    invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 15
     .line 16
     .line 17
-    iget-object p1, p1, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
+    iget-object p0, p1, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
 
     .line 18
     .line 19
-    const-string v0, "android:fadeAndShortSlideTransition:screenPosition"
+    const-string p1, "android:fadeAndShortSlideTransition:screenPosition"
 
     .line 20
     .line 21
-    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -538,10 +538,10 @@
 .end method
 
 .method public final clone()Landroid/transition/Transition;
-    .locals 2
+    .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/transition/Visibility;->clone()Landroid/transition/Transition;
+    invoke-super {p0}, Landroid/transition/Transition;->clone()Landroid/transition/Transition;
 
     .line 2
     .line 3
@@ -553,23 +553,23 @@
 
     .line 6
     .line 7
-    iget-object v1, p0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iget-object p0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 8
     .line 9
-    invoke-virtual {v1}, Landroid/transition/Transition;->clone()Landroid/transition/Transition;
+    invoke-virtual {p0}, Landroid/transition/Transition;->clone()Landroid/transition/Transition;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v1
+    move-result-object p0
 
     .line 13
-    check-cast v1, Landroid/transition/Visibility;
+    check-cast p0, Landroid/transition/Visibility;
 
     .line 14
     .line 15
-    iput-object v1, v0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iput-object p0, v0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 16
     .line 17
@@ -577,14 +577,14 @@
 .end method
 
 .method public final bridge synthetic clone()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 18
     invoke-virtual {p0}, Landroidx/leanback/transition/FadeAndShortSlide;->clone()Landroid/transition/Transition;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public final onAppear(Landroid/view/ViewGroup;Landroid/view/View;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
@@ -653,7 +653,7 @@
     move-result v6
 
     .line 28
-    iget-object v5, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Q:Lwj0;
+    iget-object v5, p0, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lus7;
 
     .line 29
     .line 30
@@ -663,7 +663,7 @@
     move v3, v4
 
     .line 32
-    invoke-virtual {v5, p0, p1, p2, v2}, Lwj0;->P(Landroidx/leanback/transition/FadeAndShortSlide;Landroid/view/ViewGroup;Landroid/view/View;[I)F
+    invoke-virtual {v5, p0, p1, p2, v2}, Lus7;->J(Landroidx/leanback/transition/FadeAndShortSlide;Landroid/view/ViewGroup;Landroid/view/View;[I)F
 
     .line 33
     .line 34
@@ -682,7 +682,7 @@
     move-result v7
 
     .line 41
-    invoke-virtual {v5, p0, p1, p2, v2}, Lwj0;->Q(Landroidx/leanback/transition/FadeAndShortSlide;Landroid/view/ViewGroup;Landroid/view/View;[I)F
+    invoke-virtual {v5, p0, p1, p2, v2}, Lus7;->K(Landroidx/leanback/transition/FadeAndShortSlide;Landroid/view/ViewGroup;Landroid/view/View;[I)F
 
     .line 42
     .line 43
@@ -693,7 +693,7 @@
     move v2, v8
 
     .line 46
-    sget-object v8, Landroidx/leanback/transition/FadeAndShortSlide;->T:Landroid/view/animation/DecelerateInterpolator;
+    sget-object v8, Landroidx/leanback/transition/FadeAndShortSlide;->c0:Landroid/view/animation/DecelerateInterpolator;
 
     .line 47
     .line 48
@@ -706,7 +706,7 @@
     move-object v1, p4
 
     .line 51
-    invoke-static/range {v0 .. v9}, Lt87;->b(Landroid/view/View;Landroid/transition/TransitionValues;IIFFFFLandroid/animation/TimeInterpolator;Landroidx/leanback/transition/FadeAndShortSlide;)Landroid/animation/ObjectAnimator;
+    invoke-static/range {v0 .. v9}, Lb18;->c(Landroid/view/View;Landroid/transition/TransitionValues;IIFFFFLandroid/animation/TimeInterpolator;Landroidx/leanback/transition/FadeAndShortSlide;)Landroid/animation/ObjectAnimator;
 
     .line 52
     .line 53
@@ -714,7 +714,7 @@
     move-result-object v2
 
     .line 55
-    iget-object v3, p0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iget-object v3, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 56
     .line 57
@@ -839,11 +839,11 @@
     move-result v4
 
     .line 30
-    iget-object v6, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Q:Lwj0;
+    iget-object v6, p0, Landroidx/leanback/transition/FadeAndShortSlide;->X:Lus7;
 
     .line 31
     .line 32
-    invoke-virtual {v6, p0, p1, p2, v2}, Lwj0;->P(Landroidx/leanback/transition/FadeAndShortSlide;Landroid/view/ViewGroup;Landroid/view/View;[I)F
+    invoke-virtual {v6, p0, p1, p2, v2}, Lus7;->J(Landroidx/leanback/transition/FadeAndShortSlide;Landroid/view/ViewGroup;Landroid/view/View;[I)F
 
     .line 33
     .line 34
@@ -862,7 +862,7 @@
     move-result v5
 
     .line 41
-    invoke-virtual {v6, p0, p1, p2, v2}, Lwj0;->Q(Landroidx/leanback/transition/FadeAndShortSlide;Landroid/view/ViewGroup;Landroid/view/View;[I)F
+    invoke-virtual {v6, p0, p1, p2, v2}, Lus7;->K(Landroidx/leanback/transition/FadeAndShortSlide;Landroid/view/ViewGroup;Landroid/view/View;[I)F
 
     .line 42
     .line 43
@@ -879,7 +879,7 @@
     move v2, v8
 
     .line 48
-    sget-object v8, Landroidx/leanback/transition/FadeAndShortSlide;->T:Landroid/view/animation/DecelerateInterpolator;
+    sget-object v8, Landroidx/leanback/transition/FadeAndShortSlide;->c0:Landroid/view/animation/DecelerateInterpolator;
 
     .line 49
     .line 50
@@ -892,7 +892,7 @@
     move-object v1, p3
 
     .line 53
-    invoke-static/range {v0 .. v9}, Lt87;->b(Landroid/view/View;Landroid/transition/TransitionValues;IIFFFFLandroid/animation/TimeInterpolator;Landroidx/leanback/transition/FadeAndShortSlide;)Landroid/animation/ObjectAnimator;
+    invoke-static/range {v0 .. v9}, Lb18;->c(Landroid/view/View;Landroid/transition/TransitionValues;IIFFFFLandroid/animation/TimeInterpolator;Landroidx/leanback/transition/FadeAndShortSlide;)Landroid/animation/ObjectAnimator;
 
     .line 54
     .line 55
@@ -900,7 +900,7 @@
     move-result-object v2
 
     .line 57
-    iget-object v3, p0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iget-object v3, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 58
     .line 59
@@ -957,7 +957,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 2
     .line 3
@@ -966,22 +966,22 @@
     .line 4
     .line 5
     .line 6
-    invoke-super {p0, p1}, Landroid/transition/Visibility;->removeListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
+    invoke-super {p0, p1}, Landroid/transition/Transition;->removeListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public final setEpicenterCallback(Landroid/transition/Transition$EpicenterCallback;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->R:Landroid/transition/Visibility;
+    iget-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->Y:Landroid/transition/Visibility;
 
     .line 2
     .line 3
@@ -990,7 +990,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-super {p0, p1}, Landroid/transition/Visibility;->setEpicenterCallback(Landroid/transition/Transition$EpicenterCallback;)V
+    invoke-super {p0, p1}, Landroid/transition/Transition;->setEpicenterCallback(Landroid/transition/Transition$EpicenterCallback;)V
 
     .line 7
     .line 8

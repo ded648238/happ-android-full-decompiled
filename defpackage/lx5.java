@@ -1,110 +1,123 @@
 package defpackage;
 
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
-import sun.misc.Unsafe;
+import android.view.View;
+import android.view.ViewPropertyAnimator;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.l;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.WeakHashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class lx5 implements yv0, dx0 {
-    public static final AtomicReferenceFieldUpdater R = AtomicReferenceFieldUpdater.newUpdater(lx5.class, Object.class, "result");
-    public static final /* synthetic */ long S = tx5.a.objectFieldOffset(lx5.class.getDeclaredField("result"));
-    public final yv0 Q;
-    private volatile Object result;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class lx5 implements Runnable {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ RecyclerView Y;
 
-    public lx5(yv0 yv0Var, cx0 cx0Var) {
-        this.Q = yv0Var;
-        this.result = cx0Var;
+    public /* synthetic */ lx5(RecyclerView recyclerView, int i) {
+        this.X = i;
+        this.Y = recyclerView;
     }
 
-    public final Object a() throws Throwable {
-        Unsafe unsafe;
-        long j;
-        cx0 cx0Var = cx0.Q;
-        Object obj = this.result;
-        cx0 cx0Var2 = cx0.R;
-        if (obj == cx0Var2) {
-            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = R;
-            do {
-                atomicReferenceFieldUpdater.getClass();
-                unsafe = tx5.a;
-                j = S;
-                if (unsafe.compareAndSwapObject(this, j, cx0Var2, cx0Var)) {
-                    return cx0Var;
-                }
-            } while (unsafe.getObjectVolatile(this, j) == cx0Var2);
-            obj = this.result;
-        }
-        if (obj == cx0.S) {
-            return cx0Var;
-        }
-        if (obj instanceof on5) {
-            throw ((on5) obj).Q;
-        }
-        return obj;
-    }
-
-    @Override // defpackage.dx0
-    public final dx0 c() {
-        yv0 yv0Var = this.Q;
-        if (yv0Var instanceof dx0) {
-            return (dx0) yv0Var;
-        }
-        return null;
-    }
-
-    @Override // defpackage.yv0
-    public final void e(Object obj) {
-        Object obj2;
-        Unsafe unsafe;
-        long j;
-        while (true) {
-            Object obj3 = this.result;
-            cx0 cx0Var = cx0.R;
-            if (obj3 == cx0Var) {
-                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = R;
-                while (true) {
-                    atomicReferenceFieldUpdater.getClass();
-                    Unsafe unsafe2 = tx5.a;
-                    long j2 = S;
-                    obj2 = obj;
-                    if (unsafe2.compareAndSwapObject(this, j2, cx0Var, obj2)) {
-                        return;
-                    }
-                    if (unsafe2.getObjectVolatile(this, j2) != cx0Var) {
+    @Override // java.lang.Runnable
+    public final void run() {
+        boolean z;
+        int i = this.X;
+        RecyclerView recyclerView = this.Y;
+        switch (i) {
+            case 0:
+                if (recyclerView.x0 && !recyclerView.isLayoutRequested()) {
+                    if (!recyclerView.v0) {
+                        recyclerView.requestLayout();
+                        break;
+                    } else if (!recyclerView.A0) {
+                        recyclerView.p();
                         break;
                     } else {
-                        obj = obj2;
+                        recyclerView.z0 = true;
+                        break;
                     }
                 }
-            } else {
-                obj2 = obj;
-                cx0 cx0Var2 = cx0.Q;
-                if (obj3 != cx0Var2) {
-                    fn.s("Already resumed");
-                    return;
-                }
-                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = R;
-                cx0 cx0Var3 = cx0.S;
-                do {
-                    atomicReferenceFieldUpdater2.getClass();
-                    unsafe = tx5.a;
-                    j = S;
-                    if (unsafe.compareAndSwapObject(this, j, cx0Var2, cx0Var3)) {
-                        this.Q.e(obj2);
-                        return;
+                break;
+            default:
+                tx5 tx5Var = recyclerView.P0;
+                if (tx5Var != null) {
+                    hc1 hc1Var = (hc1) tx5Var;
+                    long j = hc1Var.d;
+                    ArrayList arrayList = hc1Var.h;
+                    boolean isEmpty = arrayList.isEmpty();
+                    ArrayList arrayList2 = hc1Var.j;
+                    boolean isEmpty2 = arrayList2.isEmpty();
+                    ArrayList arrayList3 = hc1Var.k;
+                    boolean isEmpty3 = arrayList3.isEmpty();
+                    ArrayList arrayList4 = hc1Var.i;
+                    boolean isEmpty4 = arrayList4.isEmpty();
+                    if (!isEmpty || !isEmpty2 || !isEmpty4 || !isEmpty3) {
+                        Iterator it = arrayList.iterator();
+                        while (it.hasNext()) {
+                            l lVar = (l) it.next();
+                            View view = lVar.a;
+                            ViewPropertyAnimator animate = view.animate();
+                            hc1Var.q.add(lVar);
+                            animate.setDuration(j).alpha(0.0f).setListener(new cc1(hc1Var, lVar, animate, view)).start();
+                            arrayList = arrayList;
+                            isEmpty = isEmpty;
+                        }
+                        boolean z2 = isEmpty;
+                        arrayList.clear();
+                        if (!isEmpty2) {
+                            ArrayList arrayList5 = new ArrayList();
+                            arrayList5.addAll(arrayList2);
+                            hc1Var.m.add(arrayList5);
+                            arrayList2.clear();
+                            bc1 bc1Var = new bc1(hc1Var, arrayList5, 0);
+                            if (z2) {
+                                bc1Var.run();
+                            } else {
+                                View view2 = ((gc1) arrayList5.get(0)).a.a;
+                                WeakHashMap weakHashMap = ni8.a;
+                                view2.postOnAnimationDelayed(bc1Var, j);
+                            }
+                        }
+                        if (!isEmpty3) {
+                            ArrayList arrayList6 = new ArrayList();
+                            arrayList6.addAll(arrayList3);
+                            hc1Var.n.add(arrayList6);
+                            arrayList3.clear();
+                            bc1 bc1Var2 = new bc1(hc1Var, arrayList6, 1);
+                            if (z2) {
+                                bc1Var2.run();
+                            } else {
+                                View view3 = ((fc1) arrayList6.get(0)).a.a;
+                                WeakHashMap weakHashMap2 = ni8.a;
+                                view3.postOnAnimationDelayed(bc1Var2, j);
+                            }
+                        }
+                        if (!isEmpty4) {
+                            ArrayList arrayList7 = new ArrayList();
+                            arrayList7.addAll(arrayList4);
+                            hc1Var.l.add(arrayList7);
+                            arrayList4.clear();
+                            bc1 bc1Var3 = new bc1(hc1Var, arrayList7, 2);
+                            if (!z2 || !isEmpty2 || !isEmpty3) {
+                                if (z2) {
+                                    j = 0;
+                                }
+                                long max = Math.max(!isEmpty2 ? hc1Var.e : 0L, isEmpty3 ? 0L : hc1Var.f) + j;
+                                z = false;
+                                View view4 = ((l) arrayList7.get(0)).a;
+                                WeakHashMap weakHashMap3 = ni8.a;
+                                view4.postOnAnimationDelayed(bc1Var3, max);
+                                recyclerView.n1 = z;
+                                break;
+                            } else {
+                                bc1Var3.run();
+                            }
+                        }
                     }
-                } while (unsafe.getObjectVolatile(this, j) == cx0Var2);
-            }
-            obj = obj2;
+                }
+                z = false;
+                recyclerView.n1 = z;
         }
-    }
-
-    @Override // defpackage.yv0
-    public final sw0 n() {
-        return this.Q.n();
-    }
-
-    public final String toString() {
-        return "SafeContinuation for " + this.Q;
     }
 }

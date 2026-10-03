@@ -1,28 +1,16 @@
 package defpackage;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import java.util.concurrent.locks.ReentrantLock;
+import android.os.Binder;
+import android.os.Bundle;
+import android.os.Parcelable;
+import android.util.Size;
+import android.util.SizeF;
+import android.util.SparseArray;
+import java.io.Serializable;
+import java.util.ArrayList;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class tj6 {
-    public static final ReentrantLock c = new ReentrantLock();
-    public static tj6 d;
-    public final ReentrantLock a = new ReentrantLock();
-    public final SharedPreferences b;
-
-    public tj6(Context context) {
-        this.b = context.getSharedPreferences("com.google.android.gms.signin", 0);
-    }
-
-    public final String a(String str) {
-        ReentrantLock reentrantLock = this.a;
-        reentrantLock.lock();
-        try {
-            return this.b.getString(str, null);
-        } finally {
-            reentrantLock.unlock();
-        }
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class tj6 {
+    public static final ArrayList a = kt.w0(new Class[]{Boolean.TYPE, boolean[].class, Double.TYPE, double[].class, Integer.TYPE, int[].class, Long.TYPE, long[].class, String.class, String[].class, Binder.class, Bundle.class, Byte.TYPE, byte[].class, Character.TYPE, char[].class, CharSequence.class, CharSequence[].class, ArrayList.class, Float.TYPE, float[].class, Parcelable.class, Parcelable[].class, Serializable.class, Short.TYPE, short[].class, SparseArray.class, Size.class, SizeF.class});
 }

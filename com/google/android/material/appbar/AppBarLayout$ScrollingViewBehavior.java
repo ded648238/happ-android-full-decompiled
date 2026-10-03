@@ -7,19 +7,20 @@ import android.util.AttributeSet;
 import android.view.View;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.coordinatorlayout.widget.b;
-import defpackage.qn7;
-import defpackage.ub;
-import defpackage.va5;
+import defpackage.l93;
+import defpackage.ni8;
+import defpackage.uu5;
 import java.util.ArrayList;
+import java.util.WeakHashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class AppBarLayout$ScrollingViewBehavior extends HeaderScrollingViewBehavior {
     public AppBarLayout$ScrollingViewBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, va5.ScrollingViewBehavior_Layout);
-        this.b = typedArrayObtainStyledAttributes.getDimensionPixelSize(va5.ScrollingViewBehavior_Layout_behavior_overlapTop, 0);
-        typedArrayObtainStyledAttributes.recycle();
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, uu5.ScrollingViewBehavior_Layout);
+        this.b = obtainStyledAttributes.getDimensionPixelSize(uu5.ScrollingViewBehavior_Layout_behavior_overlapTop, 0);
+        obtainStyledAttributes.recycle();
     }
 
     public static void w(ArrayList arrayList) {
@@ -33,7 +34,9 @@ public class AppBarLayout$ScrollingViewBehavior extends HeaderScrollingViewBehav
         if (((b) view2.getLayoutParams()).a instanceof AppBarLayout$BaseBehavior) {
             int bottom = view2.getBottom() - view.getTop();
             int i = this.b;
-            qn7.l(view, bottom - (i == 0 ? 0 : ub.r((int) (0.0f * i), 0, i)));
+            int m = bottom - (i == 0 ? 0 : l93.m((int) (0.0f * i), 0, i));
+            WeakHashMap weakHashMap = ni8.a;
+            view.offsetTopAndBottom(m);
         }
         return false;
     }
@@ -49,8 +52,9 @@ public class AppBarLayout$ScrollingViewBehavior extends HeaderScrollingViewBehav
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior
-    public final void p(CoordinatorLayout coordinatorLayout, View view) {
+    public final boolean p(CoordinatorLayout coordinatorLayout, View view, Rect rect) {
         w(coordinatorLayout.j(view));
+        return false;
     }
 
     public AppBarLayout$ScrollingViewBehavior() {

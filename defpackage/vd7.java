@@ -1,19 +1,9 @@
 package defpackage;
 
-import android.graphics.Typeface;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface vd7 {
+    boolean a();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class vd7 implements gh6 {
-    public final Object Q;
-    public final boolean R = true;
-
-    public vd7(Typeface typeface) {
-        this.Q = typeface;
-    }
-
-    @Override // defpackage.gh6
-    public final Object getValue() {
-        return this.Q;
-    }
+    void c();
 }

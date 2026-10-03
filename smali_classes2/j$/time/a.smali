@@ -1,6 +1,6 @@
 .class public final Lj$/time/a;
-.super Lj$/com/android/tools/r8/a;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lj$/time/b;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -88,7 +88,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lj$/time/a;->a:Lj$/time/ZoneId;
+    iget-object p0, p0, Lj$/time/a;->a:Lj$/time/ZoneId;
 
     .line 6
     .line 7
@@ -100,89 +100,89 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0, p1}, Lj$/time/ZoneId;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Lj$/time/ZoneId;->equals(Ljava/lang/Object;)Z
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result p0
 
     .line 15
-    return p1
+    return p0
 
     .line 16
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    return p1
+    return p0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lj$/time/a;->a:Lj$/time/ZoneId;
+    iget-object p0, p0, Lj$/time/a;->a:Lj$/time/ZoneId;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lj$/time/ZoneId;->hashCode()I
+    invoke-virtual {p0}, Lj$/time/ZoneId;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 p0, p0, 0x1
 
     .line 8
     .line 9
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lj$/time/a;->a:Lj$/time/ZoneId;
+    iget-object p0, p0, Lj$/time/a;->a:Lj$/time/ZoneId;
 
     .line 2
     .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 4
     .line 5
-    const-string v2, "SystemClock["
+    const-string v1, "SystemClock["
 
     .line 6
     .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v0, "]"
+    const-string p0, "]"
 
     .line 14
     .line 15
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v0
+    move-result-object p0
 
     .line 22
-    return-object v0
+    return-object p0
 .end method

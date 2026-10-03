@@ -1,27 +1,45 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class uj {
-    public static final uj Q;
-    public static final uj R;
-    public static final /* synthetic */ uj[] S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class uj implements h57 {
+    public final i38 X;
+    public final x65 Y;
+    public ak Z;
+    public long c0;
+    public long d0;
+    public boolean e0;
 
-    static {
-        uj ujVar = new uj("CALL_BY_NAME", 0);
-        Q = ujVar;
-        uj ujVar2 = new uj("POSITIONAL_CALL", 1);
-        R = ujVar2;
-        S = new uj[]{ujVar, ujVar2};
+    public uj(i38 i38Var, Object obj, ak akVar, long j, long j2, boolean z) {
+        ak akVar2;
+        this.X = i38Var;
+        this.Y = d01.J(obj);
+        if (akVar != null) {
+            akVar2 = q48.A(akVar);
+        } else {
+            akVar2 = (ak) i38Var.a.invoke(obj);
+            akVar2.d();
+        }
+        this.Z = akVar2;
+        this.c0 = j;
+        this.d0 = j2;
+        this.e0 = z;
     }
 
-    public static uj valueOf(String str) {
-        return (uj) Enum.valueOf(uj.class, str);
+    public final Object a() {
+        return this.X.b.invoke(this.Z);
     }
 
-    public static uj[] values() {
-        return (uj[]) S.clone();
+    @Override // defpackage.h57
+    public final Object getValue() {
+        return this.Y.getValue();
+    }
+
+    public final String toString() {
+        return "AnimationState(value=" + this.Y.getValue() + ", velocity=" + a() + ", isRunning=" + this.e0 + ", lastFrameTimeNanos=" + this.c0 + ", finishedTimeNanos=" + this.d0 + ")";
+    }
+
+    public /* synthetic */ uj(i38 i38Var, Object obj, ak akVar, int i) {
+        this(i38Var, obj, (i & 4) != 0 ? null : akVar, Long.MIN_VALUE, Long.MIN_VALUE, false);
     }
 }

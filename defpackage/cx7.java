@@ -1,27 +1,35 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class cx7 {
-    public boolean a;
-    public String b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class cx7 extends fl6 implements Runnable {
+    public final long f0;
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof cx7)) {
-            return false;
-        }
-        cx7 cx7Var = (cx7) obj;
-        return this.a == cx7Var.a && this.b.equals(cx7Var.b);
+    public cx7(long j, d31 d31Var) {
+        super(d31Var, d31Var.s());
+        this.f0 = j;
     }
 
-    public final int hashCode() {
-        return this.b.hashCode() + ((this.a ? 1231 : 1237) * 31);
+    @Override // defpackage.ve3
+    public final String a0() {
+        return super.a0() + "(timeMillis=" + this.f0 + ')';
     }
 
-    public final String toString() {
-        return "Result(status=" + this.a + ", content=" + this.b + ")";
+    @Override // java.lang.Runnable
+    public final void run() {
+        z31 z31Var = this.d0;
+        kc.P(z31Var);
+        e41 e41Var = (e41) z31Var.G0(e41.Z);
+        String str = e41Var != null ? e41Var.Y : null;
+        String str2 = "Timed out waiting for " + this.f0 + " ms";
+        if (str != null) {
+            StringBuilder p = w31.p("Coroutine \"", str, "\" ");
+            if (str2.length() > 0) {
+                str2 = Character.toLowerCase(str2.charAt(0)) + str2.substring(1);
+            }
+            p.append(str2);
+            str2 = p.toString();
+        }
+        k(new bx7(str2, this));
     }
 }

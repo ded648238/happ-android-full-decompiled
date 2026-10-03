@@ -7,10 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import com.google.android.gms.cloudmessaging.CloudMessagingReceiver;
-import defpackage.qa4;
-import defpackage.sl0;
-import j$.util.Objects;
+import defpackage.xs0;
+import defpackage.yr4;
 import java.lang.ref.SoftReference;
+import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
@@ -19,13 +19,13 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class CloudMessagingReceiver extends BroadcastReceiver {
     public static SoftReference a;
     public static SoftReference b;
 
-    public abstract int a(Context context, sl0 sl0Var);
+    public abstract int a(Context context, xs0 xs0Var);
 
     @Override // android.content.BroadcastReceiver
     public final void onReceive(final Context context, final Intent intent) {
@@ -33,34 +33,34 @@ public abstract class CloudMessagingReceiver extends BroadcastReceiver {
         if (intent == null) {
             return;
         }
-        final boolean zIsOrderedBroadcast = isOrderedBroadcast();
-        final BroadcastReceiver.PendingResult pendingResultGoAsync = goAsync();
+        final boolean isOrderedBroadcast = isOrderedBroadcast();
+        final BroadcastReceiver.PendingResult goAsync = goAsync();
         synchronized (CloudMessagingReceiver.class) {
             try {
                 SoftReference softReference = a;
-                ExecutorService executorServiceUnconfigurableExecutorService = softReference != null ? (ExecutorService) softReference.get() : null;
-                if (executorServiceUnconfigurableExecutorService == null) {
-                    executorServiceUnconfigurableExecutorService = Executors.unconfigurableExecutorService(Executors.newCachedThreadPool(new qa4("firebase-iid-executor")));
-                    a = new SoftReference(executorServiceUnconfigurableExecutorService);
+                ExecutorService executorService2 = softReference != null ? (ExecutorService) softReference.get() : null;
+                if (executorService2 == null) {
+                    executorService2 = Executors.unconfigurableExecutorService(Executors.newCachedThreadPool(new yr4("firebase-iid-executor")));
+                    a = new SoftReference(executorService2);
                 }
-                executorService = executorServiceUnconfigurableExecutorService;
+                executorService = executorService2;
             } catch (Throwable th) {
                 throw th;
             }
         }
-        executorService.execute(new Runnable() { // from class: w08
+        executorService.execute(new Runnable() { // from class: bx8
             @Override // java.lang.Runnable
             public final void run() {
-                Executor executorUnconfigurableExecutorService;
-                CloudMessagingReceiver cloudMessagingReceiver = this.Q;
+                Executor executor;
+                CloudMessagingReceiver cloudMessagingReceiver = CloudMessagingReceiver.this;
                 Intent intent2 = intent;
                 Context context2 = context;
-                boolean z = zIsOrderedBroadcast;
-                BroadcastReceiver.PendingResult pendingResult = pendingResultGoAsync;
+                boolean z = isOrderedBroadcast;
+                BroadcastReceiver.PendingResult pendingResult = goAsync;
                 try {
                     Parcelable parcelableExtra = intent2.getParcelableExtra("wrapped_intent");
                     Intent intent3 = parcelableExtra instanceof Intent ? (Intent) parcelableExtra : null;
-                    int iA = 500;
+                    int i = 500;
                     if (intent3 != null) {
                         PendingIntent pendingIntent = (PendingIntent) intent3.getParcelableExtra("pending_intent");
                         if (pendingIntent != null) {
@@ -77,27 +77,26 @@ public abstract class CloudMessagingReceiver extends BroadcastReceiver {
                         }
                         if (Objects.equals(intent3.getAction(), "com.google.firebase.messaging.NOTIFICATION_DISMISS")) {
                             cloudMessagingReceiver.b(extras);
-                            iA = -1;
+                            i = -1;
                         }
                     } else if (intent2.getExtras() != null) {
-                        sl0 sl0Var = new sl0(intent2);
+                        xs0 xs0Var = new xs0(intent2);
                         CountDownLatch countDownLatch = new CountDownLatch(1);
                         synchronized (CloudMessagingReceiver.class) {
                             try {
                                 SoftReference softReference2 = CloudMessagingReceiver.b;
-                                executorUnconfigurableExecutorService = softReference2 != null ? (Executor) softReference2.get() : null;
-                                if (executorUnconfigurableExecutorService == null) {
-                                    ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new qa4("pscm-ack-executor"));
+                                executor = softReference2 != null ? (Executor) softReference2.get() : null;
+                                if (executor == null) {
+                                    ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new yr4("pscm-ack-executor"));
                                     threadPoolExecutor.allowCoreThreadTimeOut(true);
-                                    executorUnconfigurableExecutorService = Executors.unconfigurableExecutorService(threadPoolExecutor);
-                                    CloudMessagingReceiver.b = new SoftReference(executorUnconfigurableExecutorService);
+                                    executor = Executors.unconfigurableExecutorService(threadPoolExecutor);
+                                    CloudMessagingReceiver.b = new SoftReference(executor);
                                 }
-                            } catch (Throwable th2) {
-                                throw th2;
+                            } finally {
                             }
                         }
-                        executorUnconfigurableExecutorService.execute(new k7(context2, sl0Var, countDownLatch, 3));
-                        iA = cloudMessagingReceiver.a(context2, sl0Var);
+                        executor.execute(new g44(context2, xs0Var, countDownLatch));
+                        i = cloudMessagingReceiver.a(context2, xs0Var);
                         try {
                             countDownLatch.await(1000L, TimeUnit.MILLISECONDS);
                         } catch (InterruptedException e) {
@@ -105,16 +104,16 @@ public abstract class CloudMessagingReceiver extends BroadcastReceiver {
                         }
                     }
                     if (z && pendingResult != null) {
-                        pendingResult.setResultCode(iA);
+                        pendingResult.setResultCode(i);
                     }
                     if (pendingResult != null) {
                         pendingResult.finish();
                     }
-                } catch (Throwable th3) {
+                } catch (Throwable th2) {
                     if (pendingResult != null) {
                         pendingResult.finish();
                     }
-                    throw th3;
+                    throw th2;
                 }
             }
         });

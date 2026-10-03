@@ -1,145 +1,127 @@
 .class public final Li82;
-.super Lqb2;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic e:I
+.field public final a:Lmm7;
+
+.field public final b:Lmm7;
+
+.field public final c:Lmm7;
+
+.field public final d:Lmm7;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lop3;Li0;I)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 2
 
     .line 1
-    iput p3, p0, Li82;->e:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0, p1, p2}, Lqb2;-><init>(Lop3;Li0;)V
-
     .line 4
+    new-instance v0, Lp62;
+
     .line 5
     .line 6
-    return-void
-.end method
+    const/4 v1, 0x3
 
-
-# virtual methods
-.method public final h()Ljava/util/List;
-    .locals 4
-
-    .line 1
-    iget v0, p0, Li82;->e:I
-
-    .line 2
-    .line 3
-    sget-object v1, Lwn1;->Q:Lwn1;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
     .line 7
+    invoke-direct {v0, v1}, Lp62;-><init>(I)V
+
     .line 8
-    return-object v1
-
     .line 9
-    :pswitch_0
-    iget-object v0, p0, Lqb2;->b:Li0;
-
     .line 10
+    new-instance v1, Lmm7;
+
     .line 11
-    check-cast v0, Lg82;
-
     .line 12
-    .line 13
-    iget-object v2, v0, Lg82;->W:Lv82;
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
+    .line 13
     .line 14
     .line 15
-    sget-object v3, Lr82;->d:Lr82;
+    iput-object v1, p0, Li82;->a:Lmm7;
 
     .line 16
     .line 17
-    invoke-static {v2, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    new-instance v0, Lyj0;
 
     .line 18
     .line 19
+    const/4 v1, 0x1
+
     .line 20
-    move-result v3
+    invoke-direct {v0, p1, v1}, Lyj0;-><init>(Landroid/content/Context;I)V
 
     .line 21
-    if-eqz v3, :cond_0
-
     .line 22
     .line 23
-    const/4 v1, 0x0
+    new-instance v1, Lmm7;
 
     .line 24
-    invoke-static {v0, v1}, Lvs0;->u(Lg82;Z)Ln82;
-
     .line 25
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
+
     .line 26
     .line 27
-    move-result-object v0
-
     .line 28
-    invoke-static {v0}, Lub;->I(Ljava/lang/Object;)Ljava/util/List;
+    iput-object v1, p0, Li82;->b:Lmm7;
 
     .line 29
     .line 30
-    .line 31
-    move-result-object v1
+    new-instance v0, Lp62;
 
+    .line 31
     .line 32
-    goto :goto_0
+    const/4 v1, 0x4
 
     .line 33
-    :cond_0
-    sget-object v3, Lu82;->d:Lu82;
+    invoke-direct {v0, v1}, Lp62;-><init>(I)V
 
     .line 34
     .line 35
-    invoke-static {v2, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 36
+    new-instance v1, Lmm7;
+
     .line 37
     .line 38
-    move-result v2
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 39
-    if-eqz v2, :cond_1
-
     .line 40
     .line 41
-    const/4 v1, 0x1
+    iput-object v1, p0, Li82;->c:Lmm7;
 
     .line 42
-    invoke-static {v0, v1}, Lvs0;->u(Lg82;Z)Ln82;
-
     .line 43
+    new-instance v0, Lyj0;
+
     .line 44
     .line 45
-    move-result-object v0
+    const/4 v1, 0x2
 
     .line 46
-    invoke-static {v0}, Lub;->I(Ljava/lang/Object;)Ljava/util/List;
+    invoke-direct {v0, p1, v1}, Lyj0;-><init>(Landroid/content/Context;I)V
 
     .line 47
     .line 48
     .line 49
-    move-result-object v1
+    new-instance p1, Lmm7;
 
     .line 50
-    :cond_1
-    :goto_0
-    return-object v1
-
     .line 51
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    invoke-direct {p1, v0}, Lmm7;-><init>(Lji2;)V
+
+    .line 52
+    .line 53
+    .line 54
+    iput-object p1, p0, Li82;->d:Lmm7;
+
+    .line 55
+    .line 56
+    return-void
 .end method

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform;
 .super Lokhttp3/internal/platform/Platform;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -34,7 +34,7 @@
         "",
         "Lokhttp3/Protocol;",
         "protocols",
-        "Lbh7;",
+        "Lr98;",
         "configureTlsExtensions",
         "(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V",
         "afterHandshake",
@@ -99,7 +99,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -183,7 +183,7 @@
 
 # virtual methods
 .method public afterHandshake(Ljavax/net/ssl/SSLSocket;)V
-    .locals 4
+    .locals 2
 
     .line 1
     const-string v0, "failed to remove ALPN"
@@ -196,80 +196,74 @@
     .line 5
     .line 6
     :try_start_0
-    iget-object v1, p0, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform;->removeMethod:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform;->removeMethod:Ljava/lang/reflect/Method;
 
     .line 7
     .line 8
-    const/4 v2, 0x1
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 9
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 10
     .line 11
-    const/4 v3, 0x0
+    move-result-object p1
 
     .line 12
-    aput-object p1, v2, v3
+    const/4 v1, 0x0
 
     .line 13
-    .line 14
-    const/4 p1, 0x0
-
-    .line 15
-    invoke-virtual {v1, p1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v1, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 14
+    .line 15
     .line 16
-    .line 17
-    .line 18
     return-void
 
-    .line 19
+    .line 17
     :catch_0
-    move-exception p1
+    move-exception p0
 
-    .line 20
+    .line 18
     goto :goto_0
 
-    .line 21
+    .line 19
     :catch_1
-    move-exception p1
+    move-exception p0
 
-    .line 22
+    .line 20
     goto :goto_1
 
-    .line 23
+    .line 21
     :goto_0
-    new-instance v1, Ljava/lang/AssertionError;
+    new-instance p1, Ljava/lang/AssertionError;
+
+    .line 22
+    .line 23
+    invoke-direct {p1, v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 24
     .line 25
-    invoke-direct {v1, v0, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
     .line 26
-    .line 27
-    .line 28
-    throw v1
+    throw p1
 
-    .line 29
+    .line 27
     :goto_1
-    new-instance v1, Ljava/lang/AssertionError;
+    new-instance p1, Ljava/lang/AssertionError;
+
+    .line 28
+    .line 29
+    invoke-direct {p1, v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 30
     .line 31
-    invoke-direct {v1, v0, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
     .line 32
-    .line 33
-    .line 34
-    throw v1
+    throw p1
 .end method
 
 .method public configureTlsExtensions(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V
-    .locals 6
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -330,112 +324,95 @@
 
     .line 24
     .line 25
-    const/4 v3, 0x2
+    filled-new-array {v1, v2}, [Ljava/lang/Class;
 
     .line 26
-    new-array v4, v3, [Ljava/lang/Class;
-
     .line 27
     .line 28
-    const/4 v5, 0x0
+    move-result-object v1
 
     .line 29
-    aput-object v1, v4, v5
+    new-instance v2, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;
 
     .line 30
     .line 31
-    const/4 v1, 0x1
+    invoke-direct {v2, p3}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;-><init>(Ljava/util/List;)V
 
     .line 32
-    aput-object v2, v4, v1
-
     .line 33
     .line 34
-    new-instance v2, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;
+    invoke-static {v0, v1, v2}, Ljava/lang/reflect/Proxy;->newProxyInstance(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
 
     .line 35
     .line 36
-    invoke-direct {v2, p3}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;-><init>(Ljava/util/List;)V
-
     .line 37
-    .line 38
-    .line 39
-    invoke-static {v0, v4, v2}, Ljava/lang/reflect/Proxy;->newProxyInstance(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
-
-    .line 40
-    .line 41
-    .line 42
     move-result-object p3
 
+    .line 38
+    iget-object p0, p0, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform;->putMethod:Ljava/lang/reflect/Method;
+
+    .line 39
+    .line 40
+    filled-new-array {p1, p3}, [Ljava/lang/Object;
+
+    .line 41
+    .line 42
     .line 43
-    iget-object v0, p0, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform;->putMethod:Ljava/lang/reflect/Method;
+    move-result-object p1
 
     .line 44
+    const/4 p3, 0x0
+
     .line 45
-    new-array v2, v3, [Ljava/lang/Object;
-
-    .line 46
-    .line 47
-    aput-object p1, v2, v5
-
-    .line 48
-    .line 49
-    aput-object p3, v2, v1
-
-    .line 50
-    .line 51
-    const/4 p1, 0x0
-
-    .line 52
-    invoke-virtual {v0, p1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p3, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 53
-    .line 54
-    .line 55
+    .line 46
+    .line 47
+    .line 48
     return-void
 
-    .line 56
+    .line 49
     :catch_0
-    move-exception p1
+    move-exception p0
 
-    .line 57
+    .line 50
     goto :goto_0
 
-    .line 58
+    .line 51
     :catch_1
-    move-exception p1
+    move-exception p0
 
-    .line 59
+    .line 52
     goto :goto_1
 
-    .line 60
+    .line 53
     :goto_0
-    new-instance p3, Ljava/lang/AssertionError;
+    new-instance p1, Ljava/lang/AssertionError;
 
+    .line 54
+    .line 55
+    invoke-direct {p1, p2, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 56
+    .line 57
+    .line 58
+    throw p1
+
+    .line 59
+    :goto_1
+    new-instance p1, Ljava/lang/AssertionError;
+
+    .line 60
     .line 61
-    .line 62
-    invoke-direct {p3, p2, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p1, p2, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 62
     .line 63
     .line 64
-    .line 65
-    throw p3
-
-    .line 66
-    :goto_1
-    new-instance p3, Ljava/lang/AssertionError;
-
-    .line 67
-    .line 68
-    invoke-direct {p3, p2, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 69
-    .line 70
-    .line 71
-    throw p3
+    throw p1
 .end method
 
 .method public getSelectedProtocol(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
@@ -456,172 +433,166 @@
 
     .line 7
     .line 8
-    const/4 v2, 0x1
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 9
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 10
     .line 11
-    const/4 v3, 0x0
+    move-result-object p1
 
     .line 12
-    aput-object p1, v2, v3
+    const/4 v2, 0x0
 
     .line 13
+    invoke-virtual {v0, v2, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 14
-    const/4 p1, 0x0
-
     .line 15
-    invoke-virtual {v0, p1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 16
+    move-result-object p1
+
     .line 17
+    invoke-static {p1}, Ljava/lang/reflect/Proxy;->getInvocationHandler(Ljava/lang/Object;)Ljava/lang/reflect/InvocationHandler;
+
     .line 18
-    move-result-object v0
-
     .line 19
-    invoke-static {v0}, Ljava/lang/reflect/Proxy;->getInvocationHandler(Ljava/lang/Object;)Ljava/lang/reflect/InvocationHandler;
-
     .line 20
+    move-result-object p1
+
     .line 21
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 22
-    move-result-object v0
-
     .line 23
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 24
+    check-cast p1, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;
+
     .line 25
     .line 26
-    check-cast v0, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;
+    invoke-virtual {p1}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;->getUnsupported()Z
 
     .line 27
     .line 28
-    invoke-virtual {v0}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;->getUnsupported()Z
-
     .line 29
-    .line 30
-    .line 31
-    move-result v2
+    move-result v0
 
+    .line 30
+    if-nez v0, :cond_0
+
+    .line 31
     .line 32
-    if-nez v2, :cond_0
+    invoke-virtual {p1}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;->getSelected()Ljava/lang/String;
 
     .line 33
     .line 34
-    invoke-virtual {v0}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;->getSelected()Ljava/lang/String;
-
     .line 35
-    .line 36
-    .line 37
-    move-result-object v2
+    move-result-object v0
 
+    .line 36
+    if-nez v0, :cond_0
+
+    .line 37
     .line 38
-    if-nez v2, :cond_0
+    const-string v4, "ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?"
 
     .line 39
     .line 40
-    const-string v4, "ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?"
-
-    .line 41
-    .line 42
     const/4 v7, 0x6
 
-    .line 43
+    .line 41
     const/4 v8, 0x0
 
-    .line 44
+    .line 42
     const/4 v5, 0x0
 
-    .line 45
+    .line 43
     const/4 v6, 0x0
 
-    .line 46
+    .line 44
     move-object v3, p0
 
-    .line 47
+    .line 45
     invoke-static/range {v3 .. v8}, Lokhttp3/internal/platform/Platform;->log$default(Lokhttp3/internal/platform/Platform;Ljava/lang/String;ILjava/lang/Throwable;ILjava/lang/Object;)V
 
+    .line 46
+    .line 47
     .line 48
-    .line 49
-    .line 50
-    return-object p1
+    return-object v2
 
-    .line 51
+    .line 49
     :catch_0
     move-exception v0
 
-    .line 52
-    move-object p1, v0
+    .line 50
+    move-object p0, v0
 
-    .line 53
+    .line 51
     goto :goto_0
 
-    .line 54
+    .line 52
     :catch_1
     move-exception v0
 
-    .line 55
-    move-object p1, v0
+    .line 53
+    move-object p0, v0
 
-    .line 56
+    .line 54
     goto :goto_1
 
-    .line 57
+    .line 55
     :cond_0
-    invoke-virtual {v0}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;->getUnsupported()Z
+    invoke-virtual {p1}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;->getUnsupported()Z
 
+    .line 56
+    .line 57
     .line 58
-    .line 59
-    .line 60
-    move-result v2
+    move-result p0
 
+    .line 59
+    if-eqz p0, :cond_1
+
+    .line 60
     .line 61
-    if-eqz v2, :cond_1
+    return-object v2
 
     .line 62
-    .line 63
-    return-object p1
-
-    .line 64
     :cond_1
-    invoke-virtual {v0}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;->getSelected()Ljava/lang/String;
+    invoke-virtual {p1}, Lokhttp3/internal/platform/Jdk8WithJettyBootPlatform$AlpnProvider;->getSelected()Ljava/lang/String;
 
+    .line 63
+    .line 64
     .line 65
-    .line 66
-    .line 67
-    move-result-object p1
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 68
-    return-object p1
+    .line 66
+    return-object p0
 
-    .line 69
+    .line 67
     :goto_0
-    new-instance v0, Ljava/lang/AssertionError;
+    new-instance p1, Ljava/lang/AssertionError;
+
+    .line 68
+    .line 69
+    invoke-direct {p1, v1, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 70
     .line 71
-    invoke-direct {v0, v1, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
     .line 72
-    .line 73
-    .line 74
-    throw v0
+    throw p1
 
-    .line 75
+    .line 73
     :goto_1
-    new-instance v0, Ljava/lang/AssertionError;
+    new-instance p1, Ljava/lang/AssertionError;
+
+    .line 74
+    .line 75
+    invoke-direct {p1, v1, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 76
     .line 77
-    invoke-direct {v0, v1, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
     .line 78
-    .line 79
-    .line 80
-    throw v0
+    throw p1
 .end method

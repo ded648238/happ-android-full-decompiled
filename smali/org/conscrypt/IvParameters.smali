@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/IvParameters;
 .super Ljava/security/AlgorithmParametersSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -33,7 +33,7 @@
 
 # virtual methods
 .method public engineGetEncoded()[B
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -49,14 +49,14 @@
     move-result-wide v0
 
     .line 46
-    iget-object v2, p0, Lorg/conscrypt/IvParameters;->iv:[B
+    iget-object p0, p0, Lorg/conscrypt/IvParameters;->iv:[B
 
-    invoke-static {v0, v1, v2}, Lorg/conscrypt/NativeCrypto;->asn1_write_octetstring(J[B)V
+    invoke-static {v0, v1, p0}, Lorg/conscrypt/NativeCrypto;->asn1_write_octetstring(J[B)V
 
     .line 47
     invoke-static {v0, v1}, Lorg/conscrypt/NativeCrypto;->asn1_write_finish(J)[B
 
-    move-result-object v2
+    move-result-object p0
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -64,22 +64,22 @@
     .line 48
     invoke-static {v0, v1}, Lorg/conscrypt/NativeCrypto;->asn1_write_free(J)V
 
-    return-object v2
+    return-object p0
 
     :catchall_0
-    move-exception v2
+    move-exception p0
 
     goto :goto_0
 
     :catch_0
-    move-exception v2
+    move-exception p0
 
     .line 49
     :try_start_1
     invoke-static {v0, v1}, Lorg/conscrypt/NativeCrypto;->asn1_write_cleanup(J)V
 
     .line 50
-    throw v2
+    throw p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -88,7 +88,7 @@
     invoke-static {v0, v1}, Lorg/conscrypt/NativeCrypto;->asn1_write_free(J)V
 
     .line 52
-    throw v2
+    throw p0
 .end method
 
 .method public engineGetEncoded(Ljava/lang/String;)[B
@@ -140,47 +140,47 @@
 
     .line 19
     .line 20
-    iget-object p1, p0, Lorg/conscrypt/IvParameters;->iv:[B
+    iget-object p0, p0, Lorg/conscrypt/IvParameters;->iv:[B
 
     .line 21
     .line 22
-    invoke-virtual {p1}, [B->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, [B->clone()Ljava/lang/Object;
 
     .line 23
     .line 24
     .line 25
-    move-result-object p1
+    move-result-object p0
 
     .line 26
-    check-cast p1, [B
+    check-cast p0, [B
 
     .line 27
     .line 28
-    return-object p1
+    return-object p0
 
     .line 29
     :cond_1
-    const-string v0, "Unsupported format: "
+    const-string p0, "Unsupported format: "
 
     .line 30
     .line 31
-    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33
     .line 34
-    move-result-object p1
+    move-result-object p0
 
     .line 35
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 36
     .line 37
     .line 38
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 39
-    return-object p1
+    return-object p0
 
     .line 40
     :cond_2
@@ -190,14 +190,14 @@
     .line 41
     .line 42
     .line 43
-    move-result-object p1
+    move-result-object p0
 
     .line 44
-    return-object p1
+    return-object p0
 .end method
 
 .method public engineGetParameterSpec(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -227,11 +227,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/IvParameters;->iv:[B
+    iget-object p0, p0, Lorg/conscrypt/IvParameters;->iv:[B
 
     .line 8
     .line 9
-    invoke-direct {p1, v0}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
+    invoke-direct {p1, p0}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
 
     .line 10
     .line 11
@@ -240,15 +240,15 @@
 
     .line 13
     :cond_0
-    new-instance v0, Ljava/security/spec/InvalidParameterSpecException;
+    new-instance p0, Ljava/security/spec/InvalidParameterSpecException;
 
     .line 14
     .line 15
-    const-string v1, "Incompatible AlgorithmParametersSpec class: "
+    const-string v0, "Incompatible AlgorithmParametersSpec class: "
 
     .line 16
     .line 17
-    invoke-static {p1, v1}, Lxy4;->x(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lc73;->g(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
 
     .line 18
     .line 19
@@ -256,12 +256,12 @@
     move-result-object p1
 
     .line 21
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
 
     .line 22
     .line 23
     .line 24
-    throw v0
+    throw p0
 .end method
 
 .method public engineInit(Ljava/security/spec/AlgorithmParameterSpec;)V
@@ -296,13 +296,13 @@
 
     .line 53
     :cond_0
-    new-instance p1, Ljava/security/spec/InvalidParameterSpecException;
+    new-instance p0, Ljava/security/spec/InvalidParameterSpecException;
 
-    const-string v0, "Only IvParameterSpec is supported"
+    const-string p1, "Only IvParameterSpec is supported"
 
-    invoke-direct {p1, v0}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/spec/InvalidParameterSpecException;-><init>(Ljava/lang/String;)V
 
-    throw p1
+    throw p0
 .end method
 
 .method public engineInit([B)V
@@ -345,25 +345,25 @@
     return-void
 
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     goto :goto_0
 
     .line 48
     :cond_0
     :try_start_2
-    new-instance p1, Ljava/io/IOException;
+    new-instance p0, Ljava/io/IOException;
 
-    const-string v2, "Error reading ASN.1 encoding"
+    const-string p1, "Error reading ASN.1 encoding"
 
-    invoke-direct {p1, v2}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    throw p1
+    throw p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :catchall_1
-    move-exception p1
+    move-exception p0
 
     const-wide/16 v0, 0x0
 
@@ -372,7 +372,7 @@
     invoke-static {v0, v1}, Lorg/conscrypt/NativeCrypto;->asn1_read_free(J)V
 
     .line 50
-    throw p1
+    throw p0
 .end method
 
 .method public engineInit([BLjava/lang/String;)V
@@ -444,19 +444,19 @@
 
     .line 29
     :cond_1
-    const-string p1, "Unsupported format: "
+    const-string p0, "Unsupported format: "
 
     .line 30
     .line 31
-    invoke-virtual {p1, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33
     .line 34
-    move-result-object p1
+    move-result-object p0
 
     .line 35
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 36
     .line 37
@@ -475,12 +475,12 @@
 .end method
 
 .method public engineToString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "Conscrypt IV AlgorithmParameters"
+    const-string p0, "Conscrypt IV AlgorithmParameters"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

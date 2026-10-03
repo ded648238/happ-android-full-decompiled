@@ -1,32 +1,43 @@
-.class public interface abstract Lqz5;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lqz5;
+.super Lsz5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# instance fields
+.field public final a:Ljava/lang/reflect/Field;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/reflect/Field;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Lqz5;->a:Ljava/lang/reflect/Field;
+
+    .line 8
+    .line 9
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/Object;Lrb5;)V
-.end method
+.method public final b()Ljava/lang/reflect/Member;
+    .locals 0
 
-.method public abstract b(Ljava/lang/Object;Ljava/lang/Object;)V
-.end method
+    .line 1
+    iget-object p0, p0, Lqz5;->a:Ljava/lang/reflect/Field;
 
-.method public abstract c(Ljava/lang/Object;)V
-.end method
-
-.method public abstract d(Ljava/lang/Object;)Z
-.end method
-
-.method public abstract e(Lz92;Lz92;)Z
-.end method
-
-.method public abstract f(Lz92;)I
-.end method
-
-.method public abstract g(Ljava/lang/Object;Lvi0;Lht1;)V
-.end method
-
-.method public abstract h(Lz92;)I
-.end method
-
-.method public abstract i()Lz92;
+    .line 2
+    .line 3
+    return-object p0
 .end method

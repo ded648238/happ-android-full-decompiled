@@ -1,23 +1,21 @@
 package defpackage;
 
-import androidx.camera.camera2.internal.compat.quirk.UseTorchAsFlashQuirk;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public enum j97 {
+    DEFAULT(0),
+    PREVIEW(1),
+    VIDEO_RECORD(3),
+    STILL_CAPTURE(2),
+    /* JADX INFO: Fake field, exist only in values array */
+    VIDEO_CALL(5),
+    PREVIEW_VIDEO_STILL(4),
+    /* JADX INFO: Fake field, exist only in values array */
+    CROPPED_RAW(6);
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class j97 implements rw0 {
-    public final /* synthetic */ int Q;
+    public final long X;
 
-    public j97(zp zpVar) {
-        this.Q = 2;
-        zpVar.d(UseTorchAsFlashQuirk.class);
-    }
-
-    public String toString() {
-        switch (this.Q) {
-            case 4:
-                return "NULL_VALUE";
-            default:
-                return super.toString();
-        }
+    j97(int i) {
+        this.X = i;
     }
 }

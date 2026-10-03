@@ -1,135 +1,151 @@
 package defpackage;
 
-import android.content.Context;
-import android.os.Bundle;
-import com.google.firebase.messaging.FirebaseMessaging;
-import java.io.IOException;
-import java.util.ArrayDeque;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import com.tencent.mmkv.MMKV;
+import java.util.Map;
+import su.happ.proxyutility.dto.ServerAffiliationInfo;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class p67 {
-    public final Context a;
-    public final w34 b;
-    public final j44 c;
-    public final FirebaseMessaging d;
-    public final ScheduledThreadPoolExecutor f;
-    public final n67 h;
-    public final fr e = new fr(0);
-    public boolean g = false;
+    public final ad5 a;
+    public final MMKV b;
 
-    public p67(FirebaseMessaging firebaseMessaging, w34 w34Var, n67 n67Var, j44 j44Var, Context context, ScheduledThreadPoolExecutor scheduledThreadPoolExecutor) {
-        this.d = firebaseMessaging;
-        this.b = w34Var;
-        this.h = n67Var;
-        this.c = j44Var;
-        this.a = context;
-        this.f = scheduledThreadPoolExecutor;
+    public p67(ad5 ad5Var) {
+        cm4 cm4Var = cm4.a;
+        MMKV l = cm4.l();
+        ad5Var.getClass();
+        this.a = ad5Var;
+        this.b = l;
     }
 
-    public static void a(m18 m18Var) throws IOException {
-        try {
-            l73.L(m18Var, 30L);
-        } catch (InterruptedException | TimeoutException e) {
-            throw new IOException("SERVICE_NOT_AVAILABLE", e);
-        } catch (ExecutionException e2) {
-            Throwable cause = e2.getCause();
-            if (cause instanceof IOException) {
-                throw ((IOException) cause);
+    public static String b(long j, long j2) {
+        return lu8.f(j) + "↑  " + lu8.f(j2) + "↓";
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0054  */
+    /* JADX WARN: Removed duplicated region for block: B:25:0x009e  */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x00bc  */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x00cd  */
+    /* JADX WARN: Removed duplicated region for block: B:34:0x00d0  */
+    /* JADX WARN: Removed duplicated region for block: B:37:0x00f9  */
+    /* JADX WARN: Removed duplicated region for block: B:39:0x0107  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x0115  */
+    /* JADX WARN: Removed duplicated region for block: B:46:0x00e8  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final String a(String str, o67 o67Var) {
+        String str2;
+        String str3;
+        ServerAffiliationInfo c;
+        Long testDelayMillis;
+        w55 w55Var;
+        Long l;
+        Long l2;
+        Long l3;
+        Map map;
+        Long l4;
+        Map map2 = o67Var.c;
+        boolean b = this.b.b("pref_speed_enabled");
+        s67 s67Var = s67.X;
+        s67 s67Var2 = s67.Y;
+        String str4 = null;
+        if (b) {
+            jz7 jz7Var = jz7.X;
+            Map map3 = (Map) map2.get(jz7Var);
+            w55 w55Var2 = (map3 == null || (l3 = (Long) map3.get(s67Var2)) == null || (map = (Map) map2.get(jz7Var)) == null || (l4 = (Long) map.get(s67Var)) == null) ? null : new w55(l3, l4);
+            if (w55Var2 != null) {
+                str2 = b(((Number) w55Var2.X).longValue(), ((Number) w55Var2.Y).longValue());
+                if (b) {
+                    long j = o67Var.a;
+                    jz7 jz7Var2 = jz7.Y;
+                    Map map4 = (Map) map2.get(jz7Var2);
+                    if (map4 != null && (l = (Long) map4.get(s67Var2)) != null) {
+                        double d = j / 1000.0d;
+                        long longValue = (long) (l.longValue() / d);
+                        Map map5 = (Map) map2.get(jz7Var2);
+                        if (map5 != null && (l2 = (Long) map5.get(s67Var)) != null) {
+                            w55Var = new w55(Long.valueOf(longValue), Long.valueOf((long) (l2.longValue() / d)));
+                            if (w55Var != null) {
+                                str3 = b(((Number) w55Var.X).longValue(), ((Number) w55Var.Y).longValue());
+                                c = this.a.c(str);
+                                if (c != null && (testDelayMillis = c.getTestDelayMillis()) != null) {
+                                    if (testDelayMillis.longValue() <= -1) {
+                                        testDelayMillis = null;
+                                    }
+                                    if (testDelayMillis != null) {
+                                        str4 = testDelayMillis.longValue() + " ms";
+                                        StringBuilder sb = new StringBuilder();
+                                        if (str2 != null) {
+                                            sb.append("proxy: ".concat(str2));
+                                            sb.append('\n');
+                                        }
+                                        if (str3 != null) {
+                                            sb.append("direct: ".concat(str3));
+                                            sb.append('\n');
+                                        }
+                                        if (str4 != null) {
+                                            sb.append("ping: ".concat(str4));
+                                            sb.append('\n');
+                                        }
+                                        return sb.toString();
+                                    }
+                                }
+                                if (c != null && c.getIsLoading()) {
+                                    str4 = "testing...";
+                                }
+                                StringBuilder sb2 = new StringBuilder();
+                                if (str2 != null) {
+                                }
+                                if (str3 != null) {
+                                }
+                                if (str4 != null) {
+                                }
+                                return sb2.toString();
+                            }
+                        }
+                    }
+                    w55Var = null;
+                    if (w55Var != null) {
+                    }
+                }
+                str3 = null;
+                c = this.a.c(str);
+                if (c != null) {
+                    if (testDelayMillis.longValue() <= -1) {
+                    }
+                    if (testDelayMillis != null) {
+                    }
+                }
+                if (c != null) {
+                    str4 = "testing...";
+                }
+                StringBuilder sb22 = new StringBuilder();
+                if (str2 != null) {
+                }
+                if (str3 != null) {
+                }
+                if (str4 != null) {
+                }
+                return sb22.toString();
             }
-            if (!(cause instanceof RuntimeException)) {
-                throw new IOException(e2);
-            }
-            throw ((RuntimeException) cause);
         }
-    }
-
-    public final void b(String str) throws IOException {
-        String strA = this.d.a();
-        Bundle bundle = new Bundle();
-        bundle.putString("gcm.topic", "/topics/" + str);
-        j44 j44Var = this.c;
-        a(j44Var.i(j44Var.C(strA, "/topics/" + str, bundle)));
-    }
-
-    public final void c(String str) throws IOException {
-        String strA = this.d.a();
-        Bundle bundle = new Bundle();
-        bundle.putString("gcm.topic", "/topics/" + str);
-        bundle.putString("delete", "1");
-        j44 j44Var = this.c;
-        a(j44Var.i(j44Var.C(strA, "/topics/" + str, bundle)));
-    }
-
-    public final void d(m67 m67Var) {
-        synchronized (this.e) {
-            try {
-                String str = m67Var.c;
-                if (this.e.containsKey(str)) {
-                    ArrayDeque arrayDeque = (ArrayDeque) this.e.get(str);
-                    rw6 rw6Var = (rw6) arrayDeque.poll();
-                    if (rw6Var != null) {
-                        rw6Var.a(null);
-                    }
-                    if (arrayDeque.isEmpty()) {
-                        this.e.remove(str);
-                    }
-                }
-            } catch (Throwable th) {
-                throw th;
-            }
+        str2 = null;
+        if (b) {
         }
-    }
-
-    public final synchronized void e(boolean z) {
-        this.g = z;
-    }
-
-    public final boolean f() throws IOException {
-        m67 m67VarA;
-        while (true) {
-            synchronized (this) {
-                try {
-                    m67VarA = this.h.a();
-                    if (m67VarA == null) {
-                        return true;
-                    }
-                } catch (Throwable th) {
-                    throw th;
-                }
-            }
-            try {
-                String str = m67VarA.b;
-                String str2 = m67VarA.a;
-                int iHashCode = str.hashCode();
-                if (iHashCode != 83) {
-                    if (iHashCode == 85 && str.equals("U")) {
-                        c(str2);
-                    }
-                } else if (str.equals("S")) {
-                    b(str2);
-                }
-                this.h.c(m67VarA);
-                d(m67VarA);
-            } catch (IOException e) {
-                if ("SERVICE_NOT_AVAILABLE".equals(e.getMessage()) || "INTERNAL_SERVER_ERROR".equals(e.getMessage()) || "TOO_MANY_SUBSCRIBERS".equals(e.getMessage())) {
-                    e.getMessage();
-                    return false;
-                }
-                if (e.getMessage() == null) {
-                    return false;
-                }
-                throw e;
-            }
+        str3 = null;
+        c = this.a.c(str);
+        if (c != null) {
         }
-    }
-
-    public final void g(long j) {
-        this.f.schedule(new r67(this, this.a, this.b, Math.min(Math.max(30L, 2 * j), 28800L)), j, TimeUnit.SECONDS);
-        e(true);
+        if (c != null) {
+        }
+        StringBuilder sb222 = new StringBuilder();
+        if (str2 != null) {
+        }
+        if (str3 != null) {
+        }
+        if (str4 != null) {
+        }
+        return sb222.toString();
     }
 }

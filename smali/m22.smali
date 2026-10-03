@@ -1,69 +1,17 @@
 .class public final Lm22;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# static fields
-.field public static final b:Lm22;
-
-.field public static final c:Lm22;
-
-.field public static final d:Lm22;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Lu94;
+.field public final a:Ljava/lang/Object;
+
+.field public final b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lm22;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Lm22;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lm22;->b:Lm22;
-
-    .line 7
-    .line 8
-    new-instance v0, Lm22;
-
-    .line 9
-    .line 10
-    invoke-direct {v0}, Lm22;-><init>()V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lm22;->c:Lm22;
-
-    .line 14
-    .line 15
-    new-instance v0, Lm22;
-
-    .line 16
-    .line 17
-    invoke-direct {v0}, Lm22;-><init>()V
-
-    .line 18
-    .line 19
-    .line 20
-    sput-object v0, Lm22;->d:Lm22;
-
-    .line 21
-    .line 22
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 3
+.method public constructor <init>(ILjava/lang/Object;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -71,29 +19,106 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lu94;
+    iput-object p2, p0, Lm22;->a:Ljava/lang/Object;
 
     .line 5
     .line 6
-    const/16 v1, 0x10
+    iput p1, p0, Lm22;->b:I
 
     .line 7
     .line 8
-    new-array v1, v1, [Ln22;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    instance-of v0, p1, Lm22;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-nez v0, :cond_0
+
+    .line 5
+    .line 6
+    return v1
+
+    .line 7
+    :cond_0
+    check-cast p1, Lm22;
+
+    .line 8
     .line 9
-    .line 10
-    const/4 v2, 0x0
+    iget-object v0, p0, Lm22;->a:Ljava/lang/Object;
 
+    .line 10
     .line 11
-    invoke-direct {v0, v2, v1}, Lu94;-><init>(I[Ljava/lang/Object;)V
+    iget-object v2, p1, Lm22;->a:Ljava/lang/Object;
 
     .line 12
     .line 13
-    .line 14
-    iput-object v0, p0, Lm22;->a:Lu94;
+    if-ne v0, v2, :cond_1
 
+    .line 14
     .line 15
+    iget p0, p0, Lm22;->b:I
+
     .line 16
-    return-void
+    .line 17
+    iget p1, p1, Lm22;->b:I
+
+    .line 18
+    .line 19
+    if-ne p0, p1, :cond_1
+
+    .line 20
+    .line 21
+    const/4 p0, 0x1
+
+    .line 22
+    return p0
+
+    .line 23
+    :cond_1
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lm22;->a:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const v1, 0xffff
+
+    .line 8
+    .line 9
+    .line 10
+    mul-int/2addr v0, v1
+
+    .line 11
+    iget p0, p0, Lm22;->b:I
+
+    .line 12
+    .line 13
+    add-int/2addr v0, p0
+
+    .line 14
+    return v0
 .end method

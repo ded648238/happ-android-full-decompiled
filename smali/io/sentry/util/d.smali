@@ -1,10 +1,10 @@
 .class public final Lio/sentry/util/d;
 .super Ljava/io/Writer;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:J
+.field public X:J
 
 
 # direct methods
@@ -21,14 +21,14 @@
 
     .line 5
     .line 6
-    iput-wide v0, p0, Lio/sentry/util/d;->Q:J
+    iput-wide v0, p0, Lio/sentry/util/d;->X:J
 
     .line 7
     .line 8
     return-void
 .end method
 
-.method public static f(C)I
+.method public static g(C)I
     .locals 2
 
     .line 1
@@ -104,11 +104,11 @@
     .locals 4
 
     .line 24
-    iget-wide v0, p0, Lio/sentry/util/d;->Q:J
+    iget-wide v0, p0, Lio/sentry/util/d;->X:J
 
     int-to-char p1, p1
 
-    invoke-static {p1}, Lio/sentry/util/d;->f(C)I
+    invoke-static {p1}, Lio/sentry/util/d;->g(C)I
 
     move-result p1
 
@@ -116,7 +116,7 @@
 
     add-long/2addr v0, v2
 
-    iput-wide v0, p0, Lio/sentry/util/d;->Q:J
+    iput-wide v0, p0, Lio/sentry/util/d;->X:J
 
     return-void
 .end method
@@ -137,7 +137,7 @@
 
     .line 5
     .line 6
-    iget-wide v1, p0, Lio/sentry/util/d;->Q:J
+    iget-wide v1, p0, Lio/sentry/util/d;->X:J
 
     .line 7
     .line 8
@@ -149,7 +149,7 @@
     move-result v3
 
     .line 12
-    invoke-static {v3}, Lio/sentry/util/d;->f(C)I
+    invoke-static {v3}, Lio/sentry/util/d;->g(C)I
 
     .line 13
     .line 14
@@ -163,7 +163,7 @@
     add-long/2addr v1, v3
 
     .line 18
-    iput-wide v1, p0, Lio/sentry/util/d;->Q:J
+    iput-wide v1, p0, Lio/sentry/util/d;->X:J
 
     .line 19
     .line 20
@@ -189,11 +189,11 @@
     if-ge v0, v1, :cond_0
 
     .line 25
-    iget-wide v1, p0, Lio/sentry/util/d;->Q:J
+    iget-wide v1, p0, Lio/sentry/util/d;->X:J
 
     aget-char v3, p1, v0
 
-    invoke-static {v3}, Lio/sentry/util/d;->f(C)I
+    invoke-static {v3}, Lio/sentry/util/d;->g(C)I
 
     move-result v3
 
@@ -201,7 +201,7 @@
 
     add-long/2addr v1, v3
 
-    iput-wide v1, p0, Lio/sentry/util/d;->Q:J
+    iput-wide v1, p0, Lio/sentry/util/d;->X:J
 
     add-int/lit8 v0, v0, 0x1
 

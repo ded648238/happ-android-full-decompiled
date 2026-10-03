@@ -1,18 +1,9 @@
 package defpackage;
 
-import android.util.ArrayMap;
+import java.util.LinkedHashSet;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class aw6 {
-    public static final aw6 b = new aw6(new ArrayMap());
-    public final ArrayMap a;
-
-    public aw6(ArrayMap arrayMap) {
-        this.a = arrayMap;
-    }
-
-    public final String toString() {
-        return "android.hardware.camera2.CaptureRequest.setTag.CX";
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public abstract class aw6 {
+    public static final LinkedHashSet a = new LinkedHashSet();
 }

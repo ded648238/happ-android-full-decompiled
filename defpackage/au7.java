@@ -1,10 +1,23 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final enum au7 extends eu7 {
-    @Override // defpackage.eu7
-    public final boolean a() {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class au7 {
+    public final int a;
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof au7) {
+            return this.a == ((au7) obj).a;
+        }
         return false;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.a);
+    }
+
+    public final String toString() {
+        int i = this.a;
+        return i == 1 ? "Linearity.Linear" : i == 2 ? "Linearity.FontHinting" : i == 3 ? "Linearity.None" : "Invalid";
     }
 }

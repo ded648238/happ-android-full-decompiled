@@ -1,6 +1,6 @@
 .class public Lcom/github/luben/zstd/ZstdDictTrainer;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -89,7 +89,7 @@
 .end method
 
 .method private copyToIntArray(Ljava/util/List;)[I
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -105,10 +105,10 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    new-array v0, v0, [I
+    new-array p0, p0, [I
 
     .line 6
     .line 7
@@ -120,7 +120,7 @@
     move-result-object p1
 
     .line 11
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 12
     :goto_0
@@ -129,10 +129,10 @@
     .line 13
     .line 14
     .line 15
-    move-result v2
+    move-result v1
 
     .line 16
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
     .line 17
     .line 18
@@ -141,26 +141,26 @@
     .line 19
     .line 20
     .line 21
-    move-result-object v2
+    move-result-object v1
 
     .line 22
-    check-cast v2, Ljava/lang/Integer;
+    check-cast v1, Ljava/lang/Integer;
 
     .line 23
     .line 24
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
     .line 25
     .line 26
     .line 27
-    move-result v2
+    move-result v1
 
     .line 28
-    aput v2, v0, v1
+    aput v1, p0, v0
 
     .line 29
     .line 30
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     .line 31
     .line 32
@@ -168,13 +168,13 @@
 
     .line 33
     :cond_0
-    return-object v0
+    return-object p0
 .end method
 
 
 # virtual methods
 .method public declared-synchronized addSample([B)Z
-    .locals 5
+    .locals 4
 
     .line 1
     monitor-enter p0
@@ -203,21 +203,21 @@
     int-to-long v2, v2
 
     .line 10
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 11
     .line 12
-    if-lez v4, :cond_0
+    if-lez v0, :cond_0
 
     .line 13
     .line 14
     monitor-exit p0
 
     .line 15
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return p1
+    return p0
 
     .line 17
     :cond_0
@@ -273,10 +273,10 @@
     monitor-exit p0
 
     .line 40
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 41
-    return p1
+    return p0
 
     .line 42
     :catchall_0
@@ -305,13 +305,13 @@
     .line 15
     invoke-virtual {p0, v0}, Lcom/github/luben/zstd/ZstdDictTrainer;->trainSamples(Z)[B
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public trainSamples(Z)[B
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/github/luben/zstd/ZstdException;
@@ -324,27 +324,27 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    invoke-virtual {p1}, Ljava/nio/Buffer;->remaining()I
+    invoke-virtual {p0}, Ljava/nio/Buffer;->remaining()I
 
     .line 6
     .line 7
     .line 8
-    move-result v0
+    move-result p1
 
     .line 9
-    new-array v0, v0, [B
+    new-array p1, p1, [B
 
     .line 10
     .line 11
-    invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
+    invoke-virtual {p0, p1}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
 
     .line 12
     .line 13
     .line 14
-    return-object v0
+    return-object p1
 .end method
 
 .method public trainSamplesDirect()Ljava/nio/ByteBuffer;
@@ -360,9 +360,9 @@
     .line 55
     invoke-virtual {p0, v0}, Lcom/github/luben/zstd/ZstdDictTrainer;->trainSamplesDirect(Z)Ljava/nio/ByteBuffer;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public declared-synchronized trainSamplesDirect(Z)Ljava/nio/ByteBuffer;

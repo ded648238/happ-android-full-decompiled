@@ -1,14 +1,16 @@
 .class public final enum Lzr3;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final enum Q:Lzr3;
+.field public static final enum X:Lzr3;
 
-.field public static final enum R:Lzr3;
+.field public static final enum Y:Lzr3;
 
-.field public static final synthetic S:[Lzr3;
+.field public static final enum Z:Lzr3;
+
+.field public static final synthetic c0:[Lzr3;
 
 
 # direct methods
@@ -20,7 +22,7 @@
 
     .line 2
     .line 3
-    const-string v1, "OnErrorDiscard"
+    const-string v1, "INVARIANT"
 
     .line 4
     .line 5
@@ -32,7 +34,7 @@
     .line 7
     .line 8
     .line 9
-    sput-object v0, Lzr3;->Q:Lzr3;
+    sput-object v0, Lzr3;->X:Lzr3;
 
     .line 10
     .line 11
@@ -40,41 +42,54 @@
 
     .line 12
     .line 13
-    const-string v3, "OnErrorRecover"
+    const-string v2, "IN"
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v1, Lzr3;->R:Lzr3;
+    sput-object v1, Lzr3;->Y:Lzr3;
 
     .line 20
     .line 21
-    const/4 v3, 0x2
+    new-instance v2, Lzr3;
 
     .line 22
-    new-array v3, v3, [Lzr3;
-
     .line 23
-    .line 24
-    aput-object v0, v3, v2
+    const-string v3, "OUT"
 
+    .line 24
     .line 25
+    const/4 v4, 0x2
+
     .line 26
-    aput-object v1, v3, v4
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
-    sput-object v3, Lzr3;->S:[Lzr3;
-
     .line 29
+    sput-object v2, Lzr3;->Z:Lzr3;
+
     .line 30
+    .line 31
+    filled-new-array {v0, v1, v2}, [Lzr3;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    sput-object v0, Lzr3;->c0:[Lzr3;
+
+    .line 36
+    .line 37
     return-void
 .end method
 
@@ -105,11 +120,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lzr3;->S:[Lzr3;
+    sget-object v0, Lzr3;->c0:[Lzr3;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, [Lzr3;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5

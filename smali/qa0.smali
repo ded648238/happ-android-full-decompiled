@@ -1,999 +1,805 @@
 .class public final Lqa0;
-.super Landroid/hardware/camera2/CameraDevice$StateCallback;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/Object;
-
-.field public final c:Ljava/lang/Object;
+.field public final a:Lrt7;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraDevice$StateCallback;)V
-    .locals 1
+.method public constructor <init>(Lrt7;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput v0, p0, Lqa0;->a:I
-
     .line 3
     .line 4
-    invoke-direct {p0}, Landroid/hardware/camera2/CameraDevice$StateCallback;-><init>()V
+    iput-object p1, p0, Lqa0;->a:Lrt7;
 
     .line 5
     .line 6
-    .line 7
-    iput-object p1, p0, Lqa0;->c:Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    iput-object p2, p0, Lqa0;->b:Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public constructor <init>(Lwa0;Lc90;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lqa0;->a:I
-
-    .line 12
-    iput-object p1, p0, Lqa0;->c:Ljava/lang/Object;
-
-    iput-object p2, p0, Lqa0;->b:Ljava/lang/Object;
-
-    invoke-direct {p0}, Landroid/hardware/camera2/CameraDevice$StateCallback;-><init>()V
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClosed(Landroid/hardware/camera2/CameraDevice;)V
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
     .line 1
-    iget v0, p0, Lqa0;->a:I
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    iget-object v1, p0, Lqa0;->c:Ljava/lang/Object;
+    goto/16 :goto_0
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    :cond_0
+    instance-of v0, p1, Lqa0;
 
     .line 6
     .line 7
+    if-nez v0, :cond_1
+
     .line 8
-    check-cast v1, Ljava/util/concurrent/Executor;
-
     .line 9
+    goto/16 :goto_1
+
     .line 10
-    new-instance v0, Lmc0;
-
     .line 11
-    .line 12
-    const/4 v2, 0x0
+    :cond_1
+    iget-object p0, p0, Lqa0;->a:Lrt7;
 
+    .line 12
     .line 13
-    invoke-direct {v0, p0, p1, v2}, Lmc0;-><init>(Lqa0;Landroid/hardware/camera2/CameraDevice;I)V
+    iget-object v0, p0, Lrt7;->a:Luk;
 
     .line 14
     .line 15
-    .line 16
-    invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    check-cast p1, Lqa0;
 
+    .line 16
     .line 17
+    iget-object p1, p1, Lqa0;->a:Lrt7;
+
     .line 18
     .line 19
-    return-void
+    iget-object v1, p1, Lrt7;->a:Luk;
 
     .line 20
-    :pswitch_0
-    check-cast v1, Lwa0;
-
     .line 21
-    .line 22
-    const-string p1, "openCameraConfigAndClose camera closed"
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 22
     .line 23
     .line 24
-    invoke-virtual {v1, p1}, Lwa0;->u(Ljava/lang/String;)V
+    move-result v0
 
     .line 25
+    if-nez v0, :cond_2
+
     .line 26
     .line 27
-    iget-object p1, p0, Lqa0;->b:Ljava/lang/Object;
+    goto :goto_1
 
     .line 28
+    :cond_2
+    iget-object v0, p0, Lrt7;->b:Lpu7;
+
     .line 29
-    check-cast p1, Lc90;
-
     .line 30
-    .line 31
-    const/4 v0, 0x0
+    iget-object v1, p1, Lrt7;->b:Lpu7;
 
+    .line 31
     .line 32
-    invoke-virtual {p1, v0}, Lc90;->b(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lpu7;->c(Lpu7;)Z
 
     .line 33
     .line 34
     .line 35
-    return-void
+    move-result v0
 
     .line 36
-    nop
-
-    .line 37
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onDisconnected(Landroid/hardware/camera2/CameraDevice;)V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lqa0;->a:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lqa0;->c:Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    check-cast v1, Ljava/util/concurrent/Executor;
-
-    .line 9
-    .line 10
-    new-instance v0, Lmc0;
-
-    .line 11
-    .line 12
-    const/4 v2, 0x1
-
-    .line 13
-    invoke-direct {v0, p0, p1, v2}, Lmc0;-><init>(Lqa0;Landroid/hardware/camera2/CameraDevice;I)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    :pswitch_0
-    check-cast v1, Lwa0;
-
-    .line 21
-    .line 22
-    const-string p1, "openCameraConfigAndClose camera disconnected"
-
-    .line 23
-    .line 24
-    invoke-virtual {v1, p1}, Lwa0;->u(Ljava/lang/String;)V
-
-    .line 25
-    .line 26
-    .line 27
-    iget-object p1, p0, Lqa0;->b:Ljava/lang/Object;
-
-    .line 28
-    .line 29
-    check-cast p1, Lc90;
-
-    .line 30
-    .line 31
-    const/4 v0, 0x0
-
-    .line 32
-    invoke-virtual {p1, v0}, Lc90;->b(Ljava/lang/Object;)Z
-
-    .line 33
-    .line 34
-    .line 35
-    return-void
-
-    .line 36
-    nop
-
-    .line 37
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onError(Landroid/hardware/camera2/CameraDevice;I)V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lqa0;->a:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lqa0;->c:Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    check-cast v1, Ljava/util/concurrent/Executor;
-
-    .line 9
-    .line 10
-    new-instance v0, Lfa0;
-
-    .line 11
-    .line 12
-    const/4 v2, 0x3
-
-    .line 13
-    invoke-direct {v0, p0, p1, p2, v2}, Lfa0;-><init>(Ljava/lang/Object;Ljava/lang/AutoCloseable;II)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    :pswitch_0
-    check-cast v1, Lwa0;
-
-    .line 21
-    .line 22
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    .line 23
-    .line 24
-    const-string v0, "openCameraConfigAndClose camera error "
-
-    .line 25
-    .line 26
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p1
-
-    .line 36
-    invoke-virtual {v1, p1}, Lwa0;->u(Ljava/lang/String;)V
+    if-nez v0, :cond_3
 
     .line 37
     .line 38
+    goto :goto_1
+
     .line 39
-    iget-object p1, p0, Lqa0;->b:Ljava/lang/Object;
+    :cond_3
+    iget-object v0, p0, Lrt7;->c:Ljava/util/List;
 
     .line 40
     .line 41
-    check-cast p1, Lc90;
+    iget-object v1, p1, Lrt7;->c:Ljava/util/List;
 
     .line 42
     .line 43
-    const/4 p2, 0x0
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 44
-    invoke-virtual {p1, p2}, Lc90;->b(Ljava/lang/Object;)Z
-
     .line 45
     .line 46
+    move-result v0
+
     .line 47
-    return-void
+    if-nez v0, :cond_4
 
     .line 48
-    nop
-
     .line 49
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
+    goto :goto_1
 
-.method public final onOpened(Landroid/hardware/camera2/CameraDevice;)V
-    .locals 25
-
-    .line 1
-    move-object/from16 v0, p0
-
-    .line 2
-    .line 3
-    move-object/from16 v1, p1
-
-    .line 4
-    .line 5
-    iget v2, v0, Lqa0;->a:I
-
-    .line 6
-    .line 7
-    iget-object v3, v0, Lqa0;->c:Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    packed-switch v2, :pswitch_data_0
-
-    .line 10
-    .line 11
-    .line 12
-    check-cast v3, Ljava/util/concurrent/Executor;
-
-    .line 13
-    .line 14
-    new-instance v2, Lmc0;
-
-    .line 15
-    .line 16
-    const/4 v4, 0x2
-
-    .line 17
-    invoke-direct {v2, v0, v1, v4}, Lmc0;-><init>(Lqa0;Landroid/hardware/camera2/CameraDevice;I)V
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-interface {v3, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    .line 21
-    .line 22
-    .line 23
-    return-void
-
-    .line 24
-    :pswitch_0
-    check-cast v3, Lwa0;
-
-    .line 25
-    .line 26
-    iget-object v2, v3, Lwa0;->S:Lj56;
-
-    .line 27
-    .line 28
-    const-string v4, "openCameraConfigAndClose camera opened"
-
-    .line 29
-    .line 30
-    invoke-virtual {v3, v4}, Lwa0;->u(Ljava/lang/String;)V
-
-    .line 31
-    .line 32
-    .line 33
-    new-instance v4, Laf0;
-
-    .line 34
-    .line 35
-    iget-object v5, v3, Lwa0;->u0:Lol1;
-
-    .line 36
-    .line 37
-    new-instance v6, Lzp;
-
-    .line 38
-    .line 39
-    sget-object v7, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
-
-    .line 40
-    .line 41
-    invoke-direct {v6, v7}, Lzp;-><init>(Ljava/util/List;)V
-
-    .line 42
-    .line 43
-    .line 44
-    const/4 v7, 0x0
-
-    .line 45
-    invoke-direct {v4, v5, v6, v7}, Laf0;-><init>(Lol1;Lzp;Z)V
-
-    .line 46
-    .line 47
-    .line 48
-    new-instance v5, Landroid/graphics/SurfaceTexture;
-
-    .line 49
     .line 50
-    invoke-direct {v5, v7}, Landroid/graphics/SurfaceTexture;-><init>(I)V
+    :cond_4
+    iget v0, p0, Lrt7;->d:I
 
     .line 51
     .line 52
+    iget v1, p1, Lrt7;->d:I
+
     .line 53
-    const/16 v6, 0x280
-
     .line 54
-    .line 55
-    const/16 v8, 0x1e0
+    if-eq v0, v1, :cond_5
 
+    .line 55
     .line 56
+    goto :goto_1
+
     .line 57
-    invoke-virtual {v5, v6, v8}, Landroid/graphics/SurfaceTexture;->setDefaultBufferSize(II)V
+    :cond_5
+    iget-boolean v0, p0, Lrt7;->e:Z
 
     .line 58
     .line 59
+    iget-boolean v1, p1, Lrt7;->e:Z
+
     .line 60
-    new-instance v6, Landroid/view/Surface;
-
     .line 61
+    if-eq v0, v1, :cond_6
+
     .line 62
-    invoke-direct {v6, v5}, Landroid/view/Surface;-><init>(Landroid/graphics/SurfaceTexture;)V
-
     .line 63
+    goto :goto_1
+
     .line 64
+    :cond_6
+    iget v0, p0, Lrt7;->f:I
+
     .line 65
-    new-instance v8, Lnm2;
-
     .line 66
-    .line 67
-    invoke-direct {v8, v6}, Lnm2;-><init>(Landroid/view/Surface;)V
+    iget v1, p1, Lrt7;->f:I
 
+    .line 67
     .line 68
+    if-ne v0, v1, :cond_b
+
     .line 69
     .line 70
-    iget-object v9, v8, Lu51;->e:Lf90;
+    iget-object v0, p0, Lrt7;->g:Laf1;
 
     .line 71
     .line 72
-    invoke-static {v9}, Lzd7;->R(Lwm3;)Lwm3;
+    iget-object v1, p1, Lrt7;->g:Laf1;
 
     .line 73
     .line 74
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 75
-    move-result-object v9
-
     .line 76
-    new-instance v10, Lfc;
-
     .line 77
+    move-result v0
+
     .line 78
-    const/4 v11, 0x7
+    if-nez v0, :cond_7
 
     .line 79
-    invoke-direct {v10, v11, v6, v5}, Lfc;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 80
-    .line 81
-    .line 82
-    invoke-static {}, Lxf5;->v()Lzd1;
+    goto :goto_1
 
+    .line 81
+    :cond_7
+    iget-object v0, p0, Lrt7;->h:Lhv3;
+
+    .line 82
     .line 83
+    iget-object v1, p1, Lrt7;->h:Lhv3;
+
     .line 84
     .line 85
-    move-result-object v5
+    if-eq v0, v1, :cond_8
 
     .line 86
-    invoke-interface {v9, v10, v5}, Lwm3;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
     .line 87
+    goto :goto_1
+
     .line 88
+    :cond_8
+    iget-object v0, p0, Lrt7;->i:Lmd2;
+
     .line 89
-    new-instance v5, Ljava/util/LinkedHashSet;
-
     .line 90
-    .line 91
-    invoke-direct {v5}, Ljava/util/LinkedHashSet;-><init>()V
+    iget-object v1, p1, Lrt7;->i:Lmd2;
 
+    .line 91
     .line 92
+    if-eq v0, v1, :cond_9
+
     .line 93
     .line 94
-    new-instance v6, Ljava/util/HashSet;
+    goto :goto_1
 
     .line 95
-    .line 96
-    invoke-direct {v6}, Ljava/util/HashSet;-><init>()V
+    :cond_9
+    iget-wide v0, p0, Lrt7;->j:J
 
+    .line 96
     .line 97
+    iget-wide p0, p1, Lrt7;->j:J
+
     .line 98
     .line 99
-    invoke-static {}, Lc94;->b()Lc94;
+    invoke-static {v0, v1, p0, p1}, Li11;->b(JJ)Z
 
     .line 100
     .line 101
     .line 102
-    move-result-object v9
+    move-result p0
 
     .line 103
-    new-instance v10, Ljava/util/ArrayList;
+    if-nez p0, :cond_a
 
     .line 104
     .line 105
-    invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
+    goto :goto_1
 
     .line 106
+    :cond_a
+    :goto_0
+    const/4 p0, 0x1
+
     .line 107
+    return p0
+
     .line 108
-    invoke-static {}, Ls94;->a()Ls94;
+    :cond_b
+    :goto_1
+    const/4 p0, 0x0
+
+    .line 109
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 9
+
+    .line 1
+    iget-object p0, p0, Lqa0;->a:Lrt7;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lrt7;->a:Luk;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Luk;->hashCode()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    const/16 v1, 0x1f
+
+    .line 10
+    .line 11
+    mul-int/2addr v0, v1
+
+    .line 12
+    iget-object v2, p0, Lrt7;->b:Lpu7;
+
+    .line 13
+    .line 14
+    iget-object v3, v2, Lpu7;->a:Ll27;
+
+    .line 15
+    .line 16
+    iget-wide v4, v3, Ll27;->b:J
+
+    .line 17
+    .line 18
+    sget-object v6, Lxu7;->b:[Lzu7;
+
+    .line 19
+    .line 20
+    invoke-static {v4, v5}, Ljava/lang/Long;->hashCode(J)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v4
+
+    .line 24
+    mul-int/2addr v4, v1
+
+    .line 25
+    iget-object v5, v3, Ll27;->c:Lke2;
+
+    .line 26
+    .line 27
+    const/4 v6, 0x0
+
+    .line 28
+    if-eqz v5, :cond_0
+
+    .line 29
+    .line 30
+    iget v5, v5, Lke2;->X:I
+
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_0
+    move v5, v6
+
+    .line 34
+    :goto_0
+    add-int/2addr v4, v5
+
+    .line 35
+    mul-int/2addr v4, v1
+
+    .line 36
+    iget-object v5, v3, Ll27;->d:Lie2;
+
+    .line 37
+    .line 38
+    if-eqz v5, :cond_1
+
+    .line 39
+    .line 40
+    iget v5, v5, Lie2;->a:I
+
+    .line 41
+    .line 42
+    invoke-static {v5}, Ljava/lang/Integer;->hashCode(I)I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v5
+
+    .line 46
+    goto :goto_1
+
+    .line 47
+    :cond_1
+    move v5, v6
+
+    .line 48
+    :goto_1
+    add-int/2addr v4, v5
+
+    .line 49
+    mul-int/2addr v4, v1
+
+    .line 50
+    iget-object v5, v3, Ll27;->e:Lje2;
+
+    .line 51
+    .line 52
+    if-eqz v5, :cond_2
+
+    .line 53
+    .line 54
+    iget v5, v5, Lje2;->a:I
+
+    .line 55
+    .line 56
+    invoke-static {v5}, Ljava/lang/Integer;->hashCode(I)I
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v5
+
+    .line 60
+    goto :goto_2
+
+    .line 61
+    :cond_2
+    move v5, v6
+
+    .line 62
+    :goto_2
+    add-int/2addr v4, v5
+
+    .line 63
+    mul-int/2addr v4, v1
+
+    .line 64
+    iget-object v5, v3, Ll27;->f:Lnd2;
+
+    .line 65
+    .line 66
+    if-eqz v5, :cond_3
+
+    .line 67
+    .line 68
+    invoke-virtual {v5}, Ljava/lang/Object;->hashCode()I
+
+    .line 69
+    .line 70
+    .line 71
+    move-result v5
+
+    .line 72
+    goto :goto_3
+
+    .line 73
+    :cond_3
+    move v5, v6
+
+    .line 74
+    :goto_3
+    add-int/2addr v4, v5
+
+    .line 75
+    mul-int/2addr v4, v1
+
+    .line 76
+    iget-object v5, v3, Ll27;->g:Ljava/lang/String;
+
+    .line 77
+    .line 78
+    if-eqz v5, :cond_4
+
+    .line 79
+    .line 80
+    invoke-virtual {v5}, Ljava/lang/String;->hashCode()I
+
+    .line 81
+    .line 82
+    .line 83
+    move-result v5
+
+    .line 84
+    goto :goto_4
+
+    .line 85
+    :cond_4
+    move v5, v6
+
+    .line 86
+    :goto_4
+    add-int/2addr v4, v5
+
+    .line 87
+    mul-int/2addr v4, v1
+
+    .line 88
+    iget-wide v7, v3, Ll27;->h:J
+
+    .line 89
+    .line 90
+    invoke-static {v4, v1, v7, v8}, Lw31;->e(IIJ)I
+
+    .line 91
+    .line 92
+    .line 93
+    move-result v4
+
+    .line 94
+    iget-object v5, v3, Ll27;->i:Lm10;
+
+    .line 95
+    .line 96
+    if-eqz v5, :cond_5
+
+    .line 97
+    .line 98
+    iget v5, v5, Lm10;->a:F
+
+    .line 99
+    .line 100
+    invoke-static {v5}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 101
+    .line 102
+    .line 103
+    move-result v5
+
+    .line 104
+    goto :goto_5
+
+    .line 105
+    :cond_5
+    move v5, v6
+
+    .line 106
+    :goto_5
+    add-int/2addr v4, v5
+
+    .line 107
+    mul-int/2addr v4, v1
+
+    .line 108
+    iget-object v5, v3, Ll27;->j:Lbt7;
 
     .line 109
     .line 110
-    .line 111
-    move-result-object v11
+    if-eqz v5, :cond_6
 
+    .line 111
     .line 112
-    new-instance v12, Ljava/util/ArrayList;
+    invoke-virtual {v5}, Lbt7;->hashCode()I
 
     .line 113
     .line 114
-    invoke-direct {v12}, Ljava/util/ArrayList;-><init>()V
-
     .line 115
+    move-result v5
+
     .line 116
+    goto :goto_6
+
     .line 117
-    new-instance v13, Ljava/util/ArrayList;
+    :cond_6
+    move v5, v6
 
     .line 118
+    :goto_6
+    add-int/2addr v4, v5
+
     .line 119
-    invoke-direct {v13}, Ljava/util/ArrayList;-><init>()V
+    mul-int/2addr v4, v1
 
     .line 120
+    iget-object v5, v3, Ll27;->k:Ld64;
+
     .line 121
     .line 122
-    new-instance v14, Ljava/util/ArrayList;
+    if-eqz v5, :cond_7
 
     .line 123
     .line 124
-    invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
+    iget-object v5, v5, Ld64;->X:Ljava/util/List;
 
     .line 125
     .line 126
-    .line 127
-    invoke-static {v8}, Lxv;->a(Lu51;)Ll5;
+    invoke-virtual {v5}, Ljava/lang/Object;->hashCode()I
 
+    .line 127
     .line 128
     .line 129
+    move-result v5
+
     .line 130
-    move-result-object v15
+    goto :goto_7
 
     .line 131
-    sget-object v7, Lll1;->d:Lll1;
+    :cond_7
+    move v5, v6
 
     .line 132
+    :goto_7
+    add-int/2addr v4, v5
+
     .line 133
-    iput-object v7, v15, Ll5;->V:Ljava/lang/Object;
+    mul-int/2addr v4, v1
 
     .line 134
-    .line 135
-    invoke-virtual {v15}, Ll5;->l()Lxv;
+    iget-wide v7, v3, Ll27;->l:J
 
+    .line 135
     .line 136
+    sget v5, Lau0;->h:I
+
     .line 137
     .line 138
-    move-result-object v7
+    invoke-static {v4, v1, v7, v8}, Lw31;->e(IIJ)I
 
     .line 139
-    invoke-interface {v5, v7}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
-
     .line 140
     .line 141
+    move-result v4
+
     .line 142
-    const-string v7, "Start configAndClose."
+    iget-object v3, v3, Ll27;->o:Lue5;
 
     .line 143
     .line 144
-    invoke-virtual {v3, v7}, Lwa0;->u(Ljava/lang/String;)V
+    if-eqz v3, :cond_8
 
     .line 145
     .line 146
-    .line 147
-    new-instance v16, Ll76;
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
 
+    .line 147
     .line 148
     .line 149
-    new-instance v7, Ljava/util/ArrayList;
+    move-result v3
 
     .line 150
+    goto :goto_8
+
     .line 151
-    invoke-direct {v7, v5}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    :cond_8
+    move v3, v6
 
     .line 152
+    :goto_8
+    add-int/2addr v4, v3
+
     .line 153
+    mul-int/2addr v4, v1
+
     .line 154
-    new-instance v5, Ljava/util/ArrayList;
+    iget-object v3, v2, Lpu7;->b:Ld65;
 
     .line 155
     .line 156
-    invoke-direct {v5, v12}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    invoke-virtual {v3}, Ld65;->hashCode()I
 
     .line 157
     .line 158
     .line 159
-    new-instance v12, Ljava/util/ArrayList;
+    move-result v3
 
     .line 160
+    add-int/2addr v3, v4
+
     .line 161
-    invoke-direct {v12, v13}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    mul-int/2addr v3, v1
 
     .line 162
+    iget-object v2, v2, Lpu7;->c:Lye5;
+
     .line 163
     .line 164
-    new-instance v13, Ljava/util/ArrayList;
+    if-eqz v2, :cond_9
 
     .line 165
     .line 166
-    invoke-direct {v13, v14}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    invoke-virtual {v2}, Lye5;->hashCode()I
 
     .line 167
     .line 168
     .line 169
-    new-instance v17, Lse0;
+    move-result v6
 
     .line 170
+    :cond_9
+    add-int/2addr v3, v6
+
     .line 171
-    new-instance v14, Ljava/util/ArrayList;
+    add-int/2addr v3, v0
 
     .line 172
+    mul-int/2addr v3, v1
+
     .line 173
-    invoke-direct {v14, v6}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    iget-object v0, p0, Lrt7;->c:Ljava/util/List;
 
     .line 174
     .line 175
-    .line 176
-    invoke-static {v9}, Lcl4;->a(Lfs0;)Lcl4;
+    invoke-static {v3, v1, v0}, Lw31;->f(IILjava/util/List;)I
 
+    .line 176
     .line 177
     .line 178
+    move-result v0
+
     .line 179
-    move-result-object v19
+    iget v2, p0, Lrt7;->d:I
 
     .line 180
-    new-instance v6, Ljava/util/ArrayList;
-
     .line 181
+    add-int/2addr v0, v2
+
     .line 182
-    invoke-direct {v6, v10}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    mul-int/2addr v0, v1
 
     .line 183
+    iget-boolean v2, p0, Lrt7;->e:Z
+
     .line 184
     .line 185
-    sget-object v9, Law6;->b:Law6;
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
     .line 186
     .line 187
-    new-instance v9, Landroid/util/ArrayMap;
-
     .line 188
+    move-result v0
+
     .line 189
-    invoke-direct {v9}, Landroid/util/ArrayMap;-><init>()V
+    iget v2, p0, Lrt7;->f:I
 
     .line 190
     .line 191
-    .line 192
-    iget-object v10, v11, Law6;->a:Landroid/util/ArrayMap;
+    invoke-static {v2, v0, v1}, Leh0;->d(III)I
 
+    .line 192
     .line 193
     .line 194
-    invoke-virtual {v10}, Landroid/util/ArrayMap;->keySet()Ljava/util/Set;
+    move-result v0
 
     .line 195
+    iget-object v2, p0, Lrt7;->g:Laf1;
+
     .line 196
     .line 197
-    move-result-object v11
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 198
-    invoke-interface {v11}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
     .line 199
     .line 200
+    move-result v2
+
     .line 201
-    move-result-object v11
+    add-int/2addr v2, v0
 
     .line 202
-    :goto_0
-    invoke-interface {v11}, Ljava/util/Iterator;->hasNext()Z
+    mul-int/2addr v2, v1
 
     .line 203
+    iget-object v0, p0, Lrt7;->h:Lhv3;
+
     .line 204
     .line 205
-    move-result v15
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 206
-    if-eqz v15, :cond_0
-
     .line 207
     .line 208
-    invoke-interface {v11}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result v0
 
     .line 209
+    add-int/2addr v0, v2
+
     .line 210
+    mul-int/2addr v0, v1
+
     .line 211
-    move-result-object v15
+    iget-object v2, p0, Lrt7;->i:Lmd2;
 
     .line 212
-    check-cast v15, Ljava/lang/String;
-
     .line 213
-    .line 214
-    invoke-virtual {v10, v15}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
+    .line 214
     .line 215
     .line 216
+    move-result v2
+
     .line 217
-    move-result-object v0
+    add-int/2addr v2, v0
 
     .line 218
-    invoke-virtual {v9, v15, v0}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    mul-int/2addr v2, v1
 
     .line 219
+    iget-wide v0, p0, Lrt7;->j:J
+
     .line 220
     .line 221
-    move-object/from16 v0, p0
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
 
     .line 222
     .line 223
-    goto :goto_0
-
     .line 224
-    :cond_0
-    new-instance v0, Law6;
+    move-result p0
 
     .line 225
+    add-int/2addr p0, v2
+
     .line 226
-    invoke-direct {v0, v9}, Law6;-><init>(Landroid/util/ArrayMap;)V
-
-    .line 227
-    .line 228
-    .line 229
-    const/16 v20, 0x1
-
-    .line 230
-    .line 231
-    const/16 v22, 0x0
-
-    .line 232
-    .line 233
-    const/16 v24, 0x0
-
-    .line 234
-    .line 235
-    move-object/from16 v23, v0
-
-    .line 236
-    .line 237
-    move-object/from16 v21, v6
-
-    .line 238
-    .line 239
-    move-object/from16 v18, v14
-
-    .line 240
-    .line 241
-    invoke-direct/range {v17 .. v24}, Lse0;-><init>(Ljava/util/ArrayList;Lcl4;ILjava/util/ArrayList;ZLaw6;Ltb0;)V
-
-    .line 242
-    .line 243
-    .line 244
-    const/16 v22, 0x0
-
-    .line 245
-    .line 246
-    const/16 v23, 0x0
-
-    .line 247
-    .line 248
-    move-object/from16 v18, v5
-
-    .line 249
-    .line 250
-    move-object/from16 v19, v12
-
-    .line 251
-    .line 252
-    move-object/from16 v20, v13
-
-    .line 253
-    .line 254
-    move-object/from16 v21, v17
-
-    .line 255
-    .line 256
-    move-object/from16 v17, v7
-
-    .line 257
-    .line 258
-    invoke-direct/range {v16 .. v24}, Ll76;-><init>(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Lse0;Lj76;Landroid/hardware/camera2/params/InputConfiguration;Lxv;)V
-
-    .line 259
-    .line 260
-    .line 261
-    move-object/from16 v0, v16
-
-    .line 262
-    .line 263
-    iget-object v3, v3, Lwa0;->o0:Lxw5;
-
-    .line 264
-    .line 265
-    new-instance v9, Lyu6;
-
-    .line 266
-    .line 267
-    iget-object v5, v3, Lxw5;->V:Ljava/lang/Object;
-
-    .line 268
-    .line 269
-    move-object v10, v5
-
-    .line 270
-    check-cast v10, Lzp;
-
-    .line 271
-    .line 272
-    iget-object v5, v3, Lxw5;->W:Ljava/lang/Object;
-
-    .line 273
-    .line 274
-    move-object v11, v5
-
-    .line 275
-    check-cast v11, Lzp;
-
-    .line 276
-    .line 277
-    iget-object v5, v3, Lxw5;->U:Ljava/lang/Object;
-
-    .line 278
-    .line 279
-    move-object v12, v5
-
-    .line 280
-    check-cast v12, Lxw5;
-
-    .line 281
-    .line 282
-    iget-object v5, v3, Lxw5;->R:Ljava/lang/Object;
-
-    .line 283
-    .line 284
-    move-object v13, v5
-
-    .line 285
-    check-cast v13, Lj56;
-
-    .line 286
-    .line 287
-    iget-object v5, v3, Lxw5;->S:Ljava/lang/Object;
-
-    .line 288
-    .line 289
-    move-object v14, v5
-
-    .line 290
-    check-cast v14, Lde2;
-
-    .line 291
-    .line 292
-    iget-object v3, v3, Lxw5;->T:Ljava/lang/Object;
-
-    .line 293
-    .line 294
-    move-object v15, v3
-
-    .line 295
-    check-cast v15, Landroid/os/Handler;
-
-    .line 296
-    .line 297
-    invoke-direct/range {v9 .. v15}, Lyu6;-><init>(Lzp;Lzp;Lxw5;Lj56;Lde2;Landroid/os/Handler;)V
-
-    .line 298
-    .line 299
-    .line 300
-    invoke-virtual {v4, v0, v1, v9}, Laf0;->m(Ll76;Landroid/hardware/camera2/CameraDevice;Lyu6;)Lwm3;
-
-    .line 301
-    .line 302
-    .line 303
-    move-result-object v0
-
-    .line 304
-    new-instance v3, Lc92;
-
-    .line 305
-    .line 306
-    const/4 v5, 0x0
-
-    .line 307
-    invoke-direct {v3, v0, v5}, Lc92;-><init>(Lwm3;I)V
-
-    .line 308
-    .line 309
-    .line 310
-    invoke-static {v3}, Lf93;->H(Ld90;)Lf90;
-
-    .line 311
-    .line 312
-    .line 313
-    move-result-object v0
-
-    .line 314
-    invoke-static {v0}, Lb92;->b(Lwm3;)Lb92;
-
-    .line 315
-    .line 316
-    .line 317
-    move-result-object v0
-
-    .line 318
-    new-instance v3, Lna0;
-
-    .line 319
-    .line 320
-    invoke-direct {v3, v5, v4, v8}, Lna0;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
-    .line 321
-    .line 322
-    .line 323
-    invoke-static {v0, v3, v2}, Lzd7;->u0(Lwm3;Les;Ljava/util/concurrent/Executor;)Leg0;
-
-    .line 324
-    .line 325
-    .line 326
-    move-result-object v0
-
-    .line 327
-    invoke-static {v1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 328
-    .line 329
-    .line 330
-    new-instance v3, Lg5;
-
-    .line 331
-    .line 332
-    const/16 v4, 0x8
-
-    .line 333
-    .line 334
-    invoke-direct {v3, v4, v1}, Lg5;-><init>(ILjava/lang/Object;)V
-
-    .line 335
-    .line 336
-    .line 337
-    invoke-virtual {v0, v3, v2}, Lb92;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    .line 338
-    .line 339
-    .line 340
-    return-void
-
-    .line 341
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return p0
 .end method

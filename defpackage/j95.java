@@ -1,81 +1,29 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class j95 {
-    public static int accessibility_action_clickable_span = 2131427350;
-    public static int accessibility_custom_action_0 = 2131427351;
-    public static int accessibility_custom_action_1 = 2131427352;
-    public static int accessibility_custom_action_10 = 2131427353;
-    public static int accessibility_custom_action_11 = 2131427354;
-    public static int accessibility_custom_action_12 = 2131427355;
-    public static int accessibility_custom_action_13 = 2131427356;
-    public static int accessibility_custom_action_14 = 2131427357;
-    public static int accessibility_custom_action_15 = 2131427358;
-    public static int accessibility_custom_action_16 = 2131427359;
-    public static int accessibility_custom_action_17 = 2131427360;
-    public static int accessibility_custom_action_18 = 2131427361;
-    public static int accessibility_custom_action_19 = 2131427362;
-    public static int accessibility_custom_action_2 = 2131427363;
-    public static int accessibility_custom_action_20 = 2131427364;
-    public static int accessibility_custom_action_21 = 2131427365;
-    public static int accessibility_custom_action_22 = 2131427366;
-    public static int accessibility_custom_action_23 = 2131427367;
-    public static int accessibility_custom_action_24 = 2131427368;
-    public static int accessibility_custom_action_25 = 2131427369;
-    public static int accessibility_custom_action_26 = 2131427370;
-    public static int accessibility_custom_action_27 = 2131427371;
-    public static int accessibility_custom_action_28 = 2131427372;
-    public static int accessibility_custom_action_29 = 2131427373;
-    public static int accessibility_custom_action_3 = 2131427374;
-    public static int accessibility_custom_action_30 = 2131427375;
-    public static int accessibility_custom_action_31 = 2131427376;
-    public static int accessibility_custom_action_4 = 2131427377;
-    public static int accessibility_custom_action_5 = 2131427378;
-    public static int accessibility_custom_action_6 = 2131427379;
-    public static int accessibility_custom_action_7 = 2131427380;
-    public static int accessibility_custom_action_8 = 2131427381;
-    public static int accessibility_custom_action_9 = 2131427382;
-    public static int action_container = 2131427401;
-    public static int action_divider = 2131427403;
-    public static int action_image = 2131427407;
-    public static int action_text = 2131427413;
-    public static int actions = 2131427414;
-    public static int async = 2131427436;
-    public static int blocking = 2131427467;
-    public static int chronometer = 2131427545;
-    public static int dialog_button = 2131427730;
-    public static int edit_text_id = 2131427854;
-    public static int forever = 2131427960;
-    public static int hide_ime_id = 2131428028;
-    public static int icon = 2131428040;
-    public static int icon_group = 2131428043;
-    public static int info = 2131428130;
-    public static int italic = 2131428141;
-    public static int line1 = 2131428200;
-    public static int line3 = 2131428201;
-    public static int normal = 2131428365;
-    public static int notification_background = 2131428367;
-    public static int notification_main_column = 2131428368;
-    public static int notification_main_column_container = 2131428369;
-    public static int right_icon = 2131428453;
-    public static int right_side = 2131428454;
-    public static int tag_accessibility_actions = 2131428639;
-    public static int tag_accessibility_clickable_spans = 2131428640;
-    public static int tag_accessibility_heading = 2131428641;
-    public static int tag_accessibility_pane_title = 2131428642;
-    public static int tag_compat_insets_dispatch = 2131428643;
-    public static int tag_on_apply_window_listener = 2131428644;
-    public static int tag_on_receive_content_listener = 2131428645;
-    public static int tag_on_receive_content_mime_types = 2131428646;
-    public static int tag_screen_reader_focusable = 2131428647;
-    public static int tag_state_description = 2131428648;
-    public static int tag_system_bar_state_monitor = 2131428649;
-    public static int tag_transition_group = 2131428650;
-    public static int tag_unhandled_key_event_manager = 2131428651;
-    public static int tag_unhandled_key_listeners = 2131428652;
-    public static int tag_window_insets_animation_callback = 2131428653;
-    public static int text = 2131428654;
-    public static int text2 = 2131428655;
-    public static int time = 2131428679;
-    public static int title = 2131428680;
+import su.happ.proxyutility.feature.proxy.PerAppProxyActivity;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class j95 implements ji2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ PerAppProxyActivity Y;
+
+    public /* synthetic */ j95(PerAppProxyActivity perAppProxyActivity, int i) {
+        this.X = i;
+        this.Y = perAppProxyActivity;
+    }
+
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        int i = this.X;
+        PerAppProxyActivity perAppProxyActivity = this.Y;
+        switch (i) {
+            case 0:
+                return perAppProxyActivity.a();
+            case 1:
+                return perAppProxyActivity.c();
+            default:
+                return perAppProxyActivity.b();
+        }
+    }
 }

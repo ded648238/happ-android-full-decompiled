@@ -1,6 +1,6 @@
 .class public final Lj$/time/format/p;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lj$/time/temporal/TemporalAccessor;
@@ -47,7 +47,78 @@
 
 
 # virtual methods
-.method public final d(Lj$/time/temporal/TemporalField;)Z
+.method public final d(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lj$/time/temporal/p;->b:Lj$/time/e;
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lj$/time/format/p;->c:Lj$/time/chrono/k;
+
+    .line 6
+    .line 7
+    return-object p0
+
+    .line 8
+    :cond_0
+    sget-object v0, Lj$/time/temporal/p;->a:Lj$/time/e;
+
+    .line 9
+    .line 10
+    if-ne p1, v0, :cond_1
+
+    .line 11
+    .line 12
+    iget-object p0, p0, Lj$/time/format/p;->d:Lj$/time/ZoneId;
+
+    .line 13
+    .line 14
+    return-object p0
+
+    .line 15
+    :cond_1
+    sget-object v0, Lj$/time/temporal/p;->c:Lj$/time/e;
+
+    .line 16
+    .line 17
+    if-ne p1, v0, :cond_2
+
+    .line 18
+    .line 19
+    iget-object p0, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
+
+    .line 20
+    .line 21
+    invoke-interface {p0, p1}, Lj$/time/temporal/TemporalAccessor;->d(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p0
+
+    .line 25
+    return-object p0
+
+    .line 26
+    :cond_2
+    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalQuery;->queryFrom(Lj$/time/temporal/TemporalAccessor;)Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p0
+
+    .line 30
+    return-object p0
+.end method
+
+.method public final i(Lj$/time/temporal/TemporalField;)Z
     .locals 2
 
     .line 1
@@ -71,49 +142,34 @@
 
     .line 10
     .line 11
-    invoke-interface {v0, p1}, Lj$/time/chrono/ChronoLocalDate;->d(Lj$/time/temporal/TemporalField;)Z
+    invoke-interface {v0, p1}, Lj$/time/chrono/ChronoLocalDate;->i(Lj$/time/temporal/TemporalField;)Z
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result p0
 
     .line 15
-    return p1
+    return p0
 
     .line 16
     :cond_0
-    iget-object v0, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
+    iget-object p0, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
 
     .line 17
     .line 18
-    invoke-interface {v0, p1}, Lj$/time/temporal/TemporalAccessor;->d(Lj$/time/temporal/TemporalField;)Z
+    invoke-interface {p0, p1}, Lj$/time/temporal/TemporalAccessor;->i(Lj$/time/temporal/TemporalField;)Z
 
     .line 19
     .line 20
     .line 21
-    move-result p1
+    move-result p0
 
     .line 22
-    return p1
+    return p0
 .end method
 
-.method public final synthetic g(Lj$/time/temporal/TemporalField;)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/time/temporal/p;->a(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    return p1
-.end method
-
-.method public final i(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+.method public final k(Lj$/time/temporal/TemporalField;)J
     .locals 2
 
     .line 1
@@ -137,31 +193,82 @@
 
     .line 10
     .line 11
-    invoke-interface {v0, p1}, Lj$/time/temporal/TemporalAccessor;->i(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+    invoke-interface {v0, p1}, Lj$/time/temporal/TemporalAccessor;->k(Lj$/time/temporal/TemporalField;)J
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result-wide p0
 
     .line 15
-    return-object p1
+    return-wide p0
 
     .line 16
     :cond_0
-    iget-object v0, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
+    iget-object p0, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
 
     .line 17
     .line 18
-    invoke-interface {v0, p1}, Lj$/time/temporal/TemporalAccessor;->i(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+    invoke-interface {p0, p1}, Lj$/time/temporal/TemporalAccessor;->k(Lj$/time/temporal/TemporalField;)J
 
     .line 19
     .line 20
     .line 21
-    move-result-object p1
+    move-result-wide p0
 
     .line 22
-    return-object p1
+    return-wide p0
+.end method
+
+.method public final l(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj$/time/format/p;->a:Lj$/time/chrono/ChronoLocalDate;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-interface {p1}, Lj$/time/temporal/TemporalField;->isDateBased()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v1
+
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    invoke-interface {v0, p1}, Lj$/time/temporal/TemporalAccessor;->l(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    return-object p0
+
+    .line 16
+    :cond_0
+    iget-object p0, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
+
+    .line 17
+    .line 18
+    invoke-interface {p0, p1}, Lj$/time/temporal/TemporalAccessor;->l(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -258,11 +365,11 @@
     .line 44
     .line 45
     .line 46
-    iget-object v3, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
+    iget-object p0, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
 
     .line 47
     .line 48
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 49
     .line 50
@@ -282,130 +389,8 @@
     .line 58
     .line 59
     .line 60
-    move-result-object v0
+    move-result-object p0
 
     .line 61
-    return-object v0
-.end method
-
-.method public final x(Lj$/time/temporal/TemporalField;)J
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lj$/time/format/p;->a:Lj$/time/chrono/ChronoLocalDate;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {p1}, Lj$/time/temporal/TemporalField;->isDateBased()Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    invoke-interface {v0, p1}, Lj$/time/temporal/TemporalAccessor;->x(Lj$/time/temporal/TemporalField;)J
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-wide v0
-
-    .line 15
-    return-wide v0
-
-    .line 16
-    :cond_0
-    iget-object v0, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
-
-    .line 17
-    .line 18
-    invoke-interface {v0, p1}, Lj$/time/temporal/TemporalAccessor;->x(Lj$/time/temporal/TemporalField;)J
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-wide v0
-
-    .line 22
-    return-wide v0
-.end method
-
-.method public final z(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/p;->b:Lj$/time/e;
-
-    .line 2
-    .line 3
-    if-ne p1, v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object p1, p0, Lj$/time/format/p;->c:Lj$/time/chrono/k;
-
-    .line 6
-    .line 7
-    return-object p1
-
-    .line 8
-    :cond_0
-    sget-object v0, Lj$/time/temporal/p;->a:Lj$/time/e;
-
-    .line 9
-    .line 10
-    if-ne p1, v0, :cond_1
-
-    .line 11
-    .line 12
-    iget-object p1, p0, Lj$/time/format/p;->d:Lj$/time/ZoneId;
-
-    .line 13
-    .line 14
-    return-object p1
-
-    .line 15
-    :cond_1
-    sget-object v0, Lj$/time/temporal/p;->c:Lj$/time/e;
-
-    .line 16
-    .line 17
-    if-ne p1, v0, :cond_2
-
-    .line 18
-    .line 19
-    iget-object v0, p0, Lj$/time/format/p;->b:Lj$/time/temporal/TemporalAccessor;
-
-    .line 20
-    .line 21
-    invoke-interface {v0, p1}, Lj$/time/temporal/TemporalAccessor;->z(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object p1
-
-    .line 25
-    return-object p1
-
-    .line 26
-    :cond_2
-    invoke-interface {p1, p0}, Lj$/time/temporal/TemporalQuery;->queryFrom(Lj$/time/temporal/TemporalAccessor;)Ljava/lang/Object;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p1
-
-    .line 30
-    return-object p1
+    return-object p0
 .end method

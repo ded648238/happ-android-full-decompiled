@@ -1,6 +1,6 @@
 .class public final enum Lorg/conscrypt/HpkeSuite$KDF;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -38,27 +38,21 @@
 
 # direct methods
 .method private static synthetic $values()[Lorg/conscrypt/HpkeSuite$KDF;
-    .locals 3
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    sget-object v0, Lorg/conscrypt/HpkeSuite$KDF;->HKDF_SHA256:Lorg/conscrypt/HpkeSuite$KDF;
 
     .line 2
-    new-array v0, v0, [Lorg/conscrypt/HpkeSuite$KDF;
-
     .line 3
-    .line 4
-    sget-object v1, Lorg/conscrypt/HpkeSuite$KDF;->HKDF_SHA256:Lorg/conscrypt/HpkeSuite$KDF;
+    filled-new-array {v0}, [Lorg/conscrypt/HpkeSuite$KDF;
 
+    .line 4
     .line 5
     .line 6
-    const/4 v2, 0x0
+    move-result-object v0
 
     .line 7
-    aput-object v1, v0, v2
-
-    .line 8
-    .line 9
     return-object v0
 .end method
 
@@ -198,7 +192,7 @@
 
     .line 22
     .line 23
-    invoke-static {p0, v0}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 24
     .line 25
@@ -206,7 +200,7 @@
     move-result-object p0
 
     .line 27
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 28
     .line 29
@@ -266,7 +260,7 @@
 
 # virtual methods
 .method public getHLength()I
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -276,25 +270,25 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public getId()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/HpkeSuite$KDF;->id:I
+    iget p0, p0, Lorg/conscrypt/HpkeSuite$KDF;->id:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getMacAlgorithmName()Ljava/lang/String;
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -304,32 +298,32 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public getMacLength()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/HpkeSuite$KDF;->hLength:I
+    iget p0, p0, Lorg/conscrypt/HpkeSuite$KDF;->hLength:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getMacName()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/HpkeSuite$KDF;->hName:Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/HpkeSuite$KDF;->hName:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public maxExportLength()J
@@ -341,19 +335,18 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    int-to-long v0, v0
+    int-to-long v0, p0
 
     .line 6
     const-wide/16 v2, 0xff
 
     .line 7
     .line 8
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     .line 9
-    .line 10
     return-wide v0
 .end method

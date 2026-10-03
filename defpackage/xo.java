@@ -1,9 +1,20 @@
 package defpackage;
 
-import su.happ.proxyutility.dto.enums.MuxQuicType;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class xo {
-    public static final String a = MuxQuicType.REJECT.getTitle();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class xo extends BroadcastReceiver {
+    public final /* synthetic */ q3 a;
+
+    public xo(q3 q3Var) {
+        this.a = q3Var;
+    }
+
+    @Override // android.content.BroadcastReceiver
+    public final void onReceive(Context context, Intent intent) {
+        this.a.o();
+    }
 }

@@ -1,20 +1,42 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum t55 implements xs2 {
-    LANGUAGE_VERSION(0),
-    COMPILER_VERSION(1),
-    API_VERSION(2);
+import android.graphics.Color;
+import androidx.leanback.widget.PagingIndicator;
 
-    public final int Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class t55 {
+    public float a;
+    public int b;
+    public float c;
+    public float d;
+    public float e;
+    public float f;
+    public float g;
+    public float h = 1.0f;
+    public float i;
+    public final /* synthetic */ PagingIndicator j;
 
-    t55(int i) {
-        this.Q = i;
+    public t55(PagingIndicator pagingIndicator) {
+        this.j = pagingIndicator;
+        this.i = pagingIndicator.c0 ? 1.0f : -1.0f;
     }
 
-    @Override // defpackage.xs2
-    public final int a() {
-        return this.Q;
+    public final void a() {
+        int round = Math.round(this.a * 255.0f);
+        PagingIndicator pagingIndicator = this.j;
+        this.b = Color.argb(round, Color.red(pagingIndicator.r0), Color.green(pagingIndicator.r0), Color.blue(pagingIndicator.r0));
+    }
+
+    public final void b() {
+        this.c = 0.0f;
+        this.d = 0.0f;
+        PagingIndicator pagingIndicator = this.j;
+        this.e = pagingIndicator.d0;
+        float f = pagingIndicator.e0;
+        this.f = f;
+        this.g = f * pagingIndicator.x0;
+        this.a = 0.0f;
+        a();
     }
 }

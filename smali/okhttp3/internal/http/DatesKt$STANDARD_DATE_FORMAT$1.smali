@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http/DatesKt$STANDARD_DATE_FORMAT$1;
 .super Ljava/lang/ThreadLocal;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -58,53 +58,53 @@
 
 # virtual methods
 .method public bridge synthetic initialValue()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 20
     invoke-virtual {p0}, Lokhttp3/internal/http/DatesKt$STANDARD_DATE_FORMAT$1;->initialValue()Ljava/text/DateFormat;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public initialValue()Ljava/text/DateFormat;
-    .locals 3
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/text/SimpleDateFormat;
+    new-instance p0, Ljava/text/SimpleDateFormat;
 
     .line 2
     .line 3
-    const-string v1, "EEE, dd MMM yyyy HH:mm:ss \'GMT\'"
+    const-string v0, "EEE, dd MMM yyyy HH:mm:ss \'GMT\'"
 
     .line 4
     .line 5
-    sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     .line 6
     .line 7
-    invoke-direct {v0, v1, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+    invoke-direct {p0, v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
     .line 8
     .line 9
     .line 10
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 11
-    invoke-virtual {v0, v1}, Ljava/text/DateFormat;->setLenient(Z)V
+    invoke-virtual {p0, v0}, Ljava/text/DateFormat;->setLenient(Z)V
 
     .line 12
     .line 13
     .line 14
-    sget-object v1, Lokhttp3/internal/Util;->UTC:Ljava/util/TimeZone;
+    sget-object v0, Lokhttp3/internal/Util;->UTC:Ljava/util/TimeZone;
 
     .line 15
     .line 16
-    invoke-virtual {v0, v1}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {p0, v0}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 17
     .line 18
     .line 19
-    return-object v0
+    return-object p0
 .end method

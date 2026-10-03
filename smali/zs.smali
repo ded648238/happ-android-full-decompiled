@@ -1,96 +1,21 @@
-.class public final synthetic Lzs;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lzs;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# static fields
-.field public static final Q:Lzs;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    .line 1
-    new-instance v0, Lzs;
-
-    .line 2
-    .line 3
-    const-string v1, "getFlags$org_jetbrains_kotlin_kotlin_metadata()I"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    const-class v3, Lab3;
-
-    .line 7
-    .line 8
-    const-string v4, "flags"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lzs;->Q:Lzs;
-
-    .line 14
-    .line 15
-    return-void
-.end method
+# interfaces
+.implements Ljava/lang/Iterable;
+.implements Lxn3;
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Lab3;
-
-    .line 2
-    .line 3
-    check-cast p2, Ljava/lang/Number;
-
-    .line 4
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p2
-
-    .line 9
-    iput p2, p1, Lab3;->a:I
-
-    .line 10
-    .line 11
-    return-void
+.method public abstract a()I
 .end method
 
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public abstract b(ILbm;)V
+.end method
 
-    .line 1
-    check-cast p1, Lab3;
+.method public abstract get(I)Ljava/lang/Object;
+.end method
 
-    .line 2
-    .line 3
-    iget p1, p1, Lab3;->a:I
-
-    .line 4
-    .line 5
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p1
-
-    .line 9
-    return-object p1
+.method public abstract iterator()Ljava/util/Iterator;
 .end method

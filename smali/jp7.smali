@@ -1,128 +1,147 @@
 .class public final Ljp7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/view/View$OnAttachStateChangeListener;
+.implements Lgp7;
 
 
 # instance fields
-.field public Q:Lna6;
+.field public final X:J
 
-.field public R:Lng6;
-
-.field public S:Lip7;
-
-.field public T:Z
+.field public final synthetic Y:Lkp7;
 
 
-# virtual methods
-.method public final onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 6
-
-    .line 1
-    iget-object p1, p0, Ljp7;->S:Lip7;
-
-    .line 2
-    .line 3
-    if-nez p1, :cond_0
-
-    .line 4
-    .line 5
-    return-void
-
-    .line 6
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 7
-    iput-boolean v0, p0, Ljp7;->T:Z
-
-    .line 8
-    .line 9
-    iget-object v0, p1, Lip7;->Q:Lnc5;
-
-    .line 10
-    .line 11
-    iget-object p1, p1, Lip7;->R:Lml2;
-
-    .line 12
-    .line 13
-    iget-object v1, v0, Lnc5;->b:Lvv0;
-
-    .line 14
-    .line 15
-    iget-object v2, v0, Lnc5;->a:Lkc5;
-
-    .line 16
-    .line 17
-    iget-object v2, v2, Lkc5;->c:Lzu6;
-
-    .line 18
-    .line 19
-    invoke-virtual {v2}, Lzu6;->getValue()Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v2
-
-    .line 23
-    check-cast v2, Lsw0;
-
-    .line 24
-    .line 25
-    new-instance v3, Llc5;
-
-    .line 26
-    .line 27
-    const/4 v4, 0x0
-
-    .line 28
-    const/4 v5, 0x0
-
-    .line 29
-    invoke-direct {v3, v0, p1, v4, v5}, Llc5;-><init>(Lnc5;Lml2;Lyv0;I)V
-
-    .line 30
-    .line 31
-    .line 32
-    const/4 v0, 0x2
-
-    .line 33
-    invoke-static {v1, v2, v3, v0}, Lwj0;->p(Lbx0;Lsw0;Lu72;I)Lx51;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v0
-
-    .line 37
-    invoke-static {p1, v0}, Lyu7;->v(Lml2;Lx51;)Lse1;
-
-    .line 38
-    .line 39
-    .line 40
-    return-void
-.end method
-
-.method public final onViewDetachedFromWindow(Landroid/view/View;)V
+# direct methods
+.method public constructor <init>(Lkp7;J)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Ljp7;->S:Lip7;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    if-eqz p1, :cond_0
+    .line 4
+    iput-object p1, p0, Ljp7;->Y:Lkp7;
+
+    .line 5
+    .line 6
+    iput-wide p2, p0, Ljp7;->X:J
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final T()Lfp7;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljp7;->Y:Lkp7;
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ld06;->v(Lie1;)Lfp7;
 
     .line 4
     .line 5
-    invoke-virtual {p1}, Lip7;->d()V
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final j(Lgv3;)J
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Ljp7;->Y:Lkp7;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Lkp7;->q0:Lx65;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lx65;->getValue()Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
+    move-result-object v0
+
+    .line 9
+    check-cast v0, Lgv3;
+
+    .line 10
+    .line 11
+    if-eqz v0, :cond_0
+
+    .line 12
+    .line 13
+    iget-wide v1, p0, Ljp7;->X:J
+
+    .line 14
+    .line 15
+    invoke-interface {p1, v0, v1, v2}, Lgv3;->B(Lgv3;J)J
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-wide p0
+
+    .line 19
+    return-wide p0
+
+    .line 20
     :cond_0
-    return-void
+    const-string p0, "Tried to open context menu before the anchor was placed."
+
+    .line 21
+    .line 22
+    invoke-static {p0}, Lj53;->d(Ljava/lang/String;)Ljava/lang/Void;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-static {}, Lku0;->k()V
+
+    .line 26
+    .line 27
+    .line 28
+    const-wide/16 p0, 0x0
+
+    .line 29
+    .line 30
+    return-wide p0
+.end method
+
+.method public final m(Lgv3;)Lix5;
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0, p1}, Ljp7;->j(Lgv3;)J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide p0
+
+    .line 5
+    const-wide/16 v0, 0x0
+
+    .line 6
+    .line 7
+    invoke-static {p0, p1, v0, v1}, Lut;->b(JJ)Lix5;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
 .end method

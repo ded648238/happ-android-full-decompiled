@@ -1,209 +1,254 @@
-.class public abstract Ldt7;
+.class public final Ldt7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final c:Ldt7;
+
+
+# instance fields
+.field public final a:J
+
+.field public final b:J
 
 
 # direct methods
-.method public static a(I)I
-    .locals 4
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    const/4 v0, 0x0
+    new-instance v0, Ldt7;
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    const/4 v2, 0x1
+    const/4 v1, 0x0
 
     .line 4
-    :goto_0
-    const/16 v3, 0x200
+    invoke-static {v1}, Lyu7;->f(I)J
 
     .line 5
     .line 6
-    if-gt v2, v3, :cond_9
-
     .line 7
+    move-result-wide v2
+
     .line 8
-    and-int v3, p0, v2
+    invoke-static {v1}, Lyu7;->f(I)J
 
     .line 9
     .line 10
-    if-eqz v3, :cond_8
-
     .line 11
+    move-result-wide v4
+
     .line 12
-    if-eq v2, v1, :cond_7
+    invoke-direct {v0, v2, v3, v4, v5}, Ldt7;-><init>(JJ)V
 
     .line 13
     .line 14
-    const/4 v3, 0x2
-
     .line 15
-    if-eq v2, v3, :cond_6
+    sput-object v0, Ldt7;->c:Ldt7;
 
     .line 16
     .line 17
-    const/4 v3, 0x4
+    return-void
+.end method
+
+.method public constructor <init>(JJ)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-wide p1, p0, Ldt7;->a:J
+
+    .line 5
+    .line 6
+    iput-wide p3, p0, Ldt7;->b:J
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Ldt7;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Ldt7;
+
+    .line 12
+    .line 13
+    iget-wide v3, p1, Ldt7;->a:J
+
+    .line 14
+    .line 15
+    iget-wide v5, p0, Ldt7;->a:J
+
+    .line 16
+    .line 17
+    invoke-static {v5, v6, v3, v4}, Lxu7;->a(JJ)Z
 
     .line 18
-    if-eq v2, v3, :cond_5
-
     .line 19
     .line 20
-    const/16 v3, 0x8
+    move-result v1
 
     .line 21
-    .line 22
-    if-eq v2, v3, :cond_4
+    if-nez v1, :cond_2
 
+    .line 22
     .line 23
+    return v2
+
     .line 24
-    const/16 v3, 0x10
+    :cond_2
+    iget-wide v3, p0, Ldt7;->b:J
 
     .line 25
     .line 26
-    if-eq v2, v3, :cond_3
+    iget-wide p0, p1, Ldt7;->b:J
 
     .line 27
     .line 28
-    const/16 v3, 0x20
+    invoke-static {v3, v4, p0, p1}, Lxu7;->a(JJ)Z
 
     .line 29
     .line 30
-    if-eq v2, v3, :cond_2
-
     .line 31
+    move-result p0
+
     .line 32
-    const/16 v3, 0x40
+    if-nez p0, :cond_3
 
     .line 33
     .line 34
-    if-eq v2, v3, :cond_1
+    return v2
 
     .line 35
-    .line 36
-    const/16 v3, 0x80
-
-    .line 37
-    .line 38
-    if-eq v2, v3, :cond_0
-
-    .line 39
-    .line 40
-    goto :goto_2
-
-    .line 41
-    :cond_0
-    invoke-static {}, Landroid/view/WindowInsets$Type;->displayCutout()I
-
-    .line 42
-    .line 43
-    .line 44
-    move-result v3
-
-    .line 45
-    :goto_1
-    or-int/2addr v0, v3
-
-    .line 46
-    goto :goto_2
-
-    .line 47
-    :cond_1
-    invoke-static {}, Landroid/view/WindowInsets$Type;->tappableElement()I
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v3
-
-    .line 51
-    goto :goto_1
-
-    .line 52
-    :cond_2
-    invoke-static {}, Landroid/view/WindowInsets$Type;->mandatorySystemGestures()I
-
-    .line 53
-    .line 54
-    .line 55
-    move-result v3
-
-    .line 56
-    goto :goto_1
-
-    .line 57
     :cond_3
-    invoke-static {}, Landroid/view/WindowInsets$Type;->systemGestures()I
-
-    .line 58
-    .line 59
-    .line 60
-    move-result v3
-
-    .line 61
-    goto :goto_1
-
-    .line 62
-    :cond_4
-    invoke-static {}, Landroid/view/WindowInsets$Type;->ime()I
-
-    .line 63
-    .line 64
-    .line 65
-    move-result v3
-
-    .line 66
-    goto :goto_1
-
-    .line 67
-    :cond_5
-    invoke-static {}, Landroid/view/WindowInsets$Type;->captionBar()I
-
-    .line 68
-    .line 69
-    .line 70
-    move-result v3
-
-    .line 71
-    goto :goto_1
-
-    .line 72
-    :cond_6
-    invoke-static {}, Landroid/view/WindowInsets$Type;->navigationBars()I
-
-    .line 73
-    .line 74
-    .line 75
-    move-result v3
-
-    .line 76
-    goto :goto_1
-
-    .line 77
-    :cond_7
-    invoke-static {}, Landroid/view/WindowInsets$Type;->statusBars()I
-
-    .line 78
-    .line 79
-    .line 80
-    move-result v3
-
-    .line 81
-    goto :goto_1
-
-    .line 82
-    :cond_8
-    :goto_2
-    shl-int/lit8 v2, v2, 0x1
-
-    .line 83
-    .line 84
-    goto :goto_0
-
-    .line 85
-    :cond_9
     return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    sget-object v0, Lxu7;->b:[Lzu7;
+
+    .line 2
+    .line 3
+    iget-wide v0, p0, Ldt7;->a:J
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 10
+    .line 11
+    iget-wide v1, p0, Ldt7;->b:J
+
+    .line 12
+    .line 13
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p0
+
+    .line 17
+    add-int/2addr p0, v0
+
+    .line 18
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    iget-wide v0, p0, Ldt7;->a:J
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Lxu7;->e(J)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iget-wide v1, p0, Ldt7;->b:J
+
+    .line 8
+    .line 9
+    invoke-static {v1, v2}, Lxu7;->e(J)Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    const-string v1, ", restLine="
+
+    .line 14
+    .line 15
+    const-string v2, ")"
+
+    .line 16
+    .line 17
+    const-string v3, "TextIndent(firstLine="
+
+    .line 18
+    .line 19
+    invoke-static {v3, v0, v1, p0, v2}, Leh0;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
+    return-object p0
 .end method

@@ -1,132 +1,137 @@
-.class public final La26;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum La26;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final a:Lty2;
+# static fields
+.field public static final X:Lep4;
 
-.field public final b:Lwt6;
+.field public static final enum Y:La26;
 
-.field public c:Ljava/lang/Object;
+.field public static final enum Z:La26;
 
-.field public d:I
-
-.field public final synthetic e:Lc26;
+.field public static final synthetic c0:[La26;
 
 
 # direct methods
-.method public constructor <init>(Lc26;Lty2;Lwt6;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    sget-object v0, Lry2;->Q:Lry2;
+    new-instance v0, La26;
 
     .line 2
     .line 3
-    sget-object v0, Lsy2;->Q:Lsy2;
+    const-string v1, "FORCE"
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x0
 
     .line 6
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 7
     .line 8
-    iput-object p1, p0, La26;->e:Lc26;
-
     .line 9
-    .line 10
-    iput-object p2, p0, La26;->a:Lty2;
-
-    .line 11
-    .line 12
-    iput-object p3, p0, La26;->b:Lwt6;
-
-    .line 13
-    .line 14
-    const/4 p1, -0x1
-
-    .line 15
-    iput p1, p0, La26;->d:I
-
-    .line 16
-    .line 17
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, La26;->c:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    instance-of v1, v0, Lw16;
-
-    .line 4
-    .line 5
-    if-eqz v1, :cond_0
-
-    .line 6
-    .line 7
-    check-cast v0, Lw16;
-
-    .line 8
-    .line 9
-    iget v1, p0, La26;->d:I
+    sput-object v0, La26;->Y:La26;
 
     .line 10
     .line 11
-    iget-object v2, p0, La26;->e:Lc26;
+    new-instance v1, La26;
 
     .line 12
     .line 13
-    iget-object v2, v2, Lc26;->Q:Lsw0;
+    const-string v2, "OPTIONAL"
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1, v2}, Lw16;->m(ILsw0;)V
+    const/4 v3, 0x1
 
     .line 16
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 17
     .line 18
-    return-void
-
     .line 19
-    :cond_0
-    instance-of v1, v0, Lxe1;
+    sput-object v1, La26;->Z:La26;
 
     .line 20
     .line 21
-    if-eqz v1, :cond_1
+    filled-new-array {v0, v1}, [La26;
 
     .line 22
     .line 23
-    check-cast v0, Lxe1;
-
     .line 24
+    move-result-object v0
+
     .line 25
-    goto :goto_0
+    sput-object v0, La26;->c0:[La26;
 
     .line 26
-    :cond_1
-    const/4 v0, 0x0
-
     .line 27
-    :goto_0
-    if-eqz v0, :cond_2
+    new-instance v0, Lep4;
 
     .line 28
     .line 29
-    invoke-interface {v0}, Lxe1;->a()V
+    const/16 v1, 0xf
 
     .line 30
     .line 31
+    invoke-direct {v0, v1}, Lep4;-><init>(I)V
+
     .line 32
-    :cond_2
+    .line 33
+    .line 34
+    sput-object v0, La26;->X:Lep4;
+
+    .line 35
+    .line 36
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)La26;
+    .locals 1
+
+    .line 1
+    const-class v0, La26;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, La26;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[La26;
+    .locals 1
+
+    .line 1
+    sget-object v0, La26;->c0:[La26;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [La26;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

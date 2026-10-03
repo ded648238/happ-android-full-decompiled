@@ -1,26 +1,35 @@
 package defpackage;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import java.util.concurrent.TimeUnit;
+import android.os.CountDownTimer;
+import su.happ.proxyutility.feature.statistics.StatisticsSettingsActivity;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class q67 extends BroadcastReceiver {
-    public r67 a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class q67 extends CountDownTimer {
+    public final /* synthetic */ StatisticsSettingsActivity a;
 
-    @Override // android.content.BroadcastReceiver
-    public final synchronized void onReceive(Context context, Intent intent) {
-        r67 r67Var = this.a;
-        if (r67Var == null) {
-            return;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public q67(StatisticsSettingsActivity statisticsSettingsActivity) {
+        super(Long.MAX_VALUE, 1000L);
+        this.a = statisticsSettingsActivity;
+    }
+
+    @Override // android.os.CountDownTimer
+    public final void onFinish() {
+        int i = StatisticsSettingsActivity.T0;
+        StatisticsSettingsActivity statisticsSettingsActivity = this.a;
+        if (statisticsSettingsActivity.R0 == null) {
+            q67 q67Var = new q67(statisticsSettingsActivity);
+            statisticsSettingsActivity.R0 = q67Var;
+            q67Var.start();
         }
-        if (r67Var.c()) {
-            r67 r67Var2 = this.a;
-            r67Var2.T.f.schedule(r67Var2, 0L, TimeUnit.SECONDS);
-            context.unregisterReceiver(this);
-            this.a = null;
-        }
+    }
+
+    @Override // android.os.CountDownTimer
+    public final void onTick(long j) {
+        StatisticsSettingsActivity statisticsSettingsActivity = this.a;
+        long j2 = statisticsSettingsActivity.S0 + 1000;
+        statisticsSettingsActivity.S0 = j2;
+        statisticsSettingsActivity.z(j2);
     }
 }

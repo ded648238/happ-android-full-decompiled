@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/NativeConstants;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -26,8 +26,6 @@
 
 .field static final NID_X25519:I = 0x3b4
 
-.field static final NID_X25519Kyber768Draft00:I = 0x3c4
-
 .field static final NID_X25519MLKEM768:I = 0x3c5
 
 .field static final NID_X9_62_prime256v1:I = 0x19f
@@ -35,6 +33,8 @@
 .field static final NID_secp384r1:I = 0x2cb
 
 .field static final NID_secp521r1:I = 0x2cc
+
+.field static final NID_sha384:I = 0x2a1
 
 .field static final RSA_NO_PADDING:I = 0x3
 

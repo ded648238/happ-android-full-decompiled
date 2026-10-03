@@ -1,225 +1,512 @@
 .class public final Liv2;
-.super Landroid/view/GestureDetector$SimpleOnGestureListener;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lcn4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lof5;
 
 
 # instance fields
-.field public a:Z
+.field public n0:Lrp4;
 
-.field public final synthetic b:Ljv2;
+.field public o0:Lcv2;
 
 
 # direct methods
-.method public constructor <init>(Ljv2;)V
-    .locals 0
+.method public static final U0(Liv2;Ld31;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iput-object p1, p0, Liv2;->b:Ljv2;
+    instance-of v0, p1, Lfv2;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    .line 6
-    const/4 p1, 0x1
-
-    .line 7
-    iput-boolean p1, p0, Liv2;->a:Z
-
-    .line 8
-    .line 9
-    return-void
-.end method
-
-
-# virtual methods
-.method public final onDown(Landroid/view/MotionEvent;)Z
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x1
-
-    .line 2
-    return p1
-.end method
-
-.method public final onLongPress(Landroid/view/MotionEvent;)V
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, Liv2;->b:Ljv2;
-
-    .line 2
-    .line 3
-    iget-object v1, v0, Ljv2;->m:Ltr1;
-
-    .line 4
-    .line 5
-    iget-boolean v2, p0, Liv2;->a:Z
+    move-object v0, p1
 
     .line 6
+    check-cast v0, Lfv2;
+
     .line 7
-    if-nez v2, :cond_0
-
     .line 8
-    .line 9
-    goto :goto_0
+    iget v1, v0, Lfv2;->f0:I
 
+    .line 9
     .line 10
-    :cond_0
-    invoke-virtual {v0, p1}, Ljv2;->m(Landroid/view/MotionEvent;)Landroid/view/View;
+    const/high16 v2, -0x80000000
 
     .line 11
     .line 12
-    .line 13
-    move-result-object v2
+    and-int v3, v1, v2
 
+    .line 13
     .line 14
-    if-eqz v2, :cond_1
+    if-eqz v3, :cond_0
 
     .line 15
     .line 16
-    iget-object v3, v0, Ljv2;->r:Landroidx/recyclerview/widget/RecyclerView;
+    sub-int/2addr v1, v2
 
     .line 17
+    iput v1, v0, Lfv2;->f0:I
+
     .line 18
-    invoke-virtual {v3, v2}, Landroidx/recyclerview/widget/RecyclerView;->M(Landroid/view/View;)Landroidx/recyclerview/widget/l;
-
     .line 19
-    .line 20
-    .line 21
-    move-result-object v2
+    goto :goto_0
 
+    .line 20
+    :cond_0
+    new-instance v0, Lfv2;
+
+    .line 21
     .line 22
-    if-eqz v2, :cond_1
+    invoke-direct {v0, p0, p1}, Lfv2;-><init>(Liv2;Ld31;)V
 
     .line 23
     .line 24
-    iget-object v3, v0, Ljv2;->r:Landroidx/recyclerview/widget/RecyclerView;
-
     .line 25
-    .line 26
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :goto_0
+    iget-object p1, v0, Lfv2;->d0:Ljava/lang/Object;
 
+    .line 26
     .line 27
+    iget v1, v0, Lfv2;->f0:I
+
     .line 28
     .line 29
-    iget v4, v1, Ltr1;->b:I
+    const/4 v2, 0x1
 
     .line 30
+    if-eqz v1, :cond_2
+
     .line 31
-    shl-int/lit8 v5, v4, 0x8
-
     .line 32
-    .line 33
-    or-int/2addr v4, v5
+    if-ne v1, v2, :cond_1
 
+    .line 33
     .line 34
-    invoke-virtual {v3}, Landroid/view/View;->getLayoutDirection()I
+    iget-object v0, v0, Lfv2;->c0:Lcv2;
 
     .line 35
     .line 36
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
     .line 37
-    move-result v3
-
     .line 38
-    invoke-static {v4, v3}, Ltr1;->b(II)I
-
     .line 39
-    .line 40
-    .line 41
-    move-result v3
+    goto :goto_1
 
+    .line 40
+    :cond_1
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 41
     .line 42
-    const/high16 v4, 0xff0000
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 43
     .line 44
-    and-int/2addr v3, v4
-
     .line 45
-    if-eqz v3, :cond_1
+    const/4 p0, 0x0
 
     .line 46
+    return-object p0
+
     .line 47
-    const/4 v3, 0x0
+    :cond_2
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
 
     .line 48
-    invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->getPointerId(I)I
-
     .line 49
     .line 50
-    .line 51
-    move-result v3
+    iget-object p1, p0, Liv2;->o0:Lcv2;
 
+    .line 51
     .line 52
-    iget v4, v0, Ljv2;->l:I
+    if-nez p1, :cond_4
 
     .line 53
     .line 54
-    if-ne v3, v4, :cond_1
+    new-instance p1, Lcv2;
 
     .line 55
     .line 56
-    invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->findPointerIndex(I)I
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     .line 57
     .line 58
     .line 59
-    move-result v3
+    iget-object v1, p0, Liv2;->n0:Lrp4;
 
     .line 60
-    invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->getX(I)F
-
     .line 61
+    iput-object p1, v0, Lfv2;->c0:Lcv2;
+
     .line 62
     .line 63
-    move-result v4
+    iput v2, v0, Lfv2;->f0:I
 
     .line 64
-    invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->getY(I)F
-
     .line 65
+    invoke-virtual {v1, p1, v0}, Lrp4;->a(Lf83;Lb31;)Ljava/lang/Object;
+
     .line 66
     .line 67
-    move-result p1
-
     .line 68
-    iput v4, v0, Ljv2;->d:F
+    move-result-object v0
 
     .line 69
+    sget-object v1, Lj41;->X:Lj41;
+
     .line 70
-    iput p1, v0, Ljv2;->e:F
-
     .line 71
-    .line 72
-    const/4 p1, 0x0
+    if-ne v0, v1, :cond_3
 
+    .line 72
     .line 73
-    iput p1, v0, Ljv2;->i:F
+    return-object v1
 
     .line 74
+    :cond_3
+    move-object v0, p1
+
     .line 75
-    iput p1, v0, Ljv2;->h:F
+    :goto_1
+    iput-object v0, p0, Liv2;->o0:Lcv2;
 
     .line 76
     .line 77
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :cond_4
+    sget-object p0, Lr98;->a:Lr98;
 
     .line 78
     .line 79
-    .line 80
-    const/4 p1, 0x2
+    return-object p0
+.end method
 
-    .line 81
-    invoke-virtual {v0, v2, p1}, Ljv2;->q(Landroidx/recyclerview/widget/l;I)V
+.method public static final V0(Liv2;Ld31;)Ljava/lang/Object;
+    .locals 4
 
-    .line 82
-    .line 83
-    .line 84
-    :cond_1
+    .line 1
+    instance-of v0, p1, Lgv2;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    move-object v0, p1
+
+    .line 6
+    check-cast v0, Lgv2;
+
+    .line 7
+    .line 8
+    iget v1, v0, Lgv2;->e0:I
+
+    .line 9
+    .line 10
+    const/high16 v2, -0x80000000
+
+    .line 11
+    .line 12
+    and-int v3, v1, v2
+
+    .line 13
+    .line 14
+    if-eqz v3, :cond_0
+
+    .line 15
+    .line 16
+    sub-int/2addr v1, v2
+
+    .line 17
+    iput v1, v0, Lgv2;->e0:I
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    new-instance v0, Lgv2;
+
+    .line 21
+    .line 22
+    invoke-direct {v0, p0, p1}, Lgv2;-><init>(Liv2;Ld31;)V
+
+    .line 23
+    .line 24
+    .line 25
     :goto_0
+    iget-object p1, v0, Lgv2;->c0:Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    iget v1, v0, Lgv2;->e0:I
+
+    .line 28
+    .line 29
+    const/4 v2, 0x0
+
+    .line 30
+    const/4 v3, 0x1
+
+    .line 31
+    if-eqz v1, :cond_2
+
+    .line 32
+    .line 33
+    if-ne v1, v3, :cond_1
+
+    .line 34
+    .line 35
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 36
+    .line 37
+    .line 38
+    goto :goto_1
+
+    .line 39
+    :cond_1
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 40
+    .line 41
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 42
+    .line 43
+    .line 44
+    return-object v2
+
+    .line 45
+    :cond_2
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object p1, p0, Liv2;->o0:Lcv2;
+
+    .line 49
+    .line 50
+    if-eqz p1, :cond_4
+
+    .line 51
+    .line 52
+    new-instance v1, Ldv2;
+
+    .line 53
+    .line 54
+    invoke-direct {v1, p1}, Ldv2;-><init>(Lcv2;)V
+
+    .line 55
+    .line 56
+    .line 57
+    iget-object p1, p0, Liv2;->n0:Lrp4;
+
+    .line 58
+    .line 59
+    iput v3, v0, Lgv2;->e0:I
+
+    .line 60
+    .line 61
+    invoke-virtual {p1, v1, v0}, Lrp4;->a(Lf83;Lb31;)Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object p1
+
+    .line 65
+    sget-object v0, Lj41;->X:Lj41;
+
+    .line 66
+    .line 67
+    if-ne p1, v0, :cond_3
+
+    .line 68
+    .line 69
+    return-object v0
+
+    .line 70
+    :cond_3
+    :goto_1
+    iput-object v2, p0, Liv2;->o0:Lcv2;
+
+    .line 71
+    .line 72
+    :cond_4
+    sget-object p0, Lr98;->a:Lr98;
+
+    .line 73
+    .line 74
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final K()V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Liv2;->W0()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final N0()V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Liv2;->W0()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final W0()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Liv2;->o0:Lcv2;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v1, Ldv2;
+
+    .line 6
+    .line 7
+    invoke-direct {v1, v0}, Ldv2;-><init>(Lcv2;)V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object v0, p0, Liv2;->n0:Lrp4;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v1}, Lrp4;->b(Lf83;)V
+
+    .line 13
+    .line 14
+    .line 15
+    const/4 v0, 0x0
+
+    .line 16
+    iput-object v0, p0, Liv2;->o0:Lcv2;
+
+    .line 17
+    .line 18
+    :cond_0
+    return-void
+.end method
+
+.method public final y(Lef5;Lff5;J)V
+    .locals 1
+
+    .line 1
+    sget-object p3, Lff5;->Y:Lff5;
+
+    .line 2
+    .line 3
+    if-ne p2, p3, :cond_1
+
+    .line 4
+    .line 5
+    iget p1, p1, Lef5;->f:I
+
+    .line 6
+    .line 7
+    const/4 p2, 0x4
+
+    .line 8
+    const/4 p3, 0x3
+
+    .line 9
+    const/4 p4, 0x0
+
+    .line 10
+    if-ne p1, p2, :cond_0
+
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Lcn4;->I0()Li41;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    new-instance p2, Lhv2;
+
+    .line 17
+    .line 18
+    const/4 v0, 0x0
+
+    .line 19
+    invoke-direct {p2, p0, p4, v0}, Lhv2;-><init>(Liv2;Lb31;I)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-static {p1, p4, p4, p2, p3}, Ld01;->G(Li41;Lz31;Ll41;Lxi2;I)Lk47;
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    :cond_0
+    const/4 p2, 0x5
+
+    .line 27
+    if-ne p1, p2, :cond_1
+
+    .line 28
+    .line 29
+    invoke-virtual {p0}, Lcn4;->I0()Li41;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    new-instance p2, Lhv2;
+
+    .line 34
+    .line 35
+    const/4 v0, 0x1
+
+    .line 36
+    invoke-direct {p2, p0, p4, v0}, Lhv2;-><init>(Liv2;Lb31;I)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-static {p1, p4, p4, p2, p3}, Ld01;->G(Li41;Lz31;Ll41;Lxi2;I)Lk47;
+
+    .line 40
+    .line 41
+    .line 42
+    :cond_1
     return-void
 .end method

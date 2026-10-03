@@ -1,29 +1,19 @@
-.class public final synthetic Lu25;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lu25;
+.super Lw1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lu72;
+.implements Ljava/util/RandomAccess;
 
 
 # instance fields
-.field public final synthetic Q:Le64;
+.field public final X:[Lo90;
 
-.field public final synthetic R:J
-
-.field public final synthetic S:F
-
-.field public final synthetic T:J
-
-.field public final synthetic U:I
-
-.field public final synthetic V:F
-
-.field public final synthetic W:I
+.field public final Y:[I
 
 
 # direct methods
-.method public synthetic constructor <init>(Le64;JFJIFI)V
+.method public constructor <init>([Lo90;[I)V
     .locals 0
 
     .line 1
@@ -32,107 +22,146 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lu25;->Q:Le64;
+    iput-object p1, p0, Lu25;->X:[Lo90;
 
     .line 5
     .line 6
-    iput-wide p2, p0, Lu25;->R:J
+    iput-object p2, p0, Lu25;->Y:[I
 
     .line 7
     .line 8
-    iput p4, p0, Lu25;->S:F
-
-    .line 9
-    .line 10
-    iput-wide p5, p0, Lu25;->T:J
-
-    .line 11
-    .line 12
-    iput p7, p0, Lu25;->U:I
-
-    .line 13
-    .line 14
-    iput p8, p0, Lu25;->V:F
-
-    .line 15
-    .line 16
-    iput p9, p0, Lu25;->W:I
-
-    .line 17
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 10
+.method public final a()I
+    .locals 0
 
     .line 1
-    move-object v8, p1
+    iget-object p0, p0, Lu25;->X:[Lo90;
 
     .line 2
-    check-cast v8, Luq0;
-
     .line 3
-    .line 4
-    check-cast p2, Ljava/lang/Integer;
+    array-length p0, p0
 
+    .line 4
+    return p0
+.end method
+
+.method public final bridge contains(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Lo90;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
     .line 5
+    const/4 p0, 0x0
+
     .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    return p0
 
     .line 7
+    :cond_0
+    check-cast p1, Lo90;
+
     .line 8
     .line 9
-    iget p1, p0, Lu25;->W:I
+    invoke-super {p0, p1}, Lx0;->contains(Ljava/lang/Object;)Z
 
     .line 10
     .line 11
-    or-int/lit8 p1, p1, 0x1
-
     .line 12
+    move-result p0
+
     .line 13
-    invoke-static {p1}, Luy7;->X(I)I
+    return p0
+.end method
 
-    .line 14
-    .line 15
-    .line 16
-    move-result v9
+.method public final get(I)Ljava/lang/Object;
+    .locals 0
 
-    .line 17
-    iget-object v0, p0, Lu25;->Q:Le64;
+    .line 1
+    iget-object p0, p0, Lu25;->X:[Lo90;
 
-    .line 18
-    .line 19
-    iget-wide v1, p0, Lu25;->R:J
+    .line 2
+    .line 3
+    aget-object p0, p0, p1
 
-    .line 20
-    .line 21
-    iget v3, p0, Lu25;->S:F
+    .line 4
+    .line 5
+    return-object p0
+.end method
 
-    .line 22
-    .line 23
-    iget-wide v4, p0, Lu25;->T:J
+.method public final bridge indexOf(Ljava/lang/Object;)I
+    .locals 1
 
-    .line 24
-    .line 25
-    iget v6, p0, Lu25;->U:I
+    .line 1
+    instance-of v0, p1, Lo90;
 
-    .line 26
-    .line 27
-    iget v7, p0, Lu25;->V:F
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
 
-    .line 28
-    .line 29
-    invoke-static/range {v0 .. v9}, Lv25;->a(Le64;JFJIFLuq0;I)V
+    .line 4
+    .line 5
+    const/4 p0, -0x1
 
-    .line 30
-    .line 31
-    .line 32
-    sget-object p1, Lbh7;->a:Lbh7;
+    .line 6
+    return p0
 
-    .line 33
-    .line 34
-    return-object p1
+    .line 7
+    :cond_0
+    check-cast p1, Lo90;
+
+    .line 8
+    .line 9
+    invoke-super {p0, p1}, Lw1;->indexOf(Ljava/lang/Object;)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p0
+
+    .line 13
+    return p0
+.end method
+
+.method public final bridge lastIndexOf(Ljava/lang/Object;)I
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Lo90;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, -0x1
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    check-cast p1, Lo90;
+
+    .line 8
+    .line 9
+    invoke-super {p0, p1}, Lw1;->lastIndexOf(Ljava/lang/Object;)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p0
+
+    .line 13
+    return p0
 .end method

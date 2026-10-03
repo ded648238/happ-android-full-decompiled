@@ -1,228 +1,349 @@
 .class public final Lio/sentry/n0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# static fields
-.field public static volatile g:Lio/sentry/n0;
-
-.field public static final h:Lio/sentry/util/a;
+# interfaces
+.implements Ljava/util/concurrent/ThreadFactory;
 
 
 # instance fields
-.field public final a:J
+.field public final synthetic a:I
 
-.field public volatile b:Ljava/lang/String;
-
-.field public volatile c:J
-
-.field public final d:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field public final e:Lio/sentry/l0;
-
-.field public final f:Ljava/util/concurrent/ExecutorService;
+.field public b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lio/sentry/util/a;
+    iput p1, p0, Lio/sentry/n0;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lio/sentry/n0;->h:Lio/sentry/util/a;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 3
-
-    .line 1
-    new-instance v0, Lio/sentry/l0;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-direct {v0, v1}, Lio/sentry/l0;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
-    .line 9
-    .line 10
-    new-instance v1, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 11
-    .line 12
-    const/4 v2, 0x0
-
-    .line 13
-    invoke-direct {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    .line 14
-    .line 15
-    .line 16
-    iput-object v1, p0, Lio/sentry/n0;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 17
-    .line 18
-    new-instance v1, Lio/sentry/m0;
-
-    .line 19
-    .line 20
-    invoke-direct {v1, v2}, Lio/sentry/m0;-><init>(I)V
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-static {v1}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v1
-
-    .line 27
-    iput-object v1, p0, Lio/sentry/n0;->f:Ljava/util/concurrent/ExecutorService;
-
-    .line 28
-    .line 29
-    const-wide/32 v1, 0x112a880
-
-    .line 30
-    .line 31
-    .line 32
-    iput-wide v1, p0, Lio/sentry/n0;->a:J
-
-    .line 33
-    .line 34
-    iput-object v0, p0, Lio/sentry/n0;->e:Lio/sentry/l0;
-
-    .line 35
-    .line 36
-    invoke-virtual {p0}, Lio/sentry/n0;->a()V
-
-    .line 37
-    .line 38
-    .line 39
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
+.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 5
 
     .line 1
-    new-instance v0, Lyj2;
+    iget v0, p0, Lio/sentry/n0;->a:I
 
     .line 2
     .line 3
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
     .line 4
-    invoke-direct {v0, v1, p0}, Lyj2;-><init>(ILjava/lang/Object;)V
+    packed-switch v0, :pswitch_data_0
 
     .line 5
     .line 6
     .line 7
-    const-wide/16 v1, 0x3e8
+    new-instance v0, Ljava/lang/Thread;
 
     .line 8
     .line 9
-    :try_start_0
-    iget-object v3, p0, Lio/sentry/n0;->f:Ljava/util/concurrent/ExecutorService;
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 10
     .line 11
-    invoke-interface {v3, v0}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
+    const-string v3, "SentryAsyncConnection-"
 
     .line 12
     .line 13
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 14
-    move-result-object v0
-
     .line 15
-    sget-object v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
     .line 16
-    .line 17
-    invoke-interface {v0, v1, v2, v3}, Ljava/util/concurrent/Future;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/util/concurrent/TimeoutException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    iget v3, p0, Lio/sentry/n0;->b:I
 
+    .line 17
     .line 18
+    add-int/lit8 v4, v3, 0x1
+
     .line 19
     .line 20
-    return-void
+    iput v4, p0, Lio/sentry/n0;->b:I
 
     .line 21
-    :catch_0
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
     .line 22
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 23
     .line 24
-    move-result-wide v3
-
     .line 25
-    add-long/2addr v3, v1
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 26
-    iput-wide v3, p0, Lio/sentry/n0;->c:J
-
     .line 27
     .line 28
-    goto :goto_0
+    move-result-object p0
 
     .line 29
-    :catch_1
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+    invoke-direct {v0, p1, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
     .line 30
     .line 31
     .line 32
-    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/Thread;->setDaemon(Z)V
 
     .line 33
-    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
-
     .line 34
     .line 35
+    return-object v0
+
     .line 36
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    :pswitch_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 37
     .line 38
     .line 39
-    move-result-wide v3
+    new-instance v0, Ljava/lang/Thread;
 
     .line 40
-    add-long/2addr v3, v1
-
     .line 41
-    iput-wide v3, p0, Lio/sentry/n0;->c:J
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 42
     .line 43
-    :goto_0
-    return-void
+    const-string v3, "SentryReplayPersister-"
+
+    .line 44
+    .line 45
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    iget v3, p0, Lio/sentry/n0;->b:I
+
+    .line 49
+    .line 50
+    add-int/lit8 v4, v3, 0x1
+
+    .line 51
+    .line 52
+    iput v4, p0, Lio/sentry/n0;->b:I
+
+    .line 53
+    .line 54
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p0
+
+    .line 61
+    invoke-direct {v0, p1, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {v0, v1}, Ljava/lang/Thread;->setDaemon(Z)V
+
+    .line 65
+    .line 66
+    .line 67
+    return-object v0
+
+    .line 68
+    :pswitch_1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 69
+    .line 70
+    .line 71
+    new-instance v0, Ljava/lang/Thread;
+
+    .line 72
+    .line 73
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 74
+    .line 75
+    const-string v3, "SentryReplayIntegration-"
+
+    .line 76
+    .line 77
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 78
+    .line 79
+    .line 80
+    iget v3, p0, Lio/sentry/n0;->b:I
+
+    .line 81
+    .line 82
+    add-int/lit8 v4, v3, 0x1
+
+    .line 83
+    .line 84
+    iput v4, p0, Lio/sentry/n0;->b:I
+
+    .line 85
+    .line 86
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 87
+    .line 88
+    .line 89
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object p0
+
+    .line 93
+    invoke-direct {v0, p1, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 94
+    .line 95
+    .line 96
+    invoke-virtual {v0, v1}, Ljava/lang/Thread;->setDaemon(Z)V
+
+    .line 97
+    .line 98
+    .line 99
+    return-object v0
+
+    .line 100
+    :pswitch_2
+    new-instance v0, Lfu;
+
+    .line 101
+    .line 102
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 103
+    .line 104
+    const-string v3, "SentryExecutorServiceThreadFactory-"
+
+    .line 105
+    .line 106
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 107
+    .line 108
+    .line 109
+    iget v3, p0, Lio/sentry/n0;->b:I
+
+    .line 110
+    .line 111
+    add-int/lit8 v4, v3, 0x1
+
+    .line 112
+    .line 113
+    iput v4, p0, Lio/sentry/n0;->b:I
+
+    .line 114
+    .line 115
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 116
+    .line 117
+    .line 118
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 119
+    .line 120
+    .line 121
+    move-result-object p0
+
+    .line 122
+    invoke-direct {v0, p1, p0}, Lfu;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 123
+    .line 124
+    .line 125
+    invoke-virtual {v0, v1}, Ljava/lang/Thread;->setDaemon(Z)V
+
+    .line 126
+    .line 127
+    .line 128
+    return-object v0
+
+    .line 129
+    :pswitch_3
+    new-instance v0, Ljava/lang/Thread;
+
+    .line 130
+    .line 131
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 132
+    .line 133
+    const-string v3, "SentryHostnameCache-"
+
+    .line 134
+    .line 135
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 136
+    .line 137
+    .line 138
+    iget v3, p0, Lio/sentry/n0;->b:I
+
+    .line 139
+    .line 140
+    add-int/lit8 v4, v3, 0x1
+
+    .line 141
+    .line 142
+    iput v4, p0, Lio/sentry/n0;->b:I
+
+    .line 143
+    .line 144
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 145
+    .line 146
+    .line 147
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 148
+    .line 149
+    .line 150
+    move-result-object p0
+
+    .line 151
+    invoke-direct {v0, p1, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 152
+    .line 153
+    .line 154
+    invoke-virtual {v0, v1}, Ljava/lang/Thread;->setDaemon(Z)V
+
+    .line 155
+    .line 156
+    .line 157
+    return-object v0
+
+    .line 158
+    nop
+
+    .line 159
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

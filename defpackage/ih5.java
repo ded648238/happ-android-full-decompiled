@@ -1,18 +1,32 @@
 package defpackage;
 
-import android.os.IBinder;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ih5 {
+    public final String a;
+    public final Long b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ih5 implements IBinder.DeathRecipient {
-    public final /* synthetic */ lx5 a;
-
-    public ih5(lx5 lx5Var) {
-        this.a = lx5Var;
+    public ih5(String str, Long l) {
+        this.a = str;
+        this.b = l;
     }
 
-    @Override // android.os.IBinder.DeathRecipient
-    public final void binderDied() {
-        this.a.e(new on5(new RuntimeException("Binder died")));
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof ih5)) {
+            return false;
+        }
+        ih5 ih5Var = (ih5) obj;
+        return this.a.equals(ih5Var.a) && this.b.equals(ih5Var.b);
+    }
+
+    public final int hashCode() {
+        return this.b.hashCode() + (this.a.hashCode() * 31);
+    }
+
+    public final String toString() {
+        return "Preference(key=" + this.a + ", value=" + this.b + ')';
     }
 }

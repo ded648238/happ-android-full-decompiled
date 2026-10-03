@@ -1,17 +1,47 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class g93 {
-    public final int a;
-    public final Object b;
-    public final int c;
-    public final int d;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class g93 extends cn4 implements ov3 {
+    public final /* synthetic */ int n0;
 
-    public g93(Object obj, int i, int i2, int i3) {
-        this.a = i;
-        this.b = obj;
-        this.c = i2;
-        this.d = i3;
+    @Override // defpackage.ov3
+    public th4 M(uh4 uh4Var, nh4 nh4Var, long j) {
+        long U0 = U0(nh4Var, j);
+        if (V0()) {
+            U0 = k11.e(j, U0);
+        }
+        kd5 o = nh4Var.o(U0);
+        return uh4Var.f0(o.X, o.Y, gw1.X, new ob(o, 3));
+    }
+
+    public abstract long U0(nh4 nh4Var, long j);
+
+    public abstract boolean V0();
+
+    public int a0(p84 p84Var, nh4 nh4Var, int i) {
+        switch (this.n0) {
+        }
+        return nh4Var.a(i);
+    }
+
+    @Override // defpackage.ov3
+    public int h(p84 p84Var, nh4 nh4Var, int i) {
+        switch (this.n0) {
+        }
+        return nh4Var.m(i);
+    }
+
+    public int k0(p84 p84Var, nh4 nh4Var, int i) {
+        switch (this.n0) {
+        }
+        return nh4Var.L(i);
+    }
+
+    @Override // defpackage.ov3
+    public int w0(p84 p84Var, nh4 nh4Var, int i) {
+        switch (this.n0) {
+        }
+        return nh4Var.k(i);
     }
 }

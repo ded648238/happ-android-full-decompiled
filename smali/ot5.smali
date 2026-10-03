@@ -1,130 +1,140 @@
-.class public final Lot5;
+.class public abstract Lot5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lpt5;
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
+# static fields
+.field public static app_bar_elevation_anim_duration:I = 0x7f0c0002
 
+.field public static bottom_sheet_slide_duration:I = 0x7f0c0003
 
-# direct methods
-.method public synthetic constructor <init>(Ljava/lang/String;)V
-    .locals 0
+.field public static design_snackbar_text_max_lines:I = 0x7f0c0008
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.field public static design_tab_indicator_anim_duration_ms:I = 0x7f0c0009
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lot5;->a:Ljava/lang/String;
+.field public static hide_password_duration:I = 0x7f0c000b
 
-    .line 5
-    .line 6
-    return-void
-.end method
+.field public static m3_badge_max_number:I = 0x7f0c002d
 
+.field public static m3_btn_anim_delay_ms:I = 0x7f0c002e
 
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
+.field public static m3_btn_anim_duration_ms:I = 0x7f0c002f
 
-    .line 1
-    instance-of v0, p1, Lot5;
+.field public static m3_card_anim_delay_ms:I = 0x7f0c0030
 
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
+.field public static m3_card_anim_duration_ms:I = 0x7f0c0031
 
-    .line 4
-    .line 5
-    goto :goto_0
+.field public static m3_chip_anim_duration:I = 0x7f0c0032
 
-    .line 6
-    :cond_0
-    check-cast p1, Lot5;
+.field public static m3_sys_motion_duration_extra_long1:I = 0x7f0c0033
 
-    .line 7
-    .line 8
-    iget-object p1, p1, Lot5;->a:Ljava/lang/String;
+.field public static m3_sys_motion_duration_extra_long2:I = 0x7f0c0034
 
-    .line 9
-    .line 10
-    iget-object v0, p0, Lot5;->a:Ljava/lang/String;
+.field public static m3_sys_motion_duration_extra_long3:I = 0x7f0c0035
 
-    .line 11
-    .line 12
-    invoke-static {v0, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+.field public static m3_sys_motion_duration_extra_long4:I = 0x7f0c0036
 
-    .line 13
-    .line 14
-    .line 15
-    move-result p1
+.field public static m3_sys_motion_duration_long1:I = 0x7f0c0037
 
-    .line 16
-    if-nez p1, :cond_1
+.field public static m3_sys_motion_duration_long2:I = 0x7f0c0038
 
-    .line 17
-    .line 18
-    :goto_0
-    const/4 p1, 0x0
+.field public static m3_sys_motion_duration_long3:I = 0x7f0c0039
 
-    .line 19
-    return p1
+.field public static m3_sys_motion_duration_long4:I = 0x7f0c003a
 
-    .line 20
-    :cond_1
-    const/4 p1, 0x1
+.field public static m3_sys_motion_duration_medium1:I = 0x7f0c003b
 
-    .line 21
-    return p1
-.end method
+.field public static m3_sys_motion_duration_medium2:I = 0x7f0c003c
 
-.method public final hashCode()I
-    .locals 1
+.field public static m3_sys_motion_duration_medium3:I = 0x7f0c003d
 
-    .line 1
-    iget-object v0, p0, Lot5;->a:Ljava/lang/String;
+.field public static m3_sys_motion_duration_medium4:I = 0x7f0c003e
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+.field public static m3_sys_motion_duration_short1:I = 0x7f0c003f
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+.field public static m3_sys_motion_duration_short2:I = 0x7f0c0040
 
-    .line 7
-    return v0
-.end method
+.field public static m3_sys_motion_duration_short3:I = 0x7f0c0041
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.field public static m3_sys_motion_duration_short4:I = 0x7f0c0042
 
-    .line 1
-    const-string v0, "Select(id="
+.field public static m3_sys_motion_path:I = 0x7f0c0043
 
-    .line 2
-    .line 3
-    const-string v1, ")"
+.field public static m3_sys_shape_corner_extra_extra_large_corner_family:I = 0x7f0c0044
 
-    .line 4
-    .line 5
-    iget-object v2, p0, Lot5;->a:Ljava/lang/String;
+.field public static m3_sys_shape_corner_extra_large_corner_family:I = 0x7f0c0045
 
-    .line 6
-    .line 7
-    invoke-static {v0, v2, v1}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.field public static m3_sys_shape_corner_extra_large_increased_corner_family:I = 0x7f0c0046
 
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
+.field public static m3_sys_shape_corner_extra_small_corner_family:I = 0x7f0c0047
 
-    .line 11
-    return-object v0
-.end method
+.field public static m3_sys_shape_corner_full_corner_family:I = 0x7f0c0048
+
+.field public static m3_sys_shape_corner_large_corner_family:I = 0x7f0c0049
+
+.field public static m3_sys_shape_corner_large_increased_corner_family:I = 0x7f0c004a
+
+.field public static m3_sys_shape_corner_medium_corner_family:I = 0x7f0c004b
+
+.field public static m3_sys_shape_corner_small_corner_family:I = 0x7f0c004c
+
+.field public static m3expressive_bottom_nav_icon_gravity:I = 0x7f0c004e
+
+.field public static m3expressive_bottom_nav_item_gravity:I = 0x7f0c004f
+
+.field public static material_motion_duration_long_1:I = 0x7f0c0050
+
+.field public static material_motion_duration_long_2:I = 0x7f0c0051
+
+.field public static material_motion_duration_medium_1:I = 0x7f0c0052
+
+.field public static material_motion_duration_medium_2:I = 0x7f0c0053
+
+.field public static material_motion_duration_short_1:I = 0x7f0c0054
+
+.field public static material_motion_duration_short_2:I = 0x7f0c0055
+
+.field public static material_motion_path:I = 0x7f0c0056
+
+.field public static mtrl_badge_max_character_count:I = 0x7f0c0057
+
+.field public static mtrl_btn_anim_delay_ms:I = 0x7f0c0058
+
+.field public static mtrl_btn_anim_duration_ms:I = 0x7f0c0059
+
+.field public static mtrl_calendar_header_orientation:I = 0x7f0c005a
+
+.field public static mtrl_calendar_selection_text_lines:I = 0x7f0c005b
+
+.field public static mtrl_calendar_year_selector_span:I = 0x7f0c005c
+
+.field public static mtrl_card_anim_delay_ms:I = 0x7f0c005d
+
+.field public static mtrl_card_anim_duration_ms:I = 0x7f0c005e
+
+.field public static mtrl_chip_anim_duration:I = 0x7f0c005f
+
+.field public static mtrl_switch_thumb_motion_duration:I = 0x7f0c0060
+
+.field public static mtrl_switch_thumb_post_morphing_duration:I = 0x7f0c0061
+
+.field public static mtrl_switch_thumb_pre_morphing_duration:I = 0x7f0c0062
+
+.field public static mtrl_switch_thumb_pressed_duration:I = 0x7f0c0063
+
+.field public static mtrl_switch_thumb_viewport_center_coordinate:I = 0x7f0c0064
+
+.field public static mtrl_switch_thumb_viewport_size:I = 0x7f0c0065
+
+.field public static mtrl_switch_track_viewport_height:I = 0x7f0c0066
+
+.field public static mtrl_switch_track_viewport_width:I = 0x7f0c0067
+
+.field public static mtrl_tab_indicator_anim_duration_ms:I = 0x7f0c0068
+
+.field public static mtrl_view_gone:I = 0x7f0c0069
+
+.field public static mtrl_view_invisible:I = 0x7f0c006a
+
+.field public static mtrl_view_visible:I = 0x7f0c006b
+
+.field public static show_password_duration:I = 0x7f0c006e

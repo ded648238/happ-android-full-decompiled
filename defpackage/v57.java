@@ -1,11 +1,13 @@
 package defpackage;
 
-import android.view.View;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface v57 {
+    y57 c();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class v57 {
-    public static void a(View view, CharSequence charSequence) {
-        view.setTooltipText(charSequence);
+    default y57 e(y57 y57Var, y57 y57Var2, y57 y57Var3) {
+        return null;
     }
+
+    void y(y57 y57Var);
 }

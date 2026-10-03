@@ -1,17 +1,27 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class kv4 {
-    public static final boolean a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class kv4 implements m08 {
+    public final rl2 X;
+    public final lz2 Y;
 
-    static {
-        int iIntValue;
-        try {
-            iIntValue = ((Integer) Class.forName("android.os.Build$VERSION").getField("SDK_INT").get(null)).intValue();
-        } catch (Exception unused) {
-            iIntValue = 0;
+    public kv4(rl2 rl2Var, lz2 lz2Var) {
+        this.X = rl2Var;
+        this.Y = lz2Var;
+    }
+
+    @Override // defpackage.m08
+    public final void c() {
+        lz2 lz2Var = this.Y;
+        boolean z = lz2Var instanceof dj7;
+        rl2 rl2Var = this.X;
+        if (z) {
+            rl2Var.onSuccess(((dj7) lz2Var).a);
+        } else if (lz2Var instanceof nz1) {
+            rl2Var.onError(((nz1) lz2Var).a);
+        } else {
+            ku0.d();
         }
-        a = iIntValue != 0;
     }
 }

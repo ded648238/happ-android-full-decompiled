@@ -1,6 +1,6 @@
 .class final Lokhttp3/logging/HttpLoggingInterceptor$Logger$Companion$DefaultLogger;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/logging/HttpLoggingInterceptor$Logger;
@@ -27,7 +27,7 @@
         "()V",
         "",
         "message",
-        "Lbh7;",
+        "Lr98;",
         "log",
         "(Ljava/lang/String;)V",
         "okhttp-logging-interceptor"
@@ -58,7 +58,7 @@
 
 # virtual methods
 .method public log(Ljava/lang/String;)V
-    .locals 7
+    .locals 6
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -66,34 +66,34 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
+    sget-object p0, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Lokhttp3/internal/platform/Platform$Companion;->get()Lokhttp3/internal/platform/Platform;
+    invoke-virtual {p0}, Lokhttp3/internal/platform/Platform$Companion;->get()Lokhttp3/internal/platform/Platform;
 
     .line 7
     .line 8
     .line 9
-    move-result-object v1
+    move-result-object v0
 
     .line 10
-    const/4 v5, 0x6
+    const/4 v4, 0x6
 
     .line 11
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
     .line 12
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 13
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
     .line 14
-    move-object v2, p1
+    move-object v1, p1
 
     .line 15
-    invoke-static/range {v1 .. v6}, Lokhttp3/internal/platform/Platform;->log$default(Lokhttp3/internal/platform/Platform;Ljava/lang/String;ILjava/lang/Throwable;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v5}, Lokhttp3/internal/platform/Platform;->log$default(Lokhttp3/internal/platform/Platform;Ljava/lang/String;ILjava/lang/Throwable;ILjava/lang/Object;)V
 
     .line 16
     .line 17

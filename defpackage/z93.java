@@ -1,53 +1,33 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class z93 {
-    public final int a;
+import java.io.IOException;
 
-    public static String a(int i) {
-        if (i == 0) {
-            return "Unspecified";
-        }
-        if (i == 1) {
-            return "Text";
-        }
-        if (i == 2) {
-            return "Ascii";
-        }
-        if (i == 3) {
-            return "Number";
-        }
-        if (i == 4) {
-            return "Phone";
-        }
-        if (i == 5) {
-            return "Uri";
-        }
-        if (i == 6) {
-            return "Email";
-        }
-        if (i == 7) {
-            return "Password";
-        }
-        if (i == 8) {
-            return "NumberPassword";
-        }
-        return i == 9 ? "Decimal" : "Invalid";
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class z93 extends IOException {
+    public boolean X;
+
+    /* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+    public static class a extends z93 {
     }
 
-    public final boolean equals(Object obj) {
-        if (obj instanceof z93) {
-            return this.a == ((z93) obj).a;
-        }
-        return false;
+    public static z93 a() {
+        return new z93("Protocol message had invalid UTF-8.");
     }
 
-    public final int hashCode() {
-        return this.a;
+    public static a b() {
+        return new a("Protocol message tag had invalid wire type.");
     }
 
-    public final String toString() {
-        return a(this.a);
+    public static z93 c() {
+        return new z93("CodedInputStream encountered a malformed varint.");
+    }
+
+    public static z93 d() {
+        return new z93("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
+    }
+
+    public static z93 e() {
+        return new z93("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
     }
 }

@@ -1,13 +1,30 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class vx4 {
-    public static final void a(String str) {
-        throw new IllegalArgumentException(str);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class vx4 implements vo3 {
+    public final ow3 a = vq0.T(d04.X, new kc4(this));
+
+    @Override // defpackage.vo3
+    public final void a(o97 o97Var, Object obj) {
+        obj.getClass();
+        o97Var.a(d()).v(d());
     }
 
-    public static final void b(String str) {
-        throw new IllegalStateException(str);
+    @Override // defpackage.vo3
+    public final Object b(ua1 ua1Var) {
+        er6 d = d();
+        dy0 t = ua1Var.t(d);
+        int e = t.e(d());
+        if (e != -1) {
+            throw new mr6(eb7.h(e, "Unexpected index "));
+        }
+        t.n(d);
+        return r98.a;
+    }
+
+    @Override // defpackage.vo3
+    public final er6 d() {
+        return (er6) this.a.getValue();
     }
 }

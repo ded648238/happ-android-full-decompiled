@@ -1,18 +1,17 @@
 .class public final Lio/sentry/g2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lio/sentry/c2;
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:Lio/sentry/vendor/gson/stream/b;
-
-.field public c:Z
+.field public final a:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(ILio/sentry/vendor/gson/stream/b;)V
+.method public constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -21,13 +20,22 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Lio/sentry/g2;->a:I
+    iput-object p1, p0, Lio/sentry/g2;->a:Ljava/lang/Object;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/sentry/g2;->b:Lio/sentry/vendor/gson/stream/b;
-
-    .line 7
-    .line 8
     return-void
+.end method
+
+
+# virtual methods
+.method public final getValue()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/g2;->a:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

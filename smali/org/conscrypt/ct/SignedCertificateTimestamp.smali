@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/ct/SignedCertificateTimestamp;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -167,7 +167,7 @@
 
     .line 45
     .line 46
-    invoke-static {v0, p1}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 47
     .line 48
@@ -201,6 +201,35 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method private encodedLength(Lorg/conscrypt/ct/CertificateEntry;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Lorg/conscrypt/ct/CertificateEntry;->encodedLength()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    add-int/lit8 p1, p1, 0xc
+
+    .line 6
+    .line 7
+    iget-object p0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->extensions:[B
+
+    .line 8
+    .line 9
+    array-length p0, p0
+
+    .line 10
+    add-int/2addr p1, p0
+
+    .line 11
+    return p1
 .end method
 
 
@@ -275,14 +304,14 @@
     .line 30
     .line 31
     .line 32
-    iget-object p2, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->extensions:[B
+    iget-object p0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->extensions:[B
 
     .line 33
     .line 34
-    const/4 v0, 0x2
+    const/4 p2, 0x2
 
     .line 35
-    invoke-static {p1, p2, v0}, Lorg/conscrypt/ct/Serialization;->writeVariableBytes(Ljava/io/OutputStream;[BI)V
+    invoke-static {p1, p0, p2}, Lorg/conscrypt/ct/Serialization;->writeVariableBytes(Ljava/io/OutputStream;[BI)V
 
     .line 36
     .line 37
@@ -291,7 +320,7 @@
 .end method
 
 .method public encodeTBS(Lorg/conscrypt/ct/CertificateEntry;)[B
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/conscrypt/ct/SerializationException;
@@ -299,63 +328,68 @@
     .end annotation
 
     .line 39
-    new-instance v0, Ljava/io/ByteArrayOutputStream;
+    invoke-direct {p0, p1}, Lorg/conscrypt/ct/SignedCertificateTimestamp;->encodedLength(Lorg/conscrypt/ct/CertificateEntry;)I
 
-    invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
+    move-result v0
 
     .line 40
-    invoke-virtual {p0, v0, p1}, Lorg/conscrypt/ct/SignedCertificateTimestamp;->encodeTBS(Ljava/io/OutputStream;Lorg/conscrypt/ct/CertificateEntry;)V
+    new-instance v1, Ljava/io/ByteArrayOutputStream;
+
+    invoke-direct {v1, v0}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
     .line 41
-    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+    invoke-virtual {p0, v1, p1}, Lorg/conscrypt/ct/SignedCertificateTimestamp;->encodeTBS(Ljava/io/OutputStream;Lorg/conscrypt/ct/CertificateEntry;)V
 
-    move-result-object p1
+    .line 42
+    invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
-    return-object p1
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public getExtensions()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->extensions:[B
+    iget-object p0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->extensions:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getLogID()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->logId:[B
+    iget-object p0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->logId:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getOrigin()Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->origin:Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;
+    iget-object p0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->origin:Lorg/conscrypt/ct/SignedCertificateTimestamp$Origin;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSignature()Lorg/conscrypt/ct/DigitallySigned;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->signature:Lorg/conscrypt/ct/DigitallySigned;
+    iget-object p0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->signature:Lorg/conscrypt/ct/DigitallySigned;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getTimestamp()J
@@ -370,12 +404,12 @@
 .end method
 
 .method public getVersion()Lorg/conscrypt/ct/SignedCertificateTimestamp$Version;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->version:Lorg/conscrypt/ct/SignedCertificateTimestamp$Version;
+    iget-object p0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp;->version:Lorg/conscrypt/ct/SignedCertificateTimestamp$Version;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

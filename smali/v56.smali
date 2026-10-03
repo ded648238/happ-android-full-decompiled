@@ -1,10 +1,10 @@
-.class public abstract Lv56;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lv56;
+.super Ljq4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final a:Lx92;
+.field public static final X:Lv56;
 
 
 # direct methods
@@ -12,36 +12,74 @@
     .locals 5
 
     .line 1
-    sget-object v0, La45;->w0:La45;
+    new-instance v0, Lv56;
 
     .line 2
     .line 3
-    sget-object v1, Leu7;->S:Leu7;
+    const-string v1, "getHideSettings()Ljava/lang/Boolean;"
 
     .line 4
     .line 5
-    const-class v2, Ljava/lang/Integer;
+    const/4 v2, 0x0
 
     .line 6
-    .line 7
-    const/4 v3, 0x0
+    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
 
+    .line 7
     .line 8
-    const/16 v4, 0x4650
+    const-string v4, "hideSettings"
 
     .line 9
     .line 10
-    invoke-static {v0, v3, v4, v1, v2}, Ly92;->g(Lw1;Lw1;ILeu7;Ljava/lang/Class;)Lx92;
+    invoke-direct {v0, v3, v4, v1, v2}, Ljq4;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 11
     .line 12
     .line 13
-    move-result-object v0
+    sput-object v0, Lv56;->X:Lv56;
 
     .line 14
-    sput-object v0, Lv56;->a:Lx92;
-
     .line 15
-    .line 16
     return-void
+.end method
+
+
+# virtual methods
+.method public final E(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    check-cast p2, Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
+    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->B1(Ljava/lang/Boolean;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->O()Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
 .end method

@@ -1,38 +1,12 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class qb6 {
-    public static final qb6 c;
-    public final vd1 a;
-    public final vd1 b;
+import java.util.List;
+import kotlin.Metadata;
+import okhttp3.HttpUrl;
+import su.happ.proxyutility.domain.routing.entity.RouteProfile;
 
-    static {
-        ud1 ud1Var = ud1.a;
-        c = new qb6(ud1Var, ud1Var);
-    }
-
-    public qb6(vd1 vd1Var, vd1 vd1Var2) {
-        this.a = vd1Var;
-        this.b = vd1Var2;
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof qb6)) {
-            return false;
-        }
-        qb6 qb6Var = (qb6) obj;
-        return this.a.equals(qb6Var.a) && this.b.equals(qb6Var.b);
-    }
-
-    public final int hashCode() {
-        return this.b.hashCode() + (this.a.hashCode() * 31);
-    }
-
-    public final String toString() {
-        return "Size(width=" + this.a + ", height=" + this.b + ")";
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\b\n\u0018\u00002\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00020\u0001¨\u0006\u0004"}, d2 = {"Lqb6;", "Lm58;", HttpUrl.FRAGMENT_ENCODE_SET, "Lsu/happ/proxyutility/domain/routing/entity/RouteProfile;", "app"}, k = 1, mv = {2, 4, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class qb6 extends m58<List<? extends RouteProfile>> {
 }

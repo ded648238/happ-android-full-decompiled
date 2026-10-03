@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSSLEvpCipherARC4;
 .super Lorg/conscrypt/OpenSSLEvpCipher;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -39,7 +39,7 @@
 .end method
 
 .method public checkSupportedMode(Lorg/conscrypt/OpenSSLCipher$Mode;)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;
@@ -47,19 +47,19 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lorg/conscrypt/OpenSSLCipher$Mode;->NONE:Lorg/conscrypt/OpenSSLCipher$Mode;
+    sget-object p0, Lorg/conscrypt/OpenSSLCipher$Mode;->NONE:Lorg/conscrypt/OpenSSLCipher$Mode;
 
     .line 2
     .line 3
-    if-eq p1, v0, :cond_1
+    if-eq p1, p0, :cond_1
 
     .line 4
     .line 5
-    sget-object v0, Lorg/conscrypt/OpenSSLCipher$Mode;->ECB:Lorg/conscrypt/OpenSSLCipher$Mode;
+    sget-object p0, Lorg/conscrypt/OpenSSLCipher$Mode;->ECB:Lorg/conscrypt/OpenSSLCipher$Mode;
 
     .line 6
     .line 7
-    if-ne p1, v0, :cond_0
+    if-ne p1, p0, :cond_0
 
     .line 8
     .line 9
@@ -67,19 +67,19 @@
 
     .line 10
     :cond_0
-    new-instance v0, Ljava/security/NoSuchAlgorithmException;
+    new-instance p0, Ljava/security/NoSuchAlgorithmException;
 
     .line 11
     .line 12
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 13
     .line 14
-    const-string v2, "Unsupported mode "
+    const-string v1, "Unsupported mode "
 
     .line 15
     .line 16
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 17
     .line 18
@@ -92,12 +92,12 @@
     move-result-object p1
 
     .line 23
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 24
     .line 25
     .line 26
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 27
     .line 28
@@ -105,12 +105,12 @@
     move-result-object p1
 
     .line 30
-    invoke-direct {v0, p1}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
 
     .line 31
     .line 32
     .line 33
-    throw v0
+    throw p0
 
     .line 34
     :cond_1
@@ -119,7 +119,7 @@
 .end method
 
 .method public checkSupportedPadding(Lorg/conscrypt/OpenSSLCipher$Padding;)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/crypto/NoSuchPaddingException;
@@ -127,11 +127,11 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lorg/conscrypt/OpenSSLCipher$Padding;->NOPADDING:Lorg/conscrypt/OpenSSLCipher$Padding;
+    sget-object p0, Lorg/conscrypt/OpenSSLCipher$Padding;->NOPADDING:Lorg/conscrypt/OpenSSLCipher$Padding;
 
     .line 2
     .line 3
-    if-ne p1, v0, :cond_0
+    if-ne p1, p0, :cond_0
 
     .line 4
     .line 5
@@ -139,19 +139,19 @@
 
     .line 6
     :cond_0
-    new-instance v0, Ljavax/crypto/NoSuchPaddingException;
+    new-instance p0, Ljavax/crypto/NoSuchPaddingException;
 
     .line 7
     .line 8
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 9
     .line 10
-    const-string v2, "Unsupported padding "
+    const-string v1, "Unsupported padding "
 
     .line 11
     .line 12
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -164,12 +164,12 @@
     move-result-object p1
 
     .line 19
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 20
     .line 21
     .line 22
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 23
     .line 24
@@ -177,52 +177,52 @@
     move-result-object p1
 
     .line 26
-    invoke-direct {v0, p1}, Ljavax/crypto/NoSuchPaddingException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljavax/crypto/NoSuchPaddingException;-><init>(Ljava/lang/String;)V
 
     .line 27
     .line 28
     .line 29
-    throw v0
+    throw p0
 .end method
 
 .method public getBaseCipherName()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "ARCFOUR"
+    const-string p0, "ARCFOUR"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getCipherBlockSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public getCipherName(ILorg/conscrypt/OpenSSLCipher$Mode;)Ljava/lang/String;
     .locals 0
 
     .line 1
-    const-string p1, "rc4"
+    const-string p0, "rc4"
 
     .line 2
     .line 3
-    return-object p1
+    return-object p0
 .end method
 
 .method public supportsVariableSizeKey()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 2
-    return v0
+    return p0
 .end method

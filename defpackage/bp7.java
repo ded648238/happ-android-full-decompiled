@@ -1,29 +1,30 @@
 package defpackage;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.view.View;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class bp7 {
+    public String a;
+    public String b;
+    public int c;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class bp7 extends View.BaseSavedState {
-    public static final Parcelable.Creator<bp7> CREATOR = new so4(7);
-    public int Q;
-    public int R;
-    public Parcelable S;
-
-    public bp7(Parcel parcel, ClassLoader classLoader) {
-        super(parcel, classLoader);
-        this.Q = parcel.readInt();
-        this.R = parcel.readInt();
-        this.S = parcel.readParcelable(classLoader);
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof bp7)) {
+            return false;
+        }
+        bp7 bp7Var = (bp7) obj;
+        return this.a.equals(bp7Var.a) && this.b.equals(bp7Var.b) && this.c == bp7Var.c;
     }
 
-    @Override // android.view.View.BaseSavedState, android.view.AbsSavedState, android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i) {
-        super.writeToParcel(parcel, i);
-        parcel.writeInt(this.Q);
-        parcel.writeInt(this.R);
-        parcel.writeParcelable(this.S, i);
+    public final int hashCode() {
+        return Integer.hashCode(this.c) + eb7.e(this.a.hashCode() * 31, 31, this.b);
+    }
+
+    public final String toString() {
+        String str = this.a;
+        String str2 = this.b;
+        return eh0.p(w31.q("TextChange(newText=", str, ", oldText=", str2, ", start="), this.c, ")");
     }
 }

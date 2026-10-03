@@ -1,9 +1,9 @@
 .class public final Lio/sentry/d3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j1;
+.implements Lio/sentry/i1;
 
 
 # static fields
@@ -33,47 +33,109 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/io/Writer;)V
+.method public final a(Lio/sentry/z6;Lio/sentry/l0;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final b(Ljava/io/Reader;Ljava/lang/Class;)Ljava/lang/Object;
+.method public final b(Lio/sentry/protocol/k;Lio/sentry/l0;Lio/sentry/d1;)Lio/sentry/protocol/w;
     .locals 0
 
     .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return-object p1
-.end method
-
-.method public final c(Ljava/io/BufferedInputStream;)Lio/sentry/internal/debugmeta/c;
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return-object p1
-.end method
-
-.method public final d(Ljava/util/Map;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    const-string p1, ""
+    sget-object p0, Lio/sentry/protocol/w;->Y:Lio/sentry/protocol/w;
 
     .line 2
     .line 3
-    return-object p1
+    return-object p0
 .end method
 
-.method public final e(Lio/sentry/internal/debugmeta/c;Ljava/io/OutputStream;)V
+.method public final c(J)V
     .locals 0
 
     .line 1
     return-void
+.end method
+
+.method public final close(Z)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final d(Lio/sentry/q6;Lio/sentry/d1;Lio/sentry/l0;)Lio/sentry/protocol/w;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lio/sentry/protocol/w;->Y:Lio/sentry/protocol/w;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final e()Ly61;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final g(Lio/sentry/internal/debugmeta/c;Lio/sentry/l0;)Lio/sentry/protocol/w;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lio/sentry/protocol/w;->Y:Lio/sentry/protocol/w;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final h(Lio/sentry/s3;)Lio/sentry/protocol/w;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lio/sentry/protocol/w;->Y:Lio/sentry/protocol/w;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final i(Lio/sentry/protocol/f0;Lio/sentry/h7;Lio/sentry/d1;Lio/sentry/l0;Lio/sentry/v3;)Lio/sentry/protocol/w;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lio/sentry/protocol/w;->Y:Lio/sentry/protocol/w;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final isEnabled()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final j(Lio/sentry/f5;Lio/sentry/d1;Lio/sentry/l0;)Lio/sentry/protocol/w;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lio/sentry/protocol/w;->Y:Lio/sentry/protocol/w;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

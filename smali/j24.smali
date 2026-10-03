@@ -1,8 +1,13 @@
-.class public interface abstract Lj24;
+.class public final Lj24;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# virtual methods
-.method public abstract a(Lp24;)Z
-.end method
+# instance fields
+.field public a:I
+
+.field public b:Z
+
+.field public c:Z
+
+.field public d:Z

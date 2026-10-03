@@ -1,144 +1,212 @@
-.class public final synthetic Lj51;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lnu0;
+.class public final Lj51;
+.super Landroid/database/ContentObserver;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final synthetic a:Lk51;
+.field public final synthetic a:I
 
-.field public final synthetic b:Lmt6;
-
-.field public final synthetic c:Landroid/graphics/SurfaceTexture;
-
-.field public final synthetic d:Landroid/view/Surface;
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lk51;Lmt6;Landroid/graphics/SurfaceTexture;Landroid/view/Surface;)V
-    .locals 0
+.method public constructor <init>(Lb80;Landroid/os/Handler;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Lj51;->a:I
+
+    iput-object p1, p0, Lj51;->b:Ljava/lang/Object;
+
+    .line 15
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lfj7;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
 
     .line 2
+    iput v0, p0, Lj51;->a:I
+
     .line 3
     .line 4
-    iput-object p1, p0, Lj51;->a:Lk51;
+    iput-object p1, p0, Lj51;->b:Ljava/lang/Object;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lj51;->b:Lmt6;
+    new-instance p1, Landroid/os/Handler;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lj51;->c:Landroid/graphics/SurfaceTexture;
+    invoke-direct {p1}, Landroid/os/Handler;-><init>()V
 
     .line 9
     .line 10
-    iput-object p4, p0, Lj51;->d:Landroid/view/Surface;
-
     .line 11
+    invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+
     .line 12
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 5
+.method public deliverSelfNotifications()Z
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lj51;->a:Lk51;
+    iget v0, p0, Lj51;->a:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Lj51;->b:Lmt6;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    iget-object v2, p0, Lj51;->c:Landroid/graphics/SurfaceTexture;
-
     .line 6
-    .line 7
-    iget-object v3, p0, Lj51;->d:Landroid/view/Surface;
+    invoke-super {p0}, Landroid/database/ContentObserver;->deliverSelfNotifications()Z
 
+    .line 7
     .line 8
     .line 9
-    check-cast p1, Lfw;
+    move-result p0
 
     .line 10
+    return p0
+
     .line 11
-    iget-object p1, v1, Lmt6;->a:Ljava/lang/Object;
+    :pswitch_0
+    const/4 p0, 0x1
 
     .line 12
-    .line 13
-    monitor-enter p1
+    return p0
 
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public onChange(Z)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lj51;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :pswitch_0
+    iget-object p0, p0, Lj51;->b:Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    check-cast p0, Lfj7;
+
+    .line 13
     .line 14
-    const/4 v4, 0x0
+    iget-boolean p1, p0, Ll51;->Y:Z
 
     .line 15
-    :try_start_0
-    iput-object v4, v1, Lmt6;->m:Llt6;
-
     .line 16
+    if-eqz p1, :cond_0
+
     .line 17
-    iput-object v4, v1, Lmt6;->n:Ljava/util/concurrent/Executor;
-
     .line 18
-    .line 19
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iget-object p1, p0, Ll51;->Z:Landroid/database/Cursor;
 
+    .line 19
     .line 20
-    invoke-virtual {v2, v4}, Landroid/graphics/SurfaceTexture;->setOnFrameAvailableListener(Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;)V
+    if-eqz p1, :cond_0
 
     .line 21
     .line 22
-    .line 23
-    invoke-virtual {v2}, Landroid/graphics/SurfaceTexture;->release()V
+    invoke-interface {p1}, Landroid/database/Cursor;->isClosed()Z
 
+    .line 23
     .line 24
     .line 25
+    move-result p1
+
     .line 26
-    invoke-virtual {v3}, Landroid/view/Surface;->release()V
+    if-nez p1, :cond_0
 
     .line 27
     .line 28
+    iget-object p1, p0, Ll51;->Z:Landroid/database/Cursor;
+
     .line 29
-    iget p1, v0, Lk51;->i:I
-
     .line 30
-    .line 31
-    add-int/lit8 p1, p1, -0x1
+    invoke-interface {p1}, Landroid/database/Cursor;->requery()Z
 
+    .line 31
     .line 32
     .line 33
-    iput p1, v0, Lk51;->i:I
+    move-result p1
 
     .line 34
-    .line 35
-    invoke-virtual {v0}, Lk51;->d()V
+    iput-boolean p1, p0, Ll51;->X:Z
 
+    .line 35
     .line 36
-    .line 37
-    .line 38
+    :cond_0
     return-void
 
-    .line 39
-    :catchall_0
-    move-exception v0
+    .line 37
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    .line 40
-    :try_start_1
-    monitor-exit p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+.method public onChange(ZLandroid/net/Uri;)V
+    .locals 1
 
-    .line 41
-    throw v0
+    iget v0, p0, Lj51;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
+
+    return-void
+
+    .line 37
+    :pswitch_0
+    iget-object p0, p0, Lj51;->b:Ljava/lang/Object;
+
+    check-cast p0, Lb80;
+
+    sget-object p1, Lr98;->a:Lr98;
+
+    invoke-interface {p0, p1}, Lop6;->b(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,122 +1,113 @@
-.class public final Ly86;
-.super Landroid/view/ViewOutlineProvider;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Ly86;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lio0;
 
 
 # instance fields
-.field public final a:Landroid/graphics/Rect;
+.field public final a:Lmi2;
 
-.field public final synthetic b:Lcom/google/android/material/imageview/ShapeableImageView;
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/imageview/ShapeableImageView;)V
+.method public constructor <init>(Ljava/lang/String;Lmi2;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Ly86;->b:Lcom/google/android/material/imageview/ShapeableImageView;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
-
     .line 4
+    iput-object p2, p0, Ly86;->a:Lmi2;
+
     .line 5
     .line 6
-    new-instance p1, Landroid/graphics/Rect;
+    const-string p2, "must return "
 
     .line 7
     .line 8
-    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
+    invoke-virtual {p2, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 9
     .line 10
     .line 11
-    iput-object p1, p0, Ly86;->a:Landroid/graphics/Rect;
+    move-result-object p1
 
     .line 12
+    iput-object p1, p0, Ly86;->b:Ljava/lang/String;
+
     .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
-    .locals 2
+.method public final a()Ljava/lang/String;
+    .locals 0
 
     .line 1
-    iget-object p1, p0, Ly86;->b:Lcom/google/android/material/imageview/ShapeableImageView;
+    iget-object p0, p0, Ly86;->b:Ljava/lang/String;
 
     .line 2
     .line 3
-    iget-object v0, p1, Lcom/google/android/material/imageview/ShapeableImageView;->e0:Lj86;
+    return-object p0
+.end method
+
+.method public final b(Ljd3;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p1, Lpj2;->h0:Lbu3;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Ly86;->a:Lmi2;
 
     .line 4
     .line 5
-    if-nez v0, :cond_0
+    invoke-static {p1}, Lyh1;->e(Lia1;)Lhs3;
 
     .line 6
     .line 7
-    return-void
-
     .line 8
-    :cond_0
-    iget-object v0, p1, Lcom/google/android/material/imageview/ShapeableImageView;->d0:Ld04;
+    move-result-object p1
 
     .line 9
-    .line 10
-    if-nez v0, :cond_1
+    invoke-interface {p0, p1}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 10
     .line 11
     .line 12
-    new-instance v0, Ld04;
+    move-result-object p0
 
     .line 13
-    .line 14
-    iget-object v1, p1, Lcom/google/android/material/imageview/ShapeableImageView;->e0:Lj86;
+    invoke-static {v0, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 14
     .line 15
     .line 16
-    invoke-direct {v0, v1}, Ld04;-><init>(Lj86;)V
+    move-result p0
 
     .line 17
-    .line 18
-    .line 19
-    iput-object v0, p1, Lcom/google/android/material/imageview/ShapeableImageView;->d0:Ld04;
+    return p0
+.end method
 
-    .line 20
-    .line 21
-    :cond_1
-    iget-object v0, p1, Lcom/google/android/material/imageview/ShapeableImageView;->U:Landroid/graphics/RectF;
+.method public final bridge c(Ljd3;)Ljava/lang/String;
+    .locals 0
 
-    .line 22
-    .line 23
-    iget-object v1, p0, Ly86;->a:Landroid/graphics/Rect;
+    .line 1
+    invoke-static {p0, p1}, Lkp3;->K(Lio0;Ljd3;)Ljava/lang/String;
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Landroid/graphics/RectF;->round(Landroid/graphics/Rect;)V
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
 
-    .line 26
-    .line 27
-    .line 28
-    iget-object v0, p1, Lcom/google/android/material/imageview/ShapeableImageView;->d0:Ld04;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
-
-    .line 31
-    .line 32
-    .line 33
-    iget-object p1, p1, Lcom/google/android/material/imageview/ShapeableImageView;->d0:Ld04;
-
-    .line 34
-    .line 35
-    invoke-virtual {p1, p2}, Ld04;->getOutline(Landroid/graphics/Outline;)V
-
-    .line 36
-    .line 37
-    .line 38
-    return-void
+    .line 5
+    return-object p0
 .end method

@@ -1,59 +1,55 @@
-.class public abstract Ldo0;
+.class public final Ldo0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final c:Ldo0;
+
+
+# instance fields
+.field public a:[[I
+
+.field public b:[[I
 
 
 # direct methods
-.method public static a(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;,
-            Lorg/xmlpull/v1/XmlPullParserException;
-        }
-    .end annotation
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroid/graphics/drawable/Drawable;->createFromXmlInner(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+    new-instance v0, Ldo0;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p0
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
-    return-object p0
-.end method
+    .line 6
+    const/16 v1, 0x80
 
-.method public static b(Landroid/content/res/TypedArray;)I
-    .locals 0
+    .line 7
+    .line 8
+    new-array v2, v1, [[I
 
-    .line 1
-    invoke-virtual {p0}, Landroid/content/res/TypedArray;->getChangingConfigurations()I
+    .line 9
+    .line 10
+    iput-object v2, v0, Ldo0;->a:[[I
 
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
+    .line 11
+    .line 12
+    new-array v1, v1, [[I
 
-    .line 5
-    return p0
-.end method
+    .line 13
+    .line 14
+    iput-object v1, v0, Ldo0;->b:[[I
 
-.method public static c(Landroid/graphics/drawable/Drawable;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;,
-            Lorg/xmlpull/v1/XmlPullParserException;
-        }
-    .end annotation
+    .line 15
+    .line 16
+    sput-object v0, Ldo0;->c:Ldo0;
 
-    .line 1
-    invoke-virtual {p0, p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)V
-
-    .line 2
-    .line 3
-    .line 4
+    .line 17
+    .line 18
     return-void
 .end method

@@ -1,6 +1,28 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class if5 implements mw2 {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class if5 extends bv2 {
+    @Override // defpackage.bv2
+    public final void V0(jf5 jf5Var) {
+        kf5 kf5Var = (kf5) hi4.l(this, vy0.w);
+        if (kf5Var != null) {
+            sb sbVar = (sb) kf5Var;
+            if (jf5Var == null) {
+                jf5.a.getClass();
+                jf5Var = w97.c;
+            }
+            ic.a.a(sbVar.b, jf5Var);
+        }
+    }
+
+    @Override // defpackage.bv2
+    public final boolean X0(int i) {
+        return (i == 3 || i == 4) ? false : true;
+    }
+
+    @Override // defpackage.l18
+    public final /* bridge */ /* synthetic */ Object o() {
+        return "androidx.compose.ui.input.pointer.PointerHoverIcon";
+    }
 }

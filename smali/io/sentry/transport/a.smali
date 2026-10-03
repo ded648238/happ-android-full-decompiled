@@ -1,6 +1,6 @@
 .class public final synthetic Lio/sentry/transport/a;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/util/concurrent/RejectedExecutionHandler;
@@ -51,7 +51,7 @@
 
     .line 6
     .line 7
-    iget-object p2, p1, Lio/sentry/transport/b;->R:Lio/sentry/k0;
+    iget-object p2, p1, Lio/sentry/transport/b;->Y:Lio/sentry/l0;
 
     .line 8
     .line 9
@@ -59,7 +59,7 @@
 
     .line 10
     .line 11
-    invoke-static {p2, v0}, Lio/sentry/util/b;->i(Lio/sentry/k0;Ljava/lang/Class;)Z
+    invoke-static {p2, v0}, Lio/sentry/util/c;->j(Lio/sentry/l0;Ljava/lang/Class;)Z
 
     .line 12
     .line 13
@@ -71,7 +71,7 @@
 
     .line 16
     .line 17
-    iget-object p1, p1, Lio/sentry/transport/b;->Q:Lio/sentry/internal/debugmeta/c;
+    iget-object p1, p1, Lio/sentry/transport/b;->X:Lio/sentry/internal/debugmeta/c;
 
     .line 18
     .line 19
@@ -79,7 +79,7 @@
 
     .line 20
     .line 21
-    invoke-interface {v0, p1, p2}, Lio/sentry/cache/d;->l(Lio/sentry/internal/debugmeta/c;Lio/sentry/k0;)Z
+    invoke-interface {v0, p1, p2}, Lio/sentry/cache/d;->m(Lio/sentry/internal/debugmeta/c;Lio/sentry/l0;)Z
 
     .line 22
     .line 23
@@ -89,7 +89,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {p2, p1}, Lio/sentry/k0;->b(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p2, p1}, Lio/sentry/l0;->b(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 27
     .line 28
@@ -97,7 +97,7 @@
     move-result-object v0
 
     .line 30
-    invoke-virtual {p2, p1}, Lio/sentry/k0;->b(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p2, p1}, Lio/sentry/l0;->b(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 31
     .line 32
@@ -138,7 +138,7 @@
     .line 49
     .line 50
     :cond_1
-    invoke-virtual {p2, p1}, Lio/sentry/k0;->b(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p2, p1}, Lio/sentry/l0;->b(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 51
     .line 52
@@ -146,7 +146,7 @@
     move-result-object v0
 
     .line 54
-    invoke-virtual {p2, p1}, Lio/sentry/k0;->b(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p2, p1}, Lio/sentry/l0;->b(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 55
     .line 56
@@ -187,7 +187,7 @@
     .line 73
     .line 74
     :cond_2
-    sget-object p1, Lio/sentry/m5;->WARNING:Lio/sentry/m5;
+    sget-object p1, Lio/sentry/o5;->WARNING:Lio/sentry/o5;
 
     .line 75
     .line 76
@@ -199,11 +199,11 @@
 
     .line 79
     .line 80
-    iget-object v1, p0, Lio/sentry/transport/a;->b:Lio/sentry/ILogger;
+    iget-object p0, p0, Lio/sentry/transport/a;->b:Lio/sentry/ILogger;
 
     .line 81
     .line 82
-    invoke-interface {v1, p1, p2, v0}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, p1, p2, v0}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 83
     .line 84

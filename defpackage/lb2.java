@@ -1,41 +1,23 @@
 package defpackage;
 
-/* JADX WARN: Enum visitor error
-jadx.core.utils.exceptions.JadxRuntimeException: Can't remove SSA var: r2v3 lb2[], still in use, count: 1, list:
-  (r2v3 lb2[]) from 0x0023: CONSTRUCTOR (r2v3 lb2[]) A[MD:(java.lang.Enum[]):void (m), WRAPPED] (LINE:36) call: rp1.<init>(java.lang.Enum[]):void type: CONSTRUCTOR
-	at jadx.core.utils.InsnRemover.removeSsaVar(InsnRemover.java:164)
-	at jadx.core.utils.InsnRemover.unbindResult(InsnRemover.java:129)
-	at jadx.core.utils.InsnRemover.lambda$unbindInsns$1(InsnRemover.java:101)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at jadx.core.utils.InsnRemover.unbindInsns(InsnRemover.java:100)
-	at jadx.core.utils.InsnRemover.removeAllAndUnbind(InsnRemover.java:257)
-	at jadx.core.dex.visitors.EnumVisitor.convertToEnum(EnumVisitor.java:187)
-	at jadx.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:102)
- */
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class lb2 {
-    GEOSITE("geosite.dat"),
-    GEOIP("geoip.dat");
+/* loaded from: classes.dex */
+public final class lb2 extends d31 {
+    public /* synthetic */ Object c0;
+    public int d0;
+    public final /* synthetic */ mb2 e0;
+    public Object f0;
+    public int g0;
 
-    public static final /* synthetic */ rp1 U;
-    public final String Q;
-
-    static {
-        U = new rp1(lb2VarArr);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public lb2(mb2 mb2Var, b31 b31Var) {
+        super(b31Var);
+        this.e0 = mb2Var;
     }
 
-    public lb2(String str) {
-        super(str, i);
-        this.Q = str;
-    }
-
-    public static lb2 valueOf(String str) {
-        return (lb2) Enum.valueOf(lb2.class, str);
-    }
-
-    public static lb2[] values() {
-        return (lb2[]) T.clone();
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.d0 |= Integer.MIN_VALUE;
+        return this.e0.k(null, this);
     }
 }

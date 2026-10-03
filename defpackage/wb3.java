@@ -1,33 +1,63 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class wb3 {
-    public static final wb3 Q;
-    public static final wb3 R;
-    public static final wb3 S;
-    public static final wb3 T;
-    public static final /* synthetic */ wb3[] U;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import okhttp3.HttpUrl;
 
-    static {
-        wb3 wb3Var = new wb3("LANGUAGE_VERSION", 0);
-        Q = wb3Var;
-        wb3 wb3Var2 = new wb3("COMPILER_VERSION", 1);
-        R = wb3Var2;
-        wb3 wb3Var3 = new wb3("API_VERSION", 2);
-        S = wb3Var3;
-        wb3 wb3Var4 = new wb3("UNKNOWN", 3);
-        T = wb3Var4;
-        U = new wb3[]{wb3Var, wb3Var2, wb3Var3, wb3Var4};
+/* loaded from: classes.dex */
+public final class wb3 implements ji2 {
+    public final /* synthetic */ int X;
+    public final xb3 Y;
+
+    public /* synthetic */ wb3(xb3 xb3Var, int i) {
+        this.X = i;
+        this.Y = xb3Var;
     }
 
-    public static wb3 valueOf(String str) {
-        return (wb3) Enum.valueOf(wb3.class, str);
-    }
-
-    public static wb3[] values() {
-        return (wb3[]) U.clone();
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        int i = this.X;
+        xb3 xb3Var = this.Y;
+        switch (i) {
+            case 0:
+                return tt0.h1(xb3Var.g(), HttpUrl.FRAGMENT_ENCODE_SET, "<init>(", ")V", wh1.j0, 24);
+            case 1:
+                return yl0.o(xb3Var.Y);
+            case 2:
+                mt K1 = tt0.K1(xb3Var.Z);
+                ArrayList arrayList = new ArrayList(ut0.F0(K1, 10));
+                Iterator it = K1.iterator();
+                while (true) {
+                    vs1 vs1Var = (vs1) it;
+                    if (!vs1Var.Y.hasNext()) {
+                        return arrayList;
+                    }
+                    x33 x33Var = (x33) vs1Var.next();
+                    int i2 = x33Var.a;
+                    Method method = (Method) x33Var.b;
+                    method.getClass();
+                    arrayList.add(new yb3(xb3Var, method, i2));
+                }
+            case 3:
+                Class J = vx6.J(xb3Var.Y);
+                List list = xb3Var.Z;
+                ArrayList arrayList2 = new ArrayList(ut0.F0(list, 10));
+                Iterator it2 = list.iterator();
+                while (it2.hasNext()) {
+                    arrayList2.add(((Method) it2.next()).getName());
+                }
+                return new il(J, arrayList2, gl.Y, hl.X, xb3Var.Z);
+            default:
+                Class J2 = vx6.J(xb3Var.Y);
+                List list2 = xb3Var.Z;
+                ArrayList arrayList3 = new ArrayList(ut0.F0(list2, 10));
+                Iterator it3 = list2.iterator();
+                while (it3.hasNext()) {
+                    arrayList3.add(((Method) it3.next()).getName());
+                }
+                return new il(J2, arrayList3, gl.X, hl.X, xb3Var.Z);
+        }
     }
 }

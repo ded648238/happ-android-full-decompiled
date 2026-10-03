@@ -7,88 +7,111 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Checkable;
 import androidx.appcompat.widget.AppCompatImageButton;
-import defpackage.cz;
-import defpackage.di0;
-import defpackage.qn7;
-import defpackage.x75;
+import defpackage.bp0;
+import defpackage.cp0;
+import defpackage.g10;
+import defpackage.ni8;
+import defpackage.wr5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class CheckableImageButton extends AppCompatImageButton implements Checkable {
-    public static final int[] W = {R.attr.state_checked};
-    public boolean T;
-    public boolean U;
-    public boolean V;
+    public static final int[] j0 = {R.attr.state_checked};
+    public boolean f0;
+    public boolean g0;
+    public boolean h0;
+    public bp0 i0;
 
     public CheckableImageButton(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.U = true;
-        this.V = true;
-        qn7.q(this, new cz(3, this));
+        this.g0 = true;
+        this.h0 = true;
+        ni8.m(this, new g10(3, this));
     }
 
     @Override // android.widget.Checkable
     public final boolean isChecked() {
-        return this.T;
+        return this.f0;
     }
 
     @Override // android.widget.ImageView, android.view.View
     public final int[] onCreateDrawableState(int i) {
-        return this.T ? View.mergeDrawableStates(super.onCreateDrawableState(i + 1), W) : super.onCreateDrawableState(i);
+        return this.f0 ? View.mergeDrawableStates(super.onCreateDrawableState(i + 1), j0) : super.onCreateDrawableState(i);
+    }
+
+    @Override // android.widget.ImageView, android.view.View
+    public final void onDetachedFromWindow() {
+        this.i0 = null;
+        super.onDetachedFromWindow();
     }
 
     @Override // android.view.View
     public final void onRestoreInstanceState(Parcelable parcelable) {
-        if (!(parcelable instanceof di0)) {
+        if (!(parcelable instanceof cp0)) {
             super.onRestoreInstanceState(parcelable);
             return;
         }
-        di0 di0Var = (di0) parcelable;
-        super.onRestoreInstanceState(di0Var.Q);
-        setChecked(di0Var.S);
+        cp0 cp0Var = (cp0) parcelable;
+        super.onRestoreInstanceState(cp0Var.X);
+        setChecked(cp0Var.Z);
     }
 
     @Override // android.view.View
     public final Parcelable onSaveInstanceState() {
-        di0 di0Var = new di0(super.onSaveInstanceState());
-        di0Var.S = this.T;
-        return di0Var;
+        cp0 cp0Var = new cp0(super.onSaveInstanceState());
+        cp0Var.Z = this.f0;
+        return cp0Var;
     }
 
     public void setCheckable(boolean z) {
-        if (this.U != z) {
-            this.U = z;
+        if (this.g0 != z) {
+            this.g0 = z;
             sendAccessibilityEvent(0);
         }
     }
 
     @Override // android.widget.Checkable
     public void setChecked(boolean z) {
-        if (!this.U || this.T == z) {
+        if (!this.g0 || this.f0 == z) {
             return;
         }
-        this.T = z;
+        this.f0 = z;
         refreshDrawableState();
         sendAccessibilityEvent(2048);
     }
 
+    @Override // android.view.View
+    public void setFocusable(boolean z) {
+        bp0 bp0Var;
+        boolean isFocusable = isFocusable();
+        super.setFocusable(z);
+        if (isFocusable == z || (bp0Var = this.i0) == null) {
+            return;
+        }
+        bp0Var.c();
+    }
+
+    public void setOnFocusableChangedListener(bp0 bp0Var) {
+        this.i0 = bp0Var;
+    }
+
     public void setPressable(boolean z) {
-        this.V = z;
+        this.h0 = z;
     }
 
     @Override // android.view.View
     public void setPressed(boolean z) {
-        if (this.V) {
+        if (this.h0) {
             super.setPressed(z);
         }
     }
 
     @Override // android.widget.Checkable
     public final void toggle() {
-        setChecked(!this.T);
+        setChecked(!this.f0);
     }
 
     public CheckableImageButton(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, x75.imageButtonStyle);
+        this(context, attributeSet, wr5.imageButtonStyle);
     }
 }

@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/LogFileInfoKt;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -65,7 +65,7 @@
     move-result-wide v1
 
     .line 21
-    invoke-static {v1, v2}, Lvy7;->g(J)Ljava/lang/String;
+    invoke-static {v1, v2}, Llu8;->g(J)Ljava/lang/String;
 
     .line 22
     .line 23
@@ -98,11 +98,11 @@
 
     .line 37
     .line 38
-    sget-object v5, Lpk7;->a:Lpk7;
+    sget-object v5, Lif8;->a:Lif8;
 
     .line 39
     .line 40
-    invoke-static {}, Lpk7;->o()Ljava/util/Locale;
+    invoke-static {}, Lif8;->n()Ljava/util/Locale;
 
     .line 41
     .line 42
@@ -144,7 +144,7 @@
     .line 60
     .line 61
     .line 62
-    sget-object v0, Le54;->a:Le54;
+    sget-object v0, Lcm4;->a:Lcm4;
 
     .line 63
     .line 64
@@ -156,7 +156,7 @@
     move-result-object p0
 
     .line 68
-    invoke-static {p0}, Le54;->f(Ljava/lang/String;)Lsu/happ/proxyutility/dto/SubscriptionItem;
+    invoke-static {p0}, Lcm4;->f(Ljava/lang/String;)Lsu/happ/proxyutility/dto/SubscriptionItem;
 
     .line 69
     .line 70
@@ -171,7 +171,7 @@
 
     .line 74
     .line 75
-    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/SubscriptionItem;->x()Z
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/SubscriptionItem;->v()Z
 
     .line 76
     .line 77
@@ -186,14 +186,14 @@
 
     .line 81
     .line 82
-    const/4 v7, 0x1
+    move v7, v1
 
     .line 83
     goto :goto_0
 
     .line 84
     :cond_0
-    const/4 v7, 0x0
+    move v7, v0
 
     .line 85
     :goto_0

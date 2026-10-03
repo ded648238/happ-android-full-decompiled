@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/KeyGeneratorImpl$ARC4;
 .super Lorg/conscrypt/KeyGeneratorImpl;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -41,22 +41,22 @@
 
 # virtual methods
 .method public checkKeySize(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    const/16 v0, 0x28
+    const/16 p0, 0x28
 
     .line 2
     .line 3
-    if-lt p1, v0, :cond_0
+    if-lt p1, p0, :cond_0
 
     .line 4
     .line 5
-    const/16 v0, 0x800
+    const/16 p0, 0x800
 
     .line 6
     .line 7
-    if-lt v0, p1, :cond_0
+    if-lt p0, p1, :cond_0
 
     .line 8
     .line 9
@@ -64,18 +64,18 @@
 
     .line 10
     :cond_0
-    new-instance p1, Ljava/security/InvalidParameterException;
+    new-instance p0, Ljava/security/InvalidParameterException;
 
     .line 11
     .line 12
-    const-string v0, "Key size must be between 40 and 2048 bits"
+    const-string p1, "Key size must be between 40 and 2048 bits"
 
     .line 13
     .line 14
-    invoke-direct {p1, v0}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    throw p1
+    throw p0
 .end method

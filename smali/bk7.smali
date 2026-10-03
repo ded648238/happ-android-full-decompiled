@@ -1,309 +1,389 @@
 .class public final Lbk7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lq83;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Lbk7;
+# instance fields
+.field public final a:Ljava/util/List;
 
-.field public static final b:Lzz4;
+.field public final b:Ljava/util/List;
+
+.field public final c:I
+
+.field public final d:I
+
+.field public final e:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ljava/util/List;Ljava/util/List;III)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lbk7;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, Lbk7;->a:Ljava/util/List;
+
     .line 5
     .line 6
-    sput-object v0, Lbk7;->a:Lbk7;
+    iput-object p2, p0, Lbk7;->b:Ljava/util/List;
 
     .line 7
     .line 8
-    const-string v0, "kotlinx.datetime.UtcOffset"
+    iput p3, p0, Lbk7;->c:I
 
     .line 9
     .line 10
-    invoke-static {v0}, Lf93;->b(Ljava/lang/String;)Lzz4;
+    iput p4, p0, Lbk7;->d:I
 
     .line 11
     .line 12
+    iput p5, p0, Lbk7;->e:I
+
     .line 13
-    move-result-object v0
-
     .line 14
-    sput-object v0, Lbk7;->b:Lzz4;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ldl6;Ljava/lang/Object;)V
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
     .line 1
-    check-cast p2, Lsj7;
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    goto :goto_1
 
     .line 4
+    :cond_0
+    instance-of v0, p1, Lbk7;
+
     .line 5
     .line 6
-    invoke-virtual {p2}, Lsj7;->toString()Ljava/lang/String;
+    if-nez v0, :cond_1
 
     .line 7
     .line 8
+    goto :goto_0
+
     .line 9
-    move-result-object p2
-
-    .line 10
-    invoke-virtual {p1, p2}, Ldl6;->q(Ljava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final b(Lv21;)Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    sget-object v0, Lsj7;->Companion:Lrj7;
-
-    .line 2
-    .line 3
-    invoke-interface {p1}, Lv21;->s()Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    sget-object v1, Lwj7;->a:Lzu6;
-
-    .line 8
-    .line 9
-    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
+    :cond_1
+    check-cast p1, Lbk7;
 
     .line 10
     .line 11
-    .line 12
-    move-result-object v2
+    iget-object v0, p0, Lbk7;->a:Ljava/util/List;
 
+    .line 12
     .line 13
-    check-cast v2, Luj7;
+    iget-object v1, p1, Lbk7;->a:Ljava/util/List;
 
     .line 14
     .line 15
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 16
     .line 17
     .line 18
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result v0
 
     .line 19
+    if-nez v0, :cond_2
+
     .line 20
     .line 21
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    goto :goto_0
 
     .line 22
+    :cond_2
+    iget-object v0, p0, Lbk7;->b:Ljava/util/List;
+
     .line 23
     .line 24
-    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
+    iget-object v1, p1, Lbk7;->b:Ljava/util/List;
+
+    .line 25
+    .line 26
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v0
+
+    .line 30
+    if-nez v0, :cond_3
+
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_3
+    iget v0, p0, Lbk7;->c:I
+
+    .line 34
+    .line 35
+    iget v1, p1, Lbk7;->c:I
+
+    .line 36
+    .line 37
+    if-eq v0, v1, :cond_4
+
+    .line 38
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_4
+    iget v0, p0, Lbk7;->d:I
+
+    .line 41
+    .line 42
+    iget v1, p1, Lbk7;->d:I
+
+    .line 43
+    .line 44
+    if-eq v0, v1, :cond_5
+
+    .line 45
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :cond_5
+    iget p0, p0, Lbk7;->e:I
+
+    .line 48
+    .line 49
+    iget p1, p1, Lbk7;->e:I
+
+    .line 50
+    .line 51
+    if-eq p0, p1, :cond_6
+
+    .line 52
+    .line 53
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 54
+    return p0
+
+    .line 55
+    :cond_6
+    :goto_1
+    const/4 p0, 0x1
+
+    .line 56
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lbk7;->a:Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const/16 v1, 0x1f
+
+    .line 8
+    .line 9
+    mul-int/2addr v0, v1
+
+    .line 10
+    iget-object v2, p0, Lbk7;->b:Ljava/util/List;
+
+    .line 11
+    .line 12
+    if-nez v2, :cond_0
+
+    .line 13
+    .line 14
+    const/4 v2, 0x0
+
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v2
+
+    .line 20
+    :goto_0
+    add-int/2addr v0, v2
+
+    .line 21
+    mul-int/2addr v0, v1
+
+    .line 22
+    iget v2, p0, Lbk7;->c:I
+
+    .line 23
+    .line 24
+    invoke-static {v2, v0, v1}, Leh0;->d(III)I
 
     .line 25
     .line 26
     .line 27
-    move-result-object v0
+    move-result v0
 
     .line 28
-    check-cast v0, Luj7;
+    iget v2, p0, Lbk7;->d:I
 
     .line 29
     .line 30
-    if-ne v2, v0, :cond_0
+    invoke-static {v2, v0, v1}, Leh0;->d(III)I
 
     .line 31
     .line 32
-    sget-object v0, Lyj7;->a:Lzu6;
-
     .line 33
+    move-result v0
+
     .line 34
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    iget p0, p0, Lbk7;->e:I
 
     .line 35
     .line 36
-    .line 37
-    move-result-object v0
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
 
+    .line 37
     .line 38
-    check-cast v0, Lj$/time/format/DateTimeFormatter;
+    .line 39
+    move-result p0
+
+    .line 40
+    add-int/2addr p0, v0
+
+    .line 41
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "BestSizesAndMaxFpsForConfigs(bestSizes="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lbk7;->a:Ljava/util/List;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", bestSizesForStreamUseCase="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lbk7;->b:Ljava/util/List;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", maxFpsForBestSizes="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget v1, p0, Lbk7;->c:I
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", maxFpsForStreamUseCase="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget v1, p0, Lbk7;->d:I
 
     .line 39
     .line 40
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 41
     .line 42
     .line 43
-    invoke-static {p1, v0}, Lyj7;->a(Ljava/lang/String;Lj$/time/format/DateTimeFormatter;)Lsj7;
+    const-string v1, ", maxFpsForAllSizes="
 
     .line 44
     .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 46
-    move-result-object p1
-
     .line 47
-    return-object p1
-
     .line 48
-    :cond_0
-    sget-object v0, Lwj7;->b:Lzu6;
+    iget p0, p0, Lbk7;->e:I
 
     .line 49
     .line 50
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    const/16 v1, 0x29
 
     .line 51
     .line 52
+    invoke-static {v0, p0, v1}, Leb7;->l(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+
     .line 53
-    move-result-object v0
-
     .line 54
-    check-cast v0, Luj7;
-
     .line 55
+    move-result-object p0
+
     .line 56
-    if-ne v2, v0, :cond_1
-
-    .line 57
-    .line 58
-    sget-object v0, Lyj7;->b:Lzu6;
-
-    .line 59
-    .line 60
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object v0
-
-    .line 64
-    check-cast v0, Lj$/time/format/DateTimeFormatter;
-
-    .line 65
-    .line 66
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 67
-    .line 68
-    .line 69
-    invoke-static {p1, v0}, Lyj7;->a(Ljava/lang/String;Lj$/time/format/DateTimeFormatter;)Lsj7;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object p1
-
-    .line 73
-    return-object p1
-
-    .line 74
-    :cond_1
-    sget-object v0, Lwj7;->c:Lzu6;
-
-    .line 75
-    .line 76
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
-
-    .line 77
-    .line 78
-    .line 79
-    move-result-object v0
-
-    .line 80
-    check-cast v0, Luj7;
-
-    .line 81
-    .line 82
-    if-ne v2, v0, :cond_2
-
-    .line 83
-    .line 84
-    sget-object v0, Lyj7;->c:Lzu6;
-
-    .line 85
-    .line 86
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
-
-    .line 87
-    .line 88
-    .line 89
-    move-result-object v0
-
-    .line 90
-    check-cast v0, Lj$/time/format/DateTimeFormatter;
-
-    .line 91
-    .line 92
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 93
-    .line 94
-    .line 95
-    invoke-static {p1, v0}, Lyj7;->a(Ljava/lang/String;Lj$/time/format/DateTimeFormatter;)Lsj7;
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-object p1
-
-    .line 99
-    return-object p1
-
-    .line 100
-    :cond_2
-    invoke-virtual {v2, p1}, Lz0;->e(Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 101
-    .line 102
-    .line 103
-    move-result-object p1
-
-    .line 104
-    check-cast p1, Lsj7;
-
-    .line 105
-    .line 106
-    return-object p1
-.end method
-
-.method public final d()Ll56;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lbk7;->b:Lzz4;
-
-    .line 2
-    .line 3
-    return-object v0
+    return-object p0
 .end method

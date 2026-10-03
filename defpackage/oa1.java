@@ -1,13 +1,43 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface oa1 extends j21, q14 {
-    q64 K();
+import java.util.Collection;
+import java.util.Set;
 
-    ia4 Q();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class oa1 implements pa1 {
+    public static final oa1 a = new oa1();
 
-    la1 S();
+    @Override // defpackage.pa1
+    public final Set a() {
+        return ow1.X;
+    }
 
-    w1 z();
+    @Override // defpackage.pa1
+    public final wz5 b(pr4 pr4Var) {
+        pr4Var.getClass();
+        return null;
+    }
+
+    @Override // defpackage.pa1
+    public final Collection c(pr4 pr4Var) {
+        pr4Var.getClass();
+        return fw1.X;
+    }
+
+    @Override // defpackage.pa1
+    public final qz5 d(pr4 pr4Var) {
+        pr4Var.getClass();
+        return null;
+    }
+
+    @Override // defpackage.pa1
+    public final Set e() {
+        return ow1.X;
+    }
+
+    @Override // defpackage.pa1
+    public final Set f() {
+        return ow1.X;
+    }
 }

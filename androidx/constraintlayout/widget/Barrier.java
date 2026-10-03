@@ -3,23 +3,23 @@ package androidx.constraintlayout.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import defpackage.bb5;
-import defpackage.qx;
-import defpackage.yt0;
+import defpackage.e11;
+import defpackage.uz;
+import defpackage.zu5;
 import java.util.HashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class Barrier extends ConstraintHelper {
-    public int a0;
-    public int b0;
-    public qx c0;
+    public int j0;
+    public int k0;
+    public uz l0;
 
     public Barrier(Context context) {
         super(context);
-        this.Q = new int[32];
-        this.W = new HashMap();
-        this.S = context;
+        this.c0 = new int[32];
+        this.i0 = new HashMap();
+        this.e0 = context;
         g(null);
         super.setVisibility(8);
     }
@@ -27,76 +27,76 @@ public class Barrier extends ConstraintHelper {
     @Override // androidx.constraintlayout.widget.ConstraintHelper
     public final void g(AttributeSet attributeSet) {
         super.g(attributeSet);
-        qx qxVar = new qx();
-        qxVar.s0 = 0;
-        qxVar.t0 = true;
-        qxVar.u0 = 0;
-        qxVar.v0 = false;
-        this.c0 = qxVar;
+        uz uzVar = new uz();
+        uzVar.s0 = 0;
+        uzVar.t0 = true;
+        uzVar.u0 = 0;
+        uzVar.v0 = false;
+        this.l0 = uzVar;
         if (attributeSet != null) {
-            TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, bb5.ConstraintLayout_Layout);
-            int indexCount = typedArrayObtainStyledAttributes.getIndexCount();
+            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, zu5.ConstraintLayout_Layout);
+            int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
-                int index = typedArrayObtainStyledAttributes.getIndex(i);
-                if (index == bb5.ConstraintLayout_Layout_barrierDirection) {
-                    setType(typedArrayObtainStyledAttributes.getInt(index, 0));
-                } else if (index == bb5.ConstraintLayout_Layout_barrierAllowsGoneWidgets) {
-                    this.c0.t0 = typedArrayObtainStyledAttributes.getBoolean(index, true);
-                } else if (index == bb5.ConstraintLayout_Layout_barrierMargin) {
-                    this.c0.u0 = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0);
+                int index = obtainStyledAttributes.getIndex(i);
+                if (index == zu5.ConstraintLayout_Layout_barrierDirection) {
+                    setType(obtainStyledAttributes.getInt(index, 0));
+                } else if (index == zu5.ConstraintLayout_Layout_barrierAllowsGoneWidgets) {
+                    this.l0.t0 = obtainStyledAttributes.getBoolean(index, true);
+                } else if (index == zu5.ConstraintLayout_Layout_barrierMargin) {
+                    this.l0.u0 = obtainStyledAttributes.getDimensionPixelSize(index, 0);
                 }
             }
-            typedArrayObtainStyledAttributes.recycle();
+            obtainStyledAttributes.recycle();
         }
-        this.T = this.c0;
+        this.f0 = this.l0;
         i();
     }
 
     public boolean getAllowsGoneWidget() {
-        return this.c0.t0;
+        return this.l0.t0;
     }
 
     public int getMargin() {
-        return this.c0.u0;
+        return this.l0.u0;
     }
 
     public int getType() {
-        return this.a0;
+        return this.j0;
     }
 
     @Override // androidx.constraintlayout.widget.ConstraintHelper
-    public final void h(yt0 yt0Var, boolean z) {
-        int i = this.a0;
-        this.b0 = i;
+    public final void h(e11 e11Var, boolean z) {
+        int i = this.j0;
+        this.k0 = i;
         if (z) {
             if (i == 5) {
-                this.b0 = 1;
+                this.k0 = 1;
             } else if (i == 6) {
-                this.b0 = 0;
+                this.k0 = 0;
             }
         } else if (i == 5) {
-            this.b0 = 0;
+            this.k0 = 0;
         } else if (i == 6) {
-            this.b0 = 1;
+            this.k0 = 1;
         }
-        if (yt0Var instanceof qx) {
-            ((qx) yt0Var).s0 = this.b0;
+        if (e11Var instanceof uz) {
+            ((uz) e11Var).s0 = this.k0;
         }
     }
 
     public void setAllowsGoneWidget(boolean z) {
-        this.c0.t0 = z;
+        this.l0.t0 = z;
     }
 
     public void setDpMargin(int i) {
-        this.c0.u0 = (int) ((i * getResources().getDisplayMetrics().density) + 0.5f);
+        this.l0.u0 = (int) ((i * getResources().getDisplayMetrics().density) + 0.5f);
     }
 
     public void setMargin(int i) {
-        this.c0.u0 = i;
+        this.l0.u0 = i;
     }
 
     public void setType(int i) {
-        this.a0 = i;
+        this.j0 = i;
     }
 }

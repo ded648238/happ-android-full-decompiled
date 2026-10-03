@@ -1,346 +1,1109 @@
-.class public abstract Li04;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Li04;
+.super Ld06;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:[I
+# instance fields
+.field public final synthetic f:I
 
-.field public static final b:[I
+.field public final g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public synthetic constructor <init>(Lcom/google/android/material/sidesheet/SideSheetBehavior;I)V
+    .locals 0
 
     .line 1
-    const/high16 v0, 0x1010000
+    iput p2, p0, Li04;->f:I
 
     .line 2
     .line 3
-    sget v1, Lx75;->theme:I
+    iput-object p1, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
     .line 4
     .line 5
-    filled-new-array {v0, v1}, [I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
-
-    .line 9
-    sput-object v0, Li04;->a:[I
-
-    .line 10
-    .line 11
-    sget v0, Lv75;->materialThemeOverlay:I
-
-    .line 12
-    .line 13
-    filled-new-array {v0}, [I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    sput-object v0, Li04;->b:[I
-
-    .line 18
-    .line 19
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
-    .locals 1
+
+# virtual methods
+.method public final E(Landroid/view/ViewGroup$MarginLayoutParams;)I
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    iget p0, p0, Li04;->f:I
 
     .line 2
-    new-array v0, v0, [I
-
     .line 3
-    .line 4
-    invoke-static {p0, p1, p2, p3, v0}, Li04;->b(Landroid/content/Context;Landroid/util/AttributeSet;II[I)Landroid/content/Context;
+    packed-switch p0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    .line 7
-    move-result-object p0
+    iget p0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
+    .line 7
     .line 8
-    return-object p0
+    return p0
+
+    .line 9
+    :pswitch_0
+    iget p0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    .line 10
+    .line 11
+    return p0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public static b(Landroid/content/Context;Landroid/util/AttributeSet;II[I)Landroid/content/Context;
-    .locals 6
+.method public final F()I
+    .locals 3
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, Li04;->f:I
 
     .line 2
-    new-array v1, v0, [I
-
     .line 3
-    .line 4
-    sget-object v2, Li04;->b:[I
+    iget-object p0, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
+    .line 4
     .line 5
+    const/4 v1, 0x0
+
     .line 6
-    invoke-virtual {p0, p1, v2, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    packed-switch v0, :pswitch_data_0
 
     .line 7
     .line 8
     .line 9
-    move-result-object v2
+    iget v0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->m:I
 
     .line 10
-    const/4 v3, 0x0
-
     .line 11
-    invoke-virtual {v2, v3, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    iget v2, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->l:I
 
     .line 12
     .line 13
+    sub-int/2addr v0, v2
+
     .line 14
-    move-result v4
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->o:I
 
     .line 15
-    aput v4, v1, v3
-
     .line 16
+    sub-int/2addr v0, p0
+
     .line 17
-    invoke-virtual {v2}, Landroid/content/res/TypedArray;->recycle()V
+    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
 
     .line 18
     .line 19
     .line 20
-    aget v1, v1, v3
+    move-result p0
 
     .line 21
+    return p0
+
     .line 22
-    instance-of v2, p0, Lwv0;
+    :pswitch_0
+    iget v0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->n:I
 
     .line 23
     .line 24
-    if-eqz v2, :cond_0
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->o:I
 
     .line 25
     .line 26
-    move-object v2, p0
+    add-int/2addr v0, p0
 
     .line 27
-    check-cast v2, Lwv0;
+    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
 
     .line 28
     .line 29
-    iget v2, v2, Lwv0;->a:I
-
     .line 30
+    move-result p0
+
     .line 31
-    if-ne v2, v1, :cond_0
+    return p0
+
+    .line 32
+    nop
+
+    .line 33
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final G()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
+
+    .line 4
+    .line 5
+    packed-switch v0, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->m:I
+
+    .line 9
+    .line 10
+    return p0
+
+    .line 11
+    :pswitch_0
+    iget v0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->l:I
+
+    .line 12
+    .line 13
+    neg-int v0, v0
+
+    .line 14
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->o:I
+
+    .line 15
+    .line 16
+    sub-int/2addr v0, p0
+
+    .line 17
+    return v0
+
+    .line 18
+    nop
+
+    .line 19
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final H()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
+
+    .line 4
+    .line 5
+    packed-switch v0, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->m:I
+
+    .line 9
+    .line 10
+    return p0
+
+    .line 11
+    :pswitch_0
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->o:I
+
+    .line 12
+    .line 13
+    return p0
+
+    .line 14
+    nop
+
+    .line 15
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final I()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Li04;->F()I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p0
+
+    .line 10
+    return p0
+
+    .line 11
+    :pswitch_0
+    iget-object p0, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
+
+    .line 12
+    .line 13
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->l:I
+
+    .line 14
+    .line 15
+    neg-int p0, p0
+
+    .line 16
+    return p0
+
+    .line 17
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final J(Landroid/view/View;)I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
+
+    .line 4
+    .line 5
+    packed-switch v0, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p1
+
+    .line 12
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->o:I
+
+    .line 13
+    .line 14
+    sub-int/2addr p1, p0
+
+    .line 15
+    return p1
+
+    .line 16
+    :pswitch_0
+    invoke-virtual {p1}, Landroid/view/View;->getRight()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result p1
+
+    .line 20
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->o:I
+
+    .line 21
+    .line 22
+    add-int/2addr p1, p0
+
+    .line 23
+    return p1
+
+    .line 24
+    nop
+
+    .line 25
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final K(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Landroid/view/View;->getRight()I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p0
+
+    .line 10
+    return p0
+
+    .line 11
+    :pswitch_0
+    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    return p0
+
+    .line 16
+    nop
+
+    .line 17
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final L()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 p0, 0x0
+
+    .line 7
+    return p0
+
+    .line 8
+    :pswitch_0
+    const/4 p0, 0x1
+
+    .line 9
+    return p0
+
+    .line 10
+    nop
+
+    .line 11
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final P(F)Z
+    .locals 0
+
+    .line 1
+    iget p0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 p0, 0x0
+
+    .line 7
+    cmpg-float p0, p1, p0
+
+    .line 8
+    .line 9
+    if-gez p0, :cond_0
+
+    .line 10
+    .line 11
+    const/4 p0, 0x1
+
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 14
+    :goto_0
+    return p0
+
+    .line 15
+    :pswitch_0
+    const/4 p0, 0x0
+
+    .line 16
+    cmpl-float p0, p1, p0
+
+    .line 17
+    .line 18
+    if-lez p0, :cond_1
+
+    .line 19
+    .line 20
+    const/4 p0, 0x1
+
+    .line 21
+    goto :goto_1
+
+    .line 22
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 23
+    :goto_1
+    return p0
+
+    .line 24
+    nop
+
+    .line 25
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final Q(Landroid/view/View;)Z
+    .locals 3
+
+    .line 1
+    iget v0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    const/4 v2, 0x1
+
+    .line 5
+    packed-switch v0, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p1
+
+    .line 12
+    iget-object v0, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
+
+    .line 13
+    .line 14
+    iget v0, v0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->m:I
+
+    .line 15
+    .line 16
+    invoke-virtual {p0}, Li04;->F()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result p0
+
+    .line 20
+    add-int/2addr p0, v0
+
+    .line 21
+    div-int/lit8 p0, p0, 0x2
+
+    .line 22
+    .line 23
+    if-le p1, p0, :cond_0
+
+    .line 24
+    .line 25
+    move v1, v2
+
+    .line 26
+    :cond_0
+    return v1
+
+    .line 27
+    :pswitch_0
+    invoke-virtual {p1}, Landroid/view/View;->getRight()I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result p1
+
+    .line 31
+    invoke-virtual {p0}, Li04;->F()I
 
     .line 32
     .line 33
-    const/4 v2, 0x1
-
     .line 34
-    goto :goto_0
+    move-result v0
 
     .line 35
-    :cond_0
-    const/4 v2, 0x0
+    invoke-virtual {p0}, Li04;->G()I
 
     .line 36
+    .line 37
+    .line 38
+    move-result p0
+
+    .line 39
+    sub-int/2addr v0, p0
+
+    .line 40
+    div-int/lit8 v0, v0, 0x2
+
+    .line 41
+    .line 42
+    if-ge p1, v0, :cond_1
+
+    .line 43
+    .line 44
+    move v1, v2
+
+    .line 45
+    :cond_1
+    return v1
+
+    .line 46
+    nop
+
+    .line 47
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final S(FF)Z
+    .locals 0
+
+    .line 1
+    iget p0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p0
+
+    .line 10
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p2
+
+    .line 14
+    cmpl-float p0, p0, p2
+
+    .line 15
+    .line 16
+    if-lez p0, :cond_0
+
+    .line 17
+    .line 18
+    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p0
+
+    .line 22
+    const/high16 p1, 0x43fa0000    # 500.0f
+
+    .line 23
+    .line 24
+    cmpl-float p0, p0, p1
+
+    .line 25
+    .line 26
+    if-lez p0, :cond_0
+
+    .line 27
+    .line 28
+    const/4 p0, 0x1
+
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 31
     :goto_0
-    if-eqz v1, :cond_8
+    return p0
+
+    .line 32
+    :pswitch_0
+    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
+
+    .line 33
+    .line 34
+    .line 35
+    move-result p0
+
+    .line 36
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
 
     .line 37
     .line 38
-    if-eqz v2, :cond_1
-
     .line 39
+    move-result p2
+
     .line 40
-    goto :goto_4
+    cmpl-float p0, p0, p2
 
     .line 41
-    :cond_1
-    new-instance v2, Lwv0;
-
     .line 42
-    .line 43
-    invoke-direct {v2, p0, v1}, Lwv0;-><init>(Landroid/content/Context;I)V
+    if-lez p0, :cond_1
 
+    .line 43
     .line 44
+    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
+
     .line 45
     .line 46
-    array-length v1, p4
-
     .line 47
-    new-array v4, v1, [I
+    move-result p0
 
     .line 48
-    .line 49
-    array-length v5, p4
+    const/high16 p1, 0x43fa0000    # 500.0f
 
+    .line 49
     .line 50
-    if-lez v5, :cond_3
+    cmpl-float p0, p0, p1
 
     .line 51
     .line 52
-    invoke-virtual {p0, p1, p4, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    if-lez p0, :cond_1
 
     .line 53
     .line 54
+    const/4 p0, 0x1
+
     .line 55
-    move-result-object p2
+    goto :goto_1
 
     .line 56
-    const/4 p3, 0x0
+    :cond_1
+    const/4 p0, 0x0
 
     .line 57
     :goto_1
-    array-length v5, p4
+    return p0
 
     .line 58
-    if-ge p3, v5, :cond_2
+    nop
 
     .line 59
-    .line 60
-    invoke-virtual {p2, p3, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    .line 61
-    .line 62
-    .line 63
-    move-result v5
+.method public final X(Landroid/view/View;F)Z
+    .locals 4
 
-    .line 64
-    aput v5, v4, p3
+    .line 1
+    iget v0, p0, Li04;->f:I
 
-    .line 65
-    .line 66
-    add-int/lit8 p3, p3, 0x1
+    .line 2
+    .line 3
+    const/4 v1, 0x0
 
-    .line 67
-    .line 68
-    goto :goto_1
+    .line 4
+    const/4 v2, 0x1
 
-    .line 69
-    :cond_2
-    invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
+    .line 5
+    const/high16 v3, 0x3f000000    # 0.5f
 
-    .line 70
-    .line 71
-    .line 72
-    :cond_3
-    const/4 p2, 0x0
+    .line 6
+    .line 7
+    iget-object p0, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
-    .line 73
-    :goto_2
-    if-ge p2, v1, :cond_5
+    .line 8
+    .line 9
+    packed-switch v0, :pswitch_data_0
 
-    .line 74
-    .line 75
-    aget p3, v4, p2
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Landroid/view/View;->getRight()I
 
-    .line 76
-    .line 77
-    if-eqz p3, :cond_4
-
-    .line 78
-    .line 79
-    invoke-virtual {v2}, Lwv0;->getTheme()Landroid/content/res/Resources$Theme;
-
-    .line 80
-    .line 81
-    .line 82
-    move-result-object p4
-
-    .line 83
-    invoke-virtual {p4, p3, v0}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
-
-    .line 84
-    .line 85
-    .line 86
-    :cond_4
-    add-int/lit8 p2, p2, 0x1
-
-    .line 87
-    .line 88
-    goto :goto_2
-
-    .line 89
-    :cond_5
-    sget-object p2, Li04;->a:[I
-
-    .line 90
-    .line 91
-    invoke-virtual {p0, p1, p2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
-
-    .line 92
-    .line 93
-    .line 94
-    move-result-object p0
-
-    .line 95
-    invoke-virtual {p0, v3, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
-
-    .line 96
-    .line 97
-    .line 98
+    .line 13
+    .line 14
+    .line 15
     move-result p1
 
-    .line 99
-    invoke-virtual {p0, v0, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    .line 16
+    int-to-float p1, p1
 
-    .line 100
-    .line 101
-    .line 102
-    move-result p2
+    .line 17
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->k:F
 
-    .line 103
-    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
+    .line 18
+    .line 19
+    mul-float/2addr p2, p0
 
-    .line 104
-    .line 105
-    .line 106
-    if-eqz p1, :cond_6
+    .line 20
+    add-float/2addr p2, p1
 
-    .line 107
-    .line 108
-    goto :goto_3
+    .line 21
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
 
-    .line 109
-    :cond_6
-    move p1, p2
+    .line 22
+    .line 23
+    .line 24
+    move-result p0
 
-    .line 110
-    :goto_3
-    if-eqz p1, :cond_7
+    .line 25
+    cmpl-float p0, p0, v3
 
-    .line 111
-    .line 112
-    invoke-virtual {v2}, Lwv0;->getTheme()Landroid/content/res/Resources$Theme;
+    .line 26
+    .line 27
+    if-lez p0, :cond_0
 
-    .line 113
-    .line 114
-    .line 115
-    move-result-object p0
+    .line 28
+    .line 29
+    move v1, v2
 
-    .line 116
-    invoke-virtual {p0, p1, v0}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
+    .line 30
+    :cond_0
+    return v1
 
-    .line 117
-    .line 118
-    .line 119
-    :cond_7
-    return-object v2
+    .line 31
+    :pswitch_0
+    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
-    .line 120
-    :cond_8
-    :goto_4
-    return-object p0
+    .line 32
+    .line 33
+    .line 34
+    move-result p1
+
+    .line 35
+    int-to-float p1, p1
+
+    .line 36
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->k:F
+
+    .line 37
+    .line 38
+    mul-float/2addr p2, p0
+
+    .line 39
+    add-float/2addr p2, p1
+
+    .line 40
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p0
+
+    .line 44
+    cmpl-float p0, p0, v3
+
+    .line 45
+    .line 46
+    if-lez p0, :cond_1
+
+    .line 47
+    .line 48
+    move v1, v2
+
+    .line 49
+    :cond_1
+    return v1
+
+    .line 50
+    nop
+
+    .line 51
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final j0(Landroid/view/ViewGroup$MarginLayoutParams;I)V
+    .locals 0
+
+    .line 1
+    iget p0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iput p2, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
+
+    .line 7
+    .line 8
+    return-void
+
+    .line 9
+    :pswitch_0
+    iput p2, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final k0(Landroid/view/ViewGroup$MarginLayoutParams;II)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
+
+    .line 4
+    .line 5
+    packed-switch v0, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->m:I
+
+    .line 9
+    .line 10
+    if-gt p2, p0, :cond_0
+
+    .line 11
+    .line 12
+    sub-int/2addr p0, p2
+
+    .line 13
+    iput p0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
+
+    .line 14
+    .line 15
+    :cond_0
+    return-void
+
+    .line 16
+    :pswitch_0
+    iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->m:I
+
+    .line 17
+    .line 18
+    if-gt p2, p0, :cond_1
+
+    .line 19
+    .line 20
+    iput p3, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    .line 21
+    .line 22
+    :cond_1
+    return-void
+
+    .line 23
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final l(Landroid/view/ViewGroup$MarginLayoutParams;)I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget p0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
+
+    .line 7
+    .line 8
+    return p0
+
+    .line 9
+    :pswitch_0
+    iget p0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    .line 10
+    .line 11
+    return p0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final m(I)F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Li04;->f:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Li04;->g:Lcom/google/android/material/sidesheet/SideSheetBehavior;
+
+    .line 7
+    .line 8
+    iget v0, v0, Lcom/google/android/material/sidesheet/SideSheetBehavior;->m:I
+
+    .line 9
+    .line 10
+    int-to-float v0, v0
+
+    .line 11
+    invoke-virtual {p0}, Li04;->F()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    int-to-float p0, p0
+
+    .line 16
+    sub-float p0, v0, p0
+
+    .line 17
+    .line 18
+    int-to-float p1, p1
+
+    .line 19
+    sub-float/2addr v0, p1
+
+    .line 20
+    div-float/2addr v0, p0
+
+    .line 21
+    return v0
+
+    .line 22
+    :pswitch_0
+    invoke-virtual {p0}, Li04;->G()I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v0
+
+    .line 26
+    int-to-float v0, v0
+
+    .line 27
+    invoke-virtual {p0}, Li04;->F()I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result p0
+
+    .line 31
+    int-to-float p0, p0
+
+    .line 32
+    sub-float/2addr p0, v0
+
+    .line 33
+    int-to-float p1, p1
+
+    .line 34
+    sub-float/2addr p1, v0
+
+    .line 35
+    div-float/2addr p1, p0
+
+    .line 36
+    return p1
+
+    .line 37
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

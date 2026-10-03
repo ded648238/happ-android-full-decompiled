@@ -1,12 +1,12 @@
 .class public final Landroidx/camera/view/ScreenFlashView;
 .super Landroid/view/View;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:Landroid/view/Window;
+.field public c0:Landroid/view/Window;
 
-.field public R:Lwz5;
+.field public d0:Lhl6;
 
 
 # direct methods
@@ -75,54 +75,54 @@
 .end method
 
 .method private getBrightness()F
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->Q:Landroid/view/Window;
+    iget-object p0, p0, Landroidx/camera/view/ScreenFlashView;->c0:Landroid/view/Window;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 4
     .line 5
-    const-string v0, "ScreenFlashView"
+    const-string p0, "ScreenFlashView"
 
     .line 6
     .line 7
-    invoke-static {v0}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    const/high16 v0, 0x7fc00000    # Float.NaN
+    const/high16 p0, 0x7fc00000    # Float.NaN
 
     .line 11
     .line 12
-    return v0
+    return p0
 
     .line 13
     :cond_0
-    invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+    invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     .line 14
     .line 15
     .line 16
-    move-result-object v0
+    move-result-object p0
 
     .line 17
-    iget v0, v0, Landroid/view/WindowManager$LayoutParams;->screenBrightness:F
+    iget p0, p0, Landroid/view/WindowManager$LayoutParams;->screenBrightness:F
 
     .line 18
     .line 19
-    return v0
+    return p0
 .end method
 
 .method private setBrightness(F)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->Q:Landroid/view/Window;
+    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->c0:Landroid/view/Window;
 
     .line 2
     .line 3
@@ -134,7 +134,7 @@
 
     .line 6
     .line 7
-    invoke-static {v1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9
@@ -155,7 +155,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 18
     .line 19
@@ -164,7 +164,7 @@
 
     .line 21
     :cond_1
-    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->Q:Landroid/view/Window;
+    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->c0:Landroid/view/Window;
 
     .line 22
     .line 23
@@ -180,16 +180,16 @@
 
     .line 28
     .line 29
-    iget-object p1, p0, Landroidx/camera/view/ScreenFlashView;->Q:Landroid/view/Window;
+    iget-object p0, p0, Landroidx/camera/view/ScreenFlashView;->c0:Landroid/view/Window;
 
     .line 30
     .line 31
-    invoke-virtual {p1, v0}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+    invoke-virtual {p0, v0}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
 
     .line 32
     .line 33
     .line 34
-    invoke-static {v1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 35
     .line 36
@@ -197,15 +197,15 @@
     return-void
 .end method
 
-.method private setScreenFlashUiInfo(Lsk2;)V
+.method private setScreenFlashUiInfo(Liy2;)V
     .locals 0
 
     .line 1
-    const-string p1, "ScreenFlashView"
+    const-string p0, "ScreenFlashView"
 
     .line 2
     .line 3
-    invoke-static {p1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -215,15 +215,15 @@
 
 
 # virtual methods
-.method public getScreenFlash()Lsk2;
-    .locals 1
+.method public getScreenFlash()Liy2;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->R:Lwz5;
+    iget-object p0, p0, Landroidx/camera/view/ScreenFlashView;->d0:Lhl6;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getVisibilityRampUpAnimationDurationMillis()J
@@ -237,11 +237,11 @@
     return-wide v0
 .end method
 
-.method public setController(Llc0;)V
+.method public setController(Lvf0;)V
     .locals 0
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
@@ -253,61 +253,70 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lo37;->a()V
+    invoke-static {}, Lxv7;->a()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->Q:Landroid/view/Window;
+    const-string v0, "ScreenFlashView"
 
     .line 5
     .line 6
-    if-eq v0, p1, :cond_1
+    invoke-static {v0}, Lus7;->q0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 7
     .line 8
-    if-nez p1, :cond_0
-
     .line 9
-    .line 10
-    const/4 v0, 0x0
+    iget-object v0, p0, Landroidx/camera/view/ScreenFlashView;->c0:Landroid/view/Window;
 
+    .line 10
     .line 11
-    goto :goto_0
+    if-eq v0, p1, :cond_1
 
     .line 12
-    :cond_0
-    new-instance v0, Lwz5;
-
     .line 13
-    .line 14
-    invoke-direct {v0, p0}, Lwz5;-><init>(Landroidx/camera/view/ScreenFlashView;)V
+    if-nez p1, :cond_0
 
+    .line 14
     .line 15
+    const/4 v0, 0x0
+
     .line 16
+    goto :goto_0
+
     .line 17
-    :goto_0
-    iput-object v0, p0, Landroidx/camera/view/ScreenFlashView;->R:Lwz5;
+    :cond_0
+    new-instance v0, Lhl6;
 
     .line 18
     .line 19
-    :cond_1
-    iput-object p1, p0, Landroidx/camera/view/ScreenFlashView;->Q:Landroid/view/Window;
+    invoke-direct {v0, p0}, Lhl6;-><init>(Landroidx/camera/view/ScreenFlashView;)V
 
     .line 20
     .line 21
-    invoke-virtual {p0}, Landroidx/camera/view/ScreenFlashView;->getScreenFlash()Lsk2;
-
     .line 22
+    :goto_0
+    iput-object v0, p0, Landroidx/camera/view/ScreenFlashView;->d0:Lhl6;
+
     .line 23
     .line 24
-    move-result-object p1
+    :cond_1
+    iput-object p1, p0, Landroidx/camera/view/ScreenFlashView;->c0:Landroid/view/Window;
 
     .line 25
-    invoke-direct {p0, p1}, Landroidx/camera/view/ScreenFlashView;->setScreenFlashUiInfo(Lsk2;)V
-
     .line 26
+    invoke-virtual {p0}, Landroidx/camera/view/ScreenFlashView;->getScreenFlash()Liy2;
+
     .line 27
     .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    invoke-direct {p0, p1}, Landroidx/camera/view/ScreenFlashView;->setScreenFlashUiInfo(Liy2;)V
+
+    .line 31
+    .line 32
+    .line 33
     return-void
 .end method

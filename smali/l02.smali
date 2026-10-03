@@ -1,79 +1,155 @@
 .class public final Ll02;
-.super Law0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lm32;
 
 
 # instance fields
-.field public synthetic T:Ljava/lang/Object;
+.field public final synthetic X:I
 
-.field public U:I
-
-.field public final synthetic V:Lvt0;
-
-.field public W:Li02;
-
-.field public X:Ljava/util/Iterator;
-
-.field public Y:I
-
-.field public Z:I
+.field public final Y:Lxp5;
 
 
 # direct methods
-.method public constructor <init>(Lvt0;Lyv0;)V
+.method public synthetic constructor <init>(Lxp5;I)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Ll02;->V:Lvt0;
+    iput p2, p0, Ll02;->X:I
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
+    iput-object p1, p0, Ll02;->Y:Lxp5;
 
     .line 4
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final get()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iput-object p1, p0, Ll02;->T:Ljava/lang/Object;
+    iget v0, p0, Ll02;->X:I
 
     .line 2
     .line 3
-    iget p1, p0, Ll02;->U:I
+    iget-object p0, p0, Ll02;->Y:Lxp5;
 
     .line 4
     .line 5
-    const/high16 v0, -0x80000000
+    packed-switch v0, :pswitch_data_0
 
     .line 6
     .line 7
-    or-int/2addr p1, v0
-
     .line 8
-    iput p1, p0, Ll02;->U:I
+    invoke-interface {p0}, Lxp5;->get()Ljava/lang/Object;
 
     .line 9
     .line 10
-    iget-object p1, p0, Ll02;->V:Lvt0;
-
     .line 11
+    move-result-object p0
+
     .line 12
-    const/4 v0, 0x0
+    check-cast p0, Landroid/content/Context;
 
     .line 13
-    invoke-virtual {p1, v0, p0}, Lvt0;->a(Li02;Lyv0;)Ljava/lang/Object;
-
     .line 14
+    sget v0, Ldl6;->c0:I
+
     .line 15
     .line 16
-    move-result-object p1
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 17
-    return-object p1
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v0
+
+    .line 24
+    new-instance v1, Ldl6;
+
+    .line 25
+    .line 26
+    const-string v2, "com.google.android.datatransport.events"
+
+    .line 27
+    .line 28
+    invoke-direct {v1, v0, p0, v2}, Ldl6;-><init>(ILandroid/content/Context;Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-object v1
+
+    .line 32
+    :pswitch_0
+    invoke-interface {p0}, Lxp5;->get()Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    check-cast p0, Landroid/content/Context;
+
+    .line 37
+    .line 38
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p0
+
+    .line 42
+    if-eqz p0, :cond_0
+
+    .line 43
+    .line 44
+    goto :goto_0
+
+    .line 45
+    :cond_0
+    const-string p0, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 46
+    .line 47
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
+
+    .line 48
+    .line 49
+    .line 50
+    const/4 p0, 0x0
+
+    .line 51
+    :goto_0
+    return-object p0
+
+    .line 52
+    nop
+
+    .line 53
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

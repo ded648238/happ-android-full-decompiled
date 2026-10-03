@@ -8,73 +8,72 @@ import android.graphics.drawable.Drawable;
 import android.text.InputFilter;
 import android.util.AttributeSet;
 import android.widget.ToggleButton;
-import defpackage.d37;
-import defpackage.mo;
-import defpackage.sn;
-import defpackage.t6;
-import defpackage.z47;
+import defpackage.f7;
+import defpackage.gp;
+import defpackage.hv7;
+import defpackage.xp;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class AppCompatToggleButton extends ToggleButton implements z47 {
-    public final t6 Q;
-    public final mo R;
-    public sn S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class AppCompatToggleButton extends ToggleButton {
+    public final f7 c0;
+    public final xp d0;
+    public gp e0;
 
     public AppCompatToggleButton(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        d37.a(this, getContext());
-        t6 t6Var = new t6(this);
-        this.Q = t6Var;
-        t6Var.y(attributeSet, i);
-        mo moVar = new mo(this);
-        this.R = moVar;
-        moVar.f(attributeSet, i);
+        hv7.a(this, getContext());
+        f7 f7Var = new f7(this);
+        this.c0 = f7Var;
+        f7Var.y(attributeSet, i);
+        xp xpVar = new xp(this);
+        this.d0 = xpVar;
+        xpVar.h(attributeSet, i);
         getEmojiTextViewHelper().b(attributeSet, i);
     }
 
-    private sn getEmojiTextViewHelper() {
-        if (this.S == null) {
-            this.S = new sn(this);
+    private gp getEmojiTextViewHelper() {
+        if (this.e0 == null) {
+            this.e0 = new gp(this);
         }
-        return this.S;
+        return this.e0;
     }
 
     @Override // android.widget.ToggleButton, android.widget.CompoundButton, android.widget.TextView, android.view.View
     public final void drawableStateChanged() {
         super.drawableStateChanged();
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.b();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.b();
         }
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            return t6Var.v();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            return f7Var.v();
         }
         return null;
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            return t6Var.w();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            return f7Var.w();
         }
         return null;
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.R.d();
+        return this.d0.f();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.R.e();
+        return this.d0.g();
     }
 
     @Override // android.widget.TextView
@@ -86,36 +85,36 @@ public class AppCompatToggleButton extends ToggleButton implements z47 {
     @Override // android.widget.ToggleButton, android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.A();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.A();
         }
     }
 
     @Override // android.view.View
     public void setBackgroundResource(int i) {
         super.setBackgroundResource(i);
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.B(i);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.B(i);
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
@@ -129,31 +128,29 @@ public class AppCompatToggleButton extends ToggleButton implements z47 {
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.K(colorStateList);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.L(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.L(mode);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.M(mode);
         }
     }
 
-    @Override // defpackage.z47
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        mo moVar = this.R;
-        moVar.k(colorStateList);
-        moVar.b();
+        xp xpVar = this.d0;
+        xpVar.m(colorStateList);
+        xpVar.b();
     }
 
-    @Override // defpackage.z47
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        mo moVar = this.R;
-        moVar.l(mode);
-        moVar.b();
+        xp xpVar = this.d0;
+        xpVar.n(mode);
+        xpVar.b();
     }
 
     public AppCompatToggleButton(Context context, AttributeSet attributeSet) {

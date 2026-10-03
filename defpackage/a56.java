@@ -1,26 +1,25 @@
 package defpackage;
 
-import io.sentry.m5;
+import su.happ.proxyutility.dto.MetaParams;
+import su.happ.proxyutility.dto.enums.FragmentationLength;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class a56 {
-    public static final /* synthetic */ int[] a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class a56 extends jq4 {
+    public static final a56 X = new a56(MetaParams.class, "fragmentationLength", "getFragmentationLength-8mMDfP4()Ljava/lang/String;", 0);
 
-    static {
-        int[] iArr = new int[m5.values().length];
-        try {
-            iArr[m5.DEBUG.ordinal()] = 1;
-        } catch (NoSuchFieldError unused) {
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        FragmentationLength fragmentationLength = (FragmentationLength) obj2;
+        ((MetaParams) obj).x1(fragmentationLength != null ? fragmentationLength.getValue() : null);
+    }
+
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        String fragmentationLength = ((MetaParams) obj).getFragmentationLength();
+        if (fragmentationLength != null) {
+            return new FragmentationLength(fragmentationLength);
         }
-        try {
-            iArr[m5.INFO.ordinal()] = 2;
-        } catch (NoSuchFieldError unused2) {
-        }
-        try {
-            iArr[m5.WARNING.ordinal()] = 3;
-        } catch (NoSuchFieldError unused3) {
-        }
-        a = iArr;
+        return null;
     }
 }

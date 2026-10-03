@@ -1,9 +1,9 @@
 .class public final enum Lio/sentry/rrweb/d;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # static fields
@@ -46,213 +46,85 @@
 
 # direct methods
 .method private static synthetic $values()[Lio/sentry/rrweb/d;
-    .locals 3
+    .locals 18
 
     .line 1
-    const/16 v0, 0x11
+    sget-object v1, Lio/sentry/rrweb/d;->Mutation:Lio/sentry/rrweb/d;
 
     .line 2
     .line 3
-    new-array v0, v0, [Lio/sentry/rrweb/d;
+    sget-object v2, Lio/sentry/rrweb/d;->MouseMove:Lio/sentry/rrweb/d;
 
     .line 4
     .line 5
-    sget-object v1, Lio/sentry/rrweb/d;->Mutation:Lio/sentry/rrweb/d;
+    sget-object v3, Lio/sentry/rrweb/d;->MouseInteraction:Lio/sentry/rrweb/d;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    sget-object v4, Lio/sentry/rrweb/d;->Scroll:Lio/sentry/rrweb/d;
 
     .line 8
-    aput-object v1, v0, v2
-
     .line 9
+    sget-object v5, Lio/sentry/rrweb/d;->ViewportResize:Lio/sentry/rrweb/d;
+
     .line 10
-    sget-object v1, Lio/sentry/rrweb/d;->MouseMove:Lio/sentry/rrweb/d;
-
     .line 11
-    .line 12
-    const/4 v2, 0x1
+    sget-object v6, Lio/sentry/rrweb/d;->Input:Lio/sentry/rrweb/d;
 
+    .line 12
     .line 13
-    aput-object v1, v0, v2
+    sget-object v7, Lio/sentry/rrweb/d;->TouchMove:Lio/sentry/rrweb/d;
 
     .line 14
     .line 15
-    sget-object v1, Lio/sentry/rrweb/d;->MouseInteraction:Lio/sentry/rrweb/d;
+    sget-object v8, Lio/sentry/rrweb/d;->MediaInteraction:Lio/sentry/rrweb/d;
 
     .line 16
     .line 17
-    const/4 v2, 0x2
+    sget-object v9, Lio/sentry/rrweb/d;->StyleSheetRule:Lio/sentry/rrweb/d;
 
     .line 18
-    aput-object v1, v0, v2
-
     .line 19
+    sget-object v10, Lio/sentry/rrweb/d;->CanvasMutation:Lio/sentry/rrweb/d;
+
     .line 20
-    sget-object v1, Lio/sentry/rrweb/d;->Scroll:Lio/sentry/rrweb/d;
-
     .line 21
-    .line 22
-    const/4 v2, 0x3
+    sget-object v11, Lio/sentry/rrweb/d;->Font:Lio/sentry/rrweb/d;
 
+    .line 22
     .line 23
-    aput-object v1, v0, v2
+    sget-object v12, Lio/sentry/rrweb/d;->Log:Lio/sentry/rrweb/d;
 
     .line 24
     .line 25
-    sget-object v1, Lio/sentry/rrweb/d;->ViewportResize:Lio/sentry/rrweb/d;
+    sget-object v13, Lio/sentry/rrweb/d;->Drag:Lio/sentry/rrweb/d;
 
     .line 26
     .line 27
-    const/4 v2, 0x4
+    sget-object v14, Lio/sentry/rrweb/d;->StyleDeclaration:Lio/sentry/rrweb/d;
 
     .line 28
-    aput-object v1, v0, v2
-
     .line 29
+    sget-object v15, Lio/sentry/rrweb/d;->Selection:Lio/sentry/rrweb/d;
+
     .line 30
-    sget-object v1, Lio/sentry/rrweb/d;->Input:Lio/sentry/rrweb/d;
-
     .line 31
-    .line 32
-    const/4 v2, 0x5
+    sget-object v16, Lio/sentry/rrweb/d;->AdoptedStyleSheet:Lio/sentry/rrweb/d;
 
+    .line 32
     .line 33
-    aput-object v1, v0, v2
+    sget-object v17, Lio/sentry/rrweb/d;->CustomElement:Lio/sentry/rrweb/d;
 
     .line 34
     .line 35
-    sget-object v1, Lio/sentry/rrweb/d;->TouchMove:Lio/sentry/rrweb/d;
+    filled-new-array/range {v1 .. v17}, [Lio/sentry/rrweb/d;
 
     .line 36
     .line 37
-    const/4 v2, 0x6
-
     .line 38
-    aput-object v1, v0, v2
+    move-result-object v0
 
     .line 39
-    .line 40
-    sget-object v1, Lio/sentry/rrweb/d;->MediaInteraction:Lio/sentry/rrweb/d;
-
-    .line 41
-    .line 42
-    const/4 v2, 0x7
-
-    .line 43
-    aput-object v1, v0, v2
-
-    .line 44
-    .line 45
-    sget-object v1, Lio/sentry/rrweb/d;->StyleSheetRule:Lio/sentry/rrweb/d;
-
-    .line 46
-    .line 47
-    const/16 v2, 0x8
-
-    .line 48
-    .line 49
-    aput-object v1, v0, v2
-
-    .line 50
-    .line 51
-    sget-object v1, Lio/sentry/rrweb/d;->CanvasMutation:Lio/sentry/rrweb/d;
-
-    .line 52
-    .line 53
-    const/16 v2, 0x9
-
-    .line 54
-    .line 55
-    aput-object v1, v0, v2
-
-    .line 56
-    .line 57
-    sget-object v1, Lio/sentry/rrweb/d;->Font:Lio/sentry/rrweb/d;
-
-    .line 58
-    .line 59
-    const/16 v2, 0xa
-
-    .line 60
-    .line 61
-    aput-object v1, v0, v2
-
-    .line 62
-    .line 63
-    sget-object v1, Lio/sentry/rrweb/d;->Log:Lio/sentry/rrweb/d;
-
-    .line 64
-    .line 65
-    const/16 v2, 0xb
-
-    .line 66
-    .line 67
-    aput-object v1, v0, v2
-
-    .line 68
-    .line 69
-    sget-object v1, Lio/sentry/rrweb/d;->Drag:Lio/sentry/rrweb/d;
-
-    .line 70
-    .line 71
-    const/16 v2, 0xc
-
-    .line 72
-    .line 73
-    aput-object v1, v0, v2
-
-    .line 74
-    .line 75
-    sget-object v1, Lio/sentry/rrweb/d;->StyleDeclaration:Lio/sentry/rrweb/d;
-
-    .line 76
-    .line 77
-    const/16 v2, 0xd
-
-    .line 78
-    .line 79
-    aput-object v1, v0, v2
-
-    .line 80
-    .line 81
-    sget-object v1, Lio/sentry/rrweb/d;->Selection:Lio/sentry/rrweb/d;
-
-    .line 82
-    .line 83
-    const/16 v2, 0xe
-
-    .line 84
-    .line 85
-    aput-object v1, v0, v2
-
-    .line 86
-    .line 87
-    sget-object v1, Lio/sentry/rrweb/d;->AdoptedStyleSheet:Lio/sentry/rrweb/d;
-
-    .line 88
-    .line 89
-    const/16 v2, 0xf
-
-    .line 90
-    .line 91
-    aput-object v1, v0, v2
-
-    .line 92
-    .line 93
-    sget-object v1, Lio/sentry/rrweb/d;->CustomElement:Lio/sentry/rrweb/d;
-
-    .line 94
-    .line 95
-    const/16 v2, 0x10
-
-    .line 96
-    .line 97
-    aput-object v1, v0, v2
-
-    .line 98
-    .line 99
     return-object v0
 .end method
 
@@ -689,7 +561,7 @@
 
 
 # virtual methods
-.method public serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -703,10 +575,10 @@
     .line 2
     .line 3
     .line 4
-    move-result p2
+    move-result p0
 
     .line 5
-    int-to-long v0, p2
+    int-to-long v0, p0
 
     .line 6
     check-cast p1, Lio/sentry/internal/debugmeta/c;

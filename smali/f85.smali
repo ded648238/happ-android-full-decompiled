@@ -1,170 +1,489 @@
-.class public abstract Lf85;
-.super Ljava/lang/Object;
+.class public final Lf85;
+.super Lp85;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static abc_background_cache_hint_selector_material_dark:I = 0x7f060000
+# instance fields
+.field public final c:F
 
-.field public static abc_background_cache_hint_selector_material_light:I = 0x7f060001
+.field public final d:F
 
-.field public static abc_btn_colored_borderless_text_material:I = 0x7f060002
+.field public final e:F
 
-.field public static abc_btn_colored_text_material:I = 0x7f060003
+.field public final f:Z
 
-.field public static abc_color_highlight_material:I = 0x7f060004
+.field public final g:Z
 
-.field public static abc_decor_view_status_guard:I = 0x7f060005
+.field public final h:F
 
-.field public static abc_decor_view_status_guard_light:I = 0x7f060006
+.field public final i:F
 
-.field public static abc_hint_foreground_material_dark:I = 0x7f060007
 
-.field public static abc_hint_foreground_material_light:I = 0x7f060008
+# direct methods
+.method public constructor <init>(FFFZZFF)V
+    .locals 1
 
-.field public static abc_primary_text_disable_only_material_dark:I = 0x7f060009
+    .line 1
+    const/4 v0, 0x3
 
-.field public static abc_primary_text_disable_only_material_light:I = 0x7f06000a
+    .line 2
+    invoke-direct {p0, v0}, Lp85;-><init>(I)V
 
-.field public static abc_primary_text_material_dark:I = 0x7f06000b
+    .line 3
+    .line 4
+    .line 5
+    iput p1, p0, Lf85;->c:F
 
-.field public static abc_primary_text_material_light:I = 0x7f06000c
+    .line 6
+    .line 7
+    iput p2, p0, Lf85;->d:F
 
-.field public static abc_search_url_text:I = 0x7f06000d
+    .line 8
+    .line 9
+    iput p3, p0, Lf85;->e:F
 
-.field public static abc_search_url_text_normal:I = 0x7f06000e
+    .line 10
+    .line 11
+    iput-boolean p4, p0, Lf85;->f:Z
 
-.field public static abc_search_url_text_pressed:I = 0x7f06000f
+    .line 12
+    .line 13
+    iput-boolean p5, p0, Lf85;->g:Z
 
-.field public static abc_search_url_text_selected:I = 0x7f060010
+    .line 14
+    .line 15
+    iput p6, p0, Lf85;->h:F
 
-.field public static abc_secondary_text_material_dark:I = 0x7f060011
+    .line 16
+    .line 17
+    iput p7, p0, Lf85;->i:F
 
-.field public static abc_secondary_text_material_light:I = 0x7f060012
+    .line 18
+    .line 19
+    return-void
+.end method
 
-.field public static abc_tint_btn_checkable:I = 0x7f060013
 
-.field public static abc_tint_default:I = 0x7f060014
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-.field public static abc_tint_edittext:I = 0x7f060015
+    .line 1
+    const/4 v0, 0x1
 
-.field public static abc_tint_seek_thumb:I = 0x7f060016
+    .line 2
+    if-ne p0, p1, :cond_0
 
-.field public static abc_tint_spinner:I = 0x7f060017
+    .line 3
+    .line 4
+    return v0
 
-.field public static abc_tint_switch_track:I = 0x7f060018
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lf85;
 
-.field public static accent_material_dark:I = 0x7f060019
+    .line 6
+    .line 7
+    const/4 v2, 0x0
 
-.field public static accent_material_light:I = 0x7f06001a
+    .line 8
+    if-nez v1, :cond_1
 
-.field public static background_floating_material_dark:I = 0x7f06001d
+    .line 9
+    .line 10
+    return v2
 
-.field public static background_floating_material_light:I = 0x7f06001e
+    .line 11
+    :cond_1
+    check-cast p1, Lf85;
 
-.field public static background_material_dark:I = 0x7f06001f
+    .line 12
+    .line 13
+    iget v1, p0, Lf85;->c:F
+
+    .line 14
+    .line 15
+    iget v3, p1, Lf85;->c:F
+
+    .line 16
+    .line 17
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
 
-.field public static background_material_light:I = 0x7f060020
+    .line 21
+    if-eqz v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget v1, p0, Lf85;->d:F
+
+    .line 25
+    .line 26
+    iget v3, p1, Lf85;->d:F
+
+    .line 27
+    .line 28
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
 
-.field public static bright_foreground_disabled_material_dark:I = 0x7f060024
+    .line 32
+    if-eqz v1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    iget v1, p0, Lf85;->e:F
+
+    .line 36
+    .line 37
+    iget v3, p1, Lf85;->e:F
+
+    .line 38
+    .line 39
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v1
 
-.field public static bright_foreground_disabled_material_light:I = 0x7f060025
+    .line 43
+    if-eqz v1, :cond_4
 
-.field public static bright_foreground_inverse_material_dark:I = 0x7f060026
+    .line 44
+    .line 45
+    return v2
+
+    .line 46
+    :cond_4
+    iget-boolean v1, p0, Lf85;->f:Z
 
-.field public static bright_foreground_inverse_material_light:I = 0x7f060027
+    .line 47
+    .line 48
+    iget-boolean v3, p1, Lf85;->f:Z
 
-.field public static bright_foreground_material_dark:I = 0x7f060028
+    .line 49
+    .line 50
+    if-eq v1, v3, :cond_5
 
-.field public static bright_foreground_material_light:I = 0x7f060029
+    .line 51
+    .line 52
+    return v2
 
-.field public static button_material_dark:I = 0x7f06002d
+    .line 53
+    :cond_5
+    iget-boolean v1, p0, Lf85;->g:Z
 
-.field public static button_material_light:I = 0x7f06002e
+    .line 54
+    .line 55
+    iget-boolean v3, p1, Lf85;->g:Z
 
-.field public static dim_foreground_disabled_material_dark:I = 0x7f06006a
+    .line 56
+    .line 57
+    if-eq v1, v3, :cond_6
 
-.field public static dim_foreground_disabled_material_light:I = 0x7f06006b
+    .line 58
+    .line 59
+    return v2
 
-.field public static dim_foreground_material_dark:I = 0x7f06006c
+    .line 60
+    :cond_6
+    iget v1, p0, Lf85;->h:F
 
-.field public static dim_foreground_material_light:I = 0x7f06006d
+    .line 61
+    .line 62
+    iget v3, p1, Lf85;->h:F
 
-.field public static error_color_material_dark:I = 0x7f06006e
+    .line 63
+    .line 64
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
-.field public static error_color_material_light:I = 0x7f06006f
+    .line 65
+    .line 66
+    .line 67
+    move-result v1
 
-.field public static foreground_material_dark:I = 0x7f060073
+    .line 68
+    if-eqz v1, :cond_7
 
-.field public static foreground_material_light:I = 0x7f060074
+    .line 69
+    .line 70
+    return v2
 
-.field public static highlighted_text_material_dark:I = 0x7f060075
+    .line 71
+    :cond_7
+    iget p0, p0, Lf85;->i:F
 
-.field public static highlighted_text_material_light:I = 0x7f060076
+    .line 72
+    .line 73
+    iget p1, p1, Lf85;->i:F
 
-.field public static material_blue_grey_800:I = 0x7f06030b
+    .line 74
+    .line 75
+    invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
 
-.field public static material_blue_grey_900:I = 0x7f06030c
+    .line 76
+    .line 77
+    .line 78
+    move-result p0
 
-.field public static material_blue_grey_950:I = 0x7f06030d
+    .line 79
+    if-eqz p0, :cond_8
 
-.field public static material_deep_teal_200:I = 0x7f06030f
+    .line 80
+    .line 81
+    return v2
 
-.field public static material_deep_teal_500:I = 0x7f060310
+    .line 82
+    :cond_8
+    return v0
+.end method
 
-.field public static material_grey_100:I = 0x7f06035b
+.method public final hashCode()I
+    .locals 3
 
-.field public static material_grey_300:I = 0x7f06035c
+    .line 1
+    iget v0, p0, Lf85;->c:F
 
-.field public static material_grey_50:I = 0x7f06035d
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
 
-.field public static material_grey_600:I = 0x7f06035e
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
 
-.field public static material_grey_800:I = 0x7f06035f
+    .line 7
+    const/16 v1, 0x1f
 
-.field public static material_grey_850:I = 0x7f060360
+    .line 8
+    .line 9
+    mul-int/2addr v0, v1
 
-.field public static material_grey_900:I = 0x7f060361
+    .line 10
+    iget v2, p0, Lf85;->d:F
 
-.field public static primary_dark_material_dark:I = 0x7f0603ea
+    .line 11
+    .line 12
+    invoke-static {v0, v2, v1}, Leb7;->c(IFI)I
 
-.field public static primary_dark_material_light:I = 0x7f0603eb
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
 
-.field public static primary_material_dark:I = 0x7f0603ec
+    .line 16
+    iget v2, p0, Lf85;->e:F
 
-.field public static primary_material_light:I = 0x7f0603ed
+    .line 17
+    .line 18
+    invoke-static {v0, v2, v1}, Leb7;->c(IFI)I
 
-.field public static primary_text_default_material_dark:I = 0x7f0603ee
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
 
-.field public static primary_text_default_material_light:I = 0x7f0603ef
+    .line 22
+    iget-boolean v2, p0, Lf85;->f:Z
 
-.field public static primary_text_disabled_material_dark:I = 0x7f0603f0
+    .line 23
+    .line 24
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
-.field public static primary_text_disabled_material_light:I = 0x7f0603f1
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
 
-.field public static ripple_material_dark:I = 0x7f0603f2
+    .line 28
+    iget-boolean v2, p0, Lf85;->g:Z
 
-.field public static ripple_material_light:I = 0x7f0603f3
+    .line 29
+    .line 30
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
-.field public static secondary_text_default_material_dark:I = 0x7f0603f4
+    .line 31
+    .line 32
+    .line 33
+    move-result v0
+
+    .line 34
+    iget v2, p0, Lf85;->h:F
 
-.field public static secondary_text_default_material_light:I = 0x7f0603f5
+    .line 35
+    .line 36
+    invoke-static {v0, v2, v1}, Leb7;->c(IFI)I
 
-.field public static secondary_text_disabled_material_dark:I = 0x7f0603f6
+    .line 37
+    .line 38
+    .line 39
+    move-result v0
+
+    .line 40
+    iget p0, p0, Lf85;->i:F
 
-.field public static secondary_text_disabled_material_light:I = 0x7f0603f7
-
-.field public static switch_thumb_disabled_material_dark:I = 0x7f0603fa
-
-.field public static switch_thumb_disabled_material_light:I = 0x7f0603fb
-
-.field public static switch_thumb_material_dark:I = 0x7f0603fc
-
-.field public static switch_thumb_material_light:I = 0x7f0603fd
-
-.field public static switch_thumb_normal_material_dark:I = 0x7f0603fe
-
-.field public static switch_thumb_normal_material_light:I = 0x7f0603ff
-
-.field public static tooltip_background_dark:I = 0x7f060400
-
-.field public static tooltip_background_light:I = 0x7f060401
+    .line 41
+    .line 42
+    invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result p0
+
+    .line 46
+    add-int/2addr p0, v0
+
+    .line 47
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 5
+
+    .line 1
+    const-string v0, ", verticalEllipseRadius="
+
+    .line 2
+    .line 3
+    const-string v1, ", theta="
+
+    .line 4
+    .line 5
+    const-string v2, "RelativeArcTo(horizontalEllipseRadius="
+
+    .line 6
+    .line 7
+    iget v3, p0, Lf85;->c:F
+
+    .line 8
+    .line 9
+    iget v4, p0, Lf85;->d:F
+
+    .line 10
+    .line 11
+    invoke-static {v2, v3, v0, v4, v1}, Leh0;->u(Ljava/lang/String;FLjava/lang/String;FLjava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iget v1, p0, Lf85;->e:F
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    const-string v1, ", isMoreThanHalf="
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    iget-boolean v1, p0, Lf85;->f:Z
+
+    .line 26
+    .line 27
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 28
+    .line 29
+    .line 30
+    const-string v1, ", isPositiveArc="
+
+    .line 31
+    .line 32
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 33
+    .line 34
+    .line 35
+    iget-boolean v1, p0, Lf85;->g:Z
+
+    .line 36
+    .line 37
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 38
+    .line 39
+    .line 40
+    const-string v1, ", arcStartDx="
+
+    .line 41
+    .line 42
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 43
+    .line 44
+    .line 45
+    iget v1, p0, Lf85;->h:F
+
+    .line 46
+    .line 47
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    .line 50
+    const-string v1, ", arcStartDy="
+
+    .line 51
+    .line 52
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 53
+    .line 54
+    .line 55
+    iget p0, p0, Lf85;->i:F
+
+    .line 56
+    .line 57
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 58
+    .line 59
+    .line 60
+    const-string p0, ")"
+
+    .line 61
+    .line 62
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object p0
+
+    .line 69
+    return-object p0
+.end method

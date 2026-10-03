@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/cache/CacheStrategy$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -49,7 +49,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -64,7 +64,7 @@
 
 # virtual methods
 .method public final isCacheable(Lokhttp3/Response;Lokhttp3/Request;)Z
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -82,121 +82,121 @@
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p0
 
     .line 11
-    const/16 v1, 0xc8
+    const/16 v0, 0xc8
 
     .line 12
     .line 13
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 14
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 15
     .line 16
-    const/16 v1, 0x19a
+    const/16 v0, 0x19a
 
     .line 17
     .line 18
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 19
     .line 20
-    const/16 v1, 0x19e
+    const/16 v0, 0x19e
 
     .line 21
     .line 22
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 23
     .line 24
-    const/16 v1, 0x1f5
+    const/16 v0, 0x1f5
 
     .line 25
     .line 26
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 27
     .line 28
-    const/16 v1, 0xcb
+    const/16 v0, 0xcb
 
     .line 29
     .line 30
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 31
     .line 32
-    const/16 v1, 0xcc
+    const/16 v0, 0xcc
 
     .line 33
     .line 34
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 35
     .line 36
-    const/16 v1, 0x133
+    const/16 v0, 0x133
 
     .line 37
     .line 38
-    if-eq v0, v1, :cond_0
+    if-eq p0, v0, :cond_0
 
     .line 39
     .line 40
-    const/16 v1, 0x134
+    const/16 v0, 0x134
 
     .line 41
     .line 42
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 43
     .line 44
-    const/16 v1, 0x194
+    const/16 v0, 0x194
 
     .line 45
     .line 46
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 47
     .line 48
-    const/16 v1, 0x195
+    const/16 v0, 0x195
 
     .line 49
     .line 50
-    if-eq v0, v1, :cond_1
+    if-eq p0, v0, :cond_1
 
     .line 51
     .line 52
-    packed-switch v0, :pswitch_data_0
+    packed-switch p0, :pswitch_data_0
 
     .line 53
     .line 54
     .line 55
-    return v2
+    return v1
 
     .line 56
     :cond_0
     :pswitch_0
-    const-string v0, "Expires"
+    const-string p0, "Expires"
 
     .line 57
     .line 58
-    const/4 v1, 0x2
+    const/4 v0, 0x2
 
     .line 59
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 60
-    invoke-static {p1, v0, v3, v1, v3}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, p0, v2, v0, v2}, Lokhttp3/Response;->header$default(Lokhttp3/Response;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     .line 61
     .line 62
     .line 63
-    move-result-object v0
+    move-result-object p0
 
     .line 64
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 65
     .line 66
@@ -205,21 +205,21 @@
     .line 67
     .line 68
     .line 69
-    move-result-object v0
+    move-result-object p0
 
     .line 70
-    invoke-virtual {v0}, Lokhttp3/CacheControl;->maxAgeSeconds()I
+    invoke-virtual {p0}, Lokhttp3/CacheControl;->maxAgeSeconds()I
 
     .line 71
     .line 72
     .line 73
-    move-result v0
+    move-result p0
 
     .line 74
-    const/4 v1, -0x1
+    const/4 v0, -0x1
 
     .line 75
-    if-ne v0, v1, :cond_1
+    if-ne p0, v0, :cond_1
 
     .line 76
     .line 77
@@ -228,18 +228,18 @@
     .line 78
     .line 79
     .line 80
-    move-result-object v0
+    move-result-object p0
 
     .line 81
-    invoke-virtual {v0}, Lokhttp3/CacheControl;->isPublic()Z
+    invoke-virtual {p0}, Lokhttp3/CacheControl;->isPublic()Z
 
     .line 82
     .line 83
     .line 84
-    move-result v0
+    move-result p0
 
     .line 85
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 86
     .line 87
@@ -248,22 +248,22 @@
     .line 88
     .line 89
     .line 90
-    move-result-object v0
+    move-result-object p0
 
     .line 91
-    invoke-virtual {v0}, Lokhttp3/CacheControl;->isPrivate()Z
+    invoke-virtual {p0}, Lokhttp3/CacheControl;->isPrivate()Z
 
     .line 92
     .line 93
     .line 94
-    move-result v0
+    move-result p0
 
     .line 95
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 96
     .line 97
-    return v2
+    return v1
 
     .line 98
     :cond_1
@@ -273,18 +273,18 @@
     .line 99
     .line 100
     .line 101
-    move-result-object p1
+    move-result-object p0
 
     .line 102
-    invoke-virtual {p1}, Lokhttp3/CacheControl;->noStore()Z
+    invoke-virtual {p0}, Lokhttp3/CacheControl;->noStore()Z
 
     .line 103
     .line 104
     .line 105
-    move-result p1
+    move-result p0
 
     .line 106
-    if-nez p1, :cond_2
+    if-nez p0, :cond_2
 
     .line 107
     .line 108
@@ -293,29 +293,29 @@
     .line 109
     .line 110
     .line 111
-    move-result-object p1
+    move-result-object p0
 
     .line 112
-    invoke-virtual {p1}, Lokhttp3/CacheControl;->noStore()Z
+    invoke-virtual {p0}, Lokhttp3/CacheControl;->noStore()Z
 
     .line 113
     .line 114
     .line 115
-    move-result p1
+    move-result p0
 
     .line 116
-    if-nez p1, :cond_2
+    if-nez p0, :cond_2
 
     .line 117
     .line 118
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 119
-    return p1
+    return p0
 
     .line 120
     :cond_2
-    return v2
+    return v1
 
     .line 121
     :pswitch_data_0

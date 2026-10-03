@@ -1,191 +1,80 @@
-.class public final Lom;
+.class public abstract synthetic Lom;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# static fields
-.field public static final b:Lom;
-
-
-# instance fields
-.field public final a:Lrp5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lom;
-
-    .line 2
-    .line 3
-    const/high16 v1, 0x41000000    # 8.0f
-
-    .line 4
-    .line 5
-    invoke-static {v1}, Lsp5;->a(F)Lrp5;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
-
-    .line 9
-    invoke-direct {v0, v1}, Lom;-><init>(Lrp5;)V
-
-    .line 10
-    .line 11
-    .line 12
-    sput-object v0, Lom;->b:Lom;
-
-    .line 13
-    .line 14
-    return-void
-.end method
-
-.method public constructor <init>(Lrp5;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lom;->a:Lrp5;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public static synthetic a(Landroid/graphics/fonts/Font;)Landroid/graphics/fonts/Font$Builder;
     .locals 1
 
     .line 1
-    if-ne p0, p1, :cond_0
+    new-instance v0, Landroid/graphics/fonts/Font$Builder;
 
     .line 2
     .line 3
-    goto :goto_1
-
-    .line 4
-    :cond_0
-    instance-of v0, p1, Lom;
-
-    .line 5
-    .line 6
-    if-nez v0, :cond_1
-
-    .line 7
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_1
-    check-cast p1, Lom;
-
-    .line 10
-    .line 11
-    iget-object v0, p0, Lom;->a:Lrp5;
-
-    .line 12
-    .line 13
-    iget-object p1, p1, Lom;->a:Lrp5;
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, p1}, Lrp5;->equals(Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
-    if-nez p1, :cond_2
-
-    .line 20
-    .line 21
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 22
-    return p1
-
-    .line 23
-    :cond_2
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 24
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lom;->a:Lrp5;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lrp5;->hashCode()I
+    invoke-direct {v0, p0}, Landroid/graphics/fonts/Font$Builder;-><init>(Landroid/graphics/fonts/Font;)V
 
     .line 4
     .line 5
     .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "AppButtonShapes(text="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lom;->a:Lrp5;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
     return-object v0
+.end method
+
+.method public static synthetic b(ILjava/util/ArrayList;)Landroid/hardware/camera2/params/InputConfiguration;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/hardware/camera2/params/InputConfiguration;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p1, p0}, Landroid/hardware/camera2/params/InputConfiguration;-><init>(Ljava/util/Collection;I)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public static synthetic c(IILjava/lang/String;)Landroid/hardware/camera2/params/MultiResolutionStreamInfo;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/hardware/camera2/params/MultiResolutionStreamInfo;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p2}, Landroid/hardware/camera2/params/MultiResolutionStreamInfo;-><init>(IILjava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public static synthetic d(Landroid/content/ClipData;I)Landroid/view/ContentInfo$Builder;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/view/ContentInfo$Builder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1}, Landroid/view/ContentInfo$Builder;-><init>(Landroid/content/ClipData;I)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public static synthetic e()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/hardware/camera2/params/MultiResolutionStreamInfo;
+
+    .line 2
+    .line 3
+    return-void
 .end method

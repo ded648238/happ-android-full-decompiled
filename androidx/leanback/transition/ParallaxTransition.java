@@ -8,11 +8,11 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
-import defpackage.v85;
-import io.sentry.x1;
+import defpackage.us5;
+import io.sentry.z1;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ParallaxTransition extends Visibility {
     static {
         new LinearInterpolator();
@@ -24,19 +24,19 @@ public class ParallaxTransition extends Visibility {
 
     @Override // android.transition.Visibility
     public final Animator onAppear(ViewGroup viewGroup, View view, TransitionValues transitionValues, TransitionValues transitionValues2) {
-        if (transitionValues2 == null || view.getTag(v85.lb_parallax_source) == null) {
+        if (transitionValues2 == null || view.getTag(us5.lb_parallax_source) == null) {
             return null;
         }
-        x1.l();
+        z1.l();
         return null;
     }
 
     @Override // android.transition.Visibility
     public final Animator onDisappear(ViewGroup viewGroup, View view, TransitionValues transitionValues, TransitionValues transitionValues2) {
-        if (transitionValues == null || view.getTag(v85.lb_parallax_source) == null) {
+        if (transitionValues == null || view.getTag(us5.lb_parallax_source) == null) {
             return null;
         }
-        x1.l();
+        z1.l();
         return null;
     }
 }

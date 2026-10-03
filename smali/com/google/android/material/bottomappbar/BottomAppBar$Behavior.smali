@@ -1,6 +1,6 @@
 .class public Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;
 .super Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -23,23 +23,23 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Li30;
+    new-instance v0, Lp50;
 
     .line 5
     .line 6
     const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v0, v1, p0}, Li30;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lp50;-><init>(ILjava/lang/Object;)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v0, Landroid/graphics/Rect;
+    new-instance p0, Landroid/graphics/Rect;
 
     .line 11
     .line 12
-    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
+    invoke-direct {p0}, Landroid/graphics/Rect;-><init>()V
 
     .line 13
     .line 14
@@ -54,16 +54,16 @@
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 17
-    new-instance p1, Li30;
+    new-instance p1, Lp50;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p2, p0}, Li30;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lp50;-><init>(ILjava/lang/Object;)V
 
     .line 18
-    new-instance p1, Landroid/graphics/Rect;
+    new-instance p0, Landroid/graphics/Rect;
 
-    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
+    invoke-direct {p0}, Landroid/graphics/Rect;-><init>()V
 
     return-void
 .end method
@@ -74,30 +74,30 @@
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/ClassCastException;
+    new-instance p0, Ljava/lang/ClassCastException;
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/ClassCastException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    throw p0
 .end method
 
 .method public final s(Landroid/view/View;II)Z
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/ClassCastException;
+    new-instance p0, Ljava/lang/ClassCastException;
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/ClassCastException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    throw p0
 .end method

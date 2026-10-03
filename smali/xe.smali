@@ -1,25 +1,29 @@
-.class public final Lxe;
+.class public abstract Lxe;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic a:I
+# static fields
+.field public static final a:Lwe;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput p1, p0, Lxe;->a:I
+    new-instance v0, Lwe;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Landroid/text/style/CharacterStyle;-><init>()V
 
     .line 4
     .line 5
     .line 6
+    sput-object v0, Lxe;->a:Lwe;
+
+    .line 7
+    .line 8
     return-void
 .end method

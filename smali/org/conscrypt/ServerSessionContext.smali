@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/ServerSessionContext;
 .super Lorg/conscrypt/AbstractSessionContext;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -116,7 +116,7 @@
 .end method
 
 .method public onBeforeAddSession(Lorg/conscrypt/NativeSslSession;)V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/ServerSessionContext;->persistentCache:Lorg/conscrypt/SSLServerSessionCache;
@@ -139,7 +139,7 @@
 
     .line 10
     .line 11
-    iget-object v1, p0, Lorg/conscrypt/ServerSessionContext;->persistentCache:Lorg/conscrypt/SSLServerSessionCache;
+    iget-object p0, p0, Lorg/conscrypt/ServerSessionContext;->persistentCache:Lorg/conscrypt/SSLServerSessionCache;
 
     .line 12
     .line 13
@@ -151,7 +151,7 @@
     move-result-object p1
 
     .line 17
-    invoke-interface {v1, p1, v0}, Lorg/conscrypt/SSLServerSessionCache;->putSessionData(Ljavax/net/ssl/SSLSession;[B)V
+    invoke-interface {p0, p1, v0}, Lorg/conscrypt/SSLServerSessionCache;->putSessionData(Ljavax/net/ssl/SSLSession;[B)V
 
     .line 18
     .line 19

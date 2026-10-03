@@ -1,202 +1,199 @@
-.class public final Ldh6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Ldh6;
+.super Lfh6;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ll96;
+.implements Leh6;
+.implements Lch6;
 
 
-# virtual methods
-.method public final d(Lnp6;)Lg02;
-    .locals 7
+# instance fields
+.field public i:Ljava/util/List;
 
-    .line 1
-    new-instance v1, Lch6;
+.field public j:Ljava/util/HashSet;
 
-    .line 2
-    .line 3
-    const/4 v6, 0x0
+.field public k:Ljava/lang/String;
 
-    .line 4
-    invoke-direct {v1, p0, v6}, Lch6;-><init>(Ldh6;Lyv0;)V
+.field public l:Ljava/util/HashSet;
 
-    .line 5
-    .line 6
-    .line 7
-    sget v0, Lj12;->a:I
+.field public m:Ljava/util/HashSet;
 
-    .line 8
-    .line 9
-    new-instance v0, Lwg0;
 
-    .line 10
-    .line 11
-    const/4 v4, -0x2
-
-    .line 12
-    sget-object v5, Li50;->Q:Li50;
-
-    .line 13
-    .line 14
-    sget-object v3, Lun1;->Q:Lun1;
-
-    .line 15
-    .line 16
-    move-object v2, p1
-
-    .line 17
-    invoke-direct/range {v0 .. v5}, Lwg0;-><init>(Lv72;Lg02;Lsw0;ILi50;)V
-
-    .line 18
-    .line 19
-    .line 20
-    new-instance p1, Lol;
-
-    .line 21
-    .line 22
-    const/4 v1, 0x2
-
-    .line 23
-    const/16 v2, 0x9
-
-    .line 24
-    .line 25
-    invoke-direct {p1, v1, v6, v2}, Lol;-><init>(ILyv0;I)V
-
-    .line 26
-    .line 27
-    .line 28
-    new-instance v1, Lx02;
-
-    .line 29
-    .line 30
-    const/4 v2, 0x0
-
-    .line 31
-    invoke-direct {v1, v0, p1, v2}, Lx02;-><init>(Lg02;Lu72;I)V
-
-    .line 32
-    .line 33
-    .line 34
-    invoke-static {v1}, Lf93;->x(Lg02;)Lg02;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object p1
-
-    .line 38
-    return-object p1
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 1
-    instance-of p1, p1, Ldh6;
-
-    .line 2
-    .line 3
-    if-eqz p1, :cond_0
-
-    .line 4
-    .line 5
-    const/4 p1, 0x1
-
-    .line 6
-    return p1
-
-    .line 7
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 8
-    return p1
-.end method
-
-.method public final hashCode()I
+# direct methods
+.method public constructor <init>()V
     .locals 1
 
     .line 1
-    const/high16 v0, -0x80000000
+    invoke-direct {p0}, Lfh6;-><init>()V
 
     .line 2
     .line 3
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 8
-
-    .line 1
-    new-instance v0, Ldm3;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x2
-
     .line 4
-    invoke-direct {v0, v1}, Ldm3;-><init>(I)V
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 5
     .line 6
-    .line 7
-    invoke-static {v0}, Lub;->o(Ldm3;)Ldm3;
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 7
     .line 8
     .line 9
-    .line 10
-    move-result-object v2
+    iput-object v0, p0, Ldh6;->i:Ljava/util/List;
 
+    .line 10
     .line 11
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x0
 
     .line 12
+    iput-object v0, p0, Ldh6;->j:Ljava/util/HashSet;
+
     .line 13
-    const-string v1, "SharingStarted.WhileSubscribed("
-
     .line 14
-    .line 15
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iput-object v0, p0, Ldh6;->k:Ljava/lang/String;
 
+    .line 15
     .line 16
+    iput-object v0, p0, Ldh6;->l:Ljava/util/HashSet;
+
     .line 17
     .line 18
-    const/4 v6, 0x0
+    iput-object v0, p0, Ldh6;->m:Ljava/util/HashSet;
 
     .line 19
-    const/16 v7, 0x3f
-
     .line 20
-    .line 21
-    const/4 v3, 0x0
+    return-void
+.end method
 
-    .line 22
-    const/4 v4, 0x0
 
-    .line 23
-    const/4 v5, 0x0
+# virtual methods
+.method public final a()Ljava/util/Set;
+    .locals 0
 
-    .line 24
-    invoke-static/range {v2 .. v7}, Lnm0;->C0(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/String;Lj72;I)Ljava/lang/String;
+    .line 1
+    const/4 p0, 0x0
 
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v1
+    .line 2
+    return-object p0
+.end method
 
-    .line 28
-    const/16 v2, 0x29
+.method public final b()Ljava/lang/String;
+    .locals 0
 
-    .line 29
-    .line 30
-    invoke-static {v0, v1, v2}, Lmi2;->r(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+    .line 1
+    iget-object p0, p0, Ldh6;->k:Ljava/lang/String;
 
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
+    .line 2
+    .line 3
+    return-object p0
+.end method
 
-    .line 34
-    return-object v0
+.method public final d(Ljava/util/HashSet;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ldh6;->j:Ljava/util/HashSet;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public e(Lih6;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ldh6;->i:Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final f()Ljava/util/Set;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ldh6;->j:Ljava/util/HashSet;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final g()Ljava/util/List;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ldh6;->i:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final h(Ljava/util/HashSet;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ldh6;->m:Ljava/util/HashSet;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final i(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ldh6;->k:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final j(Ljava/util/HashSet;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ldh6;->l:Ljava/util/HashSet;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final k(Ljava/util/HashSet;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final m()Ljava/util/Set;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ldh6;->l:Ljava/util/HashSet;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final n()Ljava/util/Set;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ldh6;->m:Ljava/util/HashSet;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

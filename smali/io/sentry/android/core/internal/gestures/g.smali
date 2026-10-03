@@ -1,6 +1,6 @@
 .class public final Lio/sentry/android/core/internal/gestures/g;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/view/GestureDetector$OnGestureListener;
@@ -9,13 +9,13 @@
 # instance fields
 .field public final a:Ljava/lang/ref/WeakReference;
 
-.field public final b:Lio/sentry/d1;
+.field public final b:Lio/sentry/f1;
 
 .field public final c:Lio/sentry/android/core/SentryAndroidOptions;
 
 .field public d:Lio/sentry/internal/gestures/b;
 
-.field public e:Lio/sentry/n1;
+.field public e:Lio/sentry/p1;
 
 .field public f:Lio/sentry/android/core/internal/gestures/e;
 
@@ -23,7 +23,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Lio/sentry/j4;Lio/sentry/android/core/SentryAndroidOptions;)V
+.method public constructor <init>(Landroid/app/Activity;Lio/sentry/l4;Lio/sentry/android/core/SentryAndroidOptions;)V
     .locals 2
 
     .line 1
@@ -39,7 +39,7 @@
 
     .line 6
     .line 7
-    iput-object v0, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/n1;
+    iput-object v0, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/p1;
 
     .line 8
     .line 9
@@ -92,7 +92,7 @@
 
     .line 33
     .line 34
-    iput-object p2, p0, Lio/sentry/android/core/internal/gestures/g;->b:Lio/sentry/d1;
+    iput-object p2, p0, Lio/sentry/android/core/internal/gestures/g;->b:Lio/sentry/f1;
 
     .line 35
     .line 36
@@ -113,7 +113,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/m6;->isEnableUserInteractionBreadcrumbs()Z
+    invoke-virtual {v0}, Lio/sentry/o6;->isEnableUserInteractionBreadcrumbs()Z
 
     .line 4
     .line 5
@@ -195,11 +195,11 @@
     .line 37
     .line 38
     :goto_0
-    new-instance v0, Lio/sentry/k0;
+    new-instance v0, Lio/sentry/l0;
 
     .line 39
     .line 40
-    invoke-direct {v0}, Lio/sentry/k0;-><init>()V
+    invoke-direct {v0}, Lio/sentry/l0;-><init>()V
 
     .line 41
     .line 42
@@ -208,7 +208,7 @@
 
     .line 44
     .line 45
-    invoke-virtual {v0, p4, v1}, Lio/sentry/k0;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, p4, v1}, Lio/sentry/l0;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 46
     .line 47
@@ -229,7 +229,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {v0, p4, v1}, Lio/sentry/k0;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, p4, v1}, Lio/sentry/l0;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 57
     .line 58
@@ -255,7 +255,7 @@
 
     .line 69
     .line 70
-    iput-object v2, v1, Lio/sentry/g;->U:Ljava/lang/String;
+    iput-object v2, v1, Lio/sentry/g;->d0:Ljava/lang/String;
 
     .line 71
     .line 72
@@ -271,7 +271,7 @@
     move-result-object p2
 
     .line 78
-    iput-object p2, v1, Lio/sentry/g;->W:Ljava/lang/String;
+    iput-object p2, v1, Lio/sentry/g;->f0:Ljava/lang/String;
 
     .line 79
     .line 80
@@ -373,19 +373,19 @@
 
     .line 128
     :cond_6
-    sget-object p1, Lio/sentry/m5;->INFO:Lio/sentry/m5;
+    sget-object p1, Lio/sentry/o5;->INFO:Lio/sentry/o5;
 
     .line 129
     .line 130
-    iput-object p1, v1, Lio/sentry/g;->Y:Lio/sentry/m5;
+    iput-object p1, v1, Lio/sentry/g;->h0:Lio/sentry/o5;
 
     .line 131
     .line 132
-    iget-object p1, p0, Lio/sentry/android/core/internal/gestures/g;->b:Lio/sentry/d1;
+    iget-object p0, p0, Lio/sentry/android/core/internal/gestures/g;->b:Lio/sentry/f1;
 
     .line 133
     .line 134
-    invoke-interface {p1, v1, v0}, Lio/sentry/d1;->a(Lio/sentry/g;Lio/sentry/k0;)V
+    invoke-interface {p0, v1, v0}, Lio/sentry/f1;->a(Lio/sentry/g;Lio/sentry/l0;)V
 
     .line 135
     .line 136
@@ -394,7 +394,7 @@
 .end method
 
 .method public final b(Ljava/lang/String;)Landroid/view/View;
-    .locals 6
+    .locals 5
 
     .line 1
     iget-object v0, p0, Lio/sentry/android/core/internal/gestures/g;->a:Ljava/lang/ref/WeakReference;
@@ -423,7 +423,7 @@
 
     .line 12
     .line 13
-    iget-object v4, p0, Lio/sentry/android/core/internal/gestures/g;->c:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object p0, p0, Lio/sentry/android/core/internal/gestures/g;->c:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 14
     .line 15
@@ -431,23 +431,23 @@
 
     .line 16
     .line 17
-    invoke-virtual {v4}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v0
+    move-result-object p0
 
     .line 21
-    sget-object v4, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v0, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 22
     .line 23
-    const-string v5, "Activity is null in "
+    const-string v4, "Activity is null in "
 
     .line 24
     .line 25
-    invoke-static {v5, p1, v3}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p1, v3}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 26
     .line 27
@@ -459,7 +459,7 @@
 
     .line 30
     .line 31
-    invoke-interface {v0, v4, p1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, v0, p1, v2}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 32
     .line 33
@@ -480,23 +480,23 @@
 
     .line 40
     .line 41
-    invoke-virtual {v4}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 42
     .line 43
     .line 44
-    move-result-object v0
+    move-result-object p0
 
     .line 45
-    sget-object v4, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v0, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 46
     .line 47
-    const-string v5, "Window is null in "
+    const-string v4, "Window is null in "
 
     .line 48
     .line 49
-    invoke-static {v5, p1, v3}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p1, v3}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 50
     .line 51
@@ -508,7 +508,7 @@
 
     .line 54
     .line 55
-    invoke-interface {v0, v4, p1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, v0, p1, v2}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 56
     .line 57
@@ -529,23 +529,23 @@
 
     .line 64
     .line 65
-    invoke-virtual {v4}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 66
     .line 67
     .line 68
-    move-result-object v0
+    move-result-object p0
 
     .line 69
-    sget-object v4, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object v0, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 70
     .line 71
-    const-string v5, "DecorView is null in "
+    const-string v4, "DecorView is null in "
 
     .line 72
     .line 73
-    invoke-static {v5, p1, v3}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p1, v3}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 74
     .line 75
@@ -557,7 +557,7 @@
 
     .line 78
     .line 79
-    invoke-interface {v0, v4, p1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, v0, p1, v2}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 80
     .line 81
@@ -577,10 +577,10 @@
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     .line 4
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     .line 5
     if-ne p2, v0, :cond_0
@@ -603,14 +603,14 @@
 
     .line 14
     .line 15
-    const/4 v0, 0x1
+    move v0, v1
 
     .line 16
     goto :goto_0
 
     .line 17
     :cond_0
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 18
     :goto_0
@@ -631,14 +631,14 @@
     .line 24
     .line 25
     :goto_1
-    const/4 v0, 0x1
+    move v0, v1
 
     .line 26
     goto :goto_2
 
     .line 27
     :cond_2
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 28
     :goto_2
@@ -646,7 +646,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v3}, Lio/sentry/m6;->isTracingEnabled()Z
+    invoke-virtual {v3}, Lio/sentry/o6;->isTracingEnabled()Z
 
     .line 31
     .line 32
@@ -654,15 +654,15 @@
     move-result v4
 
     .line 34
-    iget-object v5, p0, Lio/sentry/android/core/internal/gestures/g;->b:Lio/sentry/d1;
+    iget-object v5, p0, Lio/sentry/android/core/internal/gestures/g;->b:Lio/sentry/f1;
 
     .line 35
     .line 36
-    if-eqz v4, :cond_c
+    if-eqz v4, :cond_d
 
     .line 37
     .line 38
-    invoke-virtual {v3}, Lio/sentry/m6;->isEnableUserInteractionTracing()Z
+    invoke-virtual {v3}, Lio/sentry/o6;->isEnableUserInteractionTracing()Z
 
     .line 39
     .line 40
@@ -699,27 +699,27 @@
 
     .line 55
     .line 56
-    invoke-virtual {v3}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v3}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 57
     .line 58
     .line 59
-    move-result-object p1
+    move-result-object p0
 
     .line 60
-    sget-object p2, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object p1, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 61
     .line 62
-    const-string v0, "Activity is null, no transaction captured."
+    const-string p2, "Activity is null, no transaction captured."
 
     .line 63
     .line 64
-    new-array v1, v1, [Ljava/lang/Object;
+    new-array v0, v2, [Ljava/lang/Object;
 
     .line 65
     .line 66
-    invoke-interface {p1, p2, v0, v1}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, p1, p2, v0}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 67
     .line 68
@@ -747,7 +747,7 @@
 
     .line 77
     .line 78
-    invoke-static {v7, v6}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v6}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 79
     .line 80
@@ -756,7 +756,7 @@
 
     .line 82
     :goto_3
-    iget-object v8, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/n1;
+    iget-object v8, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/p1;
 
     .line 83
     .line 84
@@ -768,7 +768,7 @@
 
     .line 87
     .line 88
-    invoke-interface {v8}, Lio/sentry/l1;->e()Z
+    invoke-interface {v8}, Lio/sentry/n1;->e()Z
 
     .line 89
     .line 90
@@ -780,7 +780,7 @@
 
     .line 93
     .line 94
-    invoke-virtual {v3}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v3}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 95
     .line 96
@@ -788,7 +788,7 @@
     move-result-object p1
 
     .line 98
-    sget-object p2, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object p2, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 99
     .line 100
@@ -796,11 +796,11 @@
 
     .line 101
     .line 102
-    const-string v2, " already has an ongoing transaction assigned. Rescheduling finish"
+    const-string v1, " already has an ongoing transaction assigned. Rescheduling finish"
 
     .line 103
     .line 104
-    invoke-static {v0, v6, v2}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v6, v1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 105
     .line 106
@@ -808,16 +808,16 @@
     move-result-object v0
 
     .line 108
-    new-array v1, v1, [Ljava/lang/Object;
+    new-array v1, v2, [Ljava/lang/Object;
 
     .line 109
     .line 110
-    invoke-interface {p1, p2, v0, v1}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p1, p2, v0, v1}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 111
     .line 112
     .line 113
-    invoke-virtual {v3}, Lio/sentry/m6;->getIdleTimeout()Ljava/lang/Long;
+    invoke-virtual {v3}, Lio/sentry/o6;->getIdleTimeout()Ljava/lang/Long;
 
     .line 114
     .line 115
@@ -825,15 +825,15 @@
     move-result-object p1
 
     .line 117
-    if-eqz p1, :cond_e
+    if-eqz p1, :cond_f
 
     .line 118
     .line 119
-    iget-object p1, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/n1;
+    iget-object p0, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/p1;
 
     .line 120
     .line 121
-    invoke-interface {p1}, Lio/sentry/n1;->q()V
+    invoke-interface {p0}, Lio/sentry/p1;->q()V
 
     .line 122
     .line 123
@@ -842,350 +842,417 @@
 
     .line 125
     :cond_6
-    sget-object v0, Lio/sentry/d7;->OK:Lio/sentry/d7;
+    sget-object v0, Lio/sentry/f7;->OK:Lio/sentry/f7;
 
     .line 126
     .line 127
-    invoke-virtual {p0, v0}, Lio/sentry/android/core/internal/gestures/g;->d(Lio/sentry/d7;)V
+    invoke-virtual {p0, v0}, Lio/sentry/android/core/internal/gestures/g;->d(Lio/sentry/f7;)V
 
     .line 128
     .line 129
     .line 130
     :cond_7
-    new-instance v0, Ljava/lang/StringBuilder;
+    filled-new-array {v7}, [Lio/sentry/p1;
 
     .line 131
     .line 132
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 133
-    .line 134
-    .line 135
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v0
 
+    .line 134
+    new-instance v8, Let7;
+
+    .line 135
     .line 136
+    const/16 v9, 0x13
+
     .line 137
     .line 138
-    move-result-object v1
+    invoke-direct {v8, v9, v0}, Let7;-><init>(ILjava/lang/Object;)V
 
     .line 139
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
     .line 140
     .line 141
+    invoke-interface {v5, v8}, Lio/sentry/f1;->o(Lio/sentry/h4;)V
+
     .line 142
-    move-result-object v1
-
     .line 143
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 144
+    aget-object v0, v0, v2
+
     .line 145
     .line 146
-    const-string v1, "."
+    if-eqz v0, :cond_8
 
     .line 147
     .line 148
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 149
     .line 150
     .line 151
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p0
 
     .line 152
+    sget-object p1, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
+
     .line 153
     .line 154
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string p2, "Transaction won\'t be created for view with id: %s since there\'s already a transaction bound to the Scope."
 
     .line 155
     .line 156
+    filled-new-array {v6}, [Ljava/lang/Object;
+
     .line 157
+    .line 158
+    .line 159
     move-result-object v0
 
-    .line 158
-    sget-object v1, Lio/sentry/android/core/internal/gestures/d;->a:[I
-
-    .line 159
     .line 160
-    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
+    invoke-interface {p0, p1, p2, v0}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 161
     .line 162
     .line 163
-    move-result v4
+    return-void
 
     .line 164
-    aget v1, v1, v4
+    :cond_8
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 165
     .line 166
-    if-eq v1, v2, :cond_a
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 167
     .line 168
-    const/4 v4, 0x2
-
     .line 169
-    if-eq v1, v4, :cond_9
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 170
     .line 171
-    const/4 v4, 0x3
-
     .line 172
-    if-eq v1, v4, :cond_8
+    move-result-object v2
 
     .line 173
-    .line 174
-    const-string v1, "unknown"
+    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
+    .line 174
     .line 175
     .line 176
-    goto :goto_4
+    move-result-object v2
 
     .line 177
-    :cond_8
-    const-string v1, "swipe"
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 178
     .line 179
-    goto :goto_4
-
     .line 180
-    :cond_9
-    const-string v1, "scroll"
+    const-string v2, "."
 
     .line 181
     .line 182
-    goto :goto_4
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 183
-    :cond_a
-    const-string v1, "click"
-
     .line 184
     .line 185
-    :goto_4
-    const-string v4, "ui.action."
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 186
     .line 187
-    invoke-virtual {v4, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
     .line 188
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 189
     .line 190
-    move-result-object v1
-
     .line 191
-    new-instance v4, Lio/sentry/i7;
+    move-result-object v0
 
     .line 192
-    .line 193
-    invoke-direct {v4}, Lio/sentry/i7;-><init>()V
+    sget-object v2, Lio/sentry/android/core/internal/gestures/d;->a:[I
 
+    .line 193
     .line 194
+    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
+
     .line 195
     .line 196
-    iput-boolean v2, v4, Lio/sentry/i7;->f:Z
-
     .line 197
+    move-result v4
+
     .line 198
-    invoke-virtual {v3}, Lio/sentry/m6;->getDeadlineTimeout()J
+    aget v2, v2, v4
 
     .line 199
     .line 200
-    .line 201
-    move-result-wide v8
+    if-eq v2, v1, :cond_b
 
+    .line 201
     .line 202
-    const-wide/16 v10, 0x0
+    const/4 v4, 0x2
 
     .line 203
-    .line 204
-    cmp-long v6, v8, v10
+    if-eq v2, v4, :cond_a
 
+    .line 204
     .line 205
+    const/4 v4, 0x3
+
     .line 206
-    if-gtz v6, :cond_b
+    if-eq v2, v4, :cond_9
 
     .line 207
     .line 208
-    move-object v6, v7
+    const-string v2, "unknown"
 
     .line 209
-    goto :goto_5
-
     .line 210
-    :cond_b
-    invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    goto :goto_4
 
     .line 211
+    :cond_9
+    const-string v2, "swipe"
+
     .line 212
     .line 213
-    move-result-object v6
+    goto :goto_4
 
     .line 214
-    :goto_5
-    iput-object v6, v4, Lio/sentry/i7;->h:Ljava/lang/Long;
+    :cond_a
+    const-string v2, "scroll"
 
     .line 215
     .line 216
-    invoke-virtual {v3}, Lio/sentry/m6;->getIdleTimeout()Ljava/lang/Long;
+    goto :goto_4
 
     .line 217
+    :cond_b
+    const-string v2, "click"
+
     .line 218
     .line 219
-    move-result-object v3
+    :goto_4
+    const-string v4, "ui.action."
 
     .line 220
-    iput-object v3, v4, Lio/sentry/i7;->g:Ljava/lang/Long;
-
     .line 221
-    .line 222
-    iput-boolean v2, v4, Lio/sentry/c7;->c:Z
+    invoke-virtual {v4, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 222
     .line 223
     .line 224
-    new-instance v2, Ljava/lang/StringBuilder;
+    move-result-object v2
 
     .line 225
+    new-instance v4, Lio/sentry/k7;
+
     .line 226
-    const-string v3, "auto.ui.gesture_listener."
-
     .line 227
-    .line 228
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4}, Lio/sentry/k7;-><init>()V
 
+    .line 228
     .line 229
     .line 230
+    iput-boolean v1, v4, Lio/sentry/k7;->f:Z
+
     .line 231
-    iget-object v3, p1, Lio/sentry/internal/gestures/b;->d:Ljava/lang/String;
-
     .line 232
-    .line 233
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3}, Lio/sentry/o6;->getDeadlineTimeout()J
 
+    .line 233
     .line 234
     .line 235
+    move-result-wide v8
+
     .line 236
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-wide/16 v10, 0x0
 
     .line 237
     .line 238
-    .line 239
-    move-result-object v2
+    cmp-long v6, v8, v10
 
+    .line 239
     .line 240
-    iput-object v2, v4, Lio/sentry/c7;->d:Ljava/lang/String;
+    if-gtz v6, :cond_c
 
     .line 241
     .line 242
-    new-instance v2, Lio/sentry/h7;
+    move-object v6, v7
 
     .line 243
+    goto :goto_5
+
     .line 244
-    sget-object v3, Lio/sentry/protocol/i0;->COMPONENT:Lio/sentry/protocol/i0;
+    :cond_c
+    invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 245
     .line 246
-    invoke-direct {v2, v0, v3, v1, v7}, Lio/sentry/h7;-><init>(Ljava/lang/String;Lio/sentry/protocol/i0;Ljava/lang/String;Lio/sentry/v3;)V
-
     .line 247
-    .line 248
-    .line 249
-    invoke-interface {v5, v2, v4}, Lio/sentry/d1;->l(Lio/sentry/h7;Lio/sentry/i7;)Lio/sentry/n1;
+    move-result-object v6
 
+    .line 248
+    :goto_5
+    iput-object v6, v4, Lio/sentry/k7;->h:Ljava/lang/Long;
+
+    .line 249
     .line 250
+    invoke-virtual {v3}, Lio/sentry/o6;->getIdleTimeout()Ljava/lang/Long;
+
     .line 251
     .line 252
-    move-result-object v0
-
     .line 253
-    new-instance v1, Lna0;
+    move-result-object v3
 
     .line 254
+    iput-object v3, v4, Lio/sentry/k7;->g:Ljava/lang/Long;
+
     .line 255
-    const/16 v2, 0x19
-
     .line 256
-    .line 257
-    invoke-direct {v1, v2, p0, v0}, Lna0;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    iput-boolean v1, v4, Lio/sentry/e7;->c:Z
 
+    .line 257
     .line 258
+    new-instance v1, Ljava/lang/StringBuilder;
+
     .line 259
     .line 260
-    invoke-interface {v5, v1}, Lio/sentry/d1;->t(Lio/sentry/f4;)V
+    const-string v3, "auto.ui.gesture_listener."
 
     .line 261
     .line 262
-    .line 263
-    iput-object v0, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/n1;
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 263
     .line 264
     .line 265
-    iput-object p1, p0, Lio/sentry/android/core/internal/gestures/g;->d:Lio/sentry/internal/gestures/b;
+    iget-object v3, p1, Lio/sentry/internal/gestures/b;->d:Ljava/lang/String;
 
     .line 266
     .line 267
-    iput-object p2, p0, Lio/sentry/android/core/internal/gestures/g;->f:Lio/sentry/android/core/internal/gestures/e;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 268
     .line 269
-    return-void
-
     .line 270
-    :cond_c
-    :goto_6
-    if-eqz v0, :cond_e
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 271
     .line 272
-    invoke-virtual {v3}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableAutoTraceIdGeneration()Z
-
     .line 273
-    .line 274
-    .line 275
-    move-result v0
+    move-result-object v1
 
+    .line 274
+    iput-object v1, v4, Lio/sentry/e7;->d:Ljava/lang/String;
+
+    .line 275
     .line 276
-    if-eqz v0, :cond_d
+    new-instance v1, Lio/sentry/j7;
 
     .line 277
     .line 278
-    new-instance v0, Lio/sentry/util/c;
+    sget-object v3, Lio/sentry/protocol/h0;->COMPONENT:Lio/sentry/protocol/h0;
 
     .line 279
     .line 280
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v1, v0, v3, v2, v7}, Lio/sentry/j7;-><init>(Ljava/lang/String;Lio/sentry/protocol/h0;Ljava/lang/String;Lio/sentry/x3;)V
 
     .line 281
     .line 282
     .line 283
-    invoke-interface {v5, v0}, Lio/sentry/d1;->t(Lio/sentry/f4;)V
+    invoke-interface {v5, v1, v4}, Lio/sentry/f1;->i(Lio/sentry/j7;Lio/sentry/k7;)Lio/sentry/p1;
 
     .line 284
     .line 285
     .line 286
-    :cond_d
-    iput-object p1, p0, Lio/sentry/android/core/internal/gestures/g;->d:Lio/sentry/internal/gestures/b;
+    move-result-object v0
 
     .line 287
+    new-instance v1, Ljl0;
+
     .line 288
+    .line 289
+    const/16 v2, 0x17
+
+    .line 290
+    .line 291
+    invoke-direct {v1, v2, p0, v0}, Ljl0;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+
+    .line 292
+    .line 293
+    .line 294
+    invoke-interface {v5, v1}, Lio/sentry/f1;->o(Lio/sentry/h4;)V
+
+    .line 295
+    .line 296
+    .line 297
+    iput-object v0, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/p1;
+
+    .line 298
+    .line 299
+    iput-object p1, p0, Lio/sentry/android/core/internal/gestures/g;->d:Lio/sentry/internal/gestures/b;
+
+    .line 300
+    .line 301
     iput-object p2, p0, Lio/sentry/android/core/internal/gestures/g;->f:Lio/sentry/android/core/internal/gestures/e;
 
-    .line 289
-    .line 290
+    .line 302
+    .line 303
+    return-void
+
+    .line 304
+    :cond_d
+    :goto_6
+    if-eqz v0, :cond_f
+
+    .line 305
+    .line 306
+    invoke-virtual {v3}, Lio/sentry/android/core/SentryAndroidOptions;->isEnableAutoTraceIdGeneration()Z
+
+    .line 307
+    .line 308
+    .line 309
+    move-result v0
+
+    .line 310
+    if-eqz v0, :cond_e
+
+    .line 311
+    .line 312
+    new-instance v0, Lio/sentry/clientreport/a;
+
+    .line 313
+    .line 314
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 315
+    .line 316
+    .line 317
+    invoke-interface {v5, v0}, Lio/sentry/f1;->o(Lio/sentry/h4;)V
+
+    .line 318
+    .line 319
+    .line 320
     :cond_e
+    iput-object p1, p0, Lio/sentry/android/core/internal/gestures/g;->d:Lio/sentry/internal/gestures/b;
+
+    .line 321
+    .line 322
+    iput-object p2, p0, Lio/sentry/android/core/internal/gestures/g;->f:Lio/sentry/android/core/internal/gestures/e;
+
+    .line 323
+    .line 324
+    :cond_f
     return-void
 .end method
 
-.method public final d(Lio/sentry/d7;)V
+.method public final d(Lio/sentry/f7;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/n1;
+    iget-object v0, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/p1;
 
     .line 2
     .line 3
@@ -1193,7 +1260,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0}, Lio/sentry/l1;->t()Lio/sentry/d7;
+    invoke-interface {v0}, Lio/sentry/n1;->t()Lio/sentry/f7;
 
     .line 6
     .line 7
@@ -1201,7 +1268,7 @@
     move-result-object v0
 
     .line 9
-    iget-object v1, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/n1;
+    iget-object v1, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/p1;
 
     .line 10
     .line 11
@@ -1209,7 +1276,7 @@
 
     .line 12
     .line 13
-    invoke-interface {v1, p1}, Lio/sentry/l1;->h(Lio/sentry/d7;)V
+    invoke-interface {v1, p1}, Lio/sentry/n1;->h(Lio/sentry/f7;)V
 
     .line 14
     .line 15
@@ -1218,31 +1285,31 @@
 
     .line 17
     :cond_0
-    invoke-interface {v1}, Lio/sentry/l1;->i()V
+    invoke-interface {v1}, Lio/sentry/n1;->i()V
 
     .line 18
     .line 19
     .line 20
     :cond_1
     :goto_0
-    new-instance p1, Lxu7;
+    new-instance p1, Let7;
 
     .line 21
     .line 22
-    const/16 v0, 0x9
+    const/16 v0, 0x12
 
     .line 23
     .line 24
-    invoke-direct {p1, v0, p0}, Lxu7;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, Let7;-><init>(ILjava/lang/Object;)V
 
     .line 25
     .line 26
     .line 27
-    iget-object v0, p0, Lio/sentry/android/core/internal/gestures/g;->b:Lio/sentry/d1;
+    iget-object v0, p0, Lio/sentry/android/core/internal/gestures/g;->b:Lio/sentry/f1;
 
     .line 28
     .line 29
-    invoke-interface {v0, p1}, Lio/sentry/d1;->t(Lio/sentry/f4;)V
+    invoke-interface {v0, p1}, Lio/sentry/f1;->o(Lio/sentry/h4;)V
 
     .line 30
     .line 31
@@ -1250,7 +1317,7 @@
     const/4 p1, 0x0
 
     .line 33
-    iput-object p1, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/n1;
+    iput-object p1, p0, Lio/sentry/android/core/internal/gestures/g;->e:Lio/sentry/p1;
 
     .line 34
     .line 35
@@ -1279,7 +1346,7 @@
 .end method
 
 .method public final onDown(Landroid/view/MotionEvent;)Z
-    .locals 3
+    .locals 2
 
     .line 1
     const/4 v0, 0x0
@@ -1296,11 +1363,11 @@
     const/4 v1, 0x0
 
     .line 6
-    iget-object v2, p0, Lio/sentry/android/core/internal/gestures/g;->g:Lio/sentry/android/core/internal/gestures/f;
+    iget-object p0, p0, Lio/sentry/android/core/internal/gestures/g;->g:Lio/sentry/android/core/internal/gestures/f;
 
     .line 7
     .line 8
-    iput-object v1, v2, Lio/sentry/android/core/internal/gestures/f;->b:Lio/sentry/internal/gestures/b;
+    iput-object v1, p0, Lio/sentry/android/core/internal/gestures/f;->b:Lio/sentry/internal/gestures/b;
 
     .line 9
     .line 10
@@ -1308,18 +1375,18 @@
 
     .line 11
     .line 12
-    iput-object v1, v2, Lio/sentry/android/core/internal/gestures/f;->a:Lio/sentry/android/core/internal/gestures/e;
+    iput-object v1, p0, Lio/sentry/android/core/internal/gestures/f;->a:Lio/sentry/android/core/internal/gestures/e;
 
     .line 13
     .line 14
     const/4 v1, 0x0
 
     .line 15
-    iput v1, v2, Lio/sentry/android/core/internal/gestures/f;->c:F
+    iput v1, p0, Lio/sentry/android/core/internal/gestures/f;->c:F
 
     .line 16
     .line 17
-    iput v1, v2, Lio/sentry/android/core/internal/gestures/f;->d:F
+    iput v1, p0, Lio/sentry/android/core/internal/gestures/f;->d:F
 
     .line 18
     .line 19
@@ -1331,7 +1398,7 @@
     move-result v1
 
     .line 23
-    iput v1, v2, Lio/sentry/android/core/internal/gestures/f;->c:F
+    iput v1, p0, Lio/sentry/android/core/internal/gestures/f;->c:F
 
     .line 24
     .line 25
@@ -1343,7 +1410,7 @@
     move-result p1
 
     .line 29
-    iput p1, v2, Lio/sentry/android/core/internal/gestures/f;->d:F
+    iput p1, p0, Lio/sentry/android/core/internal/gestures/f;->d:F
 
     .line 30
     .line 31
@@ -1354,22 +1421,22 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lio/sentry/android/core/internal/gestures/g;->g:Lio/sentry/android/core/internal/gestures/f;
+    iget-object p0, p0, Lio/sentry/android/core/internal/gestures/g;->g:Lio/sentry/android/core/internal/gestures/f;
 
     .line 2
     .line 3
-    sget-object p2, Lio/sentry/android/core/internal/gestures/e;->Swipe:Lio/sentry/android/core/internal/gestures/e;
+    sget-object p1, Lio/sentry/android/core/internal/gestures/e;->Swipe:Lio/sentry/android/core/internal/gestures/e;
 
     .line 4
     .line 5
-    iput-object p2, p1, Lio/sentry/android/core/internal/gestures/f;->a:Lio/sentry/android/core/internal/gestures/e;
+    iput-object p1, p0, Lio/sentry/android/core/internal/gestures/f;->a:Lio/sentry/android/core/internal/gestures/e;
 
     .line 6
     .line 7
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 8
-    return p1
+    return p0
 .end method
 
 .method public final onLongPress(Landroid/view/MotionEvent;)V
@@ -1380,7 +1447,7 @@
 .end method
 
 .method public final onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
-    .locals 4
+    .locals 3
 
     .line 1
     const-string p2, "onScroll"
@@ -1446,11 +1513,11 @@
 
     .line 30
     .line 31
-    iget-object v2, p0, Lio/sentry/android/core/internal/gestures/g;->c:Lio/sentry/android/core/SentryAndroidOptions;
+    iget-object p0, p0, Lio/sentry/android/core/internal/gestures/g;->c:Lio/sentry/android/core/SentryAndroidOptions;
 
     .line 32
     .line 33
-    invoke-static {v2, p2, v0, p1, v1}, Lio/sentry/android/core/internal/gestures/i;->a(Lio/sentry/android/core/SentryAndroidOptions;Landroid/view/View;FFLio/sentry/internal/gestures/a;)Lio/sentry/internal/gestures/b;
+    invoke-static {p0, p2, v0, p1, v1}, Lio/sentry/config/a;->d(Lio/sentry/android/core/SentryAndroidOptions;Landroid/view/View;FFLio/sentry/internal/gestures/a;)Lio/sentry/internal/gestures/b;
 
     .line 34
     .line 35
@@ -1462,36 +1529,36 @@
 
     .line 38
     .line 39
-    invoke-virtual {v2}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 40
     .line 41
     .line 42
-    move-result-object p1
+    move-result-object p0
 
     .line 43
-    sget-object p2, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object p1, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 44
     .line 45
-    const-string v0, "Unable to find scroll target. No breadcrumb captured."
+    const-string p2, "Unable to find scroll target. No breadcrumb captured."
 
     .line 46
     .line 47
-    new-array v1, p3, [Ljava/lang/Object;
+    new-array v0, p3, [Ljava/lang/Object;
 
     .line 48
     .line 49
-    invoke-interface {p1, p2, v0, v1}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, p1, p2, v0}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 50
     .line 51
     .line 52
-    sget-object p1, Lio/sentry/android/core/internal/gestures/e;->Scroll:Lio/sentry/android/core/internal/gestures/e;
+    sget-object p0, Lio/sentry/android/core/internal/gestures/e;->Scroll:Lio/sentry/android/core/internal/gestures/e;
 
     .line 53
     .line 54
-    iput-object p1, p4, Lio/sentry/android/core/internal/gestures/f;->a:Lio/sentry/android/core/internal/gestures/e;
+    iput-object p0, p4, Lio/sentry/android/core/internal/gestures/f;->a:Lio/sentry/android/core/internal/gestures/e;
 
     .line 55
     .line 56
@@ -1499,36 +1566,36 @@
 
     .line 57
     :cond_1
-    invoke-virtual {v2}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {p0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 58
     .line 59
     .line 60
-    move-result-object p2
+    move-result-object p0
 
     .line 61
-    sget-object v0, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object p2, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 62
     .line 63
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 64
     .line 65
-    const-string v2, "Scroll target found: "
+    const-string v1, "Scroll target found: "
 
     .line 66
     .line 67
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 68
     .line 69
     .line 70
-    iget-object v2, p1, Lio/sentry/internal/gestures/b;->c:Ljava/lang/String;
+    iget-object v1, p1, Lio/sentry/internal/gestures/b;->c:Ljava/lang/String;
 
     .line 71
     .line 72
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_2
 
     .line 73
     .line 74
@@ -1536,40 +1603,40 @@
 
     .line 75
     :cond_2
-    const-string v2, "UiElement.tag can\'t be null"
+    const-string v1, "UiElement.tag can\'t be null"
 
     .line 76
     .line 77
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 78
-    invoke-static {v3, v2}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lio/sentry/util/c;->s(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 79
     .line 80
     .line 81
-    move-object v2, v3
+    move-object v1, v2
 
     .line 82
     :goto_0
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 83
     .line 84
     .line 85
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 86
     .line 87
     .line 88
-    move-result-object v1
+    move-result-object v0
 
     .line 89
-    new-array v2, p3, [Ljava/lang/Object;
+    new-array v1, p3, [Ljava/lang/Object;
 
     .line 90
     .line 91
-    invoke-interface {p2, v0, v1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, p2, v0, v1}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 92
     .line 93
@@ -1578,11 +1645,11 @@
 
     .line 95
     .line 96
-    sget-object p1, Lio/sentry/android/core/internal/gestures/e;->Scroll:Lio/sentry/android/core/internal/gestures/e;
+    sget-object p0, Lio/sentry/android/core/internal/gestures/e;->Scroll:Lio/sentry/android/core/internal/gestures/e;
 
     .line 97
     .line 98
-    iput-object p1, p4, Lio/sentry/android/core/internal/gestures/f;->a:Lio/sentry/android/core/internal/gestures/e;
+    iput-object p0, p4, Lio/sentry/android/core/internal/gestures/f;->a:Lio/sentry/android/core/internal/gestures/e;
 
     .line 99
     .line 100
@@ -1653,7 +1720,7 @@
 
     .line 24
     .line 25
-    invoke-static {v5, v0, v2, v3, v4}, Lio/sentry/android/core/internal/gestures/i;->a(Lio/sentry/android/core/SentryAndroidOptions;Landroid/view/View;FFLio/sentry/internal/gestures/a;)Lio/sentry/internal/gestures/b;
+    invoke-static {v5, v0, v2, v3, v4}, Lio/sentry/config/a;->d(Lio/sentry/android/core/SentryAndroidOptions;Landroid/view/View;FFLio/sentry/internal/gestures/a;)Lio/sentry/internal/gestures/b;
 
     .line 26
     .line 27
@@ -1665,27 +1732,27 @@
 
     .line 30
     .line 31
-    invoke-virtual {v5}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-virtual {v5}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 32
     .line 33
     .line 34
-    move-result-object p1
+    move-result-object p0
 
     .line 35
-    sget-object v0, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    sget-object p1, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 36
     .line 37
-    const-string v2, "Unable to find click target. No breadcrumb captured."
+    const-string v0, "Unable to find click target. No breadcrumb captured."
 
     .line 38
     .line 39
-    new-array v3, v1, [Ljava/lang/Object;
+    new-array v2, v1, [Ljava/lang/Object;
 
     .line 40
     .line 41
-    invoke-interface {p1, v0, v2, v3}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-interface {p0, p1, v0, v2}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 42
     .line 43

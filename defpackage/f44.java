@@ -1,29 +1,54 @@
 package defpackage;
 
-import android.util.SparseArray;
+import android.content.Context;
+import androidx.work.WorkerParameters;
+import java.util.concurrent.atomic.AtomicInteger;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class f44 {
-    public final SparseArray a;
-    public sd7 b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class f44 {
+    public final Context a;
+    public final WorkerParameters b;
+    public final AtomicInteger c = new AtomicInteger(-256);
+    public boolean d;
 
-    public f44(int i) {
-        this.a = new SparseArray(i);
+    public f44(Context context, WorkerParameters workerParameters) {
+        if (context == null) {
+            i60.p("Application Context is null");
+            throw null;
+        }
+        if (workerParameters == null) {
+            i60.p("WorkerParameters is null");
+            throw null;
+        }
+        this.a = context;
+        this.b = workerParameters;
     }
 
-    public final void a(sd7 sd7Var, int i, int i2) {
-        int iA = sd7Var.a(i);
-        SparseArray sparseArray = this.a;
-        f44 f44Var = sparseArray == null ? null : (f44) sparseArray.get(iA);
-        if (f44Var == null) {
-            f44Var = new f44(1);
-            sparseArray.put(sd7Var.a(i), f44Var);
+    public y34 a() {
+        sb0 sb0Var = new sb0();
+        sb0Var.c = new z36();
+        wb0 wb0Var = new wb0(sb0Var);
+        sb0Var.b = wb0Var;
+        sb0Var.a = w31.class;
+        try {
+            sb0Var.d(new IllegalStateException("Expedited WorkRequests require a ListenableWorker to provide an implementation for`getForegroundInfoAsync()`"));
+            sb0Var.a = "default failing getForegroundInfoAsync";
+            return wb0Var;
+        } catch (Exception e) {
+            wb0Var.b(e);
+            return wb0Var;
         }
-        if (i2 > i) {
-            f44Var.a(sd7Var, i + 1, i2);
-        } else {
-            f44Var.b = sd7Var;
+    }
+
+    public abstract y34 c();
+
+    public final void d(int i) {
+        if (this.c.compareAndSet(-256, i)) {
+            b();
         }
+    }
+
+    public void b() {
     }
 }

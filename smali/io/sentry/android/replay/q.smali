@@ -1,334 +1,373 @@
-.class public final enum Lio/sentry/android/replay/q;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lio/sentry/android/replay/q;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field private static final synthetic $ENTRIES:Lpp1;
+# instance fields
+.field public final synthetic X:Lio/sentry/android/replay/ReplayIntegration;
 
-.field private static final synthetic $VALUES:[Lio/sentry/android/replay/q;
+.field public final synthetic Y:J
 
-.field public static final enum CLOSED:Lio/sentry/android/replay/q;
+.field public final synthetic Z:Lio/sentry/protocol/w;
 
-.field public static final enum INITIAL:Lio/sentry/android/replay/q;
+.field public final synthetic c0:Lvy5;
 
-.field public static final enum PAUSED:Lio/sentry/android/replay/q;
-
-.field public static final enum RESUMED:Lio/sentry/android/replay/q;
-
-.field public static final enum STARTED:Lio/sentry/android/replay/q;
-
-.field public static final enum STOPPED:Lio/sentry/android/replay/q;
+.field public final synthetic d0:Ljava/util/Date;
 
 
 # direct methods
-.method private static final synthetic $values()[Lio/sentry/android/replay/q;
-    .locals 3
+.method public constructor <init>(Lio/sentry/android/replay/ReplayIntegration;JLio/sentry/protocol/w;Lvy5;Ljava/util/Date;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-array v0, v0, [Lio/sentry/android/replay/q;
-
     .line 3
     .line 4
-    sget-object v1, Lio/sentry/android/replay/q;->INITIAL:Lio/sentry/android/replay/q;
+    iput-object p1, p0, Lio/sentry/android/replay/q;->X:Lio/sentry/android/replay/ReplayIntegration;
 
     .line 5
     .line 6
-    const/4 v2, 0x0
+    iput-wide p2, p0, Lio/sentry/android/replay/q;->Y:J
 
     .line 7
-    aput-object v1, v0, v2
-
     .line 8
+    iput-object p4, p0, Lio/sentry/android/replay/q;->Z:Lio/sentry/protocol/w;
+
     .line 9
-    sget-object v1, Lio/sentry/android/replay/q;->STARTED:Lio/sentry/android/replay/q;
-
     .line 10
-    .line 11
-    const/4 v2, 0x1
+    iput-object p5, p0, Lio/sentry/android/replay/q;->c0:Lvy5;
 
+    .line 11
     .line 12
-    aput-object v1, v0, v2
+    iput-object p6, p0, Lio/sentry/android/replay/q;->d0:Ljava/util/Date;
 
     .line 13
     .line 14
-    sget-object v1, Lio/sentry/android/replay/q;->RESUMED:Lio/sentry/android/replay/q;
-
-    .line 15
-    .line 16
-    const/4 v2, 0x2
-
-    .line 17
-    aput-object v1, v0, v2
-
-    .line 18
-    .line 19
-    sget-object v1, Lio/sentry/android/replay/q;->PAUSED:Lio/sentry/android/replay/q;
-
-    .line 20
-    .line 21
-    const/4 v2, 0x3
-
-    .line 22
-    aput-object v1, v0, v2
-
-    .line 23
-    .line 24
-    sget-object v1, Lio/sentry/android/replay/q;->STOPPED:Lio/sentry/android/replay/q;
-
-    .line 25
-    .line 26
-    const/4 v2, 0x4
-
-    .line 27
-    aput-object v1, v0, v2
-
-    .line 28
-    .line 29
-    sget-object v1, Lio/sentry/android/replay/q;->CLOSED:Lio/sentry/android/replay/q;
-
-    .line 30
-    .line 31
-    const/4 v2, 0x5
-
-    .line 32
-    aput-object v1, v0, v2
-
-    .line 33
-    .line 34
-    return-object v0
+    return-void
 .end method
 
-.method static constructor <clinit>()V
-    .locals 3
+
+# virtual methods
+.method public final run()V
+    .locals 6
 
     .line 1
-    new-instance v0, Lio/sentry/android/replay/q;
+    iget-object v0, p0, Lio/sentry/android/replay/q;->X:Lio/sentry/android/replay/ReplayIntegration;
 
     .line 2
     .line 3
-    const-string v1, "INITIAL"
+    iget-object v0, v0, Lio/sentry/android/replay/ReplayIntegration;->n0:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     .line 6
-    invoke-direct {v0, v1, v2}, Lio/sentry/android/replay/q;-><init>(Ljava/lang/String;I)V
-
     .line 7
     .line 8
+    move-result-object v0
+
     .line 9
-    sput-object v0, Lio/sentry/android/replay/q;->INITIAL:Lio/sentry/android/replay/q;
+    check-cast v0, Lio/sentry/android/replay/p;
 
     .line 10
     .line 11
-    new-instance v0, Lio/sentry/android/replay/q;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
     .line 13
-    const-string v1, "STARTED"
-
     .line 14
-    .line 15
-    const/4 v2, 0x1
+    iget-object v1, p0, Lio/sentry/android/replay/q;->Z:Lio/sentry/protocol/w;
 
+    .line 15
     .line 16
-    invoke-direct {v0, v1, v2}, Lio/sentry/android/replay/q;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 17
     .line 18
     .line 19
-    sput-object v0, Lio/sentry/android/replay/q;->STARTED:Lio/sentry/android/replay/q;
+    invoke-virtual {v0}, Lio/sentry/android/replay/p;->b()Z
 
     .line 20
     .line 21
-    new-instance v0, Lio/sentry/android/replay/q;
-
     .line 22
+    move-result v2
+
     .line 23
-    const-string v1, "RESUMED"
+    if-eqz v2, :cond_1
 
     .line 24
     .line 25
-    const/4 v2, 0x2
+    iget-wide v2, v0, Lio/sentry/android/replay/p;->a:J
 
     .line 26
-    invoke-direct {v0, v1, v2}, Lio/sentry/android/replay/q;-><init>(Ljava/lang/String;I)V
-
     .line 27
+    iget-wide v4, p0, Lio/sentry/android/replay/q;->Y:J
+
     .line 28
     .line 29
-    sput-object v0, Lio/sentry/android/replay/q;->RESUMED:Lio/sentry/android/replay/q;
+    cmp-long v2, v2, v4
 
     .line 30
     .line 31
-    new-instance v0, Lio/sentry/android/replay/q;
+    if-nez v2, :cond_1
 
     .line 32
     .line 33
-    const-string v1, "PAUSED"
+    iget-object v2, v0, Lio/sentry/android/replay/p;->c:Lio/sentry/protocol/w;
 
     .line 34
     .line 35
-    const/4 v2, 0x3
+    invoke-static {v2, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 36
-    invoke-direct {v0, v1, v2}, Lio/sentry/android/replay/q;-><init>(Ljava/lang/String;I)V
-
     .line 37
     .line 38
+    move-result v1
+
     .line 39
-    sput-object v0, Lio/sentry/android/replay/q;->PAUSED:Lio/sentry/android/replay/q;
+    if-eqz v1, :cond_1
 
     .line 40
     .line 41
-    new-instance v0, Lio/sentry/android/replay/q;
+    iget-object v0, v0, Lio/sentry/android/replay/p;->d:Lio/sentry/android/replay/capture/d;
 
     .line 42
     .line 43
-    const-string v1, "STOPPED"
+    iget-object v1, p0, Lio/sentry/android/replay/q;->c0:Lvy5;
 
     .line 44
     .line 45
-    const/4 v2, 0x4
+    iget-object v2, v1, Lvy5;->X:Ljava/lang/Object;
 
     .line 46
-    invoke-direct {v0, v1, v2}, Lio/sentry/android/replay/q;-><init>(Ljava/lang/String;I)V
-
     .line 47
+    if-ne v0, v2, :cond_1
+
     .line 48
     .line 49
-    sput-object v0, Lio/sentry/android/replay/q;->STOPPED:Lio/sentry/android/replay/q;
+    check-cast v2, Lio/sentry/android/replay/capture/d;
 
     .line 50
     .line 51
-    new-instance v0, Lio/sentry/android/replay/q;
+    invoke-virtual {v2}, Lio/sentry/android/replay/capture/d;->e()I
 
     .line 52
     .line 53
-    const-string v1, "CLOSED"
-
     .line 54
+    move-result v0
+
     .line 55
-    const/4 v2, 0x5
+    add-int/lit8 v0, v0, 0x1
 
     .line 56
-    invoke-direct {v0, v1, v2}, Lio/sentry/android/replay/q;-><init>(Ljava/lang/String;I)V
-
     .line 57
+    invoke-virtual {v2, v0}, Lio/sentry/android/replay/capture/d;->k(I)V
+
     .line 58
     .line 59
-    sput-object v0, Lio/sentry/android/replay/q;->CLOSED:Lio/sentry/android/replay/q;
-
     .line 60
-    .line 61
-    invoke-static {}, Lio/sentry/android/replay/q;->$values()[Lio/sentry/android/replay/q;
+    iget-object v0, v1, Lvy5;->X:Ljava/lang/Object;
 
+    .line 61
     .line 62
+    check-cast v0, Lio/sentry/android/replay/capture/d;
+
     .line 63
     .line 64
-    move-result-object v0
+    iget-object p0, p0, Lio/sentry/android/replay/q;->d0:Ljava/util/Date;
 
     .line 65
-    sput-object v0, Lio/sentry/android/replay/q;->$VALUES:[Lio/sentry/android/replay/q;
-
     .line 66
-    .line 67
-    invoke-static {v0}, Luv3;->x([Ljava/lang/Enum;)Lrp1;
+    invoke-virtual {v0, p0}, Lio/sentry/android/replay/capture/d;->m(Ljava/util/Date;)V
 
+    .line 67
     .line 68
     .line 69
-    .line 70
-    move-result-object v0
+    iget-object p0, v1, Lvy5;->X:Ljava/lang/Object;
 
+    .line 70
     .line 71
-    sput-object v0, Lio/sentry/android/replay/q;->$ENTRIES:Lpp1;
+    check-cast p0, Lio/sentry/android/replay/capture/d;
 
     .line 72
     .line 73
-    return-void
-.end method
+    iget-object p0, p0, Lio/sentry/android/replay/capture/d;->p:Lio/sentry/android/replay/capture/b;
 
-.method private constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
+    .line 74
+    .line 75
+    sget-object v0, Lio/sentry/android/replay/capture/d;->u:[Luo3;
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    .line 76
+    .line 77
+    const/4 v1, 0x6
 
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
+    .line 78
+    aget-object v0, v0, v1
 
-.method public static getEntries()Lpp1;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lpp1;"
-        }
-    .end annotation
+    .line 79
+    .line 80
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    .line 1
-    sget-object v0, Lio/sentry/android/replay/q;->$ENTRIES:Lpp1;
+    .line 81
+    .line 82
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 2
-    .line 3
-    return-object v0
-.end method
+    .line 83
+    .line 84
+    .line 85
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-.method public static valueOf(Ljava/lang/String;)Lio/sentry/android/replay/q;
-    .locals 1
+    .line 86
+    .line 87
+    .line 88
+    iget-object v0, p0, Lio/sentry/android/replay/capture/b;->b:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 1
-    const-class v0, Lio/sentry/android/replay/q;
+    .line 89
+    .line 90
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lio/sentry/android/replay/q;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lio/sentry/android/replay/q;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lio/sentry/android/replay/q;->$VALUES:[Lio/sentry/android/replay/q;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
+    .line 91
+    .line 92
+    .line 93
     move-result-object v0
 
-    .line 7
-    check-cast v0, [Lio/sentry/android/replay/q;
+    .line 94
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 8
-    .line 9
-    return-object v0
+    .line 95
+    .line 96
+    .line 97
+    move-result v2
+
+    .line 98
+    if-nez v2, :cond_1
+
+    .line 99
+    .line 100
+    new-instance v2, Lio/sentry/android/replay/capture/c;
+
+    .line 101
+    .line 102
+    iget-object v3, p0, Lio/sentry/android/replay/capture/b;->d:Lio/sentry/android/replay/capture/d;
+
+    .line 103
+    .line 104
+    const/4 v4, 0x2
+
+    .line 105
+    invoke-direct {v2, v0, v1, v3, v4}, Lio/sentry/android/replay/capture/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;Lio/sentry/android/replay/capture/d;I)V
+
+    .line 106
+    .line 107
+    .line 108
+    iget-object p0, p0, Lio/sentry/android/replay/capture/b;->c:Lio/sentry/android/replay/capture/d;
+
+    .line 109
+    .line 110
+    iget-object v0, p0, Lio/sentry/android/replay/capture/d;->a:Lio/sentry/o6;
+
+    .line 111
+    .line 112
+    invoke-virtual {v0}, Lio/sentry/o6;->getThreadChecker()Lio/sentry/util/thread/a;
+
+    .line 113
+    .line 114
+    .line 115
+    move-result-object v1
+
+    .line 116
+    invoke-interface {v1}, Lio/sentry/util/thread/a;->c()Z
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v1
+
+    .line 120
+    if-eqz v1, :cond_0
+
+    .line 121
+    .line 122
+    iget-object p0, p0, Lio/sentry/android/replay/capture/d;->e:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 123
+    .line 124
+    new-instance v0, Lio/sentry/android/replay/util/h;
+
+    .line 125
+    .line 126
+    new-instance v1, Lio/sentry/p2;
+
+    .line 127
+    .line 128
+    const/4 v3, 0x4
+
+    .line 129
+    invoke-direct {v1, v3, v2}, Lio/sentry/p2;-><init>(ILjava/lang/Object;)V
+
+    .line 130
+    .line 131
+    .line 132
+    const-string v2, "CaptureStrategy.runInBackground"
+
+    .line 133
+    .line 134
+    invoke-direct {v0, v1, v2}, Lio/sentry/android/replay/util/h;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 135
+    .line 136
+    .line 137
+    invoke-interface {p0, v0}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+
+    .line 138
+    .line 139
+    .line 140
+    return-void
+
+    .line 141
+    :cond_0
+    :try_start_0
+    invoke-virtual {v2}, Lio/sentry/android/replay/capture/c;->invoke()Ljava/lang/Object;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 142
+    .line 143
+    .line 144
+    return-void
+
+    .line 145
+    :catchall_0
+    move-exception p0
+
+    .line 146
+    invoke-virtual {v0}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
+
+    .line 147
+    .line 148
+    .line 149
+    move-result-object v0
+
+    .line 150
+    sget-object v1, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
+
+    .line 151
+    .line 152
+    const-string v2, "Failed to execute task CaptureStrategy.runInBackground"
+
+    .line 153
+    .line 154
+    invoke-interface {v0, v1, v2, p0}, Lio/sentry/ILogger;->d(Lio/sentry/o5;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 155
+    .line 156
+    .line 157
+    :cond_1
+    return-void
 .end method

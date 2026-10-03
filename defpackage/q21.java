@@ -1,20 +1,23 @@
 package defpackage;
 
-import java.util.Collection;
-import java.util.Set;
+import java.io.Serializable;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface q21 {
-    Set a();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class q21 extends q48 implements Serializable {
+    public static final q21 w0;
+    public static final Object x0;
+    public transient HashMap v0;
 
-    qf5 b(ha4 ha4Var);
-
-    Collection c(ha4 ha4Var);
-
-    kf5 d(ha4 ha4Var);
-
-    Set e();
-
-    Set f();
+    static {
+        Map map = Collections.EMPTY_MAP;
+        Map map2 = Collections.EMPTY_MAP;
+        q21 q21Var = new q21();
+        q21Var.v0 = null;
+        w0 = q21Var;
+        x0 = new Object();
+    }
 }

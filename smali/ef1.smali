@@ -1,23 +1,21 @@
-.class public final synthetic Lef1;
+.class public final Lef1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lu72;
+.implements Laf1;
 
 
 # instance fields
-.field public final synthetic Q:Le64;
+.field public final X:F
 
-.field public final synthetic R:F
+.field public final Y:F
 
-.field public final synthetic S:J
-
-.field public final synthetic T:I
+.field public final Z:Lee2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Le64;FJI)V
+.method public constructor <init>(FFLee2;)V
     .locals 0
 
     .line 1
@@ -26,83 +24,370 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lef1;->Q:Le64;
+    iput p1, p0, Lef1;->X:F
 
     .line 5
     .line 6
-    iput p2, p0, Lef1;->R:F
+    iput p2, p0, Lef1;->Y:F
 
     .line 7
     .line 8
-    iput-wide p3, p0, Lef1;->S:J
+    iput-object p3, p0, Lef1;->Z:Lee2;
 
     .line 9
     .line 10
-    iput p5, p0, Lef1;->T:I
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+.method public final Z()F
+    .locals 0
 
     .line 1
-    move-object v4, p1
+    iget p0, p0, Lef1;->Y:F
 
     .line 2
-    check-cast v4, Luq0;
-
     .line 3
+    return p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    goto :goto_1
+
     .line 4
-    check-cast p2, Ljava/lang/Integer;
+    :cond_0
+    instance-of v0, p1, Lef1;
 
     .line 5
     .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-nez v0, :cond_1
 
     .line 7
     .line 8
+    goto :goto_0
+
     .line 9
-    iget p1, p0, Lef1;->T:I
+    :cond_1
+    check-cast p1, Lef1;
 
     .line 10
     .line 11
-    or-int/lit8 p1, p1, 0x1
+    iget v0, p0, Lef1;->X:F
 
     .line 12
     .line 13
-    invoke-static {p1}, Luy7;->X(I)I
+    iget v1, p1, Lef1;->X:F
 
     .line 14
     .line 15
+    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
+
     .line 16
-    move-result v5
-
     .line 17
-    iget-object v0, p0, Lef1;->Q:Le64;
-
     .line 18
+    move-result v0
+
     .line 19
-    iget v1, p0, Lef1;->R:F
+    if-eqz v0, :cond_2
 
     .line 20
     .line 21
-    iget-wide v2, p0, Lef1;->S:J
+    goto :goto_0
 
     .line 22
-    .line 23
-    invoke-static/range {v0 .. v5}, Lva6;->e(Le64;FJLuq0;I)V
+    :cond_2
+    iget v0, p0, Lef1;->Y:F
 
+    .line 23
     .line 24
+    iget v1, p1, Lef1;->Y:F
+
     .line 25
     .line 26
-    sget-object p1, Lbh7;->a:Lbh7;
+    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
 
     .line 27
     .line 28
-    return-object p1
+    .line 29
+    move-result v0
+
+    .line 30
+    if-eqz v0, :cond_3
+
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_3
+    iget-object p0, p0, Lef1;->Z:Lee2;
+
+    .line 34
+    .line 35
+    iget-object p1, p1, Lef1;->Z:Lee2;
+
+    .line 36
+    .line 37
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result p0
+
+    .line 41
+    if-nez p0, :cond_4
+
+    .line 42
+    .line 43
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 44
+    return p0
+
+    .line 45
+    :cond_4
+    :goto_1
+    const/4 p0, 0x1
+
+    .line 46
+    return p0
+.end method
+
+.method public final getDensity()F
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lef1;->X:F
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget v0, p0, Lef1;->X:F
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const/16 v1, 0x1f
+
+    .line 8
+    .line 9
+    mul-int/2addr v0, v1
+
+    .line 10
+    iget v2, p0, Lef1;->Y:F
+
+    .line 11
+    .line 12
+    invoke-static {v0, v2, v1}, Leb7;->c(IFI)I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    iget-object p0, p0, Lef1;->Z:Lee2;
+
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p0
+
+    .line 22
+    add-int/2addr p0, v0
+
+    .line 23
+    return p0
+.end method
+
+.method public final q(F)J
+    .locals 2
+
+    .line 1
+    iget-object p0, p0, Lef1;->Z:Lee2;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1}, Lee2;->a(F)F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    const-wide v0, 0x100000000L
+
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {p0, v0, v1}, Lyu7;->g(FJ)J
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-wide p0
+
+    .line 16
+    return-wide p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 5
+
+    .line 1
+    const-string v0, ", fontScale="
+
+    .line 2
+    .line 3
+    const-string v1, ", converter="
+
+    .line 4
+    .line 5
+    const-string v2, "DensityWithConverter(density="
+
+    .line 6
+    .line 7
+    iget v3, p0, Lef1;->X:F
+
+    .line 8
+    .line 9
+    iget v4, p0, Lef1;->Y:F
+
+    .line 10
+    .line 11
+    invoke-static {v2, v3, v0, v4, v1}, Leh0;->u(Ljava/lang/String;FLjava/lang/String;FLjava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iget-object p0, p0, Lef1;->Z:Lee2;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    const-string p0, ")"
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p0
+
+    .line 29
+    return-object p0
+.end method
+
+.method public final z(J)F
+    .locals 4
+
+    .line 1
+    invoke-static {p1, p2}, Lxu7;->b(J)J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    const-wide v2, 0x100000000L
+
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {v0, v1, v2, v3}, Lzu7;->a(JJ)Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    if-eqz v0, :cond_0
+
+    .line 15
+    .line 16
+    iget-object p0, p0, Lef1;->Z:Lee2;
+
+    .line 17
+    .line 18
+    invoke-static {p1, p2}, Lxu7;->c(J)F
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p1
+
+    .line 22
+    invoke-interface {p0, p1}, Lee2;->b(F)F
+
+    .line 23
+    .line 24
+    .line 25
+    move-result p0
+
+    .line 26
+    return p0
+
+    .line 27
+    :cond_0
+    const-string p0, "Only Sp can convert to Px"
+
+    .line 28
+    .line 29
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 30
+    .line 31
+    .line 32
+    const/4 p0, 0x0
+
+    .line 33
+    return p0
 .end method

@@ -1,25 +1,16 @@
 package defpackage;
 
-import android.content.res.Resources;
-import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
-import android.util.AttributeSet;
-import java.io.IOException;
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class do0 {
+    public static final do0 c;
+    public int[][] a;
+    public int[][] b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class do0 {
-    public static Drawable a(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) throws XmlPullParserException, IOException {
-        return Drawable.createFromXmlInner(resources, xmlPullParser, attributeSet, theme);
-    }
-
-    public static int b(TypedArray typedArray) {
-        return typedArray.getChangingConfigurations();
-    }
-
-    public static void c(Drawable drawable, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) throws XmlPullParserException, IOException {
-        drawable.inflate(resources, xmlPullParser, attributeSet, theme);
+    static {
+        do0 do0Var = new do0();
+        do0Var.a = new int[128][];
+        do0Var.b = new int[128][];
+        c = do0Var;
     }
 }

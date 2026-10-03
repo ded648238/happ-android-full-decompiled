@@ -1,45 +1,18 @@
-.class public abstract Lgg4;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lgg4;
+.super Leg4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Lx84;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lx84;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-direct {v0, v1}, Lx84;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, Lgg4;->a:Lx84;
-
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public static final a()Lx84;
+# virtual methods
+.method public final a(Ldg4;)Landroid/window/OnBackInvokedCallback;
     .locals 1
 
     .line 1
-    new-instance v0, Lx84;
+    new-instance v0, Lfg4;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lx84;-><init>()V
+    invoke-direct {v0, p0, p1}, Lfg4;-><init>(Lgg4;Ldg4;)V
 
     .line 4
     .line 5

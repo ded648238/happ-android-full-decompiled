@@ -1,59 +1,62 @@
 package defpackage;
 
-import android.view.View;
-import android.view.ViewTreeObserver;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class si4 implements ViewTreeObserver.OnPreDrawListener, View.OnAttachStateChangeListener {
-    public final View Q;
-    public ViewTreeObserver R;
-    public final Runnable S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class si4 {
+    public static final Class[] c = new Class[0];
+    public final String a;
+    public final Class[] b;
 
-    public si4(View view, Runnable runnable) {
-        this.Q = view;
-        this.R = view.getViewTreeObserver();
-        this.S = runnable;
+    public si4(Method method) {
+        this(method.getName(), method.getParameterTypes().length > 0 ? method.getParameterTypes() : c);
     }
 
-    public static void a(View view, Runnable runnable) {
-        if (view == null) {
-            en0.g("view == null");
-            return;
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
         }
-        si4 si4Var = new si4(view, runnable);
-        view.getViewTreeObserver().addOnPreDrawListener(si4Var);
-        view.addOnAttachStateChangeListener(si4Var);
-    }
-
-    @Override // android.view.ViewTreeObserver.OnPreDrawListener
-    public final boolean onPreDraw() {
-        boolean zIsAlive = this.R.isAlive();
-        View view = this.Q;
-        if (zIsAlive) {
-            this.R.removeOnPreDrawListener(this);
-        } else {
-            view.getViewTreeObserver().removeOnPreDrawListener(this);
+        if (obj == null || obj.getClass() != si4.class) {
+            return false;
         }
-        view.removeOnAttachStateChangeListener(this);
-        this.S.run();
+        si4 si4Var = (si4) obj;
+        if (!this.a.equals(si4Var.a)) {
+            return false;
+        }
+        Class[] clsArr = si4Var.b;
+        Class[] clsArr2 = this.b;
+        int length = clsArr2.length;
+        if (clsArr.length != length) {
+            return false;
+        }
+        for (int i = 0; i < length; i++) {
+            if (clsArr[i] != clsArr2[i]) {
+                return false;
+            }
+        }
         return true;
     }
 
-    @Override // android.view.View.OnAttachStateChangeListener
-    public final void onViewAttachedToWindow(View view) {
-        this.R = view.getViewTreeObserver();
+    public final int hashCode() {
+        return this.a.hashCode() + this.b.length;
     }
 
-    @Override // android.view.View.OnAttachStateChangeListener
-    public final void onViewDetachedFromWindow(View view) {
-        boolean zIsAlive = this.R.isAlive();
-        View view2 = this.Q;
-        if (zIsAlive) {
-            this.R.removeOnPreDrawListener(this);
-        } else {
-            view2.getViewTreeObserver().removeOnPreDrawListener(this);
-        }
-        view2.removeOnAttachStateChangeListener(this);
+    public final String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.a);
+        sb.append("(");
+        return eh0.p(sb, this.b.length, "-args)");
+    }
+
+    public si4(Constructor constructor) {
+        this(HttpUrl.FRAGMENT_ENCODE_SET, constructor.getParameterCount() > 0 ? constructor.getParameterTypes() : c);
+    }
+
+    public si4(String str, Class[] clsArr) {
+        this.a = str;
+        this.b = clsArr == null ? c : clsArr;
     }
 }

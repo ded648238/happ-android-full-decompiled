@@ -1,38 +1,14 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class xh1 implements Comparable {
-    public final float Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class xh1 extends tj2 implements mi2 {
+    public static final xh1 X = new xh1(1, bg8.class, "declaresDefaultValue", "declaresDefaultValue()Z", 0);
 
-    public static final boolean a(float f, float f2) {
-        return Float.compare(f, f2) == 0;
-    }
-
-    public static String b(float f) {
-        if (Float.isNaN(f)) {
-            return "Dp.Unspecified";
-        }
-        return f + ".dp";
-    }
-
-    @Override // java.lang.Comparable
-    public final int compareTo(Object obj) {
-        return Float.compare(this.Q, ((xh1) obj).Q);
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj instanceof xh1) {
-            return Float.compare(this.Q, ((xh1) obj).Q) == 0;
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        return Float.floatToIntBits(this.Q);
-    }
-
-    public final String toString() {
-        return b(this.Q);
+    @Override // defpackage.mi2
+    public final Object invoke(Object obj) {
+        bg8 bg8Var = (bg8) obj;
+        bg8Var.getClass();
+        return Boolean.valueOf(bg8Var.A0());
     }
 }

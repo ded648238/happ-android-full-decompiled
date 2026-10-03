@@ -1,34 +1,15 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class bn3 extends cn3 {
-    public final ez0 a;
+import java.util.ArrayList;
 
-    public bn3(ez0 ez0Var) {
-        this.a = ez0Var;
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class bn3 implements nr3 {
+    public static final or3 b = new or3(p06.a.b(bn3.class));
+    public final ArrayList a = new ArrayList();
 
-    @Override // defpackage.cn3
-    public final ez0 a() {
-        return this.a;
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || bn3.class != obj.getClass()) {
-            return false;
-        }
-        return this.a.equals(((bn3) obj).a);
-    }
-
-    public final int hashCode() {
-        return this.a.hashCode() + (bn3.class.getName().hashCode() * 31);
-    }
-
-    public final String toString() {
-        return "Success {mOutputData=" + this.a + '}';
+    @Override // defpackage.nr3
+    public final or3 c() {
+        return b;
     }
 }

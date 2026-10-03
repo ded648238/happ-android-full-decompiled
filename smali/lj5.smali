@@ -1,55 +1,284 @@
-.class public final Llj5;
+.class public abstract Llj5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic a:Ljava/lang/String;
+# static fields
+.field public static final a:Landroid/util/SparseArray;
 
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic c:Ljava/lang/String;
-
-.field public final synthetic d:Ljava/lang/ClassLoader;
-
-.field public final synthetic e:Z
-
-.field public final synthetic f:Ljava/lang/String;
+.field public static final b:Ljava/util/HashMap;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;ZLjava/lang/String;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Landroid/util/SparseArray;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Llj5;->a:Ljava/lang/String;
+    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Llj5;->b:Ljava/lang/String;
+    sput-object v0, Llj5;->a:Landroid/util/SparseArray;
 
     .line 7
     .line 8
-    iput-object p3, p0, Llj5;->c:Ljava/lang/String;
+    new-instance v0, Ljava/util/HashMap;
 
     .line 9
     .line 10
-    iput-object p4, p0, Llj5;->d:Ljava/lang/ClassLoader;
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 11
     .line 12
-    iput-boolean p5, p0, Llj5;->e:Z
+    .line 13
+    sput-object v0, Llj5;->b:Ljava/util/HashMap;
+
+    .line 14
+    .line 15
+    const/4 v1, 0x0
+
+    .line 16
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    sget-object v2, Ljj5;->X:Ljj5;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    const/4 v1, 0x1
+
+    .line 26
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    sget-object v2, Ljj5;->Y:Ljj5;
+
+    .line 31
+    .line 32
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    const/4 v1, 0x2
+
+    .line 36
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v1
+
+    .line 40
+    sget-object v2, Ljj5;->Z:Ljj5;
+
+    .line 41
+    .line 42
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v0
+
+    .line 53
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v1
+
+    .line 57
+    if-eqz v1, :cond_0
+
+    .line 58
+    .line 59
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v1
+
+    .line 63
+    check-cast v1, Ljj5;
+
+    .line 64
+    .line 65
+    sget-object v2, Llj5;->a:Landroid/util/SparseArray;
+
+    .line 66
+    .line 67
+    sget-object v3, Llj5;->b:Ljava/util/HashMap;
+
+    .line 68
+    .line 69
+    invoke-virtual {v3, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v3
+
+    .line 73
+    check-cast v3, Ljava/lang/Integer;
+
+    .line 74
+    .line 75
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v3
+
+    .line 79
+    invoke-virtual {v2, v3, v1}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
+
+    .line 80
+    .line 81
+    .line 82
+    goto :goto_0
+
+    .line 83
+    :cond_0
+    return-void
+.end method
+
+.method public static a(Ljj5;)I
+    .locals 1
+
+    .line 1
+    sget-object v0, Llj5;->b:Ljava/util/HashMap;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljava/lang/Integer;
+
+    .line 8
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_0
+    const-string v0, "PriorityMapping is missing known Priority value "
+
+    .line 17
+    .line 18
+    invoke-static {p0, v0}, Lbh2;->o(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    const/4 p0, 0x0
+
+    .line 22
+    return p0
+.end method
+
+.method public static b(I)Ljj5;
+    .locals 1
+
+    .line 1
+    sget-object v0, Llj5;->a:Landroid/util/SparseArray;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljj5;
+
+    .line 8
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    :cond_0
+    const-string v0, "Unknown Priority for value "
 
     .line 13
     .line 14
-    iput-object p6, p0, Llj5;->f:Ljava/lang/String;
+    invoke-static {p0, v0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 15
     .line 16
-    return-void
+    .line 17
+    move-result-object p0
+
+    .line 18
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    const/4 p0, 0x0
+
+    .line 22
+    return-object p0
 .end method

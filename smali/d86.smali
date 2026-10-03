@@ -1,130 +1,214 @@
 .class public final Ld86;
-.super Landroid/text/style/CharacterStyle;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/text/style/UpdateAppearance;
+.implements Ljava/io/Serializable;
 
 
 # instance fields
-.field public final Q:Lb50;
-
-.field public final R:F
-
-.field public final S:Lto4;
-
-.field public final T:Lp71;
+.field public final X:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lb50;F)V
-    .locals 2
+.method public synthetic constructor <init>(Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ld86;->Q:Lb50;
+    iput-object p1, p0, Ld86;->X:Ljava/lang/Object;
 
     .line 5
     .line 6
-    iput p2, p0, Ld86;->R:F
+    return-void
+.end method
 
+.method public static final a(Ljava/lang/Object;)Ljava/lang/Throwable;
+    .locals 1
+
+    .line 1
+    instance-of v0, p0, Lc86;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    check-cast p0, Lc86;
+
+    .line 6
     .line 7
-    .line 8
-    new-instance p1, Lrb6;
+    iget-object p0, p0, Lc86;->X:Ljava/lang/Throwable;
 
+    .line 8
     .line 9
+    return-object p0
+
     .line 10
-    const-wide v0, 0x7fc000007fc00000L    # 2.247117487993712E307
+    :cond_0
+    const/4 p0, 0x0
 
     .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    invoke-direct {p1, v0, v1}, Lrb6;-><init>(J)V
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-static {p1}, Lvs0;->T(Ljava/lang/Object;)Lto4;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object p1
-
-    .line 22
-    iput-object p1, p0, Ld86;->S:Lto4;
-
-    .line 23
-    .line 24
-    new-instance p1, Lbv3;
-
-    .line 25
-    .line 26
-    const/16 p2, 0x17
-
-    .line 27
-    .line 28
-    invoke-direct {p1, p2, p0}, Lbv3;-><init>(ILjava/lang/Object;)V
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-static {p1}, Lvs0;->z(Lg72;)Lp71;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object p1
-
-    .line 35
-    iput-object p1, p0, Ld86;->T:Lp71;
-
-    .line 36
-    .line 37
-    return-void
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public final updateDrawState(Landroid/text/TextPaint;)V
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     .line 1
-    iget v0, p0, Ld86;->R:F
+    instance-of v0, p1, Ld86;
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Ltv3;->U(Landroid/text/TextPaint;F)V
+    if-nez v0, :cond_0
 
     .line 4
     .line 5
+    goto :goto_0
+
     .line 6
-    iget-object v0, p0, Ld86;->T:Lp71;
+    :cond_0
+    check-cast p1, Ld86;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Lp71;->getValue()Ljava/lang/Object;
+    iget-object p1, p1, Ld86;->X:Ljava/lang/Object;
 
     .line 9
     .line 10
-    .line 11
-    move-result-object v0
+    iget-object p0, p0, Ld86;->X:Ljava/lang/Object;
 
+    .line 11
     .line 12
-    check-cast v0, Landroid/graphics/Shader;
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 13
     .line 14
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+    .line 15
+    move-result p0
+
+    .line 16
+    if-nez p0, :cond_1
+
+    .line 17
+    .line 18
+    :goto_0
+    const/4 p0, 0x0
+
+    .line 19
+    return p0
+
+    .line 20
+    :cond_1
+    const/4 p0, 0x1
+
+    .line 21
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ld86;->X:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget-object p0, p0, Ld86;->X:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    instance-of v0, p0, Lc86;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    check-cast p0, Lc86;
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Lc86;->toString()Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 15
     .line 16
+    const-string v1, "Success("
+
     .line 17
-    return-void
+    .line 18
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 22
+    .line 23
+    .line 24
+    const/16 p0, 0x29
+
+    .line 25
+    .line 26
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p0
+
+    .line 33
+    return-object p0
 .end method

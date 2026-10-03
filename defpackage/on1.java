@@ -1,25 +1,25 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class on1 implements so2 {
-    public final boolean Q;
+import java.util.LinkedHashMap;
 
-    public on1(boolean z) {
-        this.Q = z;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class on1 extends d31 {
+    public LinkedHashMap c0;
+    public /* synthetic */ Object d0;
+    public final /* synthetic */ rt2 e0;
+    public int f0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public on1(rt2 rt2Var, d31 d31Var) {
+        super(d31Var);
+        this.e0 = rt2Var;
     }
 
-    @Override // defpackage.so2
-    public final boolean h() {
-        return this.Q;
-    }
-
-    @Override // defpackage.so2
-    public final jd4 i() {
-        return null;
-    }
-
-    public final String toString() {
-        return mi2.r(new StringBuilder("Empty{"), this.Q ? "Active" : "New", '}');
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.d0 = obj;
+        this.f0 |= Integer.MIN_VALUE;
+        return this.e0.n(null, null, 0, null, this);
     }
 }

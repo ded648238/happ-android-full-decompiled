@@ -1,193 +1,353 @@
 .class public final Lot4;
-.super Lkt4;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final U:Lnt4;
+.field public final a:Z
 
-.field public V:Ljava/lang/Object;
+.field public final b:Z
 
-.field public W:Z
+.field public final c:Z
 
-.field public X:I
+.field public final d:Z
+
+.field public final e:Z
 
 
 # direct methods
-.method public constructor <init>(Lnt4;)V
-    .locals 3
+.method public constructor <init>(ZZZZZ)V
+    .locals 0
 
     .line 1
-    iget-object v0, p1, Lnt4;->R:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iget-object v1, p1, Lnt4;->T:Los4;
-
     .line 4
-    .line 5
-    const/4 v2, 0x1
+    iput-boolean p1, p0, Lot4;->a:Z
 
+    .line 5
     .line 6
-    invoke-direct {p0, v0, v1, v2}, Lkt4;-><init>(Ljava/lang/Object;Ljava/util/Map;I)V
+    iput-boolean p2, p0, Lot4;->b:Z
 
     .line 7
     .line 8
+    iput-boolean p3, p0, Lot4;->c:Z
+
     .line 9
-    iput-object p1, p0, Lot4;->U:Lnt4;
-
     .line 10
+    iput-boolean p4, p0, Lot4;->d:Z
+
     .line 11
-    iget p1, v1, Los4;->U:I
-
     .line 12
-    .line 13
-    iput p1, p0, Lot4;->X:I
+    iput-boolean p5, p0, Lot4;->e:Z
 
+    .line 13
     .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final next()Ljava/lang/Object;
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lot4;->U:Lnt4;
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
-    iget-object v0, v0, Lnt4;->T:Los4;
-
     .line 4
+    return v0
+
     .line 5
-    iget v0, v0, Los4;->U:I
-
-    .line 6
-    .line 7
-    iget v1, p0, Lot4;->X:I
-
-    .line 8
-    .line 9
-    if-ne v0, v1, :cond_0
-
-    .line 10
-    .line 11
-    invoke-super {p0}, Lkt4;->next()Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v0
-
-    .line 15
-    iput-object v0, p0, Lot4;->V:Ljava/lang/Object;
-
-    .line 16
-    .line 17
-    const/4 v1, 0x1
-
-    .line 18
-    iput-boolean v1, p0, Lot4;->W:Z
-
-    .line 19
-    .line 20
-    return-object v0
-
-    .line 21
     :cond_0
-    invoke-static {}, Lfn;->e()V
-
-    .line 22
-    .line 23
-    .line 24
-    const/4 v0, 0x0
-
-    .line 25
-    return-object v0
-.end method
-
-.method public final remove()V
-    .locals 3
-
-    .line 1
-    iget-boolean v0, p0, Lot4;->W:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, p0, Lot4;->V:Ljava/lang/Object;
+    instance-of v1, p1, Lot4;
 
     .line 6
     .line 7
-    iget-object v1, p0, Lot4;->U:Lnt4;
+    const/4 v2, 0x0
 
     .line 8
+    if-nez v1, :cond_1
+
     .line 9
-    invoke-static {v1}, Lhc7;->k(Ljava/lang/Object;)Ljava/util/Collection;
-
     .line 10
-    .line 11
-    .line 12
-    move-result-object v2
+    return v2
 
+    .line 11
+    :cond_1
+    check-cast p1, Lot4;
+
+    .line 12
     .line 13
-    invoke-interface {v2, v0}, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
+    iget-boolean v1, p0, Lot4;->a:Z
 
     .line 14
     .line 15
-    .line 16
-    const/4 v0, 0x0
+    iget-boolean v3, p1, Lot4;->a:Z
 
+    .line 16
     .line 17
-    iput-object v0, p0, Lot4;->V:Ljava/lang/Object;
+    if-eq v1, v3, :cond_2
 
     .line 18
     .line 19
-    const/4 v0, 0x0
+    return v2
 
     .line 20
-    iput-boolean v0, p0, Lot4;->W:Z
+    :cond_2
+    iget-boolean v1, p0, Lot4;->b:Z
 
     .line 21
     .line 22
-    iget-object v0, v1, Lnt4;->T:Los4;
+    iget-boolean v3, p1, Lot4;->b:Z
 
     .line 23
     .line 24
-    iget v0, v0, Los4;->U:I
+    if-eq v1, v3, :cond_3
 
     .line 25
     .line 26
-    iput v0, p0, Lot4;->X:I
+    return v2
 
     .line 27
+    :cond_3
+    iget-boolean v1, p0, Lot4;->c:Z
+
     .line 28
-    iget v0, p0, Lkt4;->T:I
+    .line 29
+    iget-boolean v3, p1, Lot4;->c:Z
+
+    .line 30
+    .line 31
+    if-eq v1, v3, :cond_4
+
+    .line 32
+    .line 33
+    return v2
+
+    .line 34
+    :cond_4
+    iget-boolean v1, p0, Lot4;->d:Z
+
+    .line 35
+    .line 36
+    iget-boolean v3, p1, Lot4;->d:Z
+
+    .line 37
+    .line 38
+    if-eq v1, v3, :cond_5
+
+    .line 39
+    .line 40
+    return v2
+
+    .line 41
+    :cond_5
+    iget-boolean p0, p0, Lot4;->e:Z
+
+    .line 42
+    .line 43
+    iget-boolean p1, p1, Lot4;->e:Z
+
+    .line 44
+    .line 45
+    if-eq p0, p1, :cond_6
+
+    .line 46
+    .line 47
+    return v2
+
+    .line 48
+    :cond_6
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget-boolean v0, p0, Lot4;->a:Z
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const/16 v1, 0x1f
+
+    .line 8
+    .line 9
+    mul-int/2addr v0, v1
+
+    .line 10
+    iget-boolean v2, p0, Lot4;->b:Z
+
+    .line 11
+    .line 12
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    iget-boolean v2, p0, Lot4;->c:Z
+
+    .line 17
+    .line 18
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    iget-boolean v2, p0, Lot4;->d:Z
+
+    .line 23
+    .line 24
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    iget-boolean p0, p0, Lot4;->e:Z
 
     .line 29
     .line 30
-    add-int/lit8 v0, v0, -0x1
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 31
     .line 32
-    iput v0, p0, Lkt4;->T:I
-
     .line 33
+    move-result p0
+
     .line 34
-    return-void
+    add-int/2addr p0, v0
 
     .line 35
-    :cond_0
-    invoke-static {}, Lio/sentry/x1;->h()V
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "NetworkState(isConnected="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-boolean v1, p0, Lot4;->a:Z
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", isValidated="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-boolean v1, p0, Lot4;->b:Z
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", isMetered="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-boolean v1, p0, Lot4;->c:Z
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", isNotRoaming="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 36
     .line 37
     .line 38
-    return-void
+    iget-boolean v1, p0, Lot4;->d:Z
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ", isBlocked="
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    iget-boolean p0, p0, Lot4;->e:Z
+
+    .line 49
+    .line 50
+    const/16 v1, 0x29
+
+    .line 51
+    .line 52
+    invoke-static {v0, p0, v1}, Leb7;->m(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p0
+
+    .line 56
+    return-object p0
 .end method

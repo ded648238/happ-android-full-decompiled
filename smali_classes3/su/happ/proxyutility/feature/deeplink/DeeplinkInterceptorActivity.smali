@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/deeplink/DeeplinkInterceptorActivity;
 .super Landroidx/activity/ComponentActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -23,6 +23,10 @@
     }
     xi = 0x30
 .end annotation
+
+
+# static fields
+.field public static volatile v0:Z
 
 
 # direct methods
@@ -70,7 +74,7 @@
     move-result-object v0
 
     .line 15
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
     .line 16
     .line 17
@@ -91,220 +95,245 @@
 
     .line 25
     .line 26
-    goto :goto_2
+    goto/16 :goto_3
 
     .line 27
+    .line 28
     :cond_0
     const-string v1, "android.intent.action.VIEW"
 
-    .line 28
     .line 29
+    .line 30
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 30
     .line 31
     .line 32
+    .line 33
     move-result v0
 
-    .line 33
-    if-eqz v0, :cond_7
-
     .line 34
-    .line 35
-    :try_start_0
-    sget-object v0, Lpk7;->a:Lpk7;
+    if-eqz v0, :cond_8
 
+    .line 35
     .line 36
+    :try_start_0
+    sget-object v0, Lif8;->a:Lif8;
+
     .line 37
+    .line 38
     invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
-    .line 38
     .line 39
     .line 40
-    move-result-object p1
-
     .line 41
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object p1
 
     .line 42
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
     .line 43
     .line 44
-    move-result-object p1
-
     .line 45
-    invoke-static {p1}, Lpk7;->d(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object p1
 
     .line 46
+    invoke-static {p1}, Lif8;->d(Ljava/lang/String;)Ljava/lang/String;
+
     .line 47
     .line 48
-    move-result-object p1
-
     .line 49
-    invoke-static {p1}, Ld31;->b(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/EDeeplinkType;
+    move-result-object p1
 
     .line 50
+    invoke-static {p1}, Lcb1;->b(Ljava/lang/String;)Lsu/happ/proxyutility/dto/enums/EDeeplinkType;
+
     .line 51
     .line 52
+    .line 53
     move-result-object p1
 
-    .line 53
+    .line 54
     if-nez p1, :cond_1
 
-    .line 54
     .line 55
+    .line 56
     const/4 p1, -0x1
 
-    .line 56
+    .line 57
     goto :goto_0
 
-    .line 57
-    :cond_1
-    sget-object v0, Lb31;->a:[I
-
     .line 58
+    :cond_1
+    sget-object v0, Lab1;->a:[I
+
     .line 59
+    .line 60
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 60
     .line 61
     .line 62
+    .line 63
     move-result p1
 
-    .line 63
+    .line 64
     aget p1, v0, p1
 
-    .line 64
     .line 65
+    .line 66
     :goto_0
     const/4 v0, 0x1
 
-    .line 66
-    if-eq p1, v0, :cond_5
-
     .line 67
-    .line 68
-    const/4 v0, 0x2
+    if-eq p1, v0, :cond_6
 
+    .line 68
     .line 69
-    if-eq p1, v0, :cond_5
+    const/4 v1, 0x2
 
     .line 70
-    .line 71
-    const/4 v0, 0x3
+    if-eq p1, v1, :cond_6
 
+    .line 71
     .line 72
-    if-eq p1, v0, :cond_4
+    const/4 v1, 0x3
 
     .line 73
-    .line 74
-    const/4 v0, 0x4
+    if-eq p1, v1, :cond_5
 
+    .line 74
     .line 75
-    if-eq p1, v0, :cond_4
+    const/4 v1, 0x4
 
     .line 76
-    .line 77
-    const/4 v0, 0x5
+    if-eq p1, v1, :cond_5
 
+    .line 77
     .line 78
-    if-eq p1, v0, :cond_2
+    const/4 v1, 0x5
 
     .line 79
-    .line 80
-    goto :goto_2
+    if-eq p1, v1, :cond_2
 
+    .line 80
     .line 81
-    :cond_2
-    sget-object p1, Lox7;->a:Llibxray/XRayPoint;
+    goto :goto_3
 
     .line 82
+    :cond_2
+    sget-object p1, Lat8;->a:Llibxray/XRayPoint;
+
     .line 83
+    .line 84
     invoke-virtual {p1}, Llibxray/XRayPoint;->getIsRunning()Z
 
-    .line 84
     .line 85
     .line 86
+    .line 87
     move-result p1
 
-    .line 87
-    if-eqz p1, :cond_3
-
     .line 88
-    .line 89
-    invoke-static {p0}, Lpk7;->M(Landroid/content/Context;)V
+    if-nez p1, :cond_4
 
+    .line 89
     .line 90
+    sget-boolean p1, Lsu/happ/proxyutility/feature/deeplink/DeeplinkInterceptorActivity;->v0:Z
+
     .line 91
     .line 92
-    goto :goto_2
+    if-eqz p1, :cond_3
 
     .line 93
-    :cond_3
-    invoke-static {p0}, Lpk7;->K(Landroid/content/Context;)V
-
     .line 94
+    goto :goto_1
+
     .line 95
+    :cond_3
+    invoke-static {p0}, Lif8;->I(Landroid/content/Context;)V
+
     .line 96
-    goto :goto_2
-
     .line 97
-    :cond_4
-    invoke-static {p0}, Lpk7;->M(Landroid/content/Context;)V
-
     .line 98
+    sput-boolean v0, Lsu/happ/proxyutility/feature/deeplink/DeeplinkInterceptorActivity;->v0:Z
+
     .line 99
     .line 100
-    goto :goto_2
+    goto :goto_3
 
     .line 101
+    :cond_4
+    :goto_1
+    invoke-static {p0}, Lif8;->J(Landroid/content/Context;)V
+
+    .line 102
+    .line 103
+    .line 104
+    const/4 p1, 0x0
+
+    .line 105
+    sput-boolean p1, Lsu/happ/proxyutility/feature/deeplink/DeeplinkInterceptorActivity;->v0:Z
+
+    .line 106
+    .line 107
+    goto :goto_3
+
+    .line 108
+    :cond_5
+    invoke-static {p0}, Lif8;->J(Landroid/content/Context;)V
+
+    .line 109
+    .line 110
+    .line 111
+    goto :goto_3
+
+    .line 112
     :catchall_0
     move-exception p1
 
-    .line 102
-    goto :goto_1
+    .line 113
+    goto :goto_2
 
-    .line 103
-    :cond_5
-    invoke-static {p0}, Lpk7;->K(Landroid/content/Context;)V
+    .line 114
+    :cond_6
+    invoke-static {p0}, Lif8;->I(Landroid/content/Context;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 104
-    .line 105
-    .line 106
-    goto :goto_2
-
-    .line 107
-    :goto_1
-    instance-of v0, p1, Ljava/lang/InterruptedException;
-
-    .line 108
-    .line 109
-    if-nez v0, :cond_6
-
-    .line 110
-    .line 111
-    instance-of v0, p1, Ljava/util/concurrent/CancellationException;
-
-    .line 112
-    .line 113
-    if-nez v0, :cond_6
-
-    .line 114
     .line 115
-    goto :goto_2
-
     .line 116
-    :cond_6
-    throw p1
-
     .line 117
-    :cond_7
-    :goto_2
-    invoke-virtual {p0}, Landroid/app/Activity;->finishAffinity()V
+    goto :goto_3
 
     .line 118
+    :goto_2
+    instance-of v0, p1, Ljava/lang/InterruptedException;
+
     .line 119
     .line 120
+    if-nez v0, :cond_7
+
+    .line 121
+    .line 122
+    instance-of v0, p1, Ljava/util/concurrent/CancellationException;
+
+    .line 123
+    .line 124
+    if-nez v0, :cond_7
+
+    .line 125
+    .line 126
+    goto :goto_3
+
+    .line 127
+    :cond_7
+    throw p1
+
+    .line 128
+    :cond_8
+    :goto_3
+    invoke-virtual {p0}, Landroid/app/Activity;->finishAffinity()V
+
+    .line 129
+    .line 130
+    .line 131
     return-void
 .end method

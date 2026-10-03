@@ -1,19 +1,19 @@
 .class public final Lio/sentry/protocol/n;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
 
-.field public R:Ljava/lang/String;
+.field public Y:Ljava/lang/String;
 
-.field public S:Ljava/lang/Object;
+.field public Z:Ljava/lang/Object;
 
-.field public T:Ljava/util/AbstractMap;
+.field public c0:Ljava/util/AbstractMap;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .line 12
     const/4 v0, 0x1
 
-    iput v0, p0, Lio/sentry/protocol/n;->Q:I
+    iput v0, p0, Lio/sentry/protocol/n;->X:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lio/sentry/protocol/n;->Q:I
+    iput v0, p0, Lio/sentry/protocol/n;->X:I
 
     .line 3
     .line 4
@@ -46,11 +46,11 @@
     .line 5
     .line 6
     .line 7
-    iput-object p1, p0, Lio/sentry/protocol/n;->S:Ljava/lang/Object;
+    iput-object p1, p0, Lio/sentry/protocol/n;->Z:Ljava/lang/Object;
 
     .line 8
     .line 9
-    iput-object p2, p0, Lio/sentry/protocol/n;->R:Ljava/lang/String;
+    iput-object p2, p0, Lio/sentry/protocol/n;->Y:Ljava/lang/String;
 
     .line 10
     .line 11
@@ -59,11 +59,11 @@
 
 
 # virtual methods
-.method public final serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 3
 
     .line 1
-    iget v0, p0, Lio/sentry/protocol/n;->Q:I
+    iget v0, p0, Lio/sentry/protocol/n;->X:I
 
     .line 2
     .line 3
@@ -94,7 +94,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object v0, p0, Lio/sentry/protocol/n;->R:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/n;->Y:Ljava/lang/String;
 
     .line 19
     .line 20
@@ -108,7 +108,7 @@
     .line 24
     .line 25
     .line 26
-    iget-object v0, p0, Lio/sentry/protocol/n;->S:Ljava/lang/Object;
+    iget-object v0, p0, Lio/sentry/protocol/n;->Z:Ljava/lang/Object;
 
     .line 27
     .line 28
@@ -117,7 +117,7 @@
     .line 29
     .line 30
     .line 31
-    iget-object v0, p0, Lio/sentry/protocol/n;->T:Ljava/util/AbstractMap;
+    iget-object v0, p0, Lio/sentry/protocol/n;->c0:Ljava/util/AbstractMap;
 
     .line 32
     .line 33
@@ -170,7 +170,7 @@
 
     .line 56
     .line 57
-    iget-object v2, p0, Lio/sentry/protocol/n;->T:Ljava/util/AbstractMap;
+    iget-object v2, p0, Lio/sentry/protocol/n;->c0:Ljava/util/AbstractMap;
 
     .line 58
     .line 59
@@ -178,7 +178,7 @@
 
     .line 60
     .line 61
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/HashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->a(Ljava/util/HashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 62
     .line 63
@@ -210,7 +210,7 @@
     .line 75
     .line 76
     .line 77
-    iget-object v0, p0, Lio/sentry/protocol/n;->S:Ljava/lang/Object;
+    iget-object v0, p0, Lio/sentry/protocol/n;->Z:Ljava/lang/Object;
 
     .line 78
     .line 79
@@ -223,7 +223,7 @@
     .line 82
     .line 83
     .line 84
-    iget-object v0, p0, Lio/sentry/protocol/n;->R:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/n;->Y:Ljava/lang/String;
 
     .line 85
     .line 86
@@ -246,11 +246,11 @@
     .line 95
     .line 96
     :cond_1
-    iget-object v0, p0, Lio/sentry/protocol/n;->T:Ljava/util/AbstractMap;
+    iget-object v0, p0, Lio/sentry/protocol/n;->c0:Ljava/util/AbstractMap;
 
     .line 97
     .line 98
-    check-cast v0, Lj$/util/concurrent/ConcurrentHashMap;
+    check-cast v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 99
     .line 100
@@ -299,15 +299,15 @@
 
     .line 121
     .line 122
-    iget-object v2, p0, Lio/sentry/protocol/n;->T:Ljava/util/AbstractMap;
+    iget-object v2, p0, Lio/sentry/protocol/n;->c0:Ljava/util/AbstractMap;
 
     .line 123
     .line 124
-    check-cast v2, Lj$/util/concurrent/ConcurrentHashMap;
+    check-cast v2, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 125
     .line 126
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->c(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 127
     .line 128

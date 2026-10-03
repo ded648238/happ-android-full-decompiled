@@ -1,81 +1,116 @@
-.class public abstract synthetic Lks5;
+.class public abstract Lks5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static activity_horizontal_margin:I = 0x7f070051
 
+.field public static activity_vertical_margin:I = 0x7f070052
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.field public static btn_custom_min_height:I = 0x7f070054
 
-    .line 1
-    invoke-static {}, Lsu/happ/proxyutility/dto/enums/EDnsType;->values()[Lsu/happ/proxyutility/dto/enums/EDnsType;
+.field public static btn_custom_min_width:I = 0x7f070055
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
+.field public static btn_custom_padding_horizontal:I = 0x7f070056
 
-    .line 5
-    array-length v0, v0
+.field public static btn_custom_padding_vertical:I = 0x7f070057
 
-    .line 6
-    new-array v0, v0, [I
+.field public static btn_custom_text_size:I = 0x7f070058
 
-    .line 7
-    .line 8
-    :try_start_0
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/EDnsType;->DOU:Lsu/happ/proxyutility/dto/enums/EDnsType;
+.field public static btn_custom_transparent_icon_padding:I = 0x7f070059
 
-    .line 9
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+.field public static button_top_server_list_space_bottom:I = 0x7f07005a
 
-    .line 11
-    .line 12
-    .line 13
-    move-result v1
+.field public static cardview_padding:I = 0x7f07005e
 
-    .line 14
-    const/4 v2, 0x1
+.field public static cardview_radius:I = 0x7f07005f
 
-    .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+.field public static cardview_text_size_additional:I = 0x7f070060
 
-    .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/EDnsType;->DOH:Lsu/happ/proxyutility/dto/enums/EDnsType;
+.field public static cardview_text_size_secondary:I = 0x7f070061
 
-    .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+.field public static cardview_text_size_subtitle:I = 0x7f070062
 
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
+.field public static cardview_text_size_tertiary:I = 0x7f070063
 
-    .line 23
-    const/4 v2, 0x2
+.field public static cardview_text_size_title:I = 0x7f070064
 
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+.field public static dialog_button_corner_radius:I = 0x7f0700a0
 
-    .line 25
-    .line 26
-    :catch_1
-    sput-object v0, Lks5;->a:[I
+.field public static dialog_button_padding_horizontal:I = 0x7f0700a1
 
-    .line 27
-    .line 28
-    return-void
-.end method
+.field public static dialog_custom_button_corner_radius_min:I = 0x7f0700a2
+
+.field public static dialog_elevation:I = 0x7f0700a3
+
+.field public static dialog_fragment_horizontal_margin:I = 0x7f0700a4
+
+.field public static dialog_fragment_vertical_margin:I = 0x7f0700a5
+
+.field public static dialog_margin:I = 0x7f0700a6
+
+.field public static dialog_margin_additional:I = 0x7f0700a7
+
+.field public static dialog_margin_secondary:I = 0x7f0700a8
+
+.field public static dialog_margin_tertiary:I = 0x7f0700a9
+
+.field public static dialog_margin_title:I = 0x7f0700aa
+
+.field public static dialog_radius:I = 0x7f0700ab
+
+.field public static dialog_subscription_update_min_width:I = 0x7f0700ac
+
+.field public static dialog_subscription_update_radius:I = 0x7f0700ad
+
+.field public static dialog_text_size_additional:I = 0x7f0700ae
+
+.field public static dialog_text_size_primary:I = 0x7f0700af
+
+.field public static dialog_text_size_secondary:I = 0x7f0700b0
+
+.field public static dialog_text_size_tertiary:I = 0x7f0700b1
+
+.field public static edit_height:I = 0x7f0700b4
+
+.field public static edittext_padding:I = 0x7f0700b5
+
+.field public static layout_margin_spacing:I = 0x7f0700c9
+
+.field public static layout_margin_spacing_extra_big:I = 0x7f0700ca
+
+.field public static layout_margin_spacing_extra_small:I = 0x7f0700cb
+
+.field public static layout_margin_spacing_minimum:I = 0x7f0700cc
+
+.field public static layout_margin_spacing_quaternary:I = 0x7f0700cd
+
+.field public static layout_margin_spacing_secondary:I = 0x7f0700ce
+
+.field public static layout_margin_spacing_tertiary:I = 0x7f0700cf
+
+.field public static layout_margin_top_height:I = 0x7f0700d0
+
+.field public static layout_screen_bottom_margin:I = 0x7f0700d1
+
+.field public static main_bottom_margin:I = 0x7f070480
+
+.field public static main_content_padding:I = 0x7f070481
+
+.field public static main_content_padding_secondary:I = 0x7f070482
+
+.field public static main_recycler_margin:I = 0x7f070483
+
+.field public static preference_radius:I = 0x7f070588
+
+.field public static profile_card_corner_radius:I = 0x7f07058e
+
+.field public static radius_selected_server:I = 0x7f070590
+
+.field public static routing_padding_text_edit:I = 0x7f070591
+
+.field public static settings_min_height:I = 0x7f070592
+
+.field public static spinner_popup_default_height:I = 0x7f070593
+
+.field public static switch_width:I = 0x7f07059f

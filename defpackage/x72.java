@@ -1,7 +1,21 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface x72 extends r72 {
-    Object H(Object obj, Object obj2, Object obj3, Object obj4, Object obj5);
+/* loaded from: classes3.dex */
+public final class x72 extends d31 {
+    public /* synthetic */ Object c0;
+    public int d0;
+    public final /* synthetic */ q72 e0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public x72(q72 q72Var, b31 b31Var) {
+        super(b31Var);
+        this.e0 = q72Var;
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.d0 |= Integer.MIN_VALUE;
+        return this.e0.k(null, this);
+    }
 }

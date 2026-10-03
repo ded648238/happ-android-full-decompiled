@@ -1,112 +1,43 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class cc5 {
-    public static final /* synthetic */ int[] a;
-    public static final /* synthetic */ int[] b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class cc5 {
+    public final float a;
+    public final float b;
+    public final float c;
+    public final float d;
+    public final float e;
+    public final float f;
+    public final float g;
+    public final float h;
+    public final float i;
 
-    static {
-        int[] iArr = new int[m55.values().length];
-        try {
-            iArr[0] = 1;
-        } catch (NoSuchFieldError unused) {
+    public cc5(float f, float f2, float f3, float f4, float f5, float f6, float f7, float f8, float f9) {
+        this.a = f;
+        this.b = f4;
+        this.c = f7;
+        this.d = f2;
+        this.e = f5;
+        this.f = f8;
+        this.g = f3;
+        this.h = f6;
+        this.i = f9;
+    }
+
+    public static cc5 a(float f, float f2, float f3, float f4, float f5, float f6, float f7, float f8) {
+        float f9 = ((f - f3) + f5) - f7;
+        float f10 = ((f2 - f4) + f6) - f8;
+        if (f9 == 0.0f && f10 == 0.0f) {
+            return new cc5(f3 - f, f5 - f3, f, f4 - f2, f6 - f4, f2, 0.0f, 0.0f, 1.0f);
         }
-        try {
-            iArr[1] = 2;
-        } catch (NoSuchFieldError unused2) {
-        }
-        try {
-            iArr[2] = 3;
-        } catch (NoSuchFieldError unused3) {
-        }
-        int[] iArr2 = new int[f55.values().length];
-        try {
-            iArr2[0] = 1;
-        } catch (NoSuchFieldError unused4) {
-        }
-        try {
-            iArr2[1] = 2;
-        } catch (NoSuchFieldError unused5) {
-        }
-        try {
-            iArr2[2] = 3;
-        } catch (NoSuchFieldError unused6) {
-        }
-        try {
-            iArr2[3] = 4;
-        } catch (NoSuchFieldError unused7) {
-        }
-        int[] iArr3 = new int[t55.values().length];
-        try {
-            iArr3[0] = 1;
-        } catch (NoSuchFieldError unused8) {
-        }
-        try {
-            iArr3[1] = 2;
-        } catch (NoSuchFieldError unused9) {
-        }
-        try {
-            iArr3[2] = 3;
-        } catch (NoSuchFieldError unused10) {
-        }
-        a = iArr3;
-        int[] iArr4 = new int[m71.values().length];
-        try {
-            iArr4[0] = 1;
-        } catch (NoSuchFieldError unused11) {
-        }
-        try {
-            iArr4[1] = 2;
-        } catch (NoSuchFieldError unused12) {
-        }
-        try {
-            iArr4[2] = 3;
-        } catch (NoSuchFieldError unused13) {
-        }
-        b = iArr4;
-        int[] iArr5 = new int[h45.values().length];
-        try {
-            iArr5[0] = 1;
-        } catch (NoSuchFieldError unused14) {
-        }
-        try {
-            iArr5[1] = 2;
-        } catch (NoSuchFieldError unused15) {
-        }
-        try {
-            iArr5[2] = 3;
-        } catch (NoSuchFieldError unused16) {
-        }
-        try {
-            iArr5[3] = 4;
-        } catch (NoSuchFieldError unused17) {
-        }
-        int[] iArr6 = new int[i45.values().length];
-        try {
-            iArr6[0] = 1;
-        } catch (NoSuchFieldError unused18) {
-        }
-        try {
-            iArr6[1] = 2;
-        } catch (NoSuchFieldError unused19) {
-        }
-        try {
-            iArr6[2] = 3;
-        } catch (NoSuchFieldError unused20) {
-        }
-        int[] iArr7 = new int[n45.values().length];
-        try {
-            iArr7[0] = 1;
-        } catch (NoSuchFieldError unused21) {
-        }
-        try {
-            iArr7[1] = 2;
-        } catch (NoSuchFieldError unused22) {
-        }
-        try {
-            iArr7[2] = 3;
-        } catch (NoSuchFieldError unused23) {
-        }
+        float f11 = f3 - f5;
+        float f12 = f7 - f5;
+        float f13 = f4 - f6;
+        float f14 = f8 - f6;
+        float f15 = (f11 * f14) - (f12 * f13);
+        float f16 = ((f14 * f9) - (f12 * f10)) / f15;
+        float f17 = ((f11 * f10) - (f9 * f13)) / f15;
+        return new cc5((f16 * f3) + (f3 - f), (f17 * f7) + (f7 - f), f, (f16 * f4) + (f4 - f2), (f17 * f8) + (f8 - f2), f2, f16, f17, 1.0f);
     }
 }

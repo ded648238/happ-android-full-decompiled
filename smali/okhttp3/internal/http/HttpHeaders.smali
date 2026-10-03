@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http/HttpHeaders;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -16,21 +16,21 @@
         "Lokhttp3/Challenge;",
         "parseChallenges",
         "(Lokhttp3/Headers;Ljava/lang/String;)Ljava/util/List;",
-        "Lf50;",
+        "Ll70;",
         "",
         "result",
-        "Lbh7;",
+        "Lr98;",
         "readChallengeHeader",
-        "(Lf50;Ljava/util/List;)V",
+        "(Ll70;Ljava/util/List;)V",
         "",
         "skipCommasAndWhitespace",
-        "(Lf50;)Z",
+        "(Ll70;)Z",
         "",
         "prefix",
         "startsWith",
-        "(Lf50;B)Z",
+        "(Ll70;B)Z",
         "readQuotedString",
-        "(Lf50;)Ljava/lang/String;",
+        "(Ll70;)Ljava/lang/String;",
         "readToken",
         "Lokhttp3/CookieJar;",
         "Lokhttp3/HttpUrl;",
@@ -43,9 +43,9 @@
         "(Lokhttp3/Response;)Z",
         "response",
         "hasBody",
-        "Ly60;",
+        "Lo90;",
         "QUOTED_STRING_DELIMITERS",
-        "Ly60;",
+        "Lo90;",
         "TOKEN_DELIMITERS",
         "okhttp"
     }
@@ -60,9 +60,9 @@
 
 
 # static fields
-.field private static final QUOTED_STRING_DELIMITERS:Ly60;
+.field private static final QUOTED_STRING_DELIMITERS:Lo90;
 
-.field private static final TOKEN_DELIMITERS:Ly60;
+.field private static final TOKEN_DELIMITERS:Lo90;
 
 
 # direct methods
@@ -70,7 +70,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Ly60;->T:Ly60;
+    sget-object v0, Lo90;->c0:Lo90;
 
     .line 2
     .line 3
@@ -78,7 +78,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 6
     .line 7
@@ -86,7 +86,7 @@
     move-result-object v0
 
     .line 9
-    sput-object v0, Lokhttp3/internal/http/HttpHeaders;->QUOTED_STRING_DELIMITERS:Ly60;
+    sput-object v0, Lokhttp3/internal/http/HttpHeaders;->QUOTED_STRING_DELIMITERS:Lo90;
 
     .line 10
     .line 11
@@ -94,7 +94,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 14
     .line 15
@@ -102,7 +102,7 @@
     move-result-object v0
 
     .line 17
-    sput-object v0, Lokhttp3/internal/http/HttpHeaders;->TOKEN_DELIMITERS:Ly60;
+    sput-object v0, Lokhttp3/internal/http/HttpHeaders;->TOKEN_DELIMITERS:Lo90;
 
     .line 18
     .line 19
@@ -111,7 +111,7 @@
 
 .method public static final hasBody(Lokhttp3/Response;)Z
     .locals 0
-    .annotation runtime Lk71;
+    .annotation runtime Lof1;
     .end annotation
 
     .line 1
@@ -201,7 +201,7 @@
 
     .line 28
     .line 29
-    new-instance v3, Lf50;
+    new-instance v3, Ll70;
 
     .line 30
     .line 31
@@ -218,13 +218,13 @@
     move-result-object v4
 
     .line 38
-    invoke-virtual {v3, v4}, Lf50;->O0(Ljava/lang/String;)V
+    invoke-virtual {v3, v4}, Ll70;->b1(Ljava/lang/String;)V
 
     .line 39
     .line 40
     .line 41
     :try_start_0
-    invoke-static {v3, v0}, Lokhttp3/internal/http/HttpHeaders;->readChallengeHeader(Lf50;Ljava/util/List;)V
+    invoke-static {v3, v0}, Lokhttp3/internal/http/HttpHeaders;->readChallengeHeader(Ll70;Ljava/util/List;)V
     :try_end_0
     .catch Ljava/io/EOFException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -304,7 +304,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0, v1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -437,12 +437,12 @@
     return v3
 .end method
 
-.method private static final readChallengeHeader(Lf50;Ljava/util/List;)V
+.method private static final readChallengeHeader(Ll70;Ljava/util/List;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lf50;",
+            "Ll70;",
             "Ljava/util/List<",
             "Lokhttp3/Challenge;",
             ">;)V"
@@ -468,12 +468,12 @@
 
     .line 4
     .line 5
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Lf50;)Z
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Ll70;)Z
 
     .line 6
     .line 7
     .line 8
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readToken(Lf50;)Ljava/lang/String;
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readToken(Ll70;)Ljava/lang/String;
 
     .line 9
     .line 10
@@ -490,7 +490,7 @@
     .line 15
     .line 16
     :cond_0
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Lf50;)Z
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Ll70;)Z
 
     .line 17
     .line 18
@@ -498,7 +498,7 @@
     move-result v2
 
     .line 20
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readToken(Lf50;)Ljava/lang/String;
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readToken(Ll70;)Ljava/lang/String;
 
     .line 21
     .line 22
@@ -510,7 +510,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {p0}, Lf50;->z()Z
+    invoke-virtual {p0}, Ll70;->G()Z
 
     .line 27
     .line 28
@@ -531,7 +531,7 @@
 
     .line 35
     .line 36
-    sget-object v0, Lxn1;->Q:Lxn1;
+    sget-object v0, Lgw1;->X:Lgw1;
 
     .line 37
     .line 38
@@ -553,7 +553,7 @@
 
     .line 46
     .line 47
-    invoke-static {p0, v4}, Lokhttp3/internal/Util;->skipAll(Lf50;B)I
+    invoke-static {p0, v4}, Lokhttp3/internal/Util;->skipAll(Ll70;B)I
 
     .line 48
     .line 49
@@ -561,7 +561,7 @@
     move-result v5
 
     .line 51
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Lf50;)Z
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Ll70;)Z
 
     .line 52
     .line 53
@@ -577,7 +577,7 @@
 
     .line 58
     .line 59
-    invoke-virtual {p0}, Lf50;->z()Z
+    invoke-virtual {p0}, Ll70;->G()Z
 
     .line 60
     .line 61
@@ -612,7 +612,7 @@
 
     .line 76
     .line 77
-    invoke-static {v5, v3}, Lzl6;->c0(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v5, v3}, Lla7;->D0(ILjava/lang/String;)Ljava/lang/String;
 
     .line 78
     .line 79
@@ -669,7 +669,7 @@
     .line 105
     .line 106
     .line 107
-    invoke-static {p0, v4}, Lokhttp3/internal/Util;->skipAll(Lf50;B)I
+    invoke-static {p0, v4}, Lokhttp3/internal/Util;->skipAll(Ll70;B)I
 
     .line 108
     .line 109
@@ -685,7 +685,7 @@
 
     .line 113
     .line 114
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readToken(Lf50;)Ljava/lang/String;
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readToken(Ll70;)Ljava/lang/String;
 
     .line 115
     .line 116
@@ -693,7 +693,7 @@
     move-result-object v3
 
     .line 118
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Lf50;)Z
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Ll70;)Z
 
     .line 119
     .line 120
@@ -705,7 +705,7 @@
 
     .line 123
     .line 124
-    invoke-static {p0, v4}, Lokhttp3/internal/Util;->skipAll(Lf50;B)I
+    invoke-static {p0, v4}, Lokhttp3/internal/Util;->skipAll(Ll70;B)I
 
     .line 125
     .line 126
@@ -732,7 +732,7 @@
 
     .line 135
     :cond_6
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Lf50;)Z
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Ll70;)Z
 
     .line 136
     .line 137
@@ -752,7 +752,7 @@
 
     .line 143
     .line 144
-    invoke-static {p0, v5}, Lokhttp3/internal/http/HttpHeaders;->startsWith(Lf50;B)Z
+    invoke-static {p0, v5}, Lokhttp3/internal/http/HttpHeaders;->startsWith(Ll70;B)Z
 
     .line 145
     .line 146
@@ -764,7 +764,7 @@
 
     .line 149
     .line 150
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readQuotedString(Lf50;)Ljava/lang/String;
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readQuotedString(Ll70;)Ljava/lang/String;
 
     .line 151
     .line 152
@@ -776,7 +776,7 @@
 
     .line 155
     :cond_8
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readToken(Lf50;)Ljava/lang/String;
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->readToken(Ll70;)Ljava/lang/String;
 
     .line 156
     .line 157
@@ -813,7 +813,7 @@
 
     .line 171
     :cond_a
-    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Lf50;)Z
+    invoke-static {p0}, Lokhttp3/internal/http/HttpHeaders;->skipCommasAndWhitespace(Ll70;)Z
 
     .line 172
     .line 173
@@ -825,7 +825,7 @@
 
     .line 176
     .line 177
-    invoke-virtual {p0}, Lf50;->z()Z
+    invoke-virtual {p0}, Ll70;->G()Z
 
     .line 178
     .line 179
@@ -869,8 +869,8 @@
     goto/16 :goto_1
 .end method
 
-.method private static final readQuotedString(Lf50;)Ljava/lang/String;
-    .locals 12
+.method private static final readQuotedString(Ll70;)Ljava/lang/String;
+    .locals 11
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/EOFException;
@@ -878,7 +878,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lf50;->readByte()B
+    invoke-virtual {p0}, Ll70;->readByte()B
 
     .line 2
     .line 3
@@ -897,7 +897,7 @@
 
     .line 9
     .line 10
-    new-instance v0, Lf50;
+    new-instance v0, Ll70;
 
     .line 11
     .line 12
@@ -907,11 +907,11 @@
     .line 14
     .line 15
     :goto_0
-    sget-object v3, Lokhttp3/internal/http/HttpHeaders;->QUOTED_STRING_DELIMITERS:Ly60;
+    sget-object v3, Lokhttp3/internal/http/HttpHeaders;->QUOTED_STRING_DELIMITERS:Lo90;
 
     .line 16
     .line 17
-    invoke-virtual {p0, v3}, Lf50;->C(Ly60;)J
+    invoke-virtual {p0, v3}, Ll70;->E(Lo90;)J
 
     .line 18
     .line 19
@@ -923,11 +923,11 @@
 
     .line 22
     .line 23
-    cmp-long v7, v3, v5
+    cmp-long v5, v3, v5
 
     .line 24
     .line 25
-    if-nez v7, :cond_0
+    if-nez v5, :cond_0
 
     .line 26
     .line 27
@@ -935,7 +935,7 @@
 
     .line 28
     :cond_0
-    invoke-virtual {p0, v3, v4}, Lf50;->v(J)B
+    invoke-virtual {p0, v3, v4}, Ll70;->v(J)B
 
     .line 29
     .line 30
@@ -947,17 +947,17 @@
 
     .line 33
     .line 34
-    invoke-virtual {v0, p0, v3, v4}, Lf50;->write(Lf50;J)V
+    invoke-virtual {v0, p0, v3, v4}, Ll70;->write(Ll70;J)V
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {p0}, Lf50;->readByte()B
+    invoke-virtual {p0}, Ll70;->readByte()B
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {v0}, Lf50;->i0()Ljava/lang/String;
+    invoke-virtual {v0}, Ll70;->b0()Ljava/lang/String;
 
     .line 41
     .line 42
@@ -969,7 +969,7 @@
 
     .line 45
     :cond_1
-    iget-wide v5, p0, Lf50;->R:J
+    iget-wide v5, p0, Ll70;->Y:J
 
     .line 46
     .line 47
@@ -981,11 +981,11 @@
 
     .line 50
     .line 51
-    cmp-long v11, v5, v9
+    cmp-long v5, v5, v9
 
     .line 52
     .line 53
-    if-nez v11, :cond_2
+    if-nez v5, :cond_2
 
     .line 54
     .line 55
@@ -993,17 +993,17 @@
 
     .line 56
     :cond_2
-    invoke-virtual {v0, p0, v3, v4}, Lf50;->write(Lf50;J)V
+    invoke-virtual {v0, p0, v3, v4}, Ll70;->write(Ll70;J)V
 
     .line 57
     .line 58
     .line 59
-    invoke-virtual {p0}, Lf50;->readByte()B
+    invoke-virtual {p0}, Ll70;->readByte()B
 
     .line 60
     .line 61
     .line 62
-    invoke-virtual {v0, p0, v7, v8}, Lf50;->write(Lf50;J)V
+    invoke-virtual {v0, p0, v7, v8}, Ll70;->write(Ll70;J)V
 
     .line 63
     .line 64
@@ -1016,7 +1016,7 @@
 
     .line 67
     .line 68
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 69
     .line 70
@@ -1024,15 +1024,15 @@
     return-object v1
 .end method
 
-.method private static final readToken(Lf50;)Ljava/lang/String;
-    .locals 5
+.method private static final readToken(Ll70;)Ljava/lang/String;
+    .locals 4
 
     .line 1
-    sget-object v0, Lokhttp3/internal/http/HttpHeaders;->TOKEN_DELIMITERS:Ly60;
+    sget-object v0, Lokhttp3/internal/http/HttpHeaders;->TOKEN_DELIMITERS:Lo90;
 
     .line 2
     .line 3
-    invoke-virtual {p0, v0}, Lf50;->C(Ly60;)J
+    invoke-virtual {p0, v0}, Ll70;->E(Lo90;)J
 
     .line 4
     .line 5
@@ -1044,15 +1044,15 @@
 
     .line 8
     .line 9
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 10
     .line 11
-    if-nez v4, :cond_0
+    if-nez v2, :cond_0
 
     .line 12
     .line 13
-    iget-wide v0, p0, Lf50;->R:J
+    iget-wide v0, p0, Ll70;->Y:J
 
     .line 14
     .line 15
@@ -1061,19 +1061,19 @@
 
     .line 16
     .line 17
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 18
     .line 19
-    if-eqz v4, :cond_1
+    if-eqz v2, :cond_1
 
     .line 20
     .line 21
-    sget-object v2, Lnh0;->a:Ljava/nio/charset/Charset;
+    sget-object v2, Lho0;->a:Ljava/nio/charset/Charset;
 
     .line 22
     .line 23
-    invoke-virtual {p0, v0, v1, v2}, Lf50;->S(JLjava/nio/charset/Charset;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v1, v2}, Ll70;->Z(JLjava/nio/charset/Charset;)Ljava/lang/String;
 
     .line 24
     .line 25
@@ -1159,7 +1159,7 @@
     return-void
 .end method
 
-.method private static final skipCommasAndWhitespace(Lf50;)Z
+.method private static final skipCommasAndWhitespace(Ll70;)Z
     .locals 3
 
     .line 1
@@ -1167,7 +1167,7 @@
 
     .line 2
     :goto_0
-    invoke-virtual {p0}, Lf50;->z()Z
+    invoke-virtual {p0}, Ll70;->G()Z
 
     .line 3
     .line 4
@@ -1183,7 +1183,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {p0, v1, v2}, Lf50;->v(J)B
+    invoke-virtual {p0, v1, v2}, Ll70;->v(J)B
 
     .line 11
     .line 12
@@ -1199,7 +1199,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p0}, Lf50;->readByte()B
+    invoke-virtual {p0}, Ll70;->readByte()B
 
     .line 19
     .line 20
@@ -1232,7 +1232,7 @@
     .line 31
     .line 32
     :goto_1
-    invoke-virtual {p0}, Lf50;->readByte()B
+    invoke-virtual {p0}, Ll70;->readByte()B
 
     .line 33
     .line 34
@@ -1244,11 +1244,11 @@
     return v0
 .end method
 
-.method private static final startsWith(Lf50;B)Z
+.method private static final startsWith(Ll70;B)Z
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lf50;->z()Z
+    invoke-virtual {p0}, Ll70;->G()Z
 
     .line 2
     .line 3
@@ -1264,7 +1264,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p0, v0, v1}, Lf50;->v(J)B
+    invoke-virtual {p0, v0, v1}, Ll70;->v(J)B
 
     .line 10
     .line 11

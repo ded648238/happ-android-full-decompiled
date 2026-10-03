@@ -1,6 +1,6 @@
 .class public final Lio/sentry/transport/k;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lio/sentry/transport/h;
@@ -34,11 +34,11 @@
 
 # virtual methods
 .method public final a()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 2
-    return v0
+    return p0
 .end method

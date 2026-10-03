@@ -1,45 +1,37 @@
 package defpackage;
 
-import su.happ.proxyutility.domain.routing.entity.StateDownloadFile;
+/* loaded from: classes.dex */
+public final class ph1 implements mi2 {
+    public final /* synthetic */ int X;
+    public final qh1 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class ph1 {
-    public static final /* synthetic */ int[] a;
-    public static final /* synthetic */ int[] b;
+    public /* synthetic */ ph1(qh1 qh1Var, int i) {
+        this.X = i;
+        this.Y = qh1Var;
+    }
 
-    static {
-        int[] iArr = new int[StateDownloadFile.values().length];
-        try {
-            iArr[StateDownloadFile.START.ordinal()] = 1;
-        } catch (NoSuchFieldError unused) {
+    @Override // defpackage.mi2
+    public final Object invoke(Object obj) {
+        int i = this.X;
+        qh1 qh1Var = this.Y;
+        switch (i) {
+            case 0:
+                b58 b58Var = (b58) obj;
+                b58Var.getClass();
+                if (b58Var.c()) {
+                    return "*";
+                }
+                bu3 b = b58Var.b();
+                b.getClass();
+                String P = qh1Var.P(b);
+                if (b58Var.a() == eg8.INVARIANT) {
+                    return P;
+                }
+                return b58Var.a() + ' ' + P;
+            default:
+                bu3 bu3Var = (bu3) obj;
+                bu3Var.getClass();
+                return qh1Var.P(bu3Var);
         }
-        try {
-            iArr[StateDownloadFile.PROGRESS.ordinal()] = 2;
-        } catch (NoSuchFieldError unused2) {
-        }
-        try {
-            iArr[StateDownloadFile.FAILURE.ordinal()] = 3;
-        } catch (NoSuchFieldError unused3) {
-        }
-        try {
-            iArr[StateDownloadFile.LINK_NOT_CORRECT.ordinal()] = 4;
-        } catch (NoSuchFieldError unused4) {
-        }
-        try {
-            iArr[StateDownloadFile.SUCCESS.ordinal()] = 5;
-        } catch (NoSuchFieldError unused5) {
-        }
-        a = iArr;
-        int[] iArr2 = new int[lb2.values().length];
-        try {
-            iArr2[1] = 1;
-        } catch (NoSuchFieldError unused6) {
-        }
-        try {
-            iArr2[0] = 2;
-        } catch (NoSuchFieldError unused7) {
-        }
-        b = iArr2;
     }
 }

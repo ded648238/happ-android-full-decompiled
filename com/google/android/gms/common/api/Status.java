@@ -4,32 +4,31 @@ import android.app.PendingIntent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import defpackage.h71;
-import defpackage.n2;
-import defpackage.os0;
-import defpackage.tp6;
-import defpackage.vs0;
-import defpackage.xy4;
-import defpackage.yc4;
+import defpackage.h47;
+import defpackage.m13;
+import defpackage.m93;
+import defpackage.mu4;
+import defpackage.s2;
+import defpackage.wz0;
 import java.util.Arrays;
 import okhttp3.internal.ws.WebSocketProtocol;
 import org.conscrypt.FileClientSessionCache;
 import su.happ.proxyutility.dto.XRayConfig;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class Status extends n2 implements ReflectedParcelable {
-    public static final Parcelable.Creator<Status> CREATOR = new tp6(18);
-    public final int Q;
-    public final String R;
-    public final PendingIntent S;
-    public final os0 T;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class Status extends s2 implements ReflectedParcelable {
+    public static final Parcelable.Creator<Status> CREATOR = new h47(26);
+    public final int X;
+    public final String Y;
+    public final PendingIntent Z;
+    public final wz0 c0;
 
-    public Status(int i, String str, PendingIntent pendingIntent, os0 os0Var) {
-        this.Q = i;
-        this.R = str;
-        this.S = pendingIntent;
-        this.T = os0Var;
+    public Status(int i, String str, PendingIntent pendingIntent, wz0 wz0Var) {
+        this.X = i;
+        this.Y = str;
+        this.Z = pendingIntent;
+        this.c0 = wz0Var;
     }
 
     public final boolean equals(Object obj) {
@@ -37,101 +36,104 @@ public final class Status extends n2 implements ReflectedParcelable {
             return false;
         }
         Status status = (Status) obj;
-        return this.Q == status.Q && vs0.C(this.R, status.R) && vs0.C(this.S, status.S) && vs0.C(this.T, status.T);
+        return this.X == status.X && m93.v(this.Y, status.Y) && m93.v(this.Z, status.Z) && m93.v(this.c0, status.c0);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(this.Q), this.R, this.S, this.T});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(this.X), this.Y, this.Z, this.c0});
     }
 
     public final String toString() {
-        h71 h71Var = new h71(this);
-        String strV = this.R;
-        if (strV == null) {
-            int i = this.Q;
+        m13 m13Var = new m13(this);
+        String str = this.Y;
+        if (str == null) {
+            int i = this.X;
             switch (i) {
                 case -1:
-                    strV = "SUCCESS_CACHE";
+                    str = "SUCCESS_CACHE";
                     break;
                 case 0:
-                    strV = "SUCCESS";
+                    str = "SUCCESS";
                     break;
                 case 1:
                 case 9:
                 case 11:
                 case FileClientSessionCache.MAX_SIZE /* 12 */:
                 default:
-                    strV = xy4.v(i, "unknown status code: ");
+                    StringBuilder sb = new StringBuilder(String.valueOf(i).length() + 21);
+                    sb.append("unknown status code: ");
+                    sb.append(i);
+                    str = sb.toString();
                     break;
                 case 2:
-                    strV = "SERVICE_VERSION_UPDATE_REQUIRED";
+                    str = "SERVICE_VERSION_UPDATE_REQUIRED";
                     break;
                 case 3:
-                    strV = "SERVICE_DISABLED";
+                    str = "SERVICE_DISABLED";
                     break;
                 case 4:
-                    strV = "SIGN_IN_REQUIRED";
+                    str = "SIGN_IN_REQUIRED";
                     break;
                 case 5:
-                    strV = "INVALID_ACCOUNT";
+                    str = "INVALID_ACCOUNT";
                     break;
                 case 6:
-                    strV = "RESOLUTION_REQUIRED";
+                    str = "RESOLUTION_REQUIRED";
                     break;
                 case 7:
-                    strV = "NETWORK_ERROR";
+                    str = "NETWORK_ERROR";
                     break;
                 case 8:
-                    strV = "INTERNAL_ERROR";
+                    str = "INTERNAL_ERROR";
                     break;
                 case 10:
-                    strV = "DEVELOPER_ERROR";
+                    str = "DEVELOPER_ERROR";
                     break;
                 case 13:
-                    strV = "ERROR";
+                    str = "ERROR";
                     break;
                 case 14:
-                    strV = "INTERRUPTED";
+                    str = "INTERRUPTED";
                     break;
                 case 15:
-                    strV = "TIMEOUT";
+                    str = "TIMEOUT";
                     break;
                 case WebSocketProtocol.B0_FLAG_RSV3 /* 16 */:
-                    strV = "CANCELED";
+                    str = "CANCELED";
                     break;
                 case 17:
-                    strV = "API_NOT_CONNECTED";
+                    str = "API_NOT_CONNECTED";
                     break;
                 case 18:
-                    strV = "DEAD_CLIENT";
+                    str = "DEAD_CLIENT";
                     break;
                 case 19:
-                    strV = "REMOTE_EXCEPTION";
+                    str = "REMOTE_EXCEPTION";
                     break;
                 case 20:
-                    strV = "CONNECTION_SUSPENDED_DURING_CALL";
+                    str = "CONNECTION_SUSPENDED_DURING_CALL";
                     break;
                 case XRayConfig.OutboundBean.StreamSettingsBean.KcpSettingsBean.mtuMin /* 21 */:
-                    strV = "RECONNECTION_TIMED_OUT_DURING_UPDATE";
+                    str = "RECONNECTION_TIMED_OUT_DURING_UPDATE";
                     break;
                 case 22:
-                    strV = "RECONNECTION_TIMED_OUT";
+                    str = "RECONNECTION_TIMED_OUT";
                     break;
             }
         }
-        h71Var.b(strV, "statusCode");
-        h71Var.b(this.S, "resolution");
-        return h71Var.toString();
+        m13Var.a(str, "statusCode");
+        m13Var.a(this.Z, "resolution");
+        return m13Var.toString();
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int iG1 = yc4.g1(parcel, 20293);
-        yc4.i1(parcel, 1, 4);
-        parcel.writeInt(this.Q);
-        yc4.d1(parcel, 2, this.R);
-        yc4.c1(parcel, 3, this.S, i);
-        yc4.c1(parcel, 4, this.T, i);
-        yc4.h1(parcel, iG1);
+        int E0 = mu4.E0(parcel, 20293);
+        mu4.D0(parcel, 1, 4);
+        parcel.writeInt(this.X);
+        mu4.z0(parcel, 2, this.Y);
+        mu4.y0(parcel, 3, this.Z, i);
+        mu4.y0(parcel, 4, this.c0, i);
+        mu4.F0(parcel, E0);
     }
 }

@@ -1,33 +1,48 @@
 package defpackage;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Member;
-import java.lang.reflect.TypeVariable;
-import java.util.ArrayList;
+import kotlin.Metadata;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class hf5 extends mf5 implements wx2 {
-    public final Constructor a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0081\b\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001¨\u0006\u0003"}, d2 = {"Lhf5;", "Ljn4;", "Lif5;", "ui"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final /* data */ class hf5 extends jn4 {
+    public final ff X;
 
-    public hf5(Constructor constructor) {
-        constructor.getClass();
-        this.a = constructor;
+    public hf5(ff ffVar) {
+        this.X = ffVar;
     }
 
-    @Override // defpackage.mf5
-    public final Member b() {
-        return this.a;
+    @Override // defpackage.jn4
+    public final cn4 a() {
+        return new if5(this.X, null);
     }
 
-    @Override // defpackage.wx2
-    public final ArrayList getTypeParameters() {
-        TypeVariable[] typeParameters = this.a.getTypeParameters();
-        typeParameters.getClass();
-        ArrayList arrayList = new ArrayList(typeParameters.length);
-        for (TypeVariable typeVariable : typeParameters) {
-            arrayList.add(new sf5(typeVariable));
+    @Override // defpackage.jn4
+    public final void c(cn4 cn4Var) {
+        if5 if5Var = (if5) cn4Var;
+        ff ffVar = if5Var.o0;
+        ff ffVar2 = this.X;
+        if (m93.h(ffVar, ffVar2)) {
+            return;
         }
-        return arrayList;
+        if5Var.o0 = ffVar2;
+        if (if5Var.p0) {
+            if5Var.W0();
+        }
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof hf5) && this.X.equals(((hf5) obj).X);
+    }
+
+    public final int hashCode() {
+        return Boolean.hashCode(false) + (this.X.b * 31);
+    }
+
+    public final String toString() {
+        return "PointerHoverIconModifierElement(icon=" + this.X + ", overrideDescendants=false)";
     }
 }

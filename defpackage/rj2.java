@@ -1,39 +1,40 @@
 package defpackage;
 
-import android.os.IBinder;
-import android.os.Parcel;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class rj2 implements sj2 {
-    public IBinder g;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class rj2 {
+    public final /* synthetic */ int a = 1;
+    public final String b;
+    public final ArrayList c;
 
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this.g;
-    }
-
-    @Override // defpackage.sj2
-    public final void d(String str) {
-        Parcel parcelObtain = Parcel.obtain();
-        try {
-            parcelObtain.writeInterfaceToken(sj2.f);
-            parcelObtain.writeString(str);
-            this.g.transact(2, parcelObtain, null, 1);
-        } finally {
-            parcelObtain.recycle();
+    public rj2(String str) {
+        str.getClass();
+        this.b = str;
+        this.c = new ArrayList(0);
+        vk4.a.getClass();
+        List a = uk4.a();
+        new ArrayList();
+        Iterator it = a.iterator();
+        while (it.hasNext()) {
+            ((vk4) it.next()).getClass();
         }
     }
 
-    @Override // defpackage.sj2
-    public final void i(byte[] bArr) {
-        Parcel parcelObtain = Parcel.obtain();
-        try {
-            parcelObtain.writeInterfaceToken(sj2.f);
-            parcelObtain.writeByteArray(bArr);
-            this.g.transact(1, parcelObtain, null, 1);
-        } finally {
-            parcelObtain.recycle();
+    public String toString() {
+        switch (this.a) {
+            case 1:
+                return this.b;
+            default:
+                return super.toString();
         }
+    }
+
+    public rj2(String str, ArrayList arrayList) {
+        this.c = arrayList;
+        this.b = str;
     }
 }

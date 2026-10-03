@@ -1,246 +1,355 @@
-.class public abstract Ltv1;
+.class public final Ltv1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/io/Closeable;
+.implements Landroid/text/TextWatcher;
 
 
-# static fields
-.field public static final Q:Lm63;
+# instance fields
+.field public final X:Landroid/widget/EditText;
 
-.field public static final R:Lop4;
+.field public Y:Lsv1;
+
+.field public Z:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Landroid/widget/EditText;)V
+    .locals 0
 
     .line 1
-    :try_start_0
-    const-string v0, "java.nio.file.Files"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
     .line 4
+    iput-object p1, p0, Ltv1;->X:Landroid/widget/EditText;
+
     .line 5
     .line 6
-    new-instance v0, Lxc4;
+    const/4 p1, 0x1
+
+    .line 7
+    iput-boolean p1, p0, Ltv1;->Z:Z
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static a(Landroid/widget/EditText;I)V
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p1, v0, :cond_3
+
+    .line 3
+    .line 4
+    if-eqz p0, :cond_3
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
 
     .line 7
     .line 8
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-    :try_end_0
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 9
-    .line 10
-    .line 11
-    goto :goto_0
+    move-result p1
 
+    .line 10
+    if-eqz p1, :cond_3
+
+    .line 11
     .line 12
-    :catch_0
-    new-instance v0, Lm63;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getEditableText()Landroid/text/Editable;
 
     .line 13
     .line 14
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 15
-    .line 16
-    .line 17
-    :goto_0
-    sput-object v0, Ltv1;->Q:Lm63;
+    move-result-object p0
 
+    .line 16
+    invoke-static {p0}, Landroid/text/Selection;->getSelectionStart(Ljava/lang/CharSequence;)I
+
+    .line 17
     .line 18
     .line 19
-    sget-object v0, Lop4;->R:Ljava/lang/String;
+    move-result p1
 
     .line 20
-    .line 21
-    const-string v0, "java.io.tmpdir"
+    invoke-static {p0}, Landroid/text/Selection;->getSelectionEnd(Ljava/lang/CharSequence;)I
 
+    .line 21
     .line 22
     .line 23
-    invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    move-result v0
 
     .line 24
+    invoke-static {}, Lav1;->a()Lav1;
+
     .line 25
     .line 26
-    move-result-object v0
-
     .line 27
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v1
 
     .line 28
-    .line 29
-    .line 30
-    invoke-static {v0}, Lls0;->k(Ljava/lang/String;)Lop4;
+    const/4 v2, 0x0
 
+    .line 29
+    if-nez p0, :cond_0
+
+    .line 30
     .line 31
+    move v3, v2
+
     .line 32
+    goto :goto_0
+
     .line 33
-    move-result-object v0
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 34
-    sput-object v0, Ltv1;->R:Lop4;
-
     .line 35
     .line 36
-    new-instance v0, Lnj5;
+    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     .line 37
     .line 38
-    const-class v1, Lnj5;
-
     .line 39
+    move-result v3
+
     .line 40
-    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    :goto_0
+    invoke-virtual {v1, v2, v3, v2, p0}, Lav1;->g(IIILjava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     .line 41
     .line 42
     .line 43
-    move-result-object v1
+    if-ltz p1, :cond_1
 
     .line 44
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 45
+    if-ltz v0, :cond_1
+
     .line 46
     .line 47
-    invoke-direct {v0, v1}, Lnj5;-><init>(Ljava/lang/ClassLoader;)V
+    invoke-static {p0, p1, v0}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;II)V
 
     .line 48
     .line 49
     .line 50
     return-void
+
+    .line 51
+    :cond_1
+    if-ltz p1, :cond_2
+
+    .line 52
+    .line 53
+    invoke-static {p0, p1}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
+
+    .line 54
+    .line 55
+    .line 56
+    return-void
+
+    .line 57
+    :cond_2
+    if-ltz v0, :cond_3
+
+    .line 58
+    .line 59
+    invoke-static {p0, v0}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
+
+    .line 60
+    .line 61
+    .line 62
+    :cond_3
+    return-void
 .end method
 
 
 # virtual methods
-.method public abstract C(Lop4;)Ljava/util/List;
-.end method
-
-.method public final F(Lop4;)Li71;
-    .locals 1
+.method public final afterTextChanged(Landroid/text/Editable;)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    return-void
+.end method
+
+.method public final beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltv1;->X:Landroid/widget/EditText;
 
     .line 2
     .line 3
-    .line 4
-    invoke-virtual {p0, p1}, Ltv1;->M(Lop4;)Li71;
+    invoke-virtual {v0}, Landroid/view/View;->isInEditMode()Z
 
+    .line 4
     .line 5
     .line 6
+    move-result v1
+
     .line 7
-    move-result-object v0
+    if-nez v1, :cond_4
 
     .line 8
-    if-eqz v0, :cond_0
-
     .line 9
-    .line 10
-    return-object v0
+    iget-boolean v1, p0, Ltv1;->Z:Z
 
+    .line 10
     .line 11
-    :cond_0
-    const-string v0, "no such file: "
+    if-eqz v1, :cond_4
 
     .line 12
     .line 13
-    invoke-static {p1, v0}, Lme1;->i(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {}, Lav1;->d()Z
 
     .line 14
     .line 15
     .line 16
-    const/4 p1, 0x0
+    move-result v1
 
     .line 17
-    return-object p1
-.end method
+    if-nez v1, :cond_0
 
-.method public abstract M(Lop4;)Li71;
-.end method
+    .line 18
+    .line 19
+    goto :goto_0
 
-.method public abstract P(Lop4;)Lc53;
-.end method
+    .line 20
+    :cond_0
+    if-gt p3, p4, :cond_4
 
-.method public abstract R(Lop4;Z)Lpb6;
-.end method
+    .line 21
+    .line 22
+    instance-of p3, p1, Landroid/text/Spannable;
 
-.method public abstract S(Lop4;)Lle6;
-.end method
+    .line 23
+    .line 24
+    if-eqz p3, :cond_4
 
-.method public close()V
-    .locals 0
+    .line 25
+    .line 26
+    invoke-static {}, Lav1;->a()Lav1;
 
-    .line 1
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p3
+
+    .line 30
+    invoke-virtual {p3}, Lav1;->c()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result p3
+
+    .line 34
+    if-eqz p3, :cond_2
+
+    .line 35
+    .line 36
+    const/4 v1, 0x1
+
+    .line 37
+    if-eq p3, v1, :cond_1
+
+    .line 38
+    .line 39
+    const/4 p1, 0x3
+
+    .line 40
+    if-eq p3, p1, :cond_2
+
+    .line 41
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :cond_1
+    check-cast p1, Landroid/text/Spannable;
+
+    .line 44
+    .line 45
+    invoke-static {}, Lav1;->a()Lav1;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p0
+
+    .line 49
+    add-int/2addr p4, p2
+
+    .line 50
+    const/4 p3, 0x0
+
+    .line 51
+    invoke-virtual {p0, p2, p4, p3, p1}, Lav1;->g(IIILjava/lang/CharSequence;)Ljava/lang/CharSequence;
+
+    .line 52
+    .line 53
+    .line 54
     return-void
-.end method
 
-.method public abstract f(Lop4;)Lpb6;
-.end method
+    .line 55
+    :cond_2
+    invoke-static {}, Lav1;->a()Lav1;
 
-.method public abstract h(Lop4;Lop4;)V
-.end method
-
-.method public abstract i(Lop4;)V
-.end method
-
-.method public abstract l(Lop4;)V
-.end method
-
-.method public final v(Lop4;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0, p1}, Ltv1;->l(Lop4;)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final y(Lop4;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0, p1}, Ltv1;->M(Lop4;)Li71;
-
-    .line 5
-    .line 6
-    .line 7
+    .line 56
+    .line 57
+    .line 58
     move-result-object p1
 
-    .line 8
-    if-eqz p1, :cond_0
+    .line 59
+    iget-object p2, p0, Ltv1;->Y:Lsv1;
 
-    .line 9
-    .line 10
-    const/4 p1, 0x1
+    .line 60
+    .line 61
+    if-nez p2, :cond_3
 
-    .line 11
-    return p1
+    .line 62
+    .line 63
+    new-instance p2, Lsv1;
 
-    .line 12
-    :cond_0
-    const/4 p1, 0x0
+    .line 64
+    .line 65
+    invoke-direct {p2, v0}, Lsv1;-><init>(Landroid/widget/EditText;)V
 
-    .line 13
-    return p1
+    .line 66
+    .line 67
+    .line 68
+    iput-object p2, p0, Ltv1;->Y:Lsv1;
+
+    .line 69
+    .line 70
+    :cond_3
+    iget-object p0, p0, Ltv1;->Y:Lsv1;
+
+    .line 71
+    .line 72
+    invoke-virtual {p1, p0}, Lav1;->h(Lyu1;)V
+
+    .line 73
+    .line 74
+    .line 75
+    :cond_4
+    :goto_0
+    return-void
 .end method

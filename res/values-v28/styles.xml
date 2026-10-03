@@ -325,6 +325,7 @@
         <item name="android:textAppearance">@style/TextAppearance.Material3.SearchBar</item>
         <item name="android:minHeight">@dimen/m3_searchbar_height</item>
         <item name="android:paddingStart">@dimen/m3_searchbar_padding_start</item>
+        <item name="android:touchscreenBlocksFocus">false</item>
         <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
         <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
         <item name="backgroundTint">?colorSurfaceContainerHigh</item>
@@ -340,12 +341,5 @@
         <item name="maxButtonHeight">@dimen/m3_searchbar_height</item>
         <item name="shapeAppearance">?shapeAppearanceMediumComponent</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.SearchBar</item>
-    </style>
-    <style name="Widget.Material3.Toolbar" parent="@style/Widget.AppCompat.Toolbar">
-        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
-        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
-        <item name="contentInsetStartWithNavigation">0.0dp</item>
-        <item name="subtitleTextAppearance">?textAppearanceTitleMedium</item>
-        <item name="titleTextAppearance">?textAppearanceTitleLarge</item>
     </style>
 </resources>

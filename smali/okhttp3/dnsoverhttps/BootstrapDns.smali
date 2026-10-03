@@ -1,6 +1,6 @@
 .class public final Lokhttp3/dnsoverhttps/BootstrapDns;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/Dns;
@@ -120,7 +120,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 7
     .line 8
@@ -132,11 +132,11 @@
 
     .line 11
     .line 12
-    iget-object p1, p0, Lokhttp3/dnsoverhttps/BootstrapDns;->dnsServers:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/dnsoverhttps/BootstrapDns;->dnsServers:Ljava/util/List;
 
     .line 13
     .line 14
-    return-object p1
+    return-object p0
 
     .line 15
     :cond_0
@@ -152,7 +152,7 @@
 
     .line 20
     .line 21
-    invoke-static {v1, p1, v2}, Lea0;->u(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, p1, v2}, Lw31;->p(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 22
     .line 23
@@ -160,11 +160,11 @@
     move-result-object p1
 
     .line 25
-    iget-object v1, p0, Lokhttp3/dnsoverhttps/BootstrapDns;->dnsHostname:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/dnsoverhttps/BootstrapDns;->dnsHostname:Ljava/lang/String;
 
     .line 26
     .line 27
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 28
     .line 29
@@ -174,10 +174,10 @@
     .line 31
     .line 32
     .line 33
-    move-result-object p1
+    move-result-object p0
 
     .line 34
-    invoke-direct {v0, p1}, Ljava/net/UnknownHostException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/net/UnknownHostException;-><init>(Ljava/lang/String;)V
 
     .line 35
     .line 36

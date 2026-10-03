@@ -1,6 +1,6 @@
 .class public final enum Lsu/happ/proxyutility/dto/enums/EPingType;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -53,7 +53,7 @@
 
 
 # static fields
-.field private static final synthetic $ENTRIES:Lpp1;
+.field private static final synthetic $ENTRIES:Lmy1;
 
 .field private static final synthetic $VALUES:[Lsu/happ/proxyutility/dto/enums/EPingType;
 
@@ -84,25 +84,25 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 10
+    .locals 7
 
     .line 1
     new-instance v0, Lsu/happ/proxyutility/dto/enums/EPingType;
 
     .line 2
     .line 3
-    const-string v1, "proxy"
+    const/4 v1, 0x0
 
     .line 4
+    const-string v2, "proxy"
+
     .line 5
-    const-string v2, "VIA_PROXY_GET"
-
     .line 6
-    .line 7
-    const/4 v3, 0x0
+    const-string v3, "VIA_PROXY_GET"
 
+    .line 7
     .line 8
-    invoke-direct {v0, v2, v3, v1}, Lsu/happ/proxyutility/dto/enums/EPingType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v0, v3, v1, v2}, Lsu/happ/proxyutility/dto/enums/EPingType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 9
     .line 10
@@ -115,18 +115,18 @@
 
     .line 14
     .line 15
-    const-string v2, "proxy-head"
+    const/4 v2, 0x1
 
     .line 16
+    const-string v3, "proxy-head"
+
     .line 17
+    .line 18
     const-string v4, "VIA_PROXY_HEAD"
 
-    .line 18
     .line 19
-    const/4 v5, 0x1
-
     .line 20
-    invoke-direct {v1, v4, v5, v2}, Lsu/happ/proxyutility/dto/enums/EPingType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v4, v2, v3}, Lsu/happ/proxyutility/dto/enums/EPingType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 21
     .line 22
@@ -139,18 +139,18 @@
 
     .line 26
     .line 27
-    const-string v4, "tcp"
+    const/4 v3, 0x2
 
     .line 28
+    const-string v4, "tcp"
+
     .line 29
-    const-string v6, "TCP"
-
     .line 30
-    .line 31
-    const/4 v7, 0x2
+    const-string v5, "TCP"
 
+    .line 31
     .line 32
-    invoke-direct {v2, v6, v7, v4}, Lsu/happ/proxyutility/dto/enums/EPingType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v2, v5, v3, v4}, Lsu/happ/proxyutility/dto/enums/EPingType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 33
     .line 34
@@ -159,71 +159,69 @@
 
     .line 36
     .line 37
-    new-instance v4, Lsu/happ/proxyutility/dto/enums/EPingType;
+    new-instance v3, Lsu/happ/proxyutility/dto/enums/EPingType;
 
     .line 38
     .line 39
-    const-string v6, "icmp"
+    const/4 v4, 0x3
 
     .line 40
+    const-string v5, "icmp"
+
     .line 41
-    const-string v8, "ICMP"
-
     .line 42
-    .line 43
-    const/4 v9, 0x3
+    const-string v6, "ICMP"
 
+    .line 43
     .line 44
-    invoke-direct {v4, v8, v9, v6}, Lsu/happ/proxyutility/dto/enums/EPingType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v3, v6, v4, v5}, Lsu/happ/proxyutility/dto/enums/EPingType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 45
     .line 46
     .line 47
-    sput-object v4, Lsu/happ/proxyutility/dto/enums/EPingType;->ICMP:Lsu/happ/proxyutility/dto/enums/EPingType;
+    sput-object v3, Lsu/happ/proxyutility/dto/enums/EPingType;->ICMP:Lsu/happ/proxyutility/dto/enums/EPingType;
 
     .line 48
     .line 49
-    const/4 v6, 0x4
+    filled-new-array {v0, v1, v2, v3}, [Lsu/happ/proxyutility/dto/enums/EPingType;
 
     .line 50
-    new-array v6, v6, [Lsu/happ/proxyutility/dto/enums/EPingType;
-
     .line 51
     .line 52
-    aput-object v0, v6, v3
+    move-result-object v0
 
     .line 53
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/EPingType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/EPingType;
+
     .line 54
-    aput-object v1, v6, v5
-
     .line 55
+    new-instance v1, Loy1;
+
     .line 56
-    aput-object v2, v6, v7
-
     .line 57
-    .line 58
-    aput-object v4, v6, v9
+    invoke-direct {v1, v0}, Loy1;-><init>([Ljava/lang/Enum;)V
 
+    .line 58
     .line 59
     .line 60
-    sput-object v6, Lsu/happ/proxyutility/dto/enums/EPingType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/EPingType;
+    sput-object v1, Lsu/happ/proxyutility/dto/enums/EPingType;->$ENTRIES:Lmy1;
 
     .line 61
     .line 62
-    new-instance v0, Lrp1;
+    new-instance v0, Lsu/happ/proxyutility/dto/enums/EPingType$Companion;
 
     .line 63
     .line 64
-    invoke-direct {v0, v6}, Lrp1;-><init>([Ljava/lang/Enum;)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 65
     .line 66
     .line 67
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/EPingType;->$ENTRIES:Lpp1;
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/EPingType;->Companion:Lsu/happ/proxyutility/dto/enums/EPingType$Companion;
 
     .line 68
     .line 69
-    new-instance v0, Lsu/happ/proxyutility/dto/enums/EPingType$Companion;
+    new-instance v0, Lsu/happ/proxyutility/dto/enums/EPingType$Creator;
 
     .line 70
     .line 71
@@ -232,23 +230,10 @@
     .line 72
     .line 73
     .line 74
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/EPingType;->Companion:Lsu/happ/proxyutility/dto/enums/EPingType$Companion;
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/EPingType;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 75
     .line 76
-    new-instance v0, Lsu/happ/proxyutility/dto/enums/EPingType$Creator;
-
-    .line 77
-    .line 78
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 79
-    .line 80
-    .line 81
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/EPingType;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 82
-    .line 83
     return-void
 .end method
 
@@ -268,11 +253,11 @@
     return-void
 .end method
 
-.method public static c()Lpp1;
+.method public static c()Lmy1;
     .locals 1
 
     .line 1
-    sget-object v0, Lsu/happ/proxyutility/dto/enums/EPingType;->$ENTRIES:Lpp1;
+    sget-object v0, Lsu/happ/proxyutility/dto/enums/EPingType;->$ENTRIES:Lmy1;
 
     .line 2
     .line 3
@@ -328,24 +313,24 @@
 
 # virtual methods
 .method public final d()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/enums/EPingType;->metaParamsValue:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/enums/EPingType;->metaParamsValue:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
@@ -362,10 +347,10 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p2
+    move-result-object p0
 
     .line 8
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 9
     .line 10

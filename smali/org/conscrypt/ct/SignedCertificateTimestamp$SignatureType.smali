@@ -1,6 +1,6 @@
 .class public final enum Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -36,38 +36,25 @@
 
 # direct methods
 .method private static synthetic $values()[Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;
-    .locals 3
+    .locals 2
 
     .line 1
-    const/4 v0, 0x2
+    sget-object v0, Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;->CERTIFICATE_TIMESTAMP:Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;
 
     .line 2
-    new-array v0, v0, [Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;
-
     .line 3
-    .line 4
-    sget-object v1, Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;->CERTIFICATE_TIMESTAMP:Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;
-
-    .line 5
-    .line 6
-    const/4 v2, 0x0
-
-    .line 7
-    aput-object v1, v0, v2
-
-    .line 8
-    .line 9
     sget-object v1, Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;->TREE_HASH:Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;
 
-    .line 10
-    .line 11
-    const/4 v2, 0x1
+    .line 4
+    .line 5
+    filled-new-array {v0, v1}, [Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;
 
-    .line 12
-    aput-object v1, v0, v2
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
 
-    .line 13
-    .line 14
+    .line 9
     return-object v0
 .end method
 
@@ -200,12 +187,12 @@
 
 # virtual methods
 .method public value()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;->value:I
+    iget p0, p0, Lorg/conscrypt/ct/SignedCertificateTimestamp$SignatureType;->value:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

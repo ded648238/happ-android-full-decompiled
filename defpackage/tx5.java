@@ -1,62 +1,104 @@
 package defpackage;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-import sun.misc.Unsafe;
+import android.view.View;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.k;
+import androidx.recyclerview.widget.l;
+import java.util.ArrayList;
+import java.util.Objects;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class tx5 {
-    public static final /* synthetic */ Unsafe a = b();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class tx5 {
+    public mx5 a;
+    public ArrayList b;
+    public long c;
+    public long d;
+    public long e;
+    public long f;
 
-    public static /* synthetic */ Object a(Unsafe unsafe, Object obj, long j, qw6 qw6Var) {
-        while (true) {
-            Object objectVolatile = unsafe.getObjectVolatile(obj, j);
-            Unsafe unsafe2 = unsafe;
-            Object obj2 = obj;
-            long j2 = j;
-            qw6 qw6Var2 = qw6Var;
-            if (unsafe2.compareAndSwapObject(obj2, j2, objectVolatile, qw6Var2)) {
-                return objectVolatile;
-            }
-            unsafe = unsafe2;
-            obj = obj2;
-            j = j2;
-            qw6Var = qw6Var2;
+    public static void b(l lVar) {
+        int i = lVar.j;
+        if (!lVar.g() && (i & 4) == 0) {
+            lVar.b();
         }
     }
 
-    public static /* synthetic */ Unsafe b() {
-        Field field;
-        Field declaredField;
-        try {
-            declaredField = Unsafe.class.getDeclaredField("theUnsafe");
-        } catch (NoSuchFieldException e) {
-            Field[] declaredFields = Unsafe.class.getDeclaredFields();
-            int length = declaredFields.length;
-            int i = 0;
-            while (true) {
-                if (i >= length) {
-                    field = null;
-                    break;
-                }
-                field = declaredFields[i];
-                if (Modifier.isStatic(field.getModifiers()) && Unsafe.class.isAssignableFrom(field.getType())) {
-                    break;
-                }
-                i++;
+    public abstract boolean a(l lVar, l lVar2, v90 v90Var, v90 v90Var2);
+
+    /* JADX WARN: Removed duplicated region for block: B:16:0x006e  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final void c(l lVar) {
+        mx5 mx5Var = this.a;
+        if (mx5Var != null) {
+            RecyclerView recyclerView = mx5Var.a;
+            boolean z = true;
+            lVar.o(true);
+            View view = lVar.a;
+            if (lVar.h != null && lVar.i == null) {
+                lVar.h = null;
             }
-            if (field != null) {
-                throw new UnsupportedOperationException("Couldn't find the Unsafe", e);
+            lVar.i = null;
+            if ((lVar.j & 16) != 0) {
+                return;
             }
-            declaredField = field;
-        }
-        declaredField.setAccessible(true);
-        try {
-            return (Unsafe) declaredField.get(null);
-        } catch (Exception e2) {
-            i62.o(e2);
-            return null;
+            k kVar = recyclerView.e0;
+            recyclerView.p0();
+            xk0 xk0Var = recyclerView.h0;
+            jp0 jp0Var = (jp0) xk0Var.d0;
+            mx5 mx5Var2 = (mx5) xk0Var.c0;
+            int i = xk0Var.Z;
+            if (i != 1) {
+                if (i == 2) {
+                    i60.g("Cannot call removeViewIfHidden within removeViewIfHidden");
+                    return;
+                }
+                try {
+                    xk0Var.Z = 2;
+                    int indexOfChild = mx5Var2.a.indexOfChild(view);
+                    if (indexOfChild == -1) {
+                        xk0Var.t(view);
+                    } else if (jp0Var.e(indexOfChild)) {
+                        jp0Var.h(indexOfChild);
+                        xk0Var.t(view);
+                        mx5Var2.c(indexOfChild);
+                    }
+                    if (z) {
+                        l N = RecyclerView.N(view);
+                        kVar.m(N);
+                        kVar.j(N);
+                        if (RecyclerView.D1) {
+                            Objects.toString(view);
+                            recyclerView.toString();
+                        }
+                    }
+                    recyclerView.r0(!z);
+                    if (z && lVar.k()) {
+                        recyclerView.removeDetachedView(view, false);
+                        return;
+                    }
+                } finally {
+                    xk0Var.Z = 0;
+                }
+            }
+            if (((View) xk0Var.e0) != view) {
+                i60.g("Cannot call removeViewIfHidden within removeView(At) for a different view");
+                return;
+            }
+            z = false;
+            if (z) {
+            }
+            recyclerView.r0(!z);
+            if (z) {
+            }
         }
     }
+
+    public abstract void d(l lVar);
+
+    public abstract void e();
+
+    public abstract boolean f();
 }

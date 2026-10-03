@@ -1,13 +1,13 @@
 .class public final Lio/sentry/android/core/n;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/z0;
+.implements Lio/sentry/b1;
 
 
 # virtual methods
-.method public final a(Lio/sentry/n3;)V
+.method public final a(Lio/sentry/p3;)V
     .locals 6
 
     .line 1
@@ -16,10 +16,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Runtime;->totalMemory()J
+    invoke-virtual {p0}, Ljava/lang/Runtime;->totalMemory()J
 
     .line 6
     .line 7
@@ -32,10 +32,10 @@
     .line 10
     .line 11
     .line 12
-    move-result-object v2
+    move-result-object p0
 
     .line 13
-    invoke-virtual {v2}, Ljava/lang/Runtime;->freeMemory()J
+    invoke-virtual {p0}, Ljava/lang/Runtime;->freeMemory()J
 
     .line 14
     .line 15
@@ -65,30 +65,25 @@
     sub-long/2addr v2, v4
 
     .line 27
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    iput-wide v0, p1, Lio/sentry/p3;->c:J
 
     .line 28
     .line 29
+    const/4 p0, 0x1
+
     .line 30
-    move-result-object v0
+    iput-boolean p0, p1, Lio/sentry/p3;->d:Z
 
     .line 31
-    iput-object v0, p1, Lio/sentry/n3;->b:Ljava/lang/Long;
-
     .line 32
-    .line 33
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    iput-wide v2, p1, Lio/sentry/p3;->e:J
 
+    .line 33
     .line 34
+    iput-boolean p0, p1, Lio/sentry/p3;->f:Z
+
     .line 35
     .line 36
-    move-result-object v0
-
-    .line 37
-    iput-object v0, p1, Lio/sentry/n3;->c:Ljava/lang/Long;
-
-    .line 38
-    .line 39
     return-void
 .end method
 

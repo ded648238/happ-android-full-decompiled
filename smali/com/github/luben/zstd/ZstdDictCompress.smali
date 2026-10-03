@@ -1,6 +1,6 @@
 .class public Lcom/github/luben/zstd/ZstdDictCompress;
 .super Lcom/github/luben/zstd/SharedDictBase;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -29,7 +29,7 @@
 
     const/4 v0, 0x0
 
-    .line 88
+    .line 90
     invoke-direct {p0, p1, p2, v0}, Lcom/github/luben/zstd/ZstdDictCompress;-><init>(Ljava/nio/ByteBuffer;IZ)V
 
     return-void
@@ -129,15 +129,15 @@
     .line 43
     .line 44
     .line 45
-    iget-wide p1, p0, Lcom/github/luben/zstd/ZstdDictCompress;->nativePtr:J
+    iget-wide p0, v5, Lcom/github/luben/zstd/ZstdDictCompress;->nativePtr:J
 
     .line 46
     .line 47
-    cmp-long p3, p1, v0
+    cmp-long p0, p0, v0
 
     .line 48
     .line 49
-    if-eqz p3, :cond_1
+    if-eqz p0, :cond_1
 
     .line 50
     .line 51
@@ -145,12 +145,12 @@
 
     .line 52
     .line 53
-    iput-object v6, p0, Lcom/github/luben/zstd/ZstdDictCompress;->sharedDict:Ljava/nio/ByteBuffer;
+    iput-object v6, v5, Lcom/github/luben/zstd/ZstdDictCompress;->sharedDict:Ljava/nio/ByteBuffer;
 
     .line 54
     .line 55
     :cond_0
-    invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->storeFence()V
+    invoke-virtual {v5}, Lcom/github/luben/zstd/AutoCloseBase;->storeFence()V
 
     .line 56
     .line 57
@@ -159,11 +159,11 @@
 
     .line 59
     :cond_1
-    const-string p1, "ZSTD_createCDict failed"
+    const-string p0, "ZSTD_createCDict failed"
 
     .line 60
     .line 61
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 62
     .line 63
@@ -172,11 +172,11 @@
 
     .line 65
     :cond_2
-    const-string p1, "dict cannot be empty."
+    const-string p0, "dict cannot be empty."
 
     .line 66
     .line 67
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 68
     .line 69
@@ -185,11 +185,11 @@
 
     .line 71
     :cond_3
-    const-string p1, "dict must be a direct buffer"
+    const-string p0, "dict must be a direct buffer"
 
     .line 72
     .line 73
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 74
     .line 75
@@ -202,7 +202,7 @@
 
     const/4 v0, 0x0
 
-    .line 89
+    .line 91
     array-length v1, p1
 
     invoke-direct {p0, p1, v0, v1, p2}, Lcom/github/luben/zstd/ZstdDictCompress;-><init>([BIII)V
@@ -237,36 +237,55 @@
 
     sub-int/2addr v3, p2
 
-    if-ltz v3, :cond_1
+    if-ltz v3, :cond_2
+
+    if-ltz p2, :cond_1
+
+    if-ltz p3, :cond_1
 
     .line 83
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/github/luben/zstd/ZstdDictCompress;->init([BIII)V
+    array-length v3, p1
+
+    sub-int/2addr v3, p2
+
+    if-gt p3, v3, :cond_1
 
     .line 84
-    iget-wide p1, p0, Lcom/github/luben/zstd/ZstdDictCompress;->nativePtr:J
-
-    cmp-long p3, v0, p1
-
-    if-eqz p3, :cond_0
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/github/luben/zstd/ZstdDictCompress;->init([BIII)V
 
     .line 85
+    iget-wide p1, p0, Lcom/github/luben/zstd/ZstdDictCompress;->nativePtr:J
+
+    cmp-long p1, v0, p1
+
+    if-eqz p1, :cond_0
+
+    .line 86
     invoke-virtual {p0}, Lcom/github/luben/zstd/AutoCloseBase;->storeFence()V
 
     return-void
 
-    .line 86
+    .line 87
     :cond_0
-    const-string p1, "ZSTD_createCDict failed"
+    const-string p0, "ZSTD_createCDict failed"
 
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     throw v2
 
-    .line 87
+    .line 88
     :cond_1
-    const-string p1, "Dictionary buffer is too short"
+    const-string p0, "Invalid offset/length for dictionary buffer"
 
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    .line 89
+    :cond_2
+    const-string p0, "Dictionary buffer is too short"
+
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     throw v2
 .end method
@@ -295,7 +314,7 @@
 .end method
 
 .method public doClose()V
-    .locals 5
+    .locals 4
 
     .line 1
     iget-wide v0, p0, Lcom/github/luben/zstd/ZstdDictCompress;->nativePtr:J
@@ -306,11 +325,11 @@
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 6
     .line 7
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
     .line 8
     .line 9
@@ -335,23 +354,23 @@
 .end method
 
 .method public getByReferenceBuffer()Ljava/nio/ByteBuffer;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/github/luben/zstd/ZstdDictCompress;->sharedDict:Ljava/nio/ByteBuffer;
+    iget-object p0, p0, Lcom/github/luben/zstd/ZstdDictCompress;->sharedDict:Ljava/nio/ByteBuffer;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public level()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/github/luben/zstd/ZstdDictCompress;->level:I
+    iget p0, p0, Lcom/github/luben/zstd/ZstdDictCompress;->level:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

@@ -185,3 +185,37 @@ adb install /tmp/happ_mod_signed.apk
 - **Оригинальная подпись** не сохраняется — обновление поверх оригинала
   невозможно (нужен `adb uninstall` + `install`)
 - **Go-ядро** (`libgojni.so`) не трогаем — оно работает как есть, исходников нет
+
+---
+
+## Дополнение: сборка 4.6.1 (versionCode 1683) — проверено 2026-10-03
+
+Отличия от 4.0.1:
+
+1. **Ресурсы чинить НЕ надо.** `res/values-v34/colors.xml` использует
+   `system_*` цвета (74 шт.) — aapt2 из apktool 3.0.3 их принимает.
+   `foregroundServiceType="specialUse"` в манифесте тоже принимается —
+   оставлен как есть. Сборка `apktool b` проходит с первой попытки.
+
+2. **Anti-tamper переехал.** В 4.6.1 проверка подписи в
+   `HappApplication.onCreate()` выглядит так (обфускация сменилась):
+  jm.l() берёт подпись, equals, при несовпадении:
+   - вызов dx1.e() — затирает криптоключи рандомными UUID
+     (проверено: метод идёт по ArrayList и делает set(i, UUID))
+   - sput K0 — обнуляет static-поле pref_mode
+     (в 4.0.1 поле называлось x0, wipe был no1.g())
+
+   Патч уже применён в этом дереве: оба вызова в tamper-ветке
+   заменены на nop (см. комментарии anti-tamper disabled в
+   smali/su/happ/proxyutility/HappApplication.smali).
+
+3. **Подпись без SDK.** На чистой машине без sudo/root:
+   keytool есть в любом JRE 17, вместо apksigner — uber-apk-signer
+   (чистый jar, только Java). Итог: zipalign ok,
+   signature verified [v2, v3], APK ~61 МБ.
+
+4. **Java-костыли.** jadx 1.5.1 дал 41 ошибку (1.5.6 — аж 177, хуже).
+   В коде самого Happ (su/, 286 файлов) фатальных только 2 —
+   Parcelable.Creator в dto/MetaParams.java и dto/SubscriptionItem.java
+   (R8-бойлерплейт). Оба заменены на чистые версии из CFR.
+   В su/ больше нет JADX ERROR (остались только WARN — код на месте).

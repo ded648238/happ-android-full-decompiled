@@ -1,19 +1,36 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class nc4 implements oc4 {
-    public static final nc4 a = new nc4();
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class nc4 {
+    public static final nc4 X;
+    public static final nc4 Y;
+    public static final nc4 Z;
+    public static final nc4 c0;
+    public static final nc4 d0;
+    public static final /* synthetic */ nc4[] e0;
 
-    public final boolean equals(Object obj) {
-        return this == obj || (obj instanceof nc4);
+    static {
+        nc4 nc4Var = new nc4("STARTED", 0);
+        X = nc4Var;
+        nc4 nc4Var2 = new nc4("STOPPED", 1);
+        Y = nc4Var2;
+        nc4 nc4Var3 = new nc4("RUNNING", 2);
+        Z = nc4Var3;
+        nc4 nc4Var4 = new nc4("NOT_RUNNING", 3);
+        c0 = nc4Var4;
+        nc4 nc4Var5 = new nc4("START_FAILURE", 4);
+        d0 = nc4Var5;
+        e0 = new nc4[]{nc4Var, nc4Var2, nc4Var3, nc4Var4, nc4Var5};
     }
 
-    public final int hashCode() {
-        return 1012375648;
+    public static nc4 valueOf(String str) {
+        return (nc4) Enum.valueOf(nc4.class, str);
     }
 
-    public final String toString() {
-        return "Success";
+    public static nc4[] values() {
+        return (nc4[]) e0.clone();
     }
 }

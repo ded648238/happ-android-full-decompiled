@@ -1,143 +1,112 @@
 .class public final Lvm1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lrm1;
+.implements Lnj6;
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final synthetic X:Loj6;
+
+.field public final Y:Lwm1;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;I)V
+.method public constructor <init>(Loj6;Lwm1;)V
     .locals 0
 
     .line 1
-    packed-switch p2, :pswitch_data_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lvm1;->X:Loj6;
 
     .line 5
     .line 6
+    iput-object p2, p0, Lvm1;->Y:Lwm1;
+
     .line 7
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
     .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    iput-object p1, p0, Lvm1;->a:Landroid/content/Context;
-
-    .line 12
-    .line 13
     return-void
-
-    .line 14
-    :pswitch_0
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 15
-    .line 16
-    .line 17
-    iput-object p1, p0, Lvm1;->a:Landroid/content/Context;
-
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    nop
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
 .end method
 
 
 # virtual methods
-.method public a(Lji2;)V
-    .locals 8
+.method public final a(Ljava/lang/String;Lji2;)Lw53;
+    .locals 0
 
     .line 1
-    new-instance v7, Lxr0;
+    iget-object p0, p0, Lvm1;->X:Loj6;
 
     .line 2
     .line 3
-    const-string v0, "EmojiCompatInitializer"
+    invoke-virtual {p0, p1, p2}, Loj6;->a(Ljava/lang/String;Lji2;)Lw53;
 
     .line 4
     .line 5
-    invoke-direct {v7, v0}, Lxr0;-><init>(Ljava/lang/String;)V
-
     .line 6
+    move-result-object p0
+
     .line 7
-    .line 8
-    new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
+    return-object p0
+.end method
 
-    .line 9
-    .line 10
-    new-instance v6, Ljava/util/concurrent/LinkedBlockingDeque;
+.method public final b(Ljava/lang/Object;)Z
+    .locals 0
 
-    .line 11
-    .line 12
-    invoke-direct {v6}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
+    .line 1
+    iget-object p0, p0, Lvm1;->X:Loj6;
 
-    .line 13
-    .line 14
-    .line 15
-    const/4 v1, 0x0
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Loj6;->b(Ljava/lang/Object;)Z
 
-    .line 16
-    const/4 v2, 0x1
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
 
-    .line 17
-    const-wide/16 v3, 0xf
+    .line 7
+    return p0
+.end method
 
-    .line 18
-    .line 19
-    sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+.method public final c()Ljava/util/Map;
+    .locals 0
 
-    .line 20
-    .line 21
-    invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
+    .line 1
+    iget-object p0, p0, Lvm1;->X:Loj6;
 
-    .line 22
-    .line 23
-    .line 24
-    const/4 v1, 0x1
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Loj6;->c()Ljava/util/Map;
 
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/ThreadPoolExecutor;->allowCoreThreadTimeOut(Z)V
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
-    .line 26
-    .line 27
-    .line 28
-    new-instance v1, Lsf;
+    .line 7
+    return-object p0
+.end method
 
-    .line 29
-    .line 30
-    const/16 v2, 0x9
+.method public final d(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 0
 
-    .line 31
-    .line 32
-    invoke-direct {v1, p0, p1, v0, v2}, Lsf;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    .line 1
+    iget-object p0, p0, Lvm1;->X:Loj6;
 
-    .line 33
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/ThreadPoolExecutor;->execute(Ljava/lang/Runnable;)V
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Loj6;->d(Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 36
-    .line 37
-    .line 38
-    return-void
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
 .end method

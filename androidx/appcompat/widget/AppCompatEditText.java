@@ -7,9 +7,12 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.text.Editable;
+import android.text.Selection;
+import android.text.Spannable;
 import android.text.method.KeyListener;
 import android.text.method.NumberKeyListener;
 import android.util.AttributeSet;
@@ -21,130 +24,138 @@ import android.view.inputmethod.InputMethodManager;
 import android.view.textclassifier.TextClassifier;
 import android.widget.EditText;
 import android.widget.TextView;
-import defpackage.b15;
-import defpackage.bv0;
-import defpackage.d37;
-import defpackage.dv7;
-import defpackage.gi4;
-import defpackage.go;
-import defpackage.h71;
-import defpackage.jm1;
+import defpackage.bv7;
+import defpackage.cv7;
+import defpackage.e21;
+import defpackage.f21;
+import defpackage.f7;
+import defpackage.f73;
+import defpackage.fp;
+import defpackage.g21;
+import defpackage.hp;
+import defpackage.hv7;
+import defpackage.i21;
 import defpackage.mo;
-import defpackage.qn7;
-import defpackage.qt2;
-import defpackage.rn;
-import defpackage.t6;
-import defpackage.tn;
-import defpackage.uy7;
-import defpackage.v47;
-import defpackage.x75;
-import defpackage.xu0;
-import defpackage.y27;
-import defpackage.yx;
-import defpackage.z47;
-import defpackage.zu0;
+import defpackage.mq8;
+import defpackage.ni8;
+import defpackage.ru1;
+import defpackage.ut;
+import defpackage.v31;
+import defpackage.wp;
+import defpackage.wr5;
+import defpackage.xp;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class AppCompatEditText extends EditText implements gi4, z47 {
-    public final t6 Q;
-    public final mo R;
-    public final h71 S;
-    public final y27 T;
-    public final dv7 U;
-    public rn V;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class AppCompatEditText extends EditText {
+    public final f7 c0;
+    public final xp d0;
+    public final hp e0;
+    public final cv7 f0;
+    public final hp g0;
+    public fp h0;
+    public wp i0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AppCompatEditText(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        v47.a(context);
-        d37.a(this, getContext());
-        t6 t6Var = new t6(this);
-        this.Q = t6Var;
-        t6Var.y(attributeSet, i);
-        mo moVar = new mo(this);
-        this.R = moVar;
-        moVar.f(attributeSet, i);
-        moVar.b();
-        h71 h71Var = new h71(5, false);
-        h71Var.R = this;
-        this.S = h71Var;
-        this.T = new y27();
-        dv7 dv7Var = new dv7(this);
-        this.U = dv7Var;
-        dv7Var.D(attributeSet, i);
+        hv7.a(this, getContext());
+        f7 f7Var = new f7(this);
+        this.c0 = f7Var;
+        f7Var.y(attributeSet, i);
+        xp xpVar = new xp(this);
+        this.d0 = xpVar;
+        xpVar.h(attributeSet, i);
+        xpVar.b();
+        hp hpVar = new hp(19, false);
+        hpVar.Y = this;
+        this.e0 = hpVar;
+        this.f0 = new cv7();
+        hp hpVar2 = new hp(this);
+        this.g0 = hpVar2;
+        hpVar2.A(attributeSet, i);
         KeyListener keyListener = getKeyListener();
         if (keyListener instanceof NumberKeyListener) {
             return;
         }
-        boolean zIsFocusable = super.isFocusable();
-        boolean zIsClickable = super.isClickable();
-        boolean zIsLongClickable = super.isLongClickable();
+        boolean isFocusable = super.isFocusable();
+        boolean isClickable = super.isClickable();
+        boolean isLongClickable = super.isLongClickable();
         int inputType = super.getInputType();
-        KeyListener keyListenerY = dv7Var.y(keyListener);
-        if (keyListenerY == keyListener) {
+        KeyListener w = hpVar2.w(keyListener);
+        if (w == keyListener) {
             return;
         }
-        super.setKeyListener(keyListenerY);
+        super.setKeyListener(w);
         super.setRawInputType(inputType);
-        super.setFocusable(zIsFocusable);
-        super.setClickable(zIsClickable);
-        super.setLongClickable(zIsLongClickable);
+        super.setFocusable(isFocusable);
+        super.setClickable(isClickable);
+        super.setLongClickable(isLongClickable);
     }
 
-    private rn getSuperCaller() {
-        if (this.V == null) {
-            this.V = new rn(this);
+    private fp getSuperCaller() {
+        if (this.h0 == null) {
+            this.h0 = new fp(this);
         }
-        return this.V;
+        return this.h0;
     }
 
-    @Override // defpackage.gi4
-    public final bv0 a(bv0 bv0Var) {
-        this.T.getClass();
-        return y27.a(this, bv0Var);
+    public final i21 b(i21 i21Var) {
+        this.f0.getClass();
+        return cv7.a(this, i21Var);
     }
 
     @Override // android.widget.TextView, android.view.View
     public final void drawableStateChanged() {
         super.drawableStateChanged();
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.b();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.b();
         }
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     @Override // android.widget.TextView
     public ActionMode.Callback getCustomSelectionActionModeCallback() {
-        return b15.W(super.getCustomSelectionActionModeCallback());
+        return bv7.k(super.getCustomSelectionActionModeCallback());
+    }
+
+    @Override // android.widget.TextView
+    public String getFontVariationSettings() {
+        return getFontVariationSettingsManager().e;
+    }
+
+    public wp getFontVariationSettingsManager() {
+        if (this.i0 == null) {
+            this.i0 = new wp(this, new mo(1, this));
+        }
+        return this.i0;
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            return t6Var.v();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            return f7Var.v();
         }
         return null;
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            return t6Var.w();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            return f7Var.w();
         }
         return null;
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.R.d();
+        return this.d0.f();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.R.e();
+        return this.d0.g();
     }
 
     @Override // android.widget.EditText, android.widget.TextView
@@ -154,29 +165,34 @@ public class AppCompatEditText extends EditText implements gi4, z47 {
 
     @Override // android.widget.TextView
     public TextClassifier getTextClassifier() {
-        h71 h71Var;
-        if (Build.VERSION.SDK_INT >= 28 || (h71Var = this.S) == null) {
+        hp hpVar;
+        if (Build.VERSION.SDK_INT >= 28 || (hpVar = this.e0) == null) {
             return super.getTextClassifier();
         }
-        TextClassifier textClassifier = (TextClassifier) h71Var.S;
-        return textClassifier == null ? go.a((TextView) h71Var.R) : textClassifier;
+        TextClassifier textClassifier = (TextClassifier) hpVar.Z;
+        return textClassifier == null ? f73.x((TextView) hpVar.Y) : textClassifier;
+    }
+
+    @Override // android.widget.TextView
+    public Typeface getTypeface() {
+        return Build.VERSION.SDK_INT >= 26 ? getFontVariationSettingsManager().c : super.getTypeface();
     }
 
     @Override // android.widget.TextView, android.view.View
     public InputConnection onCreateInputConnection(EditorInfo editorInfo) {
-        String[] strArrH;
-        InputConnection inputConnectionOnCreateInputConnection = super.onCreateInputConnection(editorInfo);
-        this.R.getClass();
+        String[] g;
+        InputConnection onCreateInputConnection = super.onCreateInputConnection(editorInfo);
+        this.d0.getClass();
         int i = Build.VERSION.SDK_INT;
-        if (i < 30 && inputConnectionOnCreateInputConnection != null) {
-            jm1.d(editorInfo, getText());
+        if (i < 30 && onCreateInputConnection != null) {
+            ru1.d(editorInfo, getText());
         }
-        uy7.E(inputConnectionOnCreateInputConnection, editorInfo, this);
-        if (inputConnectionOnCreateInputConnection != null && i <= 30 && (strArrH = qn7.h(this)) != null) {
-            jm1.c(editorInfo, strArrH);
-            inputConnectionOnCreateInputConnection = qt2.v(inputConnectionOnCreateInputConnection, editorInfo, new yx(6, this));
+        ut.V(editorInfo, onCreateInputConnection, this);
+        if (onCreateInputConnection != null && i <= 30 && (g = ni8.g(this)) != null) {
+            ru1.c(editorInfo, g);
+            onCreateInputConnection = mq8.u(onCreateInputConnection, editorInfo, new v31(11, this));
         }
-        return this.U.F(inputConnectionOnCreateInputConnection, editorInfo);
+        return this.g0.E(onCreateInputConnection, editorInfo);
     }
 
     @Override // android.view.View
@@ -192,9 +208,8 @@ public class AppCompatEditText extends EditText implements gi4, z47 {
     @Override // android.widget.TextView, android.view.View
     public final boolean onDragEvent(DragEvent dragEvent) {
         Activity activity;
-        int i = Build.VERSION.SDK_INT;
-        boolean zA = false;
-        if (i < 31 && i >= 24 && dragEvent.getLocalState() == null && qn7.h(this) != null) {
+        f21 f21Var;
+        if (Build.VERSION.SDK_INT < 31 && dragEvent.getLocalState() == null && ni8.g(this) != null) {
             Context context = getContext();
             while (true) {
                 if (!(context instanceof ContextWrapper)) {
@@ -210,46 +225,50 @@ public class AppCompatEditText extends EditText implements gi4, z47 {
             if (activity == null) {
                 toString();
             } else if (dragEvent.getAction() != 1 && dragEvent.getAction() == 3) {
-                zA = tn.a(dragEvent, this, activity);
+                activity.requestDragAndDropPermissions(dragEvent);
+                int offsetForPosition = getOffsetForPosition(dragEvent.getX(), dragEvent.getY());
+                beginBatchEdit();
+                try {
+                    Selection.setSelection((Spannable) getText(), offsetForPosition);
+                    ClipData clipData = dragEvent.getClipData();
+                    if (Build.VERSION.SDK_INT >= 31) {
+                        f21Var = new e21(clipData, 3);
+                    } else {
+                        g21 g21Var = new g21();
+                        g21Var.b = clipData;
+                        g21Var.c = 3;
+                        f21Var = g21Var;
+                    }
+                    ni8.i(this, f21Var.build());
+                    return true;
+                } finally {
+                    endBatchEdit();
+                }
             }
-        }
-        if (zA) {
-            return true;
         }
         return super.onDragEvent(dragEvent);
     }
 
     @Override // android.widget.EditText, android.widget.TextView
     public final boolean onTextContextMenuItem(int i) {
-        zu0 zu0Var;
-        yu0 yu0Var;
-        int i2;
-        xu0 xu0Var;
-        int i3 = Build.VERSION.SDK_INT;
-        if (i3 >= 31 || qn7.h(this) == null || !(i == 16908322 || i == 16908337)) {
+        f21 f21Var;
+        int i2 = Build.VERSION.SDK_INT;
+        if (i2 >= 31 || ni8.g(this) == null || !(i == 16908322 || i == 16908337)) {
             return super.onTextContextMenuItem(i);
         }
         ClipboardManager clipboardManager = (ClipboardManager) getContext().getSystemService("clipboard");
         ClipData primaryClip = clipboardManager == null ? null : clipboardManager.getPrimaryClip();
         if (primaryClip != null && primaryClip.getItemCount() > 0) {
-            if (i3 >= 31) {
-                xu0Var = new xu0(primaryClip, 1);
+            if (i2 >= 31) {
+                f21Var = new e21(primaryClip, 1);
             } else {
-                zu0Var = new zu0();
-                zu0Var.b = primaryClip;
-                zu0Var.c = 1;
+                g21 g21Var = new g21();
+                g21Var.b = primaryClip;
+                g21Var.c = 1;
+                f21Var = g21Var;
             }
-            if (i == 16908322) {
-                yu0Var = zu0Var;
-                yu0Var = xu0Var;
-                i2 = 0;
-            } else {
-                yu0Var = zu0Var;
-                yu0Var = xu0Var;
-                i2 = 1;
-            }
-            yu0Var.c(i2);
-            qn7.m(this, yu0Var.build());
+            f21Var.c(i == 16908322 ? 0 : 1);
+            ni8.i(this, f21Var.build());
         }
         return true;
     }
@@ -257,101 +276,116 @@ public class AppCompatEditText extends EditText implements gi4, z47 {
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.A();
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.A();
         }
     }
 
     @Override // android.view.View
     public void setBackgroundResource(int i) {
         super.setBackgroundResource(i);
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.B(i);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.B(i);
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     @Override // android.widget.TextView
     public final void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.b();
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.b();
         }
     }
 
     @Override // android.widget.TextView
     public void setCustomSelectionActionModeCallback(ActionMode.Callback callback) {
-        super.setCustomSelectionActionModeCallback(b15.X(callback, this));
+        super.setCustomSelectionActionModeCallback(bv7.l(callback, this));
     }
 
     public void setEmojiCompatEnabled(boolean z) {
-        this.U.I(z);
+        this.g0.N(z);
+    }
+
+    @Override // android.widget.TextView
+    public final boolean setFontVariationSettings(String str) {
+        return getFontVariationSettingsManager().a(str);
     }
 
     @Override // android.widget.TextView
     public void setKeyListener(KeyListener keyListener) {
-        super.setKeyListener(this.U.y(keyListener));
+        super.setKeyListener(this.g0.w(keyListener));
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.K(colorStateList);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.L(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        t6 t6Var = this.Q;
-        if (t6Var != null) {
-            t6Var.L(mode);
+        f7 f7Var = this.c0;
+        if (f7Var != null) {
+            f7Var.M(mode);
         }
     }
 
-    @Override // defpackage.z47
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        mo moVar = this.R;
-        moVar.k(colorStateList);
-        moVar.b();
+        xp xpVar = this.d0;
+        xpVar.m(colorStateList);
+        xpVar.b();
     }
 
-    @Override // defpackage.z47
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        mo moVar = this.R;
-        moVar.l(mode);
-        moVar.b();
+        xp xpVar = this.d0;
+        xpVar.n(mode);
+        xpVar.b();
     }
 
     @Override // android.widget.TextView
     public final void setTextAppearance(Context context, int i) {
         super.setTextAppearance(context, i);
-        mo moVar = this.R;
-        if (moVar != null) {
-            moVar.g(context, i);
+        xp xpVar = this.d0;
+        if (xpVar != null) {
+            xpVar.i(context, i);
         }
     }
 
     @Override // android.widget.TextView
     public void setTextClassifier(TextClassifier textClassifier) {
-        h71 h71Var;
-        if (Build.VERSION.SDK_INT >= 28 || (h71Var = this.S) == null) {
+        hp hpVar;
+        if (Build.VERSION.SDK_INT >= 28 || (hpVar = this.e0) == null) {
             super.setTextClassifier(textClassifier);
         } else {
-            h71Var.S = textClassifier;
+            hpVar.Z = textClassifier;
         }
     }
 
+    @Override // android.widget.TextView
+    public void setTypeface(Typeface typeface) {
+        if (Build.VERSION.SDK_INT < 26) {
+            super.setTypeface(typeface);
+            return;
+        }
+        wp fontVariationSettingsManager = getFontVariationSettingsManager();
+        fontVariationSettingsManager.c = typeface;
+        fontVariationSettingsManager.d = typeface;
+        fontVariationSettingsManager.b.accept(typeface);
+    }
+
     public AppCompatEditText(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, x75.editTextStyle);
+        this(context, attributeSet, wr5.editTextStyle);
     }
 }

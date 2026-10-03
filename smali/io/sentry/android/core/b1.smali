@@ -1,164 +1,105 @@
 .class public final Lio/sentry/android/core/b1;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lio/sentry/hints/c;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lio/sentry/hints/b;
+.implements Lio/sentry/hints/a;
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:I
-
-.field public final c:I
-
 .field public final d:J
 
 .field public final e:Z
 
-.field public final f:Ljava/lang/String;
-
 
 # direct methods
-.method public constructor <init>(Landroid/net/NetworkCapabilities;Lio/sentry/android/core/n0;J)V
-    .locals 2
+.method public constructor <init>(JLio/sentry/ILogger;JZ)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2, p3}, Lio/sentry/hints/c;-><init>(JLio/sentry/ILogger;)V
 
     .line 2
     .line 3
     .line 4
-    const-string v0, "NetworkCapabilities is required"
+    iput-wide p4, p0, Lio/sentry/android/core/b1;->d:J
 
     .line 5
     .line 6
-    invoke-static {p1, v0}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    iput-boolean p6, p0, Lio/sentry/android/core/b1;->e:Z
 
     .line 7
     .line 8
-    .line 9
-    const-string v0, "BuildInfoProvider is required"
+    return-void
+.end method
 
-    .line 10
-    .line 11
-    invoke-static {p2, v0}, Lio/sentry/util/b;->q(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 12
-    .line 13
-    .line 14
-    invoke-virtual {p1}, Landroid/net/NetworkCapabilities;->getLinkDownstreamBandwidthKbps()I
+# virtual methods
+.method public final a()Z
+    .locals 0
 
-    .line 15
-    .line 16
-    .line 17
-    move-result p2
+    .line 1
+    iget-boolean p0, p0, Lio/sentry/android/core/b1;->e:Z
 
-    .line 18
-    iput p2, p0, Lio/sentry/android/core/b1;->a:I
+    .line 2
+    .line 3
+    return p0
+.end method
 
-    .line 19
-    .line 20
-    invoke-virtual {p1}, Landroid/net/NetworkCapabilities;->getLinkUpstreamBandwidthKbps()I
+.method public final b()Ljava/lang/Long;
+    .locals 2
 
-    .line 21
-    .line 22
-    .line 23
-    move-result p2
+    .line 1
+    iget-wide v0, p0, Lio/sentry/android/core/b1;->d:J
 
-    .line 24
-    iput p2, p0, Lio/sentry/android/core/b1;->b:I
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    .line 25
-    .line 26
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
-    .line 27
-    .line 28
-    const/16 v0, 0x1d
+    .line 7
+    return-object p0
+.end method
 
-    .line 29
-    .line 30
-    const/4 v1, 0x0
+.method public final c()Z
+    .locals 0
 
-    .line 31
-    if-lt p2, v0, :cond_0
+    .line 1
+    const/4 p0, 0x0
 
-    .line 32
-    .line 33
-    invoke-virtual {p1}, Landroid/net/NetworkCapabilities;->getSignalStrength()I
+    .line 2
+    return p0
+.end method
 
-    .line 34
-    .line 35
-    .line 36
-    move-result p2
+.method public final e()Ljava/lang/String;
+    .locals 0
 
-    .line 37
-    goto :goto_0
+    .line 1
+    const-string p0, "memory_limiter"
 
-    .line 38
-    :cond_0
-    const/4 p2, 0x0
+    .line 2
+    .line 3
+    return-object p0
+.end method
 
-    .line 39
-    :goto_0
-    const/16 v0, -0x64
+.method public final f(Lio/sentry/protocol/w;)Z
+    .locals 0
 
-    .line 40
-    .line 41
-    if-le p2, v0, :cond_1
+    .line 1
+    const/4 p0, 0x1
 
-    .line 42
-    .line 43
-    move v1, p2
+    .line 2
+    return p0
+.end method
 
-    .line 44
-    :cond_1
-    iput v1, p0, Lio/sentry/android/core/b1;->c:I
+.method public final g(Lio/sentry/protocol/w;)V
+    .locals 0
 
-    .line 45
-    .line 46
-    const/4 p2, 0x4
-
-    .line 47
-    invoke-virtual {p1, p2}, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
-
-    .line 48
-    .line 49
-    .line 50
-    move-result p2
-
-    .line 51
-    iput-boolean p2, p0, Lio/sentry/android/core/b1;->e:Z
-
-    .line 52
-    .line 53
-    invoke-static {p1}, Lio/sentry/android/core/internal/util/c;->y(Landroid/net/NetworkCapabilities;)Ljava/lang/String;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object p1
-
-    .line 57
-    if-eqz p1, :cond_2
-
-    .line 58
-    .line 59
-    goto :goto_1
-
-    .line 60
-    :cond_2
-    const-string p1, ""
-
-    .line 61
-    .line 62
-    :goto_1
-    iput-object p1, p0, Lio/sentry/android/core/b1;->f:Ljava/lang/String;
-
-    .line 63
-    .line 64
-    iput-wide p3, p0, Lio/sentry/android/core/b1;->d:J
-
-    .line 65
-    .line 66
+    .line 1
     return-void
 .end method

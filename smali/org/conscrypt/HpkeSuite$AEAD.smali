@@ -1,6 +1,6 @@
 .class public final enum Lorg/conscrypt/HpkeSuite$AEAD;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -47,46 +47,26 @@
     .locals 3
 
     .line 1
-    const/4 v0, 0x3
+    sget-object v0, Lorg/conscrypt/HpkeSuite$AEAD;->AES_128_GCM:Lorg/conscrypt/HpkeSuite$AEAD;
 
     .line 2
-    new-array v0, v0, [Lorg/conscrypt/HpkeSuite$AEAD;
-
     .line 3
+    sget-object v1, Lorg/conscrypt/HpkeSuite$AEAD;->AES_256_GCM:Lorg/conscrypt/HpkeSuite$AEAD;
+
     .line 4
-    sget-object v1, Lorg/conscrypt/HpkeSuite$AEAD;->AES_128_GCM:Lorg/conscrypt/HpkeSuite$AEAD;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
+    sget-object v2, Lorg/conscrypt/HpkeSuite$AEAD;->CHACHA20POLY1305:Lorg/conscrypt/HpkeSuite$AEAD;
 
+    .line 6
     .line 7
-    aput-object v1, v0, v2
+    filled-new-array {v0, v1, v2}, [Lorg/conscrypt/HpkeSuite$AEAD;
 
     .line 8
     .line 9
-    sget-object v1, Lorg/conscrypt/HpkeSuite$AEAD;->AES_256_GCM:Lorg/conscrypt/HpkeSuite$AEAD;
-
     .line 10
+    move-result-object v0
+
     .line 11
-    const/4 v2, 0x1
-
-    .line 12
-    aput-object v1, v0, v2
-
-    .line 13
-    .line 14
-    sget-object v1, Lorg/conscrypt/HpkeSuite$AEAD;->CHACHA20POLY1305:Lorg/conscrypt/HpkeSuite$AEAD;
-
-    .line 15
-    .line 16
-    const/4 v2, 0x2
-
-    .line 17
-    aput-object v1, v0, v2
-
-    .line 18
-    .line 19
     return-object v0
 .end method
 
@@ -296,7 +276,7 @@
 
     .line 22
     .line 23
-    invoke-static {p0, v0}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 24
     .line 25
@@ -304,7 +284,7 @@
     move-result-object p0
 
     .line 27
-    invoke-static {p0}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 28
     .line 29
@@ -364,29 +344,29 @@
 
 # virtual methods
 .method public getId()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->id:I
+    iget p0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->id:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getKeyLength()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->nk:I
+    iget p0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->nk:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getNk()I
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -396,14 +376,14 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public getNn()I
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -413,43 +393,43 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public getNonceLength()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->nn:I
+    iget p0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->nn:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getNt()I
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->nt:I
+    iget p0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->nt:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getTagLength()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->nt:I
+    iget p0, p0, Lorg/conscrypt/HpkeSuite$AEAD;->nt:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

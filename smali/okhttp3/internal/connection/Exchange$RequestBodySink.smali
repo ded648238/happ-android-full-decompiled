@@ -1,6 +1,6 @@
 .class final Lokhttp3/internal/connection/Exchange$RequestBodySink;
-.super Lo42;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lff2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -19,24 +19,24 @@
     }
     d2 = {
         "Lokhttp3/internal/connection/Exchange$RequestBodySink;",
-        "Lo42;",
-        "Lpb6;",
+        "Lff2;",
+        "Lqy6;",
         "delegate",
         "",
         "contentLength",
         "<init>",
-        "(Lokhttp3/internal/connection/Exchange;Lpb6;J)V",
+        "(Lokhttp3/internal/connection/Exchange;Lqy6;J)V",
         "Ljava/io/IOException;",
         "E",
         "e",
         "complete",
         "(Ljava/io/IOException;)Ljava/io/IOException;",
-        "Lf50;",
+        "Ll70;",
         "source",
         "byteCount",
-        "Lbh7;",
+        "Lr98;",
         "write",
-        "(Lf50;J)V",
+        "(Ll70;J)V",
         "flush",
         "()V",
         "close",
@@ -71,12 +71,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lokhttp3/internal/connection/Exchange;Lpb6;J)V
+.method public constructor <init>(Lokhttp3/internal/connection/Exchange;Lqy6;J)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lpb6;",
+            "Lqy6;",
             "J)V"
         }
     .end annotation
@@ -91,7 +91,7 @@
 
     .line 5
     .line 6
-    invoke-direct {p0, p2}, Lo42;-><init>(Lpb6;)V
+    invoke-direct {p0, p2}, Lff2;-><init>(Lqy6;)V
 
     .line 7
     .line 8
@@ -155,16 +155,16 @@
     .line 17
     .line 18
     .line 19
-    move-result-object p1
+    move-result-object p0
 
     .line 20
-    return-object p1
+    return-object p0
 .end method
 
 
 # virtual methods
 .method public close()V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -199,11 +199,11 @@
 
     .line 12
     .line 13
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 14
     .line 15
-    if-eqz v4, :cond_2
+    if-eqz v2, :cond_2
 
     .line 16
     .line 17
@@ -211,11 +211,11 @@
 
     .line 18
     .line 19
-    cmp-long v4, v2, v0
+    cmp-long v0, v2, v0
 
     .line 20
     .line 21
-    if-nez v4, :cond_1
+    if-nez v0, :cond_1
 
     .line 22
     .line 23
@@ -223,26 +223,26 @@
 
     .line 24
     :cond_1
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 25
     .line 26
-    const-string v1, "unexpected end of stream"
+    const-string v0, "unexpected end of stream"
 
     .line 27
     .line 28
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 29
     .line 30
     .line 31
-    throw v0
+    throw p0
 
     .line 32
     :cond_2
     :goto_0
     :try_start_0
-    invoke-super {p0}, Lo42;->close()V
+    invoke-super {p0}, Lff2;->close()V
 
     .line 33
     .line 34
@@ -269,10 +269,10 @@
     .line 42
     .line 43
     .line 44
-    move-result-object v0
+    move-result-object p0
 
     .line 45
-    throw v0
+    throw p0
 .end method
 
 .method public flush()V
@@ -285,7 +285,7 @@
 
     .line 1
     :try_start_0
-    invoke-super {p0}, Lo42;->flush()V
+    invoke-super {p0}, Lff2;->flush()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -304,14 +304,14 @@
     .line 7
     .line 8
     .line 9
-    move-result-object v0
+    move-result-object p0
 
     .line 10
-    throw v0
+    throw p0
 .end method
 
-.method public write(Lf50;J)V
-    .locals 5
+.method public write(Ll70;J)V
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -340,11 +340,11 @@
 
     .line 11
     .line 12
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 13
     .line 14
-    if-eqz v4, :cond_1
+    if-eqz v2, :cond_1
 
     .line 15
     .line 16
@@ -355,11 +355,11 @@
     add-long/2addr v2, p2
 
     .line 19
-    cmp-long v4, v2, v0
+    cmp-long v0, v2, v0
 
     .line 20
     .line 21
-    if-gtz v4, :cond_0
+    if-gtz v0, :cond_0
 
     .line 22
     .line 23
@@ -382,47 +382,47 @@
     add-long/2addr v2, p2
 
     .line 31
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-instance p0, Ljava/lang/StringBuilder;
 
     .line 32
     .line 33
-    const-string p3, "expected "
+    const-string p2, "expected "
 
     .line 34
     .line 35
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 36
     .line 37
     .line 38
-    invoke-virtual {p2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 39
     .line 40
     .line 41
-    const-string p3, " bytes but received "
+    const-string p2, " bytes but received "
 
     .line 42
     .line 43
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 44
     .line 45
     .line 46
-    invoke-virtual {p2, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 47
     .line 48
     .line 49
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 50
     .line 51
     .line 52
-    move-result-object p2
+    move-result-object p0
 
     .line 53
-    invoke-direct {p1, p2}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 54
     .line 55
@@ -433,7 +433,7 @@
     :cond_1
     :goto_0
     :try_start_0
-    invoke-super {p0, p1, p2, p3}, Lo42;->write(Lf50;J)V
+    invoke-super {p0, p1, p2, p3}, Lff2;->write(Ll70;J)V
 
     .line 58
     .line 59
@@ -463,18 +463,18 @@
     .line 68
     .line 69
     .line 70
-    move-result-object p1
+    move-result-object p0
 
     .line 71
-    throw p1
+    throw p0
 
     .line 72
     :cond_2
-    const-string p1, "closed"
+    const-string p0, "closed"
 
     .line 73
     .line 74
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 75
     .line 76

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/RealCall;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/Call;
@@ -29,14 +29,14 @@
         "forWebSocket",
         "<init>",
         "(Lokhttp3/OkHttpClient;Lokhttp3/Request;Z)V",
-        "Lms;",
+        "Liu;",
         "timeout",
-        "()Lms;",
+        "()Liu;",
         "clone",
         "()Lokhttp3/internal/connection/RealCall;",
         "request",
         "()Lokhttp3/Request;",
-        "Lbh7;",
+        "Lr98;",
         "cancel",
         "()V",
         "isCanceled",
@@ -289,7 +289,7 @@
 
     .line 47
     .line 48
-    invoke-virtual {p2, v0, v1, p1}, Lo47;->timeout(JLjava/util/concurrent/TimeUnit;)Lo47;
+    invoke-virtual {p2, v0, v1, p1}, Lax7;->timeout(JLjava/util/concurrent/TimeUnit;)Lax7;
 
     .line 49
     .line 50
@@ -405,7 +405,7 @@
 
     .line 22
     .line 23
-    invoke-static {p1, v0, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 24
     .line 25
@@ -448,22 +448,22 @@
     .line 41
     .line 42
     .line 43
-    move-result-object p1
+    move-result-object p0
 
     .line 44
-    invoke-virtual {p1}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     .line 45
     .line 46
     .line 47
-    move-result-object p1
+    move-result-object p0
 
     .line 48
-    const-string v0, " MUST NOT hold lock on "
+    const-string p1, " MUST NOT hold lock on "
 
     .line 49
     .line 50
-    invoke-static {p1, v0, v2}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, p1, v2}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 51
     .line 52
@@ -529,11 +529,11 @@
 
     .line 78
     :cond_6
-    const-string p1, "Check failed."
+    const-string p0, "Check failed."
 
     .line 79
     .line 80
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 81
     .line 82
@@ -542,13 +542,13 @@
 
     .line 84
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 85
     monitor-exit v2
 
     .line 86
-    throw p1
+    throw p0
 
     .line 87
     :cond_7
@@ -805,11 +805,11 @@
     move-result-object v12
 
     .line 79
-    iget-object p1, p0, Lokhttp3/internal/connection/RealCall;->client:Lokhttp3/OkHttpClient;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->client:Lokhttp3/OkHttpClient;
 
     .line 80
     .line 81
-    invoke-virtual {p1}, Lokhttp3/OkHttpClient;->proxySelector()Ljava/net/ProxySelector;
+    invoke-virtual {p0}, Lokhttp3/OkHttpClient;->proxySelector()Ljava/net/ProxySelector;
 
     .line 82
     .line 83
@@ -826,7 +826,7 @@
 .end method
 
 .method private final timeoutExit(Ljava/io/IOException;)Ljava/io/IOException;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -848,19 +848,19 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->timeout:Lokhttp3/internal/connection/RealCall$timeout$1;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->timeout:Lokhttp3/internal/connection/RealCall$timeout$1;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Lms;->exit()Z
+    invoke-virtual {p0}, Liu;->exit()Z
 
     .line 9
     .line 10
     .line 11
-    move-result v0
+    move-result p0
 
     .line 12
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 13
     .line 14
@@ -869,15 +869,15 @@
 
     .line 15
     :cond_1
-    new-instance v0, Ljava/io/InterruptedIOException;
+    new-instance p0, Ljava/io/InterruptedIOException;
 
     .line 16
     .line 17
-    const-string v1, "timeout"
+    const-string v0, "timeout"
 
     .line 18
     .line 19
-    invoke-direct {v0, v1}, Ljava/io/InterruptedIOException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/io/InterruptedIOException;-><init>(Ljava/lang/String;)V
 
     .line 20
     .line 21
@@ -886,13 +886,13 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 25
     .line 26
     .line 27
     :cond_2
-    return-object v0
+    return-object p0
 .end method
 
 .method private final toLoggableString()Ljava/lang/String;
@@ -978,10 +978,10 @@
     .line 38
     .line 39
     .line 40
-    move-result-object v1
+    move-result-object p0
 
     .line 41
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 42
     .line 43
@@ -991,10 +991,10 @@
     .line 45
     .line 46
     .line 47
-    move-result-object v0
+    move-result-object p0
 
     .line 48
-    return-object v0
+    return-object p0
 .end method
 
 
@@ -1037,22 +1037,22 @@
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    move-result-object p0
 
     .line 19
-    invoke-virtual {v0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v0
+    move-result-object p0
 
     .line 23
-    const-string v1, " MUST hold lock on "
+    const-string v0, " MUST hold lock on "
 
     .line 24
     .line 25
-    invoke-static {v0, v1, p1}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, v0, p1}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -1104,11 +1104,11 @@
 
     .line 50
     :cond_2
-    const-string p1, "Check failed."
+    const-string p0, "Check failed."
 
     .line 51
     .line 52
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 53
     .line 54
@@ -1180,29 +1180,29 @@
 .end method
 
 .method public bridge synthetic clone()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 14
     invoke-virtual {p0}, Lokhttp3/internal/connection/RealCall;->clone()Lokhttp3/internal/connection/RealCall;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic clone()Lokhttp3/Call;
-    .locals 1
+    .locals 0
 
     .line 13
     invoke-virtual {p0}, Lokhttp3/internal/connection/RealCall;->clone()Lokhttp3/internal/connection/RealCall;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public clone()Lokhttp3/internal/connection/RealCall;
-    .locals 4
+    .locals 3
 
     .line 1
     new-instance v0, Lokhttp3/internal/connection/RealCall;
@@ -1217,11 +1217,11 @@
 
     .line 6
     .line 7
-    iget-boolean v3, p0, Lokhttp3/internal/connection/RealCall;->forWebSocket:Z
+    iget-boolean p0, p0, Lokhttp3/internal/connection/RealCall;->forWebSocket:Z
 
     .line 8
     .line 9
-    invoke-direct {v0, v1, v2, v3}, Lokhttp3/internal/connection/RealCall;-><init>(Lokhttp3/OkHttpClient;Lokhttp3/Request;Z)V
+    invoke-direct {v0, v1, v2, p0}, Lokhttp3/internal/connection/RealCall;-><init>(Lokhttp3/OkHttpClient;Lokhttp3/Request;Z)V
 
     .line 10
     .line 11
@@ -1295,11 +1295,11 @@
 
     .line 32
     :cond_0
-    const-string p1, "Already Executed"
+    const-string p0, "Already Executed"
 
     .line 33
     .line 34
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 35
     .line 36
@@ -1446,11 +1446,11 @@
 
     .line 60
     :cond_3
-    const-string p1, "Check failed."
+    const-string p0, "Check failed."
 
     .line 61
     .line 62
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 63
     .line 64
@@ -1488,7 +1488,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v0}, Lms;->enter()V
+    invoke-virtual {v0}, Liu;->enter()V
 
     .line 14
     .line 15
@@ -1571,19 +1571,19 @@
 
     .line 53
     :cond_0
-    const-string v0, "Already Executed"
+    const-string p0, "Already Executed"
 
     .line 54
     .line 55
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 56
     .line 57
     .line 58
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 59
-    return-object v0
+    return-object p0
 .end method
 
 .method public final exitNetworkInterceptorExchange$okhttp(Z)V
@@ -1666,80 +1666,80 @@
 .end method
 
 .method public final getClient()Lokhttp3/OkHttpClient;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->client:Lokhttp3/OkHttpClient;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->client:Lokhttp3/OkHttpClient;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getConnection()Lokhttp3/internal/connection/RealConnection;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->connection:Lokhttp3/internal/connection/RealConnection;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->connection:Lokhttp3/internal/connection/RealConnection;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getConnectionToCancel()Lokhttp3/internal/connection/RealConnection;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->connectionToCancel:Lokhttp3/internal/connection/RealConnection;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->connectionToCancel:Lokhttp3/internal/connection/RealConnection;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getEventListener$okhttp()Lokhttp3/EventListener;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->eventListener:Lokhttp3/EventListener;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->eventListener:Lokhttp3/EventListener;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getForWebSocket()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/connection/RealCall;->forWebSocket:Z
+    iget-boolean p0, p0, Lokhttp3/internal/connection/RealCall;->forWebSocket:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getInterceptorScopedExchange$okhttp()Lokhttp3/internal/connection/Exchange;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->interceptorScopedExchange:Lokhttp3/internal/connection/Exchange;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->interceptorScopedExchange:Lokhttp3/internal/connection/Exchange;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getOriginalRequest()Lokhttp3/Request;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->originalRequest:Lokhttp3/Request;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->originalRequest:Lokhttp3/Request;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getResponseWithInterceptorChain$okhttp()Lokhttp3/Response;
@@ -1772,7 +1772,7 @@
     move-result-object v0
 
     .line 12
-    invoke-static {v2, v0}, Lsm0;->i0(Ljava/util/Collection;Ljava/lang/Iterable;)V
+    invoke-static {v2, v0}, Lyt0;->J0(Ljava/util/Collection;Ljava/lang/Iterable;)V
 
     .line 13
     .line 14
@@ -1876,7 +1876,7 @@
     move-result-object v0
 
     .line 68
-    invoke-static {v2, v0}, Lsm0;->i0(Ljava/util/Collection;Ljava/lang/Iterable;)V
+    invoke-static {v2, v0}, Lyt0;->J0(Ljava/util/Collection;Ljava/lang/Iterable;)V
 
     .line 69
     .line 70
@@ -1958,14 +1958,14 @@
     .line 107
     .line 108
     .line 109
-    const/4 v1, 0x0
+    const/4 p0, 0x0
 
     .line 110
     const/4 v2, 0x0
 
     .line 111
     :try_start_0
-    iget-object v3, p0, Lokhttp3/internal/connection/RealCall;->originalRequest:Lokhttp3/Request;
+    iget-object v3, v1, Lokhttp3/internal/connection/RealCall;->originalRequest:Lokhttp3/Request;
 
     .line 112
     .line 113
@@ -1977,7 +1977,7 @@
     move-result-object v0
 
     .line 117
-    invoke-virtual {p0}, Lokhttp3/internal/connection/RealCall;->isCanceled()Z
+    invoke-virtual {v1}, Lokhttp3/internal/connection/RealCall;->isCanceled()Z
 
     .line 118
     .line 119
@@ -1992,7 +1992,7 @@
 
     .line 122
     .line 123
-    invoke-virtual {p0, v1}, Lokhttp3/internal/connection/RealCall;->noMoreExchanges$okhttp(Ljava/io/IOException;)Ljava/io/IOException;
+    invoke-virtual {v1, p0}, Lokhttp3/internal/connection/RealCall;->noMoreExchanges$okhttp(Ljava/io/IOException;)Ljava/io/IOException;
 
     .line 124
     .line 125
@@ -2041,7 +2041,7 @@
 
     .line 142
     :try_start_2
-    invoke-virtual {p0, v0}, Lokhttp3/internal/connection/RealCall;->noMoreExchanges$okhttp(Ljava/io/IOException;)Ljava/io/IOException;
+    invoke-virtual {v1, v0}, Lokhttp3/internal/connection/RealCall;->noMoreExchanges$okhttp(Ljava/io/IOException;)Ljava/io/IOException;
 
     .line 143
     .line 144
@@ -2064,7 +2064,7 @@
 
     .line 151
     .line 152
-    invoke-virtual {p0, v1}, Lokhttp3/internal/connection/RealCall;->noMoreExchanges$okhttp(Ljava/io/IOException;)Ljava/io/IOException;
+    invoke-virtual {v1, p0}, Lokhttp3/internal/connection/RealCall;->noMoreExchanges$okhttp(Ljava/io/IOException;)Ljava/io/IOException;
 
     .line 153
     .line 154
@@ -2177,11 +2177,11 @@
     monitor-exit p0
 
     .line 47
-    iget-boolean p1, p0, Lokhttp3/internal/connection/RealCall;->canceled:Z
+    iget-boolean p0, p0, Lokhttp3/internal/connection/RealCall;->canceled:Z
 
     .line 48
     .line 49
-    if-nez p1, :cond_0
+    if-nez p0, :cond_0
 
     .line 50
     .line 51
@@ -2189,19 +2189,19 @@
 
     .line 52
     :cond_0
-    const-string p1, "Canceled"
+    const-string p0, "Canceled"
 
     .line 53
     .line 54
-    invoke-static {p1}, Li62;->h(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->i(Ljava/lang/String;)V
 
     .line 55
     .line 56
     .line 57
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 58
-    return-object p1
+    return-object p0
 
     .line 59
     :catchall_0
@@ -2283,33 +2283,33 @@
 .end method
 
 .method public isCanceled()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/connection/RealCall;->canceled:Z
+    iget-boolean p0, p0, Lokhttp3/internal/connection/RealCall;->canceled:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public isExecuted()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->executed:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->executed:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final messageDone$okhttp(Lokhttp3/internal/connection/Exchange;ZZLjava/io/IOException;)Ljava/io/IOException;
@@ -2431,14 +2431,14 @@
 
     .line 46
     .line 47
-    const/4 v0, 0x1
+    move v0, p3
 
     .line 48
     goto :goto_1
 
     .line 49
     :cond_5
-    const/4 v0, 0x0
+    move v0, p1
 
     .line 50
     :goto_1
@@ -2464,7 +2464,7 @@
 
     .line 59
     .line 60
-    const/4 p1, 0x1
+    move p1, p3
 
     .line 61
     :cond_6
@@ -2485,7 +2485,7 @@
 
     .line 66
     :cond_7
-    const/4 p2, 0x0
+    move p2, p1
 
     .line 67
     :goto_3
@@ -2526,10 +2526,10 @@
     .line 83
     .line 84
     .line 85
-    move-result-object p1
+    move-result-object p0
 
     .line 86
-    return-object p1
+    return-object p0
 
     .line 87
     :cond_9
@@ -2605,45 +2605,48 @@
     .line 25
     .line 26
     .line 27
-    move-result-object p1
+    move-result-object p0
 
     .line 28
+    return-object p0
+
+    .line 29
     :cond_1
     return-object p1
 
-    .line 29
+    .line 30
     :goto_1
     monitor-exit p0
 
-    .line 30
+    .line 31
     throw p1
 .end method
 
 .method public final redactedUrl$okhttp()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->originalRequest:Lokhttp3/Request;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->originalRequest:Lokhttp3/Request;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
+    invoke-virtual {p0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Lokhttp3/HttpUrl;->redact()Ljava/lang/String;
+    invoke-virtual {p0}, Lokhttp3/HttpUrl;->redact()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final releaseConnectionNoEvents$okhttp()Ljava/net/Socket;
@@ -2691,22 +2694,22 @@
     .line 19
     .line 20
     .line 21
-    move-result-object v1
+    move-result-object p0
 
     .line 22
-    invoke-virtual {v1}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     .line 23
     .line 24
     .line 25
-    move-result-object v1
+    move-result-object p0
 
     .line 26
-    const-string v3, " MUST hold lock on "
+    const-string v1, " MUST hold lock on "
 
     .line 27
     .line 28
-    invoke-static {v1, v3, v0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, v1, v0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 29
     .line 30
@@ -2771,7 +2774,7 @@
     move-result-object v5
 
     .line 58
-    invoke-static {v5, p0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, p0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 59
     .line 60
@@ -2795,7 +2798,7 @@
 
     .line 68
     :cond_3
-    const/4 v4, -0x1
+    move v4, v6
 
     .line 69
     :goto_2
@@ -2837,19 +2840,19 @@
     .line 87
     .line 88
     .line 89
-    iget-object v1, p0, Lokhttp3/internal/connection/RealCall;->connectionPool:Lokhttp3/internal/connection/RealConnectionPool;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->connectionPool:Lokhttp3/internal/connection/RealConnectionPool;
 
     .line 90
     .line 91
-    invoke-virtual {v1, v0}, Lokhttp3/internal/connection/RealConnectionPool;->connectionBecameIdle(Lokhttp3/internal/connection/RealConnection;)Z
+    invoke-virtual {p0, v0}, Lokhttp3/internal/connection/RealConnectionPool;->connectionBecameIdle(Lokhttp3/internal/connection/RealConnection;)Z
 
     .line 92
     .line 93
     .line 94
-    move-result v1
+    move-result p0
 
     .line 95
-    if-eqz v1, :cond_4
+    if-eqz p0, :cond_4
 
     .line 96
     .line 97
@@ -2858,10 +2861,10 @@
     .line 98
     .line 99
     .line 100
-    move-result-object v0
+    move-result-object p0
 
     .line 101
-    return-object v0
+    return-object p0
 
     .line 102
     :cond_4
@@ -2869,11 +2872,11 @@
 
     .line 103
     :cond_5
-    const-string v0, "Check failed."
+    const-string p0, "Check failed."
 
     .line 104
     .line 105
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 106
     .line 107
@@ -2882,38 +2885,38 @@
 .end method
 
 .method public request()Lokhttp3/Request;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->originalRequest:Lokhttp3/Request;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->originalRequest:Lokhttp3/Request;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final retryAfterFailure()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->exchangeFinder:Lokhttp3/internal/connection/ExchangeFinder;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->exchangeFinder:Lokhttp3/internal/connection/ExchangeFinder;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {v0}, Lokhttp3/internal/connection/ExchangeFinder;->retryAfterFailure()Z
+    invoke-virtual {p0}, Lokhttp3/internal/connection/ExchangeFinder;->retryAfterFailure()Z
 
     .line 7
     .line 8
     .line 9
-    move-result v0
+    move-result p0
 
     .line 10
-    return v0
+    return p0
 .end method
 
 .method public final setConnectionToCancel(Lokhttp3/internal/connection/RealConnection;)V
@@ -2927,28 +2930,28 @@
     return-void
 .end method
 
-.method public timeout()Lms;
-    .locals 1
-
-    .line 6
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->timeout:Lokhttp3/internal/connection/RealCall$timeout$1;
-
-    return-object v0
-.end method
-
-.method public bridge synthetic timeout()Lo47;
-    .locals 1
+.method public bridge synthetic timeout()Lax7;
+    .locals 0
 
     .line 1
-    invoke-virtual {p0}, Lokhttp3/internal/connection/RealCall;->timeout()Lms;
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealCall;->timeout()Liu;
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
+.end method
+
+.method public timeout()Liu;
+    .locals 0
+
+    .line 6
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->timeout:Lokhttp3/internal/connection/RealCall$timeout$1;
+
+    return-object p0
 .end method
 
 .method public final timeoutEarlyExit()V
@@ -2970,11 +2973,11 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lokhttp3/internal/connection/RealCall;->timeout:Lokhttp3/internal/connection/RealCall$timeout$1;
+    iget-object p0, p0, Lokhttp3/internal/connection/RealCall;->timeout:Lokhttp3/internal/connection/RealCall$timeout$1;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, Lms;->exit()Z
+    invoke-virtual {p0}, Liu;->exit()Z
 
     .line 11
     .line 12
@@ -2983,11 +2986,11 @@
 
     .line 14
     :cond_0
-    const-string v0, "Check failed."
+    const-string p0, "Check failed."
 
     .line 15
     .line 16
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 17
     .line 18

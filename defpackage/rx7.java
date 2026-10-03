@@ -1,26 +1,27 @@
 package defpackage;
 
-import su.happ.proxyutility.dto.ConnectionOwner;
-import su.happ.proxyutility.service.XRayVpnService;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class rx7 {
+    public static final rx7 X;
+    public static final rx7 Y;
+    public static final /* synthetic */ rx7[] Z;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class rx7 implements x72 {
-    public final /* synthetic */ XRayVpnService Q;
+    static {
+        rx7 rx7Var = new rx7("On", 0);
+        X = rx7Var;
+        rx7 rx7Var2 = new rx7("Off", 1);
+        Y = rx7Var2;
+        Z = new rx7[]{rx7Var, rx7Var2, new rx7("Indeterminate", 2)};
+    }
 
-    @Override // defpackage.x72
-    public final Object H(Object obj, Object obj2, Object obj3, Object obj4, Object obj5) {
-        int iIntValue = ((Integer) obj).intValue();
-        String str = (String) obj2;
-        int iIntValue2 = ((Integer) obj3).intValue();
-        String str2 = (String) obj4;
-        int iIntValue3 = ((Integer) obj5).intValue();
-        int i = XRayVpnService.m0;
-        str.getClass();
-        str2.getClass();
-        XRayVpnService xRayVpnService = this.Q;
-        ConnectionOwner connectionOwnerN = xRayVpnService.n(str, iIntValue, iIntValue2, iIntValue3, str2);
-        (connectionOwnerN != null ? Integer.valueOf(connectionOwnerN.getUserId()) : "null").toString();
-        return Boolean.valueOf(xRayVpnService.n(str, iIntValue, iIntValue2, iIntValue3, str2) == null);
+    public static rx7 valueOf(String str) {
+        return (rx7) Enum.valueOf(rx7.class, str);
+    }
+
+    public static rx7[] values() {
+        return (rx7[]) Z.clone();
     }
 }

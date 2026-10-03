@@ -1,14 +1,14 @@
 .class public final Lio/sentry/c;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final i:Lig;
+.field public static final i:Lih;
 
 
 # instance fields
-.field public final a:Lj$/util/concurrent/ConcurrentHashMap;
+.field public final a:Ljava/util/concurrent/ConcurrentHashMap;
 
 .field public final b:Lio/sentry/util/a;
 
@@ -30,19 +30,19 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lig;
+    new-instance v0, Lih;
 
     .line 2
     .line 3
-    const/4 v1, 0x4
+    const/4 v1, 0x3
 
     .line 4
-    invoke-direct {v0, v1}, Lig;-><init>(I)V
+    invoke-direct {v0, v1}, Lih;-><init>(I)V
 
     .line 5
     .line 6
     .line 7
-    sput-object v0, Lio/sentry/c;->i:Lig;
+    sput-object v0, Lio/sentry/c;->i:Lih;
 
     .line 8
     .line 9
@@ -53,9 +53,9 @@
     .locals 7
 
     .line 27
-    new-instance v1, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v1, Ljava/util/concurrent/ConcurrentHashMap;
 
-    invoke-direct {v1}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     const/4 v4, 0x0
 
@@ -69,12 +69,12 @@
 
     move-object v6, p1
 
-    invoke-direct/range {v0 .. v6}, Lio/sentry/c;-><init>(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;ZLio/sentry/ILogger;)V
+    invoke-direct/range {v0 .. v6}, Lio/sentry/c;-><init>(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;ZLio/sentry/ILogger;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;ZLio/sentry/ILogger;)V
+.method public constructor <init>(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;ZLio/sentry/ILogger;)V
     .locals 1
 
     .line 1
@@ -87,7 +87,7 @@
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 7
     .line 8
@@ -96,7 +96,7 @@
 
     .line 10
     .line 11
-    iput-object p1, p0, Lio/sentry/c;->a:Lj$/util/concurrent/ConcurrentHashMap;
+    iput-object p1, p0, Lio/sentry/c;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 12
     .line 13
@@ -130,15 +130,15 @@
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;ZLio/sentry/ILogger;)Lio/sentry/c;
-    .locals 19
+.method public static a(Lio/sentry/ILogger;Ljava/lang/String;Z)Lio/sentry/c;
+    .locals 18
 
     .line 1
-    move-object/from16 v1, p0
+    move-object/from16 v6, p0
 
     .line 2
     .line 3
-    move-object/from16 v6, p2
+    move-object/from16 v1, p1
 
     .line 4
     .line 5
@@ -150,11 +150,11 @@
 
     .line 8
     .line 9
-    new-instance v3, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v3, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 10
     .line 11
-    invoke-direct {v3}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v3}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     .line 12
     .line 13
@@ -171,7 +171,7 @@
     const/4 v5, 0x0
 
     .line 20
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_8
 
     .line 21
     .line 22
@@ -187,34 +187,34 @@
     move-result-object v8
 
     .line 27
-    array-length v10, v8
+    array-length v9, v8
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
     .line 28
-    const/4 v11, 0x0
+    move v10, v5
 
     .line 29
-    const/4 v12, 0x0
+    move v11, v10
 
     .line 30
-    const/4 v13, 0x0
+    const/4 v12, 0x0
 
     .line 31
-    const/4 v14, 0x0
+    const/4 v13, 0x0
 
     .line 32
     :goto_0
-    if-ge v11, v10, :cond_6
+    if-ge v10, v9, :cond_7
 
     .line 33
     .line 34
     :try_start_1
-    aget-object v15, v8, v11
+    aget-object v14, v8, v10
 
     .line 35
     .line 36
-    invoke-virtual {v15}, Ljava/lang/String;->trim()Ljava/lang/String;
+    invoke-virtual {v14}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 37
     .line 38
@@ -222,21 +222,21 @@
     move-result-object v0
 
     .line 40
-    const-string v7, "sentry-"
+    const-string v15, "sentry-"
 
     .line 41
     .line 42
-    invoke-virtual {v0, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {v0, v15}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     .line 43
     .line 44
     .line 45
     move-result v0
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
     .line 46
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
     .line 47
     .line 48
@@ -245,7 +245,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {v15, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+    invoke-virtual {v14, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     .line 51
     .line 52
@@ -253,35 +253,35 @@
     move-result v0
 
     .line 54
-    invoke-virtual {v15, v5, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {v14, v5, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     .line 55
     .line 56
     .line 57
-    move-result-object v7
+    move-result-object v15
 
     .line 58
-    invoke-virtual {v7}, Ljava/lang/String;->trim()Ljava/lang/String;
+    invoke-virtual {v15}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 59
     .line 60
     .line 61
-    move-result-object v7
+    move-result-object v15
 
     .line 62
-    invoke-static {v7, v2}, Ljava/net/URLDecoder;->decode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v15, v2}, Ljava/net/URLDecoder;->decode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 63
     .line 64
     .line 65
-    move-result-object v9
+    move-result-object v7
 
     .line 66
     add-int/lit8 v0, v0, 0x1
 
     .line 67
     .line 68
-    invoke-virtual {v15, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {v14, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     .line 69
     .line 70
@@ -303,20 +303,23 @@
     .line 78
     .line 79
     move-result-object v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 80
+    :try_start_3
     const-string v5, "sentry-sample_rate"
 
     .line 81
     .line 82
-    invoke-virtual {v5, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 83
     .line 84
     .line 85
     move-result v5
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     .line 86
     const-string v1, "sentry-sample_rand"
@@ -331,16 +334,16 @@
 
     .line 91
     .line 92
-    :try_start_3
+    :try_start_4
     invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
     .line 93
     .line 94
     .line 95
-    move-result-wide v17
+    move-result-wide v16
 
     .line 96
-    invoke-static/range {v17 .. v18}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-static/range {v16 .. v17}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 97
     .line 98
@@ -351,7 +354,7 @@
     const/4 v5, 0x0
 
     .line 101
-    invoke-static {v0, v5}, Lio/sentry/util/b;->l(Ljava/lang/Double;Z)Z
+    invoke-static {v0, v5}, Lio/sentry/util/c;->n(Ljava/lang/Double;Z)Z
 
     .line 102
     .line 103
@@ -363,333 +366,343 @@
 
     .line 106
     .line 107
-    invoke-static/range {v17 .. v18}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-static/range {v16 .. v17}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 108
     .line 109
     .line 110
     move-result-object v0
-    :try_end_3
-    .catch Ljava/lang/NumberFormatException; {:try_start_3 .. :try_end_3} :catch_0
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    :try_end_4
+    .catch Ljava/lang/NumberFormatException; {:try_start_4 .. :try_end_4} :catch_0
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     .line 111
-    move-object v13, v0
+    move-object v12, v0
 
     .line 112
-    goto :goto_1
-
-    .line 113
-    :catch_0
-    :cond_0
-    const/4 v13, 0x0
-
-    .line 114
-    goto :goto_1
-
-    .line 115
-    :cond_1
-    :try_start_4
-    invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 116
-    .line 117
-    .line 118
-    move-result v5
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    .line 119
-    if-eqz v5, :cond_3
-
-    .line 120
-    .line 121
-    if-eqz v0, :cond_2
-
-    .line 122
-    .line 123
-    :try_start_5
-    invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-wide v17
-
-    .line 127
-    invoke-static/range {v17 .. v18}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    .line 128
-    .line 129
-    .line 130
-    move-result-object v0
-
-    .line 131
-    const/4 v5, 0x0
-
-    .line 132
-    invoke-static {v0, v5}, Lio/sentry/util/b;->l(Ljava/lang/Double;Z)Z
-
-    .line 133
-    .line 134
-    .line 135
-    move-result v0
-
-    .line 136
-    if-eqz v0, :cond_2
-
-    .line 137
-    .line 138
-    invoke-static/range {v17 .. v18}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    .line 139
-    .line 140
-    .line 141
-    move-result-object v0
-    :try_end_5
-    .catch Ljava/lang/NumberFormatException; {:try_start_5 .. :try_end_5} :catch_1
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
-
-    .line 142
-    move-object v14, v0
-
-    .line 143
-    goto :goto_1
-
-    .line 144
-    :catch_1
-    :cond_2
-    const/4 v14, 0x0
-
-    .line 145
-    goto :goto_1
-
-    .line 146
-    :cond_3
-    :try_start_6
-    invoke-virtual {v3, v9, v0}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 147
-    .line 148
-    .line 149
-    :goto_1
-    invoke-virtual {v1, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    .line 150
-    .line 151
-    .line 152
-    move-result v0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
-
-    .line 153
-    if-nez v0, :cond_5
-
-    .line 154
-    .line 155
-    const/4 v12, 0x1
-
-    .line 156
     goto :goto_2
 
+    .line 113
+    :goto_1
+    const/4 v5, 0x0
+
+    .line 114
+    goto :goto_4
+
+    .line 115
+    :catch_0
+    :cond_0
+    const/4 v12, 0x0
+
+    .line 116
+    :goto_2
+    const/4 v5, 0x0
+
+    .line 117
+    goto :goto_3
+
+    .line 118
+    :cond_1
+    :try_start_5
+    invoke-virtual {v1, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 119
+    .line 120
+    .line 121
+    move-result v5
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+
+    .line 122
+    if-eqz v5, :cond_4
+
+    .line 123
+    .line 124
+    if-eqz v0, :cond_2
+
+    .line 125
+    .line 126
+    :try_start_6
+    invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+
+    .line 127
+    .line 128
+    .line 129
+    move-result-wide v16
+
+    .line 130
+    invoke-static/range {v16 .. v17}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 131
+    .line 132
+    .line 133
+    move-result-object v0
+    :try_end_6
+    .catch Ljava/lang/NumberFormatException; {:try_start_6 .. :try_end_6} :catch_1
+    .catchall {:try_start_6 .. :try_end_6} :catchall_1
+
+    .line 134
+    const/4 v5, 0x0
+
+    .line 135
+    :try_start_7
+    invoke-static {v0, v5}, Lio/sentry/util/c;->n(Ljava/lang/Double;Z)Z
+
+    .line 136
+    .line 137
+    .line 138
+    move-result v0
+
+    .line 139
+    if-eqz v0, :cond_3
+
+    .line 140
+    .line 141
+    invoke-static/range {v16 .. v17}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-object v0
+    :try_end_7
+    .catch Ljava/lang/NumberFormatException; {:try_start_7 .. :try_end_7} :catch_2
+    .catchall {:try_start_7 .. :try_end_7} :catchall_0
+
+    .line 145
+    move-object v13, v0
+
+    .line 146
+    goto :goto_3
+
+    .line 147
+    :catch_1
+    :cond_2
+    const/4 v5, 0x0
+
+    .line 148
+    :catch_2
+    :cond_3
+    const/4 v13, 0x0
+
+    .line 149
+    goto :goto_3
+
+    .line 150
+    :cond_4
+    const/4 v5, 0x0
+
+    .line 151
+    :try_start_8
+    invoke-virtual {v3, v7, v0}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 152
+    .line 153
+    .line 154
+    :goto_3
+    invoke-virtual {v1, v15}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    .line 155
+    .line 156
     .line 157
-    :catchall_0
-    move-exception v0
+    move-result v0
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     .line 158
-    :try_start_7
-    sget-object v1, Lio/sentry/m5;->ERROR:Lio/sentry/m5;
+    if-nez v0, :cond_6
 
     .line 159
     .line 160
-    const-string v5, "Unable to decode baggage key value pair %s"
+    const/4 v11, 0x1
 
     .line 161
+    goto :goto_5
+
     .line 162
-    const/4 v7, 0x1
+    :catchall_0
+    move-exception v0
 
     .line 163
-    new-array v9, v7, [Ljava/lang/Object;
+    goto :goto_4
 
     .line 164
-    .line 165
-    const/16 v16, 0x0
-
-    .line 166
-    .line 167
-    aput-object v15, v9, v16
-
-    .line 168
-    .line 169
-    invoke-interface {v6, v1, v0, v5, v9}, Lio/sentry/ILogger;->c(Lio/sentry/m5;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 170
-    .line 171
-    .line 172
-    goto :goto_2
-
-    .line 173
     :catchall_1
     move-exception v0
 
+    .line 165
+    goto :goto_1
+
+    .line 166
+    :goto_4
+    :try_start_9
+    sget-object v1, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
+
+    .line 167
+    .line 168
+    const-string v7, "Unable to decode baggage key value pair %s"
+
+    .line 169
+    .line 170
+    filled-new-array {v14}, [Ljava/lang/Object;
+
+    .line 171
+    .line 172
+    .line 173
+    move-result-object v14
+
     .line 174
-    goto :goto_4
+    invoke-interface {v6, v1, v0, v7, v14}, Lio/sentry/ILogger;->c(Lio/sentry/o5;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 175
-    :cond_4
-    if-eqz p1, :cond_5
-
     .line 176
     .line 177
-    invoke-virtual {v15}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    .line 178
-    .line 179
-    .line 180
-    move-result-object v0
-
-    .line 181
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_1
-
-    .line 182
-    .line 183
-    .line 184
-    :cond_5
-    :goto_2
-    add-int/lit8 v11, v11, 0x1
-
-    .line 185
-    .line 186
-    move-object/from16 v1, p0
-
-    .line 187
-    .line 188
-    const/4 v5, 0x0
-
-    .line 189
-    goto/16 :goto_0
-
-    .line 190
-    .line 191
-    :cond_6
-    :goto_3
-    move v5, v12
-
-    .line 192
-    move-object v2, v13
-
-    .line 193
     goto :goto_5
 
-    .line 194
+    .line 178
     :catchall_2
     move-exception v0
 
-    .line 195
-    const/4 v12, 0x0
+    .line 179
+    move v5, v11
 
+    .line 180
+    goto :goto_7
+
+    .line 181
+    :cond_5
+    if-eqz p2, :cond_6
+
+    .line 182
+    .line 183
+    invoke-virtual {v14}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    .line 184
+    .line 185
+    .line 186
+    move-result-object v0
+
+    .line 187
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_2
+
+    .line 188
+    .line 189
+    .line 190
+    :cond_6
+    :goto_5
+    add-int/lit8 v10, v10, 0x1
+
+    .line 191
+    .line 192
+    move-object/from16 v1, p1
+
+    .line 193
+    .line 194
+    goto/16 :goto_0
+
+    .line 195
     .line 196
-    const/4 v13, 0x0
+    :cond_7
+    move v5, v11
 
     .line 197
-    const/4 v14, 0x0
+    :goto_6
+    move-object v2, v12
 
     .line 198
-    :goto_4
-    sget-object v1, Lio/sentry/m5;->ERROR:Lio/sentry/m5;
+    goto :goto_8
 
     .line 199
+    :catchall_3
+    move-exception v0
+
     .line 200
-    const/4 v7, 0x1
+    const/4 v12, 0x0
 
     .line 201
-    new-array v2, v7, [Ljava/lang/Object;
+    const/4 v13, 0x0
 
     .line 202
+    :goto_7
+    sget-object v1, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
+
     .line 203
-    const/16 v16, 0x0
-
     .line 204
+    const-string v2, "Unable to decode baggage header %s"
+
     .line 205
-    aput-object p0, v2, v16
-
     .line 206
-    .line 207
-    const-string v5, "Unable to decode baggage header %s"
+    filled-new-array/range {p1 .. p1}, [Ljava/lang/Object;
 
+    .line 207
     .line 208
     .line 209
-    invoke-interface {v6, v1, v0, v5, v2}, Lio/sentry/ILogger;->c(Lio/sentry/m5;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 210
-    .line 211
-    .line 212
-    goto :goto_3
-
-    .line 213
-    :cond_7
-    const/16 v16, 0x0
-
-    .line 214
-    .line 215
-    const/4 v2, 0x0
-
-    .line 216
-    const/4 v5, 0x0
-
-    .line 217
-    const/4 v14, 0x0
-
-    .line 218
-    :goto_5
-    invoke-virtual {v4}, Ljava/util/ArrayList;->isEmpty()Z
-
-    .line 219
-    .line 220
-    .line 221
-    move-result v0
-
-    .line 222
-    if-eqz v0, :cond_8
-
-    .line 223
-    .line 224
-    const/4 v4, 0x0
-
-    .line 225
-    goto :goto_6
-
-    .line 226
-    :cond_8
-    invoke-static {v4}, Lio/sentry/util/n;->b(Ljava/util/List;)Ljava/lang/String;
-
-    .line 227
-    .line 228
-    .line 229
     move-result-object v7
 
-    .line 230
+    .line 210
+    invoke-interface {v6, v1, v0, v2, v7}, Lio/sentry/ILogger;->c(Lio/sentry/o5;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 211
+    .line 212
+    .line 213
+    goto :goto_6
+
+    .line 214
+    :cond_8
+    const/4 v2, 0x0
+
+    .line 215
+    const/4 v13, 0x0
+
+    .line 216
+    :goto_8
+    invoke-virtual {v4}, Ljava/util/ArrayList;->isEmpty()Z
+
+    .line 217
+    .line 218
+    .line 219
+    move-result v0
+
+    .line 220
+    if-eqz v0, :cond_9
+
+    .line 221
+    .line 222
+    const/4 v4, 0x0
+
+    .line 223
+    goto :goto_9
+
+    .line 224
+    :cond_9
+    invoke-static {v4}, Lio/sentry/util/q;->b(Ljava/util/List;)Ljava/lang/String;
+
+    .line 225
+    .line 226
+    .line 227
+    move-result-object v7
+
+    .line 228
     move-object v4, v7
 
-    .line 231
-    :goto_6
+    .line 229
+    :goto_9
     new-instance v0, Lio/sentry/c;
 
-    .line 232
-    .line 233
+    .line 230
+    .line 231
     move-object v1, v3
 
+    .line 232
+    move-object v3, v13
+
+    .line 233
+    invoke-direct/range {v0 .. v6}, Lio/sentry/c;-><init>(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;ZLio/sentry/ILogger;)V
+
     .line 234
-    move-object v3, v14
-
     .line 235
-    invoke-direct/range {v0 .. v6}, Lio/sentry/c;-><init>(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;ZLio/sentry/ILogger;)V
-
     .line 236
-    .line 237
-    .line 238
     return-object v0
 .end method
 
@@ -700,7 +713,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-static {p0, v0}, Lio/sentry/util/b;->l(Ljava/lang/Double;Z)Z
+    invoke-static {p0, v0}, Lio/sentry/util/c;->n(Ljava/lang/Double;Z)Z
 
     .line 3
     .line 4
@@ -719,7 +732,7 @@
 
     .line 10
     :cond_0
-    sget-object v0, Lio/sentry/c;->i:Lig;
+    sget-object v0, Lio/sentry/c;->i:Lih;
 
     .line 11
     .line 12
@@ -749,26 +762,26 @@
 
 # virtual methods
 .method public final b(Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/c;->a:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object p0, p0, Lio/sentry/c;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    check-cast p1, Ljava/lang/String;
+    check-cast p0, Ljava/lang/String;
 
     .line 8
     .line 9
-    return-object p1
+    return-object p0
 .end method
 
 .method public final d(Ljava/lang/String;Ljava/lang/String;)V
@@ -783,7 +796,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lio/sentry/c;->a:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object p0, p0, Lio/sentry/c;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 6
     .line 7
@@ -791,7 +804,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Lj$/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -800,7 +813,7 @@
 
     .line 13
     :cond_0
-    invoke-virtual {v0, p1, p2}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -809,11 +822,11 @@
     return-void
 .end method
 
-.method public final e(Lio/sentry/protocol/w;Lio/sentry/protocol/w;Lio/sentry/m6;Lio/sentry/v3;Ljava/lang/String;Lio/sentry/protocol/i0;)V
+.method public final e(Lio/sentry/protocol/w;Lio/sentry/protocol/w;Lio/sentry/o6;Lio/sentry/x3;Ljava/lang/String;Lio/sentry/protocol/h0;)V
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lio/sentry/protocol/w;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Lio/sentry/protocol/w;->a()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -830,7 +843,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-virtual {p3}, Lio/sentry/m6;->retrieveParsedDsn()Lio/sentry/c0;
+    invoke-virtual {p3}, Lio/sentry/o6;->retrieveParsedDsn()Lio/sentry/d0;
 
     .line 11
     .line 12
@@ -838,7 +851,7 @@
     move-result-object p1
 
     .line 14
-    iget-object p1, p1, Lio/sentry/c0;->b:Ljava/lang/String;
+    iget-object p1, p1, Lio/sentry/d0;->b:Ljava/lang/String;
 
     .line 15
     .line 16
@@ -851,7 +864,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-virtual {p3}, Lio/sentry/m6;->getRelease()Ljava/lang/String;
+    invoke-virtual {p3}, Lio/sentry/o6;->getRelease()Ljava/lang/String;
 
     .line 22
     .line 23
@@ -868,7 +881,7 @@
     .line 28
     .line 29
     .line 30
-    invoke-virtual {p3}, Lio/sentry/m6;->getEnvironment()Ljava/lang/String;
+    invoke-virtual {p3}, Lio/sentry/o6;->getEnvironment()Ljava/lang/String;
 
     .line 31
     .line 32
@@ -892,7 +905,7 @@
 
     .line 41
     .line 42
-    sget-object v0, Lio/sentry/protocol/i0;->URL:Lio/sentry/protocol/i0;
+    sget-object v0, Lio/sentry/protocol/h0;->URL:Lio/sentry/protocol/h0;
 
     .line 43
     .line 44
@@ -929,7 +942,7 @@
 
     .line 58
     .line 59
-    sget-object p5, Lio/sentry/protocol/w;->R:Lio/sentry/protocol/w;
+    sget-object p5, Lio/sentry/protocol/w;->Y:Lio/sentry/protocol/w;
 
     .line 60
     .line 61
@@ -945,7 +958,7 @@
 
     .line 66
     .line 67
-    invoke-virtual {p2}, Lio/sentry/protocol/w;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Lio/sentry/protocol/w;->a()Ljava/lang/String;
 
     .line 68
     .line 69
@@ -963,7 +976,7 @@
     .line 75
     .line 76
     :cond_1
-    invoke-virtual {p3}, Lio/sentry/m6;->getEffectiveOrgId()Ljava/lang/String;
+    invoke-virtual {p3}, Lio/sentry/o6;->getEffectiveOrgId()Ljava/lang/String;
 
     .line 77
     .line 78
@@ -991,7 +1004,7 @@
 
     .line 89
     :cond_2
-    iget-object p2, p4, Lio/sentry/v3;->b:Ljava/lang/Object;
+    iget-object p2, p4, Lio/sentry/x3;->b:Ljava/lang/Object;
 
     .line 90
     .line 91
@@ -1024,7 +1037,7 @@
 
     .line 103
     :cond_4
-    iget-object p2, p4, Lio/sentry/v3;->a:Ljava/io/Serializable;
+    iget-object p2, p4, Lio/sentry/x3;->a:Ljava/io/Serializable;
 
     .line 104
     .line 105
@@ -1070,7 +1083,7 @@
 
     .line 123
     :cond_6
-    iget-object p1, p4, Lio/sentry/v3;->c:Ljava/lang/Object;
+    iget-object p1, p4, Lio/sentry/x3;->c:Ljava/lang/Object;
 
     .line 124
     .line 125
@@ -1095,7 +1108,7 @@
     return-void
 .end method
 
-.method public final f()Lio/sentry/f7;
+.method public final f()Lio/sentry/h7;
     .locals 14
 
     .line 1
@@ -1146,7 +1159,7 @@
 
     .line 23
     .line 24
-    new-instance v3, Lio/sentry/f7;
+    new-instance v3, Lio/sentry/h7;
 
     .line 25
     .line 26
@@ -1268,16 +1281,16 @@
     move-result-object v13
 
     .line 83
-    invoke-direct/range {v3 .. v13}, Lio/sentry/f7;-><init>(Lio/sentry/protocol/w;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/sentry/protocol/w;Ljava/lang/String;)V
+    invoke-direct/range {v3 .. v13}, Lio/sentry/h7;-><init>(Lio/sentry/protocol/w;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/sentry/protocol/w;Ljava/lang/String;)V
 
     .line 84
     .line 85
     .line 86
-    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 87
     .line 88
-    invoke-direct {v0}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     .line 89
     .line 90
@@ -1286,179 +1299,176 @@
 
     .line 92
     .line 93
-    invoke-virtual {v1}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {v1}, Lio/sentry/util/a;->g()V
 
     .line 94
     .line 95
     .line 96
-    move-result-object v1
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/c;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 97
-    :try_start_0
-    iget-object v2, p0, Lio/sentry/c;->a:Lj$/util/concurrent/ConcurrentHashMap;
-
     .line 98
-    .line 99
-    invoke-virtual {v2}, Lj$/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+    invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
 
+    .line 99
     .line 100
     .line 101
+    move-result-object p0
+
     .line 102
-    move-result-object v2
+    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     .line 103
-    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
     .line 104
     .line 105
-    .line 106
-    move-result-object v2
+    move-result-object p0
 
-    .line 107
+    .line 106
     :cond_1
     :goto_2
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 107
     .line 108
     .line 109
+    move-result v2
+
     .line 110
-    move-result v4
+    if-eqz v2, :cond_2
 
     .line 111
-    if-eqz v4, :cond_2
-
     .line 112
-    .line 113
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 113
     .line 114
     .line 115
+    move-result-object v2
+
     .line 116
-    move-result-object v4
+    check-cast v2, Ljava/util/Map$Entry;
 
     .line 117
-    check-cast v4, Ljava/util/Map$Entry;
-
     .line 118
-    .line 119
-    invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
+    .line 119
     .line 120
     .line 121
-    .line 122
-    move-result-object v5
-
-    .line 123
-    check-cast v5, Ljava/lang/String;
-
-    .line 124
-    .line 125
-    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    .line 126
-    .line 127
-    .line 128
     move-result-object v4
 
-    .line 129
+    .line 122
     check-cast v4, Ljava/lang/String;
 
+    .line 123
+    .line 124
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-object v2
+
+    .line 128
+    check-cast v2, Ljava/lang/String;
+
+    .line 129
     .line 130
+    sget-object v5, Lio/sentry/b;->a:Ljava/util/List;
+
     .line 131
-    sget-object v6, Lio/sentry/b;->a:Ljava/util/List;
-
     .line 132
-    .line 133
-    invoke-interface {v6, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    invoke-interface {v5, v4}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
+    .line 133
     .line 134
     .line 135
+    move-result v5
+
     .line 136
-    move-result v6
+    if-nez v5, :cond_1
 
     .line 137
-    if-nez v6, :cond_1
-
     .line 138
+    if-eqz v2, :cond_1
+
     .line 139
-    if-eqz v4, :cond_1
-
     .line 140
+    const-string v5, "sentry-"
+
     .line 141
-    const-string v6, "sentry-"
-
     .line 142
+    const-string v6, ""
+
     .line 143
-    const-string v7, ""
-
     .line 144
-    .line 145
-    invoke-virtual {v5, v6, v7}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v4, v5, v6}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 145
     .line 146
     .line 147
-    .line 148
-    move-result-object v5
+    move-result-object v4
 
-    .line 149
-    invoke-virtual {v0, v5, v4}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 148
+    invoke-virtual {v0, v4, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 149
     .line 150
     .line 151
-    .line 152
     goto :goto_2
 
-    .line 153
+    .line 152
     :catchall_0
     move-exception v0
 
-    .line 154
-    move-object v2, v0
+    .line 153
+    move-object p0, v0
 
-    .line 155
+    .line 154
     goto :goto_3
 
-    .line 156
+    .line 155
     :cond_2
-    invoke-virtual {v1}, Lio/sentry/u;->close()V
+    invoke-virtual {v1}, Lio/sentry/util/a;->close()V
 
+    .line 156
     .line 157
     .line 158
-    .line 159
-    iput-object v0, v3, Lio/sentry/f7;->a0:Lj$/util/concurrent/ConcurrentHashMap;
+    iput-object v0, v3, Lio/sentry/h7;->j0:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 159
     .line 160
-    .line 161
     return-object v3
 
-    .line 162
+    .line 161
     :goto_3
     :try_start_1
-    invoke-virtual {v1}, Lio/sentry/u;->close()V
+    invoke-virtual {v1}, Lio/sentry/util/a;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 162
     .line 163
     .line 164
-    .line 165
     goto :goto_4
 
-    .line 166
+    .line 165
     :catchall_1
     move-exception v0
 
-    .line 167
-    invoke-virtual {v2, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    .line 166
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
+    .line 167
     .line 168
     .line 169
-    .line 170
     :goto_4
-    throw v2
+    throw p0
 
-    .line 171
+    .line 170
     :cond_3
     return-object v2
 .end method

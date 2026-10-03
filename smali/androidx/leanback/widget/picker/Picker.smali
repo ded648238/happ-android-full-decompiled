@@ -1,38 +1,38 @@
 .class public abstract Landroidx/leanback/widget/picker/Picker;
 .super Landroid/widget/FrameLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Landroid/view/ViewGroup;
+.field public final c0:Landroid/view/ViewGroup;
 
-.field public final R:Ljava/util/ArrayList;
+.field public final d0:Ljava/util/ArrayList;
 
-.field public S:Ljava/util/ArrayList;
+.field public e0:Ljava/util/ArrayList;
 
-.field public final T:F
+.field public final f0:F
 
-.field public final U:F
+.field public final g0:F
 
-.field public final V:F
+.field public final h0:F
 
-.field public final W:I
+.field public final i0:I
 
-.field public final a0:Landroid/view/animation/DecelerateInterpolator;
+.field public final j0:Landroid/view/animation/DecelerateInterpolator;
 
-.field public b0:F
+.field public k0:F
 
-.field public c0:F
+.field public l0:F
 
-.field public d0:I
+.field public m0:I
 
-.field public final e0:Ljava/util/ArrayList;
+.field public final n0:Ljava/util/ArrayList;
 
-.field public f0:I
+.field public o0:I
 
-.field public g0:I
+.field public p0:I
 
-.field public final h0:Lzt4;
+.field public final q0:Lfc5;
 
 
 # direct methods
@@ -54,7 +54,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/leanback/widget/picker/Picker;->R:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/leanback/widget/picker/Picker;->d0:Ljava/util/ArrayList;
 
     .line 10
     .line 11
@@ -62,7 +62,7 @@
 
     .line 12
     .line 13
-    iput v0, p0, Landroidx/leanback/widget/picker/Picker;->b0:F
+    iput v0, p0, Landroidx/leanback/widget/picker/Picker;->k0:F
 
     .line 14
     .line 15
@@ -70,14 +70,14 @@
 
     .line 16
     .line 17
-    iput v0, p0, Landroidx/leanback/widget/picker/Picker;->c0:F
+    iput v0, p0, Landroidx/leanback/widget/picker/Picker;->l0:F
 
     .line 18
     .line 19
     const/4 v1, 0x0
 
     .line 20
-    iput v1, p0, Landroidx/leanback/widget/picker/Picker;->d0:I
+    iput v1, p0, Landroidx/leanback/widget/picker/Picker;->m0:I
 
     .line 21
     .line 22
@@ -90,24 +90,24 @@
     .line 25
     .line 26
     .line 27
-    iput-object v2, p0, Landroidx/leanback/widget/picker/Picker;->e0:Ljava/util/ArrayList;
+    iput-object v2, p0, Landroidx/leanback/widget/picker/Picker;->n0:Ljava/util/ArrayList;
 
     .line 28
     .line 29
-    new-instance v2, Lzt4;
+    new-instance v2, Lfc5;
 
     .line 30
     .line 31
-    invoke-direct {v2, p0}, Lzt4;-><init>(Landroidx/leanback/widget/picker/Picker;)V
+    invoke-direct {v2, p0}, Lfc5;-><init>(Landroidx/leanback/widget/picker/Picker;)V
 
     .line 32
     .line 33
     .line 34
-    iput-object v2, p0, Landroidx/leanback/widget/picker/Picker;->h0:Lzt4;
+    iput-object v2, p0, Landroidx/leanback/widget/picker/Picker;->q0:Lfc5;
 
     .line 35
     .line 36
-    sget-object v2, Lgb5;->lbPicker:[I
+    sget-object v2, Lev5;->lbPicker:[I
 
     .line 37
     .line 38
@@ -119,7 +119,7 @@
     move-result-object v7
 
     .line 42
-    sget-object v5, Lgb5;->lbPicker:[I
+    sget-object v5, Lev5;->lbPicker:[I
 
     .line 43
     .line 44
@@ -135,44 +135,44 @@
     move v8, p3
 
     .line 48
-    invoke-static/range {v3 .. v8}, Lqn7;->p(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v3 .. v8}, Lni8;->l(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 49
     .line 50
     .line 51
-    sget p1, Lgb5;->lbPicker_pickerItemLayout:I
+    sget p0, Lev5;->lbPicker_pickerItemLayout:I
 
     .line 52
     .line 53
-    sget p2, Lq95;->lb_picker_item:I
+    sget p1, Lqt5;->lb_picker_item:I
 
     .line 54
     .line 55
-    invoke-virtual {v7, p1, p2}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {v7, p0, p1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     .line 56
     .line 57
     .line 58
-    move-result p1
+    move-result p0
 
     .line 59
-    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->f0:I
+    iput p0, v3, Landroidx/leanback/widget/picker/Picker;->o0:I
 
     .line 60
     .line 61
-    sget p1, Lgb5;->lbPicker_pickerItemTextViewId:I
+    sget p0, Lev5;->lbPicker_pickerItemTextViewId:I
 
     .line 62
     .line 63
-    invoke-virtual {v7, p1, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {v7, p0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     .line 64
     .line 65
     .line 66
-    move-result p1
+    move-result p0
 
     .line 67
-    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->g0:I
+    iput p0, v3, Landroidx/leanback/widget/picker/Picker;->p0:I
 
     .line 68
     .line 69
@@ -181,113 +181,113 @@
     .line 70
     .line 71
     .line 72
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 73
-    invoke-virtual {p0, p1}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v3, p0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 74
     .line 75
     .line 76
-    const/high16 p2, 0x40000
+    const/high16 p1, 0x40000
 
     .line 77
     .line 78
-    invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->setDescendantFocusability(I)V
+    invoke-virtual {v3, p1}, Landroid/view/ViewGroup;->setDescendantFocusability(I)V
 
     .line 79
     .line 80
     .line 81
-    iput v0, p0, Landroidx/leanback/widget/picker/Picker;->U:F
+    iput v0, v3, Landroidx/leanback/widget/picker/Picker;->g0:F
 
     .line 82
     .line 83
-    iput v0, p0, Landroidx/leanback/widget/picker/Picker;->T:F
+    iput v0, v3, Landroidx/leanback/widget/picker/Picker;->f0:F
 
     .line 84
     .line 85
-    const/high16 p2, 0x3f000000    # 0.5f
+    const/high16 p1, 0x3f000000    # 0.5f
 
     .line 86
     .line 87
-    iput p2, p0, Landroidx/leanback/widget/picker/Picker;->V:F
+    iput p1, v3, Landroidx/leanback/widget/picker/Picker;->h0:F
 
     .line 88
     .line 89
-    const/16 p2, 0xc8
+    const/16 p1, 0xc8
 
     .line 90
     .line 91
-    iput p2, p0, Landroidx/leanback/widget/picker/Picker;->W:I
+    iput p1, v3, Landroidx/leanback/widget/picker/Picker;->i0:I
 
     .line 92
     .line 93
-    new-instance p2, Landroid/view/animation/DecelerateInterpolator;
+    new-instance p1, Landroid/view/animation/DecelerateInterpolator;
 
     .line 94
     .line 95
-    const/high16 p3, 0x40200000    # 2.5f
+    const/high16 p2, 0x40200000    # 2.5f
 
     .line 96
     .line 97
-    invoke-direct {p2, p3}, Landroid/view/animation/DecelerateInterpolator;-><init>(F)V
+    invoke-direct {p1, p2}, Landroid/view/animation/DecelerateInterpolator;-><init>(F)V
 
     .line 98
     .line 99
     .line 100
-    iput-object p2, p0, Landroidx/leanback/widget/picker/Picker;->a0:Landroid/view/animation/DecelerateInterpolator;
+    iput-object p1, v3, Landroidx/leanback/widget/picker/Picker;->j0:Landroid/view/animation/DecelerateInterpolator;
 
     .line 101
     .line 102
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 103
     .line 104
     .line 105
-    move-result-object p2
+    move-result-object p1
 
     .line 106
-    invoke-static {p2}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     .line 107
     .line 108
     .line 109
-    move-result-object p2
+    move-result-object p1
 
     .line 110
-    sget p3, Lq95;->lb_picker:I
+    sget p2, Lqt5;->lb_picker:I
 
     .line 111
     .line 112
-    invoke-virtual {p2, p3, p0, p1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {p1, p2, v3, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     .line 113
     .line 114
     .line 115
-    move-result-object p1
+    move-result-object p0
 
     .line 116
-    check-cast p1, Landroid/view/ViewGroup;
+    check-cast p0, Landroid/view/ViewGroup;
 
     .line 117
     .line 118
-    sget p2, Lv85;->picker:I
+    sget p1, Lus5;->picker:I
 
     .line 119
     .line 120
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 121
     .line 122
     .line 123
-    move-result-object p1
+    move-result-object p0
 
     .line 124
-    check-cast p1, Landroid/view/ViewGroup;
+    check-cast p0, Landroid/view/ViewGroup;
 
     .line 125
     .line 126
-    iput-object p1, p0, Landroidx/leanback/widget/picker/Picker;->Q:Landroid/view/ViewGroup;
+    iput-object p0, v3, Landroidx/leanback/widget/picker/Picker;->c0:Landroid/view/ViewGroup;
 
     .line 127
     .line 128
@@ -296,11 +296,11 @@
 
 
 # virtual methods
-.method public final a(ILcu4;)V
+.method public final a(ILic5;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->S:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->e0:Ljava/util/ArrayList;
 
     .line 2
     .line 3
@@ -309,60 +309,60 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->R:Ljava/util/ArrayList;
+    iget-object p0, p0, Landroidx/leanback/widget/picker/Picker;->d0:Ljava/util/ArrayList;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     .line 9
     .line 10
     .line 11
-    move-result-object p1
+    move-result-object p0
 
     .line 12
-    check-cast p1, Landroidx/leanback/widget/VerticalGridView;
+    check-cast p0, Landroidx/leanback/widget/VerticalGridView;
 
     .line 13
     .line 14
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/f;
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/f;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p1
 
     .line 18
-    check-cast v0, Lau4;
+    check-cast p1, Lgc5;
 
     .line 19
     .line 20
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_0
 
     .line 21
     .line 22
-    iget-object v0, v0, Landroidx/recyclerview/widget/f;->a:Ljd5;
+    iget-object p1, p1, Landroidx/recyclerview/widget/f;->a:Lox5;
 
     .line 23
     .line 24
-    invoke-virtual {v0}, Ljd5;->b()V
+    invoke-virtual {p1}, Lox5;->b()V
 
     .line 25
     .line 26
     .line 27
     :cond_0
-    iget v0, p2, Lcu4;->a:I
+    iget p1, p2, Lic5;->a:I
 
     .line 28
     .line 29
-    iget p2, p2, Lcu4;->b:I
+    iget p2, p2, Lic5;->b:I
 
     .line 30
     .line 31
-    sub-int/2addr v0, p2
+    sub-int/2addr p1, p2
 
     .line 32
-    invoke-virtual {p1, v0}, Loy;->setSelectedPosition(I)V
+    invoke-virtual {p0, p1}, Lq00;->setSelectedPosition(I)V
 
     .line 33
     .line 34
@@ -374,7 +374,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->d0:I
+    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->m0:I
 
     .line 2
     .line 3
@@ -410,7 +410,7 @@
 
     .line 15
     :goto_1
-    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->a0:Landroid/view/animation/DecelerateInterpolator;
+    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->j0:Landroid/view/animation/DecelerateInterpolator;
 
     .line 16
     .line 17
@@ -422,7 +422,7 @@
 
     .line 20
     .line 21
-    iget p1, p0, Landroidx/leanback/widget/picker/Picker;->U:F
+    iget p1, p0, Landroidx/leanback/widget/picker/Picker;->g0:F
 
     .line 22
     .line 23
@@ -435,7 +435,7 @@
 
     .line 27
     :cond_2
-    iget p1, p0, Landroidx/leanback/widget/picker/Picker;->T:F
+    iget p1, p0, Landroidx/leanback/widget/picker/Picker;->f0:F
 
     .line 28
     .line 29
@@ -452,7 +452,7 @@
 
     .line 34
     .line 35
-    iget p1, p0, Landroidx/leanback/widget/picker/Picker;->V:F
+    iget p1, p0, Landroidx/leanback/widget/picker/Picker;->h0:F
 
     .line 36
     .line 37
@@ -522,11 +522,11 @@
     move-result-object p1
 
     .line 22
-    iget p2, p0, Landroidx/leanback/widget/picker/Picker;->W:I
+    iget p0, p0, Landroidx/leanback/widget/picker/Picker;->i0:I
 
     .line 23
     .line 24
-    int-to-long p2, p2
+    int-to-long p2, p0
 
     .line 25
     invoke-virtual {p1, p2, p3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
@@ -534,18 +534,18 @@
     .line 26
     .line 27
     .line 28
-    move-result-object p1
+    move-result-object p0
 
     .line 29
-    invoke-virtual {p1, p4}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {p0, p4}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
 
     .line 30
     .line 31
     .line 32
-    move-result-object p1
+    move-result-object p0
 
     .line 33
-    invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
+    invoke-virtual {p0}, Landroid/view/ViewPropertyAnimator;->start()V
 
     .line 34
     .line 35
@@ -557,7 +557,7 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->R:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->d0:Ljava/util/ArrayList;
 
     .line 2
     .line 3
@@ -573,7 +573,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Loy;->getSelectedPosition()I
+    invoke-virtual {v0}, Lq00;->getSelectedPosition()I
 
     .line 10
     .line 11
@@ -584,7 +584,7 @@
     const/4 v2, 0x0
 
     .line 14
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 15
     :goto_0
@@ -635,14 +635,14 @@
 
     .line 37
     .line 38
-    const/4 v6, 0x1
+    move v6, v5
 
     .line 39
     goto :goto_1
 
     .line 40
     :cond_0
-    const/4 v6, 0x0
+    move v6, v2
 
     .line 41
     :goto_1
@@ -703,15 +703,15 @@
 
     .line 18
     .line 19
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/View;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     .line 20
     .line 21
     .line 22
-    move-result p1
+    move-result p0
 
     .line 23
-    return p1
+    return p0
 
     .line 24
     :cond_0
@@ -740,15 +740,15 @@
 
     .line 35
     :cond_2
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/View;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     .line 36
     .line 37
     .line 38
-    move-result p1
+    move-result p0
 
     .line 39
-    return p1
+    return p0
 .end method
 
 .method public final e()V
@@ -771,7 +771,7 @@
 
     .line 7
     .line 8
-    iget-object v1, p0, Landroidx/leanback/widget/picker/Picker;->R:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/leanback/widget/picker/Picker;->d0:Ljava/util/ArrayList;
 
     .line 9
     .line 10
@@ -804,7 +804,7 @@
 .end method
 
 .method public final f(Landroidx/leanback/widget/VerticalGridView;)V
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -853,97 +853,96 @@
     .line 21
     .line 22
     .line 23
-    move-result v2
+    move-result p0
 
     .line 24
-    int-to-float v2, v2
+    int-to-float p0, p0
 
     .line 25
-    mul-float v2, v2, v1
+    mul-float/2addr p0, v1
 
     .line 26
-    .line 27
-    invoke-virtual {p1}, Loy;->getVerticalSpacing()I
+    invoke-virtual {p1}, Lq00;->getVerticalSpacing()I
 
+    .line 27
     .line 28
     .line 29
+    move-result v2
+
     .line 30
-    move-result v3
+    int-to-float v2, v2
 
     .line 31
-    int-to-float v3, v3
+    const/high16 v3, 0x3f800000    # 1.0f
 
     .line 32
-    const/high16 v4, 0x3f800000    # 1.0f
-
     .line 33
-    .line 34
-    invoke-static {v1, v4, v3, v2}, Lea0;->m(FFFF)F
+    invoke-static {v1, v3, v2, p0}, Lw31;->d(FFFF)F
 
+    .line 34
     .line 35
     .line 36
+    move-result p0
+
     .line 37
-    move-result v1
+    float-to-int p0, p0
 
     .line 38
-    float-to-int v1, v1
+    iput p0, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 39
-    iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
-
     .line 40
-    .line 41
     invoke-virtual {p1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 41
     .line 42
     .line 43
-    .line 44
     return-void
 .end method
 
 .method public getActivatedVisibleItemCount()F
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->b0:F
+    iget p0, p0, Landroidx/leanback/widget/picker/Picker;->k0:F
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getColumnsCount()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->S:Ljava/util/ArrayList;
+    iget-object p0, p0, Landroidx/leanback/widget/picker/Picker;->e0:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 4
     .line 5
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 6
-    return v0
+    return p0
 
     .line 7
     :cond_0
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p0
 
     .line 11
-    return v0
+    return p0
 .end method
 
 .method public getPickerItemHeightPixels()I
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -951,95 +950,95 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    sget v1, Li85;->picker_item_height:I
+    sget v0, Lhs5;->picker_item_height:I
 
     .line 10
     .line 11
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     .line 12
     .line 13
     .line 14
-    move-result v0
+    move-result p0
 
     .line 15
-    return v0
+    return p0
 .end method
 
 .method public final getPickerItemLayoutId()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->f0:I
+    iget p0, p0, Landroidx/leanback/widget/picker/Picker;->o0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getPickerItemTextViewId()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->g0:I
+    iget p0, p0, Landroidx/leanback/widget/picker/Picker;->p0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getSelectedColumn()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->d0:I
+    iget p0, p0, Landroidx/leanback/widget/picker/Picker;->m0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getSeparator()Ljava/lang/CharSequence;
-    .locals 2
+    .locals 1
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->e0:Ljava/util/ArrayList;
+    iget-object p0, p0, Landroidx/leanback/widget/picker/Picker;->n0:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 4
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     .line 5
     .line 6
     .line 7
-    move-result-object v0
+    move-result-object p0
 
     .line 8
-    check-cast v0, Ljava/lang/CharSequence;
+    check-cast p0, Ljava/lang/CharSequence;
 
     .line 9
     .line 10
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getSeparators()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1050,26 +1049,26 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->e0:Ljava/util/ArrayList;
+    iget-object p0, p0, Landroidx/leanback/widget/picker/Picker;->n0:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getVisibleItemCount()F
-    .locals 1
+    .locals 0
 
     .line 1
-    const/high16 v0, 0x3f800000    # 1.0f
+    const/high16 p0, 0x3f800000    # 1.0f
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-virtual {p0}, Landroidx/leanback/widget/picker/Picker;->getSelectedColumn()I
@@ -1084,57 +1083,57 @@
 
     .line 6
     .line 7
-    iget-object v1, p0, Landroidx/leanback/widget/picker/Picker;->R:Ljava/util/ArrayList;
+    iget-object p0, p0, Landroidx/leanback/widget/picker/Picker;->d0:Ljava/util/ArrayList;
 
     .line 8
     .line 9
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     .line 10
     .line 11
     .line 12
-    move-result v2
+    move-result v1
 
     .line 13
-    if-ge v0, v2, :cond_0
+    if-ge v0, v1, :cond_0
 
     .line 14
     .line 15
-    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    move-result-object p0
 
     .line 19
-    check-cast v0, Landroidx/leanback/widget/VerticalGridView;
+    check-cast p0, Landroidx/leanback/widget/VerticalGridView;
 
     .line 20
     .line 21
-    invoke-virtual {v0, p1, p2}, Landroid/view/View;->requestFocus(ILandroid/graphics/Rect;)Z
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->requestFocus(ILandroid/graphics/Rect;)Z
 
     .line 22
     .line 23
     .line 24
-    move-result p1
+    move-result p0
 
     .line 25
-    return p1
+    return p0
 
     .line 26
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 27
-    return p1
+    return p0
 .end method
 
 .method public final requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->requestChildFocus(Landroid/view/View;Landroid/view/View;)V
+    invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->requestChildFocus(Landroid/view/View;Landroid/view/View;)V
 
     .line 2
     .line 3
@@ -1143,7 +1142,7 @@
 
     .line 5
     :goto_0
-    iget-object p2, p0, Landroidx/leanback/widget/picker/Picker;->R:Ljava/util/ArrayList;
+    iget-object p2, p0, Landroidx/leanback/widget/picker/Picker;->d0:Ljava/util/ArrayList;
 
     .line 6
     .line 7
@@ -1216,7 +1215,7 @@
 
     .line 6
     .line 7
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->setActivated(Z)V
+    invoke-super {p0, p1}, Landroid/view/View;->setActivated(Z)V
 
     .line 8
     .line 9
@@ -1225,7 +1224,7 @@
 
     .line 11
     :cond_0
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->setActivated(Z)V
+    invoke-super {p0, p1}, Landroid/view/View;->setActivated(Z)V
 
     .line 12
     .line 13
@@ -1284,7 +1283,7 @@
     const/4 v2, 0x0
 
     .line 41
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 42
     :goto_0
@@ -1296,7 +1295,7 @@
     move-result v4
 
     .line 46
-    iget-object v5, p0, Landroidx/leanback/widget/picker/Picker;->R:Ljava/util/ArrayList;
+    iget-object v5, p0, Landroidx/leanback/widget/picker/Picker;->d0:Ljava/util/ArrayList;
 
     .line 47
     .line 48
@@ -1342,7 +1341,7 @@
     move-result v3
 
     .line 69
-    const/4 v4, 0x0
+    move v4, v2
 
     .line 70
     :goto_1
@@ -1370,7 +1369,7 @@
 
     .line 81
     .line 82
-    const/4 v7, 0x0
+    move v7, v2
 
     .line 83
     :goto_2
@@ -1472,7 +1471,7 @@
 
     .line 5
     .line 6
-    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->b0:F
+    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->k0:F
 
     .line 7
     .line 8
@@ -1484,7 +1483,7 @@
 
     .line 11
     .line 12
-    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->b0:F
+    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->k0:F
 
     .line 13
     .line 14
@@ -1510,7 +1509,7 @@
 
     .line 24
     :cond_1
-    invoke-static {}, Lxi4;->d()V
+    invoke-static {}, Lq05;->f()V
 
     .line 25
     .line 26
@@ -1524,13 +1523,13 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lcu4;",
+            "Lic5;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->e0:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->n0:Ljava/util/ArrayList;
 
     .line 2
     .line 3
@@ -1590,7 +1589,7 @@
     .line 29
     .line 30
     .line 31
-    const/4 v5, 0x0
+    move v5, v3
 
     .line 32
     :goto_0
@@ -1655,7 +1654,7 @@
     .line 59
     .line 60
     :goto_1
-    iget-object v1, p0, Landroidx/leanback/widget/picker/Picker;->R:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/leanback/widget/picker/Picker;->d0:Ljava/util/ArrayList;
 
     .line 61
     .line 62
@@ -1664,7 +1663,7 @@
     .line 63
     .line 64
     .line 65
-    iget-object v4, p0, Landroidx/leanback/widget/picker/Picker;->Q:Landroid/view/ViewGroup;
+    iget-object v4, p0, Landroidx/leanback/widget/picker/Picker;->c0:Landroid/view/ViewGroup;
 
     .line 66
     .line 67
@@ -1682,11 +1681,11 @@
     .line 73
     .line 74
     .line 75
-    iput-object v5, p0, Landroidx/leanback/widget/picker/Picker;->S:Ljava/util/ArrayList;
+    iput-object v5, p0, Landroidx/leanback/widget/picker/Picker;->e0:Ljava/util/ArrayList;
 
     .line 76
     .line 77
-    iget p1, p0, Landroidx/leanback/widget/picker/Picker;->d0:I
+    iget p1, p0, Landroidx/leanback/widget/picker/Picker;->m0:I
 
     .line 78
     .line 79
@@ -1705,7 +1704,7 @@
 
     .line 85
     .line 86
-    iget-object p1, p0, Landroidx/leanback/widget/picker/Picker;->S:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/leanback/widget/picker/Picker;->e0:Ljava/util/ArrayList;
 
     .line 87
     .line 88
@@ -1720,7 +1719,7 @@
     sub-int/2addr p1, v2
 
     .line 93
-    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->d0:I
+    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->m0:I
 
     .line 94
     .line 95
@@ -1773,7 +1772,7 @@
 
     .line 118
     .line 119
-    sget v5, Lq95;->lb_picker_separator:I
+    sget v5, Lqt5;->lb_picker_separator:I
 
     .line 120
     .line 121
@@ -1812,7 +1811,7 @@
     .line 138
     .line 139
     :cond_3
-    const/4 v5, 0x0
+    move v5, v3
 
     .line 140
     :goto_2
@@ -1820,7 +1819,7 @@
 
     .line 141
     .line 142
-    sget v6, Lq95;->lb_picker_column:I
+    sget v6, Lqt5;->lb_picker_column:I
 
     .line 143
     .line 144
@@ -1841,7 +1840,7 @@
     .line 151
     .line 152
     .line 153
-    invoke-virtual {v6, v3}, Loy;->setWindowAlignment(I)V
+    invoke-virtual {v6, v3}, Lq00;->setWindowAlignment(I)V
 
     .line 154
     .line 155
@@ -1907,7 +1906,7 @@
 
     .line 188
     .line 189
-    sget v8, Lq95;->lb_picker_separator:I
+    sget v8, Lqt5;->lb_picker_separator:I
 
     .line 190
     .line 191
@@ -1946,7 +1945,7 @@
     .line 208
     .line 209
     :cond_4
-    new-instance v8, Lau4;
+    new-instance v8, Lgc5;
 
     .line 210
     .line 211
@@ -1966,7 +1965,7 @@
     move-result v10
 
     .line 219
-    invoke-direct {v8, p0, v9, v10, v5}, Lau4;-><init>(Landroidx/leanback/widget/picker/Picker;III)V
+    invoke-direct {v8, p0, v9, v10, v5}, Lgc5;-><init>(Landroidx/leanback/widget/picker/Picker;III)V
 
     .line 220
     .line 221
@@ -1976,11 +1975,11 @@
     .line 223
     .line 224
     .line 225
-    iget-object v5, p0, Landroidx/leanback/widget/picker/Picker;->h0:Lzt4;
+    iget-object v5, p0, Landroidx/leanback/widget/picker/Picker;->q0:Lfc5;
 
     .line 226
     .line 227
-    invoke-virtual {v6, v5}, Loy;->setOnChildViewHolderSelectedListener(Lth4;)V
+    invoke-virtual {v6, v5}, Lq00;->setOnChildViewHolderSelectedListener(Llz4;)V
 
     .line 228
     .line 229
@@ -1996,103 +1995,144 @@
 
     .line 233
     :cond_6
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    new-instance p0, Ljava/lang/IllegalStateException;
 
     .line 234
     .line 235
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
     .line 236
+    .line 237
+    .line 238
     move-result v0
 
-    .line 237
+    .line 239
     invoke-interface {p1}, Ljava/util/List;->size()I
 
-    .line 238
-    .line 239
     .line 240
+    .line 241
+    .line 242
     move-result p1
 
-    .line 241
-    const-string v1, " + 1"
-
-    .line 242
     .line 243
-    const-string v2, "Separators size: "
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 244
     .line 245
-    const-string v3, " mustequal the size of columns: "
+    const-string v2, "Separators size: "
 
     .line 246
     .line 247
-    invoke-static {v2, v0, v3, p1, v1}, Lxi4;->k(Ljava/lang/String;ILjava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 248
     .line 249
     .line 250
-    return-void
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 251
-    :cond_7
-    new-instance p1, Ljava/lang/IllegalStateException;
-
     .line 252
     .line 253
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    const-string v0, " mustequal the size of columns: "
 
     .line 254
     .line 255
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 256
-    move-result v0
-
     .line 257
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 258
-    .line 259
-    const-string v2, "Separators size is: "
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 259
     .line 260
     .line 261
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string p1, " + 1"
 
     .line 262
     .line 263
-    .line 264
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 264
     .line 265
     .line 266
-    .line 267
-    const-string v0, ". At least one separator must be provided"
-
-    .line 268
-    .line 269
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 270
-    .line 271
-    .line 272
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 273
-    .line 274
-    .line 275
-    move-result-object v0
+    .line 267
+    .line 268
+    .line 269
+    move-result-object p1
 
+    .line 270
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 271
+    .line 272
+    .line 273
+    throw p0
+
+    .line 274
+    :cond_7
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 275
     .line 276
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     .line 277
     .line 278
     .line 279
-    throw p1
+    move-result p1
+
+    .line 280
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 281
+    .line 282
+    const-string v1, "Separators size is: "
+
+    .line 283
+    .line 284
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 285
+    .line 286
+    .line 287
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 288
+    .line 289
+    .line 290
+    const-string p1, ". At least one separator must be provided"
+
+    .line 291
+    .line 292
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 293
+    .line 294
+    .line 295
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 296
+    .line 297
+    .line 298
+    move-result-object p1
+
+    .line 299
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 300
+    .line 301
+    .line 302
+    throw p0
 .end method
 
 .method public final setPickerItemLayoutId(I)V
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->f0:I
+    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->o0:I
 
     .line 2
     .line 3
@@ -2103,7 +2143,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->g0:I
+    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->p0:I
 
     .line 2
     .line 3
@@ -2114,11 +2154,11 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->d0:I
+    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->m0:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/leanback/widget/picker/Picker;->R:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroidx/leanback/widget/picker/Picker;->d0:Ljava/util/ArrayList;
 
     .line 4
     .line 5
@@ -2126,7 +2166,7 @@
 
     .line 6
     .line 7
-    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->d0:I
+    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->m0:I
 
     .line 8
     .line 9
@@ -2176,10 +2216,10 @@
     .line 29
     .line 30
     .line 31
-    move-result v0
+    move-result p0
 
     .line 32
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 33
     .line 34
@@ -2188,10 +2228,10 @@
     .line 35
     .line 36
     .line 37
-    move-result v0
+    move-result p0
 
     .line 38
-    if-nez v0, :cond_1
+    if-nez p0, :cond_1
 
     .line 39
     .line 40
@@ -2239,7 +2279,7 @@
 .end method
 
 .method public final setSeparators(Ljava/util/List;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2250,16 +2290,16 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/picker/Picker;->e0:Ljava/util/ArrayList;
+    iget-object p0, p0, Landroidx/leanback/widget/picker/Picker;->n0:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+    invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 7
     .line 8
@@ -2282,7 +2322,7 @@
 
     .line 5
     .line 6
-    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->c0:F
+    iget v0, p0, Landroidx/leanback/widget/picker/Picker;->l0:F
 
     .line 7
     .line 8
@@ -2294,7 +2334,7 @@
 
     .line 11
     .line 12
-    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->c0:F
+    iput p1, p0, Landroidx/leanback/widget/picker/Picker;->l0:F
 
     .line 13
     .line 14
@@ -2320,7 +2360,7 @@
 
     .line 24
     :cond_1
-    invoke-static {}, Lxi4;->d()V
+    invoke-static {}, Lq05;->f()V
 
     .line 25
     .line 26

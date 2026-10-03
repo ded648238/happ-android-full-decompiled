@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2;
@@ -129,28 +129,28 @@
 .end method
 
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 2
 
     .line 1
     iget-wide v0, p0, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;->timestamp:J
 
     .line 2
     .line 3
-    instance-of v2, p1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;
+    instance-of p0, p1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;
 
     .line 4
     .line 5
-    if-nez v2, :cond_0
+    if-nez p0, :cond_0
 
     .line 6
     .line 7
@@ -162,79 +162,73 @@
 
     .line 9
     .line 10
-    iget-wide v2, p1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;->timestamp:J
+    iget-wide p0, p1, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;->timestamp:J
 
     .line 11
     .line 12
-    cmp-long p1, v0, v2
+    cmp-long p0, v0, p0
 
     .line 13
     .line 14
-    if-eqz p1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 15
     .line 16
     :goto_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    return p1
+    return p0
 
     .line 18
     :cond_1
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 19
-    return p1
+    return p0
 .end method
 
 .method public final hashCode()I
-    .locals 4
+    .locals 2
 
     .line 1
     iget-wide v0, p0, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;->timestamp:J
 
     .line 2
     .line 3
-    const/16 v2, 0x20
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
 
     .line 4
     .line 5
-    ushr-long v2, v0, v2
-
     .line 6
+    move-result p0
+
     .line 7
-    xor-long/2addr v0, v2
-
-    .line 8
-    long-to-int v1, v0
-
-    .line 9
-    return v1
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 4
+    .locals 3
 
     .line 1
     iget-wide v0, p0, Lsu/happ/proxyutility/domain/routing/entity/StateDownloadFileV2$Success;->timestamp:J
 
     .line 2
     .line 3
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance p0, Ljava/lang/StringBuilder;
 
     .line 4
     .line 5
-    const-string v3, "Success(timestamp="
+    const-string v2, "Success(timestamp="
 
     .line 6
     .line 7
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
@@ -243,20 +237,20 @@
 
     .line 14
     .line 15
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v0
+    move-result-object p0
 
     .line 22
-    return-object v0
+    return-object p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V

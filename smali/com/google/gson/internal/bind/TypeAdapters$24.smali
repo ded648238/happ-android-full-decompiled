@@ -1,6 +1,6 @@
 .class Lcom/google/gson/internal/bind/TypeAdapters$24;
 .super Lcom/google/gson/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,58 +26,58 @@
 
 
 # virtual methods
-.method public final b(Lr23;)Ljava/lang/Object;
-    .locals 2
+.method public final b(Lxi3;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lr23;->k0()I
+    invoke-virtual {p1}, Lxi3;->t0()I
 
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    const/16 v1, 0x9
+    const/16 v0, 0x9
 
     .line 6
     .line 7
-    if-ne v0, v1, :cond_0
+    if-ne p0, v0, :cond_0
 
     .line 8
     .line 9
-    invoke-virtual {p1}, Lr23;->R()V
+    invoke-virtual {p1}, Lxi3;->X()V
 
     .line 10
     .line 11
     .line 12
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 13
-    return-object p1
+    return-object p0
 
     .line 14
     :cond_0
-    invoke-virtual {p1}, Lr23;->n()Ljava/lang/String;
+    invoke-virtual {p1}, Lxi3;->r()Ljava/lang/String;
 
     .line 15
     .line 16
     .line 17
-    move-result-object p1
+    move-result-object p0
 
     .line 18
-    invoke-static {p1}, Ljava/net/InetAddress;->getByName(Ljava/lang/String;)Ljava/net/InetAddress;
+    invoke-static {p0}, Ljava/net/InetAddress;->getByName(Ljava/lang/String;)Ljava/net/InetAddress;
 
     .line 19
     .line 20
     .line 21
-    move-result-object p1
+    move-result-object p0
 
     .line 22
-    return-object p1
+    return-object p0
 .end method
 
-.method public final c(Lh43;Ljava/lang/Object;)V
+.method public final c(Lnk3;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -89,7 +89,7 @@
 
     .line 4
     .line 5
-    const/4 p2, 0x0
+    const/4 p0, 0x0
 
     .line 6
     goto :goto_0
@@ -101,11 +101,11 @@
     .line 8
     .line 9
     .line 10
-    move-result-object p2
+    move-result-object p0
 
     .line 11
     :goto_0
-    invoke-virtual {p1, p2}, Lh43;->k0(Ljava/lang/String;)V
+    invoke-virtual {p1, p0}, Lnk3;->t0(Ljava/lang/String;)V
 
     .line 12
     .line 13

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/BouncyCastleSocketAdapter;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/platform/android/SocketAdapter;
@@ -36,7 +36,7 @@
         "",
         "Lokhttp3/Protocol;",
         "protocols",
-        "Lbh7;",
+        "Lr98;",
         "configureTlsExtensions",
         "(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V",
         "Companion",
@@ -70,7 +70,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/platform/android/BouncyCastleSocketAdapter$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/platform/android/BouncyCastleSocketAdapter$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -121,7 +121,7 @@
 
 # virtual methods
 .method public configureTlsExtensions(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -150,10 +150,10 @@
     .line 8
     .line 9
     .line 10
-    move-result p2
+    move-result p0
 
     .line 11
-    if-eqz p2, :cond_0
+    if-eqz p0, :cond_0
 
     .line 12
     .line 13
@@ -166,46 +166,46 @@
     .line 16
     .line 17
     .line 18
-    move-result-object p2
+    move-result-object p0
 
     .line 19
-    sget-object v0, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
+    sget-object p2, Lokhttp3/internal/platform/Platform;->Companion:Lokhttp3/internal/platform/Platform$Companion;
 
     .line 20
     .line 21
-    invoke-virtual {v0, p3}, Lokhttp3/internal/platform/Platform$Companion;->alpnProtocolNames(Ljava/util/List;)Ljava/util/List;
+    invoke-virtual {p2, p3}, Lokhttp3/internal/platform/Platform$Companion;->alpnProtocolNames(Ljava/util/List;)Ljava/util/List;
 
     .line 22
     .line 23
     .line 24
-    move-result-object p3
+    move-result-object p2
 
     .line 25
-    const/4 v0, 0x0
+    const/4 p3, 0x0
 
     .line 26
-    new-array v0, v0, [Ljava/lang/String;
+    new-array p3, p3, [Ljava/lang/String;
 
     .line 27
     .line 28
-    invoke-interface {p3, v0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-interface {p2, p3}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 29
     .line 30
     .line 31
-    move-result-object p3
+    move-result-object p2
 
     .line 32
-    check-cast p3, [Ljava/lang/String;
+    check-cast p2, [Ljava/lang/String;
 
     .line 33
     .line 34
-    invoke-virtual {p2, p3}, Lorg/bouncycastle/jsse/BCSSLParameters;->setApplicationProtocols([Ljava/lang/String;)V
+    invoke-virtual {p0, p2}, Lorg/bouncycastle/jsse/BCSSLParameters;->setApplicationProtocols([Ljava/lang/String;)V
 
     .line 35
     .line 36
     .line 37
-    invoke-interface {p1, p2}, Lorg/bouncycastle/jsse/BCSSLSocket;->setParameters(Lorg/bouncycastle/jsse/BCSSLParameters;)V
+    invoke-interface {p1, p0}, Lorg/bouncycastle/jsse/BCSSLSocket;->setParameters(Lorg/bouncycastle/jsse/BCSSLParameters;)V
 
     .line 38
     .line 39
@@ -215,7 +215,7 @@
 .end method
 
 .method public getSelectedProtocol(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -232,61 +232,61 @@
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    if-nez p1, :cond_0
+    if-nez p0, :cond_0
 
     .line 11
     .line 12
-    const/4 v0, 0x1
+    const/4 p1, 0x1
 
     .line 13
     goto :goto_0
 
     .line 14
     :cond_0
-    const-string v0, ""
+    const-string p1, ""
 
     .line 15
     .line 16
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 17
     .line 18
     .line 19
-    move-result v0
+    move-result p1
 
     .line 20
     :goto_0
-    if-eqz v0, :cond_1
+    if-eqz p1, :cond_1
 
     .line 21
     .line 22
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 23
     :cond_1
-    return-object p1
+    return-object p0
 .end method
 
 .method public isSupported()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    sget-object v0, Lokhttp3/internal/platform/BouncyCastlePlatform;->Companion:Lokhttp3/internal/platform/BouncyCastlePlatform$Companion;
+    sget-object p0, Lokhttp3/internal/platform/BouncyCastlePlatform;->Companion:Lokhttp3/internal/platform/BouncyCastlePlatform$Companion;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/platform/BouncyCastlePlatform$Companion;->isSupported()Z
+    invoke-virtual {p0}, Lokhttp3/internal/platform/BouncyCastlePlatform$Companion;->isSupported()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public matchesSocket(Ljavax/net/ssl/SSLSocket;)Z
@@ -298,10 +298,10 @@
     .line 2
     .line 3
     .line 4
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 5
-    return p1
+    return p0
 .end method
 
 .method public matchesSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)Z
@@ -313,10 +313,10 @@
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result p0
 
     .line 5
-    return p1
+    return p0
 .end method
 
 .method public trustManager(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
@@ -328,8 +328,8 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object p0
 
     .line 5
-    return-object p1
+    return-object p0
 .end method

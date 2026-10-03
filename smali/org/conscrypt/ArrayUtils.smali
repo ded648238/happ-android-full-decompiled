@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/ArrayUtils;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -60,7 +60,7 @@
 
     .line 19
     .line 20
-    invoke-static {p0, v3, p1, v1, v2}, Lmi2;->s(ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0, v3, p1, v1, v2}, Leh0;->t(ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
@@ -301,7 +301,7 @@
 
     .line 7
     :cond_0
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 8
     :goto_0

@@ -1,239 +1,504 @@
 .class public final Lio/sentry/q;
-.super Ljava/util/TimerTask;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lio/sentry/g0;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic a:I
 
-.field public final synthetic R:Ljava/lang/Object;
+.field public final b:Ljava/util/Map;
+
+.field public final c:Lio/sentry/o6;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
-    .locals 0
+.method public constructor <init>(Lio/sentry/android/core/SentryAndroidOptions;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lio/sentry/q;->a:I
+
+    .line 21
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 22
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 23
+    invoke-static {v0}, Ljava/util/Collections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lio/sentry/q;->b:Ljava/util/Map;
+
+    .line 24
+    iput-object p1, p0, Lio/sentry/q;->c:Lio/sentry/o6;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lio/sentry/o6;)V
+    .locals 1
 
     .line 1
-    iput p1, p0, Lio/sentry/q;->Q:I
+    const/4 v0, 0x1
 
     .line 2
+    iput v0, p0, Lio/sentry/q;->a:I
+
     .line 3
-    iput-object p2, p0, Lio/sentry/q;->R:Ljava/lang/Object;
-
     .line 4
-    .line 5
-    invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 5
     .line 6
     .line 7
+    new-instance v0, Ljava/util/WeakHashMap;
+
     .line 8
+    .line 9
+    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {v0}, Ljava/util/Collections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    iput-object v0, p0, Lio/sentry/q;->b:Ljava/util/Map;
+
+    .line 17
+    .line 18
+    iput-object p1, p0, Lio/sentry/q;->c:Lio/sentry/o6;
+
+    .line 19
+    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final b(Lio/sentry/f5;Lio/sentry/l0;)Lio/sentry/f5;
+    .locals 5
 
     .line 1
-    iget v0, p0, Lio/sentry/q;->Q:I
+    iget v0, p0, Lio/sentry/q;->a:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/sentry/q;->R:Ljava/lang/Object;
+    iget-object v1, p0, Lio/sentry/q;->c:Lio/sentry/o6;
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    iget-object p0, p0, Lio/sentry/q;->b:Ljava/util/Map;
 
     .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    check-cast v1, Lcz0;
+    packed-switch v0, :pswitch_data_0
 
     .line 9
     .line 10
-    iget-object v0, v1, Lcz0;->U:Ljava/lang/Object;
-
     .line 11
-    .line 12
-    check-cast v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+    invoke-virtual {v1}, Lio/sentry/o6;->isEnableDeduplication()Z
 
+    .line 12
     .line 13
     .line 14
-    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    move-result p2
 
     .line 15
+    if-eqz p2, :cond_4
+
     .line 16
     .line 17
-    move-result-object v0
+    invoke-virtual {p1}, Lio/sentry/u4;->a()Ljava/lang/Throwable;
 
     .line 18
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
     .line 19
     .line 20
+    move-result-object p2
+
     .line 21
-    move-result v2
+    if-eqz p2, :cond_5
 
     .line 22
-    if-eqz v2, :cond_0
-
     .line 23
-    .line 24
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0, p2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
+    .line 24
     .line 25
     .line 26
+    move-result v0
+
     .line 27
-    move-result-object v2
+    if-nez v0, :cond_3
 
     .line 28
-    check-cast v2, Lio/sentry/transport/o;
-
     .line 29
-    .line 30
-    invoke-interface {v2, v1}, Lio/sentry/transport/o;->i(Lcz0;)V
+    new-instance v0, Ljava/util/ArrayList;
 
+    .line 30
     .line 31
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
     .line 32
     .line 33
-    goto :goto_0
-
     .line 34
-    :cond_0
-    return-void
+    move-object v3, p2
 
     .line 35
-    :pswitch_0
-    check-cast v1, Lio/sentry/android/core/w0;
+    :goto_0
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     .line 36
     .line 37
-    iget-object v0, v1, Lio/sentry/android/core/w0;->V:Lio/sentry/j4;
-
     .line 38
+    move-result-object v4
+
     .line 39
-    iget-boolean v1, v1, Lio/sentry/android/core/w0;->W:Z
+    if-eqz v4, :cond_0
 
     .line 40
     .line 41
-    if-eqz v1, :cond_1
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     .line 42
     .line 43
-    invoke-virtual {v0}, Lio/sentry/j4;->j()V
-
     .line 44
-    .line 45
-    .line 46
-    :cond_1
-    invoke-virtual {v0}, Lio/sentry/j4;->h()Lio/sentry/m6;
+    move-result-object v4
 
+    .line 45
+    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 46
     .line 47
     .line 48
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
     .line 49
-    move-result-object v1
-
     .line 50
-    invoke-virtual {v1}, Lio/sentry/m6;->getReplayController()Lio/sentry/x3;
-
     .line 51
+    move-result-object v3
+
     .line 52
+    goto :goto_0
+
     .line 53
-    move-result-object v1
+    :cond_0
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     .line 54
-    invoke-interface {v1}, Lio/sentry/x3;->stop()V
-
     .line 55
     .line 56
+    move-result-object v0
+
     .line 57
-    invoke-virtual {v0}, Lio/sentry/j4;->h()Lio/sentry/m6;
+    :cond_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 58
     .line 59
     .line 60
-    move-result-object v0
+    move-result v3
 
     .line 61
-    invoke-virtual {v0}, Lio/sentry/m6;->getContinuousProfiler()Lio/sentry/s0;
+    if-eqz v3, :cond_2
 
     .line 62
     .line 63
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 64
-    move-result-object v0
-
     .line 65
-    const/4 v1, 0x0
-
     .line 66
-    invoke-interface {v0, v1}, Lio/sentry/s0;->close(Z)V
+    move-result-object v3
 
     .line 67
+    invoke-interface {p0, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
     .line 68
     .line 69
-    return-void
-
     .line 70
-    :pswitch_1
-    check-cast v1, Lio/sentry/t;
+    move-result v3
 
     .line 71
-    .line 72
-    iget-object v0, v1, Lio/sentry/t;->d:Ljava/util/ArrayList;
+    if-eqz v3, :cond_1
 
+    .line 72
     .line 73
+    goto :goto_1
+
     .line 74
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    :cond_2
+    invoke-interface {p0, p2, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 75
     .line 76
     .line 77
-    move-result-object v0
+    goto :goto_2
 
     .line 78
+    :cond_3
     :goto_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {v1}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
 
     .line 79
     .line 80
     .line 81
-    move-result v1
+    move-result-object p0
 
     .line 82
-    if-eqz v1, :cond_2
+    sget-object p2, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
 
     .line 83
     .line 84
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    iget-object p1, p1, Lio/sentry/u4;->X:Lio/sentry/protocol/w;
 
     .line 85
     .line 86
+    filled-new-array {p1}, [Ljava/lang/Object;
+
     .line 87
-    move-result-object v1
-
     .line 88
-    check-cast v1, Lio/sentry/z0;
-
     .line 89
+    move-result-object p1
+
     .line 90
-    invoke-interface {v1}, Lio/sentry/z0;->c()V
+    const-string v0, "Duplicate Exception detected. Event %s will be discarded."
 
     .line 91
     .line 92
+    invoke-interface {p0, p2, v0, p1}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
+
     .line 93
-    goto :goto_1
-
     .line 94
-    :cond_2
-    return-void
-
     .line 95
+    move-object p1, v2
+
+    .line 96
+    goto :goto_2
+
+    .line 97
+    :cond_4
+    invoke-virtual {v1}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object p0
+
+    .line 101
+    sget-object p2, Lio/sentry/o5;->DEBUG:Lio/sentry/o5;
+
+    .line 102
+    .line 103
+    const/4 v0, 0x0
+
+    .line 104
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 105
+    .line 106
+    const-string v1, "Event deduplication is disabled."
+
+    .line 107
+    .line 108
+    invoke-interface {p0, p2, v1, v0}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 109
+    .line 110
+    .line 111
+    :cond_5
+    :goto_2
+    return-object p1
+
+    .line 112
+    :pswitch_0
+    const-string v0, "sentry:typeCheckHint"
+
+    .line 113
+    .line 114
+    invoke-virtual {p2, v0}, Lio/sentry/l0;->b(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 115
+    .line 116
+    .line 117
+    move-result-object v0
+
+    .line 118
+    const-class v3, Lio/sentry/l7;
+
+    .line 119
+    .line 120
+    invoke-virtual {v3, v0}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+
+    .line 121
+    .line 122
+    .line 123
+    move-result v0
+
+    .line 124
+    if-nez v0, :cond_6
+
+    .line 125
+    .line 126
+    goto :goto_3
+
+    .line 127
+    :cond_6
+    invoke-virtual {p1}, Lio/sentry/f5;->f()Lio/sentry/protocol/v;
+
+    .line 128
+    .line 129
+    .line 130
+    move-result-object v0
+
+    .line 131
+    if-nez v0, :cond_7
+
+    .line 132
+    .line 133
+    goto :goto_3
+
+    .line 134
+    :cond_7
+    iget-object v3, v0, Lio/sentry/protocol/v;->X:Ljava/lang/String;
+
+    .line 135
+    .line 136
+    if-nez v3, :cond_8
+
+    .line 137
+    .line 138
+    goto :goto_3
+
+    .line 139
+    :cond_8
+    iget-object v0, v0, Lio/sentry/protocol/v;->c0:Ljava/lang/Long;
+
+    .line 140
+    .line 141
+    if-nez v0, :cond_9
+
+    .line 142
+    .line 143
+    goto :goto_3
+
+    .line 144
+    :cond_9
+    invoke-interface {p0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 145
+    .line 146
+    .line 147
+    move-result-object v4
+
+    .line 148
+    check-cast v4, Ljava/lang/Long;
+
+    .line 149
+    .line 150
+    if-eqz v4, :cond_a
+
+    .line 151
+    .line 152
+    invoke-virtual {v4, v0}, Ljava/lang/Long;->equals(Ljava/lang/Object;)Z
+
+    .line 153
+    .line 154
+    .line 155
+    move-result v4
+
+    .line 156
+    if-nez v4, :cond_a
+
+    .line 157
+    .line 158
+    check-cast v1, Lio/sentry/android/core/SentryAndroidOptions;
+
+    .line 159
+    .line 160
+    invoke-virtual {v1}, Lio/sentry/o6;->getLogger()Lio/sentry/ILogger;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object p0
+
+    .line 164
+    sget-object v0, Lio/sentry/o5;->INFO:Lio/sentry/o5;
+
+    .line 165
+    .line 166
+    iget-object p1, p1, Lio/sentry/u4;->X:Lio/sentry/protocol/w;
+
+    .line 167
+    .line 168
+    filled-new-array {p1}, [Ljava/lang/Object;
+
+    .line 169
+    .line 170
+    .line 171
+    move-result-object p1
+
+    .line 172
+    const-string v1, "Event %s has been dropped due to multi-threaded deduplication"
+
+    .line 173
+    .line 174
+    invoke-interface {p0, v0, v1, p1}, Lio/sentry/ILogger;->i(Lio/sentry/o5;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 175
+    .line 176
+    .line 177
+    sget-object p0, Lio/sentry/hints/e;->MULTITHREADED_DEDUPLICATION:Lio/sentry/hints/e;
+
+    .line 178
+    .line 179
+    const-string p1, "sentry:eventDropReason"
+
+    .line 180
+    .line 181
+    invoke-virtual {p2, p0, p1}, Lio/sentry/l0;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 182
+    .line 183
+    .line 184
+    move-object p1, v2
+
+    .line 185
+    goto :goto_3
+
+    .line 186
+    :cond_a
+    invoke-interface {p0, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 187
+    .line 188
+    .line 189
+    :goto_3
+    return-object p1
+
+    .line 190
+    nop
+
+    .line 191
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

@@ -1,46 +1,23 @@
-.class public final Lch3;
-.super Leh3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public interface abstract annotation Lch3;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lx73;
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation Lch3;
+        value = true
+    .end subannotation
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
 
 
 # virtual methods
-.method public final bridge synthetic d()Lv73;
-    .locals 1
-
-    .line 12
-    invoke-virtual {p0}, Lch3;->d()Lw73;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final d()Lw73;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lgh3;->f()Lp83;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    check-cast v0, Lx73;
-
-    .line 6
-    .line 7
-    invoke-interface {v0}, Lx73;->d()Lw73;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    return-object v0
+.method public abstract value()Z
 .end method

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Http2Connection$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -30,11 +30,11 @@
         "socket",
         "",
         "peerName",
-        "Ls50;",
+        "Lf80;",
         "source",
-        "Lr50;",
+        "Le80;",
         "sink",
-        "(Ljava/net/Socket;Ljava/lang/String;Ls50;Lr50;)Lokhttp3/internal/http2/Http2Connection$Builder;",
+        "(Ljava/net/Socket;Ljava/lang/String;Lf80;Le80;)Lokhttp3/internal/http2/Http2Connection$Builder;",
         "Lokhttp3/internal/http2/Http2Connection$Listener;",
         "listener",
         "(Lokhttp3/internal/http2/Http2Connection$Listener;)Lokhttp3/internal/http2/Http2Connection$Builder;",
@@ -66,16 +66,16 @@
         "()Ljava/lang/String;",
         "setConnectionName$okhttp",
         "(Ljava/lang/String;)V",
-        "Ls50;",
+        "Lf80;",
         "getSource$okhttp",
-        "()Ls50;",
+        "()Lf80;",
         "setSource$okhttp",
-        "(Ls50;)V",
-        "Lr50;",
+        "(Lf80;)V",
+        "Le80;",
         "getSink$okhttp",
-        "()Lr50;",
+        "()Le80;",
         "setSink$okhttp",
-        "(Lr50;)V",
+        "(Le80;)V",
         "Lokhttp3/internal/http2/Http2Connection$Listener;",
         "getListener$okhttp",
         "()Lokhttp3/internal/http2/Http2Connection$Listener;",
@@ -114,11 +114,11 @@
 
 .field private pushObserver:Lokhttp3/internal/http2/PushObserver;
 
-.field public sink:Lr50;
+.field public sink:Le80;
 
 .field public socket:Ljava/net/Socket;
 
-.field public source:Ls50;
+.field public source:Lf80;
 
 .field private final taskRunner:Lokhttp3/internal/concurrent/TaskRunner;
 
@@ -165,7 +165,7 @@
     return-void
 .end method
 
-.method public static synthetic socket$default(Lokhttp3/internal/http2/Http2Connection$Builder;Ljava/net/Socket;Ljava/lang/String;Ls50;Lr50;ILjava/lang/Object;)Lokhttp3/internal/http2/Http2Connection$Builder;
+.method public static synthetic socket$default(Lokhttp3/internal/http2/Http2Connection$Builder;Ljava/net/Socket;Ljava/lang/String;Lf80;Le80;ILjava/lang/Object;)Lokhttp3/internal/http2/Http2Connection$Builder;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -199,7 +199,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1}, Lkz0;->X(Ljava/net/Socket;)Lle6;
+    invoke-static {p1}, Lnn3;->f0(Ljava/net/Socket;)Ld27;
 
     .line 14
     .line 15
@@ -207,7 +207,7 @@
     move-result-object p3
 
     .line 17
-    invoke-static {p3}, Lkz0;->r(Lle6;)Lhc5;
+    invoke-static {p3}, Lnn3;->n(Ld27;)Liw5;
 
     .line 18
     .line 19
@@ -224,7 +224,7 @@
 
     .line 24
     .line 25
-    invoke-static {p1}, Lkz0;->V(Ljava/net/Socket;)Lpb6;
+    invoke-static {p1}, Lnn3;->d0(Ljava/net/Socket;)Lqy6;
 
     .line 26
     .line 27
@@ -232,7 +232,7 @@
     move-result-object p4
 
     .line 29
-    invoke-static {p4}, Lkz0;->q(Lpb6;)Lgc5;
+    invoke-static {p4}, Lnn3;->m(Lqy6;)Lhw5;
 
     .line 30
     .line 31
@@ -241,7 +241,7 @@
 
     .line 33
     :cond_2
-    invoke-virtual {p0, p1, p2, p3, p4}, Lokhttp3/internal/http2/Http2Connection$Builder;->socket(Ljava/net/Socket;Ljava/lang/String;Ls50;Lr50;)Lokhttp3/internal/http2/Http2Connection$Builder;
+    invoke-virtual {p0, p1, p2, p3, p4}, Lokhttp3/internal/http2/Http2Connection$Builder;->socket(Ljava/net/Socket;Ljava/lang/String;Lf80;Le80;)Lokhttp3/internal/http2/Http2Connection$Builder;
 
     .line 34
     .line 35
@@ -271,182 +271,182 @@
 .end method
 
 .method public final getClient$okhttp()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->client:Z
+    iget-boolean p0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->client:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getConnectionName$okhttp()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->connectionName:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->connectionName:Ljava/lang/String;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    return-object v0
+    return-object p0
 
     .line 6
     :cond_0
-    const-string v0, "connectionName"
+    const-string p0, "connectionName"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    throw v0
+    throw p0
 .end method
 
 .method public final getListener$okhttp()Lokhttp3/internal/http2/Http2Connection$Listener;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->listener:Lokhttp3/internal/http2/Http2Connection$Listener;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->listener:Lokhttp3/internal/http2/Http2Connection$Listener;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPingIntervalMillis$okhttp()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->pingIntervalMillis:I
+    iget p0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->pingIntervalMillis:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getPushObserver$okhttp()Lokhttp3/internal/http2/PushObserver;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->pushObserver:Lokhttp3/internal/http2/PushObserver;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->pushObserver:Lokhttp3/internal/http2/PushObserver;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final getSink$okhttp()Lr50;
-    .locals 1
+.method public final getSink$okhttp()Le80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->sink:Lr50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->sink:Le80;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    return-object v0
+    return-object p0
 
     .line 6
     :cond_0
-    const-string v0, "sink"
+    const-string p0, "sink"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    throw v0
+    throw p0
 .end method
 
 .method public final getSocket$okhttp()Ljava/net/Socket;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->socket:Ljava/net/Socket;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    return-object v0
+    return-object p0
 
     .line 6
     :cond_0
-    const-string v0, "socket"
+    const-string p0, "socket"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    throw v0
+    throw p0
 .end method
 
-.method public final getSource$okhttp()Ls50;
-    .locals 1
+.method public final getSource$okhttp()Lf80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->source:Lf80;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    return-object v0
+    return-object p0
 
     .line 6
     :cond_0
-    const-string v0, "source"
+    const-string p0, "source"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    throw v0
+    throw p0
 .end method
 
 .method public final getTaskRunner$okhttp()Lokhttp3/internal/concurrent/TaskRunner;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->taskRunner:Lokhttp3/internal/concurrent/TaskRunner;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->taskRunner:Lokhttp3/internal/concurrent/TaskRunner;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final listener(Lokhttp3/internal/http2/Http2Connection$Listener;)Lokhttp3/internal/http2/Http2Connection$Builder;
@@ -562,7 +562,7 @@
     return-void
 .end method
 
-.method public final setSink$okhttp(Lr50;)V
+.method public final setSink$okhttp(Le80;)V
     .locals 0
 
     .line 1
@@ -571,7 +571,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->sink:Lr50;
+    iput-object p1, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->sink:Le80;
 
     .line 5
     .line 6
@@ -594,7 +594,7 @@
     return-void
 .end method
 
-.method public final setSource$okhttp(Ls50;)V
+.method public final setSource$okhttp(Lf80;)V
     .locals 0
 
     .line 1
@@ -603,7 +603,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->source:Ls50;
+    iput-object p1, p0, Lokhttp3/internal/http2/Http2Connection$Builder;->source:Lf80;
 
     .line 5
     .line 6
@@ -635,11 +635,11 @@
 
     move-object v1, p1
 
-    invoke-static/range {v0 .. v6}, Lokhttp3/internal/http2/Http2Connection$Builder;->socket$default(Lokhttp3/internal/http2/Http2Connection$Builder;Ljava/net/Socket;Ljava/lang/String;Ls50;Lr50;ILjava/lang/Object;)Lokhttp3/internal/http2/Http2Connection$Builder;
+    invoke-static/range {v0 .. v6}, Lokhttp3/internal/http2/Http2Connection$Builder;->socket$default(Lokhttp3/internal/http2/Http2Connection$Builder;Ljava/net/Socket;Ljava/lang/String;Lf80;Le80;ILjava/lang/Object;)Lokhttp3/internal/http2/Http2Connection$Builder;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final socket(Ljava/net/Socket;Ljava/lang/String;)Lokhttp3/internal/http2/Http2Connection$Builder;
@@ -669,14 +669,14 @@
 
     move-object v2, p2
 
-    invoke-static/range {v0 .. v6}, Lokhttp3/internal/http2/Http2Connection$Builder;->socket$default(Lokhttp3/internal/http2/Http2Connection$Builder;Ljava/net/Socket;Ljava/lang/String;Ls50;Lr50;ILjava/lang/Object;)Lokhttp3/internal/http2/Http2Connection$Builder;
+    invoke-static/range {v0 .. v6}, Lokhttp3/internal/http2/Http2Connection$Builder;->socket$default(Lokhttp3/internal/http2/Http2Connection$Builder;Ljava/net/Socket;Ljava/lang/String;Lf80;Le80;ILjava/lang/Object;)Lokhttp3/internal/http2/Http2Connection$Builder;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
-.method public final socket(Ljava/net/Socket;Ljava/lang/String;Ls50;)Lokhttp3/internal/http2/Http2Connection$Builder;
+.method public final socket(Ljava/net/Socket;Ljava/lang/String;Lf80;)Lokhttp3/internal/http2/Http2Connection$Builder;
     .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -705,14 +705,14 @@
 
     move-object v3, p3
 
-    invoke-static/range {v0 .. v6}, Lokhttp3/internal/http2/Http2Connection$Builder;->socket$default(Lokhttp3/internal/http2/Http2Connection$Builder;Ljava/net/Socket;Ljava/lang/String;Ls50;Lr50;ILjava/lang/Object;)Lokhttp3/internal/http2/Http2Connection$Builder;
+    invoke-static/range {v0 .. v6}, Lokhttp3/internal/http2/Http2Connection$Builder;->socket$default(Lokhttp3/internal/http2/Http2Connection$Builder;Ljava/net/Socket;Ljava/lang/String;Lf80;Le80;ILjava/lang/Object;)Lokhttp3/internal/http2/Http2Connection$Builder;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
-.method public final socket(Ljava/net/Socket;Ljava/lang/String;Ls50;Lr50;)Lokhttp3/internal/http2/Http2Connection$Builder;
+.method public final socket(Ljava/net/Socket;Ljava/lang/String;Lf80;Le80;)Lokhttp3/internal/http2/Http2Connection$Builder;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -816,12 +816,12 @@
     .line 50
     .line 51
     .line 52
-    invoke-virtual {p0, p3}, Lokhttp3/internal/http2/Http2Connection$Builder;->setSource$okhttp(Ls50;)V
+    invoke-virtual {p0, p3}, Lokhttp3/internal/http2/Http2Connection$Builder;->setSource$okhttp(Lf80;)V
 
     .line 53
     .line 54
     .line 55
-    invoke-virtual {p0, p4}, Lokhttp3/internal/http2/Http2Connection$Builder;->setSink$okhttp(Lr50;)V
+    invoke-virtual {p0, p4}, Lokhttp3/internal/http2/Http2Connection$Builder;->setSink$okhttp(Le80;)V
 
     .line 56
     .line 57

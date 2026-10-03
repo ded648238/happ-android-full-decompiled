@@ -1,20 +1,25 @@
-.class public interface abstract Lj21;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lqi;
+.class public final Lj21;
+.super Lm93;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# virtual methods
-.method public abstract N(Ln21;Ljava/lang/Object;)Ljava/lang/Object;
-.end method
+# instance fields
+.field public final k:Landroid/content/res/AssetFileDescriptor;
 
-.method public abstract a()Lj21;
-.end method
 
-.method public abstract getName()Lha4;
-.end method
+# direct methods
+.method public constructor <init>(Landroid/content/res/AssetFileDescriptor;)V
+    .locals 0
 
-.method public abstract q()Lj21;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lj21;->k:Landroid/content/res/AssetFileDescriptor;
+
+    .line 5
+    .line 6
+    return-void
 .end method

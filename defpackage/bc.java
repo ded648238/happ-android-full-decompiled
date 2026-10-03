@@ -1,43 +1,19 @@
 package defpackage;
 
-import android.content.ComponentCallbacks2;
-import android.content.res.Configuration;
-import java.lang.ref.WeakReference;
-import java.util.Iterator;
-import java.util.Map;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class bc implements gp6 {
+    public boolean X;
+    public final /* synthetic */ vu6 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class bc implements ComponentCallbacks2 {
-    public final /* synthetic */ Configuration Q;
-    public final /* synthetic */ yl2 R;
-
-    public bc(Configuration configuration, yl2 yl2Var) {
-        this.Q = configuration;
-        this.R = yl2Var;
+    public bc(vu6 vu6Var) {
+        this.Y = vu6Var;
     }
 
-    @Override // android.content.ComponentCallbacks
-    public final void onConfigurationChanged(Configuration configuration) {
-        Configuration configuration2 = this.Q;
-        int iUpdateFrom = configuration2.updateFrom(configuration);
-        Iterator it = this.R.a.entrySet().iterator();
-        while (it.hasNext()) {
-            wl2 wl2Var = (wl2) ((WeakReference) ((Map.Entry) it.next()).getValue()).get();
-            if (wl2Var == null || Configuration.needNewResources(iUpdateFrom, wl2Var.b)) {
-                it.remove();
-            }
+    @Override // defpackage.gp6
+    public final void a(fp6 fp6Var, Object obj) {
+        if (obj == this.Y) {
+            this.X = true;
         }
-        configuration2.setTo(configuration);
-    }
-
-    @Override // android.content.ComponentCallbacks
-    public final void onLowMemory() {
-        this.R.a.clear();
-    }
-
-    @Override // android.content.ComponentCallbacks2
-    public final void onTrimMemory(int i) {
-        this.R.a.clear();
     }
 }

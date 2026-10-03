@@ -1,120 +1,52 @@
 .class public final Lzb2;
-.super Landroid/widget/EdgeEffect;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:F
+.field public c0:Lvy5;
 
-.field public b:F
+.field public d0:Lub2;
 
+.field public synthetic e0:Ljava/lang/Object;
 
-# direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0, p1}, Landroid/widget/EdgeEffect;-><init>(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-static {p1}, Lew0;->a(Landroid/content/Context;)Lb71;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 9
-    .line 10
-    iget p1, p1, Lb71;->Q:F
-
-    .line 11
-    .line 12
-    mul-float p1, p1, v0
-
-    .line 13
-    .line 14
-    iput p1, p0, Lzb2;->a:F
-
-    .line 15
-    .line 16
-    return-void
-.end method
+.field public f0:I
 
 
 # virtual methods
-.method public final onAbsorb(I)V
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
+    iput-object p1, p0, Lzb2;->e0:Ljava/lang/Object;
 
     .line 2
-    iput v0, p0, Lzb2;->b:F
-
     .line 3
-    .line 4
-    invoke-super {p0, p1}, Landroid/widget/EdgeEffect;->onAbsorb(I)V
+    iget p1, p0, Lzb2;->f0:I
 
+    .line 4
     .line 5
+    const/high16 v0, -0x80000000
+
     .line 6
     .line 7
-    return-void
-.end method
-
-.method public final onPull(F)V
-    .locals 1
-
-    const/4 v0, 0x0
+    or-int/2addr p1, v0
 
     .line 8
-    iput v0, p0, Lzb2;->b:F
+    iput p1, p0, Lzb2;->f0:I
 
     .line 9
-    invoke-super {p0, p1}, Landroid/widget/EdgeEffect;->onPull(F)V
+    .line 10
+    const/4 p1, 0x0
 
-    return-void
-.end method
+    .line 11
+    invoke-static {p1, p1, p0}, Lh31;->S(Lja2;Ln5;Ld31;)Ljava/lang/Object;
 
-.method public final onPull(FF)V
-    .locals 1
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
 
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    iput v0, p0, Lzb2;->b:F
-
-    .line 3
-    .line 4
-    invoke-super {p0, p1, p2}, Landroid/widget/EdgeEffect;->onPull(FF)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final onRelease()V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    iput v0, p0, Lzb2;->b:F
-
-    .line 3
-    .line 4
-    invoke-super {p0}, Landroid/widget/EdgeEffect;->onRelease()V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
+    .line 15
+    return-object p0
 .end method

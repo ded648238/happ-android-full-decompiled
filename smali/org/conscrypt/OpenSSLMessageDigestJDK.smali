@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSSLMessageDigestJDK;
 .super Ljava/security/MessageDigestSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Cloneable;
@@ -321,14 +321,14 @@
 .end method
 
 .method public engineGetDigestLength()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/OpenSSLMessageDigestJDK;->size:I
+    iget p0, p0, Lorg/conscrypt/OpenSSLMessageDigestJDK;->size:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public declared-synchronized engineReset()V
@@ -488,11 +488,11 @@
 
     .line 28
     .line 29
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 30
     .line 31
-    if-nez v4, :cond_2
+    if-nez v2, :cond_2
 
     .line 32
     .line 33

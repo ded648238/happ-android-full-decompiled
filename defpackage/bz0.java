@@ -1,29 +1,12 @@
 package defpackage;
 
-import java.util.Arrays;
+import android.os.Handler;
+import android.os.Looper;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class bz0 {
-    public final byte[] a;
-    public final int b;
-
-    public bz0(byte[] bArr, int i) {
-        this.a = qt2.s(bArr);
-        this.b = i;
-    }
-
-    public final boolean equals(Object obj) {
-        if (!(obj instanceof bz0)) {
-            return false;
-        }
-        bz0 bz0Var = (bz0) obj;
-        if (bz0Var.b != this.b) {
-            return false;
-        }
-        return Arrays.equals(this.a, bz0Var.a);
-    }
-
-    public final int hashCode() {
-        return qt2.I(this.a) ^ this.b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class bz0 {
+    public static Handler a(Looper looper) {
+        return Handler.createAsync(looper);
     }
 }

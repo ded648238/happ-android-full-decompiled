@@ -1,61 +1,207 @@
-.class public final synthetic Lpd;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lpd;
+.super Lc1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/text/Layout$TextInclusionStrategy;
+.implements Lc41;
 
 
 # instance fields
-.field public final synthetic a:Lrd;
+.field private volatile _preHandler:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lrd;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Lrt2;->z0:Lrt2;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lpd;->a:Lrd;
+    invoke-direct {p0, v0}, Lc1;-><init>(Ly31;)V
 
+    .line 4
     .line 5
     .line 6
+    iput-object p0, p0, Lpd;->_preHandler:Ljava/lang/Object;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final isSegmentInside(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
-    .locals 1
+.method public final J(Lz31;Ljava/lang/Throwable;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lpd;->a:Lrd;
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1, p2}, Lrd;->C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const/16 v0, 0x1a
 
     .line 4
     .line 5
-    .line 6
-    move-result-object p1
+    if-gt v0, p1, :cond_4
 
+    .line 6
     .line 7
-    check-cast p1, Ljava/lang/Boolean;
+    const/16 v0, 0x1c
 
     .line 8
     .line 9
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    if-ge p1, v0, :cond_4
 
     .line 10
     .line 11
-    .line 12
-    move-result p1
+    iget-object p1, p0, Lpd;->_preHandler:Ljava/lang/Object;
 
+    .line 12
     .line 13
-    return p1
+    const/4 v0, 0x0
+
+    .line 14
+    if-eq p1, p0, :cond_0
+
+    .line 15
+    .line 16
+    check-cast p1, Ljava/lang/reflect/Method;
+
+    .line 17
+    .line 18
+    goto :goto_1
+
+    .line 19
+    :cond_0
+    :try_start_0
+    const-class p1, Ljava/lang/Thread;
+
+    .line 20
+    .line 21
+    const-string v1, "getUncaughtExceptionPreHandler"
+
+    .line 22
+    .line 23
+    invoke-virtual {p1, v1, v0}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p1
+
+    .line 27
+    invoke-virtual {p1}, Ljava/lang/reflect/Method;->getModifiers()I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v1
+
+    .line 31
+    invoke-static {v1}, Ljava/lang/reflect/Modifier;->isPublic(I)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v1
+
+    .line 35
+    if-eqz v1, :cond_1
+
+    .line 36
+    .line 37
+    invoke-virtual {p1}, Ljava/lang/reflect/Method;->getModifiers()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    invoke-static {v1}, Ljava/lang/reflect/Modifier;->isStatic(I)Z
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 45
+    if-eqz v1, :cond_1
+
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :catchall_0
+    :cond_1
+    move-object p1, v0
+
+    .line 49
+    :goto_0
+    iput-object p1, p0, Lpd;->_preHandler:Ljava/lang/Object;
+
+    .line 50
+    .line 51
+    :goto_1
+    if-eqz p1, :cond_2
+
+    .line 52
+    .line 53
+    invoke-virtual {p1, v0, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object p0
+
+    .line 57
+    goto :goto_2
+
+    .line 58
+    :cond_2
+    move-object p0, v0
+
+    .line 59
+    :goto_2
+    instance-of p1, p0, Ljava/lang/Thread$UncaughtExceptionHandler;
+
+    .line 60
+    .line 61
+    if-eqz p1, :cond_3
+
+    .line 62
+    .line 63
+    move-object v0, p0
+
+    .line 64
+    check-cast v0, Ljava/lang/Thread$UncaughtExceptionHandler;
+
+    .line 65
+    .line 66
+    :cond_3
+    if-eqz v0, :cond_4
+
+    .line 67
+    .line 68
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object p0
+
+    .line 72
+    invoke-interface {v0, p0, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
+
+    .line 73
+    .line 74
+    .line 75
+    :cond_4
+    return-void
 .end method

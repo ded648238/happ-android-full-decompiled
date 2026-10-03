@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/WebViewActivity;
 .super Lsu/happ/proxyutility/ui/BaseActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field public C0:Lf76;
+.field public N0:Lzs6;
 
 
 # direct methods
@@ -61,7 +61,7 @@
     move-result-object p1
 
     .line 8
-    sget v0, Lt95;->activity_web_view:I
+    sget v0, Ltt5;->activity_web_view:I
 
     .line 9
     .line 10
@@ -79,11 +79,11 @@
     move-result-object p1
 
     .line 16
-    sget v0, Ld95;->cl_loading:I
+    sget v0, Let5;->cl_loading:I
 
     .line 17
     .line 18
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 19
     .line 20
@@ -102,11 +102,11 @@
 
     .line 26
     .line 27
-    sget v0, Ld95;->cl_main:I
+    sget v0, Let5;->cl_main:I
 
     .line 28
     .line 29
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 30
     .line 31
@@ -122,11 +122,11 @@
 
     .line 36
     .line 37
-    sget v0, Ld95;->pb_loading:I
+    sget v0, Let5;->pb_loading:I
 
     .line 38
     .line 39
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 40
     .line 41
@@ -142,11 +142,11 @@
 
     .line 46
     .line 47
-    sget v0, Ld95;->toolbar:I
+    sget v0, Let5;->toolbar:I
 
     .line 48
     .line 49
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 50
     .line 51
@@ -165,11 +165,11 @@
 
     .line 57
     .line 58
-    sget v0, Ld95;->wv_main:I
+    sget v0, Let5;->wv_main:I
 
     .line 59
     .line 60
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 61
     .line 62
@@ -188,7 +188,7 @@
 
     .line 68
     .line 69
-    new-instance v3, Lf76;
+    new-instance v3, Lzs6;
 
     .line 70
     .line 71
@@ -199,15 +199,15 @@
 
     .line 73
     .line 74
-    const/4 v8, 0x2
+    const/4 v8, 0x4
 
     .line 75
-    invoke-direct/range {v3 .. v8}, Lf76;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct/range {v3 .. v8}, Lzs6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 76
     .line 77
     .line 78
-    iput-object v3, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iput-object v3, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 79
     .line 80
@@ -216,7 +216,7 @@
     .line 81
     .line 82
     .line 83
-    iget-object p1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object p1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 84
     .line 85
@@ -228,7 +228,7 @@
 
     .line 88
     .line 89
-    iget-object p1, p1, Lf76;->R:Ljava/lang/Object;
+    iget-object p1, p1, Lzs6;->Y:Ljava/lang/Object;
 
     .line 90
     .line 91
@@ -246,7 +246,7 @@
     .line 97
     .line 98
     .line 99
-    iget-object p1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object p1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 100
     .line 101
@@ -254,7 +254,7 @@
 
     .line 102
     .line 103
-    iget-object p1, p1, Lf76;->T:Ljava/lang/Object;
+    iget-object p1, p1, Lzs6;->c0:Ljava/lang/Object;
 
     .line 104
     .line 105
@@ -262,12 +262,12 @@
 
     .line 106
     .line 107
-    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->p(Landroidx/appcompat/widget/Toolbar;)V
+    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->q(Landroidx/appcompat/widget/Toolbar;)V
 
     .line 108
     .line 109
     .line 110
-    sget p1, Lx95;->title_web_view:I
+    sget p1, Lxt5;->title_web_view:I
 
     .line 111
     .line 112
@@ -308,7 +308,7 @@
 
     .line 130
     .line 131
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 132
     .line 133
@@ -316,7 +316,7 @@
 
     .line 134
     .line 135
-    iget-object v1, v1, Lf76;->U:Ljava/lang/Object;
+    iget-object v1, v1, Lzs6;->d0:Ljava/lang/Object;
 
     .line 136
     .line 137
@@ -324,11 +324,11 @@
 
     .line 138
     .line 139
-    new-instance v3, Lnr7;
+    new-instance v3, Lom8;
 
     .line 140
     .line 141
-    invoke-direct {v3, p0}, Lnr7;-><init>(Lsu/happ/proxyutility/ui/WebViewActivity;)V
+    invoke-direct {v3, p0}, Lom8;-><init>(Lsu/happ/proxyutility/ui/WebViewActivity;)V
 
     .line 142
     .line 143
@@ -338,7 +338,7 @@
     .line 145
     .line 146
     .line 147
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 148
     .line 149
@@ -346,7 +346,7 @@
 
     .line 150
     .line 151
-    iget-object v1, v1, Lf76;->U:Ljava/lang/Object;
+    iget-object v1, v1, Lzs6;->d0:Ljava/lang/Object;
 
     .line 152
     .line 153
@@ -354,11 +354,11 @@
 
     .line 154
     .line 155
-    new-instance v3, Lor7;
+    new-instance v3, Lpm8;
 
     .line 156
     .line 157
-    invoke-direct {v3, p0}, Lor7;-><init>(Lsu/happ/proxyutility/ui/WebViewActivity;)V
+    invoke-direct {v3, p0}, Lpm8;-><init>(Lsu/happ/proxyutility/ui/WebViewActivity;)V
 
     .line 158
     .line 159
@@ -368,7 +368,7 @@
     .line 161
     .line 162
     .line 163
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 164
     .line 165
@@ -376,7 +376,7 @@
 
     .line 166
     .line 167
-    iget-object v1, v1, Lf76;->U:Ljava/lang/Object;
+    iget-object v1, v1, Lzs6;->d0:Ljava/lang/Object;
 
     .line 168
     .line 169
@@ -400,7 +400,7 @@
     .line 177
     .line 178
     .line 179
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 180
     .line 181
@@ -408,7 +408,7 @@
 
     .line 182
     .line 183
-    iget-object v1, v1, Lf76;->U:Ljava/lang/Object;
+    iget-object v1, v1, Lzs6;->d0:Ljava/lang/Object;
 
     .line 184
     .line 185
@@ -429,7 +429,7 @@
     .line 192
     .line 193
     .line 194
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 195
     .line 196
@@ -437,7 +437,7 @@
 
     .line 197
     .line 198
-    iget-object v1, v1, Lf76;->U:Ljava/lang/Object;
+    iget-object v1, v1, Lzs6;->d0:Ljava/lang/Object;
 
     .line 199
     .line 200
@@ -450,7 +450,7 @@
     .line 203
     .line 204
     .line 205
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 206
     .line 207
@@ -458,7 +458,7 @@
 
     .line 208
     .line 209
-    iget-object v1, v1, Lf76;->U:Ljava/lang/Object;
+    iget-object v1, v1, Lzs6;->d0:Ljava/lang/Object;
 
     .line 210
     .line 211
@@ -471,23 +471,23 @@
     .line 214
     .line 215
     .line 216
-    iget-object v1, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 217
     .line 218
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 219
     .line 220
-    iget-object v0, v1, Lf76;->U:Ljava/lang/Object;
+    iget-object p0, p0, Lzs6;->d0:Ljava/lang/Object;
 
     .line 221
     .line 222
-    check-cast v0, Landroid/webkit/WebView;
+    check-cast p0, Landroid/webkit/WebView;
 
     .line 223
     .line 224
-    invoke-virtual {v0, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
     .line 225
     .line 226
@@ -496,7 +496,7 @@
 
     .line 228
     :cond_0
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 229
     .line 230
@@ -505,7 +505,7 @@
 
     .line 232
     :cond_1
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 233
     .line 234
@@ -514,7 +514,7 @@
 
     .line 236
     :cond_2
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 237
     .line 238
@@ -523,7 +523,7 @@
 
     .line 240
     :cond_3
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 241
     .line 242
@@ -532,7 +532,7 @@
 
     .line 244
     :cond_4
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 245
     .line 246
@@ -541,7 +541,7 @@
 
     .line 248
     :cond_5
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 249
     .line 250
@@ -550,7 +550,7 @@
 
     .line 252
     :cond_6
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 253
     .line 254
@@ -568,7 +568,7 @@
 
     .line 260
     :cond_8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 261
     .line 262
@@ -577,7 +577,7 @@
 
     .line 264
     :cond_9
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 265
     .line 266
@@ -591,30 +591,30 @@
     .line 269
     .line 270
     .line 271
-    move-result-object p1
+    move-result-object p0
 
     .line 272
-    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
 
     .line 273
     .line 274
     .line 275
-    move-result-object p1
+    move-result-object p0
 
     .line 276
-    const-string v0, "Missing required view with ID: "
+    const-string p1, "Missing required view with ID: "
 
     .line 277
     .line 278
-    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 279
     .line 280
     .line 281
-    move-result-object p1
+    move-result-object p0
 
     .line 282
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 283
     .line 284
@@ -657,23 +657,23 @@
 
     .line 17
     .line 18
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 19
     .line 20
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 21
     .line 22
-    iget-object v0, v0, Lf76;->U:Ljava/lang/Object;
+    iget-object p0, p0, Lzs6;->d0:Ljava/lang/Object;
 
     .line 23
     .line 24
-    check-cast v0, Landroid/webkit/WebView;
+    check-cast p0, Landroid/webkit/WebView;
 
     .line 25
     .line 26
-    invoke-virtual {v0, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
     .line 27
     .line 28
@@ -682,107 +682,107 @@
 
     .line 30
     :cond_0
-    const-string p1, "binding"
+    const-string p0, "binding"
 
     .line 31
     .line 32
-    invoke-static {p1}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 33
     .line 34
     .line 35
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 36
-    throw p1
+    throw p0
 
     .line 37
     :cond_1
     return-void
 .end method
 
-.method public final t()Landroidx/appcompat/widget/Toolbar;
-    .locals 1
+.method public final u()Landroidx/appcompat/widget/Toolbar;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lf76;->T:Ljava/lang/Object;
+    iget-object p0, p0, Lzs6;->c0:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v0, Landroidx/appcompat/widget/Toolbar;
+    check-cast p0, Landroidx/appcompat/widget/Toolbar;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    throw v0
+    throw p0
 .end method
 
-.method public final v()Z
-    .locals 1
+.method public final w()Z
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->C0:Lf76;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/WebViewActivity;->N0:Lzs6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lf76;->U:Ljava/lang/Object;
+    iget-object p0, p0, Lzs6;->d0:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v0, Landroid/webkit/WebView;
+    check-cast p0, Landroid/webkit/WebView;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 15
     .line 16
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 17
     .line 18
     .line 19
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 20
-    throw v0
+    throw p0
 .end method

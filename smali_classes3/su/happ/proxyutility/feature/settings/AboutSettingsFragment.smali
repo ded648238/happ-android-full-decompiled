@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;
-.super Lz42;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Luf2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -10,7 +10,7 @@
     }
     d2 = {
         "Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;",
-        "Lz42;",
+        "Luf2;",
         "<init>",
         "()V",
         "app"
@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field public O0:La52;
+.field public a1:Lvf2;
 
 
 # direct methods
@@ -34,7 +34,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lz42;-><init>()V
+    invoke-direct {p0}, Luf2;-><init>()V
 
     .line 2
     .line 3
@@ -44,35 +44,35 @@
 
 
 # virtual methods
-.method public final P()La52;
-    .locals 1
+.method public final Q()Lvf2;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->O0:La52;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->a1:Lvf2;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    return-object v0
+    return-object p0
 
     .line 6
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 12
-    throw v0
+    throw p0
 .end method
 
 .method public final y(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
@@ -84,7 +84,7 @@
     .line 2
     .line 3
     .line 4
-    sget v0, Lt95;->fragment_about_settings:I
+    sget v0, Ltt5;->fragment_about_settings:I
 
     .line 5
     .line 6
@@ -99,11 +99,11 @@
     move-result-object p1
 
     .line 11
-    sget p2, Ld95;->divider_faq:I
+    sget p2, Let5;->divider_faq:I
 
     .line 12
     .line 13
-    invoke-static {p1, p2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, p2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 14
     .line 15
@@ -119,11 +119,11 @@
 
     .line 20
     .line 21
-    sget p2, Ld95;->divider_url_schemes:I
+    sget p2, Let5;->divider_url_schemes:I
 
     .line 22
     .line 23
-    invoke-static {p1, p2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, p2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 24
     .line 25
@@ -139,11 +139,11 @@
 
     .line 30
     .line 31
-    sget p2, Ld95;->forward_about:I
+    sget p2, Let5;->forward_about:I
 
     .line 32
     .line 33
-    invoke-static {p1, p2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, p2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 34
     .line 35
@@ -159,11 +159,11 @@
 
     .line 40
     .line 41
-    sget p2, Ld95;->forward_faq:I
+    sget p2, Let5;->forward_faq:I
 
     .line 42
     .line 43
-    invoke-static {p1, p2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, p2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 44
     .line 45
@@ -179,11 +179,11 @@
 
     .line 50
     .line 51
-    sget p2, Ld95;->forward_url_schemes:I
+    sget p2, Let5;->forward_url_schemes:I
 
     .line 52
     .line 53
-    invoke-static {p1, p2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, p2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 54
     .line 55
@@ -199,11 +199,11 @@
 
     .line 60
     .line 61
-    sget p2, Ld95;->title_category:I
+    sget p2, Let5;->title_category:I
 
     .line 62
     .line 63
-    invoke-static {p1, p2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, p2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 64
     .line 65
@@ -219,7 +219,7 @@
 
     .line 70
     .line 71
-    new-instance p2, La52;
+    new-instance p2, Lvf2;
 
     .line 72
     .line 73
@@ -227,16 +227,16 @@
 
     .line 74
     .line 75
-    invoke-direct {p2, p1, v0, v2, v3}, La52;-><init>(Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;)V
+    invoke-direct {p2, p1, v0, v2, v3}, Lvf2;-><init>(Landroid/widget/LinearLayout;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;)V
 
     .line 76
     .line 77
     .line 78
-    iput-object p2, p0, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->O0:La52;
+    iput-object p2, p0, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->a1:Lvf2;
 
     .line 79
     .line 80
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->P()La52;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->Q()Lvf2;
 
     .line 81
     .line 82
@@ -244,25 +244,25 @@
     move-result-object p1
 
     .line 84
-    iget-object p1, p1, La52;->S:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object p1, p1, Lvf2;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 85
     .line 86
-    new-instance p2, Ls;
+    new-instance p2, Lr;
 
     .line 87
     .line 88
-    invoke-direct {p2, p0, v1}, Ls;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
+    invoke-direct {p2, p0, v1}, Lr;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
 
     .line 89
     .line 90
     .line 91
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 92
     .line 93
     .line 94
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->P()La52;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->Q()Lvf2;
 
     .line 95
     .line 96
@@ -270,15 +270,15 @@
     move-result-object p1
 
     .line 98
-    iget-object p1, p1, La52;->S:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object p1, p1, Lvf2;->Z:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 99
     .line 100
-    new-instance p2, Lt;
+    new-instance p2, Ls;
 
     .line 101
     .line 102
-    invoke-direct {p2, p0, v1}, Lt;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
+    invoke-direct {p2, p0, v1}, Ls;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
 
     .line 103
     .line 104
@@ -288,7 +288,7 @@
     .line 106
     .line 107
     .line 108
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->P()La52;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->Q()Lvf2;
 
     .line 109
     .line 110
@@ -296,28 +296,28 @@
     move-result-object p1
 
     .line 112
-    iget-object p1, p1, La52;->T:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object p1, p1, Lvf2;->c0:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 113
     .line 114
-    new-instance p2, Ls;
+    new-instance p2, Lr;
 
     .line 115
     .line 116
     const/4 v0, 0x1
 
     .line 117
-    invoke-direct {p2, p0, v0}, Ls;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
+    invoke-direct {p2, p0, v0}, Lr;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
 
     .line 118
     .line 119
     .line 120
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 121
     .line 122
     .line 123
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->P()La52;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->Q()Lvf2;
 
     .line 124
     .line 125
@@ -325,28 +325,28 @@
     move-result-object p1
 
     .line 127
-    iget-object p1, p1, La52;->R:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object p1, p1, Lvf2;->Y:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 128
     .line 129
-    new-instance p2, Ls;
+    new-instance p2, Lr;
 
     .line 130
     .line 131
     const/4 v1, 0x2
 
     .line 132
-    invoke-direct {p2, p0, v1}, Ls;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
+    invoke-direct {p2, p0, v1}, Lr;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
 
     .line 133
     .line 134
     .line 135
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lg72;)V
+    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;->setOnForwardIconClickListener(Lji2;)V
 
     .line 136
     .line 137
     .line 138
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->P()La52;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->Q()Lvf2;
 
     .line 139
     .line 140
@@ -354,15 +354,15 @@
     move-result-object p1
 
     .line 142
-    iget-object p1, p1, La52;->R:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    iget-object p1, p1, Lvf2;->Y:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
 
     .line 143
     .line 144
-    new-instance p2, Lt;
+    new-instance p2, Ls;
 
     .line 145
     .line 146
-    invoke-direct {p2, p0, v0}, Lt;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
+    invoke-direct {p2, p0, v0}, Ls;-><init>(Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;I)V
 
     .line 147
     .line 148
@@ -372,24 +372,24 @@
     .line 150
     .line 151
     .line 152
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->P()La52;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/settings/AboutSettingsFragment;->Q()Lvf2;
 
     .line 153
     .line 154
     .line 155
-    move-result-object p1
+    move-result-object p0
 
     .line 156
-    iget-object p1, p1, La52;->Q:Landroid/widget/LinearLayout;
+    iget-object p0, p0, Lvf2;->X:Landroid/widget/LinearLayout;
 
     .line 157
     .line 158
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 159
     .line 160
     .line 161
-    return-object p1
+    return-object p0
 
     .line 162
     :cond_0
@@ -398,36 +398,36 @@
     .line 163
     .line 164
     .line 165
-    move-result-object p1
+    move-result-object p0
 
     .line 166
-    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
 
     .line 167
     .line 168
     .line 169
-    move-result-object p1
+    move-result-object p0
 
     .line 170
-    const-string p2, "Missing required view with ID: "
+    const-string p1, "Missing required view with ID: "
 
     .line 171
     .line 172
-    invoke-virtual {p2, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 173
     .line 174
     .line 175
-    move-result-object p1
+    move-result-object p0
 
     .line 176
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 177
     .line 178
     .line 179
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 180
-    return-object p1
+    return-object p0
 .end method

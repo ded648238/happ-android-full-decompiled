@@ -1,101 +1,60 @@
-.class public abstract Lai4;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public Lai4;
+.super Lv5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Ljava/util/HashSet;
+# instance fields
+.field public final synthetic f0:Landroidx/media/MediaBrowserServiceCompat;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/util/HashSet;
+    iput-object p1, p0, Lai4;->f0:Landroidx/media/MediaBrowserServiceCompat;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+    invoke-direct {p0, p1}, Lv5;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
 
     .line 4
     .line 5
     .line 6
-    const-class v1, Ljava/lang/Boolean;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final X()V
+    .locals 2
+
+    .line 1
+    sget v0, Lei4;->a:I
+
+    .line 2
+    .line 3
+    new-instance v0, Ldi4;
+
+    .line 4
+    .line 5
+    iget-object v1, p0, Lai4;->f0:Landroidx/media/MediaBrowserServiceCompat;
+
+    .line 6
     .line 7
-    .line 8
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-direct {v0, v1, p0}, Lci4;-><init>(Landroid/content/Context;Lv5;)V
 
+    .line 8
     .line 9
     .line 10
+    iput-object v0, p0, Lv5;->Z:Ljava/lang/Object;
+
     .line 11
-    const-class v1, Ljava/lang/Character;
-
     .line 12
-    .line 13
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0}, Landroid/service/media/MediaBrowserService;->onCreate()V
 
+    .line 13
     .line 14
     .line 15
-    .line 16
-    const-class v1, Ljava/lang/Byte;
-
-    .line 17
-    .line 18
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 19
-    .line 20
-    .line 21
-    const-class v1, Ljava/lang/Short;
-
-    .line 22
-    .line 23
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 24
-    .line 25
-    .line 26
-    const-class v1, Ljava/lang/Integer;
-
-    .line 27
-    .line 28
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    const-class v1, Ljava/lang/Long;
-
-    .line 32
-    .line 33
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 34
-    .line 35
-    .line 36
-    const-class v1, Ljava/lang/Float;
-
-    .line 37
-    .line 38
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 39
-    .line 40
-    .line 41
-    const-class v1, Ljava/lang/Double;
-
-    .line 42
-    .line 43
-    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 44
-    .line 45
-    .line 46
-    sput-object v0, Lai4;->a:Ljava/util/HashSet;
-
-    .line 47
-    .line 48
     return-void
 .end method

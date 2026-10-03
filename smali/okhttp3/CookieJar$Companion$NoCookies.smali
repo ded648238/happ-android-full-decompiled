@@ -1,6 +1,6 @@
 .class final Lokhttp3/CookieJar$Companion$NoCookies;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/CookieJar;
@@ -30,7 +30,7 @@
         "",
         "Lokhttp3/Cookie;",
         "cookies",
-        "Lbh7;",
+        "Lr98;",
         "saveFromResponse",
         "(Lokhttp3/HttpUrl;Ljava/util/List;)V",
         "loadForRequest",
@@ -81,11 +81,11 @@
     .line 2
     .line 3
     .line 4
-    sget-object p1, Lwn1;->Q:Lwn1;
+    sget-object p0, Lfw1;->X:Lfw1;
 
     .line 5
     .line 6
-    return-object p1
+    return-object p0
 .end method
 
 .method public saveFromResponse(Lokhttp3/HttpUrl;Ljava/util/List;)V

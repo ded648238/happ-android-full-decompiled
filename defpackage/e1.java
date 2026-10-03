@@ -1,41 +1,23 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class e1 extends Throwable {
-    public final /* synthetic */ int Q;
+import java.util.ArrayList;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ e1(String str, int i) {
-        super(str);
-        this.Q = i;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface e1 extends h91 {
+    @Override // defpackage.h91
+    default void a(String str) {
+        str.getClass();
+        i().b(new i01(str));
     }
 
-    private final synchronized Throwable a() {
-        return this;
+    default ua0 build() {
+        ArrayList arrayList = i().b;
+        arrayList.getClass();
+        return new ua0(arrayList);
     }
 
-    private final synchronized Throwable b() {
-        return this;
-    }
+    ur i();
 
-    private final synchronized Throwable c() {
-        return this;
-    }
-
-    @Override // java.lang.Throwable
-    public final synchronized Throwable fillInStackTrace() {
-        switch (this.Q) {
-            case 0:
-                a();
-                break;
-            case 1:
-                b();
-                break;
-            default:
-                c();
-                break;
-        }
-        return this;
-    }
+    e1 l();
 }

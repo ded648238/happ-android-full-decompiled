@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/OpenSslMlKemPrivateKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/security/PrivateKey;
@@ -63,19 +63,19 @@
 
     .line 20
     :cond_0
-    const-string p1, "Invalid key size"
+    const-string p0, "Invalid key size"
 
     .line 21
     .line 22
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 23
     .line 24
     .line 25
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 26
-    throw p1
+    throw p0
 .end method
 
 .method private static getPkcs8Preamble(Lorg/conscrypt/MlKemAlgorithm;)[B
@@ -124,7 +124,7 @@
 
     .line 19
     .line 20
-    invoke-static {p0, v0}, Li62;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lbh2;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 21
     .line 22
@@ -144,43 +144,43 @@
 .end method
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    const-string v0, "serialization not supported"
+    const-string p1, "serialization not supported"
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    const-string v0, "serialization not supported"
+    const-string p1, "serialization not supported"
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 
@@ -224,10 +224,10 @@
 
     .line 2
     .line 3
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 4
-    return p1
+    return p0
 
     .line 5
     :cond_0
@@ -239,10 +239,10 @@
 
     .line 8
     .line 9
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 10
-    return p1
+    return p0
 
     .line 11
     :cond_1
@@ -250,7 +250,7 @@
 
     .line 12
     .line 13
-    iget-object v0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->seed:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->seed:[B
 
     .line 14
     .line 15
@@ -258,30 +258,30 @@
 
     .line 16
     .line 17
-    invoke-static {v0, p1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
+    invoke-static {p0, p1}, Ljava/security/MessageDigest;->isEqual([B[B)Z
 
     .line 18
     .line 19
     .line 20
-    move-result p1
+    move-result p0
 
     .line 21
-    return p1
+    return p0
 .end method
 
 .method public getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "ML-KEM"
+    const-string p0, "ML-KEM"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->algorithm:Lorg/conscrypt/MlKemAlgorithm;
@@ -296,88 +296,88 @@
     move-result-object v0
 
     .line 7
-    iget-object v1, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->seed:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->seed:[B
 
     .line 8
     .line 9
-    invoke-static {v0, v1}, Lorg/conscrypt/ArrayUtils;->concat([B[B)[B
+    invoke-static {v0, p0}, Lorg/conscrypt/ArrayUtils;->concat([B[B)[B
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "PKCS#8"
+    const-string p0, "PKCS#8"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getMlKemAlgorithm()Lorg/conscrypt/MlKemAlgorithm;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->algorithm:Lorg/conscrypt/MlKemAlgorithm;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->algorithm:Lorg/conscrypt/MlKemAlgorithm;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSeed()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->seed:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->seed:[B
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, [B->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, [B->clone()Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    check-cast v0, [B
+    check-cast p0, [B
 
     .line 10
     .line 11
-    return-object v0
+    return-object p0
 
     .line 12
     :cond_0
-    const-string v0, "key is destroyed"
+    const-string p0, "key is destroyed"
 
     .line 13
     .line 14
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->seed:[B
@@ -392,45 +392,45 @@
     move-result v0
 
     .line 7
-    iget-object v1, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->algorithm:Lorg/conscrypt/MlKemAlgorithm;
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->algorithm:Lorg/conscrypt/MlKemAlgorithm;
 
     .line 8
     .line 9
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     .line 10
     .line 11
     .line 12
-    move-result v1
+    move-result p0
 
     .line 13
-    xor-int/2addr v0, v1
+    xor-int/2addr p0, v0
 
     .line 14
-    return v0
+    return p0
 .end method
 
 .method public isDestroyed()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->seed:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSslMlKemPrivateKey;->seed:[B
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 4
     .line 5
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 6
-    return v0
+    return p0
 
     .line 7
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 8
-    return v0
+    return p0
 .end method

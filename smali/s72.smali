@@ -1,6 +1,71 @@
-.class public interface abstract Ls72;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Ls72;
+.super Ld31;
 
-# interfaces
-.implements Lr72;
+
+# instance fields
+.field public synthetic c0:Ljava/lang/Object;
+
+.field public d0:I
+
+.field public final synthetic e0:Lb11;
+
+
+# direct methods
+.method public constructor <init>(Lb11;Lb31;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ls72;->e0:Lb11;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Ls72;->c0:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    iget p1, p0, Ls72;->d0:I
+
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
+
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    iput p1, p0, Ls72;->d0:I
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Ls72;->e0:Lb11;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-virtual {p1, v0, p0}, Lb11;->a(Lla2;Lb31;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
+.end method

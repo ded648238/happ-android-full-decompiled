@@ -1,27 +1,17 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class v82 {
-    public final r42 a;
-    public final String b;
-    public final int c;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class v82 extends jq4 {
+    public static final v82 X = new v82(yr3.class, "flags", "getFlags$org_jetbrains_kotlin_kotlin_metadata()I", 0);
 
-    public v82(r42 r42Var, String str, int i) {
-        r42Var.getClass();
-        this.a = r42Var;
-        this.b = str;
-        this.c = i;
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((yr3) obj).a = ((Number) obj2).intValue();
     }
 
-    public final ha4 a(int i) {
-        return ha4.e(this.b + i);
-    }
-
-    public final String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(this.a);
-        sb.append('.');
-        return mi2.r(sb, this.b, 'N');
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return Integer.valueOf(((yr3) obj).a);
     }
 }

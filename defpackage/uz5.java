@@ -1,39 +1,40 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class uz5 extends x0 implements dx0 {
-    public final yv0 V;
+import java.util.Collection;
 
-    public uz5(yv0 yv0Var, sw0 sw0Var) {
-        super(sw0Var, true);
-        this.V = yv0Var;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class uz5 extends oz5 implements bc3 {
+    public final jf2 a;
+
+    public uz5(jf2 jf2Var) {
+        jf2Var.getClass();
+        this.a = jf2Var;
     }
 
-    @Override // defpackage.ty2
-    public final boolean V() {
-        return true;
-    }
-
-    @Override // defpackage.dx0
-    public final dx0 c() {
-        yv0 yv0Var = this.V;
-        if (yv0Var instanceof dx0) {
-            return (dx0) yv0Var;
-        }
+    @Override // defpackage.bc3
+    public final az5 a(jf2 jf2Var) {
+        jf2Var.getClass();
         return null;
     }
 
-    @Override // defpackage.ty2
-    public void p(Object obj) throws he1 {
-        je1.a(uv3.F(this.V), ji2.E(obj));
+    public final boolean equals(Object obj) {
+        if (obj instanceof uz5) {
+            return m93.h(this.a, ((uz5) obj).a);
+        }
+        return false;
     }
 
-    @Override // defpackage.ty2
-    public void r(Object obj) {
-        this.V.e(ji2.E(obj));
+    @Override // defpackage.bc3
+    public final /* bridge */ /* synthetic */ Collection getAnnotations() {
+        return fw1.X;
     }
 
-    public void s0() {
+    public final int hashCode() {
+        return this.a.hashCode();
+    }
+
+    public final String toString() {
+        return uz5.class.getName() + ": " + this.a;
     }
 }

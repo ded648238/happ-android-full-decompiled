@@ -7,16 +7,16 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
-import defpackage.fz;
+import defpackage.j10;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class Snackbar$SnackbarLayout extends fz {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class Snackbar$SnackbarLayout extends j10 {
     public Snackbar$SnackbarLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
-    @Override // defpackage.fz, android.widget.FrameLayout, android.view.View
+    @Override // defpackage.j10, android.widget.FrameLayout, android.view.View
     public final void onMeasure(int i, int i2) {
         super.onMeasure(i, i2);
         int childCount = getChildCount();
@@ -29,32 +29,32 @@ public final class Snackbar$SnackbarLayout extends fz {
         }
     }
 
-    @Override // defpackage.fz, android.view.View
+    @Override // defpackage.j10, android.view.View
     public /* bridge */ /* synthetic */ void setBackground(Drawable drawable) {
         super.setBackground(drawable);
     }
 
-    @Override // defpackage.fz, android.view.View
+    @Override // defpackage.j10, android.view.View
     public /* bridge */ /* synthetic */ void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
     }
 
-    @Override // defpackage.fz, android.view.View
+    @Override // defpackage.j10, android.view.View
     public /* bridge */ /* synthetic */ void setBackgroundTintList(ColorStateList colorStateList) {
         super.setBackgroundTintList(colorStateList);
     }
 
-    @Override // defpackage.fz, android.view.View
+    @Override // defpackage.j10, android.view.View
     public /* bridge */ /* synthetic */ void setBackgroundTintMode(PorterDuff.Mode mode) {
         super.setBackgroundTintMode(mode);
     }
 
-    @Override // defpackage.fz, android.view.View
+    @Override // defpackage.j10, android.view.View
     public /* bridge */ /* synthetic */ void setLayoutParams(ViewGroup.LayoutParams layoutParams) {
         super.setLayoutParams(layoutParams);
     }
 
-    @Override // defpackage.fz, android.view.View
+    @Override // defpackage.j10, android.view.View
     public /* bridge */ /* synthetic */ void setOnClickListener(View.OnClickListener onClickListener) {
         super.setOnClickListener(onClickListener);
     }

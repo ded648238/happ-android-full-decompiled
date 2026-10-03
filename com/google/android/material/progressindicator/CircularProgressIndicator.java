@@ -1,96 +1,105 @@
 package com.google.android.material.progressindicator;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.util.AttributeSet;
-import defpackage.aj0;
-import defpackage.bp2;
-import defpackage.cb1;
-import defpackage.fn;
-import defpackage.k3;
-import defpackage.na5;
-import defpackage.q85;
-import defpackage.uy;
-import defpackage.v75;
-import defpackage.wi0;
-import defpackage.yi0;
-import defpackage.yl7;
+import defpackage.hj1;
+import defpackage.i60;
+import defpackage.m46;
+import defpackage.nu5;
+import defpackage.pg8;
+import defpackage.ps5;
+import defpackage.q3;
+import defpackage.qg8;
+import defpackage.t33;
+import defpackage.ur5;
+import defpackage.vp0;
+import defpackage.xp0;
+import defpackage.y00;
+import defpackage.zp0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class CircularProgressIndicator extends a {
-    public static final int h0 = na5.Widget_MaterialComponents_CircularProgressIndicator;
+    public static final int s0 = nu5.Widget_MaterialComponents_CircularProgressIndicator;
 
     public CircularProgressIndicator(Context context, AttributeSet attributeSet, int i) {
-        super(context, attributeSet, i, h0);
-        CircularProgressIndicatorSpec circularProgressIndicatorSpec = (CircularProgressIndicatorSpec) this.Q;
-        wi0 wi0Var = new wi0(circularProgressIndicatorSpec);
+        super(context, attributeSet, i, s0);
+        CircularProgressIndicatorSpec circularProgressIndicatorSpec = (CircularProgressIndicatorSpec) this.c0;
+        vp0 vp0Var = new vp0(circularProgressIndicatorSpec);
         Context context2 = getContext();
-        bp2 bp2Var = new bp2(context2, circularProgressIndicatorSpec, wi0Var, circularProgressIndicatorSpec.o == 1 ? new aj0(context2, circularProgressIndicatorSpec) : new yi0(circularProgressIndicatorSpec));
-        bp2Var.f0 = yl7.a(context2.getResources(), q85.ic_mtrl_arrow_circle, null);
-        setIndeterminateDrawable(bp2Var);
-        setProgressDrawable(new cb1(getContext(), circularProgressIndicatorSpec, wi0Var));
-        this.b0 = true;
+        t33 t33Var = new t33(context2, circularProgressIndicatorSpec, vp0Var, circularProgressIndicatorSpec.q == 1 ? new zp0(context2, circularProgressIndicatorSpec) : new xp0(circularProgressIndicatorSpec));
+        Resources resources = context2.getResources();
+        int i2 = ps5.ic_mtrl_arrow_circle;
+        qg8 qg8Var = new qg8();
+        ThreadLocal threadLocal = m46.a;
+        qg8Var.X = resources.getDrawable(i2, null);
+        new pg8(qg8Var.X.getConstantState());
+        t33Var.o0 = qg8Var;
+        setIndeterminateDrawable(t33Var);
+        setProgressDrawable(new hj1(getContext(), circularProgressIndicatorSpec, vp0Var));
+        this.l0 = true;
     }
 
     @Override // com.google.android.material.progressindicator.a
-    public final uy a(Context context, AttributeSet attributeSet) {
+    public final y00 a(Context context, AttributeSet attributeSet) {
         return new CircularProgressIndicatorSpec(context, attributeSet);
     }
 
     public int getIndeterminateAnimationType() {
-        return ((CircularProgressIndicatorSpec) this.Q).o;
+        return ((CircularProgressIndicatorSpec) this.c0).q;
     }
 
     public int getIndicatorDirection() {
-        return ((CircularProgressIndicatorSpec) this.Q).r;
+        return ((CircularProgressIndicatorSpec) this.c0).t;
     }
 
     public int getIndicatorInset() {
-        return ((CircularProgressIndicatorSpec) this.Q).q;
+        return ((CircularProgressIndicatorSpec) this.c0).s;
     }
 
     public int getIndicatorSize() {
-        return ((CircularProgressIndicatorSpec) this.Q).p;
+        return ((CircularProgressIndicatorSpec) this.c0).r;
     }
 
     public void setIndeterminateAnimationType(int i) {
-        uy uyVar = this.Q;
-        if (((CircularProgressIndicatorSpec) uyVar).o == i) {
+        y00 y00Var = this.c0;
+        if (((CircularProgressIndicatorSpec) y00Var).q == i) {
             return;
         }
         if (d() && isIndeterminate()) {
-            fn.s("Cannot change indeterminate animation type while the progress indicator is show in indeterminate mode.");
+            i60.g("Cannot change indeterminate animation type while the progress indicator is show in indeterminate mode.");
             return;
         }
-        ((CircularProgressIndicatorSpec) uyVar).o = i;
-        ((CircularProgressIndicatorSpec) uyVar).d();
-        k3 aj0Var = i == 1 ? new aj0(getContext(), (CircularProgressIndicatorSpec) uyVar) : new yi0((CircularProgressIndicatorSpec) uyVar);
-        bp2 indeterminateDrawable = getIndeterminateDrawable();
-        indeterminateDrawable.e0 = aj0Var;
-        aj0Var.a = indeterminateDrawable;
+        ((CircularProgressIndicatorSpec) y00Var).q = i;
+        ((CircularProgressIndicatorSpec) y00Var).d();
+        q3 zp0Var = i == 1 ? new zp0(getContext(), (CircularProgressIndicatorSpec) y00Var) : new xp0((CircularProgressIndicatorSpec) y00Var);
+        t33 indeterminateDrawable = getIndeterminateDrawable();
+        indeterminateDrawable.n0 = zp0Var;
+        zp0Var.a = indeterminateDrawable;
         b();
         invalidate();
     }
 
     public void setIndicatorDirection(int i) {
-        ((CircularProgressIndicatorSpec) this.Q).r = i;
+        ((CircularProgressIndicatorSpec) this.c0).t = i;
         invalidate();
     }
 
     public void setIndicatorInset(int i) {
-        uy uyVar = this.Q;
-        if (((CircularProgressIndicatorSpec) uyVar).q != i) {
-            ((CircularProgressIndicatorSpec) uyVar).q = i;
+        y00 y00Var = this.c0;
+        if (((CircularProgressIndicatorSpec) y00Var).s != i) {
+            ((CircularProgressIndicatorSpec) y00Var).s = i;
             invalidate();
         }
     }
 
     public void setIndicatorSize(int i) {
-        int iMax = Math.max(i, getTrackThickness() * 2);
-        uy uyVar = this.Q;
-        if (((CircularProgressIndicatorSpec) uyVar).p != iMax) {
-            ((CircularProgressIndicatorSpec) uyVar).p = iMax;
-            ((CircularProgressIndicatorSpec) uyVar).d();
+        int max = Math.max(i, getTrackThickness() * 2);
+        y00 y00Var = this.c0;
+        if (((CircularProgressIndicatorSpec) y00Var).r != max) {
+            ((CircularProgressIndicatorSpec) y00Var).r = max;
+            ((CircularProgressIndicatorSpec) y00Var).d();
             requestLayout();
             invalidate();
         }
@@ -99,10 +108,10 @@ public class CircularProgressIndicator extends a {
     @Override // com.google.android.material.progressindicator.a
     public void setTrackThickness(int i) {
         super.setTrackThickness(i);
-        ((CircularProgressIndicatorSpec) this.Q).d();
+        ((CircularProgressIndicatorSpec) this.c0).d();
     }
 
     public CircularProgressIndicator(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, v75.circularProgressIndicatorStyle);
+        this(context, attributeSet, ur5.circularProgressIndicatorStyle);
     }
 }

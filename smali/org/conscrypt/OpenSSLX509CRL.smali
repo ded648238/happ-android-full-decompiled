@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/OpenSSLX509CRL;
 .super Ljava/security/cert/X509CRL;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -82,7 +82,7 @@
 .end method
 
 .method public static fromPkcs7DerInputStream(Ljava/io/InputStream;)Ljava/util/List;
-    .locals 8
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -172,11 +172,11 @@
 
     .line 32
     .line 33
-    cmp-long v7, v3, v5
+    cmp-long v5, v3, v5
 
     .line 34
     .line 35
-    if-nez v7, :cond_0
+    if-nez v5, :cond_0
 
     .line 36
     .line 37
@@ -246,7 +246,7 @@
 .end method
 
 .method public static fromPkcs7PemInputStream(Ljava/io/InputStream;)Ljava/util/List;
-    .locals 8
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -336,11 +336,11 @@
 
     .line 32
     .line 33
-    cmp-long v7, v3, v5
+    cmp-long v5, v3, v5
 
     .line 34
     .line 35
-    if-nez v7, :cond_0
+    if-nez v5, :cond_0
 
     .line 36
     .line 37
@@ -789,18 +789,18 @@
     .line 33
     .line 34
     .line 35
-    move-result-object p1
+    move-result-object p0
 
     .line 36
-    invoke-virtual {p2, p1}, Ljava/security/Signature;->verify([B)Z
+    invoke-virtual {p2, p0}, Ljava/security/Signature;->verify([B)Z
 
     .line 37
     .line 38
     .line 39
-    move-result p1
+    move-result p0
 
     .line 40
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 41
     .line 42
@@ -808,20 +808,20 @@
 
     .line 43
     :cond_2
-    new-instance p1, Ljava/security/SignatureException;
+    new-instance p0, Ljava/security/SignatureException;
 
     .line 44
     .line 45
-    const-string p2, "signature did not verify"
+    const-string p1, "signature did not verify"
 
     .line 46
     .line 47
-    invoke-direct {p1, p2}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/SignatureException;-><init>(Ljava/lang/String;)V
 
     .line 48
     .line 49
     .line 50
-    throw p1
+    throw p0
 .end method
 
 .method private verifyOpenSSL(Lorg/conscrypt/OpenSSLKey;)V
@@ -850,7 +850,7 @@
     .line 7
     invoke-static {v0, v1, p0, p1}, Lorg/conscrypt/NativeCrypto;->X509_CRL_verify(JLorg/conscrypt/OpenSSLX509CRL;Lorg/conscrypt/NativeRef$EVP_PKEY;)V
     :try_end_0
-    .catch Ljavax/crypto/BadPaddingException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljavax/crypto/BadPaddingException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljavax/crypto/IllegalBlockSizeException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 8
@@ -860,27 +860,19 @@
 
     .line 11
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 12
-    goto :goto_0
+    new-instance p1, Ljava/security/SignatureException;
 
     .line 13
-    :catch_1
-    move-exception p1
-
     .line 14
-    :goto_0
-    new-instance v0, Ljava/security/SignatureException;
+    invoke-direct {p1, p0}, Ljava/security/SignatureException;-><init>(Ljava/lang/Throwable;)V
 
     .line 15
     .line 16
-    invoke-direct {v0, p1}, Ljava/security/SignatureException;-><init>(Ljava/lang/Throwable;)V
-
     .line 17
-    .line 18
-    .line 19
-    throw v0
+    throw p1
 .end method
 
 
@@ -997,24 +989,24 @@
     .line 15
     .line 16
     .line 17
-    move-result-object v1
+    move-result-object p0
 
     .line 18
-    array-length v1, v1
+    array-length p0, p0
 
     .line 19
-    if-nez v1, :cond_0
+    if-nez p0, :cond_0
 
     .line 20
     .line 21
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 22
-    return-object v0
+    return-object p0
 
     .line 23
     :cond_0
-    new-instance v1, Ljava/util/HashSet;
+    new-instance p0, Ljava/util/HashSet;
 
     .line 24
     .line 25
@@ -1026,12 +1018,12 @@
     move-result-object v0
 
     .line 29
-    invoke-direct {v1, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    invoke-direct {p0, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
     .line 30
     .line 31
     .line 32
-    return-object v1
+    return-object p0
 .end method
 
 .method public getEncoded()[B
@@ -1052,10 +1044,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getExtensionValue(Ljava/lang/String;)[B
@@ -1071,14 +1063,14 @@
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    return-object p1
+    return-object p0
 .end method
 
 .method public getIssuerDN()Ljava/security/Principal;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/OpenSSLX509CRL;->getIssuerX500Principal()Ljavax/security/auth/x500/X500Principal;
@@ -1086,10 +1078,10 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public getIssuerX500Principal()Ljavax/security/auth/x500/X500Principal;
@@ -1105,42 +1097,42 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    new-instance v1, Ljavax/security/auth/x500/X500Principal;
+    new-instance v0, Ljavax/security/auth/x500/X500Principal;
 
     .line 8
     .line 9
-    invoke-direct {v1, v0}, Ljavax/security/auth/x500/X500Principal;-><init>([B)V
+    invoke-direct {v0, p0}, Ljavax/security/auth/x500/X500Principal;-><init>([B)V
 
     .line 10
     .line 11
     .line 12
-    return-object v1
+    return-object v0
 .end method
 
 .method public getNextUpdate()Ljava/util/Date;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLX509CRL;->nextUpdate:Ljava/util/Date;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLX509CRL;->nextUpdate:Ljava/util/Date;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/Date;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/util/Date;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Ljava/util/Date;
+    check-cast p0, Ljava/util/Date;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public getNonCriticalExtensionOIDs()Ljava/util/Set;
@@ -1189,24 +1181,24 @@
     .line 15
     .line 16
     .line 17
-    move-result-object v1
+    move-result-object p0
 
     .line 18
-    array-length v1, v1
+    array-length p0, p0
 
     .line 19
-    if-nez v1, :cond_0
+    if-nez p0, :cond_0
 
     .line 20
     .line 21
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 22
-    return-object v0
+    return-object p0
 
     .line 23
     :cond_0
-    new-instance v1, Ljava/util/HashSet;
+    new-instance p0, Ljava/util/HashSet;
 
     .line 24
     .line 25
@@ -1218,56 +1210,56 @@
     move-result-object v0
 
     .line 29
-    invoke-direct {v1, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    invoke-direct {p0, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
     .line 30
     .line 31
     .line 32
-    return-object v1
+    return-object p0
 .end method
 
 .method public getRevokedCertificate(Ljava/math/BigInteger;)Ljava/security/cert/X509CRLEntry;
-    .locals 5
-
-    .line 47
-    iget-wide v0, p0, Lorg/conscrypt/OpenSSLX509CRL;->mContext:J
+    .locals 2
 
     .line 48
+    iget-wide v0, p0, Lorg/conscrypt/OpenSSLX509CRL;->mContext:J
+
+    .line 49
     invoke-virtual {p1}, Ljava/math/BigInteger;->toByteArray()[B
 
     move-result-object p1
 
     invoke-static {v0, v1, p0, p1}, Lorg/conscrypt/NativeCrypto;->X509_CRL_get0_by_serial(JLorg/conscrypt/OpenSSLX509CRL;[B)J
 
-    move-result-wide v0
+    move-result-wide p0
 
-    const-wide/16 v2, 0x0
+    const-wide/16 v0, 0x0
 
-    const/4 p1, 0x0
+    cmp-long v0, p0, v0
 
-    cmp-long v4, v0, v2
+    const/4 v1, 0x0
 
-    if-nez v4, :cond_0
+    if-nez v0, :cond_0
 
-    return-object p1
+    return-object v1
 
-    .line 49
+    .line 50
     :cond_0
     :try_start_0
-    new-instance v2, Lorg/conscrypt/OpenSSLX509CRLEntry;
+    new-instance v0, Lorg/conscrypt/OpenSSLX509CRLEntry;
 
-    invoke-static {v0, v1}, Lorg/conscrypt/NativeCrypto;->X509_REVOKED_dup(J)J
+    invoke-static {p0, p1}, Lorg/conscrypt/NativeCrypto;->X509_REVOKED_dup(J)J
 
-    move-result-wide v0
+    move-result-wide p0
 
-    invoke-direct {v2, v0, v1}, Lorg/conscrypt/OpenSSLX509CRLEntry;-><init>(J)V
+    invoke-direct {v0, p0, p1}, Lorg/conscrypt/OpenSSLX509CRLEntry;-><init>(J)V
     :try_end_0
     .catch Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object v2
+    return-object v0
 
     :catch_0
-    return-object p1
+    return-object v1
 .end method
 
 .method public getRevokedCertificate(Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509CRLEntry;
@@ -1309,77 +1301,80 @@
     .line 16
     .line 17
     .line 18
-    move-result-wide v0
+    move-result-wide p0
 
     .line 19
-    const-wide/16 v2, 0x0
+    const-wide/16 v0, 0x0
 
     .line 20
     .line 21
-    const/4 p1, 0x0
+    cmp-long v0, p0, v0
 
     .line 22
-    cmp-long v4, v0, v2
-
     .line 23
+    const/4 v1, 0x0
+
     .line 24
-    if-nez v4, :cond_0
+    if-nez v0, :cond_0
 
     .line 25
     .line 26
-    return-object p1
+    return-object v1
 
     .line 27
     :cond_0
     :try_start_0
-    new-instance v2, Lorg/conscrypt/OpenSSLX509CRLEntry;
+    new-instance v0, Lorg/conscrypt/OpenSSLX509CRLEntry;
 
     .line 28
     .line 29
-    invoke-static {v0, v1}, Lorg/conscrypt/NativeCrypto;->X509_REVOKED_dup(J)J
+    invoke-static {p0, p1}, Lorg/conscrypt/NativeCrypto;->X509_REVOKED_dup(J)J
 
     .line 30
     .line 31
     .line 32
-    move-result-wide v0
+    move-result-wide p0
 
     .line 33
-    invoke-direct {v2, v0, v1}, Lorg/conscrypt/OpenSSLX509CRLEntry;-><init>(J)V
+    invoke-direct {v0, p0, p1}, Lorg/conscrypt/OpenSSLX509CRLEntry;-><init>(J)V
     :try_end_0
     .catch Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 34
     .line 35
     .line 36
-    return-object v2
+    return-object v0
 
     .line 37
     :catch_0
-    return-object p1
+    return-object v1
 
     .line 38
     :cond_1
-    invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getSerialNumber()Ljava/math/BigInteger;
+    move-object v3, p0
 
     .line 39
+    invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getSerialNumber()Ljava/math/BigInteger;
+
     .line 40
     .line 41
-    move-result-object p1
-
     .line 42
-    invoke-virtual {p0, p1}, Lorg/conscrypt/OpenSSLX509CRL;->getRevokedCertificate(Ljava/math/BigInteger;)Ljava/security/cert/X509CRLEntry;
+    move-result-object p0
 
     .line 43
+    invoke-virtual {v3, p0}, Lorg/conscrypt/OpenSSLX509CRL;->getRevokedCertificate(Ljava/math/BigInteger;)Ljava/security/cert/X509CRLEntry;
+
     .line 44
     .line 45
-    move-result-object p1
-
     .line 46
-    return-object p1
+    move-result-object p0
+
+    .line 47
+    return-object p0
 .end method
 
 .method public getRevokedCertificates()Ljava/util/Set;
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1400,17 +1395,17 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    if-eqz v0, :cond_2
+    if-eqz p0, :cond_2
 
     .line 8
     .line 9
-    array-length v1, v0
+    array-length v0, p0
 
     .line 10
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
     .line 11
     .line 12
@@ -1418,41 +1413,41 @@
 
     .line 13
     :cond_0
-    new-instance v1, Ljava/util/HashSet;
+    new-instance v0, Ljava/util/HashSet;
 
     .line 14
     .line 15
-    invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     .line 16
     .line 17
     .line 18
-    array-length v2, v0
+    array-length v1, p0
 
     .line 19
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 20
     :goto_0
-    if-ge v3, v2, :cond_1
+    if-ge v2, v1, :cond_1
 
     .line 21
     .line 22
-    aget-wide v4, v0, v3
+    aget-wide v3, p0, v2
 
     .line 23
     .line 24
     :try_start_0
-    new-instance v6, Lorg/conscrypt/OpenSSLX509CRLEntry;
+    new-instance v5, Lorg/conscrypt/OpenSSLX509CRLEntry;
 
     .line 25
     .line 26
-    invoke-direct {v6, v4, v5}, Lorg/conscrypt/OpenSSLX509CRLEntry;-><init>(J)V
+    invoke-direct {v5, v3, v4}, Lorg/conscrypt/OpenSSLX509CRLEntry;-><init>(J)V
 
     .line 27
     .line 28
     .line 29
-    invoke-virtual {v1, v6}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catch Lorg/conscrypt/OpenSSLX509CertificateFactory$ParsingException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1460,7 +1455,7 @@
     .line 31
     .line 32
     :catch_0
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     .line 33
     .line 34
@@ -1468,19 +1463,19 @@
 
     .line 35
     :cond_1
-    return-object v1
+    return-object v0
 
     .line 36
     :cond_2
     :goto_1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 37
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSigAlgName()Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/OpenSSLX509CRL;->getSigAlgOID()Ljava/lang/String;
@@ -1488,42 +1483,26 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-static {v0}, Lorg/conscrypt/OidData;->oidToAlgorithmName(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lorg/conscrypt/OidData;->oidToAlgorithmName(Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v1
+    move-result-object v0
 
     .line 9
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 10
     .line 11
-    return-object v1
+    return-object v0
 
     .line 12
     :cond_0
-    invoke-static {v0}, Lorg/conscrypt/Platform;->oidToAlgorithmName(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v1
-
-    .line 16
-    if-eqz v1, :cond_1
-
-    .line 17
-    .line 18
-    return-object v1
-
-    .line 19
-    :cond_1
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSigAlgOID()Ljava/lang/String;
@@ -1539,10 +1518,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSigAlgParams()[B
@@ -1558,10 +1537,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSignature()[B
@@ -1577,10 +1556,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getTBSCertList()[B
@@ -1596,33 +1575,33 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getThisUpdate()Ljava/util/Date;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLX509CRL;->thisUpdate:Ljava/util/Date;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLX509CRL;->thisUpdate:Ljava/util/Date;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/Date;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/util/Date;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Ljava/util/Date;
+    check-cast p0, Ljava/util/Date;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public getVersion()I
@@ -1641,14 +1620,14 @@
     move-result-wide v0
 
     .line 7
-    long-to-int v1, v0
+    long-to-int p0, v0
 
     .line 8
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 p0, p0, 0x1
 
     .line 9
     .line 10
-    return v1
+    return p0
 .end method
 
 .method public hasUnsupportedCriticalExtension()Z
@@ -1676,7 +1655,7 @@
     const/4 v3, 0x0
 
     .line 10
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 11
     :goto_0
@@ -1818,25 +1797,25 @@
     .line 37
     .line 38
     .line 39
-    move-result-wide v2
+    move-result-wide p0
 
     .line 40
-    const-wide/16 v4, 0x0
+    const-wide/16 v2, 0x0
 
     .line 41
     .line 42
-    cmp-long p1, v2, v4
+    cmp-long p0, p0, v2
 
     .line 43
     .line 44
-    if-eqz p1, :cond_2
+    if-eqz p0, :cond_2
 
     .line 45
     .line 46
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 47
-    return p1
+    return p0
 
     .line 48
     :cond_2
@@ -1847,14 +1826,14 @@
     move-exception v0
 
     .line 50
-    move-object p1, v0
+    move-object p0, v0
 
     .line 51
-    const-string v0, "cannot convert certificate"
+    const-string p1, "cannot convert certificate"
 
     .line 52
     .line 53
-    invoke-static {v0, p1}, Lxi4;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Lq05;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 54
     .line 55
@@ -1898,7 +1877,7 @@
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    move-result-object p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1908,11 +1887,11 @@
     .line 20
     .line 21
     .line 22
-    return-object v0
+    return-object p0
 
     .line 23
     :catchall_0
-    move-exception v0
+    move-exception p0
 
     .line 24
     invoke-static {v1, v2}, Lorg/conscrypt/NativeCrypto;->BIO_free_all(J)V
@@ -1920,7 +1899,7 @@
     .line 25
     .line 26
     .line 27
-    throw v0
+    throw p0
 .end method
 
 .method public verify(Ljava/security/PublicKey;)V

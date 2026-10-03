@@ -1,75 +1,27 @@
-.class public final Lio/sentry/android/replay/util/c;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lio/sentry/android/replay/util/c;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg72;
-
-
-# static fields
-.field public static final R:Lio/sentry/android/replay/util/c;
-
-.field public static final S:Lio/sentry/android/replay/util/c;
+.implements Landroid/view/Window$Callback;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final X:Landroid/view/Window$Callback;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 3
-
-    .line 1
-    new-instance v0, Lio/sentry/android/replay/util/c;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    const/4 v2, 0x0
-
-    .line 5
-    invoke-direct {v0, v1, v2}, Lio/sentry/android/replay/util/c;-><init>(II)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, Lio/sentry/android/replay/util/c;->R:Lio/sentry/android/replay/util/c;
-
-    .line 9
-    .line 10
-    new-instance v0, Lio/sentry/android/replay/util/c;
-
-    .line 11
-    .line 12
-    const/4 v2, 0x1
-
-    .line 13
-    invoke-direct {v0, v1, v2}, Lio/sentry/android/replay/util/c;-><init>(II)V
-
-    .line 14
-    .line 15
-    .line 16
-    sput-object v0, Lio/sentry/android/replay/util/c;->S:Lio/sentry/android/replay/util/c;
-
-    .line 17
-    .line 18
-    return-void
-.end method
-
-.method public synthetic constructor <init>(II)V
+.method public constructor <init>(Landroid/view/Window$Callback;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lio/sentry/android/replay/util/c;->Q:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
-
     .line 4
+    iput-object p1, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
     .line 5
     .line 6
     return-void
@@ -77,54 +29,674 @@
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
+.method public final dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
+    .locals 0
 
     .line 1
-    iget v0, p0, Lio/sentry/android/replay/util/c;->Q:I
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    if-nez p0, :cond_0
 
     .line 4
     .line 5
+    const/4 p0, 0x0
+
     .line 6
-    new-instance v0, Landroid/graphics/Paint;
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final onActionModeFinished(Landroid/view/ActionMode;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->onActionModeFinished(Landroid/view/ActionMode;)V
 
     .line 7
     .line 8
-    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
+    .line 9
+    return-void
+.end method
 
+.method public final onActionModeStarted(Landroid/view/ActionMode;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->onActionModeStarted(Landroid/view/ActionMode;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final onAttachedToWindow()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0}, Landroid/view/Window$Callback;->onAttachedToWindow()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final onContentChanged()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0}, Landroid/view/Window$Callback;->onContentChanged()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final onCreatePanelMenu(ILandroid/view/Menu;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1, p2}, Landroid/view/Window$Callback;->onCreatePanelMenu(ILandroid/view/Menu;)Z
+
+    .line 8
     .line 9
     .line 10
+    move-result p0
+
     .line 11
-    return-object v0
+    return p0
+.end method
+
+.method public final onCreatePanelView(I)Landroid/view/View;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return-object p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->onCreatePanelView(I)Landroid/view/View;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+.end method
+
+.method public final onDetachedFromWindow()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0}, Landroid/view/Window$Callback;->onDetachedFromWindow()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final onMenuItemSelected(ILandroid/view/MenuItem;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1, p2}, Landroid/view/Window$Callback;->onMenuItemSelected(ILandroid/view/MenuItem;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final onMenuOpened(ILandroid/view/Menu;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1, p2}, Landroid/view/Window$Callback;->onMenuOpened(ILandroid/view/Menu;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final onPanelClosed(ILandroid/view/Menu;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0, p1, p2}, Landroid/view/Window$Callback;->onPanelClosed(ILandroid/view/Menu;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final onPointerCaptureChanged(Z)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->onPointerCaptureChanged(Z)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1, p2, p3}, Landroid/view/Window$Callback;->onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final onProvideKeyboardShortcuts(Ljava/util/List;Landroid/view/Menu;I)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0, p1, p2, p3}, Landroid/view/Window$Callback;->onProvideKeyboardShortcuts(Ljava/util/List;Landroid/view/Menu;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final onSearchRequested()Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0}, Landroid/view/Window$Callback;->onSearchRequested()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method public final onSearchRequested(Landroid/view/SearchEvent;)Z
+    .locals 0
 
     .line 12
-    :pswitch_0
-    const/4 v0, 0x1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
 
     .line 13
-    sget-object v1, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->onSearchRequested(Landroid/view/SearchEvent;)Z
 
-    .line 14
-    .line 15
-    invoke-static {v0, v0, v1}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+    move-result p0
 
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
+    return p0
+.end method
 
-    .line 19
-    return-object v0
+.method public final onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
+    .locals 0
 
-    .line 20
-    nop
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final onWindowFocusChanged(Z)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->onWindowFocusChanged(Z)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return-object p0
+
+    .line 7
+    :cond_0
+    invoke-interface {p0, p1}, Landroid/view/Window$Callback;->onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+.end method
+
+.method public final onWindowStartingActionMode(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+    .locals 0
+
+    .line 12
+    iget-object p0, p0, Lio/sentry/android/replay/util/c;->X:Landroid/view/Window$Callback;
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    .line 13
+    :cond_0
+    invoke-interface {p0, p1, p2}, Landroid/view/Window$Callback;->onWindowStartingActionMode(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+
+    move-result-object p0
+
+    return-object p0
 .end method

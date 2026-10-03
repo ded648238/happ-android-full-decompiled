@@ -1,343 +1,306 @@
 package defpackage;
 
-import android.content.Context;
-import android.content.Intent;
-import android.content.res.ColorStateList;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
-import android.view.ActionProvider;
-import android.view.CollapsibleActionView;
-import android.view.ContextMenu;
-import android.view.MenuItem;
-import android.view.SubMenu;
-import android.view.View;
-import java.lang.reflect.Method;
+import java.util.AbstractCollection;
+import java.util.Collection;
+import java.util.Deque;
+import java.util.Iterator;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class t24 extends k3 implements MenuItem {
-    public final ns6 c;
-    public Method d;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class t24 extends AbstractCollection implements Deque {
+    public wj5 X;
+    public wj5 Y;
 
-    public t24(Context context, ns6 ns6Var) {
-        super(context);
-        if (ns6Var != null) {
-            this.c = ns6Var;
+    public final void a() {
+        if (isEmpty()) {
+            i60.a();
+        }
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Deque, java.util.Queue
+    public final boolean add(Object obj) {
+        return offerLast((wj5) obj);
+    }
+
+    @Override // java.util.Deque
+    public final void addFirst(Object obj) {
+        wj5 wj5Var = (wj5) obj;
+        if (b(wj5Var)) {
+            q05.f();
+            return;
+        }
+        wj5 wj5Var2 = this.X;
+        this.X = wj5Var;
+        if (wj5Var2 == null) {
+            this.Y = wj5Var;
         } else {
-            fn.r("Wrapped Object can not be null.");
-            throw null;
+            wj5Var2.Y = wj5Var;
+            wj5Var.Z = wj5Var2;
         }
     }
 
-    @Override // android.view.MenuItem
-    public final boolean collapseActionView() {
-        return this.c.collapseActionView();
-    }
-
-    @Override // android.view.MenuItem
-    public final boolean expandActionView() {
-        return this.c.expandActionView();
-    }
-
-    @Override // android.view.MenuItem
-    public final ActionProvider getActionProvider() {
-        q24 q24VarB = this.c.b();
-        if (q24VarB != null) {
-            return q24VarB.b;
+    @Override // java.util.Deque
+    public final void addLast(Object obj) {
+        if (offerLast((wj5) obj)) {
+            return;
         }
-        return null;
+        q05.f();
     }
 
-    @Override // android.view.MenuItem
-    public final View getActionView() {
-        View actionView = this.c.getActionView();
-        return actionView instanceof r24 ? (View) ((r24) actionView).Q : actionView;
+    public final boolean b(wj5 wj5Var) {
+        return (wj5Var.Y == null && wj5Var.Z == null && wj5Var != this.X) ? false : true;
     }
 
-    @Override // android.view.MenuItem
-    public final int getAlphabeticModifiers() {
-        return this.c.getAlphabeticModifiers();
-    }
-
-    @Override // android.view.MenuItem
-    public final char getAlphabeticShortcut() {
-        return this.c.getAlphabeticShortcut();
-    }
-
-    @Override // android.view.MenuItem
-    public final CharSequence getContentDescription() {
-        return this.c.getContentDescription();
-    }
-
-    @Override // android.view.MenuItem
-    public final int getGroupId() {
-        return this.c.getGroupId();
-    }
-
-    @Override // android.view.MenuItem
-    public final Drawable getIcon() {
-        return this.c.getIcon();
-    }
-
-    @Override // android.view.MenuItem
-    public final ColorStateList getIconTintList() {
-        return this.c.getIconTintList();
-    }
-
-    @Override // android.view.MenuItem
-    public final PorterDuff.Mode getIconTintMode() {
-        return this.c.getIconTintMode();
-    }
-
-    @Override // android.view.MenuItem
-    public final Intent getIntent() {
-        return this.c.getIntent();
-    }
-
-    @Override // android.view.MenuItem
-    public final int getItemId() {
-        return this.c.getItemId();
-    }
-
-    @Override // android.view.MenuItem
-    public final ContextMenu.ContextMenuInfo getMenuInfo() {
-        return this.c.getMenuInfo();
-    }
-
-    @Override // android.view.MenuItem
-    public final int getNumericModifiers() {
-        return this.c.getNumericModifiers();
-    }
-
-    @Override // android.view.MenuItem
-    public final char getNumericShortcut() {
-        return this.c.getNumericShortcut();
-    }
-
-    @Override // android.view.MenuItem
-    public final int getOrder() {
-        return this.c.getOrder();
-    }
-
-    @Override // android.view.MenuItem
-    public final SubMenu getSubMenu() {
-        return this.c.getSubMenu();
-    }
-
-    @Override // android.view.MenuItem
-    public final CharSequence getTitle() {
-        return this.c.getTitle();
-    }
-
-    @Override // android.view.MenuItem
-    public final CharSequence getTitleCondensed() {
-        return this.c.getTitleCondensed();
-    }
-
-    @Override // android.view.MenuItem
-    public final CharSequence getTooltipText() {
-        return this.c.getTooltipText();
-    }
-
-    @Override // android.view.MenuItem
-    public final boolean hasSubMenu() {
-        return this.c.hasSubMenu();
-    }
-
-    @Override // android.view.MenuItem
-    public final boolean isActionViewExpanded() {
-        return this.c.isActionViewExpanded();
-    }
-
-    @Override // android.view.MenuItem
-    public final boolean isCheckable() {
-        return this.c.isCheckable();
-    }
-
-    @Override // android.view.MenuItem
-    public final boolean isChecked() {
-        return this.c.isChecked();
-    }
-
-    @Override // android.view.MenuItem
-    public final boolean isEnabled() {
-        return this.c.isEnabled();
-    }
-
-    @Override // android.view.MenuItem
-    public final boolean isVisible() {
-        return this.c.isVisible();
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setActionProvider(ActionProvider actionProvider) {
-        q24 q24Var = new q24(this, actionProvider);
-        if (actionProvider == null) {
-            q24Var = null;
+    @Override // java.util.Deque
+    /* renamed from: c, reason: merged with bridge method [inline-methods] */
+    public final boolean offerLast(wj5 wj5Var) {
+        if (b(wj5Var)) {
+            return false;
         }
-        this.c.a(q24Var);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setActionView(int i) {
-        ns6 ns6Var = this.c;
-        ns6Var.setActionView(i);
-        View actionView = ns6Var.getActionView();
-        if (actionView instanceof CollapsibleActionView) {
-            ns6Var.setActionView(new r24(actionView));
+        wj5 wj5Var2 = this.Y;
+        this.Y = wj5Var;
+        if (wj5Var2 == null) {
+            this.X = wj5Var;
+            return true;
         }
-        return this;
+        wj5Var2.Z = wj5Var;
+        wj5Var.Y = wj5Var2;
+        return true;
     }
 
-    @Override // android.view.MenuItem
-    public final MenuItem setAlphabeticShortcut(char c) {
-        this.c.setAlphabeticShortcut(c);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setCheckable(boolean z) {
-        this.c.setCheckable(z);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setChecked(boolean z) {
-        this.c.setChecked(z);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setContentDescription(CharSequence charSequence) {
-        this.c.setContentDescription(charSequence);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setEnabled(boolean z) {
-        this.c.setEnabled(z);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setIcon(Drawable drawable) {
-        this.c.setIcon(drawable);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setIconTintList(ColorStateList colorStateList) {
-        this.c.setIconTintList(colorStateList);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setIconTintMode(PorterDuff.Mode mode) {
-        this.c.setIconTintMode(mode);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setIntent(Intent intent) {
-        this.c.setIntent(intent);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setNumericShortcut(char c) {
-        this.c.setNumericShortcut(c);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setOnActionExpandListener(MenuItem.OnActionExpandListener onActionExpandListener) {
-        this.c.setOnActionExpandListener(onActionExpandListener != null ? new s24(this, onActionExpandListener) : null);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setOnMenuItemClickListener(MenuItem.OnMenuItemClickListener onMenuItemClickListener) {
-        this.c.setOnMenuItemClickListener(onMenuItemClickListener != null ? new ks6(this, onMenuItemClickListener) : null);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setShortcut(char c, char c2) {
-        this.c.setShortcut(c, c2);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final void setShowAsAction(int i) {
-        this.c.setShowAsAction(i);
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setShowAsActionFlags(int i) {
-        this.c.setShowAsActionFlags(i);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setTitle(CharSequence charSequence) {
-        this.c.setTitle(charSequence);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setTitleCondensed(CharSequence charSequence) {
-        this.c.setTitleCondensed(charSequence);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setTooltipText(CharSequence charSequence) {
-        this.c.setTooltipText(charSequence);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setVisible(boolean z) {
-        return this.c.setVisible(z);
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setAlphabeticShortcut(char c, int i) {
-        this.c.setAlphabeticShortcut(c, i);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setIcon(int i) {
-        this.c.setIcon(i);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setNumericShortcut(char c, int i) {
-        this.c.setNumericShortcut(c, i);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setShortcut(char c, char c2, int i, int i2) {
-        this.c.setShortcut(c, c2, i, i2);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setTitle(int i) {
-        this.c.setTitle(i);
-        return this;
-    }
-
-    @Override // android.view.MenuItem
-    public final MenuItem setActionView(View view) {
-        if (view instanceof CollapsibleActionView) {
-            view = new r24(view);
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final void clear() {
+        wj5 wj5Var = this.X;
+        while (wj5Var != null) {
+            wj5 wj5Var2 = wj5Var.Z;
+            wj5Var.Y = null;
+            wj5Var.Z = null;
+            wj5Var = wj5Var2;
         }
-        this.c.setActionView(view);
-        return this;
+        this.Y = null;
+        this.X = null;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Deque
+    public final boolean contains(Object obj) {
+        return (obj instanceof wj5) && b((wj5) obj);
+    }
+
+    @Override // java.util.Deque
+    /* renamed from: d, reason: merged with bridge method [inline-methods] */
+    public final wj5 pollFirst() {
+        if (isEmpty()) {
+            return null;
+        }
+        wj5 wj5Var = this.X;
+        wj5 wj5Var2 = wj5Var.Z;
+        wj5Var.Z = null;
+        this.X = wj5Var2;
+        if (wj5Var2 == null) {
+            this.Y = null;
+            return wj5Var;
+        }
+        wj5Var2.Y = null;
+        return wj5Var;
+    }
+
+    @Override // java.util.Deque
+    public final Iterator descendingIterator() {
+        return new s24(this.Y, 1);
+    }
+
+    @Override // java.util.Deque, java.util.Queue
+    public final Object element() {
+        a();
+        return this.X;
+    }
+
+    @Override // java.util.Deque
+    public final Object getFirst() {
+        a();
+        return this.X;
+    }
+
+    @Override // java.util.Deque
+    public final Object getLast() {
+        a();
+        return this.Y;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean isEmpty() {
+        return this.X == null;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Deque
+    public final Iterator iterator() {
+        return new s24(this.X, 0);
+    }
+
+    @Override // java.util.Deque, java.util.Queue
+    public final boolean offer(Object obj) {
+        return offerLast((wj5) obj);
+    }
+
+    @Override // java.util.Deque
+    public final boolean offerFirst(Object obj) {
+        wj5 wj5Var = (wj5) obj;
+        if (b(wj5Var)) {
+            return false;
+        }
+        wj5 wj5Var2 = this.X;
+        this.X = wj5Var;
+        if (wj5Var2 == null) {
+            this.Y = wj5Var;
+            return true;
+        }
+        wj5Var2.Y = wj5Var;
+        wj5Var.Z = wj5Var2;
+        return true;
+    }
+
+    @Override // java.util.Deque, java.util.Queue
+    public final Object peek() {
+        return this.X;
+    }
+
+    @Override // java.util.Deque
+    public final Object peekFirst() {
+        return this.X;
+    }
+
+    @Override // java.util.Deque
+    public final Object peekLast() {
+        return this.Y;
+    }
+
+    @Override // java.util.Deque, java.util.Queue
+    public final Object poll() {
+        return pollFirst();
+    }
+
+    @Override // java.util.Deque
+    public final Object pollLast() {
+        if (isEmpty()) {
+            return null;
+        }
+        wj5 wj5Var = this.Y;
+        wj5 wj5Var2 = wj5Var.Y;
+        wj5Var.Y = null;
+        this.Y = wj5Var2;
+        if (wj5Var2 == null) {
+            this.X = null;
+            return wj5Var;
+        }
+        wj5Var2.Z = null;
+        return wj5Var;
+    }
+
+    @Override // java.util.Deque
+    public final Object pop() {
+        a();
+        return pollFirst();
+    }
+
+    @Override // java.util.Deque
+    public final void push(Object obj) {
+        wj5 wj5Var = (wj5) obj;
+        if (b(wj5Var)) {
+            q05.f();
+            return;
+        }
+        wj5 wj5Var2 = this.X;
+        this.X = wj5Var;
+        if (wj5Var2 == null) {
+            this.Y = wj5Var;
+        } else {
+            wj5Var2.Y = wj5Var;
+            wj5Var.Z = wj5Var2;
+        }
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Deque
+    public final boolean remove(Object obj) {
+        if (!(obj instanceof wj5)) {
+            return false;
+        }
+        wj5 wj5Var = (wj5) obj;
+        if (!b(wj5Var)) {
+            return false;
+        }
+        wj5 wj5Var2 = wj5Var.Y;
+        wj5 wj5Var3 = wj5Var.Z;
+        if (wj5Var2 == null) {
+            this.X = wj5Var3;
+        } else {
+            wj5Var2.Z = wj5Var3;
+            wj5Var.Y = null;
+        }
+        if (wj5Var3 == null) {
+            this.Y = wj5Var2;
+            return true;
+        }
+        wj5Var3.Y = wj5Var2;
+        wj5Var.Z = null;
+        return true;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public final boolean removeAll(Collection collection) {
+        Iterator it = collection.iterator();
+        boolean z = false;
+        while (it.hasNext()) {
+            z |= remove(it.next());
+        }
+        return z;
+    }
+
+    @Override // java.util.Deque
+    public final Object removeFirst() {
+        a();
+        return pollFirst();
+    }
+
+    @Override // java.util.Deque
+    public final boolean removeFirstOccurrence(Object obj) {
+        return remove(obj);
+    }
+
+    @Override // java.util.Deque
+    public final Object removeLast() {
+        a();
+        if (isEmpty()) {
+            return null;
+        }
+        wj5 wj5Var = this.Y;
+        wj5 wj5Var2 = wj5Var.Y;
+        wj5Var.Y = null;
+        this.Y = wj5Var2;
+        if (wj5Var2 == null) {
+            this.X = null;
+            return wj5Var;
+        }
+        wj5Var2.Z = null;
+        return wj5Var;
+    }
+
+    @Override // java.util.Deque
+    public final boolean removeLastOccurrence(Object obj) {
+        return remove(obj);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Deque
+    public final int size() {
+        int i = 0;
+        for (wj5 wj5Var = this.X; wj5Var != null; wj5Var = wj5Var.Z) {
+            i++;
+        }
+        return i;
+    }
+
+    @Override // java.util.Deque, java.util.Queue
+    public final Object remove() {
+        a();
+        return pollFirst();
     }
 }

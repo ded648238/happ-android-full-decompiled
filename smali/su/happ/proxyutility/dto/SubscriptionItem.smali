@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/SubscriptionItem;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -17,7 +17,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\r\n\u0002\u0010\t\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u0014\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\n\u0008\u0087\u0008\u0018\u0000 ]2\u00020\u0001:\u0002^]R\"\u0010\u0003\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008R\u0019\u0010\t\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\t\u0010\u0004\u001a\u0004\u0008\n\u0010\u0006R\u0019\u0010\u000c\u001a\u0004\u0018\u00010\u000b8\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000c\u0010\u0004\u001a\u0004\u0008\r\u0010\u0006R\"\u0010\u000f\u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000f\u0010\u0010\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R$\u0010\u0016\u001a\u0004\u0018\u00010\u00158\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0016\u0010\u0017\u001a\u0004\u0008\u0018\u0010\u0019\"\u0004\u0008\u001a\u0010\u001bR\"\u0010\u001c\u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001c\u0010\u0010\u001a\u0004\u0008\u001d\u0010\u0012\"\u0004\u0008\u001e\u0010\u0014R\u0016\u0010\u001f\u001a\u00020\u000e8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u001f\u0010\u0010R\"\u0010 \u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008 \u0010\u0010\u001a\u0004\u0008!\u0010\u0012\"\u0004\u0008\"\u0010\u0014R\u0017\u0010$\u001a\u00020#8\u0006\u00a2\u0006\u000c\n\u0004\u0008$\u0010%\u001a\u0004\u0008&\u0010\'R\"\u0010(\u001a\u00020#8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008(\u0010%\u001a\u0004\u0008)\u0010\'\"\u0004\u0008*\u0010+R\"\u0010,\u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008,\u0010\u0010\u001a\u0004\u0008-\u0010\u0012\"\u0004\u0008.\u0010\u0014R\"\u0010/\u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008/\u0010\u0010\u001a\u0004\u00080\u0010\u0012\"\u0004\u00081\u0010\u0014R$\u00103\u001a\u0004\u0018\u0001028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u00083\u0010\u0004\u001a\u0004\u0008%\u0010\u0006\"\u0004\u00084\u0010\u0008R$\u00105\u001a\u0004\u0018\u00010\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u00085\u00106\u001a\u0004\u00087\u00108\"\u0004\u00089\u0010:R$\u0010;\u001a\u0004\u0018\u00010\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008;\u00106\u001a\u0004\u0008<\u00108\"\u0004\u0008=\u0010:R$\u0010>\u001a\u0004\u0018\u00010#8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008>\u0010?\u001a\u0004\u0008@\u0010A\"\u0004\u0008B\u0010CR$\u0010D\u001a\u0004\u0018\u00010#8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008D\u0010?\u001a\u0004\u0008E\u0010A\"\u0004\u0008F\u0010CR\u0018\u0010H\u001a\u0004\u0018\u00010G8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008H\u0010IR\u0018\u0010K\u001a\u0004\u0018\u00010J8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008K\u0010LR\u0018\u0010N\u001a\u0004\u0018\u00010M8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0006\n\u0004\u0008N\u0010OR\u0016\u0010P\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008P\u0010\u0004R\u0016\u0010Q\u001a\u00020\u000e8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008Q\u0010\u0010R\u0014\u0010R\u001a\u00020\u000e8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008R\u0010\u0010R\u0018\u0010T\u001a\u0004\u0018\u00010S8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008T\u0010\u0004R\u0018\u0010V\u001a\u0004\u0018\u00010U8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008V\u0010\u0004R\u0016\u0010W\u001a\u00020\u000e8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008W\u0010\u0010R$\u0010X\u001a\u0004\u0018\u00010#8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008X\u0010?\u001a\u0004\u0008Y\u0010A\"\u0004\u0008Z\u0010CR\u0017\u0010[\u001a\u00020\u000e8\u0006\u00a2\u0006\u000c\n\u0004\u0008[\u0010\u0010\u001a\u0004\u0008\\\u0010\u0012\u00a8\u0006_"
+        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\r\n\u0002\u0010\t\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0008\u0014\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\n\u0008\u0087\u0008\u0018\u0000 ^2\u00020\u0001:\u0002_^R\"\u0010\u0003\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008R\u0019\u0010\t\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\t\u0010\u0004\u001a\u0004\u0008\n\u0010\u0006R\u0019\u0010\u000c\u001a\u0004\u0018\u00010\u000b8\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000c\u0010\u0004\u001a\u0004\u0008\r\u0010\u0006R\"\u0010\u000f\u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000f\u0010\u0010\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R$\u0010\u0016\u001a\u0004\u0018\u00010\u00158\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0016\u0010\u0017\u001a\u0004\u0008\u0018\u0010\u0019\"\u0004\u0008\u001a\u0010\u001bR\"\u0010\u001c\u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001c\u0010\u0010\u001a\u0004\u0008\u001d\u0010\u0012\"\u0004\u0008\u001e\u0010\u0014R\u0016\u0010\u001f\u001a\u00020\u000e8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u001f\u0010\u0010R\"\u0010 \u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008 \u0010\u0010\u001a\u0004\u0008!\u0010\u0012\"\u0004\u0008\"\u0010\u0014R\u0017\u0010$\u001a\u00020#8\u0006\u00a2\u0006\u000c\n\u0004\u0008$\u0010%\u001a\u0004\u0008&\u0010\'R\"\u0010(\u001a\u00020#8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008(\u0010%\u001a\u0004\u0008)\u0010\'\"\u0004\u0008*\u0010+R(\u0010,\u001a\u00020\u000e8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0018\n\u0004\u0008,\u0010\u0010\u0012\u0004\u0008/\u00100\u001a\u0004\u0008-\u0010\u0012\"\u0004\u0008.\u0010\u0014R\"\u00101\u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u00081\u0010\u0010\u001a\u0004\u0008\u0010\u0010\u0012\"\u0004\u00082\u0010\u0014R$\u00104\u001a\u0004\u0018\u0001038\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u00084\u0010\u0004\u001a\u0004\u00085\u0010\u0006\"\u0004\u00086\u0010\u0008R$\u00107\u001a\u0004\u0018\u00010\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u00087\u00108\u001a\u0004\u0008%\u00109\"\u0004\u0008:\u0010;R$\u0010<\u001a\u0004\u0018\u00010\u000e8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008<\u00108\u001a\u0004\u0008=\u00109\"\u0004\u0008>\u0010;R$\u0010?\u001a\u0004\u0018\u00010#8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008?\u0010@\u001a\u0004\u0008A\u0010B\"\u0004\u0008C\u0010DR$\u0010E\u001a\u0004\u0018\u00010#8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008E\u0010@\u001a\u0004\u0008F\u0010B\"\u0004\u0008G\u0010DR\u0018\u0010I\u001a\u0004\u0018\u00010H8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008I\u0010JR\u0018\u0010L\u001a\u0004\u0018\u00010K8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008L\u0010MR\u0018\u0010O\u001a\u0004\u0018\u00010N8\u0002@\u0002X\u0083\u000e\u00a2\u0006\u0006\n\u0004\u0008O\u0010PR\u0016\u0010Q\u001a\u00020\u00028\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008Q\u0010\u0004R\u0016\u0010R\u001a\u00020\u000e8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008R\u0010\u0010R\u0014\u0010S\u001a\u00020\u000e8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008S\u0010\u0010R\u0018\u0010U\u001a\u0004\u0018\u00010T8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008U\u0010\u0004R\u0018\u0010W\u001a\u0004\u0018\u00010V8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008W\u0010\u0004R\u0016\u0010X\u001a\u00020\u000e8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008X\u0010\u0010R$\u0010Y\u001a\u0004\u0018\u00010#8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008Y\u0010@\u001a\u0004\u0008Z\u0010B\"\u0004\u0008[\u0010DR\u0017\u0010\\\u001a\u00020\u000e8\u0006\u00a2\u0006\u000c\n\u0004\u0008\\\u0010\u0010\u001a\u0004\u0008]\u0010\u0012\u00a8\u0006`"
     }
     d2 = {
         "Lsu/happ/proxyutility/dto/SubscriptionItem;",
@@ -25,68 +25,69 @@
         "",
         "url",
         "Ljava/lang/String;",
-        "T",
+        "X",
         "()Ljava/lang/String;",
-        "s0",
+        "v0",
         "(Ljava/lang/String;)V",
         "originUrl",
-        "N",
+        "Q",
         "Lsu/happ/proxyutility/dto/HWID;",
         "hwidLink",
-        "F",
+        "I",
         "",
         "encryptedUrl",
         "Z",
-        "x",
+        "v",
         "()Z",
-        "f0",
+        "j0",
         "(Z)V",
-        "Lmo1;",
+        "Lcx1;",
         "encryptedUrlMode",
-        "Lmo1;",
+        "Lcx1;",
         "y",
-        "()Lmo1;",
-        "g0",
-        "(Lmo1;)V",
+        "()Lcx1;",
+        "k0",
+        "(Lcx1;)V",
         "enabled",
         "getEnabled",
-        "d0",
+        "h0",
         "_hideSettings",
         "encrypted",
-        "v",
-        "e0",
+        "p",
+        "i0",
         "",
         "addedTime",
         "J",
         "h",
         "()J",
         "lastUpdated",
-        "L",
+        "O",
         "setLastUpdated",
         "(J)V",
         "autoUpdate",
         "k",
-        "c0",
+        "g0",
+        "getAutoUpdate$annotations",
+        "()V",
         "isExpand",
-        "V",
-        "h0",
+        "l0",
         "Lsu/happ/proxyutility/dto/InstallId;",
         "installId",
-        "m0",
+        "M",
+        "q0",
         "import",
         "Ljava/lang/Boolean;",
-        "G",
         "()Ljava/lang/Boolean;",
-        "k0",
+        "o0",
         "(Ljava/lang/Boolean;)V",
         "importTryAdd",
-        "H",
-        "l0",
+        "K",
+        "p0",
         "extraCheckTimestampMs",
         "Ljava/lang/Long;",
-        "getExtraCheckTimestampMs",
+        "B",
         "()Ljava/lang/Long;",
-        "i0",
+        "m0",
         "(Ljava/lang/Long;)V",
         "extraCheckFailureTimestampMs",
         "getExtraCheckFailureTimestampMs",
@@ -109,10 +110,10 @@
         "hashedDomain",
         "firstRun",
         "lastCheckUpdate",
-        "K",
-        "n0",
+        "N",
+        "setLastCheckUpdate",
         "resetHandled",
-        "P",
+        "S",
         "Companion",
         "Status",
         "app"
@@ -160,7 +161,7 @@
 
 .field private encryptedUrl:Z
 
-.field private encryptedUrlMode:Lmo1;
+.field private encryptedUrlMode:Lcx1;
 
 .field private extraCheckFailureTimestampMs:Ljava/lang/Long;
 
@@ -189,7 +190,7 @@
 .field private final manualSendHwidInCookie:Z
 
 .field private metaParams:Lsu/happ/proxyutility/dto/MetaParams;
-    .annotation runtime Lw56;
+    .annotation runtime Lpr6;
         value = "headerMetaParams"
     .end annotation
 .end field
@@ -243,6 +244,19 @@
     return-void
 .end method
 
+.method public constructor <init>()V
+    .locals 2
+
+    .line 31
+    const/4 v0, 0x0
+
+    const v1, 0xfffffff
+
+    invoke-direct {p0, v0, v1, v0}, Lsu/happ/proxyutility/dto/SubscriptionItem;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    return-void
+.end method
+
 .method public synthetic constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 33
 
@@ -271,7 +285,7 @@
     :cond_1
     move-object/from16 v5, p3
 
-    .line 31
+    .line 32
     :goto_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -281,7 +295,7 @@
 
     const/16 v32, 0x0
 
-    .line 32
+    .line 33
     const-string v3, ""
 
     const/4 v6, 0x0
@@ -330,12 +344,12 @@
 
     move-object/from16 v2, p0
 
-    invoke-direct/range {v2 .. v32}, Lsu/happ/proxyutility/dto/SubscriptionItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLmo1;ZZZJJZZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Long;Lsu/happ/proxyutility/dto/SubscriptionItem$Status;Lsu/happ/proxyutility/dto/enums/TypeCheck;Lsu/happ/proxyutility/dto/MetaParams;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Z)V
+    invoke-direct/range {v2 .. v32}, Lsu/happ/proxyutility/dto/SubscriptionItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLcx1;ZZZJJZZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Long;Lsu/happ/proxyutility/dto/SubscriptionItem$Status;Lsu/happ/proxyutility/dto/enums/TypeCheck;Lsu/happ/proxyutility/dto/MetaParams;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Z)V
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLmo1;ZZZJJZZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Long;Lsu/happ/proxyutility/dto/SubscriptionItem$Status;Lsu/happ/proxyutility/dto/enums/TypeCheck;Lsu/happ/proxyutility/dto/MetaParams;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Z)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLcx1;ZZZJJZZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Long;Lsu/happ/proxyutility/dto/SubscriptionItem$Status;Lsu/happ/proxyutility/dto/enums/TypeCheck;Lsu/happ/proxyutility/dto/MetaParams;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Z)V
     .locals 0
 
     .line 1
@@ -359,7 +373,7 @@
     iput-boolean p4, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrl:Z
 
     .line 7
-    iput-object p5, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
+    iput-object p5, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
 
     .line 8
     iput-boolean p6, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->enabled:Z
@@ -463,7 +477,7 @@
     return-void
 .end method
 
-.method public static d(Lsu/happ/proxyutility/dto/SubscriptionItem;JZLsu/happ/proxyutility/dto/MetaParams;ZI)Lsu/happ/proxyutility/dto/SubscriptionItem;
+.method public static d(Lsu/happ/proxyutility/dto/SubscriptionItem;JZLsu/happ/proxyutility/dto/MetaParams;ZLjava/lang/Long;I)Lsu/happ/proxyutility/dto/SubscriptionItem;
     .locals 31
 
     .line 1
@@ -471,7 +485,7 @@
 
     .line 2
     .line 3
-    move/from16 v1, p6
+    move/from16 v1, p7
 
     .line 4
     .line 5
@@ -503,7 +517,7 @@
     move-object v6, v5
 
     .line 17
-    iget-object v5, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
+    iget-object v5, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
 
     .line 18
     .line 19
@@ -556,202 +570,198 @@
     .line 39
     .line 40
     :goto_0
-    and-int/lit16 v14, v1, 0x400
+    iget-boolean v14, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->autoUpdate:Z
 
     .line 41
     .line 42
-    if-eqz v14, :cond_1
+    and-int/lit16 v15, v1, 0x800
 
     .line 43
     .line 44
-    iget-boolean v14, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->autoUpdate:Z
+    if-eqz v15, :cond_1
 
     .line 45
     .line 46
-    goto :goto_1
-
-    .line 47
-    :cond_1
-    const/4 v14, 0x1
-
-    .line 48
-    :goto_1
-    and-int/lit16 v15, v1, 0x800
-
-    .line 49
-    .line 50
-    if-eqz v15, :cond_2
-
-    .line 51
-    .line 52
     iget-boolean v15, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->isExpand:Z
 
-    .line 53
-    .line 54
-    goto :goto_2
+    .line 47
+    .line 48
+    goto :goto_1
 
-    .line 55
-    :cond_2
+    .line 49
+    :cond_1
     move/from16 v15, p3
+
+    .line 50
+    .line 51
+    :goto_1
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->installId:Ljava/lang/String;
+
+    .line 52
+    .line 53
+    move-object/from16 v16, v1
+
+    .line 54
+    .line 55
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->import:Ljava/lang/Boolean;
 
     .line 56
     .line 57
-    :goto_2
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->installId:Ljava/lang/String;
+    move-object/from16 v17, v1
 
     .line 58
     .line 59
-    move-object/from16 v16, v1
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->importTryAdd:Ljava/lang/Boolean;
 
     .line 60
     .line 61
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->import:Ljava/lang/Boolean;
+    move-object/from16 v18, v1
 
     .line 62
     .line 63
-    move-object/from16 v17, v1
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
 
     .line 64
     .line 65
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->importTryAdd:Ljava/lang/Boolean;
+    move-object/from16 v19, v1
 
     .line 66
     .line 67
-    move-object/from16 v18, v1
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckFailureTimestampMs:Ljava/lang/Long;
 
     .line 68
     .line 69
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
+    move-object/from16 v20, v1
 
     .line 70
     .line 71
-    move-object/from16 v19, v1
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
 
     .line 72
     .line 73
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckFailureTimestampMs:Ljava/lang/Long;
+    move-object/from16 v21, v1
 
     .line 74
     .line 75
-    move-object/from16 v20, v1
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->typeCheck:Lsu/happ/proxyutility/dto/enums/TypeCheck;
 
     .line 76
     .line 77
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    const/high16 v22, 0x80000
 
     .line 78
     .line 79
-    move-object/from16 v21, v1
+    and-int v22, p7, v22
 
     .line 80
     .line 81
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->typeCheck:Lsu/happ/proxyutility/dto/enums/TypeCheck;
+    if-eqz v22, :cond_2
 
     .line 82
     .line 83
-    const/high16 v22, 0x80000
+    move-object/from16 v22, v1
 
     .line 84
     .line 85
-    and-int v22, p6, v22
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 86
     .line 87
-    if-eqz v22, :cond_3
+    move-object/from16 p1, v1
 
     .line 88
     .line 89
-    move-object/from16 v22, v1
+    goto :goto_2
 
     .line 90
-    .line 91
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
-
-    .line 92
-    .line 93
-    move-object/from16 p2, v1
-
-    .line 94
-    .line 95
-    goto :goto_3
-
-    .line 96
-    :cond_3
+    :cond_2
     move-object/from16 v22, v1
+
+    .line 91
+    .line 92
+    move-object/from16 p1, p4
+
+    .line 93
+    .line 94
+    :goto_2
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
+
+    .line 95
+    .line 96
+    move-object/from16 v23, v1
 
     .line 97
     .line 98
-    move-object/from16 p2, p4
+    iget-boolean v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
 
     .line 99
     .line 100
-    :goto_3
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
+    const/high16 v24, 0x400000
 
     .line 101
     .line 102
-    move-object/from16 v23, v1
+    and-int v24, p7, v24
 
     .line 103
     .line 104
-    iget-boolean v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
+    if-eqz v24, :cond_3
 
     .line 105
     .line 106
-    const/high16 v24, 0x400000
+    move/from16 v24, v1
 
     .line 107
     .line 108
-    and-int v24, p6, v24
+    iget-boolean v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualSendHwidInCookie:Z
 
     .line 109
     .line 110
-    if-eqz v24, :cond_4
+    move/from16 v25, v1
 
     .line 111
     .line 112
-    move/from16 v24, v1
+    goto :goto_3
 
     .line 113
-    .line 114
-    iget-boolean v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualSendHwidInCookie:Z
-
-    .line 115
-    .line 116
-    move/from16 v25, v1
-
-    .line 117
-    .line 118
-    goto :goto_4
-
-    .line 119
-    :cond_4
+    :cond_3
     move/from16 v24, v1
+
+    .line 114
+    .line 115
+    move/from16 v25, p5
+
+    .line 116
+    .line 117
+    :goto_3
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->providerId:Ljava/lang/String;
+
+    .line 118
+    .line 119
+    move-object/from16 v26, v1
 
     .line 120
     .line 121
-    move/from16 v25, p5
+    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hashedDomain:Ljava/lang/String;
 
     .line 122
     .line 123
-    :goto_4
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->providerId:Ljava/lang/String;
+    move-object/from16 v27, v1
 
     .line 124
     .line 125
-    move-object/from16 v26, v1
+    iget-boolean v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->firstRun:Z
 
     .line 126
     .line 127
-    iget-object v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hashedDomain:Ljava/lang/String;
+    const/high16 v28, 0x4000000
 
     .line 128
     .line 129
-    move-object/from16 v27, v1
+    and-int v28, p7, v28
 
     .line 130
     .line 131
-    iget-boolean v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->firstRun:Z
+    if-eqz v28, :cond_4
 
     .line 132
     .line 133
@@ -763,116 +773,128 @@
 
     .line 136
     .line 137
-    const/high16 v29, 0x8000000
+    move-object/from16 v29, v1
 
     .line 138
     .line 139
-    and-int v29, p6, v29
+    goto :goto_4
 
     .line 140
+    :cond_4
+    move/from16 v28, v1
+
     .line 141
-    if-eqz v29, :cond_5
-
     .line 142
+    move-object/from16 v29, p6
+
     .line 143
-    move-object/from16 v29, v1
-
     .line 144
+    :goto_4
+    const/high16 v1, 0x8000000
+
     .line 145
-    iget-boolean v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
-
     .line 146
+    and-int v1, p7, v1
+
     .line 147
-    move/from16 v30, v1
-
     .line 148
-    .line 149
-    goto :goto_5
+    if-eqz v1, :cond_5
 
+    .line 149
     .line 150
-    :cond_5
-    move-object/from16 v29, v1
+    iget-boolean v1, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
 
     .line 151
     .line 152
-    const/16 v30, 0x1
+    :goto_5
+    move/from16 v30, v1
 
     .line 153
     .line 154
-    :goto_5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    goto :goto_6
 
     .line 155
+    :cond_5
+    const/4 v1, 0x1
+
     .line 156
+    goto :goto_5
+
     .line 157
-    invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :goto_6
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 158
     .line 159
     .line 160
-    invoke-virtual/range {v23 .. v23}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 161
     .line 162
     .line 163
-    new-instance v0, Lsu/happ/proxyutility/dto/SubscriptionItem;
+    invoke-virtual/range {v23 .. v23}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 164
     .line 165
-    move-object v1, v11
-
     .line 166
-    move-wide v11, v12
+    new-instance v0, Lsu/happ/proxyutility/dto/SubscriptionItem;
 
     .line 167
-    move v13, v14
-
     .line 168
-    move v14, v15
+    move-object v1, v11
 
     .line 169
-    move-object/from16 v15, v16
+    move-wide v11, v12
 
     .line 170
+    move v13, v14
+
     .line 171
-    move-object/from16 v16, v17
+    move v14, v15
 
     .line 172
+    move-object/from16 v15, v16
+
     .line 173
+    .line 174
+    move-object/from16 v16, v17
+
+    .line 175
+    .line 176
     move-object/from16 v17, v18
 
-    .line 174
-    .line 175
+    .line 177
+    .line 178
     move-object/from16 v18, v19
 
-    .line 176
-    .line 177
+    .line 179
+    .line 180
     move-object/from16 v19, v20
 
-    .line 178
-    .line 179
+    .line 181
+    .line 182
     move-object/from16 v20, v21
 
-    .line 180
-    .line 181
+    .line 183
+    .line 184
     move-object/from16 v21, v22
 
-    .line 182
-    .line 183
-    move-object/from16 v22, p2
-
-    .line 184
     .line 185
-    invoke-direct/range {v0 .. v30}, Lsu/happ/proxyutility/dto/SubscriptionItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLmo1;ZZZJJZZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Long;Lsu/happ/proxyutility/dto/SubscriptionItem$Status;Lsu/happ/proxyutility/dto/enums/TypeCheck;Lsu/happ/proxyutility/dto/MetaParams;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Z)V
-
     .line 186
+    move-object/from16 v22, p1
+
     .line 187
     .line 188
+    invoke-direct/range {v0 .. v30}, Lsu/happ/proxyutility/dto/SubscriptionItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLcx1;ZZZJJZZLjava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Long;Lsu/happ/proxyutility/dto/SubscriptionItem$Status;Lsu/happ/proxyutility/dto/enums/TypeCheck;Lsu/happ/proxyutility/dto/MetaParams;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/Long;Z)V
+
+    .line 189
+    .line 190
+    .line 191
     return-object v0
 .end method
 
-.method public static q0(Lsu/happ/proxyutility/dto/SubscriptionItem;Lsu/happ/proxyutility/dto/SubscriptionItem$Status;Lsu/happ/proxyutility/dto/enums/TypeCheck;I)V
-    .locals 9
+.method public static t0(Lsu/happ/proxyutility/dto/SubscriptionItem;Lsu/happ/proxyutility/dto/SubscriptionItem$Status;Lsu/happ/proxyutility/dto/enums/TypeCheck;I)V
+    .locals 8
 
     .line 1
     and-int/lit8 p3, p3, 0x4
@@ -909,7 +931,7 @@
 
     .line 15
     .line 16
-    const/4 v4, -0x1
+    move p1, v3
 
     .line 17
     goto :goto_0
@@ -925,18 +947,18 @@
     .line 21
     .line 22
     .line 23
-    move-result v5
+    move-result p1
 
     .line 24
-    aget v4, v4, v5
+    aget p1, v4, p1
 
     .line 25
     .line 26
     :goto_0
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
     .line 27
-    if-ne v4, v5, :cond_4
+    if-ne p1, v4, :cond_4
 
     .line 28
     .line 29
@@ -993,7 +1015,7 @@
     const/4 p2, 0x2
 
     .line 53
-    if-ne v4, p2, :cond_6
+    if-ne p1, p2, :cond_6
 
     .line 54
     .line 55
@@ -1001,19 +1023,19 @@
 
     .line 56
     .line 57
-    iget-object v5, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    iget-object v4, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
 
     .line 58
     .line 59
-    sget-object v6, Lsu/happ/proxyutility/dto/SubscriptionItem$Status;->EXTRA:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    sget-object v5, Lsu/happ/proxyutility/dto/SubscriptionItem$Status;->EXTRA:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
 
     .line 60
     .line 61
-    if-ne v5, v6, :cond_6
+    if-ne v4, v5, :cond_6
 
     .line 62
     .line 63
-    iput-object v6, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    iput-object v5, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
 
     .line 64
     .line 65
@@ -1054,7 +1076,7 @@
 
     .line 82
     :cond_6
-    if-ne v4, p2, :cond_8
+    if-ne p1, p2, :cond_8
 
     .line 83
     .line 84
@@ -1067,23 +1089,23 @@
     .line 87
     .line 88
     .line 89
-    move-result-wide v5
+    move-result-wide v4
 
     .line 90
-    sub-long v5, v1, v5
+    sub-long v4, v1, v4
 
     .line 91
     .line 92
-    const-wide/32 v7, 0x5265c00
+    const-wide/32 v6, 0x5265c00
 
     .line 93
     .line 94
     .line 95
-    cmp-long p3, v5, v7
+    cmp-long p3, v4, v6
 
     .line 96
     .line 97
-    if-ltz p3, :cond_8
+    if-gtz p3, :cond_8
 
     .line 98
     .line 99
@@ -1091,15 +1113,15 @@
 
     .line 100
     .line 101
-    sget-object v5, Lsu/happ/proxyutility/dto/SubscriptionItem$Status;->EXTRA:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    sget-object v4, Lsu/happ/proxyutility/dto/SubscriptionItem$Status;->EXTRA:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
 
     .line 102
     .line 103
-    if-ne p3, v5, :cond_8
+    if-ne p3, v4, :cond_8
 
     .line 104
     .line 105
-    iput-object v5, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    iput-object v4, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
 
     .line 106
     .line 107
@@ -1128,7 +1150,7 @@
 
     .line 118
     :cond_8
-    if-ne v4, p2, :cond_a
+    if-ne p1, p2, :cond_a
 
     .line 119
     .line 120
@@ -1169,59 +1191,68 @@
 
     .line 137
     :cond_a
-    if-ne v4, v3, :cond_d
+    if-ne p1, v3, :cond_c
 
     .line 138
     .line 139
-    if-nez p1, :cond_b
+    iget-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
 
     .line 140
     .line 141
-    iget-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    if-nez p1, :cond_b
 
     .line 142
     .line 143
-    :cond_b
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 144
     .line 145
-    iget-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
-
     .line 146
+    move-result-object p1
+
     .line 147
-    if-nez p1, :cond_c
+    :cond_b
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
 
     .line 148
     .line 149
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 150
-    .line 151
-    .line 152
-    move-result-object p1
-
-    .line 153
-    :cond_c
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
-
-    .line 154
-    .line 155
     return-void
 
-    .line 156
-    :cond_d
-    invoke-static {}, Len0;->d()V
+    .line 150
+    :cond_c
+    invoke-static {}, Lku0;->d()V
 
-    .line 157
-    .line 158
-    .line 159
+    .line 151
+    .line 152
+    .line 153
     return-void
 .end method
 
 
 # virtual methods
-.method public final B()Ljava/util/Map;
+.method public final B()Ljava/lang/Long;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final C()Lsu/happ/proxyutility/dto/enums/TypeCheck;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->typeCheck:Lsu/happ/proxyutility/dto/enums/TypeCheck;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final D()Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -1240,41 +1271,83 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 9
     .line 10
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->F()Ljava/util/Map;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/MetaParams;->E()Ljava/lang/String;
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    return-object v0
+    return-object p0
 
     .line 17
     :cond_0
     return-object v1
 .end method
 
-.method public final C()Ljava/lang/String;
-    .locals 1
+.method public final E()Ljava/util/Map;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hashedDomain:Ljava/lang/String;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/SubscriptionItem;->c()Z
 
     .line 2
     .line 3
-    return-object v0
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 9
+    .line 10
+    if-eqz p0, :cond_0
+
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/MetaParams;->F()Ljava/util/Map;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+
+    .line 17
+    :cond_0
+    return-object v1
 .end method
 
-.method public final D()Z
+.method public final F()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hashedDomain:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final G()Z
     .locals 1
 
     .line 1
@@ -1294,11 +1367,11 @@
 
     .line 8
     .line 9
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrl:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrl:Z
 
     .line 10
     .line 11
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 12
     .line 13
@@ -1306,21 +1379,21 @@
 
     .line 14
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 15
-    return v0
+    return p0
 
     .line 16
     :cond_1
     :goto_0
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 17
-    return v0
+    return p0
 .end method
 
-.method public final E()Ljava/lang/String;
+.method public final H()Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -1339,63 +1412,63 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 9
     .line 10
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->P()Ljava/lang/String;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/MetaParams;->P()Ljava/lang/String;
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    return-object v0
+    return-object p0
 
     .line 17
     :cond_0
     return-object v1
 .end method
 
-.method public final F()Ljava/lang/String;
-    .locals 1
+.method public final I()Ljava/lang/String;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hwidLink:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hwidLink:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final G()Ljava/lang/Boolean;
-    .locals 1
+.method public final J()Ljava/lang/Boolean;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->import:Ljava/lang/Boolean;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->import:Ljava/lang/Boolean;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final H()Ljava/lang/Boolean;
-    .locals 1
+.method public final K()Ljava/lang/Boolean;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->importTryAdd:Ljava/lang/Boolean;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->importTryAdd:Ljava/lang/Boolean;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final I()Ljava/lang/Boolean;
+.method public final L()Ljava/lang/Boolean;
     .locals 2
 
     .line 1
@@ -1414,52 +1487,52 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 9
     .line 10
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->U()Ljava/lang/Boolean;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/MetaParams;->U()Ljava/lang/Boolean;
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    return-object v0
+    return-object p0
 
     .line 17
     :cond_0
     return-object v1
 .end method
 
-.method public final J()Ljava/lang/String;
-    .locals 1
+.method public final M()Ljava/lang/String;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->installId:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->installId:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final K()Ljava/lang/Long;
-    .locals 1
+.method public final N()Ljava/lang/Long;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->lastCheckUpdate:Ljava/lang/Long;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->lastCheckUpdate:Ljava/lang/Long;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final L()J
+.method public final O()J
     .locals 2
 
     .line 1
@@ -1470,51 +1543,51 @@
     return-wide v0
 .end method
 
-.method public final M()Lsu/happ/proxyutility/dto/MetaParams;
-    .locals 1
+.method public final P()Lsu/happ/proxyutility/dto/MetaParams;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public final N()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->originUrl:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final O()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->providerId:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final P()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
-
-    .line 2
-    .line 3
-    return v0
+    return-object p0
 .end method
 
 .method public final Q()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->originUrl:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final R()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->providerId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final S()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final T()Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -1533,30 +1606,30 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 9
     .line 10
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->y0()Ljava/lang/String;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/MetaParams;->z0()Ljava/lang/String;
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    return-object v0
+    return-object p0
 
     .line 17
     :cond_0
     return-object v1
 .end method
 
-.method public final R()Z
+.method public final U()Z
     .locals 1
 
     .line 1
@@ -1585,44 +1658,55 @@
     .line 12
     .line 13
     .line 14
-    move-result v0
+    move-result p0
 
     .line 15
-    return v0
+    return p0
 
     .line 16
     :cond_0
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualSendHwidInCookie:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualSendHwidInCookie:Z
 
     .line 17
     .line 18
-    return v0
+    return p0
 .end method
 
-.method public final S()Ljava/lang/String;
-    .locals 1
+.method public final V()Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final T()Ljava/lang/String;
-    .locals 1
+.method public final W()Ljava/lang/String;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->url:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final U(Ljava/lang/String;)Z
-    .locals 7
+.method public final X()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->url:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final Y(Ljava/lang/String;)Z
+    .locals 6
 
     .line 1
     invoke-virtual {p0, p1}, Lsu/happ/proxyutility/dto/SubscriptionItem;->e(Ljava/lang/String;)Ljava/lang/String;
@@ -1644,7 +1728,7 @@
     const/4 v1, 0x0
 
     .line 10
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 11
     :goto_0
@@ -1705,7 +1789,7 @@
     move-result v2
 
     .line 38
-    const/4 v4, 0x0
+    move v4, v1
 
     .line 39
     :goto_1
@@ -1758,50 +1842,50 @@
     .line 60
     .line 61
     .line 62
-    move-result-object v2
+    move-result-object p0
 
     .line 63
     goto :goto_2
 
     .line 64
     :cond_4
-    move-object v2, v4
+    move-object p0, v4
 
     .line 65
     :goto_2
-    if-eqz v2, :cond_7
+    if-eqz p0, :cond_7
 
     .line 66
     .line 67
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     .line 68
     .line 69
     .line 70
-    move-result v4
+    move-result v2
 
     .line 71
-    const/4 v5, 0x0
+    move v4, v1
 
     .line 72
     :goto_3
-    if-ge v5, v4, :cond_6
+    if-ge v4, v2, :cond_6
 
     .line 73
     .line 74
-    invoke-virtual {v2, v5}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {p0, v4}, Ljava/lang/String;->charAt(I)C
 
     .line 75
     .line 76
     .line 77
-    move-result v6
+    move-result v5
 
     .line 78
-    if-eq v6, v3, :cond_5
+    if-eq v5, v3, :cond_5
 
     .line 79
     .line 80
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     .line 81
     .line 82
@@ -1809,7 +1893,7 @@
 
     .line 83
     :cond_5
-    invoke-virtual {v2, v1, v5}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {p0, v1, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     .line 84
     .line 85
@@ -1821,7 +1905,7 @@
 
     .line 88
     :cond_6
-    move-object v4, v2
+    move-object v4, p0
 
     .line 89
     :cond_7
@@ -1831,10 +1915,10 @@
     .line 90
     .line 91
     .line 92
-    move-result v0
+    move-result p0
 
     .line 93
-    if-nez v0, :cond_9
+    if-nez p0, :cond_9
 
     .line 94
     .line 95
@@ -1843,10 +1927,10 @@
     .line 96
     .line 97
     .line 98
-    move-result p1
+    move-result p0
 
     .line 99
-    if-eqz p1, :cond_8
+    if-eqz p0, :cond_8
 
     .line 100
     .line 101
@@ -1859,25 +1943,25 @@
     .line 103
     :cond_9
     :goto_5
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 104
-    return p1
+    return p0
 .end method
 
-.method public final V()Z
-    .locals 1
+.method public final Z()Z
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->isExpand:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->isExpand:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public final W()Z
-    .locals 7
+.method public final a0()Z
+    .locals 6
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
@@ -1912,337 +1996,165 @@
 
     .line 16
     .line 17
-    mul-long v0, v0, v2
+    mul-long/2addr v0, v2
 
     .line 18
-    .line 19
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     move-result-object v0
 
-    .line 23
+    .line 22
     goto :goto_0
 
-    .line 24
+    .line 23
     :cond_0
     const/4 v0, 0x0
 
-    .line 25
+    .line 24
     :goto_0
     const/4 v1, 0x0
 
-    .line 26
+    .line 25
     if-eqz v0, :cond_2
 
+    .line 26
     .line 27
-    .line 28
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
+    .line 28
     .line 29
     .line 30
-    .line 31
     move-result-wide v2
 
-    .line 32
+    .line 31
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
+    .line 32
     .line 33
     .line 34
-    .line 35
     move-result-wide v4
 
-    .line 36
-    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/SubscriptionItem;->X()Z
+    .line 35
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/SubscriptionItem;->b0()Z
 
+    .line 36
     .line 37
     .line 38
-    .line 39
     move-result v0
+
+    .line 39
+    if-eqz v0, :cond_2
 
     .line 40
-    if-eqz v0, :cond_2
-
     .line 41
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
+
     .line 42
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
-
     .line 43
+    if-eqz p0, :cond_1
+
     .line 44
-    if-eqz v0, :cond_1
-
     .line 45
-    .line 46
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->k0()Ljava/lang/Boolean;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/MetaParams;->k0()Ljava/lang/Boolean;
 
+    .line 46
     .line 47
     .line 48
+    move-result-object p0
+
     .line 49
-    move-result-object v0
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 50
-    sget-object v6, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
     .line 51
-    .line 52
-    invoke-static {v0, v6}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, v0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 52
     .line 53
     .line 54
+    move-result p0
+
     .line 55
-    move-result v0
+    goto :goto_1
 
     .line 56
-    goto :goto_1
+    :cond_1
+    move p0, v1
 
     .line 57
-    :cond_1
-    const/4 v0, 0x0
+    :goto_1
+    if-eqz p0, :cond_2
 
     .line 58
-    :goto_1
-    if-eqz v0, :cond_2
-
     .line 59
-    .line 60
     sub-long/2addr v2, v4
 
-    .line 61
+    .line 60
     const-wide/16 v4, 0x0
 
+    .line 61
     .line 62
+    cmp-long p0, v4, v2
+
     .line 63
-    cmp-long v0, v4, v2
-
     .line 64
-    .line 65
-    if-gtz v0, :cond_2
+    if-gtz p0, :cond_2
 
+    .line 65
     .line 66
-    .line 67
     const-wide/32 v4, 0xf731401
 
+    .line 67
     .line 68
     .line 69
+    cmp-long p0, v2, v4
+
     .line 70
-    cmp-long v0, v2, v4
-
     .line 71
-    .line 72
-    if-gez v0, :cond_2
+    if-gez p0, :cond_2
 
+    .line 72
     .line 73
+    const/4 p0, 0x1
+
     .line 74
-    const/4 v0, 0x1
+    return p0
 
     .line 75
-    return v0
-
-    .line 76
     :cond_2
     return v1
-.end method
-
-.method public final X()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
-
-    .line 2
-    .line 3
-    sget-object v1, Lsu/happ/proxyutility/dto/SubscriptionItem$Status;->EXTRA:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
-
-    .line 4
-    .line 5
-    if-ne v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    const/4 v0, 0x1
-
-    .line 8
-    return v0
-
-    .line 9
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 10
-    return v0
-.end method
-
-.method public final Y()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->typeCheck:Lsu/happ/proxyutility/dto/enums/TypeCheck;
-
-    .line 2
-    .line 3
-    sget-object v1, Lsu/happ/proxyutility/dto/enums/TypeCheck;->FILE:Lsu/happ/proxyutility/dto/enums/TypeCheck;
-
-    .line 4
-    .line 5
-    if-ne v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    const/4 v0, 0x1
-
-    .line 8
-    return v0
-
-    .line 9
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 10
-    return v0
-.end method
-
-.method public final Z()Z
-    .locals 7
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    if-eqz v0, :cond_3
-
-    .line 5
-    .line 6
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
-
-    .line 7
-    .line 8
-    const/4 v2, 0x0
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-wide v3
-
-    .line 15
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-wide v5
-
-    .line 19
-    sub-long/2addr v5, v3
-
-    .line 20
-    const-wide/32 v3, 0x5265c00
-
-    .line 21
-    .line 22
-    .line 23
-    cmp-long v0, v5, v3
-
-    .line 24
-    .line 25
-    if-ltz v0, :cond_1
-
-    .line 26
-    .line 27
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 28
-    goto :goto_0
-
-    .line 29
-    :cond_1
-    const/4 v0, 0x1
-
-    .line 30
-    :goto_0
-    if-nez v0, :cond_2
-
-    .line 31
-    .line 32
-    goto :goto_1
-
-    .line 33
-    :cond_2
-    return v2
-
-    .line 34
-    :cond_3
-    :goto_1
-    return v1
-.end method
-
-.method public final a0()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
-
-    .line 2
-    .line 3
-    return v0
 .end method
 
 .method public final b0()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    sget-object v0, Lsu/happ/proxyutility/dto/SubscriptionItem$Status;->EXTRA:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->T0()Ljava/lang/Boolean;
+    if-ne p0, v0, :cond_0
 
     .line 6
     .line 7
+    const/4 p0, 0x1
+
     .line 8
-    move-result-object v0
+    return p0
 
     .line 9
-    goto :goto_0
+    :cond_0
+    const/4 p0, 0x0
 
     .line 10
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 11
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 12
-    .line 13
-    const/4 v0, 0x1
-
-    .line 14
-    return v0
-
-    .line 15
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 16
-    return v0
+    return p0
 .end method
 
 .method public final c()Z
@@ -2260,7 +2172,7 @@
 
     .line 5
     .line 6
-    const/4 v0, -0x1
+    move v0, v1
 
     .line 7
     goto :goto_0
@@ -2306,15 +2218,15 @@
 
     .line 25
     :cond_1
-    invoke-static {}, Len0;->d()V
+    invoke-static {}, Lku0;->d()V
 
     .line 26
     .line 27
     .line 28
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 29
-    return v0
+    return p0
 
     .line 30
     :cond_2
@@ -2323,53 +2235,140 @@
     .line 31
     :cond_3
     :goto_1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->firstRun:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->firstRun:Z
 
     .line 32
     .line 33
+    return p0
+.end method
+
+.method public final c0()Z
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->typeCheck:Lsu/happ/proxyutility/dto/enums/TypeCheck;
+
+    .line 2
+    .line 3
+    sget-object v0, Lsu/happ/proxyutility/dto/enums/TypeCheck;->FILE:Lsu/happ/proxyutility/dto/enums/TypeCheck;
+
+    .line 4
+    .line 5
+    if-ne p0, v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 p0, 0x1
+
+    .line 8
+    return p0
+
+    .line 9
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 10
+    return p0
+.end method
+
+.method public final d0()Z
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    if-eqz v0, :cond_3
+
+    .line 5
+    .line 6
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
+
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    if-eqz p0, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Ljava/lang/Number;->longValue()J
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-wide v2
+
+    .line 15
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-wide v4
+
+    .line 19
+    sub-long/2addr v4, v2
+
+    .line 20
+    const-wide/32 v2, 0x5265c00
+
+    .line 21
+    .line 22
+    .line 23
+    cmp-long p0, v4, v2
+
+    .line 24
+    .line 25
+    if-ltz p0, :cond_1
+
+    .line 26
+    .line 27
+    :cond_0
+    move p0, v0
+
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_1
+    move p0, v1
+
+    .line 30
+    :goto_0
+    if-nez p0, :cond_2
+
+    .line 31
+    .line 32
+    goto :goto_1
+
+    .line 33
+    :cond_2
     return v0
-.end method
 
-.method public final c0()V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->autoUpdate:Z
-
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final d0()V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->enabled:Z
-
-    .line 3
-    .line 4
-    return-void
+    .line 34
+    :cond_3
+    :goto_1
+    return v1
 .end method
 
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final e(Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -2385,19 +2384,19 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
 
     .line 9
     .line 10
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 11
     .line 12
-    const-string v1, "happ://crypt/"
+    const-string v0, "happ://crypt/"
 
     .line 13
     .line 14
-    invoke-static {p1, v1}, Lsl6;->D0(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lea7;->f1(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 15
     .line 16
@@ -2405,11 +2404,11 @@
     move-result-object p1
 
     .line 18
-    const-string v1, "happ://crypt2/"
+    const-string v0, "happ://crypt2/"
 
     .line 19
     .line 20
-    invoke-static {p1, v1}, Lsl6;->D0(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lea7;->f1(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 21
     .line 22
@@ -2417,11 +2416,11 @@
     move-result-object p1
 
     .line 24
-    const-string v1, "happ://crypt3/"
+    const-string v0, "happ://crypt3/"
 
     .line 25
     .line 26
-    invoke-static {p1, v1}, Lsl6;->D0(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lea7;->f1(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 27
     .line 28
@@ -2429,11 +2428,11 @@
     move-result-object p1
 
     .line 30
-    const-string v1, "happ://crypt4/"
+    const-string v0, "happ://crypt4/"
 
     .line 31
     .line 32
-    invoke-static {p1, v1}, Lsl6;->D0(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lea7;->f1(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 33
     .line 34
@@ -2441,11 +2440,11 @@
     move-result-object p1
 
     .line 36
-    const-string v1, "happ://crypt5/"
+    const-string v0, "happ://crypt5/"
 
     .line 37
     .line 38
-    invoke-static {p1, v1}, Lsl6;->D0(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lea7;->f1(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 39
     .line 40
@@ -2453,27 +2452,30 @@
     move-result-object p1
 
     .line 42
-    invoke-static {p1, v0}, Ll73;->e0(Ljava/lang/String;Lmo1;)Ljava/lang/String;
+    invoke-static {p1, p0}, Lvq0;->F(Ljava/lang/String;Lcx1;)Ljava/lang/String;
 
     .line 43
     .line 44
     .line 45
-    move-result-object p1
+    move-result-object p0
 
     .line 46
+    return-object p0
+
+    .line 47
     :cond_0
     return-object p1
 .end method
 
-.method public final e0(Z)V
+.method public final e0()Z
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encrypted:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
 
     .line 2
     .line 3
-    return-void
+    return p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -2518,7 +2520,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -2542,7 +2544,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -2574,7 +2576,7 @@
 
     .line 42
     .line 43
-    const/4 v1, 0x1
+    move v1, v0
 
     .line 44
     goto :goto_1
@@ -2582,7 +2584,7 @@
     .line 45
     :cond_4
     :goto_0
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 46
     goto :goto_1
@@ -2597,7 +2599,7 @@
 
     .line 50
     :cond_6
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 51
     .line 52
@@ -2630,11 +2632,11 @@
 
     .line 64
     :cond_8
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
+    iget-object v1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
 
     .line 65
     .line 66
-    iget-object v3, p1, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
+    iget-object v3, p1, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
 
     .line 67
     .line 68
@@ -2782,7 +2784,7 @@
 
     .line 131
     .line 132
-    const/4 v1, 0x1
+    move v1, v0
 
     .line 133
     goto :goto_3
@@ -2790,7 +2792,7 @@
     .line 134
     :cond_11
     :goto_2
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 135
     goto :goto_3
@@ -2805,7 +2807,7 @@
 
     .line 139
     :cond_13
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 140
     .line 141
@@ -2830,7 +2832,7 @@
 
     .line 149
     .line 150
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 151
     .line 152
@@ -2854,7 +2856,7 @@
 
     .line 160
     .line 161
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 162
     .line 163
@@ -2878,7 +2880,7 @@
 
     .line 171
     .line 172
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 173
     .line 174
@@ -2902,7 +2904,7 @@
 
     .line 182
     .line 183
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 184
     .line 185
@@ -2958,7 +2960,7 @@
 
     .line 207
     .line 208
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 209
     .line 210
@@ -2982,7 +2984,7 @@
 
     .line 218
     .line 219
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 220
     .line 221
@@ -3046,7 +3048,7 @@
 
     .line 247
     .line 248
-    const/4 v1, 0x1
+    move v1, v0
 
     .line 249
     goto :goto_5
@@ -3054,7 +3056,7 @@
     .line 250
     :cond_1f
     :goto_4
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 251
     goto :goto_5
@@ -3073,7 +3075,7 @@
 
     .line 256
     .line 257
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 258
     .line 259
@@ -3106,7 +3108,7 @@
 
     .line 271
     .line 272
-    const/4 v1, 0x1
+    move v1, v0
 
     .line 273
     goto :goto_7
@@ -3114,7 +3116,7 @@
     .line 274
     :cond_23
     :goto_6
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 275
     goto :goto_7
@@ -3129,7 +3131,7 @@
 
     .line 279
     :cond_25
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 280
     .line 281
@@ -3170,7 +3172,7 @@
 
     .line 296
     .line 297
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 298
     .line 299
@@ -3186,7 +3188,7 @@
 
     .line 304
     :cond_28
-    iget-boolean v1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
 
     .line 305
     .line 306
@@ -3194,7 +3196,7 @@
 
     .line 307
     .line 308
-    if-eq v1, p1, :cond_29
+    if-eq p0, p1, :cond_29
 
     .line 309
     .line 310
@@ -3205,7 +3207,52 @@
     return v0
 .end method
 
-.method public final f()V
+.method public final f0()Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lsu/happ/proxyutility/dto/MetaParams;->T0()Ljava/lang/Boolean;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 11
+    :goto_0
+    if-eqz p0, :cond_1
+
+    .line 12
+    .line 13
+    const/4 p0, 0x1
+
+    .line 14
+    return p0
+
+    .line 15
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 16
+    return p0
+.end method
+
+.method public final g()V
     .locals 1
 
     .line 1
@@ -3219,25 +3266,17 @@
     return-void
 .end method
 
-.method public final f0(Z)V
-    .locals 0
+.method public final g0()V
+    .locals 1
 
     .line 1
-    iput-boolean p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrl:Z
+    const/4 v0, 0x1
 
     .line 2
+    iput-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->autoUpdate:Z
+
     .line 3
-    return-void
-.end method
-
-.method public final g0(Lmo1;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
-
-    .line 2
-    .line 3
+    .line 4
     return-void
 .end method
 
@@ -3252,19 +3291,22 @@
     return-wide v0
 .end method
 
-.method public final h0(Z)V
-    .locals 0
+.method public final h0()V
+    .locals 1
 
     .line 1
-    iput-boolean p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->isExpand:Z
+    const/4 v0, 0x1
 
     .line 2
+    iput-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->enabled:Z
+
     .line 3
+    .line 4
     return-void
 .end method
 
 .method public final hashCode()I
-    .locals 10
+    .locals 6
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->url:Ljava/lang/String;
@@ -3283,790 +3325,600 @@
 
     .line 8
     .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 10
-    .line 11
     iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->originUrl:Ljava/lang/String;
 
+    .line 11
     .line 12
-    .line 13
     const/4 v3, 0x0
 
-    .line 14
+    .line 13
     if-nez v2, :cond_0
 
+    .line 14
     .line 15
-    .line 16
-    const/4 v2, 0x0
+    move v2, v3
 
-    .line 17
+    .line 16
     goto :goto_0
 
-    .line 18
+    .line 17
     :cond_0
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
+    .line 18
     .line 19
     .line 20
-    .line 21
     move-result v2
 
-    .line 22
+    .line 21
     :goto_0
     add-int/2addr v0, v2
 
+    .line 22
+    mul-int/2addr v0, v1
+
     .line 23
-    mul-int/lit8 v0, v0, 0x1f
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hwidLink:Ljava/lang/String;
 
     .line 24
     .line 25
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hwidLink:Ljava/lang/String;
+    if-nez v2, :cond_1
 
     .line 26
     .line 27
-    if-nez v2, :cond_1
+    move v2, v3
 
     .line 28
-    .line 29
-    const/4 v2, 0x0
-
-    .line 30
     goto :goto_1
 
-    .line 31
+    .line 29
     :cond_1
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
+    .line 30
+    .line 31
     .line 32
-    .line 33
-    .line 34
     move-result v2
 
-    .line 35
+    .line 33
     :goto_1
     add-int/2addr v0, v2
 
-    .line 36
-    mul-int/lit8 v0, v0, 0x1f
+    .line 34
+    mul-int/2addr v0, v1
 
-    .line 37
-    .line 38
+    .line 35
     iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrl:Z
 
+    .line 36
+    .line 37
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
+
+    .line 38
     .line 39
     .line 40
-    const/16 v4, 0x4d5
+    move-result v0
 
     .line 41
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
+
     .line 42
-    const/16 v5, 0x4cf
-
     .line 43
+    if-nez v2, :cond_2
+
     .line 44
-    if-eqz v2, :cond_2
-
     .line 45
-    .line 46
-    const/16 v2, 0x4cf
+    move v2, v3
 
-    .line 47
-    .line 48
+    .line 46
     goto :goto_2
 
-    .line 49
+    .line 47
     :cond_2
-    const/16 v2, 0x4d5
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
+    .line 48
+    .line 49
     .line 50
+    move-result v2
+
     .line 51
     :goto_2
     add-int/2addr v0, v2
 
     .line 52
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 53
+    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->enabled:Z
+
     .line 54
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
-
     .line 55
-    .line 56
-    if-nez v2, :cond_3
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
+    .line 56
     .line 57
     .line 58
-    const/4 v2, 0x0
+    move-result v0
 
     .line 59
-    goto :goto_3
+    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->_hideSettings:Z
 
     .line 60
-    :cond_3
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
     .line 61
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
+
     .line 62
     .line 63
-    move-result v2
-
     .line 64
-    :goto_3
-    add-int/2addr v0, v2
+    move-result v0
 
     .line 65
-    mul-int/lit8 v0, v0, 0x1f
+    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encrypted:Z
 
     .line 66
     .line 67
-    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->enabled:Z
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
     .line 68
     .line 69
-    if-eqz v2, :cond_4
-
     .line 70
+    move-result v0
+
     .line 71
-    const/16 v2, 0x4cf
+    iget-wide v4, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->addedTime:J
 
     .line 72
     .line 73
-    goto :goto_4
+    invoke-static {v0, v1, v4, v5}, Lw31;->e(IIJ)I
 
     .line 74
-    :cond_4
-    const/16 v2, 0x4d5
-
     .line 75
     .line 76
-    :goto_4
-    add-int/2addr v0, v2
+    move-result v0
 
     .line 77
-    mul-int/lit8 v0, v0, 0x1f
+    iget-wide v4, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->lastUpdated:J
 
     .line 78
     .line 79
-    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->_hideSettings:Z
+    invoke-static {v0, v1, v4, v5}, Lw31;->e(IIJ)I
 
     .line 80
     .line 81
-    if-eqz v2, :cond_5
-
     .line 82
+    move-result v0
+
     .line 83
-    const/16 v2, 0x4cf
+    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->autoUpdate:Z
 
     .line 84
     .line 85
-    goto :goto_5
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
     .line 86
-    :cond_5
-    const/16 v2, 0x4d5
-
     .line 87
     .line 88
-    :goto_5
-    add-int/2addr v0, v2
+    move-result v0
 
     .line 89
-    mul-int/lit8 v0, v0, 0x1f
+    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->isExpand:Z
 
     .line 90
     .line 91
-    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encrypted:Z
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
     .line 92
     .line 93
-    if-eqz v2, :cond_6
-
     .line 94
+    move-result v0
+
     .line 95
-    const/16 v2, 0x4cf
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->installId:Ljava/lang/String;
 
     .line 96
     .line 97
-    goto :goto_6
+    if-nez v2, :cond_3
 
     .line 98
-    :cond_6
-    const/16 v2, 0x4d5
-
     .line 99
+    move v2, v3
+
     .line 100
-    :goto_6
-    add-int/2addr v0, v2
+    goto :goto_3
 
     .line 101
-    mul-int/lit8 v0, v0, 0x1f
+    :cond_3
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
     .line 102
     .line 103
-    iget-wide v6, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->addedTime:J
-
     .line 104
+    move-result v2
+
     .line 105
-    const/16 v2, 0x20
+    :goto_3
+    add-int/2addr v0, v2
 
     .line 106
+    mul-int/2addr v0, v1
+
     .line 107
-    ushr-long v8, v6, v2
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->import:Ljava/lang/Boolean;
 
     .line 108
     .line 109
-    xor-long/2addr v6, v8
+    if-nez v2, :cond_4
 
     .line 110
-    long-to-int v7, v6
-
     .line 111
-    add-int/2addr v0, v7
+    move v2, v3
 
     .line 112
-    mul-int/lit8 v0, v0, 0x1f
+    goto :goto_4
 
     .line 113
-    .line 114
-    iget-wide v6, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->lastUpdated:J
+    :cond_4
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
+    .line 114
     .line 115
     .line 116
-    ushr-long v8, v6, v2
+    move-result v2
 
     .line 117
-    .line 118
-    xor-long/2addr v6, v8
-
-    .line 119
-    long-to-int v2, v6
-
-    .line 120
+    :goto_4
     add-int/2addr v0, v2
 
+    .line 118
+    mul-int/2addr v0, v1
+
+    .line 119
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->importTryAdd:Ljava/lang/Boolean;
+
+    .line 120
     .line 121
-    mul-int/lit8 v0, v0, 0x1f
+    if-nez v2, :cond_5
 
     .line 122
     .line 123
-    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->autoUpdate:Z
+    move v2, v3
 
     .line 124
+    goto :goto_5
+
     .line 125
-    if-eqz v2, :cond_7
+    :cond_5
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 126
     .line 127
-    const/16 v2, 0x4cf
-
     .line 128
+    move-result v2
+
     .line 129
-    goto :goto_7
-
-    .line 130
-    :cond_7
-    const/16 v2, 0x4d5
-
-    .line 131
-    .line 132
-    :goto_7
+    :goto_5
     add-int/2addr v0, v2
 
+    .line 130
+    mul-int/2addr v0, v1
+
+    .line 131
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
+
+    .line 132
     .line 133
-    mul-int/lit8 v0, v0, 0x1f
+    if-nez v2, :cond_6
 
     .line 134
     .line 135
-    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->isExpand:Z
+    move v2, v3
 
     .line 136
+    goto :goto_6
+
     .line 137
-    if-eqz v2, :cond_8
+    :cond_6
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 138
     .line 139
-    const/16 v2, 0x4cf
-
     .line 140
+    move-result v2
+
     .line 141
-    goto :goto_8
-
-    .line 142
-    :cond_8
-    const/16 v2, 0x4d5
-
-    .line 143
-    .line 144
-    :goto_8
+    :goto_6
     add-int/2addr v0, v2
 
+    .line 142
+    mul-int/2addr v0, v1
+
+    .line 143
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckFailureTimestampMs:Ljava/lang/Long;
+
+    .line 144
     .line 145
-    mul-int/lit8 v0, v0, 0x1f
+    if-nez v2, :cond_7
 
     .line 146
     .line 147
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->installId:Ljava/lang/String;
+    move v2, v3
 
     .line 148
+    goto :goto_7
+
     .line 149
-    if-nez v2, :cond_9
+    :cond_7
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 150
     .line 151
-    const/4 v2, 0x0
-
     .line 152
-    goto :goto_9
+    move-result v2
 
     .line 153
-    :cond_9
-    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+    :goto_7
+    add-int/2addr v0, v2
 
     .line 154
-    .line 155
-    .line 156
-    move-result v2
+    mul-int/2addr v0, v1
 
+    .line 155
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+
+    .line 156
     .line 157
-    :goto_9
-    add-int/2addr v0, v2
+    if-nez v2, :cond_8
 
     .line 158
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 159
+    move v2, v3
+
     .line 160
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->import:Ljava/lang/Boolean;
+    goto :goto_8
 
     .line 161
-    .line 162
-    if-nez v2, :cond_a
-
-    .line 163
-    .line 164
-    const/4 v2, 0x0
-
-    .line 165
-    goto :goto_a
-
-    .line 166
-    :cond_a
+    :cond_8
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    .line 167
-    .line 168
-    .line 169
+    .line 162
+    .line 163
+    .line 164
     move-result v2
 
-    .line 170
-    :goto_a
+    .line 165
+    :goto_8
     add-int/2addr v0, v2
 
+    .line 166
+    mul-int/2addr v0, v1
+
+    .line 167
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->typeCheck:Lsu/happ/proxyutility/dto/enums/TypeCheck;
+
+    .line 168
+    .line 169
+    if-nez v2, :cond_9
+
+    .line 170
     .line 171
-    mul-int/lit8 v0, v0, 0x1f
+    move v2, v3
 
     .line 172
+    goto :goto_9
+
     .line 173
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->importTryAdd:Ljava/lang/Boolean;
+    :cond_9
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 174
     .line 175
-    if-nez v2, :cond_b
-
     .line 176
+    move-result v2
+
     .line 177
-    const/4 v2, 0x0
+    :goto_9
+    add-int/2addr v0, v2
 
     .line 178
-    goto :goto_b
+    mul-int/2addr v0, v1
 
     .line 179
-    :cond_b
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 180
     .line 181
-    .line 182
-    move-result v2
+    if-nez v2, :cond_a
 
+    .line 182
     .line 183
-    :goto_b
-    add-int/2addr v0, v2
+    move v2, v3
 
     .line 184
-    mul-int/lit8 v0, v0, 0x1f
+    goto :goto_a
 
     .line 185
-    .line 186
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
+    :cond_a
+    invoke-virtual {v2}, Lsu/happ/proxyutility/dto/MetaParams;->hashCode()I
 
+    .line 186
     .line 187
     .line 188
-    if-nez v2, :cond_c
-
-    .line 189
-    .line 190
-    const/4 v2, 0x0
-
-    .line 191
-    goto :goto_c
-
-    .line 192
-    :cond_c
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    .line 193
-    .line 194
-    .line 195
     move-result v2
 
-    .line 196
-    :goto_c
+    .line 189
+    :goto_a
     add-int/2addr v0, v2
 
+    .line 190
+    mul-int/2addr v0, v1
+
+    .line 191
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
+
+    .line 192
+    .line 193
+    invoke-static {v0, v1, v2}, Leb7;->e(IILjava/lang/String;)I
+
+    .line 194
+    .line 195
+    .line 196
+    move-result v0
+
     .line 197
-    mul-int/lit8 v0, v0, 0x1f
+    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
 
     .line 198
     .line 199
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckFailureTimestampMs:Ljava/lang/Long;
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
     .line 200
     .line 201
-    if-nez v2, :cond_d
-
     .line 202
+    move-result v0
+
     .line 203
-    const/4 v2, 0x0
+    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualSendHwidInCookie:Z
 
     .line 204
-    goto :goto_d
-
     .line 205
-    :cond_d
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
     .line 206
     .line 207
     .line 208
-    move-result v2
+    move-result v0
 
     .line 209
-    :goto_d
-    add-int/2addr v0, v2
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->providerId:Ljava/lang/String;
 
     .line 210
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 211
-    .line 212
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->status:Lsu/happ/proxyutility/dto/SubscriptionItem$Status;
+    if-nez v2, :cond_b
 
+    .line 212
     .line 213
+    move v2, v3
+
     .line 214
-    if-nez v2, :cond_e
+    goto :goto_b
 
     .line 215
-    .line 216
-    const/4 v2, 0x0
+    :cond_b
+    sget-object v4, Lsu/happ/proxyutility/dto/ProviderId;->Companion:Lsu/happ/proxyutility/dto/ProviderId$Companion;
 
+    .line 216
     .line 217
-    goto :goto_e
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
     .line 218
-    :cond_e
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
     .line 219
     .line 220
-    .line 221
     move-result v2
 
-    .line 222
-    :goto_e
+    .line 221
+    :goto_b
     add-int/2addr v0, v2
 
+    .line 222
+    mul-int/2addr v0, v1
+
     .line 223
-    mul-int/lit8 v0, v0, 0x1f
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hashedDomain:Ljava/lang/String;
 
     .line 224
     .line 225
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->typeCheck:Lsu/happ/proxyutility/dto/enums/TypeCheck;
+    if-nez v2, :cond_c
 
     .line 226
     .line 227
-    if-nez v2, :cond_f
+    move v2, v3
 
     .line 228
+    goto :goto_c
+
     .line 229
-    const/4 v2, 0x0
+    :cond_c
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
     .line 230
-    goto :goto_f
-
     .line 231
-    :cond_f
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
     .line 232
-    .line 233
-    .line 234
     move-result v2
+
+    .line 233
+    :goto_c
+    add-int/2addr v0, v2
+
+    .line 234
+    mul-int/2addr v0, v1
 
     .line 235
-    :goto_f
-    add-int/2addr v0, v2
-
-    .line 236
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 237
-    .line 238
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
-
-    .line 239
-    .line 240
-    if-nez v2, :cond_10
-
-    .line 241
-    .line 242
-    const/4 v2, 0x0
-
-    .line 243
-    goto :goto_10
-
-    .line 244
-    :cond_10
-    invoke-virtual {v2}, Lsu/happ/proxyutility/dto/MetaParams;->hashCode()I
-
-    .line 245
-    .line 246
-    .line 247
-    move-result v2
-
-    .line 248
-    :goto_10
-    add-int/2addr v0, v2
-
-    .line 249
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 250
-    .line 251
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
-
-    .line 252
-    .line 253
-    invoke-static {v0, v1, v2}, Lxy4;->p(IILjava/lang/String;)I
-
-    .line 254
-    .line 255
-    .line 256
-    move-result v0
-
-    .line 257
-    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
-
-    .line 258
-    .line 259
-    if-eqz v2, :cond_11
-
-    .line 260
-    .line 261
-    const/16 v2, 0x4cf
-
-    .line 262
-    .line 263
-    goto :goto_11
-
-    .line 264
-    :cond_11
-    const/16 v2, 0x4d5
-
-    .line 265
-    .line 266
-    :goto_11
-    add-int/2addr v0, v2
-
-    .line 267
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 268
-    .line 269
-    iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualSendHwidInCookie:Z
-
-    .line 270
-    .line 271
-    if-eqz v2, :cond_12
-
-    .line 272
-    .line 273
-    const/16 v2, 0x4cf
-
-    .line 274
-    .line 275
-    goto :goto_12
-
-    .line 276
-    :cond_12
-    const/16 v2, 0x4d5
-
-    .line 277
-    .line 278
-    :goto_12
-    add-int/2addr v0, v2
-
-    .line 279
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 280
-    .line 281
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->providerId:Ljava/lang/String;
-
-    .line 282
-    .line 283
-    if-nez v2, :cond_13
-
-    .line 284
-    .line 285
-    const/4 v2, 0x0
-
-    .line 286
-    goto :goto_13
-
-    .line 287
-    :cond_13
-    sget-object v6, Lsu/happ/proxyutility/dto/ProviderId;->Companion:Lsu/happ/proxyutility/dto/ProviderId$Companion;
-
-    .line 288
-    .line 289
-    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
-
-    .line 290
-    .line 291
-    .line 292
-    move-result v2
-
-    .line 293
-    :goto_13
-    add-int/2addr v0, v2
-
-    .line 294
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 295
-    .line 296
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hashedDomain:Ljava/lang/String;
-
-    .line 297
-    .line 298
-    if-nez v2, :cond_14
-
-    .line 299
-    .line 300
-    const/4 v2, 0x0
-
-    .line 301
-    goto :goto_14
-
-    .line 302
-    :cond_14
-    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
-
-    .line 303
-    .line 304
-    .line 305
-    move-result v2
-
-    .line 306
-    :goto_14
-    add-int/2addr v0, v2
-
-    .line 307
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 308
-    .line 309
     iget-boolean v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->firstRun:Z
 
-    .line 310
-    .line 311
-    if-eqz v2, :cond_15
+    .line 236
+    .line 237
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
-    .line 312
-    .line 313
-    const/16 v2, 0x4cf
+    .line 238
+    .line 239
+    .line 240
+    move-result v0
 
-    .line 314
-    .line 315
-    goto :goto_15
-
-    .line 316
-    :cond_15
-    const/16 v2, 0x4d5
-
-    .line 317
-    .line 318
-    :goto_15
-    add-int/2addr v0, v2
-
-    .line 319
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 320
-    .line 321
+    .line 241
     iget-object v2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->lastCheckUpdate:Ljava/lang/Long;
 
-    .line 322
-    .line 323
-    if-nez v2, :cond_16
+    .line 242
+    .line 243
+    if-nez v2, :cond_d
 
-    .line 324
-    .line 325
-    goto :goto_16
+    .line 244
+    .line 245
+    goto :goto_d
 
-    .line 326
-    :cond_16
+    .line 246
+    :cond_d
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    .line 327
-    .line 328
-    .line 329
+    .line 247
+    .line 248
+    .line 249
     move-result v3
 
-    .line 330
-    :goto_16
+    .line 250
+    :goto_d
     add-int/2addr v0, v3
 
-    .line 331
-    mul-int/lit8 v0, v0, 0x1f
+    .line 251
+    mul-int/2addr v0, v1
 
-    .line 332
-    .line 333
-    iget-boolean v1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
+    .line 252
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
 
-    .line 334
-    .line 335
-    if-eqz v1, :cond_17
+    .line 253
+    .line 254
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    .line 336
-    .line 337
-    const/16 v4, 0x4cf
+    .line 255
+    .line 256
+    .line 257
+    move-result p0
 
-    .line 338
-    .line 339
-    :cond_17
-    add-int/2addr v0, v4
+    .line 258
+    add-int/2addr p0, v0
 
-    .line 340
-    return v0
+    .line 259
+    return p0
 .end method
 
-.method public final i0(Ljava/lang/Long;)V
+.method public final i0(Z)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
+    iput-boolean p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encrypted:Z
 
     .line 2
     .line 3
@@ -4077,7 +3929,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->_hideSettings:Z
+    iput-boolean p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrl:Z
 
     .line 2
     .line 3
@@ -4085,28 +3937,39 @@
 .end method
 
 .method public final k()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->autoUpdate:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final k0(Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->import:Ljava/lang/Boolean;
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->autoUpdate:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final k0(Lcx1;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final l()Ljava/lang/String;
+.method public final l0(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->isExpand:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final m()Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -4119,13 +3982,57 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
-.method public final l0()V
+.method public final m0(Ljava/lang/Long;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->extraCheckTimestampMs:Ljava/lang/Long;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final n0(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->_hideSettings:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final o0(Ljava/lang/Boolean;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->import:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final p()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encrypted:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final p0()V
     .locals 1
 
     .line 1
@@ -4140,7 +4047,7 @@
     return-void
 .end method
 
-.method public final m0(Ljava/lang/String;)V
+.method public final q0(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -4151,18 +4058,7 @@
     return-void
 .end method
 
-.method public final n0(Ljava/lang/Long;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->lastCheckUpdate:Ljava/lang/Long;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final o0(Lsu/happ/proxyutility/dto/MetaParams;)V
+.method public final r0(Lsu/happ/proxyutility/dto/MetaParams;)V
     .locals 12
 
     .line 1
@@ -4180,7 +4076,7 @@
     const/4 v9, -0x1
 
     .line 7
-    const v10, 0x1ffffff
+    const v10, 0x3ffffff
 
     .line 8
     .line 9
@@ -4265,7 +4161,7 @@
 
     .line 43
     :cond_1
-    invoke-static {v1, v2}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 44
     .line 45
@@ -4310,7 +4206,7 @@
 
     .line 64
     :cond_3
-    invoke-static {v1, v2}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 65
     .line 66
@@ -4403,7 +4299,7 @@
     .line 105
     .line 106
     .line 107
-    new-instance v2, Lme5;
+    new-instance v2, Lry5;
 
     .line 108
     .line 109
@@ -4466,7 +4362,7 @@
 
     .line 137
     :cond_8
-    const/4 v7, 0x0
+    move v7, v5
 
     .line 138
     :goto_3
@@ -4511,18 +4407,18 @@
 
     .line 155
     .line 156
-    const/4 v7, 0x1
+    move v7, v4
 
     .line 157
     goto :goto_5
 
     .line 158
     :cond_b
-    const/4 v7, 0x0
+    move v7, v5
 
     .line 159
     :goto_5
-    iput-boolean v7, v2, Lme5;->Q:Z
+    iput-boolean v7, v2, Lry5;->X:Z
 
     .line 160
     .line 161
@@ -4546,7 +4442,7 @@
 
     .line 169
     .line 170
-    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->y0()Ljava/lang/String;
+    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->z0()Ljava/lang/String;
 
     .line 171
     .line 172
@@ -4562,7 +4458,7 @@
 
     .line 177
     .line 178
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->y0()Ljava/lang/String;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->z0()Ljava/lang/String;
 
     .line 179
     .line 180
@@ -4607,7 +4503,7 @@
 
     .line 197
     .line 198
-    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->y0()Ljava/lang/String;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->z0()Ljava/lang/String;
 
     .line 199
     .line 200
@@ -4623,7 +4519,7 @@
 
     .line 204
     :goto_8
-    iget-boolean v7, v2, Lme5;->Q:Z
+    iget-boolean v7, v2, Lry5;->X:Z
 
     .line 205
     .line 206
@@ -4639,7 +4535,7 @@
 
     .line 211
     :cond_11
-    const/4 v7, 0x0
+    move v7, v5
 
     .line 212
     goto :goto_a
@@ -4647,17 +4543,17 @@
     .line 213
     :cond_12
     :goto_9
-    const/4 v7, 0x1
+    move v7, v4
 
     .line 214
     :goto_a
-    iput-boolean v7, v2, Lme5;->Q:Z
+    iput-boolean v7, v2, Lry5;->X:Z
 
     .line 215
     .line 216
     :cond_13
     :goto_b
-    invoke-virtual {v3, v6}, Lsu/happ/proxyutility/dto/MetaParams;->l2(Ljava/lang/String;)V
+    invoke-virtual {v3, v6}, Lsu/happ/proxyutility/dto/MetaParams;->m2(Ljava/lang/String;)V
 
     .line 217
     .line 218
@@ -4752,7 +4648,7 @@
 
     .line 259
     :goto_d
-    iget-boolean v7, v2, Lme5;->Q:Z
+    iget-boolean v7, v2, Lry5;->X:Z
 
     .line 260
     .line 261
@@ -4768,7 +4664,7 @@
 
     .line 266
     :cond_18
-    const/4 v7, 0x0
+    move v7, v5
 
     .line 267
     goto :goto_f
@@ -4776,11 +4672,11 @@
     .line 268
     :cond_19
     :goto_e
-    const/4 v7, 0x1
+    move v7, v4
 
     .line 269
     :goto_f
-    iput-boolean v7, v2, Lme5;->Q:Z
+    iput-boolean v7, v2, Lry5;->X:Z
 
     .line 270
     .line 271
@@ -4825,7 +4721,7 @@
     .line 289
     .line 290
     .line 291
-    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->l()Ljava/util/Map;
+    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->m()Ljava/util/Map;
 
     .line 292
     .line 293
@@ -4857,14 +4753,14 @@
 
     .line 304
     .line 305
-    const/4 v6, 0x0
+    move v6, v5
 
     .line 306
     goto :goto_12
 
     .line 307
     :cond_1d
-    invoke-static {v6, v8}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v8}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 308
     .line 309
@@ -4887,7 +4783,7 @@
     .line 317
     .line 318
     :cond_1e
-    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->l()Ljava/util/Map;
+    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->m()Ljava/util/Map;
 
     .line 319
     .line 320
@@ -4944,7 +4840,7 @@
 
     .line 341
     .line 342
-    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->l()Ljava/util/Map;
+    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->m()Ljava/util/Map;
 
     .line 343
     .line 344
@@ -4960,7 +4856,7 @@
 
     .line 348
     :goto_15
-    iget-boolean v8, v2, Lme5;->Q:Z
+    iget-boolean v8, v2, Lry5;->X:Z
 
     .line 349
     .line 350
@@ -4976,7 +4872,7 @@
 
     .line 355
     :cond_23
-    const/4 v6, 0x0
+    move v6, v5
 
     .line 356
     goto :goto_17
@@ -4984,11 +4880,11 @@
     .line 357
     :cond_24
     :goto_16
-    const/4 v6, 0x1
+    move v6, v4
 
     .line 358
     :goto_17
-    iput-boolean v6, v2, Lme5;->Q:Z
+    iput-boolean v6, v2, Lry5;->X:Z
 
     .line 359
     .line 360
@@ -4996,7 +4892,7 @@
 
     .line 361
     .line 362
-    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->l()Ljava/util/Map;
+    invoke-virtual {v7}, Lsu/happ/proxyutility/dto/XRayConfig$OutboundBean$StreamSettingsBean$TcpMasksBean$TcpMaskSettingBean;->m()Ljava/util/Map;
 
     .line 363
     .line 364
@@ -5084,7 +4980,7 @@
     array-length v7, v1
 
     .line 403
-    const/4 v8, 0x0
+    move v8, v5
 
     .line 404
     :goto_1a
@@ -5139,11 +5035,11 @@
     move-result-object v1
 
     .line 429
-    sget-object v3, Lsu/happ/proxyutility/HappApplication;->v0:Lsu/happ/proxyutility/HappApplication;
+    sget-object v3, Lsu/happ/proxyutility/HappApplication;->I0:Lsu/happ/proxyutility/HappApplication;
 
     .line 430
     .line 431
-    invoke-static {}, Ll14;->J()Lsu/happ/proxyutility/HappApplication;
+    invoke-static {}, Lh31;->V()Lsu/happ/proxyutility/HappApplication;
 
     .line 432
     .line 433
@@ -5151,7 +5047,7 @@
     move-result-object v3
 
     .line 435
-    invoke-virtual {v3}, Lsu/happ/proxyutility/HappApplication;->d()Lxp3;
+    invoke-virtual {v3}, Lsu/happ/proxyutility/HappApplication;->d()La74;
 
     .line 436
     .line 437
@@ -5159,126 +5055,125 @@
     move-result-object v3
 
     .line 439
-    new-instance v4, Lls3;
+    new-instance v4, Lf57;
 
     .line 440
     .line 441
-    const/16 v5, 0x10
+    const/4 v5, 0x4
 
     .line 442
-    .line 443
-    invoke-direct {v4, v5, v1, v2}, Lls3;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v5, v1, v2}, Lf57;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
+    .line 443
     .line 444
     .line 445
-    .line 446
-    invoke-virtual {v3, v4}, Lxp3;->h(Lj72;)V
+    invoke-virtual {v3, v4}, La74;->h(Lmi2;)V
 
+    .line 446
     .line 447
     .line 448
-    .line 449
     :cond_2a
     iget-object v1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->metaParams:Lsu/happ/proxyutility/dto/MetaParams;
 
+    .line 449
     .line 450
-    .line 451
     if-eqz v1, :cond_2e
 
+    .line 451
     .line 452
-    .line 453
     if-eqz p1, :cond_2b
 
+    .line 453
     .line 454
-    .line 455
     invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->E()Ljava/lang/String;
 
+    .line 455
     .line 456
     .line 457
-    .line 458
     move-result-object p1
 
-    .line 459
+    .line 458
     if-nez p1, :cond_2d
 
+    .line 459
     .line 460
-    .line 461
     :cond_2b
     if-eqz v0, :cond_2c
 
+    .line 461
     .line 462
-    .line 463
     invoke-virtual {v0}, Lsu/happ/proxyutility/dto/MetaParams;->E()Ljava/lang/String;
 
+    .line 463
     .line 464
     .line 465
-    .line 466
     move-result-object p1
 
-    .line 467
+    .line 466
     goto :goto_1b
 
-    .line 468
+    .line 467
     :cond_2c
     move-object p1, v11
 
-    .line 469
+    .line 468
     :cond_2d
     :goto_1b
     invoke-virtual {v1, p1}, Lsu/happ/proxyutility/dto/MetaParams;->r1(Ljava/lang/String;)V
 
+    .line 469
     .line 470
     .line 471
-    .line 472
     :cond_2e
-    sget-object p1, Lpk7;->a:Lpk7;
+    sget-object p1, Lif8;->a:Lif8;
 
+    .line 472
     .line 473
-    .line 474
-    invoke-static {p0}, Lpk7;->s(Lsu/happ/proxyutility/dto/SubscriptionItem;)Ljava/lang/Object;
+    invoke-static {p0}, Lif8;->q(Lsu/happ/proxyutility/dto/SubscriptionItem;)Ljava/lang/Object;
 
+    .line 474
     .line 475
     .line 476
-    .line 477
     move-result-object p1
 
-    .line 478
-    instance-of v0, p1, Lon5;
+    .line 477
+    instance-of v0, p1, Lc86;
 
+    .line 478
     .line 479
-    .line 480
     if-eqz v0, :cond_2f
 
+    .line 480
     .line 481
-    .line 482
     move-object p1, v11
 
-    .line 483
+    .line 482
     :cond_2f
     check-cast p1, Lsu/happ/proxyutility/dto/HashedDomain;
 
+    .line 483
     .line 484
-    .line 485
     if-eqz p1, :cond_30
 
+    .line 485
     .line 486
-    .line 487
     invoke-virtual {p1}, Lsu/happ/proxyutility/dto/HashedDomain;->c()Ljava/lang/String;
 
+    .line 487
     .line 488
     .line 489
-    .line 490
     move-result-object v11
 
-    .line 491
+    .line 490
     :cond_30
     iput-object v11, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->hashedDomain:Ljava/lang/String;
 
+    .line 491
     .line 492
-    .line 493
     return-void
 .end method
 
-.method public final p0(Ljava/lang/String;Ljava/lang/String;)V
+.method public final s0(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -5302,165 +5197,8 @@
     return-void
 .end method
 
-.method public final r0(Ljava/lang/String;Z)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
-
-    .line 5
-    .line 6
-    if-nez v0, :cond_0
-
-    .line 7
-    .line 8
-    iput-boolean p2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
-
-    .line 9
-    .line 10
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 11
-    if-eqz p2, :cond_2
-
-    .line 12
-    .line 13
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result p2
-
-    .line 17
-    if-lez p2, :cond_1
-
-    .line 18
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_1
-    move-object p1, v0
-
-    .line 21
-    :goto_0
-    if-nez p1, :cond_7
-
-    .line 22
-    .line 23
-    iget-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
-
-    .line 24
-    .line 25
-    goto :goto_2
-
-    .line 26
-    :cond_2
-    iget-boolean p2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
-
-    .line 27
-    .line 28
-    if-eqz p2, :cond_5
-
-    .line 29
-    .line 30
-    iget-object p2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
-
-    .line 31
-    .line 32
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
-
-    .line 33
-    .line 34
-    .line 35
-    move-result v1
-
-    .line 36
-    if-lez v1, :cond_3
-
-    .line 37
-    .line 38
-    move-object v0, p2
-
-    .line 39
-    :cond_3
-    if-nez v0, :cond_4
-
-    .line 40
-    .line 41
-    goto :goto_2
-
-    .line 42
-    :cond_4
-    move-object p1, v0
-
-    .line 43
-    goto :goto_2
-
-    .line 44
-    :cond_5
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    .line 45
-    .line 46
-    .line 47
-    move-result p2
-
-    .line 48
-    if-lez p2, :cond_6
-
-    .line 49
-    .line 50
-    goto :goto_1
-
-    .line 51
-    :cond_6
-    move-object p1, v0
-
-    .line 52
-    :goto_1
-    if-nez p1, :cond_7
-
-    .line 53
-    .line 54
-    iget-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
-
-    .line 55
-    .line 56
-    :cond_7
-    :goto_2
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
-
-    .line 57
-    .line 58
-    return-void
-.end method
-
-.method public final s0(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->url:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
 .method public final toString()Ljava/lang/String;
-    .locals 33
+    .locals 32
 
     .line 1
     move-object/from16 v0, p0
@@ -5495,7 +5233,7 @@
 
     .line 15
     .line 16
-    iget-object v6, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
+    iget-object v6, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
 
     .line 17
     .line 18
@@ -5686,11 +5424,11 @@
 
     .line 106
     .line 107
-    move-object/from16 v30, v4
+    iget-boolean v0, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
 
     .line 108
     .line 109
-    iget-boolean v4, v0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
+    move/from16 p0, v0
 
     .line 110
     .line 111
@@ -5698,7 +5436,7 @@
 
     .line 112
     .line 113
-    move/from16 v31, v4
+    move-object/from16 v30, v4
 
     .line 114
     .line 115
@@ -5706,7 +5444,7 @@
 
     .line 116
     .line 117
-    move/from16 v32, v15
+    move/from16 v31, v15
 
     .line 118
     .line 119
@@ -5714,7 +5452,7 @@
 
     .line 120
     .line 121
-    invoke-static {v15, v1, v0, v2, v4}, Lmi2;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v15, v1, v0, v2, v4}, Lw31;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 122
     .line 123
@@ -5848,7 +5586,7 @@
     .line 195
     .line 196
     .line 197
-    move/from16 v1, v32
+    move/from16 v1, v31
 
     .line 198
     .line 199
@@ -6136,7 +5874,7 @@
     .line 355
     .line 356
     .line 357
-    move/from16 v1, v31
+    move/from16 v1, p0
 
     .line 358
     .line 359
@@ -6165,15 +5903,172 @@
     return-object v0
 .end method
 
-.method public final v()Z
-    .locals 1
+.method public final u0(Ljava/lang/String;Z)V
+    .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encrypted:Z
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    return v0
+    .line 4
+    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_0
+
+    .line 7
+    .line 8
+    iput-boolean p2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
+
+    .line 9
+    .line 10
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 11
+    if-eqz p2, :cond_2
+
+    .line 12
+    .line 13
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p2
+
+    .line 17
+    if-lez p2, :cond_1
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_1
+    move-object p1, v0
+
+    .line 21
+    :goto_0
+    if-nez p1, :cond_7
+
+    .line 22
+    .line 23
+    iget-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    goto :goto_2
+
+    .line 26
+    :cond_2
+    iget-boolean p2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->manualEnterTitle:Z
+
+    .line 27
+    .line 28
+    if-eqz p2, :cond_5
+
+    .line 29
+    .line 30
+    iget-object p2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
+
+    .line 31
+    .line 32
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v1
+
+    .line 36
+    if-lez v1, :cond_3
+
+    .line 37
+    .line 38
+    move-object v0, p2
+
+    .line 39
+    :cond_3
+    if-nez v0, :cond_4
+
+    .line 40
+    .line 41
+    goto :goto_2
+
+    .line 42
+    :cond_4
+    move-object p1, v0
+
+    .line 43
+    goto :goto_2
+
+    .line 44
+    :cond_5
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result p2
+
+    .line 48
+    if-lez p2, :cond_6
+
+    .line 49
+    .line 50
+    goto :goto_1
+
+    .line 51
+    :cond_6
+    move-object p1, v0
+
+    .line 52
+    :goto_1
+    if-nez p1, :cond_7
+
+    .line 53
+    .line 54
+    iget-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
+
+    .line 55
+    .line 56
+    :cond_7
+    :goto_2
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->remarks:Ljava/lang/String;
+
+    .line 57
+    .line 58
+    return-void
+.end method
+
+.method public final v()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrl:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final v0(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->url:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
@@ -6246,7 +6141,7 @@
     .line 33
     .line 34
     .line 35
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
+    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
 
     .line 36
     .line 37
@@ -6268,7 +6163,7 @@
     .line 44
     .line 45
     .line 46
-    invoke-virtual {v0, p1, p2}, Lmo1;->writeToParcel(Landroid/os/Parcel;I)V
+    invoke-virtual {v0, p1, p2}, Lcx1;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 47
     .line 48
@@ -6382,7 +6277,7 @@
 
     .line 106
     :cond_3
-    invoke-static {p1, v1, v0}, Lmi2;->x(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    invoke-static {p1, v1, v0}, Lc73;->s(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     .line 107
     .line 108
@@ -6405,7 +6300,7 @@
 
     .line 117
     :cond_4
-    invoke-static {p1, v1, v0}, Lmi2;->x(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    invoke-static {p1, v1, v0}, Lc73;->s(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     .line 118
     .line 119
@@ -6707,11 +6602,11 @@
     .line 269
     .line 270
     :goto_c
-    iget-boolean p2, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->resetHandled:Z
 
     .line 271
     .line 272
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 273
     .line 274
@@ -6719,24 +6614,13 @@
     return-void
 .end method
 
-.method public final x()Z
-    .locals 1
+.method public final y()Lcx1;
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrl:Z
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lcx1;
 
     .line 2
     .line 3
-    return v0
-.end method
-
-.method public final y()Lmo1;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/SubscriptionItem;->encryptedUrlMode:Lmo1;
-
-    .line 2
-    .line 3
-    return-object v0
+    return-object p0
 .end method

@@ -1,12 +1,16 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class hz5 {
-    public static final /* synthetic */ int a = 0;
+import java.lang.reflect.Member;
 
-    static {
-        Float.floatToRawIntBits(Float.NaN);
-        Float.floatToRawIntBits(Float.NaN);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class hz5 extends tj2 implements mi2 {
+    public static final hz5 X = new hz5(1, Member.class, "isSynthetic", "isSynthetic()Z", 0);
+
+    @Override // defpackage.mi2
+    public final Object invoke(Object obj) {
+        Member member = (Member) obj;
+        member.getClass();
+        return Boolean.valueOf(member.isSynthetic());
     }
 }

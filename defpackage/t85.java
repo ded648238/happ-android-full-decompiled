@@ -1,15 +1,34 @@
 package defpackage;
 
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class t85 {
-    public static int lb_browse_header_unselect_alpha = 2131361792;
-    public static int lb_browse_rows_scale = 2131361793;
-    public static int lb_focus_zoom_factor_large = 2131361794;
-    public static int lb_focus_zoom_factor_medium = 2131361795;
-    public static int lb_focus_zoom_factor_small = 2131361796;
-    public static int lb_focus_zoom_factor_xsmall = 2131361797;
-    public static int lb_search_bar_speech_orb_max_level_zoom = 2131361798;
-    public static int lb_search_orb_focused_zoom = 2131361799;
-    public static int lb_view_active_level = 2131361800;
-    public static int lb_view_dimmed_level = 2131361801;
+import java.util.Set;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class t85 implements l16 {
+    public final Set X;
+    public final wq4 Y = new wq4(0, new vk2[16]);
+
+    public t85(Set set) {
+        this.X = set;
+    }
+
+    @Override // defpackage.l16
+    public final void c() {
+        wq4 wq4Var = this.Y;
+        Object[] objArr = wq4Var.X;
+        int i = wq4Var.Z;
+        for (int i2 = 0; i2 < i; i2++) {
+            l16 l16Var = ((vk2) objArr[i2]).a;
+            this.X.remove(l16Var);
+            l16Var.c();
+        }
+    }
+
+    @Override // defpackage.l16
+    public final void a() {
+    }
+
+    @Override // defpackage.l16
+    public final void b() {
+    }
 }

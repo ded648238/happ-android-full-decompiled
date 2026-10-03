@@ -1,39 +1,17 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class iv {
-    public final String a;
-    public final long b;
-    public final long c;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class iv extends jq4 {
+    public static final iv X = new iv(kr3.class, "flags", "getFlags$org_jetbrains_kotlin_kotlin_metadata()I", 0);
 
-    public iv(long j, String str, long j2) {
-        this.a = str;
-        this.b = j;
-        this.c = j2;
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((kr3) obj).a = ((Number) obj2).intValue();
     }
 
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj instanceof iv) {
-            iv ivVar = (iv) obj;
-            if (this.a.equals(ivVar.a) && this.b == ivVar.b && this.c == ivVar.c) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        int iHashCode = (this.a.hashCode() ^ 1000003) * 1000003;
-        long j = this.b;
-        long j2 = this.c;
-        return ((iHashCode ^ ((int) (j ^ (j >>> 32)))) * 1000003) ^ ((int) (j2 ^ (j2 >>> 32)));
-    }
-
-    public final String toString() {
-        return "InstallationTokenResult{token=" + this.a + ", tokenExpirationTimestamp=" + this.b + ", tokenCreationTimestamp=" + this.c + "}";
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return Integer.valueOf(((kr3) obj).a);
     }
 }

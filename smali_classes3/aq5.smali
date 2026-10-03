@@ -1,27 +1,27 @@
-.class public final Laq5;
+.class public final synthetic Laq5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lyy0;
+.implements Lji2;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
 
-.field public final synthetic R:Lbq5;
+.field public final synthetic Y:Leq5;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lbq5;I)V
+.method public synthetic constructor <init>(Leq5;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, Laq5;->Q:I
+    iput p2, p0, Laq5;->X:I
 
     .line 2
     .line 3
-    iput-object p1, p0, Laq5;->R:Lbq5;
+    iput-object p1, p0, Laq5;->Y:Leq5;
 
     .line 4
     .line 5
@@ -35,15 +35,15 @@
 
 
 # virtual methods
-.method public final L()Z
-    .locals 2
+.method public final invoke()Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget v0, p0, Laq5;->Q:I
+    iget v0, p0, Laq5;->X:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Laq5;->R:Lbq5;
+    iget-object p0, p0, Laq5;->Y:Leq5;
 
     .line 4
     .line 5
@@ -52,345 +52,118 @@
     .line 6
     .line 7
     .line 8
-    iget-object v0, v1, Lbq5;->Q:Lh6;
+    new-instance v0, Lokhttp3/OkHttpClient$Builder;
 
     .line 9
     .line 10
-    iget-object v0, v0, Lh6;->U:Ljava/lang/Object;
+    invoke-direct {v0}, Lokhttp3/OkHttpClient$Builder;-><init>()V
 
     .line 11
     .line 12
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
     .line 13
-    .line 14
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    const-wide/16 v1, 0x1b58
 
+    .line 14
     .line 15
+    sget-object v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
     .line 16
     .line 17
-    move-result v0
+    invoke-virtual {v0, v1, v2, v3}, Lokhttp3/OkHttpClient$Builder;->callTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
 
     .line 18
-    return v0
-
     .line 19
-    :pswitch_0
-    iget-object v0, v1, Lbq5;->Q:Lh6;
-
     .line 20
+    move-result-object v0
+
     .line 21
-    iget-object v0, v0, Lh6;->X:Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lokhttp3/OkHttpClient$Builder;->readTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
 
     .line 22
     .line 23
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
-
     .line 24
+    move-result-object v0
+
     .line 25
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0, v1, v2, v3}, Lokhttp3/OkHttpClient$Builder;->writeTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
 
     .line 26
     .line 27
     .line 28
-    move-result v0
+    move-result-object v0
 
     .line 29
-    return v0
+    invoke-virtual {v0, v1, v2, v3}, Lokhttp3/OkHttpClient$Builder;->connectTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
 
     .line 30
-    nop
-
     .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
+    .line 32
+    move-result-object v0
 
-.method public final bridge M()Z
-    .locals 1
+    .line 33
+    const/16 v1, 0x1b58
 
-    .line 1
-    iget v0, p0, Laq5;->Q:I
+    .line 34
+    .line 35
+    invoke-virtual {p0, v0, v1}, Leq5;->a(Lokhttp3/OkHttpClient$Builder;I)Lokhttp3/OkHttpClient$Builder;
 
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p0
 
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x0
+    .line 39
+    invoke-virtual {p0}, Lokhttp3/OkHttpClient$Builder;->build()Lokhttp3/OkHttpClient;
 
-    .line 7
-    return v0
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p0
 
-    .line 8
+    .line 43
+    return-object p0
+
+    .line 44
     :pswitch_0
-    const/4 v0, 0x0
+    iget-object p0, p0, Leq5;->a:Landroid/content/Context;
 
-    .line 9
-    return v0
+    .line 45
+    .line 46
+    const-string v0, "connectivity"
 
-    .line 10
-    nop
+    .line 47
+    .line 48
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 11
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
+    .line 49
+    .line 50
+    .line 51
+    move-result-object p0
 
-.method public final e0()Z
-    .locals 2
+    .line 52
+    instance-of v0, p0, Landroid/net/ConnectivityManager;
 
-    .line 1
-    iget v0, p0, Laq5;->Q:I
+    .line 53
+    .line 54
+    if-eqz v0, :cond_0
 
-    .line 2
-    .line 3
-    iget-object v1, p0, Laq5;->R:Lbq5;
+    .line 55
+    .line 56
+    check-cast p0, Landroid/net/ConnectivityManager;
 
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
+    .line 57
+    .line 58
+    goto :goto_0
 
-    .line 6
-    .line 7
-    .line 8
-    iget-object v0, v1, Lbq5;->Q:Lh6;
+    .line 59
+    :cond_0
+    const/4 p0, 0x0
 
-    .line 9
-    .line 10
-    iget-object v0, v0, Lh6;->W:Ljava/lang/Object;
+    .line 60
+    :goto_0
+    return-object p0
 
-    .line 11
-    .line 12
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
-
-    .line 13
-    .line 14
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v0
-
-    .line 18
-    return v0
-
-    .line 19
-    :pswitch_0
-    iget-object v0, v1, Lbq5;->Q:Lh6;
-
-    .line 20
-    .line 21
-    iget-object v0, v0, Lh6;->U:Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 24
-    .line 25
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v0
-
-    .line 29
-    return v0
-
-    .line 30
-    nop
-
-    .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final bridge g0()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Laq5;->Q:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x0
-
-    .line 7
-    return v0
-
-    .line 8
-    :pswitch_0
-    const/4 v0, 0x0
-
-    .line 9
-    return v0
-
-    .line 10
-    nop
-
-    .line 11
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final m0()Z
-    .locals 2
-
-    .line 1
-    iget v0, p0, Laq5;->Q:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Laq5;->R:Lbq5;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v0, v1, Lbq5;->Q:Lh6;
-
-    .line 9
-    .line 10
-    iget-object v0, v0, Lh6;->T:Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 13
-    .line 14
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v0
-
-    .line 18
-    return v0
-
-    .line 19
-    :pswitch_0
-    iget-object v0, v1, Lbq5;->Q:Lh6;
-
-    .line 20
-    .line 21
-    iget-object v0, v0, Lh6;->V:Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 24
-    .line 25
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v0
-
-    .line 29
-    return v0
-
-    .line 30
-    nop
-
-    .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final o()Z
-    .locals 2
-
-    .line 1
-    iget v0, p0, Laq5;->Q:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Laq5;->R:Lbq5;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v0, v1, Lbq5;->Q:Lh6;
-
-    .line 9
-    .line 10
-    iget-object v0, v0, Lh6;->T:Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 13
-    .line 14
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v0
-
-    .line 18
-    return v0
-
-    .line 19
-    :pswitch_0
-    iget-object v0, v1, Lbq5;->Q:Lh6;
-
-    .line 20
-    .line 21
-    iget-object v0, v0, Lh6;->V:Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 24
-    .line 25
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v0
-
-    .line 29
-    return v0
-
-    .line 30
-    nop
-
-    .line 31
+    .line 61
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

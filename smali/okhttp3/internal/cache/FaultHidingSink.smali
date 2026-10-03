@@ -1,6 +1,6 @@
 .class public Lokhttp3/internal/cache/FaultHidingSink;
-.super Lo42;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lff2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -10,27 +10,27 @@
     }
     d2 = {
         "Lokhttp3/internal/cache/FaultHidingSink;",
-        "Lo42;",
-        "Lpb6;",
+        "Lff2;",
+        "Lqy6;",
         "delegate",
         "Lkotlin/Function1;",
         "Ljava/io/IOException;",
-        "Lbh7;",
+        "Lr98;",
         "onException",
         "<init>",
-        "(Lpb6;Lj72;)V",
-        "Lf50;",
+        "(Lqy6;Lmi2;)V",
+        "Ll70;",
         "source",
         "",
         "byteCount",
         "write",
-        "(Lf50;J)V",
+        "(Ll70;J)V",
         "flush",
         "()V",
         "close",
-        "Lj72;",
+        "Lmi2;",
         "getOnException",
-        "()Lj72;",
+        "()Lmi2;",
         "",
         "hasErrors",
         "Z",
@@ -49,23 +49,23 @@
 # instance fields
 .field private hasErrors:Z
 
-.field private final onException:Lj72;
+.field private final onException:Lmi2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lj72;"
+            "Lmi2;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lpb6;Lj72;)V
+.method public constructor <init>(Lqy6;Lmi2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lpb6;",
-            "Lj72;",
+            "Lqy6;",
+            "Lmi2;",
             ")V"
         }
     .end annotation
@@ -81,12 +81,12 @@
     .line 5
     .line 6
     .line 7
-    invoke-direct {p0, p1}, Lo42;-><init>(Lpb6;)V
+    invoke-direct {p0, p1}, Lff2;-><init>(Lqy6;)V
 
     .line 8
     .line 9
     .line 10
-    iput-object p2, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lj72;
+    iput-object p2, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lmi2;
 
     .line 11
     .line 12
@@ -112,7 +112,7 @@
     .line 6
     :cond_0
     :try_start_0
-    invoke-super {p0}, Lo42;->close()V
+    invoke-super {p0}, Lff2;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -133,11 +133,11 @@
 
     .line 13
     .line 14
-    iget-object v1, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lj72;
+    iget-object p0, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lmi2;
 
     .line 15
     .line 16
-    invoke-interface {v1, v0}, Lj72;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -162,7 +162,7 @@
     .line 6
     :cond_0
     :try_start_0
-    invoke-super {p0}, Lo42;->flush()V
+    invoke-super {p0}, Lff2;->flush()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -183,11 +183,11 @@
 
     .line 13
     .line 14
-    iget-object v1, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lj72;
+    iget-object p0, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lmi2;
 
     .line 15
     .line 16
-    invoke-interface {v1, v0}, Lj72;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v0}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -195,24 +195,24 @@
     return-void
 .end method
 
-.method public final getOnException()Lj72;
-    .locals 1
+.method public final getOnException()Lmi2;
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lj72;"
+            "Lmi2;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lj72;
+    iget-object p0, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lmi2;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public write(Lf50;J)V
+.method public write(Ll70;J)V
     .locals 1
 
     .line 1
@@ -229,7 +229,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1, p2, p3}, Lf50;->skip(J)V
+    invoke-virtual {p1, p2, p3}, Ll70;->skip(J)V
 
     .line 9
     .line 10
@@ -239,7 +239,7 @@
     .line 12
     :cond_0
     :try_start_0
-    invoke-super {p0, p1, p2, p3}, Lo42;->write(Lf50;J)V
+    invoke-super {p0, p1, p2, p3}, Lff2;->write(Ll70;J)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -260,11 +260,11 @@
 
     .line 19
     .line 20
-    iget-object p2, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lj72;
+    iget-object p0, p0, Lokhttp3/internal/cache/FaultHidingSink;->onException:Lmi2;
 
     .line 21
     .line 22
-    invoke-interface {p2, p1}, Lj72;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p1}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 23
     .line 24

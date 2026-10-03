@@ -1,9 +1,12 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class un3 {
-    public final q83 serializer() {
-        return bo3.a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class un3 {
+    public static final /* synthetic */ uo3[] b = {new om5(un3.class, "moduleData", "getModuleData()Lorg/jetbrains/kotlin/descriptors/runtime/components/RuntimeModuleData;", 0)};
+    public final k06 a;
+
+    public un3(vn3 vn3Var) {
+        this.a = da1.S(null, new uc3(vn3Var, 1));
     }
 }

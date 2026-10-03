@@ -1,9 +1,15 @@
 .class public final Landroidx/work/impl/workers/ConstraintTrackingWorker;
 .super Landroidx/work/CoroutineWorker;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/work/impl/workers/ConstraintTrackingWorker$a;
+    }
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
         "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0007\u0018\u00002\u00020\u0001:\u0001\u0008B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u00a2\u0006\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\t"
@@ -17,13 +23,13 @@
         "workerParameters",
         "<init>",
         "(Landroid/content/Context;Landroidx/work/WorkerParameters;)V",
-        "rt0",
+        "a",
         "work-runtime_release"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x8,
         0x0
     }
     xi = 0x30
@@ -61,11 +67,11 @@
     return-void
 .end method
 
-.method public static final e(Landroidx/work/impl/workers/ConstraintTrackingWorker;Ldn3;Lq70;Lnv7;Law0;)Ljava/lang/Object;
+.method public static final f(Landroidx/work/impl/workers/ConstraintTrackingWorker;Lf44;Lur;Lyq8;Ld31;)Ljava/lang/Object;
     .locals 4
 
     .line 1
-    instance-of v0, p4, Lst0;
+    instance-of v0, p4, Ly01;
 
     .line 2
     .line 3
@@ -76,11 +82,11 @@
     move-object v0, p4
 
     .line 6
-    check-cast v0, Lst0;
+    check-cast v0, Ly01;
 
     .line 7
     .line 8
-    iget v1, v0, Lst0;->V:I
+    iget v1, v0, Ly01;->e0:I
 
     .line 9
     .line 10
@@ -99,7 +105,7 @@
     sub-int/2addr v1, v2
 
     .line 17
-    iput v1, v0, Lst0;->V:I
+    iput v1, v0, Ly01;->e0:I
 
     .line 18
     .line 19
@@ -107,21 +113,21 @@
 
     .line 20
     :cond_0
-    new-instance v0, Lst0;
+    new-instance v0, Ly01;
 
     .line 21
     .line 22
-    invoke-direct {v0, p0, p4}, Lst0;-><init>(Landroidx/work/impl/workers/ConstraintTrackingWorker;Law0;)V
+    invoke-direct {v0, p0, p4}, Ly01;-><init>(Landroidx/work/impl/workers/ConstraintTrackingWorker;Ld31;)V
 
     .line 23
     .line 24
     .line 25
     :goto_0
-    iget-object p0, v0, Lst0;->T:Ljava/lang/Object;
+    iget-object p0, v0, Ly01;->c0:Ljava/lang/Object;
 
     .line 26
     .line 27
-    iget p4, v0, Lst0;->V:I
+    iget p4, v0, Ly01;->e0:I
 
     .line 28
     .line 29
@@ -139,7 +145,7 @@
 
     .line 34
     .line 35
-    invoke-static {p0}, Lbv7;->V(Ljava/lang/Object;)V
+    invoke-static {p0}, Lq48;->f0(Ljava/lang/Object;)V
 
     .line 36
     .line 37
@@ -152,7 +158,7 @@
 
     .line 40
     .line 41
-    invoke-static {p0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -161,25 +167,25 @@
 
     .line 45
     :cond_2
-    invoke-static {p0}, Lbv7;->V(Ljava/lang/Object;)V
+    invoke-static {p0}, Lq48;->f0(Ljava/lang/Object;)V
 
     .line 46
     .line 47
     .line 48
-    new-instance p0, Lbh;
+    new-instance p0, Landroidx/work/impl/workers/a;
 
     .line 49
     .line 50
-    invoke-direct {p0, p1, p2, p3, v1}, Lbh;-><init>(Ldn3;Lq70;Lnv7;Lyv0;)V
+    invoke-direct {p0, p1, p2, p3, v1}, Landroidx/work/impl/workers/a;-><init>(Lf44;Lur;Lyq8;Lb31;)V
 
     .line 51
     .line 52
     .line 53
-    iput v2, v0, Lst0;->V:I
+    iput v2, v0, Ly01;->e0:I
 
     .line 54
     .line 55
-    invoke-static {p0, v0}, Ll73;->Y(Lu72;Lyv0;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Ll93;->q(Lxi2;Lb31;)Ljava/lang/Object;
 
     .line 56
     .line 57
@@ -187,7 +193,7 @@
     move-result-object p0
 
     .line 59
-    sget-object p1, Lcx0;->Q:Lcx0;
+    sget-object p1, Lj41;->X:Lj41;
 
     .line 60
     .line 61
@@ -208,744 +214,833 @@
     return-object p0
 .end method
 
-.method public static final f(Landroidx/work/impl/workers/ConstraintTrackingWorker;Law0;)Ljava/lang/Object;
-    .locals 13
+.method public static final g(Landroidx/work/impl/workers/ConstraintTrackingWorker;Ld31;)Ljava/lang/Object;
+    .locals 19
 
     .line 1
-    iget-object v2, p0, Landroidx/work/impl/workers/ConstraintTrackingWorker;->g:Landroidx/work/WorkerParameters;
+    move-object/from16 v1, p0
 
     .line 2
     .line 3
-    iget-object v3, p0, Ldn3;->a:Landroid/content/Context;
+    move-object/from16 v0, p1
 
     .line 4
     .line 5
-    iget-object v4, p0, Ldn3;->b:Landroidx/work/WorkerParameters;
+    iget-object v7, v1, Lf44;->c:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 6
     .line 7
-    instance-of v5, p1, Ltt0;
+    iget-object v2, v1, Landroidx/work/impl/workers/ConstraintTrackingWorker;->g:Landroidx/work/WorkerParameters;
 
     .line 8
     .line 9
-    if-eqz v5, :cond_0
+    iget-object v3, v1, Lf44;->a:Landroid/content/Context;
 
     .line 10
     .line 11
-    move-object v5, p1
+    iget-object v4, v1, Lf44;->b:Landroidx/work/WorkerParameters;
 
     .line 12
-    check-cast v5, Ltt0;
-
     .line 13
+    instance-of v5, v0, Lz01;
+
     .line 14
-    iget v6, v5, Ltt0;->X:I
-
     .line 15
-    .line 16
-    const/high16 v7, -0x80000000
+    if-eqz v5, :cond_0
 
+    .line 16
     .line 17
+    move-object v5, v0
+
     .line 18
-    and-int v8, v6, v7
+    check-cast v5, Lz01;
 
     .line 19
     .line 20
-    if-eqz v8, :cond_0
+    iget v6, v5, Lz01;->f0:I
 
     .line 21
     .line 22
-    sub-int/2addr v6, v7
+    const/high16 v8, -0x80000000
 
     .line 23
-    iput v6, v5, Ltt0;->X:I
-
     .line 24
-    .line 25
-    :goto_0
-    move-object v7, v5
+    and-int v9, v6, v8
 
+    .line 25
     .line 26
-    goto :goto_1
+    if-eqz v9, :cond_0
 
     .line 27
-    :cond_0
-    new-instance v5, Ltt0;
-
     .line 28
+    sub-int/2addr v6, v8
+
     .line 29
-    invoke-direct {v5, p0, p1}, Ltt0;-><init>(Landroidx/work/impl/workers/ConstraintTrackingWorker;Law0;)V
+    iput v6, v5, Lz01;->f0:I
 
     .line 30
     .line 31
+    :goto_0
+    move-object v8, v5
+
     .line 32
-    goto :goto_0
+    goto :goto_1
 
     .line 33
-    :goto_1
-    iget-object v0, v7, Ltt0;->V:Ljava/lang/Object;
+    :cond_0
+    new-instance v5, Lz01;
 
     .line 34
     .line 35
-    iget v5, v7, Ltt0;->X:I
+    invoke-direct {v5, v1, v0}, Lz01;-><init>(Landroidx/work/impl/workers/ConstraintTrackingWorker;Ld31;)V
 
     .line 36
     .line 37
-    const/4 v8, 0x0
-
     .line 38
-    const/4 v9, 0x1
+    goto :goto_0
 
     .line 39
-    if-eqz v5, :cond_2
+    :goto_1
+    iget-object v0, v8, Lz01;->d0:Ljava/lang/Object;
 
     .line 40
     .line 41
-    if-ne v5, v9, :cond_1
+    iget v5, v8, Lz01;->f0:I
 
     .line 42
     .line 43
-    iget-object v1, v7, Ltt0;->U:Ldn3;
+    const/4 v9, 0x0
 
     .line 44
+    const/4 v10, 0x1
+
     .line 45
-    iget-object v2, v7, Ltt0;->T:Landroidx/work/impl/workers/ConstraintTrackingWorker;
+    if-eqz v5, :cond_2
 
     .line 46
     .line 47
-    :try_start_0
-    invoke-static {v0}, Lbv7;->V(Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/util/concurrent/CancellationException; {:try_start_0 .. :try_end_0} :catch_0
+    if-ne v5, v10, :cond_1
 
     .line 48
     .line 49
-    .line 50
-    move-object v12, v2
+    iget-object v1, v8, Lz01;->c0:Lf44;
 
+    .line 50
     .line 51
-    move-object v2, v1
+    :try_start_0
+    invoke-static {v0}, Lq48;->f0(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 52
-    move-object v1, v12
-
     .line 53
-    goto/16 :goto_2
-
     .line 54
+    goto/16 :goto_3
+
     .line 55
+    .line 56
     :catch_0
     move-exception v0
 
-    .line 56
-    move-object v12, v2
-
     .line 57
-    move-object v2, v1
+    goto/16 :goto_5
 
     .line 58
-    move-object v1, v12
-
     .line 59
-    goto/16 :goto_4
-
-    .line 60
-    .line 61
     :cond_1
     const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
+    .line 60
+    .line 61
+    invoke-static {v0}, Li60;->g(Ljava/lang/String;)V
+
     .line 62
     .line 63
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
-
     .line 64
+    return-object v9
+
     .line 65
-    .line 66
-    return-object v8
-
-    .line 67
     :cond_2
-    invoke-static {v0}, Lbv7;->V(Ljava/lang/Object;)V
+    invoke-static {v0}, Lq48;->f0(Ljava/lang/Object;)V
 
+    .line 66
+    .line 67
     .line 68
+    iget-object v0, v4, Landroidx/work/WorkerParameters;->b:Lb71;
+
     .line 69
     .line 70
-    iget-object v0, v4, Landroidx/work/WorkerParameters;->b:Lez0;
+    const-string v5, "androidx.work.impl.workers.ConstraintTrackingWorker.ARGUMENT_CLASS_NAME"
 
     .line 71
     .line 72
-    const-string v5, "androidx.work.impl.workers.ConstraintTrackingWorker.ARGUMENT_CLASS_NAME"
+    invoke-virtual {v0, v5}, Lb71;->a(Ljava/lang/String;)Ljava/lang/String;
 
     .line 73
     .line 74
-    invoke-virtual {v0, v5}, Lez0;->a(Ljava/lang/String;)Ljava/lang/String;
-
     .line 75
-    .line 76
-    .line 77
     move-result-object v0
 
+    .line 76
+    if-eqz v0, :cond_10
+
+    .line 77
     .line 78
-    if-eqz v0, :cond_d
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     .line 79
     .line 80
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
     .line 81
-    .line 82
-    .line 83
     move-result v5
 
-    .line 84
+    .line 82
     if-nez v5, :cond_3
+
+    .line 83
+    .line 84
+    goto/16 :goto_a
 
     .line 85
     .line 86
-    goto/16 :goto_9
+    :cond_3
+    invoke-static {v3}, Lkq8;->P(Landroid/content/Context;)Lkq8;
 
     .line 87
     .line 88
-    :cond_3
-    invoke-static {v3}, Lzu7;->V(Landroid/content/Context;)Lzu7;
-
     .line 89
-    .line 90
-    .line 91
     move-result-object v5
 
-    .line 92
+    .line 90
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 91
+    .line 92
     .line 93
+    iget-object v6, v5, Lkq8;->n0:Landroidx/work/impl/WorkDatabase;
+
     .line 94
     .line 95
-    iget-object v6, v5, Lzu7;->m:Landroidx/work/impl/WorkDatabase;
+    invoke-virtual {v6}, Landroidx/work/impl/WorkDatabase;->x()Lbr8;
 
     .line 96
     .line 97
-    invoke-virtual {v6}, Landroidx/work/impl/WorkDatabase;->v()Lpv7;
-
     .line 98
-    .line 99
-    .line 100
     move-result-object v6
 
+    .line 99
+    iget-object v11, v4, Landroidx/work/WorkerParameters;->a:Ljava/util/UUID;
+
+    .line 100
     .line 101
-    iget-object v10, v4, Landroidx/work/WorkerParameters;->a:Ljava/util/UUID;
+    invoke-virtual {v11}, Ljava/util/UUID;->toString()Ljava/lang/String;
 
     .line 102
     .line 103
-    invoke-virtual {v10}, Ljava/util/UUID;->toString()Ljava/lang/String;
-
     .line 104
+    move-result-object v11
+
     .line 105
+    invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 106
-    move-result-object v10
-
     .line 107
-    invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 108
+    invoke-virtual {v6, v11}, Lbr8;->c(Ljava/lang/String;)Lyq8;
+
     .line 109
     .line 110
-    invoke-virtual {v6, v10}, Lpv7;->h(Ljava/lang/String;)Lnv7;
-
     .line 111
-    .line 112
-    .line 113
     move-result-object v6
 
-    .line 114
+    .line 112
     if-nez v6, :cond_4
+
+    .line 113
+    .line 114
+    new-instance v0, Lb44;
 
     .line 115
     .line 116
-    new-instance v0, Lzm3;
+    invoke-direct {v0}, Lb44;-><init>()V
 
     .line 117
     .line 118
-    invoke-direct {v0}, Lzm3;-><init>()V
-
     .line 119
-    .line 120
-    .line 121
     return-object v0
 
-    .line 122
+    .line 120
     :cond_4
-    new-instance v10, Lq70;
+    new-instance v11, Lur;
+
+    .line 121
+    .line 122
+    iget-object v12, v5, Lkq8;->v0:Lv5;
 
     .line 123
     .line 124
-    iget-object v11, v5, Lzu7;->u:Ll5;
+    invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 125
     .line 126
-    invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 127
+    invoke-direct {v11, v12}, Lur;-><init>(Lv5;)V
+
     .line 128
     .line 129
-    invoke-direct {v10, v11}, Lq70;-><init>(Ll5;)V
-
     .line 130
+    iget-object v12, v11, Lur;->b:Ljava/util/ArrayList;
+
     .line 131
     .line 132
-    invoke-virtual {v10, v6}, Lq70;->c(Lnv7;)Z
+    new-instance v13, Ljava/util/ArrayList;
 
     .line 133
     .line 134
+    invoke-direct {v13}, Ljava/util/ArrayList;-><init>()V
+
     .line 135
-    move-result v11
-
     .line 136
-    if-nez v11, :cond_5
-
     .line 137
-    .line 138
-    sget v0, Lxt0;->a:I
+    invoke-virtual {v12}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
+    .line 138
     .line 139
     .line 140
-    invoke-static {}, Lmc2;->m()Lmc2;
+    move-result-object v12
 
     .line 141
+    :cond_5
+    :goto_2
+    invoke-interface {v12}, Ljava/util/Iterator;->hasNext()Z
+
     .line 142
     .line 143
-    move-result-object v0
-
     .line 144
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result v14
 
     .line 145
+    if-eqz v14, :cond_6
+
     .line 146
     .line 147
-    new-instance v0, Lan3;
+    invoke-interface {v12}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 148
     .line 149
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 150
+    move-result-object v14
+
     .line 151
+    move-object v15, v14
+
     .line 152
-    return-object v0
+    check-cast v15, Lo01;
 
     .line 153
-    :cond_5
-    sget v11, Lxt0;->a:I
-
     .line 154
-    .line 155
-    invoke-static {}, Lmc2;->m()Lmc2;
+    invoke-interface {v15, v6}, Lo01;->a(Lyq8;)Z
 
+    .line 155
     .line 156
     .line 157
+    move-result v15
+
     .line 158
-    move-result-object v11
+    if-eqz v15, :cond_5
 
     .line 159
-    invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 160
+    invoke-virtual {v13, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 161
     .line 162
-    :try_start_1
-    iget-object v4, v4, Landroidx/work/WorkerParameters;->i:Lmc2;
-
     .line 163
+    goto :goto_2
+
     .line 164
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :cond_6
+    invoke-virtual {v13}, Ljava/util/ArrayList;->isEmpty()Z
 
     .line 165
     .line 166
     .line 167
-    invoke-virtual {v4, v3, v0, v2}, Lmc2;->j(Landroid/content/Context;Ljava/lang/String;Landroidx/work/WorkerParameters;)Ldn3;
+    move-result v12
 
     .line 168
+    if-nez v12, :cond_7
+
     .line 169
     .line 170
-    move-result-object v3
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-static {}, Lan3;->l()Lan3;
 
     .line 171
-    iget-object v0, v2, Landroidx/work/WorkerParameters;->h:Lpv6;
-
     .line 172
     .line 173
-    iget-object v0, v0, Lpv6;->e:Ljava/lang/Object;
+    move-result-object v12
 
     .line 174
+    sget v14, Lxp8;->a:I
+
     .line 175
-    check-cast v0, Lch2;
-
     .line 176
-    .line 177
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v14, Lqe8;
 
+    .line 177
     .line 178
+    const/16 v15, 0x1c
+
     .line 179
     .line 180
-    :try_start_2
-    invoke-static {v0}, Lhc7;->A(Ljava/util/concurrent/Executor;)Luw0;
+    invoke-direct {v14, v15}, Lqe8;-><init>(I)V
 
     .line 181
     .line 182
     .line 183
-    move-result-object v11
+    const/16 v18, 0x1f
 
     .line 184
-    new-instance v0, Lah;
-    :try_end_2
-    .catch Ljava/util/concurrent/CancellationException; {:try_start_2 .. :try_end_2} :catch_3
-
     .line 185
-    .line 186
-    const/4 v5, 0x0
+    move-object/from16 v17, v14
 
+    .line 186
     .line 187
-    move-object v4, v6
+    const/4 v14, 0x0
 
     .line 188
-    const/4 v6, 0x3
+    const/4 v15, 0x0
 
     .line 189
-    move-object v1, p0
+    const/16 v16, 0x0
 
     .line 190
-    move-object v2, v3
-
     .line 191
-    move-object v3, v10
+    invoke-static/range {v13 .. v18}, Ltt0;->h1(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/String;Lmi2;I)Ljava/lang/String;
 
     .line 192
-    :try_start_3
-    invoke-direct/range {v0 .. v6}, Lah;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lyv0;I)V
-
     .line 193
     .line 194
-    .line 195
-    iput-object p0, v7, Ltt0;->T:Landroidx/work/impl/workers/ConstraintTrackingWorker;
+    invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 195
     .line 196
     .line 197
-    iput-object v2, v7, Ltt0;->U:Ldn3;
+    :cond_7
+    invoke-virtual {v13}, Ljava/util/ArrayList;->isEmpty()Z
 
     .line 198
     .line 199
-    iput v9, v7, Ltt0;->X:I
-
     .line 200
+    move-result v12
+
     .line 201
-    invoke-static {v11, v0, v7}, Lwj0;->w0(Lsw0;Lu72;Lyv0;)Ljava/lang/Object;
+    if-nez v12, :cond_8
 
     .line 202
     .line 203
-    .line 204
-    move-result-object v0
-    :try_end_3
-    .catch Ljava/util/concurrent/CancellationException; {:try_start_3 .. :try_end_3} :catch_2
+    sget v0, Ld11;->a:I
 
+    .line 204
     .line 205
-    sget-object v3, Lcx0;->Q:Lcx0;
+    invoke-static {}, Lan3;->l()Lan3;
 
     .line 206
     .line 207
-    if-ne v0, v3, :cond_6
-
     .line 208
+    move-result-object v0
+
     .line 209
-    return-object v3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 210
-    :cond_6
-    move-object v1, p0
-
     .line 211
-    :goto_2
-    :try_start_4
-    check-cast v0, Lcn3;
-    :try_end_4
-    .catch Ljava/util/concurrent/CancellationException; {:try_start_4 .. :try_end_4} :catch_1
-
     .line 212
-    .line 213
-    return-object v0
+    new-instance v0, Lc44;
 
+    .line 213
     .line 214
-    :catch_1
-    move-exception v0
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 215
-    goto :goto_4
-
     .line 216
-    :catch_2
-    move-exception v0
-
     .line 217
-    :goto_3
-    move-object v1, p0
+    return-object v0
 
     .line 218
-    goto :goto_4
+    :cond_8
+    sget v12, Ld11;->a:I
 
     .line 219
-    :catch_3
-    move-exception v0
-
     .line 220
-    move-object v2, v3
+    invoke-static {}, Lan3;->l()Lan3;
 
     .line 221
-    goto :goto_3
-
     .line 222
-    :goto_4
-    iget-object v3, v1, Ldn3;->c:Ljava/util/concurrent/atomic/AtomicInteger;
-
     .line 223
+    move-result-object v12
+
     .line 224
-    iget-object v1, v1, Ldn3;->c:Ljava/util/concurrent/atomic/AtomicInteger;
+    invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 225
     .line 226
-    invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
-
     .line 227
+    :try_start_1
+    iget-object v4, v4, Landroidx/work/WorkerParameters;->i:Lqu1;
+
     .line 228
     .line 229
-    move-result v3
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 230
-    const/16 v4, -0x100
-
     .line 231
     .line 232
-    if-eq v3, v4, :cond_7
+    invoke-virtual {v4, v3, v0, v2}, Lqu1;->t(Landroid/content/Context;Ljava/lang/String;Landroidx/work/WorkerParameters;)Lf44;
 
     .line 233
     .line 234
-    goto :goto_5
-
     .line 235
-    :cond_7
-    instance-of v3, v0, Lrt0;
+    move-result-object v3
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 236
+    iget-object v0, v2, Landroidx/work/WorkerParameters;->h:Lqn6;
+
     .line 237
-    if-eqz v3, :cond_b
-
     .line 238
+    iget-object v0, v0, Lqn6;->d0:Ljava/lang/Object;
+
     .line 239
-    :goto_5
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 240
+    check-cast v0, Lra3;
+
     .line 241
-    const/16 v5, 0x1f
-
     .line 242
-    .line 243
-    if-ge v3, v5, :cond_8
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 243
     .line 244
     .line 245
-    const/16 v1, -0x200
+    :try_start_2
+    invoke-static {v0}, Lhc4;->x(Ljava/util/concurrent/Executor;)Lb41;
 
     .line 246
     .line 247
-    goto :goto_6
-
     .line 248
-    :cond_8
-    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+    move-result-object v12
 
     .line 249
+    new-instance v0, Lai;
+    :try_end_2
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_2 .. :try_end_2} :catch_2
+
     .line 250
     .line 251
-    move-result v3
+    const/4 v5, 0x0
 
     .line 252
-    if-eq v3, v4, :cond_9
+    move-object v4, v6
 
     .line 253
+    const/4 v6, 0x3
+
     .line 254
-    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+    move-object v2, v3
 
     .line 255
+    move-object v3, v11
+
     .line 256
+    :try_start_3
+    invoke-direct/range {v0 .. v6}, Lai;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lb31;I)V
+
     .line 257
-    move-result v1
-
     .line 258
-    goto :goto_6
-
     .line 259
-    :cond_9
-    instance-of v1, v0, Lrt0;
+    iput-object v2, v8, Lz01;->c0:Lf44;
 
     .line 260
     .line 261
-    if-eqz v1, :cond_a
+    iput v10, v8, Lz01;->f0:I
 
     .line 262
     .line 263
-    move-object v1, v0
+    invoke-static {v12, v0, v8}, Ld01;->d0(Lz31;Lxi2;Lb31;)Ljava/lang/Object;
 
     .line 264
-    check-cast v1, Lrt0;
-
     .line 265
     .line 266
-    iget v1, v1, Lrt0;->Q:I
+    move-result-object v0
+    :try_end_3
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_3 .. :try_end_3} :catch_1
 
     .line 267
+    sget-object v1, Lj41;->X:Lj41;
+
     .line 268
-    :goto_6
-    iget-object v3, v2, Ldn3;->c:Ljava/util/concurrent/atomic/AtomicInteger;
-
     .line 269
-    .line 270
-    invoke-virtual {v3, v4, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->compareAndSet(II)Z
+    if-ne v0, v1, :cond_9
 
+    .line 270
     .line 271
+    return-object v1
+
     .line 272
+    :cond_9
+    move-object v1, v2
+
     .line 273
-    move-result v1
+    :goto_3
+    :try_start_4
+    check-cast v0, Le44;
+    :try_end_4
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_4 .. :try_end_4} :catch_0
 
     .line 274
-    if-eqz v1, :cond_b
-
     .line 275
+    return-object v0
+
     .line 276
-    invoke-virtual {v2}, Ldn3;->b()V
+    :catch_1
+    move-exception v0
 
     .line 277
+    :goto_4
+    move-object v1, v2
+
     .line 278
+    goto :goto_5
+
     .line 279
-    goto :goto_7
+    :catch_2
+    move-exception v0
 
     .line 280
-    :cond_a
-    const-string v0, "Unreachable"
+    move-object v2, v3
 
     .line 281
+    goto :goto_4
+
     .line 282
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    :goto_5
+    invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
     .line 283
     .line 284
     .line 285
-    return-object v8
+    move-result v2
 
     .line 286
-    :cond_b
-    :goto_7
-    instance-of v1, v0, Lrt0;
+    const/16 v3, -0x100
 
     .line 287
     .line 288
-    if-eqz v1, :cond_c
+    if-eq v2, v3, :cond_a
 
     .line 289
     .line 290
-    new-instance v0, Lan3;
+    goto :goto_6
 
     .line 291
-    .line 292
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    :cond_a
+    instance-of v2, v0, Landroidx/work/impl/workers/ConstraintTrackingWorker$a;
 
+    .line 292
     .line 293
+    if-eqz v2, :cond_e
+
     .line 294
     .line 295
-    goto :goto_8
+    :goto_6
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 296
-    :cond_c
-    throw v0
-
     .line 297
-    :catchall_0
-    sget v0, Lxt0;->a:I
+    const/16 v4, 0x1f
 
     .line 298
     .line 299
-    invoke-static {}, Lmc2;->m()Lmc2;
+    if-ge v2, v4, :cond_b
 
     .line 300
     .line 301
-    .line 302
-    move-result-object v0
+    const/16 v2, -0x200
 
+    .line 302
     .line 303
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    goto :goto_7
 
     .line 304
+    :cond_b
+    invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
     .line 305
     .line 306
-    iget-object v0, v5, Lzu7;->l:Ljs0;
-
     .line 307
+    move-result v2
+
     .line 308
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eq v2, v3, :cond_c
 
     .line 309
     .line 310
-    .line 311
-    new-instance v0, Lzm3;
+    invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
+    .line 311
     .line 312
     .line 313
-    invoke-direct {v0}, Lzm3;-><init>()V
+    move-result v2
 
     .line 314
-    .line 315
-    .line 316
-    :goto_8
-    return-object v0
+    goto :goto_7
 
+    .line 315
+    :cond_c
+    instance-of v2, v0, Landroidx/work/impl/workers/ConstraintTrackingWorker$a;
+
+    .line 316
     .line 317
-    :cond_d
-    :goto_9
-    sget v0, Lxt0;->a:I
+    if-eqz v2, :cond_d
 
     .line 318
     .line 319
-    invoke-static {}, Lmc2;->m()Lmc2;
+    move-object v2, v0
 
     .line 320
+    check-cast v2, Landroidx/work/impl/workers/ConstraintTrackingWorker$a;
+
     .line 321
     .line 322
-    move-result-object v0
+    iget v2, v2, Landroidx/work/impl/workers/ConstraintTrackingWorker$a;->X:I
 
     .line 323
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 324
+    :goto_7
+    invoke-virtual {v1, v2}, Lf44;->d(I)V
+
     .line 325
     .line 326
-    new-instance v0, Lzm3;
-
     .line 327
+    goto :goto_8
+
     .line 328
-    invoke-direct {v0}, Lzm3;-><init>()V
+    :cond_d
+    const-string v0, "Unreachable"
 
     .line 329
     .line 330
+    invoke-static {v0}, Li60;->g(Ljava/lang/String;)V
+
     .line 331
+    .line 332
+    .line 333
+    return-object v9
+
+    .line 334
+    :cond_e
+    :goto_8
+    instance-of v1, v0, Landroidx/work/impl/workers/ConstraintTrackingWorker$a;
+
+    .line 335
+    .line 336
+    if-eqz v1, :cond_f
+
+    .line 337
+    .line 338
+    new-instance v0, Lc44;
+
+    .line 339
+    .line 340
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 341
+    .line 342
+    .line 343
+    goto :goto_9
+
+    .line 344
+    :cond_f
+    throw v0
+
+    .line 345
+    :catchall_0
+    sget v0, Ld11;->a:I
+
+    .line 346
+    .line 347
+    invoke-static {}, Lan3;->l()Lan3;
+
+    .line 348
+    .line 349
+    .line 350
+    move-result-object v0
+
+    .line 351
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 352
+    .line 353
+    .line 354
+    iget-object v0, v5, Lkq8;->m0:Lnz0;
+
+    .line 355
+    .line 356
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 357
+    .line 358
+    .line 359
+    new-instance v0, Lb44;
+
+    .line 360
+    .line 361
+    invoke-direct {v0}, Lb44;-><init>()V
+
+    .line 362
+    .line 363
+    .line 364
+    :goto_9
+    return-object v0
+
+    .line 365
+    :cond_10
+    :goto_a
+    sget v0, Ld11;->a:I
+
+    .line 366
+    .line 367
+    invoke-static {}, Lan3;->l()Lan3;
+
+    .line 368
+    .line 369
+    .line 370
+    move-result-object v0
+
+    .line 371
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 372
+    .line 373
+    .line 374
+    new-instance v0, Lb44;
+
+    .line 375
+    .line 376
+    invoke-direct {v0}, Lb44;-><init>()V
+
+    .line 377
+    .line 378
+    .line 379
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final d(Lyv0;)Ljava/lang/Object;
+.method public final e(Lb31;)Ljava/lang/Object;
     .locals 4
 
     .line 1
-    iget-object v0, p0, Ldn3;->b:Landroidx/work/WorkerParameters;
+    iget-object v0, p0, Lf44;->b:Landroidx/work/WorkerParameters;
 
     .line 2
     .line 3
@@ -958,7 +1053,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v0}, Lhc7;->A(Ljava/util/concurrent/Executor;)Luw0;
+    invoke-static {v0}, Lhc4;->x(Ljava/util/concurrent/Executor;)Lb41;
 
     .line 9
     .line 10
@@ -966,28 +1061,28 @@
     move-result-object v0
 
     .line 12
-    new-instance v1, Lcy;
+    new-instance v1, Lo5;
 
     .line 13
     .line 14
     const/4 v2, 0x0
 
     .line 15
-    const/4 v3, 0x2
+    const/4 v3, 0x7
 
     .line 16
-    invoke-direct {v1, p0, v2, v3}, Lcy;-><init>(Ljava/lang/Object;Lyv0;I)V
+    invoke-direct {v1, p0, v2, v3}, Lo5;-><init>(Ljava/lang/Object;Lb31;I)V
 
     .line 17
     .line 18
     .line 19
-    invoke-static {v0, v1, p1}, Lwj0;->w0(Lsw0;Lu72;Lyv0;)Ljava/lang/Object;
+    invoke-static {v0, v1, p1}, Ld01;->d0(Lz31;Lxi2;Lb31;)Ljava/lang/Object;
 
     .line 20
     .line 21
     .line 22
-    move-result-object p1
+    move-result-object p0
 
     .line 23
-    return-object p1
+    return-object p0
 .end method

@@ -1,16 +1,25 @@
 .class public final synthetic Lcom/google/android/material/timepicker/f;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# virtual methods
-.method public final a()V
-    .locals 1
+# instance fields
+.field public final synthetic a:Lcom/google/android/material/timepicker/TimePickerView;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/google/android/material/timepicker/TimePickerView;)V
+    .locals 0
 
     .line 1
-    sget v0, Lcom/google/android/material/timepicker/TimePickerView;->k0:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
+    .line 4
+    iput-object p1, p0, Lcom/google/android/material/timepicker/f;->a:Lcom/google/android/material/timepicker/TimePickerView;
+
+    .line 5
+    .line 6
     return-void
 .end method

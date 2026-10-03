@@ -1,169 +1,235 @@
 .class public final Ljz1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lon4;
 
 
-# instance fields
-.field public a:I
+# static fields
+.field public static final X:Ljz1;
 
-.field public b:Z
+.field public static final Y:Lpr4;
 
-.field public c:I
+.field public static final Z:Lfw1;
 
-.field public d:I
-
-.field public e:I
-
-.field public f:I
-
-.field public g:I
-
-.field public h:I
-
-.field public i:Z
+.field public static final c0:Lmm7;
 
 
-# virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 3
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance v0, Ljz1;
 
     .line 2
     .line 3
-    const-string v1, "LayoutState{mAvailable="
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    sput-object v0, Ljz1;->X:Ljz1;
+
     .line 7
     .line 8
-    iget v1, p0, Ljz1;->a:I
+    const-string v0, "<Error module>"
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Lpr4;->g(Ljava/lang/String;)Lpr4;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", mFlexLinePosition="
+    move-result-object v0
 
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sput-object v0, Ljz1;->Y:Lpr4;
 
+    .line 15
     .line 16
+    sget-object v0, Lfw1;->X:Lfw1;
+
     .line 17
     .line 18
-    iget v1, p0, Ljz1;->c:I
+    sput-object v0, Ljz1;->Z:Lfw1;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    sget-object v0, Loy;->j0:Loy;
 
     .line 21
     .line 22
+    new-instance v1, Lmm7;
+
     .line 23
-    const-string v1, ", mPosition="
-
     .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
+    .line 25
     .line 26
     .line 27
+    sput-object v1, Ljz1;->c0:Lmm7;
+
     .line 28
-    iget v1, p0, Ljz1;->d:I
-
     .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    return-void
+.end method
 
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", mOffset="
 
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+# virtual methods
+.method public final B(Lon4;)Z
+    .locals 0
 
-    .line 36
-    .line 37
-    .line 38
-    iget v1, p0, Ljz1;->e:I
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 2
+    .line 3
+    .line 4
+    const/4 p0, 0x0
 
-    .line 41
-    .line 42
-    .line 43
-    const-string v1, ", mScrollingOffset="
+    .line 5
+    return p0
+.end method
 
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public final J(Lma1;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    .line 46
-    .line 47
-    .line 48
-    iget v1, p0, Ljz1;->f:I
+    .line 1
+    const/4 p0, 0x0
 
-    .line 49
-    .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 2
+    return-object p0
+.end method
 
-    .line 51
-    .line 52
-    .line 53
-    const-string v1, ", mLastScrollDelta="
+.method public final K(Lnn4;)Ljava/lang/Object;
+    .locals 0
 
-    .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 56
-    .line 57
-    .line 58
-    iget v1, p0, Ljz1;->g:I
+    .line 2
+    .line 3
+    .line 4
+    const/4 p0, 0x0
 
-    .line 59
-    .line 60
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 5
+    return-object p0
+.end method
 
-    .line 61
-    .line 62
-    .line 63
-    const-string v1, ", mItemDirection=1, mLayoutDirection="
+.method public final a()Lia1;
+    .locals 0
 
-    .line 64
-    .line 65
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 1
+    return-object p0
+.end method
 
-    .line 66
-    .line 67
-    .line 68
-    iget v1, p0, Ljz1;->h:I
+.method public final b0()Ljava/util/List;
+    .locals 0
 
-    .line 69
-    .line 70
-    const/16 v2, 0x7d
+    .line 1
+    sget-object p0, Ljz1;->Z:Lfw1;
 
-    .line 71
-    .line 72
-    invoke-static {v0, v1, v2}, Lea0;->s(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+    .line 2
+    .line 3
+    return-object p0
+.end method
 
-    .line 73
-    .line 74
-    .line 75
-    move-result-object v0
+.method public final c0(Ljf2;)Luz3;
+    .locals 0
 
-    .line 76
-    return-object v0
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 5
+    .line 6
+    const-string p1, "Should not be called!"
+
+    .line 7
+    .line 8
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    throw p0
+.end method
+
+.method public final f()Lhs3;
+    .locals 0
+
+    .line 1
+    sget-object p0, Ljz1;->c0:Lmm7;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lhs3;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public final getAnnotations()Lxl;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lqu1;->c0:Lwl;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getName()Lpr4;
+    .locals 0
+
+    .line 1
+    sget-object p0, Ljz1;->Y:Lpr4;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final q()Lia1;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final u(Ljf2;Lmi2;)Ljava/util/Collection;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object p0, Lfw1;->X:Lfw1;
+
+    .line 5
+    .line 6
+    return-object p0
 .end method

@@ -1,213 +1,212 @@
 .class public final Lyi6;
-.super Lkr;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lzi6;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/util/Iterator;
+
+
+# instance fields
+.field public X:Lxi6;
+
+.field public Y:Z
+
+.field public final synthetic Z:Laj6;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lfj6;->a(Ljava/lang/Class;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c(Lb66;Ljava/lang/Object;)Z
+.method public constructor <init>(Laj6;)V
     .locals 0
 
     .line 1
-    check-cast p2, [Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    array-length p1, p2
-
     .line 4
-    if-nez p1, :cond_0
+    iput-object p1, p0, Lyi6;->Z:Laj6;
 
     .line 5
     .line 6
     const/4 p1, 0x1
 
     .line 7
-    return p1
+    iput-boolean p1, p0, Lyi6;->Y:Z
 
     .line 8
-    :cond_0
-    const/4 p1, 0x0
-
     .line 9
-    return p1
-.end method
-
-.method public final e(Ljava/lang/Object;Lr03;Lb66;)V
-    .locals 3
-
-    .line 1
-    check-cast p1, [Z
-
-    .line 2
-    .line 3
-    array-length v0, p1
-
-    .line 4
-    const/4 v1, 0x1
-
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    if-ne v0, v1, :cond_1
-
-    .line 7
-    .line 8
-    invoke-virtual {p0, p3}, Lkr;->p(Lb66;)Z
-
-    .line 9
-    .line 10
-    .line 11
-    move-result p3
-
-    .line 12
-    if-eqz p3, :cond_1
-
-    .line 13
-    .line 14
-    array-length p3, p1
-
-    .line 15
-    :goto_0
-    if-ge v2, p3, :cond_0
-
-    .line 16
-    .line 17
-    aget-boolean v0, p1, v2
-
-    .line 18
-    .line 19
-    invoke-virtual {p2, v0}, Lr03;->y(Z)V
-
-    .line 20
-    .line 21
-    .line 22
-    add-int/lit8 v2, v2, 0x1
-
-    .line 23
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_0
-    return-void
-
-    .line 26
-    :cond_1
-    invoke-virtual {p2, p1}, Lr03;->I0(Ljava/lang/Object;)V
-
-    .line 27
-    .line 28
-    .line 29
-    array-length p3, p1
-
-    .line 30
-    :goto_1
-    if-ge v2, p3, :cond_2
-
-    .line 31
-    .line 32
-    aget-boolean v0, p1, v2
-
-    .line 33
-    .line 34
-    invoke-virtual {p2, v0}, Lr03;->y(Z)V
-
-    .line 35
-    .line 36
-    .line 37
-    add-int/lit8 v2, v2, 0x1
-
-    .line 38
-    .line 39
-    goto :goto_1
-
-    .line 40
-    :cond_2
-    invoke-virtual {p2}, Lr03;->C()V
-
-    .line 41
-    .line 42
-    .line 43
     return-void
 .end method
 
-.method public final o(Lwc7;)Lou0;
-    .locals 0
 
-    .line 1
-    return-object p0
-.end method
-
-.method public final q(Lj10;Ljava/lang/Boolean;)La33;
+# virtual methods
+.method public final a(Lxi6;)V
     .locals 1
 
     .line 1
-    new-instance v0, Lyi6;
+    iget-object v0, p0, Lyi6;->X:Lxi6;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0, p1, p2}, Lkr;-><init>(Lkr;Lj10;Ljava/lang/Boolean;)V
+    if-ne p1, v0, :cond_1
 
     .line 4
     .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public final r(Ljava/lang/Object;Lr03;Lb66;)V
-    .locals 2
-
-    .line 1
-    check-cast p1, [Z
-
-    .line 2
-    .line 3
-    array-length p3, p1
-
-    .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    :goto_0
-    if-ge v0, p3, :cond_0
+    iget-object p1, v0, Lxi6;->c0:Lxi6;
 
     .line 6
     .line 7
-    aget-boolean v1, p1, v0
+    iput-object p1, p0, Lyi6;->X:Lxi6;
 
     .line 8
     .line 9
-    invoke-virtual {p2, v1}, Lr03;->y(Z)V
+    if-nez p1, :cond_0
 
     .line 10
     .line 11
+    const/4 p1, 0x1
+
     .line 12
-    add-int/lit8 v0, v0, 0x1
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 14
+    :goto_0
+    iput-boolean p1, p0, Lyi6;->Y:Z
+
+    .line 15
+    .line 16
+    :cond_1
+    return-void
+.end method
+
+.method public final hasNext()Z
+    .locals 3
+
+    .line 1
+    iget-boolean v0, p0, Lyi6;->Y:Z
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    const/4 v2, 0x1
+
+    .line 5
+    if-eqz v0, :cond_1
+
+    .line 6
+    .line 7
+    iget-object p0, p0, Lyi6;->Z:Laj6;
+
+    .line 8
+    .line 9
+    iget-object p0, p0, Laj6;->X:Lxi6;
+
+    .line 10
+    .line 11
+    if-eqz p0, :cond_0
+
+    .line 12
+    .line 13
+    return v2
+
+    .line 14
+    :cond_0
+    return v1
+
+    .line 15
+    :cond_1
+    iget-object p0, p0, Lyi6;->X:Lxi6;
+
+    .line 16
+    .line 17
+    if-eqz p0, :cond_2
+
+    .line 18
+    .line 19
+    iget-object p0, p0, Lxi6;->Z:Lxi6;
+
+    .line 20
+    .line 21
+    if-eqz p0, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v1
+.end method
+
+.method public final next()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lyi6;->Y:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, 0x0
+
+    .line 6
+    iput-boolean v0, p0, Lyi6;->Y:Z
+
+    .line 7
+    .line 8
+    iget-object v0, p0, Lyi6;->Z:Laj6;
+
+    .line 9
+    .line 10
+    iget-object v0, v0, Laj6;->X:Lxi6;
+
+    .line 11
+    .line 12
+    iput-object v0, p0, Lyi6;->X:Lxi6;
 
     .line 13
     .line 14
-    goto :goto_0
+    goto :goto_1
 
     .line 15
     :cond_0
-    return-void
+    iget-object v0, p0, Lyi6;->X:Lxi6;
+
+    .line 16
+    .line 17
+    if-eqz v0, :cond_1
+
+    .line 18
+    .line 19
+    iget-object v0, v0, Lxi6;->Z:Lxi6;
+
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 23
+    :goto_0
+    iput-object v0, p0, Lyi6;->X:Lxi6;
+
+    .line 24
+    .line 25
+    :goto_1
+    iget-object p0, p0, Lyi6;->X:Lxi6;
+
+    .line 26
+    .line 27
+    return-object p0
 .end method

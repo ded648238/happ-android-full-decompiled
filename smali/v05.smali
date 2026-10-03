@@ -1,74 +1,126 @@
 .class public final Lv05;
-.super Ljava/util/AbstractMap$SimpleEntry;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lz82;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:Lw05;
+# static fields
+.field public static final d:Lv05;
 
 
 # direct methods
-.method public constructor <init>(Lw05;Ls05;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    iput-object p1, p0, Lv05;->Q:Lw05;
+    new-instance v0, Lv05;
 
     .line 2
     .line 3
-    iget-object p1, p2, Ls05;->Q:Ljava/lang/Object;
+    const/4 v1, 0x4
 
     .line 4
+    const/4 v2, 0x1
+
     .line 5
-    invoke-virtual {p2}, Ls05;->a()Ljava/lang/Object;
+    const/4 v3, 0x0
 
     .line 6
+    invoke-direct {v0, v3, v1, v2}, Lz82;-><init>(III)V
+
     .line 7
     .line 8
-    move-result-object p2
-
     .line 9
-    invoke-direct {p0, p1, p2}, Ljava/util/AbstractMap$SimpleEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    sput-object v0, Lv05;->d:Lv05;
 
     .line 10
     .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final setValue(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final d(Lup0;Lwr;Lzz6;Lu61;Lb25;)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p0}, Ljava/util/AbstractMap$SimpleEntry;->getKey()Ljava/lang/Object;
+    const/4 p0, 0x2
 
     .line 2
+    invoke-virtual {p1, p0}, Lup0;->i(I)Ljava/lang/Object;
+
     .line 3
     .line 4
-    move-result-object v0
-
     .line 5
-    const/4 v1, 0x0
+    move-result-object p0
 
     .line 6
-    iget-object v2, p0, Lv05;->Q:Lw05;
+    check-cast p0, Lpo4;
 
     .line 7
     .line 8
-    invoke-virtual {v2, v0, p1, v1}, Lw05;->g(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;
+    const/4 p2, 0x3
 
     .line 9
+    invoke-virtual {p1, p2}, Lup0;->i(I)Ljava/lang/Object;
+
     .line 10
     .line 11
-    invoke-super {p0, p1}, Ljava/util/AbstractMap$SimpleEntry;->setValue(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 12
+    move-result-object p2
+
     .line 13
+    check-cast p2, Lpo4;
+
     .line 14
+    .line 15
+    const/4 p2, 0x1
+
+    .line 16
+    invoke-virtual {p1, p2}, Lup0;->i(I)Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p2
+
+    .line 20
+    check-cast p2, Lky0;
+
+    .line 21
+    .line 22
+    const/4 p3, 0x0
+
+    .line 23
+    invoke-virtual {p1, p3}, Lup0;->i(I)Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
     move-result-object p1
 
-    .line 15
-    return-object p1
+    .line 27
+    check-cast p1, Loo4;
+
+    .line 28
+    .line 29
+    invoke-virtual {p2, p0}, Lky0;->m(Lpo4;)Loo4;
+
+    .line 30
+    .line 31
+    .line 32
+    const-string p0, "Could not resolve state for movable content"
+
+    .line 33
+    .line 34
+    invoke-static {p0}, Lby0;->b(Ljava/lang/String;)Ljava/lang/Void;
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-static {}, Lku0;->k()V
+
+    .line 38
+    .line 39
+    .line 40
+    return-void
 .end method

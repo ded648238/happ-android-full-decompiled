@@ -1,20 +1,20 @@
 .class public Landroidx/leanback/widget/TitleView;
 .super Landroid/widget/FrameLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Landroid/widget/ImageView;
+.field public final c0:Landroid/widget/ImageView;
 
-.field public final R:Landroid/widget/TextView;
+.field public final d0:Landroid/widget/TextView;
 
-.field public final S:Landroidx/leanback/widget/SearchOrbView;
+.field public final e0:Landroidx/leanback/widget/SearchOrbView;
 
-.field public final T:I
+.field public final f0:I
 
-.field public U:Z
+.field public g0:Z
 
-.field public final V:La57;
+.field public final h0:Ljx7;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     .locals 1
 
     .line 64
-    sget v0, Ls75;->browseTitleViewStyle:I
+    sget v0, Lrr5;->browseTitleViewStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Landroidx/leanback/widget/TitleView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -41,18 +41,18 @@
     const/4 p2, 0x6
 
     .line 5
-    iput p2, p0, Landroidx/leanback/widget/TitleView;->T:I
+    iput p2, p0, Landroidx/leanback/widget/TitleView;->f0:I
 
     .line 6
     .line 7
     const/4 p2, 0x0
 
     .line 8
-    iput-boolean p2, p0, Landroidx/leanback/widget/TitleView;->U:Z
+    iput-boolean p2, p0, Landroidx/leanback/widget/TitleView;->g0:Z
 
     .line 9
     .line 10
-    new-instance p3, La57;
+    new-instance p3, Ljx7;
 
     .line 11
     .line 12
@@ -61,7 +61,7 @@
     .line 13
     .line 14
     .line 15
-    iput-object p3, p0, Landroidx/leanback/widget/TitleView;->V:La57;
+    iput-object p3, p0, Landroidx/leanback/widget/TitleView;->h0:Ljx7;
 
     .line 16
     .line 17
@@ -73,7 +73,7 @@
     move-result-object p1
 
     .line 21
-    sget p3, Lq95;->lb_title_view:I
+    sget p3, Lqt5;->lb_title_view:I
 
     .line 22
     .line 23
@@ -85,7 +85,7 @@
     move-result-object p1
 
     .line 27
-    sget p3, Lv85;->title_badge:I
+    sget p3, Lus5;->title_badge:I
 
     .line 28
     .line 29
@@ -101,11 +101,11 @@
 
     .line 34
     .line 35
-    iput-object p3, p0, Landroidx/leanback/widget/TitleView;->Q:Landroid/widget/ImageView;
+    iput-object p3, p0, Landroidx/leanback/widget/TitleView;->c0:Landroid/widget/ImageView;
 
     .line 36
     .line 37
-    sget p3, Lv85;->title_text:I
+    sget p3, Lus5;->title_text:I
 
     .line 38
     .line 39
@@ -121,11 +121,11 @@
 
     .line 44
     .line 45
-    iput-object p3, p0, Landroidx/leanback/widget/TitleView;->R:Landroid/widget/TextView;
+    iput-object p3, p0, Landroidx/leanback/widget/TitleView;->d0:Landroid/widget/TextView;
 
     .line 46
     .line 47
-    sget p3, Lv85;->title_orb:I
+    sget p3, Lus5;->title_orb:I
 
     .line 48
     .line 49
@@ -141,7 +141,7 @@
 
     .line 54
     .line 55
-    iput-object p1, p0, Landroidx/leanback/widget/TitleView;->S:Landroidx/leanback/widget/SearchOrbView;
+    iput-object p1, p0, Landroidx/leanback/widget/TitleView;->e0:Landroidx/leanback/widget/SearchOrbView;
 
     .line 56
     .line 57
@@ -161,89 +161,89 @@
 
 # virtual methods
 .method public getBadgeDrawable()Landroid/graphics/drawable/Drawable;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->Q:Landroid/widget/ImageView;
+    iget-object p0, p0, Landroidx/leanback/widget/TitleView;->c0:Landroid/widget/ImageView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
-.method public getSearchAffordanceColors()Ll16;
-    .locals 1
+.method public getSearchAffordanceColors()Lbn6;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->S:Landroidx/leanback/widget/SearchOrbView;
+    iget-object p0, p0, Landroidx/leanback/widget/TitleView;->e0:Landroidx/leanback/widget/SearchOrbView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/leanback/widget/SearchOrbView;->getOrbColors()Ll16;
+    invoke-virtual {p0}, Landroidx/leanback/widget/SearchOrbView;->getOrbColors()Lbn6;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSearchAffordanceView()Landroid/view/View;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->S:Landroidx/leanback/widget/SearchOrbView;
+    iget-object p0, p0, Landroidx/leanback/widget/TitleView;->e0:Landroidx/leanback/widget/SearchOrbView;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getTitle()Ljava/lang/CharSequence;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->R:Landroid/widget/TextView;
+    iget-object p0, p0, Landroidx/leanback/widget/TitleView;->d0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
-.method public getTitleViewAdapter()Lb57;
-    .locals 1
+.method public getTitleViewAdapter()Lkx7;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->V:La57;
+    iget-object p0, p0, Landroidx/leanback/widget/TitleView;->h0:Ljx7;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public setBadgeDrawable(Landroid/graphics/drawable/Drawable;)V
-    .locals 4
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->Q:Landroid/widget/ImageView;
+    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->c0:Landroid/widget/ImageView;
 
     .line 2
     .line 3
@@ -264,23 +264,23 @@
 
     .line 11
     .line 12
-    iget-object v2, p0, Landroidx/leanback/widget/TitleView;->R:Landroid/widget/TextView;
+    iget-object p0, p0, Landroidx/leanback/widget/TitleView;->d0:Landroid/widget/TextView;
 
     .line 13
     .line 14
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 15
     if-eqz p1, :cond_0
 
     .line 16
     .line 17
-    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v2, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {p0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 21
     .line 22
@@ -294,7 +294,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 28
     .line 29
@@ -320,15 +320,15 @@
 
     .line 6
     :cond_0
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 7
     :goto_0
-    iput-boolean v1, p0, Landroidx/leanback/widget/TitleView;->U:Z
+    iput-boolean v1, p0, Landroidx/leanback/widget/TitleView;->g0:Z
 
     .line 8
     .line 9
-    iget-object v1, p0, Landroidx/leanback/widget/TitleView;->S:Landroidx/leanback/widget/SearchOrbView;
+    iget-object v1, p0, Landroidx/leanback/widget/TitleView;->e0:Landroidx/leanback/widget/SearchOrbView;
 
     .line 10
     .line 11
@@ -337,7 +337,7 @@
     .line 12
     .line 13
     .line 14
-    iget-boolean p1, p0, Landroidx/leanback/widget/TitleView;->U:Z
+    iget-boolean p1, p0, Landroidx/leanback/widget/TitleView;->g0:Z
 
     .line 15
     .line 16
@@ -348,14 +348,14 @@
 
     .line 18
     .line 19
-    iget p1, p0, Landroidx/leanback/widget/TitleView;->T:I
+    iget p0, p0, Landroidx/leanback/widget/TitleView;->f0:I
 
     .line 20
     .line 21
-    and-int/2addr p1, v2
+    and-int/2addr p0, v2
 
     .line 22
-    if-ne p1, v2, :cond_1
+    if-ne p0, v2, :cond_1
 
     .line 23
     .line 24
@@ -363,7 +363,7 @@
 
     .line 25
     :cond_1
-    const/4 v0, 0x4
+    move v0, v2
 
     .line 26
     :goto_1
@@ -375,15 +375,15 @@
     return-void
 .end method
 
-.method public setSearchAffordanceColors(Ll16;)V
-    .locals 1
+.method public setSearchAffordanceColors(Lbn6;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->S:Landroidx/leanback/widget/SearchOrbView;
+    iget-object p0, p0, Landroidx/leanback/widget/TitleView;->e0:Landroidx/leanback/widget/SearchOrbView;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/leanback/widget/SearchOrbView;->setOrbColors(Ll16;)V
+    invoke-virtual {p0, p1}, Landroidx/leanback/widget/SearchOrbView;->setOrbColors(Lbn6;)V
 
     .line 4
     .line 5
@@ -392,10 +392,10 @@
 .end method
 
 .method public setTitle(Ljava/lang/CharSequence;)V
-    .locals 4
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->R:Landroid/widget/TextView;
+    iget-object v0, p0, Landroidx/leanback/widget/TitleView;->d0:Landroid/widget/TextView;
 
     .line 2
     .line 3
@@ -404,35 +404,35 @@
     .line 4
     .line 5
     .line 6
-    iget-object p1, p0, Landroidx/leanback/widget/TitleView;->Q:Landroid/widget/ImageView;
+    iget-object p0, p0, Landroidx/leanback/widget/TitleView;->c0:Landroid/widget/ImageView;
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     .line 9
     .line 10
     .line 11
-    move-result-object v1
+    move-result-object p1
 
     .line 12
-    const/16 v2, 0x8
+    const/16 v1, 0x8
 
     .line 13
     .line 14
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 15
-    if-eqz v1, :cond_0
+    if-eqz p1, :cond_0
 
     .line 16
     .line 17
-    invoke-virtual {p1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {p0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 21
     .line 22
@@ -441,12 +441,12 @@
 
     .line 24
     :cond_0
-    invoke-virtual {p1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 28
     .line 29

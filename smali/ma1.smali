@@ -1,29 +1,44 @@
-.class public final Lma1;
+.class public interface abstract Lma1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Lma1;
+# virtual methods
+.method public abstract F(Ldq0;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
 
+.method public abstract f(Lkm5;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public abstract g(Lbg8;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
 
-    .line 1
-    new-instance v0, Lma1;
+.method public abstract h(Lf3;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+.method public abstract i(Lqw3;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lma1;->a:Lma1;
+.method public abstract k(Lwm5;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
 
-    .line 7
-    .line 8
-    return-void
+.method public abstract l(Luz3;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
+
+.method public abstract m(Lcj1;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
+
+.method public abstract n(Lpn4;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
+
+.method public abstract u(Ljm5;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
+
+.method public abstract v(Lnj2;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
+
+.method public abstract w(Lln4;Ljava/lang/Object;)Ljava/lang/Object;
+.end method
+
+.method public abstract z(Lc55;Ljava/lang/Object;)Ljava/lang/Object;
 .end method

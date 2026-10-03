@@ -1,96 +1,117 @@
-.class public final synthetic Lbt;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lbt;
+.super Lp1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final Q:Lbt;
+# instance fields
+.field public Z:I
+
+.field public final synthetic c0:Lct;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Lct;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lbt;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "getFlags$org_jetbrains_kotlin_kotlin_metadata()I"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, Lbt;->c0:Lct;
 
+    .line 5
     .line 6
-    const-class v3, Lmb3;
+    const/4 p1, -0x1
 
     .line 7
+    iput p1, p0, Lbt;->Z:I
+
     .line 8
-    const-string v4, "flags"
-
     .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lbt;->Q:Lbt;
-
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final a()V
+    .locals 4
 
     .line 1
-    check-cast p1, Lmb3;
+    :cond_0
+    iget v0, p0, Lbt;->Z:I
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/Number;
+    const/4 v1, 0x1
 
     .line 4
+    add-int/2addr v0, v1
+
     .line 5
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+    iput v0, p0, Lbt;->Z:I
 
     .line 6
     .line 7
-    .line 8
-    move-result p2
+    iget-object v2, p0, Lbt;->c0:Lct;
 
+    .line 8
     .line 9
-    iput p2, p1, Lmb3;->a:I
+    iget-object v2, v2, Lct;->X:[Ljava/lang/Object;
 
     .line 10
     .line 11
+    array-length v3, v2
+
+    .line 12
+    if-ge v0, v3, :cond_1
+
+    .line 13
+    .line 14
+    aget-object v3, v2, v0
+
+    .line 15
+    .line 16
+    if-eqz v3, :cond_0
+
+    .line 17
+    .line 18
+    :cond_1
+    array-length v3, v2
+
+    .line 19
+    if-lt v0, v3, :cond_2
+
+    .line 20
+    .line 21
+    const/4 v0, 0x2
+
+    .line 22
+    iput v0, p0, Lp1;->X:I
+
+    .line 23
+    .line 24
     return-void
-.end method
 
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .line 25
+    :cond_2
+    aget-object v0, v2, v0
 
-    .line 1
-    check-cast p1, Lmb3;
+    .line 26
+    .line 27
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 2
-    .line 3
-    iget p1, p1, Lmb3;->a:I
+    .line 28
+    .line 29
+    .line 30
+    iput-object v0, p0, Lp1;->Y:Ljava/lang/Object;
 
-    .line 4
-    .line 5
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 31
+    .line 32
+    iput v1, p0, Lp1;->X:I
 
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p1
-
-    .line 9
-    return-object p1
+    .line 33
+    .line 34
+    return-void
 .end method

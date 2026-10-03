@@ -1,10 +1,37 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class xq extends im3 {
-    @Override // defpackage.l56
-    public final String a() {
-        return "kotlin.collections.ArrayList";
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class xq {
+    public final rq a;
+    public final jq b;
+    public final ho c;
+
+    public xq(rq rqVar, jq jqVar, ho hoVar) {
+        rqVar.getClass();
+        jqVar.getClass();
+        hoVar.getClass();
+        this.a = rqVar;
+        this.b = jqVar;
+        this.c = hoVar;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof xq)) {
+            return false;
+        }
+        xq xqVar = (xq) obj;
+        return m93.h(this.a, xqVar.a) && m93.h(this.b, xqVar.b) && m93.h(this.c, xqVar.c);
+    }
+
+    public final int hashCode() {
+        return this.c.a.hashCode() + ((this.b.a.hashCode() + (this.a.a.hashCode() * 31)) * 31);
+    }
+
+    public final String toString() {
+        return "AppShapes(menu=" + this.a + ", dialog=" + this.b + ", button=" + this.c + ")";
     }
 }

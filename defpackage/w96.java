@@ -1,13 +1,23 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface w96 {
-    boolean b();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class w96 {
+    public final int a;
 
-    void dismiss();
+    public final boolean equals(Object obj) {
+        if (obj instanceof w96) {
+            return this.a == ((w96) obj).a;
+        }
+        return false;
+    }
 
-    void g();
+    public final int hashCode() {
+        return Integer.hashCode(this.a);
+    }
 
-    sk1 j();
+    public final String toString() {
+        int i = this.a;
+        return i == 0 ? "Button" : i == 1 ? "Checkbox" : i == 2 ? "Switch" : i == 3 ? "RadioButton" : i == 4 ? "Tab" : i == 5 ? "Image" : i == 6 ? "DropdownList" : i == 7 ? "Picker" : i == 8 ? "Carousel" : "Unknown";
+    }
 }

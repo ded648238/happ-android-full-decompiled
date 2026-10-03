@@ -1,47 +1,23 @@
 package defpackage;
 
-import android.os.Build;
-import android.os.Handler;
-import android.os.Looper;
-import androidx.activity.ComponentActivity;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class no0 extends d31 {
+    public pk1 c0;
+    public /* synthetic */ Object d0;
+    public final /* synthetic */ po0 e0;
+    public int f0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class no0 implements g72 {
-    public final /* synthetic */ int Q;
-    public final /* synthetic */ ComponentActivity R;
-
-    public /* synthetic */ no0(ComponentActivity componentActivity, int i) {
-        this.Q = i;
-        this.R = componentActivity;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public no0(po0 po0Var, d31 d31Var) {
+        super(d31Var);
+        this.e0 = po0Var;
     }
 
-    @Override // defpackage.g72
-    public final Object invoke() {
-        int i = this.Q;
-        int i2 = 0;
-        ComponentActivity componentActivity = this.R;
-        switch (i) {
-            case 0:
-                int i3 = ComponentActivity.j0;
-                componentActivity.reportFullyDrawn();
-                return bh7.a;
-            case 1:
-                return new e72(componentActivity.V, new no0(componentActivity, i2));
-            case 2:
-                int i4 = ComponentActivity.j0;
-                return new ry5(componentActivity.getApplication(), componentActivity, componentActivity.getIntent() != null ? componentActivity.getIntent().getExtras() : null);
-            default:
-                int i5 = ComponentActivity.j0;
-                ph4 ph4Var = new ph4(new mo0(componentActivity, 1));
-                if (Build.VERSION.SDK_INT >= 33) {
-                    if (rt2.f(Looper.myLooper(), Looper.getMainLooper())) {
-                        componentActivity.Q.a(new oo0(i2, ph4Var, componentActivity));
-                    } else {
-                        new Handler(Looper.getMainLooper()).post(new fc(12, componentActivity, ph4Var));
-                    }
-                }
-                return ph4Var;
-        }
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.d0 = obj;
+        this.f0 |= Integer.MIN_VALUE;
+        return this.e0.b(null, null, null, this);
     }
 }

@@ -1,16 +1,34 @@
 package defpackage;
 
-import android.content.res.Resources;
-import android.widget.ThemedSpinnerAdapter;
-import j$.util.Objects;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class xn {
+    public static final xn c = new xn(jo.m, jo.n);
+    public final long a;
+    public final long b;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class xn {
-    public static void a(ThemedSpinnerAdapter themedSpinnerAdapter, Resources.Theme theme) {
-        if (Objects.equals(themedSpinnerAdapter.getDropDownViewTheme(), theme)) {
-            return;
+    public xn(long j, long j2) {
+        this.a = j;
+        this.b = j2;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        themedSpinnerAdapter.setDropDownViewTheme(theme);
+        if (!(obj instanceof xn)) {
+            return false;
+        }
+        xn xnVar = (xn) obj;
+        return au0.c(this.a, xnVar.a) && au0.c(this.b, xnVar.b);
+    }
+
+    public final int hashCode() {
+        int i = au0.h;
+        return Long.hashCode(this.b) + (Long.hashCode(this.a) * 31);
+    }
+
+    public final String toString() {
+        return eh0.o("AppActionColors(delete=", au0.i(this.a), ", share=", au0.i(this.b), ")");
     }
 }

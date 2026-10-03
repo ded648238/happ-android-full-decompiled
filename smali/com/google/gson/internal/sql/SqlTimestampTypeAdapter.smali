@@ -1,6 +1,6 @@
 .class Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;
 .super Lcom/google/gson/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final b:Lwa7;
+.field public static final b:Lj38;
 
 
 # instance fields
@@ -33,7 +33,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->b:Lwa7;
+    sput-object v0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->b:Lj38;
 
     .line 7
     .line 8
@@ -58,70 +58,70 @@
 
 
 # virtual methods
-.method public final b(Lr23;)Ljava/lang/Object;
-    .locals 3
+.method public final b(Lxi3;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->a:Lcom/google/gson/b;
+    iget-object p0, p0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->a:Lcom/google/gson/b;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/google/gson/b;->b(Lr23;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/google/gson/b;->b(Lxi3;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    check-cast p1, Ljava/util/Date;
+    check-cast p0, Ljava/util/Date;
 
     .line 8
     .line 9
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 10
     .line 11
-    new-instance v0, Ljava/sql/Timestamp;
+    new-instance p1, Ljava/sql/Timestamp;
 
     .line 12
     .line 13
-    invoke-virtual {p1}, Ljava/util/Date;->getTime()J
+    invoke-virtual {p0}, Ljava/util/Date;->getTime()J
 
     .line 14
     .line 15
     .line 16
-    move-result-wide v1
+    move-result-wide v0
 
     .line 17
-    invoke-direct {v0, v1, v2}, Ljava/sql/Timestamp;-><init>(J)V
+    invoke-direct {p1, v0, v1}, Ljava/sql/Timestamp;-><init>(J)V
 
     .line 18
     .line 19
     .line 20
-    return-object v0
+    return-object p1
 
     .line 21
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 22
-    return-object p1
+    return-object p0
 .end method
 
-.method public final c(Lh43;Ljava/lang/Object;)V
-    .locals 1
+.method public final c(Lnk3;Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
     check-cast p2, Ljava/sql/Timestamp;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->a:Lcom/google/gson/b;
+    iget-object p0, p0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->a:Lcom/google/gson/b;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1, p2}, Lcom/google/gson/b;->c(Lh43;Ljava/lang/Object;)V
+    invoke-virtual {p0, p1, p2}, Lcom/google/gson/b;->c(Lnk3;Ljava/lang/Object;)V
 
     .line 6
     .line 7

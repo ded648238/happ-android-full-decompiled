@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/AppVersion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -72,36 +72,36 @@
 
 # virtual methods
 .method public final a()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lsu/happ/proxyutility/dto/AppVersion;->major:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/AppVersion;->major:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final b()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lsu/happ/proxyutility/dto/AppVersion;->minor:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/AppVersion;->minor:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final c()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lsu/happ/proxyutility/dto/AppVersion;->patch:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/AppVersion;->patch:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -170,7 +170,7 @@
 
     .line 27
     :cond_3
-    iget v1, p0, Lsu/happ/proxyutility/dto/AppVersion;->patch:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/AppVersion;->patch:I
 
     .line 28
     .line 29
@@ -178,7 +178,7 @@
 
     .line 30
     .line 31
-    if-eq v1, p1, :cond_4
+    if-eq p0, p1, :cond_4
 
     .line 32
     .line 33
@@ -190,40 +190,60 @@
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 3
 
     .line 1
     iget v0, p0, Lsu/happ/proxyutility/dto/AppVersion;->major:I
 
     .line 2
     .line 3
-    mul-int/lit8 v0, v0, 0x1f
+    invoke-static {v0}, Ljava/lang/Integer;->hashCode(I)I
 
     .line 4
     .line 5
-    iget v1, p0, Lsu/happ/proxyutility/dto/AppVersion;->minor:I
-
     .line 6
+    move-result v0
+
     .line 7
-    add-int/2addr v0, v1
+    const/16 v1, 0x1f
 
     .line 8
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 9
+    mul-int/2addr v0, v1
+
     .line 10
-    iget v1, p0, Lsu/happ/proxyutility/dto/AppVersion;->patch:I
+    iget v2, p0, Lsu/happ/proxyutility/dto/AppVersion;->minor:I
 
     .line 11
     .line 12
-    add-int/2addr v0, v1
+    invoke-static {v2, v0, v1}, Leh0;->d(III)I
 
     .line 13
-    return v0
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    iget p0, p0, Lsu/happ/proxyutility/dto/AppVersion;->patch:I
+
+    .line 17
+    .line 18
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p0
+
+    .line 22
+    add-int/2addr p0, v0
+
+    .line 23
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 6
+    .locals 5
 
     .line 1
     iget v0, p0, Lsu/happ/proxyutility/dto/AppVersion;->major:I
@@ -234,23 +254,23 @@
 
     .line 4
     .line 5
-    iget v2, p0, Lsu/happ/proxyutility/dto/AppVersion;->patch:I
+    iget p0, p0, Lsu/happ/proxyutility/dto/AppVersion;->patch:I
 
     .line 6
     .line 7
-    const-string v3, ", minor="
+    const-string v2, ", minor="
 
     .line 8
     .line 9
-    const-string v4, ", patch="
+    const-string v3, ", patch="
 
     .line 10
     .line 11
-    const-string v5, "AppVersion(major="
+    const-string v4, "AppVersion(major="
 
     .line 12
     .line 13
-    invoke-static {v0, v5, v1, v3, v4}, Lmi2;->s(ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v4, v1, v2, v3}, Leh0;->t(ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 14
     .line 15
@@ -262,13 +282,13 @@
 
     .line 18
     .line 19
-    invoke-static {v0, v2, v1}, Lkd0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0, v1}, Leh0;->p(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v0
+    move-result-object p0
 
     .line 23
-    return-object v0
+    return-object p0
 .end method

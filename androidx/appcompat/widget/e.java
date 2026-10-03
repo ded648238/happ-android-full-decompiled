@@ -3,28 +3,29 @@ package androidx.appcompat.widget;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
+import androidx.appcompat.widget.SearchView;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class e implements View.OnKeyListener {
-    public final /* synthetic */ SearchView Q;
+    public final /* synthetic */ SearchView X;
 
     public e(SearchView searchView) {
-        this.Q = searchView;
+        this.X = searchView;
     }
 
     @Override // android.view.View.OnKeyListener
     public final boolean onKey(View view, int i, KeyEvent keyEvent) {
-        SearchView searchView = this.Q;
-        SearchView.SearchAutoComplete searchAutoComplete = searchView.i0;
-        if (searchView.T0 != null) {
+        SearchView searchView = this.X;
+        SearchView.SearchAutoComplete searchAutoComplete = searchView.r0;
+        if (searchView.c1 != null) {
             if (!searchAutoComplete.isPopupShowing() || searchAutoComplete.getListSelection() == -1) {
                 if (TextUtils.getTrimmedLength(searchAutoComplete.getText()) != 0 && keyEvent.hasNoModifiers() && keyEvent.getAction() == 1 && i == 66) {
                     view.cancelLongPress();
                     searchView.getContext().startActivity(searchView.j("android.intent.action.SEARCH", null, null, searchAutoComplete.getText().toString()));
                     return true;
                 }
-            } else if (searchView.T0 != null && searchView.I0 != null && keyEvent.getAction() == 0 && keyEvent.hasNoModifiers()) {
+            } else if (searchView.c1 != null && searchView.R0 != null && keyEvent.getAction() == 0 && keyEvent.hasNoModifiers()) {
                 if (i == 66 || i == 84 || i == 61) {
                     searchView.n(searchAutoComplete.getListSelection());
                     return true;

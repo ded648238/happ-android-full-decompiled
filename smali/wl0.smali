@@ -1,163 +1,425 @@
-.class public abstract Lwl0;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lwl0;
+.super Lr1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/lang/Iterable;
+.implements Lfm0;
 
 
 # instance fields
-.field public final Q:[I
+.field public final Y:Lwo3;
 
-.field public final R:[C
+.field public final Z:Lxl0;
 
-.field public final S:Lyu7;
+.field public final c0:Z
 
-.field public final T:I
-
-.field public final U:I
-
-.field public final V:I
-
-.field public final W:I
-
-.field public final X:I
-
-.field public final synthetic Y:I
+.field public final d0:La53;
 
 
 # direct methods
-.method public constructor <init>([CLyu7;IIII)V
+.method public constructor <init>(Lwo3;Lxl0;Z)V
     .locals 1
 
     .line 1
-    iput p6, p0, Lwl0;->Y:I
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    sget-object v0, Lvl0;->X:Lvl0;
+
     .line 5
     .line 6
-    const/16 p6, 0x80
+    invoke-direct {p0, v0}, Lr1;-><init>(Lji2;)V
 
     .line 7
     .line 8
-    new-array v0, p6, [I
-
     .line 9
+    iput-object p1, p0, Lwl0;->Y:Lwo3;
+
     .line 10
-    iput-object v0, p0, Lwl0;->Q:[I
-
     .line 11
+    iput-object p2, p0, Lwl0;->Z:Lxl0;
+
     .line 12
-    iput-object p1, p0, Lwl0;->R:[C
-
     .line 13
+    iput-boolean p3, p0, Lwl0;->c0:Z
+
     .line 14
-    iput-object p2, p0, Lwl0;->S:Lyu7;
-
     .line 15
-    .line 16
-    invoke-virtual {p2}, Lyu7;->u()I
+    new-instance p1, La53;
 
+    .line 16
     .line 17
+    sget-object p2, Lfw1;->X:Lfw1;
+
     .line 18
     .line 19
-    move-result p1
+    invoke-direct {p1, p2}, La53;-><init>(Ljava/lang/Object;)V
 
     .line 20
-    iput p1, p0, Lwl0;->T:I
-
     .line 21
     .line 22
-    iput p3, p0, Lwl0;->U:I
+    iput-object p1, p0, Lwl0;->d0:La53;
 
     .line 23
     .line 24
-    iput p4, p0, Lwl0;->V:I
-
-    .line 25
-    .line 26
-    iput p5, p0, Lwl0;->W:I
-
-    .line 27
-    .line 28
-    const/4 p1, 0x0
-
-    .line 29
-    :goto_0
-    if-ge p1, p6, :cond_0
-
-    .line 30
-    .line 31
-    iget-object p3, p0, Lwl0;->Q:[I
-
-    .line 32
-    .line 33
-    invoke-virtual {p2, p1}, Lyu7;->w(I)I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result p4
-
-    .line 37
-    aput p4, p3, p1
-
-    .line 38
-    .line 39
-    add-int/lit8 p1, p1, 0x1
-
-    .line 40
-    .line 41
-    goto :goto_0
-
-    .line 42
-    :cond_0
-    iget p1, p0, Lwl0;->T:I
-
-    .line 43
-    .line 44
-    if-lt p5, p1, :cond_1
-
-    .line 45
-    .line 46
-    add-int/lit8 p5, p1, -0x2
-
-    .line 47
-    .line 48
-    :cond_1
-    invoke-virtual {p2, p5}, Lyu7;->w(I)I
-
-    .line 49
-    .line 50
-    .line 51
-    move-result p1
-
-    .line 52
-    iput p1, p0, Lwl0;->X:I
-
-    .line 53
-    .line 54
     return-void
 .end method
 
 
 # virtual methods
-.method public final iterator()Ljava/util/Iterator;
-    .locals 1
+.method public final C()Z
+    .locals 0
 
     .line 1
-    new-instance v0, Ltl0;
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final D()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final H()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final I()Ljava/util/List;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lfw1;->X:Lfw1;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Ltl0;-><init>(Lwl0;)V
+    return-object p0
+.end method
+
+.method public final J()Lsn3;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final K()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final P()Lr1;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final Q(Z)Lr1;
+    .locals 0
+
+    .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    return-object p0
+
+    .line 4
+    :cond_0
+    const-string p1, "Definitely not null captured type is not supported yet: "
+
+    .line 5
+    .line 6
+    invoke-static {p0, p1}, Lbh2;->v(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    const/4 p0, 0x0
+
+    .line 10
+    return-object p0
+.end method
+
+.method public final R(Z)Lr1;
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lwl0;->c0:Z
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v0, Lwl0;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Lwl0;->Y:Lwo3;
+
+    .line 9
+    .line 10
+    iget-object p0, p0, Lwl0;->Z:Lxl0;
+
+    .line 11
+    .line 12
+    invoke-direct {v0, v1, p0, p1}, Lwl0;-><init>(Lwo3;Lxl0;Z)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object v0
+.end method
+
+.method public final S()Lr1;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    instance-of v0, p1, Lwl0;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    check-cast p1, Lwl0;
+
+    .line 6
+    .line 7
+    iget-object v0, p1, Lwl0;->Y:Lwo3;
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lwl0;->Y:Lwo3;
+
+    .line 10
+    .line 11
+    invoke-static {v1, v0}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-eqz v0, :cond_0
+
+    .line 16
+    .line 17
+    iget-object v0, p0, Lwl0;->Z:Lxl0;
+
+    .line 18
+    .line 19
+    iget-object v1, p1, Lwl0;->Z:Lxl0;
+
+    .line 20
+    .line 21
+    invoke-static {v0, v1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v0
+
+    .line 25
+    if-eqz v0, :cond_0
+
+    .line 26
+    .line 27
+    iget-boolean p0, p0, Lwl0;->c0:Z
+
+    .line 28
+    .line 29
+    iget-boolean p1, p1, Lwl0;->c0:Z
+
+    .line 30
+    .line 31
+    if-ne p0, p1, :cond_0
+
+    .line 32
+    .line 33
+    const/4 p0, 0x1
+
+    .line 34
+    return p0
+
+    .line 35
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 36
+    return p0
+.end method
+
+.method public final f()Lwo3;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lwl0;->Y:Lwo3;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 11
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lwl0;->Z:Lxl0;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    add-int/2addr v1, v0
+
+    .line 20
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 21
+    .line 22
+    iget-boolean p0, p0, Lwl0;->c0:Z
+
+    .line 23
+    .line 24
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result p0
+
+    .line 28
+    add-int/2addr p0, v1
+
+    .line 29
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lwl0;->Z:Lxl0;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lxl0;->toString()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    return-object v0
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final u()Low3;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lwl0;->d0:La53;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final w()Lgn3;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final x()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lwl0;->c0:Z
+
+    .line 2
+    .line 3
+    return p0
 .end method

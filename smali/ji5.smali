@@ -1,38 +1,28 @@
 .class public final Lji5;
-.super Lki5;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lli5;
+
+
+# instance fields
+.field public final a:J
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
-
-    .line 1
-    const-string v0, "PLAIN"
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-direct {p0, v0, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/String;)Ljava/lang/String;
+.method public constructor <init>(J)V
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    return-object p1
+    iput-wide p1, p0, Lji5;->a:J
+
+    .line 5
+    .line 6
+    return-void
 .end method

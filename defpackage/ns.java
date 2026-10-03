@@ -1,48 +1,41 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ns implements f65 {
-    public final int a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class ns {
+    public static final is a = new is(4);
+    public static final is b = new is(3);
+    public static final js c = new js();
+    public static final zo8 d = new zo8(6);
 
-    public ns(int i) {
-        this.a = i;
-    }
-
-    @Override // java.lang.annotation.Annotation
-    public final Class annotationType() {
-        return f65.class;
-    }
-
-    @Override // java.lang.annotation.Annotation
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public static void a(int i, int[] iArr, int[] iArr2, boolean z) {
+        int i2 = 0;
+        int i3 = 0;
+        for (int i4 : iArr) {
+            i3 += i4;
         }
-        if (!(obj instanceof f65)) {
-            return false;
+        float f = (i - i3) / 2.0f;
+        if (!z) {
+            int length = iArr.length;
+            int i5 = 0;
+            while (i2 < length) {
+                int i6 = iArr[i2];
+                iArr2[i5] = Math.round(f);
+                f += i6;
+                i2++;
+                i5++;
+            }
+            return;
         }
-        f65 f65Var = (f65) obj;
-        return this.a == f65Var.tag() && e65.Q.equals(f65Var.intEncoding());
-    }
-
-    @Override // java.lang.annotation.Annotation
-    public final int hashCode() {
-        return (14552422 ^ this.a) + (e65.Q.hashCode() ^ 2041407134);
-    }
-
-    @Override // defpackage.f65
-    public final e65 intEncoding() {
-        return e65.Q;
-    }
-
-    @Override // defpackage.f65
-    public final int tag() {
-        return this.a;
-    }
-
-    @Override // java.lang.annotation.Annotation
-    public final String toString() {
-        return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.a + "intEncoding=" + e65.Q + ')';
+        int length2 = iArr.length;
+        while (true) {
+            length2--;
+            if (-1 >= length2) {
+                return;
+            }
+            int i7 = iArr[length2];
+            iArr2[length2] = Math.round(f);
+            f += i7;
+        }
     }
 }

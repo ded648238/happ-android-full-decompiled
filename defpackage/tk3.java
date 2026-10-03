@@ -1,67 +1,73 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class tk3 {
-    public static final int b = 66305;
-    public final int a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class tk3 {
+    public static final /* synthetic */ uo3[] a = {new jq4(tk3.class, "hasAnnotationsInBytecode", "getHasAnnotationsInBytecode(Lkotlin/metadata/KmClass;)Z", 1), new jq4(tk3.class, "hasAnnotationsInBytecode", "getHasAnnotationsInBytecode(Lkotlin/metadata/KmConstructor;)Z", 1), new jq4(tk3.class, "hasAnnotationsInBytecode", "getHasAnnotationsInBytecode(Lkotlin/metadata/KmFunction;)Z", 1), new jq4(tk3.class, "hasAnnotationsInBytecode", "getHasAnnotationsInBytecode(Lkotlin/metadata/KmProperty;)Z", 1), new jq4(tk3.class, "hasAnnotationsInBytecode", "getHasAnnotationsInBytecode(Lkotlin/metadata/KmPropertyAccessorAttributes;)Z", 1), new jq4(tk3.class, "hasAnnotationsInBytecode", "getHasAnnotationsInBytecode(Lkotlin/metadata/KmValueParameter;)Z", 1), new jq4(tk3.class, "isMovedFromInterfaceCompanion", "isMovedFromInterfaceCompanion(Lkotlin/metadata/KmProperty;)Z", 1), new jq4(tk3.class, "hasMethodBodiesInInterface", "getHasMethodBodiesInInterface(Lkotlin/metadata/KmClass;)Z", 1), new jq4(tk3.class, "isCompiledInCompatibilityMode", "isCompiledInCompatibilityMode(Lkotlin/metadata/KmClass;)Z", 1)};
+    public static final hp b;
 
-    public static String a(int i) {
-        String str;
-        String str2;
-        StringBuilder sb = new StringBuilder("LineBreak(strategy=");
-        int i2 = i & 255;
-        String str3 = "Invalid";
-        if (i2 == 1) {
-            str = "Strategy.Simple";
-        } else if (i2 == 2) {
-            str = "Strategy.HighQuality";
-        } else if (i2 == 3) {
-            str = "Strategy.Balanced";
-        } else {
-            str = i2 == 0 ? "Strategy.Unspecified" : "Invalid";
+    static {
+        x82 x82Var = a92.c;
+        x82Var.getClass();
+        w82 w82Var = new w82(x82Var, 1);
+        p82 p82Var = p82.X;
+        if (w82Var.b != 1 || w82Var.c != 1) {
+            co6.g(w31.l("BooleanFlagDelegate can work only with boolean flags (bitWidth = 1 and value = 1), but ", w82Var, " was passed"));
+            return;
         }
-        sb.append((Object) str);
-        sb.append(", strictness=");
-        int i3 = (i >> 8) & 255;
-        if (i3 == 1) {
-            str2 = "Strictness.None";
-        } else if (i3 == 2) {
-            str2 = "Strictness.Loose";
-        } else if (i3 == 3) {
-            str2 = "Strictness.Normal";
-        } else if (i3 == 4) {
-            str2 = "Strictness.Strict";
-        } else {
-            str2 = i3 == 0 ? "Strictness.Unspecified" : "Invalid";
+        w82 w82Var2 = new w82(x82Var, 1);
+        int i = q82.X;
+        if (w82Var2.b != 1) {
+            co6.g(w31.l("BooleanFlagDelegate can work only with boolean flags (bitWidth = 1 and value = 1), but ", w82Var2, " was passed"));
+            return;
         }
-        sb.append((Object) str2);
-        sb.append(", wordBreak=");
-        int i4 = (i >> 16) & 255;
-        if (i4 == 1) {
-            str3 = "WordBreak.None";
-        } else if (i4 == 2) {
-            str3 = "WordBreak.Phrase";
-        } else if (i4 == 0) {
-            str3 = "WordBreak.Unspecified";
+        w82 w82Var3 = new w82(x82Var, 1);
+        r82 r82Var = r82.X;
+        if (w82Var3.b != 1 || w82Var3.c != 1) {
+            co6.g(w31.l("BooleanFlagDelegate can work only with boolean flags (bitWidth = 1 and value = 1), but ", w82Var3, " was passed"));
+            return;
         }
-        sb.append((Object) str3);
-        sb.append(')');
-        return sb.toString();
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj instanceof tk3) {
-            return this.a == ((tk3) obj).a;
+        w82 w82Var4 = new w82(x82Var, 1);
+        t82 t82Var = t82.X;
+        if (w82Var4.b != 1 || w82Var4.c != 1) {
+            co6.g(w31.l("BooleanFlagDelegate can work only with boolean flags (bitWidth = 1 and value = 1), but ", w82Var4, " was passed"));
+            return;
         }
-        return false;
-    }
-
-    public final int hashCode() {
-        return this.a;
-    }
-
-    public final String toString() {
-        return a(this.a);
+        w82 w82Var5 = new w82(x82Var, 1);
+        s82 s82Var = s82.X;
+        if (w82Var5.b != 1 || w82Var5.c != 1) {
+            co6.g(w31.l("BooleanFlagDelegate can work only with boolean flags (bitWidth = 1 and value = 1), but ", w82Var5, " was passed"));
+            return;
+        }
+        w82 w82Var6 = new w82(x82Var, 1);
+        v82 v82Var = v82.X;
+        if (w82Var6.b != 1 || w82Var6.c != 1) {
+            co6.g(w31.l("BooleanFlagDelegate can work only with boolean flags (bitWidth = 1 and value = 1), but ", w82Var6, " was passed"));
+            return;
+        }
+        sk3 sk3Var = sk3.X;
+        x82 x82Var2 = jl3.a;
+        x82Var2.getClass();
+        b = new hp(sk3Var, new w82(x82Var2.b, x82Var2.c, 1));
+        int i2 = ru.d0;
+        x82 x82Var3 = jl3.b;
+        x82Var3.getClass();
+        int i3 = x82Var3.b;
+        int i4 = x82Var3.c;
+        w82 w82Var7 = new w82(i3, i4, 1);
+        if (i4 != 1) {
+            co6.g(w31.l("BooleanFlagDelegate can work only with boolean flags (bitWidth = 1 and value = 1), but ", w82Var7, " was passed"));
+            return;
+        }
+        int i5 = ru.d0;
+        x82 x82Var4 = jl3.c;
+        x82Var4.getClass();
+        int i6 = x82Var4.b;
+        int i7 = x82Var4.c;
+        w82 w82Var8 = new w82(i6, i7, 1);
+        if (i7 == 1) {
+            return;
+        }
+        co6.g(w31.l("BooleanFlagDelegate can work only with boolean flags (bitWidth = 1 and value = 1), but ", w82Var8, " was passed"));
     }
 }

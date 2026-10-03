@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$applyAndAckSettings$lambda$7$lambda$6$$inlined$execute$default$1;
 .super Lokhttp3/internal/concurrent/Task;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -35,13 +35,13 @@
 
 
 # instance fields
-.field final synthetic $newPeerSettings$inlined:Lqe5;
+.field final synthetic $newPeerSettings$inlined:Lvy5;
 
 .field final synthetic this$0:Lokhttp3/internal/http2/Http2Connection;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ZLokhttp3/internal/http2/Http2Connection;Lqe5;)V
+.method public constructor <init>(Ljava/lang/String;ZLokhttp3/internal/http2/Http2Connection;Lvy5;)V
     .locals 0
 
     .line 1
@@ -49,7 +49,7 @@
 
     .line 2
     .line 3
-    iput-object p4, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$applyAndAckSettings$lambda$7$lambda$6$$inlined$execute$default$1;->$newPeerSettings$inlined:Lqe5;
+    iput-object p4, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$applyAndAckSettings$lambda$7$lambda$6$$inlined$execute$default$1;->$newPeerSettings$inlined:Lvy5;
 
     .line 4
     .line 5
@@ -64,7 +64,7 @@
 
 # virtual methods
 .method public runOnce()J
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$applyAndAckSettings$lambda$7$lambda$6$$inlined$execute$default$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
@@ -83,19 +83,19 @@
 
     .line 8
     .line 9
-    iget-object v2, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$applyAndAckSettings$lambda$7$lambda$6$$inlined$execute$default$1;->$newPeerSettings$inlined:Lqe5;
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$applyAndAckSettings$lambda$7$lambda$6$$inlined$execute$default$1;->$newPeerSettings$inlined:Lvy5;
 
     .line 10
     .line 11
-    iget-object v2, v2, Lqe5;->Q:Ljava/lang/Object;
+    iget-object p0, p0, Lvy5;->X:Ljava/lang/Object;
 
     .line 12
     .line 13
-    check-cast v2, Lokhttp3/internal/http2/Settings;
+    check-cast p0, Lokhttp3/internal/http2/Settings;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1, v2}, Lokhttp3/internal/http2/Http2Connection$Listener;->onSettings(Lokhttp3/internal/http2/Http2Connection;Lokhttp3/internal/http2/Settings;)V
+    invoke-virtual {v0, v1, p0}, Lokhttp3/internal/http2/Http2Connection$Listener;->onSettings(Lokhttp3/internal/http2/Http2Connection;Lokhttp3/internal/http2/Settings;)V
 
     .line 16
     .line 17

@@ -1,24 +1,54 @@
 .class public final Lcr;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Ljava/util/Iterator;
-.implements Ljava/util/Map$Entry;
+
+# static fields
+.field public static final d:Lcr;
 
 
 # instance fields
-.field public Q:I
+.field public final a:J
 
-.field public R:I
+.field public final b:J
 
-.field public S:Z
-
-.field public final synthetic T:Lfr;
+.field public final c:J
 
 
 # direct methods
-.method public constructor <init>(Lfr;)V
+.method static constructor <clinit>()V
+    .locals 7
+
+    .line 1
+    new-instance v0, Lcr;
+
+    .line 2
+    .line 3
+    sget-wide v1, Ljo;->c:J
+
+    .line 4
+    .line 5
+    sget-wide v3, Ljo;->d:J
+
+    .line 6
+    .line 7
+    sget-wide v5, Ljo;->m:J
+
+    .line 8
+    .line 9
+    invoke-direct/range {v0 .. v6}, Lcr;-><init>(JJJ)V
+
+    .line 10
+    .line 11
+    .line 12
+    sput-object v0, Lcr;->d:Lcr;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public constructor <init>(JJJ)V
     .locals 0
 
     .line 1
@@ -27,277 +57,129 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcr;->T:Lfr;
+    iput-wide p1, p0, Lcr;->a:J
 
     .line 5
     .line 6
-    iget p1, p1, Lla6;->S:I
+    iput-wide p3, p0, Lcr;->b:J
 
     .line 7
     .line 8
-    add-int/lit8 p1, p1, -0x1
+    iput-wide p5, p0, Lcr;->c:J
 
     .line 9
     .line 10
-    iput p1, p0, Lcr;->Q:I
-
-    .line 11
-    .line 12
-    const/4 p1, -0x1
-
-    .line 13
-    iput p1, p0, Lcr;->R:I
-
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 7
 
     .line 1
-    iget-boolean v0, p0, Lcr;->S:Z
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    const/4 v1, 0x0
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
-    if-eqz v0, :cond_2
+    return v0
 
     .line 5
-    .line 6
-    instance-of v0, p1, Ljava/util/Map$Entry;
+    :cond_0
+    instance-of v1, p1, Lcr;
 
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    if-nez v0, :cond_0
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    goto :goto_0
+    return v2
 
     .line 11
-    :cond_0
-    check-cast p1, Ljava/util/Map$Entry;
+    :cond_1
+    check-cast p1, Lcr;
 
     .line 12
     .line 13
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    iget-wide v3, p0, Lcr;->a:J
 
     .line 14
     .line 15
-    .line 16
-    move-result-object v0
+    iget-wide v5, p1, Lcr;->a:J
 
+    .line 16
     .line 17
-    iget v2, p0, Lcr;->R:I
+    invoke-static {v3, v4, v5, v6}, Lau0;->c(JJ)Z
 
     .line 18
     .line 19
-    iget-object v3, p0, Lcr;->T:Lfr;
-
     .line 20
+    move-result v1
+
     .line 21
-    invoke-virtual {v3, v2}, Lla6;->g(I)Ljava/lang/Object;
+    if-nez v1, :cond_2
 
     .line 22
     .line 23
+    return v2
+
     .line 24
-    move-result-object v2
+    :cond_2
+    iget-wide v3, p0, Lcr;->b:J
 
     .line 25
-    invoke-static {v0, v2}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 26
+    iget-wide v5, p1, Lcr;->b:J
+
     .line 27
     .line 28
-    move-result v0
+    invoke-static {v3, v4, v5, v6}, Lau0;->c(JJ)Z
 
     .line 29
-    if-eqz v0, :cond_1
-
     .line 30
     .line 31
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    move-result v1
 
     .line 32
+    if-nez v1, :cond_3
+
     .line 33
     .line 34
-    move-result-object p1
+    return v2
 
     .line 35
-    iget v0, p0, Lcr;->R:I
+    :cond_3
+    iget-wide v3, p0, Lcr;->c:J
 
     .line 36
     .line 37
-    invoke-virtual {v3, v0}, Lla6;->j(I)Ljava/lang/Object;
+    iget-wide p0, p1, Lcr;->c:J
 
     .line 38
     .line 39
+    invoke-static {v3, v4, p0, p1}, Lau0;->c(JJ)Z
+
     .line 40
-    move-result-object v0
-
     .line 41
-    invoke-static {p1, v0}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 42
-    .line 43
-    .line 44
-    move-result p1
+    move-result p0
 
+    .line 43
+    if-nez p0, :cond_4
+
+    .line 44
     .line 45
-    if-eqz p1, :cond_1
+    return v2
 
     .line 46
-    .line 47
-    const/4 p1, 0x1
-
-    .line 48
-    return p1
-
-    .line 49
-    :cond_1
-    :goto_0
-    return v1
-
-    .line 50
-    :cond_2
-    const-string p1, "This container does not support retaining Map.Entry objects"
-
-    .line 51
-    .line 52
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
-
-    .line 53
-    .line 54
-    .line 55
-    return v1
-.end method
-
-.method public final getKey()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lcr;->S:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, p0, Lcr;->T:Lfr;
-
-    .line 6
-    .line 7
-    iget v1, p0, Lcr;->R:I
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, v1}, Lla6;->g(I)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    return-object v0
-
-    .line 14
-    :cond_0
-    const-string v0, "This container does not support retaining Map.Entry objects"
-
-    .line 15
-    .line 16
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
-
-    .line 17
-    .line 18
-    .line 19
-    const/4 v0, 0x0
-
-    .line 20
-    return-object v0
-.end method
-
-.method public final getValue()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lcr;->S:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, p0, Lcr;->T:Lfr;
-
-    .line 6
-    .line 7
-    iget v1, p0, Lcr;->R:I
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, v1}, Lla6;->j(I)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    return-object v0
-
-    .line 14
-    :cond_0
-    const-string v0, "This container does not support retaining Map.Entry objects"
-
-    .line 15
-    .line 16
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
-
-    .line 17
-    .line 18
-    .line 19
-    const/4 v0, 0x0
-
-    .line 20
-    return-object v0
-.end method
-
-.method public final hasNext()Z
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lcr;->R:I
-
-    .line 2
-    .line 3
-    iget v1, p0, Lcr;->Q:I
-
-    .line 4
-    .line 5
-    if-ge v0, v1, :cond_0
-
-    .line 6
-    .line 7
-    const/4 v0, 0x1
-
-    .line 8
-    return v0
-
-    .line 9
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 10
+    :cond_4
     return v0
 .end method
 
@@ -305,320 +187,130 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p0, Lcr;->S:Z
+    sget v0, Lau0;->h:I
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    iget-wide v0, p0, Lcr;->a:J
 
     .line 4
-    if-eqz v0, :cond_2
-
     .line 5
-    .line 6
-    iget v0, p0, Lcr;->R:I
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
 
+    .line 6
     .line 7
     .line 8
-    iget-object v2, p0, Lcr;->T:Lfr;
+    move-result v0
 
     .line 9
+    const/16 v1, 0x1f
+
     .line 10
-    invoke-virtual {v2, v0}, Lla6;->g(I)Ljava/lang/Object;
-
     .line 11
-    .line 12
-    .line 13
-    move-result-object v0
+    mul-int/2addr v0, v1
 
+    .line 12
+    iget-wide v2, p0, Lcr;->b:J
+
+    .line 13
     .line 14
-    iget v3, p0, Lcr;->R:I
+    invoke-static {v0, v1, v2, v3}, Lw31;->e(IIJ)I
 
     .line 15
     .line 16
-    invoke-virtual {v2, v3}, Lla6;->j(I)Ljava/lang/Object;
-
     .line 17
-    .line 18
-    .line 19
-    move-result-object v2
+    move-result v0
 
+    .line 18
+    iget-wide v1, p0, Lcr;->c:J
+
+    .line 19
     .line 20
-    if-nez v0, :cond_0
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
 
     .line 21
     .line 22
-    const/4 v0, 0x0
-
     .line 23
-    goto :goto_0
+    move-result p0
 
     .line 24
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    add-int/2addr p0, v0
 
     .line 25
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 5
+
+    .line 1
+    iget-wide v0, p0, Lcr;->a:J
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Lau0;->i(J)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iget-wide v1, p0, Lcr;->b:J
+
+    .line 8
+    .line 9
+    invoke-static {v1, v2}, Lau0;->i(J)Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    iget-wide v2, p0, Lcr;->c:J
+
+    .line 14
+    .line 15
+    invoke-static {v2, v3}, Lau0;->i(J)Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    const-string v2, ", containerDisabled="
+
+    .line 20
+    .line 21
+    const-string v3, ", containerError="
+
+    .line 22
+    .line 23
+    const-string v4, "AppTextFieldColors(container="
+
+    .line 24
+    .line 25
+    invoke-static {v4, v0, v2, v1, v3}, Lw31;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 26
     .line 27
-    move-result v0
-
     .line 28
-    :goto_0
-    if-nez v2, :cond_1
+    move-result-object v0
 
     .line 29
-    .line 30
-    goto :goto_1
+    const-string v1, ")"
 
+    .line 30
     .line 31
-    :cond_1
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-static {v0, p0, v1}, Leh0;->r(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33
     .line 34
-    move-result v1
+    move-result-object p0
 
     .line 35
-    :goto_1
-    xor-int/2addr v0, v1
-
-    .line 36
-    return v0
-
-    .line 37
-    :cond_2
-    const-string v0, "This container does not support retaining Map.Entry objects"
-
-    .line 38
-    .line 39
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
-
-    .line 40
-    .line 41
-    .line 42
-    return v1
-.end method
-
-.method public final next()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Lcr;->hasNext()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget v0, p0, Lcr;->R:I
-
-    .line 8
-    .line 9
-    const/4 v1, 0x1
-
-    .line 10
-    add-int/2addr v0, v1
-
-    .line 11
-    iput v0, p0, Lcr;->R:I
-
-    .line 12
-    .line 13
-    iput-boolean v1, p0, Lcr;->S:Z
-
-    .line 14
-    .line 15
     return-object p0
-
-    .line 16
-    :cond_0
-    invoke-static {}, Lfn;->p()V
-
-    .line 17
-    .line 18
-    .line 19
-    const/4 v0, 0x0
-
-    .line 20
-    return-object v0
-.end method
-
-.method public final remove()V
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lcr;->S:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, p0, Lcr;->T:Lfr;
-
-    .line 6
-    .line 7
-    iget v1, p0, Lcr;->R:I
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, v1}, Lla6;->h(I)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    iget v0, p0, Lcr;->R:I
-
-    .line 13
-    .line 14
-    add-int/lit8 v0, v0, -0x1
-
-    .line 15
-    .line 16
-    iput v0, p0, Lcr;->R:I
-
-    .line 17
-    .line 18
-    iget v0, p0, Lcr;->Q:I
-
-    .line 19
-    .line 20
-    add-int/lit8 v0, v0, -0x1
-
-    .line 21
-    .line 22
-    iput v0, p0, Lcr;->Q:I
-
-    .line 23
-    .line 24
-    const/4 v0, 0x0
-
-    .line 25
-    iput-boolean v0, p0, Lcr;->S:Z
-
-    .line 26
-    .line 27
-    return-void
-
-    .line 28
-    :cond_0
-    invoke-static {}, Lio/sentry/x1;->h()V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-.end method
-
-.method public final setValue(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lcr;->S:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, p0, Lcr;->T:Lfr;
-
-    .line 6
-    .line 7
-    iget v1, p0, Lcr;->R:I
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, v1, p1}, Lla6;->i(ILjava/lang/Object;)Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p1
-
-    .line 13
-    return-object p1
-
-    .line 14
-    :cond_0
-    const-string p1, "This container does not support retaining Map.Entry objects"
-
-    .line 15
-    .line 16
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
-
-    .line 17
-    .line 18
-    .line 19
-    const/4 p1, 0x0
-
-    .line 20
-    return-object p1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0}, Lcr;->getKey()Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v1
-
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, "="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {p0}, Lcr;->getValue()Ljava/lang/Object;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v1
-
-    .line 22
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    return-object v0
 .end method

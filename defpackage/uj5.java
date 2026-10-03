@@ -1,33 +1,102 @@
 package defpackage;
 
-import android.content.res.Resources;
-import j$.util.Objects;
+import io.sentry.z1;
+import java.util.Iterator;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class uj5 {
-    public final Resources a;
-    public final Resources.Theme b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class uj5 implements Iterator {
+    public final /* synthetic */ int X;
+    public final Iterator Y;
+    public Object Z;
+    public final /* synthetic */ ak5 c0;
 
-    public uj5(Resources resources, Resources.Theme theme) {
-        this.a = resources;
-        this.b = theme;
+    public uj5(ak5 ak5Var, int i) {
+        this.X = i;
+        switch (i) {
+            case 1:
+                this.c0 = ak5Var;
+                this.Y = ak5Var.X.values().iterator();
+                break;
+            case 2:
+                this.c0 = ak5Var;
+                this.Y = ak5Var.X.keySet().iterator();
+                break;
+            default:
+                this.c0 = ak5Var;
+                this.Y = ak5Var.X.values().iterator();
+                break;
+        }
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        switch (this.X) {
         }
-        if (obj != null && uj5.class == obj.getClass()) {
-            uj5 uj5Var = (uj5) obj;
-            if (this.a.equals(uj5Var.a) && Objects.equals(this.b, uj5Var.b)) {
-                return true;
-            }
-        }
-        return false;
+        return this.Y.hasNext();
     }
 
-    public final int hashCode() {
-        return Objects.hash(new Object[]{this.a, this.b});
+    @Override // java.util.Iterator
+    public final Object next() {
+        int i = this.X;
+        Iterator it = this.Y;
+        switch (i) {
+            case 0:
+                this.Z = (wj5) it.next();
+                return new zj5(this.c0, (wj5) this.Z);
+            case 1:
+                wj5 wj5Var = (wj5) it.next();
+                this.Z = wj5Var;
+                return wj5Var.a();
+            default:
+                Object next = it.next();
+                this.Z = next;
+                return next;
+        }
+    }
+
+    @Override // java.util.Iterator
+    public final void remove() {
+        boolean z;
+        int i = this.X;
+        ak5 ak5Var = this.c0;
+        switch (i) {
+            case 0:
+                wj5 wj5Var = (wj5) this.Z;
+                z = wj5Var != null;
+                int i2 = ak5.n0;
+                if (!z) {
+                    z1.g();
+                    break;
+                } else {
+                    ak5Var.remove(wj5Var.X);
+                    this.Z = null;
+                    break;
+                }
+            case 1:
+                wj5 wj5Var2 = (wj5) this.Z;
+                z = wj5Var2 != null;
+                int i3 = ak5.n0;
+                if (!z) {
+                    z1.g();
+                    break;
+                } else {
+                    ak5Var.remove(wj5Var2.X);
+                    this.Z = null;
+                    break;
+                }
+            default:
+                Object obj = this.Z;
+                z = obj != null;
+                int i4 = ak5.n0;
+                if (!z) {
+                    z1.g();
+                    break;
+                } else {
+                    ak5Var.remove(obj);
+                    this.Z = null;
+                    break;
+                }
+        }
     }
 }

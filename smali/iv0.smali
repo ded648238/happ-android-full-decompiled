@@ -1,66 +1,76 @@
-.class public final Liv0;
-.super Lzd7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Liv0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/io/Serializable;
-
-
-# static fields
-.field public static final c0:Liv0;
-
-.field public static final d0:Ljava/lang/Object;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public transient b0:Ljava/util/HashMap;
+.field public final synthetic X:Lc36;
+
+.field public final synthetic Y:Lk36;
+
+.field public final synthetic Z:J
+
+.field public final synthetic c0:J
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public synthetic constructor <init>(Lc36;Lk36;JJ)V
+    .locals 0
 
     .line 1
-    new-instance v0, Liv0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v1, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
+    .line 4
+    iput-object p1, p0, Liv0;->X:Lc36;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Liv0;->Y:Lk36;
+
+    .line 7
+    .line 8
+    iput-wide p3, p0, Liv0;->Z:J
+
+    .line 9
+    .line 10
+    iput-wide p5, p0, Liv0;->c0:J
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 6
+
+    .line 1
+    iget-wide v2, p0, Liv0;->Z:J
+
+    .line 2
+    .line 3
+    iget-wide v4, p0, Liv0;->c0:J
 
     .line 4
     .line 5
-    sget-object v1, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
+    iget-object v0, p0, Liv0;->X:Lc36;
 
     .line 6
     .line 7
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iget-object v1, p0, Liv0;->Y:Lk36;
 
     .line 8
     .line 9
+    invoke-interface/range {v0 .. v5}, Lc36;->D(Lk36;JJ)V
+
     .line 10
-    const/4 v1, 0x0
-
     .line 11
-    iput-object v1, v0, Liv0;->b0:Ljava/util/HashMap;
-
     .line 12
-    .line 13
-    sput-object v0, Liv0;->c0:Liv0;
-
-    .line 14
-    .line 15
-    new-instance v0, Ljava/lang/Object;
-
-    .line 16
-    .line 17
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 18
-    .line 19
-    .line 20
-    sput-object v0, Liv0;->d0:Ljava/lang/Object;
-
-    .line 21
-    .line 22
     return-void
 .end method

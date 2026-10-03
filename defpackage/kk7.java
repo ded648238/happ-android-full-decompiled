@@ -1,29 +1,30 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class kk7 implements f72 {
-    public static final kk7 Q;
-    public static final /* synthetic */ kk7[] R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class kk7 implements Runnable {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ pk7 Y;
 
-    static {
-        kk7 kk7Var = new kk7("INSTANCE", 0);
-        Q = kk7Var;
-        R = new kk7[]{kk7Var};
+    public /* synthetic */ kk7(pk7 pk7Var, int i) {
+        this.X = i;
+        this.Y = pk7Var;
     }
 
-    public static kk7 valueOf(String str) {
-        return (kk7) Enum.valueOf(kk7.class, str);
-    }
-
-    public static kk7[] values() {
-        return (kk7[]) R.clone();
-    }
-
-    @Override // defpackage.f72
-    public final Object a(Object obj) {
-        return obj;
+    @Override // java.lang.Runnable
+    public final void run() {
+        int i = this.X;
+        pk7 pk7Var = this.Y;
+        switch (i) {
+            case 0:
+                j68.k0().execute(new kk7(pk7Var, 1));
+                break;
+            default:
+                if (!pk7Var.n) {
+                    pk7Var.d();
+                    break;
+                }
+                break;
+        }
     }
 }

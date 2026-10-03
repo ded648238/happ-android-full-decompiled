@@ -1,6 +1,6 @@
 .class public final Lj$/time/format/f;
 .super Lj$/time/format/h;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -36,52 +36,52 @@
     .line 9
     .line 10
     .line 11
-    const-string p1, "field"
+    const-string p0, "field"
 
     .line 12
     .line 13
-    invoke-static {v1, p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v1, p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 14
     .line 15
     .line 16
-    invoke-interface {v1}, Lj$/time/temporal/TemporalField;->l()Lj$/time/temporal/s;
+    invoke-interface {v1}, Lj$/time/temporal/TemporalField;->F()Lj$/time/temporal/s;
 
     .line 17
     .line 18
     .line 19
-    move-result-object p1
+    move-result-object p0
 
     .line 20
-    iget-wide v2, p1, Lj$/time/temporal/s;->a:J
+    iget-wide v2, p0, Lj$/time/temporal/s;->a:J
 
     .line 21
     .line 22
-    iget-wide v4, p1, Lj$/time/temporal/s;->b:J
+    iget-wide v4, p0, Lj$/time/temporal/s;->b:J
 
     .line 23
     .line 24
-    cmp-long v0, v2, v4
+    cmp-long p1, v2, v4
 
     .line 25
     .line 26
-    if-nez v0, :cond_0
+    if-nez p1, :cond_0
 
     .line 27
     .line 28
-    iget-wide v2, p1, Lj$/time/temporal/s;->c:J
+    iget-wide v2, p0, Lj$/time/temporal/s;->c:J
 
     .line 29
     .line 30
-    iget-wide v4, p1, Lj$/time/temporal/s;->d:J
+    iget-wide p0, p0, Lj$/time/temporal/s;->d:J
 
     .line 31
     .line 32
-    cmp-long p1, v2, v4
+    cmp-long p0, v2, p0
 
     .line 33
     .line 34
-    if-nez p1, :cond_0
+    if-nez p0, :cond_0
 
     .line 35
     .line 36
@@ -89,33 +89,34 @@
 
     .line 37
     :cond_0
-    const-string p1, "Field must have a fixed set of values: "
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
     .line 38
     .line 39
-    invoke-static {p1, v1}, Lj$/time/b;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
+    const-string p1, "Field must have a fixed set of values: "
 
     .line 40
     .line 41
+    invoke-static {p1, v1}, Lj$/time/c;->a(Ljava/lang/String;Lj$/time/temporal/TemporalField;)Ljava/lang/String;
+
     .line 42
+    .line 43
+    .line 44
     move-result-object p1
 
-    .line 43
-    invoke-static {p1}, Lj$/time/f;->c(Ljava/lang/String;)V
-
-    .line 44
     .line 45
-    .line 46
-    const/4 p1, 0x0
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 46
     .line 47
-    throw p1
+    .line 48
+    throw p0
 .end method
 
 .method public constructor <init>(Lj$/time/temporal/TemporalField;IIZI)V
     .locals 6
 
-    .line 48
+    .line 49
     sget-object v4, Lj$/time/format/SignStyle;->NOT_NEGATIVE:Lj$/time/format/SignStyle;
 
     move-object v0, p0
@@ -130,8 +131,8 @@
 
     invoke-direct/range {v0 .. v5}, Lj$/time/format/h;-><init>(Lj$/time/temporal/TemporalField;IILj$/time/format/SignStyle;I)V
 
-    .line 49
-    iput-boolean p4, p0, Lj$/time/format/f;->g:Z
+    .line 50
+    iput-boolean p4, v0, Lj$/time/format/f;->g:Z
 
     return-void
 .end method
@@ -162,25 +163,25 @@
 
     .line 10
     .line 11
-    iget-boolean p1, p0, Lj$/time/format/f;->g:Z
+    iget-boolean p0, p0, Lj$/time/format/f;->g:Z
 
     .line 12
     .line 13
-    if-nez p1, :cond_0
+    if-nez p0, :cond_0
 
     .line 14
     .line 15
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 16
-    return p1
+    return p0
 
     .line 17
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return p1
+    return p0
 .end method
 
 .method public final b()Lj$/time/format/h;
@@ -273,7 +274,7 @@
     return-object v0
 .end method
 
-.method public final g(Lj$/time/format/q;Ljava/lang/StringBuilder;)Z
+.method public final t(Lj$/time/format/q;Ljava/lang/StringBuilder;)Z
     .locals 8
 
     .line 1
@@ -316,7 +317,7 @@
     move-result-wide v3
 
     .line 19
-    invoke-interface {v0}, Lj$/time/temporal/TemporalField;->l()Lj$/time/temporal/s;
+    invoke-interface {v0}, Lj$/time/temporal/TemporalField;->F()Lj$/time/temporal/s;
 
     .line 20
     .line 21
@@ -519,11 +520,11 @@
     .line 117
     .line 118
     .line 119
-    const/16 v0, 0x30
+    const/16 p0, 0x30
 
     .line 120
     .line 121
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 122
     .line 123
@@ -556,43 +557,43 @@
     move-result v0
 
     .line 136
-    iget v2, p0, Lj$/time/format/h;->c:I
+    iget p0, p0, Lj$/time/format/h;->c:I
 
     .line 137
     .line 138
-    invoke-static {v0, v2}, Ljava/lang/Math;->min(II)I
+    invoke-static {v0, p0}, Ljava/lang/Math;->min(II)I
 
     .line 139
     .line 140
     .line 141
-    move-result v0
+    move-result p0
 
     .line 142
-    invoke-virtual {v1, v0, v3}, Ljava/math/BigDecimal;->setScale(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
+    invoke-virtual {v1, p0, v3}, Ljava/math/BigDecimal;->setScale(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
 
     .line 143
     .line 144
     .line 145
-    move-result-object v0
+    move-result-object p0
 
     .line 146
-    invoke-virtual {v0}, Ljava/math/BigDecimal;->toPlainString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/math/BigDecimal;->toPlainString()Ljava/lang/String;
 
     .line 147
     .line 148
     .line 149
-    move-result-object v0
+    move-result-object p0
 
     .line 150
-    const/4 v1, 0x2
+    const/4 v0, 0x2
 
     .line 151
-    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     .line 152
     .line 153
     .line 154
-    move-result-object v0
+    move-result-object p0
 
     .line 155
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -610,418 +611,12 @@
     .line 162
     .line 163
     :cond_6
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 164
     .line 165
     .line 166
     return v4
-.end method
-
-.method public final h(Lj$/time/format/o;Ljava/lang/CharSequence;I)I
-    .locals 12
-
-    .line 1
-    iget-boolean v0, p1, Lj$/time/format/o;->c:Z
-
-    .line 2
-    .line 3
-    iget-object v1, p1, Lj$/time/format/o;->a:Lj$/time/format/DateTimeFormatter;
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    if-nez v0, :cond_1
-
-    .line 7
-    .line 8
-    invoke-virtual {p0, p1}, Lj$/time/format/f;->a(Lj$/time/format/o;)Z
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v0
-
-    .line 12
-    if-eqz v0, :cond_0
-
-    .line 13
-    .line 14
-    goto :goto_0
-
-    .line 15
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 16
-    goto :goto_1
-
-    .line 17
-    :cond_1
-    :goto_0
-    iget v0, p0, Lj$/time/format/h;->b:I
-
-    .line 18
-    .line 19
-    :goto_1
-    iget-boolean v3, p1, Lj$/time/format/o;->c:Z
-
-    .line 20
-    .line 21
-    const/16 v4, 0x9
-
-    .line 22
-    .line 23
-    if-nez v3, :cond_3
-
-    .line 24
-    .line 25
-    invoke-virtual {p0, p1}, Lj$/time/format/f;->a(Lj$/time/format/o;)Z
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v3
-
-    .line 29
-    if-eqz v3, :cond_2
-
-    .line 30
-    .line 31
-    goto :goto_2
-
-    .line 32
-    :cond_2
-    const/16 v3, 0x9
-
-    .line 33
-    .line 34
-    goto :goto_3
-
-    .line 35
-    :cond_3
-    :goto_2
-    iget v3, p0, Lj$/time/format/h;->c:I
-
-    .line 36
-    .line 37
-    :goto_3
-    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v5
-
-    .line 41
-    if-ne p3, v5, :cond_4
-
-    .line 42
-    .line 43
-    if-lez v0, :cond_5
-
-    .line 44
-    .line 45
-    not-int p1, p3
-
-    .line 46
-    return p1
-
-    .line 47
-    :cond_4
-    iget-boolean v6, p0, Lj$/time/format/f;->g:Z
-
-    .line 48
-    .line 49
-    if-eqz v6, :cond_7
-
-    .line 50
-    .line 51
-    invoke-interface {p2, p3}, Ljava/lang/CharSequence;->charAt(I)C
-
-    .line 52
-    .line 53
-    .line 54
-    move-result v6
-
-    .line 55
-    iget-object v7, v1, Lj$/time/format/DateTimeFormatter;->c:Lj$/time/format/t;
-
-    .line 56
-    .line 57
-    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 58
-    .line 59
-    .line 60
-    const/16 v7, 0x2e
-
-    .line 61
-    .line 62
-    if-eq v6, v7, :cond_6
-
-    .line 63
-    .line 64
-    if-lez v0, :cond_5
-
-    .line 65
-    .line 66
-    not-int p1, p3
-
-    .line 67
-    return p1
-
-    .line 68
-    :cond_5
-    return p3
-
-    .line 69
-    :cond_6
-    add-int/lit8 p3, p3, 0x1
-
-    .line 70
-    .line 71
-    :cond_7
-    move v10, p3
-
-    .line 72
-    add-int/2addr v0, v10
-
-    .line 73
-    if-le v0, v5, :cond_8
-
-    .line 74
-    .line 75
-    not-int p1, v10
-
-    .line 76
-    return p1
-
-    .line 77
-    :cond_8
-    add-int/2addr v3, v10
-
-    .line 78
-    invoke-static {v3, v5}, Ljava/lang/Math;->min(II)I
-
-    .line 79
-    .line 80
-    .line 81
-    move-result p3
-
-    .line 82
-    move v11, v10
-
-    .line 83
-    const/4 v3, 0x0
-
-    .line 84
-    :goto_4
-    if-ge v11, p3, :cond_b
-
-    .line 85
-    .line 86
-    add-int/lit8 v5, v11, 0x1
-
-    .line 87
-    .line 88
-    invoke-interface {p2, v11}, Ljava/lang/CharSequence;->charAt(I)C
-
-    .line 89
-    .line 90
-    .line 91
-    move-result v6
-
-    .line 92
-    iget-object v7, v1, Lj$/time/format/DateTimeFormatter;->c:Lj$/time/format/t;
-
-    .line 93
-    .line 94
-    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 95
-    .line 96
-    .line 97
-    add-int/lit8 v6, v6, -0x30
-
-    .line 98
-    .line 99
-    if-ltz v6, :cond_9
-
-    .line 100
-    .line 101
-    if-gt v6, v4, :cond_9
-
-    .line 102
-    .line 103
-    goto :goto_5
-
-    .line 104
-    :cond_9
-    const/4 v6, -0x1
-
-    .line 105
-    :goto_5
-    if-gez v6, :cond_a
-
-    .line 106
-    .line 107
-    if-ge v5, v0, :cond_b
-
-    .line 108
-    .line 109
-    not-int p1, v10
-
-    .line 110
-    return p1
-
-    .line 111
-    :cond_a
-    mul-int/lit8 v3, v3, 0xa
-
-    .line 112
-    .line 113
-    add-int/2addr v3, v6
-
-    .line 114
-    move v11, v5
-
-    .line 115
-    goto :goto_4
-
-    .line 116
-    :cond_b
-    new-instance p2, Ljava/math/BigDecimal;
-
-    .line 117
-    .line 118
-    invoke-direct {p2, v3}, Ljava/math/BigDecimal;-><init>(I)V
-
-    .line 119
-    .line 120
-    .line 121
-    sub-int p3, v11, v10
-
-    .line 122
-    .line 123
-    invoke-virtual {p2, p3}, Ljava/math/BigDecimal;->movePointLeft(I)Ljava/math/BigDecimal;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object p2
-
-    .line 127
-    iget-object p3, p0, Lj$/time/format/h;->a:Lj$/time/temporal/TemporalField;
-
-    .line 128
-    .line 129
-    invoke-interface {p3}, Lj$/time/temporal/TemporalField;->l()Lj$/time/temporal/s;
-
-    .line 130
-    .line 131
-    .line 132
-    move-result-object p3
-
-    .line 133
-    iget-wide v0, p3, Lj$/time/temporal/s;->a:J
-
-    .line 134
-    .line 135
-    invoke-static {v0, v1}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
-
-    .line 136
-    .line 137
-    .line 138
-    move-result-object v0
-
-    .line 139
-    iget-wide v3, p3, Lj$/time/temporal/s;->d:J
-
-    .line 140
-    .line 141
-    invoke-static {v3, v4}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
-
-    .line 142
-    .line 143
-    .line 144
-    move-result-object p3
-
-    .line 145
-    invoke-virtual {p3, v0}, Ljava/math/BigDecimal;->subtract(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
-
-    .line 146
-    .line 147
-    .line 148
-    move-result-object p3
-
-    .line 149
-    sget-object v1, Ljava/math/BigDecimal;->ONE:Ljava/math/BigDecimal;
-
-    .line 150
-    .line 151
-    invoke-virtual {p3, v1}, Ljava/math/BigDecimal;->add(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
-
-    .line 152
-    .line 153
-    .line 154
-    move-result-object p3
-
-    .line 155
-    invoke-virtual {p2, p3}, Ljava/math/BigDecimal;->multiply(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
-
-    .line 156
-    .line 157
-    .line 158
-    move-result-object p2
-
-    .line 159
-    sget-object p3, Ljava/math/RoundingMode;->FLOOR:Ljava/math/RoundingMode;
-
-    .line 160
-    .line 161
-    invoke-virtual {p2, v2, p3}, Ljava/math/BigDecimal;->setScale(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
-
-    .line 162
-    .line 163
-    .line 164
-    move-result-object p2
-
-    .line 165
-    invoke-virtual {p2, v0}, Ljava/math/BigDecimal;->add(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
-
-    .line 166
-    .line 167
-    .line 168
-    move-result-object p2
-
-    .line 169
-    invoke-virtual {p2}, Ljava/math/BigDecimal;->longValueExact()J
-
-    .line 170
-    .line 171
-    .line 172
-    move-result-wide v8
-
-    .line 173
-    iget-object v7, p0, Lj$/time/format/h;->a:Lj$/time/temporal/TemporalField;
-
-    .line 174
-    .line 175
-    move-object v6, p1
-
-    .line 176
-    invoke-virtual/range {v6 .. v11}, Lj$/time/format/o;->f(Lj$/time/temporal/TemporalField;JII)I
-
-    .line 177
-    .line 178
-    .line 179
-    move-result p1
-
-    .line 180
-    return p1
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -1094,11 +689,11 @@
     .line 33
     .line 34
     .line 35
-    iget v2, p0, Lj$/time/format/h;->c:I
+    iget p0, p0, Lj$/time/format/h;->c:I
 
     .line 36
     .line 37
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 38
     .line 39
@@ -1108,11 +703,11 @@
     .line 41
     .line 42
     .line 43
-    const-string v0, ")"
+    const-string p0, ")"
 
     .line 44
     .line 45
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 46
     .line 47
@@ -1122,8 +717,413 @@
     .line 49
     .line 50
     .line 51
-    move-result-object v0
+    move-result-object p0
 
     .line 52
-    return-object v0
+    return-object p0
+.end method
+
+.method public final x(Lj$/time/format/o;Ljava/lang/CharSequence;I)I
+    .locals 12
+
+    .line 1
+    iget-boolean v0, p1, Lj$/time/format/o;->c:Z
+
+    .line 2
+    .line 3
+    iget-object v1, p1, Lj$/time/format/o;->a:Lj$/time/format/DateTimeFormatter;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    invoke-virtual {p0, p1}, Lj$/time/format/f;->a(Lj$/time/format/o;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    if-eqz v0, :cond_0
+
+    .line 13
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    move v0, v2
+
+    .line 16
+    goto :goto_1
+
+    .line 17
+    :cond_1
+    :goto_0
+    iget v0, p0, Lj$/time/format/h;->b:I
+
+    .line 18
+    .line 19
+    :goto_1
+    iget-boolean v3, p1, Lj$/time/format/o;->c:Z
+
+    .line 20
+    .line 21
+    const/16 v4, 0x9
+
+    .line 22
+    .line 23
+    if-nez v3, :cond_3
+
+    .line 24
+    .line 25
+    invoke-virtual {p0, p1}, Lj$/time/format/f;->a(Lj$/time/format/o;)Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v3
+
+    .line 29
+    if-eqz v3, :cond_2
+
+    .line 30
+    .line 31
+    goto :goto_2
+
+    .line 32
+    :cond_2
+    move v3, v4
+
+    .line 33
+    goto :goto_3
+
+    .line 34
+    :cond_3
+    :goto_2
+    iget v3, p0, Lj$/time/format/h;->c:I
+
+    .line 35
+    .line 36
+    :goto_3
+    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v5
+
+    .line 40
+    if-ne p3, v5, :cond_4
+
+    .line 41
+    .line 42
+    if-lez v0, :cond_5
+
+    .line 43
+    .line 44
+    not-int p0, p3
+
+    .line 45
+    return p0
+
+    .line 46
+    :cond_4
+    iget-boolean v6, p0, Lj$/time/format/f;->g:Z
+
+    .line 47
+    .line 48
+    if-eqz v6, :cond_7
+
+    .line 49
+    .line 50
+    invoke-interface {p2, p3}, Ljava/lang/CharSequence;->charAt(I)C
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v6
+
+    .line 54
+    iget-object v7, v1, Lj$/time/format/DateTimeFormatter;->c:Lj$/time/format/t;
+
+    .line 55
+    .line 56
+    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 57
+    .line 58
+    .line 59
+    const/16 v7, 0x2e
+
+    .line 60
+    .line 61
+    if-eq v6, v7, :cond_6
+
+    .line 62
+    .line 63
+    if-lez v0, :cond_5
+
+    .line 64
+    .line 65
+    not-int p0, p3
+
+    .line 66
+    return p0
+
+    .line 67
+    :cond_5
+    return p3
+
+    .line 68
+    :cond_6
+    add-int/lit8 p3, p3, 0x1
+
+    .line 69
+    .line 70
+    :cond_7
+    move v10, p3
+
+    .line 71
+    add-int/2addr v0, v10
+
+    .line 72
+    if-le v0, v5, :cond_8
+
+    .line 73
+    .line 74
+    not-int p0, v10
+
+    .line 75
+    return p0
+
+    .line 76
+    :cond_8
+    add-int/2addr v3, v10
+
+    .line 77
+    invoke-static {v3, v5}, Ljava/lang/Math;->min(II)I
+
+    .line 78
+    .line 79
+    .line 80
+    move-result p3
+
+    .line 81
+    move v3, v2
+
+    .line 82
+    move v11, v10
+
+    .line 83
+    :goto_4
+    if-ge v11, p3, :cond_b
+
+    .line 84
+    .line 85
+    add-int/lit8 v5, v11, 0x1
+
+    .line 86
+    .line 87
+    invoke-interface {p2, v11}, Ljava/lang/CharSequence;->charAt(I)C
+
+    .line 88
+    .line 89
+    .line 90
+    move-result v6
+
+    .line 91
+    iget-object v7, v1, Lj$/time/format/DateTimeFormatter;->c:Lj$/time/format/t;
+
+    .line 92
+    .line 93
+    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 94
+    .line 95
+    .line 96
+    add-int/lit8 v6, v6, -0x30
+
+    .line 97
+    .line 98
+    if-ltz v6, :cond_9
+
+    .line 99
+    .line 100
+    if-gt v6, v4, :cond_9
+
+    .line 101
+    .line 102
+    goto :goto_5
+
+    .line 103
+    :cond_9
+    const/4 v6, -0x1
+
+    .line 104
+    :goto_5
+    if-gez v6, :cond_a
+
+    .line 105
+    .line 106
+    if-ge v5, v0, :cond_b
+
+    .line 107
+    .line 108
+    not-int p0, v10
+
+    .line 109
+    return p0
+
+    .line 110
+    :cond_a
+    mul-int/lit8 v3, v3, 0xa
+
+    .line 111
+    .line 112
+    add-int/2addr v3, v6
+
+    .line 113
+    move v11, v5
+
+    .line 114
+    goto :goto_4
+
+    .line 115
+    :cond_b
+    new-instance p2, Ljava/math/BigDecimal;
+
+    .line 116
+    .line 117
+    invoke-direct {p2, v3}, Ljava/math/BigDecimal;-><init>(I)V
+
+    .line 118
+    .line 119
+    .line 120
+    sub-int p3, v11, v10
+
+    .line 121
+    .line 122
+    invoke-virtual {p2, p3}, Ljava/math/BigDecimal;->movePointLeft(I)Ljava/math/BigDecimal;
+
+    .line 123
+    .line 124
+    .line 125
+    move-result-object p2
+
+    .line 126
+    iget-object p3, p0, Lj$/time/format/h;->a:Lj$/time/temporal/TemporalField;
+
+    .line 127
+    .line 128
+    invoke-interface {p3}, Lj$/time/temporal/TemporalField;->F()Lj$/time/temporal/s;
+
+    .line 129
+    .line 130
+    .line 131
+    move-result-object p3
+
+    .line 132
+    iget-wide v0, p3, Lj$/time/temporal/s;->a:J
+
+    .line 133
+    .line 134
+    invoke-static {v0, v1}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
+
+    .line 135
+    .line 136
+    .line 137
+    move-result-object v0
+
+    .line 138
+    iget-wide v3, p3, Lj$/time/temporal/s;->d:J
+
+    .line 139
+    .line 140
+    invoke-static {v3, v4}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
+
+    .line 141
+    .line 142
+    .line 143
+    move-result-object p3
+
+    .line 144
+    invoke-virtual {p3, v0}, Ljava/math/BigDecimal;->subtract(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+
+    .line 145
+    .line 146
+    .line 147
+    move-result-object p3
+
+    .line 148
+    sget-object v1, Ljava/math/BigDecimal;->ONE:Ljava/math/BigDecimal;
+
+    .line 149
+    .line 150
+    invoke-virtual {p3, v1}, Ljava/math/BigDecimal;->add(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+
+    .line 151
+    .line 152
+    .line 153
+    move-result-object p3
+
+    .line 154
+    invoke-virtual {p2, p3}, Ljava/math/BigDecimal;->multiply(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+
+    .line 155
+    .line 156
+    .line 157
+    move-result-object p2
+
+    .line 158
+    sget-object p3, Ljava/math/RoundingMode;->FLOOR:Ljava/math/RoundingMode;
+
+    .line 159
+    .line 160
+    invoke-virtual {p2, v2, p3}, Ljava/math/BigDecimal;->setScale(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object p2
+
+    .line 164
+    invoke-virtual {p2, v0}, Ljava/math/BigDecimal;->add(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object p2
+
+    .line 168
+    invoke-virtual {p2}, Ljava/math/BigDecimal;->longValueExact()J
+
+    .line 169
+    .line 170
+    .line 171
+    move-result-wide v8
+
+    .line 172
+    iget-object v7, p0, Lj$/time/format/h;->a:Lj$/time/temporal/TemporalField;
+
+    .line 173
+    .line 174
+    move-object v6, p1
+
+    .line 175
+    invoke-virtual/range {v6 .. v11}, Lj$/time/format/o;->f(Lj$/time/temporal/TemporalField;JII)I
+
+    .line 176
+    .line 177
+    .line 178
+    move-result p0
+
+    .line 179
+    return p0
 .end method

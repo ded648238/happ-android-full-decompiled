@@ -1,261 +1,277 @@
 .class public final Lqv;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lmx4;
 
 
-# instance fields
-.field public final a:Landroid/opengl/EGLSurface;
+# static fields
+.field public static final a:Lqv;
 
-.field public final b:I
+.field public static final b:Lr42;
 
-.field public final c:I
+.field public static final c:Lr42;
+
+.field public static final d:Lr42;
+
+.field public static final e:Lr42;
+
+.field public static final f:Lr42;
+
+.field public static final g:Lr42;
+
+.field public static final h:Lr42;
 
 
 # direct methods
-.method public constructor <init>(Landroid/opengl/EGLSurface;II)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lqv;
 
     .line 2
     .line 3
-    .line 4
-    if-eqz p1, :cond_0
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p1, p0, Lqv;->a:Landroid/opengl/EGLSurface;
+    sput-object v0, Lqv;->a:Lqv;
 
     .line 7
     .line 8
-    iput p2, p0, Lqv;->b:I
+    const-string v0, "eventTimeMs"
 
     .line 9
     .line 10
-    iput p3, p0, Lqv;->c:I
+    invoke-static {v0}, Lr42;->a(Ljava/lang/String;)Lr42;
 
     .line 11
     .line 12
-    return-void
-
     .line 13
-    :cond_0
-    const-string p1, "Null eglSurface"
+    move-result-object v0
 
     .line 14
-    .line 15
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
+    sput-object v0, Lqv;->b:Lr42;
 
+    .line 15
     .line 16
+    const-string v0, "eventCode"
+
     .line 17
     .line 18
-    const/4 p1, 0x0
+    invoke-static {v0}, Lr42;->a(Ljava/lang/String;)Lr42;
 
     .line 19
-    throw p1
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    sput-object v0, Lqv;->c:Lr42;
+
+    .line 23
+    .line 24
+    const-string v0, "eventUptimeMs"
+
+    .line 25
+    .line 26
+    invoke-static {v0}, Lr42;->a(Ljava/lang/String;)Lr42;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    sput-object v0, Lqv;->d:Lr42;
+
+    .line 31
+    .line 32
+    const-string v0, "sourceExtension"
+
+    .line 33
+    .line 34
+    invoke-static {v0}, Lr42;->a(Ljava/lang/String;)Lr42;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    sput-object v0, Lqv;->e:Lr42;
+
+    .line 39
+    .line 40
+    const-string v0, "sourceExtensionJsonProto3"
+
+    .line 41
+    .line 42
+    invoke-static {v0}, Lr42;->a(Ljava/lang/String;)Lr42;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    sput-object v0, Lqv;->f:Lr42;
+
+    .line 47
+    .line 48
+    const-string v0, "timezoneOffsetSeconds"
+
+    .line 49
+    .line 50
+    invoke-static {v0}, Lr42;->a(Ljava/lang/String;)Lr42;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v0
+
+    .line 54
+    sput-object v0, Lqv;->g:Lr42;
+
+    .line 55
+    .line 56
+    const-string v0, "networkConnectionInfo"
+
+    .line 57
+    .line 58
+    invoke-static {v0}, Lr42;->a(Ljava/lang/String;)Lr42;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v0
+
+    .line 62
+    sput-object v0, Lqv;->h:Lr42;
+
+    .line 63
+    .line 64
+    return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    check-cast p1, Lw64;
 
     .line 2
-    if-ne p1, p0, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    check-cast p2, Lnx4;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, Lqv;
+    move-object p0, p1
 
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    check-cast p0, Lnx;
 
+    .line 7
     .line 8
-    if-eqz v1, :cond_1
+    iget-wide v0, p0, Lnx;->a:J
 
     .line 9
     .line 10
-    check-cast p1, Lqv;
+    sget-object p0, Lqv;->b:Lr42;
 
     .line 11
     .line 12
-    iget-object v1, p0, Lqv;->a:Landroid/opengl/EGLSurface;
+    invoke-interface {p2, p0, v0, v1}, Lnx4;->e(Lr42;J)Lnx4;
 
     .line 13
     .line 14
-    iget-object v3, p1, Lqv;->a:Landroid/opengl/EGLSurface;
-
     .line 15
-    .line 16
-    invoke-virtual {v1, v3}, Landroid/opengl/EGLSurface;->equals(Ljava/lang/Object;)Z
+    check-cast p1, Lnx;
 
+    .line 16
     .line 17
+    iget-object p0, p1, Lnx;->b:Ljava/lang/Integer;
+
     .line 18
     .line 19
-    move-result v1
+    sget-object v0, Lqv;->c:Lr42;
 
     .line 20
-    if-eqz v1, :cond_1
-
     .line 21
-    .line 22
-    iget v1, p0, Lqv;->b:I
+    invoke-interface {p2, v0, p0}, Lnx4;->a(Lr42;Ljava/lang/Object;)Lnx4;
 
+    .line 22
     .line 23
     .line 24
-    iget v3, p1, Lqv;->b:I
+    sget-object p0, Lqv;->d:Lr42;
 
     .line 25
     .line 26
-    if-ne v1, v3, :cond_1
+    iget-wide v0, p1, Lnx;->c:J
 
     .line 27
     .line 28
-    iget v1, p0, Lqv;->c:I
+    invoke-interface {p2, p0, v0, v1}, Lnx4;->e(Lr42;J)Lnx4;
 
     .line 29
     .line 30
-    iget p1, p1, Lqv;->c:I
-
     .line 31
+    sget-object p0, Lqv;->e:Lr42;
+
     .line 32
-    if-ne v1, p1, :cond_1
-
     .line 33
-    .line 34
-    return v0
+    iget-object v0, p1, Lnx;->d:[B
 
-    .line 35
-    :cond_1
-    return v2
-.end method
-
-.method public final hashCode()I
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lqv;->a:Landroid/opengl/EGLSurface;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    const v1, 0xf4243
-
-    .line 8
-    .line 9
-    .line 10
-    xor-int/2addr v0, v1
-
-    .line 11
-    mul-int v0, v0, v1
-
-    .line 12
-    .line 13
-    iget v2, p0, Lqv;->b:I
-
-    .line 14
-    .line 15
-    xor-int/2addr v0, v2
-
-    .line 16
-    mul-int v0, v0, v1
-
-    .line 17
-    .line 18
-    iget v1, p0, Lqv;->c:I
-
-    .line 19
-    .line 20
-    xor-int/2addr v0, v1
-
-    .line 21
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "OutputSurface{eglSurface="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lqv;->a:Landroid/opengl/EGLSurface;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", width="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget v1, p0, Lqv;->b:I
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", height="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget v1, p0, Lqv;->c:I
-
-    .line 29
-    .line 30
-    const-string v2, "}"
-
-    .line 31
-    .line 32
-    invoke-static {v0, v1, v2}, Lkd0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
-
-    .line 33
     .line 34
     .line 35
-    move-result-object v0
+    invoke-interface {p2, p0, v0}, Lnx4;->a(Lr42;Ljava/lang/Object;)Lnx4;
 
     .line 36
-    return-object v0
+    .line 37
+    .line 38
+    sget-object p0, Lqv;->f:Lr42;
+
+    .line 39
+    .line 40
+    iget-object v0, p1, Lnx;->e:Ljava/lang/String;
+
+    .line 41
+    .line 42
+    invoke-interface {p2, p0, v0}, Lnx4;->a(Lr42;Ljava/lang/Object;)Lnx4;
+
+    .line 43
+    .line 44
+    .line 45
+    sget-object p0, Lqv;->g:Lr42;
+
+    .line 46
+    .line 47
+    iget-wide v0, p1, Lnx;->f:J
+
+    .line 48
+    .line 49
+    invoke-interface {p2, p0, v0, v1}, Lnx4;->e(Lr42;J)Lnx4;
+
+    .line 50
+    .line 51
+    .line 52
+    sget-object p0, Lqv;->h:Lr42;
+
+    .line 53
+    .line 54
+    iget-object p1, p1, Lnx;->g:Lat4;
+
+    .line 55
+    .line 56
+    invoke-interface {p2, p0, p1}, Lnx4;->a(Lr42;Ljava/lang/Object;)Lnx4;
+
+    .line 57
+    .line 58
+    .line 59
+    return-void
 .end method

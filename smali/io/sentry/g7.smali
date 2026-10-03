@@ -1,14 +1,21 @@
 .class public final Lio/sentry/g7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/util/Queue;
+.implements Ljava/util/Collection;
+.implements Ljava/io/Serializable;
 
 
 # instance fields
-.field public final a:Lio/sentry/m6;
+.field public final X:Lio/sentry/j;
+
+.field public final Y:Lio/sentry/util/a;
 
 
 # direct methods
-.method public constructor <init>(Lio/sentry/m6;)V
+.method public constructor <init>(Lio/sentry/j;)V
     .locals 0
 
     .line 1
@@ -17,307 +24,1291 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/sentry/g7;->a:Lio/sentry/m6;
+    iput-object p1, p0, Lio/sentry/g7;->X:Lio/sentry/j;
 
     .line 5
     .line 6
+    new-instance p1, Lio/sentry/util/a;
+
+    .line 7
+    .line 8
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lio/sentry/internal/debugmeta/c;)Lio/sentry/v3;
-    .locals 11
+.method public final add(Ljava/lang/Object;)Z
+    .locals 1
 
     .line 1
-    iget-object v0, p1, Lio/sentry/internal/debugmeta/c;->S:Ljava/lang/Object;
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
 
     .line 2
     .line 3
-    move-object v4, v0
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
     .line 4
-    check-cast v4, Ljava/lang/Double;
-
     .line 5
     .line 6
-    iget-object p1, p1, Lio/sentry/internal/debugmeta/c;->R:Ljava/lang/Object;
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
 
     .line 7
     .line 8
-    check-cast p1, Lio/sentry/h7;
+    invoke-interface {p0, p1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     .line 9
     .line 10
-    iget-object v0, p1, Lio/sentry/y6;->T:Lio/sentry/v3;
-
     .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 12
-    if-eqz v0, :cond_0
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
     .line 13
     .line 14
-    invoke-static {v0}, Lio/sentry/util/b;->b(Lio/sentry/v3;)Lio/sentry/v3;
-
     .line 15
+    return p0
+
     .line 16
+    :catchall_0
+    move-exception p0
+
     .line 17
-    move-result-object p1
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 18
-    return-object p1
-
     .line 19
-    :cond_0
-    iget-object v0, p0, Lio/sentry/g7;->a:Lio/sentry/m6;
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception p1
+
+    .line 22
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final addAll(Ljava/util/Collection;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0, p1}, Ljava/util/Collection;->addAll(Ljava/util/Collection;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception p1
+
+    .line 22
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final clear()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0}, Ljava/util/Collection;->clear()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+
+    .line 15
+    :catchall_0
+    move-exception p0
+
+    .line 16
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 17
+    .line 18
+    .line 19
+    goto :goto_0
 
     .line 20
+    :catchall_1
+    move-exception v0
+
     .line 21
-    invoke-virtual {v0}, Lio/sentry/m6;->getProfilesSampler()Lio/sentry/i6;
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {v0}, Lio/sentry/m6;->getProfilesSampleRate()Ljava/lang/Double;
+    :goto_0
+    throw p0
+.end method
 
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v6
+.method public final contains(Ljava/lang/Object;)Z
+    .locals 1
 
-    .line 28
-    const/4 v1, 0x0
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
 
-    .line 29
-    const/4 v2, 0x1
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
-    .line 30
-    if-eqz v6, :cond_1
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
 
-    .line 31
-    .line 32
-    invoke-virtual {v6}, Ljava/lang/Double;->doubleValue()D
+    .line 7
+    .line 8
+    invoke-interface {p0, p1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
-    .line 33
-    .line 34
-    .line 35
-    move-result-wide v7
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 36
-    invoke-virtual {v4}, Ljava/lang/Double;->doubleValue()D
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
-    .line 37
-    .line 38
-    .line 39
-    move-result-wide v9
+    .line 13
+    .line 14
+    .line 15
+    return p0
 
-    .line 40
-    cmpg-double v3, v7, v9
+    .line 16
+    :catchall_0
+    move-exception p0
 
-    .line 41
-    .line 42
-    if-ltz v3, :cond_1
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 43
-    .line 44
-    const/4 v3, 0x1
-
-    .line 45
+    .line 18
+    .line 19
+    .line 20
     goto :goto_0
 
-    .line 46
-    :cond_1
-    const/4 v3, 0x0
+    .line 21
+    :catchall_1
+    move-exception p1
 
-    .line 47
+    .line 22
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
     :goto_0
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    throw p0
+.end method
 
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v5
+.method public final containsAll(Ljava/util/Collection;)Z
+    .locals 1
 
-    .line 51
-    invoke-virtual {v0}, Lio/sentry/m6;->getTracesSampler()Lio/sentry/l6;
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
 
-    .line 52
-    .line 53
-    .line 54
-    iget-object p1, p1, Lio/sentry/h7;->h0:Lio/sentry/v3;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
-    .line 55
-    .line 56
-    if-eqz p1, :cond_2
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
 
-    .line 57
-    .line 58
-    invoke-static {p1}, Lio/sentry/util/b;->b(Lio/sentry/v3;)Lio/sentry/v3;
+    .line 7
+    .line 8
+    invoke-interface {p0, p1}, Ljava/util/Collection;->containsAll(Ljava/util/Collection;)Z
 
-    .line 59
-    .line 60
-    .line 61
-    move-result-object p1
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 62
-    return-object p1
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
-    .line 63
-    :cond_2
-    invoke-virtual {v0}, Lio/sentry/m6;->getTracesSampleRate()Ljava/lang/Double;
+    .line 13
+    .line 14
+    .line 15
+    return p0
 
-    .line 64
-    .line 65
-    .line 66
-    move-result-object p1
+    .line 16
+    :catchall_0
+    move-exception p0
 
-    .line 67
-    invoke-virtual {v0}, Lio/sentry/m6;->getBackpressureMonitor()Lio/sentry/backpressure/b;
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 68
-    .line 69
-    .line 70
-    move-result-object v0
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
 
-    .line 71
-    invoke-interface {v0}, Lio/sentry/backpressure/b;->a()I
+    .line 21
+    :catchall_1
+    move-exception p1
 
-    .line 72
-    .line 73
-    .line 74
-    move-result v0
+    .line 22
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    .line 75
-    int-to-double v7, v0
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
 
-    .line 76
-    const-wide/high16 v9, 0x4000000000000000L    # 2.0
+.method public final element()Ljava/lang/Object;
+    .locals 1
 
-    .line 77
-    .line 78
-    invoke-static {v9, v10, v7, v8}, Ljava/lang/Math;->pow(DD)D
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
 
-    .line 79
-    .line 80
-    .line 81
-    move-result-wide v7
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
-    .line 82
-    if-nez p1, :cond_3
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
 
-    .line 83
-    .line 84
-    const/4 p1, 0x0
+    .line 7
+    .line 8
+    invoke-interface {p0}, Ljava/util/Queue;->element()Ljava/lang/Object;
 
-    .line 85
-    :goto_1
-    move-object v3, p1
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 86
-    goto :goto_2
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
-    .line 87
-    :cond_3
-    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
+    .line 13
+    .line 14
+    .line 15
+    return-object p0
 
-    .line 88
-    .line 89
-    .line 90
-    move-result-wide v9
+    .line 16
+    :catchall_0
+    move-exception p0
 
-    .line 91
-    div-double/2addr v9, v7
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 92
-    invoke-static {v9, v10}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
 
-    .line 93
-    .line 94
-    .line 95
-    move-result-object p1
+    .line 21
+    :catchall_1
+    move-exception v0
 
-    .line 96
-    goto :goto_1
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    .line 97
-    :goto_2
-    if-eqz v3, :cond_5
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
 
-    .line 98
-    .line 99
-    const/4 p1, 0x0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
-    .line 100
-    new-instance v1, Lio/sentry/v3;
+    .line 1
+    if-ne p1, p0, :cond_0
 
-    .line 101
-    .line 102
-    invoke-virtual {v3}, Ljava/lang/Double;->doubleValue()D
+    .line 2
+    .line 3
+    const/4 p0, 0x1
 
-    .line 103
-    .line 104
-    .line 105
-    move-result-wide v7
+    .line 4
+    return p0
 
-    .line 106
-    invoke-virtual {v4}, Ljava/lang/Double;->doubleValue()D
+    .line 5
+    :cond_0
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
 
-    .line 107
-    .line 108
-    .line 109
-    move-result-wide v9
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
-    .line 110
-    cmpg-double v0, v7, v9
+    .line 8
+    .line 9
+    .line 10
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
 
-    .line 111
-    .line 112
-    if-ltz v0, :cond_4
+    .line 11
+    .line 12
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    .line 113
-    .line 114
-    const/4 p1, 0x1
+    .line 13
+    .line 14
+    .line 15
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 115
-    :cond_4
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 16
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
-    .line 116
-    .line 117
-    .line 118
-    move-result-object v2
+    .line 17
+    .line 18
+    .line 19
+    return p0
 
-    .line 119
-    invoke-direct/range {v1 .. v6}, Lio/sentry/v3;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Double;)V
+    .line 20
+    :catchall_0
+    move-exception p0
 
-    .line 120
-    .line 121
-    .line 122
-    return-object v1
+    .line 21
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 123
-    :cond_5
-    new-instance v1, Lio/sentry/v3;
+    .line 22
+    .line 23
+    .line 24
+    goto :goto_0
 
-    .line 124
-    .line 125
-    sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    .line 25
+    :catchall_1
+    move-exception p1
 
-    .line 126
-    .line 127
-    const/4 v3, 0x0
+    .line 26
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    .line 128
-    const/4 v6, 0x0
+    .line 27
+    .line 28
+    .line 29
+    :goto_0
+    throw p0
+.end method
 
-    .line 129
-    move-object v5, v2
+.method public final hashCode()I
+    .locals 1
 
-    .line 130
-    invoke-direct/range {v1 .. v6}, Lio/sentry/v3;-><init>(Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Double;)V
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
 
-    .line 131
-    .line 132
-    .line 133
-    return-object v1
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final isEmpty()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final iterator()Ljava/util/Iterator;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final offer(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0, p1}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception p1
+
+    .line 22
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final peek()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0}, Ljava/util/Queue;->peek()Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final poll()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0}, Ljava/util/Queue;->poll()Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final remove()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0}, Ljava/util/Queue;->remove()Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final remove(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 26
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 27
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 28
+    invoke-interface {p0, p1}, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
+
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 29
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    return p0
+
+    :catchall_0
+    move-exception p0
+
+    .line 30
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    goto :goto_0
+
+    :catchall_1
+    move-exception p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    :goto_0
+    throw p0
+.end method
+
+.method public final removeAll(Ljava/util/Collection;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0, p1}, Ljava/util/Collection;->removeAll(Ljava/util/Collection;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception p1
+
+    .line 22
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final retainAll(Ljava/util/Collection;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0, p1}, Ljava/util/Collection;->retainAll(Ljava/util/Collection;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception p1
+
+    .line 22
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final size()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0}, Ljava/util/Collection;->size()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final toArray()[Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-interface {p0}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
+.end method
+
+.method public final toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    .locals 1
+
+    .line 26
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 27
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 28
+    invoke-interface {p0, p1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 29
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    return-object p0
+
+    :catchall_0
+    move-exception p0
+
+    .line 30
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    goto :goto_0
+
+    :catchall_1
+    move-exception p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    :goto_0
+    throw p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/g7;->Y:Lio/sentry/util/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lio/sentry/g7;->X:Lio/sentry/j;
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 12
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object p0
+
+    .line 16
+    :catchall_0
+    move-exception p0
+
+    .line 17
+    :try_start_1
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_1
+    move-exception v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    throw p0
 .end method

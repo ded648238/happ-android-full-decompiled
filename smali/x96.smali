@@ -1,63 +1,180 @@
-.class public final synthetic Lx96;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Li4;
-
-
-# instance fields
-.field public final synthetic Q:Lcom/google/android/material/sidesheet/SideSheetBehavior;
-
-.field public final synthetic R:I
-
-
-# direct methods
-.method public synthetic constructor <init>(Lcom/google/android/material/sidesheet/SideSheetBehavior;I)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lx96;->Q:Lcom/google/android/material/sidesheet/SideSheetBehavior;
-
-    .line 5
-    .line 6
-    iput p2, p0, Lx96;->R:I
-
-    .line 7
-    .line 8
-    return-void
-.end method
+.class public final Lx96;
+.super Lxu1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
-.method public final e(Landroid/view/View;)Z
-    .locals 1
+.method public final a(Ltf6;)V
+    .locals 0
 
     .line 1
-    sget p1, Lcom/google/android/material/sidesheet/SideSheetBehavior;->x:I
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    iget-object p1, p0, Lx96;->Q:Lcom/google/android/material/sidesheet/SideSheetBehavior;
-
     .line 4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
     .line 5
-    iget v0, p0, Lx96;->R:I
-
     .line 6
-    .line 7
-    invoke-virtual {p1, v0}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->v(I)V
+    const-string p1, "NOP delegate should never be called"
 
+    .line 7
     .line 8
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
     .line 9
     .line 10
-    const/4 p1, 0x1
-
     .line 11
-    return p1
+    throw p0
+.end method
+
+.method public final c(Ltf6;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 5
+    .line 6
+    const-string p1, "NOP delegate should never be called"
+
+    .line 7
+    .line 8
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    throw p0
+.end method
+
+.method public final s(Ltf6;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 5
+    .line 6
+    const-string p1, "NOP delegate should never be called"
+
+    .line 7
+    .line 8
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    throw p0
+.end method
+
+.method public final t(Ltf6;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 5
+    .line 6
+    const-string p1, "NOP delegate should never be called"
+
+    .line 7
+    .line 8
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    throw p0
+.end method
+
+.method public final u(Ltf6;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 5
+    .line 6
+    const-string p1, "NOP delegate should never be called"
+
+    .line 7
+    .line 8
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    throw p0
+.end method
+
+.method public final v(Ltf6;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 5
+    .line 6
+    const-string p1, "NOP delegate should never be called"
+
+    .line 7
+    .line 8
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    throw p0
+.end method
+
+.method public final w(Ltf6;)Lca6;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 5
+    .line 6
+    const-string p1, "NOP delegate should never be called"
+
+    .line 7
+    .line 8
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    throw p0
 .end method

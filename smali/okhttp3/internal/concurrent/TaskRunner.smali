@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/concurrent/TaskRunner;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -25,7 +25,7 @@
         "(Lokhttp3/internal/concurrent/TaskRunner$Backend;)V",
         "Lokhttp3/internal/concurrent/Task;",
         "task",
-        "Lbh7;",
+        "Lr98;",
         "beforeRun",
         "(Lokhttp3/internal/concurrent/Task;)V",
         "runTask",
@@ -132,7 +132,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/concurrent/TaskRunner$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/concurrent/TaskRunner$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -333,7 +333,7 @@
 .end method
 
 .method private final afterRun(Lokhttp3/internal/concurrent/Task;J)V
-    .locals 5
+    .locals 4
 
     .line 1
     sget-boolean v0, Lokhttp3/internal/Util;->assertionsEnabled:Z
@@ -380,7 +380,7 @@
 
     .line 21
     .line 22
-    invoke-static {p1, p2, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, p2, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 23
     .line 24
@@ -452,11 +452,11 @@
 
     .line 57
     .line 58
-    cmp-long v4, p2, v2
+    cmp-long v2, p2, v2
 
     .line 59
     .line 60
-    if-eqz v4, :cond_2
+    if-eqz v2, :cond_2
 
     .line 61
     .line 62
@@ -505,11 +505,11 @@
 
     .line 83
     .line 84
-    iget-object p1, p0, Lokhttp3/internal/concurrent/TaskRunner;->readyQueues:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskRunner;->readyQueues:Ljava/util/List;
 
     .line 85
     .line 86
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {p0, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 87
     .line 88
@@ -519,11 +519,11 @@
 
     .line 90
     :cond_4
-    const-string p1, "Check failed."
+    const-string p0, "Check failed."
 
     .line 91
     .line 92
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 93
     .line 94
@@ -579,7 +579,7 @@
 
     .line 21
     .line 22
-    invoke-static {p1, v0, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 23
     .line 24
@@ -638,11 +638,11 @@
     .line 51
     .line 52
     .line 53
-    iget-object p1, p0, Lokhttp3/internal/concurrent/TaskRunner;->busyQueues:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskRunner;->busyQueues:Ljava/util/List;
 
     .line 54
     .line 55
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {p0, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 56
     .line 57
@@ -698,7 +698,7 @@
 
     .line 21
     .line 22
-    invoke-static {p1, v0, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 23
     .line 24
@@ -846,7 +846,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0, v1}, Lnm0;->K0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
+    invoke-static {v0, v1}, Ltt0;->q1(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     .line 7
     .line 8
@@ -873,7 +873,7 @@
 .end method
 
 .method public final awaitTaskToRun()Lokhttp3/internal/concurrent/Task;
-    .locals 15
+    .locals 14
 
     .line 1
     sget-boolean v0, Lokhttp3/internal/Util;->assertionsEnabled:Z
@@ -923,7 +923,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0, v2, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0, v2, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 24
     .line 25
@@ -1061,11 +1061,11 @@
     move-result-wide v10
 
     .line 89
-    cmp-long v14, v10, v12
+    cmp-long v12, v10, v12
 
     .line 90
     .line 91
-    if-lez v14, :cond_3
+    if-lez v12, :cond_3
 
     .line 92
     .line 93
@@ -1085,7 +1085,7 @@
 
     .line 99
     .line 100
-    const/4 v0, 0x1
+    move v0, v8
 
     .line 101
     goto :goto_2
@@ -1099,7 +1099,7 @@
 
     .line 104
     :cond_5
-    const/4 v0, 0x0
+    move v0, v9
 
     .line 105
     :goto_2
@@ -1145,11 +1145,11 @@
 
     .line 125
     .line 126
-    iget-object v1, p0, Lokhttp3/internal/concurrent/TaskRunner;->runnable:Ljava/lang/Runnable;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskRunner;->runnable:Ljava/lang/Runnable;
 
     .line 127
     .line 128
-    invoke-interface {v0, v1}, Lokhttp3/internal/concurrent/TaskRunner$Backend;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, p0}, Lokhttp3/internal/concurrent/TaskRunner$Backend;->execute(Ljava/lang/Runnable;)V
 
     .line 129
     .line 130
@@ -1397,14 +1397,14 @@
 .end method
 
 .method public final getBackend()Lokhttp3/internal/concurrent/TaskRunner$Backend;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskRunner;->backend:Lokhttp3/internal/concurrent/TaskRunner$Backend;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskRunner;->backend:Lokhttp3/internal/concurrent/TaskRunner$Backend;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final kickCoordinator$okhttp(Lokhttp3/internal/concurrent/TaskQueue;)V
@@ -1460,7 +1460,7 @@
 
     .line 24
     .line 25
-    invoke-static {p1, v0, p0}, Lme1;->f(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0, p0}, Ljl1;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -1543,11 +1543,11 @@
 
     .line 64
     :cond_4
-    iget-object p1, p0, Lokhttp3/internal/concurrent/TaskRunner;->runnable:Ljava/lang/Runnable;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskRunner;->runnable:Ljava/lang/Runnable;
 
     .line 65
     .line 66
-    invoke-interface {v0, p1}, Lokhttp3/internal/concurrent/TaskRunner$Backend;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, p0}, Lokhttp3/internal/concurrent/TaskRunner$Backend;->execute(Ljava/lang/Runnable;)V
 
     .line 67
     .line 68
@@ -1588,7 +1588,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 14
     .line 15

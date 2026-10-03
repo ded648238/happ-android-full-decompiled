@@ -1,15 +1,19 @@
 package defpackage;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class c33 implements f33 {
+    public static final c33 a = new c33();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-@Retention(RetentionPolicy.RUNTIME)
-public @interface c33 {
-    mf4 contentNulls() default mf4.Q;
+    public final boolean equals(Object obj) {
+        return this == obj || (obj instanceof c33);
+    }
 
-    mf4 nulls() default mf4.Q;
+    public final int hashCode() {
+        return 806005428;
+    }
 
-    String value() default "";
+    public final String toString() {
+        return "ResumeClick";
+    }
 }

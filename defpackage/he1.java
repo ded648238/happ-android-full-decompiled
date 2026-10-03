@@ -1,17 +1,23 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class he1 extends Exception {
-    public final Throwable Q;
+import java.util.HashMap;
 
-    public he1(Throwable th, uw0 uw0Var, sw0 sw0Var) {
-        super("Coroutine dispatcher " + uw0Var + " threw an exception, context = " + sw0Var, th);
-        this.Q = th;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class he1 {
+    public static final /* synthetic */ int e = 0;
+    public final lp2 a;
+    public final ym2 b;
+    public final kd7 c;
+    public final HashMap d = new HashMap();
+
+    static {
+        an3.u("DelayedWorkTracker");
     }
 
-    @Override // java.lang.Throwable
-    public final Throwable getCause() {
-        return this.Q;
+    public he1(lp2 lp2Var, ym2 ym2Var, kd7 kd7Var) {
+        this.a = lp2Var;
+        this.b = ym2Var;
+        this.c = kd7Var;
     }
 }

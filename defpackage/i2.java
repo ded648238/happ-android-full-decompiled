@@ -1,17 +1,28 @@
 package defpackage;
 
-import java.util.concurrent.Executor;
+import java.util.Random;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class i2 {
-    public static final i2 d = new i2(null, null);
-    public final Runnable a;
-    public final Executor b;
-    public i2 c;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class i2 extends lv5 {
+    @Override // defpackage.lv5
+    public final int a(int i) {
+        return (f().nextInt() >>> (32 - i)) & ((-i) >> 31);
+    }
 
-    public i2(Runnable runnable, Executor executor) {
-        this.a = runnable;
-        this.b = executor;
+    @Override // defpackage.lv5
+    public final int b() {
+        return f().nextInt();
+    }
+
+    @Override // defpackage.lv5
+    public final long d() {
+        return f().nextLong();
+    }
+
+    public abstract Random f();
+
+    public final int g(int i) {
+        return f().nextInt(i);
     }
 }

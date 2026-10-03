@@ -1,7 +1,20 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface j76 {
-    void a(l76 l76Var);
+import su.happ.proxyutility.dto.MetaParams;
+import su.happ.proxyutility.dto.enums.InboundAuthMode;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class j76 extends jq4 {
+    public static final j76 X = new j76(MetaParams.class, "httpAuthMode", "getHttpAuthMode()Lsu/happ/proxyutility/dto/enums/InboundAuthMode;", 0);
+
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((MetaParams) obj).D1((InboundAuthMode) obj2);
+    }
+
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return ((MetaParams) obj).getHttpAuthMode();
+    }
 }

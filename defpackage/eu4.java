@@ -1,11 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class eu4 {
-    public final boolean a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class eu4 {
+    public static final du4 a;
+    public static final du4 b;
 
-    public eu4(boolean z) {
-        this.a = z;
+    static {
+        op5 op5Var = op5.c;
+        du4 du4Var = null;
+        try {
+            du4Var = (du4) Class.forName("androidx.datastore.preferences.protobuf.NewInstanceSchemaFull").getDeclaredConstructor(null).newInstance(null);
+        } catch (Exception unused) {
+        }
+        a = du4Var;
+        b = new du4();
     }
 }

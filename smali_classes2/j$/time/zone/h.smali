@@ -1,12 +1,12 @@
 .class public final Lj$/time/zone/h;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
 .field public static final b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-.field public static final c:Lj$/util/concurrent/ConcurrentHashMap;
+.field public static final c:Ljava/util/concurrent/ConcurrentMap;
 
 .field public static volatile d:Ljava/util/Set;
 
@@ -33,7 +33,7 @@
 
     .line 7
     .line 8
-    new-instance v1, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v1, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 9
     .line 10
@@ -48,12 +48,12 @@
 
     .line 14
     .line 15
-    invoke-direct {v1, v4, v2, v3}, Lj$/util/concurrent/ConcurrentHashMap;-><init>(IFI)V
+    invoke-direct {v1, v4, v2, v3}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(IFI)V
 
     .line 16
     .line 17
     .line 18
-    sput-object v1, Lj$/time/zone/h;->c:Lj$/util/concurrent/ConcurrentHashMap;
+    sput-object v1, Lj$/time/zone/h;->c:Ljava/util/concurrent/ConcurrentMap;
 
     .line 19
     .line 20
@@ -158,178 +158,154 @@
 .end method
 
 .method public static a(Ljava/lang/String;)Lj$/time/zone/ZoneRules;
-    .locals 3
+    .locals 2
 
     .line 1
     const-string v0, "zoneId"
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    sget-object v0, Lj$/time/zone/h;->c:Lj$/util/concurrent/ConcurrentHashMap;
+    sget-object v0, Lj$/time/zone/h;->c:Ljava/util/concurrent/ConcurrentMap;
 
     .line 7
     .line 8
-    invoke-interface {v0, p0}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 9
     .line 10
+    invoke-virtual {v0, p0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 11
+    .line 12
+    .line 13
     move-result-object v1
 
-    .line 12
-    check-cast v1, Lj$/time/zone/h;
-
-    .line 13
     .line 14
-    if-nez v1, :cond_1
+    check-cast v1, Lj$/time/zone/h;
 
     .line 15
     .line 16
-    invoke-interface {v0}, Ljava/util/concurrent/ConcurrentMap;->isEmpty()Z
+    if-nez v1, :cond_1
 
     .line 17
     .line 18
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->isEmpty()Z
+
     .line 19
+    .line 20
+    .line 21
     move-result v0
 
-    .line 20
-    if-eqz v0, :cond_0
-
-    .line 21
     .line 22
-    new-instance p0, Lj$/time/zone/f;
+    if-eqz v0, :cond_0
 
     .line 23
     .line 24
-    const-string v0, "No time-zone data files registered"
+    new-instance p0, Lj$/time/zone/f;
 
     .line 25
     .line 26
-    invoke-direct {p0, v0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+    const-string v0, "No time-zone data files registered"
 
     .line 27
     .line 28
+    invoke-direct {p0, v0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+
     .line 29
+    .line 30
+    .line 31
     throw p0
 
-    .line 30
+    .line 32
     :cond_0
     new-instance v0, Lj$/time/zone/f;
 
-    .line 31
-    .line 32
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 33
     .line 34
-    const-string v2, "Unknown time-zone ID: "
+    const-string v1, "Unknown time-zone ID: "
 
     .line 35
     .line 36
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 37
     .line 38
     .line 39
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 43
-    .line 44
-    .line 45
     move-result-object p0
 
-    .line 46
+    .line 40
     invoke-direct {v0, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
+
+    .line 41
+    .line 42
+    .line 43
+    throw v0
+
+    .line 44
+    :cond_1
+    iget-object v0, v1, Lj$/time/zone/h;->a:Ljava/util/Set;
+
+    .line 45
+    .line 46
+    invoke-interface {v0, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     .line 47
     .line 48
     .line 49
-    throw v0
+    move-result v0
 
     .line 50
-    :cond_1
-    iget-object v0, v1, Lj$/time/zone/h;->a:Ljava/util/Set;
+    if-eqz v0, :cond_2
 
     .line 51
     .line 52
-    invoke-interface {v0, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+    new-instance v0, Lj$/time/zone/ZoneRules;
 
     .line 53
     .line 54
+    invoke-static {p0}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+
     .line 55
-    move-result v0
-
     .line 56
-    if-eqz v0, :cond_2
-
     .line 57
+    move-result-object p0
+
     .line 58
-    new-instance v0, Lj$/time/zone/ZoneRules;
+    invoke-direct {v0, p0}, Lj$/time/zone/ZoneRules;-><init>(Ljava/util/TimeZone;)V
 
     .line 59
     .line 60
-    invoke-static {p0}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
-
     .line 61
-    .line 62
-    .line 63
-    move-result-object p0
-
-    .line 64
-    invoke-direct {v0, p0}, Lj$/time/zone/ZoneRules;-><init>(Ljava/util/TimeZone;)V
-
-    .line 65
-    .line 66
-    .line 67
     return-object v0
 
-    .line 68
+    .line 62
     :cond_2
     new-instance v0, Lj$/time/zone/f;
 
+    .line 63
+    .line 64
+    const-string v1, "Not a built-in time zone: "
+
+    .line 65
+    .line 66
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 67
+    .line 68
     .line 69
+    move-result-object p0
+
     .line 70
-    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-direct {v0, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
     .line 71
     .line 72
-    const-string v2, "Not a built-in time zone: "
-
     .line 73
-    .line 74
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 75
-    .line 76
-    .line 77
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 78
-    .line 79
-    .line 80
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 81
-    .line 82
-    .line 83
-    move-result-object p0
-
-    .line 84
-    invoke-direct {v0, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
-
-    .line 85
-    .line 86
-    .line 87
     throw v0
 .end method
 
@@ -341,7 +317,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -395,156 +371,164 @@
 
     .line 28
     .line 29
-    invoke-static {v2, v3}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v2, v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 30
     .line 31
     .line 32
-    sget-object v3, Lj$/time/zone/h;->c:Lj$/util/concurrent/ConcurrentHashMap;
+    sget-object v3, Lj$/time/zone/h;->c:Ljava/util/concurrent/ConcurrentMap;
 
     .line 33
     .line 34
-    invoke-interface {v3, v2, p0}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v3, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 35
     .line 36
+    invoke-virtual {v3, v2, p0}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 37
+    .line 38
+    .line 39
     move-result-object v3
 
-    .line 38
-    check-cast v3, Lj$/time/zone/h;
-
-    .line 39
     .line 40
-    if-nez v3, :cond_0
+    check-cast v3, Lj$/time/zone/h;
 
     .line 41
     .line 42
-    goto :goto_0
+    if-nez v3, :cond_0
 
     .line 43
+    .line 44
+    goto :goto_0
+
+    .line 45
     :cond_0
     new-instance v1, Lj$/time/zone/f;
 
-    .line 44
-    .line 45
-    new-instance v3, Ljava/lang/StringBuilder;
-
     .line 46
     .line 47
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 48
     .line 49
-    .line 50
-    const-string v4, "Unable to register zone as one already registered with that ID: "
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 50
     .line 51
     .line 52
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, "Unable to register zone as one already registered with that ID: "
 
     .line 53
     .line 54
-    .line 55
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 55
     .line 56
     .line 57
-    .line 58
-    const-string v2, ", currently loading from provider: "
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 58
     .line 59
     .line 60
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ", currently loading from provider: "
 
     .line 61
     .line 62
-    .line 63
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 63
     .line 64
     .line 65
-    .line 66
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 66
     .line 67
     .line 68
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 69
+    .line 70
+    .line 71
     move-result-object p0
 
-    .line 70
+    .line 72
     invoke-direct {v1, p0}, Lj$/time/DateTimeException;-><init>(Ljava/lang/String;)V
 
-    .line 71
-    .line 72
     .line 73
+    .line 74
+    .line 75
     throw v1
 
-    .line 74
+    .line 76
     :catchall_0
     move-exception p0
 
-    .line 75
+    .line 77
     goto :goto_1
 
-    .line 76
+    .line 78
     :cond_1
     new-instance v1, Ljava/util/HashSet;
 
-    .line 77
-    .line 78
-    sget-object v2, Lj$/time/zone/h;->c:Lj$/util/concurrent/ConcurrentHashMap;
-
     .line 79
     .line 80
-    invoke-interface {v2}, Ljava/util/concurrent/ConcurrentMap;->keySet()Ljava/util/Set;
+    sget-object v2, Lj$/time/zone/h;->c:Ljava/util/concurrent/ConcurrentMap;
 
     .line 81
     .line 82
-    .line 83
-    move-result-object v2
+    check-cast v2, Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 83
     .line 84
-    invoke-direct {v1, v2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    invoke-virtual {v2}, Ljava/util/concurrent/ConcurrentHashMap;->keySet()Ljava/util/Set;
 
     .line 85
     .line 86
     .line 87
-    invoke-static {v1}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+    move-result-object v2
 
     .line 88
+    invoke-direct {v1, v2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
     .line 89
     .line 90
+    .line 91
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    .line 92
+    .line 93
+    .line 94
     move-result-object v1
 
-    .line 91
+    .line 95
     sput-object v1, Lj$/time/zone/h;->d:Ljava/util/Set;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 92
-    .line 93
+    .line 96
+    .line 97
     monitor-exit v0
 
-    .line 94
+    .line 98
     sget-object v0, Lj$/time/zone/h;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 95
-    .line 96
+    .line 99
+    .line 100
     invoke-virtual {v0, p0}, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 97
-    .line 98
-    .line 99
+    .line 101
+    .line 102
+    .line 103
     return-void
 
-    .line 100
+    .line 104
     :goto_1
     :try_start_1
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 101
+    .line 105
     throw p0
 .end method

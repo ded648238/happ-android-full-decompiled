@@ -1,6 +1,6 @@
 .class public Landroidx/media/session/MediaButtonReceiver;
 .super Landroid/content/BroadcastReceiver;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -132,7 +132,7 @@
 
     .line 60
     .line 61
-    invoke-static {v1, p1, v2}, Lea0;->u(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, p1, v2}, Lw31;->p(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 62
     .line 63
@@ -172,7 +172,7 @@
 
 # virtual methods
 .method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 3
+    .locals 2
 
     .line 1
     if-eqz p2, :cond_4
@@ -240,15 +240,15 @@
     .line 31
     .line 32
     .line 33
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget p0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 34
     .line 35
-    const/16 v1, 0x1a
+    const/16 v0, 0x1a
 
     .line 36
     .line 37
-    if-lt v0, v1, :cond_1
+    if-lt p0, v0, :cond_1
 
     .line 38
     .line 39
@@ -291,7 +291,7 @@
     .line 56
     .line 57
     .line 58
-    move-result-object v1
+    move-result-object p0
 
     .line 59
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -302,41 +302,41 @@
     move-result-object p1
 
     .line 63
-    new-instance v2, Lj44;
+    new-instance v1, Lhi6;
 
     .line 64
     .line 65
-    invoke-direct {v2, p1, p2, v1}, Lj44;-><init>(Landroid/content/Context;Landroid/content/Intent;Landroid/content/BroadcastReceiver$PendingResult;)V
+    invoke-direct {v1, p1, p2, p0}, Lhi6;-><init>(Landroid/content/Context;Landroid/content/Intent;Landroid/content/BroadcastReceiver$PendingResult;)V
 
     .line 66
     .line 67
     .line 68
-    new-instance p2, Lhg1;
+    new-instance p0, Lvt1;
 
     .line 69
     .line 70
-    invoke-direct {p2, p1, v0, v2}, Lhg1;-><init>(Landroid/content/Context;Landroid/content/ComponentName;Lj44;)V
+    invoke-direct {p0, p1, v0, v1}, Lvt1;-><init>(Landroid/content/Context;Landroid/content/ComponentName;Lhi6;)V
 
     .line 71
     .line 72
     .line 73
-    iput-object p2, v2, Lj44;->W:Ljava/lang/Object;
+    iput-object p0, v1, Lhi6;->f0:Ljava/lang/Object;
 
     .line 74
     .line 75
-    iget-object p1, p2, Lhg1;->R:Ljava/lang/Object;
+    iget-object p0, p0, Lvt1;->Y:Ljava/lang/Object;
 
     .line 76
     .line 77
-    check-cast p1, Lx04;
+    check-cast p0, Lxh4;
 
     .line 78
     .line 79
-    iget-object p1, p1, Lx04;->b:Landroid/media/browse/MediaBrowser;
+    iget-object p0, p0, Lxh4;->b:Landroid/media/browse/MediaBrowser;
 
     .line 80
     .line 81
-    invoke-virtual {p1}, Landroid/media/browse/MediaBrowser;->connect()V
+    invoke-virtual {p0}, Landroid/media/browse/MediaBrowser;->connect()V
 
     .line 82
     .line 83
@@ -345,11 +345,11 @@
 
     .line 85
     :cond_3
-    const-string p1, "Could not find any Service that handles android.intent.action.MEDIA_BUTTON or implements a media browser service."
+    const-string p0, "Could not find any Service that handles android.intent.action.MEDIA_BUTTON or implements a media browser service."
 
     .line 86
     .line 87
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 88
     .line 89
@@ -359,7 +359,7 @@
     .line 91
     :cond_4
     :goto_0
-    invoke-static {p2}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 92
     .line 93

@@ -1,26 +1,26 @@
 package defpackage;
 
-import su.happ.proxyutility.dto.ProfileRoutingSettings;
+import su.happ.proxyutility.dto.enums.SubscriptionAutoConnectType;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class y94 {
-    public static final y94 Q;
-    public static final /* synthetic */ y94[] R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract /* synthetic */ class y94 {
+    public static final /* synthetic */ int[] a;
 
     static {
-        y94 y94Var = new y94(ProfileRoutingSettings.DEFAULT_NAME, 0);
-        Q = y94Var;
-        R = new y94[]{y94Var, new y94("UserInput", 1), new y94("PreventUserInput", 2)};
-    }
-
-    public static y94 valueOf(String str) {
-        return (y94) Enum.valueOf(y94.class, str);
-    }
-
-    public static y94[] values() {
-        return (y94[]) R.clone();
+        int[] iArr = new int[SubscriptionAutoConnectType.values().length];
+        try {
+            iArr[SubscriptionAutoConnectType.LAST_USED.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            iArr[SubscriptionAutoConnectType.LOWEST_DELAY.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            iArr[SubscriptionAutoConnectType.RANDOM.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        a = iArr;
     }
 }

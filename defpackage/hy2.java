@@ -1,41 +1,22 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class hy2 extends ty2 {
-    public final boolean U;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class hy2 {
+    public static final ly2 a;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public hy2(fy2 fy2Var) {
-        super(true);
-        boolean z = true;
-        Q(fy2Var);
-        ii0 ii0VarK = K();
-        ji0 ji0Var = ii0VarK instanceof ji0 ? (ji0) ii0VarK : null;
-        if (ji0Var == null) {
-            z = false;
-            break;
-        }
-        ty2 ty2VarQ = ji0Var.q();
-        while (!ty2VarQ.H()) {
-            ii0 ii0VarK2 = ty2VarQ.K();
-            ji0 ji0Var2 = ii0VarK2 instanceof ji0 ? (ji0) ii0VarK2 : null;
-            if (ji0Var2 == null) {
-                z = false;
-                break;
-            }
-            ty2VarQ = ji0Var2.q();
-        }
-        this.U = z;
-    }
-
-    @Override // defpackage.ty2
-    public final boolean H() {
-        return this.U;
-    }
-
-    @Override // defpackage.ty2
-    public final boolean I() {
-        return true;
+    static {
+        j97 j97Var = j97.STILL_CAPTURE;
+        v36 v36Var = new v36(rt2.q0, w36.c);
+        ux2 ux2Var = new ux2(1);
+        uw uwVar = ud8.M;
+        eq4 eq4Var = ux2Var.Y;
+        eq4Var.y(uwVar, 4);
+        eq4Var.y(ud8.b0, j97Var);
+        eq4Var.y(uy2.q, 0);
+        eq4Var.y(uy2.y, v36Var);
+        eq4Var.y(ly2.d0, 0);
+        eq4Var.y(ry2.p, rt1.d);
+        a = new ly2(w25.a(eq4Var));
     }
 }

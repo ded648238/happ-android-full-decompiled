@@ -1,21 +1,32 @@
-.class public final Lzn;
+.class public final synthetic Lzn;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/widget/ListAdapter;
-.implements Landroid/widget/SpinnerAdapter;
+.implements Lxi2;
 
 
 # instance fields
-.field public final Q:Landroid/widget/SpinnerAdapter;
+.field public final synthetic X:Lyw0;
 
-.field public final R:Landroid/widget/ListAdapter;
+.field public final synthetic Y:Ldn4;
+
+.field public final synthetic Z:Lyw0;
+
+.field public final synthetic c0:Lyi2;
+
+.field public final synthetic d0:F
+
+.field public final synthetic e0:Lfn8;
+
+.field public final synthetic f0:Lty7;
+
+.field public final synthetic g0:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/widget/SpinnerAdapter;Landroid/content/res/Resources$Theme;)V
-    .locals 2
+.method public synthetic constructor <init>(Lyw0;Ldn4;Lyw0;Lyi2;FLfn8;Lty7;I)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -23,389 +34,115 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lzn;->Q:Landroid/widget/SpinnerAdapter;
+    iput-object p1, p0, Lzn;->X:Lyw0;
 
     .line 5
     .line 6
-    instance-of v0, p1, Landroid/widget/ListAdapter;
+    iput-object p2, p0, Lzn;->Y:Ldn4;
 
     .line 7
     .line 8
-    if-eqz v0, :cond_0
+    iput-object p3, p0, Lzn;->Z:Lyw0;
 
     .line 9
     .line 10
-    move-object v0, p1
+    iput-object p4, p0, Lzn;->c0:Lyi2;
 
     .line 11
-    check-cast v0, Landroid/widget/ListAdapter;
-
     .line 12
+    iput p5, p0, Lzn;->d0:F
+
     .line 13
-    iput-object v0, p0, Lzn;->R:Landroid/widget/ListAdapter;
-
     .line 14
+    iput-object p6, p0, Lzn;->e0:Lfn8;
+
     .line 15
-    :cond_0
-    if-eqz p2, :cond_1
-
     .line 16
+    iput-object p7, p0, Lzn;->f0:Lty7;
+
     .line 17
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 18
+    iput p8, p0, Lzn;->g0:I
+
     .line 19
-    const/16 v1, 0x17
-
     .line 20
-    .line 21
-    if-lt v0, v1, :cond_1
-
-    .line 22
-    .line 23
-    instance-of v0, p1, Landroid/widget/ThemedSpinnerAdapter;
-
-    .line 24
-    .line 25
-    if-eqz v0, :cond_1
-
-    .line 26
-    .line 27
-    check-cast p1, Landroid/widget/ThemedSpinnerAdapter;
-
-    .line 28
-    .line 29
-    invoke-static {p1, p2}, Lxn;->a(Landroid/widget/ThemedSpinnerAdapter;Landroid/content/res/Resources$Theme;)V
-
-    .line 30
-    .line 31
-    .line 32
-    :cond_1
     return-void
 .end method
 
 
 # virtual methods
-.method public final areAllItemsEnabled()Z
-    .locals 1
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget-object v0, p0, Lzn;->R:Landroid/widget/ListAdapter;
+    move-object v7, p1
 
     .line 2
+    check-cast v7, Lrk2;
+
     .line 3
-    if-eqz v0, :cond_0
-
     .line 4
-    .line 5
-    invoke-interface {v0}, Landroid/widget/ListAdapter;->areAllItemsEnabled()Z
+    check-cast p2, Ljava/lang/Integer;
 
+    .line 5
     .line 6
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 7
     .line 8
-    move-result v0
-
     .line 9
-    return v0
+    iget p1, p0, Lzn;->g0:I
 
     .line 10
-    :cond_0
-    const/4 v0, 0x1
-
     .line 11
-    return v0
-.end method
-
-.method public final getCount()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzn;->Q:Landroid/widget/SpinnerAdapter;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    return v0
-
-    .line 7
-    :cond_0
-    invoke-interface {v0}, Landroid/widget/Adapter;->getCount()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    return v0
-.end method
-
-.method public final getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzn;->Q:Landroid/widget/SpinnerAdapter;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    return-object p1
-
-    .line 7
-    :cond_0
-    invoke-interface {v0, p1, p2, p3}, Landroid/widget/SpinnerAdapter;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    return-object p1
-.end method
-
-.method public final getItem(I)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzn;->Q:Landroid/widget/SpinnerAdapter;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    return-object p1
-
-    .line 7
-    :cond_0
-    invoke-interface {v0, p1}, Landroid/widget/Adapter;->getItem(I)Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    return-object p1
-.end method
-
-.method public final getItemId(I)J
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lzn;->Q:Landroid/widget/SpinnerAdapter;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const-wide/16 v0, -0x1
-
-    .line 6
-    .line 7
-    return-wide v0
-
-    .line 8
-    :cond_0
-    invoke-interface {v0, p1}, Landroid/widget/Adapter;->getItemId(I)J
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-wide v0
+    or-int/lit8 p1, p1, 0x1
 
     .line 12
-    return-wide v0
-.end method
-
-.method public final getItemViewType(I)I
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return p1
-.end method
-
-.method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2, p3}, Lzn;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final getViewTypeCount()I
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    return v0
-.end method
-
-.method public final hasStableIds()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzn;->Q:Landroid/widget/SpinnerAdapter;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {v0}, Landroid/widget/Adapter;->hasStableIds()Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    const/4 v0, 0x1
-
-    .line 12
-    return v0
-
     .line 13
-    :cond_0
-    const/4 v0, 0x0
+    invoke-static {p1}, Lku8;->S(I)I
 
     .line 14
-    return v0
-.end method
+    .line 15
+    .line 16
+    move-result v8
 
-.method public final isEmpty()Z
-    .locals 1
+    .line 17
+    iget-object v0, p0, Lzn;->X:Lyw0;
 
-    .line 1
-    invoke-virtual {p0}, Lzn;->getCount()I
+    .line 18
+    .line 19
+    iget-object v1, p0, Lzn;->Y:Ldn4;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
+    .line 20
+    .line 21
+    iget-object v2, p0, Lzn;->Z:Lyw0;
 
-    .line 5
-    if-nez v0, :cond_0
+    .line 22
+    .line 23
+    iget-object v3, p0, Lzn;->c0:Lyi2;
 
-    .line 6
-    .line 7
-    const/4 v0, 0x1
+    .line 24
+    .line 25
+    iget v4, p0, Lzn;->d0:F
 
-    .line 8
-    return v0
+    .line 26
+    .line 27
+    iget-object v5, p0, Lzn;->e0:Lfn8;
 
-    .line 9
-    :cond_0
-    const/4 v0, 0x0
+    .line 28
+    .line 29
+    iget-object v6, p0, Lzn;->f0:Lty7;
 
-    .line 10
-    return v0
-.end method
+    .line 30
+    .line 31
+    invoke-static/range {v0 .. v8}, Leo;->b(Lyw0;Ldn4;Lyw0;Lyi2;FLfn8;Lty7;Lrk2;I)V
 
-.method public final isEnabled(I)Z
-    .locals 1
+    .line 32
+    .line 33
+    .line 34
+    sget-object p0, Lr98;->a:Lr98;
 
-    .line 1
-    iget-object v0, p0, Lzn;->R:Landroid/widget/ListAdapter;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {v0, p1}, Landroid/widget/ListAdapter;->isEnabled(I)Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p1
-
-    .line 9
-    return p1
-
-    .line 10
-    :cond_0
-    const/4 p1, 0x1
-
-    .line 11
-    return p1
-.end method
-
-.method public final registerDataSetObserver(Landroid/database/DataSetObserver;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzn;->Q:Landroid/widget/SpinnerAdapter;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {v0, p1}, Landroid/widget/Adapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
-
-    .line 6
-    .line 7
-    .line 8
-    :cond_0
-    return-void
-.end method
-
-.method public final unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzn;->Q:Landroid/widget/SpinnerAdapter;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {v0, p1}, Landroid/widget/Adapter;->unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
-
-    .line 6
-    .line 7
-    .line 8
-    :cond_0
-    return-void
+    .line 35
+    .line 36
+    return-object p0
 .end method

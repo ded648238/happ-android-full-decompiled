@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/ws/MessageDeflater;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -18,26 +18,26 @@
         "noContextTakeover",
         "<init>",
         "(Z)V",
-        "Lf50;",
-        "Ly60;",
+        "Ll70;",
+        "Lo90;",
         "suffix",
         "endsWith",
-        "(Lf50;Ly60;)Z",
+        "(Ll70;Lo90;)Z",
         "buffer",
-        "Lbh7;",
+        "Lr98;",
         "deflate",
-        "(Lf50;)V",
+        "(Ll70;)V",
         "close",
         "()V",
         "Z",
         "deflatedBytes",
-        "Lf50;",
+        "Ll70;",
         "Ljava/util/zip/Deflater;",
         "deflater",
         "Ljava/util/zip/Deflater;",
-        "La61;",
+        "Lee1;",
         "deflaterSink",
-        "La61;",
+        "Lee1;",
         "okhttp"
     }
     k = 0x1
@@ -51,11 +51,11 @@
 
 
 # instance fields
-.field private final deflatedBytes:Lf50;
+.field private final deflatedBytes:Ll70;
 
 .field private final deflater:Ljava/util/zip/Deflater;
 
-.field private final deflaterSink:La61;
+.field private final deflaterSink:Lee1;
 
 .field private final noContextTakeover:Z
 
@@ -74,7 +74,7 @@
 
     .line 5
     .line 6
-    new-instance p1, Lf50;
+    new-instance p1, Ll70;
 
     .line 7
     .line 8
@@ -83,7 +83,7 @@
     .line 9
     .line 10
     .line 11
-    iput-object p1, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lf50;
+    iput-object p1, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Ll70;
 
     .line 12
     .line 13
@@ -106,59 +106,59 @@
 
     .line 21
     .line 22
-    new-instance v1, La61;
+    new-instance v1, Lee1;
 
     .line 23
     .line 24
-    invoke-direct {v1, p1, v0}, La61;-><init>(Lf50;Ljava/util/zip/Deflater;)V
+    invoke-direct {v1, p1, v0}, Lee1;-><init>(Ll70;Ljava/util/zip/Deflater;)V
 
     .line 25
     .line 26
     .line 27
-    iput-object v1, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:La61;
+    iput-object v1, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:Lee1;
 
     .line 28
     .line 29
     return-void
 .end method
 
-.method private final endsWith(Lf50;Ly60;)Z
+.method private final endsWith(Ll70;Lo90;)Z
     .locals 4
 
     .line 1
-    iget-wide v0, p1, Lf50;->R:J
+    iget-wide v0, p1, Ll70;->Y:J
 
     .line 2
     .line 3
-    invoke-virtual {p2}, Ly60;->e()I
+    invoke-virtual {p2}, Lo90;->e()I
 
     .line 4
     .line 5
     .line 6
-    move-result v2
+    move-result p0
 
     .line 7
-    int-to-long v2, v2
+    int-to-long v2, p0
 
     .line 8
     sub-long/2addr v0, v2
 
     .line 9
-    invoke-virtual {p1, v0, v1, p2}, Lf50;->m(JLy60;)Z
+    invoke-virtual {p1, v0, v1, p2}, Ll70;->q(JLo90;)Z
 
     .line 10
     .line 11
     .line 12
-    move-result p1
+    move-result p0
 
     .line 13
-    return p1
+    return p0
 .end method
 
 
 # virtual methods
 .method public close()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -166,11 +166,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:La61;
+    iget-object p0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:Lee1;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, La61;->close()V
+    invoke-virtual {p0}, Lee1;->close()V
 
     .line 4
     .line 5
@@ -178,7 +178,7 @@
     return-void
 .end method
 
-.method public final deflate(Lf50;)V
+.method public final deflate(Ll70;)V
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -192,11 +192,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Ll70;
 
     .line 5
     .line 6
-    iget-wide v0, v0, Lf50;->R:J
+    iget-wide v0, v0, Ll70;->Y:J
 
     .line 7
     .line 8
@@ -204,11 +204,11 @@
 
     .line 9
     .line 10
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 11
     .line 12
-    if-nez v4, :cond_2
+    if-nez v0, :cond_2
 
     .line 13
     .line 14
@@ -230,33 +230,33 @@
     .line 22
     .line 23
     :cond_0
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:La61;
+    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:Lee1;
 
     .line 24
     .line 25
-    iget-wide v1, p1, Lf50;->R:J
+    iget-wide v1, p1, Ll70;->Y:J
 
     .line 26
     .line 27
-    invoke-virtual {v0, p1, v1, v2}, La61;->write(Lf50;J)V
+    invoke-virtual {v0, p1, v1, v2}, Lee1;->write(Ll70;J)V
 
     .line 28
     .line 29
     .line 30
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:La61;
+    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflaterSink:Lee1;
 
     .line 31
     .line 32
-    invoke-virtual {v0}, La61;->flush()V
+    invoke-virtual {v0}, Lee1;->flush()V
 
     .line 33
     .line 34
     .line 35
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Ll70;
 
     .line 36
     .line 37
-    invoke-static {}, Lokhttp3/internal/ws/MessageDeflaterKt;->access$getEMPTY_DEFLATE_BLOCK$p()Ly60;
+    invoke-static {}, Lokhttp3/internal/ws/MessageDeflaterKt;->access$getEMPTY_DEFLATE_BLOCK$p()Lo90;
 
     .line 38
     .line 39
@@ -264,7 +264,7 @@
     move-result-object v1
 
     .line 41
-    invoke-direct {p0, v0, v1}, Lokhttp3/internal/ws/MessageDeflater;->endsWith(Lf50;Ly60;)Z
+    invoke-direct {p0, v0, v1}, Lokhttp3/internal/ws/MessageDeflater;->endsWith(Ll70;Lo90;)Z
 
     .line 42
     .line 43
@@ -272,7 +272,7 @@
     move-result v0
 
     .line 45
-    iget-object v1, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lf50;
+    iget-object v1, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Ll70;
 
     .line 46
     .line 47
@@ -280,7 +280,7 @@
 
     .line 48
     .line 49
-    iget-wide v2, v1, Lf50;->R:J
+    iget-wide v2, v1, Ll70;->Y:J
 
     .line 50
     .line 51
@@ -291,91 +291,93 @@
     sub-long/2addr v2, v4
 
     .line 54
-    sget-object v0, Lyr;->a:Ld50;
+    new-instance v0, Lj70;
 
     .line 55
     .line 56
-    invoke-virtual {v1, v0}, Lf50;->M(Ld50;)Ld50;
+    invoke-direct {v0}, Lj70;-><init>()V
 
     .line 57
     .line 58
     .line 59
-    move-result-object v0
+    invoke-virtual {v1, v0}, Ll70;->R(Lj70;)V
 
     .line 60
+    .line 61
+    .line 62
     :try_start_0
-    invoke-virtual {v0, v2, v3}, Ld50;->f(J)V
+    invoke-virtual {v0, v2, v3}, Lj70;->g(J)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 61
-    .line 62
     .line 63
-    invoke-virtual {v0}, Ld50;->close()V
-
     .line 64
     .line 65
+    invoke-virtual {v0}, Lj70;->close()V
+
     .line 66
+    .line 67
+    .line 68
     goto :goto_0
 
-    .line 67
+    .line 69
     :catchall_0
-    move-exception p1
+    move-exception p0
 
-    .line 68
+    .line 70
     :try_start_1
-    throw p1
+    throw p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 69
-    :catchall_1
-    move-exception v1
-
-    .line 70
-    invoke-static {v0, p1}, Lzd7;->n(Ljava/io/Closeable;Ljava/lang/Throwable;)V
-
     .line 71
-    .line 72
-    .line 73
-    throw v1
+    :catchall_1
+    move-exception p1
 
+    .line 72
+    invoke-static {v0, p0}, Lj68;->j(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    .line 73
     .line 74
+    .line 75
+    throw p1
+
+    .line 76
     :cond_1
     const/4 v0, 0x0
 
-    .line 75
-    invoke-virtual {v1, v0}, Lf50;->x0(I)V
-
-    .line 76
     .line 77
-    .line 78
-    :goto_0
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Lf50;
+    invoke-virtual {v1, v0}, Ll70;->G0(I)V
 
+    .line 78
     .line 79
     .line 80
-    iget-wide v1, v0, Lf50;->R:J
+    :goto_0
+    iget-object p0, p0, Lokhttp3/internal/ws/MessageDeflater;->deflatedBytes:Ll70;
 
     .line 81
     .line 82
-    invoke-virtual {p1, v0, v1, v2}, Lf50;->write(Lf50;J)V
+    iget-wide v0, p0, Ll70;->Y:J
 
     .line 83
     .line 84
+    invoke-virtual {p1, p0, v0, v1}, Ll70;->write(Ll70;J)V
+
     .line 85
+    .line 86
+    .line 87
     return-void
 
-    .line 86
-    :cond_2
-    const-string p1, "Failed requirement."
-
-    .line 87
     .line 88
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    :cond_2
+    const-string p0, "Failed requirement."
 
     .line 89
     .line 90
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
+
     .line 91
+    .line 92
+    .line 93
     return-void
 .end method

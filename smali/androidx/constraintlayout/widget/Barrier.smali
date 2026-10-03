@@ -1,14 +1,14 @@
 .class public Landroidx/constraintlayout/widget/Barrier;
 .super Landroidx/constraintlayout/widget/ConstraintHelper;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public a0:I
+.field public j0:I
 
-.field public b0:I
+.field public k0:I
 
-.field public c0:Lqx;
+.field public l0:Luz;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     .line 7
     .line 8
-    iput-object v0, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->Q:[I
+    iput-object v0, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->c0:[I
 
     .line 9
     .line 10
@@ -42,11 +42,11 @@
     .line 13
     .line 14
     .line 15
-    iput-object v0, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->W:Ljava/util/HashMap;
+    iput-object v0, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->i0:Ljava/util/HashMap;
 
     .line 16
     .line 17
-    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->S:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->e0:Landroid/content/Context;
 
     .line 18
     .line 19
@@ -81,11 +81,11 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lqx;
+    new-instance v0, Luz;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Lsg2;-><init>()V
+    invoke-direct {v0}, Lxt2;-><init>()V
 
     .line 7
     .line 8
@@ -93,26 +93,26 @@
     const/4 v1, 0x0
 
     .line 10
-    iput v1, v0, Lqx;->s0:I
+    iput v1, v0, Luz;->s0:I
 
     .line 11
     .line 12
     const/4 v2, 0x1
 
     .line 13
-    iput-boolean v2, v0, Lqx;->t0:Z
+    iput-boolean v2, v0, Luz;->t0:Z
 
     .line 14
     .line 15
-    iput v1, v0, Lqx;->u0:I
+    iput v1, v0, Luz;->u0:I
 
     .line 16
     .line 17
-    iput-boolean v1, v0, Lqx;->v0:Z
+    iput-boolean v1, v0, Luz;->v0:Z
 
     .line 18
     .line 19
-    iput-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->c0:Lqx;
+    iput-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->l0:Luz;
 
     .line 20
     .line 21
@@ -128,7 +128,7 @@
     move-result-object v0
 
     .line 27
-    sget-object v3, Lbb5;->ConstraintLayout_Layout:[I
+    sget-object v3, Lzu5;->ConstraintLayout_Layout:[I
 
     .line 28
     .line 29
@@ -148,7 +148,7 @@
     move-result v0
 
     .line 37
-    const/4 v3, 0x0
+    move v3, v1
 
     .line 38
     :goto_0
@@ -164,7 +164,7 @@
     move-result v4
 
     .line 44
-    sget v5, Lbb5;->ConstraintLayout_Layout_barrierDirection:I
+    sget v5, Lzu5;->ConstraintLayout_Layout_barrierDirection:I
 
     .line 45
     .line 46
@@ -189,7 +189,7 @@
 
     .line 56
     :cond_0
-    sget v5, Lbb5;->ConstraintLayout_Layout_barrierAllowsGoneWidgets:I
+    sget v5, Lzu5;->ConstraintLayout_Layout_barrierAllowsGoneWidgets:I
 
     .line 57
     .line 58
@@ -197,7 +197,7 @@
 
     .line 59
     .line 60
-    iget-object v5, p0, Landroidx/constraintlayout/widget/Barrier;->c0:Lqx;
+    iget-object v5, p0, Landroidx/constraintlayout/widget/Barrier;->l0:Luz;
 
     .line 61
     .line 62
@@ -209,7 +209,7 @@
     move-result v4
 
     .line 66
-    iput-boolean v4, v5, Lqx;->t0:Z
+    iput-boolean v4, v5, Luz;->t0:Z
 
     .line 67
     .line 68
@@ -217,7 +217,7 @@
 
     .line 69
     :cond_1
-    sget v5, Lbb5;->ConstraintLayout_Layout_barrierMargin:I
+    sget v5, Lzu5;->ConstraintLayout_Layout_barrierMargin:I
 
     .line 70
     .line 71
@@ -233,11 +233,11 @@
     move-result v4
 
     .line 77
-    iget-object v5, p0, Landroidx/constraintlayout/widget/Barrier;->c0:Lqx;
+    iget-object v5, p0, Landroidx/constraintlayout/widget/Barrier;->l0:Luz;
 
     .line 78
     .line 79
-    iput v4, v5, Lqx;->u0:I
+    iput v4, v5, Luz;->u0:I
 
     .line 80
     .line 81
@@ -257,11 +257,11 @@
     .line 86
     .line 87
     :cond_4
-    iget-object p1, p0, Landroidx/constraintlayout/widget/Barrier;->c0:Lqx;
+    iget-object p1, p0, Landroidx/constraintlayout/widget/Barrier;->l0:Luz;
 
     .line 88
     .line 89
-    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->T:Lsg2;
+    iput-object p1, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->f0:Lxt2;
 
     .line 90
     .line 91
@@ -274,55 +274,55 @@
 .end method
 
 .method public getAllowsGoneWidget()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->c0:Lqx;
+    iget-object p0, p0, Landroidx/constraintlayout/widget/Barrier;->l0:Luz;
 
     .line 2
     .line 3
-    iget-boolean v0, v0, Lqx;->t0:Z
+    iget-boolean p0, p0, Luz;->t0:Z
 
     .line 4
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public getMargin()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->c0:Lqx;
+    iget-object p0, p0, Landroidx/constraintlayout/widget/Barrier;->l0:Luz;
 
     .line 2
     .line 3
-    iget v0, v0, Lqx;->u0:I
+    iget p0, p0, Luz;->u0:I
 
     .line 4
     .line 5
-    return v0
+    return p0
 .end method
 
 .method public getType()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/constraintlayout/widget/Barrier;->a0:I
+    iget p0, p0, Landroidx/constraintlayout/widget/Barrier;->j0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public final h(Lyt0;Z)V
+.method public final h(Le11;Z)V
     .locals 5
 
     .line 1
-    iget v0, p0, Landroidx/constraintlayout/widget/Barrier;->a0:I
+    iget v0, p0, Landroidx/constraintlayout/widget/Barrier;->j0:I
 
     .line 2
     .line 3
-    iput v0, p0, Landroidx/constraintlayout/widget/Barrier;->b0:I
+    iput v0, p0, Landroidx/constraintlayout/widget/Barrier;->k0:I
 
     .line 4
     .line 5
@@ -346,7 +346,7 @@
 
     .line 12
     .line 13
-    iput v3, p0, Landroidx/constraintlayout/widget/Barrier;->b0:I
+    iput v3, p0, Landroidx/constraintlayout/widget/Barrier;->k0:I
 
     .line 14
     .line 15
@@ -358,7 +358,7 @@
 
     .line 17
     .line 18
-    iput v1, p0, Landroidx/constraintlayout/widget/Barrier;->b0:I
+    iput v1, p0, Landroidx/constraintlayout/widget/Barrier;->k0:I
 
     .line 19
     .line 20
@@ -370,7 +370,7 @@
 
     .line 22
     .line 23
-    iput v1, p0, Landroidx/constraintlayout/widget/Barrier;->b0:I
+    iput v1, p0, Landroidx/constraintlayout/widget/Barrier;->k0:I
 
     .line 24
     .line 25
@@ -382,13 +382,13 @@
 
     .line 27
     .line 28
-    iput v3, p0, Landroidx/constraintlayout/widget/Barrier;->b0:I
+    iput v3, p0, Landroidx/constraintlayout/widget/Barrier;->k0:I
 
     .line 29
     .line 30
     :cond_3
     :goto_0
-    instance-of p2, p1, Lqx;
+    instance-of p2, p1, Luz;
 
     .line 31
     .line 32
@@ -396,15 +396,15 @@
 
     .line 33
     .line 34
-    check-cast p1, Lqx;
+    check-cast p1, Luz;
 
     .line 35
     .line 36
-    iget p2, p0, Landroidx/constraintlayout/widget/Barrier;->b0:I
+    iget p0, p0, Landroidx/constraintlayout/widget/Barrier;->k0:I
 
     .line 37
     .line 38
-    iput p2, p1, Lqx;->s0:I
+    iput p0, p1, Luz;->s0:I
 
     .line 39
     .line 40
@@ -413,14 +413,14 @@
 .end method
 
 .method public setAllowsGoneWidget(Z)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->c0:Lqx;
+    iget-object p0, p0, Landroidx/constraintlayout/widget/Barrier;->l0:Luz;
 
     .line 2
     .line 3
-    iput-boolean p1, v0, Lqx;->t0:Z
+    iput-boolean p1, p0, Luz;->t0:Z
 
     .line 4
     .line 5
@@ -454,40 +454,39 @@
     int-to-float p1, p1
 
     .line 12
-    mul-float p1, p1, v0
+    mul-float/2addr p1, v0
 
     .line 13
-    .line 14
     const/high16 v0, 0x3f000000    # 0.5f
 
+    .line 14
     .line 15
-    .line 16
     add-float/2addr p1, v0
 
-    .line 17
+    .line 16
     float-to-int p1, p1
 
+    .line 17
+    iget-object p0, p0, Landroidx/constraintlayout/widget/Barrier;->l0:Luz;
+
     .line 18
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->c0:Lqx;
-
     .line 19
-    .line 20
-    iput p1, v0, Lqx;->u0:I
+    iput p1, p0, Luz;->u0:I
 
+    .line 20
     .line 21
-    .line 22
     return-void
 .end method
 
 .method public setMargin(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/Barrier;->c0:Lqx;
+    iget-object p0, p0, Landroidx/constraintlayout/widget/Barrier;->l0:Luz;
 
     .line 2
     .line 3
-    iput p1, v0, Lqx;->u0:I
+    iput p1, p0, Luz;->u0:I
 
     .line 4
     .line 5
@@ -498,7 +497,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/constraintlayout/widget/Barrier;->a0:I
+    iput p1, p0, Landroidx/constraintlayout/widget/Barrier;->j0:I
 
     .line 2
     .line 3

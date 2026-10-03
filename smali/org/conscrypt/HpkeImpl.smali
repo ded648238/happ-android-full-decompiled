@@ -1,6 +1,6 @@
 .class public abstract Lorg/conscrypt/HpkeImpl;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lorg/conscrypt/HpkeSpi;
@@ -103,27 +103,27 @@
 
     .line 2
     .line 3
-    invoke-static {p2}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    invoke-static {p3}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     .line 8
     .line 9
-    array-length p1, p2
+    array-length p0, p2
 
     .line 10
-    if-gtz p1, :cond_0
+    if-gtz p0, :cond_0
 
     .line 11
     .line 12
-    array-length p1, p3
+    array-length p0, p3
 
     .line 13
-    if-gtz p1, :cond_0
+    if-gtz p0, :cond_0
 
     .line 14
     .line 15
@@ -131,11 +131,11 @@
 
     .line 16
     :cond_0
-    const-string p1, "PSK authentication not supported"
+    const-string p0, "PSK authentication not supported"
 
     .line 17
     .line 18
-    invoke-static {p1}, Lfn;->l(Ljava/lang/String;)V
+    invoke-static {p0}, Lra;->g(Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -144,11 +144,11 @@
 
     .line 22
     :cond_1
-    const-string p1, "Asymmetric authentication not supported"
+    const-string p0, "Asymmetric authentication not supported"
 
     .line 23
     .line 24
-    invoke-static {p1}, Lfn;->l(Ljava/lang/String;)V
+    invoke-static {p0}, Lra;->g(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -157,14 +157,14 @@
 .end method
 
 .method private checkInitialised()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
+    iget-object p0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
@@ -172,11 +172,11 @@
 
     .line 6
     :cond_0
-    const-string v0, "Not initialised"
+    const-string p0, "Not initialised"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -185,7 +185,7 @@
 .end method
 
 .method private checkIsRecipient()V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Lorg/conscrypt/HpkeImpl;->checkInitialised()V
@@ -193,11 +193,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lorg/conscrypt/HpkeImpl;->encapsulated:[B
+    iget-object p0, p0, Lorg/conscrypt/HpkeImpl;->encapsulated:[B
 
     .line 5
     .line 6
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 7
     .line 8
@@ -205,11 +205,11 @@
 
     .line 9
     :cond_0
-    const-string v0, "Internal error"
+    const-string p0, "Internal error"
 
     .line 10
     .line 11
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -218,7 +218,7 @@
 .end method
 
 .method private checkIsSender()V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Lorg/conscrypt/HpkeImpl;->checkInitialised()V
@@ -226,11 +226,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lorg/conscrypt/HpkeImpl;->encapsulated:[B
+    iget-object p0, p0, Lorg/conscrypt/HpkeImpl;->encapsulated:[B
 
     .line 5
     .line 6
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
@@ -238,11 +238,11 @@
 
     .line 9
     :cond_0
-    const-string v0, "Internal error"
+    const-string p0, "Internal error"
 
     .line 10
     .line 11
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -251,14 +251,14 @@
 .end method
 
 .method private checkNotInitialised()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
+    iget-object p0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 4
     .line 5
@@ -266,11 +266,11 @@
 
     .line 6
     :cond_0
-    const-string v0, "Already initialised"
+    const-string p0, "Already initialised"
 
     .line 7
     .line 8
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -281,7 +281,7 @@
 
 # virtual methods
 .method public engineExport(I[B)[B
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Lorg/conscrypt/HpkeImpl;->checkInitialised()V
@@ -316,48 +316,48 @@
     int-to-long v2, p1
 
     .line 17
-    cmp-long v4, v2, v0
+    cmp-long v2, v2, v0
 
     .line 18
     .line 19
-    if-gtz v4, :cond_0
+    if-gtz v2, :cond_0
 
     .line 20
     .line 21
-    iget-object v0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
+    iget-object p0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
 
     .line 22
     .line 23
-    invoke-static {v0, p2, p1}, Lorg/conscrypt/NativeCrypto;->EVP_HPKE_CTX_export(Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;[BI)[B
+    invoke-static {p0, p2, p1}, Lorg/conscrypt/NativeCrypto;->EVP_HPKE_CTX_export(Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;[BI)[B
 
     .line 24
     .line 25
     .line 26
-    move-result-object p1
+    move-result-object p0
 
     .line 27
-    return-object p1
+    return-object p0
 
     .line 28
     :cond_0
-    new-instance p2, Ljava/lang/IllegalArgumentException;
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
     .line 29
     .line 30
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
-    const-string v3, "Export length must be between 0 and "
+    const-string v2, "Export length must be between 0 and "
 
     .line 33
     .line 34
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 38
     .line 39
@@ -366,17 +366,17 @@
 
     .line 41
     .line 42
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 43
     .line 44
     .line 45
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 46
     .line 47
     .line 48
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 49
     .line 50
@@ -384,12 +384,12 @@
     move-result-object p1
 
     .line 52
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 53
     .line 54
     .line 55
-    throw p2
+    throw p0
 .end method
 
 .method public engineInitRecipient([BLjava/security/PrivateKey;[BLjava/security/PublicKey;[B[B)V
@@ -483,11 +483,11 @@
 
     .line 42
     :cond_0
-    const-string p1, "null recipient key"
+    const-string p0, "null recipient key"
 
     .line 43
     .line 44
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 45
     .line 46
@@ -496,32 +496,32 @@
 
     .line 48
     :cond_1
-    new-instance p2, Ljava/security/InvalidKeyException;
+    new-instance p0, Ljava/security/InvalidKeyException;
 
     .line 49
     .line 50
     array-length p1, p1
 
     .line 51
-    new-instance p3, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 52
     .line 53
-    const-string p4, "Invalid encapsulated length: "
+    const-string p3, "Invalid encapsulated length: "
 
     .line 54
     .line 55
-    invoke-direct {p3, p4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 56
     .line 57
     .line 58
-    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 59
     .line 60
     .line 61
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 62
     .line 63
@@ -529,12 +529,12 @@
     move-result-object p1
 
     .line 65
-    invoke-direct {p2, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidKeyException;-><init>(Ljava/lang/String;)V
 
     .line 66
     .line 67
     .line 68
-    throw p2
+    throw p0
 .end method
 
 .method public engineInitSender(Ljava/security/PublicKey;[BLjava/security/PrivateKey;[B[B)V
@@ -614,11 +614,11 @@
 
     .line 34
     :cond_0
-    const-string p1, "null recipient key"
+    const-string p0, "null recipient key"
 
     .line 35
     .line 36
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 37
     .line 38
@@ -640,7 +640,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p6}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p6}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -708,11 +708,11 @@
 
     .line 37
     :cond_0
-    const-string p1, "null recipient key"
+    const-string p0, "null recipient key"
 
     .line 38
     .line 39
-    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+    invoke-static {p0}, Lbh2;->p(Ljava/lang/String;)V
 
     .line 40
     .line 41
@@ -744,45 +744,45 @@
     .line 8
     .line 9
     :try_start_0
-    iget-object v0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
+    iget-object p0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
 
     .line 10
     .line 11
-    invoke-static {v0, p1, p2}, Lorg/conscrypt/NativeCrypto;->EVP_HPKE_CTX_open(Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;[B[B)[B
+    invoke-static {p0, p1, p2}, Lorg/conscrypt/NativeCrypto;->EVP_HPKE_CTX_open(Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;[B[B)[B
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result-object p0
     :try_end_0
     .catch Ljavax/crypto/BadPaddingException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 15
-    return-object p1
+    return-object p0
 
     .line 16
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 17
-    new-instance p2, Lorg/conscrypt/HpkeDecryptException;
+    new-instance p1, Lorg/conscrypt/HpkeDecryptException;
 
     .line 18
     .line 19
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 20
     .line 21
     .line 22
-    move-result-object p1
+    move-result-object p0
 
     .line 23
-    invoke-direct {p2, p1}, Lorg/conscrypt/HpkeDecryptException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p0}, Lorg/conscrypt/HpkeDecryptException;-><init>(Ljava/lang/String;)V
 
     .line 24
     .line 25
     .line 26
-    throw p2
+    throw p1
 .end method
 
 .method public engineSeal([B[B)[B
@@ -803,23 +803,23 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
+    iget-object p0, p0, Lorg/conscrypt/HpkeImpl;->ctx:Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;
 
     .line 10
     .line 11
-    invoke-static {v0, p1, p2}, Lorg/conscrypt/NativeCrypto;->EVP_HPKE_CTX_seal(Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;[B[B)[B
+    invoke-static {p0, p1, p2}, Lorg/conscrypt/NativeCrypto;->EVP_HPKE_CTX_seal(Lorg/conscrypt/NativeRef$EVP_HPKE_CTX;[B[B)[B
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result-object p0
 
     .line 15
-    return-object p1
+    return-object p0
 .end method
 
 .method public getEncapsulated()[B
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Lorg/conscrypt/HpkeImpl;->checkIsSender()V
@@ -827,11 +827,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lorg/conscrypt/HpkeImpl;->encapsulated:[B
+    iget-object p0, p0, Lorg/conscrypt/HpkeImpl;->encapsulated:[B
 
     .line 5
     .line 6
-    return-object v0
+    return-object p0
 .end method
 
 .method public abstract getPrivateRecipientKeyBytes(Ljava/security/PrivateKey;)[B

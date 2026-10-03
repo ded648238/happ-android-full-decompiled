@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/ws/MessageInflater;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -18,22 +18,22 @@
         "noContextTakeover",
         "<init>",
         "(Z)V",
-        "Lf50;",
+        "Ll70;",
         "buffer",
-        "Lbh7;",
+        "Lr98;",
         "inflate",
-        "(Lf50;)V",
+        "(Ll70;)V",
         "close",
         "()V",
         "Z",
         "deflatedBytes",
-        "Lf50;",
+        "Ll70;",
         "Ljava/util/zip/Inflater;",
         "inflater",
         "Ljava/util/zip/Inflater;",
-        "Lrp2;",
+        "Ly43;",
         "inflaterSource",
-        "Lrp2;",
+        "Ly43;",
         "okhttp"
     }
     k = 0x1
@@ -47,11 +47,11 @@
 
 
 # instance fields
-.field private final deflatedBytes:Lf50;
+.field private final deflatedBytes:Ll70;
 
 .field private final inflater:Ljava/util/zip/Inflater;
 
-.field private final inflaterSource:Lrp2;
+.field private final inflaterSource:Ly43;
 
 .field private final noContextTakeover:Z
 
@@ -70,7 +70,7 @@
 
     .line 5
     .line 6
-    new-instance p1, Lf50;
+    new-instance p1, Ll70;
 
     .line 7
     .line 8
@@ -79,7 +79,7 @@
     .line 9
     .line 10
     .line 11
-    iput-object p1, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Lf50;
+    iput-object p1, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Ll70;
 
     .line 12
     .line 13
@@ -99,25 +99,25 @@
 
     .line 20
     .line 21
-    new-instance v1, Lrp2;
+    new-instance v1, Ly43;
 
     .line 22
     .line 23
-    new-instance v2, Lhc5;
+    new-instance v2, Liw5;
 
     .line 24
     .line 25
-    invoke-direct {v2, p1}, Lhc5;-><init>(Lle6;)V
+    invoke-direct {v2, p1}, Liw5;-><init>(Ld27;)V
 
     .line 26
     .line 27
     .line 28
-    invoke-direct {v1, v2, v0}, Lrp2;-><init>(Lhc5;Ljava/util/zip/Inflater;)V
+    invoke-direct {v1, v2, v0}, Ly43;-><init>(Liw5;Ljava/util/zip/Inflater;)V
 
     .line 29
     .line 30
     .line 31
-    iput-object v1, p0, Lokhttp3/internal/ws/MessageInflater;->inflaterSource:Lrp2;
+    iput-object v1, p0, Lokhttp3/internal/ws/MessageInflater;->inflaterSource:Ly43;
 
     .line 32
     .line 33
@@ -127,7 +127,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -135,11 +135,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageInflater;->inflaterSource:Lrp2;
+    iget-object p0, p0, Lokhttp3/internal/ws/MessageInflater;->inflaterSource:Ly43;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lrp2;->close()V
+    invoke-virtual {p0}, Ly43;->close()V
 
     .line 4
     .line 5
@@ -147,7 +147,7 @@
     return-void
 .end method
 
-.method public final inflate(Lf50;)V
+.method public final inflate(Ll70;)V
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -161,11 +161,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Ll70;
 
     .line 5
     .line 6
-    iget-wide v0, v0, Lf50;->R:J
+    iget-wide v0, v0, Ll70;->Y:J
 
     .line 7
     .line 8
@@ -173,11 +173,11 @@
 
     .line 9
     .line 10
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 11
     .line 12
-    if-nez v4, :cond_2
+    if-nez v0, :cond_2
 
     .line 13
     .line 14
@@ -199,16 +199,16 @@
     .line 22
     .line 23
     :cond_0
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Ll70;
 
     .line 24
     .line 25
-    invoke-virtual {v0, p1}, Lf50;->G(Lle6;)J
+    invoke-virtual {v0, p1}, Ll70;->M(Ld27;)J
 
     .line 26
     .line 27
     .line 28
-    iget-object v0, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Ll70;
 
     .line 29
     .line 30
@@ -217,7 +217,7 @@
     .line 31
     .line 32
     .line 33
-    invoke-virtual {v0, v1}, Lf50;->J0(I)V
+    invoke-virtual {v0, v1}, Ll70;->W0(I)V
 
     .line 34
     .line 35
@@ -234,11 +234,11 @@
     move-result-wide v0
 
     .line 42
-    iget-object v2, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Lf50;
+    iget-object v2, p0, Lokhttp3/internal/ws/MessageInflater;->deflatedBytes:Ll70;
 
     .line 43
     .line 44
-    iget-wide v2, v2, Lf50;->R:J
+    iget-wide v2, v2, Ll70;->Y:J
 
     .line 45
     .line 46
@@ -246,7 +246,7 @@
 
     .line 47
     :cond_1
-    iget-object v2, p0, Lokhttp3/internal/ws/MessageInflater;->inflaterSource:Lrp2;
+    iget-object v2, p0, Lokhttp3/internal/ws/MessageInflater;->inflaterSource:Ly43;
 
     .line 48
     .line 49
@@ -257,7 +257,7 @@
     .line 52
     .line 53
     .line 54
-    invoke-virtual {v2, p1, v3, v4}, Lrp2;->f(Lf50;J)J
+    invoke-virtual {v2, p1, v3, v4}, Ly43;->g(Ll70;J)J
 
     .line 55
     .line 56
@@ -274,11 +274,11 @@
     move-result-wide v2
 
     .line 63
-    cmp-long v4, v2, v0
+    cmp-long v2, v2, v0
 
     .line 64
     .line 65
-    if-ltz v4, :cond_1
+    if-ltz v2, :cond_1
 
     .line 66
     .line 67
@@ -286,11 +286,11 @@
 
     .line 68
     :cond_2
-    const-string p1, "Failed requirement."
+    const-string p0, "Failed requirement."
 
     .line 69
     .line 70
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 71
     .line 72

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -166,7 +166,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lor;->E0([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Lkt;->P0([Ljava/lang/Object;)Ljava/util/List;
 
     .line 5
     .line 6
@@ -179,10 +179,10 @@
     .line 9
     .line 10
     .line 11
-    move-result-object p1
+    move-result-object p0
 
     .line 12
-    return-object p1
+    return-object p0
 .end method
 
 .method public final build()Lokhttp3/dnsoverhttps/DnsOverHttps;
@@ -273,11 +273,11 @@
 
     .line 42
     :cond_0
-    const-string v0, "url not set"
+    const-string p0, "url not set"
 
     .line 43
     .line 44
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 45
     .line 46
@@ -286,11 +286,11 @@
 
     .line 48
     :cond_1
-    const-string v0, "client not set"
+    const-string p0, "client not set"
 
     .line 49
     .line 50
-    invoke-static {v0}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 51
     .line 52
@@ -315,7 +315,7 @@
 .end method
 
 .method public final getBootstrapDnsHosts$okhttp_dnsoverhttps()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -326,88 +326,88 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->bootstrapDnsHosts:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->bootstrapDnsHosts:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getClient$okhttp_dnsoverhttps()Lokhttp3/OkHttpClient;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->client:Lokhttp3/OkHttpClient;
+    iget-object p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->client:Lokhttp3/OkHttpClient;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getIncludeIPv6$okhttp_dnsoverhttps()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->includeIPv6:Z
+    iget-boolean p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->includeIPv6:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getPost$okhttp_dnsoverhttps()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->post:Z
+    iget-boolean p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->post:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getResolvePrivateAddresses$okhttp_dnsoverhttps()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->resolvePrivateAddresses:Z
+    iget-boolean p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->resolvePrivateAddresses:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getResolvePublicAddresses$okhttp_dnsoverhttps()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->resolvePublicAddresses:Z
+    iget-boolean p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->resolvePublicAddresses:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final getSystemDns$okhttp_dnsoverhttps()Lokhttp3/Dns;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->systemDns:Lokhttp3/Dns;
+    iget-object p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->systemDns:Lokhttp3/Dns;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getUrl$okhttp_dnsoverhttps()Lokhttp3/HttpUrl;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->url:Lokhttp3/HttpUrl;
+    iget-object p0, p0, Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;->url:Lokhttp3/HttpUrl;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final includeIPv6(Z)Lokhttp3/dnsoverhttps/DnsOverHttps$Builder;

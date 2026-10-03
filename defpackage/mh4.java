@@ -1,42 +1,52 @@
 package defpackage;
 
-import android.window.BackEvent;
-import android.window.OnBackAnimationCallback;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class mh4 implements n63 {
+    public final int X;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class mh4 implements OnBackAnimationCallback {
-    public final /* synthetic */ kh4 a;
-    public final /* synthetic */ kh4 b;
-    public final /* synthetic */ lh4 c;
-    public final /* synthetic */ lh4 d;
-
-    public mh4(kh4 kh4Var, kh4 kh4Var2, lh4 lh4Var, lh4 lh4Var2) {
-        this.a = kh4Var;
-        this.b = kh4Var2;
-        this.c = lh4Var;
-        this.d = lh4Var2;
+    public mh4(int i) {
+        this.X = i;
+        if (i >= 0) {
+            return;
+        }
+        j53.a("maxLength must be at least zero");
     }
 
-    @Override // android.window.OnBackAnimationCallback
-    public final void onBackCancelled() {
-        this.d.invoke();
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof mh4) && this.X == ((mh4) obj).X;
     }
 
-    @Override // android.window.OnBackInvokedCallback
-    public final void onBackInvoked() {
-        this.c.invoke();
+    @Override // defpackage.n63
+    public final void g(gp6 gp6Var) {
+        uo3[] uo3VarArr = ep6.a;
+        fp6 fp6Var = dp6.R;
+        uo3 uo3Var = ep6.a[29];
+        Integer valueOf = Integer.valueOf(this.X);
+        fp6Var.getClass();
+        gp6Var.a(fp6Var, valueOf);
     }
 
-    @Override // android.window.OnBackAnimationCallback
-    public final void onBackProgressed(BackEvent backEvent) {
-        backEvent.getClass();
-        this.b.invoke(new bx(backEvent));
+    @Override // defpackage.n63
+    public final void h(eq7 eq7Var) {
+        s75 s75Var = eq7Var.Z;
+        if (s75Var.length() > this.X) {
+            int length = s75Var.length();
+            fq7 fq7Var = eq7Var.X;
+            eq7Var.c(0, length, fq7Var.Z.toString());
+            eq7Var.f(fq7Var.c0);
+            eq7Var.a().y();
+        }
     }
 
-    @Override // android.window.OnBackAnimationCallback
-    public final void onBackStarted(BackEvent backEvent) {
-        backEvent.getClass();
-        this.a.invoke(new bx(backEvent));
+    public final int hashCode() {
+        return Integer.hashCode(this.X);
+    }
+
+    public final String toString() {
+        return eb7.l(new StringBuilder("InputTransformation.maxLength("), this.X, ')');
     }
 }

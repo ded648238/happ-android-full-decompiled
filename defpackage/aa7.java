@@ -1,12 +1,37 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class aa7 implements by4 {
-    public static final aa7 a = new aa7();
+import java.nio.charset.Charset;
+import java.nio.charset.UnsupportedCharsetException;
 
-    @Override // defpackage.by4
-    public final boolean test(Object obj) {
-        return true;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class aa7 {
+    public static final Charset a = Charset.defaultCharset();
+    public static final Charset b;
+    public static final Charset c;
+    public static final boolean d;
+
+    static {
+        Charset charset;
+        Charset charset2;
+        Charset charset3 = null;
+        try {
+            charset = Charset.forName("SJIS");
+        } catch (UnsupportedCharsetException unused) {
+            charset = null;
+        }
+        b = charset;
+        try {
+            charset2 = Charset.forName("GB2312");
+        } catch (UnsupportedCharsetException unused2) {
+            charset2 = null;
+        }
+        c = charset2;
+        try {
+            charset3 = Charset.forName("EUC_JP");
+        } catch (UnsupportedCharsetException unused3) {
+        }
+        Charset charset4 = b;
+        d = (charset4 != null && charset4.equals(a)) || (charset3 != null && charset3.equals(a));
     }
 }

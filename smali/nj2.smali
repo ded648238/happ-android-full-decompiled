@@ -1,43 +1,41 @@
 .class public interface abstract Lnj2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/os/IInterface;
+.implements Lnb0;
 
 
-# static fields
-.field public static final d:Ljava/lang/String;
+# virtual methods
+.method public abstract G()Z
+.end method
 
+.method public abstract P()Lnj2;
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public abstract a()Lnj2;
+.end method
 
-    .line 1
-    const/16 v0, 0x24
+.method public abstract d0()Z
+.end method
 
-    .line 2
-    .line 3
-    const/16 v1, 0x2e
+.method public abstract g(Lk58;)Lnj2;
+.end method
 
-    .line 4
-    .line 5
-    const-string v2, "android$support$v4$os$IResultReceiver"
+.method public abstract h()Z
+.end method
 
-    .line 6
-    .line 7
-    invoke-virtual {v2, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+.method public abstract i()Z
+.end method
 
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
+.method public abstract i0()Z
+.end method
 
-    .line 11
-    sput-object v0, Lnj2;->d:Ljava/lang/String;
+.method public abstract j0()Lmj2;
+.end method
 
-    .line 12
-    .line 13
-    return-void
+.method public abstract p()Z
+.end method
+
+.method public abstract t()Z
 .end method

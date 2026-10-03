@@ -1,11 +1,11 @@
 .class public final Lokhttp3/internal/concurrent/TaskQueue$execute$1;
 .super Lokhttp3/internal/concurrent/Task;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/internal/concurrent/TaskQueue;->execute(Ljava/lang/String;JZLg72;)V
+    value = Lokhttp3/internal/concurrent/TaskQueue;->execute(Ljava/lang/String;JZLji2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,30 +35,30 @@
 
 
 # instance fields
-.field final synthetic $block:Lg72;
+.field final synthetic $block:Lji2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lg72;"
+            "Lji2;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ZLg72;)V
+.method public constructor <init>(Ljava/lang/String;ZLji2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Z",
-            "Lg72;",
+            "Lji2;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p3, p0, Lokhttp3/internal/concurrent/TaskQueue$execute$1;->$block:Lg72;
+    iput-object p3, p0, Lokhttp3/internal/concurrent/TaskQueue$execute$1;->$block:Lji2;
 
     .line 2
     .line 3
@@ -76,11 +76,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/concurrent/TaskQueue$execute$1;->$block:Lg72;
+    iget-object p0, p0, Lokhttp3/internal/concurrent/TaskQueue$execute$1;->$block:Lji2;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lg72;->invoke()Ljava/lang/Object;
+    invoke-interface {p0}, Lji2;->invoke()Ljava/lang/Object;
 
     .line 4
     .line 5

@@ -1,8 +1,20 @@
 package defpackage;
 
-import android.content.res.Resources;
+import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class wj5 extends Resources {
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class wj5 extends AtomicReference {
+    public final Object X;
+    public wj5 Y;
+    public wj5 Z;
+
+    public wj5(Object obj, yj5 yj5Var) {
+        super(yj5Var);
+        this.X = obj;
+    }
+
+    public final Object a() {
+        return ((yj5) get()).b;
+    }
 }

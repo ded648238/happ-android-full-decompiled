@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/ConscryptPlatform$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -53,7 +53,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 1
@@ -80,7 +80,7 @@
 
     .line 5
     .line 6
-    const/4 p2, 0x0
+    move p2, v0
 
     .line 7
     :cond_0
@@ -92,7 +92,7 @@
 
     .line 10
     .line 11
-    const/4 p3, 0x0
+    move p3, v0
 
     .line 12
     :cond_1
@@ -110,7 +110,7 @@
 
 # virtual methods
 .method public final atLeastVersion(III)Z
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-static {}, Lorg/conscrypt/Conscrypt;->version()Lorg/conscrypt/Conscrypt$Version;
@@ -118,48 +118,48 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    invoke-virtual {v0}, Lorg/conscrypt/Conscrypt$Version;->major()I
+    invoke-virtual {p0}, Lorg/conscrypt/Conscrypt$Version;->major()I
 
     .line 6
     .line 7
     .line 8
-    move-result v1
+    move-result v0
 
     .line 9
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 10
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
     .line 11
-    if-eq v1, p1, :cond_1
+    if-eq v0, p1, :cond_1
 
     .line 12
     .line 13
-    invoke-virtual {v0}, Lorg/conscrypt/Conscrypt$Version;->major()I
+    invoke-virtual {p0}, Lorg/conscrypt/Conscrypt$Version;->major()I
 
     .line 14
     .line 15
     .line 16
-    move-result p2
+    move-result p0
 
     .line 17
-    if-le p2, p1, :cond_0
+    if-le p0, p1, :cond_0
 
     .line 18
     .line 19
-    return v3
+    return v2
 
     .line 20
     :cond_0
-    return v2
+    return v1
 
     .line 21
     :cond_1
-    invoke-virtual {v0}, Lorg/conscrypt/Conscrypt$Version;->minor()I
+    invoke-virtual {p0}, Lorg/conscrypt/Conscrypt$Version;->minor()I
 
     .line 22
     .line 23
@@ -171,47 +171,47 @@
 
     .line 26
     .line 27
-    invoke-virtual {v0}, Lorg/conscrypt/Conscrypt$Version;->minor()I
+    invoke-virtual {p0}, Lorg/conscrypt/Conscrypt$Version;->minor()I
 
     .line 28
     .line 29
     .line 30
-    move-result p1
+    move-result p0
 
     .line 31
-    if-le p1, p2, :cond_2
+    if-le p0, p2, :cond_2
 
     .line 32
     .line 33
-    return v3
+    return v2
 
     .line 34
     :cond_2
-    return v2
+    return v1
 
     .line 35
     :cond_3
-    invoke-virtual {v0}, Lorg/conscrypt/Conscrypt$Version;->patch()I
+    invoke-virtual {p0}, Lorg/conscrypt/Conscrypt$Version;->patch()I
 
     .line 36
     .line 37
     .line 38
-    move-result p1
+    move-result p0
 
     .line 39
-    if-lt p1, p3, :cond_4
+    if-lt p0, p3, :cond_4
 
     .line 40
     .line 41
-    return v3
+    return v2
 
     .line 42
     :cond_4
-    return v2
+    return v1
 .end method
 
 .method public final buildIfSupported()Lokhttp3/internal/platform/ConscryptPlatform;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p0}, Lokhttp3/internal/platform/ConscryptPlatform$Companion;->isSupported()Z
@@ -219,34 +219,34 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 6
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    new-instance v0, Lokhttp3/internal/platform/ConscryptPlatform;
+    new-instance p0, Lokhttp3/internal/platform/ConscryptPlatform;
 
     .line 9
     .line 10
-    invoke-direct {v0, v1}, Lokhttp3/internal/platform/ConscryptPlatform;-><init>(Lj31;)V
+    invoke-direct {p0, v0}, Lokhttp3/internal/platform/ConscryptPlatform;-><init>(Lib1;)V
 
     .line 11
     .line 12
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    return-object v1
+    return-object v0
 .end method
 
 .method public final isSupported()Z
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-static {}, Lokhttp3/internal/platform/ConscryptPlatform;->access$isSupported$cp()Z
@@ -254,8 +254,8 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method

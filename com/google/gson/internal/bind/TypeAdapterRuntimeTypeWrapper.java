@@ -1,13 +1,14 @@
 package com.google.gson.internal.bind;
 
-import defpackage.dd7;
-import defpackage.h43;
-import defpackage.r23;
+import com.google.gson.internal.bind.ReflectiveTypeAdapterFactory;
+import defpackage.m58;
+import defpackage.nk3;
+import defpackage.xi3;
 import java.lang.reflect.Type;
 import java.lang.reflect.TypeVariable;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 final class TypeAdapterRuntimeTypeWrapper<T> extends com.google.gson.b {
     public final com.google.gson.a a;
     public final com.google.gson.b b;
@@ -20,31 +21,35 @@ final class TypeAdapterRuntimeTypeWrapper<T> extends com.google.gson.b {
     }
 
     @Override // com.google.gson.b
-    public final Object b(r23 r23Var) {
-        return this.b.b(r23Var);
+    public final Object b(xi3 xi3Var) {
+        return this.b.b(xi3Var);
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x003c  */
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x0039, code lost:
+    
+        if ((r0 instanceof com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.Adapter) == false) goto L26;
+     */
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.reflect.Type] */
     @Override // com.google.gson.b
-    public final void c(h43 h43Var, Object obj) {
-        com.google.gson.b bVarD;
-        Type type = this.c;
-        Type type2 = (obj == null || !((type instanceof Class) || (type instanceof TypeVariable))) ? type : obj.getClass();
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final void c(nk3 nk3Var, Object obj) {
+        com.google.gson.b d;
+        ?? r0 = this.c;
+        Class<?> cls = (obj == null || !((r0 instanceof Class) || (r0 instanceof TypeVariable))) ? r0 : obj.getClass();
         com.google.gson.b bVar = this.b;
-        if (type2 != type) {
-            com.google.gson.b bVarE = this.a.e(new dd7(type2));
-            if (bVarE instanceof ReflectiveTypeAdapterFactory.Adapter) {
+        if (cls != r0) {
+            com.google.gson.b e = this.a.e(new m58(cls));
+            if (e instanceof ReflectiveTypeAdapterFactory.Adapter) {
                 com.google.gson.b bVar2 = bVar;
-                while ((bVar2 instanceof SerializationDelegatingTypeAdapter) && (bVarD = ((SerializationDelegatingTypeAdapter) bVar2).d()) != bVar2) {
-                    bVar2 = bVarD;
+                while ((bVar2 instanceof SerializationDelegatingTypeAdapter) && (d = ((SerializationDelegatingTypeAdapter) bVar2).d()) != bVar2) {
+                    bVar2 = d;
                 }
-                if (bVar2 instanceof ReflectiveTypeAdapterFactory.Adapter) {
-                    bVar = bVarE;
-                }
-            } else {
-                bVar = bVarE;
             }
+            bVar = e;
         }
-        bVar.c(h43Var, obj);
+        bVar.c(nk3Var, obj);
     }
 }

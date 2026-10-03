@@ -4,12 +4,12 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.view.ViewGroup;
 import android.view.ViewOverlay;
-import defpackage.a67;
-import defpackage.e27;
+import defpackage.cu7;
+import defpackage.ky7;
 import java.util.Iterator;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class e extends AnimatorListenerAdapter {
     public final /* synthetic */ BaseSlider a;
 
@@ -20,16 +20,16 @@ public final class e extends AnimatorListenerAdapter {
     @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
     public final void onAnimationEnd(Animator animator) {
         super.onAnimationEnd(animator);
-        int i = BaseSlider.K1;
+        int i = BaseSlider.e2;
         BaseSlider baseSlider = this.a;
-        ViewGroup viewGroupC = e27.c(baseSlider);
-        ViewOverlay overlay = viewGroupC == null ? null : viewGroupC.getOverlay();
+        ViewGroup a = cu7.a(baseSlider);
+        ViewOverlay overlay = a == null ? null : a.getOverlay();
         if (overlay == null) {
             return;
         }
-        Iterator it = baseSlider.e0.iterator();
+        Iterator it = baseSlider.n0.iterator();
         while (it.hasNext()) {
-            overlay.remove((a67) it.next());
+            overlay.remove((ky7) it.next());
         }
     }
 }

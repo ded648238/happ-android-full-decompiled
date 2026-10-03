@@ -1,74 +1,91 @@
 .class public final Lkf1;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public T:J
+.field public final a:Lba6;
 
-.field public synthetic U:Ljava/lang/Object;
-
-.field public final synthetic V:Llf1;
-
-.field public W:I
+.field public final b:Ljf1;
 
 
 # direct methods
-.method public constructor <init>(Llf1;Law0;)V
-    .locals 0
+.method public constructor <init>(Lba6;)V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lkf1;->V:Llf1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
-
     .line 4
+    iput-object p1, p0, Lkf1;->a:Lba6;
+
     .line 5
     .line 6
+    new-instance p1, Ljf1;
+
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    invoke-direct {p1, v0}, Ljf1;-><init>(I)V
+
+    .line 10
+    .line 11
+    .line 12
+    iput-object p1, p0, Lkf1;->b:Ljf1;
+
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(Ljava/lang/String;)Ljava/util/List;
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lkf1;->U:Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    iget p1, p0, Lkf1;->W:I
-
     .line 4
-    .line 5
-    const/high16 v0, -0x80000000
+    new-instance v0, Ly20;
 
+    .line 5
     .line 6
+    const/4 v1, 0x3
+
     .line 7
-    or-int/2addr p1, v0
+    invoke-direct {v0, p1, v1}, Ly20;-><init>(Ljava/lang/String;I)V
 
     .line 8
-    iput p1, p0, Lkf1;->W:I
-
     .line 9
     .line 10
-    iget-object p1, p0, Lkf1;->V:Llf1;
+    iget-object p0, p0, Lkf1;->a:Lba6;
 
     .line 11
     .line 12
-    const/4 v0, 0x0
+    const/4 p1, 0x1
 
     .line 13
-    invoke-virtual {p1, v0, p0}, Llf1;->m(Ljava/util/List;Law0;)Ljava/io/Serializable;
+    const/4 v1, 0x0
 
     .line 14
+    invoke-static {p0, p1, v1, v0}, Lhc4;->N(Lba6;ZZLmi2;)Ljava/lang/Object;
+
     .line 15
     .line 16
-    move-result-object p1
-
     .line 17
-    return-object p1
+    move-result-object p0
+
+    .line 18
+    check-cast p0, Ljava/util/List;
+
+    .line 19
+    .line 20
+    return-object p0
 .end method

@@ -1,29 +1,70 @@
 package defpackage;
 
-import java.io.IOException;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.view.View;
+import androidx.transition.Transition;
+import com.google.android.material.behavior.HideBottomViewOnScrollBehavior;
+import com.google.android.material.behavior.HideViewOnScrollBehavior;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class eu2 extends IOException {
-    public boolean Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class eu2 extends AnimatorListenerAdapter {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ Object b;
+    public final /* synthetic */ Object c;
 
-    public static eu2 a() {
-        return new eu2("Protocol message had invalid UTF-8.");
+    public /* synthetic */ eu2(int i, Object obj, Object obj2) {
+        this.a = i;
+        this.c = obj;
+        this.b = obj2;
     }
 
-    public static cu2 b() {
-        return new cu2("Protocol message tag had invalid wire type.");
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public final void onAnimationEnd(Animator animator) {
+        int i = this.a;
+        Object obj = this.b;
+        Object obj2 = this.c;
+        switch (i) {
+            case 0:
+                View view = (View) obj;
+                HideBottomViewOnScrollBehavior hideBottomViewOnScrollBehavior = (HideBottomViewOnScrollBehavior) obj2;
+                hideBottomViewOnScrollBehavior.k = null;
+                if (hideBottomViewOnScrollBehavior.j == 1 && view.getVisibility() == 0) {
+                    view.setVisibility(4);
+                    break;
+                }
+                break;
+            case 1:
+                View view2 = (View) obj;
+                HideViewOnScrollBehavior hideViewOnScrollBehavior = (HideViewOnScrollBehavior) obj2;
+                hideViewOnScrollBehavior.l = null;
+                if (hideViewOnScrollBehavior.k == 1 && view2.getVisibility() == 0) {
+                    view2.setVisibility(4);
+                    break;
+                }
+                break;
+            case 2:
+                ((at) obj).remove(animator);
+                ((Transition) obj2).m0.remove(animator);
+                break;
+            default:
+                nn8 nn8Var = (nn8) obj2;
+                nn8Var.a.e(1.0f);
+                in8.f((View) obj, nn8Var);
+                break;
+        }
     }
 
-    public static eu2 c() {
-        return new eu2("CodedInputStream encountered a malformed varint.");
-    }
-
-    public static eu2 d() {
-        return new eu2("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
-    }
-
-    public static eu2 e() {
-        return new eu2("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
+    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+    public void onAnimationStart(Animator animator) {
+        switch (this.a) {
+            case 2:
+                ((Transition) this.c).m0.add(animator);
+                break;
+            default:
+                super.onAnimationStart(animator);
+                break;
+        }
     }
 }

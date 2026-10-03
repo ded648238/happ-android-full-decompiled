@@ -1,10 +1,10 @@
 .class public abstract Lio/sentry/rrweb/e;
 .super Lio/sentry/rrweb/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public S:Lio/sentry/rrweb/d;
+.field public Z:Lio/sentry/rrweb/d;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     .line 4
     .line 5
     .line 6
-    iput-object p1, p0, Lio/sentry/rrweb/e;->S:Lio/sentry/rrweb/d;
+    iput-object p1, p0, Lio/sentry/rrweb/e;->Z:Lio/sentry/rrweb/d;
 
     .line 7
     .line 8

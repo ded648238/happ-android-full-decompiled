@@ -1,6 +1,6 @@
 .class public final Lj$/time/chrono/x;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lj$/time/chrono/l;
@@ -252,7 +252,7 @@
     return-void
 .end method
 
-.method public static f(Lj$/time/LocalDate;)Lj$/time/chrono/x;
+.method public static n(Lj$/time/LocalDate;)Lj$/time/chrono/x;
     .locals 4
 
     .line 1
@@ -260,7 +260,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0, v0}, Lj$/time/LocalDate;->K(Lj$/time/chrono/ChronoLocalDate;)Z
+    invoke-virtual {p0, v0}, Lj$/time/LocalDate;->J(Lj$/time/chrono/ChronoLocalDate;)Z
 
     .line 4
     .line 5
@@ -335,7 +335,7 @@
 
     .line 35
     .line 36
-    invoke-static {p0}, Lj$/time/f;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lj$/time/g;->a(Ljava/lang/String;)V
 
     .line 37
     .line 38
@@ -343,7 +343,7 @@
     return-object v1
 .end method
 
-.method public static k(I)Lj$/time/chrono/x;
+.method public static q(I)Lj$/time/chrono/x;
     .locals 3
 
     .line 1
@@ -378,7 +378,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0, p0}, Lj$/time/f;->d(Ljava/lang/String;I)V
+    invoke-static {v0, p0}, Lj$/time/g;->b(Ljava/lang/String;I)V
 
     .line 16
     .line 17
@@ -390,23 +390,23 @@
 .end method
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance p1, Ljava/io/InvalidObjectException;
+    new-instance p0, Ljava/io/InvalidObjectException;
 
     .line 2
     .line 3
-    const-string v0, "Deserialization via serialization delegate"
+    const-string p1, "Deserialization via serialization delegate"
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method private writeReplace()Ljava/lang/Object;
@@ -430,48 +430,18 @@
 
 
 # virtual methods
-.method public final synthetic d(Lj$/time/temporal/TemporalField;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/com/android/tools/r8/a;->o(Lj$/time/chrono/l;Lj$/time/temporal/TemporalField;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    return p1
-.end method
-
-.method public final synthetic g(Lj$/time/temporal/TemporalField;)I
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/com/android/tools/r8/a;->l(Lj$/time/chrono/l;Lj$/time/temporal/TemporalField;)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    return p1
-.end method
-
 .method public final getValue()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lj$/time/chrono/x;->a:I
+    iget p0, p0, Lj$/time/chrono/x;->a:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
-.method public final i(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+.method public final l(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
     .locals 1
 
     .line 1
@@ -483,34 +453,34 @@
 
     .line 4
     .line 5
-    sget-object p1, Lj$/time/chrono/u;->c:Lj$/time/chrono/u;
+    sget-object p0, Lj$/time/chrono/u;->c:Lj$/time/chrono/u;
 
     .line 6
     .line 7
-    invoke-virtual {p1, v0}, Lj$/time/chrono/u;->n(Lj$/time/temporal/ChronoField;)Lj$/time/temporal/s;
+    invoke-virtual {p0, v0}, Lj$/time/chrono/u;->v(Lj$/time/temporal/ChronoField;)Lj$/time/temporal/s;
 
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    move-result-object p0
 
     .line 11
-    return-object p1
+    return-object p0
 
     .line 12
     :cond_0
-    invoke-static {p0, p1}, Lj$/time/temporal/p;->d(Lj$/time/temporal/TemporalAccessor;Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
+    invoke-super {p0, p1}, Lj$/time/chrono/l;->l(Lj$/time/temporal/TemporalField;)Lj$/time/temporal/s;
 
     .line 13
     .line 14
     .line 15
-    move-result-object p1
+    move-result-object p0
 
     .line 16
-    return-object p1
+    return-object p0
 .end method
 
-.method public final j()Lj$/time/chrono/x;
+.method public final o()Lj$/time/chrono/x;
     .locals 2
 
     .line 1
@@ -533,99 +503,39 @@
 
     .line 9
     .line 10
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 11
-    return-object v0
+    return-object p0
 
     .line 12
     :cond_0
-    iget v0, p0, Lj$/time/chrono/x;->a:I
+    iget p0, p0, Lj$/time/chrono/x;->a:I
 
     .line 13
     .line 14
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 p0, p0, 0x1
 
     .line 15
     .line 16
-    invoke-static {v0}, Lj$/time/chrono/x;->k(I)Lj$/time/chrono/x;
+    invoke-static {p0}, Lj$/time/chrono/x;->q(I)Lj$/time/chrono/x;
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    move-result-object p0
 
     .line 20
-    return-object v0
-.end method
-
-.method public final l(Lj$/time/temporal/l;)Lj$/time/temporal/l;
-    .locals 3
-
-    .line 1
-    sget-object v0, Lj$/time/temporal/ChronoField;->ERA:Lj$/time/temporal/ChronoField;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0}, Lj$/time/chrono/x;->getValue()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v1
-
-    .line 7
-    int-to-long v1, v1
-
-    .line 8
-    invoke-interface {p1, v1, v2, v0}, Lj$/time/temporal/l;->b(JLj$/time/temporal/TemporalField;)Lj$/time/temporal/l;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
-
-    .line 12
-    return-object p1
+    return-object p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj$/time/chrono/x;->c:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final synthetic x(Lj$/time/temporal/TemporalField;)J
-    .locals 2
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/com/android/tools/r8/a;->m(Lj$/time/chrono/l;Lj$/time/temporal/TemporalField;)J
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-wide v0
-
-    .line 5
-    return-wide v0
-.end method
-
-.method public final synthetic z(Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lj$/com/android/tools/r8/a;->s(Lj$/time/chrono/l;Lj$/time/temporal/TemporalQuery;)Ljava/lang/Object;
+    iget-object p0, p0, Lj$/time/chrono/x;->c:Ljava/lang/String;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
+    return-object p0
 .end method

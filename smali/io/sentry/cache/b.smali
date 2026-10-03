@@ -1,6 +1,6 @@
 .class public final synthetic Lio/sentry/cache/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/FilenameFilter;
@@ -11,17 +11,17 @@
     .locals 0
 
     .line 1
-    const-string p1, ".envelope"
+    const-string p0, ".envelope"
 
     .line 2
     .line 3
-    invoke-virtual {p2, p1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    invoke-virtual {p2, p0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     .line 4
     .line 5
     .line 6
-    move-result p1
+    move-result p0
 
     .line 7
-    return p1
+    return p0
 .end method

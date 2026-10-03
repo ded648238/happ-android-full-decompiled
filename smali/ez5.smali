@@ -1,203 +1,391 @@
-.class public final enum Lez5;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lez5;
+.super Lxz5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final enum Q:Lez5;
+# instance fields
+.field public final a:Ljava/lang/reflect/Type;
 
-.field public static final enum R:Lez5;
+.field public final b:Lxz5;
 
-.field public static final enum S:Lez5;
-
-.field public static final enum T:Lez5;
-
-.field public static final enum U:Lez5;
-
-.field public static final synthetic V:[Lez5;
+.field public final c:Lfw1;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 11
+.method public constructor <init>(Ljava/lang/reflect/Type;)V
+    .locals 3
 
     .line 1
-    new-instance v0, Lez5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "TopBar"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, Lez5;->a:Ljava/lang/reflect/Type;
 
+    .line 5
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    instance-of v0, p1, Ljava/lang/reflect/GenericArrayType;
 
     .line 7
     .line 8
+    if-eqz v0, :cond_4
+
     .line 9
-    sput-object v0, Lez5;->Q:Lez5;
-
     .line 10
+    check-cast p1, Ljava/lang/reflect/GenericArrayType;
+
     .line 11
-    new-instance v1, Lez5;
-
     .line 12
-    .line 13
-    const-string v3, "MainContent"
+    invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
+    .line 13
     .line 14
     .line 15
-    const/4 v4, 0x1
+    move-result-object p1
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 17
     .line 18
     .line 19
-    sput-object v1, Lez5;->R:Lez5;
+    instance-of v0, p1, Ljava/lang/Class;
 
     .line 20
     .line 21
-    new-instance v3, Lez5;
+    if-eqz v0, :cond_0
 
     .line 22
     .line 23
-    const-string v5, "Snackbar"
+    move-object v1, p1
 
     .line 24
-    .line 25
-    const/4 v6, 0x2
+    check-cast v1, Ljava/lang/Class;
 
+    .line 25
     .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, Ljava/lang/Class;->isPrimitive()Z
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, Lez5;->S:Lez5;
+    move-result v2
 
     .line 30
+    if-eqz v2, :cond_0
+
     .line 31
-    new-instance v5, Lez5;
-
     .line 32
+    new-instance p1, Lvz5;
+
     .line 33
-    const-string v7, "Fab"
-
     .line 34
+    invoke-direct {p1, v1}, Lvz5;-><init>(Ljava/lang/Class;)V
+
     .line 35
-    const/4 v8, 0x3
-
     .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 37
+    goto/16 :goto_3
+
     .line 38
     .line 39
-    sput-object v5, Lez5;->T:Lez5;
+    :cond_0
+    instance-of v1, p1, Ljava/lang/reflect/GenericArrayType;
 
     .line 40
     .line 41
-    new-instance v7, Lez5;
+    if-nez v1, :cond_3
 
     .line 42
     .line 43
-    const-string v9, "BottomBar"
+    if-eqz v0, :cond_1
 
     .line 44
     .line 45
-    const/4 v10, 0x4
+    move-object v0, p1
 
     .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    check-cast v0, Ljava/lang/Class;
 
     .line 47
     .line 48
-    .line 49
-    sput-object v7, Lez5;->U:Lez5;
+    invoke-virtual {v0}, Ljava/lang/Class;->isArray()Z
 
+    .line 49
     .line 50
     .line 51
-    const/4 v9, 0x5
+    move-result v0
 
     .line 52
-    new-array v9, v9, [Lez5;
+    if-eqz v0, :cond_1
 
     .line 53
     .line 54
-    aput-object v0, v9, v2
+    goto :goto_1
 
     .line 55
+    :cond_1
+    instance-of v0, p1, Ljava/lang/reflect/WildcardType;
+
     .line 56
-    aput-object v1, v9, v4
-
     .line 57
+    if-eqz v0, :cond_2
+
     .line 58
-    aput-object v3, v9, v6
-
     .line 59
+    new-instance v0, La06;
+
     .line 60
-    aput-object v5, v9, v8
-
     .line 61
+    check-cast p1, Ljava/lang/reflect/WildcardType;
+
     .line 62
-    aput-object v7, v9, v10
-
     .line 63
-    .line 64
-    sput-object v9, Lez5;->V:[Lez5;
+    invoke-direct {v0, p1}, La06;-><init>(Ljava/lang/reflect/WildcardType;)V
 
+    .line 64
     .line 65
     .line 66
+    :goto_0
+    move-object p1, v0
+
+    .line 67
+    goto :goto_3
+
+    .line 68
+    :cond_2
+    new-instance v0, Lmz5;
+
+    .line 69
+    .line 70
+    invoke-direct {v0, p1}, Lmz5;-><init>(Ljava/lang/reflect/Type;)V
+
+    .line 71
+    .line 72
+    .line 73
+    goto :goto_0
+
+    .line 74
+    :cond_3
+    :goto_1
+    new-instance v0, Lez5;
+
+    .line 75
+    .line 76
+    invoke-direct {v0, p1}, Lez5;-><init>(Ljava/lang/reflect/Type;)V
+
+    .line 77
+    .line 78
+    .line 79
+    goto :goto_0
+
+    .line 80
+    :cond_4
+    instance-of v0, p1, Ljava/lang/Class;
+
+    .line 81
+    .line 82
+    if-eqz v0, :cond_9
+
+    .line 83
+    .line 84
+    move-object v0, p1
+
+    .line 85
+    check-cast v0, Ljava/lang/Class;
+
+    .line 86
+    .line 87
+    invoke-virtual {v0}, Ljava/lang/Class;->isArray()Z
+
+    .line 88
+    .line 89
+    .line 90
+    move-result v1
+
+    .line 91
+    if-eqz v1, :cond_9
+
+    .line 92
+    .line 93
+    invoke-virtual {v0}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object p1
+
+    .line 97
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 98
+    .line 99
+    .line 100
+    invoke-virtual {p1}, Ljava/lang/Class;->isPrimitive()Z
+
+    .line 101
+    .line 102
+    .line 103
+    move-result v0
+
+    .line 104
+    if-eqz v0, :cond_5
+
+    .line 105
+    .line 106
+    new-instance v0, Lvz5;
+
+    .line 107
+    .line 108
+    invoke-direct {v0, p1}, Lvz5;-><init>(Ljava/lang/Class;)V
+
+    .line 109
+    .line 110
+    .line 111
+    goto :goto_0
+
+    .line 112
+    :cond_5
+    instance-of v0, p1, Ljava/lang/reflect/GenericArrayType;
+
+    .line 113
+    .line 114
+    if-nez v0, :cond_8
+
+    .line 115
+    .line 116
+    invoke-virtual {p1}, Ljava/lang/Class;->isArray()Z
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v0
+
+    .line 120
+    if-eqz v0, :cond_6
+
+    .line 121
+    .line 122
+    goto :goto_2
+
+    .line 123
+    :cond_6
+    instance-of v0, p1, Ljava/lang/reflect/WildcardType;
+
+    .line 124
+    .line 125
+    if-eqz v0, :cond_7
+
+    .line 126
+    .line 127
+    new-instance v0, La06;
+
+    .line 128
+    .line 129
+    check-cast p1, Ljava/lang/reflect/WildcardType;
+
+    .line 130
+    .line 131
+    invoke-direct {v0, p1}, La06;-><init>(Ljava/lang/reflect/WildcardType;)V
+
+    .line 132
+    .line 133
+    .line 134
+    goto :goto_0
+
+    .line 135
+    :cond_7
+    new-instance v0, Lmz5;
+
+    .line 136
+    .line 137
+    invoke-direct {v0, p1}, Lmz5;-><init>(Ljava/lang/reflect/Type;)V
+
+    .line 138
+    .line 139
+    .line 140
+    goto :goto_0
+
+    .line 141
+    :cond_8
+    :goto_2
+    new-instance v0, Lez5;
+
+    .line 142
+    .line 143
+    invoke-direct {v0, p1}, Lez5;-><init>(Ljava/lang/reflect/Type;)V
+
+    .line 144
+    .line 145
+    .line 146
+    goto :goto_0
+
+    .line 147
+    :goto_3
+    iput-object p1, p0, Lez5;->b:Lxz5;
+
+    .line 148
+    .line 149
+    sget-object p1, Lfw1;->X:Lfw1;
+
+    .line 150
+    .line 151
+    iput-object p1, p0, Lez5;->c:Lfw1;
+
+    .line 152
+    .line 153
     return-void
+
+    .line 154
+    :cond_9
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 155
+    .line 156
+    .line 157
+    move-result-object p0
+
+    .line 158
+    const-string v0, "): "
+
+    .line 159
+    .line 160
+    const-string v1, "Not an array type ("
+
+    .line 161
+    .line 162
+    invoke-static {v1, p0, v0, p1}, Lio/sentry/clientreport/a;->b(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 163
+    .line 164
+    .line 165
+    const/4 p0, 0x0
+
+    .line 166
+    throw p0
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lez5;
-    .locals 1
+
+# virtual methods
+.method public final b()Ljava/lang/reflect/Type;
+    .locals 0
 
     .line 1
-    const-class v0, Lez5;
+    iget-object p0, p0, Lez5;->a:Ljava/lang/reflect/Type;
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lez5;
-
-    .line 8
-    .line 9
     return-object p0
 .end method
 
-.method public static values()[Lez5;
-    .locals 1
+.method public final getAnnotations()Ljava/util/Collection;
+    .locals 0
 
     .line 1
-    sget-object v0, Lez5;->V:[Lez5;
+    iget-object p0, p0, Lez5;->c:Lfw1;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lez5;
-
-    .line 8
-    .line 9
-    return-object v0
+    return-object p0
 .end method

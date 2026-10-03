@@ -1,2070 +1,1418 @@
-.class public final Lsu1;
-.super Landroidx/recyclerview/widget/g;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lsd5;
+.class public abstract Lsu1;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final C:[I
+.field public static final a:Leu0;
 
-.field public static final D:[I
-
-
-# instance fields
-.field public A:I
-
-.field public final B:Ldb;
-
-.field public final a:I
-
-.field public final b:I
-
-.field public final c:Landroid/graphics/drawable/StateListDrawable;
-
-.field public final d:Landroid/graphics/drawable/Drawable;
-
-.field public final e:I
-
-.field public final f:I
-
-.field public final g:Landroid/graphics/drawable/StateListDrawable;
-
-.field public final h:Landroid/graphics/drawable/Drawable;
-
-.field public final i:I
-
-.field public final j:I
-
-.field public k:I
-
-.field public l:I
-
-.field public m:F
-
-.field public n:I
-
-.field public o:I
-
-.field public p:F
-
-.field public q:I
-
-.field public r:I
-
-.field public final s:Landroidx/recyclerview/widget/RecyclerView;
-
-.field public t:Z
-
-.field public u:Z
-
-.field public v:I
-
-.field public w:I
-
-.field public final x:[I
-
-.field public final y:[I
-
-.field public final z:Landroid/animation/ValueAnimator;
+.field public static final b:Leu0;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 35
 
     .line 1
-    const v0, 0x10100a7
+    new-instance v0, Leu0;
 
     .line 2
     .line 3
+    const-string v1, "#ABB7C5"
+
     .line 4
-    filled-new-array {v0}, [I
-
     .line 5
-    .line 6
-    .line 7
-    move-result-object v0
-
-    .line 8
-    sput-object v0, Lsu1;->C:[I
-
-    .line 9
-    .line 10
-    const/4 v0, 0x0
-
-    .line 11
-    new-array v0, v0, [I
-
-    .line 12
-    .line 13
-    sput-object v0, Lsu1;->D:[I
-
-    .line 14
-    .line 15
-    return-void
-.end method
-
-.method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView;Landroid/graphics/drawable/StateListDrawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/StateListDrawable;Landroid/graphics/drawable/Drawable;III)V
-    .locals 4
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    iput v0, p0, Lsu1;->q:I
+    invoke-static {v1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     .line 6
     .line 7
-    iput v0, p0, Lsu1;->r:I
-
     .line 8
+    move-result v1
+
     .line 9
-    iput-boolean v0, p0, Lsu1;->t:Z
+    const-string v2, "#BBBBBB"
 
     .line 10
     .line 11
-    iput-boolean v0, p0, Lsu1;->u:Z
+    move-object v3, v2
 
     .line 12
-    .line 13
-    iput v0, p0, Lsu1;->v:I
+    invoke-static {v3}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
+    .line 13
     .line 14
     .line 15
-    iput v0, p0, Lsu1;->w:I
+    move-result v2
 
     .line 16
-    .line 17
-    const/4 v1, 0x2
+    const-string v4, "#303030"
 
+    .line 17
     .line 18
-    new-array v2, v1, [I
+    invoke-static {v4}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     .line 19
     .line 20
-    iput-object v2, p0, Lsu1;->x:[I
-
     .line 21
+    move-result v4
+
     .line 22
-    new-array v2, v1, [I
+    const-string v5, "#313335"
 
     .line 23
     .line 24
-    iput-object v2, p0, Lsu1;->y:[I
+    invoke-static {v5}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     .line 25
     .line 26
-    new-array v1, v1, [F
-
     .line 27
+    move-result v5
+
     .line 28
-    fill-array-data v1, :array_0
+    const-string v6, "#555555"
 
     .line 29
     .line 30
+    move-object v7, v3
+
     .line 31
-    invoke-static {v1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
+    move v3, v4
 
     .line 32
+    move v4, v5
+
     .line 33
+    invoke-static {v6}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
     .line 34
-    move-result-object v1
-
     .line 35
-    iput-object v1, p0, Lsu1;->z:Landroid/animation/ValueAnimator;
-
     .line 36
+    move-result v5
+
     .line 37
-    iput v0, p0, Lsu1;->A:I
+    const-string v8, "#A4A3A3"
 
     .line 38
     .line 39
-    new-instance v0, Ldb;
+    invoke-static {v8}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     .line 40
     .line 41
-    const/16 v2, 0x8
-
     .line 42
+    move-result v8
+
     .line 43
-    invoke-direct {v0, v2, p0}, Ldb;-><init>(ILjava/lang/Object;)V
+    const-string v9, "#616366"
 
     .line 44
     .line 45
-    .line 46
-    iput-object v0, p0, Lsu1;->B:Ldb;
-
-    .line 47
-    .line 48
-    new-instance v2, Lqu1;
-
-    .line 49
-    .line 50
-    invoke-direct {v2, p0}, Lqu1;-><init>(Lsu1;)V
-
-    .line 51
-    .line 52
-    .line 53
-    iput-object p2, p0, Lsu1;->c:Landroid/graphics/drawable/StateListDrawable;
-
-    .line 54
-    .line 55
-    iput-object p3, p0, Lsu1;->d:Landroid/graphics/drawable/Drawable;
-
-    .line 56
-    .line 57
-    iput-object p4, p0, Lsu1;->g:Landroid/graphics/drawable/StateListDrawable;
-
-    .line 58
-    .line 59
-    iput-object p5, p0, Lsu1;->h:Landroid/graphics/drawable/Drawable;
-
-    .line 60
-    .line 61
-    invoke-virtual {p2}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
-
-    .line 62
-    .line 63
-    .line 64
-    move-result v3
-
-    .line 65
-    invoke-static {p6, v3}, Ljava/lang/Math;->max(II)I
-
-    .line 66
-    .line 67
-    .line 68
-    move-result v3
-
-    .line 69
-    iput v3, p0, Lsu1;->e:I
-
-    .line 70
-    .line 71
-    invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
-
-    .line 72
-    .line 73
-    .line 74
-    move-result v3
-
-    .line 75
-    invoke-static {p6, v3}, Ljava/lang/Math;->max(II)I
-
-    .line 76
-    .line 77
-    .line 78
-    move-result v3
-
-    .line 79
-    iput v3, p0, Lsu1;->f:I
-
-    .line 80
-    .line 81
-    invoke-virtual {p4}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
-
-    .line 82
-    .line 83
-    .line 84
-    move-result p4
-
-    .line 85
-    invoke-static {p6, p4}, Ljava/lang/Math;->max(II)I
-
-    .line 86
-    .line 87
-    .line 88
-    move-result p4
-
-    .line 89
-    iput p4, p0, Lsu1;->i:I
-
-    .line 90
-    .line 91
-    invoke-virtual {p5}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
-
-    .line 92
-    .line 93
-    .line 94
-    move-result p4
-
-    .line 95
-    invoke-static {p6, p4}, Ljava/lang/Math;->max(II)I
-
-    .line 96
-    .line 97
-    .line 98
-    move-result p4
-
-    .line 99
-    iput p4, p0, Lsu1;->j:I
-
-    .line 100
-    .line 101
-    iput p7, p0, Lsu1;->a:I
-
-    .line 102
-    .line 103
-    iput p8, p0, Lsu1;->b:I
-
-    .line 104
-    .line 105
-    const/16 p4, 0xff
-
-    .line 106
-    .line 107
-    invoke-virtual {p2, p4}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
-
-    .line 108
-    .line 109
-    .line 110
-    invoke-virtual {p3, p4}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
-
-    .line 111
-    .line 112
-    .line 113
-    new-instance p2, Lru1;
-
-    .line 114
-    .line 115
-    invoke-direct {p2, p0}, Lru1;-><init>(Lsu1;)V
-
-    .line 116
-    .line 117
-    .line 118
-    invoke-virtual {v1, p2}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
-
-    .line 119
-    .line 120
-    .line 121
-    new-instance p2, Lj30;
-
-    .line 122
-    .line 123
-    const/4 p3, 0x1
-
-    .line 124
-    invoke-direct {p2, p3, p0}, Lj30;-><init>(ILjava/lang/Object;)V
-
-    .line 125
-    .line 126
-    .line 127
-    invoke-virtual {v1, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
-
-    .line 128
-    .line 129
-    .line 130
-    iget-object p2, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 131
-    .line 132
-    if-ne p2, p1, :cond_0
-
-    .line 133
-    .line 134
-    return-void
-
-    .line 135
-    :cond_0
-    if-eqz p2, :cond_3
-
-    .line 136
-    .line 137
-    invoke-virtual {p2, p0}, Landroidx/recyclerview/widget/RecyclerView;->f0(Landroidx/recyclerview/widget/g;)V
-
-    .line 138
-    .line 139
-    .line 140
-    iget-object p2, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 141
-    .line 142
-    iget-object p3, p2, Landroidx/recyclerview/widget/RecyclerView;->k0:Ljava/util/ArrayList;
-
-    .line 143
-    .line 144
-    invoke-virtual {p3, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    .line 145
-    .line 146
-    .line 147
-    iget-object p3, p2, Landroidx/recyclerview/widget/RecyclerView;->l0:Lsd5;
-
-    .line 148
-    .line 149
-    if-ne p3, p0, :cond_1
-
-    .line 150
-    .line 151
-    const/4 p3, 0x0
-
-    .line 152
-    iput-object p3, p2, Landroidx/recyclerview/widget/RecyclerView;->l0:Lsd5;
-
-    .line 153
-    .line 154
-    :cond_1
-    iget-object p2, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 155
-    .line 156
-    iget-object p2, p2, Landroidx/recyclerview/widget/RecyclerView;->a1:Ljava/util/ArrayList;
-
-    .line 157
-    .line 158
-    if-eqz p2, :cond_2
-
-    .line 159
-    .line 160
-    invoke-virtual {p2, v2}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    .line 161
-    .line 162
-    .line 163
-    :cond_2
-    iget-object p2, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 164
-    .line 165
-    invoke-virtual {p2, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 166
-    .line 167
-    .line 168
-    :cond_3
-    iput-object p1, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 169
-    .line 170
-    invoke-virtual {p1, p0}, Landroidx/recyclerview/widget/RecyclerView;->i(Landroidx/recyclerview/widget/g;)V
-
-    .line 171
-    .line 172
-    .line 173
-    iget-object p1, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 174
-    .line 175
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->k0:Ljava/util/ArrayList;
-
-    .line 176
-    .line 177
-    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 178
-    .line 179
-    .line 180
-    iget-object p1, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 181
-    .line 182
-    invoke-virtual {p1, v2}, Landroidx/recyclerview/widget/RecyclerView;->j(Ltd5;)V
-
-    .line 183
-    .line 184
-    .line 185
-    return-void
-
-    .line 186
-    nop
-
-    .line 187
-    :array_0
-    .array-data 4
-        0x0
-        0x3f800000    # 1.0f
-    .end array-data
-.end method
-
-.method public static k(FF[IIII)I
-    .locals 2
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    aget v0, p2, v0
-
-    .line 3
-    .line 4
-    const/4 v1, 0x0
-
-    .line 5
-    aget p2, p2, v1
-
-    .line 6
-    .line 7
-    sub-int/2addr v0, p2
-
-    .line 8
-    if-nez v0, :cond_0
-
-    .line 9
-    .line 10
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    sub-float/2addr p1, p0
-
-    .line 12
-    int-to-float p0, v0
-
-    .line 13
-    div-float/2addr p1, p0
-
-    .line 14
-    sub-int/2addr p3, p5
-
-    .line 15
-    int-to-float p0, p3
-
-    .line 16
-    mul-float p1, p1, p0
-
-    .line 17
-    .line 18
-    float-to-int p0, p1
-
-    .line 19
-    add-int/2addr p4, p0
-
-    .line 20
-    if-ge p4, p3, :cond_1
-
-    .line 21
-    .line 22
-    if-ltz p4, :cond_1
-
-    .line 23
-    .line 24
-    return p0
-
-    .line 25
-    :cond_1
-    :goto_0
-    return v1
-.end method
-
-
-# virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/MotionEvent;)V
-    .locals 12
-
-    .line 1
-    iget p1, p0, Lsu1;->v:I
-
-    .line 2
-    .line 3
-    if-nez p1, :cond_0
-
-    .line 4
-    .line 5
-    goto/16 :goto_2
-
-    .line 6
-    .line 7
-    :cond_0
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result p1
-
-    .line 11
-    const/4 v0, 0x2
-
-    .line 12
-    const/4 v1, 0x1
-
-    .line 13
-    if-nez p1, :cond_4
-
-    .line 14
-    .line 15
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v2
-
-    .line 23
-    invoke-virtual {p0, p1, v2}, Lsu1;->j(FF)Z
-
-    .line 24
-    .line 25
-    .line 26
-    move-result p1
-
-    .line 27
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v2
-
-    .line 31
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v3
-
-    .line 35
-    invoke-virtual {p0, v2, v3}, Lsu1;->i(FF)Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v2
-
-    .line 39
-    if-nez p1, :cond_1
-
-    .line 40
-    .line 41
-    if-eqz v2, :cond_b
-
-    .line 42
-    .line 43
-    :cond_1
-    if-eqz v2, :cond_2
-
-    .line 44
-    .line 45
-    iput v1, p0, Lsu1;->w:I
+    invoke-static {v9}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     .line 46
     .line 47
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
-
     .line 48
-    .line 49
-    .line 50
-    move-result p1
-
-    .line 51
-    float-to-int p1, p1
-
-    .line 52
-    int-to-float p1, p1
-
-    .line 53
-    iput p1, p0, Lsu1;->p:F
-
-    .line 54
-    .line 55
-    goto :goto_0
-
-    .line 56
-    :cond_2
-    if-eqz p1, :cond_3
-
-    .line 57
-    .line 58
-    iput v0, p0, Lsu1;->w:I
-
-    .line 59
-    .line 60
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
-
-    .line 61
-    .line 62
-    .line 63
-    move-result p1
-
-    .line 64
-    float-to-int p1, p1
-
-    .line 65
-    int-to-float p1, p1
-
-    .line 66
-    iput p1, p0, Lsu1;->m:F
-
-    .line 67
-    .line 68
-    :cond_3
-    :goto_0
-    invoke-virtual {p0, v0}, Lsu1;->l(I)V
-
-    .line 69
-    .line 70
-    .line 71
-    return-void
-
-    .line 72
-    :cond_4
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
-
-    .line 73
-    .line 74
-    .line 75
-    move-result p1
-
-    .line 76
-    const/4 v2, 0x0
-
-    .line 77
-    if-ne p1, v1, :cond_5
-
-    .line 78
-    .line 79
-    iget p1, p0, Lsu1;->v:I
-
-    .line 80
-    .line 81
-    if-ne p1, v0, :cond_5
-
-    .line 82
-    .line 83
-    const/4 p1, 0x0
-
-    .line 84
-    iput p1, p0, Lsu1;->m:F
-
-    .line 85
-    .line 86
-    iput p1, p0, Lsu1;->p:F
-
-    .line 87
-    .line 88
-    invoke-virtual {p0, v1}, Lsu1;->l(I)V
-
-    .line 89
-    .line 90
-    .line 91
-    iput v2, p0, Lsu1;->w:I
-
-    .line 92
-    .line 93
-    return-void
-
-    .line 94
-    :cond_5
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
-
-    .line 95
-    .line 96
-    .line 97
-    move-result p1
-
-    .line 98
-    if-ne p1, v0, :cond_b
-
-    .line 99
-    .line 100
-    iget p1, p0, Lsu1;->v:I
-
-    .line 101
-    .line 102
-    if-ne p1, v0, :cond_b
-
-    .line 103
-    .line 104
-    invoke-virtual {p0}, Lsu1;->m()V
-
-    .line 105
-    .line 106
-    .line 107
-    iget p1, p0, Lsu1;->w:I
-
-    .line 108
-    .line 109
-    iget-object v3, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 110
-    .line 111
-    const/high16 v4, 0x40000000    # 2.0f
-
-    .line 112
-    .line 113
-    iget v5, p0, Lsu1;->b:I
-
-    .line 114
-    .line 115
-    if-ne p1, v1, :cond_8
-
-    .line 116
-    .line 117
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
-
-    .line 118
-    .line 119
-    .line 120
-    move-result p1
-
-    .line 121
-    iget-object v8, p0, Lsu1;->y:[I
-
-    .line 122
-    .line 123
-    aput v5, v8, v2
-
-    .line 124
-    .line 125
-    iget v6, p0, Lsu1;->q:I
-
-    .line 126
-    .line 127
-    sub-int/2addr v6, v5
-
-    .line 128
-    aput v6, v8, v1
-
-    .line 129
-    .line 130
-    int-to-float v7, v5
-
-    .line 131
-    int-to-float v6, v6
-
-    .line 132
-    invoke-static {v6, p1}, Ljava/lang/Math;->min(FF)F
-
-    .line 133
-    .line 134
-    .line 135
-    move-result p1
-
-    .line 136
-    invoke-static {v7, p1}, Ljava/lang/Math;->max(FF)F
-
-    .line 137
-    .line 138
-    .line 139
-    move-result v7
-
-    .line 140
-    iget p1, p0, Lsu1;->o:I
-
-    .line 141
-    .line 142
-    int-to-float p1, p1
-
-    .line 143
-    sub-float/2addr p1, v7
-
-    .line 144
-    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
-
-    .line 145
-    .line 146
-    .line 147
-    move-result p1
-
-    .line 148
-    cmpg-float p1, p1, v4
-
-    .line 149
-    .line 150
-    if-gez p1, :cond_6
-
-    .line 151
-    .line 152
-    goto :goto_1
-
-    .line 153
-    :cond_6
-    iget v6, p0, Lsu1;->p:F
-
-    .line 154
-    .line 155
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->computeHorizontalScrollRange()I
-
-    .line 156
-    .line 157
-    .line 158
     move-result v9
 
-    .line 159
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->computeHorizontalScrollOffset()I
+    .line 49
+    const-string v10, "#3A3A3A"
 
-    .line 160
-    .line 161
-    .line 162
+    .line 50
+    .line 51
+    invoke-static {v10}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 52
+    .line 53
+    .line 54
     move-result v10
 
-    .line 163
-    iget v11, p0, Lsu1;->q:I
+    .line 55
+    const-string v11, "#28427F"
 
+    .line 56
+    .line 57
+    invoke-static {v11}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v11
+
+    .line 61
+    const-string v12, "#987DAC"
+
+    .line 62
+    .line 63
+    invoke-static {v12}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v12
+
+    .line 67
+    const-string v13, "#33654B"
+
+    .line 68
+    .line 69
+    move-object v14, v7
+
+    .line 70
+    move v7, v9
+
+    .line 71
+    move v9, v11
+
+    .line 72
+    invoke-static {v13}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v11
+
+    .line 76
+    invoke-static {v13}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 77
+    .line 78
+    .line 79
+    move-result v13
+
+    .line 80
+    const-string v15, "#6897BB"
+
+    .line 81
+    .line 82
+    move-object/from16 v16, v6
+
+    .line 83
+    .line 84
+    move v6, v8
+
+    .line 85
+    move v8, v10
+
+    .line 86
+    move v10, v12
+
+    .line 87
+    move v12, v13
+
+    .line 88
+    invoke-static {v15}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v13
+
+    .line 92
+    const-string v17, "#E8E2B7"
+
+    .line 93
+    .line 94
+    invoke-static/range {v17 .. v17}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 95
+    .line 96
+    .line 97
+    move-result v17
+
+    .line 98
+    const-string v18, "#EC7600"
+
+    .line 99
+    .line 100
+    move-object/from16 v19, v15
+
+    .line 101
+    .line 102
+    invoke-static/range {v18 .. v18}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 103
+    .line 104
+    .line 105
+    move-result v15
+
+    .line 106
+    move-object/from16 v20, v16
+
+    .line 107
+    .line 108
+    invoke-static/range {v18 .. v18}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 109
+    .line 110
+    .line 111
+    move-result v16
+
+    .line 112
+    invoke-static/range {v18 .. v18}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 113
+    .line 114
+    .line 115
+    move-result v18
+
+    .line 116
+    const-string v21, "#C9C54E"
+
+    .line 117
+    .line 118
+    invoke-static/range {v21 .. v21}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 119
+    .line 120
+    .line 121
+    move-result v21
+
+    .line 122
+    const-string v22, "#9378A7"
+
+    .line 123
+    .line 124
+    invoke-static/range {v22 .. v22}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 125
+    .line 126
+    .line 127
+    move-result v22
+
+    .line 128
+    const-string v23, "#FEC76C"
+
+    .line 129
+    .line 130
+    invoke-static/range {v23 .. v23}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 131
+    .line 132
+    .line 133
+    move-result v23
+
+    .line 134
+    const-string v24, "#6E875A"
+
+    .line 135
+    .line 136
+    invoke-static/range {v24 .. v24}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 137
+    .line 138
+    .line 139
+    move-result v24
+
+    .line 140
+    const-string v25, "#66747B"
+
+    .line 141
+    .line 142
+    invoke-static/range {v25 .. v25}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 143
+    .line 144
+    .line 145
+    move-result v25
+
+    .line 146
+    const-string v26, "#E2C077"
+
+    .line 147
+    .line 148
+    move-object/from16 v27, v20
+
+    .line 149
+    .line 150
+    move/from16 v20, v23
+
+    .line 151
+    .line 152
+    invoke-static/range {v26 .. v26}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 153
+    .line 154
+    .line 155
+    move-result v23
+
+    .line 156
+    invoke-static/range {v26 .. v26}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 157
+    .line 158
+    .line 159
+    move-result v26
+
+    .line 160
+    const-string v28, "#BABABA"
+
+    .line 161
+    .line 162
+    invoke-static/range {v28 .. v28}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 163
     .line 164
     .line 165
-    invoke-static/range {v6 .. v11}, Lsu1;->k(FF[IIII)I
+    move-result v28
 
     .line 166
+    const-string v29, "#ABC16D"
+
     .line 167
     .line 168
-    move-result p1
+    invoke-static/range {v29 .. v29}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     .line 169
-    if-eqz p1, :cond_7
-
     .line 170
     .line 171
-    invoke-virtual {v3, p1, v2}, Landroidx/recyclerview/widget/RecyclerView;->scrollBy(II)V
+    move-result v29
 
     .line 172
+    invoke-static/range {v19 .. v19}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
     .line 173
     .line 174
-    :cond_7
-    iput v7, p0, Lsu1;->p:F
-
     .line 175
+    move-result v19
+
     .line 176
-    :cond_8
-    :goto_1
-    iget p1, p0, Lsu1;->w:I
+    move-object/from16 v30, v14
 
     .line 177
     .line 178
-    if-ne p1, v0, :cond_b
+    move/from16 v14, v17
 
     .line 179
     .line 180
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+    move/from16 v17, v18
 
     .line 181
     .line 182
-    .line 183
-    move-result p1
+    move/from16 v18, v21
 
+    .line 183
     .line 184
-    iget-object v8, p0, Lsu1;->x:[I
+    move/from16 v21, v24
 
     .line 185
     .line 186
-    aput v5, v8, v2
+    move/from16 v24, v26
 
     .line 187
     .line 188
-    iget p2, p0, Lsu1;->r:I
+    move-object/from16 v31, v27
 
     .line 189
     .line 190
-    sub-int/2addr p2, v5
+    move/from16 v26, v29
 
     .line 191
-    aput p2, v8, v1
-
     .line 192
-    .line 193
-    int-to-float v0, v5
+    move/from16 v27, v19
 
+    .line 193
     .line 194
-    int-to-float p2, p2
+    move/from16 v19, v22
 
     .line 195
-    invoke-static {p2, p1}, Ljava/lang/Math;->min(FF)F
-
     .line 196
+    move/from16 v22, v25
+
     .line 197
     .line 198
-    move-result p1
+    move/from16 v25, v28
 
     .line 199
-    invoke-static {v0, p1}, Ljava/lang/Math;->max(FF)F
-
     .line 200
+    invoke-direct/range {v0 .. v27}, Leu0;-><init>(IIIIIIIIIIIIIIIIIIIIIIIIIII)V
+
     .line 201
     .line 202
-    move-result v7
-
     .line 203
-    iget p1, p0, Lsu1;->l:I
+    sput-object v0, Lsu1;->a:Leu0;
 
     .line 204
     .line 205
-    int-to-float p1, p1
+    const-string v0, "#F8F8F8"
 
     .line 206
-    sub-float/2addr p1, v7
-
     .line 207
-    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
+    const-string v1, "#272823"
 
     .line 208
     .line 209
-    .line 210
-    move-result p1
+    const-string v2, "#5B5A4F"
 
+    .line 210
     .line 211
-    cmpg-float p1, p1, v4
+    move-object/from16 v3, v30
 
     .line 212
     .line 213
-    if-gez p1, :cond_9
+    invoke-static {v0, v3, v1, v1, v2}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 214
     .line 215
-    goto :goto_2
-
     .line 216
-    :cond_9
-    iget v6, p0, Lsu1;->m:F
+    const-string v1, "#666666"
 
     .line 217
     .line 218
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->computeVerticalScrollRange()I
+    const-string v4, "#7CE0F3"
 
     .line 219
     .line 220
-    .line 221
-    move-result v9
+    const-string v5, "#C8BBAC"
 
+    .line 221
     .line 222
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->computeVerticalScrollOffset()I
+    const-string v6, "#34352D"
 
     .line 223
     .line 224
+    invoke-static {v5, v2, v6, v1, v4}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
     .line 225
-    move-result v10
-
     .line 226
-    iget v11, p0, Lsu1;->r:I
-
     .line 227
-    .line 228
-    invoke-static/range {v6 .. v11}, Lsu1;->k(FF[IIII)I
+    const-string v1, "#5F5E5A"
 
+    .line 228
     .line 229
+    const-string v2, "#BB8FF8"
+
     .line 230
     .line 231
-    move-result p1
+    const-string v4, "#F8F8F2"
 
     .line 232
-    if-eqz p1, :cond_a
-
     .line 233
-    .line 234
-    invoke-virtual {v3, v2, p1}, Landroidx/recyclerview/widget/RecyclerView;->scrollBy(II)V
+    const-string v5, "#EB347E"
 
+    .line 234
     .line 235
+    invoke-static {v1, v1, v2, v4, v5}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
     .line 236
     .line 237
-    :cond_a
-    iput v7, p0, Lsu1;->m:F
-
     .line 238
+    const-string v1, "#7FD0E4"
+
     .line 239
-    :cond_b
-    :goto_2
-    return-void
-.end method
-
-.method public final c(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/MotionEvent;)Z
-    .locals 4
-
-    .line 1
-    iget p1, p0, Lsu1;->v:I
-
-    .line 2
-    .line 3
-    const/4 v0, 0x2
-
-    .line 4
-    const/4 v1, 0x1
-
-    .line 5
-    if-ne p1, v1, :cond_3
-
-    .line 6
-    .line 7
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
-
-    .line 8
-    .line 9
-    .line 10
-    move-result p1
-
-    .line 11
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v2
-
-    .line 15
-    invoke-virtual {p0, p1, v2}, Lsu1;->j(FF)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v2
-
-    .line 23
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v3
-
-    .line 27
-    invoke-virtual {p0, v2, v3}, Lsu1;->i(FF)Z
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v2
-
-    .line 31
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v3
-
-    .line 35
-    if-nez v3, :cond_4
-
-    .line 36
-    .line 37
-    if-nez p1, :cond_0
-
-    .line 38
-    .line 39
-    if-eqz v2, :cond_4
-
-    .line 40
-    .line 41
-    :cond_0
-    if-eqz v2, :cond_1
-
-    .line 42
-    .line 43
-    iput v1, p0, Lsu1;->w:I
-
-    .line 44
-    .line 45
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
-
-    .line 46
-    .line 47
-    .line 48
-    move-result p1
-
-    .line 49
-    float-to-int p1, p1
-
-    .line 50
-    int-to-float p1, p1
-
-    .line 51
-    iput p1, p0, Lsu1;->p:F
-
-    .line 52
-    .line 53
-    goto :goto_0
-
-    .line 54
-    :cond_1
-    if-eqz p1, :cond_2
-
-    .line 55
-    .line 56
-    iput v0, p0, Lsu1;->w:I
-
-    .line 57
-    .line 58
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
-
-    .line 59
-    .line 60
-    .line 61
-    move-result p1
-
-    .line 62
-    float-to-int p1, p1
-
-    .line 63
-    int-to-float p1, p1
-
-    .line 64
-    iput p1, p0, Lsu1;->m:F
-
-    .line 65
-    .line 66
-    :cond_2
-    :goto_0
-    invoke-virtual {p0, v0}, Lsu1;->l(I)V
-
-    .line 67
-    .line 68
-    .line 69
-    return v1
-
-    .line 70
-    :cond_3
-    if-ne p1, v0, :cond_4
-
-    .line 71
-    .line 72
-    return v1
-
-    .line 73
-    :cond_4
-    const/4 p1, 0x0
-
-    .line 74
-    return p1
-.end method
-
-.method public final e(Z)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final h(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V
-    .locals 9
-
-    .line 1
-    iget p2, p0, Lsu1;->q:I
-
-    .line 2
-    .line 3
-    iget-object v0, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    const/4 v2, 0x0
-
-    .line 10
-    if-ne p2, v1, :cond_4
-
-    .line 11
-    .line 12
-    iget p2, p0, Lsu1;->r:I
-
-    .line 13
-    .line 14
-    invoke-virtual {v0}, Landroid/view/View;->getHeight()I
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v1
-
-    .line 18
-    if-eq p2, v1, :cond_0
-
-    .line 19
-    .line 20
-    goto/16 :goto_1
-
-    .line 21
-    .line 22
-    :cond_0
-    iget p2, p0, Lsu1;->A:I
-
-    .line 23
-    .line 24
-    if-eqz p2, :cond_3
-
-    .line 25
-    .line 26
-    iget-boolean p2, p0, Lsu1;->t:Z
-
-    .line 27
-    .line 28
-    const/4 v1, 0x0
-
-    .line 29
-    if-eqz p2, :cond_2
-
-    .line 30
-    .line 31
-    iget p2, p0, Lsu1;->q:I
-
-    .line 32
-    .line 33
-    iget v3, p0, Lsu1;->e:I
-
-    .line 34
-    .line 35
-    sub-int/2addr p2, v3
-
-    .line 36
-    iget v4, p0, Lsu1;->l:I
-
-    .line 37
-    .line 38
-    iget v5, p0, Lsu1;->k:I
-
-    .line 39
-    .line 40
-    div-int/lit8 v6, v5, 0x2
-
-    .line 41
-    .line 42
-    sub-int/2addr v4, v6
-
-    .line 43
-    iget-object v6, p0, Lsu1;->c:Landroid/graphics/drawable/StateListDrawable;
-
-    .line 44
-    .line 45
-    invoke-virtual {v6, v2, v2, v3, v5}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 46
-    .line 47
-    .line 48
-    iget v5, p0, Lsu1;->f:I
-
-    .line 49
-    .line 50
-    iget v7, p0, Lsu1;->r:I
-
-    .line 51
-    .line 52
-    iget-object v8, p0, Lsu1;->d:Landroid/graphics/drawable/Drawable;
-
-    .line 53
-    .line 54
-    invoke-virtual {v8, v2, v2, v5, v7}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 55
-    .line 56
-    .line 57
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutDirection()I
-
-    .line 58
-    .line 59
-    .line 60
-    move-result v0
-
-    .line 61
-    const/4 v5, 0x1
-
-    .line 62
-    if-ne v0, v5, :cond_1
-
-    .line 63
-    .line 64
-    invoke-virtual {v8, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 65
-    .line 66
-    .line 67
-    int-to-float p2, v3
-
-    .line 68
-    int-to-float v0, v4
-
-    .line 69
-    invoke-virtual {p1, p2, v0}, Landroid/graphics/Canvas;->translate(FF)V
-
-    .line 70
-    .line 71
-    .line 72
-    const/high16 p2, -0x40800000    # -1.0f
-
-    .line 73
-    .line 74
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 75
-    .line 76
-    invoke-virtual {p1, p2, v0}, Landroid/graphics/Canvas;->scale(FF)V
-
-    .line 77
-    .line 78
-    .line 79
-    invoke-virtual {v6, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-virtual {p1, p2, v0}, Landroid/graphics/Canvas;->scale(FF)V
-
-    .line 83
-    .line 84
-    .line 85
-    neg-int p2, v3
-
-    .line 86
-    int-to-float p2, p2
-
-    .line 87
-    neg-int v0, v4
-
-    .line 88
-    int-to-float v0, v0
-
-    .line 89
-    invoke-virtual {p1, p2, v0}, Landroid/graphics/Canvas;->translate(FF)V
-
-    .line 90
-    .line 91
-    .line 92
-    goto :goto_0
-
-    .line 93
-    :cond_1
-    int-to-float v0, p2
-
-    .line 94
-    invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->translate(FF)V
-
-    .line 95
-    .line 96
-    .line 97
-    invoke-virtual {v8, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 98
-    .line 99
-    .line 100
-    int-to-float v0, v4
-
-    .line 101
-    invoke-virtual {p1, v1, v0}, Landroid/graphics/Canvas;->translate(FF)V
-
-    .line 102
-    .line 103
-    .line 104
-    invoke-virtual {v6, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 105
-    .line 106
-    .line 107
-    neg-int p2, p2
-
-    .line 108
-    int-to-float p2, p2
-
-    .line 109
-    neg-int v0, v4
-
-    .line 110
-    int-to-float v0, v0
-
-    .line 111
-    invoke-virtual {p1, p2, v0}, Landroid/graphics/Canvas;->translate(FF)V
-
-    .line 112
-    .line 113
-    .line 114
-    :cond_2
-    :goto_0
-    iget-boolean p2, p0, Lsu1;->u:Z
-
-    .line 115
-    .line 116
-    if-eqz p2, :cond_3
-
-    .line 117
-    .line 118
-    iget p2, p0, Lsu1;->r:I
-
-    .line 119
-    .line 120
-    iget v0, p0, Lsu1;->i:I
-
-    .line 121
-    .line 122
-    sub-int/2addr p2, v0
-
-    .line 123
-    iget v3, p0, Lsu1;->o:I
-
-    .line 124
-    .line 125
-    iget v4, p0, Lsu1;->n:I
-
-    .line 126
-    .line 127
-    div-int/lit8 v5, v4, 0x2
-
-    .line 128
-    .line 129
-    sub-int/2addr v3, v5
-
-    .line 130
-    iget-object v5, p0, Lsu1;->g:Landroid/graphics/drawable/StateListDrawable;
-
-    .line 131
-    .line 132
-    invoke-virtual {v5, v2, v2, v4, v0}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 133
-    .line 134
-    .line 135
-    iget v0, p0, Lsu1;->q:I
-
-    .line 136
-    .line 137
-    iget v4, p0, Lsu1;->j:I
-
-    .line 138
-    .line 139
-    iget-object v6, p0, Lsu1;->h:Landroid/graphics/drawable/Drawable;
-
-    .line 140
-    .line 141
-    invoke-virtual {v6, v2, v2, v0, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 142
-    .line 143
-    .line 144
-    int-to-float v0, p2
-
-    .line 145
-    invoke-virtual {p1, v1, v0}, Landroid/graphics/Canvas;->translate(FF)V
-
-    .line 146
-    .line 147
-    .line 148
-    invoke-virtual {v6, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 149
-    .line 150
-    .line 151
-    int-to-float v0, v3
-
-    .line 152
-    invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->translate(FF)V
-
-    .line 153
-    .line 154
-    .line 155
-    invoke-virtual {v5, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    .line 156
-    .line 157
-    .line 158
-    neg-int v0, v3
-
-    .line 159
-    int-to-float v0, v0
-
-    .line 160
-    neg-int p2, p2
-
-    .line 161
-    int-to-float p2, p2
-
-    .line 162
-    invoke-virtual {p1, v0, p2}, Landroid/graphics/Canvas;->translate(FF)V
-
-    .line 163
-    .line 164
-    .line 165
-    :cond_3
-    return-void
-
-    .line 166
-    :cond_4
-    :goto_1
-    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
-
-    .line 167
-    .line 168
-    .line 169
-    move-result p1
-
-    .line 170
-    iput p1, p0, Lsu1;->q:I
-
-    .line 171
-    .line 172
-    invoke-virtual {v0}, Landroid/view/View;->getHeight()I
-
-    .line 173
-    .line 174
-    .line 175
-    move-result p1
-
-    .line 176
-    iput p1, p0, Lsu1;->r:I
-
-    .line 177
-    .line 178
-    invoke-virtual {p0, v2}, Lsu1;->l(I)V
-
-    .line 179
-    .line 180
-    .line 181
-    return-void
-.end method
-
-.method public final i(FF)Z
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lsu1;->r:I
-
-    .line 2
-    .line 3
-    iget v1, p0, Lsu1;->i:I
-
-    .line 4
-    .line 5
-    sub-int/2addr v0, v1
-
-    .line 6
-    int-to-float v0, v0
-
-    .line 7
-    cmpl-float p2, p2, v0
-
-    .line 8
-    .line 9
-    if-ltz p2, :cond_0
-
-    .line 10
-    .line 11
-    iget p2, p0, Lsu1;->o:I
-
-    .line 12
-    .line 13
-    iget v0, p0, Lsu1;->n:I
-
-    .line 14
-    .line 15
-    div-int/lit8 v1, v0, 0x2
-
-    .line 16
-    .line 17
-    sub-int v1, p2, v1
-
-    .line 18
-    .line 19
-    int-to-float v1, v1
-
-    .line 20
-    cmpl-float v1, p1, v1
-
-    .line 21
-    .line 22
-    if-ltz v1, :cond_0
-
-    .line 23
-    .line 24
-    div-int/lit8 v0, v0, 0x2
-
-    .line 25
-    .line 26
-    add-int/2addr v0, p2
-
-    .line 27
-    int-to-float p2, v0
-
-    .line 28
-    cmpg-float p1, p1, p2
-
-    .line 29
-    .line 30
-    if-gtz p1, :cond_0
-
-    .line 31
-    .line 32
-    const/4 p1, 0x1
-
-    .line 33
-    return p1
-
-    .line 34
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 35
-    return p1
-.end method
-
-.method public final j(FF)Z
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutDirection()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    iget v1, p0, Lsu1;->e:I
-
-    .line 8
-    .line 9
-    const/4 v2, 0x1
-
-    .line 10
-    if-ne v0, v2, :cond_0
-
-    .line 11
-    .line 12
-    int-to-float v0, v1
-
-    .line 13
-    cmpg-float p1, p1, v0
-
-    .line 14
-    .line 15
-    if-gtz p1, :cond_1
-
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_0
-    iget v0, p0, Lsu1;->q:I
-
-    .line 19
-    .line 20
-    sub-int/2addr v0, v1
-
-    .line 21
-    int-to-float v0, v0
-
-    .line 22
-    cmpl-float p1, p1, v0
-
-    .line 23
-    .line 24
-    if-ltz p1, :cond_1
-
-    .line 25
-    .line 26
-    :goto_0
-    iget p1, p0, Lsu1;->l:I
-
-    .line 27
-    .line 28
-    iget v0, p0, Lsu1;->k:I
-
-    .line 29
-    .line 30
-    div-int/lit8 v0, v0, 0x2
-
-    .line 31
-    .line 32
-    sub-int v1, p1, v0
-
-    .line 33
-    .line 34
-    int-to-float v1, v1
-
-    .line 35
-    cmpl-float v1, p2, v1
-
-    .line 36
-    .line 37
-    if-ltz v1, :cond_1
-
-    .line 38
-    .line 39
-    add-int/2addr v0, p1
-
-    .line 40
-    int-to-float p1, v0
-
-    .line 41
-    cmpg-float p1, p2, p1
-
-    .line 42
-    .line 43
-    if-gtz p1, :cond_1
-
-    .line 44
-    .line 45
-    return v2
-
-    .line 46
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 47
-    return p1
-.end method
-
-.method public final l(I)V
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lsu1;->s:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lsu1;->B:Ldb;
-
-    .line 4
-    .line 5
-    iget-object v2, p0, Lsu1;->c:Landroid/graphics/drawable/StateListDrawable;
-
-    .line 6
-    .line 7
-    const/4 v3, 0x2
-
-    .line 8
-    if-ne p1, v3, :cond_0
-
-    .line 9
-    .line 10
-    iget v4, p0, Lsu1;->v:I
-
-    .line 11
-    .line 12
-    if-eq v4, v3, :cond_0
-
-    .line 13
-    .line 14
-    sget-object v4, Lsu1;->C:[I
-
-    .line 15
-    .line 16
-    invoke-virtual {v2, v4}, Landroid/graphics/drawable/Drawable;->setState([I)Z
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 20
-    .line 21
-    .line 22
-    :cond_0
-    if-nez p1, :cond_1
-
-    .line 23
-    .line 24
-    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
-
-    .line 25
-    .line 26
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :cond_1
-    invoke-virtual {p0}, Lsu1;->m()V
-
-    .line 29
-    .line 30
-    .line 31
-    :goto_0
-    iget v4, p0, Lsu1;->v:I
-
-    .line 32
-    .line 33
-    if-ne v4, v3, :cond_2
-
-    .line 34
-    .line 35
-    if-eq p1, v3, :cond_2
-
-    .line 36
-    .line 37
-    sget-object v3, Lsu1;->D:[I
-
-    .line 38
-    .line 39
-    invoke-virtual {v2, v3}, Landroid/graphics/drawable/Drawable;->setState([I)Z
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 43
-    .line 44
-    .line 45
-    const-wide/16 v2, 0x4b0
-
-    .line 46
-    .line 47
-    invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 48
-    .line 49
-    .line 50
-    goto :goto_1
-
-    .line 51
-    :cond_2
-    const/4 v2, 0x1
-
-    .line 52
-    if-ne p1, v2, :cond_3
-
-    .line 53
-    .line 54
-    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 55
-    .line 56
-    .line 57
-    const-wide/16 v2, 0x5dc
-
-    .line 58
-    .line 59
-    invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 60
-    .line 61
-    .line 62
-    :cond_3
-    :goto_1
-    iput p1, p0, Lsu1;->v:I
-
-    .line 63
-    .line 64
-    return-void
-.end method
-
-.method public final m()V
-    .locals 5
-
-    .line 1
-    iget v0, p0, Lsu1;->A:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lsu1;->z:Landroid/animation/ValueAnimator;
-
-    .line 4
-    .line 5
-    if-eqz v0, :cond_1
-
-    .line 6
-    .line 7
-    const/4 v2, 0x3
-
-    .line 8
-    if-eq v0, v2, :cond_0
-
-    .line 9
-    .line 10
-    return-void
-
-    .line 11
-    :cond_0
-    invoke-virtual {v1}, Landroid/animation/ValueAnimator;->cancel()V
-
-    .line 12
-    .line 13
-    .line 14
-    :cond_1
-    const/4 v0, 0x1
-
-    .line 15
-    iput v0, p0, Lsu1;->A:I
-
-    .line 16
-    .line 17
-    invoke-virtual {v1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v2
-
-    .line 21
-    check-cast v2, Ljava/lang/Float;
-
-    .line 22
-    .line 23
-    invoke-virtual {v2}, Ljava/lang/Float;->floatValue()F
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v2
-
-    .line 27
-    const/4 v3, 0x2
-
-    .line 28
-    new-array v3, v3, [F
-
-    .line 29
-    .line 30
-    const/4 v4, 0x0
-
-    .line 31
-    aput v2, v3, v4
-
-    .line 32
-    .line 33
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    .line 34
-    .line 35
-    aput v2, v3, v0
-
-    .line 36
-    .line 37
-    invoke-virtual {v1, v3}, Landroid/animation/ValueAnimator;->setFloatValues([F)V
-
-    .line 38
-    .line 39
-    .line 40
-    const-wide/16 v2, 0x1f4
-
-    .line 41
-    .line 42
-    invoke-virtual {v1, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
-
-    .line 43
-    .line 44
-    .line 45
-    const-wide/16 v2, 0x0
-
-    .line 46
-    .line 47
-    invoke-virtual {v1, v2, v3}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
-
-    .line 48
-    .line 49
-    .line 50
-    invoke-virtual {v1}, Landroid/animation/ValueAnimator;->start()V
-
-    .line 51
-    .line 52
-    .line 53
+    .line 240
+    const-string v4, "#B6E951"
+
+    .line 241
+    .line 242
+    invoke-static {v1, v5, v5, v1, v4}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 243
+    .line 244
+    .line 245
+    const-string v1, "#89826D"
+
+    .line 246
+    .line 247
+    const-string v6, "#EBE48C"
+
+    .line 248
+    .line 249
+    invoke-static {v6, v1, v0, v5, v4}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 250
+    .line 251
+    .line 252
+    const-string v0, "#E0E2E4"
+
+    .line 253
+    .line 254
+    const-string v1, "#2A3134"
+
+    .line 255
+    .line 256
+    invoke-static {v6, v2, v0, v3, v1}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 257
+    .line 258
+    .line 259
+    const-string v2, "#31393C"
+
+    .line 260
+    .line 261
+    const-string v4, "#67777B"
+
+    .line 262
+    .line 263
+    const-string v5, "#E0E0E0"
+
+    .line 264
+    .line 265
+    const-string v6, "#859599"
+
+    .line 266
+    .line 267
+    invoke-static {v1, v4, v5, v6, v2}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 268
+    .line 269
+    .line 270
+    const-string v2, "#616161"
+
+    .line 271
+    .line 272
+    const-string v4, "#9EC56F"
+
+    .line 273
+    .line 274
+    const-string v5, "#838177"
+
+    .line 275
+    .line 276
+    const-string v7, "#F8CE4E"
+
+    .line 277
+    .line 278
+    invoke-static {v2, v4, v5, v2, v7}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 279
+    .line 280
+    .line 281
+    const-string v5, "#E7E2BC"
+
+    .line 282
+    .line 283
+    const-string v8, "#9B84B9"
+
+    .line 284
+    .line 285
+    invoke-static {v5, v4, v4, v4, v8}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 286
+    .line 287
+    .line 288
+    const-string v9, "#6E8BAE"
+
+    .line 289
+    .line 290
+    const-string v10, "#DE7C2E"
+
+    .line 291
+    .line 292
+    const-string v11, "#808C92"
+
+    .line 293
+    .line 294
+    invoke-static {v9, v5, v10, v11, v5}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 295
+    .line 296
+    .line 297
+    invoke-static {v4, v0, v10, v7, v0}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 298
+    .line 299
+    .line 300
+    const-string v4, "#22282C"
+
+    .line 301
+    .line 302
+    const-string v7, "#4F575A"
+
+    .line 303
+    .line 304
+    invoke-static {v3, v4, v1, v7, v0}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 305
+    .line 306
+    .line 307
+    const-string v1, "#5B2B41"
+
+    .line 308
+    .line 309
+    const-string v4, "#8A4364"
+
+    .line 310
+    .line 311
+    const-string v7, "#373340"
+
+    .line 312
+    .line 313
+    invoke-static {v6, v7, v1, v9, v4}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 314
+    .line 315
+    .line 316
+    const-string v1, "#7EFBFD"
+
+    .line 317
+    .line 318
+    const-string v4, "#DA89A2"
+
+    .line 319
+    .line 320
+    invoke-static {v2, v1, v5, v4, v4}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 321
+    .line 322
+    .line 323
+    const-string v6, "#6EA4C7"
+
+    .line 324
+    .line 325
+    const-string v7, "#8FB4C5"
+
+    .line 326
+    .line 327
+    const-string v9, "#75D367"
+
+    .line 328
+    .line 329
+    invoke-static {v4, v8, v6, v7, v9}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 330
+    .line 331
+    .line 332
+    invoke-static {v11, v5, v4, v0, v9}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 333
+    .line 334
+    .line 335
+    const-string v0, "#222426"
+
+    .line 336
+    .line 337
+    const-string v4, "#C6C8C6"
+
+    .line 338
+    .line 339
+    invoke-static {v1, v4, v3, v0, v0}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 340
+    .line 341
+    .line 342
+    const-string v0, "#2D2F33"
+
+    .line 343
+    .line 344
+    const-string v1, "#383B40"
+
+    .line 345
+    .line 346
+    const-string v5, "#4B4D51"
+
+    .line 347
+    .line 348
+    const-string v6, "#FFFFFF"
+
+    .line 349
+    .line 350
+    invoke-static {v5, v6, v4, v0, v1}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 351
+    .line 352
+    .line 353
+    const-string v0, "#EAC780"
+
+    .line 354
+    .line 355
+    const-string v1, "#4B4E54"
+
+    .line 356
+    .line 357
+    const-string v5, "#D49668"
+
+    .line 358
+    .line 359
+    const-string v7, "#CFD1CF"
+
+    .line 360
+    .line 361
+    invoke-static {v0, v1, v2, v5, v7}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 362
+    .line 363
+    .line 364
+    const-string v1, "#AD95B8"
+
+    .line 365
+    .line 366
+    invoke-static {v1, v1, v1, v7, v0}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 367
+    .line 368
+    .line 369
+    const-string v0, "#969896"
+
+    .line 370
+    .line 371
+    const-string v8, "#87A1BB"
+
+    .line 372
+    .line 373
+    const-string v9, "#B7BC73"
+
+    .line 374
+    .line 375
+    invoke-static {v8, v9, v0, v7, v1}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 376
+    .line 377
+    .line 378
+    const-string v0, "#C8C8C8"
+
+    .line 379
+    .line 380
+    invoke-static {v4, v9, v5, v0, v3}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 381
+    .line 382
+    .line 383
+    const-string v0, "#232323"
+
+    .line 384
+    .line 385
+    const-string v1, "#2C2C2C"
+
+    .line 386
+    .line 387
+    move-object/from16 v3, v31
+
+    .line 388
+    .line 389
+    invoke-static {v0, v1, v3, v6, v4}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 390
+    .line 391
+    .line 392
+    const-string v0, "#4F98F7"
+
+    .line 393
+    .line 394
+    const-string v1, "#1C3D6B"
+
+    .line 395
+    .line 396
+    const-string v3, "#141414"
+
+    .line 397
+    .line 398
+    const-string v4, "#454464"
+
+    .line 399
+    .line 400
+    invoke-static {v3, v4, v0, v1, v2}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 401
+    .line 402
+    .line 403
+    const-string v0, "#BACDAB"
+
+    .line 404
+    .line 405
+    const-string v1, "#DCDCDC"
+
+    .line 406
+    .line 407
+    const-string v2, "#669BD1"
+
+    .line 408
+    .line 409
+    invoke-static {v0, v1, v2, v2, v2}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 410
+    .line 411
+    .line 412
+    const-string v0, "#CE9F89"
+
+    .line 413
+    .line 414
+    const-string v1, "#6BA455"
+
+    .line 415
+    .line 416
+    const-string v3, "#C49594"
+
+    .line 417
+    .line 418
+    const-string v4, "#9DDDFF"
+
+    .line 419
+    .line 420
+    const-string v5, "#71C6B1"
+
+    .line 421
+    .line 422
+    invoke-static {v3, v4, v5, v0, v1}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 423
+    .line 424
+    .line 425
+    const-string v0, "#DCDCDC"
+
+    .line 426
+    .line 427
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 428
+    .line 429
+    .line 430
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 431
+    .line 432
+    .line 433
+    const-string v0, "#C8C8C8"
+
+    .line 434
+    .line 435
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 436
+    .line 437
+    .line 438
+    const-string v0, "#CE9F89"
+
+    .line 439
+    .line 440
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 441
+    .line 442
+    .line 443
+    const-string v0, "#BACDAB"
+
+    .line 444
+    .line 445
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 446
+    .line 447
+    .line 448
+    new-instance v7, Leu0;
+
+    .line 449
+    .line 450
+    const-string v0, "#000000"
+
+    .line 451
+    .line 452
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 453
+    .line 454
+    .line 455
+    move-result v8
+
+    .line 456
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 457
+    .line 458
+    .line 459
+    move-result v9
+
+    .line 460
+    invoke-static {v6}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 461
+    .line 462
+    .line 463
+    move-result v10
+
+    .line 464
+    const-string v1, "#F2F2F2"
+
+    .line 465
+    .line 466
+    invoke-static {v1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 467
+    .line 468
+    .line 469
+    move-result v11
+
+    .line 470
+    const-string v1, "#D4D4D4"
+
+    .line 471
+    .line 472
+    invoke-static {v1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 473
+    .line 474
+    .line 475
+    move-result v12
+
+    .line 476
+    const-string v1, "#828282"
+
+    .line 477
+    .line 478
+    invoke-static {v1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 479
+    .line 480
+    .line 481
+    move-result v13
+
+    .line 482
+    const-string v1, "#ADADAD"
+
+    .line 483
+    .line 484
+    invoke-static {v1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 485
+    .line 486
+    .line 487
+    move-result v14
+
+    .line 488
+    const-string v1, "#FCFAEE"
+
+    .line 489
+    .line 490
+    invoke-static {v1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 491
+    .line 492
+    .line 493
+    move-result v15
+
+    .line 494
+    const-string v1, "#AFD1FB"
+
+    .line 495
+    .line 496
+    invoke-static {v1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 497
+    .line 498
+    .line 499
+    move-result v16
+
+    .line 500
+    const-string v2, "#3A6EAE"
+
+    .line 501
+    .line 502
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 503
+    .line 504
+    .line 505
+    move-result v17
+
+    .line 506
+    const-string v2, "#E2FEDE"
+
+    .line 507
+    .line 508
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 509
+    .line 510
+    .line 511
+    move-result v18
+
+    .line 512
+    const-string v2, "#A2D7D8"
+
+    .line 513
+    .line 514
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 515
+    .line 516
+    .line 517
+    move-result v19
+
+    .line 518
+    const-string v2, "#284FE2"
+
+    .line 519
+    .line 520
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 521
+    .line 522
+    .line 523
+    move-result v20
+
+    .line 524
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 525
+    .line 526
+    .line 527
+    move-result v21
+
+    .line 528
+    const-string v2, "#1232AC"
+
+    .line 529
+    .line 530
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 531
+    .line 532
+    .line 533
+    move-result v22
+
+    .line 534
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 535
+    .line 536
+    .line 537
+    move-result v23
+
+    .line 538
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 539
+    .line 540
+    .line 541
+    move-result v24
+
+    .line 542
+    const-string v3, "#9A892E"
+
+    .line 543
+    .line 544
+    invoke-static {v3}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 545
+    .line 546
+    .line 547
+    move-result v25
+
+    .line 548
+    const-string v3, "#7C1E8F"
+
+    .line 549
+    .line 550
+    invoke-static {v3}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 551
+    .line 552
+    .line 553
+    move-result v26
+
+    .line 554
+    const-string v3, "#286077"
+
+    .line 555
+    .line 556
+    invoke-static {v3}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 557
+    .line 558
+    .line 559
+    move-result v27
+
+    .line 560
+    const-string v3, "#377B2A"
+
+    .line 561
+    .line 562
+    invoke-static {v3}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 563
+    .line 564
+    .line 565
+    move-result v28
+
+    .line 566
+    const-string v3, "#8C8C8C"
+
+    .line 567
+    .line 568
+    invoke-static {v3}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 569
+    .line 570
+    .line 571
+    move-result v29
+
+    .line 572
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 573
+    .line 574
+    .line 575
+    move-result v30
+
+    .line 576
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 577
+    .line 578
+    .line 579
+    move-result v31
+
+    .line 580
+    const-string v2, "#2649CC"
+
+    .line 581
+    .line 582
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 583
+    .line 584
+    .line 585
+    move-result v32
+
+    .line 586
+    const-string v2, "#377B2A"
+
+    .line 587
+    .line 588
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 589
+    .line 590
+    .line 591
+    move-result v33
+
+    .line 592
+    const-string v2, "#264ADD"
+
+    .line 593
+    .line 594
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 595
+    .line 596
+    .line 597
+    move-result v34
+
+    .line 598
+    invoke-direct/range {v7 .. v34}, Leu0;-><init>(IIIIIIIIIIIIIIIIIIIIIIIIIII)V
+
+    .line 599
+    .line 600
+    .line 601
+    sput-object v7, Lsu1;->b:Leu0;
+
+    .line 602
+    .line 603
+    const-string v2, "#EDE8D7"
+
+    .line 604
+    .line 605
+    const-string v3, "#B6BAB4"
+
+    .line 606
+    .line 607
+    const-string v4, "#697A82"
+
+    .line 608
+    .line 609
+    const-string v5, "#5C6D74"
+
+    .line 610
+    .line 611
+    const-string v7, "#FCF6E5"
+
+    .line 612
+    .line 613
+    invoke-static {v4, v5, v7, v2, v3}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 614
+    .line 615
+    .line 616
+    const-string v2, "#F2EDDE"
+
+    .line 617
+    .line 618
+    const-string v3, "#5274B5"
+
+    .line 619
+    .line 620
+    const-string v5, "#77878B"
+
+    .line 621
+    .line 622
+    const-string v7, "#A5ADAB"
+
+    .line 623
+    .line 624
+    invoke-static {v5, v7, v2, v1, v3}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 625
+    .line 626
+    .line 627
+    const-string v2, "#E8F0D0"
+
+    .line 628
+    .line 629
+    const-string v3, "#C1DBCD"
+
+    .line 630
+    .line 631
+    const-string v5, "#BC5429"
+
+    .line 632
+    .line 633
+    const-string v7, "#89982E"
+
+    .line 634
+    .line 635
+    invoke-static {v2, v3, v5, v4, v7}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 636
+    .line 637
+    .line 638
+    const-string v2, "#6D71BE"
+
+    .line 639
+    .line 640
+    const-string v3, "#C24480"
+
+    .line 641
+    .line 642
+    const-string v5, "#AE8B2D"
+
+    .line 643
+    .line 644
+    invoke-static {v7, v7, v5, v2, v3}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 645
+    .line 646
+    .line 647
+    const-string v2, "#96A0A1"
+
+    .line 648
+    .line 649
+    const-string v3, "#4689CC"
+
+    .line 650
+    .line 651
+    const-string v5, "#519F98"
+
+    .line 652
+    .line 653
+    invoke-static {v5, v2, v4, v3, v4}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 654
+    .line 655
+    .line 656
+    const-string v2, "#519F98"
+
+    .line 657
+    .line 658
+    const-string v3, "#BC5429"
+
+    .line 659
+    .line 660
+    invoke-static {v2, v3, v0, v0, v6}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 661
+    .line 662
+    .line 663
+    const-string v2, "#ADADAD"
+
+    .line 664
+    .line 665
+    const-string v3, "#E8F2FE"
+
+    .line 666
+    .line 667
+    const-string v4, "#D4D4D4"
+
+    .line 668
+    .line 669
+    const-string v5, "#828282"
+
+    .line 670
+    .line 671
+    invoke-static {v6, v4, v5, v2, v3}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 672
+    .line 673
+    .line 674
+    const-string v2, "#7BBCFE"
+
+    .line 675
+    .line 676
+    const-string v3, "#0000F5"
+
+    .line 677
+    .line 678
+    const-string v4, "#3A6FAD"
+
+    .line 679
+    .line 680
+    const-string v5, "#E2FEDE"
+
+    .line 681
+    .line 682
+    invoke-static {v1, v4, v5, v2, v3}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 683
+    .line 684
+    .line 685
+    const-string v1, "#9A892E"
+
+    .line 686
+    .line 687
+    const-string v2, "#800055"
+
+    .line 688
+    .line 689
+    invoke-static {v0, v2, v2, v2, v1}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 690
+    .line 691
+    .line 692
+    const-string v1, "#4F7E61"
+
+    .line 693
+    .line 694
+    const-string v3, "#437D7E"
+
+    .line 695
+    .line 696
+    const-string v4, "#5D1776"
+
+    .line 697
+    .line 698
+    const-string v5, "#2602F5"
+
+    .line 699
+    .line 700
+    invoke-static {v4, v0, v5, v1, v3}, Leh0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 701
+    .line 702
+    .line 703
+    const-string v0, "#437D7E"
+
+    .line 704
+    .line 705
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 706
+    .line 707
+    .line 708
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 709
+    .line 710
+    .line 711
+    const-string v0, "#2602F5"
+
+    .line 712
+    .line 713
+    invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 714
+    .line 715
+    .line 716
+    invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    .line 717
+    .line 718
+    .line 719
     return-void
 .end method

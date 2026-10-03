@@ -1,22 +1,26 @@
 package defpackage;
 
-import su.happ.proxyutility.dto.enums.FragmentationType;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class oa7 {
+    public final int a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class oa7 {
-    public static final /* synthetic */ int[] a;
+    public oa7(int i) {
+        this.a = i;
+    }
 
-    static {
-        int[] iArr = new int[FragmentationType.values().length];
-        try {
-            iArr[FragmentationType.XRAY.ordinal()] = 1;
-        } catch (NoSuchFieldError unused) {
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        try {
-            iArr[FragmentationType.ADVANCED.ordinal()] = 2;
-        } catch (NoSuchFieldError unused2) {
-        }
-        a = iArr;
+        return (obj instanceof oa7) && this.a == ((oa7) obj).a;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.a) * 923521;
+    }
+
+    public final String toString() {
+        return c73.h("StyleSpan(color=", this.a, ", bold=false, italic=false, underline=false, strikethrough=false)");
     }
 }

@@ -1,71 +1,248 @@
 .class public final Lxz0;
-.super Law0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ls2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lxz0;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # instance fields
-.field public T:Lfv7;
+.field public final X:Lia6;
 
-.field public synthetic U:Ljava/lang/Object;
+.field public final Y:Z
 
-.field public final synthetic V:Lfv7;
+.field public final Z:Z
 
-.field public W:I
+.field public final c0:[I
+
+.field public final d0:I
+
+.field public final e0:[I
 
 
 # direct methods
-.method public constructor <init>(Lfv7;Law0;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lxz0;->V:Lfv7;
+    new-instance v0, Lh47;
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
+    const/16 v1, 0x1c
 
     .line 4
     .line 5
+    invoke-direct {v0, v1}, Lh47;-><init>(I)V
+
     .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lxz0;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public constructor <init>(Lia6;ZZ[II[I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lxz0;->X:Lia6;
+
+    .line 5
+    .line 6
+    iput-boolean p2, p0, Lxz0;->Y:Z
+
+    .line 7
+    .line 8
+    iput-boolean p3, p0, Lxz0;->Z:Z
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lxz0;->c0:[I
+
+    .line 11
+    .line 12
+    iput p5, p0, Lxz0;->d0:I
+
+    .line 13
+    .line 14
+    iput-object p6, p0, Lxz0;->e0:[I
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 3
 
     .line 1
-    iput-object p1, p0, Lxz0;->U:Ljava/lang/Object;
+    const/16 v0, 0x4f45
 
     .line 2
     .line 3
-    iget p1, p0, Lxz0;->W:I
+    invoke-static {p1, v0}, Lmu4;->E0(Landroid/os/Parcel;I)I
 
     .line 4
     .line 5
-    const/high16 v0, -0x80000000
-
     .line 6
+    move-result v0
+
     .line 7
-    or-int/2addr p1, v0
+    const/4 v1, 0x1
 
     .line 8
-    iput p1, p0, Lxz0;->W:I
+    iget-object v2, p0, Lxz0;->X:Lia6;
 
     .line 9
     .line 10
-    iget-object p1, p0, Lxz0;->V:Lfv7;
+    invoke-static {p1, v1, v2, p2}, Lmu4;->y0(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 
     .line 11
     .line 12
-    invoke-virtual {p1, p0}, Lfv7;->h(Law0;)Ljava/lang/Object;
-
     .line 13
+    const/4 p2, 0x2
+
     .line 14
+    const/4 v1, 0x4
+
     .line 15
-    move-result-object p1
+    invoke-static {p1, p2, v1}, Lmu4;->D0(Landroid/os/Parcel;II)V
 
     .line 16
-    return-object p1
+    .line 17
+    .line 18
+    iget-boolean p2, p0, Lxz0;->Y:Z
+
+    .line 19
+    .line 20
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 21
+    .line 22
+    .line 23
+    const/4 p2, 0x3
+
+    .line 24
+    invoke-static {p1, p2, v1}, Lmu4;->D0(Landroid/os/Parcel;II)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget-boolean p2, p0, Lxz0;->Z:Z
+
+    .line 28
+    .line 29
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 30
+    .line 31
+    .line 32
+    iget-object p2, p0, Lxz0;->c0:[I
+
+    .line 33
+    .line 34
+    if-nez p2, :cond_0
+
+    .line 35
+    .line 36
+    goto :goto_0
+
+    .line 37
+    :cond_0
+    invoke-static {p1, v1}, Lmu4;->E0(Landroid/os/Parcel;I)I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v2
+
+    .line 41
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeIntArray([I)V
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-static {p1, v2}, Lmu4;->F0(Landroid/os/Parcel;I)V
+
+    .line 45
+    .line 46
+    .line 47
+    :goto_0
+    const/4 p2, 0x5
+
+    .line 48
+    invoke-static {p1, p2, v1}, Lmu4;->D0(Landroid/os/Parcel;II)V
+
+    .line 49
+    .line 50
+    .line 51
+    iget p2, p0, Lxz0;->d0:I
+
+    .line 52
+    .line 53
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 54
+    .line 55
+    .line 56
+    iget-object p0, p0, Lxz0;->e0:[I
+
+    .line 57
+    .line 58
+    if-nez p0, :cond_1
+
+    .line 59
+    .line 60
+    goto :goto_1
+
+    .line 61
+    :cond_1
+    const/4 p2, 0x6
+
+    .line 62
+    invoke-static {p1, p2}, Lmu4;->E0(Landroid/os/Parcel;I)I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result p2
+
+    .line 66
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeIntArray([I)V
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-static {p1, p2}, Lmu4;->F0(Landroid/os/Parcel;I)V
+
+    .line 70
+    .line 71
+    .line 72
+    :goto_1
+    invoke-static {p1, v0}, Lmu4;->F0(Landroid/os/Parcel;I)V
+
+    .line 73
+    .line 74
+    .line 75
+    return-void
 .end method

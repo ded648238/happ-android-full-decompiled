@@ -1,25 +1,29 @@
 .class public final Loq2;
-.super Landroid/view/inputmethod/InputConnectionWrapper;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/util/concurrent/AbstractExecutorService;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/util/concurrent/ScheduledExecutorService;
+.implements Ljava/lang/AutoCloseable;
 
 
 # instance fields
-.field public final synthetic a:Lpq2;
+.field public final X:Landroid/os/Handler;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/inputmethod/InputConnection;Lpq2;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iput-object p2, p0, Loq2;->a:Lpq2;
+    new-instance v0, Lih;
 
     .line 2
     .line 3
-    const/4 p2, 0x0
+    const/4 v1, 0x2
 
     .line 4
-    invoke-direct {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;-><init>(Landroid/view/inputmethod/InputConnection;Z)V
+    invoke-direct {v0, v1}, Lih;-><init>(I)V
 
     .line 5
     .line 6
@@ -27,339 +31,430 @@
     return-void
 .end method
 
-
-# virtual methods
-.method public final performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
-    .locals 11
+.method public constructor <init>(Landroid/os/Handler;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Loq2;->a:Lpq2;
+    invoke-direct {p0}, Ljava/util/concurrent/AbstractExecutorService;-><init>()V
 
     .line 2
     .line 3
-    const/4 v1, 0x1
-
     .line 4
-    const/4 v2, 0x0
+    iput-object p1, p0, Loq2;->X:Landroid/os/Handler;
 
     .line 5
-    if-nez p2, :cond_0
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
+    .locals 0
+
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-class p1, Loq2;
+
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     .line 6
     .line 7
-    goto/16 :goto_8
-
     .line 8
+    move-result-object p1
+
     .line 9
-    :cond_0
-    const-string v3, "androidx.core.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+    const-string p2, " cannot be shut down. Use Looper.quitSafely()."
 
     .line 10
     .line 11
-    invoke-static {v3, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {p1, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 12
     .line 13
     .line 14
-    move-result v3
+    move-result-object p1
 
     .line 15
-    if-eqz v3, :cond_1
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 16
     .line 17
-    const/4 v3, 0x0
-
     .line 18
-    goto :goto_0
+    throw p0
+.end method
 
+.method public final synthetic close()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Ljava/util/concurrent/ForkJoinPool;->commonPool()Ljava/util/concurrent/ForkJoinPool;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-ne p0, v0, :cond_0
+
+    .line 6
+    .line 7
+    return-void
+
+    .line 8
+    :cond_0
+    invoke-virtual {p0}, Loq2;->shutdown()V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 p0, 0x0
+
+    .line 12
+    throw p0
+.end method
+
+.method public final execute(Ljava/lang/Runnable;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Loq2;->X:Landroid/os/Handler;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    if-eqz p1, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    invoke-static {p0}, Ljl1;->h(Ljava/lang/Object;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public final isShutdown()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final isTerminated()Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public final schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+    .locals 1
+
+    .line 55
+    new-instance v0, Lmq2;
+
+    invoke-direct {v0, p1}, Lmq2;-><init>(Ljava/lang/Runnable;)V
+
+    .line 56
+    invoke-virtual {p0, v0, p2, p3, p4}, Loq2;->schedule(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final schedule(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+    .locals 3
+
+    .line 1
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    sget-object v2, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 6
+    .line 7
+    invoke-virtual {v2, p2, p3, p4}, Ljava/util/concurrent/TimeUnit;->convert(JLjava/util/concurrent/TimeUnit;)J
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-wide p2
+
+    .line 11
+    add-long/2addr p2, v0
+
+    .line 12
+    new-instance p4, Lnq2;
+
+    .line 13
+    .line 14
+    iget-object p0, p0, Loq2;->X:Landroid/os/Handler;
+
+    .line 15
+    .line 16
+    invoke-direct {p4, p0, p2, p3, p1}, Lnq2;-><init>(Landroid/os/Handler;JLjava/util/concurrent/Callable;)V
+
+    .line 17
+    .line 18
     .line 19
-    :cond_1
-    const-string v3, "android.support.v13.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+    invoke-virtual {p0, p4, p2, p3}, Landroid/os/Handler;->postAtTime(Ljava/lang/Runnable;J)Z
 
     .line 20
     .line 21
-    invoke-static {v3, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
     .line 22
-    .line 23
-    .line 24
-    move-result v3
+    move-result p1
 
+    .line 23
+    if-eqz p1, :cond_0
+
+    .line 24
     .line 25
-    if-eqz v3, :cond_a
+    return-object p4
 
     .line 26
-    .line 27
-    const/4 v3, 0x1
+    :cond_0
+    new-instance p1, Ljava/util/concurrent/RejectedExecutionException;
 
+    .line 27
     .line 28
-    :goto_0
-    const/4 v4, 0x0
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 29
-    if-eqz v3, :cond_2
-
     .line 30
-    .line 31
-    :try_start_0
-    const-string v5, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 31
     .line 32
     .line 33
-    goto :goto_1
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 34
-    :catchall_0
-    move-exception p1
-
     .line 35
-    move-object v5, v4
-
     .line 36
-    goto :goto_7
+    const-string p0, " is shutting down"
 
     .line 37
-    :cond_2
-    const-string v5, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
-
     .line 38
-    .line 39
-    :goto_1
-    invoke-virtual {p2, v5}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 39
     .line 40
     .line 41
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 42
-    move-result-object v5
-
     .line 43
-    check-cast v5, Landroid/os/ResultReceiver;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 44
+    move-result-object p0
+
     .line 45
-    if-eqz v3, :cond_3
+    invoke-direct {p1, p0}, Ljava/util/concurrent/RejectedExecutionException;-><init>(Ljava/lang/String;)V
 
     .line 46
     .line 47
-    :try_start_1
-    const-string v6, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_URI"
-
     .line 48
-    .line 49
-    goto :goto_2
+    new-instance p0, Lb03;
 
+    .line 49
     .line 50
-    :catchall_1
-    move-exception p1
+    const/4 p2, 0x1
 
     .line 51
-    goto :goto_7
+    invoke-direct {p0, p2, p1}, Lc03;-><init>(ILjava/lang/Object;)V
 
     .line 52
-    :cond_3
-    const-string v6, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_URI"
-
     .line 53
     .line 54
-    :goto_2
-    invoke-virtual {p2, v6}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    return-object p0
+.end method
 
-    .line 55
-    .line 56
-    .line 57
-    move-result-object v6
+.method public final scheduleAtFixedRate(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+    .locals 0
 
-    .line 58
-    check-cast v6, Landroid/net/Uri;
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    .line 59
-    .line 60
-    if-eqz v3, :cond_4
+    .line 2
+    .line 3
+    const-class p1, Loq2;
 
-    .line 61
-    .line 62
-    const-string v7, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    .line 63
-    .line 64
-    goto :goto_3
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
 
-    .line 65
-    :cond_4
-    const-string v7, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+    .line 9
+    const-string p2, " does not yet support fixed-rate scheduling."
 
-    .line 66
-    .line 67
-    :goto_3
-    invoke-virtual {p2, v7}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    .line 10
+    .line 11
+    invoke-virtual {p1, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 68
-    .line 69
-    .line 70
-    move-result-object v7
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
 
-    .line 71
-    check-cast v7, Landroid/content/ClipDescription;
+    .line 15
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    .line 72
-    .line 73
-    if-eqz v3, :cond_5
+    .line 16
+    .line 17
+    .line 18
+    throw p0
+.end method
 
-    .line 74
-    .line 75
-    const-string v8, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+.method public final scheduleWithFixedDelay(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+    .locals 0
 
-    .line 76
-    .line 77
-    goto :goto_4
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    .line 78
-    :cond_5
-    const-string v8, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+    .line 2
+    .line 3
+    const-class p1, Loq2;
 
-    .line 79
-    .line 80
-    :goto_4
-    invoke-virtual {p2, v8}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    .line 81
-    .line 82
-    .line 83
-    move-result-object v8
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
 
-    .line 84
-    check-cast v8, Landroid/net/Uri;
+    .line 9
+    const-string p2, " does not yet support fixed-delay scheduling."
 
-    .line 85
-    .line 86
-    if-eqz v3, :cond_6
+    .line 10
+    .line 11
+    invoke-virtual {p1, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 87
-    .line 88
-    const-string v9, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
 
-    .line 89
-    .line 90
-    goto :goto_5
+    .line 15
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    .line 91
-    :cond_6
-    const-string v9, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+    .line 16
+    .line 17
+    .line 18
+    throw p0
+.end method
 
-    .line 92
-    .line 93
-    :goto_5
-    invoke-virtual {p2, v9}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
+.method public final shutdown()V
+    .locals 2
 
-    .line 94
-    .line 95
-    .line 96
-    move-result v9
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    .line 97
-    if-eqz v3, :cond_7
+    .line 2
+    .line 3
+    const-class v0, Loq2;
 
-    .line 98
-    .line 99
-    const-string v3, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    .line 100
-    .line 101
-    goto :goto_6
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
 
-    .line 102
-    :cond_7
-    const-string v3, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+    .line 9
+    const-string v1, " cannot be shut down. Use Looper.quitSafely()."
 
-    .line 103
-    .line 104
-    :goto_6
-    invoke-virtual {p2, v3}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    .line 10
+    .line 11
+    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 105
-    .line 106
-    .line 107
-    move-result-object v3
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
 
-    .line 108
-    check-cast v3, Landroid/os/Bundle;
+    .line 15
+    invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    .line 109
-    .line 110
-    if-eqz v6, :cond_8
+    .line 16
+    .line 17
+    .line 18
+    throw p0
+.end method
 
-    .line 111
-    .line 112
-    if-eqz v7, :cond_8
+.method public final shutdownNow()Ljava/util/List;
+    .locals 2
 
-    .line 113
-    .line 114
-    new-instance v10, Lr91;
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    .line 115
-    .line 116
-    invoke-direct {v10, v6, v7, v8}, Lr91;-><init>(Landroid/net/Uri;Landroid/content/ClipDescription;Landroid/net/Uri;)V
+    .line 2
+    .line 3
+    const-class v0, Loq2;
 
-    .line 117
-    .line 118
-    .line 119
-    invoke-interface {v0, v10, v9, v3}, Lpq2;->c(Lr91;ILandroid/os/Bundle;)Z
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    .line 120
-    .line 121
-    .line 122
-    move-result v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
 
-    .line 123
-    :cond_8
-    if-eqz v5, :cond_a
+    .line 9
+    const-string v1, " cannot be shut down. Use Looper.quitSafely()."
 
-    .line 124
-    .line 125
-    invoke-virtual {v5, v2, v4}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
+    .line 10
+    .line 11
+    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 126
-    .line 127
-    .line 128
-    goto :goto_8
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
 
-    .line 129
-    :goto_7
-    if-eqz v5, :cond_9
+    .line 15
+    invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    .line 130
-    .line 131
-    invoke-virtual {v5, v2, v4}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
-
-    .line 132
-    .line 133
-    .line 134
-    :cond_9
-    throw p1
-
-    .line 135
-    :cond_a
-    :goto_8
-    if-eqz v2, :cond_b
-
-    .line 136
-    .line 137
-    return v1
-
-    .line 138
-    :cond_b
-    invoke-super {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;->performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
-
-    .line 139
-    .line 140
-    .line 141
-    move-result p1
-
-    .line 142
-    return p1
+    .line 16
+    .line 17
+    .line 18
+    throw p0
 .end method

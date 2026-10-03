@@ -1,43 +1,184 @@
-.class public abstract Lio/sentry/g4;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lio/sentry/c1;
+.class public final enum Lio/sentry/g4;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# virtual methods
-.method public a(Ljava/util/Collection;)V
-    .locals 0
+# static fields
+.field private static final synthetic $VALUES:[Lio/sentry/g4;
+
+.field public static final enum AUTO:Lio/sentry/g4;
+
+.field public static final enum OFF:Lio/sentry/g4;
+
+.field public static final enum ON:Lio/sentry/g4;
+
+
+# direct methods
+.method private static synthetic $values()[Lio/sentry/g4;
+    .locals 3
 
     .line 1
+    sget-object v0, Lio/sentry/g4;->AUTO:Lio/sentry/g4;
+
+    .line 2
+    .line 3
+    sget-object v1, Lio/sentry/g4;->ON:Lio/sentry/g4;
+
+    .line 4
+    .line 5
+    sget-object v2, Lio/sentry/g4;->OFF:Lio/sentry/g4;
+
+    .line 6
+    .line 7
+    filled-new-array {v0, v1, v2}, [Lio/sentry/g4;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    new-instance v0, Lio/sentry/g4;
+
+    .line 2
+    .line 3
+    const-string v1, "AUTO"
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    invoke-direct {v0, v1, v2}, Lio/sentry/g4;-><init>(Ljava/lang/String;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    sput-object v0, Lio/sentry/g4;->AUTO:Lio/sentry/g4;
+
+    .line 10
+    .line 11
+    new-instance v0, Lio/sentry/g4;
+
+    .line 12
+    .line 13
+    const-string v1, "ON"
+
+    .line 14
+    .line 15
+    const/4 v2, 0x1
+
+    .line 16
+    invoke-direct {v0, v1, v2}, Lio/sentry/g4;-><init>(Ljava/lang/String;I)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v0, Lio/sentry/g4;->ON:Lio/sentry/g4;
+
+    .line 20
+    .line 21
+    new-instance v0, Lio/sentry/g4;
+
+    .line 22
+    .line 23
+    const-string v1, "OFF"
+
+    .line 24
+    .line 25
+    const/4 v2, 0x2
+
+    .line 26
+    invoke-direct {v0, v1, v2}, Lio/sentry/g4;-><init>(Ljava/lang/String;I)V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v0, Lio/sentry/g4;->OFF:Lio/sentry/g4;
+
+    .line 30
+    .line 31
+    invoke-static {}, Lio/sentry/g4;->$values()[Lio/sentry/g4;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    sput-object v0, Lio/sentry/g4;->$VALUES:[Lio/sentry/g4;
+
+    .line 36
+    .line 37
     return-void
 .end method
 
-.method public b()V
+.method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
-.method public d(Lio/sentry/protocol/e;)V
-    .locals 0
+.method public static valueOf(Ljava/lang/String;)Lio/sentry/g4;
+    .locals 1
 
     .line 1
-    return-void
+    const-class v0, Lio/sentry/g4;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lio/sentry/g4;
+
+    .line 8
+    .line 9
+    return-object p0
 .end method
 
-.method public e(Ljava/lang/String;)V
-    .locals 0
+.method public static values()[Lio/sentry/g4;
+    .locals 1
 
     .line 1
-    return-void
-.end method
+    sget-object v0, Lio/sentry/g4;->$VALUES:[Lio/sentry/g4;
 
-.method public g(Lio/sentry/protocol/w;)V
-    .locals 0
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [Lio/sentry/g4;->clone()Ljava/lang/Object;
 
-    .line 1
-    return-void
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lio/sentry/g4;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

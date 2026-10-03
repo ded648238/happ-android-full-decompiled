@@ -1,112 +1,93 @@
 .class public final Lrk4;
-.super Ljava/util/concurrent/atomic/AtomicLong;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Li15;
+
+# static fields
+.field public static final c:Ljava/util/HashMap;
 
 
 # instance fields
-.field public final Q:Lsk4;
+.field public final a:Ljava/lang/String;
+
+.field public final b:Lgn3;
 
 
 # direct methods
-.method public constructor <init>(Lsk4;)V
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/util/HashMap;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lrk4;->c:Ljava/util/HashMap;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>(Lgn3;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lrk4;->Q:Lsk4;
+    iput-object p2, p0, Lrk4;->a:Ljava/lang/String;
 
     .line 5
     .line 6
+    iput-object p1, p0, Lrk4;->b:Lgn3;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final request(J)V
-    .locals 5
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    const-wide/16 v0, 0x0
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    cmp-long v2, p1, v0
+    const-string v1, "Metadata.Key("
 
     .line 4
     .line 5
-    if-lez v2, :cond_1
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
-
     .line 8
+    iget-object p0, p0, Lrk4;->a:Ljava/lang/String;
+
     .line 9
     .line 10
-    move-result-wide v0
+    const/16 v1, 0x29
 
     .line 11
-    const-wide v2, 0x7fffffffffffffffL
-
     .line 12
+    invoke-static {v0, p0, v1}, Leh0;->q(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+
     .line 13
     .line 14
     .line 15
+    move-result-object p0
+
     .line 16
-    cmp-long v4, v0, v2
-
-    .line 17
-    .line 18
-    if-nez v4, :cond_0
-
-    .line 19
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    invoke-static {p0, p1, p2}, Ll14;->I(Ljava/util/concurrent/atomic/AtomicLong;J)J
-
-    .line 22
-    .line 23
-    .line 24
-    iget-object p1, p0, Lrk4;->Q:Lsk4;
-
-    .line 25
-    .line 26
-    invoke-virtual {p1}, Lsk4;->i()V
-
-    .line 27
-    .line 28
-    .line 29
-    return-void
-
-    .line 30
-    :cond_1
-    if-ltz v2, :cond_2
-
-    .line 31
-    .line 32
-    :goto_0
-    return-void
-
-    .line 33
-    :cond_2
-    const-string p1, "n >= 0 required"
-
-    .line 34
-    .line 35
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
-
-    .line 36
-    .line 37
-    .line 38
-    return-void
+    return-object p0
 .end method

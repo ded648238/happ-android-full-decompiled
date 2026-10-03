@@ -1,141 +1,196 @@
-.class public abstract Lt36;
+.class public final Lt36;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:I
-
-.field public static final b:Lku0;
-
-.field public static final c:Lku0;
-
-.field public static final d:Lku0;
-
-.field public static final e:Lku0;
-
-.field public static final f:I
+# instance fields
+.field private volatile array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReferenceArray<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(I)V
+    .locals 1
 
     .line 1
-    const/16 v0, 0x64
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/16 v1, 0xc
+    .line 4
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    .line 5
+    .line 6
+    invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;-><init>(I)V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lt36;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lt36;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     .line 4
     .line 5
-    const-string v2, "kotlinx.coroutines.semaphore.maxSpinCycles"
-
     .line 6
+    move-result p0
+
     .line 7
-    invoke-static {v0, v1, v2}, Le21;->M(IILjava/lang/String;)I
+    return p0
+.end method
+
+.method public final b(I)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, Lt36;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-ge p1, v0, :cond_0
 
     .line 8
     .line 9
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
+
     .line 10
-    move-result v0
-
     .line 11
-    sput v0, Lt36;->a:I
-
     .line 12
+    move-result-object p0
+
     .line 13
-    new-instance v0, Lku0;
+    return-object p0
+
+    .line 14
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 15
+    return-object p0
+.end method
+
+.method public final c(ILf41;)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lt36;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    if-ge p1, v1, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, p1, p2}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+
+    .line 13
+    :cond_0
+    new-instance v2, Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 14
     .line 15
-    const-string v2, "PERMIT"
+    add-int/lit8 v3, p1, 0x1
 
     .line 16
     .line 17
-    const/4 v3, 0x3
+    mul-int/lit8 v4, v1, 0x2
 
     .line 18
-    invoke-direct {v0, v2, v3}, Lku0;-><init>(Ljava/lang/String;I)V
-
     .line 19
+    if-ge v3, v4, :cond_1
+
     .line 20
     .line 21
-    sput-object v0, Lt36;->b:Lku0;
+    move v3, v4
 
     .line 22
-    .line 23
-    new-instance v0, Lku0;
+    :cond_1
+    invoke-direct {v2, v3}, Ljava/util/concurrent/atomic/AtomicReferenceArray;-><init>(I)V
 
+    .line 23
     .line 24
     .line 25
-    const-string v2, "TAKEN"
+    const/4 v3, 0x0
 
     .line 26
-    .line 27
-    invoke-direct {v0, v2, v3}, Lku0;-><init>(Ljava/lang/String;I)V
+    :goto_0
+    if-ge v3, v1, :cond_2
 
+    .line 27
     .line 28
+    invoke-virtual {v0, v3}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
+
     .line 29
     .line 30
-    sput-object v0, Lt36;->c:Lku0;
-
     .line 31
+    move-result-object v4
+
     .line 32
-    new-instance v0, Lku0;
+    invoke-virtual {v2, v3, v4}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
 
     .line 33
     .line 34
-    const-string v2, "BROKEN"
-
     .line 35
+    add-int/lit8 v3, v3, 0x1
+
     .line 36
-    invoke-direct {v0, v2, v3}, Lku0;-><init>(Ljava/lang/String;I)V
-
     .line 37
-    .line 38
-    .line 39
-    sput-object v0, Lt36;->d:Lku0;
+    goto :goto_0
 
+    .line 38
+    :cond_2
+    invoke-virtual {v2, p1, p2}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
+
+    .line 39
     .line 40
     .line 41
-    new-instance v0, Lku0;
+    iput-object v2, p0, Lt36;->array:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 42
     .line 43
-    const-string v2, "CANCELLED"
-
-    .line 44
-    .line 45
-    invoke-direct {v0, v2, v3}, Lku0;-><init>(Ljava/lang/String;I)V
-
-    .line 46
-    .line 47
-    .line 48
-    sput-object v0, Lt36;->e:Lku0;
-
-    .line 49
-    .line 50
-    const-string v0, "kotlinx.coroutines.semaphore.segmentSize"
-
-    .line 51
-    .line 52
-    const/16 v2, 0x10
-
-    .line 53
-    .line 54
-    invoke-static {v2, v1, v0}, Le21;->M(IILjava/lang/String;)I
-
-    .line 55
-    .line 56
-    .line 57
-    move-result v0
-
-    .line 58
-    sput v0, Lt36;->f:I
-
-    .line 59
-    .line 60
     return-void
 .end method

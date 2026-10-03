@@ -1,11 +1,33 @@
 package defpackage;
 
-import java.util.concurrent.atomic.AtomicBoolean;
+import androidx.compose.ui.platform.AndroidComposeView;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class lc2 {
-    public static final AtomicBoolean a = new AtomicBoolean();
-    public static final AtomicBoolean b = new AtomicBoolean();
-    public static final /* synthetic */ int c = 0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class lc2 {
+    public final qc2 a;
+    public final AndroidComposeView b;
+    public final nq4 c;
+    public final nq4 d;
+    public boolean e;
+
+    public lc2(qc2 qc2Var, AndroidComposeView androidComposeView) {
+        this.a = qc2Var;
+        this.b = androidComposeView;
+        nq4 nq4Var = vk6.a;
+        this.c = new nq4();
+        this.d = new nq4();
+    }
+
+    public final void a() {
+        if (this.e) {
+            return;
+        }
+        qb qbVar = new qb(0, this, lc2.class, "invalidateNodes", "invalidateNodes()V", 0, 11);
+        dq4 dq4Var = this.b.o1;
+        if (!dq4Var.e(qbVar)) {
+            dq4Var.a(qbVar);
+        }
+        this.e = true;
+    }
 }

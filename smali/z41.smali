@@ -1,163 +1,79 @@
 .class public final Lz41;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lou3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/view/animation/Animation$AnimationListener;
+.implements Lyi2;
 
 
 # instance fields
-.field public final synthetic a:Lye6;
-
-.field public final synthetic b:Landroid/view/ViewGroup;
-
-.field public final synthetic c:Landroid/view/View;
-
-.field public final synthetic d:La51;
+.field public final synthetic X:Lj62;
 
 
 # direct methods
-.method public constructor <init>(Lye6;Landroid/view/ViewGroup;Landroid/view/View;La51;)V
+.method public constructor <init>(Lj62;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lz41;->X:Lj62;
 
     .line 2
     .line 3
+    const/4 p1, 0x3
+
     .line 4
-    iput-object p1, p0, Lz41;->a:Lye6;
+    invoke-direct {p0, p1}, Lou3;-><init>(I)V
 
     .line 5
     .line 6
-    iput-object p2, p0, Lz41;->b:Landroid/view/ViewGroup;
-
     .line 7
-    .line 8
-    iput-object p3, p0, Lz41;->c:Landroid/view/View;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Lz41;->d:La51;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationEnd(Landroid/view/animation/Animation;)V
-    .locals 4
+.method public final w(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p1, Li08;
 
     .line 2
     .line 3
+    check-cast p2, Lrk2;
+
     .line 4
-    new-instance p1, Lsf;
-
     .line 5
-    .line 6
-    const/4 v0, 0x4
+    check-cast p3, Ljava/lang/Number;
 
+    .line 6
     .line 7
-    iget-object v1, p0, Lz41;->b:Landroid/view/ViewGroup;
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
 
     .line 8
     .line 9
-    iget-object v2, p0, Lz41;->c:Landroid/view/View;
-
     .line 10
-    .line 11
-    iget-object v3, p0, Lz41;->d:La51;
+    const p1, 0x38f969d6
 
+    .line 11
     .line 12
     .line 13
-    invoke-direct {p1, v1, v2, v3, v0}, Lsf;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-virtual {p2, p1}, Lrk2;->W(I)V
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v1, p1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+    const/4 p1, 0x0
 
     .line 17
+    invoke-virtual {p2, p1}, Lrk2;->p(Z)V
+
     .line 18
     .line 19
-    const/4 p1, 0x2
-
     .line 20
-    invoke-static {p1}, Ly52;->K(I)Z
+    iget-object p0, p0, Lz41;->X:Lj62;
 
     .line 21
     .line 22
-    .line 23
-    move-result p1
-
-    .line 24
-    if-eqz p1, :cond_0
-
-    .line 25
-    .line 26
-    iget-object p1, p0, Lz41;->a:Lye6;
-
-    .line 27
-    .line 28
-    invoke-static {p1}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
-    :cond_0
-    return-void
-.end method
-
-.method public final onAnimationRepeat(Landroid/view/animation/Animation;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final onAnimationStart(Landroid/view/animation/Animation;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    const/4 p1, 0x2
-
-    .line 5
-    invoke-static {p1}, Ly52;->K(I)Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p1
-
-    .line 9
-    if-eqz p1, :cond_0
-
-    .line 10
-    .line 11
-    iget-object p1, p0, Lz41;->a:Lye6;
-
-    .line 12
-    .line 13
-    invoke-static {p1}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 14
-    .line 15
-    .line 16
-    :cond_0
-    return-void
+    return-object p0
 .end method

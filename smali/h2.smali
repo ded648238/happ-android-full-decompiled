@@ -1,66 +1,228 @@
-.class public final Lh2;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Lh2;
+.super Lw1;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final a:Ljava/lang/Throwable;
+# virtual methods
+.method public abstract b(ILjava/lang/Object;)Lh2;
+.end method
 
+.method public abstract c(Ljava/lang/Object;)Lh2;
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public final contains(Ljava/lang/Object;)Z
+    .locals 0
 
     .line 1
-    new-instance v0, Lh2;
+    invoke-virtual {p0, p1}, Lw1;->indexOf(Ljava/lang/Object;)I
 
     .line 2
     .line 3
-    new-instance v1, Le1;
+    .line 4
+    move-result p0
+
+    .line 5
+    const/4 p1, -0x1
+
+    .line 6
+    if-eq p0, p1, :cond_0
+
+    .line 7
+    .line 8
+    const/4 p0, 0x1
+
+    .line 9
+    return p0
+
+    .line 10
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 11
+    return p0
+.end method
+
+.method public final containsAll(Ljava/util/Collection;)Z
+    .locals 2
+
+    .line 1
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 2
+    .line 3
+    instance-of v0, p1, Ljava/util/Collection;
 
     .line 4
     .line 5
-    const-string v2, "Failure occurred while trying to finish a future."
+    const/4 v1, 0x1
 
     .line 6
-    .line 7
-    const/4 v3, 0x1
+    if-eqz v0, :cond_0
 
+    .line 7
     .line 8
-    invoke-direct {v1, v2, v3}, Le1;-><init>(Ljava/lang/String;I)V
+    move-object v0, p1
 
     .line 9
+    check-cast v0, Ljava/util/Collection;
+
     .line 10
     .line 11
-    invoke-direct {v0, v1}, Lh2;-><init>(Ljava/lang/Throwable;)V
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     .line 12
     .line 13
     .line 14
-    return-void
+    move-result v0
+
+    .line 15
+    if-eqz v0, :cond_0
+
+    .line 16
+    .line 17
+    return v1
+
+    .line 18
+    :cond_0
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    :cond_1
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v0
+
+    .line 26
+    if-eqz v0, :cond_2
+
+    .line 27
+    .line 28
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    invoke-virtual {p0, v0}, Lh2;->contains(Ljava/lang/Object;)Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v0
+
+    .line 36
+    if-nez v0, :cond_1
+
+    .line 37
+    .line 38
+    const/4 p0, 0x0
+
+    .line 39
+    return p0
+
+    .line 40
+    :cond_2
+    return v1
 .end method
 
-.method public constructor <init>(Ljava/lang/Throwable;)V
-    .locals 1
+.method public e(Ljava/util/Collection;)Lh2;
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p0}, Lh2;->f()Lxb5;
 
     .line 2
     .line 3
     .line 4
-    sget-boolean v0, Lm2;->T:Z
+    move-result-object p0
 
     .line 5
-    .line 6
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0, p1}, Lxb5;->addAll(Ljava/util/Collection;)Z
 
+    .line 6
     .line 7
     .line 8
-    .line 9
-    iput-object p1, p0, Lh2;->a:Ljava/lang/Throwable;
+    invoke-virtual {p0}, Lxb5;->c()Lh2;
 
+    .line 9
     .line 10
     .line 11
-    return-void
+    move-result-object p0
+
+    .line 12
+    return-object p0
+.end method
+
+.method public abstract f()Lxb5;
+.end method
+
+.method public abstract i(Lf2;)Lh2;
+.end method
+
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0}, Lw1;->listIterator(I)Ljava/util/ListIterator;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object p0
+
+    .line 6
+    return-object p0
+.end method
+
+.method public abstract j(I)Lh2;
+.end method
+
+.method public abstract l(ILjava/lang/Object;)Lh2;
+.end method
+
+.method public final listIterator()Ljava/util/ListIterator;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0}, Lw1;->listIterator(I)Ljava/util/ListIterator;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object p0
+
+    .line 6
+    return-object p0
+.end method
+
+.method public final subList(II)Ljava/util/List;
+    .locals 1
+
+    .line 1
+    new-instance v0, Li03;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p2}, Li03;-><init>(Lh2;II)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
 .end method

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/internal/tls/TrustRootIndex;
@@ -92,25 +92,25 @@
 .end method
 
 .method private final component1()Ljavax/net/ssl/X509TrustManager;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->trustManager:Ljavax/net/ssl/X509TrustManager;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->trustManager:Ljavax/net/ssl/X509TrustManager;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method private final component2()Ljava/lang/reflect/Method;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->findByIssuerAndSignatureMethod:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->findByIssuerAndSignatureMethod:Ljava/lang/reflect/Method;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public static synthetic copy$default(Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;Ljavax/net/ssl/X509TrustManager;Ljava/lang/reflect/Method;ILjava/lang/Object;)Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;
@@ -157,7 +157,7 @@
 
 # virtual methods
 .method public final copy(Ljavax/net/ssl/X509TrustManager;Ljava/lang/reflect/Method;)Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -170,16 +170,16 @@
     .line 5
     .line 6
     .line 7
-    new-instance v0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;
+    new-instance p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;
 
     .line 8
     .line 9
-    invoke-direct {v0, p1, p2}, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;-><init>(Ljavax/net/ssl/X509TrustManager;Ljava/lang/reflect/Method;)V
+    invoke-direct {p0, p1, p2}, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;-><init>(Ljavax/net/ssl/X509TrustManager;Ljava/lang/reflect/Method;)V
 
     .line 10
     .line 11
     .line 12
-    return-object v0
+    return-object p0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -224,7 +224,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -240,7 +240,7 @@
 
     .line 24
     :cond_2
-    iget-object v1, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->findByIssuerAndSignatureMethod:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->findByIssuerAndSignatureMethod:Ljava/lang/reflect/Method;
 
     .line 25
     .line 26
@@ -248,15 +248,15 @@
 
     .line 27
     .line 28
-    invoke-static {v1, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
     .line 31
-    move-result p1
+    move-result p0
 
     .line 32
-    if-nez p1, :cond_3
+    if-nez p0, :cond_3
 
     .line 33
     .line 34
@@ -268,7 +268,7 @@
 .end method
 
 .method public findByIssuerAndSignature(Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509Certificate;
-    .locals 4
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -281,88 +281,78 @@
 
     .line 5
     .line 6
-    iget-object v1, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->trustManager:Ljavax/net/ssl/X509TrustManager;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->trustManager:Ljavax/net/ssl/X509TrustManager;
 
     .line 7
     .line 8
-    const/4 v2, 0x1
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 9
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 10
     .line 11
-    const/4 v3, 0x0
+    move-result-object p1
 
     .line 12
-    aput-object p1, v2, v3
+    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     .line 14
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 15
+    move-result-object p0
+
     .line 16
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 17
-    move-result-object p1
-
     .line 18
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 19
+    check-cast p0, Ljava/security/cert/TrustAnchor;
+
     .line 20
     .line 21
-    check-cast p1, Ljava/security/cert/TrustAnchor;
+    invoke-virtual {p0}, Ljava/security/cert/TrustAnchor;->getTrustedCert()Ljava/security/cert/X509Certificate;
 
     .line 22
     .line 23
-    invoke-virtual {p1}, Ljava/security/cert/TrustAnchor;->getTrustedCert()Ljava/security/cert/X509Certificate;
-
     .line 24
-    .line 25
-    .line 26
-    move-result-object p1
+    move-result-object p0
     :try_end_0
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 25
+    return-object p0
+
+    .line 26
+    :catch_0
+    const/4 p0, 0x0
 
     .line 27
-    return-object p1
+    return-object p0
 
     .line 28
-    :catch_0
-    move-exception p1
+    :catch_1
+    move-exception p0
 
     .line 29
-    goto :goto_0
+    new-instance p1, Ljava/lang/AssertionError;
 
     .line 30
-    :catch_1
-    const/4 p1, 0x0
-
     .line 31
-    return-object p1
+    const-string v0, "unable to get issues and signature"
 
     .line 32
-    :goto_0
-    new-instance v0, Ljava/lang/AssertionError;
-
     .line 33
-    .line 34
-    const-string v1, "unable to get issues and signature"
+    invoke-direct {p1, v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 34
     .line 35
     .line 36
-    invoke-direct {v0, v1, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 37
-    .line 38
-    .line 39
-    throw v0
+    throw p1
 .end method
 
 .method public hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->trustManager:Ljavax/net/ssl/X509TrustManager;
@@ -381,22 +371,22 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->findByIssuerAndSignatureMethod:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->findByIssuerAndSignatureMethod:Ljava/lang/reflect/Method;
 
     .line 10
     .line 11
-    invoke-virtual {v1}, Ljava/lang/reflect/Method;->hashCode()I
+    invoke-virtual {p0}, Ljava/lang/reflect/Method;->hashCode()I
 
     .line 12
     .line 13
     .line 14
-    move-result v1
+    move-result p0
 
     .line 15
-    add-int/2addr v1, v0
+    add-int/2addr p0, v0
 
     .line 16
-    return v1
+    return p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -434,20 +424,20 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->findByIssuerAndSignatureMethod:Ljava/lang/reflect/Method;
+    iget-object p0, p0, Lokhttp3/internal/platform/AndroidPlatform$CustomTrustRootIndex;->findByIssuerAndSignatureMethod:Ljava/lang/reflect/Method;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    const/16 v1, 0x29
+    const/16 p0, 0x29
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
@@ -457,8 +447,8 @@
     .line 29
     .line 30
     .line 31
-    move-result-object v0
+    move-result-object p0
 
     .line 32
-    return-object v0
+    return-object p0
 .end method

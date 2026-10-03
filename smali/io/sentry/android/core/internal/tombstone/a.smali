@@ -1,6 +1,6 @@
 .class public final enum Lio/sentry/android/core/internal/tombstone/a;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -22,46 +22,26 @@
     .locals 3
 
     .line 1
-    const/4 v0, 0x3
+    sget-object v0, Lio/sentry/android/core/internal/tombstone/a;->TOMBSTONE:Lio/sentry/android/core/internal/tombstone/a;
 
     .line 2
-    new-array v0, v0, [Lio/sentry/android/core/internal/tombstone/a;
-
     .line 3
+    sget-object v1, Lio/sentry/android/core/internal/tombstone/a;->SIGNAL_HANDLER:Lio/sentry/android/core/internal/tombstone/a;
+
     .line 4
-    sget-object v1, Lio/sentry/android/core/internal/tombstone/a;->TOMBSTONE:Lio/sentry/android/core/internal/tombstone/a;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
+    sget-object v2, Lio/sentry/android/core/internal/tombstone/a;->TOMBSTONE_MERGED:Lio/sentry/android/core/internal/tombstone/a;
 
+    .line 6
     .line 7
-    aput-object v1, v0, v2
+    filled-new-array {v0, v1, v2}, [Lio/sentry/android/core/internal/tombstone/a;
 
     .line 8
     .line 9
-    sget-object v1, Lio/sentry/android/core/internal/tombstone/a;->SIGNAL_HANDLER:Lio/sentry/android/core/internal/tombstone/a;
-
     .line 10
+    move-result-object v0
+
     .line 11
-    const/4 v2, 0x1
-
-    .line 12
-    aput-object v1, v0, v2
-
-    .line 13
-    .line 14
-    sget-object v1, Lio/sentry/android/core/internal/tombstone/a;->TOMBSTONE_MERGED:Lio/sentry/android/core/internal/tombstone/a;
-
-    .line 15
-    .line 16
-    const/4 v2, 0x2
-
-    .line 17
-    aput-object v1, v0, v2
-
-    .line 18
-    .line 19
     return-object v0
 .end method
 
@@ -228,12 +208,12 @@
 
 # virtual methods
 .method public getValue()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/internal/tombstone/a;->value:Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/android/core/internal/tombstone/a;->value:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

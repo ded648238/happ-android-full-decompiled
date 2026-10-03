@@ -1,85 +1,31 @@
-.class public final synthetic Lvm5;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lvm5;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final Q:Lvm5;
+# instance fields
+.field public final a:Ljava/lang/Class;
+
+.field public final b:Lgj3;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    .line 1
-    new-instance v0, Lvm5;
-
-    .line 2
-    .line 3
-    const-string v1, "getHost()Ljava/lang/String;"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
-
-    .line 7
-    .line 8
-    const-string v4, "host"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lvm5;->Q:Lvm5;
-
-    .line 14
-    .line 15
-    return-void
-.end method
-
-
-# virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public constructor <init>(Ljava/lang/Class;Lgj3;)V
     .locals 0
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/String;
-
     .line 4
-    .line 5
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->C1(Ljava/lang/String;)V
+    iput-object p1, p0, Lvm5;->a:Ljava/lang/Class;
 
+    .line 5
     .line 6
+    iput-object p2, p0, Lvm5;->b:Lgj3;
+
     .line 7
     .line 8
     return-void
-.end method
-
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->P()Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    return-object p1
 .end method

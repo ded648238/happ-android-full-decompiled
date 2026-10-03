@@ -1,29 +1,120 @@
-.class public final Lfv5;
-.super Ltv5;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lgv5;
+.class public abstract Lfv5;
+.super Ljava/lang/Object;
 
 
-# instance fields
-.field public n:Ljava/lang/Boolean;
+# static fields
+.field public static lbBaseGridView:[I = null
 
-.field public o:Ljava/lang/Boolean;
+.field public static lbBaseGridView_android_gravity:I = 0x0
 
-.field public p:Lcv5;
+.field public static lbBaseGridView_android_horizontalSpacing:I = 0x1
 
-.field public q:Lcv5;
+.field public static lbBaseGridView_android_verticalSpacing:I = 0x2
+
+.field public static lbBaseGridView_focusOutEnd:I = 0x3
+
+.field public static lbBaseGridView_focusOutFront:I = 0x4
+
+.field public static lbBaseGridView_focusOutSideEnd:I = 0x5
+
+.field public static lbBaseGridView_focusOutSideStart:I = 0x6
+
+.field public static lbBaseGridView_horizontalMargin:I = 0x7
+
+.field public static lbBaseGridView_verticalMargin:I = 0x8
+
+.field public static lbHorizontalGridView:[I = null
+
+.field public static lbHorizontalGridView_numberOfRows:I = 0x0
+
+.field public static lbHorizontalGridView_rowHeight:I = 0x1
+
+.field public static lbVerticalGridView:[I = null
+
+.field public static lbVerticalGridView_columnWidth:I = 0x0
+
+.field public static lbVerticalGridView_numberOfColumns:I = 0x1
 
 
-# virtual methods
-.method public final o()Ljava/lang/String;
-    .locals 1
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    const-string v0, "mask"
+    const/16 v0, 0x9
 
     .line 2
     .line 3
-    return-object v0
+    new-array v0, v0, [I
+
+    .line 4
+    .line 5
+    fill-array-data v0, :array_0
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lfv5;->lbBaseGridView:[I
+
+    .line 9
+    .line 10
+    const v0, 0x7f0404eb
+
+    .line 11
+    .line 12
+    .line 13
+    const v1, 0x7f040589
+
+    .line 14
+    .line 15
+    .line 16
+    filled-new-array {v0, v1}, [I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    sput-object v0, Lfv5;->lbHorizontalGridView:[I
+
+    .line 21
+    .line 22
+    const v0, 0x7f0401a8
+
+    .line 23
+    .line 24
+    .line 25
+    const v1, 0x7f0404ea
+
+    .line 26
+    .line 27
+    .line 28
+    filled-new-array {v0, v1}, [I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    sput-object v0, Lfv5;->lbVerticalGridView:[I
+
+    .line 33
+    .line 34
+    return-void
+
+    .line 35
+    :array_0
+    .array-data 4
+        0x10100af
+        0x1010114
+        0x1010115
+        0x7f0402de
+        0x7f0402df
+        0x7f0402e0
+        0x7f0402e1
+        0x7f04035c
+        0x7f04073e
+    .end array-data
 .end method

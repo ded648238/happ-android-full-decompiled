@@ -1,37 +1,22 @@
 package defpackage;
 
-import java.lang.reflect.Type;
-import java.util.Iterator;
-
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class rf5 implements dw2 {
-    @Override // defpackage.dw2
-    public ue5 a(r42 r42Var) {
-        Object next;
-        r42Var.getClass();
-        Iterator it = getAnnotations().iterator();
-        while (it.hasNext()) {
-            next = it.next();
-            if (rt2.f(te5.a(vs0.L(vs0.E(((ue5) next).a))).a(), r42Var)) {
-                return (ue5) next;
-            }
-        }
-        next = null;
-        return (ue5) next;
-    }
-
-    public abstract Type b();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class rf5 {
+    public final int a;
 
     public final boolean equals(Object obj) {
-        return (obj instanceof rf5) && rt2.f(b(), ((rf5) obj).b());
+        if (obj instanceof rf5) {
+            return this.a == ((rf5) obj).a;
+        }
+        return false;
     }
 
     public final int hashCode() {
-        return b().hashCode();
+        return Integer.hashCode(this.a);
     }
 
     public final String toString() {
-        return getClass().getName() + ": " + b();
+        return c73.h("PointerKeyboardModifiers(packedValue=", this.a, ")");
     }
 }

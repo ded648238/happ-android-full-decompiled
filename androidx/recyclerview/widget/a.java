@@ -1,13 +1,13 @@
 package androidx.recyclerview.widget;
 
 import android.view.View;
-import defpackage.p27;
-import defpackage.pm1;
+import defpackage.eb7;
+import defpackage.xu1;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class a {
-    public pm1 a;
+    public xu1 a;
     public int b;
     public int c;
     public boolean d;
@@ -19,48 +19,48 @@ public final class a {
 
     public final void a() {
         boolean z = this.d;
-        pm1 pm1Var = this.a;
-        this.c = z ? pm1Var.g() : pm1Var.k();
+        xu1 xu1Var = this.a;
+        this.c = z ? xu1Var.i() : xu1Var.m();
     }
 
     public final void b(View view, int i) {
-        int iM = this.a.m();
-        if (iM >= 0) {
+        int o = this.a.o();
+        if (o >= 0) {
             boolean z = this.d;
-            pm1 pm1Var = this.a;
+            xu1 xu1Var = this.a;
             if (z) {
-                this.c = this.a.m() + pm1Var.b(view);
+                this.c = this.a.o() + xu1Var.d(view);
             } else {
-                this.c = pm1Var.e(view);
+                this.c = xu1Var.g(view);
             }
             this.b = i;
             return;
         }
         this.b = i;
         boolean z2 = this.d;
-        pm1 pm1Var2 = this.a;
+        xu1 xu1Var2 = this.a;
         if (!z2) {
-            int iE = pm1Var2.e(view);
-            int iK = iE - this.a.k();
-            this.c = iE;
-            if (iK > 0) {
-                int iG = (this.a.g() - Math.min(0, (this.a.g() - iM) - this.a.b(view))) - (this.a.c(view) + iE);
-                if (iG < 0) {
-                    this.c -= Math.min(iK, -iG);
+            int g = xu1Var2.g(view);
+            int m = g - this.a.m();
+            this.c = g;
+            if (m > 0) {
+                int i2 = (this.a.i() - Math.min(0, (this.a.i() - o) - this.a.d(view))) - (this.a.e(view) + g);
+                if (i2 < 0) {
+                    this.c -= Math.min(m, -i2);
                     return;
                 }
                 return;
             }
             return;
         }
-        int iG2 = (pm1Var2.g() - iM) - this.a.b(view);
-        this.c = this.a.g() - iG2;
-        if (iG2 > 0) {
-            int iC = this.c - this.a.c(view);
-            int iK2 = this.a.k();
-            int iMin = iC - (Math.min(this.a.e(view) - iK2, 0) + iK2);
-            if (iMin < 0) {
-                this.c = Math.min(iG2, -iMin) + this.c;
+        int i3 = (xu1Var2.i() - o) - this.a.d(view);
+        this.c = this.a.i() - i3;
+        if (i3 > 0) {
+            int e = this.c - this.a.e(view);
+            int m2 = this.a.m();
+            int min = e - (Math.min(this.a.g(view) - m2, 0) + m2);
+            if (min < 0) {
+                this.c = Math.min(i3, -min) + this.c;
             }
         }
     }
@@ -80,6 +80,6 @@ public final class a {
         sb.append(", mLayoutFromEnd=");
         sb.append(this.d);
         sb.append(", mValid=");
-        return p27.o(sb, this.e, '}');
+        return eb7.m(sb, this.e, '}');
     }
 }

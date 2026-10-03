@@ -1,25 +1,24 @@
 package com.google.gson.internal.sql;
 
 import com.google.gson.b;
-import defpackage.dd7;
-import defpackage.g33;
-import defpackage.h43;
-import defpackage.r23;
-import defpackage.wa7;
-import java.io.IOException;
+import defpackage.j38;
+import defpackage.m58;
+import defpackage.mj3;
+import defpackage.nk3;
+import defpackage.xi3;
 import java.sql.Time;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 final class SqlTimeTypeAdapter extends b {
-    public static final wa7 b = new wa7() { // from class: com.google.gson.internal.sql.SqlTimeTypeAdapter.1
-        @Override // defpackage.wa7
-        public final b a(com.google.gson.a aVar, dd7 dd7Var) {
-            if (dd7Var.a == Time.class) {
+    public static final j38 b = new j38() { // from class: com.google.gson.internal.sql.SqlTimeTypeAdapter.1
+        @Override // defpackage.j38
+        public final b a(com.google.gson.a aVar, m58 m58Var) {
+            if (m58Var.a == Time.class) {
                 return new SqlTimeTypeAdapter(0);
             }
             return null;
@@ -32,42 +31,40 @@ final class SqlTimeTypeAdapter extends b {
     }
 
     @Override // com.google.gson.b
-    public final Object b(r23 r23Var) throws IOException {
+    public final Object b(xi3 xi3Var) {
         Time time;
-        if (r23Var.k0() == 9) {
-            r23Var.R();
+        if (xi3Var.t0() == 9) {
+            xi3Var.X();
             return null;
         }
-        String strN = r23Var.n();
+        String r = xi3Var.r();
         synchronized (this) {
             TimeZone timeZone = this.a.getTimeZone();
             try {
                 try {
-                    time = new Time(this.a.parse(strN).getTime());
-                    this.a.setTimeZone(timeZone);
+                    time = new Time(this.a.parse(r).getTime());
                 } catch (ParseException e) {
-                    throw new g33("Failed parsing '" + strN + "' as SQL Time; at path " + r23Var.y(), 9, e);
+                    throw new mj3("Failed parsing '" + r + "' as SQL Time; at path " + xi3Var.D(), e);
                 }
-            } catch (Throwable th) {
+            } finally {
                 this.a.setTimeZone(timeZone);
-                throw th;
             }
         }
         return time;
     }
 
     @Override // com.google.gson.b
-    public final void c(h43 h43Var, Object obj) throws IOException {
-        String str;
+    public final void c(nk3 nk3Var, Object obj) {
+        String format;
         Time time = (Time) obj;
         if (time == null) {
-            h43Var.v();
+            nk3Var.v();
             return;
         }
         synchronized (this) {
-            str = this.a.format((Date) time);
+            format = this.a.format((Date) time);
         }
-        h43Var.k0(str);
+        nk3Var.t0(format);
     }
 
     public /* synthetic */ SqlTimeTypeAdapter(int i) {

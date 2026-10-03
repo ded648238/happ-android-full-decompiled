@@ -1,6 +1,6 @@
 .class public final Lokhttp3/ConnectionPool;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,7 +26,7 @@
         "idleConnectionCount",
         "()I",
         "connectionCount",
-        "Lbh7;",
+        "Lr98;",
         "evictAll",
         "Lokhttp3/internal/connection/RealConnectionPool;",
         "getDelegate$okhttp",
@@ -119,33 +119,33 @@
 
 # virtual methods
 .method public final connectionCount()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
+    iget-object p0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnectionPool;->connectionCount()I
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealConnectionPool;->connectionCount()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final evictAll()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
+    iget-object p0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnectionPool;->evictAll()V
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealConnectionPool;->evictAll()V
 
     .line 4
     .line 5
@@ -154,31 +154,31 @@
 .end method
 
 .method public final getDelegate$okhttp()Lokhttp3/internal/connection/RealConnectionPool;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
+    iget-object p0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final idleConnectionCount()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
+    iget-object p0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnectionPool;->idleConnectionCount()I
+    invoke-virtual {p0}, Lokhttp3/internal/connection/RealConnectionPool;->idleConnectionCount()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method

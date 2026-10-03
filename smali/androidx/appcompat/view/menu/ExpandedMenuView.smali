@@ -1,19 +1,19 @@
 .class public final Landroidx/appcompat/view/menu/ExpandedMenuView;
 .super Landroid/widget/ListView;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lj24;
-.implements Lj34;
+.implements Lfj4;
+.implements Lek4;
 .implements Landroid/widget/AdapterView$OnItemClickListener;
 
 
 # static fields
-.field public static final R:[I
+.field public static final d0:[I
 
 
 # instance fields
-.field public Q:Lk24;
+.field public c0:Lgj4;
 
 
 # direct methods
@@ -39,7 +39,7 @@
     move-result-object v0
 
     .line 11
-    sput-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->R:[I
+    sput-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->d0:[I
 
     .line 12
     .line 13
@@ -58,7 +58,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 1
+    .locals 2
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/ListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -71,42 +71,42 @@
     .line 5
     .line 6
     .line 7
-    sget-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->R:[I
+    const/4 v0, 0x0
 
     .line 8
-    .line 9
-    invoke-static {p1, p2, v0, p3}, Lav2;->B(Landroid/content/Context;Landroid/util/AttributeSet;[II)Lav2;
+    sget-object v1, Landroidx/appcompat/view/menu/ExpandedMenuView;->d0:[I
 
+    .line 9
     .line 10
+    invoke-static {p3, v0, p1, p2, v1}, Lvk7;->j(IILandroid/content/Context;Landroid/util/AttributeSet;[I)Lvk7;
+
     .line 11
     .line 12
+    .line 13
     move-result-object p1
 
-    .line 13
-    iget-object p2, p1, Lav2;->S:Ljava/lang/Object;
-
     .line 14
+    iget-object p2, p1, Lvk7;->Y:Ljava/lang/Object;
+
     .line 15
+    .line 16
     check-cast p2, Landroid/content/res/TypedArray;
 
-    .line 16
     .line 17
-    const/4 p3, 0x0
-
     .line 18
-    invoke-virtual {p2, p3}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    invoke-virtual {p2, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
     .line 19
     .line 20
     .line 21
-    move-result v0
+    move-result p3
 
     .line 22
-    if-eqz v0, :cond_0
+    if-eqz p3, :cond_0
 
     .line 23
     .line 24
-    invoke-virtual {p1, p3}, Lav2;->s(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p1, v0}, Lvk7;->e(I)Landroid/graphics/drawable/Drawable;
 
     .line 25
     .line 26
@@ -135,7 +135,7 @@
 
     .line 37
     .line 38
-    invoke-virtual {p1, p3}, Lav2;->s(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p1, p3}, Lvk7;->e(I)Landroid/graphics/drawable/Drawable;
 
     .line 39
     .line 40
@@ -149,7 +149,7 @@
     .line 44
     .line 45
     :cond_1
-    invoke-virtual {p1}, Lav2;->H()V
+    invoke-virtual {p1}, Lvk7;->l()V
 
     .line 46
     .line 47
@@ -159,36 +159,36 @@
 
 
 # virtual methods
-.method public final a(Lp24;)Z
-    .locals 3
+.method public final a(Llj4;)Z
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->Q:Lk24;
+    iget-object p0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->c0:Lgj4;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 4
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 5
-    invoke-virtual {v0, p1, v2, v1}, Lk24;->q(Landroid/view/MenuItem;Lh34;I)Z
+    invoke-virtual {p0, p1, v1, v0}, Lgj4;->q(Landroid/view/MenuItem;Lck4;I)Z
 
     .line 6
     .line 7
     .line 8
-    move-result p1
+    move-result p0
 
     .line 9
-    return p1
+    return p0
 .end method
 
-.method public final b(Lk24;)V
+.method public final b(Lgj4;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->Q:Lk24;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->c0:Lgj4;
 
     .line 2
     .line 3
@@ -196,13 +196,13 @@
 .end method
 
 .method public getWindowAnimations()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final onDetachedFromWindow()V
@@ -245,11 +245,11 @@
     move-result-object p1
 
     .line 9
-    check-cast p1, Lp24;
+    check-cast p1, Llj4;
 
     .line 10
     .line 11
-    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/ExpandedMenuView;->a(Lp24;)Z
+    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/ExpandedMenuView;->a(Llj4;)Z
 
     .line 12
     .line 13

@@ -4,13 +4,14 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import defpackage.p60;
-import defpackage.qn7;
+import defpackage.g90;
+import defpackage.ni8;
+import java.util.WeakHashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 abstract class ViewOffsetBehavior<V extends View> extends CoordinatorLayout.Behavior<V> {
-    public p60 a;
+    public g90 a;
 
     public ViewOffsetBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -20,16 +21,18 @@ abstract class ViewOffsetBehavior<V extends View> extends CoordinatorLayout.Beha
     public boolean k(CoordinatorLayout coordinatorLayout, View view, int i) {
         v(coordinatorLayout, view, i);
         if (this.a == null) {
-            this.a = new p60(view);
+            this.a = new g90(view);
         }
-        p60 p60Var = this.a;
-        View view2 = (View) p60Var.T;
-        p60Var.R = view2.getTop();
-        p60Var.S = view2.getLeft();
-        p60 p60Var2 = this.a;
-        View view3 = (View) p60Var2.T;
-        qn7.l(view3, 0 - (view3.getTop() - p60Var2.R));
-        qn7.k(view3, 0 - (view3.getLeft() - p60Var2.S));
+        g90 g90Var = this.a;
+        View view2 = (View) g90Var.c0;
+        g90Var.Y = view2.getTop();
+        g90Var.Z = view2.getLeft();
+        g90 g90Var2 = this.a;
+        View view3 = (View) g90Var2.c0;
+        int top = 0 - (view3.getTop() - g90Var2.Y);
+        WeakHashMap weakHashMap = ni8.a;
+        view3.offsetTopAndBottom(top);
+        view3.offsetLeftAndRight(0 - (view3.getLeft() - g90Var2.Z));
         return true;
     }
 

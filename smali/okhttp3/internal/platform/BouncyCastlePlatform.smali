@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/BouncyCastlePlatform;
 .super Lokhttp3/internal/platform/Platform;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -36,7 +36,7 @@
         "",
         "Lokhttp3/Protocol;",
         "protocols",
-        "Lbh7;",
+        "Lr98;",
         "configureTlsExtensions",
         "(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V",
         "getSelectedProtocol",
@@ -79,7 +79,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/platform/BouncyCastlePlatform$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/platform/BouncyCastlePlatform$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -159,7 +159,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lj31;)V
+.method public synthetic constructor <init>(Lib1;)V
     .locals 0
 
     .line 14
@@ -227,154 +227,154 @@
     .line 5
     .line 6
     .line 7
-    move-result-object p1
+    move-result-object p0
 
     .line 8
-    return-object p1
+    return-object p0
 .end method
 
 .method public newSSLContext()Ljavax/net/ssl/SSLContext;
-    .locals 2
+    .locals 1
 
     .line 1
     const-string v0, "TLS"
 
     .line 2
     .line 3
-    iget-object v1, p0, Lokhttp3/internal/platform/BouncyCastlePlatform;->provider:Ljava/security/Provider;
+    iget-object p0, p0, Lokhttp3/internal/platform/BouncyCastlePlatform;->provider:Ljava/security/Provider;
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Ljavax/net/ssl/SSLContext;->getInstance(Ljava/lang/String;Ljava/security/Provider;)Ljavax/net/ssl/SSLContext;
+    invoke-static {v0, p0}, Ljavax/net/ssl/SSLContext;->getInstance(Ljava/lang/String;Ljava/security/Provider;)Ljavax/net/ssl/SSLContext;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 10
     .line 11
     .line 12
-    return-object v0
+    return-object p0
 .end method
 
 .method public platformTrustManager()Ljavax/net/ssl/X509TrustManager;
-    .locals 4
+    .locals 3
 
     .line 1
-    const-string v0, "PKIX"
+    const-string p0, "PKIX"
 
     .line 2
     .line 3
-    const-string v1, "BCJSSE"
+    const-string v0, "BCJSSE"
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+    invoke-static {p0, v0}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 10
-    invoke-virtual {v0, v1}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+    invoke-virtual {p0, v0}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
 
     .line 11
     .line 12
     .line 13
-    invoke-virtual {v0}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+    invoke-virtual {p0}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
 
     .line 14
     .line 15
     .line 16
-    move-result-object v0
+    move-result-object p0
 
     .line 17
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 18
     .line 19
     .line 20
-    array-length v2, v0
+    array-length v1, p0
 
     .line 21
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
     .line 22
-    if-ne v2, v3, :cond_0
+    if-ne v1, v2, :cond_0
 
     .line 23
     .line 24
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 25
-    aget-object v2, v0, v2
+    aget-object v1, p0, v1
 
     .line 26
     .line 27
-    instance-of v3, v2, Ljavax/net/ssl/X509TrustManager;
+    instance-of v2, v1, Ljavax/net/ssl/X509TrustManager;
 
     .line 28
     .line 29
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     .line 30
     .line 31
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 32
     .line 33
     .line 34
-    check-cast v2, Ljavax/net/ssl/X509TrustManager;
+    check-cast v1, Ljavax/net/ssl/X509TrustManager;
 
     .line 35
     .line 36
-    return-object v2
+    return-object v1
 
     .line 37
     :cond_0
-    invoke-static {v0}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
     .line 38
     .line 39
     .line 40
-    move-result-object v0
+    move-result-object p0
 
     .line 41
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 42
     .line 43
     .line 44
-    const-string v2, "Unexpected default trust managers: "
+    const-string v1, "Unexpected default trust managers: "
 
     .line 45
     .line 46
-    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 47
     .line 48
     .line 49
-    move-result-object v0
+    move-result-object p0
 
     .line 50
-    invoke-static {v0}, Lmh7;->g(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->l(Ljava/lang/Object;)V
 
     .line 51
     .line 52
     .line 53
-    return-object v1
+    return-object v0
 .end method
 
 .method public trustManager(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -382,18 +382,18 @@
     .line 2
     .line 3
     .line 4
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 5
     .line 6
-    const-string v0, "clientBuilder.sslSocketFactory(SSLSocketFactory) not supported with BouncyCastle"
+    const-string p1, "clientBuilder.sslSocketFactory(SSLSocketFactory) not supported with BouncyCastle"
 
     .line 7
     .line 8
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    throw p1
+    throw p0
 .end method

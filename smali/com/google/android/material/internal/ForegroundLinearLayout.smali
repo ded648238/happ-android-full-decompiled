@@ -1,20 +1,20 @@
 .class public abstract Lcom/google/android/material/internal/ForegroundLinearLayout;
 .super Landroidx/appcompat/widget/LinearLayoutCompat;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public i0:Landroid/graphics/drawable/Drawable;
+.field public r0:Landroid/graphics/drawable/Drawable;
 
-.field public final j0:Landroid/graphics/Rect;
+.field public final s0:Landroid/graphics/Rect;
 
-.field public final k0:Landroid/graphics/Rect;
+.field public final t0:Landroid/graphics/Rect;
 
-.field public l0:I
+.field public u0:I
 
-.field public final m0:Z
+.field public final v0:Z
 
-.field public n0:Z
+.field public w0:Z
 
 
 # direct methods
@@ -36,7 +36,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->j0:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->s0:Landroid/graphics/Rect;
 
     .line 10
     .line 11
@@ -49,7 +49,7 @@
     .line 14
     .line 15
     .line 16
-    iput-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->k0:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->t0:Landroid/graphics/Rect;
 
     .line 17
     .line 18
@@ -57,25 +57,25 @@
 
     .line 19
     .line 20
-    iput v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->l0:I
+    iput v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->u0:I
 
     .line 21
     .line 22
     const/4 v0, 0x1
 
     .line 23
-    iput-boolean v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->m0:Z
+    iput-boolean v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->v0:Z
 
     .line 24
     .line 25
     const/4 v1, 0x0
 
     .line 26
-    iput-boolean v1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->n0:Z
+    iput-boolean v1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->w0:Z
 
     .line 27
     .line 28
-    sget-object v4, Lva5;->ForegroundLinearLayout:[I
+    sget-object v4, Luu5;->ForegroundLinearLayout:[I
 
     .line 29
     .line 30
@@ -95,7 +95,7 @@
     move v5, p3
 
     .line 36
-    invoke-static/range {v2 .. v7}, Lc37;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
+    invoke-static/range {v2 .. v7}, Lgv7;->d(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     .line 37
     .line 38
@@ -103,11 +103,11 @@
     move-result-object p1
 
     .line 40
-    sget p2, Lva5;->ForegroundLinearLayout_android_foregroundGravity:I
+    sget p2, Luu5;->ForegroundLinearLayout_android_foregroundGravity:I
 
     .line 41
     .line 42
-    iget p3, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->l0:I
+    iget p3, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->u0:I
 
     .line 43
     .line 44
@@ -119,11 +119,11 @@
     move-result p2
 
     .line 48
-    iput p2, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->l0:I
+    iput p2, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->u0:I
 
     .line 49
     .line 50
-    sget p2, Lva5;->ForegroundLinearLayout_android_foreground:I
+    sget p2, Luu5;->ForegroundLinearLayout_android_foreground:I
 
     .line 51
     .line 52
@@ -145,7 +145,7 @@
     .line 60
     .line 61
     :cond_0
-    sget p2, Lva5;->ForegroundLinearLayout_foregroundInsidePadding:I
+    sget p2, Luu5;->ForegroundLinearLayout_foregroundInsidePadding:I
 
     .line 62
     .line 63
@@ -157,7 +157,7 @@
     move-result p2
 
     .line 67
-    iput-boolean p2, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->m0:Z
+    iput-boolean p2, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->v0:Z
 
     .line 68
     .line 69
@@ -175,12 +175,12 @@
     .locals 7
 
     .line 1
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->draw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 5
     .line 6
@@ -188,7 +188,7 @@
 
     .line 7
     .line 8
-    iget-boolean v1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->n0:Z
+    iget-boolean v1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->w0:Z
 
     .line 9
     .line 10
@@ -199,7 +199,7 @@
     const/4 v1, 0x0
 
     .line 13
-    iput-boolean v1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->n0:Z
+    iput-boolean v1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->w0:Z
 
     .line 14
     .line 15
@@ -241,11 +241,11 @@
     sub-int/2addr v3, v4
 
     .line 33
-    iget-boolean v4, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->m0:Z
+    iget-boolean v4, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->v0:Z
 
     .line 34
     .line 35
-    iget-object v5, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->j0:Landroid/graphics/Rect;
+    iget-object v5, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->s0:Landroid/graphics/Rect;
 
     .line 36
     .line 37
@@ -306,7 +306,7 @@
     .line 63
     .line 64
     :goto_0
-    iget v1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->l0:I
+    iget v1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->u0:I
 
     .line 65
     .line 66
@@ -326,16 +326,16 @@
     move-result v3
 
     .line 74
-    iget-object v4, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->k0:Landroid/graphics/Rect;
+    iget-object p0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->t0:Landroid/graphics/Rect;
 
     .line 75
     .line 76
-    invoke-static {v1, v2, v3, v5, v4}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V
+    invoke-static {v1, v2, v3, v5, p0}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V
 
     .line 77
     .line 78
     .line 79
-    invoke-virtual {v0, v4}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
+    invoke-virtual {v0, p0}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
     .line 80
     .line 81
@@ -351,23 +351,23 @@
 .end method
 
 .method public final drawableHotspotChanged(FF)V
-    .locals 1
+    .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->drawableHotspotChanged(FF)V
+    invoke-super {p0, p1, p2}, Landroid/view/View;->drawableHotspotChanged(FF)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 5
     .line 6
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/Drawable;->setHotspot(FF)V
+    invoke-virtual {p0, p1, p2}, Landroid/graphics/drawable/Drawable;->setHotspot(FF)V
 
     .line 9
     .line 10
@@ -377,15 +377,15 @@
 .end method
 
 .method public final drawableStateChanged()V
-    .locals 2
+    .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/view/ViewGroup;->drawableStateChanged()V
+    invoke-super {p0}, Landroid/view/View;->drawableStateChanged()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 5
     .line 6
@@ -405,7 +405,7 @@
 
     .line 13
     .line 14
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 15
     .line 16
@@ -414,10 +414,10 @@
     .line 17
     .line 18
     .line 19
-    move-result-object v1
+    move-result-object p0
 
     .line 20
-    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setState([I)Z
+    invoke-virtual {v0, p0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
     .line 21
     .line 22
@@ -427,45 +427,45 @@
 .end method
 
 .method public getForeground()Landroid/graphics/drawable/Drawable;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getForegroundGravity()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->l0:I
+    iget p0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->u0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final jumpDrawablesToCurrentState()V
-    .locals 1
+    .locals 0
 
     .line 1
-    invoke-super {p0}, Landroid/view/ViewGroup;->jumpDrawablesToCurrentState()V
+    invoke-super {p0}, Landroid/view/View;->jumpDrawablesToCurrentState()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 5
     .line 6
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->jumpToCurrentState()V
+    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->jumpToCurrentState()V
 
     .line 9
     .line 10
@@ -483,14 +483,14 @@
     .line 2
     .line 3
     .line 4
-    iget-boolean p2, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->n0:Z
+    iget-boolean p2, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->w0:Z
 
     .line 5
     .line 6
     or-int/2addr p1, p2
 
     .line 7
-    iput-boolean p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->n0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->w0:Z
 
     .line 8
     .line 9
@@ -501,7 +501,7 @@
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/ViewGroup;->onSizeChanged(IIII)V
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
     .line 2
     .line 3
@@ -509,7 +509,7 @@
     const/4 p1, 0x1
 
     .line 5
-    iput-boolean p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->n0:Z
+    iput-boolean p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->w0:Z
 
     .line 6
     .line 7
@@ -520,7 +520,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
@@ -540,7 +540,7 @@
     .line 9
     .line 10
     .line 11
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 12
     .line 13
@@ -550,14 +550,14 @@
     .line 15
     .line 16
     :cond_0
-    iput-object p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 17
     .line 18
     const/4 v0, 0x1
 
     .line 19
-    iput-boolean v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->n0:Z
+    iput-boolean v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->w0:Z
 
     .line 20
     .line 21
@@ -604,7 +604,7 @@
     .line 42
     .line 43
     :cond_1
-    iget v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->l0:I
+    iget v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->u0:I
 
     .line 44
     .line 45
@@ -659,7 +659,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->l0:I
+    iget v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->u0:I
 
     .line 2
     .line 3
@@ -701,7 +701,7 @@
     .line 20
     .line 21
     :cond_1
-    iput p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->l0:I
+    iput p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->u0:I
 
     .line 22
     .line 23
@@ -713,7 +713,7 @@
 
     .line 26
     .line 27
-    iget-object p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 28
     .line 29
@@ -730,7 +730,7 @@
     .line 34
     .line 35
     .line 36
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 37
     .line 38
@@ -753,7 +753,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
+    invoke-super {p0, p1}, Landroid/view/View;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
 
     .line 2
     .line 3
@@ -765,11 +765,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->i0:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Lcom/google/android/material/internal/ForegroundLinearLayout;->r0:Landroid/graphics/drawable/Drawable;
 
     .line 8
     .line 9
-    if-ne p1, v0, :cond_0
+    if-ne p1, p0, :cond_0
 
     .line 10
     .line 11
@@ -777,16 +777,16 @@
 
     .line 12
     :cond_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 13
-    return p1
+    return p0
 
     .line 14
     :cond_1
     :goto_0
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 15
-    return p1
+    return p0
 .end method

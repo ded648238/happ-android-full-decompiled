@@ -1,25 +1,25 @@
 package androidx.media;
 
-import defpackage.vm7;
-import defpackage.xm7;
+import defpackage.qh8;
+import defpackage.sh8;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class AudioAttributesCompatParcelizer {
-    public static AudioAttributesCompat read(vm7 vm7Var) {
+    public static AudioAttributesCompat read(qh8 qh8Var) {
         AudioAttributesCompat audioAttributesCompat = new AudioAttributesCompat();
-        xm7 xm7VarH = audioAttributesCompat.a;
-        if (vm7Var.e(1)) {
-            xm7VarH = vm7Var.h();
+        sh8 sh8Var = audioAttributesCompat.a;
+        if (qh8Var.e(1)) {
+            sh8Var = qh8Var.h();
         }
-        audioAttributesCompat.a = (AudioAttributesImpl) xm7VarH;
+        audioAttributesCompat.a = (AudioAttributesImpl) sh8Var;
         return audioAttributesCompat;
     }
 
-    public static void write(AudioAttributesCompat audioAttributesCompat, vm7 vm7Var) {
-        vm7Var.getClass();
+    public static void write(AudioAttributesCompat audioAttributesCompat, qh8 qh8Var) {
+        qh8Var.getClass();
         AudioAttributesImpl audioAttributesImpl = audioAttributesCompat.a;
-        vm7Var.i(1);
-        vm7Var.k(audioAttributesImpl);
+        qh8Var.i(1);
+        qh8Var.k(audioAttributesImpl);
     }
 }

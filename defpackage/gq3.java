@@ -1,22 +1,28 @@
 package defpackage;
 
-import j$.util.DesugarCollections;
-import java.util.ArrayList;
-import java.util.List;
-
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class gq3 {
-    public static final /* synthetic */ int c = 0;
-    public final String a;
-    public final List b;
+    public final Float a;
+    public au1 b;
 
-    static {
-        DesugarCollections.unmodifiableList(new ArrayList());
+    public gq3(Float f, au1 au1Var) {
+        this.a = f;
+        this.b = au1Var;
     }
 
-    public gq3(String str, List list) {
-        this.a = str;
-        this.b = list;
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof gq3)) {
+            return false;
+        }
+        gq3 gq3Var = (gq3) obj;
+        return gq3Var.a.equals(this.a) && m93.h(gq3Var.b, this.b);
+    }
+
+    public final int hashCode() {
+        return this.b.hashCode() + eh0.d(0, this.a.hashCode() * 31, 31);
     }
 }

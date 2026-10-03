@@ -1,30 +1,77 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class z83 {
-    public static final z83 Q;
-    public static final z83 R;
-    public static final z83 S;
-    public static final /* synthetic */ z83[] T;
+import java.util.AbstractCollection;
+import java.util.Collection;
+import java.util.LinkedHashSet;
+import java.util.List;
 
-    static {
-        z83 z83Var = new z83("INVARIANT", 0);
-        Q = z83Var;
-        z83 z83Var2 = new z83("IN", 1);
-        R = z83Var2;
-        z83 z83Var3 = new z83("OUT", 2);
-        S = z83Var3;
-        T = new z83[]{z83Var, z83Var2, z83Var3};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class z83 implements z38, a48 {
+    public bu3 X;
+    public final LinkedHashSet Y;
+    public final int Z;
+
+    public z83(AbstractCollection abstractCollection) {
+        abstractCollection.getClass();
+        abstractCollection.isEmpty();
+        LinkedHashSet linkedHashSet = new LinkedHashSet(abstractCollection);
+        this.Y = linkedHashSet;
+        this.Z = linkedHashSet.hashCode();
     }
 
-    public static z83 valueOf(String str) {
-        return (z83) Enum.valueOf(z83.class, str);
+    @Override // defpackage.z38
+    public final lr0 C() {
+        return null;
     }
 
-    public static z83[] values() {
-        return (z83[]) T.clone();
+    @Override // defpackage.z38
+    public final boolean D() {
+        return false;
+    }
+
+    public final yx6 a() {
+        q38.Y.getClass();
+        return d06.c0(q38.Z, this, fw1.X, false, fu7.d("member scope for intersection type", this.Y), new b0(15, this));
+    }
+
+    public final String b(mi2 mi2Var) {
+        mi2Var.getClass();
+        return tt0.h1(tt0.z1(this.Y, new r32(1, mi2Var)), " & ", "{", "}", new dn2(1, mi2Var), 24);
+    }
+
+    @Override // defpackage.z38
+    public final Collection c() {
+        return this.Y;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof z83)) {
+            return false;
+        }
+        return m93.h(this.Y, ((z83) obj).Y);
+    }
+
+    @Override // defpackage.z38
+    public final hs3 f() {
+        hs3 f = ((bu3) this.Y.iterator().next()).o0().f();
+        f.getClass();
+        return f;
+    }
+
+    @Override // defpackage.z38
+    public final List g() {
+        return fw1.X;
+    }
+
+    public final int hashCode() {
+        return this.Z;
+    }
+
+    public final String toString() {
+        return b(wh1.i0);
     }
 }

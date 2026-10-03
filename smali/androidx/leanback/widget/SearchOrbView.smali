@@ -1,51 +1,51 @@
 .class public Landroidx/leanback/widget/SearchOrbView;
 .super Landroid/widget/FrameLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
 
 
 # static fields
-.field public static final synthetic l0:I
+.field public static final synthetic u0:I
 
 
 # instance fields
-.field public Q:Landroid/view/View$OnClickListener;
+.field public c0:Landroid/view/View$OnClickListener;
 
-.field public final R:Landroid/view/View;
+.field public final d0:Landroid/view/View;
 
-.field public final S:Landroid/view/View;
+.field public final e0:Landroid/view/View;
 
-.field public final T:Landroid/widget/ImageView;
+.field public final f0:Landroid/widget/ImageView;
 
-.field public U:Landroid/graphics/drawable/Drawable;
+.field public g0:Landroid/graphics/drawable/Drawable;
 
-.field public V:Ll16;
+.field public h0:Lbn6;
 
-.field public final W:F
+.field public final i0:F
 
-.field public final a0:I
+.field public final j0:I
 
-.field public final b0:I
+.field public final k0:I
 
-.field public final c0:F
+.field public final l0:F
 
-.field public final d0:F
+.field public final m0:F
 
-.field public e0:Landroid/animation/ValueAnimator;
+.field public n0:Landroid/animation/ValueAnimator;
 
-.field public f0:Z
+.field public o0:Z
 
-.field public g0:Z
+.field public p0:Z
 
-.field public final h0:Landroid/animation/ArgbEvaluator;
+.field public final q0:Landroid/animation/ArgbEvaluator;
 
-.field public final i0:Lk16;
+.field public final r0:Lan6;
 
-.field public j0:Landroid/animation/ValueAnimator;
+.field public s0:Landroid/animation/ValueAnimator;
 
-.field public final k0:Lk16;
+.field public final t0:Lan6;
 
 
 # direct methods
@@ -53,7 +53,7 @@
     .locals 1
 
     .line 216
-    sget v0, Ls75;->searchOrbViewStyle:I
+    sget v0, Lrr5;->searchOrbViewStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Landroidx/leanback/widget/SearchOrbView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -78,39 +78,39 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->h0:Landroid/animation/ArgbEvaluator;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->q0:Landroid/animation/ArgbEvaluator;
 
     .line 10
     .line 11
-    new-instance v0, Lk16;
+    new-instance v0, Lan6;
 
     .line 12
     .line 13
     const/4 v1, 0x0
 
     .line 14
-    invoke-direct {v0, p0, v1}, Lk16;-><init>(Landroidx/leanback/widget/SearchOrbView;I)V
+    invoke-direct {v0, p0, v1}, Lan6;-><init>(Landroidx/leanback/widget/SearchOrbView;I)V
 
     .line 15
     .line 16
     .line 17
-    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->i0:Lk16;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->r0:Lan6;
 
     .line 18
     .line 19
-    new-instance v0, Lk16;
+    new-instance v0, Lan6;
 
     .line 20
     .line 21
     const/4 v2, 0x1
 
     .line 22
-    invoke-direct {v0, p0, v2}, Lk16;-><init>(Landroidx/leanback/widget/SearchOrbView;I)V
+    invoke-direct {v0, p0, v2}, Lan6;-><init>(Landroidx/leanback/widget/SearchOrbView;I)V
 
     .line 23
     .line 24
     .line 25
-    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->k0:Lk16;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->t0:Lan6;
 
     .line 26
     .line 27
@@ -154,11 +154,11 @@
     move-result-object v3
 
     .line 47
-    iput-object v3, p0, Landroidx/leanback/widget/SearchOrbView;->R:Landroid/view/View;
+    iput-object v3, p0, Landroidx/leanback/widget/SearchOrbView;->d0:Landroid/view/View;
 
     .line 48
     .line 49
-    sget v4, Lv85;->search_orb:I
+    sget v4, Lus5;->search_orb:I
 
     .line 50
     .line 51
@@ -170,11 +170,11 @@
     move-result-object v4
 
     .line 55
-    iput-object v4, p0, Landroidx/leanback/widget/SearchOrbView;->S:Landroid/view/View;
+    iput-object v4, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/view/View;
 
     .line 56
     .line 57
-    sget v4, Lv85;->icon:I
+    sget v4, Lus5;->icon:I
 
     .line 58
     .line 59
@@ -190,7 +190,7 @@
 
     .line 64
     .line 65
-    iput-object v3, p0, Landroidx/leanback/widget/SearchOrbView;->T:Landroid/widget/ImageView;
+    iput-object v3, p0, Landroidx/leanback/widget/SearchOrbView;->f0:Landroid/widget/ImageView;
 
     .line 66
     .line 67
@@ -202,7 +202,7 @@
     move-result-object v4
 
     .line 71
-    sget v5, Lt85;->lb_search_orb_focused_zoom:I
+    sget v5, Lss5;->lb_search_orb_focused_zoom:I
 
     .line 72
     .line 73
@@ -214,7 +214,7 @@
     move-result v4
 
     .line 77
-    iput v4, p0, Landroidx/leanback/widget/SearchOrbView;->W:F
+    iput v4, p0, Landroidx/leanback/widget/SearchOrbView;->i0:F
 
     .line 78
     .line 79
@@ -226,7 +226,7 @@
     move-result-object v4
 
     .line 83
-    sget v5, Lp95;->lb_search_orb_pulse_duration_ms:I
+    sget v5, Lpt5;->lb_search_orb_pulse_duration_ms:I
 
     .line 84
     .line 85
@@ -238,7 +238,7 @@
     move-result v4
 
     .line 89
-    iput v4, p0, Landroidx/leanback/widget/SearchOrbView;->a0:I
+    iput v4, p0, Landroidx/leanback/widget/SearchOrbView;->j0:I
 
     .line 90
     .line 91
@@ -250,7 +250,7 @@
     move-result-object v4
 
     .line 95
-    sget v5, Lp95;->lb_search_orb_scale_duration_ms:I
+    sget v5, Lpt5;->lb_search_orb_scale_duration_ms:I
 
     .line 96
     .line 97
@@ -262,7 +262,7 @@
     move-result v4
 
     .line 101
-    iput v4, p0, Landroidx/leanback/widget/SearchOrbView;->b0:I
+    iput v4, p0, Landroidx/leanback/widget/SearchOrbView;->k0:I
 
     .line 102
     .line 103
@@ -274,7 +274,7 @@
     move-result-object v4
 
     .line 107
-    sget v5, Li85;->lb_search_orb_focused_z:I
+    sget v5, Lhs5;->lb_search_orb_focused_z:I
 
     .line 108
     .line 109
@@ -289,7 +289,7 @@
     int-to-float v4, v4
 
     .line 114
-    iput v4, p0, Landroidx/leanback/widget/SearchOrbView;->d0:F
+    iput v4, p0, Landroidx/leanback/widget/SearchOrbView;->m0:F
 
     .line 115
     .line 116
@@ -301,7 +301,7 @@
     move-result-object v5
 
     .line 120
-    sget v6, Li85;->lb_search_orb_unfocused_z:I
+    sget v6, Lhs5;->lb_search_orb_unfocused_z:I
 
     .line 121
     .line 122
@@ -316,11 +316,11 @@
     int-to-float v5, v5
 
     .line 127
-    iput v5, p0, Landroidx/leanback/widget/SearchOrbView;->c0:F
+    iput v5, p0, Landroidx/leanback/widget/SearchOrbView;->l0:F
 
     .line 128
     .line 129
-    sget-object v5, Lgb5;->lbSearchOrbView:[I
+    sget-object v5, Lev5;->lbSearchOrbView:[I
 
     .line 130
     .line 131
@@ -332,7 +332,7 @@
     move-result-object v10
 
     .line 135
-    sget-object v8, Lgb5;->lbSearchOrbView:[I
+    sget-object v8, Lev5;->lbSearchOrbView:[I
 
     .line 136
     .line 137
@@ -348,103 +348,103 @@
     move v11, p3
 
     .line 141
-    invoke-static/range {v6 .. v11}, Lqn7;->p(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v6 .. v11}, Lni8;->l(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 142
     .line 143
     .line 144
-    sget p1, Lgb5;->lbSearchOrbView_searchOrbIcon:I
+    sget p0, Lev5;->lbSearchOrbView_searchOrbIcon:I
 
     .line 145
     .line 146
-    invoke-virtual {v10, p1}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v10, p0}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     .line 147
     .line 148
     .line 149
-    move-result-object p1
+    move-result-object p0
 
     .line 150
-    if-nez p1, :cond_0
+    if-nez p0, :cond_0
 
     .line 151
     .line 152
-    sget p1, Lo85;->lb_ic_in_app_search:I
+    sget p0, Lns5;->lb_ic_in_app_search:I
 
     .line 153
     .line 154
-    invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v0, p0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     .line 155
     .line 156
     .line 157
-    move-result-object p1
+    move-result-object p0
 
     .line 158
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/leanback/widget/SearchOrbView;->setOrbIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v6, p0}, Landroidx/leanback/widget/SearchOrbView;->setOrbIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 159
     .line 160
     .line 161
-    sget p1, Lc85;->lb_default_search_color:I
+    sget p0, Lbs5;->lb_default_search_color:I
 
     .line 162
     .line 163
-    invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getColor(I)I
+    invoke-virtual {v0, p0}, Landroid/content/res/Resources;->getColor(I)I
 
     .line 164
     .line 165
     .line 166
-    move-result p1
+    move-result p0
 
     .line 167
-    sget p2, Lgb5;->lbSearchOrbView_searchOrbColor:I
+    sget p1, Lev5;->lbSearchOrbView_searchOrbColor:I
 
     .line 168
     .line 169
-    invoke-virtual {v10, p2, p1}, Landroid/content/res/TypedArray;->getColor(II)I
+    invoke-virtual {v10, p1, p0}, Landroid/content/res/TypedArray;->getColor(II)I
 
     .line 170
     .line 171
     .line 172
-    move-result p1
+    move-result p0
 
     .line 173
-    sget p2, Lgb5;->lbSearchOrbView_searchOrbBrightColor:I
+    sget p1, Lev5;->lbSearchOrbView_searchOrbBrightColor:I
 
     .line 174
     .line 175
-    invoke-virtual {v10, p2, p1}, Landroid/content/res/TypedArray;->getColor(II)I
+    invoke-virtual {v10, p1, p0}, Landroid/content/res/TypedArray;->getColor(II)I
 
     .line 176
     .line 177
     .line 178
-    move-result p2
+    move-result p1
 
     .line 179
-    sget p3, Lgb5;->lbSearchOrbView_searchOrbIconColor:I
+    sget p2, Lev5;->lbSearchOrbView_searchOrbIconColor:I
 
     .line 180
     .line 181
-    invoke-virtual {v10, p3, v1}, Landroid/content/res/TypedArray;->getColor(II)I
+    invoke-virtual {v10, p2, v1}, Landroid/content/res/TypedArray;->getColor(II)I
 
     .line 182
     .line 183
     .line 184
-    move-result p3
+    move-result p2
 
     .line 185
-    new-instance v0, Ll16;
+    new-instance p3, Lbn6;
 
     .line 186
     .line 187
-    invoke-direct {v0, p1, p2, p3}, Ll16;-><init>(III)V
+    invoke-direct {p3, p0, p1, p2}, Lbn6;-><init>(III)V
 
     .line 188
     .line 189
     .line 190
-    invoke-virtual {p0, v0}, Landroidx/leanback/widget/SearchOrbView;->setOrbColors(Ll16;)V
+    invoke-virtual {v6, p3}, Landroidx/leanback/widget/SearchOrbView;->setOrbColors(Lbn6;)V
 
     .line 191
     .line 192
@@ -454,35 +454,35 @@
     .line 194
     .line 195
     .line 196
-    invoke-virtual {p0, v2}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v6, v2}, Landroid/view/View;->setFocusable(Z)V
 
     .line 197
     .line 198
     .line 199
-    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->setClipChildren(Z)V
+    invoke-virtual {v6, v1}, Landroid/view/ViewGroup;->setClipChildren(Z)V
 
     .line 200
     .line 201
     .line 202
-    invoke-virtual {p0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 203
     .line 204
     .line 205
-    invoke-virtual {p0, v1}, Landroid/view/View;->setSoundEffectsEnabled(Z)V
+    invoke-virtual {v6, v1}, Landroid/view/View;->setSoundEffectsEnabled(Z)V
 
     .line 206
     .line 207
     .line 208
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 209
-    invoke-virtual {p0, p1}, Landroidx/leanback/widget/SearchOrbView;->setSearchOrbZ(F)V
+    invoke-virtual {v6, p0}, Landroidx/leanback/widget/SearchOrbView;->setSearchOrbZ(F)V
 
     .line 210
     .line 211
     .line 212
-    invoke-static {v3, v4}, Lin7;->m(Landroid/view/View;F)V
+    invoke-virtual {v3, v4}, Landroid/view/View;->setZ(F)V
 
     .line 213
     .line 214
@@ -500,7 +500,7 @@
 
     .line 2
     .line 3
-    iget v0, p0, Landroidx/leanback/widget/SearchOrbView;->W:F
+    iget v0, p0, Landroidx/leanback/widget/SearchOrbView;->i0:F
 
     .line 4
     .line 5
@@ -513,7 +513,7 @@
     .line 7
     .line 8
     :goto_0
-    iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->R:Landroid/view/View;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->d0:Landroid/view/View;
 
     .line 9
     .line 10
@@ -541,7 +541,7 @@
     move-result-object v0
 
     .line 22
-    iget v1, p0, Landroidx/leanback/widget/SearchOrbView;->b0:I
+    iget v1, p0, Landroidx/leanback/widget/SearchOrbView;->k0:I
 
     .line 23
     .line 24
@@ -561,7 +561,7 @@
     .line 30
     .line 31
     .line 32
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->j0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->s0:Landroid/animation/ValueAnimator;
 
     .line 33
     .line 34
@@ -589,11 +589,11 @@
     move-result-object v0
 
     .line 46
-    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->j0:Landroid/animation/ValueAnimator;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->s0:Landroid/animation/ValueAnimator;
 
     .line 47
     .line 48
-    iget-object v3, p0, Landroidx/leanback/widget/SearchOrbView;->k0:Lk16;
+    iget-object v3, p0, Landroidx/leanback/widget/SearchOrbView;->t0:Lan6;
 
     .line 49
     .line 50
@@ -603,7 +603,7 @@
     .line 52
     .line 53
     :cond_1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->j0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->s0:Landroid/animation/ValueAnimator;
 
     .line 54
     .line 55
@@ -626,7 +626,7 @@
     .line 63
     .line 64
     :goto_1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->j0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->s0:Landroid/animation/ValueAnimator;
 
     .line 65
     .line 66
@@ -635,7 +635,7 @@
     .line 67
     .line 68
     .line 69
-    iput-boolean p1, p0, Landroidx/leanback/widget/SearchOrbView;->f0:Z
+    iput-boolean p1, p0, Landroidx/leanback/widget/SearchOrbView;->o0:Z
 
     .line 70
     .line 71
@@ -655,10 +655,10 @@
 .end method
 
 .method public final b()V
-    .locals 5
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->n0:Landroid/animation/ValueAnimator;
 
     .line 2
     .line 3
@@ -674,12 +674,12 @@
     const/4 v0, 0x0
 
     .line 9
-    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/animation/ValueAnimator;
+    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->n0:Landroid/animation/ValueAnimator;
 
     .line 10
     .line 11
     :cond_0
-    iget-boolean v0, p0, Landroidx/leanback/widget/SearchOrbView;->f0:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/SearchOrbView;->o0:Z
 
     .line 12
     .line 13
@@ -687,7 +687,7 @@
 
     .line 14
     .line 15
-    iget-boolean v0, p0, Landroidx/leanback/widget/SearchOrbView;->g0:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/SearchOrbView;->p0:Z
 
     .line 16
     .line 17
@@ -695,11 +695,11 @@
 
     .line 18
     .line 19
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->V:Ll16;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->h0:Lbn6;
 
     .line 20
     .line 21
-    iget v0, v0, Ll16;->a:I
+    iget v0, v0, Lbn6;->a:I
 
     .line 22
     .line 23
@@ -711,11 +711,11 @@
     move-result-object v0
 
     .line 27
-    iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->V:Ll16;
+    iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->h0:Lbn6;
 
     .line 28
     .line 29
-    iget v1, v1, Ll16;->b:I
+    iget v1, v1, Lbn6;->b:I
 
     .line 30
     .line 31
@@ -727,11 +727,11 @@
     move-result-object v1
 
     .line 35
-    iget-object v2, p0, Landroidx/leanback/widget/SearchOrbView;->V:Ll16;
+    iget-object v2, p0, Landroidx/leanback/widget/SearchOrbView;->h0:Lbn6;
 
     .line 36
     .line 37
-    iget v2, v2, Ll16;->a:I
+    iget v2, v2, Lbn6;->a:I
 
     .line 38
     .line 39
@@ -743,168 +743,148 @@
     move-result-object v2
 
     .line 43
-    const/4 v3, 0x3
+    filled-new-array {v0, v1, v2}, [Ljava/lang/Object;
 
     .line 44
-    new-array v3, v3, [Ljava/lang/Object;
-
     .line 45
     .line 46
-    const/4 v4, 0x0
+    move-result-object v0
 
     .line 47
-    aput-object v0, v3, v4
+    iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->q0:Landroid/animation/ArgbEvaluator;
 
     .line 48
     .line 49
-    const/4 v0, 0x1
+    invoke-static {v1, v0}, Landroid/animation/ValueAnimator;->ofObject(Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ValueAnimator;
 
     .line 50
-    aput-object v1, v3, v0
-
     .line 51
     .line 52
-    const/4 v0, 0x2
+    move-result-object v0
 
     .line 53
-    aput-object v2, v3, v0
+    iput-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->n0:Landroid/animation/ValueAnimator;
 
     .line 54
     .line 55
-    iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->h0:Landroid/animation/ArgbEvaluator;
+    const/4 v1, -0x1
 
     .line 56
-    .line 57
-    invoke-static {v1, v3}, Landroid/animation/ValueAnimator;->ofObject(Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ValueAnimator;
+    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
+    .line 57
     .line 58
     .line 59
-    .line 60
-    move-result-object v1
+    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->n0:Landroid/animation/ValueAnimator;
 
+    .line 60
     .line 61
-    iput-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/animation/ValueAnimator;
+    iget v1, p0, Landroidx/leanback/widget/SearchOrbView;->j0:I
 
     .line 62
     .line 63
-    const/4 v2, -0x1
+    mul-int/lit8 v1, v1, 0x2
 
     .line 64
-    invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
-
     .line 65
-    .line 66
-    .line 67
-    iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/animation/ValueAnimator;
+    int-to-long v1, v1
 
+    .line 66
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
+
+    .line 67
     .line 68
     .line 69
-    iget v2, p0, Landroidx/leanback/widget/SearchOrbView;->a0:I
+    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->n0:Landroid/animation/ValueAnimator;
 
     .line 70
     .line 71
-    mul-int/lit8 v2, v2, 0x2
+    iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->r0:Lan6;
 
     .line 72
     .line 73
-    int-to-long v2, v2
-
-    .line 74
-    invoke-virtual {v1, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
-
-    .line 75
-    .line 76
-    .line 77
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/animation/ValueAnimator;
-
-    .line 78
-    .line 79
-    iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->i0:Lk16;
-
-    .line 80
-    .line 81
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 82
-    .line 83
-    .line 84
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/animation/ValueAnimator;
+    .line 74
+    .line 75
+    .line 76
+    iget-object p0, p0, Landroidx/leanback/widget/SearchOrbView;->n0:Landroid/animation/ValueAnimator;
 
-    .line 85
-    .line 86
-    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
+    .line 77
+    .line 78
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->start()V
 
-    .line 87
-    .line 88
-    .line 89
+    .line 79
+    .line 80
+    .line 81
     :cond_1
     return-void
 .end method
 
 .method public getFocusedZoom()F
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/SearchOrbView;->W:F
+    iget p0, p0, Landroidx/leanback/widget/SearchOrbView;->i0:F
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getLayoutResourceId()I
-    .locals 1
+    .locals 0
 
     .line 1
-    sget v0, Lq95;->lb_search_orb:I
+    sget p0, Lqt5;->lb_search_orb:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getOrbColor()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->V:Ll16;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchOrbView;->h0:Lbn6;
 
     .line 2
     .line 3
-    iget v0, v0, Ll16;->a:I
+    iget p0, p0, Lbn6;->a:I
 
     .line 4
     .line 5
-    return v0
+    return p0
 .end method
 
-.method public getOrbColors()Ll16;
-    .locals 1
+.method public getOrbColors()Lbn6;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->V:Ll16;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchOrbView;->h0:Lbn6;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getOrbIcon()Landroid/graphics/drawable/Drawable;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->U:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchOrbView;->g0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final onAttachedToWindow()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onAttachedToWindow()V
+    invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
     .line 2
     .line 3
@@ -912,7 +892,7 @@
     const/4 v0, 0x1
 
     .line 5
-    iput-boolean v0, p0, Landroidx/leanback/widget/SearchOrbView;->g0:Z
+    iput-boolean v0, p0, Landroidx/leanback/widget/SearchOrbView;->p0:Z
 
     .line 6
     .line 7
@@ -925,18 +905,18 @@
 .end method
 
 .method public final onClick(Landroid/view/View;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->Q:Landroid/view/View$OnClickListener;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchOrbView;->c0:Landroid/view/View$OnClickListener;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-interface {v0, p1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
+    invoke-interface {p0, p1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
 
     .line 6
     .line 7
@@ -952,7 +932,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Landroidx/leanback/widget/SearchOrbView;->g0:Z
+    iput-boolean v0, p0, Landroidx/leanback/widget/SearchOrbView;->p0:Z
 
     .line 3
     .line 4
@@ -961,7 +941,7 @@
     .line 5
     .line 6
     .line 7
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
+    invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 8
     .line 9
@@ -973,7 +953,7 @@
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Landroid/widget/FrameLayout;->onFocusChanged(ZILandroid/graphics/Rect;)V
+    invoke-super {p0, p1, p2, p3}, Landroid/view/View;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
     .line 2
     .line 3
@@ -990,7 +970,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->Q:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->c0:Landroid/view/View$OnClickListener;
 
     .line 2
     .line 3
@@ -1001,19 +981,19 @@
     .locals 2
 
     .line 1
-    new-instance v0, Ll16;
+    new-instance v0, Lbn6;
 
     .line 2
     .line 3
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, p1, p1, v1}, Ll16;-><init>(III)V
+    invoke-direct {v0, p1, p1, v1}, Lbn6;-><init>(III)V
 
     .line 5
     .line 6
     .line 7
-    invoke-virtual {p0, v0}, Landroidx/leanback/widget/SearchOrbView;->setOrbColors(Ll16;)V
+    invoke-virtual {p0, v0}, Landroidx/leanback/widget/SearchOrbView;->setOrbColors(Lbn6;)V
 
     .line 8
     .line 9
@@ -1021,19 +1001,19 @@
     return-void
 .end method
 
-.method public setOrbColors(Ll16;)V
+.method public setOrbColors(Lbn6;)V
     .locals 1
 
     .line 1
-    iput-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->V:Ll16;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->h0:Lbn6;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->T:Landroid/widget/ImageView;
+    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->f0:Landroid/widget/ImageView;
 
     .line 4
     .line 5
-    iget p1, p1, Ll16;->c:I
+    iget p1, p1, Lbn6;->c:I
 
     .line 6
     .line 7
@@ -1042,7 +1022,7 @@
     .line 8
     .line 9
     .line 10
-    iget-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/animation/ValueAnimator;
+    iget-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->n0:Landroid/animation/ValueAnimator;
 
     .line 11
     .line 12
@@ -1050,11 +1030,11 @@
 
     .line 13
     .line 14
-    iget-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->V:Ll16;
+    iget-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->h0:Lbn6;
 
     .line 15
     .line 16
-    iget p1, p1, Ll16;->a:I
+    iget p1, p1, Lbn6;->a:I
 
     .line 17
     .line 18
@@ -1070,7 +1050,7 @@
     const/4 p1, 0x1
 
     .line 23
-    iput-boolean p1, p0, Landroidx/leanback/widget/SearchOrbView;->f0:Z
+    iput-boolean p1, p0, Landroidx/leanback/widget/SearchOrbView;->o0:Z
 
     .line 24
     .line 25
@@ -1083,18 +1063,18 @@
 .end method
 
 .method public setOrbIcon(Landroid/graphics/drawable/Drawable;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->U:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Landroidx/leanback/widget/SearchOrbView;->g0:Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->T:Landroid/widget/ImageView;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchOrbView;->f0:Landroid/widget/ImageView;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 6
     .line 7
@@ -1103,42 +1083,42 @@
 .end method
 
 .method public setOrbViewColor(I)V
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->S:Landroid/view/View;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/view/View;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v1
+    move-result-object v0
 
     .line 7
-    instance-of v1, v1, Landroid/graphics/drawable/GradientDrawable;
+    instance-of v0, v0, Landroid/graphics/drawable/GradientDrawable;
 
     .line 8
     .line 9
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     .line 12
     .line 13
     .line 14
-    move-result-object v0
+    move-result-object p0
 
     .line 15
-    check-cast v0, Landroid/graphics/drawable/GradientDrawable;
+    check-cast p0, Landroid/graphics/drawable/GradientDrawable;
 
     .line 16
     .line 17
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
+    invoke-virtual {p0, p1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
     .line 18
     .line 19
@@ -1151,15 +1131,15 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/SearchOrbView;->c0:F
+    iget v0, p0, Landroidx/leanback/widget/SearchOrbView;->l0:F
 
     .line 2
     .line 3
-    iget v1, p0, Landroidx/leanback/widget/SearchOrbView;->d0:F
+    iget v1, p0, Landroidx/leanback/widget/SearchOrbView;->m0:F
 
     .line 4
     .line 5
-    invoke-static {v1, v0, p1, v0}, Lea0;->m(FFFF)F
+    invoke-static {v1, v0, p1, v0}, Lw31;->d(FFFF)F
 
     .line 6
     .line 7
@@ -1167,15 +1147,15 @@
     move-result p1
 
     .line 9
-    sget-object v0, Lqn7;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lni8;->a:Ljava/util/WeakHashMap;
 
     .line 10
     .line 11
-    iget-object v0, p0, Landroidx/leanback/widget/SearchOrbView;->S:Landroid/view/View;
+    iget-object p0, p0, Landroidx/leanback/widget/SearchOrbView;->e0:Landroid/view/View;
 
     .line 12
     .line 13
-    invoke-static {v0, p1}, Lin7;->m(Landroid/view/View;F)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setZ(F)V
 
     .line 14
     .line 15

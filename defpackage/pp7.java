@@ -1,20 +1,28 @@
 package defpackage;
 
-import android.graphics.Matrix;
-import android.view.View;
+import android.R;
+import android.os.Build;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class pp7 {
-    public static void a(View view, Matrix matrix) {
-        view.setAnimationMatrix(matrix);
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public enum pp7 {
+    /* JADX INFO: Fake field, exist only in values array */
+    Cut(R.string.cut, R.attr.actionModeCutDrawable, mq8.q),
+    /* JADX INFO: Fake field, exist only in values array */
+    Copy(R.string.copy, R.attr.actionModeCopyDrawable, mq8.r),
+    /* JADX INFO: Fake field, exist only in values array */
+    Paste(R.string.paste, R.attr.actionModePasteDrawable, mq8.s),
+    /* JADX INFO: Fake field, exist only in values array */
+    SelectAll(R.string.selectAll, R.attr.actionModeSelectAllDrawable, mq8.t),
+    Autofill(Build.VERSION.SDK_INT <= 26 ? yt5.androidx_compose_foundation_autofill : R.string.autofill, 0, mq8.u);
 
-    public static void b(View view, Matrix matrix) {
-        view.transformMatrixToGlobal(matrix);
-    }
+    public final Object X;
+    public final int Y;
+    public final int Z;
 
-    public static void c(View view, Matrix matrix) {
-        view.transformMatrixToLocal(matrix);
+    pp7(int i, int i2, Object obj) {
+        this.X = obj;
+        this.Y = i;
+        this.Z = i2;
     }
 }

@@ -3,110 +3,105 @@ package androidx.work.multiprocess;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
-import defpackage.a44;
-import defpackage.f92;
-import defpackage.fh5;
-import defpackage.fs4;
-import defpackage.j04;
-import defpackage.ku0;
-import defpackage.mc2;
-import defpackage.na0;
-import defpackage.o56;
-import defpackage.rb2;
-import defpackage.sh5;
-import defpackage.u76;
-import defpackage.uh5;
-import defpackage.uv3;
-import defpackage.vh5;
-import defpackage.xi4;
-import defpackage.xt6;
-import defpackage.zu7;
+import defpackage.an3;
+import defpackage.f26;
+import defpackage.g26;
+import defpackage.h26;
+import defpackage.hc4;
+import defpackage.hr6;
+import defpackage.i26;
+import defpackage.ic4;
+import defpackage.jl0;
+import defpackage.kq8;
+import defpackage.la5;
+import defpackage.lf0;
+import defpackage.nl7;
+import defpackage.nz0;
+import defpackage.q05;
+import defpackage.r16;
+import defpackage.rt6;
+import defpackage.s44;
+import defpackage.ym2;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class RemoteWorkManagerClient extends sh5 {
-    public static final xi4 j;
-    public uh5 a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class RemoteWorkManagerClient extends f26 {
+    public static final q05 j;
     public final Context b;
-    public final zu7 c;
-    public final o56 d;
-    public final Object e;
+    public final kq8 c;
+    public final hr6 d;
     public volatile long f;
     public final long g;
-    public final rb2 h;
-    public final vh5 i;
+    public final ym2 h;
+    public final Object e = new Object();
+    public h26 a = null;
+    public final i26 i = new i26(this);
 
     static {
-        mc2.x("RemoteWorkManagerClient");
-        j = new xi4(19);
+        an3.u("RemoteWorkManagerClient");
+        j = new q05(18);
     }
 
-    public RemoteWorkManagerClient(Context context, zu7 zu7Var, long j2) {
+    public RemoteWorkManagerClient(Context context, kq8 kq8Var) {
         this.b = context.getApplicationContext();
-        this.c = zu7Var;
-        this.d = (o56) zu7Var.n.b;
-        this.e = new Object();
-        this.a = null;
-        this.i = new vh5(this);
-        this.g = j2;
-        this.h = zu7Var.l.g;
+        this.c = kq8Var;
+        this.d = (hr6) kq8Var.o0.Y;
+        nz0 nz0Var = kq8Var.m0;
+        this.g = nz0Var.i;
+        this.h = nz0Var.g;
     }
 
-    @Override // defpackage.sh5
-    public final xt6 a(String str) {
-        return uv3.H(e(new ku0(str, 2)), j, this.d);
+    @Override // defpackage.f26
+    public final nl7 a(String str) {
+        return hc4.F(e(new lf0(4, str, false)), j, this.d);
     }
 
-    @Override // defpackage.sh5
-    public final xt6 b(String str, fs4 fs4Var) {
-        return uv3.H(e(new na0(10, fs4Var, str)), j, this.d);
+    @Override // defpackage.f26
+    public final nl7 b(String str, la5 la5Var) {
+        return hc4.F(e(new jl0(8, la5Var, str)), j, this.d);
     }
 
     public final void d() {
         synchronized (this.e) {
-            mc2.m().getClass();
+            an3.l().getClass();
             this.a = null;
         }
     }
 
-    public final xt6 e(fh5 fh5Var) {
-        u76 u76Var;
+    public final nl7 e(r16 r16Var) {
+        rt6 rt6Var;
         Intent intent = new Intent(this.b, (Class<?>) RemoteWorkManagerService.class);
         synchronized (this.e) {
             try {
                 this.f++;
                 if (this.a == null) {
-                    mc2.m().getClass();
-                    uh5 uh5Var = new uh5(this);
-                    this.a = uh5Var;
+                    an3.l().getClass();
+                    h26 h26Var = new h26(this);
+                    this.a = h26Var;
                     try {
-                        if (!this.b.bindService(intent, uh5Var, 1)) {
-                            uh5 uh5Var2 = this.a;
+                        if (!this.b.bindService(intent, h26Var, 1)) {
+                            h26 h26Var2 = this.a;
                             RuntimeException runtimeException = new RuntimeException("Unable to bind to service");
-                            mc2.m().getClass();
-                            uh5Var2.a.h(runtimeException);
+                            an3.l().getClass();
+                            h26Var2.a.h(runtimeException);
                         }
                     } catch (Throwable th) {
-                        uh5 uh5Var3 = this.a;
-                        mc2.m().getClass();
-                        uh5Var3.a.h(th);
+                        h26 h26Var3 = this.a;
+                        an3.l().getClass();
+                        h26Var3.a.h(th);
                     }
                 }
-                ((Handler) this.h.R).removeCallbacks(this.i);
-                u76Var = this.a.a;
+                ((Handler) this.h.Y).removeCallbacks(this.i);
+                rt6Var = this.a.a;
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        a44 a44Var = new a44(4, this, u76Var);
-        o56 o56Var = this.d;
-        u76Var.a(a44Var, o56Var);
-        xt6 xt6VarN = j04.n(o56Var, u76Var, fh5Var);
-        xt6VarN.R.a(new f92(9, this), o56Var);
-        return xt6VarN;
-    }
-
-    public RemoteWorkManagerClient(Context context, zu7 zu7Var) {
-        this(context, zu7Var, 6000000L);
+        s44 s44Var = new s44(8, this, rt6Var);
+        hr6 hr6Var = this.d;
+        rt6Var.a(s44Var, hr6Var);
+        nl7 u = ic4.u(hr6Var, rt6Var, r16Var);
+        u.Y.a(new g26(0, this), hr6Var);
+        return u;
     }
 }

@@ -1,151 +1,91 @@
-.class public final enum Lbp1;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lbp1;
+.super Laj5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final enum Q:Lbp1;
+# instance fields
+.field public a:[D
 
-.field public static final enum R:Lbp1;
-
-.field public static final enum S:Lbp1;
-
-.field public static final synthetic T:[Lbp1;
+.field public b:I
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 7
-
-    .line 1
-    new-instance v0, Lbp1;
-
-    .line 2
-    .line 3
-    const-string v1, "PreEnter"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, Lbp1;->Q:Lbp1;
-
-    .line 10
-    .line 11
-    new-instance v1, Lbp1;
-
-    .line 12
-    .line 13
-    const-string v3, "Visible"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lbp1;->R:Lbp1;
-
-    .line 20
-    .line 21
-    new-instance v3, Lbp1;
-
-    .line 22
-    .line 23
-    const-string v5, "PostExit"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, Lbp1;->S:Lbp1;
-
-    .line 30
-    .line 31
-    const/4 v5, 0x3
-
-    .line 32
-    new-array v5, v5, [Lbp1;
-
-    .line 33
-    .line 34
-    aput-object v0, v5, v2
-
-    .line 35
-    .line 36
-    aput-object v1, v5, v4
-
-    .line 37
-    .line 38
-    aput-object v3, v5, v6
-
-    .line 39
-    .line 40
-    sput-object v5, Lbp1;->T:[Lbp1;
-
-    .line 41
-    .line 42
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lbp1;
+# virtual methods
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     .line 1
-    const-class v0, Lbp1;
+    iget-object v0, p0, Lbp1;->a:[D
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    iget p0, p0, Lbp1;->b:I
 
     .line 4
     .line 5
+    invoke-static {v0, p0}, Ljava/util/Arrays;->copyOf([DI)[D
+
     .line 6
+    .line 7
+    .line 8
     move-result-object p0
 
-    .line 7
-    check-cast p0, Lbp1;
-
-    .line 8
     .line 9
     return-object p0
 .end method
 
-.method public static values()[Lbp1;
-    .locals 1
+.method public final b(I)V
+    .locals 2
 
     .line 1
-    sget-object v0, Lbp1;->T:[Lbp1;
+    iget-object v0, p0, Lbp1;->a:[D
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    array-length v1, v0
 
     .line 4
+    if-ge v1, p1, :cond_1
+
     .line 5
     .line 6
-    move-result-object v0
+    array-length v1, v0
 
     .line 7
-    check-cast v0, [Lbp1;
+    mul-int/lit8 v1, v1, 0x2
 
     .line 8
     .line 9
-    return-object v0
+    if-ge p1, v1, :cond_0
+
+    .line 10
+    .line 11
+    move p1, v1
+
+    .line 12
+    :cond_0
+    invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([DI)[D
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    iput-object p1, p0, Lbp1;->a:[D
+
+    .line 17
+    .line 18
+    :cond_1
+    return-void
+.end method
+
+.method public final d()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lbp1;->b:I
+
+    .line 2
+    .line 3
+    return p0
 .end method

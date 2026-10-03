@@ -1,145 +1,269 @@
-.class public final enum Lt16;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lt16;
+.super Landroid/os/Binder;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lfx2;
 
 
-# static fields
-.field public static final enum Q:Lt16;
-
-.field public static final enum R:Lt16;
-
-.field public static final synthetic S:[Lt16;
+# instance fields
+.field public final synthetic g:Lvi6;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(Lvi6;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lt16;
+    iput-object p1, p0, Lt16;->g:Lvi6;
 
     .line 2
     .line 3
-    const-string v1, "Inherit"
+    invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sget-object p1, Lfx2;->f:Ljava/lang/String;
 
     .line 7
     .line 8
-    .line 9
-    sput-object v0, Lt16;->Q:Lt16;
+    invoke-virtual {p0, p0, p1}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
+    .line 9
     .line 10
     .line 11
-    new-instance v1, Lt16;
-
-    .line 12
-    .line 13
-    const-string v3, "SecureOn"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lt16;->R:Lt16;
-
-    .line 20
-    .line 21
-    new-instance v3, Lt16;
-
-    .line 22
-    .line 23
-    const-string v5, "SecureOff"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    const/4 v5, 0x3
-
-    .line 30
-    new-array v5, v5, [Lt16;
-
-    .line 31
-    .line 32
-    aput-object v0, v5, v2
-
-    .line 33
-    .line 34
-    aput-object v1, v5, v4
-
-    .line 35
-    .line 36
-    aput-object v3, v5, v6
-
-    .line 37
-    .line 38
-    sput-object v5, Lt16;->S:[Lt16;
-
-    .line 39
-    .line 40
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lt16;
-    .locals 1
+.method public static b(Landroid/os/IBinder;)Lfx2;
+    .locals 2
 
     .line 1
-    const-class v0, Lt16;
+    if-nez p0, :cond_0
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    const/4 p0, 0x0
 
     .line 4
-    .line 5
-    .line 6
-    move-result-object p0
+    return-object p0
 
+    .line 5
+    :cond_0
+    sget-object v0, Lfx2;->f:Ljava/lang/String;
+
+    .line 6
     .line 7
-    check-cast p0, Lt16;
+    invoke-interface {p0, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
     .line 8
     .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    if-eqz v0, :cond_1
+
+    .line 12
+    .line 13
+    instance-of v1, v0, Lfx2;
+
+    .line 14
+    .line 15
+    if-eqz v1, :cond_1
+
+    .line 16
+    .line 17
+    check-cast v0, Lfx2;
+
+    .line 18
+    .line 19
+    return-object v0
+
+    .line 20
+    :cond_1
+    new-instance v0, Lex2;
+
+    .line 21
+    .line 22
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 23
+    .line 24
+    .line 25
+    iput-object p0, v0, Lex2;->g:Landroid/os/IBinder;
+
+    .line 26
+    .line 27
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final asBinder()Landroid/os/IBinder;
+    .locals 0
+
+    .line 1
     return-object p0
 .end method
 
-.method public static values()[Lt16;
+.method public final d(Ljava/lang/String;)V
     .locals 1
 
     .line 1
-    sget-object v0, Lt16;->S:[Lt16;
+    new-instance v0, Ljava/lang/RuntimeException;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    new-instance p1, Lc86;
 
     .line 7
-    check-cast v0, [Lt16;
+    .line 8
+    invoke-direct {p1, v0}, Lc86;-><init>(Ljava/lang/Throwable;)V
 
+    .line 9
+    .line 10
+    .line 11
+    iget-object p0, p0, Lt16;->g:Lvi6;
+
+    .line 12
+    .line 13
+    invoke-virtual {p0, p1}, Lvi6;->f(Ljava/lang/Object;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public final i([B)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p0, p0, Lt16;->g:Lvi6;
+
+    .line 5
+    .line 6
+    invoke-virtual {p0, p1}, Lvi6;->f(Ljava/lang/Object;)V
+
+    .line 7
     .line 8
     .line 9
-    return-object v0
+    return-void
+.end method
+
+.method public final onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    .locals 3
+
+    .line 1
+    sget-object v0, Lfx2;->f:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    if-lt p1, v1, :cond_0
+
+    .line 5
+    .line 6
+    const v2, 0xffffff
+
+    .line 7
+    .line 8
+    .line 9
+    if-gt p1, v2, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    :cond_0
+    const v2, 0x5f4e5446
+
+    .line 15
+    .line 16
+    .line 17
+    if-ne p1, v2, :cond_1
+
+    .line 18
+    .line 19
+    invoke-virtual {p3, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return v1
+
+    .line 23
+    :cond_1
+    if-eq p1, v1, :cond_3
+
+    .line 24
+    .line 25
+    const/4 v0, 0x2
+
+    .line 26
+    if-eq p1, v0, :cond_2
+
+    .line 27
+    .line 28
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p0
+
+    .line 32
+    return p0
+
+    .line 33
+    :cond_2
+    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p1
+
+    .line 37
+    invoke-virtual {p0, p1}, Lt16;->d(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    goto :goto_0
+
+    .line 41
+    :cond_3
+    invoke-virtual {p2}, Landroid/os/Parcel;->createByteArray()[B
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p1
+
+    .line 45
+    invoke-virtual {p0, p1}, Lt16;->i([B)V
+
+    .line 46
+    .line 47
+    .line 48
+    :goto_0
+    return v1
 .end method

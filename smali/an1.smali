@@ -1,339 +1,208 @@
-.class public final Lan1;
-.super Landroid/view/inputmethod/InputConnectionWrapper;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lan1;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lmi2;
 
 
 # instance fields
-.field public final a:Landroid/widget/EditText;
+.field public final synthetic X:F
 
-.field public final b:Ldr0;
+.field public final synthetic Y:J
 
 
 # direct methods
-.method public constructor <init>(Landroid/widget/EditText;Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V
-    .locals 3
+.method public synthetic constructor <init>(FJ)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ldr0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput p1, p0, Lan1;->X:F
+
     .line 5
     .line 6
-    const/4 v1, 0x0
+    iput-wide p2, p0, Lan1;->Y:J
 
     .line 7
-    invoke-direct {p0, p2, v1}, Landroid/view/inputmethod/InputConnectionWrapper;-><init>(Landroid/view/inputmethod/InputConnection;Z)V
-
     .line 8
-    .line 9
-    .line 10
-    iput-object p1, p0, Lan1;->a:Landroid/widget/EditText;
-
-    .line 11
-    .line 12
-    iput-object v0, p0, Lan1;->b:Ldr0;
-
-    .line 13
-    .line 14
-    invoke-static {}, Lsm1;->d()Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result p1
-
-    .line 18
-    if-eqz p1, :cond_3
-
-    .line 19
-    .line 20
-    invoke-static {}, Lsm1;->a()Lsm1;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    invoke-virtual {p1}, Lsm1;->c()I
-
-    .line 25
-    .line 26
-    .line 27
-    move-result p2
-
-    .line 28
-    const/4 v0, 0x1
-
-    .line 29
-    if-ne p2, v0, :cond_3
-
-    .line 30
-    .line 31
-    if-nez p3, :cond_0
-
-    .line 32
-    .line 33
-    goto :goto_1
-
-    .line 34
-    :cond_0
-    iget-object p2, p3, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 35
-    .line 36
-    if-nez p2, :cond_1
-
-    .line 37
-    .line 38
-    new-instance p2, Landroid/os/Bundle;
-
-    .line 39
-    .line 40
-    invoke-direct {p2}, Landroid/os/Bundle;-><init>()V
-
-    .line 41
-    .line 42
-    .line 43
-    iput-object p2, p3, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 44
-    .line 45
-    :cond_1
-    iget-object p1, p1, Lsm1;->e:Lom1;
-
-    .line 46
-    .line 47
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 48
-    .line 49
-    .line 50
-    iget-object p2, p3, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 51
-    .line 52
-    iget-object p1, p1, Lom1;->c:Lpv6;
-
-    .line 53
-    .line 54
-    iget-object p1, p1, Lpv6;->b:Ljava/lang/Object;
-
-    .line 55
-    .line 56
-    check-cast p1, Le44;
-
-    .line 57
-    .line 58
-    const/4 v0, 0x4
-
-    .line 59
-    invoke-virtual {p1, v0}, Ley3;->a(I)I
-
-    .line 60
-    .line 61
-    .line 62
-    move-result v0
-
-    .line 63
-    if-eqz v0, :cond_2
-
-    .line 64
-    .line 65
-    iget-object v2, p1, Ley3;->T:Ljava/lang/Object;
-
-    .line 66
-    .line 67
-    check-cast v2, Ljava/nio/ByteBuffer;
-
-    .line 68
-    .line 69
-    iget p1, p1, Ley3;->Q:I
-
-    .line 70
-    .line 71
-    add-int/2addr v0, p1
-
-    .line 72
-    invoke-virtual {v2, v0}, Ljava/nio/ByteBuffer;->getInt(I)I
-
-    .line 73
-    .line 74
-    .line 75
-    move-result p1
-
-    .line 76
-    goto :goto_0
-
-    .line 77
-    :cond_2
-    const/4 p1, 0x0
-
-    .line 78
-    :goto_0
-    const-string v0, "android.support.text.emoji.emojiCompat_metadataVersion"
-
-    .line 79
-    .line 80
-    invoke-virtual {p2, v0, p1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
-
-    .line 81
-    .line 82
-    .line 83
-    iget-object p1, p3, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 84
-    .line 85
-    const-string p2, "android.support.text.emoji.emojiCompat_replaceAll"
-
-    .line 86
-    .line 87
-    invoke-virtual {p1, p2, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 88
-    .line 89
-    .line 90
-    :cond_3
-    :goto_1
     return-void
 .end method
 
 
 # virtual methods
-.method public final deleteSurroundingText(II)Z
-    .locals 2
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 12
 
     .line 1
-    iget-object v0, p0, Lan1;->a:Landroid/widget/EditText;
+    move-object v0, p1
 
     .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getEditableText()Landroid/text/Editable;
+    check-cast v0, Lxr1;
 
+    .line 3
     .line 4
+    iget p1, p0, Lan1;->X:F
+
     .line 5
     .line 6
-    move-result-object v0
+    invoke-interface {v0, p1}, Laf1;->g0(F)F
 
     .line 7
-    iget-object v1, p0, Lan1;->b:Ldr0;
-
     .line 8
     .line 9
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result v7
 
     .line 10
+    invoke-interface {v0, p1}, Laf1;->g0(F)F
+
     .line 11
     .line 12
-    const/4 v1, 0x0
-
     .line 13
-    invoke-static {p0, v0, p1, p2, v1}, Ldr0;->v(Lan1;Landroid/text/Editable;IIZ)Z
+    move-result v1
 
     .line 14
+    const/high16 v2, 0x40000000    # 2.0f
+
     .line 15
     .line 16
-    move-result v0
+    div-float/2addr v1, v2
 
     .line 17
-    if-nez v0, :cond_1
+    const/4 v3, 0x0
 
     .line 18
-    .line 19
-    invoke-super {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;->deleteSurroundingText(II)Z
+    invoke-static {v3}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
+    .line 19
     .line 20
     .line 21
+    move-result v3
+
     .line 22
-    move-result p1
+    int-to-long v3, v3
 
     .line 23
-    if-eqz p1, :cond_0
+    invoke-static {v1}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     .line 24
     .line 25
-    goto :goto_0
-
     .line 26
-    :cond_0
-    return v1
+    move-result v1
 
     .line 27
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
+    int-to-long v5, v1
 
     .line 28
-    return p1
-.end method
+    const/16 v1, 0x20
 
-.method public final deleteSurroundingTextInCodePoints(II)Z
-    .locals 2
+    .line 29
+    .line 30
+    shl-long/2addr v3, v1
 
-    .line 1
-    iget-object v0, p0, Lan1;->a:Landroid/widget/EditText;
+    .line 31
+    const-wide v8, 0xffffffffL
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getEditableText()Landroid/text/Editable;
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    and-long/2addr v5, v8
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 37
+    or-long/2addr v3, v5
 
-    .line 7
-    iget-object v1, p0, Lan1;->b:Ldr0;
+    .line 38
+    invoke-interface {v0}, Lxr1;->e()J
 
-    .line 8
-    .line 9
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 39
+    .line 40
+    .line 41
+    move-result-wide v5
 
-    .line 10
-    .line 11
-    .line 12
-    const/4 v1, 0x1
+    .line 42
+    shr-long/2addr v5, v1
 
-    .line 13
-    invoke-static {p0, v0, p1, p2, v1}, Ldr0;->v(Lan1;Landroid/text/Editable;IIZ)Z
+    .line 43
+    long-to-int v5, v5
 
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
+    .line 44
+    invoke-static {v5}, Ljava/lang/Float;->intBitsToFloat(I)F
 
-    .line 17
-    if-nez v0, :cond_1
+    .line 45
+    .line 46
+    .line 47
+    move-result v5
 
-    .line 18
-    .line 19
-    invoke-super {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;->deleteSurroundingTextInCodePoints(II)Z
+    .line 48
+    invoke-interface {v0, p1}, Laf1;->g0(F)F
 
-    .line 20
-    .line 21
-    .line 22
+    .line 49
+    .line 50
+    .line 51
     move-result p1
 
-    .line 23
-    if-eqz p1, :cond_0
+    .line 52
+    div-float/2addr p1, v2
 
-    .line 24
-    .line 25
-    goto :goto_0
+    .line 53
+    invoke-static {v5}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
-    .line 26
-    :cond_0
-    const/4 p1, 0x0
+    .line 54
+    .line 55
+    .line 56
+    move-result v2
 
-    .line 27
-    return p1
+    .line 57
+    int-to-long v5, v2
 
-    .line 28
-    :cond_1
-    :goto_0
-    return v1
+    .line 58
+    invoke-static {p1}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    .line 59
+    .line 60
+    .line 61
+    move-result p1
+
+    .line 62
+    int-to-long v10, p1
+
+    .line 63
+    shl-long v1, v5, v1
+
+    .line 64
+    .line 65
+    and-long v5, v10, v8
+
+    .line 66
+    .line 67
+    or-long/2addr v5, v1
+
+    .line 68
+    const/4 v8, 0x0
+
+    .line 69
+    const/16 v9, 0x1f0
+
+    .line 70
+    .line 71
+    iget-wide v1, p0, Lan1;->Y:J
+
+    .line 72
+    .line 73
+    invoke-static/range {v0 .. v9}, Lxr1;->t0(Lxr1;JJJFII)V
+
+    .line 74
+    .line 75
+    .line 76
+    sget-object p0, Lr98;->a:Lr98;
+
+    .line 77
+    .line 78
+    return-object p0
 .end method

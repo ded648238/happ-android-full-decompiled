@@ -1,89 +1,84 @@
-.class public final Liu7;
+.class public abstract Liu7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:I
+# static fields
+.field public static final a:Lwy0;
 
-.field public final synthetic R:Lkk3;
-
-.field public final synthetic S:Lju7;
+.field public static final b:Lhu7;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lkk3;Lju7;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    iput p3, p0, Liu7;->Q:I
+    new-instance v0, Lin7;
 
     .line 2
     .line 3
-    iput-object p1, p0, Liu7;->R:Lkk3;
+    const/4 v1, 0x5
 
     .line 4
-    .line 5
-    iput-object p2, p0, Liu7;->S:Lju7;
+    invoke-direct {v0, v1}, Lin7;-><init>(I)V
 
+    .line 5
     .line 6
     .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v1, Lwy0;
 
     .line 8
     .line 9
+    invoke-direct {v1, v0}, Lwy0;-><init>(Lji2;)V
+
     .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Liu7;->Q:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Liu7;->S:Lju7;
-
-    .line 4
-    .line 5
-    iget-object v2, p0, Liu7;->R:Lkk3;
-
-    .line 6
-    .line 7
-    packed-switch v0, :pswitch_data_0
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {v2, v1}, Lkk3;->f(Lhk3;)V
-
     .line 11
     .line 12
-    .line 13
-    return-void
+    sput-object v1, Liu7;->a:Lwy0;
 
+    .line 13
     .line 14
-    :pswitch_0
-    invoke-virtual {v2, v1}, Lkk3;->a(Lhk3;)V
+    const-wide v0, 0xff4286f4L
 
     .line 15
     .line 16
     .line 17
-    return-void
-
     .line 18
-    nop
-
     .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    invoke-static {v0, v1}, Lvq0;->c(J)J
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-wide v0
+
+    .line 23
+    new-instance v2, Lhu7;
+
+    .line 24
+    .line 25
+    const v3, 0x3ecccccd    # 0.4f
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-static {v3, v0, v1}, Lau0;->b(FJ)J
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-wide v3
+
+    .line 32
+    invoke-direct {v2, v0, v1, v3, v4}, Lhu7;-><init>(JJ)V
+
+    .line 33
+    .line 34
+    .line 35
+    sput-object v2, Liu7;->b:Lhu7;
+
+    .line 36
+    .line 37
+    return-void
 .end method

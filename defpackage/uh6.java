@@ -1,11 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface uh6 {
-    xh6 c();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class uh6 extends th6 implements sh6 {
+    public String n;
+    public mg6 o;
+    public rh6 p;
 
-    xh6 e(xh6 xh6Var, xh6 xh6Var2, xh6 xh6Var3);
+    @Override // defpackage.sh6
+    public final rh6 c() {
+        return this.p;
+    }
 
-    void x(xh6 xh6Var);
+    @Override // defpackage.ih6
+    public final String o() {
+        return "textPath";
+    }
 }

@@ -1,6 +1,6 @@
 .class public final Lio/sentry/android/replay/video/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -58,5 +58,45 @@
 
     .line 18
     .line 19
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lio/sentry/android/replay/video/b;->c:Z
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lio/sentry/android/replay/video/b;->b:Landroid/media/MediaMuxer;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iget p0, p0, Lio/sentry/android/replay/video/b;->e:I
+
+    .line 8
+    .line 9
+    if-lez p0, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Landroid/media/MediaMuxer;->stop()V
+
+    .line 12
+    .line 13
+    .line 14
+    :cond_0
+    invoke-virtual {v1}, Landroid/media/MediaMuxer;->release()V
+
+    .line 15
+    .line 16
+    .line 17
     return-void
 .end method

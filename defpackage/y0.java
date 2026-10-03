@@ -1,36 +1,40 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class y0 implements qw0 {
-    public final rw0 Q;
+import java.util.Iterator;
 
-    public y0(rw0 rw0Var) {
-        this.Q = rw0Var;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class y0 implements vo3 {
+    @Override // defpackage.vo3
+    public Object b(ua1 ua1Var) {
+        return i(ua1Var);
     }
 
-    @Override // defpackage.sw0
-    public final Object M(u72 u72Var, Object obj) {
-        return u72Var.C(obj, this);
+    public abstract Object e();
+
+    public abstract int f(Object obj);
+
+    public abstract Iterator g(Object obj);
+
+    public abstract int h(Object obj);
+
+    public final Object i(ua1 ua1Var) {
+        Object e = e();
+        int f = f(e);
+        dy0 t = ua1Var.t(d());
+        while (true) {
+            int e2 = t.e(d());
+            if (e2 == -1) {
+                t.n(d());
+                return l(e);
+            }
+            j(t, e2 + f, e);
+        }
     }
 
-    @Override // defpackage.sw0
-    public /* bridge */ sw0 R(rw0 rw0Var) {
-        return ji2.x(this, rw0Var);
-    }
+    public abstract void j(dy0 dy0Var, int i, Object obj);
 
-    @Override // defpackage.qw0
-    public final rw0 getKey() {
-        return this.Q;
-    }
+    public abstract Object k(Object obj);
 
-    @Override // defpackage.sw0
-    public final /* bridge */ sw0 r0(sw0 sw0Var) {
-        return ji2.B(this, sw0Var);
-    }
-
-    @Override // defpackage.sw0
-    public /* bridge */ qw0 v0(rw0 rw0Var) {
-        return ji2.q(this, rw0Var);
-    }
+    public abstract Object l(Object obj);
 }

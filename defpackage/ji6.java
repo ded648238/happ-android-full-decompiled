@@ -1,11 +1,24 @@
 package defpackage;
 
-import android.text.StaticLayout;
+import java.util.HashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface ji6 {
-    boolean c(StaticLayout staticLayout);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class ji6 {
+    public static final HashMap a;
 
-    StaticLayout i(ki6 ki6Var);
+    static {
+        HashMap hashMap = new HashMap(10);
+        a = hashMap;
+        hashMap.put("none", di5.X);
+        hashMap.put("xMinYMin", di5.Y);
+        hashMap.put("xMidYMin", di5.Z);
+        hashMap.put("xMaxYMin", di5.c0);
+        hashMap.put("xMinYMid", di5.d0);
+        hashMap.put("xMidYMid", di5.e0);
+        hashMap.put("xMaxYMid", di5.f0);
+        hashMap.put("xMinYMax", di5.g0);
+        hashMap.put("xMidYMax", di5.h0);
+        hashMap.put("xMaxYMax", di5.i0);
+    }
 }

@@ -1,94 +1,116 @@
 .class public final enum Lao5;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lk83;
 
 
 # static fields
-.field public static final enum Q:Lao5;
+.field public static final synthetic Y:[Lao5;
 
-.field public static final synthetic R:[Lao5;
+
+# instance fields
+.field public final X:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 6
 
     .line 1
     new-instance v0, Lao5;
 
     .line 2
     .line 3
-    const-string v1, "MustUse"
+    const-string v1, "FINAL"
 
     .line 4
     .line 5
     const/4 v2, 0x0
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2, v2}, Lao5;-><init>(Ljava/lang/String;II)V
 
     .line 7
     .line 8
     .line 9
-    sput-object v0, Lao5;->Q:Lao5;
+    new-instance v1, Lao5;
 
     .line 10
     .line 11
-    new-instance v1, Lao5;
+    const-string v2, "OPEN"
 
     .line 12
     .line 13
-    const-string v3, "ExplicitlyIgnorable"
+    const/4 v3, 0x1
 
     .line 14
+    invoke-direct {v1, v2, v3, v3}, Lao5;-><init>(Ljava/lang/String;II)V
+
     .line 15
-    const/4 v4, 0x1
-
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 17
+    new-instance v2, Lao5;
+
     .line 18
     .line 19
-    new-instance v3, Lao5;
+    const-string v3, "ABSTRACT"
 
     .line 20
     .line 21
-    const-string v5, "Unspecified"
+    const/4 v4, 0x2
 
     .line 22
+    invoke-direct {v2, v3, v4, v4}, Lao5;-><init>(Ljava/lang/String;II)V
+
     .line 23
-    const/4 v6, 0x2
-
     .line 24
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 25
+    new-instance v3, Lao5;
+
     .line 26
     .line 27
-    const/4 v5, 0x3
+    const-string v4, "SEALED"
 
     .line 28
-    new-array v5, v5, [Lao5;
-
     .line 29
+    const/4 v5, 0x3
+
     .line 30
-    aput-object v0, v5, v2
+    invoke-direct {v3, v4, v5, v5}, Lao5;-><init>(Ljava/lang/String;II)V
 
     .line 31
     .line 32
-    aput-object v1, v5, v4
-
     .line 33
-    .line 34
-    aput-object v3, v5, v6
+    filled-new-array {v0, v1, v2, v3}, [Lao5;
 
+    .line 34
     .line 35
     .line 36
-    sput-object v5, Lao5;->R:[Lao5;
+    move-result-object v0
 
     .line 37
+    sput-object v0, Lao5;->Y:[Lao5;
+
     .line 38
+    .line 39
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p3, p0, Lao5;->X:I
+
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -119,11 +141,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lao5;->R:[Lao5;
+    sget-object v0, Lao5;->Y:[Lao5;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lao5;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -136,4 +158,17 @@
     .line 8
     .line 9
     return-object v0
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lao5;->X:I
+
+    .line 2
+    .line 3
+    return p0
 .end method

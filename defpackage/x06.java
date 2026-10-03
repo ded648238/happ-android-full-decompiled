@@ -1,15 +1,36 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface x06 {
-    boolean a();
+/* loaded from: classes.dex */
+public final class x06 implements ji2 {
+    public final /* synthetic */ int X;
+    public final String Y;
 
-    boolean b();
+    public /* synthetic */ x06(String str, int i) {
+        this.X = i;
+        this.Y = str;
+    }
 
-    boolean d();
-
-    Object e(x94 x94Var, u72 u72Var, aw0 aw0Var);
-
-    float g(float f);
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        String str;
+        int i = this.X;
+        String str2 = this.Y;
+        switch (i) {
+            case 0:
+                String q = eh0.q(new StringBuilder(), p47.m.a.a, '.');
+                str = la7.H0(str2, false, q) ? q : null;
+                if (str != null) {
+                    break;
+                }
+                break;
+            default:
+                String q2 = eh0.q(new StringBuilder(), p47.k.a.a, '.');
+                str = la7.H0(str2, false, q2) ? q2 : null;
+                if (str != null) {
+                    break;
+                }
+                break;
+        }
+        return str;
+    }
 }

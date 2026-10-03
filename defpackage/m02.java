@@ -1,11 +1,48 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class m02 implements g02 {
-    @Override // defpackage.g02
-    public final Object a(i02 i02Var, yv0 yv0Var) {
-        Object objK = i02Var.k(j96.Q, yv0Var);
-        return objK == cx0.Q ? objK : bh7.a;
+import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicReference;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public enum m02 {
+    ;
+
+    public static final Throwable X = new Throwable("Terminated");
+
+    public static boolean a(AtomicReference atomicReference, Throwable th) {
+        Throwable ey0Var;
+        while (true) {
+            Throwable th2 = (Throwable) atomicReference.get();
+            if (th2 == X) {
+                return false;
+            }
+            if (th2 == null) {
+                ey0Var = th;
+            } else if (th2 instanceof ey0) {
+                ArrayList arrayList = new ArrayList(((ey0) th2).X);
+                arrayList.add(th);
+                ey0Var = new ey0(arrayList);
+            } else {
+                ey0Var = new ey0(th2, th);
+            }
+            while (!atomicReference.compareAndSet(th2, ey0Var)) {
+                if (atomicReference.get() != th2) {
+                    break;
+                }
+            }
+            return true;
+        }
+    }
+
+    public static Throwable b(AtomicReference atomicReference) {
+        Throwable th = (Throwable) atomicReference.get();
+        Throwable th2 = X;
+        return th != th2 ? (Throwable) atomicReference.getAndSet(th2) : th;
+    }
+
+    public static m02 valueOf(String str) {
+        w31.x(Enum.valueOf(m02.class, str));
+        throw null;
     }
 }

@@ -1,19 +1,19 @@
 .class public final Lio/sentry/profilemeasurements/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # instance fields
-.field public Q:Lj$/util/concurrent/ConcurrentHashMap;
+.field public X:Ljava/util/concurrent/ConcurrentHashMap;
 
-.field public R:D
+.field public Y:D
 
-.field public S:Ljava/lang/String;
+.field public Z:Ljava/lang/String;
 
-.field public T:D
+.field public c0:D
 
 
 # direct methods
@@ -34,7 +34,7 @@
     move-result-object p1
 
     .line 8
-    iput-object p1, p0, Lio/sentry/profilemeasurements/b;->S:Ljava/lang/String;
+    iput-object p1, p0, Lio/sentry/profilemeasurements/b;->Z:Ljava/lang/String;
 
     .line 9
     .line 10
@@ -46,7 +46,7 @@
     move-result-wide p1
 
     .line 14
-    iput-wide p1, p0, Lio/sentry/profilemeasurements/b;->T:D
+    iput-wide p1, p0, Lio/sentry/profilemeasurements/b;->c0:D
 
     .line 15
     .line 16
@@ -63,7 +63,7 @@
     div-double/2addr p1, p3
 
     .line 23
-    iput-wide p1, p0, Lio/sentry/profilemeasurements/b;->R:D
+    iput-wide p1, p0, Lio/sentry/profilemeasurements/b;->Y:D
 
     .line 24
     .line 25
@@ -73,7 +73,7 @@
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 5
+    .locals 4
 
     .line 1
     if-ne p0, p1, :cond_0
@@ -112,15 +112,15 @@
 
     .line 16
     .line 17
-    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->Q:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->X:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 18
     .line 19
-    iget-object v1, p1, Lio/sentry/profilemeasurements/b;->Q:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v1, p1, Lio/sentry/profilemeasurements/b;->X:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 20
     .line 21
-    invoke-static {v0, v1}, Lio/sentry/util/b;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lio/sentry/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 22
     .line 23
@@ -132,11 +132,11 @@
 
     .line 26
     .line 27
-    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->S:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->Z:Ljava/lang/String;
 
     .line 28
     .line 29
-    iget-object v1, p1, Lio/sentry/profilemeasurements/b;->S:Ljava/lang/String;
+    iget-object v1, p1, Lio/sentry/profilemeasurements/b;->Z:Ljava/lang/String;
 
     .line 30
     .line 31
@@ -152,66 +152,66 @@
 
     .line 36
     .line 37
-    iget-wide v0, p0, Lio/sentry/profilemeasurements/b;->T:D
+    iget-wide v0, p0, Lio/sentry/profilemeasurements/b;->c0:D
 
     .line 38
     .line 39
-    iget-wide v2, p1, Lio/sentry/profilemeasurements/b;->T:D
+    iget-wide v2, p1, Lio/sentry/profilemeasurements/b;->c0:D
 
     .line 40
     .line 41
-    cmpl-double v4, v0, v2
+    cmpl-double v0, v0, v2
 
     .line 42
     .line 43
-    if-nez v4, :cond_2
+    if-nez v0, :cond_2
 
     .line 44
     .line 45
-    iget-wide v0, p0, Lio/sentry/profilemeasurements/b;->R:D
+    iget-wide v0, p0, Lio/sentry/profilemeasurements/b;->Y:D
 
     .line 46
     .line 47
-    iget-wide v2, p1, Lio/sentry/profilemeasurements/b;->R:D
+    iget-wide p0, p1, Lio/sentry/profilemeasurements/b;->Y:D
 
     .line 48
     .line 49
-    cmpl-double p1, v0, v2
+    cmpl-double p0, v0, p0
 
     .line 50
     .line 51
-    if-nez p1, :cond_2
+    if-nez p0, :cond_2
 
     .line 52
     .line 53
     :goto_0
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 54
-    return p1
+    return p0
 
     .line 55
     :cond_2
     :goto_1
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 56
-    return p1
+    return p0
 .end method
 
 .method public final hashCode()I
-    .locals 5
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->Q:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->X:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/sentry/profilemeasurements/b;->S:Ljava/lang/String;
+    iget-object v1, p0, Lio/sentry/profilemeasurements/b;->Z:Ljava/lang/String;
 
     .line 4
     .line 5
-    iget-wide v2, p0, Lio/sentry/profilemeasurements/b;->T:D
+    iget-wide v2, p0, Lio/sentry/profilemeasurements/b;->c0:D
 
     .line 6
     .line 7
@@ -220,49 +220,29 @@
     .line 8
     .line 9
     .line 10
-    move-result-object v2
+    move-result-object p0
 
     .line 11
-    const/4 v3, 0x3
+    filled-new-array {v0, v1, p0}, [Ljava/lang/Object;
 
     .line 12
-    new-array v3, v3, [Ljava/lang/Object;
-
     .line 13
     .line 14
-    const/4 v4, 0x0
+    move-result-object p0
 
     .line 15
-    aput-object v0, v3, v4
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     .line 16
     .line 17
-    const/4 v0, 0x1
-
     .line 18
-    aput-object v1, v3, v0
+    move-result p0
 
     .line 19
-    .line 20
-    const/4 v0, 0x2
-
-    .line 21
-    aput-object v2, v3, v0
-
-    .line 22
-    .line 23
-    invoke-static {v3}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v0
-
-    .line 27
-    return v0
+    return p0
 .end method
 
-.method public final serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 3
 
     .line 1
@@ -284,7 +264,7 @@
     .line 9
     .line 10
     .line 11
-    iget-wide v0, p0, Lio/sentry/profilemeasurements/b;->T:D
+    iget-wide v0, p0, Lio/sentry/profilemeasurements/b;->c0:D
 
     .line 12
     .line 13
@@ -310,7 +290,7 @@
     .line 23
     .line 24
     .line 25
-    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->S:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->Z:Ljava/lang/String;
 
     .line 26
     .line 27
@@ -328,7 +308,7 @@
     .line 33
     .line 34
     .line 35
-    iget-wide v0, p0, Lio/sentry/profilemeasurements/b;->R:D
+    iget-wide v0, p0, Lio/sentry/profilemeasurements/b;->Y:D
 
     .line 36
     .line 37
@@ -345,7 +325,7 @@
     .line 42
     .line 43
     .line 44
-    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->Q:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/profilemeasurements/b;->X:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 45
     .line 46
@@ -394,11 +374,11 @@
 
     .line 67
     .line 68
-    iget-object v2, p0, Lio/sentry/profilemeasurements/b;->Q:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v2, p0, Lio/sentry/profilemeasurements/b;->X:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 69
     .line 70
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->c(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 71
     .line 72

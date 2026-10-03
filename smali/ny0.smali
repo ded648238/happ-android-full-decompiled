@@ -1,97 +1,167 @@
 .class public final Lny0;
-.super Le21;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lb25;
+.implements Lx31;
 
 
-# virtual methods
-.method public final w(Lv86;FF)V
+# static fields
+.field public static final Y:Lm0;
+
+
+# instance fields
+.field public final X:Lrk2;
+
+
+# direct methods
+.method static constructor <clinit>()V
     .locals 3
 
     .line 1
-    mul-float p3, p3, p2
+    new-instance v0, Lm0;
 
     .line 2
     .line 3
-    const/high16 p2, 0x43340000    # 180.0f
+    const/16 v1, 0xf
 
     .line 4
     .line 5
-    const/high16 v0, 0x42b40000    # 90.0f
+    const/4 v2, 0x0
 
     .line 6
+    invoke-direct {v0, v1, v2}, Lm0;-><init>(IZ)V
+
     .line 7
-    const/4 v1, 0x0
-
     .line 8
-    invoke-virtual {p1, v1, p3, p2, v0}, Lv86;->d(FFFF)V
-
     .line 9
+    sput-object v0, Lny0;->Y:Lm0;
+
     .line 10
     .line 11
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    .line 16
-    invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-wide v0
-
-    .line 20
-    invoke-static {v0, v1}, Ljava/lang/Math;->sin(D)D
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-wide v0
-
-    .line 24
-    float-to-double p2, p3
-
-    .line 25
-    mul-double v0, v0, p2
-
-    .line 26
-    .line 27
-    double-to-float v0, v0
-
-    .line 28
-    const-wide/16 v1, 0x0
-
-    .line 29
-    .line 30
-    invoke-static {v1, v2}, Ljava/lang/Math;->toRadians(D)D
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-wide v1
-
-    .line 34
-    invoke-static {v1, v2}, Ljava/lang/Math;->sin(D)D
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-wide v1
-
-    .line 38
-    mul-double v1, v1, p2
-
-    .line 39
-    .line 40
-    double-to-float p2, v1
-
-    .line 41
-    invoke-virtual {p1, v0, p2}, Lv86;->c(FF)V
-
-    .line 42
-    .line 43
-    .line 44
     return-void
+.end method
+
+.method public constructor <init>(Lrk2;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lny0;->X:Lrk2;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge B0(Lz31;)Lz31;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Ljf1;->M(Lx31;Lz31;)Lz31;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final bridge G0(Ly31;)Lx31;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Ljf1;->v(Lx31;Ly31;)Lx31;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final L(Ljava/lang/Integer;)Ljava/util/List;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lny0;->X:Lrk2;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lrk2;->D()Ljava/util/List;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final P()Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lny0;->X:Lrk2;
+
+    .line 2
+    .line 3
+    iget-boolean p0, p0, Lrk2;->C:Z
+
+    .line 4
+    .line 5
+    return p0
+.end method
+
+.method public final U(Lxi2;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-interface {p1, p2, p0}, Lxi2;->H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final bridge Z(Ly31;)Lz31;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Ljf1;->K(Lx31;Ly31;)Lz31;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public final getKey()Ly31;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lny0;->Y:Lm0;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

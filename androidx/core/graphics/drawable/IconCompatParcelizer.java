@@ -4,16 +4,16 @@ import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.fn;
-import defpackage.vm7;
-import defpackage.wm7;
+import defpackage.i60;
+import defpackage.qh8;
+import defpackage.rh8;
 import java.nio.charset.Charset;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class IconCompatParcelizer {
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    public static IconCompat read(vm7 vm7Var) {
+    public static IconCompat read(qh8 qh8Var) {
         IconCompat iconCompat = new IconCompat();
         iconCompat.a = -1;
         iconCompat.c = null;
@@ -23,34 +23,34 @@ public class IconCompatParcelizer {
         iconCompat.g = null;
         iconCompat.h = IconCompat.k;
         iconCompat.i = null;
-        iconCompat.a = vm7Var.f(-1, 1);
+        iconCompat.a = qh8Var.f(-1, 1);
         byte[] bArr = iconCompat.c;
-        if (vm7Var.e(2)) {
-            Parcel parcel = ((wm7) vm7Var).e;
-            int i = parcel.readInt();
-            if (i < 0) {
+        if (qh8Var.e(2)) {
+            Parcel parcel = ((rh8) qh8Var).e;
+            int readInt = parcel.readInt();
+            if (readInt < 0) {
                 bArr = null;
             } else {
-                byte[] bArr2 = new byte[i];
+                byte[] bArr2 = new byte[readInt];
                 parcel.readByteArray(bArr2);
                 bArr = bArr2;
             }
         }
         iconCompat.c = bArr;
-        iconCompat.d = vm7Var.g(iconCompat.d, 3);
-        iconCompat.e = vm7Var.f(iconCompat.e, 4);
-        iconCompat.f = vm7Var.f(iconCompat.f, 5);
-        iconCompat.g = (ColorStateList) vm7Var.g(iconCompat.g, 6);
-        String string = iconCompat.i;
-        if (vm7Var.e(7)) {
-            string = ((wm7) vm7Var).e.readString();
+        iconCompat.d = qh8Var.g(iconCompat.d, 3);
+        iconCompat.e = qh8Var.f(iconCompat.e, 4);
+        iconCompat.f = qh8Var.f(iconCompat.f, 5);
+        iconCompat.g = (ColorStateList) qh8Var.g(iconCompat.g, 6);
+        String str = iconCompat.i;
+        if (qh8Var.e(7)) {
+            str = ((rh8) qh8Var).e.readString();
         }
-        iconCompat.i = string;
-        String string2 = iconCompat.j;
-        if (vm7Var.e(8)) {
-            string2 = ((wm7) vm7Var).e.readString();
+        iconCompat.i = str;
+        String str2 = iconCompat.j;
+        if (qh8Var.e(8)) {
+            str2 = ((rh8) qh8Var).e.readString();
         }
-        iconCompat.j = string2;
+        iconCompat.j = str2;
         iconCompat.h = PorterDuff.Mode.valueOf(iconCompat.i);
         switch (iconCompat.a) {
             case -1:
@@ -59,7 +59,7 @@ public class IconCompatParcelizer {
                     iconCompat.b = parcelable;
                     return iconCompat;
                 }
-                fn.r("Invalid icon");
+                i60.p("Invalid icon");
                 return null;
             case 0:
             default:
@@ -80,10 +80,10 @@ public class IconCompatParcelizer {
             case 2:
             case 4:
             case 6:
-                String str = new String(iconCompat.c, Charset.forName("UTF-16"));
-                iconCompat.b = str;
+                String str3 = new String(iconCompat.c, Charset.forName("UTF-16"));
+                iconCompat.b = str3;
                 if (iconCompat.a == 2 && iconCompat.j == null) {
-                    iconCompat.j = str.split(":", -1)[0];
+                    iconCompat.j = str3.split(":", -1)[0];
                 }
                 return iconCompat;
             case 3:
@@ -92,8 +92,8 @@ public class IconCompatParcelizer {
         }
     }
 
-    public static void write(IconCompat iconCompat, vm7 vm7Var) {
-        vm7Var.getClass();
+    public static void write(IconCompat iconCompat, qh8 qh8Var) {
+        qh8Var.getClass();
         iconCompat.i = iconCompat.h.name();
         switch (iconCompat.a) {
             case -1:
@@ -116,42 +116,42 @@ public class IconCompatParcelizer {
         }
         int i = iconCompat.a;
         if (-1 != i) {
-            vm7Var.j(i, 1);
+            qh8Var.j(i, 1);
         }
         byte[] bArr = iconCompat.c;
         if (bArr != null) {
-            vm7Var.i(2);
-            Parcel parcel = ((wm7) vm7Var).e;
+            qh8Var.i(2);
+            Parcel parcel = ((rh8) qh8Var).e;
             parcel.writeInt(bArr.length);
             parcel.writeByteArray(bArr);
         }
         Parcelable parcelable = iconCompat.d;
         if (parcelable != null) {
-            vm7Var.i(3);
-            ((wm7) vm7Var).e.writeParcelable(parcelable, 0);
+            qh8Var.i(3);
+            ((rh8) qh8Var).e.writeParcelable(parcelable, 0);
         }
         int i2 = iconCompat.e;
         if (i2 != 0) {
-            vm7Var.j(i2, 4);
+            qh8Var.j(i2, 4);
         }
         int i3 = iconCompat.f;
         if (i3 != 0) {
-            vm7Var.j(i3, 5);
+            qh8Var.j(i3, 5);
         }
         ColorStateList colorStateList = iconCompat.g;
         if (colorStateList != null) {
-            vm7Var.i(6);
-            ((wm7) vm7Var).e.writeParcelable(colorStateList, 0);
+            qh8Var.i(6);
+            ((rh8) qh8Var).e.writeParcelable(colorStateList, 0);
         }
         String str = iconCompat.i;
         if (str != null) {
-            vm7Var.i(7);
-            ((wm7) vm7Var).e.writeString(str);
+            qh8Var.i(7);
+            ((rh8) qh8Var).e.writeString(str);
         }
         String str2 = iconCompat.j;
         if (str2 != null) {
-            vm7Var.i(8);
-            ((wm7) vm7Var).e.writeString(str2);
+            qh8Var.i(8);
+            ((rh8) qh8Var).e.writeString(str2);
         }
     }
 }

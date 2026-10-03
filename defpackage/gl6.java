@@ -1,77 +1,19 @@
 package defpackage;
 
-import j$.util.Objects;
-import java.io.Closeable;
-import java.io.Flushable;
-import java.io.IOException;
-import java.io.Writer;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class gl6 {
+    public final i0 a;
+    public final mi2 b;
+    public final p64 c;
+    public static final /* synthetic */ uo3[] e = {new om5(gl6.class, "scopeForOwnerModule", "getScopeForOwnerModule()Lorg/jetbrains/kotlin/resolve/scopes/MemberScope;", 0)};
+    public static final fp4 d = new fp4(23);
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class gl6 extends Writer {
-    public final StringBuilder Q;
-    public final fl6 R = new fl6();
-
-    public gl6(StringBuilder sb) {
-        this.Q = sb;
-    }
-
-    @Override // java.io.Writer, java.lang.Appendable
-    public final Writer append(CharSequence charSequence) {
-        this.Q.append(charSequence);
-        return this;
-    }
-
-    @Override // java.io.Writer, java.io.Closeable, java.lang.AutoCloseable
-    public final void close() throws IOException {
-        CharSequence charSequence = this.Q;
-        if (charSequence instanceof Closeable) {
-            ((Closeable) charSequence).close();
-        }
-    }
-
-    @Override // java.io.Writer, java.io.Flushable
-    public final void flush() throws IOException {
-        CharSequence charSequence = this.Q;
-        if (charSequence instanceof Flushable) {
-            ((Flushable) charSequence).flush();
-        }
-    }
-
-    @Override // java.io.Writer
-    public final void write(char[] cArr, int i, int i2) {
-        fl6 fl6Var = this.R;
-        fl6Var.Q = cArr;
-        fl6Var.R = null;
-        this.Q.append((CharSequence) fl6Var, i, i2 + i);
-    }
-
-    @Override // java.io.Writer, java.lang.Appendable
-    public final Appendable append(CharSequence charSequence) {
-        this.Q.append(charSequence);
-        return this;
-    }
-
-    @Override // java.io.Writer, java.lang.Appendable
-    public final Writer append(CharSequence charSequence, int i, int i2) {
-        this.Q.append(charSequence, i, i2);
-        return this;
-    }
-
-    @Override // java.io.Writer, java.lang.Appendable
-    public final Appendable append(CharSequence charSequence, int i, int i2) {
-        this.Q.append(charSequence, i, i2);
-        return this;
-    }
-
-    @Override // java.io.Writer
-    public final void write(String str, int i, int i2) {
-        Objects.requireNonNull(str);
-        this.Q.append((CharSequence) str, i, i2 + i);
-    }
-
-    @Override // java.io.Writer
-    public final void write(int i) {
-        this.Q.append((char) i);
+    public gl6(i0 i0Var, r64 r64Var, mi2 mi2Var) {
+        this.a = i0Var;
+        this.b = mi2Var;
+        fd3 fd3Var = new fd3(15, this);
+        r64Var.getClass();
+        this.c = new p64(r64Var, fd3Var);
     }
 }

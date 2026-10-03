@@ -1,81 +1,60 @@
 package defpackage;
 
-import java.nio.ByteBuffer;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Set;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class sd7 {
-    public static final ThreadLocal d = new ThreadLocal();
-    public final int a;
-    public final pv6 b;
-    public volatile int c = 0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class sd7 extends yi4 {
+    public final on4 b;
+    public final jf2 c;
 
-    public sd7(pv6 pv6Var, int i) {
-        this.b = pv6Var;
-        this.a = i;
+    public sd7(on4 on4Var, jf2 jf2Var) {
+        on4Var.getClass();
+        jf2Var.getClass();
+        this.b = on4Var;
+        this.c = jf2Var;
     }
 
-    public final int a(int i) {
-        d44 d44VarB = b();
-        int iA = d44VarB.a(16);
-        if (iA == 0) {
-            return 0;
-        }
-        ByteBuffer byteBuffer = (ByteBuffer) d44VarB.T;
-        int i2 = iA + d44VarB.Q;
-        return byteBuffer.getInt((i * 4) + byteBuffer.getInt(i2) + i2 + 4);
-    }
-
-    public final d44 b() {
-        ThreadLocal threadLocal = d;
-        d44 d44Var = (d44) threadLocal.get();
-        if (d44Var == null) {
-            d44Var = new d44();
-            threadLocal.set(d44Var);
-        }
-        e44 e44Var = (e44) this.b.b;
-        int iA = e44Var.a(6);
-        if (iA != 0) {
-            int i = iA + e44Var.Q;
-            int i2 = (this.a * 4) + ((ByteBuffer) e44Var.T).getInt(i) + i + 4;
-            int i3 = ((ByteBuffer) e44Var.T).getInt(i2) + i2;
-            ByteBuffer byteBuffer = (ByteBuffer) e44Var.T;
-            d44Var.T = byteBuffer;
-            if (byteBuffer != null) {
-                d44Var.Q = i3;
-                int i4 = i3 - byteBuffer.getInt(i3);
-                d44Var.R = i4;
-                d44Var.S = ((ByteBuffer) d44Var.T).getShort(i4);
-                return d44Var;
+    @Override // defpackage.yi4, defpackage.xi4
+    public final Collection a(kh1 kh1Var, mi2 mi2Var) {
+        kh1Var.getClass();
+        if (kh1Var.a(kh1.h)) {
+            jf2 jf2Var = this.c;
+            if (!jf2Var.a.c() || !kh1Var.a.contains(hh1.a)) {
+                on4 on4Var = this.b;
+                Collection u = on4Var.u(jf2Var, mi2Var);
+                ArrayList arrayList = new ArrayList(u.size());
+                Iterator it = u.iterator();
+                while (it.hasNext()) {
+                    pr4 g = ((jf2) it.next()).a.g();
+                    if (((Boolean) mi2Var.invoke(g)).booleanValue()) {
+                        uz3 uz3Var = null;
+                        if (!g.Y) {
+                            uz3 c0 = on4Var.c0(jf2Var.a(g));
+                            if (!((Boolean) hi4.A(c0.g0, uz3.i0[1])).booleanValue()) {
+                                uz3Var = c0;
+                            }
+                        }
+                        if (uz3Var != null) {
+                            arrayList.add(uz3Var);
+                        }
+                    }
+                }
+                return arrayList;
             }
-            d44Var.Q = 0;
-            d44Var.R = 0;
-            d44Var.S = 0;
         }
-        return d44Var;
+        return fw1.X;
+    }
+
+    @Override // defpackage.yi4, defpackage.xi4
+    public final Set d() {
+        return ow1.X;
     }
 
     public final String toString() {
-        int i;
-        StringBuilder sb = new StringBuilder();
-        sb.append(super.toString());
-        sb.append(", id:");
-        d44 d44VarB = b();
-        int iA = d44VarB.a(4);
-        sb.append(Integer.toHexString(iA != 0 ? ((ByteBuffer) d44VarB.T).getInt(iA + d44VarB.Q) : 0));
-        sb.append(", codepoints:");
-        d44 d44VarB2 = b();
-        int iA2 = d44VarB2.a(16);
-        if (iA2 != 0) {
-            int i2 = iA2 + d44VarB2.Q;
-            i = ((ByteBuffer) d44VarB2.T).getInt(((ByteBuffer) d44VarB2.T).getInt(i2) + i2);
-        } else {
-            i = 0;
-        }
-        for (int i3 = 0; i3 < i; i3++) {
-            sb.append(Integer.toHexString(a(i3)));
-            sb.append(" ");
-        }
-        return sb.toString();
+        return "subpackages of " + this.c + " from " + this.b;
     }
 }

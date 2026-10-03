@@ -1,6 +1,6 @@
 .class abstract Lorg/conscrypt/AbstractConscryptSocket;
 .super Ljavax/net/ssl/SSLSocket;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -354,17 +354,17 @@
 
     .line 6
     .line 7
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 8
-    return v0
+    return p0
 
     .line 9
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 10
-    return v0
+    return p0
 .end method
 
 
@@ -397,11 +397,11 @@
     .line 9
     .line 10
     .line 11
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->listeners:Ljava/util/List;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->listeners:Ljava/util/List;
 
     .line 12
     .line 13
-    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 14
     .line 15
@@ -430,11 +430,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Ljava/net/Socket;->bind(Ljava/net/SocketAddress;)V
+    invoke-virtual {p0, p1}, Ljava/net/Socket;->bind(Ljava/net/SocketAddress;)V
 
     .line 10
     .line 11
@@ -443,7 +443,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1}, Ljavax/net/ssl/SSLSocket;->bind(Ljava/net/SocketAddress;)V
+    invoke-super {p0, p1}, Ljava/net/Socket;->bind(Ljava/net/SocketAddress;)V
 
     .line 14
     .line 15
@@ -452,7 +452,7 @@
 .end method
 
 .method public final checkOpen()V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -465,10 +465,10 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 6
     .line 7
@@ -476,20 +476,20 @@
 
     .line 8
     :cond_0
-    new-instance v0, Ljava/net/SocketException;
+    new-instance p0, Ljava/net/SocketException;
 
     .line 9
     .line 10
-    const-string v1, "Socket is closed"
+    const-string v0, "Socket is closed"
 
     .line 11
     .line 12
-    invoke-direct {v0, v1}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    throw v0
+    throw p0
 .end method
 
 .method public close()V
@@ -537,11 +537,11 @@
 
     .line 18
     .line 19
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 20
     .line 21
-    invoke-virtual {v0}, Ljava/net/Socket;->close()V
+    invoke-virtual {p0}, Ljava/net/Socket;->close()V
 
     .line 22
     .line 23
@@ -550,7 +550,7 @@
 
     .line 25
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->isClosed()Z
+    invoke-super {p0}, Ljava/net/Socket;->isClosed()Z
 
     .line 26
     .line 27
@@ -562,7 +562,7 @@
 
     .line 30
     .line 31
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->close()V
+    invoke-super {p0}, Ljava/net/Socket;->close()V
 
     .line 32
     .line 33
@@ -644,11 +644,11 @@
 
     .line 23
     .line 24
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 25
     .line 26
-    invoke-virtual {v0, p1, p2}, Ljava/net/Socket;->connect(Ljava/net/SocketAddress;I)V
+    invoke-virtual {p0, p1, p2}, Ljava/net/Socket;->connect(Ljava/net/SocketAddress;I)V
 
     .line 27
     .line 28
@@ -657,7 +657,7 @@
 
     .line 30
     :cond_1
-    invoke-super {p0, p1, p2}, Ljavax/net/ssl/SSLSocket;->connect(Ljava/net/SocketAddress;I)V
+    invoke-super {p0, p1, p2}, Ljava/net/Socket;->connect(Ljava/net/SocketAddress;I)V
 
     .line 31
     .line 32
@@ -688,21 +688,13 @@
 .end method
 
 .method public getChannel()Ljava/nio/channels/SocketChannel;
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
-.end method
-
-.method public abstract getChannelId()[B
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljavax/net/ssl/SSLException;
-        }
-    .end annotation
+    return-object p0
 .end method
 
 .method public abstract getCurveNameForTesting()Ljava/lang/String;
@@ -724,19 +716,19 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-static {v0}, Lorg/conscrypt/Platform;->getFileDescriptor(Ljava/net/Socket;)Ljava/io/FileDescriptor;
+    invoke-static {p0}, Lorg/conscrypt/Platform;->getFileDescriptor(Ljava/net/Socket;)Ljava/io/FileDescriptor;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
@@ -745,10 +737,10 @@
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public abstract getHandshakeApplicationProtocol()Ljava/lang/String;
@@ -758,14 +750,14 @@
 .end method
 
 .method public getHostname()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->peerHostname:Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->peerHostname:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getHostnameOrIP()Ljava/lang/String;
@@ -789,29 +781,29 @@
     .line 7
     .line 8
     .line 9
-    move-result-object v0
+    move-result-object p0
 
     .line 10
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 11
     .line 12
-    invoke-static {v0}, Lorg/conscrypt/Platform;->getOriginalHostNameFromInetAddress(Ljava/net/InetAddress;)Ljava/lang/String;
+    invoke-static {p0}, Lorg/conscrypt/Platform;->getOriginalHostNameFromInetAddress(Ljava/net/InetAddress;)Ljava/lang/String;
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    return-object v0
+    return-object p0
 
     .line 17
     :cond_1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public getInetAddress()Ljava/net/InetAddress;
@@ -830,31 +822,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getInetAddress()Ljava/net/InetAddress;
+    invoke-virtual {p0}, Ljava/net/Socket;->getInetAddress()Ljava/net/InetAddress;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getInetAddress()Ljava/net/InetAddress;
+    invoke-super {p0}, Ljava/net/Socket;->getInetAddress()Ljava/net/InetAddress;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public getInputStream()Ljava/io/InputStream;
@@ -878,31 +870,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getInputStream()Ljava/io/InputStream;
+    invoke-virtual {p0}, Ljava/net/Socket;->getInputStream()Ljava/io/InputStream;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getInputStream()Ljava/io/InputStream;
+    invoke-super {p0}, Ljava/net/Socket;->getInputStream()Ljava/io/InputStream;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public getKeepAlive()Z
@@ -926,31 +918,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getKeepAlive()Z
+    invoke-virtual {p0}, Ljava/net/Socket;->getKeepAlive()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getKeepAlive()Z
+    invoke-super {p0}, Ljava/net/Socket;->getKeepAlive()Z
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public getLocalAddress()Ljava/net/InetAddress;
@@ -969,31 +961,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getLocalAddress()Ljava/net/InetAddress;
+    invoke-virtual {p0}, Ljava/net/Socket;->getLocalAddress()Ljava/net/InetAddress;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getLocalAddress()Ljava/net/InetAddress;
+    invoke-super {p0}, Ljava/net/Socket;->getLocalAddress()Ljava/net/InetAddress;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public getLocalPort()I
@@ -1012,31 +1004,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getLocalPort()I
+    invoke-virtual {p0}, Ljava/net/Socket;->getLocalPort()I
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getLocalPort()I
+    invoke-super {p0}, Ljava/net/Socket;->getLocalPort()I
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public getLocalSocketAddress()Ljava/net/SocketAddress;
@@ -1055,35 +1047,35 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getLocalSocketAddress()Ljava/net/SocketAddress;
+    invoke-virtual {p0}, Ljava/net/Socket;->getLocalSocketAddress()Ljava/net/SocketAddress;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getLocalSocketAddress()Ljava/net/SocketAddress;
+    invoke-super {p0}, Ljava/net/Socket;->getLocalSocketAddress()Ljava/net/SocketAddress;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public getOOBInline()Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -1091,10 +1083,10 @@
     .end annotation
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public getOutputStream()Ljava/io/OutputStream;
@@ -1118,31 +1110,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {p0}, Ljava/net/Socket;->getOutputStream()Ljava/io/OutputStream;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getOutputStream()Ljava/io/OutputStream;
+    invoke-super {p0}, Ljava/net/Socket;->getOutputStream()Ljava/io/OutputStream;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getPort()I
@@ -1161,19 +1153,19 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getPort()I
+    invoke-virtual {p0}, Ljava/net/Socket;->getPort()I
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
@@ -1192,15 +1184,15 @@
 
     .line 20
     :cond_1
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getPort()I
+    invoke-super {p0}, Ljava/net/Socket;->getPort()I
 
     .line 21
     .line 22
     .line 23
-    move-result v0
+    move-result p0
 
     .line 24
-    return v0
+    return p0
 .end method
 
 .method public getReceiveBufferSize()I
@@ -1224,31 +1216,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getReceiveBufferSize()I
+    invoke-virtual {p0}, Ljava/net/Socket;->getReceiveBufferSize()I
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getReceiveBufferSize()I
+    invoke-super {p0}, Ljava/net/Socket;->getReceiveBufferSize()I
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public getRemoteSocketAddress()Ljava/net/SocketAddress;
@@ -1267,31 +1259,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getRemoteSocketAddress()Ljava/net/SocketAddress;
+    invoke-virtual {p0}, Ljava/net/Socket;->getRemoteSocketAddress()Ljava/net/SocketAddress;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getRemoteSocketAddress()Ljava/net/SocketAddress;
+    invoke-super {p0}, Ljava/net/Socket;->getRemoteSocketAddress()Ljava/net/SocketAddress;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    move-result-object p0
 
     .line 18
-    return-object v0
+    return-object p0
 .end method
 
 .method public getReuseAddress()Z
@@ -1315,31 +1307,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getReuseAddress()Z
+    invoke-virtual {p0}, Ljava/net/Socket;->getReuseAddress()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getReuseAddress()Z
+    invoke-super {p0}, Ljava/net/Socket;->getReuseAddress()Z
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public getSendBufferSize()I
@@ -1363,31 +1355,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getSendBufferSize()I
+    invoke-virtual {p0}, Ljava/net/Socket;->getSendBufferSize()I
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getSendBufferSize()I
+    invoke-super {p0}, Ljava/net/Socket;->getSendBufferSize()I
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public getSoLinger()I
@@ -1411,31 +1403,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getSoLinger()I
+    invoke-virtual {p0}, Ljava/net/Socket;->getSoLinger()I
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getSoLinger()I
+    invoke-super {p0}, Ljava/net/Socket;->getSoLinger()I
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public final getSoTimeout()I
@@ -1459,31 +1451,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getSoTimeout()I
+    invoke-virtual {p0}, Ljava/net/Socket;->getSoTimeout()I
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    iget v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->readTimeoutMilliseconds:I
+    iget p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->readTimeoutMilliseconds:I
 
     .line 15
     .line 16
-    return v0
+    return p0
 .end method
 
 .method public getSoWriteTimeout()I
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -1491,10 +1483,10 @@
     .end annotation
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public getTcpNoDelay()Z
@@ -1518,31 +1510,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getTcpNoDelay()Z
+    invoke-virtual {p0}, Ljava/net/Socket;->getTcpNoDelay()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getTcpNoDelay()Z
+    invoke-super {p0}, Ljava/net/Socket;->getTcpNoDelay()Z
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public abstract getTlsUnique()[B
@@ -1569,31 +1561,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->getTrafficClass()I
+    invoke-virtual {p0}, Ljava/net/Socket;->getTrafficClass()I
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->getTrafficClass()I
+    invoke-super {p0}, Ljava/net/Socket;->getTrafficClass()I
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public isBound()Z
@@ -1612,31 +1604,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->isBound()Z
+    invoke-virtual {p0}, Ljava/net/Socket;->isBound()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->isBound()Z
+    invoke-super {p0}, Ljava/net/Socket;->isBound()Z
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public isClosed()Z
@@ -1655,31 +1647,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->isClosed()Z
+    invoke-virtual {p0}, Ljava/net/Socket;->isClosed()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->isClosed()Z
+    invoke-super {p0}, Ljava/net/Socket;->isClosed()Z
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public isConnected()Z
@@ -1698,31 +1690,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->isConnected()Z
+    invoke-virtual {p0}, Ljava/net/Socket;->isConnected()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->isConnected()Z
+    invoke-super {p0}, Ljava/net/Socket;->isConnected()Z
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public isInputShutdown()Z
@@ -1741,31 +1733,31 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->isInputShutdown()Z
+    invoke-virtual {p0}, Ljava/net/Socket;->isInputShutdown()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->isInputShutdown()Z
+    invoke-super {p0}, Ljava/net/Socket;->isInputShutdown()Z
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public isOutputShutdown()Z
@@ -1784,35 +1776,35 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->isOutputShutdown()Z
+    invoke-virtual {p0}, Ljava/net/Socket;->isOutputShutdown()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->isOutputShutdown()Z
+    invoke-super {p0}, Ljava/net/Socket;->isOutputShutdown()Z
 
     .line 15
     .line 16
     .line 17
-    move-result v0
+    move-result p0
 
     .line 18
-    return v0
+    return p0
 .end method
 
 .method public final notifyHandshakeCompletedListeners()V
-    .locals 5
+    .locals 4
 
     .line 1
     new-instance v0, Ljava/util/ArrayList;
@@ -1862,36 +1854,36 @@
     .line 24
     .line 25
     .line 26
-    move-result-object v0
+    move-result-object p0
 
     .line 27
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 28
     .line 29
     .line 30
-    move-result v2
+    move-result v0
 
     .line 31
-    if-eqz v2, :cond_0
+    if-eqz v0, :cond_0
 
     .line 32
     .line 33
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 34
     .line 35
     .line 36
-    move-result-object v2
+    move-result-object v0
 
     .line 37
-    check-cast v2, Ljavax/net/ssl/HandshakeCompletedListener;
+    check-cast v0, Ljavax/net/ssl/HandshakeCompletedListener;
 
     .line 38
     .line 39
     :try_start_0
-    invoke-interface {v2, v1}, Ljavax/net/ssl/HandshakeCompletedListener;->handshakeCompleted(Ljavax/net/ssl/HandshakeCompletedEvent;)V
+    invoke-interface {v0, v1}, Ljavax/net/ssl/HandshakeCompletedListener;->handshakeCompleted(Ljavax/net/ssl/HandshakeCompletedEvent;)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1902,7 +1894,7 @@
 
     .line 43
     :catch_0
-    move-exception v2
+    move-exception v0
 
     .line 44
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -1910,18 +1902,18 @@
     .line 45
     .line 46
     .line 47
-    move-result-object v3
+    move-result-object v2
 
     .line 48
-    invoke-virtual {v3}, Ljava/lang/Thread;->getUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
+    invoke-virtual {v2}, Ljava/lang/Thread;->getUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
     .line 49
     .line 50
     .line 51
-    move-result-object v4
+    move-result-object v3
 
     .line 52
-    invoke-interface {v4, v3, v2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
+    invoke-interface {v3, v2, v0}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     .line 53
     .line 54
@@ -1934,14 +1926,14 @@
 .end method
 
 .method public final peerInfoProvider()Lorg/conscrypt/PeerInfoProvider;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->peerInfoProvider:Lorg/conscrypt/PeerInfoProvider;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->peerInfoProvider:Lorg/conscrypt/PeerInfoProvider;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public removeHandshakeCompletedListener(Ljavax/net/ssl/HandshakeCompletedListener;)V
@@ -1972,19 +1964,19 @@
     .line 9
     .line 10
     .line 11
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->listeners:Ljava/util/List;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->listeners:Ljava/util/List;
 
     .line 12
     .line 13
-    invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 14
     .line 15
     .line 16
-    move-result p1
+    move-result p0
 
     .line 17
-    if-eqz p1, :cond_1
+    if-eqz p0, :cond_1
 
     .line 18
     .line 19
@@ -1992,11 +1984,11 @@
 
     .line 20
     :cond_1
-    const-string p1, "Provided listener is not registered"
+    const-string p0, "Provided listener is not registered"
 
     .line 21
     .line 22
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 23
     .line 24
@@ -2005,7 +1997,7 @@
 .end method
 
 .method public final sendUrgentData(I)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2013,20 +2005,20 @@
     .end annotation
 
     .line 1
-    new-instance p1, Ljava/net/SocketException;
+    new-instance p0, Ljava/net/SocketException;
 
     .line 2
     .line 3
-    const-string v0, "Method sendUrgentData() is not supported."
+    const-string p1, "Method sendUrgentData() is not supported."
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method public abstract setAlpnProtocols([B)V
@@ -2048,14 +2040,11 @@
 .method public abstract setApplicationProtocols([Ljava/lang/String;)V
 .end method
 
-.method public abstract setChannelIdEnabled(Z)V
-.end method
-
-.method public abstract setChannelIdPrivateKey(Ljava/security/PrivateKey;)V
+.method public abstract setEchConfigList([B)V
 .end method
 
 .method public setHandshakeTimeout(I)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -2063,20 +2052,20 @@
     .end annotation
 
     .line 1
-    new-instance p1, Ljava/net/SocketException;
+    new-instance p0, Ljava/net/SocketException;
 
     .line 2
     .line 3
-    const-string v0, "Method setHandshakeTimeout() is not supported."
+    const-string p1, "Method setHandshakeTimeout() is not supported."
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method public setHostname(Ljava/lang/String;)V
@@ -2111,11 +2100,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Ljava/net/Socket;->setKeepAlive(Z)V
+    invoke-virtual {p0, p1}, Ljava/net/Socket;->setKeepAlive(Z)V
 
     .line 10
     .line 11
@@ -2124,7 +2113,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1}, Ljavax/net/ssl/SSLSocket;->setKeepAlive(Z)V
+    invoke-super {p0, p1}, Ljava/net/Socket;->setKeepAlive(Z)V
 
     .line 14
     .line 15
@@ -2136,7 +2125,7 @@
 .end method
 
 .method public final setOOBInline(Z)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -2144,20 +2133,20 @@
     .end annotation
 
     .line 1
-    new-instance p1, Ljava/net/SocketException;
+    new-instance p0, Ljava/net/SocketException;
 
     .line 2
     .line 3
-    const-string v0, "Method setOOBInline() is not supported."
+    const-string p1, "Method setOOBInline() is not supported."
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method public setPerformancePreferences(III)V
@@ -2176,11 +2165,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1, p2, p3}, Ljava/net/Socket;->setPerformancePreferences(III)V
+    invoke-virtual {p0, p1, p2, p3}, Ljava/net/Socket;->setPerformancePreferences(III)V
 
     .line 10
     .line 11
@@ -2189,7 +2178,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Ljavax/net/ssl/SSLSocket;->setPerformancePreferences(III)V
+    invoke-super {p0, p1, p2, p3}, Ljava/net/Socket;->setPerformancePreferences(III)V
 
     .line 14
     .line 15
@@ -2218,11 +2207,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Ljava/net/Socket;->setReceiveBufferSize(I)V
+    invoke-virtual {p0, p1}, Ljava/net/Socket;->setReceiveBufferSize(I)V
 
     .line 10
     .line 11
@@ -2231,7 +2220,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1}, Ljavax/net/ssl/SSLSocket;->setReceiveBufferSize(I)V
+    invoke-super {p0, p1}, Ljava/net/Socket;->setReceiveBufferSize(I)V
 
     .line 14
     .line 15
@@ -2260,11 +2249,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Ljava/net/Socket;->setReuseAddress(Z)V
+    invoke-virtual {p0, p1}, Ljava/net/Socket;->setReuseAddress(Z)V
 
     .line 10
     .line 11
@@ -2273,7 +2262,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1}, Ljavax/net/ssl/SSLSocket;->setReuseAddress(Z)V
+    invoke-super {p0, p1}, Ljava/net/Socket;->setReuseAddress(Z)V
 
     .line 14
     .line 15
@@ -2302,11 +2291,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Ljava/net/Socket;->setSendBufferSize(I)V
+    invoke-virtual {p0, p1}, Ljava/net/Socket;->setSendBufferSize(I)V
 
     .line 10
     .line 11
@@ -2315,7 +2304,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1}, Ljavax/net/ssl/SSLSocket;->setSendBufferSize(I)V
+    invoke-super {p0, p1}, Ljava/net/Socket;->setSendBufferSize(I)V
 
     .line 14
     .line 15
@@ -2344,11 +2333,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1, p2}, Ljava/net/Socket;->setSoLinger(ZI)V
+    invoke-virtual {p0, p1, p2}, Ljava/net/Socket;->setSoLinger(ZI)V
 
     .line 10
     .line 11
@@ -2357,7 +2346,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1, p2}, Ljavax/net/ssl/SSLSocket;->setSoLinger(ZI)V
+    invoke-super {p0, p1, p2}, Ljava/net/Socket;->setSoLinger(ZI)V
 
     .line 14
     .line 15
@@ -2386,11 +2375,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Ljava/net/Socket;->setSoTimeout(I)V
+    invoke-virtual {p0, p1}, Ljava/net/Socket;->setSoTimeout(I)V
 
     .line 10
     .line 11
@@ -2399,7 +2388,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1}, Ljavax/net/ssl/SSLSocket;->setSoTimeout(I)V
+    invoke-super {p0, p1}, Ljava/net/Socket;->setSoTimeout(I)V
 
     .line 14
     .line 15
@@ -2412,7 +2401,7 @@
 .end method
 
 .method public setSoWriteTimeout(I)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -2420,20 +2409,20 @@
     .end annotation
 
     .line 1
-    new-instance p1, Ljava/net/SocketException;
+    new-instance p0, Ljava/net/SocketException;
 
     .line 2
     .line 3
-    const-string v0, "Method setSoWriteTimeout() is not supported."
+    const-string p1, "Method setSoWriteTimeout() is not supported."
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/net/SocketException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method public setTcpNoDelay(Z)V
@@ -2457,11 +2446,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Ljava/net/Socket;->setTcpNoDelay(Z)V
+    invoke-virtual {p0, p1}, Ljava/net/Socket;->setTcpNoDelay(Z)V
 
     .line 10
     .line 11
@@ -2470,7 +2459,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1}, Ljavax/net/ssl/SSLSocket;->setTcpNoDelay(Z)V
+    invoke-super {p0, p1}, Ljava/net/Socket;->setTcpNoDelay(Z)V
 
     .line 14
     .line 15
@@ -2499,11 +2488,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Ljava/net/Socket;->setTrafficClass(I)V
+    invoke-virtual {p0, p1}, Ljava/net/Socket;->setTrafficClass(I)V
 
     .line 10
     .line 11
@@ -2512,7 +2501,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0, p1}, Ljavax/net/ssl/SSLSocket;->setTrafficClass(I)V
+    invoke-super {p0, p1}, Ljava/net/Socket;->setTrafficClass(I)V
 
     .line 14
     .line 15
@@ -2544,11 +2533,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->shutdownInput()V
+    invoke-virtual {p0}, Ljava/net/Socket;->shutdownInput()V
 
     .line 10
     .line 11
@@ -2557,7 +2546,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->shutdownInput()V
+    invoke-super {p0}, Ljava/net/Socket;->shutdownInput()V
 
     .line 14
     .line 15
@@ -2586,11 +2575,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/net/Socket;->shutdownOutput()V
+    invoke-virtual {p0}, Ljava/net/Socket;->shutdownOutput()V
 
     .line 10
     .line 11
@@ -2599,7 +2588,7 @@
 
     .line 13
     :cond_0
-    invoke-super {p0}, Ljavax/net/ssl/SSLSocket;->shutdownOutput()V
+    invoke-super {p0}, Ljava/net/Socket;->shutdownOutput()V
 
     .line 14
     .line 15
@@ -2636,19 +2625,19 @@
 
     .line 13
     .line 14
-    iget-object v1, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
+    iget-object p0, p0, Lorg/conscrypt/AbstractConscryptSocket;->socket:Ljava/net/Socket;
 
     .line 15
     .line 16
-    invoke-virtual {v1}, Ljava/net/Socket;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/net/Socket;->toString()Ljava/lang/String;
 
     .line 17
     .line 18
     .line 19
-    move-result-object v1
+    move-result-object p0
 
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
@@ -2662,10 +2651,10 @@
     .line 25
     .line 26
     .line 27
-    move-result-object v1
+    move-result-object p0
 
     .line 28
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 29
     .line 30
@@ -2676,8 +2665,8 @@
     .line 32
     .line 33
     .line 34
-    move-result-object v0
+    move-result-object p0
 
     .line 35
-    return-object v0
+    return-object p0
 .end method

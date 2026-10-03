@@ -1,26 +1,57 @@
-.class public interface abstract Ltn7;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Ltn7;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# instance fields
+.field public c0:Lsl7;
+
+.field public d0:Lff5;
+
+.field public e0:Z
+
+.field public synthetic f0:Ljava/lang/Object;
+
+.field public g0:I
 
 
 # virtual methods
-.method public abstract a()J
-.end method
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-.method public abstract b()J
-.end method
+    .line 1
+    iput-object p1, p0, Ltn7;->f0:Ljava/lang/Object;
 
-.method public abstract c()F
-.end method
+    .line 2
+    .line 3
+    iget p1, p0, Ltn7;->g0:I
 
-.method public abstract d()J
-.end method
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
 
-.method public abstract e()F
-.end method
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
 
-.method public abstract f()F
-.end method
+    .line 8
+    iput p1, p0, Ltn7;->g0:I
 
-.method public abstract g()F
+    .line 9
+    .line 10
+    const/4 p1, 0x0
+
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    invoke-static {p1, v0, p1, p0}, Lco7;->b(Lsl7;ZLff5;Lg00;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
 .end method

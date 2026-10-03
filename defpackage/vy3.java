@@ -1,74 +1,55 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum vy3 implements gs0 {
-    USE_ANNOTATIONS(true),
-    /* JADX INFO: Fake field, exist only in values array */
-    ACCEPT_CASE_INSENSITIVE_PROPERTIES(true),
-    PROPAGATE_TRANSIENT_MARKER(false),
-    AUTO_DETECT_CREATORS(true),
-    AUTO_DETECT_FIELDS(true),
-    AUTO_DETECT_GETTERS(true),
-    AUTO_DETECT_IS_GETTERS(true),
-    AUTO_DETECT_SETTERS(true),
-    REQUIRE_SETTERS_FOR_GETTERS(false),
-    /* JADX INFO: Fake field, exist only in values array */
-    ALLOW_FINAL_FIELDS_AS_MUTATORS(true),
-    INFER_PROPERTY_MUTATORS(true),
-    INFER_CREATOR_FROM_CONSTRUCTOR_PROPERTIES(true),
-    ALLOW_IS_GETTERS_FOR_NON_BOOLEAN(false),
-    ALLOW_VOID_VALUED_PROPERTIES(false),
-    CAN_OVERRIDE_ACCESS_MODIFIERS(true),
-    OVERRIDE_PUBLIC_ACCESS_MODIFIERS(true),
-    INVERSE_READ_WRITE_ACCESS(false),
-    USE_STATIC_TYPING(false),
-    /* JADX INFO: Fake field, exist only in values array */
-    USE_BASE_TYPE_AS_DEFAULT_IMPL(false),
-    /* JADX INFO: Fake field, exist only in values array */
-    APPLY_DEFAULT_VALUES(true),
-    /* JADX INFO: Fake field, exist only in values array */
-    ACCEPT_CASE_INSENSITIVE_PROPERTIES(true),
-    DEFAULT_VIEW_INCLUSION(true),
-    SORT_PROPERTIES_ALPHABETICALLY(false),
-    SORT_CREATOR_PROPERTIES_FIRST(true),
-    SORT_CREATOR_PROPERTIES_BY_DECLARATION_ORDER(false),
-    SORT_PROPERTIES_BY_INDEX(true),
-    /* JADX INFO: Fake field, exist only in values array */
-    ACCEPT_CASE_INSENSITIVE_PROPERTIES(false),
-    /* JADX INFO: Fake field, exist only in values array */
-    ALLOW_EXPLICIT_PROPERTY_RENAMING(false),
-    ACCEPT_CASE_INSENSITIVE_VALUES(false),
-    USE_WRAPPER_NAME_AS_PROPERTY_NAME(false),
-    USE_STD_BEAN_NAMING(false),
-    /* JADX INFO: Fake field, exist only in values array */
-    ALLOW_EXPLICIT_PROPERTY_RENAMING(false),
-    FIX_FIELD_NAME_UPPER_CASE_PREFIX(false),
-    /* JADX INFO: Fake field, exist only in values array */
-    APPLY_DEFAULT_VALUES(true),
-    IGNORE_DUPLICATE_MODULE_REGISTRATIONS(true),
-    /* JADX INFO: Fake field, exist only in values array */
-    APPLY_DEFAULT_VALUES(true),
-    BLOCK_UNSAFE_POLYMORPHIC_BASE_TYPES(false),
-    /* JADX INFO: Fake field, exist only in values array */
-    APPLY_DEFAULT_VALUES(true),
-    REQUIRE_HANDLERS_FOR_JAVA8_OPTIONALS(true),
-    REQUIRE_HANDLERS_FOR_JAVA8_TIMES(true);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class vy3 {
+    public final Object a;
+    public final wy3 b;
+    public int d;
+    public vy3 e;
+    public boolean f;
+    public int c = -1;
+    public final x65 g = d01.J(null);
 
-    public final boolean Q;
-    public final long R = 1 << ordinal();
-
-    vy3(boolean z) {
-        this.Q = z;
+    public vy3(Object obj, wy3 wy3Var) {
+        this.a = obj;
+        this.b = wy3Var;
     }
 
-    @Override // defpackage.gs0
-    public final boolean a() {
-        return this.Q;
+    public final vy3 a() {
+        if (this.f) {
+            j53.c("Pin should not be called on an already disposed item ");
+        }
+        if (this.d == 0) {
+            this.b.X.add(this);
+            vy3 vy3Var = (vy3) this.g.getValue();
+            if (vy3Var != null) {
+                vy3Var.a();
+            } else {
+                vy3Var = null;
+            }
+            this.e = vy3Var;
+        }
+        this.d++;
+        return this;
     }
 
-    @Override // defpackage.gs0
-    public final int b() {
-        return (int) this.R;
+    public final void b() {
+        if (this.f) {
+            return;
+        }
+        if (this.d <= 0) {
+            j53.c("Release should only be called once");
+        }
+        int i = this.d - 1;
+        this.d = i;
+        if (i == 0) {
+            this.b.X.remove(this);
+            vy3 vy3Var = this.e;
+            if (vy3Var != null) {
+                vy3Var.b();
+            }
+            this.e = null;
+        }
     }
 }

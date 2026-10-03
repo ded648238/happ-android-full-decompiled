@@ -1,32 +1,20 @@
 package defpackage;
 
-import java.util.Arrays;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class xq3 extends fr3 {
+    public abstract Object a();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class xq3 extends uz4 {
-    public long[] a;
-    public int b;
-
-    @Override // defpackage.uz4
-    public final Object a() {
-        return Arrays.copyOf(this.a, this.b);
-    }
-
-    @Override // defpackage.uz4
-    public final void b(int i) {
-        long[] jArr = this.a;
-        if (jArr.length < i) {
-            int length = jArr.length * 2;
-            if (i < length) {
-                i = length;
-            }
-            this.a = Arrays.copyOf(jArr, i);
+    public final String toString() {
+        String obj;
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append('(');
+        if (this instanceof ar3) {
+            obj = "\"" + ((Object) ((ar3) this).a) + '\"';
+        } else {
+            obj = a().toString();
         }
-    }
-
-    @Override // defpackage.uz4
-    public final int d() {
-        return this.b;
+        return eh0.q(sb, obj, ')');
     }
 }

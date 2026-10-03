@@ -1,27 +1,24 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class x64 {
-    public static final /* synthetic */ x64[] Q;
-    public static final /* synthetic */ rp1 R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public enum x64 implements jp5 {
+    REASON_UNKNOWN(0),
+    MESSAGE_TOO_OLD(1),
+    CACHE_FULL(2),
+    PAYLOAD_TOO_BIG(3),
+    MAX_RETRIES_REACHED(4),
+    INVALID_PAYLOD(5),
+    SERVER_ERROR(6);
 
-    /* JADX INFO: Fake field, exist only in values array */
-    x64 EF5;
+    public final int X;
 
-    static {
-        x64[] x64VarArr = {new x64("JANUARY", 0), new x64("FEBRUARY", 1), new x64("MARCH", 2), new x64("APRIL", 3), new x64("MAY", 4), new x64("JUNE", 5), new x64("JULY", 6), new x64("AUGUST", 7), new x64("SEPTEMBER", 8), new x64("OCTOBER", 9), new x64("NOVEMBER", 10), new x64("DECEMBER", 11)};
-        Q = x64VarArr;
-        R = new rp1(x64VarArr);
+    x64(int i) {
+        this.X = i;
     }
 
-    public static x64 valueOf(String str) {
-        return (x64) Enum.valueOf(x64.class, str);
-    }
-
-    public static x64[] values() {
-        return (x64[]) Q.clone();
+    @Override // defpackage.jp5
+    public final int a() {
+        return this.X;
     }
 }

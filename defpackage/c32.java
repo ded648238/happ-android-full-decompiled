@@ -1,27 +1,12 @@
 package defpackage;
 
-import j$.util.Objects;
 import java.util.List;
+import java.util.Map;
+import kotlin.Metadata;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class c32 {
-    public String a;
-    public String b;
-    public List c;
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof c32)) {
-            return false;
-        }
-        c32 c32Var = (c32) obj;
-        return Objects.equals(this.a, c32Var.a) && Objects.equals(this.b, c32Var.b) && Objects.equals(this.c, c32Var.c);
-    }
-
-    public final int hashCode() {
-        return Objects.hash(new Object[]{this.a, this.b, this.c});
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\b\n\u0018\u00002\u001e\u0012\u001a\u0012\u0018\u0012\u0004\u0012\u00020\u0003\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u00040\u0002j\u0002`\u00050\u0001¨\u0006\u0006"}, d2 = {"Lc32;", "Lm58;", HttpUrl.FRAGMENT_ENCODE_SET, HttpUrl.FRAGMENT_ENCODE_SET, HttpUrl.FRAGMENT_ENCODE_SET, "Lsu/happ/proxyutility/domain/check_extra/ProviderMap;", "app"}, k = 1, mv = {2, 4, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class c32 extends m58<Map<String, ? extends List<? extends String>>> {
 }

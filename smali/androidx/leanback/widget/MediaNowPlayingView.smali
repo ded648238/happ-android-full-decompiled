@@ -1,20 +1,20 @@
 .class public Landroidx/leanback/widget/MediaNowPlayingView;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Landroid/widget/ImageView;
+.field public final c0:Landroid/widget/ImageView;
 
-.field public final R:Landroid/widget/ImageView;
+.field public final d0:Landroid/widget/ImageView;
 
-.field public final S:Landroid/widget/ImageView;
+.field public final e0:Landroid/widget/ImageView;
 
-.field public final T:Landroid/animation/ObjectAnimator;
+.field public final f0:Landroid/animation/ObjectAnimator;
 
-.field public final U:Landroid/animation/ObjectAnimator;
+.field public final g0:Landroid/animation/ObjectAnimator;
 
-.field public final V:Landroid/animation/ObjectAnimator;
+.field public final h0:Landroid/animation/ObjectAnimator;
 
 
 # direct methods
@@ -44,7 +44,7 @@
     move-result-object p1
 
     .line 13
-    sget v0, Lq95;->lb_playback_now_playing_bars:I
+    sget v0, Lqt5;->lb_playback_now_playing_bars:I
 
     .line 14
     .line 15
@@ -56,7 +56,7 @@
     .line 17
     .line 18
     .line 19
-    sget p1, Lv85;->bar1:I
+    sget p1, Lus5;->bar1:I
 
     .line 20
     .line 21
@@ -72,11 +72,11 @@
 
     .line 26
     .line 27
-    iput-object p1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->Q:Landroid/widget/ImageView;
+    iput-object p1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->c0:Landroid/widget/ImageView;
 
     .line 28
     .line 29
-    sget v0, Lv85;->bar2:I
+    sget v0, Lus5;->bar2:I
 
     .line 30
     .line 31
@@ -92,11 +92,11 @@
 
     .line 36
     .line 37
-    iput-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->R:Landroid/widget/ImageView;
+    iput-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->d0:Landroid/widget/ImageView;
 
     .line 38
     .line 39
-    sget v1, Lv85;->bar3:I
+    sget v1, Lus5;->bar3:I
 
     .line 40
     .line 41
@@ -112,7 +112,7 @@
 
     .line 46
     .line 47
-    iput-object v1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->S:Landroid/widget/ImageView;
+    iput-object v1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->e0:Landroid/widget/ImageView;
 
     .line 48
     .line 49
@@ -228,7 +228,7 @@
     move-result-object p1
 
     .line 107
-    iput-object p1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->T:Landroid/animation/ObjectAnimator;
+    iput-object p1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->f0:Landroid/animation/ObjectAnimator;
 
     .line 108
     .line 109
@@ -275,7 +275,7 @@
     move-result-object p1
 
     .line 132
-    iput-object p1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->U:Landroid/animation/ObjectAnimator;
+    iput-object p1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->g0:Landroid/animation/ObjectAnimator;
 
     .line 133
     .line 134
@@ -319,7 +319,7 @@
     move-result-object p1
 
     .line 156
-    iput-object p1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->V:Landroid/animation/ObjectAnimator;
+    iput-object p1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->h0:Landroid/animation/ObjectAnimator;
 
     .line 157
     .line 158
@@ -589,7 +589,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->T:Landroid/animation/ObjectAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->f0:Landroid/animation/ObjectAnimator;
 
     .line 2
     .line 3
@@ -611,7 +611,7 @@
     .line 11
     .line 12
     :cond_0
-    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->U:Landroid/animation/ObjectAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->g0:Landroid/animation/ObjectAnimator;
 
     .line 13
     .line 14
@@ -633,7 +633,7 @@
     .line 22
     .line 23
     :cond_1
-    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->V:Landroid/animation/ObjectAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->h0:Landroid/animation/ObjectAnimator;
 
     .line 24
     .line 25
@@ -655,7 +655,7 @@
     .line 33
     .line 34
     :cond_2
-    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->Q:Landroid/widget/ImageView;
+    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->c0:Landroid/widget/ImageView;
 
     .line 35
     .line 36
@@ -667,7 +667,7 @@
     .line 38
     .line 39
     .line 40
-    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->R:Landroid/widget/ImageView;
+    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->d0:Landroid/widget/ImageView;
 
     .line 41
     .line 42
@@ -676,11 +676,11 @@
     .line 43
     .line 44
     .line 45
-    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->S:Landroid/widget/ImageView;
+    iget-object p0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->e0:Landroid/widget/ImageView;
 
     .line 46
     .line 47
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {p0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 48
     .line 49
@@ -689,10 +689,10 @@
 .end method
 
 .method public final b()V
-    .locals 5
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->T:Landroid/animation/ObjectAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->f0:Landroid/animation/ObjectAnimator;
 
     .line 2
     .line 3
@@ -704,7 +704,7 @@
     move-result v1
 
     .line 7
-    iget-object v2, p0, Landroidx/leanback/widget/MediaNowPlayingView;->Q:Landroid/widget/ImageView;
+    iget-object v2, p0, Landroidx/leanback/widget/MediaNowPlayingView;->c0:Landroid/widget/ImageView;
 
     .line 8
     .line 9
@@ -723,7 +723,7 @@
     .line 16
     .line 17
     :cond_0
-    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->U:Landroid/animation/ObjectAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->g0:Landroid/animation/ObjectAnimator;
 
     .line 18
     .line 19
@@ -735,7 +735,7 @@
     move-result v1
 
     .line 23
-    iget-object v3, p0, Landroidx/leanback/widget/MediaNowPlayingView;->R:Landroid/widget/ImageView;
+    iget-object v3, p0, Landroidx/leanback/widget/MediaNowPlayingView;->d0:Landroid/widget/ImageView;
 
     .line 24
     .line 25
@@ -754,7 +754,7 @@
     .line 32
     .line 33
     :cond_1
-    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->V:Landroid/animation/ObjectAnimator;
+    iget-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->h0:Landroid/animation/ObjectAnimator;
 
     .line 34
     .line 35
@@ -766,7 +766,7 @@
     move-result v1
 
     .line 39
-    iget-object v4, p0, Landroidx/leanback/widget/MediaNowPlayingView;->S:Landroid/widget/ImageView;
+    iget-object p0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->e0:Landroid/widget/ImageView;
 
     .line 40
     .line 41
@@ -779,7 +779,7 @@
     .line 44
     .line 45
     .line 46
-    invoke-static {v4}, Landroidx/leanback/widget/MediaNowPlayingView;->setDropScale(Landroid/view/View;)V
+    invoke-static {p0}, Landroidx/leanback/widget/MediaNowPlayingView;->setDropScale(Landroid/view/View;)V
 
     .line 47
     .line 48
@@ -799,7 +799,7 @@
     .line 55
     .line 56
     .line 57
-    invoke-virtual {v4, v0}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 58
     .line 59
@@ -811,7 +811,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/widget/LinearLayout;->onAttachedToWindow()V
+    invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
     .line 2
     .line 3
@@ -841,7 +841,7 @@
     .locals 0
 
     .line 1
-    invoke-super {p0}, Landroid/widget/LinearLayout;->onDetachedFromWindow()V
+    invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 2
     .line 3
@@ -858,7 +858,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroid/widget/LinearLayout;->setVisibility(I)V
+    invoke-super {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
     .line 2
     .line 3

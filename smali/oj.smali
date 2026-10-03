@@ -1,189 +1,203 @@
-.class public final enum Loj;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Loj;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# static fields
-.field public static final enum S:Loj;
-
-.field public static final synthetic T:[Loj;
+# interfaces
+.implements Landroid/view/Choreographer$FrameCallback;
 
 
 # instance fields
-.field public final Q:Z
+.field public final synthetic X:I
 
-.field public final R:Z
+.field public final synthetic Y:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 8
+.method public synthetic constructor <init>(Landroidx/profileinstaller/ProfileInstallerInitializer;Landroid/content/Context;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Loj;
+    const/4 p1, 0x1
 
     .line 2
+    iput p1, p0, Loj;->X:I
+
     .line 3
-    const-string v1, "NO_ARGUMENTS"
-
     .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const/4 v3, 0x3
-
     .line 7
-    invoke-direct {v0, v1, v2, v3}, Loj;-><init>(Ljava/lang/String;II)V
+    iput-object p2, p0, Loj;->Y:Ljava/lang/Object;
 
     .line 8
     .line 9
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/Runnable;)V
+    .locals 1
+
     .line 10
-    sput-object v0, Loj;->S:Loj;
+    const/4 v0, 0x0
+
+    iput v0, p0, Loj;->X:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Loj;->Y:Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final doFrame(J)V
+    .locals 3
+
+    .line 1
+    iget p1, p0, Loj;->X:I
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Loj;->Y:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    packed-switch p1, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    check-cast p0, Landroid/content/Context;
+
+    .line 9
+    .line 10
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 11
     .line 12
-    new-instance v1, Loj;
+    const/16 p2, 0x1c
 
     .line 13
     .line 14
-    const-string v4, "UNLESS_EMPTY"
+    if-lt p1, p2, :cond_0
 
     .line 15
     .line 16
-    const/4 v5, 0x1
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     .line 17
-    const/4 v6, 0x2
-
     .line 18
-    invoke-direct {v1, v4, v5, v6}, Loj;-><init>(Ljava/lang/String;II)V
-
     .line 19
-    .line 20
-    .line 21
-    new-instance v4, Loj;
+    move-result-object p1
 
+    .line 20
+    invoke-static {p1}, Ljm;->h(Landroid/os/Looper;)Landroid/os/Handler;
+
+    .line 21
     .line 22
     .line 23
-    const-string v7, "ALWAYS_PARENTHESIZED"
+    move-result-object p1
 
     .line 24
+    goto :goto_0
+
     .line 25
-    invoke-direct {v4, v7, v6, v5, v5}, Loj;-><init>(Ljava/lang/String;IZZ)V
+    :cond_0
+    new-instance p1, Landroid/os/Handler;
 
     .line 26
     .line 27
-    .line 28
-    new-array v3, v3, [Loj;
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
+    .line 28
     .line 29
     .line 30
-    aput-object v0, v3, v2
+    move-result-object p2
 
     .line 31
-    .line 32
-    aput-object v1, v3, v5
+    invoke-direct {p1, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
+    .line 32
     .line 33
     .line 34
-    aput-object v4, v3, v6
+    :goto_0
+    new-instance p2, Ljava/util/Random;
 
     .line 35
     .line 36
-    sput-object v3, Loj;->T:[Loj;
+    invoke-direct {p2}, Ljava/util/Random;-><init>()V
 
     .line 37
     .line 38
+    .line 39
+    const/16 v0, 0x3e8
+
+    .line 40
+    .line 41
+    const/4 v1, 0x1
+
+    .line 42
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v0
+
+    .line 46
+    invoke-virtual {p2, v0}, Ljava/util/Random;->nextInt(I)I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result p2
+
+    .line 50
+    new-instance v0, Lpo;
+
+    .line 51
+    .line 52
+    invoke-direct {v0, p0, v1}, Lpo;-><init>(Landroid/content/Context;I)V
+
+    .line 53
+    .line 54
+    .line 55
+    add-int/lit16 p2, p2, 0x1388
+
+    .line 56
+    .line 57
+    int-to-long v1, p2
+
+    .line 58
+    invoke-virtual {p1, v0, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 59
+    .line 60
+    .line 61
     return-void
-.end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;II)V
-    .locals 2
+    .line 62
+    :pswitch_0
+    check-cast p0, Ljava/lang/Runnable;
 
-    .line 1
-    const/4 v0, 0x1
+    .line 63
+    .line 64
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
 
-    .line 2
-    and-int/2addr p3, v0
-
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    if-eqz p3, :cond_0
-
-    .line 5
-    .line 6
-    const/4 v0, 0x0
-
-    .line 7
-    :cond_0
-    invoke-direct {p0, p1, p2, v0, v1}, Loj;-><init>(Ljava/lang/String;IZZ)V
-
-    .line 8
-    .line 9
-    .line 10
+    .line 65
+    .line 66
+    .line 67
     return-void
-.end method
 
-.method public constructor <init>(Ljava/lang/String;IZZ)V
-    .locals 0
+    .line 68
+    nop
 
-    .line 11
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 12
-    iput-boolean p3, p0, Loj;->Q:Z
-
-    .line 13
-    iput-boolean p4, p0, Loj;->R:Z
-
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Loj;
-    .locals 1
-
-    .line 1
-    const-class v0, Loj;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Loj;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Loj;
-    .locals 1
-
-    .line 1
-    sget-object v0, Loj;->T:[Loj;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Loj;
-
-    .line 8
-    .line 9
-    return-object v0
+    .line 69
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

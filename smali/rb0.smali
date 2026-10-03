@@ -1,255 +1,306 @@
-.class public final enum Lrb0;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lrb0;
+.super Ljn0;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final enum Q:Lrb0;
+# instance fields
+.field public final c0:Lxi2;
 
-.field public static final enum R:Lrb0;
-
-.field public static final enum S:Lrb0;
-
-.field public static final enum T:Lrb0;
-
-.field public static final enum U:Lrb0;
-
-.field public static final enum V:Lrb0;
-
-.field public static final enum W:Lrb0;
-
-.field public static final synthetic X:[Lrb0;
+.field public final d0:Lxi2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 15
+.method public constructor <init>(Lxi2;Lz31;ILo70;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p2, p3, p4}, Ljn0;-><init>(Lz31;ILo70;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lrb0;->c0:Lxi2;
+
+    .line 5
+    .line 6
+    iput-object p1, p0, Lrb0;->d0:Lxi2;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d(Lok5;Lb31;)Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    instance-of v0, p2, Lqb0;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    move-object v0, p2
+
+    .line 6
+    check-cast v0, Lqb0;
+
+    .line 7
+    .line 8
+    iget v1, v0, Lqb0;->f0:I
+
+    .line 9
+    .line 10
+    const/high16 v2, -0x80000000
+
+    .line 11
+    .line 12
+    and-int v3, v1, v2
+
+    .line 13
+    .line 14
+    if-eqz v3, :cond_0
+
+    .line 15
+    .line 16
+    sub-int/2addr v1, v2
+
+    .line 17
+    iput v1, v0, Lqb0;->f0:I
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    new-instance v0, Lqb0;
+
+    .line 21
+    .line 22
+    check-cast p2, Ld31;
+
+    .line 23
+    .line 24
+    invoke-direct {v0, p0, p2}, Lqb0;-><init>(Lrb0;Ld31;)V
+
+    .line 25
+    .line 26
+    .line 27
+    :goto_0
+    iget-object p2, v0, Lqb0;->d0:Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    iget v1, v0, Lqb0;->f0:I
+
+    .line 30
+    .line 31
+    const/4 v2, 0x0
+
+    .line 32
+    sget-object v3, Lr98;->a:Lr98;
+
+    .line 33
+    .line 34
+    const/4 v4, 0x1
+
+    .line 35
+    if-eqz v1, :cond_2
+
+    .line 36
+    .line 37
+    if-ne v1, v4, :cond_1
+
+    .line 38
+    .line 39
+    iget-object p1, v0, Lqb0;->c0:Lok5;
+
+    .line 40
+    .line 41
+    invoke-static {p2}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 42
+    .line 43
+    .line 44
+    goto :goto_2
+
+    .line 45
+    :cond_1
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 46
+    .line 47
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 48
+    .line 49
+    .line 50
+    return-object v2
+
+    .line 51
+    :cond_2
+    invoke-static {p2}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 52
+    .line 53
+    .line 54
+    iput-object p1, v0, Lqb0;->c0:Lok5;
+
+    .line 55
+    .line 56
+    iput v4, v0, Lqb0;->f0:I
+
+    .line 57
+    .line 58
+    iget-object p0, p0, Lrb0;->c0:Lxi2;
+
+    .line 59
+    .line 60
+    invoke-interface {p0, p1, v0}, Lxi2;->H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object p0
+
+    .line 64
+    sget-object p2, Lj41;->X:Lj41;
+
+    .line 65
+    .line 66
+    if-ne p0, p2, :cond_3
+
+    .line 67
+    .line 68
+    goto :goto_1
+
+    .line 69
+    :cond_3
+    move-object p0, v3
+
+    .line 70
+    :goto_1
+    if-ne p0, p2, :cond_4
+
+    .line 71
+    .line 72
+    return-object p2
+
+    .line 73
+    :cond_4
+    :goto_2
+    iget-object p0, p1, Lok5;->e0:Lb80;
+
+    .line 74
+    .line 75
+    invoke-virtual {p0}, Lb80;->G()Z
+
+    .line 76
+    .line 77
+    .line 78
+    move-result p0
+
+    .line 79
+    if-eqz p0, :cond_5
+
+    .line 80
+    .line 81
+    return-object v3
+
+    .line 82
+    :cond_5
+    const-string p0, "\'awaitClose { yourCallbackOrListener.cancel() }\' should be used in the end of callbackFlow block.\nOtherwise, a callback/listener may leak in case of external cancellation.\nSee callbackFlow API documentation for the details."
+
+    .line 83
+    .line 84
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 85
+    .line 86
+    .line 87
+    return-object v2
+.end method
+
+.method public final f(Lz31;ILo70;)Ljn0;
+    .locals 1
 
     .line 1
     new-instance v0, Lrb0;
 
     .line 2
     .line 3
-    const-string v1, "UNKNOWN"
+    iget-object p0, p0, Lrb0;->d0:Lxi2;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    invoke-direct {v0, p0, p1, p2, p3}, Lrb0;-><init>(Lxi2;Lz31;ILo70;)V
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 7
     .line 8
+    return-object v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "block["
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lrb0;->c0:Lxi2;
+
     .line 9
-    sput-object v0, Lrb0;->Q:Lrb0;
-
     .line 10
-    .line 11
-    new-instance v1, Lrb0;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 11
     .line 12
     .line 13
-    const-string v3, "INACTIVE"
+    const-string v1, "] -> "
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 17
     .line 18
-    .line 19
-    sput-object v1, Lrb0;->R:Lrb0;
+    invoke-super {p0}, Ljn0;->toString()Ljava/lang/String;
 
+    .line 19
     .line 20
     .line 21
-    new-instance v3, Lrb0;
-
-    .line 22
-    .line 23
-    const-string v5, "SCANNING"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, Lrb0;->S:Lrb0;
-
-    .line 30
-    .line 31
-    new-instance v5, Lrb0;
-
-    .line 32
-    .line 33
-    const-string v7, "PASSIVE_FOCUSED"
-
-    .line 34
-    .line 35
-    const/4 v8, 0x3
-
-    .line 36
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v5, Lrb0;->T:Lrb0;
-
-    .line 40
-    .line 41
-    new-instance v7, Lrb0;
-
-    .line 42
-    .line 43
-    const-string v9, "PASSIVE_NOT_FOCUSED"
-
-    .line 44
-    .line 45
-    const/4 v10, 0x4
-
-    .line 46
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 47
-    .line 48
-    .line 49
-    sput-object v7, Lrb0;->U:Lrb0;
-
-    .line 50
-    .line 51
-    new-instance v9, Lrb0;
-
-    .line 52
-    .line 53
-    const-string v11, "LOCKED_FOCUSED"
-
-    .line 54
-    .line 55
-    const/4 v12, 0x5
-
-    .line 56
-    invoke-direct {v9, v11, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 57
-    .line 58
-    .line 59
-    sput-object v9, Lrb0;->V:Lrb0;
-
-    .line 60
-    .line 61
-    new-instance v11, Lrb0;
-
-    .line 62
-    .line 63
-    const-string v13, "LOCKED_NOT_FOCUSED"
-
-    .line 64
-    .line 65
-    const/4 v14, 0x6
-
-    .line 66
-    invoke-direct {v11, v13, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 67
-    .line 68
-    .line 69
-    sput-object v11, Lrb0;->W:Lrb0;
-
-    .line 70
-    .line 71
-    const/4 v13, 0x7
-
-    .line 72
-    new-array v13, v13, [Lrb0;
-
-    .line 73
-    .line 74
-    aput-object v0, v13, v2
-
-    .line 75
-    .line 76
-    aput-object v1, v13, v4
-
-    .line 77
-    .line 78
-    aput-object v3, v13, v6
-
-    .line 79
-    .line 80
-    aput-object v5, v13, v8
-
-    .line 81
-    .line 82
-    aput-object v7, v13, v10
-
-    .line 83
-    .line 84
-    aput-object v9, v13, v12
-
-    .line 85
-    .line 86
-    aput-object v11, v13, v14
-
-    .line 87
-    .line 88
-    sput-object v13, Lrb0;->X:[Lrb0;
-
-    .line 89
-    .line 90
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lrb0;
-    .locals 1
-
-    .line 1
-    const-class v0, Lrb0;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
     move-result-object p0
 
-    .line 7
-    check-cast p0, Lrb0;
+    .line 22
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
-    .line 9
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p0
+
+    .line 29
     return-object p0
-.end method
-
-.method public static values()[Lrb0;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lrb0;->X:[Lrb0;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Lrb0;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lrb0;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

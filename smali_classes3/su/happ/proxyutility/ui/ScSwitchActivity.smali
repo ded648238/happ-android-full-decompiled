@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/ScSwitchActivity;
 .super Lsu/happ/proxyutility/ui/BaseActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -57,7 +57,7 @@
     .line 6
     .line 7
     .line 8
-    sget p1, Lt95;->activity_none:I
+    sget p1, Ltt5;->activity_none:I
 
     .line 9
     .line 10
@@ -66,7 +66,7 @@
     .line 11
     .line 12
     .line 13
-    sget-object p1, Lox7;->a:Llibxray/XRayPoint;
+    sget-object p1, Lat8;->a:Llibxray/XRayPoint;
 
     .line 14
     .line 15
@@ -82,11 +82,11 @@
 
     .line 20
     .line 21
-    sget-object p1, Lpk7;->a:Lpk7;
+    sget-object p1, Lif8;->a:Lif8;
 
     .line 22
     .line 23
-    invoke-static {p0}, Lpk7;->M(Landroid/content/Context;)V
+    invoke-static {p0}, Lif8;->J(Landroid/content/Context;)V
 
     .line 24
     .line 25
@@ -95,11 +95,11 @@
 
     .line 27
     :cond_0
-    sget-object p1, Lpk7;->a:Lpk7;
+    sget-object p1, Lif8;->a:Lif8;
 
     .line 28
     .line 29
-    invoke-static {p0}, Lpk7;->K(Landroid/content/Context;)V
+    invoke-static {p0}, Lif8;->I(Landroid/content/Context;)V
 
     .line 30
     .line 31

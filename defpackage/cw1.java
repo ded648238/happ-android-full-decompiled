@@ -1,23 +1,44 @@
 package defpackage;
 
-import java.util.Iterator;
+import java.util.Collection;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class cw1 implements b56 {
-    public final b56 a;
-    public final boolean b;
-    public final j72 c;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class cw1 extends vn3 {
+    public static final cw1 Y = new cw1();
 
-    public cw1(b56 b56Var, boolean z, j72 j72Var) {
-        j72Var.getClass();
-        this.a = b56Var;
-        this.b = z;
-        this.c = j72Var;
+    @Override // defpackage.vn3
+    public final Collection U() {
+        throw new xt3("Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection");
     }
 
-    @Override // defpackage.b56
-    public final Iterator iterator() {
-        return new bw1(this);
+    @Override // defpackage.vn3
+    public final Collection V() {
+        throw new xt3("Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection");
+    }
+
+    @Override // defpackage.vn3
+    public final Collection W(pr4 pr4Var) {
+        throw new xt3("Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection");
+    }
+
+    @Override // defpackage.vn3
+    public final im5 X(int i) {
+        return null;
+    }
+
+    @Override // defpackage.vn3
+    public final sr3 Y(int i) {
+        return null;
+    }
+
+    @Override // defpackage.vn3
+    public final Collection a0(pr4 pr4Var) {
+        throw new xt3("Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection");
+    }
+
+    @Override // defpackage.cq0
+    public final Class w() {
+        throw new xt3("Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection");
     }
 }

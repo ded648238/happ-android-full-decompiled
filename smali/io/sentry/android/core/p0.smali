@@ -1,85 +1,36 @@
-.class public abstract synthetic Lio/sentry/android/core/p0;
+.class public final Lio/sentry/android/core/p0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/util/concurrent/ThreadFactory;
 
 
-# static fields
-.field public static final synthetic a:[I
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+# virtual methods
+.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    .locals 1
 
     .line 1
-    invoke-static {}, Lio/sentry/p0;->values()[Lio/sentry/p0;
+    new-instance p0, Ljava/lang/Thread;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    const-string v0, "SentryDeviceInfoCache"
 
+    .line 4
     .line 5
-    array-length v0, v0
+    invoke-direct {p0, p1, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
     .line 6
-    new-array v0, v0, [I
-
     .line 7
     .line 8
-    sput-object v0, Lio/sentry/android/core/p0;->a:[I
+    const/4 p1, 0x1
 
     .line 9
-    .line 10
-    :try_start_0
-    sget-object v1, Lio/sentry/p0;->DISCONNECTED:Lio/sentry/p0;
+    invoke-virtual {p0, p1}, Ljava/lang/Thread;->setDaemon(Z)V
 
+    .line 10
     .line 11
     .line 12
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 13
-    .line 14
-    .line 15
-    move-result v1
-
-    .line 16
-    const/4 v2, 0x1
-
-    .line 17
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 18
-    .line 19
-    :catch_0
-    :try_start_1
-    sget-object v0, Lio/sentry/android/core/p0;->a:[I
-
-    .line 20
-    .line 21
-    sget-object v1, Lio/sentry/p0;->CONNECTED:Lio/sentry/p0;
-
-    .line 22
-    .line 23
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v1
-
-    .line 27
-    const/4 v2, 0x2
-
-    .line 28
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 29
-    .line 30
-    :catch_1
-    return-void
+    return-object p0
 .end method

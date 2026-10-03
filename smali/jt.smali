@@ -1,96 +1,153 @@
-.class public final synthetic Ljt;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public Ljt;
+.super Lk01;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final Q:Ljt;
+# instance fields
+.field public final b:Lmi2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Ljava/util/List;Lmi2;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljt;
+    invoke-direct {p0, p1}, Lk01;-><init>(Ljava/lang/Object;)V
 
     .line 2
     .line 3
-    const-string v1, "getFlags$org_jetbrains_kotlin_kotlin_metadata()I"
-
     .line 4
+    iput-object p2, p0, Ljt;->b:Lmi2;
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const-class v3, Lab3;
-
-    .line 7
-    .line 8
-    const-string v4, "flags"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Ljt;->Q:Ljt;
-
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final a(Lon4;)Lbu3;
     .locals 0
 
     .line 1
-    check-cast p1, Lab3;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/Number;
-
     .line 4
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+    iget-object p0, p0, Ljt;->b:Lmi2;
 
+    .line 5
     .line 6
+    invoke-interface {p0, p1}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 7
     .line 8
-    move-result p2
-
     .line 9
-    iput p2, p1, Lab3;->a:I
+    move-result-object p0
 
     .line 10
+    check-cast p0, Lbu3;
+
     .line 11
-    return-void
-.end method
+    .line 12
+    invoke-static {p0}, Lhs3;->z(Lbu3;)Z
 
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .line 13
+    .line 14
+    .line 15
+    move-result p1
 
-    .line 1
-    check-cast p1, Lab3;
+    .line 16
+    if-nez p1, :cond_0
 
-    .line 2
-    .line 3
-    iget p1, p1, Lab3;->a:I
+    .line 17
+    .line 18
+    invoke-static {p0}, Lhs3;->G(Lbu3;)Z
 
-    .line 4
-    .line 5
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 19
+    .line 20
+    .line 21
+    move-result p1
 
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p1
+    .line 22
+    if-nez p1, :cond_0
 
-    .line 9
-    return-object p1
+    .line 23
+    .line 24
+    sget-object p1, Lo47;->W:Ljf2;
+
+    .line 25
+    .line 26
+    iget-object p1, p1, Ljf2;->a:Lkf2;
+
+    .line 27
+    .line 28
+    invoke-static {p0, p1}, Lhs3;->C(Lbu3;Lkf2;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_0
+
+    .line 33
+    .line 34
+    sget-object p1, Lo47;->X:Ljf2;
+
+    .line 35
+    .line 36
+    iget-object p1, p1, Ljf2;->a:Lkf2;
+
+    .line 37
+    .line 38
+    invoke-static {p0, p1}, Lhs3;->C(Lbu3;Lkf2;)Z
+
+    .line 39
+    .line 40
+    .line 41
+    move-result p1
+
+    .line 42
+    if-nez p1, :cond_0
+
+    .line 43
+    .line 44
+    sget-object p1, Lo47;->Y:Ljf2;
+
+    .line 45
+    .line 46
+    iget-object p1, p1, Ljf2;->a:Lkf2;
+
+    .line 47
+    .line 48
+    invoke-static {p0, p1}, Lhs3;->C(Lbu3;Lkf2;)Z
+
+    .line 49
+    .line 50
+    .line 51
+    move-result p1
+
+    .line 52
+    if-nez p1, :cond_0
+
+    .line 53
+    .line 54
+    sget-object p1, Lo47;->Z:Ljf2;
+
+    .line 55
+    .line 56
+    iget-object p1, p1, Ljf2;->a:Lkf2;
+
+    .line 57
+    .line 58
+    invoke-static {p0, p1}, Lhs3;->C(Lbu3;Lkf2;)Z
+
+    .line 59
+    .line 60
+    .line 61
+    :cond_0
+    return-object p0
 .end method

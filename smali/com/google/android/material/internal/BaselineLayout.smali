@@ -1,12 +1,12 @@
 .class public Lcom/google/android/material/internal/BaselineLayout;
 .super Landroid/view/ViewGroup;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:I
+.field public c0:I
 
-.field public R:Z
+.field public d0:Z
 
 
 # direct methods
@@ -25,7 +25,7 @@
     const/4 p1, -0x1
 
     .line 6
-    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->Q:I
+    iput p1, p0, Lcom/google/android/material/internal/BaselineLayout;->c0:I
 
     .line 7
     .line 8
@@ -35,14 +35,14 @@
 
 # virtual methods
 .method public getBaseline()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lcom/google/android/material/internal/BaselineLayout;->Q:I
+    iget p0, p0, Lcom/google/android/material/internal/BaselineLayout;->c0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final onLayout(ZIIII)V
@@ -153,7 +153,7 @@
     add-int/2addr v3, p3
 
     .line 49
-    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->Q:I
+    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->c0:I
 
     .line 50
     .line 51
@@ -176,7 +176,7 @@
 
     .line 59
     .line 60
-    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->Q:I
+    iget v4, p0, Lcom/google/android/material/internal/BaselineLayout;->c0:I
 
     .line 61
     .line 62
@@ -243,22 +243,22 @@
     const/4 v2, -0x1
 
     .line 7
-    const/4 v3, 0x0
+    move v3, v1
 
     .line 8
-    const/4 v4, 0x0
+    move v4, v3
 
     .line 9
-    const/4 v5, 0x0
+    move v5, v4
 
     .line 10
-    const/4 v6, 0x0
+    move v6, v5
 
     .line 11
-    const/4 v7, -0x1
+    move v7, v2
 
     .line 12
-    const/4 v8, -0x1
+    move v8, v7
 
     .line 13
     :goto_0
@@ -416,7 +416,7 @@
 
     .line 86
     .line 87
-    iget-boolean v0, p0, Lcom/google/android/material/internal/BaselineLayout;->R:Z
+    iget-boolean v0, p0, Lcom/google/android/material/internal/BaselineLayout;->d0:Z
 
     .line 88
     .line 89
@@ -452,12 +452,12 @@
 
     .line 104
     :cond_3
-    iput v7, p0, Lcom/google/android/material/internal/BaselineLayout;->Q:I
+    iput v7, p0, Lcom/google/android/material/internal/BaselineLayout;->c0:I
 
     .line 105
     .line 106
     :cond_4
-    iget-boolean v0, p0, Lcom/google/android/material/internal/BaselineLayout;->R:Z
+    iget-boolean v0, p0, Lcom/google/android/material/internal/BaselineLayout;->d0:Z
 
     .line 107
     .line 108
@@ -546,7 +546,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/internal/BaselineLayout;->R:Z
+    iput-boolean p1, p0, Lcom/google/android/material/internal/BaselineLayout;->d0:Z
 
     .line 2
     .line 3

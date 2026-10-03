@@ -1,15 +1,15 @@
 .class public final synthetic Lf;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lg72;
+.implements Lji2;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final synthetic X:I
 
-.field public final synthetic R:Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;
+.field public final synthetic Y:Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;
 
 
 # direct methods
@@ -17,11 +17,11 @@
     .locals 0
 
     .line 1
-    iput p2, p0, Lf;->Q:I
+    iput p2, p0, Lf;->X:I
 
     .line 2
     .line 3
-    iput-object p1, p0, Lf;->R:Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;
+    iput-object p1, p0, Lf;->Y:Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;
 
     .line 4
     .line 5
@@ -36,18 +36,18 @@
 
 # virtual methods
 .method public final invoke()Ljava/lang/Object;
-    .locals 3
+    .locals 2
 
     .line 1
-    iget v0, p0, Lf;->Q:I
+    iget v0, p0, Lf;->X:I
 
     .line 2
     .line 3
-    sget-object v1, Lbh7;->a:Lbh7;
+    sget-object v1, Lr98;->a:Lr98;
 
     .line 4
     .line 5
-    iget-object v2, p0, Lf;->R:Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;
+    iget-object p0, p0, Lf;->Y:Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;
 
     .line 6
     .line 7
@@ -56,19 +56,19 @@
     .line 8
     .line 9
     .line 10
-    new-instance v0, Lq;
+    new-instance v0, Lp;
 
     .line 11
     .line 12
-    iget-object v1, v2, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->C0:Le5;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->N0:Lq5;
 
     .line 13
     .line 14
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 15
     .line 16
-    invoke-direct {v0, v1}, Lq;-><init>(Le5;)V
+    invoke-direct {v0, p0}, Lp;-><init>(Lq5;)V
 
     .line 17
     .line 18
@@ -77,27 +77,27 @@
 
     .line 20
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 21
     .line 22
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 23
     .line 24
     .line 25
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 26
-    throw v0
+    throw p0
 
     .line 27
     :pswitch_0
-    sget v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->F0:I
+    sget v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->Q0:I
 
     .line 28
     .line 29
-    sget-object v0, Lpk7;->a:Lpk7;
+    sget-object v0, Lif8;->a:Lif8;
 
     .line 30
     .line 31
@@ -105,7 +105,7 @@
 
     .line 32
     .line 33
-    invoke-static {v2, v0}, Lpk7;->D(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Lif8;->B(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 34
     .line 35
@@ -114,11 +114,11 @@
 
     .line 37
     :pswitch_1
-    sget v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->F0:I
+    sget v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->Q0:I
 
     .line 38
     .line 39
-    sget-object v0, Lpk7;->a:Lpk7;
+    sget-object v0, Lif8;->a:Lif8;
 
     .line 40
     .line 41
@@ -126,7 +126,7 @@
 
     .line 42
     .line 43
-    invoke-static {v2, v0}, Lpk7;->D(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Lif8;->B(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 44
     .line 45
@@ -135,11 +135,11 @@
 
     .line 47
     :pswitch_2
-    sget v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->F0:I
+    sget v0, Lsu/happ/proxyutility/feature/about_settings/AboutSettingsActivity;->Q0:I
 
     .line 48
     .line 49
-    sget-object v0, Lpk7;->a:Lpk7;
+    sget-object v0, Lif8;->a:Lif8;
 
     .line 50
     .line 51
@@ -147,7 +147,7 @@
 
     .line 52
     .line 53
-    invoke-static {v2, v0}, Lpk7;->D(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0}, Lif8;->B(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 54
     .line 55

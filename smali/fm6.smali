@@ -1,88 +1,56 @@
 .class public final Lfm6;
-.super Lrh2;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# instance fields
+.field public c0:Lrm6;
+
+.field public d0:Lsy5;
+
+.field public synthetic e0:Ljava/lang/Object;
+
+.field public f0:I
 
 
 # virtual methods
-.method public final J0(Luw4;)V
-    .locals 1
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    sget-object v0, Lrr0;->u:Lli6;
+    iput-object p1, p0, Lfm6;->e0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, Luv3;->u(Lnr0;Lk65;)Ljava/lang/Object;
+    iget p1, p0, Lfm6;->f0:I
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lvw4;
-
-    .line 8
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    check-cast v0, Lcb;
-
-    .line 12
-    .line 13
-    iput-object p1, v0, Lcb;->a:Luw4;
-
-    .line 14
-    .line 15
-    :cond_0
-    return-void
-.end method
-
-.method public final L0(I)Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x3
-
-    .line 2
-    if-ne p1, v0, :cond_0
-
-    .line 3
-    .line 4
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    const/4 v0, 0x4
+    const/high16 v0, -0x80000000
 
     .line 6
-    if-ne p1, v0, :cond_1
-
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    :goto_0
-    const/4 p1, 0x1
+    iput p1, p0, Lfm6;->f0:I
 
     .line 9
-    return p1
-
     .line 10
-    :cond_1
     const/4 p1, 0x0
 
     .line 11
-    return p1
-.end method
+    const-wide/16 v0, 0x0
 
-.method public final bridge synthetic j()Ljava/lang/Object;
-    .locals 1
+    .line 12
+    .line 13
+    invoke-static {p1, v0, v1, p0}, Lgm6;->a(Lrm6;JLd31;)Ljava/lang/Object;
 
-    .line 1
-    const-string v0, "androidx.compose.ui.input.pointer.StylusHoverIcon"
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
 
-    .line 2
-    .line 3
-    return-object v0
+    .line 17
+    return-object p0
 .end method

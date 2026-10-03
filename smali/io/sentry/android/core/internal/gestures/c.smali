@@ -1,6 +1,6 @@
 .class public final Lio/sentry/android/core/internal/gestures/c;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -45,7 +45,7 @@
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 7
     .line 8
@@ -74,38 +74,37 @@
     move-result p2
 
     .line 21
-    mul-int p2, p2, p2
+    mul-int/2addr p2, p2
 
     .line 22
-    .line 23
     iput p2, p0, Lio/sentry/android/core/internal/gestures/c;->b:I
 
+    .line 23
     .line 24
-    .line 25
     invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledMinimumFlingVelocity()I
 
+    .line 25
     .line 26
     .line 27
-    .line 28
     move-result p2
 
-    .line 29
+    .line 28
     iput p2, p0, Lio/sentry/android/core/internal/gestures/c;->c:I
 
+    .line 29
     .line 30
-    .line 31
     invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledMaximumFlingVelocity()I
 
+    .line 31
     .line 32
     .line 33
-    .line 34
     move-result p1
 
-    .line 35
+    .line 34
     iput p1, p0, Lio/sentry/android/core/internal/gestures/c;->d:I
 
+    .line 35
     .line 36
-    .line 37
     return-void
 .end method
 
@@ -119,88 +118,85 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+    invoke-virtual {v0}, Lio/sentry/util/a;->g()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
     :try_start_0
     iget-object v1, p0, Lio/sentry/android/core/internal/gestures/c;->k:Landroid/view/MotionEvent;
 
+    .line 7
     .line 8
-    .line 9
     const/4 v2, 0x0
 
-    .line 10
+    .line 9
     iput-object v2, p0, Lio/sentry/android/core/internal/gestures/c;->k:Landroid/view/MotionEvent;
 
+    .line 10
     .line 11
-    .line 12
     iget-object v3, p0, Lio/sentry/android/core/internal/gestures/c;->l:Landroid/view/VelocityTracker;
 
+    .line 12
     .line 13
-    .line 14
     iput-object v2, p0, Lio/sentry/android/core/internal/gestures/c;->l:Landroid/view/VelocityTracker;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 14
     .line 15
-    .line 16
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
 
+    .line 16
     .line 17
     .line 18
-    .line 19
     if-eqz v1, :cond_0
 
+    .line 19
     .line 20
-    .line 21
     invoke-virtual {v1}, Landroid/view/MotionEvent;->recycle()V
 
+    .line 21
     .line 22
     .line 23
-    .line 24
     :cond_0
     if-eqz v3, :cond_1
 
+    .line 24
     .line 25
-    .line 26
     invoke-virtual {v3}, Landroid/view/VelocityTracker;->recycle()V
 
+    .line 26
     .line 27
     .line 28
-    .line 29
     :cond_1
     return-void
 
-    .line 30
+    .line 29
     :catchall_0
-    move-exception v1
+    move-exception p0
 
-    .line 31
+    .line 30
     :try_start_1
-    invoke-virtual {v0}, Lio/sentry/u;->close()V
+    invoke-virtual {v0}, Lio/sentry/util/a;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 31
     .line 32
     .line 33
-    .line 34
     goto :goto_0
 
-    .line 35
+    .line 34
     :catchall_1
     move-exception v0
 
-    .line 36
-    invoke-virtual {v1, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    .line 35
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
+    .line 36
     .line 37
     .line 38
-    .line 39
     :goto_0
-    throw v1
+    throw p0
 .end method

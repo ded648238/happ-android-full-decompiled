@@ -1,25 +1,25 @@
 .class public final Li;
-.super Law0;
+.super Ld31;
 
 
 # instance fields
-.field public synthetic T:Ljava/lang/Object;
+.field public synthetic c0:Ljava/lang/Object;
 
-.field public U:I
+.field public d0:I
 
-.field public final synthetic V:Ll;
+.field public final synthetic e0:Ll;
 
 
 # direct methods
-.method public constructor <init>(Ll;Lyv0;)V
+.method public constructor <init>(Ll;Lb31;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Li;->V:Ll;
+    iput-object p1, p0, Li;->e0:Ll;
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
     .line 4
     .line 5
@@ -29,15 +29,15 @@
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iput-object p1, p0, Li;->T:Ljava/lang/Object;
+    iput-object p1, p0, Li;->c0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget p1, p0, Li;->U:I
+    iget p1, p0, Li;->d0:I
 
     .line 4
     .line 5
@@ -48,24 +48,24 @@
     or-int/2addr p1, v0
 
     .line 8
-    iput p1, p0, Li;->U:I
+    iput p1, p0, Li;->d0:I
 
     .line 9
     .line 10
-    iget-object p1, p0, Li;->V:Ll;
+    iget-object p1, p0, Li;->e0:Ll;
 
     .line 11
     .line 12
     const/4 v0, 0x0
 
     .line 13
-    invoke-virtual {p1, v0, p0}, Ll;->a(Li02;Lyv0;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Ll;->a(Lla2;Lb31;)Ljava/lang/Object;
 
     .line 14
     .line 15
     .line 16
-    move-result-object p1
+    move-result-object p0
 
     .line 17
-    return-object p1
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/OpenSSLECPublicKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/security/interfaces/ECPublicKey;
@@ -121,19 +121,19 @@
 
     .line 45
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 46
-    new-instance v0, Ljava/security/spec/InvalidKeySpecException;
+    new-instance p1, Ljava/security/spec/InvalidKeySpecException;
 
     .line 47
     .line 48
-    invoke-direct {v0, p1}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {p1, p0}, Ljava/security/spec/InvalidKeySpecException;-><init>(Ljava/lang/Throwable;)V
 
     .line 49
     .line 50
     .line 51
-    throw v0
+    throw p1
 .end method
 
 .method public constructor <init>(Lorg/conscrypt/OpenSSLECGroupContext;Lorg/conscrypt/OpenSSLKey;)V
@@ -270,7 +270,7 @@
     move-exception p0
 
     .line 37
-    invoke-static {p0}, Li62;->s(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lbh2;->t(Ljava/lang/Throwable;)V
 
     .line 38
     .line 39
@@ -294,19 +294,19 @@
 
     .line 6
     .line 7
-    iget-object v3, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 8
     .line 9
-    invoke-virtual {v3}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v3
+    move-result-object p0
 
     .line 13
-    invoke-static {v3}, Lorg/conscrypt/NativeCrypto;->EC_KEY_get_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)J
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EC_KEY_get_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)J
 
     .line 14
     .line 15
@@ -329,10 +329,10 @@
     .line 24
     .line 25
     .line 26
-    move-result-object v0
+    move-result-object p0
 
     .line 27
-    return-object v0
+    return-object p0
 .end method
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
@@ -432,19 +432,19 @@
 
     .line 44
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 45
-    new-instance v0, Ljava/io/IOException;
+    new-instance p1, Ljava/io/IOException;
 
     .line 46
     .line 47
-    invoke-direct {v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {p1, p0}, Ljava/io/IOException;-><init>(Ljava/lang/Throwable;)V
 
     .line 48
     .line 49
     .line 50
-    throw v0
+    throw p1
 .end method
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
@@ -482,10 +482,10 @@
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
+    invoke-virtual {p1, p0}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
     .line 17
     .line 18
@@ -494,26 +494,26 @@
 
     .line 20
     :cond_0
-    new-instance p1, Ljava/io/NotSerializableException;
+    new-instance p0, Ljava/io/NotSerializableException;
 
     .line 21
     .line 22
-    const-string v0, "Hardware backed keys cannot be serialized"
+    const-string p1, "Hardware backed keys cannot be serialized"
 
     .line 23
     .line 24
-    invoke-direct {p1, v0}, Ljava/io/NotSerializableException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/io/NotSerializableException;-><init>(Ljava/lang/String;)V
 
     .line 25
     .line 26
     .line 27
-    throw p1
+    throw p0
 .end method
 
 
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
-    .locals 5
+    .locals 4
 
     .line 1
     const/4 v0, 0x1
@@ -539,7 +539,7 @@
 
     .line 10
     .line 11
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 12
     .line 13
@@ -547,15 +547,15 @@
 
     .line 14
     .line 15
-    invoke-virtual {v0, p1}, Lorg/conscrypt/OpenSSLKey;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Lorg/conscrypt/OpenSSLKey;->equals(Ljava/lang/Object;)Z
 
     .line 16
     .line 17
     .line 18
-    move-result p1
+    move-result p0
 
     .line 19
-    return p1
+    return p0
 
     .line 20
     :cond_1
@@ -615,7 +615,7 @@
     .line 44
     .line 45
     .line 46
-    move-result-object v1
+    move-result-object p0
 
     .line 47
     invoke-interface {p1}, Ljava/security/interfaces/ECKey;->getParams()Ljava/security/spec/ECParameterSpec;
@@ -626,12 +626,12 @@
     move-result-object p1
 
     .line 51
-    invoke-virtual {v1}, Ljava/security/spec/ECParameterSpec;->getCurve()Ljava/security/spec/EllipticCurve;
+    invoke-virtual {p0}, Ljava/security/spec/ECParameterSpec;->getCurve()Ljava/security/spec/EllipticCurve;
 
     .line 52
     .line 53
     .line 54
-    move-result-object v3
+    move-result-object v1
 
     .line 55
     invoke-virtual {p1}, Ljava/security/spec/ECParameterSpec;->getCurve()Ljava/security/spec/EllipticCurve;
@@ -639,27 +639,27 @@
     .line 56
     .line 57
     .line 58
-    move-result-object v4
+    move-result-object v3
 
     .line 59
-    invoke-virtual {v3, v4}, Ljava/security/spec/EllipticCurve;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/security/spec/EllipticCurve;->equals(Ljava/lang/Object;)Z
 
     .line 60
     .line 61
     .line 62
-    move-result v3
+    move-result v1
 
     .line 63
-    if-eqz v3, :cond_4
+    if-eqz v1, :cond_4
 
     .line 64
     .line 65
-    invoke-virtual {v1}, Ljava/security/spec/ECParameterSpec;->getGenerator()Ljava/security/spec/ECPoint;
+    invoke-virtual {p0}, Ljava/security/spec/ECParameterSpec;->getGenerator()Ljava/security/spec/ECPoint;
 
     .line 66
     .line 67
     .line 68
-    move-result-object v3
+    move-result-object v1
 
     .line 69
     invoke-virtual {p1}, Ljava/security/spec/ECParameterSpec;->getGenerator()Ljava/security/spec/ECPoint;
@@ -667,27 +667,27 @@
     .line 70
     .line 71
     .line 72
-    move-result-object v4
+    move-result-object v3
 
     .line 73
-    invoke-virtual {v3, v4}, Ljava/security/spec/ECPoint;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/security/spec/ECPoint;->equals(Ljava/lang/Object;)Z
 
     .line 74
     .line 75
     .line 76
-    move-result v3
+    move-result v1
 
     .line 77
-    if-eqz v3, :cond_4
+    if-eqz v1, :cond_4
 
     .line 78
     .line 79
-    invoke-virtual {v1}, Ljava/security/spec/ECParameterSpec;->getOrder()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Ljava/security/spec/ECParameterSpec;->getOrder()Ljava/math/BigInteger;
 
     .line 80
     .line 81
     .line 82
-    move-result-object v3
+    move-result-object v1
 
     .line 83
     invoke-virtual {p1}, Ljava/security/spec/ECParameterSpec;->getOrder()Ljava/math/BigInteger;
@@ -695,27 +695,27 @@
     .line 84
     .line 85
     .line 86
-    move-result-object v4
+    move-result-object v3
 
     .line 87
-    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
 
     .line 88
     .line 89
     .line 90
-    move-result v3
+    move-result v1
 
     .line 91
-    if-eqz v3, :cond_4
+    if-eqz v1, :cond_4
 
     .line 92
     .line 93
-    invoke-virtual {v1}, Ljava/security/spec/ECParameterSpec;->getCofactor()I
+    invoke-virtual {p0}, Ljava/security/spec/ECParameterSpec;->getCofactor()I
 
     .line 94
     .line 95
     .line 96
-    move-result v1
+    move-result p0
 
     .line 97
     invoke-virtual {p1}, Ljava/security/spec/ECParameterSpec;->getCofactor()I
@@ -726,7 +726,7 @@
     move-result p1
 
     .line 101
-    if-ne v1, p1, :cond_4
+    if-ne p0, p1, :cond_4
 
     .line 102
     .line 103
@@ -738,86 +738,86 @@
 .end method
 
 .method public getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "EC"
+    const-string p0, "EC"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "X.509"
+    const-string p0, "X.509"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getOpenSSLKey()Lorg/conscrypt/OpenSSLKey;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getParams()Ljava/security/spec/ECParameterSpec;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->group:Lorg/conscrypt/OpenSSLECGroupContext;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->group:Lorg/conscrypt/OpenSSLECGroupContext;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLECGroupContext;->getECParameterSpec()Ljava/security/spec/ECParameterSpec;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLECGroupContext;->getECParameterSpec()Ljava/security/spec/ECParameterSpec;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getW()Ljava/security/spec/ECPoint;
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Lorg/conscrypt/OpenSSLECPublicKey;->getPublicKey()Ljava/security/spec/ECPoint;
@@ -825,70 +825,70 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
 
     .line 5
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_marshal_public_key(Lorg/conscrypt/NativeRef$EVP_PKEY;)[B
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([B)I
 
     .line 12
     .line 13
     .line 14
-    move-result v0
+    move-result p0
 
     .line 15
-    return v0
+    return p0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECPublicKey;->key:Lorg/conscrypt/OpenSSLKey;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_print_public(Lorg/conscrypt/NativeRef$EVP_PKEY;)Ljava/lang/String;
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_print_public(Lorg/conscrypt/NativeRef$EVP_PKEY;)Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method

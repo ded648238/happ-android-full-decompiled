@@ -1,57 +1,31 @@
 package defpackage;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.concurrent.TimeoutException;
+import android.os.StrictMode;
+import java.util.Locale;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.atomic.AtomicLong;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class v51 implements a92 {
-    public final /* synthetic */ int Q;
-    public final /* synthetic */ c90 R;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class v51 implements ThreadFactory {
+    public static final ThreadFactory e = Executors.defaultThreadFactory();
+    public final AtomicLong a = new AtomicLong();
+    public final String b;
+    public final int c;
+    public final StrictMode.ThreadPolicy d;
 
-    public /* synthetic */ v51(c90 c90Var, int i) {
-        this.Q = i;
-        this.R = c90Var;
+    public v51(String str, int i, StrictMode.ThreadPolicy threadPolicy) {
+        this.b = str;
+        this.c = i;
+        this.d = threadPolicy;
     }
 
-    @Override // defpackage.a92
-    public final void a0(Throwable th) {
-        int i = this.Q;
-        c90 c90Var = this.R;
-        switch (i) {
-            case 0:
-                if (!(th instanceof TimeoutException)) {
-                    c90Var.b(Collections.EMPTY_LIST);
-                } else {
-                    c90Var.c(th);
-                }
-                break;
-            default:
-                c90Var.c(th);
-                break;
-        }
-    }
-
-    @Override // defpackage.a92
-    public final void c(Object obj) {
-        int i = this.Q;
-        c90 c90Var = this.R;
-        switch (i) {
-            case 0:
-                List list = (List) obj;
-                list.getClass();
-                c90Var.b(new ArrayList(list));
-                break;
-            default:
-                try {
-                    c90Var.b(obj);
-                } catch (Throwable th) {
-                    c90Var.c(th);
-                    return;
-                }
-                break;
-        }
+    @Override // java.util.concurrent.ThreadFactory
+    public final Thread newThread(Runnable runnable) {
+        Thread newThread = e.newThread(new nc(17, this, runnable));
+        Locale locale = Locale.ROOT;
+        newThread.setName(this.b + " Thread #" + this.a.getAndIncrement());
+        return newThread;
     }
 }

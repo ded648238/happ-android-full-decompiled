@@ -1,49 +1,51 @@
 package defpackage;
 
-import j$.time.format.DateTimeFormatter;
+import java.util.List;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class bk7 implements q83 {
-    public static final bk7 a = new bk7();
-    public static final zz4 b = f93.b("kotlinx.datetime.UtcOffset");
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class bk7 {
+    public final List a;
+    public final List b;
+    public final int c;
+    public final int d;
+    public final int e;
 
-    @Override // defpackage.q83
-    public final void a(dl6 dl6Var, Object obj) {
-        sj7 sj7Var = (sj7) obj;
-        sj7Var.getClass();
-        dl6Var.q(sj7Var.toString());
+    public bk7(List list, List list2, int i, int i2, int i3) {
+        this.a = list;
+        this.b = list2;
+        this.c = i;
+        this.d = i2;
+        this.e = i3;
     }
 
-    @Override // defpackage.q83
-    public final Object b(v21 v21Var) {
-        rj7 rj7Var = sj7.Companion;
-        String strS = v21Var.s();
-        zu6 zu6Var = wj7.a;
-        uj7 uj7Var = (uj7) zu6Var.getValue();
-        rj7Var.getClass();
-        strS.getClass();
-        uj7Var.getClass();
-        if (uj7Var == ((uj7) zu6Var.getValue())) {
-            DateTimeFormatter dateTimeFormatter = (DateTimeFormatter) yj7.a.getValue();
-            dateTimeFormatter.getClass();
-            return yj7.a(strS, dateTimeFormatter);
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        if (uj7Var == ((uj7) wj7.b.getValue())) {
-            DateTimeFormatter dateTimeFormatter2 = (DateTimeFormatter) yj7.b.getValue();
-            dateTimeFormatter2.getClass();
-            return yj7.a(strS, dateTimeFormatter2);
+        if (!(obj instanceof bk7)) {
+            return false;
         }
-        if (uj7Var != ((uj7) wj7.c.getValue())) {
-            return (sj7) uj7Var.e(strS);
-        }
-        DateTimeFormatter dateTimeFormatter3 = (DateTimeFormatter) yj7.c.getValue();
-        dateTimeFormatter3.getClass();
-        return yj7.a(strS, dateTimeFormatter3);
+        bk7 bk7Var = (bk7) obj;
+        return this.a.equals(bk7Var.a) && m93.h(this.b, bk7Var.b) && this.c == bk7Var.c && this.d == bk7Var.d && this.e == bk7Var.e;
     }
 
-    @Override // defpackage.q83
-    public final l56 d() {
-        return b;
+    public final int hashCode() {
+        int hashCode = this.a.hashCode() * 31;
+        List list = this.b;
+        return Integer.hashCode(this.e) + eh0.d(this.d, eh0.d(this.c, (hashCode + (list == null ? 0 : list.hashCode())) * 31, 31), 31);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("BestSizesAndMaxFpsForConfigs(bestSizes=");
+        sb.append(this.a);
+        sb.append(", bestSizesForStreamUseCase=");
+        sb.append(this.b);
+        sb.append(", maxFpsForBestSizes=");
+        sb.append(this.c);
+        sb.append(", maxFpsForStreamUseCase=");
+        sb.append(this.d);
+        sb.append(", maxFpsForAllSizes=");
+        return eb7.l(sb, this.e, ')');
     }
 }

@@ -1,6 +1,6 @@
 .class public final Lokhttp3/CertificatePinner$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -144,32 +144,32 @@
 .end method
 
 .method public final build()Lokhttp3/CertificatePinner;
-    .locals 4
+    .locals 3
 
     .line 1
     new-instance v0, Lokhttp3/CertificatePinner;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lokhttp3/CertificatePinner$Builder;->pins:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Builder;->pins:Ljava/util/List;
 
     .line 4
     .line 5
-    invoke-static {v1}, Lnm0;->d1(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {p0}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v1
+    move-result-object p0
 
     .line 9
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 10
-    const/4 v3, 0x2
+    const/4 v2, 0x2
 
     .line 11
-    invoke-direct {v0, v1, v2, v3, v2}, Lokhttp3/CertificatePinner;-><init>(Ljava/util/Set;Lokhttp3/internal/tls/CertificateChainCleaner;ILj31;)V
+    invoke-direct {v0, p0, v1, v2, v1}, Lokhttp3/CertificatePinner;-><init>(Ljava/util/Set;Lokhttp3/internal/tls/CertificateChainCleaner;ILib1;)V
 
     .line 12
     .line 13
@@ -178,7 +178,7 @@
 .end method
 
 .method public final getPins()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -189,9 +189,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/CertificatePinner$Builder;->pins:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/CertificatePinner$Builder;->pins:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

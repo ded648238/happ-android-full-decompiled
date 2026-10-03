@@ -1,419 +1,378 @@
-.class public final Lez3;
-.super Landroid/widget/ArrayAdapter;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lez3;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lji2;
 
 
 # instance fields
-.field public Q:Landroid/content/res/ColorStateList;
+.field public final synthetic X:I
 
-.field public R:Landroid/content/res/ColorStateList;
-
-.field public final synthetic S:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
+.field public final synthetic Y:Lfz3;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;Landroid/content/Context;I[Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lfz3;I)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lez3;->S:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
+    iput p2, p0, Lez3;->X:I
 
     .line 2
     .line 3
-    invoke-direct {p0, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
+    iput-object p1, p0, Lez3;->Y:Lfz3;
 
     .line 4
     .line 5
-    .line 6
-    invoke-virtual {p0}, Lez3;->a()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
     .line 7
     .line 8
-    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 9
+.method public final invoke()Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lez3;->S:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
+    iget v0, p0, Lez3;->X:I
 
     .line 2
     .line 3
-    iget-object v1, v0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->e0:Landroid/content/res/ColorStateList;
+    iget-object p0, p0, Lez3;->Y:Lfz3;
 
     .line 4
     .line 5
-    const/4 v2, 0x1
+    packed-switch v0, :pswitch_data_0
 
     .line 6
-    const/4 v3, 0x2
-
     .line 7
-    const/4 v4, 0x0
-
     .line 8
-    const/4 v5, 0x0
+    iget-object v0, p0, Lfz3;->o0:Lbz3;
 
     .line 9
-    if-eqz v1, :cond_0
-
     .line 10
-    .line 11
-    const v6, 0x10100a7
+    iget-object v0, v0, Lbz3;->b:Lqz3;
 
+    .line 11
     .line 12
+    invoke-virtual {v0}, Lqz3;->d()Lmz3;
+
     .line 13
     .line 14
-    filled-new-array {v6}, [I
-
     .line 15
-    .line 16
-    .line 17
-    move-result-object v6
+    move-result-object v1
 
+    .line 16
+    iget-object v1, v1, Lmz3;->o:Ly25;
+
+    .line 17
     .line 18
-    invoke-virtual {v1, v6, v5}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+    sget-object v2, Ly25;->X:Ly25;
 
     .line 19
     .line 20
-    .line 21
-    move-result v1
+    if-ne v1, v2, :cond_0
 
+    .line 21
     .line 22
-    filled-new-array {v1, v5}, [I
+    invoke-virtual {v0}, Lqz3;->d()Lmz3;
 
     .line 23
     .line 24
     .line 25
-    move-result-object v1
+    move-result-object v0
 
     .line 26
-    new-array v7, v5, [I
+    invoke-virtual {v0}, Lmz3;->i()J
 
     .line 27
     .line 28
-    new-array v8, v3, [[I
-
     .line 29
+    move-result-wide v0
+
     .line 30
-    aput-object v6, v8, v5
+    const-wide v2, 0xffffffffL
 
     .line 31
     .line 32
-    aput-object v7, v8, v2
-
     .line 33
     .line 34
-    new-instance v6, Landroid/content/res/ColorStateList;
-
     .line 35
+    and-long/2addr v0, v2
+
     .line 36
-    invoke-direct {v6, v8, v1}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
+    :goto_0
+    long-to-int v0, v0
 
     .line 37
+    goto :goto_1
+
     .line 38
-    .line 39
-    goto :goto_0
-
-    .line 40
     :cond_0
-    move-object v6, v4
+    invoke-virtual {v0}, Lqz3;->d()Lmz3;
 
+    .line 39
+    .line 40
     .line 41
-    :goto_0
-    iput-object v6, p0, Lez3;->R:Landroid/content/res/ColorStateList;
+    move-result-object v0
 
     .line 42
-    .line 43
-    iget v1, v0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->d0:I
+    invoke-virtual {v0}, Lmz3;->i()J
 
+    .line 43
     .line 44
     .line 45
-    if-eqz v1, :cond_1
+    move-result-wide v0
 
     .line 46
-    .line 47
-    iget-object v1, v0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->e0:Landroid/content/res/ColorStateList;
+    const/16 v2, 0x20
 
+    .line 47
     .line 48
+    shr-long/2addr v0, v2
+
     .line 49
-    if-eqz v1, :cond_1
+    goto :goto_0
 
     .line 50
-    .line 51
-    const v1, 0x1010367
+    :goto_1
+    iget-object p0, p0, Lfz3;->o0:Lbz3;
 
+    .line 51
     .line 52
+    iget-object p0, p0, Lbz3;->b:Lqz3;
+
     .line 53
     .line 54
-    const v4, -0x10100a7
+    invoke-virtual {p0}, Lqz3;->d()Lmz3;
 
     .line 55
     .line 56
     .line 57
-    filled-new-array {v1, v4}, [I
-
-    .line 58
-    .line 59
-    .line 60
     move-result-object v1
 
+    .line 58
+    iget v1, v1, Lmz3;->l:I
+
+    .line 59
+    .line 60
+    neg-int v1, v1
+
     .line 61
-    const v6, 0x10100a1
+    invoke-virtual {p0}, Lqz3;->d()Lmz3;
 
     .line 62
     .line 63
     .line 64
-    filled-new-array {v6, v4}, [I
+    move-result-object p0
 
     .line 65
+    iget p0, p0, Lmz3;->p:I
+
     .line 66
     .line 67
-    move-result-object v4
+    add-int/2addr v1, p0
 
     .line 68
-    iget-object v6, v0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->e0:Landroid/content/res/ColorStateList;
+    sub-int/2addr v0, v1
 
     .line 69
+    int-to-float p0, v0
+
     .line 70
-    invoke-virtual {v6, v4, v5}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     .line 71
     .line 72
     .line 73
-    move-result v6
+    move-result-object p0
 
     .line 74
-    iget-object v7, v0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->e0:Landroid/content/res/ColorStateList;
+    return-object p0
 
     .line 75
-    .line 76
-    invoke-virtual {v7, v1, v5}, Landroid/content/res/ColorStateList;->getColorForState([II)I
+    :pswitch_0
+    iget-object p0, p0, Lfz3;->o0:Lbz3;
 
+    .line 76
     .line 77
+    iget-object p0, p0, Lbz3;->b:Lqz3;
+
     .line 78
     .line 79
-    move-result v7
+    iget-object v0, p0, Lqz3;->d0:Lig;
 
     .line 80
-    iget v8, v0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->d0:I
-
     .line 81
-    .line 82
-    invoke-static {v6, v8}, Lin0;->b(II)I
+    iget-object v0, v0, Lig;->b:Ljava/lang/Object;
 
+    .line 82
     .line 83
+    check-cast v0, Lu65;
+
     .line 84
     .line 85
-    move-result v6
+    invoke-virtual {v0}, Lu65;->k()I
 
     .line 86
-    iget v8, v0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->d0:I
-
     .line 87
     .line 88
-    invoke-static {v7, v8}, Lin0;->b(II)I
+    move-result v0
 
     .line 89
+    iget-object v1, p0, Lqz3;->d0:Lig;
+
     .line 90
     .line 91
-    move-result v7
+    iget-object v1, v1, Lig;->c:Ljava/lang/Object;
 
     .line 92
-    iget v0, v0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->d0:I
-
     .line 93
-    .line 94
-    filled-new-array {v6, v7, v0}, [I
+    check-cast v1, Lu65;
 
+    .line 94
     .line 95
+    invoke-virtual {v1}, Lu65;->k()I
+
     .line 96
     .line 97
-    move-result-object v0
-
     .line 98
-    new-array v6, v5, [I
+    move-result v1
 
     .line 99
+    invoke-virtual {p0}, Lqz3;->j()Z
+
     .line 100
-    const/4 v7, 0x3
-
     .line 101
-    new-array v7, v7, [[I
-
     .line 102
+    move-result p0
+
     .line 103
-    aput-object v4, v7, v5
+    if-eqz p0, :cond_1
 
     .line 104
     .line 105
-    aput-object v1, v7, v2
+    mul-int/lit16 v0, v0, 0x1f4
 
     .line 106
     .line 107
-    aput-object v6, v7, v3
+    add-int/2addr v0, v1
 
     .line 108
+    int-to-float p0, v0
+
     .line 109
-    new-instance v4, Landroid/content/res/ColorStateList;
+    const/high16 v0, 0x42c80000    # 100.0f
 
     .line 110
     .line 111
-    invoke-direct {v4, v7, v0}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
+    add-float/2addr p0, v0
 
     .line 112
+    goto :goto_2
+
     .line 113
-    .line 114
     :cond_1
-    iput-object v4, p0, Lez3;->Q:Landroid/content/res/ColorStateList;
+    mul-int/lit16 v0, v0, 0x1f4
 
+    .line 114
     .line 115
+    add-int/2addr v0, v1
+
     .line 116
-    return-void
-.end method
+    int-to-float p0, v0
 
-.method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 3
+    .line 117
+    :goto_2
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    .line 1
-    invoke-super {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    .line 118
+    .line 119
+    .line 120
+    move-result-object p0
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
+    .line 121
+    return-object p0
 
-    .line 5
-    instance-of p2, p1, Landroid/widget/TextView;
+    .line 122
+    :pswitch_1
+    iget-object p0, p0, Lfz3;->o0:Lbz3;
 
-    .line 6
-    .line 7
-    if-eqz p2, :cond_2
+    .line 123
+    .line 124
+    iget-object p0, p0, Lbz3;->b:Lqz3;
 
-    .line 8
-    .line 9
-    move-object p2, p1
+    .line 125
+    .line 126
+    iget-object v0, p0, Lqz3;->d0:Lig;
 
-    .line 10
-    check-cast p2, Landroid/widget/TextView;
+    .line 127
+    .line 128
+    iget-object v0, v0, Lig;->b:Ljava/lang/Object;
 
-    .line 11
-    .line 12
-    iget-object p3, p0, Lez3;->S:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
+    .line 129
+    .line 130
+    check-cast v0, Lu65;
 
-    .line 13
-    .line 14
-    invoke-virtual {p3}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    .line 131
+    .line 132
+    invoke-virtual {v0}, Lu65;->k()I
 
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    invoke-virtual {p2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v1
-
-    .line 26
-    invoke-virtual {v0, v1}, Ljava/lang/String;->contentEquals(Ljava/lang/CharSequence;)Z
-
-    .line 27
-    .line 28
-    .line 29
+    .line 133
+    .line 134
+    .line 135
     move-result v0
 
-    .line 30
-    const/4 v1, 0x0
+    .line 136
+    iget-object p0, p0, Lqz3;->d0:Lig;
 
-    .line 31
-    if-eqz v0, :cond_1
+    .line 137
+    .line 138
+    iget-object p0, p0, Lig;->c:Ljava/lang/Object;
 
-    .line 32
-    .line 33
-    iget v0, p3, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->d0:I
+    .line 139
+    .line 140
+    check-cast p0, Lu65;
 
-    .line 34
-    .line 35
-    if-eqz v0, :cond_1
+    .line 141
+    .line 142
+    invoke-virtual {p0}, Lu65;->k()I
 
-    .line 36
-    .line 37
-    new-instance v0, Landroid/graphics/drawable/ColorDrawable;
+    .line 143
+    .line 144
+    .line 145
+    move-result p0
 
-    .line 38
-    .line 39
-    iget p3, p3, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->d0:I
+    .line 146
+    mul-int/lit16 v0, v0, 0x1f4
 
-    .line 40
-    .line 41
-    invoke-direct {v0, p3}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+    .line 147
+    .line 148
+    add-int/2addr v0, p0
 
-    .line 42
-    .line 43
-    .line 44
-    iget-object p3, p0, Lez3;->R:Landroid/content/res/ColorStateList;
+    .line 149
+    int-to-float p0, v0
 
-    .line 45
-    .line 46
-    if-eqz p3, :cond_0
+    .line 150
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    .line 47
-    .line 48
-    iget-object p3, p0, Lez3;->Q:Landroid/content/res/ColorStateList;
+    .line 151
+    .line 152
+    .line 153
+    move-result-object p0
 
-    .line 49
-    .line 50
-    invoke-virtual {v0, p3}, Landroid/graphics/drawable/Drawable;->setTintList(Landroid/content/res/ColorStateList;)V
+    .line 154
+    return-object p0
 
-    .line 51
-    .line 52
-    .line 53
-    new-instance p3, Landroid/graphics/drawable/RippleDrawable;
-
-    .line 54
-    .line 55
-    iget-object v2, p0, Lez3;->R:Landroid/content/res/ColorStateList;
-
-    .line 56
-    .line 57
-    invoke-direct {p3, v2, v0, v1}, Landroid/graphics/drawable/RippleDrawable;-><init>(Landroid/content/res/ColorStateList;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
-
-    .line 58
-    .line 59
-    .line 60
-    move-object v1, p3
-
-    .line 61
-    goto :goto_0
-
-    .line 62
-    :cond_0
-    move-object v1, v0
-
-    .line 63
-    :cond_1
-    :goto_0
-    invoke-virtual {p2, v1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
-
-    .line 64
-    .line 65
-    .line 66
-    :cond_2
-    return-object p1
+    .line 155
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

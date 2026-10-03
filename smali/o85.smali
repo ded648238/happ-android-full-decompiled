@@ -1,104 +1,156 @@
-.class public abstract Lo85;
-.super Ljava/lang/Object;
+.class public final Lo85;
+.super Lp85;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static lb_action_bg:I = 0x7f0807e5
+# instance fields
+.field public final c:F
 
-.field public static lb_action_bg_focused:I = 0x7f0807e6
 
-.field public static lb_background:I = 0x7f0807e7
+# direct methods
+.method public constructor <init>(F)V
+    .locals 1
 
-.field public static lb_card_foreground:I = 0x7f0807e8
+    .line 1
+    const/4 v0, 0x3
 
-.field public static lb_card_shadow_focused:I = 0x7f0807e9
+    .line 2
+    invoke-direct {p0, v0}, Lp85;-><init>(I)V
 
-.field public static lb_card_shadow_normal:I = 0x7f0807ea
+    .line 3
+    .line 4
+    .line 5
+    iput p1, p0, Lo85;->c:F
 
-.field public static lb_control_button_primary:I = 0x7f0807eb
+    .line 6
+    .line 7
+    return-void
+.end method
 
-.field public static lb_control_button_secondary:I = 0x7f0807ec
 
-.field public static lb_headers_right_fading:I = 0x7f0807ed
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
-.field public static lb_ic_actions_right_arrow:I = 0x7f0807ee
+    .line 1
+    const/4 v0, 0x1
 
-.field public static lb_ic_cc:I = 0x7f0807ef
+    .line 2
+    if-ne p0, p1, :cond_0
 
-.field public static lb_ic_fast_forward:I = 0x7f0807f0
+    .line 3
+    .line 4
+    return v0
 
-.field public static lb_ic_fast_rewind:I = 0x7f0807f1
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lo85;
 
-.field public static lb_ic_guidedactions_item_chevron:I = 0x7f0807f2
+    .line 6
+    .line 7
+    const/4 v2, 0x0
 
-.field public static lb_ic_hq:I = 0x7f0807f3
+    .line 8
+    if-nez v1, :cond_1
 
-.field public static lb_ic_in_app_search:I = 0x7f0807f4
+    .line 9
+    .line 10
+    return v2
 
-.field public static lb_ic_loop:I = 0x7f0807f5
+    .line 11
+    :cond_1
+    check-cast p1, Lo85;
 
-.field public static lb_ic_loop_one:I = 0x7f0807f6
+    .line 12
+    .line 13
+    iget p0, p0, Lo85;->c:F
 
-.field public static lb_ic_more:I = 0x7f0807f7
+    .line 14
+    .line 15
+    iget p1, p1, Lo85;->c:F
 
-.field public static lb_ic_nav_arrow:I = 0x7f0807f8
+    .line 16
+    .line 17
+    invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
 
-.field public static lb_ic_pause:I = 0x7f0807f9
+    .line 18
+    .line 19
+    .line 20
+    move-result p0
 
-.field public static lb_ic_pip:I = 0x7f0807fa
+    .line 21
+    if-eqz p0, :cond_2
 
-.field public static lb_ic_play:I = 0x7f0807fb
+    .line 22
+    .line 23
+    return v2
 
-.field public static lb_ic_play_fit:I = 0x7f0807fc
+    .line 24
+    :cond_2
+    return v0
+.end method
 
-.field public static lb_ic_playback_loop:I = 0x7f0807fd
+.method public final hashCode()I
+    .locals 0
 
-.field public static lb_ic_replay:I = 0x7f0807fe
+    .line 1
+    iget p0, p0, Lo85;->c:F
 
-.field public static lb_ic_sad_cloud:I = 0x7f0807ff
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
 
-.field public static lb_ic_search_mic:I = 0x7f080800
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
 
-.field public static lb_ic_search_mic_out:I = 0x7f080801
+    .line 7
+    return p0
+.end method
 
-.field public static lb_ic_shuffle:I = 0x7f080802
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-.field public static lb_ic_skip_next:I = 0x7f080803
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-.field public static lb_ic_skip_previous:I = 0x7f080804
+    .line 2
+    .line 3
+    const-string v1, "VerticalTo(y="
 
-.field public static lb_ic_stop:I = 0x7f080805
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-.field public static lb_ic_thumb_down:I = 0x7f080806
+    .line 6
+    .line 7
+    .line 8
+    iget p0, p0, Lo85;->c:F
 
-.field public static lb_ic_thumb_down_outline:I = 0x7f080807
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-.field public static lb_ic_thumb_up:I = 0x7f080808
+    .line 11
+    .line 12
+    .line 13
+    const-string p0, ")"
 
-.field public static lb_ic_thumb_up_outline:I = 0x7f080809
+    .line 14
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.field public static lb_in_app_search_bg:I = 0x7f08080a
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-.field public static lb_in_app_search_shadow_focused:I = 0x7f08080b
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
 
-.field public static lb_in_app_search_shadow_normal:I = 0x7f08080c
-
-.field public static lb_onboarding_start_button_background:I = 0x7f08080d
-
-.field public static lb_playback_now_playing_bar:I = 0x7f08080e
-
-.field public static lb_playback_progress_bar:I = 0x7f08080f
-
-.field public static lb_search_orb:I = 0x7f080810
-
-.field public static lb_selectable_item_rounded_rect:I = 0x7f080811
-
-.field public static lb_speech_orb:I = 0x7f080812
-
-.field public static lb_text_dot_one:I = 0x7f080813
-
-.field public static lb_text_dot_one_small:I = 0x7f080814
-
-.field public static lb_text_dot_two:I = 0x7f080815
-
-.field public static lb_text_dot_two_small:I = 0x7f080816
+    .line 22
+    return-object p0
+.end method

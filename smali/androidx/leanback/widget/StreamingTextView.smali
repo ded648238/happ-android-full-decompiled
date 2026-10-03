@@ -1,24 +1,24 @@
 .class abstract Landroidx/leanback/widget/StreamingTextView;
 .super Landroid/widget/EditText;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final V:Ljava/util/regex/Pattern;
+.field public static final h0:Ljava/util/regex/Pattern;
 
-.field public static final W:Landroidx/leanback/widget/b;
+.field public static final i0:Landroidx/leanback/widget/b;
 
 
 # instance fields
-.field public final Q:Ljava/util/Random;
+.field public final c0:Ljava/util/Random;
 
-.field public R:Landroid/graphics/Bitmap;
+.field public d0:Landroid/graphics/Bitmap;
 
-.field public S:Landroid/graphics/Bitmap;
+.field public e0:Landroid/graphics/Bitmap;
 
-.field public T:I
+.field public f0:I
 
-.field public U:Landroid/animation/ObjectAnimator;
+.field public g0:Landroid/animation/ObjectAnimator;
 
 
 # direct methods
@@ -38,7 +38,7 @@
     move-result-object v0
 
     .line 7
-    sput-object v0, Landroidx/leanback/widget/StreamingTextView;->V:Ljava/util/regex/Pattern;
+    sput-object v0, Landroidx/leanback/widget/StreamingTextView;->h0:Ljava/util/regex/Pattern;
 
     .line 8
     .line 9
@@ -59,7 +59,7 @@
     .line 16
     .line 17
     .line 18
-    sput-object v0, Landroidx/leanback/widget/StreamingTextView;->W:Landroidx/leanback/widget/b;
+    sput-object v0, Landroidx/leanback/widget/StreamingTextView;->i0:Landroidx/leanback/widget/b;
 
     .line 19
     .line 20
@@ -84,7 +84,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object p1, p0, Landroidx/leanback/widget/StreamingTextView;->Q:Ljava/util/Random;
+    iput-object p1, p0, Landroidx/leanback/widget/StreamingTextView;->c0:Ljava/util/Random;
 
     .line 10
     .line 11
@@ -94,26 +94,26 @@
 
 # virtual methods
 .method public getStreamPosition()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/StreamingTextView;->T:I
+    iget p0, p0, Landroidx/leanback/widget/StreamingTextView;->f0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final onFinishInflate()V
     .locals 5
 
     .line 1
-    invoke-super {p0}, Landroid/widget/EditText;->onFinishInflate()V
+    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 2
     .line 3
     .line 4
-    sget v0, Lo85;->lb_text_dot_one:I
+    sget v0, Lns5;->lb_text_dot_one:I
 
     .line 5
     .line 6
@@ -149,168 +149,161 @@
     .line 20
     .line 21
     .line 22
-    mul-float v1, v1, v2
+    mul-float/2addr v1, v2
 
     .line 23
-    .line 24
     float-to-int v1, v1
 
-    .line 25
+    .line 24
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
+    .line 25
     .line 26
     .line 27
-    .line 28
     move-result v3
 
-    .line 29
+    .line 28
     int-to-float v3, v3
 
-    .line 30
-    mul-float v3, v3, v2
+    .line 29
+    mul-float/2addr v3, v2
 
-    .line 31
-    .line 32
+    .line 30
     float-to-int v3, v3
 
-    .line 33
+    .line 31
     const/4 v4, 0x0
 
-    .line 34
+    .line 32
     invoke-static {v0, v1, v3, v4}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
+    .line 33
+    .line 34
     .line 35
-    .line 36
-    .line 37
     move-result-object v0
 
+    .line 36
+    iput-object v0, p0, Landroidx/leanback/widget/StreamingTextView;->d0:Landroid/graphics/Bitmap;
+
+    .line 37
     .line 38
-    iput-object v0, p0, Landroidx/leanback/widget/StreamingTextView;->R:Landroid/graphics/Bitmap;
+    sget v0, Lns5;->lb_text_dot_two:I
 
     .line 39
     .line 40
-    sget v0, Lo85;->lb_text_dot_two:I
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 41
     .line 42
-    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
     .line 43
-    .line 44
-    .line 45
     move-result-object v1
 
-    .line 46
+    .line 44
     invoke-static {v1, v0}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
+    .line 45
+    .line 46
     .line 47
-    .line 48
-    .line 49
     move-result-object v0
 
-    .line 50
+    .line 48
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
+    .line 49
+    .line 50
     .line 51
-    .line 52
-    .line 53
     move-result v1
 
-    .line 54
+    .line 52
     int-to-float v1, v1
 
+    .line 53
+    mul-float/2addr v1, v2
+
+    .line 54
+    float-to-int v1, v1
+
     .line 55
-    mul-float v1, v1, v2
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
     .line 56
     .line 57
-    float-to-int v1, v1
-
     .line 58
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    .line 59
-    .line 60
-    .line 61
     move-result v3
 
-    .line 62
+    .line 59
     int-to-float v3, v3
 
-    .line 63
-    mul-float v3, v3, v2
+    .line 60
+    mul-float/2addr v3, v2
 
-    .line 64
-    .line 65
+    .line 61
     float-to-int v2, v3
 
-    .line 66
+    .line 62
     invoke-static {v0, v1, v2, v4}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v0
+
+    .line 66
+    iput-object v0, p0, Landroidx/leanback/widget/StreamingTextView;->e0:Landroid/graphics/Bitmap;
 
     .line 67
     .line 68
-    .line 69
-    move-result-object v0
+    check-cast p0, Landroidx/leanback/widget/SearchEditText;
 
+    .line 69
     .line 70
-    iput-object v0, p0, Landroidx/leanback/widget/StreamingTextView;->S:Landroid/graphics/Bitmap;
+    const/4 v0, -0x1
 
     .line 71
-    .line 72
-    move-object v0, p0
+    iput v0, p0, Landroidx/leanback/widget/StreamingTextView;->f0:I
 
+    .line 72
     .line 73
-    check-cast v0, Landroidx/leanback/widget/SearchEditText;
+    iget-object v0, p0, Landroidx/leanback/widget/StreamingTextView;->g0:Landroid/animation/ObjectAnimator;
 
     .line 74
     .line 75
-    const/4 v1, -0x1
+    if-eqz v0, :cond_0
 
     .line 76
-    iput v1, v0, Landroidx/leanback/widget/StreamingTextView;->T:I
-
     .line 77
-    .line 78
-    iget-object v1, v0, Landroidx/leanback/widget/StreamingTextView;->U:Landroid/animation/ObjectAnimator;
+    invoke-virtual {v0}, Landroid/animation/Animator;->cancel()V
 
+    .line 78
     .line 79
     .line 80
-    if-eqz v1, :cond_0
+    :cond_0
+    const-string v0, ""
 
     .line 81
     .line 82
-    invoke-virtual {v1}, Landroid/animation/Animator;->cancel()V
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 83
     .line 84
     .line 85
-    :cond_0
-    const-string v1, ""
-
-    .line 86
-    .line 87
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 88
-    .line 89
-    .line 90
     return-void
 .end method
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Landroid/widget/EditText;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
+    invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
     .line 2
     .line 3
     .line 4
-    const-string v0, "androidx.leanback.widget.StreamingTextView"
+    const-string p0, "androidx.leanback.widget.StreamingTextView"
 
     .line 5
     .line 6
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
 
     .line 7
     .line 8
@@ -322,7 +315,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p0}, Lb15;->X(Landroid/view/ActionMode$Callback;Landroid/widget/TextView;)Landroid/view/ActionMode$Callback;
+    invoke-static {p1, p0}, Lbv7;->l(Landroid/view/ActionMode$Callback;Landroid/widget/TextView;)Landroid/view/ActionMode$Callback;
 
     .line 2
     .line 3
@@ -330,7 +323,7 @@
     move-result-object p1
 
     .line 5
-    invoke-super {p0, p1}, Landroid/widget/EditText;->setCustomSelectionActionModeCallback(Landroid/view/ActionMode$Callback;)V
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setCustomSelectionActionModeCallback(Landroid/view/ActionMode$Callback;)V
 
     .line 6
     .line 7
@@ -342,7 +335,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/leanback/widget/StreamingTextView;->T:I
+    iput p1, p0, Landroidx/leanback/widget/StreamingTextView;->f0:I
 
     .line 2
     .line 3

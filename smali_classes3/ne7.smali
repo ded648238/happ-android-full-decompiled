@@ -1,370 +1,220 @@
 .class public final Lne7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lyy0;
+.implements Loe7;
 
 
 # instance fields
-.field public final synthetic Q:I
+.field public final a:Ljava/lang/String;
 
-.field public final synthetic R:La86;
+.field public final b:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(La86;I)V
+.method public constructor <init>(Ljava/lang/String;Z)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lne7;->Q:I
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    iput-object p1, p0, Lne7;->R:La86;
-
     .line 4
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 5
     .line 6
     .line 7
+    iput-object p1, p0, Lne7;->a:Ljava/lang/String;
+
     .line 8
+    .line 9
+    iput-boolean p2, p0, Lne7;->b:Z
+
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final L()Z
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    iget v0, p0, Lne7;->Q:I
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Lne7;->R:La86;
+    return v0
 
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lne7;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    iget-object v1, v0, La86;->R:Lq62;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    iget-object v1, v1, Lq62;->T:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    return v2
 
     .line 11
-    .line 12
-    invoke-virtual {v0, v1}, La86;->a(Landroid/view/View;)Z
+    :cond_1
+    check-cast p1, Lne7;
 
+    .line 12
     .line 13
+    iget-object v1, p0, Lne7;->a:Ljava/lang/String;
+
     .line 14
     .line 15
-    move-result v0
+    iget-object v3, p1, Lne7;->a:Ljava/lang/String;
 
     .line 16
-    return v0
-
     .line 17
-    :pswitch_0
-    const/4 v0, 0x0
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
-    return v0
-
     .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-boolean p0, p0, Lne7;->b:Z
+
+    .line 25
+    .line 26
+    iget-boolean p1, p1, Lne7;->b:Z
+
+    .line 27
+    .line 28
+    if-eq p0, p1, :cond_3
+
+    .line 29
+    .line 30
+    return v2
+
+    .line 31
+    :cond_3
+    return v0
 .end method
 
-.method public final bridge M()Z
+.method public final hashCode()I
     .locals 1
 
     .line 1
-    iget v0, p0, Lne7;->Q:I
+    iget-object v0, p0, Lne7;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    const/4 v0, 0x0
+    move-result v0
 
     .line 7
-    return v0
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 8
-    :pswitch_0
-    const/4 v0, 0x0
-
     .line 9
-    return v0
+    iget-boolean p0, p0, Lne7;->b:Z
 
     .line 10
-    nop
-
     .line 11
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    add-int/2addr p0, v0
+
+    .line 16
+    return p0
 .end method
 
-.method public final e0()Z
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     .line 1
-    iget v0, p0, Lne7;->Q:I
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lne7;->R:La86;
+    const-string v1, "SubSaved(subId="
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    iget-object v0, v1, La86;->S:Lsu/happ/proxyutility/feature/settings/SettingsActivity;
+    iget-object v1, p0, Lne7;->a:Ljava/lang/String;
 
     .line 9
     .line 10
-    iget-object v0, v0, Lsu/happ/proxyutility/feature/settings/SettingsActivity;->J0:Lzu6;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
-
     .line 13
+    const-string v1, ", isUpdate="
+
     .line 14
     .line 15
-    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
-    check-cast v0, Lz76;
-
     .line 17
     .line 18
-    iget-object v1, v0, Lz76;->R:Lp62;
+    iget-boolean p0, p0, Lne7;->b:Z
 
     .line 19
     .line 20
-    iget-object v1, v1, Lp62;->T:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
-    invoke-virtual {v0, v1}, Lz76;->a(Landroid/view/View;)Z
-
     .line 23
+    const-string p0, ")"
+
     .line 24
     .line 25
-    move-result v0
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
-    return v0
-
     .line 27
-    :pswitch_0
-    iget-object v0, v1, La86;->R:Lq62;
-
     .line 28
-    .line 29
-    iget-object v0, v0, Lq62;->T:Lsu/happ/proxyutility/ui/foundation/component/HappSpinnerField;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 29
     .line 30
     .line 31
-    invoke-virtual {v1, v0}, La86;->a(Landroid/view/View;)Z
+    move-result-object p0
 
     .line 32
-    .line 33
-    .line 34
-    move-result v0
-
-    .line 35
-    return v0
-
-    .line 36
-    nop
-
-    .line 37
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final bridge g0()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lne7;->Q:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x0
-
-    .line 7
-    return v0
-
-    .line 8
-    :pswitch_0
-    const/4 v0, 0x0
-
-    .line 9
-    return v0
-
-    .line 10
-    nop
-
-    .line 11
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final m0()Z
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lne7;->Q:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lne7;->R:La86;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v0, v1, La86;->R:Lq62;
-
-    .line 9
-    .line 10
-    iget-object v0, v0, Lq62;->S:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 11
-    .line 12
-    invoke-virtual {v1, v0}, La86;->a(Landroid/view/View;)Z
-
-    .line 13
-    .line 14
-    .line 15
-    move-result v0
-
-    .line 16
-    return v0
-
-    .line 17
-    :pswitch_0
-    iget-object v0, v1, La86;->R:Lq62;
-
-    .line 18
-    .line 19
-    iget-object v0, v0, Lq62;->R:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 20
-    .line 21
-    invoke-virtual {v1, v0}, La86;->a(Landroid/view/View;)Z
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v0
-
-    .line 25
-    return v0
-
-    .line 26
-    nop
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final o()Z
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lne7;->Q:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lne7;->R:La86;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v0, v1, La86;->R:Lq62;
-
-    .line 9
-    .line 10
-    iget-object v0, v0, Lq62;->S:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 11
-    .line 12
-    invoke-virtual {v1, v0}, La86;->a(Landroid/view/View;)Z
-
-    .line 13
-    .line 14
-    .line 15
-    move-result v0
-
-    .line 16
-    return v0
-
-    .line 17
-    :pswitch_0
-    iget-object v0, v1, La86;->R:Lq62;
-
-    .line 18
-    .line 19
-    iget-object v0, v0, Lq62;->R:Lsu/happ/proxyutility/ui/foundation/component/HappForwardField;
-
-    .line 20
-    .line 21
-    invoke-virtual {v1, v0}, La86;->a(Landroid/view/View;)Z
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v0
-
-    .line 25
-    return v0
-
-    .line 26
-    nop
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p0
 .end method

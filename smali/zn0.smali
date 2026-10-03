@@ -1,261 +1,196 @@
-.class public abstract Lzn0;
+.class public final Lzn0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljava/util/Iterator;
+.implements Lxn3;
 
 
-# static fields
-.field public static final a:Ljava/util/LinkedHashSet;
+# instance fields
+.field public final X:I
+
+.field public final Y:I
+
+.field public Z:Z
+
+.field public c0:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(CCI)V
+    .locals 2
 
     .line 1
-    sget-object v0, Lb05;->U:Ljava/util/Set;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    check-cast v0, Ljava/lang/Iterable;
+    .line 4
+    iput p3, p0, Lzn0;->X:I
+
+    .line 5
+    .line 6
+    iput p2, p0, Lzn0;->Y:I
+
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    if-lez p3, :cond_0
+
+    .line 11
+    .line 12
+    if-gt p1, p2, :cond_1
+
+    .line 13
+    .line 14
+    :goto_0
+    move v0, v1
+
+    .line 15
+    goto :goto_1
+
+    .line 16
+    :cond_0
+    if-lt p1, p2, :cond_1
+
+    .line 17
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_1
+    :goto_1
+    iput-boolean v0, p0, Lzn0;->Z:Z
+
+    .line 20
+    .line 21
+    if-eqz v0, :cond_2
+
+    .line 22
+    .line 23
+    goto :goto_2
+
+    .line 24
+    :cond_2
+    move p1, p2
+
+    .line 25
+    :goto_2
+    iput p1, p0, Lzn0;->c0:I
+
+    .line 26
+    .line 27
+    return-void
+.end method
+
+
+# virtual methods
+.method public final hasNext()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lzn0;->Z:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final next()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lzn0;->c0:I
+
+    .line 2
+    .line 3
+    iget v1, p0, Lzn0;->Y:I
 
     .line 4
     .line 5
-    sget-object v1, Lsg6;->a:Lha4;
+    if-ne v0, v1, :cond_1
 
     .line 6
     .line 7
-    new-instance v1, Ljava/util/ArrayList;
+    iget-boolean v1, p0, Lzn0;->Z:Z
 
     .line 8
     .line 9
-    const/16 v2, 0xa
+    if-eqz v1, :cond_0
 
     .line 10
     .line 11
-    invoke-static {v0, v2}, Lom0;->e0(Ljava/lang/Iterable;I)I
+    const/4 v1, 0x0
 
     .line 12
+    iput-boolean v1, p0, Lzn0;->Z:Z
+
     .line 13
     .line 14
-    move-result v2
+    goto :goto_0
 
     .line 15
-    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+    :cond_0
+    invoke-static {}, Li60;->a()V
 
     .line 16
     .line 17
     .line 18
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    const/4 p0, 0x0
 
     .line 19
-    .line 20
-    .line 21
-    move-result-object v0
+    return-object p0
 
+    .line 20
+    :cond_1
+    iget v1, p0, Lzn0;->X:I
+
+    .line 21
     .line 22
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    add-int/2addr v1, v0
 
     .line 23
+    iput v1, p0, Lzn0;->c0:I
+
     .line 24
     .line 25
-    move-result v2
+    :goto_0
+    int-to-char p0, v0
 
     .line 26
-    if-eqz v2, :cond_0
+    invoke-static {p0}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
     .line 27
     .line 28
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 29
+    move-result-object p0
+
     .line 30
-    .line 31
-    move-result-object v2
+    return-object p0
+.end method
 
-    .line 32
-    check-cast v2, Lb05;
+.method public final remove()V
+    .locals 1
 
-    .line 33
-    .line 34
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    .line 35
-    .line 36
-    .line 37
-    sget-object v3, Lsg6;->k:Lr42;
+    .line 2
+    .line 3
+    const-string v0, "Operation is not supported for read-only collection"
 
-    .line 38
-    .line 39
-    iget-object v2, v2, Lb05;->Q:Lha4;
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    .line 40
-    .line 41
-    invoke-virtual {v3, v2}, Lr42;->a(Lha4;)Lr42;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v2
-
-    .line 45
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 46
-    .line 47
-    .line 48
-    goto :goto_0
-
-    .line 49
-    :cond_0
-    sget-object v0, Lrg6;->f:Ls42;
-
-    .line 50
-    .line 51
-    invoke-virtual {v0}, Ls42;->i()Lr42;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v0
-
-    .line 55
-    invoke-static {v1, v0}, Lnm0;->L0(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/ArrayList;
-
-    .line 56
-    .line 57
-    .line 58
-    move-result-object v0
-
-    .line 59
-    sget-object v1, Lrg6;->h:Ls42;
-
-    .line 60
-    .line 61
-    invoke-virtual {v1}, Ls42;->i()Lr42;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v1
-
-    .line 65
-    invoke-static {v0, v1}, Lnm0;->L0(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/ArrayList;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v0
-
-    .line 69
-    sget-object v1, Lrg6;->j:Ls42;
-
-    .line 70
-    .line 71
-    invoke-virtual {v1}, Ls42;->i()Lr42;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object v1
-
-    .line 75
-    invoke-static {v0, v1}, Lnm0;->L0(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/ArrayList;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object v0
-
-    .line 79
-    new-instance v1, Ljava/util/LinkedHashSet;
-
-    .line 80
-    .line 81
-    invoke-direct {v1}, Ljava/util/LinkedHashSet;-><init>()V
-
-    .line 82
-    .line 83
-    .line 84
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 85
-    .line 86
-    .line 87
-    move-result-object v0
-
-    .line 88
-    :goto_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 89
-    .line 90
-    .line 91
-    move-result v2
-
-    .line 92
-    if-eqz v2, :cond_1
-
-    .line 93
-    .line 94
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object v2
-
-    .line 98
-    check-cast v2, Lr42;
-
-    .line 99
-    .line 100
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 101
-    .line 102
-    .line 103
-    new-instance v3, Loj0;
-
-    .line 104
-    .line 105
-    invoke-virtual {v2}, Lr42;->b()Lr42;
-
-    .line 106
-    .line 107
-    .line 108
-    move-result-object v4
-
-    .line 109
-    iget-object v2, v2, Lr42;->a:Ls42;
-
-    .line 110
-    .line 111
-    invoke-virtual {v2}, Ls42;->g()Lha4;
-
-    .line 112
-    .line 113
-    .line 114
-    move-result-object v2
-
-    .line 115
-    invoke-direct {v3, v4, v2}, Loj0;-><init>(Lr42;Lha4;)V
-
-    .line 116
-    .line 117
-    .line 118
-    invoke-interface {v1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
-
-    .line 119
-    .line 120
-    .line 121
-    goto :goto_1
-
-    .line 122
-    :cond_1
-    sput-object v1, Lzn0;->a:Ljava/util/LinkedHashSet;
-
-    .line 123
-    .line 124
-    return-void
+    .line 6
+    .line 7
+    .line 8
+    throw p0
 .end method

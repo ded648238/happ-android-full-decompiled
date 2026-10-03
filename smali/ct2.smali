@@ -1,14 +1,27 @@
-.class public final Lct2;
+.class public final synthetic Lct2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lxi2;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic X:Z
+
+.field public final synthetic Y:Ljava/lang/Enum;
+
+.field public final synthetic Z:Lmb1;
+
+.field public final synthetic c0:Lla;
+
+.field public final synthetic d0:Lmi2;
+
+.field public final synthetic e0:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public synthetic constructor <init>(ZLjava/lang/Enum;Lmb1;Lla;Lmi2;I)V
     .locals 0
 
     .line 1
@@ -17,91 +30,99 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lct2;->a:Ljava/lang/String;
+    iput-boolean p1, p0, Lct2;->X:Z
 
     .line 5
     .line 6
+    iput-object p2, p0, Lct2;->Y:Ljava/lang/Enum;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lct2;->Z:Lmb1;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lct2;->c0:Lla;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Lct2;->d0:Lmi2;
+
+    .line 13
+    .line 14
+    iput p6, p0, Lct2;->e0:I
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    if-ne p0, p1, :cond_0
+    move-object v5, p1
 
     .line 2
-    .line 3
-    const/4 p1, 0x1
+    check-cast v5, Lrk2;
 
+    .line 3
     .line 4
-    return p1
+    check-cast p2, Ljava/lang/Integer;
 
     .line 5
-    :cond_0
-    instance-of v0, p1, Lct2;
-
     .line 6
-    .line 7
-    if-nez v0, :cond_1
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 7
     .line 8
     .line 9
-    const/4 p1, 0x0
+    iget p1, p0, Lct2;->e0:I
 
     .line 10
-    return p1
-
     .line 11
-    :cond_1
-    check-cast p1, Lct2;
+    or-int/lit8 p1, p1, 0x1
 
     .line 12
     .line 13
-    iget-object p1, p1, Lct2;->a:Ljava/lang/String;
+    invoke-static {p1}, Lku8;->S(I)I
 
     .line 14
     .line 15
-    iget-object v0, p0, Lct2;->a:Ljava/lang/String;
-
     .line 16
+    move-result v6
+
     .line 17
-    invoke-static {v0, p1}, Ll73;->Q(Ljava/lang/String;Ljava/lang/String;)Z
+    iget-boolean v0, p0, Lct2;->X:Z
 
     .line 18
     .line 19
+    iget-object v1, p0, Lct2;->Y:Ljava/lang/Enum;
+
     .line 20
-    move-result p1
-
     .line 21
-    return p1
-.end method
+    iget-object v2, p0, Lct2;->Z:Lmb1;
 
-.method public final hashCode()I
-    .locals 1
+    .line 22
+    .line 23
+    iget-object v3, p0, Lct2;->c0:Lla;
 
-    .line 1
-    iget-object v0, p0, Lct2;->a:Ljava/lang/String;
+    .line 24
+    .line 25
+    iget-object v4, p0, Lct2;->d0:Lmi2;
 
-    .line 2
-    .line 3
-    invoke-static {v0}, Ll73;->b1(Ljava/lang/String;)Ljava/lang/String;
+    .line 26
+    .line 27
+    invoke-static/range {v0 .. v6}, Lj68;->a(ZLjava/lang/Enum;Lmb1;Lla;Lmi2;Lrk2;I)V
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 28
+    .line 29
+    .line 30
+    sget-object p0, Lr98;->a:Lr98;
 
-    .line 7
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    return v0
+    .line 31
+    .line 32
+    return-object p0
 .end method

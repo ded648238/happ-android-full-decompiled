@@ -1,6 +1,6 @@
 .class public final Landroid/support/v4/media/session/PlaybackStateCompat;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -27,27 +27,27 @@
 
 
 # instance fields
-.field public final Q:I
+.field public final X:I
 
-.field public final R:J
-
-.field public final S:J
-
-.field public final T:F
-
-.field public final U:J
-
-.field public final V:I
-
-.field public final W:Ljava/lang/CharSequence;
-
-.field public final X:J
-
-.field public final Y:Ljava/util/ArrayList;
+.field public final Y:J
 
 .field public final Z:J
 
-.field public final a0:Landroid/os/Bundle;
+.field public final c0:F
+
+.field public final d0:J
+
+.field public final e0:I
+
+.field public final f0:Ljava/lang/CharSequence;
+
+.field public final g0:J
+
+.field public final h0:Ljava/util/ArrayList;
+
+.field public final i0:J
+
+.field public final j0:Landroid/os/Bundle;
 
 
 # direct methods
@@ -55,15 +55,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lgo4;
+    new-instance v0, Lj65;
 
     .line 2
     .line 3
-    const/16 v1, 0x14
+    const/16 v1, 0x16
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lgo4;-><init>(I)V
+    invoke-direct {v0, v1}, Lj65;-><init>(I)V
 
     .line 6
     .line 7
@@ -92,7 +92,7 @@
     move-result v0
 
     .line 8
-    iput v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Q:I
+    iput v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->X:I
 
     .line 9
     .line 10
@@ -104,7 +104,7 @@
     move-result-wide v0
 
     .line 14
-    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->R:J
+    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Y:J
 
     .line 15
     .line 16
@@ -116,7 +116,7 @@
     move-result v0
 
     .line 20
-    iput v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->T:F
+    iput v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->c0:F
 
     .line 21
     .line 22
@@ -128,7 +128,7 @@
     move-result-wide v0
 
     .line 26
-    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->X:J
+    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->g0:J
 
     .line 27
     .line 28
@@ -140,7 +140,7 @@
     move-result-wide v0
 
     .line 32
-    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->S:J
+    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Z:J
 
     .line 33
     .line 34
@@ -152,7 +152,7 @@
     move-result-wide v0
 
     .line 38
-    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->U:J
+    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->d0:J
 
     .line 39
     .line 40
@@ -172,7 +172,7 @@
 
     .line 47
     .line 48
-    iput-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->W:Ljava/lang/CharSequence;
+    iput-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->f0:Ljava/lang/CharSequence;
 
     .line 49
     .line 50
@@ -188,7 +188,7 @@
     move-result-object v0
 
     .line 56
-    iput-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Y:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->h0:Ljava/util/ArrayList;
 
     .line 57
     .line 58
@@ -200,11 +200,11 @@
     move-result-wide v0
 
     .line 62
-    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Z:J
+    iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->i0:J
 
     .line 63
     .line 64
-    const-class v0, Ll14;
+    const-class v0, Lhi4;
 
     .line 65
     .line 66
@@ -224,7 +224,7 @@
     move-result-object v0
 
     .line 74
-    iput-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->a0:Landroid/os/Bundle;
+    iput-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->j0:Landroid/os/Bundle;
 
     .line 75
     .line 76
@@ -236,7 +236,7 @@
     move-result p1
 
     .line 80
-    iput p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->V:I
+    iput p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->e0:I
 
     .line 81
     .line 82
@@ -246,13 +246,13 @@
 
 # virtual methods
 .method public final describeContents()I
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -272,7 +272,7 @@
     .line 6
     .line 7
     .line 8
-    iget v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Q:I
+    iget v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->X:I
 
     .line 9
     .line 10
@@ -290,7 +290,7 @@
     .line 16
     .line 17
     .line 18
-    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->R:J
+    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Y:J
 
     .line 19
     .line 20
@@ -308,7 +308,7 @@
     .line 26
     .line 27
     .line 28
-    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->S:J
+    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Z:J
 
     .line 29
     .line 30
@@ -326,7 +326,7 @@
     .line 36
     .line 37
     .line 38
-    iget v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->T:F
+    iget v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->c0:F
 
     .line 39
     .line 40
@@ -344,7 +344,7 @@
     .line 46
     .line 47
     .line 48
-    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->X:J
+    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->g0:J
 
     .line 49
     .line 50
@@ -362,7 +362,7 @@
     .line 56
     .line 57
     .line 58
-    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->U:J
+    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->d0:J
 
     .line 59
     .line 60
@@ -380,7 +380,7 @@
     .line 66
     .line 67
     .line 68
-    iget v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->V:I
+    iget v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->e0:I
 
     .line 69
     .line 70
@@ -398,7 +398,7 @@
     .line 76
     .line 77
     .line 78
-    iget-object v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->W:Ljava/lang/CharSequence;
+    iget-object v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->f0:Ljava/lang/CharSequence;
 
     .line 79
     .line 80
@@ -416,7 +416,7 @@
     .line 86
     .line 87
     .line 88
-    iget-object v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Y:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->h0:Ljava/util/ArrayList;
 
     .line 89
     .line 90
@@ -434,40 +434,30 @@
     .line 96
     .line 97
     .line 98
-    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Z:J
+    iget-wide v1, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->i0:J
 
     .line 99
     .line 100
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    const-string p0, "}"
 
     .line 101
     .line 102
-    .line 103
-    const-string v1, "}"
+    invoke-static {v1, v2, p0, v0}, Lc73;->f(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
+    .line 103
     .line 104
     .line 105
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p0
 
     .line 106
-    .line 107
-    .line 108
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 109
-    .line 110
-    .line 111
-    move-result-object v0
-
-    .line 112
-    return-object v0
+    return-object p0
 .end method
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
     .line 1
-    iget v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Q:I
+    iget v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->X:I
 
     .line 2
     .line 3
@@ -476,7 +466,7 @@
     .line 4
     .line 5
     .line 6
-    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->R:J
+    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Y:J
 
     .line 7
     .line 8
@@ -485,7 +475,7 @@
     .line 9
     .line 10
     .line 11
-    iget v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->T:F
+    iget v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->c0:F
 
     .line 12
     .line 13
@@ -494,7 +484,7 @@
     .line 14
     .line 15
     .line 16
-    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->X:J
+    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->g0:J
 
     .line 17
     .line 18
@@ -503,7 +493,7 @@
     .line 19
     .line 20
     .line 21
-    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->S:J
+    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Z:J
 
     .line 22
     .line 23
@@ -512,7 +502,7 @@
     .line 24
     .line 25
     .line 26
-    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->U:J
+    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->d0:J
 
     .line 27
     .line 28
@@ -521,7 +511,7 @@
     .line 29
     .line 30
     .line 31
-    iget-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->W:Ljava/lang/CharSequence;
+    iget-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->f0:Ljava/lang/CharSequence;
 
     .line 32
     .line 33
@@ -530,7 +520,7 @@
     .line 34
     .line 35
     .line 36
-    iget-object p2, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Y:Ljava/util/ArrayList;
+    iget-object p2, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->h0:Ljava/util/ArrayList;
 
     .line 37
     .line 38
@@ -539,7 +529,7 @@
     .line 39
     .line 40
     .line 41
-    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->Z:J
+    iget-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->i0:J
 
     .line 42
     .line 43
@@ -548,7 +538,7 @@
     .line 44
     .line 45
     .line 46
-    iget-object p2, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->a0:Landroid/os/Bundle;
+    iget-object p2, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->j0:Landroid/os/Bundle;
 
     .line 47
     .line 48
@@ -557,11 +547,11 @@
     .line 49
     .line 50
     .line 51
-    iget p2, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->V:I
+    iget p0, p0, Landroid/support/v4/media/session/PlaybackStateCompat;->e0:I
 
     .line 52
     .line 53
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 54
     .line 55

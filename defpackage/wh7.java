@@ -1,25 +1,19 @@
 package defpackage;
 
-import java.lang.reflect.Field;
-import java.security.PrivilegedExceptionAction;
-import sun.misc.Unsafe;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class wh7 implements xh7 {
+    public static final wh7 a = new wh7();
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class wh7 implements PrivilegedExceptionAction {
-    public static Unsafe a() throws IllegalAccessException {
-        for (Field field : Unsafe.class.getDeclaredFields()) {
-            field.setAccessible(true);
-            Object obj = field.get(null);
-            if (Unsafe.class.isInstance(obj)) {
-                return (Unsafe) Unsafe.class.cast(obj);
-            }
-        }
-        return null;
+    public final boolean equals(Object obj) {
+        return this == obj || (obj instanceof wh7);
     }
 
-    @Override // java.security.PrivilegedExceptionAction
-    public final /* bridge */ /* synthetic */ Object run() {
-        return a();
+    public final int hashCode() {
+        return -1953048052;
+    }
+
+    public final String toString() {
+        return "Success";
     }
 }

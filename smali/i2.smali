@@ -1,60 +1,117 @@
-.class public final Li2;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract Li2;
+.super Llv5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final d:Li2;
-
-
-# instance fields
-.field public final a:Ljava/lang/Runnable;
-
-.field public final b:Ljava/util/concurrent/Executor;
-
-.field public c:Li2;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# virtual methods
+.method public final a(I)I
+    .locals 1
 
     .line 1
-    new-instance v0, Li2;
+    invoke-virtual {p0}, Li2;->f()Ljava/util/Random;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
-
     .line 4
-    invoke-direct {v0, v1, v1}, Li2;-><init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    move-result-object p0
 
     .line 5
+    invoke-virtual {p0}, Ljava/util/Random;->nextInt()I
+
     .line 6
     .line 7
-    sput-object v0, Li2;->d:Li2;
-
     .line 8
+    move-result p0
+
     .line 9
-    return-void
+    rsub-int/lit8 v0, p1, 0x20
+
+    .line 10
+    .line 11
+    ushr-int/2addr p0, v0
+
+    .line 12
+    neg-int p1, p1
+
+    .line 13
+    shr-int/lit8 p1, p1, 0x1f
+
+    .line 14
+    .line 15
+    and-int/2addr p0, p1
+
+    .line 16
+    return p0
 .end method
 
-.method public constructor <init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+.method public final b()I
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p0}, Li2;->f()Ljava/util/Random;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Li2;->a:Ljava/lang/Runnable;
+    move-result-object p0
 
     .line 5
-    .line 6
-    iput-object p2, p0, Li2;->b:Ljava/util/concurrent/Executor;
+    invoke-virtual {p0}, Ljava/util/Random;->nextInt()I
 
+    .line 6
     .line 7
     .line 8
-    return-void
+    move-result p0
+
+    .line 9
+    return p0
+.end method
+
+.method public final d()J
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Li2;->f()Ljava/util/Random;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-virtual {p0}, Ljava/util/Random;->nextLong()J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    return-wide v0
+.end method
+
+.method public abstract f()Ljava/util/Random;
+.end method
+
+.method public final g(I)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Li2;->f()Ljava/util/Random;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-virtual {p0, p1}, Ljava/util/Random;->nextInt(I)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p0
+
+    .line 9
+    return p0
 .end method

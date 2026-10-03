@@ -1,92 +1,52 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class km4 {
-    public static final km4 c = new km4(1, "SUCCESS");
-    public final int a;
-    public final String b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class km4 implements ji2 {
+    public final /* synthetic */ int X = 0;
+    public final /* synthetic */ mw6 Y;
+    public final /* synthetic */ ji2 Z;
+    public final /* synthetic */ i41 c0;
 
-    public km4(int i, String str) {
-        if (i == 0) {
-            a(3);
-            throw null;
-        }
-        this.a = i;
-        this.b = str;
+    public /* synthetic */ km4(mw6 mw6Var, i41 i41Var, ji2 ji2Var) {
+        this.Y = mw6Var;
+        this.c0 = i41Var;
+        this.Z = ji2Var;
     }
 
-    /* JADX WARN: Code duplicated, block: B:22:0x0031  */
-    public static /* synthetic */ void a(int i) {
-        String str = (i == 1 || i == 2 || i == 3 || i == 4) ? "Argument for @NotNull parameter '%s' of %s.%s must not be null" : "@NotNull method %s.%s must not return null";
-        Object[] objArr = new Object[(i == 1 || i == 2 || i == 3 || i == 4) ? 3 : 2];
-        if (i == 1 || i == 2) {
-            objArr[0] = "debugMessage";
-        } else if (i == 3) {
-            objArr[0] = "success";
-        } else if (i != 4) {
-            objArr[0] = "kotlin/reflect/jvm/internal/impl/resolve/OverridingUtil$OverrideCompatibilityInfo";
-        } else {
-            objArr[0] = "debugMessage";
-        }
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        int i = this.X;
+        r98 r98Var = r98.a;
+        i41 i41Var = this.c0;
+        ji2 ji2Var = this.Z;
+        mw6 mw6Var = this.Y;
         switch (i) {
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-                objArr[1] = "kotlin/reflect/jvm/internal/impl/resolve/OverridingUtil$OverrideCompatibilityInfo";
-                break;
-            case 5:
-                objArr[1] = "getResult";
-                break;
-            case 6:
-                objArr[1] = "getDebugMessage";
+            case 0:
+                if (((Boolean) ((mi2) mw6Var.d.c0).invoke(nw6.X)).booleanValue()) {
+                    d01.G(i41Var, null, null, new nm4(mw6Var, null, 3), 3).E(new mm4(mw6Var, ji2Var, 0));
+                    break;
+                }
                 break;
             default:
-                objArr[1] = "success";
-                break;
+                int ordinal = ((nw6) ((x65) mw6Var.d.f0).getValue()).ordinal();
+                if (ordinal == 1) {
+                    ji2Var.invoke();
+                    break;
+                } else if (ordinal == 2) {
+                    d01.G(i41Var, null, null, new nm4(mw6Var, null, 4), 3);
+                    break;
+                } else {
+                    d01.G(i41Var, null, null, new nm4(mw6Var, null, 5), 3);
+                    break;
+                }
         }
-        if (i == 1) {
-            objArr[2] = "incompatible";
-        } else if (i == 2) {
-            objArr[2] = "conflict";
-        } else if (i == 3 || i == 4) {
-            objArr[2] = "<init>";
-        }
-        String str2 = String.format(str, objArr);
-        if (i != 1 && i != 2 && i != 3 && i != 4) {
-            throw new IllegalStateException(str2);
-        }
-        throw new IllegalArgumentException(str2);
+        return r98Var;
     }
 
-    public static km4 c(String str) {
-        return new km4(2, str);
-    }
-
-    public final int b() {
-        int i = this.a;
-        if (i != 0) {
-            return i;
-        }
-        a(5);
-        throw null;
-    }
-
-    public final String toString() {
-        String str;
-        StringBuilder sb = new StringBuilder();
-        int i = this.a;
-        if (i == 1) {
-            str = "OVERRIDABLE";
-        } else if (i != 2) {
-            str = i != 3 ? "null" : "CONFLICT";
-        } else {
-            str = "INCOMPATIBLE";
-        }
-        sb.append(str);
-        sb.append(": ");
-        sb.append(this.b);
-        return sb.toString();
+    public /* synthetic */ km4(mw6 mw6Var, ji2 ji2Var, i41 i41Var) {
+        this.Y = mw6Var;
+        this.Z = ji2Var;
+        this.c0 = i41Var;
     }
 }

@@ -1,26 +1,27 @@
 package defpackage;
 
-import su.happ.proxyutility.dto.enums.SubscriptionAutoConnectType;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class at3 extends mt3 implements eo3 {
+    public final bt3 c0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class at3 {
-    public static final /* synthetic */ int[] a;
+    public at3(bt3 bt3Var) {
+        this.c0 = bt3Var;
+    }
 
-    static {
-        int[] iArr = new int[SubscriptionAutoConnectType.values().length];
-        try {
-            iArr[SubscriptionAutoConnectType.LAST_USED.ordinal()] = 1;
-        } catch (NoSuchFieldError unused) {
-        }
-        try {
-            iArr[SubscriptionAutoConnectType.LOWEST_DELAY.ordinal()] = 2;
-        } catch (NoSuchFieldError unused2) {
-        }
-        try {
-            iArr[SubscriptionAutoConnectType.RANDOM.ordinal()] = 3;
-        } catch (NoSuchFieldError unused3) {
-        }
-        a = iArr;
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        this.c0.E(obj, obj2);
+        return r98.a;
+    }
+
+    @Override // defpackage.jt3
+    public final tt3 R() {
+        return this.c0;
+    }
+
+    @Override // defpackage.no3
+    public final uo3 f() {
+        return this.c0;
     }
 }

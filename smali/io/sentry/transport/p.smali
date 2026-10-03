@@ -1,10 +1,10 @@
 .class public final Lio/sentry/transport/p;
 .super Ljava/util/concurrent/locks/AbstractQueuedSynchronizer;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final synthetic Q:I
+.field public static final synthetic X:I
 
 
 # direct methods
@@ -86,24 +86,24 @@
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result p0
 
     .line 5
-    if-nez p1, :cond_0
+    if-nez p0, :cond_0
 
     .line 6
     .line 7
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 8
-    return p1
+    return p0
 
     .line 9
     :cond_0
-    const/4 p1, -0x1
+    const/4 p0, -0x1
 
     .line 10
-    return p1
+    return p0
 .end method
 
 .method public final tryReleaseShared(I)Z
@@ -150,10 +150,10 @@
 
     .line 18
     .line 19
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 20
-    return p1
+    return p0
 
     .line 21
     :cond_2

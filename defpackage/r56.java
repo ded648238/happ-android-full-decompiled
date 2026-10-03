@@ -1,17 +1,19 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class r56 implements ep6 {
-    public final k56 Q = new k56();
+import su.happ.proxyutility.dto.MetaParams;
 
-    @Override // defpackage.ep6
-    public final boolean a() {
-        return this.Q.a();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class r56 extends jq4 {
+    public static final r56 X = new r56(MetaParams.class, "subscriptionHwidInCookieEnable", "getSubscriptionHwidInCookieEnable()Ljava/lang/Boolean;", 0);
+
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((MetaParams) obj).G2((Boolean) obj2);
     }
 
-    @Override // defpackage.ep6
-    public final void c() {
-        this.Q.c();
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return ((MetaParams) obj).getSubscriptionHwidInCookieEnable();
     }
 }

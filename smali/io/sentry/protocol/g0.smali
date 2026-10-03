@@ -1,15 +1,15 @@
 .class public final Lio/sentry/protocol/g0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # instance fields
-.field public Q:[Ljava/lang/String;
+.field public X:[Ljava/lang/String;
 
-.field public R:Lj$/util/concurrent/ConcurrentHashMap;
+.field public Y:Ljava/util/concurrent/ConcurrentHashMap;
 
 
 # virtual methods
@@ -21,10 +21,10 @@
 
     .line 2
     .line 3
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 4
-    return p1
+    return p0
 
     .line 5
     :cond_0
@@ -56,53 +56,53 @@
 
     .line 17
     .line 18
-    iget-object v0, p0, Lio/sentry/protocol/g0;->Q:[Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/protocol/g0;->X:[Ljava/lang/String;
 
     .line 19
     .line 20
-    iget-object p1, p1, Lio/sentry/protocol/g0;->Q:[Ljava/lang/String;
+    iget-object p1, p1, Lio/sentry/protocol/g0;->X:[Ljava/lang/String;
 
     .line 21
     .line 22
-    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
 
     .line 23
     .line 24
     .line 25
-    move-result p1
+    move-result p0
 
     .line 26
-    return p1
+    return p0
 
     .line 27
     :cond_2
     :goto_0
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 28
-    return p1
+    return p0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lio/sentry/protocol/g0;->Q:[Ljava/lang/String;
+    iget-object p0, p0, Lio/sentry/protocol/g0;->X:[Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
-.method public final serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 3
 
     .line 1
@@ -115,7 +115,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lio/sentry/protocol/g0;->Q:[Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/g0;->X:[Ljava/lang/String;
 
     .line 7
     .line 8
@@ -132,7 +132,7 @@
     .line 13
     .line 14
     .line 15
-    iget-object v0, p0, Lio/sentry/protocol/g0;->Q:[Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/g0;->X:[Ljava/lang/String;
 
     .line 16
     .line 17
@@ -142,7 +142,7 @@
     .line 19
     .line 20
     :cond_0
-    iget-object v0, p0, Lio/sentry/protocol/g0;->R:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lio/sentry/protocol/g0;->Y:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 21
     .line 22
@@ -191,11 +191,11 @@
 
     .line 43
     .line 44
-    iget-object v2, p0, Lio/sentry/protocol/g0;->R:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object v2, p0, Lio/sentry/protocol/g0;->Y:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 45
     .line 46
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->c(Lj$/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/concurrent/ConcurrentHashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
 
     .line 47
     .line 48

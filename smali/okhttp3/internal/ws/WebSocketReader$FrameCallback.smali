@@ -1,6 +1,6 @@
 .class public interface abstract Lokhttp3/internal/ws/WebSocketReader$FrameCallback;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -22,12 +22,12 @@
         "",
         "",
         "text",
-        "Lbh7;",
+        "Lr98;",
         "onReadMessage",
         "(Ljava/lang/String;)V",
-        "Ly60;",
+        "Lo90;",
         "bytes",
-        "(Ly60;)V",
+        "(Lo90;)V",
         "payload",
         "onReadPing",
         "onReadPong",
@@ -60,7 +60,7 @@
     .end annotation
 .end method
 
-.method public abstract onReadMessage(Ly60;)V
+.method public abstract onReadMessage(Lo90;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -68,8 +68,8 @@
     .end annotation
 .end method
 
-.method public abstract onReadPing(Ly60;)V
+.method public abstract onReadPing(Lo90;)V
 .end method
 
-.method public abstract onReadPong(Ly60;)V
+.method public abstract onReadPong(Lo90;)V
 .end method

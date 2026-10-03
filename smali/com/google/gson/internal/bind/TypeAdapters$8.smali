@@ -1,6 +1,6 @@
 .class Lcom/google/gson/internal/bind/TypeAdapters$8;
 .super Lcom/google/gson/b;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,16 +26,16 @@
 
 
 # virtual methods
-.method public final b(Lr23;)Ljava/lang/Object;
-    .locals 2
+.method public final b(Lxi3;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
     :try_start_0
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+    new-instance p0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lr23;->nextInt()I
+    invoke-virtual {p1}, Lxi3;->nextInt()I
 
     .line 4
     .line 5
@@ -43,37 +43,33 @@
     move-result p1
 
     .line 7
-    invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+    invoke-direct {p0, p1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 8
     .line 9
     .line 10
-    return-object v0
+    return-object p0
 
     .line 11
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 12
-    new-instance v0, Lg33;
+    new-instance p1, Lmj3;
 
     .line 13
     .line 14
-    const/16 v1, 0x9
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 15
     .line 16
-    invoke-direct {v0, v1, p1}, Lio0;-><init>(ILjava/lang/Throwable;)V
-
     .line 17
-    .line 18
-    .line 19
-    throw v0
+    throw p1
 .end method
 
-.method public final c(Lh43;Ljava/lang/Object;)V
+.method public final c(Lnk3;Ljava/lang/Object;)V
     .locals 2
 
     .line 1
@@ -86,13 +82,13 @@
     .line 4
     .line 5
     .line 6
-    move-result p2
+    move-result p0
 
     .line 7
-    int-to-long v0, p2
+    int-to-long v0, p0
 
     .line 8
-    invoke-virtual {p1, v0, v1}, Lh43;->R(J)V
+    invoke-virtual {p1, v0, v1}, Lnk3;->X(J)V
 
     .line 9
     .line 10

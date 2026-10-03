@@ -1,97 +1,103 @@
-.class public final Lc80;
-.super Ld80;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lc80;
+.super Ltj2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lxi2;
 
 
-# instance fields
-.field public volatile b:Ljava/lang/ref/SoftReference;
+# static fields
+.field public static final X:Lc80;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 6
+
+    .line 1
+    new-instance v0, Lc80;
+
+    .line 2
+    .line 3
+    const-string v4, "createSegment(JLkotlinx/coroutines/channels/ChannelSegment;)Lkotlinx/coroutines/channels/ChannelSegment;"
+
+    .line 4
+    .line 5
+    const/4 v5, 0x1
+
+    .line 6
+    const/4 v1, 0x2
+
+    .line 7
+    const-class v2, Ld80;
+
+    .line 8
+    .line 9
+    const-string v3, "createSegment"
+
+    .line 10
+    .line 11
+    invoke-direct/range {v0 .. v5}, Ltj2;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 12
+    .line 13
+    .line 14
+    sput-object v0, Lc80;->X:Lc80;
+
+    .line 15
+    .line 16
+    return-void
+.end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 1
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Lc80;->b:Ljava/lang/ref/SoftReference;
+    check-cast p1, Ljava/lang/Number;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-wide v1
 
     .line 7
-    return-object v0
-.end method
-
-.method public final declared-synchronized b(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Lc80;->b:Ljava/lang/ref/SoftReference;
-
-    .line 3
-    .line 4
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v0
+    move-object v3, p2
 
     .line 8
-    if-nez v0, :cond_0
+    check-cast v3, Lun0;
 
     .line 9
     .line 10
-    new-instance v0, Ljava/lang/ref/SoftReference;
+    sget-object p0, Ld80;->a:Lun0;
 
     .line 11
     .line 12
-    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+    new-instance v0, Lun0;
 
     .line 13
     .line 14
+    iget-object v4, v3, Lun0;->f0:Lb80;
+
     .line 15
-    iput-object v0, p0, Lc80;->b:Ljava/lang/ref/SoftReference;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 16
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 17
-    monitor-exit p0
-
     .line 18
-    return-object p1
-
     .line 19
-    :catchall_0
-    move-exception p1
+    const/4 v5, 0x0
 
     .line 20
-    goto :goto_0
+    invoke-direct/range {v0 .. v5}, Lun0;-><init>(JLun0;Lb80;I)V
 
     .line 21
-    :cond_0
-    monitor-exit p0
-
     .line 22
-    return-object v0
-
     .line 23
-    :goto_0
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 24
-    throw p1
+    return-object v0
 .end method

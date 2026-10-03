@@ -1,217 +1,206 @@
-.class public abstract Lcx5;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Lcx5;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final a:Ljava/util/HashMap;
+.field public static final enum X:Lcx5;
+
+.field public static final enum Y:Lcx5;
+
+.field public static final enum Z:Lcx5;
+
+.field public static final enum c0:Lcx5;
+
+.field public static final enum d0:Lcx5;
+
+.field public static final enum e0:Lcx5;
+
+.field public static final synthetic f0:[Lcx5;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 8
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    new-instance v0, Lcx5;
 
     .line 2
     .line 3
-    const/16 v1, 0xd
+    const-string v1, "ShutDown"
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
+    const/4 v2, 0x0
 
     .line 6
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 7
     .line 8
-    sput-object v0, Lcx5;->a:Ljava/util/HashMap;
-
     .line 9
+    sput-object v0, Lcx5;->X:Lcx5;
+
     .line 10
-    const/16 v1, 0x190
-
     .line 11
-    .line 12
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    new-instance v1, Lcx5;
 
+    .line 12
     .line 13
+    const-string v2, "ShuttingDown"
+
     .line 14
     .line 15
-    move-result-object v1
+    const/4 v3, 0x1
 
     .line 16
-    const-string v2, "normal"
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 19
+    sput-object v1, Lcx5;->Y:Lcx5;
+
     .line 20
     .line 21
-    const/16 v2, 0x2bc
+    new-instance v2, Lcx5;
 
     .line 22
     .line 23
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const-string v3, "Inactive"
 
     .line 24
     .line 25
+    const/4 v4, 0x2
+
     .line 26
-    move-result-object v2
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
-    const-string v3, "bold"
-
     .line 28
     .line 29
-    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    sput-object v2, Lcx5;->Z:Lcx5;
 
     .line 30
     .line 31
+    new-instance v3, Lcx5;
+
     .line 32
-    const-string v3, "lighter"
-
     .line 33
-    .line 34
-    const/4 v4, -0x1
+    const-string v4, "InactivePendingWork"
 
+    .line 34
     .line 35
-    const/4 v5, 0x1
+    const/4 v5, 0x3
 
     .line 36
-    const-string v6, "bolder"
+    invoke-direct {v3, v4, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 37
     .line 38
-    invoke-static {v5, v0, v6, v4, v3}, Lxy4;->C(ILjava/util/HashMap;Ljava/lang/String;ILjava/lang/String;)V
-
     .line 39
+    sput-object v3, Lcx5;->c0:Lcx5;
+
     .line 40
     .line 41
-    const-string v3, "200"
+    new-instance v4, Lcx5;
 
     .line 42
     .line 43
-    const/16 v4, 0xc8
+    const-string v5, "Idle"
 
     .line 44
     .line 45
-    const/16 v5, 0x64
+    const/4 v6, 0x4
 
     .line 46
-    .line 47
-    const-string v6, "100"
+    invoke-direct {v4, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 47
     .line 48
     .line 49
-    invoke-static {v5, v0, v6, v4, v3}, Lxy4;->C(ILjava/util/HashMap;Ljava/lang/String;ILjava/lang/String;)V
+    sput-object v4, Lcx5;->d0:Lcx5;
 
     .line 50
     .line 51
+    new-instance v5, Lcx5;
+
     .line 52
-    const/16 v3, 0x12c
-
     .line 53
+    const-string v6, "PendingWork"
+
     .line 54
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 55
+    const/4 v7, 0x5
+
     .line 56
+    invoke-direct {v5, v6, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 57
-    move-result-object v3
-
     .line 58
-    const-string v4, "300"
-
     .line 59
-    .line 60
-    invoke-virtual {v0, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    sput-object v5, Lcx5;->e0:Lcx5;
 
+    .line 60
     .line 61
+    filled-new-array/range {v0 .. v5}, [Lcx5;
+
     .line 62
     .line 63
-    const-string v3, "400"
-
     .line 64
+    move-result-object v0
+
     .line 65
-    invoke-virtual {v0, v3, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    sput-object v0, Lcx5;->f0:[Lcx5;
 
     .line 66
     .line 67
-    .line 68
-    const-string v1, "600"
-
-    .line 69
-    .line 70
-    const/16 v3, 0x258
-
-    .line 71
-    .line 72
-    const/16 v4, 0x1f4
-
-    .line 73
-    .line 74
-    const-string v5, "500"
-
-    .line 75
-    .line 76
-    invoke-static {v4, v0, v5, v3, v1}, Lxy4;->C(ILjava/util/HashMap;Ljava/lang/String;ILjava/lang/String;)V
-
-    .line 77
-    .line 78
-    .line 79
-    const-string v1, "700"
-
-    .line 80
-    .line 81
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 82
-    .line 83
-    .line 84
-    const/16 v1, 0x320
-
-    .line 85
-    .line 86
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 87
-    .line 88
-    .line 89
-    move-result-object v1
-
-    .line 90
-    const-string v2, "800"
-
-    .line 91
-    .line 92
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 93
-    .line 94
-    .line 95
-    const/16 v1, 0x384
-
-    .line 96
-    .line 97
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 98
-    .line 99
-    .line 100
-    move-result-object v1
-
-    .line 101
-    const-string v2, "900"
-
-    .line 102
-    .line 103
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 104
-    .line 105
-    .line 106
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lcx5;
+    .locals 1
+
+    .line 1
+    const-class v0, Lcx5;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lcx5;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lcx5;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcx5;->f0:[Lcx5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lcx5;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

@@ -1,26 +1,13 @@
 package androidx.compose.ui.draw;
 
-import defpackage.e64;
-import defpackage.j72;
-import defpackage.m20;
-import defpackage.rn4;
+import defpackage.dn4;
+import defpackage.q40;
+import defpackage.u55;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class a {
-    public static final e64 a(e64 e64Var, j72 j72Var) {
-        return e64Var.s(new DrawBehindElement(j72Var));
-    }
-
-    public static final e64 b(e64 e64Var, j72 j72Var) {
-        return e64Var.s(new DrawWithCacheElement(j72Var));
-    }
-
-    public static final e64 c(e64 e64Var, j72 j72Var) {
-        return e64Var.s(new DrawWithContentElement(j72Var));
-    }
-
-    public static e64 d(e64 e64Var, rn4 rn4Var, m20 m20Var) {
-        return e64Var.s(new PainterElement(rn4Var, m20Var));
+    public static dn4 a(dn4 dn4Var, u55 u55Var, q40 q40Var) {
+        return dn4Var.x(new PainterElement(u55Var, q40Var));
     }
 }

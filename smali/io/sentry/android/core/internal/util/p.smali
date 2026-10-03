@@ -1,6 +1,6 @@
 .class public final synthetic Lio/sentry/android/core/internal/util/p;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/view/Window$OnFrameMetricsAvailableListener;
@@ -9,11 +9,11 @@
 # instance fields
 .field public final synthetic a:Lio/sentry/android/core/internal/util/t;
 
-.field public final synthetic b:Lio/sentry/android/core/n0;
+.field public final synthetic b:Lio/sentry/android/core/o0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/sentry/android/core/internal/util/t;Lio/sentry/android/core/n0;)V
+.method public synthetic constructor <init>(Lio/sentry/android/core/internal/util/t;Lio/sentry/android/core/o0;)V
     .locals 0
 
     .line 1
@@ -26,7 +26,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/sentry/android/core/internal/util/p;->b:Lio/sentry/android/core/n0;
+    iput-object p2, p0, Lio/sentry/android/core/internal/util/p;->b:Lio/sentry/android/core/o0;
 
     .line 7
     .line 8
@@ -36,18 +36,18 @@
 
 # virtual methods
 .method public final onFrameMetricsAvailable(Landroid/view/Window;Landroid/view/FrameMetrics;I)V
-    .locals 1
+    .locals 0
 
     .line 1
     iget-object p3, p0, Lio/sentry/android/core/internal/util/p;->a:Lio/sentry/android/core/internal/util/t;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lio/sentry/android/core/internal/util/p;->b:Lio/sentry/android/core/n0;
+    iget-object p0, p0, Lio/sentry/android/core/internal/util/p;->b:Lio/sentry/android/core/o0;
 
     .line 4
     .line 5
-    invoke-static {p3, v0, p1, p2}, Lio/sentry/android/core/internal/util/t;->a(Lio/sentry/android/core/internal/util/t;Lio/sentry/android/core/n0;Landroid/view/Window;Landroid/view/FrameMetrics;)V
+    invoke-static {p3, p0, p1, p2}, Lio/sentry/android/core/internal/util/t;->a(Lio/sentry/android/core/internal/util/t;Lio/sentry/android/core/o0;Landroid/view/Window;Landroid/view/FrameMetrics;)V
 
     .line 6
     .line 7

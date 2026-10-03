@@ -1,85 +1,148 @@
 .class public final synthetic Lyl5;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lxi2;
 
 
-# static fields
-.field public static final Q:Lyl5;
+# instance fields
+.field public final synthetic X:Lji2;
+
+.field public final synthetic Y:Ldn4;
+
+.field public final synthetic Z:J
+
+.field public final synthetic c0:J
+
+.field public final synthetic d0:I
+
+.field public final synthetic e0:F
+
+.field public final synthetic f0:Lmi2;
+
+.field public final synthetic g0:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public synthetic constructor <init>(Lji2;Ldn4;JJIFLmi2;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lyl5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "getSubscriptionsCollapse()Ljava/lang/Boolean;"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, Lyl5;->X:Lji2;
 
+    .line 5
     .line 6
-    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
+    iput-object p2, p0, Lyl5;->Y:Ldn4;
 
     .line 7
     .line 8
-    const-string v4, "subscriptionsCollapse"
+    iput-wide p3, p0, Lyl5;->Z:J
 
     .line 9
     .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    iput-wide p5, p0, Lyl5;->c0:J
 
     .line 11
     .line 12
-    .line 13
-    sput-object v0, Lyl5;->Q:Lyl5;
+    iput p7, p0, Lyl5;->d0:I
 
+    .line 13
     .line 14
+    iput p8, p0, Lyl5;->e0:F
+
     .line 15
+    .line 16
+    iput-object p9, p0, Lyl5;->f0:Lmi2;
+
+    .line 17
+    .line 18
+    iput p10, p0, Lyl5;->g0:I
+
+    .line 19
+    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    move-object v9, p1
 
     .line 2
+    check-cast v9, Lrk2;
+
     .line 3
-    check-cast p2, Ljava/lang/Boolean;
-
     .line 4
-    .line 5
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->M2(Ljava/lang/Boolean;)V
+    check-cast p2, Ljava/lang/Integer;
 
+    .line 5
     .line 6
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 7
     .line 8
-    return-void
-.end method
+    .line 9
+    iget p1, p0, Lyl5;->g0:I
 
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .line 10
+    .line 11
+    or-int/lit8 p1, p1, 0x1
 
-    .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    .line 12
+    .line 13
+    invoke-static {p1}, Lku8;->S(I)I
 
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->Z0()Ljava/lang/Boolean;
+    .line 14
+    .line 15
+    .line 16
+    move-result v10
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
+    .line 17
+    iget-object v0, p0, Lyl5;->X:Lji2;
 
-    .line 7
-    return-object p1
+    .line 18
+    .line 19
+    iget-object v1, p0, Lyl5;->Y:Ldn4;
+
+    .line 20
+    .line 21
+    iget-wide v2, p0, Lyl5;->Z:J
+
+    .line 22
+    .line 23
+    iget-wide v4, p0, Lyl5;->c0:J
+
+    .line 24
+    .line 25
+    iget v6, p0, Lyl5;->d0:I
+
+    .line 26
+    .line 27
+    iget v7, p0, Lyl5;->e0:F
+
+    .line 28
+    .line 29
+    iget-object v8, p0, Lyl5;->f0:Lmi2;
+
+    .line 30
+    .line 31
+    invoke-static/range {v0 .. v10}, Lbm5;->b(Lji2;Ldn4;JJIFLmi2;Lrk2;I)V
+
+    .line 32
+    .line 33
+    .line 34
+    sget-object p0, Lr98;->a:Lr98;
+
+    .line 35
+    .line 36
+    return-object p0
 .end method

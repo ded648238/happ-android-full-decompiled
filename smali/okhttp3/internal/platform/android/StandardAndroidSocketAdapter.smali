@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter;
 .super Lokhttp3/internal/platform/android/AndroidSocketAdapter;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -80,7 +80,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -145,6 +145,30 @@
 
 # virtual methods
 .method public matchesSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p0, p0, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter;->sslSocketFactoryClass:Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    invoke-virtual {p0, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p0
+
+    .line 10
+    return p0
+.end method
+
+.method public trustManager(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
     .locals 1
 
     .line 1
@@ -153,94 +177,70 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter;->sslSocketFactoryClass:Ljava/lang/Class;
+    iget-object p0, p0, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter;->paramClass:Ljava/lang/Class;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+    const-string v0, "sslParameters"
 
     .line 7
     .line 8
-    .line 9
-    move-result p1
-
-    .line 10
-    return p1
-.end method
-
-.method public trustManager(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
-    .locals 2
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, Lokhttp3/internal/platform/android/StandardAndroidSocketAdapter;->paramClass:Ljava/lang/Class;
-
-    .line 5
-    .line 6
-    const-string v1, "sslParameters"
-
-    .line 7
-    .line 8
-    invoke-static {p1, v0, v1}, Lokhttp3/internal/Util;->readFieldOrNull(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, p0, v0}, Lokhttp3/internal/Util;->readFieldOrNull(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 9
     .line 10
     .line 11
-    move-result-object p1
+    move-result-object p0
 
     .line 12
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 13
     .line 14
     .line 15
-    const-string v0, "x509TrustManager"
+    const-string p1, "x509TrustManager"
 
     .line 16
     .line 17
-    const-class v1, Ljavax/net/ssl/X509TrustManager;
+    const-class v0, Ljavax/net/ssl/X509TrustManager;
 
     .line 18
     .line 19
-    invoke-static {p1, v1, v0}, Lokhttp3/internal/Util;->readFieldOrNull(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0, p1}, Lokhttp3/internal/Util;->readFieldOrNull(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v0
+    move-result-object p1
 
     .line 23
-    check-cast v0, Ljavax/net/ssl/X509TrustManager;
+    check-cast p1, Ljavax/net/ssl/X509TrustManager;
 
     .line 24
     .line 25
-    if-nez v0, :cond_0
+    if-nez p1, :cond_0
 
     .line 26
     .line 27
-    const-string v0, "trustManager"
+    const-string p1, "trustManager"
 
     .line 28
     .line 29
-    invoke-static {p1, v1, v0}, Lokhttp3/internal/Util;->readFieldOrNull(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p0, v0, p1}, Lokhttp3/internal/Util;->readFieldOrNull(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
 
     .line 30
     .line 31
     .line 32
-    move-result-object p1
+    move-result-object p0
 
     .line 33
-    check-cast p1, Ljavax/net/ssl/X509TrustManager;
+    check-cast p0, Ljavax/net/ssl/X509TrustManager;
 
     .line 34
     .line 35
-    return-object p1
+    return-object p0
 
     .line 36
     :cond_0
-    return-object v0
+    return-object p1
 .end method

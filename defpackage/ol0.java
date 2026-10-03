@@ -1,49 +1,36 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ol0 implements pl0 {
-    public final float Q;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ol0 {
+    public static final ol0 X;
+    public static final ol0 Y;
+    public static final ol0 Z;
+    public static final ol0 c0;
+    public static final ol0 d0;
+    public static final /* synthetic */ ol0[] e0;
 
-    public ol0(float f) {
-        this.Q = f;
+    static {
+        ol0 ol0Var = new ol0("PENDING", 0);
+        X = ol0Var;
+        ol0 ol0Var2 = new ol0("CREATING", 1);
+        Y = ol0Var2;
+        ol0 ol0Var3 = new ol0("CREATED", 2);
+        Z = ol0Var3;
+        ol0 ol0Var4 = new ol0("CLOSING", 3);
+        c0 = ol0Var4;
+        ol0 ol0Var5 = new ol0("CLOSED", 4);
+        d0 = ol0Var5;
+        e0 = new ol0[]{ol0Var, ol0Var2, ol0Var3, ol0Var4, ol0Var5};
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    public static boolean c(Comparable comparable, Comparable comparable2) {
-        return ((Number) comparable).floatValue() <= ((Number) comparable2).floatValue();
+    public static ol0 valueOf(String str) {
+        return (ol0) Enum.valueOf(ol0.class, str);
     }
 
-    @Override // defpackage.pl0
-    public final Comparable a() {
-        return Float.valueOf(0.0f);
-    }
-
-    @Override // defpackage.pl0
-    public final Comparable b() {
-        return Float.valueOf(this.Q);
-    }
-
-    public final boolean equals(Object obj) {
-        if (obj instanceof ol0) {
-            return (isEmpty() && ((ol0) obj).isEmpty()) || this.Q == ((ol0) obj).Q;
-        }
-        return false;
-    }
-
-    public final int hashCode() {
-        if (isEmpty()) {
-            return -1;
-        }
-        return Float.floatToIntBits(this.Q) + (Float.floatToIntBits(0.0f) * 31);
-    }
-
-    @Override // defpackage.pl0
-    public final boolean isEmpty() {
-        return 0.0f > this.Q;
-    }
-
-    public final String toString() {
-        return "0.0.." + this.Q;
+    public static ol0[] values() {
+        return (ol0[]) e0.clone();
     }
 }

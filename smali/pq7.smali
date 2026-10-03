@@ -1,240 +1,248 @@
-.class public final Lpq7;
+.class public final synthetic Lpq7;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/io/Serializable;
-
-
-# static fields
-.field public static final V:Lpq7;
-
-.field public static final W:Lpq7;
+.implements Lmi2;
 
 
 # instance fields
-.field public final Q:Ljz2;
+.field public final synthetic X:I
 
-.field public final R:Ljz2;
+.field public final synthetic Y:Z
 
-.field public final S:Ljz2;
-
-.field public final T:Ljz2;
-
-.field public final U:Ljz2;
+.field public final synthetic Z:Luq7;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 10
-
-    .line 1
-    new-instance v0, Lpq7;
-
-    .line 2
-    .line 3
-    sget-object v3, Ljz2;->Q:Ljz2;
-
-    .line 4
-    .line 5
-    sget-object v1, Ljz2;->R:Ljz2;
-
-    .line 6
-    .line 7
-    move-object v2, v1
-
-    .line 8
-    move-object v4, v3
-
-    .line 9
-    move-object v5, v1
-
-    .line 10
-    invoke-direct/range {v0 .. v5}, Lpq7;-><init>(Ljz2;Ljz2;Ljz2;Ljz2;Ljz2;)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lpq7;->V:Lpq7;
-
-    .line 14
-    .line 15
-    new-instance v4, Lpq7;
-
-    .line 16
-    .line 17
-    move-object v6, v1
-
-    .line 18
-    move-object v7, v1
-
-    .line 19
-    move-object v8, v1
-
-    .line 20
-    move-object v9, v1
-
-    .line 21
-    invoke-direct/range {v4 .. v9}, Lpq7;-><init>(Ljz2;Ljz2;Ljz2;Ljz2;Ljz2;)V
-
-    .line 22
-    .line 23
-    .line 24
-    sput-object v4, Lpq7;->W:Lpq7;
-
-    .line 25
-    .line 26
-    return-void
-.end method
-
-.method public constructor <init>(Ljz2;Ljz2;Ljz2;Ljz2;Ljz2;)V
+.method public synthetic constructor <init>(ZLuq7;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p3, p0, Lpq7;->X:I
 
     .line 2
     .line 3
+    iput-boolean p1, p0, Lpq7;->Y:Z
+
     .line 4
-    iput-object p1, p0, Lpq7;->Q:Ljz2;
-
     .line 5
+    iput-object p2, p0, Lpq7;->Z:Luq7;
+
     .line 6
-    iput-object p2, p0, Lpq7;->R:Ljz2;
-
     .line 7
-    .line 8
-    iput-object p3, p0, Lpq7;->S:Ljz2;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 8
     .line 9
     .line 10
-    iput-object p4, p0, Lpq7;->T:Ljz2;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, Lpq7;->U:Ljz2;
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget v0, p0, Lpq7;->X:I
 
     .line 2
     .line 3
-    const-string v1, "[Visibility: getter="
+    const/4 v1, 0x1
 
     .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iget-object v2, p0, Lpq7;->Z:Luq7;
 
+    .line 5
     .line 6
+    iget-boolean p0, p0, Lpq7;->Y:Z
+
     .line 7
     .line 8
-    iget-object v1, p0, Lpq7;->Q:Ljz2;
+    const/4 v3, 0x0
 
     .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    packed-switch v0, :pswitch_data_0
 
+    .line 10
     .line 11
     .line 12
+    check-cast p1, Luk;
+
     .line 13
-    const-string v1, ",isGetter="
-
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-nez p0, :cond_0
 
+    .line 15
     .line 16
+    move v1, v3
+
     .line 17
+    goto :goto_0
+
     .line 18
-    iget-object v1, p0, Lpq7;->R:Ljz2;
+    :cond_0
+    iget-object p0, v2, Luq7;->p0:Lvz7;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const/16 v0, 0xc
 
     .line 21
     .line 22
-    .line 23
-    const-string v1, ",setter="
+    invoke-static {p0, p1, v3, v0}, Lvz7;->h(Lvz7;Ljava/lang/CharSequence;ZI)V
 
+    .line 23
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_0
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, Lpq7;->S:Ljz2;
+    move-result-object p0
 
     .line 29
+    return-object p0
+
     .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    :pswitch_0
+    check-cast p1, Luk;
 
     .line 31
     .line 32
-    .line 33
-    const-string v1, ",creator="
+    if-nez p0, :cond_1
 
+    .line 33
     .line 34
+    move v1, v3
+
     .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_1
 
     .line 36
+    :cond_1
+    iget-object p0, v2, Luq7;->p0:Lvz7;
+
     .line 37
     .line 38
-    iget-object v1, p0, Lpq7;->T:Ljz2;
+    invoke-virtual {p0, p1}, Lvz7;->g(Ljava/lang/CharSequence;)V
 
     .line 39
     .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 41
+    :goto_1
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 42
     .line 43
-    const-string v1, ",field="
-
     .line 44
+    move-result-object p0
+
     .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    return-object p0
 
     .line 46
+    :pswitch_1
+    check-cast p1, Lw52;
+
     .line 47
     .line 48
-    iget-object v1, p0, Lpq7;->U:Ljz2;
+    if-nez p0, :cond_2
 
     .line 49
     .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move v1, v3
 
     .line 51
+    goto :goto_2
+
     .line 52
+    :cond_2
+    check-cast p1, Lsd;
+
     .line 53
-    const-string v1, "]"
-
     .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Lsd;->b()Ljava/lang/CharSequence;
 
+    .line 55
     .line 56
     .line 57
+    move-result-object p0
+
     .line 58
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    if-eqz p0, :cond_3
 
     .line 59
     .line 60
-    .line 61
-    move-result-object v0
+    iget-object p1, v2, Luq7;->p0:Lvz7;
 
+    .line 61
     .line 62
-    return-object v0
+    invoke-virtual {p1, p0}, Lvz7;->g(Ljava/lang/CharSequence;)V
+
+    .line 63
+    .line 64
+    .line 65
+    :cond_3
+    iget-object p0, v2, Luq7;->I0:Lx65;
+
+    .line 66
+    .line 67
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 68
+    .line 69
+    invoke-virtual {p0, p1}, Lx65;->setValue(Ljava/lang/Object;)V
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-virtual {v2}, Lcn4;->I0()Li41;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object p0
+
+    .line 76
+    new-instance p1, Lsq7;
+
+    .line 77
+    .line 78
+    const/4 v0, 0x0
+
+    .line 79
+    const/4 v3, 0x3
+
+    .line 80
+    invoke-direct {p1, v2, v0, v3}, Lsq7;-><init>(Luq7;Lb31;I)V
+
+    .line 81
+    .line 82
+    .line 83
+    invoke-static {p0, v0, v0, p1, v3}, Ld01;->G(Li41;Lz31;Ll41;Lxi2;I)Lk47;
+
+    .line 84
+    .line 85
+    .line 86
+    :goto_2
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object p0
+
+    .line 90
+    return-object p0
+
+    .line 91
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

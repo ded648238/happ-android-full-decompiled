@@ -1,44 +1,90 @@
-.class public abstract Lbt1;
+.class public final synthetic Lbt1;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
 
 
-# static fields
-.field public static final a:Ljava/lang/Object;
-
-.field public static final b:Ljava/util/HashMap;
+# instance fields
+.field public final synthetic X:Lct1;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(Lct1;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    .line 4
+    iput-object p1, p0, Lbt1;->X:Lct1;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onTouchExplorationStateChanged(Z)V
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, Lbt1;->X:Lct1;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lct1;->h:Landroid/widget/AutoCompleteTextView;
 
     .line 4
     .line 5
+    if-eqz v0, :cond_2
+
     .line 6
-    sput-object v0, Lbt1;->a:Ljava/lang/Object;
-
     .line 7
-    .line 8
-    new-instance v0, Ljava/util/HashMap;
+    invoke-virtual {v0}, Landroid/widget/TextView;->getInputType()I
 
+    .line 8
     .line 9
     .line 10
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    move-result v0
 
     .line 11
+    if-eqz v0, :cond_0
+
     .line 12
     .line 13
-    sput-object v0, Lbt1;->b:Ljava/util/HashMap;
+    return-void
 
     .line 14
+    :cond_0
+    iget-object p0, p0, Lix1;->d:Lcom/google/android/material/internal/CheckableImageButton;
+
     .line 15
+    .line 16
+    if-eqz p1, :cond_1
+
+    .line 17
+    .line 18
+    const/4 p1, 0x2
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_1
+    const/4 p1, 0x1
+
+    .line 21
+    :goto_0
+    invoke-virtual {p0, p1}, Landroid/view/View;->setImportantForAccessibility(I)V
+
+    .line 22
+    .line 23
+    .line 24
+    :cond_2
     return-void
 .end method

@@ -1,85 +1,58 @@
-.class public final synthetic Lyj5;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lyj5;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final Q:Lyj5;
+# instance fields
+.field public final a:I
+
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(ILjava/lang/Object;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lyj5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "getRouting()Ljava/lang/String;"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput p1, p0, Lyj5;->a:I
 
+    .line 5
     .line 6
-    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
+    iput-object p2, p0, Lyj5;->b:Ljava/lang/Object;
 
     .line 7
     .line 8
-    const-string v4, "routing"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lyj5;->Q:Lyj5;
-
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final a()Z
     .locals 0
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    iget p0, p0, Lyj5;->a:I
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/String;
+    if-lez p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->p2(Ljava/lang/String;)V
+    const/4 p0, 0x1
 
     .line 6
+    return p0
+
     .line 7
+    :cond_0
+    const/4 p0, 0x0
+
     .line 8
-    return-void
-.end method
-
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->C0()Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    return-object p1
+    return p0
 .end method

@@ -1,61 +1,109 @@
 .class public final Lo93;
-.super Lhc7;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final i0:Ljava/util/regex/Pattern;
+# instance fields
+.field public c0:I
+
+.field public final synthetic d0:Ldd5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lnl7;Lz31;Ldd5;)V
+    .locals 0
 
     .line 1
-    const-string v0, "[a-zA-Z0-9]{3,8}(-[a-zA-Z0-9]{3,8})*"
+    iput-object p3, p0, Lo93;->d0:Ldd5;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    invoke-direct {p0, p1, p2}, Ld31;-><init>(Lb31;Lz31;)V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
-    sput-object v0, Lo93;->i0:Ljava/util/regex/Pattern;
-
-    .line 8
-    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final N(Ljava/lang/String;)Z
-    .locals 1
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    sget-object v0, Lo93;->i0:Ljava/util/regex/Pattern;
+    iget v0, p0, Lo93;->c0:I
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    const/4 v1, 0x1
 
     .line 4
+    if-eqz v0, :cond_1
+
     .line 5
     .line 6
-    move-result-object p1
+    if-ne v0, v1, :cond_0
 
     .line 7
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->matches()Z
-
     .line 8
-    .line 9
-    .line 10
-    move-result p1
+    const/4 v0, 0x2
 
+    .line 9
+    iput v0, p0, Lo93;->c0:I
+
+    .line 10
     .line 11
-    return p1
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object p1
+
+    .line 15
+    :cond_0
+    const-string p0, "This coroutine had already completed"
+
+    .line 16
+    .line 17
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    const/4 p0, 0x0
+
+    .line 21
+    return-object p0
+
+    .line 22
+    :cond_1
+    iput v1, p0, Lo93;->c0:I
+
+    .line 23
+    .line 24
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget-object p1, p0, Lo93;->d0:Ldd5;
+
+    .line 28
+    .line 29
+    invoke-static {v1, p1}, Lq48;->t(ILjava/lang/Object;)Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-interface {p1, p0}, Lmi2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    return-object p0
 .end method

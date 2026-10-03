@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;
 .super Lsu/happ/proxyutility/ui/SnackbarHostActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,23 +26,23 @@
 
 
 # static fields
-.field public static final synthetic J0:I
+.field public static final synthetic U0:I
 
 
 # instance fields
-.field public C0:Lxw5;
+.field public N0:Lhi6;
 
-.field public final D0:Lzu6;
+.field public final O0:Lmm7;
 
-.field public final E0:Lzu6;
+.field public final P0:Lmm7;
 
-.field public final F0:Lzu6;
+.field public final Q0:Lmm7;
 
-.field public final G0:Lzu6;
+.field public final R0:Lmm7;
 
-.field public final H0:Lzu6;
+.field public final S0:Lmm7;
 
-.field public final I0:Le6;
+.field public final T0:Lq6;
 
 
 # direct methods
@@ -55,160 +55,160 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ly66;
+    new-instance v0, Lrs6;
 
     .line 5
     .line 6
     const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v0, p0, v1}, Ly66;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;I)V
+    invoke-direct {v0, p0, v1}, Lrs6;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;I)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 11
     .line 12
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 13
     .line 14
     .line 15
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->D0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->O0:Lmm7;
 
     .line 16
     .line 17
-    new-instance v0, Lxr5;
+    new-instance v0, Lwd6;
 
     .line 18
     .line 19
-    const/16 v1, 0x10
+    const/16 v1, 0xd
 
     .line 20
     .line 21
-    invoke-direct {v0, v1}, Lxr5;-><init>(I)V
+    invoke-direct {v0, v1}, Lwd6;-><init>(I)V
 
     .line 22
     .line 23
     .line 24
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 25
     .line 26
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 27
     .line 28
     .line 29
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->E0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->P0:Lmm7;
 
     .line 30
     .line 31
-    new-instance v0, Lxr5;
+    new-instance v0, Lwd6;
 
     .line 32
     .line 33
-    const/16 v1, 0x11
+    const/16 v1, 0xe
 
     .line 34
     .line 35
-    invoke-direct {v0, v1}, Lxr5;-><init>(I)V
+    invoke-direct {v0, v1}, Lwd6;-><init>(I)V
 
     .line 36
     .line 37
     .line 38
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 39
     .line 40
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 41
     .line 42
     .line 43
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->F0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->Q0:Lmm7;
 
     .line 44
     .line 45
-    new-instance v0, Le83;
+    new-instance v0, Lfd3;
 
     .line 46
     .line 47
-    const/16 v1, 0xc
+    const/16 v1, 0x10
 
     .line 48
     .line 49
-    invoke-direct {v0, v1, p0}, Le83;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lfd3;-><init>(ILjava/lang/Object;)V
 
     .line 50
     .line 51
     .line 52
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 53
     .line 54
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 55
     .line 56
     .line 57
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->G0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->R0:Lmm7;
 
     .line 58
     .line 59
-    new-instance v0, Ly66;
+    new-instance v0, Lrs6;
 
     .line 60
     .line 61
     const/4 v1, 0x1
 
     .line 62
-    invoke-direct {v0, p0, v1}, Ly66;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;I)V
+    invoke-direct {v0, p0, v1}, Lrs6;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;I)V
 
     .line 63
     .line 64
     .line 65
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 66
     .line 67
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 68
     .line 69
     .line 70
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->H0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->S0:Lmm7;
 
     .line 71
     .line 72
-    new-instance v0, La6;
+    new-instance v0, Lm6;
 
     .line 73
     .line 74
     const/4 v1, 0x2
 
     .line 75
-    invoke-direct {v0, v1}, La6;-><init>(I)V
+    invoke-direct {v0, v1}, Lm6;-><init>(I)V
 
     .line 76
     .line 77
     .line 78
-    new-instance v1, Lyx;
+    new-instance v1, Lv31;
 
     .line 79
     .line 80
-    const/16 v2, 0x13
+    const/16 v2, 0x19
 
     .line 81
     .line 82
-    invoke-direct {v1, v2, p0}, Lyx;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lv31;-><init>(ILjava/lang/Object;)V
 
     .line 83
     .line 84
     .line 85
-    invoke-virtual {p0, v1, v0}, Landroidx/activity/ComponentActivity;->k(Lw5;Lyu7;)Le6;
+    invoke-virtual {p0, v1, v0}, Landroidx/activity/ComponentActivity;->l(Li6;Lyl0;)Lq6;
 
     .line 86
     .line 87
@@ -216,7 +216,7 @@
     move-result-object v0
 
     .line 89
-    iput-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->I0:Le6;
+    iput-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->T0:Lq6;
 
     .line 90
     .line 91
@@ -226,30 +226,34 @@
 
 # virtual methods
 .method public final A()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->G0:Lzu6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->R0:Lmm7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Lqd2;
+    check-cast p0, Lsu/happ/proxyutility/domain/sub/GuId;
 
     .line 8
     .line 9
-    iget-object v0, v0, Lqd2;->a:Ljava/lang/String;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/domain/sub/GuId;->b()Ljava/lang/String;
 
     .line 10
     .line 11
-    return-object v0
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
 .end method
 
 .method public final B(Ljava/lang/String;)V
@@ -259,7 +263,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Landroidx/core/app/ComponentActivity;->Q:Lkk3;
+    iget-object v1, p0, Landroidx/core/app/ComponentActivity;->X:Li14;
 
     .line 3
     .line 4
@@ -308,7 +312,7 @@
     move-result-object v3
 
     .line 25
-    sget-object v4, Ldf2;->a:Lcom/google/gson/a;
+    sget-object v4, Lor2;->b:Lcom/google/gson/a;
 
     .line 26
     .line 27
@@ -321,16 +325,16 @@
     .line 30
     .line 31
     .line 32
-    new-instance v6, Ldd7;
+    new-instance v6, Lm58;
 
     .line 33
     .line 34
-    invoke-direct {v6, v5}, Ldd7;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v6, v5}, Lm58;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {v4, p1, v6}, Lcom/google/gson/a;->c(Ljava/lang/String;Ldd7;)Ljava/lang/Object;
+    invoke-virtual {v4, p1, v6}, Lcom/google/gson/a;->c(Ljava/lang/String;Lm58;)Ljava/lang/Object;
 
     .line 38
     .line 39
@@ -405,202 +409,214 @@
     .line 70
     .line 71
     .line 72
-    sget-object v4, Le54;->a:Le54;
+    sget-object v4, Lcm4;->a:Lcm4;
 
     .line 73
     .line 74
-    const-string v4, ""
+    sget-object v4, Lsu/happ/proxyutility/domain/sub/GuId;->Companion:Laq2;
 
     .line 75
     .line 76
-    invoke-static {v4, v3}, Le54;->e(Ljava/lang/String;Lsu/happ/proxyutility/dto/ServerConfig;)Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 77
     .line 78
     .line 79
-    move-result-object v3
+    invoke-static {}, Lsu/happ/proxyutility/domain/sub/GuId;->a()Ljava/lang/String;
 
     .line 80
-    iget-object v4, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->F0:Lzu6;
-
     .line 81
     .line 82
-    invoke-virtual {v4}, Lzu6;->getValue()Ljava/lang/Object;
-
-    .line 83
-    .line 84
-    .line 85
     move-result-object v4
 
+    .line 83
+    invoke-static {v4, v3}, Lcm4;->e(Ljava/lang/String;Lsu/happ/proxyutility/dto/ServerConfig;)Ljava/lang/String;
+
+    .line 84
+    .line 85
     .line 86
-    check-cast v4, Lcom/tencent/mmkv/MMKV;
+    move-result-object v3
 
     .line 87
-    .line 88
-    invoke-virtual {v4, v3, p1}, Lcom/tencent/mmkv/MMKV;->q(Ljava/lang/String;Ljava/lang/String;)Z
+    iget-object v4, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->Q0:Lmm7;
 
+    .line 88
     .line 89
+    invoke-virtual {v4}, Lmm7;->getValue()Ljava/lang/Object;
+
     .line 90
     .line 91
-    invoke-static {v1}, Lyr;->C(Lkk3;)Lbk3;
-
     .line 92
-    .line 93
-    .line 94
-    move-result-object p1
+    move-result-object v4
 
+    .line 93
+    check-cast v4, Lcom/tencent/mmkv/MMKV;
+
+    .line 94
     .line 95
-    sget-object v3, Lpe1;->a:Lq41;
+    invoke-virtual {v4, v3, p1}, Lcom/tencent/mmkv/MMKV;->q(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 96
     .line 97
-    sget-object v3, Lpv3;->a:Lzd2;
-
     .line 98
-    .line 99
-    new-instance v4, La76;
+    invoke-static {v1}, Lkp3;->y(Li14;)Ly04;
 
+    .line 99
     .line 100
     .line 101
-    const/4 v5, 0x1
+    move-result-object p1
 
     .line 102
-    invoke-direct {v4, p0, v2, v5}, La76;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;Lyv0;I)V
+    sget-object v3, Ljm1;->a:Lpc1;
 
     .line 103
     .line 104
-    .line 105
-    invoke-static {p1, v3, v4, v0}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    sget-object v3, Lac4;->a:Lkq2;
 
+    .line 105
     .line 106
+    new-instance v4, Lts6;
+
     .line 107
     .line 108
-    move-result-object p1
+    const/4 v5, 0x1
 
     .line 109
-    goto :goto_3
+    invoke-direct {v4, p0, v2, v5}, Lts6;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;Lb31;I)V
 
     .line 110
-    :cond_3
-    :goto_1
-    invoke-static {v1}, Lyr;->C(Lkk3;)Lbk3;
-
     .line 111
     .line 112
+    invoke-static {p1, v3, v4, v0}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
+
     .line 113
+    .line 114
+    .line 115
     move-result-object p1
 
-    .line 114
-    sget-object v3, Lpe1;->a:Lq41;
-
-    .line 115
     .line 116
-    sget-object v3, Lpv3;->a:Lzd2;
+    goto :goto_3
 
     .line 117
-    .line 118
-    new-instance v4, La76;
+    :cond_3
+    :goto_1
+    invoke-static {v1}, Lkp3;->y(Li14;)Ly04;
 
+    .line 118
     .line 119
     .line 120
-    const/4 v5, 0x0
+    move-result-object p1
 
     .line 121
-    invoke-direct {v4, p0, v2, v5}, La76;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;Lyv0;I)V
+    sget-object v3, Ljm1;->a:Lpc1;
 
     .line 122
     .line 123
-    .line 124
-    invoke-static {p1, v3, v4, v0}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    sget-object v3, Lac4;->a:Lkq2;
 
+    .line 124
     .line 125
+    new-instance v4, Lts6;
+
     .line 126
     .line 127
-    return-void
+    const/4 v5, 0x0
 
     .line 128
-    :goto_2
-    instance-of v3, p1, Ljava/lang/InterruptedException;
+    invoke-direct {v4, p0, v2, v5}, Lts6;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;Lb31;I)V
 
     .line 129
     .line 130
-    if-nez v3, :cond_5
-
     .line 131
-    .line 132
-    instance-of v3, p1, Ljava/util/concurrent/CancellationException;
+    invoke-static {p1, v3, v4, v0}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 132
     .line 133
     .line 134
-    if-nez v3, :cond_5
+    return-void
 
     .line 135
+    :goto_2
+    instance-of v3, p1, Ljava/lang/InterruptedException;
+
     .line 136
-    new-instance v3, Lon5;
-
     .line 137
-    .line 138
-    invoke-direct {v3, p1}, Lon5;-><init>(Ljava/lang/Throwable;)V
+    if-nez v3, :cond_5
 
+    .line 138
     .line 139
+    instance-of v3, p1, Ljava/util/concurrent/CancellationException;
+
     .line 140
     .line 141
-    move-object p1, v3
+    if-nez v3, :cond_5
 
     .line 142
-    :goto_3
-    invoke-static {p1}, Lpn5;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
-
     .line 143
+    new-instance v3, Lc86;
+
     .line 144
     .line 145
-    move-result-object p1
+    invoke-direct {v3, p1}, Lc86;-><init>(Ljava/lang/Throwable;)V
 
     .line 146
-    if-eqz p1, :cond_4
-
     .line 147
     .line 148
-    invoke-static {v1}, Lyr;->C(Lkk3;)Lbk3;
+    move-object p1, v3
 
     .line 149
+    :goto_3
+    invoke-static {p1}, Ld86;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+
     .line 150
     .line 151
-    move-result-object v1
-
     .line 152
-    sget-object v3, Lpe1;->a:Lq41;
+    move-result-object p1
 
     .line 153
+    if-eqz p1, :cond_4
+
     .line 154
-    sget-object v3, Lpv3;->a:Lzd2;
-
     .line 155
-    .line 156
-    new-instance v4, Lh;
+    invoke-static {v1}, Lkp3;->y(Li14;)Ly04;
 
+    .line 156
     .line 157
     .line 158
-    const/16 v5, 0x1d
+    move-result-object v1
 
     .line 159
-    .line 160
-    invoke-direct {v4, p0, p1, v2, v5}, Lh;-><init>(Ljava/lang/Object;Ljava/lang/Object;Lyv0;I)V
+    sget-object v3, Ljm1;->a:Lpc1;
 
+    .line 160
     .line 161
+    sget-object v3, Lac4;->a:Lkq2;
+
     .line 162
     .line 163
-    invoke-static {v1, v3, v4, v0}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    new-instance v4, Ldd6;
 
     .line 164
     .line 165
+    const/4 v5, 0x3
+
     .line 166
+    invoke-direct {v4, p0, p1, v2, v5}, Ldd6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Lb31;I)V
+
+    .line 167
+    .line 168
+    .line 169
+    invoke-static {v1, v3, v4, v0}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
+
+    .line 170
+    .line 171
+    .line 172
     :cond_4
     return-void
 
-    .line 167
+    .line 173
     :cond_5
     throw p1
 .end method
@@ -609,7 +625,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 2
     .line 3
@@ -624,7 +640,7 @@
 
     .line 7
     .line 8
-    iget-object v0, v0, Lxw5;->T:Ljava/lang/Object;
+    iget-object v0, v0, Lhi6;->c0:Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -652,11 +668,11 @@
 
     .line 21
     .line 22
-    sget v0, Lx95;->server_name:I
+    sget v0, Lxt5;->server_name:I
 
     .line 23
     .line 24
-    invoke-static {p0, v0}, Luy7;->N(Lsu/happ/proxyutility/ui/SnackbarHostActivity;I)V
+    invoke-static {p0, v0}, Lku8;->K(Lsu/happ/proxyutility/ui/SnackbarHostActivity;I)V
 
     .line 25
     .line 26
@@ -666,11 +682,11 @@
     .line 28
     :cond_0
     :try_start_0
-    sget-object v0, Ldf2;->a:Lcom/google/gson/a;
+    sget-object v0, Lor2;->b:Lcom/google/gson/a;
 
     .line 29
     .line 30
-    iget-object v3, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object v3, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 31
     .line 32
@@ -678,7 +694,7 @@
 
     .line 33
     .line 34
-    iget-object v3, v3, Lxw5;->S:Ljava/lang/Object;
+    iget-object v3, v3, Lhi6;->Z:Ljava/lang/Object;
 
     .line 35
     .line 36
@@ -711,16 +727,16 @@
     .line 49
     .line 50
     .line 51
-    new-instance v5, Ldd7;
+    new-instance v5, Lm58;
 
     .line 52
     .line 53
-    invoke-direct {v5, v4}, Ldd7;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v5, v4}, Lm58;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 54
     .line 55
     .line 56
-    invoke-virtual {v0, v3, v5}, Lcom/google/gson/a;->c(Ljava/lang/String;Ldd7;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v5}, Lcom/google/gson/a;->c(Ljava/lang/String;Lm58;)Ljava/lang/Object;
 
     .line 57
     .line 58
@@ -743,7 +759,7 @@
 
     .line 65
     :cond_1
-    invoke-static {v1}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v1}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 66
     .line 67
@@ -770,11 +786,11 @@
 
     .line 76
     .line 77
-    new-instance v3, Lon5;
+    new-instance v3, Lc86;
 
     .line 78
     .line 79
-    invoke-direct {v3, v0}, Lon5;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v3, v0}, Lc86;-><init>(Ljava/lang/Throwable;)V
 
     .line 80
     .line 81
@@ -783,7 +799,7 @@
 
     .line 83
     :goto_1
-    invoke-static {v0}, Lpn5;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+    invoke-static {v0}, Ld86;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
 
     .line 84
     .line 85
@@ -795,7 +811,7 @@
 
     .line 88
     .line 89
-    sget v4, Lx95;->toast_malformed_json:I
+    sget v4, Lxt5;->toast_malformed_json:I
 
     .line 90
     .line 91
@@ -839,7 +855,7 @@
 
     .line 108
     .line 109
-    invoke-static {v4, v5, v3}, Lkd0;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v5, v3}, Leh0;->m(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 110
     .line 111
@@ -850,13 +866,13 @@
     const/4 v4, 0x6
 
     .line 114
-    invoke-static {p0, v3, v2, v4}, Luy7;->O(Lsu/happ/proxyutility/ui/SnackbarHostActivity;Ljava/lang/String;Ljava/util/List;I)V
+    invoke-static {p0, v3, v2, v4}, Lku8;->L(Lsu/happ/proxyutility/ui/SnackbarHostActivity;Ljava/lang/String;Ljava/util/List;I)V
 
     .line 115
     .line 116
     .line 117
     :cond_3
-    instance-of v3, v0, Lon5;
+    instance-of v3, v0, Lc86;
 
     .line 118
     .line 119
@@ -880,7 +896,7 @@
 
     .line 127
     :cond_5
-    sget-object v3, Le54;->a:Le54;
+    sget-object v3, Lcm4;->a:Lcm4;
 
     .line 128
     .line 129
@@ -892,7 +908,7 @@
     move-result-object v3
 
     .line 133
-    invoke-static {v3}, Le54;->b(Ljava/lang/String;)Lsu/happ/proxyutility/dto/ServerConfig;
+    invoke-static {v3}, Lcm4;->b(Ljava/lang/String;)Lsu/happ/proxyutility/dto/ServerConfig;
 
     .line 134
     .line 135
@@ -926,7 +942,7 @@
 
     .line 150
     :cond_6
-    iget-object v4, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object v4, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 151
     .line 152
@@ -934,7 +950,7 @@
 
     .line 153
     .line 154
-    iget-object v4, v4, Lxw5;->T:Ljava/lang/Object;
+    iget-object v4, v4, Lhi6;->c0:Ljava/lang/Object;
 
     .line 155
     .line 156
@@ -950,7 +966,7 @@
     move-result-object v4
 
     .line 162
-    invoke-static {v4}, Lsl6;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v4}, Lea7;->y1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     .line 163
     .line 164
@@ -984,16 +1000,16 @@
     move-result-object v0
 
     .line 180
-    invoke-static {v0, v3}, Le54;->e(Ljava/lang/String;Lsu/happ/proxyutility/dto/ServerConfig;)Ljava/lang/String;
+    invoke-static {v0, v3}, Lcm4;->e(Ljava/lang/String;Lsu/happ/proxyutility/dto/ServerConfig;)Ljava/lang/String;
 
     .line 181
     .line 182
     .line 183
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->F0:Lzu6;
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->Q0:Lmm7;
 
     .line 184
     .line 185
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 186
     .line 187
@@ -1013,7 +1029,7 @@
     move-result-object v3
 
     .line 195
-    iget-object v4, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object v4, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 196
     .line 197
@@ -1021,7 +1037,7 @@
 
     .line 198
     .line 199
-    iget-object v1, v4, Lxw5;->S:Ljava/lang/Object;
+    iget-object v1, v4, Lhi6;->Z:Ljava/lang/Object;
 
     .line 200
     .line 201
@@ -1050,11 +1066,11 @@
     .line 212
     .line 213
     .line 214
-    sget v0, Lx95;->toast_success:I
+    sget v0, Lxt5;->toast_success:I
 
     .line 215
     .line 216
-    invoke-static {p0, v0}, Luy7;->R(Lsu/happ/proxyutility/ui/SnackbarHostActivity;I)V
+    invoke-static {p0, v0}, Lku8;->O(Lsu/happ/proxyutility/ui/SnackbarHostActivity;I)V
 
     .line 217
     .line 218
@@ -1068,7 +1084,7 @@
 
     .line 223
     :cond_7
-    invoke-static {v1}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v1}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 224
     .line 225
@@ -1077,7 +1093,7 @@
 
     .line 227
     :cond_8
-    invoke-static {v1}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v1}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 228
     .line 229
@@ -1090,7 +1106,7 @@
 
     .line 232
     :cond_a
-    invoke-static {v1}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v1}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 233
     .line 234
@@ -1145,11 +1161,11 @@
     .line 22
     .line 23
     :try_start_0
-    iget-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->I0:Le6;
+    iget-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->T0:Lq6;
 
     .line 24
     .line 25
-    sget v2, Lx95;->title_file_chooser:I
+    sget v2, Lxt5;->title_file_chooser:I
 
     .line 26
     .line 27
@@ -1174,12 +1190,12 @@
     .line 36
     .line 37
     .line 38
-    invoke-virtual {v1, v0}, Le6;->X(Ljava/lang/Object;)V
+    invoke-virtual {v1, v0}, Lq6;->d0(Ljava/lang/Object;)V
 
     .line 39
     .line 40
     .line 41
-    sget-object v0, Lbh7;->a:Lbh7;
+    sget-object v0, Lr98;->a:Lr98;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1208,11 +1224,11 @@
 
     .line 52
     .line 53
-    new-instance v1, Lon5;
+    new-instance v1, Lc86;
 
     .line 54
     .line 55
-    invoke-direct {v1, v0}, Lon5;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v1, v0}, Lc86;-><init>(Ljava/lang/Throwable;)V
 
     .line 56
     .line 57
@@ -1221,7 +1237,7 @@
 
     .line 59
     :goto_0
-    invoke-static {v0}, Lpn5;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+    invoke-static {v0}, Ld86;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
 
     .line 60
     .line 61
@@ -1241,11 +1257,11 @@
 
     .line 68
     .line 69
-    sget v0, Lx95;->toast_require_file_manager:I
+    sget v0, Lxt5;->toast_require_file_manager:I
 
     .line 70
     .line 71
-    invoke-static {p0, v0}, Luy7;->N(Lsu/happ/proxyutility/ui/SnackbarHostActivity;I)V
+    invoke-static {p0, v0}, Lku8;->K(Lsu/happ/proxyutility/ui/SnackbarHostActivity;I)V
 
     .line 72
     .line 73
@@ -1275,7 +1291,7 @@
     move-result-object p1
 
     .line 8
-    sget v0, Lt95;->activity_server_custom_config:I
+    sget v0, Ltt5;->activity_server_custom_config:I
 
     .line 9
     .line 10
@@ -1293,11 +1309,11 @@
     move-result-object p1
 
     .line 16
-    sget v0, Ld95;->cl_main:I
+    sget v0, Let5;->cl_main:I
 
     .line 17
     .line 18
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 19
     .line 20
@@ -1313,11 +1329,11 @@
 
     .line 25
     .line 26
-    sget v0, Ld95;->editor:I
+    sget v0, Let5;->editor:I
 
     .line 27
     .line 28
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 29
     .line 30
@@ -1336,11 +1352,11 @@
 
     .line 36
     .line 37
-    sget v0, Ld95;->if_remarks:I
+    sget v0, Let5;->if_remarks:I
 
     .line 38
     .line 39
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 40
     .line 41
@@ -1359,11 +1375,11 @@
 
     .line 47
     .line 48
-    sget v0, Ld95;->ll_editor:I
+    sget v0, Let5;->ll_editor:I
 
     .line 49
     .line 50
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 51
     .line 52
@@ -1382,11 +1398,11 @@
 
     .line 58
     .line 59
-    sget v0, Ld95;->snackbar_host_root:I
+    sget v0, Let5;->snackbar_host_root:I
 
     .line 60
     .line 61
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 62
     .line 63
@@ -1405,11 +1421,11 @@
 
     .line 69
     .line 70
-    sget v0, Ld95;->toolbar:I
+    sget v0, Let5;->toolbar:I
 
     .line 71
     .line 72
-    invoke-static {p1, v0}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {p1, v0}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 73
     .line 74
@@ -1428,7 +1444,7 @@
 
     .line 80
     .line 81
-    new-instance v4, Lxw5;
+    new-instance v4, Lhi6;
 
     .line 82
     .line 83
@@ -1439,15 +1455,15 @@
 
     .line 85
     .line 86
-    const/4 v11, 0x1
+    const/4 v11, 0x2
 
     .line 87
-    invoke-direct/range {v4 .. v11}, Lxw5;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct/range {v4 .. v11}, Lhi6;-><init>(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/View;I)V
 
     .line 88
     .line 89
     .line 90
-    iput-object v4, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iput-object v4, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 91
     .line 92
@@ -1456,11 +1472,11 @@
     .line 93
     .line 94
     .line 95
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->D0:Lzu6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->O0:Lmm7;
 
     .line 96
     .line 97
-    invoke-virtual {p1}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 98
     .line 99
@@ -1468,16 +1484,16 @@
     move-result-object p1
 
     .line 101
-    check-cast p1, Lhy0;
+    check-cast p1, Lr51;
 
     .line 102
     .line 103
-    invoke-static {p1}, Lhc7;->o(Lxy0;)V
+    invoke-static {p1}, Lor4;->n(Ln61;)V
 
     .line 104
     .line 105
     .line 106
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 107
     .line 108
@@ -1489,7 +1505,7 @@
 
     .line 111
     .line 112
-    iget-object p1, p1, Lxw5;->R:Ljava/lang/Object;
+    iget-object p1, p1, Lhi6;->Y:Ljava/lang/Object;
 
     .line 113
     .line 114
@@ -1507,7 +1523,7 @@
     .line 120
     .line 121
     .line 122
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 123
     .line 124
@@ -1515,7 +1531,7 @@
 
     .line 125
     .line 126
-    iget-object p1, p1, Lxw5;->W:Ljava/lang/Object;
+    iget-object p1, p1, Lhi6;->f0:Ljava/lang/Object;
 
     .line 127
     .line 128
@@ -1523,12 +1539,12 @@
 
     .line 129
     .line 130
-    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->p(Landroidx/appcompat/widget/Toolbar;)V
+    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->q(Landroidx/appcompat/widget/Toolbar;)V
 
     .line 131
     .line 132
     .line 133
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 134
     .line 135
@@ -1536,7 +1552,7 @@
 
     .line 136
     .line 137
-    iget-object p1, p1, Lxw5;->W:Ljava/lang/Object;
+    iget-object p1, p1, Lhi6;->f0:Ljava/lang/Object;
 
     .line 138
     .line 139
@@ -1552,7 +1568,7 @@
     move-result-object v3
 
     .line 145
-    invoke-static {v3}, Lsl6;->v0(Ljava/lang/CharSequence;)Z
+    invoke-static {v3}, Lea7;->W0(Ljava/lang/CharSequence;)Z
 
     .line 146
     .line 147
@@ -1564,7 +1580,7 @@
 
     .line 150
     .line 151
-    sget v3, Lx95;->menu_item_import_config_manually:I
+    sget v3, Lxt5;->menu_item_import_config_manually:I
 
     .line 152
     .line 153
@@ -1572,7 +1588,7 @@
 
     .line 154
     :cond_0
-    sget v3, Lx95;->title_server:I
+    sget v3, Lxt5;->title_server:I
 
     .line 155
     .line 156
@@ -1590,11 +1606,11 @@
     .line 161
     .line 162
     .line 163
-    sget-object p1, Lpk7;->a:Lpk7;
+    sget-object p1, Lif8;->a:Lif8;
 
     .line 164
     .line 165
-    invoke-static {}, Lj04;->A()Z
+    invoke-static {}, Lda1;->Q()Z
 
     .line 166
     .line 167
@@ -1606,16 +1622,16 @@
 
     .line 170
     .line 171
-    invoke-static {}, Lno1;->g()V
+    invoke-static {}, Ldx1;->e()V
 
     .line 172
     .line 173
     .line 174
-    sget-object p1, Lpk7;->d:Lzu6;
+    sget-object p1, Lif8;->d:Lmm7;
 
     .line 175
     .line 176
-    invoke-virtual {p1}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 177
     .line 178
@@ -1647,11 +1663,11 @@
 
     .line 191
     :cond_1
-    const-string p1, "Required value was null."
+    const-string p0, "Required value was null."
 
     .line 192
     .line 193
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 194
     .line 195
@@ -1661,7 +1677,7 @@
     .line 197
     :cond_2
     :goto_1
-    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 198
     .line 199
@@ -1697,7 +1713,7 @@
 
     .line 214
     :cond_3
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 215
     .line 216
@@ -1705,7 +1721,7 @@
 
     .line 217
     .line 218
-    iget-object p1, p1, Lxw5;->S:Ljava/lang/Object;
+    iget-object p1, p1, Lhi6;->Z:Ljava/lang/Object;
 
     .line 219
     .line 220
@@ -1713,17 +1729,17 @@
 
     .line 221
     .line 222
-    sget-object v3, Lkm1;->b:Lym0;
+    sget-object v3, Lsu1;->b:Leu0;
 
     .line 223
     .line 224
-    invoke-virtual {p1, v3}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->setColorScheme(Lym0;)V
+    invoke-virtual {p1, v3}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->setColorScheme(Leu0;)V
 
     .line 225
     .line 226
     .line 227
     :goto_2
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 228
     .line 229
@@ -1731,7 +1747,7 @@
 
     .line 230
     .line 231
-    iget-object p1, p1, Lxw5;->S:Ljava/lang/Object;
+    iget-object p1, p1, Lhi6;->Z:Ljava/lang/Object;
 
     .line 232
     .line 233
@@ -1739,7 +1755,7 @@
 
     .line 234
     .line 235
-    new-instance v3, Ldr0;
+    new-instance v3, Lkv1;
 
     .line 236
     .line 237
@@ -1748,12 +1764,12 @@
     .line 238
     .line 239
     .line 240
-    invoke-virtual {p1, v3}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->setLanguage(Lce3;)V
+    invoke-virtual {p1, v3}, Lcom/blacksquircle/ui/editorkit/widget/internal/SyntaxHighlightEditText;->setLanguage(Lpu3;)V
 
     .line 241
     .line 242
     .line 243
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 244
     .line 245
@@ -1761,7 +1777,7 @@
 
     .line 246
     .line 247
-    iget-object p1, p1, Lxw5;->U:Ljava/lang/Object;
+    iget-object p1, p1, Lhi6;->d0:Ljava/lang/Object;
 
     .line 248
     .line 249
@@ -1769,11 +1785,11 @@
 
     .line 250
     .line 251
-    new-instance v3, Lz66;
+    new-instance v3, Lss6;
 
     .line 252
     .line 253
-    invoke-direct {v3, p0, v2}, Lz66;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;I)V
+    invoke-direct {v3, p0, v2}, Lss6;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;I)V
 
     .line 254
     .line 255
@@ -1783,7 +1799,7 @@
     .line 257
     .line 258
     .line 259
-    sget-object p1, Le54;->a:Le54;
+    sget-object p1, Lcm4;->a:Lcm4;
 
     .line 260
     .line 261
@@ -1795,7 +1811,7 @@
     move-result-object p1
 
     .line 265
-    invoke-static {p1}, Le54;->b(Ljava/lang/String;)Lsu/happ/proxyutility/dto/ServerConfig;
+    invoke-static {p1}, Lcm4;->b(Ljava/lang/String;)Lsu/happ/proxyutility/dto/ServerConfig;
 
     .line 266
     .line 267
@@ -1803,7 +1819,7 @@
     move-result-object p1
 
     .line 269
-    iget-object v2, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object v2, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 270
     .line 271
@@ -1815,7 +1831,7 @@
 
     .line 274
     .line 275
-    iget-object v2, v2, Lxw5;->T:Ljava/lang/Object;
+    iget-object v2, v2, Lhi6;->c0:Ljava/lang/Object;
 
     .line 276
     .line 277
@@ -1836,11 +1852,11 @@
     .line 284
     .line 285
     .line 286
-    iget-object v2, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->F0:Lzu6;
+    iget-object v2, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->Q0:Lmm7;
 
     .line 287
     .line 288
-    invoke-virtual {v2}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 289
     .line 290
@@ -1868,19 +1884,19 @@
     move-result-object v2
 
     .line 302
-    iget-object v3, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 303
     .line 304
-    if-eqz v3, :cond_8
+    if-eqz p0, :cond_8
 
     .line 305
     .line 306
-    iget-object v0, v3, Lxw5;->S:Ljava/lang/Object;
+    iget-object p0, p0, Lhi6;->Z:Ljava/lang/Object;
 
     .line 307
     .line 308
-    check-cast v0, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;
+    check-cast p0, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;
 
     .line 309
     .line 310
@@ -1888,15 +1904,15 @@
 
     .line 311
     .line 312
-    invoke-static {v2}, Lsl6;->v0(Ljava/lang/CharSequence;)Z
+    invoke-static {v2}, Lea7;->W0(Ljava/lang/CharSequence;)Z
 
     .line 313
     .line 314
     .line 315
-    move-result v3
+    move-result v0
 
     .line 316
-    if-eqz v3, :cond_4
+    if-eqz v0, :cond_4
 
     .line 317
     .line 318
@@ -1904,7 +1920,7 @@
 
     .line 319
     :cond_4
-    invoke-static {v2}, Lvy7;->e(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v2}, Llu8;->e(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 320
     .line 321
@@ -1929,11 +1945,11 @@
 
     .line 329
     .line 330
-    sget-object v1, Ldf2;->c:Lcom/google/gson/a;
+    sget-object v0, Lor2;->d:Lcom/google/gson/a;
 
     .line 331
     .line 332
-    invoke-virtual {v1, p1}, Lcom/google/gson/a;->h(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/google/gson/a;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 333
     .line 334
@@ -1958,7 +1974,7 @@
 
     .line 342
     :goto_4
-    invoke-static {p1}, Lkl6;->y(Ljava/lang/String;)Landroid/text/Editable;
+    invoke-static {p1}, Lw97;->N(Ljava/lang/String;)Landroid/text/Editable;
 
     .line 343
     .line 344
@@ -1966,7 +1982,7 @@
     move-result-object p1
 
     .line 346
-    invoke-virtual {v0, p1}, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->setTextContent(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Lcom/blacksquircle/ui/editorkit/widget/TextProcessor;->setTextContent(Ljava/lang/CharSequence;)V
 
     .line 347
     .line 348
@@ -1975,7 +1991,7 @@
 
     .line 350
     :cond_8
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 351
     .line 352
@@ -1984,7 +2000,7 @@
 
     .line 354
     :cond_9
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 355
     .line 356
@@ -1997,19 +2013,19 @@
 
     .line 359
     .line 360
-    iget-object p1, v2, Lxw5;->T:Ljava/lang/Object;
+    iget-object p0, v2, Lhi6;->c0:Ljava/lang/Object;
 
     .line 361
     .line 362
-    check-cast p1, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    check-cast p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 363
     .line 364
-    iget-object p1, p1, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->R:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;->d0:Lsu/happ/proxyutility/ui/foundation/component/HappEditText;
 
     .line 365
     .line 366
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 367
     .line 368
@@ -2018,7 +2034,7 @@
 
     .line 370
     :cond_b
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 371
     .line 372
@@ -2027,7 +2043,7 @@
 
     .line 374
     :cond_c
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 375
     .line 376
@@ -2036,7 +2052,7 @@
 
     .line 378
     :cond_d
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 379
     .line 380
@@ -2045,7 +2061,7 @@
 
     .line 382
     :cond_e
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 383
     .line 384
@@ -2054,7 +2070,7 @@
 
     .line 386
     :cond_f
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 387
     .line 388
@@ -2063,7 +2079,7 @@
 
     .line 390
     :cond_10
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 391
     .line 392
@@ -2072,7 +2088,7 @@
 
     .line 394
     :cond_11
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 395
     .line 396
@@ -2086,30 +2102,30 @@
     .line 399
     .line 400
     .line 401
-    move-result-object p1
+    move-result-object p0
 
     .line 402
-    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
 
     .line 403
     .line 404
     .line 405
-    move-result-object p1
+    move-result-object p0
 
     .line 406
-    const-string v0, "Missing required view with ID: "
+    const-string p1, "Missing required view with ID: "
 
     .line 407
     .line 408
-    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 409
     .line 410
     .line 411
-    move-result-object p1
+    move-result-object p0
 
     .line 412
-    invoke-static {p1}, Len0;->g(Ljava/lang/String;)V
+    invoke-static {p0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 413
     .line 414
@@ -2134,7 +2150,7 @@
     move-result-object v0
 
     .line 8
-    sget v1, Lv95;->action_server_custom_config:I
+    sget v1, Lvt5;->action_server_custom_config:I
 
     .line 9
     .line 10
@@ -2143,7 +2159,7 @@
     .line 11
     .line 12
     .line 13
-    sget v0, Ld95;->save_config:I
+    sget v0, Let5;->save_config:I
 
     .line 14
     .line 15
@@ -2155,7 +2171,7 @@
     move-result-object v0
 
     .line 19
-    sget v1, Ld95;->import_config_custom_local:I
+    sget v1, Let5;->import_config_custom_local:I
 
     .line 20
     .line 21
@@ -2179,14 +2195,14 @@
 
     .line 30
     .line 31
-    new-instance v3, Lz66;
+    new-instance v3, Lss6;
 
     .line 32
     .line 33
     const/4 v4, 0x1
 
     .line 34
-    invoke-direct {v3, p0, v4}, Lz66;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;I)V
+    invoke-direct {v3, p0, v4}, Lss6;-><init>(Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;I)V
 
     .line 35
     .line 36
@@ -2205,7 +2221,7 @@
     move-result-object v2
 
     .line 44
-    invoke-static {v2}, Lsl6;->v0(Ljava/lang/CharSequence;)Z
+    invoke-static {v2}, Lea7;->W0(Ljava/lang/CharSequence;)Z
 
     .line 45
     .line 46
@@ -2225,11 +2241,11 @@
     .line 52
     .line 53
     .line 54
-    iget-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->H0:Lzu6;
+    iget-object v1, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->S0:Lmm7;
 
     .line 55
     .line 56
-    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 57
     .line 58
@@ -2264,10 +2280,10 @@
     .line 72
     .line 73
     .line 74
-    move-result p1
+    move-result p0
 
     .line 75
-    return p1
+    return p0
 .end method
 
 .method public final onOptionsItemSelected(Landroid/view/MenuItem;)Z
@@ -2287,7 +2303,7 @@
     move-result v0
 
     .line 8
-    sget v1, Ld95;->save_config:I
+    sget v1, Let5;->save_config:I
 
     .line 9
     .line 10
@@ -2307,7 +2323,7 @@
 
     .line 17
     :cond_0
-    sget v1, Ld95;->import_config_custom_local:I
+    sget v1, Let5;->import_config_custom_local:I
 
     .line 18
     .line 19
@@ -2321,7 +2337,7 @@
     .line 22
     .line 23
     .line 24
-    sget-object p1, Lbh7;->a:Lbh7;
+    sget-object p0, Lr98;->a:Lr98;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2331,50 +2347,50 @@
 
     .line 27
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 28
-    instance-of v0, p1, Ljava/lang/InterruptedException;
+    instance-of p1, p0, Ljava/lang/InterruptedException;
 
     .line 29
     .line 30
-    if-nez v0, :cond_1
+    if-nez p1, :cond_1
 
     .line 31
     .line 32
-    instance-of v0, p1, Ljava/util/concurrent/CancellationException;
+    instance-of p1, p0, Ljava/util/concurrent/CancellationException;
 
     .line 33
     .line 34
-    if-nez v0, :cond_1
+    if-nez p1, :cond_1
 
     .line 35
     .line 36
-    new-instance v0, Lon5;
+    new-instance p1, Lc86;
 
     .line 37
     .line 38
-    invoke-direct {v0, p1}, Lon5;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {p1, p0}, Lc86;-><init>(Ljava/lang/Throwable;)V
 
     .line 39
     .line 40
     .line 41
-    move-object p1, v0
+    move-object p0, p1
 
     .line 42
     :goto_0
-    instance-of p1, p1, Lon5;
+    instance-of p0, p0, Lc86;
 
     .line 43
     .line 44
-    xor-int/2addr p1, v2
+    xor-int/2addr p0, v2
 
     .line 45
-    return p1
+    return p0
 
     .line 46
     :cond_1
-    throw p1
+    throw p0
 
     .line 47
     :cond_2
@@ -2383,133 +2399,133 @@
     .line 48
     .line 49
     .line 50
-    move-result p1
+    move-result p0
 
     .line 51
-    return p1
+    return p0
 .end method
 
-.method public final t()Landroidx/appcompat/widget/Toolbar;
-    .locals 1
+.method public final u()Landroidx/appcompat/widget/Toolbar;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lxw5;->W:Ljava/lang/Object;
+    iget-object p0, p0, Lhi6;->f0:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v0, Landroidx/appcompat/widget/Toolbar;
+    check-cast p0, Landroidx/appcompat/widget/Toolbar;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    throw v0
+    throw p0
 .end method
 
-.method public final v()Z
-    .locals 1
+.method public final w()Z
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lxw5;->T:Ljava/lang/Object;
+    iget-object p0, p0, Lhi6;->c0:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
+    check-cast p0, Lsu/happ/proxyutility/ui/foundation/component/HappInputField;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 15
     .line 16
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 17
     .line 18
     .line 19
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 20
-    throw v0
+    throw p0
 .end method
 
 .method public final z()Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->C0:Lxw5;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/custom_config/ServerCustomConfigActivity;->N0:Lhi6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lxw5;->V:Ljava/lang/Object;
+    iget-object p0, p0, Lhi6;->e0:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
+    check-cast p0, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    throw v0
+    throw p0
 .end method

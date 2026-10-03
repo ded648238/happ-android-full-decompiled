@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/OpenSSLECGroupContext;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -980,42 +980,42 @@
 
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
     .line 2
     .line 3
-    const-string v0, "OpenSSLECGroupContext.equals is not defined"
+    const-string p1, "OpenSSLECGroupContext.equals is not defined"
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    throw p0
 .end method
 
 .method public getCurveName()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLECGroupContext;->groupCtx:Lorg/conscrypt/NativeRef$EC_GROUP;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECGroupContext;->groupCtx:Lorg/conscrypt/NativeRef$EC_GROUP;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lorg/conscrypt/NativeCrypto;->EC_GROUP_get_curve_name(Lorg/conscrypt/NativeRef$EC_GROUP;)Ljava/lang/String;
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EC_GROUP_get_curve_name(Lorg/conscrypt/NativeRef$EC_GROUP;)Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getECParameterSpec()Ljava/security/spec/ECParameterSpec;
@@ -1175,24 +1175,24 @@
 
     .line 79
     .line 80
-    iget-object v5, p0, Lorg/conscrypt/OpenSSLECGroupContext;->groupCtx:Lorg/conscrypt/NativeRef$EC_GROUP;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECGroupContext;->groupCtx:Lorg/conscrypt/NativeRef$EC_GROUP;
 
     .line 81
     .line 82
-    invoke-static {v5}, Lorg/conscrypt/NativeCrypto;->EC_GROUP_get_cofactor(Lorg/conscrypt/NativeRef$EC_GROUP;)[B
+    invoke-static {p0}, Lorg/conscrypt/NativeCrypto;->EC_GROUP_get_cofactor(Lorg/conscrypt/NativeRef$EC_GROUP;)[B
 
     .line 83
     .line 84
     .line 85
-    move-result-object v5
+    move-result-object p0
 
     .line 86
-    invoke-direct {v4, v5}, Ljava/math/BigInteger;-><init>([B)V
+    invoke-direct {v4, p0}, Ljava/math/BigInteger;-><init>([B)V
 
     .line 87
     .line 88
     .line 89
-    new-instance v5, Ljava/security/spec/ECParameterSpec;
+    new-instance p0, Ljava/security/spec/ECParameterSpec;
 
     .line 90
     .line 91
@@ -1204,32 +1204,32 @@
     move-result v4
 
     .line 95
-    invoke-direct {v5, v2, v1, v3, v4}, Ljava/security/spec/ECParameterSpec;-><init>(Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;I)V
+    invoke-direct {p0, v2, v1, v3, v4}, Ljava/security/spec/ECParameterSpec;-><init>(Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;I)V
 
     .line 96
     .line 97
     .line 98
-    invoke-static {v5, v0}, Lorg/conscrypt/Platform;->setCurveName(Ljava/security/spec/ECParameterSpec;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lorg/conscrypt/Platform;->setCurveName(Ljava/security/spec/ECParameterSpec;Ljava/lang/String;)V
 
     .line 99
     .line 100
     .line 101
-    return-object v5
+    return-object p0
 .end method
 
 .method public getNativeRef()Lorg/conscrypt/NativeRef$EC_GROUP;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/OpenSSLECGroupContext;->groupCtx:Lorg/conscrypt/NativeRef$EC_GROUP;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECGroupContext;->groupCtx:Lorg/conscrypt/NativeRef$EC_GROUP;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
@@ -1237,8 +1237,8 @@
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result p0
 
     .line 5
-    return v0
+    return p0
 .end method

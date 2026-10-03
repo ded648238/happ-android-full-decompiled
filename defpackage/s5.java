@@ -1,88 +1,30 @@
 package defpackage;
 
-import android.app.Activity;
-import android.content.res.Configuration;
-import android.os.Build;
-import android.os.Handler;
-import android.os.IBinder;
-import android.os.Looper;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.List;
+import android.view.View;
+import android.widget.LinearLayout;
+import androidx.appcompat.widget.AppCompatImageButton;
+import androidx.appcompat.widget.Toolbar;
+import su.happ.proxyutility.ui.foundation.component.HappEditText;
+import su.happ.proxyutility.ui.foundation.component.HappSnackbarHost;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class s5 {
-    public static final Class a;
-    public static final Field b;
-    public static final Field c;
-    public static final Method d;
-    public static final Method e;
-    public static final Method f;
-    public static final Handler g = new Handler(Looper.getMainLooper());
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public abstract class s5 extends vi8 {
+    public static final /* synthetic */ int p0 = 0;
+    public final AppCompatImageButton j0;
+    public final HappEditText k0;
+    public final LinearLayout l0;
+    public final View m0;
+    public final HappSnackbarHost n0;
+    public final Toolbar o0;
 
-    static {
-        Class<?> cls;
-        Field declaredField;
-        Field declaredField2;
-        Method declaredMethod;
-        Method declaredMethod2;
-        Method method = null;
-        try {
-            cls = Class.forName("android.app.ActivityThread");
-        } catch (Throwable unused) {
-            cls = null;
-        }
-        a = cls;
-        try {
-            declaredField = Activity.class.getDeclaredField("mMainThread");
-            declaredField.setAccessible(true);
-        } catch (Throwable unused2) {
-            declaredField = null;
-        }
-        b = declaredField;
-        try {
-            declaredField2 = Activity.class.getDeclaredField("mToken");
-            declaredField2.setAccessible(true);
-        } catch (Throwable unused3) {
-            declaredField2 = null;
-        }
-        c = declaredField2;
-        Class cls2 = a;
-        Class<?> cls3 = Boolean.TYPE;
-        if (cls2 == null) {
-            declaredMethod = null;
-        } else {
-            try {
-                declaredMethod = cls2.getDeclaredMethod("performStopActivity", IBinder.class, cls3, String.class);
-                declaredMethod.setAccessible(true);
-            } catch (Throwable unused4) {
-                declaredMethod = null;
-            }
-        }
-        d = declaredMethod;
-        Class cls4 = a;
-        if (cls4 == null) {
-            declaredMethod2 = null;
-        } else {
-            try {
-                declaredMethod2 = cls4.getDeclaredMethod("performStopActivity", IBinder.class, cls3);
-                declaredMethod2.setAccessible(true);
-            } catch (Throwable unused5) {
-                declaredMethod2 = null;
-            }
-        }
-        e = declaredMethod2;
-        Class cls5 = a;
-        int i = Build.VERSION.SDK_INT;
-        if ((i == 26 || i == 27) && cls5 != null) {
-            try {
-                Method declaredMethod3 = cls5.getDeclaredMethod("requestRelaunchActivity", IBinder.class, List.class, List.class, Integer.TYPE, cls3, Configuration.class, Configuration.class, cls3, cls3);
-                declaredMethod3.setAccessible(true);
-                method = declaredMethod3;
-            } catch (Throwable unused6) {
-            }
-        }
-        f = method;
+    public s5(View view, AppCompatImageButton appCompatImageButton, HappEditText happEditText, LinearLayout linearLayout, View view2, HappSnackbarHost happSnackbarHost, Toolbar toolbar) {
+        super(0, view, null);
+        this.j0 = appCompatImageButton;
+        this.k0 = happEditText;
+        this.l0 = linearLayout;
+        this.m0 = view2;
+        this.n0 = happSnackbarHost;
+        this.o0 = toolbar;
     }
 }

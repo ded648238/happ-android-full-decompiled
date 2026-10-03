@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/concurrent/TaskLoggerKt;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -16,13 +16,13 @@
         "Lkotlin/Function0;",
         "",
         "messageBlock",
-        "Lbh7;",
+        "Lr98;",
         "taskLog",
-        "(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Lg72;)V",
+        "(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Lji2;)V",
         "T",
         "block",
         "logElapsed",
-        "(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Lg72;)Ljava/lang/Object;",
+        "(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Lji2;)Ljava/lang/Object;",
         "message",
         "log",
         "(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Ljava/lang/String;)V",
@@ -64,25 +64,25 @@
     .line 2
     .line 3
     .line 4
-    const-string v2, " s "
+    cmp-long v0, p0, v0
 
     .line 5
     .line 6
-    const-wide/32 v3, 0x3b9aca00
+    const-string v1, " s "
 
     .line 7
     .line 8
-    .line 9
-    const-wide/32 v5, 0x1dcd6500
+    const-wide/32 v2, 0x3b9aca00
 
+    .line 9
     .line 10
     .line 11
-    .line 12
-    cmp-long v7, p0, v0
+    const-wide/32 v4, 0x1dcd6500
 
+    .line 12
     .line 13
     .line 14
-    if-gtz v7, :cond_0
+    if-gtz v0, :cond_0
 
     .line 15
     .line 16
@@ -95,339 +95,275 @@
     .line 19
     .line 20
     .line 21
-    sub-long v5, p0, v5
+    sub-long v4, p0, v4
 
     .line 22
     .line 23
-    div-long/2addr v5, v3
+    div-long/2addr v4, v2
 
     .line 24
-    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-static {v4, v5, v1, v0}, Lc73;->f(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 28
-    .line 29
-    .line 30
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 31
-    .line 32
-    .line 33
     move-result-object v0
 
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_0
+    const-wide/32 v6, -0xf404c
+
+    .line 30
+    .line 31
+    .line 32
+    cmp-long v0, p0, v6
+
+    .line 33
     .line 34
-    goto/16 :goto_0
+    const-string v6, " ms"
 
     .line 35
     .line 36
-    :cond_0
-    const-wide/32 v0, -0xf404c
+    const-wide/32 v7, 0xf4240
 
     .line 37
     .line 38
     .line 39
-    const-string v7, " ms"
+    const-wide/32 v9, 0x7a120
 
     .line 40
     .line 41
-    const-wide/32 v8, 0xf4240
-
     .line 42
+    if-gtz v0, :cond_1
+
     .line 43
     .line 44
-    const-wide/32 v10, 0x7a120
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 45
     .line 46
-    .line 47
-    cmp-long v12, p0, v0
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 47
     .line 48
     .line 49
-    if-gtz v12, :cond_1
+    sub-long v1, p0, v9
 
     .line 50
     .line 51
-    new-instance v0, Ljava/lang/StringBuilder;
+    div-long/2addr v1, v7
 
     .line 52
-    .line 53
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {v1, v2, v6, v0}, Lc73;->f(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
+    .line 53
     .line 54
     .line 55
+    move-result-object v0
+
     .line 56
-    sub-long v1, p0, v10
+    goto :goto_0
 
     .line 57
-    .line 58
-    div-long/2addr v1, v8
+    :cond_1
+    const-wide/16 v11, 0x0
 
+    .line 58
     .line 59
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    cmp-long v0, p0, v11
 
     .line 60
     .line 61
-    .line 62
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v11, " \u00b5s"
 
+    .line 62
     .line 63
+    const-wide/16 v12, 0x3e8
+
     .line 64
     .line 65
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-wide/16 v14, 0x1f4
 
     .line 66
     .line 67
-    .line 68
-    move-result-object v0
+    if-gtz v0, :cond_2
 
+    .line 68
     .line 69
-    goto :goto_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 70
-    :cond_1
-    const-wide/16 v0, 0x0
-
     .line 71
-    .line 72
-    const-string v12, " \u00b5s"
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 72
     .line 73
     .line 74
-    const-wide/16 v13, 0x3e8
+    sub-long v1, p0, v14
 
     .line 75
     .line 76
-    const-wide/16 v15, 0x1f4
+    div-long/2addr v1, v12
 
     .line 77
-    .line 78
-    cmp-long v17, p0, v0
+    invoke-static {v1, v2, v11, v0}, Lc73;->f(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
+    .line 78
     .line 79
     .line 80
-    if-gtz v17, :cond_2
+    move-result-object v0
 
     .line 81
+    goto :goto_0
+
     .line 82
-    new-instance v0, Ljava/lang/StringBuilder;
+    :cond_2
+    const-wide/32 v16, 0xf404c
 
     .line 83
     .line 84
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 85
+    cmp-long v0, p0, v16
+
     .line 86
     .line 87
-    sub-long v1, p0, v15
+    if-gez v0, :cond_3
 
     .line 88
     .line 89
-    div-long/2addr v1, v13
-
-    .line 90
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 91
-    .line 92
-    .line 93
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 94
-    .line 95
-    .line 96
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 97
-    .line 98
-    .line 99
-    move-result-object v0
-
-    .line 100
-    goto :goto_0
-
-    .line 101
-    :cond_2
-    const-wide/32 v0, 0xf404c
-
-    .line 102
-    .line 103
-    .line 104
-    cmp-long v17, p0, v0
-
-    .line 105
-    .line 106
-    if-gez v17, :cond_3
-
-    .line 107
-    .line 108
     new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 109
-    .line 110
+    .line 90
+    .line 91
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 92
+    .line 93
+    .line 94
+    add-long v1, p0, v14
+
+    .line 95
+    .line 96
+    div-long/2addr v1, v12
+
+    .line 97
+    invoke-static {v1, v2, v11, v0}, Lc73;->f(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object v0
+
+    .line 101
+    goto :goto_0
+
+    .line 102
+    :cond_3
+    const-wide/32 v11, 0x3b9328e0
+
+    .line 103
+    .line 104
+    .line 105
+    cmp-long v0, p0, v11
+
+    .line 106
+    .line 107
+    if-gez v0, :cond_4
+
+    .line 108
+    .line 109
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 110
     .line 111
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 112
     .line 113
-    add-long v1, p0, v15
-
     .line 114
-    .line 115
-    div-long/2addr v1, v13
+    add-long v1, p0, v9
 
+    .line 115
     .line 116
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    div-long/2addr v1, v7
 
     .line 117
+    invoke-static {v1, v2, v6, v0}, Lc73;->f(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
+
     .line 118
     .line 119
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 120
+    move-result-object v0
+
     .line 121
+    goto :goto_0
+
     .line 122
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :cond_4
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 123
     .line 124
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 125
-    move-result-object v0
-
     .line 126
-    goto :goto_0
-
     .line 127
-    :cond_3
-    const-wide/32 v0, 0x3b9328e0
+    add-long v4, p0, v4
 
     .line 128
     .line 129
+    div-long/2addr v4, v2
+
     .line 130
-    cmp-long v12, p0, v0
+    invoke-static {v4, v5, v1, v0}, Lc73;->f(JLjava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
 
     .line 131
     .line 132
-    if-gez v12, :cond_4
-
     .line 133
+    move-result-object v0
+
     .line 134
-    new-instance v0, Ljava/lang/StringBuilder;
+    :goto_0
+    const/4 v1, 0x1
 
     .line 135
-    .line 136
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    filled-new-array {v0}, [Ljava/lang/Object;
 
+    .line 136
     .line 137
     .line 138
+    move-result-object v0
+
     .line 139
-    add-long v1, p0, v10
+    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     .line 140
     .line 141
-    div-long/2addr v1, v8
-
     .line 142
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-object v0
 
     .line 143
+    const-string v1, "%6s"
+
     .line 144
     .line 145
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 146
     .line 147
     .line 148
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
     .line 149
-    .line 150
-    .line 151
-    move-result-object v0
-
-    .line 152
-    goto :goto_0
-
-    .line 153
-    :cond_4
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 154
-    .line 155
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 156
-    .line 157
-    .line 158
-    add-long v5, p0, v5
-
-    .line 159
-    .line 160
-    div-long/2addr v5, v3
-
-    .line 161
-    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 162
-    .line 163
-    .line 164
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 165
-    .line 166
-    .line 167
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 168
-    .line 169
-    .line 170
-    move-result-object v0
-
-    .line 171
-    :goto_0
-    const/4 v1, 0x1
-
-    .line 172
-    new-array v2, v1, [Ljava/lang/Object;
-
-    .line 173
-    .line 174
-    const/4 v3, 0x0
-
-    .line 175
-    aput-object v0, v2, v3
-
-    .line 176
-    .line 177
-    invoke-static {v2, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    .line 178
-    .line 179
-    .line 180
-    move-result-object v0
-
-    .line 181
-    const-string v1, "%6s"
-
-    .line 182
-    .line 183
-    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 184
-    .line 185
-    .line 186
-    move-result-object v0
-
-    .line 187
     return-object v0
 .end method
 
 .method private static final log(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Ljava/lang/String;)V
-    .locals 4
+    .locals 2
 
     .line 1
     sget-object v0, Lokhttp3/internal/concurrent/TaskRunner;->Companion:Lokhttp3/internal/concurrent/TaskRunner$Companion;
@@ -476,81 +412,78 @@
     const/4 p1, 0x1
 
     .line 25
-    new-array v2, p1, [Ljava/lang/Object;
+    filled-new-array {p2}, [Ljava/lang/Object;
 
     .line 26
     .line 27
-    const/4 v3, 0x0
-
     .line 28
-    aput-object p2, v2, v3
+    move-result-object p2
 
     .line 29
-    .line 30
-    invoke-static {v2, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    invoke-static {p2, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
+    .line 30
     .line 31
     .line 32
-    .line 33
     move-result-object p1
 
-    .line 34
+    .line 33
     const-string p2, "%-22s"
 
+    .line 34
     .line 35
-    .line 36
     invoke-static {p2, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
+    .line 36
     .line 37
     .line 38
-    .line 39
     move-result-object p1
 
-    .line 40
+    .line 39
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 40
     .line 41
     .line 42
-    .line 43
     const-string p1, ": "
 
+    .line 43
     .line 44
-    .line 45
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 45
     .line 46
     .line 47
-    .line 48
     invoke-virtual {p0}, Lokhttp3/internal/concurrent/Task;->getName()Ljava/lang/String;
 
+    .line 48
     .line 49
     .line 50
-    .line 51
     move-result-object p0
 
-    .line 52
+    .line 51
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 52
     .line 53
     .line 54
-    .line 55
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 55
     .line 56
     .line 57
-    .line 58
     move-result-object p0
 
-    .line 59
+    .line 58
     invoke-virtual {v0, p0}, Ljava/util/logging/Logger;->fine(Ljava/lang/String;)V
 
+    .line 59
     .line 60
     .line 61
-    .line 62
     return-void
 .end method
 
-.method public static final logElapsed(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Lg72;)Ljava/lang/Object;
+.method public static final logElapsed(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Lji2;)Ljava/lang/Object;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -559,7 +492,7 @@
             ">(",
             "Lokhttp3/internal/concurrent/Task;",
             "Lokhttp3/internal/concurrent/TaskQueue;",
-            "Lg72;",
+            "Lji2;",
             ")TT;"
         }
     .end annotation
@@ -651,7 +584,7 @@
     .line 44
     :goto_0
     :try_start_0
-    invoke-interface {p2}, Lg72;->invoke()Ljava/lang/Object;
+    invoke-interface {p2}, Lji2;->invoke()Ljava/lang/Object;
 
     .line 45
     .line 46
@@ -813,14 +746,14 @@
     throw p2
 .end method
 
-.method public static final taskLog(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Lg72;)V
+.method public static final taskLog(Lokhttp3/internal/concurrent/Task;Lokhttp3/internal/concurrent/TaskQueue;Lji2;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lokhttp3/internal/concurrent/Task;",
             "Lokhttp3/internal/concurrent/TaskQueue;",
-            "Lg72;",
+            "Lji2;",
             ")V"
         }
     .end annotation
@@ -869,7 +802,7 @@
 
     .line 23
     .line 24
-    invoke-interface {p2}, Lg72;->invoke()Ljava/lang/Object;
+    invoke-interface {p2}, Lji2;->invoke()Ljava/lang/Object;
 
     .line 25
     .line 26

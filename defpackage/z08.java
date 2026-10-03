@@ -1,19 +1,38 @@
 package defpackage;
 
-import java.util.Arrays;
+import android.view.View;
+import java.util.ArrayList;
+import java.util.HashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class z08 extends x08 {
-    public final byte[] i;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class z08 {
+    public final View b;
+    public final HashMap a = new HashMap();
+    public final ArrayList c = new ArrayList();
 
-    public z08(byte[] bArr) {
-        super(Arrays.copyOfRange(bArr, 0, 25));
-        this.i = bArr;
+    public z08(View view) {
+        this.b = view;
     }
 
-    @Override // defpackage.x08
-    public final byte[] o() {
-        return this.i;
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof z08)) {
+            return false;
+        }
+        z08 z08Var = (z08) obj;
+        return this.b == z08Var.b && this.a.equals(z08Var.a);
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode() + (this.b.hashCode() * 31);
+    }
+
+    public final String toString() {
+        String concat = (("TransitionValues@" + Integer.toHexString(hashCode()) + ":\n") + "    view = " + this.b + "\n").concat("    values:");
+        HashMap hashMap = this.a;
+        for (String str : hashMap.keySet()) {
+            concat = concat + "    " + str + ": " + hashMap.get(str) + "\n";
+        }
+        return concat;
     }
 }

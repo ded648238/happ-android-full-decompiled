@@ -1,6 +1,6 @@
 .class public abstract Lcom/google/android/material/transformation/ExpandableBehavior;
 .super Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -52,16 +52,16 @@
     .line 2
     .line 3
     .line 4
-    new-instance p1, Ljava/lang/ClassCastException;
+    new-instance p0, Ljava/lang/ClassCastException;
 
     .line 5
     .line 6
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/ClassCastException;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    throw p1
+    throw p0
 .end method
 
 .method public final k(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
@@ -99,7 +99,7 @@
     move-result p3
 
     .line 16
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 17
     :goto_0

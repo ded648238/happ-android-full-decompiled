@@ -1,51 +1,67 @@
 .class public final Lv12;
-.super Ld64;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lx12;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public e0:Lj9;
+.field public final a:I
 
-.field public f0:Lp22;
+.field public final b:Ljava/lang/String;
+
+.field public final c:I
+
+.field public final d:I
 
 
-# virtual methods
-.method public final A(Lp22;)V
-    .locals 1
+# direct methods
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lv12;->f0:Lp22;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 4
+    iput-object p1, p0, Lv12;->b:Ljava/lang/String;
+
     .line 5
     .line 6
-    move-result v0
+    iput p2, p0, Lv12;->a:I
 
     .line 7
-    if-nez v0, :cond_0
-
     .line 8
-    .line 9
-    iput-object p1, p0, Lv12;->f0:Lp22;
+    iput p3, p0, Lv12;->c:I
 
+    .line 9
     .line 10
+    const/4 p1, -0x1
+
     .line 11
-    iget-object v0, p0, Lv12;->e0:Lj9;
+    iput p1, p0, Lv12;->d:I
 
     .line 12
     .line 13
-    invoke-virtual {v0, p1}, Lj9;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;III)V
+    .locals 0
 
     .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 15
+    iput-object p1, p0, Lv12;->b:Ljava/lang/String;
+
     .line 16
-    :cond_0
+    iput p2, p0, Lv12;->a:I
+
+    .line 17
+    iput p3, p0, Lv12;->c:I
+
+    .line 18
+    iput p4, p0, Lv12;->d:I
+
     return-void
 .end method

@@ -3,13 +3,13 @@ package androidx.preference;
 import android.R;
 import android.content.Context;
 import android.util.AttributeSet;
-import defpackage.s47;
-import defpackage.t75;
+import defpackage.sr5;
+import defpackage.tw7;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class PreferenceScreen extends PreferenceGroup {
     public PreferenceScreen(Context context, AttributeSet attributeSet) {
-        super(context, attributeSet, s47.b(context, t75.preferenceScreenStyle, R.attr.preferenceScreenStyle));
+        super(context, attributeSet, tw7.d(context, sr5.preferenceScreenStyle, R.attr.preferenceScreenStyle));
     }
 }

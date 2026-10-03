@@ -1,136 +1,156 @@
-.class public final Lu67;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Lu67;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final a:Lja0;
+# static fields
+.field public static final enum X:Lu67;
 
-.field public final b:Lq84;
+.field public static final enum Y:Lu67;
 
-.field public final c:Z
+.field public static final enum Z:Lu67;
 
-.field public final d:Lj56;
-
-.field public e:Z
-
-.field public f:Lc90;
-
-.field public g:Z
+.field public static final synthetic c0:[Lu67;
 
 
 # direct methods
-.method public constructor <init>(Lja0;Lgc0;Lj56;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lu67;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lu67;->a:Lja0;
+    const-string v1, "Unknown"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    iput-object p3, p0, Lu67;->d:Lj56;
+    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 7
     .line 8
-    new-instance p3, Lxa0;
-
     .line 9
-    .line 10
-    const/4 v0, 0x1
+    new-instance v1, Lu67;
 
+    .line 10
     .line 11
-    invoke-direct {p3, p2, v0}, Lxa0;-><init>(Lgc0;I)V
+    const-string v2, "Fixed"
 
     .line 12
     .line 13
+    const/4 v3, 0x1
+
     .line 14
-    invoke-static {p3}, Lji2;->w(Lxa0;)Z
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 15
     .line 16
     .line 17
-    move-result p2
+    sput-object v1, Lu67;->X:Lu67;
 
     .line 18
-    iput-boolean p2, p0, Lu67;->c:Z
-
     .line 19
+    new-instance v2, Lu67;
+
     .line 20
-    new-instance p2, Lq84;
-
     .line 21
-    .line 22
-    const/4 p3, 0x0
+    const-string v3, "NotApplicable"
 
+    .line 22
     .line 23
-    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v4, 0x2
 
     .line 24
+    invoke-direct {v2, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 25
     .line 26
-    move-result-object p3
-
     .line 27
-    invoke-direct {p2, p3}, Lmn3;-><init>(Ljava/lang/Object;)V
+    sput-object v2, Lu67;->Y:Lu67;
 
     .line 28
     .line 29
+    new-instance v3, Lu67;
+
     .line 30
-    iput-object p2, p0, Lu67;->b:Lq84;
-
     .line 31
-    .line 32
-    new-instance p2, Ls67;
+    const-string v4, "NotFixed"
 
+    .line 32
     .line 33
+    const/4 v5, 0x3
+
     .line 34
-    invoke-direct {p2, p0}, Ls67;-><init>(Lu67;)V
+    invoke-direct {v3, v4, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {p1, p2}, Lja0;->a(Lia0;)V
+    sput-object v3, Lu67;->Z:Lu67;
 
     .line 38
     .line 39
+    filled-new-array {v0, v1, v2, v3}, [Lu67;
+
     .line 40
+    .line 41
+    .line 42
+    move-result-object v0
+
+    .line 43
+    sput-object v0, Lu67;->c0:[Lu67;
+
+    .line 44
+    .line 45
     return-void
 .end method
 
-.method public static a(Lq84;Ljava/lang/Integer;)V
+.method public static valueOf(Ljava/lang/String;)Lu67;
     .locals 1
 
     .line 1
-    invoke-static {}, Lo37;->i()Z
+    const-class v0, Lu67;
 
     .line 2
     .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
     .line 4
-    move-result v0
-
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    move-result-object p0
+
     .line 7
-    invoke-virtual {p0, p1}, Lq84;->j(Ljava/lang/Object;)V
+    check-cast p0, Lu67;
 
     .line 8
     .line 9
-    .line 10
-    return-void
+    return-object p0
+.end method
 
-    .line 11
-    :cond_0
-    invoke-virtual {p0, p1}, Lq84;->k(Ljava/lang/Object;)V
+.method public static values()[Lu67;
+    .locals 1
 
-    .line 12
-    .line 13
-    .line 14
-    return-void
+    .line 1
+    sget-object v0, Lu67;->c0:[Lu67;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lu67;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

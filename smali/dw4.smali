@@ -1,549 +1,809 @@
 .class public final Ldw4;
-.super Lwt6;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lu72;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public U:Lfa4;
+.field public final a:Landroid/content/Context;
 
-.field public V:Lew4;
+.field public final b:Ljava/util/ArrayList;
 
-.field public W:Ljava/lang/CharSequence;
+.field public final c:Ljava/util/ArrayList;
 
-.field public X:J
+.field public final d:Ljava/util/ArrayList;
 
-.field public Y:I
+.field public e:Ljava/lang/CharSequence;
 
-.field public synthetic Z:Ljava/lang/Object;
+.field public f:Ljava/lang/CharSequence;
 
-.field public final synthetic a0:Ljava/lang/CharSequence;
+.field public g:Landroid/app/PendingIntent;
 
-.field public final synthetic b0:J
+.field public h:Landroidx/core/graphics/drawable/IconCompat;
 
-.field public final synthetic c0:Lew4;
+.field public i:I
+
+.field public j:I
+
+.field public k:Z
+
+.field public l:Lew4;
+
+.field public m:I
+
+.field public n:I
+
+.field public o:Z
+
+.field public p:Ljava/lang/String;
+
+.field public q:Landroid/os/Bundle;
+
+.field public r:I
+
+.field public s:I
+
+.field public t:Ljava/lang/String;
+
+.field public final u:Z
+
+.field public final v:Landroid/app/Notification;
+
+.field public final w:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(JLyv0;Lew4;Ljava/lang/CharSequence;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 3
 
     .line 1
-    iput-object p5, p0, Ldw4;->a0:Ljava/lang/CharSequence;
-
-    .line 2
-    .line 3
-    iput-wide p1, p0, Ldw4;->b0:J
-
-    .line 4
-    .line 5
-    iput-object p4, p0, Ldw4;->c0:Lew4;
-
-    .line 6
-    .line 7
-    const/4 p1, 0x2
-
-    .line 8
-    invoke-direct {p0, p1, p3}, Lwt6;-><init>(ILyv0;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-
-# virtual methods
-.method public final C(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-static {p1}, Lxi4;->c(Ljava/lang/Object;)Landroid/view/textclassifier/TextClassifier;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 5
-    check-cast p2, Lyv0;
-
     .line 6
-    .line 7
-    invoke-virtual {p0, p2, p1}, Ldw4;->r(Lyv0;Ljava/lang/Object;)Lyv0;
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 7
     .line 8
     .line 9
-    .line 10
-    move-result-object p1
+    iput-object v0, p0, Ldw4;->b:Ljava/util/ArrayList;
 
+    .line 10
     .line 11
-    check-cast p1, Ldw4;
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 12
     .line 13
-    sget-object p2, Lbh7;->a:Lbh7;
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 14
-    .line 15
-    invoke-virtual {p1, p2}, Ldw4;->w(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    return-object p1
-.end method
-
-.method public final r(Lyv0;Ljava/lang/Object;)Lyv0;
-    .locals 6
-
-    .line 1
-    new-instance v0, Ldw4;
-
-    .line 2
-    .line 3
-    iget-wide v1, p0, Ldw4;->b0:J
-
-    .line 4
-    .line 5
-    iget-object v4, p0, Ldw4;->c0:Lew4;
-
-    .line 6
-    .line 7
-    iget-object v5, p0, Ldw4;->a0:Ljava/lang/CharSequence;
-
-    .line 8
-    .line 9
-    move-object v3, p1
-
-    .line 10
-    invoke-direct/range {v0 .. v5}, Ldw4;-><init>(JLyv0;Lew4;Ljava/lang/CharSequence;)V
-
-    .line 11
-    .line 12
-    .line 13
-    iput-object p2, v0, Ldw4;->Z:Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    return-object v0
-.end method
-
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
-
-    .line 1
-    iget v0, p0, Ldw4;->Y:I
-
-    .line 2
-    .line 3
-    const/4 v1, 0x2
-
-    .line 4
-    const/4 v2, 0x1
-
-    .line 5
-    const/4 v3, 0x0
-
-    .line 6
-    if-eqz v0, :cond_2
-
-    .line 7
-    .line 8
-    if-eq v0, v2, :cond_1
-
-    .line 9
-    .line 10
-    if-ne v0, v1, :cond_0
-
-    .line 11
-    .line 12
-    iget-wide v0, p0, Ldw4;->X:J
-
-    .line 13
-    .line 14
-    invoke-static {p1}, Lbv7;->V(Ljava/lang/Object;)V
-
     .line 15
     .line 16
+    iput-object v0, p0, Ldw4;->c:Ljava/util/ArrayList;
+
     .line 17
-    goto/16 :goto_2
-
     .line 18
-    .line 19
-    :cond_0
-    const-string p1, "call to \'resume\' before \'invoke\' with coroutine"
+    new-instance v0, Ljava/util/ArrayList;
 
+    .line 19
     .line 20
-    .line 21
-    invoke-static {p1}, Lfn;->s(Ljava/lang/String;)V
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 21
     .line 22
     .line 23
-    .line 24
-    return-object v3
+    iput-object v0, p0, Ldw4;->d:Ljava/util/ArrayList;
 
+    .line 24
     .line 25
-    :cond_1
-    iget-wide v0, p0, Ldw4;->X:J
+    const/4 v0, 0x1
 
     .line 26
-    .line 27
-    iget-object v2, p0, Ldw4;->W:Ljava/lang/CharSequence;
+    iput-boolean v0, p0, Ldw4;->k:Z
 
+    .line 27
     .line 28
+    const/4 v1, 0x0
+
     .line 29
-    iget-object v4, p0, Ldw4;->V:Lew4;
+    iput-boolean v1, p0, Ldw4;->o:Z
 
     .line 30
     .line 31
-    iget-object v5, p0, Ldw4;->U:Lfa4;
+    iput v1, p0, Ldw4;->r:I
 
     .line 32
     .line 33
-    iget-object v6, p0, Ldw4;->Z:Ljava/lang/Object;
+    iput v1, p0, Ldw4;->s:I
 
     .line 34
     .line 35
-    check-cast v6, Landroid/view/textclassifier/TextSelection;
+    new-instance v2, Landroid/app/Notification;
 
     .line 36
     .line 37
-    invoke-static {p1}, Lbv7;->V(Ljava/lang/Object;)V
+    invoke-direct {v2}, Landroid/app/Notification;-><init>()V
 
     .line 38
     .line 39
     .line 40
-    goto :goto_0
+    iput-object v2, p0, Ldw4;->v:Landroid/app/Notification;
 
     .line 41
-    :cond_2
-    invoke-static {p1}, Lbv7;->V(Ljava/lang/Object;)V
-
     .line 42
+    iput-object p1, p0, Ldw4;->a:Landroid/content/Context;
+
     .line 43
     .line 44
-    iget-object p1, p0, Ldw4;->Z:Ljava/lang/Object;
+    iput-object p2, p0, Ldw4;->t:Ljava/lang/String;
 
     .line 45
     .line 46
-    invoke-static {p1}, Lxi4;->c(Ljava/lang/Object;)Landroid/view/textclassifier/TextClassifier;
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     .line 47
     .line 48
     .line 49
-    move-result-object v8
+    move-result-wide p1
 
     .line 50
-    new-instance p1, Landroid/view/textclassifier/TextSelection$Request$Builder;
+    iput-wide p1, v2, Landroid/app/Notification;->when:J
 
     .line 51
     .line 52
-    iget-wide v4, p0, Ldw4;->b0:J
+    const/4 p1, -0x1
 
     .line 53
-    .line 54
-    invoke-static {v4, v5}, Lz17;->d(J)I
+    iput p1, v2, Landroid/app/Notification;->audioStreamType:I
 
+    .line 54
     .line 55
+    iput v1, p0, Ldw4;->j:I
+
     .line 56
     .line 57
-    move-result p1
+    new-instance p1, Ljava/util/ArrayList;
 
     .line 58
-    invoke-static {v4, v5}, Lz17;->c(J)I
-
     .line 59
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
     .line 60
     .line 61
-    move-result v0
-
     .line 62
-    new-instance v4, Landroid/view/textclassifier/TextSelection$Request$Builder;
+    iput-object p1, p0, Ldw4;->w:Ljava/util/ArrayList;
 
     .line 63
     .line 64
-    iget-object v5, p0, Ldw4;->a0:Ljava/lang/CharSequence;
+    iput-boolean v0, p0, Ldw4;->u:Z
 
     .line 65
     .line 66
-    invoke-direct {v4, v5, p1, v0}, Landroid/view/textclassifier/TextSelection$Request$Builder;-><init>(Ljava/lang/CharSequence;II)V
+    return-void
+.end method
+
+.method public static c(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    .locals 2
+
+    .line 1
+    if-nez p0, :cond_0
+
+    .line 2
+    .line 3
+    return-object p0
+
+    .line 4
+    :cond_0
+    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    const/16 v1, 0x1400
+
+    .line 9
+    .line 10
+    if-le v0, v1, :cond_1
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-interface {p0, v0, v1}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    :cond_1
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final a(ILandroid/app/PendingIntent;Ljava/lang/String;)V
+    .locals 8
+
+    .line 1
+    new-instance v0, Lzv4;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-nez p1, :cond_0
+
+    .line 5
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    const-string v2, ""
+
+    .line 8
+    .line 9
+    invoke-static {v1, v2, p1}, Landroidx/core/graphics/drawable/IconCompat;->b(Landroid/content/res/Resources;Ljava/lang/String;I)Landroidx/core/graphics/drawable/IconCompat;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    :goto_0
+    new-instance v4, Landroid/os/Bundle;
+
+    .line 14
+    .line 15
+    invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
+
+    .line 16
+    .line 17
+    .line 18
+    const/4 v6, 0x1
+
+    .line 19
+    const/4 v7, 0x1
+
+    .line 20
+    const/4 v5, 0x0
+
+    .line 21
+    move-object v3, p2
+
+    .line 22
+    move-object v2, p3
+
+    .line 23
+    invoke-direct/range {v0 .. v7}, Lzv4;-><init>(Landroidx/core/graphics/drawable/IconCompat;Ljava/lang/CharSequence;Landroid/app/PendingIntent;Landroid/os/Bundle;[Lv16;ZZ)V
+
+    .line 24
+    .line 25
+    .line 26
+    iget-object p0, p0, Ldw4;->b:Ljava/util/ArrayList;
+
+    .line 27
+    .line 28
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    return-void
+.end method
+
+.method public final b()Landroid/app/Notification;
+    .locals 4
+
+    .line 1
+    new-instance v0, Lzs6;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lzs6;-><init>(Ldw4;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p0, v0, Lzs6;->c0:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast p0, Ldw4;
+
+    .line 9
+    .line 10
+    iget-object v1, p0, Ldw4;->l:Lew4;
+
+    .line 11
+    .line 12
+    if-eqz v1, :cond_0
+
+    .line 13
+    .line 14
+    invoke-virtual {v1, v0}, Lew4;->a(Lzs6;)V
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_0
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 18
+    .line 19
+    iget-object v0, v0, Lzs6;->Z:Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    check-cast v0, Landroid/app/Notification$Builder;
+
+    .line 22
+    .line 23
+    const/16 v3, 0x1a
+
+    .line 24
+    .line 25
+    if-lt v2, v3, :cond_1
+
+    .line 26
+    .line 27
+    invoke-virtual {v0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :cond_1
+    invoke-virtual {v0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    :goto_0
+    if-eqz v1, :cond_2
+
+    .line 37
+    .line 38
+    iget-object p0, p0, Ldw4;->l:Lew4;
+
+    .line 39
+    .line 40
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 41
+    .line 42
+    .line 43
+    :cond_2
+    if-eqz v1, :cond_5
+
+    .line 44
+    .line 45
+    iget-object p0, v0, Landroid/app/Notification;->extras:Landroid/os/Bundle;
+
+    .line 46
+    .line 47
+    if-eqz p0, :cond_5
+
+    .line 48
+    .line 49
+    iget-boolean v2, v1, Lew4;->a:Z
+
+    .line 50
+    .line 51
+    if-eqz v2, :cond_3
+
+    .line 52
+    .line 53
+    iget-object v2, v1, Lew4;->d:Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    check-cast v2, Ljava/lang/CharSequence;
+
+    .line 56
+    .line 57
+    const-string v3, "android.summaryText"
+
+    .line 58
+    .line 59
+    invoke-virtual {p0, v3, v2}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
+
+    .line 60
+    .line 61
+    .line 62
+    :cond_3
+    iget-object v2, v1, Lew4;->c:Ljava/lang/Object;
+
+    .line 63
+    .line 64
+    check-cast v2, Ljava/lang/CharSequence;
+
+    .line 65
+    .line 66
+    if-eqz v2, :cond_4
+
+    .line 67
+    .line 68
+    const-string v3, "android.title.big"
+
+    .line 69
+    .line 70
+    invoke-virtual {p0, v3, v2}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
+
+    .line 71
+    .line 72
+    .line 73
+    :cond_4
+    invoke-virtual {v1}, Lew4;->b()Ljava/lang/String;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v1
+
+    .line 77
+    const-string v2, "androidx.core.app.extra.COMPAT_TEMPLATE"
+
+    .line 78
+    .line 79
+    invoke-virtual {p0, v2, v1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 80
+    .line 81
+    .line 82
+    :cond_5
+    return-object v0
+.end method
+
+.method public final d(IZ)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ldw4;->v:Landroid/app/Notification;
+
+    .line 2
+    .line 3
+    if-eqz p2, :cond_0
+
+    .line 4
+    .line 5
+    iget p2, p0, Landroid/app/Notification;->flags:I
+
+    .line 6
+    .line 7
+    or-int/2addr p1, p2
+
+    .line 8
+    iput p1, p0, Landroid/app/Notification;->flags:I
+
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :cond_0
+    iget p2, p0, Landroid/app/Notification;->flags:I
+
+    .line 12
+    .line 13
+    not-int p1, p1
+
+    .line 14
+    and-int/2addr p1, p2
+
+    .line 15
+    iput p1, p0, Landroid/app/Notification;->flags:I
+
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public final e(Landroid/graphics/Bitmap;)V
+    .locals 7
+
+    .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    goto :goto_1
+
+    .line 5
+    :cond_0
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 6
+    .line 7
+    const/16 v1, 0x1b
+
+    .line 8
+    .line 9
+    const/4 v2, 0x1
+
+    .line 10
+    if-lt v0, v1, :cond_1
+
+    .line 11
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_1
+    iget-object v0, p0, Ldw4;->a:Landroid/content/Context;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    sget v1, Lfs5;->compat_notification_large_icon_max_width:I
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v1
+
+    .line 25
+    sget v3, Lfs5;->compat_notification_large_icon_max_height:I
+
+    .line 26
+    .line 27
+    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v3
+
+    .line 35
+    if-gt v3, v1, :cond_2
+
+    .line 36
+    .line 37
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v3
+
+    .line 41
+    if-gt v3, v0, :cond_2
+
+    .line 42
+    .line 43
+    goto :goto_0
+
+    .line 44
+    :cond_2
+    int-to-double v3, v1
+
+    .line 45
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    .line 46
+    .line 47
+    .line 48
+    move-result v1
+
+    .line 49
+    invoke-static {v2, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 50
+    .line 51
+    .line 52
+    move-result v1
+
+    .line 53
+    int-to-double v5, v1
+
+    .line 54
+    div-double/2addr v3, v5
+
+    .line 55
+    int-to-double v0, v0
+
+    .line 56
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v5
+
+    .line 60
+    invoke-static {v2, v5}, Ljava/lang/Math;->max(II)I
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v5
+
+    .line 64
+    int-to-double v5, v5
+
+    .line 65
+    div-double/2addr v0, v5
+
+    .line 66
+    invoke-static {v3, v4, v0, v1}, Ljava/lang/Math;->min(DD)D
 
     .line 67
     .line 68
     .line 69
-    iget-object p1, p0, Ldw4;->c0:Lew4;
+    move-result-wide v0
 
     .line 70
-    .line 71
-    invoke-virtual {p1}, Lew4;->c()Landroid/os/LocaleList;
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
+    .line 71
     .line 72
     .line 73
+    move-result v3
+
     .line 74
-    move-result-object v0
+    int-to-double v3, v3
 
     .line 75
-    invoke-virtual {v4, v0}, Landroid/view/textclassifier/TextSelection$Request$Builder;->setDefaultLocales(Landroid/os/LocaleList;)Landroid/view/textclassifier/TextSelection$Request$Builder;
+    mul-double/2addr v3, v0
 
     .line 76
+    invoke-static {v3, v4}, Ljava/lang/Math;->ceil(D)D
+
     .line 77
     .line 78
-    move-result-object v0
-
     .line 79
-    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
+    move-result-wide v3
 
     .line 80
+    double-to-int v3, v3
+
     .line 81
-    const/16 v6, 0x1f
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
 
     .line 82
     .line 83
-    if-lt v4, v6, :cond_3
-
     .line 84
+    move-result v4
+
     .line 85
-    invoke-virtual {v0, v2}, Landroid/view/textclassifier/TextSelection$Request$Builder;->setIncludeTextClassification(Z)Landroid/view/textclassifier/TextSelection$Request$Builder;
+    int-to-double v4, v4
 
     .line 86
-    .line 87
-    .line 88
-    :cond_3
-    invoke-virtual {v0}, Landroid/view/textclassifier/TextSelection$Request$Builder;->build()Landroid/view/textclassifier/TextSelection$Request;
+    mul-double/2addr v4, v0
 
+    .line 87
+    invoke-static {v4, v5}, Ljava/lang/Math;->ceil(D)D
+
+    .line 88
     .line 89
     .line 90
+    move-result-wide v0
+
     .line 91
-    move-result-object v0
+    double-to-int v0, v0
 
     .line 92
-    invoke-interface {v8, v0}, Landroid/view/textclassifier/TextClassifier;->suggestSelection(Landroid/view/textclassifier/TextSelection$Request;)Landroid/view/textclassifier/TextSelection;
+    invoke-static {p1, v3, v0, v2}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
     .line 93
     .line 94
     .line 95
-    move-result-object v0
+    move-result-object p1
 
     .line 96
-    invoke-virtual {v0}, Landroid/view/textclassifier/TextSelection;->getSelectionStartIndex()I
+    :goto_0
+    sget-object v0, Landroidx/core/graphics/drawable/IconCompat;->k:Landroid/graphics/PorterDuff$Mode;
 
     .line 97
     .line 98
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 99
-    move-result v7
-
     .line 100
-    invoke-virtual {v0}, Landroid/view/textclassifier/TextSelection;->getSelectionEndIndex()I
-
     .line 101
+    new-instance v0, Landroidx/core/graphics/drawable/IconCompat;
+
     .line 102
     .line 103
-    move-result v9
+    invoke-direct {v0, v2}, Landroidx/core/graphics/drawable/IconCompat;-><init>(I)V
 
     .line 104
-    invoke-static {v7, v9}, La27;->a(II)J
-
     .line 105
     .line 106
+    iput-object p1, v0, Landroidx/core/graphics/drawable/IconCompat;->b:Ljava/lang/Object;
+
     .line 107
-    move-result-wide v9
-
     .line 108
-    sget-object v11, Lcx0;->Q:Lcx0;
-
-    .line 109
-    .line 110
-    if-lt v4, v6, :cond_5
-
-    .line 111
-    .line 112
-    invoke-virtual {v0}, Landroid/view/textclassifier/TextSelection;->getTextClassification()Landroid/view/textclassifier/TextClassification;
-
-    .line 113
-    .line 114
-    .line 115
-    move-result-object v4
-
-    .line 116
-    if-eqz v4, :cond_5
-
-    .line 117
-    .line 118
-    iget-object v1, p1, Lew4;->e:Lfa4;
-
-    .line 119
-    .line 120
-    iput-object v0, p0, Ldw4;->Z:Ljava/lang/Object;
-
-    .line 121
-    .line 122
-    iput-object v1, p0, Ldw4;->U:Lfa4;
-
-    .line 123
-    .line 124
-    iput-object p1, p0, Ldw4;->V:Lew4;
-
-    .line 125
-    .line 126
-    iput-object v5, p0, Ldw4;->W:Ljava/lang/CharSequence;
-
-    .line 127
-    .line 128
-    iput-wide v9, p0, Ldw4;->X:J
-
-    .line 129
-    .line 130
-    iput v2, p0, Ldw4;->Y:I
-
-    .line 131
-    .line 132
-    invoke-virtual {v1, p0}, Lfa4;->f(Lyv0;)Ljava/lang/Object;
-
-    .line 133
-    .line 134
-    .line 135
-    move-result-object v2
-
-    .line 136
-    if-ne v2, v11, :cond_4
-
-    .line 137
-    .line 138
-    goto :goto_1
-
-    .line 139
-    :cond_4
-    move-object v4, p1
-
-    .line 140
-    move-object v6, v0
-
-    .line 141
-    move-object v2, v5
-
-    .line 142
-    move-object v5, v1
-
-    .line 143
-    move-wide v0, v9
-
-    .line 144
-    :goto_0
-    :try_start_0
-    new-instance p1, Lmx6;
-
-    .line 145
-    .line 146
-    invoke-virtual {v6}, Landroid/view/textclassifier/TextSelection;->getTextClassification()Landroid/view/textclassifier/TextClassification;
-
-    .line 147
-    .line 148
-    .line 149
-    move-result-object v6
-
-    .line 150
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 151
-    .line 152
-    .line 153
-    invoke-direct {p1, v2, v0, v1, v6}, Lmx6;-><init>(Ljava/lang/CharSequence;JLandroid/view/textclassifier/TextClassification;)V
-
-    .line 154
-    .line 155
-    .line 156
-    iget-object v2, v4, Lew4;->g:Lto4;
-
-    .line 157
-    .line 158
-    invoke-virtual {v2, p1}, Lto4;->setValue(Ljava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 159
-    .line 160
-    .line 161
-    invoke-virtual {v5, v3}, Lfa4;->i(Ljava/lang/Object;)V
-
-    .line 162
-    .line 163
-    .line 164
-    goto :goto_2
-
-    .line 165
-    :catchall_0
-    move-exception v0
-
-    .line 166
     move-object p1, v0
 
-    .line 167
-    invoke-virtual {v5, v3}, Lfa4;->i(Ljava/lang/Object;)V
-
-    .line 168
-    .line 169
-    .line 170
-    throw p1
-
-    .line 171
-    :cond_5
-    iput-wide v9, p0, Ldw4;->X:J
-
-    .line 172
-    .line 173
-    iput v1, p0, Ldw4;->Y:I
-
-    .line 174
-    .line 175
-    iget-object v4, p0, Ldw4;->c0:Lew4;
-
-    .line 176
-    .line 177
-    iget-object v5, p0, Ldw4;->a0:Ljava/lang/CharSequence;
-
-    .line 178
-    .line 179
-    move-wide v6, v9
-
-    .line 180
-    move-object v9, p0
-
-    .line 181
-    invoke-static/range {v4 .. v9}, Lew4;->a(Lew4;Ljava/lang/CharSequence;JLandroid/view/textclassifier/TextClassifier;Law0;)Ljava/lang/Object;
-
-    .line 182
-    .line 183
-    .line 184
-    move-result-object p1
-
-    .line 185
-    if-ne p1, v11, :cond_6
-
-    .line 186
-    .line 187
+    .line 109
     :goto_1
-    return-object v11
+    iput-object p1, p0, Ldw4;->h:Landroidx/core/graphics/drawable/IconCompat;
 
-    .line 188
-    :cond_6
-    move-wide v0, v6
+    .line 110
+    .line 111
+    return-void
+.end method
 
-    .line 189
-    :goto_2
-    new-instance p1, Lz17;
+.method public final f(Lew4;)V
+    .locals 1
 
-    .line 190
-    .line 191
-    invoke-direct {p1, v0, v1}, Lz17;-><init>(J)V
+    .line 1
+    iget-object v0, p0, Ldw4;->l:Lew4;
 
-    .line 192
-    .line 193
-    .line 194
-    return-object p1
+    .line 2
+    .line 3
+    if-eq v0, p1, :cond_0
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Ldw4;->l:Lew4;
+
+    .line 6
+    .line 7
+    iget-object v0, p1, Lew4;->b:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    check-cast v0, Ldw4;
+
+    .line 10
+    .line 11
+    if-eq v0, p0, :cond_0
+
+    .line 12
+    .line 13
+    iput-object p0, p1, Lew4;->b:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, p1}, Ldw4;->f(Lew4;)V
+
+    .line 16
+    .line 17
+    .line 18
+    :cond_0
+    return-void
 .end method

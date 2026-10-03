@@ -1,208 +1,108 @@
 package defpackage;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.RandomAccess;
+import java.util.concurrent.CancellationException;
+import su.happ.proxyutility.HappApplication;
+import su.happ.proxyutility.dto.MetaParams;
+import su.happ.proxyutility.dto.ProviderId;
+import su.happ.proxyutility.dto.SubscriptionItem;
+import su.happ.proxyutility.dto.SubscriptionUserInfo;
+import su.happ.proxyutility.dto.XRayConfig;
+import su.happ.proxyutility.feature.main.MainActivity;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class u94 implements RandomAccess {
-    public Object[] Q;
-    public z84 R;
-    public int S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class u94 extends ll7 implements xi2 {
+    public int d0;
+    public final /* synthetic */ MainActivity e0;
 
-    public u94(int i, Object[] objArr) {
-        this.Q = objArr;
-        this.S = i;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public u94(MainActivity mainActivity, b31 b31Var) {
+        super(2, b31Var);
+        this.e0 = mainActivity;
     }
 
-    public final void a(int i, Object obj) {
-        int i2 = this.S + 1;
-        if (this.Q.length < i2) {
-            m(i2);
-        }
-        Object[] objArr = this.Q;
-        int i3 = this.S;
-        if (i != i3) {
-            System.arraycopy(objArr, i, objArr, i + 1, i3 - i);
-        }
-        objArr[i] = obj;
-        this.S++;
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        return ((u94) n((b31) obj2, (i41) obj)).q(r98.a);
     }
 
-    public final void b(Object obj) {
-        int i = this.S + 1;
-        if (this.Q.length < i) {
-            m(i);
-        }
-        Object[] objArr = this.Q;
-        int i2 = this.S;
-        objArr[i2] = obj;
-        this.S = i2 + 1;
+    @Override // defpackage.g00
+    public final b31 n(b31 b31Var, Object obj) {
+        return new u94(this.e0, b31Var);
     }
 
-    public final void c(int i, u94 u94Var) {
-        int i2 = u94Var.S;
-        if (i2 == 0) {
-            return;
-        }
-        int i3 = this.S + i2;
-        if (this.Q.length < i3) {
-            m(i3);
-        }
-        Object[] objArr = this.Q;
-        int i4 = this.S;
-        if (i != i4) {
-            System.arraycopy(objArr, i, objArr, i + i2, i4 - i);
-        }
-        System.arraycopy(u94Var.Q, 0, objArr, i, i2);
-        this.S += i2;
-    }
-
-    public final void d(int i, List list) {
-        if (list.isEmpty()) {
-            return;
-        }
-        int size = list.size();
-        int i2 = this.S + size;
-        if (this.Q.length < i2) {
-            m(i2);
-        }
-        Object[] objArr = this.Q;
-        int i3 = this.S;
-        if (i != i3) {
-            System.arraycopy(objArr, i, objArr, i + size, i3 - i);
-        }
-        int size2 = list.size();
-        for (int i4 = 0; i4 < size2; i4++) {
-            objArr[i + i4] = list.get(i4);
-        }
-        this.S += size;
-    }
-
-    public final boolean e(int i, Collection collection) {
-        int i2 = 0;
-        if (collection.isEmpty()) {
-            return false;
-        }
-        int size = collection.size();
-        int i3 = this.S + size;
-        if (this.Q.length < i3) {
-            m(i3);
-        }
-        Object[] objArr = this.Q;
-        int i4 = this.S;
-        if (i != i4) {
-            System.arraycopy(objArr, i, objArr, i + size, i4 - i);
-        }
-        for (Object obj : collection) {
-            int i5 = i2 + 1;
-            if (i2 < 0) {
-                ub.V();
-                throw null;
-            }
-            objArr[i2 + i] = obj;
-            i2 = i5;
-        }
-        this.S += size;
-        return true;
-    }
-
-    public final List f() {
-        z84 z84Var = this.R;
-        if (z84Var != null) {
-            return z84Var;
-        }
-        z84 z84Var2 = new z84(1, this);
-        this.R = z84Var2;
-        return z84Var2;
-    }
-
-    public final void g() {
-        Object[] objArr = this.Q;
-        int i = this.S;
-        for (int i2 = 0; i2 < i; i2++) {
-            objArr[i2] = null;
-        }
-        this.S = 0;
-    }
-
-    public final boolean h(Object obj) {
-        int i = this.S - 1;
-        if (i >= 0) {
-            for (int i2 = 0; !rt2.f(this.Q[i2], obj); i2++) {
-                if (i2 != i) {
-                }
-            }
-            return true;
-        }
-        return false;
-    }
-
-    public final int i(Object obj) {
-        Object[] objArr = this.Q;
-        int i = this.S;
-        for (int i2 = 0; i2 < i; i2++) {
-            if (rt2.f(obj, objArr[i2])) {
-                return i2;
-            }
-        }
-        return -1;
-    }
-
-    public final boolean j(Object obj) {
-        int i = i(obj);
-        if (i < 0) {
-            return false;
-        }
-        k(i);
-        return true;
-    }
-
-    public final Object k(int i) {
-        Object[] objArr = this.Q;
-        Object obj = objArr[i];
-        int i2 = this.S;
-        if (i != i2 - 1) {
-            int i3 = i + 1;
-            System.arraycopy(objArr, i3, objArr, i, i2 - i3);
-        }
-        int i4 = this.S - 1;
-        this.S = i4;
-        objArr[i4] = null;
-        return obj;
-    }
-
-    public final void l(int i, int i2) {
-        if (i2 > i) {
-            int i3 = this.S;
-            if (i2 < i3) {
-                Object[] objArr = this.Q;
-                System.arraycopy(objArr, i2, objArr, i, i3 - i2);
-            }
-            int i4 = this.S;
-            int i5 = i4 - (i2 - i);
-            int i6 = i4 - 1;
-            if (i5 <= i6) {
-                int i7 = i5;
-                while (true) {
-                    this.Q[i7] = null;
-                    if (i7 == i6) {
-                        break;
-                    } else {
-                        i7++;
+    /* JADX WARN: Removed duplicated region for block: B:31:0x00af A[RETURN] */
+    @Override // defpackage.g00
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Object q(Object obj) {
+        zm zmVar;
+        MetaParams metaParams;
+        Object f;
+        j41 j41Var;
+        SubscriptionUserInfo subscriptionUserInfo;
+        int i = this.d0;
+        Long l = null;
+        try {
+            if (i == 0) {
+                q48.f0(obj);
+                MainActivity mainActivity = this.e0;
+                int i2 = MainActivity.v1;
+                long f2 = mainActivity.K().f(0L, "keyForStatistics");
+                long currentTimeMillis = System.currentTimeMillis();
+                if (f2 + SubscriptionItem.MILLIS_IN_DAY < currentTimeMillis) {
+                    mainActivity.K().m(currentTimeMillis, "keyForStatistics");
+                    SubscriptionItem subscriptionItem = new SubscriptionItem(null, 268435455, null);
+                    ProviderId.Companion companion = ProviderId.INSTANCE;
+                    subscriptionItem.s0("I8AmwFEw", "438188ae27605b83f6ba5c5aee91993ce6bf7031c489999c97150b95417a9856");
+                    HappApplication happApplication = HappApplication.I0;
+                    un a = h31.V().a();
+                    MetaParams metaParams2 = subscriptionItem.getMetaParams();
+                    if (metaParams2 != null) {
+                        if (!kt.w0(new Object[]{metaParams2.getFragmentBean() != null ? new XRayConfig.OutboundBean.StreamSettingsBean.TcpMasksBean.TcpMaskSettingBean(r6) : null, metaParams2.getResolveAddress(), metaParams2.getHost(), metaParams2.getInsecure()}).isEmpty()) {
+                            zmVar = zm.TIME_NTP;
+                            zm zmVar2 = zmVar;
+                            metaParams = subscriptionItem.getMetaParams();
+                            if (metaParams != null && (subscriptionUserInfo = metaParams.getSubscriptionUserInfo()) != null) {
+                                l = new Long(subscriptionUserInfo.getExpire());
+                            }
+                            this.d0 = 1;
+                            f = a.f("I8AmwFEw", "438188ae27605b83f6ba5c5aee91993ce6bf7031c489999c97150b95417a9856", zmVar2, l, this);
+                            j41Var = j41.X;
+                            if (f == j41Var) {
+                                return j41Var;
+                            }
+                        }
+                    }
+                    zmVar = zm.NTP2_SYNC;
+                    zm zmVar22 = zmVar;
+                    metaParams = subscriptionItem.getMetaParams();
+                    if (metaParams != null) {
+                        l = new Long(subscriptionUserInfo.getExpire());
+                    }
+                    this.d0 = 1;
+                    f = a.f("I8AmwFEw", "438188ae27605b83f6ba5c5aee91993ce6bf7031c489999c97150b95417a9856", zmVar22, l, this);
+                    j41Var = j41.X;
+                    if (f == j41Var) {
                     }
                 }
+            } else {
+                if (i != 1) {
+                    i60.g("call to 'resume' before 'invoke' with coroutine");
+                    return null;
+                }
+                q48.f0(obj);
+                ((d86) obj).getClass();
             }
-            this.S = i5;
+        } catch (Throwable th) {
+            if (th instanceof InterruptedException) {
+                throw th;
+            }
+            if (th instanceof CancellationException) {
+                throw th;
+            }
         }
-    }
-
-    public final void m(int i) {
-        Object[] objArr = this.Q;
-        int length = objArr.length;
-        Object[] objArr2 = new Object[Math.max(i, length * 2)];
-        System.arraycopy(objArr, 0, objArr2, 0, length);
-        this.Q = objArr2;
+        return r98.a;
     }
 }

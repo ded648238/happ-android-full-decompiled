@@ -1,298 +1,203 @@
-.class public final Lpg;
+.class public final synthetic Lpg;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lxi2;
 
 
 # instance fields
-.field public final a:Lorg/xmlpull/v1/XmlPullParser;
+.field public final synthetic X:I
 
-.field public b:I
+.field public final synthetic Y:Ldn4;
 
-.field public final c:Lhg1;
+.field public final synthetic Z:Lyw0;
+
+.field public final synthetic c0:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/res/XmlResourceParser;)V
-    .locals 2
+.method public synthetic constructor <init>(Ldn4;Lyw0;II)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p4, p0, Lpg;->X:I
 
     .line 2
     .line 3
+    iput-object p1, p0, Lpg;->Y:Ldn4;
+
     .line 4
-    iput-object p1, p0, Lpg;->a:Lorg/xmlpull/v1/XmlPullParser;
-
     .line 5
-    .line 6
-    const/4 p1, 0x0
+    iput-object p2, p0, Lpg;->Z:Lyw0;
 
+    .line 6
     .line 7
-    iput p1, p0, Lpg;->b:I
+    iput p3, p0, Lpg;->c0:I
 
     .line 8
     .line 9
-    new-instance p1, Lhg1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 10
     .line 11
-    const/16 v0, 0x1d
-
     .line 12
-    .line 13
-    const/4 v1, 0x0
-
-    .line 14
-    invoke-direct {p1, v0, v1}, Lhg1;-><init>(IZ)V
-
-    .line 15
-    .line 16
-    .line 17
-    const/16 v0, 0x40
-
-    .line 18
-    .line 19
-    new-array v0, v0, [F
-
-    .line 20
-    .line 21
-    iput-object v0, p1, Lhg1;->R:Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    iput-object p1, p0, Lpg;->c:Lhg1;
-
-    .line 24
-    .line 25
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/content/res/TypedArray;Ljava/lang/String;IF)F
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lpg;->a:Lorg/xmlpull/v1/XmlPullParser;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p2}, Ls47;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result p2
-
-    .line 7
-    if-nez p2, :cond_0
-
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :cond_0
-    invoke-virtual {p1, p3, p4}, Landroid/content/res/TypedArray;->getFloat(IF)F
-
-    .line 11
-    .line 12
-    .line 13
-    move-result p4
-
-    .line 14
-    :goto_0
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->getChangingConfigurations()I
-
-    .line 15
-    .line 16
-    .line 17
-    move-result p1
-
-    .line 18
-    invoke-virtual {p0, p1}, Lpg;->b(I)V
-
-    .line 19
-    .line 20
-    .line 21
-    return p4
-.end method
-
-.method public final b(I)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lpg;->b:I
-
-    .line 2
-    .line 3
-    or-int/2addr p1, v0
-
-    .line 4
-    iput p1, p0, Lpg;->b:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, Lpg;->X:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    sget-object v1, Lr98;->a:Lr98;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, Lpg;
+    iget v2, p0, Lpg;->c0:I
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    iget-object v3, p0, Lpg;->Z:Lyw0;
 
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
-    .line 10
-    return v2
+    iget-object p0, p0, Lpg;->Y:Ldn4;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, Lpg;
+    check-cast p1, Lrk2;
 
     .line 12
     .line 13
-    iget-object v1, p0, Lpg;->a:Lorg/xmlpull/v1/XmlPullParser;
+    check-cast p2, Ljava/lang/Integer;
 
     .line 14
     .line 15
-    iget-object v3, p1, Lpg;->a:Lorg/xmlpull/v1/XmlPullParser;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 18
+    packed-switch v0, :pswitch_data_0
+
     .line 19
     .line 20
-    move-result v1
-
     .line 21
-    if-nez v1, :cond_2
+    or-int/lit8 p2, v2, 0x1
 
     .line 22
     .line 23
-    return v2
+    invoke-static {p2}, Lku8;->S(I)I
 
     .line 24
-    :cond_2
-    iget v1, p0, Lpg;->b:I
-
     .line 25
     .line 26
-    iget p1, p1, Lpg;->b:I
+    move-result p2
 
     .line 27
-    .line 28
-    if-eq v1, p1, :cond_3
+    invoke-static {p0, v3, p1, p2}, Ll93;->c(Ldn4;Lyw0;Lrk2;I)V
 
+    .line 28
     .line 29
     .line 30
-    return v2
+    return-object v1
 
     .line 31
-    :cond_3
-    return v0
-.end method
+    :pswitch_0
+    or-int/lit8 p2, v2, 0x1
 
-.method public final hashCode()I
-    .locals 2
+    .line 32
+    .line 33
+    invoke-static {p2}, Lku8;->S(I)I
 
-    .line 1
-    iget-object v0, p0, Lpg;->a:Lorg/xmlpull/v1/XmlPullParser;
+    .line 34
+    .line 35
+    .line 36
+    move-result p2
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    .line 37
+    invoke-static {p0, v3, p1, p2}, Ll93;->d(Ldn4;Lyw0;Lrk2;I)V
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    .line 38
+    .line 39
+    .line 40
+    return-object v1
 
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    .line 41
+    :pswitch_1
+    or-int/lit8 p2, v2, 0x1
 
-    .line 8
-    .line 9
-    iget v1, p0, Lpg;->b:I
+    .line 42
+    .line 43
+    invoke-static {p2}, Lku8;->S(I)I
 
-    .line 10
-    .line 11
-    add-int/2addr v0, v1
+    .line 44
+    .line 45
+    .line 46
+    move-result p2
 
-    .line 12
-    return v0
-.end method
+    .line 47
+    invoke-static {p0, v3, p1, p2}, Lnd1;->d(Ldn4;Lyw0;Lrk2;I)V
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+    .line 48
+    .line 49
+    .line 50
+    return-object v1
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 51
+    :pswitch_2
+    or-int/lit8 p2, v2, 0x1
 
-    .line 2
-    .line 3
-    const-string v1, "AndroidVectorParser(xmlParser="
+    .line 52
+    .line 53
+    invoke-static {p2}, Lku8;->S(I)I
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 54
+    .line 55
+    .line 56
+    move-result p2
 
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lpg;->a:Lorg/xmlpull/v1/XmlPullParser;
+    .line 57
+    invoke-static {p0, v3, p1, p2}, Lmu4;->M(Ldn4;Lyw0;Lrk2;I)V
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 58
+    .line 59
+    .line 60
+    return-object v1
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", config="
+    .line 61
+    :pswitch_3
+    or-int/lit8 p2, v2, 0x1
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 62
+    .line 63
+    invoke-static {p2}, Lku8;->S(I)I
 
-    .line 16
-    .line 17
-    .line 18
-    iget v1, p0, Lpg;->b:I
+    .line 64
+    .line 65
+    .line 66
+    move-result p2
 
-    .line 19
-    .line 20
-    const/16 v2, 0x29
+    .line 67
+    invoke-static {p0, v3, p1, p2}, Lmu4;->L(Ldn4;Lyw0;Lrk2;I)V
 
-    .line 21
-    .line 22
-    invoke-static {v0, v1, v2}, Lea0;->s(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+    .line 68
+    .line 69
+    .line 70
+    return-object v1
 
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    return-object v0
+    .line 71
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,15 +1,16 @@
 package com.github.luben.zstd;
 
 import com.github.luben.zstd.util.Native;
-import defpackage.i62;
-import defpackage.mi2;
+import defpackage.bh2;
+import defpackage.eh0;
+import defpackage.ra;
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ZstdInputStreamNoFinalizer extends FilterInputStream {
     private static final int srcBuffSize;
     private ZstdDictDecompress active_dict;
@@ -44,17 +45,17 @@ public class ZstdInputStreamNoFinalizer extends FilterInputStream {
         this.srcByteBuffer = arrayBackedBuffer;
         this.src = arrayBackedBuffer.array();
         synchronized (this) {
-            long jCreateDStream = createDStream();
-            this.stream = jCreateDStream;
-            initDStream(jCreateDStream);
+            long createDStream = createDStream();
+            this.stream = createDStream;
+            initDStream(createDStream);
         }
     }
 
     private static native long createDStream();
 
-    private native int decompressStream(long j, byte[] bArr, int i, byte[] bArr2, int i2);
+    private native long decompressStream(long j, byte[] bArr, int i, byte[] bArr2, int i2);
 
-    private static native int freeDStream(long j);
+    private static native long freeDStream(long j);
 
     private native int initDStream(long j);
 
@@ -75,13 +76,22 @@ public class ZstdInputStreamNoFinalizer extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() throws IOException {
-        if (this.isClosed) {
-            return;
+        try {
+            if (this.isClosed) {
+                return;
+            }
+            ZstdDictDecompress zstdDictDecompress = this.active_dict;
+            if (zstdDictDecompress != null) {
+                zstdDictDecompress.releaseSharedLock();
+                this.active_dict = null;
+            }
+            this.isClosed = true;
+            this.bufferPool.release(this.srcByteBuffer);
+            freeDStream(this.stream);
+            ((FilterInputStream) this).in.close();
+        } catch (Throwable th) {
+            throw th;
         }
-        this.isClosed = true;
-        this.bufferPool.release(this.srcByteBuffer);
-        freeDStream(this.stream);
-        ((FilterInputStream) this).in.close();
     }
 
     public synchronized boolean getContinuous() {
@@ -95,16 +105,16 @@ public class ZstdInputStreamNoFinalizer extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public synchronized int read(byte[] bArr, int i, int i2) throws IOException {
-        if (i >= 0) {
+        if (i >= 0 && i2 >= 0) {
             if (i2 <= bArr.length - i) {
-                int internal = 0;
+                int i3 = 0;
                 if (i2 == 0) {
                     return 0;
                 }
-                while (internal == 0) {
-                    internal = readInternal(bArr, i, i2);
+                while (i3 == 0) {
+                    i3 = readInternal(bArr, i, i2);
                 }
-                return internal;
+                return i3;
             }
         }
         throw new IndexOutOfBoundsException("Requested length " + i2 + " from offset " + i + " in buffer of size " + bArr.length);
@@ -112,12 +122,13 @@ public class ZstdInputStreamNoFinalizer extends FilterInputStream {
 
     public int readInternal(byte[] bArr, int i, int i2) throws IOException {
         long j;
+        boolean z = false;
         if (this.isClosed) {
-            i62.h("Stream closed");
+            bh2.i("Stream closed");
             return 0;
         }
-        if (i < 0 || i2 > bArr.length - i) {
-            i62.f(bArr.length, mi2.s(i2, "Requested length ", i, " from offset ", " in buffer of size "));
+        if (i < 0 || i2 < 0 || i2 > bArr.length - i) {
+            ra.e(bArr.length, eh0.t(i2, "Requested length ", i, " from offset ", " in buffer of size "));
             return 0;
         }
         int i3 = i + i2;
@@ -131,10 +142,10 @@ public class ZstdInputStreamNoFinalizer extends FilterInputStream {
                 break;
             }
             if (this.needRead && (((FilterInputStream) this).in.available() > 0 || this.dstPos == j2)) {
-                long j5 = ((FilterInputStream) this).in.read(this.src, 0, srcBuffSize);
-                this.srcSize = j5;
+                long read = ((FilterInputStream) this).in.read(this.src, z ? 1 : 0, srcBuffSize);
+                this.srcSize = read;
                 this.srcPos = 0L;
-                if (j5 < 0) {
+                if (read < 0) {
                     this.srcSize = 0L;
                     if (this.frameFinished) {
                         return -1;
@@ -142,32 +153,37 @@ public class ZstdInputStreamNoFinalizer extends FilterInputStream {
                     if (!this.isContinuous) {
                         throw new ZstdIOException(Zstd.errCorruptionDetected(), "Truncated source");
                     }
-                    long j6 = (int) (this.dstPos - j2);
-                    this.srcSize = j6;
-                    if (j6 > 0) {
-                        return (int) j6;
+                    long j5 = (int) (this.dstPos - j2);
+                    this.srcSize = j5;
+                    if (j5 > 0) {
+                        return (int) j5;
                     }
                     return -1;
                 }
-                if (j5 == 0) {
+                if (read == 0) {
                     continue;
                 } else {
-                    this.frameFinished = false;
+                    this.frameFinished = z;
                 }
             }
-            long j7 = this.dstPos;
-            int iDecompressStream = decompressStream(this.stream, bArr, i3, this.src, (int) this.srcSize);
-            long j8 = iDecompressStream;
-            if (Zstd.isError(j8)) {
-                throw new ZstdIOException(j8);
+            long j6 = this.dstPos;
+            long j7 = this.stream;
+            byte[] bArr2 = this.src;
+            boolean z2 = z ? 1 : 0;
+            long j8 = j2;
+            long decompressStream = decompressStream(j7, bArr, i3, bArr2, (int) this.srcSize);
+            if (Zstd.isError(decompressStream)) {
+                throw new ZstdIOException(decompressStream);
             }
-            if (iDecompressStream == 0) {
+            if (decompressStream == 0) {
                 this.frameFinished = true;
-                this.needRead = this.srcPos == this.srcSize;
-                return (int) (this.dstPos - j2);
+                this.needRead = this.srcPos == this.srcSize ? true : z2;
+                return (int) (this.dstPos - j8);
             }
-            this.needRead = this.dstPos < j4;
-            j3 = j7;
+            this.needRead = this.dstPos >= j4 ? z2 : true;
+            j2 = j8;
+            j3 = j6;
+            z = z2;
         }
         return (int) (j - j2);
     }
@@ -178,86 +194,119 @@ public class ZstdInputStreamNoFinalizer extends FilterInputStream {
     }
 
     public synchronized ZstdInputStreamNoFinalizer setDict(ZstdDictDecompress zstdDictDecompress) throws IOException {
-        zstdDictDecompress.acquireSharedLock();
         try {
-            long jLoadFastDictDecompress = Zstd.loadFastDictDecompress(this.stream, zstdDictDecompress);
-            if (Zstd.isError(jLoadFastDictDecompress)) {
-                throw new ZstdIOException(jLoadFastDictDecompress);
+            if (this.isClosed) {
+                throw new IOException("Stream closed");
+            }
+            if (zstdDictDecompress != null) {
+                zstdDictDecompress.acquireSharedLock();
+            }
+            long loadFastDictDecompress = Zstd.loadFastDictDecompress(this.stream, zstdDictDecompress);
+            if (Zstd.isError(loadFastDictDecompress)) {
+                if (zstdDictDecompress != null) {
+                    zstdDictDecompress.releaseSharedLock();
+                }
+                throw new ZstdIOException(loadFastDictDecompress);
+            }
+            ZstdDictDecompress zstdDictDecompress2 = this.active_dict;
+            if (zstdDictDecompress2 != null) {
+                zstdDictDecompress2.releaseSharedLock();
             }
             this.active_dict = zstdDictDecompress;
-            zstdDictDecompress.releaseSharedLock();
         } catch (Throwable th) {
-            zstdDictDecompress.releaseSharedLock();
             throw th;
         }
         return this;
     }
 
     public synchronized ZstdInputStreamNoFinalizer setLongMax(int i) throws IOException {
-        long decompressionLongMax = Zstd.setDecompressionLongMax(this.stream, i);
-        if (Zstd.isError(decompressionLongMax)) {
-            throw new ZstdIOException(decompressionLongMax);
+        try {
+            if (this.isClosed) {
+                throw new IOException("Stream closed");
+            }
+            long decompressionLongMax = Zstd.setDecompressionLongMax(this.stream, i);
+            if (Zstd.isError(decompressionLongMax)) {
+                throw new ZstdIOException(decompressionLongMax);
+            }
+        } catch (Throwable th) {
+            throw th;
         }
         return this;
     }
 
     public synchronized ZstdInputStreamNoFinalizer setRefMultipleDDicts(boolean z) throws IOException {
-        long refMultipleDDicts = Zstd.setRefMultipleDDicts(this.stream, z);
-        if (Zstd.isError(refMultipleDDicts)) {
-            throw new ZstdIOException(refMultipleDDicts);
+        try {
+            if (this.isClosed) {
+                throw new IOException("Stream closed");
+            }
+            long refMultipleDDicts = Zstd.setRefMultipleDDicts(this.stream, z);
+            if (Zstd.isError(refMultipleDDicts)) {
+                throw new ZstdIOException(refMultipleDDicts);
+            }
+        } catch (Throwable th) {
+            throw th;
         }
         return this;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public synchronized long skip(long j) throws IOException {
-        int i;
         if (this.isClosed) {
             throw new IOException("Stream closed");
         }
         if (j <= 0) {
             return 0L;
         }
-        int iRecommendedDOutSize = (int) recommendedDOutSize();
-        if (iRecommendedDOutSize > j) {
-            iRecommendedDOutSize = (int) j;
+        int recommendedDOutSize = (int) recommendedDOutSize();
+        if (recommendedDOutSize > j) {
+            recommendedDOutSize = (int) j;
         }
-        ByteBuffer arrayBackedBuffer = Zstd.getArrayBackedBuffer(this.bufferPool, iRecommendedDOutSize);
+        ByteBuffer arrayBackedBuffer = Zstd.getArrayBackedBuffer(this.bufferPool, recommendedDOutSize);
         try {
-            byte[] bArrArray = arrayBackedBuffer.array();
+            byte[] array = arrayBackedBuffer.array();
             long j2 = j;
-            while (j2 > 0 && (i = read(bArrArray, 0, (int) Math.min(iRecommendedDOutSize, j2))) >= 0) {
-                j2 -= (long) i;
+            while (j2 > 0) {
+                int read = read(array, 0, (int) Math.min(recommendedDOutSize, j2));
+                if (read < 0) {
+                    break;
+                }
+                j2 -= read;
             }
-            this.bufferPool.release(arrayBackedBuffer);
             return j - j2;
-        } catch (Throwable th) {
+        } finally {
             this.bufferPool.release(arrayBackedBuffer);
-            throw th;
         }
-    }
-
-    public synchronized ZstdInputStreamNoFinalizer setDict(byte[] bArr) throws IOException {
-        long jLoadDictDecompress = Zstd.loadDictDecompress(this.stream, bArr, bArr.length);
-        if (Zstd.isError(jLoadDictDecompress)) {
-            throw new ZstdIOException(jLoadDictDecompress);
-        }
-        return this;
     }
 
     public ZstdInputStreamNoFinalizer(InputStream inputStream) throws IOException {
         this(inputStream, NoPool.INSTANCE);
     }
 
+    public synchronized ZstdInputStreamNoFinalizer setDict(byte[] bArr) throws IOException {
+        try {
+            if (!this.isClosed) {
+                long loadDictDecompress = Zstd.loadDictDecompress(this.stream, bArr, bArr.length);
+                if (Zstd.isError(loadDictDecompress)) {
+                    throw new ZstdIOException(loadDictDecompress);
+                }
+            } else {
+                throw new IOException("Stream closed");
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+        return this;
+    }
+
     @Override // java.io.FilterInputStream, java.io.InputStream
     public synchronized int read() throws IOException {
         try {
             byte[] bArr = new byte[1];
-            int internal = 0;
-            while (internal == 0) {
-                internal = readInternal(bArr, 0, 1);
+            int i = 0;
+            while (i == 0) {
+                i = readInternal(bArr, 0, 1);
             }
-            if (internal != 1) {
+            if (i != 1) {
                 return -1;
             }
             return bArr[0] & 255;

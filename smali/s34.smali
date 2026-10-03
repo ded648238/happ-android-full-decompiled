@@ -1,201 +1,223 @@
-.class public final enum Ls34;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Ls34;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lb65;
-
-
-# static fields
-.field public static final enum R:Ls34;
-
-.field public static final enum S:Ls34;
-
-.field public static final synthetic T:[Ls34;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # instance fields
-.field public final Q:I
+.field public final synthetic X:I
+
+.field public final synthetic Y:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
-
-    .line 1
-    new-instance v0, Ls34;
-
-    .line 2
-    .line 3
-    const-string v1, "UNKNOWN"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2, v2}, Ls34;-><init>(Ljava/lang/String;II)V
-
-    .line 7
-    .line 8
-    .line 9
-    new-instance v1, Ls34;
-
-    .line 10
-    .line 11
-    const-string v3, "DATA_MESSAGE"
-
-    .line 12
-    .line 13
-    const/4 v4, 0x1
-
-    .line 14
-    invoke-direct {v1, v3, v4, v4}, Ls34;-><init>(Ljava/lang/String;II)V
-
-    .line 15
-    .line 16
-    .line 17
-    sput-object v1, Ls34;->R:Ls34;
-
-    .line 18
-    .line 19
-    new-instance v3, Ls34;
-
-    .line 20
-    .line 21
-    const-string v5, "TOPIC"
-
-    .line 22
-    .line 23
-    const/4 v6, 0x2
-
-    .line 24
-    invoke-direct {v3, v5, v6, v6}, Ls34;-><init>(Ljava/lang/String;II)V
-
-    .line 25
-    .line 26
-    .line 27
-    new-instance v5, Ls34;
-
-    .line 28
-    .line 29
-    const-string v7, "DISPLAY_NOTIFICATION"
-
-    .line 30
-    .line 31
-    const/4 v8, 0x3
-
-    .line 32
-    invoke-direct {v5, v7, v8, v8}, Ls34;-><init>(Ljava/lang/String;II)V
-
-    .line 33
-    .line 34
-    .line 35
-    sput-object v5, Ls34;->S:Ls34;
-
-    .line 36
-    .line 37
-    const/4 v7, 0x4
-
-    .line 38
-    new-array v7, v7, [Ls34;
-
-    .line 39
-    .line 40
-    aput-object v0, v7, v2
-
-    .line 41
-    .line 42
-    aput-object v1, v7, v4
-
-    .line 43
-    .line 44
-    aput-object v3, v7, v6
-
-    .line 45
-    .line 46
-    aput-object v5, v7, v8
-
-    .line 47
-    .line 48
-    sput-object v7, Ls34;->T:[Ls34;
-
-    .line 49
-    .line 50
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput p1, p0, Ls34;->X:I
 
     .line 2
     .line 3
-    .line 4
-    iput p3, p0, Ls34;->Q:I
+    iput-object p2, p0, Ls34;->Y:Ljava/lang/Object;
 
+    .line 4
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
+    .line 7
+    .line 8
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Ls34;
-    .locals 1
-
-    .line 1
-    const-class v0, Ls34;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Ls34;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Ls34;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ls34;->T:[Ls34;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Ls34;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Ls34;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 5
 
     .line 1
-    iget v0, p0, Ls34;->Q:I
+    iget v0, p0, Ls34;->X:I
 
     .line 2
     .line 3
-    return v0
+    const/4 v1, 0x0
+
+    .line 4
+    iget-object p0, p0, Ls34;->Y:Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    packed-switch v0, :pswitch_data_0
+
+    .line 7
+    .line 8
+    .line 9
+    check-cast p1, Landroid/widget/Checkable;
+
+    .line 10
+    .line 11
+    invoke-interface {p1}, Landroid/widget/Checkable;->isChecked()Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
+
+    .line 15
+    if-eqz p1, :cond_0
+
+    .line 16
+    .line 17
+    check-cast p0, Landroid/view/GestureDetector;
+
+    .line 18
+    .line 19
+    invoke-virtual {p0, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v1
+
+    .line 23
+    :cond_0
+    return v1
+
+    .line 24
+    :pswitch_0
+    check-cast p0, Landroidx/appcompat/widget/ListPopupWindow;
+
+    .line 25
+    .line 26
+    iget-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow;->q0:Lq34;
+
+    .line 27
+    .line 28
+    iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->u0:Landroid/os/Handler;
+
+    .line 29
+    .line 30
+    iget-object p0, p0, Landroidx/appcompat/widget/ListPopupWindow;->y0:Landroid/widget/PopupWindow;
+
+    .line 31
+    .line 32
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v2
+
+    .line 36
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v3
+
+    .line 40
+    float-to-int v3, v3
+
+    .line 41
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    .line 42
+    .line 43
+    .line 44
+    move-result p2
+
+    .line 45
+    float-to-int p2, p2
+
+    .line 46
+    if-nez v2, :cond_1
+
+    .line 47
+    .line 48
+    if-eqz p0, :cond_1
+
+    .line 49
+    .line 50
+    invoke-virtual {p0}, Landroid/widget/PopupWindow;->isShowing()Z
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v4
+
+    .line 54
+    if-eqz v4, :cond_1
+
+    .line 55
+    .line 56
+    if-ltz v3, :cond_1
+
+    .line 57
+    .line 58
+    invoke-virtual {p0}, Landroid/widget/PopupWindow;->getWidth()I
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v4
+
+    .line 62
+    if-ge v3, v4, :cond_1
+
+    .line 63
+    .line 64
+    if-ltz p2, :cond_1
+
+    .line 65
+    .line 66
+    invoke-virtual {p0}, Landroid/widget/PopupWindow;->getHeight()I
+
+    .line 67
+    .line 68
+    .line 69
+    move-result p0
+
+    .line 70
+    if-ge p2, p0, :cond_1
+
+    .line 71
+    .line 72
+    const-wide/16 v2, 0xfa
+
+    .line 73
+    .line 74
+    invoke-virtual {v0, p1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 75
+    .line 76
+    .line 77
+    goto :goto_0
+
+    .line 78
+    :cond_1
+    const/4 p0, 0x1
+
+    .line 79
+    if-ne v2, p0, :cond_2
+
+    .line 80
+    .line 81
+    invoke-virtual {v0, p1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 82
+    .line 83
+    .line 84
+    :cond_2
+    :goto_0
+    return v1
+
+    .line 85
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

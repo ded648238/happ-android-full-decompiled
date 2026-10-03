@@ -1,6 +1,6 @@
 .class Landroidx/media/AudioAttributesImplBase;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroidx/media/AudioAttributesImpl;
@@ -103,7 +103,7 @@
 
     .line 36
     .line 37
-    const/4 v9, 0x7
+    move v9, v7
 
     .line 38
     goto :goto_0
@@ -121,7 +121,7 @@
 
     .line 43
     .line 44
-    const/4 v9, 0x6
+    move v9, v6
 
     .line 45
     goto :goto_0
@@ -141,7 +141,7 @@
 
     .line 51
     :pswitch_1
-    const/4 v9, 0x1
+    move v9, v5
 
     .line 52
     goto :goto_0
@@ -178,7 +178,7 @@
 
     .line 63
     :pswitch_6
-    const/4 v9, 0x0
+    move v9, v1
 
     .line 64
     :goto_0
@@ -225,11 +225,11 @@
 
     .line 82
     .line 83
-    iget p1, p0, Landroidx/media/AudioAttributesImplBase;->d:I
+    iget p0, p0, Landroidx/media/AudioAttributesImplBase;->d:I
 
     .line 84
     .line 85
-    if-ne p1, v3, :cond_6
+    if-ne p0, v3, :cond_6
 
     .line 86
     .line 87
@@ -258,7 +258,7 @@
 .end method
 
 .method public final hashCode()I
-    .locals 6
+    .locals 3
 
     .line 1
     iget v0, p0, Landroidx/media/AudioAttributesImplBase;->b:I
@@ -297,62 +297,35 @@
     move-result-object v2
 
     .line 19
-    iget v3, p0, Landroidx/media/AudioAttributesImplBase;->d:I
+    iget p0, p0, Landroidx/media/AudioAttributesImplBase;->d:I
 
     .line 20
     .line 21
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 22
     .line 23
     .line 24
-    move-result-object v3
+    move-result-object p0
 
     .line 25
-    const/4 v4, 0x4
+    filled-new-array {v0, v1, v2, p0}, [Ljava/lang/Object;
 
     .line 26
-    new-array v4, v4, [Ljava/lang/Object;
-
     .line 27
     .line 28
-    const/4 v5, 0x0
+    move-result-object p0
 
     .line 29
-    aput-object v0, v4, v5
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     .line 30
     .line 31
-    const/4 v0, 0x1
-
     .line 32
-    aput-object v1, v4, v0
+    move-result p0
 
     .line 33
-    .line 34
-    const/4 v0, 0x2
-
-    .line 35
-    aput-object v2, v4, v0
-
-    .line 36
-    .line 37
-    const/4 v0, 0x3
-
-    .line 38
-    aput-object v3, v4, v0
-
-    .line 39
-    .line 40
-    invoke-static {v4}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v0
-
-    .line 44
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -438,7 +411,7 @@
 
     .line 41
     .line 42
-    invoke-static {v1, v2}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     .line 43
     .line 44
@@ -607,27 +580,27 @@
     .line 110
     .line 111
     .line 112
-    iget v1, p0, Landroidx/media/AudioAttributesImplBase;->c:I
+    iget p0, p0, Landroidx/media/AudioAttributesImplBase;->c:I
 
     .line 113
     .line 114
-    invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+    invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     .line 115
     .line 116
     .line 117
-    move-result-object v1
+    move-result-object p0
 
     .line 118
-    invoke-virtual {v1}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
     .line 119
     .line 120
     .line 121
-    move-result-object v1
+    move-result-object p0
 
     .line 122
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 123
     .line 124
@@ -637,10 +610,10 @@
     .line 126
     .line 127
     .line 128
-    move-result-object v0
+    move-result-object p0
 
     .line 129
-    return-object v0
+    return-object p0
 
     .line 130
     nop

@@ -1,36 +1,36 @@
 .class public final Landroidx/leanback/widget/SeekBar;
 .super Landroid/view/View;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Landroid/graphics/RectF;
+.field public final c0:Landroid/graphics/RectF;
 
-.field public final R:Landroid/graphics/RectF;
+.field public final d0:Landroid/graphics/RectF;
 
-.field public final S:Landroid/graphics/RectF;
+.field public final e0:Landroid/graphics/RectF;
 
-.field public final T:Landroid/graphics/Paint;
+.field public final f0:Landroid/graphics/Paint;
 
-.field public final U:Landroid/graphics/Paint;
+.field public final g0:Landroid/graphics/Paint;
 
-.field public final V:Landroid/graphics/Paint;
+.field public final h0:Landroid/graphics/Paint;
 
-.field public final W:Landroid/graphics/Paint;
+.field public final i0:Landroid/graphics/Paint;
 
-.field public a0:I
+.field public j0:I
 
-.field public b0:I
+.field public k0:I
 
-.field public c0:I
+.field public l0:I
 
-.field public d0:I
+.field public m0:I
 
-.field public e0:I
+.field public n0:I
 
-.field public f0:I
+.field public o0:I
 
-.field public g0:I
+.field public p0:I
 
 
 # direct methods
@@ -52,7 +52,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object p2, p0, Landroidx/leanback/widget/SeekBar;->Q:Landroid/graphics/RectF;
+    iput-object p2, p0, Landroidx/leanback/widget/SeekBar;->c0:Landroid/graphics/RectF;
 
     .line 10
     .line 11
@@ -65,7 +65,7 @@
     .line 14
     .line 15
     .line 16
-    iput-object p2, p0, Landroidx/leanback/widget/SeekBar;->R:Landroid/graphics/RectF;
+    iput-object p2, p0, Landroidx/leanback/widget/SeekBar;->d0:Landroid/graphics/RectF;
 
     .line 17
     .line 18
@@ -78,7 +78,7 @@
     .line 21
     .line 22
     .line 23
-    iput-object p2, p0, Landroidx/leanback/widget/SeekBar;->S:Landroid/graphics/RectF;
+    iput-object p2, p0, Landroidx/leanback/widget/SeekBar;->e0:Landroid/graphics/RectF;
 
     .line 24
     .line 25
@@ -94,7 +94,7 @@
     .line 29
     .line 30
     .line 31
-    iput-object p2, p0, Landroidx/leanback/widget/SeekBar;->T:Landroid/graphics/Paint;
+    iput-object p2, p0, Landroidx/leanback/widget/SeekBar;->f0:Landroid/graphics/Paint;
 
     .line 32
     .line 33
@@ -107,7 +107,7 @@
     .line 36
     .line 37
     .line 38
-    iput-object v1, p0, Landroidx/leanback/widget/SeekBar;->U:Landroid/graphics/Paint;
+    iput-object v1, p0, Landroidx/leanback/widget/SeekBar;->g0:Landroid/graphics/Paint;
 
     .line 39
     .line 40
@@ -120,7 +120,7 @@
     .line 43
     .line 44
     .line 45
-    iput-object v2, p0, Landroidx/leanback/widget/SeekBar;->V:Landroid/graphics/Paint;
+    iput-object v2, p0, Landroidx/leanback/widget/SeekBar;->h0:Landroid/graphics/Paint;
 
     .line 46
     .line 47
@@ -133,7 +133,7 @@
     .line 50
     .line 51
     .line 52
-    iput-object v3, p0, Landroidx/leanback/widget/SeekBar;->W:Landroid/graphics/Paint;
+    iput-object v3, p0, Landroidx/leanback/widget/SeekBar;->i0:Landroid/graphics/Paint;
 
     .line 53
     .line 54
@@ -190,7 +190,7 @@
     move-result-object p2
 
     .line 83
-    sget v0, Li85;->lb_playback_transport_progressbar_bar_height:I
+    sget v0, Lhs5;->lb_playback_transport_progressbar_bar_height:I
 
     .line 84
     .line 85
@@ -202,7 +202,7 @@
     move-result p2
 
     .line 89
-    iput p2, p0, Landroidx/leanback/widget/SeekBar;->f0:I
+    iput p2, p0, Landroidx/leanback/widget/SeekBar;->o0:I
 
     .line 90
     .line 91
@@ -214,7 +214,7 @@
     move-result-object p2
 
     .line 95
-    sget v0, Li85;->lb_playback_transport_progressbar_active_bar_height:I
+    sget v0, Lhs5;->lb_playback_transport_progressbar_active_bar_height:I
 
     .line 96
     .line 97
@@ -226,7 +226,7 @@
     move-result p2
 
     .line 101
-    iput p2, p0, Landroidx/leanback/widget/SeekBar;->g0:I
+    iput p2, p0, Landroidx/leanback/widget/SeekBar;->p0:I
 
     .line 102
     .line 103
@@ -238,7 +238,7 @@
     move-result-object p1
 
     .line 107
-    sget p2, Li85;->lb_playback_transport_progressbar_active_radius:I
+    sget p2, Lhs5;->lb_playback_transport_progressbar_active_radius:I
 
     .line 108
     .line 109
@@ -250,7 +250,7 @@
     move-result p1
 
     .line 113
-    iput p1, p0, Landroidx/leanback/widget/SeekBar;->e0:I
+    iput p1, p0, Landroidx/leanback/widget/SeekBar;->n0:I
 
     .line 114
     .line 115
@@ -275,7 +275,7 @@
 
     .line 6
     .line 7
-    iget v0, p0, Landroidx/leanback/widget/SeekBar;->g0:I
+    iget v0, p0, Landroidx/leanback/widget/SeekBar;->p0:I
 
     .line 8
     .line 9
@@ -283,7 +283,7 @@
 
     .line 10
     :cond_0
-    iget v0, p0, Landroidx/leanback/widget/SeekBar;->f0:I
+    iget v0, p0, Landroidx/leanback/widget/SeekBar;->o0:I
 
     .line 11
     .line 12
@@ -312,7 +312,7 @@
 
     .line 23
     .line 24
-    iget v3, p0, Landroidx/leanback/widget/SeekBar;->f0:I
+    iget v3, p0, Landroidx/leanback/widget/SeekBar;->o0:I
 
     .line 25
     .line 26
@@ -343,7 +343,7 @@
     int-to-float v0, v2
 
     .line 37
-    iget-object v2, p0, Landroidx/leanback/widget/SeekBar;->S:Landroid/graphics/RectF;
+    iget-object v2, p0, Landroidx/leanback/widget/SeekBar;->e0:Landroid/graphics/RectF;
 
     .line 38
     .line 39
@@ -364,7 +364,7 @@
 
     .line 47
     .line 48
-    iget v2, p0, Landroidx/leanback/widget/SeekBar;->e0:I
+    iget v2, p0, Landroidx/leanback/widget/SeekBar;->n0:I
 
     .line 49
     .line 50
@@ -372,7 +372,7 @@
 
     .line 51
     :cond_1
-    iget v2, p0, Landroidx/leanback/widget/SeekBar;->f0:I
+    iget v2, p0, Landroidx/leanback/widget/SeekBar;->o0:I
 
     .line 52
     .line 53
@@ -388,14 +388,14 @@
     sub-int/2addr v1, v3
 
     .line 58
-    iget v3, p0, Landroidx/leanback/widget/SeekBar;->a0:I
+    iget v3, p0, Landroidx/leanback/widget/SeekBar;->j0:I
 
     .line 59
     .line 60
     int-to-float v3, v3
 
     .line 61
-    iget v4, p0, Landroidx/leanback/widget/SeekBar;->c0:I
+    iget v4, p0, Landroidx/leanback/widget/SeekBar;->l0:I
 
     .line 62
     .line 63
@@ -408,175 +408,173 @@
     int-to-float v1, v1
 
     .line 66
-    mul-float v3, v3, v1
+    mul-float/2addr v3, v1
 
     .line 67
-    .line 68
-    iget v4, p0, Landroidx/leanback/widget/SeekBar;->f0:I
+    iget v4, p0, Landroidx/leanback/widget/SeekBar;->o0:I
 
+    .line 68
     .line 69
-    .line 70
     div-int/lit8 v6, v4, 0x2
 
+    .line 70
     .line 71
-    .line 72
     int-to-float v6, v6
 
-    .line 73
+    .line 72
     div-int/lit8 v4, v4, 0x2
 
+    .line 73
     .line 74
-    .line 75
     int-to-float v4, v4
 
-    .line 76
+    .line 75
     add-float/2addr v4, v3
 
-    .line 77
-    iget-object v7, p0, Landroidx/leanback/widget/SeekBar;->Q:Landroid/graphics/RectF;
+    .line 76
+    iget-object v7, p0, Landroidx/leanback/widget/SeekBar;->c0:Landroid/graphics/RectF;
 
+    .line 77
     .line 78
-    .line 79
     invoke-virtual {v7, v6, v5, v4, v0}, Landroid/graphics/RectF;->set(FFFF)V
 
+    .line 79
     .line 80
     .line 81
-    .line 82
-    iget v4, p0, Landroidx/leanback/widget/SeekBar;->b0:I
+    iget v4, p0, Landroidx/leanback/widget/SeekBar;->k0:I
 
+    .line 82
     .line 83
-    .line 84
     int-to-float v4, v4
 
-    .line 85
-    iget v6, p0, Landroidx/leanback/widget/SeekBar;->c0:I
+    .line 84
+    iget v6, p0, Landroidx/leanback/widget/SeekBar;->l0:I
 
+    .line 85
     .line 86
-    .line 87
     int-to-float v6, v6
 
-    .line 88
+    .line 87
     div-float/2addr v4, v6
 
+    .line 88
+    mul-float/2addr v4, v1
+
     .line 89
-    mul-float v4, v4, v1
+    iget v1, v7, Landroid/graphics/RectF;->right:F
 
     .line 90
     .line 91
-    iget v1, v7, Landroid/graphics/RectF;->right:F
+    iget v6, p0, Landroidx/leanback/widget/SeekBar;->o0:I
 
     .line 92
     .line 93
-    iget v6, p0, Landroidx/leanback/widget/SeekBar;->f0:I
+    div-int/lit8 v6, v6, 0x2
 
     .line 94
     .line 95
-    div-int/lit8 v6, v6, 0x2
-
-    .line 96
-    .line 97
     int-to-float v6, v6
 
-    .line 98
+    .line 96
     add-float/2addr v6, v4
 
+    .line 97
+    iget-object v4, p0, Landroidx/leanback/widget/SeekBar;->d0:Landroid/graphics/RectF;
+
+    .line 98
     .line 99
-    iget-object v4, p0, Landroidx/leanback/widget/SeekBar;->R:Landroid/graphics/RectF;
+    invoke-virtual {v4, v1, v5, v6, v0}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 100
     .line 101
-    invoke-virtual {v4, v1, v5, v6, v0}, Landroid/graphics/RectF;->set(FFFF)V
-
     .line 102
-    .line 103
-    .line 104
     float-to-int v0, v3
 
-    .line 105
+    .line 103
     add-int/2addr v2, v0
 
+    .line 104
+    iput v2, p0, Landroidx/leanback/widget/SeekBar;->m0:I
+
+    .line 105
     .line 106
-    iput v2, p0, Landroidx/leanback/widget/SeekBar;->d0:I
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 107
     .line 108
-    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
-
     .line 109
-    .line 110
-    .line 111
     return-void
 .end method
 
 .method public getAccessibilityClassName()Ljava/lang/CharSequence;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-class v0, Landroid/widget/SeekBar;
+    const-class p0, Landroid/widget/SeekBar;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getMax()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/SeekBar;->c0:I
+    iget p0, p0, Landroidx/leanback/widget/SeekBar;->l0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getProgress()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/SeekBar;->a0:I
+    iget p0, p0, Landroidx/leanback/widget/SeekBar;->j0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getSecondProgress()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/SeekBar;->b0:I
+    iget p0, p0, Landroidx/leanback/widget/SeekBar;->k0:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getSecondaryProgressColor()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SeekBar;->T:Landroid/graphics/Paint;
+    iget-object p0, p0, Landroidx/leanback/widget/SeekBar;->f0:Landroid/graphics/Paint;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/graphics/Paint;->getColor()I
+    invoke-virtual {p0}, Landroid/graphics/Paint;->getColor()I
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result p0
 
     .line 7
-    return v0
+    return p0
 .end method
 
 .method public final onDraw(Landroid/graphics/Canvas;)V
@@ -600,7 +598,7 @@
 
     .line 9
     .line 10
-    iget v0, p0, Landroidx/leanback/widget/SeekBar;->e0:I
+    iget v0, p0, Landroidx/leanback/widget/SeekBar;->n0:I
 
     .line 11
     .line 12
@@ -608,7 +606,7 @@
 
     .line 13
     :cond_0
-    iget v0, p0, Landroidx/leanback/widget/SeekBar;->f0:I
+    iget v0, p0, Landroidx/leanback/widget/SeekBar;->o0:I
 
     .line 14
     .line 15
@@ -620,11 +618,11 @@
     int-to-float v0, v0
 
     .line 18
-    iget-object v1, p0, Landroidx/leanback/widget/SeekBar;->V:Landroid/graphics/Paint;
+    iget-object v1, p0, Landroidx/leanback/widget/SeekBar;->h0:Landroid/graphics/Paint;
 
     .line 19
     .line 20
-    iget-object v2, p0, Landroidx/leanback/widget/SeekBar;->S:Landroid/graphics/RectF;
+    iget-object v2, p0, Landroidx/leanback/widget/SeekBar;->e0:Landroid/graphics/RectF;
 
     .line 21
     .line 22
@@ -633,7 +631,7 @@
     .line 23
     .line 24
     .line 25
-    iget-object v1, p0, Landroidx/leanback/widget/SeekBar;->R:Landroid/graphics/RectF;
+    iget-object v1, p0, Landroidx/leanback/widget/SeekBar;->d0:Landroid/graphics/RectF;
 
     .line 26
     .line 27
@@ -653,7 +651,7 @@
 
     .line 34
     .line 35
-    iget-object v2, p0, Landroidx/leanback/widget/SeekBar;->T:Landroid/graphics/Paint;
+    iget-object v2, p0, Landroidx/leanback/widget/SeekBar;->f0:Landroid/graphics/Paint;
 
     .line 36
     .line 37
@@ -663,11 +661,11 @@
     .line 39
     .line 40
     :cond_1
-    iget-object v1, p0, Landroidx/leanback/widget/SeekBar;->Q:Landroid/graphics/RectF;
+    iget-object v1, p0, Landroidx/leanback/widget/SeekBar;->c0:Landroid/graphics/RectF;
 
     .line 41
     .line 42
-    iget-object v2, p0, Landroidx/leanback/widget/SeekBar;->U:Landroid/graphics/Paint;
+    iget-object v2, p0, Landroidx/leanback/widget/SeekBar;->g0:Landroid/graphics/Paint;
 
     .line 43
     .line 44
@@ -676,7 +674,7 @@
     .line 45
     .line 46
     .line 47
-    iget v1, p0, Landroidx/leanback/widget/SeekBar;->d0:I
+    iget v1, p0, Landroidx/leanback/widget/SeekBar;->m0:I
 
     .line 48
     .line 49
@@ -698,11 +696,11 @@
     int-to-float v2, v2
 
     .line 57
-    iget-object v3, p0, Landroidx/leanback/widget/SeekBar;->W:Landroid/graphics/Paint;
+    iget-object p0, p0, Landroidx/leanback/widget/SeekBar;->i0:Landroid/graphics/Paint;
 
     .line 58
     .line 59
-    invoke-virtual {p1, v1, v2, v0, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
+    invoke-virtual {p1, v1, v2, v0, p0}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     .line 60
     .line 61
@@ -744,7 +742,7 @@
     return-void
 .end method
 
-.method public setAccessibilitySeekListener(Lu16;)V
+.method public setAccessibilitySeekListener(Lkn6;)V
     .locals 0
 
     .line 1
@@ -755,7 +753,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/leanback/widget/SeekBar;->g0:I
+    iput p1, p0, Landroidx/leanback/widget/SeekBar;->p0:I
 
     .line 2
     .line 3
@@ -771,7 +769,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/leanback/widget/SeekBar;->e0:I
+    iput p1, p0, Landroidx/leanback/widget/SeekBar;->n0:I
 
     .line 2
     .line 3
@@ -787,7 +785,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/leanback/widget/SeekBar;->f0:I
+    iput p1, p0, Landroidx/leanback/widget/SeekBar;->o0:I
 
     .line 2
     .line 3
@@ -803,7 +801,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/leanback/widget/SeekBar;->c0:I
+    iput p1, p0, Landroidx/leanback/widget/SeekBar;->l0:I
 
     .line 2
     .line 3
@@ -819,7 +817,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/SeekBar;->c0:I
+    iget v0, p0, Landroidx/leanback/widget/SeekBar;->l0:I
 
     .line 2
     .line 3
@@ -843,7 +841,7 @@
     .line 10
     :cond_1
     :goto_0
-    iput p1, p0, Landroidx/leanback/widget/SeekBar;->a0:I
+    iput p1, p0, Landroidx/leanback/widget/SeekBar;->j0:I
 
     .line 11
     .line 12
@@ -856,14 +854,14 @@
 .end method
 
 .method public setProgressColor(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SeekBar;->U:Landroid/graphics/Paint;
+    iget-object p0, p0, Landroidx/leanback/widget/SeekBar;->g0:Landroid/graphics/Paint;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
+    invoke-virtual {p0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 4
     .line 5
@@ -875,7 +873,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/leanback/widget/SeekBar;->c0:I
+    iget v0, p0, Landroidx/leanback/widget/SeekBar;->l0:I
 
     .line 2
     .line 3
@@ -899,7 +897,7 @@
     .line 10
     :cond_1
     :goto_0
-    iput p1, p0, Landroidx/leanback/widget/SeekBar;->b0:I
+    iput p1, p0, Landroidx/leanback/widget/SeekBar;->k0:I
 
     .line 11
     .line 12
@@ -912,14 +910,14 @@
 .end method
 
 .method public setSecondaryProgressColor(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/leanback/widget/SeekBar;->T:Landroid/graphics/Paint;
+    iget-object p0, p0, Landroidx/leanback/widget/SeekBar;->f0:Landroid/graphics/Paint;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
+    invoke-virtual {p0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 4
     .line 5

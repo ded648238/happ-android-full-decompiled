@@ -1,125 +1,92 @@
-.class public final enum Lte3;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lte3;
+.super Ltj2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lyi2;
 
 
 # static fields
-.field public static final enum Q:Lte3;
-
-.field public static final enum R:Lte3;
-
-.field public static final synthetic S:[Lte3;
+.field public static final X:Lte3;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 6
 
     .line 1
     new-instance v0, Lte3;
 
     .line 2
     .line 3
-    const-string v1, "Ltr"
+    const-string v4, "onAwaitInternalProcessResFunc(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/4 v5, 0x0
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v1, 0x3
 
     .line 7
+    const-class v2, Lve3;
+
     .line 8
     .line 9
-    sput-object v0, Lte3;->Q:Lte3;
+    const-string v3, "onAwaitInternalProcessResFunc"
 
     .line 10
     .line 11
-    new-instance v1, Lte3;
+    invoke-direct/range {v0 .. v5}, Ltj2;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 12
     .line 13
-    const-string v3, "Rtl"
-
     .line 14
+    sput-object v0, Lte3;->X:Lte3;
+
     .line 15
-    const/4 v4, 0x1
-
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lte3;->R:Lte3;
-
-    .line 20
-    .line 21
-    const/4 v3, 0x2
-
-    .line 22
-    new-array v3, v3, [Lte3;
-
-    .line 23
-    .line 24
-    aput-object v0, v3, v2
-
-    .line 25
-    .line 26
-    aput-object v1, v3, v4
-
-    .line 27
-    .line 28
-    sput-object v3, Lte3;->S:[Lte3;
-
-    .line 29
-    .line 30
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lte3;
-    .locals 1
+
+# virtual methods
+.method public final w(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    const-class v0, Lte3;
+    check-cast p1, Lve3;
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    sget-object p0, Lve3;->X:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     .line 4
     .line 5
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 6
-    move-result-object p0
-
     .line 7
-    check-cast p0, Lte3;
-
     .line 8
+    instance-of p0, p3, Lvv0;
+
     .line 9
-    return-object p0
-.end method
+    .line 10
+    if-nez p0, :cond_0
 
-.method public static values()[Lte3;
-    .locals 1
+    .line 11
+    .line 12
+    return-object p3
 
-    .line 1
-    sget-object v0, Lte3;->S:[Lte3;
+    .line 13
+    :cond_0
+    check-cast p3, Lvv0;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    .line 14
+    .line 15
+    iget-object p0, p3, Lvv0;->a:Ljava/lang/Throwable;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lte3;
-
-    .line 8
-    .line 9
-    return-object v0
+    .line 16
+    .line 17
+    throw p0
 .end method

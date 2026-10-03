@@ -1,12 +1,35 @@
 package defpackage;
 
-import android.window.OnBackInvokedCallback;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class jz3 extends qm5 implements qo3 {
+    public final /* synthetic */ int X;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class jz3 extends hz3 {
-    @Override // defpackage.hz3
-    public final OnBackInvokedCallback a(gz3 gz3Var) {
-        return new iz3(this, gz3Var);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ jz3(int i, int i2, Class cls, Object obj, String str, String str2) {
+        super(obj, cls, str, str2, i);
+        this.X = i2;
+    }
+
+    @Override // defpackage.pb0
+    public final en3 P() {
+        return p06.a.f(this);
+    }
+
+    @Override // defpackage.uo3
+    public final po3 b() {
+        return ((qo3) S()).b();
+    }
+
+    @Override // defpackage.qo3
+    public final Object get() {
+        switch (this.X) {
+        }
+        return ((h57) this.receiver).getValue();
+    }
+
+    @Override // defpackage.ji2
+    public final Object invoke() {
+        return get();
     }
 }

@@ -1,6 +1,6 @@
 .class public final Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;
-.super Ldn3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lf44;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -10,7 +10,7 @@
     }
     d2 = {
         "Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;",
-        "Ldn3;",
+        "Lf44;",
         "Landroid/content/Context;",
         "context",
         "Landroidx/work/WorkerParameters;",
@@ -21,8 +21,8 @@
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x8,
         0x0
     }
     xi = 0x30
@@ -34,7 +34,7 @@
 
 .field public final f:Landroidx/work/WorkerParameters;
 
-.field public final g:Lgn3;
+.field public final g:Lj44;
 
 .field public h:Landroid/content/ComponentName;
 
@@ -54,7 +54,7 @@
     .line 5
     .line 6
     .line 7
-    invoke-direct {p0, p1, p2}, Ldn3;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
+    invoke-direct {p0, p1, p2}, Lf44;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
 
     .line 8
     .line 9
@@ -67,7 +67,7 @@
 
     .line 13
     .line 14
-    new-instance v0, Lgn3;
+    new-instance v0, Lj44;
 
     .line 15
     .line 16
@@ -75,12 +75,12 @@
 
     .line 17
     .line 18
-    invoke-direct {v0, p1, p2}, Lgn3;-><init>(Landroid/content/Context;Ljava/util/concurrent/Executor;)V
+    invoke-direct {v0, p1, p2}, Lj44;-><init>(Landroid/content/Context;Ljava/util/concurrent/Executor;)V
 
     .line 19
     .line 20
     .line 21
-    iput-object v0, p0, Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;->g:Lgn3;
+    iput-object v0, p0, Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;->g:Lj44;
 
     .line 22
     .line 23
@@ -89,45 +89,7 @@
 
 
 # virtual methods
-.method public final b()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;->h:Landroid/content/ComponentName;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    new-instance v1, Lyx;
-
-    .line 6
-    .line 7
-    const/16 v2, 0xf
-
-    .line 8
-    .line 9
-    invoke-direct {v1, v2, p0}, Lyx;-><init>(ILjava/lang/Object;)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object v2, p0, Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;->g:Lgn3;
-
-    .line 13
-    .line 14
-    invoke-virtual {v2, v0, v1}, Lgn3;->a(Landroid/content/ComponentName;Lfh5;)Lxt6;
-
-    .line 15
-    .line 16
-    .line 17
-    :cond_0
-    return-void
-.end method
-
-.method public final c()Lwm3;
+.method public final a()Ly34;
     .locals 4
 
     .line 1
@@ -143,7 +105,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Lzu7;->V(Landroid/content/Context;)Lzu7;
+    invoke-static {v0}, Lkq8;->P(Landroid/content/Context;)Lkq8;
 
     .line 8
     .line 9
@@ -156,15 +118,15 @@
     .line 12
     .line 13
     .line 14
-    iget-object v0, v0, Lzu7;->n:Lpv6;
+    iget-object v0, v0, Lkq8;->o0:Lqn6;
 
     .line 15
     .line 16
-    iget-object v0, v0, Lpv6;->c:Ljava/lang/Object;
+    iget-object v0, v0, Lqn6;->Z:Ljava/lang/Object;
 
     .line 17
     .line 18
-    check-cast v0, Luw0;
+    check-cast v0, Lb41;
 
     .line 19
     .line 20
@@ -173,36 +135,149 @@
     .line 21
     .line 22
     .line 23
-    sget-object v1, Lyt6;->a:Lvv0;
+    sget-object v1, Lol7;->a:Lx21;
 
     .line 24
     .line 25
-    new-instance v1, Lcy;
+    new-instance v1, Lw16;
 
     .line 26
     .line 27
     const/4 v2, 0x0
 
     .line 28
-    const/16 v3, 0x10
+    const/4 v3, 0x0
 
     .line 29
-    .line 30
-    invoke-direct {v1, p0, v2, v3}, Lcy;-><init>(Ljava/lang/Object;Lyv0;I)V
+    invoke-direct {v1, p0, v2, p0, v3}, Lw16;-><init>(Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;Lb31;Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;I)V
 
+    .line 30
     .line 31
     .line 32
+    const/4 p0, 0x1
+
     .line 33
-    const/4 v2, 0x1
+    invoke-static {v0, p0, v1}, Lol7;->a(Lz31;ZLxi2;)Lnl7;
 
     .line 34
-    invoke-static {v0, v2, v1}, Lyt6;->a(Lsw0;ZLu72;)Lxt6;
-
     .line 35
     .line 36
+    move-result-object p0
+
     .line 37
+    return-object p0
+.end method
+
+.method public final b()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;->h:Landroid/content/ComponentName;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v1, Lv31;
+
+    .line 6
+    .line 7
+    const/16 v2, 0x15
+
+    .line 8
+    .line 9
+    invoke-direct {v1, v2, p0}, Lv31;-><init>(ILjava/lang/Object;)V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object p0, p0, Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;->g:Lj44;
+
+    .line 13
+    .line 14
+    invoke-virtual {p0, v0, v1}, Lj44;->a(Landroid/content/ComponentName;Lr16;)Lnl7;
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_0
+    return-void
+.end method
+
+.method public final c()Ly34;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;->e:Landroid/content/Context;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 38
-    return-object v0
+    .line 7
+    invoke-static {v0}, Lkq8;->P(Landroid/content/Context;)Lkq8;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object v0, v0, Lkq8;->o0:Lqn6;
+
+    .line 15
+    .line 16
+    iget-object v0, v0, Lqn6;->Z:Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    check-cast v0, Lb41;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 21
+    .line 22
+    .line 23
+    sget-object v1, Lol7;->a:Lx21;
+
+    .line 24
+    .line 25
+    new-instance v1, Lw16;
+
+    .line 26
+    .line 27
+    const/4 v2, 0x0
+
+    .line 28
+    const/4 v3, 0x1
+
+    .line 29
+    invoke-direct {v1, p0, v2, p0, v3}, Lw16;-><init>(Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;Lb31;Landroidx/work/multiprocess/RemoteListenableDelegatingWorker;I)V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-static {v0, v3, v1}, Lol7;->a(Lz31;ZLxi2;)Lnl7;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    return-object p0
 .end method

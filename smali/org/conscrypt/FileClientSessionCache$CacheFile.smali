@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/FileClientSessionCache$CacheFile;
 .super Ljava/io/File;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -48,7 +48,7 @@
 
 # virtual methods
 .method public compareTo(Ljava/io/File;)I
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-virtual {p0}, Lorg/conscrypt/FileClientSessionCache$CacheFile;->lastModified()J
@@ -74,11 +74,11 @@
 
     .line 11
     .line 12
-    cmp-long v4, v0, v2
+    cmp-long v0, v0, v2
 
     .line 13
     .line 14
-    if-nez v4, :cond_0
+    if-nez v0, :cond_0
 
     .line 15
     .line 16
@@ -87,28 +87,28 @@
     .line 17
     .line 18
     .line 19
-    move-result p1
+    move-result p0
 
     .line 20
-    return p1
+    return p0
 
     .line 21
     :cond_0
-    if-gez v4, :cond_1
+    if-gez v0, :cond_1
 
     .line 22
     .line 23
-    const/4 p1, -0x1
+    const/4 p0, -0x1
 
     .line 24
-    return p1
+    return p0
 
     .line 25
     :cond_1
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 26
-    return p1
+    return p0
 .end method
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
@@ -119,13 +119,13 @@
 
     invoke-virtual {p0, p1}, Lorg/conscrypt/FileClientSessionCache$CacheFile;->compareTo(Ljava/io/File;)I
 
-    move-result p1
+    move-result p0
 
-    return p1
+    return p0
 .end method
 
 .method public lastModified()J
-    .locals 5
+    .locals 4
 
     .line 1
     iget-wide v0, p0, Lorg/conscrypt/FileClientSessionCache$CacheFile;->lastModified:J
@@ -136,11 +136,11 @@
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 6
     .line 7
-    if-nez v4, :cond_0
+    if-nez v2, :cond_0
 
     .line 8
     .line 9

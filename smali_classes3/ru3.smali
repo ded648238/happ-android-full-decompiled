@@ -1,71 +1,60 @@
 .class public final Lru3;
-.super Law0;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lm61;
 
 
 # instance fields
-.field public synthetic T:Ljava/lang/Object;
-
-.field public U:I
-
-.field public final synthetic V:Ll;
+.field public final X:Lpq;
 
 
 # direct methods
-.method public constructor <init>(Ll;Lyv0;)V
+.method public constructor <init>(Lpq;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lru3;->V:Ll;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Law0;-><init>(Lyv0;)V
-
     .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 5
     .line 6
+    .line 7
+    iput-object p1, p0, Lru3;->X:Lpq;
+
+    .line 8
+    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final d()V
+    .locals 0
 
     .line 1
-    iput-object p1, p0, Lru3;->T:Ljava/lang/Object;
+    return-void
+.end method
+
+.method public final l()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final r()Lzh8;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lru3;->X:Lpq;
 
     .line 2
     .line 3
-    iget p1, p0, Lru3;->U:I
-
-    .line 4
-    .line 5
-    const/high16 v0, -0x80000000
-
-    .line 6
-    .line 7
-    or-int/2addr p1, v0
-
-    .line 8
-    iput p1, p0, Lru3;->U:I
-
-    .line 9
-    .line 10
-    iget-object p1, p0, Lru3;->V:Ll;
-
-    .line 11
-    .line 12
-    const/4 v0, 0x0
-
-    .line 13
-    invoke-virtual {p1, v0, p0}, Ll;->a(Li02;Lyv0;)Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    return-object p1
+    return-object p0
 .end method

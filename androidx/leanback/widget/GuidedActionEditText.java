@@ -10,23 +10,23 @@ import android.view.MotionEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.EditText;
 import android.widget.TextView;
-import defpackage.b15;
-import defpackage.fm2;
-import defpackage.rd2;
-import defpackage.sd2;
+import defpackage.bv7;
+import defpackage.cq2;
+import defpackage.dq2;
+import defpackage.zz2;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class GuidedActionEditText extends EditText {
-    public final Drawable Q;
-    public final sd2 R;
+    public final Drawable c0;
+    public final dq2 d0;
 
     public GuidedActionEditText(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.Q = getBackground();
-        sd2 sd2Var = new sd2();
-        this.R = sd2Var;
-        setBackground(sd2Var);
+        this.c0 = getBackground();
+        dq2 dq2Var = new dq2();
+        this.d0 = dq2Var;
+        setBackground(dq2Var);
     }
 
     @Override // android.widget.TextView, android.view.View
@@ -38,9 +38,9 @@ public class GuidedActionEditText extends EditText {
     public final void onFocusChanged(boolean z, int i, Rect rect) {
         super.onFocusChanged(z, i, rect);
         if (z) {
-            setBackground(this.Q);
+            setBackground(this.c0);
         } else {
-            setBackground(this.R);
+            setBackground(this.d0);
         }
         if (z) {
             return;
@@ -64,16 +64,16 @@ public class GuidedActionEditText extends EditText {
 
     @Override // android.widget.TextView
     public void setCustomSelectionActionModeCallback(ActionMode.Callback callback) {
-        super.setCustomSelectionActionModeCallback(b15.X(callback, this));
+        super.setCustomSelectionActionModeCallback(bv7.l(callback, this));
     }
 
     public GuidedActionEditText(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, R.attr.editTextStyle);
     }
 
-    public void setImeKeyListener(fm2 fm2Var) {
+    public void setImeKeyListener(zz2 zz2Var) {
     }
 
-    public void setOnAutofillListener(rd2 rd2Var) {
+    public void setOnAutofillListener(cq2 cq2Var) {
     }
 }

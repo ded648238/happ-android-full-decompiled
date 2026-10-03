@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;
 .super Ljava/io/InputStream;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -304,7 +304,7 @@
 .end method
 
 .method private isHandshakeFinished()Z
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->this$0:Lorg/conscrypt/ConscryptEngineSocket;
@@ -323,44 +323,44 @@
 
     .line 8
     :try_start_0
-    iget-object v1, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->this$0:Lorg/conscrypt/ConscryptEngineSocket;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->this$0:Lorg/conscrypt/ConscryptEngineSocket;
 
     .line 9
     .line 10
-    invoke-static {v1}, Lorg/conscrypt/ConscryptEngineSocket;->access$900(Lorg/conscrypt/ConscryptEngineSocket;)I
+    invoke-static {p0}, Lorg/conscrypt/ConscryptEngineSocket;->access$900(Lorg/conscrypt/ConscryptEngineSocket;)I
 
     .line 11
     .line 12
     .line 13
-    move-result v1
+    move-result p0
 
     .line 14
-    const/4 v2, 0x2
+    const/4 v1, 0x2
 
     .line 15
-    if-le v1, v2, :cond_0
+    if-le p0, v1, :cond_0
 
     .line 16
     .line 17
-    const/4 v1, 0x1
+    const/4 p0, 0x1
 
     .line 18
     goto :goto_0
 
     .line 19
     :cond_0
-    const/4 v1, 0x0
+    const/4 p0, 0x0
 
     .line 20
     :goto_0
     monitor-exit v0
 
     .line 21
-    return v1
+    return p0
 
     .line 22
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 23
     monitor-exit v0
@@ -368,14 +368,14 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 24
-    throw v1
+    throw p0
 .end method
 
 .method private isHandshaking(Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;)Z
-    .locals 2
+    .locals 1
 
     .line 1
-    sget-object v0, Lorg/conscrypt/ConscryptEngineSocket$3;->$SwitchMap$javax$net$ssl$SSLEngineResult$HandshakeStatus:[I
+    sget-object p0, Lorg/conscrypt/ConscryptEngineSocket$3;->$SwitchMap$javax$net$ssl$SSLEngineResult$HandshakeStatus:[I
 
     .line 2
     .line 3
@@ -387,39 +387,39 @@
     move-result p1
 
     .line 7
-    aget p1, v0, p1
+    aget p0, p0, p1
 
     .line 8
     .line 9
-    const/4 v0, 0x1
+    const/4 p1, 0x1
 
     .line 10
-    if-eq p1, v0, :cond_0
+    if-eq p0, p1, :cond_0
 
     .line 11
     .line 12
-    const/4 v1, 0x2
+    const/4 v0, 0x2
 
     .line 13
-    if-eq p1, v1, :cond_0
+    if-eq p0, v0, :cond_0
 
     .line 14
     .line 15
-    const/4 v1, 0x3
+    const/4 v0, 0x3
 
     .line 16
-    if-eq p1, v1, :cond_0
+    if-eq p0, v0, :cond_0
 
     .line 17
     .line 18
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 19
-    return p1
+    return p0
 
     .line 20
     :cond_0
-    return v0
+    return p1
 .end method
 
 .method private processDataFromSocket([BII)I
@@ -487,11 +487,11 @@
     move-result p3
 
     .line 30
-    iget-object v0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->fromEngine:Ljava/nio/ByteBuffer;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->fromEngine:Ljava/nio/ByteBuffer;
 
     .line 31
     .line 32
-    invoke-virtual {v0, p1, p2, p3}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
+    invoke-virtual {p0, p1, p2, p3}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
     .line 33
     .line 34
@@ -636,10 +636,10 @@
 
     .line 103
     .line 104
-    const/4 p1, 0x3
+    const/4 p0, 0x3
 
     .line 105
-    if-ne v2, p1, :cond_2
+    if-ne v2, p0, :cond_2
 
     .line 106
     .line 107
@@ -647,7 +647,7 @@
 
     .line 108
     :cond_2
-    new-instance p1, Ljavax/net/ssl/SSLException;
+    new-instance p0, Ljavax/net/ssl/SSLException;
 
     .line 109
     .line 110
@@ -656,41 +656,41 @@
     .line 111
     .line 112
     .line 113
-    move-result-object p2
+    move-result-object p1
 
     .line 114
-    new-instance p3, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
     .line 115
     .line 116
-    const-string v0, "Unexpected engine result "
+    const-string p3, "Unexpected engine result "
 
     .line 117
     .line 118
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 119
     .line 120
     .line 121
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 122
     .line 123
     .line 124
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 125
     .line 126
     .line 127
-    move-result-object p2
+    move-result-object p1
 
     .line 128
-    invoke-direct {p1, p2}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
 
     .line 129
     .line 130
     .line 131
-    throw p1
+    throw p0
 
     .line 132
     :cond_3
@@ -739,63 +739,108 @@
 
     .line 154
     :cond_4
-    const/4 v3, 0x0
+    move v3, v5
 
     .line 155
     goto :goto_0
 
     .line 156
     :cond_5
-    invoke-virtual {v1}, Ljavax/net/ssl/SSLEngineResult;->bytesProduced()I
+    iget-object v0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->fromSocket:Ljava/nio/ByteBuffer;
 
     .line 157
     .line 158
+    invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
+
     .line 159
+    .line 160
+    .line 161
     move-result v0
 
-    .line 160
-    if-nez v0, :cond_4
-
-    .line 161
     .line 162
-    :goto_0
-    if-nez v3, :cond_6
+    iget-object v2, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->fromSocket:Ljava/nio/ByteBuffer;
 
     .line 163
     .line 164
-    invoke-virtual {v1}, Ljavax/net/ssl/SSLEngineResult;->bytesProduced()I
+    invoke-virtual {v2}, Ljava/nio/Buffer;->capacity()I
 
     .line 165
     .line 166
     .line 167
-    move-result v0
+    move-result v2
 
     .line 168
-    if-nez v0, :cond_6
+    if-eq v0, v2, :cond_7
 
     .line 169
     .line 170
-    return v5
+    invoke-virtual {v1}, Ljavax/net/ssl/SSLEngineResult;->bytesProduced()I
 
     .line 171
+    .line 172
+    .line 173
+    move-result v0
+
+    .line 174
+    if-nez v0, :cond_4
+
+    .line 175
+    .line 176
+    :goto_0
+    if-nez v3, :cond_6
+
+    .line 177
+    .line 178
+    invoke-virtual {v1}, Ljavax/net/ssl/SSLEngineResult;->bytesProduced()I
+
+    .line 179
+    .line 180
+    .line 181
+    move-result v0
+
+    .line 182
+    if-nez v0, :cond_6
+
+    .line 183
+    .line 184
+    return v5
+
+    .line 185
     :cond_6
     if-eqz v3, :cond_0
 
-    .line 172
-    .line 173
+    .line 186
+    .line 187
     invoke-direct {p0}, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->readFromSocket()I
 
-    .line 174
-    .line 175
-    .line 176
+    .line 188
+    .line 189
+    .line 190
     move-result v0
 
-    .line 177
+    .line 191
     if-ne v0, v4, :cond_0
 
-    .line 178
-    .line 179
+    .line 192
+    .line 193
     return v4
+
+    .line 194
+    :cond_7
+    new-instance p0, Ljavax/net/ssl/SSLException;
+
+    .line 195
+    .line 196
+    const-string p1, "Encrypted packet exceeds buffer capacity"
+
+    .line 197
+    .line 198
+    invoke-direct {p0, p1}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
+
+    .line 199
+    .line 200
+    .line 201
+    throw p0
 .end method
 
 .method private readFromSocket()I
@@ -870,14 +915,14 @@
 
     .line 30
     .line 31
-    iget-object v2, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->fromSocket:Ljava/nio/ByteBuffer;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->fromSocket:Ljava/nio/ByteBuffer;
 
     .line 32
     .line 33
     add-int/2addr v0, v1
 
     .line 34
-    invoke-virtual {v2, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {p0, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
     :try_end_0
     .catch Ljava/io/EOFException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -889,10 +934,10 @@
 
     .line 38
     :catch_0
-    const/4 v0, -0x1
+    const/4 p0, -0x1
 
     .line 39
-    return v0
+    return p0
 .end method
 
 .method private readUntilDataAvailable([BII)I
@@ -921,7 +966,7 @@
 .end method
 
 .method private renegotiate()V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -945,11 +990,11 @@
 
     .line 8
     :try_start_0
-    iget-object v1, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->this$0:Lorg/conscrypt/ConscryptEngineSocket;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->this$0:Lorg/conscrypt/ConscryptEngineSocket;
 
     .line 9
     .line 10
-    invoke-static {v1}, Lorg/conscrypt/ConscryptEngineSocket;->access$1100(Lorg/conscrypt/ConscryptEngineSocket;)V
+    invoke-static {p0}, Lorg/conscrypt/ConscryptEngineSocket;->access$1100(Lorg/conscrypt/ConscryptEngineSocket;)V
 
     .line 11
     .line 12
@@ -961,7 +1006,7 @@
 
     .line 15
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 16
     monitor-exit v0
@@ -969,13 +1014,13 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 17
-    throw v1
+    throw p0
 .end method
 
 
 # virtual methods
 .method public available()I
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1005,26 +1050,26 @@
     .line 10
     .line 11
     .line 12
-    iget-object v1, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->fromEngine:Ljava/nio/ByteBuffer;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->fromEngine:Ljava/nio/ByteBuffer;
 
     .line 13
     .line 14
-    invoke-virtual {v1}, Ljava/nio/Buffer;->remaining()I
+    invoke-virtual {p0}, Ljava/nio/Buffer;->remaining()I
 
     .line 15
     .line 16
     .line 17
-    move-result v1
+    move-result p0
 
     .line 18
     monitor-exit v0
 
     .line 19
-    return v1
+    return p0
 
     .line 20
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 21
     monitor-exit v0
@@ -1032,11 +1077,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 22
-    throw v1
+    throw p0
 .end method
 
 .method public close()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1044,11 +1089,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->this$0:Lorg/conscrypt/ConscryptEngineSocket;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->this$0:Lorg/conscrypt/ConscryptEngineSocket;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lorg/conscrypt/ConscryptEngineSocket;->close()V
+    invoke-virtual {p0}, Lorg/conscrypt/ConscryptEngineSocket;->close()V
 
     .line 4
     .line 5
@@ -1118,7 +1163,7 @@
 
     .line 24
     :catchall_0
-    move-exception v0
+    move-exception p0
 
     .line 25
     goto :goto_0
@@ -1129,44 +1174,44 @@
 
     .line 27
     .line 28
-    iget-object v0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->singleByte:[B
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->singleByte:[B
 
     .line 29
     .line 30
-    aget-byte v0, v0, v4
+    aget-byte p0, p0, v4
 
     .line 31
     .line 32
-    and-int/lit16 v0, v0, 0xff
+    and-int/lit16 p0, p0, 0xff
 
     .line 33
     .line 34
     monitor-exit v1
 
     .line 35
-    return v0
+    return p0
 
     .line 36
     :cond_1
-    new-instance v3, Ljavax/net/ssl/SSLException;
+    new-instance p0, Ljavax/net/ssl/SSLException;
 
     .line 37
     .line 38
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 39
     .line 40
-    invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 41
     .line 42
     .line 43
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 44
     .line 45
     .line 46
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 47
     .line 48
@@ -1174,12 +1219,12 @@
     move-result-object v0
 
     .line 50
-    invoke-direct {v3, v0}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
 
     .line 51
     .line 52
     .line 53
-    throw v3
+    throw p0
 
     .line 54
     :goto_0
@@ -1188,7 +1233,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 55
-    throw v0
+    throw p0
 .end method
 
 .method public read([B)I
@@ -1217,21 +1262,21 @@
 
     invoke-virtual {p0, p1, v2, v1}, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->read([BII)I
 
-    move-result p1
+    move-result p0
 
     monitor-exit v0
 
-    return p1
+    return p0
 
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 59
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    throw p1
+    throw p0
 .end method
 
 .method public read([BII)I
@@ -1249,9 +1294,9 @@
 
     if-nez p3, :cond_0
 
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
-    return p1
+    return p0
 
     .line 61
     :cond_0
@@ -1263,25 +1308,25 @@
     :try_start_0
     invoke-direct {p0, p1, p2, p3}, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->readUntilDataAvailable([BII)I
 
-    move-result p1
+    move-result p0
 
     monitor-exit v0
 
-    return p1
+    return p0
 
     :catchall_0
-    move-exception p1
+    move-exception p0
 
     .line 63
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    throw p1
+    throw p0
 .end method
 
 .method public release()V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->readLock:Ljava/lang/Object;
@@ -1292,15 +1337,15 @@
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->allocatedBuffer:Lorg/conscrypt/AllocatedBuffer;
+    iget-object p0, p0, Lorg/conscrypt/ConscryptEngineSocket$SSLInputStream;->allocatedBuffer:Lorg/conscrypt/AllocatedBuffer;
 
     .line 5
     .line 6
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    invoke-virtual {v1}, Lorg/conscrypt/AllocatedBuffer;->release()Lorg/conscrypt/AllocatedBuffer;
+    invoke-virtual {p0}, Lorg/conscrypt/AllocatedBuffer;->release()Lorg/conscrypt/AllocatedBuffer;
 
     .line 9
     .line 10
@@ -1309,7 +1354,7 @@
 
     .line 12
     :catchall_0
-    move-exception v1
+    move-exception p0
 
     .line 13
     goto :goto_1
@@ -1329,5 +1374,5 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 17
-    throw v1
+    throw p0
 .end method

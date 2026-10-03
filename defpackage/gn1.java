@@ -1,38 +1,23 @@
 package defpackage;
 
-import android.text.TextUtils;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class gn1 extends d31 {
+    public long c0;
+    public /* synthetic */ Object d0;
+    public final /* synthetic */ u61 e0;
+    public int f0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class gn1 implements en1 {
-    public final /* synthetic */ int Q;
-    public String R;
-
-    public /* synthetic */ gn1(String str, int i) {
-        this.Q = i;
-        this.R = str;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public gn1(u61 u61Var, d31 d31Var) {
+        super(d31Var);
+        this.e0 = u61Var;
     }
 
-    @Override // defpackage.en1
-    public boolean m(CharSequence charSequence, int i, int i2, sd7 sd7Var) {
-        if (!TextUtils.equals(charSequence.subSequence(i, i2), this.R)) {
-            return true;
-        }
-        sd7Var.c = (sd7Var.c & 3) | 4;
-        return false;
-    }
-
-    public String toString() {
-        switch (this.Q) {
-            case 2:
-                return this.R;
-            default:
-                return super.toString();
-        }
-    }
-
-    @Override // defpackage.en1
-    public Object getResult() {
-        return this;
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.d0 = obj;
+        this.f0 |= Integer.MIN_VALUE;
+        return this.e0.m(null, this);
     }
 }

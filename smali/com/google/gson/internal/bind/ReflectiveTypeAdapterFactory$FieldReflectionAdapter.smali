@@ -1,6 +1,6 @@
 .class final Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldReflectionAdapter;
 .super Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -25,20 +25,20 @@
 
 
 # instance fields
-.field public final b:Lag4;
+.field public final b:Llx4;
 
 
 # direct methods
-.method public constructor <init>(Lag4;Lsg5;)V
+.method public constructor <init>(Llx4;La16;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p2}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter;-><init>(Lsg5;)V
+    invoke-direct {p0, p2}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter;-><init>(La16;)V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldReflectionAdapter;->b:Lag4;
+    iput-object p1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldReflectionAdapter;->b:Llx4;
 
     .line 5
     .line 6
@@ -48,22 +48,22 @@
 
 # virtual methods
 .method public final d()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldReflectionAdapter;->b:Lag4;
+    iget-object p0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldReflectionAdapter;->b:Llx4;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lag4;->i()Ljava/lang/Object;
+    invoke-interface {p0}, Llx4;->i()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public final e(Ljava/lang/Object;)Ljava/lang/Object;
@@ -73,19 +73,19 @@
     return-object p1
 .end method
 
-.method public final f(Ljava/lang/Object;Lr23;Lrg5;)V
-    .locals 2
+.method public final f(Ljava/lang/Object;Lxi3;Lz06;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p3, Lrg5;->b:Ljava/lang/reflect/Field;
+    iget-object p0, p3, Lz06;->b:Ljava/lang/reflect/Field;
 
     .line 2
     .line 3
-    iget-object v1, p3, Lrg5;->f:Lcom/google/gson/b;
+    iget-object v0, p3, Lz06;->f:Lcom/google/gson/b;
 
     .line 4
     .line 5
-    invoke-virtual {v1, p2}, Lcom/google/gson/b;->b(Lr23;)Ljava/lang/Object;
+    invoke-virtual {v0, p2}, Lcom/google/gson/b;->b(Lxi3;)Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -97,11 +97,11 @@
 
     .line 10
     .line 11
-    iget-boolean v1, p3, Lrg5;->g:Z
+    iget-boolean v0, p3, Lz06;->g:Z
 
     .line 12
     .line 13
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
     .line 14
     .line 15
@@ -114,7 +114,7 @@
     .line 17
     :cond_1
     :goto_0
-    iget-boolean p3, p3, Lrg5;->h:Z
+    iget-boolean p3, p3, Lz06;->h:Z
 
     .line 18
     .line 19
@@ -122,7 +122,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {v0, p1, p2}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 22
     .line 23
@@ -134,38 +134,34 @@
     const/4 p1, 0x0
 
     .line 26
-    invoke-static {v0, p1}, Lng5;->d(Ljava/lang/reflect/AccessibleObject;Z)Ljava/lang/String;
+    invoke-static {p0, p1}, Lv06;->d(Ljava/lang/reflect/AccessibleObject;Z)Ljava/lang/String;
 
     .line 27
     .line 28
     .line 29
-    move-result-object p1
+    move-result-object p0
 
     .line 30
-    new-instance p2, Lu03;
+    new-instance p1, Lzg3;
 
     .line 31
     .line 32
-    const-string p3, "Cannot set value of \'static final\' "
+    const-string p2, "Cannot set value of \'static final\' "
 
     .line 33
     .line 34
-    invoke-virtual {p3, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 35
     .line 36
     .line 37
-    move-result-object p1
+    move-result-object p0
 
     .line 38
-    const/16 p3, 0x9
+    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     .line 39
     .line 40
-    invoke-direct {p2, p1, p3}, Lio0;-><init>(Ljava/lang/String;I)V
-
     .line 41
-    .line 42
-    .line 43
-    throw p2
+    throw p1
 .end method

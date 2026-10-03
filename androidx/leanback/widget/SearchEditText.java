@@ -4,23 +4,23 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.ActionMode;
 import android.view.KeyEvent;
-import defpackage.j16;
-import defpackage.ma5;
-import defpackage.wm1;
+import defpackage.dv1;
+import defpackage.mu5;
+import defpackage.zm6;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class SearchEditText extends StreamingTextView {
-    public j16 a0;
+    public zm6 j0;
 
     public SearchEditText(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, ma5.TextAppearance_Leanback_SearchTextEdit);
+        this(context, attributeSet, mu5.TextAppearance_Leanback_SearchTextEdit);
     }
 
     @Override // android.widget.TextView, android.view.View
     public final boolean onKeyPreIme(int i, KeyEvent keyEvent) {
-        if (keyEvent.getKeyCode() == 4 && this.a0 != null) {
-            post(new wm1(this));
+        if (keyEvent.getKeyCode() == 4 && this.j0 != null) {
+            post(new dv1(this));
         }
         return super.onKeyPreIme(i, keyEvent);
     }
@@ -35,8 +35,8 @@ public class SearchEditText extends StreamingTextView {
         bringPointIntoView(length());
     }
 
-    public void setOnKeyboardDismissListener(j16 j16Var) {
-        this.a0 = j16Var;
+    public void setOnKeyboardDismissListener(zm6 zm6Var) {
+        this.j0 = zm6Var;
     }
 
     public SearchEditText(Context context, AttributeSet attributeSet, int i) {

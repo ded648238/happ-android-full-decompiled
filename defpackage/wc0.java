@@ -1,32 +1,23 @@
 package defpackage;
 
-import java.util.List;
-import java.util.concurrent.Executor;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class wc0 extends d31 {
+    public sv0 c0;
+    public /* synthetic */ Object d0;
+    public final /* synthetic */ yc0 e0;
+    public int f0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface wc0 {
-    int a();
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public wc0(yc0 yc0Var, d31 d31Var) {
+        super(d31Var);
+        this.e0 = yc0Var;
+    }
 
-    String b();
-
-    mn3 c();
-
-    void d(Executor executor, ga0 ga0Var);
-
-    int e();
-
-    String f();
-
-    int g(int i);
-
-    wc0 getImplementation();
-
-    boolean h();
-
-    zp i();
-
-    List j(int i);
-
-    void k(nb0 nb0Var);
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.d0 = obj;
+        this.f0 |= Integer.MIN_VALUE;
+        return this.e0.g(0L, this);
+    }
 }

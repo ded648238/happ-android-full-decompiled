@@ -1,6 +1,6 @@
 .class public final enum Lsu/happ/proxyutility/dto/enums/InboundAuthType;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -14,7 +14,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0003\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001j\u0002\u0008\u0002j\u0002\u0008\u0003\u00a8\u0006\u0004"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0003\u0008\u0087\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001j\u0002\u0008\u0002j\u0002\u0008\u0003\u00a8\u0006\u0004"
     }
     d2 = {
         "Lsu/happ/proxyutility/dto/enums/InboundAuthType;",
@@ -34,7 +34,7 @@
 
 
 # static fields
-.field private static final synthetic $ENTRIES:Lpp1;
+.field private static final synthetic $ENTRIES:Lmy1;
 
 .field private static final synthetic $VALUES:[Lsu/happ/proxyutility/dto/enums/InboundAuthType;
 
@@ -45,7 +45,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 4
 
     .line 1
     new-instance v0, Lsu/happ/proxyutility/dto/enums/InboundAuthType;
@@ -72,14 +72,14 @@
 
     .line 12
     .line 13
-    const-string v3, "HTTP"
+    const-string v2, "HTTP"
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
@@ -88,38 +88,31 @@
 
     .line 20
     .line 21
-    const/4 v3, 0x2
+    filled-new-array {v0, v1}, [Lsu/happ/proxyutility/dto/enums/InboundAuthType;
 
     .line 22
-    new-array v3, v3, [Lsu/happ/proxyutility/dto/enums/InboundAuthType;
-
     .line 23
     .line 24
-    aput-object v0, v3, v2
+    move-result-object v0
 
     .line 25
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/InboundAuthType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/InboundAuthType;
+
     .line 26
-    aput-object v1, v3, v4
-
     .line 27
+    new-instance v1, Loy1;
+
     .line 28
-    sput-object v3, Lsu/happ/proxyutility/dto/enums/InboundAuthType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/InboundAuthType;
-
     .line 29
-    .line 30
-    new-instance v0, Lrp1;
+    invoke-direct {v1, v0}, Loy1;-><init>([Ljava/lang/Enum;)V
 
+    .line 30
     .line 31
     .line 32
-    invoke-direct {v0, v3}, Lrp1;-><init>([Ljava/lang/Enum;)V
+    sput-object v1, Lsu/happ/proxyutility/dto/enums/InboundAuthType;->$ENTRIES:Lmy1;
 
     .line 33
     .line 34
-    .line 35
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/InboundAuthType;->$ENTRIES:Lpp1;
-
-    .line 36
-    .line 37
     return-void
 .end method
 

@@ -1,20 +1,24 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ny3 {
-    public static my3 a(Object obj, Object obj2) {
-        my3 my3VarB = (my3) obj;
-        my3 my3Var = (my3) obj2;
-        if (!my3Var.isEmpty()) {
-            if (!my3VarB.Q) {
-                my3VarB = my3VarB.b();
-            }
-            my3VarB.a();
-            if (!my3Var.isEmpty()) {
-                my3VarB.putAll(my3Var);
-            }
+import java.util.Comparator;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ny3 implements Comparator {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ ge Y;
+
+    public /* synthetic */ ny3(ge geVar, int i) {
+        this.X = i;
+        this.Y = geVar;
+    }
+
+    @Override // java.util.Comparator
+    public final int compare(Object obj, Object obj2) {
+        int i = this.X;
+        ge geVar = this.Y;
+        switch (i) {
         }
-        return my3VarB;
+        return Integer.valueOf(geVar.h(((nz3) obj2).i)).compareTo(Integer.valueOf(geVar.h(((nz3) obj).i)));
     }
 }

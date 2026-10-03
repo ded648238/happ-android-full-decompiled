@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Hpack$Writer;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -24,11 +24,11 @@
         "headerTableSizeSetting",
         "",
         "useCompression",
-        "Lf50;",
+        "Ll70;",
         "out",
         "<init>",
-        "(IZLf50;)V",
-        "Lbh7;",
+        "(IZLl70;)V",
+        "Lr98;",
         "clearDynamicTable",
         "()V",
         "bytesToRecover",
@@ -48,15 +48,15 @@
         "bits",
         "writeInt",
         "(III)V",
-        "Ly60;",
+        "Lo90;",
         "data",
         "writeByteString",
-        "(Ly60;)V",
+        "(Lo90;)V",
         "resizeHeaderTable",
         "(I)V",
         "I",
         "Z",
-        "Lf50;",
+        "Ll70;",
         "smallestHeaderTableSizeSetting",
         "emitDynamicTableSizeUpdate",
         "maxDynamicTableByteCount",
@@ -93,7 +93,7 @@
 
 .field private nextHeaderIndex:I
 
-.field private final out:Lf50;
+.field private final out:Ll70;
 
 .field private smallestHeaderTableSizeSetting:I
 
@@ -101,7 +101,7 @@
 
 
 # direct methods
-.method public constructor <init>(ILf50;)V
+.method public constructor <init>(ILl70;)V
     .locals 6
 
     .line 33
@@ -119,12 +119,12 @@
 
     move-object v3, p2
 
-    invoke-direct/range {v0 .. v5}, Lokhttp3/internal/http2/Hpack$Writer;-><init>(IZLf50;ILj31;)V
+    invoke-direct/range {v0 .. v5}, Lokhttp3/internal/http2/Hpack$Writer;-><init>(IZLl70;ILib1;)V
 
     return-void
 .end method
 
-.method public constructor <init>(IZLf50;)V
+.method public constructor <init>(IZLl70;)V
     .locals 0
 
     .line 1
@@ -146,7 +146,7 @@
 
     .line 10
     .line 11
-    iput-object p3, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Lf50;
+    iput-object p3, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Ll70;
 
     .line 12
     .line 13
@@ -189,7 +189,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(IZLf50;ILj31;)V
+.method public synthetic constructor <init>(IZLl70;ILib1;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x1
@@ -207,12 +207,12 @@
 
     .line 34
     :cond_1
-    invoke-direct {p0, p1, p2, p3}, Lokhttp3/internal/http2/Hpack$Writer;-><init>(IZLf50;)V
+    invoke-direct {p0, p1, p2, p3}, Lokhttp3/internal/http2/Hpack$Writer;-><init>(IZLl70;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lf50;)V
+.method public constructor <init>(Ll70;)V
     .locals 6
 
     .line 32
@@ -230,7 +230,7 @@
 
     move-object v3, p1
 
-    invoke-direct/range {v0 .. v5}, Lokhttp3/internal/http2/Hpack$Writer;-><init>(IZLf50;ILj31;)V
+    invoke-direct/range {v0 .. v5}, Lokhttp3/internal/http2/Hpack$Writer;-><init>(IZLl70;ILib1;)V
 
     return-void
 .end method
@@ -287,7 +287,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-static {v0, v1}, Lor;->l0([Ljava/lang/Object;Lku0;)V
+    invoke-static {v0, v1}, Lkt;->v0([Ljava/lang/Object;Llf0;)V
 
     .line 5
     .line 6
@@ -718,7 +718,7 @@
     return-void
 .end method
 
-.method public final writeByteString(Ly60;)V
+.method public final writeByteString(Lo90;)V
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -748,7 +748,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {v0, p1}, Lokhttp3/internal/http2/Huffman;->encodedLength(Ly60;)I
+    invoke-virtual {v0, p1}, Lokhttp3/internal/http2/Huffman;->encodedLength(Lo90;)I
 
     .line 13
     .line 14
@@ -756,7 +756,7 @@
     move-result v2
 
     .line 16
-    invoke-virtual {p1}, Ly60;->e()I
+    invoke-virtual {p1}, Lo90;->e()I
 
     .line 17
     .line 18
@@ -768,7 +768,7 @@
 
     .line 21
     .line 22
-    new-instance v2, Lf50;
+    new-instance v2, Ll70;
 
     .line 23
     .line 24
@@ -777,16 +777,16 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v0, p1, v2}, Lokhttp3/internal/http2/Huffman;->encode(Ly60;Lr50;)V
+    invoke-virtual {v0, p1, v2}, Lokhttp3/internal/http2/Huffman;->encode(Lo90;Le80;)V
 
     .line 28
     .line 29
     .line 30
-    iget-wide v3, v2, Lf50;->R:J
+    iget-wide v3, v2, Ll70;->Y:J
 
     .line 31
     .line 32
-    invoke-virtual {v2, v3, v4}, Lf50;->o(J)Ly60;
+    invoke-virtual {v2, v3, v4}, Ll70;->s(J)Lo90;
 
     .line 33
     .line 34
@@ -794,7 +794,7 @@
     move-result-object p1
 
     .line 36
-    invoke-virtual {p1}, Ly60;->e()I
+    invoke-virtual {p1}, Lo90;->e()I
 
     .line 37
     .line 38
@@ -811,11 +811,11 @@
     .line 43
     .line 44
     .line 45
-    iget-object v0, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Lf50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Ll70;
 
     .line 46
     .line 47
-    invoke-virtual {v0, p1}, Lf50;->v0(Ly60;)V
+    invoke-virtual {p0, p1}, Ll70;->C0(Lo90;)V
 
     .line 48
     .line 49
@@ -824,7 +824,7 @@
 
     .line 51
     :cond_0
-    invoke-virtual {p1}, Ly60;->e()I
+    invoke-virtual {p1}, Lo90;->e()I
 
     .line 52
     .line 53
@@ -840,11 +840,11 @@
     .line 57
     .line 58
     .line 59
-    iget-object v0, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Lf50;
+    iget-object p0, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Ll70;
 
     .line 60
     .line 61
-    invoke-virtual {v0, p1}, Lf50;->v0(Ly60;)V
+    invoke-virtual {p0, p1}, Ll70;->C0(Lo90;)V
 
     .line 62
     .line 63
@@ -943,7 +943,7 @@
     move-result v0
 
     .line 38
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 39
     :goto_0
@@ -963,11 +963,11 @@
 
     .line 46
     .line 47
-    iget-object v4, v3, Lokhttp3/internal/http2/Header;->name:Ly60;
+    iget-object v4, v3, Lokhttp3/internal/http2/Header;->name:Lo90;
 
     .line 48
     .line 49
-    invoke-virtual {v4}, Ly60;->q()Ly60;
+    invoke-virtual {v4}, Lo90;->q()Lo90;
 
     .line 50
     .line 51
@@ -975,7 +975,7 @@
     move-result-object v4
 
     .line 53
-    iget-object v5, v3, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object v5, v3, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 54
     .line 55
@@ -1049,11 +1049,11 @@
 
     .line 88
     .line 89
-    iget-object v10, v10, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object v10, v10, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 90
     .line 91
-    invoke-static {v10, v5}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v10, v5}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 92
     .line 93
@@ -1068,7 +1068,7 @@
     move v6, v9
 
     .line 98
-    goto :goto_2
+    goto :goto_1
 
     .line 99
     :cond_2
@@ -1084,11 +1084,11 @@
 
     .line 104
     .line 105
-    iget-object v6, v6, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object v6, v6, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 106
     .line 107
-    invoke-static {v6, v5}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v5}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 108
     .line 109
@@ -1110,28 +1110,27 @@
     move v9, v7
 
     .line 117
-    goto :goto_2
+    goto :goto_1
 
     .line 118
     :cond_3
     move v6, v9
 
     .line 119
-    :goto_1
-    const/4 v9, -0x1
+    move v9, v8
 
     .line 120
-    goto :goto_2
+    goto :goto_1
 
     .line 121
     :cond_4
-    const/4 v6, -0x1
+    move v6, v8
 
     .line 122
-    goto :goto_1
+    move v9, v6
 
     .line 123
-    :goto_2
+    :goto_1
     if-ne v9, v8, :cond_7
 
     .line 124
@@ -1151,7 +1150,7 @@
     array-length v10, v10
 
     .line 132
-    :goto_3
+    :goto_2
     if-ge v7, v10, :cond_7
 
     .line 133
@@ -1169,11 +1168,11 @@
     .line 139
     .line 140
     .line 141
-    iget-object v11, v11, Lokhttp3/internal/http2/Header;->name:Ly60;
+    iget-object v11, v11, Lokhttp3/internal/http2/Header;->name:Lo90;
 
     .line 142
     .line 143
-    invoke-static {v11, v4}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v11, v4}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 144
     .line 145
@@ -1198,11 +1197,11 @@
     .line 154
     .line 155
     .line 156
-    iget-object v11, v11, Lokhttp3/internal/http2/Header;->value:Ly60;
+    iget-object v11, v11, Lokhttp3/internal/http2/Header;->value:Lo90;
 
     .line 157
     .line 158
-    invoke-static {v11, v5}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v11, v5}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 159
     .line 160
@@ -1239,7 +1238,7 @@
     add-int/2addr v9, v7
 
     .line 175
-    goto :goto_4
+    goto :goto_3
 
     .line 176
     :cond_5
@@ -1278,11 +1277,11 @@
 
     .line 191
     .line 192
-    goto :goto_3
+    goto :goto_2
 
     .line 193
     :cond_7
-    :goto_4
+    :goto_3
     if-eq v9, v8, :cond_8
 
     .line 194
@@ -1300,7 +1299,7 @@
     .line 200
     .line 201
     .line 202
-    goto :goto_5
+    goto :goto_4
 
     .line 203
     :cond_8
@@ -1312,21 +1311,21 @@
 
     .line 206
     .line 207
-    iget-object v6, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Lf50;
+    iget-object v6, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Ll70;
 
     .line 208
     .line 209
-    invoke-virtual {v6, v7}, Lf50;->x0(I)V
+    invoke-virtual {v6, v7}, Ll70;->G0(I)V
 
     .line 210
     .line 211
     .line 212
-    invoke-virtual {p0, v4}, Lokhttp3/internal/http2/Hpack$Writer;->writeByteString(Ly60;)V
+    invoke-virtual {p0, v4}, Lokhttp3/internal/http2/Hpack$Writer;->writeByteString(Lo90;)V
 
     .line 213
     .line 214
     .line 215
-    invoke-virtual {p0, v5}, Lokhttp3/internal/http2/Hpack$Writer;->writeByteString(Ly60;)V
+    invoke-virtual {p0, v5}, Lokhttp3/internal/http2/Hpack$Writer;->writeByteString(Lo90;)V
 
     .line 216
     .line 217
@@ -1336,11 +1335,11 @@
     .line 219
     .line 220
     .line 221
-    goto :goto_5
+    goto :goto_4
 
     .line 222
     :cond_9
-    sget-object v8, Lokhttp3/internal/http2/Header;->PSEUDO_PREFIX:Ly60;
+    sget-object v8, Lokhttp3/internal/http2/Header;->PSEUDO_PREFIX:Lo90;
 
     .line 223
     .line 224
@@ -1354,7 +1353,7 @@
     .line 228
     .line 229
     .line 230
-    invoke-virtual {v8}, Ly60;->e()I
+    invoke-virtual {v8}, Lo90;->e()I
 
     .line 231
     .line 232
@@ -1362,7 +1361,7 @@
     move-result v9
 
     .line 234
-    invoke-virtual {v4, v1, v8, v9}, Ly60;->m(ILy60;I)Z
+    invoke-virtual {v4, v1, v8, v9}, Lo90;->m(ILo90;I)Z
 
     .line 235
     .line 236
@@ -1374,11 +1373,11 @@
 
     .line 239
     .line 240
-    sget-object v8, Lokhttp3/internal/http2/Header;->TARGET_AUTHORITY:Ly60;
+    sget-object v8, Lokhttp3/internal/http2/Header;->TARGET_AUTHORITY:Lo90;
 
     .line 241
     .line 242
-    invoke-static {v8, v4}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v8, v4}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 243
     .line 244
@@ -1399,12 +1398,12 @@
     .line 251
     .line 252
     .line 253
-    invoke-virtual {p0, v5}, Lokhttp3/internal/http2/Hpack$Writer;->writeByteString(Ly60;)V
+    invoke-virtual {p0, v5}, Lokhttp3/internal/http2/Hpack$Writer;->writeByteString(Lo90;)V
 
     .line 254
     .line 255
     .line 256
-    goto :goto_5
+    goto :goto_4
 
     .line 257
     :cond_a
@@ -1417,7 +1416,7 @@
     .line 260
     .line 261
     .line 262
-    invoke-virtual {p0, v5}, Lokhttp3/internal/http2/Hpack$Writer;->writeByteString(Ly60;)V
+    invoke-virtual {p0, v5}, Lokhttp3/internal/http2/Hpack$Writer;->writeByteString(Lo90;)V
 
     .line 263
     .line 264
@@ -1427,7 +1426,7 @@
     .line 266
     .line 267
     .line 268
-    :goto_5
+    :goto_4
     add-int/lit8 v2, v2, 0x1
 
     .line 269
@@ -1444,7 +1443,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Lf50;
+    iget-object v0, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Ll70;
 
     .line 2
     .line 3
@@ -1452,66 +1451,67 @@
 
     .line 4
     .line 5
-    or-int/2addr p1, p3
+    or-int p0, p3, p1
 
     .line 6
-    invoke-virtual {v0, p1}, Lf50;->x0(I)V
-
     .line 7
+    invoke-virtual {v0, p0}, Ll70;->G0(I)V
+
     .line 8
     .line 9
+    .line 10
     return-void
 
-    .line 10
+    .line 11
     :cond_0
     or-int/2addr p3, p2
 
-    .line 11
-    invoke-virtual {v0, p3}, Lf50;->x0(I)V
-
     .line 12
+    invoke-virtual {v0, p3}, Ll70;->G0(I)V
+
     .line 13
     .line 14
+    .line 15
     sub-int/2addr p1, p2
 
-    .line 15
-    :goto_0
-    iget-object p2, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Lf50;
-
     .line 16
+    :goto_0
+    iget-object p2, p0, Lokhttp3/internal/http2/Hpack$Writer;->out:Ll70;
+
     .line 17
+    .line 18
     const/16 p3, 0x80
 
-    .line 18
     .line 19
+    .line 20
     if-lt p1, p3, :cond_1
 
-    .line 20
     .line 21
+    .line 22
     and-int/lit8 v0, p1, 0x7f
 
-    .line 22
     .line 23
+    .line 24
     or-int/2addr p3, v0
 
-    .line 24
-    invoke-virtual {p2, p3}, Lf50;->x0(I)V
-
     .line 25
+    invoke-virtual {p2, p3}, Ll70;->G0(I)V
+
     .line 26
     .line 27
+    .line 28
     ushr-int/lit8 p1, p1, 0x7
 
-    .line 28
     .line 29
+    .line 30
     goto :goto_0
 
-    .line 30
-    :cond_1
-    invoke-virtual {p2, p1}, Lf50;->x0(I)V
-
     .line 31
+    :cond_1
+    invoke-virtual {p2, p1}, Ll70;->G0(I)V
+
     .line 32
     .line 33
+    .line 34
     return-void
 .end method

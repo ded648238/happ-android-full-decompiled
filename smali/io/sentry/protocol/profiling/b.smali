@@ -1,23 +1,23 @@
 .class public final Lio/sentry/protocol/profiling/b;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # instance fields
-.field public Q:D
+.field public X:D
 
-.field public R:I
+.field public Y:I
 
-.field public S:Ljava/lang/String;
+.field public Z:Ljava/lang/String;
 
-.field public T:Ljava/util/HashMap;
+.field public c0:Ljava/util/AbstractMap;
 
 
 # virtual methods
-.method public final serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
+.method public final serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
     .locals 3
 
     .line 1
@@ -39,7 +39,7 @@
     .line 9
     .line 10
     .line 11
-    iget-wide v0, p0, Lio/sentry/protocol/profiling/b;->Q:D
+    iget-wide v0, p0, Lio/sentry/protocol/profiling/b;->X:D
 
     .line 12
     .line 13
@@ -65,7 +65,7 @@
     .line 23
     .line 24
     .line 25
-    iget v0, p0, Lio/sentry/protocol/profiling/b;->R:I
+    iget v0, p0, Lio/sentry/protocol/profiling/b;->Y:I
 
     .line 26
     .line 27
@@ -82,7 +82,7 @@
     .line 32
     .line 33
     .line 34
-    iget-object v0, p0, Lio/sentry/protocol/profiling/b;->S:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/profiling/b;->Z:Ljava/lang/String;
 
     .line 35
     .line 36
@@ -99,7 +99,7 @@
     .line 41
     .line 42
     .line 43
-    iget-object v0, p0, Lio/sentry/protocol/profiling/b;->S:Ljava/lang/String;
+    iget-object v0, p0, Lio/sentry/protocol/profiling/b;->Z:Ljava/lang/String;
 
     .line 44
     .line 45
@@ -109,7 +109,7 @@
     .line 47
     .line 48
     :cond_0
-    iget-object v0, p0, Lio/sentry/protocol/profiling/b;->T:Ljava/util/HashMap;
+    iget-object v0, p0, Lio/sentry/protocol/profiling/b;->c0:Ljava/util/AbstractMap;
 
     .line 49
     .line 50
@@ -158,23 +158,36 @@
 
     .line 71
     .line 72
-    iget-object v2, p0, Lio/sentry/protocol/profiling/b;->T:Ljava/util/HashMap;
+    iget-object v2, p0, Lio/sentry/protocol/profiling/b;->c0:Ljava/util/AbstractMap;
 
     .line 73
     .line 74
-    invoke-static {v2, v1, p1, v1, p2}, Lio/sentry/e;->b(Ljava/util/HashMap;Ljava/lang/String;Lio/sentry/internal/debugmeta/c;Ljava/lang/String;Lio/sentry/ILogger;)V
+    invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 75
     .line 76
     .line 77
-    goto :goto_0
+    move-result-object v2
 
     .line 78
-    :cond_1
-    invoke-virtual {p1}, Lio/sentry/internal/debugmeta/c;->m()Lio/sentry/internal/debugmeta/c;
+    invoke-virtual {p1, v1}, Lio/sentry/internal/debugmeta/c;->p(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
 
     .line 79
     .line 80
     .line 81
+    invoke-virtual {p1, p2, v2}, Lio/sentry/internal/debugmeta/c;->v(Lio/sentry/ILogger;Ljava/lang/Object;)Lio/sentry/internal/debugmeta/c;
+
+    .line 82
+    .line 83
+    .line 84
+    goto :goto_0
+
+    .line 85
+    :cond_1
+    invoke-virtual {p1}, Lio/sentry/internal/debugmeta/c;->m()Lio/sentry/internal/debugmeta/c;
+
+    .line 86
+    .line 87
+    .line 88
     return-void
 .end method

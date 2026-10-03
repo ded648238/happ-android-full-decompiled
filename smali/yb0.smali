@@ -1,97 +1,20 @@
-.class public final synthetic Lyb0;
+.class public interface abstract Lyb0;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic Q:Lha0;
-
-.field public final synthetic R:Landroid/hardware/camera2/CameraCaptureSession;
-
-.field public final synthetic S:Landroid/hardware/camera2/CaptureRequest;
-
-.field public final synthetic T:Landroid/view/Surface;
-
-.field public final synthetic U:J
-
-
-# direct methods
-.method public synthetic constructor <init>(Lha0;Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;Landroid/view/Surface;J)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lyb0;->Q:Lha0;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Lyb0;->R:Landroid/hardware/camera2/CameraCaptureSession;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lyb0;->S:Landroid/hardware/camera2/CaptureRequest;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Lyb0;->T:Landroid/view/Surface;
-
-    .line 11
-    .line 12
-    iput-wide p5, p0, Lyb0;->U:J
-
-    .line 13
-    .line 14
-    return-void
-.end method
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
-.method public final run()V
-    .locals 7
+.method public abstract a()Ljava/util/List;
+.end method
 
-    .line 1
-    iget-object v0, p0, Lyb0;->Q:Lha0;
+.method public abstract b()Ljava/lang/reflect/Member;
+.end method
 
-    .line 2
-    .line 3
-    iget-object v0, v0, Lha0;->b:Ljava/lang/Object;
+.method public abstract c()Z
+.end method
 
-    .line 4
-    .line 5
-    move-object v1, v0
+.method public abstract d([Ljava/lang/Object;)Ljava/lang/Object;
+.end method
 
-    .line 6
-    check-cast v1, Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
-
-    .line 7
-    .line 8
-    iget-object v2, p0, Lyb0;->R:Landroid/hardware/camera2/CameraCaptureSession;
-
-    .line 9
-    .line 10
-    iget-object v3, p0, Lyb0;->S:Landroid/hardware/camera2/CaptureRequest;
-
-    .line 11
-    .line 12
-    iget-object v4, p0, Lyb0;->T:Landroid/view/Surface;
-
-    .line 13
-    .line 14
-    iget-wide v5, p0, Lyb0;->U:J
-
-    .line 15
-    .line 16
-    invoke-static/range {v1 .. v6}, Lkl6;->o(Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/hardware/camera2/CameraCaptureSession;Landroid/hardware/camera2/CaptureRequest;Landroid/view/Surface;J)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
+.method public abstract k()Ljava/lang/reflect/Type;
 .end method

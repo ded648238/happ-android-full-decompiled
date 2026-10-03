@@ -1,190 +1,89 @@
 .class public final Luz0;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public a:J
+.field public c0:Ljava/lang/Object;
 
-.field public b:F
+.field public d0:Ljava/io/Serializable;
+
+.field public e0:Lwf5;
+
+.field public f0:Lvy5;
+
+.field public g0:Lz31;
+
+.field public h0:Lvy5;
+
+.field public i0:Z
+
+.field public synthetic j0:Ljava/lang/Object;
+
+.field public final synthetic k0:Lvz0;
+
+.field public l0:I
+
+
+# direct methods
+.method public constructor <init>(Lvz0;Ld31;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Luz0;->k0:Lvz0;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Luz0;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Luz0;
-
-    .line 12
-    .line 13
-    iget-wide v3, p0, Luz0;->a:J
-
-    .line 14
-    .line 15
-    iget-wide v5, p1, Luz0;->a:J
-
-    .line 16
-    .line 17
-    cmp-long v1, v3, v5
-
-    .line 18
-    .line 19
-    if-eqz v1, :cond_2
-
-    .line 20
-    .line 21
-    return v2
-
-    .line 22
-    :cond_2
-    iget v1, p0, Luz0;->b:F
-
-    .line 23
-    .line 24
-    iget p1, p1, Luz0;->b:F
-
-    .line 25
-    .line 26
-    invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result p1
-
-    .line 30
-    if-eqz p1, :cond_3
-
-    .line 31
-    .line 32
-    return v2
-
-    .line 33
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 4
-
-    .line 1
-    iget-wide v0, p0, Luz0;->a:J
+    iput-object p1, p0, Luz0;->j0:Ljava/lang/Object;
 
     .line 2
     .line 3
-    const/16 v2, 0x20
+    iget p1, p0, Luz0;->l0:I
 
     .line 4
     .line 5
-    ushr-long v2, v0, v2
+    const/high16 v0, -0x80000000
 
     .line 6
     .line 7
-    xor-long/2addr v0, v2
+    or-int/2addr p1, v0
 
     .line 8
-    long-to-int v1, v0
-
-    .line 9
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 10
-    .line 11
-    iget v0, p0, Luz0;->b:F
-
-    .line 12
-    .line 13
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    add-int/2addr v0, v1
-
-    .line 18
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "DataPointAtTime(time="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-wide v1, p0, Luz0;->a:J
+    iput p1, p0, Luz0;->l0:I
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    const/4 p1, 0x0
 
     .line 11
+    const/4 v0, 0x0
+
     .line 12
+    iget-object v1, p0, Luz0;->k0:Lvz0;
+
     .line 13
-    const-string v1, ", dataPoint="
-
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1, v0, p0}, Lvz0;->F(ZLxi2;Ld31;)Ljava/lang/Object;
 
+    .line 15
     .line 16
     .line 17
+    move-result-object p0
+
     .line 18
-    iget v1, p0, Luz0;->b:F
-
-    .line 19
-    .line 20
-    const/16 v2, 0x29
-
-    .line 21
-    .line 22
-    invoke-static {v0, v1, v2}, Lea0;->r(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    return-object v0
+    return-object p0
 .end method

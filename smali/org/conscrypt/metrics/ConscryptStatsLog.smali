@@ -1,18 +1,42 @@
 .class public final Lorg/conscrypt/metrics/ConscryptStatsLog;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
+.field public static final CERTIFICATE_BLOCKLIST_BLOCK_REPORTED:I = 0x477
+
+.field public static final CERTIFICATE_BLOCKLIST_BLOCK_REPORTED__SOURCE__BLOCKLIST_SOURCE_SHA1_BUILT_IN:I = 0x2
+
+.field public static final CERTIFICATE_BLOCKLIST_BLOCK_REPORTED__SOURCE__BLOCKLIST_SOURCE_SHA1_FILE:I = 0x3
+
+.field public static final CERTIFICATE_BLOCKLIST_BLOCK_REPORTED__SOURCE__BLOCKLIST_SOURCE_SHA1_TEST:I = 0x1
+
+.field public static final CERTIFICATE_BLOCKLIST_BLOCK_REPORTED__SOURCE__BLOCKLIST_SOURCE_SHA256_BUILT_IN:I = 0x5
+
+.field public static final CERTIFICATE_BLOCKLIST_BLOCK_REPORTED__SOURCE__BLOCKLIST_SOURCE_SHA256_FILE:I = 0x6
+
+.field public static final CERTIFICATE_BLOCKLIST_BLOCK_REPORTED__SOURCE__BLOCKLIST_SOURCE_SHA256_TEST:I = 0x4
+
+.field public static final CERTIFICATE_BLOCKLIST_BLOCK_REPORTED__SOURCE__BLOCKLIST_SOURCE_UNKNOWN:I = 0x0
+
 .field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED:I = 0x3a6
 
 .field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED__LOADED_COMPAT_VERSION__COMPAT_VERSION_UNKNOWN:I = 0x0
 
 .field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED__LOADED_COMPAT_VERSION__COMPAT_VERSION_V1:I = 0x1
 
+.field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED__LOADED_COMPAT_VERSION__COMPAT_VERSION_V2:I = 0x2
+
+.field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED__LOADED_COMPAT_VERSION__COMPAT_VERSION_V3:I = 0x3
+
 .field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED__MIN_COMPAT_VERSION__COMPAT_VERSION_UNKNOWN:I = 0x0
 
 .field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED__MIN_COMPAT_VERSION__COMPAT_VERSION_V1:I = 0x1
+
+.field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED__MIN_COMPAT_VERSION__COMPAT_VERSION_V2:I = 0x2
+
+.field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED__MIN_COMPAT_VERSION__COMPAT_VERSION_V3:I = 0x3
 
 .field public static final CERTIFICATE_TRANSPARENCY_LOG_LIST_STATE_CHANGED__STATUS__STATUS_EXPIRED:I = 0x4
 
@@ -30,7 +54,13 @@
 
 .field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__POLICY_COMPATIBILITY_VERSION__COMPAT_VERSION_V1:I = 0x1
 
+.field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__POLICY_COMPATIBILITY_VERSION__COMPAT_VERSION_V2:I = 0x2
+
+.field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__POLICY_COMPATIBILITY_VERSION__COMPAT_VERSION_V3:I = 0x3
+
 .field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__REASON__REASON_DEVICE_WIDE_ENABLED:I = 0x1
+
+.field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__REASON__REASON_DRY_RUN:I = 0x5
 
 .field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__REASON__REASON_NSCONFIG_APP_OPT_IN:I = 0x3
 
@@ -44,6 +74,10 @@
 
 .field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__RESULT__RESULT_FAILURE_SCTS_NOT_COMPLIANT:I = 0x4
 
+.field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__RESULT__RESULT_FAIL_OPEN_LOG_LIST_DATE_EXPIRED:I = 0x8
+
+.field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__RESULT__RESULT_FAIL_OPEN_LOG_LIST_DATE_INVALID:I = 0x7
+
 .field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__RESULT__RESULT_FAIL_OPEN_LOG_LIST_NOT_COMPLIANT:I = 0x6
 
 .field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__RESULT__RESULT_FAIL_OPEN_NO_LOG_LIST_AVAILABLE:I = 0x5
@@ -53,6 +87,12 @@
 .field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__RESULT__RESULT_SUCCESS:I = 0x1
 
 .field public static final CERTIFICATE_TRANSPARENCY_VERIFICATION_REPORTED__RESULT__RESULT_UNKNOWN:I = 0x0
+
+.field public static final CERTIFICATE_VALIDATION_FAILURE_REPORTED:I = 0x52e
+
+.field public static final CERTIFICATE_VALIDATION_FAILURE_REPORTED__REASON__CERTIFICATE_VALIDATION_FAILURE_REASON_NO_TRUST_ANCHOR:I = 0x1
+
+.field public static final CERTIFICATE_VALIDATION_FAILURE_REPORTED__REASON__CERTIFICATE_VALIDATION_FAILURE_REASON_UNKNOWN:I = 0x0
 
 .field public static final CONSCRYPT_SERVICE_USED:I = 0x3c5
 
@@ -117,6 +157,52 @@
 .field public static final CONSCRYPT_SERVICE_USED__PADDING__PKCS1:I = 0x6
 
 .field public static final CONSCRYPT_SERVICE_USED__PADDING__PKCS5:I = 0x7
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED:I = 0x52f
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__FAILURE_REASON__ECH_FAILURE_REASON_INCONSISTENT_NEGOTIATION:I = 0x3
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__FAILURE_REASON__ECH_FAILURE_REASON_INVALID_CONFIG:I = 0x2
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__FAILURE_REASON__ECH_FAILURE_REASON_NO_RETRY_CONFIGS:I = 0x4
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__FAILURE_REASON__ECH_FAILURE_REASON_SERVER_REJECTION:I = 0x1
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__FAILURE_REASON__ECH_FAILURE_REASON_UNKNOWN:I = 0x0
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__RESULT__ECH_RESULT_FAILURE:I = 0x3
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__RESULT__ECH_RESULT_SKIPPED:I = 0x4
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__RESULT__ECH_RESULT_SUCCESS:I = 0x1
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__RESULT__ECH_RESULT_SUCCESS_GREASE:I = 0x2
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__RESULT__ECH_RESULT_UNKNOWN:I = 0x0
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__SKIP_REASON__ECH_SKIP_REASON_NO_CONFIG:I = 0x4
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__SKIP_REASON__ECH_SKIP_REASON_NSC_APP_OPT_OUT:I = 0x2
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__SKIP_REASON__ECH_SKIP_REASON_NSC_DOMAIN_OPT_OUT:I = 0x3
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__SKIP_REASON__ECH_SKIP_REASON_SDK_TARGET:I = 0x1
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__SKIP_REASON__ECH_SKIP_REASON_SERVER_SNI_MISMATCH:I = 0x5
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__SKIP_REASON__ECH_SKIP_REASON_UNKNOWN:I = 0x0
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__SKIP_REASON__ECH_SKIP_REASON_UNSUPPORTED_TLS_VERSION:I = 0x6
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__USAGE_REASON__ECH_REASON_DEFAULT:I = 0x1
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__USAGE_REASON__ECH_REASON_NSC_APP_OPT_IN:I = 0x3
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__USAGE_REASON__ECH_REASON_NSC_DOMAIN_OPT_IN:I = 0x4
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__USAGE_REASON__ECH_REASON_SDK_TARGET:I = 0x2
+
+.field public static final TLS_ENCRYPTED_CLIENT_HELLO_HANDSHAKE_REPORTED__USAGE_REASON__ECH_REASON_UNKNOWN:I = 0x0
 
 .field public static final TLS_HANDSHAKE_REPORTED:I = 0x13d
 
@@ -206,33 +292,66 @@
     return-void
 .end method
 
-.method public static write(IIIII)V
+.method public static write(IIII)V
     .locals 1
 
-    .line 43
+    .line 66
     invoke-static {}, Lorg/conscrypt/metrics/ReflexiveStatsEvent;->newBuilder()Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
     move-result-object v0
 
-    .line 44
+    .line 67
     invoke-virtual {v0, p0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->setAtomId(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 45
+    .line 68
     invoke-virtual {v0, p1}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 46
+    .line 69
     invoke-virtual {v0, p2}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 47
+    .line 70
     invoke-virtual {v0, p3}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 48
-    invoke-virtual {v0, p4}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
-
-    .line 49
+    .line 71
     invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer()V
 
+    .line 72
+    invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build()Lorg/conscrypt/metrics/ReflexiveStatsEvent;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lorg/conscrypt/metrics/ReflexiveStatsLog;->write(Lorg/conscrypt/metrics/ReflexiveStatsEvent;)V
+
+    return-void
+.end method
+
+.method public static write(IIIII)V
+    .locals 1
+
+    .line 49
+    invoke-static {}, Lorg/conscrypt/metrics/ReflexiveStatsEvent;->newBuilder()Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    move-result-object v0
+
     .line 50
+    invoke-virtual {v0, p0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->setAtomId(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 51
+    invoke-virtual {v0, p1}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 52
+    invoke-virtual {v0, p2}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 53
+    invoke-virtual {v0, p3}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 54
+    invoke-virtual {v0, p4}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 55
+    invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer()V
+
+    .line 56
     invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build()Lorg/conscrypt/metrics/ReflexiveStatsEvent;
 
     move-result-object p0
@@ -245,33 +364,33 @@
 .method public static write(IIIIII)V
     .locals 1
 
-    .line 51
+    .line 57
     invoke-static {}, Lorg/conscrypt/metrics/ReflexiveStatsEvent;->newBuilder()Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
     move-result-object v0
 
-    .line 52
+    .line 58
     invoke-virtual {v0, p0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->setAtomId(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 53
+    .line 59
     invoke-virtual {v0, p1}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 54
+    .line 60
     invoke-virtual {v0, p2}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 55
+    .line 61
     invoke-virtual {v0, p3}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 56
+    .line 62
     invoke-virtual {v0, p4}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 57
+    .line 63
     invoke-virtual {v0, p5}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 58
+    .line 64
     invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer()V
 
-    .line 59
+    .line 65
     invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build()Lorg/conscrypt/metrics/ReflexiveStatsEvent;
 
     move-result-object p0
@@ -281,7 +400,49 @@
     return-void
 .end method
 
-.method public static write(IIIIIIIII)V
+.method public static write(IIIIIII)V
+    .locals 1
+
+    .line 73
+    invoke-static {}, Lorg/conscrypt/metrics/ReflexiveStatsEvent;->newBuilder()Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    move-result-object v0
+
+    .line 74
+    invoke-virtual {v0, p0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->setAtomId(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 75
+    invoke-virtual {v0, p1}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 76
+    invoke-virtual {v0, p2}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 77
+    invoke-virtual {v0, p3}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 78
+    invoke-virtual {v0, p4}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 79
+    invoke-virtual {v0, p5}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 80
+    invoke-virtual {v0, p6}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+
+    .line 81
+    invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer()V
+
+    .line 82
+    invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build()Lorg/conscrypt/metrics/ReflexiveStatsEvent;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lorg/conscrypt/metrics/ReflexiveStatsLog;->write(Lorg/conscrypt/metrics/ReflexiveStatsEvent;)V
+
+    return-void
+.end method
+
+.method public static write(IIIIIIIIIIJ)V
     .locals 1
 
     .line 1
@@ -338,67 +499,77 @@
     .line 30
     .line 31
     .line 32
-    invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer()V
+    invoke-virtual {v0, p9}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
     .line 33
     .line 34
     .line 35
-    invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build()Lorg/conscrypt/metrics/ReflexiveStatsEvent;
+    invoke-virtual {v0, p10, p11}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeLong(J)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
     .line 36
     .line 37
     .line 38
-    move-result-object p0
+    invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer()V
 
     .line 39
-    invoke-static {p0}, Lorg/conscrypt/metrics/ReflexiveStatsLog;->write(Lorg/conscrypt/metrics/ReflexiveStatsEvent;)V
-
     .line 40
     .line 41
+    invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build()Lorg/conscrypt/metrics/ReflexiveStatsEvent;
+
     .line 42
+    .line 43
+    .line 44
+    move-result-object p0
+
+    .line 45
+    invoke-static {p0}, Lorg/conscrypt/metrics/ReflexiveStatsLog;->write(Lorg/conscrypt/metrics/ReflexiveStatsEvent;)V
+
+    .line 46
+    .line 47
+    .line 48
     return-void
 .end method
 
 .method public static write(IZIIII[I)V
     .locals 1
 
-    .line 60
+    .line 83
     invoke-static {}, Lorg/conscrypt/metrics/ReflexiveStatsEvent;->newBuilder()Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
     move-result-object v0
 
-    .line 61
+    .line 84
     invoke-virtual {v0, p0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->setAtomId(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 62
+    .line 85
     invoke-virtual {v0, p1}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeBoolean(Z)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 63
+    .line 86
     invoke-virtual {v0, p2}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 64
+    .line 87
     invoke-virtual {v0, p3}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 65
+    .line 88
     invoke-virtual {v0, p4}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 66
+    .line 89
     invoke-virtual {v0, p5}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
     if-nez p6, :cond_0
 
     const/4 p0, 0x0
 
-    .line 67
+    .line 90
     new-array p6, p0, [I
 
     :cond_0
     invoke-virtual {v0, p6}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeIntArray([I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 
-    .line 68
+    .line 91
     invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer()V
 
-    .line 69
+    .line 92
     invoke-virtual {v0}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build()Lorg/conscrypt/metrics/ReflexiveStatsEvent;
 
     move-result-object p0

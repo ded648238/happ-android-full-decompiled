@@ -1,6 +1,6 @@
 .class public Lorg/conscrypt/Conscrypt$Version;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -59,34 +59,34 @@
 
 # virtual methods
 .method public major()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/Conscrypt$Version;->major:I
+    iget p0, p0, Lorg/conscrypt/Conscrypt$Version;->major:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public minor()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/Conscrypt$Version;->minor:I
+    iget p0, p0, Lorg/conscrypt/Conscrypt$Version;->minor:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public patch()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/Conscrypt$Version;->patch:I
+    iget p0, p0, Lorg/conscrypt/Conscrypt$Version;->patch:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

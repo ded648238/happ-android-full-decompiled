@@ -1,12 +1,12 @@
 .class public abstract Landroidx/constraintlayout/widget/VirtualLayout;
 .super Landroidx/constraintlayout/widget/ConstraintHelper;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public a0:Z
+.field public j0:Z
 
-.field public b0:Z
+.field public k0:Z
 
 
 # direct methods
@@ -57,7 +57,7 @@
     move-result-object v0
 
     .line 10
-    sget-object v1, Lbb5;->ConstraintLayout_Layout:[I
+    sget-object v1, Lzu5;->ConstraintLayout_Layout:[I
 
     .line 11
     .line 12
@@ -93,7 +93,7 @@
     move-result v2
 
     .line 27
-    sget v3, Lbb5;->ConstraintLayout_Layout_android_visibility:I
+    sget v3, Lzu5;->ConstraintLayout_Layout_android_visibility:I
 
     .line 28
     .line 29
@@ -104,7 +104,7 @@
 
     .line 31
     .line 32
-    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->a0:Z
+    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->j0:Z
 
     .line 33
     .line 34
@@ -112,7 +112,7 @@
 
     .line 35
     :cond_0
-    sget v3, Lbb5;->ConstraintLayout_Layout_android_elevation:I
+    sget v3, Lzu5;->ConstraintLayout_Layout_android_elevation:I
 
     .line 36
     .line 37
@@ -120,7 +120,7 @@
 
     .line 38
     .line 39
-    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->b0:Z
+    iput-boolean v4, p0, Landroidx/constraintlayout/widget/VirtualLayout;->k0:Z
 
     .line 40
     .line 41
@@ -143,7 +143,7 @@
     return-void
 .end method
 
-.method public abstract j(Lh02;II)V
+.method public abstract j(Lka2;II)V
 .end method
 
 .method public final onAttachedToWindow()V
@@ -155,7 +155,7 @@
     .line 2
     .line 3
     .line 4
-    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->a0:Z
+    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->j0:Z
 
     .line 5
     .line 6
@@ -163,7 +163,7 @@
 
     .line 7
     .line 8
-    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->b0:Z
+    iget-boolean v0, p0, Landroidx/constraintlayout/widget/VirtualLayout;->k0:Z
 
     .line 9
     .line 10
@@ -212,7 +212,7 @@
 
     .line 31
     :goto_0
-    iget v4, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->R:I
+    iget v4, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->d0:I
 
     .line 32
     .line 33
@@ -220,7 +220,7 @@
 
     .line 34
     .line 35
-    iget-object v4, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->Q:[I
+    iget-object v4, p0, Landroidx/constraintlayout/widget/ConstraintHelper;->c0:[I
 
     .line 36
     .line 37
@@ -228,7 +228,7 @@
 
     .line 38
     .line 39
-    iget-object v5, v0, Landroidx/constraintlayout/widget/ConstraintLayout;->Q:Landroid/util/SparseArray;
+    iget-object v5, v0, Landroidx/constraintlayout/widget/ConstraintLayout;->c0:Landroid/util/SparseArray;
 
     .line 40
     .line 41
@@ -248,7 +248,7 @@
 
     .line 48
     .line 49
-    iget-boolean v5, p0, Landroidx/constraintlayout/widget/VirtualLayout;->a0:Z
+    iget-boolean v5, p0, Landroidx/constraintlayout/widget/VirtualLayout;->j0:Z
 
     .line 50
     .line 51
@@ -262,7 +262,7 @@
     .line 55
     .line 56
     :cond_1
-    iget-boolean v5, p0, Landroidx/constraintlayout/widget/VirtualLayout;->b0:Z
+    iget-boolean v5, p0, Landroidx/constraintlayout/widget/VirtualLayout;->k0:Z
 
     .line 57
     .line 58

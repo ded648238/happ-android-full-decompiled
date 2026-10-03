@@ -43,18 +43,22 @@
     <string name="about_xray_version">Xray version</string>
     <string name="activity_scanner_select_photo">Album</string>
     <string name="activity_scanner_toggle_torch">Flash</string>
+    <string name="androidx_compose_foundation_autofill">Autofill</string>
+    <string name="androidx_compose_ui_autofill">Autofill</string>
     <string name="androidx_startup">androidx.startup</string>
     <string name="app_dev_mode">DEV Version</string>
     <string name="app_name">Happ</string>
     <string name="app_tile_first_use">Before connecting for the first time, open the application and add the configuration</string>
     <string name="app_tile_name">Switch</string>
+    <string name="app_update_header">Download Manager</string>
+    <string name="app_update_info_size">Size:</string>
+    <string name="app_update_info_title">App Update</string>
+    <string name="app_update_info_version">Version:</string>
     <string name="app_widget_connected">Connected</string>
     <string name="app_widget_connecting">Connecting</string>
     <string name="app_widget_name">Switch</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="auto_update_interval_default">1</string>
     <string name="auto_update_subscription_info_text">Autoupdate - %d h.</string>
-    <string name="autofill">Autofill</string>
     <string name="back">Back</string>
     <string name="block_application_button_update_text">Get it now</string>
     <string name="block_application_text">"Please update to the latest version
@@ -62,10 +66,16 @@ to continue using the app."</string>
     <string name="block_application_text_new">"A New version of Happ
 is available"</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
-    <string name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
-    <string name="bottomsheet_action_expand">Expand the bottom sheet</string>
+    <string name="bottomsheet_action_collapse">Collapse</string>
+    <string name="bottomsheet_action_collapse_description">Collapse the bottom sheet</string>
+    <string name="bottomsheet_action_expand">Expand</string>
+    <string name="bottomsheet_action_expand_description">Expand the bottom sheet</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="bottomsheet_action_half_expand_description">Half expand the bottom sheet</string>
     <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
+    <string name="bottomsheet_state_collapsed">Collapsed</string>
+    <string name="bottomsheet_state_expanded">Expanded</string>
+    <string name="bottomsheet_state_half_expanded">Half expanded</string>
     <string name="btn_ai_helper">AI Helper</string>
     <string name="btn_disconnect">Connected</string>
     <string name="btn_import_config_clipboard">Clipboard</string>
@@ -137,6 +147,7 @@ is available"</string>
     <string name="dialog_config_group_actions_pin">Pin</string>
     <string name="dialog_config_group_actions_ping">Ping</string>
     <string name="dialog_config_group_actions_routing">Routing</string>
+    <string name="dialog_config_group_actions_settings">Settings</string>
     <string name="dialog_config_group_actions_unpin">Unpin</string>
     <string name="dialog_config_group_actions_update_subscription">Update subscription</string>
     <string name="dialog_http_error">An error was received from the server when receiving data: HTTP %s</string>
@@ -253,6 +264,7 @@ IPv6: 2001:db8::/32 or 2001:db8::"</string>
     <string name="last_updated_link_not_correct">Last Updated: Link is not correct</string>
     <string name="last_updated_never">Last Updated: Never</string>
     <string name="last_updated_time">Last Updated: %1$s, size: %2$s</string>
+    <string name="later">Later</string>
     <string name="lb_control_display_fast_forward_multiplier">%1$dX</string>
     <string name="lb_control_display_rewind_multiplier">%1$dX</string>
     <string name="lb_guidedaction_continue_title">Continue</string>
@@ -291,6 +303,7 @@ IPv6: 2001:db8::/32 or 2001:db8::"</string>
     <string name="lb_search_bar_hint_speech">Speak to search</string>
     <string name="lb_search_bar_hint_with_title">Search %1$s</string>
     <string name="lb_search_bar_hint_with_title_speech">Speak to search %1$s</string>
+    <string name="less">Less</string>
     <string name="logcat_clear">Clear</string>
     <string name="logcat_copy">Copy</string>
     <string name="logcat_share">Share</string>
@@ -301,6 +314,8 @@ IPv6: 2001:db8::/32 or 2001:db8::"</string>
     <string name="logs_view_warning_encrypted">Logging is hidden because an encrypted/custom server is being used</string>
     <string name="m3_exceed_max_badge_text_suffix">%1$s%2$s</string>
     <string name="m3_loading_indicator_content_description">Loading</string>
+    <string name="m3_overflow_linear_layout_button_content_description">Overflow menu</string>
+    <string name="m3_overflow_linear_layout_button_tooltip_text">More options</string>
     <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_brand_regular">sans-serif</string>
     <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
@@ -403,11 +418,16 @@ IPv6: 2001:db8::/32 or 2001:db8::"</string>
     <string name="material_slider_value">Value</string>
     <string name="material_timepicker_am">AM</string>
     <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
+    <string name="material_timepicker_clock_mode_tooltip">Switch to clock mode</string>
     <string name="material_timepicker_hour">Hour</string>
+    <string name="material_timepicker_hour_error">Hour must be 1–12</string>
+    <string name="material_timepicker_hour_error_24h">Hour must be 0–23</string>
     <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_minute_error">Minute must be 0–59</string>
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Select time</string>
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+    <string name="material_timepicker_text_input_mode_tooltip">Switch to text input mode</string>
     <string name="menu_item_clear">Clear selected</string>
     <string name="menu_item_create_profile">Add Routing Profile</string>
     <string name="menu_item_export_json_clipboard">Copy JSON</string>
@@ -432,9 +452,12 @@ IPv6: 2001:db8::/32 or 2001:db8::"</string>
     <string name="menu_item_select_spy_apps">Select spy apps</string>
     <string name="menu_item_show_system_apps">Show system applications</string>
     <string name="menu_item_unselect_all">Unselect all</string>
+    <string name="more">More</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_button_collapsed_content_description">Collapsed</string>
     <string name="mtrl_button_expanded_content_description">Expanded</string>
+    <string name="mtrl_button_overflow_icon_content_description">Overflow menu</string>
+    <string name="mtrl_button_snackbar_close_content_description">Close</string>
     <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
     <string name="mtrl_checkbox_button_icon_path_indeterminate">M13.4,15 11,15 11,17 13.4,17 21,17 21,15z</string>
@@ -467,7 +490,11 @@ IPv6: 2001:db8::/32 or 2001:db8::"</string>
     <string name="mtrl_picker_invalid_range">Invalid range.</string>
     <string name="mtrl_picker_navigate_to_current_year_description">Navigate to current year %1$d</string>
     <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$d</string>
+    <string name="mtrl_picker_next_month_tooltip">Next month</string>
     <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_pane_title_calendar_view">Calendar view</string>
+    <string name="mtrl_picker_pane_title_year_view">Year view</string>
+    <string name="mtrl_picker_prev_month_tooltip">Previous month</string>
     <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
     <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
     <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
@@ -483,11 +510,11 @@ IPv6: 2001:db8::/32 or 2001:db8::"</string>
     <string name="mtrl_picker_text_input_year_abbr">y</string>
     <string name="mtrl_picker_today_description">Today %1$s</string>
     <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode_tooltip">Switch to calendar</string>
     <string name="mtrl_picker_toggle_to_day_selection">Switch to Calendar view</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode_tooltip">Switch to text input</string>
     <string name="mtrl_picker_toggle_to_year_selection">Switch to year view</string>
-    <string name="mtrl_picker_toggled_to_day_selection">Switched to Calendar view</string>
-    <string name="mtrl_picker_toggled_to_year_selection">Switched to year view</string>
     <string name="mtrl_switch_thumb_group_name">circle_group</string>
     <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
     <string name="mtrl_switch_thumb_path_morphing">M0,16 A11,11 0 0,1 11,5 H21 A11,11 0 0,1 21,27 H11 A11,11 0 0,1 0,16</string>
@@ -755,7 +782,6 @@ https://happ.su"</string>
 server and/or add a subscription to the list of
 servers."</string>
     <string name="settings">Settings</string>
-    <string name="settings_auto_update_description">Set the subscription renewal interval while the app is running, in hours (min 1 - max 730).</string>
     <string name="settings_background_activity">Background activity</string>
     <string name="settings_background_settings_description">There is a limit on background activity in the application settings, please change the settings to “No restrictions”</string>
     <string name="settings_background_settings_title">Background settings</string>
@@ -763,7 +789,6 @@ servers."</string>
     <string name="settings_fragment_advanced_description">Information on configuring this type of fragmentation is available in the documentation on the website.</string>
     <string name="settings_fragment_xray_description">"Fragmentation in Xray splits data into smaller parts for better obfuscation and anti-detection.
 Enabling this feature applies it to all server configurations."</string>
-    <string name="settings_hint_user_agent">Happ/%1$s</string>
     <string name="settings_mtu_info">Range 68 to 65535</string>
     <string name="settings_mux_description">"Mux in Xray is a feature that multiplexes multiple connections into one, reducing handshake overhead and improving efficiency for proxied traffic.
 Enabling this feature applies it to all server configurations."</string>
@@ -782,16 +807,13 @@ KeepAlive: Requests are sent within one core session over a single transport ins
     <string name="settings_profile_use_custom_ua_dropdown">User-Agent</string>
     <string name="settings_profile_use_enabled">Use Routing</string>
     <string name="settings_profile_use_title">Using Routing</string>
+    <string name="settings_proxy_ping_timeout">Proxy Ping Timeout</string>
     <string name="settings_routing_profiles_description">"Routing rules provide flexible traffic management using Proxy, Direct, and Block settings.
 For detailed information, refer to the FAQ section."</string>
     <string name="settings_send_hw_description">When accessing the address, your device will transmit its Android version and HWID, neither of which contains any personal data.</string>
     <string name="settings_subscription_on_open_description">Subscription renewal, connection, and/or ping checks will be triggered every time the application is launched.</string>
-    <string name="settings_title_sending_data">Sending Data</string>
-    <string name="settings_title_server_list">Server List</string>
-    <string name="settings_title_sub_timeout">Subscription request timeout</string>
-    <string name="settings_title_sub_timeout_from">5 sec</string>
-    <string name="settings_title_sub_timeout_to">15 sec</string>
-    <string name="settings_title_user_agent">User-agent</string>
+    <string name="settings_title_proxy_ping_timeout_from">5 sec</string>
+    <string name="settings_title_proxy_ping_timeout_to">15 sec</string>
     <string name="settings_ua_block_warning">Provider has restricted User-Agent editing</string>
     <string name="settings_vpn_description">These settings should not be modified unless you fully understand their purpose.</string>
     <string name="settings_xray_tun_mtu">Xray TUN MTU</string>
@@ -823,6 +845,29 @@ For detailed information, refer to the FAQ section."</string>
     <string name="sub_info_expire_minutes">Your subscription expires in %d minutes.</string>
     <string name="sub_info_expired">Your subscription has expired.</string>
     <string name="sub_info_renew">Renew</string>
+    <string name="sub_properties_auto_update_enable">Automatic update</string>
+    <string name="sub_properties_auto_update_interval">Update interval (h)</string>
+    <string name="sub_properties_auto_update_interval_description">Set the subscription renewal interval while the app is running, in hours (1 – 730).</string>
+    <string name="sub_properties_auto_update_interval_placeholder">1</string>
+    <string name="sub_properties_auto_update_show_notifications">Show notifications</string>
+    <string name="sub_properties_auto_update_title">Update</string>
+    <string name="sub_properties_general_collapse">Allow to collapse</string>
+    <string name="sub_properties_general_connect_on_open">Connect on open</string>
+    <string name="sub_properties_general_connect_to">Connect to</string>
+    <string name="sub_properties_general_filter">"Don't use filter"</string>
+    <string name="sub_properties_general_ping_on_open">Ping on open</string>
+    <string name="sub_properties_general_update_on_open">Update on open</string>
+    <string name="sub_properties_migration_info_description">Subscription settings are now located inside each individual subscription. Tap ··· (three dots) next to the desired subscription on the home screen and select Settings.</string>
+    <string name="sub_properties_migration_info_title">The settings have moved</string>
+    <string name="sub_properties_request_timeout_max">15 sec</string>
+    <string name="sub_properties_request_timeout_min">5 sec</string>
+    <string name="sub_properties_request_timeout_title">Subscription request timeout</string>
+    <string name="sub_properties_sending_data_hwid">Send HWID</string>
+    <string name="sub_properties_sending_data_hwid_description">When accessing the address, your device will transmit its Android version and HWID, neither of which contains any personal data.</string>
+    <string name="sub_properties_sending_data_title">Sending data</string>
+    <string name="sub_properties_server_sort_title">Server sorting rule</string>
+    <string name="sub_properties_title">Settings</string>
+    <string name="sub_properties_ua_title">User-Agent</string>
     <string name="sub_routing_delete_warning">Are you sure you want to delete this profile?</string>
     <string name="sub_routing_duplicated_name_description">A routing profile with this name already exists. Do you want to replace it?</string>
     <string name="sub_routing_duplicated_name_replace">Replace</string>
@@ -868,17 +913,10 @@ For detailed information, refer to the FAQ section."</string>
     <string name="title_other">Other Settings</string>
     <string name="title_ping">Ping</string>
     <string name="title_pref_auto_start_vpn">Auto-start application</string>
-    <string name="title_pref_auto_update_interval">Auto Update Interval</string>
-    <string name="title_pref_auto_update_subscription">Automatic update subscriptions</string>
-    <string name="title_pref_auto_update_subscription_notification">Show Notifications</string>
     <string name="title_pref_block_bindtodevice_enabled">Block bind to tunnel</string>
-    <string name="title_pref_collapse_subs">Collapse subscriptions</string>
-    <string name="title_pref_connect_on_open_subscription">Connect on open</string>
-    <string name="title_pref_connect_to_subscription">Connect to</string>
     <string name="title_pref_current_ip">Current IP</string>
     <string name="title_pref_delay_test_url">URL Test Settings</string>
     <string name="title_pref_dns_from_json">Use DNS from JSON</string>
-    <string name="title_pref_dont_use_filter">Don’t use filter</string>
     <string name="title_pref_excluded_routes">Excluded routes</string>
     <string name="title_pref_fake_dns_enabled">Enable Fake DNS</string>
     <string name="title_pref_font_size">Font size</string>
@@ -901,9 +939,7 @@ For detailed information, refer to the FAQ section."</string>
     <string name="title_pref_noises_rand">Rand</string>
     <string name="title_pref_noises_rand_range">RandRange</string>
     <string name="title_pref_noises_type">Type</string>
-    <string name="title_pref_open_auto_update_subscription">Update on open</string>
     <string name="title_pref_per_app_proxy">Per-app Proxy Settings</string>
-    <string name="title_pref_ping_on_open_subscription">Ping on open</string>
     <string name="title_pref_ping_result">Ping result</string>
     <string name="title_pref_proxy_sharing_enabled">Allow connections from the LAN</string>
     <string name="title_pref_proxy_sharing_enabled_extend_warning">Warning: connections from the LAN enabled, inbound authorization will not be applied</string>
@@ -913,7 +949,6 @@ For detailed information, refer to the FAQ section."</string>
     <string name="title_pref_resolve_server_dns_ip">DNS ip</string>
     <string name="title_pref_resolve_server_enabled">Enable Resolve Server</string>
     <string name="title_pref_send_hwid_in_cookie">Send HWID in Cookie</string>
-    <string name="title_pref_send_hwid_subscription">Send HWID</string>
     <string name="title_pref_sniffing_enabled">Enable Sniffing</string>
     <string name="title_pref_socks_port">SOCKS5 proxy port</string>
     <string name="title_pref_speed_enabled">Enable speed display</string>
@@ -964,6 +999,7 @@ For detailed information, refer to the FAQ section."</string>
     <string name="tooltip_description">tooltip</string>
     <string name="tooltip_label">show tooltip</string>
     <string name="unknown">Unknown</string>
+    <string name="update">Update</string>
     <string name="update_button_later">Later</string>
     <string name="update_button_update">Update</string>
     <string name="update_checking">Checking for update…</string>
@@ -979,7 +1015,7 @@ Version: %s"</string>
     <string name="update_install_title">New version</string>
     <string name="update_not_found">No updates available</string>
     <string name="update_notification_install">Install</string>
-    <string name="update_notification_title">New version application downloaded!</string>
+    <string name="update_notification_title">New app version is downloaded!</string>
     <string name="update_settings_install_from_unknown">"For your security, your phone currently isn't allowed to install unknown apps from this source. You can change this in Settings."</string>
     <string name="update_settings_install_settings">Settings Warning</string>
     <string name="url_schemes_add_routing_profile">Add Routing Profile</string>

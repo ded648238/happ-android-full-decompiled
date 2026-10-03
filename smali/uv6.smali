@@ -1,83 +1,111 @@
 .class public final Luv6;
-.super Landroid/text/style/ReplacementSpan;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lv2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:I
+.field public a:J
 
-
-# direct methods
-.method public constructor <init>(I)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Landroid/text/style/ReplacementSpan;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p1, p0, Luv6;->Q:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
+.field public b:Lnk0;
 
 
 # virtual methods
-.method public final draw(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIFIIILandroid/graphics/Paint;)V
-    .locals 0
+.method public final a(Lu2;)Z
+    .locals 4
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p1, Lsv6;
 
     .line 2
     .line 3
-    .line 4
-    invoke-virtual {p9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-wide v0, p0, Luv6;->a:J
 
+    .line 4
     .line 5
+    const-wide/16 v2, 0x0
+
     .line 6
     .line 7
-    return-void
-.end method
+    cmp-long v0, v0, v2
 
-.method public final getSize(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    const-string p2, " "
-
-    .line 5
-    .line 6
-    iget p3, p0, Luv6;->Q:I
-
-    .line 7
     .line 8
-    invoke-static {p3, p2}, Lzl6;->c0(ILjava/lang/String;)Ljava/lang/String;
-
     .line 9
+    if-ltz v0, :cond_0
+
     .line 10
     .line 11
-    move-result-object p2
+    const/4 p0, 0x0
 
     .line 12
-    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
+    return p0
+
+    .line 13
+    :cond_0
+    iget-wide v0, p1, Lsv6;->h0:J
+
+    .line 14
+    .line 15
+    iget-wide v2, p1, Lsv6;->i0:J
+
+    .line 16
+    .line 17
+    cmp-long v2, v0, v2
+
+    .line 18
+    .line 19
+    if-gez v2, :cond_1
+
+    .line 20
+    .line 21
+    iput-wide v0, p1, Lsv6;->i0:J
+
+    .line 22
+    .line 23
+    :cond_1
+    iput-wide v0, p0, Luv6;->a:J
+
+    .line 24
+    .line 25
+    const/4 p0, 0x1
+
+    .line 26
+    return p0
+.end method
+
+.method public final b(Lu2;)[Lb31;
+    .locals 4
+
+    .line 1
+    check-cast p1, Lsv6;
+
+    .line 2
+    .line 3
+    iget-wide v0, p0, Luv6;->a:J
+
+    .line 4
+    .line 5
+    const-wide/16 v2, -0x1
+
+    .line 6
+    .line 7
+    iput-wide v2, p0, Luv6;->a:J
+
+    .line 8
+    .line 9
+    const/4 v2, 0x0
+
+    .line 10
+    iput-object v2, p0, Luv6;->b:Lnk0;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1, v0, v1}, Lsv6;->x(J)[Lb31;
 
     .line 13
     .line 14
     .line 15
-    move-result p1
+    move-result-object p0
 
     .line 16
-    float-to-int p1, p1
-
-    .line 17
-    return p1
+    return-object p0
 .end method

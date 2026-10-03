@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http2/Http2;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -28,9 +28,9 @@
         "formattedType",
         "formatFlags",
         "(II)Ljava/lang/String;",
-        "Ly60;",
+        "Lo90;",
         "CONNECTION_PREFACE",
-        "Ly60;",
+        "Lo90;",
         "INITIAL_MAX_FRAME_SIZE",
         "I",
         "TYPE_DATA",
@@ -71,7 +71,7 @@
 # static fields
 .field private static final BINARY:[Ljava/lang/String;
 
-.field public static final CONNECTION_PREFACE:Ly60;
+.field public static final CONNECTION_PREFACE:Lo90;
 
 .field private static final FLAGS:[Ljava/lang/String;
 
@@ -136,7 +136,7 @@
 
     .line 7
     .line 8
-    sget-object v0, Ly60;->T:Ly60;
+    sget-object v0, Lo90;->c0:Lo90;
 
     .line 9
     .line 10
@@ -144,7 +144,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 13
     .line 14
@@ -152,7 +152,7 @@
     move-result-object v0
 
     .line 16
-    sput-object v0, Lokhttp3/internal/http2/Http2;->CONNECTION_PREFACE:Ly60;
+    sput-object v0, Lokhttp3/internal/http2/Http2;->CONNECTION_PREFACE:Lo90;
 
     .line 17
     .line 18
@@ -231,7 +231,7 @@
     const/4 v2, 0x0
 
     .line 55
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 56
     :goto_0
@@ -239,95 +239,95 @@
 
     .line 57
     .line 58
-    const/4 v5, 0x1
-
-    .line 59
     if-ge v3, v0, :cond_0
 
+    .line 59
     .line 60
-    .line 61
     invoke-static {v3}, Ljava/lang/Integer;->toBinaryString(I)Ljava/lang/String;
 
+    .line 61
     .line 62
     .line 63
-    .line 64
-    move-result-object v6
-
-    .line 65
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 66
-    .line 67
-    .line 68
-    new-array v5, v5, [Ljava/lang/Object;
-
-    .line 69
-    .line 70
-    aput-object v6, v5, v2
-
-    .line 71
-    .line 72
-    const-string v6, "%8s"
-
-    .line 73
-    .line 74
-    invoke-static {v6, v5}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 75
-    .line 76
-    .line 77
     move-result-object v5
 
-    .line 78
+    .line 64
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 65
+    .line 66
+    .line 67
+    filled-new-array {v5}, [Ljava/lang/Object;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v5
+
+    .line 71
+    const-string v6, "%8s"
+
+    .line 72
+    .line 73
+    invoke-static {v6, v5}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v5
+
+    .line 77
     const/16 v6, 0x30
 
+    .line 78
     .line 79
-    .line 80
-    invoke-static {v5, v4, v6}, Lzl6;->e0(Ljava/lang/String;CC)Ljava/lang/String;
+    invoke-static {v5, v4, v6}, Lla7;->F0(Ljava/lang/String;CC)Ljava/lang/String;
 
+    .line 80
     .line 81
     .line 82
-    .line 83
     move-result-object v4
 
-    .line 84
+    .line 83
     aput-object v4, v1, v3
 
+    .line 84
     .line 85
-    .line 86
     add-int/lit8 v3, v3, 0x1
 
+    .line 86
     .line 87
-    .line 88
     goto :goto_0
 
-    .line 89
+    .line 88
     :cond_0
     sput-object v1, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
 
+    .line 89
     .line 90
-    .line 91
     sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
+    .line 91
     .line 92
-    .line 93
     const-string v1, ""
 
+    .line 93
     .line 94
-    .line 95
     aput-object v1, v0, v2
 
+    .line 95
     .line 96
-    .line 97
     const-string v1, "END_STREAM"
 
+    .line 97
     .line 98
+    const/4 v3, 0x1
+
     .line 99
-    aput-object v1, v0, v5
+    aput-object v1, v0, v3
 
     .line 100
     .line 101
-    filled-new-array {v5}, [I
+    filled-new-array {v3}, [I
 
     .line 102
     .line 103
@@ -372,7 +372,7 @@
 
     .line 123
     .line 124
-    invoke-static {v7, v3, v8}, Lkd0;->z(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v3, v8}, Leh0;->r(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 125
     .line 126
@@ -423,7 +423,7 @@
     move-result-object v0
 
     .line 149
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 150
     :goto_1
@@ -528,7 +528,7 @@
 
     .line 202
     .line 203
-    invoke-static {v10, v4, v8}, Lkd0;->z(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10, v4, v8}, Leh0;->r(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 204
     .line 205
@@ -611,80 +611,80 @@
 
 # virtual methods
 .method public final formatFlags(II)Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     if-nez p2, :cond_0
 
     .line 2
     .line 3
-    const-string p1, ""
+    const-string p0, ""
 
     .line 4
     .line 5
-    return-object p1
+    return-object p0
 
     .line 6
     :cond_0
-    const/4 v0, 0x2
+    const/4 p0, 0x2
 
     .line 7
-    if-eq p1, v0, :cond_6
+    if-eq p1, p0, :cond_6
 
     .line 8
     .line 9
-    const/4 v0, 0x3
+    const/4 p0, 0x3
 
     .line 10
-    if-eq p1, v0, :cond_6
+    if-eq p1, p0, :cond_6
 
     .line 11
     .line 12
-    const/4 v0, 0x4
+    const/4 p0, 0x4
 
     .line 13
-    if-eq p1, v0, :cond_4
+    if-eq p1, p0, :cond_4
 
     .line 14
     .line 15
-    const/4 v0, 0x6
+    const/4 p0, 0x6
 
     .line 16
-    if-eq p1, v0, :cond_4
+    if-eq p1, p0, :cond_4
 
     .line 17
     .line 18
-    const/4 v0, 0x7
+    const/4 p0, 0x7
 
     .line 19
-    if-eq p1, v0, :cond_6
+    if-eq p1, p0, :cond_6
 
     .line 20
     .line 21
-    const/16 v0, 0x8
+    const/16 p0, 0x8
 
     .line 22
     .line 23
-    if-eq p1, v0, :cond_6
+    if-eq p1, p0, :cond_6
 
     .line 24
     .line 25
-    sget-object v0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
+    sget-object p0, Lokhttp3/internal/http2/Http2;->FLAGS:[Ljava/lang/String;
 
     .line 26
     .line 27
-    array-length v1, v0
+    array-length v0, p0
 
     .line 28
-    if-ge p2, v1, :cond_1
+    if-ge p2, v0, :cond_1
 
     .line 29
     .line 30
-    aget-object v0, v0, p2
+    aget-object p0, p0, p2
 
     .line 31
     .line 32
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 33
     .line 34
@@ -693,30 +693,30 @@
 
     .line 36
     :cond_1
-    sget-object v0, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
+    sget-object p0, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
 
     .line 37
     .line 38
-    aget-object v0, v0, p2
+    aget-object p0, p0, p2
 
     .line 39
     .line 40
     :goto_0
-    const/4 v1, 0x5
+    const/4 v0, 0x5
 
     .line 41
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 42
-    if-ne p1, v1, :cond_2
+    if-ne p1, v0, :cond_2
 
     .line 43
     .line 44
-    and-int/lit8 v1, p2, 0x4
+    and-int/lit8 v0, p2, 0x4
 
     .line 45
     .line 46
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
     .line 47
     .line 48
@@ -728,15 +728,15 @@
 
     .line 51
     .line 52
-    invoke-static {v0, p1, p2, v2}, Lzl6;->d0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {p0, p1, p2, v1}, Lla7;->E0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     .line 53
     .line 54
     .line 55
-    move-result-object p1
+    move-result-object p0
 
     .line 56
-    return-object p1
+    return-object p0
 
     .line 57
     :cond_2
@@ -760,80 +760,77 @@
 
     .line 66
     .line 67
-    invoke-static {v0, p1, p2, v2}, Lzl6;->d0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {p0, p1, p2, v1}, Lla7;->E0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     .line 68
     .line 69
     .line 70
-    move-result-object p1
+    move-result-object p0
 
     .line 71
-    return-object p1
+    :cond_3
+    return-object p0
 
     .line 72
-    :cond_3
-    return-object v0
+    :cond_4
+    const/4 p0, 0x1
 
     .line 73
-    :cond_4
-    const/4 p1, 0x1
+    if-ne p2, p0, :cond_5
 
     .line 74
-    if-ne p2, p1, :cond_5
-
     .line 75
-    .line 76
-    const-string p1, "ACK"
+    const-string p0, "ACK"
 
+    .line 76
     .line 77
+    return-object p0
+
     .line 78
-    return-object p1
+    :cond_5
+    sget-object p0, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
 
     .line 79
-    :cond_5
-    sget-object p1, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
-
     .line 80
-    .line 81
-    aget-object p1, p1, p2
+    aget-object p0, p0, p2
 
+    .line 81
     .line 82
+    return-object p0
+
     .line 83
-    return-object p1
+    :cond_6
+    sget-object p0, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
 
     .line 84
-    :cond_6
-    sget-object p1, Lokhttp3/internal/http2/Http2;->BINARY:[Ljava/lang/String;
-
     .line 85
-    .line 86
-    aget-object p1, p1, p2
+    aget-object p0, p0, p2
 
+    .line 86
     .line 87
-    .line 88
-    return-object p1
+    return-object p0
 .end method
 
 .method public final formattedType$okhttp(I)Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 1
-    sget-object v0, Lokhttp3/internal/http2/Http2;->FRAME_NAMES:[Ljava/lang/String;
+    sget-object p0, Lokhttp3/internal/http2/Http2;->FRAME_NAMES:[Ljava/lang/String;
 
     .line 2
     .line 3
-    array-length v1, v0
+    array-length v0, p0
 
     .line 4
-    if-ge p1, v1, :cond_0
+    if-ge p1, v0, :cond_0
 
     .line 5
     .line 6
-    aget-object p1, v0, p1
+    aget-object p0, p0, p1
 
     .line 7
     .line 8
-    return-object p1
+    return-object p0
 
     .line 9
     :cond_0
@@ -842,40 +839,34 @@
     .line 10
     .line 11
     .line 12
-    move-result-object p1
+    move-result-object p0
 
     .line 13
-    const/4 v0, 0x1
+    filled-new-array {p0}, [Ljava/lang/Object;
 
     .line 14
-    new-array v0, v0, [Ljava/lang/Object;
-
     .line 15
     .line 16
-    const/4 v1, 0x0
+    move-result-object p0
 
     .line 17
-    aput-object p1, v0, v1
+    const-string p1, "0x%02x"
 
     .line 18
     .line 19
-    const-string p1, "0x%02x"
+    invoke-static {p1, p0}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 20
     .line 21
-    invoke-static {p1, v0}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
     .line 22
-    .line 23
-    .line 24
-    move-result-object p1
+    move-result-object p0
 
-    .line 25
-    return-object p1
+    .line 23
+    return-object p0
 .end method
 
 .method public final frameLog(ZIIII)Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p0, p4}, Lokhttp3/internal/http2/Http2;->formattedType$okhttp(I)Ljava/lang/String;
@@ -891,7 +882,7 @@
     .line 6
     .line 7
     .line 8
-    move-result-object p4
+    move-result-object p0
 
     .line 9
     if-eqz p1, :cond_0
@@ -927,59 +918,25 @@
     move-result-object p3
 
     .line 24
-    const/4 p5, 0x5
+    filled-new-array {p1, p2, p3, v0, p0}, [Ljava/lang/Object;
 
     .line 25
-    new-array p5, p5, [Ljava/lang/Object;
-
     .line 26
     .line 27
-    const/4 v1, 0x0
+    move-result-object p0
 
     .line 28
-    aput-object p1, p5, v1
+    const-string p1, "%s 0x%08x %5d %-13s %s"
 
     .line 29
     .line 30
-    const/4 p1, 0x1
+    invoke-static {p1, p0}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 31
-    aput-object p2, p5, p1
-
     .line 32
     .line 33
-    const/4 p1, 0x2
+    move-result-object p0
 
     .line 34
-    aput-object p3, p5, p1
-
-    .line 35
-    .line 36
-    const/4 p1, 0x3
-
-    .line 37
-    aput-object v0, p5, p1
-
-    .line 38
-    .line 39
-    const/4 p1, 0x4
-
-    .line 40
-    aput-object p4, p5, p1
-
-    .line 41
-    .line 42
-    const-string p1, "%s 0x%08x %5d %-13s %s"
-
-    .line 43
-    .line 44
-    invoke-static {p1, p5}, Lokhttp3/internal/Util;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object p1
-
-    .line 48
-    return-object p1
+    return-object p0
 .end method

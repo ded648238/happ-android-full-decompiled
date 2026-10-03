@@ -1,10 +1,10 @@
 .class public abstract Lcom/google/gson/internal/bind/a;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final b:Lk31;
+.field public static final b:Ljb1;
 
 
 # instance fields
@@ -16,7 +16,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lk31;
+    new-instance v0, Ljb1;
 
     .line 2
     .line 3
@@ -29,7 +29,7 @@
     .line 6
     .line 7
     .line 8
-    sput-object v0, Lcom/google/gson/internal/bind/a;->b:Lk31;
+    sput-object v0, Lcom/google/gson/internal/bind/a;->b:Ljb1;
 
     .line 9
     .line 10
@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method public final a(II)Lwa7;
+.method public final a(II)Lj38;
     .locals 1
 
     .line 1
@@ -67,7 +67,7 @@
     .line 4
     .line 5
     .line 6
-    sget-object p1, Lcom/google/gson/internal/bind/b;->a:Lwa7;
+    sget-object p1, Lcom/google/gson/internal/bind/b;->a:Lj38;
 
     .line 7
     .line 8
@@ -75,11 +75,11 @@
 
     .line 9
     .line 10
-    iget-object p2, p0, Lcom/google/gson/internal/bind/a;->a:Ljava/lang/Class;
+    iget-object p0, p0, Lcom/google/gson/internal/bind/a;->a:Ljava/lang/Class;
 
     .line 11
     .line 12
-    invoke-direct {p1, p2, v0}, Lcom/google/gson/internal/bind/TypeAdapters$30;-><init>(Ljava/lang/Class;Lcom/google/gson/b;)V
+    invoke-direct {p1, p0, v0}, Lcom/google/gson/internal/bind/TypeAdapters$30;-><init>(Ljava/lang/Class;Lcom/google/gson/b;)V
 
     .line 13
     .line 14

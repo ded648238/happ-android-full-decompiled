@@ -8,14 +8,12 @@ import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.RippleDrawable;
-import android.os.Build;
 import android.os.Parcelable;
 import android.text.Layout;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.StateSet;
-import android.util.TypedValue;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
@@ -23,194 +21,198 @@ import android.widget.Button;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.appcompat.widget.AppCompatButton;
-import defpackage.b0;
-import defpackage.bb1;
-import defpackage.bv7;
-import defpackage.c37;
-import defpackage.d04;
-import defpackage.e21;
-import defpackage.e27;
-import defpackage.f92;
-import defpackage.fn;
-import defpackage.hc7;
-import defpackage.hg1;
-import defpackage.i04;
-import defpackage.j86;
-import defpackage.lz3;
-import defpackage.mz3;
-import defpackage.na5;
-import defpackage.nz3;
-import defpackage.o5;
-import defpackage.ph6;
-import defpackage.qh6;
-import defpackage.rh6;
-import defpackage.sf6;
-import defpackage.tf6;
-import defpackage.ub;
-import defpackage.v75;
-import defpackage.va5;
-import defpackage.x86;
-import defpackage.xf5;
-import defpackage.xy4;
-import defpackage.yr;
-import defpackage.yx;
-import defpackage.zd7;
+import defpackage.a1;
+import defpackage.bh4;
+import defpackage.cu7;
+import defpackage.dh;
+import defpackage.gj1;
+import defpackage.gv7;
+import defpackage.h31;
+import defpackage.h71;
+import defpackage.hh4;
+import defpackage.i60;
+import defpackage.ig4;
+import defpackage.io1;
+import defpackage.jf1;
+import defpackage.jg4;
+import defpackage.jq8;
+import defpackage.kg4;
+import defpackage.lg4;
+import defpackage.lv6;
+import defpackage.mg4;
+import defpackage.nu5;
+import defpackage.o37;
+import defpackage.p37;
+import defpackage.q57;
+import defpackage.r57;
+import defpackage.s44;
+import defpackage.s57;
+import defpackage.ur5;
+import defpackage.ut;
+import defpackage.uu5;
+import defpackage.v31;
+import defpackage.w31;
+import defpackage.wu6;
+import defpackage.xu6;
+import defpackage.yl0;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public class MaterialButton extends AppCompatButton implements Checkable, x86 {
-    public final nz3 T;
-    public final LinkedHashSet U;
-    public lz3 V;
-    public PorterDuff.Mode W;
-    public ColorStateList a0;
-    public Drawable b0;
-    public String c0;
-    public int d0;
-    public int e0;
-    public int f0;
-    public int g0;
-    public boolean h0;
-    public boolean i0;
-    public int j0;
-    public int k0;
-    public float l0;
-    public int m0;
-    public int n0;
-    public LinearLayout.LayoutParams o0;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public class MaterialButton extends AppCompatButton implements Checkable, lv6 {
+    public static final int[] Q0 = {R.attr.state_checkable};
+    public static final int[] R0 = {R.attr.state_checked};
+    public static final int S0 = nu5.Widget_MaterialComponents_Button;
+    public static final int T0 = ur5.materialSizeOverlay;
+    public static final gj1 U0 = new gj1(1);
+    public int A0;
+    public int B0;
+    public float C0;
+    public int D0;
+    public int E0;
+    public LinearLayout.LayoutParams F0;
+    public boolean G0;
+    public int H0;
+    public boolean I0;
+    public int J0;
+    public s57 K0;
+    public int L0;
+    public lg4 M0;
+    public float N0;
+    public float O0;
+    public o37 P0;
+    public final mg4 g0;
+    public final LinkedHashSet h0;
+    public jg4 i0;
+    public PorterDuff.Mode j0;
+    public ColorStateList k0;
+    public Drawable l0;
+    public PorterDuff.Mode m0;
+    public ColorStateList n0;
+    public Drawable o0;
     public boolean p0;
-    public int q0;
-    public boolean r0;
+    public String q0;
+    public int r0;
     public int s0;
-    public rh6 t0;
+    public int t0;
     public int u0;
-    public float v0;
-    public float w0;
-    public sf6 x0;
-    public static final int[] y0 = {R.attr.state_checkable};
-    public static final int[] z0 = {R.attr.state_checked};
-    public static final int A0 = na5.Widget_MaterialComponents_Button;
-    public static final int B0 = v75.materialSizeOverlay;
-    public static final bb1 C0 = new bb1(1);
+    public int v0;
+    public int w0;
+    public boolean x0;
+    public boolean y0;
+    public int z0;
 
     /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public MaterialButton(Context context, AttributeSet attributeSet, int i) {
-        int[] iArr = {B0};
-        int i2 = A0;
-        super(i04.b(context, attributeSet, i, i2, iArr), attributeSet, i);
-        this.U = new LinkedHashSet();
-        this.h0 = false;
-        this.i0 = false;
-        this.k0 = -1;
-        this.l0 = -1.0f;
-        this.m0 = -1;
-        this.n0 = -1;
-        this.s0 = -1;
+        super(hh4.a(i, r5, context, attributeSet, r0), attributeSet, i);
+        int[] iArr = {T0};
+        int i2 = S0;
+        this.h0 = new LinkedHashSet();
+        this.x0 = false;
+        this.y0 = false;
+        this.B0 = Integer.MIN_VALUE;
+        this.C0 = -2.14748365E9f;
+        this.D0 = Integer.MIN_VALUE;
+        this.E0 = Integer.MIN_VALUE;
+        this.J0 = Integer.MIN_VALUE;
+        this.M0 = lg4.c0;
         Context context2 = getContext();
-        TypedArray typedArrayD = c37.d(context2, attributeSet, va5.MaterialButton, i, i2, new int[0]);
-        this.g0 = typedArrayD.getDimensionPixelSize(va5.MaterialButton_iconPadding, 0);
-        int i3 = typedArrayD.getInt(va5.MaterialButton_iconTintMode, -1);
+        TypedArray d = gv7.d(context2, attributeSet, uu5.MaterialButton, i, i2, new int[0]);
+        this.u0 = d.getDimensionPixelSize(uu5.MaterialButton_iconPadding, 0);
+        int i3 = d.getInt(uu5.MaterialButton_iconTintMode, -1);
         PorterDuff.Mode mode = PorterDuff.Mode.SRC_IN;
-        this.W = e27.e(i3, mode);
-        this.a0 = hc7.F(getContext(), typedArrayD, va5.MaterialButton_iconTint);
-        this.b0 = hc7.I(getContext(), typedArrayD, va5.MaterialButton_icon);
-        this.j0 = typedArrayD.getInteger(va5.MaterialButton_iconGravity, 1);
-        this.d0 = typedArrayD.getDimensionPixelSize(va5.MaterialButton_iconSize, 0);
-        ph6 ph6VarB = ph6.b(context2, typedArrayD, va5.MaterialButton_shapeAppearance);
-        j86 j86VarC = ph6VarB != null ? ph6VarB.c() : j86.b(context2, attributeSet, i, i2).b();
-        boolean z = typedArrayD.getBoolean(va5.MaterialButton_opticalCenterEnabled, false);
-        nz3 nz3Var = new nz3(this, j86VarC);
-        this.T = nz3Var;
-        nz3Var.f = typedArrayD.getDimensionPixelOffset(va5.MaterialButton_android_insetLeft, 0);
-        nz3Var.g = typedArrayD.getDimensionPixelOffset(va5.MaterialButton_android_insetRight, 0);
-        nz3Var.h = typedArrayD.getDimensionPixelOffset(va5.MaterialButton_android_insetTop, 0);
-        nz3Var.i = typedArrayD.getDimensionPixelOffset(va5.MaterialButton_android_insetBottom, 0);
-        if (typedArrayD.hasValue(va5.MaterialButton_cornerRadius)) {
-            int dimensionPixelSize = typedArrayD.getDimensionPixelSize(va5.MaterialButton_cornerRadius, -1);
-            nz3Var.j = dimensionPixelSize;
-            float f = dimensionPixelSize;
-            o5 o5VarF = nz3Var.b.f();
-            o5VarF.U = new b0(f);
-            o5VarF.V = new b0(f);
-            o5VarF.W = new b0(f);
-            o5VarF.X = new b0(f);
-            nz3Var.b = o5VarF.b();
-            nz3Var.c = null;
-            nz3Var.d();
-            nz3Var.s = true;
+        this.j0 = cu7.b(i3, mode);
+        this.k0 = jf1.x(getContext(), d, uu5.MaterialButton_iconTint);
+        this.l0 = jf1.A(getContext(), d, uu5.MaterialButton_icon);
+        this.z0 = d.getInteger(uu5.MaterialButton_iconGravity, 1);
+        this.r0 = d.getDimensionPixelSize(uu5.MaterialButton_iconSize, 0);
+        this.m0 = cu7.b(d.getInt(uu5.MaterialButton_secondaryIconTintMode, -1), mode);
+        this.n0 = d.hasValue(uu5.MaterialButton_secondaryIconTint) ? jf1.x(getContext(), d, uu5.MaterialButton_secondaryIconTint) : this.k0;
+        this.A0 = d.getInteger(uu5.MaterialButton_secondaryIconGravity, 3);
+        Drawable A = jf1.A(getContext(), d, uu5.MaterialButton_secondaryIcon);
+        this.o0 = A;
+        this.p0 = A == null;
+        wu6 h = q57.h(context2, d, uu5.MaterialButton_shapeAppearance);
+        h = h == null ? xu6.g(context2, attributeSet, i, i2).b() : h;
+        boolean z = d.getBoolean(uu5.MaterialButton_opticalCenterEnabled, false);
+        mg4 mg4Var = new mg4(this, h);
+        this.g0 = mg4Var;
+        mg4Var.e = d.getDimensionPixelOffset(uu5.MaterialButton_android_insetLeft, 0);
+        mg4Var.f = d.getDimensionPixelOffset(uu5.MaterialButton_android_insetRight, 0);
+        mg4Var.g = d.getDimensionPixelOffset(uu5.MaterialButton_android_insetTop, 0);
+        mg4Var.h = d.getDimensionPixelOffset(uu5.MaterialButton_android_insetBottom, 0);
+        if (d.hasValue(uu5.MaterialButton_cornerRadius)) {
+            int dimensionPixelSize = d.getDimensionPixelSize(uu5.MaterialButton_cornerRadius, -1);
+            mg4Var.i = dimensionPixelSize;
+            mg4Var.b = mg4Var.b.a(dimensionPixelSize);
+            mg4Var.d();
+            mg4Var.r = true;
         }
-        nz3Var.k = typedArrayD.getDimensionPixelSize(va5.MaterialButton_strokeWidth, 0);
-        nz3Var.l = e27.e(typedArrayD.getInt(va5.MaterialButton_backgroundTintMode, -1), mode);
-        nz3Var.m = hc7.F(getContext(), typedArrayD, va5.MaterialButton_backgroundTint);
-        nz3Var.n = hc7.F(getContext(), typedArrayD, va5.MaterialButton_strokeColor);
-        nz3Var.o = hc7.F(getContext(), typedArrayD, va5.MaterialButton_rippleColor);
-        nz3Var.t = typedArrayD.getBoolean(va5.MaterialButton_android_checkable, false);
-        nz3Var.w = typedArrayD.getDimensionPixelSize(va5.MaterialButton_elevation, 0);
-        nz3Var.u = typedArrayD.getBoolean(va5.MaterialButton_toggleCheckedStateOnClick, true);
+        mg4Var.j = d.getDimensionPixelSize(uu5.MaterialButton_strokeWidth, 0);
+        mg4Var.k = cu7.b(d.getInt(uu5.MaterialButton_backgroundTintMode, -1), mode);
+        mg4Var.l = jf1.x(getContext(), d, uu5.MaterialButton_backgroundTint);
+        mg4Var.m = jf1.x(getContext(), d, uu5.MaterialButton_strokeColor);
+        mg4Var.n = jf1.x(getContext(), d, uu5.MaterialButton_rippleColor);
+        mg4Var.s = d.getBoolean(uu5.MaterialButton_android_checkable, false);
+        mg4Var.v = d.getDimensionPixelSize(uu5.MaterialButton_elevation, 0);
+        mg4Var.t = d.getBoolean(uu5.MaterialButton_toggleCheckedStateOnClick, true);
         int paddingStart = getPaddingStart();
         int paddingTop = getPaddingTop();
         int paddingEnd = getPaddingEnd();
         int paddingBottom = getPaddingBottom();
-        if (typedArrayD.hasValue(va5.MaterialButton_android_background)) {
-            nz3Var.r = true;
-            setSupportBackgroundTintList(nz3Var.m);
-            setSupportBackgroundTintMode(nz3Var.l);
+        if (d.hasValue(uu5.MaterialButton_android_background)) {
+            mg4Var.q = true;
+            setSupportBackgroundTintList(mg4Var.l);
+            setSupportBackgroundTintMode(mg4Var.k);
         } else {
-            nz3Var.c();
+            mg4Var.c();
         }
-        setPaddingRelative(paddingStart + nz3Var.f, paddingTop + nz3Var.h, paddingEnd + nz3Var.g, paddingBottom + nz3Var.i);
-        setCheckedInternal(typedArrayD.getBoolean(va5.MaterialButton_android_checked, false));
-        if (ph6VarB != null) {
-            nz3Var.d = d();
-            if (nz3Var.c != null) {
-                nz3Var.d();
+        setPaddingRelative(paddingStart + mg4Var.e, paddingTop + mg4Var.g, paddingEnd + mg4Var.f, paddingBottom + mg4Var.h);
+        setCheckedInternal(d.getBoolean(uu5.MaterialButton_android_checked, false));
+        if (h instanceof q57) {
+            mg4Var.c = ut.j0(getContext(), ur5.motionSpringFastSpatial, nu5.Motion_Material3_Spring_Standard_Fast_Spatial);
+            if (mg4Var.b instanceof q57) {
+                mg4Var.d();
             }
-            nz3Var.c = ph6VarB;
-            nz3Var.d();
         }
         setOpticalCenterEnabled(z);
-        typedArrayD.recycle();
-        setCompoundDrawablePadding(this.g0);
-        h(this.b0 != null);
+        d.recycle();
+        setCompoundDrawablePadding(this.u0);
+        u(this.l0 != null);
+        x(this.o0 != null);
     }
 
-    public static /* synthetic */ void a(MaterialButton materialButton) {
-        materialButton.q0 = materialButton.getOpticalCenterShift();
-        materialButton.j();
+    public static /* synthetic */ void b(MaterialButton materialButton) {
+        materialButton.H0 = materialButton.getOpticalCenterShift();
+        materialButton.w();
         materialButton.invalidate();
     }
 
     private Layout.Alignment getActualTextAlignment() {
         int textAlignment = getTextAlignment();
-        if (textAlignment == 1) {
-            return getGravityTextAlignment();
-        }
-        if (textAlignment == 6 || textAlignment == 3) {
-            return Layout.Alignment.ALIGN_OPPOSITE;
-        }
-        return textAlignment != 4 ? Layout.Alignment.ALIGN_NORMAL : Layout.Alignment.ALIGN_CENTER;
+        return textAlignment != 1 ? (textAlignment == 6 || textAlignment == 3) ? Layout.Alignment.ALIGN_OPPOSITE : textAlignment != 4 ? Layout.Alignment.ALIGN_NORMAL : Layout.Alignment.ALIGN_CENTER : getGravityTextAlignment();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public float getDisplayedWidthIncrease() {
-        return this.v0;
+        return this.N0;
     }
 
     private Layout.Alignment getGravityTextAlignment() {
         int gravity = getGravity() & 8388615;
-        if (gravity != 1) {
-            return (gravity == 5 || gravity == 8388613) ? Layout.Alignment.ALIGN_OPPOSITE : Layout.Alignment.ALIGN_NORMAL;
-        }
-        return Layout.Alignment.ALIGN_CENTER;
+        return gravity != 1 ? (gravity == 5 || gravity == 8388613) ? Layout.Alignment.ALIGN_OPPOSITE : Layout.Alignment.ALIGN_NORMAL : Layout.Alignment.ALIGN_CENTER;
     }
 
     private int getOpticalCenterShift() {
-        d04 d04VarA;
-        if (this.p0 && this.r0 && (d04VarA = this.T.a(false)) != null) {
-            return (int) (d04VarA.i() * 0.11f);
+        bh4 a;
+        if (this.G0 && this.I0 && (a = this.g0.a(false)) != null) {
+            return (int) (a.j() * 0.11f);
         }
         return 0;
     }
@@ -220,222 +222,133 @@ public class MaterialButton extends AppCompatButton implements Checkable, x86 {
             return getLayout().getHeight();
         }
         TextPaint paint = getPaint();
-        String string = getText().toString();
+        String charSequence = getText().toString();
         if (getTransformationMethod() != null) {
-            string = getTransformationMethod().getTransformation(string, this).toString();
+            charSequence = getTransformationMethod().getTransformation(charSequence, this).toString();
         }
         Rect rect = new Rect();
-        paint.getTextBounds(string, 0, string.length(), rect);
+        paint.getTextBounds(charSequence, 0, charSequence.length(), rect);
         return Math.min(rect.height(), getLayout().getHeight());
     }
 
     private int getTextLayoutWidth() {
         int lineCount = getLineCount();
-        float fMax = 0.0f;
+        float f = 0.0f;
         for (int i = 0; i < lineCount; i++) {
-            fMax = Math.max(fMax, getLayout().getLineWidth(i));
+            f = Math.max(f, getLayout().getLineWidth(i));
         }
-        return (int) Math.ceil(fMax);
+        return (int) Math.ceil(f);
     }
 
     private void setCheckedInternal(boolean z) {
-        nz3 nz3Var = this.T;
-        if (nz3Var == null || !nz3Var.t || this.h0 == z) {
+        if (!k() || this.x0 == z) {
             return;
         }
-        this.h0 = z;
+        this.x0 = z;
         refreshDrawableState();
         if (getParent() instanceof MaterialButtonToggleGroup) {
             MaterialButtonToggleGroup materialButtonToggleGroup = (MaterialButtonToggleGroup) getParent();
-            boolean z2 = this.h0;
-            if (!materialButtonToggleGroup.f0) {
-                materialButtonToggleGroup.f(getId(), z2);
+            boolean z2 = this.x0;
+            if (!materialButtonToggleGroup.q0) {
+                materialButtonToggleGroup.k(getId(), z2);
             }
         }
-        if (this.i0) {
+        if (this.y0) {
             return;
         }
-        this.i0 = true;
-        Iterator it = this.U.iterator();
+        this.y0 = true;
+        Iterator it = this.h0.iterator();
         if (it.hasNext()) {
-            throw xy4.t(it);
+            throw w31.j(it);
         }
-        this.i0 = false;
+        this.y0 = false;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void setDisplayedWidthIncrease(float f) {
-        MaterialButton materialButton;
-        MaterialButton materialButton2;
-        if (this.v0 != f) {
-            this.v0 = f;
-            j();
+        if (this.N0 != f) {
+            this.N0 = f;
+            w();
             invalidate();
             if (getParent() instanceof MaterialButtonGroup) {
                 MaterialButtonGroup materialButtonGroup = (MaterialButtonGroup) getParent();
-                int i = (int) this.v0;
-                int iIndexOfChild = materialButtonGroup.indexOfChild(this);
-                if (iIndexOfChild < 0) {
+                int i = (int) this.N0;
+                int indexOfChild = materialButtonGroup.indexOfChild(this);
+                if (indexOfChild < 0) {
                     return;
                 }
-                int i2 = iIndexOfChild - 1;
-                while (true) {
-                    materialButton = null;
-                    if (i2 < 0) {
-                        materialButton2 = null;
-                        break;
-                    } else {
-                        if (materialButtonGroup.c(i2)) {
-                            materialButton2 = (MaterialButton) materialButtonGroup.getChildAt(i2);
-                            break;
-                        }
-                        i2--;
-                    }
-                }
-                int childCount = materialButtonGroup.getChildCount();
-                while (true) {
-                    iIndexOfChild++;
-                    if (iIndexOfChild >= childCount) {
-                        break;
-                    } else if (materialButtonGroup.c(iIndexOfChild)) {
-                        materialButton = (MaterialButton) materialButtonGroup.getChildAt(iIndexOfChild);
-                        break;
-                    }
-                }
-                if (materialButton2 == null && materialButton == null) {
+                MaterialButton g = materialButtonGroup.g(indexOfChild);
+                MaterialButton f2 = materialButtonGroup.f(indexOfChild);
+                if (g == null && f2 == null) {
                     return;
                 }
-                if (materialButton2 == null) {
-                    materialButton.setDisplayedWidthDecrease(i);
+                if (g == null) {
+                    f2.setDisplayedWidthDecrease(i);
                 }
-                if (materialButton == null) {
-                    materialButton2.setDisplayedWidthDecrease(i);
+                if (f2 == null) {
+                    g.setDisplayedWidthDecrease(i);
                 }
-                if (materialButton2 == null || materialButton == null) {
+                if (g == null || f2 == null) {
                     return;
                 }
-                materialButton2.setDisplayedWidthDecrease(i / 2);
-                materialButton.setDisplayedWidthDecrease((i + 1) / 2);
+                g.setDisplayedWidthDecrease(i / 2);
+                f2.setDisplayedWidthDecrease((i + 1) / 2);
             }
-        }
-    }
-
-    public final tf6 d() {
-        Context context = getContext();
-        int i = v75.motionSpringFastSpatial;
-        int i2 = na5.Motion_Material3_Spring_Standard_Fast_Spatial;
-        TypedValue typedValueG0 = xf5.g0(context, i);
-        TypedArray typedArrayObtainStyledAttributes = typedValueG0 == null ? context.obtainStyledAttributes(null, va5.MaterialSpring, 0, i2) : context.obtainStyledAttributes(typedValueG0.resourceId, va5.MaterialSpring);
-        tf6 tf6Var = new tf6();
-        try {
-            float f = typedArrayObtainStyledAttributes.getFloat(va5.MaterialSpring_stiffness, Float.MIN_VALUE);
-            if (f == Float.MIN_VALUE) {
-                throw new IllegalArgumentException("A MaterialSpring style must have stiffness value.");
-            }
-            float f2 = typedArrayObtainStyledAttributes.getFloat(va5.MaterialSpring_damping, Float.MIN_VALUE);
-            if (f2 == Float.MIN_VALUE) {
-                throw new IllegalArgumentException("A MaterialSpring style must have a damping value.");
-            }
-            tf6Var.b(f);
-            tf6Var.a(f2);
-            typedArrayObtainStyledAttributes.recycle();
-            return tf6Var;
-        } catch (Throwable th) {
-            typedArrayObtainStyledAttributes.recycle();
-            throw th;
         }
     }
 
     public final boolean e() {
-        nz3 nz3Var = this.T;
-        return (nz3Var == null || nz3Var.r) ? false : true;
+        if (m() && p()) {
+            return true;
+        }
+        if (l() && o()) {
+            return true;
+        }
+        return n() && q();
     }
 
-    /* JADX WARN: Code duplicated, block: B:39:0x0081  */
-    /* JADX WARN: Code duplicated, block: B:46:? A[RETURN, SYNTHETIC] */
-    public final void f(boolean z) {
-        int i;
-        if (this.t0 == null) {
-            return;
-        }
-        if (this.x0 == null) {
-            sf6 sf6Var = new sf6(this, C0);
-            this.x0 = sf6Var;
-            sf6Var.m = d();
-        }
-        if (this.r0) {
-            int i2 = this.u0;
-            rh6 rh6Var = this.t0;
-            int[] drawableState = getDrawableState();
-            int[][] iArr = rh6Var.c;
-            int i3 = 0;
-            int i4 = 0;
-            while (true) {
-                i = -1;
-                if (i4 >= rh6Var.a) {
-                    i4 = -1;
-                    break;
-                } else if (StateSet.stateSetMatches(iArr[i4], drawableState)) {
-                    break;
-                } else {
-                    i4++;
-                }
-            }
-            if (i4 < 0) {
-                int[] iArr2 = StateSet.WILD_CARD;
-                int[][] iArr3 = rh6Var.c;
-                for (int i5 = 0; i5 < rh6Var.a; i5++) {
-                    if (StateSet.stateSetMatches(iArr3[i5], iArr2)) {
-                        i = i5;
-                        break;
-                    }
-                }
-                i4 = i;
-            }
-            qh6 qh6Var = (qh6) (i4 < 0 ? rh6Var.b : rh6Var.d[i4]).R;
-            int width = getWidth();
-            float f = qh6Var.b;
-            int i6 = qh6Var.a;
-            if (i6 != 1) {
-                if (i6 == 2) {
-                }
-                this.x0.a(Math.min(i2, i3));
-                if (z) {
-                    this.x0.e();
-                }
-            }
-            f *= width;
-            i3 = (int) f;
-            this.x0.a(Math.min(i2, i3));
-            if (z) {
-                this.x0.e();
-            }
-        }
+    public final boolean f(int i) {
+        Layout.Alignment actualTextAlignment = getActualTextAlignment();
+        return i == 1 || i == 3 || (i == 2 && actualTextAlignment == Layout.Alignment.ALIGN_NORMAL) || (i == 4 && actualTextAlignment == Layout.Alignment.ALIGN_OPPOSITE);
     }
 
-    public final void g() {
-        int i = this.j0;
-        if (i == 1 || i == 2) {
-            setCompoundDrawablesRelative(this.b0, null, null, null);
-            return;
+    public final int g(int i, int i2) {
+        int i3;
+        int i4;
+        Drawable drawable = this.l0;
+        if (drawable != null) {
+            i3 = this.r0;
+            if (i3 == 0) {
+                i3 = drawable.getIntrinsicWidth();
+            }
+        } else {
+            i3 = 0;
         }
-        if (i == 3 || i == 4) {
-            setCompoundDrawablesRelative(null, null, this.b0, null);
-        } else if (i == 16 || i == 32) {
-            setCompoundDrawablesRelative(null, this.b0, null, null);
+        Drawable drawable2 = this.o0;
+        if (drawable2 != null) {
+            i4 = this.r0;
+            if (i4 == 0) {
+                i4 = drawable2.getIntrinsicWidth();
+            }
+        } else {
+            i4 = 0;
         }
+        int textLayoutWidth = (((((i - getTextLayoutWidth()) - getPaddingEnd()) - i3) - i4) - this.u0) - getPaddingStart();
+        if (getActualTextAlignment() == Layout.Alignment.ALIGN_CENTER) {
+            textLayoutWidth /= 2;
+        }
+        return (getLayoutDirection() == 1) != (i2 == 4) ? -textLayoutWidth : textLayoutWidth;
     }
 
     public String getA11yClassName() {
-        if (!TextUtils.isEmpty(this.c0)) {
-            return this.c0;
+        if (TextUtils.isEmpty(this.q0)) {
+            return (k() ? CompoundButton.class : Button.class).getName();
         }
-        nz3 nz3Var = this.T;
-        return ((nz3Var == null || !nz3Var.t) ? Button.class : CompoundButton.class).getName();
+        return this.q0;
     }
 
     public int getAllowedWidthDecrease() {
-        return this.s0;
+        return this.J0;
     }
 
     @Override // android.view.View
@@ -449,333 +362,408 @@ public class MaterialButton extends AppCompatButton implements Checkable, x86 {
     }
 
     public int getCornerRadius() {
-        if (e()) {
-            return this.T.j;
+        if (r()) {
+            return this.g0.i;
         }
         return 0;
     }
 
-    public tf6 getCornerSpringForce() {
-        return this.T.d;
+    public p37 getCornerSpringForce() {
+        return this.g0.c;
     }
 
     public Drawable getIcon() {
-        return this.b0;
+        return this.l0;
     }
 
     public int getIconGravity() {
-        return this.j0;
+        return this.z0;
     }
 
     public int getIconPadding() {
-        return this.g0;
+        return this.u0;
     }
 
     public int getIconSize() {
-        return this.d0;
+        return this.r0;
     }
 
     public ColorStateList getIconTint() {
-        return this.a0;
+        return this.k0;
     }
 
     public PorterDuff.Mode getIconTintMode() {
-        return this.W;
+        return this.j0;
     }
 
     public int getInsetBottom() {
-        return this.T.i;
+        return this.g0.h;
+    }
+
+    public int getInsetLeft() {
+        return this.g0.e;
+    }
+
+    public int getInsetRight() {
+        return this.g0.f;
     }
 
     public int getInsetTop() {
-        return this.T.h;
+        return this.g0.g;
     }
 
     public ColorStateList getRippleColor() {
-        if (e()) {
-            return this.T.o;
+        if (r()) {
+            return this.g0.n;
         }
         return null;
     }
 
-    public j86 getShapeAppearanceModel() {
-        if (e()) {
-            return this.T.b;
+    public Drawable getSecondaryIcon() {
+        return this.o0;
+    }
+
+    public int getSecondaryIconGravity() {
+        return this.A0;
+    }
+
+    public ColorStateList getSecondaryIconTint() {
+        return this.n0;
+    }
+
+    public PorterDuff.Mode getSecondaryIconTintMode() {
+        return this.m0;
+    }
+
+    public wu6 getShapeAppearance() {
+        if (r()) {
+            return this.g0.b;
         }
-        fn.s("Attempted to get ShapeAppearanceModel from a MaterialButton which has an overwritten background.");
+        i60.g("Attempted to get ShapeAppearance from a MaterialButton which has an overwritten background.");
         return null;
     }
 
-    public ph6 getStateListShapeAppearanceModel() {
-        if (e()) {
-            return this.T.c;
+    public xu6 getShapeAppearanceModel() {
+        if (r()) {
+            return this.g0.b.d();
         }
-        fn.s("Attempted to get StateListShapeAppearanceModel from a MaterialButton which has an overwritten background.");
+        i60.g("Attempted to get ShapeAppearanceModel from a MaterialButton which has an overwritten background.");
         return null;
     }
 
     public ColorStateList getStrokeColor() {
-        if (e()) {
-            return this.T.n;
+        if (r()) {
+            return this.g0.m;
         }
         return null;
     }
 
     public int getStrokeWidth() {
-        if (e()) {
-            return this.T.k;
+        if (r()) {
+            return this.g0.j;
         }
         return 0;
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton
     public ColorStateList getSupportBackgroundTintList() {
-        return e() ? this.T.m : super.getSupportBackgroundTintList();
+        return r() ? this.g0.l : super.getSupportBackgroundTintList();
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        return e() ? this.T.l : super.getSupportBackgroundTintMode();
+        return r() ? this.g0.k : super.getSupportBackgroundTintMode();
     }
 
-    public final void h(boolean z) {
-        Drawable drawable = this.b0;
-        if (drawable != null) {
-            Drawable drawableMutate = yr.e0(drawable).mutate();
-            this.b0 = drawableMutate;
-            drawableMutate.setTintList(this.a0);
-            PorterDuff.Mode mode = this.W;
-            if (mode != null) {
-                this.b0.setTintMode(mode);
-            }
-            int intrinsicWidth = this.d0;
-            if (intrinsicWidth == 0) {
-                intrinsicWidth = this.b0.getIntrinsicWidth();
-            }
-            int intrinsicHeight = this.d0;
-            if (intrinsicHeight == 0) {
-                intrinsicHeight = this.b0.getIntrinsicHeight();
-            }
-            Drawable drawable2 = this.b0;
-            int i = this.e0;
-            int i2 = this.f0;
-            drawable2.setBounds(i, i2, intrinsicWidth + i, intrinsicHeight + i2);
-            this.b0.setVisible(true, z);
-        }
-        if (z) {
-            g();
-            return;
-        }
-        Drawable[] compoundDrawablesRelative = getCompoundDrawablesRelative();
-        Drawable drawable3 = compoundDrawablesRelative[0];
-        Drawable drawable4 = compoundDrawablesRelative[1];
-        Drawable drawable5 = compoundDrawablesRelative[2];
-        int i3 = this.j0;
-        if (((i3 == 1 || i3 == 2) && drawable3 != this.b0) || (((i3 == 3 || i3 == 4) && drawable5 != this.b0) || ((i3 == 16 || i3 == 32) && drawable4 != this.b0))) {
-            g();
-        }
+    public final int h(int i, int i2) {
+        return Math.max(0, (((((i - getTextHeight()) - getPaddingTop()) - i2) - this.u0) - getPaddingBottom()) / 2);
     }
 
-    public final void i(int i, int i2) {
-        if (this.b0 == null || getLayout() == null) {
-            return;
-        }
-        int i3 = this.j0;
-        if (i3 != 1 && i3 != 2 && i3 != 3 && i3 != 4) {
-            if (i3 == 16 || i3 == 32) {
-                this.e0 = 0;
-                if (i3 == 16) {
-                    this.f0 = 0;
-                    h(false);
-                    return;
-                }
-                int intrinsicHeight = this.d0;
-                if (intrinsicHeight == 0) {
-                    intrinsicHeight = this.b0.getIntrinsicHeight();
-                }
-                int iMax = Math.max(0, (((((i2 - getTextHeight()) - getPaddingTop()) - intrinsicHeight) - this.g0) - getPaddingBottom()) / 2);
-                if (this.f0 != iMax) {
-                    this.f0 = iMax;
-                    h(false);
-                    return;
-                }
-                return;
+    public final Drawable i(int i) {
+        if (i == 0) {
+            if (this.o0 == null || !p()) {
+                return null;
             }
-            return;
+            return this.o0;
         }
-        this.f0 = 0;
-        Layout.Alignment actualTextAlignment = getActualTextAlignment();
-        int i4 = this.j0;
-        if (i4 == 1 || i4 == 3 || ((i4 == 2 && actualTextAlignment == Layout.Alignment.ALIGN_NORMAL) || (i4 == 4 && actualTextAlignment == Layout.Alignment.ALIGN_OPPOSITE))) {
-            this.e0 = 0;
-            h(false);
-            return;
+        if (i == 1) {
+            if (this.o0 == null || !q()) {
+                return null;
+            }
+            return this.o0;
         }
-        int intrinsicWidth = this.d0;
-        if (intrinsicWidth == 0) {
-            intrinsicWidth = this.b0.getIntrinsicWidth();
+        if (i == 2 && this.o0 != null && o()) {
+            return this.o0;
         }
-        int textLayoutWidth = ((((i - getTextLayoutWidth()) - getPaddingEnd()) - intrinsicWidth) - this.g0) - getPaddingStart();
-        if (actualTextAlignment == Layout.Alignment.ALIGN_CENTER) {
-            textLayoutWidth /= 2;
-        }
-        if ((getLayoutDirection() == 1) != (this.j0 == 4)) {
-            textLayoutWidth = -textLayoutWidth;
-        }
-        if (this.e0 != textLayoutWidth) {
-            this.e0 = textLayoutWidth;
-            h(false);
-        }
+        return null;
     }
 
     @Override // android.widget.Checkable
     public final boolean isChecked() {
-        return this.h0;
+        return this.x0;
     }
 
-    public final void j() {
-        int i = (int) (this.v0 - this.w0);
-        int i2 = (i / 2) + this.q0;
-        getLayoutParams().width = (int) (this.l0 + i);
-        setPaddingRelative(this.m0 + i2, getPaddingTop(), (this.n0 + i) - i2, getPaddingBottom());
+    public final Drawable j(int i) {
+        if (i == 0) {
+            if (this.l0 == null || !m()) {
+                return null;
+            }
+            return this.l0;
+        }
+        if (i == 1) {
+            if (this.l0 == null || !l()) {
+                return null;
+            }
+            return this.l0;
+        }
+        if (i == 2 && this.l0 != null && l()) {
+            return this.l0;
+        }
+        return null;
+    }
+
+    public final boolean k() {
+        mg4 mg4Var = this.g0;
+        return mg4Var != null && mg4Var.s;
+    }
+
+    public final boolean l() {
+        int i = this.z0;
+        return i == 3 || i == 4;
+    }
+
+    public final boolean m() {
+        int i = this.z0;
+        return i == 1 || i == 2;
+    }
+
+    public final boolean n() {
+        int i = this.z0;
+        return i == 16 || i == 32;
+    }
+
+    public final boolean o() {
+        int i = this.A0;
+        return i == 3 || i == 4;
     }
 
     @Override // android.widget.TextView, android.view.View
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (e()) {
-            zd7.f0(this, this.T.a(false));
+        if (r()) {
+            h71.G(this, this.g0.a(false));
         }
     }
 
     @Override // android.widget.TextView, android.view.View
     public final int[] onCreateDrawableState(int i) {
-        int[] iArrOnCreateDrawableState = super.onCreateDrawableState(i + 2);
-        nz3 nz3Var = this.T;
-        if (nz3Var != null && nz3Var.t) {
-            View.mergeDrawableStates(iArrOnCreateDrawableState, y0);
+        int[] onCreateDrawableState = super.onCreateDrawableState(i + 2);
+        if (k()) {
+            View.mergeDrawableStates(onCreateDrawableState, Q0);
         }
-        if (this.h0) {
-            View.mergeDrawableStates(iArrOnCreateDrawableState, z0);
+        if (this.x0) {
+            View.mergeDrawableStates(onCreateDrawableState, R0);
         }
-        return iArrOnCreateDrawableState;
+        return onCreateDrawableState;
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton, android.view.View
     public final void onInitializeAccessibilityEvent(AccessibilityEvent accessibilityEvent) {
         super.onInitializeAccessibilityEvent(accessibilityEvent);
         accessibilityEvent.setClassName(getA11yClassName());
-        accessibilityEvent.setChecked(this.h0);
+        accessibilityEvent.setChecked(this.x0);
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton, android.view.View
     public final void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
         super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
         accessibilityNodeInfo.setClassName(getA11yClassName());
-        nz3 nz3Var = this.T;
-        accessibilityNodeInfo.setCheckable(nz3Var != null && nz3Var.t);
-        accessibilityNodeInfo.setChecked(this.h0);
+        accessibilityNodeInfo.setCheckable(k());
+        accessibilityNodeInfo.setChecked(this.x0);
         accessibilityNodeInfo.setClickable(isClickable());
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton, android.widget.TextView, android.view.View
     public final void onLayout(boolean z, int i, int i2, int i3, int i4) {
         int i5;
-        nz3 nz3Var;
         super.onLayout(z, i, i2, i3, i4);
-        if (Build.VERSION.SDK_INT == 21 && (nz3Var = this.T) != null) {
-            int i6 = i4 - i2;
-            int i7 = i3 - i;
-            d04 d04Var = nz3Var.p;
-            if (d04Var != null) {
-                d04Var.setBounds(nz3Var.f, nz3Var.h, i7 - nz3Var.g, i6 - nz3Var.i);
-            }
+        v(getMeasuredWidth(), getMeasuredHeight());
+        y(getMeasuredWidth(), getMeasuredHeight());
+        int i6 = getResources().getConfiguration().orientation;
+        if (this.B0 != i6) {
+            this.B0 = i6;
+            this.C0 = -2.14748365E9f;
         }
-        i(getMeasuredWidth(), getMeasuredHeight());
-        int i8 = getResources().getConfiguration().orientation;
-        if (this.k0 != i8) {
-            this.k0 = i8;
-            this.l0 = -1.0f;
-        }
-        if (this.l0 == -1.0f) {
-            this.l0 = getMeasuredWidth();
-            if (this.o0 == null && (getParent() instanceof MaterialButtonGroup) && ((MaterialButtonGroup) getParent()).getButtonSizeChange() != null) {
-                this.o0 = (LinearLayout.LayoutParams) getLayoutParams();
-                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(this.o0);
-                layoutParams.width = (int) this.l0;
+        if (this.C0 == -2.14748365E9f) {
+            this.C0 = getMeasuredWidth();
+            if (this.F0 == null && (getParent() instanceof MaterialButtonGroup) && ((MaterialButtonGroup) getParent()).getButtonSizeChange() != null) {
+                this.F0 = (LinearLayout.LayoutParams) getLayoutParams();
+                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(this.F0);
+                layoutParams.width = (int) this.C0;
                 setLayoutParams(layoutParams);
             }
         }
         boolean z2 = false;
-        if (this.s0 == -1) {
-            if (this.b0 == null) {
+        if (this.J0 == Integer.MIN_VALUE) {
+            if (this.l0 == null) {
                 i5 = 0;
             } else {
                 int iconPadding = getIconPadding();
-                int intrinsicWidth = this.d0;
-                if (intrinsicWidth == 0) {
-                    intrinsicWidth = this.b0.getIntrinsicWidth();
+                int i7 = this.r0;
+                if (i7 == 0) {
+                    i7 = this.l0.getIntrinsicWidth();
                 }
-                i5 = iconPadding + intrinsicWidth;
+                i5 = iconPadding + i7;
             }
-            this.s0 = (getMeasuredWidth() - getTextLayoutWidth()) - i5;
+            this.J0 = (getMeasuredWidth() - getTextLayoutWidth()) - i5;
         }
-        if (this.m0 == -1) {
-            this.m0 = getPaddingStart();
+        if (this.D0 == Integer.MIN_VALUE) {
+            this.D0 = getPaddingStart();
         }
-        if (this.n0 == -1) {
-            this.n0 = getPaddingEnd();
+        if (this.E0 == Integer.MIN_VALUE) {
+            this.E0 = getPaddingEnd();
         }
         if ((getParent() instanceof MaterialButtonGroup) && ((MaterialButtonGroup) getParent()).getOrientation() == 0) {
             z2 = true;
         }
-        this.r0 = z2;
+        this.I0 = z2;
     }
 
     @Override // android.widget.TextView, android.view.View
     public final void onRestoreInstanceState(Parcelable parcelable) {
-        if (!(parcelable instanceof mz3)) {
+        if (!(parcelable instanceof kg4)) {
             super.onRestoreInstanceState(parcelable);
             return;
         }
-        mz3 mz3Var = (mz3) parcelable;
-        super.onRestoreInstanceState(mz3Var.Q);
-        setChecked(mz3Var.S);
+        kg4 kg4Var = (kg4) parcelable;
+        super.onRestoreInstanceState(kg4Var.X);
+        setChecked(kg4Var.Z);
     }
 
     @Override // android.widget.TextView, android.view.View
     public final Parcelable onSaveInstanceState() {
-        mz3 mz3Var = new mz3(super.onSaveInstanceState());
-        mz3Var.S = this.h0;
-        return mz3Var;
+        kg4 kg4Var = new kg4(super.onSaveInstanceState());
+        kg4Var.Z = this.x0;
+        return kg4Var;
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton, android.widget.TextView
     public final void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
         super.onTextChanged(charSequence, i, i2, i3);
-        i(getMeasuredWidth(), getMeasuredHeight());
+        v(getMeasuredWidth(), getMeasuredHeight());
+        y(getMeasuredWidth(), getMeasuredHeight());
+    }
+
+    public final boolean p() {
+        int i = this.A0;
+        return i == 1 || i == 2;
     }
 
     @Override // android.view.View
     public boolean performClick() {
-        if (isEnabled() && this.T.u) {
+        boolean z;
+        if (isEnabled() && this.g0.t) {
             toggle();
+            z = true;
+        } else {
+            z = false;
         }
-        return super.performClick();
+        boolean performClick = super.performClick();
+        if (z && !performClick) {
+            playSoundEffect(0);
+        }
+        return performClick;
+    }
+
+    public final boolean q() {
+        int i = this.A0;
+        return i == 16 || i == 32;
+    }
+
+    public final boolean r() {
+        mg4 mg4Var = this.g0;
+        return (mg4Var == null || mg4Var.q) ? false : true;
     }
 
     @Override // android.view.View
     public final void refreshDrawableState() {
         super.refreshDrawableState();
-        if (this.b0 != null) {
-            if (this.b0.setState(getDrawableState())) {
+        if (this.l0 != null) {
+            if (this.l0.setState(getDrawableState())) {
                 invalidate();
             }
         }
     }
 
+    /* JADX WARN: Code restructure failed: missing block: B:44:0x008c, code lost:
+    
+        if (r4 == 2) goto L41;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final void s(boolean z) {
+        int i;
+        if (this.K0 == null) {
+            return;
+        }
+        if (this.P0 == null) {
+            o37 o37Var = new o37(this, U0);
+            this.P0 = o37Var;
+            o37Var.m = ut.j0(getContext(), ur5.motionSpringFastSpatial, nu5.Motion_Material3_Spring_Standard_Fast_Spatial);
+        }
+        if (this.I0) {
+            int ordinal = this.M0.ordinal();
+            int i2 = 0;
+            int i3 = (ordinal == 1 || ordinal == 2) ? this.L0 / 2 : ordinal != 3 ? 0 : this.L0;
+            s57 s57Var = this.K0;
+            int[] drawableState = getDrawableState();
+            int[][] iArr = s57Var.c;
+            int i4 = 0;
+            while (true) {
+                i = -1;
+                if (i4 >= s57Var.a) {
+                    i4 = -1;
+                    break;
+                } else if (StateSet.stateSetMatches(iArr[i4], drawableState)) {
+                    break;
+                } else {
+                    i4++;
+                }
+            }
+            if (i4 < 0) {
+                int[] iArr2 = StateSet.WILD_CARD;
+                int[][] iArr3 = s57Var.c;
+                int i5 = 0;
+                while (true) {
+                    if (i5 >= s57Var.a) {
+                        break;
+                    }
+                    if (StateSet.stateSetMatches(iArr3[i5], iArr2)) {
+                        i = i5;
+                        break;
+                    }
+                    i5++;
+                }
+                i4 = i;
+            }
+            r57 r57Var = (r57) (i4 < 0 ? s57Var.b : s57Var.d[i4]).Y;
+            int width = getWidth();
+            float f = r57Var.b;
+            int i6 = r57Var.a;
+            if (i6 == 1) {
+                f *= width;
+            }
+            i2 = (int) f;
+            this.P0.a(Math.min(i3, i2));
+            if (z) {
+                this.P0.f();
+            }
+        }
+    }
+
     public void setA11yClassName(String str) {
-        this.c0 = str;
+        this.q0 = str;
     }
 
     @Override // android.view.View
@@ -785,19 +773,19 @@ public class MaterialButton extends AppCompatButton implements Checkable, x86 {
 
     @Override // android.view.View
     public void setBackgroundColor(int i) {
-        if (!e()) {
+        if (!r()) {
             super.setBackgroundColor(i);
             return;
         }
-        nz3 nz3Var = this.T;
-        if (nz3Var.a(false) != null) {
-            nz3Var.a(false).setTint(i);
+        mg4 mg4Var = this.g0;
+        if (mg4Var.a(false) != null) {
+            mg4Var.a(false).setTint(i);
         }
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton, android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
-        if (!e()) {
+        if (!r()) {
             super.setBackgroundDrawable(drawable);
             return;
         }
@@ -805,17 +793,17 @@ public class MaterialButton extends AppCompatButton implements Checkable, x86 {
             getBackground().setState(drawable.getState());
             return;
         }
-        nz3 nz3Var = this.T;
-        nz3Var.r = true;
-        MaterialButton materialButton = nz3Var.a;
-        materialButton.setSupportBackgroundTintList(nz3Var.m);
-        materialButton.setSupportBackgroundTintMode(nz3Var.l);
+        mg4 mg4Var = this.g0;
+        mg4Var.q = true;
+        MaterialButton materialButton = mg4Var.a;
+        materialButton.setSupportBackgroundTintList(mg4Var.l);
+        materialButton.setSupportBackgroundTintMode(mg4Var.k);
         super.setBackgroundDrawable(drawable);
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton, android.view.View
     public void setBackgroundResource(int i) {
-        setBackgroundDrawable(i != 0 ? ub.y(getContext(), i) : null);
+        setBackgroundDrawable(i != 0 ? yl0.u(getContext(), i) : null);
     }
 
     @Override // android.view.View
@@ -829,8 +817,8 @@ public class MaterialButton extends AppCompatButton implements Checkable, x86 {
     }
 
     public void setCheckable(boolean z) {
-        if (e()) {
-            this.T.t = z;
+        if (r()) {
+            this.g0.s = z;
         }
     }
 
@@ -839,311 +827,594 @@ public class MaterialButton extends AppCompatButton implements Checkable, x86 {
         setCheckedInternal(z);
     }
 
+    @Override // android.widget.TextView
+    public void setCompoundDrawablePadding(int i) {
+        if (getCompoundDrawablePadding() != i) {
+            this.C0 = -2.14748365E9f;
+        }
+        super.setCompoundDrawablePadding(i);
+    }
+
     public void setCornerRadius(int i) {
-        if (e()) {
-            nz3 nz3Var = this.T;
-            if (nz3Var.s && nz3Var.j == i) {
+        if (r()) {
+            mg4 mg4Var = this.g0;
+            if (mg4Var.r && mg4Var.i == i) {
                 return;
             }
-            nz3Var.j = i;
-            nz3Var.s = true;
-            float f = i;
-            o5 o5VarF = nz3Var.b.f();
-            o5VarF.U = new b0(f);
-            o5VarF.V = new b0(f);
-            o5VarF.W = new b0(f);
-            o5VarF.X = new b0(f);
-            nz3Var.b = o5VarF.b();
-            nz3Var.c = null;
-            nz3Var.d();
+            mg4Var.i = i;
+            mg4Var.r = true;
+            mg4Var.b = mg4Var.b.a(i);
+            mg4Var.d();
         }
     }
 
     public void setCornerRadiusResource(int i) {
-        if (e()) {
+        if (r()) {
             setCornerRadius(getResources().getDimensionPixelSize(i));
         }
     }
 
-    public void setCornerSpringForce(tf6 tf6Var) {
-        nz3 nz3Var = this.T;
-        nz3Var.d = tf6Var;
-        if (nz3Var.c != null) {
-            nz3Var.d();
+    public void setCornerSpringForce(p37 p37Var) {
+        mg4 mg4Var = this.g0;
+        mg4Var.c = p37Var;
+        if (mg4Var.b instanceof q57) {
+            mg4Var.d();
         }
     }
 
     public void setDisplayedWidthDecrease(int i) {
-        this.w0 = Math.min(i, this.s0);
-        j();
+        this.O0 = Math.min(i, this.J0);
+        w();
         invalidate();
     }
 
     @Override // android.view.View
     public void setElevation(float f) {
         super.setElevation(f);
-        if (e()) {
-            this.T.a(false).p(f);
+        if (r()) {
+            this.g0.a(false).s(f);
         }
     }
 
     public void setIcon(Drawable drawable) {
-        if (this.b0 != drawable) {
-            this.b0 = drawable;
-            h(true);
-            i(getMeasuredWidth(), getMeasuredHeight());
+        if (this.l0 == drawable || t(new ig4(this, drawable, 1))) {
+            return;
         }
+        this.C0 = -2.14748365E9f;
+        this.l0 = drawable;
+        u(true);
+        v(getMeasuredWidth(), getMeasuredHeight());
     }
 
     public void setIconGravity(int i) {
-        if (this.j0 != i) {
-            this.j0 = i;
-            i(getMeasuredWidth(), getMeasuredHeight());
+        if (this.z0 != i) {
+            if (this.l0 != null && this.o0 != null && e()) {
+                i60.p("iconGravity cannot have the same alignment as secondaryIconGravity");
+            } else {
+                this.z0 = i;
+                v(getMeasuredWidth(), getMeasuredHeight());
+            }
         }
     }
 
     public void setIconPadding(int i) {
-        if (this.g0 != i) {
-            this.g0 = i;
+        if (this.u0 != i) {
+            this.u0 = i;
             setCompoundDrawablePadding(i);
         }
     }
 
     public void setIconResource(int i) {
-        setIcon(i != 0 ? ub.y(getContext(), i) : null);
+        setIcon(i != 0 ? yl0.u(getContext(), i) : null);
     }
 
     public void setIconSize(int i) {
         if (i < 0) {
-            fn.r("iconSize cannot be less than 0");
-        } else if (this.d0 != i) {
-            this.d0 = i;
-            h(true);
+            i60.p("iconSize cannot be less than 0");
+            return;
         }
+        if (this.r0 == i || t(new dh(i, 3, this))) {
+            return;
+        }
+        this.C0 = -2.14748365E9f;
+        this.r0 = i;
+        u(true);
+        x(true);
     }
 
     public void setIconTint(ColorStateList colorStateList) {
-        if (this.a0 != colorStateList) {
-            this.a0 = colorStateList;
-            h(false);
+        if (this.k0 != colorStateList) {
+            this.k0 = colorStateList;
+            u(false);
         }
     }
 
     public void setIconTintMode(PorterDuff.Mode mode) {
-        if (this.W != mode) {
-            this.W = mode;
-            h(false);
+        if (this.j0 != mode) {
+            this.j0 = mode;
+            u(false);
         }
     }
 
     public void setIconTintResource(int i) {
-        setIconTint(bv7.B(getContext(), i));
+        setIconTint(jq8.u(getContext(), i));
     }
 
     public void setInsetBottom(int i) {
-        nz3 nz3Var = this.T;
-        nz3Var.b(nz3Var.h, i);
+        mg4 mg4Var = this.g0;
+        mg4Var.b(mg4Var.e, mg4Var.g, mg4Var.f, i);
+    }
+
+    public void setInsetLeft(int i) {
+        mg4 mg4Var = this.g0;
+        mg4Var.b(i, mg4Var.g, mg4Var.f, mg4Var.h);
+    }
+
+    public void setInsetRight(int i) {
+        mg4 mg4Var = this.g0;
+        mg4Var.b(mg4Var.e, mg4Var.g, i, mg4Var.h);
     }
 
     public void setInsetTop(int i) {
-        nz3 nz3Var = this.T;
-        nz3Var.b(i, nz3Var.i);
+        mg4 mg4Var = this.g0;
+        mg4Var.b(mg4Var.e, i, mg4Var.f, mg4Var.h);
     }
 
     public void setInternalBackground(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
     }
 
-    public void setOnPressedChangeListenerInternal(lz3 lz3Var) {
-        this.V = lz3Var;
+    public void setOnPressedChangeListenerInternal(jg4 jg4Var) {
+        this.i0 = jg4Var;
     }
 
     public void setOpticalCenterEnabled(boolean z) {
-        if (this.p0 != z) {
-            this.p0 = z;
-            nz3 nz3Var = this.T;
+        if (this.G0 != z) {
+            this.G0 = z;
+            mg4 mg4Var = this.g0;
             if (z) {
-                yx yxVar = new yx(10, this);
-                nz3Var.e = yxVar;
-                d04 d04VarA = nz3Var.a(false);
-                if (d04VarA != null) {
-                    d04VarA.t0 = yxVar;
+                v31 v31Var = new v31(17, this);
+                mg4Var.d = v31Var;
+                bh4 a = mg4Var.a(false);
+                if (a != null) {
+                    a.C0 = v31Var;
                 }
             } else {
-                nz3Var.e = null;
-                d04 d04VarA2 = nz3Var.a(false);
-                if (d04VarA2 != null) {
-                    d04VarA2.t0 = null;
+                mg4Var.d = null;
+                bh4 a2 = mg4Var.a(false);
+                if (a2 != null) {
+                    a2.C0 = null;
                 }
             }
-            post(new f92(6, this));
+            post(new a1(27, this));
         }
     }
 
     @Override // android.view.View
     public void setPressed(boolean z) {
-        lz3 lz3Var = this.V;
-        if (lz3Var != null) {
-            ((MaterialButtonGroup) ((hg1) lz3Var).R).invalidate();
+        jg4 jg4Var = this.i0;
+        if (jg4Var != null) {
+            ((MaterialButtonGroup) ((io1) jg4Var).Y).invalidate();
         }
         super.setPressed(z);
-        f(false);
+        s(false);
     }
 
     public void setRippleColor(ColorStateList colorStateList) {
-        if (e()) {
-            nz3 nz3Var = this.T;
-            MaterialButton materialButton = nz3Var.a;
-            if (nz3Var.o != colorStateList) {
-                nz3Var.o = colorStateList;
+        if (r()) {
+            mg4 mg4Var = this.g0;
+            MaterialButton materialButton = mg4Var.a;
+            if (mg4Var.n != colorStateList) {
+                mg4Var.n = colorStateList;
                 if (materialButton.getBackground() instanceof RippleDrawable) {
-                    ((RippleDrawable) materialButton.getBackground()).setColor(e21.J(colorStateList));
+                    ((RippleDrawable) materialButton.getBackground()).setColor(h31.q0(colorStateList));
                 }
             }
         }
     }
 
     public void setRippleColorResource(int i) {
-        if (e()) {
-            setRippleColor(bv7.B(getContext(), i));
+        if (r()) {
+            setRippleColor(jq8.u(getContext(), i));
         }
     }
 
-    @Override // defpackage.x86
-    public void setShapeAppearanceModel(j86 j86Var) {
-        if (!e()) {
-            fn.s("Attempted to set ShapeAppearanceModel on a MaterialButton which has an overwritten background.");
+    public void setSecondaryIcon(Drawable drawable) {
+        if (this.o0 == drawable || t(new ig4(this, drawable, 0))) {
             return;
         }
-        nz3 nz3Var = this.T;
-        nz3Var.b = j86Var;
-        nz3Var.c = null;
-        nz3Var.d();
+        this.C0 = -2.14748365E9f;
+        this.o0 = drawable;
+        this.p0 = false;
+        x(true);
+        y(getMeasuredWidth(), getMeasuredHeight());
+    }
+
+    public void setSecondaryIconGravity(int i) {
+        if (this.A0 != i) {
+            if (this.o0 != null && this.l0 != null && e()) {
+                i60.p("secondaryIconGravity cannot have the same alignment as iconGravity");
+            } else {
+                this.A0 = i;
+                y(getMeasuredWidth(), getMeasuredHeight());
+            }
+        }
+    }
+
+    public void setSecondaryIconResource(int i) {
+        setSecondaryIcon(i != 0 ? yl0.u(getContext(), i) : null);
+    }
+
+    public void setSecondaryIconTint(ColorStateList colorStateList) {
+        if (this.n0 != colorStateList) {
+            this.n0 = colorStateList;
+            x(false);
+        }
+    }
+
+    public void setSecondaryIconTintMode(PorterDuff.Mode mode) {
+        if (this.m0 != mode) {
+            this.m0 = mode;
+            x(false);
+        }
+    }
+
+    public void setSecondaryIconTintResource(int i) {
+        setSecondaryIconTint(jq8.u(getContext(), i));
+    }
+
+    public void setShapeAppearance(wu6 wu6Var) {
+        if (!r()) {
+            i60.g("Attempted to set ShapeAppearance on a MaterialButton which has an overwritten background.");
+            return;
+        }
+        mg4 mg4Var = this.g0;
+        if (mg4Var.c == null && wu6Var.f()) {
+            mg4Var.c = ut.j0(getContext(), ur5.motionSpringFastSpatial, nu5.Motion_Material3_Spring_Standard_Fast_Spatial);
+            if (mg4Var.b instanceof q57) {
+                mg4Var.d();
+            }
+        }
+        mg4Var.b = wu6Var;
+        mg4Var.d();
+    }
+
+    @Override // defpackage.lv6
+    public void setShapeAppearanceModel(xu6 xu6Var) {
+        if (!r()) {
+            i60.g("Attempted to set ShapeAppearanceModel on a MaterialButton which has an overwritten background.");
+            return;
+        }
+        mg4 mg4Var = this.g0;
+        mg4Var.b = xu6Var;
+        mg4Var.d();
     }
 
     public void setShouldDrawSurfaceColorStroke(boolean z) {
-        if (e()) {
-            nz3 nz3Var = this.T;
-            nz3Var.q = z;
-            nz3Var.e();
+        if (r()) {
+            mg4 mg4Var = this.g0;
+            mg4Var.p = z;
+            mg4Var.e();
         }
     }
 
-    public void setSizeChange(rh6 rh6Var) {
-        if (this.t0 != rh6Var) {
-            this.t0 = rh6Var;
-            f(true);
+    public void setSizeChange(s57 s57Var) {
+        if (this.K0 != s57Var) {
+            this.K0 = s57Var;
+            s(true);
         }
-    }
-
-    public void setStateListShapeAppearanceModel(ph6 ph6Var) {
-        if (!e()) {
-            fn.s("Attempted to set StateListShapeAppearanceModel on a MaterialButton which has an overwritten background.");
-            return;
-        }
-        nz3 nz3Var = this.T;
-        if (nz3Var.d == null && ph6Var.d()) {
-            nz3Var.d = d();
-            if (nz3Var.c != null) {
-                nz3Var.d();
-            }
-        }
-        nz3Var.c = ph6Var;
-        nz3Var.d();
     }
 
     public void setStrokeColor(ColorStateList colorStateList) {
-        if (e()) {
-            nz3 nz3Var = this.T;
-            if (nz3Var.n != colorStateList) {
-                nz3Var.n = colorStateList;
-                nz3Var.e();
+        if (r()) {
+            mg4 mg4Var = this.g0;
+            if (mg4Var.m != colorStateList) {
+                mg4Var.m = colorStateList;
+                mg4Var.e();
             }
         }
     }
 
     public void setStrokeColorResource(int i) {
-        if (e()) {
-            setStrokeColor(bv7.B(getContext(), i));
+        if (r()) {
+            setStrokeColor(jq8.u(getContext(), i));
         }
     }
 
     public void setStrokeWidth(int i) {
-        if (e()) {
-            nz3 nz3Var = this.T;
-            if (nz3Var.k != i) {
-                nz3Var.k = i;
-                nz3Var.e();
+        if (r()) {
+            mg4 mg4Var = this.g0;
+            if (mg4Var.j != i) {
+                mg4Var.j = i;
+                mg4Var.e();
             }
         }
     }
 
     public void setStrokeWidthResource(int i) {
-        if (e()) {
+        if (r()) {
             setStrokeWidth(getResources().getDimensionPixelSize(i));
         }
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        if (!e()) {
+        if (!r()) {
             super.setSupportBackgroundTintList(colorStateList);
             return;
         }
-        nz3 nz3Var = this.T;
-        if (nz3Var.m != colorStateList) {
-            nz3Var.m = colorStateList;
-            if (nz3Var.a(false) != null) {
-                nz3Var.a(false).setTintList(nz3Var.m);
+        mg4 mg4Var = this.g0;
+        if (mg4Var.l != colorStateList) {
+            mg4Var.l = colorStateList;
+            if (mg4Var.a(false) != null) {
+                mg4Var.a(false).setTintList(mg4Var.l);
             }
         }
     }
 
     @Override // androidx.appcompat.widget.AppCompatButton
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        if (!e()) {
+        if (!r()) {
             super.setSupportBackgroundTintMode(mode);
             return;
         }
-        nz3 nz3Var = this.T;
-        if (nz3Var.l != mode) {
-            nz3Var.l = mode;
-            if (nz3Var.a(false) == null || nz3Var.l == null) {
+        mg4 mg4Var = this.g0;
+        if (mg4Var.k != mode) {
+            mg4Var.k = mode;
+            if (mg4Var.a(false) == null || mg4Var.k == null) {
                 return;
             }
-            nz3Var.a(false).setTintMode(nz3Var.l);
+            mg4Var.a(false).setTintMode(mg4Var.k);
         }
+    }
+
+    @Override // android.widget.TextView
+    public final void setText(CharSequence charSequence, TextView.BufferType bufferType) {
+        this.C0 = -2.14748365E9f;
+        super.setText(charSequence, bufferType);
     }
 
     @Override // android.view.View
     public void setTextAlignment(int i) {
         super.setTextAlignment(i);
-        i(getMeasuredWidth(), getMeasuredHeight());
+        v(getMeasuredWidth(), getMeasuredHeight());
+        y(getMeasuredWidth(), getMeasuredHeight());
+    }
+
+    @Override // androidx.appcompat.widget.AppCompatButton, android.widget.TextView
+    public final void setTextAppearance(Context context, int i) {
+        this.C0 = -2.14748365E9f;
+        super.setTextAppearance(context, i);
+    }
+
+    @Override // androidx.appcompat.widget.AppCompatButton, android.widget.TextView
+    public final void setTextSize(int i, float f) {
+        this.C0 = -2.14748365E9f;
+        super.setTextSize(i, f);
     }
 
     public void setToggleCheckedStateOnClick(boolean z) {
-        this.T.u = z;
+        this.g0.t = z;
     }
 
     @Override // android.widget.TextView
     public void setWidth(int i) {
-        this.l0 = -1.0f;
+        this.C0 = -2.14748365E9f;
         super.setWidth(i);
     }
 
-    public void setWidthChangeMax(int i) {
-        if (this.u0 != i) {
-            this.u0 = i;
-            f(true);
+    public void setWidthChangeDirection(lg4 lg4Var) {
+        if (this.M0 != lg4Var) {
+            this.M0 = lg4Var;
+            s(true);
         }
+    }
+
+    public void setWidthChangeMax(int i) {
+        if (this.L0 != i) {
+            this.L0 = i;
+            s(true);
+        }
+    }
+
+    public final boolean t(Runnable runnable) {
+        o37 o37Var = this.P0;
+        if (o37Var == null || !o37Var.f) {
+            return false;
+        }
+        post(new s44(2, this, runnable));
+        return true;
     }
 
     @Override // android.widget.Checkable
     public final void toggle() {
-        setChecked(!this.h0);
+        setChecked(!this.x0);
+    }
+
+    public final void u(boolean z) {
+        Drawable drawable = this.l0;
+        if (drawable != null) {
+            Drawable mutate = drawable.mutate();
+            this.l0 = mutate;
+            mutate.setTintList(this.k0);
+            PorterDuff.Mode mode = this.j0;
+            if (mode != null) {
+                this.l0.setTintMode(mode);
+            }
+            int i = this.r0;
+            if (i == 0) {
+                i = this.l0.getIntrinsicWidth();
+            }
+            int i2 = this.r0;
+            if (i2 == 0) {
+                i2 = this.l0.getIntrinsicHeight();
+            }
+            Drawable drawable2 = this.l0;
+            int i3 = this.s0;
+            int i4 = this.t0;
+            drawable2.setBounds(i3, i4, i + i3, i2 + i4);
+            this.l0.setVisible(true, z);
+        }
+        if (this.l0 != null && this.o0 != null && e()) {
+            i60.p("iconGravity cannot have the same alignment as secondaryIconGravity");
+            return;
+        }
+        if (this.l0 == null && this.o0 != null && e()) {
+            return;
+        }
+        Drawable[] compoundDrawablesRelative = getCompoundDrawablesRelative();
+        boolean z2 = (m() && compoundDrawablesRelative[0] != this.l0) || (l() && compoundDrawablesRelative[2] != this.l0) || (n() && compoundDrawablesRelative[1] != this.l0);
+        if (z || z2) {
+            if (m()) {
+                setCompoundDrawablesRelative(this.l0, i(1), i(2), null);
+            } else if (l()) {
+                setCompoundDrawablesRelative(i(0), i(1), this.l0, null);
+            } else if (n()) {
+                setCompoundDrawablesRelative(i(0), this.l0, i(2), null);
+            }
+        }
+    }
+
+    public final void v(int i, int i2) {
+        if (this.l0 == null || getLayout() == null) {
+            return;
+        }
+        if (m() || l()) {
+            this.t0 = 0;
+            if (f(this.z0)) {
+                this.s0 = 0;
+                u(false);
+                return;
+            }
+            int g = g(i, this.z0);
+            if (this.s0 != g) {
+                this.s0 = g;
+                u(false);
+                return;
+            }
+            return;
+        }
+        if (n()) {
+            this.s0 = 0;
+            if (this.z0 == 16) {
+                this.t0 = 0;
+                u(false);
+                return;
+            }
+            int i3 = this.r0;
+            if (i3 == 0) {
+                i3 = this.l0.getIntrinsicHeight();
+            }
+            int h = h(i2, i3);
+            if (this.t0 != h) {
+                this.t0 = h;
+                u(false);
+            }
+        }
+    }
+
+    public final void w() {
+        int i = (int) (this.N0 - this.O0);
+        boolean z = getLayoutDirection() == 1;
+        int i2 = this.H0;
+        if (z) {
+            i2 = -i2;
+        }
+        int i3 = (i / 2) + i2;
+        if (getLayoutParams() != null) {
+            getLayoutParams().width = (int) (this.C0 + i);
+        }
+        setPaddingRelative(this.D0 + i3, getPaddingTop(), (this.E0 + i) - i3, getPaddingBottom());
+    }
+
+    public final void x(boolean z) {
+        Drawable drawable = this.o0;
+        if (drawable != null) {
+            Drawable mutate = drawable.mutate();
+            this.o0 = mutate;
+            mutate.setTintList(this.n0);
+            PorterDuff.Mode mode = this.m0;
+            if (mode != null) {
+                this.o0.setTintMode(mode);
+            }
+            int i = this.r0;
+            if (i == 0) {
+                i = this.o0.getIntrinsicWidth();
+            }
+            int i2 = this.r0;
+            if (i2 == 0) {
+                i2 = this.o0.getIntrinsicHeight();
+            }
+            Drawable drawable2 = this.o0;
+            int i3 = this.v0;
+            int i4 = this.w0;
+            drawable2.setBounds(i3, i4, i + i3, i2 + i4);
+            this.o0.setVisible(true, z);
+        }
+        if (this.o0 != null && this.l0 != null && e()) {
+            i60.p("secondaryIconGravity cannot have the same alignment as iconGravity");
+            return;
+        }
+        if (this.o0 == null) {
+            if (this.p0) {
+                return;
+            }
+            if (this.l0 != null && e()) {
+                return;
+            }
+        }
+        Drawable[] compoundDrawablesRelative = getCompoundDrawablesRelative();
+        boolean z2 = (p() && compoundDrawablesRelative[0] != this.o0) || (o() && compoundDrawablesRelative[2] != this.o0) || (q() && compoundDrawablesRelative[1] != this.o0);
+        if (z || z2) {
+            if (p()) {
+                setCompoundDrawablesRelative(this.o0, j(1), j(2), null);
+            } else if (o()) {
+                setCompoundDrawablesRelative(j(0), j(1), this.o0, null);
+            } else if (q()) {
+                setCompoundDrawablesRelative(j(0), this.o0, j(2), null);
+            }
+        }
+    }
+
+    public final void y(int i, int i2) {
+        if (this.o0 == null || getLayout() == null) {
+            return;
+        }
+        if (p() || o()) {
+            this.w0 = 0;
+            if (f(this.A0)) {
+                this.v0 = 0;
+                x(false);
+                return;
+            }
+            int g = g(i, this.A0);
+            if (this.v0 != g) {
+                this.v0 = g;
+                x(false);
+                return;
+            }
+            return;
+        }
+        if (q()) {
+            this.v0 = 0;
+            if (this.A0 == 16) {
+                this.w0 = 0;
+                x(false);
+                return;
+            }
+            int i3 = this.r0;
+            if (i3 == 0) {
+                i3 = this.o0.getIntrinsicHeight();
+            }
+            int h = h(i2, i3);
+            if (this.w0 != h) {
+                this.w0 = h;
+                x(false);
+            }
+        }
     }
 
     public MaterialButton(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, v75.materialButtonStyle);
+        this(context, attributeSet, ur5.materialButtonStyle);
     }
 }

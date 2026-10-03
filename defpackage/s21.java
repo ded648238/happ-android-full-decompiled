@@ -1,32 +1,43 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class s21 {
-    public final ck2 a;
-    public final boolean b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class s21 extends zt0 implements yw5 {
+    public final /* synthetic */ int c0 = 1;
+    public final pr4 d0;
+    public final Object e0;
 
-    public s21(ck2 ck2Var, boolean z) {
-        this.a = ck2Var;
-        this.b = z;
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof s21)) {
-            return false;
-        }
-        s21 s21Var = (s21) obj;
-        return this.a.equals(s21Var.a) && this.b == s21Var.b;
-    }
-
-    public final int hashCode() {
-        return (this.a.hashCode() * 31) + (this.b ? 1231 : 1237);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public s21(lb0 lb0Var, bu3 bu3Var, pr4 pr4Var) {
+        super(bu3Var);
+        lb0Var.getClass();
+        bu3Var.getClass();
+        this.e0 = lb0Var;
+        this.d0 = pr4Var;
     }
 
     public final String toString() {
-        return "DecodeResult(image=" + this.a + ", isSampled=" + this.b + ")";
+        int i = this.c0;
+        Object obj = this.e0;
+        switch (i) {
+            case 0:
+                return c() + ": Ctx { " + ((ln4) obj) + " }";
+            default:
+                return "Cxt { " + ((lb0) obj) + " }";
+        }
+    }
+
+    public final pr4 x0() {
+        switch (this.c0) {
+        }
+        return this.d0;
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public s21(ln4 ln4Var, bu3 bu3Var, pr4 pr4Var) {
+        super(bu3Var);
+        bu3Var.getClass();
+        this.e0 = ln4Var;
+        this.d0 = pr4Var;
     }
 }

@@ -1,153 +1,391 @@
 .class public final Lg16;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Landroid/widget/TextView$OnEditorActionListener;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Landroid/view/ViewGroup;
+.super Landroid/hardware/camera2/CameraCaptureSession;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/view/ViewGroup;I)V
-    .locals 0
+.method public static g(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
 
     .line 1
-    iput p2, p0, Lg16;->a:I
+    const-string v0, "Current capture session is running on extensions mode which isn\'t allowed to invoke the "
 
     .line 2
     .line 3
-    iput-object p1, p0, Lg16;->b:Landroid/view/ViewGroup;
+    const-string v1, " function!"
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0, p0, v1}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7
     .line 8
-    return-void
+    move-result-object p0
+
+    .line 9
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public final onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
-    .locals 2
+.method public final abortCaptures()V
+    .locals 1
 
     .line 1
-    iget p1, p0, Lg16;->a:I
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
     .line 2
     .line 3
-    const/4 p3, 0x1
+    const-string v0, "abortCaptures"
 
     .line 4
-    iget-object v0, p0, Lg16;->b:Landroid/view/ViewGroup;
-
     .line 5
-    .line 6
-    packed-switch p1, :pswitch_data_0
+    invoke-static {v0}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 6
     .line 7
     .line 8
+    move-result-object v0
+
     .line 9
-    check-cast v0, Landroidx/appcompat/widget/SearchView;
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView;->q()V
+    .line 12
+    throw p0
+.end method
+
+.method public final capture(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/os/Handler;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 5
+    .line 6
+    const-string p1, "capture"
+
+    .line 7
+    .line 8
+    invoke-static {p1}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
 
     .line 12
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
     .line 13
     .line 14
-    return p3
-
     .line 15
-    :pswitch_0
-    check-cast v0, Landroidx/leanback/widget/SearchBar;
+    throw p0
+.end method
 
-    .line 16
-    .line 17
-    const/4 p1, 0x3
+.method public final captureBurst(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/os/Handler;)I
+    .locals 0
 
-    .line 18
-    const/4 p1, 0x2
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 19
-    const/4 v1, 0x0
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    .line 20
-    if-ne p1, p2, :cond_0
+    .line 5
+    .line 6
+    const-string p1, "captureBurst"
 
-    .line 21
-    .line 22
-    iget-object p1, v0, Landroidx/leanback/widget/SearchBar;->b0:Landroid/view/inputmethod/InputMethodManager;
+    .line 7
+    .line 8
+    invoke-static {p1}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 23
-    .line 24
-    iget-object p2, v0, Landroidx/leanback/widget/SearchBar;->Q:Landroidx/leanback/widget/SearchEditText;
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
 
-    .line 25
-    .line 26
-    invoke-virtual {p2}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    .line 12
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p2
+    .line 13
+    .line 14
+    .line 15
+    throw p0
+.end method
 
-    .line 30
-    invoke-virtual {p1, p2, v1}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
+.method public final close()V
+    .locals 1
 
-    .line 31
-    .line 32
-    .line 33
-    iget-object p1, v0, Landroidx/leanback/widget/SearchBar;->a0:Landroid/os/Handler;
+    .line 1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    .line 34
-    .line 35
-    new-instance p2, Ldb;
+    .line 2
+    .line 3
+    const-string v0, "close"
 
-    .line 36
-    .line 37
-    const/16 v0, 0x14
+    .line 4
+    .line 5
+    invoke-static {v0}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 38
-    .line 39
-    invoke-direct {p2, v0, p0}, Ldb;-><init>(ILjava/lang/Object;)V
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
 
-    .line 40
-    .line 41
-    .line 42
-    const-wide/16 v0, 0x1f4
+    .line 9
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 43
-    .line 44
-    invoke-virtual {p1, p2, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+    .line 10
+    .line 11
+    .line 12
+    throw p0
+.end method
 
-    .line 45
-    .line 46
-    .line 47
-    goto :goto_0
+.method public final finalizeOutputConfigurations(Ljava/util/List;)V
+    .locals 0
 
-    .line 48
-    :cond_0
-    const/4 p3, 0x0
+    .line 1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    .line 49
-    :goto_0
-    return p3
+    .line 2
+    .line 3
+    const-string p1, "finalizeOutputConfigurations"
 
-    .line 50
-    nop
+    .line 4
+    .line 5
+    invoke-static {p1}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 51
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    throw p0
+.end method
+
+.method public final getDevice()Landroid/hardware/camera2/CameraDevice;
+    .locals 1
+
+    .line 1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 2
+    .line 3
+    const-string v0, "getDevice"
+
+    .line 4
+    .line 5
+    invoke-static {v0}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    throw p0
+.end method
+
+.method public final getInputSurface()Landroid/view/Surface;
+    .locals 1
+
+    .line 1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 2
+    .line 3
+    const-string v0, "getInputSurface"
+
+    .line 4
+    .line 5
+    invoke-static {v0}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    throw p0
+.end method
+
+.method public final isReprocessable()Z
+    .locals 1
+
+    .line 1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 2
+    .line 3
+    const-string v0, "isReprocessable"
+
+    .line 4
+    .line 5
+    invoke-static {v0}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    throw p0
+.end method
+
+.method public final prepare(Landroid/view/Surface;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 5
+    .line 6
+    const-string p1, "prepare"
+
+    .line 7
+    .line 8
+    invoke-static {p1}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    throw p0
+.end method
+
+.method public final setRepeatingBurst(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/os/Handler;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 5
+    .line 6
+    const-string p1, "setRepeatingBurst"
+
+    .line 7
+    .line 8
+    invoke-static {p1}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    throw p0
+.end method
+
+.method public final setRepeatingRequest(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;Landroid/os/Handler;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 5
+    .line 6
+    const-string p1, "setRepeatingRequest"
+
+    .line 7
+    .line 8
+    invoke-static {p1}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    throw p0
+.end method
+
+.method public final stopRepeating()V
+    .locals 1
+
+    .line 1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 2
+    .line 3
+    const-string v0, "stopRepeating"
+
+    .line 4
+    .line 5
+    invoke-static {v0}, Lg16;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    throw p0
 .end method

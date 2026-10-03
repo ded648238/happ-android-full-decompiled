@@ -1,6 +1,6 @@
 .class Lorg/conscrypt/TrustManagerImpl$ExtendedKeyUsagePKIXCertPathChecker;
 .super Ljava/security/cert/PKIXCertPathChecker;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -70,7 +70,7 @@
     .line 10
     .line 11
     .line 12
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
     .line 13
     .line 14
@@ -305,11 +305,11 @@
     .line 76
     .line 77
     :goto_1
-    const-string p1, "2.5.29.37"
+    const-string p0, "2.5.29.37"
 
     .line 78
     .line 79
-    invoke-interface {p2, p1}, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
+    invoke-interface {p2, p0}, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
 
     .line 80
     .line 81
@@ -318,40 +318,40 @@
 
     .line 83
     :cond_7
-    new-instance p1, Ljava/security/cert/CertPathValidatorException;
+    new-instance p0, Ljava/security/cert/CertPathValidatorException;
 
     .line 84
     .line 85
-    const-string p2, "End-entity certificate does not have a valid extendedKeyUsage."
+    const-string p1, "End-entity certificate does not have a valid extendedKeyUsage."
 
     .line 86
     .line 87
-    invoke-direct {p1, p2}, Ljava/security/cert/CertPathValidatorException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/cert/CertPathValidatorException;-><init>(Ljava/lang/String;)V
 
     .line 88
     .line 89
     .line 90
-    throw p1
+    throw p0
 
     .line 91
     :catch_0
-    move-exception p1
+    move-exception p0
 
     .line 92
-    new-instance p2, Ljava/security/cert/CertPathValidatorException;
+    new-instance p1, Ljava/security/cert/CertPathValidatorException;
 
     .line 93
     .line 94
-    invoke-direct {p2, p1}, Ljava/security/cert/CertPathValidatorException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {p1, p0}, Ljava/security/cert/CertPathValidatorException;-><init>(Ljava/lang/Throwable;)V
 
     .line 95
     .line 96
     .line 97
-    throw p2
+    throw p1
 .end method
 
 .method public getSupportedExtensions()Ljava/util/Set;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -362,11 +362,11 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lorg/conscrypt/TrustManagerImpl$ExtendedKeyUsagePKIXCertPathChecker;->SUPPORTED_EXTENSIONS:Ljava/util/Set;
+    sget-object p0, Lorg/conscrypt/TrustManagerImpl$ExtendedKeyUsagePKIXCertPathChecker;->SUPPORTED_EXTENSIONS:Ljava/util/Set;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public init(Z)V
@@ -377,11 +377,11 @@
 .end method
 
 .method public isForwardCheckingSupported()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 2
-    return v0
+    return p0
 .end method

@@ -1,131 +1,17 @@
 package defpackage;
 
-import android.content.res.Resources;
-import android.graphics.PorterDuff;
-import android.graphics.Rect;
-import android.graphics.Region;
-import android.graphics.drawable.Drawable;
+import androidx.compose.ui.input.pointer.PointerInputEventHandler;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class pl7 extends Drawable implements u47 {
-    public Drawable Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class pl7 {
+    public static final ef5 a = new ef5(fw1.X, null);
 
-    @Override // android.graphics.drawable.Drawable
-    public void applyTheme(Resources.Theme theme) {
-        Drawable drawable = this.Q;
-        if (drawable != null) {
-            drawable.applyTheme(theme);
-        }
+    public static final tl7 a(PointerInputEventHandler pointerInputEventHandler) {
+        return new tl7(null, null, pointerInputEventHandler);
     }
 
-    @Override // android.graphics.drawable.Drawable
-    public final void clearColorFilter() {
-        Drawable drawable = this.Q;
-        if (drawable != null) {
-            drawable.clearColorFilter();
-        } else {
-            super.clearColorFilter();
-        }
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final Drawable getCurrent() {
-        Drawable drawable = this.Q;
-        return drawable != null ? drawable.getCurrent() : super.getCurrent();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final int getMinimumHeight() {
-        Drawable drawable = this.Q;
-        return drawable != null ? drawable.getMinimumHeight() : super.getMinimumHeight();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final int getMinimumWidth() {
-        Drawable drawable = this.Q;
-        return drawable != null ? drawable.getMinimumWidth() : super.getMinimumWidth();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final boolean getPadding(Rect rect) {
-        Drawable drawable = this.Q;
-        return drawable != null ? drawable.getPadding(rect) : super.getPadding(rect);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final int[] getState() {
-        Drawable drawable = this.Q;
-        return drawable != null ? drawable.getState() : super.getState();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final Region getTransparentRegion() {
-        Drawable drawable = this.Q;
-        return drawable != null ? drawable.getTransparentRegion() : super.getTransparentRegion();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void jumpToCurrentState() {
-        Drawable drawable = this.Q;
-        if (drawable != null) {
-            drawable.jumpToCurrentState();
-        }
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public boolean onLevelChange(int i) {
-        Drawable drawable = this.Q;
-        return drawable != null ? drawable.setLevel(i) : super.onLevelChange(i);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setChangingConfigurations(int i) {
-        Drawable drawable = this.Q;
-        if (drawable != null) {
-            drawable.setChangingConfigurations(i);
-        } else {
-            super.setChangingConfigurations(i);
-        }
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setColorFilter(int i, PorterDuff.Mode mode) {
-        Drawable drawable = this.Q;
-        if (drawable != null) {
-            drawable.setColorFilter(i, mode);
-        } else {
-            super.setColorFilter(i, mode);
-        }
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setFilterBitmap(boolean z) {
-        Drawable drawable = this.Q;
-        if (drawable != null) {
-            drawable.setFilterBitmap(z);
-        }
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setHotspot(float f, float f2) {
-        Drawable drawable = this.Q;
-        if (drawable != null) {
-            drawable.setHotspot(f, f2);
-        }
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final void setHotspotBounds(int i, int i2, int i3, int i4) {
-        Drawable drawable = this.Q;
-        if (drawable != null) {
-            drawable.setHotspotBounds(i, i2, i3, i4);
-        }
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public final boolean setState(int[] iArr) {
-        Drawable drawable = this.Q;
-        return drawable != null ? drawable.setState(iArr) : super.setState(iArr);
+    public static final dn4 b(dn4 dn4Var, Object obj, PointerInputEventHandler pointerInputEventHandler) {
+        return dn4Var.x(new ml7(obj, null, pointerInputEventHandler, 6));
     }
 }

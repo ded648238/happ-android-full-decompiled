@@ -7,16 +7,16 @@ import android.view.View;
 import android.widget.LinearLayout;
 import java.util.ArrayList;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 class ControlBar extends LinearLayout {
-    public int Q;
-    public final boolean R;
+    public int c0;
+    public final boolean d0;
 
     public ControlBar(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.Q = -1;
-        this.R = true;
+        this.c0 = -1;
+        this.d0 = true;
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -25,11 +25,11 @@ class ControlBar extends LinearLayout {
             super.addFocusables(arrayList, i, i2);
             return;
         }
-        int i3 = this.Q;
+        int i3 = this.c0;
         if (i3 >= 0 && i3 < getChildCount()) {
-            arrayList.add(getChildAt(this.Q));
+            arrayList.add(getChildAt(this.c0));
         } else if (getChildCount() > 0) {
-            arrayList.add(getChildAt(this.R ? getChildCount() / 2 : 0));
+            arrayList.add(getChildAt(this.d0 ? getChildCount() / 2 : 0));
         }
     }
 
@@ -40,15 +40,9 @@ class ControlBar extends LinearLayout {
 
     @Override // android.view.ViewGroup
     public final boolean onRequestFocusInDescendants(int i, Rect rect) {
-        int childCount;
         if (getChildCount() > 0) {
-            int i2 = this.Q;
-            if (i2 < 0 || i2 >= getChildCount()) {
-                childCount = this.R ? getChildCount() / 2 : 0;
-            } else {
-                childCount = this.Q;
-            }
-            if (getChildAt(childCount).requestFocus(i, rect)) {
+            int i2 = this.c0;
+            if (getChildAt((i2 < 0 || i2 >= getChildCount()) ? this.d0 ? getChildCount() / 2 : 0 : this.c0).requestFocus(i, rect)) {
                 return true;
             }
         }
@@ -58,6 +52,6 @@ class ControlBar extends LinearLayout {
     @Override // android.view.ViewGroup, android.view.ViewParent
     public final void requestChildFocus(View view, View view2) {
         super.requestChildFocus(view, view2);
-        this.Q = indexOfChild(view);
+        this.c0 = indexOfChild(view);
     }
 }

@@ -1,6 +1,6 @@
 .class public final enum Lsu/happ/proxyutility/dto/enums/EIpType;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -20,7 +20,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0010\u000e\n\u0002\u0008\u000b\u0008\u0086\u0081\u0002\u0018\u0000 \t2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\tR\u0017\u0010\u0003\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006R\u0017\u0010\u0007\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0007\u0010\u0004\u001a\u0004\u0008\u0008\u0010\u0006j\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000c\u00a8\u0006\r"
+        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0010\u000e\n\u0002\u0008\u000b\u0008\u0087\u0081\u0002\u0018\u0000 \t2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\tR\u0017\u0010\u0003\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006R\u0017\u0010\u0007\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0007\u0010\u0004\u001a\u0004\u0008\u0008\u0010\u0006j\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000c\u00a8\u0006\r"
     }
     d2 = {
         "Lsu/happ/proxyutility/dto/enums/EIpType;",
@@ -49,7 +49,7 @@
 
 
 # static fields
-.field private static final synthetic $ENTRIES:Lpp1;
+.field private static final synthetic $ENTRIES:Lmy1;
 
 .field private static final synthetic $VALUES:[Lsu/happ/proxyutility/dto/enums/EIpType;
 
@@ -70,7 +70,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 7
 
     .line 1
     new-instance v0, Lsu/happ/proxyutility/dto/enums/EIpType;
@@ -109,18 +109,18 @@
 
     .line 18
     .line 19
-    const-string v4, "UseIPv6"
+    const-string v3, "UseIPv6"
 
     .line 20
     .line 21
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
     .line 22
-    const-string v6, "IPv6"
+    const-string v5, "IPv6"
 
     .line 23
     .line 24
-    invoke-direct {v1, v5, v6, v2, v4}, Lsu/happ/proxyutility/dto/enums/EIpType;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v4, v5, v2, v3}, Lsu/happ/proxyutility/dto/enums/EIpType;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -133,22 +133,22 @@
 
     .line 30
     .line 31
-    const-string v4, "2"
+    const-string v3, "2"
 
     .line 32
     .line 33
-    const-string v6, "UseIP"
+    const-string v4, "UseIP"
 
     .line 34
     .line 35
-    const/4 v7, 0x2
+    const/4 v5, 0x2
 
     .line 36
-    const-string v8, "AUTO"
+    const-string v6, "AUTO"
 
     .line 37
     .line 38
-    invoke-direct {v2, v7, v8, v4, v6}, Lsu/happ/proxyutility/dto/enums/EIpType;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, v5, v6, v3, v4}, Lsu/happ/proxyutility/dto/enums/EIpType;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 39
     .line 40
@@ -157,55 +157,44 @@
 
     .line 42
     .line 43
-    const/4 v4, 0x3
+    filled-new-array {v0, v1, v2}, [Lsu/happ/proxyutility/dto/enums/EIpType;
 
     .line 44
-    new-array v4, v4, [Lsu/happ/proxyutility/dto/enums/EIpType;
-
     .line 45
     .line 46
-    aput-object v0, v4, v3
+    move-result-object v0
 
     .line 47
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/EIpType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/EIpType;
+
     .line 48
-    aput-object v1, v4, v5
-
     .line 49
+    new-instance v1, Loy1;
+
     .line 50
-    aput-object v2, v4, v7
-
     .line 51
-    .line 52
-    sput-object v4, Lsu/happ/proxyutility/dto/enums/EIpType;->$VALUES:[Lsu/happ/proxyutility/dto/enums/EIpType;
+    invoke-direct {v1, v0}, Loy1;-><init>([Ljava/lang/Enum;)V
 
+    .line 52
     .line 53
     .line 54
-    new-instance v0, Lrp1;
+    sput-object v1, Lsu/happ/proxyutility/dto/enums/EIpType;->$ENTRIES:Lmy1;
 
     .line 55
     .line 56
-    invoke-direct {v0, v4}, Lrp1;-><init>([Ljava/lang/Enum;)V
+    new-instance v0, Lsu/happ/proxyutility/dto/enums/EIpType$Companion;
 
     .line 57
     .line 58
-    .line 59
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/EIpType;->$ENTRIES:Lpp1;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 59
     .line 60
     .line 61
-    new-instance v0, Lsu/happ/proxyutility/dto/enums/EIpType$Companion;
+    sput-object v0, Lsu/happ/proxyutility/dto/enums/EIpType;->Companion:Lsu/happ/proxyutility/dto/enums/EIpType$Companion;
 
     .line 62
     .line 63
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 64
-    .line 65
-    .line 66
-    sput-object v0, Lsu/happ/proxyutility/dto/enums/EIpType;->Companion:Lsu/happ/proxyutility/dto/enums/EIpType$Companion;
-
-    .line 67
-    .line 68
     return-void
 .end method
 
@@ -229,11 +218,11 @@
     return-void
 .end method
 
-.method public static a()Lpp1;
+.method public static a()Lmy1;
     .locals 1
 
     .line 1
-    sget-object v0, Lsu/happ/proxyutility/dto/enums/EIpType;->$ENTRIES:Lpp1;
+    sget-object v0, Lsu/happ/proxyutility/dto/enums/EIpType;->$ENTRIES:Lmy1;
 
     .line 2
     .line 3
@@ -289,23 +278,23 @@
 
 # virtual methods
 .method public final b()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/enums/EIpType;->ipValue:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/enums/EIpType;->ipValue:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final c()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/enums/EIpType;->value:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/enums/EIpType;->value:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

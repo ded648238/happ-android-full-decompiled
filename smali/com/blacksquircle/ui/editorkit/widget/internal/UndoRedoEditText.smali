@@ -1,6 +1,6 @@
 .class public abstract Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;
 .super Lcom/blacksquircle/ui/editorkit/widget/internal/LineNumbersEditText;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -21,28 +21,28 @@
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
         "",
         "text",
-        "Lbh7;",
+        "Lr98;",
         "setTextContent",
         "(Ljava/lang/CharSequence;)V",
-        "Leg7;",
-        "f0",
-        "Leg7;",
+        "Lr88;",
+        "o0",
+        "Lr88;",
         "getUndoStack",
-        "()Leg7;",
+        "()Lr88;",
         "setUndoStack",
-        "(Leg7;)V",
+        "(Lr88;)V",
         "undoStack",
-        "g0",
+        "p0",
         "getRedoStack",
         "setRedoStack",
         "redoStack",
-        "Ldg7;",
+        "Lq88;",
         "onUndoRedoChangedListener",
-        "Ldg7;",
+        "Lq88;",
         "getOnUndoRedoChangedListener",
-        "()Ldg7;",
+        "()Lq88;",
         "setOnUndoRedoChangedListener",
-        "(Ldg7;)V",
+        "(Lq88;)V",
         "editorkit_release"
     }
     k = 0x1
@@ -56,11 +56,11 @@
 
 
 # instance fields
-.field public f0:Leg7;
+.field public o0:Lr88;
 
-.field public g0:Leg7;
+.field public p0:Lr88;
 
-.field public h0:Llx6;
+.field public q0:Lbp7;
 
 
 # direct methods
@@ -78,29 +78,29 @@
     .line 5
     .line 6
     .line 7
-    new-instance p1, Leg7;
+    new-instance p1, Lr88;
 
     .line 8
     .line 9
-    invoke-direct {p1}, Leg7;-><init>()V
+    invoke-direct {p1}, Lr88;-><init>()V
 
     .line 10
     .line 11
     .line 12
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->f0:Leg7;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->o0:Lr88;
 
     .line 13
     .line 14
-    new-instance p1, Leg7;
+    new-instance p1, Lr88;
 
     .line 15
     .line 16
-    invoke-direct {p1}, Leg7;-><init>()V
+    invoke-direct {p1}, Lr88;-><init>()V
 
     .line 17
     .line 18
     .line 19
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->g0:Leg7;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->p0:Lr88;
 
     .line 20
     .line 21
@@ -109,46 +109,46 @@
 
 
 # virtual methods
-.method public final getOnUndoRedoChangedListener()Ldg7;
-    .locals 1
+.method public final getOnUndoRedoChangedListener()Lq88;
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 2
-    return-object v0
+    return-object p0
 .end method
 
-.method public final getRedoStack()Leg7;
-    .locals 1
+.method public final getRedoStack()Lr88;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->g0:Leg7;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final getUndoStack()Leg7;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->f0:Leg7;
+    iget-object p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->p0:Lr88;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
-.method public final setOnUndoRedoChangedListener(Ldg7;)V
+.method public final getUndoStack()Lr88;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->o0:Lr88;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final setOnUndoRedoChangedListener(Lq88;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final setRedoStack(Leg7;)V
+.method public final setRedoStack(Lr88;)V
     .locals 0
 
     .line 1
@@ -157,7 +157,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->g0:Leg7;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->p0:Lr88;
 
     .line 5
     .line 6
@@ -181,7 +181,7 @@
     return-void
 .end method
 
-.method public final setUndoStack(Leg7;)V
+.method public final setUndoStack(Lr88;)V
     .locals 0
 
     .line 1
@@ -190,7 +190,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->f0:Leg7;
+    iput-object p1, p0, Lcom/blacksquircle/ui/editorkit/widget/internal/UndoRedoEditText;->o0:Lr88;
 
     .line 5
     .line 6

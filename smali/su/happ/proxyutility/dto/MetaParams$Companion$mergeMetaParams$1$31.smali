@@ -1,6 +1,6 @@
 .class final synthetic Lsu/happ/proxyutility/dto/MetaParams$Companion$mergeMetaParams$1$31;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Ljq4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -11,7 +11,7 @@
         0x4,
         0x0
     }
-    xi = 0x30
+    xi = 0x530
 .end annotation
 
 
@@ -43,7 +43,7 @@
 
     .line 9
     .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v3, v4, v1, v2}, Ljq4;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 11
     .line 12
@@ -57,7 +57,7 @@
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final E(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -90,8 +90,8 @@
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    return-object p1
+    return-object p0
 .end method

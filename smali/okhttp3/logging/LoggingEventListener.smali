@@ -1,6 +1,6 @@
 .class public final Lokhttp3/logging/LoggingEventListener;
 .super Lokhttp3/EventListener;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -23,7 +23,7 @@
         "(Lokhttp3/logging/HttpLoggingInterceptor$Logger;)V",
         "Lokhttp3/Call;",
         "call",
-        "Lbh7;",
+        "Lr98;",
         "callStart",
         "(Lokhttp3/Call;)V",
         "Lokhttp3/HttpUrl;",
@@ -136,7 +136,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lokhttp3/logging/HttpLoggingInterceptor$Logger;Lj31;)V
+.method public synthetic constructor <init>(Lokhttp3/logging/HttpLoggingInterceptor$Logger;Lib1;)V
     .locals 0
 
     .line 7
@@ -146,7 +146,7 @@
 .end method
 
 .method private final logWithTime(Ljava/lang/String;)V
-    .locals 5
+    .locals 4
 
     .line 1
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -172,24 +172,24 @@
     div-long/2addr v0, v2
 
     .line 12
-    iget-object v2, p0, Lokhttp3/logging/LoggingEventListener;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
+    iget-object p0, p0, Lokhttp3/logging/LoggingEventListener;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     .line 13
     .line 14
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 15
     .line 16
-    const-string v4, "["
+    const-string v3, "["
 
     .line 17
     .line 18
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 19
     .line 20
     .line 21
-    invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 22
     .line 23
@@ -198,17 +198,17 @@
 
     .line 25
     .line 26
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 27
     .line 28
     .line 29
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 30
     .line 31
     .line 32
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 33
     .line 34
@@ -216,7 +216,7 @@
     move-result-object p1
 
     .line 36
-    invoke-interface {v2, p1}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
+    invoke-interface {p0, p1}, Lokhttp3/logging/HttpLoggingInterceptor$Logger;->log(Ljava/lang/String;)V
 
     .line 37
     .line 38

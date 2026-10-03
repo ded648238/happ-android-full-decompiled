@@ -1,11 +1,24 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface cg4 {
-    cg4 a(bv1 bv1Var, Object obj);
+import android.content.Context;
+import android.view.View;
+import android.view.animation.PathInterpolator;
 
-    cg4 d(bv1 bv1Var, int i);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class cg4 {
+    public final PathInterpolator a = new PathInterpolator(0.1f, 0.1f, 0.0f, 1.0f);
+    public final View b;
+    public final int c;
+    public final int d;
+    public final int e;
+    public ez f;
 
-    cg4 e(bv1 bv1Var, long j);
+    public cg4(View view) {
+        this.b = view;
+        Context context = view.getContext();
+        this.c = ut.h0(context, ur5.motionDurationMedium2, 300);
+        this.d = ut.h0(context, ur5.motionDurationShort3, 150);
+        this.e = ut.h0(context, ur5.motionDurationShort2, 100);
+    }
 }

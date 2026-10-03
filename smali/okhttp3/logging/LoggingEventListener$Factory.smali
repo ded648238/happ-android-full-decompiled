@@ -1,6 +1,6 @@
 .class public Lokhttp3/logging/LoggingEventListener$Factory;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lokhttp3/EventListener$Factory;
@@ -55,7 +55,7 @@
 
     const/4 v1, 0x1
 
-    invoke-direct {p0, v0, v1, v0}, Lokhttp3/logging/LoggingEventListener$Factory;-><init>(Lokhttp3/logging/HttpLoggingInterceptor$Logger;ILj31;)V
+    invoke-direct {p0, v0, v1, v0}, Lokhttp3/logging/LoggingEventListener$Factory;-><init>(Lokhttp3/logging/HttpLoggingInterceptor$Logger;ILib1;)V
 
     return-void
 .end method
@@ -74,7 +74,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lokhttp3/logging/HttpLoggingInterceptor$Logger;ILj31;)V
+.method public synthetic constructor <init>(Lokhttp3/logging/HttpLoggingInterceptor$Logger;ILib1;)V
     .locals 0
 
     .line 1
@@ -102,7 +102,7 @@
 
 # virtual methods
 .method public create(Lokhttp3/Call;)Lokhttp3/EventListener;
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -114,14 +114,14 @@
 
     .line 5
     .line 6
-    iget-object v0, p0, Lokhttp3/logging/LoggingEventListener$Factory;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
+    iget-object p0, p0, Lokhttp3/logging/LoggingEventListener$Factory;->logger:Lokhttp3/logging/HttpLoggingInterceptor$Logger;
 
     .line 7
     .line 8
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 9
-    invoke-direct {p1, v0, v1}, Lokhttp3/logging/LoggingEventListener;-><init>(Lokhttp3/logging/HttpLoggingInterceptor$Logger;Lj31;)V
+    invoke-direct {p1, p0, v0}, Lokhttp3/logging/LoggingEventListener;-><init>(Lokhttp3/logging/HttpLoggingInterceptor$Logger;Lib1;)V
 
     .line 10
     .line 11

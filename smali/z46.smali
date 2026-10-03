@@ -1,65 +1,85 @@
-.class public final Lz46;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Li02;
+.class public final synthetic Lz46;
+.super Ljq4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final Q:Lv36;
+# static fields
+.field public static final X:Lz46;
 
 
 # direct methods
-.method public constructor <init>(Lk15;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lz46;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lz46;->Q:Lv36;
+    const-string v1, "getFragmentationPackets()Lsu/happ/proxyutility/dto/enums/FragmentationPackets;"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
+    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 7
+    .line 8
+    const-string v4, "fragmentationPackets"
+
+    .line 9
+    .line 10
+    invoke-direct {v0, v3, v4, v1, v2}, Ljq4;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v0, Lz46;->X:Lz46;
+
+    .line 14
+    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final k(Ljava/lang/Object;Lyv0;)Ljava/lang/Object;
-    .locals 1
+.method public final E(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lz46;->Q:Lv36;
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
 
     .line 2
     .line 3
-    invoke-interface {v0, p2, p1}, Lv36;->a(Lyv0;Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast p2, Lsu/happ/proxyutility/dto/enums/FragmentationPackets;
+
+    .line 4
+    .line 5
+    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->z1(Lsu/happ/proxyutility/dto/enums/FragmentationPackets;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->M()Lsu/happ/proxyutility/dto/enums/FragmentationPackets;
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object p0
 
     .line 7
-    sget-object p2, Lcx0;->Q:Lcx0;
-
-    .line 8
-    .line 9
-    if-ne p1, p2, :cond_0
-
-    .line 10
-    .line 11
-    return-object p1
-
-    .line 12
-    :cond_0
-    sget-object p1, Lbh7;->a:Lbh7;
-
-    .line 13
-    .line 14
-    return-object p1
+    return-object p0
 .end method

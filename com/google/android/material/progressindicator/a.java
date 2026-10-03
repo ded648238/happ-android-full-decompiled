@@ -11,81 +11,86 @@ import android.provider.Settings;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ProgressBar;
-import defpackage.bp2;
-import defpackage.c37;
-import defpackage.cb1;
-import defpackage.fk1;
-import defpackage.fn;
-import defpackage.i04;
-import defpackage.mk1;
-import defpackage.na5;
-import defpackage.oi;
-import defpackage.sy;
-import defpackage.ty;
-import defpackage.uy;
-import defpackage.va5;
-import defpackage.va6;
-import defpackage.x75;
+import defpackage.ck;
+import defpackage.gv7;
+import defpackage.h31;
+import defpackage.hh4;
+import defpackage.hj1;
+import defpackage.i60;
+import defpackage.js1;
+import defpackage.nu5;
+import defpackage.qs1;
+import defpackage.t33;
+import defpackage.uu5;
+import defpackage.v00;
+import defpackage.w00;
+import defpackage.wr5;
+import defpackage.x00;
+import defpackage.y00;
 import java.util.ArrayList;
 import java.util.Arrays;
 import su.happ.proxyutility.dto.XRayConfig;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class a extends ProgressBar {
-    public static final int g0 = na5.Widget_MaterialComponents_ProgressIndicator;
-    public final uy Q;
-    public int R;
-    public boolean S;
-    public final boolean T;
-    public final int U;
-    public oi V;
-    public boolean W;
-    public int a0;
-    public boolean b0;
-    public final sy c0;
-    public final sy d0;
-    public final ty e0;
-    public final ty f0;
+    public static final int r0 = nu5.Widget_MaterialComponents_ProgressIndicator;
+    public final y00 c0;
+    public int d0;
+    public boolean e0;
+    public final boolean f0;
+    public final int g0;
+    public long h0;
+    public ck i0;
+    public boolean j0;
+    public int k0;
+    public boolean l0;
+    public final v00 m0;
+    public final w00 n0;
+    public final w00 o0;
+    public final x00 p0;
+    public final x00 q0;
 
     public a(Context context, AttributeSet attributeSet, int i, int i2) {
-        super(i04.a(context, attributeSet, i, g0), attributeSet, i);
-        this.W = false;
-        this.a0 = 4;
-        this.c0 = new sy(this, 0);
-        this.d0 = new sy(this, 1);
-        this.e0 = new ty(this, 0);
-        this.f0 = new ty(this, 1);
+        super(hh4.b(context, attributeSet, i, r0), attributeSet, i);
+        this.h0 = -1L;
+        this.j0 = false;
+        this.k0 = 4;
+        this.m0 = new v00(this);
+        this.n0 = new w00(this, 0);
+        this.o0 = new w00(this, 1);
+        this.p0 = new x00(this, 0);
+        this.q0 = new x00(this, 1);
         Context context2 = getContext();
-        this.Q = a(context2, attributeSet);
-        TypedArray typedArrayD = c37.d(context2, attributeSet, va5.BaseProgressIndicator, i, i2, new int[0]);
-        typedArrayD.getInt(va5.BaseProgressIndicator_showDelay, -1);
-        this.U = Math.min(typedArrayD.getInt(va5.BaseProgressIndicator_minHideDelay, -1), XRayConfig.OutboundBean.StreamSettingsBean.KcpSettingsBean.ttiMax);
-        typedArrayD.recycle();
-        this.V = new oi();
-        this.T = true;
+        this.c0 = a(context2, attributeSet);
+        TypedArray d = gv7.d(context2, attributeSet, uu5.BaseProgressIndicator, i, i2, new int[0]);
+        d.getInt(uu5.BaseProgressIndicator_showDelay, -1);
+        this.g0 = Math.min(d.getInt(uu5.BaseProgressIndicator_minHideDelay, -1), XRayConfig.OutboundBean.StreamSettingsBean.KcpSettingsBean.ttiMax);
+        d.recycle();
+        this.i0 = new ck();
+        this.f0 = true;
     }
 
-    private mk1 getCurrentDrawingDelegate() {
+    private qs1 getCurrentDrawingDelegate() {
         if (isIndeterminate()) {
             if (getIndeterminateDrawable() == null) {
                 return null;
             }
-            return getIndeterminateDrawable().d0;
+            return getIndeterminateDrawable().m0;
         }
         if (getProgressDrawable() == null) {
             return null;
         }
-        return getProgressDrawable().d0;
+        return getProgressDrawable().m0;
     }
 
-    public abstract uy a(Context context, AttributeSet attributeSet);
+    public abstract y00 a(Context context, AttributeSet attributeSet);
 
     public final void b() {
         if (getProgressDrawable() == null || getIndeterminateDrawable() == null) {
             return;
         }
-        getIndeterminateDrawable().e0.p(this.e0);
+        getIndeterminateDrawable().n0.q(this.p0);
     }
 
     public void c(int i, boolean z) {
@@ -98,19 +103,19 @@ public abstract class a extends ProgressBar {
             return;
         }
         if (getProgressDrawable() != null) {
-            this.R = i;
-            this.S = z;
-            this.W = true;
+            this.d0 = i;
+            this.e0 = z;
+            this.j0 = true;
             if (getIndeterminateDrawable().isVisible()) {
-                oi oiVar = this.V;
+                ck ckVar = this.i0;
                 ContentResolver contentResolver = getContext().getContentResolver();
-                oiVar.getClass();
+                ckVar.getClass();
                 if (Settings.Global.getFloat(contentResolver, "animator_duration_scale", 1.0f) != 0.0f) {
-                    getIndeterminateDrawable().e0.q();
+                    getIndeterminateDrawable().n0.r();
                     return;
                 }
             }
-            this.e0.a(getIndeterminateDrawable());
+            this.p0.a(getIndeterminateDrawable());
         }
     }
 
@@ -138,61 +143,61 @@ public abstract class a extends ProgressBar {
     }
 
     public int getHideAnimationBehavior() {
-        return this.Q.h;
+        return this.c0.h;
     }
 
     @Override // android.widget.ProgressBar
-    public bp2 getIndeterminateDrawable() {
-        return (bp2) super.getIndeterminateDrawable();
+    public t33 getIndeterminateDrawable() {
+        return (t33) super.getIndeterminateDrawable();
     }
 
     public int[] getIndicatorColor() {
-        return this.Q.e;
+        return this.c0.e;
     }
 
     public int getIndicatorTrackGapSize() {
-        return this.Q.i;
+        return this.c0.i;
     }
 
     @Override // android.widget.ProgressBar
-    public cb1 getProgressDrawable() {
-        return (cb1) super.getProgressDrawable();
+    public hj1 getProgressDrawable() {
+        return (hj1) super.getProgressDrawable();
     }
 
     public int getShowAnimationBehavior() {
-        return this.Q.g;
+        return this.c0.g;
     }
 
     public int getTrackColor() {
-        return this.Q.f;
+        return this.c0.f;
     }
 
     public int getTrackCornerRadius() {
-        return this.Q.b;
+        return this.c0.b;
     }
 
     public float getTrackCornerRadiusFraction() {
-        return this.Q.c;
+        return this.c0.c;
     }
 
     public int getTrackThickness() {
-        return this.Q.a;
+        return this.c0.a;
     }
 
     public int getWaveAmplitude() {
-        return this.Q.l;
+        return this.c0.l;
     }
 
     public int getWaveSpeed() {
-        return this.Q.m;
+        return this.c0.m;
     }
 
     public int getWavelengthDeterminate() {
-        return this.Q.j;
+        return this.c0.j;
     }
 
     public int getWavelengthIndeterminate() {
-        return this.Q.k;
+        return this.c0.k;
     }
 
     @Override // android.view.View
@@ -207,29 +212,29 @@ public abstract class a extends ProgressBar {
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
         b();
-        cb1 progressDrawable = getProgressDrawable();
-        ty tyVar = this.f0;
+        hj1 progressDrawable = getProgressDrawable();
+        x00 x00Var = this.q0;
         if (progressDrawable != null) {
-            cb1 progressDrawable2 = getProgressDrawable();
-            if (progressDrawable2.W == null) {
-                progressDrawable2.W = new ArrayList();
+            hj1 progressDrawable2 = getProgressDrawable();
+            if (progressDrawable2.f0 == null) {
+                progressDrawable2.f0 = new ArrayList();
             }
-            if (!progressDrawable2.W.contains(tyVar)) {
-                progressDrawable2.W.add(tyVar);
+            if (!progressDrawable2.f0.contains(x00Var)) {
+                progressDrawable2.f0.add(x00Var);
             }
         }
         if (getIndeterminateDrawable() != null) {
-            bp2 indeterminateDrawable = getIndeterminateDrawable();
-            if (indeterminateDrawable.W == null) {
-                indeterminateDrawable.W = new ArrayList();
+            t33 indeterminateDrawable = getIndeterminateDrawable();
+            if (indeterminateDrawable.f0 == null) {
+                indeterminateDrawable.f0 = new ArrayList();
             }
-            if (!indeterminateDrawable.W.contains(tyVar)) {
-                indeterminateDrawable.W.add(tyVar);
+            if (!indeterminateDrawable.f0.contains(x00Var)) {
+                indeterminateDrawable.f0.add(x00Var);
             }
         }
         if (d()) {
-            if (this.U > 0) {
-                SystemClock.uptimeMillis();
+            if (this.g0 > 0) {
+                this.h0 = SystemClock.uptimeMillis();
             }
             setVisibility(0);
         }
@@ -237,17 +242,17 @@ public abstract class a extends ProgressBar {
 
     @Override // android.widget.ProgressBar, android.view.View
     public final void onDetachedFromWindow() {
-        removeCallbacks(this.d0);
-        removeCallbacks(this.c0);
-        ((fk1) getCurrentDrawable()).d(false, false, false);
-        bp2 indeterminateDrawable = getIndeterminateDrawable();
-        ty tyVar = this.f0;
+        removeCallbacks(this.o0);
+        removeCallbacks(this.n0);
+        ((js1) getCurrentDrawable()).d(false, false, false);
+        t33 indeterminateDrawable = getIndeterminateDrawable();
+        x00 x00Var = this.q0;
         if (indeterminateDrawable != null) {
-            getIndeterminateDrawable().f(tyVar);
-            getIndeterminateDrawable().e0.w();
+            getIndeterminateDrawable().f(x00Var);
+            getIndeterminateDrawable().n0.x();
         }
         if (getProgressDrawable() != null) {
-            getProgressDrawable().f(tyVar);
+            getProgressDrawable().f(x00Var);
         }
         super.onDetachedFromWindow();
     }
@@ -255,15 +260,22 @@ public abstract class a extends ProgressBar {
     @Override // android.widget.ProgressBar, android.view.View
     public final synchronized void onDraw(Canvas canvas) {
         try {
-            int iSave = canvas.save();
-            if (getPaddingLeft() != 0 || getPaddingTop() != 0) {
-                canvas.translate(getPaddingLeft(), getPaddingTop());
+            int save = canvas.save();
+            if (getPaddingLeft() == 0) {
+                if (getPaddingTop() != 0) {
+                }
+                if (getPaddingRight() == 0 || getPaddingBottom() != 0) {
+                    canvas.clipRect(0, 0, getWidth() - (getPaddingLeft() + getPaddingRight()), getHeight() - (getPaddingTop() + getPaddingBottom()));
+                }
+                getCurrentDrawable().draw(canvas);
+                canvas.restoreToCount(save);
             }
-            if (getPaddingRight() != 0 || getPaddingBottom() != 0) {
-                canvas.clipRect(0, 0, getWidth() - (getPaddingLeft() + getPaddingRight()), getHeight() - (getPaddingTop() + getPaddingBottom()));
+            canvas.translate(getPaddingLeft(), getPaddingTop());
+            if (getPaddingRight() == 0) {
             }
+            canvas.clipRect(0, 0, getWidth() - (getPaddingLeft() + getPaddingRight()), getHeight() - (getPaddingTop() + getPaddingBottom()));
             getCurrentDrawable().draw(canvas);
-            canvas.restoreToCount(iSave);
+            canvas.restoreToCount(save);
         } catch (Throwable th) {
             throw th;
         }
@@ -278,7 +290,7 @@ public abstract class a extends ProgressBar {
     @Override // android.widget.ProgressBar, android.view.View
     public final synchronized void onMeasure(int i, int i2) {
         try {
-            mk1 currentDrawingDelegate = getCurrentDrawingDelegate();
+            qs1 currentDrawingDelegate = getCurrentDrawingDelegate();
             if (currentDrawingDelegate == null) {
                 return;
             }
@@ -292,31 +304,51 @@ public abstract class a extends ProgressBar {
     public final void onVisibilityChanged(View view, int i) {
         super.onVisibilityChanged(view, i);
         boolean z = i == 0;
-        if (this.T) {
-            ((fk1) getCurrentDrawable()).d(d(), false, z);
+        if (this.f0) {
+            ((js1) getCurrentDrawable()).d(d(), false, z);
         }
     }
 
     @Override // android.view.View
     public final void onWindowVisibilityChanged(int i) {
         super.onWindowVisibilityChanged(i);
-        if (this.T) {
-            ((fk1) getCurrentDrawable()).d(d(), false, false);
+        if (this.f0) {
+            ((js1) getCurrentDrawable()).d(d(), false, false);
         }
     }
 
-    public void setAnimatorDurationScaleProvider(oi oiVar) {
-        this.V = oiVar;
+    public void setAnimatorDurationScaleProvider(ck ckVar) {
+        this.i0 = ckVar;
         if (getProgressDrawable() != null) {
-            getProgressDrawable().S = oiVar;
+            getProgressDrawable().Z = ckVar;
         }
         if (getIndeterminateDrawable() != null) {
-            getIndeterminateDrawable().S = oiVar;
+            getIndeterminateDrawable().Z = ckVar;
+        }
+    }
+
+    public void setHideAfterMaxProgress(boolean z) {
+        if (getProgressDrawable() == null) {
+            return;
+        }
+        v00 v00Var = this.m0;
+        if (z) {
+            ArrayList arrayList = getProgressDrawable().n0.k;
+            if (arrayList.contains(v00Var)) {
+                return;
+            }
+            arrayList.add(v00Var);
+            return;
+        }
+        ArrayList arrayList2 = getProgressDrawable().n0.k;
+        int indexOf = arrayList2.indexOf(v00Var);
+        if (indexOf >= 0) {
+            arrayList2.set(indexOf, null);
         }
     }
 
     public void setHideAnimationBehavior(int i) {
-        this.Q.h = i;
+        this.c0.h = i;
         invalidate();
     }
 
@@ -326,39 +358,39 @@ public abstract class a extends ProgressBar {
             if (z == isIndeterminate()) {
                 return;
             }
-            fk1 fk1Var = (fk1) getCurrentDrawable();
-            if (fk1Var != null) {
-                fk1Var.d(false, false, false);
+            js1 js1Var = (js1) getCurrentDrawable();
+            if (js1Var != null) {
+                js1Var.d(false, false, false);
             }
             super.setIndeterminate(z);
-            fk1 fk1Var2 = (fk1) getCurrentDrawable();
-            if (fk1Var2 != null) {
-                fk1Var2.d(d(), false, false);
+            js1 js1Var2 = (js1) getCurrentDrawable();
+            if (js1Var2 != null) {
+                js1Var2.d(d(), false, false);
             }
-            if ((fk1Var2 instanceof bp2) && d()) {
-                ((bp2) fk1Var2).e0.u();
+            if ((js1Var2 instanceof t33) && d()) {
+                ((t33) js1Var2).n0.v();
             }
-            this.W = false;
+            this.j0 = false;
         } catch (Throwable th) {
             throw th;
         }
     }
 
     public void setIndeterminateAnimatorDurationScale(float f) {
-        uy uyVar = this.Q;
-        if (uyVar.n != f) {
-            uyVar.n = f;
-            getIndeterminateDrawable().e0.m();
+        y00 y00Var = this.c0;
+        if (y00Var.n != f) {
+            y00Var.n = f;
+            getIndeterminateDrawable().n0.n();
         }
     }
 
     @Override // android.widget.ProgressBar
     public void setIndeterminateDrawable(Drawable drawable) {
-        if (drawable instanceof bp2) {
-            ((fk1) drawable).d(false, false, false);
+        if (drawable instanceof t33) {
+            ((js1) drawable).d(false, false, false);
             super.setIndeterminateDrawable(drawable);
-        } else if (this.b0) {
-            fn.r("Cannot set framework drawable as indeterminate drawable.");
+        } else if (this.l0) {
+            i60.p("Cannot set framework drawable as indeterminate drawable.");
         } else {
             super.setIndeterminateDrawable(drawable);
         }
@@ -366,21 +398,21 @@ public abstract class a extends ProgressBar {
 
     public void setIndicatorColor(int... iArr) {
         if (iArr.length == 0) {
-            iArr = new int[]{va6.x(getContext(), x75.colorPrimary, -1)};
+            iArr = new int[]{h31.X(getContext(), wr5.colorPrimary, -1)};
         }
         if (Arrays.equals(getIndicatorColor(), iArr)) {
             return;
         }
-        this.Q.e = iArr;
-        getIndeterminateDrawable().e0.m();
+        this.c0.e = iArr;
+        getIndeterminateDrawable().n0.n();
         invalidate();
     }
 
     public void setIndicatorTrackGapSize(int i) {
-        uy uyVar = this.Q;
-        if (uyVar.i != i) {
-            uyVar.i = i;
-            uyVar.d();
+        y00 y00Var = this.c0;
+        if (y00Var.i != i) {
+            y00Var.i = i;
+            y00Var.d();
             invalidate();
         }
     }
@@ -395,81 +427,95 @@ public abstract class a extends ProgressBar {
 
     @Override // android.widget.ProgressBar
     public void setProgressDrawable(Drawable drawable) {
-        if (drawable instanceof cb1) {
-            cb1 cb1Var = (cb1) drawable;
-            cb1Var.d(false, false, false);
-            super.setProgressDrawable(cb1Var);
-            cb1Var.setLevel((int) ((getProgress() / getMax()) * 10000.0f));
+        if (drawable instanceof hj1) {
+            hj1 hj1Var = (hj1) drawable;
+            hj1Var.d(false, false, false);
+            super.setProgressDrawable(hj1Var);
+            hj1Var.setLevel((int) ((getProgress() / getMax()) * 10000.0f));
             return;
         }
-        if (this.b0) {
-            fn.r("Cannot set framework drawable as progress drawable.");
+        if (this.l0) {
+            i60.p("Cannot set framework drawable as progress drawable.");
         } else {
             super.setProgressDrawable(drawable);
         }
     }
 
     public void setShowAnimationBehavior(int i) {
-        this.Q.g = i;
+        this.c0.g = i;
         invalidate();
     }
 
     public void setTrackColor(int i) {
-        uy uyVar = this.Q;
-        if (uyVar.f != i) {
-            uyVar.f = i;
+        y00 y00Var = this.c0;
+        if (y00Var.f != i) {
+            y00Var.f = i;
             invalidate();
         }
     }
 
     public void setTrackCornerRadius(int i) {
-        uy uyVar = this.Q;
-        if (uyVar.b != i) {
-            uyVar.b = Math.min(i, uyVar.a / 2);
-            uyVar.d = false;
+        y00 y00Var = this.c0;
+        if (y00Var.b != i) {
+            y00Var.b = Math.min(i, y00Var.a / 2);
+            y00Var.d = false;
             invalidate();
         }
     }
 
     public void setTrackCornerRadiusFraction(float f) {
-        uy uyVar = this.Q;
-        if (uyVar.c != f) {
-            uyVar.c = Math.min(f, 0.5f);
-            uyVar.d = true;
+        y00 y00Var = this.c0;
+        if (y00Var.c != f) {
+            y00Var.c = Math.min(f, 0.5f);
+            y00Var.d = true;
             invalidate();
         }
     }
 
     public void setTrackThickness(int i) {
-        uy uyVar = this.Q;
-        if (uyVar.a != i) {
-            uyVar.a = i;
+        y00 y00Var = this.c0;
+        if (y00Var.a != i) {
+            y00Var.a = i;
             requestLayout();
         }
     }
 
     public void setVisibilityAfterHide(int i) {
         if (i == 0 || i == 4 || i == 8) {
-            this.a0 = i;
+            this.k0 = i;
         } else {
-            fn.r("The component's visibility must be one of VISIBLE, INVISIBLE, and GONE defined in View.");
+            i60.p("The component's visibility must be one of VISIBLE, INVISIBLE, and GONE defined in View.");
         }
     }
 
     public void setWaveAmplitude(int i) {
-        uy uyVar = this.Q;
-        if (uyVar.l != i) {
-            uyVar.l = Math.abs(i);
+        y00 y00Var = this.c0;
+        if (y00Var.l != i) {
+            y00Var.l = Math.abs(i);
             requestLayout();
         }
     }
 
+    public void setWaveAmplitudeRampProgressMax(float f) {
+        hj1 progressDrawable = getProgressDrawable();
+        progressDrawable.Y.p = f;
+        progressDrawable.invalidateSelf();
+        invalidate();
+    }
+
+    public void setWaveAmplitudeRampProgressMin(float f) {
+        hj1 progressDrawable = getProgressDrawable();
+        progressDrawable.Y.o = f;
+        progressDrawable.invalidateSelf();
+        invalidate();
+    }
+
     public void setWaveSpeed(int i) {
-        uy uyVar = this.Q;
-        uyVar.m = i;
-        cb1 progressDrawable = getProgressDrawable();
-        boolean z = uyVar.m != 0;
-        ValueAnimator valueAnimator = progressDrawable.j0;
+        y00 y00Var = this.c0;
+        y00Var.m = i;
+        hj1 progressDrawable = getProgressDrawable();
+        boolean z = y00Var.m != 0;
+        ValueAnimator valueAnimator = progressDrawable.r0;
         if (z && !valueAnimator.isRunning()) {
             valueAnimator.start();
         } else {
@@ -486,9 +532,9 @@ public abstract class a extends ProgressBar {
     }
 
     public void setWavelengthDeterminate(int i) {
-        uy uyVar = this.Q;
-        if (uyVar.j != i) {
-            uyVar.j = Math.abs(i);
+        y00 y00Var = this.c0;
+        if (y00Var.j != i) {
+            y00Var.j = Math.abs(i);
             if (isIndeterminate()) {
                 return;
             }
@@ -497,9 +543,9 @@ public abstract class a extends ProgressBar {
     }
 
     public void setWavelengthIndeterminate(int i) {
-        uy uyVar = this.Q;
-        if (uyVar.k != i) {
-            uyVar.k = Math.abs(i);
+        y00 y00Var = this.c0;
+        if (y00Var.k != i) {
+            y00Var.k = Math.abs(i);
             if (isIndeterminate()) {
                 requestLayout();
             }

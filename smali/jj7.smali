@@ -1,186 +1,323 @@
 .class public final Ljj7;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Landroid/view/ActionMode;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Ll76;
+.field public final a:Landroid/content/Context;
 
-.field public final b:Llj7;
-
-.field public final c:Law;
-
-.field public final d:Ljava/util/List;
-
-.field public e:Z
-
-.field public f:Z
+.field public final b:Lh5;
 
 
 # direct methods
-.method public constructor <init>(Ll76;Llj7;Law;Ljava/util/List;)V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;Lh5;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/view/ActionMode;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    iput-object p1, p0, Ljj7;->a:Landroid/content/Context;
 
     .line 5
-    iput-boolean v0, p0, Ljj7;->e:Z
-
     .line 6
+    iput-object p2, p0, Ljj7;->b:Lh5;
+
     .line 7
-    iput-boolean v0, p0, Ljj7;->f:Z
-
     .line 8
-    .line 9
-    iput-object p1, p0, Ljj7;->a:Ll76;
-
-    .line 10
-    .line 11
-    iput-object p2, p0, Ljj7;->b:Llj7;
-
-    .line 12
-    .line 13
-    iput-object p3, p0, Ljj7;->c:Law;
-
-    .line 14
-    .line 15
-    iput-object p4, p0, Ljj7;->d:Ljava/util/List;
-
-    .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public final finish()V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object p0, p0, Ljj7;->b:Lh5;
 
     .line 2
     .line 3
-    const-string v1, "UseCaseAttachInfo{mSessionConfig="
+    invoke-virtual {p0}, Lh5;->b()V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 6
+    return-void
+.end method
+
+.method public final getCustomView()Landroid/view/View;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lh5;->c()Landroid/view/View;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final getMenu()Landroid/view/Menu;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lfk4;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Ljj7;->b:Lh5;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Lh5;->f()Lgj4;
 
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Ljj7;->a:Ll76;
+    move-result-object v1
 
     .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    iget-object p0, p0, Ljj7;->a:Landroid/content/Context;
 
+    .line 10
     .line 11
+    invoke-direct {v0, p0, v1}, Lfk4;-><init>(Landroid/content/Context;Lgj4;)V
+
     .line 12
     .line 13
-    const-string v1, ", mUseCaseConfig="
-
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, Ljj7;->b:Llj7;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", mStreamSpec="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, Ljj7;->c:Law;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", mCaptureTypes="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, Ljj7;->d:Ljava/util/List;
-
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v1, ", mAttached="
-
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    iget-boolean v1, p0, Ljj7;->e:Z
-
-    .line 49
-    .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    .line 53
-    const-string v1, ", mActive="
-
-    .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    iget-boolean v1, p0, Ljj7;->f:Z
-
-    .line 59
-    .line 60
-    const/16 v2, 0x7d
-
-    .line 61
-    .line 62
-    invoke-static {v0, v1, v2}, Lp27;->o(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object v0
-
-    .line 66
     return-object v0
+.end method
+
+.method public final getMenuInflater()Landroid/view/MenuInflater;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lh5;->g()Landroid/view/MenuInflater;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final getSubtitle()Ljava/lang/CharSequence;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lh5;->h()Ljava/lang/CharSequence;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final getTag()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lh5;->Z:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    return-object p0
+.end method
+
+.method public final getTitle()Ljava/lang/CharSequence;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lh5;->i()Ljava/lang/CharSequence;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final getTitleOptionalHint()Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    iget-boolean p0, p0, Lh5;->Y:Z
+
+    .line 4
+    .line 5
+    return p0
+.end method
+
+.method public final invalidate()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lh5;->j()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final isTitleOptional()Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lh5;->k()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final setCustomView(Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lh5;->m(Landroid/view/View;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final setSubtitle(I)V
+    .locals 0
+
+    .line 7
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    invoke-virtual {p0, p1}, Lh5;->n(I)V
+
+    return-void
+.end method
+
+.method public final setSubtitle(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lh5;->o(Ljava/lang/CharSequence;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final setTag(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    iput-object p1, p0, Lh5;->Z:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method public final setTitle(I)V
+    .locals 0
+
+    .line 7
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    invoke-virtual {p0, p1}, Lh5;->p(I)V
+
+    return-void
+.end method
+
+.method public final setTitle(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lh5;->q(Ljava/lang/CharSequence;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final setTitleOptionalHint(Z)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ljj7;->b:Lh5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lh5;->r(Z)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
 .end method

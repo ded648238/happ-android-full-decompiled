@@ -1,101 +1,66 @@
 package defpackage;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import okhttp3.HttpUrl;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class s1 extends u0 implements List {
-    @Override // java.util.List
-    public final void add(int i, Object obj) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.List
-    public final boolean addAll(int i, Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection, java.util.List
-    public final boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class s1 extends f3 {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public s1(r64 r64Var, ia1 ia1Var, xl xlVar, pr4 pr4Var, eg8 eg8Var, boolean z, int i, px3 px3Var) {
+        super(r64Var, ia1Var, xlVar, pr4Var, eg8Var, z, i, px3Var);
+        if (r64Var == null) {
+            C(0);
+            throw null;
         }
-        if (!(obj instanceof List)) {
-            return false;
+        if (ia1Var == null) {
+            C(1);
+            throw null;
         }
-        Collection collection = (Collection) obj;
-        if (size() == collection.size()) {
-            Iterator it = collection.iterator();
-            Iterator<E> it2 = iterator();
-            while (it2.hasNext()) {
-                if (!rt2.f(it2.next(), it.next())) {
-                }
-            }
-            return true;
+        if (px3Var != null) {
+        } else {
+            C(6);
+            throw null;
         }
-        return false;
     }
 
-    @Override // java.util.Collection, java.util.List
-    public final int hashCode() {
-        Iterator<E> it = iterator();
-        int iHashCode = 1;
-        while (it.hasNext()) {
-            Object next = it.next();
-            iHashCode = (iHashCode * 31) + (next != null ? next.hashCode() : 0);
+    public static /* synthetic */ void C(int i) {
+        Object[] objArr = new Object[3];
+        switch (i) {
+            case 1:
+                objArr[0] = "containingDeclaration";
+                break;
+            case 2:
+                objArr[0] = "annotations";
+                break;
+            case 3:
+                objArr[0] = "name";
+                break;
+            case 4:
+                objArr[0] = "variance";
+                break;
+            case 5:
+                objArr[0] = "source";
+                break;
+            case 6:
+                objArr[0] = "supertypeLoopChecker";
+                break;
+            default:
+                objArr[0] = "storageManager";
+                break;
         }
-        return iHashCode;
+        objArr[1] = "kotlin/reflect/jvm/internal/impl/descriptors/impl/AbstractLazyTypeParameterDescriptor";
+        objArr[2] = "<init>";
+        throw new IllegalArgumentException(String.format("Argument for @NotNull parameter '%s' of %s.%s must not be null", objArr));
     }
 
-    public int indexOf(Object obj) {
-        Iterator it = iterator();
-        int i = 0;
-        while (it.hasNext()) {
-            if (rt2.f(it.next(), obj)) {
-                return i;
-            }
-            i++;
+    @Override // defpackage.ja1
+    public final String toString() {
+        boolean z = this.g0;
+        String str = HttpUrl.FRAGMENT_ENCODE_SET;
+        String str2 = z ? "reified " : HttpUrl.FRAGMENT_ENCODE_SET;
+        if (E() != eg8.INVARIANT) {
+            str = E() + " ";
         }
-        return -1;
-    }
-
-    @Override // java.util.Collection, java.lang.Iterable, java.util.List
-    public Iterator iterator() {
-        return new p1(0, this);
-    }
-
-    public int lastIndexOf(Object obj) {
-        ListIterator listIterator = listIterator(size());
-        while (listIterator.hasPrevious()) {
-            if (rt2.f(listIterator.previous(), obj)) {
-                return listIterator.nextIndex();
-            }
-        }
-        return -1;
-    }
-
-    public ListIterator listIterator() {
-        return new q1(this, 0);
-    }
-
-    @Override // java.util.List
-    public final Object remove(int i) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.List
-    public final Object set(int i, Object obj) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    public List subList(int i, int i2) {
-        return new r1(this, i, i2);
-    }
-
-    public ListIterator listIterator(int i) {
-        return new q1(this, i);
+        return str2 + str + getName();
     }
 }

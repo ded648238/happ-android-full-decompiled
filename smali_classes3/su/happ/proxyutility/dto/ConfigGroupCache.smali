@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/ConfigGroupCache;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -11,7 +11,7 @@
     d2 = {
         "Lsu/happ/proxyutility/dto/ConfigGroupCache;",
         "",
-        "Lnm6;",
+        "Lsu/happ/proxyutility/domain/sub/SubId;",
         "subId",
         "Ljava/lang/String;",
         "c",
@@ -128,35 +128,35 @@
     return-void
 .end method
 
-.method public static a(Lsu/happ/proxyutility/dto/ConfigGroupCache;Lsu/happ/proxyutility/dto/SubscriptionItem;Ljava/util/ArrayList;ZI)Lsu/happ/proxyutility/dto/ConfigGroupCache;
-    .locals 6
+.method public static a(Lsu/happ/proxyutility/dto/ConfigGroupCache;Lsu/happ/proxyutility/dto/SubscriptionItem;Ljava/util/ArrayList;ZZI)Lsu/happ/proxyutility/dto/ConfigGroupCache;
+    .locals 2
 
     .line 1
-    iget-object v1, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subId:Ljava/lang/String;
+    move-object v0, p1
 
     .line 2
+    iget-object p1, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subId:Ljava/lang/String;
+
     .line 3
-    and-int/lit8 v0, p4, 0x2
-
     .line 4
+    and-int/lit8 v1, p5, 0x2
+
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    if-eqz v1, :cond_0
+
     .line 7
-    iget-object p1, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subscriptionItem:Lsu/happ/proxyutility/dto/SubscriptionItem;
-
     .line 8
-    .line 9
-    :cond_0
-    move-object v2, p1
+    iget-object v0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subscriptionItem:Lsu/happ/proxyutility/dto/SubscriptionItem;
 
+    .line 9
     .line 10
-    and-int/lit8 p1, p4, 0x4
+    :cond_0
+    and-int/lit8 v1, p5, 0x4
 
     .line 11
     .line 12
-    if-eqz p1, :cond_1
+    if-eqz v1, :cond_1
 
     .line 13
     .line 14
@@ -165,122 +165,115 @@
     .line 15
     .line 16
     :cond_1
-    move-object v3, p2
+    and-int/lit8 v1, p5, 0x8
 
     .line 17
-    and-int/lit8 p1, p4, 0x8
-
     .line 18
-    .line 19
-    if-eqz p1, :cond_2
+    if-eqz v1, :cond_2
 
+    .line 19
     .line 20
-    .line 21
     iget-boolean p3, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isExpand:Z
 
+    .line 21
     .line 22
-    .line 23
     :cond_2
-    move v4, p3
+    and-int/lit8 p5, p5, 0x10
 
+    .line 23
     .line 24
-    and-int/lit8 p1, p4, 0x10
+    if-eqz p5, :cond_3
 
     .line 25
     .line 26
-    if-eqz p1, :cond_3
+    iget-boolean p4, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
 
     .line 27
     .line 28
-    iget-boolean p1, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
+    :cond_3
+    move p5, p4
 
     .line 29
-    .line 30
-    move v5, p1
-
-    .line 31
-    goto :goto_0
-
-    .line 32
-    :cond_3
-    const/4 p1, 0x1
-
-    .line 33
-    const/4 v5, 0x1
-
-    .line 34
-    :goto_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 33
+    .line 34
     .line 35
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 36
     .line 37
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 38
+    new-instance p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;
+
     .line 39
     .line 40
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move p4, p3
 
     .line 41
+    move-object p3, p2
+
     .line 42
+    move-object p2, v0
+
     .line 43
-    new-instance v0, Lsu/happ/proxyutility/dto/ConfigGroupCache;
+    invoke-direct/range {p0 .. p5}, Lsu/happ/proxyutility/dto/ConfigGroupCache;-><init>(Ljava/lang/String;Lsu/happ/proxyutility/dto/SubscriptionItem;Ljava/util/List;ZZ)V
 
     .line 44
     .line 45
-    invoke-direct/range {v0 .. v5}, Lsu/happ/proxyutility/dto/ConfigGroupCache;-><init>(Ljava/lang/String;Lsu/happ/proxyutility/dto/SubscriptionItem;Ljava/util/List;ZZ)V
-
     .line 46
-    .line 47
-    .line 48
-    return-object v0
+    return-object p0
 .end method
 
 
 # virtual methods
 .method public final b()Ljava/util/List;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->configs:Ljava/util/List;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->configs:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final c()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subId:Ljava/lang/String;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subId:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final d()Lsu/happ/proxyutility/dto/SubscriptionItem;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subscriptionItem:Lsu/happ/proxyutility/dto/SubscriptionItem;
+    iget-object p0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subscriptionItem:Lsu/happ/proxyutility/dto/SubscriptionItem;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final e()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isExpand:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isExpand:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -325,7 +318,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -349,7 +342,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -373,7 +366,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, v3}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lm93;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -405,7 +398,7 @@
 
     .line 53
     :cond_5
-    iget-boolean v1, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
 
     .line 54
     .line 55
@@ -413,7 +406,7 @@
 
     .line 56
     .line 57
-    if-eq v1, p1, :cond_6
+    if-eq p0, p1, :cond_6
 
     .line 58
     .line 59
@@ -425,18 +418,18 @@
 .end method
 
 .method public final f()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public final hashCode()I
-    .locals 5
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subId:Ljava/lang/String;
@@ -455,110 +448,83 @@
 
     .line 8
     .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 10
-    .line 11
     iget-object v2, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subscriptionItem:Lsu/happ/proxyutility/dto/SubscriptionItem;
 
+    .line 11
     .line 12
-    .line 13
     if-nez v2, :cond_0
 
+    .line 13
     .line 14
-    .line 15
     const/4 v2, 0x0
 
-    .line 16
+    .line 15
     goto :goto_0
 
-    .line 17
+    .line 16
     :cond_0
     invoke-virtual {v2}, Lsu/happ/proxyutility/dto/SubscriptionItem;->hashCode()I
 
+    .line 17
     .line 18
     .line 19
-    .line 20
     move-result v2
 
-    .line 21
+    .line 20
     :goto_0
     add-int/2addr v0, v2
 
+    .line 21
+    mul-int/2addr v0, v1
+
     .line 22
-    mul-int/lit8 v0, v0, 0x1f
+    iget-object v2, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->configs:Ljava/util/List;
 
     .line 23
     .line 24
-    iget-object v2, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->configs:Ljava/util/List;
+    invoke-static {v0, v1, v2}, Lw31;->f(IILjava/util/List;)I
 
     .line 25
     .line 26
-    invoke-static {v0, v1, v2}, Lp27;->k(IILjava/util/List;)I
-
     .line 27
-    .line 28
-    .line 29
     move-result v0
 
-    .line 30
+    .line 28
     iget-boolean v2, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isExpand:Z
+
+    .line 29
+    .line 30
+    invoke-static {v2, v0, v1}, Leb7;->f(ZII)I
 
     .line 31
     .line 32
-    const/16 v3, 0x4d5
-
     .line 33
+    move-result v0
+
     .line 34
-    const/16 v4, 0x4cf
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
 
     .line 35
     .line 36
-    if-eqz v2, :cond_1
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
     .line 37
     .line 38
-    const/16 v2, 0x4cf
-
     .line 39
+    move-result p0
+
     .line 40
-    goto :goto_1
+    add-int/2addr p0, v0
 
     .line 41
-    :cond_1
-    const/16 v2, 0x4d5
-
-    .line 42
-    .line 43
-    :goto_1
-    add-int/2addr v0, v2
-
-    .line 44
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 45
-    .line 46
-    iget-boolean v1, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
-
-    .line 47
-    .line 48
-    if-eqz v1, :cond_2
-
-    .line 49
-    .line 50
-    const/16 v3, 0x4cf
-
-    .line 51
-    .line 52
-    :cond_2
-    add-int/2addr v0, v3
-
-    .line 53
-    return v0
+    return p0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 7
+    .locals 6
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->subId:Ljava/lang/String;
@@ -577,24 +543,24 @@
 
     .line 8
     .line 9
-    iget-boolean v4, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
+    iget-boolean p0, p0, Lsu/happ/proxyutility/dto/ConfigGroupCache;->isPinned:Z
 
     .line 10
     .line 11
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
     .line 12
     .line 13
-    const-string v6, "ConfigGroupCache(subId="
+    const-string v5, "ConfigGroupCache(subId="
 
     .line 14
     .line 15
-    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 19
     .line 20
@@ -603,12 +569,12 @@
 
     .line 22
     .line 23
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 24
     .line 25
     .line 26
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 27
     .line 28
@@ -617,12 +583,12 @@
 
     .line 30
     .line 31
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 32
     .line 33
     .line 34
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 35
     .line 36
@@ -631,12 +597,12 @@
 
     .line 38
     .line 39
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 40
     .line 41
     .line 42
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 43
     .line 44
@@ -645,7 +611,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 48
     .line 49
@@ -654,13 +620,13 @@
 
     .line 51
     .line 52
-    invoke-static {v5, v4, v0}, Lea0;->t(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p0, v0}, Lw31;->o(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     .line 53
     .line 54
     .line 55
-    move-result-object v0
+    move-result-object p0
 
     .line 56
-    return-object v0
+    return-object p0
 .end method

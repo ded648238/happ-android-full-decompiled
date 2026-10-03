@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/util/dnsttv/dto/RequestEnvelope$Companion;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -64,15 +64,14 @@
 
     .line 11
     .line 12
-    const/16 p1, 0xff
+    move p1, p0
 
     .line 13
-    .line 14
     :cond_1
     :goto_0
     int-to-byte p0, p1
 
-    .line 15
+    .line 14
     return p0
 .end method
 

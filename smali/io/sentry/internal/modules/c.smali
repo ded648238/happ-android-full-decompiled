@@ -1,6 +1,6 @@
 .class public final Lio/sentry/internal/modules/c;
 .super Lio/sentry/internal/modules/d;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -65,7 +65,7 @@
 
     .line 25
     .line 26
-    invoke-static {v0}, Lio/sentry/util/b;->d(Ljava/lang/ClassLoader;)Ljava/lang/ClassLoader;
+    invoke-static {v0}, Lio/sentry/util/c;->d(Ljava/lang/ClassLoader;)Ljava/lang/ClassLoader;
 
     .line 27
     .line 28
@@ -305,7 +305,7 @@
     move-exception v2
 
     .line 103
-    sget-object v3, Lio/sentry/m5;->ERROR:Lio/sentry/m5;
+    sget-object v3, Lio/sentry/o5;->ERROR:Lio/sentry/o5;
 
     .line 104
     .line 105
@@ -313,11 +313,11 @@
 
     .line 106
     .line 107
-    iget-object v5, p0, Lio/sentry/internal/modules/d;->a:Lio/sentry/ILogger;
+    iget-object p0, p0, Lio/sentry/internal/modules/d;->a:Lio/sentry/ILogger;
 
     .line 108
     .line 109
-    invoke-interface {v5, v3, v4, v2}, Lio/sentry/ILogger;->d(Lio/sentry/m5;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-interface {p0, v3, v4, v2}, Lio/sentry/ILogger;->d(Lio/sentry/o5;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 110
     .line 111
@@ -328,43 +328,43 @@
     .line 113
     .line 114
     .line 115
-    move-result-object v1
+    move-result-object p0
 
     .line 116
     :goto_3
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 117
     .line 118
     .line 119
-    move-result v2
+    move-result v1
 
     .line 120
-    if-eqz v2, :cond_5
+    if-eqz v1, :cond_5
 
     .line 121
     .line 122
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 123
     .line 124
     .line 125
-    move-result-object v2
+    move-result-object v1
 
     .line 126
-    check-cast v2, Lio/sentry/internal/modules/b;
+    check-cast v1, Lio/sentry/internal/modules/b;
 
     .line 127
     .line 128
-    iget-object v3, v2, Lio/sentry/internal/modules/b;->a:Ljava/lang/String;
+    iget-object v2, v1, Lio/sentry/internal/modules/b;->a:Ljava/lang/String;
 
     .line 129
     .line 130
-    iget-object v2, v2, Lio/sentry/internal/modules/b;->b:Ljava/lang/String;
+    iget-object v1, v1, Lio/sentry/internal/modules/b;->b:Ljava/lang/String;
 
     .line 131
     .line 132
-    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 133
     .line 134

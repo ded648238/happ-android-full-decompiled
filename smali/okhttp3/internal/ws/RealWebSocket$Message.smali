@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/ws/RealWebSocket$Message;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -22,16 +22,16 @@
         "",
         "",
         "formatOpcode",
-        "Ly60;",
+        "Lo90;",
         "data",
         "<init>",
-        "(ILy60;)V",
+        "(ILo90;)V",
         "I",
         "getFormatOpcode",
         "()I",
-        "Ly60;",
+        "Lo90;",
         "getData",
-        "()Ly60;",
+        "()Lo90;",
         "okhttp"
     }
     k = 0x1
@@ -45,13 +45,13 @@
 
 
 # instance fields
-.field private final data:Ly60;
+.field private final data:Lo90;
 
 .field private final formatOpcode:I
 
 
 # direct methods
-.method public constructor <init>(ILy60;)V
+.method public constructor <init>(ILo90;)V
     .locals 0
 
     .line 1
@@ -69,7 +69,7 @@
 
     .line 8
     .line 9
-    iput-object p2, p0, Lokhttp3/internal/ws/RealWebSocket$Message;->data:Ly60;
+    iput-object p2, p0, Lokhttp3/internal/ws/RealWebSocket$Message;->data:Lo90;
 
     .line 10
     .line 11
@@ -78,24 +78,24 @@
 
 
 # virtual methods
-.method public final getData()Ly60;
-    .locals 1
+.method public final getData()Lo90;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/ws/RealWebSocket$Message;->data:Ly60;
+    iget-object p0, p0, Lokhttp3/internal/ws/RealWebSocket$Message;->data:Lo90;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getFormatOpcode()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lokhttp3/internal/ws/RealWebSocket$Message;->formatOpcode:I
+    iget p0, p0, Lokhttp3/internal/ws/RealWebSocket$Message;->formatOpcode:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method

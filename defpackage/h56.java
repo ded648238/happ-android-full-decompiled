@@ -1,14 +1,20 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class h56 extends q82 implements j72 {
-    public static final h56 Q = new h56(1, b56.class, "iterator", "iterator()Ljava/util/Iterator;", 0);
+import su.happ.proxyutility.dto.MetaParams;
+import su.happ.proxyutility.dto.enums.NoisesPacketType;
 
-    @Override // defpackage.j72
-    public final Object invoke(Object obj) {
-        b56 b56Var = (b56) obj;
-        b56Var.getClass();
-        return b56Var.iterator();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class h56 extends jq4 {
+    public static final h56 X = new h56(MetaParams.class, "noisesPacketType", "getNoisesPacketType()Lsu/happ/proxyutility/dto/enums/NoisesPacketType;", 0);
+
+    @Override // defpackage.jq4, defpackage.fo3
+    public final void E(Object obj, Object obj2) {
+        ((MetaParams) obj).U1((NoisesPacketType) obj2);
+    }
+
+    @Override // defpackage.jq4, defpackage.so3
+    public final Object get(Object obj) {
+        return ((MetaParams) obj).getNoisesPacketType();
     }
 }

@@ -1,62 +1,26 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ng7 extends mg7 {
-    public final /* synthetic */ int a;
-    public final int b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class ng7 implements vg7 {
+    public final String a;
 
-    public /* synthetic */ ng7(int i, int i2) {
-        this.a = i2;
-        this.b = i;
+    public /* synthetic */ ng7(String str) {
+        this.a = str;
     }
 
-    @Override // defpackage.rg7
-    public final int a() {
-        switch (this.a) {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
+    public final boolean equals(Object obj) {
+        if (obj instanceof ng7) {
+            return m93.h(this.a, ((ng7) obj).a);
         }
-        return this.b;
+        return false;
     }
 
-    @Override // defpackage.rg7
-    public final char b() {
-        switch (this.a) {
-            case 0:
-                return 'S';
-            case 1:
-                return 'A';
-            case 2:
-                return 'N';
-            default:
-                return 'n';
-        }
+    public final int hashCode() {
+        return this.a.hashCode();
     }
 
-    @Override // defpackage.og7
-    public final void c(g11 g11Var) {
-        switch (this.a) {
-            case 0:
-                g11Var.getClass();
-                g11Var.m(this.b);
-                return;
-            case 1:
-                g11Var.getClass();
-                wg7.g("millisecond-of-day", null);
-                throw null;
-            case 2:
-                g11Var.getClass();
-                wg7.g("nanosecond-of-day", null);
-                throw null;
-            default:
-                g11Var.getClass();
-                wg7.g("nano-of-second", "Maybe you meant 'S' instead of 'n'?");
-                throw null;
-        }
+    public final String toString() {
+        return c73.j("InitialDelayChange(delay=", this.a, ")");
     }
 }

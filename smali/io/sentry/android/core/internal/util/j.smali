@@ -1,17 +1,17 @@
 .class public final Lio/sentry/android/core/internal/util/j;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnDrawListener;
 
 
 # instance fields
-.field public final Q:Landroid/os/Handler;
+.field public final X:Landroid/os/Handler;
 
-.field public final R:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final Y:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field public final S:Ljava/lang/Runnable;
+.field public final Z:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -41,7 +41,7 @@
     .line 11
     .line 12
     .line 13
-    iput-object v0, p0, Lio/sentry/android/core/internal/util/j;->Q:Landroid/os/Handler;
+    iput-object v0, p0, Lio/sentry/android/core/internal/util/j;->X:Landroid/os/Handler;
 
     .line 14
     .line 15
@@ -54,18 +54,18 @@
     .line 18
     .line 19
     .line 20
-    iput-object v0, p0, Lio/sentry/android/core/internal/util/j;->R:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object v0, p0, Lio/sentry/android/core/internal/util/j;->Y:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 21
     .line 22
-    iput-object p2, p0, Lio/sentry/android/core/internal/util/j;->S:Ljava/lang/Runnable;
+    iput-object p2, p0, Lio/sentry/android/core/internal/util/j;->Z:Ljava/lang/Runnable;
 
     .line 23
     .line 24
     return-void
 .end method
 
-.method public static a(Landroid/app/Activity;Ljava/lang/Runnable;Lio/sentry/android/core/n0;)V
+.method public static a(Landroid/app/Activity;Ljava/lang/Runnable;Lio/sentry/android/core/o0;)V
     .locals 7
 
     .line 1
@@ -93,7 +93,7 @@
 
     .line 12
     .line 13
-    invoke-static {p0, p1, p2}, Lio/sentry/android/core/internal/util/j;->b(Landroid/view/View;Ljava/lang/Runnable;Lio/sentry/android/core/n0;)V
+    invoke-static {p0, p1, p2}, Lio/sentry/android/core/internal/util/j;->b(Landroid/view/View;Ljava/lang/Runnable;Lio/sentry/android/core/o0;)V
 
     .line 14
     .line 15
@@ -138,11 +138,11 @@
 
     .line 33
     :goto_0
-    new-instance v0, Lwb0;
+    new-instance v0, Lio/sentry/android/core/i1;
 
     .line 34
     .line 35
-    const/4 v5, 0x6
+    const/4 v5, 0x2
 
     .line 36
     move-object v3, p1
@@ -151,12 +151,12 @@
     move-object v4, p2
 
     .line 38
-    invoke-direct/range {v0 .. v5}, Lwb0;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct/range {v0 .. v5}, Lio/sentry/android/core/i1;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 39
     .line 40
     .line 41
-    invoke-direct {p0, v6, v0}, Lio/sentry/android/core/performance/i;-><init>(Landroid/view/Window$Callback;Lwb0;)V
+    invoke-direct {p0, v6, v0}, Lio/sentry/android/core/performance/i;-><init>(Landroid/view/Window$Callback;Lio/sentry/android/core/i1;)V
 
     .line 42
     .line 43
@@ -170,7 +170,7 @@
     return-void
 .end method
 
-.method public static b(Landroid/view/View;Ljava/lang/Runnable;Lio/sentry/android/core/n0;)V
+.method public static b(Landroid/view/View;Ljava/lang/Runnable;Lio/sentry/android/core/o0;)V
     .locals 1
 
     .line 1
@@ -277,7 +277,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/sentry/android/core/internal/util/j;->R:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lio/sentry/android/core/internal/util/j;->Y:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 2
     .line 3
@@ -326,15 +326,15 @@
     .line 23
     .line 24
     .line 25
-    iget-object v0, p0, Lio/sentry/android/core/internal/util/j;->Q:Landroid/os/Handler;
+    iget-object v0, p0, Lio/sentry/android/core/internal/util/j;->X:Landroid/os/Handler;
 
     .line 26
     .line 27
-    iget-object v1, p0, Lio/sentry/android/core/internal/util/j;->S:Ljava/lang/Runnable;
+    iget-object p0, p0, Lio/sentry/android/core/internal/util/j;->Z:Ljava/lang/Runnable;
 
     .line 28
     .line 29
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->postAtFrontOfQueue(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p0}, Landroid/os/Handler;->postAtFrontOfQueue(Ljava/lang/Runnable;)Z
 
     .line 30
     .line 31

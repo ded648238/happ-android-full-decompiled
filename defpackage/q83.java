@@ -1,11 +1,25 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface q83 {
-    void a(dl6 dl6Var, Object obj);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class q83 {
+    public final String a;
 
-    Object b(v21 v21Var);
+    public q83(String str) {
+        this.a = str;
+    }
 
-    l56 d();
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof q83)) {
+            return false;
+        }
+        return kp3.n(this.a, ((q83) obj).a);
+    }
+
+    public final int hashCode() {
+        return kp3.e0(this.a).hashCode();
+    }
 }

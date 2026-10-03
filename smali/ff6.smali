@@ -1,230 +1,71 @@
-.class public abstract Lff6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lff6;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Ljava/util/LinkedHashSet;
+# instance fields
+.field public c0:Lir4;
 
-.field public static final b:Loj0;
+.field public synthetic d0:Ljava/lang/Object;
+
+.field public final synthetic e0:Lzs6;
+
+.field public f0:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Lzs6;Ld31;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x6
+    iput-object p1, p0, Lff6;->e0:Lzs6;
 
     .line 2
-    new-array v0, v0, [Lr42;
-
     .line 3
-    .line 4
-    sget-object v1, Lk43;->a:Lr42;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
-    const/4 v2, 0x0
+    return-void
+.end method
 
+
+# virtual methods
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Lff6;->d0:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    iget p1, p0, Lff6;->f0:I
+
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
+
+    .line 6
     .line 7
-    aput-object v1, v0, v2
+    or-int/2addr p1, v0
 
     .line 8
+    iput p1, p0, Lff6;->f0:I
+
     .line 9
-    sget-object v1, Lk43;->h:Lr42;
-
     .line 10
-    .line 11
-    const/4 v2, 0x1
+    iget-object p1, p0, Lff6;->e0:Lzs6;
 
+    .line 11
     .line 12
-    aput-object v1, v0, v2
+    invoke-virtual {p1, p0}, Lzs6;->L(Ld31;)Ljava/lang/Object;
 
     .line 13
     .line 14
-    sget-object v1, Lk43;->i:Lr42;
-
     .line 15
+    move-result-object p0
+
     .line 16
-    const/4 v2, 0x2
-
-    .line 17
-    aput-object v1, v0, v2
-
-    .line 18
-    .line 19
-    sget-object v1, Lk43;->c:Lr42;
-
-    .line 20
-    .line 21
-    const/4 v2, 0x3
-
-    .line 22
-    aput-object v1, v0, v2
-
-    .line 23
-    .line 24
-    sget-object v1, Lk43;->d:Lr42;
-
-    .line 25
-    .line 26
-    const/4 v2, 0x4
-
-    .line 27
-    aput-object v1, v0, v2
-
-    .line 28
-    .line 29
-    sget-object v1, Lk43;->f:Lr42;
-
-    .line 30
-    .line 31
-    const/4 v2, 0x5
-
-    .line 32
-    aput-object v1, v0, v2
-
-    .line 33
-    .line 34
-    invoke-static {v0}, Lub;->J([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v0
-
-    .line 38
-    new-instance v1, Ljava/util/LinkedHashSet;
-
-    .line 39
-    .line 40
-    invoke-direct {v1}, Ljava/util/LinkedHashSet;-><init>()V
-
-    .line 41
-    .line 42
-    .line 43
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v2
-
-    .line 51
-    if-eqz v2, :cond_0
-
-    .line 52
-    .line 53
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object v2
-
-    .line 57
-    check-cast v2, Lr42;
-
-    .line 58
-    .line 59
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 60
-    .line 61
-    .line 62
-    new-instance v3, Loj0;
-
-    .line 63
-    .line 64
-    invoke-virtual {v2}, Lr42;->b()Lr42;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object v4
-
-    .line 68
-    iget-object v2, v2, Lr42;->a:Ls42;
-
-    .line 69
-    .line 70
-    invoke-virtual {v2}, Ls42;->g()Lha4;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v2
-
-    .line 74
-    invoke-direct {v3, v4, v2}, Loj0;-><init>(Lr42;Lha4;)V
-
-    .line 75
-    .line 76
-    .line 77
-    invoke-interface {v1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
-
-    .line 78
-    .line 79
-    .line 80
-    goto :goto_0
-
-    .line 81
-    :cond_0
-    sput-object v1, Lff6;->a:Ljava/util/LinkedHashSet;
-
-    .line 82
-    .line 83
-    sget-object v0, Lk43;->g:Lr42;
-
-    .line 84
-    .line 85
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 86
-    .line 87
-    .line 88
-    new-instance v1, Loj0;
-
-    .line 89
-    .line 90
-    invoke-virtual {v0}, Lr42;->b()Lr42;
-
-    .line 91
-    .line 92
-    .line 93
-    move-result-object v2
-
-    .line 94
-    iget-object v0, v0, Lr42;->a:Ls42;
-
-    .line 95
-    .line 96
-    invoke-virtual {v0}, Ls42;->g()Lha4;
-
-    .line 97
-    .line 98
-    .line 99
-    move-result-object v0
-
-    .line 100
-    invoke-direct {v1, v2, v0}, Loj0;-><init>(Lr42;Lha4;)V
-
-    .line 101
-    .line 102
-    .line 103
-    sput-object v1, Lff6;->b:Loj0;
-
-    .line 104
-    .line 105
-    return-void
+    return-object p0
 .end method

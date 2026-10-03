@@ -1,24 +1,40 @@
 package defpackage;
 
-import java.io.Serializable;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class be3 {
+    public static final int a;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class be3 implements e82, Serializable {
-    private final int arity;
-
-    public be3(int i) {
-        this.arity = i;
-    }
-
-    @Override // defpackage.e82
-    public int getArity() {
-        return this.arity;
-    }
-
-    public String toString() {
-        String strK = hg5.a.k(this);
-        strK.getClass();
-        return strK;
+    static {
+        int i;
+        String property = System.getProperty("java.version");
+        try {
+            String[] split = property.split("[._]", 3);
+            i = Integer.parseInt(split[0]);
+            if (i == 1 && split.length > 1) {
+                i = Integer.parseInt(split[1]);
+            }
+        } catch (NumberFormatException unused) {
+            i = -1;
+        }
+        if (i == -1) {
+            try {
+                StringBuilder sb = new StringBuilder();
+                for (int i2 = 0; i2 < property.length(); i2++) {
+                    char charAt = property.charAt(i2);
+                    if (!Character.isDigit(charAt)) {
+                        break;
+                    }
+                    sb.append(charAt);
+                }
+                i = Integer.parseInt(sb.toString());
+            } catch (NumberFormatException unused2) {
+                i = -1;
+            }
+        }
+        if (i == -1) {
+            i = 6;
+        }
+        a = i;
     }
 }

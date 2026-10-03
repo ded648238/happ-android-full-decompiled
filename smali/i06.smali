@@ -1,110 +1,108 @@
-.class public final synthetic Li06;
+.class public abstract Li06;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-# interfaces
-.implements Lg72;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final synthetic Q:I
-
-.field public final synthetic R:Lj06;
+# static fields
+.field public static final a:Ljava/util/Set;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj06;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 19
 
     .line 1
-    iput p2, p0, Li06;->Q:I
+    const-class v17, Ljava/lang/Class;
 
     .line 2
     .line 3
-    iput-object p1, p0, Li06;->R:Lj06;
+    const-class v18, Ljava/lang/String;
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-class v1, Ljava/lang/Integer;
 
     .line 6
     .line 7
+    const-class v2, Ljava/lang/Character;
+
     .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Li06;->Q:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Li06;->R:Lj06;
-
-    .line 4
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v0, v1, Lj06;->e0:Ln06;
-
     .line 9
+    const-class v3, Ljava/lang/Byte;
+
     .line 10
-    iget-object v0, v0, Ln06;->T:Lqo4;
-
     .line 11
-    .line 12
-    invoke-virtual {v0}, Lqo4;->k()I
+    const-class v4, Ljava/lang/Long;
 
+    .line 12
     .line 13
+    const-class v5, Ljava/lang/Short;
+
     .line 14
     .line 15
-    move-result v0
+    const-class v6, Ljava/lang/Boolean;
 
     .line 16
-    :goto_0
-    int-to-float v0, v0
-
     .line 17
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    const-class v7, Ljava/lang/Double;
 
     .line 18
     .line 19
-    .line 20
-    move-result-object v0
+    const-class v8, Ljava/lang/Float;
 
+    .line 20
     .line 21
-    return-object v0
+    const-class v9, [I
 
     .line 22
-    :pswitch_0
-    iget-object v0, v1, Lj06;->e0:Ln06;
-
     .line 23
+    const-class v10, [C
+
     .line 24
-    iget-object v0, v0, Ln06;->Q:Lqo4;
-
     .line 25
-    .line 26
-    invoke-virtual {v0}, Lqo4;->k()I
+    const-class v11, [B
 
+    .line 26
     .line 27
+    const-class v12, [J
+
     .line 28
     .line 29
-    move-result v0
+    const-class v13, [S
 
     .line 30
-    goto :goto_0
-
     .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    const-class v14, [Z
+
+    .line 32
+    .line 33
+    const-class v15, [D
+
+    .line 34
+    .line 35
+    const-class v16, [F
+
+    .line 36
+    .line 37
+    filled-new-array/range {v1 .. v18}, [Ljava/lang/Class;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    invoke-static {v0}, Lkt;->Q0([Ljava/lang/Object;)Ljava/util/Set;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    sput-object v0, Li06;->a:Ljava/util/Set;
+
+    .line 46
+    .line 47
+    return-void
 .end method

@@ -1,14 +1,14 @@
 .class final Lokhttp3/internal/cache/DiskLruCache$Editor$newSink$1$1;
-.super Lbe3;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Lou3;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lj72;
+.implements Lmi2;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lokhttp3/internal/cache/DiskLruCache$Editor;->newSink(I)Lpb6;
+    value = Lokhttp3/internal/cache/DiskLruCache$Editor;->newSink(I)Lqy6;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,8 +18,8 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe3;",
-        "Lj72;"
+        "Lou3;",
+        "Lmi2;"
     }
 .end annotation
 
@@ -30,7 +30,7 @@
     d2 = {
         "Ljava/io/IOException;",
         "it",
-        "Lbh7;",
+        "Lr98;",
         "invoke",
         "(Ljava/io/IOException;)V",
         "<anonymous>"
@@ -66,7 +66,7 @@
     const/4 p1, 0x1
 
     .line 6
-    invoke-direct {p0, p1}, Lbe3;-><init>(I)V
+    invoke-direct {p0, p1}, Lou3;-><init>(I)V
 
     .line 7
     .line 8
@@ -84,13 +84,13 @@
 
     invoke-virtual {p0, p1}, Lokhttp3/internal/cache/DiskLruCache$Editor$newSink$1$1;->invoke(Ljava/io/IOException;)V
 
-    sget-object p1, Lbh7;->a:Lbh7;
+    sget-object p0, Lr98;->a:Lr98;
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public final invoke(Ljava/io/IOException;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -102,7 +102,7 @@
 
     .line 5
     .line 6
-    iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor$newSink$1$1;->this$1:Lokhttp3/internal/cache/DiskLruCache$Editor;
+    iget-object p0, p0, Lokhttp3/internal/cache/DiskLruCache$Editor$newSink$1$1;->this$1:Lokhttp3/internal/cache/DiskLruCache$Editor;
 
     .line 7
     .line 8
@@ -110,7 +110,7 @@
 
     .line 9
     :try_start_0
-    invoke-virtual {v0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->detach$okhttp()V
+    invoke-virtual {p0}, Lokhttp3/internal/cache/DiskLruCache$Editor;->detach$okhttp()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -124,11 +124,11 @@
 
     .line 14
     :catchall_0
-    move-exception v0
+    move-exception p0
 
     .line 15
     monitor-exit p1
 
     .line 16
-    throw v0
+    throw p0
 .end method

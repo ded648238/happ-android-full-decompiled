@@ -1,65 +1,46 @@
 package defpackage;
 
-import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
+import android.graphics.Rect;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import su.happ.proxyutility.ui.widget.CustomSpinner;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class l37 extends ky2 {
-    public static final /* synthetic */ AtomicIntegerFieldUpdater Z = AtomicIntegerFieldUpdater.newUpdater(l37.class, "_state$volatile");
-    public final Thread X = Thread.currentThread();
-    public xe1 Y;
-    private volatile /* synthetic */ int _state$volatile;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class l37 implements ViewTreeObserver.OnGlobalLayoutListener {
+    public final /* synthetic */ ViewGroup X;
+    public final /* synthetic */ m37 Y;
+    public final /* synthetic */ View Z;
 
-    public static void u(int i) {
-        throw new IllegalStateException(("Illegal state " + i).toString());
+    public l37(ViewGroup viewGroup, m37 m37Var, View view) {
+        this.X = viewGroup;
+        this.Y = m37Var;
+        this.Z = view;
     }
 
-    @Override // defpackage.ky2
-    public final boolean r() {
-        return true;
-    }
-
-    @Override // defpackage.ky2
-    public final void s(Throwable th) {
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater;
-        int i;
-        do {
-            atomicIntegerFieldUpdater = Z;
-            i = atomicIntegerFieldUpdater.get(this);
-            if (i != 0) {
-                if (i == 1 || i == 2 || i == 3) {
-                    return;
-                }
-                u(i);
-                throw null;
-            }
-        } while (!atomicIntegerFieldUpdater.compareAndSet(this, i, 2));
-        this.X.interrupt();
-        atomicIntegerFieldUpdater.set(this, 3);
-    }
-
-    public final void t() {
-        while (true) {
-            AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = Z;
-            int i = atomicIntegerFieldUpdater.get(this);
-            if (i != 0) {
-                if (i != 2) {
-                    if (i == 3) {
-                        Thread.interrupted();
-                        return;
-                    } else {
-                        u(i);
-                        throw null;
-                    }
-                }
-            } else if (atomicIntegerFieldUpdater.compareAndSet(this, i, 1)) {
-                xe1 xe1Var = this.Y;
-                if (xe1Var != null) {
-                    xe1Var.a();
-                    return;
-                }
-                return;
-            }
+    @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
+    public final void onGlobalLayout() {
+        ViewGroup viewGroup = this.X;
+        int measuredHeight = viewGroup.getMeasuredHeight();
+        m37 m37Var = this.Y;
+        CustomSpinner customSpinner = m37Var.Y;
+        int length = measuredHeight / m37Var.Z.length;
+        DisplayMetrics displayMetrics = m37Var.getContext().getResources().getDisplayMetrics();
+        int[] iArr = new int[2];
+        viewGroup.getLocationOnScreen(iArr);
+        viewGroup.getGlobalVisibleRect(new Rect());
+        View view = this.Z;
+        view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+        if (displayMetrics.heightPixels - iArr[1] <= viewGroup.getMeasuredHeight() + length) {
+            int i = length / 2;
+            length = iArr[1] > viewGroup.getMeasuredHeight() + i ? (-viewGroup.getMeasuredHeight()) - i : (-viewGroup.getMeasuredHeight()) / 2;
         }
+        m37Var.c0 = length;
+        m37Var.d0 = ((displayMetrics.widthPixels - view.getMeasuredWidth()) - ((int) TypedValue.applyDimension(1, 16.0f, m37Var.getContext().getResources().getDisplayMetrics()))) - iArr[0];
+        customSpinner.requestLayout();
+        customSpinner.invalidate();
     }
 }

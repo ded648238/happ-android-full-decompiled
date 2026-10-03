@@ -1,139 +1,104 @@
-.class public final enum Ly94;
-.super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public abstract synthetic Ly94;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final enum Q:Ly94;
-
-.field public static final synthetic R:[Ly94;
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 3
 
     .line 1
-    new-instance v0, Ly94;
+    invoke-static {}, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->values()[Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
 
     .line 2
     .line 3
-    const-string v1, "Default"
-
     .line 4
+    move-result-object v0
+
     .line 5
-    const/4 v2, 0x0
+    array-length v0, v0
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-array v0, v0, [I
 
     .line 7
     .line 8
+    :try_start_0
+    sget-object v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->LAST_USED:Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
+
     .line 9
-    sput-object v0, Ly94;->Q:Ly94;
-
     .line 10
-    .line 11
-    new-instance v1, Ly94;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 11
     .line 12
     .line 13
-    const-string v3, "UserInput"
+    move-result v1
 
     .line 14
+    const/4 v2, 0x1
+
     .line 15
-    const/4 v4, 0x1
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 17
+    :catch_0
+    :try_start_1
+    sget-object v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->LOWEST_DELAY:Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
+
     .line 18
     .line 19
-    new-instance v3, Ly94;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 20
     .line 21
-    const-string v5, "PreventUserInput"
-
     .line 22
+    move-result v1
+
     .line 23
-    const/4 v6, 0x2
+    const/4 v2, 0x2
 
     .line 24
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 25
     .line 26
-    .line 27
-    const/4 v5, 0x3
+    :catch_1
+    :try_start_2
+    sget-object v1, Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;->RANDOM:Lsu/happ/proxyutility/dto/enums/SubscriptionAutoConnectType;
 
+    .line 27
     .line 28
-    new-array v5, v5, [Ly94;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 29
     .line 30
-    aput-object v0, v5, v2
-
     .line 31
+    move-result v1
+
     .line 32
-    aput-object v1, v5, v4
+    const/4 v2, 0x3
 
     .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
     .line 34
-    aput-object v3, v5, v6
-
     .line 35
+    :catch_2
+    sput-object v0, Ly94;->a:[I
+
     .line 36
-    sput-object v5, Ly94;->R:[Ly94;
-
     .line 37
-    .line 38
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Ly94;
-    .locals 1
-
-    .line 1
-    const-class v0, Ly94;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Ly94;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Ly94;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ly94;->R:[Ly94;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Ly94;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

@@ -1,21 +1,40 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class lj5 {
-    public final /* synthetic */ String a;
-    public final /* synthetic */ String b;
-    public final /* synthetic */ String c;
-    public final /* synthetic */ ClassLoader d;
-    public final /* synthetic */ boolean e;
-    public final /* synthetic */ String f;
+import android.util.SparseArray;
+import java.util.HashMap;
 
-    public lj5(String str, String str2, String str3, ClassLoader classLoader, boolean z, String str4) {
-        this.a = str;
-        this.b = str2;
-        this.c = str3;
-        this.d = classLoader;
-        this.e = z;
-        this.f = str4;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class lj5 {
+    public static final SparseArray a = new SparseArray();
+    public static final HashMap b;
+
+    static {
+        HashMap hashMap = new HashMap();
+        b = hashMap;
+        hashMap.put(jj5.X, 0);
+        hashMap.put(jj5.Y, 1);
+        hashMap.put(jj5.Z, 2);
+        for (jj5 jj5Var : hashMap.keySet()) {
+            a.append(((Integer) b.get(jj5Var)).intValue(), jj5Var);
+        }
+    }
+
+    public static int a(jj5 jj5Var) {
+        Integer num = (Integer) b.get(jj5Var);
+        if (num != null) {
+            return num.intValue();
+        }
+        bh2.o(jj5Var, "PriorityMapping is missing known Priority value ");
+        return 0;
+    }
+
+    public static jj5 b(int i) {
+        jj5 jj5Var = (jj5) a.get(i);
+        if (jj5Var != null) {
+            return jj5Var;
+        }
+        i60.p(eb7.h(i, "Unknown Priority for value "));
+        return null;
     }
 }

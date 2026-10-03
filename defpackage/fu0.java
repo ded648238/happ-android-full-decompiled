@@ -1,160 +1,168 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class fu0 {
-    public static final long a(int i, int i2, int i3, int i4) {
-        if (!((i3 >= 0) & (i2 >= i) & (i4 >= i3) & (i >= 0))) {
-            bq2.a("maxWidth must be >= than minWidth,\nmaxHeight must be >= than minHeight,\nminWidth and minHeight must be >= 0");
-        }
-        return h(i, i2, i3, i4);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class fu0 {
+    public final long A;
+    public final long B;
+    public final long C;
+    public final long D;
+    public final long E;
+    public final long F;
+    public final long G;
+    public final long H;
+    public final long I;
+    public final long J;
+    public final long K;
+    public final long L;
+    public final long M;
+    public final long N;
+    public final long O;
+    public final long P;
+    public final long Q;
+    public final long R;
+    public final long S;
+    public final long T;
+    public final long U;
+    public final long V;
+    public ty7 W;
+    public gx2 X;
+    public jj4 Y;
+    public iv5 Z;
+    public final long a;
+    public hz6 a0;
+    public final long b;
+    public gq7 b0;
+    public final long c;
+    public gq7 c0;
+    public final long d;
+    public i96 d0;
+    public final long e;
+    public final long f;
+    public final long g;
+    public final long h;
+    public final long i;
+    public final long j;
+    public final long k;
+    public final long l;
+    public final long m;
+    public final long n;
+    public final long o;
+    public final long p;
+    public final long q;
+    public final long r;
+    public final long s;
+    public final long t;
+    public final long u;
+    public final long v;
+    public final long w;
+    public final long x;
+    public final long y;
+    public final long z;
+
+    public fu0(long j, long j2, long j3, long j4, long j5, long j6, long j7, long j8, long j9, long j10, long j11, long j12, long j13, long j14, long j15, long j16, long j17, long j18, long j19, long j20, long j21, long j22, long j23, long j24, long j25, long j26, long j27, long j28, long j29, long j30, long j31, long j32, long j33, long j34, long j35, long j36, long j37, long j38, long j39, long j40, long j41, long j42, long j43, long j44, long j45, long j46, long j47, long j48) {
+        this.a = j;
+        this.b = j2;
+        this.c = j3;
+        this.d = j4;
+        this.e = j5;
+        this.f = j6;
+        this.g = j7;
+        this.h = j8;
+        this.i = j9;
+        this.j = j10;
+        this.k = j11;
+        this.l = j12;
+        this.m = j13;
+        this.n = j14;
+        this.o = j15;
+        this.p = j16;
+        this.q = j17;
+        this.r = j18;
+        this.s = j19;
+        this.t = j20;
+        this.u = j21;
+        this.v = j22;
+        this.w = j23;
+        this.x = j24;
+        this.y = j25;
+        this.z = j26;
+        this.A = j27;
+        this.B = j28;
+        this.C = j29;
+        this.D = j30;
+        this.E = j31;
+        this.F = j32;
+        this.G = j33;
+        this.H = j34;
+        this.I = j35;
+        this.J = j36;
+        this.K = j37;
+        this.L = j38;
+        this.M = j39;
+        this.N = j40;
+        this.O = j41;
+        this.P = j42;
+        this.Q = j43;
+        this.R = j44;
+        this.S = j45;
+        this.T = j46;
+        this.U = j47;
+        this.V = j48;
     }
 
-    public static /* synthetic */ long b(int i, int i2, int i3) {
-        if ((i3 & 2) != 0) {
-            i = Integer.MAX_VALUE;
-        }
-        if ((i3 & 8) != 0) {
-            i2 = Integer.MAX_VALUE;
-        }
-        return a(0, i, 0, i2);
-    }
-
-    public static final int c(int i) {
-        if (i < 8191) {
-            return 13;
-        }
-        if (i < 32767) {
-            return 15;
-        }
-        if (i < 65535) {
-            return 16;
-        }
-        return i < 262143 ? 18 : 255;
-    }
-
-    public static final long d(long j, long j2) {
-        int i = (int) (j2 >> 32);
-        int iJ = cu0.j(j);
-        int iH = cu0.h(j);
-        if (i < iJ) {
-            i = iJ;
-        }
-        if (i <= iH) {
-            iH = i;
-        }
-        int i2 = (int) (j2 & 4294967295L);
-        int i3 = cu0.i(j);
-        int iG = cu0.g(j);
-        if (i2 < i3) {
-            i2 = i3;
-        }
-        if (i2 <= iG) {
-            iG = i2;
-        }
-        return (((long) iH) << 32) | (4294967295L & ((long) iG));
-    }
-
-    public static final long e(long j, long j2) {
-        int iJ = cu0.j(j);
-        int iH = cu0.h(j);
-        int i = cu0.i(j);
-        int iG = cu0.g(j);
-        int iJ2 = cu0.j(j2);
-        if (iJ2 < iJ) {
-            iJ2 = iJ;
-        }
-        if (iJ2 > iH) {
-            iJ2 = iH;
-        }
-        int iH2 = cu0.h(j2);
-        if (iH2 >= iJ) {
-            iJ = iH2;
-        }
-        if (iJ <= iH) {
-            iH = iJ;
-        }
-        int i2 = cu0.i(j2);
-        if (i2 < i) {
-            i2 = i;
-        }
-        if (i2 > iG) {
-            i2 = iG;
-        }
-        int iG2 = cu0.g(j2);
-        if (iG2 >= i) {
-            i = iG2;
-        }
-        if (i <= iG) {
-            iG = i;
-        }
-        return a(iJ2, iH, i2, iG);
-    }
-
-    public static final int f(int i, long j) {
-        int i2 = cu0.i(j);
-        int iG = cu0.g(j);
-        if (i < i2) {
-            i = i2;
-        }
-        return i > iG ? iG : i;
-    }
-
-    public static final int g(int i, long j) {
-        int iJ = cu0.j(j);
-        int iH = cu0.h(j);
-        if (i < iJ) {
-            i = iJ;
-        }
-        return i > iH ? iH : i;
-    }
-
-    public static final long h(int i, int i2, int i3, int i4) {
-        int i5 = i4 == Integer.MAX_VALUE ? i3 : i4;
-        int iC = c(i5);
-        int i6 = i2 == Integer.MAX_VALUE ? i : i2;
-        int iC2 = c(i6);
-        if (iC + iC2 > 31) {
-            k(i6, i5);
-        }
-        int i7 = i2 + 1;
-        int i8 = i4 + 1;
-        int i9 = iC2 - 13;
-        return (((long) (i7 & (~(i7 >> 31)))) << 33) | ((long) ((i9 >> 1) + (i9 & 1))) | (((long) i) << 2) | (((long) i3) << (iC2 + 2)) | (((long) (i8 & (~(i8 >> 31)))) << (iC2 + 33));
-    }
-
-    public static final long i(int i, int i2, long j) {
-        int iJ = cu0.j(j) + i;
-        if (iJ < 0) {
-            iJ = 0;
-        }
-        int iH = cu0.h(j);
-        if (iH != Integer.MAX_VALUE && (iH = iH + i) < 0) {
-            iH = 0;
-        }
-        int i3 = cu0.i(j) + i2;
-        if (i3 < 0) {
-            i3 = 0;
-        }
-        int iG = cu0.g(j);
-        return a(iJ, iH, i3, (iG == Integer.MAX_VALUE || (iG = iG + i2) >= 0) ? iG : 0);
-    }
-
-    public static /* synthetic */ long j(int i, int i2, int i3, long j) {
-        if ((i3 & 1) != 0) {
-            i = 0;
-        }
-        if ((i3 & 2) != 0) {
-            i2 = 0;
-        }
-        return i(i, i2, j);
-    }
-
-    public static final void k(int i, int i2) {
-        throw new IllegalArgumentException("Can't represent a width of " + i + " and height of " + i2 + " in Constraints");
-    }
-
-    public static final Void l(int i) {
-        throw new IllegalArgumentException(ea0.p("Can't represent a size of ", i, " in Constraints"));
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("ColorScheme(primary=");
+        c73.r(this.a, "onPrimary=", sb);
+        c73.r(this.b, "primaryContainer=", sb);
+        c73.r(this.c, "onPrimaryContainer=", sb);
+        long j = this.d;
+        c73.r(j, "inversePrimary=", sb);
+        c73.r(this.e, "secondary=", sb);
+        c73.r(this.f, "onSecondary=", sb);
+        c73.r(this.g, "secondaryContainer=", sb);
+        c73.r(this.h, "onSecondaryContainer=", sb);
+        c73.r(this.i, "tertiary=", sb);
+        c73.r(this.j, "onTertiary=", sb);
+        c73.r(this.k, "tertiaryContainer=", sb);
+        c73.r(this.l, "onTertiaryContainer=", sb);
+        c73.r(this.m, "background=", sb);
+        c73.r(this.n, "onBackground=", sb);
+        c73.r(this.o, "surface=", sb);
+        c73.r(this.p, "onSurface=", sb);
+        c73.r(this.q, "surfaceVariant=", sb);
+        c73.r(this.r, "onSurfaceVariant=", sb);
+        c73.r(this.s, "surfaceTint=", sb);
+        c73.r(this.t, "inverseSurface=", sb);
+        c73.r(this.u, "inverseOnSurface=", sb);
+        c73.r(this.v, "error=", sb);
+        c73.r(this.w, "onError=", sb);
+        c73.r(this.x, "errorContainer=", sb);
+        c73.r(this.y, "onErrorContainer=", sb);
+        c73.r(this.z, "outline=", sb);
+        c73.r(this.A, "outlineVariant=", sb);
+        c73.r(this.B, "scrim=", sb);
+        c73.r(this.C, "surfaceBright=", sb);
+        c73.r(this.D, "surfaceDim=", sb);
+        c73.r(this.E, "surfaceContainer=", sb);
+        c73.r(this.F, "surfaceContainerHigh=", sb);
+        c73.r(this.G, "surfaceContainerHighest=", sb);
+        c73.r(this.H, "surfaceContainerLow=", sb);
+        c73.r(this.I, "surfaceContainerLowest=", sb);
+        c73.r(this.J, "primaryFixed=", sb);
+        c73.r(this.K, "primaryFixedDim=", sb);
+        c73.r(this.L, "onPrimaryFixed=", sb);
+        c73.r(j, "onPrimaryFixedVariant=", sb);
+        c73.r(this.N, "secondaryFixed=", sb);
+        c73.r(this.O, "secondaryFixedDim=", sb);
+        c73.r(this.P, "onSecondaryFixed=", sb);
+        c73.r(this.Q, "onSecondaryFixedVariant=", sb);
+        c73.r(this.R, "tertiaryFixed=", sb);
+        c73.r(this.S, "tertiaryFixedDim=", sb);
+        c73.r(this.T, "onTertiaryFixed=", sb);
+        c73.r(this.U, "onTertiaryFixedVariant=", sb);
+        sb.append((Object) au0.i(this.V));
+        sb.append(')');
+        return sb.toString();
     }
 }

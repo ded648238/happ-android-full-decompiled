@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/dto/SocketServerInfo$Creator;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -32,13 +32,13 @@
         0x4,
         0x0
     }
-    xi = 0x30
+    xi = 0x530
 .end annotation
 
 
 # virtual methods
 .method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -46,7 +46,7 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lsu/happ/proxyutility/dto/SocketServerInfo;
+    new-instance p0, Lsu/happ/proxyutility/dto/SocketServerInfo;
 
     .line 5
     .line 6
@@ -55,7 +55,7 @@
     .line 7
     .line 8
     .line 9
-    move-result-object v1
+    move-result-object v0
 
     .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -63,7 +63,7 @@
     .line 11
     .line 12
     .line 13
-    move-result-object v2
+    move-result-object v1
 
     .line 14
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -71,10 +71,10 @@
     .line 15
     .line 16
     .line 17
-    move-result v3
+    move-result v2
 
     .line 18
-    if-nez v3, :cond_0
+    if-nez v2, :cond_0
 
     .line 19
     .line 20
@@ -102,21 +102,21 @@
 
     .line 30
     :goto_0
-    invoke-direct {v0, v1, v2, p1}, Lsu/happ/proxyutility/dto/SocketServerInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-direct {p0, v0, v1, p1}, Lsu/happ/proxyutility/dto/SocketServerInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 31
     .line 32
     .line 33
-    return-object v0
+    return-object p0
 .end method
 
 .method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
     .line 1
-    new-array p1, p1, [Lsu/happ/proxyutility/dto/SocketServerInfo;
+    new-array p0, p1, [Lsu/happ/proxyutility/dto/SocketServerInfo;
 
     .line 2
     .line 3
-    return-object p1
+    return-object p0
 .end method

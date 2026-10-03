@@ -1,29 +1,13 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final /* synthetic */ class rt6 implements g72 {
-    public final /* synthetic */ int Q;
-    public final /* synthetic */ gi R;
-
-    public /* synthetic */ rt6(gi giVar, int i) {
-        this.Q = i;
-        this.R = giVar;
-    }
-
-    @Override // defpackage.g72
-    public final Object invoke() {
-        int i = this.Q;
-        bh7 bh7Var = bh7.a;
-        gi giVar = this.R;
-        switch (i) {
-            case 0:
-                giVar.V = false;
-                break;
-            default:
-                giVar.V = false;
-                break;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class rt6 extends o1 {
+    public final boolean h(Throwable th) {
+        if (!o1.e0.s(this, null, new j1(th))) {
+            return false;
         }
-        return bh7Var;
+        o1.c(this);
+        return true;
     }
 }

@@ -1,42 +1,26 @@
 package defpackage;
 
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import su.happ.proxyutility.feature.main.MainActivity;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class tb4 {
-    public static final tb4 b = new tb4(xy3.s1(new LinkedHashMap()));
-    public final Map a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class tb4 extends d31 {
+    public kr4 c0;
+    public /* synthetic */ Object d0;
+    public final /* synthetic */ MainActivity e0;
+    public int f0;
 
-    public tb4(Map map) {
-        this.a = map;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public tb4(MainActivity mainActivity, d31 d31Var) {
+        super(d31Var);
+        this.e0 = mainActivity;
     }
 
-    public final String a() {
-        String lowerCase = "Content-Type".toLowerCase(Locale.ROOT);
-        lowerCase.getClass();
-        List list = (List) this.a.get(lowerCase);
-        if (list != null) {
-            return (String) nm0.F0(list);
-        }
-        return null;
-    }
-
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        return (obj instanceof tb4) && this.a.equals(((tb4) obj).a);
-    }
-
-    public final int hashCode() {
-        return this.a.hashCode();
-    }
-
-    public final String toString() {
-        return "NetworkHeaders(data=" + this.a + ")";
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.d0 = obj;
+        this.f0 |= Integer.MIN_VALUE;
+        int i = MainActivity.v1;
+        return this.e0.h0(this);
     }
 }

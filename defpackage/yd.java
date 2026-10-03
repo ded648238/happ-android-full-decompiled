@@ -1,45 +1,119 @@
 package defpackage;
 
-import android.graphics.Paint;
+import android.content.ComponentCallbacks2;
+import android.content.res.Configuration;
+import java.lang.ref.WeakReference;
+import java.util.LinkedHashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class yd {
-    public static final /* synthetic */ int[] a;
-    public static final /* synthetic */ int[] b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class yd implements ComponentCallbacks2 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ Object Y;
 
-    static {
-        try {
-            new int[Paint.Style.values().length][Paint.Style.STROKE.ordinal()] = 1;
-        } catch (NoSuchFieldError unused) {
+    public /* synthetic */ yd(int i, Object obj) {
+        this.X = i;
+        this.Y = obj;
+    }
+
+    private final void c(int i) {
+        if (i >= 40) {
+            ae aeVar = (ae) this.Y;
+            hp hpVar = aeVar.e;
+            if (hpVar != null) {
+                synchronized (hpVar) {
+                    try {
+                        mq4 mq4Var = (mq4) hpVar.Y;
+                        if (mq4Var != null) {
+                            mq4Var.a();
+                        }
+                        hpVar.Z = null;
+                    } catch (Throwable th) {
+                        throw th;
+                    }
+                }
+            }
+            aeVar.e = null;
         }
-        int[] iArr = new int[Paint.Cap.values().length];
-        try {
-            iArr[Paint.Cap.BUTT.ordinal()] = 1;
-        } catch (NoSuchFieldError unused2) {
+    }
+
+    @Override // android.content.ComponentCallbacks
+    public final void onConfigurationChanged(Configuration configuration) {
+        switch (this.X) {
+            case 0:
+                return;
+            default:
+                ig igVar = (ig) this.Y;
+                synchronized (igVar) {
+                    if (((ow5) ((WeakReference) igVar.b).get()) == null) {
+                        igVar.y();
+                    }
+                }
+                return;
         }
-        try {
-            iArr[Paint.Cap.ROUND.ordinal()] = 2;
-        } catch (NoSuchFieldError unused3) {
+    }
+
+    @Override // android.content.ComponentCallbacks
+    public final void onLowMemory() {
+        switch (this.X) {
+            case 0:
+                break;
+            default:
+                onTrimMemory(80);
+                break;
         }
-        try {
-            iArr[Paint.Cap.SQUARE.ordinal()] = 3;
-        } catch (NoSuchFieldError unused4) {
+    }
+
+    @Override // android.content.ComponentCallbacks2
+    public final void onTrimMemory(int i) {
+        rw5 b;
+        long d;
+        switch (this.X) {
+            case 0:
+                c(i);
+                return;
+            default:
+                ig igVar = (ig) this.Y;
+                synchronized (igVar) {
+                    try {
+                        ow5 ow5Var = (ow5) ((WeakReference) igVar.b).get();
+                        if (ow5Var != null) {
+                            lw5 lw5Var = ow5Var.a;
+                            if (i >= 40) {
+                                rw5 b2 = ow5Var.b();
+                                if (b2 != null) {
+                                    synchronized (b2.c) {
+                                        ((uw5) b2.a.Z).h(-1L);
+                                        c8 c8Var = b2.b;
+                                        c8Var.Y = 0;
+                                        ((LinkedHashMap) c8Var.Z).clear();
+                                    }
+                                }
+                            } else if (i >= 20) {
+                                ((hg) igVar.c).a(lw5Var.a);
+                            } else if (i >= 10 && (b = ow5Var.b()) != null) {
+                                synchronized (b.c) {
+                                    d = ((uw5) b.a.Z).d();
+                                }
+                                long j = d / 2;
+                                synchronized (b.c) {
+                                    ((uw5) b.a.Z).h(j);
+                                }
+                            }
+                        } else {
+                            igVar.y();
+                        }
+                    } catch (Throwable th) {
+                        throw th;
+                    }
+                }
+                return;
         }
-        a = iArr;
-        int[] iArr2 = new int[Paint.Join.values().length];
-        try {
-            iArr2[Paint.Join.MITER.ordinal()] = 1;
-        } catch (NoSuchFieldError unused5) {
-        }
-        try {
-            iArr2[Paint.Join.BEVEL.ordinal()] = 2;
-        } catch (NoSuchFieldError unused6) {
-        }
-        try {
-            iArr2[Paint.Join.ROUND.ordinal()] = 3;
-        } catch (NoSuchFieldError unused7) {
-        }
-        b = iArr2;
+    }
+
+    private final void b() {
+    }
+
+    private final void a(Configuration configuration) {
     }
 }

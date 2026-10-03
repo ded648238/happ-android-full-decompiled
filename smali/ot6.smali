@@ -1,426 +1,358 @@
 .class public final Lot6;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.super Le2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Landroid/view/SurfaceHolder$Callback;
+.implements Ljava/io/Serializable;
+
+
+# static fields
+.field public static final Y:Lot6;
 
 
 # instance fields
-.field public a:Landroid/util/Size;
-
-.field public b:Lmt6;
-
-.field public c:Lmt6;
-
-.field public d:Lye0;
-
-.field public e:Landroid/util/Size;
-
-.field public f:Z
-
-.field public g:Z
-
-.field public final synthetic h:Lpt6;
+.field public final X:Ldf4;
 
 
 # direct methods
-.method public constructor <init>(Lpt6;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lot6;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lot6;->h:Lpt6;
+    sget-object v1, Ldf4;->m0:Ldf4;
 
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lot6;-><init>(Ldf4;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lot6;->Y:Lot6;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ldf4;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ldf4;-><init>()V
+
+    .line 4
     .line 5
     .line 6
-    const/4 p1, 0x0
+    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
     .line 7
-    iput-boolean p1, p0, Lot6;->f:Z
-
     .line 8
     .line 9
-    iput-boolean p1, p0, Lot6;->g:Z
+    iput-object v0, p0, Lot6;->X:Ldf4;
 
     .line 10
     .line 11
+    return-void
+.end method
+
+.method public constructor <init>(I)V
+    .locals 1
+
+    .line 14
+    new-instance v0, Ldf4;
+
+    invoke-direct {v0, p1}, Ldf4;-><init>(I)V
+
+    .line 15
+    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
+
+    .line 16
+    iput-object v0, p0, Lot6;->X:Ldf4;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ldf4;)V
+    .locals 0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
+
+    .line 13
+    iput-object p1, p0, Lot6;->X:Ldf4;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Z
-    .locals 7
-
-    .line 1
-    iget-object v0, p0, Lot6;->h:Lpt6;
-
-    .line 2
-    .line 3
-    iget-object v1, v0, Lpt6;->e:Landroid/view/SurfaceView;
-
-    .line 4
-    .line 5
-    invoke-virtual {v1}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
-
-    .line 9
-    invoke-interface {v1}, Landroid/view/SurfaceHolder;->getSurface()Landroid/view/Surface;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v1
-
-    .line 13
-    iget-boolean v2, p0, Lot6;->f:Z
-
-    .line 14
-    .line 15
-    if-nez v2, :cond_0
-
-    .line 16
-    .line 17
-    iget-object v2, p0, Lot6;->b:Lmt6;
-
-    .line 18
-    .line 19
-    if-eqz v2, :cond_0
-
-    .line 20
-    .line 21
-    iget-object v2, p0, Lot6;->a:Landroid/util/Size;
-
-    .line 22
-    .line 23
-    iget-object v3, p0, Lot6;->e:Landroid/util/Size;
-
-    .line 24
-    .line 25
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v2
-
-    .line 29
-    if-eqz v2, :cond_0
-
-    .line 30
-    .line 31
-    const-string v2, "SurfaceViewImpl"
-
-    .line 32
-    .line 33
-    invoke-static {v2}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 34
-    .line 35
-    .line 36
-    iget-object v2, p0, Lot6;->d:Lye0;
-
-    .line 37
-    .line 38
-    iget-object v3, p0, Lot6;->b:Lmt6;
-
-    .line 39
-    .line 40
-    invoke-static {v3}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 41
-    .line 42
-    .line 43
-    iget-object v4, v0, Lpt6;->e:Landroid/view/SurfaceView;
-
-    .line 44
-    .line 45
-    invoke-virtual {v4}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v4
-
-    .line 49
-    invoke-static {v4}, Lbv7;->E(Landroid/content/Context;)Ljava/util/concurrent/Executor;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v4
-
-    .line 53
-    new-instance v5, Lht6;
-
-    .line 54
-    .line 55
-    const/4 v6, 0x1
-
-    .line 56
-    invoke-direct {v5, v6, v2}, Lht6;-><init>(ILjava/lang/Object;)V
-
-    .line 57
-    .line 58
-    .line 59
-    invoke-virtual {v3, v1, v4, v5}, Lmt6;->a(Landroid/view/Surface;Ljava/util/concurrent/Executor;Lnu0;)V
-
-    .line 60
-    .line 61
-    .line 62
-    iput-boolean v6, p0, Lot6;->f:Z
-
-    .line 63
-    .line 64
-    iput-boolean v6, v0, Lse4;->a:Z
-
-    .line 65
-    .line 66
-    invoke-virtual {v0}, Lse4;->h()V
-
-    .line 67
-    .line 68
-    .line 69
-    return v6
-
-    .line 70
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 71
-    return v0
-.end method
-
-.method public final surfaceChanged(Landroid/view/SurfaceHolder;III)V
+.method public final a()I
     .locals 0
 
     .line 1
-    const-string p1, "SurfaceViewImpl"
+    iget-object p0, p0, Lot6;->X:Ldf4;
 
     .line 2
     .line 3
-    invoke-static {p1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    iget p0, p0, Ldf4;->h0:I
+
+    .line 4
+    .line 5
+    return p0
+.end method
+
+.method public final add(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lot6;->X:Ldf4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Ldf4;->a(Ljava/lang/Object;)I
 
     .line 4
     .line 5
     .line 6
-    new-instance p1, Landroid/util/Size;
+    move-result p0
 
     .line 7
-    .line 8
-    invoke-direct {p1, p3, p4}, Landroid/util/Size;-><init>(II)V
+    if-ltz p0, :cond_0
 
+    .line 8
     .line 9
+    const/4 p0, 0x1
+
     .line 10
+    return p0
+
     .line 11
-    iput-object p1, p0, Lot6;->e:Landroid/util/Size;
+    :cond_0
+    const/4 p0, 0x0
 
     .line 12
-    .line 13
-    invoke-virtual {p0}, Lot6;->a()Z
-
-    .line 14
-    .line 15
-    .line 16
-    return-void
+    return p0
 .end method
 
-.method public final surfaceCreated(Landroid/view/SurfaceHolder;)V
+.method public final addAll(Ljava/util/Collection;)Z
     .locals 1
 
     .line 1
-    const-string p1, "SurfaceViewImpl"
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     .line 3
-    invoke-static {p1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    iget-object v0, p0, Lot6;->X:Ldf4;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Ldf4;->c()V
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-super {p0, p1}, Ljava/util/AbstractCollection;->addAll(Ljava/util/Collection;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p0
+
+    .line 13
+    return p0
+.end method
+
+.method public final clear()V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lot6;->X:Ldf4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ldf4;->clear()V
 
     .line 4
     .line 5
     .line 6
-    iget-boolean p1, p0, Lot6;->g:Z
-
-    .line 7
-    .line 8
-    if-eqz p1, :cond_0
-
-    .line 9
-    .line 10
-    iget-object p1, p0, Lot6;->c:Lmt6;
-
-    .line 11
-    .line 12
-    if-eqz p1, :cond_0
-
-    .line 13
-    .line 14
-    invoke-virtual {p1}, Lmt6;->c()V
-
-    .line 15
-    .line 16
-    .line 17
-    iget-object p1, p1, Lmt6;->i:Lc90;
-
-    .line 18
-    .line 19
-    const/4 v0, 0x0
-
-    .line 20
-    invoke-virtual {p1, v0}, Lc90;->b(Ljava/lang/Object;)Z
-
-    .line 21
-    .line 22
-    .line 23
-    iput-object v0, p0, Lot6;->c:Lmt6;
-
-    .line 24
-    .line 25
-    const/4 p1, 0x0
-
-    .line 26
-    iput-boolean p1, p0, Lot6;->g:Z
-
-    .line 27
-    .line 28
-    :cond_0
     return-void
 .end method
 
-.method public final surfaceDestroyed(Landroid/view/SurfaceHolder;)V
-    .locals 2
+.method public final contains(Ljava/lang/Object;)Z
+    .locals 0
 
     .line 1
-    const-string p1, "SurfaceViewImpl"
+    iget-object p0, p0, Lot6;->X:Ldf4;
 
     .line 2
     .line 3
-    invoke-static {p1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Ldf4;->containsKey(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
     .line 6
-    iget-boolean v0, p0, Lot6;->f:Z
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final isEmpty()Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lot6;->X:Ldf4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ldf4;->isEmpty()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final iterator()Ljava/util/Iterator;
+    .locals 2
+
+    .line 1
+    iget-object p0, p0, Lot6;->X:Ldf4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, Laf4;
 
     .line 7
     .line 8
-    iget-object v1, p0, Lot6;->b:Lmt6;
+    const/4 v1, 0x1
 
     .line 9
+    invoke-direct {v0, p0, v1}, Laf4;-><init>(Ldf4;I)V
+
     .line 10
-    if-eqz v0, :cond_0
+    .line 11
+    .line 12
+    return-object v0
+.end method
+
+.method public final remove(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lot6;->X:Ldf4;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ldf4;->c()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0, p1}, Ldf4;->i(Ljava/lang/Object;)I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p1
+
+    .line 10
+    if-gez p1, :cond_0
 
     .line 11
     .line 12
-    if-eqz v1, :cond_1
+    const/4 p0, 0x0
 
     .line 13
+    return p0
+
     .line 14
-    invoke-static {v1}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    :cond_0
+    invoke-virtual {p0, p1}, Ldf4;->n(I)V
 
     .line 15
     .line 16
     .line 17
-    invoke-static {p1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    const/4 p0, 0x1
 
     .line 18
-    .line 19
-    .line 20
-    iget-object p1, p0, Lot6;->b:Lmt6;
+    return p0
+.end method
 
-    .line 21
-    .line 22
-    iget-object p1, p1, Lmt6;->k:Lnm2;
+.method public final removeAll(Ljava/util/Collection;)Z
+    .locals 1
 
-    .line 23
-    .line 24
-    invoke-virtual {p1}, Lu51;->a()V
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 25
-    .line 26
-    .line 27
-    goto :goto_0
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lot6;->X:Ldf4;
 
-    .line 28
-    :cond_0
-    if-eqz v1, :cond_1
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Ldf4;->c()V
 
-    .line 29
-    .line 30
-    invoke-static {v1}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    .line 7
+    .line 8
+    .line 9
+    invoke-super {p0, p1}, Ljava/util/AbstractCollection;->removeAll(Ljava/util/Collection;)Z
 
-    .line 31
-    .line 32
-    .line 33
-    invoke-static {p1}, Lw33;->U(Ljava/lang/String;)Ljava/lang/String;
+    .line 10
+    .line 11
+    .line 12
+    move-result p0
 
-    .line 34
-    .line 35
-    .line 36
-    iget-object p1, p0, Lot6;->b:Lmt6;
+    .line 13
+    return p0
+.end method
 
-    .line 37
-    .line 38
-    invoke-virtual {p1}, Lmt6;->c()V
+.method public final retainAll(Ljava/util/Collection;)Z
+    .locals 1
 
-    .line 39
-    .line 40
-    .line 41
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 42
-    iput-boolean p1, p0, Lot6;->g:Z
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lot6;->X:Ldf4;
 
-    .line 43
-    .line 44
-    iget-object p1, p0, Lot6;->b:Lmt6;
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Ldf4;->c()V
 
-    .line 45
-    .line 46
-    if-eqz p1, :cond_2
+    .line 7
+    .line 8
+    .line 9
+    invoke-super {p0, p1}, Ljava/util/AbstractCollection;->retainAll(Ljava/util/Collection;)Z
 
-    .line 47
-    .line 48
-    iput-object p1, p0, Lot6;->c:Lmt6;
+    .line 10
+    .line 11
+    .line 12
+    move-result p0
 
-    .line 49
-    .line 50
-    :cond_2
-    const/4 p1, 0x0
-
-    .line 51
-    iput-boolean p1, p0, Lot6;->f:Z
-
-    .line 52
-    .line 53
-    const/4 p1, 0x0
-
-    .line 54
-    iput-object p1, p0, Lot6;->b:Lmt6;
-
-    .line 55
-    .line 56
-    iput-object p1, p0, Lot6;->d:Lye0;
-
-    .line 57
-    .line 58
-    iput-object p1, p0, Lot6;->e:Landroid/util/Size;
-
-    .line 59
-    .line 60
-    iput-object p1, p0, Lot6;->a:Landroid/util/Size;
-
-    .line 61
-    .line 62
-    return-void
+    .line 13
+    return p0
 .end method

@@ -1,37 +1,29 @@
 package defpackage;
 
-import android.graphics.Matrix;
-import android.graphics.Path;
-import android.graphics.RectF;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class r86 extends d31 {
+    public String c0;
+    public de0 d0;
+    public mi2 e0;
+    public ty5 f0;
+    public AutoCloseable g0;
+    public yc0 h0;
+    public long i0;
+    public /* synthetic */ Object j0;
+    public final /* synthetic */ s86 k0;
+    public int l0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class r86 extends t86 {
-    public static final RectF h = new RectF();
-    public final float b;
-    public final float c;
-    public final float d;
-    public final float e;
-    public float f;
-    public float g;
-
-    public r86(float f, float f2, float f3, float f4) {
-        this.b = f;
-        this.c = f2;
-        this.d = f3;
-        this.e = f4;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public r86(s86 s86Var, d31 d31Var) {
+        super(d31Var);
+        this.k0 = s86Var;
     }
 
-    @Override // defpackage.t86
-    public final void a(Matrix matrix, Path path) {
-        Matrix matrix2 = this.a;
-        matrix.invert(matrix2);
-        path.transform(matrix2);
-        float f = this.d;
-        float f2 = this.e;
-        RectF rectF = h;
-        rectF.set(this.b, this.c, f, f2);
-        path.arcTo(rectF, this.f, this.g, false);
-        path.transform(matrix);
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.j0 = obj;
+        this.l0 |= Integer.MIN_VALUE;
+        return this.k0.a(null, null, null, this);
     }
 }

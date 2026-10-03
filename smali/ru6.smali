@@ -1,24 +1,65 @@
 .class public final Lru6;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Ljava/lang/Runnable;
+
+# static fields
+.field public static final d:Lru6;
 
 
 # instance fields
-.field public final Q:J
+.field public final a:J
 
-.field public final R:Landroid/os/PowerManager$WakeLock;
+.field public final b:J
 
-.field public final S:Lcom/google/firebase/messaging/FirebaseMessaging;
-
-.field public final T:Ljava/util/concurrent/ThreadPoolExecutor;
+.field public final c:F
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/firebase/messaging/FirebaseMessaging;J)V
-    .locals 8
+.method static constructor <clinit>()V
+    .locals 6
+
+    .line 1
+    new-instance v0, Lru6;
+
+    .line 2
+    .line 3
+    const-wide v1, 0xff000000L
+
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    invoke-static {v1, v2}, Lvq0;->c(J)J
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-wide v1
+
+    .line 12
+    const-wide/16 v3, 0x0
+
+    .line 13
+    .line 14
+    const/4 v5, 0x0
+
+    .line 15
+    invoke-direct/range {v0 .. v5}, Lru6;-><init>(JJF)V
+
+    .line 16
+    .line 17
+    .line 18
+    sput-object v0, Lru6;->d:Lru6;
+
+    .line 19
+    .line 20
+    return-void
+.end method
+
+.method public constructor <init>(JJF)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -26,719 +67,260 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
+    iput-wide p1, p0, Lru6;->a:J
 
     .line 5
     .line 6
-    new-instance v6, Ljava/util/concurrent/LinkedBlockingQueue;
+    iput-wide p3, p0, Lru6;->b:J
 
     .line 7
     .line 8
-    invoke-direct {v6}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
+    iput p5, p0, Lru6;->c:F
 
     .line 9
     .line 10
-    .line 11
-    new-instance v7, Lqa4;
-
-    .line 12
-    .line 13
-    const-string v1, "firebase-iid-executor"
-
-    .line 14
-    .line 15
-    invoke-direct {v7, v1}, Lqa4;-><init>(Ljava/lang/String;)V
-
-    .line 16
-    .line 17
-    .line 18
-    const/4 v1, 0x0
-
-    .line 19
-    const/4 v2, 0x1
-
-    .line 20
-    const-wide/16 v3, 0x1e
-
-    .line 21
-    .line 22
-    sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    .line 23
-    .line 24
-    invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
-
-    .line 25
-    .line 26
-    .line 27
-    iput-object v0, p0, Lru6;->T:Ljava/util/concurrent/ThreadPoolExecutor;
-
-    .line 28
-    .line 29
-    iput-object p1, p0, Lru6;->S:Lcom/google/firebase/messaging/FirebaseMessaging;
-
-    .line 30
-    .line 31
-    iput-wide p2, p0, Lru6;->Q:J
-
-    .line 32
-    .line 33
-    iget-object p1, p1, Lcom/google/firebase/messaging/FirebaseMessaging;->b:Landroid/content/Context;
-
-    .line 34
-    .line 35
-    const-string p2, "power"
-
-    .line 36
-    .line 37
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object p1
-
-    .line 41
-    check-cast p1, Landroid/os/PowerManager;
-
-    .line 42
-    .line 43
-    const/4 p2, 0x1
-
-    .line 44
-    const-string p3, "fiid-sync"
-
-    .line 45
-    .line 46
-    invoke-virtual {p1, p2, p3}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object p1
-
-    .line 50
-    iput-object p1, p0, Lru6;->R:Landroid/os/PowerManager$WakeLock;
-
-    .line 51
-    .line 52
-    const/4 p2, 0x0
-
-    .line 53
-    invoke-virtual {p1, p2}, Landroid/os/PowerManager$WakeLock;->setReferenceCounted(Z)V
-
-    .line 54
-    .line 55
-    .line 56
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lru6;->S:Lcom/google/firebase/messaging/FirebaseMessaging;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, Lcom/google/firebase/messaging/FirebaseMessaging;->b:Landroid/content/Context;
-
-    .line 4
-    .line 5
-    const-string v1, "connectivity"
-
-    .line 6
-    .line 7
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    check-cast v0, Landroid/net/ConnectivityManager;
-
-    .line 12
-    .line 13
-    if-eqz v0, :cond_0
-
-    .line 14
-    .line 15
-    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 21
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 22
-    .line 23
-    invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v0
-
-    .line 27
-    if-eqz v0, :cond_1
-
-    .line 28
-    .line 29
-    const/4 v0, 0x1
-
-    .line 30
-    return v0
-
-    .line 31
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 32
-    return v0
-.end method
-
-.method public final b()Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
     .line 1
-    const/4 v0, 0x0
+    if-ne p0, p1, :cond_0
 
     .line 2
-    :try_start_0
-    iget-object v1, p0, Lru6;->S:Lcom/google/firebase/messaging/FirebaseMessaging;
-
     .line 3
+    goto :goto_0
+
     .line 4
-    invoke-virtual {v1}, Lcom/google/firebase/messaging/FirebaseMessaging;->a()Ljava/lang/String;
+    :cond_0
+    instance-of v0, p1, Lru6;
 
     .line 5
     .line 6
-    .line 7
-    move-result-object v1
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_1
+    if-nez v0, :cond_1
 
+    .line 7
     .line 8
-    if-nez v1, :cond_0
+    goto :goto_1
 
     .line 9
-    .line 10
-    return v0
+    :cond_1
+    check-cast p1, Lru6;
 
+    .line 10
     .line 11
-    :cond_0
-    const/4 v0, 0x1
+    iget-wide v0, p1, Lru6;->a:J
 
     .line 12
-    return v0
-
     .line 13
-    :catch_0
-    move-exception v1
+    iget-wide v2, p0, Lru6;->a:J
 
     .line 14
-    goto :goto_0
-
     .line 15
-    :catch_1
-    return v0
+    invoke-static {v2, v3, v0, v1}, Lau0;->c(JJ)Z
 
     .line 16
-    :goto_0
-    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
     .line 17
     .line 18
+    move-result v0
+
     .line 19
-    move-result-object v2
+    if-nez v0, :cond_2
 
     .line 20
-    const-string v3, "SERVICE_NOT_AVAILABLE"
-
     .line 21
+    goto :goto_1
+
     .line 22
-    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :cond_2
+    iget-wide v0, p0, Lru6;->b:J
 
     .line 23
     .line 24
-    .line 25
-    move-result v3
+    iget-wide v2, p1, Lru6;->b:J
 
+    .line 25
     .line 26
-    if-nez v3, :cond_3
+    invoke-static {v0, v1, v2, v3}, Lky4;->b(JJ)Z
 
     .line 27
     .line 28
-    const-string v3, "INTERNAL_SERVER_ERROR"
-
     .line 29
+    move-result v0
+
     .line 30
-    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-nez v0, :cond_3
 
     .line 31
     .line 32
-    .line 33
-    move-result v3
-
-    .line 34
-    if-nez v3, :cond_3
-
-    .line 35
-    .line 36
-    const-string v3, "InternalServerError"
-
-    .line 37
-    .line 38
-    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 39
-    .line 40
-    .line 41
-    move-result v2
-
-    .line 42
-    if-eqz v2, :cond_1
-
-    .line 43
-    .line 44
     goto :goto_1
 
-    .line 45
-    :cond_1
-    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v2
-
-    .line 49
-    if-nez v2, :cond_2
-
-    .line 50
-    .line 51
-    return v0
-
-    .line 52
-    :cond_2
-    throw v1
-
-    .line 53
+    .line 33
     :cond_3
-    :goto_1
-    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    iget p0, p0, Lru6;->c:F
 
-    .line 54
-    .line 55
-    .line 56
-    return v0
+    .line 34
+    .line 35
+    iget p1, p1, Lru6;->c:F
+
+    .line 36
+    .line 37
+    cmpg-float p0, p0, p1
+
+    .line 38
+    .line 39
+    if-nez p0, :cond_4
+
+    .line 40
+    .line 41
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 42
+    return p0
+
+    .line 43
+    :cond_4
+    :goto_1
+    const/4 p0, 0x0
+
+    .line 44
+    return p0
 .end method
 
-.method public final run()V
+.method public final hashCode()I
+    .locals 4
+
+    .line 1
+    sget v0, Lau0;->h:I
+
+    .line 2
+    .line 3
+    iget-wide v0, p0, Lru6;->a:J
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    const/16 v1, 0x1f
+
+    .line 10
+    .line 11
+    mul-int/2addr v0, v1
+
+    .line 12
+    iget-wide v2, p0, Lru6;->b:J
+
+    .line 13
+    .line 14
+    invoke-static {v0, v1, v2, v3}, Lw31;->e(IIJ)I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    iget p0, p0, Lru6;->c:F
+
+    .line 19
+    .line 20
+    invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result p0
+
+    .line 24
+    add-int/2addr p0, v0
+
+    .line 25
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lru6;->R:Landroid/os/PowerManager$WakeLock;
+    iget-wide v0, p0, Lru6;->a:J
 
     .line 2
     .line 3
-    invoke-static {}, Lf76;->u()Lf76;
+    invoke-static {v0, v1}, Lau0;->i(J)Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v1
+    move-result-object v0
 
     .line 7
-    iget-object v2, p0, Lru6;->S:Lcom/google/firebase/messaging/FirebaseMessaging;
+    iget-wide v1, p0, Lru6;->b:J
 
     .line 8
     .line 9
-    iget-object v3, v2, Lcom/google/firebase/messaging/FirebaseMessaging;->b:Landroid/content/Context;
+    invoke-static {v1, v2}, Lky4;->h(J)Ljava/lang/String;
 
     .line 10
     .line 11
-    invoke-virtual {v1, v3}, Lf76;->x(Landroid/content/Context;)Z
-
     .line 12
-    .line 13
-    .line 14
-    move-result v1
+    move-result-object v1
 
+    .line 13
+    const-string v2, ", offset="
+
+    .line 14
     .line 15
-    if-eqz v1, :cond_0
+    const-string v3, ", blurRadius="
 
     .line 16
     .line 17
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->acquire()V
+    const-string v4, "Shadow(color="
 
     .line 18
     .line 19
+    invoke-static {v4, v0, v2, v1, v3}, Lw31;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 20
-    :cond_0
-    const/4 v1, 0x0
-
     .line 21
-    :try_start_0
-    monitor-enter v2
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 22
-    const/4 v3, 0x1
+    move-result-object v0
 
     .line 23
-    :try_start_1
-    iput-boolean v3, v2, Lcom/google/firebase/messaging/FirebaseMessaging;->i:Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    iget p0, p0, Lru6;->c:F
 
     .line 24
     .line 25
-    :try_start_2
-    monitor-exit v2
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     .line 26
-    iget-object v3, v2, Lcom/google/firebase/messaging/FirebaseMessaging;->h:Lw34;
-
     .line 27
     .line 28
-    invoke-virtual {v3}, Lw34;->i()Z
+    const-string p0, ")"
 
     .line 29
     .line 30
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 31
-    move-result v3
-
     .line 32
-    if-nez v3, :cond_1
-
     .line 33
-    .line 34
-    invoke-virtual {v2, v1}, Lcom/google/firebase/messaging/FirebaseMessaging;->f(Z)V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 34
     .line 35
     .line 36
+    move-result-object p0
+
     .line 37
-    invoke-static {}, Lf76;->u()Lf76;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v1
-
-    .line 41
-    iget-object v2, v2, Lcom/google/firebase/messaging/FirebaseMessaging;->b:Landroid/content/Context;
-
-    .line 42
-    .line 43
-    invoke-virtual {v1, v2}, Lf76;->x(Landroid/content/Context;)Z
-
-    .line 44
-    .line 45
-    .line 46
-    move-result v1
-
-    .line 47
-    if-eqz v1, :cond_4
-
-    .line 48
-    .line 49
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    .line 50
-    .line 51
-    .line 52
-    return-void
-
-    .line 53
-    :catchall_0
-    move-exception v1
-
-    .line 54
-    goto :goto_2
-
-    .line 55
-    :catch_0
-    move-exception v3
-
-    .line 56
-    goto :goto_1
-
-    .line 57
-    :cond_1
-    :try_start_3
-    invoke-static {}, Lf76;->u()Lf76;
-
-    .line 58
-    .line 59
-    .line 60
-    move-result-object v3
-
-    .line 61
-    iget-object v4, v2, Lcom/google/firebase/messaging/FirebaseMessaging;->b:Landroid/content/Context;
-
-    .line 62
-    .line 63
-    invoke-virtual {v3, v4}, Lf76;->w(Landroid/content/Context;)Z
-
-    .line 64
-    .line 65
-    .line 66
-    move-result v3
-
-    .line 67
-    if-eqz v3, :cond_2
-
-    .line 68
-    .line 69
-    invoke-virtual {p0}, Lru6;->a()Z
-
-    .line 70
-    .line 71
-    .line 72
-    move-result v3
-
-    .line 73
-    if-nez v3, :cond_2
-
-    .line 74
-    .line 75
-    new-instance v3, Lqu6;
-
-    .line 76
-    .line 77
-    invoke-direct {v3}, Landroid/content/BroadcastReceiver;-><init>()V
-
-    .line 78
-    .line 79
-    .line 80
-    iput-object p0, v3, Lqu6;->a:Lru6;
-
-    .line 81
-    .line 82
-    invoke-virtual {v3}, Lqu6;->a()V
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    .line 83
-    .line 84
-    .line 85
-    invoke-static {}, Lf76;->u()Lf76;
-
-    .line 86
-    .line 87
-    .line 88
-    move-result-object v1
-
-    .line 89
-    iget-object v2, v2, Lcom/google/firebase/messaging/FirebaseMessaging;->b:Landroid/content/Context;
-
-    .line 90
-    .line 91
-    invoke-virtual {v1, v2}, Lf76;->x(Landroid/content/Context;)Z
-
-    .line 92
-    .line 93
-    .line 94
-    move-result v1
-
-    .line 95
-    if-eqz v1, :cond_4
-
-    .line 96
-    .line 97
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    .line 98
-    .line 99
-    .line 100
-    return-void
-
-    .line 101
-    :cond_2
-    :try_start_4
-    invoke-virtual {p0}, Lru6;->b()Z
-
-    .line 102
-    .line 103
-    .line 104
-    move-result v3
-
-    .line 105
-    if-eqz v3, :cond_3
-
-    .line 106
-    .line 107
-    invoke-virtual {v2, v1}, Lcom/google/firebase/messaging/FirebaseMessaging;->f(Z)V
-
-    .line 108
-    .line 109
-    .line 110
-    goto :goto_0
-
-    .line 111
-    :cond_3
-    iget-wide v3, p0, Lru6;->Q:J
-
-    .line 112
-    .line 113
-    invoke-virtual {v2, v3, v4}, Lcom/google/firebase/messaging/FirebaseMessaging;->h(J)V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    .line 114
-    .line 115
-    .line 116
-    :goto_0
-    invoke-static {}, Lf76;->u()Lf76;
-
-    .line 117
-    .line 118
-    .line 119
-    move-result-object v1
-
-    .line 120
-    iget-object v2, v2, Lcom/google/firebase/messaging/FirebaseMessaging;->b:Landroid/content/Context;
-
-    .line 121
-    .line 122
-    invoke-virtual {v1, v2}, Lf76;->x(Landroid/content/Context;)Z
-
-    .line 123
-    .line 124
-    .line 125
-    move-result v1
-
-    .line 126
-    if-eqz v1, :cond_4
-
-    .line 127
-    .line 128
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    .line 129
-    .line 130
-    .line 131
-    return-void
-
-    .line 132
-    :catchall_1
-    move-exception v3
-
-    .line 133
-    :try_start_5
-    monitor-exit v2
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
-
-    .line 134
-    :try_start_6
-    throw v3
-    :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_0
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
-
-    .line 135
-    :goto_1
-    :try_start_7
-    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    .line 136
-    .line 137
-    .line 138
-    invoke-virtual {v2, v1}, Lcom/google/firebase/messaging/FirebaseMessaging;->f(Z)V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_0
-
-    .line 139
-    .line 140
-    .line 141
-    invoke-static {}, Lf76;->u()Lf76;
-
-    .line 142
-    .line 143
-    .line 144
-    move-result-object v1
-
-    .line 145
-    iget-object v2, v2, Lcom/google/firebase/messaging/FirebaseMessaging;->b:Landroid/content/Context;
-
-    .line 146
-    .line 147
-    invoke-virtual {v1, v2}, Lf76;->x(Landroid/content/Context;)Z
-
-    .line 148
-    .line 149
-    .line 150
-    move-result v1
-
-    .line 151
-    if-eqz v1, :cond_4
-
-    .line 152
-    .line 153
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    .line 154
-    .line 155
-    .line 156
-    :cond_4
-    return-void
-
-    .line 157
-    :goto_2
-    invoke-static {}, Lf76;->u()Lf76;
-
-    .line 158
-    .line 159
-    .line 160
-    move-result-object v3
-
-    .line 161
-    iget-object v2, v2, Lcom/google/firebase/messaging/FirebaseMessaging;->b:Landroid/content/Context;
-
-    .line 162
-    .line 163
-    invoke-virtual {v3, v2}, Lf76;->x(Landroid/content/Context;)Z
-
-    .line 164
-    .line 165
-    .line 166
-    move-result v2
-
-    .line 167
-    if-eqz v2, :cond_5
-
-    .line 168
-    .line 169
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    .line 170
-    .line 171
-    .line 172
-    :cond_5
-    throw v1
+    return-object p0
 .end method

@@ -1,6 +1,6 @@
 .class public final enum Lio/sentry/hints/e;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -11,27 +11,21 @@
 
 # direct methods
 .method private static synthetic $values()[Lio/sentry/hints/e;
-    .locals 3
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    sget-object v0, Lio/sentry/hints/e;->MULTITHREADED_DEDUPLICATION:Lio/sentry/hints/e;
 
     .line 2
-    new-array v0, v0, [Lio/sentry/hints/e;
-
     .line 3
-    .line 4
-    sget-object v1, Lio/sentry/hints/e;->MULTITHREADED_DEDUPLICATION:Lio/sentry/hints/e;
+    filled-new-array {v0}, [Lio/sentry/hints/e;
 
+    .line 4
     .line 5
     .line 6
-    const/4 v2, 0x0
+    move-result-object v0
 
     .line 7
-    aput-object v1, v0, v2
-
-    .line 8
-    .line 9
     return-object v0
 .end method
 

@@ -1,18 +1,27 @@
 package defpackage;
 
-import android.text.Layout;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ap2 implements l16 {
+    public final zo2 X;
+    public final bp2 Y;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract /* synthetic */ class ap2 {
-    public static final /* synthetic */ int[] a;
+    public ap2(zo2 zo2Var) {
+        this.X = zo2Var;
+        this.Y = zo2Var.c();
+    }
 
-    static {
-        int[] iArr = new int[Layout.Alignment.values().length];
-        try {
-            iArr[Layout.Alignment.ALIGN_CENTER.ordinal()] = 1;
-        } catch (NoSuchFieldError unused) {
-        }
-        a = iArr;
+    @Override // defpackage.l16
+    public final void a() {
+        this.X.a(this.Y);
+    }
+
+    @Override // defpackage.l16
+    public final void b() {
+        this.X.a(this.Y);
+    }
+
+    @Override // defpackage.l16
+    public final void c() {
     }
 }

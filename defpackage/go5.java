@@ -1,153 +1,112 @@
 package defpackage;
 
-import okhttp3.internal.http2.Http2;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class go5 extends al2 implements ik4 {
+    public int Y;
+    public int Z;
+    public int c0;
+    public ho5 d0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class go5 implements z61 {
-    public int Q;
-    public float R;
-    public float S;
-    public float T;
-    public float U;
-    public long V;
-    public long W;
-    public float X;
-    public float Y;
-    public long Z;
-    public i86 a0;
-    public boolean b0;
-    public long c0;
-    public z61 d0;
-    public te3 e0;
-    public int f0;
-    public j04 g0;
-
-    @Override // defpackage.z61
-    public final long G(float f) {
-        return kd0.f(this, M(f));
+    public static go5 g() {
+        go5 go5Var = new go5();
+        go5Var.Z = -1;
+        go5Var.d0 = ho5.PACKAGE;
+        return go5Var;
     }
 
-    @Override // defpackage.z61
-    public final float K(int i) {
-        return i / this.d0.getDensity();
+    @Override // defpackage.al2
+    public final a2 b() {
+        io5 f = f();
+        if (f.c()) {
+            return f;
+        }
+        throw new l98();
     }
 
-    @Override // defpackage.z61
-    public final float M(float f) {
-        return f / this.d0.getDensity();
+    public final Object clone() {
+        go5 g = g();
+        g.h(f());
+        return g;
     }
 
-    @Override // defpackage.z61
-    public final float O() {
-        return this.d0.O();
+    /* JADX WARN: Removed duplicated region for block: B:16:0x001b  */
+    @Override // defpackage.al2
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final al2 d(ft0 ft0Var, n22 n22Var) {
+        io5 io5Var = null;
+        try {
+            try {
+                io5.h0.getClass();
+                h(new io5(ft0Var));
+                return this;
+            } catch (aa3 e) {
+                io5 io5Var2 = (io5) e.X;
+                try {
+                    throw e;
+                } catch (Throwable th) {
+                    th = th;
+                    io5Var = io5Var2;
+                    if (io5Var != null) {
+                        h(io5Var);
+                    }
+                    throw th;
+                }
+            }
+        } catch (Throwable th2) {
+            th = th2;
+            if (io5Var != null) {
+            }
+            throw th;
+        }
     }
 
-    @Override // defpackage.z61
-    public final float U(float f) {
-        return this.d0.getDensity() * f;
+    @Override // defpackage.al2
+    public final /* bridge */ /* synthetic */ al2 e(hl2 hl2Var) {
+        h((io5) hl2Var);
+        return this;
     }
 
-    public final void a(float f) {
-        if (this.T == f) {
+    public final io5 f() {
+        io5 io5Var = new io5(this);
+        int i = this.Y;
+        int i2 = (i & 1) != 1 ? 0 : 1;
+        io5Var.Z = this.Z;
+        if ((i & 2) == 2) {
+            i2 |= 2;
+        }
+        io5Var.c0 = this.c0;
+        if ((i & 4) == 4) {
+            i2 |= 4;
+        }
+        io5Var.d0 = this.d0;
+        io5Var.Y = i2;
+        return io5Var;
+    }
+
+    public final void h(io5 io5Var) {
+        if (io5Var == io5.g0) {
             return;
         }
-        this.Q |= 4;
-        this.T = f;
-    }
-
-    public final void b(long j) {
-        if (vm0.c(this.V, j)) {
-            return;
+        int i = io5Var.Y;
+        if ((i & 1) == 1) {
+            int i2 = io5Var.Z;
+            this.Y = 1 | this.Y;
+            this.Z = i2;
         }
-        this.Q |= 64;
-        this.V = j;
-    }
-
-    public final void c(boolean z) {
-        if (this.b0 != z) {
-            this.Q |= Http2.INITIAL_MAX_FRAME_SIZE;
-            this.b0 = z;
+        if ((i & 2) == 2) {
+            int i3 = io5Var.c0;
+            this.Y = 2 | this.Y;
+            this.c0 = i3;
         }
-    }
-
-    public final void e(float f) {
-        if (this.R == f) {
-            return;
+        if ((i & 4) == 4) {
+            ho5 ho5Var = io5Var.d0;
+            ho5Var.getClass();
+            this.Y = 4 | this.Y;
+            this.d0 = ho5Var;
         }
-        this.Q |= 1;
-        this.R = f;
-    }
-
-    public final void f(float f) {
-        if (this.S == f) {
-            return;
-        }
-        this.Q |= 2;
-        this.S = f;
-    }
-
-    @Override // defpackage.z61
-    public final /* synthetic */ int f0(float f) {
-        return kd0.a(this, f);
-    }
-
-    public final void g(float f) {
-        if (this.U == f) {
-            return;
-        }
-        this.Q |= 32;
-        this.U = f;
-    }
-
-    @Override // defpackage.z61
-    public final float getDensity() {
-        return this.d0.getDensity();
-    }
-
-    public final void h(i86 i86Var) {
-        if (rt2.f(this.a0, i86Var)) {
-            return;
-        }
-        this.Q |= 8192;
-        this.a0 = i86Var;
-    }
-
-    public final void i(long j) {
-        if (vm0.c(this.W, j)) {
-            return;
-        }
-        this.Q |= 128;
-        this.W = j;
-    }
-
-    public final void j(long j) {
-        long j2 = this.Z;
-        int i = e77.c;
-        if (j2 == j) {
-            return;
-        }
-        this.Q |= 4096;
-        this.Z = j;
-    }
-
-    @Override // defpackage.z61
-    public final /* synthetic */ long l0(long j) {
-        return kd0.e(j, this);
-    }
-
-    @Override // defpackage.z61
-    public final /* synthetic */ long m(long j) {
-        return kd0.c(j, this);
-    }
-
-    @Override // defpackage.z61
-    public final /* synthetic */ float n0(long j) {
-        return kd0.d(j, this);
-    }
-
-    @Override // defpackage.z61
-    public final /* synthetic */ float u(long j) {
-        return kd0.b(j, this);
+        this.X = this.X.b(io5Var.X);
     }
 }

@@ -1,84 +1,224 @@
-.class public final synthetic Lnr1;
-.super Lq82;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lnr1;
+.super Lll7;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lj72;
+.implements Lyi2;
 
 
-# static fields
-.field public static final Q:Lnr1;
+# instance fields
+.field public final synthetic d0:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public synthetic constructor <init>(ILb31;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lnr1;
+    iput p3, p0, Lnr1;->d0:I
 
     .line 2
     .line 3
-    const-string v4, "trim(Ljava/lang/String;)Ljava/lang/String;"
+    invoke-direct {p0, p1, p2}, Lll7;-><init>(ILb31;)V
 
     .line 4
     .line 5
-    const/4 v5, 0x1
-
     .line 6
-    const/4 v1, 0x1
-
-    .line 7
-    const-class v2, Lsl6;
-
-    .line 8
-    .line 9
-    const-string v3, "trim"
-
-    .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lq82;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, Lnr1;->Q:Lnr1;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    iget p0, p0, Lnr1;->d0:I
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sget-object v0, Lr98;->a:Lr98;
 
     .line 4
     .line 5
+    packed-switch p0, :pswitch_data_0
+
     .line 6
-    invoke-static {p1}, Lsl6;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    .line 7
+    .line 8
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    :pswitch_0
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object v0
+
+    .line 16
+    :pswitch_1
+    invoke-static {p1}, Lq48;->f0(Ljava/lang/Object;)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-object v0
+
+    .line 20
+    nop
+
+    .line 21
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final w(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget p0, p0, Lnr1;->d0:I
+
+    .line 2
+    .line 3
+    sget-object v0, Lr98;->a:Lr98;
+
+    .line 4
+    .line 5
+    const/4 v1, 0x3
+
+    .line 6
+    packed-switch p0, :pswitch_data_0
 
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    check-cast p1, Lhi5;
 
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
     .line 11
+    check-cast p2, Lky4;
+
     .line 12
     .line 13
-    move-result-object p1
+    iget-wide p0, p2, Lky4;->a:J
 
     .line 14
-    return-object p1
+    .line 15
+    check-cast p3, Lb31;
+
+    .line 16
+    .line 17
+    new-instance p0, Lnr1;
+
+    .line 18
+    .line 19
+    const/4 p1, 0x2
+
+    .line 20
+    invoke-direct {p0, v1, p3, p1}, Lnr1;-><init>(ILb31;I)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {p0, v0}, Lnr1;->q(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
+    return-object v0
+
+    .line 27
+    :pswitch_0
+    check-cast p1, Li41;
+
+    .line 28
+    .line 29
+    check-cast p2, Ljava/lang/Number;
+
+    .line 30
+    .line 31
+    invoke-virtual {p2}, Ljava/lang/Number;->floatValue()F
+
+    .line 32
+    .line 33
+    .line 34
+    check-cast p3, Lb31;
+
+    .line 35
+    .line 36
+    new-instance p0, Lnr1;
+
+    .line 37
+    .line 38
+    const/4 p1, 0x1
+
+    .line 39
+    invoke-direct {p0, v1, p3, p1}, Lnr1;-><init>(ILb31;I)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {p0, v0}, Lnr1;->q(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    return-object v0
+
+    .line 46
+    :pswitch_1
+    check-cast p1, Li41;
+
+    .line 47
+    .line 48
+    check-cast p2, Lky4;
+
+    .line 49
+    .line 50
+    iget-wide p0, p2, Lky4;->a:J
+
+    .line 51
+    .line 52
+    check-cast p3, Lb31;
+
+    .line 53
+    .line 54
+    new-instance p0, Lnr1;
+
+    .line 55
+    .line 56
+    const/4 p1, 0x0
+
+    .line 57
+    invoke-direct {p0, v1, p3, p1}, Lnr1;-><init>(ILb31;I)V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {p0, v0}, Lnr1;->q(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    return-object v0
+
+    .line 64
+    nop
+
+    .line 65
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

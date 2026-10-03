@@ -1,92 +1,106 @@
-.class public abstract Lkv4;
+.class public final Lkv4;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Lm08;
 
 
-# static fields
-.field public static final a:Z
+# instance fields
+.field public final X:Lrl2;
+
+.field public final Y:Llz2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lrl2;Llz2;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    :try_start_0
-    const-string v1, "android.os.Build$VERSION"
-
     .line 3
     .line 4
-    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    iput-object p1, p0, Lkv4;->X:Lrl2;
 
     .line 5
     .line 6
+    iput-object p2, p0, Lkv4;->Y:Llz2;
+
     .line 7
-    move-result-object v1
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lkv4;->Y:Llz2;
+
+    .line 2
+    .line 3
+    instance-of v1, v0, Ldj7;
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lkv4;->X:Lrl2;
+
+    .line 6
+    .line 7
+    if-eqz v1, :cond_0
 
     .line 8
-    const-string v2, "SDK_INT"
-
     .line 9
-    .line 10
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    check-cast v0, Ldj7;
 
+    .line 10
     .line 11
+    iget-object v0, v0, Ldj7;->a:Lqx2;
+
     .line 12
     .line 13
-    move-result-object v1
+    invoke-virtual {p0, v0}, Lrl2;->onSuccess(Lqx2;)V
 
     .line 14
-    const/4 v2, 0x0
-
     .line 15
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 16
-    .line 17
-    .line 18
-    move-result-object v1
+    return-void
 
+    .line 17
+    :cond_0
+    instance-of v1, v0, Lnz1;
+
+    .line 18
     .line 19
-    check-cast v1, Ljava/lang/Integer;
+    if-eqz v1, :cond_1
 
     .line 20
     .line 21
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+    check-cast v0, Lnz1;
 
     .line 22
     .line 23
-    .line 24
-    move-result v1
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    iget-object v0, v0, Lnz1;->a:Lqx2;
 
+    .line 24
     .line 25
-    goto :goto_0
+    invoke-virtual {p0, v0}, Lrl2;->onError(Lqx2;)V
 
     .line 26
-    :catch_0
-    nop
-
     .line 27
-    const/4 v1, 0x0
-
     .line 28
-    :goto_0
-    if-eqz v1, :cond_0
+    return-void
 
     .line 29
+    :cond_1
+    invoke-static {}, Lku0;->d()V
+
     .line 30
-    const/4 v0, 0x1
-
     .line 31
-    :cond_0
-    sput-boolean v0, Lkv4;->a:Z
-
     .line 32
-    .line 33
     return-void
 .end method

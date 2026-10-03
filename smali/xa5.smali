@@ -1,402 +1,467 @@
-.class public abstract Lxa5;
-.super Ljava/lang/Object;
+.class public final Lxa5;
+.super Le2;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static ActionView:[I = null
+# instance fields
+.field public final synthetic X:I
 
-.field public static ActionView_iconSrc:I = 0x0
-
-.field public static ActionView_text:I = 0x1
-
-.field public static CustomSpinner:[I = null
-
-.field public static CustomSpinner_popupHeight:I = 0x0
-
-.field public static HappDebouncedImageButton:[I = null
-
-.field public static HappDebouncedImageButton_debounceTimeout:I = 0x0
-
-.field public static HappDebouncedTextButton:[I = null
-
-.field public static HappDebouncedTextButton_debounceTimeout:I = 0x0
-
-.field public static HappForwardField:[I = null
-
-.field public static HappForwardField_description:I = 0x0
-
-.field public static HappForwardField_title:I = 0x1
-
-.field public static HappForwardField_titleColor:I = 0x2
-
-.field public static HappForwardField_value:I = 0x3
-
-.field public static HappInfoField:[I = null
-
-.field public static HappInfoField_copyOnShortClick:I = 0x0
-
-.field public static HappInfoField_description:I = 0x1
-
-.field public static HappInfoField_hint:I = 0x2
-
-.field public static HappInfoField_info:I = 0x3
-
-.field public static HappInfoField_title:I = 0x4
-
-.field public static HappInfoField_titleColor:I = 0x5
-
-.field public static HappInputField:[I = null
-
-.field public static HappInputField_copyOnShortClick:I = 0x0
-
-.field public static HappInputField_description:I = 0x1
-
-.field public static HappInputField_hint:I = 0x2
-
-.field public static HappInputField_title:I = 0x3
-
-.field public static HappInputField_titleColor:I = 0x4
-
-.field public static HappSettingsDivider:[I = null
-
-.field public static HappSettingsDivider_color:I = 0x0
-
-.field public static HappSliderField:[I = null
-
-.field public static HappSliderField_description:I = 0x0
-
-.field public static HappSliderField_progress:I = 0x1
-
-.field public static HappSliderField_stepSize:I = 0x2
-
-.field public static HappSliderField_valueFrom:I = 0x3
-
-.field public static HappSliderField_valueFromLabel:I = 0x4
-
-.field public static HappSliderField_valueTo:I = 0x5
-
-.field public static HappSliderField_valueToLabel:I = 0x6
-
-.field public static HappSpinnerField:[I = null
-
-.field public static HappSpinnerField_description:I = 0x0
-
-.field public static HappSpinnerField_entries:I = 0x1
-
-.field public static HappSpinnerField_title:I = 0x2
-
-.field public static HappSpinnerField_titleColor:I = 0x3
-
-.field public static HappTextView:[I = null
-
-.field public static HappTextView_android_gravity:I = 0x0
-
-.field public static HappTextView_android_textAlignment:I = 0x1
-
-.field public static HappToggleField:[I = null
-
-.field public static HappToggleField_checked:I = 0x0
-
-.field public static HappToggleField_description:I = 0x1
-
-.field public static HappToggleField_title:I = 0x2
-
-.field public static HappToggleField_titleColor:I = 0x3
-
-.field public static StyleableSwitch:[I
-
-.field public static StyleableSwitch_switchMaxWidth:I
+.field public final Y:Ld2;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 5
+.method public synthetic constructor <init>(Ld2;I)V
+    .locals 0
 
     .line 1
-    const v0, 0x7f040354
+    iput p2, p0, Lxa5;->X:I
 
     .line 2
     .line 3
-    .line 4
-    const v1, 0x7f040636
+    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    .line 7
-    filled-new-array {v0, v1}, [I
+    iput-object p1, p0, Lxa5;->Y:Ld2;
 
+    .line 7
     .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lxa5;->X:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p0, p0, Lxa5;->Y:Ld2;
+
+    .line 7
+    .line 8
+    check-cast p0, Lkb5;
+
     .line 9
     .line 10
-    move-result-object v0
+    invoke-virtual {p0}, Lkb5;->c()I
 
     .line 11
-    sput-object v0, Lxa5;->ActionView:[I
+    .line 12
+    .line 13
+    move-result p0
+
+    .line 14
+    return p0
+
+    .line 15
+    :pswitch_0
+    iget-object p0, p0, Lxa5;->Y:Ld2;
+
+    .line 16
+    .line 17
+    check-cast p0, Lua5;
+
+    .line 18
+    .line 19
+    invoke-virtual {p0}, Lua5;->c()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p0
+
+    .line 23
+    return p0
+
+    .line 24
+    nop
+
+    .line 25
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final add(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lxa5;->X:I
+
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, Ljava/util/Map$Entry;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     .line 12
     .line 13
-    const v0, 0x7f040517
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 14
     .line 15
     .line 16
-    filled-new-array {v0}, [I
+    throw p0
+
+    .line 17
+    :pswitch_0
+    check-cast p1, Ljava/util/Map$Entry;
+
+    .line 18
+    .line 19
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 20
+    .line 21
+    .line 22
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    .line 23
+    .line 24
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 25
+    .line 26
+    .line 27
+    throw p0
+
+    .line 28
+    nop
+
+    .line 29
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final clear()V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lxa5;->X:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p0, p0, Lxa5;->Y:Ld2;
+
+    .line 7
+    .line 8
+    check-cast p0, Lkb5;
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Lkb5;->clear()V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+
+    .line 14
+    :pswitch_0
+    iget-object p0, p0, Lxa5;->Y:Ld2;
+
+    .line 15
+    .line 16
+    check-cast p0, Lua5;
+
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Lua5;->clear()V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+
+    .line 22
+    nop
+
+    .line 23
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final contains(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Ljava/util/Map$Entry;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    check-cast p1, Ljava/util/Map$Entry;
+
+    .line 8
+    .line 9
+    iget v0, p0, Lxa5;->X:I
+
+    .line 10
+    .line 11
+    iget-object p0, p0, Lxa5;->Y:Ld2;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    packed-switch v0, :pswitch_data_0
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    check-cast p0, Lkb5;
 
     .line 20
-    sput-object v0, Lxa5;->CustomSpinner:[I
-
     .line 21
-    .line 22
-    const v0, 0x7f040206
+    invoke-static {p0, p1}, Lkc;->I(Ljava/util/Map;Ljava/util/Map$Entry;)Z
 
+    .line 22
     .line 23
     .line 24
+    move-result p0
+
     .line 25
-    filled-new-array {v0}, [I
+    goto :goto_0
+
+    .line 26
+    :pswitch_0
+    check-cast p0, Lua5;
+
+    .line 27
+    .line 28
+    invoke-static {p0, p1}, Lkc;->I(Ljava/util/Map;Ljava/util/Map$Entry;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p0
+
+    .line 32
+    :goto_0
+    return p0
+
+    .line 33
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final iterator()Ljava/util/Iterator;
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lxa5;->X:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, Llb5;
+
+    .line 7
+    .line 8
+    iget-object p0, p0, Lxa5;->Y:Ld2;
+
+    .line 9
+    .line 10
+    check-cast p0, Lkb5;
+
+    .line 11
+    .line 12
+    const/4 v1, 0x0
+
+    .line 13
+    invoke-direct {v0, p0, v1}, Llb5;-><init>(Lkb5;I)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-object v0
+
+    .line 17
+    :pswitch_0
+    new-instance v0, Lza5;
+
+    .line 18
+    .line 19
+    iget-object p0, p0, Lxa5;->Y:Ld2;
+
+    .line 20
+    .line 21
+    check-cast p0, Lua5;
+
+    .line 22
+    .line 23
+    invoke-direct {v0, p0}, Lza5;-><init>(Lua5;)V
+
+    .line 24
+    .line 25
+    .line 26
+    return-object v0
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final remove(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Ljava/util/Map$Entry;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+
+    .line 7
+    :cond_0
+    check-cast p1, Ljava/util/Map$Entry;
+
+    .line 8
+    .line 9
+    iget v0, p0, Lxa5;->X:I
+
+    .line 10
+    .line 11
+    iget-object p0, p0, Lxa5;->Y:Ld2;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    packed-switch v0, :pswitch_data_0
+
+    .line 17
+    .line 18
+    .line 19
+    check-cast p0, Lkb5;
+
+    .line 20
+    .line 21
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     .line 26
     .line 27
     .line 28
-    move-result-object v1
+    move-result-object p1
 
     .line 29
-    sput-object v1, Lxa5;->HappDebouncedImageButton:[I
+    invoke-virtual {p0, v0, p1}, Lkb5;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 30
     .line 31
-    filled-new-array {v0}, [I
-
     .line 32
+    move-result p0
+
     .line 33
+    goto :goto_0
+
     .line 34
-    move-result-object v0
+    :pswitch_0
+    check-cast p0, Lua5;
 
     .line 35
-    sput-object v0, Lxa5;->HappDebouncedTextButton:[I
-
     .line 36
-    .line 37
-    const v0, 0x7f0406f4
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
+    .line 37
     .line 38
     .line 39
+    move-result-object v0
+
     .line 40
-    const v1, 0x7f040218
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     .line 41
     .line 42
     .line 43
-    const v2, 0x7f0406ad
+    move-result-object p1
 
     .line 44
+    invoke-virtual {p0, v0, p1}, Lua5;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 45
     .line 46
-    const v3, 0x7f0406b0
-
     .line 47
+    move-result p0
+
     .line 48
+    :goto_0
+    return p0
+
     .line 49
-    filled-new-array {v1, v2, v3, v0}, [I
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v0
-
-    .line 53
-    sput-object v0, Lxa5;->HappForwardField:[I
-
-    .line 54
-    .line 55
-    const/4 v0, 0x6
-
-    .line 56
-    new-array v0, v0, [I
-
-    .line 57
-    .line 58
-    fill-array-data v0, :array_0
-
-    .line 59
-    .line 60
-    .line 61
-    sput-object v0, Lxa5;->HappInfoField:[I
-
-    .line 62
-    .line 63
-    const v0, 0x7f0401d4
-
-    .line 64
-    .line 65
-    .line 66
-    const v4, 0x7f04033a
-
-    .line 67
-    .line 68
-    .line 69
-    filled-new-array {v0, v1, v4, v2, v3}, [I
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v0
-
-    .line 73
-    sput-object v0, Lxa5;->HappInputField:[I
-
-    .line 74
-    .line 75
-    const v0, 0x7f040124
-
-    .line 76
-    .line 77
-    .line 78
-    filled-new-array {v0}, [I
-
-    .line 79
-    .line 80
-    .line 81
-    move-result-object v0
-
-    .line 82
-    sput-object v0, Lxa5;->HappSettingsDivider:[I
-
-    .line 83
-    .line 84
-    const/4 v0, 0x7
-
-    .line 85
-    new-array v0, v0, [I
-
-    .line 86
-    .line 87
-    fill-array-data v0, :array_1
-
-    .line 88
-    .line 89
-    .line 90
-    sput-object v0, Lxa5;->HappSliderField:[I
-
-    .line 91
-    .line 92
-    const v0, 0x7f040265
-
-    .line 93
-    .line 94
-    .line 95
-    filled-new-array {v1, v0, v2, v3}, [I
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-object v0
-
-    .line 99
-    sput-object v0, Lxa5;->HappSpinnerField:[I
-
-    .line 100
-    .line 101
-    const v0, 0x10100af
-
-    .line 102
-    .line 103
-    .line 104
-    const v4, 0x10103b1
-
-    .line 105
-    .line 106
-    .line 107
-    filled-new-array {v0, v4}, [I
-
-    .line 108
-    .line 109
-    .line 110
-    move-result-object v0
-
-    .line 111
-    sput-object v0, Lxa5;->HappTextView:[I
-
-    .line 112
-    .line 113
-    const v0, 0x7f0400dc
-
-    .line 114
-    .line 115
-    .line 116
-    filled-new-array {v0, v1, v2, v3}, [I
-
-    .line 117
-    .line 118
-    .line 119
-    move-result-object v0
-
-    .line 120
-    sput-object v0, Lxa5;->HappToggleField:[I
-
-    .line 121
-    .line 122
-    const v0, 0x7f04060c
-
-    .line 123
-    .line 124
-    .line 125
-    filled-new-array {v0}, [I
-
-    .line 126
-    .line 127
-    .line 128
-    move-result-object v0
-
-    .line 129
-    sput-object v0, Lxa5;->StyleableSwitch:[I
-
-    .line 130
-    .line 131
-    return-void
-
-    .line 132
-    nop
-
-    .line 133
-    :array_0
-    .array-data 4
-        0x7f0401d4
-        0x7f040218
-        0x7f04033a
-        0x7f040374
-        0x7f0406ad
-        0x7f0406b0
-    .end array-data
-
-    .line 134
-    .line 135
-    .line 136
-    .line 137
-    .line 138
-    .line 139
-    .line 140
-    .line 141
-    .line 142
-    .line 143
-    .line 144
-    .line 145
-    .line 146
-    .line 147
-    .line 148
-    .line 149
-    :array_1
-    .array-data 4
-        0x7f040218
-        0x7f04052e
-        0x7f0405e7
-        0x7f0406f5
-        0x7f0406f6
-        0x7f0406f7
-        0x7f0406f8
-    .end array-data
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,9 +1,16 @@
 package defpackage;
 
-import java.util.List;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class yo6 extends cn4 implements xo6 {
+    public final /* synthetic */ mi2 n0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface yo6 extends t04 {
-    List r(u72 u72Var, Object obj);
+    public yo6(mi2 mi2Var) {
+        this.n0 = mi2Var;
+    }
+
+    @Override // defpackage.xo6
+    public final void g(gp6 gp6Var) {
+        this.n0.invoke(gp6Var);
+    }
 }

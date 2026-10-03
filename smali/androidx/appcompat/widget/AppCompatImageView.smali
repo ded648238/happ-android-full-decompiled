@@ -1,14 +1,14 @@
 .class public Landroidx/appcompat/widget/AppCompatImageView;
 .super Landroid/widget/ImageView;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final Q:Lt6;
+.field public final c0:Lf7;
 
-.field public final R:Lk18;
+.field public final d0:Lge;
 
-.field public S:Z
+.field public e0:Z
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     const/4 v0, 0x0
 
-    .line 38
+    .line 35
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -27,72 +27,67 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lv47;->a(Landroid/content/Context;)V
+    invoke-direct {p0, p1, p2, p3}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 2
     .line 3
     .line 4
-    invoke-direct {p0, p1, p2, p3}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    .line 5
-    .line 6
-    .line 7
     const/4 p1, 0x0
 
-    .line 8
-    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->S:Z
+    .line 5
+    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->e0:Z
 
-    .line 9
-    .line 10
+    .line 6
+    .line 7
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    .line 11
-    .line 12
-    .line 13
+    .line 8
+    .line 9
+    .line 10
     move-result-object p1
 
+    .line 11
+    invoke-static {p0, p1}, Lhv7;->a(Landroid/view/View;Landroid/content/Context;)V
+
+    .line 12
+    .line 13
     .line 14
-    invoke-static {p0, p1}, Ld37;->a(Landroid/view/View;Landroid/content/Context;)V
+    new-instance p1, Lf7;
 
     .line 15
     .line 16
-    .line 17
-    new-instance p1, Lt6;
+    invoke-direct {p1, p0}, Lf7;-><init>(Landroid/view/View;)V
 
+    .line 17
     .line 18
     .line 19
-    invoke-direct {p1, p0}, Lt6;-><init>(Landroid/view/View;)V
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->c0:Lf7;
 
     .line 20
     .line 21
-    .line 22
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->Q:Lt6;
+    invoke-virtual {p1, p2, p3}, Lf7;->y(Landroid/util/AttributeSet;I)V
 
+    .line 22
     .line 23
     .line 24
-    invoke-virtual {p1, p2, p3}, Lt6;->y(Landroid/util/AttributeSet;I)V
+    new-instance p1, Lge;
 
     .line 25
     .line 26
-    .line 27
-    new-instance p1, Lk18;
+    invoke-direct {p1, p0}, Lge;-><init>(Landroid/widget/ImageView;)V
 
+    .line 27
     .line 28
     .line 29
-    invoke-direct {p1, p0}, Lk18;-><init>(Landroid/widget/ImageView;)V
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 30
     .line 31
-    .line 32
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    invoke-virtual {p1, p2, p3}, Lge;->k(Landroid/util/AttributeSet;I)V
 
+    .line 32
     .line 33
     .line 34
-    invoke-virtual {p1, p2, p3}, Lk18;->c(Landroid/util/AttributeSet;I)V
-
-    .line 35
-    .line 36
-    .line 37
     return-void
 .end method
 
@@ -107,7 +102,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->Q:Lt6;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->c0:Lf7;
 
     .line 5
     .line 6
@@ -115,21 +110,21 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Lt6;->b()V
+    invoke-virtual {v0}, Lf7;->b()V
 
     .line 9
     .line 10
     .line 11
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 12
     .line 13
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 14
     .line 15
-    invoke-virtual {v0}, Lk18;->a()V
+    invoke-virtual {p0}, Lge;->d()V
 
     .line 16
     .line 17
@@ -139,131 +134,137 @@
 .end method
 
 .method public getSupportBackgroundTintList()Landroid/content/res/ColorStateList;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->Q:Lt6;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->c0:Lf7;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lt6;->v()Landroid/content/res/ColorStateList;
+    invoke-virtual {p0}, Lf7;->v()Landroid/content/res/ColorStateList;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSupportBackgroundTintMode()Landroid/graphics/PorterDuff$Mode;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->Q:Lt6;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->c0:Lf7;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lt6;->w()Landroid/graphics/PorterDuff$Mode;
+    invoke-virtual {p0}, Lf7;->w()Landroid/graphics/PorterDuff$Mode;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSupportImageTintList()Landroid/content/res/ColorStateList;
-    .locals 2
+    .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 3
     .line 4
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 5
     .line 6
-    iget-object v1, v1, Lk18;->T:Ljava/lang/Object;
+    iget-object p0, p0, Lge;->c0:Ljava/lang/Object;
 
     .line 7
     .line 8
-    check-cast v1, Lw47;
+    check-cast p0, Lhx7;
 
     .line 9
     .line 10
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 11
     .line 12
-    iget-object v0, v1, Lw47;->a:Landroid/content/res/ColorStateList;
+    iget-object p0, p0, Lhx7;->a:Landroid/content/res/ColorStateList;
 
     .line 13
     .line 14
+    return-object p0
+
+    .line 15
     :cond_0
     return-object v0
 .end method
 
 .method public getSupportImageTintMode()Landroid/graphics/PorterDuff$Mode;
-    .locals 2
+    .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 3
     .line 4
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 5
     .line 6
-    iget-object v1, v1, Lk18;->T:Ljava/lang/Object;
+    iget-object p0, p0, Lge;->c0:Ljava/lang/Object;
 
     .line 7
     .line 8
-    check-cast v1, Lw47;
+    check-cast p0, Lhx7;
 
     .line 9
     .line 10
-    if-eqz v1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 11
     .line 12
-    iget-object v0, v1, Lw47;->b:Landroid/graphics/PorterDuff$Mode;
+    iget-object p0, p0, Lhx7;->b:Landroid/graphics/PorterDuff$Mode;
 
     .line 13
     .line 14
+    return-object p0
+
+    .line 15
     :cond_0
     return-object v0
 .end method
@@ -272,11 +273,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lk18;->S:Ljava/lang/Object;
+    iget-object v0, v0, Lge;->Z:Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -305,44 +306,44 @@
     .line 16
     .line 17
     .line 18
-    move-result v0
+    move-result p0
 
     .line 19
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 20
     .line 21
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 22
-    return v0
+    return p0
 
     .line 23
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 24
-    return v0
+    return p0
 .end method
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Landroid/widget/ImageView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-super {p0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->Q:Lt6;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->c0:Lf7;
 
     .line 5
     .line 6
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Lt6;->A()V
+    invoke-virtual {p0}, Lf7;->A()V
 
     .line 9
     .line 10
@@ -352,23 +353,23 @@
 .end method
 
 .method public setBackgroundResource(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+    invoke-super {p0, p1}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->Q:Lt6;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->c0:Lf7;
 
     .line 5
     .line 6
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Lt6;->B(I)V
+    invoke-virtual {p0, p1}, Lf7;->B(I)V
 
     .line 9
     .line 10
@@ -386,15 +387,15 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 5
     .line 6
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Lk18;->a()V
+    invoke-virtual {p0}, Lge;->d()V
 
     .line 9
     .line 10
@@ -407,7 +408,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 2
     .line 3
@@ -419,7 +420,7 @@
 
     .line 6
     .line 7
-    iget-boolean v1, p0, Landroidx/appcompat/widget/AppCompatImageView;->S:Z
+    iget-boolean v1, p0, Landroidx/appcompat/widget/AppCompatImageView;->e0:Z
 
     .line 8
     .line 9
@@ -435,7 +436,7 @@
     move-result v1
 
     .line 15
-    iput v1, v0, Lk18;->R:I
+    iput v1, v0, Lge;->Y:I
 
     .line 16
     .line 17
@@ -449,52 +450,52 @@
 
     .line 21
     .line 22
-    invoke-virtual {v0}, Lk18;->a()V
+    invoke-virtual {v0}, Lge;->d()V
 
     .line 23
     .line 24
     .line 25
-    iget-boolean p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->S:Z
+    iget-boolean p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->e0:Z
 
     .line 26
     .line 27
-    if-nez p1, :cond_1
+    if-nez p0, :cond_1
 
     .line 28
     .line 29
-    iget-object p1, v0, Lk18;->S:Ljava/lang/Object;
+    iget-object p0, v0, Lge;->Z:Ljava/lang/Object;
 
     .line 30
     .line 31
-    check-cast p1, Landroid/widget/ImageView;
+    check-cast p0, Landroid/widget/ImageView;
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     .line 34
     .line 35
     .line 36
-    move-result-object v1
+    move-result-object p1
 
     .line 37
-    if-eqz v1, :cond_1
+    if-eqz p1, :cond_1
 
     .line 38
     .line 39
-    invoke-virtual {p1}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     .line 40
     .line 41
     .line 42
-    move-result-object p1
+    move-result-object p0
 
     .line 43
-    iget v0, v0, Lk18;->R:I
+    iget p1, v0, Lge;->Y:I
 
     .line 44
     .line 45
-    invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setLevel(I)Z
+    invoke-virtual {p0, p1}, Landroid/graphics/drawable/Drawable;->setLevel(I)Z
 
     .line 46
     .line 47
@@ -515,7 +516,7 @@
     const/4 p1, 0x1
 
     .line 5
-    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->S:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->e0:Z
 
     .line 6
     .line 7
@@ -523,22 +524,22 @@
 .end method
 
 .method public setImageResource(I)V
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_2
+    if-eqz p0, :cond_2
 
     .line 4
     .line 5
-    iget-object v1, v0, Lk18;->S:Ljava/lang/Object;
+    iget-object v0, p0, Lge;->Z:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v1, Landroid/widget/ImageView;
+    check-cast v0, Landroid/widget/ImageView;
 
     .line 8
     .line 9
@@ -546,15 +547,15 @@
 
     .line 10
     .line 11
-    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 12
     .line 13
     .line 14
-    move-result-object v2
+    move-result-object v1
 
     .line 15
-    invoke-static {v2, p1}, Lub;->y(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v1, p1}, Lyl0;->u(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 16
     .line 17
@@ -566,13 +567,13 @@
 
     .line 20
     .line 21
-    invoke-static {p1}, Ldk1;->a(Landroid/graphics/drawable/Drawable;)V
+    invoke-static {p1}, Lhs1;->a(Landroid/graphics/drawable/Drawable;)V
 
     .line 22
     .line 23
     .line 24
     :cond_0
-    invoke-virtual {v1, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 25
     .line 26
@@ -584,13 +585,13 @@
     const/4 p1, 0x0
 
     .line 29
-    invoke-virtual {v1, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 30
     .line 31
     .line 32
     :goto_0
-    invoke-virtual {v0}, Lk18;->a()V
+    invoke-virtual {p0}, Lge;->d()V
 
     .line 33
     .line 34
@@ -608,15 +609,15 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 5
     .line 6
-    if-eqz p1, :cond_0
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Lk18;->a()V
+    invoke-virtual {p0}, Lge;->d()V
 
     .line 9
     .line 10
@@ -626,18 +627,18 @@
 .end method
 
 .method public setSupportBackgroundTintList(Landroid/content/res/ColorStateList;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->Q:Lt6;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->c0:Lf7;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Lt6;->K(Landroid/content/res/ColorStateList;)V
+    invoke-virtual {p0, p1}, Lf7;->L(Landroid/content/res/ColorStateList;)V
 
     .line 6
     .line 7
@@ -647,18 +648,18 @@
 .end method
 
 .method public setSupportBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->Q:Lt6;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->c0:Lf7;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Lt6;->L(Landroid/graphics/PorterDuff$Mode;)V
+    invoke-virtual {p0, p1}, Lf7;->M(Landroid/graphics/PorterDuff$Mode;)V
 
     .line 6
     .line 7
@@ -668,63 +669,63 @@
 .end method
 
 .method public setSupportImageTintList(Landroid/content/res/ColorStateList;)V
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 4
     .line 5
-    iget-object v1, v0, Lk18;->T:Ljava/lang/Object;
+    iget-object v0, p0, Lge;->c0:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v1, Lw47;
+    check-cast v0, Lhx7;
 
     .line 8
     .line 9
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
     .line 10
     .line 11
-    new-instance v1, Lw47;
+    new-instance v0, Lhx7;
 
     .line 12
     .line 13
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 14
     .line 15
     .line 16
-    iput-object v1, v0, Lk18;->T:Ljava/lang/Object;
+    iput-object v0, p0, Lge;->c0:Ljava/lang/Object;
 
     .line 17
     .line 18
     :cond_0
-    iget-object v1, v0, Lk18;->T:Ljava/lang/Object;
+    iget-object v0, p0, Lge;->c0:Ljava/lang/Object;
 
     .line 19
     .line 20
-    check-cast v1, Lw47;
+    check-cast v0, Lhx7;
 
     .line 21
     .line 22
-    iput-object p1, v1, Lw47;->a:Landroid/content/res/ColorStateList;
+    iput-object p1, v0, Lhx7;->a:Landroid/content/res/ColorStateList;
 
     .line 23
     .line 24
     const/4 p1, 0x1
 
     .line 25
-    iput-boolean p1, v1, Lw47;->d:Z
+    iput-boolean p1, v0, Lhx7;->d:Z
 
     .line 26
     .line 27
-    invoke-virtual {v0}, Lk18;->a()V
+    invoke-virtual {p0}, Lge;->d()V
 
     .line 28
     .line 29
@@ -734,63 +735,63 @@
 .end method
 
 .method public setSupportImageTintMode(Landroid/graphics/PorterDuff$Mode;)V
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatImageView;->R:Lk18;
+    iget-object p0, p0, Landroidx/appcompat/widget/AppCompatImageView;->d0:Lge;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 4
     .line 5
-    iget-object v1, v0, Lk18;->T:Ljava/lang/Object;
+    iget-object v0, p0, Lge;->c0:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v1, Lw47;
+    check-cast v0, Lhx7;
 
     .line 8
     .line 9
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
     .line 10
     .line 11
-    new-instance v1, Lw47;
+    new-instance v0, Lhx7;
 
     .line 12
     .line 13
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 14
     .line 15
     .line 16
-    iput-object v1, v0, Lk18;->T:Ljava/lang/Object;
+    iput-object v0, p0, Lge;->c0:Ljava/lang/Object;
 
     .line 17
     .line 18
     :cond_0
-    iget-object v1, v0, Lk18;->T:Ljava/lang/Object;
+    iget-object v0, p0, Lge;->c0:Ljava/lang/Object;
 
     .line 19
     .line 20
-    check-cast v1, Lw47;
+    check-cast v0, Lhx7;
 
     .line 21
     .line 22
-    iput-object p1, v1, Lw47;->b:Landroid/graphics/PorterDuff$Mode;
+    iput-object p1, v0, Lhx7;->b:Landroid/graphics/PorterDuff$Mode;
 
     .line 23
     .line 24
     const/4 p1, 0x1
 
     .line 25
-    iput-boolean p1, v1, Lw47;->c:Z
+    iput-boolean p1, v0, Lhx7;->c:Z
 
     .line 26
     .line 27
-    invoke-virtual {v0}, Lk18;->a()V
+    invoke-virtual {p0}, Lge;->d()V
 
     .line 28
     .line 29

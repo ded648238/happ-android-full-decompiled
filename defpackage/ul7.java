@@ -1,48 +1,63 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class ul7 extends tl7 {
-    public lq4[] a;
-    public String b;
-    public int c;
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.zip.GZIPInputStream;
 
-    public ul7(ul7 ul7Var) {
-        this.a = null;
-        this.c = 0;
-        this.b = ul7Var.b;
-        this.a = yr.z(ul7Var.a);
-    }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class ul7 implements gj2 {
+    public static final ul7 a = new ul7();
 
-    public lq4[] getPathData() {
-        return this.a;
-    }
-
-    public String getPathName() {
-        return this.b;
-    }
-
-    public void setPathData(lq4[] lq4VarArr) {
-        if (!yr.p(this.a, lq4VarArr)) {
-            this.a = yr.z(lq4VarArr);
-            return;
+    public final hp a(f80 f80Var) {
+        InputStream V0 = f80Var.V0();
+        ri6 ri6Var = new ri6();
+        ri6Var.a = null;
+        ri6Var.b = null;
+        ri6Var.c = false;
+        ri6Var.e = false;
+        ri6Var.f = null;
+        ri6Var.g = null;
+        ri6Var.h = false;
+        ri6Var.i = null;
+        if (!V0.markSupported()) {
+            V0 = new BufferedInputStream(V0);
         }
-        lq4[] lq4VarArr2 = this.a;
-        for (int i = 0; i < lq4VarArr.length; i++) {
-            lq4VarArr2[i].a = lq4VarArr[i].a;
-            int i2 = 0;
-            while (true) {
-                float[] fArr = lq4VarArr[i].b;
-                if (i2 < fArr.length) {
-                    lq4VarArr2[i].b[i2] = fArr[i2];
-                    i2++;
-                }
+        try {
+            V0.mark(3);
+            int read = V0.read() + (V0.read() << 8);
+            V0.reset();
+            if (read == 35615) {
+                V0 = new BufferedInputStream(new GZIPInputStream(V0));
+            }
+        } catch (IOException unused) {
+        }
+        try {
+            V0.mark(4096);
+            ri6Var.B(V0);
+            return new hp(12, ri6Var.a);
+        } finally {
+            try {
+                V0.close();
+            } catch (IOException unused2) {
             }
         }
     }
 
-    public ul7() {
-        this.a = null;
-        this.c = 0;
+    @Override // defpackage.gj2
+    public final ui2 b() {
+        return new tj2(1, n75.class, "parseSvg", "parseSvg(Lokio/BufferedSource;)Lcoil3/svg/Svg;", 1);
+    }
+
+    public final boolean equals(Object obj) {
+        if ((obj instanceof ul7) && (obj instanceof gj2)) {
+            return b().equals(((gj2) obj).b());
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return b().hashCode();
     }
 }

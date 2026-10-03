@@ -7,68 +7,82 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
-import defpackage.bb5;
-import defpackage.ea0;
-import defpackage.i95;
-import defpackage.sg2;
-import defpackage.yt0;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import defpackage.e11;
+import defpackage.it5;
+import defpackage.xt2;
+import defpackage.zu5;
 import java.util.Arrays;
 import java.util.HashMap;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public abstract class ConstraintHelper extends View {
-    public int[] Q;
-    public int R;
-    public Context S;
-    public sg2 T;
-    public String U;
-    public String V;
-    public HashMap W;
+    public int[] c0;
+    public int d0;
+    public Context e0;
+    public xt2 f0;
+    public String g0;
+    public String h0;
+    public HashMap i0;
 
     public ConstraintHelper(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.Q = new int[32];
-        this.W = new HashMap();
-        this.S = context;
+        this.c0 = new int[32];
+        this.i0 = new HashMap();
+        this.e0 = context;
         g(attributeSet);
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x004e  */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x0061  */
+    /* JADX WARN: Removed duplicated region for block: B:26:0x0071  */
+    /* JADX WARN: Removed duplicated region for block: B:29:? A[RETURN, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x0055 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
     public final void a(String str) {
-        int identifier;
-        HashMap map;
-        Context context = this.S;
+        int i;
+        HashMap hashMap;
+        Context context = this.e0;
         if (str.length() == 0 || context == null) {
             return;
         }
-        String strTrim = str.trim();
+        String trim = str.trim();
         ConstraintLayout constraintLayout = getParent() instanceof ConstraintLayout ? (ConstraintLayout) getParent() : null;
-        if (!isInEditMode() || constraintLayout == null) {
-            identifier = 0;
-        } else {
-            Object obj = (ea0.B(strTrim) && (map = constraintLayout.f0) != null && map.containsKey(strTrim)) ? constraintLayout.f0.get(strTrim) : null;
+        if (isInEditMode() && constraintLayout != null) {
+            Object obj = (trim == null || (hashMap = constraintLayout.o0) == null || !hashMap.containsKey(trim)) ? null : constraintLayout.o0.get(trim);
             if (obj instanceof Integer) {
-                identifier = ((Integer) obj).intValue();
-            } else {
-                identifier = 0;
+                i = ((Integer) obj).intValue();
+                if (i == 0 && constraintLayout != null) {
+                    i = f(constraintLayout, trim);
+                }
+                if (i == 0) {
+                    try {
+                        i = it5.class.getField(trim).getInt(null);
+                    } catch (Exception unused) {
+                    }
+                }
+                if (i == 0) {
+                    i = context.getResources().getIdentifier(trim, "id", context.getPackageName());
+                }
+                if (i == 0) {
+                    this.i0.put(Integer.valueOf(i), trim);
+                    b(i);
+                    return;
+                }
+                return;
             }
         }
-        if (identifier == 0 && constraintLayout != null) {
-            identifier = f(constraintLayout, strTrim);
+        i = 0;
+        if (i == 0) {
+            i = f(constraintLayout, trim);
         }
-        if (identifier == 0) {
-            try {
-                identifier = i95.class.getField(strTrim).getInt(null);
-            } catch (Exception unused) {
-            }
+        if (i == 0) {
         }
-        if (identifier == 0) {
-            identifier = context.getResources().getIdentifier(strTrim, "id", context.getPackageName());
+        if (i == 0) {
         }
-        if (identifier != 0) {
-            this.W.put(Integer.valueOf(identifier), strTrim);
-            b(identifier);
+        if (i == 0) {
         }
     }
 
@@ -76,22 +90,22 @@ public abstract class ConstraintHelper extends View {
         if (i == getId()) {
             return;
         }
-        int i2 = this.R + 1;
-        int[] iArr = this.Q;
+        int i2 = this.d0 + 1;
+        int[] iArr = this.c0;
         if (i2 > iArr.length) {
-            this.Q = Arrays.copyOf(iArr, iArr.length * 2);
+            this.c0 = Arrays.copyOf(iArr, iArr.length * 2);
         }
-        int[] iArr2 = this.Q;
-        int i3 = this.R;
+        int[] iArr2 = this.c0;
+        int i3 = this.d0;
         iArr2[i3] = i;
-        this.R = i3 + 1;
+        this.d0 = i3 + 1;
     }
 
     public final void c(String str) {
-        if (str.length() == 0 || this.S == null) {
+        if (str.length() == 0 || this.e0 == null) {
             return;
         }
-        String strTrim = str.trim();
+        String trim = str.trim();
         ConstraintLayout constraintLayout = getParent() instanceof ConstraintLayout ? (ConstraintLayout) getParent() : null;
         if (constraintLayout == null) {
             return;
@@ -100,7 +114,7 @@ public abstract class ConstraintHelper extends View {
         for (int i = 0; i < childCount; i++) {
             View childAt = constraintLayout.getChildAt(i);
             ViewGroup.LayoutParams layoutParams = childAt.getLayoutParams();
-            if ((layoutParams instanceof ConstraintLayout.LayoutParams) && strTrim.equals(((ConstraintLayout.LayoutParams) layoutParams).Y) && childAt.getId() != -1) {
+            if ((layoutParams instanceof ConstraintLayout.LayoutParams) && trim.equals(((ConstraintLayout.LayoutParams) layoutParams).Y) && childAt.getId() != -1) {
                 b(childAt.getId());
             }
         }
@@ -109,8 +123,8 @@ public abstract class ConstraintHelper extends View {
     public final void d(ConstraintLayout constraintLayout) {
         int visibility = getVisibility();
         float elevation = getElevation();
-        for (int i = 0; i < this.R; i++) {
-            View view = (View) constraintLayout.Q.get(this.Q[i]);
+        for (int i = 0; i < this.d0; i++) {
+            View view = (View) constraintLayout.c0.get(this.c0[i]);
             if (view != null) {
                 view.setVisibility(visibility);
                 if (elevation > 0.0f) {
@@ -122,18 +136,18 @@ public abstract class ConstraintHelper extends View {
 
     public final int f(ConstraintLayout constraintLayout, String str) {
         Resources resources;
-        String resourceEntryName;
-        if (str != null && (resources = this.S.getResources()) != null) {
+        String str2;
+        if (str != null && (resources = this.e0.getResources()) != null) {
             int childCount = constraintLayout.getChildCount();
             for (int i = 0; i < childCount; i++) {
                 View childAt = constraintLayout.getChildAt(i);
                 if (childAt.getId() != -1) {
                     try {
-                        resourceEntryName = resources.getResourceEntryName(childAt.getId());
+                        str2 = resources.getResourceEntryName(childAt.getId());
                     } catch (Resources.NotFoundException unused) {
-                        resourceEntryName = null;
+                        str2 = null;
                     }
-                    if (str.equals(resourceEntryName)) {
+                    if (str.equals(str2)) {
                         return childAt.getId();
                     }
                 }
@@ -144,48 +158,48 @@ public abstract class ConstraintHelper extends View {
 
     public void g(AttributeSet attributeSet) {
         if (attributeSet != null) {
-            TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, bb5.ConstraintLayout_Layout);
-            int indexCount = typedArrayObtainStyledAttributes.getIndexCount();
+            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, zu5.ConstraintLayout_Layout);
+            int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
-                int index = typedArrayObtainStyledAttributes.getIndex(i);
-                if (index == bb5.ConstraintLayout_Layout_constraint_referenced_ids) {
-                    String string = typedArrayObtainStyledAttributes.getString(index);
-                    this.U = string;
+                int index = obtainStyledAttributes.getIndex(i);
+                if (index == zu5.ConstraintLayout_Layout_constraint_referenced_ids) {
+                    String string = obtainStyledAttributes.getString(index);
+                    this.g0 = string;
                     setIds(string);
-                } else if (index == bb5.ConstraintLayout_Layout_constraint_referenced_tags) {
-                    String string2 = typedArrayObtainStyledAttributes.getString(index);
-                    this.V = string2;
+                } else if (index == zu5.ConstraintLayout_Layout_constraint_referenced_tags) {
+                    String string2 = obtainStyledAttributes.getString(index);
+                    this.h0 = string2;
                     setReferenceTags(string2);
                 }
             }
-            typedArrayObtainStyledAttributes.recycle();
+            obtainStyledAttributes.recycle();
         }
     }
 
     public int[] getReferencedIds() {
-        return Arrays.copyOf(this.Q, this.R);
+        return Arrays.copyOf(this.c0, this.d0);
     }
 
-    public abstract void h(yt0 yt0Var, boolean z);
+    public abstract void h(e11 e11Var, boolean z);
 
     public final void i() {
-        if (this.T == null) {
+        if (this.f0 == null) {
             return;
         }
         ViewGroup.LayoutParams layoutParams = getLayoutParams();
         if (layoutParams instanceof ConstraintLayout.LayoutParams) {
-            ((ConstraintLayout.LayoutParams) layoutParams).p0 = this.T;
+            ((ConstraintLayout.LayoutParams) layoutParams).p0 = this.f0;
         }
     }
 
     @Override // android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        String str = this.U;
+        String str = this.g0;
         if (str != null) {
             setIds(str);
         }
-        String str2 = this.V;
+        String str2 = this.h0;
         if (str2 != null) {
             setReferenceTags(str2);
         }
@@ -197,46 +211,46 @@ public abstract class ConstraintHelper extends View {
     }
 
     public void setIds(String str) {
-        this.U = str;
+        this.g0 = str;
         if (str == null) {
             return;
         }
         int i = 0;
-        this.R = 0;
+        this.d0 = 0;
         while (true) {
-            int iIndexOf = str.indexOf(44, i);
-            if (iIndexOf == -1) {
+            int indexOf = str.indexOf(44, i);
+            if (indexOf == -1) {
                 a(str.substring(i));
                 return;
             } else {
-                a(str.substring(i, iIndexOf));
-                i = iIndexOf + 1;
+                a(str.substring(i, indexOf));
+                i = indexOf + 1;
             }
         }
     }
 
     public void setReferenceTags(String str) {
-        this.V = str;
+        this.h0 = str;
         if (str == null) {
             return;
         }
         int i = 0;
-        this.R = 0;
+        this.d0 = 0;
         while (true) {
-            int iIndexOf = str.indexOf(44, i);
-            if (iIndexOf == -1) {
+            int indexOf = str.indexOf(44, i);
+            if (indexOf == -1) {
                 c(str.substring(i));
                 return;
             } else {
-                c(str.substring(i, iIndexOf));
-                i = iIndexOf + 1;
+                c(str.substring(i, indexOf));
+                i = indexOf + 1;
             }
         }
     }
 
     public void setReferencedIds(int[] iArr) {
-        this.U = null;
-        this.R = 0;
+        this.g0 = null;
+        this.d0 = 0;
         for (int i : iArr) {
             b(i);
         }
@@ -245,7 +259,7 @@ public abstract class ConstraintHelper extends View {
     @Override // android.view.View
     public final void setTag(int i, Object obj) {
         super.setTag(i, obj);
-        if (obj == null && this.U == null) {
+        if (obj == null && this.g0 == null) {
             b(i);
         }
     }

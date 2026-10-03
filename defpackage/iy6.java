@@ -1,41 +1,39 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class iy6 {
-    public final int a;
+import java.util.concurrent.atomic.AtomicBoolean;
 
-    public static String a(int i) {
-        if (i == 1) {
-            return "Ltr";
-        }
-        if (i == 2) {
-            return "Rtl";
-        }
-        if (i == 3) {
-            return "Content";
-        }
-        if (i == 4) {
-            return "ContentOrLtr";
-        }
-        if (i == 5) {
-            return "ContentOrRtl";
-        }
-        return i == Integer.MIN_VALUE ? "Unspecified" : "Invalid";
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class iy6 extends AtomicBoolean implements mk5 {
+    public final td7 X;
+    public final Object Y;
+
+    public iy6(td7 td7Var, Object obj) {
+        this.X = td7Var;
+        this.Y = obj;
     }
 
-    public final boolean equals(Object obj) {
-        if (obj instanceof iy6) {
-            return this.a == ((iy6) obj).a;
+    @Override // defpackage.mk5
+    public final void request(long j) {
+        if (j < 0) {
+            i60.p("n >= 0 required");
+            return;
         }
-        return false;
-    }
-
-    public final int hashCode() {
-        return this.a;
-    }
-
-    public final String toString() {
-        return a(this.a);
+        if (j != 0 && compareAndSet(false, true)) {
+            td7 td7Var = this.X;
+            if (td7Var.X.Y) {
+                return;
+            }
+            Object obj = this.Y;
+            try {
+                td7Var.onNext(obj);
+                if (td7Var.X.Y) {
+                    return;
+                }
+                td7Var.b();
+            } catch (Throwable th) {
+                m93.Z(th, td7Var, obj);
+            }
+        }
     }
 }

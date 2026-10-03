@@ -1,163 +1,215 @@
-.class public abstract Lzw5;
+.class public final Lzw5;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final a:Ljava/util/HashMap;
+# instance fields
+.field public a:Lpy0;
+
+.field public b:I
+
+.field public c:Lmk2;
+
+.field public d:Lxi2;
+
+.field public e:I
+
+.field public f:Lzp4;
+
+.field public g:Lmq4;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lpy0;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/16 v1, 0xa
+    .line 4
+    iput-object p1, p0, Lzw5;->a:Lpy0;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Z
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lzw5;->a:Lpy0;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_1
+
+    .line 5
+    .line 6
+    iget-object p0, p0, Lzw5;->c:Lmk2;
+
+    .line 7
+    .line 8
+    if-eqz p0, :cond_0
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Lmk2;->a()Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    move p0, v1
+
+    .line 16
+    :goto_0
+    if-eqz p0, :cond_1
+
+    .line 17
+    .line 18
+    const/4 p0, 0x1
+
+    .line 19
+    return p0
+
+    .line 20
+    :cond_1
+    return v1
+.end method
+
+.method public final b(Ljava/lang/Object;)Lla3;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lzw5;->a:Lpy0;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_1
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
+    invoke-virtual {v0, p0, p1}, Lpy0;->s(Lzw5;Ljava/lang/Object;)Lla3;
 
     .line 6
     .line 7
     .line 8
-    sput-object v0, Lzw5;->a:Ljava/util/HashMap;
+    move-result-object p0
+
+    .line 9
+    if-nez p0, :cond_0
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    return-object p0
+
+    .line 13
+    :cond_1
+    :goto_0
+    sget-object p0, Lla3;->X:Lla3;
+
+    .line 14
+    .line 15
+    return-object p0
+.end method
+
+.method public final c()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lzw5;->a:Lpy0;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v1, 0x1
+
+    .line 6
+    iput-boolean v1, v0, Lpy0;->n0:Z
+
+    .line 7
+    .line 8
+    iget-object v0, v0, Lpy0;->s0:Lha6;
 
     .line 9
     .line 10
-    const-string v1, "none"
+    invoke-virtual {v0}, Lha6;->J()V
 
     .line 11
     .line 12
-    sget-object v2, Lwy4;->Q:Lwy4;
-
     .line 13
+    :cond_0
+    const/4 v0, 0x0
+
     .line 14
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iput-object v0, p0, Lzw5;->a:Lpy0;
 
     .line 15
     .line 16
+    iput-object v0, p0, Lzw5;->f:Lzp4;
+
     .line 17
-    const-string v1, "xMinYMin"
-
     .line 18
+    iput-object v0, p0, Lzw5;->g:Lmq4;
+
     .line 19
-    sget-object v2, Lwy4;->R:Lwy4;
-
     .line 20
+    iput-object v0, p0, Lzw5;->d:Lxi2;
+
     .line 21
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 22
-    .line 23
-    .line 24
-    const-string v1, "xMidYMin"
+    return-void
+.end method
 
-    .line 25
-    .line 26
-    sget-object v2, Lwy4;->S:Lwy4;
+.method public final d(Z)V
+    .locals 1
 
-    .line 27
-    .line 28
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1
+    iget v0, p0, Lzw5;->b:I
 
-    .line 29
-    .line 30
-    .line 31
-    const-string v1, "xMaxYMin"
+    .line 2
+    .line 3
+    if-eqz p1, :cond_0
 
-    .line 32
-    .line 33
-    sget-object v2, Lwy4;->T:Lwy4;
+    .line 4
+    .line 5
+    or-int/lit8 p1, v0, 0x20
 
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 6
+    .line 7
+    goto :goto_0
 
-    .line 36
-    .line 37
-    .line 38
-    const-string v1, "xMinYMid"
+    .line 8
+    :cond_0
+    and-int/lit8 p1, v0, -0x21
 
-    .line 39
-    .line 40
-    sget-object v2, Lwy4;->U:Lwy4;
+    .line 9
+    .line 10
+    :goto_0
+    iput p1, p0, Lzw5;->b:I
 
-    .line 41
-    .line 42
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 43
-    .line 44
-    .line 45
-    const-string v1, "xMidYMid"
-
-    .line 46
-    .line 47
-    sget-object v2, Lwy4;->V:Lwy4;
-
-    .line 48
-    .line 49
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 50
-    .line 51
-    .line 52
-    const-string v1, "xMaxYMid"
-
-    .line 53
-    .line 54
-    sget-object v2, Lwy4;->W:Lwy4;
-
-    .line 55
-    .line 56
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 57
-    .line 58
-    .line 59
-    const-string v1, "xMinYMax"
-
-    .line 60
-    .line 61
-    sget-object v2, Lwy4;->X:Lwy4;
-
-    .line 62
-    .line 63
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 64
-    .line 65
-    .line 66
-    const-string v1, "xMidYMax"
-
-    .line 67
-    .line 68
-    sget-object v2, Lwy4;->Y:Lwy4;
-
-    .line 69
-    .line 70
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 71
-    .line 72
-    .line 73
-    const-string v1, "xMaxYMax"
-
-    .line 74
-    .line 75
-    sget-object v2, Lwy4;->Z:Lwy4;
-
-    .line 76
-    .line 77
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 78
-    .line 79
-    .line 80
+    .line 11
+    .line 12
     return-void
 .end method

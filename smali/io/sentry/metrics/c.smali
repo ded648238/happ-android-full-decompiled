@@ -1,6 +1,6 @@
 .class public final Lio/sentry/metrics/c;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lio/sentry/metrics/a;
@@ -8,7 +8,7 @@
 
 
 # static fields
-.field public static final Q:Lio/sentry/metrics/c;
+.field public static final X:Lio/sentry/metrics/c;
 
 
 # direct methods
@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lio/sentry/metrics/c;->Q:Lio/sentry/metrics/c;
+    sput-object v0, Lio/sentry/metrics/c;->X:Lio/sentry/metrics/c;
 
     .line 7
     .line 8
@@ -34,20 +34,23 @@
 
 
 # virtual methods
-.method public a(Lio/sentry/android/core/SentryAndroidOptions;Lsi;)Lio/sentry/metrics/a;
+.method public a(Lio/sentry/android/core/SentryAndroidOptions;Lig;)Lio/sentry/metrics/a;
     .locals 1
 
     .line 1
-    new-instance v0, Lxw5;
+    new-instance p0, Lio/sentry/logger/c;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, Lxw5;-><init>(Lio/sentry/android/core/SentryAndroidOptions;Lsi;)V
+    const/4 v0, 0x1
 
     .line 4
+    invoke-direct {p0, p1, p2, v0}, Lio/sentry/logger/c;-><init>(Lio/sentry/android/core/SentryAndroidOptions;Lig;I)V
+
     .line 5
     .line 6
-    return-object v0
+    .line 7
+    return-object p0
 .end method
 
 .method public c(J)V

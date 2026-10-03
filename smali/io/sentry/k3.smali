@@ -1,89 +1,45 @@
-.class public interface abstract Lio/sentry/k3;
+.class public final Lio/sentry/k3;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/io/Closeable;
+.implements Lio/sentry/r1;
+
+
+# static fields
+.field public static final X:Lio/sentry/k3;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lio/sentry/k3;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lio/sentry/k3;->X:Lio/sentry/k3;
+
+    .line 7
+    .line 8
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract B(Lio/sentry/ILogger;)Ljava/util/TimeZone;
-.end method
+.method public final f(Lio/sentry/android/core/SentryAndroidOptions;Lio/sentry/internal/debugmeta/c;)Lio/sentry/transport/g;
+    .locals 0
 
-.method public abstract C0()V
-.end method
+    .line 1
+    sget-object p0, Lio/sentry/transport/j;->X:Lio/sentry/transport/j;
 
-.method public abstract D()Ljava/lang/String;
-.end method
-
-.method public abstract E(Z)V
-.end method
-
-.method public abstract K(Lio/sentry/ILogger;Lio/sentry/v1;)Ljava/util/HashMap;
-.end method
-
-.method public abstract T()Ljava/lang/Double;
-.end method
-
-.method public abstract V()Ljava/lang/String;
-.end method
-
-.method public abstract Z()V
-.end method
-
-.method public abstract b0(Lio/sentry/ILogger;)Ljava/util/Date;
-.end method
-
-.method public abstract c0()Ljava/lang/Boolean;
-.end method
-
-.method public abstract hasNext()Z
-.end method
-
-.method public abstract m0()Ljava/lang/Float;
-.end method
-
-.method public abstract n()Ljava/lang/String;
-.end method
-
-.method public abstract nextDouble()D
-.end method
-
-.method public abstract nextFloat()F
-.end method
-
-.method public abstract nextInt()I
-.end method
-
-.method public abstract nextLong()J
-.end method
-
-.method public abstract o0(Lio/sentry/ILogger;Lio/sentry/v1;)Ljava/lang/Object;
-.end method
-
-.method public abstract peek()Lio/sentry/vendor/gson/stream/b;
-.end method
-
-.method public abstract r()V
-.end method
-
-.method public abstract s()Ljava/lang/Integer;
-.end method
-
-.method public abstract s0()Ljava/lang/Object;
-.end method
-
-.method public abstract t0()V
-.end method
-
-.method public abstract u(Lio/sentry/ILogger;Ljava/util/AbstractMap;Ljava/lang/String;)V
-.end method
-
-.method public abstract w()Ljava/lang/Long;
-.end method
-
-.method public abstract y0()V
-.end method
-
-.method public abstract z0(Lio/sentry/ILogger;Lio/sentry/v1;)Ljava/util/ArrayList;
+    .line 2
+    .line 3
+    return-object p0
 .end method

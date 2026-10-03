@@ -1,25 +1,24 @@
-.class public final Ljf5;
-.super Lve5;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public interface abstract Ljf5;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# instance fields
-.field public final b:Ljava/lang/Enum;
+# static fields
+.field public static final a:Lpx3;
 
 
 # direct methods
-.method public constructor <init>(Lha4;Ljava/lang/Enum;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, Lve5;-><init>(Lha4;)V
+    sget-object v0, Lpx3;->t0:Lpx3;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p2, p0, Ljf5;->b:Ljava/lang/Enum;
+    sput-object v0, Ljf5;->a:Lpx3;
 
+    .line 4
     .line 5
-    .line 6
     return-void
 .end method

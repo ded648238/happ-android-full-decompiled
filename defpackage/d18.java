@@ -1,72 +1,91 @@
 package defpackage;
 
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import java.util.Arrays;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class d18 extends a17 {
+    public final a17 e;
+    public final boolean f;
+    public final boolean g;
+    public mi2 h;
+    public final long i;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class d18 {
-    public static final Uri d = new Uri.Builder().scheme("content").authority("com.google.android.gms.chimera").build();
-    public final String a;
-    public final String b;
-    public final boolean c;
-
-    public d18(String str, boolean z) {
-        l14.p(str);
-        this.a = str;
-        l14.p("com.google.android.gms");
-        this.b = "com.google.android.gms";
-        this.c = z;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d18(a17 a17Var, mi2 mi2Var, boolean z, boolean z2) {
+        super(0L, f17.d0);
+        mi2 e;
+        fk6 fk6Var = i17.a;
+        this.e = a17Var;
+        this.f = z;
+        this.g = z2;
+        this.h = i17.k(mi2Var, (a17Var == null || (e = a17Var.e()) == null) ? i17.j.e : e, z);
+        this.i = wv7.c();
     }
 
-    public final Intent a(Context context) {
-        Bundle bundleCall;
-        Intent intent = null;
-        String str = this.a;
-        if (str == null) {
-            return new Intent().setComponent(null);
+    @Override // defpackage.a17
+    public final void c() {
+        a17 a17Var;
+        this.c = true;
+        if (!this.g || (a17Var = this.e) == null) {
+            return;
         }
-        if (this.c) {
-            Bundle bundle = new Bundle();
-            bundle.putString("serviceActionBundleKey", str);
-            try {
-                bundleCall = context.getContentResolver().call(d, "serviceIntentCall", (String) null, bundle);
-            } catch (IllegalArgumentException e) {
-                "Dynamic intent resolution failed: ".concat(e.toString());
-                bundleCall = null;
-            }
-            intent = bundleCall != null ? (Intent) bundleCall.getParcelable("serviceResponseIntentKey") : null;
-            if (intent == null) {
-                "Dynamic lookup for intent failed for action: ".concat(String.valueOf(str));
-            }
-        }
-        return intent == null ? new Intent(str).setPackage(this.b) : intent;
+        a17Var.c();
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof d18)) {
-            return false;
-        }
-        d18 d18Var = (d18) obj;
-        return vs0.C(this.a, d18Var.a) && vs0.C(this.b, d18Var.b) && vs0.C(null, null) && this.c == d18Var.c;
+    @Override // defpackage.a17
+    public final f17 d() {
+        return v().d();
     }
 
-    public final int hashCode() {
-        return Arrays.hashCode(new Object[]{this.a, this.b, null, 4225, Boolean.valueOf(this.c)});
+    @Override // defpackage.a17
+    public final mi2 e() {
+        return this.h;
     }
 
-    public final String toString() {
-        String str = this.a;
-        if (str != null) {
-            return str;
-        }
-        l14.s(null);
+    @Override // defpackage.a17
+    public final boolean f() {
+        return v().f();
+    }
+
+    @Override // defpackage.a17
+    public final long g() {
+        return v().g();
+    }
+
+    @Override // defpackage.a17
+    public final mi2 i() {
+        return null;
+    }
+
+    @Override // defpackage.a17
+    public final void k() {
+        h31.w0();
         throw null;
+    }
+
+    @Override // defpackage.a17
+    public final void l() {
+        h31.w0();
+        throw null;
+    }
+
+    @Override // defpackage.a17
+    public final void m() {
+        v().m();
+    }
+
+    @Override // defpackage.a17
+    public final void n(v57 v57Var) {
+        v().n(v57Var);
+    }
+
+    @Override // defpackage.a17
+    public final a17 u(mi2 mi2Var) {
+        mi2 k = i17.k(mi2Var, this.h, true);
+        return !this.f ? i17.g(v().u(null), k, true) : v().u(k);
+    }
+
+    public final a17 v() {
+        a17 a17Var = this.e;
+        return a17Var == null ? i17.j : a17Var;
     }
 }

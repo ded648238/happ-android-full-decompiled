@@ -1,76 +1,51 @@
-.class public final Le80;
-.super Lvr0;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public interface abstract Le80;
+.super Ljava/lang/Object;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# instance fields
-.field public final b:Lh42;
-
-.field public final c:Llp4;
-
-
-# direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-direct {p0, p1}, Lvr0;-><init>(Ljava/util/List;)V
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-super {p0}, Lvr0;->a()Lh42;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    iput-object p1, p0, Le80;->b:Lh42;
-
-    .line 12
-    .line 13
-    invoke-super {p0}, Lvr0;->b()Llp4;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    iput-object p1, p0, Le80;->c:Llp4;
-
-    .line 18
-    .line 19
-    return-void
-.end method
+# interfaces
+.implements Lqy6;
+.implements Ljava/nio/channels/WritableByteChannel;
 
 
 # virtual methods
-.method public final a()Lh42;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Le80;->b:Lh42;
-
-    .line 2
-    .line 3
-    return-object v0
+.method public abstract L0(II[B)Le80;
 .end method
 
-.method public final b()Llp4;
-    .locals 1
+.method public abstract M(Ld27;)J
+.end method
 
-    .line 1
-    iget-object v0, p0, Le80;->c:Llp4;
+.method public abstract M0(Lo90;)Le80;
+.end method
 
-    .line 2
-    .line 3
-    return-object v0
+.method public abstract O()Le80;
+.end method
+
+.method public abstract R0(J)Le80;
+.end method
+
+.method public abstract d()Ll70;
+.end method
+
+.method public abstract e0(Ljava/lang/String;)Le80;
+.end method
+
+.method public abstract flush()V
+.end method
+
+.method public abstract o0(J)Le80;
+.end method
+
+.method public abstract u()Le80;
+.end method
+
+.method public abstract write([B)Le80;
+.end method
+
+.method public abstract writeByte(I)Le80;
+.end method
+
+.method public abstract writeInt(I)Le80;
+.end method
+
+.method public abstract writeShort(I)Le80;
 .end method

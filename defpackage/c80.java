@@ -1,24 +1,17 @@
 package defpackage;
 
-import java.lang.ref.SoftReference;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class c80 extends tj2 implements xi2 {
+    public static final c80 X = new c80(2, d80.class, "createSegment", "createSegment(JLkotlinx/coroutines/channels/ChannelSegment;)Lkotlinx/coroutines/channels/ChannelSegment;", 1);
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class c80 extends d80 {
-    public volatile SoftReference b;
-
-    @Override // defpackage.d80
-    public final Object a() {
-        return this.b.get();
-    }
-
-    @Override // defpackage.d80
-    public final synchronized Object b(Object obj) {
-        Object obj2 = this.b.get();
-        if (obj2 != null) {
-            return obj2;
-        }
-        this.b = new SoftReference(obj);
-        return obj;
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        long longValue = ((Number) obj).longValue();
+        un0 un0Var = (un0) obj2;
+        un0 un0Var2 = d80.a;
+        b80 b80Var = un0Var.f0;
+        b80Var.getClass();
+        return new un0(longValue, un0Var, b80Var, 0);
     }
 }

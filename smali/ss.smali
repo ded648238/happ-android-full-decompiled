@@ -1,15 +1,16 @@
-.class public abstract synthetic Lss;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final Lss;
+.super Lm34;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
-# static fields
-.field public static final synthetic Q:I
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 0
 
-.field public static final synthetic R:I
+    .line 1
+    const-string p0, "kotlin.collections.ArrayList"
 
-.field public static final synthetic S:I
-
-.field public static final synthetic T:I
-
-.field public static final synthetic U:I
+    .line 2
+    .line 3
+    return-object p0
+.end method

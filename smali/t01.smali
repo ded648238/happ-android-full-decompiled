@@ -1,127 +1,566 @@
 .class public final Lt01;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+
+# static fields
+.field public static final j:Landroid/util/SparseIntArray;
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public a:I
 
-.field public final b:Ljava/lang/String;
+.field public b:I
 
-.field public final c:Los6;
+.field public c:I
 
-.field public final d:Lsb4;
+.field public d:F
 
-.field public final e:Ljava/util/List;
+.field public e:F
 
-.field public final f:Z
+.field public f:F
 
-.field public final g:I
+.field public g:I
 
-.field public final h:Ljava/util/concurrent/Executor;
+.field public h:Ljava/lang/String;
 
-.field public final i:Ljava/util/concurrent/Executor;
-
-.field public final j:Z
-
-.field public final k:Z
-
-.field public final l:Ljava/util/Set;
+.field public i:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Los6;Lsb4;Ljava/util/List;ZILjava/util/concurrent/Executor;Ljava/util/concurrent/Executor;ZZLjava/util/Set;Ljava/util/List;Ljava/util/List;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v0, Landroid/util/SparseIntArray;
 
     .line 2
     .line 3
-    .line 4
-    if-eqz p7, :cond_0
+    invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    invoke-virtual {p8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sput-object v0, Lt01;->j:Landroid/util/SparseIntArray;
 
     .line 7
     .line 8
+    sget v1, Lzu5;->Motion_motionPathRotate:I
+
     .line 9
-    invoke-virtual {p9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 10
-    .line 11
-    .line 12
-    invoke-virtual {p13}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v2, 0x1
 
+    .line 11
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 12
     .line 13
     .line 14
+    sget v1, Lzu5;->Motion_pathMotionArc:I
+
     .line 15
-    invoke-virtual {p14}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 16
+    const/4 v2, 0x2
+
+    .line 17
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 18
+    .line 19
+    .line 20
+    sget v1, Lzu5;->Motion_transitionEasing:I
+
+    .line 21
+    .line 22
+    const/4 v2, 0x3
+
+    .line 23
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 24
+    .line 25
+    .line 26
+    sget v1, Lzu5;->Motion_drawPath:I
+
+    .line 27
+    .line 28
+    const/4 v2, 0x4
+
+    .line 29
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 30
+    .line 31
+    .line 32
+    sget v1, Lzu5;->Motion_animateRelativeTo:I
+
+    .line 33
+    .line 34
+    const/4 v2, 0x5
+
+    .line 35
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 36
+    .line 37
+    .line 38
+    sget v1, Lzu5;->Motion_animateCircleAngleTo:I
+
+    .line 39
+    .line 40
+    const/4 v2, 0x6
+
+    .line 41
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 42
+    .line 43
+    .line 44
+    sget v1, Lzu5;->Motion_motionStagger:I
+
+    .line 45
+    .line 46
+    const/4 v2, 0x7
+
+    .line 47
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 48
+    .line 49
+    .line 50
+    sget v1, Lzu5;->Motion_quantizeMotionSteps:I
+
+    .line 51
+    .line 52
+    const/16 v2, 0x8
+
+    .line 53
+    .line 54
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 55
+    .line 56
+    .line 57
+    sget v1, Lzu5;->Motion_quantizeMotionPhase:I
+
+    .line 58
+    .line 59
+    const/16 v2, 0x9
+
+    .line 60
+    .line 61
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 62
+    .line 63
+    .line 64
+    sget v1, Lzu5;->Motion_quantizeMotionInterpolator:I
+
+    .line 65
+    .line 66
+    const/16 v2, 0xa
+
+    .line 67
+    .line 68
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 69
+    .line 70
+    .line 71
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 7
+
+    .line 1
+    sget-object v0, Lzu5;->Motion:[I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->getIndexCount()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p2
+
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    move v1, v0
+
+    .line 13
+    :goto_0
+    if-ge v1, p2, :cond_4
+
+    .line 14
+    .line 15
+    invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getIndex(I)I
 
     .line 16
     .line 17
     .line 18
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result v2
 
     .line 19
+    sget-object v3, Lt01;->j:Landroid/util/SparseIntArray;
+
     .line 20
     .line 21
-    iput-object p1, p0, Lt01;->a:Landroid/content/Context;
+    invoke-virtual {v3, v2}, Landroid/util/SparseIntArray;->get(I)I
 
     .line 22
     .line 23
-    iput-object p2, p0, Lt01;->b:Ljava/lang/String;
-
     .line 24
+    move-result v3
+
     .line 25
-    iput-object p3, p0, Lt01;->c:Los6;
+    const/4 v4, 0x3
 
     .line 26
-    .line 27
-    iput-object p4, p0, Lt01;->d:Lsb4;
+    packed-switch v3, :pswitch_data_0
 
+    .line 27
     .line 28
     .line 29
-    iput-object p5, p0, Lt01;->e:Ljava/util/List;
+    goto/16 :goto_1
 
     .line 30
     .line 31
-    iput-boolean p6, p0, Lt01;->f:Z
+    :pswitch_0
+    invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
 
     .line 32
     .line 33
-    iput p7, p0, Lt01;->g:I
-
     .line 34
+    move-result-object v3
+
     .line 35
-    iput-object p8, p0, Lt01;->h:Ljava/util/concurrent/Executor;
+    iget v3, v3, Landroid/util/TypedValue;->type:I
 
     .line 36
     .line 37
-    iput-object p9, p0, Lt01;->i:Ljava/util/concurrent/Executor;
+    const/4 v5, -0x1
 
     .line 38
+    const/4 v6, 0x1
+
     .line 39
-    iput-boolean p10, p0, Lt01;->j:Z
+    if-ne v3, v6, :cond_0
 
     .line 40
     .line 41
-    iput-boolean p11, p0, Lt01;->k:Z
+    invoke-virtual {p1, v2, v5}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     .line 42
     .line 43
-    iput-object p12, p0, Lt01;->l:Ljava/util/Set;
-
     .line 44
+    move-result v2
+
     .line 45
-    return-void
+    iput v2, p0, Lt01;->i:I
 
     .line 46
-    :cond_0
-    const/4 p1, 0x0
-
     .line 47
-    throw p1
+    goto/16 :goto_1
+
+    .line 48
+    .line 49
+    :cond_0
+    if-ne v3, v4, :cond_1
+
+    .line 50
+    .line 51
+    invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v3
+
+    .line 55
+    iput-object v3, p0, Lt01;->h:Ljava/lang/String;
+
+    .line 56
+    .line 57
+    const-string v4, "/"
+
+    .line 58
+    .line 59
+    invoke-virtual {v3, v4}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+
+    .line 60
+    .line 61
+    .line 62
+    move-result v3
+
+    .line 63
+    if-lez v3, :cond_3
+
+    .line 64
+    .line 65
+    invoke-virtual {p1, v2, v5}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v2
+
+    .line 69
+    iput v2, p0, Lt01;->i:I
+
+    .line 70
+    .line 71
+    goto :goto_1
+
+    .line 72
+    :cond_1
+    iget v3, p0, Lt01;->i:I
+
+    .line 73
+    .line 74
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInteger(II)I
+
+    .line 75
+    .line 76
+    .line 77
+    goto :goto_1
+
+    .line 78
+    :pswitch_1
+    iget v3, p0, Lt01;->f:F
+
+    .line 79
+    .line 80
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    .line 81
+    .line 82
+    .line 83
+    move-result v2
+
+    .line 84
+    iput v2, p0, Lt01;->f:F
+
+    .line 85
+    .line 86
+    goto :goto_1
+
+    .line 87
+    :pswitch_2
+    iget v3, p0, Lt01;->g:I
+
+    .line 88
+    .line 89
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInteger(II)I
+
+    .line 90
+    .line 91
+    .line 92
+    move-result v2
+
+    .line 93
+    iput v2, p0, Lt01;->g:I
+
+    .line 94
+    .line 95
+    goto :goto_1
+
+    .line 96
+    :pswitch_3
+    iget v3, p0, Lt01;->d:F
+
+    .line 97
+    .line 98
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    .line 99
+    .line 100
+    .line 101
+    move-result v2
+
+    .line 102
+    iput v2, p0, Lt01;->d:F
+
+    .line 103
+    .line 104
+    goto :goto_1
+
+    .line 105
+    :pswitch_4
+    iget v3, p0, Lt01;->b:I
+
+    .line 106
+    .line 107
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInteger(II)I
+
+    .line 108
+    .line 109
+    .line 110
+    move-result v2
+
+    .line 111
+    iput v2, p0, Lt01;->b:I
+
+    .line 112
+    .line 113
+    goto :goto_1
+
+    .line 114
+    :pswitch_5
+    iget v3, p0, Lt01;->a:I
+
+    .line 115
+    .line 116
+    invoke-static {p1, v2, v3}, Landroidx/constraintlayout/widget/d;->f(Landroid/content/res/TypedArray;II)I
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v2
+
+    .line 120
+    iput v2, p0, Lt01;->a:I
+
+    .line 121
+    .line 122
+    goto :goto_1
+
+    .line 123
+    :pswitch_6
+    invoke-virtual {p1, v2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 124
+    .line 125
+    .line 126
+    goto :goto_1
+
+    .line 127
+    :pswitch_7
+    invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
+
+    .line 128
+    .line 129
+    .line 130
+    move-result-object v3
+
+    .line 131
+    iget v3, v3, Landroid/util/TypedValue;->type:I
+
+    .line 132
+    .line 133
+    if-ne v3, v4, :cond_2
+
+    .line 134
+    .line 135
+    invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+
+    .line 136
+    .line 137
+    .line 138
+    goto :goto_1
+
+    .line 139
+    :cond_2
+    sget-object v3, Lmq8;->b:[Ljava/lang/String;
+
+    .line 140
+    .line 141
+    invoke-virtual {p1, v2, v0}, Landroid/content/res/TypedArray;->getInteger(II)I
+
+    .line 142
+    .line 143
+    .line 144
+    move-result v2
+
+    .line 145
+    aget-object v2, v3, v2
+
+    .line 146
+    .line 147
+    goto :goto_1
+
+    .line 148
+    :pswitch_8
+    iget v3, p0, Lt01;->c:I
+
+    .line 149
+    .line 150
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 151
+    .line 152
+    .line 153
+    move-result v2
+
+    .line 154
+    iput v2, p0, Lt01;->c:I
+
+    .line 155
+    .line 156
+    goto :goto_1
+
+    .line 157
+    :pswitch_9
+    iget v3, p0, Lt01;->e:F
+
+    .line 158
+    .line 159
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    .line 160
+    .line 161
+    .line 162
+    move-result v2
+
+    .line 163
+    iput v2, p0, Lt01;->e:F
+
+    .line 164
+    .line 165
+    :cond_3
+    :goto_1
+    add-int/lit8 v1, v1, 0x1
+
+    .line 166
+    .line 167
+    goto/16 :goto_0
+
+    .line 168
+    .line 169
+    :cond_4
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 170
+    .line 171
+    .line 172
+    return-void
+
+    .line 173
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

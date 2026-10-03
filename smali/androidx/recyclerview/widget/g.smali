@@ -1,6 +1,6 @@
 .class public abstract Landroidx/recyclerview/widget/g;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # virtual methods
@@ -13,26 +13,26 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p2
+    move-result-object p0
 
     .line 5
-    check-cast p2, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
+    check-cast p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
 
     .line 6
     .line 7
-    iget-object p2, p2, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->Q:Landroidx/recyclerview/widget/l;
+    iget-object p0, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;->X:Landroidx/recyclerview/widget/l;
 
     .line 8
     .line 9
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 10
     .line 11
     .line 12
-    const/4 p2, 0x0
+    const/4 p0, 0x0
 
     .line 13
-    invoke-virtual {p1, p2, p2, p2, p2}, Landroid/graphics/Rect;->set(IIII)V
+    invoke-virtual {p1, p0, p0, p0, p0}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 14
     .line 15

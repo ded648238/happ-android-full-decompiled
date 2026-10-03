@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -20,7 +20,7 @@
         "<init>",
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
         "res",
-        "Lbh7;",
+        "Lr98;",
         "setTitle",
         "(I)V",
         "setTitleColor",
@@ -28,7 +28,7 @@
         "",
         "handle",
         "setOnToggleClickListener",
-        "(Lj72;)V",
+        "(Lmi2;)V",
         "setDescription",
         "",
         "value",
@@ -59,15 +59,15 @@
 
 
 # static fields
-.field public static final synthetic T:I
+.field public static final synthetic f0:I
 
 
 # instance fields
-.field public final Q:Landroid/widget/TextView;
+.field public final c0:Landroid/widget/TextView;
 
-.field public final R:Landroidx/appcompat/widget/SwitchCompat;
+.field public final d0:Landroidx/appcompat/widget/SwitchCompat;
 
-.field public final S:Landroid/widget/TextView;
+.field public final e0:Landroid/widget/TextView;
 
 
 # direct methods
@@ -78,7 +78,7 @@
 
     const/4 v0, 0x0
 
-    .line 97
+    .line 96
     invoke-direct {p0, p1, p2, v0}, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -124,7 +124,7 @@
     move-result-object v0
 
     .line 21
-    sget v1, Lt95;->happ_toggle_field:I
+    sget v1, Ltt5;->happ_toggle_field:I
 
     .line 22
     .line 23
@@ -133,7 +133,7 @@
     .line 24
     .line 25
     .line 26
-    sget p3, Ld95;->tv_toggle_field:I
+    sget p3, Let5;->tv_toggle_field:I
 
     .line 27
     .line 28
@@ -154,11 +154,11 @@
 
     .line 36
     .line 37
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->Q:Landroid/widget/TextView;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->c0:Landroid/widget/TextView;
 
     .line 38
     .line 39
-    sget p3, Ld95;->switch_toggle_field:I
+    sget p3, Let5;->switch_toggle_field:I
 
     .line 40
     .line 41
@@ -179,11 +179,11 @@
 
     .line 49
     .line 50
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->R:Landroidx/appcompat/widget/SwitchCompat;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->d0:Landroidx/appcompat/widget/SwitchCompat;
 
     .line 51
     .line 52
-    sget p3, Ld95;->tv_toggle_description:I
+    sget p3, Let5;->tv_toggle_description:I
 
     .line 53
     .line 54
@@ -204,7 +204,7 @@
 
     .line 62
     .line 63
-    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->S:Landroid/widget/TextView;
+    iput-object p3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->e0:Landroid/widget/TextView;
 
     .line 64
     .line 65
@@ -212,7 +212,7 @@
 
     .line 66
     .line 67
-    sget-object p3, Lxa5;->HappToggleField:[I
+    sget-object p3, Lwu5;->HappToggleField:[I
 
     .line 68
     .line 69
@@ -229,132 +229,131 @@
     .line 74
     .line 75
     .line 76
-    new-instance p3, Lj9;
+    new-instance p3, Lqr2;
 
     .line 77
     .line 78
-    const/16 v0, 0x18
+    const/4 v0, 0x4
 
     .line 79
-    .line 80
-    invoke-direct {p3, v0, p0, p1}, Lj9;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p3, v0, p0, p1}, Lqr2;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
+    .line 80
     .line 81
     .line 82
-    .line 83
-    invoke-static {p2, p3}, Ll47;->h(Landroid/content/res/TypedArray;Lj72;)V
+    invoke-static {p2, p3}, Lbw7;->d(Landroid/content/res/TypedArray;Lmi2;)V
 
+    .line 83
     .line 84
     .line 85
-    .line 86
     :cond_0
-    new-instance p1, Lqk0;
+    new-instance p1, Lpr0;
 
+    .line 86
     .line 87
-    .line 88
     const/16 p2, 0x9
 
+    .line 88
     .line 89
-    .line 90
-    invoke-direct {p1, p2, p0}, Lqk0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lpr0;-><init>(ILjava/lang/Object;)V
 
+    .line 90
     .line 91
     .line 92
-    .line 93
     invoke-virtual {p0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 93
     .line 94
     .line 95
-    .line 96
     return-void
 .end method
 
 
 # virtual methods
 .method public final getDescription()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->S:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->e0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object p0
 
     .line 13
-    return-object v0
+    return-object p0
 
     .line 14
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 15
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getTitle()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->c0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public final setActive(Z)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->R:Landroidx/appcompat/widget/SwitchCompat;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->d0:Landroidx/appcompat/widget/SwitchCompat;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
     .line 7
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Landroid/view/View;->setClickable(Z)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setClickable(Z)V
 
     .line 10
     .line 11
@@ -363,26 +362,26 @@
 .end method
 
 .method public final setChecked(Z)V
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->R:Landroidx/appcompat/widget/SwitchCompat;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->d0:Landroidx/appcompat/widget/SwitchCompat;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {p0}, Landroid/widget/CompoundButton;->isChecked()Z
 
     .line 4
     .line 5
     .line 6
-    move-result v1
+    move-result v0
 
     .line 7
-    if-eq v1, p1, :cond_0
+    if-eq v0, p1, :cond_0
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
+    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
 
     .line 10
     .line 11
@@ -392,18 +391,18 @@
 .end method
 
 .method public final setDescription(I)V
-    .locals 1
+    .locals 0
 
     .line 18
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->S:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->e0:Landroid/widget/TextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
 
 .method public final setDescription(Ljava/lang/String;)V
-    .locals 4
+    .locals 3
 
     .line 1
     const/4 v0, 0x0
@@ -420,7 +419,7 @@
 
     .line 6
     :cond_0
-    const/4 v1, 0x0
+    move v1, v0
 
     .line 7
     :goto_0
@@ -428,16 +427,16 @@
 
     .line 8
     .line 9
-    iget-object v3, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->S:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->e0:Landroid/widget/TextView;
 
     .line 10
     .line 11
-    invoke-static {v2, v3, v1, v0}, Lw97;->h(ILandroid/view/View;ZZ)V
+    invoke-static {v2, p0, v1, v0}, Lb18;->h(ILandroid/view/View;ZZ)V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v3, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 15
     .line 16
@@ -445,12 +444,12 @@
     return-void
 .end method
 
-.method public final setOnToggleClickListener(Lj72;)V
+.method public final setOnToggleClickListener(Lmi2;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lj72;",
+            "Lmi2;",
             ")V"
         }
     .end annotation
@@ -461,23 +460,23 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ldd1;
+    new-instance v0, Lwk1;
 
     .line 5
     .line 6
     const/4 v1, 0x4
 
     .line 7
-    invoke-direct {v0, v1, p0, p1}, Ldd1;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, p0, p1}, Lwk1;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 8
     .line 9
     .line 10
-    iget-object p1, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->R:Landroidx/appcompat/widget/SwitchCompat;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->d0:Landroidx/appcompat/widget/SwitchCompat;
 
     .line 11
     .line 12
-    invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 13
     .line 14
@@ -486,18 +485,18 @@
 .end method
 
 .method public final setTitle(I)V
-    .locals 1
+    .locals 0
 
     .line 10
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->c0:Landroid/widget/TextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     return-void
 .end method
 
 .method public final setTitle(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -505,11 +504,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->c0:Landroid/widget/TextView;
 
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 7
     .line 8
@@ -518,14 +517,14 @@
 .end method
 
 .method public final setTitleColor(I)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->c0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Ltv3;->W(Landroid/widget/TextView;I)V
+    invoke-static {p0, p1}, Lih4;->X(Landroid/widget/TextView;I)V
 
     .line 4
     .line 5
@@ -534,14 +533,14 @@
 .end method
 
 .method public final setToggleEnabled(Z)V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->R:Landroidx/appcompat/widget/SwitchCompat;
+    iget-object p0, p0, Lsu/happ/proxyutility/ui/foundation/component/HappToggleField;->d0:Landroidx/appcompat/widget/SwitchCompat;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
     .line 4
     .line 5

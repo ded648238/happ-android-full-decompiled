@@ -1,6 +1,6 @@
 .class public Lokhttp3/Request$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -242,7 +242,7 @@
     move-result-object v0
 
     .line 52
-    invoke-static {v0}, Lxy3;->t1(Ljava/util/Map;)Ljava/util/LinkedHashMap;
+    invoke-static {v0}, Luf4;->j0(Ljava/util/Map;)Ljava/util/LinkedHashMap;
 
     .line 53
     .line 54
@@ -315,7 +315,7 @@
 
     .line 15
     .line 16
-    invoke-static {p0}, Lfn;->l(Ljava/lang/String;)V
+    invoke-static {p0}, Lra;->g(Ljava/lang/String;)V
 
     .line 17
     .line 18
@@ -386,11 +386,11 @@
 
     .line 14
     .line 15
-    iget-object v0, p0, Lokhttp3/Request$Builder;->tags:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Request$Builder;->tags:Ljava/util/Map;
 
     .line 16
     .line 17
-    invoke-static {v0}, Lokhttp3/internal/Util;->toImmutableMap(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {p0}, Lokhttp3/internal/Util;->toImmutableMap(Ljava/util/Map;)Ljava/util/Map;
 
     .line 18
     .line 19
@@ -411,19 +411,19 @@
 
     .line 27
     :cond_0
-    const-string v0, "url == null"
+    const-string p0, "url == null"
 
     .line 28
     .line 29
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 30
     .line 31
     .line 32
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 33
-    return-object v0
+    return-object p0
 .end method
 
 .method public cacheControl(Lokhttp3/CacheControl;)Lokhttp3/Request$Builder;
@@ -464,10 +464,10 @@
     .line 17
     .line 18
     .line 19
-    move-result-object p1
+    move-result-object p0
 
     .line 20
-    return-object p1
+    return-object p0
 
     .line 21
     :cond_0
@@ -476,10 +476,10 @@
     .line 22
     .line 23
     .line 24
-    move-result-object p1
+    move-result-object p0
 
     .line 25
-    return-object p1
+    return-object p0
 .end method
 
 .method public final delete()Lokhttp3/Request$Builder;
@@ -497,10 +497,10 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public delete(Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
@@ -511,9 +511,9 @@
 
     invoke-virtual {p0, v0, p1}, Lokhttp3/Request$Builder;->method(Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public get()Lokhttp3/Request$Builder;
@@ -532,47 +532,47 @@
     .line 5
     .line 6
     .line 7
-    move-result-object v0
+    move-result-object p0
 
     .line 8
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getBody$okhttp()Lokhttp3/RequestBody;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request$Builder;->body:Lokhttp3/RequestBody;
+    iget-object p0, p0, Lokhttp3/Request$Builder;->body:Lokhttp3/RequestBody;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getHeaders$okhttp()Lokhttp3/Headers$Builder;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request$Builder;->headers:Lokhttp3/Headers$Builder;
+    iget-object p0, p0, Lokhttp3/Request$Builder;->headers:Lokhttp3/Headers$Builder;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getMethod$okhttp()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request$Builder;->method:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/Request$Builder;->method:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getTags$okhttp()Ljava/util/Map;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -585,22 +585,22 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request$Builder;->tags:Ljava/util/Map;
+    iget-object p0, p0, Lokhttp3/Request$Builder;->tags:Ljava/util/Map;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final getUrl$okhttp()Lokhttp3/HttpUrl;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/Request$Builder;->url:Lokhttp3/HttpUrl;
+    iget-object p0, p0, Lokhttp3/Request$Builder;->url:Lokhttp3/HttpUrl;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public head()Lokhttp3/Request$Builder;
@@ -619,10 +619,10 @@
     .line 5
     .line 6
     .line 7
-    move-result-object v0
+    move-result-object p0
 
     .line 8
-    return-object v0
+    return-object p0
 .end method
 
 .method public header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
@@ -723,19 +723,19 @@
 
     .line 22
     :cond_0
-    const-string p2, " must have a request body."
+    const-string p0, " must have a request body."
 
     .line 23
     .line 24
-    invoke-static {v0, p1, p2}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, p0}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 25
     .line 26
     .line 27
-    move-result-object p1
+    move-result-object p0
 
     .line 28
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 29
     .line 30
@@ -769,19 +769,19 @@
 
     .line 43
     :cond_2
-    const-string p2, " must not have a request body."
+    const-string p0, " must not have a request body."
 
     .line 44
     .line 45
-    invoke-static {v0, p1, p2}, Lkd0;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, p0}, Lc73;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 46
     .line 47
     .line 48
-    move-result-object p1
+    move-result-object p0
 
     .line 49
-    invoke-static {p1}, Lmh7;->c(Ljava/lang/Object;)V
+    invoke-static {p0}, Lco6;->g(Ljava/lang/Object;)V
 
     .line 50
     .line 51
@@ -790,11 +790,11 @@
 
     .line 53
     :cond_3
-    const-string p1, "method.isEmpty() == true"
+    const-string p0, "method.isEmpty() == true"
 
     .line 54
     .line 55
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 56
     .line 57
@@ -820,10 +820,10 @@
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public post(Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
@@ -844,10 +844,10 @@
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public put(Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
@@ -868,10 +868,10 @@
     .line 7
     .line 8
     .line 9
-    move-result-object p1
+    move-result-object p0
 
     .line 10
-    return-object p1
+    return-object p0
 .end method
 
 .method public removeHeader(Ljava/lang/String;)Lokhttp3/Request$Builder;
@@ -1070,9 +1070,9 @@
 
     invoke-virtual {p0, v0, p1}, Lokhttp3/Request$Builder;->tag(Ljava/lang/Class;Ljava/lang/Object;)Lokhttp3/Request$Builder;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public url(Ljava/lang/String;)Lokhttp3/Request$Builder;
@@ -1091,7 +1091,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1, v0, v1}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 8
     .line 9
@@ -1134,7 +1134,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1, v0, v1}, Lzl6;->g0(Ljava/lang/String;ZLjava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lla7;->H0(Ljava/lang/String;ZLjava/lang/String;)Z
 
     .line 28
     .line 29
@@ -1188,10 +1188,10 @@
     .line 51
     .line 52
     .line 53
-    move-result-object p1
+    move-result-object p0
 
     .line 54
-    return-object p1
+    return-object p0
 .end method
 
 .method public url(Ljava/net/URL;)Lokhttp3/Request$Builder;
@@ -1214,9 +1214,9 @@
 
     invoke-virtual {p0, p1}, Lokhttp3/Request$Builder;->url(Lokhttp3/HttpUrl;)Lokhttp3/Request$Builder;
 
-    move-result-object p1
+    move-result-object p0
 
-    return-object p1
+    return-object p0
 .end method
 
 .method public url(Lokhttp3/HttpUrl;)Lokhttp3/Request$Builder;

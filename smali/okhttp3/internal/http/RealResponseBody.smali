@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/http/RealResponseBody;
 .super Lokhttp3/ResponseBody;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -15,18 +15,18 @@
         "contentTypeString",
         "",
         "contentLength",
-        "Ls50;",
+        "Lf80;",
         "source",
         "<init>",
-        "(Ljava/lang/String;JLs50;)V",
+        "(Ljava/lang/String;JLf80;)V",
         "()J",
         "Lokhttp3/MediaType;",
         "contentType",
         "()Lokhttp3/MediaType;",
-        "()Ls50;",
+        "()Lf80;",
         "Ljava/lang/String;",
         "J",
-        "Ls50;",
+        "Lf80;",
         "okhttp"
     }
     k = 0x1
@@ -44,11 +44,11 @@
 
 .field private final contentTypeString:Ljava/lang/String;
 
-.field private final source:Ls50;
+.field private final source:Lf80;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;JLs50;)V
+.method public constructor <init>(Ljava/lang/String;JLf80;)V
     .locals 0
 
     .line 1
@@ -70,7 +70,7 @@
 
     .line 10
     .line 11
-    iput-object p4, p0, Lokhttp3/internal/http/RealResponseBody;->source:Ls50;
+    iput-object p4, p0, Lokhttp3/internal/http/RealResponseBody;->source:Lf80;
 
     .line 12
     .line 13
@@ -91,46 +91,46 @@
 .end method
 
 .method public contentType()Lokhttp3/MediaType;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http/RealResponseBody;->contentTypeString:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/internal/http/RealResponseBody;->contentTypeString:Ljava/lang/String;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    sget-object v1, Lokhttp3/MediaType;->Companion:Lokhttp3/MediaType$Companion;
+    sget-object v0, Lokhttp3/MediaType;->Companion:Lokhttp3/MediaType$Companion;
 
     .line 6
     .line 7
-    invoke-virtual {v1, v0}, Lokhttp3/MediaType$Companion;->parse(Ljava/lang/String;)Lokhttp3/MediaType;
+    invoke-virtual {v0, p0}, Lokhttp3/MediaType$Companion;->parse(Ljava/lang/String;)Lokhttp3/MediaType;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 
     .line 12
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 13
-    return-object v0
+    return-object p0
 .end method
 
-.method public source()Ls50;
-    .locals 1
+.method public source()Lf80;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/http/RealResponseBody;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/internal/http/RealResponseBody;->source:Lf80;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method

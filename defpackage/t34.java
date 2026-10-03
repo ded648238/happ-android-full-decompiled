@@ -1,24 +1,13 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum t34 implements b65 {
-    /* JADX INFO: Fake field, exist only in values array */
-    UNKNOWN_OS(0),
-    ANDROID(1),
-    /* JADX INFO: Fake field, exist only in values array */
-    IOS(2),
-    /* JADX INFO: Fake field, exist only in values array */
-    WEB(3);
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface t34 {
+    void C(int i, int i2, Object obj);
 
-    public final int Q;
+    void b(int i, int i2);
 
-    t34(int i) {
-        this.Q = i;
-    }
+    void j(int i, int i2);
 
-    @Override // defpackage.b65
-    public final int a() {
-        return this.Q;
-    }
+    void o(int i, int i2);
 }

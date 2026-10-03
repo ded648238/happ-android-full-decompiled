@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;
 .super Lsu/happ/proxyutility/ui/BaseActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,15 +26,15 @@
 
 
 # static fields
-.field public static final synthetic F0:I
+.field public static final synthetic Q0:I
 
 
 # instance fields
-.field public C0:Lu5;
+.field public N0:Lg6;
 
-.field public final D0:Lzu6;
+.field public final O0:Lmm7;
 
-.field public final E0:Lzu6;
+.field public final P0:Lmm7;
 
 
 # direct methods
@@ -47,54 +47,54 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lv54;
+    new-instance v0, La35;
 
     .line 5
     .line 6
-    const/16 v1, 0x16
+    const/16 v1, 0x12
 
     .line 7
     .line 8
-    invoke-direct {v0, v1}, Lv54;-><init>(I)V
+    invoke-direct {v0, v1}, La35;-><init>(I)V
 
     .line 9
     .line 10
     .line 11
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 12
     .line 13
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 14
     .line 15
     .line 16
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->D0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->O0:Lmm7;
 
     .line 17
     .line 18
-    new-instance v0, Laj5;
+    new-instance v0, Lq36;
 
     .line 19
     .line 20
     const/4 v1, 0x0
 
     .line 21
-    invoke-direct {v0, p0, v1}, Laj5;-><init>(Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;I)V
+    invoke-direct {v0, p0, v1}, Lq36;-><init>(Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;I)V
 
     .line 22
     .line 23
     .line 24
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 25
     .line 26
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 27
     .line 28
     .line 29
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->E0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->P0:Lmm7;
 
     .line 30
     .line 31
@@ -112,11 +112,11 @@
     .line 2
     .line 3
     .line 4
-    sget p1, Lt95;->activity_reset_settings:I
+    sget p1, Ltt5;->activity_reset_settings:I
 
     .line 5
     .line 6
-    sget-object v0, Lhz0;->a:Landroidx/databinding/DataBinderMapperImpl;
+    sget-object v0, Le71;->a:Landroidx/databinding/DataBinderMapperImpl;
 
     .line 7
     .line 8
@@ -161,7 +161,7 @@
     const/4 v1, 0x0
 
     .line 29
-    invoke-static {v0, v1, p1}, Lhz0;->a(Landroid/view/ViewGroup;II)Lxn7;
+    invoke-static {v0, v1, p1}, Le71;->a(Landroid/view/ViewGroup;II)Lvi8;
 
     .line 30
     .line 31
@@ -174,15 +174,15 @@
     .line 34
     .line 35
     .line 36
-    check-cast p1, Lu5;
+    check-cast p1, Lg6;
 
     .line 37
     .line 38
-    iput-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->C0:Lu5;
+    iput-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->N0:Lg6;
 
     .line 39
     .line 40
-    iget-object p1, p1, Lxn7;->S:Landroid/view/View;
+    iget-object p1, p1, Lvi8;->Z:Landroid/view/View;
 
     .line 41
     .line 42
@@ -196,7 +196,7 @@
     .line 46
     .line 47
     .line 48
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->C0:Lu5;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->N0:Lg6;
 
     .line 49
     .line 50
@@ -211,16 +211,16 @@
 
     .line 54
     .line 55
-    iget-object p1, p1, Lu5;->c0:Landroidx/appcompat/widget/Toolbar;
+    iget-object p1, p1, Lg6;->l0:Landroidx/appcompat/widget/Toolbar;
 
     .line 56
     .line 57
-    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->p(Landroidx/appcompat/widget/Toolbar;)V
+    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->q(Landroidx/appcompat/widget/Toolbar;)V
 
     .line 58
     .line 59
     .line 60
-    sget p1, Lx95;->title_reset:I
+    sget p1, Lxt5;->title_reset:I
 
     .line 61
     .line 62
@@ -237,11 +237,11 @@
     .line 67
     .line 68
     .line 69
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->E0:Lzu6;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->P0:Lmm7;
 
     .line 70
     .line 71
-    invoke-virtual {p1}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 72
     .line 73
@@ -249,16 +249,16 @@
     move-result-object p1
 
     .line 75
-    check-cast p1, Lbj5;
+    check-cast p1, Ls36;
 
     .line 76
     .line 77
-    invoke-static {p1}, Lhc7;->o(Lxy0;)V
+    invoke-static {p1}, Lor4;->n(Ln61;)V
 
     .line 78
     .line 79
     .line 80
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->C0:Lu5;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->N0:Lg6;
 
     .line 81
     .line 82
@@ -266,15 +266,15 @@
 
     .line 83
     .line 84
-    iget-object p1, p1, Lu5;->b0:Landroid/widget/RelativeLayout;
+    iget-object p1, p1, Lg6;->k0:Landroid/widget/RelativeLayout;
 
     .line 85
     .line 86
-    new-instance v3, Lzi5;
+    new-instance v3, Lp36;
 
     .line 87
     .line 88
-    invoke-direct {v3, p0, v1}, Lzi5;-><init>(Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;I)V
+    invoke-direct {v3, p0, v1}, Lp36;-><init>(Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;I)V
 
     .line 89
     .line 90
@@ -284,7 +284,7 @@
     .line 92
     .line 93
     .line 94
-    iget-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->C0:Lu5;
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->N0:Lg6;
 
     .line 95
     .line 96
@@ -292,18 +292,18 @@
 
     .line 97
     .line 98
-    iget-object p1, p1, Lu5;->a0:Landroid/widget/RelativeLayout;
+    iget-object p1, p1, Lg6;->j0:Landroid/widget/RelativeLayout;
 
     .line 99
     .line 100
-    new-instance v0, Lzi5;
+    new-instance v0, Lp36;
 
     .line 101
     .line 102
     const/4 v1, 0x1
 
     .line 103
-    invoke-direct {v0, p0, v1}, Lzi5;-><init>(Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;I)V
+    invoke-direct {v0, p0, v1}, Lp36;-><init>(Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;I)V
 
     .line 104
     .line 105
@@ -317,7 +317,7 @@
 
     .line 110
     :cond_0
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 111
     .line 112
@@ -326,7 +326,7 @@
 
     .line 114
     :cond_1
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 115
     .line 116
@@ -335,7 +335,7 @@
 
     .line 118
     :cond_2
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 119
     .line 120
@@ -343,81 +343,81 @@
     throw v0
 .end method
 
-.method public final t()Landroidx/appcompat/widget/Toolbar;
-    .locals 1
+.method public final u()Landroidx/appcompat/widget/Toolbar;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->C0:Lu5;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->N0:Lg6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lu5;->c0:Landroidx/appcompat/widget/Toolbar;
+    iget-object p0, p0, Lg6;->l0:Landroidx/appcompat/widget/Toolbar;
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    return-object v0
+    return-object p0
 
     .line 11
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 12
     .line 13
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 14
     .line 15
     .line 16
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 17
-    throw v0
+    throw p0
 .end method
 
-.method public final v()Z
-    .locals 1
+.method public final w()Z
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->E0:Lzu6;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/reset_settings/ResetSettingsActivity;->P0:Lmm7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Lbj5;
+    check-cast p0, Ls36;
 
     .line 8
     .line 9
-    iget-object v0, v0, Lbj5;->Q:Lu5;
+    iget-object p0, p0, Ls36;->X:Lg6;
 
     .line 10
     .line 11
-    iget-object v0, v0, Lu5;->b0:Landroid/widget/RelativeLayout;
+    iget-object p0, p0, Lg6;->k0:Landroid/widget/RelativeLayout;
 
     .line 12
     .line 13
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
 
     .line 14
     .line 15
     .line 16
-    move-result v0
+    move-result p0
 
     .line 17
-    return v0
+    return p0
 .end method

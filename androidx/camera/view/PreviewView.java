@@ -17,100 +17,93 @@ import android.util.AttributeSet;
 import android.util.Rational;
 import android.util.Size;
 import android.view.Display;
-import android.view.GestureDetector;
-import android.view.ViewConfiguration;
 import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import androidx.camera.view.internal.compat.quirk.SurfaceViewNotCroppedByParentQuirk;
 import androidx.camera.view.internal.compat.quirk.SurfaceViewStretchedQuirk;
-import defpackage.b37;
-import defpackage.bv7;
-import defpackage.cp7;
-import defpackage.fb1;
-import defpackage.fn;
-import defpackage.h44;
-import defpackage.h77;
-import defpackage.i62;
-import defpackage.im4;
-import defpackage.iz4;
-import defpackage.lc0;
-import defpackage.mn3;
-import defpackage.mt6;
-import defpackage.nz4;
-import defpackage.o37;
-import defpackage.of0;
-import defpackage.ov4;
-import defpackage.oz4;
-import defpackage.pz4;
-import defpackage.q84;
-import defpackage.qn7;
-import defpackage.qz4;
-import defpackage.rz4;
-import defpackage.s27;
-import defpackage.se4;
-import defpackage.sk2;
-import defpackage.sz4;
-import defpackage.u30;
-import defpackage.w33;
-import defpackage.wc0;
-import defpackage.xi4;
-import defpackage.za5;
+import defpackage.a05;
+import defpackage.ak8;
+import defpackage.al7;
+import defpackage.bh0;
+import defpackage.bh2;
+import defpackage.cl4;
+import defpackage.ew4;
+import defpackage.fv7;
+import defpackage.i60;
+import defpackage.im0;
+import defpackage.iy2;
+import defpackage.j45;
+import defpackage.kj1;
+import defpackage.lm1;
+import defpackage.ni8;
+import defpackage.oi5;
+import defpackage.p77;
+import defpackage.q05;
+import defpackage.q44;
+import defpackage.sp4;
+import defpackage.sz7;
+import defpackage.us7;
+import defpackage.vf0;
+import defpackage.vi5;
+import defpackage.wi5;
+import defpackage.xi5;
+import defpackage.xu5;
+import defpackage.xv7;
+import defpackage.yi5;
+import defpackage.zi5;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class PreviewView extends FrameLayout {
-    public static final /* synthetic */ int f0 = 0;
-    public pz4 Q;
-    public se4 R;
-    public final ScreenFlashView S;
-    public final nz4 T;
-    public boolean U;
-    public final q84 V;
-    public final AtomicReference W;
-    public final sz4 a0;
-    public wc0 b0;
-    public final oz4 c0;
-    public final of0 d0;
-    public final ov4 e0;
+    public static final /* synthetic */ int o0 = 0;
+    public wi5 c0;
+    public ew4 d0;
+    public final ScreenFlashView e0;
+    public final vi5 f0;
+    public boolean g0;
+    public final sp4 h0;
+    public final AtomicReference i0;
+    public final zi5 j0;
+    public bh0 k0;
+    public final lm1 l0;
+    public final im0 m0;
+    public final a05 n0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PreviewView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i, 0);
-        this.Q = pz4.PERFORMANCE;
-        nz4 nz4Var = new nz4();
-        nz4Var.h = qz4.FILL_CENTER;
-        this.T = nz4Var;
-        int i2 = 1;
-        this.U = true;
-        this.V = new q84(rz4.Q);
-        this.W = new AtomicReference();
-        this.a0 = new sz4(nz4Var);
-        this.c0 = new oz4(this);
-        this.d0 = new of0(i2, this);
-        this.e0 = new ov4(3, this);
-        o37.a();
-        TypedArray typedArrayObtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, za5.PreviewView, i, 0);
-        qn7.p(this, context, za5.PreviewView, attributeSet, typedArrayObtainStyledAttributes, i);
+        this.c0 = wi5.PERFORMANCE;
+        vi5 vi5Var = new vi5();
+        vi5Var.h = xi5.FILL_CENTER;
+        this.f0 = vi5Var;
+        this.g0 = true;
+        this.h0 = new sp4(yi5.X);
+        this.i0 = new AtomicReference();
+        this.j0 = new zi5(vi5Var);
+        this.l0 = new lm1(1, this);
+        this.m0 = new im0(1, this);
+        this.n0 = new a05(5, this);
+        xv7.a();
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, xu5.PreviewView, i, 0);
+        ni8.l(this, context, xu5.PreviewView, attributeSet, obtainStyledAttributes, i);
         try {
-            int integer = typedArrayObtainStyledAttributes.getInteger(za5.PreviewView_scaleType, nz4Var.h.Q);
-            for (qz4 qz4Var : qz4.values()) {
-                if (qz4Var.Q == integer) {
-                    setScaleType(qz4Var);
-                    int integer2 = typedArrayObtainStyledAttributes.getInteger(za5.PreviewView_implementationMode, 0);
-                    for (pz4 pz4Var : pz4.values()) {
-                        if (pz4Var.Q == integer2) {
-                            setImplementationMode(pz4Var);
-                            typedArrayObtainStyledAttributes.recycle();
-                            new xi4(15);
-                            ViewConfiguration.get(context).getScaledTouchSlop();
-                            new GestureDetector(context, new u30(i2, new s27()));
+            int integer = obtainStyledAttributes.getInteger(xu5.PreviewView_scaleType, vi5Var.h.X);
+            for (xi5 xi5Var : xi5.values()) {
+                if (xi5Var.X == integer) {
+                    setScaleType(xi5Var);
+                    int integer2 = obtainStyledAttributes.getInteger(xu5.PreviewView_implementationMode, 0);
+                    for (wi5 wi5Var : wi5.values()) {
+                        if (wi5Var.X == integer2) {
+                            setImplementationMode(wi5Var);
+                            obtainStyledAttributes.recycle();
+                            new p77(context, new q05(13));
                             if (getBackground() == null) {
-                                setBackgroundColor(bv7.A(getContext(), R.color.black));
+                                setBackgroundColor(getContext().getColor(R.color.black));
                             }
                             ScreenFlashView screenFlashView = new ScreenFlashView(context, null);
-                            this.S = screenFlashView;
+                            this.e0 = screenFlashView;
                             screenFlashView.setLayoutParams(new LinearLayout.LayoutParams(-1, -1));
                             return;
                         }
@@ -120,21 +113,21 @@ public final class PreviewView extends FrameLayout {
             }
             throw new IllegalArgumentException("Unknown scale type id " + integer);
         } catch (Throwable th) {
-            typedArrayObtainStyledAttributes.recycle();
+            obtainStyledAttributes.recycle();
             throw th;
         }
     }
 
-    public static boolean b(mt6 mt6Var, pz4 pz4Var) {
-        boolean zEquals = mt6Var.d.n().f().equals("androidx.camera.camera2.legacy");
-        boolean z = (fb1.a.e(SurfaceViewStretchedQuirk.class) == null && fb1.a.e(SurfaceViewNotCroppedByParentQuirk.class) == null) ? false : true;
-        if (Build.VERSION.SDK_INT > 24 && !zEquals && !z) {
-            int iOrdinal = pz4Var.ordinal();
-            if (iOrdinal == 0) {
+    public static boolean b(al7 al7Var, wi5 wi5Var) {
+        boolean equals = al7Var.d.s().l().equals("androidx.camera.camera2.legacy");
+        boolean z = (kj1.a.b(SurfaceViewStretchedQuirk.class) == null && kj1.a.b(SurfaceViewNotCroppedByParentQuirk.class) == null) ? false : true;
+        if (Build.VERSION.SDK_INT > 24 && !equals && !z) {
+            int ordinal = wi5Var.ordinal();
+            if (ordinal == 0) {
                 return false;
             }
-            if (iOrdinal != 1) {
-                i62.g(pz4Var, "Invalid implementation mode: ");
+            if (ordinal != 1) {
+                bh2.h(wi5Var, "Invalid implementation mode: ");
                 return false;
             }
         }
@@ -146,25 +139,25 @@ public final class PreviewView extends FrameLayout {
         if (context == null) {
             return null;
         }
-        return (DisplayManager) context.getApplicationContext().getSystemService("display");
+        return (DisplayManager) context.getSystemService("display");
     }
 
-    private sk2 getScreenFlashInternal() {
-        return this.S.getScreenFlash();
+    private iy2 getScreenFlashInternal() {
+        return this.e0.getScreenFlash();
     }
 
     private int getViewPortScaleType() {
-        int iOrdinal = getScaleType().ordinal();
-        if (iOrdinal == 0) {
+        int ordinal = getScaleType().ordinal();
+        if (ordinal == 0) {
             return 0;
         }
         int i = 1;
-        if (iOrdinal != 1) {
+        if (ordinal != 1) {
             i = 2;
-            if (iOrdinal != 2) {
+            if (ordinal != 2) {
                 i = 3;
-                if (iOrdinal != 3 && iOrdinal != 4 && iOrdinal != 5) {
-                    fn.k(getScaleType(), "Unexpected scale type: ");
+                if (ordinal != 3 && ordinal != 4 && ordinal != 5) {
+                    i60.f(getScaleType(), "Unexpected scale type: ");
                     return 0;
                 }
             }
@@ -172,223 +165,231 @@ public final class PreviewView extends FrameLayout {
         return i;
     }
 
-    private void setScreenFlashUiInfo(sk2 sk2Var) {
-        w33.U("PreviewView");
+    private void setScreenFlashUiInfo(iy2 iy2Var) {
+        us7.q0("PreviewView");
     }
 
     public final void a() {
         Rect rect;
-        Display display;
-        wc0 wc0Var;
-        o37.a();
-        if (this.R != null) {
-            if (this.U && (display = getDisplay()) != null && (wc0Var = this.b0) != null) {
-                nz4 nz4Var = this.T;
-                int iG = wc0Var.g(display.getRotation());
-                int rotation = display.getRotation();
-                if (nz4Var.g) {
-                    nz4Var.c = iG;
-                    nz4Var.e = rotation;
+        Display defaultDisplay;
+        bh0 bh0Var;
+        xv7.a();
+        if (this.d0 != null) {
+            if (this.g0 && (defaultDisplay = getDefaultDisplay()) != null && (bh0Var = this.k0) != null) {
+                vi5 vi5Var = this.f0;
+                int o = bh0Var.o(defaultDisplay.getRotation());
+                int rotation = defaultDisplay.getRotation();
+                if (vi5Var.g) {
+                    vi5Var.c = o;
+                    vi5Var.e = rotation;
                 }
             }
-            this.R.h();
+            this.d0.h();
         }
-        sz4 sz4Var = this.a0;
+        zi5 zi5Var = this.j0;
         Size size = new Size(getWidth(), getHeight());
         int layoutDirection = getLayoutDirection();
-        sz4Var.getClass();
-        o37.a();
-        synchronized (sz4Var) {
+        zi5Var.getClass();
+        xv7.a();
+        synchronized (zi5Var) {
             try {
-                if (size.getWidth() != 0 && size.getHeight() != 0 && (rect = sz4Var.b) != null) {
-                    sz4Var.a.a(size, layoutDirection, rect);
+                if (size.getWidth() != 0 && size.getHeight() != 0 && (rect = zi5Var.b) != null) {
+                    zi5Var.a.a(size, layoutDirection, rect);
                 }
-            } catch (Throwable th) {
-                throw th;
+            } finally {
             }
         }
     }
 
     public Bitmap getBitmap() {
-        o37.a();
-        se4 se4Var = this.R;
-        if (se4Var == null) {
+        xv7.a();
+        ew4 ew4Var = this.d0;
+        if (ew4Var == null) {
             return null;
         }
-        FrameLayout frameLayout = (FrameLayout) se4Var.c;
-        Bitmap bitmapD = se4Var.d();
-        if (bitmapD == null) {
+        FrameLayout frameLayout = (FrameLayout) ew4Var.c;
+        Bitmap d = ew4Var.d();
+        if (d == null) {
             return null;
         }
-        nz4 nz4Var = (nz4) se4Var.d;
+        vi5 vi5Var = (vi5) ew4Var.d;
         Size size = new Size(frameLayout.getWidth(), frameLayout.getHeight());
         int layoutDirection = frameLayout.getLayoutDirection();
-        if (!nz4Var.f()) {
-            return bitmapD;
+        if (!vi5Var.f()) {
+            return d;
         }
-        Matrix matrixD = nz4Var.d();
-        RectF rectFE = nz4Var.e(size, layoutDirection);
-        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(size.getWidth(), size.getHeight(), bitmapD.getConfig());
-        Canvas canvas = new Canvas(bitmapCreateBitmap);
+        Matrix d2 = vi5Var.d();
+        RectF e = vi5Var.e(layoutDirection, size);
+        Bitmap createBitmap = Bitmap.createBitmap(size.getWidth(), size.getHeight(), d.getConfig());
+        Canvas canvas = new Canvas(createBitmap);
         Matrix matrix = new Matrix();
-        matrix.postConcat(matrixD);
-        matrix.postScale(rectFE.width() / nz4Var.a.getWidth(), rectFE.height() / nz4Var.a.getHeight());
-        matrix.postTranslate(rectFE.left, rectFE.top);
-        canvas.drawBitmap(bitmapD, matrix, new Paint(7));
-        return bitmapCreateBitmap;
+        matrix.postConcat(d2);
+        matrix.postScale(e.width() / vi5Var.a.getWidth(), e.height() / vi5Var.a.getHeight());
+        matrix.postTranslate(e.left, e.top);
+        canvas.drawBitmap(d, matrix, new Paint(7));
+        return createBitmap;
     }
 
-    public lc0 getController() {
-        o37.a();
+    public vf0 getController() {
+        xv7.a();
         return null;
     }
 
-    public pz4 getImplementationMode() {
-        o37.a();
-        return this.Q;
-    }
-
-    public h44 getMeteringPointFactory() {
-        o37.a();
-        return this.a0;
-    }
-
-    public im4 getOutputTransform() {
-        Matrix matrixC;
-        nz4 nz4Var = this.T;
-        o37.a();
-        try {
-            matrixC = nz4Var.c(new Size(getWidth(), getHeight()), getLayoutDirection());
-        } catch (IllegalStateException unused) {
-            matrixC = null;
-        }
-        Rect rect = nz4Var.b;
-        if (matrixC == null || rect == null) {
-            w33.U("PreviewView");
+    public Display getDefaultDisplay() {
+        if (getDisplay() == null) {
             return null;
         }
-        RectF rectF = h77.a;
+        Display display = getDisplayManager().getDisplay(0);
+        return display != null ? display : getDisplay();
+    }
+
+    public wi5 getImplementationMode() {
+        xv7.a();
+        return this.c0;
+    }
+
+    public cl4 getMeteringPointFactory() {
+        xv7.a();
+        return this.j0;
+    }
+
+    public j45 getOutputTransform() {
+        Matrix matrix;
+        vi5 vi5Var = this.f0;
+        xv7.a();
+        try {
+            matrix = vi5Var.c(getLayoutDirection(), new Size(getWidth(), getHeight()));
+        } catch (IllegalStateException unused) {
+            matrix = null;
+        }
+        Rect rect = vi5Var.b;
+        if (matrix == null || rect == null) {
+            us7.q0("PreviewView");
+            return null;
+        }
+        RectF rectF = sz7.a;
         RectF rectF2 = new RectF(rect);
-        Matrix matrix = new Matrix();
-        matrix.setRectToRect(h77.a, rectF2, Matrix.ScaleToFit.FILL);
-        matrixC.preConcat(matrix);
-        if (this.R instanceof b37) {
-            matrixC.postConcat(getMatrix());
+        Matrix matrix2 = new Matrix();
+        matrix2.setRectToRect(sz7.a, rectF2, Matrix.ScaleToFit.FILL);
+        matrix.preConcat(matrix2);
+        if (this.d0 instanceof fv7) {
+            matrix.postConcat(getMatrix());
         } else if (!getMatrix().isIdentity()) {
-            w33.U("PreviewView");
+            us7.q0("PreviewView");
         }
         new Size(rect.width(), rect.height());
-        return new im4();
+        return new j45();
     }
 
-    public mn3 getPreviewStreamState() {
-        return this.V;
+    public q44 getPreviewStreamState() {
+        return this.h0;
     }
 
-    public qz4 getScaleType() {
-        o37.a();
-        return this.T.h;
+    public xi5 getScaleType() {
+        xv7.a();
+        return this.f0.h;
     }
 
-    public sk2 getScreenFlash() {
+    public iy2 getScreenFlash() {
         return getScreenFlashInternal();
     }
 
     public Matrix getSensorToViewTransform() {
-        o37.a();
+        xv7.a();
         if (getWidth() == 0 || getHeight() == 0) {
             return null;
         }
         Size size = new Size(getWidth(), getHeight());
         int layoutDirection = getLayoutDirection();
-        nz4 nz4Var = this.T;
-        if (!nz4Var.f()) {
+        vi5 vi5Var = this.f0;
+        if (!vi5Var.f()) {
             return null;
         }
-        Matrix matrix = new Matrix(nz4Var.d);
-        matrix.postConcat(nz4Var.c(size, layoutDirection));
+        Matrix matrix = new Matrix(vi5Var.d);
+        matrix.postConcat(vi5Var.c(layoutDirection, size));
         return matrix;
     }
 
-    public iz4 getSurfaceProvider() {
-        o37.a();
-        return this.e0;
+    public oi5 getSurfaceProvider() {
+        xv7.a();
+        return this.n0;
     }
 
-    public cp7 getViewPort() {
-        o37.a();
-        if (getDisplay() == null) {
+    public ak8 getViewPort() {
+        xv7.a();
+        Display defaultDisplay = getDefaultDisplay();
+        if (defaultDisplay == null) {
             return null;
         }
-        getDisplay().getRotation();
-        o37.a();
+        defaultDisplay.getRotation();
+        xv7.a();
         if (getWidth() == 0 || getHeight() == 0) {
             return null;
         }
         new Rational(getWidth(), getHeight());
         getViewPortScaleType();
         getLayoutDirection();
-        return new cp7();
+        return new ak8();
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void onAttachedToWindow() {
+        DisplayManager displayManager;
         super.onAttachedToWindow();
-        DisplayManager displayManager = getDisplayManager();
-        if (displayManager != null) {
-            displayManager.registerDisplayListener(this.c0, new Handler(Looper.getMainLooper()));
+        if (!isInEditMode() && (displayManager = getDisplayManager()) != null) {
+            displayManager.registerDisplayListener(this.l0, new Handler(Looper.getMainLooper()));
         }
-        addOnLayoutChangeListener(this.d0);
-        se4 se4Var = this.R;
-        if (se4Var != null) {
-            se4Var.e();
+        addOnLayoutChangeListener(this.m0);
+        ew4 ew4Var = this.d0;
+        if (ew4Var != null) {
+            ew4Var.e();
         }
-        o37.a();
+        xv7.a();
         getViewPort();
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public final void onDetachedFromWindow() {
+        DisplayManager displayManager;
         super.onDetachedFromWindow();
-        removeOnLayoutChangeListener(this.d0);
-        se4 se4Var = this.R;
-        if (se4Var != null) {
-            se4Var.f();
+        removeOnLayoutChangeListener(this.m0);
+        ew4 ew4Var = this.d0;
+        if (ew4Var != null) {
+            ew4Var.f();
         }
-        DisplayManager displayManager = getDisplayManager();
-        if (displayManager == null) {
+        if (isInEditMode() || (displayManager = getDisplayManager()) == null) {
             return;
         }
-        displayManager.unregisterDisplayListener(this.c0);
+        displayManager.unregisterDisplayListener(this.l0);
     }
 
-    public void setController(lc0 lc0Var) {
-        o37.a();
-        o37.a();
+    public void setController(vf0 vf0Var) {
+        xv7.a();
+        xv7.a();
         getViewPort();
         setScreenFlashUiInfo(getScreenFlashInternal());
     }
 
-    public void setImplementationMode(pz4 pz4Var) {
-        o37.a();
-        this.Q = pz4Var;
+    public void setImplementationMode(wi5 wi5Var) {
+        xv7.a();
+        this.c0 = wi5Var;
     }
 
-    public void setScaleType(qz4 qz4Var) {
-        o37.a();
-        this.T.h = qz4Var;
+    public void setScaleType(xi5 xi5Var) {
+        xv7.a();
+        this.f0.h = xi5Var;
         a();
-        o37.a();
+        xv7.a();
         getViewPort();
     }
 
     public void setScreenFlashOverlayColor(int i) {
-        this.S.setBackgroundColor(i);
+        this.e0.setBackgroundColor(i);
     }
 
     public void setScreenFlashWindow(Window window) {
-        o37.a();
-        this.S.setScreenFlashWindow(window);
+        xv7.a();
+        this.e0.setScreenFlashWindow(window);
         setScreenFlashUiInfo(getScreenFlashInternal());
     }
 

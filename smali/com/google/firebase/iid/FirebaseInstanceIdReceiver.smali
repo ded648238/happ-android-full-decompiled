@@ -1,6 +1,6 @@
 .class public final Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;
 .super Lcom/google/android/gms/cloudmessaging/CloudMessagingReceiver;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # direct methods
@@ -18,116 +18,116 @@
 
 
 # virtual methods
-.method public final a(Landroid/content/Context;Lsl0;)I
-    .locals 1
+.method public final a(Landroid/content/Context;Lxs0;)I
+    .locals 0
 
     .line 1
     :try_start_0
-    new-instance v0, Ley4;
+    new-instance p0, Lhp;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Ley4;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lhp;-><init>(Landroid/content/Context;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object p1, p2, Lsl0;->Q:Landroid/content/Intent;
+    iget-object p1, p2, Lxs0;->X:Landroid/content/Intent;
 
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Ley4;->q1(Landroid/content/Intent;)Lm18;
+    invoke-virtual {p0, p1}, Lhp;->K(Landroid/content/Intent;)Lux8;
 
     .line 9
     .line 10
     .line 11
-    move-result-object p1
+    move-result-object p0
 
     .line 12
-    invoke-static {p1}, Ll73;->K(Lm18;)Ljava/lang/Object;
+    invoke-static {p0}, Lor4;->o(Lux8;)Ljava/lang/Object;
 
     .line 13
     .line 14
     .line 15
-    move-result-object p1
+    move-result-object p0
 
     .line 16
-    check-cast p1, Ljava/lang/Integer;
+    check-cast p0, Ljava/lang/Integer;
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
     .line 19
     .line 20
     .line 21
-    move-result p1
+    move-result p0
     :try_end_0
     .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 22
-    return p1
+    return p0
 
     .line 23
     :catch_0
-    const/16 p1, 0x1f4
+    const/16 p0, 0x1f4
 
     .line 24
     .line 25
-    return p1
+    return p0
 .end method
 
 .method public final b(Landroid/os/Bundle;)V
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, Landroid/content/Intent;
+    new-instance p0, Landroid/content/Intent;
 
     .line 2
     .line 3
-    const-string v1, "com.google.firebase.messaging.NOTIFICATION_DISMISS"
+    const-string v0, "com.google.firebase.messaging.NOTIFICATION_DISMISS"
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    invoke-virtual {v0, p1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
+    invoke-virtual {p0, p1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     .line 9
     .line 10
     .line 11
-    move-result-object p1
+    move-result-object p0
 
     .line 12
-    invoke-static {p1}, Lqt2;->l0(Landroid/content/Intent;)Z
+    invoke-static {p0}, Lhi4;->N(Landroid/content/Intent;)Z
 
     .line 13
     .line 14
     .line 15
-    move-result v0
+    move-result p1
 
     .line 16
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_0
 
     .line 17
     .line 18
-    const-string v0, "_nd"
+    const-string p1, "_nd"
 
     .line 19
     .line 20
-    invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+    invoke-virtual {p0}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     .line 21
     .line 22
     .line 23
-    move-result-object p1
+    move-result-object p0
 
     .line 24
-    invoke-static {v0, p1}, Lqt2;->Q(Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-static {p1, p0}, Lhi4;->E(Ljava/lang/String;Landroid/os/Bundle;)V
 
     .line 25
     .line 26

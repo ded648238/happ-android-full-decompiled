@@ -1,17 +1,23 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public enum bl6 implements rv2 {
-    CAN_WRITE_BINARY_NATIVELY,
-    CAN_WRITE_FORMATTED_NUMBERS;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public interface bl6 {
+    void a(Object obj, Object obj2);
 
-    public final int Q = 1 << ordinal();
+    void b(Object obj);
 
-    bl6() {
-    }
+    boolean c(Object obj);
 
-    public final int c() {
-        return this.Q;
-    }
+    boolean d(il2 il2Var, il2 il2Var2);
+
+    void e(Object obj, ht0 ht0Var, o22 o22Var);
+
+    int f(il2 il2Var);
+
+    void g(Object obj, ha6 ha6Var);
+
+    int h(il2 il2Var);
+
+    il2 i();
 }

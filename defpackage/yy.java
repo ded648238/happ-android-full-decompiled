@@ -1,58 +1,28 @@
 package defpackage;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
+import kotlin.Metadata;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class yy extends AnimatorListenerAdapter {
-    public final /* synthetic */ int a;
-    public final /* synthetic */ gz b;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+@Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0001\u0018\u00002\f\u0012\b\u0012\u00060\u0002R\u00020\u00000\u0001:\u0001\u0002¨\u0006\u0003"}, d2 = {"Lyy;", "Ljn4;", "Lxy;", "foundation"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class yy extends jn4 {
+    public xy X;
+    public sv0 Y;
 
-    public /* synthetic */ yy(gz gzVar, int i) {
-        this.a = i;
-        this.b = gzVar;
+    @Override // defpackage.jn4
+    public final cn4 a() {
+        return new xy(this);
     }
 
-    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
-    public final void onAnimationEnd(Animator animator) {
-        int i = this.a;
-        gz gzVar = this.b;
-        switch (i) {
-            case 0:
-                gzVar.c();
-                break;
-            case 1:
-                gzVar.d();
-                break;
-            case 2:
-                gzVar.c();
-                break;
-            default:
-                gzVar.d();
-                break;
-        }
+    @Override // defpackage.jn4
+    public final /* bridge */ /* synthetic */ void c(cn4 cn4Var) {
     }
 
-    @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
-    public void onAnimationStart(Animator animator) {
-        int i = this.a;
-        gz gzVar = this.b;
-        switch (i) {
-            case 1:
-                gzVar.j.getClass();
-                break;
-            case 2:
-                gzVar.j.getClass();
-                break;
-            default:
-                super.onAnimationStart(animator);
-                break;
-        }
+    public final boolean equals(Object obj) {
+        return obj == this;
     }
 
-    public /* synthetic */ yy(gz gzVar, int i, int i2) {
-        this.a = i2;
-        this.b = gzVar;
+    public final int hashCode() {
+        return 234;
     }
 }

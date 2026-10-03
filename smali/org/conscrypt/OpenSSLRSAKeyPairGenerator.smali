@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/OpenSSLRSAKeyPairGenerator;
 .super Ljava/security/KeyPairGeneratorSpi;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
@@ -68,11 +68,11 @@
 
     .line 4
     .line 5
-    iget-object v2, p0, Lorg/conscrypt/OpenSSLRSAKeyPairGenerator;->publicExponent:[B
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLRSAKeyPairGenerator;->publicExponent:[B
 
     .line 6
     .line 7
-    invoke-static {v1, v2}, Lorg/conscrypt/NativeCrypto;->RSA_generate_key_ex(I[B)J
+    invoke-static {v1, p0}, Lorg/conscrypt/NativeCrypto;->RSA_generate_key_ex(I[B)J
 
     .line 8
     .line 9
@@ -90,14 +90,14 @@
     .line 15
     .line 16
     .line 17
-    move-result-object v1
+    move-result-object p0
 
     .line 18
-    new-instance v2, Lorg/conscrypt/OpenSSLRSAPublicKey;
+    new-instance v1, Lorg/conscrypt/OpenSSLRSAPublicKey;
 
     .line 19
     .line 20
-    invoke-direct {v2, v0}, Lorg/conscrypt/OpenSSLRSAPublicKey;-><init>(Lorg/conscrypt/OpenSSLKey;)V
+    invoke-direct {v1, v0}, Lorg/conscrypt/OpenSSLRSAPublicKey;-><init>(Lorg/conscrypt/OpenSSLKey;)V
 
     .line 21
     .line 22
@@ -106,7 +106,7 @@
 
     .line 24
     .line 25
-    invoke-direct {v0, v2, v1}, Ljava/security/KeyPair;-><init>(Ljava/security/PublicKey;Ljava/security/PrivateKey;)V
+    invoke-direct {v0, v1, p0}, Ljava/security/KeyPair;-><init>(Ljava/security/PublicKey;Ljava/security/PrivateKey;)V
 
     .line 26
     .line 27
@@ -185,18 +185,18 @@
 
     .line 26
     :cond_1
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 27
     .line 28
-    const-string p2, "Only RSAKeyGenParameterSpec supported"
+    const-string p1, "Only RSAKeyGenParameterSpec supported"
 
     .line 29
     .line 30
-    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 31
     .line 32
     .line 33
-    throw p1
+    throw p0
 .end method

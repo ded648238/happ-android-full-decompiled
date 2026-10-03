@@ -1,119 +1,157 @@
 package defpackage;
 
-import android.accounts.AccountManager;
-import android.app.ActivityManager;
-import android.app.AlarmManager;
-import android.app.AppOpsManager;
-import android.app.DownloadManager;
-import android.app.KeyguardManager;
-import android.app.NotificationManager;
-import android.app.SearchManager;
-import android.app.UiModeManager;
-import android.app.WallpaperManager;
-import android.app.admin.DevicePolicyManager;
-import android.app.job.JobScheduler;
-import android.app.usage.UsageStatsManager;
-import android.appwidget.AppWidgetManager;
-import android.bluetooth.BluetoothManager;
-import android.content.ClipboardManager;
-import android.content.RestrictionsManager;
-import android.content.pm.LauncherApps;
-import android.hardware.ConsumerIrManager;
-import android.hardware.SensorManager;
-import android.hardware.camera2.CameraManager;
-import android.hardware.display.DisplayManager;
-import android.hardware.input.InputManager;
-import android.hardware.usb.UsbManager;
-import android.location.LocationManager;
-import android.media.AudioManager;
-import android.media.MediaRouter;
-import android.media.projection.MediaProjectionManager;
-import android.media.session.MediaSessionManager;
-import android.media.tv.TvInputManager;
-import android.net.ConnectivityManager;
-import android.net.nsd.NsdManager;
-import android.net.wifi.WifiManager;
-import android.net.wifi.p2p.WifiP2pManager;
-import android.nfc.NfcManager;
-import android.os.BatteryManager;
-import android.os.Build;
-import android.os.DropBoxManager;
-import android.os.PowerManager;
-import android.os.UserManager;
-import android.os.Vibrator;
-import android.os.storage.StorageManager;
-import android.print.PrintManager;
-import android.telecom.TelecomManager;
-import android.telephony.SubscriptionManager;
-import android.telephony.TelephonyManager;
-import android.view.LayoutInflater;
-import android.view.WindowManager;
-import android.view.accessibility.AccessibilityManager;
-import android.view.accessibility.CaptioningManager;
-import android.view.inputmethod.InputMethodManager;
-import android.view.textservice.TextServicesManager;
-import java.util.HashMap;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class lv0 extends ll7 implements xi2 {
+    public final /* synthetic */ int d0;
+    public int e0;
+    public final /* synthetic */ os7 f0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public abstract class lv0 {
-    public static final HashMap a;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ lv0(os7 os7Var, b31 b31Var, int i) {
+        super(2, b31Var);
+        this.d0 = i;
+        this.f0 = os7Var;
+    }
 
-    static {
-        HashMap map = new HashMap();
-        a = map;
-        if (Build.VERSION.SDK_INT >= 22) {
-            map.put(SubscriptionManager.class, "telephony_subscription_service");
-            map.put(UsageStatsManager.class, "usagestats");
+    @Override // defpackage.xi2
+    public final Object H(Object obj, Object obj2) {
+        int i = this.d0;
+        r98 r98Var = r98.a;
+        switch (i) {
+            case 0:
+                long j = ((ky4) obj).a;
+                return new lv0(this.f0, (b31) obj2, 0).q(r98Var);
+            case 1:
+                return ((lv0) n((b31) obj2, (i41) obj)).q(r98Var);
+            case 2:
+                return ((lv0) n((b31) obj2, (i41) obj)).q(r98Var);
+            default:
+                return ((lv0) n((b31) obj2, (i41) obj)).q(r98Var);
         }
-        map.put(AppWidgetManager.class, "appwidget");
-        map.put(BatteryManager.class, "batterymanager");
-        map.put(CameraManager.class, "camera");
-        map.put(JobScheduler.class, "jobscheduler");
-        map.put(LauncherApps.class, "launcherapps");
-        map.put(MediaProjectionManager.class, "media_projection");
-        map.put(MediaSessionManager.class, "media_session");
-        map.put(RestrictionsManager.class, "restrictions");
-        map.put(TelecomManager.class, "telecom");
-        map.put(TvInputManager.class, "tv_input");
-        map.put(AppOpsManager.class, "appops");
-        map.put(CaptioningManager.class, "captioning");
-        map.put(ConsumerIrManager.class, "consumer_ir");
-        map.put(PrintManager.class, "print");
-        map.put(BluetoothManager.class, "bluetooth");
-        map.put(DisplayManager.class, "display");
-        map.put(UserManager.class, "user");
-        map.put(InputManager.class, "input");
-        map.put(MediaRouter.class, "media_router");
-        map.put(NsdManager.class, "servicediscovery");
-        map.put(AccessibilityManager.class, "accessibility");
-        map.put(AccountManager.class, "account");
-        map.put(ActivityManager.class, "activity");
-        map.put(AlarmManager.class, "alarm");
-        map.put(AudioManager.class, "audio");
-        map.put(ClipboardManager.class, "clipboard");
-        map.put(ConnectivityManager.class, "connectivity");
-        map.put(DevicePolicyManager.class, "device_policy");
-        map.put(DownloadManager.class, "download");
-        map.put(DropBoxManager.class, "dropbox");
-        map.put(InputMethodManager.class, "input_method");
-        map.put(KeyguardManager.class, "keyguard");
-        map.put(LayoutInflater.class, "layout_inflater");
-        map.put(LocationManager.class, "location");
-        map.put(NfcManager.class, "nfc");
-        map.put(NotificationManager.class, "notification");
-        map.put(PowerManager.class, "power");
-        map.put(SearchManager.class, "search");
-        map.put(SensorManager.class, "sensor");
-        map.put(StorageManager.class, "storage");
-        map.put(TelephonyManager.class, "phone");
-        map.put(TextServicesManager.class, "textservices");
-        map.put(UiModeManager.class, "uimode");
-        map.put(UsbManager.class, "usb");
-        map.put(Vibrator.class, "vibrator");
-        map.put(WallpaperManager.class, "wallpaper");
-        map.put(WifiP2pManager.class, "wifip2p");
-        map.put(WifiManager.class, "wifi");
-        map.put(WindowManager.class, "window");
+    }
+
+    @Override // defpackage.g00
+    public final b31 n(b31 b31Var, Object obj) {
+        int i = this.d0;
+        os7 os7Var = this.f0;
+        switch (i) {
+            case 0:
+                return new lv0(os7Var, b31Var, 0);
+            case 1:
+                return new lv0(os7Var, b31Var, 1);
+            case 2:
+                return new lv0(os7Var, b31Var, 2);
+            default:
+                return new lv0(os7Var, b31Var, 3);
+        }
+    }
+
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        Object obj2;
+        int i = this.d0;
+        os7 os7Var = this.f0;
+        j41 j41Var = j41.X;
+        r98 r98Var = r98.a;
+        int i2 = 1;
+        switch (i) {
+            case 0:
+                int i3 = this.e0;
+                if (i3 == 0) {
+                    q48.f0(obj);
+                    this.e0 = 1;
+                    os7Var.z();
+                    if (r98Var == j41Var) {
+                    }
+                } else if (i3 == 1) {
+                    q48.f0(obj);
+                } else if (i3 != 2) {
+                    i60.g("call to 'resume' before 'invoke' with coroutine");
+                    break;
+                } else {
+                    q48.f0(obj);
+                    break;
+                }
+                ne5 ne5Var = os7Var.g;
+                vz7 vz7Var = os7Var.a;
+                if (ne5Var != null) {
+                    CharSequence charSequence = vz7Var.d().Z;
+                    long j = vz7Var.d().c0;
+                    this.e0 = 2;
+                    se5 se5Var = (se5) ne5Var;
+                    if (charSequence.length() == 0 || eu7.b(j)) {
+                        obj2 = r98Var;
+                    } else {
+                        obj2 = d01.d0(se5Var.a, new qe5(se5Var, new pe5(j, null, se5Var, charSequence), null), this);
+                    }
+                    if (obj2 != j41Var) {
+                        obj2 = r98Var;
+                    }
+                    if (obj2 == j41Var) {
+                    }
+                }
+                break;
+            case 1:
+                int i4 = this.e0;
+                if (i4 == 0) {
+                    q48.f0(obj);
+                    this.e0 = 1;
+                    if (os7Var.y(this) == j41Var) {
+                    }
+                } else if (i4 != 1) {
+                    i60.g("call to 'resume' before 'invoke' with coroutine");
+                    break;
+                } else {
+                    q48.f0(obj);
+                }
+                break;
+            case 2:
+                int i5 = this.e0;
+                if (i5 == 0) {
+                    q48.f0(obj);
+                    this.e0 = 1;
+                    os7Var.getClass();
+                    b11 U = d01.U(new z10(os7Var, 5));
+                    is7 is7Var = is7.X;
+                    fk6 fk6Var = d01.h;
+                    q48.t(2, is7Var);
+                    Object a = d01.t(U, fk6Var, is7Var).a(new vc0(3, new ty5(), new js7(os7Var, 0)), this);
+                    if (a != j41Var) {
+                        a = r98Var;
+                    }
+                    if (a != j41Var) {
+                        a = r98Var;
+                    }
+                    if (a == j41Var) {
+                    }
+                } else if (i5 != 1) {
+                    i60.g("call to 'resume' before 'invoke' with coroutine");
+                    break;
+                } else {
+                    q48.f0(obj);
+                }
+                break;
+            default:
+                int i6 = this.e0;
+                if (i6 == 0) {
+                    q48.f0(obj);
+                    this.e0 = 1;
+                    os7Var.getClass();
+                    Object a2 = d01.t(d01.U(new z10(os7Var, 4)), new yh7(15), d01.i).a(new js7(os7Var, i2), this);
+                    if (a2 != j41Var) {
+                        a2 = r98Var;
+                    }
+                    if (a2 == j41Var) {
+                    }
+                } else if (i6 != 1) {
+                    i60.g("call to 'resume' before 'invoke' with coroutine");
+                    break;
+                } else {
+                    q48.f0(obj);
+                }
+                break;
+        }
+        return r98Var;
     }
 }

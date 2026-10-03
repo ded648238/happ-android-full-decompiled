@@ -1,36 +1,69 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class h26 {
-    public final kj5 a;
-    public final int b;
-    public final long c;
+import android.content.ComponentName;
+import android.content.ServiceConnection;
+import android.os.IBinder;
+import androidx.work.multiprocess.RemoteWorkManagerClient;
 
-    public h26(kj5 kj5Var, int i, long j) {
-        this.a = kj5Var;
-        this.b = i;
-        this.c = j;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class h26 implements ServiceConnection {
+    public final rt6 a = new rt6();
+    public final RemoteWorkManagerClient b;
+
+    static {
+        an3.u("RemoteWMgr.Connection");
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public h26(RemoteWorkManagerClient remoteWorkManagerClient) {
+        this.b = remoteWorkManagerClient;
+    }
+
+    @Override // android.content.ServiceConnection
+    public final void onBindingDied(ComponentName componentName) {
+        an3.l().getClass();
+        this.a.h(new RuntimeException("Binding died"));
+        this.b.d();
+    }
+
+    @Override // android.content.ServiceConnection
+    public final void onNullBinding(ComponentName componentName) {
+        an3.l().getClass();
+        this.a.h(new RuntimeException("Cannot bind to service " + componentName));
+    }
+
+    @Override // android.content.ServiceConnection
+    public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+        Object obj;
+        an3.l().getClass();
+        int i = k26.h;
+        if (iBinder == null) {
+            obj = null;
+        } else {
+            Object queryLocalInterface = iBinder.queryLocalInterface(dx2.e);
+            if (queryLocalInterface == null || !(queryLocalInterface instanceof dx2)) {
+                cx2 cx2Var = new cx2();
+                cx2Var.g = iBinder;
+                obj = cx2Var;
+            } else {
+                obj = (dx2) queryLocalInterface;
+            }
         }
-        if (!(obj instanceof h26)) {
-            return false;
+        rt6 rt6Var = this.a;
+        rt6Var.getClass();
+        Object obj2 = obj;
+        if (obj == null) {
+            obj2 = o1.f0;
         }
-        h26 h26Var = (h26) obj;
-        return this.a == h26Var.a && this.b == h26Var.b && this.c == h26Var.c;
+        if (o1.e0.s(rt6Var, null, obj2)) {
+            o1.c(rt6Var);
+        }
     }
 
-    public final int hashCode() {
-        int iHashCode = ((this.a.hashCode() * 31) + this.b) * 31;
-        long j = this.c;
-        return iHashCode + ((int) (j ^ (j >>> 32)));
-    }
-
-    public final String toString() {
-        return "AnchorInfo(direction=" + this.a + ", offset=" + this.b + ", selectableId=" + this.c + ')';
+    @Override // android.content.ServiceConnection
+    public final void onServiceDisconnected(ComponentName componentName) {
+        an3.l().getClass();
+        this.a.h(new RuntimeException("Service disconnected"));
+        this.b.d();
     }
 }

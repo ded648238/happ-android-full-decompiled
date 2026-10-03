@@ -1,19 +1,21 @@
 .class public Lcom/google/android/material/snackbar/SnackbarContentLayout;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:Landroid/widget/TextView;
+.field public c0:Landroid/widget/TextView;
 
-.field public R:Landroid/widget/Button;
+.field public d0:Landroid/widget/Button;
 
-.field public S:I
+.field public e0:Landroid/widget/Button;
+
+.field public f0:I
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -21,15 +23,15 @@
     .line 2
     .line 3
     .line 4
-    sget p2, Lv75;->motionEasingEmphasizedInterpolator:I
+    sget p0, Lur5;->motionEasingEmphasizedInterpolator:I
 
     .line 5
     .line 6
-    sget-object v0, Lhi;->b:Lou1;
+    sget-object p2, Lvj;->b:Lw32;
 
     .line 7
     .line 8
-    invoke-static {p1, p2, v0}, Lva6;->V(Landroid/content/Context;ILandroid/animation/TimeInterpolator;)Landroid/animation/TimeInterpolator;
+    invoke-static {p1, p0, p2}, Lut;->i0(Landroid/content/Context;ILandroid/animation/TimeInterpolator;)Landroid/animation/TimeInterpolator;
 
     .line 9
     .line 10
@@ -40,7 +42,7 @@
 
 # virtual methods
 .method public final a(III)Z
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getOrientation()I
@@ -63,7 +65,7 @@
     .line 9
     .line 10
     .line 11
-    const/4 p1, 0x1
+    move p1, v1
 
     .line 12
     goto :goto_0
@@ -74,7 +76,7 @@
 
     .line 14
     :goto_0
-    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->Q:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->c0:Landroid/widget/TextView;
 
     .line 15
     .line 16
@@ -90,7 +92,7 @@
 
     .line 21
     .line 22
-    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->Q:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->c0:Landroid/widget/TextView;
 
     .line 23
     .line 24
@@ -115,39 +117,39 @@
     .line 32
     :cond_2
     :goto_1
-    iget-object p1, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->c0:Landroid/widget/TextView;
 
     .line 33
     .line 34
-    invoke-virtual {p1}, Landroid/view/View;->isPaddingRelative()Z
+    invoke-virtual {p0}, Landroid/view/View;->isPaddingRelative()Z
 
     .line 35
     .line 36
     .line 37
-    move-result v0
+    move-result p1
 
     .line 38
-    if-eqz v0, :cond_3
+    if-eqz p1, :cond_3
 
     .line 39
     .line 40
-    invoke-virtual {p1}, Landroid/view/View;->getPaddingStart()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingStart()I
 
     .line 41
     .line 42
     .line 43
-    move-result v0
+    move-result p1
 
     .line 44
-    invoke-virtual {p1}, Landroid/view/View;->getPaddingEnd()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingEnd()I
 
     .line 45
     .line 46
     .line 47
-    move-result v2
+    move-result v0
 
     .line 48
-    invoke-virtual {p1, v0, p2, v2, p3}, Landroid/view/View;->setPaddingRelative(IIII)V
+    invoke-virtual {p0, p1, p2, v0, p3}, Landroid/view/View;->setPaddingRelative(IIII)V
 
     .line 49
     .line 50
@@ -156,23 +158,23 @@
 
     .line 52
     :cond_3
-    invoke-virtual {p1}, Landroid/view/View;->getPaddingLeft()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     .line 53
     .line 54
     .line 55
-    move-result v0
+    move-result p1
 
     .line 56
-    invoke-virtual {p1}, Landroid/view/View;->getPaddingRight()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
 
     .line 57
     .line 58
     .line 59
-    move-result v2
+    move-result v0
 
     .line 60
-    invoke-virtual {p1, v0, p2, v2, p3}, Landroid/view/View;->setPadding(IIII)V
+    invoke-virtual {p0, p1, p2, v0, p3}, Landroid/view/View;->setPadding(IIII)V
 
     .line 61
     .line 62
@@ -181,37 +183,48 @@
 .end method
 
 .method public getActionView()Landroid/widget/Button;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->R:Landroid/widget/Button;
+    iget-object p0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->d0:Landroid/widget/Button;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
+.end method
+
+.method public getCloseView()Landroid/widget/Button;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->e0:Landroid/widget/Button;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
 .method public getMessageView()Landroid/widget/TextView;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->Q:Landroid/widget/TextView;
+    iget-object p0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->c0:Landroid/widget/TextView;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final onFinishInflate()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
+    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 2
     .line 3
     .line 4
-    sget v0, Lc95;->snackbar_text:I
+    sget v0, Lct5;->snackbar_text:I
 
     .line 5
     .line 6
@@ -227,11 +240,11 @@
 
     .line 11
     .line 12
-    iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->Q:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->c0:Landroid/widget/TextView;
 
     .line 13
     .line 14
-    sget v0, Lc95;->snackbar_action:I
+    sget v0, Lct5;->snackbar_action:I
 
     .line 15
     .line 16
@@ -247,10 +260,30 @@
 
     .line 21
     .line 22
-    iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->R:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->d0:Landroid/widget/Button;
 
     .line 23
     .line 24
+    sget v0, Lct5;->mtrl_snackbar_close:I
+
+    .line 25
+    .line 26
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    check-cast v0, Landroid/widget/Button;
+
+    .line 31
+    .line 32
+    iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->e0:Landroid/widget/Button;
+
+    .line 33
+    .line 34
     return-void
 .end method
 
@@ -290,7 +323,7 @@
     move-result-object v0
 
     .line 16
-    sget v2, Lk85;->design_snackbar_padding_vertical_2lines:I
+    sget v2, Ljs5;->design_snackbar_padding_vertical_2lines:I
 
     .line 17
     .line 18
@@ -310,7 +343,7 @@
     move-result-object v2
 
     .line 26
-    sget v3, Lk85;->design_snackbar_padding_vertical:I
+    sget v3, Ljs5;->design_snackbar_padding_vertical:I
 
     .line 27
     .line 28
@@ -322,7 +355,7 @@
     move-result v2
 
     .line 32
-    iget-object v3, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->Q:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->c0:Landroid/widget/TextView;
 
     .line 33
     .line 34
@@ -353,14 +386,14 @@
 
     .line 46
     .line 47
-    const/4 v3, 0x1
+    move v3, v1
 
     .line 48
     goto :goto_0
 
     .line 49
     :cond_1
-    const/4 v3, 0x0
+    move v3, v4
 
     .line 50
     :goto_0
@@ -368,7 +401,7 @@
 
     .line 51
     .line 52
-    iget v5, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->S:I
+    iget v5, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->f0:I
 
     .line 53
     .line 54
@@ -376,7 +409,7 @@
 
     .line 55
     .line 56
-    iget-object v5, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->R:Landroid/widget/Button;
+    iget-object v5, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->d0:Landroid/widget/Button;
 
     .line 57
     .line 58
@@ -388,7 +421,7 @@
     move-result v5
 
     .line 62
-    iget v6, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->S:I
+    iget v6, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->f0:I
 
     .line 63
     .line 64
@@ -455,7 +488,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->S:I
+    iput p1, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->f0:I
 
     .line 2
     .line 3

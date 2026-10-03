@@ -1,695 +1,741 @@
-.class public final Lio/sentry/p;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final enum Lio/sentry/p;
+.super Ljava/lang/Enum;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-# interfaces
-.implements Lio/sentry/f0;
+
+# static fields
+.field private static final synthetic $VALUES:[Lio/sentry/p;
+
+.field public static final enum All:Lio/sentry/p;
+
+.field public static final enum Attachment:Lio/sentry/p;
+
+.field public static final enum Default:Lio/sentry/p;
+
+.field public static final enum Error:Lio/sentry/p;
+
+.field public static final enum Feedback:Lio/sentry/p;
+
+.field public static final enum LogByte:Lio/sentry/p;
+
+.field public static final enum LogItem:Lio/sentry/p;
+
+.field public static final enum Monitor:Lio/sentry/p;
+
+.field public static final enum Profile:Lio/sentry/p;
+
+.field public static final enum ProfileChunk:Lio/sentry/p;
+
+.field public static final enum ProfileChunkUi:Lio/sentry/p;
+
+.field public static final enum Replay:Lio/sentry/p;
+
+.field public static final enum Security:Lio/sentry/p;
+
+.field public static final enum Session:Lio/sentry/p;
+
+.field public static final enum Span:Lio/sentry/p;
+
+.field public static final enum TraceMetric:Lio/sentry/p;
+
+.field public static final enum TraceMetricByte:Lio/sentry/p;
+
+.field public static final enum Transaction:Lio/sentry/p;
+
+.field public static final enum Unknown:Lio/sentry/p;
+
+.field public static final enum UserReport:Lio/sentry/p;
 
 
 # instance fields
-.field public final synthetic Q:I
-
-.field public final R:Ljava/lang/Object;
-
-.field public final S:Ljava/lang/Object;
+.field private final category:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method private static synthetic $values()[Lio/sentry/p;
+    .locals 21
 
     .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    iput v0, p0, Lio/sentry/p;->Q:I
-
-    .line 3
-    .line 4
-    const-string v0, "java.version"
-
-    .line 5
-    .line 6
-    invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    const-string v1, "java.vendor"
-
-    .line 11
-    .line 12
-    invoke-static {v1}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v1
-
-    .line 16
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 17
-    .line 18
-    .line 19
-    iput-object v0, p0, Lio/sentry/p;->R:Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    iput-object v1, p0, Lio/sentry/p;->S:Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    return-void
-.end method
-
-.method public constructor <init>(Lio/sentry/android/core/SentryAndroidOptions;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lio/sentry/p;->Q:I
-
-    .line 28
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 29
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    .line 30
-    invoke-static {v0}, Lj$/util/DesugarCollections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lio/sentry/p;->R:Ljava/lang/Object;
-
-    .line 31
-    iput-object p1, p0, Lio/sentry/p;->S:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lio/sentry/m6;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Lio/sentry/p;->Q:I
-
-    .line 24
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 25
-    new-instance v0, Ljava/util/WeakHashMap;
-
-    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
-
-    .line 26
-    invoke-static {v0}, Lj$/util/DesugarCollections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lio/sentry/p;->R:Ljava/lang/Object;
-
-    .line 27
-    iput-object p1, p0, Lio/sentry/p;->S:Ljava/lang/Object;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(Lio/sentry/r4;)V
-    .locals 1
-
-    .line 1
-    iget-object p1, p1, Lio/sentry/r4;->R:Lio/sentry/protocol/e;
+    sget-object v1, Lio/sentry/p;->All:Lio/sentry/p;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lio/sentry/protocol/e;->h()Lio/sentry/protocol/y;
+    sget-object v2, Lio/sentry/p;->Default:Lio/sentry/p;
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    sget-object v3, Lio/sentry/p;->Error:Lio/sentry/p;
 
+    .line 6
     .line 7
-    if-nez v0, :cond_0
+    sget-object v4, Lio/sentry/p;->Feedback:Lio/sentry/p;
 
     .line 8
     .line 9
-    new-instance v0, Lio/sentry/protocol/y;
+    sget-object v5, Lio/sentry/p;->Session:Lio/sentry/p;
 
     .line 10
     .line 11
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    sget-object v6, Lio/sentry/p;->Attachment:Lio/sentry/p;
 
     .line 12
     .line 13
-    .line 14
-    invoke-virtual {p1, v0}, Lio/sentry/protocol/e;->t(Lio/sentry/protocol/y;)V
+    sget-object v7, Lio/sentry/p;->LogItem:Lio/sentry/p;
 
+    .line 14
     .line 15
+    sget-object v8, Lio/sentry/p;->LogByte:Lio/sentry/p;
+
     .line 16
     .line 17
-    :cond_0
-    invoke-virtual {p1}, Lio/sentry/protocol/e;->h()Lio/sentry/protocol/y;
+    sget-object v9, Lio/sentry/p;->TraceMetric:Lio/sentry/p;
 
     .line 18
     .line 19
-    .line 20
-    move-result-object p1
+    sget-object v10, Lio/sentry/p;->TraceMetricByte:Lio/sentry/p;
 
+    .line 20
     .line 21
-    if-eqz p1, :cond_1
+    sget-object v11, Lio/sentry/p;->Monitor:Lio/sentry/p;
 
     .line 22
     .line 23
-    iget-object v0, p1, Lio/sentry/protocol/y;->Q:Ljava/lang/String;
+    sget-object v12, Lio/sentry/p;->Profile:Lio/sentry/p;
 
     .line 24
     .line 25
-    if-nez v0, :cond_1
+    sget-object v13, Lio/sentry/p;->ProfileChunkUi:Lio/sentry/p;
 
     .line 26
     .line 27
-    iget-object v0, p1, Lio/sentry/protocol/y;->R:Ljava/lang/String;
+    sget-object v14, Lio/sentry/p;->ProfileChunk:Lio/sentry/p;
 
     .line 28
     .line 29
-    if-nez v0, :cond_1
+    sget-object v15, Lio/sentry/p;->Transaction:Lio/sentry/p;
 
     .line 30
     .line 31
-    iget-object v0, p0, Lio/sentry/p;->S:Ljava/lang/Object;
+    sget-object v16, Lio/sentry/p;->Replay:Lio/sentry/p;
 
     .line 32
     .line 33
-    check-cast v0, Ljava/lang/String;
+    sget-object v17, Lio/sentry/p;->Span:Lio/sentry/p;
 
     .line 34
     .line 35
-    iput-object v0, p1, Lio/sentry/protocol/y;->Q:Ljava/lang/String;
+    sget-object v18, Lio/sentry/p;->Security:Lio/sentry/p;
 
     .line 36
     .line 37
-    iget-object v0, p0, Lio/sentry/p;->R:Ljava/lang/Object;
+    sget-object v19, Lio/sentry/p;->UserReport:Lio/sentry/p;
 
     .line 38
     .line 39
-    check-cast v0, Ljava/lang/String;
+    sget-object v20, Lio/sentry/p;->Unknown:Lio/sentry/p;
 
     .line 40
     .line 41
-    iput-object v0, p1, Lio/sentry/protocol/y;->R:Ljava/lang/String;
-
-    .line 42
-    .line 43
-    :cond_1
-    return-void
-.end method
-
-.method public final f(Lio/sentry/o6;Lio/sentry/k0;)Lio/sentry/o6;
-    .locals 0
-
-    .line 1
-    iget p2, p0, Lio/sentry/p;->Q:I
-
-    .line 2
-    .line 3
-    return-object p1
-.end method
-
-.method public final h(Lio/sentry/d5;Lio/sentry/k0;)Lio/sentry/d5;
-    .locals 8
-
-    .line 1
-    iget v0, p0, Lio/sentry/p;->Q:I
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    iget-object v2, p0, Lio/sentry/p;->S:Ljava/lang/Object;
-
-    .line 5
-    .line 6
-    iget-object v3, p0, Lio/sentry/p;->R:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    const/4 v4, 0x0
-
-    .line 9
-    const/4 v5, 0x0
-
-    .line 10
-    packed-switch v0, :pswitch_data_0
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {p0, p1}, Lio/sentry/p;->a(Lio/sentry/r4;)V
-
-    .line 14
-    .line 15
-    .line 16
-    return-object p1
-
-    .line 17
-    :pswitch_0
-    check-cast v3, Ljava/util/Map;
-
-    .line 18
-    .line 19
-    check-cast v2, Lio/sentry/m6;
-
-    .line 20
-    .line 21
-    invoke-virtual {v2}, Lio/sentry/m6;->isEnableDeduplication()Z
-
-    .line 22
-    .line 23
-    .line 24
-    move-result p2
-
-    .line 25
-    if-eqz p2, :cond_4
-
-    .line 26
-    .line 27
-    invoke-virtual {p1}, Lio/sentry/r4;->a()Ljava/lang/Throwable;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object p2
-
-    .line 31
-    if-eqz p2, :cond_5
-
-    .line 32
-    .line 33
-    invoke-interface {v3, p2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v0
-
-    .line 37
-    if-nez v0, :cond_3
-
-    .line 38
-    .line 39
-    new-instance v0, Ljava/util/ArrayList;
-
-    .line 40
-    .line 41
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    filled-new-array/range {v1 .. v20}, [Lio/sentry/p;
 
     .line 42
     .line 43
     .line 44
-    move-object v6, p2
+    move-result-object v0
 
     .line 45
-    :goto_0
-    invoke-virtual {v6}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+    return-object v0
+.end method
 
+.method static constructor <clinit>()V
+    .locals 4
+
+    .line 1
+    new-instance v0, Lio/sentry/p;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    const-string v2, "__all__"
+
+    .line 5
+    .line 6
+    const-string v3, "All"
+
+    .line 7
+    .line 8
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sput-object v0, Lio/sentry/p;->All:Lio/sentry/p;
+
+    .line 12
+    .line 13
+    new-instance v0, Lio/sentry/p;
+
+    .line 14
+    .line 15
+    const/4 v1, 0x1
+
+    .line 16
+    const-string v2, "default"
+
+    .line 17
+    .line 18
+    const-string v3, "Default"
+
+    .line 19
+    .line 20
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    sput-object v0, Lio/sentry/p;->Default:Lio/sentry/p;
+
+    .line 24
+    .line 25
+    new-instance v0, Lio/sentry/p;
+
+    .line 26
+    .line 27
+    const/4 v1, 0x2
+
+    .line 28
+    const-string v2, "error"
+
+    .line 29
+    .line 30
+    const-string v3, "Error"
+
+    .line 31
+    .line 32
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    sput-object v0, Lio/sentry/p;->Error:Lio/sentry/p;
+
+    .line 36
+    .line 37
+    new-instance v0, Lio/sentry/p;
+
+    .line 38
+    .line 39
+    const/4 v1, 0x3
+
+    .line 40
+    const-string v2, "feedback"
+
+    .line 41
+    .line 42
+    const-string v3, "Feedback"
+
+    .line 43
+    .line 44
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 45
     .line 46
     .line 47
-    .line 48
-    move-result-object v7
+    sput-object v0, Lio/sentry/p;->Feedback:Lio/sentry/p;
 
+    .line 48
     .line 49
-    if-eqz v7, :cond_0
+    new-instance v0, Lio/sentry/p;
 
     .line 50
     .line 51
-    invoke-virtual {v6}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+    const/4 v1, 0x4
 
     .line 52
+    const-string v2, "session"
+
     .line 53
     .line 54
-    move-result-object v7
+    const-string v3, "Session"
 
     .line 55
-    invoke-virtual {v0, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 56
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
     .line 57
     .line 58
-    invoke-virtual {v6}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
-
     .line 59
+    sput-object v0, Lio/sentry/p;->Session:Lio/sentry/p;
+
     .line 60
     .line 61
-    move-result-object v6
+    new-instance v0, Lio/sentry/p;
 
     .line 62
-    goto :goto_0
-
     .line 63
-    :cond_0
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    const/4 v1, 0x5
 
     .line 64
+    const-string v2, "attachment"
+
     .line 65
     .line 66
-    move-result-object v0
+    const-string v3, "Attachment"
 
     .line 67
-    :cond_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
     .line 68
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
     .line 69
     .line 70
-    move-result v6
-
     .line 71
-    if-eqz v6, :cond_2
+    sput-object v0, Lio/sentry/p;->Attachment:Lio/sentry/p;
 
     .line 72
     .line 73
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    new-instance v0, Lio/sentry/p;
 
     .line 74
     .line 75
+    const/4 v1, 0x6
+
     .line 76
-    move-result-object v6
+    const-string v2, "log_item"
 
     .line 77
-    invoke-interface {v3, v6}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
     .line 78
+    const-string v3, "LogItem"
+
     .line 79
     .line 80
-    move-result v6
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 81
-    if-eqz v6, :cond_1
-
     .line 82
     .line 83
-    goto :goto_1
+    sput-object v0, Lio/sentry/p;->LogItem:Lio/sentry/p;
 
     .line 84
-    :cond_2
-    invoke-interface {v3, p2, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 85
+    new-instance v0, Lio/sentry/p;
+
     .line 86
     .line 87
-    goto :goto_2
+    const/4 v1, 0x7
 
     .line 88
-    :cond_3
-    :goto_1
-    invoke-virtual {v2}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    const-string v2, "log_byte"
 
     .line 89
     .line 90
-    .line 91
-    move-result-object p2
+    const-string v3, "LogByte"
 
+    .line 91
     .line 92
-    sget-object v0, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 93
     .line 94
-    iget-object p1, p1, Lio/sentry/r4;->Q:Lio/sentry/protocol/w;
-
     .line 95
+    sput-object v0, Lio/sentry/p;->LogByte:Lio/sentry/p;
+
     .line 96
-    new-array v1, v1, [Ljava/lang/Object;
-
     .line 97
+    new-instance v0, Lio/sentry/p;
+
     .line 98
-    aput-object p1, v1, v5
-
     .line 99
+    const/16 v1, 0x8
+
     .line 100
-    const-string p1, "Duplicate Exception detected. Event %s will be discarded."
-
     .line 101
-    .line 102
-    invoke-interface {p2, v0, p1, v1}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    const-string v2, "trace_metric"
 
+    .line 102
     .line 103
+    const-string v3, "TraceMetric"
+
     .line 104
     .line 105
-    move-object p1, v4
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 106
-    goto :goto_2
-
     .line 107
-    :cond_4
-    invoke-virtual {v2}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
-
     .line 108
+    sput-object v0, Lio/sentry/p;->TraceMetric:Lio/sentry/p;
+
     .line 109
     .line 110
-    move-result-object p2
+    new-instance v0, Lio/sentry/p;
 
     .line 111
-    sget-object v0, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
-
     .line 112
+    const/16 v1, 0x9
+
     .line 113
-    const-string v1, "Event deduplication is disabled."
-
     .line 114
+    const-string v2, "trace_metric_byte"
+
     .line 115
-    new-array v2, v5, [Ljava/lang/Object;
-
     .line 116
-    .line 117
-    invoke-interface {p2, v0, v1, v2}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+    const-string v3, "TraceMetricByte"
 
+    .line 117
     .line 118
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
     .line 119
     .line 120
-    :cond_5
-    :goto_2
-    return-object p1
-
     .line 121
-    :pswitch_1
-    check-cast v3, Ljava/util/Map;
+    sput-object v0, Lio/sentry/p;->TraceMetricByte:Lio/sentry/p;
 
     .line 122
     .line 123
-    const-string v0, "sentry:typeCheckHint"
+    new-instance v0, Lio/sentry/p;
 
     .line 124
     .line 125
-    invoke-virtual {p2, v0}, Lio/sentry/k0;->b(Ljava/lang/String;)Ljava/lang/Object;
+    const/16 v1, 0xa
 
     .line 126
     .line 127
-    .line 128
-    move-result-object v0
+    const-string v2, "monitor"
 
+    .line 128
     .line 129
-    const-class v6, Lio/sentry/j7;
+    const-string v3, "Monitor"
 
     .line 130
     .line 131
-    invoke-virtual {v6, v0}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 132
     .line 133
     .line 134
-    move-result v0
+    sput-object v0, Lio/sentry/p;->Monitor:Lio/sentry/p;
 
     .line 135
-    if-nez v0, :cond_6
-
     .line 136
-    .line 137
-    goto :goto_3
+    new-instance v0, Lio/sentry/p;
 
+    .line 137
     .line 138
-    :cond_6
-    invoke-virtual {p1}, Lio/sentry/d5;->f()Lio/sentry/protocol/v;
+    const/16 v1, 0xb
 
     .line 139
     .line 140
-    .line 141
-    move-result-object v0
+    const-string v2, "profile"
 
+    .line 141
     .line 142
-    if-nez v0, :cond_7
+    const-string v3, "Profile"
 
     .line 143
     .line 144
-    goto :goto_3
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 145
-    :cond_7
-    iget-object v6, v0, Lio/sentry/protocol/v;->Q:Ljava/lang/String;
-
     .line 146
     .line 147
-    if-nez v6, :cond_8
+    sput-object v0, Lio/sentry/p;->Profile:Lio/sentry/p;
 
     .line 148
     .line 149
-    goto :goto_3
+    new-instance v0, Lio/sentry/p;
 
     .line 150
-    :cond_8
-    iget-object v0, v0, Lio/sentry/protocol/v;->T:Ljava/lang/Long;
-
     .line 151
+    const/16 v1, 0xc
+
     .line 152
-    if-nez v0, :cond_9
-
     .line 153
-    .line 154
-    goto :goto_3
+    const-string v2, "profile_chunk_ui"
 
+    .line 154
     .line 155
-    :cond_9
-    invoke-interface {v3, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v3, "ProfileChunkUi"
 
     .line 156
     .line 157
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
     .line 158
-    move-result-object v7
-
     .line 159
-    check-cast v7, Ljava/lang/Long;
-
     .line 160
+    sput-object v0, Lio/sentry/p;->ProfileChunkUi:Lio/sentry/p;
+
     .line 161
-    if-eqz v7, :cond_a
-
     .line 162
-    .line 163
-    invoke-virtual {v7, v0}, Ljava/lang/Long;->equals(Ljava/lang/Object;)Z
+    new-instance v0, Lio/sentry/p;
 
+    .line 163
     .line 164
+    const/16 v1, 0xd
+
     .line 165
     .line 166
-    move-result v7
+    const-string v2, "profile_chunk"
 
     .line 167
-    if-nez v7, :cond_a
-
     .line 168
+    const-string v3, "ProfileChunk"
+
     .line 169
-    check-cast v2, Lio/sentry/android/core/SentryAndroidOptions;
-
     .line 170
-    .line 171
-    invoke-virtual {v2}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 171
     .line 172
     .line 173
-    .line 174
-    move-result-object v0
+    sput-object v0, Lio/sentry/p;->ProfileChunk:Lio/sentry/p;
 
+    .line 174
     .line 175
-    sget-object v2, Lio/sentry/m5;->INFO:Lio/sentry/m5;
+    new-instance v0, Lio/sentry/p;
 
     .line 176
     .line 177
-    iget-object p1, p1, Lio/sentry/r4;->Q:Lio/sentry/protocol/w;
+    const/16 v1, 0xe
 
     .line 178
     .line 179
-    new-array v1, v1, [Ljava/lang/Object;
+    const-string v2, "transaction"
 
     .line 180
     .line 181
-    aput-object p1, v1, v5
+    const-string v3, "Transaction"
 
     .line 182
     .line 183
-    const-string p1, "Event %s has been dropped due to multi-threaded deduplication"
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 184
     .line 185
-    invoke-interface {v0, v2, p1, v1}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
-
     .line 186
+    sput-object v0, Lio/sentry/p;->Transaction:Lio/sentry/p;
+
     .line 187
     .line 188
-    sget-object p1, Lio/sentry/hints/e;->MULTITHREADED_DEDUPLICATION:Lio/sentry/hints/e;
+    new-instance v0, Lio/sentry/p;
 
     .line 189
     .line 190
-    const-string v0, "sentry:eventDropReason"
+    const/16 v1, 0xf
 
     .line 191
     .line 192
-    invoke-virtual {p2, p1, v0}, Lio/sentry/k0;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v2, "replay"
 
     .line 193
     .line 194
-    .line 195
-    move-object p1, v4
+    const-string v3, "Replay"
 
+    .line 195
     .line 196
-    goto :goto_3
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 197
-    :cond_a
-    invoke-interface {v3, v6, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 198
     .line 199
-    .line 200
-    :goto_3
-    return-object p1
+    sput-object v0, Lio/sentry/p;->Replay:Lio/sentry/p;
 
+    .line 200
     .line 201
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    new-instance v0, Lio/sentry/p;
+
+    .line 202
+    .line 203
+    const/16 v1, 0x10
+
+    .line 204
+    .line 205
+    const-string v2, "span"
+
+    .line 206
+    .line 207
+    const-string v3, "Span"
+
+    .line 208
+    .line 209
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 210
+    .line 211
+    .line 212
+    sput-object v0, Lio/sentry/p;->Span:Lio/sentry/p;
+
+    .line 213
+    .line 214
+    new-instance v0, Lio/sentry/p;
+
+    .line 215
+    .line 216
+    const/16 v1, 0x11
+
+    .line 217
+    .line 218
+    const-string v2, "security"
+
+    .line 219
+    .line 220
+    const-string v3, "Security"
+
+    .line 221
+    .line 222
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 223
+    .line 224
+    .line 225
+    sput-object v0, Lio/sentry/p;->Security:Lio/sentry/p;
+
+    .line 226
+    .line 227
+    new-instance v0, Lio/sentry/p;
+
+    .line 228
+    .line 229
+    const/16 v1, 0x12
+
+    .line 230
+    .line 231
+    const-string v2, "user_report"
+
+    .line 232
+    .line 233
+    const-string v3, "UserReport"
+
+    .line 234
+    .line 235
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 236
+    .line 237
+    .line 238
+    sput-object v0, Lio/sentry/p;->UserReport:Lio/sentry/p;
+
+    .line 239
+    .line 240
+    new-instance v0, Lio/sentry/p;
+
+    .line 241
+    .line 242
+    const/16 v1, 0x13
+
+    .line 243
+    .line 244
+    const-string v2, "unknown"
+
+    .line 245
+    .line 246
+    const-string v3, "Unknown"
+
+    .line 247
+    .line 248
+    invoke-direct {v0, v3, v1, v2}, Lio/sentry/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 249
+    .line 250
+    .line 251
+    sput-object v0, Lio/sentry/p;->Unknown:Lio/sentry/p;
+
+    .line 252
+    .line 253
+    invoke-static {}, Lio/sentry/p;->$values()[Lio/sentry/p;
+
+    .line 254
+    .line 255
+    .line 256
+    move-result-object v0
+
+    .line 257
+    sput-object v0, Lio/sentry/p;->$VALUES:[Lio/sentry/p;
+
+    .line 258
+    .line 259
+    return-void
 .end method
 
-.method public final i(Lio/sentry/protocol/f0;Lio/sentry/k0;)Lio/sentry/protocol/f0;
+.method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    iget p2, p0, Lio/sentry/p;->Q:I
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
     .line 3
-    packed-switch p2, :pswitch_data_0
+    .line 4
+    iput-object p3, p0, Lio/sentry/p;->category:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lio/sentry/p;
+    .locals 1
+
+    .line 1
+    const-class v0, Lio/sentry/p;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p0, p1}, Lio/sentry/p;->a(Lio/sentry/r4;)V
+    move-result-object p0
 
     .line 7
+    check-cast p0, Lio/sentry/p;
+
     .line 8
     .line 9
-    :pswitch_0
-    return-object p1
+    return-object p0
+.end method
 
-    .line 10
-    nop
+.method public static values()[Lio/sentry/p;
+    .locals 1
 
-    .line 11
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    sget-object v0, Lio/sentry/p;->$VALUES:[Lio/sentry/p;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [Lio/sentry/p;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lio/sentry/p;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public getCategory()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lio/sentry/p;->category:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

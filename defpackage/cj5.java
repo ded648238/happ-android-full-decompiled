@@ -1,45 +1,70 @@
 package defpackage;
 
-import java.util.concurrent.atomic.AtomicReferenceArray;
+import java.util.Iterator;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class cj5 {
-    private volatile AtomicReferenceArray<Object> array;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public abstract class cj5 extends qt0 {
+    public final bj5 b;
 
-    public cj5(int i) {
-        this.array = new AtomicReferenceArray<>(i);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public cj5(vo3 vo3Var) {
+        super(vo3Var);
+        vo3Var.getClass();
+        this.b = new bj5(vo3Var.d());
     }
 
-    public final int a() {
-        return this.array.length();
+    @Override // defpackage.qt0, defpackage.vo3
+    public final void a(o97 o97Var, Object obj) {
+        int h = h(obj);
+        bj5 bj5Var = this.b;
+        bj5Var.getClass();
+        o97 a = o97Var.a(bj5Var);
+        o(a, obj, h);
+        a.v(bj5Var);
     }
 
-    public final Object b(int i) {
-        AtomicReferenceArray<Object> atomicReferenceArray = this.array;
-        if (i < atomicReferenceArray.length()) {
-            return atomicReferenceArray.get(i);
-        }
-        return null;
+    @Override // defpackage.y0, defpackage.vo3
+    public final Object b(ua1 ua1Var) {
+        return i(ua1Var);
     }
 
-    public final void c(int i, yw0 yw0Var) {
-        AtomicReferenceArray<Object> atomicReferenceArray = this.array;
-        int length = atomicReferenceArray.length();
-        if (i < length) {
-            atomicReferenceArray.set(i, yw0Var);
-            return;
-        }
-        int i2 = i + 1;
-        int i3 = length * 2;
-        if (i2 < i3) {
-            i2 = i3;
-        }
-        AtomicReferenceArray<Object> atomicReferenceArray2 = new AtomicReferenceArray<>(i2);
-        for (int i4 = 0; i4 < length; i4++) {
-            atomicReferenceArray2.set(i4, atomicReferenceArray.get(i4));
-        }
-        atomicReferenceArray2.set(i, yw0Var);
-        this.array = atomicReferenceArray2;
+    @Override // defpackage.vo3
+    public final er6 d() {
+        return this.b;
     }
+
+    @Override // defpackage.y0
+    public final Object e() {
+        return (aj5) k(n());
+    }
+
+    @Override // defpackage.y0
+    public final int f(Object obj) {
+        aj5 aj5Var = (aj5) obj;
+        aj5Var.getClass();
+        return aj5Var.d();
+    }
+
+    @Override // defpackage.y0
+    public final Iterator g(Object obj) {
+        throw new IllegalStateException("This method lead to boxing and must not be used, use writeContents instead");
+    }
+
+    @Override // defpackage.y0
+    public final Object l(Object obj) {
+        aj5 aj5Var = (aj5) obj;
+        aj5Var.getClass();
+        return aj5Var.a();
+    }
+
+    @Override // defpackage.qt0
+    public final void m(int i, Object obj, Object obj2) {
+        ((aj5) obj).getClass();
+        throw new IllegalStateException("This method lead to boxing and must not be used, use Builder.append instead");
+    }
+
+    public abstract Object n();
+
+    public abstract void o(o97 o97Var, Object obj, int i);
 }

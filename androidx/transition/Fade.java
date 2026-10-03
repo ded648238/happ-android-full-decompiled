@@ -2,43 +2,43 @@ package androidx.transition;
 
 import android.animation.ObjectAnimator;
 import android.view.View;
-import defpackage.a95;
-import defpackage.eu1;
-import defpackage.mp7;
-import defpackage.r87;
+import defpackage.at5;
+import defpackage.lk8;
+import defpackage.n32;
+import defpackage.z08;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class Fade extends Visibility {
     public Fade(int i) {
-        this.s0 = i;
+        this.B0 = i;
     }
 
-    public static float N(r87 r87Var, float f) {
+    public static float N(z08 z08Var, float f) {
         Float f2;
-        return (r87Var == null || (f2 = (Float) r87Var.a.get("android:fade:transitionAlpha")) == null) ? f : f2.floatValue();
+        return (z08Var == null || (f2 = (Float) z08Var.a.get("android:fade:transitionAlpha")) == null) ? f : f2.floatValue();
     }
 
     public final ObjectAnimator M(View view, float f, float f2) {
         if (f == f2) {
             return null;
         }
-        mp7.a.c(view, f);
-        ObjectAnimator objectAnimatorOfFloat = ObjectAnimator.ofFloat(view, mp7.b, f2);
-        eu1 eu1Var = new eu1(view);
-        objectAnimatorOfFloat.addListener(eu1Var);
-        n().a(eu1Var);
-        return objectAnimatorOfFloat;
+        lk8.a.e(view, f);
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, lk8.b, f2);
+        n32 n32Var = new n32(view);
+        ofFloat.addListener(n32Var);
+        n().a(n32Var);
+        return ofFloat;
     }
 
     @Override // androidx.transition.Transition
-    public final void f(r87 r87Var) {
-        Visibility.K(r87Var);
-        View view = r87Var.b;
-        Float fValueOf = (Float) view.getTag(a95.transition_pause_alpha);
-        if (fValueOf == null) {
-            fValueOf = view.getVisibility() == 0 ? Float.valueOf(mp7.a.a(view)) : Float.valueOf(0.0f);
+    public final void f(z08 z08Var) {
+        Visibility.K(z08Var);
+        View view = z08Var.b;
+        Float f = (Float) view.getTag(at5.transition_pause_alpha);
+        if (f == null) {
+            f = view.getVisibility() == 0 ? Float.valueOf(lk8.a.b(view)) : Float.valueOf(0.0f);
         }
-        r87Var.a.put("android:fade:transitionAlpha", fValueOf);
+        z08Var.a.put("android:fade:transitionAlpha", f);
     }
 }

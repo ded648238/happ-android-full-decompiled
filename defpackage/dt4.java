@@ -1,12 +1,24 @@
 package defpackage;
 
-import android.os.Parcelable;
-import java.util.Map;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class dt4 extends d31 {
+    public vy5 c0;
+    public vy5 d0;
+    public /* synthetic */ Object e0;
+    public final /* synthetic */ gt4 f0;
+    public int g0;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface dt4 extends Map, r73 {
-    dt4 d(Parcelable parcelable, Object obj);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public dt4(gt4 gt4Var, b31 b31Var) {
+        super(b31Var);
+        this.f0 = gt4Var;
+    }
 
-    dt4 k(Parcelable parcelable);
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.e0 = obj;
+        this.g0 |= Integer.MIN_VALUE;
+        return gt4.b(this.f0, this);
+    }
 }

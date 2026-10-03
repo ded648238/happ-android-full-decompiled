@@ -1,6 +1,34 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public interface kl0 {
+import java.util.Map;
+
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class kl0 implements ll0 {
+    public final Map X;
+    public final Map Y;
+
+    public kl0(Map map, Map map2) {
+        this.X = map;
+        this.Y = map2;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof kl0)) {
+            return false;
+        }
+        kl0 kl0Var = (kl0) obj;
+        return this.X.equals(kl0Var.X) && this.Y.equals(kl0Var.Y);
+    }
+
+    public final int hashCode() {
+        return this.Y.hashCode() + (this.X.hashCode() * 31);
+    }
+
+    public final String toString() {
+        return "Success(deferred=" + this.X + ", outputSurfaceMap=" + this.Y + ')';
+    }
 }

@@ -1,60 +1,74 @@
 .class public final Lg1;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
-
-
-# static fields
-.field public static final d:Lg1;
+.super Ld31;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public final a:Ljava/lang/Runnable;
+.field public c0:Lsi6;
 
-.field public final b:Ljava/util/concurrent/Executor;
+.field public synthetic d0:Ljava/lang/Object;
 
-.field public c:Lg1;
+.field public final synthetic e0:Lb11;
+
+.field public f0:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lg1;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-direct {v0, v1, v1}, Lg1;-><init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, Lg1;->d:Lg1;
-
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+.method public constructor <init>(Lb11;Lb31;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lg1;->e0:Lb11;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lg1;->a:Ljava/lang/Runnable;
+    invoke-direct {p0, p2}, Ld31;-><init>(Lb31;)V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Lg1;->b:Ljava/util/concurrent/Executor;
-
-    .line 7
-    .line 8
     return-void
+.end method
+
+
+# virtual methods
+.method public final q(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Lg1;->d0:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    iget p1, p0, Lg1;->f0:I
+
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
+
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    iput p1, p0, Lg1;->f0:I
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Lg1;->e0:Lb11;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-virtual {p1, v0, p0}, Lb11;->a(Lla2;Lb31;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
 .end method

@@ -1,398 +1,96 @@
-.class public final Lbv;
-.super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public final synthetic Lbv;
+.super Ljq4;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
-.field public static final f:Lbv;
-
-
-# instance fields
-.field public final a:J
-
-.field public final b:I
-
-.field public final c:I
-
-.field public final d:J
-
-.field public final e:I
+.field public static final X:Lbv;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 5
 
     .line 1
     new-instance v0, Lbv;
 
     .line 2
     .line 3
-    const-wide/32 v5, 0x240c8400
+    const-string v1, "getFlags$org_jetbrains_kotlin_kotlin_metadata()I"
 
     .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    const v7, 0x14000
+    const-class v3, Lkr3;
 
     .line 7
     .line 8
-    .line 9
-    const-wide/32 v1, 0xa00000
+    const-string v4, "flags"
 
+    .line 9
     .line 10
+    invoke-direct {v0, v3, v4, v1, v2}, Ljq4;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
     .line 11
     .line 12
-    const/16 v3, 0xc8
-
     .line 13
-    .line 14
-    const/16 v4, 0x2710
+    sput-object v0, Lbv;->X:Lbv;
 
+    .line 14
     .line 15
-    .line 16
-    invoke-direct/range {v0 .. v7}, Lbv;-><init>(JIIJI)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v0, Lbv;->f:Lbv;
-
-    .line 20
-    .line 21
-    return-void
-.end method
-
-.method public constructor <init>(JIIJI)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-wide p1, p0, Lbv;->a:J
-
-    .line 5
-    .line 6
-    iput p3, p0, Lbv;->b:I
-
-    .line 7
-    .line 8
-    iput p4, p0, Lbv;->c:I
-
-    .line 9
-    .line 10
-    iput-wide p5, p0, Lbv;->d:J
-
-    .line 11
-    .line 12
-    iput p7, p0, Lbv;->e:I
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final E(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    check-cast p1, Lkr3;
 
     .line 2
-    if-ne p1, p0, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    check-cast p2, Ljava/lang/Number;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, Lbv;
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-eqz v1, :cond_1
+    move-result p0
 
     .line 9
+    iput p0, p1, Lkr3;->a:I
+
     .line 10
-    check-cast p1, Lbv;
-
     .line 11
-    .line 12
-    iget-wide v3, p0, Lbv;->a:J
-
-    .line 13
-    .line 14
-    iget-wide v5, p1, Lbv;->a:J
-
-    .line 15
-    .line 16
-    cmp-long v1, v3, v5
-
-    .line 17
-    .line 18
-    if-nez v1, :cond_1
-
-    .line 19
-    .line 20
-    iget v1, p0, Lbv;->b:I
-
-    .line 21
-    .line 22
-    iget v3, p1, Lbv;->b:I
-
-    .line 23
-    .line 24
-    if-ne v1, v3, :cond_1
-
-    .line 25
-    .line 26
-    iget v1, p0, Lbv;->c:I
-
-    .line 27
-    .line 28
-    iget v3, p1, Lbv;->c:I
-
-    .line 29
-    .line 30
-    if-ne v1, v3, :cond_1
-
-    .line 31
-    .line 32
-    iget-wide v3, p0, Lbv;->d:J
-
-    .line 33
-    .line 34
-    iget-wide v5, p1, Lbv;->d:J
-
-    .line 35
-    .line 36
-    cmp-long v1, v3, v5
-
-    .line 37
-    .line 38
-    if-nez v1, :cond_1
-
-    .line 39
-    .line 40
-    iget v1, p0, Lbv;->e:I
-
-    .line 41
-    .line 42
-    iget p1, p1, Lbv;->e:I
-
-    .line 43
-    .line 44
-    if-ne v1, p1, :cond_1
-
-    .line 45
-    .line 46
-    return v0
-
-    .line 47
-    :cond_1
-    return v2
+    return-void
 .end method
 
-.method public final hashCode()I
-    .locals 7
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-wide v0, p0, Lbv;->a:J
+    check-cast p1, Lkr3;
 
     .line 2
     .line 3
-    const/16 v2, 0x20
+    iget p0, p1, Lkr3;->a:I
 
     .line 4
     .line 5
-    ushr-long v3, v0, v2
-
-    .line 6
-    .line 7
-    xor-long/2addr v0, v3
-
-    .line 8
-    long-to-int v1, v0
-
-    .line 9
-    const v0, 0xf4243
-
-    .line 10
-    .line 11
-    .line 12
-    xor-int/2addr v1, v0
-
-    .line 13
-    mul-int v1, v1, v0
-
-    .line 14
-    .line 15
-    iget v3, p0, Lbv;->b:I
-
-    .line 16
-    .line 17
-    xor-int/2addr v1, v3
-
-    .line 18
-    mul-int v1, v1, v0
-
-    .line 19
-    .line 20
-    iget v3, p0, Lbv;->c:I
-
-    .line 21
-    .line 22
-    xor-int/2addr v1, v3
-
-    .line 23
-    mul-int v1, v1, v0
-
-    .line 24
-    .line 25
-    iget-wide v3, p0, Lbv;->d:J
-
-    .line 26
-    .line 27
-    ushr-long v5, v3, v2
-
-    .line 28
-    .line 29
-    xor-long/2addr v3, v5
-
-    .line 30
-    long-to-int v2, v3
-
-    .line 31
-    xor-int/2addr v1, v2
-
-    .line 32
-    mul-int v1, v1, v0
-
-    .line 33
-    .line 34
-    iget v0, p0, Lbv;->e:I
-
-    .line 35
-    .line 36
-    xor-int/2addr v0, v1
-
-    .line 37
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "EventStoreConfig{maxStorageSizeInBytes="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 6
     .line 7
     .line 8
-    iget-wide v1, p0, Lbv;->a:J
+    move-result-object p0
 
     .line 9
-    .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", loadBatchSize="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget v1, p0, Lbv;->b:I
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", criticalSectionEnterTimeoutMs="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget v1, p0, Lbv;->c:I
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", eventCleanUpAge="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-wide v1, p0, Lbv;->d:J
-
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v1, ", maxBlobByteSizePerRow="
-
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    iget v1, p0, Lbv;->e:I
-
-    .line 49
-    .line 50
-    const-string v2, "}"
-
-    .line 51
-    .line 52
-    invoke-static {v0, v1, v2}, Lkd0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    return-object v0
+    return-object p0
 .end method

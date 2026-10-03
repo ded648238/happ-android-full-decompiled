@@ -1,6 +1,6 @@
 .class public final Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;
 .super Lsu/happ/proxyutility/ui/SnackbarHostActivity;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -26,19 +26,19 @@
 
 
 # static fields
-.field public static final synthetic H0:I
+.field public static final synthetic S0:I
 
 
 # instance fields
-.field public C0:Lpv7;
+.field public N0:Lb6;
 
-.field public final D0:Ll5;
+.field public final O0:Lv5;
 
-.field public final E0:Lzu6;
+.field public final P0:Lmm7;
 
-.field public final F0:Lzu6;
+.field public final Q0:Lmm7;
 
-.field public final G0:Le6;
+.field public final R0:Lq6;
 
 
 # direct methods
@@ -51,31 +51,31 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ler4;
+    new-instance v0, Lj95;
 
     .line 5
     .line 6
     const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v0, p0, v1}, Ler4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
+    invoke-direct {v0, p0, v1}, Lj95;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v2, Ll5;
+    new-instance v2, Lv5;
 
     .line 11
     .line 12
-    const-class v3, Lds4;
+    const-class v3, Lia5;
 
     .line 13
     .line 14
-    sget-object v4, Lhg5;->a:Lig5;
+    sget-object v4, Lp06;->a:Lq06;
 
     .line 15
     .line 16
-    invoke-virtual {v4, v3}, Lig5;->b(Ljava/lang/Class;)Lx63;
+    invoke-virtual {v4, v3}, Lq06;->b(Ljava/lang/Class;)Lgn3;
 
     .line 17
     .line 18
@@ -83,106 +83,106 @@
     move-result-object v3
 
     .line 20
-    new-instance v4, Ler4;
+    new-instance v4, Lj95;
 
     .line 21
     .line 22
     const/4 v5, 0x1
 
     .line 23
-    invoke-direct {v4, p0, v5}, Ler4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
+    invoke-direct {v4, p0, v5}, Lj95;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
 
     .line 24
     .line 25
     .line 26
-    new-instance v6, Ler4;
+    new-instance v6, Lj95;
 
     .line 27
     .line 28
     const/4 v7, 0x2
 
     .line 29
-    invoke-direct {v6, p0, v7}, Ler4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
+    invoke-direct {v6, p0, v7}, Lj95;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
 
     .line 30
     .line 31
     .line 32
-    invoke-direct {v2, v3, v4, v0, v6}, Ll5;-><init>(Lx63;Lg72;Lg72;Lg72;)V
+    invoke-direct {v2, v3, v4, v0, v6}, Lv5;-><init>(Lgn3;Lji2;Lji2;Lji2;)V
 
     .line 33
     .line 34
     .line 35
-    iput-object v2, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->D0:Ll5;
+    iput-object v2, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->O0:Lv5;
 
     .line 36
     .line 37
-    new-instance v0, Ltq4;
+    new-instance v0, Ly85;
 
     .line 38
     .line 39
-    invoke-direct {v0, p0, v1}, Ltq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
+    invoke-direct {v0, p0, v1}, Ly85;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
 
     .line 40
     .line 41
     .line 42
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 43
     .line 44
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 45
     .line 46
     .line 47
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->E0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->P0:Lmm7;
 
     .line 48
     .line 49
-    new-instance v0, Ltq4;
+    new-instance v0, Ly85;
 
     .line 50
     .line 51
-    invoke-direct {v0, p0, v5}, Ltq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
+    invoke-direct {v0, p0, v5}, Ly85;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
 
     .line 52
     .line 53
     .line 54
-    new-instance v1, Lzu6;
+    new-instance v1, Lmm7;
 
     .line 55
     .line 56
-    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+    invoke-direct {v1, v0}, Lmm7;-><init>(Lji2;)V
 
     .line 57
     .line 58
     .line 59
-    iput-object v1, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->F0:Lzu6;
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->Q0:Lmm7;
 
     .line 60
     .line 61
-    new-instance v0, La6;
+    new-instance v0, Lm6;
 
     .line 62
     .line 63
-    invoke-direct {v0, v7}, La6;-><init>(I)V
+    invoke-direct {v0, v7}, Lm6;-><init>(I)V
 
     .line 64
     .line 65
     .line 66
-    new-instance v1, Lyx;
+    new-instance v1, Lv31;
 
     .line 67
     .line 68
-    const/16 v2, 0xc
+    const/16 v2, 0x14
 
     .line 69
     .line 70
-    invoke-direct {v1, v2, p0}, Lyx;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lv31;-><init>(ILjava/lang/Object;)V
 
     .line 71
     .line 72
     .line 73
-    invoke-virtual {p0, v1, v0}, Landroidx/activity/ComponentActivity;->k(Lw5;Lyu7;)Le6;
+    invoke-virtual {p0, v1, v0}, Landroidx/activity/ComponentActivity;->l(Li6;Lyl0;)Lq6;
 
     .line 74
     .line 75
@@ -190,7 +190,7 @@
     move-result-object v0
 
     .line 77
-    iput-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->G0:Le6;
+    iput-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->R0:Lq6;
 
     .line 78
     .line 79
@@ -199,38 +199,38 @@
 
 
 # virtual methods
-.method public final A()Lds4;
-    .locals 1
+.method public final A()Lia5;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->D0:Ll5;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->O0:Lv5;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ll5;->getValue()Ljava/lang/Object;
+    invoke-virtual {p0}, Lv5;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, Lds4;
+    check-cast p0, Lia5;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
-.method public final B(Ljava/lang/String;Luf2;)V
+.method public final B(Ljava/lang/String;Lxs2;)V
     .locals 8
 
     .line 1
-    sget v0, Lsf2;->B:I
+    sget v0, Lls2;->B:I
 
     .line 2
     .line 3
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
 
     .line 4
     .line 5
@@ -238,7 +238,7 @@
 
     .line 6
     .line 7
-    iget-object v0, v0, Lpv7;->a0:Ljava/lang/Object;
+    iget-object v0, v0, Lb6;->m0:Landroid/view/ViewGroup;
 
     .line 8
     .line 9
@@ -254,7 +254,7 @@
     move-result-object v2
 
     .line 15
-    iget v6, p0, Lsu/happ/proxyutility/ui/BaseActivity;->v0:I
+    iget v6, p0, Lsu/happ/proxyutility/ui/BaseActivity;->G0:I
 
     .line 16
     .line 17
@@ -274,7 +274,7 @@
     move-object v4, p2
 
     .line 23
-    invoke-static/range {v1 .. v7}, Lap0;->n(Lsu/happ/proxyutility/ui/BaseActivity;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Ljava/lang/String;Luf2;Ljava/lang/Iterable;II)V
+    invoke-static/range {v1 .. v7}, Lkv1;->j(Lsu/happ/proxyutility/ui/BaseActivity;Landroidx/coordinatorlayout/widget/CoordinatorLayout;Ljava/lang/String;Lxs2;Ljava/lang/Iterable;II)V
 
     .line 24
     .line 25
@@ -283,23 +283,23 @@
 
     .line 27
     :cond_0
-    const-string p1, "binding"
+    const-string p0, "binding"
 
     .line 28
     .line 29
-    invoke-static {p1}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 30
     .line 31
     .line 32
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 33
-    throw p1
+    throw p0
 .end method
 
 .method public final onCreate(Landroid/os/Bundle;)V
-    .locals 22
+    .locals 21
 
     .line 1
     move-object/from16 v0, p0
@@ -319,7 +319,7 @@
     move-result-object v1
 
     .line 10
-    sget v2, Lt95;->activity_per_app_proxy:I
+    sget v2, Ltt5;->activity_per_app_proxy:I
 
     .line 11
     .line 12
@@ -337,11 +337,11 @@
     move-result-object v1
 
     .line 18
-    sget v2, Ld95;->cl_per_app_proxy_block:I
+    sget v2, Let5;->cl_per_app_proxy_block:I
 
     .line 19
     .line 20
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 21
     .line 22
@@ -357,11 +357,11 @@
 
     .line 27
     .line 28
-    sget v2, Ld95;->cl_per_app_proxy_mode:I
+    sget v2, Let5;->cl_per_app_proxy_mode:I
 
     .line 29
     .line 30
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 31
     .line 32
@@ -377,11 +377,11 @@
 
     .line 37
     .line 38
-    sget v2, Ld95;->divider_bypass:I
+    sget v2, Let5;->divider_bypass:I
 
     .line 39
     .line 40
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 41
     .line 42
@@ -393,11 +393,11 @@
 
     .line 45
     .line 46
-    sget v2, Ld95;->divider_off:I
+    sget v2, Let5;->divider_off:I
 
     .line 47
     .line 48
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 49
     .line 50
@@ -409,11 +409,11 @@
 
     .line 53
     .line 54
-    sget v2, Ld95;->divider_on:I
+    sget v2, Let5;->divider_on:I
 
     .line 55
     .line 56
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 57
     .line 58
@@ -425,11 +425,11 @@
 
     .line 61
     .line 62
-    sget v2, Ld95;->ll_bypass:I
+    sget v2, Let5;->ll_bypass:I
 
     .line 63
     .line 64
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 65
     .line 66
@@ -448,11 +448,11 @@
 
     .line 72
     .line 73
-    sget v2, Ld95;->ll_main:I
+    sget v2, Let5;->ll_main:I
 
     .line 74
     .line 75
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 76
     .line 77
@@ -468,11 +468,11 @@
 
     .line 82
     .line 83
-    sget v2, Ld95;->ll_off:I
+    sget v2, Let5;->ll_off:I
 
     .line 84
     .line 85
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 86
     .line 87
@@ -491,11 +491,11 @@
 
     .line 93
     .line 94
-    sget v2, Ld95;->ll_on:I
+    sget v2, Let5;->ll_on:I
 
     .line 95
     .line 96
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 97
     .line 98
@@ -514,11 +514,11 @@
 
     .line 104
     .line 105
-    sget v2, Ld95;->pb_waiting:I
+    sget v2, Let5;->pb_waiting:I
 
     .line 106
     .line 107
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 108
     .line 109
@@ -537,11 +537,11 @@
 
     .line 115
     .line 116
-    sget v2, Ld95;->rl_list_applications:I
+    sget v2, Let5;->rl_list_applications:I
 
     .line 117
     .line 118
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 119
     .line 120
@@ -557,11 +557,11 @@
 
     .line 125
     .line 126
-    sget v2, Ld95;->rv_list_applications:I
+    sget v2, Let5;->rv_list_applications:I
 
     .line 127
     .line 128
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 129
     .line 130
@@ -573,11 +573,11 @@
 
     .line 133
     .line 134
-    sget v2, Ld95;->snackbar_host_root:I
+    sget v2, Let5;->snackbar_host_root:I
 
     .line 135
     .line 136
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 137
     .line 138
@@ -596,11 +596,11 @@
 
     .line 144
     .line 145
-    sget v2, Ld95;->title_list_applications:I
+    sget v2, Let5;->title_list_applications:I
 
     .line 146
     .line 147
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 148
     .line 149
@@ -616,11 +616,11 @@
 
     .line 154
     .line 155
-    sget v2, Ld95;->title_per_app_proxy:I
+    sget v2, Let5;->title_per_app_proxy:I
 
     .line 156
     .line 157
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 158
     .line 159
@@ -636,11 +636,11 @@
 
     .line 164
     .line 165
-    sget v2, Ld95;->toolbar:I
+    sget v2, Let5;->toolbar:I
 
     .line 166
     .line 167
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 168
     .line 169
@@ -660,11 +660,11 @@
 
     .line 176
     .line 177
-    sget v2, Ld95;->tv_bypass:I
+    sget v2, Let5;->tv_bypass:I
 
     .line 178
     .line 179
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 180
     .line 181
@@ -684,11 +684,11 @@
 
     .line 188
     .line 189
-    sget v2, Ld95;->tv_description:I
+    sget v2, Let5;->tv_description:I
 
     .line 190
     .line 191
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 192
     .line 193
@@ -708,11 +708,11 @@
 
     .line 200
     .line 201
-    sget v2, Ld95;->tv_off:I
+    sget v2, Let5;->tv_off:I
 
     .line 202
     .line 203
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 204
     .line 205
@@ -732,11 +732,11 @@
 
     .line 212
     .line 213
-    sget v2, Ld95;->tv_on:I
+    sget v2, Let5;->tv_on:I
 
     .line 214
     .line 215
-    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+    invoke-static {v1, v2}, Lnz7;->c(Landroid/view/View;I)Landroid/view/View;
 
     .line 216
     .line 217
@@ -756,7 +756,7 @@
 
     .line 224
     .line 225
-    new-instance v5, Lpv7;
+    new-instance v5, Lb6;
 
     .line 226
     .line 227
@@ -767,752 +767,732 @@
 
     .line 229
     .line 230
-    const/16 v21, 0x1
+    invoke-direct/range {v5 .. v20}, Lb6;-><init>(Landroid/widget/RelativeLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/ProgressBar;Landroid/view/View;Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;Landroidx/appcompat/widget/Toolbar;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;)V
 
     .line 231
     .line 232
-    invoke-direct/range {v5 .. v21}, Lpv7;-><init>(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/ViewGroup;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;Landroid/view/View;Landroid/view/View;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;I)V
-
     .line 233
+    iput-object v5, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
+
     .line 234
     .line 235
-    iput-object v5, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    invoke-virtual {v0, v6}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(Landroid/view/View;)V
 
     .line 236
     .line 237
-    invoke-virtual {v0, v6}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(Landroid/view/View;)V
-
     .line 238
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->P0:Lmm7;
+
     .line 239
     .line 240
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->E0:Lzu6;
+    invoke-virtual {v1}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 241
     .line 242
-    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
-
     .line 243
-    .line 244
-    .line 245
     move-result-object v1
 
+    .line 244
+    check-cast v1, Lb95;
+
+    .line 245
     .line 246
-    check-cast v1, Lwq4;
+    invoke-static {v1}, Lor4;->n(Ln61;)V
 
     .line 247
     .line 248
-    invoke-static {v1}, Lhc7;->o(Lxy0;)V
-
     .line 249
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
+
     .line 250
     .line 251
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    const-string v2, "binding"
 
     .line 252
     .line 253
-    const-string v2, "binding"
+    if-eqz v1, :cond_9
 
     .line 254
     .line 255
-    if-eqz v1, :cond_9
+    iget-object v1, v1, Lb6;->c0:Landroid/widget/RelativeLayout;
 
     .line 256
     .line 257
-    iget-object v1, v1, Lpv7;->R:Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 258
     .line 259
-    check-cast v1, Landroid/widget/RelativeLayout;
-
     .line 260
-    .line 261
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 262
-    .line 263
-    .line 264
     invoke-virtual {v0, v1}, Lsu/happ/proxyutility/ui/BaseActivity;->setBarsParams(Landroid/view/View;)V
 
+    .line 261
+    .line 262
+    .line 263
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
+
+    .line 264
     .line 265
+    if-eqz v1, :cond_8
+
     .line 266
     .line 267
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object v1, v1, Lb6;->n0:Landroid/view/View;
 
     .line 268
     .line 269
-    if-eqz v1, :cond_8
+    check-cast v1, Landroidx/appcompat/widget/Toolbar;
 
     .line 270
     .line 271
-    iget-object v1, v1, Lpv7;->b0:Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AppCompatActivity;->q(Landroidx/appcompat/widget/Toolbar;)V
 
     .line 272
     .line 273
-    check-cast v1, Landroidx/appcompat/widget/Toolbar;
-
     .line 274
-    .line 275
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AppCompatActivity;->p(Landroidx/appcompat/widget/Toolbar;)V
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
 
+    .line 275
     .line 276
+    if-eqz v1, :cond_7
+
     .line 277
     .line 278
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object v1, v1, Lb6;->k0:Landroid/view/ViewGroup;
 
     .line 279
     .line 280
-    if-eqz v1, :cond_7
+    check-cast v1, Landroid/widget/LinearLayout;
 
     .line 281
     .line 282
-    iget-object v1, v1, Lpv7;->X:Ljava/lang/Object;
+    new-instance v5, Lz85;
 
     .line 283
     .line 284
-    check-cast v1, Landroid/widget/LinearLayout;
+    invoke-direct {v5, v0, v4}, Lz85;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
 
     .line 285
     .line 286
-    new-instance v5, Luq4;
-
     .line 287
-    .line 288
-    invoke-direct {v5, v0, v4}, Luq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
-
-    .line 289
-    .line 290
-    .line 291
     invoke-virtual {v1, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 288
+    .line 289
+    .line 290
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
+
+    .line 291
     .line 292
+    if-eqz v1, :cond_6
+
     .line 293
     .line 294
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object v1, v1, Lb6;->j0:Landroid/view/View;
 
     .line 295
     .line 296
-    if-eqz v1, :cond_6
+    check-cast v1, Landroid/widget/LinearLayout;
 
     .line 297
     .line 298
-    iget-object v1, v1, Lpv7;->W:Ljava/lang/Object;
+    new-instance v5, Lz85;
 
     .line 299
     .line 300
-    check-cast v1, Landroid/widget/LinearLayout;
-
-    .line 301
-    .line 302
-    new-instance v5, Luq4;
-
-    .line 303
-    .line 304
     const/4 v6, 0x1
 
-    .line 305
-    invoke-direct {v5, v0, v6}, Luq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
+    .line 301
+    invoke-direct {v5, v0, v6}, Lz85;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
 
-    .line 306
-    .line 307
-    .line 308
+    .line 302
+    .line 303
+    .line 304
     invoke-virtual {v1, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 305
+    .line 306
+    .line 307
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
+
+    .line 308
     .line 309
+    if-eqz v1, :cond_5
+
     .line 310
     .line 311
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object v1, v1, Lb6;->i0:Landroid/view/ViewGroup;
 
     .line 312
     .line 313
-    if-eqz v1, :cond_5
+    check-cast v1, Landroid/widget/LinearLayout;
 
     .line 314
     .line 315
-    iget-object v1, v1, Lpv7;->V:Ljava/lang/Object;
+    new-instance v5, Lz85;
 
     .line 316
     .line 317
-    check-cast v1, Landroid/widget/LinearLayout;
-
-    .line 318
-    .line 319
-    new-instance v5, Luq4;
-
-    .line 320
-    .line 321
     const/4 v7, 0x2
 
-    .line 322
-    invoke-direct {v5, v0, v7}, Luq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
+    .line 318
+    invoke-direct {v5, v0, v7}, Lz85;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;I)V
 
-    .line 323
-    .line 324
-    .line 325
+    .line 319
+    .line 320
+    .line 321
     invoke-virtual {v1, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 322
+    .line 323
+    .line 324
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
+
+    .line 325
     .line 326
+    if-eqz v1, :cond_4
+
     .line 327
     .line 328
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object v1, v1, Lb6;->h0:Landroid/view/View;
 
     .line 329
     .line 330
-    if-eqz v1, :cond_4
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
 
     .line 331
     .line 332
-    iget-object v1, v1, Lpv7;->Z:Ljava/lang/Object;
+    iget-object v5, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->Q0:Lmm7;
 
     .line 333
     .line 334
-    check-cast v1, Landroid/view/View;
+    invoke-virtual {v5}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 335
     .line 336
-    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
-
     .line 337
+    move-result-object v5
+
     .line 338
-    iget-object v5, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->F0:Lzu6;
+    check-cast v5, Lo95;
 
     .line 339
     .line 340
-    invoke-virtual {v5}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1, v5}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/f;)V
 
     .line 341
     .line 342
     .line 343
-    move-result-object v5
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
 
     .line 344
-    check-cast v5, Ljr4;
-
     .line 345
-    .line 346
-    invoke-virtual {v1, v5}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/f;)V
+    if-eqz v1, :cond_3
 
+    .line 346
     .line 347
+    iget-object v1, v1, Lb6;->h0:Landroid/view/View;
+
     .line 348
     .line 349
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
 
     .line 350
     .line 351
-    if-eqz v1, :cond_3
+    invoke-static {v0}, Lor4;->f(Lsu/happ/proxyutility/ui/BaseActivity;)Lcom/google/android/material/divider/MaterialDividerItemDecoration;
 
     .line 352
     .line 353
-    iget-object v1, v1, Lpv7;->Z:Ljava/lang/Object;
-
     .line 354
+    move-result-object v5
+
     .line 355
-    check-cast v1, Landroid/view/View;
+    invoke-virtual {v1, v5}, Landroidx/recyclerview/widget/RecyclerView;->i(Landroidx/recyclerview/widget/g;)V
 
     .line 356
     .line 357
-    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
-
     .line 358
-    .line 359
-    invoke-static {v0}, Lub;->b(Lsu/happ/proxyutility/ui/BaseActivity;)Lcom/google/android/material/divider/MaterialDividerItemDecoration;
+    invoke-static {v0}, Lf73;->y(Landroid/content/Context;)Z
 
+    .line 359
     .line 360
     .line 361
+    move-result v1
+
     .line 362
-    move-result-object v5
+    if-nez v1, :cond_1
 
     .line 363
-    invoke-virtual {v1, v5}, Landroidx/recyclerview/widget/RecyclerView;->i(Landroidx/recyclerview/widget/g;)V
-
     .line 364
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
+
     .line 365
     .line 366
-    invoke-static {v0}, Ltr2;->r(Landroid/content/Context;)Z
+    if-eqz v1, :cond_0
 
     .line 367
     .line 368
-    .line 369
-    move-result v1
+    iget-object v1, v1, Lb6;->h0:Landroid/view/View;
 
+    .line 369
     .line 370
-    if-nez v1, :cond_1
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
 
     .line 371
     .line 372
-    iget-object v1, v0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    new-instance v2, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 373
     .line 374
-    if-eqz v1, :cond_0
+    invoke-direct {v2, v6}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(I)V
 
     .line 375
     .line 376
-    iget-object v1, v1, Lpv7;->Z:Ljava/lang/Object;
-
     .line 377
-    .line 378
-    check-cast v1, Landroid/view/View;
-
-    .line 379
-    .line 380
-    check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 381
-    .line 382
-    new-instance v2, Landroidx/recyclerview/widget/LinearLayoutManager;
-
-    .line 383
-    .line 384
-    invoke-direct {v2, v6}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(I)V
-
-    .line 385
-    .line 386
-    .line 387
     invoke-virtual {v1, v2}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/j;)V
 
-    .line 388
-    .line 389
-    .line 390
+    .line 378
+    .line 379
+    .line 380
     goto :goto_0
 
-    .line 391
+    .line 381
     :cond_0
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
+
+    .line 382
+    .line 383
+    .line 384
+    throw v3
+
+    .line 385
+    :cond_1
+    :goto_0
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
+
+    .line 386
+    .line 387
+    .line 388
+    move-result-object v1
+
+    .line 389
+    iget-object v2, v1, Lia5;->c:Lmm7;
+
+    .line 390
+    .line 391
+    invoke-virtual {v2}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 392
     .line 393
     .line 394
-    throw v3
+    move-result-object v2
 
     .line 395
-    :cond_1
-    :goto_0
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    check-cast v2, Lcom/tencent/mmkv/MMKV;
 
     .line 396
     .line 397
-    .line 398
-    move-result-object v1
+    const-string v5, "pref_allow_system_apps"
 
+    .line 398
     .line 399
-    iget-object v2, v1, Lds4;->c:Lzu6;
+    invoke-virtual {v2, v5, v6}, Lcom/tencent/mmkv/MMKV;->getBoolean(Ljava/lang/String;Z)Z
 
     .line 400
     .line 401
-    invoke-virtual {v2}, Lzu6;->getValue()Ljava/lang/Object;
-
     .line 402
-    .line 403
-    .line 404
-    move-result-object v2
+    move-result v14
 
+    .line 403
+    iget-object v1, v1, Lia5;->f:Lk57;
+
+    .line 404
     .line 405
-    check-cast v2, Lcom/tencent/mmkv/MMKV;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 406
     .line 407
-    const-string v5, "pref_allow_system_apps"
-
     .line 408
-    .line 409
-    invoke-virtual {v2, v5, v6}, Lcom/tencent/mmkv/MMKV;->getBoolean(Ljava/lang/String;Z)Z
+    :cond_2
+    invoke-virtual {v1}, Lk57;->getValue()Ljava/lang/Object;
 
+    .line 409
     .line 410
     .line 411
+    move-result-object v2
+
     .line 412
-    move-result v14
+    move-object v8, v2
 
     .line 413
-    iget-object v1, v1, Lds4;->f:Ljh6;
+    check-cast v8, Lr95;
 
     .line 414
     .line 415
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 416
     .line 417
     .line 418
-    :cond_2
-    invoke-virtual {v1}, Ljh6;->getValue()Ljava/lang/Object;
+    const/4 v13, 0x0
 
     .line 419
+    const/16 v15, 0x1f
+
     .line 420
     .line 421
-    move-result-object v2
+    const/4 v9, 0x0
 
     .line 422
-    move-object v8, v2
+    const/4 v10, 0x0
 
     .line 423
-    check-cast v8, Lmr4;
+    const/4 v11, 0x0
 
     .line 424
+    const/4 v12, 0x0
+
     .line 425
-    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static/range {v8 .. v15}, Lr95;->a(Lr95;Lp95;Ljava/lang/String;Lg2;Lqb5;Lg2;ZI)Lr95;
 
     .line 426
     .line 427
     .line 428
-    const/4 v13, 0x0
+    move-result-object v5
 
     .line 429
-    const/16 v15, 0x1f
+    invoke-virtual {v1, v2, v5}, Lk57;->l(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 430
     .line 431
-    const/4 v9, 0x0
-
     .line 432
-    const/4 v10, 0x0
+    move-result v2
 
     .line 433
-    const/4 v11, 0x0
+    if-eqz v2, :cond_2
 
     .line 434
-    const/4 v12, 0x0
-
     .line 435
-    invoke-static/range {v8 .. v15}, Lmr4;->a(Lmr4;Lkr4;Ljava/lang/String;Lc2;Llt4;Lc2;ZI)Lmr4;
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 436
     .line 437
     .line 438
-    move-result-object v5
+    move-result-object v1
 
     .line 439
-    invoke-virtual {v1, v2, v5}, Ljh6;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1}, Lkj8;->a(Lij8;)Lqs0;
 
     .line 440
     .line 441
     .line 442
-    move-result v2
+    move-result-object v2
 
     .line 443
-    if-eqz v2, :cond_2
+    new-instance v5, Lfa5;
 
     .line 444
     .line 445
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-direct {v5, v1, v3, v4}, Lfa5;-><init>(Lia5;Lb31;I)V
 
     .line 446
     .line 447
     .line 448
-    move-result-object v1
+    const/4 v1, 0x3
 
     .line 449
-    invoke-static {v1}, Lno7;->a(Llo7;)Lnl0;
+    invoke-static {v2, v3, v5, v1}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 450
     .line 451
     .line 452
-    move-result-object v2
+    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 453
-    new-instance v5, Las4;
-
     .line 454
     .line 455
-    invoke-direct {v5, v1, v3, v4}, Las4;-><init>(Lds4;Lyv0;I)V
+    move-result-object v2
 
     .line 456
+    invoke-static {v2}, Lkj8;->a(Lij8;)Lqs0;
+
     .line 457
     .line 458
-    const/4 v1, 0x3
-
     .line 459
-    invoke-static {v2, v3, v5, v1}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    move-result-object v4
 
     .line 460
+    new-instance v5, Lea5;
+
     .line 461
     .line 462
-    invoke-virtual {v0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-direct {v5, v2, v0, v3}, Lea5;-><init>(Lia5;Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lb31;)V
 
     .line 463
     .line 464
     .line 465
-    move-result-object v2
+    invoke-static {v4, v3, v5, v1}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 466
-    invoke-static {v2}, Lno7;->a(Llo7;)Lnl0;
-
     .line 467
     .line 468
-    .line 469
-    move-result-object v4
+    iget-object v2, v0, Landroidx/core/app/ComponentActivity;->X:Li14;
 
+    .line 469
     .line 470
-    new-instance v5, Lzr4;
+    invoke-static {v2}, Lkp3;->y(Li14;)Ly04;
 
     .line 471
     .line 472
-    invoke-direct {v5, v2, v0, v3}, Lzr4;-><init>(Lds4;Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lyv0;)V
-
     .line 473
-    .line 474
-    .line 475
-    invoke-static {v4, v3, v5, v1}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
-
-    .line 476
-    .line 477
-    .line 478
-    iget-object v2, v0, Landroidx/core/app/ComponentActivity;->Q:Lkk3;
-
-    .line 479
-    .line 480
-    invoke-static {v2}, Lyr;->C(Lkk3;)Lbk3;
-
-    .line 481
-    .line 482
-    .line 483
     move-result-object v4
 
-    .line 484
-    new-instance v5, Lvq4;
+    .line 474
+    new-instance v5, La95;
 
+    .line 475
+    .line 476
+    invoke-direct {v5, v0, v3, v7}, La95;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lb31;I)V
+
+    .line 477
+    .line 478
+    .line 479
+    invoke-static {v4, v3, v5, v1}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
+
+    .line 480
+    .line 481
+    .line 482
+    invoke-static {v2}, Lkp3;->y(Li14;)Ly04;
+
+    .line 483
+    .line 484
     .line 485
+    move-result-object v4
+
     .line 486
-    invoke-direct {v5, v0, v3, v7}, Lvq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lyv0;I)V
+    new-instance v5, La95;
 
     .line 487
     .line 488
+    const/4 v6, 0x4
+
     .line 489
-    invoke-static {v4, v3, v5, v1}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-direct {v5, v0, v3, v6}, La95;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lb31;I)V
 
     .line 490
     .line 491
     .line 492
-    invoke-static {v2}, Lyr;->C(Lkk3;)Lbk3;
+    invoke-static {v4, v3, v5, v1}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 493
     .line 494
     .line 495
-    move-result-object v4
+    invoke-static {v2}, Lkp3;->y(Li14;)Ly04;
 
     .line 496
-    new-instance v5, Lvq4;
-
     .line 497
     .line 498
-    const/4 v6, 0x4
+    move-result-object v1
 
     .line 499
-    invoke-direct {v5, v0, v3, v6}, Lvq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lyv0;I)V
+    sget-object v4, Lac4;->a:Lkq2;
 
     .line 500
     .line 501
+    new-instance v5, La95;
+
     .line 502
-    invoke-static {v4, v3, v5, v1}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
-
     .line 503
-    .line 504
-    .line 505
-    invoke-static {v2}, Lyr;->C(Lkk3;)Lbk3;
-
-    .line 506
-    .line 507
-    .line 508
-    move-result-object v1
-
-    .line 509
-    sget-object v4, Lpv3;->a:Lzd2;
-
-    .line 510
-    .line 511
-    new-instance v5, Lvq4;
-
-    .line 512
-    .line 513
     const/4 v6, 0x6
 
+    .line 504
+    invoke-direct {v5, v0, v3, v6}, La95;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lb31;I)V
+
+    .line 505
+    .line 506
+    .line 507
+    invoke-static {v1, v4, v5, v7}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
+
+    .line 508
+    .line 509
+    .line 510
+    invoke-static {v2}, Lkp3;->y(Li14;)Ly04;
+
+    .line 511
+    .line 512
+    .line 513
+    move-result-object v1
+
     .line 514
-    invoke-direct {v5, v0, v3, v6}, Lvq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lyv0;I)V
+    new-instance v5, La95;
 
     .line 515
     .line 516
-    .line 517
-    invoke-static {v1, v4, v5, v7}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    const/16 v6, 0x8
 
+    .line 517
     .line 518
+    invoke-direct {v5, v0, v3, v6}, La95;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lb31;I)V
+
     .line 519
     .line 520
-    invoke-static {v2}, Lyr;->C(Lkk3;)Lbk3;
-
     .line 521
+    invoke-static {v1, v4, v5, v7}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
+
     .line 522
     .line 523
-    move-result-object v1
-
     .line 524
-    new-instance v5, Lvq4;
+    invoke-static {v2}, Lkp3;->y(Li14;)Ly04;
 
     .line 525
     .line 526
-    const/16 v6, 0x8
-
     .line 527
+    move-result-object v1
+
     .line 528
-    invoke-direct {v5, v0, v3, v6}, Lvq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lyv0;I)V
+    new-instance v5, La95;
 
     .line 529
     .line 530
-    .line 531
-    invoke-static {v1, v4, v5, v7}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    const/16 v6, 0xa
 
+    .line 531
     .line 532
+    invoke-direct {v5, v0, v3, v6}, La95;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lb31;I)V
+
     .line 533
     .line 534
-    invoke-static {v2}, Lyr;->C(Lkk3;)Lbk3;
-
     .line 535
+    invoke-static {v1, v4, v5, v7}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
+
     .line 536
     .line 537
-    move-result-object v1
-
     .line 538
-    new-instance v5, Lvq4;
+    invoke-static {v2}, Lkp3;->y(Li14;)Ly04;
 
     .line 539
     .line 540
-    const/16 v6, 0xa
-
     .line 541
+    move-result-object v1
+
     .line 542
-    invoke-direct {v5, v0, v3, v6}, Lvq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lyv0;I)V
+    new-instance v2, La95;
 
     .line 543
     .line 544
-    .line 545
-    invoke-static {v1, v4, v5, v7}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
-
-    .line 546
-    .line 547
-    .line 548
-    invoke-static {v2}, Lyr;->C(Lkk3;)Lbk3;
-
-    .line 549
-    .line 550
-    .line 551
-    move-result-object v1
-
-    .line 552
-    new-instance v2, Lvq4;
-
-    .line 553
-    .line 554
     const/16 v5, 0xc
 
-    .line 555
-    .line 556
-    invoke-direct {v2, v0, v3, v5}, Lvq4;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lyv0;I)V
+    .line 545
+    .line 546
+    invoke-direct {v2, v0, v3, v5}, La95;-><init>(Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;Lb31;I)V
 
-    .line 557
-    .line 558
-    .line 559
-    invoke-static {v1, v4, v2, v7}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    .line 547
+    .line 548
+    .line 549
+    invoke-static {v1, v4, v2, v7}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
-    .line 560
-    .line 561
-    .line 562
+    .line 550
+    .line 551
+    .line 552
     return-void
 
-    .line 563
+    .line 553
     :cond_3
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
-    .line 564
-    .line 565
-    .line 566
+    .line 554
+    .line 555
+    .line 556
     throw v3
 
-    .line 567
+    .line 557
     :cond_4
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
-    .line 568
-    .line 569
-    .line 570
+    .line 558
+    .line 559
+    .line 560
     throw v3
 
-    .line 571
+    .line 561
     :cond_5
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
-    .line 572
-    .line 573
-    .line 574
+    .line 562
+    .line 563
+    .line 564
     throw v3
 
-    .line 575
+    .line 565
     :cond_6
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
-    .line 576
-    .line 577
-    .line 578
+    .line 566
+    .line 567
+    .line 568
     throw v3
 
-    .line 579
+    .line 569
     :cond_7
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
-    .line 580
-    .line 581
-    .line 582
+    .line 570
+    .line 571
+    .line 572
     throw v3
 
-    .line 583
+    .line 573
     :cond_8
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
-    .line 584
-    .line 585
-    .line 586
+    .line 574
+    .line 575
+    .line 576
     throw v3
 
-    .line 587
+    .line 577
     :cond_9
-    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {v2}, Lm93;->a0(Ljava/lang/String;)V
 
-    .line 588
-    .line 589
-    .line 590
+    .line 578
+    .line 579
+    .line 580
     throw v3
 
-    .line 591
+    .line 581
     :cond_a
     invoke-virtual {v1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 582
+    .line 583
+    .line 584
+    move-result-object v0
+
+    .line 585
+    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    .line 586
+    .line 587
+    .line 588
+    move-result-object v0
+
+    .line 589
+    const-string v1, "Missing required view with ID: "
+
+    .line 590
+    .line 591
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 592
     .line 593
     .line 594
-    move-result-object v1
+    move-result-object v0
 
     .line 595
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+    invoke-static {v0}, Lku0;->f(Ljava/lang/String;)V
 
     .line 596
     .line 597
     .line 598
-    move-result-object v1
-
-    .line 599
-    const-string v2, "Missing required view with ID: "
-
-    .line 600
-    .line 601
-    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 602
-    .line 603
-    .line 604
-    move-result-object v1
-
-    .line 605
-    invoke-static {v1}, Len0;->g(Ljava/lang/String;)V
-
-    .line 606
-    .line 607
-    .line 608
     return-void
 .end method
 
@@ -1533,7 +1513,7 @@
     move-result-object v0
 
     .line 8
-    sget v1, Lv95;->menu_per_app_proxy:I
+    sget v1, Lvt5;->menu_per_app_proxy:I
 
     .line 9
     .line 10
@@ -1542,7 +1522,7 @@
     .line 11
     .line 12
     .line 13
-    sget v0, Ld95;->search_view:I
+    sget v0, Let5;->search_view:I
 
     .line 14
     .line 15
@@ -1575,7 +1555,7 @@
 
     .line 29
     .line 30
-    invoke-static {p0}, Ltr2;->r(Landroid/content/Context;)Z
+    invoke-static {p0}, Lf73;->y(Landroid/content/Context;)Z
 
     .line 31
     .line 32
@@ -1586,7 +1566,7 @@
     const/4 v2, 0x0
 
     .line 35
-    const/4 v3, 0x0
+    move v3, v2
 
     .line 36
     :goto_0
@@ -1605,14 +1585,14 @@
 
     .line 42
     .line 43
-    const/4 v4, 0x1
+    move v4, v5
 
     .line 44
     goto :goto_1
 
     .line 45
     :cond_0
-    const/4 v4, 0x0
+    move v4, v2
 
     .line 46
     :goto_1
@@ -1640,7 +1620,7 @@
 
     .line 57
     .line 58
-    new-instance v6, Lrr;
+    new-instance v6, Lnt;
 
     .line 59
     .line 60
@@ -1648,132 +1628,131 @@
 
     .line 61
     .line 62
-    invoke-direct {v6, v7, v3}, Lrr;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v6, v7, v3}, Lnt;-><init>(ILjava/lang/Object;)V
 
     .line 63
     .line 64
     .line 65
-    new-instance v3, Lho3;
+    new-instance v3, Lt45;
 
     .line 66
     .line 67
-    const/16 v7, 0x16
+    const/4 v7, 0x7
 
     .line 68
-    .line 69
-    invoke-direct {v3, v7}, Lho3;-><init>(I)V
+    invoke-direct {v3, v7}, Lt45;-><init>(I)V
 
+    .line 69
     .line 70
     .line 71
-    .line 72
-    invoke-static {v6, v3}, Ld56;->t1(Lb56;Lj72;)Lcw1;
+    invoke-static {v6, v3}, Lwq6;->t0(Luq6;Lmi2;)Lb62;
 
+    .line 72
     .line 73
     .line 74
-    .line 75
     move-result-object v3
+
+    .line 75
+    new-instance v6, La62;
 
     .line 76
-    new-instance v6, Lbw1;
-
     .line 77
-    .line 78
-    invoke-direct {v6, v3}, Lbw1;-><init>(Lcw1;)V
+    invoke-direct {v6, v3}, La62;-><init>(Lb62;)V
 
+    .line 78
     .line 79
     .line 80
-    .line 81
     :goto_2
-    invoke-virtual {v6}, Lbw1;->hasNext()Z
+    invoke-virtual {v6}, La62;->hasNext()Z
 
+    .line 81
     .line 82
     .line 83
-    .line 84
     move-result v3
 
-    .line 85
+    .line 84
     if-eqz v3, :cond_1
 
+    .line 85
     .line 86
-    .line 87
-    invoke-virtual {v6}, Lbw1;->next()Ljava/lang/Object;
+    invoke-virtual {v6}, La62;->next()Ljava/lang/Object;
 
+    .line 87
     .line 88
     .line 89
-    .line 90
     move-result-object v3
 
-    .line 91
+    .line 90
     check-cast v3, Landroid/widget/ImageView;
 
+    .line 91
     .line 92
-    .line 93
     invoke-virtual {v3, v5}, Landroid/view/View;->setClickable(Z)V
 
+    .line 93
     .line 94
     .line 95
-    .line 96
     invoke-virtual {v3, v5}, Landroid/view/View;->setFocusable(Z)V
 
+    .line 96
     .line 97
     .line 98
-    .line 99
     invoke-virtual {v3, v1}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
+    .line 99
     .line 100
     .line 101
-    .line 102
     goto :goto_2
 
-    .line 103
+    .line 102
     :cond_1
     move v3, v4
 
-    .line 104
+    .line 103
     goto :goto_0
 
-    .line 105
+    .line 104
     :cond_2
-    new-instance p1, Ljava/lang/IndexOutOfBoundsException;
+    new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
+    .line 105
     .line 106
-    .line 107
-    invoke-direct {p1}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+    invoke-direct {p0}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
 
+    .line 107
     .line 108
     .line 109
+    throw p0
+
     .line 110
-    throw p1
+    :cond_3
+    new-instance v1, La05;
 
     .line 111
-    :cond_3
-    new-instance v1, La04;
-
     .line 112
+    const/4 v2, 0x2
+
     .line 113
-    const/4 v2, 0x7
+    invoke-direct {v1, v2, p0}, La05;-><init>(ILjava/lang/Object;)V
 
     .line 114
-    invoke-direct {v1, v2, p0}, La04;-><init>(ILjava/lang/Object;)V
-
     .line 115
     .line 116
-    .line 117
-    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/SearchView;->setOnQueryTextListener(Lo16;)V
+    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/SearchView;->setOnQueryTextListener(Len6;)V
 
+    .line 117
     .line 118
     .line 119
-    .line 120
     :cond_4
     invoke-super {p0, p1}, Lsu/happ/proxyutility/ui/BaseActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
+    .line 120
     .line 121
     .line 122
-    .line 123
-    move-result p1
+    move-result p0
 
-    .line 124
-    return p1
+    .line 123
+    return p0
 .end method
 
 .method public final onOptionsItemSelected(Landroid/view/MenuItem;)Z
@@ -1797,7 +1776,7 @@
     move-result v0
 
     .line 10
-    sget v2, Ld95;->select_all:I
+    sget v2, Let5;->select_all:I
 
     .line 11
     .line 12
@@ -1821,7 +1800,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 21
     .line 22
@@ -1829,15 +1808,15 @@
     move-result-object v0
 
     .line 24
-    iget-object v0, v0, Lds4;->g:Lfc5;
+    iget-object v0, v0, Lia5;->g:Lgw5;
 
     .line 25
     .line 26
-    iget-object v0, v0, Lfc5;->Q:Ljh6;
+    iget-object v0, v0, Lgw5;->X:Lk57;
 
     .line 27
     .line 28
-    invoke-virtual {v0}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 29
     .line 30
@@ -1845,11 +1824,11 @@
     move-result-object v0
 
     .line 32
-    check-cast v0, Lmr4;
+    check-cast v0, Lr95;
 
     .line 33
     .line 34
-    iget-boolean v0, v0, Lmr4;->g:Z
+    iget-boolean v0, v0, Lr95;->g:Z
 
     .line 35
     .line 36
@@ -1857,7 +1836,7 @@
 
     .line 37
     .line 38
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 39
     .line 40
@@ -1865,49 +1844,49 @@
     move-result-object v0
 
     .line 42
-    new-instance v2, Lho3;
+    new-instance v1, Lt45;
 
     .line 43
     .line 44
-    const/16 v4, 0x18
+    const/16 v2, 0x9
 
     .line 45
     .line 46
-    invoke-direct {v2, v4}, Lho3;-><init>(I)V
+    invoke-direct {v1, v2}, Lt45;-><init>(I)V
 
     .line 47
     .line 48
     .line 49
-    iget-object v4, v0, Lds4;->f:Ljh6;
+    iget-object v2, v0, Lia5;->f:Lk57;
 
     .line 50
     .line 51
-    invoke-static {v4, v2}, Lj04;->P(Ljh6;Lj72;)V
+    invoke-static {v2, v1}, Lic4;->W(Lk57;Lmi2;)V
 
     .line 52
     .line 53
     .line 54
-    invoke-static {v0}, Lno7;->a(Llo7;)Lnl0;
+    invoke-static {v0}, Lkj8;->a(Lij8;)Lqs0;
 
     .line 55
     .line 56
     .line 57
-    move-result-object v2
+    move-result-object v1
 
     .line 58
-    new-instance v4, Las4;
+    new-instance v2, Lfa5;
 
     .line 59
     .line 60
-    const/4 v5, 0x5
+    const/4 v4, 0x5
 
     .line 61
-    invoke-direct {v4, v0, v6, v5}, Las4;-><init>(Lds4;Lyv0;I)V
+    invoke-direct {v2, v0, v6, v4}, Lfa5;-><init>(Lia5;Lb31;I)V
 
     .line 62
     .line 63
     .line 64
-    invoke-static {v2, v6, v4, v3}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {v1, v6, v2, v3}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 65
     .line 66
@@ -1916,7 +1895,7 @@
 
     .line 68
     :cond_0
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 69
     .line 70
@@ -1924,35 +1903,35 @@
     move-result-object v2
 
     .line 72
-    iget-object v0, v2, Lds4;->g:Lfc5;
+    iget-object v0, v2, Lia5;->g:Lgw5;
 
     .line 73
     .line 74
-    iget-object v8, v0, Lfc5;->Q:Ljh6;
+    iget-object v1, v0, Lgw5;->X:Lk57;
 
     .line 75
     .line 76
-    invoke-virtual {v8}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 77
     .line 78
     .line 79
-    move-result-object v8
+    move-result-object v1
 
     .line 80
-    check-cast v8, Lmr4;
+    check-cast v1, Lr95;
 
     .line 81
     .line 82
-    iget-object v8, v8, Lmr4;->c:Lc2;
+    iget-object v1, v1, Lr95;->c:Lg2;
 
     .line 83
     .line 84
-    new-instance v9, Ljava/util/ArrayList;
+    new-instance v8, Ljava/util/ArrayList;
 
     .line 85
     .line 86
-    invoke-static {v8, v5}, Lom0;->e0(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v5}, Lut0;->F0(Ljava/lang/Iterable;I)I
 
     .line 87
     .line 88
@@ -1960,53 +1939,53 @@
     move-result v5
 
     .line 90
-    invoke-direct {v9, v5}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v8, v5}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 91
     .line 92
     .line 93
-    invoke-virtual {v8, v4}, Ls1;->listIterator(I)Ljava/util/ListIterator;
+    invoke-virtual {v1, v4}, Lw1;->listIterator(I)Ljava/util/ListIterator;
 
     .line 94
     .line 95
     .line 96
-    move-result-object v5
+    move-result-object v1
 
     .line 97
     :goto_0
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 98
     .line 99
     .line 100
-    move-result v8
+    move-result v5
 
     .line 101
-    if-eqz v8, :cond_1
+    if-eqz v5, :cond_1
 
     .line 102
     .line 103
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 104
     .line 105
     .line 106
-    move-result-object v8
+    move-result-object v5
 
     .line 107
-    check-cast v8, Lsu/happ/proxyutility/dto/AppInfo;
+    check-cast v5, Lsu/happ/proxyutility/dto/AppInfo;
 
     .line 108
     .line 109
-    invoke-virtual {v8}, Lsu/happ/proxyutility/dto/AppInfo;->d()Ljava/lang/String;
+    invoke-virtual {v5}, Lsu/happ/proxyutility/dto/AppInfo;->d()Ljava/lang/String;
 
     .line 110
     .line 111
     .line 112
-    move-result-object v8
+    move-result-object v5
 
     .line 113
-    invoke-virtual {v9, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 114
     .line 115
@@ -2015,121 +1994,121 @@
 
     .line 117
     :cond_1
-    invoke-static {v9}, Lnm0;->d1(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v8}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
 
     .line 118
     .line 119
     .line 120
-    move-result-object v5
+    move-result-object v1
 
     .line 121
-    iget-object v8, v0, Lfc5;->Q:Ljh6;
+    iget-object v5, v0, Lgw5;->X:Lk57;
 
     .line 122
     .line 123
-    invoke-virtual {v8}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v5}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 124
     .line 125
     .line 126
-    move-result-object v8
+    move-result-object v5
 
     .line 127
-    check-cast v8, Lmr4;
+    check-cast v5, Lr95;
 
     .line 128
     .line 129
-    iget-boolean v8, v8, Lmr4;->g:Z
+    iget-boolean v5, v5, Lr95;->g:Z
 
     .line 130
     .line 131
-    if-eqz v8, :cond_2
+    if-eqz v5, :cond_2
 
     .line 132
     .line 133
-    iget-object v8, v0, Lfc5;->Q:Ljh6;
+    iget-object v5, v0, Lgw5;->X:Lk57;
 
     .line 134
     .line 135
-    invoke-virtual {v8}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v5}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 136
     .line 137
     .line 138
-    move-result-object v8
+    move-result-object v5
 
     .line 139
-    check-cast v8, Lmr4;
+    check-cast v5, Lr95;
 
     .line 140
     .line 141
-    iget-object v8, v8, Lmr4;->d:Llt4;
+    iget-object v5, v5, Lr95;->d:Lqb5;
 
     .line 142
     .line 143
-    check-cast v5, Ljava/lang/Iterable;
+    check-cast v1, Ljava/lang/Iterable;
 
     .line 144
     .line 145
-    invoke-static {v8, v5}, Lnm0;->U0(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/LinkedHashSet;
+    invoke-static {v5, v1}, Ltt0;->A1(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/LinkedHashSet;
 
     .line 146
     .line 147
     .line 148
-    move-result-object v5
+    move-result-object v1
 
     .line 149
     goto :goto_1
 
     .line 150
     :cond_2
-    iget-object v8, v0, Lfc5;->Q:Ljh6;
+    iget-object v5, v0, Lgw5;->X:Lk57;
 
     .line 151
     .line 152
-    invoke-virtual {v8}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v5}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 153
     .line 154
     .line 155
-    move-result-object v8
+    move-result-object v5
 
     .line 156
-    check-cast v8, Lmr4;
+    check-cast v5, Lr95;
 
     .line 157
     .line 158
-    iget-object v8, v8, Lmr4;->d:Llt4;
+    iget-object v5, v5, Lr95;->d:Lqb5;
 
     .line 159
     .line 160
-    check-cast v5, Ljava/lang/Iterable;
+    check-cast v1, Ljava/lang/Iterable;
 
     .line 161
     .line 162
-    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 163
     .line 164
     .line 165
-    invoke-static {v8}, Lnm0;->c1(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v5}, Ltt0;->I1(Ljava/lang/Iterable;)Ljava/util/Set;
 
     .line 166
     .line 167
     .line 168
-    move-result-object v8
+    move-result-object v5
 
     .line 169
-    invoke-static {v8, v5}, Lsm0;->i0(Ljava/util/Collection;Ljava/lang/Iterable;)V
+    invoke-static {v5, v1}, Lyt0;->J0(Ljava/util/Collection;Ljava/lang/Iterable;)V
 
     .line 170
     .line 171
     .line 172
-    move-object v5, v8
+    move-object v1, v5
 
     .line 173
     :goto_1
-    invoke-static {v5}, Lyr;->c0(Ljava/lang/Iterable;)Llt4;
+    invoke-static {v1}, Ln75;->e1(Ljava/lang/Iterable;)Lqb5;
 
     .line 174
     .line 175
@@ -2137,39 +2116,39 @@
     move-result-object v12
 
     .line 177
-    iget-object v5, v0, Lfc5;->Q:Ljh6;
+    iget-object v1, v0, Lgw5;->X:Lk57;
 
     .line 178
     .line 179
-    invoke-virtual {v5}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 180
     .line 181
     .line 182
-    move-result-object v5
+    move-result-object v1
 
     .line 183
-    check-cast v5, Lmr4;
+    check-cast v1, Lr95;
 
     .line 184
     .line 185
-    iget-boolean v5, v5, Lmr4;->g:Z
+    iget-boolean v1, v1, Lr95;->g:Z
 
     .line 186
     .line 187
-    sget-object v8, Ljc6;->R:Ljc6;
+    sget-object v5, Lc07;->Y:Lc07;
 
     .line 188
     .line 189
-    if-eqz v5, :cond_4
+    if-eqz v1, :cond_4
 
     .line 190
     .line 191
-    iget-object v0, v0, Lfc5;->Q:Ljh6;
+    iget-object v0, v0, Lgw5;->X:Lk57;
 
     .line 192
     .line 193
-    invoke-virtual {v0}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 194
     .line 195
@@ -2177,23 +2156,23 @@
     move-result-object v0
 
     .line 197
-    check-cast v0, Lmr4;
+    check-cast v0, Lr95;
 
     .line 198
     .line 199
-    iget-object v0, v0, Lmr4;->c:Lc2;
+    iget-object v0, v0, Lr95;->c:Lg2;
 
     .line 200
     .line 201
-    invoke-virtual {v8}, Ljc6;->b()Lrt4;
+    invoke-virtual {v5}, Lc07;->b()Lwb5;
 
     .line 202
     .line 203
     .line 204
-    move-result-object v5
+    move-result-object v1
 
     .line 205
-    invoke-virtual {v0, v4}, Ls1;->listIterator(I)Ljava/util/ListIterator;
+    invoke-virtual {v0, v4}, Lw1;->listIterator(I)Ljava/util/ListIterator;
 
     .line 206
     .line 207
@@ -2207,10 +2186,10 @@
     .line 210
     .line 211
     .line 212
-    move-result v8
+    move-result v5
 
     .line 213
-    if-eqz v8, :cond_3
+    if-eqz v5, :cond_3
 
     .line 214
     .line 215
@@ -2219,22 +2198,22 @@
     .line 216
     .line 217
     .line 218
-    move-result-object v8
+    move-result-object v5
 
     .line 219
-    check-cast v8, Lsu/happ/proxyutility/dto/AppInfo;
+    check-cast v5, Lsu/happ/proxyutility/dto/AppInfo;
 
     .line 220
     .line 221
-    invoke-static {v8, v4}, Lsu/happ/proxyutility/dto/AppInfo;->a(Lsu/happ/proxyutility/dto/AppInfo;I)Lsu/happ/proxyutility/dto/AppInfo;
+    invoke-static {v5, v4}, Lsu/happ/proxyutility/dto/AppInfo;->a(Lsu/happ/proxyutility/dto/AppInfo;I)Lsu/happ/proxyutility/dto/AppInfo;
 
     .line 222
     .line 223
     .line 224
-    move-result-object v8
+    move-result-object v5
 
     .line 225
-    invoke-virtual {v5, v8}, Lrt4;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v5}, Lwb5;->add(Ljava/lang/Object;)Z
 
     .line 226
     .line 227
@@ -2243,7 +2222,7 @@
 
     .line 229
     :cond_3
-    invoke-virtual {v5}, Lrt4;->c()Lc2;
+    invoke-virtual {v1}, Lwb5;->c()Lg2;
 
     .line 230
     .line 231
@@ -2259,11 +2238,11 @@
 
     .line 235
     :cond_4
-    iget-object v0, v0, Lfc5;->Q:Ljh6;
+    iget-object v0, v0, Lgw5;->X:Lk57;
 
     .line 236
     .line 237
-    invoke-virtual {v0}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 238
     .line 239
@@ -2271,23 +2250,23 @@
     move-result-object v0
 
     .line 241
-    check-cast v0, Lmr4;
+    check-cast v0, Lr95;
 
     .line 242
     .line 243
-    iget-object v0, v0, Lmr4;->c:Lc2;
+    iget-object v0, v0, Lr95;->c:Lg2;
 
     .line 244
     .line 245
-    invoke-virtual {v8}, Ljc6;->b()Lrt4;
+    invoke-virtual {v5}, Lc07;->b()Lwb5;
 
     .line 246
     .line 247
     .line 248
-    move-result-object v5
+    move-result-object v1
 
     .line 249
-    invoke-virtual {v0, v4}, Ls1;->listIterator(I)Ljava/util/ListIterator;
+    invoke-virtual {v0, v4}, Lw1;->listIterator(I)Ljava/util/ListIterator;
 
     .line 250
     .line 251
@@ -2328,7 +2307,7 @@
     move-result-object v4
 
     .line 269
-    invoke-virtual {v5, v4}, Lrt4;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Lwb5;->add(Ljava/lang/Object;)Z
 
     .line 270
     .line 271
@@ -2337,7 +2316,7 @@
 
     .line 273
     :cond_5
-    invoke-virtual {v5}, Lrt4;->c()Lc2;
+    invoke-virtual {v1}, Lwb5;->c()Lg2;
 
     .line 274
     .line 275
@@ -2349,7 +2328,7 @@
 
     .line 278
     :goto_5
-    iget-object v0, v2, Lds4;->f:Ljh6;
+    iget-object v0, v2, Lia5;->f:Lk57;
 
     .line 279
     .line 280
@@ -2359,18 +2338,18 @@
     .line 282
     .line 283
     :cond_6
-    invoke-virtual {v0}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 284
     .line 285
     .line 286
-    move-result-object v4
+    move-result-object v1
 
     .line 287
-    move-object v8, v4
+    move-object v8, v1
 
     .line 288
-    check-cast v8, Lmr4;
+    check-cast v8, Lr95;
 
     .line 289
     .line 290
@@ -2395,27 +2374,27 @@
     const/4 v13, 0x0
 
     .line 299
-    invoke-static/range {v8 .. v15}, Lmr4;->a(Lmr4;Lkr4;Ljava/lang/String;Lc2;Llt4;Lc2;ZI)Lmr4;
+    invoke-static/range {v8 .. v15}, Lr95;->a(Lr95;Lp95;Ljava/lang/String;Lg2;Lqb5;Lg2;ZI)Lr95;
 
     .line 300
     .line 301
     .line 302
-    move-result-object v5
+    move-result-object v4
 
     .line 303
-    invoke-virtual {v0, v4, v5}, Ljh6;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1, v4}, Lk57;->l(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 304
     .line 305
     .line 306
-    move-result v4
+    move-result v1
 
     .line 307
-    if-eqz v4, :cond_6
+    if-eqz v1, :cond_6
 
     .line 308
     .line 309
-    invoke-static {v2}, Lno7;->a(Llo7;)Lnl0;
+    invoke-static {v2}, Lkj8;->a(Lij8;)Lqs0;
 
     .line 310
     .line 311
@@ -2423,19 +2402,19 @@
     move-result-object v0
 
     .line 313
-    new-instance v4, Las4;
+    new-instance v1, Lfa5;
 
     .line 314
     .line 315
-    const/4 v5, 0x4
+    const/4 v4, 0x4
 
     .line 316
-    invoke-direct {v4, v2, v6, v5}, Las4;-><init>(Lds4;Lyv0;I)V
+    invoke-direct {v1, v2, v6, v4}, Lfa5;-><init>(Lia5;Lb31;I)V
 
     .line 317
     .line 318
     .line 319
-    invoke-static {v0, v6, v4, v3}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {v0, v6, v1, v3}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 320
     .line 321
@@ -2444,11 +2423,11 @@
 
     .line 323
     :cond_7
-    sget v2, Ld95;->import_proxy_app:I
+    sget v2, Let5;->import_proxy_app:I
 
     .line 324
     .line 325
-    sget-object v8, Luf2;->Q:Luf2;
+    sget-object v8, Lxs2;->X:Lxs2;
 
     .line 326
     .line 327
@@ -2456,7 +2435,7 @@
 
     .line 328
     .line 329
-    sget-object v0, Lpk7;->a:Lpk7;
+    sget-object v0, Lif8;->a:Lif8;
 
     .line 330
     .line 331
@@ -2473,7 +2452,7 @@
     .line 336
     .line 337
     .line 338
-    invoke-static {v0}, Lpk7;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lif8;->g(Landroid/content/Context;)Ljava/lang/String;
 
     .line 339
     .line 340
@@ -2481,7 +2460,7 @@
     move-result-object v0
 
     .line 342
-    invoke-static {v0}, Lsl6;->V0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v0}, Lea7;->y1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     .line 343
     .line 344
@@ -2526,15 +2505,15 @@
     .line 361
     .line 362
     :cond_9
-    new-instance v2, Lho3;
+    new-instance v2, Lt45;
 
     .line 363
     .line 364
-    const/16 v3, 0x17
+    const/16 v3, 0x8
 
     .line 365
     .line 366
-    invoke-direct {v2, v3}, Lho3;-><init>(I)V
+    invoke-direct {v2, v3}, Lt45;-><init>(I)V
 
     .line 367
     .line 368
@@ -2577,11 +2556,11 @@
     .line 385
     .line 386
     .line 387
-    new-instance v5, Lil3;
+    new-instance v5, Lm24;
 
     .line 388
     .line 389
-    invoke-direct {v5, v0}, Lil3;-><init>(Ljava/lang/CharSequence;)V
+    invoke-direct {v5, v0}, Lm24;-><init>(Ljava/lang/CharSequence;)V
 
     .line 390
     .line 391
@@ -2624,7 +2603,7 @@
     .line 409
     .line 410
     :cond_b
-    invoke-static {v2, v0, v6}, Lyu7;->e(Ljava/lang/Appendable;Ljava/lang/Object;Lj72;)V
+    invoke-static {v2, v0, v6}, Lus7;->p(Ljava/lang/Appendable;Ljava/lang/Object;Lmi2;)V
 
     .line 411
     .line 412
@@ -2646,7 +2625,7 @@
     move-result-object v0
 
     .line 421
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 422
     .line 423
@@ -2654,7 +2633,7 @@
     move-result-object v2
 
     .line 425
-    invoke-virtual {v2, v0}, Lds4;->g(Ljava/lang/String;)Z
+    invoke-virtual {v2, v0}, Lia5;->g(Ljava/lang/String;)Z
 
     .line 426
     .line 427
@@ -2666,7 +2645,7 @@
 
     .line 430
     .line 431
-    sget v0, Lx95;->toast_success:I
+    sget v0, Lxt5;->toast_success:I
 
     .line 432
     .line 433
@@ -2683,7 +2662,7 @@
     .line 438
     .line 439
     .line 440
-    invoke-virtual {v1, v0, v8}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->B(Ljava/lang/String;Luf2;)V
+    invoke-virtual {v1, v0, v8}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->B(Ljava/lang/String;Lxs2;)V
 
     .line 441
     .line 442
@@ -2692,7 +2671,7 @@
 
     .line 444
     :cond_d
-    sget v0, Lx95;->toast_failure:I
+    sget v0, Lxt5;->toast_failure:I
 
     .line 445
     .line 446
@@ -2709,11 +2688,11 @@
     .line 451
     .line 452
     .line 453
-    sget-object v2, Luf2;->R:Luf2;
+    sget-object v2, Lxs2;->Y:Lxs2;
 
     .line 454
     .line 455
-    invoke-virtual {v1, v0, v2}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->B(Ljava/lang/String;Luf2;)V
+    invoke-virtual {v1, v0, v2}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->B(Ljava/lang/String;Lxs2;)V
 
     .line 456
     .line 457
@@ -2722,7 +2701,7 @@
 
     .line 459
     :cond_e
-    sget v2, Ld95;->export_proxy_app:I
+    sget v2, Let5;->export_proxy_app:I
 
     .line 460
     .line 461
@@ -2730,7 +2709,7 @@
 
     .line 462
     .line 463
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 464
     .line 465
@@ -2738,15 +2717,15 @@
     move-result-object v0
 
     .line 467
-    iget-object v0, v0, Lds4;->g:Lfc5;
+    iget-object v0, v0, Lia5;->g:Lgw5;
 
     .line 468
     .line 469
-    iget-object v0, v0, Lfc5;->Q:Ljh6;
+    iget-object v0, v0, Lgw5;->X:Lk57;
 
     .line 470
     .line 471
-    invoke-virtual {v0}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 472
     .line 473
@@ -2754,11 +2733,11 @@
     move-result-object v0
 
     .line 475
-    check-cast v0, Lmr4;
+    check-cast v0, Lr95;
 
     .line 476
     .line 477
-    iget-object v9, v0, Lmr4;->d:Llt4;
+    iget-object v9, v0, Lr95;->d:Lqb5;
 
     .line 478
     .line 479
@@ -2788,7 +2767,7 @@
     const/4 v12, 0x0
 
     .line 491
-    invoke-static/range {v9 .. v14}, Lnm0;->C0(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/String;Lj72;I)Ljava/lang/String;
+    invoke-static/range {v9 .. v14}, Ltt0;->h1(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/String;Lmi2;I)Ljava/lang/String;
 
     .line 492
     .line 493
@@ -2796,7 +2775,7 @@
     move-result-object v0
 
     .line 495
-    sget-object v2, Lpk7;->a:Lpk7;
+    sget-object v2, Lif8;->a:Lif8;
 
     .line 496
     .line 497
@@ -2813,12 +2792,12 @@
     .line 502
     .line 503
     .line 504
-    invoke-static {v2, v0}, Lpk7;->H(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v2, v0}, Lif8;->F(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 505
     .line 506
     .line 507
-    sget v0, Lx95;->toast_success:I
+    sget v0, Lxt5;->toast_success:I
 
     .line 508
     .line 509
@@ -2835,7 +2814,7 @@
     .line 514
     .line 515
     .line 516
-    invoke-virtual {v1, v0, v8}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->B(Ljava/lang/String;Luf2;)V
+    invoke-virtual {v1, v0, v8}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->B(Ljava/lang/String;Lxs2;)V
 
     .line 517
     .line 518
@@ -2844,7 +2823,7 @@
 
     .line 520
     :cond_f
-    sget v2, Ld95;->invert:I
+    sget v2, Let5;->invert:I
 
     .line 521
     .line 522
@@ -2852,7 +2831,7 @@
 
     .line 523
     .line 524
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 525
     .line 526
@@ -2860,35 +2839,35 @@
     move-result-object v0
 
     .line 528
-    iget-object v2, v0, Lds4;->g:Lfc5;
+    iget-object v1, v0, Lia5;->g:Lgw5;
 
     .line 529
     .line 530
-    iget-object v2, v2, Lfc5;->Q:Ljh6;
+    iget-object v1, v1, Lgw5;->X:Lk57;
 
     .line 531
     .line 532
-    invoke-virtual {v2}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 533
     .line 534
     .line 535
-    move-result-object v2
+    move-result-object v1
 
     .line 536
-    check-cast v2, Lmr4;
+    check-cast v1, Lr95;
 
     .line 537
     .line 538
-    iget-object v2, v2, Lmr4;->c:Lc2;
+    iget-object v1, v1, Lr95;->c:Lg2;
 
     .line 539
     .line 540
-    new-instance v8, Ljava/util/ArrayList;
+    new-instance v2, Ljava/util/ArrayList;
 
     .line 541
     .line 542
-    invoke-static {v2, v5}, Lom0;->e0(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v5}, Lut0;->F0(Ljava/lang/Iterable;I)I
 
     .line 543
     .line 544
@@ -2896,21 +2875,21 @@
     move-result v5
 
     .line 546
-    invoke-direct {v8, v5}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v2, v5}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 547
     .line 548
     .line 549
-    invoke-virtual {v2, v4}, Ls1;->listIterator(I)Ljava/util/ListIterator;
+    invoke-virtual {v1, v4}, Lw1;->listIterator(I)Ljava/util/ListIterator;
 
     .line 550
     .line 551
     .line 552
-    move-result-object v2
+    move-result-object v1
 
     .line 553
     :goto_9
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 554
     .line 555
@@ -2922,7 +2901,7 @@
 
     .line 558
     .line 559
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 560
     .line 561
@@ -2942,7 +2921,7 @@
     move-result-object v5
 
     .line 569
-    invoke-virtual {v8, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 570
     .line 571
@@ -2951,50 +2930,50 @@
 
     .line 573
     :cond_10
-    invoke-static {v8}, Lnm0;->d1(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v2}, Ltt0;->J1(Ljava/lang/Iterable;)Ljava/util/Set;
 
     .line 574
     .line 575
     .line 576
-    move-result-object v2
+    move-result-object v1
 
     .line 577
-    new-instance v5, Lrr4;
+    new-instance v2, Lw95;
 
     .line 578
     .line 579
-    invoke-direct {v5, v2, v4}, Lrr4;-><init>(Ljava/util/Set;I)V
+    invoke-direct {v2, v1, v4}, Lw95;-><init>(Ljava/util/Set;I)V
 
     .line 580
     .line 581
     .line 582
-    iget-object v2, v0, Lds4;->f:Ljh6;
+    iget-object v1, v0, Lia5;->f:Lk57;
 
     .line 583
     .line 584
-    invoke-static {v2, v5}, Lj04;->P(Ljh6;Lj72;)V
+    invoke-static {v1, v2}, Lic4;->W(Lk57;Lmi2;)V
 
     .line 585
     .line 586
     .line 587
-    invoke-static {v0}, Lno7;->a(Llo7;)Lnl0;
+    invoke-static {v0}, Lkj8;->a(Lij8;)Lqs0;
 
     .line 588
     .line 589
     .line 590
-    move-result-object v2
+    move-result-object v1
 
     .line 591
-    new-instance v4, Las4;
+    new-instance v2, Lfa5;
 
     .line 592
     .line 593
-    invoke-direct {v4, v0, v6, v3}, Las4;-><init>(Lds4;Lyv0;I)V
+    invoke-direct {v2, v0, v6, v3}, Lfa5;-><init>(Lia5;Lb31;I)V
 
     .line 594
     .line 595
     .line 596
-    invoke-static {v2, v6, v4, v3}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {v1, v6, v2, v3}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 597
     .line 598
@@ -3003,7 +2982,7 @@
 
     .line 600
     :cond_11
-    sget v2, Ld95;->system_apps:I
+    sget v2, Let5;->system_apps:I
 
     .line 601
     .line 602
@@ -3011,7 +2990,7 @@
 
     .line 603
     .line 604
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 605
     .line 606
@@ -3019,7 +2998,7 @@
     move-result-object v2
 
     .line 608
-    iget-object v4, v2, Lds4;->f:Ljh6;
+    iget-object v4, v2, Lia5;->f:Lk57;
 
     .line 609
     .line 610
@@ -3029,7 +3008,7 @@
     .line 612
     .line 613
     :cond_12
-    invoke-virtual {v4}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v4}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 614
     .line 615
@@ -3040,7 +3019,7 @@
     move-object v8, v0
 
     .line 618
-    check-cast v8, Lmr4;
+    check-cast v8, Lr95;
 
     .line 619
     .line 620
@@ -3049,7 +3028,7 @@
     .line 621
     .line 622
     .line 623
-    iget-boolean v3, v8, Lmr4;->f:Z
+    iget-boolean v3, v8, Lr95;->f:Z
 
     .line 624
     .line 625
@@ -3076,7 +3055,7 @@
     const/4 v13, 0x0
 
     .line 634
-    invoke-static/range {v8 .. v15}, Lmr4;->a(Lmr4;Lkr4;Ljava/lang/String;Lc2;Llt4;Lc2;ZI)Lmr4;
+    invoke-static/range {v8 .. v15}, Lr95;->a(Lr95;Lp95;Ljava/lang/String;Lg2;Lqb5;Lg2;ZI)Lr95;
 
     .line 635
     .line 636
@@ -3084,7 +3063,7 @@
     move-result-object v3
 
     .line 638
-    invoke-virtual {v4, v0, v3}, Ljh6;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v4, v0, v3}, Lk57;->l(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 639
     .line 640
@@ -3096,11 +3075,11 @@
 
     .line 643
     .line 644
-    iget-object v0, v2, Lds4;->c:Lzu6;
+    iget-object v0, v2, Lia5;->c:Lmm7;
 
     .line 645
     .line 646
-    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 647
     .line 648
@@ -3112,15 +3091,15 @@
 
     .line 651
     .line 652
-    iget-object v2, v2, Lds4;->g:Lfc5;
+    iget-object v2, v2, Lia5;->g:Lgw5;
 
     .line 653
     .line 654
-    iget-object v2, v2, Lfc5;->Q:Ljh6;
+    iget-object v2, v2, Lgw5;->X:Lk57;
 
     .line 655
     .line 656
-    invoke-virtual {v2}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 657
     .line 658
@@ -3128,11 +3107,11 @@
     move-result-object v2
 
     .line 660
-    check-cast v2, Lmr4;
+    check-cast v2, Lr95;
 
     .line 661
     .line 662
-    iget-boolean v2, v2, Lmr4;->f:Z
+    iget-boolean v2, v2, Lr95;->f:Z
 
     .line 663
     .line 664
@@ -3154,11 +3133,11 @@
 
     .line 673
     :cond_13
-    sget v2, Ld95;->spy_apps:I
+    sget v2, Let5;->spy_apps:I
 
     .line 674
     .line 675
-    sget-object v4, Lkr4;->T:Lkr4;
+    sget-object v4, Lp95;->c0:Lp95;
 
     .line 676
     .line 677
@@ -3166,7 +3145,7 @@
 
     .line 678
     .line 679
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 680
     .line 681
@@ -3174,32 +3153,32 @@
     move-result-object v0
 
     .line 683
-    invoke-virtual {v0, v4}, Lds4;->h(Lkr4;)V
+    invoke-virtual {v0, v4}, Lia5;->h(Lp95;)V
 
     .line 684
     .line 685
     .line 686
-    invoke-static {v0}, Lno7;->a(Llo7;)Lnl0;
+    invoke-static {v0}, Lkj8;->a(Lij8;)Lqs0;
 
     .line 687
     .line 688
     .line 689
-    move-result-object v2
+    move-result-object v1
 
     .line 690
-    new-instance v4, Las4;
+    new-instance v2, Lfa5;
 
     .line 691
     .line 692
-    const/4 v5, 0x7
+    const/4 v4, 0x7
 
     .line 693
-    invoke-direct {v4, v0, v6, v5}, Las4;-><init>(Lds4;Lyv0;I)V
+    invoke-direct {v2, v0, v6, v4}, Lfa5;-><init>(Lia5;Lb31;I)V
 
     .line 694
     .line 695
     .line 696
-    invoke-static {v2, v6, v4, v3}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {v1, v6, v2, v3}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 697
     .line 698
@@ -3208,7 +3187,7 @@
 
     .line 700
     :cond_14
-    sget v2, Ld95;->google_apps:I
+    sget v2, Let5;->google_apps:I
 
     .line 701
     .line 702
@@ -3216,7 +3195,7 @@
 
     .line 703
     .line 704
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 705
     .line 706
@@ -3224,32 +3203,32 @@
     move-result-object v0
 
     .line 708
-    invoke-virtual {v0, v4}, Lds4;->h(Lkr4;)V
+    invoke-virtual {v0, v4}, Lia5;->h(Lp95;)V
 
     .line 709
     .line 710
     .line 711
-    invoke-static {v0}, Lno7;->a(Llo7;)Lnl0;
+    invoke-static {v0}, Lkj8;->a(Lij8;)Lqs0;
 
     .line 712
     .line 713
     .line 714
-    move-result-object v2
+    move-result-object v1
 
     .line 715
-    new-instance v4, Las4;
+    new-instance v2, Lfa5;
 
     .line 716
     .line 717
-    const/4 v5, 0x6
+    const/4 v4, 0x6
 
     .line 718
-    invoke-direct {v4, v0, v6, v5}, Las4;-><init>(Lds4;Lyv0;I)V
+    invoke-direct {v2, v0, v6, v4}, Lfa5;-><init>(Lia5;Lb31;I)V
 
     .line 719
     .line 720
     .line 721
-    invoke-static {v2, v6, v4, v3}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    invoke-static {v1, v6, v2, v3}, Lm93;->L(Li41;Lb41;Lxi2;I)Lk47;
 
     .line 722
     .line 723
@@ -3258,7 +3237,7 @@
 
     .line 725
     :cond_15
-    sget v2, Ld95;->clear:I
+    sget v2, Let5;->clear:I
 
     .line 726
     .line 727
@@ -3266,7 +3245,7 @@
 
     .line 728
     .line 729
-    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {v1}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 730
     .line 731
@@ -3274,200 +3253,196 @@
     move-result-object v0
 
     .line 733
-    new-instance v2, Lho3;
+    new-instance v1, Lt45;
 
     .line 734
     .line 735
-    const/16 v3, 0x19
+    invoke-direct {v1, v5}, Lt45;-><init>(I)V
 
     .line 736
     .line 737
-    invoke-direct {v2, v3}, Lho3;-><init>(I)V
-
     .line 738
+    iget-object v0, v0, Lia5;->f:Lk57;
+
     .line 739
     .line 740
-    iget-object v0, v0, Lds4;->f:Ljh6;
+    invoke-static {v0, v1}, Lic4;->W(Lk57;Lmi2;)V
 
     .line 741
     .line 742
-    invoke-static {v0, v2}, Lj04;->P(Ljh6;Lj72;)V
-
     .line 743
-    .line 744
-    .line 745
     return v7
 
-    .line 746
+    .line 744
     :cond_16
-    sget v2, Ld95;->import_from_file:I
+    sget v2, Let5;->import_from_file:I
+
+    .line 745
+    .line 746
+    if-ne v0, v2, :cond_19
 
     .line 747
     .line 748
-    if-ne v0, v2, :cond_19
+    new-instance v0, Landroid/content/Intent;
 
     .line 749
     .line 750
-    new-instance v0, Landroid/content/Intent;
+    const-string v2, "android.intent.action.OPEN_DOCUMENT"
 
     .line 751
     .line 752
-    const-string v2, "android.intent.action.OPEN_DOCUMENT"
+    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 753
     .line 754
-    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
     .line 755
+    const-string v2, "android.intent.category.OPENABLE"
+
     .line 756
     .line 757
-    const-string v2, "android.intent.category.OPENABLE"
+    invoke-virtual {v0, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 758
     .line 759
-    invoke-virtual {v0, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
-
     .line 760
+    const-string v2, "text/plain"
+
     .line 761
     .line 762
-    const-string v2, "text/plain"
+    invoke-virtual {v0, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 763
     .line 764
-    invoke-virtual {v0, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
-
     .line 765
+    :try_start_0
+    iget-object v2, v1, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->R0:Lq6;
+
     .line 766
     .line 767
-    :try_start_0
-    iget-object v2, v1, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->G0:Le6;
+    sget v3, Lxt5;->title_file_chooser:I
 
     .line 768
     .line 769
-    sget v3, Lx95;->title_file_chooser:I
+    invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     .line 770
     .line 771
-    invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
     .line 772
-    .line 773
-    .line 774
     move-result-object v3
 
-    .line 775
+    .line 773
     invoke-static {v0, v3}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
+    .line 774
+    .line 775
     .line 776
-    .line 777
-    .line 778
     move-result-object v0
 
-    .line 779
+    .line 777
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 778
+    .line 779
     .line 780
+    invoke-virtual {v2, v0}, Lq6;->d0(Ljava/lang/Object;)V
+
     .line 781
     .line 782
-    invoke-virtual {v2, v0}, Le6;->X(Ljava/lang/Object;)V
-
     .line 783
-    .line 784
-    .line 785
-    sget-object v0, Lbh7;->a:Lbh7;
+    sget-object v0, Lr98;->a:Lr98;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 786
-    .line 787
+    .line 784
+    .line 785
     goto :goto_a
 
-    .line 788
+    .line 786
     :catchall_0
     move-exception v0
 
-    .line 789
+    .line 787
     instance-of v2, v0, Ljava/lang/InterruptedException;
+
+    .line 788
+    .line 789
+    if-nez v2, :cond_18
 
     .line 790
     .line 791
-    if-nez v2, :cond_18
+    instance-of v2, v0, Ljava/util/concurrent/CancellationException;
 
     .line 792
     .line 793
-    instance-of v2, v0, Ljava/util/concurrent/CancellationException;
+    if-nez v2, :cond_18
 
     .line 794
     .line 795
-    if-nez v2, :cond_18
+    new-instance v2, Lc86;
 
     .line 796
     .line 797
-    new-instance v2, Lon5;
+    invoke-direct {v2, v0}, Lc86;-><init>(Ljava/lang/Throwable;)V
 
     .line 798
     .line 799
-    invoke-direct {v2, v0}, Lon5;-><init>(Ljava/lang/Throwable;)V
-
     .line 800
-    .line 801
-    .line 802
     move-object v0, v2
 
-    .line 803
+    .line 801
     :goto_a
-    invoke-static {v0}, Lpn5;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+    invoke-static {v0}, Ld86;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
 
+    .line 802
+    .line 803
     .line 804
-    .line 805
-    .line 806
     move-result-object v0
 
-    .line 807
+    .line 805
     if-eqz v0, :cond_17
+
+    .line 806
+    .line 807
+    instance-of v0, v0, Landroid/content/ActivityNotFoundException;
 
     .line 808
     .line 809
-    instance-of v0, v0, Landroid/content/ActivityNotFoundException;
+    if-eqz v0, :cond_17
 
     .line 810
     .line 811
-    if-eqz v0, :cond_17
+    sget v0, Lxt5;->toast_require_file_manager:I
 
     .line 812
     .line 813
-    sget v0, Lx95;->toast_require_file_manager:I
+    invoke-static {v1, v0}, Lku8;->K(Lsu/happ/proxyutility/ui/SnackbarHostActivity;I)V
 
     .line 814
     .line 815
-    invoke-static {v1, v0}, Luy7;->N(Lsu/happ/proxyutility/ui/SnackbarHostActivity;I)V
-
     .line 816
-    .line 817
-    .line 818
     :cond_17
     :goto_b
     return v7
 
-    .line 819
+    .line 817
     :cond_18
     throw v0
 
-    .line 820
+    .line 818
     :cond_19
     invoke-super/range {p0 .. p1}, Lsu/happ/proxyutility/ui/BaseActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
+    .line 819
+    .line 820
     .line 821
-    .line 822
-    .line 823
     move-result v0
 
-    .line 824
+    .line 822
     return v0
 .end method
 
 .method public final onPause()V
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-super {p0}, Lsu/happ/proxyutility/ui/BaseActivity;->onPause()V
@@ -3475,7 +3450,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
 
     .line 5
     .line 6
@@ -3483,114 +3458,110 @@
 
     .line 7
     .line 8
-    iget-object v0, v0, Lpv7;->Z:Ljava/lang/Object;
+    iget-object v0, v0, Lb6;->h0:Landroid/view/View;
 
     .line 9
     .line 10
-    check-cast v0, Landroid/view/View;
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
 
     .line 11
     .line 12
-    check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/f;
 
     .line 13
     .line 14
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/f;
-
     .line 15
-    .line 16
-    .line 17
     move-result-object v0
 
-    .line 18
+    .line 16
     if-eqz v0, :cond_0
+
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 19
     .line 20
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
-
     .line 21
-    .line 22
-    .line 23
-    move-result-object v0
+    move-result-object p0
 
+    .line 22
+    sget-object v0, Lzp5;->a:Lmm7;
+
+    .line 23
     .line 24
-    sget-object v1, Lq65;->a:Lzu6;
+    iget-object p0, p0, Lia5;->g:Lgw5;
 
     .line 25
     .line 26
-    iget-object v0, v0, Lds4;->g:Lfc5;
+    iget-object p0, p0, Lgw5;->X:Lk57;
 
     .line 27
     .line 28
-    iget-object v0, v0, Lfc5;->Q:Ljh6;
+    invoke-virtual {p0}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 29
     .line 30
-    invoke-virtual {v0}, Ljh6;->getValue()Ljava/lang/Object;
-
     .line 31
-    .line 32
-    .line 33
-    move-result-object v0
+    move-result-object p0
 
+    .line 32
+    check-cast p0, Lr95;
+
+    .line 33
     .line 34
-    check-cast v0, Lmr4;
+    iget-object p0, p0, Lr95;->d:Lqb5;
 
     .line 35
     .line 36
-    iget-object v0, v0, Lmr4;->d:Llt4;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 37
     .line 38
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 39
+    sget-object v0, Lzp5;->a:Lmm7;
+
     .line 40
     .line 41
-    sget-object v1, Lq65;->a:Lzu6;
+    invoke-virtual {v0}, Lmm7;->getValue()Ljava/lang/Object;
 
     .line 42
     .line 43
-    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
-
     .line 44
-    .line 45
-    .line 46
-    move-result-object v1
+    move-result-object v0
 
+    .line 45
+    check-cast v0, Lcom/tencent/mmkv/MMKV;
+
+    .line 46
     .line 47
-    check-cast v1, Lcom/tencent/mmkv/MMKV;
+    const-string v1, "pref_per_app_proxy_set"
 
     .line 48
     .line 49
-    const-string v2, "pref_per_app_proxy_set"
+    invoke-virtual {v0, v1, p0}, Lcom/tencent/mmkv/MMKV;->n(Ljava/lang/String;Ljava/util/Set;)V
 
     .line 50
     .line 51
-    invoke-virtual {v1, v2, v0}, Lcom/tencent/mmkv/MMKV;->o(Ljava/lang/String;Ljava/util/Set;)V
-
     .line 52
-    .line 53
-    .line 54
     :cond_0
     return-void
 
-    .line 55
+    .line 53
     :cond_1
-    const-string v0, "binding"
+    const-string p0, "binding"
+
+    .line 54
+    .line 55
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 56
     .line 57
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
-
     .line 58
-    .line 59
-    .line 60
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
-    .line 61
-    throw v0
+    .line 59
+    throw p0
 .end method
 
 .method public final onPrepareOptionsMenu(Landroid/view/Menu;)Z
@@ -3601,7 +3572,7 @@
 
     .line 2
     .line 3
-    sget v0, Ld95;->system_apps:I
+    sget v0, Let5;->system_apps:I
 
     .line 4
     .line 5
@@ -3617,7 +3588,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 12
     .line 13
@@ -3625,15 +3596,15 @@
     move-result-object v1
 
     .line 15
-    iget-object v1, v1, Lds4;->g:Lfc5;
+    iget-object v1, v1, Lia5;->g:Lgw5;
 
     .line 16
     .line 17
-    iget-object v1, v1, Lfc5;->Q:Ljh6;
+    iget-object v1, v1, Lgw5;->X:Lk57;
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 20
     .line 21
@@ -3641,11 +3612,11 @@
     move-result-object v1
 
     .line 23
-    check-cast v1, Lmr4;
+    check-cast v1, Lr95;
 
     .line 24
     .line 25
-    iget-boolean v1, v1, Lmr4;->f:Z
+    iget-boolean v1, v1, Lr95;->f:Z
 
     .line 26
     .line 27
@@ -3653,7 +3624,7 @@
 
     .line 28
     .line 29
-    sget v1, Lx95;->menu_item_hide_system_apps:I
+    sget v1, Lxt5;->menu_item_hide_system_apps:I
 
     .line 30
     .line 31
@@ -3661,7 +3632,7 @@
 
     .line 32
     :cond_0
-    sget v1, Lx95;->menu_item_show_system_apps:I
+    sget v1, Lxt5;->menu_item_show_system_apps:I
 
     .line 33
     .line 34
@@ -3684,7 +3655,7 @@
 
     .line 42
     .line 43
-    sget v0, Ld95;->select_all:I
+    sget v0, Let5;->select_all:I
 
     .line 44
     .line 45
@@ -3700,7 +3671,7 @@
 
     .line 50
     .line 51
-    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lds4;
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->A()Lia5;
 
     .line 52
     .line 53
@@ -3708,15 +3679,15 @@
     move-result-object v1
 
     .line 55
-    iget-object v1, v1, Lds4;->g:Lfc5;
+    iget-object v1, v1, Lia5;->g:Lgw5;
 
     .line 56
     .line 57
-    iget-object v1, v1, Lfc5;->Q:Ljh6;
+    iget-object v1, v1, Lgw5;->X:Lk57;
 
     .line 58
     .line 59
-    invoke-virtual {v1}, Ljh6;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Lk57;->getValue()Ljava/lang/Object;
 
     .line 60
     .line 61
@@ -3724,11 +3695,11 @@
     move-result-object v1
 
     .line 63
-    check-cast v1, Lmr4;
+    check-cast v1, Lr95;
 
     .line 64
     .line 65
-    iget-boolean v1, v1, Lmr4;->g:Z
+    iget-boolean v1, v1, Lr95;->g:Z
 
     .line 66
     .line 67
@@ -3736,7 +3707,7 @@
 
     .line 68
     .line 69
-    sget v1, Lx95;->menu_item_unselect_all:I
+    sget v1, Lxt5;->menu_item_unselect_all:I
 
     .line 70
     .line 71
@@ -3744,7 +3715,7 @@
 
     .line 72
     :cond_2
-    sget v1, Lx95;->menu_item_select_all:I
+    sget v1, Lxt5;->menu_item_select_all:I
 
     .line 73
     .line 74
@@ -3768,133 +3739,133 @@
     .line 82
     .line 83
     .line 84
-    move-result p1
+    move-result p0
 
     .line 85
-    return p1
+    return p0
 .end method
 
-.method public final t()Landroidx/appcompat/widget/Toolbar;
-    .locals 1
+.method public final u()Landroidx/appcompat/widget/Toolbar;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lpv7;->b0:Ljava/lang/Object;
+    iget-object p0, p0, Lb6;->n0:Landroid/view/View;
 
     .line 6
     .line 7
-    check-cast v0, Landroidx/appcompat/widget/Toolbar;
+    check-cast p0, Landroidx/appcompat/widget/Toolbar;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    throw v0
+    throw p0
 .end method
 
-.method public final v()Z
-    .locals 1
+.method public final w()Z
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lpv7;->W:Ljava/lang/Object;
+    iget-object p0, p0, Lb6;->j0:Landroid/view/View;
 
     .line 6
     .line 7
-    check-cast v0, Landroid/widget/LinearLayout;
+    check-cast p0, Landroid/widget/LinearLayout;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
 
     .line 10
     .line 11
     .line 12
-    move-result v0
+    move-result p0
 
     .line 13
-    return v0
+    return p0
 
     .line 14
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 15
     .line 16
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 17
     .line 18
     .line 19
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 20
-    throw v0
+    throw p0
 .end method
 
 .method public final z()Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->C0:Lpv7;
+    iget-object p0, p0, Lsu/happ/proxyutility/feature/proxy/PerAppProxyActivity;->N0:Lb6;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, v0, Lpv7;->a0:Ljava/lang/Object;
+    iget-object p0, p0, Lb6;->m0:Landroid/view/ViewGroup;
 
     .line 6
     .line 7
-    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
+    check-cast p0, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 
     .line 10
     :cond_0
-    const-string v0, "binding"
+    const-string p0, "binding"
 
     .line 11
     .line 12
-    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+    invoke-static {p0}, Lm93;->a0(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    throw v0
+    throw p0
 .end method

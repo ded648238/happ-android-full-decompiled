@@ -1,25 +1,62 @@
-.class public final Lh92;
+.class public interface abstract Lh92;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Landroid/os/Parcelable;
 
 
-# instance fields
-.field public final synthetic a:I
+# virtual methods
+.method public abstract A()I
+.end method
 
+.method public abstract a()I
+.end method
 
-# direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method public abstract b()I
+.end method
 
-    .line 1
-    iput p1, p0, Lh92;->a:I
+.method public abstract f()I
+.end method
 
-    .line 2
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.method public abstract getOrder()I
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    return-void
+.method public abstract i()F
+.end method
+
+.method public abstract j()I
+.end method
+
+.method public abstract l(I)V
+.end method
+
+.method public abstract n()I
+.end method
+
+.method public abstract o()I
+.end method
+
+.method public abstract q()I
+.end method
+
+.method public abstract r(I)V
+.end method
+
+.method public abstract s()F
+.end method
+
+.method public abstract t()F
+.end method
+
+.method public abstract u()I
+.end method
+
+.method public abstract w()I
+.end method
+
+.method public abstract x()Z
+.end method
+
+.method public abstract z()I
 .end method

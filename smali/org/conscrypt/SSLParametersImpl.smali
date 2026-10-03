@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/SSLParametersImpl;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/lang/Cloneable;
@@ -24,6 +24,8 @@
 
 .field private static volatile defaultX509TrustManager:Ljavax/net/ssl/X509TrustManager;
 
+.field private static final logger:Ljava/util/logging/Logger;
+
 
 # instance fields
 .field private algorithmConstraints:Ljava/security/AlgorithmConstraints;
@@ -32,13 +34,13 @@
 
 .field applicationProtocols:[B
 
-.field channelIdEnabled:Z
-
 .field private final clientSessionContext:Lorg/conscrypt/ClientSessionContext;
 
 .field private client_mode:Z
 
 .field private ctVerificationEnabled:Z
+
+.field echConfigList:[B
 
 .field private enable_session_creation:Z
 
@@ -47,6 +49,8 @@
 .field enabledProtocols:[Ljava/lang/String;
 
 .field private endpointIdentificationAlgorithm:Ljava/lang/String;
+
+.field private final getNetworkSecurityPolicy:Ljava/lang/reflect/Method;
 
 .field isEnabledProtocolsFiltered:Z
 
@@ -94,69 +98,100 @@
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
+    const-class v0, Lorg/conscrypt/SSLParametersImpl;
 
     .line 2
-    new-array v0, v0, [Ljava/lang/String;
-
     .line 3
-    .line 4
-    sput-object v0, Lorg/conscrypt/SSLParametersImpl;->EMPTY_STRING_ARRAY:[Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
     .line 5
     .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    sput-object v0, Lorg/conscrypt/SSLParametersImpl;->logger:Ljava/util/logging/Logger;
+
+    .line 12
+    .line 13
+    const/4 v0, 0x0
+
+    .line 14
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 15
+    .line 16
+    sput-object v0, Lorg/conscrypt/SSLParametersImpl;->EMPTY_STRING_ARRAY:[Ljava/lang/String;
+
+    .line 17
+    .line 18
     return-void
 .end method
 
 .method private constructor <init>(Lorg/conscrypt/ClientSessionContext;Lorg/conscrypt/ServerSessionContext;Ljavax/net/ssl/X509KeyManager;Lorg/conscrypt/PSKKeyManager;Ljavax/net/ssl/X509TrustManager;Lorg/conscrypt/Spake2PlusTrustManager;Lorg/conscrypt/Spake2PlusKeyManager;Lorg/conscrypt/SSLParametersImpl;)V
     .locals 2
 
-    .line 258
+    .line 266
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 259
+    .line 267
     iput-boolean v0, p0, Lorg/conscrypt/SSLParametersImpl;->client_mode:Z
 
     const/4 v1, 0x0
 
-    .line 260
+    .line 268
     iput-boolean v1, p0, Lorg/conscrypt/SSLParametersImpl;->need_client_auth:Z
 
-    .line 261
+    .line 269
     iput-boolean v1, p0, Lorg/conscrypt/SSLParametersImpl;->want_client_auth:Z
 
-    .line 262
+    .line 270
     iput-boolean v0, p0, Lorg/conscrypt/SSLParametersImpl;->enable_session_creation:Z
 
-    .line 263
+    .line 271
     sget-object v0, Lorg/conscrypt/EmptyArray;->BYTE:[B
 
     iput-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->applicationProtocols:[B
 
-    .line 264
+    .line 272
     iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
 
-    .line 265
+    .line 273
     iput-object p2, p0, Lorg/conscrypt/SSLParametersImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
 
-    .line 266
+    .line 274
     iput-object p3, p0, Lorg/conscrypt/SSLParametersImpl;->x509KeyManager:Ljavax/net/ssl/X509KeyManager;
 
-    .line 267
+    .line 275
     iput-object p4, p0, Lorg/conscrypt/SSLParametersImpl;->pskKeyManager:Lorg/conscrypt/PSKKeyManager;
 
-    .line 268
+    .line 276
     iput-object p5, p0, Lorg/conscrypt/SSLParametersImpl;->x509TrustManager:Ljavax/net/ssl/X509TrustManager;
 
-    .line 269
+    .line 277
+    invoke-direct {p0, p5}, Lorg/conscrypt/SSLParametersImpl;->getNetworkSecurityPolicyMethod(Ljavax/net/ssl/X509TrustManager;)Ljava/lang/reflect/Method;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->getNetworkSecurityPolicy:Ljava/lang/reflect/Method;
+
+    .line 278
     iput-object p7, p0, Lorg/conscrypt/SSLParametersImpl;->spake2PlusKeyManager:Lorg/conscrypt/Spake2PlusKeyManager;
 
-    .line 270
+    .line 279
     iput-object p6, p0, Lorg/conscrypt/SSLParametersImpl;->spake2PlusTrustManager:Lorg/conscrypt/Spake2PlusTrustManager;
 
-    .line 271
+    .line 280
     iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
 
     const/4 p2, 0x0
@@ -177,12 +212,12 @@
     :goto_0
     iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
 
-    .line 272
+    .line 281
     iget-boolean p1, p8, Lorg/conscrypt/SSLParametersImpl;->isEnabledProtocolsFiltered:Z
 
     iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->isEnabledProtocolsFiltered:Z
 
-    .line 273
+    .line 282
     iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->enabledCipherSuites:[Ljava/lang/String;
 
     if-nez p1, :cond_1
@@ -191,7 +226,7 @@
 
     goto :goto_1
 
-    .line 274
+    .line 283
     :cond_1
     invoke-virtual {p1}, [Ljava/lang/String;->clone()Ljava/lang/Object;
 
@@ -202,42 +237,42 @@
     :goto_1
     iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledCipherSuites:[Ljava/lang/String;
 
-    .line 275
+    .line 284
     iget-boolean p1, p8, Lorg/conscrypt/SSLParametersImpl;->client_mode:Z
 
     iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->client_mode:Z
 
-    .line 276
+    .line 285
     iget-boolean p1, p8, Lorg/conscrypt/SSLParametersImpl;->need_client_auth:Z
 
     iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->need_client_auth:Z
 
-    .line 277
+    .line 286
     iget-boolean p1, p8, Lorg/conscrypt/SSLParametersImpl;->want_client_auth:Z
 
     iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->want_client_auth:Z
 
-    .line 278
+    .line 287
     iget-boolean p1, p8, Lorg/conscrypt/SSLParametersImpl;->enable_session_creation:Z
 
     iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->enable_session_creation:Z
 
-    .line 279
+    .line 288
     iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->endpointIdentificationAlgorithm:Ljava/lang/String;
 
     iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->endpointIdentificationAlgorithm:Ljava/lang/String;
 
-    .line 280
+    .line 289
     iget-boolean p1, p8, Lorg/conscrypt/SSLParametersImpl;->useCipherSuitesOrder:Z
 
     iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->useCipherSuitesOrder:Z
 
-    .line 281
+    .line 290
     iget-boolean p1, p8, Lorg/conscrypt/SSLParametersImpl;->ctVerificationEnabled:Z
 
     iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->ctVerificationEnabled:Z
 
-    .line 282
+    .line 291
     iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->sctExtension:[B
 
     if-nez p1, :cond_2
@@ -256,7 +291,7 @@
     :goto_2
     iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->sctExtension:[B
 
-    .line 283
+    .line 292
     iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->ocspResponse:[B
 
     if-nez p1, :cond_3
@@ -275,7 +310,7 @@
     :goto_3
     iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->ocspResponse:[B
 
-    .line 284
+    .line 293
     iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->applicationProtocols:[B
 
     if-nez p1, :cond_4
@@ -284,7 +319,7 @@
 
     goto :goto_4
 
-    .line 285
+    .line 294
     :cond_4
     invoke-virtual {p1}, [B->clone()Ljava/lang/Object;
 
@@ -295,44 +330,80 @@
     :goto_4
     iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->applicationProtocols:[B
 
-    .line 286
+    .line 295
     iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->applicationProtocolSelector:Lorg/conscrypt/ApplicationProtocolSelectorAdapter;
 
     iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->applicationProtocolSelector:Lorg/conscrypt/ApplicationProtocolSelectorAdapter;
 
-    .line 287
+    .line 296
     iget-boolean p1, p8, Lorg/conscrypt/SSLParametersImpl;->useSessionTickets:Z
 
     iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->useSessionTickets:Z
 
-    .line 288
-    iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->useSni:Ljava/lang/Boolean;
-
-    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->useSni:Ljava/lang/Boolean;
-
-    .line 289
-    iget-boolean p1, p8, Lorg/conscrypt/SSLParametersImpl;->channelIdEnabled:Z
-
-    iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->channelIdEnabled:Z
-
-    .line 290
-    iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->namedGroups:[Ljava/lang/String;
+    .line 297
+    iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->echConfigList:[B
 
     if-nez p1, :cond_5
+
+    move-object p1, p2
 
     goto :goto_5
 
     :cond_5
+    invoke-virtual {p1}, [B->clone()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, [B
+
+    :goto_5
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->echConfigList:[B
+
+    .line 298
+    iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->useSni:Ljava/lang/Boolean;
+
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->useSni:Ljava/lang/Boolean;
+
+    .line 299
+    iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->namedGroups:[Ljava/lang/String;
+
+    if-nez p1, :cond_6
+
+    move-object p1, p2
+
+    goto :goto_6
+
+    :cond_6
     invoke-virtual {p1}, [Ljava/lang/String;->clone()Ljava/lang/Object;
 
     move-result-object p1
 
-    move-object p2, p1
+    check-cast p1, [Ljava/lang/String;
 
-    check-cast p2, [Ljava/lang/String;
+    :goto_6
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->namedGroups:[Ljava/lang/String;
 
-    :goto_5
-    iput-object p2, p0, Lorg/conscrypt/SSLParametersImpl;->namedGroups:[Ljava/lang/String;
+    .line 300
+    iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->sniMatchers:Ljava/util/Collection;
+
+    if-nez p1, :cond_7
+
+    goto :goto_7
+
+    :cond_7
+    new-instance p2, Ljava/util/ArrayList;
+
+    iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->sniMatchers:Ljava/util/Collection;
+
+    invoke-direct {p2, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    :goto_7
+    iput-object p2, p0, Lorg/conscrypt/SSLParametersImpl;->sniMatchers:Ljava/util/Collection;
+
+    .line 301
+    iget-object p1, p8, Lorg/conscrypt/SSLParametersImpl;->algorithmConstraints:Ljava/security/AlgorithmConstraints;
+
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->algorithmConstraints:Ljava/security/AlgorithmConstraints;
 
     return-void
 .end method
@@ -485,20 +556,20 @@
 
     .line 68
     :cond_1
-    new-instance p1, Ljava/security/KeyManagementException;
+    new-instance p0, Ljava/security/KeyManagementException;
 
     .line 69
     .line 70
-    const-string p2, "Spake2PlusManagers should not be set with X509KeyManager, x509TrustManager or PSKKeyManager"
+    const-string p1, "Spake2PlusManagers should not be set with X509KeyManager, x509TrustManager or PSKKeyManager"
 
     .line 71
     .line 72
-    invoke-direct {p1, p2}, Ljava/security/KeyManagementException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/KeyManagementException;-><init>(Ljava/lang/String;)V
 
     .line 73
     .line 74
     .line 75
-    throw p1
+    throw p0
 
     .line 76
     :cond_2
@@ -563,20 +634,20 @@
 
     .line 104
     :cond_4
-    new-instance p1, Ljava/security/KeyManagementException;
+    new-instance p0, Ljava/security/KeyManagementException;
 
     .line 105
     .line 106
-    const-string p2, "Spake2PlusTrustManager should not be set with X509TrustManager"
+    const-string p1, "Spake2PlusTrustManager should not be set with X509TrustManager"
 
     .line 107
     .line 108
-    invoke-direct {p1, p2}, Ljava/security/KeyManagementException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/KeyManagementException;-><init>(Ljava/lang/String;)V
 
     .line 109
     .line 110
     .line 111
-    throw p1
+    throw p0
 
     .line 112
     :cond_5
@@ -589,14 +660,14 @@
 
     .line 115
     .line 116
-    const/4 p1, 0x1
+    move p1, p3
 
     .line 117
     goto :goto_2
 
     .line 118
     :cond_6
-    const/4 p1, 0x0
+    move p1, v0
 
     .line 119
     :goto_2
@@ -608,14 +679,14 @@
 
     .line 122
     .line 123
-    const/4 p2, 0x1
+    move p2, p3
 
     .line 124
     goto :goto_3
 
     .line 125
     :cond_7
-    const/4 p2, 0x0
+    move p2, v0
 
     .line 126
     :goto_3
@@ -623,295 +694,311 @@
 
     .line 127
     .line 128
-    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->isSpake()Z
+    iget-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->x509TrustManager:Ljavax/net/ssl/X509TrustManager;
 
     .line 129
     .line 130
+    invoke-direct {p0, p1}, Lorg/conscrypt/SSLParametersImpl;->getNetworkSecurityPolicyMethod(Ljavax/net/ssl/X509TrustManager;)Ljava/lang/reflect/Method;
+
     .line 131
-    move-result p1
-
     .line 132
-    if-eqz p1, :cond_8
-
     .line 133
+    move-result-object p1
+
     .line 134
-    const-string p1, "TLSv1.3"
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->getNetworkSecurityPolicy:Ljava/lang/reflect/Method;
 
     .line 135
     .line 136
-    filled-new-array {p1}, [Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->isSpake()Z
 
     .line 137
     .line 138
     .line 139
-    move-result-object p1
+    move-result p1
 
     .line 140
-    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
+    if-eqz p1, :cond_8
 
     .line 141
     .line 142
-    goto :goto_6
+    const-string p1, "TLSv1.3"
 
     .line 143
+    .line 144
+    filled-new-array {p1}, [Ljava/lang/String;
+
+    .line 145
+    .line 146
+    .line 147
+    move-result-object p1
+
+    .line 148
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
+
+    .line 149
+    .line 150
+    goto :goto_6
+
+    .line 151
     :cond_8
     if-nez p6, :cond_9
 
-    .line 144
-    .line 145
-    invoke-static {}, Lorg/conscrypt/NativeCrypto;->getDefaultProtocols()[Ljava/lang/String;
-
-    .line 146
-    .line 147
-    .line 148
-    move-result-object p1
-
-    .line 149
-    invoke-virtual {p1}, [Ljava/lang/String;->clone()Ljava/lang/Object;
-
-    .line 150
-    .line 151
     .line 152
-    move-result-object p1
-
     .line 153
-    check-cast p1, [Ljava/lang/String;
+    invoke-static {}, Lorg/conscrypt/NativeCrypto;->getDefaultProtocols()[Ljava/lang/String;
 
     .line 154
     .line 155
-    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
-
     .line 156
+    move-result-object p1
+
     .line 157
-    goto :goto_6
+    invoke-virtual {p1}, [Ljava/lang/String;->clone()Ljava/lang/Object;
 
     .line 158
+    .line 159
+    .line 160
+    move-result-object p1
+
+    .line 161
+    check-cast p1, [Ljava/lang/String;
+
+    .line 162
+    .line 163
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
+
+    .line 164
+    .line 165
+    goto :goto_6
+
+    .line 166
     :cond_9
     invoke-static {}, Lorg/conscrypt/Platform;->isTlsV1Filtered()Z
 
-    .line 159
-    .line 160
-    .line 161
+    .line 167
+    .line 168
+    .line 169
     move-result p1
 
-    .line 162
-    if-nez p1, :cond_a
-
-    .line 163
-    .line 164
-    new-array p1, v0, [Ljava/lang/String;
-
-    .line 165
-    .line 166
-    goto :goto_4
-
-    .line 167
-    :cond_a
-    const/4 p1, 0x3
-
-    .line 168
-    new-array p1, p1, [Ljava/lang/String;
-
-    .line 169
     .line 170
-    const-string p2, "SSLv3"
+    if-eqz p1, :cond_a
 
     .line 171
     .line 172
-    aput-object p2, p1, v0
+    const/4 p1, 0x3
 
     .line 173
+    new-array p1, p1, [Ljava/lang/String;
+
     .line 174
-    const-string p2, "TLSv1"
-
     .line 175
+    const-string p2, "SSLv3"
+
     .line 176
-    aput-object p2, p1, p3
-
     .line 177
-    .line 178
-    const/4 p2, 0x2
+    aput-object p2, p1, v0
 
+    .line 178
     .line 179
-    const-string p4, "TLSv1.1"
+    const-string p2, "TLSv1"
 
     .line 180
     .line 181
-    aput-object p4, p1, p2
+    aput-object p2, p1, p3
 
     .line 182
     .line 183
+    const/4 p2, 0x2
+
+    .line 184
+    const-string p4, "TLSv1.1"
+
+    .line 185
+    .line 186
+    aput-object p4, p1, p2
+
+    .line 187
+    .line 188
+    goto :goto_4
+
+    .line 189
+    :cond_a
+    new-array p1, v0, [Ljava/lang/String;
+
+    .line 190
+    .line 191
     :goto_4
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    .line 184
-    .line 185
-    .line 186
+    .line 192
+    .line 193
+    .line 194
     move-result-object p1
 
-    .line 187
+    .line 195
     invoke-static {p6, p1}, Lorg/conscrypt/SSLParametersImpl;->filterFromProtocols([Ljava/lang/String;Ljava/util/List;)[Ljava/lang/String;
 
-    .line 188
-    .line 189
-    .line 190
+    .line 196
+    .line 197
+    .line 198
     move-result-object p1
 
-    .line 191
+    .line 199
     array-length p2, p6
 
-    .line 192
+    .line 200
     array-length p4, p1
 
-    .line 193
+    .line 201
     if-eq p2, p4, :cond_b
 
-    .line 194
-    .line 195
-    const/4 p2, 0x1
+    .line 202
+    .line 203
+    move p2, p3
 
-    .line 196
+    .line 204
     goto :goto_5
 
-    .line 197
+    .line 205
     :cond_b
-    const/4 p2, 0x0
+    move p2, v0
 
-    .line 198
+    .line 206
     :goto_5
     iput-boolean p2, p0, Lorg/conscrypt/SSLParametersImpl;->isEnabledProtocolsFiltered:Z
 
-    .line 199
-    .line 200
-    invoke-static {p1}, Lorg/conscrypt/NativeCrypto;->checkEnabledProtocols([Ljava/lang/String;)[Ljava/lang/String;
-
-    .line 201
-    .line 202
-    .line 203
-    move-result-object p1
-
-    .line 204
-    invoke-virtual {p1}, [Ljava/lang/String;->clone()Ljava/lang/Object;
-
-    .line 205
-    .line 206
     .line 207
-    move-result-object p1
-
     .line 208
-    check-cast p1, [Ljava/lang/String;
+    invoke-static {p1}, Lorg/conscrypt/NativeCrypto;->checkEnabledProtocols([Ljava/lang/String;)[Ljava/lang/String;
 
     .line 209
     .line 210
-    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
-
     .line 211
+    move-result-object p1
+
     .line 212
-    :goto_6
-    iget-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->x509KeyManager:Ljavax/net/ssl/X509KeyManager;
+    invoke-virtual {p1}, [Ljava/lang/String;->clone()Ljava/lang/Object;
 
     .line 213
     .line 214
-    if-nez p1, :cond_d
-
     .line 215
+    move-result-object p1
+
     .line 216
-    iget-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->x509TrustManager:Ljavax/net/ssl/X509TrustManager;
+    check-cast p1, [Ljava/lang/String;
 
     .line 217
     .line 218
-    if-eqz p1, :cond_c
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
 
     .line 219
     .line 220
-    goto :goto_7
+    :goto_6
+    iget-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->x509KeyManager:Ljavax/net/ssl/X509KeyManager;
 
     .line 221
-    :cond_c
-    const/4 p1, 0x0
-
     .line 222
-    goto :goto_8
+    if-nez p1, :cond_d
 
     .line 223
-    :cond_d
-    :goto_7
-    const/4 p1, 0x1
-
     .line 224
-    :goto_8
-    iget-object p2, p0, Lorg/conscrypt/SSLParametersImpl;->pskKeyManager:Lorg/conscrypt/PSKKeyManager;
+    iget-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->x509TrustManager:Ljavax/net/ssl/X509TrustManager;
 
     .line 225
     .line 226
-    if-eqz p2, :cond_e
+    if-eqz p1, :cond_c
 
     .line 227
     .line 228
-    goto :goto_9
+    goto :goto_7
 
     .line 229
-    :cond_e
-    const/4 p3, 0x0
+    :cond_c
+    move p1, v0
 
     .line 230
-    :goto_9
-    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->isSpake()Z
+    goto :goto_8
 
     .line 231
-    .line 232
-    .line 233
-    move-result p2
+    :cond_d
+    :goto_7
+    move p1, p3
 
+    .line 232
+    :goto_8
+    iget-object p2, p0, Lorg/conscrypt/SSLParametersImpl;->pskKeyManager:Lorg/conscrypt/PSKKeyManager;
+
+    .line 233
     .line 234
-    invoke-static {p1, p3, p2}, Lorg/conscrypt/SSLParametersImpl;->getDefaultCipherSuites(ZZZ)[Ljava/lang/String;
+    if-eqz p2, :cond_e
 
     .line 235
     .line 236
+    goto :goto_9
+
     .line 237
-    move-result-object p1
+    :cond_e
+    move p3, v0
 
     .line 238
-    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledCipherSuites:[Ljava/lang/String;
+    :goto_9
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->isSpake()Z
 
     .line 239
     .line 240
-    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->isSpake()Z
-
     .line 241
+    move-result p2
+
     .line 242
+    invoke-static {p1, p3, p2}, Lorg/conscrypt/SSLParametersImpl;->getDefaultCipherSuites(ZZZ)[Ljava/lang/String;
+
     .line 243
-    move-result p1
-
     .line 244
-    if-eqz p1, :cond_f
-
     .line 245
+    move-result-object p1
+
     .line 246
-    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->initSpake()V
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->enabledCipherSuites:[Ljava/lang/String;
 
     .line 247
     .line 248
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->isSpake()Z
+
     .line 249
-    :cond_f
-    return-void
-
     .line 250
-    :cond_10
-    new-instance p1, Ljava/security/KeyManagementException;
-
     .line 251
+    move-result p1
+
     .line 252
-    const-string p2, "Spake2PlusTrustManager and Spake2PlusKeyManager should be set together"
+    if-eqz p1, :cond_f
 
     .line 253
     .line 254
-    invoke-direct {p1, p2}, Ljava/security/KeyManagementException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->initSpake()V
 
     .line 255
     .line 256
     .line 257
-    throw p1
+    :cond_f
+    return-void
+
+    .line 258
+    :cond_10
+    new-instance p0, Ljava/security/KeyManagementException;
+
+    .line 259
+    .line 260
+    const-string p1, "Spake2PlusTrustManager and Spake2PlusKeyManager should be set together"
+
+    .line 261
+    .line 262
+    invoke-direct {p0, p1}, Ljava/security/KeyManagementException;-><init>(Ljava/lang/String;)V
+
+    .line 263
+    .line 264
+    .line 265
+    throw p0
 .end method
 
 .method private static createDefaultX509KeyManager()Ljavax/net/ssl/X509KeyManager;
@@ -1774,161 +1861,133 @@
 .end method
 
 .method private static getDefaultCipherSuites(ZZZ)[Ljava/lang/String;
-    .locals 3
+    .locals 0
 
     .line 1
-    const/4 p2, 0x2
+    const-string p2, "TLS_EMPTY_RENEGOTIATION_INFO_SCSV"
 
     .line 2
-    const/4 v0, 0x1
-
     .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    const-string v2, "TLS_EMPTY_RENEGOTIATION_INFO_SCSV"
-
-    .line 5
-    .line 6
     if-eqz p0, :cond_1
 
-    .line 7
-    .line 8
+    .line 4
+    .line 5
     if-eqz p1, :cond_0
 
-    .line 9
-    .line 10
-    const/4 p0, 0x3
+    .line 6
+    .line 7
+    sget-object p0, Lorg/conscrypt/NativeCrypto;->DEFAULT_PSK_CIPHER_SUITES:[Ljava/lang/String;
 
+    .line 8
+    .line 9
+    sget-object p1, Lorg/conscrypt/NativeCrypto;->DEFAULT_X509_CIPHER_SUITES:[Ljava/lang/String;
+
+    .line 10
     .line 11
-    new-array p0, p0, [[Ljava/lang/String;
+    filled-new-array {p2}, [Ljava/lang/String;
 
     .line 12
     .line 13
-    sget-object p1, Lorg/conscrypt/NativeCrypto;->DEFAULT_PSK_CIPHER_SUITES:[Ljava/lang/String;
-
     .line 14
+    move-result-object p2
+
     .line 15
-    aput-object p1, p0, v1
+    filled-new-array {p0, p1, p2}, [[Ljava/lang/String;
 
     .line 16
     .line 17
-    sget-object p1, Lorg/conscrypt/NativeCrypto;->DEFAULT_X509_CIPHER_SUITES:[Ljava/lang/String;
-
     .line 18
+    move-result-object p0
+
     .line 19
-    aput-object p1, p0, v0
+    invoke-static {p0}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
 
     .line 20
     .line 21
-    filled-new-array {v2}, [Ljava/lang/String;
-
     .line 22
-    .line 23
-    .line 24
-    move-result-object p1
-
-    .line 25
-    aput-object p1, p0, p2
-
-    .line 26
-    .line 27
-    invoke-static {p0}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
-
-    .line 28
-    .line 29
-    .line 30
     move-result-object p0
 
-    .line 31
+    .line 23
     return-object p0
 
-    .line 32
+    .line 24
     :cond_0
-    new-array p0, p2, [[Ljava/lang/String;
+    sget-object p0, Lorg/conscrypt/NativeCrypto;->DEFAULT_X509_CIPHER_SUITES:[Ljava/lang/String;
 
+    .line 25
+    .line 26
+    filled-new-array {p2}, [Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    filled-new-array {p0, p1}, [[Ljava/lang/String;
+
+    .line 31
+    .line 32
     .line 33
+    move-result-object p0
+
     .line 34
-    sget-object p1, Lorg/conscrypt/NativeCrypto;->DEFAULT_X509_CIPHER_SUITES:[Ljava/lang/String;
+    invoke-static {p0}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
 
     .line 35
     .line 36
-    aput-object p1, p0, v1
-
     .line 37
-    .line 38
-    filled-new-array {v2}, [Ljava/lang/String;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object p1
-
-    .line 42
-    aput-object p1, p0, v0
-
-    .line 43
-    .line 44
-    invoke-static {p0}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
-
-    .line 45
-    .line 46
-    .line 47
     move-result-object p0
 
-    .line 48
+    .line 38
     return-object p0
 
-    .line 49
+    .line 39
     :cond_1
     if-eqz p1, :cond_2
 
+    .line 40
+    .line 41
+    sget-object p0, Lorg/conscrypt/NativeCrypto;->DEFAULT_PSK_CIPHER_SUITES:[Ljava/lang/String;
+
+    .line 42
+    .line 43
+    filled-new-array {p2}, [Ljava/lang/String;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    filled-new-array {p0, p1}, [[Ljava/lang/String;
+
+    .line 48
+    .line 49
     .line 50
+    move-result-object p0
+
     .line 51
-    new-array p0, p2, [[Ljava/lang/String;
+    invoke-static {p0}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
 
     .line 52
     .line 53
-    sget-object p1, Lorg/conscrypt/NativeCrypto;->DEFAULT_PSK_CIPHER_SUITES:[Ljava/lang/String;
-
     .line 54
-    .line 55
-    aput-object p1, p0, v1
-
-    .line 56
-    .line 57
-    filled-new-array {v2}, [Ljava/lang/String;
-
-    .line 58
-    .line 59
-    .line 60
-    move-result-object p1
-
-    .line 61
-    aput-object p1, p0, v0
-
-    .line 62
-    .line 63
-    invoke-static {p0}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
-
-    .line 64
-    .line 65
-    .line 66
     move-result-object p0
 
-    .line 67
+    .line 55
     return-object p0
 
-    .line 68
+    .line 56
     :cond_2
-    filled-new-array {v2}, [Ljava/lang/String;
+    filled-new-array {p2}, [Ljava/lang/String;
 
-    .line 69
-    .line 70
-    .line 71
+    .line 57
+    .line 58
+    .line 59
     move-result-object p0
 
-    .line 72
+    .line 60
     return-object p0
 .end method
 
@@ -1998,95 +2057,137 @@
     return-object v0
 .end method
 
-.method private isSniEnabledByDefault()Z
-    .locals 3
+.method private getNetworkSecurityPolicyMethod(Ljavax/net/ssl/X509TrustManager;)Ljava/lang/reflect/Method;
+    .locals 1
 
     .line 1
-    const-string v0, "true"
+    const/4 p0, 0x0
+
+    .line 2
+    if-nez p1, :cond_0
+
+    .line 3
+    .line 4
+    return-object p0
+
+    .line 5
+    :cond_0
+    :try_start_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    const-string v0, "getNetworkSecurityPolicy"
+
+    .line 10
+    .line 11
+    invoke-virtual {p1, v0, p0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 15
+    :catch_0
+    return-object p0
+.end method
+
+.method private isSniEnabledByDefault()Z
+    .locals 2
+
+    .line 1
+    const-string p0, "true"
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
     .line 4
     :try_start_0
-    const-string v2, "jsse.enableSNIExtension"
+    const-string v1, "jsse.enableSNIExtension"
 
     .line 5
     .line 6
-    invoke-static {v2, v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0}, Ljava/lang/System;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 7
     .line 8
     .line 9
-    move-result-object v2
+    move-result-object v1
 
     .line 10
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {v1, p0}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 11
     .line 12
     .line 13
-    move-result v0
+    move-result p0
 
     .line 14
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 15
     .line 16
-    return v1
+    return v0
 
     .line 17
     :cond_0
-    const-string v0, "false"
+    const-string p0, "false"
 
     .line 18
     .line 19
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-static {v1, p0}, Lorg/conscrypt/AddressUtils;->asciiEqualsIgnoreCase(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 20
     .line 21
     .line 22
-    move-result v0
+    move-result p0
 
     .line 23
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
     .line 24
     .line 25
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 26
-    return v0
+    return p0
 
     .line 27
     :cond_1
-    new-instance v0, Ljava/lang/RuntimeException;
+    new-instance p0, Ljava/lang/RuntimeException;
 
     .line 28
     .line 29
-    const-string v2, "Can only set \"jsse.enableSNIExtension\" to \"true\" or \"false\""
+    const-string v1, "Can only set \"jsse.enableSNIExtension\" to \"true\" or \"false\""
 
     .line 30
     .line 31
-    invoke-direct {v0, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     .line 32
     .line 33
     .line 34
-    throw v0
+    throw p0
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 35
     :catch_0
-    return v1
+    return v0
 .end method
 
 
 # virtual methods
 .method public clone()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 1
     :try_start_0
@@ -2095,27 +2196,27 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/CloneNotSupportedException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 5
-    return-object v0
+    return-object p0
 
     .line 6
     :catch_0
-    move-exception v0
+    move-exception p0
 
     .line 7
-    invoke-static {v0}, Lfn;->j(Ljava/lang/Object;)V
+    invoke-static {p0}, Li60;->e(Ljava/lang/Object;)V
 
     .line 8
     .line 9
     .line 10
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public cloneWithSpake()Lorg/conscrypt/SSLParametersImpl;
@@ -2207,70 +2308,199 @@
 .end method
 
 .method public getAlgorithmConstraints()Ljava/security/AlgorithmConstraints;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->algorithmConstraints:Ljava/security/AlgorithmConstraints;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->algorithmConstraints:Ljava/security/AlgorithmConstraints;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getApplicationProtocolSelector()Lorg/conscrypt/ApplicationProtocolSelectorAdapter;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->applicationProtocolSelector:Lorg/conscrypt/ApplicationProtocolSelectorAdapter;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->applicationProtocolSelector:Lorg/conscrypt/ApplicationProtocolSelectorAdapter;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getApplicationProtocols()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->applicationProtocols:[B
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->applicationProtocols:[B
 
     .line 2
     .line 3
-    invoke-static {v0}, Lorg/conscrypt/SSLUtils;->decodeProtocols([B)[Ljava/lang/String;
+    invoke-static {p0}, Lorg/conscrypt/SSLUtils;->decodeProtocols([B)[Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    return-object v0
+    return-object p0
 .end method
 
 .method public getClientSessionContext()Lorg/conscrypt/ClientSessionContext;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
+.end method
+
+.method public getEchOptions(Ljava/lang/String;)Lorg/conscrypt/EchOptions;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljavax/net/ssl/SSLException;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lorg/conscrypt/SSLParametersImpl$1;->$SwitchMap$org$conscrypt$DomainEncryptionMode:[I
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->getPolicy()Lorg/conscrypt/NetworkSecurityPolicy;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-interface {v1, p1}, Lorg/conscrypt/NetworkSecurityPolicy;->getDomainEncryptionMode(Ljava/lang/String;)Lorg/conscrypt/DomainEncryptionMode;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
+
+    .line 15
+    aget p1, v0, p1
+
+    .line 16
+    .line 17
+    const/4 v0, 0x2
+
+    .line 18
+    if-eq p1, v0, :cond_2
+
+    .line 19
+    .line 20
+    const/4 v0, 0x3
+
+    .line 21
+    if-eq p1, v0, :cond_2
+
+    .line 22
+    .line 23
+    const/4 v0, 0x4
+
+    .line 24
+    if-eq p1, v0, :cond_0
+
+    .line 25
+    .line 26
+    const/4 p0, 0x0
+
+    .line 27
+    return-object p0
+
+    .line 28
+    :cond_0
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->echConfigList:[B
+
+    .line 29
+    .line 30
+    if-eqz p0, :cond_1
+
+    .line 31
+    .line 32
+    new-instance p1, Lorg/conscrypt/EchOptions;
+
+    .line 33
+    .line 34
+    const/4 v0, 0x0
+
+    .line 35
+    invoke-direct {p1, p0, v0}, Lorg/conscrypt/EchOptions;-><init>([BZ)V
+
+    .line 36
+    .line 37
+    .line 38
+    return-object p1
+
+    .line 39
+    :cond_1
+    new-instance p0, Ljavax/net/ssl/SSLException;
+
+    .line 40
+    .line 41
+    const-string p1, "No ECH config provided when required"
+
+    .line 42
+    .line 43
+    invoke-direct {p0, p1}, Ljavax/net/ssl/SSLException;-><init>(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    throw p0
+
+    .line 47
+    :cond_2
+    new-instance p1, Lorg/conscrypt/EchOptions;
+
+    .line 48
+    .line 49
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->echConfigList:[B
+
+    .line 50
+    .line 51
+    const/4 v0, 0x1
+
+    .line 52
+    invoke-direct {p1, p0, v0}, Lorg/conscrypt/EchOptions;-><init>([BZ)V
+
+    .line 53
+    .line 54
+    .line 55
+    return-object p1
 .end method
 
 .method public getEnableSessionCreation()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lorg/conscrypt/SSLParametersImpl;->enable_session_creation:Z
+    iget-boolean p0, p0, Lorg/conscrypt/SSLParametersImpl;->enable_session_creation:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getEnabledCipherSuites()[Ljava/lang/String;
-    .locals 4
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
@@ -2301,169 +2531,286 @@
 
     .line 14
     .line 15
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->enabledCipherSuites:[Ljava/lang/String;
+    sget-object v0, Lorg/conscrypt/NativeCrypto;->SUPPORTED_TLS_1_3_CIPHER_SUITES:[Ljava/lang/String;
 
     .line 16
     .line 17
-    const/4 v1, 0x2
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->enabledCipherSuites:[Ljava/lang/String;
 
     .line 18
-    new-array v1, v1, [[Ljava/lang/String;
-
     .line 19
-    .line 20
-    sget-object v2, Lorg/conscrypt/NativeCrypto;->SUPPORTED_TLS_1_3_CIPHER_SUITES:[Ljava/lang/String;
+    filled-new-array {v0, p0}, [[Ljava/lang/String;
 
+    .line 20
     .line 21
     .line 22
-    const/4 v3, 0x0
+    move-result-object p0
 
     .line 23
-    aput-object v2, v1, v3
+    invoke-static {p0}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
 
     .line 24
     .line 25
-    const/4 v2, 0x1
-
     .line 26
-    aput-object v0, v1, v2
+    move-result-object p0
 
     .line 27
+    return-object p0
+
     .line 28
-    invoke-static {v1}, Lorg/conscrypt/SSLUtils;->concat([[Ljava/lang/String;)[Ljava/lang/String;
+    :cond_0
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->enabledCipherSuites:[Ljava/lang/String;
 
     .line 29
     .line 30
+    invoke-virtual {p0}, [Ljava/lang/String;->clone()Ljava/lang/Object;
+
     .line 31
-    move-result-object v0
-
     .line 32
-    return-object v0
-
     .line 33
-    :cond_0
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->enabledCipherSuites:[Ljava/lang/String;
+    move-result-object p0
 
     .line 34
+    check-cast p0, [Ljava/lang/String;
+
     .line 35
-    invoke-virtual {v0}, [Ljava/lang/String;->clone()Ljava/lang/Object;
-
     .line 36
-    .line 37
-    .line 38
-    move-result-object v0
-
-    .line 39
-    check-cast v0, [Ljava/lang/String;
-
-    .line 40
-    .line 41
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEnabledProtocols()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->enabledProtocols:[Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, [Ljava/lang/String;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, [Ljava/lang/String;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    check-cast v0, [Ljava/lang/String;
+    check-cast p0, [Ljava/lang/String;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEndpointIdentificationAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->endpointIdentificationAlgorithm:Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->endpointIdentificationAlgorithm:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getNamedGroups()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->namedGroups:[Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->namedGroups:[Ljava/lang/String;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    if-nez p0, :cond_0
 
     .line 4
     .line 5
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 6
-    return-object v0
+    return-object p0
 
     .line 7
     :cond_0
-    invoke-virtual {v0}, [Ljava/lang/String;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, [Ljava/lang/String;->clone()Ljava/lang/Object;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    check-cast v0, [Ljava/lang/String;
+    check-cast p0, [Ljava/lang/String;
 
     .line 12
     .line 13
-    return-object v0
+    return-object p0
 .end method
 
 .method public getNeedClientAuth()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lorg/conscrypt/SSLParametersImpl;->need_client_auth:Z
+    iget-boolean p0, p0, Lorg/conscrypt/SSLParametersImpl;->need_client_auth:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getOCSPResponse()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->ocspResponse:[B
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->ocspResponse:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPSKKeyManager()Lorg/conscrypt/PSKKeyManager;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->pskKeyManager:Lorg/conscrypt/PSKKeyManager;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->pskKeyManager:Lorg/conscrypt/PSKKeyManager;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
+.end method
+
+.method public getPolicy()Lorg/conscrypt/NetworkSecurityPolicy;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->getNetworkSecurityPolicy:Ljava/lang/reflect/Method;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    :try_start_0
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->x509TrustManager:Ljavax/net/ssl/X509TrustManager;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    instance-of v0, p0, Lorg/conscrypt/NetworkSecurityPolicy;
+
+    .line 13
+    .line 14
+    if-eqz v0, :cond_0
+
+    .line 15
+    .line 16
+    check-cast p0, Lorg/conscrypt/NetworkSecurityPolicy;
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 17
+    .line 18
+    return-object p0
+
+    .line 19
+    :catch_0
+    move-exception p0
+
+    .line 20
+    const-string v0, "Unable to retrieve the NetworkSecurityPolicy associated with the TrustManager"
+
+    .line 21
+    .line 22
+    invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p0
+
+    .line 26
+    invoke-static {v0, p0}, Lq05;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-object v1
+
+    .line 30
+    :catch_1
+    move-exception p0
+
+    .line 31
+    sget-object v0, Lorg/conscrypt/SSLParametersImpl;->logger:Ljava/util/logging/Logger;
+
+    .line 32
+    .line 33
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    const-string v2, "Unable to call getNetworkSecurityPolicy on TrustManager: "
+
+    .line 36
+    .line 37
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object p0
+
+    .line 44
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object p0
+
+    .line 51
+    invoke-virtual {v0, p0}, Ljava/util/logging/Logger;->warning(Ljava/lang/String;)V
+
+    .line 52
+    .line 53
+    .line 54
+    :cond_0
+    invoke-static {}, Lorg/conscrypt/ConscryptNetworkSecurityPolicy;->getDefault()Lorg/conscrypt/ConscryptNetworkSecurityPolicy;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object p0
+
+    .line 58
+    return-object p0
 .end method
 
 .method public getSNIMatchers()Ljava/util/Collection;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -2482,10 +2829,10 @@
 
     .line 4
     .line 5
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 6
-    return-object v0
+    return-object p0
 
     .line 7
     :cond_0
@@ -2493,11 +2840,11 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Lorg/conscrypt/SSLParametersImpl;->sniMatchers:Ljava/util/Collection;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->sniMatchers:Ljava/util/Collection;
 
     .line 10
     .line 11
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v0, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     .line 12
     .line 13
@@ -2506,14 +2853,14 @@
 .end method
 
 .method public getServerSessionContext()Lorg/conscrypt/ServerSessionContext;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSessionContext()Lorg/conscrypt/AbstractSessionContext;
@@ -2528,52 +2875,52 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->clientSessionContext:Lorg/conscrypt/ClientSessionContext;
 
     .line 6
     .line 7
-    return-object v0
+    return-object p0
 
     .line 8
     :cond_0
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->serverSessionContext:Lorg/conscrypt/ServerSessionContext;
 
     .line 9
     .line 10
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSpake2PlusKeyManager()Lorg/conscrypt/Spake2PlusKeyManager;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->spake2PlusKeyManager:Lorg/conscrypt/Spake2PlusKeyManager;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->spake2PlusKeyManager:Lorg/conscrypt/Spake2PlusKeyManager;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getUseCipherSuitesOrder()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lorg/conscrypt/SSLParametersImpl;->useCipherSuitesOrder:Z
+    iget-boolean p0, p0, Lorg/conscrypt/SSLParametersImpl;->useCipherSuitesOrder:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getUseClientMode()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lorg/conscrypt/SSLParametersImpl;->client_mode:Z
+    iget-boolean p0, p0, Lorg/conscrypt/SSLParametersImpl;->client_mode:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getUseSni()Z
@@ -2593,10 +2940,10 @@
     .line 6
     .line 7
     .line 8
-    move-result v0
+    move-result p0
 
     .line 9
-    return v0
+    return p0
 
     .line 10
     :cond_0
@@ -2605,47 +2952,47 @@
     .line 11
     .line 12
     .line 13
-    move-result v0
+    move-result p0
 
     .line 14
-    return v0
+    return p0
 .end method
 
 .method public getWantClientAuth()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, Lorg/conscrypt/SSLParametersImpl;->want_client_auth:Z
+    iget-boolean p0, p0, Lorg/conscrypt/SSLParametersImpl;->want_client_auth:Z
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getX509KeyManager()Ljavax/net/ssl/X509KeyManager;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->x509KeyManager:Ljavax/net/ssl/X509KeyManager;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->x509KeyManager:Ljavax/net/ssl/X509KeyManager;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getX509TrustManager()Ljavax/net/ssl/X509TrustManager;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->x509TrustManager:Ljavax/net/ssl/X509TrustManager;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->x509TrustManager:Ljavax/net/ssl/X509TrustManager;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public initSpake()V
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyManagementException;
@@ -2673,53 +3020,53 @@
 
     .line 9
     :catch_0
-    move-exception v0
+    move-exception p0
 
     .line 10
-    new-instance v1, Ljava/security/KeyManagementException;
+    new-instance v0, Ljava/security/KeyManagementException;
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result-object p0
 
     .line 16
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 17
     .line 18
-    const-string v3, "Spake initialization failed "
+    const-string v2, "Spake initialization failed "
 
     .line 19
     .line 20
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 24
     .line 25
     .line 26
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 27
     .line 28
     .line 29
-    move-result-object v0
+    move-result-object p0
 
     .line 30
-    invoke-direct {v1, v0}, Ljava/security/KeyManagementException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Ljava/security/KeyManagementException;-><init>(Ljava/lang/String;)V
 
     .line 31
     .line 32
     .line 33
-    throw v1
+    throw v0
 .end method
 
 .method public isCTVerificationEnabled(Ljava/lang/String;)Z
@@ -2730,10 +3077,10 @@
 
     .line 2
     .line 3
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 4
-    return p1
+    return p0
 
     .line 5
     :cond_0
@@ -2745,47 +3092,55 @@
 
     .line 8
     .line 9
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 10
-    return p1
+    return p0
 
     .line 11
     :cond_1
-    invoke-static {p1}, Lorg/conscrypt/Platform;->isCTVerificationRequired(Ljava/lang/String;)Z
+    invoke-virtual {p0}, Lorg/conscrypt/SSLParametersImpl;->getPolicy()Lorg/conscrypt/NetworkSecurityPolicy;
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    move-result-object p0
 
     .line 15
-    return p1
+    invoke-interface {p0, p1}, Lorg/conscrypt/NetworkSecurityPolicy;->isCertificateTransparencyVerificationRequired(Ljava/lang/String;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p0
+
+    .line 19
+    return p0
 .end method
 
 .method public isSpake()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/SSLParametersImpl;->spake2PlusKeyManager:Lorg/conscrypt/Spake2PlusKeyManager;
+    iget-object p0, p0, Lorg/conscrypt/SSLParametersImpl;->spake2PlusKeyManager:Lorg/conscrypt/Spake2PlusKeyManager;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 4
     .line 5
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 6
-    return v0
+    return p0
 
     .line 7
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 8
-    return v0
+    return p0
 .end method
 
 .method public setAlgorithmConstraints(Ljava/security/AlgorithmConstraints;)V
@@ -2834,6 +3189,17 @@
 
     .line 1
     iput-boolean p1, p0, Lorg/conscrypt/SSLParametersImpl;->ctVerificationEnabled:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setEchConfigList([B)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lorg/conscrypt/SSLParametersImpl;->echConfigList:[B
 
     .line 2
     .line 3
@@ -2997,7 +3363,7 @@
 
     .line 50
     :cond_2
-    const/4 v1, 0x0
+    move v1, v2
 
     .line 51
     :goto_1
@@ -3033,11 +3399,11 @@
 
     .line 66
     :cond_3
-    const-string p1, "protocols == null"
+    const-string p0, "protocols == null"
 
     .line 67
     .line 68
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 69
     .line 70

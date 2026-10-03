@@ -1,20 +1,70 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class n70 implements i70 {
-    public final String a;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class n70 extends x1 {
+    public final /* synthetic */ int c0 = 1;
+    public final Object d0;
 
-    public n70(String str) {
-        this.a = str;
+    public n70(Object[] objArr, int i, int i2) {
+        super(i, i2, 1);
+        this.d0 = objArr;
     }
 
-    @Override // defpackage.i70
-    public final boolean a(wv5 wv5Var) {
-        return false;
+    @Override // java.util.ListIterator, java.util.Iterator
+    public final Object next() {
+        int i = this.c0;
+        Object obj = this.d0;
+        switch (i) {
+            case 0:
+                if (!hasNext()) {
+                    i60.a();
+                    break;
+                } else {
+                    int i2 = this.Y;
+                    this.Y = i2 + 1;
+                    break;
+                }
+            default:
+                if (!hasNext()) {
+                    i60.a();
+                    break;
+                } else {
+                    this.Y++;
+                    break;
+                }
+        }
+        return null;
     }
 
-    public final String toString() {
-        return this.a;
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        int i = this.c0;
+        Object obj = this.d0;
+        switch (i) {
+            case 0:
+                if (!hasPrevious()) {
+                    i60.a();
+                    break;
+                } else {
+                    int i2 = this.Y - 1;
+                    this.Y = i2;
+                    break;
+                }
+            default:
+                if (!hasPrevious()) {
+                    i60.a();
+                    break;
+                } else {
+                    this.Y--;
+                    break;
+                }
+        }
+        return null;
+    }
+
+    public n70(int i, Object obj) {
+        super(i, 1, 1);
+        this.d0 = obj;
     }
 }

@@ -1,6 +1,6 @@
 .class public interface abstract Lokhttp3/internal/cache/CacheRequest;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -11,10 +11,10 @@
     d2 = {
         "Lokhttp3/internal/cache/CacheRequest;",
         "",
-        "Lpb6;",
+        "Lqy6;",
         "body",
-        "()Lpb6;",
-        "Lbh7;",
+        "()Lqy6;",
+        "Lr98;",
         "abort",
         "()V",
         "okhttp"
@@ -33,7 +33,7 @@
 .method public abstract abort()V
 .end method
 
-.method public abstract body()Lpb6;
+.method public abstract body()Lqy6;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

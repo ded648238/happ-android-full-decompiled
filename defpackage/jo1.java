@@ -1,34 +1,25 @@
 package defpackage;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class jo1 {
-    public final String a;
+import java.util.LinkedHashMap;
 
-    public jo1(String str) {
-        if (str != null) {
-            this.a = str;
-        } else {
-            en0.g("name is null");
-            throw null;
-        }
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class jo1 extends d31 {
+    public LinkedHashMap c0;
+    public /* synthetic */ Object d0;
+    public final /* synthetic */ no1 e0;
+    public int f0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public jo1(no1 no1Var, d31 d31Var) {
+        super(d31Var);
+        this.e0 = no1Var;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof jo1)) {
-            return false;
-        }
-        return this.a.equals(((jo1) obj).a);
-    }
-
-    public final int hashCode() {
-        return this.a.hashCode() ^ 1000003;
-    }
-
-    public final String toString() {
-        return kd0.z(new StringBuilder("Encoding{name=\""), this.a, "\"}");
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.d0 = obj;
+        this.f0 |= Integer.MIN_VALUE;
+        return this.e0.d(null, null, 0, 0L, null, this);
     }
 }

@@ -1,9 +1,9 @@
 .class public final enum Lio/sentry/protocol/b0;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Lio/sentry/j2;
+.implements Lio/sentry/l2;
 
 
 # static fields
@@ -20,60 +20,33 @@
 
 # direct methods
 .method private static synthetic $values()[Lio/sentry/protocol/b0;
-    .locals 3
+    .locals 4
 
     .line 1
-    const/4 v0, 0x4
+    sget-object v0, Lio/sentry/protocol/b0;->AUTO:Lio/sentry/protocol/b0;
 
     .line 2
-    new-array v0, v0, [Lio/sentry/protocol/b0;
-
     .line 3
+    sget-object v1, Lio/sentry/protocol/b0;->ALL:Lio/sentry/protocol/b0;
+
     .line 4
-    sget-object v1, Lio/sentry/protocol/b0;->AUTO:Lio/sentry/protocol/b0;
-
     .line 5
-    .line 6
-    const/4 v2, 0x0
+    sget-object v2, Lio/sentry/protocol/b0;->ALL_BUT_FIRST:Lio/sentry/protocol/b0;
 
+    .line 6
     .line 7
-    aput-object v1, v0, v2
+    sget-object v3, Lio/sentry/protocol/b0;->NONE:Lio/sentry/protocol/b0;
 
     .line 8
     .line 9
-    sget-object v1, Lio/sentry/protocol/b0;->ALL:Lio/sentry/protocol/b0;
+    filled-new-array {v0, v1, v2, v3}, [Lio/sentry/protocol/b0;
 
     .line 10
     .line 11
-    const/4 v2, 0x1
-
     .line 12
-    aput-object v1, v0, v2
+    move-result-object v0
 
     .line 13
-    .line 14
-    sget-object v1, Lio/sentry/protocol/b0;->ALL_BUT_FIRST:Lio/sentry/protocol/b0;
-
-    .line 15
-    .line 16
-    const/4 v2, 0x2
-
-    .line 17
-    aput-object v1, v0, v2
-
-    .line 18
-    .line 19
-    sget-object v1, Lio/sentry/protocol/b0;->NONE:Lio/sentry/protocol/b0;
-
-    .line 20
-    .line 21
-    const/4 v2, 0x3
-
-    .line 22
-    aput-object v1, v0, v2
-
-    .line 23
-    .line 24
     return-object v0
 .end method
 
@@ -241,8 +214,8 @@
 
 
 # virtual methods
-.method public serialize(Lio/sentry/l3;Lio/sentry/ILogger;)V
-    .locals 1
+.method public serialize(Lio/sentry/n3;Lio/sentry/ILogger;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -255,26 +228,26 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p2
+    move-result-object p0
 
     .line 5
-    sget-object v0, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+    sget-object p2, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
 
     .line 6
     .line 7
-    invoke-virtual {p2, v0}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object p2
+    move-result-object p0
 
     .line 11
     check-cast p1, Lio/sentry/internal/debugmeta/c;
 
     .line 12
     .line 13
-    invoke-virtual {p1, p2}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
+    invoke-virtual {p1, p0}, Lio/sentry/internal/debugmeta/c;->y(Ljava/lang/String;)Lio/sentry/internal/debugmeta/c;
 
     .line 14
     .line 15

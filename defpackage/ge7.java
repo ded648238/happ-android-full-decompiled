@@ -1,142 +1,73 @@
 package defpackage;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
+import android.content.Context;
+import java.net.Proxy;
+import java.net.URL;
+import java.util.HashMap;
+import okhttp3.Request;
+import su.happ.proxyutility.dto.SubscriptionItem;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ge7 implements Collection, r73 {
-    public final byte[] Q;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ge7 extends y22 {
+    public final mm7 e;
 
-    @Override // java.util.Collection
-    public final /* bridge */ /* synthetic */ boolean add(Object obj) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    public ge7(Context context) {
+        super(context);
+        this.e = new mm7(new c87(11));
     }
 
-    @Override // java.util.Collection
-    public final boolean addAll(Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final void clear() {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    /* JADX WARN: Code duplicated, block: B:13:0x001b A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:15:0x001d A[RETURN] */
-    @Override // java.util.Collection
-    public final boolean contains(Object obj) {
-        if (!(obj instanceof fe7)) {
-            return false;
-        }
-        byte b = ((fe7) obj).Q;
-        byte[] bArr = this.Q;
-        int length = bArr.length;
-        int i = 0;
-        while (i < length) {
-            if (b == bArr[i]) {
-                if (i >= 0) {
-                    return true;
-                }
-                return false;
-            }
-            i++;
-        }
-        i = -1;
-        if (i >= 0) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // java.util.Collection
-    public final boolean containsAll(Collection collection) {
-        collection.getClass();
-        Collection collection2 = collection;
-        if (collection2.isEmpty()) {
-            return true;
-        }
-        for (Object obj : collection2) {
-            if (obj instanceof fe7) {
-                byte b = ((fe7) obj).Q;
-                byte[] bArr = this.Q;
-                int length = bArr.length;
-                int i = 0;
-                while (true) {
-                    if (i >= length) {
-                        i = -1;
-                        break;
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0032  */
+    /* JADX WARN: Removed duplicated region for block: B:9:0x0022  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Object d(String str, String str2, Proxy proxy, HashMap hashMap, String str3, boolean z, d31 d31Var) {
+        fe7 fe7Var;
+        int i;
+        yf7 yf7Var;
+        if (d31Var instanceof fe7) {
+            fe7Var = (fe7) d31Var;
+            int i2 = fe7Var.e0;
+            if ((i2 & Integer.MIN_VALUE) != 0) {
+                fe7Var.e0 = i2 - Integer.MIN_VALUE;
+                fe7 fe7Var2 = fe7Var;
+                Object obj = fe7Var2.c0;
+                i = fe7Var2.e0;
+                String str4 = null;
+                if (i == 0) {
+                    if (i == 1) {
+                        q48.f0(obj);
+                        return ((d86) obj).X;
                     }
-                    if (b == bArr[i]) {
-                        break;
-                    }
-                    i++;
+                    i60.g("call to 'resume' before 'invoke' with coroutine");
+                    return null;
                 }
-                if (i >= 0) {
+                q48.f0(obj);
+                zf7 a = ((yg7) this.e.getValue()).a(str2);
+                URL url = new URL(str);
+                if (a != null && (yf7Var = a.i) != null) {
+                    str4 = yf7Var.a;
                 }
+                Request.Builder c = c(url, str4);
+                Request build = c.build();
+                cm4 cm4Var = cm4.a;
+                SubscriptionItem f = cm4.f(str2);
+                boolean U = f != null ? f.U() : false;
+                Long l = new Long((a != null ? a.h : 7) * 1000);
+                ji2 wm1Var = new wm1(build, c, U);
+                fe7Var2.e0 = 1;
+                Object a2 = a(l, proxy, hashMap, str3, z, wm1Var, fe7Var2);
+                Object obj2 = j41.X;
+                return a2 == obj2 ? obj2 : a2;
             }
-            return false;
         }
-        return true;
-    }
-
-    @Override // java.util.Collection
-    public final boolean equals(Object obj) {
-        if (obj instanceof ge7) {
-            return this.Q.equals(((ge7) obj).Q);
+        fe7Var = new fe7(this, d31Var);
+        fe7 fe7Var22 = fe7Var;
+        Object obj3 = fe7Var22.c0;
+        i = fe7Var22.e0;
+        String str42 = null;
+        if (i == 0) {
         }
-        return false;
-    }
-
-    @Override // java.util.Collection
-    public final int hashCode() {
-        return Arrays.hashCode(this.Q);
-    }
-
-    @Override // java.util.Collection
-    public final boolean isEmpty() {
-        return this.Q.length == 0;
-    }
-
-    @Override // java.util.Collection, java.lang.Iterable
-    public final Iterator iterator() {
-        return new p1(3, this.Q);
-    }
-
-    @Override // java.util.Collection
-    public final boolean remove(Object obj) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final boolean removeAll(Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final boolean retainAll(Collection collection) {
-        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
-    }
-
-    @Override // java.util.Collection
-    public final int size() {
-        return this.Q.length;
-    }
-
-    @Override // java.util.Collection
-    public final Object[] toArray(Object[] objArr) {
-        objArr.getClass();
-        return tv3.Y(this, objArr);
-    }
-
-    public final String toString() {
-        return "UByteArray(storage=" + Arrays.toString(this.Q) + ')';
-    }
-
-    @Override // java.util.Collection
-    public final Object[] toArray() {
-        return tv3.X(this);
     }
 }

@@ -1,85 +1,148 @@
-.class public final synthetic Lom5;
-.super Lh94;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.class public Lom5;
+.super Lqm5;
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
-
-# static fields
-.field public static final Q:Lom5;
+# interfaces
+.implements Lso3;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    .locals 6
 
     .line 1
-    new-instance v0, Lom5;
+    sget-object v1, Lpb0;->NO_RECEIVER:Ljava/lang/Object;
 
     .line 2
     .line 3
-    const-string v1, "getSubscriptionsSortType()Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;"
+    move-object v0, p0
 
     .line 4
+    move-object v2, p1
+
     .line 5
-    const/4 v2, 0x0
+    move-object v3, p2
 
     .line 6
-    const-class v3, Lsu/happ/proxyutility/dto/MetaParams;
+    move-object v4, p3
 
     .line 7
+    move v5, p4
+
     .line 8
-    const-string v4, "subscriptionsSortType"
+    invoke-direct/range {v0 .. v5}, Lqm5;-><init>(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 9
     .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Lh94;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
     .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lom5;->Q:Lom5;
-
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final D(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final P()Len3;
+    .locals 1
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    sget-object v0, Lp06;->a:Lq06;
 
     .line 2
     .line 3
-    check-cast p2, Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;
+    invoke-virtual {v0, p0}, Lq06;->g(Lom5;)Lso3;
 
     .line 4
     .line 5
-    invoke-virtual {p1, p2}, Lsu/happ/proxyutility/dto/MetaParams;->O2(Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;)V
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public final bridge synthetic b()Loo3;
+    .locals 0
+
+    .line 12
+    invoke-virtual {p0}, Lom5;->b()Lro3;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final b()Lro3;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lqm5;->T()Luo3;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, Lso3;
+
+    .line 6
+    .line 7
+    invoke-interface {p0}, Lso3;->b()Lro3;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+.end method
+
+.method public get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lom5;->b()Lro3;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    return-void
+    move-result-object p1
+
+    .line 9
+    check-cast p0, Lc06;
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, p1}, Lc06;->P([Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    return-object p0
 .end method
 
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    check-cast p1, Lsu/happ/proxyutility/dto/MetaParams;
+    invoke-interface {p0, p1}, Lso3;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lsu/happ/proxyutility/dto/MetaParams;->b1()Lsu/happ/proxyutility/dto/enums/SubscriptionSortType;
-
     .line 4
-    .line 5
-    .line 6
-    move-result-object p1
+    move-result-object p0
 
-    .line 7
-    return-object p1
+    .line 5
+    return-object p0
 .end method

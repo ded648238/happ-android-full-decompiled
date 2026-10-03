@@ -1,53 +1,37 @@
 package defpackage;
 
-import org.conscrypt.PSKKeyManager;
+import android.content.Context;
+import android.content.res.Configuration;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
+import android.view.View;
+import android.view.ViewGroup;
+import java.util.ArrayList;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class sm7 {
-    public static final sm7 d = new sm7(PSKKeyManager.MAX_KEY_LENGTH_BYTES, PSKKeyManager.MAX_KEY_LENGTH_BYTES, PSKKeyManager.MAX_KEY_LENGTH_BYTES);
-    public final int a;
-    public final int b;
-    public final int c;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class sm7 extends View {
+    public final /* synthetic */ ViewGroup c0;
+    public final /* synthetic */ um7 d0;
 
-    public sm7(int i, int i2, int i3) {
-        this.a = i;
-        this.b = i2;
-        this.c = i3;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public sm7(um7 um7Var, Context context, ViewGroup viewGroup) {
+        super(context);
+        this.d0 = um7Var;
+        this.c0 = viewGroup;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    @Override // android.view.View
+    public final void onConfigurationChanged(Configuration configuration) {
+        um7 um7Var = this.d0;
+        ArrayList arrayList = um7Var.b;
+        Drawable background = this.c0.getBackground();
+        int color = background instanceof ColorDrawable ? ((ColorDrawable) background).getColor() : 0;
+        if (um7Var.e != color) {
+            um7Var.e = color;
+            for (int size = arrayList.size() - 1; size >= 0; size--) {
+                ((ym5) arrayList.get(size)).b(color);
+            }
         }
-        if (!(obj instanceof sm7)) {
-            return false;
-        }
-        sm7 sm7Var = (sm7) obj;
-        return this.a == sm7Var.a && this.b == sm7Var.b && this.c == sm7Var.c;
-    }
-
-    public final int hashCode() {
-        return (((this.a * 31) + this.b) * 31) + this.c;
-    }
-
-    public final String toString() {
-        int i = this.b;
-        int i2 = this.c;
-        int i3 = this.a;
-        if (i2 == 0) {
-            StringBuilder sb = new StringBuilder();
-            sb.append(i3);
-            sb.append('.');
-            sb.append(i);
-            return sb.toString();
-        }
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append(i3);
-        sb2.append('.');
-        sb2.append(i);
-        sb2.append('.');
-        sb2.append(i2);
-        return sb2.toString();
     }
 }

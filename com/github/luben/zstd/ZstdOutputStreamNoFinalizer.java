@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
     private static final int dstSize;
     private ZstdDictCompress active_dict;
@@ -43,35 +43,44 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
     }
 
     private void close(boolean z) throws IOException {
-        int iEndStream;
+        long endStream;
         if (this.isClosed) {
             return;
         }
         try {
             if (!this.frameStarted) {
-                long jResetCStream = resetCStream(this.stream);
-                if (Zstd.isError(jResetCStream)) {
-                    throw new ZstdIOException(jResetCStream);
+                long resetCStream = resetCStream(this.stream);
+                if (Zstd.isError(resetCStream)) {
+                    throw new ZstdIOException(resetCStream);
                 }
                 this.frameClosed = false;
             }
             if (!this.frameClosed) {
                 do {
-                    iEndStream = endStream(this.stream, this.dst, dstSize);
-                    long j = iEndStream;
-                    if (Zstd.isError(j)) {
-                        throw new ZstdIOException(j);
+                    endStream = endStream(this.stream, this.dst, dstSize);
+                    if (Zstd.isError(endStream)) {
+                        throw new ZstdIOException(endStream);
                     }
                     ((FilterOutputStream) this).out.write(this.dst, 0, (int) this.dstPos);
-                } while (iEndStream > 0);
+                } while (endStream > 0);
             }
             if (z) {
                 ((FilterOutputStream) this).out.close();
+            }
+            ZstdDictCompress zstdDictCompress = this.active_dict;
+            if (zstdDictCompress != null) {
+                zstdDictCompress.releaseSharedLock();
+                this.active_dict = null;
             }
             this.isClosed = true;
             this.bufferPool.release(this.dstByteBuffer);
             freeCStream(this.stream);
         } catch (Throwable th) {
+            ZstdDictCompress zstdDictCompress2 = this.active_dict;
+            if (zstdDictCompress2 != null) {
+                zstdDictCompress2.releaseSharedLock();
+                this.active_dict = null;
+            }
             this.isClosed = true;
             this.bufferPool.release(this.dstByteBuffer);
             freeCStream(this.stream);
@@ -79,19 +88,19 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
         }
     }
 
-    private native int compressStream(long j, byte[] bArr, int i, byte[] bArr2, int i2);
+    private native long compressStream(long j, byte[] bArr, int i, byte[] bArr2, int i2);
 
     private static native long createCStream();
 
-    private native int endStream(long j, byte[] bArr, int i);
+    private native long endStream(long j, byte[] bArr, int i);
 
-    private native int flushStream(long j, byte[] bArr, int i);
+    private native long flushStream(long j, byte[] bArr, int i);
 
-    private static native int freeCStream(long j);
+    private static native long freeCStream(long j);
 
     public static native long recommendedCOutSize();
 
-    private native int resetCStream(long j);
+    private native long resetCStream(long j);
 
     public synchronized void closeWithoutClosingParentStream() throws IOException {
         close(false);
@@ -99,8 +108,8 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream, java.io.Flushable
     public synchronized void flush() throws IOException {
-        int iFlushStream;
-        int iEndStream;
+        long flushStream;
+        long endStream;
         try {
             if (this.isClosed) {
                 throw new IOException("StreamClosed");
@@ -108,23 +117,21 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
             if (!this.frameClosed) {
                 if (this.closeFrameOnFlush) {
                     do {
-                        iEndStream = endStream(this.stream, this.dst, dstSize);
-                        long j = iEndStream;
-                        if (Zstd.isError(j)) {
-                            throw new ZstdIOException(j);
+                        endStream = endStream(this.stream, this.dst, dstSize);
+                        if (Zstd.isError(endStream)) {
+                            throw new ZstdIOException(endStream);
                         }
                         ((FilterOutputStream) this).out.write(this.dst, 0, (int) this.dstPos);
-                    } while (iEndStream > 0);
+                    } while (endStream > 0);
                     this.frameClosed = true;
                 } else {
                     do {
-                        iFlushStream = flushStream(this.stream, this.dst, dstSize);
-                        long j2 = iFlushStream;
-                        if (Zstd.isError(j2)) {
-                            throw new ZstdIOException(j2);
+                        flushStream = flushStream(this.stream, this.dst, dstSize);
+                        if (Zstd.isError(flushStream)) {
+                            throw new ZstdIOException(flushStream);
                         }
                         ((FilterOutputStream) this).out.write(this.dst, 0, (int) this.dstPos);
-                    } while (iFlushStream > 0);
+                    } while (flushStream > 0);
                 }
                 ((FilterOutputStream) this).out.flush();
             }
@@ -135,6 +142,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setChainLog(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -150,6 +160,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setChecksum(boolean z) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -172,19 +185,39 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
     }
 
     public synchronized ZstdOutputStreamNoFinalizer setDict(ZstdDictCompress zstdDictCompress) throws IOException {
-        if (!this.frameClosed) {
-            throw new IllegalStateException("Change of parameter on initialized stream");
+        try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
+            if (!this.frameClosed) {
+                throw new IllegalStateException("Change of parameter on initialized stream");
+            }
+            if (zstdDictCompress != null) {
+                zstdDictCompress.acquireSharedLock();
+            }
+            long loadFastDictCompress = Zstd.loadFastDictCompress(this.stream, zstdDictCompress);
+            if (Zstd.isError(loadFastDictCompress)) {
+                if (zstdDictCompress != null) {
+                    zstdDictCompress.releaseSharedLock();
+                }
+                throw new ZstdIOException(loadFastDictCompress);
+            }
+            ZstdDictCompress zstdDictCompress2 = this.active_dict;
+            if (zstdDictCompress2 != null) {
+                zstdDictCompress2.releaseSharedLock();
+            }
+            this.active_dict = zstdDictCompress;
+        } catch (Throwable th) {
+            throw th;
         }
-        long jLoadFastDictCompress = Zstd.loadFastDictCompress(this.stream, zstdDictCompress);
-        if (Zstd.isError(jLoadFastDictCompress)) {
-            throw new ZstdIOException(jLoadFastDictCompress);
-        }
-        this.active_dict = zstdDictCompress;
         return this;
     }
 
     public synchronized ZstdOutputStreamNoFinalizer setHashLog(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -200,6 +233,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setJobSize(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -215,6 +251,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setLevel(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -230,6 +269,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setLong(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -245,6 +287,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setMinMatch(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -260,6 +305,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setOverlapLog(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -275,6 +323,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setSearchLog(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -290,6 +341,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setStrategy(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -305,6 +359,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setTargetLength(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -320,6 +377,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setWindowLog(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -335,6 +395,9 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     public synchronized ZstdOutputStreamNoFinalizer setWorkers(int i) throws IOException {
         try {
+            if (this.isClosed) {
+                throw new IOException("StreamClosed");
+            }
             if (!this.frameClosed) {
                 throw new IllegalStateException("Change of parameter on initialized stream");
             }
@@ -350,56 +413,58 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream
     public synchronized void write(byte[] bArr, int i, int i2) throws IOException {
-        if (i >= 0 && i2 >= 0) {
-            try {
-                if (i2 <= bArr.length - i) {
-                    if (this.isClosed) {
-                        throw new IOException("StreamClosed");
-                    }
-                    if (this.frameClosed) {
-                        long jResetCStream = resetCStream(this.stream);
-                        if (Zstd.isError(jResetCStream)) {
-                            throw new ZstdIOException(jResetCStream);
-                        }
-                        this.frameClosed = false;
-                        this.frameStarted = true;
-                    }
-                    int i3 = i + i2;
-                    this.srcPos = i;
-                    while (this.srcPos < i3) {
-                        byte[] bArr2 = bArr;
-                        long jCompressStream = compressStream(this.stream, this.dst, dstSize, bArr2, i3);
-                        if (Zstd.isError(jCompressStream)) {
-                            throw new ZstdIOException(jCompressStream);
-                        }
-                        long j = this.dstPos;
-                        if (j > 0) {
-                            ((FilterOutputStream) this).out.write(this.dst, 0, (int) j);
-                        }
-                        bArr = bArr2;
-                    }
-                }
-            } catch (Throwable th) {
-                throw th;
-            }
-        }
-        throw new IndexOutOfBoundsException("Requested length " + i2 + " from offset " + i + " in buffer of size " + bArr.length);
-    }
-
-    public synchronized ZstdOutputStreamNoFinalizer setDict(byte[] bArr) throws IOException {
+        Throwable th;
+        ZstdOutputStreamNoFinalizer zstdOutputStreamNoFinalizer;
         try {
-            if (this.frameClosed) {
-                long jLoadDictCompress = Zstd.loadDictCompress(this.stream, bArr, bArr.length);
-                if (Zstd.isError(jLoadDictCompress)) {
-                    throw new ZstdIOException(jLoadDictCompress);
+            if (i >= 0 && i2 >= 0) {
+                try {
+                    if (i2 <= bArr.length - i) {
+                        if (this.isClosed) {
+                            throw new IOException("StreamClosed");
+                        }
+                        if (this.frameClosed) {
+                            try {
+                                long resetCStream = resetCStream(this.stream);
+                                if (Zstd.isError(resetCStream)) {
+                                    throw new ZstdIOException(resetCStream);
+                                }
+                                this.frameClosed = false;
+                                this.frameStarted = true;
+                            } catch (Throwable th2) {
+                                th = th2;
+                                zstdOutputStreamNoFinalizer = this;
+                                throw th;
+                            }
+                        }
+                        int i3 = i + i2;
+                        this.srcPos = i;
+                        while (this.srcPos < i3) {
+                            ZstdOutputStreamNoFinalizer zstdOutputStreamNoFinalizer2 = this;
+                            byte[] bArr2 = bArr;
+                            long compressStream = zstdOutputStreamNoFinalizer2.compressStream(this.stream, this.dst, dstSize, bArr2, i3);
+                            if (Zstd.isError(compressStream)) {
+                                throw new ZstdIOException(compressStream);
+                            }
+                            long j = zstdOutputStreamNoFinalizer2.dstPos;
+                            if (j > 0) {
+                                ((FilterOutputStream) zstdOutputStreamNoFinalizer2).out.write(zstdOutputStreamNoFinalizer2.dst, 0, (int) j);
+                            }
+                            this = zstdOutputStreamNoFinalizer2;
+                            bArr = bArr2;
+                        }
+                        return;
+                    }
+                } catch (Throwable th3) {
+                    th = th3;
+                    zstdOutputStreamNoFinalizer = this;
+                    th = th;
+                    throw th;
                 }
-            } else {
-                throw new IllegalStateException("Change of parameter on initialized stream");
             }
-        } catch (Throwable th) {
-            throw th;
+            throw new IndexOutOfBoundsException("Requested length " + i2 + " from offset " + i + " in buffer of size " + bArr.length);
+        } catch (Throwable th4) {
+            th = th4;
         }
-        return this;
     }
 
     public ZstdOutputStreamNoFinalizer(OutputStream outputStream) throws IOException {
@@ -414,6 +479,26 @@ public class ZstdOutputStreamNoFinalizer extends FilterOutputStream {
     public ZstdOutputStreamNoFinalizer(OutputStream outputStream, int i) throws IOException {
         this(outputStream, NoPool.INSTANCE);
         Zstd.setCompressionLevel(this.stream, i);
+    }
+
+    public synchronized ZstdOutputStreamNoFinalizer setDict(byte[] bArr) throws IOException {
+        try {
+            if (!this.isClosed) {
+                if (this.frameClosed) {
+                    long loadDictCompress = Zstd.loadDictCompress(this.stream, bArr, bArr.length);
+                    if (Zstd.isError(loadDictCompress)) {
+                        throw new ZstdIOException(loadDictCompress);
+                    }
+                } else {
+                    throw new IllegalStateException("Change of parameter on initialized stream");
+                }
+            } else {
+                throw new IOException("StreamClosed");
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+        return this;
     }
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable

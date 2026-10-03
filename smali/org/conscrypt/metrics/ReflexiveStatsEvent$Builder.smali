@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -36,6 +36,8 @@
 
 .field private static final writeIntArray:Lorg/conscrypt/metrics/OptionalMethod;
 
+.field private static final writeLong:Lorg/conscrypt/metrics/OptionalMethod;
+
 
 # instance fields
 .field private final builder:Ljava/lang/Object;
@@ -43,7 +45,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 5
 
     .line 1
     invoke-static {}, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->initStatsEventBuilderClass()Ljava/lang/Class;
@@ -62,162 +64,188 @@
 
     .line 8
     .line 9
-    const/4 v2, 0x1
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     .line 10
-    new-array v3, v2, [Ljava/lang/Class;
-
     .line 11
+    filled-new-array {v2}, [Ljava/lang/Class;
+
     .line 12
-    const/4 v4, 0x0
-
     .line 13
-    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
     .line 14
+    move-result-object v3
+
     .line 15
-    aput-object v5, v3, v4
+    const-string v4, "setAtomId"
 
     .line 16
     .line 17
-    const-string v6, "setAtomId"
+    invoke-direct {v1, v0, v4, v3}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
 
     .line 18
     .line 19
-    invoke-direct {v1, v0, v6, v3}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
-
     .line 20
+    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->setAtomId:Lorg/conscrypt/metrics/OptionalMethod;
+
     .line 21
     .line 22
-    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->setAtomId:Lorg/conscrypt/metrics/OptionalMethod;
+    new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
 
     .line 23
     .line 24
-    new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
+    sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
     .line 25
     .line 26
-    new-array v3, v2, [Ljava/lang/Class;
+    filled-new-array {v3}, [Ljava/lang/Class;
 
     .line 27
     .line 28
-    sget-object v6, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
-
     .line 29
+    move-result-object v3
+
     .line 30
-    aput-object v6, v3, v4
+    const-string v4, "writeBoolean"
 
     .line 31
     .line 32
-    const-string v6, "writeBoolean"
+    invoke-direct {v1, v0, v4, v3}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
 
     .line 33
     .line 34
-    invoke-direct {v1, v0, v6, v3}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
-
     .line 35
+    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeBoolean:Lorg/conscrypt/metrics/OptionalMethod;
+
     .line 36
     .line 37
-    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeBoolean:Lorg/conscrypt/metrics/OptionalMethod;
+    new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
 
     .line 38
     .line 39
-    new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
+    const-string v3, "writeInt"
 
     .line 40
     .line 41
-    new-array v3, v2, [Ljava/lang/Class;
+    filled-new-array {v2}, [Ljava/lang/Class;
 
     .line 42
     .line 43
-    aput-object v5, v3, v4
-
     .line 44
+    move-result-object v2
+
     .line 45
-    const-string v5, "writeInt"
+    invoke-direct {v1, v0, v3, v2}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
 
     .line 46
     .line 47
-    invoke-direct {v1, v0, v5, v3}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
-
     .line 48
+    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt:Lorg/conscrypt/metrics/OptionalMethod;
+
     .line 49
     .line 50
-    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt:Lorg/conscrypt/metrics/OptionalMethod;
+    new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
 
     .line 51
     .line 52
-    new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
+    sget-object v2, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
     .line 53
     .line 54
-    const-string v3, "build"
+    filled-new-array {v2}, [Ljava/lang/Class;
 
     .line 55
     .line 56
-    new-array v5, v4, [Ljava/lang/Class;
-
     .line 57
+    move-result-object v2
+
     .line 58
-    invoke-direct {v1, v0, v3, v5}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
+    const-string v3, "writeLong"
 
     .line 59
     .line 60
-    .line 61
-    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build:Lorg/conscrypt/metrics/OptionalMethod;
+    invoke-direct {v1, v0, v3, v2}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
 
+    .line 61
     .line 62
     .line 63
-    new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
+    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeLong:Lorg/conscrypt/metrics/OptionalMethod;
 
     .line 64
     .line 65
-    const-string v3, "usePooledBuffer"
+    new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
 
     .line 66
     .line 67
-    new-array v5, v4, [Ljava/lang/Class;
+    const/4 v2, 0x0
 
     .line 68
-    .line 69
-    invoke-direct {v1, v0, v3, v5}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
+    new-array v3, v2, [Ljava/lang/Class;
 
+    .line 69
     .line 70
+    const-string v4, "build"
+
     .line 71
     .line 72
-    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer:Lorg/conscrypt/metrics/OptionalMethod;
+    invoke-direct {v1, v0, v4, v3}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
 
     .line 73
     .line 74
+    .line 75
+    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build:Lorg/conscrypt/metrics/OptionalMethod;
+
+    .line 76
+    .line 77
     new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
 
-    .line 75
-    .line 76
+    .line 78
+    .line 79
+    const-string v3, "usePooledBuffer"
+
+    .line 80
+    .line 81
     new-array v2, v2, [Ljava/lang/Class;
 
-    .line 77
-    .line 78
-    const-class v3, [I
-
-    .line 79
-    .line 80
-    aput-object v3, v2, v4
-
-    .line 81
     .line 82
-    const-string v3, "writeIntArray"
-
     .line 83
-    .line 84
     invoke-direct {v1, v0, v3, v2}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
 
+    .line 84
     .line 85
     .line 86
+    sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer:Lorg/conscrypt/metrics/OptionalMethod;
+
     .line 87
+    .line 88
+    new-instance v1, Lorg/conscrypt/metrics/OptionalMethod;
+
+    .line 89
+    .line 90
+    const-class v2, [I
+
+    .line 91
+    .line 92
+    filled-new-array {v2}, [Ljava/lang/Class;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object v2
+
+    .line 96
+    const-string v3, "writeIntArray"
+
+    .line 97
+    .line 98
+    invoke-direct {v1, v0, v3, v2}, Lorg/conscrypt/metrics/OptionalMethod;-><init>(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)V
+
+    .line 99
+    .line 100
+    .line 101
     sput-object v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeIntArray:Lorg/conscrypt/metrics/OptionalMethod;
 
-    .line 88
-    .line 89
+    .line 102
+    .line 103
     return-void
 .end method
 
@@ -308,49 +336,49 @@
 
 # virtual methods
 .method public build()Lorg/conscrypt/metrics/ReflexiveStatsEvent;
-    .locals 3
+    .locals 2
 
     .line 1
     sget-object v0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->build:Lorg/conscrypt/metrics/OptionalMethod;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->builder:Ljava/lang/Object;
+    iget-object p0, p0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->builder:Ljava/lang/Object;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 6
-    new-array v2, v2, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 7
     .line 8
-    invoke-virtual {v0, v1, v2}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     .line 10
     .line 11
-    move-result-object v0
+    move-result-object p0
 
     .line 12
-    new-instance v1, Lorg/conscrypt/metrics/ReflexiveStatsEvent;
+    new-instance v0, Lorg/conscrypt/metrics/ReflexiveStatsEvent;
 
     .line 13
     .line 14
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 15
-    invoke-direct {v1, v0, v2}, Lorg/conscrypt/metrics/ReflexiveStatsEvent;-><init>(Ljava/lang/Object;Lorg/conscrypt/metrics/ReflexiveStatsEvent$1;)V
+    invoke-direct {v0, p0, v1}, Lorg/conscrypt/metrics/ReflexiveStatsEvent;-><init>(Ljava/lang/Object;Lorg/conscrypt/metrics/ReflexiveStatsEvent$1;)V
 
     .line 16
     .line 17
     .line 18
-    return-object v1
+    return-object v0
 .end method
 
 .method public setAtomId(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
-    .locals 4
+    .locals 2
 
     .line 1
     sget-object v0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->setAtomId:Lorg/conscrypt/metrics/OptionalMethod;
@@ -369,48 +397,42 @@
     move-result-object p1
 
     .line 9
-    const/4 v2, 0x1
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 10
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 11
     .line 12
-    const/4 v3, 0x0
+    move-result-object p1
 
     .line 13
-    aput-object p1, v2, v3
+    invoke-virtual {v0, v1, p1}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1, v2}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 16
-    .line 17
-    .line 18
     return-object p0
 .end method
 
 .method public usePooledBuffer()V
-    .locals 3
+    .locals 2
 
     .line 1
     sget-object v0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->usePooledBuffer:Lorg/conscrypt/metrics/OptionalMethod;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->builder:Ljava/lang/Object;
+    iget-object p0, p0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->builder:Ljava/lang/Object;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 6
-    new-array v2, v2, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 7
     .line 8
-    invoke-virtual {v0, v1, v2}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -419,7 +441,7 @@
 .end method
 
 .method public writeBoolean(Z)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
-    .locals 4
+    .locals 2
 
     .line 1
     sget-object v0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeBoolean:Lorg/conscrypt/metrics/OptionalMethod;
@@ -438,30 +460,24 @@
     move-result-object p1
 
     .line 9
-    const/4 v2, 0x1
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 10
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 11
     .line 12
-    const/4 v3, 0x0
+    move-result-object p1
 
     .line 13
-    aput-object p1, v2, v3
+    invoke-virtual {v0, v1, p1}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1, v2}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 16
-    .line 17
-    .line 18
     return-object p0
 .end method
 
 .method public writeInt(I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
-    .locals 4
+    .locals 2
 
     .line 1
     sget-object v0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeInt:Lorg/conscrypt/metrics/OptionalMethod;
@@ -480,30 +496,24 @@
     move-result-object p1
 
     .line 9
-    const/4 v2, 0x1
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 10
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 11
     .line 12
-    const/4 v3, 0x0
+    move-result-object p1
 
     .line 13
-    aput-object p1, v2, v3
+    invoke-virtual {v0, v1, p1}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1, v2}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 16
-    .line 17
-    .line 18
     return-object p0
 .end method
 
 .method public writeIntArray([I)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
-    .locals 4
+    .locals 2
 
     .line 1
     invoke-static {}, Lorg/conscrypt/metrics/ReflexiveStatsEvent;->access$200()Z
@@ -526,25 +536,55 @@
 
     .line 10
     .line 11
-    const/4 v2, 0x1
+    filled-new-array {p1}, [Ljava/lang/Object;
 
     .line 12
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 13
     .line 14
-    const/4 v3, 0x0
+    move-result-object p1
 
     .line 15
-    aput-object p1, v2, v3
+    invoke-virtual {v0, v1, p1}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1, v2}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 18
-    .line 19
-    .line 20
     :cond_0
+    return-object p0
+.end method
+
+.method public writeLong(J)Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;
+    .locals 2
+
+    .line 1
+    sget-object v0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->writeLong:Lorg/conscrypt/metrics/OptionalMethod;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lorg/conscrypt/metrics/ReflexiveStatsEvent$Builder;->builder:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    filled-new-array {p1}, [Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    invoke-virtual {v0, v1, p1}, Lorg/conscrypt/metrics/OptionalMethod;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
     return-object p0
 .end method

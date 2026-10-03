@@ -1,6 +1,6 @@
 .class public final Lorg/conscrypt/OpenSSLECKeyPairGenerator;
 .super Ljava/security/KeyPairGenerator;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # static fields
@@ -261,7 +261,7 @@
 
     .line 54
     .line 55
-    invoke-static {v0, v1}, Lfn;->q(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Li60;->o(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 56
     .line 57
@@ -272,7 +272,7 @@
 
 # virtual methods
 .method public generateKeyPair()Ljava/security/KeyPair;
-    .locals 5
+    .locals 4
 
     .line 1
     iget-object v0, p0, Lorg/conscrypt/OpenSSLECKeyPairGenerator;->group:Lorg/conscrypt/OpenSSLECGroupContext;
@@ -331,27 +331,27 @@
 
     .line 28
     :cond_0
-    const-string v1, "Curve not recognized: "
+    const-string p0, "Curve not recognized: "
 
     .line 29
     .line 30
-    invoke-static {v1, v0}, Lkd0;->v(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0}, Lw31;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 31
     .line 32
     .line 33
-    move-result-object v0
+    move-result-object p0
 
     .line 34
-    invoke-static {v0}, Lj26;->j(Ljava/lang/String;)V
+    invoke-static {p0}, Lco6;->i(Ljava/lang/String;)V
 
     .line 35
     .line 36
     .line 37
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 38
-    return-object v0
+    return-object p0
 
     .line 39
     :cond_1
@@ -406,11 +406,11 @@
 
     .line 64
     .line 65
-    iget-object v4, p0, Lorg/conscrypt/OpenSSLECKeyPairGenerator;->group:Lorg/conscrypt/OpenSSLECGroupContext;
+    iget-object p0, p0, Lorg/conscrypt/OpenSSLECKeyPairGenerator;->group:Lorg/conscrypt/OpenSSLECGroupContext;
 
     .line 66
     .line 67
-    invoke-direct {v3, v4, v0}, Lorg/conscrypt/OpenSSLECPrivateKey;-><init>(Lorg/conscrypt/OpenSSLECGroupContext;Lorg/conscrypt/OpenSSLKey;)V
+    invoke-direct {v3, p0, v0}, Lorg/conscrypt/OpenSSLECPrivateKey;-><init>(Lorg/conscrypt/OpenSSLECGroupContext;Lorg/conscrypt/OpenSSLKey;)V
 
     .line 68
     .line 69
@@ -455,37 +455,37 @@
 
     .line 56
     :cond_0
-    new-instance p1, Ljava/security/InvalidParameterException;
+    new-instance p0, Ljava/security/InvalidParameterException;
 
-    const-string v0, "unknown curve "
+    const-string p1, "unknown curve "
 
-    invoke-virtual {v0, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object p1
 
-    invoke-direct {p1, p2}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
 
-    throw p1
+    throw p0
 
     .line 57
     :cond_1
-    new-instance p2, Ljava/security/InvalidParameterException;
+    new-instance p0, Ljava/security/InvalidParameterException;
 
-    const-string v0, "unknown key size "
+    const-string p2, "unknown key size "
 
     .line 58
-    invoke-static {p1, v0}, Lxy4;->v(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Leb7;->h(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     .line 59
-    invoke-direct {p2, p1}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidParameterException;-><init>(Ljava/lang/String;)V
 
-    throw p2
+    throw p0
 .end method
 
 .method public initialize(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidAlgorithmParameterException;
@@ -561,15 +561,15 @@
 
     .line 33
     :cond_1
-    new-instance p2, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 34
     .line 35
-    const-string v0, "unknown curve name: "
+    const-string p2, "unknown curve name: "
 
     .line 36
     .line 37
-    invoke-static {v0, p1}, Lkd0;->v(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1}, Lw31;->n(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 38
     .line 39
@@ -577,27 +577,27 @@
     move-result-object p1
 
     .line 41
-    invoke-direct {p2, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 42
     .line 43
     .line 44
-    throw p2
+    throw p0
 
     .line 45
     :cond_2
-    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
 
     .line 46
     .line 47
-    const-string p2, "parameter must be ECParameterSpec or ECGenParameterSpec"
+    const-string p1, "parameter must be ECParameterSpec or ECGenParameterSpec"
 
     .line 48
     .line 49
-    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
 
     .line 50
     .line 51
     .line 52
-    throw p1
+    throw p0
 .end method

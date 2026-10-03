@@ -1,27 +1,23 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class fd7 {
-    public static final fd7 Q;
-    public static final fd7 R;
-    public static final /* synthetic */ fd7[] S;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes3.dex */
+public final class fd7 extends d31 {
+    public /* synthetic */ Object c0;
+    public final /* synthetic */ gd7 d0;
+    public int e0;
 
-    static {
-        fd7 fd7Var = new fd7("SUPERTYPE", 0);
-        Q = fd7Var;
-        fd7 fd7Var2 = new fd7("COMMON", 1);
-        R = fd7Var2;
-        S = new fd7[]{fd7Var, fd7Var2};
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public fd7(gd7 gd7Var, d31 d31Var) {
+        super(d31Var);
+        this.d0 = gd7Var;
     }
 
-    public static fd7 valueOf(String str) {
-        return (fd7) Enum.valueOf(fd7.class, str);
-    }
-
-    public static fd7[] values() {
-        return (fd7[]) S.clone();
+    @Override // defpackage.g00
+    public final Object q(Object obj) {
+        this.c0 = obj;
+        this.e0 |= Integer.MIN_VALUE;
+        gd7.g(this.d0, this);
+        return j41.X;
     }
 }

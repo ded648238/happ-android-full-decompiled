@@ -1,36 +1,59 @@
 package defpackage;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class ez5 {
-    public static final ez5 Q;
-    public static final ez5 R;
-    public static final ez5 S;
-    public static final ez5 T;
-    public static final ez5 U;
-    public static final /* synthetic */ ez5[] V;
+import io.sentry.clientreport.a;
+import java.lang.reflect.GenericArrayType;
+import java.lang.reflect.Type;
+import java.lang.reflect.WildcardType;
+import java.util.Collection;
 
-    static {
-        ez5 ez5Var = new ez5("TopBar", 0);
-        Q = ez5Var;
-        ez5 ez5Var2 = new ez5("MainContent", 1);
-        R = ez5Var2;
-        ez5 ez5Var3 = new ez5("Snackbar", 2);
-        S = ez5Var3;
-        ez5 ez5Var4 = new ez5("Fab", 3);
-        T = ez5Var4;
-        ez5 ez5Var5 = new ez5("BottomBar", 4);
-        U = ez5Var5;
-        V = new ez5[]{ez5Var, ez5Var2, ez5Var3, ez5Var4, ez5Var5};
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class ez5 extends xz5 {
+    public final Type a;
+    public final xz5 b;
+    public final fw1 c;
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public ez5(Type type) {
+        xz5 vz5Var;
+        xz5 xz5Var;
+        this.a = type;
+        if (!(type instanceof GenericArrayType)) {
+            if (type instanceof Class) {
+                Class cls = (Class) type;
+                if (cls.isArray()) {
+                    Class<?> componentType = cls.getComponentType();
+                    componentType.getClass();
+                    vz5Var = componentType.isPrimitive() ? new vz5(componentType) : ((componentType instanceof GenericArrayType) || componentType.isArray()) ? new ez5(componentType) : componentType instanceof WildcardType ? new a06((WildcardType) componentType) : new mz5(componentType);
+                }
+            }
+            a.b("Not an array type (", type.getClass(), "): ", type);
+            throw null;
+        }
+        Type genericComponentType = ((GenericArrayType) type).getGenericComponentType();
+        genericComponentType.getClass();
+        boolean z = genericComponentType instanceof Class;
+        if (z) {
+            Class cls2 = (Class) genericComponentType;
+            if (cls2.isPrimitive()) {
+                xz5Var = new vz5(cls2);
+                this.b = xz5Var;
+                this.c = fw1.X;
+            }
+        }
+        vz5Var = ((genericComponentType instanceof GenericArrayType) || (z && ((Class) genericComponentType).isArray())) ? new ez5(genericComponentType) : genericComponentType instanceof WildcardType ? new a06((WildcardType) genericComponentType) : new mz5(genericComponentType);
+        xz5Var = vz5Var;
+        this.b = xz5Var;
+        this.c = fw1.X;
     }
 
-    public static ez5 valueOf(String str) {
-        return (ez5) Enum.valueOf(ez5.class, str);
+    @Override // defpackage.xz5
+    public final Type b() {
+        return this.a;
     }
 
-    public static ez5[] values() {
-        return (ez5[]) V.clone();
+    @Override // defpackage.bc3
+    public final Collection getAnnotations() {
+        return this.c;
     }
 }

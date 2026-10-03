@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/ExternalSession;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Lorg/conscrypt/ConscryptSession;
@@ -65,103 +65,103 @@
 
 # virtual methods
 .method public getApplicationBufferSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getApplicationBufferSize()I
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getApplicationBufferSize()I
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p0
 
     .line 11
-    return v0
+    return p0
 .end method
 
 .method public getApplicationProtocol()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Lorg/conscrypt/ConscryptSession;->getApplicationProtocol()Ljava/lang/String;
+    invoke-interface {p0}, Lorg/conscrypt/ConscryptSession;->getApplicationProtocol()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getCipherSuite()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getCipherSuite()Ljava/lang/String;
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getCipherSuite()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getCreationTime()J
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getCreationTime()J
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getCreationTime()J
 
     .line 8
     .line 9
@@ -173,49 +173,49 @@
 .end method
 
 .method public getId()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getId()[B
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getId()[B
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getLastAccessedTime()J
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getLastAccessedTime()J
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getLastAccessedTime()J
 
     .line 8
     .line 9
@@ -227,115 +227,115 @@
 .end method
 
 .method public getLocalCertificates()[Ljava/security/cert/Certificate;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getLocalCertificates()[Ljava/security/cert/Certificate;
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getLocalCertificates()[Ljava/security/cert/Certificate;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getLocalPrincipal()Ljava/security/Principal;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getLocalPrincipal()Ljava/security/Principal;
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getLocalPrincipal()Ljava/security/Principal;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getLocalSupportedSignatureAlgorithms()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Lorg/conscrypt/ConscryptSession;->getLocalSupportedSignatureAlgorithms()[Ljava/lang/String;
+    invoke-interface {p0}, Lorg/conscrypt/ConscryptSession;->getLocalSupportedSignatureAlgorithms()[Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPacketBufferSize()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getPacketBufferSize()I
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getPacketBufferSize()I
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p0
 
     .line 11
-    return v0
+    return p0
 .end method
 
 .method public getPeerCertificateChain()[Ljavax/security/cert/X509Certificate;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -343,31 +343,31 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getPeerCertificateChain()[Ljavax/security/cert/X509Certificate;
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getPeerCertificateChain()[Ljavax/security/cert/X509Certificate;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public bridge synthetic getPeerCertificates()[Ljava/security/cert/Certificate;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -377,13 +377,13 @@
     .line 12
     invoke-virtual {p0}, Lorg/conscrypt/ExternalSession;->getPeerCertificates()[Ljava/security/cert/X509Certificate;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerCertificates()[Ljava/security/cert/X509Certificate;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -391,85 +391,85 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Lorg/conscrypt/ConscryptSession;->getPeerCertificates()[Ljava/security/cert/X509Certificate;
+    invoke-interface {p0}, Lorg/conscrypt/ConscryptSession;->getPeerCertificates()[Ljava/security/cert/X509Certificate;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerHost()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getPeerHost()Ljava/lang/String;
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getPeerHost()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerPort()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getPeerPort()I
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getPeerPort()I
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p0
 
     .line 11
-    return v0
+    return p0
 .end method
 
 .method public getPeerPrincipal()Ljava/security/Principal;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLPeerUnverifiedException;
@@ -477,166 +477,166 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getPeerPrincipal()Ljava/security/Principal;
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getPeerPrincipal()Ljava/security/Principal;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerSignedCertificateTimestamp()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Lorg/conscrypt/ConscryptSession;->getPeerSignedCertificateTimestamp()[B
+    invoke-interface {p0}, Lorg/conscrypt/ConscryptSession;->getPeerSignedCertificateTimestamp()[B
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerSupportedSignatureAlgorithms()[Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Lorg/conscrypt/ConscryptSession;->getPeerSupportedSignatureAlgorithms()[Ljava/lang/String;
+    invoke-interface {p0}, Lorg/conscrypt/ConscryptSession;->getPeerSupportedSignatureAlgorithms()[Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getProtocol()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getProtocol()Ljava/lang/String;
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getProtocol()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getRequestedServerName()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Lorg/conscrypt/ConscryptSession;->getRequestedServerName()Ljava/lang/String;
+    invoke-interface {p0}, Lorg/conscrypt/ConscryptSession;->getRequestedServerName()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getSessionContext()Ljavax/net/ssl/SSLSessionContext;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->getSessionContext()Ljavax/net/ssl/SSLSessionContext;
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->getSessionContext()Ljavax/net/ssl/SSLSessionContext;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getStatusResponses()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -646,123 +646,123 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Lorg/conscrypt/ConscryptSession;->getStatusResponses()Ljava/util/List;
+    invoke-interface {p0}, Lorg/conscrypt/ConscryptSession;->getStatusResponses()Ljava/util/List;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    return-object v0
+    return-object p0
 .end method
 
 .method public getValue(Ljava/lang/String;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 1
     if-eqz p1, :cond_0
 
     .line 2
     .line 3
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->values:Ljava/util/HashMap;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->values:Ljava/util/HashMap;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object p1
+    move-result-object p0
 
     .line 9
-    return-object p1
+    return-object p0
 
     .line 10
     :cond_0
-    const-string p1, "name == null"
+    const-string p0, "name == null"
 
     .line 11
     .line 12
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 p1, 0x0
+    const/4 p0, 0x0
 
     .line 16
-    return-object p1
+    return-object p0
 .end method
 
 .method public getValueNames()[Ljava/lang/String;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->values:Ljava/util/HashMap;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->values:Ljava/util/HashMap;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {p0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     .line 8
-    new-array v1, v1, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
     .line 9
     .line 10
-    invoke-interface {v0, v1}, Ljava/util/Set;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-interface {p0, v0}, Ljava/util/Set;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 11
     .line 12
     .line 13
-    move-result-object v0
+    move-result-object p0
 
     .line 14
-    check-cast v0, [Ljava/lang/String;
+    check-cast p0, [Ljava/lang/String;
 
     .line 15
     .line 16
-    return-object v0
+    return-object p0
 .end method
 
 .method public invalidate()V
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->invalidate()V
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->invalidate()V
 
     .line 8
     .line 9
@@ -771,30 +771,30 @@
 .end method
 
 .method public isValid()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->provider:Lorg/conscrypt/ExternalSession$Provider;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
+    invoke-interface {p0}, Lorg/conscrypt/ExternalSession$Provider;->provideSession()Lorg/conscrypt/ConscryptSession;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object p0
 
     .line 7
-    invoke-interface {v0}, Ljavax/net/ssl/SSLSession;->isValid()Z
+    invoke-interface {p0}, Ljavax/net/ssl/SSLSession;->isValid()Z
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    move-result p0
 
     .line 11
-    return v0
+    return p0
 .end method
 
 .method public putValue(Ljava/lang/String;Ljava/lang/Object;)V
@@ -807,7 +807,7 @@
 .end method
 
 .method public putValue(Ljavax/net/ssl/SSLSession;Ljava/lang/String;Ljava/lang/Object;)V
-    .locals 2
+    .locals 1
 
     .line 1
     if-eqz p2, :cond_2
@@ -818,23 +818,23 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->values:Ljava/util/HashMap;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->values:Ljava/util/HashMap;
 
     .line 6
     .line 7
-    invoke-virtual {v0, p2, p3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p2, p3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object p0
 
     .line 11
-    instance-of v1, p3, Ljavax/net/ssl/SSLSessionBindingListener;
+    instance-of v0, p3, Ljavax/net/ssl/SSLSessionBindingListener;
 
     .line 12
     .line 13
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 14
     .line 15
@@ -842,22 +842,22 @@
 
     .line 16
     .line 17
-    new-instance v1, Ljavax/net/ssl/SSLSessionBindingEvent;
+    new-instance v0, Ljavax/net/ssl/SSLSessionBindingEvent;
 
     .line 18
     .line 19
-    invoke-direct {v1, p1, p2}, Ljavax/net/ssl/SSLSessionBindingEvent;-><init>(Ljavax/net/ssl/SSLSession;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Ljavax/net/ssl/SSLSessionBindingEvent;-><init>(Ljavax/net/ssl/SSLSession;Ljava/lang/String;)V
 
     .line 20
     .line 21
     .line 22
-    invoke-interface {p3, v1}, Ljavax/net/ssl/SSLSessionBindingListener;->valueBound(Ljavax/net/ssl/SSLSessionBindingEvent;)V
+    invoke-interface {p3, v0}, Ljavax/net/ssl/SSLSessionBindingListener;->valueBound(Ljavax/net/ssl/SSLSessionBindingEvent;)V
 
     .line 23
     .line 24
     .line 25
     :cond_0
-    instance-of p3, v0, Ljavax/net/ssl/SSLSessionBindingListener;
+    instance-of p3, p0, Ljavax/net/ssl/SSLSessionBindingListener;
 
     .line 26
     .line 27
@@ -865,7 +865,7 @@
 
     .line 28
     .line 29
-    check-cast v0, Ljavax/net/ssl/SSLSessionBindingListener;
+    check-cast p0, Ljavax/net/ssl/SSLSessionBindingListener;
 
     .line 30
     .line 31
@@ -878,7 +878,7 @@
     .line 34
     .line 35
     .line 36
-    invoke-interface {v0, p3}, Ljavax/net/ssl/SSLSessionBindingListener;->valueUnbound(Ljavax/net/ssl/SSLSessionBindingEvent;)V
+    invoke-interface {p0, p3}, Ljavax/net/ssl/SSLSessionBindingListener;->valueUnbound(Ljavax/net/ssl/SSLSessionBindingEvent;)V
 
     .line 37
     .line 38
@@ -888,11 +888,11 @@
 
     .line 40
     :cond_2
-    const-string p1, "name == null || value == null"
+    const-string p0, "name == null || value == null"
 
     .line 41
     .line 42
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 43
     .line 44
@@ -910,47 +910,47 @@
 .end method
 
 .method public removeValue(Ljavax/net/ssl/SSLSession;Ljava/lang/String;)V
-    .locals 2
+    .locals 1
 
     .line 1
     if-eqz p2, :cond_1
 
     .line 2
     .line 3
-    iget-object v0, p0, Lorg/conscrypt/ExternalSession;->values:Ljava/util/HashMap;
+    iget-object p0, p0, Lorg/conscrypt/ExternalSession;->values:Ljava/util/HashMap;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    instance-of v1, v0, Ljavax/net/ssl/SSLSessionBindingListener;
+    instance-of v0, p0, Ljavax/net/ssl/SSLSessionBindingListener;
 
     .line 10
     .line 11
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 12
     .line 13
-    check-cast v0, Ljavax/net/ssl/SSLSessionBindingListener;
+    check-cast p0, Ljavax/net/ssl/SSLSessionBindingListener;
 
     .line 14
     .line 15
-    new-instance v1, Ljavax/net/ssl/SSLSessionBindingEvent;
+    new-instance v0, Ljavax/net/ssl/SSLSessionBindingEvent;
 
     .line 16
     .line 17
-    invoke-direct {v1, p1, p2}, Ljavax/net/ssl/SSLSessionBindingEvent;-><init>(Ljavax/net/ssl/SSLSession;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Ljavax/net/ssl/SSLSessionBindingEvent;-><init>(Ljavax/net/ssl/SSLSession;Ljava/lang/String;)V
 
     .line 18
     .line 19
     .line 20
-    invoke-interface {v0, v1}, Ljavax/net/ssl/SSLSessionBindingListener;->valueUnbound(Ljavax/net/ssl/SSLSessionBindingEvent;)V
+    invoke-interface {p0, v0}, Ljavax/net/ssl/SSLSessionBindingListener;->valueUnbound(Ljavax/net/ssl/SSLSessionBindingEvent;)V
 
     .line 21
     .line 22
@@ -960,11 +960,11 @@
 
     .line 24
     :cond_1
-    const-string p1, "name == null"
+    const-string p0, "name == null"
 
     .line 25
     .line 26
-    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->p(Ljava/lang/String;)V
 
     .line 27
     .line 28

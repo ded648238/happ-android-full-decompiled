@@ -1,32 +1,47 @@
 package defpackage;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.io.Serializable;
+import java.util.Objects;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class pb3 {
-    public int a;
-    public final ArrayList b;
-    public final ArrayList c;
-    public final ArrayList d;
-    public final LinkedHashMap e;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class pb3 implements Serializable {
+    public static final pb3 c0 = new pb3(null, null, null);
+    public final Object X;
+    public final Boolean Y;
+    public final Boolean Z;
 
-    public pb3(int i, String str) {
-        str.getClass();
-        this.a = i;
-        this.b = new ArrayList(0);
-        this.c = new ArrayList(0);
-        this.d = new ArrayList(0);
-        this.e = new LinkedHashMap(0);
-        z34.a.getClass();
-        List listA = y34.a();
-        new ArrayList();
-        Iterator it = listA.iterator();
-        while (it.hasNext()) {
-            ((z34) it.next()).getClass();
+    public pb3(Object obj, Boolean bool, Boolean bool2) {
+        this.X = obj;
+        this.Y = bool;
+        this.Z = bool2;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
         }
+        if (obj != null && obj.getClass() == pb3.class) {
+            pb3 pb3Var = (pb3) obj;
+            if (Objects.equals(this.X, pb3Var.X) && Objects.equals(this.Y, pb3Var.Y) && Objects.equals(this.Z, pb3Var.Z)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        Object obj = this.X;
+        int hashCode = obj != null ? 1 + obj.hashCode() : 1;
+        Boolean bool = this.Y;
+        if (bool != null) {
+            hashCode += bool.hashCode();
+        }
+        Boolean bool2 = this.Z;
+        return bool2 != null ? bool2.hashCode() + hashCode : hashCode;
+    }
+
+    public final String toString() {
+        return String.format("JacksonInject.Value(id=%s,useInput=%s,optional=%s)", this.X, this.Y, this.Z);
     }
 }

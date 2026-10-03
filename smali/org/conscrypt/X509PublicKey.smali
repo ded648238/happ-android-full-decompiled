@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/X509PublicKey;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/security/PublicKey;
@@ -125,7 +125,7 @@
 
     .line 36
     :cond_4
-    iget-object v2, p0, Lorg/conscrypt/X509PublicKey;->encoded:[B
+    iget-object p0, p0, Lorg/conscrypt/X509PublicKey;->encoded:[B
 
     .line 37
     .line 38
@@ -133,15 +133,15 @@
 
     .line 39
     .line 40
-    invoke-static {v2, p1}, Ljava/util/Arrays;->equals([B[B)Z
+    invoke-static {p0, p1}, Ljava/util/Arrays;->equals([B[B)Z
 
     .line 41
     .line 42
     .line 43
-    move-result p1
+    move-result p0
 
     .line 44
-    if-nez p1, :cond_5
+    if-nez p0, :cond_5
 
     .line 45
     .line 46
@@ -153,36 +153,36 @@
 .end method
 
 .method public getAlgorithm()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/X509PublicKey;->algorithm:Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/X509PublicKey;->algorithm:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getEncoded()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/X509PublicKey;->encoded:[B
+    iget-object p0, p0, Lorg/conscrypt/X509PublicKey;->encoded:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getFormat()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    const-string v0, "X.509"
+    const-string p0, "X.509"
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public hashCode()I
@@ -220,26 +220,25 @@
     add-int/2addr v0, v1
 
     .line 14
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/2addr v0, v1
 
     .line 15
+    iget-object p0, p0, Lorg/conscrypt/X509PublicKey;->encoded:[B
+
     .line 16
-    iget-object v1, p0, Lorg/conscrypt/X509PublicKey;->encoded:[B
-
     .line 17
-    .line 18
-    invoke-static {v1}, Ljava/util/Arrays;->hashCode([B)I
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([B)I
 
+    .line 18
     .line 19
     .line 20
+    move-result p0
+
     .line 21
-    move-result v1
+    add-int/2addr p0, v0
 
     .line 22
-    add-int/2addr v1, v0
-
-    .line 23
-    return v1
+    return p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -277,28 +276,28 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, Lorg/conscrypt/X509PublicKey;->encoded:[B
+    iget-object p0, p0, Lorg/conscrypt/X509PublicKey;->encoded:[B
 
     .line 19
     .line 20
-    invoke-static {v1}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
+    invoke-static {p0}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
 
     .line 21
     .line 22
     .line 23
-    move-result-object v1
+    move-result-object p0
 
     .line 24
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 25
     .line 26
     .line 27
-    const-string v1, "]"
+    const-string p0, "]"
 
     .line 28
     .line 29
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 30
     .line 31
@@ -308,8 +307,8 @@
     .line 33
     .line 34
     .line 35
-    move-result-object v0
+    move-result-object p0
 
     .line 36
-    return-object v0
+    return-object p0
 .end method

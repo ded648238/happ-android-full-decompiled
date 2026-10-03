@@ -5,32 +5,32 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
-import defpackage.ra5;
+import defpackage.qu5;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public class PreferenceImageView extends ImageView {
-    public int Q;
-    public int R;
+    public int c0;
+    public int d0;
 
     public PreferenceImageView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.Q = Integer.MAX_VALUE;
-        this.R = Integer.MAX_VALUE;
-        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, ra5.PreferenceImageView, i, 0);
-        setMaxWidth(typedArrayObtainStyledAttributes.getDimensionPixelSize(ra5.PreferenceImageView_maxWidth, Integer.MAX_VALUE));
-        setMaxHeight(typedArrayObtainStyledAttributes.getDimensionPixelSize(ra5.PreferenceImageView_maxHeight, Integer.MAX_VALUE));
-        typedArrayObtainStyledAttributes.recycle();
+        this.c0 = Integer.MAX_VALUE;
+        this.d0 = Integer.MAX_VALUE;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, qu5.PreferenceImageView, i, 0);
+        setMaxWidth(obtainStyledAttributes.getDimensionPixelSize(qu5.PreferenceImageView_maxWidth, Integer.MAX_VALUE));
+        setMaxHeight(obtainStyledAttributes.getDimensionPixelSize(qu5.PreferenceImageView_maxHeight, Integer.MAX_VALUE));
+        obtainStyledAttributes.recycle();
     }
 
     @Override // android.widget.ImageView
     public int getMaxHeight() {
-        return this.R;
+        return this.d0;
     }
 
     @Override // android.widget.ImageView
     public int getMaxWidth() {
-        return this.Q;
+        return this.c0;
     }
 
     @Override // android.widget.ImageView, android.view.View
@@ -56,13 +56,13 @@ public class PreferenceImageView extends ImageView {
 
     @Override // android.widget.ImageView
     public void setMaxHeight(int i) {
-        this.R = i;
+        this.d0 = i;
         super.setMaxHeight(i);
     }
 
     @Override // android.widget.ImageView
     public void setMaxWidth(int i) {
-        this.Q = i;
+        this.c0 = i;
         super.setMaxWidth(i);
     }
 

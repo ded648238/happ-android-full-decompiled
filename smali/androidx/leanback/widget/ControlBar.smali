@@ -1,12 +1,12 @@
 .class Landroidx/leanback/widget/ControlBar;
 .super Landroid/widget/LinearLayout;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # instance fields
-.field public Q:I
+.field public c0:I
 
-.field public final R:Z
+.field public final d0:Z
 
 
 # direct methods
@@ -22,14 +22,14 @@
     const/4 p1, -0x1
 
     .line 5
-    iput p1, p0, Landroidx/leanback/widget/ControlBar;->Q:I
+    iput p1, p0, Landroidx/leanback/widget/ControlBar;->c0:I
 
     .line 6
     .line 7
     const/4 p1, 0x1
 
     .line 8
-    iput-boolean p1, p0, Landroidx/leanback/widget/ControlBar;->R:Z
+    iput-boolean p1, p0, Landroidx/leanback/widget/ControlBar;->d0:Z
 
     .line 9
     .line 10
@@ -62,7 +62,7 @@
 
     .line 10
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Landroid/widget/LinearLayout;->addFocusables(Ljava/util/ArrayList;II)V
+    invoke-super {p0, p1, p2, p3}, Landroid/view/View;->addFocusables(Ljava/util/ArrayList;II)V
 
     .line 11
     .line 12
@@ -72,7 +72,7 @@
     .line 14
     :cond_1
     :goto_0
-    iget p2, p0, Landroidx/leanback/widget/ControlBar;->Q:I
+    iget p2, p0, Landroidx/leanback/widget/ControlBar;->c0:I
 
     .line 15
     .line 16
@@ -92,7 +92,7 @@
 
     .line 23
     .line 24
-    iget p2, p0, Landroidx/leanback/widget/ControlBar;->Q:I
+    iget p2, p0, Landroidx/leanback/widget/ControlBar;->c0:I
 
     .line 25
     .line 26
@@ -101,10 +101,10 @@
     .line 27
     .line 28
     .line 29
-    move-result-object p2
+    move-result-object p0
 
     .line 30
-    invoke-virtual {p1, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 31
     .line 32
@@ -125,7 +125,7 @@
 
     .line 39
     .line 40
-    iget-boolean p2, p0, Landroidx/leanback/widget/ControlBar;->R:Z
+    iget-boolean p2, p0, Landroidx/leanback/widget/ControlBar;->d0:Z
 
     .line 41
     .line 42
@@ -158,10 +158,10 @@
     .line 53
     .line 54
     .line 55
-    move-result-object p2
+    move-result-object p0
 
     .line 56
-    invoke-virtual {p1, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 57
     .line 58
@@ -198,7 +198,7 @@
 
     .line 6
     .line 7
-    iget v0, p0, Landroidx/leanback/widget/ControlBar;->Q:I
+    iget v0, p0, Landroidx/leanback/widget/ControlBar;->c0:I
 
     .line 8
     .line 9
@@ -218,7 +218,7 @@
 
     .line 16
     .line 17
-    iget v0, p0, Landroidx/leanback/widget/ControlBar;->Q:I
+    iget v0, p0, Landroidx/leanback/widget/ControlBar;->c0:I
 
     .line 18
     .line 19
@@ -226,7 +226,7 @@
 
     .line 20
     :cond_0
-    iget-boolean v0, p0, Landroidx/leanback/widget/ControlBar;->R:Z
+    iget-boolean v0, p0, Landroidx/leanback/widget/ControlBar;->d0:Z
 
     .line 21
     .line 22
@@ -274,29 +274,29 @@
 
     .line 41
     .line 42
-    const/4 p1, 0x1
+    const/4 p0, 0x1
 
     .line 43
-    return p1
+    return p0
 
     .line 44
     :cond_2
-    invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
+    invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
 
     .line 45
     .line 46
     .line 47
-    move-result p1
+    move-result p0
 
     .line 48
-    return p1
+    return p0
 .end method
 
 .method public final requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->requestChildFocus(Landroid/view/View;Landroid/view/View;)V
+    invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->requestChildFocus(Landroid/view/View;Landroid/view/View;)V
 
     .line 2
     .line 3
@@ -309,7 +309,7 @@
     move-result p1
 
     .line 8
-    iput p1, p0, Landroidx/leanback/widget/ControlBar;->Q:I
+    iput p1, p0, Landroidx/leanback/widget/ControlBar;->c0:I
 
     .line 9
     .line 10

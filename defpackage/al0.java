@@ -1,26 +1,66 @@
 package defpackage;
 
-import j$.util.DesugarCollections;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Objects;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class al0 {
-    public static final /* synthetic */ int e = 0;
-    public final g47 a;
-    public final List b;
-    public final sb2 c;
-    public final String d;
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class al0 implements c36, ho2 {
+    public final long X;
+    public final nu Y;
+    public lo2 Z;
 
-    static {
-        DesugarCollections.unmodifiableList(new ArrayList());
+    public al0(long j) {
+        this.X = j;
+        if (j <= 0) {
+            i60.p("Failed requirement.");
+            throw null;
+        }
+        nu nuVar = new nu();
+        nuVar.a = 0L;
+        this.Y = nuVar;
     }
 
-    public al0(g47 g47Var, List list, sb2 sb2Var, String str) {
-        this.a = g47Var;
-        this.b = list;
-        this.c = sb2Var;
-        this.d = str;
+    @Override // defpackage.c36
+    public final void Z(k36 k36Var, long j, wd wdVar) {
+        long j2;
+        long j3;
+        nu nuVar = this.Y;
+        do {
+            j2 = nuVar.a;
+            j3 = j2 != -1 ? 1 + j2 : -1L;
+        } while (!nu.b.compareAndSet(nuVar, j2, j3));
+        if (j3 == this.X) {
+            Objects.toString(this.Z);
+            lo2 lo2Var = this.Z;
+            lo2Var.getClass();
+            lo2Var.U(true);
+        }
+    }
+
+    @Override // defpackage.ho2
+    public final void a() {
+        long j;
+        nu nuVar = this.Y;
+        do {
+            j = nuVar.a;
+        } while (!nu.b.compareAndSet(nuVar, j, j != -1 ? 0L : -1L));
+        lo2 lo2Var = this.Z;
+        lo2Var.getClass();
+        lo2Var.U(false);
+        lo2 lo2Var2 = this.Z;
+        lo2Var2.getClass();
+        lo2Var2.toString();
+    }
+
+    @Override // defpackage.ho2
+    public final void b() {
+        this.Y.a = -1L;
+        lo2 lo2Var = this.Z;
+        lo2Var.getClass();
+        lo2Var.U(false);
+    }
+
+    @Override // defpackage.ho2
+    public final void c() {
     }
 }

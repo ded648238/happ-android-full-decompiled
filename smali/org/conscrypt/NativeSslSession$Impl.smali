@@ -1,6 +1,6 @@
 .class final Lorg/conscrypt/NativeSslSession$Impl;
 .super Lorg/conscrypt/NativeSslSession;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -143,11 +143,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
 
     .line 2
     .line 3
-    iget-wide v0, v0, Lorg/conscrypt/NativeRef;->address:J
+    iget-wide v0, p0, Lorg/conscrypt/NativeRef;->address:J
 
     .line 4
     .line 5
@@ -165,25 +165,25 @@
 
 # virtual methods
 .method public getCipherSuite()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->cipherSuite:Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->cipherSuite:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getId()[B
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
 
     .line 2
     .line 3
-    iget-wide v0, v0, Lorg/conscrypt/NativeRef;->address:J
+    iget-wide v0, p0, Lorg/conscrypt/NativeRef;->address:J
 
     .line 4
     .line 5
@@ -192,76 +192,76 @@
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object p0
 
     .line 9
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerHost()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->host:Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->host:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerOcspStapledResponse()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->peerOcspStapledResponse:[B
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->peerOcspStapledResponse:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getPeerPort()I
-    .locals 1
+    .locals 0
 
     .line 1
-    iget v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->port:I
+    iget p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->port:I
 
     .line 2
     .line 3
-    return v0
+    return p0
 .end method
 
 .method public getPeerSignedCertificateTimestamp()[B
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->peerSignedCertificateTimestamp:[B
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->peerSignedCertificateTimestamp:[B
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public getProtocol()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->protocol:Ljava/lang/String;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->protocol:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public isSingleUse()Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
 
     .line 2
     .line 3
-    iget-wide v0, v0, Lorg/conscrypt/NativeRef;->address:J
+    iget-wide v0, p0, Lorg/conscrypt/NativeRef;->address:J
 
     .line 4
     .line 5
@@ -270,10 +270,10 @@
     .line 6
     .line 7
     .line 8
-    move-result v0
+    move-result p0
 
     .line 9
-    return v0
+    return p0
 .end method
 
 .method public isValid()Z
@@ -303,11 +303,11 @@
     int-to-long v2, v2
 
     .line 12
-    iget-object v4, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
 
     .line 13
     .line 14
-    iget-wide v4, v4, Lorg/conscrypt/NativeRef;->address:J
+    iget-wide v4, p0, Lorg/conscrypt/NativeRef;->address:J
 
     .line 15
     .line 16
@@ -343,40 +343,39 @@
 
     .line 31
     .line 32
-    mul-long v2, v2, v4
+    mul-long/2addr v2, v4
 
     .line 33
-    .line 34
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
+    .line 34
     .line 35
     .line 36
-    .line 37
     move-result-wide v4
 
-    .line 38
+    .line 37
     sub-long/2addr v4, v2
 
+    .line 38
+    cmp-long p0, v4, v0
+
     .line 39
-    cmp-long v2, v4, v0
-
     .line 40
-    .line 41
-    if-gez v2, :cond_0
+    if-gez p0, :cond_0
 
+    .line 41
     .line 42
+    const/4 p0, 0x1
+
     .line 43
-    const/4 v0, 0x1
+    return p0
 
     .line 44
-    return v0
+    :cond_0
+    const/4 p0, 0x0
 
     .line 45
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 46
-    return v0
+    return p0
 .end method
 
 .method public offerToResume(Lorg/conscrypt/NativeSsl;)V
@@ -388,11 +387,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->ref:Lorg/conscrypt/NativeRef$SSL_SESSION;
 
     .line 2
     .line 3
-    iget-wide v0, v0, Lorg/conscrypt/NativeRef;->address:J
+    iget-wide v0, p0, Lorg/conscrypt/NativeRef;->address:J
 
     .line 4
     .line 5
@@ -494,7 +493,7 @@
     const/4 v5, 0x0
 
     .line 44
-    const/4 v6, 0x0
+    move v6, v5
 
     .line 45
     :goto_0
@@ -535,14 +534,14 @@
 
     .line 63
     :catch_0
-    move-exception v1
+    move-exception p0
 
     .line 64
     goto :goto_3
 
     .line 65
     :catch_1
-    move-exception v1
+    move-exception p0
 
     .line 66
     goto :goto_4
@@ -612,11 +611,11 @@
     .line 96
     .line 97
     .line 98
-    iget-object v3, p0, Lorg/conscrypt/NativeSslSession$Impl;->peerSignedCertificateTimestamp:[B
+    iget-object p0, p0, Lorg/conscrypt/NativeSslSession$Impl;->peerSignedCertificateTimestamp:[B
 
     .line 99
     .line 100
-    invoke-virtual {v2, v3}, Ljava/io/OutputStream;->write([B)V
+    invoke-virtual {v2, p0}, Ljava/io/OutputStream;->write([B)V
 
     .line 101
     .line 102
@@ -636,17 +635,17 @@
     .line 108
     .line 109
     .line 110
-    move-result-object v0
+    move-result-object p0
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/security/cert/CertificateEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 111
-    return-object v0
+    return-object p0
 
     .line 112
     :goto_3
-    invoke-static {v1}, Lorg/conscrypt/NativeSslSession;->access$200(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lorg/conscrypt/NativeSslSession;->access$200(Ljava/lang/Throwable;)V
 
     .line 113
     .line 114
@@ -660,18 +659,18 @@
     .line 117
     .line 118
     .line 119
-    move-result-object v2
+    move-result-object v1
 
     .line 120
-    sget-object v3, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
+    sget-object v2, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
 
     .line 121
     .line 122
-    const-string v4, "Failed to convert saved SSL Session: "
+    const-string v3, "Failed to convert saved SSL Session: "
 
     .line 123
     .line 124
-    invoke-virtual {v2, v3, v4, v1}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v2, v3, p0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 125
     .line 126

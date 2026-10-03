@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shortcuts
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <shortcut android:icon="@drawable/ic_qu_switch_24dp" android:enabled="true">
+    <shortcut android:icon="@drawable/ic_qu_switch_24dp" android:enabled="true" android:shortcutId="shortcuts_switch" android:shortcutShortLabel="@string/app_widget_name" android:shortcutLongLabel="@string/app_widget_name" android:shortcutDisabledMessage="@string/app_widget_name">
         <intent android:targetPackage="su.happ.proxyutility" android:action="android.intent.action.VIEW" android:targetClass="su.happ.proxyutility.ui.ScSwitchActivity" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
-    <shortcut android:icon="@drawable/ic_qu_scan_24dp" android:enabled="true">
+    <shortcut android:icon="@drawable/ic_qu_scan_24dp" android:enabled="true" android:shortcutId="shortcuts_scan" android:shortcutShortLabel="@string/menu_item_import_config_qrcode" android:shortcutLongLabel="@string/menu_item_import_config_qrcode" android:shortcutDisabledMessage="@string/menu_item_import_config_qrcode">
         <intent android:targetPackage="su.happ.proxyutility" android:action="android.intent.action.VIEW" android:targetClass="su.happ.proxyutility.ui.ScScannerActivity" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>
-    <shortcut android:icon="@drawable/ic_qu_settings_24dp" android:enabled="true">
+    <shortcut android:icon="@drawable/ic_qu_settings_24dp" android:enabled="true" android:shortcutId="shortcuts_settings" android:shortcutShortLabel="@string/title_settings" android:shortcutLongLabel="@string/title_settings" android:shortcutDisabledMessage="@string/title_settings">
         <intent android:targetPackage="su.happ.proxyutility" android:action="android.intent.action.VIEW" android:targetClass="su.happ.proxyutility.feature.settings.SettingsActivity" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>

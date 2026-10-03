@@ -1,6 +1,6 @@
 .class public final Lokhttp3/internal/connection/RouteSelector$Selection;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 
 # annotations
@@ -90,7 +90,7 @@
 
 # virtual methods
 .method public final getRoutes()Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -101,48 +101,48 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public final hasNext()Z
-    .locals 2
+    .locals 1
 
     .line 1
     iget v0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->nextRouteIndex:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
+    iget-object p0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
 
     .line 4
     .line 5
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    invoke-interface {p0}, Ljava/util/List;->size()I
 
     .line 6
     .line 7
     .line 8
-    move-result v1
+    move-result p0
 
     .line 9
-    if-ge v0, v1, :cond_0
+    if-ge v0, p0, :cond_0
 
     .line 10
     .line 11
-    const/4 v0, 0x1
+    const/4 p0, 0x1
 
     .line 12
-    return v0
+    return p0
 
     .line 13
     :cond_0
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 14
-    return v0
+    return p0
 .end method
 
 .method public final next()Lokhttp3/Route;
@@ -182,24 +182,24 @@
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    move-result-object p0
 
     .line 19
-    check-cast v0, Lokhttp3/Route;
+    check-cast p0, Lokhttp3/Route;
 
     .line 20
     .line 21
-    return-object v0
+    return-object p0
 
     .line 22
     :cond_0
-    invoke-static {}, Lfn;->p()V
+    invoke-static {}, Li60;->a()V
 
     .line 23
     .line 24
     .line 25
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 26
-    return-object v0
+    return-object p0
 .end method

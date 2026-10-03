@@ -1,29 +1,15 @@
 package defpackage;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.lang.reflect.Method;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
 public final class sb3 {
-    public int a;
-    public final String b;
-    public ob3 c;
-    public ob3 d;
-    public final ArrayList e;
+    public final Method a;
+    public final Method b;
 
-    public sb3(int i, String str) {
-        str.getClass();
-        this.a = i;
-        this.b = str;
-        this.e = new ArrayList(0);
-        z34.a.getClass();
-        List listA = y34.a();
-        new ArrayList();
-        Iterator it = listA.iterator();
-        while (it.hasNext()) {
-            ((z34) it.next()).getClass();
-        }
+    public /* synthetic */ sb3(Method method, Method method2) {
+        this.a = method;
+        this.b = method2;
     }
 }

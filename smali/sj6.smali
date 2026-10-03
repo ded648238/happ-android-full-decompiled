@@ -1,24 +1,52 @@
 .class public final Lsj6;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lc14;
+.implements Ljava/lang/AutoCloseable;
 
 
 # instance fields
-.field public final Q:Lf15;
+.field public final X:Ljava/lang/String;
 
-.field public final R:Lzg6;
+.field public final Y:Lrj6;
 
-.field public final S:Z
-
-.field public final T:I
+.field public Z:Z
 
 
 # direct methods
-.method public constructor <init>(Lf15;Lzg6;ZI)V
+.method public constructor <init>(Ljava/lang/String;Lrj6;)V
     .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lsj6;->X:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lsj6;->Y:Lrj6;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final close()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final g(Lq96;Li14;)V
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -31,155 +59,99 @@
     .line 5
     .line 6
     .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-boolean v0, p0, Lsj6;->Z:Z
 
     .line 8
     .line 9
-    .line 10
-    iput-object p1, p0, Lsj6;->Q:Lf15;
-
-    .line 11
-    .line 12
-    iput-object p2, p0, Lsj6;->R:Lzg6;
-
-    .line 13
-    .line 14
-    iput-boolean p3, p0, Lsj6;->S:Z
-
-    .line 15
-    .line 16
-    iput p4, p0, Lsj6;->T:I
-
-    .line 17
-    .line 18
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 4
-
-    .line 1
-    iget-boolean v0, p0, Lsj6;->S:Z
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lsj6;->Q:Lf15;
-
-    .line 4
-    .line 5
-    iget-object v2, p0, Lsj6;->R:Lzg6;
-
-    .line 6
-    .line 7
-    if-eqz v0, :cond_0
-
-    .line 8
-    .line 9
-    iget v0, p0, Lsj6;->T:I
+    if-nez v0, :cond_0
 
     .line 10
     .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v0, 0x1
 
     .line 12
+    iput-boolean v0, p0, Lsj6;->Z:Z
+
     .line 13
     .line 14
-    iget-object v2, v2, Lzg6;->a:Ltu7;
+    invoke-virtual {p2, p0}, Li14;->a(Le14;)V
 
     .line 15
     .line 16
-    iget-object v2, v2, Ltu7;->a:Ljava/lang/String;
-
     .line 17
-    .line 18
-    iget-object v3, v1, Lf15;->k:Ljava/lang/Object;
+    iget-object p2, p0, Lsj6;->Y:Lrj6;
 
+    .line 18
     .line 19
-    .line 20
-    monitor-enter v3
+    iget-object p2, p2, Lrj6;->b:Lv5;
 
+    .line 20
     .line 21
-    :try_start_0
-    invoke-virtual {v1, v2}, Lf15;->b(Ljava/lang/String;)Lgw7;
+    iget-object p2, p2, Lv5;->e0:Ljava/lang/Object;
 
     .line 22
     .line 23
-    .line 24
-    move-result-object v1
+    check-cast p2, Lfw0;
 
+    .line 24
     .line 25
-    monitor-exit v3
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iget-object p0, p0, Lsj6;->X:Ljava/lang/String;
 
     .line 26
-    invoke-static {v1, v0}, Lf15;->e(Lgw7;I)Z
-
     .line 27
+    invoke-virtual {p1, p0, p2}, Lq96;->B(Ljava/lang/String;Lzj6;)V
+
     .line 28
     .line 29
-    goto :goto_0
-
     .line 30
-    :catchall_0
-    move-exception v0
+    return-void
 
     .line 31
-    :try_start_1
-    monitor-exit v3
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :cond_0
+    const-string p0, "Already attached to lifecycleOwner"
 
     .line 32
-    throw v0
-
     .line 33
-    :cond_0
-    iget v0, p0, Lsj6;->T:I
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 34
     .line 35
-    invoke-virtual {v1, v2, v0}, Lf15;->i(Lzg6;I)V
-
     .line 36
-    .line 37
-    .line 38
-    :goto_0
-    invoke-static {}, Lmc2;->m()Lmc2;
+    return-void
+.end method
 
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v0
+.method public final m(Lf14;Lr04;)V
+    .locals 1
 
-    .line 42
-    const-string v1, "StopWorkRunnable"
+    .line 1
+    sget-object v0, Lr04;->ON_DESTROY:Lr04;
 
-    .line 43
-    .line 44
-    invoke-static {v1}, Lmc2;->x(Ljava/lang/String;)Ljava/lang/String;
+    .line 2
+    .line 3
+    if-ne p2, v0, :cond_0
 
-    .line 45
-    .line 46
-    .line 47
-    iget-object v1, p0, Lsj6;->R:Lzg6;
+    .line 4
+    .line 5
+    const/4 p2, 0x0
 
-    .line 48
-    .line 49
-    iget-object v1, v1, Lzg6;->a:Ltu7;
+    .line 6
+    iput-boolean p2, p0, Lsj6;->Z:Z
 
-    .line 50
-    .line 51
-    iget-object v1, v1, Ltu7;->a:Ljava/lang/String;
+    .line 7
+    .line 8
+    invoke-interface {p1}, Lf14;->f()Li14;
 
-    .line 52
-    .line 53
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
 
-    .line 54
-    .line 55
-    .line 56
+    .line 12
+    invoke-virtual {p1, p0}, Li14;->f(Le14;)V
+
+    .line 13
+    .line 14
+    .line 15
+    :cond_0
     return-void
 .end method

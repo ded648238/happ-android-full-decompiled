@@ -1,324 +1,206 @@
 .class public final enum Lx64;
 .super Ljava/lang/Enum;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
+
+# interfaces
+.implements Ljp5;
 
 
 # static fields
-.field public static final synthetic Q:[Lx64;
+.field public static final enum Y:Lx64;
 
-.field public static final synthetic R:Lrp1;
+.field public static final enum Z:Lx64;
+
+.field public static final enum c0:Lx64;
+
+.field public static final enum d0:Lx64;
+
+.field public static final enum e0:Lx64;
+
+.field public static final enum f0:Lx64;
+
+.field public static final enum g0:Lx64;
+
+.field public static final synthetic h0:[Lx64;
+
+
+# instance fields
+.field public final X:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 25
+    .locals 9
 
     .line 1
     new-instance v0, Lx64;
 
     .line 2
     .line 3
-    const-string v1, "JANUARY"
+    const-string v1, "REASON_UNKNOWN"
 
     .line 4
     .line 5
     const/4 v2, 0x0
 
     .line 6
-    invoke-direct {v0, v1, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2, v2}, Lx64;-><init>(Ljava/lang/String;II)V
 
     .line 7
     .line 8
     .line 9
-    new-instance v1, Lx64;
+    sput-object v0, Lx64;->Y:Lx64;
 
     .line 10
     .line 11
-    const-string v3, "FEBRUARY"
+    new-instance v1, Lx64;
 
     .line 12
     .line 13
-    const/4 v4, 0x1
+    const-string v2, "MESSAGE_TOO_OLD"
 
     .line 14
-    invoke-direct {v1, v3, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 15
-    .line 16
-    .line 17
-    new-instance v3, Lx64;
+    const/4 v3, 0x1
 
+    .line 16
+    invoke-direct {v1, v2, v3, v3}, Lx64;-><init>(Ljava/lang/String;II)V
+
+    .line 17
     .line 18
     .line 19
-    const-string v5, "MARCH"
+    sput-object v1, Lx64;->Z:Lx64;
 
     .line 20
     .line 21
-    const/4 v6, 0x2
+    new-instance v2, Lx64;
 
     .line 22
-    invoke-direct {v3, v5, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 23
+    const-string v3, "CACHE_FULL"
+
     .line 24
     .line 25
-    new-instance v5, Lx64;
+    const/4 v4, 0x2
 
     .line 26
-    .line 27
-    const-string v7, "APRIL"
+    invoke-direct {v2, v3, v4, v4}, Lx64;-><init>(Ljava/lang/String;II)V
 
+    .line 27
     .line 28
     .line 29
-    const/4 v8, 0x3
+    sput-object v2, Lx64;->c0:Lx64;
 
     .line 30
-    invoke-direct {v5, v7, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 31
+    new-instance v3, Lx64;
+
     .line 32
     .line 33
-    new-instance v7, Lx64;
+    const-string v4, "PAYLOAD_TOO_BIG"
 
     .line 34
     .line 35
-    const-string v9, "MAY"
+    const/4 v5, 0x3
 
     .line 36
+    invoke-direct {v3, v4, v5, v5}, Lx64;-><init>(Ljava/lang/String;II)V
+
     .line 37
-    const/4 v10, 0x4
-
     .line 38
-    invoke-direct {v7, v9, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 39
+    sput-object v3, Lx64;->d0:Lx64;
+
     .line 40
     .line 41
-    new-instance v9, Lx64;
+    new-instance v4, Lx64;
 
     .line 42
     .line 43
-    const-string v11, "JUNE"
+    const-string v5, "MAX_RETRIES_REACHED"
 
     .line 44
     .line 45
-    const/4 v12, 0x5
+    const/4 v6, 0x4
 
     .line 46
-    invoke-direct {v9, v11, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v4, v5, v6, v6}, Lx64;-><init>(Ljava/lang/String;II)V
 
     .line 47
     .line 48
     .line 49
-    new-instance v11, Lx64;
+    sput-object v4, Lx64;->e0:Lx64;
 
     .line 50
     .line 51
-    const-string v13, "JULY"
+    new-instance v5, Lx64;
 
     .line 52
     .line 53
-    const/4 v14, 0x6
+    const-string v6, "INVALID_PAYLOD"
 
     .line 54
-    invoke-direct {v11, v13, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 55
-    .line 56
-    .line 57
-    new-instance v13, Lx64;
+    const/4 v7, 0x5
 
+    .line 56
+    invoke-direct {v5, v6, v7, v7}, Lx64;-><init>(Ljava/lang/String;II)V
+
+    .line 57
     .line 58
     .line 59
-    const-string v15, "AUGUST"
+    sput-object v5, Lx64;->f0:Lx64;
 
     .line 60
     .line 61
-    const/16 v16, 0x0
+    new-instance v6, Lx64;
 
     .line 62
     .line 63
-    const/4 v2, 0x7
+    const-string v7, "SERVER_ERROR"
 
     .line 64
-    invoke-direct {v13, v15, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 65
-    .line 66
-    .line 67
-    new-instance v15, Lx64;
+    const/4 v8, 0x6
 
+    .line 66
+    invoke-direct {v6, v7, v8, v8}, Lx64;-><init>(Ljava/lang/String;II)V
+
+    .line 67
     .line 68
     .line 69
-    const/16 v17, 0x7
+    sput-object v6, Lx64;->g0:Lx64;
 
     .line 70
     .line 71
-    const-string v2, "SEPTEMBER"
+    filled-new-array/range {v0 .. v6}, [Lx64;
 
     .line 72
     .line 73
-    const/16 v18, 0x1
-
     .line 74
+    move-result-object v0
+
     .line 75
-    const/16 v4, 0x8
+    sput-object v0, Lx64;->h0:[Lx64;
 
     .line 76
     .line 77
-    invoke-direct {v15, v2, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    return-void
+.end method
 
-    .line 78
-    .line 79
-    .line 80
-    new-instance v2, Lx64;
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
 
-    .line 81
-    .line 82
-    const/16 v19, 0x8
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 83
-    .line 84
-    const-string v4, "OCTOBER"
+    .line 2
+    .line 3
+    .line 4
+    iput p3, p0, Lx64;->X:I
 
-    .line 85
-    .line 86
-    const/16 v20, 0x2
-
-    .line 87
-    .line 88
-    const/16 v6, 0x9
-
-    .line 89
-    .line 90
-    invoke-direct {v2, v4, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 91
-    .line 92
-    .line 93
-    new-instance v4, Lx64;
-
-    .line 94
-    .line 95
-    const/16 v21, 0x9
-
-    .line 96
-    .line 97
-    const-string v6, "NOVEMBER"
-
-    .line 98
-    .line 99
-    const/16 v22, 0x3
-
-    .line 100
-    .line 101
-    const/16 v8, 0xa
-
-    .line 102
-    .line 103
-    invoke-direct {v4, v6, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 104
-    .line 105
-    .line 106
-    new-instance v6, Lx64;
-
-    .line 107
-    .line 108
-    const/16 v23, 0xa
-
-    .line 109
-    .line 110
-    const-string v8, "DECEMBER"
-
-    .line 111
-    .line 112
-    const/16 v24, 0x4
-
-    .line 113
-    .line 114
-    const/16 v10, 0xb
-
-    .line 115
-    .line 116
-    invoke-direct {v6, v8, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 117
-    .line 118
-    .line 119
-    const/16 v8, 0xc
-
-    .line 120
-    .line 121
-    new-array v8, v8, [Lx64;
-
-    .line 122
-    .line 123
-    aput-object v0, v8, v16
-
-    .line 124
-    .line 125
-    aput-object v1, v8, v18
-
-    .line 126
-    .line 127
-    aput-object v3, v8, v20
-
-    .line 128
-    .line 129
-    aput-object v5, v8, v22
-
-    .line 130
-    .line 131
-    aput-object v7, v8, v24
-
-    .line 132
-    .line 133
-    aput-object v9, v8, v12
-
-    .line 134
-    .line 135
-    aput-object v11, v8, v14
-
-    .line 136
-    .line 137
-    aput-object v13, v8, v17
-
-    .line 138
-    .line 139
-    aput-object v15, v8, v19
-
-    .line 140
-    .line 141
-    aput-object v2, v8, v21
-
-    .line 142
-    .line 143
-    aput-object v4, v8, v23
-
-    .line 144
-    .line 145
-    aput-object v6, v8, v10
-
-    .line 146
-    .line 147
-    sput-object v8, Lx64;->Q:[Lx64;
-
-    .line 148
-    .line 149
-    new-instance v0, Lrp1;
-
-    .line 150
-    .line 151
-    invoke-direct {v0, v8}, Lrp1;-><init>([Ljava/lang/Enum;)V
-
-    .line 152
-    .line 153
-    .line 154
-    sput-object v0, Lx64;->R:Lrp1;
-
-    .line 155
-    .line 156
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -349,11 +231,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lx64;->Q:[Lx64;
+    sget-object v0, Lx64;->h0:[Lx64;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lx64;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -366,4 +248,17 @@
     .line 8
     .line 9
     return-object v0
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lx64;->X:I
+
+    .line 2
+    .line 3
+    return p0
 .end method

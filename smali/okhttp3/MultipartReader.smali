@@ -1,6 +1,6 @@
 .class public final Lokhttp3/MultipartReader;
 .super Ljava/lang/Object;
-.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+.source "r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -22,12 +22,12 @@
     d2 = {
         "Lokhttp3/MultipartReader;",
         "Ljava/io/Closeable;",
-        "Ls50;",
+        "Lf80;",
         "source",
         "",
         "boundary",
         "<init>",
-        "(Ls50;Ljava/lang/String;)V",
+        "(Lf80;Ljava/lang/String;)V",
         "Lokhttp3/ResponseBody;",
         "response",
         "(Lokhttp3/ResponseBody;)V",
@@ -38,15 +38,15 @@
         "Lokhttp3/MultipartReader$Part;",
         "nextPart",
         "()Lokhttp3/MultipartReader$Part;",
-        "Lbh7;",
+        "Lr98;",
         "close",
         "()V",
-        "Ls50;",
+        "Lf80;",
         "Ljava/lang/String;",
         "()Ljava/lang/String;",
-        "Ly60;",
+        "Lo90;",
         "dashDashBoundary",
-        "Ly60;",
+        "Lo90;",
         "crlfDashDashBoundary",
         "",
         "partCount",
@@ -76,7 +76,7 @@
 # static fields
 .field public static final Companion:Lokhttp3/MultipartReader$Companion;
 
-.field private static final afterBoundaryOptions:Lal4;
+.field private static final afterBoundaryOptions:Lu25;
 
 
 # instance fields
@@ -84,22 +84,22 @@
 
 .field private closed:Z
 
-.field private final crlfDashDashBoundary:Ly60;
+.field private final crlfDashDashBoundary:Lo90;
 
 .field private currentPart:Lokhttp3/MultipartReader$PartSource;
 
-.field private final dashDashBoundary:Ly60;
+.field private final dashDashBoundary:Lo90;
 
 .field private noMoreParts:Z
 
 .field private partCount:I
 
-.field private final source:Ls50;
+.field private final source:Lf80;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 4
 
     .line 1
     new-instance v0, Lokhttp3/MultipartReader$Companion;
@@ -109,7 +109,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lokhttp3/MultipartReader$Companion;-><init>(Lj31;)V
+    invoke-direct {v0, v1}, Lokhttp3/MultipartReader$Companion;-><init>(Lib1;)V
 
     .line 5
     .line 6
@@ -118,7 +118,7 @@
 
     .line 8
     .line 9
-    sget-object v0, Ly60;->T:Ly60;
+    sget-object v0, Lo90;->c0:Lo90;
 
     .line 10
     .line 11
@@ -126,7 +126,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v0}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 14
     .line 15
@@ -138,7 +138,7 @@
 
     .line 18
     .line 19
-    invoke-static {v1}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v1}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 20
     .line 21
@@ -150,7 +150,7 @@
 
     .line 24
     .line 25
-    invoke-static {v2}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v2}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 26
     .line 27
@@ -162,7 +162,7 @@
 
     .line 30
     .line 31
-    invoke-static {v3}, Lhp5;->A0(Ljava/lang/String;)Ly60;
+    invoke-static {v3}, Lm0;->e(Ljava/lang/String;)Lo90;
 
     .line 32
     .line 33
@@ -170,103 +170,30 @@
     move-result-object v3
 
     .line 35
-    const/4 v4, 0x4
+    filled-new-array {v0, v1, v2, v3}, [Lo90;
 
     .line 36
-    new-array v4, v4, [Ly60;
-
     .line 37
     .line 38
-    const/4 v5, 0x0
+    move-result-object v0
 
     .line 39
-    aput-object v0, v4, v5
+    invoke-static {v0}, Ld06;->T([Lo90;)Lu25;
 
     .line 40
     .line 41
-    const/4 v0, 0x1
-
     .line 42
-    aput-object v1, v4, v0
+    move-result-object v0
 
     .line 43
+    sput-object v0, Lokhttp3/MultipartReader;->afterBoundaryOptions:Lu25;
+
     .line 44
-    const/4 v0, 0x2
-
     .line 45
-    aput-object v2, v4, v0
-
-    .line 46
-    .line 47
-    const/4 v0, 0x3
-
-    .line 48
-    aput-object v3, v4, v0
-
-    .line 49
-    .line 50
-    invoke-static {v4}, Luv3;->I([Ly60;)Lal4;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v0
-
-    .line 54
-    sput-object v0, Lokhttp3/MultipartReader;->afterBoundaryOptions:Lal4;
-
-    .line 55
-    .line 56
     return-void
 .end method
 
-.method public constructor <init>(Lokhttp3/ResponseBody;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 57
-    invoke-virtual {p1}, Lokhttp3/ResponseBody;->source()Ls50;
-
-    move-result-object v0
-
-    .line 58
-    invoke-virtual {p1}, Lokhttp3/ResponseBody;->contentType()Lokhttp3/MediaType;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    const-string v1, "boundary"
-
-    invoke-virtual {p1, v1}, Lokhttp3/MediaType;->parameter(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 59
-    invoke-direct {p0, v0, p1}, Lokhttp3/MultipartReader;-><init>(Ls50;Ljava/lang/String;)V
-
-    return-void
-
-    .line 60
-    :cond_0
-    new-instance p1, Ljava/net/ProtocolException;
-
-    const-string v0, "expected the Content-Type to have a boundary parameter"
-
-    invoke-direct {p1, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public constructor <init>(Ls50;Ljava/lang/String;)V
+.method public constructor <init>(Lf80;Ljava/lang/String;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -290,7 +217,7 @@
     .line 8
     .line 9
     .line 10
-    iput-object p1, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iput-object p1, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 11
     .line 12
@@ -298,7 +225,7 @@
 
     .line 13
     .line 14
-    new-instance p1, Lf50;
+    new-instance p1, Ll70;
 
     .line 15
     .line 16
@@ -311,21 +238,21 @@
 
     .line 20
     .line 21
-    invoke-virtual {p1, v0}, Lf50;->O0(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Ll70;->b1(Ljava/lang/String;)V
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {p1, p2}, Lf50;->O0(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Ll70;->b1(Ljava/lang/String;)V
 
     .line 25
     .line 26
     .line 27
-    iget-wide v0, p1, Lf50;->R:J
+    iget-wide v0, p1, Ll70;->Y:J
 
     .line 28
     .line 29
-    invoke-virtual {p1, v0, v1}, Lf50;->o(J)Ly60;
+    invoke-virtual {p1, v0, v1}, Ll70;->s(J)Lo90;
 
     .line 30
     .line 31
@@ -333,11 +260,11 @@
     move-result-object p1
 
     .line 33
-    iput-object p1, p0, Lokhttp3/MultipartReader;->dashDashBoundary:Ly60;
+    iput-object p1, p0, Lokhttp3/MultipartReader;->dashDashBoundary:Lo90;
 
     .line 34
     .line 35
-    new-instance p1, Lf50;
+    new-instance p1, Ll70;
 
     .line 36
     .line 37
@@ -350,21 +277,21 @@
 
     .line 41
     .line 42
-    invoke-virtual {p1, v0}, Lf50;->O0(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Ll70;->b1(Ljava/lang/String;)V
 
     .line 43
     .line 44
     .line 45
-    invoke-virtual {p1, p2}, Lf50;->O0(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Ll70;->b1(Ljava/lang/String;)V
 
     .line 46
     .line 47
     .line 48
-    iget-wide v0, p1, Lf50;->R:J
+    iget-wide v0, p1, Ll70;->Y:J
 
     .line 49
     .line 50
-    invoke-virtual {p1, v0, v1}, Lf50;->o(J)Ly60;
+    invoke-virtual {p1, v0, v1}, Ll70;->s(J)Lo90;
 
     .line 51
     .line 52
@@ -372,11 +299,57 @@
     move-result-object p1
 
     .line 54
-    iput-object p1, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Ly60;
+    iput-object p1, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Lo90;
 
     .line 55
     .line 56
     return-void
+.end method
+
+.method public constructor <init>(Lokhttp3/ResponseBody;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 57
+    invoke-virtual {p1}, Lokhttp3/ResponseBody;->source()Lf80;
+
+    move-result-object v0
+
+    .line 58
+    invoke-virtual {p1}, Lokhttp3/ResponseBody;->contentType()Lokhttp3/MediaType;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    const-string v1, "boundary"
+
+    invoke-virtual {p1, v1}, Lokhttp3/MediaType;->parameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 59
+    invoke-direct {p0, v0, p1}, Lokhttp3/MultipartReader;-><init>(Lf80;Ljava/lang/String;)V
+
+    return-void
+
+    .line 60
+    :cond_0
+    new-instance p0, Ljava/net/ProtocolException;
+
+    const-string p1, "expected the Content-Type to have a boundary parameter"
+
+    invoke-direct {p0, p1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 .method public static final synthetic access$currentPartBytesRemaining(Lokhttp3/MultipartReader;J)J
@@ -394,11 +367,11 @@
     return-wide p0
 .end method
 
-.method public static final synthetic access$getAfterBoundaryOptions$cp()Lal4;
+.method public static final synthetic access$getAfterBoundaryOptions$cp()Lu25;
     .locals 1
 
     .line 1
-    sget-object v0, Lokhttp3/MultipartReader;->afterBoundaryOptions:Lal4;
+    sget-object v0, Lokhttp3/MultipartReader;->afterBoundaryOptions:Lu25;
 
     .line 2
     .line 3
@@ -416,11 +389,11 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$getSource$p(Lokhttp3/MultipartReader;)Ls50;
+.method public static final synthetic access$getSource$p(Lokhttp3/MultipartReader;)Lf80;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 2
     .line 3
@@ -439,18 +412,18 @@
 .end method
 
 .method private final currentPartBytesRemaining(J)J
-    .locals 5
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Ly60;
+    iget-object v1, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Lo90;
 
     .line 4
     .line 5
-    invoke-virtual {v1}, Ly60;->e()I
+    invoke-virtual {v1}, Lo90;->e()I
 
     .line 6
     .line 7
@@ -461,16 +434,16 @@
     int-to-long v1, v1
 
     .line 10
-    invoke-interface {v0, v1, v2}, Ls50;->D0(J)V
+    invoke-interface {v0, v1, v2}, Lf80;->Q0(J)V
 
     .line 11
     .line 12
     .line 13
-    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 14
     .line 15
-    invoke-interface {v0}, Ls50;->g()Lf50;
+    invoke-interface {v0}, Lf80;->d()Ll70;
 
     .line 16
     .line 17
@@ -478,7 +451,7 @@
     move-result-object v0
 
     .line 19
-    iget-object v1, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Ly60;
+    iget-object v1, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Lo90;
 
     .line 20
     .line 21
@@ -499,7 +472,7 @@
     .line 30
     .line 31
     .line 32
-    invoke-virtual {v0, v2, v3, v1}, Lf50;->L(JLy60;)J
+    invoke-virtual {v0, v2, v3, v1}, Ll70;->S(JLo90;)J
 
     .line 33
     .line 34
@@ -511,19 +484,19 @@
 
     .line 37
     .line 38
-    cmp-long v4, v0, v2
+    cmp-long v2, v0, v2
 
     .line 39
     .line 40
-    if-nez v4, :cond_0
+    if-nez v2, :cond_0
 
     .line 41
     .line 42
-    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 43
     .line 44
-    invoke-interface {v0}, Ls50;->g()Lf50;
+    invoke-interface {v0}, Lf80;->d()Ll70;
 
     .line 45
     .line 46
@@ -531,23 +504,23 @@
     move-result-object v0
 
     .line 48
-    iget-wide v0, v0, Lf50;->R:J
+    iget-wide v0, v0, Ll70;->Y:J
 
     .line 49
     .line 50
-    iget-object v2, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Ly60;
+    iget-object p0, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Lo90;
 
     .line 51
     .line 52
-    invoke-virtual {v2}, Ly60;->e()I
+    invoke-virtual {p0}, Lo90;->e()I
 
     .line 53
     .line 54
     .line 55
-    move-result v2
+    move-result p0
 
     .line 56
-    int-to-long v2, v2
+    int-to-long v2, p0
 
     .line 57
     sub-long/2addr v0, v2
@@ -565,10 +538,10 @@
     .line 62
     .line 63
     .line 64
-    move-result-wide p1
+    move-result-wide p0
 
     .line 65
-    return-wide p1
+    return-wide p0
 
     .line 66
     :cond_0
@@ -577,23 +550,23 @@
     .line 67
     .line 68
     .line 69
-    move-result-wide p1
+    move-result-wide p0
 
     .line 70
-    return-wide p1
+    return-wide p0
 .end method
 
 
 # virtual methods
 .method public final boundary()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lokhttp3/MultipartReader;->boundary:Ljava/lang/String;
+    iget-object p0, p0, Lokhttp3/MultipartReader;->boundary:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    return-object p0
 .end method
 
 .method public close()V
@@ -631,11 +604,11 @@
 
     .line 11
     .line 12
-    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object p0, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 13
     .line 14
-    invoke-interface {v0}, Ljava/io/Closeable;->close()V
+    invoke-interface {p0}, Ljava/io/Closeable;->close()V
 
     .line 15
     .line 16
@@ -687,15 +660,15 @@
 
     .line 16
     .line 17
-    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 18
     .line 19
-    iget-object v4, p0, Lokhttp3/MultipartReader;->dashDashBoundary:Ly60;
+    iget-object v4, p0, Lokhttp3/MultipartReader;->dashDashBoundary:Lo90;
 
     .line 20
     .line 21
-    invoke-interface {v0, v2, v3, v4}, Ls50;->m(JLy60;)Z
+    invoke-interface {v0, v2, v3, v4}, Lf80;->q(JLo90;)Z
 
     .line 22
     .line 23
@@ -707,15 +680,15 @@
 
     .line 26
     .line 27
-    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object v0, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 28
     .line 29
-    iget-object v2, p0, Lokhttp3/MultipartReader;->dashDashBoundary:Ly60;
+    iget-object v2, p0, Lokhttp3/MultipartReader;->dashDashBoundary:Lo90;
 
     .line 30
     .line 31
-    invoke-virtual {v2}, Ly60;->e()I
+    invoke-virtual {v2}, Lo90;->e()I
 
     .line 32
     .line 33
@@ -726,7 +699,7 @@
     int-to-long v2, v2
 
     .line 36
-    invoke-interface {v0, v2, v3}, Ls50;->skip(J)V
+    invoke-interface {v0, v2, v3}, Lf80;->skip(J)V
 
     .line 37
     .line 38
@@ -752,7 +725,7 @@
 
     .line 47
     .line 48
-    iget-object v6, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object v6, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 49
     .line 50
@@ -760,7 +733,7 @@
 
     .line 51
     .line 52
-    invoke-interface {v6, v4, v5}, Ls50;->skip(J)V
+    invoke-interface {v6, v4, v5}, Lf80;->skip(J)V
 
     .line 53
     .line 54
@@ -769,11 +742,11 @@
 
     .line 56
     :cond_2
-    iget-object v0, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Ly60;
+    iget-object v0, p0, Lokhttp3/MultipartReader;->crlfDashDashBoundary:Lo90;
 
     .line 57
     .line 58
-    invoke-virtual {v0}, Ly60;->e()I
+    invoke-virtual {v0}, Lo90;->e()I
 
     .line 59
     .line 60
@@ -784,7 +757,7 @@
     int-to-long v2, v0
 
     .line 63
-    invoke-interface {v6, v2, v3}, Ls50;->skip(J)V
+    invoke-interface {v6, v2, v3}, Lf80;->skip(J)V
 
     .line 64
     .line 65
@@ -794,15 +767,15 @@
 
     .line 67
     :goto_2
-    iget-object v2, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object v2, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 68
     .line 69
-    sget-object v3, Lokhttp3/MultipartReader;->afterBoundaryOptions:Lal4;
+    sget-object v3, Lokhttp3/MultipartReader;->afterBoundaryOptions:Lu25;
 
     .line 70
     .line 71
-    invoke-interface {v2, v3}, Ls50;->A(Lal4;)I
+    invoke-interface {v2, v3}, Lf80;->H(Lu25;)I
 
     .line 72
     .line 73
@@ -850,7 +823,7 @@
 
     .line 92
     :cond_3
-    const/4 v0, 0x1
+    move v0, v3
 
     .line 93
     goto :goto_2
@@ -877,33 +850,33 @@
 
     .line 103
     :cond_5
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 104
     .line 105
-    const-string v1, "expected at least 1 part"
+    const-string v0, "expected at least 1 part"
 
     .line 106
     .line 107
-    invoke-direct {v0, v1}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 108
     .line 109
     .line 110
-    throw v0
+    throw p0
 
     .line 111
     :cond_6
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 112
     .line 113
-    invoke-direct {v0, v4}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 114
     .line 115
     .line 116
-    throw v0
+    throw p0
 
     .line 117
     :cond_7
@@ -922,11 +895,11 @@
 
     .line 123
     .line 124
-    iget-object v1, p0, Lokhttp3/MultipartReader;->source:Ls50;
+    iget-object v1, p0, Lokhttp3/MultipartReader;->source:Lf80;
 
     .line 125
     .line 126
-    invoke-direct {v0, v1}, Lokhttp3/internal/http1/HeadersReader;-><init>(Ls50;)V
+    invoke-direct {v0, v1}, Lokhttp3/internal/http1/HeadersReader;-><init>(Lf80;)V
 
     .line 127
     .line 128
@@ -952,52 +925,52 @@
 
     .line 139
     .line 140
-    new-instance v2, Lokhttp3/MultipartReader$Part;
+    new-instance p0, Lokhttp3/MultipartReader$Part;
 
     .line 141
     .line 142
-    new-instance v3, Lhc5;
+    new-instance v2, Liw5;
 
     .line 143
     .line 144
-    invoke-direct {v3, v1}, Lhc5;-><init>(Lle6;)V
+    invoke-direct {v2, v1}, Liw5;-><init>(Ld27;)V
 
     .line 145
     .line 146
     .line 147
-    invoke-direct {v2, v0, v3}, Lokhttp3/MultipartReader$Part;-><init>(Lokhttp3/Headers;Ls50;)V
+    invoke-direct {p0, v0, v2}, Lokhttp3/MultipartReader$Part;-><init>(Lokhttp3/Headers;Lf80;)V
 
     .line 148
     .line 149
     .line 150
-    return-object v2
+    return-object p0
 
     .line 151
     :cond_8
-    new-instance v0, Ljava/net/ProtocolException;
+    new-instance p0, Ljava/net/ProtocolException;
 
     .line 152
     .line 153
-    invoke-direct {v0, v4}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
 
     .line 154
     .line 155
     .line 156
-    throw v0
+    throw p0
 
     .line 157
     :cond_9
-    const-string v0, "closed"
+    const-string p0, "closed"
 
     .line 158
     .line 159
-    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+    invoke-static {p0}, Li60;->g(Ljava/lang/String;)V
 
     .line 160
     .line 161
     .line 162
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
     .line 163
-    return-object v0
+    return-object p0
 .end method

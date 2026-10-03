@@ -1,70 +1,63 @@
 package defpackage;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import android.widget.RelativeLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
-/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
-/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
-public final class vs6 {
-    public final ArrayList a = new ArrayList();
+/* compiled from: r8-map-id-0b8713d1165be58ea5ab442262c023d7df2925fe25397b3c63a224cd7bc62647 */
+/* loaded from: classes.dex */
+public final class vs6 implements o61 {
+    public final /* synthetic */ int X;
+    public final /* synthetic */ w53 Y;
 
-    public static void b(ArrayList arrayList, int i, int[] iArr, int i2) {
-        if (i2 >= iArr.length) {
-            arrayList.add((int[]) iArr.clone());
-            return;
-        }
-        for (int i3 = 0; i3 < i; i3++) {
-            int i4 = 0;
-            while (true) {
-                if (i4 >= i2) {
-                    iArr[i2] = i3;
-                    b(arrayList, i, iArr, i2 + 1);
-                    break;
-                } else if (i3 == iArr[i4]) {
-                    break;
-                } else {
-                    i4++;
-                }
-            }
-        }
+    public /* synthetic */ vs6(w53 w53Var, int i) {
+        this.X = i;
+        this.Y = w53Var;
     }
 
-    public final void a(cw cwVar) {
-        this.a.add(cwVar);
-    }
-
-    public final List c(List list) {
-        if (list.isEmpty()) {
-            return new ArrayList();
-        }
-        int size = list.size();
-        ArrayList arrayList = this.a;
-        if (size != arrayList.size()) {
-            return null;
-        }
-        int size2 = arrayList.size();
-        ArrayList<int[]> arrayList2 = new ArrayList();
-        b(arrayList2, size2, new int[size2], 0);
-        cw[] cwVarArr = new cw[list.size()];
-        for (int[] iArr : arrayList2) {
-            boolean z = true;
-            for (int i = 0; i < arrayList.size(); i++) {
-                if (iArr[i] < list.size()) {
-                    cw cwVar = (cw) arrayList.get(i);
-                    cw cwVar2 = (cw) list.get(iArr[i]);
-                    cwVar.getClass();
-                    z &= cwVar2.b.Q <= cwVar.b.Q && cwVar2.a == cwVar.a;
-                    if (!z) {
+    @Override // defpackage.o61
+    public final boolean a() {
+        int i = this.X;
+        w53 w53Var = this.Y;
+        switch (i) {
+            case 0:
+                b6 b6Var = (b6) w53Var.Y;
+                if (b6Var.c0.getVisibility() != 0) {
+                    if (((RelativeLayout) b6Var.k0).getVisibility() != 0) {
+                        break;
+                    } else {
                         break;
                     }
-                    cwVarArr[iArr[i]] = (cw) arrayList.get(i);
+                } else {
+                    break;
                 }
-            }
-            if (z) {
-                return Arrays.asList(cwVarArr);
-            }
         }
-        return null;
+        return w53Var.z();
+    }
+
+    @Override // defpackage.o61
+    public final boolean b() {
+        int i = this.X;
+        w53 w53Var = this.Y;
+        switch (i) {
+        }
+        return w53Var.A();
+    }
+
+    @Override // defpackage.o61
+    public final boolean d() {
+        int i = this.X;
+        w53 w53Var = this.Y;
+        switch (i) {
+        }
+        return w53Var.y();
+    }
+
+    @Override // defpackage.o61
+    public final boolean f() {
+        int i = this.X;
+        w53 w53Var = this.Y;
+        switch (i) {
+        }
+        return ((ConstraintLayout) ((b6) w53Var.Y).g0).requestFocus();
     }
 }
